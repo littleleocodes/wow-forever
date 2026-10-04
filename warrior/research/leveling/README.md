@@ -28,7 +28,7 @@ Classic Era reference builds: [leveling-arms](../talents/classic-baseline/leveli
 
 - [Leveling guide](guide.md): the recommended build `leveling-arms` level by level, what each bracket feels like and what the fight lab does not model.
 - [Rotation](rotation.md): the priority the fight lab plays and what each leveling build casts per kill, level by level.
-- [Respec plan](respec-plan.md): when a respec while leveling pays for itself (**66.1 h** (26.5% faster than talentless), 1 respec(s).).
+- [Respec plan](respec-plan.md): when a respec while leveling pays for itself (**65.6 h** (27.1% faster than talentless), 0 respec(s).).
 - Recommended build: [leveling-arms](builds/leveling-arms.md).
 
 ## Fight lab (Monte Carlo fight simulator)
@@ -46,7 +46,7 @@ Time per kill = fight + loot, travel, eating, drinking, healing and deaths; a bu
 - **Talents that matter** (time per kill lost when the talent is removed from `opt-arms-2h-raid-leveling-st` at level 60): Mortal Strike +15%, Cruelty +6% (L30 +5%), Weaponmaster +6%, Bloodthrill +5%, Enrage +4%, Improved Overpower +4% (L30 +2%).
 - **Measure about zero** single-target at 60 (kept for other reasons or not simulated): Boundless Rage, Deflection, Improved Tactical Mastery, Sweeping Strikes.
 - **Caster mobs:** 16% of pulls at level 30 are casters (creature-database share); 0.00 interrupts per kill at 60.
-- **Race** (hand draft vs every optimizer candidate, 2026-10-02, mean time per kill over levels 20/30/40/50/60): cand-arms-r4 27.9s, cand-arms-r5 28.0s, cand-arms-r7 28.1s, cand-arms-r3 28.1s, leveling-arms 28.1s, cand-arms-r2-ms40 28.1s, cand-arms-r2 28.4s, cand-arms-r1 28.9s, cand-arms-r6 29.3s — fastest: **cand-arms-r4**.
+- **Race** (hand draft vs every optimizer candidate, 2026-10-03, mean time per kill over levels 20/30/40/50/60): cand-arms-r4 27.9s, cand-arms-r5 28.0s, cand-arms-r7 28.1s, cand-arms-r3 28.1s, leveling-arms 28.1s, cand-arms-r2-ms40 28.1s, cand-arms-r2 28.4s, cand-arms-r1 28.9s, cand-arms-r6 29.3s — fastest: **cand-arms-r4**.
 - **Calibration:** the scorer's `arms-2h-raid` leveling values were fitted jointly to the hand draft and every candidate in [`fightlab/candidates/`](fightlab/candidates/) (1 round, converged: the optimizer build repeats).
 - **Other spec, same module:** `fury-dw-raid` with `opt-fury-dw-raid-leveling-st` ([report](fightlab/fury-dw-raid.md)): L30 24.3s (-2% vs `opt-arms-2h-raid-leveling-st`), L60 32.7s (+5% vs `opt-arms-2h-raid-leveling-st`). Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
 - **AoE grinding, 3 mobs per pull:** `arms-2h-raid` with `opt-arms-2h-raid-leveling-aoe` ([report](fightlab/arms-2h-raid-aoe.md)): L40 30.1s per mob in pulls of 3 (single-target build 29.1s), 5.8 deaths/100; L60 37.0s per mob in pulls of 3 (single-target build 31.1s), 12.6 deaths/100.
@@ -60,8 +60,8 @@ When to respec while leveling, with the best point-by-point path: [respec plan](
 
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
 |---|---|---|---|
-| Leveling, two-hander | arms-2h-raid | [31/20/0 with order](builds/opt-arms-2h-raid-leveling-st.md) (+40.1%) | [leveling-arms](builds/leveling-arms.md) |
-| Solo / farming at 60, dual wield | fury-dw-raid | [13/38/0 with order](builds/opt-fury-dw-raid-solo-60.md) (+32.6%) | [leveling-arms](builds/leveling-arms.md) |
+| Leveling, two-hander | arms-2h-raid | [31/20/0](builds/opt-arms-2h-raid-leveling-st.md) (+40.1%) | [leveling-arms](builds/leveling-arms.md) |
+| Solo / farming at 60, dual wield | fury-dw-raid | [13/38/0](builds/opt-fury-dw-raid-solo-60.md) (+32.6%) | [leveling-arms](builds/leveling-arms.md) |
 
 Model findings: Dual-wield Fury 18/33/0 and two-hander Fury 19/32/0 score within 2% of each other and both beat the Arms draft; Bloodthirst, Flurry, Enrage, Unbridled Wrath and Anger Management are the raid core in every DPS build. Protection 6/5/40 takes the deep Protection rows (Vitality, Focused Rage, Bastion, Shield Slam) plus Anticipation/Improved Shield Wall now that defense and armor are priced from their arithmetic.
 

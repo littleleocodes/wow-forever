@@ -4,7 +4,7 @@
 
 ## ret-dps
 
-Our tuned rotation `ret-dps.apl.json` (the simulator's `default.apl.json` with the changes below) (commit 40be98e), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
+Our tuned rotation `ret-dps.apl.json` (the simulator's `default.apl.json` with the changes below) (commit b0f0df3), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
 
 **Rotation search** (every change kept had to win on two random seeds and cost none of the tuning builds more than 0.1%):
 
@@ -53,7 +53,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`retribution-ml-raid`](builds/retribution-ml-raid.md) (ours: hand draft, 546 DPS), [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) (ours: optimizer, 544 DPS), [`ret-raid-dps`](builds/ret-raid-dps.md) (ours: hand draft, 529 DPS), *P4/P5 Ret* (community simulator, 529 DPS)
+### [`retribution-ml-raid`](builds/retribution-ml-raid.md) (ours: hand draft, 486 DPS), [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) (ours: optimizer, 485 DPS), [`ret-raid-dps`](builds/ret-raid-dps.md) (ours: hand draft, 473 DPS), *P4/P5 Ret* (community simulator, 472 DPS)
 
 Before the pull: at -1.5s: cast Seal of Command.
 
@@ -73,17 +73,17 @@ Damage by ability:
 
 | Ability | [`retribution-ml-raid`](builds/retribution-ml-raid.md) | [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) | [`ret-raid-dps`](builds/ret-raid-dps.md) | *P4/P5 Ret* |
 |---|---|---|---|---|
-| Consecration | 18% | 18% | 18% | 18% |
-| Seal of Righteousness | 18% | 18% | 18% | 18% |
-| Judgement of Righteousness | 16% | 16% | 16% | 16% |
-| Auto Attack | 16% | 16% | 16% | 16% |
+| Seal of Righteousness | 19% | 19% | 19% | 19% |
+| Auto Attack | 18% | 18% | 18% | 18% |
+| Consecration | 17% | 17% | 17% | 17% |
+| Judgement of Righteousness | 15% | 15% | 15% | 15% |
 | Holy Strike | 14% | 14% | 14% | 14% |
 | Hammer of Wrath | 6% | 6% | 6% | 6% |
 | Seal of Command | 5% | 5% | 5% | 5% |
-| Dragonbreath Chili | 3% | 3% | 3% | 3% |
 | Judgement of Command | 3% | 3% | 3% | 3% |
+| Dragonbreath Chili | 3% | 3% | 3% | 3% |
 
-### [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) (ours: hand draft, 536 DPS), *Retribution 9/0/42* (community simulator, 513 DPS)
+### [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) (ours: hand draft, 480 DPS), *Retribution 9/0/42* (community simulator, 460 DPS)
 
 Before the pull: at -1.5s: cast Seal of Command.
 
@@ -104,19 +104,19 @@ Damage by ability:
 
 | Ability | [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) | *Retribution 9/0/42* |
 |---|---|---|
-| Consecration | 18% | 18% |
-| Seal of Righteousness | 18% | 18% |
-| Auto Attack | 17% | 17% |
-| Judgement of Righteousness | 15% | 15% |
+| Seal of Righteousness | 19% | 19% |
+| Auto Attack | 18% | 19% |
+| Consecration | 17% | 17% |
+| Judgement of Righteousness | 14% | 14% |
 | Holy Strike | 14% | 14% |
 | Hammer of Wrath | 6% | 6% |
 | Seal of Command | 5% | 5% |
 | Judgement of Command | 4% | 4% |
-| Dragonbreath Chili | 3% | 3% |
+| Dragonbreath Chili | 3% | 2% |
 
 ## prot-tank (tank)
 
-Our tuned rotation `prot-tank-raid.apl.json` (the simulator's `default.apl.json` with the changes below) (commit 40be98e), 3000 fights of 180 s per build in the raid setting. Ranking: [raid README](README.md).
+Our tuned rotation `prot-tank-raid.apl.json` (the simulator's `default.apl.json` with the changes below) (commit b0f0df3), 3000 fights of 180 s per build in the raid setting. Ranking: [raid README](README.md).
 
 **Rotation search** (every change kept had to win on two random seeds and cost none of the tuning builds more than 0.1%):
 
@@ -127,73 +127,73 @@ Our tuned rotation `prot-tank-raid.apl.json` (the simulator's `default.apl.json`
   4. insert at the top: cast Templar's Bulwark (+1.4%, pass 2)
   5. insert before the filler: cast Retribution Aura (+0.2%, pass 3)
 
-### [`prot-tank`](builds/prot-tank.md) (ours: hand draft, 518 DPS), [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) (ours: optimizer, 502 DPS)
+### [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) (ours: optimizer, 413 DPS), *Protection 0/45/6* (community simulator, 393 DPS), *P4 Prot* (community simulator, 413 DPS), *P5 Prot* (community simulator, 407 DPS)
 
 Before the pull: at -30s: cast Righteous Fury; at -3.5s: cast Seal of Righteousness; at -2s: cast Holy Shield.
 
-| # | Priority (the first line whose condition holds is cast) | [`prot-tank`](builds/prot-tank.md) casts/min | [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) casts/min |
-|---|---|---|---|
-| 1 | cast Templar's Bulwark | 0.3 | 0.3 |
-| 2 | use every other cooldown when ready | as ready | as ready |
-| 3 | if time left on Seal of Righteousness ≤ 1s: cast Seal of Righteousness | 2.3 | 2.3 |
-| 4 | cast Consecration | 6.6 | 6.6 |
-| 5 | cast Holy Strike | 5.7 | 5.7 |
-| 6 | if health % < 10%: cast Lay on Hands | 0.3 | 0.3 |
-| 7 | cast Retribution Aura | 25.5 | 25.5 |
-
-Lines of the simulator's rotation these builds never cast: cast Holy Shield (needs the Holy Shield talent); cast Judgement (its condition never held in these fights).
-
-Damage by ability (threat for tanks):
-
-| Ability | [`prot-tank`](builds/prot-tank.md) | [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) |
-|---|---|---|
-| Auto Attack | 26% | 26% |
-| Seal of Righteousness | 16% | 16% |
-| Consecration | 14% | 15% |
-| Judgement of Righteousness | 15% | 12% |
-| Holy Strike | 10% | 11% |
-| Lay on Hands | 9% | 9% |
-| Retribution Aura | 5% | 5% |
-| OtherActionManaGain | 4% | 4% |
-| Eye for an Eye | 1% | 1% |
-| Thorns | 1% | 1% |
-
-### *Protection 0/45/6* (community simulator, 400 DPS), *P4 Prot* (community simulator, 422 DPS), *P5 Prot* (community simulator, 416 DPS)
-
-Before the pull: at -30s: cast Righteous Fury; at -3.5s: cast Seal of Righteousness; at -2s: cast Holy Shield.
-
-| # | Priority (the first line whose condition holds is cast) | *Protection 0/45/6* casts/min | *P4 Prot* casts/min | *P5 Prot* casts/min |
-|---|---|---|---|---|
-| 1 | cast Templar's Bulwark | 0.3 | 0.3 | 0.3 |
-| 2 | cast Holy Shield | 5.6 | 5.6 | 5.5 |
-| 3 | use every other cooldown when ready | as ready | as ready | as ready |
-| 4 | if time left on Seal of Righteousness ≤ 1s: cast Seal of Righteousness | 2.1 | 2.1 | 2.1 |
-| 5 | cast Consecration | 4.5 | 4.4 | 3.9 |
-| 6 | cast Holy Strike | 5.7 | 5.6 | 5.7 |
-| 7 | if health % < 10%: cast Lay on Hands | 0.3 | 0.3 | 0.3 |
-| 8 | cast Retribution Aura | 22.5 | 22.5 | 23.2 |
-| 9 | if Redoubt is up: cast Holy Shield | 5.6 | 5.6 | 5.5 |
+| # | Priority (the first line whose condition holds is cast) | [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) casts/min | *Protection 0/45/6* casts/min | *P4 Prot* casts/min | *P5 Prot* casts/min |
+|---|---|---|---|---|---|
+| 1 | cast Templar's Bulwark | 0.3 | 0.3 | 0.3 | 0.3 |
+| 2 | cast Holy Shield | 5.9 | 5.6 | 5.6 | 5.5 |
+| 3 | use every other cooldown when ready | as ready | as ready | as ready | as ready |
+| 4 | if time left on Seal of Righteousness ≤ 1s: cast Seal of Righteousness | 2.1 | 2.1 | 2.1 | 2.1 |
+| 5 | cast Consecration | 5.6 | 4.7 | 4.6 | 4.1 |
+| 6 | cast Holy Strike | 5.7 | 5.7 | 5.7 | 5.7 |
+| 7 | if health % < 10%: cast Lay on Hands | 0.3 | 0.3 | 0.3 | 0.3 |
+| 8 | cast Retribution Aura | 21.0 | 22.2 | 22.3 | 23.0 |
+| 9 | if Redoubt is up: cast Holy Shield | 5.9 | 5.6 | 5.6 | 5.5 |
 
 Lines of the simulator's rotation these builds never cast: cast Judgement (its condition never held in these fights).
 
 Damage by ability (threat for tanks):
 
-| Ability | *Protection 0/45/6* | *P4 Prot* | *P5 Prot* |
-|---|---|---|---|
-| Auto Attack | 28% | 28% | 29% |
-| Seal of Righteousness | 13% | 14% | 15% |
-| Judgement of Righteousness | 10% | 11% | 11% |
-| Lay on Hands | 11% | 11% | 11% |
-| Holy Strike | 10% | 8% | 8% |
-| Holy Shield | 9% | 9% | 9% |
-| Consecration | 9% | 9% | 8% |
-| OtherActionManaGain | 5% | 5% | 5% |
-| Retribution Aura | 4% | 4% | 4% |
-| Thorns | 1% | 1% | 1% |
+| Ability | [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) | *Protection 0/45/6* | *P4 Prot* | *P5 Prot* |
+|---|---|---|---|---|
+| Auto Attack | 25% | 26% | 26% | 27% |
+| Seal of Righteousness | 11% | 12% | 14% | 14% |
+| Holy Strike | 11% | 10% | 8% | 8% |
+| Judgement of Righteousness | 10% | 10% | 11% | 11% |
+| Holy Shield | 11% | 11% | 11% | 11% |
+| Lay on Hands | 10% | 11% | 11% | 11% |
+| Consecration | 11% | 9% | 9% | 8% |
+| OtherActionManaGain | 6% | 5% | 5% | 5% |
+| Retribution Aura | 4% | 4% | 4% | 4% |
+| Thorns | 1% | 1% | 1% | 1% |
+
+### [`prot-tank`](builds/prot-tank.md) (ours: hand draft, 469 DPS)
+
+Before the pull: at -30s: cast Righteous Fury; at -3.5s: cast Seal of Righteousness; at -2s: cast Holy Shield.
+
+| # | Priority (the first line whose condition holds is cast) | [`prot-tank`](builds/prot-tank.md) casts/min |
+|---|---|---|
+| 1 | cast Templar's Bulwark | 0.3 |
+| 2 | use every other cooldown when ready | as ready |
+| 3 | if time left on Seal of Righteousness ≤ 1s: cast Seal of Righteousness | 2.3 |
+| 4 | cast Consecration | 6.5 |
+| 5 | cast Holy Strike | 5.7 |
+| 6 | if health % < 10%: cast Lay on Hands | 0.3 |
+| 7 | cast Retribution Aura | 25.5 |
+
+Lines of the simulator's rotation these builds never cast: cast Holy Shield (needs the Holy Shield talent); cast Judgement (its condition never held in these fights).
+
+Damage by ability (threat for tanks):
+
+| Ability | [`prot-tank`](builds/prot-tank.md) |
+|---|---|
+| Auto Attack | 26% |
+| Judgement of Righteousness | 15% |
+| Consecration | 14% |
+| Seal of Righteousness | 14% |
+| Holy Strike | 11% |
+| Lay on Hands | 10% |
+| Retribution Aura | 5% |
+| OtherActionManaGain | 4% |
+| Thorns | 1% |
+| Eye for an Eye | 1% |
 
 ## seal-of-fury-raid
 
-Our rotation `seal-of-fury-raid.apl.json` (our base rotation `seal-of-fury-raid.base.apl.json` with the changes below) (commit 40be98e), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
+Our rotation `seal-of-fury-raid.apl.json` (our base rotation `seal-of-fury-raid.base.apl.json` with the changes below) (commit b0f0df3), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
 
 Seal of Fury Retribution (2026-09-28, new-builds survey): Seal of Fury, a Forever seal (35 Holy damage on every melee hit; a shield turns half of it into an absorb), kept up instead of the Seal of Command / Seal of Righteousness twist of the Retribution rotation. Kept as that untuned swap: the rotation search on this entry (2026-09-28) first added Consecration, then dropped Seal of Fury and went back to the twist within four rounds (the Retribution rotation of ret-dps, which it then matched), so a tuned rotation here would no longer be a Seal of Fury rotation.
 
@@ -213,7 +213,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`ret-raid-dps`](builds/ret-raid-dps.md) (ours: hand draft, 415 DPS)
+### [`ret-raid-dps`](builds/ret-raid-dps.md) (ours: hand draft, 359 DPS)
 
 Before the pull: at -1.5s: cast Seal of Command.
 
@@ -231,11 +231,11 @@ Damage by ability:
 
 | Ability | [`ret-raid-dps`](builds/ret-raid-dps.md) |
 |---|---|
-| Judgement of Fury | 23% |
-| Auto Attack | 21% |
+| Auto Attack | 24% |
+| Judgement of Fury | 22% |
 | Holy Strike | 18% |
-| Consecration | 18% |
-| Seal of Fury | 10% |
+| Consecration | 16% |
+| Seal of Fury | 9% |
 | Hammer of Wrath | 8% |
-| Dragonbreath Chili | 4% |
+| Dragonbreath Chili | 3% |
 | Seal of Command | 0% |

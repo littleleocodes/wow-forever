@@ -163,7 +163,7 @@ def render_class(cls, obj):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("classes", nargs="*")
-    ap.add_argument("--raw", default="2026-09-25-beta-70009")
+    ap.add_argument("--raw", default="2026-10-03-beta-70170")
     ap.add_argument("--captured", default=dt.date.today().isoformat())
     a = ap.parse_args()
     data = json.load(open(find_raw(RAW / a.raw, "talentsforever-com", "data.json"), encoding="utf-8"))

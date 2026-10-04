@@ -561,7 +561,7 @@
         {"talent": "Guardian's Favor", "why": "The scorer's value in this build: +8.8% of its score (model ret-dps)."}
       ],
       "flex": [],
-      "notes": ["Community tie-break moves: 5 points Toughness -> Redoubt; 3 points Anticipation -> Shield Specialization; 3 points Reckoning -> One-Handed Weapon Specialization; 1 point Anticipation -> Precision; 1 point Anticipation -> Reckoning.", "Where we disagree with the community: most Protection builds take Iron Creed (87% take it), Holy Shield (85% take it), Anticipation (75% take it), which the model values below this build's weakest point; this build takes Guardian's Favor (20%), Improved Hammer of Justice (12%), Repentance (4%), Seal of Command (12%), which few Protection builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "Scored with the Retribution damage model (PvP values damage, not threat), keeping 30+ points in Protection."],
+      "notes": ["Community tie-break moves: 5 points Toughness -> Redoubt; 3 points Anticipation -> Shield Specialization; 3 points Reckoning -> One-Handed Weapon Specialization; 1 point Anticipation -> Precision; 1 point Anticipation -> Reckoning.", "Where we disagree with the community: most Protection builds take Iron Creed (87% take it), Holy Shield (85% take it), Anticipation (75% take it), which the model values below this build's weakest point; this build takes Guardian's Favor (20%), Improved Hammer of Justice (12%), Repentance (4%), Seal of Command (12%), which few Protection builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "Scored with the Retribution damage model (PvP values damage, not threat), keeping 30+ points in Protection.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved):  out;  in; to be re-optimized."],
       "open_questions": ["A derived Protection PvP build: check it in duels and battlegrounds at launch."],
       "sources": ["https://talentsforever.com/paladin", "https://talentsforever.com/popular.js"]
     },
@@ -995,43 +995,17 @@
         ],
         "Retribution": [
           ["Deflection", 5],
+          ["Improved Judgement", 2],
           ["Holy Conduit", 2],
           ["Conviction", 5],
           ["Vindication", 3],
           ["Sanctified Judgement", 3],
+          ["Eye for an Eye", 1],
           ["Sacred Arbiter", 1],
           ["Vengeance", 3],
-          ["Champion of the Light", 3],
-          ["Improved Judgement", 2],
-          ["Eye for an Eye", 1]
+          ["Champion of the Light", 3]
         ]
       },
-      "order": [
-        {"levels": "10-14", "tree": "Protection", "talent": "Redoubt", "points": 5},
-        {"levels": "15-17", "tree": "Protection", "talent": "Precision", "points": 3},
-        {"levels": "18-19", "tree": "Protection", "talent": "Anticipation", "points": 2},
-        {"levels": "20", "tree": "Protection", "talent": "Shield Specialization", "points": 1},
-        {"levels": "21-23", "tree": "Protection", "talent": "Anticipation", "points": 3},
-        {"levels": "24", "tree": "Protection", "talent": "Improved Seal of Fury", "points": 1},
-        {"levels": "25", "tree": "Protection", "talent": "Swift Judgement", "points": 1},
-        {"levels": "26-28", "tree": "Protection", "talent": "Improved Righteous Fury", "points": 3},
-        {"levels": "29", "tree": "Protection", "talent": "One-Handed Weapon Specialization", "points": 1},
-        {"levels": "30", "tree": "Protection", "talent": "Templar's Bulwark", "points": 1},
-        {"levels": "31-32", "tree": "Protection", "talent": "One-Handed Weapon Specialization", "points": 2},
-        {"levels": "33-37", "tree": "Retribution", "talent": "Deflection", "points": 5},
-        {"levels": "38-39", "tree": "Retribution", "talent": "Holy Conduit", "points": 2},
-        {"levels": "40-41", "tree": "Retribution", "talent": "Improved Judgement", "points": 2},
-        {"levels": "42", "tree": "Retribution", "talent": "Conviction", "points": 1},
-        {"levels": "43-45", "tree": "Retribution", "talent": "Sanctified Judgement", "points": 3},
-        {"levels": "46-47", "tree": "Retribution", "talent": "Conviction", "points": 2},
-        {"levels": "48", "tree": "Retribution", "talent": "Sacred Arbiter", "points": 1},
-        {"levels": "49-50", "tree": "Retribution", "talent": "Conviction", "points": 2},
-        {"levels": "51-52", "tree": "Retribution", "talent": "Vindication", "points": 2},
-        {"levels": "53-55", "tree": "Retribution", "talent": "Vengeance", "points": 3},
-        {"levels": "56", "tree": "Retribution", "talent": "Vindication", "points": 1},
-        {"levels": "57", "tree": "Retribution", "talent": "Eye for an Eye", "points": 1},
-        {"levels": "58-60", "tree": "Retribution", "talent": "Champion of the Light", "points": 3}
-      ],
       "core": [
         {"talent": "Champion of the Light", "why": "Raid sim (2026-09-26): removing it costs +8% tank value. Raid sim (2026-09-28): removing it costs +7% tank value."},
         {"talent": "Deflection", "why": "Raid sim (2026-09-26): removing it costs +4% tank value. Raid sim (2026-09-28): removing it costs +4% tank value."},
@@ -1043,7 +1017,7 @@
         {"talent": "Conviction", "why": "Raid sim (2026-09-26): removing it costs +2% tank value. Raid sim (2026-09-28): removing it costs +2% tank value."}
       ],
       "flex": [],
-      "notes": ["2026-09-30 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): own tree first 31 s; stats model's order 33 s; own tree last 33 s. First Protection point at level 10.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
+      "notes": ["2026-09-30 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): own tree first 31 s; stats model's order 33 s; own tree last 33 s. First Protection point at level 10.", "Fight-lab numbers are a model of the beta, not in-game measurements.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved):  out;  in; to be re-optimized."],
       "open_questions": ["Check the Protection leveling pace at launch; the raid build's talents may cost speed early."],
       "sources": ["https://warcraftforever.games/talents/paladin"]
     },
@@ -1096,7 +1070,7 @@
       "role": "dps",
       "content": "raid",
       "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `raid-dps`: score +126.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `raid-dps`: score +230.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Holy": [
           ["Divine Strength", 2],
@@ -1125,14 +1099,14 @@
         ]
       },
       "core": [
-        {"talent": "Champion of the Light", "why": "Removing it costs 46.2 points of score in this model."},
-        {"talent": "Holy Conduit", "why": "Removing it costs 37.4 points of score in this model."},
-        {"talent": "Seal of Command", "why": "Removing it costs 24.3 points of score in this model."},
-        {"talent": "Vengeance", "why": "Removing it costs 15.2 points of score in this model."},
-        {"talent": "Improved Seals", "why": "Removing it costs 13.4 points of score in this model."},
-        {"talent": "Twist of Light", "why": "Removing it costs 12.0 points of score in this model."},
-        {"talent": "Sanctified Judgement", "why": "Removing it costs 10.9 points of score in this model."},
-        {"talent": "Conviction", "why": "Removing it costs 10.3 points of score in this model."}
+        {"talent": "Seal of Command", "why": "Removing it costs 143.4 points of score in this model."},
+        {"talent": "Holy Conduit", "why": "Removing it costs 53.8 points of score in this model."},
+        {"talent": "Champion of the Light", "why": "Removing it costs 47.7 points of score in this model."},
+        {"talent": "Vengeance", "why": "Removing it costs 22.2 points of score in this model."},
+        {"talent": "Improved Seals", "why": "Removing it costs 20.2 points of score in this model."},
+        {"talent": "Twist of Light", "why": "Removing it costs 17.1 points of score in this model."},
+        {"talent": "Conviction", "why": "Removing it costs 16.3 points of score in this model."},
+        {"talent": "Sanctified Judgement", "why": "Removing it costs 15.5 points of score in this model."}
       ],
       "flex": [],
       "notes": ["Report: paladin/research/talents/forever/optimizer/ret-dps-raid-dps.md"],
@@ -1145,7 +1119,7 @@
       "role": "dps",
       "content": "raid",
       "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `parse`: score +100.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `parse`: score +189.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Holy": [
           ["Divine Strength", 5],
@@ -1173,14 +1147,14 @@
         ]
       },
       "core": [
-        {"talent": "Champion of the Light", "why": "Removing it costs 39.5 points of score in this model."},
-        {"talent": "Seal of Command", "why": "Removing it costs 20.7 points of score in this model."},
-        {"talent": "Vengeance", "why": "Removing it costs 12.9 points of score in this model."},
-        {"talent": "Improved Seals", "why": "Removing it costs 11.5 points of score in this model."},
-        {"talent": "Conviction", "why": "Removing it costs 8.6 points of score in this model."},
-        {"talent": "Instrument of Law", "why": "Removing it costs 7.0 points of score in this model."},
-        {"talent": "Precision", "why": "Removing it costs 6.7 points of score in this model."},
-        {"talent": "Improved Judgement", "why": "Removing it costs 5.4 points of score in this model."}
+        {"talent": "Seal of Command", "why": "Removing it costs 122.2 points of score in this model."},
+        {"talent": "Champion of the Light", "why": "Removing it costs 40.9 points of score in this model."},
+        {"talent": "Vengeance", "why": "Removing it costs 18.9 points of score in this model."},
+        {"talent": "Improved Seals", "why": "Removing it costs 17.3 points of score in this model."},
+        {"talent": "Conviction", "why": "Removing it costs 13.6 points of score in this model."},
+        {"talent": "Instrument of Law", "why": "Removing it costs 9.9 points of score in this model."},
+        {"talent": "Precision", "why": "Removing it costs 9.8 points of score in this model."},
+        {"talent": "Improved Judgement", "why": "Removing it costs 7.6 points of score in this model."}
       ],
       "flex": [],
       "notes": ["Report: paladin/research/talents/forever/optimizer/ret-dps-parse.md"],
@@ -1193,40 +1167,39 @@
       "role": "tank",
       "content": "raid",
       "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tank` and profile `raid-tank`: score +47.4% (tank score: 0.5 x threat gain + 0.5 x mitigation gain + 0.1 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tank` and profile `raid-tank`: score +53.7% (tank score: 0.5 x threat gain + 0.5 x mitigation gain + 0.1 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Holy": [],
         "Protection": [
           ["Redoubt", 5],
           ["Precision", 3],
           ["Anticipation", 5],
-          ["Improved Seal of Fury", 1],
           ["Improved Righteous Fury", 3],
-          ["Shield Specialization", 1],
-          ["Swift Judgement", 1],
+          ["Shield Specialization", 3],
+          ["Improved Seal of Fury", 1],
           ["One-Handed Weapon Specialization", 3],
-          ["Templar's Bulwark", 1]
+          ["Swift Judgement", 1],
+          ["Improved Hammer of Justice", 1],
+          ["Templar's Bulwark", 1],
+          ["Iron Creed", 5],
+          ["Holy Shield", 1]
         ],
         "Retribution": [
           ["Deflection", 5],
-          ["Benediction", 1],
           ["Holy Conduit", 2],
           ["Conviction", 5],
           ["Vindication", 3],
           ["Sanctified Judgement", 3],
-          ["Sacred Arbiter", 1],
-          ["Eye for an Eye", 2],
-          ["Vengeance", 3],
-          ["Champion of the Light", 3]
+          ["Sacred Arbiter", 1]
         ]
       },
       "core": [
-        {"talent": "Champion of the Light", "why": "Removing it costs 8.6 points of score in this model."},
+        {"talent": "Holy Shield", "why": "Removing it costs 10.1 points of score in this model."},
         {"talent": "Deflection", "why": "Removing it costs 5.5 points of score in this model."},
+        {"talent": "Iron Creed", "why": "Removing it costs 5.5 points of score in this model."},
         {"talent": "Improved Righteous Fury", "why": "Removing it costs 5.0 points of score in this model."},
-        {"talent": "Vengeance", "why": "Removing it costs 4.7 points of score in this model."},
-        {"talent": "Vindication", "why": "Removing it costs 3.7 points of score in this model."},
-        {"talent": "Conviction", "why": "Removing it costs 3.0 points of score in this model."},
+        {"talent": "Shield Specialization", "why": "Removing it costs 4.1 points of score in this model."},
+        {"talent": "Vindication", "why": "Removing it costs 3.4 points of score in this model."},
         {"talent": "Templar's Bulwark", "why": "Removing it costs 3.0 points of score in this model."},
         {"talent": "Anticipation", "why": "Removing it costs 3.0 points of score in this model."}
       ],

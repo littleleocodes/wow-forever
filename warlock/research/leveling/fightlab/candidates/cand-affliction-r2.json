@@ -11,20 +11,20 @@
     3
    ],
    [
-    "Soul Harvesting",
-    2
-   ],
-   [
     "Malediction",
     5
    ],
    [
-    "Amplify Curse",
-    1
+    "Soul Harvest",
+    2
    ],
    [
     "Improved Bane of Agony",
     2
+   ],
+   [
+    "Amplify Curse",
+    1
    ],
    [
     "Pandemic",
@@ -49,12 +49,12 @@
   ],
   "Demonology": [
    [
-    "Unholy Power",
-    3
-   ],
-   [
     "Improved Health Funnel",
     2
+   ],
+   [
+    "Unholy Power",
+    3
    ],
    [
     "Improved Voidwalker",
@@ -69,10 +69,6 @@
     2
    ],
    [
-    "Master Summoner",
-    2
-   ],
-   [
     "Improved Sayaad",
     3
    ],
@@ -81,12 +77,16 @@
     1
    ],
    [
-    "Fel Domination",
-    1
+    "Master Summoner",
+    2
    ],
    [
     "Decimation",
     2
+   ],
+   [
+    "Fel Domination",
+    1
    ],
    [
     "Soul Link",
@@ -268,5 +268,8 @@
    "talent": "Demonic Knowledge",
    "points": 3
   }
+ ],
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
  ]
 }

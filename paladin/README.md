@@ -11,8 +11,8 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 | Spec | Leveling (solo) | Raid (group: full raid DPS) | PvP |
 |---|---|---|---|
 | **Holy** | [Holy — Leveling into the raid build](leveling/holy.md) 🔬<br>35 s/kill | [Holy — Raid Healer](raid/holy.md)<br>healer | [Holy — PvP](pvp/holy.md) 🔬 |
-| **Protection** | [Protection — Leveling into the raid build](leveling/protection.md) 🔬<br>31 s/kill | [Protection — Tank](raid/protection.md)<br>tank | [Protection — PvP](pvp/protection.md) 🔬 |
-| **Retribution** | **✅ Recommended**<br>[Leveling — Retribution](leveling/retribution.md)<br>28 s/kill | **✅ Recommended**<br>[Two-handed Retribution](raid/retribution.md)<br>1011 DPS (raid) | [Retribution — PvP](pvp/retribution.md) 🔬 |
+| **Protection** | [Protection — Leveling into the raid build](leveling/protection.md) 🔬<br>31 s/kill | [Shield tank](raid/protection.md)<br>tank | [Protection — PvP](pvp/protection.md) 🔬 |
+| **Retribution** | **✅ Recommended**<br>[Leveling — Retribution](leveling/retribution.md)<br>28 s/kill | **✅ Recommended**<br>[Retribution — Seal of Command / Twist of Light](raid/retribution.md)<br>889 DPS (raid) | [Retribution — PvP](pvp/retribution.md) 🔬 |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). PvP has no recommendation: no simulator plays PvP. 🔬: a derived build (searched in a simulator; PvP: the stats model plus the community's picks). ⚗: a generated build, a starting point until someone drafts that spec by hand.
 
@@ -44,9 +44,9 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Full raid DPS | Training dummy DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Retribution](raid/retribution.md) — Two-handed Retribution | 1011 | 544 | 479 | best |
+| 1 | [Retribution](raid/retribution.md) — Retribution — Seal of Command / Twist of Light | 889 | 480 | 404 | best |
 
-**Tanking**: [Protection](raid/protection.md) — Protection — Tank.
+**Tanking**: [Protection](raid/protection.md) — Shield tank.
 
 **Healing**: [Holy](raid/holy.md) — Holy — Raid Healer.
 

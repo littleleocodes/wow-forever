@@ -1,11 +1,5 @@
 [
  {
-  "file": "sim/mage/mage.go",
-  "after": "\tmage.registerFireballSpell()\n",
-  "insert": "\tmage.registerFrostfireBolt() // wow-forever patch: Frostfire Bolt (patches/forever/sim/mage/frostfire_bolt.go)\n",
-  "why": "the fork's frostfire_bolt.go is a stub and is not wired into Initialize"
- },
- {
   "file": "sim/hunter/aspects.go",
   "after": "\thunter.registerAspectOfTheHawkSpell()\n",
   "insert": "\thunter.registerAspectOfTheBeastSpell() // wow-forever patch: Aspect of the Beast + melee Deadly Aspects (patches/forever/sim/hunter/aspect_of_the_beast.go)\n",
@@ -16,5 +10,11 @@
   "after": "\treturn func(ownerStats stats.Stats) stats.Stats {\n",
   "insert": "\t\treturn foreverPetScaling(ownerStats) // wow-forever patch: Forever's pet scaling (patches/forever/sim/hunter/pet_scaling.go)\n",
   "why": "the fork's pets inherit nothing from the hunter; Forever pets get 10% of the highest attack power, 100% crit, 30% armor, 2 health per stamina"
+ },
+ {
+  "file": "sim/hunter/talents_survival.go",
+  "after": "\tif hunter.Talents.LightningReflexes == 0 {\n\t\treturn\n\t}\n",
+  "insert": "\t// wow-forever patch: 2% Agility a rank (client 70205's trait node 110859; the spell 19168 the fork reads still says 3%). The factor\n\t// corrects the line below to 1 + 0.02 x rank and is 1 once the fork reads the trait's value.\n\thunter.MultiplyStat(stats.Agility, (1+0.02*float64(hunter.Talents.LightningReflexes))/spellData.LightningReflexes.MultiplierAt(hunter.Talents.LightningReflexes))\n",
+  "why": "Lightning Reflexes: 70205 gives 2% Agility a rank (10% at 5/5); the fork applies the base spell's 3%"
  }
 ]

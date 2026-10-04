@@ -91,7 +91,7 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Marksmanship | Mortal Shots | 5 | changed | tier 4, max 5 — tooltip changed |
 | Marksmanship | Barrage | 3 | changed | tier 5, max 3 — tooltip changed; was Marksmanship row 5, col 2 |
 | Marksmanship | Ranged Weapon Specialization | 5 | unchanged | tier 6, max 5 |
-| Marksmanship | Trueshot Aura | 1 | changed | tier 4, max 1 — tooltip changed; was Marksmanship row 7, col 2 |
+| Marksmanship | Trueshot Aura | 1 | changed | tier 4, max 1 — tooltip changed; was Marksmanship row 7, col 2; tooltip changed in build 1.60.1.70170 (ranks 1) |
 
 **14 point(s) of this build no longer exist in Forever** and must be re-spent; see `../forever/README.md` for how they were re-spent.
 

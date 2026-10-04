@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid` and profile `raid-dps`: score +107.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid` and profile `raid-dps`: score +106.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -46,31 +46,31 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid`
 
 ## Core talents (priority order)
 
-1. **Conflagrate** — Removing it costs 27.3 points of score in this model.
+1. **Conflagrate** — Removing it costs 27.2 points of score in this model.
 2. **Demonic Sacrifice** — Removing it costs 27.0 points of score in this model.
 3. **Shadow and Flame** — Removing it costs 26.3 points of score in this model.
 4. **Bane** — Removing it costs 21.2 points of score in this model.
-5. **Agonizing Flames** — Removing it costs 13.8 points of score in this model.
-6. **Suppression** — Removing it costs 11.7 points of score in this model.
+5. **Agonizing Flames** — Removing it costs 13.9 points of score in this model.
+6. **Suppression** — Removing it costs 11.6 points of score in this model.
 7. **Improved Shadow Bolt** — Removing it costs 11.0 points of score in this model.
 8. **Fel Vitality** — Removing it costs 8.5 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
-**1 of 10** for `sb-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 10** for `sb-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md)** | ours: optimizer | 22/11/18 | 639 | +0.0% | 759 | +0.0% | 1 s |
-| 2 | [`ds-ruin-raid`](ds-ruin-raid.md) | ours: hand draft | 22/11/18 | 636 | -0.5% | 759 | -0.1% | 1 s |
-| 3 | [`destruction-ml-raid`](destruction-ml-raid.md) | ours: hand draft | 10/11/30 | 628 | -1.7% | 741 | -2.4% | 1 s |
-| 4 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 605 | -5.3% | 721 | -5.0% | 1 s |
-| 5 | *DS/Ruin* | community simulator | - | 598 | -6.5% | 709 | -6.6% | 1 s |
-| 6 | *Shadow and Flame 13/11/27* | community simulator | - | 554 | -13.3% | 653 | -14.0% | 1 s |
-| 7 | *Deep Affliction 35/0/16* | community simulator | - | 531 | -17.0% | 620 | -18.4% | 1 s |
-| 8 | *Demonic Pact 2/31/18* | community simulator | - | 525 | -17.9% | 623 | -18.0% | 1 s |
-| 9 | *Affliction* | community simulator | - | 523 | -18.2% | 612 | -19.4% | 1 s |
-| 10 | *Demonic Pact* | community simulator | - | 518 | -18.9% | 613 | -19.3% | 0 s |
+| 1 | **[`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md)** | ours: optimizer | 22/11/18 | 594 | +0.0% | 710 | +0.0% | 1 s |
+| 2 | [`ds-ruin-raid`](ds-ruin-raid.md) | ours: hand draft | 22/11/18 | 592 | -0.4% | 710 | -0.1% | 1 s |
+| 3 | [`destruction-ml-raid`](destruction-ml-raid.md) | ours: hand draft | 10/11/30 | 586 | -1.4% | 693 | -2.4% | 0 s |
+| 4 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 564 | -5.1% | 672 | -5.4% | 1 s |
+| 5 | *DS/Ruin* | community simulator | - | 556 | -6.4% | 663 | -6.7% | 1 s |
+| 6 | *Shadow and Flame 13/11/27* | community simulator | - | 517 | -13.0% | 611 | -13.9% | 1 s |
+| 7 | *Deep Affliction 35/0/16* | community simulator | - | 490 | -17.5% | 578 | -18.6% | 1 s |
+| 8 | *Demonic Pact 2/31/18* | community simulator | - | 489 | -17.7% | 583 | -17.9% | 0 s |
+| 9 | *Affliction* | community simulator | - | 484 | -18.5% | 570 | -19.7% | 1 s |
+| 10 | *Demonic Pact* | community simulator | - | 484 | -18.6% | 574 | -19.2% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -98,8 +98,8 @@ Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 | 6 | if mana % < 10%: cast Life Tap | 6.7 |
 | 7 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
 | 8 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.3 |
-| 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
-| 10 | cast Shadow Bolt | 14.1 |
+| 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.3 |
+| 10 | cast Shadow Bolt | 14.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Amplify Curse (needs the Amplify Curse talent); cast Conflagrate (needs the Conflagrate talent).
 
@@ -108,14 +108,14 @@ Damage by ability:
 | Ability | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) |
 |---|---|
 | Shadow Bolt | 52% |
-| Bane of Agony | 19% |
+| Bane of Agony | 18% |
 | Corruption | 18% |
 | Immolate | 11% |
 | Searing Pain | 1% |
 
 ## Notes
 
-- Allocation taken from cand-sb-raid-r9 on 2026-10-02: the optimizer's earlier round beat its last export in the community simulator (639 vs 623 DPS; the calibration moved the model past the better build).
+- Allocation taken from cand-sb-raid-r9 on 2026-10-03: the optimizer's earlier round beat its last export in the community simulator (594 vs 581 DPS; the calibration moved the model past the better build).
 - Report: warlock/research/talents/forever/optimizer/sb-raid-raid-dps.md
 
 ## Open questions (verify in the live game)

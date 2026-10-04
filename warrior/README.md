@@ -10,9 +10,9 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling (solo) | Raid (group: full raid DPS) | PvP |
 |---|---|---|---|
-| **Arms** | **✅ Recommended**<br>[Two-handed Arms/raid or leveling](leveling/arms.md)<br>28 s/kill | **✅ Recommended**<br>[Arms — Full raid](raid/arms.md) 🔬<br>792 DPS (raid) | [Arms — PvP](pvp/arms.md) 🔬 |
-| **Fury** | **✅ Recommended**<br>[Raid dual-wield Fury](leveling/fury.md)<br>29 s/kill | [Raid dual-wield Fury](raid/fury.md)<br>710 DPS (raid) | [Fury — PvP](pvp/fury.md) 🔬 |
-| **Protection** | [Protection — Leveling into the raid build](leveling/protection.md) 🔬<br>31 s/kill | [Protection — Raid Tank](raid/protection.md)<br>tank | [Protection — PvP](pvp/protection.md) 🔬 |
+| **Arms** | **✅ Recommended**<br>[Two-handed Arms/raid or leveling](leveling/arms.md)<br>28 s/kill | **✅ Recommended**<br>[Arms — Full raid](raid/arms.md) 🔬<br>890 DPS (raid) | [Arms — Mortal Strike](pvp/arms.md) |
+| **Fury** | **✅ Recommended**<br>[Raid dual-wield Fury](leveling/fury.md)<br>29 s/kill | [Raid dual-wield Fury](raid/fury.md)<br>797 DPS (raid) | [Fury — PvP](pvp/fury.md) 🔬 |
+| **Protection** | [Protection — Leveling into the raid build](leveling/protection.md) 🔬<br>31 s/kill | [Raid tank in Defensive Stance with a shield](raid/protection.md)<br>tank | [Protection — PvP](pvp/protection.md) 🔬 |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). PvP has no recommendation: no simulator plays PvP. 🔬: a derived build (searched in a simulator; PvP: the stats model plus the community's picks). ⚗: a generated build, a starting point until someone drafts that spec by hand.
 
@@ -36,17 +36,17 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Full raid DPS | Training dummy DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Arms](raid/arms.md) — Arms — Full raid 🔬 | 792 | 387 | 377 | best |
-| 2 | [Fury](raid/fury.md) — Raid dual-wield Fury | 710 | 390 | 328 | -10% |
+| 1 | [Arms](raid/arms.md) — Arms — Full raid 🔬 | 890 | 434 | 424 | best |
+| 2 | [Fury](raid/fury.md) — Raid dual-wield Fury | 797 | 422 | 364 | -10% |
 
-**Tanking**: [Protection](raid/protection.md) — Protection — Raid Tank.
+**Tanking**: [Protection](raid/protection.md) — Raid tank in Defensive Stance with a shield.
 
 ### PvP
 
 Not ranked: no simulator plays PvP, so there is nothing fair to rank on. The builds below rest on the talents' descriptions and the community's PvP builds.
 
-- [Arms](pvp/arms.md) — Arms — PvP 🔬: 32/19/0
-- [Fury](pvp/fury.md) — Fury — PvP 🔬: 13/38/0
+- [Arms](pvp/arms.md) — Arms — Mortal Strike: 31/20/0
+- [Fury](pvp/fury.md) — Fury — PvP 🔬: 14/36/1
 - [Protection](pvp/protection.md) — Protection — PvP 🔬: 0/21/30
 
 Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie. Everything is a simulation of the beta, not a measurement in the game.
@@ -78,7 +78,7 @@ The research behind the pages above: every build, report and simulation.
 |---|---|---|
 | [research/leveling/](research/leveling/README.md) | Leveling and solo builds, the leveling guide, rotation and respec plan, fight-lab reports (6 builds) | [leveling-arms](research/leveling/builds/leveling-arms.md), [protection-leveling](research/leveling/builds/protection-leveling.md) |
 | [research/raid/](research/raid/README.md) | Raid DPS, tank and healer builds, training-dummy and raid-sim rankings, rotation, gear, consumables (10 builds) | [fury-dw-raid](research/raid/builds/fury-dw-raid.md), [arms-2h-raid](research/raid/builds/arms-2h-raid.md), [arms-battle-raid](research/raid/builds/arms-battle-raid.md), [prot-raid-tank](research/raid/builds/prot-raid-tank.md), [arms-community-parse](research/raid/builds/arms-community-parse.md) |
-| [research/pvp/](research/pvp/README.md) | PvP builds (no rotation: PvP play depends on the fight) (4 builds) | [arms-pvp](research/pvp/builds/arms-pvp.md), [arms-pvp](research/pvp/builds/arms-pvp.md), [fury-pvp](research/pvp/builds/fury-pvp.md), [protection-pvp](research/pvp/builds/protection-pvp.md) |
+| [research/pvp/](research/pvp/README.md) | PvP builds (no rotation: PvP play depends on the fight) (3 builds) | [arms-pvp](research/pvp/builds/arms-pvp.md), [fury-pvp](research/pvp/builds/fury-pvp.md), [protection-pvp](research/pvp/builds/protection-pvp.md) |
 | [research/spells/](research/spells/README.md) | Spell ranks and numbers from the beta client | |
 | [research/talents/forever/](research/talents/forever/talent-trees.md) | Talent trees, the baseline audit, [adaptation notes](research/talents/forever/README.md) and `proposed-builds.json` (the source of truth for every build above) | |
 | [research/talents/classic-baseline/](research/talents/classic-baseline/README.md) | Classic Era community builds used as the baseline | |

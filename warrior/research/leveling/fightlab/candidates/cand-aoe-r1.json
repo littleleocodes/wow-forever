@@ -11,11 +11,11 @@
     3
    ],
    [
-    "Improved Overpower",
+    "Improved Charge",
     2
    ],
    [
-    "Improved Charge",
+    "Improved Overpower",
     2
    ],
    [
@@ -37,6 +37,10 @@
   ],
   "Fury": [
    [
+    "Booming Voice",
+    1
+   ],
+   [
     "Cruelty",
     5
    ],
@@ -45,16 +49,12 @@
     5
    ],
    [
-    "Blood Craze",
-    3
-   ],
-   [
     "Piercing Howl",
     1
    ],
    [
-    "Boundless Rage",
-    1
+    "Blood Craze",
+    3
    ],
    [
     "Enrage",
@@ -69,12 +69,8 @@
     1
    ],
    [
-    "Precision",
-    1
-   ],
-   [
     "Improved Intercept",
-    1
+    2
    ],
    [
     "Flurry",
@@ -233,5 +229,8 @@
    "points": 1
   }
  ],
- "note": "Optimizer build saved by rebuild.py on 2026-09-26 (calibration round 1)"
+ "note": "Optimizer build saved by rebuild.py on 2026-09-26 (calibration round 1)",
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

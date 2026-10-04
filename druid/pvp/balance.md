@@ -2,7 +2,7 @@
 
 [Druid](../README.md) > [PvP](README.md) > Balance
 
-**[Balance — PvP](../research/pvp/builds/balance-pvp.md)** (32/11/8) — [open the talent tree](https://talentsforever.com/druid/60/5032212105501311-05212001-50003-4)
+**[Balance — PvP](../research/pvp/builds/balance-pvp.md)** (32/11/8) — [open the talent tree](https://talentsforever.com/druid/60/5032212105501311-052120001-50003-4)
 
 > 🔬 Derived build: the stats model's best PvP build, with the community's most-picked talents where the model rates talents alike. A model of the beta, to check at launch.
 

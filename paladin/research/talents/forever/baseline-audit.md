@@ -14,7 +14,7 @@
 | Holy | Illumination | 5 | changed | tier 4, max 5 — tooltip changed |
 | Holy | Improved Blessing of Wisdom | 2 | **REMOVED** | removed from Classic |
 | Holy | Divine Favor | 1 | moved | tier 4, max 1 — was Holy row 5, col 2 |
-| Holy | Holy Power | 5 | changed | tier 6, max 5 — tooltip changed; tooltip changed in build 1.60.1.70009 (ranks 1, 2, 3, 4, 5) |
+| Holy | Holy Power | 5 | changed | tier 6, max 5 — tooltip changed; tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5) |
 | Holy | Holy Shock | 1 | changed | tier 5, max 1 — tooltip changed; was Holy row 7, col 2 |
 | Protection | Improved Devotion Aura | 5 | **REMOVED** | removed from Classic |
 | Protection | Guardian's Favor | 2 | changed | tier 2, max 2 — tooltip changed |
@@ -38,12 +38,12 @@
 | Retribution | Improved Seal of the Crusader | 3 | **REMOVED** | removed from Classic |
 | Retribution | Deflection | 5 | moved | tier 1, max 5 — was Retribution row 2, col 3 |
 | Retribution | Conviction | 5 | changed | tier 2, max 5 — tooltip changed; was Retribution row 3, col 2 |
-| Retribution | Seal of Command | 1 | changed | tier 3, max 1 — tooltip changed; tooltip changed in build 1.60.1.70009 (ranks 1) |
+| Retribution | Seal of Command | 1 | changed | tier 3, max 1 — tooltip changed; tooltip changed in build 1.60.1.70170 (ranks 1) |
 | Retribution | Pursuit of Justice | 2 | changed | tier 3, max 2 — tooltip changed |
 | Retribution | Improved Retribution Aura | 2 | **REMOVED** | removed from Classic |
-| Retribution | Two-Handed Weapon Specialization | 3 | changed | tier 5, max 3 — tooltip changed; tooltip changed in build 1.60.1.70009 (ranks 1, 2, 3) |
+| Retribution | Two-Handed Weapon Specialization | 3 | changed | tier 5, max 3 — tooltip changed; tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3) |
 | Retribution | Sanctity Aura | 1 | **REMOVED** | removed from Classic |
-| Retribution | Vengeance | 5 | changed | tier 5, max 3 — max rank 5 → 3; tooltip changed; was Retribution row 6, col 2; tooltip changed in build 1.60.1.70009 (ranks 1, 2, 3) |
+| Retribution | Vengeance | 5 | changed | tier 5, max 3 — max rank 5 → 3; tooltip changed; was Retribution row 6, col 2; tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3) |
 | Retribution | Repentance | 1 | moved | tier 5, max 1 — was Retribution row 7, col 2 |
 
 **Orphaned points to re-spend: 12.** Points in changed/moved talents to re-evaluate: 29.
@@ -56,17 +56,17 @@
 | Holy | Divine Intellect | 5 | unchanged | tier 1, max 5 |
 | Holy | Consecration | 1 | **REMOVED** | removed from Classic |
 | Protection | Improved Devotion Aura | 5 | **REMOVED** | removed from Classic |
-| Protection | Redoubt | 5 | changed | tier 1, max 5 — tooltip changed |
+| Protection | Redoubt | 5 | changed | tier 1, max 5 — tooltip changed; tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5) |
 | Protection | Precision | 3 | changed | tier 2, max 3 — tooltip changed |
 | Protection | Toughness | 5 | moved | tier 1, max 5 — was Protection row 2, col 4 |
 | Protection | Improved Righteous Fury | 3 | changed | tier 3, max 3 — tooltip changed |
-| Protection | Shield Specialization | 3 | changed | tier 3, max 3 — tooltip changed; tooltip changed in build 1.60.1.70009 (ranks 1, 2, 3) |
+| Protection | Shield Specialization | 3 | changed | tier 3, max 3 — tooltip changed; tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3) |
 | Protection | Anticipation | 5 | changed | tier 2, max 5 — tooltip changed; was Protection row 3, col 4 |
 | Protection | Blessing of Kings | 1 | **REMOVED** | removed from Classic |
 | Protection | Blessing of Sanctuary | 1 | **REMOVED** | removed from Classic |
 | Protection | Reckoning | 3 | changed | tier 5, max 5 — tooltip changed |
 | Protection | One-Handed Weapon Specialization | 5 | changed | tier 4, max 3 — max rank 5 → 3; tooltip changed; was Protection row 6, col 3 |
-| Protection | Holy Shield | 1 | changed | tier 7, max 1 — tooltip changed |
+| Protection | Holy Shield | 1 | changed | tier 7, max 1 — tooltip changed; tooltip changed in build 1.60.1.70170 (ranks 1) |
 
 **Orphaned points to re-spend: 8.** Points in changed/moved talents to re-evaluate: 33.
 
@@ -82,7 +82,7 @@
 | Holy | Unyielding Faith | 2 | changed | tier 2, max 2 — tooltip changed; was Holy row 3, col 4 |
 | Holy | Illumination | 5 | changed | tier 4, max 5 — tooltip changed |
 | Holy | Divine Favor | 1 | moved | tier 4, max 1 — was Holy row 5, col 2 |
-| Holy | Holy Power | 5 | changed | tier 6, max 5 — tooltip changed; tooltip changed in build 1.60.1.70009 (ranks 1, 2, 3, 4, 5) |
+| Holy | Holy Power | 5 | changed | tier 6, max 5 — tooltip changed; tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5) |
 | Holy | Holy Shock | 1 | changed | tier 5, max 1 — tooltip changed; was Holy row 7, col 2 |
 | Retribution | Improved Blessing of Might | 5 | **REMOVED** | removed from Classic |
 | Retribution | Benediction | 5 | changed | tier 1, max 5 — tooltip changed |
@@ -105,12 +105,12 @@
 | Retribution | Improved Seal of the Crusader | 3 | **REMOVED** | removed from Classic |
 | Retribution | Deflection | 5 | moved | tier 1, max 5 — was Retribution row 2, col 3 |
 | Retribution | Conviction | 5 | changed | tier 2, max 5 — tooltip changed; was Retribution row 3, col 2 |
-| Retribution | Seal of Command | 1 | changed | tier 3, max 1 — tooltip changed; tooltip changed in build 1.60.1.70009 (ranks 1) |
+| Retribution | Seal of Command | 1 | changed | tier 3, max 1 — tooltip changed; tooltip changed in build 1.60.1.70170 (ranks 1) |
 | Retribution | Pursuit of Justice | 2 | changed | tier 3, max 2 — tooltip changed |
 | Retribution | Improved Retribution Aura | 2 | **REMOVED** | removed from Classic |
-| Retribution | Two-Handed Weapon Specialization | 3 | changed | tier 5, max 3 — tooltip changed; tooltip changed in build 1.60.1.70009 (ranks 1, 2, 3) |
+| Retribution | Two-Handed Weapon Specialization | 3 | changed | tier 5, max 3 — tooltip changed; tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3) |
 | Retribution | Sanctity Aura | 1 | **REMOVED** | removed from Classic |
-| Retribution | Vengeance | 5 | changed | tier 5, max 3 — max rank 5 → 3; tooltip changed; was Retribution row 6, col 2; tooltip changed in build 1.60.1.70009 (ranks 1, 2, 3) |
+| Retribution | Vengeance | 5 | changed | tier 5, max 3 — max rank 5 → 3; tooltip changed; was Retribution row 6, col 2; tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3) |
 | Retribution | Repentance | 1 | moved | tier 5, max 1 — was Retribution row 7, col 2 |
 
 **Orphaned points to re-spend: 12.** Points in changed/moved talents to re-evaluate: 29.

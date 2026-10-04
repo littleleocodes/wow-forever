@@ -313,9 +313,9 @@
   "Arms": {
    "model": "arms-2h-raid",
    "tree": "Arms",
-   "builds_behind_picks": 8519,
-   "score": 0.8910126748042737,
-   "score_best": 0.8994348175139659,
+   "builds_behind_picks": 9042,
+   "score": 0.870621362881237,
+   "score_best": 0.8791226998028427,
    "score_talentless": 0.0,
    "optimum": {
     "Improved Rend": 3,
@@ -332,10 +332,10 @@
     "Improved Hamstring": 3,
     "Mortal Strike": 1,
     "Cruelty": 5,
-    "Iron Will": 5,
+    "Unbridled Wrath": 5,
     "Blood Craze": 3,
     "Piercing Howl": 1,
-    "Unbridled Wrath": 1,
+    "Booming Voice": 1,
     "Enrage": 5
    },
    "allocation": {
@@ -353,147 +353,159 @@
     "Improved Hamstring": 3,
     "Mortal Strike": 1,
     "Cruelty": 5,
-    "Iron Will": 5,
+    "Unbridled Wrath": 5,
     "Blood Craze": 3,
     "Piercing Howl": 1,
-    "Unbridled Wrath": 1,
     "Enrage": 4,
-    "Impale": 2
+    "Impale": 2,
+    "Furious Precision": 1
    },
    "moves": [
     {
      "move": "2 points Weaponmaster -> Impale",
      "pick_gain": 60.4,
-     "score_share": 0.9957
+     "score_share": 0.9955
     },
     {
      "move": "1 point Enrage -> Two-Handed Weapon Specialization",
-     "pick_gain": 22.53,
-     "score_share": 0.9906
+     "pick_gain": 25.53,
+     "score_share": 0.9903
+    },
+    {
+     "move": "1 point Booming Voice -> Furious Precision",
+     "pick_gain": 10.73,
+     "score_share": 0.9903
     }
    ],
-   "pick_score": 1262.4,
-   "pick_score_optimum": 1179.5,
+   "pick_score": 1286.9,
+   "pick_score_optimum": 1190.3,
    "weakest_point": {
     "talent": "Anger Management",
-    "value_per_point": 0.0084
+    "value_per_point": 0.0088
    },
    "skipped_consensus": [
     {
      "talent": "Bloodthrill",
-     "pick": 78,
-     "value_per_point": 0.0063
-    }
-   ],
-   "rare": [],
-   "hand": {
-    "arms-pvp": 0.7106
-   },
-   "verdict": "replaces"
-  },
-  "Fury": {
-   "model": "fury-dw-raid",
-   "tree": "Fury",
-   "builds_behind_picks": 9026,
-   "score": 0.7037815473303692,
-   "score_best": 0.7089125184693755,
-   "score_talentless": 0.0,
-   "optimum": {
-    "Cruelty": 5,
-    "Iron Will": 5,
-    "Piercing Howl": 1,
-    "Blood Craze": 3,
-    "Unbridled Wrath": 1,
-    "Improved Execute": 2,
-    "Raging Blows": 1,
-    "Enrage": 5,
-    "Death Wish": 1,
-    "Improved Intercept": 2,
-    "Improved Berserker Rage": 2,
-    "Dual Wield Specialization": 5,
-    "Bloodthirst": 1,
-    "Deflection": 5,
-    "Improved Tactical Mastery": 5,
-    "Anger Management": 1,
-    "Improved Charge": 2,
-    "Precision": 3,
-    "Flurry": 1
-   },
-   "allocation": {
-    "Cruelty": 5,
-    "Iron Will": 3,
-    "Piercing Howl": 1,
-    "Blood Craze": 3,
-    "Unbridled Wrath": 3,
-    "Improved Execute": 2,
-    "Raging Blows": 1,
-    "Enrage": 5,
-    "Death Wish": 1,
-    "Improved Intercept": 2,
-    "Improved Berserker Rage": 2,
-    "Dual Wield Specialization": 5,
-    "Bloodthirst": 1,
-    "Deflection": 5,
-    "Improved Tactical Mastery": 5,
-    "Anger Management": 1,
-    "Improved Charge": 2,
-    "Precision": 3,
-    "Flurry": 1
-   },
-   "moves": [
-    {
-     "move": "2 points Iron Will -> Unbridled Wrath",
-     "pick_gain": 28.8,
-     "score_share": 0.9928
-    }
-   ],
-   "pick_score": 1011.8,
-   "pick_score_optimum": 983.0,
-   "weakest_point": {
-    "talent": "Flurry",
-    "value_per_point": 0.0065
-   },
-   "skipped_consensus": [
-    {
-     "talent": "Improved Rend",
-     "pick": 76,
-     "value_per_point": 0.0
-    },
-    {
-     "talent": "Deep Wounds",
-     "pick": 71,
-     "value_per_point": 0.0099
-    },
-    {
-     "talent": "Boundless Rage",
-     "pick": 71,
-     "value_per_point": 0.0024
+     "pick": 79,
+     "value_per_point": 0.0065
     }
    ],
    "rare": [
     {
+     "talent": "Enrage",
+     "pick": 14,
+     "ranks": 4,
+     "value_per_point": 0.0117
+    }
+   ],
+   "hand": {
+    "arms-pvp": 0.9829
+   },
+   "verdict": "hand stays"
+  },
+  "Fury": {
+   "model": "fury-dw-raid",
+   "tree": "Fury",
+   "builds_behind_picks": 9626,
+   "score": 0.7792305500519194,
+   "score_best": 0.7862796023481893,
+   "score_talentless": 0.0,
+   "optimum": {
+    "Cruelty": 5,
+    "Unbridled Wrath": 5,
+    "Piercing Howl": 1,
+    "Blood Craze": 3,
+    "Booming Voice": 1,
+    "Raging Blows": 1,
+    "Improved Execute": 2,
+    "Enrage": 5,
+    "Death Wish": 1,
+    "Improved Berserker Rage": 2,
+    "Improved Intercept": 2,
+    "Dual Wield Specialization": 5,
+    "Bloodthirst": 1,
+    "Deflection": 5,
+    "Improved Tactical Mastery": 5,
+    "Anger Management": 1,
+    "Improved Charge": 2,
+    "Iron Will": 4
+   },
+   "allocation": {
+    "Cruelty": 5,
+    "Unbridled Wrath": 5,
+    "Piercing Howl": 1,
+    "Blood Craze": 3,
+    "Raging Blows": 1,
+    "Improved Execute": 2,
+    "Enrage": 5,
+    "Death Wish": 1,
+    "Improved Berserker Rage": 2,
+    "Improved Intercept": 2,
+    "Dual Wield Specialization": 5,
+    "Bloodthirst": 1,
+    "Deflection": 5,
+    "Improved Tactical Mastery": 5,
+    "Anger Management": 1,
+    "Improved Charge": 2,
+    "Iron Will": 1,
+    "Improved Rend": 1,
+    "Furious Precision": 1,
+    "Flurry": 2
+   },
+   "moves": [
+    {
+     "move": "1 point Iron Will -> Improved Rend",
+     "pick_gain": 22.33,
+     "score_share": 0.9917
+    },
+    {
+     "move": "1 point Booming Voice -> Furious Precision",
+     "pick_gain": 20.07,
+     "score_share": 0.9917
+    },
+    {
+     "move": "2 points Iron Will -> Flurry",
+     "pick_gain": 1.2,
+     "score_share": 0.991
+    }
+   ],
+   "pick_score": 1103.2,
+   "pick_score_optimum": 1059.6,
+   "weakest_point": {
+    "talent": "Improved Rend",
+    "value_per_point": 0.0
+   },
+   "skipped_consensus": [
+    {
+     "talent": "Deep Wounds",
+     "pick": 71,
+     "value_per_point": 0.0102
+    }
+   ],
+   "rare": [
+    {
+     "talent": "Flurry",
+     "pick": 18,
+     "ranks": 2,
+     "value_per_point": 0.0079
+    },
+    {
+     "talent": "Improved Berserker Rage",
+     "pick": 20,
+     "ranks": 2,
+     "value_per_point": 0.0392
+    },
+    {
      "talent": "Improved Charge",
      "pick": 18,
      "ranks": 2,
-     "value_per_point": 0.0228
-    },
-    {
-     "talent": "Improved Execute",
-     "pick": 20,
-     "ranks": 2,
-     "value_per_point": 0.0391
-    },
-    {
-     "talent": "Improved Intercept",
-     "pick": 19,
-     "ranks": 2,
-     "value_per_point": 0.0159
+     "value_per_point": 0.0205
     },
     {
      "talent": "Iron Will",
-     "pick": 18,
-     "ranks": 3,
-     "value_per_point": 0.0092
+     "pick": 15,
+     "ranks": 1,
+     "value_per_point": 0.0083
     }
    ],
    "hand": {},
@@ -502,90 +514,90 @@
   "Protection": {
    "model": "arms-2h-raid",
    "tree": "Protection",
-   "builds_behind_picks": 11698,
-   "score": 0.8343294858798017,
-   "score_best": 0.8423294858798017,
+   "builds_behind_picks": 12747,
+   "score": 0.8169585282235364,
+   "score_best": 0.8249585282235364,
    "score_talentless": 0.0,
    "optimum": {
+    "Iron Will": 5,
     "Anticipation": 5,
-    "Toughness": 5,
-    "Shield Specialization": 5,
     "Improved Disarm": 3,
     "Improved Bloodrage": 2,
+    "Improved Shield Bash": 2,
+    "Vanguard": 1,
+    "Shield Specialization": 5,
     "Concussion Blow": 1,
     "Improved Shield Wall": 2,
-    "Improved Shield Bash": 2,
     "Focused Rage": 3,
-    "Last Stand": 1,
     "Cruelty": 5,
-    "Iron Will": 5,
+    "Unbridled Wrath": 5,
     "Blood Craze": 3,
     "Piercing Howl": 1,
-    "Unbridled Wrath": 1,
+    "Booming Voice": 1,
     "Enrage": 5,
-    "Vanguard": 1,
+    "Last Stand": 1,
     "Death Wish": 1
    },
    "allocation": {
+    "Iron Will": 5,
     "Anticipation": 1,
-    "Toughness": 5,
-    "Shield Specialization": 5,
     "Improved Disarm": 3,
     "Improved Bloodrage": 2,
+    "Improved Shield Bash": 2,
+    "Vanguard": 1,
+    "Shield Specialization": 5,
     "Concussion Blow": 1,
     "Improved Shield Wall": 2,
-    "Improved Shield Bash": 2,
     "Focused Rage": 3,
-    "Last Stand": 1,
     "Cruelty": 5,
-    "Iron Will": 5,
+    "Unbridled Wrath": 5,
     "Blood Craze": 3,
     "Piercing Howl": 1,
-    "Unbridled Wrath": 1,
     "Enrage": 5,
-    "Vanguard": 1,
+    "Last Stand": 1,
     "Death Wish": 1,
     "Master of Defense": 2,
-    "Improved Revenge": 2
+    "Improved Thunder Clap": 2,
+    "Furious Precision": 1
    },
    "moves": [
     {
      "move": "2 points Anticipation -> Master of Defense",
-     "pick_gain": 70.6,
-     "score_share": 0.9953
+     "pick_gain": 64.6,
+     "score_share": 0.9952
     },
     {
-     "move": "2 points Anticipation -> Improved Revenge",
-     "pick_gain": 30.27,
-     "score_share": 0.9905
+     "move": "2 points Anticipation -> Improved Thunder Clap",
+     "pick_gain": 38.93,
+     "score_share": 0.9903
+    },
+    {
+     "move": "1 point Booming Voice -> Furious Precision",
+     "pick_gain": 3.2,
+     "score_share": 0.9903
     }
    ],
-   "pick_score": 998.7,
-   "pick_score_optimum": 897.8,
+   "pick_score": 1099.5,
+   "pick_score_optimum": 992.8,
    "weakest_point": {
-    "talent": "Improved Revenge",
+    "talent": "Improved Bloodrage",
     "value_per_point": 0.0
    },
    "skipped_consensus": [
     {
-     "talent": "Bastion",
-     "pick": 95,
-     "value_per_point": 0.0
-    },
-    {
      "talent": "Shield Slam",
      "pick": 94,
-     "value_per_point": 0.0267
+     "value_per_point": 0.0273
     },
     {
-     "talent": "Defiance",
-     "pick": 83,
+     "talent": "Bastion",
+     "pick": 84,
      "value_per_point": 0.0
     },
     {
      "talent": "Deflection",
      "pick": 78,
-     "value_per_point": 0.0045
+     "value_per_point": 0.0046
     }
    ],
    "rare": [
@@ -593,37 +605,31 @@
      "talent": "Blood Craze",
      "pick": 15,
      "ranks": 3,
-     "value_per_point": 0.1354
+     "value_per_point": 0.1383
     },
     {
      "talent": "Death Wish",
-     "pick": 1,
+     "pick": 0,
      "ranks": 1,
-     "value_per_point": 0.0903
+     "value_per_point": 0.0925
     },
     {
      "talent": "Enrage",
-     "pick": 9,
+     "pick": 4,
      "ranks": 5,
-     "value_per_point": 0.0109
+     "value_per_point": 0.0113
     },
     {
-     "talent": "Improved Disarm",
-     "pick": 11,
-     "ranks": 3,
-     "value_per_point": 0.0089
-    },
-    {
-     "talent": "Iron Will",
-     "pick": 9,
-     "ranks": 5,
-     "value_per_point": 0.0077
+     "talent": "Furious Precision",
+     "pick": 12,
+     "ranks": 1,
+     "value_per_point": 0.0
     },
     {
      "talent": "Piercing Howl",
      "pick": 11,
      "ranks": 1,
-     "value_per_point": 0.0712
+     "value_per_point": 0.0727
     }
    ],
    "hand": {},

@@ -33,6 +33,10 @@
   ],
   "Fury": [
    [
+    "Booming Voice",
+    4
+   ],
+   [
     "Cruelty",
     5
    ],
@@ -49,10 +53,6 @@
     3
    ],
    [
-    "Boundless Rage",
-    1
-   ],
-   [
     "Enrage",
     5
    ],
@@ -63,10 +63,6 @@
    [
     "Death Wish",
     1
-   ],
-   [
-    "Precision",
-    3
    ],
    [
     "Flurry",
@@ -213,5 +209,8 @@
    "points": 3
   }
  ],
- "note": "Optimizer build saved by rebuild.py on 2026-09-27 (calibration round 4)"
+ "note": "Optimizer build saved by rebuild.py on 2026-09-27 (calibration round 4)",
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

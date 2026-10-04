@@ -4,8 +4,8 @@
 
 Not ranked: no simulator plays PvP, so there is nothing fair to rank on. The builds below rest on the talents' descriptions and the community's PvP builds.
 
-- [Arms](arms.md) — Arms — PvP 🔬: 32/19/0
-- [Fury](fury.md) — Fury — PvP 🔬: 13/38/0
+- [Arms](arms.md) — Arms — Mortal Strike: 31/20/0
+- [Fury](fury.md) — Fury — PvP 🔬: 14/36/1
 - [Protection](protection.md) — Protection — PvP 🔬: 0/21/30
 
 🔬 = a derived build (searched in a simulator, or for PvP the stats model plus the community's picks). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.

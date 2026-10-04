@@ -95,6 +95,13 @@ def find_raw(raw_dir, sub_prefix, name):
             p = d / name
             if p.exists():
                 return p
+    # a site that did not answer for this class in this pull (2026-10-03: thewowdb had no paladin, mage or warlock page): the newest
+    # earlier pull's read, said so in the output; merge_class falls back to the export where the trees disagree
+    for older in sorted((d for d in raw_dir.parent.iterdir() if d.is_dir() and d.name < raw_dir.name), reverse=True):
+        for d in older.iterdir():
+            if d.is_dir() and d.name.startswith(sub_prefix) and (d / name).exists():
+                print(f"  {name}: not in {raw_dir.name}; using {older.name}/{d.name}")
+                return d / name
     raise SystemExit(f"{name} not found under {raw_dir}/{sub_prefix}*")
 
 
@@ -123,7 +130,19 @@ def merge_class(cls, wf, tf, wd, build, captured, sources):
         wmap = {t["name"]: t for t in wtr["talents"]}
         tmap = {t["name"]: t for t in ttr["talents"]}
         dmap = {n["name"]: n for n in dtr["nodes"]}
-        assert set(tmap) == set(dmap), (cls, tname, set(tmap) ^ set(dmap))
+        if set(tmap) != set(dmap):
+            # the Trait-edge snapshot lags (or leads) the export: 2026-10-03, the warrior's Fury tree after the hotfixes of 1-2 Oct, which
+            # only the talentsforever export carries. The export's positions, rank caps and prerequisites (`req`, at the required talent's
+            # full rank, as the client's arrows ask) stand in for this tree.
+            notes.append(f"{tname}: the Trait-edge snapshot disagrees with the talentsforever export (only in the snapshot: "
+                         f"{', '.join(sorted(set(dmap) - set(tmap))) or 'none'}; only in the export: {', '.join(sorted(set(tmap) - set(dmap))) or 'none'}); "
+                         f"the export's positions, rank caps and prerequisites used for this tree")
+            mx = {t["name"]: t["max"] for t in ttr["talents"]}
+            dmap = {}
+            for t in ttr["talents"]:
+                node_name[f"tf:{tname}:{t['name']}"] = (tname, t["name"])
+                dmap[t["name"]] = {"name": t["name"], "row": t["row"] - 1, "col": t["col"] - 1, "maxRanks": t["max"], "iconName": t.get("icon"),
+                                   "requires": [{"id": f"tf:{tname}:{t['req']}", "rank": mx.get(t["req"], 1)}] if t.get("req") else []}
         # renames: a 70009 talent missing from 69893 whose grid cell held a 69893 talent missing from 70009
         wf_only = {n: t for n, t in wmap.items() if n not in tmap}
         for n, t in tmap.items():

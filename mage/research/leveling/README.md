@@ -47,7 +47,7 @@ Time per kill = fight + loot, travel, eating, drinking, healing and deaths; a bu
 - **Talents that matter** (time per kill lost when the talent is removed from `opt-frost-leveling-leveling-st` at level 60): Ice Lance +40% (L30 +53%), Shatter +22% (L30 +18%), Ice Shards +18% (L30 +5%), Fingers of Frost +9% (L30 +4%), Frostbite +6% (L30 +10%), Frost Channeling +6% (L30 +4%).
 - **Measure about zero** single-target at 60 (kept for other reasons or not simulated): Arcane Focus, Ice Block, Wand Specialization.
 - **Caster mobs:** 16% of pulls at level 30 are casters (creature-database share); 0.08 interrupts per kill at 60.
-- **Race** (hand draft vs every optimizer candidate, 2026-10-02, mean time per kill over levels 20/30/40/50/60): cand-frost-r6 26.3s, leveling-frost 26.4s, cand-frost-r3 26.5s, cand-frost-r5 26.5s, cand-frost-r2 26.9s, cand-frost-0-5-46 27.2s, cand-frost-23-0-28 27.3s, cand-frost-r1 27.4s, cand-frost-28-0-23 27.7s — fastest: **cand-frost-r6**.
+- **Race** (hand draft vs every optimizer candidate, 2026-10-03, mean time per kill over levels 20/30/40/50/60): cand-frost-r6 26.3s, leveling-frost 26.4s, cand-frost-r3 26.5s, cand-frost-r5 26.5s, cand-frost-r2 26.9s, cand-frost-0-5-46 27.2s, cand-frost-23-0-28 27.3s, cand-frost-r1 27.4s, cand-frost-28-0-23 27.7s — fastest: **cand-frost-r6**.
 - **Calibration:** the scorer's `frost-leveling` leveling values were fitted jointly to the hand draft and every candidate in [`fightlab/candidates/`](fightlab/candidates/) (1 round, converged: the optimizer build repeats).
 - **Other spec, same module:** `fire-leveling` with `opt-fire-leveling-leveling-st` ([report](fightlab/fire-leveling.md)): L30 37.6s, L60 31.9s. Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
 - **Other spec, same module:** `frostfire-leveling` with `opt-frost-leveling-leveling-st` ([report](fightlab/frostfire-leveling.md)): L30 32.8s (+1% vs `opt-frost-leveling-leveling-st`), L60 27.4s (+19% vs `opt-frost-leveling-leveling-st`). Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
@@ -63,7 +63,7 @@ When to respec while leveling, with the best point-by-point path: [respec plan](
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
 |---|---|---|---|
 | Leveling, Frost single target | frost-leveling | [12/3/36 with order](builds/opt-frost-leveling-leveling-st.md) (+68.0%) | [leveling-frost](builds/leveling-frost.md) |
-| Leveling, Fire single target | fire-leveling | [0/33/18 with order](builds/opt-fire-leveling-leveling-st.md) (+64.6%) | [leveling-frost](builds/leveling-frost.md) |
+| Leveling, Fire single target | fire-leveling | [0/33/18](builds/opt-fire-leveling-leveling-st.md) (+64.6%) | [leveling-frost](builds/leveling-frost.md) |
 | AoE grinding | frost-aoe | [2/3/46 with order](builds/opt-frost-aoe-leveling-aoe.md) (+77.1%) | [leveling-frost](builds/leveling-frost.md) |
 
 Model findings: Arcane Meditation (17%/rank) pulls every build 15+ points into Arcane; raid Frost is Shatter + Fingers of Frost with no Winter's Chill; Frost still out-levels Fire (+43% vs +31% time saved). The AoE build now follows the Classic AoE loop (Improved Frost Nova 15-16, Permafrost, Improved Blizzard 20-22, Arctic Reach, Cold Snap, Ice Block, Ice Barrier at 40, no Frostbite) and keeps Shatter/Fingers of Frost because Forever's versions are stronger.

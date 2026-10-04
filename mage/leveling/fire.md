@@ -20,37 +20,6 @@
 
 **Between fights:** Drink your conjured water below a third of your mana, **Evocation** when you are out, eat below two thirds of your health.
 
-## Talents while leveling
-
-One point per level from 10, in this order:
-
-| Levels | Talent | Points |
-|---|---|---|
-| 10-14 | Improved Fireball (Fire) | 5 |
-| 15-17 | Ignite (Fire) | 3 |
-| 18-22 | Elemental Precision (Frost) | 5 |
-| 23 | Permafrost (Frost) | 1 |
-| 24-26 | Frostbite (Frost) | 3 |
-| 27 | Ice Shards (Frost) | 1 |
-| 28 | Ice Lance (Frost) | 1 |
-| 29-30 | Ignite (Fire) | 2 |
-| 31-34 | Ice Shards (Frost) | 4 |
-| 35 | Ice Block (Frost) | 1 |
-| 36 | Shatter (Frost) | 1 |
-| 37-39 | Burning Soul (Fire) | 3 |
-| 40 | Impact (Fire) | 1 |
-| 41 | Pyroblast (Fire) | 1 |
-| 42 | Hot Streak (Fire) | 1 |
-| 43-45 | Improved Scorch (Fire) | 3 |
-| 46 | Master of Elements (Fire) | 1 |
-| 47 | Blast Wave (Fire) | 1 |
-| 48 | Master of Elements (Fire) | 1 |
-| 49-51 | Critical Mass (Fire) | 3 |
-| 52-56 | Fire Power (Fire) | 5 |
-| 57 | Combustion (Fire) | 1 |
-| 58-59 | Shatter (Frost) | 2 |
-| 60 | Master of Elements (Fire) | 1 |
-
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |

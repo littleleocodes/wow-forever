@@ -4,7 +4,7 @@
 
 **✅ Recommended** for raid (the best priest spec here, or within 3% of it).
 
-**[Shadow leveling/raid](../research/raid/builds/opt-shadow-dps-raid-dps.md)** (20/0/31) — [open the talent tree](https://talentsforever.com/priest/60/525000000305--500321501201302051-4)
+**[Shadow leveling/raid](../research/raid/builds/opt-shadow-dps-raid-dps.md)** (18/0/33) — [open the talent tree](https://talentsforever.com/priest/60/005300231103--500320501201312251-4)
 
 ## How to play
 
@@ -22,14 +22,19 @@
 
 **Mind Flay** is your filler: cast it whenever nothing above is ready.
 
+**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
+
+- **Dark Sacrifice**: now and then (in about 8 of 10 fights)
+- Use your trinkets, your racial and a potion together with your big cooldowns.
+
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
 ## The numbers
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 724 |
-| Training dummy, 3-minute fight (alone, only your own buffs) | 632 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 679 |
+| Training dummy, 3-minute fight (alone, only your own buffs) | 589 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
@@ -64,7 +69,7 @@
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 632 → mana -0% → armor +0% → physical -1% → spell +10% → everything else +5% → raid 724
+Dummy 589 → mana +0% → armor +0% → physical -1% → spell +10% → everything else +5% → raid 679
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -72,7 +77,7 @@ Dummy 632 → mana -0% → armor +0% → physical -1% → spell +10% → everyth
 
 | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|
-| 611 | 630 | 632 | 611 | 553 |
+| 577 | 589 | 588 | 569 | 501 |
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 

@@ -252,7 +252,7 @@
  "Moonkin Form": {
   "tree": "Balance",
   "max": 1,
-  "text": "Transforms the Druid into Moonkin Form. While in this form, the armor contribution from items is increased by 360%, Omen of Clarity gains 100% increased chance to trigger, and all party members within 45 yards have their",
+  "text": "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party members within 45 yards have their Critical Strike chance increased by 3%, exclus",
   "effects": []
  },
  "Ferocity": {
@@ -392,24 +392,6 @@
   "text": "While in Bear Form, Cat Form, Dire Bear Form, or Moonkin Form, you gain 1 additional base Armor per level and another 0.67 base Armor for each point of defense skill beyond five times your level. This amount can be furth",
   "effects": []
  },
- "Savage Fury": {
-  "tree": "Feral Combat",
-  "max": 2,
-  "text": "Increases the damage caused by your Claw, Rake, Shred, Maul, and Swipe abilities by 5%.",
-  "effects": []
- },
- "Feral Charge": {
-  "tree": "Feral Combat",
-  "max": 1,
-  "text": "Charge an enemy, immobilizing them and interrupting any spell they are casting for 4 sec.  Leap behind an enemy.",
-  "effects": []
- },
- "Sharpened Claws": {
-  "tree": "Feral Combat",
-  "max": 2,
-  "text": "Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by 3%.",
-  "effects": []
- },
  "Shredding Attacks": {
   "tree": "Feral Combat",
   "max": 3,
@@ -441,10 +423,34 @@
    }
   ]
  },
+ "Savage Fury": {
+  "tree": "Feral Combat",
+  "max": 2,
+  "text": "Increases the damage caused by your Claw, Rake, Shred, Maul, and Swipe abilities by 5%.",
+  "effects": []
+ },
+ "Feral Charge": {
+  "tree": "Feral Combat",
+  "max": 1,
+  "text": "Charge an enemy, immobilizing them and interrupting any spell they are casting for 4 sec.  Leap behind an enemy.",
+  "effects": []
+ },
+ "Sharpened Claws": {
+  "tree": "Feral Combat",
+  "max": 2,
+  "text": "Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by 3%.",
+  "effects": []
+ },
+ "Shifting Power": {
+  "tree": "Feral Combat",
+  "max": 1,
+  "text": "Instantly convert 55% of base Mana into 40 Energy. Shifting Power's cost is reduced by effects that reduce the cost of Shapeshifting.",
+  "effects": []
+ },
  "Primal Bite": {
   "tree": "Feral Combat",
   "max": 1,
-  "text": "Bite the target for 100% normal damage plus 26.",
+  "text": "Bite the target, dealing 100% normal damage plus 26 and generating a high amount of threat.",
   "effects": []
  },
  "Predatory Strikes": {
@@ -459,19 +465,19 @@
   "text": "Gives you a 50% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Poi",
   "effects": []
  },
- "Predatory Instincts": {
+ "Improved Shifting Power": {
   "tree": "Feral Combat",
   "max": 2,
-  "text": "Increases the critical strike damage bonus of your melee abilities by 10%.",
+  "text": "Reduces the cooldown of your Shifting Power spell by 4 sec.",
   "effects": [
    {
-    "channel": "crit_bonus",
+    "channel": "cooldown",
     "scope": [
-     "type:melee"
+     "ability:Shifting Power"
     ],
     "values": [
-     0.1,
-     0.2
+     4.0,
+     8.0
     ],
     "source": "parsed"
    }
@@ -494,11 +500,23 @@
    }
   ]
  },
- "King of the Jungle": {
+ "Predatory Instincts": {
   "tree": "Feral Combat",
-  "max": 3,
-  "text": "Tiger's Fury now instantly grants you 20 Energy.",
-  "effects": []
+  "max": 2,
+  "text": "Increases the critical strike damage bonus of your melee abilities by 10%.",
+  "effects": [
+   {
+    "channel": "crit_bonus",
+    "scope": [
+     "type:melee"
+    ],
+    "values": [
+     0.1,
+     0.2
+    ],
+    "source": "parsed"
+   }
+  ]
  },
  "Natural Reaction": {
   "tree": "Feral Combat",

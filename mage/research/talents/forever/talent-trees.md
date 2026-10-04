@@ -1,6 +1,6 @@
-# Mage — WoW: Forever talent trees (beta client 1.60.1.70009)
+# Mage — WoW: Forever talent trees (beta client 1.60.1.70170)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70009, captured 2026-09-25. World of Warcraft: Forever beta client, build 1.60.1.70009: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-09-24, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70009; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70170, captured 2026-10-03. World of Warcraft: Forever beta client, build 1.60.1.70170: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-03, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70009; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -101,7 +101,7 @@
 |---|---|---|---|---|---|
 | **Improved Scorch** | 3 | — | changed | Your Scorch spell has a 33% chance to cause your target to be vulnerable to Fire damage. This vulnerability increases all Fire damage you deal to your target by 3% and lasts 30 sec, stacking up to 5 times. | Your Scorch spell has a 100% chance to cause your target to be vulnerable to Fire damage. This vulnerability increases all Fire damage you deal to your target by 3% and lasts 30 sec, stacking up to 5 times. |
 | **Improved Fire Ward** | 2 | — | unchanged | Causes your Fire Ward to have a 10% chance to reflect Fire spells while active. | Causes your Fire Ward to have a 20% chance to reflect Fire spells while active. |
-| **Hot Streak** | 1 | Pyroblast (1) | **NEW** | Your non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch grant Hot Streak for 20 sec. Hot Streak reduces the cast time of Pyroblast by 25%, stacking up to 3 times. | — |
+| **Heating Up** | 1 | Pyroblast (1) | **NEW** | Non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch reduce the cast time of your next Pyroblast cast within 20 sec by 25%, stacking up to 3 times. | — |
 | **Master of Elements** | 3 | — | changed | Your Fire and Frost critical strikes will refund 10% of their base mana cost. | Your Fire and Frost critical strikes will refund 30% of their base mana cost. |
 
 ### Tier 5 — requires 20 points in Fire
@@ -121,7 +121,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Combustion** | 1 | Critical Mass (3) | changed | When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 4 non-periodic critical strikes with Fire spells. | — |
+| **Combustion** | 1 | Critical Mass (3) | changed | When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 3 non-periodic critical strikes with Fire spells. | — |
 
 **Removed from Classic Fire:** Improved Fire Blast, Incinerate
 
@@ -226,7 +226,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Burning Soul** (max rank 2 → 3, tooltip changed, was Fire row 3, col 4)
   - Classic: Gives your Fire spells a 35% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 15%.
   - Forever: Gives your Fire spells a 23% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 10%.
-- **Pyroblast** (tooltip changed, tooltip changed in build 1.60.1.70009 (ranks 1))
+- **Pyroblast** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1))
   - Classic: Hurls an immense fiery boulder that causes 187 Fire damage and an additional 56 Fire damage over 12 sec.
   - Forever: Hurls an immense fiery boulder that causes 101 to 131 Fire damage and an additional 44 Fire damage over 12 sec.
 - **Improved Scorch** (tooltip changed)
@@ -235,12 +235,12 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Master of Elements** (tooltip changed)
   - Classic: Your Fire and Frost spell criticals will refund 10% of their base mana cost.
   - Forever: Your Fire and Frost critical strikes will refund 10% of their base mana cost.
-- **Blast Wave** (tooltip changed, tooltip changed in build 1.60.1.70009 (ranks 1))
+- **Blast Wave** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1))
   - Classic: A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 186 Fire damage, and dazing them for 6 sec.
   - Forever: A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 154 to 184 Fire damage, and Dazing them for 50% reduced movement speed for 6 sec.
-- **Combustion** (tooltip changed)
+- **Combustion** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1))
   - Classic: When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 3 critical strikes with Fire spells.
-  - Forever: When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 4 non-periodic critical strikes with Fire spells.
+  - Forever: When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 3 non-periodic critical strikes with Fire spells.
 
 ### Frost
 
@@ -271,7 +271,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Winter's Chill** (tooltip changed)
   - Classic: Gives your Frost damage spells a 20% chance to apply the Winter's Chill effect, which increases the chance a Frost spell will critically hit the target by 2% for 15 sec. Stacks up to 5 times.
   - Forever: Gives your Frost damage spells a 20% chance to apply the Winter's Chill effect, which increases the chance your Ice Lance and Frostbolt spells will critically hit the target by 2% for 15 sec. Stacks up to 1 times.
-- **Ice Barrier** (tooltip changed, tooltip changed in build 1.60.1.70009 (ranks 1))
+- **Ice Barrier** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1))
   - Classic: Instantly shields you, absorbing 438 damage. Lasts 1 min. While the shield holds, spells will not be interrupted.
   - Forever: Instantly shields you, absorbing 447 damage. Lasts 1 min. While the shield holds, your spellcasts will not be interrupted or delayed from taking damage.
 

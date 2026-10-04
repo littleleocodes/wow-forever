@@ -70,14 +70,14 @@ Allocation adopted on 2026-09-27 from `opt-prot-tank-raid-tank`, the best build 
 
 ## Rank among our builds and the community simulator's
 
-**1 of 4** for `prot-tank` by tank value in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 4** for `prot-tank` by tank value in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | **[`prot-raid-tank`](prot-raid-tank.md)** | ours: hand draft | 14/5/32 | 1.000 | +0.0% | 652 | 1161 |
-| 2 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 14/5/32 | 0.997 | -0.3% | 650 | 1164 |
-| 3 | *Protection* | community simulator | - | 0.949 | -5.1% | 615 | 1217 |
-| 4 | *Protection 1/0/50* | community simulator | - | 0.938 | -6.2% | 608 | 1229 |
+| 1 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 14/5/32 | 1.007 | +0.0% | 697 | 1163 |
+| 2 | **[`prot-raid-tank`](prot-raid-tank.md)** | ours: hand draft | 14/5/32 | 1.000 | -0.7% | 687 | 1163 |
+| 3 | *Protection* | community simulator | - | 0.946 | -6.1% | 644 | 1220 |
+| 4 | *Protection 1/0/50* | community simulator | - | 0.935 | -7.1% | 635 | 1229 |
 
 ## Rotation (community simulator, raid setting)
 
@@ -95,8 +95,8 @@ Before the pull: at -1s: cast Battle Shout.
 | 3 | cast Revenge | 6.1 |
 | 4 | cast Shield Slam | 9.9 |
 | 5 | cast Thunder Clap | 9.7 |
-| 6 | if rage ≥ 45: cast Heroic Strike | 8.5 |
-| 7 | if not Rend is on the target: cast Rend | 2.8 |
+| 6 | if rage ≥ 45: cast Heroic Strike | 10.9 |
+| 7 | if not Rend is on the target: cast Rend | 2.9 |
 
 Lines of the simulator's rotation these builds never cast: cast Defensive Stance, cast Sunder Armor (its condition never held in these fights).
 
@@ -104,12 +104,12 @@ Damage by ability (threat for tanks):
 
 | Ability | [`prot-raid-tank`](prot-raid-tank.md) |
 |---|---|
-| Shield Slam | 33% |
-| Auto Attack | 23% |
-| Heroic Strike | 17% |
-| Revenge | 14% |
-| Thunder Clap | 7% |
-| Rend | 2% |
+| Shield Slam | 31% |
+| Auto Attack | 21% |
+| Heroic Strike | 21% |
+| Revenge | 16% |
+| Thunder Clap | 4% |
+| Rend | 3% |
 | Retribution Aura | 1% |
 | Thorns | 1% |
 | OtherActionRageGain | 1% |

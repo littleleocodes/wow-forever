@@ -235,23 +235,23 @@
       "summary": "Allocation adopted on 2026-09-28 from `cand-fire-raid-r5`, the best build in the community simulator (+2.7% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: Ignite (40% at max), Improved Scorch (100% chance, 5 stacks of 3%), Critical Mass, Fire Power, Master of Elements and Combustion all survive; Incinerate and Improved Fire Blast are gone; Hot Streak (crits shorten Pyroblast up to 75%) is the new 16-point talent. Elemental Precision is taken to 5 for hit, so Arcane stops at Arcane Concentration and Magic Absorption/Arcane Resilience fillers.",
       "allocation": {
         "Arcane": [
-          ["Arcane Concentration", 5],
           ["Improved Channeling", 5],
-          ["Arcane Subtlety", 2]
+          ["Arcane Subtlety", 2],
+          ["Arcane Concentration", 5]
         ],
         "Fire": [
-          ["Improved Fireball", 5],
           ["Wake of Fire", 2],
           ["Incineration", 3],
+          ["Improved Fireball", 5],
           ["Ignite", 5],
+          ["Burning Soul", 2],
           ["Pyroblast", 1],
           ["Improved Scorch", 3],
-          ["Hot Streak", 1],
+          ["Heating Up", 1],
           ["Master of Elements", 3],
           ["Critical Mass", 3],
           ["Fire Power", 5],
-          ["Combustion", 1],
-          ["Burning Soul", 2]
+          ["Combustion", 1]
         ],
         "Frost": [
           ["Elemental Precision", 5]
@@ -293,7 +293,7 @@
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-28: `cand-fire-raid-r5` beat the previous draft by +2.7% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Scorch to 5 stacks -> Fireball -> Pyroblast at 3 Hot Streak stacks (if a 1.5s Pyroblast beats a Fireball) -> Fire Blast on the move.", "Fire immunity in the new raids is unknown; in Classic this build was AQ40/Naxx only.", "2026-09-27 scenario audit: Magic Absorption 2, Arcane Resilience 1 -> Burning Soul 1, Wake of Fire 2. Arcane Resilience (armor) and Magic Absorption (resistances) only matter when you are hit; a raid caster is not. Wake of Fire measures +0.9% in the simulator on the optimizer build (ElliotWood/Forever 40be98e) and Burning Soul's third rank lowers Fire threat further.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Magic Absorption -> Improved Channeling (interrupt); Magic Absorption -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Arcane Focus -> Improved Channeling (interrupt); Arcane Focus -> Arcane Subtlety (threat); Arcane Focus -> Arcane Subtlety (threat); Arcane Focus -> Burning Soul (threat); Arcane Focus -> Burning Soul (threat). Net -0.10% on a third seed."],
+      "notes": ["Adopted from the community simulator on 2026-09-28: `cand-fire-raid-r5` beat the previous draft by +2.7% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Scorch to 5 stacks -> Fireball -> Pyroblast at 3 Hot Streak stacks (if a 1.5s Pyroblast beats a Fireball) -> Fire Blast on the move.", "Fire immunity in the new raids is unknown; in Classic this build was AQ40/Naxx only.", "2026-09-27 scenario audit: Magic Absorption 2, Arcane Resilience 1 -> Burning Soul 1, Wake of Fire 2. Arcane Resilience (armor) and Magic Absorption (resistances) only matter when you are hit; a raid caster is not. Wake of Fire measures +0.9% in the simulator on the optimizer build (ElliotWood/Forever 40be98e) and Burning Soul's third rank lowers Fire threat further.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Magic Absorption -> Improved Channeling (interrupt); Magic Absorption -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Arcane Focus -> Improved Channeling (interrupt); Arcane Focus -> Arcane Subtlety (threat); Arcane Focus -> Arcane Subtlety (threat); Arcane Focus -> Burning Soul (threat); Arcane Focus -> Burning Soul (threat). Net -0.10% on a third seed.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized."],
       "open_questions": ["Does a 3-stack Hot Streak Pyroblast (1.5s cast) beat Fireball per cast time? If yes, Pyroblast enters the rotation.", "Incineration (Scorch/Fire Blast/Arcane Blast crit) vs. Flame Throwing.", "Whether Arcane Meditation 3/3 (est. 51% regen while casting) is worth 5 Arcane filler points and 2 hit."],
       "sources": ["https://warcraftforever.games/talents/mage"]
     },
@@ -313,15 +313,15 @@
           ["Incineration", 3],
           ["Improved Fireball", 2],
           ["Ignite", 5],
+          ["Flame Throwing", 1],
+          ["Burning Soul", 3],
           ["Pyroblast", 1],
           ["Improved Scorch", 3],
-          ["Hot Streak", 1],
+          ["Heating Up", 1],
           ["Master of Elements", 3],
           ["Critical Mass", 3],
           ["Fire Power", 5],
-          ["Combustion", 1],
-          ["Burning Soul", 3],
-          ["Flame Throwing", 1]
+          ["Combustion", 1]
         ],
         "Frost": [
           ["Elemental Precision", 5],
@@ -354,7 +354,7 @@
           "why": "Tier fillers on the way to the Fire capstones."
         }
       ],
-      "notes": ["New-builds survey (2026-09-28, user request): the Frostfire Bolt mage asked for by name. Frostfire Bolt is implemented by this project in the local build of the community simulator (patches/forever/sim/mage/frostfire_bolt.go, from the client's spell data like the simulator's Fireball); its numbers are our model, not the community's.", "The fight lab plays a Frostfire leveling rotation (fightlab/mage.py decide_frostfire: Frostbolt until 40, then Frostfire Bolt, which also slows the mob 40% like Frostbolt).", "Second talent search (2026-09-28, after the bench's potion fix and the rotation's second pass): 1 point Wake of Fire -> Improved Fireball (+0.5%).", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Burning Soul -> Wake of Fire (+1.6% DPS); Burning Soul -> Wake of Fire (+1.0% DPS); Flame Throwing -> Improved Channeling (interrupt); Flame Throwing -> Improved Channeling (interrupt). Net +2.45% on a third seed.", "2026-10-02 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Blast Wave was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Blast Wave -> Improved Channeling (interrupt); Wake of Fire -> Improved Channeling (interrupt); Wake of Fire -> Burning Soul (threat); Improved Fireball -> Burning Soul (threat); Improved Fireball -> Burning Soul (threat); Improved Fireball -> Flame Throwing (range). Net -0.04% on a third seed."],
+      "notes": ["New-builds survey (2026-09-28, user request): the Frostfire Bolt mage asked for by name. Frostfire Bolt is implemented by this project in the local build of the community simulator (patches/forever/sim/mage/frostfire_bolt.go, from the client's spell data like the simulator's Fireball); its numbers are our model, not the community's.", "The fight lab plays a Frostfire leveling rotation (fightlab/mage.py decide_frostfire: Frostbolt until 40, then Frostfire Bolt, which also slows the mob 40% like Frostbolt).", "Second talent search (2026-09-28, after the bench's potion fix and the rotation's second pass): 1 point Wake of Fire -> Improved Fireball (+0.5%).", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Burning Soul -> Wake of Fire (+1.6% DPS); Burning Soul -> Wake of Fire (+1.0% DPS); Flame Throwing -> Improved Channeling (interrupt); Flame Throwing -> Improved Channeling (interrupt). Net +2.45% on a third seed.", "2026-10-02 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Blast Wave was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Blast Wave -> Improved Channeling (interrupt); Wake of Fire -> Improved Channeling (interrupt); Wake of Fire -> Burning Soul (threat); Improved Fireball -> Burning Soul (threat); Improved Fireball -> Burning Soul (threat); Improved Fireball -> Flame Throwing (range). Net -0.04% on a third seed.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized."],
       "open_questions": ["Does Frostfire Bolt take both schools' bonuses in the live game (Fire Power and Piercing Ice, Critical Mass and Ice Shards)? The tooltip says it counts as both Frost and Fire damage.", "Are the rank-3 numbers (270-314 + 57 over 9 s, 370 mana) final? A stronger Frostfire Bolt would move this build up the ranking.", "Frostfire Bolt's slow: the tooltip gives 40% without a duration (9 s assumed in the fight lab)."],
       "sources": ["https://warcraftforever.games/talents/mage", "_reference/data/raidsim/patches/README.md"],
       "spec": "Hybrid Fire/Frost"
@@ -601,12 +601,12 @@
         "Fire": [
           ["Improved Fireball", 5],
           ["Ignite", 5],
-          ["Impact", 3],
           ["Flame Throwing", 2],
+          ["Impact", 3],
           ["Burning Soul", 3],
           ["Pyroblast", 1],
           ["Improved Scorch", 3],
-          ["Hot Streak", 1],
+          ["Heating Up", 1],
           ["Critical Mass", 3],
           ["Blast Wave", 1],
           ["Fire Power", 5],
@@ -614,9 +614,9 @@
         ],
         "Frost": [
           ["Elemental Precision", 5],
-          ["Frostbite", 3],
           ["Ice Shards", 5],
           ["Permafrost", 1],
+          ["Frostbite", 3],
           ["Ice Lance", 1],
           ["Ice Block", 1],
           ["Shatter", 2]
@@ -633,35 +633,9 @@
         {"talent": "Shatter", "why": "Removing it costs 0.7 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: mage/talents/forever/optimizer/fire-leveling-leveling-st.md"],
+      "notes": ["Report: mage/talents/forever/optimizer/fire-leveling-leveling-st.md", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/mage"],
-      "order": [
-        {"levels": "10-14", "tree": "Fire", "talent": "Improved Fireball", "points": 5},
-        {"levels": "15-17", "tree": "Fire", "talent": "Ignite", "points": 3},
-        {"levels": "18-22", "tree": "Frost", "talent": "Elemental Precision", "points": 5},
-        {"levels": "23", "tree": "Frost", "talent": "Permafrost", "points": 1},
-        {"levels": "24-26", "tree": "Frost", "talent": "Frostbite", "points": 3},
-        {"levels": "27", "tree": "Frost", "talent": "Ice Shards", "points": 1},
-        {"levels": "28", "tree": "Frost", "talent": "Ice Lance", "points": 1},
-        {"levels": "29-30", "tree": "Fire", "talent": "Ignite", "points": 2},
-        {"levels": "31", "tree": "Fire", "talent": "Burning Soul", "points": 1},
-        {"levels": "32-35", "tree": "Frost", "talent": "Ice Shards", "points": 4},
-        {"levels": "36", "tree": "Frost", "talent": "Ice Block", "points": 1},
-        {"levels": "37", "tree": "Frost", "talent": "Shatter", "points": 1},
-        {"levels": "38-39", "tree": "Fire", "talent": "Burning Soul", "points": 2},
-        {"levels": "40-42", "tree": "Fire", "talent": "Impact", "points": 3},
-        {"levels": "43-44", "tree": "Fire", "talent": "Flame Throwing", "points": 2},
-        {"levels": "45-46", "tree": "Fire", "talent": "Improved Scorch", "points": 2},
-        {"levels": "47", "tree": "Fire", "talent": "Blast Wave", "points": 1},
-        {"levels": "48", "tree": "Fire", "talent": "Improved Scorch", "points": 1},
-        {"levels": "49-51", "tree": "Fire", "talent": "Critical Mass", "points": 3},
-        {"levels": "52-56", "tree": "Fire", "talent": "Fire Power", "points": 5},
-        {"levels": "57", "tree": "Fire", "talent": "Combustion", "points": 1},
-        {"levels": "58", "tree": "Frost", "talent": "Shatter", "points": 1},
-        {"levels": "59", "tree": "Fire", "talent": "Pyroblast", "points": 1},
-        {"levels": "60", "tree": "Fire", "talent": "Hot Streak", "points": 1}
-      ]
+      "sources": ["https://warcraftforever.games/talents/mage"]
     },
     {
       "id": "opt-frost-leveling-leveling-st",
@@ -936,7 +910,7 @@
           ["Burning Soul", 3],
           ["Pyroblast", 1],
           ["Improved Scorch", 2],
-          ["Hot Streak", 1],
+          ["Heating Up", 1],
           ["Critical Mass", 3],
           ["Blast Wave", 1],
           ["Fire Power", 5],
@@ -962,7 +936,7 @@
         {"talent": "Shatter", "why": "The scorer's value in this build: +6.0% of its score (model fire-leveling)."}
       ],
       "flex": [],
-      "notes": ["Community tie-break moves: 1 point Arctic Reach -> Improved Scorch; 1 point Frost Warding -> Ice Shards; 2 points Improved Fireball -> Wake of Fire.", "Where we disagree with the community: most Fire builds take Master of Elements (83% take it), which the model values below this build's weakest point; this build takes Frostbite (11%), Improved Frost Nova (13%), Permafrost (7%), which few Fire builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP."],
+      "notes": ["Community tie-break moves: 1 point Arctic Reach -> Improved Scorch; 1 point Frost Warding -> Ice Shards; 2 points Improved Fireball -> Wake of Fire.", "Where we disagree with the community: most Fire builds take Master of Elements (83% take it), which the model values below this build's weakest point; this build takes Frostbite (11%), Improved Frost Nova (13%), Permafrost (7%), which few Fire builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized."],
       "open_questions": ["A derived Fire PvP build: check it in duels and battlegrounds at launch."],
       "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/popular.js"]
     },
@@ -1112,53 +1086,27 @@
         "Fire": [
           ["Improved Fireball", 5],
           ["Ignite", 5],
+          ["Impact", 1],
           ["Burning Soul", 3],
           ["Pyroblast", 1],
           ["Improved Scorch", 3],
-          ["Hot Streak", 1],
+          ["Heating Up", 1],
+          ["Master of Elements", 3],
           ["Critical Mass", 3],
           ["Blast Wave", 1],
           ["Fire Power", 5],
-          ["Combustion", 1],
-          ["Master of Elements", 3],
-          ["Impact", 1]
+          ["Combustion", 1]
         ],
         "Frost": [
           ["Elemental Precision", 5],
-          ["Frostbite", 3],
           ["Ice Shards", 5],
           ["Permafrost", 1],
+          ["Frostbite", 3],
           ["Ice Lance", 1],
           ["Ice Block", 1],
           ["Shatter", 3]
         ]
       },
-      "order": [
-        {"levels": "10-14", "tree": "Fire", "talent": "Improved Fireball", "points": 5},
-        {"levels": "15-17", "tree": "Fire", "talent": "Ignite", "points": 3},
-        {"levels": "18-22", "tree": "Frost", "talent": "Elemental Precision", "points": 5},
-        {"levels": "23", "tree": "Frost", "talent": "Permafrost", "points": 1},
-        {"levels": "24-26", "tree": "Frost", "talent": "Frostbite", "points": 3},
-        {"levels": "27", "tree": "Frost", "talent": "Ice Shards", "points": 1},
-        {"levels": "28", "tree": "Frost", "talent": "Ice Lance", "points": 1},
-        {"levels": "29-30", "tree": "Fire", "talent": "Ignite", "points": 2},
-        {"levels": "31-34", "tree": "Frost", "talent": "Ice Shards", "points": 4},
-        {"levels": "35", "tree": "Frost", "talent": "Ice Block", "points": 1},
-        {"levels": "36", "tree": "Frost", "talent": "Shatter", "points": 1},
-        {"levels": "37-39", "tree": "Fire", "talent": "Burning Soul", "points": 3},
-        {"levels": "40", "tree": "Fire", "talent": "Impact", "points": 1},
-        {"levels": "41", "tree": "Fire", "talent": "Pyroblast", "points": 1},
-        {"levels": "42", "tree": "Fire", "talent": "Hot Streak", "points": 1},
-        {"levels": "43-45", "tree": "Fire", "talent": "Improved Scorch", "points": 3},
-        {"levels": "46", "tree": "Fire", "talent": "Master of Elements", "points": 1},
-        {"levels": "47", "tree": "Fire", "talent": "Blast Wave", "points": 1},
-        {"levels": "48", "tree": "Fire", "talent": "Master of Elements", "points": 1},
-        {"levels": "49-51", "tree": "Fire", "talent": "Critical Mass", "points": 3},
-        {"levels": "52-56", "tree": "Fire", "talent": "Fire Power", "points": 5},
-        {"levels": "57", "tree": "Fire", "talent": "Combustion", "points": 1},
-        {"levels": "58-59", "tree": "Frost", "talent": "Shatter", "points": 2},
-        {"levels": "60", "tree": "Fire", "talent": "Master of Elements", "points": 1}
-      ],
       "core": [
         {"talent": "Ice Lance", "why": "The scorer's value in this build: +38.5% of its score (model fire-leveling)."},
         {"talent": "Ignite", "why": "The scorer's value in this build: +10.5% of its score (model fire-leveling)."},
@@ -1168,7 +1116,7 @@
         {"talent": "Ice Block", "why": "The scorer's value in this build: +1.7% of its score (model fire-leveling)."}
       ],
       "flex": [],
-      "notes": ["+2.9% faster than the hand draft opt-fire-leveling-leveling-st, over the 2% replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Fight-lab talent search (fightlab/fl_talent_opt.py): start opt-fire-leveling-leveling-st, moves: 1 point Flame Throwing -> Shatter; 3 points Impact -> Master of Elements; 1 point Flame Throwing -> Impact. Race against opt-fire-leveling-leveling-st over levels 20-60 (seed 3, 3000 fights per level): +2.9% faster per kill.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
+      "notes": ["+2.9% faster than the hand draft opt-fire-leveling-leveling-st, over the 2% replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Fight-lab talent search (fightlab/fl_talent_opt.py): start opt-fire-leveling-leveling-st, moves: 1 point Flame Throwing -> Shatter; 3 points Impact -> Master of Elements; 1 point Flame Throwing -> Impact. Race against opt-fire-leveling-leveling-st over levels 20-60 (seed 3, 3000 fights per level): +2.9% faster per kill.", "Fight-lab numbers are a model of the beta, not in-game measurements.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized."],
       "open_questions": ["A derived Fire leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/mage"],
       "replaces": "opt-fire-leveling-leveling-st"
@@ -1214,12 +1162,54 @@
       "replaces": "frost-winters-chill-raid"
     },
     {
+      "id": "frostfire-ml-raid",
+      "name": "Frostfire — Raid (machine-learning search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Hybrid Fire/Frost",
+      "generated": "2026-10-03",
+      "derived": "raid",
+      "summary": "The Frostfire build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-03 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry frostfire-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
+      "allocation": {
+        "Arcane": [
+          ["Improved Channeling", 4]
+        ],
+        "Fire": [
+          ["Wake of Fire", 1],
+          ["Improved Fireball", 4],
+          ["Ignite", 5],
+          ["Flame Throwing", 2],
+          ["Impact", 1],
+          ["Burning Soul", 3],
+          ["Improved Flamestrike", 1],
+          ["Pyroblast", 1],
+          ["Improved Scorch", 3],
+          ["Heating Up", 1],
+          ["Critical Mass", 3],
+          ["Fire Power", 5],
+          ["Combustion", 1]
+        ],
+        "Frost": [
+          ["Elemental Precision", 5],
+          ["Ice Shards", 5],
+          ["Piercing Ice", 3],
+          ["Frost Channeling", 3]
+        ]
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["Against the best hand draft frostfire-raid in a full raid, same gear and fights (100,000, one seed): +1.6% (under the 2% bar: the hand draft stays the pick).", "Where the simulator measured no difference, the points follow frostfire-raid: Improved Fireball → Burning Soul, Flame Throwing → Burning Soul, Impact → Burning Soul, Frostbite → Improved Channeling, Ice Lance → Improved Channeling, Arctic Reach → Improved Channeling (the same DPS as the search winner 1/31/19 on one seed, 30,000 fights).", "Search result (full raid): 1/31/19 at 739.6 ± 0.23 DPS over 100,000 fights; runner-up 3/31/17 (+0.00%; the winner takes Flame Throwing 2, Frostbite 1, Ice Lance 1, Impact 3, Improved Channeling 1, Improved Flamestrike 1; the runner-up Blast Wave 1, Burning Soul 1, Improved Channeling 3, Improved Fire Ward 2, Improved Flamestrike 2); 1,942 builds simulated; certificate: none of its 311 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 3/31/17 at 721.6 DPS in a full raid (other talents: _reference/dps-rankings.md).", "Alone on the training dummy (only your own buffs) the search's best is 1/34/16 at 627.1 DPS.", "2026-10-03 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Impact -> Flame Throwing (range). Net +0.00% on a third seed.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized."],
+      "open_questions": ["A machine-searched Frostfire build: check it against the community's Frostfire builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever"]
+    },
+    {
       "id": "opt-frost-raid-raid-dps",
       "name": "Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (raid-dps)",
       "role": "dps",
       "content": "raid",
       "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `raid-dps`: score +77.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `raid-dps`: score +76.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Arcane": [
           ["Arcane Focus", 5],
@@ -1246,17 +1236,17 @@
         ]
       },
       "core": [
-        {"talent": "Improved Frostbolt", "why": "Removing it costs 22.5 points of score in this model."},
+        {"talent": "Improved Frostbolt", "why": "Removing it costs 22.4 points of score in this model."},
         {"talent": "Ice Shards", "why": "Removing it costs 20.2 points of score in this model."},
-        {"talent": "Fingers of Frost", "why": "Removing it costs 19.5 points of score in this model."},
-        {"talent": "Ice Lance", "why": "Removing it costs 12.3 points of score in this model."},
-        {"talent": "Winter's Chill", "why": "Removing it costs 11.5 points of score in this model."},
-        {"talent": "Shatter", "why": "Removing it costs 11.1 points of score in this model."},
-        {"talent": "Piercing Ice", "why": "Removing it costs 8.8 points of score in this model."},
-        {"talent": "Elemental Precision", "why": "Removing it costs 8.7 points of score in this model."}
+        {"talent": "Fingers of Frost", "why": "Removing it costs 19.2 points of score in this model."},
+        {"talent": "Ice Lance", "why": "Removing it costs 12.6 points of score in this model."},
+        {"talent": "Winter's Chill", "why": "Removing it costs 11.4 points of score in this model."},
+        {"talent": "Shatter", "why": "Removing it costs 10.8 points of score in this model."},
+        {"talent": "Piercing Ice", "why": "Removing it costs 8.7 points of score in this model."},
+        {"talent": "Elemental Precision", "why": "Removing it costs 8.6 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Allocation taken from cand-frost-raid-r1 on 2026-10-02: the optimizer's earlier round beat its last export in the community simulator (643 vs 614 DPS; the calibration moved the model past the better build).", "Report: mage/research/talents/forever/optimizer/frost-raid-raid-dps.md"],
+      "notes": ["Allocation taken from cand-frost-raid-r1 on 2026-10-03: the optimizer's earlier round beat its last export in the community simulator (614 vs 584 DPS; the calibration moved the model past the better build).", "Report: mage/research/talents/forever/optimizer/frost-raid-raid-dps.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/mage"]
     },
@@ -1266,7 +1256,7 @@
       "role": "dps",
       "content": "raid",
       "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `parse`: score +69.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `parse`: score +69.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Arcane": [
           ["Arcane Focus", 5],
@@ -1291,13 +1281,13 @@
       },
       "core": [
         {"talent": "Improved Frostbolt", "why": "Removing it costs 21.5 points of score in this model."},
-        {"talent": "Ice Shards", "why": "Removing it costs 20.2 points of score in this model."},
-        {"talent": "Fingers of Frost", "why": "Removing it costs 18.3 points of score in this model."},
-        {"talent": "Ice Lance", "why": "Removing it costs 10.9 points of score in this model."},
+        {"talent": "Ice Shards", "why": "Removing it costs 20.1 points of score in this model."},
+        {"talent": "Fingers of Frost", "why": "Removing it costs 17.9 points of score in this model."},
+        {"talent": "Ice Lance", "why": "Removing it costs 10.7 points of score in this model."},
         {"talent": "Winter's Chill", "why": "Removing it costs 10.7 points of score in this model."},
-        {"talent": "Shatter", "why": "Removing it costs 10.4 points of score in this model."},
+        {"talent": "Shatter", "why": "Removing it costs 10.2 points of score in this model."},
         {"talent": "Piercing Ice", "why": "Removing it costs 8.3 points of score in this model."},
-        {"talent": "Elemental Precision", "why": "Removing it costs 8.3 points of score in this model."}
+        {"talent": "Elemental Precision", "why": "Removing it costs 8.2 points of score in this model."}
       ],
       "flex": [],
       "notes": ["Report: mage/research/talents/forever/optimizer/frost-raid-parse.md"],
@@ -1310,22 +1300,23 @@
       "role": "dps",
       "content": "raid",
       "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `raid-dps`: score +219.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `raid-dps`: score +183.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Arcane": [
-          ["Improved Channeling", 5],
+          ["Wand Specialization", 2],
+          ["Arcane Focus", 4],
           ["Arcane Subtlety", 2],
-          ["Magic Absorption", 2],
-          ["Arcane Concentration", 5]
+          ["Arcane Concentration", 5],
+          ["Arcane Geometry", 1]
         ],
         "Fire": [
-          ["Improved Fireball", 5],
-          ["Incineration", 3],
           ["Wake of Fire", 2],
+          ["Incineration", 3],
+          ["Improved Fireball", 5],
           ["Ignite", 5],
           ["Pyroblast", 1],
           ["Improved Scorch", 3],
-          ["Hot Streak", 1],
+          ["Heating Up", 1],
           ["Master of Elements", 3],
           ["Critical Mass", 3],
           ["Fire Power", 5],
@@ -1336,17 +1327,17 @@
         ]
       },
       "core": [
-        {"talent": "Improved Scorch", "why": "Removing it costs 109.3 points of score in this model."},
-        {"talent": "Fire Power", "why": "Removing it costs 29.0 points of score in this model."},
-        {"talent": "Ignite", "why": "Removing it costs 28.9 points of score in this model."},
-        {"talent": "Improved Fireball", "why": "Removing it costs 24.9 points of score in this model."},
-        {"talent": "Hot Streak", "why": "Removing it costs 20.9 points of score in this model."},
-        {"talent": "Pyroblast", "why": "Removing it costs 19.2 points of score in this model."},
-        {"talent": "Combustion", "why": "Removing it costs 19.1 points of score in this model."},
-        {"talent": "Critical Mass", "why": "Removing it costs 18.9 points of score in this model."}
+        {"talent": "Improved Scorch", "why": "Removing it costs 96.8 points of score in this model."},
+        {"talent": "Fire Power", "why": "Removing it costs 25.7 points of score in this model."},
+        {"talent": "Ignite", "why": "Removing it costs 24.5 points of score in this model."},
+        {"talent": "Improved Fireball", "why": "Removing it costs 22.5 points of score in this model."},
+        {"talent": "Critical Mass", "why": "Removing it costs 16.8 points of score in this model."},
+        {"talent": "Elemental Precision", "why": "Removing it costs 15.9 points of score in this model."},
+        {"talent": "Pyroblast", "why": "Removing it costs 13.0 points of score in this model."},
+        {"talent": "Arcane Concentration", "why": "Removing it costs 12.0 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: mage/research/talents/forever/optimizer/fire-raid-raid-dps.md"],
+      "notes": ["Allocation taken from cand-fire-raid-r1 on 2026-10-03: the optimizer's earlier round beat its last export in the community simulator (559 vs 527 DPS; the calibration moved the model past the better build).", "Report: mage/research/talents/forever/optimizer/fire-raid-raid-dps.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/mage"]
     },
@@ -1356,13 +1347,13 @@
       "role": "dps",
       "content": "raid",
       "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `parse`: score +194.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `parse`: score +161.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Arcane": [
           ["Improved Channeling", 5],
+          ["Arcane Concentration", 5],
           ["Magic Absorption", 1],
-          ["Arcane Subtlety", 2],
-          ["Arcane Concentration", 5]
+          ["Arcane Subtlety", 2]
         ],
         "Fire": [
           ["Improved Fireball", 5],
@@ -1370,9 +1361,8 @@
           ["Wake of Fire", 2],
           ["Ignite", 5],
           ["Pyroblast", 1],
-          ["Burning Soul", 1],
+          ["Burning Soul", 2],
           ["Improved Scorch", 3],
-          ["Hot Streak", 1],
           ["Master of Elements", 3],
           ["Critical Mass", 3],
           ["Fire Power", 5],
@@ -1383,61 +1373,19 @@
         ]
       },
       "core": [
-        {"talent": "Improved Scorch", "why": "Removing it costs 100.3 points of score in this model."},
-        {"talent": "Fire Power", "why": "Removing it costs 26.7 points of score in this model."},
-        {"talent": "Ignite", "why": "Removing it costs 26.2 points of score in this model."},
-        {"talent": "Improved Fireball", "why": "Removing it costs 22.9 points of score in this model."},
-        {"talent": "Hot Streak", "why": "Removing it costs 19.2 points of score in this model."},
-        {"talent": "Pyroblast", "why": "Removing it costs 17.6 points of score in this model."},
-        {"talent": "Combustion", "why": "Removing it costs 17.5 points of score in this model."},
-        {"talent": "Critical Mass", "why": "Removing it costs 17.1 points of score in this model."}
+        {"talent": "Improved Scorch", "why": "Removing it costs 88.8 points of score in this model."},
+        {"talent": "Fire Power", "why": "Removing it costs 23.6 points of score in this model."},
+        {"talent": "Ignite", "why": "Removing it costs 22.3 points of score in this model."},
+        {"talent": "Improved Fireball", "why": "Removing it costs 20.7 points of score in this model."},
+        {"talent": "Critical Mass", "why": "Removing it costs 15.2 points of score in this model."},
+        {"talent": "Elemental Precision", "why": "Removing it costs 14.6 points of score in this model."},
+        {"talent": "Pyroblast", "why": "Removing it costs 11.9 points of score in this model."},
+        {"talent": "Combustion", "why": "Removing it costs 9.6 points of score in this model."}
       ],
       "flex": [],
       "notes": ["Report: mage/research/talents/forever/optimizer/fire-raid-parse.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/mage"]
-    },
-    {
-      "id": "frostfire-ml-raid",
-      "name": "Frostfire — Raid (machine-learning search)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Hybrid Fire/Frost",
-      "generated": "2026-10-03",
-      "derived": "raid",
-      "summary": "The Frostfire build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-03 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry frostfire-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
-      "allocation": {
-        "Arcane": [
-          ["Improved Channeling", 4]
-        ],
-        "Fire": [
-          ["Wake of Fire", 1],
-          ["Improved Fireball", 4],
-          ["Ignite", 5],
-          ["Flame Throwing", 2],
-          ["Impact", 1],
-          ["Burning Soul", 3],
-          ["Improved Flamestrike", 1],
-          ["Pyroblast", 1],
-          ["Improved Scorch", 3],
-          ["Hot Streak", 1],
-          ["Critical Mass", 3],
-          ["Fire Power", 5],
-          ["Combustion", 1]
-        ],
-        "Frost": [
-          ["Elemental Precision", 5],
-          ["Ice Shards", 5],
-          ["Piercing Ice", 3],
-          ["Frost Channeling", 3]
-        ]
-      },
-      "core": [],
-      "flex": [],
-      "notes": ["Against the best hand draft frostfire-raid in a full raid, same gear and fights (100,000, one seed): +1.6% (under the 2% bar: the hand draft stays the pick).", "Where the simulator measured no difference, the points follow frostfire-raid: Improved Fireball → Burning Soul, Flame Throwing → Burning Soul, Impact → Burning Soul, Frostbite → Improved Channeling, Ice Lance → Improved Channeling, Arctic Reach → Improved Channeling (the same DPS as the search winner 1/31/19 on one seed, 30,000 fights).", "Search result (full raid): 1/31/19 at 739.6 ± 0.23 DPS over 100,000 fights; runner-up 3/31/17 (+0.00%; the winner takes Flame Throwing 2, Frostbite 1, Ice Lance 1, Impact 3, Improved Channeling 1, Improved Flamestrike 1; the runner-up Blast Wave 1, Burning Soul 1, Improved Channeling 3, Improved Fire Ward 2, Improved Flamestrike 2); 1,942 builds simulated; certificate: none of its 311 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 3/31/17 at 721.6 DPS in a full raid (other talents: _reference/dps-rankings.md).", "Alone on the training dummy (only your own buffs) the search's best is 1/34/16 at 627.1 DPS.", "2026-10-03 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Impact -> Flame Throwing (range). Net +0.00% on a third seed."],
-      "open_questions": ["A machine-searched Frostfire build: check it against the community's Frostfire builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever"]
     }
   ]
 }

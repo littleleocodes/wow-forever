@@ -2,7 +2,7 @@
 
 [Druid](../README.md) > [PvP](README.md) > Restoration
 
-**[Restoration — PvP](../research/pvp/builds/restoration-pvp.md)** (0/11/40) — [open the talent tree](https://talentsforever.com/druid/60/-05212001-5450335103113051-4)
+**[Restoration — PvP](../research/pvp/builds/restoration-pvp.md)** (0/11/40) — [open the talent tree](https://talentsforever.com/druid/60/-052120001-5450335103113051-4)
 
 > 🔬 Derived build: the stats model's best PvP build, with the community's most-picked talents where the model rates talents alike; it beat the hand-made build (pvp-resto) by 2% or more, which stays below as the alternative. A model of the beta, to check at launch.
 

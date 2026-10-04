@@ -69,19 +69,19 @@ Allocation adopted on 2026-09-28 from `opt-fire-destro-raid-raid-dps`, the best 
 
 ## Rank among our builds and the community simulator's
 
-**1 of 9** for `fire-destro-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 9** for `fire-destro-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`destruction-fire-raid`](destruction-fire-raid.md)** | ours: hand draft | 22/11/18 | 612 | +0.0% | 725 | +0.0% | 3 s |
-| 2 | [`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md) | ours: optimizer | 10/11/30 | 611 | -0.1% | 717 | -1.0% | 2 s |
-| 3 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 586 | -4.3% | 693 | -4.4% | 3 s |
-| 4 | *DS/Ruin* | community simulator | - | 577 | -5.7% | 686 | -5.4% | 3 s |
-| 5 | *Shadow and Flame 13/11/27* | community simulator | - | 538 | -12.1% | 630 | -13.1% | 2 s |
-| 6 | *Deep Affliction 35/0/16* | community simulator | - | 515 | -15.9% | 602 | -16.9% | 3 s |
-| 7 | *Affliction* | community simulator | - | 507 | -17.2% | 594 | -18.0% | 3 s |
-| 8 | *Demonic Pact 2/31/18* | community simulator | - | 505 | -17.5% | 602 | -17.0% | 3 s |
-| 9 | *Demonic Pact* | community simulator | - | 501 | -18.2% | 593 | -18.2% | 3 s |
+| 1 | **[`destruction-fire-raid`](destruction-fire-raid.md)** | ours: hand draft | 22/11/18 | 569 | +0.0% | 674 | +0.0% | 3 s |
+| 2 | [`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md) | ours: optimizer | 10/11/30 | 568 | -0.1% | 669 | -0.8% | 3 s |
+| 3 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 544 | -4.4% | 645 | -4.3% | 3 s |
+| 4 | *DS/Ruin* | community simulator | - | 536 | -5.9% | 638 | -5.4% | 3 s |
+| 5 | *Shadow and Flame 13/11/27* | community simulator | - | 501 | -11.9% | 587 | -12.9% | 2 s |
+| 6 | *Deep Affliction 35/0/16* | community simulator | - | 478 | -16.1% | 560 | -17.0% | 3 s |
+| 7 | *Demonic Pact 2/31/18* | community simulator | - | 470 | -17.3% | 561 | -16.8% | 3 s |
+| 8 | *Affliction* | community simulator | - | 470 | -17.4% | 553 | -18.0% | 3 s |
+| 9 | *Demonic Pact* | community simulator | - | 465 | -18.3% | 552 | -18.1% | 3 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -113,7 +113,7 @@ Before the pull: at -1.5s: cast Life Tap.
 | 8 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
 | 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.3 |
 | 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.3 |
-| 11 | cast Shadow Bolt | 13.9 |
+| 11 | cast Shadow Bolt | 14.0 |
 
 Lines of the simulator's rotation these builds never cast: cast Conflagrate (needs the Conflagrate talent).
 
@@ -121,8 +121,8 @@ Damage by ability:
 
 | Ability | [`destruction-fire-raid`](destruction-fire-raid.md) |
 |---|---|
-| Shadow Bolt | 50% |
-| Bane of Agony | 19% |
+| Shadow Bolt | 51% |
+| Bane of Agony | 18% |
 | Corruption | 18% |
 | Immolate | 11% |
 | Shadowburn | 1% |

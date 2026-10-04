@@ -6,9 +6,9 @@
 
 | # | Spec and build | Full raid DPS | Training dummy DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Combat](combat.md) — Combat Daggers | 712 | 398 | 400 | best |
-| 2 | [Assassination](assassination.md) — Assassination — Seal Fate daggers | 682 | 407 | 407 | -4% |
-| 3 | [Subtlety](subtlety.md) — Subtlety — Hemorrhage | 653 | 386 | 364 | -8% |
+| 1 | [Combat](combat.md) — Combat Daggers | 765 | 398 | 400 | best |
+| 2 | [Assassination](assassination.md) — Assassination — Seal Fate daggers | 728 | 407 | 407 | -5% |
+| 3 | [Subtlety](subtlety.md) — Subtlety — Hemorrhage | 686 | 386 | 364 | -10% |
 
 **By gear tier**: each damage spec with its best talents for each tier, in its own gear (full raid / training dummy DPS; [every class](../../_reference/dps-rankings.md)):
 

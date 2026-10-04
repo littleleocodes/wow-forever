@@ -70,15 +70,15 @@ Seal Fate daggers: Malice, Cold Blood, Seal Fate and Improved Poisons from Assas
 
 ## Rank among our builds and the community simulator's
 
-**1 of 5** for `assassination-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 5** for `assassination-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`assassination-seal-fate-raid`](assassination-seal-fate-raid.md)** | ours: hand draft | 30/19/2 | 407 | +0.0% | 682 | -0.8% | 0 s |
-| 2 | [`assassination-ml-raid`](assassination-ml-raid.md) | ours: hand draft | 30/19/2 | 394 | -3.0% | 687 | +0.0% | 0 s |
-| 3 | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) | ours: hand draft | 30/21/0 | 394 | -3.1% | 667 | -2.9% | 0 s |
-| 4 | *Mutilate* | community simulator | - | 371 | -8.8% | 648 | -5.8% | 0 s |
-| 5 | *Assassination Mutilate 31/20/0* | community simulator | - | 359 | -11.7% | 630 | -8.4% | 0 s |
+| 1 | **[`assassination-seal-fate-raid`](assassination-seal-fate-raid.md)** | ours: hand draft | 30/19/2 | 407 | +0.0% | 728 | -0.7% | 0 s |
+| 2 | [`assassination-ml-raid`](assassination-ml-raid.md) | ours: hand draft | 30/19/2 | 394 | -3.1% | 734 | +0.0% | 0 s |
+| 3 | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) | ours: hand draft | 30/21/0 | 394 | -3.2% | 714 | -2.7% | 0 s |
+| 4 | *Mutilate* | community simulator | - | 371 | -8.9% | 692 | -5.7% | 0 s |
+| 5 | *Assassination Mutilate 31/20/0* | community simulator | - | 359 | -11.8% | 674 | -8.1% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

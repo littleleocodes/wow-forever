@@ -9,7 +9,7 @@
    ],
    [
     "Heart of the Wild",
-    3
+    4
    ],
    [
     "Feral Swiftness",
@@ -30,10 +30,6 @@
    [
     "Predatory Strikes",
     3
-   ],
-   [
-    "King of the Jungle",
-    1
    ]
   ],
   "Restoration": [
@@ -54,8 +50,16 @@
     3
    ],
    [
+    "Gift of Nature",
+    3
+   ],
+   [
     "Tranquil Spirit",
     5
+   ],
+   [
+    "Improved Rejuvenation",
+    3
    ],
    [
     "Swiftmend",
@@ -63,14 +67,6 @@
    ],
    [
     "Living Spirit",
-    3
-   ],
-   [
-    "Improved Rejuvenation",
-    3
-   ],
-   [
-    "Gift of Nature",
     3
    ]
   ]
@@ -252,5 +248,8 @@
   },
   "fights": 800,
   "confirm": 3000
- }
+ },
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

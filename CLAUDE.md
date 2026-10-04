@@ -334,8 +334,10 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   `--allow-drop`): without it the rotation's condition reads an unknown aura (the Arcane search dropped Arcane Blast and the
   rotation turned into Frostbolt spam). Tune rotation and talents in turns. Builds raced only in rotation-only entries have no
   scorer model: the scenario audit leaves them out.
-- **Simulator patches** (`raidsim/patches/<game>/`, applied by `setup.py` on every build, reset before `--update`): our additions to
-  the community simulator, today Frostfire Bolt (the fork ships a stub). Since 2026-10-03 also Forever's hunter pet scaling (`patches/forever/sim/hunter/pet_scaling.go`; Blizzard's class deep dive: pets get stats from the hunter's gear; the community's numbers: 10% of the highest attack power, 100% of crit, 30% of armor, 2 health per Stamina; the fork gives pets nothing; `WOW_FOREVER_PET_SCALING=0` turns it off): a Beast Mastery pet 97 -> 166 DPS in a full raid, the build +8.5%. Open: a forum measurement (level 20) has a 1.2 s pet 45% ahead of a 2.0 s one, while the simulator normalizes pet damage by attack speed. Numbers that depend on a patch are our model: say so.
+- **Simulator patches** (`raidsim/patches/<game>/`, applied by `setup.py` on every build, reset before `--update`; files the patches add are
+  removed there): our additions to the community simulator. Frostfire Bolt was one until 2026-10-03, when the fork implemented it (retired).
+  Since b0f0df3 also Lightning Reflexes at 2% Agility a rank (70205's trait value; the fork's curve for spell 19168 still says 3%; a curve
+  audit of 354 multi-rank talents against the 70170 tooltips found no other damage talent off). Since 2026-10-03 also Forever's hunter pet scaling (`patches/forever/sim/hunter/pet_scaling.go`; Blizzard's class deep dive: pets get stats from the hunter's gear; the community's numbers: 10% of the highest attack power, 100% of crit, 30% of armor, 2 health per Stamina; the fork gives pets nothing; `WOW_FOREVER_PET_SCALING=0` turns it off): a Beast Mastery pet 97 -> 166 DPS in a full raid, the build +8.5%. Open: a forum measurement (level 20) has a 1.2 s pet 45% ahead of a 2.0 s one, while the simulator normalizes pet damage by attack speed. Numbers that depend on a patch are our model: say so.
 - **New-builds survey** (2026-09-28, user request): `_reference/data/new-builds.json` (hand-kept: per class the targets searched
   around new spells, each a rotation-only entry with its own rotation and a build, plus notes; no numbers) and
   `render_new_builds.py` (regen step) write `_reference/new-builds-survey.md` and the "New spells and builds" section of each raid
@@ -527,6 +529,14 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   setting), so `talent_opt.py --setting raid`, `fullraid_search.py` and `setting_audit.py`'s raid half ran full-raid builds on the
   dummy rotation before 2026-10-01; the ML pipeline's full-raid searches use the raid rotation. `_reference/data/filelock.py` locks the
   shared records on Windows (msvcrt) and POSIX (fcntl).
+- **Beta build 70170/70205** (2026-10-03, user request after Lightning Reflexes read 2% a rank in game): talents and spellbooks from
+  talentsforever.com's 70170 export (the warrior with the 1-2 Oct hotfixes; thewowdb answered for six classes, the others fall back to the
+  previous pull, and a tree the Trait snapshot disagrees on takes the export's positions and prerequisites: `refresh_forever_talents.py`),
+  the simulator at b0f0df3 (70205). The new trees broke 32 builds (warrior Fury rework, Hot Streak -> Heating Up, King of the Jungle and
+  Toughness removed): repaired by carrying renames and refilling lost points in the same tree, lowest tier first (Mortal Strike, Flurry,
+  Bloodthirst and Berserk kept), saved candidates too; the warrior's PvP builds regenerated. The 70205 item database dropped Leafre's Ring
+  of Precise Spell Power (276765): 46 gear sets took Ring of Spell Power (BiS/standard) or Rune Band of Wizardry (pre-BiS) instead
+  (re-run gear_opt.py / gear_tiers.py to choose properly). Raid races, environments, rankings and pages re-run on it.
 - **Gear links** (2026-10-03, user request: "an armory or link of sorts so that the pre-bis and bis gear have a way to see the actual
   items"): `raidsim/gear_links.py --write` (run by `ml_builds.py --rank`) writes `raidsim/gear-links.json`: every item and enchant of
   each spec's pre-BiS and BiS set with its Wowhead Forever link (`www.wowhead.com/forever/item=`, the database the simulator's UI uses),
@@ -575,7 +585,7 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   first gear sets and starting builds from the ML records; starts the new trees no longer allow are dropped, and from cycle 2 it re-gears
   itself, so `ml_pipeline.py`, about 15 hours, is only needed when a new spec or hybrid appears).
 - Our `foreverbench/main.go` is the source of truth for the bench tool (setup.py copies it into the clone and builds it).
-  A fresh setup builds the pinned simulator commit (`GAMES[...]["commit"]` in setup.py, 40be98e since 2026-09-28) so every machine
+  A fresh setup builds the pinned simulator commit (`GAMES[...]["commit"]` in setup.py, b0f0df3 since 2026-10-03: client build 1.60.1.70205 with hotfixes to that day; 40be98e before) so every machine
   and cloud session simulates the same fork; after a simulator update (`setup.py --update`) set the new pin and re-run
   `rebuild.py --steps raid,regen`.
 

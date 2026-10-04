@@ -6,66 +6,66 @@ Talentless baseline: 90 h for levels 10-60 under these assumptions.
 
 ## Recommended schedule
 
-- **Levels 10-39: arms-2h-raid -> level-30 build (0/21/0)**
+- **Levels 10-60: fury-dw-raid -> level-50 build (4/37/0)**
   - at level 10: **Fury**: Cruelty 1
-  - at level 39: **Fury**: Cruelty 5, Unbridled Wrath 5, Blood Craze 3, Boundless Rage 2, Enrage 5, Death Wish 1, Precision 3, Improved Execute 1, Flurry 5
-  - order: 10-14 Cruelty x5, 15-19 Unbridled Wrath x5, 20-22 Blood Craze x3, 23-24 Boundless Rage x2, 25-29 Enrage x5, 30 Death Wish, 31-33 Precision x3, 34 Improved Execute, 35-39 Flurry x5
-- **Levels 40-60: fury-dw-raid -> level-50 build (1/40/0)** (respec here)
-  - at level 40: **Fury**: Cruelty 5, Unbridled Wrath 5, Blood Craze 3, Boundless Rage 1, Piercing Howl 1, Improved Execute 2, Enrage 5, Dual Wield Specialization 5, Death Wish 1, Raging Blows 1, Precision 1, Bloodthirst 1
-  - at level 60: **Fury**: Cruelty 5, Unbridled Wrath 5, Blood Craze 3, Boundless Rage 1, Piercing Howl 1, Improved Execute 2, Enrage 5, Dual Wield Specialization 5, Death Wish 1, Raging Blows 1, Precision 3, Bloodthirst 1, Flurry 5, Improved Intercept 2; **Arms**: Deflection 5, Improved Tactical Mastery 5, Anger Management 1
-  - order: 41-42 Precision x2, 43-47 Flurry x5, 48-49 Improved Intercept x2, 50-54 Deflection x5, 55-59 Improved Tactical Mastery x5, 60 Anger Management
+  - at level 60: **Fury**: Cruelty 5, Unbridled Wrath 5, Blood Craze 3, Piercing Howl 1, Booming Voice 1, Improved Execute 2, Enrage 5, Death Wish 1, Dual Wield Specialization 5, Raging Blows 1, Flurry 5, Bloodthirst 1, Improved Intercept 2, Improved Berserker Rage 1; **Arms**: Deflection 5, Improved Charge 2, Improved Rend 3, Deep Wounds 3
+  - order: 10-14 Cruelty x5, 15-19 Unbridled Wrath x5, 20-22 Blood Craze x3, 23 Piercing Howl, 24 Booming Voice, 25-26 Improved Execute x2, 27-29 Enrage x3, 30 Death Wish, 31-34 Dual Wield Specialization x4, 35 Enrage, 36 Raging Blows, 37 Enrage, 38 Dual Wield Specialization, 39 Flurry, 40 Bloodthirst, 41-44 Flurry x4, 45-46 Improved Intercept x2, 47-51 Deflection x5, 52-53 Improved Charge x2, 54-56 Improved Rend x3, 57-59 Deep Wounds x3, 60 Improved Berserker Rage
 
-Total: **66.1 h** (26.5% faster than talentless), 1 respec(s).
+Total: **65.6 h** (27.1% faster than talentless), 0 respec(s).
 
 ## Best schedule if you stay in one spec model
 
 ### arms-2h-raid
 
-- **Levels 10-60: arms-2h-raid -> level-30 build (0/21/0)**
-  - at level 10: **Fury**: Cruelty 1
-  - at level 60: **Fury**: Cruelty 5, Unbridled Wrath 5, Blood Craze 3, Boundless Rage 2, Enrage 5, Death Wish 1, Precision 3, Improved Execute 1, Flurry 5, Bloodthirst 1; **Arms**: Improved Rend 3, Deflection 2, Improved Overpower 2, Improved Charge 2, Improved Tactical Mastery 3, Deep Wounds 3, Two-Handed Weapon Specialization 3, Impale 2
-  - order: 10-14 Cruelty x5, 15-19 Unbridled Wrath x5, 20-22 Blood Craze x3, 23-24 Boundless Rage x2, 25-29 Enrage x5, 30 Death Wish, 31-33 Precision x3, 34 Improved Execute, 35-39 Flurry x5, 40 Bloodthirst, 41-43 Improved Rend x3, 44-45 Deflection x2, 46-47 Improved Overpower x2, 48-49 Improved Charge x2, 50 Improved Tactical Mastery, 51-53 Deep Wounds x3, 54-55 Improved Tactical Mastery x2, 56-58 Two-Handed Weapon Specialization x3, 59-60 Impale x2
+- **Levels 10-39: arms-2h-raid -> level-20 build (7/4/0)**
+  - at level 10: **Arms**: Improved Rend 1
+  - at level 39: **Arms**: Improved Rend 3, Deflection 2, Improved Overpower 2, Improved Charge 2, Improved Tactical Mastery 3, Deep Wounds 3, Two-Handed Weapon Specialization 3, Impale 2, Weaponmaster 5; **Fury**: Cruelty 5
+  - order: 10-12 Improved Rend x3, 13-16 Cruelty x4, 17-18 Deflection x2, 19-20 Improved Overpower x2, 21-22 Improved Charge x2, 23 Improved Tactical Mastery, 24-26 Deep Wounds x3, 27-28 Improved Tactical Mastery x2, 29-31 Two-Handed Weapon Specialization x3, 32-33 Impale x2, 34-36 Weaponmaster x3, 37 Cruelty, 38-39 Weaponmaster x2
+- **Levels 40-60: arms-2h-raid -> level-40 build (31/0/0)** (respec here)
+  - at level 40: **Arms**: Improved Rend 3, Deflection 5, Improved Overpower 2, Improved Charge 2, Deep Wounds 3, Two-Handed Weapon Specialization 3, Impale 2, Weaponmaster 5, Bloodthrill 4, Sweeping Strikes 1, Mortal Strike 1
+  - at level 60: **Arms**: Improved Rend 3, Deflection 5, Improved Overpower 2, Improved Charge 2, Deep Wounds 3, Two-Handed Weapon Specialization 3, Impale 2, Weaponmaster 5, Bloodthrill 5, Sweeping Strikes 1, Mortal Strike 1; **Fury**: Cruelty 5, Unbridled Wrath 5, Blood Craze 3, Piercing Howl 1, Booming Voice 1, Enrage 4
+  - order: 41-45 Cruelty x5, 46 Bloodthrill, 47-51 Unbridled Wrath x5, 52-54 Blood Craze x3, 55 Piercing Howl, 56 Booming Voice, 57-60 Enrage x4
 
-Total: **66.3 h** (26.3% faster than talentless), 0 respec(s).
+Total: **66.8 h** (25.8% faster than talentless), 1 respec(s).
 
 ### fury-dw-raid
 
-- **Levels 10-60: fury-dw-raid -> level-30 build (0/21/0)**
+- **Levels 10-60: fury-dw-raid -> level-50 build (4/37/0)**
   - at level 10: **Fury**: Cruelty 1
-  - at level 60: **Fury**: Cruelty 5, Unbridled Wrath 5, Blood Craze 3, Boundless Rage 2, Improved Execute 2, Enrage 5, Dual Wield Specialization 5, Death Wish 1, Raging Blows 1, Precision 3, Bloodthirst 1, Flurry 5, Improved Intercept 2; **Arms**: Deflection 5, Improved Tactical Mastery 5, Anger Management 1
-  - order: 10-14 Cruelty x5, 15-19 Unbridled Wrath x5, 20-22 Blood Craze x3, 23-24 Boundless Rage x2, 25-26 Improved Execute x2, 27 Enrage, 28-29 Dual Wield Specialization x2, 30 Death Wish, 31-33 Enrage x3, 34-35 Dual Wield Specialization x2, 36 Raging Blows, 37 Enrage, 38 Dual Wield Specialization, 39 Precision, 40 Bloodthirst, 41-42 Precision x2, 43-47 Flurry x5, 48-49 Improved Intercept x2, 50-54 Deflection x5, 55-59 Improved Tactical Mastery x5, 60 Anger Management
+  - at level 60: **Fury**: Cruelty 5, Unbridled Wrath 5, Blood Craze 3, Piercing Howl 1, Booming Voice 1, Improved Execute 2, Enrage 5, Death Wish 1, Dual Wield Specialization 5, Raging Blows 1, Flurry 5, Bloodthirst 1, Improved Intercept 2, Improved Berserker Rage 1; **Arms**: Deflection 5, Improved Charge 2, Improved Rend 3, Deep Wounds 3
+  - order: 10-14 Cruelty x5, 15-19 Unbridled Wrath x5, 20-22 Blood Craze x3, 23 Piercing Howl, 24 Booming Voice, 25-26 Improved Execute x2, 27-29 Enrage x3, 30 Death Wish, 31-34 Dual Wield Specialization x4, 35 Enrage, 36 Raging Blows, 37 Enrage, 38 Dual Wield Specialization, 39 Flurry, 40 Bloodthirst, 41-44 Flurry x4, 45-46 Improved Intercept x2, 47-51 Deflection x5, 52-53 Improved Charge x2, 54-56 Improved Rend x3, 57-59 Deep Wounds x3, 60 Improved Berserker Rage
 
-Total: **66.2 h** (26.4% faster than talentless), 0 respec(s).
+Total: **65.6 h** (27.1% faster than talentless), 0 respec(s).
 
 ## Never respec: best single plan
 
 | Plan | Hours 10-60 | vs. schedule |
 |---|---|---|
-| fury-dw-raid -> level-30 build (0/21/0) | 66.2 | +0.1 h |
-| fury-dw-raid -> level-50 build (1/40/0) | 66.3 | +0.1 h |
-| fury-dw-raid -> level-20 build (0/11/0) | 66.3 | +0.1 h |
-| fury-dw-raid -> level-40 build (0/31/0) | 66.3 | +0.1 h |
-| fury-dw-raid -> level-60 build (13/38/0) | 66.3 | +0.1 h |
-| arms-2h-raid -> level-30 build (0/21/0) | 66.3 | +0.1 h |
-| arms-2h-raid -> level-40 build (0/31/0) | 66.3 | +0.1 h |
-| arms-2h-raid -> level-50 build (9/32/0) | 66.4 | +0.2 h |
-| arms-2h-raid -> level-60 build (31/20/0) | 67.0 | +0.8 h |
-| arms-2h-raid -> level-20 build (7/4/0) | 67.1 | +1.0 h |
+| fury-dw-raid -> level-50 build (4/37/0) | 65.6 | -0.0 h |
+| fury-dw-raid -> level-40 build (0/31/0) | 65.7 | +0.0 h |
+| fury-dw-raid -> level-20 build (0/11/0) | 65.7 | +0.0 h |
+| fury-dw-raid -> level-30 build (0/21/0) | 65.7 | +0.0 h |
+| fury-dw-raid -> level-60 build (13/38/0) | 65.7 | +0.0 h |
+| arms-2h-raid -> level-40 build (31/0/0) | 66.8 | +1.2 h |
+| arms-2h-raid -> level-50 build (32/9/0) | 66.9 | +1.3 h |
+| arms-2h-raid -> level-60 build (31/20/0) | 67.0 | +1.4 h |
+| arms-2h-raid -> level-20 build (7/4/0) | 67.2 | +1.5 h |
+| arms-2h-raid -> level-30 build (0/21/0) | 67.4 | +1.8 h |
 
 ## Leveling score by level (fraction of time per kill saved)
 
 | Plan | 10 | 15 | 20 | 25 | 30 | 35 | 40 | 45 | 50 | 55 | 60 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | arms-2h-raid -> level-20 build (7/4/0) | +1.3% | +6.9% | +10.8% | +12.4% | +14.9% | +18.4% | +22.6% | +31.9% | +33.7% | +36.2% | +37.6% |
-| arms-2h-raid -> level-30 build (0/21/0) | +1.1% | +6.0% | +8.7% | +10.9% | +16.7% | +20.2% | +29.4% | +31.4% | +33.6% | +35.7% | +38.0% |
-| arms-2h-raid -> level-40 build (0/31/0) | +1.1% | +6.0% | +8.7% | +10.9% | +16.7% | +20.2% | +29.4% | +31.4% | +33.6% | +35.7% | +38.0% |
-| arms-2h-raid -> level-50 build (9/32/0) | +1.1% | +6.0% | +8.7% | +10.9% | +16.7% | +20.2% | +29.4% | +31.4% | +33.8% | +35.9% | +37.9% |
-| arms-2h-raid -> level-60 build (31/20/0) | +1.3% | +5.3% | +8.0% | +10.0% | +12.7% | +17.5% | +28.1% | +31.9% | +33.4% | +35.7% | +38.5% |
-| fury-dw-raid -> level-20 build (0/11/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.0% | +21.4% | +33.5% | +35.1% | +36.3% | +36.8% | +37.7% |
-| fury-dw-raid -> level-30 build (0/21/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.9% | +21.4% | +33.5% | +35.1% | +36.3% | +36.8% | +37.7% |
-| fury-dw-raid -> level-40 build (0/31/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.0% | +21.4% | +33.5% | +35.1% | +36.3% | +36.8% | +37.7% |
-| fury-dw-raid -> level-50 build (1/40/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.0% | +21.4% | +33.5% | +35.1% | +36.3% | +36.8% | +37.7% |
-| fury-dw-raid -> level-60 build (13/38/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.0% | +21.4% | +33.5% | +35.1% | +36.1% | +36.8% | +37.7% |
+| arms-2h-raid -> level-30 build (0/21/0) | +1.1% | +6.0% | +8.7% | +10.8% | +16.6% | +18.2% | +27.6% | +29.7% | +32.0% | +34.1% | +36.5% |
+| arms-2h-raid -> level-40 build (31/0/0) | +1.3% | +5.3% | +8.5% | +10.4% | +13.5% | +18.1% | +28.0% | +31.9% | +33.7% | +36.1% | +38.4% |
+| arms-2h-raid -> level-50 build (32/9/0) | +1.3% | +5.3% | +8.5% | +10.4% | +12.5% | +17.4% | +28.0% | +31.9% | +33.7% | +36.1% | +38.4% |
+| arms-2h-raid -> level-60 build (31/20/0) | +1.3% | +5.3% | +8.0% | +10.0% | +12.7% | +17.5% | +28.1% | +31.9% | +33.4% | +35.6% | +38.5% |
+| fury-dw-raid -> level-20 build (0/11/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.9% | +21.4% | +34.9% | +36.1% | +36.8% | +37.4% | +39.2% |
+| fury-dw-raid -> level-30 build (0/21/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.9% | +21.4% | +34.9% | +36.1% | +36.8% | +37.4% | +39.2% |
+| fury-dw-raid -> level-40 build (0/31/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.9% | +21.4% | +34.9% | +36.2% | +36.8% | +37.4% | +39.2% |
+| fury-dw-raid -> level-50 build (4/37/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.9% | +21.4% | +34.9% | +36.2% | +36.9% | +37.4% | +39.2% |
+| fury-dw-raid -> level-60 build (13/38/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.9% | +21.4% | +34.9% | +36.1% | +36.8% | +37.4% | +39.2% |
 
 ## Reading it
 

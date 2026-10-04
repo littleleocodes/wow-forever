@@ -4,10 +4,6 @@
   "Arcane": [],
   "Fire": [
    [
-    "Improved Fireball",
-    5
-   ],
-   [
     "Wake of Fire",
     2
    ],
@@ -16,24 +12,28 @@
     1
    ],
    [
-    "Ignite",
+    "Improved Fireball",
     5
    ],
    [
-    "Pyroblast",
-    1
+    "Ignite",
+    5
    ],
    [
     "Burning Soul",
     3
    ],
    [
-    "Hot Streak",
+    "Pyroblast",
     1
    ],
    [
     "Improved Scorch",
     3
+   ],
+   [
+    "Heating Up",
+    1
    ],
    [
     "Master of Elements",
@@ -75,5 +75,8 @@
    ]
   ]
  },
- "note": "Optimizer raid build saved by rebuild.py on 2026-09-27 (raid calibration round 1)"
+ "note": "Optimizer raid build saved by rebuild.py on 2026-09-27 (raid calibration round 1)",
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `parse`: score +100.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `parse`: score +189.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -44,20 +44,20 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 | **Sacred Arbiter** | 1/1 | **NEW** | Increases the damage of your Holy Strike ability by 20% and causes it to refresh all Judgement effects on the target. |
 | **Vengeance** | 3/3 | changed | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times. |
 | **Two-Handed Weapon Specialization** | 3/3 | changed | Increases the damage you deal with two-handed melee weapons by 6%. |
-| **Champion of the Light** | 3/3 | **NEW** | Increases your spell damage and healing by up to 100% of your Intellect. |
+| **Champion of the Light** | 3/3 | **NEW** | Increases your spell damage by up to 60% of your Intellect. |
 | **Instrument of Law** | 2/2 | **NEW** | Reduces the cast time of your Hammer of Wrath by 1 sec, and reduces all threat you generate by 20% while Righteous Fury is not active. |
-| **Twist of Light** | 1/1 | **NEW** | Reduces the Mana cost of your Seal spells by 20%, and when you replace your Seal of Command, Seal of Righteousness, Seal of Fury, or Seal of Justice with a different Seal, gain an Echo of that Seal. Your next melee attack applies the replaced Seal's effects, consuming the Echo. |
+| **Twist of Light** | 1/1 | **NEW** | Reduces the Mana cost of your Seal spells by 20%, and when you replace your Seal of Command, Seal of Righteousness, Seal of Fury, or Seal of Justice with a different Seal, you gain an Echo of that Seal. Your next melee attack applies the replaced Seal's effects, consuming the Echo. |
 
 ## Core talents (priority order)
 
-1. **Champion of the Light** — Removing it costs 39.5 points of score in this model.
-2. **Seal of Command** — Removing it costs 20.7 points of score in this model.
-3. **Vengeance** — Removing it costs 12.9 points of score in this model.
-4. **Improved Seals** — Removing it costs 11.5 points of score in this model.
-5. **Conviction** — Removing it costs 8.6 points of score in this model.
-6. **Instrument of Law** — Removing it costs 7.0 points of score in this model.
-7. **Precision** — Removing it costs 6.7 points of score in this model.
-8. **Improved Judgement** — Removing it costs 5.4 points of score in this model.
+1. **Seal of Command** — Removing it costs 122.2 points of score in this model.
+2. **Champion of the Light** — Removing it costs 40.9 points of score in this model.
+3. **Vengeance** — Removing it costs 18.9 points of score in this model.
+4. **Improved Seals** — Removing it costs 17.3 points of score in this model.
+5. **Conviction** — Removing it costs 13.6 points of score in this model.
+6. **Instrument of Law** — Removing it costs 9.9 points of score in this model.
+7. **Precision** — Removing it costs 9.8 points of score in this model.
+8. **Improved Judgement** — Removing it costs 7.6 points of score in this model.
 
 ## Rotation
 

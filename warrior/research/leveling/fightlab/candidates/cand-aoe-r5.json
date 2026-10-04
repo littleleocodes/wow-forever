@@ -3,19 +3,19 @@
  "allocation": {
   "Arms": [
    [
-    "Improved Rend",
-    3
-   ],
-   [
     "Deflection",
     5
    ],
    [
-    "Improved Overpower",
-    2
+    "Improved Rend",
+    3
    ],
    [
     "Improved Tactical Mastery",
+    2
+   ],
+   [
+    "Improved Overpower",
     2
    ],
    [
@@ -23,15 +23,19 @@
     3
    ],
    [
-    "Two-Handed Weapon Specialization",
-    3
-   ],
-   [
     "Spearing Strike",
     1
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
    ]
   ],
   "Fury": [
+   [
+    "Booming Voice",
+    4
+   ],
    [
     "Cruelty",
     5
@@ -41,16 +45,12 @@
     5
    ],
    [
-    "Blood Craze",
-    3
-   ],
-   [
     "Piercing Howl",
     1
    ],
    [
-    "Boundless Rage",
-    1
+    "Blood Craze",
+    3
    ],
    [
     "Enrage",
@@ -63,10 +63,6 @@
    [
     "Death Wish",
     1
-   ],
-   [
-    "Precision",
-    3
    ],
    [
     "Flurry",
@@ -207,5 +203,8 @@
    "points": 1
   }
  ],
- "note": "Optimizer build saved by rebuild.py on 2026-09-28 (calibration round 5)"
+ "note": "Optimizer build saved by rebuild.py on 2026-09-28 (calibration round 5)",
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

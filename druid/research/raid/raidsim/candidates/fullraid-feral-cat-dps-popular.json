@@ -18,7 +18,7 @@
   "Feral Combat": [
    [
     "Ferocity",
-    3
+    5
    ],
    [
     "Heart of the Wild",
@@ -27,6 +27,14 @@
    [
     "Feral Swiftness",
     2
+   ],
+   [
+    "Feral Instinct",
+    1
+   ],
+   [
+    "Shredding Attacks",
+    3
    ],
    [
     "Savage Fury",
@@ -41,10 +49,6 @@
     2
    ],
    [
-    "Shredding Attacks",
-    3
-   ],
-   [
     "Predatory Strikes",
     3
    ],
@@ -53,16 +57,12 @@
     2
    ],
    [
-    "Predatory Instincts",
-    2
-   ],
-   [
     "Leader of the Pack",
     1
    ],
    [
-    "King of the Jungle",
-    3
+    "Predatory Instincts",
+    2
    ],
    [
     "Rend and Tear",
@@ -104,5 +104,8 @@
   "dps_end": 576.8687267200099,
   "gain": 0.019338262013256724,
   "tank": false
- }
+ },
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

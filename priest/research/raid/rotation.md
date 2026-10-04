@@ -4,7 +4,7 @@
 
 ## shadow-dps
 
-Our tuned rotation `shadow-dps.apl.json` (the simulator's `shadow.apl.json` with the changes below) (commit 40be98e), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
+Our tuned rotation `shadow-dps.apl.json` (the simulator's `shadow.apl.json` with the changes below) (commit b0f0df3), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
 
 **Rotation search** (every change kept had to win on two random seeds and cost none of the tuning builds more than 0.1%):
 
@@ -26,58 +26,34 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`opt-shadow-dps-raid-dps`](builds/opt-shadow-dps-raid-dps.md) (ours: optimizer, 632 DPS), *Shadow* (community simulator, 618 DPS)
+### [`opt-shadow-dps-raid-dps`](builds/opt-shadow-dps-raid-dps.md) (ours: optimizer, 589 DPS), *Shadow* (community simulator, 588 DPS), *Shadow 15/0/36* (community simulator, 587 DPS), *Smite* (community simulator, 218 DPS), *Smite 31/17/3* (community simulator, 218 DPS)
 
 Before the pull: at -1s: cast Shadowform.
 
-| # | Priority (the first line whose condition holds is cast) | [`opt-shadow-dps-raid-dps`](builds/opt-shadow-dps-raid-dps.md) casts/min | *Shadow* casts/min |
-|---|---|---|---|
-| 1 | use every other cooldown when ready | as ready | as ready |
-| 2 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain | 2.6 | 2.6 |
-| 3 | strict sequence: cast Inner Focus; cast Devouring Plague | 1.0 | 0.7 |
-| 4 | cast Shadow Word: Death | 3.9 | 3.8 |
-| 5 | cast Mind Blast | 6.9 | 7.0 |
-| 6 | channel Mind Flay | as ready | as ready |
+| # | Priority (the first line whose condition holds is cast) | [`opt-shadow-dps-raid-dps`](builds/opt-shadow-dps-raid-dps.md) casts/min | *Shadow* casts/min | *Shadow 15/0/36* casts/min | *Smite* casts/min | *Smite 31/17/3* casts/min |
+|---|---|---|---|---|---|---|
+| 1 | use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready |
+| 2 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain | 2.5 | 2.5 | 2.5 | 3.8 | 3.8 |
+| 3 | strict sequence: cast Inner Focus; cast Devouring Plague | 0.7 | 0.7 | 0.7 | 0.7 | 0.7 |
+| 4 | cast Shadow Word: Death | 3.8 | 3.8 | 3.8 | 4.0 | 4.0 |
+| 5 | cast Mind Blast | 7.0 | 6.9 | 7.0 | 5.9 | 5.9 |
+| 6 | channel Mind Flay | as ready | as ready | as ready | as ready | as ready |
 
 Lines of the simulator's rotation these builds never cast: Death (its condition never held in these fights).
 
 Damage by ability:
 
-| Ability | [`opt-shadow-dps-raid-dps`](builds/opt-shadow-dps-raid-dps.md) | *Shadow* |
-|---|---|---|
-| Mind Flay | 45% | 47% |
-| Shadow Word: Pain | 21% | 21% |
-| Mind Blast | 19% | 20% |
-| Shadow Word: Death | 10% | 10% |
-| Devouring Plague | 5% | 2% |
-
-### *Shadow 15/0/36* (community simulator, 590 DPS), *Smite* (community simulator, 216 DPS), *Smite 31/17/3* (community simulator, 216 DPS)
-
-Before the pull: at -1s: cast Shadowform.
-
-| # | Priority (the first line whose condition holds is cast) | *Shadow 15/0/36* casts/min | *Smite* casts/min | *Smite 31/17/3* casts/min |
-|---|---|---|---|---|
-| 1 | use every other cooldown when ready | as ready | as ready | as ready |
-| 2 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain | 2.6 | 3.4 | 3.4 |
-| 3 | strict sequence: cast Inner Focus; cast Devouring Plague | 0.7 | 0.7 | 0.7 |
-| 4 | cast Shadow Word: Death | 3.5 | 3.7 | 3.7 |
-| 5 | cast Shadow Word: Death | 0.3 | 0.3 | 0.3 |
-| 6 | cast Mind Blast | 6.6 | 5.6 | 5.6 |
-| 7 | channel Mind Flay | as ready | as ready | as ready |
-
-Damage by ability:
-
-| Ability | *Shadow 15/0/36* | *Smite* | *Smite 31/17/3* |
-|---|---|---|---|
-| Mind Flay | 46% | 0% | 0% |
-| Shadow Word: Pain | 22% | 43% | 43% |
-| Mind Blast | 20% | 32% | 32% |
-| Shadow Word: Death | 11% | 22% | 22% |
-| Devouring Plague | 2% | 4% | 4% |
+| Ability | [`opt-shadow-dps-raid-dps`](builds/opt-shadow-dps-raid-dps.md) | *Shadow* | *Shadow 15/0/36* | *Smite* | *Smite 31/17/3* |
+|---|---|---|---|---|---|
+| Mind Flay | 47% | 47% | 47% | 0% | 0% |
+| Shadow Word: Pain | 21% | 21% | 21% | 43% | 43% |
+| Mind Blast | 20% | 20% | 20% | 32% | 32% |
+| Shadow Word: Death | 10% | 10% | 10% | 21% | 21% |
+| Devouring Plague | 2% | 2% | 2% | 4% | 4% |
 
 ## smite-dps
 
-Our tuned rotation `smite-dps.apl.json` (the simulator's `smite.apl.json` with the changes below) (commit 40be98e), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
+Our tuned rotation `smite-dps.apl.json` (the simulator's `smite.apl.json` with the changes below) (commit b0f0df3), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
 
 Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs. Holy/Discipline damage (Smite, Holy Fire).
 
@@ -137,22 +113,22 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`smite-discipline-raid`](builds/smite-discipline-raid.md) (ours: hand draft, 444 DPS), *Smite* (community simulator, 441 DPS), *Smite 31/17/3* (community simulator, 441 DPS)
+### [`smite-discipline-raid`](builds/smite-discipline-raid.md) (ours: hand draft, 410 DPS), *Smite* (community simulator, 408 DPS), *Smite 31/17/3* (community simulator, 408 DPS)
 
 Before the pull: at -3s: cast Holy Fire.
 
 | # | Priority (the first line whose condition holds is cast) | [`smite-discipline-raid`](builds/smite-discipline-raid.md) casts/min | *Smite* casts/min | *Smite 31/17/3* casts/min |
 |---|---|---|---|---|
 | 1 | use every other cooldown when ready | as ready | as ready | as ready |
-| 2 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain | 3.3 | 3.4 | 3.4 |
+| 2 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain | 3.6 | 3.7 | 3.7 |
 | 3 | strict sequence: cast Inner Focus; cast Devouring Plague | 0.7 | 0.7 | 0.7 |
-| 4 | if time left on Holy Fire < 1.25s: cast Holy Fire | 4.8 | 4.8 | 4.8 |
+| 4 | if time left on Holy Fire < 1.25s: cast Holy Fire | 5.0 | 4.9 | 4.9 |
 | 5 | strict sequence: cast Inner Focus; cast Smite | 0.3 | 0.3 | 0.3 |
-| 6 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5 and mana % < 15%: cast Shadow Word: Pain | 0.7 | 0.7 | 0.7 |
-| 7 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5: cast Shadow Word: Pain | 3.3 | 3.4 | 3.4 |
-| 8 | cast Penance | 4.2 | 4.2 | 4.2 |
-| 9 | if not Shadow Word: Pain is on the target and mana % ≥ 30%: cast Shadow Word: Pain | 3.3 | 3.4 | 3.4 |
-| 10 | cast Smite | 20.9 | 20.9 | 20.9 |
+| 6 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5 and mana % < 15%: cast Shadow Word: Pain | 0.1 | 0.1 | 0.1 |
+| 7 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5: cast Shadow Word: Pain | 3.6 | 3.7 | 3.7 |
+| 8 | cast Penance | 4.9 | 4.8 | 4.8 |
+| 9 | if not Shadow Word: Pain is on the target and mana % ≥ 30%: cast Shadow Word: Pain | 3.6 | 3.7 | 3.7 |
+| 10 | cast Smite | 19.9 | 19.9 | 19.9 |
 
 Lines of the simulator's rotation these builds never cast: cast Smite (its condition never held in these fights); cast Shadowform (needs the Shadowform talent).
 
@@ -160,8 +136,8 @@ Damage by ability:
 
 | Ability | [`smite-discipline-raid`](builds/smite-discipline-raid.md) | *Smite* | *Smite 31/17/3* |
 |---|---|---|---|
-| Smite | 39% | 39% | 39% |
-| Shadow Word: Pain | 23% | 22% | 22% |
-| Penance | 18% | 18% | 18% |
-| Holy Fire | 18% | 18% | 18% |
+| Smite | 35% | 36% | 36% |
+| Shadow Word: Pain | 22% | 22% | 22% |
+| Penance | 21% | 21% | 21% |
+| Holy Fire | 19% | 19% | 19% |
 | Devouring Plague | 2% | 2% | 2% |

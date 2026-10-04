@@ -14,12 +14,12 @@
 | Demonology | Fel Domination | 1 | changed | tier 4, max 1 — tooltip changed; was Demonology row 3, col 2 |
 | Demonology | Fel Stamina | 5 | **REMOVED** | removed from Classic |
 | Demonology | Master Summoner | 2 | moved | tier 3, max 2 — was Demonology row 4, col 2 |
-| Demonology | Demonic Sacrifice | 1 | changed | tier 3, max 1 — tooltip changed; was Demonology row 5, col 2; tooltip changed in build 1.60.1.70009 (ranks 1) |
+| Demonology | Demonic Sacrifice | 1 | changed | tier 3, max 1 — tooltip changed; was Demonology row 5, col 2; tooltip changed in build 1.60.1.70170 (ranks 1) |
 | Destruction | Improved Shadow Bolt | 5 | changed | tier 1, max 5 — tooltip changed |
 | Destruction | Cataclysm | 4 | changed | tier 2, max 3 — max rank 5 → 3; tooltip changed; was Destruction row 1, col 3 |
 | Destruction | Bane | 5 | changed | tier 1, max 5 — tooltip changed; was Destruction row 2, col 2 |
 | Destruction | Devastation | 5 | **REMOVED** | removed from Classic |
-| Destruction | Shadowburn | 1 | changed | tier 3, max 1 — tooltip changed; was Destruction row 3, col 4; tooltip changed in build 1.60.1.70009 (ranks 1) |
+| Destruction | Shadowburn | 1 | changed | tier 3, max 1 — tooltip changed; was Destruction row 3, col 4; tooltip changed in build 1.60.1.70170 (ranks 1) |
 | Destruction | Destructive Reach | 2 | changed | tier 1, max 2 — tooltip changed; was Destruction row 4, col 2 |
 | Destruction | Ruin | 1 | changed | tier 3, max 5 — max rank 1 → 5; tooltip changed; was Destruction row 5, col 3 |
 
@@ -44,7 +44,7 @@
 | Destruction | Cataclysm | 2 | changed | tier 2, max 3 — max rank 5 → 3; tooltip changed; was Destruction row 1, col 3 |
 | Destruction | Bane | 5 | changed | tier 1, max 5 — tooltip changed; was Destruction row 2, col 2 |
 | Destruction | Devastation | 5 | **REMOVED** | removed from Classic |
-| Destruction | Shadowburn | 1 | changed | tier 3, max 1 — tooltip changed; was Destruction row 3, col 4; tooltip changed in build 1.60.1.70009 (ranks 1) |
+| Destruction | Shadowburn | 1 | changed | tier 3, max 1 — tooltip changed; was Destruction row 3, col 4; tooltip changed in build 1.60.1.70170 (ranks 1) |
 | Destruction | Destructive Reach | 2 | changed | tier 1, max 2 — tooltip changed; was Destruction row 4, col 2 |
 | Destruction | Ruin | 1 | changed | tier 3, max 5 — max rank 1 → 5; tooltip changed; was Destruction row 5, col 3 |
 
@@ -68,7 +68,7 @@
 | Demonology | Fel Domination | 1 | changed | tier 4, max 1 — tooltip changed; was Demonology row 3, col 2 |
 | Demonology | Unholy Power | 5 | changed | tier 1, max 5 — tooltip changed; was Demonology row 4, col 3 |
 | Demonology | Master Summoner | 1 | moved | tier 3, max 2 — was Demonology row 4, col 2 |
-| Demonology | Demonic Sacrifice | 1 | changed | tier 3, max 1 — tooltip changed; was Demonology row 5, col 2; tooltip changed in build 1.60.1.70009 (ranks 1) |
+| Demonology | Demonic Sacrifice | 1 | changed | tier 3, max 1 — tooltip changed; was Demonology row 5, col 2; tooltip changed in build 1.60.1.70170 (ranks 1) |
 | Demonology | Master Demonologist | 5 | changed | tier 6, max 5 — tooltip changed |
 | Demonology | Soul Link | 1 | changed | tier 5, max 1 — tooltip changed; was Demonology row 7, col 2 |
 

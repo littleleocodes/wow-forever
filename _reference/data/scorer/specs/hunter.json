@@ -146,11 +146,11 @@
       "kind_note": "Pet-tank playstyle while leveling: the pet holds the mob, so kiting tools add nothing in single-target play (fight lab, 2026-09-27: Improved Wing Clip -0.2% +- 0.3 and Scatter Shot 0.0% in the pet hunter's loop at 60). Pulls of several mobs (leveling-aoe) keep them: adds come to the hunter."
     },
     "mm-raid": {
-      "note": "Marksmanship raid DPS with a pet (Classic 20/31/0 style). Auto Shot ~45%, Aimed/Multi ~25%, pet ~18%. Aimed Shot/Sniper Shot are modelled as damage effects on the ranged sources, not as a source. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Multi-Shot lost its flat +150 and Aimed Shot's rank 6 is +166 (Classic +600) while Arcane Shot rank 8 rose to 217 (Classic 183): Multi-Shot share 16 -> 12%, Arcane Shot 4 -> 7%, Auto Shot 55 -> 58%, pet 18 -> 16%; Multi-Shot cooldown 6s (shared with Aimed Shot). Raid sim shares (2026-10-02, bm-mm-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): auto 37%, arcane 22%, serpent 19%, aimed 12%, pet 9%, multi 1%; 0% of the damage matched no source.",
+      "note": "Marksmanship raid DPS with a pet (Classic 20/31/0 style). Auto Shot ~45%, Aimed/Multi ~25%, pet ~18%. Aimed Shot/Sniper Shot are modelled as damage effects on the ranged sources, not as a source. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Multi-Shot lost its flat +150 and Aimed Shot's rank 6 is +166 (Classic +600) while Arcane Shot rank 8 rose to 217 (Classic 183): Multi-Shot share 16 -> 12%, Arcane Shot 4 -> 7%, Auto Shot 55 -> 58%, pet 18 -> 16%; Multi-Shot cooldown 6s (shared with Aimed Shot). Raid sim shares (2026-10-03, bm-mm-raid in the ElliotWood/Forever simulator b0f0df3, every mana-only buff on: the split before the mana limit): auto 46%, serpent 22%, pet 16%, aimed 14%, multi 2%; 24% of the damage matched no source.",
       "sources": [
         {
           "id": "auto",
-          "share": 0.369,
+          "share": 0.4608,
           "tags": ["type:ranged", "white", "school:physical", "ability:Auto Shot", "withpet"],
           "game_overrides": {
             "classic-era": {"share": 0.3911}
@@ -158,7 +158,7 @@
         },
         {
           "id": "multi",
-          "share": 0.0127,
+          "share": 0.0152,
           "tags": ["type:ranged", "yellow", "school:physical", "ability:Multi-Shot", "ability:Shots", "withpet"],
           "cooldown": 6,
           "min_level": 18,
@@ -168,7 +168,7 @@
         },
         {
           "id": "aimed",
-          "share": 0.1175,
+          "share": 0.1367,
           "tags": ["type:ranged", "yellow", "school:physical", "ability:Aimed Shot", "ability:Sniper Shot", "ability:Shots"],
           "cast": 3.0,
           "min_cast": 1.5,
@@ -181,7 +181,7 @@
         },
         {
           "id": "arcane",
-          "share": 0.2226,
+          "share": 0.0,
           "tags": ["type:ranged", "yellow", "school:arcane", "ability:Arcane Shot", "ability:Shots", "withpet"],
           "cooldown": 6,
           "min_level": 6,
@@ -191,7 +191,7 @@
         },
         {
           "id": "serpent",
-          "share": 0.1893,
+          "share": 0.2227,
           "tags": ["type:ranged", "dot", "school:nature", "ability:Serpent Sting", "ability:Stings", "withpet"],
           "can_crit": false,
           "min_level": 4,
@@ -209,7 +209,7 @@
         },
         {
           "id": "pet",
-          "share": 0.0888,
+          "share": 0.1647,
           "tags": ["pet", "withpet"],
           "min_level": 10,
           "game_overrides": {
@@ -242,20 +242,20 @@
       "mana_limit": {
         "forever": {
           "profiles": ["raid-dps", "raid-dps-extwc"],
-          "loss": 0.4275,
+          "loss": 0.5875,
           "cap": 0.9,
           "rms": 0.0125,
-          "points": 35,
-          "note": "Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, training dummy): the builds lose 13-25% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
+          "points": 37,
+          "note": "Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, training dummy): the builds lose 11-23% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
         }
       }
     },
     "mm-lonewolf-raid": {
-      "note": "Marksmanship without a pet (Forever Lone Wolf). Same shot mix, pet share redistributed; sources carry the lonewolf tag so Lone Wolf applies and pet talents/Focused Fire do not. Aimed Shot/Sniper Shot are modelled as damage effects on the ranged sources, not as a source. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Same beta adjustments as mm-raid: Multi-Shot 20 -> 15%, Arcane Shot 5 -> 8%, Auto Shot 67 -> 69%; Multi-Shot cooldown 6s. Raid sim shares (2026-10-02, mm-lone-wolf-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): auto 40%, serpent 22%, arcane 22%, aimed 16%; 0% of the damage matched no source.",
+      "note": "Marksmanship without a pet (Forever Lone Wolf). Same shot mix, pet share redistributed; sources carry the lonewolf tag so Lone Wolf applies and pet talents/Focused Fire do not. Aimed Shot/Sniper Shot are modelled as damage effects on the ranged sources, not as a source. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Same beta adjustments as mm-raid: Multi-Shot 20 -> 15%, Arcane Shot 5 -> 8%, Auto Shot 67 -> 69%; Multi-Shot cooldown 6s. Raid sim shares (2026-10-03, mm-lone-wolf-raid in the ElliotWood/Forever simulator b0f0df3, every mana-only buff on: the split before the mana limit): auto 42%, serpent 21%, arcane 20%, aimed 17%; 0% of the damage matched no source.",
       "sources": [
         {
           "id": "auto",
-          "share": 0.4029,
+          "share": 0.4228,
           "tags": ["type:ranged", "white", "school:physical", "ability:Auto Shot", "lonewolf"]
         },
         {
@@ -267,7 +267,7 @@
         },
         {
           "id": "aimed",
-          "share": 0.1586,
+          "share": 0.1664,
           "tags": ["type:ranged", "yellow", "school:physical", "ability:Aimed Shot", "ability:Sniper Shot", "ability:Shots"],
           "cast": 3.0,
           "min_cast": 1.5,
@@ -277,14 +277,14 @@
         },
         {
           "id": "arcane",
-          "share": 0.2171,
+          "share": 0.2041,
           "tags": ["type:ranged", "yellow", "school:arcane", "ability:Arcane Shot", "ability:Shots", "lonewolf"],
           "cooldown": 6,
           "min_level": 6
         },
         {
           "id": "serpent",
-          "share": 0.2215,
+          "share": 0.2067,
           "tags": ["type:ranged", "dot", "school:nature", "ability:Serpent Sting", "ability:Stings", "lonewolf"],
           "can_crit": false,
           "min_level": 4
@@ -315,11 +315,11 @@
       "mana_limit": {
         "forever": {
           "profiles": ["raid-dps", "raid-dps-extwc"],
-          "loss": 0.7675,
-          "cap": 0.49,
-          "rms": 0.0316,
+          "loss": 0.7725,
+          "cap": 0.5,
+          "rms": 0.031,
           "points": 29,
-          "note": "Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, training dummy): the builds lose 20-26% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
+          "note": "Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, training dummy): the builds lose 20-25% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
         }
       }
     },

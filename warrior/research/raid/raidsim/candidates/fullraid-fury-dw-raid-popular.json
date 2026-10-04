@@ -25,6 +25,10 @@
   ],
   "Fury": [
    [
+    "Booming Voice",
+    5
+   ],
+   [
     "Cruelty",
     5
    ],
@@ -33,11 +37,7 @@
     5
    ],
    [
-    "Improved Cleave",
-    2
-   ],
-   [
-    "Boundless Rage",
+    "Furious Precision",
     3
    ],
    [
@@ -53,8 +53,8 @@
     5
    ],
    [
-    "Precision",
-    3
+    "Improved Execute",
+    2
    ],
    [
     "Death Wish",
@@ -67,10 +67,6 @@
    [
     "Bloodthirst",
     1
-   ],
-   [
-    "Improved Execute",
-    2
    ]
   ],
   "Protection": []
@@ -100,5 +96,8 @@
   "dps_end": 701.5698952637273,
   "gain": 0.03680495609454382,
   "tank": false
- }
+ },
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

@@ -9,62 +9,62 @@ Effect coverage: 1 parsed from tooltips, 49 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Stormstrike | Enhancement | 4 | +24.07% | manual |
-| Shamanistic Focus | Enhancement | 3 | +7.61% | manual |
-| Flurry | Enhancement | 4 | +2.48% | manual |
-| Rage of the Farseer | Enhancement | 7 | +2.26% | manual |
-| Maelstrom Weapon | Enhancement | 6 | +1.89% | manual |
+| Stormstrike | Enhancement | 4 | +20.93% | manual |
+| Shamanistic Focus | Enhancement | 3 | +6.56% | manual |
+| Flurry | Enhancement | 4 | +2.71% | manual |
+| Maelstrom Weapon | Enhancement | 6 | +2.65% | manual |
+| Rage of the Farseer | Enhancement | 7 | +1.88% | manual |
 | Mental Dexterity | Enhancement | 2 | +1.86% | manual |
-| Mana Tide Totem | Restoration | 4 | +1.75% | manual |
-| Thundering Strikes | Enhancement | 1 | +1.04% | manual |
-| Mental Quickness | Enhancement | 5 | +1.02% | manual |
-| Elemental Focus | Elemental | 3 | +0.96% | manual |
-| Call of Flame | Elemental | 2 | +0.93% | manual |
-| Elemental Fury | Elemental | 6 | +0.77% | manual |
-| Lava Burst | Elemental | 7 | +0.75% | manual |
-| Tidal Focus | Restoration | 2 | +0.61% | manual |
-| Convection | Elemental | 1 | +0.59% | manual |
-| Elemental Devastation | Elemental | 2 | +0.53% | manual |
-| Elemental Weapons | Enhancement | 3 | +0.43% | manual |
-| Mindfulness | Restoration | 2 | +0.34% | manual |
-| Ancestral Knowledge | Enhancement | 1 | +0.32% | manual |
-| Restorative Totems | Restoration | 4 | +0.26% | manual |
-| Lightning Overload | Elemental | 5 | +0.15% | manual |
-| Nature's Swiftness | Restoration | 5 | +0.14% | manual |
-| Call of Thunder | Elemental | 4 | +0.13% | manual |
-| Reverberation | Elemental | 2 | +0.13% | manual |
-| Concussion | Elemental | 1 | +0.08% | manual |
-| Elemental Alacrity | Elemental | 3 | +0.08% | manual |
-| Totemic Focus | Restoration | 1 | +0.06% | manual |
+| Mental Quickness | Enhancement | 5 | +1.47% | manual |
+| Call of Flame | Elemental | 2 | +1.33% | manual |
+| Elemental Fury | Elemental | 6 | +1.11% | manual |
+| Lava Burst | Elemental | 7 | +1.06% | manual |
+| Thundering Strikes | Enhancement | 1 | +0.98% | manual |
+| Elemental Devastation | Elemental | 2 | +0.44% | manual |
+| Lightning Overload | Elemental | 5 | +0.20% | manual |
+| Tidal Focus | Restoration | 2 | +0.20% | manual |
+| Nature's Swiftness | Restoration | 5 | +0.20% | manual |
+| Reverberation | Elemental | 2 | +0.19% | manual |
+| Call of Thunder | Elemental | 4 | +0.18% | manual |
+| Concussion | Elemental | 1 | +0.12% | manual |
+| Elemental Alacrity | Elemental | 3 | +0.11% | manual |
+| Ancestral Knowledge | Enhancement | 1 | +0.05% | manual |
 | Eye of the Storm | Elemental | 4 | +0.01% | manual |
 | Healing Focus | Restoration | 3 | +0.01% | manual |
 | Spirit Weapons | Enhancement | 5 | +0.00% | manual |
+| Natural Grace | Restoration | 2 | +0.00% | manual |
+| Toughness | Enhancement | 4 | +0.00% | manual |
+| Improved Reincarnation | Restoration | 2 | +0.00% | manual |
+| Convection | Elemental | 1 | +0.00% | manual |
+| Elemental Focus | Elemental | 3 | +0.00% | manual |
+| Improved Stormstrike | Enhancement | 5 | +0.00% | manual |
+| Totemic Focus | Restoration | 1 | +0.00% | manual |
 
-## Optimized build: 11/31/9  score +123.78%  (dps x2.237, sustain x1.314, surv x1.000, utility +0.00%)
+## Optimized build: 11/31/9  score +123.77%  (dps x2.237, sustain x1.328, surv x1.000, utility +0.00%)
 
 ```
   Elemental: Convection 5, Call of Flame 3, Elemental Devastation 2, Elemental Focus 1
-  Enhancement: Thundering Strikes 5, Ancestral Knowledge 5, Mental Dexterity 3, Shamanistic Focus 1, Elemental Weapons 3, Stormstrike 1, Flurry 5, Mental Quickness 2, Maelstrom Weapon 5, Rage of the Farseer 1
-  Restoration: Totemic Focus 5, Tidal Focus 4
+  Enhancement: Thundering Strikes 5, Ancestral Knowledge 5, Earth's Grasp 1, Mental Dexterity 3, Shamanistic Focus 1, Stormstrike 1, Flurry 5, Mental Quickness 2, Spirit Weapons 1, Improved Stormstrike 1, Maelstrom Weapon 5, Rage of the Farseer 1
+  Restoration: Totemic Focus 5, Mindfulness 3, Tidal Focus 1
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Mana Tide Totem | Restoration 4 | 1/1 | +4.48% | no |
-| Lava Burst | Elemental 7 | 1/1 | +3.71% | no |
-| Elemental Fury | Elemental 6 | 1/5 | +3.52% | no |
-| Tidal Focus | Restoration 2 | 5/5 | +1.40% | yes |
-| Elemental Devastation | Elemental 2 | 3/3 | +0.94% | yes |
-| Mindfulness | Restoration 2 | 1/3 | +0.88% | yes |
-| Lightning Overload | Elemental 5 | 1/3 | +0.70% | no |
-| Restorative Totems | Restoration 4 | 1/5 | +0.67% | no |
-| Call of Thunder | Elemental 4 | 1/1 | +0.63% | no |
-| Nature's Swiftness | Restoration 5 | 1/1 | +0.44% | no |
-| Elemental Alacrity | Elemental 3 | 1/3 | +0.39% | yes |
-| Concussion | Elemental 1 | 1/5 | +0.29% | yes |
-| Reverberation | Elemental 2 | 1/5 | +0.28% | yes |
-| Eye of the Storm | Elemental 4 | 1/3 | +0.01% | no |
-| Healing Focus | Restoration 3 | 1/3 | +0.01% | no |
+| Lava Burst | Elemental 7 | 1/1 | +4.41% | no |
+| Elemental Fury | Elemental 6 | 1/5 | +4.26% | no |
+| Mana Tide Totem | Restoration 4 | 1/1 | +2.62% | no |
+| Tidal Focus | Restoration 2 | 2/5 | +0.85% | yes |
+| Lightning Overload | Elemental 5 | 1/3 | +0.83% | no |
+| Elemental Devastation | Elemental 2 | 3/3 | +0.81% | yes |
+| Restorative Totems | Restoration 4 | 1/5 | +0.81% | no |
+| Call of Thunder | Elemental 4 | 1/1 | +0.74% | no |
+| Nature's Swiftness | Restoration 5 | 1/1 | +0.53% | no |
+| Elemental Alacrity | Elemental 3 | 1/3 | +0.46% | yes |
+| Concussion | Elemental 1 | 1/5 | +0.34% | yes |
+| Reverberation | Elemental 2 | 1/5 | +0.33% | yes |
+| Eye of the Storm | Elemental 4 | 1/3 | +0.00% | no |
+| Healing Focus | Restoration 3 | 1/3 | +0.00% | no |
+| Natural Grace | Restoration 2 | 1/3 | +0.00% | yes |
 

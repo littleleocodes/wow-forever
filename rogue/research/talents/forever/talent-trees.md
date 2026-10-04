@@ -1,6 +1,6 @@
-# Rogue — WoW: Forever talent trees (beta client 1.60.1.70009)
+# Rogue — WoW: Forever talent trees (beta client 1.60.1.70170)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70009, captured 2026-09-25. World of Warcraft: Forever beta client, build 1.60.1.70009: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-09-24, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70009; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70170, captured 2026-10-03. World of Warcraft: Forever beta client, build 1.60.1.70170: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-03, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70170; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -64,7 +64,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Venom** | 1 | Mutilate (1) | **NEW** | Finishing move that increases the damage of your Poisons by 30% and your chance to apply Poisons by 10%. Lasts longer per combo point:  1 point : 9 seconds  2 points: 12 seconds  3 points: 15 seconds  4 points: 18 seconds  5 points: 21 seconds | — |
+| **Venom** | 1 | Mutilate (1) | **NEW** | Finishing move that increases the damage of your Poisons by 30% and your chance to apply Poisons by 10%. Lasts longer per combo point:  1 point : 9 sec  2 points: 12 sec  3 points: 15 sec  4 points: 18 sec  5 points: 21 sec | — |
 
 ## Combat
 
@@ -136,7 +136,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Setup** | 3 | — | changed | Gives you a 33% chance to add a Combo Point to your target after Dodging an attack or fully resisting a spell. | Gives you a 100% chance to add a Combo Point to your target after Dodging an attack or fully resisting a spell. |
+| **Setup** | 3 | — | changed | Gives you a 33% chance to add a Combo Point to your target after Dodging one of their attacks or fully resisting one of their spells. | Gives you a 100% chance to add a Combo Point to your target after Dodging one of their attacks or fully resisting one of their spells. |
 | **Elusiveness** | 2 | — | unchanged | Reduces the cooldown of your Vanish and Blind abilities by 45 sec. | Reduces the cooldown of your Vanish and Blind abilities by 90 sec. |
 | **Dirty Tricks** | 2 | — | **NEW** | Reduces the Energy cost of your Sap and Blind abilities by 25%. | Reduces the Energy cost of your Sap and Blind abilities by 50%. |
 | **Improved Ambush** | 3 | — | moved | Increases the critical strike chance of your Ambush ability by 15%. | Increases the critical strike chance of your Ambush ability by 45%. |
@@ -255,9 +255,9 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Opportunity** (max rank 5 → 2, tooltip changed)
   - Classic: Increases the damage dealt when striking from behind with your Backstab, Garrote, or Ambush abilities by 4%.
   - Forever: Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 5%.
-- **Setup** (tooltip changed, was Subtlety row 4, col 1)
+- **Setup** (tooltip changed, was Subtlety row 4, col 1, tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3))
   - Classic: Gives you a 15% chance to add a combo point to your target after dodging their attack or fully resisting one of their spells.
-  - Forever: Gives you a 33% chance to add a Combo Point to your target after Dodging an attack or fully resisting a spell.
+  - Forever: Gives you a 33% chance to add a Combo Point to your target after Dodging one of their attacks or fully resisting one of their spells.
 - **Initiative** (tooltip changed)
   - Classic: Gives you a 25% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.
   - Forever: Gives you a 33% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.

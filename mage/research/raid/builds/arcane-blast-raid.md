@@ -71,13 +71,13 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 
 ## Rank among our builds and the community simulator's
 
-**1 of 3** for `arcane-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 3** for `arcane-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`arcane-blast-raid`](arcane-blast-raid.md)** | ours: hand draft | 35/11/5 | 602 | +0.0% | 690 | +0.0% | 0 s |
-| 2 | *Arcane DPS* | community simulator | - | 594 | -1.3% | 681 | -1.3% | 0 s |
-| 3 | *Arcane 35/0/16* | community simulator | - | 569 | -5.5% | 649 | -6.0% | 0 s |
+| 1 | **[`arcane-blast-raid`](arcane-blast-raid.md)** | ours: hand draft | 35/11/5 | 571 | +0.0% | 659 | +0.0% | 0 s |
+| 2 | *Arcane DPS* | community simulator | - | 565 | -1.0% | 650 | -1.5% | 0 s |
+| 3 | *Arcane 35/0/16* | community simulator | - | 541 | -5.2% | 618 | -6.2% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -97,11 +97,11 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 | # | Priority (the first line whose condition holds is cast) | [`arcane-blast-raid`](arcane-blast-raid.md) casts/min |
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
-| 2 | cast Fire Blast | 9.2 |
+| 2 | cast Fire Blast | 8.9 |
 | 3 | if Missile Barrage is up: cast Arcane Missiles | 5.2 |
 | 4 | if stacks of Arcane Blast ≥ 1.5: cast Frostbolt | 0.1 |
-| 5 | cast Arcane Blast | 12.9 |
-| 6 | cast Fireball | 0.4 |
+| 5 | cast Arcane Blast | 12.6 |
+| 6 | cast Fireball | 0.9 |
 
 Damage by ability:
 
@@ -111,8 +111,8 @@ Damage by ability:
 | Arcane Missiles | 34% |
 | Fire Blast | 22% |
 | Ignite | 3% |
+| Fireball | 1% |
 | Frostbolt | 1% |
-| Fireball | 0% |
 
 ## Notes
 

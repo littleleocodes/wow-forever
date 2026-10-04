@@ -4,7 +4,7 @@
 
 ## elemental-dps
 
-Our tuned rotation `elemental-dps.apl.json` (the simulator's `forever.apl.json` with the changes below) (commit 40be98e), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
+Our tuned rotation `elemental-dps.apl.json` (the simulator's `forever.apl.json` with the changes below) (commit b0f0df3), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
 
 **Rotation search** (every change kept had to win on two random seeds and cost none of the tuning builds more than 0.1%):
 
@@ -31,33 +31,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`opt-elemental-dps-raid-dps`](builds/opt-elemental-dps-raid-dps.md) (ours: optimizer, 440 DPS), [`elemental-raid`](builds/elemental-raid.md) (ours: hand draft, 440 DPS), *Elemental 31/6/14* (community simulator, 434 DPS), *Level 60* (community simulator, 419 DPS)
-
-Before the pull: at -2s: cast Lightning Bolt.
-
-| # | Priority (the first line whose condition holds is cast) | [`opt-elemental-dps-raid-dps`](builds/opt-elemental-dps-raid-dps.md) casts/min | [`elemental-raid`](builds/elemental-raid.md) casts/min | *Elemental 31/6/14* casts/min | *Level 60* casts/min |
-|---|---|---|---|---|---|
-| 1 | if number of targets = 1 and not Searing Totem is on the target and time left in the fight ≥ 20s: cast Searing Totem | 1.0 | 1.0 | 1.0 | 1.0 |
-| 2 | use every other cooldown when ready | as ready | as ready | as ready | as ready |
-| 3 | if not Flame Shock is on the target: cast Flame Shock | 5.0 | 5.0 | 5.0 | 5.1 |
-| 4 | cast Lava Burst | 4.7 | 4.7 | 4.7 | 4.7 |
-| 5 | if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning | 2.3 | 2.3 | 2.2 | 2.3 |
-| 6 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt | 14.3 | 14.3 | 11.7 | 13.2 |
-| 7 | cast Lightning Bolt | 6.8 | 6.8 | 10.4 | 8.2 |
-
-Lines of the simulator's rotation these builds never cast: cast Magma Totem (its condition never held in these fights).
-
-Damage by ability:
-
-| Ability | [`opt-elemental-dps-raid-dps`](builds/opt-elemental-dps-raid-dps.md) | [`elemental-raid`](builds/elemental-raid.md) | *Elemental 31/6/14* | *Level 60* |
-|---|---|---|---|---|
-| Lightning Bolt | 55% | 55% | 55% | 55% |
-| Lava Burst | 17% | 17% | 17% | 17% |
-| Flame Shock | 17% | 17% | 17% | 17% |
-| Attack | 6% | 6% | 6% | 6% |
-| Chain Lightning | 5% | 5% | 5% | 5% |
-
-### [`elemental-raid-dps`](builds/elemental-raid-dps.md) (ours: hand draft, 438 DPS), *Stormcaller 28/23/0* (community simulator, 421 DPS)
+### [`elemental-raid-dps`](builds/elemental-raid-dps.md) (ours: hand draft, 410 DPS), *Stormcaller 28/23/0* (community simulator, 393 DPS)
 
 Before the pull: at -2s: cast Lightning Bolt.
 
@@ -65,10 +39,10 @@ Before the pull: at -2s: cast Lightning Bolt.
 |---|---|---|---|
 | 1 | if number of targets = 1 and not Searing Totem is on the target and time left in the fight ≥ 20s: cast Searing Totem | 1.0 | 1.0 |
 | 2 | use every other cooldown when ready | as ready | as ready |
-| 3 | if not Flame Shock is on the target: cast Flame Shock | 5.2 | 5.2 |
+| 3 | if not Flame Shock is on the target: cast Flame Shock | 5.1 | 5.1 |
 | 4 | if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning | 2.5 | 2.4 |
-| 5 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt | 23.3 | 15.0 |
-| 6 | cast Lightning Bolt | 0.7 | 11.8 |
+| 5 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt | 23.3 | 15.1 |
+| 6 | cast Lightning Bolt | 0.7 | 11.7 |
 
 Lines of the simulator's rotation these builds never cast: cast Magma Totem (its condition never held in these fights); cast Lava Burst (needs the Lava Burst talent).
 
@@ -78,12 +52,38 @@ Damage by ability:
 |---|---|---|
 | Lightning Bolt | 71% | 70% |
 | Flame Shock | 17% | 18% |
-| Attack | 6% | 6% |
+| Attack | 6% | 7% |
 | Chain Lightning | 6% | 6% |
+
+### [`opt-elemental-dps-raid-dps`](builds/opt-elemental-dps-raid-dps.md) (ours: optimizer, 408 DPS), [`elemental-raid`](builds/elemental-raid.md) (ours: hand draft, 408 DPS), *Elemental 31/6/14* (community simulator, 404 DPS), *Level 60* (community simulator, 389 DPS)
+
+Before the pull: at -2s: cast Lightning Bolt.
+
+| # | Priority (the first line whose condition holds is cast) | [`opt-elemental-dps-raid-dps`](builds/opt-elemental-dps-raid-dps.md) casts/min | [`elemental-raid`](builds/elemental-raid.md) casts/min | *Elemental 31/6/14* casts/min | *Level 60* casts/min |
+|---|---|---|---|---|---|
+| 1 | if number of targets = 1 and not Searing Totem is on the target and time left in the fight ≥ 20s: cast Searing Totem | 1.0 | 1.0 | 1.0 | 1.0 |
+| 2 | use every other cooldown when ready | as ready | as ready | as ready | as ready |
+| 3 | if not Flame Shock is on the target: cast Flame Shock | 5.0 | 5.0 | 5.0 | 5.0 |
+| 4 | cast Lava Burst | 4.7 | 4.7 | 4.7 | 4.7 |
+| 5 | if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning | 2.3 | 2.3 | 2.2 | 2.3 |
+| 6 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt | 14.4 | 14.4 | 11.8 | 13.3 |
+| 7 | cast Lightning Bolt | 6.7 | 6.7 | 10.3 | 8.2 |
+
+Lines of the simulator's rotation these builds never cast: cast Magma Totem (its condition never held in these fights).
+
+Damage by ability:
+
+| Ability | [`opt-elemental-dps-raid-dps`](builds/opt-elemental-dps-raid-dps.md) | [`elemental-raid`](builds/elemental-raid.md) | *Elemental 31/6/14* | *Level 60* |
+|---|---|---|---|---|
+| Lightning Bolt | 54% | 54% | 54% | 54% |
+| Lava Burst | 17% | 17% | 17% | 17% |
+| Flame Shock | 17% | 17% | 17% | 17% |
+| Attack | 7% | 7% | 7% | 7% |
+| Chain Lightning | 5% | 5% | 5% | 5% |
 
 ## enhancement-dps
 
-Our tuned rotation `enhancement-dps.apl.json` (the simulator's `forever.apl.json` with the changes below) (commit 40be98e), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
+Our tuned rotation `enhancement-dps.apl.json` (the simulator's `forever.apl.json` with the changes below) (commit b0f0df3), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
 
 **Rotation search** (every change kept had to win on two random seeds and cost none of the tuning builds more than 0.1%):
 
@@ -116,7 +116,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) (ours: optimizer, 413 DPS), [`enhancement-ml-raid`](builds/enhancement-ml-raid.md) (ours: hand draft, 409 DPS), [`enhancement-raid-dps`](builds/enhancement-raid-dps.md) (ours: hand draft, 408 DPS), *Level 60* (community simulator, 405 DPS), [`elemental-enhancement-ml-raid`](builds/elemental-enhancement-ml-raid.md) (ours: hand draft, 387 DPS), *Enhancement 16/35/0* (community simulator, 367 DPS)
+### [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) (ours: optimizer, 400 DPS), [`enhancement-ml-raid`](builds/enhancement-ml-raid.md) (ours: hand draft, 397 DPS), [`enhancement-raid-dps`](builds/enhancement-raid-dps.md) (ours: hand draft, 395 DPS), *Level 60* (community simulator, 393 DPS), [`elemental-enhancement-ml-raid`](builds/elemental-enhancement-ml-raid.md) (ours: hand draft, 377 DPS), *Enhancement 16/35/0* (community simulator, 357 DPS)
 
 Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of Air Totem; at -1.5s: cast Searing Totem.
 
@@ -125,8 +125,8 @@ Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of A
 | 1 | if time left on the totem ≤ 0s: cast Strength of Earth Totem | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 |
 | 2 | if time left on the totem ≤ 0s: cast Grace of Air Totem | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 |
 | 3 | use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready | as ready |
-| 4 | cast Stormstrike | 14.1 | 14.3 | 14.1 | 14.2 | 14.1 | 13.7 |
-| 5 | if stacks of Maelstrom Weapon ≥ 3.75: cast Lightning Bolt | 4.6 | 4.6 | 4.6 | 4.6 | 3.5 | 4.6 |
+| 4 | cast Stormstrike | 14.0 | 14.3 | 14.0 | 14.2 | 14.0 | 13.7 |
+| 5 | if stacks of Maelstrom Weapon ≥ 3.75: cast Lightning Bolt | 4.6 | 4.6 | 4.6 | 4.6 | 3.6 | 4.6 |
 | 6 | if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.0 |
 | 7 | if not Flame Shock is on the target: cast Flame Shock | 4.0 | 3.6 | 4.0 | 3.6 | 3.5 | 2.4 |
 | 8 | cast Earth Shock | 4.8 | 5.6 | 4.8 | 5.5 | 5.6 | 2.8 |
@@ -136,18 +136,18 @@ Damage by ability:
 
 | Ability | [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) | [`enhancement-ml-raid`](builds/enhancement-ml-raid.md) | [`enhancement-raid-dps`](builds/enhancement-raid-dps.md) | *Level 60* | [`elemental-enhancement-ml-raid`](builds/elemental-enhancement-ml-raid.md) | *Enhancement 16/35/0* |
 |---|---|---|---|---|---|---|
-| Auto Attack | 27% | 28% | 28% | 27% | 28% | 31% |
-| Windfury Weapon | 18% | 18% | 18% | 18% | 18% | 20% |
-| Earth Shock | 11% | 13% | 12% | 13% | 14% | 8% |
-| Lightning Bolt | 12% | 11% | 12% | 12% | 9% | 13% |
-| Flame Shock | 12% | 10% | 10% | 10% | 10% | 8% |
-| Stormstrike | 10% | 11% | 10% | 10% | 11% | 11% |
+| Auto Attack | 28% | 29% | 29% | 28% | 28% | 31% |
+| spell 439440 | 18% | 18% | 19% | 18% | 18% | 20% |
+| Earth Shock | 11% | 12% | 12% | 13% | 13% | 7% |
+| Lightning Bolt | 11% | 11% | 11% | 11% | 9% | 12% |
+| Stormstrike | 11% | 11% | 11% | 11% | 11% | 11% |
+| Flame Shock | 11% | 10% | 10% | 10% | 10% | 7% |
 | Attack | 7% | 7% | 6% | 7% | 7% | 7% |
 | Dragonbreath Chili | 3% | 3% | 3% | 3% | 3% | 3% |
 
 ## stormcaller-dps
 
-Our tuned rotation `stormcaller-dps.apl.json` (the simulator's `forever.apl.json` with the changes below) (commit 40be98e), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
+Our tuned rotation `stormcaller-dps.apl.json` (the simulator's `forever.apl.json` with the changes below) (commit b0f0df3), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
 
 Stormcaller (2026-09-28, new-builds survey): the simulator's Elemental/Enhancement hybrid preset (28/23/0) as a target of its own, so its talents and rotation are tuned rather than raced under the pure Elemental build's.
 
@@ -175,7 +175,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### *Stormcaller 28/23/0* (community simulator, 409 DPS)
+### *Stormcaller 28/23/0* (community simulator, 382 DPS)
 
 Before the pull: at -2s: cast Lightning Bolt.
 
@@ -183,10 +183,10 @@ Before the pull: at -2s: cast Lightning Bolt.
 |---|---|---|
 | 1 | if number of targets = 1 and not Searing Totem is on the target and mana % ≥ 60%: cast Searing Totem | 0.7 |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if not Flame Shock is on the target: cast Flame Shock | 5.3 |
+| 3 | if not Flame Shock is on the target: cast Flame Shock | 5.2 |
 | 4 | if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning | 2.5 |
-| 5 | if mana ≥ (time left in the fight × 52.5): cast Lightning Bolt | 7.8 |
-| 6 | cast Lightning Bolt | 21.5 |
+| 5 | if mana ≥ (time left in the fight × 52.5): cast Lightning Bolt | 7.9 |
+| 6 | cast Lightning Bolt | 21.4 |
 
 Lines of the simulator's rotation these builds never cast: cast Magma Totem (its condition never held in these fights); cast Lava Burst (needs the Lava Burst talent).
 
@@ -194,7 +194,7 @@ Damage by ability:
 
 | Ability | *Stormcaller 28/23/0* |
 |---|---|
-| Lightning Bolt | 71% |
+| Lightning Bolt | 70% |
 | Flame Shock | 19% |
 | Chain Lightning | 6% |
 | Attack | 5% |

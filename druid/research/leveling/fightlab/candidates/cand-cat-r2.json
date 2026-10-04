@@ -7,22 +7,22 @@
     5
    ],
    [
-    "Nature's Reach",
+    "Nature's Majesty",
     2
    ],
    [
-    "Nature's Majesty",
+    "Nature's Reach",
     2
    ]
   ],
   "Feral Combat": [
    [
-    "Heart of the Wild",
-    5
+    "Ferocity",
+    4
    ],
    [
-    "Ferocity",
-    1
+    "Heart of the Wild",
+    5
    ],
    [
     "Feral Swiftness",
@@ -33,16 +33,16 @@
     2
    ],
    [
-    "Sharpened Claws",
-    2
-   ],
-   [
     "Savage Fury",
     2
    ],
    [
     "Feral Charge",
     1
+   ],
+   [
+    "Sharpened Claws",
+    2
    ],
    [
     "Predatory Strikes",
@@ -55,10 +55,6 @@
    [
     "Leader of the Pack",
     1
-   ],
-   [
-    "King of the Jungle",
-    3
    ],
    [
     "Predatory Instincts",
@@ -79,11 +75,11 @@
     5
    ],
    [
-    "Natural Shapeshifter",
+    "Naturalist",
     3
    ],
    [
-    "Naturalist",
+    "Natural Shapeshifter",
     3
    ]
   ]
@@ -215,5 +211,8 @@
    "talent": "Naturalist",
    "points": 3
   }
+ ],
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
  ]
 }

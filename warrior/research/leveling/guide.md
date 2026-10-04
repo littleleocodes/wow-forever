@@ -6,30 +6,7 @@
 
 `leveling-arms` — Two-handed Arms leveling revised from the fight lab on 2026-09-26: Improved Rend, Deflection, Improved Charge and Improved Overpower first, Deep Wounds at 20, Impale and Two-Handed Weapon Specialization, Bloodthrill, Weaponmaster and Mortal Strike at 40 (the one talent worth 40% of time per kill), then Fury for Cruelty, Unbridled Wrath, Blood Craze and Enrage. Charge, Bloodrage, Battle Shout, Victory Rush, Mortal Strike, Overpower after dodges, Rend, Execute under 20%, Heroic Strike with spare rage; bandage and eat between fights.
 
-| Levels | Tree | Talent | Points |
-|---|---|---|---|
-| 10-12 | Arms | Improved Rend | 3 |
-| 13-14 | Arms | Deflection | 2 |
-| 15-16 | Arms | Improved Charge | 2 |
-| 17-18 | Arms | Improved Overpower | 2 |
-| 19 | Arms | Deflection | 1 |
-| 20-22 | Arms | Deep Wounds | 3 |
-| 23-24 | Arms | Deflection | 2 |
-| 25-26 | Arms | Impale | 2 |
-| 27-29 | Arms | Two-Handed Weapon Specialization | 3 |
-| 30 | Arms | Spearing Strike | 1 |
-| 31-35 | Arms | Bloodthrill | 5 |
-| 36-38 | Arms | Weaponmaster | 3 |
-| 39 | Arms | Sweeping Strikes | 1 |
-| 40 | Arms | Mortal Strike | 1 |
-| 41-45 | Fury | Cruelty | 5 |
-| 46-50 | Fury | Unbridled Wrath | 5 |
-| 51 | Fury | Piercing Howl | 1 |
-| 52-54 | Fury | Blood Craze | 3 |
-| 55 | Fury | Boundless Rage | 1 |
-| 56-60 | Fury | Enrage | 5 |
-
-Respec plan: **66.1 h** (26.5% faster than talentless), 1 respec(s).
+Respec plan: **65.6 h** (27.1% faster than talentless), 0 respec(s).
 
 ## What each bracket feels like
 

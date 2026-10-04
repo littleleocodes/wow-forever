@@ -30,8 +30,8 @@ Total: **35.7 h** (60.3% faster than talentless), 0 respec(s).
 
 - **Levels 10-60: fire-leveling -> level-20 build (0/0/11)**
   - at level 10: **Frost**: Elemental Precision 1
-  - at level 60: **Frost**: Elemental Precision 5, Permafrost 3, Frostbite 3, Ice Lance 1, Piercing Ice 3, Ice Block 1; **Fire**: Improved Fireball 5, Ignite 5, Burning Soul 3, Impact 3, Flame Throwing 2, Improved Scorch 3, Critical Mass 3, Blast Wave 1, Fire Power 5, Combustion 1, Pyroblast 1, Hot Streak 1, Master of Elements 2
-  - order: 10-14 Elemental Precision x5, 15-16 Permafrost x2, 17-19 Frostbite x3, 20 Ice Lance, 21-25 Improved Fireball x5, 26-30 Ignite x5, 31-33 Burning Soul x3, 34-36 Impact x3, 37-38 Flame Throwing x2, 39-40 Improved Scorch x2, 41 Critical Mass, 42 Blast Wave, 43 Improved Scorch, 44-45 Critical Mass x2, 46-50 Fire Power x5, 51 Combustion, 52 Pyroblast, 53 Hot Streak, 54-55 Master of Elements x2, 56 Permafrost, 57-59 Piercing Ice x3, 60 Ice Block
+  - at level 60: **Frost**: Elemental Precision 5, Permafrost 3, Frostbite 3, Ice Lance 1, Piercing Ice 3, Ice Block 1; **Fire**: Improved Fireball 5, Ignite 5, Burning Soul 3, Impact 3, Flame Throwing 2, Improved Scorch 3, Critical Mass 3, Blast Wave 1, Fire Power 5, Combustion 1, Master of Elements 3, Pyroblast 1
+  - order: 10-14 Elemental Precision x5, 15-16 Permafrost x2, 17-19 Frostbite x3, 20 Ice Lance, 21-25 Improved Fireball x5, 26-30 Ignite x5, 31-33 Burning Soul x3, 34-36 Impact x3, 37-38 Flame Throwing x2, 39-40 Improved Scorch x2, 41 Critical Mass, 42 Blast Wave, 43 Improved Scorch, 44-45 Critical Mass x2, 46-50 Fire Power x5, 51 Combustion, 52-54 Master of Elements x3, 55 Pyroblast, 56 Permafrost, 57-59 Piercing Ice x3, 60 Ice Block
 
 Total: **42.4 h** (52.9% faster than talentless), 0 respec(s).
 
@@ -44,11 +44,11 @@ Total: **42.4 h** (52.9% faster than talentless), 0 respec(s).
 | frost-leveling -> level-20 build (0/0/11) | 36.1 | +0.3 h |
 | frost-leveling -> level-40 build (0/0/31) | 36.1 | +0.3 h |
 | frost-leveling -> level-50 build (0/3/38) | 36.1 | +0.3 h |
-| fire-leveling -> level-20 build (0/0/11) | 42.4 | +6.6 h |
-| fire-leveling -> level-30 build (0/10/11) | 45.4 | +9.6 h |
+| fire-leveling -> level-20 build (0/0/11) | 42.4 | +6.7 h |
+| fire-leveling -> level-30 build (0/10/11) | 45.4 | +9.7 h |
 | fire-leveling -> level-40 build (0/15/16) | 48.1 | +12.3 h |
-| fire-leveling -> level-50 build (0/30/11) | 54.7 | +19.0 h |
-| fire-leveling -> level-60 build (0/33/18) | 55.7 | +19.9 h |
+| fire-leveling -> level-50 build (0/30/11) | 54.8 | +19.0 h |
+| fire-leveling -> level-60 build (0/32/19) | 54.9 | +19.2 h |
 
 ## Leveling score by level (fraction of time per kill saved)
 
@@ -59,11 +59,11 @@ Total: **42.4 h** (52.9% faster than talentless), 0 respec(s).
 | frost-leveling -> level-40 build (0/0/31) | +3.0% | +18.5% | +46.2% | +51.5% | +56.8% | +63.2% | +65.8% | +66.6% | +67.0% | +67.1% | +67.6% |
 | frost-leveling -> level-50 build (0/3/38) | +3.0% | +18.5% | +46.2% | +51.5% | +56.8% | +63.2% | +65.8% | +66.6% | +67.0% | +67.1% | +67.6% |
 | frost-leveling -> level-60 build (12/3/36) | +3.0% | +18.5% | +46.2% | +51.5% | +56.8% | +63.2% | +65.8% | +66.6% | +66.9% | +67.2% | +68.0% |
-| fire-leveling -> level-20 build (0/0/11) | +0.7% | +3.6% | +42.8% | +44.0% | +52.7% | +54.5% | +55.5% | +56.5% | +60.1% | +63.0% | +64.3% |
-| fire-leveling -> level-30 build (0/10/11) | +0.7% | +3.6% | +14.9% | +20.7% | +52.7% | +54.5% | +55.5% | +56.5% | +60.1% | +63.0% | +64.3% |
-| fire-leveling -> level-40 build (0/15/16) | +0.7% | +3.6% | +14.9% | +21.7% | +24.0% | +54.5% | +55.8% | +56.8% | +57.8% | +61.4% | +64.3% |
-| fire-leveling -> level-50 build (0/30/11) | +0.5% | +6.7% | +19.6% | +21.6% | +23.8% | +26.4% | +32.1% | +34.1% | +60.1% | +63.0% | +64.3% |
-| fire-leveling -> level-60 build (0/33/18) | +0.5% | +6.7% | +19.6% | +21.6% | +23.8% | +26.3% | +36.0% | +38.0% | +38.8% | +62.8% | +64.6% |
+| fire-leveling -> level-20 build (0/0/11) | +0.7% | +3.6% | +42.8% | +44.0% | +52.7% | +54.5% | +55.5% | +56.5% | +60.1% | +63.0% | +64.2% |
+| fire-leveling -> level-30 build (0/10/11) | +0.7% | +3.6% | +14.9% | +20.7% | +52.7% | +54.5% | +55.5% | +56.5% | +60.1% | +63.0% | +64.2% |
+| fire-leveling -> level-40 build (0/15/16) | +0.7% | +3.6% | +14.9% | +21.7% | +24.0% | +54.5% | +55.8% | +56.8% | +57.8% | +61.4% | +64.2% |
+| fire-leveling -> level-50 build (0/30/11) | +0.5% | +6.7% | +19.6% | +21.6% | +23.8% | +26.3% | +32.0% | +34.0% | +60.1% | +63.0% | +64.2% |
+| fire-leveling -> level-60 build (0/32/19) | +0.5% | +6.7% | +19.6% | +21.6% | +23.8% | +26.3% | +36.0% | +38.0% | +38.6% | +62.7% | +64.6% |
 
 ## Reading it
 

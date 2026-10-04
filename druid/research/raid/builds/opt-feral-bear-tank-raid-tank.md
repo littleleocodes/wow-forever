@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-bear-tank` and profile `raid-tank`: score +53.8% (tank score: 0.5 x threat gain + 0.5 x mitigation gain + 0.1 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-bear-tank` and profile `raid-tank`: score +53.4% (tank score: 0.5 x threat gain + 0.5 x mitigation gain + 0.1 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -30,10 +30,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-be
 | **Thick Hide** | 3/3 | changed | While in Bear Form, Cat Form, Dire Bear Form, or Moonkin Form, you gain 3 additional base Armor per level and another 2.00 base Armor for each point of defense skill beyond five times your level. This amount can be further increased by multipliers from those forms. |
 | **Feral Swiftness** | 2/2 | **NEW** | Increases your movement speed while in Cat Form by 30%, and increases your chance to Dodge by 4%. |
 | **Sharpened Claws** | 2/2 | changed | Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by 6%. |
+| **Shredding Attacks** | 3/3 | **NEW** | Reduces the Energy cost of your Shred ability by 18 and reduces the Rage cost of your Lacerate ability by 3. |
 | **Feral Charge** | 1/1 | changed | Charge an enemy, immobilizing them and interrupting any spell they are casting for 4 sec.  Leap behind an enemy. |
 | **Savage Fury** | 2/2 | changed | Increases the damage caused by your Claw, Rake, Shred, Maul, and Swipe abilities by 10%. |
 | **Blood Frenzy** | 2/2 | changed | Gives you a 100% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 100% chance to add an additional Combo Point. |
-| **Shredding Attacks** | 3/3 | **NEW** | Reduces the Energy cost of your Shred ability by 18 and reduces the Rage cost of your Lacerate ability by 3. |
 | **Predatory Strikes** | 3/3 | changed | Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 150% of your level. |
 | **Predatory Instincts** | 2/2 | **NEW** | Increases the critical strike damage bonus of your melee abilities by 20%. |
 | **Natural Reaction** | 5/5 | **NEW** | Increases your dodge chance by 5%, and gives you a 100% chance to gain 5 Rage each time you dodge. |
@@ -49,7 +49,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-be
 ## Core talents (priority order)
 
 1. **Blood Frenzy** — Removing it costs 10.0 points of score in this model.
-2. **Shredding Attacks** — Removing it costs 9.2 points of score in this model.
+2. **Shredding Attacks** — Removing it costs 9.0 points of score in this model.
 3. **Thick Hide** — Removing it costs 8.0 points of score in this model.
 4. **Natural Reaction** — Removing it costs 7.2 points of score in this model.
 5. **Sharpened Claws** — Removing it costs 6.7 points of score in this model.
@@ -59,13 +59,13 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-be
 
 ## Rank among our builds and the community simulator's
 
-**2 of 3** for `feral-bear-tank` by tank value in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 3** for `feral-bear-tank` by tank value in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`feral-bear-tank`](feral-bear-tank.md) | ours: hand draft | 7/35/9 | 1.000 | +0.0% | 802 | 990 |
-| 2 | **[`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md)** | ours: optimizer | 7/35/9 | 1.000 | +0.0% | 802 | 990 |
-| 3 | *Bear Tank 0/31/20* | community simulator | - | 0.859 | -14.1% | 614 | 1040 |
+| 1 | [`feral-bear-tank`](feral-bear-tank.md) | ours: hand draft | 7/35/9 | 1.000 | +0.0% | 830 | 992 |
+| 2 | **[`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md)** | ours: optimizer | 7/35/9 | 1.000 | +0.0% | 830 | 992 |
+| 3 | *Bear Tank 0/31/20* | community simulator | - | 0.863 | -13.7% | 641 | 1040 |
 
 ## Rotation (community simulator, raid setting)
 
@@ -77,10 +77,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-be
 | # | Priority (the first line whose condition holds is cast) | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) casts/min |
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
-| 2 | if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate | 38.0 |
-| 3 | if rage ≥ 50: cast Maul | 1.5 |
+| 2 | if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate | 38.5 |
+| 3 | if rage ≥ 50: cast Maul | 3.1 |
 | 4 | cast Barkskin | 1.0 |
-| 5 | cast Lacerate | 38.0 |
+| 5 | cast Lacerate | 38.5 |
 
 Lines of the simulator's rotation these builds never cast: cast Faerie Fire, cast Demoralizing Roar (its condition never held in these fights); cast Primal Bite (needs the Primal Bite talent).
 
@@ -88,9 +88,9 @@ Damage by ability (threat for tanks):
 
 | Ability | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) |
 |---|---|
-| Lacerate | 76% |
-| Auto Attack | 16% |
-| Maul | 4% |
+| Lacerate | 74% |
+| Auto Attack | 15% |
+| Maul | 7% |
 | OtherActionRageGain | 2% |
 | Retribution Aura | 1% |
 | Thorns | 1% |

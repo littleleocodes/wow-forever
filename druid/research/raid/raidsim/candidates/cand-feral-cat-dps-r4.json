@@ -17,23 +17,15 @@
   ],
   "Feral Combat": [
    [
-    "Heart of the Wild",
-    5
-   ],
-   [
     "Ferocity",
     5
    ],
    [
+    "Heart of the Wild",
+    5
+   ],
+   [
     "Feral Swiftness",
-    1
-   ],
-   [
-    "Sharpened Claws",
-    2
-   ],
-   [
-    "Savage Fury",
     2
    ],
    [
@@ -41,7 +33,11 @@
     3
    ],
    [
-    "Blood Frenzy",
+    "Savage Fury",
+    2
+   ],
+   [
+    "Sharpened Claws",
     2
    ],
    [
@@ -49,12 +45,12 @@
     3
    ],
    [
-    "Leader of the Pack",
-    1
+    "Blood Frenzy",
+    2
    ],
    [
-    "King of the Jungle",
-    3
+    "Leader of the Pack",
+    1
    ],
    [
     "Predatory Instincts",
@@ -62,7 +58,7 @@
    ],
    [
     "Rend and Tear",
-    2
+    4
    ],
    [
     "Berserk",
@@ -80,5 +76,8 @@
    ]
   ]
  },
- "note": "Optimizer raid build saved by rebuild.py on 2026-09-26 (raid calibration round 2)"
+ "note": "Optimizer raid build saved by rebuild.py on 2026-09-26 (raid calibration round 2)",
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

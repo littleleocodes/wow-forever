@@ -1,6 +1,6 @@
-# Warrior — WoW: Forever talent trees (beta client 1.60.1.70009)
+# Warrior — WoW: Forever talent trees (beta client 1.60.1.70170)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70009, captured 2026-09-25. World of Warcraft: Forever beta client, build 1.60.1.70009: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-09-24, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70009; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70170, captured 2026-10-03. World of Warcraft: Forever beta client, build 1.60.1.70170: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-03, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70205; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -9,8 +9,8 @@
 | Tree | Talents | New | Changed | Moved | Unchanged | Removed from Classic |
 |---|---|---|---|---|---|---|
 | Arms | 17 | 4 | 8 | 1 | 4 | 5 |
-| Fury | 18 | 3 | 14 | 0 | 1 | 2 |
-| Protection | 18 | 4 | 12 | 0 | 2 | 3 |
+| Fury | 17 | 2 | 14 | 0 | 1 | 2 |
+| Protection | 18 | 5 | 12 | 0 | 1 | 3 |
 
 ## Arms
 
@@ -41,7 +41,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Spearing Strike** | 1 | — | **NEW** | A brutal attack that deals 40% weapon damage. Deals an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted. | — |
+| **Spearing Strike** | 1 | — | **NEW** | A brutal attack that deals 40% weapon damage, plus an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. | — |
 | **Two-Handed Weapon Specialization** | 3 | — | changed | Increases the damage you deal with two-handed melee weapons by 1%. | Increases the damage you deal with two-handed melee weapons by 3%. |
 | **Impale** | 2 | — | changed | Increases the critical strike damage bonus of your abilities by 10%. | Increases the critical strike damage bonus of your abilities by 20%. |
 
@@ -57,7 +57,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Improved Slam** | 2 | — | changed | Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 1.5 sec. | Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3 sec. |
+| **Improved Slam** | 2 | — | changed | Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3.0 sec. | Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3 sec. |
 | **Improved Hamstring** | 3 | — | unchanged | Gives your Hamstring ability a 5% chance to immobilize the target for 5 sec. | Gives your Hamstring ability a 15% chance to immobilize the target for 5 sec. |
 
 ### Tier 7 — requires 30 points in Arms
@@ -74,31 +74,30 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Booming Voice** | 5 | — | changed | Increases the radius of your Battle Shout and Demoralizing Shout abilities by 10%. | Increases the radius of your Battle Shout and Demoralizing Shout abilities by 50%. |
+| **Booming Voice** | 5 | — | changed | Increases the area of effect of your Shouts by 10% and reduces their Rage cost by 5%. | Increases the area of effect of your Shouts by 50% and reduces their Rage cost by 25%. |
 | **Cruelty** | 5 | — | changed | Improves your chance to get a critical strike with melee attacks by 1%. | Improves your chance to get a critical strike with melee attacks by 5%. |
 
 ### Tier 2 — requires 5 points in Fury
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Iron Will** | 5 | — | changed | Reduces the duration of Stun and Fear effects inflicted on you by 3%. | Reduces the duration of Stun and Fear effects inflicted on you by 15%. |
-| **Unbridled Wrath** | 5 | — | changed | Gives you a 12% chance to generate 1 additional Rage when you deal melee damage with a weapon. This effect is increased to 2 Rage for two-handed weapons. | Gives you a 60% chance to generate 1 additional Rage when you deal melee damage with a weapon. This effect is increased to 2 Rage for two-handed weapons. |
+| **Lingering Rage** | 5 | — | changed | Increases the time before your Rage begins to decay after leaving combat by 2 sec. | Increases the time before your Rage begins to decay after leaving combat by 10 sec. |
+| **Unbridled Wrath** | 5 | — | changed | Gives you a 12% chance to generate 1 additional Rage when you deal melee damage with a weapon. | Gives you a 60% chance to generate 1 additional Rage when you deal melee damage with a weapon. |
 
 ### Tier 3 — requires 10 points in Fury
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Improved Cleave** | 3 | — | changed | Reduces the Rage cost of your Cleave ability by 1. | Reduces the Rage cost of your Cleave ability by 3. |
-| **Piercing Howl** | 1 | — | changed | Causes all nearby enemies to be Dazed, reducing movement speed by 50% for 6 sec. | — |
-| **Blood Craze** | 3 | — | changed | Regenerates 1% of your total Health over 6 sec after being the victim of a critical strike, dealing damage with Bloodthirst, or suffering more than 20% of your maximum Health from a single attack. | Regenerates 3% of your total Health over 6 sec after being the victim of a critical strike, dealing damage with Bloodthirst, or suffering more than 20% of your maximum Health from a single attack. |
-| **Boundless Rage** | 3 | — | **NEW** | Increases your maximum Rage by 10. | Increases your maximum Rage by 30. |
+| **Furious Precision** | 3 | — | changed | Increases your chance to hit with off-hand attacks by 4%. | Increases your chance to hit with off-hand attacks by 10%. |
+| **Piercing Howl** | 1 | — | changed | Causes all enemies within 10 yds to be Dazed, reducing movement speed by 50% for 6 sec. | — |
+| **Blood Craze** | 3 | — | changed | Regenerates 1% of your total Health over 6 sec after being the victim of a critical strike or suffering more than 20% of your maximum Health from a single attack. | Regenerates 3% of your total Health over 6 sec after being the victim of a critical strike or suffering more than 20% of your maximum Health from a single attack. |
 
 ### Tier 4 — requires 15 points in Fury
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Dual Wield Specialization** | 5 | — | changed | Increases your off-hand weapon damage by 5%, off-hand Rage generation by 20%, and chance to hit with off-hand attacks by 2%. | Increases your off-hand weapon damage by 25%, off-hand Rage generation by 100%, and chance to hit with off-hand attacks by 10%. |
-| **Raging Blows** | 1 | — | **NEW** | Causes your Whirlwind to also strike with your off-hand weapon, and reduces the Rage cost of your Cleave ability by 2. | — |
+| **Dual Wield Specialization** | 5 | — | changed | Increases the damage done by your off-hand weapon by 5% and the Rage generated by your off-hand attacks by 10%. | Increases the damage done by your off-hand weapon by 25% and the Rage generated by your off-hand attacks by 50%. |
+| **Raging Blows** | 1 | — | **NEW** | Reduces the Rage cost of your Cleave and Whirlwind abilities by 3. | — |
 | **Enrage** | 5 | — | changed | Gives you a 30% chance to deal 2% increased Physical damage for 12 sec after being the victim of any damaging attack. | Gives you a 30% chance to deal 10% increased Physical damage for 12 sec after being the victim of any damaging attack. |
 | **Improved Execute** | 2 | — | changed | Reduces the Rage cost of your Execute ability by 3. | Reduces the Rage cost of your Execute ability by 5. |
 
@@ -106,7 +105,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Precision** | 3 | — | **NEW** | Improves your chance to hit by 1%. | Improves your chance to hit by 3%. |
+| **Improved Berserker Rage** | 2 | — | changed | Your Berserker Rage ability will instantly generate 5 Rage and has a 50% chance to remove all movement impairing effects when activated. | Your Berserker Rage ability will instantly generate 10 Rage and has a 100% chance to remove all movement impairing effects when activated. |
 | **Death Wish** | 1 | — | changed | When activated, increases your Physical damage done by 20% and makes you immune to Fear effects, but increases all damage you take by 5%. Lasts 30 sec. | — |
 | **Improved Intercept** | 2 | — | unchanged | Reduces the cooldown of your Intercept ability by 5 sec. | Reduces the cooldown of your Intercept ability by 10 sec. |
 
@@ -114,14 +113,14 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Improved Berserker Rage** | 2 | — | changed | Your Berserker Rage ability will instantly generate 5 Rage and has a 50% chance to remove all movement impairing effects when activated. | Your Berserker Rage ability will instantly generate 10 Rage and has a 100% chance to remove all movement impairing effects when activated. |
-| **Flurry** | 5 | Enrage (5) | changed | Increases your melee attack speed by 5% for your next 3 swings after dealing a melee critical strike. | Increases your melee attack speed by 25% for your next 3 swings after dealing a melee critical strike. |
+| **Flurry** | 5 | Death Wish (1) | changed | Increases your melee attack speed by 5% for your next 3 swings after dealing a melee critical strike. | Increases your melee attack speed by 25% for your next 3 swings after dealing a melee critical strike. |
+| **Gore Drinker** | 2 | Enrage (5) | **NEW** | Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore 0.5% of your maximum Health. | Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore 1% of your maximum Health. |
 
 ### Tier 7 — requires 30 points in Fury
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Bloodthirst** | 1 | Death Wish (1) | changed | Instantly attack the target causing damage equal to 35% of your Attack Power plus 30 and increasing your movement speed by 10% for 10 sec. | — |
+| **Bloodthirst** | 1 | — | changed | Instantly attack the target causing damage equal to 45% of your Attack Power plus 30 and increasing your movement speed by 10% for 10 sec. | — |
 
 **Removed from Classic Fury:** Improved Demoralizing Shout, Improved Battle Shout
 
@@ -131,24 +130,25 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
+| **Improved Bloodrage** | 2 | — | changed | Increases all the Rage generated by your Bloodrage ability by 25%. | Increases all the Rage generated by your Bloodrage ability by 50%. |
 | **Shield Specialization** | 5 | — | changed | Increases your chance to Block attacks with your shield by 1% and grants you a 20% chance to generate 5 Rage when you Block. | Increases your chance to Block attacks with your shield by 5% and grants you a 100% chance to generate 5 Rage when you Block. |
-| **Anticipation** | 5 | — | changed | Increases your Defense Skill by 4. | Increases your Defense Skill by 20. |
+| **Iron Will** | 5 | — | **NEW** | Reduces the duration of Stun and Fear effects inflicted on you by 3%. | Reduces the duration of Stun and Fear effects inflicted on you by 15%. |
 
 ### Tier 2 — requires 5 points in Protection
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Improved Bloodrage** | 2 | — | changed | Increases all the Rage generated by your Bloodrage ability by 25%. | Increases all the Rage generated by your Bloodrage ability by 50%. |
-| **Toughness** | 5 | — | unchanged | Increases your Armor value from items by 2%. | Increases your Armor value from items by 10%. |
+| **Anticipation** | 5 | — | changed | Increases your Defense Skill by 4. | Increases your Defense Skill by 20. |
+| **Improved Revenge** | 3 | — | changed | Increases damage dealt by your Revenge ability by 20%. | Increases damage dealt by your Revenge ability by 60%. |
 | **Improved Thunder Clap** | 3 | — | changed | Reduces the Rage cost of your Thunder Clap ability by 2. | Reduces the Rage cost of your Thunder Clap ability by 6. |
 
 ### Tier 3 — requires 10 points in Protection
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Last Stand** | 1 | Improved Bloodrage (2) | changed | When activated, this ability temporarily grants you 30% of your maximum health for 20 sec. After the effect expires, the health is lost. | — |
+| **Last Stand** | 1 | — | changed | When activated, this ability temporarily grants you 30% of your maximum health for 20 sec. After the effect expires, the health is lost. | — |
 | **Master of Defense** | 2 | Shield Specialization (5) | **NEW** | Grants you a 50% chance to generate 5 Rage when you Dodge or Parry while a shield is equipped. | Grants you a 100% chance to generate 5 Rage when you Dodge or Parry while a shield is equipped. |
-| **Improved Revenge** | 3 | — | changed | Increases damage dealt by your Revenge ability by 20%. | Increases damage dealt by your Revenge ability by 60%. |
+| **Improved Disarm** | 3 | — | changed | Reduces the cooldown of your Disarm ability by 7 secs. | Reduces the cooldown of your Disarm ability by 20 secs. |
 | **Defiance** | 3 | — | changed | Increases all threat generated in Defensive stance by an additional 5% while a shield is equipped. | Increases all threat generated in Defensive stance by an additional 15% while a shield is equipped. |
 
 ### Tier 4 — requires 15 points in Protection
@@ -156,8 +156,8 @@
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Improved Sunder Armor** | 3 | — | changed | Reduces the Rage cost of your Sunder Armor ability by 1. | Reduces the Rage cost of your Sunder Armor ability by 3. |
-| **Improved Disarm** | 3 | — | changed | Reduces the cooldown of your Disarm ability by 7 secs. | Reduces the cooldown of your Disarm ability by 20 secs. |
 | **Vanguard** | 1 | — | **NEW** | Your Charge ability is now usable while in Defensive Stance. | — |
+| **Improved Shield Bash** | 2 | — | unchanged | Gives your Shield Bash ability a 50% chance to Silence the target for 3 sec. | Gives your Shield Bash ability a 100% chance to Silence the target for 3 sec. |
 
 ### Tier 5 — requires 20 points in Protection
 
@@ -165,14 +165,13 @@
 |---|---|---|---|---|---|
 | **Improved Shield Wall** | 2 | — | changed | Reduces the cooldown of your Shield Wall ability by 5.5 min. | Reduces the cooldown of your Shield Wall ability by 11 min. |
 | **Concussion Blow** | 1 | — | changed | Stuns the target for 5 sec. | — |
-| **Improved Shield Bash** | 2 | — | unchanged | Gives your Shield Bash ability a 50% chance to Silence the target for 3 sec. | Gives your Shield Bash ability a 100% chance to Silence the target for 3 sec. |
-| **Bastion** | 5 | — | **NEW** | Increases all damage you deal by 2% while a shield is equipped. | Increases all damage you deal by 10% while a shield is equipped. |
+| **Focused Rage** | 3 | — | **NEW** | Reduces the Rage cost of your offensive abilities by 1. | Reduces the Rage cost of your offensive abilities by 3. |
 
 ### Tier 6 — requires 25 points in Protection
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Focused Rage** | 3 | — | **NEW** | Reduces the Rage cost of your offensive abilities by 1. | Reduces the Rage cost of your offensive abilities by 3. |
+| **Bastion** | 5 | — | **NEW** | Increases all damage you deal by 2% while a shield is equipped. | Increases all damage you deal by 10% while a shield is equipped. |
 
 ### Tier 7 — requires 30 points in Protection
 
@@ -209,84 +208,84 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Impale** (tooltip changed)
   - Classic: Increases the critical strike damage bonus of your abilities in Battle, Defensive, and Berserker stance by 10%.
   - Forever: Increases the critical strike damage bonus of your abilities by 10%.
-- **Improved Slam** (max rank 5 → 2, tooltip changed, was Fury row 5, col 1, tooltip changed in build 1.60.1.70009 (ranks 1, 2))
+- **Improved Slam** (max rank 5 → 2, tooltip changed, was Fury row 5, col 1, tooltip changed in build 1.60.1.70170 (ranks 1, 2))
   - Classic: Decreases the casting time of your Slam ability by 0 sec.
-  - Forever: Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 1.5 sec.
+  - Forever: Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3.0 sec.
 
 ### Fury
 
-- **Booming Voice** (tooltip changed)
+- **Booming Voice** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5))
   - Classic: Increases the area of effect and duration of your Battle Shout and Demoralizing Shout by 10%.
-  - Forever: Increases the radius of your Battle Shout and Demoralizing Shout abilities by 10%.
+  - Forever: Increases the area of effect of your Shouts by 10% and reduces their Rage cost by 5%.
 - **Cruelty** (tooltip changed)
   - Classic: Increases your chance to get a critical strike with melee weapons by 1%.
   - Forever: Improves your chance to get a critical strike with melee attacks by 1%.
-- **Iron Will** (tooltip changed, was Protection row 2, col 4)
+- **Lingering Rage** (tooltip changed, was Protection row 2, col 4, renamed from Iron Will in build 1.60.1.70170, tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5))
   - Classic: Increases your chance to resist Stun and Charm effects by an additional 3%.
-  - Forever: Reduces the duration of Stun and Fear effects inflicted on you by 3%.
-- **Unbridled Wrath** (tooltip changed)
+  - Forever: Increases the time before your Rage begins to decay after leaving combat by 2 sec.
+- **Unbridled Wrath** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5))
   - Classic: Gives you a 8% chance to generate an additional Rage point when you deal melee damage with a weapon.
-  - Forever: Gives you a 12% chance to generate 1 additional Rage when you deal melee damage with a weapon. This effect is increased to 2 Rage for two-handed weapons.
-- **Improved Cleave** (tooltip changed)
+  - Forever: Gives you a 12% chance to generate 1 additional Rage when you deal melee damage with a weapon.
+- **Furious Precision** (tooltip changed, renamed from Improved Cleave in build 1.60.1.70170, tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3))
   - Classic: Increases the bonus damage done by your Cleave ability by 40%.
-  - Forever: Reduces the Rage cost of your Cleave ability by 1.
-- **Piercing Howl** (tooltip changed)
+  - Forever: Increases your chance to hit with off-hand attacks by 4%.
+- **Piercing Howl** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1))
   - Classic: Causes all enemies near the warrior to be dazed, reducing movement speed by 50% for 6 sec.
-  - Forever: Causes all nearby enemies to be Dazed, reducing movement speed by 50% for 6 sec.
-- **Blood Craze** (tooltip changed)
+  - Forever: Causes all enemies within 10 yds to be Dazed, reducing movement speed by 50% for 6 sec.
+- **Blood Craze** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3))
   - Classic: Regenerates 1% of your total Health over 6 sec after being the victim of a critical strike.
-  - Forever: Regenerates 1% of your total Health over 6 sec after being the victim of a critical strike, dealing damage with Bloodthirst, or suffering more than 20% of your maximum Health from a single attack.
-- **Dual Wield Specialization** (tooltip changed)
+  - Forever: Regenerates 1% of your total Health over 6 sec after being the victim of a critical strike or suffering more than 20% of your maximum Health from a single attack.
+- **Dual Wield Specialization** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5))
   - Classic: Increases the damage done by your offhand weapon by 5%.
-  - Forever: Increases your off-hand weapon damage by 5%, off-hand Rage generation by 20%, and chance to hit with off-hand attacks by 2%.
+  - Forever: Increases the damage done by your off-hand weapon by 5% and the Rage generated by your off-hand attacks by 10%.
 - **Enrage** (tooltip changed)
   - Classic: Gives you a 5% melee damage bonus for 12 sec up to a maximum of 12 swings after being the victim of a critical strike.
   - Forever: Gives you a 30% chance to deal 2% increased Physical damage for 12 sec after being the victim of any damaging attack.
 - **Improved Execute** (tooltip changed, was Fury row 4, col 2)
   - Classic: Reduces the Rage cost of your Execute ability by 2.
   - Forever: Reduces the Rage cost of your Execute ability by 3.
+- **Improved Berserker Rage** (tooltip changed, moved in build 1.60.1.70170: was row 6, col 1)
+  - Classic: The Berserker Rage ability will generate 5 rage when used.
+  - Forever: Your Berserker Rage ability will instantly generate 5 Rage and has a 50% chance to remove all movement impairing effects when activated.
 - **Death Wish** (tooltip changed)
   - Classic: When activated, increases your physical damage by 20% and makes you immune to Fear effects, but lowers your armor and all resistances by 20%. Lasts 30 sec.
   - Forever: When activated, increases your Physical damage done by 20% and makes you immune to Fear effects, but increases all damage you take by 5%. Lasts 30 sec.
-- **Improved Berserker Rage** (tooltip changed)
-  - Classic: The Berserker Rage ability will generate 5 rage when used.
-  - Forever: Your Berserker Rage ability will instantly generate 5 Rage and has a 50% chance to remove all movement impairing effects when activated.
-- **Flurry** (tooltip changed)
+- **Flurry** (tooltip changed, moved in build 1.60.1.70170: was row 6, col 3, prerequisite changed in build 1.60.1.70170: was enrage)
   - Classic: Increases your attack speed by 10% for your next 3 swings after dealing a melee critical strike.
   - Forever: Increases your melee attack speed by 5% for your next 3 swings after dealing a melee critical strike.
-- **Bloodthirst** (tooltip changed)
+- **Bloodthirst** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1), prerequisite changed in build 1.60.1.70170: was death wish)
   - Classic: Instantly attack the target causing damage equal to 45% of your attack power. In addition, the next 5 successful melee attacks will restore 10 health. This effect lasts 8 sec.
-  - Forever: Instantly attack the target causing damage equal to 35% of your Attack Power plus 30 and increasing your movement speed by 10% for 10 sec.
+  - Forever: Instantly attack the target causing damage equal to 45% of your Attack Power plus 30 and increasing your movement speed by 10% for 10 sec.
 
 ### Protection
 
+- **Improved Bloodrage** (tooltip changed, moved in build 1.60.1.70170: was row 2, col 1)
+  - Classic: Increases the instant Rage generated by your Bloodrage ability by 2.
+  - Forever: Increases all the Rage generated by your Bloodrage ability by 25%.
 - **Shield Specialization** (tooltip changed)
   - Classic: Increases your chance to block attacks with a shield by 1% and has a 20% chance to generate 1 rage when a block occurs.
   - Forever: Increases your chance to Block attacks with your shield by 1% and grants you a 20% chance to generate 5 Rage when you Block.
-- **Anticipation** (tooltip changed)
+- **Anticipation** (tooltip changed, moved in build 1.60.1.70170: was row 1, col 3)
   - Classic: Increases your Defense skill by 2.
   - Forever: Increases your Defense Skill by 4.
-- **Improved Bloodrage** (tooltip changed)
-  - Classic: Increases the instant Rage generated by your Bloodrage ability by 2.
-  - Forever: Increases all the Rage generated by your Bloodrage ability by 25%.
+- **Improved Revenge** (tooltip changed, moved in build 1.60.1.70170: was row 3, col 3)
+  - Classic: Gives your Revenge ability a 15% chance to stun the target for 3 sec.
+  - Forever: Increases damage dealt by your Revenge ability by 20%.
 - **Improved Thunder Clap** (tooltip changed, was Arms row 2, col 4)
   - Classic: Reduces the cost of your Thunder Clap ability by 1 rage point.
   - Forever: Reduces the Rage cost of your Thunder Clap ability by 2.
-- **Last Stand** (tooltip changed)
+- **Last Stand** (tooltip changed, prerequisite changed in build 1.60.1.70170: was improved bloodrage)
   - Classic: When activated, this ability temporarily grants you 30% of your maximum hit points for 20 seconds. After the effect expires, the hit points are lost.
   - Forever: When activated, this ability temporarily grants you 30% of your maximum health for 20 sec. After the effect expires, the health is lost.
-- **Improved Revenge** (tooltip changed)
-  - Classic: Gives your Revenge ability a 15% chance to stun the target for 3 sec.
-  - Forever: Increases damage dealt by your Revenge ability by 20%.
+- **Improved Disarm** (tooltip changed, moved in build 1.60.1.70170: was row 4, col 2)
+  - Classic: Increases the duration of your Disarm ability by 1 secs.
+  - Forever: Reduces the cooldown of your Disarm ability by 7 secs.
 - **Defiance** (max rank 5 → 3, tooltip changed)
   - Classic: Increases the threat generated by your attacks by 3% while in Defensive Stance.
   - Forever: Increases all threat generated in Defensive stance by an additional 5% while a shield is equipped.
 - **Improved Sunder Armor** (tooltip changed)
   - Classic: Reduces the cost of your Sunder Armor ability by 1 rage point.
   - Forever: Reduces the Rage cost of your Sunder Armor ability by 1.
-- **Improved Disarm** (tooltip changed)
-  - Classic: Increases the duration of your Disarm ability by 1 secs.
-  - Forever: Reduces the cooldown of your Disarm ability by 7 secs.
 - **Improved Shield Wall** (tooltip changed)
   - Classic: Increases the effect duration of your Shield Wall ability by 3 secs.
   - Forever: Reduces the cooldown of your Shield Wall ability by 5.5 min.

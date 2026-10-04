@@ -9,11 +9,11 @@ Effect coverage: 1 parsed from tooltips, 49 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Elemental Alacrity | Elemental | 3 | +6.19% | manual |
+| Elemental Alacrity | Elemental | 3 | +6.18% | manual |
 | Mental Quickness | Enhancement | 5 | +4.64% | manual |
 | Lava Burst | Elemental | 7 | +2.64% | manual |
 | Shamanistic Focus | Enhancement | 3 | +1.71% | manual |
-| Call of Flame | Elemental | 2 | +1.68% | manual |
+| Call of Flame | Elemental | 2 | +1.69% | manual |
 | Elemental Fury | Elemental | 6 | +1.62% | manual |
 | Tidal Focus | Restoration | 2 | +1.13% | manual |
 | Call of Thunder | Elemental | 4 | +1.12% | manual |
@@ -40,8 +40,8 @@ Effect coverage: 1 parsed from tooltips, 49 hand-entered, 0 missing (scored as 0
 | Elemental Warding | Elemental | 2 | +0.00% | manual |
 | Anticipation | Enhancement | 3 | +0.00% | manual |
 
-## Optimized build: 31/7/13  score +71.00%  (dps x1.684, sustain x1.126, surv x1.000, utility +0.00%)
-Absolute DPS index (character alone, no talents = 1.00): 1.462  — use this to compare models with different pet shares.
+## Optimized build: 31/7/13  score +70.97%  (dps x1.684, sustain x1.126, surv x1.000, utility +0.00%)
+Absolute DPS index (character alone, no talents = 1.00): 1.461  — use this to compare models with different pet shares.
 
 ```
   Elemental: Concussion 5, Convection 5, Call of Flame 3, Elemental Alacrity 3, Elemental Focus 1, Call of Thunder 1, Eye of the Storm 3, Lightning Overload 3, Elemental Reach 1, Elemental Fury 5, Lava Burst 1
@@ -53,7 +53,7 @@ Absolute DPS index (character alone, no talents = 1.00): 1.462  — use this to 
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Mental Quickness | Enhancement 5 | 1/2 | +7.82% | no |
+| Mental Quickness | Enhancement 5 | 1/2 | +7.81% | no |
 | Shamanistic Focus | Enhancement 3 | 1/1 | +1.71% | no |
 | Nature's Swiftness | Restoration 5 | 1/1 | +0.84% | no |
 | Mana Tide Totem | Restoration 4 | 1/1 | +0.25% | no |

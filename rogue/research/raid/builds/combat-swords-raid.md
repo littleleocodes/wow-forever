@@ -71,19 +71,19 @@ Allocation adopted on 2026-09-28 from the community simulator's own preset 'Impr
 
 ## Rank among our builds and the community simulator's
 
-**1 of 9** for `combat-swords-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 9** for `combat-swords-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`combat-swords-raid`](combat-swords-raid.md)** | ours: hand draft | 19/32/0 | 394 | +0.0% | 687 | -1.3% | 0 s |
-| 2 | *Improved Expose Armor (SS)* | community simulator | - | 394 | +0.0% | 687 | -1.3% | 0 s |
-| 3 | [`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 376 | -4.5% | 682 | -2.1% | 0 s |
-| 4 | *Sinister Strike* | community simulator | - | 371 | -5.7% | 696 | +0.0% | 0 s |
-| 5 | *Combat Dual-Wield 15/33/3* | community simulator | - | 365 | -7.4% | 682 | -2.0% | 0 s |
-| 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 340 | -13.6% | 618 | -11.2% | 0 s |
-| 7 | *Mutilate* | community simulator | - | 330 | -16.3% | 608 | -12.6% | 0 s |
-| 8 | *Backstab* | community simulator | - | 319 | -19.0% | 621 | -10.7% | 0 s |
-| 9 | *Subtlety Hemo 15/0/36* | community simulator | - | 302 | -23.4% | 536 | -23.0% | 0 s |
+| 1 | **[`combat-swords-raid`](combat-swords-raid.md)** | ours: hand draft | 19/32/0 | 393 | +0.0% | 731 | -1.3% | 0 s |
+| 2 | *Improved Expose Armor (SS)* | community simulator | - | 393 | +0.0% | 731 | -1.3% | 0 s |
+| 3 | [`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 376 | -4.4% | 726 | -2.0% | 0 s |
+| 4 | *Sinister Strike* | community simulator | - | 371 | -5.6% | 741 | +0.0% | 0 s |
+| 5 | *Combat Dual-Wield 15/33/3* | community simulator | - | 364 | -7.3% | 726 | -2.0% | 0 s |
+| 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 340 | -13.4% | 659 | -11.1% | 0 s |
+| 7 | *Mutilate* | community simulator | - | 329 | -16.2% | 648 | -12.5% | 0 s |
+| 8 | *Backstab* | community simulator | - | 319 | -18.9% | 665 | -10.2% | 0 s |
+| 9 | *Subtlety Hemo 15/0/36* | community simulator | - | 301 | -23.4% | 575 | -22.4% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

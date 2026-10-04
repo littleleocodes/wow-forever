@@ -11,15 +11,15 @@
     3
    ],
    [
-    "Improved Overpower",
-    2
-   ],
-   [
     "Improved Charge",
     2
    ],
    [
     "Improved Tactical Mastery",
+    2
+   ],
+   [
+    "Improved Overpower",
     2
    ],
    [
@@ -37,6 +37,10 @@
   ],
   "Fury": [
    [
+    "Booming Voice",
+    4
+   ],
+   [
     "Cruelty",
     5
    ],
@@ -49,24 +53,16 @@
     3
    ],
    [
-    "Boundless Rage",
-    2
-   ],
-   [
     "Enrage",
     5
    ],
    [
     "Improved Execute",
-    1
+    2
    ],
    [
     "Death Wish",
     1
-   ],
-   [
-    "Precision",
-    3
    ],
    [
     "Flurry",
@@ -195,5 +191,8 @@
    "points": 2
   }
  ],
- "note": "Optimizer build saved by rebuild.py on 2026-09-27 (calibration round 6)"
+ "note": "Optimizer build saved by rebuild.py on 2026-09-27 (calibration round 6)",
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

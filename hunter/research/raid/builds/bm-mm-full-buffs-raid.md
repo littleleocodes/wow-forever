@@ -34,11 +34,11 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `bm-mm-raid
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
 | **Efficiency** | 5/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
-| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party members within 45 yards by 30. Lasts 30 min. |
+| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party members within 45 yds by 30. |
 | **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
 | **Barrage** | 3/3 | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 10%. |
 | **Ranged Weapon Specialization** | 5/5 | unchanged | Increases the damage you deal with ranged weapons by 5%. |
-| **Improved Stings** | 1/3 | **NEW** | Increased the damage of your Serpent Sting ability by 6%, reduces the cooldown of your Viper Sting ability by 2 sec, and increases the duration of your Scorpid Sting ability by 15 sec. |
+| **Improved Stings** | 1/3 | **NEW** | Increases the damage of your Serpent Sting ability by 6%, reduces the cooldown of your Viper Sting ability by 2 sec, and increases the duration of your Scorpid Sting ability by 15 sec. |
 
 ### Survival (0)
 
@@ -69,17 +69,17 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `bm-mm-raid
 
 ## Rank among our builds and the community simulator's
 
-**3 of 7** for `mm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 7** for `mm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 457 | +0.0% | 785 | -2.4% | 71 s |
-| 2 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 22/29/0 | 457 | +0.0% | 785 | -2.4% | 71 s |
-| 3 | **[`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md)** | ours: hand draft | 21/30/0 | 425 | -6.8% | 771 | -4.1% | 79 s |
-| 4 | *Beast Mastery 35/16/0* | community simulator | - | 421 | -7.7% | 730 | -9.1% | 86 s |
-| 5 | *Marksmanship* | community simulator | - | 409 | -10.5% | 804 | +0.0% | 97 s |
-| 6 | *Marksmanship 0/39/12* | community simulator | - | 377 | -17.5% | 729 | -9.3% | 95 s |
-| 7 | *Survival 0/15/36* | community simulator | - | 353 | -22.6% | 649 | -19.3% | 87 s |
+| 1 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 478 | +0.0% | 823 | +0.0% | 71 s |
+| 2 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 22/29/0 | 478 | +0.0% | 823 | +0.0% | 71 s |
+| 3 | *Beast Mastery 35/16/0* | community simulator | - | 456 | -4.7% | 794 | -3.6% | 86 s |
+| 4 | **[`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md)** | ours: hand draft | 21/30/0 | 432 | -9.6% | 792 | -3.8% | 79 s |
+| 5 | *Marksmanship* | community simulator | - | 414 | -13.4% | 822 | -0.1% | 97 s |
+| 6 | *Marksmanship 0/39/12* | community simulator | - | 380 | -20.6% | 744 | -9.6% | 95 s |
+| 7 | *Survival 0/15/36* | community simulator | - | 353 | -26.2% | 654 | -20.5% | 87 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -113,11 +113,11 @@ Damage by ability:
 
 | Ability | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) |
 |---|---|
-| Auto Shot | 45% |
-| Arcane Shot | 22% |
-| Serpent Sting | 14% |
-| Aimed Shot | 9% |
-| Pet: Auto Attack | 8% |
+| Auto Shot | 44% |
+| Arcane Shot | 19% |
+| Pet: Auto Attack | 12% |
+| Serpent Sting | 12% |
+| Aimed Shot | 8% |
 | Pet: Claw | 2% |
 | Pet: Bite | 1% |
 | Multi-Shot | 1% |

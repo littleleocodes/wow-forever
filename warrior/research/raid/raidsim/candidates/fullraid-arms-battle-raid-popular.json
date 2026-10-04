@@ -61,6 +61,10 @@
   ],
   "Fury": [
    [
+    "Booming Voice",
+    3
+   ],
+   [
     "Cruelty",
     5
    ],
@@ -71,10 +75,6 @@
    [
     "Piercing Howl",
     1
-   ],
-   [
-    "Boundless Rage",
-    3
    ]
   ],
   "Protection": []
@@ -89,5 +89,8 @@
   "dps_end": 703.6385267855143,
   "gain": 0.0,
   "tank": false
- }
+ },
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

@@ -5,7 +5,7 @@
  "date": "2026-10-03",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
-  "commit": "40be98e",
+  "commit": "b0f0df3",
   "gear_raid": "_reference/data/raidsim/gear_sets/forever/shaman-elemental-phase_1.p1opt.gear.json",
   "gear_max": "F:\\wow-forever\\_reference\\data\\raidsim\\gear_sets\\forever\\shaman-elemental-phase_1.p1opt.gear.json",
   "iterations": 3000,
@@ -75,39 +75,39 @@
    "split": "",
    "ours": false,
    "dps": {
-    "dummy": 409.1270072041883,
-    "dummy60": 503.91551254867016,
-    "ladder-mana": 424.33075710298465,
-    "ladder-armor": 424.33075710298465,
-    "ladder-physical": 432.4809446637631,
-    "ladder-spell": 484.13372426480646,
-    "raid": 536.7320579188157,
-    "curve60": 449.4864492976811,
-    "curve120": 434.52269467853637,
-    "curve180": 409.1270072041883,
-    "curve240": 409.9426868190207,
-    "curve360": 394.80982928067965,
-    "max": 536.7320579188157,
-    "max60": 556.0655964669277
+    "dummy": 381.650085571475,
+    "dummy60": 468.5614217551174,
+    "ladder-mana": 395.8095406191631,
+    "ladder-armor": 395.8095406191631,
+    "ladder-physical": 404.2438194955278,
+    "ladder-spell": 453.7983932043825,
+    "raid": 505.9926014001511,
+    "curve60": 422.51108755011165,
+    "curve120": 407.8217643581796,
+    "curve180": 381.650085571475,
+    "curve240": 381.9079273827409,
+    "curve360": 366.4121437080433,
+    "max": 505.9926014001511,
+    "max60": 524.1197705885561
    },
    "raid_spell_casts": {
-    "10438": 3.9976666666666665,
-    "10605": 7.661,
-    "29228": 15.451333333333332,
-    "529": 13.299,
+    "15208": 62.23166666666667,
     "20554": 1.0,
-    "15208": 61.918
+    "29228": 15.344666666666667,
+    "529": 12.938333333333333,
+    "10605": 7.716666666666667,
+    "10438": 3.995
    },
    "raid_casts": {
-    "Major Mana Potion": 1.9896666666666667,
-    "OtherActionManaGain": 45.545,
     "Talisman of Ephemeral Power": 2.0,
-    "Searing Totem": 3.9976666666666665,
+    "OtherActionManaGain": 46.153333333333336,
+    "Major Mana Potion": 1.991,
     "Demonic Rune": 2.0,
-    "Chain Lightning": 7.661,
-    "Flame Shock": 15.451333333333332,
-    "Lightning Bolt": 75.217,
-    "Berserking": 1.0
+    "Lightning Bolt": 75.17,
+    "Berserking": 1.0,
+    "Flame Shock": 15.344666666666667,
+    "Chain Lightning": 7.716666666666667,
+    "Searing Totem": 3.995
    }
   }
  ]

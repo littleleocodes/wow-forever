@@ -38,14 +38,14 @@ Forever's melee hunter for raids, built around traps: Survival's melee package (
 | **Clever Traps** | 2/2 | unchanged | Increases the duration of Freezing and Frost trap effects by 30% and the damage of Immolation and Explosive trap effects by 30%. |
 | **Surefooted** | 3/3 | changed | Increases your hit chance by 3% and reduces the duration of movement impairing effects on you by 30%. |
 | **Survival Tactics** | 2/2 | **NEW** | Increases your chance to hit with your Trap and Feign Death abilities by 10%. |
-| **Predator's Edge** | 5/5 | **NEW** | Increases your melee critical strike damage by 30% and your offhand weapon damage by 50%. |
+| **Predator's Edge** | 5/5 | **NEW** | Increases your melee critical strike damage by 30% and your Off Hand weapon damage by 50%. |
 | **Resourcefulness** | 2/2 | **NEW** | Reduces the mana cost of your Trap abilities and melee abilities by 60%. In addition, your critical strikes have a 60% chance to allow 50% of your Mana regeneration to continue while casting for 30 sec. |
 | **Expose Prey** | 2/2 | **NEW** | Your attacks against targets with Hunter's Mark have a 10% chance to activate your Mongoose Bite for 5 sec. |
 | **Survivalist's Discipline** | 2/2 | **NEW** | Reduces the cooldown of your Trap and Deterrence abilities by 40%. |
 | **Strider Kick** | 1/1 | **NEW** | A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec. |
-| **Lightning Reflexes** | 5/5 | changed | Increases your Agility by 15%. |
-| **Lacerating Strikes** | 1/1 | **NEW** | Your Mongoose Bite also causes the target to Bleed for damage over 21 sec equal to 40% of the damage done by Mongoose Bite. |
-| **Deflection** | 5/5 | changed | Increases your Parry chance by 10%. |
+| **Lightning Reflexes** | 5/5 | changed | Increases your Agility by 10%. |
+| **Lacerating Strikes** | 1/1 | **NEW** | Your Mongoose Bite also causes the target to Bleed for damage equal to 40% of the damage done by Mongoose Bite over 21 sec |
+| **Deflection** | 5/5 | changed | Increases your Parry chance by 5%. |
 
 ## Core talents (priority order)
 
@@ -74,14 +74,14 @@ Forever's melee hunter for raids, built around traps: Survival's melee package (
 
 ## Rank among our builds and the community simulator's
 
-**3 of 4** for `melee-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 4** for `melee-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`survival-raid`](survival-raid.md) | ours: hand draft | 5/16/30 | 450 | +0.0% | 967 | -2.4% | 12 s |
-| 2 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 430 | -4.5% | 965 | -2.6% | 9 s |
-| 3 | **[`melee-survival-raid`](melee-survival-raid.md)** | ours: hand draft | 5/11/35 | 426 | -5.3% | 991 | +0.0% | 47 s |
-| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: parse build | 5/14/32 | 347 | -22.9% | 991 | -0.0% | 119 s |
+| 1 | [`survival-raid`](survival-raid.md) | ours: hand draft | 5/16/30 | 445 | +0.0% | 1022 | -1.8% | 12 s |
+| 2 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 424 | -4.8% | 1016 | -2.4% | 9 s |
+| 3 | **[`melee-survival-raid`](melee-survival-raid.md)** | ours: hand draft | 5/11/35 | 419 | -5.7% | 1041 | -0.0% | 47 s |
+| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: parse build | 5/14/32 | 342 | -23.2% | 1041 | +0.0% | 119 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -99,14 +99,14 @@ Before the pull: at -3s: cast Hunter's Mark.
 
 | # | Priority (the first line whose condition holds is cast) | [`melee-survival-raid`](melee-survival-raid.md) casts/min |
 |---|---|---|
-| 1 | cast Raptor Strike | 18.9 |
+| 1 | cast Raptor Strike | 19.0 |
 | 2 | cast Immolation Trap | 2.8 |
 | 3 | cast Aspect of the Beast | 0.3 |
 | 4 | use every other cooldown when ready | as ready |
-| 5 | cast Mongoose Bite | 10.6 |
+| 5 | cast Mongoose Bite | 10.2 |
 | 6 | cast Major Mana Potion | as ready |
 | 7 | cast Strider Kick | 5.1 |
-| 8 | cast Wing Clip | 19.0 |
+| 8 | cast Wing Clip | 19.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Counterattack (needs the Counterattack talent); cast Explosive Trap (its condition never held in these fights).
 

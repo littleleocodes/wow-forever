@@ -6,10 +6,10 @@
 
 | # | Spec and build | Full raid DPS | Training dummy DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Arms](arms.md) — Arms — Full raid 🔬 | 792 | 387 | 377 | best |
-| 2 | [Fury](fury.md) — Raid dual-wield Fury | 710 | 390 | 328 | -10% |
+| 1 | [Arms](arms.md) — Arms — Full raid 🔬 | 890 | 434 | 424 | best |
+| 2 | [Fury](fury.md) — Raid dual-wield Fury | 797 | 422 | 364 | -10% |
 
-**Tanking**: [Protection](protection.md) — Protection — Raid Tank.
+**Tanking**: [Protection](protection.md) — Raid tank in Defensive Stance with a shield.
 
 **By gear tier**: each damage spec with its best talents for each tier, in its own gear (full raid / training dummy DPS; [every class](../../_reference/dps-rankings.md)):
 

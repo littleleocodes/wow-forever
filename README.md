@@ -6,15 +6,15 @@ The best talents and the best way to play every class in **World of Warcraft: Fo
 
 | Class | Roles | Fastest leveling (solo) | Most raid damage (DPS: full raid / training dummy) |
 |---|---|---|---|
-| [**Druid**](druid/README.md) | damage, tank, healer | [Feral Combat](druid/leveling/feral-combat.md) (25 s/kill) | [Balance](druid/raid/balance.md) (617 raid / 534 dummy) |
-| [**Hunter**](hunter/README.md) | damage | [Melee (split)](hunter/leveling/melee-split.md) (26 s/kill) | [Survival](hunter/raid/survival.md) (991 raid / 426 dummy) |
-| [**Mage**](mage/README.md) | damage | [Frost](mage/leveling/frost.md) (26 s/kill) | [Fire](mage/raid/fire.md) (747 raid / 598 dummy), [Frost](mage/raid/frost.md) (739 raid / 647 dummy), [Arcane-Frost](mage/raid/arcane-frost.md) (735 raid / 643 dummy) |
-| [**Paladin**](paladin/README.md) | damage, tank, healer | [Retribution](paladin/leveling/retribution.md) (28 s/kill) | [Retribution](paladin/raid/retribution.md) (1011 raid / 544 dummy) |
-| [**Priest**](priest/README.md) | damage, healer | [Shadow](priest/leveling/shadow.md) (26 s/kill) | [Shadow](priest/raid/shadow.md) (724 raid / 632 dummy) |
-| [**Rogue**](rogue/README.md) | damage | [Assassination](rogue/leveling/assassination.md) (25 s/kill), [Combat](rogue/leveling/combat.md) (26 s/kill) | [Combat](rogue/raid/combat.md) (712 raid / 398 dummy) |
-| [**Shaman**](shaman/README.md) | damage, healer | [Enhancement](shaman/leveling/enhancement.md) (33 s/kill) | [Enhancement](shaman/raid/enhancement.md) (801 raid / 409 dummy) |
-| [**Warlock**](warlock/README.md) | damage | [Demonology](warlock/leveling/demonology.md) (36 s/kill), [Affliction-Demonology](warlock/leveling/affliction-demonology.md) (37 s/kill) | [Demonology](warlock/raid/demonology.md) (833 raid / 687 dummy) |
-| [**Warrior**](warrior/README.md) | damage, tank | [Arms](warrior/leveling/arms.md) (28 s/kill), [Fury](warrior/leveling/fury.md) (29 s/kill) | [Arms](warrior/raid/arms.md) (792 raid / 387 dummy) |
+| [**Druid**](druid/README.md) | damage, tank, healer | [Feral Combat](druid/leveling/feral-combat.md) (25 s/kill) | [Balance](druid/raid/balance.md) (576 raid / 497 dummy) |
+| [**Hunter**](hunter/README.md) | damage | [Melee (split)](hunter/leveling/melee-split.md) (26 s/kill) | [Survival](hunter/raid/survival.md) (1041 raid / 419 dummy) |
+| [**Mage**](mage/README.md) | damage | [Frost](mage/leveling/frost.md) (26 s/kill) | [Frost](mage/raid/frost.md) (705 raid / 617 dummy), [Arcane-Frost](mage/raid/arcane-frost.md) (701 raid / 615 dummy), [Fire](mage/raid/fire.md) (700 raid / 559 dummy) |
+| [**Paladin**](paladin/README.md) | damage, tank, healer | [Retribution](paladin/leveling/retribution.md) (28 s/kill) | [Retribution](paladin/raid/retribution.md) (889 raid / 480 dummy) |
+| [**Priest**](priest/README.md) | damage, healer | [Shadow](priest/leveling/shadow.md) (26 s/kill) | [Shadow](priest/raid/shadow.md) (679 raid / 589 dummy) |
+| [**Rogue**](rogue/README.md) | damage | [Assassination](rogue/leveling/assassination.md) (25 s/kill), [Combat](rogue/leveling/combat.md) (26 s/kill) | [Combat](rogue/raid/combat.md) (765 raid / 398 dummy) |
+| [**Shaman**](shaman/README.md) | damage, healer | [Enhancement](shaman/leveling/enhancement.md) (33 s/kill) | [Enhancement](shaman/raid/enhancement.md) (783 raid / 397 dummy) |
+| [**Warlock**](warlock/README.md) | damage | [Demonology](warlock/leveling/demonology.md) (36 s/kill), [Affliction-Demonology](warlock/leveling/affliction-demonology.md) (37 s/kill) | [Demonology](warlock/raid/demonology.md) (786 raid / 646 dummy) |
+| [**Warrior**](warrior/README.md) | damage, tank | [Arms](warrior/leveling/arms.md) (28 s/kill), [Fury](warrior/leveling/fury.md) (29 s/kill) | [Arms](warrior/raid/arms.md) (890 raid / 434 dummy) |
 
 Two specs in one cell are a tie (within 3% of each other; the best spec of the class by DPS in a full raid). Leveling times compare across classes: every class runs in the same fight simulator, solo against same-level mobs. Raid numbers assume a group: every raid buff and debuff is up, which is where classes that live on raid buffs (warriors' rage, hunters' and shamans' mana) do their real damage; the training dummy (alone, only your own buffs) is shown next to it.
 

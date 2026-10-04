@@ -3,23 +3,19 @@
  "allocation": {
   "Arcane": [
    [
-    "Arcane Concentration",
-    5
-   ],
-   [
     "Improved Channeling",
     5
    ],
    [
     "Arcane Subtlety",
     2
+   ],
+   [
+    "Arcane Concentration",
+    5
    ]
   ],
   "Fire": [
-   [
-    "Improved Fireball",
-    5
-   ],
    [
     "Wake of Fire",
     2
@@ -29,8 +25,16 @@
     3
    ],
    [
+    "Improved Fireball",
+    5
+   ],
+   [
     "Ignite",
     5
+   ],
+   [
+    "Burning Soul",
+    2
    ],
    [
     "Pyroblast",
@@ -41,7 +45,7 @@
     3
    ],
    [
-    "Hot Streak",
+    "Heating Up",
     1
    ],
    [
@@ -59,10 +63,6 @@
    [
     "Combustion",
     1
-   ],
-   [
-    "Burning Soul",
-    2
    ]
   ],
   "Frost": [
@@ -84,5 +84,8 @@
   "dps_end": 593.6190168863752,
   "gain": 0.0,
   "tank": false
- }
+ },
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

@@ -4,7 +4,7 @@
 
 ## combat-swords-raid
 
-Our tuned rotation `combat-swords-raid.apl.json` (the simulator's `combat_sinister_strike.apl.json` with the changes below) (commit 40be98e), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
+Our tuned rotation `combat-swords-raid.apl.json` (the simulator's `combat_sinister_strike.apl.json` with the changes below) (commit b0f0df3), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
 
 **Rotation search** (every change kept had to win on two random seeds and cost none of the tuning builds more than 0.1%):
 
@@ -36,7 +36,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`combat-swords-raid`](builds/combat-swords-raid.md) (ours: hand draft, 394 DPS), *Improved Expose Armor (SS)* (community simulator, 394 DPS), [`opt-combat-swords-raid-raid-dps`](builds/opt-combat-swords-raid-raid-dps.md) (ours: optimizer, 376 DPS), *Sinister Strike* (community simulator, 371 DPS), *Combat Dual-Wield 15/33/3* (community simulator, 365 DPS), *Backstab* (community simulator, 319 DPS)
+### [`combat-swords-raid`](builds/combat-swords-raid.md) (ours: hand draft, 393 DPS), *Improved Expose Armor (SS)* (community simulator, 393 DPS), [`opt-combat-swords-raid-raid-dps`](builds/opt-combat-swords-raid-raid-dps.md) (ours: optimizer, 376 DPS), *Sinister Strike* (community simulator, 371 DPS), *Combat Dual-Wield 15/33/3* (community simulator, 364 DPS), *Backstab* (community simulator, 319 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | [`combat-swords-raid`](builds/combat-swords-raid.md) casts/min | *Improved Expose Armor (SS)* casts/min | [`opt-combat-swords-raid-raid-dps`](builds/opt-combat-swords-raid-raid-dps.md) casts/min | *Sinister Strike* casts/min | *Combat Dual-Wield 15/33/3* casts/min | *Backstab* casts/min |
 |---|---|---|---|---|---|---|---|
@@ -61,7 +61,7 @@ Damage by ability:
 | Dragonbreath Chili | 2% | 2% | 2% | 2% | 2% | 2% |
 | Goblin Sapper Charge | 2% | 2% | 2% | 2% | 2% | 2% |
 
-### *Assassination Mutilate 31/20/0* (community simulator, 340 DPS), *Mutilate* (community simulator, 330 DPS)
+### *Assassination Mutilate 31/20/0* (community simulator, 340 DPS), *Mutilate* (community simulator, 329 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | *Assassination Mutilate 31/20/0* casts/min | *Mutilate* casts/min |
 |---|---|---|---|
@@ -78,14 +78,14 @@ Damage by ability:
 | Ability | *Assassination Mutilate 31/20/0* | *Mutilate* |
 |---|---|---|
 | Auto Attack | 55% | 57% |
-| Sinister Strike | 29% | 27% |
+| Sinister Strike | 28% | 27% |
 | Deadly Poison | 7% | 6% |
 | Dense Sharpening Stone | 4% | 4% |
 | Dragonbreath Chili | 2% | 2% |
 | Goblin Sapper Charge | 2% | 2% |
 | Eviscerate | 2% | 2% |
 
-### *Subtlety Hemo 15/0/36* (community simulator, 302 DPS)
+### *Subtlety Hemo 15/0/36* (community simulator, 301 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | *Subtlety Hemo 15/0/36* casts/min |
 |---|---|---|
@@ -113,7 +113,7 @@ Damage by ability:
 
 ## combat-daggers-raid
 
-Our tuned rotation `combat-daggers-raid.apl.json` (the simulator's `combat_backstab.apl.json` with the changes below) (commit 40be98e), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
+Our tuned rotation `combat-daggers-raid.apl.json` (the simulator's `combat_backstab.apl.json` with the changes below) (commit b0f0df3), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
 
 **Rotation search** (every change kept had to win on two random seeds and cost none of the tuning builds more than 0.1%):
 
@@ -142,15 +142,15 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`opt-combat-daggers-raid-raid-dps`](builds/opt-combat-daggers-raid-raid-dps.md) (ours: optimizer, 419 DPS), [`combat-ml-raid`](builds/combat-ml-raid.md) (ours: hand draft, 402 DPS), [`combat-daggers-raid`](builds/combat-daggers-raid.md) (ours: hand draft, 398 DPS), *Combat Dual-Wield 15/33/3* (community simulator, 394 DPS), *Backstab* (community simulator, 371 DPS), *Improved Expose Armor (SS)* (community simulator, 349 DPS), *Sinister Strike* (community simulator, 334 DPS)
+### [`opt-combat-daggers-raid-raid-dps`](builds/opt-combat-daggers-raid-raid-dps.md) (ours: optimizer, 419 DPS), [`combat-ml-raid`](builds/combat-ml-raid.md) (ours: hand draft, 402 DPS), [`combat-daggers-raid`](builds/combat-daggers-raid.md) (ours: hand draft, 398 DPS), *Combat Dual-Wield 15/33/3* (community simulator, 394 DPS), *Backstab* (community simulator, 371 DPS), *Improved Expose Armor (SS)* (community simulator, 350 DPS), *Sinister Strike* (community simulator, 334 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-combat-daggers-raid-raid-dps`](builds/opt-combat-daggers-raid-raid-dps.md) casts/min | [`combat-ml-raid`](builds/combat-ml-raid.md) casts/min | [`combat-daggers-raid`](builds/combat-daggers-raid.md) casts/min | *Combat Dual-Wield 15/33/3* casts/min | *Backstab* casts/min | *Improved Expose Armor (SS)* casts/min | *Sinister Strike* casts/min |
 |---|---|---|---|---|---|---|---|---|
 | 1 | if time left on Expose Armor < 12 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 2.1 | 1.9 | 1.9 | 1.9 | 1.6 | 1.5 | 1.1 |
-| 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.5 | 2.7 | 2.7 | 2.7 | 3.1 | 2.5 | 2.9 |
+| 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.4 | 2.7 | 2.7 | 2.7 | 3.1 | 2.5 | 2.9 |
 | 3 | if energy < 59 and timeToNextEnergyTick < 1: cast Adrenaline Rush | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 |
 | 4 | if Slice and Dice is up: use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready | as ready | as ready |
-| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.9 | 0.4 | 0.4 | 0.4 | 0.2 | 0.3 | 0.2 |
+| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.9 | 0.4 | 0.3 | 0.3 | 0.2 | 0.3 | 0.2 |
 | 6 | cast Backstab | 12.2 | 11.8 | 11.8 | 11.8 | 10.3 | 12.3 | 11.7 |
 
 Lines of the simulator's rotation these builds never cast: cast Mutilate (needs the Mutilate talent).
@@ -159,7 +159,7 @@ Damage by ability:
 
 | Ability | [`opt-combat-daggers-raid-raid-dps`](builds/opt-combat-daggers-raid-raid-dps.md) | [`combat-ml-raid`](builds/combat-ml-raid.md) | [`combat-daggers-raid`](builds/combat-daggers-raid.md) | *Combat Dual-Wield 15/33/3* | *Backstab* | *Improved Expose Armor (SS)* | *Sinister Strike* |
 |---|---|---|---|---|---|---|---|
-| Auto Attack | 46% | 48% | 48% | 48% | 50% | 52% | 53% |
+| Auto Attack | 46% | 48% | 48% | 49% | 50% | 52% | 53% |
 | Backstab | 36% | 37% | 37% | 36% | 35% | 31% | 31% |
 | Deadly Poison | 6% | 6% | 6% | 6% | 7% | 7% | 8% |
 | Eviscerate | 5% | 2% | 2% | 2% | 1% | 2% | 1% |
@@ -167,15 +167,15 @@ Damage by ability:
 | Dragonbreath Chili | 2% | 2% | 2% | 2% | 2% | 2% | 2% |
 | Goblin Sapper Charge | 2% | 2% | 2% | 2% | 2% | 2% | 2% |
 
-### *Mutilate* (community simulator, 355 DPS), *Assassination Mutilate 31/20/0* (community simulator, 342 DPS)
+### *Mutilate* (community simulator, 363 DPS), *Assassination Mutilate 31/20/0* (community simulator, 349 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | *Mutilate* casts/min | *Assassination Mutilate 31/20/0* casts/min |
 |---|---|---|---|
 | 1 | if time left on Expose Armor < 12 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 2.5 | 2.8 |
 | 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.4 | 3.3 |
-| 3 | cast Mutilate | 32.9 | 32.7 |
+| 3 | cast Mutilate | 32.9 | 32.6 |
 | 4 | if Slice and Dice is up: use every other cooldown when ready | as ready | as ready |
-| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 1.3 | 0.5 |
+| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 1.4 | 0.5 |
 
 Lines of the simulator's rotation these builds never cast: cast Adrenaline Rush (needs the Adrenaline Rush talent); cast Backstab (its condition never held in these fights).
 
@@ -183,8 +183,8 @@ Damage by ability:
 
 | Ability | *Mutilate* | *Assassination Mutilate 31/20/0* |
 |---|---|---|
-| Auto Attack | 50% | 52% |
-| Mutilate | 23% | 25% |
+| Auto Attack | 49% | 51% |
+| Mutilate | 25% | 26% |
 | Deadly Poison | 10% | 10% |
 | Eviscerate | 7% | 3% |
 | Dense Sharpening Stone | 5% | 6% |
@@ -217,7 +217,7 @@ Damage by ability:
 
 ## assassination-raid
 
-Our tuned rotation `assassination-raid.apl.json` (the simulator's `forever_mutilate.apl.json` with the changes below) (commit 40be98e), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
+Our tuned rotation `assassination-raid.apl.json` (the simulator's `forever_mutilate.apl.json` with the changes below) (commit b0f0df3), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
 
 Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs. Our assassination-mutilate-raid build moves here from combat-daggers-raid (it ran under the combat rotation there).
 
@@ -270,8 +270,8 @@ Damage by ability:
 | Ability | [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) | [`assassination-ml-raid`](builds/assassination-ml-raid.md) | [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) | *Mutilate* | *Assassination Mutilate 31/20/0* |
 |---|---|---|---|---|---|
 | Auto Attack | 40% | 41% | 43% | 44% | 46% |
-| Backstab | 31% | 32% | 30% | 30% | 31% |
-| Eviscerate | 12% | 10% | 13% | 9% | 6% |
+| Backstab | 31% | 32% | 30% | 31% | 31% |
+| Eviscerate | 12% | 10% | 13% | 9% | 7% |
 | Deadly Poison | 8% | 8% | 7% | 8% | 8% |
 | Dense Sharpening Stone | 5% | 5% | 4% | 4% | 4% |
 | Dragonbreath Chili | 2% | 2% | 2% | 2% | 2% |
@@ -279,7 +279,7 @@ Damage by ability:
 
 ## subtlety-raid
 
-Our tuned rotation `subtlety-raid.apl.json` (the simulator's `forever_hemorrhage.apl.json` with the changes below) (commit 40be98e), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
+Our tuned rotation `subtlety-raid.apl.json` (the simulator's `forever_hemorrhage.apl.json` with the changes below) (commit b0f0df3), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
 
 Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs.
 
@@ -353,7 +353,7 @@ Damage by ability:
 |---|---|---|
 | Auto Attack | 37% | 40% |
 | Hemorrhage | 28% | 29% |
-| Rupture | 17% | 17% |
+| Rupture | 18% | 17% |
 | Dense Sharpening Stone | 4% | 3% |
 | Deadly Poison | 4% | 3% |
 | Eviscerate | 3% | 1% |

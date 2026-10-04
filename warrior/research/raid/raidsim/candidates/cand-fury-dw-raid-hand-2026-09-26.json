@@ -29,6 +29,10 @@
   ],
   "Fury": [
    [
+    "Booming Voice",
+    4
+   ],
+   [
     "Cruelty",
     5
    ],
@@ -37,15 +41,11 @@
     5
    ],
    [
-    "Boundless Rage",
-    3
-   ],
-   [
-    "Piercing Howl",
+    "Furious Precision",
     1
    ],
    [
-    "Improved Cleave",
+    "Piercing Howl",
     1
    ],
    [
@@ -59,10 +59,6 @@
    [
     "Enrage",
     5
-   ],
-   [
-    "Precision",
-    1
    ],
    [
     "Death Wish",
@@ -79,5 +75,8 @@
   ],
   "Protection": []
  },
- "note": "The hand draft fury-dw-raid as it was before opt-fury-dw-raid-raid-dps was adopted on 2026-09-26"
+ "note": "The hand draft fury-dw-raid as it was before opt-fury-dw-raid-raid-dps was adopted on 2026-09-26",
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

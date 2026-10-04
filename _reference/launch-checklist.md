@@ -195,6 +195,9 @@
 **Survival — Full raid (parse) (machine-learning search)** (`hunter/research/raid/builds/survival-ml-parse.md`)
 - [ ] A machine-searched Survival build: check it against the community's Survival builds at launch.
 
+**Beast-Marks — Raid (machine-learning search)** (`hunter/research/raid/builds/beast-marks-ml-raid.md`)
+- [ ] A machine-searched Beast-Marks build: check it against the community's Beast-Marks builds at launch.
+
 **Optimizer — Marksmanship raid DPS with a pet (Classic 20/31/0 style) (raid-dps)** (`hunter/research/raid/builds/opt-mm-raid-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -206,9 +209,6 @@
 
 **Optimizer — Marksmanship without a pet (Forever Lone Wolf) (parse)** (`hunter/research/raid/builds/opt-mm-lonewolf-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Beast-Marks — Raid (machine-learning search)** (`hunter/research/raid/builds/beast-marks-ml-raid.md`)
-- [ ] A machine-searched Beast-Marks build: check it against the community's Beast-Marks builds at launch.
 
 ### Mage
 
@@ -275,6 +275,9 @@
 **Frost — Raid (machine-learning search)** (`mage/research/raid/builds/frost-ml-raid.md`)
 - [ ] A machine-searched Frost build: check it against the community's Frost builds at launch.
 
+**Frostfire — Raid (machine-learning search)** (`mage/research/raid/builds/frostfire-ml-raid.md`)
+- [ ] A machine-searched Frostfire build: check it against the community's Frostfire builds at launch.
+
 **Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (raid-dps)** (`mage/research/raid/builds/opt-frost-raid-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -286,9 +289,6 @@
 
 **Optimizer — Raid Fireball spam with Scorch upkeep (parse)** (`mage/research/raid/builds/opt-fire-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Frostfire — Raid (machine-learning search)** (`mage/research/raid/builds/frostfire-ml-raid.md`)
-- [ ] A machine-searched Frostfire build: check it against the community's Frostfire builds at launch.
 
 ### Paladin
 
@@ -463,6 +463,12 @@
 **Subtlety — Leveling (derived)** (`rogue/research/leveling/builds/subtlety-leveling.md`)
 - [ ] A derived Subtlety leveling build: check it while leveling at launch.
 
+**Assassination — Raid (machine-learning search)** (`rogue/research/raid/builds/assassination-ml-raid.md`)
+- [ ] A machine-searched Assassination build: check it against the community's Assassination builds at launch.
+
+**Combat — Raid (machine-learning search)** (`rogue/research/raid/builds/combat-ml-raid.md`)
+- [ ] A machine-searched Combat build: check it against the community's Combat builds at launch.
+
 **Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (raid-dps)** (`rogue/research/raid/builds/opt-combat-swords-raid-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -474,12 +480,6 @@
 
 **Optimizer — Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (parse)** (`rogue/research/raid/builds/opt-combat-daggers-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Assassination — Raid (machine-learning search)** (`rogue/research/raid/builds/assassination-ml-raid.md`)
-- [ ] A machine-searched Assassination build: check it against the community's Assassination builds at launch.
-
-**Combat — Raid (machine-learning search)** (`rogue/research/raid/builds/combat-ml-raid.md`)
-- [ ] A machine-searched Combat build: check it against the community's Combat builds at launch.
 
 ### Shaman
 
@@ -533,6 +533,12 @@
 **Restoration — Leveling into the raid build** (`shaman/research/leveling/builds/restoration-leveling.md`)
 - [ ] Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
 
+**Enhancement — Raid (machine-learning search)** (`shaman/research/raid/builds/enhancement-ml-raid.md`)
+- [ ] A machine-searched Enhancement build: check it against the community's Enhancement builds at launch.
+
+**Elemental-Enhancement — Raid (machine-learning search)** (`shaman/research/raid/builds/elemental-enhancement-ml-raid.md`)
+- [ ] A machine-searched Elemental-Enhancement build: check it against the community's Elemental-Enhancement builds at launch.
+
 **Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (raid-dps)** (`shaman/research/raid/builds/opt-elemental-dps-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -544,12 +550,6 @@
 
 **Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (parse)** (`shaman/research/raid/builds/opt-enhancement-dps-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Enhancement — Raid (machine-learning search)** (`shaman/research/raid/builds/enhancement-ml-raid.md`)
-- [ ] A machine-searched Enhancement build: check it against the community's Enhancement builds at launch.
-
-**Elemental-Enhancement — Raid (machine-learning search)** (`shaman/research/raid/builds/elemental-enhancement-ml-raid.md`)
-- [ ] A machine-searched Elemental-Enhancement build: check it against the community's Elemental-Enhancement builds at launch.
 
 ### Warlock
 
@@ -612,6 +612,9 @@
 **Destruction — Raid (machine-learning search)** (`warlock/research/raid/builds/destruction-ml-raid.md`)
 - [ ] A machine-searched Destruction build: check it against the community's Destruction builds at launch.
 
+**Demonology — Raid (machine-learning search)** (`warlock/research/raid/builds/demonology-ml-raid.md`)
+- [ ] A machine-searched Demonology build: check it against the community's Demonology builds at launch.
+
 **Optimizer — Corruption 28%, Agony 18%, Shadow Bolt 30%, Drain Life 12%, Immolate 6%, Imp 6%; Siphon Life and Wrack arrive as talent effects (raid-dps)** (`warlock/research/raid/builds/opt-affliction-raid-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -629,9 +632,6 @@
 
 **Optimizer — Shadow Bolt 74%, Corruption 12%, Curse/Bane of Agony 6%, Immolate 4%, Imp 4% (a raid warlock's pet does little) (parse)** (`warlock/research/raid/builds/opt-sb-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Demonology — Raid (machine-learning search)** (`warlock/research/raid/builds/demonology-ml-raid.md`)
-- [ ] A machine-searched Demonology build: check it against the community's Demonology builds at launch.
 
 ### Warrior
 
@@ -674,20 +674,17 @@
 **Optimizer — Two-handed Arms/raid or leveling: white ~45%, Heroic Strike, Overpower, Execute, Rend; Mortal Strike/Slam arrive as talent effects (leveling-aoe)** (`warrior/research/leveling/builds/opt-arms-2h-raid-leveling-aoe.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Arms — PvP (derived)** (`warrior/research/pvp/builds/arms-pvp.md`)
-- [ ] A derived Arms PvP build: check it in duels and battlegrounds at launch.
+**Protection — Leveling into the raid build** (`warrior/research/leveling/builds/protection-leveling.md`)
+- [ ] Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
+
+**Arms — Full raid (the community's #2 Arms build)** (`warrior/research/raid/builds/arms-community-parse.md`)
+- [ ] Why does our dummy-picked Arms build lose 14% in a full raid? The talents that pay off on a buffed, debuffed target should be fitted into the raid-mode model.
 
 **Fury — PvP (derived)** (`warrior/research/pvp/builds/fury-pvp.md`)
 - [ ] A derived Fury PvP build: check it in duels and battlegrounds at launch.
 
 **Protection — PvP (derived)** (`warrior/research/pvp/builds/protection-pvp.md`)
 - [ ] A derived Protection PvP build: check it in duels and battlegrounds at launch.
-
-**Protection — Leveling into the raid build** (`warrior/research/leveling/builds/protection-leveling.md`)
-- [ ] Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
-
-**Arms — Full raid (the community's #2 Arms build)** (`warrior/research/raid/builds/arms-community-parse.md`)
-- [ ] Why does our dummy-picked Arms build lose 14% in a full raid? The talents that pay off on a buffed, debuffed target should be fitted into the raid-mode model.
 
 **Optimizer — Two-handed Arms/raid or leveling: white ~45%, Heroic Strike, Overpower, Execute, Rend; Mortal Strike/Slam arrive as talent effects (raid-dps)** (`warrior/research/raid/builds/opt-arms-2h-raid-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.

@@ -21,6 +21,10 @@
   ],
   "Fury": [
    [
+    "Booming Voice",
+    2
+   ],
+   [
     "Cruelty",
     5
    ],
@@ -29,12 +33,12 @@
     5
    ],
    [
-    "Blood Craze",
+    "Furious Precision",
     3
    ],
    [
-    "Boundless Rage",
-    2
+    "Blood Craze",
+    3
    ],
    [
     "Dual Wield Specialization",
@@ -51,10 +55,6 @@
    [
     "Improved Execute",
     2
-   ],
-   [
-    "Precision",
-    3
    ],
    [
     "Death Wish",
@@ -181,5 +181,8 @@
    "points": 1
   }
  ],
- "note": "The scorer's best build with 30+ points in Fury under fury-dw-raid (leveling-st), 2026-09-30."
+ "note": "The scorer's best build with 30+ points in Fury under fury-dw-raid (leveling-st), 2026-09-30.",
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

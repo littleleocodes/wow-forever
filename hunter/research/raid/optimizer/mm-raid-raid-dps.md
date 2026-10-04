@@ -9,30 +9,30 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Summon Hawk | Beast Mastery | 4 | +5.02% | manual |
-| Trueshot Aura | Marksmanship | 4 | +2.47% | manual |
-| Bestial Discipline | Beast Mastery | 5 | +2.29% | manual |
-| Efficiency | Marksmanship | 2 | +1.40% | manual |
+| Summon Hawk | Beast Mastery | 4 | +9.23% | manual |
+| Trueshot Aura | Marksmanship | 4 | +2.22% | manual |
+| Bestial Discipline | Beast Mastery | 5 | +2.01% | manual |
+| Bestial Wrath | Beast Mastery | 7 | +1.49% | manual |
+| Deadly Aspects | Beast Mastery | 1 | +1.43% | manual |
+| Efficiency | Marksmanship | 2 | +1.37% | manual |
 | Lightning Reflexes | Survival | 6 | +1.20% | manual |
-| Deadly Aspects | Beast Mastery | 1 | +1.16% | manual |
-| Focused Fire | Beast Mastery | 2 | +0.91% | manual |
-| Ranged Weapon Specialization | Marksmanship | 6 | +0.89% | manual |
-| Mortal Shots | Marksmanship | 4 | +0.83% | manual |
-| Lethal Attacks | Marksmanship | 1 | +0.83% | manual |
-| Improved Stings | Marksmanship | 2 | +0.83% | manual |
-| Bestial Wrath | Beast Mastery | 7 | +0.81% | manual |
+| Focused Fire | Beast Mastery | 2 | +0.92% | manual |
+| Ranged Weapon Specialization | Marksmanship | 6 | +0.80% | manual |
 | Careful Aim | Marksmanship | 2 | +0.77% | manual |
-| Resourcefulness | Survival | 5 | +0.69% | manual |
-| Unleashed Fury | Beast Mastery | 3 | +0.32% | manual |
-| Frenzy | Beast Mastery | 6 | +0.30% | manual |
-| Improved Arcane Shot | Marksmanship | 3 | +0.25% | manual |
-| Endurance Training | Beast Mastery | 1 | +0.21% | manual |
-| Barrage | Marksmanship | 5 | +0.21% | manual |
-| Ferocity | Beast Mastery | 4 | +0.20% | manual |
-| Intimidation | Beast Mastery | 5 | +0.11% | manual |
+| Mortal Shots | Marksmanship | 4 | +0.76% | manual |
+| Lethal Attacks | Marksmanship | 1 | +0.75% | manual |
+| Improved Stings | Marksmanship | 2 | +0.69% | manual |
+| Unleashed Fury | Beast Mastery | 3 | +0.60% | manual |
+| Frenzy | Beast Mastery | 6 | +0.56% | manual |
+| Resourcefulness | Survival | 5 | +0.45% | manual |
+| Ferocity | Beast Mastery | 4 | +0.36% | manual |
+| Intimidation | Beast Mastery | 5 | +0.20% | manual |
+| Barrage | Marksmanship | 5 | +0.17% | manual |
+| Endurance Training | Beast Mastery | 1 | +0.14% | manual |
 | Survivalist | Survival | 2 | +0.00% | manual |
 | Rapid Recuperation | Marksmanship | 5 | +0.00% | manual |
 | Hawk Eye | Marksmanship | 1 | +0.00% | manual |
+| Sniper Shot | Marksmanship | 7 | +0.00% | manual |
 | Improved Aspect of the Monkey | Beast Mastery | 2 | +0.00% | manual |
 | Spirit Bond | Beast Mastery | 5 | +0.00% | manual |
 | Deflection | Survival | 1 | +0.00% | manual |
@@ -40,31 +40,31 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 | Counterattack | Survival | 4 | +0.00% | manual |
 | Pathfinding | Beast Mastery | 2 | +0.00% | manual |
 
-## Optimized build: 22/29/0  score +60.79%  (dps x1.608, sustain x1.110, surv x1.000, utility +0.00%)
-Absolute DPS index (character alone, no talents = 1.00): 1.529  — use this to compare models with different pet shares.
+## Optimized build: 31/20/0  score +67.64%  (dps x1.676, sustain x1.162, surv x1.000, utility +0.00%)
+Absolute DPS index (character alone, no talents = 1.00): 1.594  — use this to compare models with different pet shares.
 
 ```
-  Beast Mastery: Deadly Aspects 5, Endurance Training 3, Focused Fire 2, Unleashed Fury 5, Summon Hawk 1, Ferocity 4, Bestial Discipline 2
-  Marksmanship: Lethal Attacks 5, Efficiency 5, Careful Aim 5, Improved Stings 3, Improved Arcane Shot 1, Trueshot Aura 1, Mortal Shots 5, Ranged Weapon Specialization 4
+  Beast Mastery: Deadly Aspects 5, Endurance Training 3, Focused Fire 2, Unleashed Fury 5, Bestial Swiftness 1, Summon Hawk 1, Ferocity 5, Intimidation 1, Bestial Discipline 2, Frenzy 5, Bestial Wrath 1
+  Marksmanship: Lethal Attacks 5, Efficiency 5, Careful Aim 5, Trueshot Aura 1, Mortal Shots 4
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Bestial Wrath | Beast Mastery 7 | 1/1 | +2.21% | no |
-| Lightning Reflexes | Survival 6 | 1/5 | +1.93% | no |
-| Ranged Weapon Specialization | Marksmanship 6 | 5/5 | +1.26% | yes |
-| Resourcefulness | Survival 5 | 1/2 | +0.90% | no |
-| Frenzy | Beast Mastery 6 | 1/5 | +0.82% | no |
-| Ferocity | Beast Mastery 4 | 5/5 | +0.50% | yes |
-| Improved Arcane Shot | Marksmanship 3 | 2/5 | +0.40% | yes |
-| Barrage | Marksmanship 5 | 1/3 | +0.31% | yes |
-| Intimidation | Beast Mastery 5 | 1/1 | +0.30% | no |
-| Endurance Training | Beast Mastery 1 | 4/5 | +0.27% | yes |
+| Lightning Reflexes | Survival 6 | 1/5 | +2.01% | no |
+| Mortal Shots | Marksmanship 4 | 5/5 | +1.21% | yes |
+| Ranged Weapon Specialization | Marksmanship 6 | 1/5 | +1.11% | no |
+| Improved Stings | Marksmanship 2 | 1/3 | +1.05% | yes |
+| Resourcefulness | Survival 5 | 1/2 | +0.51% | no |
+| Barrage | Marksmanship 5 | 1/3 | +0.28% | yes |
+| Endurance Training | Beast Mastery 1 | 4/5 | +0.15% | yes |
 | Rapid Recuperation | Marksmanship 5 | 1/2 | +0.00% | no |
 | Survivalist | Survival 2 | 1/5 | +0.00% | no |
 | Hawk Eye | Marksmanship 1 | 1/3 | +0.00% | yes |
+| Sniper Shot | Marksmanship 7 | 1/1 | +0.00% | no |
 | Improved Aspect of the Monkey | Beast Mastery 2 | 1/3 | +0.00% | yes |
 | Spirit Bond | Beast Mastery 5 | 1/2 | +0.00% | yes |
+| Deflection | Survival 1 | 1/5 | +0.00% | yes |
+| Deterrence | Survival 3 | 1/1 | +0.00% | no |
 

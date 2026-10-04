@@ -89,7 +89,7 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Frost | Ice Block | 1 | moved | tier 4, max 1 — was Frost row 5, col 2 |
 | Frost | Improved Cone of Cold | 3 | changed | tier 5, max 3 — tooltip changed; was Frost row 5, col 3 |
 | Frost | Winter's Chill | 5 | changed | tier 6, max 5 — tooltip changed |
-| Frost | Ice Barrier | 1 | changed | tier 7, max 1 — tooltip changed; tooltip changed in build 1.60.1.70009 (ranks 1) |
+| Frost | Ice Barrier | 1 | changed | tier 7, max 1 — tooltip changed; tooltip changed in build 1.60.1.70170 (ranks 1) |
 
 **0 point(s) of this build no longer exist in Forever** and must be re-spent; see `../forever/README.md` for how they were re-spent.
 

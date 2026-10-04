@@ -36,7 +36,7 @@ The Beast Mastery build the machine-learning talent search found in a full raid 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
-| **Improved Stings** | 3/3 | **NEW** | Increased the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
+| **Improved Stings** | 3/3 | **NEW** | Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
 | **Efficiency** | 2/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 6%. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
 | **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
@@ -47,15 +47,15 @@ The Beast Mastery build the machine-learning talent search found in a full raid 
 
 ## Rank among our builds and the community simulator's
 
-**4 of 5** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 5** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 465 | +0.0% | 793 | -3.4% | 22 s |
-| 2 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 461 | -0.9% | 810 | -1.4% | 26 s |
-| 3 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: hand draft | 22/29/0 | 451 | -2.9% | 821 | +0.0% | 36 s |
-| 4 | **[`beast-mastery-ml-parse`](beast-mastery-ml-parse.md)** | ours: parse build | 31/20/0 | 450 | -3.2% | 812 | -1.1% | 30 s |
-| 5 | *Beast Mastery 35/16/0* | community simulator | - | 431 | -7.2% | 762 | -7.1% | 28 s |
+| 1 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 490 | +0.0% | 849 | -2.3% | 22 s |
+| 2 | **[`beast-mastery-ml-parse`](beast-mastery-ml-parse.md)** | ours: parse build | 31/20/0 | 478 | -2.3% | 868 | +0.0% | 29 s |
+| 3 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 478 | -2.5% | 847 | -2.5% | 26 s |
+| 4 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: hand draft | 22/29/0 | 468 | -4.5% | 857 | -1.3% | 36 s |
+| 5 | *Beast Mastery 35/16/0* | community simulator | - | 462 | -5.8% | 822 | -5.4% | 28 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -94,10 +94,10 @@ Damage by ability:
 
 | Ability | [`beast-mastery-ml-parse`](beast-mastery-ml-parse.md) |
 |---|---|
-| Auto Shot | 39% |
-| Summon Hawk | 27% |
-| Serpent Sting | 21% |
-| Pet: Auto Attack | 9% |
+| Auto Shot | 37% |
+| Summon Hawk | 26% |
+| Serpent Sting | 18% |
+| Pet: Auto Attack | 15% |
 | Pet: Claw | 2% |
 | Pet: Bite | 2% |
 

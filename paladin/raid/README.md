@@ -6,9 +6,9 @@
 
 | # | Spec and build | Full raid DPS | Training dummy DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Retribution](retribution.md) — Two-handed Retribution | 1011 | 544 | 479 | best |
+| 1 | [Retribution](retribution.md) — Retribution — Seal of Command / Twist of Light | 889 | 480 | 404 | best |
 
-**Tanking**: [Protection](protection.md) — Protection — Tank.
+**Tanking**: [Protection](protection.md) — Shield tank.
 
 **Healing**: [Holy](holy.md) — Holy — Raid Healer.
 

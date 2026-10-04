@@ -10,7 +10,6 @@
   "retribution-ml-raid",
   "F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-hand-2026-09-27.json",
   "F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-preset-p4-p5-ret.json",
-  "F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-preset-retribution-9-0-42.json",
   "F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r1.json",
   "F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r2.json",
   "F:\\wow-forever\\paladin\\research\\raid\\raidsim\\candidates\\cand-ret-dps-r3.json",
@@ -21,7 +20,7 @@
  ],
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
-  "commit": "40be98e",
+  "commit": "b0f0df3",
   "spec_folder": "paladin/retribution",
   "gear": "_reference/data/raidsim/gear_sets/forever/paladin-retribution-default.p1opt.gear.json",
   "apl": "_reference/data/raidsim/apls/paladin/ret-dps.apl.json",
@@ -49,12 +48,12 @@
  },
  "talents": [
   {
-   "talent": "Champion of the Light",
-   "sim": 0.2562884210956579,
-   "ev_before": 0.25639004095217477,
-   "ev_after": 0.2563907544655648,
-   "scale": 1.0,
-   "how": "kept",
+   "talent": "Seal of Command",
+   "sim": 0.7652173751777878,
+   "ev_before": 0.12165832507117685,
+   "ev_after": 0.766390304824257,
+   "scale": 6.288958039134741,
+   "how": "fitted",
    "builds": [
     "ret-raid-dps",
     "ret-full-buffs-raid",
@@ -62,7 +61,29 @@
     "retribution-ml-raid",
     "cand-ret-dps-hand-2026-09-27",
     "cand-ret-dps-preset-p4-p5-ret",
-    "cand-ret-dps-preset-retribution-9-0-42",
+    "cand-ret-dps-r1",
+    "cand-ret-dps-r2",
+    "cand-ret-dps-r3",
+    "cand-ret-dps-r4",
+    "cand-ret-dps-r5",
+    "cand-ret-dps-r6",
+    "cand-ret-dps-r7"
+   ]
+  },
+  {
+   "talent": "Champion of the Light",
+   "sim": 0.16803307003480034,
+   "ev_before": 0.2507438177246023,
+   "ev_after": 0.16803278552742068,
+   "scale": 0.6772060706280172,
+   "how": "fitted",
+   "builds": [
+    "ret-raid-dps",
+    "ret-full-buffs-raid",
+    "opt-ret-dps-raid-dps",
+    "retribution-ml-raid",
+    "cand-ret-dps-hand-2026-09-27",
+    "cand-ret-dps-preset-p4-p5-ret",
     "cand-ret-dps-r1",
     "cand-ret-dps-r2",
     "cand-ret-dps-r3",
@@ -74,9 +95,9 @@
   },
   {
    "talent": "Holy Conduit",
-   "sim": 0.17050749533219695,
-   "ev_before": 0.17534772764677203,
-   "ev_after": 0.18802352478615067,
+   "sim": 0.1669742003210596,
+   "ev_before": 0.18549581442131263,
+   "ev_after": 0.18567176561217458,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -86,31 +107,6 @@
     "retribution-ml-raid",
     "cand-ret-dps-hand-2026-09-27",
     "cand-ret-dps-preset-p4-p5-ret",
-    "cand-ret-dps-preset-retribution-9-0-42",
-    "cand-ret-dps-r1",
-    "cand-ret-dps-r2",
-    "cand-ret-dps-r3",
-    "cand-ret-dps-r4",
-    "cand-ret-dps-r5",
-    "cand-ret-dps-r6",
-    "cand-ret-dps-r7"
-   ]
-  },
-  {
-   "talent": "Seal of Command",
-   "sim": 0.12070026570731036,
-   "ev_before": 0.12053767554710848,
-   "ev_after": 0.12053797468702925,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "ret-raid-dps",
-    "ret-full-buffs-raid",
-    "opt-ret-dps-raid-dps",
-    "retribution-ml-raid",
-    "cand-ret-dps-hand-2026-09-27",
-    "cand-ret-dps-preset-p4-p5-ret",
-    "cand-ret-dps-preset-retribution-9-0-42",
     "cand-ret-dps-r1",
     "cand-ret-dps-r2",
     "cand-ret-dps-r3",
@@ -122,9 +118,9 @@
   },
   {
    "talent": "Twist of Light",
-   "sim": 0.10872970148013257,
-   "ev_before": 0.056751593753279504,
-   "ev_after": 0.05675157483380159,
+   "sim": 0.11408946406160202,
+   "ev_before": 0.05561220964850334,
+   "ev_after": 0.05483346720125403,
    "scale": 7.609577922077922,
    "how": "capped",
    "builds": [
@@ -134,7 +130,6 @@
     "retribution-ml-raid",
     "cand-ret-dps-hand-2026-09-27",
     "cand-ret-dps-preset-p4-p5-ret",
-    "cand-ret-dps-preset-retribution-9-0-42",
     "cand-ret-dps-r1",
     "cand-ret-dps-r2",
     "cand-ret-dps-r3",
@@ -146,9 +141,9 @@
   },
   {
    "talent": "Vengeance",
-   "sim": 0.07928263305859864,
-   "ev_before": 0.07198279752709456,
-   "ev_after": 0.07198296842992447,
+   "sim": 0.07972496326603193,
+   "ev_before": 0.07198275627226257,
+   "ev_after": 0.07198832741409236,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -158,7 +153,6 @@
     "retribution-ml-raid",
     "cand-ret-dps-hand-2026-09-27",
     "cand-ret-dps-preset-p4-p5-ret",
-    "cand-ret-dps-preset-retribution-9-0-42",
     "cand-ret-dps-r1",
     "cand-ret-dps-r2",
     "cand-ret-dps-r3",
@@ -170,9 +164,9 @@
   },
   {
    "talent": "Improved Seals",
-   "sim": 0.057836893157982176,
-   "ev_before": 0.06301381747509117,
-   "ev_after": 0.06301396583870497,
+   "sim": 0.05774882510258899,
+   "ev_before": 0.06299817562639004,
+   "ev_after": 0.06480698008796348,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -182,7 +176,6 @@
     "retribution-ml-raid",
     "cand-ret-dps-hand-2026-09-27",
     "cand-ret-dps-preset-p4-p5-ret",
-    "cand-ret-dps-preset-retribution-9-0-42",
     "cand-ret-dps-r1",
     "cand-ret-dps-r2",
     "cand-ret-dps-r3",
@@ -194,9 +187,9 @@
   },
   {
    "talent": "Sanctified Judgement",
-   "sim": 0.051916422410473895,
-   "ev_before": 0.05123968396140372,
-   "ev_after": 0.051239352905754765,
+   "sim": 0.05058401568833015,
+   "ev_before": 0.05021675019550563,
+   "ev_after": 0.04950736748796184,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -206,7 +199,6 @@
     "retribution-ml-raid",
     "cand-ret-dps-hand-2026-09-27",
     "cand-ret-dps-preset-p4-p5-ret",
-    "cand-ret-dps-preset-retribution-9-0-42",
     "cand-ret-dps-r1",
     "cand-ret-dps-r2",
     "cand-ret-dps-r3",
@@ -218,9 +210,9 @@
   },
   {
    "talent": "Improved Judgement",
-   "sim": 0.04840691490293957,
-   "ev_before": 0.028824323366724545,
-   "ev_after": 0.028824388953646234,
+   "sim": 0.04534492589431214,
+   "ev_before": 0.026737078059446518,
+   "ev_after": 0.027476858335301096,
    "scale": 1.0,
    "how": "capped",
    "builds": [
@@ -230,7 +222,6 @@
     "retribution-ml-raid",
     "cand-ret-dps-hand-2026-09-27",
     "cand-ret-dps-preset-p4-p5-ret",
-    "cand-ret-dps-preset-retribution-9-0-42",
     "cand-ret-dps-r1",
     "cand-ret-dps-r3",
     "cand-ret-dps-r4",
@@ -241,9 +232,9 @@
   },
   {
    "talent": "Conviction",
-   "sim": 0.04374816000157307,
-   "ev_before": 0.04805125202944275,
-   "ev_after": 0.04805136356789767,
+   "sim": 0.0445314961113822,
+   "ev_before": 0.04966162400036192,
+   "ev_after": 0.05213647191038883,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -253,31 +244,6 @@
     "retribution-ml-raid",
     "cand-ret-dps-hand-2026-09-27",
     "cand-ret-dps-preset-p4-p5-ret",
-    "cand-ret-dps-preset-retribution-9-0-42",
-    "cand-ret-dps-r1",
-    "cand-ret-dps-r2",
-    "cand-ret-dps-r3",
-    "cand-ret-dps-r4",
-    "cand-ret-dps-r5",
-    "cand-ret-dps-r6",
-    "cand-ret-dps-r7"
-   ]
-  },
-  {
-   "talent": "Benediction",
-   "sim": 0.039203693935842644,
-   "ev_before": 0.041048198497735965,
-   "ev_after": 0.04104755708650776,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "ret-raid-dps",
-    "ret-full-buffs-raid",
-    "opt-ret-dps-raid-dps",
-    "retribution-ml-raid",
-    "cand-ret-dps-hand-2026-09-27",
-    "cand-ret-dps-preset-p4-p5-ret",
-    "cand-ret-dps-preset-retribution-9-0-42",
     "cand-ret-dps-r1",
     "cand-ret-dps-r2",
     "cand-ret-dps-r3",
@@ -289,9 +255,9 @@
   },
   {
    "talent": "Instrument of Law",
-   "sim": 0.037656381391005835,
-   "ev_before": 0.037477203769831095,
-   "ev_after": 0.037476900043152364,
+   "sim": 0.03906088505669124,
+   "ev_before": 0.03679364951013986,
+   "ev_after": 0.035983763478261585,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -301,7 +267,29 @@
     "retribution-ml-raid",
     "cand-ret-dps-hand-2026-09-27",
     "cand-ret-dps-preset-p4-p5-ret",
-    "cand-ret-dps-preset-retribution-9-0-42",
+    "cand-ret-dps-r1",
+    "cand-ret-dps-r2",
+    "cand-ret-dps-r3",
+    "cand-ret-dps-r4",
+    "cand-ret-dps-r5",
+    "cand-ret-dps-r6",
+    "cand-ret-dps-r7"
+   ]
+  },
+  {
+   "talent": "Benediction",
+   "sim": 0.03904373740310718,
+   "ev_before": 0.04023715394395895,
+   "ev_after": 0.03966232209364256,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "ret-raid-dps",
+    "ret-full-buffs-raid",
+    "opt-ret-dps-raid-dps",
+    "retribution-ml-raid",
+    "cand-ret-dps-hand-2026-09-27",
+    "cand-ret-dps-preset-p4-p5-ret",
     "cand-ret-dps-r1",
     "cand-ret-dps-r2",
     "cand-ret-dps-r3",
@@ -313,9 +301,9 @@
   },
   {
    "talent": "Precision",
-   "sim": 0.0361118135784198,
-   "ev_before": 0.036254958344167636,
-   "ev_after": 0.03625503979344586,
+   "sim": 0.0366005800657256,
+   "ev_before": 0.03618457828489722,
+   "ev_after": 0.0360793722446245,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -331,9 +319,9 @@
   },
   {
    "talent": "Sacred Arbiter",
-   "sim": 0.02453625796502572,
-   "ev_before": 0.022304926627065746,
-   "ev_after": 0.022304977131211136,
+   "sim": 0.023807298824143494,
+   "ev_before": 0.021032697628655502,
+   "ev_after": 0.021612083755074098,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -343,7 +331,6 @@
     "retribution-ml-raid",
     "cand-ret-dps-hand-2026-09-27",
     "cand-ret-dps-preset-p4-p5-ret",
-    "cand-ret-dps-preset-retribution-9-0-42",
     "cand-ret-dps-r1",
     "cand-ret-dps-r2",
     "cand-ret-dps-r3",
@@ -355,9 +342,9 @@
   },
   {
    "talent": "Divine Intellect",
-   "sim": 0.01815938787341088,
-   "ev_before": 0.016398229352432136,
-   "ev_after": 0.016398267130996003,
+   "sim": 0.014887802727382049,
+   "ev_before": 0.017011324305600654,
+   "ev_after": 0.016803643833340327,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -367,7 +354,29 @@
     "retribution-ml-raid",
     "cand-ret-dps-hand-2026-09-27",
     "cand-ret-dps-preset-p4-p5-ret",
-    "cand-ret-dps-preset-retribution-9-0-42",
+    "cand-ret-dps-r1",
+    "cand-ret-dps-r2",
+    "cand-ret-dps-r3",
+    "cand-ret-dps-r4",
+    "cand-ret-dps-r5",
+    "cand-ret-dps-r6",
+    "cand-ret-dps-r7"
+   ]
+  },
+  {
+   "talent": "Two-Handed Weapon Specialization",
+   "sim": 0.009948254580509082,
+   "ev_before": 0.00897747061370822,
+   "ev_after": 0.009361852274980485,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "ret-raid-dps",
+    "ret-full-buffs-raid",
+    "opt-ret-dps-raid-dps",
+    "retribution-ml-raid",
+    "cand-ret-dps-hand-2026-09-27",
+    "cand-ret-dps-preset-p4-p5-ret",
     "cand-ret-dps-r1",
     "cand-ret-dps-r2",
     "cand-ret-dps-r3",
@@ -379,9 +388,9 @@
   },
   {
    "talent": "Reverence",
-   "sim": 0.010759831108479263,
-   "ev_before": 0.008555173310907487,
-   "ev_after": 0.008554885668224847,
+   "sim": 0.009496086220625232,
+   "ev_before": 0.008403469529214579,
+   "ev_after": 0.008283104084649058,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -392,39 +401,15 @@
     "cand-ret-dps-r1",
     "cand-ret-dps-r2",
     "cand-ret-dps-r4",
-    "cand-ret-dps-r6",
-    "cand-ret-dps-r7"
-   ]
-  },
-  {
-   "talent": "Two-Handed Weapon Specialization",
-   "sim": 0.008921234391335556,
-   "ev_before": 0.008937365391609265,
-   "ev_after": 0.008937385323324661,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "ret-raid-dps",
-    "ret-full-buffs-raid",
-    "opt-ret-dps-raid-dps",
-    "retribution-ml-raid",
-    "cand-ret-dps-hand-2026-09-27",
-    "cand-ret-dps-preset-p4-p5-ret",
-    "cand-ret-dps-preset-retribution-9-0-42",
-    "cand-ret-dps-r1",
-    "cand-ret-dps-r2",
-    "cand-ret-dps-r3",
-    "cand-ret-dps-r4",
-    "cand-ret-dps-r5",
     "cand-ret-dps-r6",
     "cand-ret-dps-r7"
    ]
   },
   {
    "talent": "Divine Strength",
-   "sim": 0.004312543656625212,
-   "ev_before": 0.004571286908676475,
-   "ev_after": 0.004571297044639849,
+   "sim": 0.004763357995714154,
+   "ev_before": 0.004512671246006806,
+   "ev_after": 0.004512997431144139,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -434,7 +419,6 @@
     "retribution-ml-raid",
     "cand-ret-dps-hand-2026-09-27",
     "cand-ret-dps-preset-p4-p5-ret",
-    "cand-ret-dps-preset-retribution-9-0-42",
     "cand-ret-dps-r1",
     "cand-ret-dps-r2",
     "cand-ret-dps-r3",
@@ -446,9 +430,9 @@
   },
   {
    "talent": "Vindication",
-   "sim": 0.0022352942189165785,
-   "ev_before": 0.002463764498216707,
-   "ev_after": 0.0024637699439801855,
+   "sim": 0.00243348690095498,
+   "ev_before": 0.002473402122584976,
+   "ev_after": 0.0025908650353513355,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -458,7 +442,6 @@
     "retribution-ml-raid",
     "cand-ret-dps-hand-2026-09-27",
     "cand-ret-dps-preset-p4-p5-ret",
-    "cand-ret-dps-preset-retribution-9-0-42",
     "cand-ret-dps-r1",
     "cand-ret-dps-r2",
     "cand-ret-dps-r3",
@@ -469,10 +452,23 @@
    ]
   },
   {
+   "talent": "Divine Favor",
+   "sim": 0.000653956736071439,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "ret-raid-dps",
+    "cand-ret-dps-preset-p4-p5-ret",
+    "cand-ret-dps-r1"
+   ]
+  },
+  {
    "talent": "Toughness",
    "sim": 0.0,
-   "ev_before": 2.2502425424917007e-05,
-   "ev_after": 2.227885900723682e-05,
+   "ev_before": 2.2510902596289078e-05,
+   "ev_after": 1.5237387304407731e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -487,8 +483,8 @@
   {
    "talent": "Purifying Power",
    "sim": 0.0,
-   "ev_before": 2.7558690109097305e-05,
-   "ev_after": 2.728489411343598e-05,
+   "ev_before": 2.7572353477657256e-05,
+   "ev_after": 1.8663293202590798e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -496,43 +492,10 @@
    ]
   },
   {
-   "talent": "Deflection",
-   "sim": 0.0,
-   "ev_before": 2.3551254533045108e-05,
-   "ev_after": 2.3317267196607115e-05,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "cand-ret-dps-preset-retribution-9-0-42"
-   ]
-  },
-  {
-   "talent": "Pursuit of Justice",
-   "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "cand-ret-dps-preset-retribution-9-0-42"
-   ]
-  },
-  {
-   "talent": "Repentance",
-   "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "cand-ret-dps-preset-retribution-9-0-42"
-   ]
-  },
-  {
    "talent": "Redoubt",
    "sim": 0.0,
-   "ev_before": 2.2954478550760838e-05,
-   "ev_after": 2.2726420811348216e-05,
+   "ev_before": 2.293451496628307e-05,
+   "ev_after": 1.552608356031455e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -551,19 +514,6 @@
     "cand-ret-dps-r4",
     "cand-ret-dps-r6"
    ]
-  },
-  {
-   "talent": "Divine Favor",
-   "sim": -0.00018462311901194271,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "ret-raid-dps",
-    "cand-ret-dps-preset-p4-p5-ret",
-    "cand-ret-dps-r1"
-   ]
   }
  ],
  "mana": {
@@ -572,457 +522,430 @@
     "raid-dps",
     "raid-dps-extwc"
    ],
-   "loss": 0.465,
-   "cap": 0.22,
-   "rms": 0.0164,
-   "points": 67
+   "loss": 0.4725,
+   "cap": 0.23,
+   "rms": 0.0163,
+   "points": 63
   },
   "builds": {
    "ret-raid-dps": {
-    "dps": 529.6524033822856,
-    "surplus": 546.9963026553055,
+    "dps": 472.52133479569966,
+    "surplus": 491.26150644957,
     "oom_seconds": 0.0,
-    "deficit": 0.03170752560634649,
+    "deficit": 0.03814703860945412,
     "sustain": 1.4329,
-    "bound_share": 0.8719,
-    "model_deficit": 0.0279
+    "bound_share": 0.8408,
+    "model_deficit": 0.0333
    },
    "ret-full-buffs-raid": {
-    "dps": 535.504620804412,
-    "surplus": 560.7895222450825,
+    "dps": 479.80774762349245,
+    "surplus": 504.3018002507144,
     "oom_seconds": 0.0,
-    "deficit": 0.04508804183688053,
+    "deficit": 0.04857022642997644,
     "sustain": 1.4063,
-    "bound_share": 0.8721,
-    "model_deficit": 0.0512
+    "bound_share": 0.841,
+    "model_deficit": 0.0557
    },
    "opt-ret-dps-raid-dps": {
-    "dps": 544.1984694927952,
-    "surplus": 562.3184318418813,
+    "dps": 485.16165358364844,
+    "surplus": 504.41432066233415,
     "oom_seconds": 0.0,
-    "deficit": 0.03222366780639563,
+    "deficit": 0.03816835940225782,
     "sustain": 1.4287,
-    "bound_share": 0.8723,
-    "model_deficit": 0.0316
+    "bound_share": 0.8411,
+    "model_deficit": 0.0368
    },
    "retribution-ml-raid": {
-    "dps": 545.8455229944974,
-    "surplus": 563.8421719386974,
+    "dps": 486.8108712537279,
+    "surplus": 505.93785919694517,
     "oom_seconds": 0.0,
-    "deficit": 0.03191788383320271,
+    "deficit": 0.03780501418410709,
     "sustain": 1.4245,
-    "bound_share": 0.8722,
-    "model_deficit": 0.0353
+    "bound_share": 0.8411,
+    "model_deficit": 0.0404
    },
    "cand-ret-dps-hand-2026-09-27": {
-    "dps": 535.504620804412,
-    "surplus": 560.7895222450825,
+    "dps": 479.80774762349245,
+    "surplus": 504.3018002507144,
     "oom_seconds": 0.0,
-    "deficit": 0.04508804183688053,
+    "deficit": 0.04857022642997644,
     "sustain": 1.4063,
-    "bound_share": 0.8721,
-    "model_deficit": 0.0512
+    "bound_share": 0.841,
+    "model_deficit": 0.0557
    },
    "cand-ret-dps-preset-p4-p5-ret": {
-    "dps": 529.128139143219,
-    "surplus": 546.6603481392629,
+    "dps": 471.9967752525464,
+    "surplus": 489.6067810444872,
     "oom_seconds": 0.0,
-    "deficit": 0.03207148470841259,
+    "deficit": 0.03596765092667442,
     "sustain": 1.4287,
-    "bound_share": 0.872,
-    "model_deficit": 0.0316
-   },
-   "cand-ret-dps-preset-retribution-9-0-42": {
-    "dps": 513.0680332350405,
-    "surplus": 538.5860975870522,
-    "oom_seconds": 0.8614113244426678,
-    "deficit": 0.047379730866311864,
-    "sustain": 1.4016,
-    "bound_share": 0.8719,
-    "model_deficit": 0.0553
+    "bound_share": 0.8409,
+    "model_deficit": 0.0368
    },
    "cand-ret-dps-r1": {
-    "dps": 529.6524033822856,
-    "surplus": 546.9963026553055,
+    "dps": 472.52133479569966,
+    "surplus": 491.26150644957,
     "oom_seconds": 0.0,
-    "deficit": 0.03170752560634649,
+    "deficit": 0.03814703860945412,
     "sustain": 1.4329,
-    "bound_share": 0.8719,
-    "model_deficit": 0.0279
+    "bound_share": 0.8408,
+    "model_deficit": 0.0333
    },
    "cand-ret-dps-r2": {
-    "dps": 513.5399253893063,
-    "surplus": 542.7885936240428,
+    "dps": 461.0119464587665,
+    "surplus": 489.07717023045615,
     "oom_seconds": 0.0,
-    "deficit": 0.0538859301361726,
+    "deficit": 0.057384039738483716,
     "sustain": 1.4105,
-    "bound_share": 0.8684,
-    "model_deficit": 0.0473
+    "bound_share": 0.8365,
+    "model_deficit": 0.0519
    },
    "cand-ret-dps-r3": {
-    "dps": 531.6645185249265,
-    "surplus": 559.1345642542185,
+    "dps": 477.1569885550777,
+    "surplus": 503.4785453931288,
     "oom_seconds": 0.8614113244426678,
-    "deficit": 0.049129578969835164,
+    "deficit": 0.05227940113614682,
     "sustain": 1.4016,
-    "bound_share": 0.8721,
-    "model_deficit": 0.0553
+    "bound_share": 0.8409,
+    "model_deficit": 0.0596
    },
    "cand-ret-dps-r4": {
-    "dps": 529.7991231321292,
-    "surplus": 547.3165316963631,
+    "dps": 472.0582762613306,
+    "surplus": 490.4902152754248,
     "oom_seconds": 0.0,
-    "deficit": 0.03200599205351984,
+    "deficit": 0.037578606952932025,
     "sustain": 1.4329,
-    "bound_share": 0.8719,
-    "model_deficit": 0.0279
+    "bound_share": 0.8408,
+    "model_deficit": 0.0333
    },
    "cand-ret-dps-r5": {
-    "dps": 531.6645185249265,
-    "surplus": 559.1345642542185,
+    "dps": 477.1569885550777,
+    "surplus": 503.4785453931288,
     "oom_seconds": 0.8614113244426678,
-    "deficit": 0.049129578969835164,
+    "deficit": 0.05227940113614682,
     "sustain": 1.4016,
-    "bound_share": 0.8721,
-    "model_deficit": 0.0553
+    "bound_share": 0.8409,
+    "model_deficit": 0.0596
    },
    "cand-ret-dps-r6": {
-    "dps": 528.1748700185398,
-    "surplus": 545.4487376124815,
+    "dps": 470.43392913835027,
+    "surplus": 488.62347841492436,
     "oom_seconds": 0.0,
-    "deficit": 0.031669094458907976,
+    "deficit": 0.03722610574420271,
     "sustain": 1.4329,
-    "bound_share": 0.8721,
-    "model_deficit": 0.028
+    "bound_share": 0.841,
+    "model_deficit": 0.0333
    },
    "cand-ret-dps-r7": {
-    "dps": 544.1984694927952,
-    "surplus": 562.3184318418813,
+    "dps": 485.16165358364844,
+    "surplus": 504.41432066233415,
     "oom_seconds": 0.0,
-    "deficit": 0.03222366780639563,
+    "deficit": 0.03816835940225782,
     "sustain": 1.4287,
-    "bound_share": 0.8723,
-    "model_deficit": 0.0316
+    "bound_share": 0.8411,
+    "model_deficit": 0.0368
    }
   },
   "removals": {
    "ret-raid-dps -Benediction": {
-    "deficit": 0.0563,
+    "deficit": 0.0615,
     "sustain": 1.3896,
-    "bound_share": 0.8719,
-    "model_deficit": 0.0657
+    "bound_share": 0.8408,
+    "model_deficit": 0.0697
    },
    "ret-raid-dps -Holy Conduit": {
-    "deficit": 0.154,
+    "deficit": 0.158,
     "sustain": 1.1921,
-    "bound_share": 0.8719,
-    "model_deficit": 0.1918
+    "bound_share": 0.8408,
+    "model_deficit": 0.1934
    },
    "ret-raid-dps -Reverence": {
-    "deficit": 0.0439,
+    "deficit": 0.0486,
     "sustain": 1.4203,
-    "bound_share": 0.8719,
-    "model_deficit": 0.039
+    "bound_share": 0.8408,
+    "model_deficit": 0.0439
    },
    "ret-raid-dps -Sanctified Judgement": {
-    "deficit": 0.0632,
+    "deficit": 0.0699,
     "sustain": 1.3793,
-    "bound_share": 0.8719,
-    "model_deficit": 0.0747
+    "bound_share": 0.8408,
+    "model_deficit": 0.0784
    },
    "ret-full-buffs-raid -Benediction": {
-    "deficit": 0.1027,
+    "deficit": 0.1045,
     "sustain": 1.3629,
-    "bound_share": 0.8721,
-    "model_deficit": 0.089
+    "bound_share": 0.841,
+    "model_deficit": 0.0922
    },
    "ret-full-buffs-raid -Holy Conduit": {
-    "deficit": 0.1914,
+    "deficit": 0.1929,
     "sustain": 1.1655,
-    "bound_share": 0.8721,
-    "model_deficit": 0.1919
+    "bound_share": 0.841,
+    "model_deficit": 0.1934
    },
    "ret-full-buffs-raid -Sanctified Judgement": {
-    "deficit": 0.1199,
+    "deficit": 0.125,
     "sustain": 1.3526,
-    "bound_share": 0.8721,
-    "model_deficit": 0.098
+    "bound_share": 0.841,
+    "model_deficit": 0.1008
    },
    "opt-ret-dps-raid-dps -Benediction": {
-    "deficit": 0.069,
+    "deficit": 0.0749,
     "sustain": 1.3854,
-    "bound_share": 0.8723,
-    "model_deficit": 0.0695
+    "bound_share": 0.8411,
+    "model_deficit": 0.0733
    },
    "opt-ret-dps-raid-dps -Holy Conduit": {
-    "deficit": 0.211,
+    "deficit": 0.2147,
     "sustain": 1.1879,
-    "bound_share": 0.8723,
-    "model_deficit": 0.1919
+    "bound_share": 0.8411,
+    "model_deficit": 0.1935
    },
    "opt-ret-dps-raid-dps -Reverence": {
-    "deficit": 0.043,
+    "deficit": 0.0482,
     "sustain": 1.4203,
-    "bound_share": 0.8723,
-    "model_deficit": 0.039
+    "bound_share": 0.8411,
+    "model_deficit": 0.0439
    },
    "opt-ret-dps-raid-dps -Sanctified Judgement": {
-    "deficit": 0.076,
+    "deficit": 0.0816,
     "sustain": 1.3751,
-    "bound_share": 0.8723,
-    "model_deficit": 0.0784
+    "bound_share": 0.8411,
+    "model_deficit": 0.0819
    },
    "retribution-ml-raid -Benediction": {
-    "deficit": 0.0779,
+    "deficit": 0.0841,
     "sustain": 1.3811,
-    "bound_share": 0.8722,
-    "model_deficit": 0.0731
+    "bound_share": 0.8411,
+    "model_deficit": 0.0768
    },
    "retribution-ml-raid -Holy Conduit": {
-    "deficit": 0.1738,
+    "deficit": 0.178,
     "sustain": 1.1837,
-    "bound_share": 0.8722,
-    "model_deficit": 0.1919
+    "bound_share": 0.8411,
+    "model_deficit": 0.1935
    },
    "retribution-ml-raid -Reverence": {
-    "deficit": 0.0427,
+    "deficit": 0.0479,
     "sustain": 1.4203,
-    "bound_share": 0.8722,
-    "model_deficit": 0.039
+    "bound_share": 0.8411,
+    "model_deficit": 0.0439
    },
    "retribution-ml-raid -Sanctified Judgement": {
-    "deficit": 0.0726,
+    "deficit": 0.0797,
     "sustain": 1.3709,
-    "bound_share": 0.8722,
-    "model_deficit": 0.0821
+    "bound_share": 0.8411,
+    "model_deficit": 0.0855
    },
    "cand-ret-dps-hand-2026-09-27 -Benediction": {
-    "deficit": 0.1027,
+    "deficit": 0.1045,
     "sustain": 1.3629,
-    "bound_share": 0.8721,
-    "model_deficit": 0.089
+    "bound_share": 0.841,
+    "model_deficit": 0.0922
    },
    "cand-ret-dps-hand-2026-09-27 -Holy Conduit": {
-    "deficit": 0.1914,
+    "deficit": 0.1929,
     "sustain": 1.1655,
-    "bound_share": 0.8721,
-    "model_deficit": 0.1919
+    "bound_share": 0.841,
+    "model_deficit": 0.1934
    },
    "cand-ret-dps-hand-2026-09-27 -Sanctified Judgement": {
-    "deficit": 0.1199,
+    "deficit": 0.125,
     "sustain": 1.3526,
-    "bound_share": 0.8721,
-    "model_deficit": 0.098
+    "bound_share": 0.841,
+    "model_deficit": 0.1008
    },
    "cand-ret-dps-preset-p4-p5-ret -Benediction": {
-    "deficit": 0.0735,
+    "deficit": 0.0766,
     "sustain": 1.3854,
-    "bound_share": 0.872,
-    "model_deficit": 0.0694
+    "bound_share": 0.8409,
+    "model_deficit": 0.0733
    },
    "cand-ret-dps-preset-p4-p5-ret -Holy Conduit": {
-    "deficit": 0.1382,
+    "deficit": 0.1392,
     "sustain": 1.1879,
-    "bound_share": 0.872,
-    "model_deficit": 0.1918
+    "bound_share": 0.8409,
+    "model_deficit": 0.1934
    },
    "cand-ret-dps-preset-p4-p5-ret -Reverence": {
-    "deficit": 0.0443,
+    "deficit": 0.0464,
     "sustain": 1.4203,
-    "bound_share": 0.872,
-    "model_deficit": 0.039
+    "bound_share": 0.8409,
+    "model_deficit": 0.0439
    },
    "cand-ret-dps-preset-p4-p5-ret -Sanctified Judgement": {
-    "deficit": 0.0698,
+    "deficit": 0.0722,
     "sustain": 1.3751,
-    "bound_share": 0.872,
-    "model_deficit": 0.0784
-   },
-   "cand-ret-dps-preset-retribution-9-0-42 -Benediction": {
-    "deficit": 0.0815,
-    "sustain": 1.3583,
-    "bound_share": 0.8719,
-    "model_deficit": 0.0931
-   },
-   "cand-ret-dps-preset-retribution-9-0-42 -Holy Conduit": {
-    "deficit": 0.2042,
-    "sustain": 1.1608,
-    "bound_share": 0.8719,
-    "model_deficit": 0.1918
-   },
-   "cand-ret-dps-preset-retribution-9-0-42 -Sanctified Judgement": {
-    "deficit": 0.1143,
-    "sustain": 1.348,
-    "bound_share": 0.8719,
-    "model_deficit": 0.102
+    "bound_share": 0.8409,
+    "model_deficit": 0.0819
    },
    "cand-ret-dps-r1 -Benediction": {
-    "deficit": 0.0563,
+    "deficit": 0.0615,
     "sustain": 1.3896,
-    "bound_share": 0.8719,
-    "model_deficit": 0.0657
+    "bound_share": 0.8408,
+    "model_deficit": 0.0697
    },
    "cand-ret-dps-r1 -Holy Conduit": {
-    "deficit": 0.154,
+    "deficit": 0.158,
     "sustain": 1.1921,
-    "bound_share": 0.8719,
-    "model_deficit": 0.1918
+    "bound_share": 0.8408,
+    "model_deficit": 0.1934
    },
    "cand-ret-dps-r1 -Reverence": {
-    "deficit": 0.0439,
+    "deficit": 0.0486,
     "sustain": 1.4203,
-    "bound_share": 0.8719,
-    "model_deficit": 0.039
+    "bound_share": 0.8408,
+    "model_deficit": 0.0439
    },
    "cand-ret-dps-r1 -Sanctified Judgement": {
-    "deficit": 0.0632,
+    "deficit": 0.0699,
     "sustain": 1.3793,
-    "bound_share": 0.8719,
-    "model_deficit": 0.0747
+    "bound_share": 0.8408,
+    "model_deficit": 0.0784
    },
    "cand-ret-dps-r2 -Benediction": {
-    "deficit": 0.0871,
+    "deficit": 0.0908,
     "sustain": 1.3672,
-    "bound_share": 0.8684,
-    "model_deficit": 0.085
+    "bound_share": 0.8365,
+    "model_deficit": 0.0881
    },
    "cand-ret-dps-r2 -Holy Conduit": {
-    "deficit": 0.1846,
+    "deficit": 0.1862,
     "sustain": 1.1697,
-    "bound_share": 0.8684,
-    "model_deficit": 0.191
+    "bound_share": 0.8365,
+    "model_deficit": 0.1924
    },
    "cand-ret-dps-r2 -Reverence": {
-    "deficit": 0.0548,
+    "deficit": 0.0578,
     "sustain": 1.4063,
-    "bound_share": 0.8684,
-    "model_deficit": 0.051
+    "bound_share": 0.8365,
+    "model_deficit": 0.0554
    },
    "cand-ret-dps-r2 -Sanctified Judgement": {
-    "deficit": 0.0871,
+    "deficit": 0.0898,
     "sustain": 1.3569,
-    "bound_share": 0.8684,
-    "model_deficit": 0.0939
+    "bound_share": 0.8365,
+    "model_deficit": 0.0967
    },
    "cand-ret-dps-r3 -Benediction": {
-    "deficit": 0.0845,
+    "deficit": 0.0895,
     "sustain": 1.3583,
-    "bound_share": 0.8721,
-    "model_deficit": 0.0931
+    "bound_share": 0.8409,
+    "model_deficit": 0.0961
    },
    "cand-ret-dps-r3 -Holy Conduit": {
-    "deficit": 0.2052,
+    "deficit": 0.2076,
     "sustain": 1.1608,
-    "bound_share": 0.8721,
-    "model_deficit": 0.1919
+    "bound_share": 0.8409,
+    "model_deficit": 0.1934
    },
    "cand-ret-dps-r3 -Sanctified Judgement": {
-    "deficit": 0.1131,
+    "deficit": 0.1178,
     "sustain": 1.348,
-    "bound_share": 0.8721,
-    "model_deficit": 0.1021
+    "bound_share": 0.8409,
+    "model_deficit": 0.1047
    },
    "cand-ret-dps-r4 -Benediction": {
-    "deficit": 0.0527,
+    "deficit": 0.0566,
     "sustain": 1.3896,
-    "bound_share": 0.8719,
-    "model_deficit": 0.0657
+    "bound_share": 0.8408,
+    "model_deficit": 0.0697
    },
    "cand-ret-dps-r4 -Holy Conduit": {
-    "deficit": 0.1349,
+    "deficit": 0.1397,
     "sustain": 1.1921,
-    "bound_share": 0.8719,
-    "model_deficit": 0.1918
+    "bound_share": 0.8408,
+    "model_deficit": 0.1934
    },
    "cand-ret-dps-r4 -Illumination": {
-    "deficit": 0.032,
+    "deficit": 0.0376,
     "sustain": 1.4329,
-    "bound_share": 0.8719,
-    "model_deficit": 0.0279
+    "bound_share": 0.8408,
+    "model_deficit": 0.0333
    },
    "cand-ret-dps-r4 -Reverence": {
-    "deficit": 0.0433,
+    "deficit": 0.0473,
     "sustain": 1.4203,
-    "bound_share": 0.8719,
-    "model_deficit": 0.039
+    "bound_share": 0.8408,
+    "model_deficit": 0.0439
    },
    "cand-ret-dps-r4 -Sanctified Judgement": {
-    "deficit": 0.0575,
+    "deficit": 0.0615,
     "sustain": 1.3793,
-    "bound_share": 0.8719,
-    "model_deficit": 0.0747
+    "bound_share": 0.8408,
+    "model_deficit": 0.0784
    },
    "cand-ret-dps-r5 -Benediction": {
-    "deficit": 0.0845,
+    "deficit": 0.0895,
     "sustain": 1.3583,
-    "bound_share": 0.8721,
-    "model_deficit": 0.0931
+    "bound_share": 0.8409,
+    "model_deficit": 0.0961
    },
    "cand-ret-dps-r5 -Holy Conduit": {
-    "deficit": 0.2052,
+    "deficit": 0.2076,
     "sustain": 1.1608,
-    "bound_share": 0.8721,
-    "model_deficit": 0.1919
+    "bound_share": 0.8409,
+    "model_deficit": 0.1934
    },
    "cand-ret-dps-r5 -Sanctified Judgement": {
-    "deficit": 0.1131,
+    "deficit": 0.1178,
     "sustain": 1.348,
-    "bound_share": 0.8721,
-    "model_deficit": 0.1021
+    "bound_share": 0.8409,
+    "model_deficit": 0.1047
    },
    "cand-ret-dps-r6 -Benediction": {
-    "deficit": 0.0524,
+    "deficit": 0.0563,
     "sustain": 1.3896,
-    "bound_share": 0.8721,
-    "model_deficit": 0.0658
+    "bound_share": 0.841,
+    "model_deficit": 0.0697
    },
    "cand-ret-dps-r6 -Holy Conduit": {
-    "deficit": 0.135,
+    "deficit": 0.1398,
     "sustain": 1.1921,
-    "bound_share": 0.8721,
-    "model_deficit": 0.1919
+    "bound_share": 0.841,
+    "model_deficit": 0.1934
    },
    "cand-ret-dps-r6 -Illumination": {
-    "deficit": 0.0317,
+    "deficit": 0.0372,
     "sustain": 1.4329,
-    "bound_share": 0.8721,
-    "model_deficit": 0.028
+    "bound_share": 0.841,
+    "model_deficit": 0.0333
    },
    "cand-ret-dps-r6 -Reverence": {
-    "deficit": 0.043,
+    "deficit": 0.047,
     "sustain": 1.4203,
-    "bound_share": 0.8721,
-    "model_deficit": 0.039
+    "bound_share": 0.841,
+    "model_deficit": 0.0439
    },
    "cand-ret-dps-r6 -Sanctified Judgement": {
-    "deficit": 0.0573,
+    "deficit": 0.0612,
     "sustain": 1.3793,
-    "bound_share": 0.8721,
-    "model_deficit": 0.0747
+    "bound_share": 0.841,
+    "model_deficit": 0.0784
    },
    "cand-ret-dps-r7 -Benediction": {
-    "deficit": 0.069,
+    "deficit": 0.0749,
     "sustain": 1.3854,
-    "bound_share": 0.8723,
-    "model_deficit": 0.0695
+    "bound_share": 0.8411,
+    "model_deficit": 0.0733
    },
    "cand-ret-dps-r7 -Holy Conduit": {
-    "deficit": 0.211,
+    "deficit": 0.2147,
     "sustain": 1.1879,
-    "bound_share": 0.8723,
-    "model_deficit": 0.1919
+    "bound_share": 0.8411,
+    "model_deficit": 0.1935
    },
    "cand-ret-dps-r7 -Reverence": {
-    "deficit": 0.043,
+    "deficit": 0.0482,
     "sustain": 1.4203,
-    "bound_share": 0.8723,
-    "model_deficit": 0.039
+    "bound_share": 0.8411,
+    "model_deficit": 0.0439
    },
    "cand-ret-dps-r7 -Sanctified Judgement": {
-    "deficit": 0.076,
+    "deficit": 0.0816,
     "sustain": 1.3751,
-    "bound_share": 0.8723,
-    "model_deficit": 0.0784
+    "bound_share": 0.8411,
+    "model_deficit": 0.0819
    }
   }
  }

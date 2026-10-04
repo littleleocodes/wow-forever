@@ -7,6 +7,10 @@
     5
    ],
    [
+    "Moonglow",
+    3
+   ],
+   [
     "Nature's Majesty",
     2
    ],
@@ -15,33 +19,25 @@
     2
    ],
    [
-    "Moonglow",
-    3
-   ],
-   [
     "Nature's Splendor",
     1
    ]
   ],
   "Feral Combat": [
    [
-    "Heart of the Wild",
-    5
-   ],
-   [
     "Ferocity",
     5
    ],
    [
-    "Feral Swiftness",
-    1
+    "Heart of the Wild",
+    5
    ],
    [
-    "Sharpened Claws",
+    "Feral Swiftness",
     2
    ],
    [
-    "Savage Fury",
+    "Feral Instinct",
     2
    ],
    [
@@ -49,7 +45,11 @@
     3
    ],
    [
-    "Blood Frenzy",
+    "Savage Fury",
+    2
+   ],
+   [
+    "Sharpened Claws",
     2
    ],
    [
@@ -57,12 +57,12 @@
     3
    ],
    [
-    "Leader of the Pack",
-    1
+    "Blood Frenzy",
+    2
    ],
    [
-    "King of the Jungle",
-    3
+    "Leader of the Pack",
+    1
    ],
    [
     "Predatory Instincts",
@@ -84,5 +84,8 @@
    ]
   ]
  },
- "note": "Optimizer raid build saved by rebuild.py on 2026-09-26 (raid calibration round 1)"
+ "note": "Optimizer raid build saved by rebuild.py on 2026-09-26 (raid calibration round 1)",
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

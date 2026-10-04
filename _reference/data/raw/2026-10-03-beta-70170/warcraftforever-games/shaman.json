@@ -1,0 +1,1081 @@
+{
+  "slug": "shaman",
+  "name": "Shaman",
+  "source": "World of Warcraft: Forever beta client, build 1.60.1.69893 (trait tables read with scripts/talents/client.ts)",
+  "captured": "2026-09-18",
+  "build": "1.60.1.69893",
+  "trees": [
+    {
+      "id": "elemental",
+      "name": "Elemental",
+      "icon": "spell_nature_lightning",
+      "background": "ShamanElementalCombat",
+      "talents": [
+        {
+          "id": "elemental/convection",
+          "row": 0,
+          "col": 1,
+          "name": "Convection",
+          "icon": "spell_nature_wispsplode",
+          "maxRank": 5,
+          "ranks": [
+            "Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 2%.",
+            "Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 4%.",
+            "Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 6%.",
+            "Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 8%.",
+            "Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 10%."
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed"
+          ],
+          "classic": [
+            "Reduces the mana cost of your Shock, Lightning Bolt and Chain Lightning spells by 2%.",
+            "Reduces the mana cost of your Shock, Lightning Bolt and Chain Lightning spells by 4%.",
+            "Reduces the mana cost of your Shock, Lightning Bolt and Chain Lightning spells by 6%.",
+            "Reduces the mana cost of your Shock, Lightning Bolt and Chain Lightning spells by 8%.",
+            "Reduces the mana cost of your Shock, Lightning Bolt and Chain Lightning spells by 10%."
+          ],
+          "evidence": "shaman/01-shaman-elemental-convection.jpg"
+        },
+        {
+          "id": "elemental/concussion",
+          "row": 0,
+          "col": 2,
+          "name": "Concussion",
+          "icon": "spell_nature_earthshock",
+          "maxRank": 5,
+          "ranks": [
+            "Increases the damage done by your Lightning Bolt, Chain Lightning, and Earth Shock spells by 1%.",
+            "Increases the damage done by your Lightning Bolt, Chain Lightning, and Earth Shock spells by 2%.",
+            "Increases the damage done by your Lightning Bolt, Chain Lightning, and Earth Shock spells by 3%.",
+            "Increases the damage done by your Lightning Bolt, Chain Lightning, and Earth Shock spells by 4%.",
+            "Increases the damage done by your Lightning Bolt, Chain Lightning, and Earth Shock spells by 5%."
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed"
+          ],
+          "classic": [
+            "Increases the damage done by your Lightning Bolt, Chain Lightning and Shock spells by 1%.",
+            "Increases the damage done by your Lightning Bolt, Chain Lightning and Shock spells by 2%.",
+            "Increases the damage done by your Lightning Bolt, Chain Lightning and Shock spells by 3%.",
+            "Increases the damage done by your Lightning Bolt, Chain Lightning and Shock spells by 4%.",
+            "Increases the damage done by your Lightning Bolt, Chain Lightning and Shock spells by 5%."
+          ],
+          "evidence": "shaman/02-shaman-elemental-concussion.jpg"
+        },
+        {
+          "id": "elemental/elemental-warding",
+          "row": 1,
+          "col": 0,
+          "name": "Elemental Warding",
+          "icon": "spell_nature_spiritarmor",
+          "maxRank": 3,
+          "ranks": [
+            "Reduces damage taken from Fire, Frost, and Nature effects by 3%.",
+            "Reduces damage taken from Fire, Frost, and Nature effects by 7%.",
+            "Reduces damage taken from Fire, Frost, and Nature effects by 10%."
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed",
+            "was Elemental row 2, col 2"
+          ],
+          "classic": [
+            "Reduces damage taken from Fire, Frost and Nature effects by 4%.",
+            "Reduces damage taken from Fire, Frost and Nature effects by 7%.",
+            "Reduces damage taken from Fire, Frost and Nature effects by 10%."
+          ],
+          "evidence": "shaman/03-shaman-elemental-elemental-warding.jpg"
+        },
+        {
+          "id": "elemental/reverberation",
+          "row": 1,
+          "col": 1,
+          "name": "Reverberation",
+          "icon": "spell_frost_frostward",
+          "maxRank": 5,
+          "ranks": [
+            "Reduces the cooldown of your Shock spells by 0.2 sec.",
+            "Reduces the cooldown of your Shock spells by 0.4 sec.",
+            "Reduces the cooldown of your Shock spells by 0.6 sec.",
+            "Reduces the cooldown of your Shock spells by 0.8 sec.",
+            "Reduces the cooldown of your Shock spells by 1.0 sec."
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed",
+            "was Elemental row 3, col 2"
+          ],
+          "classic": [
+            "Reduces the cooldown of your Shock spells by 0 sec.",
+            "Reduces the cooldown of your Shock spells by 0 sec.",
+            "Reduces the cooldown of your Shock spells by 1 sec.",
+            "Reduces the cooldown of your Shock spells by 1 sec.",
+            "Reduces the cooldown of your Shock spells by 1 sec."
+          ],
+          "evidence": "shaman/04-shaman-elemental-reverberation.jpg"
+        },
+        {
+          "id": "elemental/call-of-flame",
+          "row": 1,
+          "col": 2,
+          "name": "Call of Flame",
+          "icon": "spell_fire_immolation",
+          "maxRank": 3,
+          "ranks": [
+            "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 5%.",
+            "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 10%.",
+            "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 15%."
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed"
+          ],
+          "classic": [
+            "Increases the damage done by your Fire Totems by 5%.",
+            "Increases the damage done by your Fire Totems by 10%.",
+            "Increases the damage done by your Fire Totems by 15%."
+          ],
+          "evidence": "shaman/05-shaman-elemental-call-of-flame.jpg"
+        },
+        {
+          "id": "elemental/elemental-devastation",
+          "row": 1,
+          "col": 3,
+          "name": "Elemental Devastation",
+          "icon": "spell_fire_elementaldevastation",
+          "maxRank": 3,
+          "ranks": [
+            "Your offensive spell critical strikes will increase your chance to get a critical strike with melee attacks by 3% for 10 sec.",
+            "Your offensive spell critical strikes will increase your chance to get a critical strike with melee attacks by 6% for 10 sec.",
+            "Your offensive spell critical strikes will increase your chance to get a critical strike with melee attacks by 9% for 10 sec."
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed",
+            "was Elemental row 4, col 4"
+          ],
+          "classic": [
+            "Your offensive spell crits will increase your chance to get a critical strike with melee attacks by 3% for 10 sec.",
+            "Your offensive spell crits will increase your chance to get a critical strike with melee attacks by 6% for 10 sec.",
+            "Your offensive spell crits will increase your chance to get a critical strike with melee attacks by 9% for 10 sec."
+          ],
+          "evidence": "shaman/06-shaman-elemental-elemental-devastation.jpg"
+        },
+        {
+          "id": "elemental/elemental-focus",
+          "row": 2,
+          "col": 1,
+          "name": "Elemental Focus",
+          "icon": "spell_shadow_manaburn",
+          "maxRank": 1,
+          "ranks": [
+            "Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%."
+          ],
+          "status": "moved",
+          "diff": [
+            "was Elemental row 3, col 1"
+          ],
+          "evidence": "shaman/07-shaman-elemental-elemental-focus.jpg"
+        },
+        {
+          "id": "elemental/elemental-fury",
+          "row": 2,
+          "col": 2,
+          "name": "Elemental Fury",
+          "icon": "spell_fire_volcano",
+          "maxRank": 5,
+          "ranks": [
+            "Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 20%.",
+            "Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 40%.",
+            "Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 60%.",
+            "Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 80%.",
+            "Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 100%."
+          ],
+          "status": "changed",
+          "diff": [
+            "max rank 1 → 5",
+            "tooltip changed",
+            "was Elemental row 5, col 2"
+          ],
+          "classic": [
+            "Increases the critical strike damage bonus of your Searing, Magma, and Fire Nova Totems and your Fire, Frost, and Nature spells by 100%."
+          ],
+          "evidence": "shaman/08-shaman-elemental-elemental-fury.jpg"
+        },
+        {
+          "id": "elemental/improved-fire-nova",
+          "row": 3,
+          "col": 0,
+          "name": "Improved Fire Nova",
+          "icon": "spell_fire_sealoffire",
+          "maxRank": 2,
+          "ranks": [
+            "Increases the damage done by your Fire Nova spell by 10% and reduces its cooldown by 2 sec.",
+            "Increases the damage done by your Fire Nova spell by 20% and reduces its cooldown by 4 sec."
+          ],
+          "status": "new",
+          "evidence": "shaman/09-shaman-elemental-improved-fire-nova.jpg"
+        },
+        {
+          "id": "elemental/eye-of-the-storm",
+          "row": 3,
+          "col": 1,
+          "name": "Eye of the Storm",
+          "icon": "spell_nature_eyeofthestorm",
+          "maxRank": 3,
+          "ranks": [
+            "Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, and Lava Burst by 23%.",
+            "Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, and Lava Burst by 47%.",
+            "Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, and Lava Burst by 70%."
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed"
+          ],
+          "classic": [
+            "Gives you a 33% chance to gain the Focused Casting effect that lasts for 6 sec after being the victim of a melee or ranged critical strike. The Focused Casting effect prevents you from losing casting time when taking damage.",
+            "Gives you a 66% chance to gain the Focused Casting effect that lasts for 6 sec after being the victim of a melee or ranged critical strike. The Focused Casting effect prevents you from losing casting time when taking damage.",
+            "Gives you a 100% chance to gain the Focused Casting effect that lasts for 6 sec after being the victim of a melee or ranged critical strike. The Focused Casting effect prevents you from losing casting time when taking damage."
+          ],
+          "evidence": "shaman/10-shaman-elemental-eye-of-the-storm.jpg"
+        },
+        {
+          "id": "elemental/call-of-thunder",
+          "row": 3,
+          "col": 2,
+          "name": "Call of Thunder",
+          "icon": "spell_nature_callstorm",
+          "maxRank": 1,
+          "ranks": [
+            "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by 3%."
+          ],
+          "status": "changed",
+          "diff": [
+            "max rank 5 → 1",
+            "tooltip changed",
+            "was Elemental row 3, col 3"
+          ],
+          "classic": [
+            "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional 1%.",
+            "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional 2%.",
+            "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional 3%.",
+            "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional 4%.",
+            "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional 6%."
+          ],
+          "evidence": "shaman/11-shaman-elemental-call-of-thunder.jpg",
+          "prereq": {
+            "id": "elemental/elemental-fury",
+            "rank": 5
+          }
+        },
+        {
+          "id": "elemental/elemental-reach",
+          "row": 4,
+          "col": 0,
+          "name": "Elemental Reach",
+          "icon": "spell_nature_stormreach",
+          "maxRank": 2,
+          "ranks": [
+            "Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 3 yards, and increases the range of your Flame Shock spell by 8 yards.",
+            "Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 6 yards, and increases the range of your Flame Shock spell by 15 yards."
+          ],
+          "status": "new",
+          "evidence": "shaman/12-shaman-elemental-elemental-reach.jpg"
+        },
+        {
+          "id": "elemental/lightning-overload",
+          "row": 4,
+          "col": 1,
+          "name": "Lightning Overload",
+          "icon": "spell_nature_lightningoverload",
+          "maxRank": 3,
+          "ranks": [
+            "Gives your Lightning Bolt and Chain Lightning spells a 3% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat.",
+            "Gives your Lightning Bolt and Chain Lightning spells a 7% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat.",
+            "Gives your Lightning Bolt and Chain Lightning spells a 10% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat."
+          ],
+          "status": "new",
+          "evidence": "shaman/13-shaman-elemental-lightning-overload.jpg"
+        },
+        {
+          "id": "elemental/earthbound",
+          "row": 4,
+          "col": 3,
+          "name": "Earthbound",
+          "icon": "spell_nature_stranglevines",
+          "maxRank": 1,
+          "ranks": [
+            "Your Earthbind Totem Immobilizes nearby targets for 5 sec when cast."
+          ],
+          "status": "new",
+          "evidence": "shaman/14-shaman-elemental-earthbound.jpg"
+        },
+        {
+          "id": "elemental/elemental-alacrity",
+          "row": 5,
+          "col": 2,
+          "name": "Elemental Alacrity",
+          "icon": "spell_lightning_lightningbolt01",
+          "maxRank": 3,
+          "ranks": [
+            "Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by 0.17 sec.",
+            "Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by 0.33 sec.",
+            "Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by 0.50 sec."
+          ],
+          "status": "new",
+          "evidence": "shaman/15-shaman-elemental-elemental-alacrity.jpg",
+          "prereq": {
+            "id": "elemental/call-of-thunder",
+            "rank": 1
+          }
+        },
+        {
+          "id": "elemental/lava-burst",
+          "row": 6,
+          "col": 1,
+          "name": "Lava Burst",
+          "icon": "spell_shaman_lavaburst",
+          "maxRank": 1,
+          "ranks": [
+            "You hurl molten lava at the target, dealing 105 to 135 Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage."
+          ],
+          "status": "new",
+          "evidence": "shaman/16-shaman-elemental-lava-burst.jpg",
+          "prereq": {
+            "id": "elemental/lightning-overload",
+            "rank": 3
+          }
+        }
+      ],
+      "removed": [
+        "Improved Fire Totems",
+        "Storm Reach",
+        "Lightning Mastery",
+        "Elemental Mastery"
+      ]
+    },
+    {
+      "id": "enhancement",
+      "name": "Enhancement",
+      "icon": "spell_nature_lightningshield",
+      "background": "ShamanEnhancement",
+      "talents": [
+        {
+          "id": "enhancement/earth-s-grasp",
+          "row": 0,
+          "col": 0,
+          "name": "Earth's Grasp",
+          "icon": "spell_nature_stoneclawtotem",
+          "maxRank": 2,
+          "ranks": [
+            "Increases the health of your Stoneclaw Totem by 25% and the radius of your Earthbind Totem by 10%.",
+            "Increases the health of your Stoneclaw Totem by 50% and the radius of your Earthbind Totem by 20%."
+          ],
+          "status": "moved",
+          "diff": [
+            "was Elemental row 2, col 1"
+          ],
+          "evidence": "shaman/17-shaman-enhancement-earth-s-grasp.jpg"
+        },
+        {
+          "id": "enhancement/thundering-strikes",
+          "row": 0,
+          "col": 1,
+          "name": "Thundering Strikes",
+          "icon": "ability_thunderbolt",
+          "maxRank": 5,
+          "ranks": [
+            "Improves your chance to get a critical strike with all spells and attacks by 1%.",
+            "Improves your chance to get a critical strike with all spells and attacks by 2%.",
+            "Improves your chance to get a critical strike with all spells and attacks by 3%.",
+            "Improves your chance to get a critical strike with all spells and attacks by 4%.",
+            "Improves your chance to get a critical strike with all spells and attacks by 5%."
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed",
+            "was Enhancement row 2, col 2"
+          ],
+          "classic": [
+            "Improves your chance to get a critical strike with your weapon attacks by 1%.",
+            "Improves your chance to get a critical strike with your weapon attacks by 2%.",
+            "Improves your chance to get a critical strike with your weapon attacks by 3%.",
+            "Improves your chance to get a critical strike with your weapon attacks by 4%.",
+            "Improves your chance to get a critical strike with your weapon attacks by 5%."
+          ],
+          "evidence": "shaman/18-shaman-enhancement-thundering-strikes.jpg"
+        },
+        {
+          "id": "enhancement/ancestral-knowledge",
+          "row": 0,
+          "col": 2,
+          "name": "Ancestral Knowledge",
+          "icon": "spell_shadow_grimward",
+          "maxRank": 5,
+          "ranks": [
+            "Increases your Intellect by 2%.",
+            "Increases your Intellect by 4%.",
+            "Increases your Intellect by 6%.",
+            "Increases your Intellect by 8%.",
+            "Increases your Intellect by 10%."
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed",
+            "was Enhancement row 1, col 2"
+          ],
+          "classic": [
+            "Increases your maximum Mana by 1%.",
+            "Increases your maximum Mana by 2%.",
+            "Increases your maximum Mana by 3%.",
+            "Increases your maximum Mana by 4%.",
+            "Increases your maximum Mana by 5%."
+          ],
+          "evidence": "shaman/19-shaman-enhancement-ancestral-knowledge.jpg"
+        },
+        {
+          "id": "enhancement/guardian-totems",
+          "row": 1,
+          "col": 0,
+          "name": "Guardian Totems",
+          "icon": "spell_nature_stoneskintotem",
+          "maxRank": 2,
+          "ranks": [
+            "Increases the amount of damage reduced by your Stoneskin Totem and Windwall Totem by 10% and reduces the cooldown of your Grounding Totem by 1 sec.",
+            "Increases the amount of damage reduced by your Stoneskin Totem and Windwall Totem by 20% and reduces the cooldown of your Grounding Totem by 2 sec."
+          ],
+          "status": "same",
+          "evidence": "shaman/20-shaman-enhancement-guardian-totems.jpg"
+        },
+        {
+          "id": "enhancement/mental-dexterity",
+          "row": 1,
+          "col": 1,
+          "name": "Mental Dexterity",
+          "icon": "spell_nature_mentalquickness",
+          "maxRank": 3,
+          "ranks": [
+            "Increases your Attack Power by an amount equal to 33% of your Intellect.",
+            "Increases your Attack Power by an amount equal to 67% of your Intellect.",
+            "Increases your Attack Power by an amount equal to 100% of your Intellect."
+          ],
+          "status": "new",
+          "evidence": "shaman/21-shaman-enhancement-mental-dexterity.jpg"
+        },
+        {
+          "id": "enhancement/improved-ghost-wolf",
+          "row": 1,
+          "col": 2,
+          "name": "Improved Ghost Wolf",
+          "icon": "spell_nature_spiritwolf",
+          "maxRank": 2,
+          "ranks": [
+            "Reduces the cast time of your Ghost Wolf spell by 1.0 sec, and Ghost Wolf may be used indoors.",
+            "Reduces the cast time of your Ghost Wolf spell by 3.0 sec, and Ghost Wolf may be used indoors."
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed"
+          ],
+          "classic": [
+            "Reduces the cast time of your Ghost Wolf spell by 1 sec.",
+            "Reduces the cast time of your Ghost Wolf spell by 2 sec."
+          ],
+          "evidence": "shaman/22-shaman-enhancement-improved-ghost-wolf.jpg"
+        },
+        {
+          "id": "enhancement/improved-lightning-shield",
+          "row": 1,
+          "col": 3,
+          "name": "Improved Lightning Shield",
+          "icon": "spell_nature_lightningshield",
+          "maxRank": 3,
+          "ranks": [
+            "Increases the damage done by your Lightning Shield orbs by 5%.",
+            "Increases the damage done by your Lightning Shield orbs by 10%.",
+            "Increases the damage done by your Lightning Shield orbs by 15%."
+          ],
+          "status": "same",
+          "evidence": "shaman/23-shaman-enhancement-improved-lightning-shield.jpg"
+        },
+        {
+          "id": "enhancement/elemental-weapons",
+          "row": 2,
+          "col": 0,
+          "name": "Elemental Weapons",
+          "icon": "spell_fire_flametounge",
+          "maxRank": 3,
+          "ranks": [
+            "Increases the melee attack power bonus of your Rockbiter Weapon by 7%, your Windfury Weapon effect by 13% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by 5%.",
+            "Increases the melee attack power bonus of your Rockbiter Weapon by 13%, your Windfury Weapon effect by 27% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by 10%.",
+            "Increases the melee attack power bonus of your Rockbiter Weapon by 20%, your Windfury Weapon effect by 40% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by 15%."
+          ],
+          "status": "moved",
+          "diff": [
+            "was Enhancement row 5, col 2"
+          ],
+          "evidence": "shaman/24-shaman-enhancement-elemental-weapons.jpg"
+        },
+        {
+          "id": "enhancement/shamanistic-focus",
+          "row": 2,
+          "col": 2,
+          "name": "Shamanistic Focus",
+          "icon": "spell_nature_elementalabsorption",
+          "maxRank": 1,
+          "ranks": [
+            "Reduces the mana cost of your Shock and Lightning Shield spells by 45%."
+          ],
+          "status": "new",
+          "evidence": "shaman/25-shaman-enhancement-shamanistic-focus.jpg"
+        },
+        {
+          "id": "enhancement/anticipation",
+          "row": 2,
+          "col": 3,
+          "name": "Anticipation",
+          "icon": "spell_nature_mirrorimage",
+          "maxRank": 3,
+          "ranks": [
+            "Increases your chance to dodge by an additional 2%.",
+            "Increases your chance to dodge by an additional 4%.",
+            "Increases your chance to dodge by an additional 6%."
+          ],
+          "status": "changed",
+          "diff": [
+            "max rank 5 → 3",
+            "tooltip changed"
+          ],
+          "classic": [
+            "Increases your chance to dodge by an additional 1%.",
+            "Increases your chance to dodge by an additional 2%.",
+            "Increases your chance to dodge by an additional 3%.",
+            "Increases your chance to dodge by an additional 4%.",
+            "Increases your chance to dodge by an additional 5%."
+          ],
+          "evidence": "shaman/26-shaman-enhancement-anticipation.jpg"
+        },
+        {
+          "id": "enhancement/toughness",
+          "row": 3,
+          "col": 0,
+          "name": "Toughness",
+          "icon": "spell_holy_devotion",
+          "maxRank": 5,
+          "ranks": [
+            "Increases your Stamina by 2%.",
+            "Increases your Stamina by 4%.",
+            "Increases your Stamina by 6%.",
+            "Increases your Stamina by 8%.",
+            "Increases your Stamina by 10%."
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed",
+            "was Enhancement row 4, col 3"
+          ],
+          "classic": [
+            "Increases your armor value from items by 2%.",
+            "Increases your armor value from items by 4%.",
+            "Increases your armor value from items by 6%.",
+            "Increases your armor value from items by 8%.",
+            "Increases your armor value from items by 10%."
+          ],
+          "evidence": "shaman/27-shaman-enhancement-toughness.jpg"
+        },
+        {
+          "id": "enhancement/flurry",
+          "row": 3,
+          "col": 1,
+          "name": "Flurry",
+          "icon": "ability_ghoulfrenzy",
+          "maxRank": 5,
+          "ranks": [
+            "Increases your attack speed by 5% for your next 3 swings after dealing a melee critical strike.",
+            "Increases your attack speed by 10% for your next 3 swings after dealing a melee critical strike.",
+            "Increases your attack speed by 15% for your next 3 swings after dealing a melee critical strike.",
+            "Increases your attack speed by 20% for your next 3 swings after dealing a melee critical strike.",
+            "Increases your attack speed by 25% for your next 3 swings after dealing a melee critical strike."
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed"
+          ],
+          "classic": [
+            "Increases your attack speed by 10% for your next 3 swings after dealing a critical strike.",
+            "Increases your attack speed by 15% for your next 3 swings after dealing a critical strike.",
+            "Increases your attack speed by 20% for your next 3 swings after dealing a critical strike.",
+            "Increases your attack speed by 25% for your next 3 swings after dealing a critical strike.",
+            "Increases your attack speed by 30% for your next 3 swings after dealing a critical strike."
+          ],
+          "evidence": "shaman/28-shaman-enhancement-flurry.jpg",
+          "prereq": {
+            "id": "enhancement/mental-dexterity",
+            "rank": 3
+          }
+        },
+        {
+          "id": "enhancement/stormstrike",
+          "row": 3,
+          "col": 2,
+          "name": "Stormstrike",
+          "icon": "ability_shaman_stormstrike",
+          "maxRank": 1,
+          "ranks": [
+            "Instantly strike for normal weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec."
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed",
+            "was Enhancement row 7, col 2"
+          ],
+          "classic": [
+            "Gives you an extra attack. In addition, the next 2 sources of Nature damage dealt to the target are increased by 20%. Lasts 12 sec."
+          ],
+          "evidence": "shaman/29-shaman-enhancement-stormstrike.jpg"
+        },
+        {
+          "id": "enhancement/spirit-weapons",
+          "row": 4,
+          "col": 0,
+          "name": "Spirit Weapons",
+          "icon": "ability_parry",
+          "maxRank": 1,
+          "ranks": [
+            "Gives a chance to parry enemy melee attacks, reduces all threat generated by your attacks by 30% while Rockbiter Weapon is not active, and increases all threat generated by 30% while Rockbiter Weapon is active."
+          ],
+          "status": "new",
+          "evidence": "shaman/30-shaman-enhancement-spirit-weapons.jpg"
+        },
+        {
+          "id": "enhancement/mental-quickness",
+          "row": 4,
+          "col": 1,
+          "name": "Mental Quickness",
+          "icon": "spell_nature_sleep",
+          "maxRank": 2,
+          "ranks": [
+            "Increases your spell damage and healing by up to 15% of your Intellect.",
+            "Increases your spell damage and healing by up to 30% of your Intellect."
+          ],
+          "status": "new",
+          "evidence": "shaman/31-shaman-enhancement-mental-quickness.jpg"
+        },
+        {
+          "id": "enhancement/improved-stormstrike",
+          "row": 4,
+          "col": 2,
+          "name": "Improved Stormstrike",
+          "icon": "spell_shaman_improvedstormstrike",
+          "maxRank": 2,
+          "ranks": [
+            "When you Stormstrike, you have a 50% chance to gain 50% mana regeneration while casting spells for 15 sec, and Stormstrike's cooldown has a 50% chance to reset each time you Dodge or Parry.",
+            "When you Stormstrike, you have a 100% chance to gain 50% mana regeneration while casting spells for 15 sec, and Stormstrike's cooldown has a 100% chance to reset each time you Dodge or Parry."
+          ],
+          "status": "new",
+          "evidence": "shaman/32-shaman-enhancement-improved-stormstrike.jpg",
+          "prereq": {
+            "id": "enhancement/stormstrike",
+            "rank": 1
+          }
+        },
+        {
+          "id": "enhancement/maelstrom-weapon",
+          "row": 5,
+          "col": 2,
+          "name": "Maelstrom Weapon",
+          "icon": "spell_shaman_maelstromweapon",
+          "maxRank": 5,
+          "ranks": [
+            "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 4%. Stacks up to 5 times. Lasts 30 sec.",
+            "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 8%. Stacks up to 5 times. Lasts 30 sec.",
+            "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 12%. Stacks up to 5 times. Lasts 30 sec.",
+            "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 16%. Stacks up to 5 times. Lasts 30 sec.",
+            "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 20%. Stacks up to 5 times. Lasts 30 sec."
+          ],
+          "status": "new",
+          "evidence": "shaman/33-shaman-enhancement-maelstrom-weapon.jpg"
+        },
+        {
+          "id": "enhancement/rage-of-the-farseer",
+          "row": 6,
+          "col": 1,
+          "name": "Rage of the Farseer",
+          "icon": "spell_nature_bloodlust",
+          "maxRank": 1,
+          "ranks": [
+            "Increases your melee attack speed and spell casting speed by 30% for 25 sec."
+          ],
+          "status": "new",
+          "evidence": "shaman/34-shaman-enhancement-rage-of-the-farseer.jpg",
+          "prereq": {
+            "id": "enhancement/mental-quickness",
+            "rank": 2
+          }
+        }
+      ],
+      "removed": [
+        "Shield Specialization",
+        "Enhancing Totems",
+        "Two-Handed Axes and Maces",
+        "Improved Weapon Totems",
+        "Parry",
+        "Weapon Mastery"
+      ]
+    },
+    {
+      "id": "restoration",
+      "name": "Restoration",
+      "icon": "spell_nature_magicimmunity",
+      "background": "ShamanRestoration",
+      "talents": [
+        {
+          "id": "restoration/improved-healing-wave",
+          "row": 0,
+          "col": 1,
+          "name": "Improved Healing Wave",
+          "icon": "spell_nature_magicimmunity",
+          "maxRank": 5,
+          "ranks": [
+            "Reduces the casting time of your Healing Wave spell by 0.1 sec.",
+            "Reduces the casting time of your Healing Wave spell by 0.2 sec.",
+            "Reduces the casting time of your Healing Wave spell by 0.3 sec.",
+            "Reduces the casting time of your Healing Wave spell by 0.4 sec.",
+            "Reduces the casting time of your Healing Wave spell by 0.5 sec."
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed"
+          ],
+          "classic": [
+            "Reduces the casting time of your Healing Wave spell by 0 sec.",
+            "Reduces the casting time of your Healing Wave spell by 0 sec.",
+            "Reduces the casting time of your Healing Wave spell by 0 sec.",
+            "Reduces the casting time of your Healing Wave spell by 0 sec.",
+            "Reduces the casting time of your Healing Wave spell by 1 sec."
+          ],
+          "evidence": "shaman/35-shaman-restoration-improved-healing-wave.jpg"
+        },
+        {
+          "id": "restoration/totemic-focus",
+          "row": 0,
+          "col": 2,
+          "name": "Totemic Focus",
+          "icon": "spell_nature_moonglow",
+          "maxRank": 5,
+          "ranks": [
+            "Reduces the Mana cost of your totems and any spells that summon or move them by 5%.",
+            "Reduces the Mana cost of your totems and any spells that summon or move them by 10%.",
+            "Reduces the Mana cost of your totems and any spells that summon or move them by 15%.",
+            "Reduces the Mana cost of your totems and any spells that summon or move them by 20%.",
+            "Reduces the Mana cost of your totems and any spells that summon or move them by 25%."
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed",
+            "was Restoration row 2, col 3"
+          ],
+          "classic": [
+            "Reduces the Mana cost of your totems by 5%.",
+            "Reduces the Mana cost of your totems by 10%.",
+            "Reduces the Mana cost of your totems by 15%.",
+            "Reduces the Mana cost of your totems by 20%.",
+            "Reduces the Mana cost of your totems by 25%."
+          ],
+          "evidence": "shaman/44-shaman-restoration-totemic-focus.jpg"
+        },
+        {
+          "id": "restoration/mindfulness",
+          "row": 1,
+          "col": 0,
+          "name": "Mindfulness",
+          "icon": "spell_nature_sleep",
+          "maxRank": 3,
+          "ranks": [
+            "Allows 17% of your Mana regeneration to continue while casting.",
+            "Allows 33% of your Mana regeneration to continue while casting.",
+            "Allows 50% of your Mana regeneration to continue while casting."
+          ],
+          "status": "new",
+          "evidence": "shaman/37-shaman-restoration-mindfulness.jpg"
+        },
+        {
+          "id": "restoration/natural-grace",
+          "row": 1,
+          "col": 1,
+          "name": "Natural Grace",
+          "icon": "spell_nature_healingtouch",
+          "maxRank": 3,
+          "ranks": [
+            "Reduces the threat generated by your spells by 5%.",
+            "Reduces the threat generated by your spells by 10%.",
+            "Reduces the threat generated by your spells by 15%."
+          ],
+          "status": "new",
+          "evidence": "shaman/38-shaman-restoration-natural-grace.jpg"
+        },
+        {
+          "id": "restoration/tidal-focus",
+          "row": 1,
+          "col": 2,
+          "name": "Tidal Focus",
+          "icon": "spell_frost_manarecharge",
+          "maxRank": 5,
+          "ranks": [
+            "Reduces the Mana cost of your healing spells by 1% and improves your chance to hit by 1%.",
+            "Reduces the Mana cost of your healing spells by 2% and improves your chance to hit by 2%.",
+            "Reduces the Mana cost of your healing spells by 3% and improves your chance to hit by 3%.",
+            "Reduces the Mana cost of your healing spells by 4% and improves your chance to hit by 4%.",
+            "Reduces the Mana cost of your healing spells by 5% and improves your chance to hit by 5%."
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed",
+            "was Restoration row 1, col 3"
+          ],
+          "classic": [
+            "Reduces the Mana cost of your healing spells by 1%.",
+            "Reduces the Mana cost of your healing spells by 2%.",
+            "Reduces the Mana cost of your healing spells by 3%.",
+            "Reduces the Mana cost of your healing spells by 4%.",
+            "Reduces the Mana cost of your healing spells by 5%."
+          ],
+          "evidence": "shaman/39-shaman-restoration-tidal-focus.jpg"
+        },
+        {
+          "id": "restoration/improved-reincarnation",
+          "row": 1,
+          "col": 3,
+          "name": "Improved Reincarnation",
+          "icon": "spell_nature_reincarnation",
+          "maxRank": 2,
+          "ranks": [
+            "Reduces the cooldown of your Reincarnation spell by 10 min, increases your maximum health by 2%, and increases the amount of health and Mana you reincarnate with by an additional 10%.",
+            "Reduces the cooldown of your Reincarnation spell by 20 min, increases your maximum health by 4%, and increases the amount of health and Mana you reincarnate with by an additional 20%."
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed",
+            "was Restoration row 2, col 1"
+          ],
+          "classic": [
+            "Reduces the cooldown of your Reincarnation spell by 10 min and increases the amount of health and mana you reincarnate with by an additional 10%.",
+            "Reduces the cooldown of your Reincarnation spell by 20 min and increases the amount of health and mana you reincarnate with by an additional 20%."
+          ],
+          "evidence": "shaman/40-shaman-restoration-improved-reincarnation.jpg"
+        },
+        {
+          "id": "restoration/ancestral-healing",
+          "row": 2,
+          "col": 0,
+          "name": "Ancestral Healing",
+          "icon": "spell_nature_undyingstrength",
+          "maxRank": 3,
+          "ranks": [
+            "Increases your target's armor value by 8% for 15 sec after getting a critical effect from one of your healing spells.",
+            "Increases your target's armor value by 17% for 15 sec after getting a critical effect from one of your healing spells.",
+            "Increases your target's armor value by 25% for 15 sec after getting a critical effect from one of your healing spells."
+          ],
+          "status": "moved",
+          "diff": [
+            "was Restoration row 2, col 2"
+          ],
+          "evidence": "shaman/41-shaman-restoration-ancestral-healing.jpg"
+        },
+        {
+          "id": "restoration/healing-focus",
+          "row": 2,
+          "col": 1,
+          "name": "Healing Focus",
+          "icon": "spell_nature_healingwavelesser",
+          "maxRank": 3,
+          "ranks": [
+            "Gives you a 23% chance to avoid interruption caused by damage while casting any healing spell.",
+            "Gives you a 47% chance to avoid interruption caused by damage while casting any healing spell.",
+            "Gives you a 70% chance to avoid interruption caused by damage while casting any healing spell."
+          ],
+          "status": "changed",
+          "diff": [
+            "max rank 5 → 3",
+            "tooltip changed"
+          ],
+          "classic": [
+            "Gives you a 14% chance to avoid interruption caused by damage while casting any healing spell.",
+            "Gives you a 28% chance to avoid interruption caused by damage while casting any healing spell.",
+            "Gives you a 42% chance to avoid interruption caused by damage while casting any healing spell.",
+            "Gives you a 56% chance to avoid interruption caused by damage while casting any healing spell.",
+            "Gives you a 70% chance to avoid interruption caused by damage while casting any healing spell."
+          ],
+          "evidence": "shaman/42-shaman-restoration-healing-focus.jpg"
+        },
+        {
+          "id": "restoration/water-shield",
+          "row": 2,
+          "col": 2,
+          "name": "Water Shield",
+          "icon": "ability_shaman_watershield",
+          "maxRank": 1,
+          "ranks": [
+            "The caster is surrounded by 3 globes of water. When a spell, melee, or ranged attack hits the caster or when one of the caster's healing spells gets a critical result, 2% of maximum mana is restored to the caster, expending one water globe. Only one globe will activate every few seconds. Lasts 10 min.\n\nOnly one Elemental Shield can be active on the Shaman at any one time."
+          ],
+          "status": "new",
+          "evidence": "shaman/43-shaman-restoration-water-shield.jpg"
+        },
+        {
+          "id": "restoration/tidal-mastery",
+          "row": 3,
+          "col": 0,
+          "name": "Tidal Mastery",
+          "icon": "spell_nature_tranquility",
+          "maxRank": 5,
+          "ranks": [
+            "Increases the critical effect chance of your healing spells by 1%.",
+            "Increases the critical effect chance of your healing spells by 2%.",
+            "Increases the critical effect chance of your healing spells by 3%.",
+            "Increases the critical effect chance of your healing spells by 4%.",
+            "Increases the critical effect chance of your healing spells by 5%."
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed",
+            "was Restoration row 4, col 3"
+          ],
+          "classic": [
+            "Increases the critical effect chance of your healing and lightning spells by 1%.",
+            "Increases the critical effect chance of your healing and lightning spells by 2%.",
+            "Increases the critical effect chance of your healing and lightning spells by 3%.",
+            "Increases the critical effect chance of your healing and lightning spells by 4%.",
+            "Increases the critical effect chance of your healing and lightning spells by 5%."
+          ],
+          "evidence": "shaman/36-shaman-restoration-tidal-mastery.jpg"
+        },
+        {
+          "id": "restoration/restorative-totems",
+          "row": 3,
+          "col": 1,
+          "name": "Restorative Totems",
+          "icon": "spell_nature_manaregentotem",
+          "maxRank": 5,
+          "ranks": [
+            "Increases the effect of your Mana Spring Totem by 5% and increases the effect of your Healing Stream Totem by 10%.",
+            "Increases the effect of your Mana Spring Totem by 10% and increases the effect of your Healing Stream Totem by 20%.",
+            "Increases the effect of your Mana Spring Totem by 15% and increases the effect of your Healing Stream Totem by 30%.",
+            "Increases the effect of your Mana Spring Totem by 20% and increases the effect of your Healing Stream Totem by 40%.",
+            "Increases the effect of your Mana Spring Totem by 25% and increases the effect of your Healing Stream Totem by 50%."
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed"
+          ],
+          "classic": [
+            "Increases the effect of your Mana Spring and Healing Stream Totems by 5%.",
+            "Increases the effect of your Mana Spring and Healing Stream Totems by 10%.",
+            "Increases the effect of your Mana Spring and Healing Stream Totems by 15%.",
+            "Increases the effect of your Mana Spring and Healing Stream Totems by 20%.",
+            "Increases the effect of your Mana Spring and Healing Stream Totems by 25%."
+          ],
+          "evidence": "shaman/45-shaman-restoration-restorative-totems.jpg"
+        },
+        {
+          "id": "restoration/mana-tide-totem",
+          "row": 3,
+          "col": 2,
+          "name": "Mana Tide Totem",
+          "icon": "spell_frost_summonwaterelemental",
+          "maxRank": 1,
+          "ranks": [
+            "Summons a Mana Tide Totem with 5 health at the feet of the caster for 13 sec-1 sec that restores 88 mana every 3 seconds to group members within 30 yards."
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed",
+            "was Restoration row 7, col 2"
+          ],
+          "classic": [
+            "Summons a Mana Tide Totem with 5 health at the feet of the caster for 13 sec-1 sec that restores 170 mana every 3 seconds to group members within 0 yards."
+          ],
+          "evidence": "shaman/46-shaman-restoration-mana-tide-totem.jpg"
+        },
+        {
+          "id": "restoration/healing-way",
+          "row": 4,
+          "col": 1,
+          "name": "Healing Way",
+          "icon": "spell_nature_healingway",
+          "maxRank": 3,
+          "ranks": [
+            "Increases the amount healed by your Healing Wave spell by 8%.",
+            "Increases the amount healed by your Healing Wave spell by 17%.",
+            "Increases the amount healed by your Healing Wave spell by 25%."
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed",
+            "was Restoration row 5, col 1"
+          ],
+          "classic": [
+            "Your Healing Wave spells have a 33% chance to increase the effect of subsequent Healing Wave spells on that target by 6% for 15 sec. This effect will stack up to 3 times.",
+            "Your Healing Wave spells have a 66% chance to increase the effect of subsequent Healing Wave spells on that target by 6% for 15 sec. This effect will stack up to 3 times.",
+            "Your Healing Wave spells have a 100% chance to increase the effect of subsequent Healing Wave spells on that target by 6% for 15 sec. This effect will stack up to 3 times."
+          ],
+          "evidence": "shaman/47-shaman-restoration-healing-way.jpg"
+        },
+        {
+          "id": "restoration/nature-s-swiftness",
+          "row": 4,
+          "col": 2,
+          "name": "Nature's Swiftness",
+          "icon": "spell_nature_ravenform",
+          "maxRank": 1,
+          "ranks": [
+            "When activated, your next Nature spell with a casting time less than 10 sec. becomes an instant cast spell."
+          ],
+          "status": "same",
+          "evidence": "shaman/48-shaman-restoration-nature-s-swiftness.jpg"
+        },
+        {
+          "id": "restoration/purification",
+          "row": 5,
+          "col": 2,
+          "name": "Purification",
+          "icon": "spell_frost_wizardmark",
+          "maxRank": 5,
+          "ranks": [
+            "Increases the effectiveness of your healing spells by 2%.",
+            "Increases the effectiveness of your healing spells by 4%.",
+            "Increases the effectiveness of your healing spells by 6%.",
+            "Increases the effectiveness of your healing spells by 8%.",
+            "Increases the effectiveness of your healing spells by 10%."
+          ],
+          "status": "same",
+          "evidence": "shaman/49-shaman-restoration-purification.jpg"
+        },
+        {
+          "id": "restoration/riptide",
+          "row": 6,
+          "col": 1,
+          "name": "Riptide",
+          "icon": "spell_nature_riptide",
+          "maxRank": 1,
+          "ranks": [
+            "Heals a friendly target for 484 to 535, an additional 445 over 15 sec, and increases the effectiveness of your Chain Heal casts directly on that target by 25%."
+          ],
+          "status": "new",
+          "evidence": "shaman/50-shaman-restoration-riptide.jpg",
+          "prereq": {
+            "id": "restoration/healing-way",
+            "rank": 3
+          }
+        }
+      ],
+      "removed": [
+        "Nature's Guidance",
+        "Totemic Mastery",
+        "Healing Grace"
+      ]
+    }
+  ]
+}

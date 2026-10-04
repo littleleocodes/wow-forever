@@ -11,19 +11,15 @@
     5
    ],
    [
-    "Arcane Concentration",
-    5
-   ],
-   [
     "Magic Absorption",
     2
+   ],
+   [
+    "Arcane Concentration",
+    5
    ]
   ],
   "Fire": [
-   [
-    "Improved Fireball",
-    5
-   ],
    [
     "Wake of Fire",
     2
@@ -31,6 +27,10 @@
    [
     "Incineration",
     3
+   ],
+   [
+    "Improved Fireball",
+    5
    ],
    [
     "Ignite",
@@ -45,7 +45,7 @@
     3
    ],
    [
-    "Hot Streak",
+    "Heating Up",
     1
    ],
    [
@@ -72,5 +72,8 @@
    ]
   ]
  },
- "note": "Optimizer raid build saved by rebuild.py on 2026-09-27 (raid calibration round 1)"
+ "note": "Optimizer raid build saved by rebuild.py on 2026-09-27 (raid calibration round 1)",
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

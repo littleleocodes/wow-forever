@@ -27,7 +27,7 @@ Classic Era reference builds: [leveling-feral](../talents/classic-baseline/level
 
 - [Leveling guide](guide.md): the recommended build `leveling-feral` level by level, what each bracket feels like and what the fight lab does not model.
 - [Rotation](rotation.md): the priority the fight lab plays and what each leveling build casts per kill, level by level.
-- [Respec plan](respec-plan.md): when a respec while leveling pays for itself (**68.3 h** (24.1% faster than talentless), 0 respec(s).).
+- [Respec plan](respec-plan.md): when a respec while leveling pays for itself (**71.4 h** (20.6% faster than talentless), 0 respec(s).).
 - Recommended build: [leveling-feral](builds/leveling-feral.md).
 
 ## Fight lab (Monte Carlo fight simulator)
@@ -45,7 +45,7 @@ Time per kill = fight + loot, travel, eating, drinking, healing and deaths; a bu
 - **Talents that matter** (time per kill lost when the talent is removed from `opt-feral-cat-dps-leveling-st` at level 60): King of the Jungle +8% (L30 +2%), Ferocity +5% (L30 +3%), Sharpened Claws +5% (L30 +5%), Nature's Reach +5%, Naturalist +4%, Predatory Strikes +3% (L30 +4%).
 - **Measure about zero** single-target at 60 (kept for other reasons or not simulated): Nature's Focus.
 - **Caster mobs:** 19% of pulls at level 20 are casters (creature-database share); 0.00 interrupts per kill at 60.
-- **Race** (hand draft vs every optimizer candidate, 2026-10-02, mean time per kill over levels 15/20/30/40/50/60): leveling-feral 25.5s, cand-cat-r4 25.5s, cand-cat-r3 25.7s, cand-cat-r5 25.7s, cand-cat-r2 26.5s, cand-cat-r1 26.7s, cand-cat-hand-2026-09-26 27.3s — fastest: **leveling-feral**.
+- **Race** (hand draft vs every optimizer candidate, 2026-10-03, mean time per kill over levels 15/20/30/40/50/60): leveling-feral 25.5s, cand-cat-r4 25.5s, cand-cat-r3 25.7s, cand-cat-r5 25.7s, cand-cat-r2 26.5s, cand-cat-r1 26.7s, cand-cat-hand-2026-09-26 27.3s — fastest: **leveling-feral**.
 - **Calibration:** the scorer's `feral-cat-dps` leveling values were fitted jointly to the hand draft and every candidate in [`fightlab/candidates/`](fightlab/candidates/) (1 round, converged: the optimizer build repeats).
 - **Other spec, same module:** `balance-dps` with `opt-balance-dps-leveling-st` ([report](fightlab/balance-dps.md)): L30 51.5s (+121% vs `opt-feral-cat-dps-leveling-st`), L60 51.3s (+80% vs `opt-feral-cat-dps-leveling-st`). Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
 - **Balance (its own rotation):** `balance-dps` with `opt-balance-dps-leveling-st` ([report](fightlab/balance-dps-opt.md)): L40 60.9s per mob in pulls of 1 (single-target build 25.2s), 0.0 deaths/100; L60 51.3s per mob in pulls of 1 (single-target build 28.6s), 0.0 deaths/100.
@@ -59,9 +59,9 @@ When to respec while leveling, with the best point-by-point path: [respec plan](
 
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
 |---|---|---|---|
-| Leveling, Cat | feral-cat-dps | [9/31/11 with order](builds/opt-feral-cat-dps-leveling-st.md) (+33.9%) | [leveling-feral](builds/leveling-feral.md) |
+| Leveling, Cat | feral-cat-dps | [9/31/11](builds/opt-feral-cat-dps-leveling-st.md) (+33.9%) | [leveling-feral](builds/leveling-feral.md) |
 | Leveling, Balance | balance-dps | [36/2/13 with order](builds/opt-balance-dps-leveling-st.md) (+60.4%) | [leveling-feral](builds/leveling-feral.md) |
-| Solo / farming at 60, Cat | feral-cat-dps | [9/31/11 with order](builds/opt-feral-cat-dps-solo-60.md) (+34.1%) | [leveling-feral](builds/leveling-feral.md) |
+| Solo / farming at 60, Cat | feral-cat-dps | [9/31/11](builds/opt-feral-cat-dps-solo-60.md) (+34.1%) | [leveling-feral](builds/leveling-feral.md) |
 
 Model findings: Restoration 11/5/35 keeps Swiftmend and adds Wild Growth, Gift of the Earthmother and Genesis. Cat 9/35/7 (Rend and Tear, King of the Jungle, Berserk, Predatory Instincts) and Bear 9/40/2 (Mangle, Natural Reaction) share Heart of the Wild, Predatory Strikes and Leader of the Pack. Balance 38/0/13 gets Eclipse, Nature's Grace and Vengeance; Cat leveling goes 0/35/16.
 

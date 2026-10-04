@@ -34,9 +34,9 @@ Our Marksmanship raid draft's tree split with Summon Hawk, a Forever Beast Maste
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
 | **Efficiency** | 5/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
-| **Improved Stings** | 3/3 | **NEW** | Increased the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
+| **Improved Stings** | 3/3 | **NEW** | Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
 | **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
-| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party members within 45 yards by 30. Lasts 30 min. |
+| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party members within 45 yds by 30. |
 | **Ranged Weapon Specialization** | 4/5 | unchanged | Increases the damage you deal with ranged weapons by 4%. |
 | **Hawk Eye** | 1/3 | moved | Increases the range of your ranged weapons by 2 yards. |
 
@@ -66,15 +66,15 @@ Our Marksmanship raid draft's tree split with Summon Hawk, a Forever Beast Maste
 
 ## Rank among our builds and the community simulator's
 
-**2 of 5** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 5** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 465 | +0.0% | 793 | -3.4% | 22 s |
-| 2 | **[`mm-hawk-raid`](mm-hawk-raid.md)** | ours: hand draft | 22/29/0 | 461 | -0.9% | 810 | -1.4% | 26 s |
-| 3 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: hand draft | 22/29/0 | 451 | -2.9% | 821 | +0.0% | 36 s |
-| 4 | [`beast-mastery-ml-parse`](beast-mastery-ml-parse.md) | ours: parse build | 31/20/0 | 450 | -3.2% | 812 | -1.1% | 30 s |
-| 5 | *Beast Mastery 35/16/0* | community simulator | - | 431 | -7.2% | 762 | -7.1% | 28 s |
+| 1 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 490 | +0.0% | 849 | -2.3% | 22 s |
+| 2 | [`beast-mastery-ml-parse`](beast-mastery-ml-parse.md) | ours: parse build | 31/20/0 | 478 | -2.3% | 868 | +0.0% | 29 s |
+| 3 | **[`mm-hawk-raid`](mm-hawk-raid.md)** | ours: hand draft | 22/29/0 | 478 | -2.5% | 847 | -2.5% | 26 s |
+| 4 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: hand draft | 22/29/0 | 468 | -4.5% | 857 | -1.3% | 36 s |
+| 5 | *Beast Mastery 35/16/0* | community simulator | - | 462 | -5.8% | 822 | -5.4% | 28 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -114,10 +114,10 @@ Damage by ability:
 
 | Ability | [`mm-hawk-raid`](mm-hawk-raid.md) |
 |---|---|
-| Auto Shot | 41% |
+| Auto Shot | 39% |
 | Summon Hawk | 28% |
-| Serpent Sting | 21% |
-| Pet: Auto Attack | 7% |
+| Serpent Sting | 18% |
+| Pet: Auto Attack | 11% |
 | Pet: Claw | 2% |
 | Pet: Bite | 1% |
 

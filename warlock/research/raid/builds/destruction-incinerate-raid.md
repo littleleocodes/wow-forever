@@ -72,11 +72,11 @@ Destruction to Incinerate, the Forever capstone (Fire damage, +25% on a target w
 
 ## Rank among our builds and the community simulator's
 
-**1 of 1** for `incinerate-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 1** for `incinerate-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`destruction-incinerate-raid`](destruction-incinerate-raid.md)** | ours: hand draft | 9/11/31 | 561 | +0.0% | 647 | +0.0% | 2 s |
+| 1 | **[`destruction-incinerate-raid`](destruction-incinerate-raid.md)** | ours: hand draft | 9/11/31 | 522 | +0.0% | 603 | +0.0% | 2 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -98,7 +98,7 @@ Before the pull: at -1.5s: cast Life Tap.
 | 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.5 |
 | 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 |
 | 11 | if Immolate is on the target: cast Conflagrate | 4.6 |
-| 12 | cast Incinerate | 13.4 |
+| 12 | cast Incinerate | 13.3 |
 
 Damage by ability:
 
@@ -106,7 +106,7 @@ Damage by ability:
 |---|---|
 | Incinerate | 37% |
 | Corruption | 18% |
-| Bane of Agony | 18% |
+| Bane of Agony | 17% |
 | Immolate | 15% |
 | Conflagrate | 12% |
 | Searing Pain | 1% |

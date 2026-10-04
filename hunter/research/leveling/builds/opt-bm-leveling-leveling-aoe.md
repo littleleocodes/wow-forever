@@ -35,7 +35,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-level
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Deflection** | 4/5 | changed | Increases your Parry chance by 8%. |
+| **Deflection** | 4/5 | changed | Increases your Parry chance by 4%. |
 | **Improved Tracking** | 5/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 5%. |
 | **Improved Wing Clip** | 3/3 | changed | Gives your Wing Clip ability a 20% chance to immobilize the target for 5 sec. |
 | **Entrapment** | 3/5 | changed | When your traps are triggered, all affected targets are Entrapped, preventing them from moving for 3 sec. |
@@ -45,8 +45,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-level
 | **Strider Kick** | 1/1 | **NEW** | A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec. |
 | **Expose Prey** | 2/2 | **NEW** | Your attacks against targets with Hunter's Mark have a 10% chance to activate your Mongoose Bite for 5 sec. |
 | **Survivalist's Discipline** | 2/2 | **NEW** | Reduces the cooldown of your Trap and Deterrence abilities by 40%. |
-| **Lightning Reflexes** | 5/5 | changed | Increases your Agility by 15%. |
-| **Lacerating Strikes** | 1/1 | **NEW** | Your Mongoose Bite also causes the target to Bleed for damage over 21 sec equal to 40% of the damage done by Mongoose Bite. |
+| **Lightning Reflexes** | 5/5 | changed | Increases your Agility by 10%. |
+| **Lacerating Strikes** | 1/1 | **NEW** | Your Mongoose Bite also causes the target to Bleed for damage equal to 40% of the damage done by Mongoose Bite over 21 sec |
 
 ## Leveling order
 

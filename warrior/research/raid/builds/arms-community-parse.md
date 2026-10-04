@@ -25,7 +25,7 @@ Arms for a full raid: talentsforever.com's #2 most popular Arms build (37/14/0, 
 | **Improved Overpower** | 2/2 | moved | Increases the critical strike chance of your Overpower ability by 50%. |
 | **Anger Management** | 1/1 | changed | Generates 1 Rage every 3 sec while in combat, and reduces Rage loss while out of combat by 30%. |
 | **Deep Wounds** | 3/3 | changed | Your critical strikes cause your opponent to Bleed, dealing 60% of your melee weapon's average damage over 12 sec. |
-| **Spearing Strike** | 1/1 | **NEW** | A brutal attack that deals 40% weapon damage. Deals an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted. |
+| **Spearing Strike** | 1/1 | **NEW** | A brutal attack that deals 40% weapon damage, plus an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. |
 | **Two-Handed Weapon Specialization** | 3/3 | changed | Increases the damage you deal with two-handed melee weapons by 3%. |
 | **Impale** | 2/2 | changed | Increases the critical strike damage bonus of your abilities by 20%. |
 | **Bloodthrill** | 5/5 | **NEW** | Your Main Hand melee attacks against enemies afflicted by your Rend have a 20% chance to allow the use of your Overpower ability on the target. Lasts 6 sec. |
@@ -38,10 +38,10 @@ Arms for a full raid: talentsforever.com's #2 most popular Arms build (37/14/0, 
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
+| **Booming Voice** | 3/5 | changed | Increases the area of effect of your Shouts by 30% and reduces their Rage cost by 15%. |
 | **Cruelty** | 5/5 | changed | Improves your chance to get a critical strike with melee attacks by 5%. |
-| **Unbridled Wrath** | 5/5 | changed | Gives you a 60% chance to generate 1 additional Rage when you deal melee damage with a weapon. This effect is increased to 2 Rage for two-handed weapons. |
-| **Piercing Howl** | 1/1 | changed | Causes all nearby enemies to be Dazed, reducing movement speed by 50% for 6 sec. |
-| **Boundless Rage** | 3/3 | **NEW** | Increases your maximum Rage by 30. |
+| **Unbridled Wrath** | 5/5 | changed | Gives you a 60% chance to generate 1 additional Rage when you deal melee damage with a weapon. |
+| **Piercing Howl** | 1/1 | changed | Causes all enemies within 10 yds to be Dazed, reducing movement speed by 50% for 6 sec. |
 
 ### Protection (0)
 
@@ -49,13 +49,13 @@ Arms for a full raid: talentsforever.com's #2 most popular Arms build (37/14/0, 
 
 ## Rank among our builds and the community simulator's
 
-**2 of 3** for `arms-battle-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 3** for `arms-battle-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`arms-battle-raid`](arms-battle-raid.md) | ours: hand draft | 34/17/0 | 391 | +0.0% | 740 | -6.5% | 0 s |
-| 2 | **[`arms-community-parse`](arms-community-parse.md)** | ours: parse build | 37/14/0 | 387 | -0.9% | 792 | +0.0% | 0 s |
-| 3 | *Arms 39/12/0* | community simulator | - | 381 | -2.4% | 778 | -1.7% | 0 s |
+| 1 | **[`arms-community-parse`](arms-community-parse.md)** | ours: parse build | 37/14/0 | 434 | +0.0% | 890 | +0.0% | 0 s |
+| 2 | [`arms-battle-raid`](arms-battle-raid.md) | ours: hand draft | 34/17/0 | 433 | -0.2% | 808 | -9.2% | 0 s |
+| 3 | *Arms 39/12/0* | community simulator | - | 428 | -1.3% | 884 | -0.7% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -88,9 +88,9 @@ Before the pull: at -1s: cast Battle Stance.
 
 | # | Priority (the first line whose condition holds is cast) | [`arms-community-parse`](arms-community-parse.md) casts/min |
 |---|---|---|
-| 1 | if not Battle Stance is up: cast Battle Stance | 25.8 |
+| 1 | if not Battle Stance is up: cast Battle Stance | 25.7 |
 | 2 | cast Overpower | 6.4 |
-| 3 | if execute phase (E20): cast Execute | 3.1 |
+| 3 | if execute phase (E20): cast Execute | 3.2 |
 | 4 | cast Goblin Sapper Charge | as ready |
 | 5 | cast Dense Dynamite | as ready |
 | 6 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
@@ -99,16 +99,16 @@ Before the pull: at -1s: cast Battle Stance.
 | 9 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 10 | if time left in the fight ≤ 36.75s: use every other cooldown when ready | as ready |
 | 11 | if rage < 90: cast Bloodrage | 1.0 |
-| 12 | if number of targets > 1: cast Whirlwind | 0.8 |
-| 13 | cast Mortal Strike | 0.5 |
-| 14 | if not Rend is on the target: cast Rend | 2.7 |
-| 15 | cast Slam | 2.8 |
+| 12 | if number of targets > 1: cast Whirlwind | 1.0 |
+| 13 | cast Mortal Strike | 1.9 |
+| 14 | if not Rend is on the target: cast Rend | 2.6 |
+| 15 | cast Slam | 2.7 |
 | 16 | if not Battle Shout is up: cast Battle Shout | 0.3 |
-| 17 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.7 |
-| 18 | if not Berserker Stance is up: cast Berserker Stance | 25.7 |
-| 19 | cast Spearing Strike | 1.8 |
-| 20 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 0.8 |
-| 21 | cast Sunder Armor | 7.7 |
+| 17 | if stacks of Sunder Armor < 5: cast Sunder Armor | 6.9 |
+| 18 | if not Berserker Stance is up: cast Berserker Stance | 25.5 |
+| 19 | cast Spearing Strike | 1.4 |
+| 20 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 1.0 |
+| 21 | cast Sunder Armor | 6.9 |
 
 Lines of the simulator's rotation these builds never cast: cast Death Wish (needs the Death Wish talent); cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Cleave, cast Hamstring (its condition never held in these fights); cast Bloodthirst (needs the Bloodthirst talent).
 
@@ -116,20 +116,21 @@ Damage by ability:
 
 | Ability | [`arms-community-parse`](arms-community-parse.md) |
 |---|---|
-| Auto Attack | 42% |
-| Overpower | 26% |
+| Auto Attack | 38% |
+| Overpower | 23% |
 | Execute | 11% |
-| Slam | 8% |
-| Deep Wound | 5% |
-| Rend | 3% |
+| Deep Wound | 8% |
+| Slam | 7% |
+| Rend | 5% |
+| Mortal Strike | 5% |
 | Whirlwind | 2% |
-| Spearing Strike | 2% |
-| Mortal Strike | 2% |
+| Spearing Strike | 1% |
 | Dragonbreath Chili | 0% |
 
 ## Notes
 
 - 2026-09-30: found by the popular-builds race (popular_race.py) and confirmed by a full-raid talent search (raidsim/talent_opt.py --setting raid --min-tree Arms=30) and a head-to-head race. Simulator numbers are the community's model of the beta.
+- 2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Boundless Rage 3 out; Booming Voice 3 in; to be re-optimized.
 
 ## Open questions (verify in the live game)
 

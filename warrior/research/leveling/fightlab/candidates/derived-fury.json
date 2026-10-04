@@ -3,11 +3,19 @@
  "allocation": {
   "Arms": [
    [
-    "Improved Rend",
+    "Improved Heroic Strike",
     3
    ],
    [
     "Deflection",
+    2
+   ],
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Improved Charge",
     2
    ],
    [
@@ -19,20 +27,12 @@
     3
    ],
    [
-    "Two-Handed Weapon Specialization",
-    2
-   ],
-   [
     "Spearing Strike",
     1
    ],
    [
-    "Improved Charge",
+    "Two-Handed Weapon Specialization",
     2
-   ],
-   [
-    "Improved Heroic Strike",
-    3
    ]
   ],
   "Fury": [
@@ -45,7 +45,7 @@
     5
    ],
    [
-    "Blood Craze",
+    "Furious Precision",
     3
    ],
    [
@@ -53,8 +53,8 @@
     1
    ],
    [
-    "Boundless Rage",
-    1
+    "Blood Craze",
+    3
    ],
    [
     "Enrage",
@@ -65,12 +65,12 @@
     2
    ],
    [
-    "Death Wish",
-    1
+    "Improved Berserker Rage",
+    2
    ],
    [
-    "Precision",
-    3
+    "Death Wish",
+    1
    ],
    [
     "Flurry",
@@ -78,10 +78,6 @@
    ],
    [
     "Bloodthirst",
-    1
-   ],
-   [
-    "Improved Berserker Rage",
     1
    ]
   ],
@@ -311,5 +307,8 @@
   },
   "fights": 800,
   "confirm": 3000
- }
+ },
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

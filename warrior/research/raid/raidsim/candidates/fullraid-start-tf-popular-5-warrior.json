@@ -25,20 +25,20 @@
   ],
   "Fury": [
    [
+    "Booming Voice",
+    5
+   ],
+   [
     "Cruelty",
     5
    ],
    [
+    "Lingering Rage",
+    3
+   ],
+   [
     "Unbridled Wrath",
     5
-   ],
-   [
-    "Improved Cleave",
-    2
-   ],
-   [
-    "Boundless Rage",
-    3
    ],
    [
     "Dual Wield Specialization",
@@ -51,10 +51,6 @@
    [
     "Enrage",
     5
-   ],
-   [
-    "Precision",
-    3
    ],
    [
     "Death Wish",
@@ -70,5 +66,8 @@
    ]
   ],
   "Protection": []
- }
+ },
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

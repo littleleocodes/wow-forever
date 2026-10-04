@@ -6,9 +6,9 @@
 
 | # | Spec and build | Full raid DPS | Training dummy DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Enhancement](enhancement.md) — Enhancement — Raid 🔬 | 801 | 409 | 363 | best |
-| 2 | [Elemental-Enhancement](elemental-enhancement.md) — Elemental-Enhancement — Raid 🔬 | 764 | 387 | 339 | -5% |
-| 3 | [Elemental](elemental.md) — Elemental (optimized) | 553 | 440 | 422 | -31% |
+| 1 | [Enhancement](enhancement.md) — Enhancement — Raid 🔬 | 783 | 397 | 354 | best |
+| 2 | [Elemental-Enhancement](elemental-enhancement.md) — Elemental-Enhancement — Raid 🔬 | 748 | 377 | 330 | -4% |
+| 3 | [Elemental](elemental.md) — Elemental (optimized) | 518 | 408 | 390 | -34% |
 
 **Healing**: [Restoration](restoration.md) — Restoration — Raid Healer.
 

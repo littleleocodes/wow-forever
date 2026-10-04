@@ -66,16 +66,16 @@ Allocation adopted on 2026-09-27 from `opt-enhancement-dps-raid-dps`, the best b
 
 ## Rank among our builds and the community simulator's
 
-**3 of 6** for `enhancement-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 6** for `enhancement-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) | ours: optimizer | 11/31/9 | 413 | +0.0% | 755 | -5.6% | 14 s |
-| 2 | [`enhancement-ml-raid`](enhancement-ml-raid.md) | ours: hand draft | 19/32/0 | 409 | -0.9% | 801 | +0.0% | 29 s |
-| 3 | **[`enhancement-raid-dps`](enhancement-raid-dps.md)** | ours: hand draft | 11/31/9 | 408 | -1.4% | 745 | -6.9% | 14 s |
-| 4 | *Level 60* | community simulator | - | 405 | -2.0% | 755 | -5.7% | 31 s |
-| 5 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: hand draft | 22/29/0 | 387 | -6.3% | 764 | -4.6% | 34 s |
-| 6 | *Enhancement 16/35/0* | community simulator | - | 367 | -11.2% | 734 | -8.4% | 84 s |
+| 1 | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) | ours: optimizer | 11/31/9 | 400 | +0.0% | 738 | -5.7% | 14 s |
+| 2 | [`enhancement-ml-raid`](enhancement-ml-raid.md) | ours: hand draft | 19/32/0 | 397 | -0.8% | 783 | +0.0% | 29 s |
+| 3 | **[`enhancement-raid-dps`](enhancement-raid-dps.md)** | ours: hand draft | 11/31/9 | 395 | -1.4% | 729 | -6.9% | 14 s |
+| 4 | *Level 60* | community simulator | - | 393 | -1.8% | 737 | -5.8% | 31 s |
+| 5 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: hand draft | 22/29/0 | 377 | -5.9% | 748 | -4.4% | 34 s |
+| 6 | *Enhancement 16/35/0* | community simulator | - | 357 | -10.7% | 720 | -8.0% | 84 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -101,7 +101,7 @@ Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of A
 | 1 | if time left on the totem ≤ 0s: cast Strength of Earth Totem | 0.3 |
 | 2 | if time left on the totem ≤ 0s: cast Grace of Air Totem | 0.3 |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | cast Stormstrike | 14.1 |
+| 4 | cast Stormstrike | 14.0 |
 | 5 | if stacks of Maelstrom Weapon ≥ 3.75: cast Lightning Bolt | 4.6 |
 | 6 | if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.3 |
 | 7 | if not Flame Shock is on the target: cast Flame Shock | 4.0 |
@@ -112,12 +112,12 @@ Damage by ability:
 
 | Ability | [`enhancement-raid-dps`](enhancement-raid-dps.md) |
 |---|---|
-| Auto Attack | 28% |
-| Windfury Weapon | 18% |
-| Lightning Bolt | 12% |
+| Auto Attack | 29% |
+| spell 439440 | 19% |
 | Earth Shock | 12% |
+| Lightning Bolt | 11% |
+| Stormstrike | 11% |
 | Flame Shock | 10% |
-| Stormstrike | 10% |
 | Attack | 6% |
 | Dragonbreath Chili | 3% |
 

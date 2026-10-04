@@ -6,7 +6,7 @@
 
 > 🔬 These are your **raid talents** ([prot-tank](../raid/protection.md)), taken in the order that levels fastest: the fight lab raced three orders to them (own tree first: 31 s per kill; stats model's order: 33 s per kill; own tree last: 33 s per kill). A model of the beta, to check at launch.
 
-**Leveling as Protection or as Retribution?** This build takes 31 s per kill (level-weighted, 20-60), [Retribution](../leveling/retribution.md) 28 s: Protection is 11% slower. Your first Protection point comes at level 10. Level this way if you want to tank dungeons later on the way; otherwise level as Retribution and switch at 60 (a respec at a class trainer).
+**Leveling as Protection or as Retribution?** This build takes 31 s per kill (level-weighted, 20-60), [Retribution](../leveling/retribution.md) 28 s: Protection is 11% slower. Level this way if you want to tank dungeons later on the way; otherwise level as Retribution and switch at 60 (a respec at a class trainer).
 
 ## How to play
 
@@ -22,37 +22,6 @@
 6. Low on health: **Templar's Bulwark**, **Divine Protection**, **Hammer of Justice**, then **Holy Light**; **Lay on Hands** in an emergency.
 
 **Between fights:** Drink below a sixth of your mana; you rarely need to eat.
-
-## Talents while leveling
-
-One point per level from 10, in this order:
-
-| Levels | Talent | Points |
-|---|---|---|
-| 10-14 | Redoubt (Protection) | 5 |
-| 15-17 | Precision (Protection) | 3 |
-| 18-19 | Anticipation (Protection) | 2 |
-| 20 | Shield Specialization (Protection) | 1 |
-| 21-23 | Anticipation (Protection) | 3 |
-| 24 | Improved Seal of Fury (Protection) | 1 |
-| 25 | Swift Judgement (Protection) | 1 |
-| 26-28 | Improved Righteous Fury (Protection) | 3 |
-| 29 | One-Handed Weapon Specialization (Protection) | 1 |
-| 30 | Templar's Bulwark (Protection) | 1 |
-| 31-32 | One-Handed Weapon Specialization (Protection) | 2 |
-| 33-37 | Deflection (Retribution) | 5 |
-| 38-39 | Holy Conduit (Retribution) | 2 |
-| 40-41 | Improved Judgement (Retribution) | 2 |
-| 42 | Conviction (Retribution) | 1 |
-| 43-45 | Sanctified Judgement (Retribution) | 3 |
-| 46-47 | Conviction (Retribution) | 2 |
-| 48 | Sacred Arbiter (Retribution) | 1 |
-| 49-50 | Conviction (Retribution) | 2 |
-| 51-52 | Vindication (Retribution) | 2 |
-| 53-55 | Vengeance (Retribution) | 3 |
-| 56 | Vindication (Retribution) | 1 |
-| 57 | Eye for an Eye (Retribution) | 1 |
-| 58-60 | Champion of the Light (Retribution) | 3 |
 
 ## The numbers
 

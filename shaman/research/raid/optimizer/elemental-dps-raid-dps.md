@@ -9,10 +9,10 @@ Effect coverage: 1 parsed from tooltips, 49 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Elemental Alacrity | Elemental | 3 | +6.19% | manual |
+| Elemental Alacrity | Elemental | 3 | +6.18% | manual |
 | Mental Quickness | Enhancement | 5 | +4.64% | manual |
 | Lava Burst | Elemental | 7 | +2.64% | manual |
-| Call of Flame | Elemental | 2 | +1.68% | manual |
+| Call of Flame | Elemental | 2 | +1.69% | manual |
 | Elemental Fury | Elemental | 6 | +1.37% | manual |
 | Call of Thunder | Elemental | 4 | +1.14% | manual |
 | Tidal Focus | Restoration | 2 | +1.08% | manual |
@@ -40,8 +40,8 @@ Effect coverage: 1 parsed from tooltips, 49 hand-entered, 0 missing (scored as 0
 | Elemental Warding | Elemental | 2 | +0.00% | manual |
 | Anticipation | Enhancement | 3 | +0.00% | manual |
 
-## Optimized build: 31/7/13  score +71.72%  (dps x1.716, sustain x1.126, surv x1.000, utility +0.00%)
-Absolute DPS index (character alone, no talents = 1.00): 1.490  — use this to compare models with different pet shares.
+## Optimized build: 31/7/13  score +71.25%  (dps x1.712, sustain x1.126, surv x1.000, utility +0.00%)
+Absolute DPS index (character alone, no talents = 1.00): 1.486  — use this to compare models with different pet shares.
 
 ```
   Elemental: Convection 5, Concussion 5, Call of Flame 3, Elemental Focus 1, Elemental Alacrity 3, Call of Thunder 1, Eye of the Storm 3, Lightning Overload 3, Elemental Reach 1, Elemental Fury 5, Lava Burst 1
@@ -53,9 +53,9 @@ Absolute DPS index (character alone, no talents = 1.00): 1.490  — use this to 
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Mental Quickness | Enhancement 5 | 1/2 | +7.97% | no |
-| Shamanistic Focus | Enhancement 3 | 1/1 | +2.01% | no |
-| Mana Tide Totem | Restoration 4 | 1/1 | +2.01% | no |
+| Mental Quickness | Enhancement 5 | 1/2 | +7.94% | no |
+| Shamanistic Focus | Enhancement 3 | 1/1 | +2.44% | no |
+| Mana Tide Totem | Restoration 4 | 1/1 | +2.16% | no |
 | Nature's Swiftness | Restoration 5 | 1/1 | +0.86% | no |
 | Ancestral Knowledge | Enhancement 1 | 3/5 | +0.72% | yes |
 | Healing Focus | Restoration 3 | 1/3 | +0.00% | yes |

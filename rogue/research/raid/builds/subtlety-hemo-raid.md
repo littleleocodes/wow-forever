@@ -78,12 +78,12 @@ Subtlety to Hemorrhage and the Forever talents Quietus (+10% on targets under 35
 
 ## Rank among our builds and the community simulator's
 
-**1 of 2** for `subtlety-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 2** for `subtlety-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`subtlety-hemo-raid`](subtlety-hemo-raid.md)** | ours: hand draft | 20/0/31 | 386 | +0.0% | 653 | +0.0% | 0 s |
-| 2 | *Subtlety Hemo 15/0/36* | community simulator | - | 345 | -10.6% | 615 | -5.8% | 0 s |
+| 1 | **[`subtlety-hemo-raid`](subtlety-hemo-raid.md)** | ours: hand draft | 20/0/31 | 386 | +0.0% | 686 | +0.0% | 0 s |
+| 2 | *Subtlety Hemo 15/0/36* | community simulator | - | 345 | -10.7% | 647 | -5.6% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -136,7 +136,7 @@ Damage by ability:
 |---|---|
 | Auto Attack | 37% |
 | Hemorrhage | 28% |
-| Rupture | 17% |
+| Rupture | 18% |
 | Dense Sharpening Stone | 4% |
 | Deadly Poison | 4% |
 | Eviscerate | 3% |

@@ -83,9 +83,9 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Elemental | Concussion | 5 | changed | tier 1, max 5 — tooltip changed |
 | Elemental | Call of Flame | 3 | changed | tier 2, max 3 — tooltip changed |
 | Elemental | Elemental Focus | 1 | moved | tier 3, max 1 — was Elemental row 3, col 1 |
-| Elemental | Call of Thunder | 5 | changed | tier 4, max 1 — max rank 5 → 1; tooltip changed; was Elemental row 3, col 3; prerequisite changed in build 1.60.1.70009: was elemental fury |
+| Elemental | Call of Thunder | 5 | changed | tier 4, max 1 — max rank 5 → 1; tooltip changed; was Elemental row 3, col 3; prerequisite changed in build 1.60.1.70170: was elemental fury |
 | Elemental | Eye of the Storm | 3 | changed | tier 4, max 3 — tooltip changed |
-| Elemental | Elemental Fury | 1 | changed | tier 6, max 5 — max rank 1 → 5; tooltip changed; was Elemental row 5, col 2; moved in build 1.60.1.70009: was row 3, col 3 |
+| Elemental | Elemental Fury | 1 | changed | tier 6, max 5 — max rank 1 → 5; tooltip changed; was Elemental row 5, col 2; moved in build 1.60.1.70170: was row 3, col 3 |
 | Elemental | Storm Reach | 2 | **REMOVED** | removed from Classic |
 | Elemental | Lightning Mastery | 5 | **REMOVED** | removed from Classic |
 | Elemental | Elemental Mastery | 1 | **REMOVED** | removed from Classic |

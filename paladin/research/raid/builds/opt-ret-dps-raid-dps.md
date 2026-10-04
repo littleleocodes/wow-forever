@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `raid-dps`: score +126.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `raid-dps`: score +230.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -45,33 +45,33 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 | **Sacred Arbiter** | 1/1 | **NEW** | Increases the damage of your Holy Strike ability by 20% and causes it to refresh all Judgement effects on the target. |
 | **Two-Handed Weapon Specialization** | 2/3 | changed | Increases the damage you deal with two-handed melee weapons by 4%. |
 | **Vengeance** | 3/3 | changed | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times. |
-| **Champion of the Light** | 3/3 | **NEW** | Increases your spell damage and healing by up to 100% of your Intellect. |
+| **Champion of the Light** | 3/3 | **NEW** | Increases your spell damage by up to 60% of your Intellect. |
 | **Instrument of Law** | 2/2 | **NEW** | Reduces the cast time of your Hammer of Wrath by 1 sec, and reduces all threat you generate by 20% while Righteous Fury is not active. |
-| **Twist of Light** | 1/1 | **NEW** | Reduces the Mana cost of your Seal spells by 20%, and when you replace your Seal of Command, Seal of Righteousness, Seal of Fury, or Seal of Justice with a different Seal, gain an Echo of that Seal. Your next melee attack applies the replaced Seal's effects, consuming the Echo. |
+| **Twist of Light** | 1/1 | **NEW** | Reduces the Mana cost of your Seal spells by 20%, and when you replace your Seal of Command, Seal of Righteousness, Seal of Fury, or Seal of Justice with a different Seal, you gain an Echo of that Seal. Your next melee attack applies the replaced Seal's effects, consuming the Echo. |
 
 ## Core talents (priority order)
 
-1. **Champion of the Light** — Removing it costs 46.2 points of score in this model.
-2. **Holy Conduit** — Removing it costs 37.4 points of score in this model.
-3. **Seal of Command** — Removing it costs 24.3 points of score in this model.
-4. **Vengeance** — Removing it costs 15.2 points of score in this model.
-5. **Improved Seals** — Removing it costs 13.4 points of score in this model.
-6. **Twist of Light** — Removing it costs 12.0 points of score in this model.
-7. **Sanctified Judgement** — Removing it costs 10.9 points of score in this model.
-8. **Conviction** — Removing it costs 10.3 points of score in this model.
+1. **Seal of Command** — Removing it costs 143.4 points of score in this model.
+2. **Holy Conduit** — Removing it costs 53.8 points of score in this model.
+3. **Champion of the Light** — Removing it costs 47.7 points of score in this model.
+4. **Vengeance** — Removing it costs 22.2 points of score in this model.
+5. **Improved Seals** — Removing it costs 20.2 points of score in this model.
+6. **Twist of Light** — Removing it costs 17.1 points of score in this model.
+7. **Conviction** — Removing it costs 16.3 points of score in this model.
+8. **Sanctified Judgement** — Removing it costs 15.5 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
-**2 of 6** for `ret-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 6** for `ret-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: hand draft | 11/8/32 | 546 | +0.0% | 1015 | +0.0% | 0 s |
-| 2 | **[`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md)** | ours: optimizer | 12/8/31 | 544 | -0.3% | 1011 | -0.4% | 0 s |
-| 3 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 10/8/33 | 536 | -1.9% | 1011 | -0.4% | 0 s |
-| 4 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/0/34 | 529 | -3.0% | 986 | -2.9% | 0 s |
-| 5 | *P4/P5 Ret* | community simulator | - | 529 | -3.1% | 983 | -3.2% | 0 s |
-| 6 | *Retribution 9/0/42* | community simulator | - | 513 | -6.1% | 970 | -4.4% | 1 s |
+| 1 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: hand draft | 11/8/32 | 486 | +0.0% | 890 | +0.0% | 0 s |
+| 2 | **[`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md)** | ours: optimizer | 12/8/31 | 485 | -0.3% | 885 | -0.5% | 0 s |
+| 3 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 10/8/33 | 480 | -1.4% | 889 | -0.1% | 0 s |
+| 4 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/0/34 | 473 | -2.9% | 863 | -3.0% | 0 s |
+| 5 | *P4/P5 Ret* | community simulator | - | 472 | -3.0% | 861 | -3.3% | 0 s |
+| 6 | *Retribution 9/0/42* | community simulator | - | 460 | -5.5% | 854 | -4.0% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -122,15 +122,15 @@ Damage by ability:
 
 | Ability | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) |
 |---|---|
-| Consecration | 18% |
-| Seal of Righteousness | 18% |
-| Judgement of Righteousness | 16% |
-| Auto Attack | 16% |
+| Seal of Righteousness | 19% |
+| Auto Attack | 18% |
+| Consecration | 17% |
+| Judgement of Righteousness | 15% |
 | Holy Strike | 14% |
 | Hammer of Wrath | 6% |
 | Seal of Command | 5% |
-| Dragonbreath Chili | 3% |
 | Judgement of Command | 3% |
+| Dragonbreath Chili | 3% |
 
 ## Notes
 

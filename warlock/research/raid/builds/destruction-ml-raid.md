@@ -48,20 +48,20 @@ The Destruction build the machine-learning talent search found on the training d
 
 ## Rank among our builds and the community simulator's
 
-**3 of 10** for `sb-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 10** for `sb-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 639 | +0.0% | 759 | +0.0% | 1 s |
-| 2 | [`ds-ruin-raid`](ds-ruin-raid.md) | ours: hand draft | 22/11/18 | 636 | -0.5% | 759 | -0.1% | 1 s |
-| 3 | **[`destruction-ml-raid`](destruction-ml-raid.md)** | ours: hand draft | 10/11/30 | 628 | -1.7% | 741 | -2.4% | 1 s |
-| 4 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 605 | -5.3% | 721 | -5.0% | 1 s |
-| 5 | *DS/Ruin* | community simulator | - | 598 | -6.5% | 709 | -6.6% | 1 s |
-| 6 | *Shadow and Flame 13/11/27* | community simulator | - | 554 | -13.3% | 653 | -14.0% | 1 s |
-| 7 | *Deep Affliction 35/0/16* | community simulator | - | 531 | -17.0% | 620 | -18.4% | 1 s |
-| 8 | *Demonic Pact 2/31/18* | community simulator | - | 525 | -17.9% | 623 | -18.0% | 1 s |
-| 9 | *Affliction* | community simulator | - | 523 | -18.2% | 612 | -19.4% | 1 s |
-| 10 | *Demonic Pact* | community simulator | - | 518 | -18.9% | 613 | -19.3% | 0 s |
+| 1 | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 594 | +0.0% | 710 | +0.0% | 1 s |
+| 2 | [`ds-ruin-raid`](ds-ruin-raid.md) | ours: hand draft | 22/11/18 | 592 | -0.4% | 710 | -0.1% | 1 s |
+| 3 | **[`destruction-ml-raid`](destruction-ml-raid.md)** | ours: hand draft | 10/11/30 | 586 | -1.4% | 693 | -2.4% | 0 s |
+| 4 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 564 | -5.1% | 672 | -5.4% | 1 s |
+| 5 | *DS/Ruin* | community simulator | - | 556 | -6.4% | 663 | -6.7% | 1 s |
+| 6 | *Shadow and Flame 13/11/27* | community simulator | - | 517 | -13.0% | 611 | -13.9% | 1 s |
+| 7 | *Deep Affliction 35/0/16* | community simulator | - | 490 | -17.5% | 578 | -18.6% | 1 s |
+| 8 | *Demonic Pact 2/31/18* | community simulator | - | 489 | -17.7% | 583 | -17.9% | 0 s |
+| 9 | *Affliction* | community simulator | - | 484 | -18.5% | 570 | -19.7% | 1 s |
+| 10 | *Demonic Pact* | community simulator | - | 484 | -18.6% | 574 | -19.2% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -87,7 +87,7 @@ Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 | 4 | use every other cooldown when ready | as ready |
 | 5 | if time left in the fight ≤ 1.5: cast Shadowburn | 0.3 |
 | 6 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
-| 7 | if mana % < 10%: cast Life Tap | 6.4 |
+| 7 | if mana % < 10%: cast Life Tap | 6.3 |
 | 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
 | 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.5 |
 | 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 |
@@ -104,7 +104,7 @@ Damage by ability:
 | Corruption | 17% |
 | Bane of Agony | 16% |
 | Immolate | 12% |
-| Conflagrate | 10% |
+| Conflagrate | 11% |
 | Shadowburn | 1% |
 | Searing Pain | 1% |
 

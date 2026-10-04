@@ -3,11 +3,11 @@
  "allocation": {
   "Arms": [
    [
-    "Improved Rend",
+    "Improved Heroic Strike",
     3
    ],
    [
-    "Improved Heroic Strike",
+    "Improved Rend",
     3
    ],
    [
@@ -23,46 +23,42 @@
     3
    ],
    [
-    "Impale",
+    "Two-Handed Weapon Specialization",
     2
    ],
    [
-    "Two-Handed Weapon Specialization",
+    "Impale",
     2
    ]
   ],
   "Fury": [
    [
+    "Booming Voice",
+    5
+   ],
+   [
     "Cruelty",
     5
    ],
    [
-    "Booming Voice",
-    2
+    "Lingering Rage",
+    3
    ],
    [
     "Unbridled Wrath",
     5
    ],
    [
-    "Boundless Rage",
-    3
+    "Enrage",
+    5
    ],
    [
     "Improved Execute",
     2
    ],
    [
-    "Enrage",
-    5
-   ],
-   [
     "Death Wish",
     1
-   ],
-   [
-    "Precision",
-    3
    ],
    [
     "Flurry",
@@ -75,5 +71,8 @@
   ],
   "Protection": []
  },
- "note": "Optimizer raid build saved by rebuild.py on 2026-09-28 (raid calibration round 1)"
+ "note": "Optimizer raid build saved by rebuild.py on 2026-09-28 (raid calibration round 1)",
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

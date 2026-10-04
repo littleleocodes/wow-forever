@@ -21,16 +21,16 @@
   ],
   "Fire": [
    [
-    "Improved Fireball",
-    5
+    "Wake of Fire",
+    2
    ],
    [
     "Incineration",
     3
    ],
    [
-    "Wake of Fire",
-    2
+    "Improved Fireball",
+    5
    ],
    [
     "Ignite",
@@ -45,7 +45,7 @@
     3
    ],
    [
-    "Hot Streak",
+    "Heating Up",
     1
    ],
    [
@@ -72,5 +72,8 @@
    ]
   ]
  },
- "note": "Optimizer raid build saved by rebuild.py on 2026-09-29 (raid calibration round 1)"
+ "note": "Optimizer raid build saved by rebuild.py on 2026-09-29 (raid calibration round 1)",
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

@@ -9,24 +9,24 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Shadowform | Shadow | 7 | +109.78% | manual |
-| Mind Flay | Shadow | 3 | +82.50% | manual |
-| Meditation | Discipline | 3 | +13.02% | manual |
-| Penance | Discipline | 5 | +6.38% | manual |
-| Prayer of Mending | Holy | 7 | +6.38% | manual |
+| Shadowform | Shadow | 7 | +97.57% | manual |
+| Mind Flay | Shadow | 3 | +88.01% | manual |
 | Shadow Weaving | Shadow | 4 | +5.00% | manual |
-| Litany of Light | Holy | 5 | +4.26% | manual |
-| Improved Shadow Word: Pain | Shadow | 2 | +2.95% | manual |
-| Inner Focus | Discipline | 3 | +2.47% | manual |
+| Improved Shadow Word: Pain | Shadow | 2 | +2.66% | manual |
 | Darkness | Shadow | 6 | +2.00% | manual |
 | Power Infusion | Discipline | 7 | +1.70% | manual |
-| Mental Strength | Discipline | 4 | +1.39% | manual |
-| Devouring Contagion | Shadow | 5 | +0.77% | manual |
+| Inner Focus | Discipline | 3 | +1.22% | manual |
+| Penance | Discipline | 5 | +1.20% | manual |
+| Prayer of Mending | Holy | 7 | +1.20% | manual |
+| Improved Mind Blast | Shadow | 3 | +1.19% | manual |
+| Litany of Light | Holy | 5 | +0.80% | manual |
 | Shadow Focus | Shadow | 1 | +0.74% | manual |
-| Twin Disciplines | Discipline | 1 | +0.64% | manual |
-| Improved Mind Blast | Shadow | 3 | +0.52% | manual |
-| Mental Agility | Discipline | 3 | +0.31% | manual |
+| Twin Disciplines | Discipline | 1 | +0.62% | manual |
+| Mental Strength | Discipline | 4 | +0.30% | manual |
+| Devouring Contagion | Shadow | 5 | +0.15% | manual |
 | Early Demise | Shadow | 6 | +0.13% | manual |
+| Mental Agility | Discipline | 3 | +0.06% | manual |
+| Meditation | Discipline | 3 | +0.05% | manual |
 | Martyrdom | Discipline | 2 | +0.01% | manual |
 | Twilight Focus | Holy | 1 | +0.01% | manual |
 | Silence | Shadow | 5 | +0.01% | manual |
@@ -36,14 +36,14 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 | Shadow Affinity | Shadow | 2 | +0.00% | manual |
 | Soul Warding | Discipline | 4 | +0.00% | manual |
 | Improved Healing | Holy | 4 | +0.00% | manual |
+| Spirit Tap | Shadow | 1 | +0.00% | manual |
 | Spell Warding | Holy | 2 | +0.00% | manual |
 | Holy Reach | Holy | 4 | +0.00% | manual |
-| Shadow Reach | Shadow | 2 | +0.00% | manual |
 
-## Optimized build: 18/0/33  score +535.41%  (dps x6.353, sustain x1.581, surv x1.000, utility +0.00%)
+## Optimized build: 18/0/33  score +352.32%  (dps x3.905, sustain x2.543, surv x1.000, utility +0.00%)
 
 ```
-  Discipline: Twin Disciplines 5, Martyrdom 2, Silent Resolve 3, Meditation 2, Inner Focus 1, Mental Agility 2, Mental Strength 3
+  Discipline: Twin Disciplines 5, Martyrdom 2, Silent Resolve 3, Inner Focus 1, Mental Agility 3, Meditation 1, Mental Strength 3
   Shadow: Shadow Focus 5, Improved Shadow Word: Pain 2, Shadow Affinity 3, Mind Flay 1, Improved Mind Flay 2, Improved Mind Blast 5, Vampiric Embrace 1, Shadow Weaving 3, Devouring Contagion 2, Silence 1, Darkness 5, Early Demise 2, Shadowform 1
 ```
 
@@ -51,19 +51,19 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Power Infusion | Discipline 7 | 1/1 | +10.80% | no |
-| Mental Strength | Discipline 4 | 4/5 | +0.33% | yes |
-| Twilight Focus | Holy 1 | 1/3 | +0.01% | yes |
+| Power Infusion | Discipline 7 | 1/1 | +6.64% | no |
+| Penance | Discipline 5 | 1/1 | +1.20% | no |
+| Prayer of Mending | Holy 7 | 1/1 | +1.20% | no |
+| Litany of Light | Holy 5 | 1/2 | +0.80% | no |
+| Mental Strength | Discipline 4 | 4/5 | +0.45% | yes |
+| Meditation | Discipline 3 | 2/3 | +0.04% | yes |
+| Twilight Focus | Holy 1 | 1/3 | +0.00% | yes |
 | Holy Nova | Holy 3 | 1/1 | +0.00% | no |
 | Binding Heal | Holy 4 | 1/1 | +0.00% | no |
-| Mental Agility | Discipline 3 | 3/3 | +0.00% | yes |
-| Meditation | Discipline 3 | 3/3 | +0.00% | yes |
+| Spirit Tap | Shadow 1 | 1/5 | +0.00% | yes |
 | Soul Warding | Discipline 4 | 1/1 | +0.00% | no |
 | Improved Healing | Holy 4 | 1/3 | +0.00% | no |
 | Spell Warding | Holy 2 | 1/5 | +0.00% | no |
 | Holy Reach | Holy 4 | 1/2 | +0.00% | no |
 | Shadow Reach | Shadow 2 | 1/2 | +0.00% | yes |
-| Improved Inner Fire | Discipline 4 | 1/3 | +0.00% | yes |
-| Blessed Recovery | Holy 3 | 1/3 | +0.00% | no |
-| Inspiration | Holy 3 | 1/3 | +0.00% | no |
 

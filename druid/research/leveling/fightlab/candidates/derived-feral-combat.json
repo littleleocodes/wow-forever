@@ -7,11 +7,11 @@
     5
    ],
    [
-    "Nature's Reach",
+    "Nature's Majesty",
     2
    ],
    [
-    "Nature's Majesty",
+    "Nature's Reach",
     2
    ]
   ],
@@ -30,22 +30,18 @@
    ],
    [
     "Thick Hide",
-    1
-   ],
-   [
-    "Sharpened Claws",
-    2
+    3
    ],
    [
     "Savage Fury",
     2
    ],
    [
-    "Predatory Strikes",
-    3
+    "Sharpened Claws",
+    2
    ],
    [
-    "King of the Jungle",
+    "Predatory Strikes",
     3
    ],
    [
@@ -58,7 +54,7 @@
    ],
    [
     "Rend and Tear",
-    4
+    5
    ],
    [
     "Berserk",
@@ -71,11 +67,11 @@
     5
    ],
    [
-    "Natural Shapeshifter",
+    "Naturalist",
     3
    ],
    [
-    "Naturalist",
+    "Natural Shapeshifter",
     3
    ]
   ]
@@ -280,5 +276,8 @@
   },
   "fights": 800,
   "confirm": 3000
- }
+ },
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

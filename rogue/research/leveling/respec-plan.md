@@ -42,7 +42,7 @@ Total: **77.3 h** (14.1% faster than talentless), 0 respec(s).
 | combat-swords-raid -> level-50 build (23/16/2) | 72.1 | +0.2 h |
 | combat-swords-raid -> level-20 build (0/11/0) | 72.1 | +0.2 h |
 | combat-swords-raid -> level-40 build (11/18/2) | 72.3 | +0.5 h |
-| combat-daggers-raid -> level-20 build (0/9/2) | 77.3 | +5.4 h |
+| combat-daggers-raid -> level-20 build (0/9/2) | 77.3 | +5.5 h |
 | combat-daggers-raid -> level-30 build (3/16/2) | 77.6 | +5.8 h |
 | combat-daggers-raid -> level-40 build (13/16/2) | 78.5 | +6.7 h |
 | combat-daggers-raid -> level-50 build (23/16/2) | 79.1 | +7.2 h |
@@ -57,10 +57,10 @@ Total: **77.3 h** (14.1% faster than talentless), 0 respec(s).
 | combat-swords-raid -> level-40 build (11/18/2) | +1.5% | +5.7% | +7.6% | +12.5% | +14.7% | +17.3% | +19.9% | +22.3% | +23.8% | +25.4% | +27.7% |
 | combat-swords-raid -> level-50 build (23/16/2) | +1.5% | +5.7% | +7.6% | +12.5% | +14.7% | +17.3% | +19.5% | +22.5% | +24.1% | +26.4% | +27.8% |
 | combat-swords-raid -> level-60 build (33/16/2) | +1.5% | +5.7% | +7.6% | +12.5% | +14.7% | +17.3% | +19.5% | +22.5% | +24.1% | +26.4% | +28.3% |
-| combat-daggers-raid -> level-20 build (0/9/2) | +1.6% | +3.7% | +13.6% | +15.7% | +18.6% | +21.7% | +23.0% | +29.3% | +32.9% | +34.1% | +36.0% |
-| combat-daggers-raid -> level-30 build (3/16/2) | +1.6% | +5.1% | +8.5% | +16.2% | +20.2% | +22.7% | +25.9% | +27.3% | +32.9% | +33.9% | +35.6% |
-| combat-daggers-raid -> level-40 build (13/16/2) | +1.6% | +4.6% | +8.3% | +11.1% | +14.7% | +22.1% | +25.9% | +27.3% | +32.9% | +33.9% | +35.6% |
-| combat-daggers-raid -> level-50 build (23/16/2) | +1.6% | +4.6% | +8.3% | +11.3% | +12.2% | +18.4% | +22.2% | +29.4% | +33.0% | +34.1% | +35.8% |
+| combat-daggers-raid -> level-20 build (0/9/2) | +1.6% | +3.7% | +13.6% | +15.7% | +18.6% | +21.7% | +23.0% | +29.3% | +32.8% | +34.1% | +36.0% |
+| combat-daggers-raid -> level-30 build (3/16/2) | +1.6% | +5.1% | +8.5% | +16.1% | +20.2% | +22.7% | +25.9% | +27.3% | +32.8% | +33.9% | +35.6% |
+| combat-daggers-raid -> level-40 build (13/16/2) | +1.6% | +4.6% | +8.3% | +11.1% | +14.7% | +22.1% | +25.9% | +27.3% | +32.8% | +33.9% | +35.6% |
+| combat-daggers-raid -> level-50 build (23/16/2) | +1.6% | +4.6% | +8.3% | +11.2% | +12.2% | +18.4% | +22.2% | +29.4% | +32.9% | +34.0% | +35.7% |
 | combat-daggers-raid -> level-60 build (21/28/2) | +0.1% | +4.1% | +12.0% | +15.0% | +17.9% | +21.8% | +24.1% | +27.3% | +29.4% | +31.0% | +36.2% |
 
 ## Reading it

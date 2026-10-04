@@ -186,7 +186,7 @@
  "Venom": {
   "tree": "Assassination",
   "max": 1,
-  "text": "Finishing move that increases the damage of your Poisons by 30% and your chance to apply Poisons by 10%. Lasts longer per combo point:  1 point : 9 seconds  2 points: 12 seconds  3 points: 15 seconds  4 points: 18 second",
+  "text": "Finishing move that increases the damage of your Poisons by 30% and your chance to apply Poisons by 10%. Lasts longer per combo point:  1 point : 9 sec  2 points: 12 sec  3 points: 15 sec  4 points: 18 sec  5 points: 21 ",
   "effects": [
    {
     "channel": "dmg",
@@ -473,7 +473,7 @@
  "Setup": {
   "tree": "Subtlety",
   "max": 3,
-  "text": "Gives you a 33% chance to add a Combo Point to your target after Dodging an attack or fully resisting a spell.",
+  "text": "Gives you a 33% chance to add a Combo Point to your target after Dodging one of their attacks or fully resisting one of their spells.",
   "effects": []
  },
  "Elusiveness": {

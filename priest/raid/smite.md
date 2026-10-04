@@ -27,6 +27,7 @@
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
 - **Power Infusion**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
+- **Dark Sacrifice**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
 - Use your trinkets, your racial and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
@@ -35,8 +36,8 @@
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 602 |
-| Training dummy, 3-minute fight (alone, only your own buffs) | 444 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 560 |
+| Training dummy, 3-minute fight (alone, only your own buffs) | 410 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
@@ -71,7 +72,7 @@
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 444 → mana +2% → armor +0% → physical -3% → spell +26% → everything else +10% → raid 602
+Dummy 410 → mana +0% → armor +0% → physical -3% → spell +27% → everything else +12% → raid 560
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -79,7 +80,7 @@ Dummy 444 → mana +2% → armor +0% → physical -3% → spell +26% → everyth
 
 | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|
-| 484 | 458 | 444 | 414 | 392 |
+| 444 | 417 | 410 | 397 | 369 |
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 

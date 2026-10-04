@@ -6,11 +6,11 @@
 
 | # | Spec and build | Full raid DPS | Training dummy DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Fire](fire.md) — Fire — Ignite / Hot Streak | 747 | 598 | 475 | best |
-| 2 | [Frost](frost.md) — Frost — Raid 🔬 | 739 | 647 | 639 | -1% |
-| 3 | [Arcane-Frost](arcane-frost.md) — Frost — Fingers of Frost / Ice Lance / Shatter | 735 | 643 | 635 | -2% |
-| 4 | [Frostfire](frostfire.md) — Frostfire — Frostfire Bolt / Hot Streak | 722 | 615 | 514 | -3% |
-| 5 | [Arcane](arcane.md) — Arcane — Arcane Blast | 690 | 602 | 570 | -8% |
+| 1 | [Frost](frost.md) — Frost — Raid 🔬 | 705 | 617 | 605 | best |
+| 2 | [Arcane-Frost](arcane-frost.md) — Frost — Fingers of Frost / Ice Lance / Shatter | 701 | 615 | 602 | -1% |
+| 3 | [Fire](fire.md) — Fire — Ignite / Hot Streak | 700 | 559 | 438 | -1% |
+| 4 | [Arcane](arcane.md) — Arcane — Arcane Blast | 659 | 571 | 528 | -7% |
+| 5 | [Frostfire](frostfire.md) — Frostfire — Raid 🔬 | 614 | 499 | 386 | -13% |
 
 **By gear tier**: each damage spec with its best talents for each tier, in its own gear (full raid / training dummy DPS; [every class](../../_reference/dps-rankings.md)):
 

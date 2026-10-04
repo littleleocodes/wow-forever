@@ -12,6 +12,10 @@
     5
    ],
    [
+    "Impact",
+    1
+   ],
+   [
     "Burning Soul",
     3
    ],
@@ -24,8 +28,12 @@
     3
    ],
    [
-    "Hot Streak",
+    "Heating Up",
     1
+   ],
+   [
+    "Master of Elements",
+    3
    ],
    [
     "Critical Mass",
@@ -42,14 +50,6 @@
    [
     "Combustion",
     1
-   ],
-   [
-    "Master of Elements",
-    3
-   ],
-   [
-    "Impact",
-    1
    ]
   ],
   "Frost": [
@@ -58,16 +58,16 @@
     5
    ],
    [
-    "Frostbite",
-    3
-   ],
-   [
     "Ice Shards",
     5
    ],
    [
     "Permafrost",
     1
+   ],
+   [
+    "Frostbite",
+    3
    ],
    [
     "Ice Lance",
@@ -297,5 +297,8 @@
   },
   "fights": 800,
   "confirm": 3000
- }
+ },
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

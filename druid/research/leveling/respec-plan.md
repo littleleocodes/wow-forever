@@ -8,10 +8,10 @@ Talentless baseline: 90 h for levels 10-60 under these assumptions.
 
 - **Levels 10-60: feral-cat-dps -> level-60 build (9/31/11)**
   - at level 10: **Feral Combat**: Ferocity 1
-  - at level 60: **Feral Combat**: Ferocity 5, Thick Hide 3, Feral Swiftness 2, Savage Fury 2, Sharpened Claws 2, Heart of the Wild 3, Predatory Strikes 3, King of the Jungle 3, Leader of the Pack 1, Predatory Instincts 2, Rend and Tear 4, Berserk 1; **Balance**: Genesis 5, Nature's Reach 2, Nature's Majesty 2; **Restoration**: Furor 5, Naturalist 5, Natural Shapeshifter 1
-  - order: 10-14 Ferocity x5, 15-17 Thick Hide x3, 18-19 Feral Swiftness x2, 20-21 Savage Fury x2, 22-23 Sharpened Claws x2, 24 Heart of the Wild, 25-27 Predatory Strikes x3, 28-29 Heart of the Wild x2, 30-32 King of the Jungle x3, 33 Leader of the Pack, 34-35 Predatory Instincts x2, 36-39 Rend and Tear x4, 40 Berserk, 41-45 Genesis x5, 46-47 Nature's Reach x2, 48-49 Nature's Majesty x2, 50-54 Furor x5, 55-59 Naturalist x5, 60 Natural Shapeshifter
+  - at level 60: **Feral Combat**: Ferocity 5, Thick Hide 3, Feral Swiftness 2, Savage Fury 2, Sharpened Claws 2, Heart of the Wild 5, Predatory Strikes 3, Leader of the Pack 1, Predatory Instincts 2, Rend and Tear 5, Berserk 1; **Balance**: Genesis 5, Nature's Reach 2, Nature's Majesty 2; **Restoration**: Nature's Focus 5, Naturalist 5, Natural Shapeshifter 1
+  - order: 10-14 Ferocity x5, 15-17 Thick Hide x3, 18-19 Feral Swiftness x2, 20-21 Savage Fury x2, 22-23 Sharpened Claws x2, 24 Heart of the Wild, 25-27 Predatory Strikes x3, 28-29 Heart of the Wild x2, 30 Leader of the Pack, 31-32 Predatory Instincts x2, 33-34 Heart of the Wild x2, 35-39 Rend and Tear x5, 40 Berserk, 41-45 Genesis x5, 46-47 Nature's Reach x2, 48-49 Nature's Majesty x2, 50-54 Nature's Focus x5, 55-59 Naturalist x5, 60 Natural Shapeshifter
 
-Total: **68.3 h** (24.1% faster than talentless), 0 respec(s).
+Total: **71.4 h** (20.6% faster than talentless), 0 respec(s).
 
 ## Best schedule if you stay in one spec model
 
@@ -19,10 +19,10 @@ Total: **68.3 h** (24.1% faster than talentless), 0 respec(s).
 
 - **Levels 10-60: feral-cat-dps -> level-60 build (9/31/11)**
   - at level 10: **Feral Combat**: Ferocity 1
-  - at level 60: **Feral Combat**: Ferocity 5, Thick Hide 3, Feral Swiftness 2, Savage Fury 2, Sharpened Claws 2, Heart of the Wild 3, Predatory Strikes 3, King of the Jungle 3, Leader of the Pack 1, Predatory Instincts 2, Rend and Tear 4, Berserk 1; **Balance**: Genesis 5, Nature's Reach 2, Nature's Majesty 2; **Restoration**: Furor 5, Naturalist 5, Natural Shapeshifter 1
-  - order: 10-14 Ferocity x5, 15-17 Thick Hide x3, 18-19 Feral Swiftness x2, 20-21 Savage Fury x2, 22-23 Sharpened Claws x2, 24 Heart of the Wild, 25-27 Predatory Strikes x3, 28-29 Heart of the Wild x2, 30-32 King of the Jungle x3, 33 Leader of the Pack, 34-35 Predatory Instincts x2, 36-39 Rend and Tear x4, 40 Berserk, 41-45 Genesis x5, 46-47 Nature's Reach x2, 48-49 Nature's Majesty x2, 50-54 Furor x5, 55-59 Naturalist x5, 60 Natural Shapeshifter
+  - at level 60: **Feral Combat**: Ferocity 5, Thick Hide 3, Feral Swiftness 2, Savage Fury 2, Sharpened Claws 2, Heart of the Wild 5, Predatory Strikes 3, Leader of the Pack 1, Predatory Instincts 2, Rend and Tear 5, Berserk 1; **Balance**: Genesis 5, Nature's Reach 2, Nature's Majesty 2; **Restoration**: Nature's Focus 5, Naturalist 5, Natural Shapeshifter 1
+  - order: 10-14 Ferocity x5, 15-17 Thick Hide x3, 18-19 Feral Swiftness x2, 20-21 Savage Fury x2, 22-23 Sharpened Claws x2, 24 Heart of the Wild, 25-27 Predatory Strikes x3, 28-29 Heart of the Wild x2, 30 Leader of the Pack, 31-32 Predatory Instincts x2, 33-34 Heart of the Wild x2, 35-39 Rend and Tear x5, 40 Berserk, 41-45 Genesis x5, 46-47 Nature's Reach x2, 48-49 Nature's Majesty x2, 50-54 Nature's Focus x5, 55-59 Naturalist x5, 60 Natural Shapeshifter
 
-Total: **68.3 h** (24.1% faster than talentless), 0 respec(s).
+Total: **71.4 h** (20.6% faster than talentless), 0 respec(s).
 
 ### balance-dps
 
@@ -37,26 +37,26 @@ Total: **95.7 h** (-6.4% faster than talentless), 0 respec(s).
 
 | Plan | Hours 10-60 | vs. schedule |
 |---|---|---|
-| feral-cat-dps -> level-60 build (9/31/11) | 68.3 | -0.0 h |
-| feral-cat-dps -> level-50 build (9/32/0) | 68.4 | +0.1 h |
-| feral-cat-dps -> level-30 build (0/21/0) | 68.6 | +0.3 h |
-| feral-cat-dps -> level-40 build (0/31/0) | 68.6 | +0.3 h |
-| feral-cat-dps -> level-20 build (9/2/0) | 69.7 | +1.5 h |
-| balance-dps -> level-50 build (35/6/0) | 95.7 | +27.5 h |
-| balance-dps -> level-30 build (21/0/0) | 95.9 | +27.6 h |
-| balance-dps -> level-60 build (36/2/13) | 95.9 | +27.6 h |
-| balance-dps -> level-40 build (31/0/0) | 95.9 | +27.7 h |
-| balance-dps -> level-20 build (11/0/0) | 97.6 | +29.3 h |
+| feral-cat-dps -> level-60 build (9/31/11) | 71.4 | +0.0 h |
+| feral-cat-dps -> level-30 build (0/21/0) | 71.6 | +0.2 h |
+| feral-cat-dps -> level-40 build (0/31/0) | 71.6 | +0.2 h |
+| feral-cat-dps -> level-50 build (10/31/0) | 71.6 | +0.2 h |
+| feral-cat-dps -> level-20 build (9/2/0) | 72.1 | +0.7 h |
+| balance-dps -> level-50 build (35/6/0) | 95.7 | +24.3 h |
+| balance-dps -> level-30 build (21/0/0) | 95.9 | +24.5 h |
+| balance-dps -> level-60 build (36/2/13) | 95.9 | +24.5 h |
+| balance-dps -> level-40 build (31/0/0) | 95.9 | +24.5 h |
+| balance-dps -> level-20 build (11/0/0) | 97.6 | +26.1 h |
 
 ## Leveling score by level (fraction of time per kill saved)
 
 | Plan | 10 | 15 | 20 | 25 | 30 | 35 | 40 | 45 | 50 | 55 | 60 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| feral-cat-dps -> level-20 build (9/2/0) | +0.9% | +1.9% | +6.7% | +9.1% | +13.8% | +17.4% | +22.8% | +27.4% | +30.8% | +31.1% | +32.9% |
-| feral-cat-dps -> level-30 build (0/21/0) | +0.9% | +6.2% | +6.7% | +12.9% | +17.4% | +22.5% | +26.1% | +27.0% | +29.3% | +31.2% | +31.8% |
-| feral-cat-dps -> level-40 build (0/31/0) | +0.9% | +6.2% | +6.7% | +12.9% | +17.4% | +22.5% | +26.1% | +27.0% | +29.3% | +31.2% | +31.8% |
-| feral-cat-dps -> level-50 build (9/32/0) | +0.9% | +6.2% | +6.7% | +12.9% | +17.4% | +22.5% | +26.1% | +26.8% | +30.8% | +31.1% | +32.9% |
-| feral-cat-dps -> level-60 build (9/31/11) | +0.9% | +6.2% | +6.7% | +12.9% | +17.4% | +22.5% | +26.1% | +26.5% | +30.5% | +31.1% | +33.9% |
+| feral-cat-dps -> level-20 build (9/2/0) | +0.9% | +1.9% | +6.7% | +9.1% | +13.8% | +17.4% | +20.8% | +22.6% | +25.9% | +26.6% | +29.0% |
+| feral-cat-dps -> level-30 build (0/21/0) | +0.9% | +6.2% | +6.7% | +12.9% | +16.7% | +17.4% | +21.3% | +21.7% | +25.9% | +26.1% | +28.6% |
+| feral-cat-dps -> level-40 build (0/31/0) | +0.9% | +6.2% | +6.7% | +12.9% | +16.7% | +17.4% | +21.3% | +21.7% | +25.9% | +26.1% | +28.6% |
+| feral-cat-dps -> level-50 build (10/31/0) | +0.9% | +6.2% | +6.6% | +12.9% | +16.7% | +17.4% | +21.3% | +21.7% | +25.9% | +26.1% | +28.6% |
+| feral-cat-dps -> level-60 build (9/31/11) | +0.9% | +6.2% | +6.7% | +12.9% | +16.7% | +17.4% | +21.3% | +21.7% | +25.9% | +26.6% | +29.6% |
 | balance-dps -> level-20 build (11/0/0) | +2.0% | +13.3% | +23.6% | +27.8% | +36.0% | +45.4% | +51.5% | +55.7% | +56.1% | +57.0% | +59.5% |
 | balance-dps -> level-30 build (21/0/0) | +2.0% | +13.3% | +20.9% | +27.1% | +37.2% | +46.7% | +53.1% | +56.9% | +57.0% | +57.9% | +60.4% |
 | balance-dps -> level-40 build (31/0/0) | +2.0% | +13.3% | +20.9% | +27.1% | +37.2% | +46.7% | +53.2% | +56.9% | +57.0% | +57.9% | +60.4% |

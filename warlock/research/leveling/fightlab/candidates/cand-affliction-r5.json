@@ -15,7 +15,11 @@
     1
    ],
    [
-    "Soul Harvesting",
+    "Soul Harvest",
+    2
+   ],
+   [
+    "Improved Bane of Agony",
     2
    ],
    [
@@ -23,20 +27,16 @@
     1
    ],
    [
-    "Improved Bane of Agony",
-    2
-   ],
-   [
     "Pandemic",
     3
    ],
    [
-    "Curse of Exhaustion",
-    1
-   ],
-   [
     "Malevolence",
     4
+   ],
+   [
+    "Curse of Exhaustion",
+    1
    ],
    [
     "Siphon Life",
@@ -53,15 +53,11 @@
     5
    ],
    [
-    "Demonic Energies",
-    2
-   ],
-   [
     "Improved Voidwalker",
     3
    ],
    [
-    "Master Summoner",
+    "Demonic Energies",
     2
    ],
    [
@@ -73,11 +69,15 @@
     1
    ],
    [
-    "Fel Domination",
-    1
+    "Master Summoner",
+    2
    ],
    [
     "Decimation",
+    1
+   ],
+   [
+    "Fel Domination",
     1
    ],
    [
@@ -276,5 +276,8 @@
    "points": 1
   }
  ],
- "note": "Optimizer build saved by rebuild.py on 2026-09-26 (calibration round 5)"
+ "note": "Optimizer build saved by rebuild.py on 2026-09-26 (calibration round 5)",
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

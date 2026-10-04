@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `affliction-raid` and profile `raid-dps`: score +60.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `affliction-raid` and profile `raid-dps`: score +60.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -46,29 +46,29 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `afflicti
 ## Core talents (priority order)
 
 1. **Bane** — Removing it costs 14.1 points of score in this model.
-2. **Agonizing Flames** — Removing it costs 9.3 points of score in this model.
-3. **Improved Shadow Bolt** — Removing it costs 8.1 points of score in this model.
+2. **Agonizing Flames** — Removing it costs 9.4 points of score in this model.
+3. **Improved Shadow Bolt** — Removing it costs 8.0 points of score in this model.
 4. **Suppression** — Removing it costs 7.0 points of score in this model.
-5. **Malevolence** — Removing it costs 6.8 points of score in this model.
+5. **Malevolence** — Removing it costs 6.7 points of score in this model.
 6. **Shadow Mastery** — Removing it costs 6.5 points of score in this model.
 7. **Improved Corruption** — Removing it costs 6.2 points of score in this model.
-8. **Ruin** — Removing it costs 6.1 points of score in this model.
+8. **Ruin** — Removing it costs 6.2 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
-**1 of 9** for `affliction-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 9** for `affliction-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-affliction-raid-raid-dps`](opt-affliction-raid-raid-dps.md)** | ours: optimizer | 30/0/21 | 640 | +0.0% | 768 | +0.0% | 2 s |
-| 2 | [`affliction-dot-raid`](affliction-dot-raid.md) | ours: hand draft | 30/0/21 | 633 | -1.1% | 763 | -0.6% | 3 s |
-| 3 | *Demonic Pact 2/31/18* | community simulator | - | 592 | -7.5% | 714 | -7.0% | 0 s |
-| 4 | *Demonic Pact* | community simulator | - | 587 | -8.4% | 704 | -8.3% | 0 s |
-| 5 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 574 | -10.4% | 689 | -10.3% | 2 s |
-| 6 | *Deep Affliction 35/0/16* | community simulator | - | 568 | -11.3% | 676 | -11.9% | 3 s |
-| 7 | *DS/Ruin* | community simulator | - | 564 | -11.8% | 683 | -11.1% | 1 s |
-| 8 | *Affliction* | community simulator | - | 561 | -12.4% | 668 | -12.9% | 2 s |
-| 9 | *Shadow and Flame 13/11/27* | community simulator | - | 547 | -14.6% | 657 | -14.4% | 1 s |
+| 1 | **[`opt-affliction-raid-raid-dps`](opt-affliction-raid-raid-dps.md)** | ours: optimizer | 30/0/21 | 599 | +0.0% | 722 | +0.0% | 2 s |
+| 2 | [`affliction-dot-raid`](affliction-dot-raid.md) | ours: hand draft | 30/0/21 | 592 | -1.1% | 718 | -0.6% | 3 s |
+| 3 | *Demonic Pact 2/31/18* | community simulator | - | 557 | -6.9% | 674 | -6.6% | 0 s |
+| 4 | *Demonic Pact* | community simulator | - | 551 | -7.9% | 665 | -8.0% | 0 s |
+| 5 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 537 | -10.4% | 648 | -10.2% | 2 s |
+| 6 | *Deep Affliction 35/0/16* | community simulator | - | 532 | -11.1% | 637 | -11.7% | 3 s |
+| 7 | *DS/Ruin* | community simulator | - | 529 | -11.6% | 639 | -11.5% | 0 s |
+| 8 | *Affliction* | community simulator | - | 526 | -12.2% | 630 | -12.7% | 2 s |
+| 9 | *Shadow and Flame 13/11/27* | community simulator | - | 512 | -14.5% | 620 | -14.2% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -95,7 +95,7 @@ Before the pull: at -5s: cast Amplify Curse.
 | 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 |
 | 9 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption | 3.3 |
 | 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
-| 11 | cast Shadow Bolt | 14.3 |
+| 11 | cast Shadow Bolt | 14.4 |
 
 Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Siphon Life (needs the Siphon Life talent).
 
@@ -104,8 +104,8 @@ Damage by ability:
 | Ability | [`opt-affliction-raid-raid-dps`](opt-affliction-raid-raid-dps.md) |
 |---|---|
 | Shadow Bolt | 48% |
-| Bane of Agony | 18% |
-| Corruption | 17% |
+| Bane of Agony | 17% |
+| Corruption | 16% |
 | Immolate | 11% |
 | Pet: Auto Attack | 5% |
 | Searing Pain | 1% |

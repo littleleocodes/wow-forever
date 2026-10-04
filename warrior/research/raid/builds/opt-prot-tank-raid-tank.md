@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tank` and profile `raid-tank`: score +58.6% (tank score: 0.5 x threat gain + 0.5 x mitigation gain + 0.1 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tank` and profile `raid-tank`: score +58.4% (tank score: 0.5 x threat gain + 0.5 x mitigation gain + 0.1 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -21,8 +21,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tan
 |---|---|---|---|
 | **Deflection** | 5/5 | unchanged | Increases your Parry chance by 5%. |
 | **Improved Heroic Strike** | 3/3 | changed | Reduces the cost of your Heroic Strike ability by 3 Rage. |
-| **Improved Tactical Mastery** | 5/5 | **NEW** | Tactical Mastery lets you retain up to an additional 15 Rage when you change stances. |
-| **Anger Management** | 1/1 | changed | Generates 1 Rage every 3 sec while in combat, and reduces Rage loss while out of combat by 30%. |
+| **Improved Rend** | 3/3 | changed | Increases the Bleed damage done by your Rend ability by 35%. |
+| **Deep Wounds** | 3/3 | changed | Your critical strikes cause your opponent to Bleed, dealing 60% of your melee weapon's average damage over 12 sec. |
 
 ### Fury (5)
 
@@ -34,39 +34,39 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tan
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Anticipation** | 5/5 | changed | Increases your Defense Skill by 20. |
 | **Shield Specialization** | 5/5 | changed | Increases your chance to Block attacks with your shield by 5% and grants you a 100% chance to generate 5 Rage when you Block. |
+| **Improved Revenge** | 3/3 | changed | Increases damage dealt by your Revenge ability by 60%. |
+| **Anticipation** | 5/5 | changed | Increases your Defense Skill by 20. |
 | **Improved Thunder Clap** | 3/3 | changed | Reduces the Rage cost of your Thunder Clap ability by 6. |
 | **Defiance** | 3/3 | changed | Increases all threat generated in Defensive stance by an additional 15% while a shield is equipped. |
-| **Improved Revenge** | 3/3 | changed | Increases damage dealt by your Revenge ability by 60%. |
 | **Master of Defense** | 2/2 | **NEW** | Grants you a 100% chance to generate 5 Rage when you Dodge or Parry while a shield is equipped. |
 | **Vanguard** | 1/1 | **NEW** | Your Charge ability is now usable while in Defensive Stance. |
 | **Concussion Blow** | 1/1 | changed | Stuns the target for 5 sec. |
-| **Bastion** | 5/5 | **NEW** | Increases all damage you deal by 10% while a shield is equipped. |
 | **Focused Rage** | 3/3 | **NEW** | Reduces the Rage cost of your offensive abilities by 3. |
+| **Bastion** | 5/5 | **NEW** | Increases all damage you deal by 10% while a shield is equipped. |
 | **Shield Slam** | 1/1 | changed | Slam the target with your shield, causing 421 to 439 damage, increased by your Block Value, and has a 50% chance of dispelling 1 magic effect on the target. Causes a very high amount of threat. |
 
 ## Core talents (priority order)
 
 1. **Shield Slam** — Removing it costs 22.7 points of score in this model.
-2. **Defiance** — Removing it costs 11.0 points of score in this model.
+2. **Defiance** — Removing it costs 10.9 points of score in this model.
 3. **Deflection** — Removing it costs 5.9 points of score in this model.
 4. **Bastion** — Removing it costs 5.4 points of score in this model.
-5. **Improved Revenge** — Removing it costs 4.4 points of score in this model.
-6. **Focused Rage** — Removing it costs 4.0 points of score in this model.
+5. **Improved Revenge** — Removing it costs 4.8 points of score in this model.
+6. **Focused Rage** — Removing it costs 4.2 points of score in this model.
 7. **Anticipation** — Removing it costs 3.0 points of score in this model.
 8. **Shield Specialization** — Removing it costs 2.9 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
-**2 of 4** for `prot-tank` by tank value in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 4** for `prot-tank` by tank value in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`prot-raid-tank`](prot-raid-tank.md) | ours: hand draft | 14/5/32 | 1.000 | +0.0% | 652 | 1161 |
-| 2 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 14/5/32 | 0.997 | -0.3% | 650 | 1164 |
-| 3 | *Protection* | community simulator | - | 0.949 | -5.1% | 615 | 1217 |
-| 4 | *Protection 1/0/50* | community simulator | - | 0.938 | -6.2% | 608 | 1229 |
+| 1 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 14/5/32 | 1.007 | +0.0% | 697 | 1163 |
+| 2 | [`prot-raid-tank`](prot-raid-tank.md) | ours: hand draft | 14/5/32 | 1.000 | -0.7% | 687 | 1163 |
+| 3 | *Protection* | community simulator | - | 0.946 | -6.1% | 644 | 1220 |
+| 4 | *Protection 1/0/50* | community simulator | - | 0.935 | -7.1% | 635 | 1229 |
 
 ## Rotation (community simulator, raid setting)
 
@@ -84,7 +84,7 @@ Before the pull: at -1s: cast Battle Shout.
 | 3 | cast Revenge | 6.1 |
 | 4 | cast Shield Slam | 9.9 |
 | 5 | cast Thunder Clap | 9.7 |
-| 6 | if rage ≥ 45: cast Heroic Strike | 8.2 |
+| 6 | if rage ≥ 45: cast Heroic Strike | 9.5 |
 | 7 | if not Rend is on the target: cast Rend | 2.9 |
 
 Lines of the simulator's rotation these builds never cast: cast Defensive Stance, cast Sunder Armor (its condition never held in these fights).
@@ -93,16 +93,16 @@ Damage by ability (threat for tanks):
 
 | Ability | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) |
 |---|---|
-| Shield Slam | 33% |
-| Auto Attack | 23% |
-| Heroic Strike | 16% |
-| Revenge | 14% |
-| Thunder Clap | 7% |
-| Rend | 2% |
+| Shield Slam | 31% |
+| Auto Attack | 22% |
+| Heroic Strike | 18% |
+| Revenge | 16% |
+| Rend | 4% |
+| Thunder Clap | 4% |
+| Deep Wound | 2% |
 | Retribution Aura | 1% |
 | Thorns | 1% |
 | OtherActionRageGain | 1% |
-| Dragonbreath Chili | 0% |
 
 ## Notes
 

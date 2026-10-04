@@ -3,12 +3,12 @@
  "allocation": {
   "Arms": [
    [
-    "Improved Rend",
-    3
-   ],
-   [
     "Improved Heroic Strike",
     2
+   ],
+   [
+    "Improved Rend",
+    3
    ],
    [
     "Improved Tactical Mastery",
@@ -25,11 +25,11 @@
   ],
   "Fury": [
    [
-    "Cruelty",
+    "Booming Voice",
     5
    ],
    [
-    "Booming Voice",
+    "Cruelty",
     5
    ],
    [
@@ -37,11 +37,19 @@
     5
    ],
    [
+    "Furious Precision",
+    3
+   ],
+   [
+    "Dual Wield Specialization",
+    5
+   ],
+   [
     "Raging Blows",
     1
    ],
    [
-    "Dual Wield Specialization",
+    "Enrage",
     5
    ],
    [
@@ -49,16 +57,8 @@
     2
    ],
    [
-    "Enrage",
-    5
-   ],
-   [
     "Death Wish",
     1
-   ],
-   [
-    "Precision",
-    3
    ],
    [
     "Flurry",
@@ -81,5 +81,8 @@
   "dps_end": 379.7086192691021,
   "gain": 0.0,
   "tank": false
- }
+ },
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

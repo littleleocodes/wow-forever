@@ -42,7 +42,7 @@ The Assassination PvP build derived on 2026-09-30 (derive_pvp.py): the stats mod
 |---|---|---|---|
 | **Master of Deception** | 3/3 | changed | Reduces the chance enemies have to detect you while in Stealth mode as if you were 3 levels higher. |
 | **Opportunity** | 2/2 | changed | Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 10%. |
-| **Setup** | 1/3 | changed | Gives you a 33% chance to add a Combo Point to your target after Dodging an attack or fully resisting a spell. |
+| **Setup** | 1/3 | changed | Gives you a 33% chance to add a Combo Point to your target after Dodging one of their attacks or fully resisting one of their spells. |
 | **Elusiveness** | 2/2 | unchanged | Reduces the cooldown of your Vanish and Blind abilities by 90 sec. |
 | **Dirty Tricks** | 2/2 | **NEW** | Reduces the Energy cost of your Sap and Blind abilities by 50%. |
 | **Improved Ambush** | 3/3 | moved | Increases the critical strike chance of your Ambush ability by 45%. |

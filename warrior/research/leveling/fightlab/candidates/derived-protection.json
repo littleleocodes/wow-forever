@@ -35,20 +35,24 @@
   ],
   "Protection": [
    [
+    "Improved Bloodrage",
+    2
+   ],
+   [
     "Shield Specialization",
     5
+   ],
+   [
+    "Iron Will",
+    3
    ],
    [
     "Anticipation",
     5
    ],
    [
-    "Improved Bloodrage",
-    2
-   ],
-   [
-    "Toughness",
-    4
+    "Improved Revenge",
+    3
    ],
    [
     "Last Stand",
@@ -56,11 +60,7 @@
    ],
    [
     "Master of Defense",
-    1
-   ],
-   [
-    "Improved Revenge",
-    3
+    2
    ],
    [
     "Concussion Blow",
@@ -305,5 +305,8 @@
   },
   "fights": 800,
   "confirm": 3000
- }
+ },
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

@@ -3,12 +3,12 @@
  "allocation": {
   "Arms": [
    [
-    "Improved Rend",
-    3
-   ],
-   [
     "Improved Heroic Strike",
     2
+   ],
+   [
+    "Improved Rend",
+    3
    ],
    [
     "Improved Tactical Mastery",
@@ -25,6 +25,10 @@
   ],
   "Fury": [
    [
+    "Booming Voice",
+    5
+   ],
+   [
     "Cruelty",
     5
    ],
@@ -33,19 +37,19 @@
     5
    ],
    [
-    "Boundless Rage",
+    "Furious Precision",
     3
    ],
    [
-    "Improved Cleave",
-    2
+    "Dual Wield Specialization",
+    5
    ],
    [
     "Raging Blows",
     1
    ],
    [
-    "Dual Wield Specialization",
+    "Enrage",
     5
    ],
    [
@@ -53,16 +57,8 @@
     2
    ],
    [
-    "Enrage",
-    5
-   ],
-   [
     "Death Wish",
     1
-   ],
-   [
-    "Precision",
-    3
    ],
    [
     "Flurry",
@@ -75,5 +71,8 @@
   ],
   "Protection": []
  },
- "note": "Optimizer raid build saved by rebuild.py on 2026-09-27 (raid calibration round 1)"
+ "note": "Optimizer raid build saved by rebuild.py on 2026-09-27 (raid calibration round 1)",
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

@@ -427,10 +427,10 @@
   "text": "Causes your Fire Ward to have a 10% chance to reflect Fire spells while active.",
   "effects": []
  },
- "Hot Streak": {
+ "Heating Up": {
   "tree": "Fire",
   "max": 1,
-  "text": "Your non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch grant Hot Streak for 20 sec. Hot Streak reduces the cast time of Pyroblast by 25%, stacking up to 3 times.",
+  "text": "Non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch reduce the cast time of your next Pyroblast cast within 20 sec by 25%, stacking up to 3 times.",
   "effects": []
  },
  "Master of Elements": {
@@ -488,7 +488,7 @@
  "Combustion": {
   "tree": "Fire",
   "max": 1,
-  "text": "When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 4 non-periodic critical strikes with F",
+  "text": "When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 3 non-periodic critical strikes with F",
   "effects": []
  },
  "Frost Warding": {

@@ -55,13 +55,13 @@
 | Balance | Natural Weapons | 5 | **REMOVED** | removed from Classic |
 | Balance | Natural Shapeshifter | 3 | moved-tree | now in Restoration, tier 2 |
 | Balance | Omen of Clarity | 1 | **REMOVED** | removed from Classic |
-| Feral Combat | Ferocity | 5 | changed | tier 1, max 5 — tooltip changed; tooltip changed in build 1.60.1.70009 (ranks 1, 2, 3, 4, 5) |
+| Feral Combat | Ferocity | 5 | changed | tier 1, max 5 — tooltip changed; tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5) |
 | Feral Combat | Thick Hide | 5 | changed | tier 2, max 3 — max rank 5 → 3; tooltip changed; was Feral Combat row 2, col 3 |
 | Feral Combat | Feline Swiftness | 2 | **REMOVED** | removed from Classic |
 | Feral Combat | Sharpened Claws | 3 | changed | tier 3, max 2 — max rank 3 → 2; tooltip changed; was Feral Combat row 3, col 3 |
 | Feral Combat | Improved Shred | 2 | **REMOVED** | removed from Classic |
 | Feral Combat | Predatory Strikes | 3 | changed | tier 4, max 3 — tooltip changed; was Feral Combat row 4, col 2 |
-| Feral Combat | Blood Frenzy | 2 | changed | tier 4, max 2 — tooltip changed; renamed from Primal Fury in build 1.60.1.70009 |
+| Feral Combat | Blood Frenzy | 2 | changed | tier 4, max 2 — tooltip changed; renamed from Primal Fury in build 1.60.1.70170 |
 | Feral Combat | Primal Fury | 2 | unknown | not found in Forever data |
 | Feral Combat | Savage Fury | 2 | changed | tier 3, max 2 — tooltip changed; was Feral Combat row 5, col 1 |
 | Feral Combat | Heart of the Wild | 5 | changed | tier 1, max 5 — tooltip changed; was Feral Combat row 6, col 2 |
@@ -79,10 +79,10 @@
 | Balance | Natural Weapons | 5 | **REMOVED** | removed from Classic |
 | Balance | Natural Shapeshifter | 3 | moved-tree | now in Restoration, tier 2 |
 | Balance | Omen of Clarity | 1 | **REMOVED** | removed from Classic |
-| Feral Combat | Ferocity | 5 | changed | tier 1, max 5 — tooltip changed; tooltip changed in build 1.60.1.70009 (ranks 1, 2, 3, 4, 5) |
+| Feral Combat | Ferocity | 5 | changed | tier 1, max 5 — tooltip changed; tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5) |
 | Feral Combat | Feral Instinct | 5 | changed | tier 2, max 3 — max rank 5 → 3; tooltip changed; was Feral Combat row 2, col 1 |
 | Feral Combat | Thick Hide | 5 | changed | tier 2, max 3 — max rank 5 → 3; tooltip changed; was Feral Combat row 2, col 3 |
-| Feral Combat | Feral Charge | 1 | changed | tier 3, max 1 — tooltip changed; was Feral Combat row 3, col 2; tooltip changed in build 1.60.1.70009 (ranks 1) |
+| Feral Combat | Feral Charge | 1 | changed | tier 3, max 1 — tooltip changed; was Feral Combat row 3, col 2; tooltip changed in build 1.60.1.70170 (ranks 1) |
 | Feral Combat | Sharpened Claws | 3 | changed | tier 3, max 2 — max rank 3 → 2; tooltip changed; was Feral Combat row 3, col 3 |
 | Feral Combat | Predatory Strikes | 3 | changed | tier 4, max 3 — tooltip changed; was Feral Combat row 4, col 2 |
 | Feral Combat | Primal Fury | 1 | unknown | not found in Forever data |
@@ -107,7 +107,7 @@
 | Balance | Nature's Grace | 1 | changed | tier 5, max 1 — tooltip changed |
 | Balance | Moonglow | 3 | changed | tier 2, max 3 — tooltip changed; was Balance row 5, col 3 |
 | Balance | Moonfury | 5 | changed | tier 6, max 5 — tooltip changed |
-| Balance | Moonkin Form | 1 | changed | tier 7, max 1 — tooltip changed |
+| Balance | Moonkin Form | 1 | changed | tier 7, max 1 — tooltip changed; tooltip changed in build 1.60.1.70170 (ranks 1) |
 | Restoration | Improved Mark of the Wild | 5 | **REMOVED** | removed from Classic |
 | Restoration | Nature's Focus | 5 | changed | tier 1, max 5 — tooltip changed; was Restoration row 2, col 2 |
 | Restoration | Reflection | 3 | changed | tier 3, max 3 — tooltip changed |
@@ -149,13 +149,13 @@
 | Balance | Natural Weapons | 5 | **REMOVED** | removed from Classic |
 | Balance | Natural Shapeshifter | 3 | moved-tree | now in Restoration, tier 2 |
 | Balance | Omen of Clarity | 1 | **REMOVED** | removed from Classic |
-| Feral Combat | Ferocity | 5 | changed | tier 1, max 5 — tooltip changed; tooltip changed in build 1.60.1.70009 (ranks 1, 2, 3, 4, 5) |
+| Feral Combat | Ferocity | 5 | changed | tier 1, max 5 — tooltip changed; tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5) |
 | Feral Combat | Thick Hide | 5 | changed | tier 2, max 3 — max rank 5 → 3; tooltip changed; was Feral Combat row 2, col 3 |
 | Feral Combat | Feline Swiftness | 2 | **REMOVED** | removed from Classic |
 | Feral Combat | Sharpened Claws | 3 | changed | tier 3, max 2 — max rank 3 → 2; tooltip changed; was Feral Combat row 3, col 3 |
 | Feral Combat | Improved Shred | 2 | **REMOVED** | removed from Classic |
 | Feral Combat | Predatory Strikes | 3 | changed | tier 4, max 3 — tooltip changed; was Feral Combat row 4, col 2 |
-| Feral Combat | Blood Frenzy | 2 | changed | tier 4, max 2 — tooltip changed; renamed from Primal Fury in build 1.60.1.70009 |
+| Feral Combat | Blood Frenzy | 2 | changed | tier 4, max 2 — tooltip changed; renamed from Primal Fury in build 1.60.1.70170 |
 | Feral Combat | Primal Fury | 2 | unknown | not found in Forever data |
 | Feral Combat | Savage Fury | 2 | changed | tier 3, max 2 — tooltip changed; was Feral Combat row 5, col 1 |
 | Feral Combat | Heart of the Wild | 5 | changed | tier 1, max 5 — tooltip changed; was Feral Combat row 6, col 2 |

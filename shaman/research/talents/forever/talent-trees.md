@@ -1,6 +1,6 @@
-# Shaman — WoW: Forever talent trees (beta client 1.60.1.70009)
+# Shaman — WoW: Forever talent trees (beta client 1.60.1.70170)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70009, captured 2026-09-25. World of Warcraft: Forever beta client, build 1.60.1.70009: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-09-24, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70009; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70170, captured 2026-10-03. World of Warcraft: Forever beta client, build 1.60.1.70170: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-03, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70205; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -206,10 +206,10 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Eye of the Storm** (tooltip changed)
   - Classic: Gives you a 33% chance to gain the Focused Casting effect that lasts for 6 sec after being the victim of a melee or ranged critical strike. The Focused Casting effect prevents you from losing casting time when taking damage.
   - Forever: Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, and Lava Burst by 23%.
-- **Call of Thunder** (max rank 5 → 1, tooltip changed, was Elemental row 3, col 3, prerequisite changed in build 1.60.1.70009: was elemental fury)
+- **Call of Thunder** (max rank 5 → 1, tooltip changed, was Elemental row 3, col 3, prerequisite changed in build 1.60.1.70170: was elemental fury)
   - Classic: Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional 1%.
   - Forever: Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by 3%.
-- **Elemental Fury** (max rank 1 → 5, tooltip changed, was Elemental row 5, col 2, moved in build 1.60.1.70009: was row 3, col 3)
+- **Elemental Fury** (max rank 1 → 5, tooltip changed, was Elemental row 5, col 2, moved in build 1.60.1.70170: was row 3, col 3)
   - Classic: Increases the critical strike damage bonus of your Searing, Magma, and Fire Nova Totems and your Fire, Frost, and Nature spells by 100%.
   - Forever: Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 20%.
 
@@ -260,7 +260,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Restorative Totems** (tooltip changed)
   - Classic: Increases the effect of your Mana Spring and Healing Stream Totems by 5%.
   - Forever: Increases the effect of your Mana Spring Totem by 5% and increases the effect of your Healing Stream Totem by 10%.
-- **Mana Tide Totem** (tooltip changed, was Restoration row 7, col 2, tooltip changed in build 1.60.1.70009 (ranks 1))
+- **Mana Tide Totem** (tooltip changed, was Restoration row 7, col 2, tooltip changed in build 1.60.1.70170 (ranks 1))
   - Classic: Summons a Mana Tide Totem with 5 health at the feet of the caster for 13 sec-1 sec that restores 170 mana every 3 seconds to group members within 0 yards.
   - Forever: Summons a Mana Tide Totem with 5 health at the feet of the caster for 12 sec that restores 88 mana every 3 seconds to group members within 30 yards.
 - **Healing Way** (tooltip changed, was Restoration row 5, col 1)

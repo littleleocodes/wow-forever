@@ -50,7 +50,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-s
 |---|---|---|---|
 | **Master of Deception** | 3/3 | changed | Reduces the chance enemies have to detect you while in Stealth mode as if you were 3 levels higher. |
 | **Opportunity** | 2/2 | changed | Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 10%. |
-| **Setup** | 3/3 | changed | Gives you a 100% chance to add a Combo Point to your target after Dodging an attack or fully resisting a spell. |
+| **Setup** | 3/3 | changed | Gives you a 100% chance to add a Combo Point to your target after Dodging one of their attacks or fully resisting one of their spells. |
 
 ## Leveling order
 

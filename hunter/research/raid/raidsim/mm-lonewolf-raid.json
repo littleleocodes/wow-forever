@@ -4,7 +4,7 @@
  "game": "forever",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
-  "commit": "40be98e",
+  "commit": "b0f0df3",
   "spec_folder": "hunter/dps",
   "gear": "_reference/data/raidsim/gear_sets/forever/hunter-dps-p1.p1opt.gear.json",
   "apl": "_reference/data/raidsim/apls/hunter/mm-lonewolf-raid.apl.json",
@@ -40,46 +40,46 @@
    "measured": true,
    "spell_casts": {
     "20554": 1.0,
-    "25296": 1.0,
     "14287": 21.419,
+    "25296": 1.0,
     "25295": 7.0,
+    "3045": 1.0,
     "20904": 13.485666666666667,
-    "2643": 0.09333333333333334,
-    "3045": 1.0
+    "2643": 0.09333333333333334
    },
    "casts": {
     "Berserking": 1.0,
-    "Aspect of the Hawk": 1.0,
-    "Arcane Shot": 21.419,
-    "Serpent Sting": 7.0,
     "Major Mana Potion": 2.0,
+    "Arcane Shot": 21.419,
+    "Aspect of the Hawk": 1.0,
+    "Serpent Sting": 7.0,
+    "Rapid Fire": 1.0,
+    "Auto Shot": 83.76366666666667,
     "Aimed Shot": 13.485666666666667,
     "Multi-Shot": 0.09333333333333334,
-    "Rapid Fire": 1.0,
-    "OtherActionManaGain": 2.0,
-    "Auto Shot": 83.76366666666667
+    "OtherActionManaGain": 2.0
    },
-   "dps": 442.5556192729573,
-   "dps_stdev": 17.29239080701676,
-   "threat": 452.5556192729573,
+   "dps": 424.2272330585573,
+   "dps_stdev": 16.584044524583703,
+   "threat": 434.22723305855726,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 86.56322800680499,
    "error": null,
-   "scorer": 0.7403773393280001,
+   "scorer": 0.7428539024223973,
    "shares": {
-    "Auto Shot": 0.5043609054765559,
-    "Arcane Shot": 0.2204807117358467,
-    "Serpent Sting": 0.16646753486268911,
-    "Aimed Shot": 0.10806911750185728,
-    "Multi-Shot": 0.0006217304230510469
+    "Auto Shot": 0.5261514006325866,
+    "Arcane Shot": 0.2060391207688802,
+    "Serpent Sting": 0.1544227326182934,
+    "Aimed Shot": 0.1127381542092438,
+    "Multi-Shot": 0.0006485917709960265
    },
    "source_shares": {
-    "auto": 0.5044,
-    "arcane": 0.2205,
-    "serpent": 0.1665,
-    "aimed": 0.1081,
+    "auto": 0.5262,
+    "arcane": 0.206,
+    "serpent": 0.1544,
+    "aimed": 0.1127,
     "multi": 0.0006
    },
    "unmatched_share": 0.0
@@ -91,47 +91,47 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "20554": 1.0,
-    "20904": 11.797666666666666,
-    "3045": 1.0,
-    "25296": 1.0,
     "14287": 25.062333333333335,
+    "20904": 11.797666666666666,
     "2643": 0.007,
-    "25295": 6.189666666666667
+    "25296": 1.0,
+    "3045": 1.0,
+    "25295": 6.189666666666667,
+    "20554": 1.0
    },
    "casts": {
-    "Auto Shot": 83.69833333333334,
-    "Berserking": 1.0,
-    "Aimed Shot": 11.797666666666666,
-    "Rapid Fire": 1.0,
-    "Major Mana Potion": 2.0,
-    "Aspect of the Hawk": 1.0,
-    "OtherActionManaGain": 2.0,
     "Arcane Shot": 25.062333333333335,
+    "Aimed Shot": 11.797666666666666,
     "Multi-Shot": 0.007,
-    "Serpent Sting": 6.189666666666667
+    "Major Mana Potion": 2.0,
+    "Auto Shot": 83.69833333333334,
+    "Aspect of the Hawk": 1.0,
+    "Rapid Fire": 1.0,
+    "OtherActionManaGain": 2.0,
+    "Serpent Sting": 6.189666666666667,
+    "Berserking": 1.0
    },
-   "dps": 445.92738962229964,
-   "dps_stdev": 17.922076223072015,
-   "threat": 455.92738962229964,
+   "dps": 426.6009398587165,
+   "dps_stdev": 17.06328734070432,
+   "threat": 436.6009398587165,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 100.39142804206767,
    "error": null,
-   "scorer": 0.7775846741359093,
+   "scorer": 0.777944035931594,
    "shares": {
-    "Auto Shot": 0.5006897152370706,
-    "Arcane Shot": 0.255744905623656,
-    "Serpent Sting": 0.15067318731399143,
-    "Aimed Shot": 0.09283831745954166,
-    "Multi-Shot": 5.387436574040335e-05
+    "Auto Shot": 0.5233726343883429,
+    "Arcane Shot": 0.23947440476231052,
+    "Serpent Sting": 0.14005244196474056,
+    "Aimed Shot": 0.09704420382986154,
+    "Multi-Shot": 5.6315054744444565e-05
    },
    "source_shares": {
-    "auto": 0.5007,
-    "arcane": 0.2557,
-    "serpent": 0.1507,
-    "aimed": 0.0928,
+    "auto": 0.5234,
+    "arcane": 0.2395,
+    "serpent": 0.1401,
+    "aimed": 0.097,
     "multi": 0.0001
    },
    "unmatched_share": 0.0
@@ -143,47 +143,47 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
+    "3045": 1.0,
+    "2643": 0.006,
     "25295": 6.191,
     "25296": 1.0,
-    "3045": 1.0,
-    "20554": 1.0,
-    "20904": 11.799,
     "14287": 25.049666666666667,
-    "2643": 0.006
+    "20904": 11.799,
+    "20554": 1.0
    },
    "casts": {
+    "Rapid Fire": 1.0,
+    "Multi-Shot": 0.006,
+    "OtherActionManaGain": 2.0,
     "Serpent Sting": 6.191,
+    "Auto Shot": 83.64566666666667,
     "Major Mana Potion": 2.0,
     "Aspect of the Hawk": 1.0,
-    "Rapid Fire": 1.0,
-    "Auto Shot": 83.64566666666667,
-    "OtherActionManaGain": 2.0,
-    "Berserking": 1.0,
-    "Aimed Shot": 11.799,
     "Arcane Shot": 25.049666666666667,
-    "Multi-Shot": 0.006
+    "Aimed Shot": 11.799,
+    "Berserking": 1.0
    },
-   "dps": 445.6846846448275,
-   "dps_stdev": 17.991597283985502,
-   "threat": 455.68468464482754,
+   "dps": 426.3679108347608,
+   "dps_stdev": 17.13595638915343,
+   "threat": 436.3679108347608,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 100.37561808827431,
    "error": null,
-   "scorer": 0.768433096057215,
+   "scorer": 0.7688100408950572,
    "shares": {
-    "Auto Shot": 0.5007043622168096,
-    "Arcane Shot": 0.25565232276259914,
-    "Serpent Sting": 0.15077735053326313,
-    "Aimed Shot": 0.09283051121879188,
-    "Multi-Shot": 3.5453268536229787e-05
+    "Auto Shot": 0.5233889795739639,
+    "Arcane Shot": 0.2393881852551586,
+    "Serpent Sting": 0.14014953991340953,
+    "Aimed Shot": 0.09703623576399859,
+    "Multi-Shot": 3.7059493469529974e-05
    },
    "source_shares": {
-    "auto": 0.5007,
-    "arcane": 0.2557,
-    "serpent": 0.1508,
-    "aimed": 0.0928,
+    "auto": 0.5234,
+    "arcane": 0.2394,
+    "serpent": 0.1401,
+    "aimed": 0.097,
     "multi": 0.0
    },
    "unmatched_share": 0.0
@@ -195,47 +195,47 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "3045": 1.0,
-    "2643": 0.002,
-    "25295": 6.0,
+    "20904": 11.998,
     "25296": 1.0,
     "14287": 25.008,
-    "20904": 11.998,
-    "20554": 1.0
+    "2643": 0.002,
+    "25295": 6.0,
+    "20554": 1.0,
+    "3045": 1.0
    },
    "casts": {
-    "Rapid Fire": 1.0,
     "OtherActionManaGain": 2.0,
-    "Major Mana Potion": 2.0,
-    "Multi-Shot": 0.002,
-    "Serpent Sting": 6.0,
+    "Aimed Shot": 11.998,
     "Auto Shot": 83.65733333333333,
     "Aspect of the Hawk": 1.0,
     "Arcane Shot": 25.008,
-    "Aimed Shot": 11.998,
-    "Berserking": 1.0
+    "Multi-Shot": 0.002,
+    "Serpent Sting": 6.0,
+    "Berserking": 1.0,
+    "Major Mana Potion": 2.0,
+    "Rapid Fire": 1.0
    },
-   "dps": 447.17953857421253,
-   "dps_stdev": 17.781866512589737,
-   "threat": 457.17953857421253,
+   "dps": 427.77976442602915,
+   "dps_stdev": 17.007543515271095,
+   "threat": 437.77976442602915,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 99.521435113242,
    "error": null,
-   "scorer": 0.7623964555393012,
+   "scorer": 0.76320986403312,
    "shares": {
-    "Auto Shot": 0.49872331527375297,
-    "Arcane Shot": 0.2549622982638704,
-    "Serpent Sting": 0.15179407172212325,
-    "Aimed Shot": 0.09450308080996844,
-    "Multi-Shot": 1.7233930284999383e-05
+    "Auto Shot": 0.5213403731229608,
+    "Arcane Shot": 0.23875222217125003,
+    "Serpent Sting": 0.1411006021256155,
+    "Aimed Shot": 0.09878878709268794,
+    "Multi-Shot": 1.80154874857312e-05
    },
    "source_shares": {
-    "auto": 0.4987,
-    "arcane": 0.255,
-    "serpent": 0.1518,
-    "aimed": 0.0945,
+    "auto": 0.5213,
+    "arcane": 0.2388,
+    "serpent": 0.1411,
+    "aimed": 0.0988,
     "multi": 0.0
    },
    "unmatched_share": 0.0
@@ -248,27 +248,27 @@
    "spell_casts": {
     "14287": 25.062333333333335,
     "20904": 11.797666666666666,
-    "25296": 1.0,
+    "3045": 1.0,
+    "20554": 1.0,
     "2643": 0.007,
     "25295": 6.189666666666667,
-    "3045": 1.0,
-    "20554": 1.0
+    "25296": 1.0
    },
    "casts": {
+    "Major Mana Potion": 2.0,
     "Arcane Shot": 25.062333333333335,
     "Aimed Shot": 11.797666666666666,
-    "Aspect of the Hawk": 1.0,
-    "Multi-Shot": 0.007,
-    "Serpent Sting": 6.189666666666667,
     "Rapid Fire": 1.0,
-    "Auto Shot": 83.69833333333334,
     "OtherActionManaGain": 2.0,
     "Berserking": 1.0,
-    "Major Mana Potion": 2.0
+    "Multi-Shot": 0.007,
+    "Serpent Sting": 6.189666666666667,
+    "Aspect of the Hawk": 1.0,
+    "Auto Shot": 83.69833333333334
    },
-   "dps": 362.2743106428888,
-   "dps_stdev": 14.636729813987706,
-   "threat": 372.2743106428888,
+   "dps": 347.20265774730996,
+   "dps_stdev": 13.977422383584125,
+   "threat": 357.20265774731,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
@@ -276,17 +276,17 @@
    "error": null,
    "scorer": null,
    "shares": {
-    "Auto Shot": 0.5135870139632228,
-    "Arcane Shot": 0.2623326551722126,
-    "Serpent Sting": 0.12879532306795688,
-    "Aimed Shot": 0.09522974567759908,
-    "Multi-Shot": 5.526211900852665e-05
+    "Auto Shot": 0.5358812131388638,
+    "Arcane Shot": 0.24519783058529845,
+    "Serpent Sting": 0.11949974003837142,
+    "Aimed Shot": 0.09936355525584137,
+    "Multi-Shot": 5.766098162488613e-05
    },
    "source_shares": {
-    "auto": 0.5136,
-    "arcane": 0.2623,
-    "serpent": 0.1288,
-    "aimed": 0.0952,
+    "auto": 0.5359,
+    "arcane": 0.2452,
+    "serpent": 0.1195,
+    "aimed": 0.0994,
     "multi": 0.0001
    },
    "unmatched_share": 0.0
@@ -297,49 +297,49 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "1293527": 24.89966666666667,
-    "25295": 7.207666666666666,
-    "20554": 1.0,
+    "25296": 1.0,
+    "1293527": 24.904,
+    "2643": 0.20766666666666667,
+    "20904": 14.675,
+    "25295": 7.203333333333333,
     "3045": 1.0,
-    "20904": 14.692666666666666,
-    "2643": 0.192,
-    "25296": 1.0
+    "20554": 1.0
    },
    "casts": {
-    "Summon Hawk": 24.89966666666667,
-    "Serpent Sting": 7.207666666666666,
     "OtherActionManaGain": 2.0,
-    "Berserking": 1.0,
-    "Rapid Fire": 1.0,
-    "Auto Shot": 83.76433333333334,
+    "Aspect of the Hawk": 1.0,
+    "Summon Hawk": 24.904,
     "Major Mana Potion": 2.0,
-    "Aimed Shot": 14.692666666666666,
-    "Multi-Shot": 0.192,
-    "Aspect of the Hawk": 1.0
+    "Multi-Shot": 0.20766666666666667,
+    "Aimed Shot": 14.675,
+    "Serpent Sting": 7.203333333333333,
+    "Rapid Fire": 1.0,
+    "Berserking": 1.0,
+    "Auto Shot": 83.86366666666666
    },
-   "dps": 366.7553601282217,
-   "dps_stdev": 11.251450449786853,
-   "threat": 376.75536012822175,
+   "dps": 367.52122098925884,
+   "dps_stdev": 9.828544707369742,
+   "threat": 377.5212209892588,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 74.70146566883832,
+   "oom_seconds": 74.70748026541466,
    "error": null,
    "scorer": null,
    "shares": {
-    "Auto Shot": 0.4474738464231321,
-    "Summon Hawk": 0.31758705798932585,
-    "Serpent Sting": 0.13823818729995266,
-    "Aimed Shot": 0.09569964945615139,
-    "Multi-Shot": 0.0010012588314380314
+    "Auto Shot": 0.4468176778880522,
+    "Summon Hawk": 0.33376045361753315,
+    "Serpent Sting": 0.12243194013092125,
+    "Aimed Shot": 0.09591894519461099,
+    "Multi-Shot": 0.0010709831688824475
    },
    "source_shares": {
-    "auto": 0.6557,
-    "serpent": 0.2026,
-    "aimed": 0.1402,
-    "multi": 0.0015
+    "auto": 0.6707,
+    "serpent": 0.1838,
+    "aimed": 0.144,
+    "multi": 0.0016
    },
-   "unmatched_share": 0.3176
+   "unmatched_share": 0.3338
   },
   {
    "label": "sim preset: Marksmanship 0/39/12",
@@ -347,27 +347,27 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "25296": 1.0,
     "20904": 12.0,
-    "25295": 7.0,
-    "20554": 1.0,
     "14287": 24.0,
-    "3045": 1.0
+    "20554": 1.0,
+    "25295": 7.0,
+    "3045": 1.0,
+    "25296": 1.0
    },
    "casts": {
-    "Aspect of the Hawk": 1.0,
     "Aimed Shot": 12.0,
-    "Serpent Sting": 7.0,
-    "Auto Shot": 75.0,
     "OtherActionManaGain": 2.0,
-    "Berserking": 1.0,
-    "Major Mana Potion": 2.0,
     "Arcane Shot": 24.0,
-    "Rapid Fire": 1.0
+    "Auto Shot": 75.0,
+    "Berserking": 1.0,
+    "Serpent Sting": 7.0,
+    "Rapid Fire": 1.0,
+    "Major Mana Potion": 2.0,
+    "Aspect of the Hawk": 1.0
    },
-   "dps": 347.1445571539033,
-   "dps_stdev": 13.003108573669403,
-   "threat": 357.1445571539033,
+   "dps": 331.69990537117184,
+   "dps_stdev": 12.314550525506055,
+   "threat": 341.6999053711717,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
@@ -375,16 +375,16 @@
    "error": null,
    "scorer": null,
    "shares": {
-    "Auto Shot": 0.4814627588333158,
-    "Arcane Shot": 0.26216859096860257,
-    "Serpent Sting": 0.15501791211299656,
-    "Aimed Shot": 0.10135073808508516
+    "Auto Shot": 0.5038806870151549,
+    "Arcane Shot": 0.24578503879577493,
+    "Serpent Sting": 0.14426443057425814,
+    "Aimed Shot": 0.10606984361481198
    },
    "source_shares": {
-    "auto": 0.4815,
-    "arcane": 0.2622,
-    "serpent": 0.155,
-    "aimed": 0.1014
+    "auto": 0.5039,
+    "arcane": 0.2458,
+    "serpent": 0.1443,
+    "aimed": 0.1061
    },
    "unmatched_share": 0.0
   },
@@ -394,27 +394,27 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "14287": 21.0,
     "25295": 7.0,
     "3045": 1.0,
+    "14287": 21.0,
     "20554": 1.0,
     "25296": 1.0,
     "20904": 14.0
    },
    "casts": {
-    "Arcane Shot": 21.0,
     "Serpent Sting": 7.0,
-    "Auto Shot": 75.0,
-    "Rapid Fire": 1.0,
     "OtherActionManaGain": 2.0,
+    "Rapid Fire": 1.0,
+    "Auto Shot": 75.0,
+    "Arcane Shot": 21.0,
     "Berserking": 1.0,
     "Major Mana Potion": 2.0,
     "Aspect of the Hawk": 1.0,
     "Aimed Shot": 14.0
    },
-   "dps": 316.39578651946954,
-   "dps_stdev": 9.707268054169063,
-   "threat": 326.39578651946954,
+   "dps": 298.0452274870253,
+   "dps_stdev": 9.068128010611899,
+   "threat": 308.0452274870253,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
@@ -422,16 +422,16 @@
    "error": null,
    "scorer": null,
    "shares": {
-    "Auto Shot": 0.4950993460612504,
-    "Arcane Shot": 0.23319235560374302,
-    "Serpent Sting": 0.16046844258062717,
-    "Aimed Shot": 0.11123985575437943
+    "Auto Shot": 0.514728012235356,
+    "Arcane Shot": 0.21910045465446265,
+    "Serpent Sting": 0.1500175629170681,
+    "Aimed Shot": 0.11615397019311319
    },
    "source_shares": {
-    "auto": 0.4951,
-    "arcane": 0.2332,
-    "serpent": 0.1605,
-    "aimed": 0.1112
+    "auto": 0.5147,
+    "arcane": 0.2191,
+    "serpent": 0.15,
+    "aimed": 0.1162
    },
    "unmatched_share": 0.0
   }

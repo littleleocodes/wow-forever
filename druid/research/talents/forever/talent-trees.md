@@ -1,6 +1,6 @@
-# Druid — WoW: Forever talent trees (beta client 1.60.1.70009)
+# Druid — WoW: Forever talent trees (beta client 1.60.1.70170)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70009, captured 2026-09-25. World of Warcraft: Forever beta client, build 1.60.1.70009: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-09-24, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70009; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70170, captured 2026-10-03. World of Warcraft: Forever beta client, build 1.60.1.70170: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-03, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70205; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -9,7 +9,7 @@
 | Tree | Talents | New | Changed | Moved | Unchanged | Removed from Classic |
 |---|---|---|---|---|---|---|
 | Balance | 16 | 5 | 11 | 0 | 0 | 5 |
-| Feral Combat | 19 | 8 | 11 | 0 | 0 | 5 |
+| Feral Combat | 20 | 9 | 11 | 0 | 0 | 5 |
 | Restoration | 16 | 4 | 7 | 2 | 3 | 3 |
 
 ## Balance
@@ -63,7 +63,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Moonkin Form** | 1 | — | changed | Transforms the Druid into Moonkin Form. While in this form, the armor contribution from items is increased by 360%, Omen of Clarity gains 100% increased chance to trigger, and all party members within 45 yards have their critical strike chance increased by 3%, exclusive with Leader of the Pack. The Moonkin cannot cast healing spells while shapeshifted.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects. | — |
+| **Moonkin Form** | 1 | — | changed | Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party members within 45 yards have their Critical Strike chance increased by 3%, exclusive with Leader of the Pack. Also protects the caster from Polymorph effects and prevents the use of healing spells.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects. | — |
 
 **Removed from Classic Balance:** Nature's Grasp, Improved Nature's Grasp, Natural Weapons, Improved Thorns, Omen of Clarity
 
@@ -89,6 +89,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
+| **Shredding Attacks** | 3 | — | **NEW** | Reduces the Energy cost of your Shred ability by 6 and reduces the Rage cost of your Lacerate ability by 1. | Reduces the Energy cost of your Shred ability by 18 and reduces the Rage cost of your Lacerate ability by 3. |
 | **Savage Fury** | 2 | — | changed | Increases the damage caused by your Claw, Rake, Shred, Maul, and Swipe abilities by 5%. | Increases the damage caused by your Claw, Rake, Shred, Maul, and Swipe abilities by 10%. |
 | **Feral Charge** | 1 | — | changed | Charge an enemy, immobilizing them and interrupting any spell they are casting for 4 sec.  Leap behind an enemy. | — |
 | **Sharpened Claws** | 2 | — | changed | Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by 3%. | Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by 6%. |
@@ -97,8 +98,8 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Shredding Attacks** | 3 | — | **NEW** | Reduces the Energy cost of your Shred ability by 6 and reduces the Rage cost of your Lacerate ability by 1. | Reduces the Energy cost of your Shred ability by 18 and reduces the Rage cost of your Lacerate ability by 3. |
-| **Primal Bite** | 1 | Savage Fury (2) | **NEW** | Bite the target for 100% normal damage plus 26. | — |
+| **Shifting Power** | 1 | Shredding Attacks (3) | **NEW** | Instantly convert 55% of base Mana into 40 Energy. Shifting Power's cost is reduced by effects that reduce the cost of Shapeshifting. | — |
+| **Primal Bite** | 1 | Savage Fury (2) | **NEW** | Bite the target, dealing 100% normal damage plus 26 and generating a high amount of threat. | — |
 | **Predatory Strikes** | 3 | — | changed | Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 50% of your level. | Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 150% of your level. |
 | **Blood Frenzy** | 2 | Sharpened Claws (2) | changed | Gives you a 50% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 50% chance to add an additional Combo Point. | Gives you a 100% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 100% chance to add an additional Combo Point. |
 
@@ -106,9 +107,9 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Predatory Instincts** | 2 | — | **NEW** | Increases the critical strike damage bonus of your melee abilities by 10%. | Increases the critical strike damage bonus of your melee abilities by 20%. |
+| **Improved Shifting Power** | 2 | Shifting Power (1) | **NEW** | Reduces the cooldown of your Shifting Power spell by 4 sec. | Reduces the cooldown of your Shifting Power spell by 8 sec. |
 | **Leader of the Pack** | 1 | — | changed | While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the critical strike chance of all party members within 45 yards by 3%, exclusive with Moonkin Aura. | — |
-| **King of the Jungle** | 3 | — | **NEW** | Tiger's Fury now instantly grants you 20 Energy. | Tiger's Fury now instantly grants you 60 Energy. |
+| **Predatory Instincts** | 2 | — | **NEW** | Increases the critical strike damage bonus of your melee abilities by 10%. | Increases the critical strike damage bonus of your melee abilities by 20%. |
 
 ### Tier 6 — requires 25 points in Feral Combat
 
@@ -216,13 +217,13 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Moonfury** (tooltip changed)
   - Classic: Increases the damage done by your Starfire, Moonfire and Wrath spells by 2%. .
   - Forever: Increases the damage done by your Arcane and Nature spells by 2%.
-- **Moonkin Form** (tooltip changed)
+- **Moonkin Form** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1))
   - Classic: Transforms the Druid into Moonkin Form. While in this form the armor contribution from items is increased by 360% and all party members within 0 yards have their spell critical chance increased by 3%. The Moonkin can only cast Balance spells while shapeshifted.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
-  - Forever: Transforms the Druid into Moonkin Form. While in this form, the armor contribution from items is increased by 360%, Omen of Clarity gains 100% increased chance to trigger, and all party members within 45 yards have their critical strike chance increased by 3%, exclusive with Leader of the Pack. The Moonkin cannot cast healing spells while shapeshifted.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
+  - Forever: Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party members within 45 yards have their Critical Strike chance increased by 3%, exclusive with Leader of the Pack. Also protects the caster from Polymorph effects and prevents the use of healing spells.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
 
 ### Feral Combat
 
-- **Ferocity** (tooltip changed, tooltip changed in build 1.60.1.70009 (ranks 1, 2, 3, 4, 5))
+- **Ferocity** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5))
   - Classic: Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by 1 Rage or Energy.
   - Forever: Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 1 Rage or Energy.
 - **Heart of the Wild** (tooltip changed, was Feral Combat row 6, col 2)
@@ -240,7 +241,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Savage Fury** (tooltip changed, was Feral Combat row 5, col 1)
   - Classic: Increases the damage caused by your Claw, Rake, Maul and Swipe abilities by 10%.
   - Forever: Increases the damage caused by your Claw, Rake, Shred, Maul, and Swipe abilities by 5%.
-- **Feral Charge** (tooltip changed, was Feral Combat row 3, col 2, tooltip changed in build 1.60.1.70009 (ranks 1))
+- **Feral Charge** (tooltip changed, was Feral Combat row 3, col 2, tooltip changed in build 1.60.1.70170 (ranks 1))
   - Classic: Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec.
   - Forever: Charge an enemy, immobilizing them and interrupting any spell they are casting for 4 sec.  Leap behind an enemy.
 - **Sharpened Claws** (max rank 3 → 2, tooltip changed, was Feral Combat row 3, col 3)
@@ -249,7 +250,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Predatory Strikes** (tooltip changed, was Feral Combat row 4, col 2)
   - Classic: Increases your melee attack power in Cat, Bear and Dire Bear Forms by 50% of your level.
   - Forever: Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 50% of your level.
-- **Blood Frenzy** (tooltip changed, renamed from Primal Fury in build 1.60.1.70009)
+- **Blood Frenzy** (tooltip changed, renamed from Primal Fury in build 1.60.1.70170)
   - Classic: Gives you a 50% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear and Dire Bear Form.
   - Forever: Gives you a 50% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 50% chance to add an additional Combo Point.
 - **Leader of the Pack** (tooltip changed, was Feral Combat row 7, col 2)

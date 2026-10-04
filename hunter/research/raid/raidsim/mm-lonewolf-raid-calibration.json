@@ -18,7 +18,7 @@
  ],
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
-  "commit": "40be98e",
+  "commit": "b0f0df3",
   "spec_folder": "hunter/dps",
   "gear": "_reference/data/raidsim/gear_sets/forever/hunter-dps-p1.p1opt.gear.json",
   "apl": "_reference/data/raidsim/apls/hunter/mm-lonewolf-raid.apl.json",
@@ -47,9 +47,9 @@
  "talents": [
   {
    "talent": "Lone Wolf",
-   "sim": 0.19999999999999984,
-   "ev_before": 0.19869079008271642,
-   "ev_after": 0.19998892171990565,
+   "sim": 0.19999999999999976,
+   "ev_before": 0.19897256137349248,
+   "ev_after": 0.19913895314311914,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -68,9 +68,9 @@
   },
   {
    "talent": "Efficiency",
-   "sim": 0.07130018986810872,
-   "ev_before": 0.07182510481119968,
-   "ev_after": 0.05944315522669375,
+   "sim": 0.06786076088484222,
+   "ev_before": 0.05644497056545939,
+   "ev_after": 0.060219967937174546,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -89,9 +89,9 @@
   },
   {
    "talent": "Lethal Attacks",
-   "sim": 0.05437642434189418,
-   "ev_before": 0.05565323112084944,
-   "ev_after": 0.05612211426566667,
+   "sim": 0.0543692455146489,
+   "ev_before": 0.056942465905381746,
+   "ev_after": 0.05699616690739724,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -110,9 +110,9 @@
   },
   {
    "talent": "Deadly Aspects",
-   "sim": 0.049897648528461944,
-   "ev_before": 0.0521058178598323,
-   "ev_after": 0.054006609967520124,
+   "sim": 0.05240691125569356,
+   "ev_before": 0.05605206563570705,
+   "ev_after": 0.056280673031256986,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -130,9 +130,9 @@
   },
   {
    "talent": "Mortal Shots",
-   "sim": 0.048670315526413495,
-   "ev_before": 0.0549894449688072,
-   "ev_after": 0.05545244216440926,
+   "sim": 0.048658591871046035,
+   "ev_before": 0.05626248404046952,
+   "ev_after": 0.05631550951945868,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -151,9 +151,9 @@
   },
   {
    "talent": "Careful Aim",
-   "sim": 0.04385476725899404,
-   "ev_before": 0.0445367847432331,
-   "ev_after": 0.04453670507883208,
+   "sim": 0.04587289452856671,
+   "ev_before": 0.04453633523874289,
+   "ev_after": 0.04453636691261701,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -172,9 +172,9 @@
   },
   {
    "talent": "Ranged Weapon Specialization",
-   "sim": 0.041664952478971506,
-   "ev_before": 0.03768873244472153,
-   "ev_after": 0.037688665471625894,
+   "sim": 0.042258036190371766,
+   "ev_before": 0.0376883545505998,
+   "ev_after": 0.03768838117852416,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -193,9 +193,9 @@
   },
   {
    "talent": "Improved Stings",
-   "sim": 0.027496338385980833,
-   "ev_before": 0.030146831122056583,
-   "ev_after": 0.028826964489722003,
+   "sim": 0.025475522575561838,
+   "ev_before": 0.026495411170502785,
+   "ev_after": 0.02634370345174918,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -213,9 +213,9 @@
   },
   {
    "talent": "Trueshot Aura",
-   "sim": 0.023366299044341513,
-   "ev_before": 0.02809737066277952,
-   "ev_after": 0.028097321195077817,
+   "sim": 0.024419525082416724,
+   "ev_before": 0.028097091542411155,
+   "ev_after": 0.028097111210345225,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -234,9 +234,9 @@
   },
   {
    "talent": "Barrage",
-   "sim": 0.009409913899721999,
-   "ev_before": 0.008492246640051888,
-   "ev_after": 0.008120779677312626,
+   "sim": 0.009827421347921804,
+   "ev_before": 0.008410779382818439,
+   "ev_after": 0.008363241172973898,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -255,9 +255,9 @@
   },
   {
    "talent": "Improved Arcane Shot",
-   "sim": 0.009136510532032245,
-   "ev_before": 0.01600269595764807,
-   "ev_after": 0.015303234749567497,
+   "sim": 0.007069113541569662,
+   "ev_before": 0.01420047007025351,
+   "ev_after": 0.014130612644747145,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -270,8 +270,8 @@
   {
    "talent": "Endurance Training",
    "sim": 0.0,
-   "ev_before": 1.8338229636779633e-05,
-   "ev_after": 1.8547260896541357e-05,
+   "ev_before": 1.8609731001493042e-05,
+   "ev_after": 1.8529385880782394e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -284,8 +284,8 @@
   {
    "talent": "Hawk Eye",
    "sim": 0.0,
-   "ev_before": 2.9459701852949636e-05,
-   "ev_after": 2.972576139558192e-05,
+   "ev_before": 2.980159524597104e-05,
+   "ev_after": 2.9692790400056206e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -301,8 +301,8 @@
   {
    "talent": "Improved Aspect of the Monkey",
    "sim": 0.0,
-   "ev_before": 5.645609995657722e-06,
-   "ev_after": 5.710018898367739e-06,
+   "ev_before": 5.729357245511524e-06,
+   "ev_after": 5.704627648495091e-06,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -328,8 +328,8 @@
   {
    "talent": "Improved Tracking",
    "sim": 0.0,
-   "ev_before": 0.0049230752242692966,
-   "ev_after": 0.004923066950903913,
+   "ev_before": 0.004923021630795259,
+   "ev_after": 0.004923024940087311,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -346,8 +346,8 @@
   {
    "talent": "Survivalist",
    "sim": 0.0,
-   "ev_before": 7.244447572154511e-05,
-   "ev_after": 7.33031463779167e-05,
+   "ev_before": 7.34873921568458e-05,
+   "ev_after": 7.317330458146764e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -375,8 +375,8 @@
   {
    "talent": "Sniper Shot",
    "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
+   "ev_before": 1.1800103552740429e-05,
+   "ev_after": 1.1756168238355705e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -403,8 +403,8 @@
   {
    "talent": "Deterrence",
    "sim": 0.0,
-   "ev_before": 6.4743747616250955e-06,
-   "ev_after": 6.56264789464133e-06,
+   "ev_before": 6.561932769153894e-06,
+   "ev_after": 6.535015806410879e-06,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -446,9 +446,9 @@
   },
   {
    "talent": "Rapid Recuperation",
-   "sim": -6.809209777046449e-05,
-   "ev_before": 3.9804689843330056e-05,
-   "ev_after": 4.0268324309508774e-05,
+   "sim": -7.327858431821566e-05,
+   "ev_before": 4.009394537432714e-05,
+   "ev_after": 3.999586471520129e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -465,220 +465,220 @@
     "raid-dps",
     "raid-dps-extwc"
    ],
-   "loss": 0.7675,
-   "cap": 0.49,
-   "rms": 0.0316,
+   "loss": 0.7725,
+   "cap": 0.5,
+   "rms": 0.031,
    "points": 29
   },
   "builds": {
    "mm-lone-wolf-raid": {
-    "dps": 441.8487154022719,
-    "surplus": 554.1581596511616,
+    "dps": 423.5474775275719,
+    "surplus": 528.0269379709282,
     "oom_seconds": 86.49773877887932,
-    "deficit": 0.20266676993367305,
+    "deficit": 0.19786767100338476,
     "sustain": 1.3695,
-    "bound_share": 0.5563,
-    "model_deficit": 0.2214
+    "bound_share": 0.5355,
+    "model_deficit": 0.2158
    },
    "opt-mm-lonewolf-raid-raid-dps": {
-    "dps": 445.59346153296144,
-    "surplus": 602.8797534255332,
+    "dps": 426.26491851852813,
+    "surplus": 571.6261142388666,
     "oom_seconds": 100.42005220336533,
-    "deficit": 0.26089164713009305,
+    "deficit": 0.25429418303236595,
     "sustain": 1.3695,
-    "bound_share": 0.5654,
-    "model_deficit": 0.225
+    "bound_share": 0.5445,
+    "model_deficit": 0.2194
    },
    "marksmanship-ml-parse": {
-    "dps": 445.4720959587671,
-    "surplus": 602.6481430261696,
+    "dps": 426.1399741594339,
+    "surplus": 571.3729468463363,
     "oom_seconds": 100.37586313446332,
-    "deficit": 0.2608089793127881,
+    "deficit": 0.2541824450886384,
     "sustain": 1.3695,
-    "bound_share": 0.5654,
-    "model_deficit": 0.225
+    "bound_share": 0.5445,
+    "model_deficit": 0.2194
    },
    "marksmanship-ml-raid": {
-    "dps": 446.8836643517488,
-    "surplus": 598.5289713319917,
+    "dps": 427.4965197493488,
+    "surplus": 567.561771085792,
     "oom_seconds": 99.52678078905998,
-    "deficit": 0.25336335289295187,
+    "deficit": 0.24678415367632478,
     "sustain": 1.3695,
-    "bound_share": 0.5635,
-    "model_deficit": 0.2243
+    "bound_share": 0.5426,
+    "model_deficit": 0.2187
    },
    "cand-mm-lonewolf-raid-hand-2026-09-26": {
-    "dps": 404.6709503301799,
-    "surplus": 505.7458757994866,
+    "dps": 387.73614086975766,
+    "surplus": 482.05232443820876,
     "oom_seconds": 89.97763972500006,
-    "deficit": 0.19985318774874195,
+    "deficit": 0.1956554896366668,
     "sustain": 1.2956,
-    "bound_share": 0.5626,
-    "model_deficit": 0.2655
+    "bound_share": 0.5425,
+    "model_deficit": 0.2587
    },
    "cand-mm-lonewolf-raid-r1": {
-    "dps": 441.8487154022719,
-    "surplus": 554.1581596511616,
+    "dps": 423.5474775275719,
+    "surplus": 528.0269379709282,
     "oom_seconds": 86.49773877887932,
-    "deficit": 0.20266676993367305,
+    "deficit": 0.19786767100338476,
     "sustain": 1.3695,
-    "bound_share": 0.5563,
-    "model_deficit": 0.2214
+    "bound_share": 0.5355,
+    "model_deficit": 0.2158
    },
    "cand-mm-lonewolf-raid-r2": {
-    "dps": 433.8468532617834,
-    "surplus": 553.8800310146617,
+    "dps": 415.9968913232167,
+    "surplus": 527.777729460095,
     "oom_seconds": 96.6057507143493,
-    "deficit": 0.2167133152155487,
+    "deficit": 0.21179529164905775,
     "sustain": 1.2217,
-    "bound_share": 0.5563,
-    "model_deficit": 0.2726
+    "bound_share": 0.5355,
+    "model_deficit": 0.2678
    },
    "cand-mm-lonewolf-raid-r3": {
-    "dps": 441.8487154022719,
-    "surplus": 554.1135553184023,
+    "dps": 423.5474775275719,
+    "surplus": 527.9869323127024,
     "oom_seconds": 86.49773877887932,
-    "deficit": 0.20260258721088542,
+    "deficit": 0.19780689330257095,
     "sustain": 1.3695,
-    "bound_share": 0.5563,
-    "model_deficit": 0.2214
+    "bound_share": 0.5355,
+    "model_deficit": 0.2158
    },
    "cand-mm-lonewolf-raid-r4": {
-    "dps": 441.8487154022719,
-    "surplus": 554.1135553184023,
+    "dps": 423.5474775275719,
+    "surplus": 527.9869323127024,
     "oom_seconds": 86.49773877887932,
-    "deficit": 0.20260258721088542,
+    "deficit": 0.19780689330257095,
     "sustain": 1.3695,
-    "bound_share": 0.5563,
-    "model_deficit": 0.2214
+    "bound_share": 0.5355,
+    "model_deficit": 0.2158
    },
    "cand-mm-lonewolf-raid-r5": {
-    "dps": 441.8487154022719,
-    "surplus": 554.1135553184023,
+    "dps": 423.5474775275719,
+    "surplus": 527.9869323127024,
     "oom_seconds": 86.49773877887932,
-    "deficit": 0.20260258721088542,
+    "deficit": 0.19780689330257095,
     "sustain": 1.3695,
-    "bound_share": 0.5563,
-    "model_deficit": 0.2214
+    "bound_share": 0.5355,
+    "model_deficit": 0.2158
    },
    "cand-mm-lonewolf-raid-r6": {
-    "dps": 445.59346153296144,
-    "surplus": 602.8797534255332,
+    "dps": 426.26491851852813,
+    "surplus": 571.6261142388666,
     "oom_seconds": 100.42005220336533,
-    "deficit": 0.26089164713009305,
+    "deficit": 0.25429418303236595,
     "sustain": 1.3695,
-    "bound_share": 0.5654,
-    "model_deficit": 0.225
+    "bound_share": 0.5445,
+    "model_deficit": 0.2194
    }
   },
   "removals": {
    "mm-lone-wolf-raid -Efficiency": {
-    "deficit": 0.2613,
+    "deficit": 0.254,
     "sustain": 1.0,
-    "bound_share": 0.5563,
-    "model_deficit": 0.2726
+    "bound_share": 0.5355,
+    "model_deficit": 0.2678
    },
    "mm-lone-wolf-raid -Rapid Recuperation": {
-    "deficit": 0.2027,
+    "deficit": 0.1979,
     "sustain": 1.3695,
-    "bound_share": 0.5563,
-    "model_deficit": 0.2214
+    "bound_share": 0.5355,
+    "model_deficit": 0.2158
    },
    "opt-mm-lonewolf-raid-raid-dps -Efficiency": {
-    "deficit": 0.3079,
-    "sustain": 1.0,
-    "bound_share": 0.5654,
-    "model_deficit": 0.277
-   },
-   "marksmanship-ml-parse -Efficiency": {
-    "deficit": 0.3076,
-    "sustain": 1.0,
-    "bound_share": 0.5654,
-    "model_deficit": 0.277
-   },
-   "marksmanship-ml-parse -Improved Revive Pet": {
-    "deficit": 0.2608,
-    "sustain": 1.3695,
-    "bound_share": 0.5654,
-    "model_deficit": 0.225
-   },
-   "marksmanship-ml-parse -Rapid Recuperation": {
-    "deficit": 0.2606,
-    "sustain": 1.3695,
-    "bound_share": 0.5654,
-    "model_deficit": 0.225
-   },
-   "marksmanship-ml-raid -Efficiency": {
     "deficit": 0.3,
     "sustain": 1.0,
-    "bound_share": 0.5635,
-    "model_deficit": 0.2761
+    "bound_share": 0.5445,
+    "model_deficit": 0.2722
+   },
+   "marksmanship-ml-parse -Efficiency": {
+    "deficit": 0.2997,
+    "sustain": 1.0,
+    "bound_share": 0.5445,
+    "model_deficit": 0.2722
+   },
+   "marksmanship-ml-parse -Improved Revive Pet": {
+    "deficit": 0.2542,
+    "sustain": 1.3695,
+    "bound_share": 0.5445,
+    "model_deficit": 0.2194
+   },
+   "marksmanship-ml-parse -Rapid Recuperation": {
+    "deficit": 0.254,
+    "sustain": 1.3695,
+    "bound_share": 0.5445,
+    "model_deficit": 0.2194
+   },
+   "marksmanship-ml-raid -Efficiency": {
+    "deficit": 0.2921,
+    "sustain": 1.0,
+    "bound_share": 0.5426,
+    "model_deficit": 0.2713
    },
    "cand-mm-lonewolf-raid-hand-2026-09-26 -Efficiency": {
-    "deficit": 0.2435,
+    "deficit": 0.2373,
     "sustain": 1.0,
-    "bound_share": 0.5626,
-    "model_deficit": 0.2757
+    "bound_share": 0.5425,
+    "model_deficit": 0.2712
    },
    "cand-mm-lonewolf-raid-r1 -Efficiency": {
-    "deficit": 0.2613,
+    "deficit": 0.254,
     "sustain": 1.0,
-    "bound_share": 0.5563,
-    "model_deficit": 0.2726
+    "bound_share": 0.5355,
+    "model_deficit": 0.2678
    },
    "cand-mm-lonewolf-raid-r1 -Improved Revive Pet": {
-    "deficit": 0.2027,
+    "deficit": 0.1979,
     "sustain": 1.3695,
-    "bound_share": 0.5563,
-    "model_deficit": 0.2214
+    "bound_share": 0.5355,
+    "model_deficit": 0.2158
    },
    "cand-mm-lonewolf-raid-r1 -Rapid Recuperation": {
-    "deficit": 0.2027,
+    "deficit": 0.1979,
     "sustain": 1.3695,
-    "bound_share": 0.5563,
-    "model_deficit": 0.2214
+    "bound_share": 0.5355,
+    "model_deficit": 0.2158
    },
    "cand-mm-lonewolf-raid-r2 -Efficiency": {
-    "deficit": 0.2609,
+    "deficit": 0.2537,
     "sustain": 1.0,
-    "bound_share": 0.5563,
-    "model_deficit": 0.2726
+    "bound_share": 0.5355,
+    "model_deficit": 0.2678
    },
    "cand-mm-lonewolf-raid-r2 -Improved Revive Pet": {
-    "deficit": 0.2167,
+    "deficit": 0.2118,
     "sustain": 1.2217,
-    "bound_share": 0.5563,
-    "model_deficit": 0.2726
+    "bound_share": 0.5355,
+    "model_deficit": 0.2678
    },
    "cand-mm-lonewolf-raid-r2 -Rapid Recuperation": {
-    "deficit": 0.2167,
+    "deficit": 0.2118,
     "sustain": 1.2217,
-    "bound_share": 0.5563,
-    "model_deficit": 0.2726
+    "bound_share": 0.5355,
+    "model_deficit": 0.2678
    },
    "cand-mm-lonewolf-raid-r3 -Efficiency": {
-    "deficit": 0.2612,
+    "deficit": 0.254,
     "sustain": 1.0,
-    "bound_share": 0.5563,
-    "model_deficit": 0.2726
+    "bound_share": 0.5355,
+    "model_deficit": 0.2678
    },
    "cand-mm-lonewolf-raid-r4 -Efficiency": {
-    "deficit": 0.2612,
+    "deficit": 0.254,
     "sustain": 1.0,
-    "bound_share": 0.5563,
-    "model_deficit": 0.2726
+    "bound_share": 0.5355,
+    "model_deficit": 0.2678
    },
    "cand-mm-lonewolf-raid-r5 -Efficiency": {
-    "deficit": 0.2612,
+    "deficit": 0.254,
     "sustain": 1.0,
-    "bound_share": 0.5563,
-    "model_deficit": 0.2726
+    "bound_share": 0.5355,
+    "model_deficit": 0.2678
    },
    "cand-mm-lonewolf-raid-r6 -Efficiency": {
-    "deficit": 0.3079,
+    "deficit": 0.3,
     "sustain": 1.0,
-    "bound_share": 0.5654,
-    "model_deficit": 0.277
+    "bound_share": 0.5445,
+    "model_deficit": 0.2722
    }
   }
  }

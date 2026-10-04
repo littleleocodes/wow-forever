@@ -27,8 +27,8 @@
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 690 |
-| Training dummy, 3-minute fight (alone, only your own buffs) | 602 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 659 |
+| Training dummy, 3-minute fight (alone, only your own buffs) | 571 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
@@ -63,7 +63,7 @@
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 602 → mana +1% → armor +0% → physical -1% → spell +10% → everything else +5% → raid 690
+Dummy 571 → mana +1% → armor +0% → physical -1% → spell +10% → everything else +5% → raid 659
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -71,7 +71,7 @@ Dummy 602 → mana +1% → armor +0% → physical -1% → spell +10% → everyth
 
 | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|
-| 664 | 623 | 602 | 594 | 570 |
+| 634 | 594 | 571 | 551 | 528 |
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 

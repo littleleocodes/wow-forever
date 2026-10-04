@@ -3,12 +3,12 @@
  "allocation": {
   "Arms": [
    [
-    "Improved Rend",
-    3
-   ],
-   [
     "Deflection",
     5
+   ],
+   [
+    "Improved Rend",
+    3
    ],
    [
     "Improved Charge",
@@ -23,28 +23,28 @@
     3
    ],
    [
-    "Impale",
-    2
+    "Spearing Strike",
+    1
    ],
    [
     "Two-Handed Weapon Specialization",
     3
    ],
    [
-    "Spearing Strike",
-    1
+    "Impale",
+    2
    ],
    [
     "Bloodthrill",
     5
    ],
    [
-    "Weaponmaster",
-    3
-   ],
-   [
     "Sweeping Strikes",
     1
+   ],
+   [
+    "Weaponmaster",
+    3
    ],
    [
     "Mortal Strike",
@@ -52,6 +52,10 @@
    ]
   ],
   "Fury": [
+   [
+    "Booming Voice",
+    1
+   ],
    [
     "Cruelty",
     5
@@ -67,10 +71,6 @@
    [
     "Blood Craze",
     3
-   ],
-   [
-    "Boundless Rage",
-    1
    ],
    [
     "Enrage",
@@ -200,5 +200,8 @@
    "talent": "Enrage",
    "points": 5
   }
+ ],
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
  ]
 }

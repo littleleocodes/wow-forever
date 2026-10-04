@@ -67,11 +67,11 @@
       "abs_dps_factor": 1.0
     },
     "ret-dps": {
-      "note": "Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic). Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Holy Strike is baseline from level 6 with eight ranks (rank 8: 50% weapon damage plus 40-53 Holy, 20 mana, 10s cooldown since build 70009; Improved Holy Strike was removed); Consecration has an 8s cooldown; Judgement no longer consumes the seal; Exorcism and Hammer of Wrath are ~10% lower than Classic. Fight lab calibration (2026-09-30, beta client 1.60.1.70009, build opt-ret-dps-leveling-st at level 60, 1500 fights): shares are the measured damage split (Melee 33%, Judgement 21%, Seal of Command 17%, Holy Strike 15%, Hammer of Wrath 14%) and the leveling time split is fight 75% / drink 16% / eat 5% / other 0% / death 5% of talent-affected time with fight_coupling 0.6 (downtime and deaths scale with fight length). Raid sim shares (2026-10-02, ret-raid-dps in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): seal 31%, judgement 17%, white 16%, consecration 16%, holy_strike 13%, hammer_of_wrath 6%; 3% of the damage matched no source.",
+      "note": "Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic). Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Holy Strike is baseline from level 6 with eight ranks (rank 8: 50% weapon damage plus 40-53 Holy, 20 mana, 10s cooldown since build 70009; Improved Holy Strike was removed); Consecration has an 8s cooldown; Judgement no longer consumes the seal; Exorcism and Hammer of Wrath are ~10% lower than Classic. Fight lab calibration (2026-09-30, beta client 1.60.1.70009, build opt-ret-dps-leveling-st at level 60, 1500 fights): shares are the measured damage split (Melee 33%, Judgement 21%, Seal of Command 17%, Holy Strike 15%, Hammer of Wrath 14%) and the leveling time split is fight 75% / drink 16% / eat 5% / other 0% / death 5% of talent-affected time with fight_coupling 0.6 (downtime and deaths scale with fight length). Raid sim shares (2026-10-03, ret-raid-dps in the ElliotWood/Forever simulator b0f0df3, every mana-only buff on: the split before the mana limit): seal 32%, white 18%, judgement 16%, consecration 15%, holy_strike 13%, hammer_of_wrath 6%; 3% of the damage matched no source.",
       "sources": [
         {
           "id": "white",
-          "share": 0.1628,
+          "share": 0.1817,
           "tags": ["type:melee", "white", "school:physical", "mainhand", "weapon:2h"],
           "profile_overrides": {
             "leveling-st": {"share": 0.335},
@@ -84,7 +84,7 @@
         },
         {
           "id": "seal",
-          "share": 0.3084,
+          "share": 0.3194,
           "tags": ["type:melee", "yellow", "school:holy", "ability:Seals", "ability:Seal", "ability:Seal of Command", "weapon:2h"],
           "profile_overrides": {
             "leveling-st": {"share": 0.168},
@@ -97,7 +97,7 @@
         },
         {
           "id": "judgement",
-          "share": 0.1742,
+          "share": 0.1619,
           "tags": ["type:spell", "school:holy", "instant", "ability:Judgements", "ability:Judgement", "weapon:2h"],
           "cooldown": 10,
           "min_level": 4,
@@ -112,7 +112,7 @@
         },
         {
           "id": "consecration",
-          "share": 0.1611,
+          "share": 0.1502,
           "tags": ["type:spell", "school:holy", "instant", "aoe", "ability:Consecration"],
           "can_crit": false,
           "game_overrides": {
@@ -130,7 +130,7 @@
         },
         {
           "id": "holy_strike",
-          "share": 0.1344,
+          "share": 0.1282,
           "tags": ["type:melee", "yellow", "school:holy", "ability:Holy Strike", "weapon:2h"],
           "cooldown": 10,
           "game_overrides": {
@@ -145,7 +145,7 @@
         },
         {
           "id": "hammer_of_wrath",
-          "share": 0.0592,
+          "share": 0.0586,
           "min_level": 44,
           "tags": ["type:spell", "school:holy", "ability:Hammer of Wrath", "weapon:2h"],
           "cooldown": 6,
@@ -198,25 +198,25 @@
       "mana_limit": {
         "forever": {
           "profiles": ["raid-dps", "raid-dps-extwc"],
-          "loss": 0.465,
-          "cap": 0.22,
-          "rms": 0.0164,
-          "points": 67,
-          "note": "Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, training dummy): the builds lose 3-5% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
+          "loss": 0.4725,
+          "cap": 0.23,
+          "rms": 0.0163,
+          "points": 63,
+          "note": "Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, training dummy): the builds lose 4-6% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
         }
       }
     },
     "prot-tank": {
-      "note": "Shield tank: Consecration 25%, Holy Strike 20% (Forever; Classic uses Seal/Judgement of Righteousness instead), seal+judgement 15%, Retribution Aura 10%, white 20%, Holy Shield blocks via talent. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Holy Strike rank 8 is 50% weapon damage plus 40-53 every 10s (share 20 -> 18%); Consecration rank 5 deals 12 a tick to everyone plus 27 a tick to the first 4 enemies, 8s cooldown (share 25 -> 27%); Righteous Fury's Holy threat bonus is +60% in build 70009 (was 90%); Holy Shield rank 3 221 per block at 0.08, rank 1 trains at 40. Raid sim shares (2026-10-02, prot-tank in the ElliotWood/Forever simulator 40be98e): seal 36%, white 30%, consecration 17%, holy_strike 12%, ret_aura 6%; 14% of the damage matched no source.",
+      "note": "Shield tank: Consecration 25%, Holy Strike 20% (Forever; Classic uses Seal/Judgement of Righteousness instead), seal+judgement 15%, Retribution Aura 10%, white 20%, Holy Shield blocks via talent. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Holy Strike rank 8 is 50% weapon damage plus 40-53 every 10s (share 20 -> 18%); Consecration rank 5 deals 12 a tick to everyone plus 27 a tick to the first 4 enemies, 8s cooldown (share 25 -> 27%); Righteous Fury's Holy threat bonus is +60% in build 70009 (was 90%); Holy Shield rank 3 221 per block at 0.08, rank 1 trains at 40. Raid sim shares (2026-10-03, prot-tank in the ElliotWood/Forever simulator b0f0df3): seal 34%, white 30%, consecration 17%, holy_strike 12%, ret_aura 6%; 15% of the damage matched no source.",
       "sources": [
         {
           "id": "white",
-          "share": 0.2973,
+          "share": 0.303,
           "tags": ["type:melee", "white", "school:physical", "mainhand", "weapon:1h", "tank", "shield", "threat"]
         },
         {
           "id": "consecration",
-          "share": 0.1677,
+          "share": 0.1705,
           "tags": ["type:spell", "school:holy", "instant", "aoe", "ability:Consecration", "tank", "shield", "threat"],
           "can_crit": false,
           "game_overrides": {
@@ -228,7 +228,7 @@
         },
         {
           "id": "holy_strike",
-          "share": 0.1217,
+          "share": 0.125,
           "tags": ["type:melee", "yellow", "school:holy", "ability:Holy Strike", "weapon:1h", "tank", "shield", "threat"],
           "cooldown": 10,
           "game_overrides": {
@@ -238,7 +238,7 @@
         },
         {
           "id": "seal",
-          "share": 0.3557,
+          "share": 0.3443,
           "tags": ["type:melee", "yellow", "school:holy", "ability:Seals", "ability:Seal", "ability:Seal of Righteousness", "ability:Judgement of Righteousness", "ability:Judgements", "ability:Judgement", "weapon:1h", "tank", "shield", "threat"],
           "game_overrides": {
             "classic-era": {"share": 0.35}
@@ -246,7 +246,7 @@
         },
         {
           "id": "ret_aura",
-          "share": 0.0575,
+          "share": 0.0572,
           "tags": ["type:spell", "school:holy", "ability:Retribution Aura", "tank", "shield", "threat"],
           "can_crit": false,
           "min_level": 16

@@ -6,30 +6,7 @@
 
 `leveling-feral` — Allocation and order adopted on 2026-09-27 from `cand-cat-r4`, the fastest build in the fight-lab race over levels 15/20/30/40/50/60 (+4.2% vs the previous draft, level-weighted time per kill; the previous draft is kept under leveling/fightlab/candidates/). Core talents are ranked by the sim's removal cost at 60.
 
-| Levels | Tree | Talent | Points |
-|---|---|---|---|
-| 10-14 | Feral Combat | Ferocity | 5 |
-| 15-16 | Feral Combat | Feral Swiftness | 2 |
-| 17-19 | Feral Combat | Heart of the Wild | 3 |
-| 20-21 | Feral Combat | Sharpened Claws | 2 |
-| 22-23 | Feral Combat | Savage Fury | 2 |
-| 24 | Feral Combat | Heart of the Wild | 1 |
-| 25-27 | Feral Combat | Predatory Strikes | 3 |
-| 28 | Feral Combat | Heart of the Wild | 1 |
-| 29 | Feral Combat | Thick Hide | 1 |
-| 30-32 | Feral Combat | King of the Jungle | 3 |
-| 33 | Feral Combat | Leader of the Pack | 1 |
-| 34-35 | Feral Combat | Predatory Instincts | 2 |
-| 36-39 | Feral Combat | Rend and Tear | 4 |
-| 40 | Feral Combat | Berserk | 1 |
-| 41-45 | Balance | Genesis | 5 |
-| 46-47 | Balance | Nature's Reach | 2 |
-| 48-49 | Balance | Nature's Majesty | 2 |
-| 50-54 | Restoration | Nature's Focus | 5 |
-| 55-56 | Restoration | Natural Shapeshifter | 2 |
-| 57-60 | Restoration | Naturalist | 4 |
-
-Respec plan: **68.3 h** (24.1% faster than talentless), 0 respec(s).
+Respec plan: **71.4 h** (20.6% faster than talentless), 0 respec(s).
 
 ## What each bracket feels like
 

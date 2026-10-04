@@ -6,10 +6,10 @@
 
 | # | Spec and build | Full raid DPS | Training dummy DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Survival](survival.md) — Melee Survival — Lone Wolf | 991 | 426 | 378 | best |
-| 2 | [Marksmanship](marksmanship.md) — Marksmanship — Full raid 🔬 | 935 | 446 | 391 | -6% |
-| 3 | [Beast Mastery](beast-mastery.md) — Beast Mastery — Full raid 🔬 | 812 | 450 | 407 | -18% |
-| 4 | [Beast-Marks](beast-marks.md) — Marksmanship — Summon Hawk | 810 | 461 | 429 | -18% |
+| 1 | [Survival](survival.md) — Melee Survival — Lone Wolf | 1041 | 419 | 372 | best |
+| 2 | [Marksmanship](marksmanship.md) — Marksmanship — Full raid 🔬 | 901 | 426 | 376 | -13% |
+| 3 | [Beast Mastery](beast-mastery.md) — Beast Mastery — Full raid 🔬 | 868 | 478 | 439 | -17% |
+| 4 | [Beast-Marks](beast-marks.md) — Marksmanship — Summon Hawk | 847 | 478 | 449 | -19% |
 
 **By gear tier**: each damage spec with its best talents for each tier, in its own gear (full raid / training dummy DPS; [every class](../../_reference/dps-rankings.md)):
 

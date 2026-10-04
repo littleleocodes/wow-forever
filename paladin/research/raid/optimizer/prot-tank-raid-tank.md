@@ -9,61 +9,61 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Holy Shield | Protection | 7 | +4.84% | manual |
+| Holy Shield | Protection | 7 | +8.95% | manual |
 | Templar's Bulwark | Protection | 5 | +3.01% | manual |
-| Champion of the Light | Retribution | 6 | +2.11% | manual |
 | Improved Righteous Fury | Protection | 3 | +1.68% | manual |
-| Sacred Arbiter | Retribution | 4 | +1.17% | manual |
+| Champion of the Light | Retribution | 6 | +1.51% | manual |
+| Shield Specialization | Protection | 3 | +1.38% | manual |
+| Sacred Arbiter | Retribution | 4 | +1.16% | manual |
 | Vengeance | Retribution | 5 | +1.12% | manual |
 | Deflection | Retribution | 1 | +1.11% | manual |
 | Iron Creed | Protection | 6 | +0.99% | manual |
 | Holy Conduit | Retribution | 2 | +0.90% | manual |
-| Swift Judgement | Protection | 4 | +0.88% | manual |
+| Swift Judgement | Protection | 4 | +0.85% | manual |
 | Vindication | Retribution | 3 | +0.85% | manual |
 | Divine Precision | Holy | 5 | +0.77% | manual |
-| Improved Seals | Holy | 2 | +0.71% | manual |
+| Improved Seals | Holy | 2 | +0.69% | manual |
 | Illumination | Holy | 4 | +0.66% | manual |
 | Precision | Protection | 2 | +0.65% | manual |
 | Sanctified Judgement | Retribution | 3 | +0.64% | manual |
 | Twist of Light | Retribution | 7 | +0.60% | manual |
 | Anticipation | Protection | 2 | +0.60% | manual |
-| Shield Specialization | Protection | 3 | +0.56% | manual |
 | Consecrated Ground | Holy | 5 | +0.50% | manual |
 | One-Handed Weapon Specialization | Protection | 4 | +0.45% | manual |
 | Conviction | Retribution | 2 | +0.42% | manual |
 | Reverence | Holy | 3 | +0.40% | manual |
 | Improved Seal of Fury | Protection | 3 | +0.30% | manual |
+| Holy Power | Holy | 6 | +0.21% | manual |
 | Instrument of Law | Retribution | 6 | +0.21% | manual |
 | Redoubt | Protection | 1 | +0.21% | manual |
-| Holy Power | Holy | 6 | +0.20% | manual |
 | Improved Hammer of Justice | Protection | 4 | +0.20% | manual |
 | Reckoning | Protection | 5 | +0.15% | manual |
 | Divine Strength | Holy | 1 | +0.14% | manual |
 
-## Optimized build: 0/23/28  score +47.39%  (dps x1.477, sustain x1.424, surv x1.384, utility +0.00%)
+## Optimized build: 0/32/19  score +53.74%  (dps x1.364, sustain x1.526, surv x1.599, utility +0.20%)
 
 ```
-  Protection: Redoubt 5, Precision 3, Anticipation 5, Improved Seal of Fury 1, Improved Righteous Fury 3, Shield Specialization 1, Swift Judgement 1, One-Handed Weapon Specialization 3, Templar's Bulwark 1
-  Retribution: Deflection 5, Benediction 1, Holy Conduit 2, Conviction 5, Vindication 3, Sanctified Judgement 3, Sacred Arbiter 1, Eye for an Eye 2, Vengeance 3, Champion of the Light 3
+  Protection: Redoubt 5, Precision 3, Anticipation 5, Improved Righteous Fury 3, Shield Specialization 3, Improved Seal of Fury 1, One-Handed Weapon Specialization 3, Swift Judgement 1, Improved Hammer of Justice 1, Templar's Bulwark 1, Iron Creed 5, Holy Shield 1
+  Retribution: Deflection 5, Holy Conduit 2, Conviction 5, Vindication 3, Sanctified Judgement 3, Sacred Arbiter 1
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Holy Shield | Protection 7 | 1/1 | +5.99% | no |
-| Improved Seals | Holy 2 | 1/3 | +1.18% | no |
-| Divine Precision | Holy 5 | 1/3 | +1.16% | no |
-| Iron Creed | Protection 6 | 1/5 | +1.14% | no |
-| Consecrated Ground | Holy 5 | 1/2 | +0.74% | no |
+| Champion of the Light | Retribution 6 | 1/3 | +2.10% | no |
+| Vengeance | Retribution 5 | 1/3 | +1.52% | no |
+| Divine Precision | Holy 5 | 1/3 | +1.02% | no |
+| Improved Seals | Holy 2 | 1/3 | +0.98% | no |
+| Consecrated Ground | Holy 5 | 1/2 | +0.68% | no |
 | Illumination | Holy 4 | 1/5 | +0.66% | no |
 | Twist of Light | Retribution 7 | 1/1 | +0.60% | no |
-| Shield Specialization | Protection 3 | 2/3 | +0.56% | yes |
 | Reverence | Holy 3 | 1/3 | +0.40% | no |
-| Instrument of Law | Retribution 6 | 1/2 | +0.33% | yes |
-| Holy Power | Holy 6 | 1/5 | +0.31% | no |
-| Divine Strength | Holy 1 | 1/5 | +0.21% | yes |
-| Improved Hammer of Justice | Protection 4 | 1/3 | +0.20% | yes |
-| Reckoning | Protection 5 | 1/5 | +0.19% | yes |
+| Holy Power | Holy 6 | 1/5 | +0.32% | no |
+| Instrument of Law | Retribution 6 | 1/2 | +0.29% | no |
+| Improved Hammer of Justice | Protection 4 | 2/3 | +0.20% | yes |
+| Reckoning | Protection 5 | 1/5 | +0.20% | yes |
+| Divine Strength | Holy 1 | 1/5 | +0.19% | yes |
 | Unyielding Faith | Holy 2 | 1/2 | +0.05% | no |
+| Divine Intellect | Holy 1 | 1/5 | +0.02% | yes |
 

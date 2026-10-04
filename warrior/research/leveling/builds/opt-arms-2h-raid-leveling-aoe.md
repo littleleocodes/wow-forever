@@ -19,59 +19,32 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Rend** | 3/3 | changed | Increases the Bleed damage done by your Rend ability by 35%. |
 | **Deflection** | 5/5 | unchanged | Increases your Parry chance by 5%. |
-| **Improved Overpower** | 2/2 | moved | Increases the critical strike chance of your Overpower ability by 50%. |
+| **Improved Rend** | 3/3 | changed | Increases the Bleed damage done by your Rend ability by 35%. |
 | **Improved Tactical Mastery** | 2/5 | **NEW** | Tactical Mastery lets you retain up to an additional 6 Rage when you change stances. |
+| **Improved Overpower** | 2/2 | moved | Increases the critical strike chance of your Overpower ability by 50%. |
 | **Deep Wounds** | 3/3 | changed | Your critical strikes cause your opponent to Bleed, dealing 60% of your melee weapon's average damage over 12 sec. |
+| **Spearing Strike** | 1/1 | **NEW** | A brutal attack that deals 40% weapon damage, plus an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. |
 | **Two-Handed Weapon Specialization** | 3/3 | changed | Increases the damage you deal with two-handed melee weapons by 3%. |
-| **Spearing Strike** | 1/1 | **NEW** | A brutal attack that deals 40% weapon damage. Deals an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted. |
 
 ### Fury (32)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
+| **Booming Voice** | 4/5 | changed | Increases the area of effect of your Shouts by 40% and reduces their Rage cost by 20%. |
 | **Cruelty** | 5/5 | changed | Improves your chance to get a critical strike with melee attacks by 5%. |
-| **Unbridled Wrath** | 5/5 | changed | Gives you a 60% chance to generate 1 additional Rage when you deal melee damage with a weapon. This effect is increased to 2 Rage for two-handed weapons. |
-| **Blood Craze** | 3/3 | changed | Regenerates 3% of your total Health over 6 sec after being the victim of a critical strike, dealing damage with Bloodthirst, or suffering more than 20% of your maximum Health from a single attack. |
-| **Piercing Howl** | 1/1 | changed | Causes all nearby enemies to be Dazed, reducing movement speed by 50% for 6 sec. |
-| **Boundless Rage** | 1/3 | **NEW** | Increases your maximum Rage by 10. |
+| **Unbridled Wrath** | 5/5 | changed | Gives you a 60% chance to generate 1 additional Rage when you deal melee damage with a weapon. |
+| **Piercing Howl** | 1/1 | changed | Causes all enemies within 10 yds to be Dazed, reducing movement speed by 50% for 6 sec. |
+| **Blood Craze** | 3/3 | changed | Regenerates 3% of your total Health over 6 sec after being the victim of a critical strike or suffering more than 20% of your maximum Health from a single attack. |
 | **Enrage** | 5/5 | changed | Gives you a 30% chance to deal 10% increased Physical damage for 12 sec after being the victim of any damaging attack. |
 | **Improved Execute** | 2/2 | changed | Reduces the Rage cost of your Execute ability by 5. |
 | **Death Wish** | 1/1 | changed | When activated, increases your Physical damage done by 20% and makes you immune to Fear effects, but increases all damage you take by 5%. Lasts 30 sec. |
-| **Precision** | 3/3 | **NEW** | Improves your chance to hit by 3%. |
 | **Flurry** | 5/5 | changed | Increases your melee attack speed by 25% for your next 3 swings after dealing a melee critical strike. |
-| **Bloodthirst** | 1/1 | changed | Instantly attack the target causing damage equal to 35% of your Attack Power plus 30 and increasing your movement speed by 10% for 10 sec. |
+| **Bloodthirst** | 1/1 | changed | Instantly attack the target causing damage equal to 45% of your Attack Power plus 30 and increasing your movement speed by 10% for 10 sec. |
 
 ### Protection (0)
 
 *No points.*
-
-## Leveling order
-
-| Levels | Tree | Talent | Pts | Running total |
-|---|---|---|---|---|
-| 10-14 | Fury | Cruelty | 5 | 0/5/0 |
-| 15-19 | Fury | Unbridled Wrath | 5 | 0/10/0 |
-| 20-22 | Fury | Blood Craze | 3 | 0/13/0 |
-| 23 | Fury | Piercing Howl | 1 | 0/14/0 |
-| 24 | Fury | Boundless Rage | 1 | 0/15/0 |
-| 25-29 | Fury | Enrage | 5 | 0/20/0 |
-| 30 | Fury | Death Wish | 1 | 0/21/0 |
-| 31-32 | Fury | Improved Execute | 2 | 0/23/0 |
-| 33-34 | Fury | Precision | 2 | 0/25/0 |
-| 35-39 | Fury | Flurry | 5 | 0/30/0 |
-| 40 | Fury | Bloodthirst | 1 | 0/31/0 |
-| 41 | Fury | Precision | 1 | 0/32/0 |
-| 42-44 | Arms | Improved Rend | 3 | 3/32/0 |
-| 45-46 | Arms | Deflection | 2 | 5/32/0 |
-| 47 | Arms | Improved Overpower | 1 | 6/32/0 |
-| 48-50 | Arms | Deflection | 3 | 9/32/0 |
-| 51 | Arms | Improved Overpower | 1 | 10/32/0 |
-| 52-54 | Arms | Deep Wounds | 3 | 13/32/0 |
-| 55-56 | Arms | Improved Tactical Mastery | 2 | 15/32/0 |
-| 57-59 | Arms | Two-Handed Weapon Specialization | 3 | 18/32/0 |
-| 60 | Arms | Spearing Strike | 1 | 19/32/0 |
 
 ## Core talents (priority order)
 
@@ -111,6 +84,7 @@ What this build casts per kill ([report](../fightlab/arms-2h-raid-aoe.md), all l
 ## Notes
 
 - Report: warrior/talents/forever/optimizer/arms-2h-raid-leveling-aoe.md
+- 2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Boundless Rage 1, Precision 3 out; Booming Voice 4 in; to be re-optimized.
 
 ## Open questions (verify in the live game)
 

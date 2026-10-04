@@ -3,11 +3,11 @@
  "allocation": {
   "Arms": [
    [
-    "Improved Rend",
+    "Deflection",
     3
    ],
    [
-    "Deflection",
+    "Improved Rend",
     3
    ],
    [
@@ -15,54 +15,50 @@
     5
    ],
    [
-    "Deep Wounds",
-    3
-   ],
-   [
     "Anger Management",
     1
    ],
    [
-    "Two-Handed Weapon Specialization",
+    "Deep Wounds",
     3
    ],
    [
     "Spearing Strike",
     1
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
    ]
   ],
   "Fury": [
+   [
+    "Booming Voice",
+    5
+   ],
    [
     "Cruelty",
     5
    ],
    [
-    "Booming Voice",
-    2
+    "Lingering Rage",
+    3
    ],
    [
     "Unbridled Wrath",
     5
    ],
    [
-    "Boundless Rage",
-    3
+    "Enrage",
+    5
    ],
    [
     "Improved Execute",
     2
    ],
    [
-    "Enrage",
-    5
-   ],
-   [
     "Death Wish",
     1
-   ],
-   [
-    "Precision",
-    3
    ],
    [
     "Flurry",
@@ -74,5 +70,8 @@
    ]
   ],
   "Protection": []
- }
+ },
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

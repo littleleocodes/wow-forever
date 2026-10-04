@@ -3,11 +3,11 @@
  "allocation": {
   "Arms": [
    [
-    "Improved Rend",
+    "Deflection",
     3
    ],
    [
-    "Deflection",
+    "Improved Rend",
     3
    ],
    [
@@ -15,12 +15,12 @@
     5
    ],
    [
-    "Deep Wounds",
-    3
-   ],
-   [
     "Anger Management",
     1
+   ],
+   [
+    "Deep Wounds",
+    3
    ],
    [
     "Two-Handed Weapon Specialization",
@@ -33,36 +33,32 @@
   ],
   "Fury": [
    [
+    "Booming Voice",
+    5
+   ],
+   [
     "Cruelty",
     5
    ],
    [
-    "Booming Voice",
-    2
+    "Lingering Rage",
+    3
    ],
    [
     "Unbridled Wrath",
     5
    ],
    [
-    "Boundless Rage",
-    3
+    "Enrage",
+    5
    ],
    [
     "Improved Execute",
     2
    ],
    [
-    "Enrage",
-    5
-   ],
-   [
     "Death Wish",
     1
-   ],
-   [
-    "Precision",
-    3
    ],
    [
     "Flurry",
@@ -75,5 +71,8 @@
   ],
   "Protection": []
  },
- "note": "Optimizer raid build saved by rebuild.py on 2026-09-29 (raid calibration round 1)"
+ "note": "Optimizer raid build saved by rebuild.py on 2026-09-29 (raid calibration round 1)",
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

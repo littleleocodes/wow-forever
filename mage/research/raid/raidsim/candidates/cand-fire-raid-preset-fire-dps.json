@@ -53,7 +53,7 @@
     3
    ],
    [
-    "Hot Streak",
+    "Heating Up",
     1
    ],
    [
@@ -72,9 +72,13 @@
     "Combustion",
     1
    ]
-  ]
+  ],
+  "Frost": []
  },
  "preset": "Fire DPS",
  "talents": "0502252000003-23550000130133051-",
- "note": "The community simulator's preset 'Fire DPS' (mage/dps/presets.ts), a raid candidate since it ran within 6% of the best build of fire-raid (464.3 vs 482.7 in the race of 2026-09-27)."
+ "note": "The community simulator's preset 'Fire DPS' (mage/dps/presets.ts), a raid candidate since it ran within 6% of the best build of fire-raid (464.3 vs 482.7 in the race of 2026-09-27).",
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

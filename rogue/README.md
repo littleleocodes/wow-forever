@@ -10,9 +10,9 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling (solo) | Raid (group: full raid DPS) | PvP |
 |---|---|---|---|
-| **Assassination** | **✅ Recommended**<br>[Raid Combat swords](leveling/assassination.md)<br>25 s/kill | [Assassination — Seal Fate daggers](raid/assassination.md)<br>682 DPS (raid) | [Assassination — PvP](pvp/assassination.md) 🔬 |
-| **Combat** | **✅ Recommended**<br>[Combat — Leveling](leveling/combat.md) ⚗<br>26 s/kill | **✅ Recommended**<br>[Combat Daggers](raid/combat.md)<br>712 DPS (raid) | [Combat — PvP](pvp/combat.md) 🔬 |
-| **Subtlety** | [Subtlety — Leveling](leveling/subtlety.md) 🔬<br>27 s/kill | [Subtlety — Hemorrhage](raid/subtlety.md)<br>653 DPS (raid) | [Hemorrhage / Preparation / Thousand Cuts](pvp/subtlety.md) |
+| **Assassination** | **✅ Recommended**<br>[Raid Combat swords](leveling/assassination.md)<br>25 s/kill | [Assassination — Seal Fate daggers](raid/assassination.md)<br>728 DPS (raid) | [Assassination — PvP](pvp/assassination.md) 🔬 |
+| **Combat** | **✅ Recommended**<br>[Combat — Leveling](leveling/combat.md) ⚗<br>26 s/kill | **✅ Recommended**<br>[Combat Daggers](raid/combat.md)<br>765 DPS (raid) | [Combat — PvP](pvp/combat.md) 🔬 |
+| **Subtlety** | [Subtlety — Leveling](leveling/subtlety.md) 🔬<br>27 s/kill | [Subtlety — Hemorrhage](raid/subtlety.md)<br>686 DPS (raid) | [Hemorrhage / Preparation / Thousand Cuts](pvp/subtlety.md) |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). PvP has no recommendation: no simulator plays PvP. 🔬: a derived build (searched in a simulator; PvP: the stats model plus the community's picks). ⚗: a generated build, a starting point until someone drafts that spec by hand.
 
@@ -45,9 +45,9 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Full raid DPS | Training dummy DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Combat](raid/combat.md) — Combat Daggers | 712 | 398 | 400 | best |
-| 2 | [Assassination](raid/assassination.md) — Assassination — Seal Fate daggers | 682 | 407 | 407 | -4% |
-| 3 | [Subtlety](raid/subtlety.md) — Subtlety — Hemorrhage | 653 | 386 | 364 | -8% |
+| 1 | [Combat](raid/combat.md) — Combat Daggers | 765 | 398 | 400 | best |
+| 2 | [Assassination](raid/assassination.md) — Assassination — Seal Fate daggers | 728 | 407 | 407 | -5% |
+| 3 | [Subtlety](raid/subtlety.md) — Subtlety — Hemorrhage | 686 | 386 | 364 | -10% |
 
 ### PvP
 

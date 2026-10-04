@@ -2,7 +2,7 @@
 
 [Druid](../README.md) > [PvP](README.md) > Feral Combat
 
-**[Feral Combat — PvP](../research/pvp/builds/feral-combat-pvp.md)** (0/32/19) — [open the talent tree](https://talentsforever.com/druid/60/-0523232120131213001-55403001001-4)
+**[Feral Combat — PvP](../research/pvp/builds/feral-combat-pvp.md)** (0/32/19) — [open the talent tree](https://talentsforever.com/druid/60/-25232302120132012001-55403001001-4)
 
 > 🔬 Derived build: the stats model's best PvP build, with the community's most-picked talents where the model rates talents alike. A model of the beta, to check at launch.
 

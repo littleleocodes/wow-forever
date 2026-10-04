@@ -20,26 +20,26 @@ Allocation adopted on 2026-09-28 from `cand-fire-raid-r5`, the best build in the
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Improved Channeling** | 5/5 | **NEW** | Gives you a 100% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 70% chance while casting Arcane Blast. |
 | **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
+| **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 
 ### Fire (34)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Fireball** | 5/5 | changed | Reduces the casting time of your Fireball and Frostfire Bolt spells by 0.5 sec. |
 | **Wake of Fire** | 2/2 | **NEW** | Reduces the cooldown of your Fire Blast spell by 2 sec. Killing a non-trivial target increases the critical strike chance of your next Fire Blast cast within 30 sec by 50%. |
 | **Incineration** | 3/3 | **NEW** | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 6%. |
+| **Improved Fireball** | 5/5 | changed | Reduces the casting time of your Fireball and Frostfire Bolt spells by 0.5 sec. |
 | **Ignite** | 5/5 | unchanged | Your critical strikes from Fire damage spells cause the target to burn for an additional 40% of your spell's damage over 4 sec. |
+| **Burning Soul** | 2/3 | changed | Gives your Fire spells a 47% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 20%. |
 | **Pyroblast** | 1/1 | changed | Hurls an immense fiery boulder that causes 101 to 131 Fire damage and an additional 44 Fire damage over 12 sec. |
 | **Improved Scorch** | 3/3 | changed | Your Scorch spell has a 100% chance to cause your target to be vulnerable to Fire damage. This vulnerability increases all Fire damage you deal to your target by 3% and lasts 30 sec, stacking up to 5 times. |
-| **Hot Streak** | 1/1 | **NEW** | Your non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch grant Hot Streak for 20 sec. Hot Streak reduces the cast time of Pyroblast by 25%, stacking up to 3 times. |
+| **Heating Up** | 1/1 | **NEW** | Non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch reduce the cast time of your next Pyroblast cast within 20 sec by 25%, stacking up to 3 times. |
 | **Master of Elements** | 3/3 | changed | Your Fire and Frost critical strikes will refund 30% of their base mana cost. |
 | **Critical Mass** | 3/3 | unchanged | Increases the critical strike chance of your Fire spells by 6%. |
 | **Fire Power** | 5/5 | unchanged | Increases the damage done by your Fire spells by 10%. |
-| **Combustion** | 1/1 | changed | When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 4 non-periodic critical strikes with Fire spells. |
-| **Burning Soul** | 2/3 | changed | Gives your Fire spells a 47% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 20%. |
+| **Combustion** | 1/1 | changed | When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 3 non-periodic critical strikes with Fire spells. |
 
 ### Frost (5)
 
@@ -69,18 +69,18 @@ Allocation adopted on 2026-09-28 from `cand-fire-raid-r5`, the best build in the
 
 ## Rank among our builds and the community simulator's
 
-**1 of 8** for `fire-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 8** for `fire-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`fire-raid`](fire-raid.md)** | ours: hand draft | 12/34/5 | 598 | +0.0% | 747 | +0.0% | 2 s |
-| 2 | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) | ours: optimizer | 14/32/5 | 598 | +0.0% | 747 | +0.0% | 2 s |
-| 3 | *Fire DPS* | community simulator | - | 579 | -3.3% | 711 | -4.7% | 0 s |
-| 4 | *Fire 0/35/16* | community simulator | - | 573 | -4.2% | 720 | -3.6% | 5 s |
-| 5 | *Arcane DPS* | community simulator | - | 444 | -25.9% | 538 | -28.0% | 0 s |
-| 6 | *Arcane 35/0/16* | community simulator | - | 322 | -46.3% | 394 | -47.2% | 2 s |
-| 7 | *Frost DPS* | community simulator | - | 299 | -50.0% | 376 | -49.7% | 0 s |
-| 8 | *Frost 14/0/37* | community simulator | - | 295 | -50.8% | 379 | -49.3% | 0 s |
+| 1 | **[`fire-raid`](fire-raid.md)** | ours: hand draft | 12/34/5 | 559 | +0.0% | 700 | +0.0% | 3 s |
+| 2 | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) | ours: optimizer | 14/32/5 | 559 | +0.0% | 700 | +0.0% | 3 s |
+| 3 | *Fire DPS* | community simulator | - | 543 | -2.9% | 670 | -4.4% | 1 s |
+| 4 | *Fire 0/35/16* | community simulator | - | 533 | -4.7% | 671 | -4.1% | 5 s |
+| 5 | *Arcane DPS* | community simulator | - | 423 | -24.3% | 512 | -26.9% | 0 s |
+| 6 | *Arcane 35/0/16* | community simulator | - | 303 | -45.9% | 373 | -46.8% | 2 s |
+| 7 | *Frost DPS* | community simulator | - | 282 | -49.6% | 355 | -49.3% | 0 s |
+| 8 | *Frost 14/0/37* | community simulator | - | 278 | -50.3% | 358 | -48.9% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -109,23 +109,23 @@ Allocation adopted on 2026-09-28 from `cand-fire-raid-r5`, the best build in the
 | 2 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 5 | if stacks of Hot Streak = 3: cast Pyroblast | 1.5 |
-| 6 | cast Fire Blast | 7.1 |
-| 7 | if mana % ≥ 10%: cast Fireball | 9.7 |
-| 8 | if Missile Barrage is up: cast Arcane Missiles | 0.2 |
-| 9 | if time left in the fight ≥ 3s: cast Fireball | 4.8 |
-| 10 | cast Scorch | 0.2 |
+| 5 | if stacks of Heating Up = 3: cast Pyroblast | 1.5 |
+| 6 | cast Fire Blast | 7.0 |
+| 7 | if mana % ≥ 10%: cast Fireball | 9.6 |
+| 8 | if time left in the fight ≥ 3s: cast Fireball | 5.6 |
+| 9 | cast Scorch | 0.3 |
+
+Lines of the simulator's rotation these builds never cast: cast Arcane Missiles (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`fire-raid`](fire-raid.md) |
 |---|---|
-| Fireball | 50% |
-| Fire Blast | 19% |
-| Ignite | 12% |
-| Pyroblast | 11% |
-| Scorch | 7% |
-| Arcane Missiles | 1% |
+| Fireball | 51% |
+| Fire Blast | 20% |
+| Ignite | 11% |
+| Pyroblast | 10% |
+| Scorch | 8% |
 
 ## Notes
 
@@ -134,6 +134,7 @@ Damage by ability:
 - Fire immunity in the new raids is unknown; in Classic this build was AQ40/Naxx only.
 - 2026-09-27 scenario audit: Magic Absorption 2, Arcane Resilience 1 -> Burning Soul 1, Wake of Fire 2. Arcane Resilience (armor) and Magic Absorption (resistances) only matter when you are hit; a raid caster is not. Wake of Fire measures +0.9% in the simulator on the optimizer build (ElliotWood/Forever 40be98e) and Burning Soul's third rank lowers Fire threat further.
 - 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Magic Absorption -> Improved Channeling (interrupt); Magic Absorption -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Arcane Focus -> Improved Channeling (interrupt); Arcane Focus -> Arcane Subtlety (threat); Arcane Focus -> Arcane Subtlety (threat); Arcane Focus -> Burning Soul (threat); Arcane Focus -> Burning Soul (threat). Net -0.10% on a third seed.
+- 2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized.
 
 ## Open questions (verify in the live game)
 

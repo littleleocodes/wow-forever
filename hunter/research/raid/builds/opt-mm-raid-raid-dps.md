@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid` and profile `raid-dps`: score +60.8% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid` and profile `raid-dps`: score +67.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -34,9 +34,9 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
 | **Efficiency** | 5/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
-| **Improved Stings** | 3/3 | **NEW** | Increased the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
+| **Improved Stings** | 3/3 | **NEW** | Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
 | **Improved Arcane Shot** | 1/5 | changed | Reduces the cooldown of your Arcane Shot by 0.3 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot. |
-| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party members within 45 yards by 30. Lasts 30 min. |
+| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party members within 45 yds by 30. |
 | **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
 | **Ranged Weapon Specialization** | 4/5 | unchanged | Increases the damage you deal with ranged weapons by 4%. |
 
@@ -46,28 +46,28 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 
 ## Core talents (priority order)
 
-1. **Summon Hawk** — Removing it costs 9.3 points of score in this model.
-2. **Efficiency** — Removing it costs 9.2 points of score in this model.
-3. **Bestial Discipline** — Removing it costs 8.7 points of score in this model.
-4. **Mortal Shots** — Removing it costs 7.0 points of score in this model.
-5. **Lethal Attacks** — Removing it costs 6.9 points of score in this model.
-6. **Deadly Aspects** — Removing it costs 6.4 points of score in this model.
-7. **Careful Aim** — Removing it costs 5.9 points of score in this model.
-8. **Ranged Weapon Specialization** — Removing it costs 5.1 points of score in this model.
+1. **Summon Hawk** — Removing it costs 17.9 points of score in this model.
+2. **Bestial Discipline** — Removing it costs 9.5 points of score in this model.
+3. **Efficiency** — Removing it costs 7.8 points of score in this model.
+4. **Deadly Aspects** — Removing it costs 7.5 points of score in this model.
+5. **Unleashed Fury** — Removing it costs 7.4 points of score in this model.
+6. **Careful Aim** — Removing it costs 6.2 points of score in this model.
+7. **Frenzy** — Removing it costs 6.1 points of score in this model.
+8. **Lethal Attacks** — Removing it costs 5.8 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
-**2 of 7** for `mm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 7** for `mm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 457 | +0.0% | 785 | -2.4% | 71 s |
-| 2 | **[`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md)** | ours: optimizer | 22/29/0 | 457 | +0.0% | 785 | -2.4% | 71 s |
-| 3 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 425 | -6.8% | 771 | -4.1% | 79 s |
-| 4 | *Beast Mastery 35/16/0* | community simulator | - | 421 | -7.7% | 730 | -9.1% | 86 s |
-| 5 | *Marksmanship* | community simulator | - | 409 | -10.5% | 804 | +0.0% | 97 s |
-| 6 | *Marksmanship 0/39/12* | community simulator | - | 377 | -17.5% | 729 | -9.3% | 95 s |
-| 7 | *Survival 0/15/36* | community simulator | - | 353 | -22.6% | 649 | -19.3% | 87 s |
+| 1 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 478 | +0.0% | 823 | +0.0% | 71 s |
+| 2 | **[`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md)** | ours: optimizer | 22/29/0 | 478 | +0.0% | 823 | +0.0% | 71 s |
+| 3 | *Beast Mastery 35/16/0* | community simulator | - | 456 | -4.7% | 794 | -3.6% | 86 s |
+| 4 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 432 | -9.6% | 792 | -3.8% | 79 s |
+| 5 | *Marksmanship* | community simulator | - | 414 | -13.4% | 822 | -0.1% | 97 s |
+| 6 | *Marksmanship 0/39/12* | community simulator | - | 380 | -20.6% | 744 | -9.6% | 95 s |
+| 7 | *Survival 0/15/36* | community simulator | - | 353 | -26.2% | 654 | -20.5% | 87 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -101,17 +101,18 @@ Damage by ability:
 
 | Ability | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) |
 |---|---|
-| Auto Shot | 41% |
+| Auto Shot | 39% |
 | Summon Hawk | 26% |
-| Serpent Sting | 14% |
-| Aimed Shot | 8% |
-| Pet: Auto Attack | 7% |
+| Serpent Sting | 12% |
+| Pet: Auto Attack | 11% |
+| Aimed Shot | 7% |
 | Pet: Claw | 2% |
-| Pet: Bite | 1% |
+| Pet: Bite | 2% |
 | Multi-Shot | 1% |
 
 ## Notes
 
+- Allocation taken from cand-mm-raid-r10 on 2026-10-03: the optimizer's earlier round beat its last export in the community simulator (478 vs 473 DPS; the calibration moved the model past the better build).
 - Report: hunter/research/talents/forever/optimizer/mm-raid-raid-dps.md
 
 ## Open questions (verify in the live game)

@@ -25,7 +25,7 @@ Global checks: respec cost schedule in Forever (the planner assumes 1g then +5g,
 
 Plan: **feral-cat-dps -> level-60 build (9/31/11)** (from `druid/leveling/respec-plan.md`)
 
-- 10-14 Ferocity x5; 15-17 Thick Hide x3; 18-19 Feral Swiftness x2; 20-21 Savage Fury x2; 22-23 Sharpened Claws x2; 24 Heart of the Wild; 25-27 Predatory Strikes x3; 28-29 Heart of the Wild x2; 30-32 King of the Jungle x3
+- 10-14 Ferocity x5; 15-17 Thick Hide x3; 18-19 Feral Swiftness x2; 20-21 Savage Fury x2; 22-23 Sharpened Claws x2; 24 Heart of the Wild; 25-27 Predatory Strikes x3; 28-29 Heart of the Wild x2; 30 Leader of the Pack
 
 Log per level bracket: kills per hour, deaths, drink/eat time; compare with the alternative plans on the same page.
 
@@ -370,12 +370,11 @@ Models: sb-raid, affliction-raid, fire-destro-raid, affliction-leveling. Same mo
 | Tree | Row | Talent | Ranks | Extrapolated ranks |
 |---|---|---|---|---|
 
-### 2. Confirm the hand-entered mechanics (4 reachable talents carry an estimate)
+### 2. Confirm the hand-entered mechanics (3 reachable talents carry an estimate)
 
 | Talent | What the model assumes |
 |---|---|
-| Bastion | +2%/rank all damage with a shield equipped (est. 10%): tank threat. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, prot-tank): removing it costs 3.6% DPS in the simulator (scorer said 3.5% on the same scal |
-| Defiance | +5%/rank threat in Defensive Stance with a shield (est. 15%). Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, prot-tank): removing it costs 6.0% DPS in the simulator (scorer said 6.0% on the same scale); al |
+| Defiance | +5%/rank threat in Defensive Stance with a shield (est. 15%). Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 6.0% DPS in the simulator (scorer said 6.0% on the same scale); al |
 | Dual Wield Specialization | +5%/rank off-hand damage, +20%/rank off-hand rage generation, +2%/rank off-hand hit (rank-1 text; est. 25%/100%/10% at 5/5). Off-hand hit is worth a lot against the 27% dual-wield white miss. Raid sim calibration (2026-1 |
 | Weaponmaster | Axe/polearm +1%/rank crit, sword 1%/rank extra attacks, mace 3% armor ignore: all roughly +1% melee damage per rank for the matching weapon. Encoded as +1%/rank damage (assumes you use the matching weapon type). Fight la |
 
@@ -386,9 +385,9 @@ Models: sb-raid, affliction-raid, fire-destro-raid, affliction-leveling. Same mo
 
 ### 4. Play the recommended 10-30 order and time it
 
-Plan: **arms-2h-raid -> level-30 build (0/21/0)** (from `warrior/leveling/respec-plan.md`)
+Plan: **fury-dw-raid -> level-50 build (4/37/0)** (from `warrior/leveling/respec-plan.md`)
 
-- 10-14 Cruelty x5; 15-19 Unbridled Wrath x5; 20-22 Blood Craze x3; 23-24 Boundless Rage x2; 25-29 Enrage x5; 30 Death Wish
+- 10-14 Cruelty x5; 15-19 Unbridled Wrath x5; 20-22 Blood Craze x3; 23 Piercing Howl; 24 Booming Voice; 25-26 Improved Execute x2; 27-29 Enrage x3; 30 Death Wish
 
 Log per level bracket: kills per hour, deaths, drink/eat time; compare with the alternative plans on the same page.
 

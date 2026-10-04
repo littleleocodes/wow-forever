@@ -41,7 +41,7 @@ The Beast Mastery PvP build derived on 2026-09-30 (derive_pvp.py): the stats mod
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Deflection** | 5/5 | changed | Increases your Parry chance by 10%. |
+| **Deflection** | 5/5 | changed | Increases your Parry chance by 5%. |
 | **Entrapment** | 5/5 | changed | When your traps are triggered, all affected targets are Entrapped, preventing them from moving for 5 sec. |
 | **Improved Wing Clip** | 3/3 | changed | Gives your Wing Clip ability a 20% chance to immobilize the target for 5 sec. |
 | **Surefooted** | 3/3 | changed | Increases your hit chance by 3% and reduces the duration of movement impairing effects on you by 30%. |

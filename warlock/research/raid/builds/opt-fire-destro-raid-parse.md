@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-destro-raid` and profile `parse`: score +91.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-destro-raid` and profile `parse`: score +91.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -50,10 +50,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-des
 1. **Demonic Sacrifice** — Removing it costs 26.5 points of score in this model.
 2. **Shadow and Flame** — Removing it costs 20.0 points of score in this model.
 3. **Bane** — Removing it costs 19.7 points of score in this model.
-4. **Shadowburn** — Removing it costs 14.2 points of score in this model.
-5. **Conflagrate** — Removing it costs 13.3 points of score in this model.
-6. **Suppression** — Removing it costs 10.8 points of score in this model.
-7. **Agonizing Flames** — Removing it costs 10.7 points of score in this model.
+4. **Conflagrate** — Removing it costs 13.3 points of score in this model.
+5. **Shadowburn** — Removing it costs 13.1 points of score in this model.
+6. **Agonizing Flames** — Removing it costs 10.7 points of score in this model.
+7. **Suppression** — Removing it costs 10.7 points of score in this model.
 8. **Ruin** — Removing it costs 8.3 points of score in this model.
 
 ## Rotation

@@ -1,6 +1,6 @@
-# Priest — WoW: Forever talent trees (beta client 1.60.1.70009)
+# Priest — WoW: Forever talent trees (beta client 1.60.1.70170)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70009, captured 2026-09-25. World of Warcraft: Forever beta client, build 1.60.1.70009: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-09-24, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70009; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70170, captured 2026-10-03. World of Warcraft: Forever beta client, build 1.60.1.70170: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-03, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70205; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -36,7 +36,7 @@
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Mental Agility** | 3 | — | changed | Reduces the mana cost of your Smite, Holy Fire, and instant cast spells by 3%. | Reduces the mana cost of your Smite, Holy Fire, and instant cast spells by 10%. |
-| **Inner Focus** | 1 | — | unchanged | When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is capable of a critical effect. | — |
+| **Inner Focus** | 1 | — | unchanged | When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is a non-periodic spell and capable of a critical effect. | — |
 | **Meditation** | 3 | — | changed | Allows 17% of your Mana regeneration to continue while casting. | Allows 50% of your Mana regeneration to continue while casting. |
 
 ### Tier 4 — requires 15 points in Discipline
@@ -133,7 +133,7 @@
 |---|---|---|---|---|---|
 | **Shadow Focus** | 5 | — | changed | Improves your chance to hit with Shadow spells by 1%. | Improves your chance to hit with Shadow spells by 5%. |
 | **Blackout** | 5 | — | moved | Gives your Shadow damage spells a 2% chance to stun the target for 3 sec. | Gives your Shadow damage spells a 10% chance to stun the target for 3 sec. |
-| **Spirit Tap** | 5 | — | changed | Gives you a 20% chance to gain a 100% bonus to your Spirit for 15 sec after killing a non-trivial target. For the duration, your Mana will regenerate at a 50% of normal rate while casting. | Gives you a 100% chance to gain a 100% bonus to your Spirit for 15 sec after killing a non-trivial target. For the duration, your Mana will regenerate at a 50% of normal rate while casting. |
+| **Spirit Tap** | 5 | — | changed | Gives you a 20% chance to increase your Spirit by 100% for 15 sec after killing a non-trivial target or when an enemy afflicted by your Vampiric Embrace dies. For the duration, 50% of your Mana regeneration will continue while casting. | Gives you a 100% chance to increase your Spirit by 100% for 15 sec after killing a non-trivial target or when an enemy afflicted by your Vampiric Embrace dies. For the duration, 50% of your Mana regeneration will continue while casting. |
 
 ### Tier 2 — requires 5 points in Shadow
 
@@ -157,7 +157,7 @@
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Improved Fade** | 2 | — | moved | Decreases the cooldown of your Fade ability by 3 sec. | Decreases the cooldown of your Fade ability by 6 sec. |
-| **Vampiric Embrace** | 1 | — | changed | Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow spell damage you deal for 30 sec. Vampiric Embrace also grants a chance for your Spirit Tap talent to trigger when enemies afflicted by it die. | — |
+| **Vampiric Embrace** | 1 | — | changed | Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow spell damage you deal for 30 sec. | — |
 | **Shadow Weaving** | 3 | — | changed | Your Shadow damage spells have a 33% chance to increase the Shadow damage you deal by 2% for 15 sec, stacking up to 5 times. | Your Shadow damage spells have a 100% chance to increase the Shadow damage you deal by 2% for 15 sec, stacking up to 5 times. |
 
 ### Tier 5 — requires 20 points in Shadow
@@ -165,7 +165,7 @@
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Silence** | 1 | — | changed | Silences the target, preventing them from casting spells for 5 sec and interrupting their spellcasts for 3 sec. | — |
-| **Devouring Contagion** | 2 | — | **NEW** | Reduces the mana cost of your Devouring Plague by 25%.  Targets that die while Devouring Plague is active spreads it, jumping to a nearby enemy within 5 yards for the remaining duration. | Reduces the mana cost of your Devouring Plague by 50%.  Targets that die while Devouring Plague is active spreads it, jumping to a nearby enemy within 10 yards for the remaining duration. |
+| **Devouring Contagion** | 2 | — | **NEW** | Reduces the mana cost of your Devouring Plague by 25%.  Targets that die while Devouring Plague is active spreads it, jumping to a nearby enemy within 5 yds for the remaining duration. | Reduces the mana cost of your Devouring Plague by 50%.  Targets that die while Devouring Plague is active spreads it, jumping to a nearby enemy within 10 yds for the remaining duration. |
 
 ### Tier 6 — requires 25 points in Shadow
 
@@ -224,7 +224,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Divine Fury** (tooltip changed)
   - Classic: Reduces the casting time of your Smite, Holy Fire, Heal and Greater Heal spells by 0 sec.
   - Forever: Reduces the casting time of your Smite, Holy Fire, Heal, and Greater Heal spells by 0.1 sec.
-- **Holy Nova** (tooltip changed, tooltip changed in build 1.60.1.70009 (ranks 1))
+- **Holy Nova** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1))
   - Classic: Causes an explosion of holy light around the caster, causing 32 Holy damage to all enemy targets within 0 yards and healing all party members within 0 yards for 60. These effects cause no threat.
   - Forever: Causes an explosion of holy light around the caster, causing 26 to 30 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 49 to 57. These effects cause no threat.
 - **Blessed Recovery** (tooltip changed)
@@ -254,9 +254,9 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Shadow Focus** (tooltip changed, was Shadow row 2, col 3)
   - Classic: Reduces your target's chance to resist your Shadow spells by 2%.
   - Forever: Improves your chance to hit with Shadow spells by 1%.
-- **Spirit Tap** (tooltip changed, was Shadow row 1, col 2)
+- **Spirit Tap** (tooltip changed, was Shadow row 1, col 2, tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5))
   - Classic: Gives you a 20% chance to gain a 100% bonus to your Spirit after killing a target that yields experience. For the duration, your Mana will regenerate at a 50% rate while casting. Lasts 15 sec.
-  - Forever: Gives you a 20% chance to gain a 100% bonus to your Spirit for 15 sec after killing a non-trivial target. For the duration, your Mana will regenerate at a 50% of normal rate while casting.
+  - Forever: Gives you a 20% chance to increase your Spirit by 100% for 15 sec after killing a non-trivial target or when an enemy afflicted by your Vampiric Embrace dies. For the duration, 50% of your Mana regeneration will continue while casting.
 - **Shadow Affinity** (tooltip changed)
   - Classic: Reduces the threat generated by your Shadow spells by 8%.
   - Forever: Reduces the threat generated by your Shadow spells by 10%.
@@ -269,9 +269,9 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Mind Flay** (tooltip changed)
   - Classic: Assault the target's mind with Shadow energy, causing 75 Shadow damage over 3 sec and slowing their movement speed by 50%.
   - Forever: Assault the target's mind with Shadow energy, causing 63 Shadow damage over 3 sec and slowing their movement speed by 50%.
-- **Vampiric Embrace** (tooltip changed, was Shadow row 5, col 2)
+- **Vampiric Embrace** (tooltip changed, was Shadow row 5, col 2, tooltip changed in build 1.60.1.70170 (ranks 1))
   - Classic: Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow spell damage you deal for 1 min.
-  - Forever: Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow spell damage you deal for 30 sec. Vampiric Embrace also grants a chance for your Spirit Tap talent to trigger when enemies afflicted by it die.
+  - Forever: Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow spell damage you deal for 30 sec.
 - **Shadow Weaving** (max rank 5 → 3, tooltip changed, was Shadow row 4, col 4)
   - Classic: Your Shadow damage spells have a 20% chance to cause your target to be vulnerable to Shadow damage. This vulnerability increases the Shadow damage dealt to your target by 3% and lasts 15 sec. Stacks up to 5 times.
   - Forever: Your Shadow damage spells have a 33% chance to increase the Shadow damage you deal by 2% for 15 sec, stacking up to 5 times.

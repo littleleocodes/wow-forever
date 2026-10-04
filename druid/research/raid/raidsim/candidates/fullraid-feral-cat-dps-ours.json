@@ -17,20 +17,20 @@
   ],
   "Feral Combat": [
    [
-    "Heart of the Wild",
+    "Ferocity",
     5
    ],
    [
-    "Ferocity",
-    2
+    "Heart of the Wild",
+    5
    ],
    [
     "Thick Hide",
     3
    ],
    [
-    "Sharpened Claws",
-    2
+    "Shredding Attacks",
+    3
    ],
    [
     "Savage Fury",
@@ -41,24 +41,20 @@
     1
    ],
    [
-    "Blood Frenzy",
+    "Sharpened Claws",
     2
-   ],
-   [
-    "Shredding Attacks",
-    3
    ],
    [
     "Predatory Strikes",
     3
    ],
    [
-    "Leader of the Pack",
-    1
+    "Blood Frenzy",
+    2
    ],
    [
-    "King of the Jungle",
-    3
+    "Leader of the Pack",
+    1
    ],
    [
     "Predatory Instincts",
@@ -96,5 +92,8 @@
   "dps_end": 576.8687267200099,
   "gain": 0.0,
   "tank": false
- }
+ },
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

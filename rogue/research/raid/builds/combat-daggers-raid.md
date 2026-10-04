@@ -71,20 +71,20 @@ The conservative dagger adaptation: Puncturing Wounds replaces Improved Backstab
 
 ## Rank among our builds and the community simulator's
 
-**3 of 10** for `combat-daggers-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 10** for `combat-daggers-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 17/32/2 | 419 | +0.0% | 696 | -3.3% | 0 s |
-| 2 | [`combat-ml-raid`](combat-ml-raid.md) | ours: hand draft | 16/33/2 | 402 | -4.0% | 720 | +0.0% | 0 s |
-| 3 | **[`combat-daggers-raid`](combat-daggers-raid.md)** | ours: hand draft | 16/33/2 | 398 | -4.9% | 712 | -1.1% | 0 s |
-| 4 | *Combat Dual-Wield 15/33/3* | community simulator | - | 394 | -6.0% | 702 | -2.5% | 0 s |
-| 5 | *Backstab* | community simulator | - | 371 | -11.5% | 672 | -6.6% | 0 s |
-| 6 | *Mutilate* | community simulator | - | 355 | -15.1% | 642 | -10.8% | 0 s |
-| 7 | *Improved Expose Armor (SS)* | community simulator | - | 349 | -16.6% | 620 | -13.8% | 0 s |
-| 8 | *Assassination Mutilate 31/20/0* | community simulator | - | 342 | -18.3% | 625 | -13.2% | 0 s |
-| 9 | *Sinister Strike* | community simulator | - | 334 | -20.3% | 629 | -12.6% | 0 s |
-| 10 | *Subtlety Hemo 15/0/36* | community simulator | - | 258 | -38.4% | 500 | -30.5% | 0 s |
+| 1 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 17/32/2 | 419 | +0.0% | 747 | -3.3% | 0 s |
+| 2 | [`combat-ml-raid`](combat-ml-raid.md) | ours: hand draft | 16/33/2 | 402 | -4.0% | 772 | +0.0% | 0 s |
+| 3 | **[`combat-daggers-raid`](combat-daggers-raid.md)** | ours: hand draft | 16/33/2 | 398 | -4.9% | 765 | -1.0% | 0 s |
+| 4 | *Combat Dual-Wield 15/33/3* | community simulator | - | 394 | -6.0% | 754 | -2.3% | 0 s |
+| 5 | *Backstab* | community simulator | - | 371 | -11.5% | 721 | -6.6% | 0 s |
+| 6 | *Mutilate* | community simulator | - | 363 | -13.3% | 700 | -9.3% | 0 s |
+| 7 | *Improved Expose Armor (SS)* | community simulator | - | 350 | -16.4% | 668 | -13.4% | 0 s |
+| 8 | *Assassination Mutilate 31/20/0* | community simulator | - | 349 | -16.5% | 681 | -11.8% | 0 s |
+| 9 | *Sinister Strike* | community simulator | - | 334 | -20.1% | 680 | -11.9% | 0 s |
+| 10 | *Subtlety Hemo 15/0/36* | community simulator | - | 258 | -38.3% | 539 | -30.2% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -106,7 +106,7 @@ The conservative dagger adaptation: Puncturing Wounds replaces Improved Backstab
 | 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.7 |
 | 3 | if energy < 59 and timeToNextEnergyTick < 1: cast Adrenaline Rush | 0.3 |
 | 4 | if Slice and Dice is up: use every other cooldown when ready | as ready |
-| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.4 |
+| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.3 |
 | 6 | cast Backstab | 11.8 |
 
 Lines of the simulator's rotation these builds never cast: cast Mutilate (needs the Mutilate talent).

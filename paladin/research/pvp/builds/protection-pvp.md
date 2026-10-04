@@ -23,7 +23,7 @@ The Protection PvP build derived on 2026-09-30 (derive_pvp.py): the stats model'
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Redoubt** | 5/5 | changed | Damaging melee attacks against you have a 10% chance to increase your chance to block by 30%. Lasts 10 sec or 5 blocks. |
+| **Redoubt** | 5/5 | changed | Damaging melee attacks against you have a 10% chance to increase your chance to block by 20%. Lasts 10 sec or 5 blocks. |
 | **Precision** | 3/3 | changed | Improves your chance to hit by 3%. |
 | **Guardian's Favor** | 2/2 | changed | Reduces the cooldown of your Blessing of Protection by 2 min and increases the duration of your Blessing of Freedom by 6 sec. |
 | **Improved Seal of Fury** | 1/1 | **NEW** | When Seal of Fury's shield is fully absorbed, restore 60 Mana, increased by 15% per level the attacker is above you, up to 45%. |
@@ -66,6 +66,7 @@ The Protection PvP build derived on 2026-09-30 (derive_pvp.py): the stats model'
 - Where we disagree with the community: most Protection builds take Iron Creed (87% take it), Holy Shield (85% take it), Anticipation (75% take it), which the model values below this build's weakest point; this build takes Guardian's Favor (20%), Improved Hammer of Justice (12%), Repentance (4%), Seal of Command (12%), which few Protection builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.
 - PvP values are assumptions: no simulator plays PvP.
 - Scored with the Retribution damage model (PvP values damage, not threat), keeping 30+ points in Protection.
+- 2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved):  out;  in; to be re-optimized.
 
 ## Open questions (verify in the live game)
 

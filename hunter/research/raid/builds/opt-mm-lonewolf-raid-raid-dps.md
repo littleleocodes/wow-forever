@@ -27,12 +27,12 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonew
 |---|---|---|---|
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
-| **Improved Stings** | 3/3 | **NEW** | Increased the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
+| **Improved Stings** | 3/3 | **NEW** | Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
 | **Efficiency** | 5/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
 | **Lone Wolf** | 1/1 | **NEW** | You deal 20% increased damage with all attacks while you do not have an active pet. |
 | **Improved Arcane Shot** | 5/5 | changed | Reduces the cooldown of your Arcane Shot by 1.5 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot. |
 | **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
-| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party members within 45 yards by 30. Lasts 30 min. |
+| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party members within 45 yds by 30. |
 | **Barrage** | 3/3 | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 10%. |
 | **Ranged Weapon Specialization** | 5/5 | unchanged | Increases the damage you deal with ranged weapons by 5%. |
 
@@ -45,29 +45,29 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonew
 
 ## Core talents (priority order)
 
-1. **Lone Wolf** — Removing it costs 29.6 points of score in this model.
-2. **Efficiency** — Removing it costs 11.9 points of score in this model.
-3. **Lethal Attacks** — Removing it costs 9.4 points of score in this model.
-4. **Mortal Shots** — Removing it costs 9.3 points of score in this model.
-5. **Deadly Aspects** — Removing it costs 9.0 points of score in this model.
+1. **Lone Wolf** — Removing it costs 29.5 points of score in this model.
+2. **Efficiency** — Removing it costs 12.0 points of score in this model.
+3. **Lethal Attacks** — Removing it costs 9.6 points of score in this model.
+4. **Mortal Shots** — Removing it costs 9.5 points of score in this model.
+5. **Deadly Aspects** — Removing it costs 9.3 points of score in this model.
 6. **Careful Aim** — Removing it costs 7.6 points of score in this model.
 7. **Ranged Weapon Specialization** — Removing it costs 6.5 points of score in this model.
-8. **Improved Stings** — Removing it costs 5.0 points of score in this model.
+8. **Trueshot Aura** — Removing it costs 4.9 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
-**2 of 8** for `mm-lonewolf-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 8** for `mm-lonewolf-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: hand draft | 11/40/0 | 447 | +0.0% | 894 | -4.4% | 100 s |
-| 2 | **[`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md)** | ours: optimizer | 5/38/8 | 446 | -0.3% | 898 | -4.0% | 100 s |
-| 3 | [`marksmanship-ml-parse`](marksmanship-ml-parse.md) | ours: parse build | 7/44/0 | 446 | -0.3% | 935 | +0.0% | 100 s |
-| 4 | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) | ours: hand draft | 11/40/0 | 443 | -1.0% | 834 | -10.8% | 87 s |
-| 5 | *Beast Mastery 35/16/0* | community simulator | - | 367 | -18.0% | 625 | -33.2% | 75 s |
-| 6 | *Marksmanship* | community simulator | - | 362 | -19.0% | 748 | -20.0% | 100 s |
-| 7 | *Marksmanship 0/39/12* | community simulator | - | 347 | -22.4% | 697 | -25.5% | 97 s |
-| 8 | *Survival 0/15/36* | community simulator | - | 316 | -29.2% | 590 | -36.9% | 84 s |
+| 1 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: hand draft | 11/40/0 | 428 | +0.0% | 859 | -4.7% | 100 s |
+| 2 | **[`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md)** | ours: optimizer | 5/38/8 | 427 | -0.3% | 862 | -4.4% | 100 s |
+| 3 | [`marksmanship-ml-parse`](marksmanship-ml-parse.md) | ours: parse build | 7/44/0 | 426 | -0.3% | 901 | +0.0% | 100 s |
+| 4 | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) | ours: hand draft | 11/40/0 | 424 | -0.8% | 805 | -10.7% | 87 s |
+| 5 | *Beast Mastery 35/16/0* | community simulator | - | 368 | -14.1% | 622 | -31.0% | 75 s |
+| 6 | *Marksmanship* | community simulator | - | 347 | -18.8% | 723 | -19.8% | 100 s |
+| 7 | *Marksmanship 0/39/12* | community simulator | - | 332 | -22.5% | 673 | -25.4% | 97 s |
+| 8 | *Survival 0/15/36* | community simulator | - | 298 | -30.3% | 559 | -38.0% | 84 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -104,10 +104,10 @@ Damage by ability:
 
 | Ability | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) |
 |---|---|
-| Auto Shot | 50% |
-| Arcane Shot | 26% |
-| Serpent Sting | 15% |
-| Aimed Shot | 9% |
+| Auto Shot | 52% |
+| Arcane Shot | 24% |
+| Serpent Sting | 14% |
+| Aimed Shot | 10% |
 | Multi-Shot | 0% |
 
 ## Notes

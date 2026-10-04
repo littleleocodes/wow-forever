@@ -1211,199 +1211,6 @@
       "sources": ["https://talentsforever.com/rogue"]
     },
     {
-      "id": "opt-combat-swords-raid-raid-dps",
-      "name": "Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (raid-dps)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-swords-raid` and profile `raid-dps`: score +68.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Assassination": [
-          ["Malice", 5],
-          ["Improved Slice and Dice", 3],
-          ["Ruthlessness", 3],
-          ["Murder", 2],
-          ["Relentless Strikes", 1],
-          ["Lethality", 1],
-          ["Improved Poisons", 5]
-        ],
-        "Combat": [
-          ["Improved Sinister Strike", 2],
-          ["Improved Eviscerate", 3],
-          ["Lightning Reflexes", 5],
-          ["Precision", 3],
-          ["Deflection", 2],
-          ["Dual Wield Specialization", 5],
-          ["Hack and Slash", 4],
-          ["Blade Flurry", 1],
-          ["Weapon Expertise", 2],
-          ["Aggression", 3],
-          ["Adrenaline Rush", 1]
-        ],
-        "Subtlety": []
-      },
-      "core": [
-        {"talent": "Relentless Strikes", "why": "Removing it costs 12.2 points of score in this model."},
-        {"talent": "Improved Sinister Strike", "why": "Removing it costs 9.5 points of score in this model."},
-        {"talent": "Improved Slice and Dice", "why": "Removing it costs 9.0 points of score in this model."},
-        {"talent": "Ruthlessness", "why": "Removing it costs 7.7 points of score in this model."},
-        {"talent": "Malice", "why": "Removing it costs 7.6 points of score in this model."},
-        {"talent": "Adrenaline Rush", "why": "Removing it costs 7.1 points of score in this model."},
-        {"talent": "Dual Wield Specialization", "why": "Removing it costs 7.0 points of score in this model."},
-        {"talent": "Improved Poisons", "why": "Removing it costs 6.6 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: rogue/research/talents/forever/optimizer/combat-swords-raid-raid-dps.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/rogue"]
-    },
-    {
-      "id": "opt-combat-swords-raid-parse",
-      "name": "Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (parse)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-swords-raid` and profile `parse`: score +68.4% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Assassination": [
-          ["Malice", 5],
-          ["Ruthlessness", 3],
-          ["Improved Slice and Dice", 3],
-          ["Murder", 2],
-          ["Relentless Strikes", 1],
-          ["Lethality", 1],
-          ["Improved Poisons", 5]
-        ],
-        "Combat": [
-          ["Improved Eviscerate", 3],
-          ["Improved Sinister Strike", 2],
-          ["Lightning Reflexes", 3],
-          ["Deflection", 3],
-          ["Precision", 3],
-          ["Riposte", 1],
-          ["Dual Wield Specialization", 5],
-          ["Blade Flurry", 1],
-          ["Hack and Slash", 4],
-          ["Weapon Expertise", 2],
-          ["Aggression", 3],
-          ["Adrenaline Rush", 1]
-        ],
-        "Subtlety": []
-      },
-      "core": [
-        {"talent": "Relentless Strikes", "why": "Removing it costs 12.2 points of score in this model."},
-        {"talent": "Improved Sinister Strike", "why": "Removing it costs 9.5 points of score in this model."},
-        {"talent": "Improved Slice and Dice", "why": "Removing it costs 9.0 points of score in this model."},
-        {"talent": "Ruthlessness", "why": "Removing it costs 7.7 points of score in this model."},
-        {"talent": "Malice", "why": "Removing it costs 7.4 points of score in this model."},
-        {"talent": "Adrenaline Rush", "why": "Removing it costs 7.1 points of score in this model."},
-        {"talent": "Dual Wield Specialization", "why": "Removing it costs 7.0 points of score in this model."},
-        {"talent": "Improved Poisons", "why": "Removing it costs 6.4 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: rogue/research/talents/forever/optimizer/combat-swords-raid-parse.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/rogue"]
-    },
-    {
-      "id": "opt-combat-daggers-raid-raid-dps",
-      "name": "Optimizer — Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (raid-dps)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-daggers-raid` and profile `raid-dps`: score +85.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Assassination": [
-          ["Malice", 5],
-          ["Improved Slice and Dice", 3],
-          ["Ruthlessness", 3],
-          ["Murder", 2],
-          ["Relentless Strikes", 1],
-          ["Improved Expose Armor", 2],
-          ["Lethality", 1]
-        ],
-        "Combat": [
-          ["Improved Eviscerate", 3],
-          ["Lightning Reflexes", 5],
-          ["Puncturing Wounds", 3],
-          ["Precision", 3],
-          ["Deflection", 1],
-          ["Dual Wield Specialization", 5],
-          ["Hack and Slash", 5],
-          ["Blade Flurry", 1],
-          ["Aggression", 3],
-          ["Weapon Expertise", 2],
-          ["Adrenaline Rush", 1]
-        ],
-        "Subtlety": [
-          ["Opportunity", 2]
-        ]
-      },
-      "core": [
-        {"talent": "Puncturing Wounds", "why": "Removing it costs 24.9 points of score in this model."},
-        {"talent": "Relentless Strikes", "why": "Removing it costs 12.8 points of score in this model."},
-        {"talent": "Improved Expose Armor", "why": "Removing it costs 9.4 points of score in this model."},
-        {"talent": "Improved Slice and Dice", "why": "Removing it costs 8.9 points of score in this model."},
-        {"talent": "Adrenaline Rush", "why": "Removing it costs 8.3 points of score in this model."},
-        {"talent": "Malice", "why": "Removing it costs 7.8 points of score in this model."},
-        {"talent": "Hack and Slash", "why": "Removing it costs 7.4 points of score in this model."},
-        {"talent": "Ruthlessness", "why": "Removing it costs 7.0 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: rogue/research/talents/forever/optimizer/combat-daggers-raid-raid-dps.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/rogue"]
-    },
-    {
-      "id": "opt-combat-daggers-raid-parse",
-      "name": "Optimizer — Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (parse)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-daggers-raid` and profile `parse`: score +84.8% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Assassination": [
-          ["Malice", 5],
-          ["Improved Slice and Dice", 3],
-          ["Ruthlessness", 3],
-          ["Murder", 2],
-          ["Relentless Strikes", 1],
-          ["Improved Expose Armor", 2],
-          ["Lethality", 1]
-        ],
-        "Combat": [
-          ["Improved Eviscerate", 3],
-          ["Lightning Reflexes", 5],
-          ["Puncturing Wounds", 3],
-          ["Precision", 3],
-          ["Deflection", 1],
-          ["Dual Wield Specialization", 5],
-          ["Hack and Slash", 5],
-          ["Blade Flurry", 1],
-          ["Aggression", 3],
-          ["Weapon Expertise", 2],
-          ["Adrenaline Rush", 1]
-        ],
-        "Subtlety": [
-          ["Opportunity", 2]
-        ]
-      },
-      "core": [
-        {"talent": "Puncturing Wounds", "why": "Removing it costs 24.5 points of score in this model."},
-        {"talent": "Relentless Strikes", "why": "Removing it costs 12.7 points of score in this model."},
-        {"talent": "Improved Expose Armor", "why": "Removing it costs 9.4 points of score in this model."},
-        {"talent": "Improved Slice and Dice", "why": "Removing it costs 8.9 points of score in this model."},
-        {"talent": "Adrenaline Rush", "why": "Removing it costs 8.3 points of score in this model."},
-        {"talent": "Malice", "why": "Removing it costs 7.6 points of score in this model."},
-        {"talent": "Hack and Slash", "why": "Removing it costs 7.2 points of score in this model."},
-        {"talent": "Ruthlessness", "why": "Removing it costs 6.9 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: rogue/research/talents/forever/optimizer/combat-daggers-raid-parse.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/rogue"]
-    },
-    {
       "id": "assassination-ml-raid",
       "name": "Assassination — Raid (machine-learning search)",
       "role": "dps",
@@ -1486,6 +1293,198 @@
       "notes": ["Against the best hand draft combat-daggers-raid in a full raid, same gear and fights (100,000, one seed): +1.1% (under the 2% bar: the hand draft stays the pick).", "Where the simulator measured no difference, the points follow combat-daggers-raid: Improved Sinister Strike → Lightning Reflexes (2 points), Endurance → Deflection (the same DPS as the search winner 16/33/2 on one seed, 30,000 fights).", "Search result (full raid): 16/33/2 at 720.3 ± 0.10 DPS over 100,000 fights; runner-up 16/33/2 (+0.18%; the winner takes Cold Blood 1; the runner-up Improved Poisons 1); 3,601 builds simulated; certificate: 1 confirmed move first, then none of its 295 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 16/33/2 at 672.3 DPS in a full raid (the same talents).", "Alone on the training dummy (only your own buffs) the search's best is 16/33/2 at 424.7 DPS."],
       "open_questions": ["A machine-searched Combat build: check it against the community's Combat builds at launch."],
       "sources": ["https://github.com/ElliotWood/Forever"]
+    },
+    {
+      "id": "opt-combat-swords-raid-raid-dps",
+      "name": "Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-swords-raid` and profile `raid-dps`: score +68.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Assassination": [
+          ["Malice", 5],
+          ["Improved Slice and Dice", 3],
+          ["Ruthlessness", 3],
+          ["Murder", 2],
+          ["Relentless Strikes", 1],
+          ["Lethality", 1],
+          ["Improved Poisons", 5]
+        ],
+        "Combat": [
+          ["Improved Sinister Strike", 2],
+          ["Improved Eviscerate", 3],
+          ["Lightning Reflexes", 5],
+          ["Precision", 3],
+          ["Deflection", 2],
+          ["Dual Wield Specialization", 5],
+          ["Hack and Slash", 4],
+          ["Blade Flurry", 1],
+          ["Weapon Expertise", 2],
+          ["Aggression", 3],
+          ["Adrenaline Rush", 1]
+        ],
+        "Subtlety": []
+      },
+      "core": [
+        {"talent": "Relentless Strikes", "why": "Removing it costs 12.2 points of score in this model."},
+        {"talent": "Improved Sinister Strike", "why": "Removing it costs 9.5 points of score in this model."},
+        {"talent": "Improved Slice and Dice", "why": "Removing it costs 9.0 points of score in this model."},
+        {"talent": "Ruthlessness", "why": "Removing it costs 7.7 points of score in this model."},
+        {"talent": "Malice", "why": "Removing it costs 7.6 points of score in this model."},
+        {"talent": "Adrenaline Rush", "why": "Removing it costs 7.1 points of score in this model."},
+        {"talent": "Dual Wield Specialization", "why": "Removing it costs 7.0 points of score in this model."},
+        {"talent": "Improved Poisons", "why": "Removing it costs 6.5 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: rogue/research/talents/forever/optimizer/combat-swords-raid-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/rogue"]
+    },
+    {
+      "id": "opt-combat-swords-raid-parse",
+      "name": "Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (parse)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-swords-raid` and profile `parse`: score +68.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Assassination": [
+          ["Malice", 5],
+          ["Improved Slice and Dice", 3],
+          ["Ruthlessness", 3],
+          ["Murder", 2],
+          ["Relentless Strikes", 1],
+          ["Lethality", 1],
+          ["Improved Poisons", 5]
+        ],
+        "Combat": [
+          ["Improved Sinister Strike", 2],
+          ["Improved Eviscerate", 3],
+          ["Lightning Reflexes", 5],
+          ["Precision", 3],
+          ["Deflection", 2],
+          ["Dual Wield Specialization", 5],
+          ["Hack and Slash", 4],
+          ["Blade Flurry", 1],
+          ["Weapon Expertise", 2],
+          ["Aggression", 3],
+          ["Adrenaline Rush", 1]
+        ],
+        "Subtlety": []
+      },
+      "core": [
+        {"talent": "Relentless Strikes", "why": "Removing it costs 12.2 points of score in this model."},
+        {"talent": "Improved Sinister Strike", "why": "Removing it costs 9.5 points of score in this model."},
+        {"talent": "Improved Slice and Dice", "why": "Removing it costs 9.0 points of score in this model."},
+        {"talent": "Ruthlessness", "why": "Removing it costs 7.7 points of score in this model."},
+        {"talent": "Malice", "why": "Removing it costs 7.4 points of score in this model."},
+        {"talent": "Adrenaline Rush", "why": "Removing it costs 7.1 points of score in this model."},
+        {"talent": "Dual Wield Specialization", "why": "Removing it costs 7.0 points of score in this model."},
+        {"talent": "Improved Poisons", "why": "Removing it costs 6.3 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: rogue/research/talents/forever/optimizer/combat-swords-raid-parse.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/rogue"]
+    },
+    {
+      "id": "opt-combat-daggers-raid-raid-dps",
+      "name": "Optimizer — Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-daggers-raid` and profile `raid-dps`: score +85.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Assassination": [
+          ["Malice", 5],
+          ["Improved Slice and Dice", 3],
+          ["Ruthlessness", 3],
+          ["Murder", 2],
+          ["Relentless Strikes", 1],
+          ["Improved Expose Armor", 2],
+          ["Lethality", 1]
+        ],
+        "Combat": [
+          ["Improved Eviscerate", 3],
+          ["Lightning Reflexes", 5],
+          ["Puncturing Wounds", 3],
+          ["Precision", 3],
+          ["Deflection", 1],
+          ["Dual Wield Specialization", 5],
+          ["Hack and Slash", 5],
+          ["Blade Flurry", 1],
+          ["Aggression", 3],
+          ["Weapon Expertise", 2],
+          ["Adrenaline Rush", 1]
+        ],
+        "Subtlety": [
+          ["Opportunity", 2]
+        ]
+      },
+      "core": [
+        {"talent": "Puncturing Wounds", "why": "Removing it costs 24.9 points of score in this model."},
+        {"talent": "Relentless Strikes", "why": "Removing it costs 12.7 points of score in this model."},
+        {"talent": "Improved Expose Armor", "why": "Removing it costs 9.4 points of score in this model."},
+        {"talent": "Improved Slice and Dice", "why": "Removing it costs 8.9 points of score in this model."},
+        {"talent": "Adrenaline Rush", "why": "Removing it costs 8.3 points of score in this model."},
+        {"talent": "Malice", "why": "Removing it costs 7.7 points of score in this model."},
+        {"talent": "Hack and Slash", "why": "Removing it costs 7.3 points of score in this model."},
+        {"talent": "Ruthlessness", "why": "Removing it costs 6.9 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: rogue/research/talents/forever/optimizer/combat-daggers-raid-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/rogue"]
+    },
+    {
+      "id": "opt-combat-daggers-raid-parse",
+      "name": "Optimizer — Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (parse)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-daggers-raid` and profile `parse`: score +84.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Assassination": [
+          ["Malice", 5],
+          ["Improved Slice and Dice", 3],
+          ["Ruthlessness", 3],
+          ["Murder", 2],
+          ["Relentless Strikes", 1],
+          ["Improved Expose Armor", 2],
+          ["Lethality", 1]
+        ],
+        "Combat": [
+          ["Improved Eviscerate", 3],
+          ["Lightning Reflexes", 5],
+          ["Puncturing Wounds", 3],
+          ["Precision", 3],
+          ["Deflection", 1],
+          ["Dual Wield Specialization", 5],
+          ["Hack and Slash", 5],
+          ["Blade Flurry", 1],
+          ["Aggression", 3],
+          ["Weapon Expertise", 2],
+          ["Adrenaline Rush", 1]
+        ],
+        "Subtlety": [
+          ["Opportunity", 2]
+        ]
+      },
+      "core": [
+        {"talent": "Puncturing Wounds", "why": "Removing it costs 24.5 points of score in this model."},
+        {"talent": "Relentless Strikes", "why": "Removing it costs 12.7 points of score in this model."},
+        {"talent": "Improved Expose Armor", "why": "Removing it costs 9.3 points of score in this model."},
+        {"talent": "Improved Slice and Dice", "why": "Removing it costs 8.9 points of score in this model."},
+        {"talent": "Adrenaline Rush", "why": "Removing it costs 8.3 points of score in this model."},
+        {"talent": "Malice", "why": "Removing it costs 7.6 points of score in this model."},
+        {"talent": "Hack and Slash", "why": "Removing it costs 7.2 points of score in this model."},
+        {"talent": "Ruthlessness", "why": "Removing it costs 6.9 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: rogue/research/talents/forever/optimizer/combat-daggers-raid-parse.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/rogue"]
     }
   ]
 }

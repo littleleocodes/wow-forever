@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-daggers-raid` and profile `raid-dps`: score +85.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-daggers-raid` and profile `raid-dps`: score +85.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -52,30 +52,30 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
 ## Core talents (priority order)
 
 1. **Puncturing Wounds** — Removing it costs 24.9 points of score in this model.
-2. **Relentless Strikes** — Removing it costs 12.8 points of score in this model.
+2. **Relentless Strikes** — Removing it costs 12.7 points of score in this model.
 3. **Improved Expose Armor** — Removing it costs 9.4 points of score in this model.
 4. **Improved Slice and Dice** — Removing it costs 8.9 points of score in this model.
 5. **Adrenaline Rush** — Removing it costs 8.3 points of score in this model.
-6. **Malice** — Removing it costs 7.8 points of score in this model.
-7. **Hack and Slash** — Removing it costs 7.4 points of score in this model.
-8. **Ruthlessness** — Removing it costs 7.0 points of score in this model.
+6. **Malice** — Removing it costs 7.7 points of score in this model.
+7. **Hack and Slash** — Removing it costs 7.3 points of score in this model.
+8. **Ruthlessness** — Removing it costs 6.9 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
-**1 of 10** for `combat-daggers-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 10** for `combat-daggers-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md)** | ours: optimizer | 17/32/2 | 419 | +0.0% | 696 | -3.3% | 0 s |
-| 2 | [`combat-ml-raid`](combat-ml-raid.md) | ours: hand draft | 16/33/2 | 402 | -4.0% | 720 | +0.0% | 0 s |
-| 3 | [`combat-daggers-raid`](combat-daggers-raid.md) | ours: hand draft | 16/33/2 | 398 | -4.9% | 712 | -1.1% | 0 s |
-| 4 | *Combat Dual-Wield 15/33/3* | community simulator | - | 394 | -6.0% | 702 | -2.5% | 0 s |
-| 5 | *Backstab* | community simulator | - | 371 | -11.5% | 672 | -6.6% | 0 s |
-| 6 | *Mutilate* | community simulator | - | 355 | -15.1% | 642 | -10.8% | 0 s |
-| 7 | *Improved Expose Armor (SS)* | community simulator | - | 349 | -16.6% | 620 | -13.8% | 0 s |
-| 8 | *Assassination Mutilate 31/20/0* | community simulator | - | 342 | -18.3% | 625 | -13.2% | 0 s |
-| 9 | *Sinister Strike* | community simulator | - | 334 | -20.3% | 629 | -12.6% | 0 s |
-| 10 | *Subtlety Hemo 15/0/36* | community simulator | - | 258 | -38.4% | 500 | -30.5% | 0 s |
+| 1 | **[`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md)** | ours: optimizer | 17/32/2 | 419 | +0.0% | 747 | -3.3% | 0 s |
+| 2 | [`combat-ml-raid`](combat-ml-raid.md) | ours: hand draft | 16/33/2 | 402 | -4.0% | 772 | +0.0% | 0 s |
+| 3 | [`combat-daggers-raid`](combat-daggers-raid.md) | ours: hand draft | 16/33/2 | 398 | -4.9% | 765 | -1.0% | 0 s |
+| 4 | *Combat Dual-Wield 15/33/3* | community simulator | - | 394 | -6.0% | 754 | -2.3% | 0 s |
+| 5 | *Backstab* | community simulator | - | 371 | -11.5% | 721 | -6.6% | 0 s |
+| 6 | *Mutilate* | community simulator | - | 363 | -13.3% | 700 | -9.3% | 0 s |
+| 7 | *Improved Expose Armor (SS)* | community simulator | - | 350 | -16.4% | 668 | -13.4% | 0 s |
+| 8 | *Assassination Mutilate 31/20/0* | community simulator | - | 349 | -16.5% | 681 | -11.8% | 0 s |
+| 9 | *Sinister Strike* | community simulator | - | 334 | -20.1% | 680 | -11.9% | 0 s |
+| 10 | *Subtlety Hemo 15/0/36* | community simulator | - | 258 | -38.3% | 539 | -30.2% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -94,7 +94,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
 | # | Priority (the first line whose condition holds is cast) | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) casts/min |
 |---|---|---|
 | 1 | if time left on Expose Armor < 12 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 2.1 |
-| 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.5 |
+| 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.4 |
 | 3 | if energy < 59 and timeToNextEnergyTick < 1: cast Adrenaline Rush | 0.3 |
 | 4 | if Slice and Dice is up: use every other cooldown when ready | as ready |
 | 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.9 |

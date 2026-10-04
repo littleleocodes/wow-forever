@@ -7,11 +7,11 @@
     5
    ],
    [
-    "Nature's Reach",
+    "Nature's Majesty",
     2
    ],
    [
-    "Nature's Majesty",
+    "Nature's Reach",
     2
    ]
   ],
@@ -22,14 +22,18 @@
    ],
    [
     "Heart of the Wild",
-    3
+    5
+   ],
+   [
+    "Feral Swiftness",
+    2
    ],
    [
     "Thick Hide",
     3
    ],
    [
-    "Feral Swiftness",
+    "Savage Fury",
     2
    ],
    [
@@ -37,15 +41,7 @@
     2
    ],
    [
-    "Savage Fury",
-    2
-   ],
-   [
     "Predatory Strikes",
-    3
-   ],
-   [
-    "King of the Jungle",
     3
    ],
    [
@@ -58,7 +54,7 @@
    ],
    [
     "Rend and Tear",
-    4
+    5
    ],
    [
     "Berserk",
@@ -196,5 +192,8 @@
    "points": 1
   }
  ],
- "note": "Optimizer build saved by rebuild.py on 2026-09-28 (calibration round 5)"
+ "note": "Optimizer build saved by rebuild.py on 2026-09-28 (calibration round 5)",
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

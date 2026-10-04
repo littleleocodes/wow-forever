@@ -100,12 +100,12 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Retribution | Improved Seal of the Crusader | 3 | **REMOVED** | removed from Classic |
 | Retribution | Deflection | 5 | moved | tier 1, max 5 — was Retribution row 2, col 3 |
 | Retribution | Conviction | 5 | changed | tier 2, max 5 — tooltip changed; was Retribution row 3, col 2 |
-| Retribution | Seal of Command | 1 | changed | tier 3, max 1 — tooltip changed; tooltip changed in build 1.60.1.70009 (ranks 1) |
+| Retribution | Seal of Command | 1 | changed | tier 3, max 1 — tooltip changed; tooltip changed in build 1.60.1.70170 (ranks 1) |
 | Retribution | Pursuit of Justice | 2 | changed | tier 3, max 2 — tooltip changed |
 | Retribution | Improved Retribution Aura | 2 | **REMOVED** | removed from Classic |
-| Retribution | Two-Handed Weapon Specialization | 3 | changed | tier 5, max 3 — tooltip changed; tooltip changed in build 1.60.1.70009 (ranks 1, 2, 3) |
+| Retribution | Two-Handed Weapon Specialization | 3 | changed | tier 5, max 3 — tooltip changed; tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3) |
 | Retribution | Sanctity Aura | 1 | **REMOVED** | removed from Classic |
-| Retribution | Vengeance | 5 | changed | tier 5, max 3 — max rank 5 → 3; tooltip changed; was Retribution row 6, col 2; tooltip changed in build 1.60.1.70009 (ranks 1, 2, 3) |
+| Retribution | Vengeance | 5 | changed | tier 5, max 3 — max rank 5 → 3; tooltip changed; was Retribution row 6, col 2; tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3) |
 | Retribution | Repentance | 1 | moved | tier 5, max 1 — was Retribution row 7, col 2 |
 
 **12 point(s) of this build no longer exist in Forever** and must be re-spent; see `../forever/README.md` for how they were re-spent.

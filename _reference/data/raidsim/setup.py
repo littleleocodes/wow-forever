@@ -31,7 +31,7 @@ PROTOC_VERSION = "36.2"
 REPO_URL = "https://github.com/ElliotWood/Forever"
 SPARSE = ["sim", "proto", "cmd", "ui", "assets/database", "tools"]
 GAMES = {"forever": {"url": "https://github.com/ElliotWood/Forever", "dir": "forever-repo", "module": "github.com/wowsims/forever", "bench": "foreverbench",
-                     "commit": "40be98ee1e77a0984f575c39ad1b90778f3d6c18"},   # 40be98e, the commit of every Forever raid number (2026-09-28)
+                     "commit": "b0f0df368b1e7821376f10d11abc2e00f7c24aeb"},   # b0f0df3: client build 1.60.1.70205 with hotfixes to 2026-10-03 (was 40be98e, 2026-09-28)
          "classic": {"url": "https://github.com/wowsims/classic", "dir": "classic-repo", "module": "github.com/wowsims/classic", "bench": "classicbench",
                      "commit": "7779ebbf79dc7f1341e6ab939b28a3402c9a730a"}}
 
@@ -158,7 +158,11 @@ def main():
     elif a.update:
         patched = patch_files(a.game)
         if patched:   # back to the fork's version so the update stays clean; the patches go on again below
-            sh(["git", "checkout", "--", *patched], repo)
+            tracked = [f for f in patched if sh(["git", "ls-files", "--error-unmatch", f], repo, check=False).returncode == 0]
+            if tracked:
+                sh(["git", "checkout", "--", *tracked], repo)
+            for f in set(patched) - set(tracked):   # files the patches add (the fork has none of its own there): removed
+                (repo / f).unlink(missing_ok=True)
         sh(["git", "fetch", "--depth", "1", "origin", "HEAD"], repo)
         sh(["git", "-c", "advice.detachedHead=false", "checkout", "FETCH_HEAD"], repo)
         new = sh(["git", "rev-parse", "HEAD"], repo).stdout.strip()

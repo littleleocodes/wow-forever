@@ -50,14 +50,14 @@ The Demonology build the machine-learning talent search found in a full raid (ev
 
 ## Rank among our builds and the community simulator's
 
-**2 of 4** for `demonology-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 4** for `demonology-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`demonology-pact-raid`](demonology-pact-raid.md) | ours: hand draft | 2/31/18 | 687 | +0.0% | 833 | -0.6% | 1 s |
-| 2 | **[`demonology-ml-raid`](demonology-ml-raid.md)** | ours: hand draft | 2/31/18 | 686 | -0.1% | 838 | +0.0% | 1 s |
-| 3 | *Demonic Pact 2/31/18* | community simulator | - | 664 | -3.4% | 802 | -4.2% | 1 s |
-| 4 | *Demonic Pact* | community simulator | - | 659 | -4.2% | 790 | -5.7% | 1 s |
+| 1 | [`demonology-pact-raid`](demonology-pact-raid.md) | ours: hand draft | 2/31/18 | 646 | +0.0% | 786 | -0.4% | 1 s |
+| 2 | **[`demonology-ml-raid`](demonology-ml-raid.md)** | ours: hand draft | 2/31/18 | 646 | -0.0% | 789 | +0.0% | 1 s |
+| 3 | *Demonic Pact 2/31/18* | community simulator | - | 625 | -3.3% | 756 | -4.1% | 1 s |
+| 4 | *Demonic Pact* | community simulator | - | 619 | -4.3% | 746 | -5.5% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -87,20 +87,20 @@ The Demonology build the machine-learning talent search found in a full raid (ev
 | 4 | use every other cooldown when ready | as ready |
 | 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
 | 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 |
-| 7 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption | 3.5 |
-| 8 | if mana % < 15% and time left in the fight ≥ 6s: cast Life Tap | 7.2 |
+| 7 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption | 3.4 |
+| 8 | if mana % < 15% and time left in the fight ≥ 6s: cast Life Tap | 7.1 |
 | 9 | if time left on Immolate ≤ cast time of Immolate: cast Immolate | 3.9 |
-| 10 | cast Shadow Bolt | 12.9 |
+| 10 | cast Shadow Bolt | 13.0 |
 
 Damage by ability:
 
 | Ability | [`demonology-ml-raid`](demonology-ml-raid.md) |
 |---|---|
 | Shadow Bolt | 48% |
-| Bane of Agony | 17% |
+| Bane of Agony | 16% |
 | Corruption | 16% |
 | Immolate | 12% |
-| Pet: Auto Attack | 5% |
+| Pet: Auto Attack | 6% |
 | Pet: Lash of Pain | 1% |
 | Searing Pain | 1% |
 | Pet: Demonic Brand | 0% |

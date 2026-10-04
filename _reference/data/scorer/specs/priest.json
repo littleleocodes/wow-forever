@@ -85,11 +85,11 @@
       "abs_dps_factor": 1.0
     },
     "shadow-dps": {
-      "note": "Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20. Priests drink a lot: downtime 35%. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Shadow Word: Pain rank 8 762 over 18s (Classic 852, 20% per tick), Mind Blast rank 9 477-504, Mind Flay rank 6 390 over 3s (Classic 426), Devouring Plague cooldown 1 min, Vampiric Embrace 1 min cooldown, Smite rank 8 166-187 (Classic 384-429): the Shadow shares stand. Fight lab calibration (2026-09-28, beta client 1.60.1.70009, build opt-shadow-dps-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Holy Nova 33%, Shadow Word: Pain 31%, Mind Flay 17%, Mind Blast 9%, Wand 8%, Shadow Word: Death 2%, Devouring Plague 0%) and the leveling time split is fight 37% / drink 0% / eat 0% / other 0% / death 62% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Raid sim shares (2026-10-02, opt-shadow-dps-raid-dps in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): mind_flay 45%, swp 21%, mind_blast 20%, swd 10%, devouring_plague 5%; 0% of the damage matched no source.",
+      "note": "Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20. Priests drink a lot: downtime 35%. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Shadow Word: Pain rank 8 762 over 18s (Classic 852, 20% per tick), Mind Blast rank 9 477-504, Mind Flay rank 6 390 over 3s (Classic 426), Devouring Plague cooldown 1 min, Vampiric Embrace 1 min cooldown, Smite rank 8 166-187 (Classic 384-429): the Shadow shares stand. Fight lab calibration (2026-09-28, beta client 1.60.1.70009, build opt-shadow-dps-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Holy Nova 33%, Shadow Word: Pain 31%, Mind Flay 17%, Mind Blast 9%, Wand 8%, Shadow Word: Death 2%, Devouring Plague 0%) and the leveling time split is fight 37% / drink 0% / eat 0% / other 0% / death 62% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Raid sim shares (2026-10-03, opt-shadow-dps-raid-dps in the ElliotWood/Forever simulator b0f0df3): mind_flay 47%, swp 21%, mind_blast 20%, swd 10%, devouring_plague 2%; 0% of the damage matched no source.",
       "sources": [
         {
           "id": "swp",
-          "share": 0.208,
+          "share": 0.209,
           "tags": ["type:spell", "school:shadow", "dot", "instant", "ability:Shadow Word: Pain"],
           "can_crit": false,
           "game_overrides": {
@@ -104,7 +104,7 @@
         },
         {
           "id": "mind_blast",
-          "share": 0.1952,
+          "share": 0.2034,
           "tags": ["type:spell", "school:shadow", "ability:Mind Blast"],
           "cast": 1.5,
           "min_cast": 1.5,
@@ -118,7 +118,7 @@
         },
         {
           "id": "mind_flay",
-          "share": 0.452,
+          "share": 0.4681,
           "min_level": 20,
           "tags": ["type:spell", "school:shadow", "ability:Mind Flay", "channel"],
           "can_crit": false,
@@ -156,7 +156,7 @@
         },
         {
           "id": "swd",
-          "share": 0.0986,
+          "share": 0.1026,
           "min_level": 32,
           "tags": ["type:spell", "school:shadow", "instant", "ability:Shadow Word: Death"],
           "cooldown": 15,
@@ -168,7 +168,7 @@
         },
         {
           "id": "devouring_plague",
-          "share": 0.0461,
+          "share": 0.0169,
           "min_level": 20,
           "tags": ["type:spell", "school:shadow", "dot", "instant", "ability:Devouring Plague"],
           "cooldown": 60,
@@ -217,17 +217,7 @@
         "leveling-aoe": {"fight": 0.368, "drink": 0.003, "eat": 0.004, "other": 0.0, "death": 0.625}
       },
       "mana_weight": {"raid-dps": 0.4},
-      "fight_coupling": {"leveling-aoe": 1.0},
-      "mana_limit": {
-        "forever": {
-          "profiles": ["raid-dps", "raid-dps-extwc"],
-          "loss": 0.53,
-          "cap": 0.9,
-          "rms": 0.0078,
-          "points": 38,
-          "note": "Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, training dummy): the builds lose 0-7% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
-        }
-      }
+      "fight_coupling": {"leveling-aoe": 1.0}
     }
   }
 }

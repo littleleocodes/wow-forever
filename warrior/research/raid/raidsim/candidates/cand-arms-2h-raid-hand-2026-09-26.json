@@ -31,12 +31,12 @@
     2
    ],
    [
-    "Sweeping Strikes",
-    1
-   ],
-   [
     "Bloodthrill",
     5
+   ],
+   [
+    "Sweeping Strikes",
+    1
    ],
    [
     "Weaponmaster",
@@ -53,6 +53,10 @@
   ],
   "Fury": [
    [
+    "Booming Voice",
+    4
+   ],
+   [
     "Cruelty",
     5
    ],
@@ -61,15 +65,7 @@
     5
    ],
    [
-    "Boundless Rage",
-    3
-   ],
-   [
     "Piercing Howl",
-    1
-   ],
-   [
-    "Improved Cleave",
     1
    ],
    [
@@ -79,5 +75,8 @@
   ],
   "Protection": []
  },
- "note": "The hand draft arms-2h-raid as it was before opt-arms-2h-raid-raid-dps was adopted on 2026-09-26"
+ "note": "The hand draft arms-2h-raid as it was before opt-arms-2h-raid-raid-dps was adopted on 2026-09-26",
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

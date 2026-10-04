@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-destro-raid` and profile `raid-dps`: score +97.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-destro-raid` and profile `raid-dps`: score +96.9% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -48,30 +48,30 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-des
 
 ## Core talents (priority order)
 
-1. **Demonic Sacrifice** — Removing it costs 27.1 points of score in this model.
-2. **Shadow and Flame** — Removing it costs 20.6 points of score in this model.
-3. **Bane** — Removing it costs 20.0 points of score in this model.
-4. **Shadowburn** — Removing it costs 14.5 points of score in this model.
-5. **Conflagrate** — Removing it costs 12.8 points of score in this model.
+1. **Demonic Sacrifice** — Removing it costs 27.2 points of score in this model.
+2. **Shadow and Flame** — Removing it costs 20.5 points of score in this model.
+3. **Bane** — Removing it costs 20.1 points of score in this model.
+4. **Shadowburn** — Removing it costs 13.4 points of score in this model.
+5. **Conflagrate** — Removing it costs 12.7 points of score in this model.
 6. **Suppression** — Removing it costs 11.1 points of score in this model.
 7. **Agonizing Flames** — Removing it costs 11.0 points of score in this model.
-8. **Improved Shadow Bolt** — Removing it costs 8.6 points of score in this model.
+8. **Improved Shadow Bolt** — Removing it costs 8.4 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
-**2 of 9** for `fire-destro-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 9** for `fire-destro-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`destruction-fire-raid`](destruction-fire-raid.md) | ours: hand draft | 22/11/18 | 612 | +0.0% | 725 | +0.0% | 3 s |
-| 2 | **[`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md)** | ours: optimizer | 10/11/30 | 611 | -0.1% | 717 | -1.0% | 2 s |
-| 3 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 586 | -4.3% | 693 | -4.4% | 3 s |
-| 4 | *DS/Ruin* | community simulator | - | 577 | -5.7% | 686 | -5.4% | 3 s |
-| 5 | *Shadow and Flame 13/11/27* | community simulator | - | 538 | -12.1% | 630 | -13.1% | 2 s |
-| 6 | *Deep Affliction 35/0/16* | community simulator | - | 515 | -15.9% | 602 | -16.9% | 3 s |
-| 7 | *Affliction* | community simulator | - | 507 | -17.2% | 594 | -18.0% | 3 s |
-| 8 | *Demonic Pact 2/31/18* | community simulator | - | 505 | -17.5% | 602 | -17.0% | 3 s |
-| 9 | *Demonic Pact* | community simulator | - | 501 | -18.2% | 593 | -18.2% | 3 s |
+| 1 | [`destruction-fire-raid`](destruction-fire-raid.md) | ours: hand draft | 22/11/18 | 569 | +0.0% | 674 | +0.0% | 3 s |
+| 2 | **[`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md)** | ours: optimizer | 10/11/30 | 568 | -0.1% | 669 | -0.8% | 3 s |
+| 3 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 544 | -4.4% | 645 | -4.3% | 3 s |
+| 4 | *DS/Ruin* | community simulator | - | 536 | -5.9% | 638 | -5.4% | 3 s |
+| 5 | *Shadow and Flame 13/11/27* | community simulator | - | 501 | -11.9% | 587 | -12.9% | 2 s |
+| 6 | *Deep Affliction 35/0/16* | community simulator | - | 478 | -16.1% | 560 | -17.0% | 3 s |
+| 7 | *Demonic Pact 2/31/18* | community simulator | - | 470 | -17.3% | 561 | -16.8% | 3 s |
+| 8 | *Affliction* | community simulator | - | 470 | -17.4% | 553 | -18.0% | 3 s |
+| 9 | *Demonic Pact* | community simulator | - | 465 | -18.3% | 552 | -18.1% | 3 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -112,7 +112,7 @@ Damage by ability:
 |---|---|
 | Shadow Bolt | 43% |
 | Corruption | 17% |
-| Bane of Agony | 17% |
+| Bane of Agony | 16% |
 | Immolate | 12% |
 | Conflagrate | 10% |
 | Shadowburn | 1% |

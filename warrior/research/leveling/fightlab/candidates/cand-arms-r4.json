@@ -3,12 +3,12 @@
  "allocation": {
   "Arms": [
    [
-    "Improved Rend",
-    3
-   ],
-   [
     "Deflection",
     5
+   ],
+   [
+    "Improved Rend",
+    3
    ],
    [
     "Improved Charge",
@@ -35,6 +35,10 @@
     2
    ],
    [
+    "Bloodthrill",
+    3
+   ],
+   [
     "Sweeping Strikes",
     1
    ],
@@ -43,15 +47,15 @@
     5
    ],
    [
-    "Bloodthrill",
-    3
-   ],
-   [
     "Mortal Strike",
     1
    ]
   ],
   "Fury": [
+   [
+    "Booming Voice",
+    1
+   ],
    [
     "Cruelty",
     5
@@ -67,10 +71,6 @@
    [
     "Blood Craze",
     3
-   ],
-   [
-    "Boundless Rage",
-    1
    ],
    [
     "Enrage",
@@ -219,5 +219,8 @@
    "points": 5
   }
  ],
- "note": "Optimizer build saved by rebuild.py on 2026-09-26 (calibration round 4)"
+ "note": "Optimizer build saved by rebuild.py on 2026-09-26 (calibration round 4)",
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

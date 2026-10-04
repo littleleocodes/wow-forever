@@ -18,7 +18,7 @@
  ],
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
-  "commit": "40be98e",
+  "commit": "b0f0df3",
   "spec_folder": "priest/dps",
   "gear": "_reference/data/raidsim/gear_sets/forever/priest-dps-p0.p1opt.gear.json",
   "apl": "_reference/data/raidsim/apls/priest/shadow-dps.apl.json",
@@ -45,9 +45,9 @@
  "talents": [
   {
    "talent": "Mind Flay",
-   "sim": 0.7761384027437542,
-   "ev_before": 0.9136312680932654,
-   "ev_after": 0.9136312680932654,
+   "sim": 0.797192231988971,
+   "ev_before": 0.9726979098117325,
+   "ev_after": 0.7219941955090418,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -66,11 +66,11 @@
   },
   {
    "talent": "Shadowform",
-   "sim": 0.7643020817457672,
-   "ev_before": 0.69234885133567,
-   "ev_after": 0.69234885133567,
-   "scale": 1.0,
-   "how": "kept",
+   "sim": 0.5792322495118631,
+   "ev_before": 0.7068956203852276,
+   "ev_after": 0.584943435553813,
+   "scale": 3.556634664858316,
+   "how": "capped",
    "builds": [
     "opt-shadow-dps-raid-dps",
     "cand-shadow-dps-preset-shadow",
@@ -87,9 +87,9 @@
   },
   {
    "talent": "Darkness",
-   "sim": 0.10000000000000137,
-   "ev_before": 0.09999354759526562,
-   "ev_after": 0.09999354759526562,
+   "sim": 0.09999999999999985,
+   "ev_before": 0.09999247145902293,
+   "ev_after": 0.08506320023782095,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -108,9 +108,9 @@
   },
   {
    "talent": "Shadow Weaving",
-   "sim": 0.0942551332848538,
-   "ev_before": 0.09999354759526562,
-   "ev_after": 0.09999354759526562,
+   "sim": 0.09426379009456323,
+   "ev_before": 0.09999247145902293,
+   "ev_after": 0.08506320023782095,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -129,9 +129,9 @@
   },
   {
    "talent": "Improved Mind Flay",
-   "sim": 0.08500209670045358,
-   "ev_before": 0.09661063189114052,
-   "ev_after": 0.09661063189114052,
+   "sim": 0.08587936839150885,
+   "ev_before": 0.10009285576641905,
+   "ev_after": 0.0838558787891663,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -144,56 +144,15 @@
     "cand-shadow-dps-r5",
     "cand-shadow-dps-r6",
     "cand-shadow-dps-r7",
-    "cand-shadow-dps-r8",
-    "cand-shadow-dps-r9"
-   ]
-  },
-  {
-   "talent": "Meditation",
-   "sim": 0.06451425040296803,
-   "ev_before": 0.06988495787050424,
-   "ev_after": 0.06988495787050424,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "opt-shadow-dps-raid-dps",
-    "cand-shadow-dps-preset-shadow",
-    "cand-shadow-dps-r1",
-    "cand-shadow-dps-r2",
-    "cand-shadow-dps-r3",
-    "cand-shadow-dps-r4",
-    "cand-shadow-dps-r5",
-    "cand-shadow-dps-r6",
     "cand-shadow-dps-r8",
     "cand-shadow-dps-r9"
    ]
   },
   {
    "talent": "Shadow Focus",
-   "sim": 0.03706863618167136,
-   "ev_before": 0.03706798300312489,
-   "ev_after": 0.03706798300312489,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "opt-shadow-dps-raid-dps",
-    "cand-shadow-dps-preset-shadow",
-    "cand-shadow-dps-r1",
-    "cand-shadow-dps-r2",
-    "cand-shadow-dps-r3",
-    "cand-shadow-dps-r4",
-    "cand-shadow-dps-r5",
-    "cand-shadow-dps-r6",
-    "cand-shadow-dps-r7",
-    "cand-shadow-dps-r8",
-    "cand-shadow-dps-r9"
-   ]
-  },
-  {
-   "talent": "Improved Shadow Word: Pain",
-   "sim": 0.0225068912856667,
-   "ev_before": 0.026101166741957994,
-   "ev_after": 0.026101166741957994,
+   "sim": 0.03494195066538284,
+   "ev_before": 0.03706760689539648,
+   "ev_after": 0.03180490082063402,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -212,11 +171,11 @@
   },
   {
    "talent": "Improved Mind Blast",
-   "sim": 0.01950379980104304,
-   "ev_before": 0.013294969077847654,
-   "ev_after": 0.013294969077847654,
-   "scale": 1.0,
-   "how": "kept",
+   "sim": 0.026809976518915642,
+   "ev_before": 0.013821212922392762,
+   "ev_after": 0.027112158700315143,
+   "scale": 2.0879235904788596,
+   "how": "fitted",
    "builds": [
     "opt-shadow-dps-raid-dps",
     "cand-shadow-dps-preset-shadow",
@@ -230,10 +189,50 @@
    ]
   },
   {
+   "talent": "Improved Shadow Word: Pain",
+   "sim": 0.017914873027616407,
+   "ev_before": 0.02615414933337828,
+   "ev_after": 0.021854003428804964,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "opt-shadow-dps-raid-dps",
+    "cand-shadow-dps-preset-shadow",
+    "cand-shadow-dps-r1",
+    "cand-shadow-dps-r2",
+    "cand-shadow-dps-r3",
+    "cand-shadow-dps-r4",
+    "cand-shadow-dps-r5",
+    "cand-shadow-dps-r6",
+    "cand-shadow-dps-r7",
+    "cand-shadow-dps-r8",
+    "cand-shadow-dps-r9"
+   ]
+  },
+  {
+   "talent": "Inner Focus",
+   "sim": 0.0112054478310055,
+   "ev_before": 0.010956755824516974,
+   "ev_after": 0.008640153702002489,
+   "scale": 1.0,
+   "how": "apl",
+   "builds": [
+    "opt-shadow-dps-raid-dps",
+    "cand-shadow-dps-preset-shadow",
+    "cand-shadow-dps-r1",
+    "cand-shadow-dps-r2",
+    "cand-shadow-dps-r5",
+    "cand-shadow-dps-r6",
+    "cand-shadow-dps-r7",
+    "cand-shadow-dps-r8",
+    "cand-shadow-dps-r9"
+   ]
+  },
+  {
    "talent": "Twin Disciplines",
-   "sim": 0.01141815760416659,
-   "ev_before": 0.01663651821558076,
-   "ev_after": 0.01663651821558076,
+   "sim": 0.010821444915499393,
+   "ev_before": 0.015522771781558324,
+   "ev_after": 0.013168213103864002,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -252,9 +251,9 @@
   },
   {
    "talent": "Mental Strength",
-   "sim": 0.010603741081330132,
-   "ev_before": 0.005663684765982998,
-   "ev_after": 0.005663684765982998,
+   "sim": 0.004000694270282523,
+   "ev_before": 0.005568743914328559,
+   "ev_after": 0.0037732475927547307,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -272,42 +271,46 @@
    ]
   },
   {
-   "talent": "Mental Agility",
-   "sim": 0.0029159842593258355,
-   "ev_before": 0.0014399863950656895,
-   "ev_after": 0.0014399863950656895,
+   "talent": "Early Demise",
+   "sim": 0.0028362736915566442,
+   "ev_before": 0.002489941944608881,
+   "ev_after": 0.0021512638323150477,
    "scale": 1.0,
    "how": "noise",
    "builds": [
-    "cand-shadow-dps-preset-shadow",
+    "opt-shadow-dps-raid-dps",
     "cand-shadow-dps-r1",
     "cand-shadow-dps-r2",
-    "cand-shadow-dps-r5",
-    "cand-shadow-dps-r6",
     "cand-shadow-dps-r7",
+    "cand-shadow-dps-r8",
     "cand-shadow-dps-r9"
    ]
   },
   {
-   "talent": "Early Demise",
-   "sim": 0.002761377281961256,
-   "ev_before": 0.0024900683690941053,
-   "ev_after": 0.0024900683690941053,
-   "scale": 1.0,
-   "how": "noise",
+   "talent": "Meditation",
+   "sim": 0.0002524001564243009,
+   "ev_before": 0.070109671365613,
+   "ev_after": 0.0002524029195596655,
+   "scale": 0.0176275004632771,
+   "how": "fitted",
    "builds": [
+    "opt-shadow-dps-raid-dps",
+    "cand-shadow-dps-preset-shadow",
     "cand-shadow-dps-r1",
     "cand-shadow-dps-r2",
-    "cand-shadow-dps-r7",
+    "cand-shadow-dps-r3",
+    "cand-shadow-dps-r4",
+    "cand-shadow-dps-r5",
+    "cand-shadow-dps-r6",
     "cand-shadow-dps-r8",
     "cand-shadow-dps-r9"
    ]
   },
   {
    "talent": "Devouring Contagion",
-   "sim": 0.000553276655071553,
-   "ev_before": 0.0015181736287068948,
-   "ev_after": 0.0015181736287068948,
+   "sim": 0.0,
+   "ev_before": 0.0015178600885623844,
+   "ev_after": 0.0006564845815299136,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -324,28 +327,24 @@
    ]
   },
   {
-   "talent": "Power in Light",
+   "talent": "Martyrdom",
    "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
+   "ev_before": 1.525018131402049e-05,
+   "ev_after": 2.212516832051446e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
     "opt-shadow-dps-raid-dps",
-    "cand-shadow-dps-r1",
-    "cand-shadow-dps-r2",
-    "cand-shadow-dps-r3",
-    "cand-shadow-dps-r4",
-    "cand-shadow-dps-r6",
-    "cand-shadow-dps-r7",
-    "cand-shadow-dps-r8"
+    "cand-shadow-dps-preset-shadow",
+    "cand-shadow-dps-r5",
+    "cand-shadow-dps-r9"
    ]
   },
   {
    "talent": "Shadow Affinity",
    "sim": 0.0,
-   "ev_before": 1.5843790790479087e-05,
-   "ev_after": 1.5843790790479087e-05,
+   "ev_before": 1.528822288214066e-05,
+   "ev_after": 2.217545710304061e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -356,15 +355,29 @@
    ]
   },
   {
-   "talent": "Shadow Reach",
+   "talent": "Silence",
    "sim": 0.0,
-   "ev_before": 3.1814854868770167e-06,
-   "ev_after": 3.1814854868770167e-06,
+   "ev_before": 7.617528887222164e-06,
+   "ev_after": 1.1054752688775204e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
     "opt-shadow-dps-raid-dps",
-    "cand-shadow-dps-r3"
+    "cand-shadow-dps-r9"
+   ]
+  },
+  {
+   "talent": "Silent Resolve",
+   "sim": 0.0,
+   "ev_before": 1.8300273393410637e-05,
+   "ev_after": 2.6550319470733425e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "opt-shadow-dps-raid-dps",
+    "cand-shadow-dps-preset-shadow",
+    "cand-shadow-dps-r5",
+    "cand-shadow-dps-r9"
    ]
   },
   {
@@ -389,51 +402,10 @@
    ]
   },
   {
-   "talent": "Wand Specialization",
-   "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "opt-shadow-dps-raid-dps",
-    "cand-shadow-dps-r3",
-    "cand-shadow-dps-r4",
-    "cand-shadow-dps-r7",
-    "cand-shadow-dps-r8"
-   ]
-  },
-  {
-   "talent": "Martyrdom",
-   "sim": 0.0,
-   "ev_before": 1.5758974966754273e-05,
-   "ev_after": 1.5758974966754273e-05,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "cand-shadow-dps-preset-shadow",
-    "cand-shadow-dps-r5",
-    "cand-shadow-dps-r9"
-   ]
-  },
-  {
-   "talent": "Silent Resolve",
-   "sim": 0.0,
-   "ev_before": 1.8910829563254126e-05,
-   "ev_after": 1.8910829563254126e-05,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "cand-shadow-dps-preset-shadow",
-    "cand-shadow-dps-r5",
-    "cand-shadow-dps-r9"
-   ]
-  },
-  {
    "talent": "Spirit Tap",
    "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
+   "ev_before": 1.9628946562240728e-05,
+   "ev_after": 2.8635608148517736e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -460,310 +432,136 @@
    ]
   },
   {
-   "talent": "Silence",
+   "talent": "Power in Light",
    "sim": 0.0,
-   "ev_before": 7.868977502988157e-06,
-   "ev_after": 7.868977502988157e-06,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
    "scale": 1.0,
    "how": "noise",
    "builds": [
-    "cand-shadow-dps-r9"
+    "cand-shadow-dps-r1",
+    "cand-shadow-dps-r2",
+    "cand-shadow-dps-r3",
+    "cand-shadow-dps-r4",
+    "cand-shadow-dps-r6",
+    "cand-shadow-dps-r7",
+    "cand-shadow-dps-r8"
    ]
   },
   {
-   "talent": "Inner Focus",
-   "sim": -0.011047434609672382,
-   "ev_before": 0.011167970566067888,
-   "ev_after": 0.011167970566067888,
+   "talent": "Shadow Reach",
+   "sim": 0.0,
+   "ev_before": 3.0798183716715874e-06,
+   "ev_after": 4.461856881410771e-06,
    "scale": 1.0,
-   "how": "apl",
+   "how": "noise",
    "builds": [
+    "cand-shadow-dps-r3"
+   ]
+  },
+  {
+   "talent": "Wand Specialization",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-shadow-dps-r3",
+    "cand-shadow-dps-r4",
+    "cand-shadow-dps-r7",
+    "cand-shadow-dps-r8"
+   ]
+  },
+  {
+   "talent": "Mental Agility",
+   "sim": -0.00014270951430333465,
+   "ev_before": 0.0012608628851000277,
+   "ev_after": 0.00029521884597715126,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "opt-shadow-dps-raid-dps",
     "cand-shadow-dps-preset-shadow",
     "cand-shadow-dps-r1",
     "cand-shadow-dps-r2",
     "cand-shadow-dps-r5",
     "cand-shadow-dps-r6",
     "cand-shadow-dps-r7",
-    "cand-shadow-dps-r8",
     "cand-shadow-dps-r9"
    ]
   }
  ],
  "mana": {
-  "limit": {
-   "profiles": [
-    "raid-dps",
-    "raid-dps-extwc"
-   ],
-   "loss": 0.53,
-   "cap": 0.9,
-   "rms": 0.0078,
-   "points": 38
-  },
+  "limit": null,
   "builds": {
    "opt-shadow-dps-raid-dps": {
-    "dps": 631.1093112977242,
-    "surplus": 630.5918394917861,
-    "oom_seconds": 0.011329333333333334,
-    "deficit": 0.0,
-    "sustain": 1.6445,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
+    "dps": 589.6814441125744,
+    "surplus": 592.8984726344733,
+    "oom_seconds": 0.0,
+    "deficit": 0.005425934911932551
    },
    "cand-shadow-dps-preset-shadow": {
-    "dps": 617.9190360661852,
-    "surplus": 617.5851682607554,
+    "dps": 588.0654572960118,
+    "surplus": 591.7284978122026,
     "oom_seconds": 0.0,
-    "deficit": 0.0,
-    "sustain": 1.6367,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
+    "deficit": 0.006190407475276549
    },
    "cand-shadow-dps-r1": {
-    "dps": 619.6872830532184,
-    "surplus": 619.4477794748269,
+    "dps": 589.4492974857172,
+    "surplus": 593.4720597200901,
     "oom_seconds": 0.0,
-    "deficit": 0.0,
-    "sustain": 1.6406,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
+    "deficit": 0.006778351513751502
    },
    "cand-shadow-dps-r2": {
-    "dps": 607.2577090168877,
-    "surplus": 619.4151332422771,
-    "oom_seconds": 9.389533333333333,
-    "deficit": 0.01962726380570068,
-    "sustain": 1.5251,
-    "bound_share": 1.0,
-    "model_deficit": 0.0049
+    "dps": 589.5008752844533,
+    "surplus": 592.1224507361989,
+    "oom_seconds": 0.0,
+    "deficit": 0.004427421133054721
    },
    "cand-shadow-dps-r3": {
-    "dps": 631.1093112977242,
-    "surplus": 630.5918394917861,
-    "oom_seconds": 0.011329333333333334,
-    "deficit": 0.0,
-    "sustain": 1.6445,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
+    "dps": 583.0088747200509,
+    "surplus": 587.3801040515315,
+    "oom_seconds": 0.0,
+    "deficit": 0.007441909082942066
    },
    "cand-shadow-dps-r4": {
-    "dps": 616.2702525613691,
-    "surplus": 616.4806872365592,
+    "dps": 567.3616292879038,
+    "surplus": 570.6834912510247,
     "oom_seconds": 0.0,
-    "deficit": 0.0003413483658886163,
-    "sustain": 1.6445,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
+    "deficit": 0.005820848183007543
    },
    "cand-shadow-dps-r5": {
-    "dps": 619.1965524994459,
-    "surplus": 619.02456060901,
+    "dps": 588.9158692731423,
+    "surplus": 593.0517504539176,
     "oom_seconds": 0.0,
-    "deficit": 0.0,
-    "sustain": 1.6531,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
+    "deficit": 0.006973895916519424
    },
    "cand-shadow-dps-r6": {
-    "dps": 602.9814294780847,
-    "surplus": 602.8888090284977,
+    "dps": 572.9625291272442,
+    "surplus": 577.1889917263879,
     "oom_seconds": 0.0,
-    "deficit": 0.0,
-    "sustain": 1.6531,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
+    "deficit": 0.007322493428889243
    },
    "cand-shadow-dps-r7": {
-    "dps": 578.910909561631,
-    "surplus": 620.0776516339671,
-    "oom_seconds": 22.793166666666668,
-    "deficit": 0.06638965614041659,
-    "sustain": 1.4639,
-    "bound_share": 1.0,
-    "model_deficit": 0.0661
+    "dps": 589.7512524920938,
+    "surplus": 592.0582961006525,
+    "oom_seconds": 0.07030800000000001,
+    "deficit": 0.003896649407250985
    },
    "cand-shadow-dps-r8": {
-    "dps": 618.5509538016021,
-    "surplus": 619.3754892623198,
-    "oom_seconds": 1.2309359999786667,
-    "deficit": 0.001331236826468074,
-    "sustain": 1.5779,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
+    "dps": 589.4942333873623,
+    "surplus": 592.760576910686,
+    "oom_seconds": 0.0,
+    "deficit": 0.005510392645116546
    },
    "cand-shadow-dps-r9": {
-    "dps": 618.7332619651773,
-    "surplus": 619.2200520284273,
-    "oom_seconds": 0.5007199999879999,
-    "deficit": 0.0007861342048846032,
-    "sustain": 1.5813,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
+    "dps": 589.6814441125744,
+    "surplus": 592.8984726344733,
+    "oom_seconds": 0.0,
+    "deficit": 0.005425934911932551
    }
   },
-  "removals": {
-   "opt-shadow-dps-raid-dps -Devouring Contagion": {
-    "deficit": 0.0025,
-    "sustain": 1.6373,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
-   },
-   "opt-shadow-dps-raid-dps -Meditation": {
-    "deficit": 0.076,
-    "sustain": 1.4645,
-    "bound_share": 1.0,
-    "model_deficit": 0.0655
-   },
-   "cand-shadow-dps-preset-shadow -Meditation": {
-    "deficit": 0.0651,
-    "sustain": 1.4567,
-    "bound_share": 1.0,
-    "model_deficit": 0.0733
-   },
-   "cand-shadow-dps-preset-shadow -Mental Agility": {
-    "deficit": 0.0,
-    "sustain": 1.6319,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
-   },
-   "cand-shadow-dps-r1 -Devouring Contagion": {
-    "deficit": 0.0,
-    "sustain": 1.6334,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
-   },
-   "cand-shadow-dps-r1 -Meditation": {
-    "deficit": 0.0667,
-    "sustain": 1.4606,
-    "bound_share": 1.0,
-    "model_deficit": 0.0694
-   },
-   "cand-shadow-dps-r1 -Mental Agility": {
-    "deficit": 0.0,
-    "sustain": 1.6391,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
-   },
-   "cand-shadow-dps-r2 -Devouring Contagion": {
-    "deficit": 0.0196,
-    "sustain": 1.5179,
-    "bound_share": 1.0,
-    "model_deficit": 0.0121
-   },
-   "cand-shadow-dps-r2 -Meditation": {
-    "deficit": 0.0654,
-    "sustain": 1.4639,
-    "bound_share": 1.0,
-    "model_deficit": 0.0661
-   },
-   "cand-shadow-dps-r2 -Mental Agility": {
-    "deficit": 0.0327,
-    "sustain": 1.5203,
-    "bound_share": 1.0,
-    "model_deficit": 0.0097
-   },
-   "cand-shadow-dps-r3 -Devouring Contagion": {
-    "deficit": 0.0025,
-    "sustain": 1.6373,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
-   },
-   "cand-shadow-dps-r3 -Meditation": {
-    "deficit": 0.076,
-    "sustain": 1.4645,
-    "bound_share": 1.0,
-    "model_deficit": 0.0655
-   },
-   "cand-shadow-dps-r4 -Devouring Contagion": {
-    "deficit": 0.0,
-    "sustain": 1.6373,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
-   },
-   "cand-shadow-dps-r4 -Meditation": {
-    "deficit": 0.0572,
-    "sustain": 1.4645,
-    "bound_share": 1.0,
-    "model_deficit": 0.0655
-   },
-   "cand-shadow-dps-r5 -Devouring Contagion": {
-    "deficit": 0.0,
-    "sustain": 1.6459,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
-   },
-   "cand-shadow-dps-r5 -Meditation": {
-    "deficit": 0.052,
-    "sustain": 1.4731,
-    "bound_share": 1.0,
-    "model_deficit": 0.0569
-   },
-   "cand-shadow-dps-r5 -Mental Agility": {
-    "deficit": 0.0,
-    "sustain": 1.6517,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
-   },
-   "cand-shadow-dps-r6 -Devouring Contagion": {
-    "deficit": 0.0,
-    "sustain": 1.6459,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
-   },
-   "cand-shadow-dps-r6 -Meditation": {
-    "deficit": 0.0245,
-    "sustain": 1.4731,
-    "bound_share": 1.0,
-    "model_deficit": 0.0569
-   },
-   "cand-shadow-dps-r6 -Mental Agility": {
-    "deficit": 0.0,
-    "sustain": 1.6517,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
-   },
-   "cand-shadow-dps-r7 -Devouring Contagion": {
-    "deficit": 0.0664,
-    "sustain": 1.4567,
-    "bound_share": 1.0,
-    "model_deficit": 0.0733
-   },
-   "cand-shadow-dps-r7 -Mental Agility": {
-    "deficit": 0.0718,
-    "sustain": 1.4591,
-    "bound_share": 1.0,
-    "model_deficit": 0.0709
-   },
-   "cand-shadow-dps-r8 -Devouring Contagion": {
-    "deficit": 0.0013,
-    "sustain": 1.5707,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
-   },
-   "cand-shadow-dps-r8 -Meditation": {
-    "deficit": 0.0707,
-    "sustain": 1.4591,
-    "bound_share": 1.0,
-    "model_deficit": 0.0709
-   },
-   "cand-shadow-dps-r9 -Devouring Contagion": {
-    "deficit": 0.0008,
-    "sustain": 1.5741,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
-   },
-   "cand-shadow-dps-r9 -Meditation": {
-    "deficit": 0.0682,
-    "sustain": 1.4625,
-    "bound_share": 1.0,
-    "model_deficit": 0.0675
-   },
-   "cand-shadow-dps-r9 -Mental Agility": {
-    "deficit": 0.0011,
-    "sustain": 1.5779,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
-   }
-  }
+  "removals": {}
  }
 }

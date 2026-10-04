@@ -41,7 +41,7 @@ The Subtlety leveling build derived on 2026-09-30 (derive_leveling.py): searched
 | **Camouflage** | 2/5 | changed | Reduces your speed penalty from your Stealth ability by 6% and reduces its cooldown by 3 sec. |
 | **Master of Deception** | 3/3 | changed | Reduces the chance enemies have to detect you while in Stealth mode as if you were 3 levels higher. |
 | **Opportunity** | 2/2 | changed | Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 10%. |
-| **Setup** | 3/3 | changed | Gives you a 100% chance to add a Combo Point to your target after Dodging an attack or fully resisting a spell. |
+| **Setup** | 3/3 | changed | Gives you a 100% chance to add a Combo Point to your target after Dodging one of their attacks or fully resisting one of their spells. |
 | **Elusiveness** | 2/2 | unchanged | Reduces the cooldown of your Vanish and Blind abilities by 90 sec. |
 | **Initiative** | 3/3 | changed | Gives you a 100% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability. |
 | **Ghostly Strike** | 1/1 | changed | A strike that deals 125% (180% if a Dagger is equipped in your Main Hand) weapon damage and increases your chance to dodge by 15% for 7 sec. Awards 1 combo point. |

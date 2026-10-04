@@ -58,7 +58,7 @@
   "Fury": [
    [
     "Booming Voice",
-    2
+    5
    ],
    [
     "Cruelty",
@@ -71,10 +71,6 @@
    [
     "Improved Execute",
     1
-   ],
-   [
-    "Boundless Rage",
-    3
    ]
   ],
   "Protection": []
@@ -109,5 +105,8 @@
   ],
   "dps_start": 447.0493927725913,
   "dps_end": 456.6781626259796
- }
+ },
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

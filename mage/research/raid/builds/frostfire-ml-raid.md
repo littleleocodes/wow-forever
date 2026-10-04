@@ -34,10 +34,10 @@ The Frostfire build the machine-learning talent search found in a full raid (eve
 | **Improved Flamestrike** | 1/3 | unchanged | Increases the critical strike chance of your Flamestrike spell by 5%. |
 | **Pyroblast** | 1/1 | changed | Hurls an immense fiery boulder that causes 101 to 131 Fire damage and an additional 44 Fire damage over 12 sec. |
 | **Improved Scorch** | 3/3 | changed | Your Scorch spell has a 100% chance to cause your target to be vulnerable to Fire damage. This vulnerability increases all Fire damage you deal to your target by 3% and lasts 30 sec, stacking up to 5 times. |
-| **Hot Streak** | 1/1 | **NEW** | Your non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch grant Hot Streak for 20 sec. Hot Streak reduces the cast time of Pyroblast by 25%, stacking up to 3 times. |
+| **Heating Up** | 1/1 | **NEW** | Non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch reduce the cast time of your next Pyroblast cast within 20 sec by 25%, stacking up to 3 times. |
 | **Critical Mass** | 3/3 | unchanged | Increases the critical strike chance of your Fire spells by 6%. |
 | **Fire Power** | 5/5 | unchanged | Increases the damage done by your Fire spells by 10%. |
-| **Combustion** | 1/1 | changed | When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 4 non-periodic critical strikes with Fire spells. |
+| **Combustion** | 1/1 | changed | When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 3 non-periodic critical strikes with Fire spells. |
 
 ### Frost (16)
 
@@ -50,12 +50,12 @@ The Frostfire build the machine-learning talent search found in a full raid (eve
 
 ## Rank among our builds and the community simulator's
 
-**2 of 2** for `frostfire-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 2** for `frostfire-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 4/31/16 | 615 | +0.0% | 722 | -1.6% | 0 s |
-| 2 | **[`frostfire-ml-raid`](frostfire-ml-raid.md)** | ours: hand draft | 4/31/16 | 608 | -1.2% | 734 | +0.0% | 0 s |
+| 1 | **[`frostfire-ml-raid`](frostfire-ml-raid.md)** | ours: hand draft | 4/31/16 | 499 | +0.0% | 614 | +0.0% | 2 s |
+| 2 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 4/31/16 | 479 | -4.0% | 589 | -4.2% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -88,31 +88,32 @@ The Frostfire build the machine-learning talent search found in a full raid (eve
 | # | Priority (the first line whose condition holds is cast) | [`frostfire-ml-raid`](frostfire-ml-raid.md) casts/min |
 |---|---|---|
 | 1 | cast Berserking | 0.3 |
-| 2 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 3.6 |
+| 2 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 4.3 |
 | 3 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
 | 4 | use every other cooldown when ready | as ready |
 | 5 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 6 | if stacks of Hot Streak = 2: cast Pyroblast | 0.1 |
-| 7 | if stacks of Hot Streak = 3: cast Pyroblast | 0.1 |
+| 6 | if stacks of Heating Up = 2: cast Pyroblast | 1.7 |
+| 7 | if stacks of Heating Up = 3: cast Pyroblast | 1.7 |
 | 8 | cast Combustion | 0.3 |
 | 9 | cast Mana Citrine | as ready |
-| 10 | if mana % ≥ 10% and time left in the fight ≥ 6s: cast Frostfire Bolt | 16.8 |
-| 11 | cast Fire Blast | 0.3 |
-| 12 | if Missile Barrage is up: cast Arcane Missiles | 0.3 |
+| 10 | if mana % ≥ 10% and time left in the fight ≥ 6s: cast Frostfire Bolt | 15.1 |
+| 11 | cast Fire Blast | 1.0 |
+| 12 | if time left in the fight ≥ 3s: cast Fireball | 3.0 |
 | 13 | cast Robe of the Archmage | as ready |
+| 14 | cast Scorch | 0.3 |
 
-Lines of the simulator's rotation these builds never cast: cast Fireball, cast Scorch (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Arcane Missiles (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`frostfire-ml-raid`](frostfire-ml-raid.md) |
 |---|---|
-| Frostfire Bolt | 71% |
-| Ignite | 21% |
-| Scorch | 6% |
-| Fire Blast | 1% |
-| Pyroblast | 1% |
-| Arcane Missiles | 1% |
+| Frostfire Bolt | 59% |
+| Pyroblast | 13% |
+| Ignite | 12% |
+| Scorch | 8% |
+| Fireball | 5% |
+| Fire Blast | 3% |
 
 ## Notes
 
@@ -123,6 +124,7 @@ Damage by ability:
 - Pre-BiS gear: 3/31/17 at 721.6 DPS in a full raid (other talents: _reference/dps-rankings.md).
 - Alone on the training dummy (only your own buffs) the search's best is 1/34/16 at 627.1 DPS.
 - 2026-10-03 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Impact -> Flame Throwing (range). Net +0.00% on a third seed.
+- 2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized.
 
 ## Open questions (verify in the live game)
 

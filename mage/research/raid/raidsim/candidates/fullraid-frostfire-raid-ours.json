@@ -9,6 +9,10 @@
   ],
   "Fire": [
    [
+    "Wake of Fire",
+    2
+   ],
+   [
     "Incineration",
     3
    ],
@@ -29,7 +33,7 @@
     3
    ],
    [
-    "Hot Streak",
+    "Heating Up",
     1
    ],
    [
@@ -51,10 +55,6 @@
    [
     "Combustion",
     1
-   ],
-   [
-    "Wake of Fire",
-    2
    ]
   ],
   "Frost": [
@@ -88,5 +88,8 @@
   "dps_end": 665.6935576046938,
   "gain": 0.0,
   "tank": false
- }
+ },
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

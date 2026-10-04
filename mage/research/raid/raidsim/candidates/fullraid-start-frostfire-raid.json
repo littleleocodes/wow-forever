@@ -9,6 +9,10 @@
   ],
   "Fire": [
    [
+    "Wake of Fire",
+    2
+   ],
+   [
     "Incineration",
     3
    ],
@@ -29,7 +33,7 @@
     3
    ],
    [
-    "Hot Streak",
+    "Heating Up",
     1
    ],
    [
@@ -51,10 +55,6 @@
    [
     "Combustion",
     1
-   ],
-   [
-    "Wake of Fire",
-    2
    ]
   ],
   "Frost": [
@@ -75,5 +75,8 @@
     3
    ]
   ]
- }
+ },
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

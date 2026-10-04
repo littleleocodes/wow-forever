@@ -7,6 +7,7 @@
   "fire-raid",
   "opt-fire-raid-raid-dps",
   "F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-hand-2026-09-28.json",
+  "F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-preset-fire-0-35-16.json",
   "F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-preset-fire-dps.json",
   "F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-r1.json",
   "F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-r2.json",
@@ -14,11 +15,12 @@
   "F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-r4.json",
   "F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-r5.json",
   "F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-r6.json",
-  "F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-r7.json"
+  "F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-r7.json",
+  "F:\\wow-forever\\mage\\research\\raid\\raidsim\\candidates\\cand-fire-raid-r8.json"
  ],
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
-  "commit": "40be98e",
+  "commit": "b0f0df3",
   "spec_folder": "mage/dps",
   "gear": "_reference/data/raidsim/gear_sets/forever/mage-dps-p1.p1opt.gear.json",
   "apl": "_reference/data/raidsim/apls/mage/fire-raid.apl.json",
@@ -44,37 +46,17 @@
  },
  "talents": [
   {
-   "talent": "Hot Streak",
-   "sim": 0.5183761752178813,
-   "ev_before": 0.06998852682659051,
-   "ev_after": 0.06998869341918168,
-   "scale": 1.0,
-   "how": "apl",
-   "builds": [
-    "fire-raid",
-    "opt-fire-raid-raid-dps",
-    "cand-fire-raid-hand-2026-09-28",
-    "cand-fire-raid-preset-fire-dps",
-    "cand-fire-raid-r1",
-    "cand-fire-raid-r2",
-    "cand-fire-raid-r3",
-    "cand-fire-raid-r4",
-    "cand-fire-raid-r5",
-    "cand-fire-raid-r6",
-    "cand-fire-raid-r7"
-   ]
-  },
-  {
    "talent": "Improved Scorch",
-   "sim": 0.5125794606839985,
-   "ev_before": 0.5199339183884534,
-   "ev_after": 0.5199356763935107,
+   "sim": 0.48144481701707165,
+   "ev_before": 0.5199244720771798,
+   "ev_after": 0.5199178653953829,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "fire-raid",
     "opt-fire-raid-raid-dps",
     "cand-fire-raid-hand-2026-09-28",
+    "cand-fire-raid-preset-fire-0-35-16",
     "cand-fire-raid-preset-fire-dps",
     "cand-fire-raid-r1",
     "cand-fire-raid-r2",
@@ -82,20 +64,22 @@
     "cand-fire-raid-r4",
     "cand-fire-raid-r5",
     "cand-fire-raid-r6",
-    "cand-fire-raid-r7"
+    "cand-fire-raid-r7",
+    "cand-fire-raid-r8"
    ]
   },
   {
    "talent": "Ignite",
-   "sim": 0.1305977154048069,
-   "ev_before": 0.10146061073184144,
-   "ev_after": 0.09967778385367577,
+   "sim": 0.12603769737452344,
+   "ev_before": 0.09432999232132352,
+   "ev_after": 0.09535045140841955,
    "scale": 64.0,
    "how": "capped",
    "builds": [
     "fire-raid",
     "opt-fire-raid-raid-dps",
     "cand-fire-raid-hand-2026-09-28",
+    "cand-fire-raid-preset-fire-0-35-16",
     "cand-fire-raid-preset-fire-dps",
     "cand-fire-raid-r1",
     "cand-fire-raid-r2",
@@ -103,20 +87,22 @@
     "cand-fire-raid-r4",
     "cand-fire-raid-r5",
     "cand-fire-raid-r6",
-    "cand-fire-raid-r7"
+    "cand-fire-raid-r7",
+    "cand-fire-raid-r8"
    ]
   },
   {
    "talent": "Fire Power",
-   "sim": 0.09919681915818383,
-   "ev_before": 0.09998315029570402,
-   "ev_after": 0.0999833949553801,
+   "sim": 0.09999999999999967,
+   "ev_before": 0.09998183563645083,
+   "ev_after": 0.09998091617240037,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "fire-raid",
     "opt-fire-raid-raid-dps",
     "cand-fire-raid-hand-2026-09-28",
+    "cand-fire-raid-preset-fire-0-35-16",
     "cand-fire-raid-preset-fire-dps",
     "cand-fire-raid-r1",
     "cand-fire-raid-r2",
@@ -124,20 +110,22 @@
     "cand-fire-raid-r4",
     "cand-fire-raid-r5",
     "cand-fire-raid-r6",
-    "cand-fire-raid-r7"
+    "cand-fire-raid-r7",
+    "cand-fire-raid-r8"
    ]
   },
   {
    "talent": "Improved Fireball",
-   "sim": 0.08500540918253181,
-   "ev_before": 0.06766994511002307,
-   "ev_after": 0.08500546104469045,
-   "scale": 1.2198441000655293,
-   "how": "fitted",
+   "sim": 0.07563728986971847,
+   "ev_before": 0.08590381580384666,
+   "ev_after": 0.08682589931784626,
+   "scale": 1.0,
+   "how": "kept",
    "builds": [
     "fire-raid",
     "opt-fire-raid-raid-dps",
     "cand-fire-raid-hand-2026-09-28",
+    "cand-fire-raid-preset-fire-0-35-16",
     "cand-fire-raid-preset-fire-dps",
     "cand-fire-raid-r1",
     "cand-fire-raid-r2",
@@ -145,20 +133,66 @@
     "cand-fire-raid-r4",
     "cand-fire-raid-r5",
     "cand-fire-raid-r6",
-    "cand-fire-raid-r7"
+    "cand-fire-raid-r7",
+    "cand-fire-raid-r8"
    ]
   },
   {
    "talent": "Critical Mass",
-   "sim": 0.07017091254276418,
-   "ev_before": 0.06282011222911102,
-   "ev_after": 0.06295582954487701,
+   "sim": 0.06883570853022647,
+   "ev_before": 0.06322636734934978,
+   "ev_after": 0.06320329909605973,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "fire-raid",
     "opt-fire-raid-raid-dps",
     "cand-fire-raid-hand-2026-09-28",
+    "cand-fire-raid-preset-fire-0-35-16",
+    "cand-fire-raid-preset-fire-dps",
+    "cand-fire-raid-r1",
+    "cand-fire-raid-r2",
+    "cand-fire-raid-r3",
+    "cand-fire-raid-r4",
+    "cand-fire-raid-r5",
+    "cand-fire-raid-r6",
+    "cand-fire-raid-r7",
+    "cand-fire-raid-r8"
+   ]
+  },
+  {
+   "talent": "Elemental Precision",
+   "sim": 0.060403547892654764,
+   "ev_before": 0.05951345329224845,
+   "ev_after": 0.05951292962908109,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "fire-raid",
+    "opt-fire-raid-raid-dps",
+    "cand-fire-raid-hand-2026-09-28",
+    "cand-fire-raid-preset-fire-0-35-16",
+    "cand-fire-raid-r1",
+    "cand-fire-raid-r2",
+    "cand-fire-raid-r3",
+    "cand-fire-raid-r4",
+    "cand-fire-raid-r5",
+    "cand-fire-raid-r6",
+    "cand-fire-raid-r7",
+    "cand-fire-raid-r8"
+   ]
+  },
+  {
+   "talent": "Heating Up",
+   "sim": 0.05695850812554391,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "apl",
+   "builds": [
+    "fire-raid",
+    "cand-fire-raid-hand-2026-09-28",
+    "cand-fire-raid-preset-fire-0-35-16",
     "cand-fire-raid-preset-fire-dps",
     "cand-fire-raid-r1",
     "cand-fire-raid-r2",
@@ -171,15 +205,16 @@
   },
   {
    "talent": "Pyroblast",
-   "sim": 0.06393811625403018,
-   "ev_before": 0.0519302211678723,
-   "ev_after": 0.06393727095422365,
-   "scale": 1.2349271541461349,
+   "sim": 0.048195660721614075,
+   "ev_before": 0.06481934934801742,
+   "ev_after": 0.048052357111445065,
+   "scale": 0.7884144731797278,
    "how": "fitted",
    "builds": [
     "fire-raid",
     "opt-fire-raid-raid-dps",
     "cand-fire-raid-hand-2026-09-28",
+    "cand-fire-raid-preset-fire-0-35-16",
     "cand-fire-raid-preset-fire-dps",
     "cand-fire-raid-r1",
     "cand-fire-raid-r2",
@@ -187,75 +222,15 @@
     "cand-fire-raid-r4",
     "cand-fire-raid-r5",
     "cand-fire-raid-r6",
-    "cand-fire-raid-r7"
-   ]
-  },
-  {
-   "talent": "Elemental Precision",
-   "sim": 0.06091116666576881,
-   "ev_before": 0.05951423126411011,
-   "ev_after": 0.05951437168056726,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "fire-raid",
-    "opt-fire-raid-raid-dps",
-    "cand-fire-raid-hand-2026-09-28",
-    "cand-fire-raid-r1",
-    "cand-fire-raid-r2",
-    "cand-fire-raid-r3",
-    "cand-fire-raid-r4",
-    "cand-fire-raid-r5",
-    "cand-fire-raid-r6",
-    "cand-fire-raid-r7"
-   ]
-  },
-  {
-   "talent": "Combustion",
-   "sim": 0.0597400898260742,
-   "ev_before": 0.06352764884639307,
-   "ev_after": 0.06352779914720018,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "fire-raid",
-    "opt-fire-raid-raid-dps",
-    "cand-fire-raid-hand-2026-09-28",
-    "cand-fire-raid-preset-fire-dps",
-    "cand-fire-raid-r1",
-    "cand-fire-raid-r2",
-    "cand-fire-raid-r3",
-    "cand-fire-raid-r4",
-    "cand-fire-raid-r5",
-    "cand-fire-raid-r6",
-    "cand-fire-raid-r7"
+    "cand-fire-raid-r7",
+    "cand-fire-raid-r8"
    ]
   },
   {
    "talent": "Arcane Concentration",
-   "sim": 0.0442508859133268,
-   "ev_before": 0.0603059230866174,
-   "ev_after": 0.043874377080261526,
-   "scale": 0.7441956638358533,
-   "how": "fitted",
-   "builds": [
-    "fire-raid",
-    "opt-fire-raid-raid-dps",
-    "cand-fire-raid-hand-2026-09-28",
-    "cand-fire-raid-preset-fire-dps",
-    "cand-fire-raid-r1",
-    "cand-fire-raid-r2",
-    "cand-fire-raid-r4",
-    "cand-fire-raid-r5",
-    "cand-fire-raid-r6",
-    "cand-fire-raid-r7"
-   ]
-  },
-  {
-   "talent": "Master of Elements",
-   "sim": 0.04100664490152972,
-   "ev_before": 0.03996106404997601,
-   "ev_after": 0.0395968131185869,
+   "sim": 0.04488247371830671,
+   "ev_before": 0.043889801013768354,
+   "ev_after": 0.04401678406024314,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -265,18 +240,64 @@
     "cand-fire-raid-preset-fire-dps",
     "cand-fire-raid-r1",
     "cand-fire-raid-r2",
+    "cand-fire-raid-r4",
+    "cand-fire-raid-r5",
+    "cand-fire-raid-r6",
+    "cand-fire-raid-r7",
+    "cand-fire-raid-r8"
+   ]
+  },
+  {
+   "talent": "Combustion",
+   "sim": 0.03853209364070604,
+   "ev_before": 0.06352684121559468,
+   "ev_after": 0.03853105632499799,
+   "scale": 0.606542541179806,
+   "how": "fitted",
+   "builds": [
+    "fire-raid",
+    "opt-fire-raid-raid-dps",
+    "cand-fire-raid-hand-2026-09-28",
+    "cand-fire-raid-preset-fire-0-35-16",
+    "cand-fire-raid-preset-fire-dps",
+    "cand-fire-raid-r1",
+    "cand-fire-raid-r2",
     "cand-fire-raid-r3",
     "cand-fire-raid-r4",
     "cand-fire-raid-r5",
     "cand-fire-raid-r6",
-    "cand-fire-raid-r7"
+    "cand-fire-raid-r7",
+    "cand-fire-raid-r8"
+   ]
+  },
+  {
+   "talent": "Master of Elements",
+   "sim": 0.038100180513423634,
+   "ev_before": 0.039729686511362536,
+   "ev_after": 0.0398442058771309,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "fire-raid",
+    "opt-fire-raid-raid-dps",
+    "cand-fire-raid-hand-2026-09-28",
+    "cand-fire-raid-preset-fire-0-35-16",
+    "cand-fire-raid-preset-fire-dps",
+    "cand-fire-raid-r1",
+    "cand-fire-raid-r2",
+    "cand-fire-raid-r3",
+    "cand-fire-raid-r4",
+    "cand-fire-raid-r5",
+    "cand-fire-raid-r6",
+    "cand-fire-raid-r7",
+    "cand-fire-raid-r8"
    ]
   },
   {
    "talent": "Arcane Meditation",
-   "sim": 0.024631713940568116,
-   "ev_before": 0.031159629180130405,
-   "ev_after": 0.03093220093422096,
+   "sim": 0.029989015150669703,
+   "ev_before": 0.030934093561800477,
+   "ev_after": 0.031019830002867076,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -285,14 +306,15 @@
   },
   {
    "talent": "Incineration",
-   "sim": 0.024059812773790115,
-   "ev_before": 0.02327304904706459,
-   "ev_after": 0.022893487726843777,
+   "sim": 0.022014982614198167,
+   "ev_before": 0.023484759982206598,
+   "ev_after": 0.02285568657738721,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "fire-raid",
     "opt-fire-raid-raid-dps",
+    "cand-fire-raid-preset-fire-0-35-16",
     "cand-fire-raid-preset-fire-dps",
     "cand-fire-raid-r1",
     "cand-fire-raid-r2",
@@ -300,16 +322,17 @@
     "cand-fire-raid-r4",
     "cand-fire-raid-r5",
     "cand-fire-raid-r6",
-    "cand-fire-raid-r7"
+    "cand-fire-raid-r7",
+    "cand-fire-raid-r8"
    ]
   },
   {
    "talent": "Wake of Fire",
-   "sim": 0.009041981444066042,
-   "ev_before": 0.01585166790807418,
-   "ev_after": 0.015594492704452751,
-   "scale": 1.0,
-   "how": "kept",
+   "sim": 0.005187647553313316,
+   "ev_before": 0.01596356669243924,
+   "ev_after": 0.005187641616217581,
+   "scale": 0.3420233610086143,
+   "how": "fitted",
    "builds": [
     "fire-raid",
     "opt-fire-raid-raid-dps",
@@ -321,12 +344,80 @@
     "cand-fire-raid-r4",
     "cand-fire-raid-r5",
     "cand-fire-raid-r6",
-    "cand-fire-raid-r7"
+    "cand-fire-raid-r7",
+    "cand-fire-raid-r8"
+   ]
+  },
+  {
+   "talent": "Arcane Subtlety",
+   "sim": 0.0,
+   "ev_before": 2.538826646657176e-05,
+   "ev_after": 2.6688212596174625e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "fire-raid",
+    "opt-fire-raid-raid-dps",
+    "cand-fire-raid-hand-2026-09-28",
+    "cand-fire-raid-preset-fire-dps",
+    "cand-fire-raid-r1",
+    "cand-fire-raid-r2",
+    "cand-fire-raid-r7",
+    "cand-fire-raid-r8"
+   ]
+  },
+  {
+   "talent": "Burning Soul",
+   "sim": 0.0,
+   "ev_before": 3.3385417847708704e-05,
+   "ev_after": 3.5046638289289854e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "fire-raid",
+    "opt-fire-raid-raid-dps",
+    "cand-fire-raid-hand-2026-09-28",
+    "cand-fire-raid-preset-fire-0-35-16",
+    "cand-fire-raid-r2",
+    "cand-fire-raid-r3",
+    "cand-fire-raid-r8"
+   ]
+  },
+  {
+   "talent": "Improved Channeling",
+   "sim": 0.0,
+   "ev_before": 8.403909974067751e-05,
+   "ev_after": 8.835177582494068e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "fire-raid",
+    "opt-fire-raid-raid-dps",
+    "cand-fire-raid-r6",
+    "cand-fire-raid-r7",
+    "cand-fire-raid-r8"
+   ]
+  },
+  {
+   "talent": "Magic Absorption",
+   "sim": 0.0,
+   "ev_before": 2.3157047962089177e-05,
+   "ev_after": 2.4345052787758348e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "opt-fire-raid-raid-dps",
+    "cand-fire-raid-preset-fire-dps",
+    "cand-fire-raid-r4",
+    "cand-fire-raid-r5",
+    "cand-fire-raid-r6",
+    "cand-fire-raid-r7",
+    "cand-fire-raid-r8"
    ]
   },
   {
    "talent": "Arcane Focus",
-   "sim": 0.00038526784040978377,
+   "sim": 0.0,
    "ev_before": 0.0,
    "ev_after": 0.0,
    "scale": 1.0,
@@ -341,75 +432,15 @@
    ]
   },
   {
-   "talent": "Arcane Subtlety",
-   "sim": 0.0,
-   "ev_before": 2.3755714512557883e-05,
-   "ev_after": 2.3435280839577652e-05,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "fire-raid",
-    "opt-fire-raid-raid-dps",
-    "cand-fire-raid-hand-2026-09-28",
-    "cand-fire-raid-preset-fire-dps",
-    "cand-fire-raid-r1",
-    "cand-fire-raid-r2",
-    "cand-fire-raid-r7"
-   ]
-  },
-  {
-   "talent": "Burning Soul",
-   "sim": 0.0,
-   "ev_before": 3.587551611251095e-05,
-   "ev_after": 3.522877079765763e-05,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "fire-raid",
-    "cand-fire-raid-hand-2026-09-28",
-    "cand-fire-raid-r2",
-    "cand-fire-raid-r3"
-   ]
-  },
-  {
-   "talent": "Improved Channeling",
-   "sim": 0.0,
-   "ev_before": 7.930882485094008e-05,
-   "ev_after": 7.824118065988673e-05,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "fire-raid",
-    "opt-fire-raid-raid-dps",
-    "cand-fire-raid-r6",
-    "cand-fire-raid-r7"
-   ]
-  },
-  {
-   "talent": "Magic Absorption",
-   "sim": 0.0,
-   "ev_before": 2.5494902212114747e-05,
-   "ev_after": 2.5152642948450227e-05,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "opt-fire-raid-raid-dps",
-    "cand-fire-raid-preset-fire-dps",
-    "cand-fire-raid-r4",
-    "cand-fire-raid-r5",
-    "cand-fire-raid-r6",
-    "cand-fire-raid-r7"
-   ]
-  },
-  {
    "talent": "Flame Throwing",
    "sim": 0.0,
-   "ev_before": 9.674969781308788e-06,
-   "ev_after": 9.542185157701936e-06,
+   "ev_before": 1.1589544594316792e-05,
+   "ev_after": 1.2127930376614889e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
     "cand-fire-raid-hand-2026-09-28",
+    "cand-fire-raid-preset-fire-0-35-16",
     "cand-fire-raid-r6"
    ]
   },
@@ -430,36 +461,25 @@
    ]
   },
   {
-   "talent": "Arcane Resilience",
+   "talent": "Blast Wave",
    "sim": 0.0,
-   "ev_before": 6.519148674492817e-06,
-   "ev_after": 6.432808702387012e-06,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
    "scale": 1.0,
    "how": "noise",
    "builds": [
-    "cand-fire-raid-preset-fire-dps"
-   ]
-  },
-  {
-   "talent": "Arcane Geometry",
-   "sim": 0.0,
-   "ev_before": 6.344836820013918e-06,
-   "ev_after": 6.259421785926944e-06,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "cand-fire-raid-r1",
-    "cand-fire-raid-r4"
+    "cand-fire-raid-preset-fire-0-35-16"
    ]
   },
   {
    "talent": "Frost Channeling",
    "sim": 0.0,
-   "ev_before": 4.103739320334972e-05,
-   "ev_after": 3.98450523123212e-05,
+   "ev_before": 4.2801873037608467e-05,
+   "ev_after": 4.475245205887759e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
+    "cand-fire-raid-preset-fire-0-35-16",
     "cand-fire-raid-r3"
    ]
   },
@@ -471,7 +491,42 @@
    "scale": 1.0,
    "how": "noise",
    "builds": [
+    "cand-fire-raid-preset-fire-0-35-16",
     "cand-fire-raid-r3"
+   ]
+  },
+  {
+   "talent": "Piercing Ice",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-fire-raid-preset-fire-0-35-16"
+   ]
+  },
+  {
+   "talent": "Arcane Resilience",
+   "sim": 0.0,
+   "ev_before": 6.9095253080545705e-06,
+   "ev_after": 7.263498211854557e-06,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-fire-raid-preset-fire-dps"
+   ]
+  },
+  {
+   "talent": "Arcane Geometry",
+   "sim": 0.0,
+   "ev_before": 6.723317825489947e-06,
+   "ev_after": 7.068351897300569e-06,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-fire-raid-r1",
+    "cand-fire-raid-r4"
    ]
   },
   {
@@ -503,250 +558,292 @@
     "raid-dps",
     "raid-dps-extwc"
    ],
-   "loss": 0.155,
+   "loss": 0.1575,
    "cap": 0.9,
-   "rms": 0.0058,
-   "points": 34
+   "rms": 0.0077,
+   "points": 40
   },
   "builds": {
    "fire-raid": {
-    "dps": 599.1230350284044,
-    "surplus": 651.3771129190137,
-    "oom_seconds": 2.384467333328667,
-    "deficit": 0.08022093017122345,
+    "dps": 556.7473457200913,
+    "surplus": 608.4735797092662,
+    "oom_seconds": 2.7144819999933336,
+    "deficit": 0.08500982740103546,
     "sustain": 1.0736,
     "bound_share": 1.0,
-    "model_deficit": 0.0814
+    "model_deficit": 0.0839
    },
    "opt-fire-raid-raid-dps": {
-    "dps": 599.1230350284044,
-    "surplus": 651.3771129190137,
-    "oom_seconds": 2.384467333328667,
-    "deficit": 0.08022093017122345,
+    "dps": 526.0089319386501,
+    "surplus": 569.9176650947662,
+    "oom_seconds": 1.6683753333333324,
+    "deficit": 0.07704399397554196,
     "sustain": 1.0736,
     "bound_share": 1.0,
-    "model_deficit": 0.0814
+    "model_deficit": 0.0839
    },
    "cand-fire-raid-hand-2026-09-28": {
-    "dps": 584.0430992723526,
-    "surplus": 637.2466433219009,
-    "oom_seconds": 2.434163333331333,
-    "deficit": 0.08348972035726032,
+    "dps": 542.6998662832218,
+    "surplus": 595.1356467017223,
+    "oom_seconds": 2.8797799999953337,
+    "deficit": 0.08810727555827436,
     "sustain": 1.0736,
     "bound_share": 1.0,
-    "model_deficit": 0.0814
+    "model_deficit": 0.0839
    },
-   "cand-fire-raid-preset-fire-dps": {
-    "dps": 578.7298075229439,
-    "surplus": 611.6669602547995,
-    "oom_seconds": 0.5125239999986667,
-    "deficit": 0.05384818025504445,
-    "sustain": 1.102,
-    "bound_share": 1.0,
-    "model_deficit": 0.053
-   },
-   "cand-fire-raid-r1": {
-    "dps": 599.4019408731436,
-    "surplus": 651.3771129190137,
-    "oom_seconds": 2.3703606666619996,
-    "deficit": 0.07979275141085929,
-    "sustain": 1.0736,
-    "bound_share": 1.0,
-    "model_deficit": 0.0814
-   },
-   "cand-fire-raid-r2": {
-    "dps": 599.3565349974268,
-    "surplus": 651.3771129190137,
-    "oom_seconds": 2.376709333328666,
-    "deficit": 0.07986245891948407,
-    "sustain": 1.0736,
-    "bound_share": 1.0,
-    "model_deficit": 0.0814
-   },
-   "cand-fire-raid-r3": {
-    "dps": 564.1511758222244,
-    "surplus": 641.5695515802361,
-    "oom_seconds": 8.155906666645341,
-    "deficit": 0.12067027739599567,
+   "cand-fire-raid-preset-fire-0-35-16": {
+    "dps": 532.4411355545549,
+    "surplus": 596.3449095892302,
+    "oom_seconds": 5.164435999995337,
+    "deficit": 0.10715908362275284,
     "sustain": 1.0349,
     "bound_share": 1.0,
-    "model_deficit": 0.1201
+    "model_deficit": 0.1226
+   },
+   "cand-fire-raid-preset-fire-dps": {
+    "dps": 540.32310450359,
+    "surplus": 574.4740548322253,
+    "oom_seconds": 0.5713199999993333,
+    "deficit": 0.05944733281054626,
+    "sustain": 1.102,
+    "bound_share": 1.0,
+    "model_deficit": 0.0555
+   },
+   "cand-fire-raid-r1": {
+    "dps": 556.7473457200913,
+    "surplus": 608.4735797092662,
+    "oom_seconds": 2.7144819999933336,
+    "deficit": 0.08500982740103546,
+    "sustain": 1.0736,
+    "bound_share": 1.0,
+    "model_deficit": 0.0839
+   },
+   "cand-fire-raid-r2": {
+    "dps": 556.7473457200913,
+    "surplus": 608.4735797092662,
+    "oom_seconds": 2.7144819999933336,
+    "deficit": 0.08500982740103546,
+    "sustain": 1.0736,
+    "bound_share": 1.0,
+    "model_deficit": 0.0839
+   },
+   "cand-fire-raid-r3": {
+    "dps": 523.0499403523987,
+    "surplus": 599.2216278587438,
+    "oom_seconds": 8.559925999986675,
+    "deficit": 0.12711772066461735,
+    "sustain": 1.0349,
+    "bound_share": 1.0,
+    "model_deficit": 0.1226
    },
    "cand-fire-raid-r4": {
-    "dps": 599.4019408731436,
-    "surplus": 651.3771129190137,
-    "oom_seconds": 2.3703606666619996,
-    "deficit": 0.07979275141085929,
+    "dps": 556.7473457200913,
+    "surplus": 608.4735797092662,
+    "oom_seconds": 2.7144819999933336,
+    "deficit": 0.08500982740103546,
     "sustain": 1.0736,
     "bound_share": 1.0,
-    "model_deficit": 0.0814
+    "model_deficit": 0.0839
    },
    "cand-fire-raid-r5": {
-    "dps": 599.3236202156825,
-    "surplus": 651.3771129190137,
-    "oom_seconds": 2.376460666662,
-    "deficit": 0.0799129899883404,
+    "dps": 556.7473457200913,
+    "surplus": 608.4735797092662,
+    "oom_seconds": 2.7144819999933336,
+    "deficit": 0.08500982740103546,
     "sustain": 1.0736,
     "bound_share": 1.0,
-    "model_deficit": 0.0814
+    "model_deficit": 0.0839
    },
    "cand-fire-raid-r6": {
-    "dps": 599.1230350284044,
-    "surplus": 651.3771129190137,
-    "oom_seconds": 2.384467333328667,
-    "deficit": 0.08022093017122345,
+    "dps": 556.7473457200913,
+    "surplus": 608.4735797092662,
+    "oom_seconds": 2.7144819999933336,
+    "deficit": 0.08500982740103546,
     "sustain": 1.0736,
     "bound_share": 1.0,
-    "model_deficit": 0.0814
+    "model_deficit": 0.0839
    },
    "cand-fire-raid-r7": {
-    "dps": 599.1230350284044,
-    "surplus": 651.3771129190137,
-    "oom_seconds": 2.384467333328667,
-    "deficit": 0.08022093017122345,
+    "dps": 556.7473457200913,
+    "surplus": 608.4735797092662,
+    "oom_seconds": 2.7144819999933336,
+    "deficit": 0.08500982740103546,
     "sustain": 1.0736,
     "bound_share": 1.0,
-    "model_deficit": 0.0814
+    "model_deficit": 0.0839
+   },
+   "cand-fire-raid-r8": {
+    "dps": 526.0089319386501,
+    "surplus": 569.9176650947662,
+    "oom_seconds": 1.6683753333333324,
+    "deficit": 0.07704399397554196,
+    "sustain": 1.0736,
+    "bound_share": 1.0,
+    "model_deficit": 0.0839
    }
   },
   "removals": {
    "fire-raid -Arcane Concentration": {
-    "deficit": 0.1214,
+    "deficit": 0.1283,
     "sustain": 1.0349,
     "bound_share": 1.0,
-    "model_deficit": 0.1201
+    "model_deficit": 0.1226
    },
    "fire-raid -Master of Elements": {
-    "deficit": 0.117,
+    "deficit": 0.1176,
     "sustain": 1.0387,
     "bound_share": 1.0,
-    "model_deficit": 0.1163
+    "model_deficit": 0.1188
    },
    "opt-fire-raid-raid-dps -Arcane Concentration": {
-    "deficit": 0.1214,
+    "deficit": 0.1123,
     "sustain": 1.0349,
     "bound_share": 1.0,
-    "model_deficit": 0.1201
+    "model_deficit": 0.1226
    },
    "opt-fire-raid-raid-dps -Master of Elements": {
-    "deficit": 0.117,
+    "deficit": 0.1055,
     "sustain": 1.0387,
     "bound_share": 1.0,
-    "model_deficit": 0.1163
+    "model_deficit": 0.1188
    },
    "cand-fire-raid-hand-2026-09-28 -Arcane Concentration": {
-    "deficit": 0.1204,
+    "deficit": 0.1258,
     "sustain": 1.0349,
     "bound_share": 1.0,
-    "model_deficit": 0.1201
+    "model_deficit": 0.1226
    },
    "cand-fire-raid-hand-2026-09-28 -Master of Elements": {
-    "deficit": 0.1142,
+    "deficit": 0.1195,
     "sustain": 1.0387,
     "bound_share": 1.0,
-    "model_deficit": 0.1163
+    "model_deficit": 0.1188
    },
-   "cand-fire-raid-preset-fire-dps -Arcane Concentration": {
-    "deficit": 0.076,
-    "sustain": 1.0633,
-    "bound_share": 1.0,
-    "model_deficit": 0.0917
-   },
-   "cand-fire-raid-preset-fire-dps -Arcane Meditation": {
-    "deficit": 0.0766,
-    "sustain": 1.0736,
-    "bound_share": 1.0,
-    "model_deficit": 0.0814
-   },
-   "cand-fire-raid-preset-fire-dps -Master of Elements": {
-    "deficit": 0.0689,
-    "sustain": 1.0671,
-    "bound_share": 1.0,
-    "model_deficit": 0.0879
-   },
-   "cand-fire-raid-r1 -Arcane Concentration": {
-    "deficit": 0.1214,
+   "cand-fire-raid-preset-fire-0-35-16 -Frost Channeling": {
+    "deficit": 0.1072,
     "sustain": 1.0349,
     "bound_share": 1.0,
-    "model_deficit": 0.1201
+    "model_deficit": 0.1226
    },
-   "cand-fire-raid-r1 -Master of Elements": {
-    "deficit": 0.1164,
-    "sustain": 1.0387,
-    "bound_share": 1.0,
-    "model_deficit": 0.1163
-   },
-   "cand-fire-raid-r2 -Arcane Concentration": {
-    "deficit": 0.1214,
-    "sustain": 1.0349,
-    "bound_share": 1.0,
-    "model_deficit": 0.1201
-   },
-   "cand-fire-raid-r2 -Master of Elements": {
-    "deficit": 0.1165,
-    "sustain": 1.0387,
-    "bound_share": 1.0,
-    "model_deficit": 0.1163
-   },
-   "cand-fire-raid-r3 -Frost Channeling": {
-    "deficit": 0.1207,
-    "sustain": 1.0349,
-    "bound_share": 1.0,
-    "model_deficit": 0.1201
-   },
-   "cand-fire-raid-r3 -Master of Elements": {
-    "deficit": 0.1766,
+   "cand-fire-raid-preset-fire-0-35-16 -Master of Elements": {
+    "deficit": 0.1576,
     "sustain": 1.0,
     "bound_share": 1.0,
-    "model_deficit": 0.155
+    "model_deficit": 0.1575
+   },
+   "cand-fire-raid-preset-fire-dps -Arcane Concentration": {
+    "deficit": 0.0809,
+    "sustain": 1.0633,
+    "bound_share": 1.0,
+    "model_deficit": 0.0942
+   },
+   "cand-fire-raid-preset-fire-dps -Arcane Meditation": {
+    "deficit": 0.0868,
+    "sustain": 1.0736,
+    "bound_share": 1.0,
+    "model_deficit": 0.0839
+   },
+   "cand-fire-raid-preset-fire-dps -Master of Elements": {
+    "deficit": 0.0739,
+    "sustain": 1.0671,
+    "bound_share": 1.0,
+    "model_deficit": 0.0904
+   },
+   "cand-fire-raid-r1 -Arcane Concentration": {
+    "deficit": 0.1283,
+    "sustain": 1.0349,
+    "bound_share": 1.0,
+    "model_deficit": 0.1226
+   },
+   "cand-fire-raid-r1 -Master of Elements": {
+    "deficit": 0.1176,
+    "sustain": 1.0387,
+    "bound_share": 1.0,
+    "model_deficit": 0.1188
+   },
+   "cand-fire-raid-r2 -Arcane Concentration": {
+    "deficit": 0.1283,
+    "sustain": 1.0349,
+    "bound_share": 1.0,
+    "model_deficit": 0.1226
+   },
+   "cand-fire-raid-r2 -Master of Elements": {
+    "deficit": 0.1176,
+    "sustain": 1.0387,
+    "bound_share": 1.0,
+    "model_deficit": 0.1188
+   },
+   "cand-fire-raid-r3 -Frost Channeling": {
+    "deficit": 0.1271,
+    "sustain": 1.0349,
+    "bound_share": 1.0,
+    "model_deficit": 0.1226
+   },
+   "cand-fire-raid-r3 -Master of Elements": {
+    "deficit": 0.1781,
+    "sustain": 1.0,
+    "bound_share": 1.0,
+    "model_deficit": 0.1575
    },
    "cand-fire-raid-r4 -Arcane Concentration": {
-    "deficit": 0.1214,
+    "deficit": 0.1283,
     "sustain": 1.0349,
     "bound_share": 1.0,
-    "model_deficit": 0.1201
+    "model_deficit": 0.1226
    },
    "cand-fire-raid-r4 -Master of Elements": {
-    "deficit": 0.1164,
+    "deficit": 0.1176,
     "sustain": 1.0387,
     "bound_share": 1.0,
-    "model_deficit": 0.1163
+    "model_deficit": 0.1188
    },
    "cand-fire-raid-r5 -Arcane Concentration": {
-    "deficit": 0.1214,
+    "deficit": 0.1283,
     "sustain": 1.0349,
     "bound_share": 1.0,
-    "model_deficit": 0.1201
+    "model_deficit": 0.1226
    },
    "cand-fire-raid-r5 -Master of Elements": {
-    "deficit": 0.1164,
+    "deficit": 0.1176,
     "sustain": 1.0387,
     "bound_share": 1.0,
-    "model_deficit": 0.1163
+    "model_deficit": 0.1188
    },
    "cand-fire-raid-r6 -Arcane Concentration": {
-    "deficit": 0.1214,
+    "deficit": 0.1283,
     "sustain": 1.0349,
     "bound_share": 1.0,
-    "model_deficit": 0.1201
+    "model_deficit": 0.1226
    },
    "cand-fire-raid-r6 -Master of Elements": {
-    "deficit": 0.117,
+    "deficit": 0.1176,
     "sustain": 1.0387,
     "bound_share": 1.0,
-    "model_deficit": 0.1163
+    "model_deficit": 0.1188
    },
    "cand-fire-raid-r7 -Arcane Concentration": {
-    "deficit": 0.1214,
+    "deficit": 0.1283,
     "sustain": 1.0349,
     "bound_share": 1.0,
-    "model_deficit": 0.1201
+    "model_deficit": 0.1226
    },
    "cand-fire-raid-r7 -Master of Elements": {
-    "deficit": 0.117,
+    "deficit": 0.1176,
     "sustain": 1.0387,
     "bound_share": 1.0,
-    "model_deficit": 0.1163
+    "model_deficit": 0.1188
+   },
+   "cand-fire-raid-r8 -Arcane Concentration": {
+    "deficit": 0.1123,
+    "sustain": 1.0349,
+    "bound_share": 1.0,
+    "model_deficit": 0.1226
+   },
+   "cand-fire-raid-r8 -Master of Elements": {
+    "deficit": 0.1055,
+    "sustain": 1.0387,
+    "bound_share": 1.0,
+    "model_deficit": 0.1188
    }
   }
  }

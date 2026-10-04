@@ -89,7 +89,7 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Holy | Illumination | 5 | changed | tier 4, max 5 — tooltip changed |
 | Holy | Improved Blessing of Wisdom | 2 | **REMOVED** | removed from Classic |
 | Holy | Divine Favor | 1 | moved | tier 4, max 1 — was Holy row 5, col 2 |
-| Holy | Holy Power | 5 | changed | tier 6, max 5 — tooltip changed; tooltip changed in build 1.60.1.70009 (ranks 1, 2, 3, 4, 5) |
+| Holy | Holy Power | 5 | changed | tier 6, max 5 — tooltip changed; tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5) |
 | Holy | Holy Shock | 1 | changed | tier 5, max 1 — tooltip changed; was Holy row 7, col 2 |
 | Protection | Improved Devotion Aura | 5 | **REMOVED** | removed from Classic |
 | Protection | Guardian's Favor | 2 | changed | tier 2, max 2 — tooltip changed |

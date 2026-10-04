@@ -1,23 +1,23 @@
 {
   "slug": "hunter",
   "name": "Hunter",
-  "build": "1.60.1.70009",
-  "captured": "2026-09-25",
+  "build": "1.60.1.70170",
+  "captured": "2026-10-03",
   "tooltip_level": 60,
-  "source": "World of Warcraft: Forever beta client, build 1.60.1.70009: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-09-24, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70009; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo).",
+  "source": "World of Warcraft: Forever beta client, build 1.60.1.70170: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-03, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70205; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo).",
   "sources": {
     "talentsforever": {
       "url": "https://talentsforever.com/data.json",
-      "generated": "2026-09-24",
-      "build": "1.60.1.70009",
+      "generated": "2026-10-03",
+      "build": "1.60.1.70170",
       "license": "CC-BY-4.0",
       "attribution": "Data from talentsforever.com (https://talentsforever.com)"
     },
     "thewowdb": {
       "url": "https://thewowdb.com/wow-forever/talents/hunter/",
-      "build": "1.60.1.70009",
+      "build": "1.60.1.70205",
       "evidence": [
-        "https://wago.tools/db2/TraitNode?build=1.60.1.70009"
+        "https://wago.tools/db2/TraitNode?build=1.60.1.70205"
       ]
     },
     "warcraftforever": {
@@ -266,7 +266,7 @@
           ],
           "ranks_prev_build": "1.60.1.69893",
           "diff": [
-            "tooltip changed in build 1.60.1.70009 (ranks 1)"
+            "tooltip changed in build 1.60.1.70170 (ranks 1)"
           ]
         },
         {
@@ -443,13 +443,21 @@
           "icon": "hunter_pvp_spidersting",
           "maxRank": 3,
           "ranks": [
+            "Increases the damage of your Serpent Sting ability by 6%, reduces the cooldown of your Viper Sting ability by 2 sec, and increases the duration of your Scorpid Sting ability by 15 sec.",
+            "Increases the damage of your Serpent Sting ability by 13%, reduces the cooldown of your Viper Sting ability by 4 sec, and increases the duration of your Scorpid Sting ability by 30 sec.",
+            "Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec."
+          ],
+          "status": "new",
+          "evidence": "hunter/20-hunter-marksmanship-improved-stings.jpg",
+          "ranks_prev": [
             "Increased the damage of your Serpent Sting ability by 6%, reduces the cooldown of your Viper Sting ability by 2 sec, and increases the duration of your Scorpid Sting ability by 15 sec.",
             "Increased the damage of your Serpent Sting ability by 13%, reduces the cooldown of your Viper Sting ability by 4 sec, and increases the duration of your Scorpid Sting ability by 30 sec.",
             "Increased the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec."
           ],
-          "status": "new",
-          "evidence": "hunter/20-hunter-marksmanship-improved-stings.jpg",
-          "diff": []
+          "ranks_prev_build": "1.60.1.69893",
+          "diff": [
+            "tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3)"
+          ]
         },
         {
           "id": "marksmanship/efficiency",
@@ -561,16 +569,21 @@
           "icon": "ability_trueshot",
           "maxRank": 1,
           "ranks": [
-            "Increases the Ranged Attack Power of party members within 45 yards by 30. Lasts 30 min."
+            "Increases the Ranged Attack Power of party members within 45 yds by 30."
           ],
           "status": "changed",
           "classic": [
             "Increases the attack power of party members within 0 yards by 50. Lasts 30 min."
           ],
           "evidence": "hunter/26-hunter-marksmanship-trueshot-aura.jpg",
+          "ranks_prev": [
+            "Increases the Ranged Attack Power of party members within 45 yards by 30. Lasts 30 min."
+          ],
+          "ranks_prev_build": "1.60.1.69893",
           "diff": [
             "tooltip changed",
-            "was Marksmanship row 7, col 2"
+            "was Marksmanship row 7, col 2",
+            "tooltip changed in build 1.60.1.70170 (ranks 1)"
           ]
         },
         {
@@ -689,11 +702,17 @@
           "icon": "hunter_pvp_snipershot",
           "maxRank": 1,
           "ranks": [
-            "A steady snipe that increases ranged damage by 160."
+            "A long-range shot that deals ranged damage plus 160 and increases the range of your next 3 Shots by 10 yards for 10 sec."
           ],
           "status": "new",
           "evidence": "hunter/32-hunter-marksmanship-sniper-shot.jpg",
-          "diff": [],
+          "ranks_prev": [
+            "A steady snipe that increases ranged damage by 160."
+          ],
+          "ranks_prev_build": "1.60.1.69893",
+          "diff": [
+            "tooltip changed in build 1.60.1.70170 (ranks 1)"
+          ],
           "prereq": {
             "id": "marksmanship/trueshot-aura",
             "rank": 1
@@ -740,11 +759,11 @@
           "icon": "ability_parry",
           "maxRank": 5,
           "ranks": [
+            "Increases your Parry chance by 1%.",
             "Increases your Parry chance by 2%.",
+            "Increases your Parry chance by 3%.",
             "Increases your Parry chance by 4%.",
-            "Increases your Parry chance by 6%.",
-            "Increases your Parry chance by 8%.",
-            "Increases your Parry chance by 10%."
+            "Increases your Parry chance by 5%."
           ],
           "status": "changed",
           "classic": [
@@ -755,8 +774,17 @@
             "Increases your Parry chance by 5%."
           ],
           "evidence": "hunter/34-hunter-survival-deflection.jpg",
+          "ranks_prev": [
+            "Increases your Parry chance by 2%.",
+            "Increases your Parry chance by 4%.",
+            "Increases your Parry chance by 6%.",
+            "Increases your Parry chance by 8%.",
+            "Increases your Parry chance by 10%."
+          ],
+          "ranks_prev_build": "1.60.1.69893",
           "diff": [
-            "tooltip changed"
+            "tooltip changed",
+            "tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5)"
           ]
         },
         {
@@ -938,15 +966,25 @@
           "icon": "ability_hunter_hatchettoss",
           "maxRank": 5,
           "ranks": [
+            "Increases your melee critical strike damage by 6% and your Off Hand weapon damage by 10%.",
+            "Increases your melee critical strike damage by 12% and your Off Hand weapon damage by 20%.",
+            "Increases your melee critical strike damage by 18% and your Off Hand weapon damage by 30%.",
+            "Increases your melee critical strike damage by 24% and your Off Hand weapon damage by 40%.",
+            "Increases your melee critical strike damage by 30% and your Off Hand weapon damage by 50%."
+          ],
+          "status": "new",
+          "evidence": "hunter/43-hunter-survival-predator-s-edge.jpg",
+          "ranks_prev": [
             "Increases your melee critical strike damage by 6% and your offhand weapon damage by 10%.",
             "Increases your melee critical strike damage by 12% and your offhand weapon damage by 20%.",
             "Increases your melee critical strike damage by 18% and your offhand weapon damage by 30%.",
             "Increases your melee critical strike damage by 24% and your offhand weapon damage by 40%.",
             "Increases your melee critical strike damage by 30% and your offhand weapon damage by 50%."
           ],
-          "status": "new",
-          "evidence": "hunter/43-hunter-survival-predator-s-edge.jpg",
-          "diff": []
+          "ranks_prev_build": "1.60.1.69893",
+          "diff": [
+            "tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5)"
+          ]
         },
         {
           "id": "survival/counterattack",
@@ -970,7 +1008,7 @@
           "diff": [
             "tooltip changed",
             "was Survival row 5, col 3",
-            "tooltip changed in build 1.60.1.70009 (ranks 1)"
+            "tooltip changed in build 1.60.1.70170 (ranks 1)"
           ],
           "prereq": {
             "id": "survival/deterrence",
@@ -996,7 +1034,7 @@
           ],
           "ranks_prev_build": "1.60.1.69893",
           "diff": [
-            "tooltip changed in build 1.60.1.70009 (ranks 1, 2)"
+            "tooltip changed in build 1.60.1.70170 (ranks 1, 2)"
           ]
         },
         {
@@ -1046,7 +1084,7 @@
           ],
           "ranks_prev_build": "1.60.1.69893",
           "diff": [
-            "tooltip changed in build 1.60.1.70009 (ranks 1)"
+            "tooltip changed in build 1.60.1.70170 (ranks 1)"
           ]
         },
         {
@@ -1057,11 +1095,11 @@
           "icon": "spell_nature_invisibilty",
           "maxRank": 5,
           "ranks": [
-            "Increases your Agility by 3%.",
+            "Increases your Agility by 2%.",
+            "Increases your Agility by 4%.",
             "Increases your Agility by 6%.",
-            "Increases your Agility by 9%.",
-            "Increases your Agility by 12%.",
-            "Increases your Agility by 15%."
+            "Increases your Agility by 8%.",
+            "Increases your Agility by 10%."
           ],
           "status": "changed",
           "classic": [
@@ -1072,17 +1110,8 @@
             "Increases your Agility by 15%."
           ],
           "evidence": "hunter/49-hunter-survival-lightning-reflexes.jpg",
-          "ranks_prev": [
-            "Increases your Agility by 2%.",
-            "Increases your Agility by 4%.",
-            "Increases your Agility by 6%.",
-            "Increases your Agility by 8%.",
-            "Increases your Agility by 10%."
-          ],
-          "ranks_prev_build": "1.60.1.69893",
           "diff": [
-            "tooltip changed",
-            "tooltip changed in build 1.60.1.70009 (ranks 1, 2, 3, 4, 5)"
+            "tooltip changed"
           ]
         },
         {
@@ -1093,11 +1122,17 @@
           "icon": "ability_gouge",
           "maxRank": 1,
           "ranks": [
-            "Your Mongoose Bite also causes the target to Bleed for damage over 21 sec equal to 40% of the damage done by Mongoose Bite."
+            "Your Mongoose Bite also causes the target to Bleed for damage equal to 40% of the damage done by Mongoose Bite over 21 sec"
           ],
           "status": "new",
           "evidence": "hunter/50-hunter-survival-lacerating-strikes.jpg",
-          "diff": [],
+          "ranks_prev": [
+            "Your Mongoose Bite also causes the target to Bleed for damage over 21 sec equal to 40% of the damage done by Mongoose Bite."
+          ],
+          "ranks_prev_build": "1.60.1.69893",
+          "diff": [
+            "tooltip changed in build 1.60.1.70170 (ranks 1)"
+          ],
           "prereq": {
             "id": "survival/expose-prey",
             "rank": 2

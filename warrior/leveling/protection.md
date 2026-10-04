@@ -2,11 +2,11 @@
 
 [Warrior](../README.md) > [Leveling (solo)](README.md) > Protection
 
-**[Protection — Leveling into the raid build](../research/leveling/builds/protection-leveling.md)** (14/5/32) — [open the talent tree](https://talentsforever.com/warrior/60/3500501-05-551030233000010531-4)
+**[Protection — Leveling into the raid build](../research/leveling/builds/protection-leveling.md)** (14/5/32) — [open the talent tree](https://talentsforever.com/warrior/60/3500501-05-150533020300001351-4)
 
 > 🔬 These are your **raid talents** ([prot-raid-tank](../raid/protection.md)), taken in the order that levels fastest: the fight lab raced three orders to them (own tree first: 31 s per kill; stats model's order: 38 s per kill; own tree last: 39 s per kill). A model of the beta, to check at launch.
 
-**Leveling as Protection or as Arms?** This build takes 31 s per kill (level-weighted, 20-60), [Arms](../leveling/arms.md) 28 s: Protection is 11% slower. Your first Protection point comes at level 10. Level this way if you want to tank dungeons later on the way; otherwise level as Arms and switch at 60 (a respec at a class trainer).
+**Leveling as Protection or as Arms?** This build takes 31 s per kill (level-weighted, 20-60), [Arms](../leveling/arms.md) 28 s: Protection is 11% slower. Level this way if you want to tank dungeons later on the way; otherwise level as Arms and switch at 60 (a respec at a class trainer).
 
 ## How to play
 
@@ -24,33 +24,6 @@
 8. **Heroic Strike** with spare rage; **Victory Rush** after a kill; **Concussion Blow** when you are hurt.
 
 **Between fights:** You rarely need to eat or bandage: the shield soaks most of the damage.
-
-## Talents while leveling
-
-One point per level from 10, in this order:
-
-| Levels | Talent | Points |
-|---|---|---|
-| 10-14 | Anticipation (Protection) | 5 |
-| 15-19 | Shield Specialization (Protection) | 5 |
-| 20-22 | Improved Thunder Clap (Protection) | 3 |
-| 23-25 | Defiance (Protection) | 3 |
-| 26-28 | Improved Revenge (Protection) | 3 |
-| 29 | Master of Defense (Protection) | 1 |
-| 30 | Concussion Blow (Protection) | 1 |
-| 31 | Master of Defense (Protection) | 1 |
-| 32-34 | Bastion (Protection) | 3 |
-| 35-37 | Focused Rage (Protection) | 3 |
-| 38-39 | Bastion (Protection) | 2 |
-| 40 | Shield Slam (Protection) | 1 |
-| 41 | Improved Bloodrage (Protection) | 1 |
-| 42-45 | Cruelty (Fury) | 4 |
-| 46-50 | Deflection (Arms) | 5 |
-| 51-53 | Improved Tactical Mastery (Arms) | 3 |
-| 54 | Cruelty (Fury) | 1 |
-| 55-56 | Improved Tactical Mastery (Arms) | 2 |
-| 57 | Anger Management (Arms) | 1 |
-| 58-60 | Improved Heroic Strike (Arms) | 3 |
 
 ## The numbers
 

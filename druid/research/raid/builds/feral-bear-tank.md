@@ -70,13 +70,13 @@ Allocation adopted on 2026-09-27 from `opt-feral-bear-tank-raid-tank`, the best 
 
 ## Rank among our builds and the community simulator's
 
-**1 of 3** for `feral-bear-tank` by tank value in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 3** for `feral-bear-tank` by tank value in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | **[`feral-bear-tank`](feral-bear-tank.md)** | ours: hand draft | 7/35/9 | 1.000 | +0.0% | 802 | 990 |
-| 2 | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) | ours: optimizer | 7/35/9 | 1.000 | +0.0% | 802 | 990 |
-| 3 | *Bear Tank 0/31/20* | community simulator | - | 0.859 | -14.1% | 614 | 1040 |
+| 1 | **[`feral-bear-tank`](feral-bear-tank.md)** | ours: hand draft | 7/35/9 | 1.000 | +0.0% | 830 | 992 |
+| 2 | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) | ours: optimizer | 7/35/9 | 1.000 | +0.0% | 830 | 992 |
+| 3 | *Bear Tank 0/31/20* | community simulator | - | 0.863 | -13.7% | 641 | 1040 |
 
 ## Rotation (community simulator, raid setting)
 
@@ -88,10 +88,10 @@ Allocation adopted on 2026-09-27 from `opt-feral-bear-tank-raid-tank`, the best 
 | # | Priority (the first line whose condition holds is cast) | [`feral-bear-tank`](feral-bear-tank.md) casts/min |
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
-| 2 | if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate | 38.0 |
-| 3 | if rage ≥ 50: cast Maul | 1.5 |
+| 2 | if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate | 38.5 |
+| 3 | if rage ≥ 50: cast Maul | 3.1 |
 | 4 | cast Barkskin | 1.0 |
-| 5 | cast Lacerate | 38.0 |
+| 5 | cast Lacerate | 38.5 |
 
 Lines of the simulator's rotation these builds never cast: cast Faerie Fire, cast Demoralizing Roar (its condition never held in these fights); cast Primal Bite (needs the Primal Bite talent).
 
@@ -99,9 +99,9 @@ Damage by ability (threat for tanks):
 
 | Ability | [`feral-bear-tank`](feral-bear-tank.md) |
 |---|---|
-| Lacerate | 76% |
-| Auto Attack | 16% |
-| Maul | 4% |
+| Lacerate | 74% |
+| Auto Attack | 15% |
+| Maul | 7% |
 | OtherActionRageGain | 2% |
 | Retribution Aura | 1% |
 | Thorns | 1% |

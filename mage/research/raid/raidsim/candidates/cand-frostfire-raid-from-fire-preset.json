@@ -4,6 +4,10 @@
   "Arcane": [],
   "Fire": [
    [
+    "Wake of Fire",
+    1
+   ],
+   [
     "Incineration",
     3
    ],
@@ -32,7 +36,7 @@
     3
    ],
    [
-    "Hot Streak",
+    "Heating Up",
     1
    ],
    [
@@ -53,10 +57,6 @@
    ],
    [
     "Combustion",
-    1
-   ],
-   [
-    "Wake of Fire",
     1
    ]
   ],
@@ -94,5 +94,8 @@
   ],
   "dps_start": 487.2316884239258,
   "dps_end": 489.64784071736653
- }
+ },
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

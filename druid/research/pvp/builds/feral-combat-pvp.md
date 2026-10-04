@@ -23,6 +23,7 @@ The Feral Combat PvP build derived on 2026-09-30 (derive_pvp.py): the stats mode
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
+| **Ferocity** | 2/5 | changed | Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 2 Rage or Energy. |
 | **Heart of the Wild** | 5/5 | changed | Increases your Intellect by 10%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 20% and while in Cat Form your Strength is increased by 10%. |
 | **Feral Swiftness** | 2/2 | **NEW** | Increases your movement speed while in Cat Form by 30%, and increases your chance to Dodge by 4%. |
 | **Feral Instinct** | 3/3 | changed | Increases damage done by your Swipe ability by 30% and reduces the chance enemies have to detect you while Prowling as if you were 3 levels higher. |
@@ -31,12 +32,11 @@ The Feral Combat PvP build derived on 2026-09-30 (derive_pvp.py): the stats mode
 | **Savage Fury** | 2/2 | changed | Increases the damage caused by your Claw, Rake, Shred, Maul, and Swipe abilities by 10%. |
 | **Feral Charge** | 1/1 | changed | Charge an enemy, immobilizing them and interrupting any spell they are casting for 4 sec.  Leap behind an enemy. |
 | **Sharpened Claws** | 2/2 | changed | Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by 6%. |
-| **Primal Bite** | 1/1 | **NEW** | Bite the target for 100% normal damage plus 26. |
+| **Primal Bite** | 1/1 | **NEW** | Bite the target, dealing 100% normal damage plus 26 and generating a high amount of threat. |
 | **Predatory Strikes** | 3/3 | changed | Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 150% of your level. |
-| **Blood Frenzy** | 1/2 | changed | Gives you a 50% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 50% chance to add an additional Combo Point. |
-| **Predatory Instincts** | 2/2 | **NEW** | Increases the critical strike damage bonus of your melee abilities by 20%. |
+| **Blood Frenzy** | 2/2 | changed | Gives you a 100% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 100% chance to add an additional Combo Point. |
 | **Leader of the Pack** | 1/1 | changed | While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the critical strike chance of all party members within 45 yards by 3%, exclusive with Moonkin Aura. |
-| **King of the Jungle** | 3/3 | **NEW** | Tiger's Fury now instantly grants you 60 Energy. |
+| **Predatory Instincts** | 2/2 | **NEW** | Increases the critical strike damage bonus of your melee abilities by 20%. |
 | **Berserk** | 1/1 | **NEW** | Causes your Primal Bite ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generating abilities by 100%. Clears and grants immunity to Fear effects for the duration. Lasts 15 sec. |
 
 ### Restoration (19)
@@ -64,6 +64,7 @@ The Feral Combat PvP build derived on 2026-09-30 (derive_pvp.py): the stats mode
 - Community tie-break moves: 1 point Naturalist -> Primal Bite; 1 point Rend and Tear -> Blood Frenzy.
 - Where we disagree with the community: most Feral Combat builds take Rend and Tear (86% take it), Ferocity (83% take it), which the model values below this build's weakest point; this build takes Gift of the Earthmother (8%), Nature's Focus (3%), Swiftmend (9%), which few Feral Combat builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.
 - PvP values are assumptions: no simulator plays PvP.
+- 2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): King of the Jungle 3 out; Blood Frenzy 2, Ferocity 2 in; to be re-optimized.
 
 ## Open questions (verify in the live game)
 

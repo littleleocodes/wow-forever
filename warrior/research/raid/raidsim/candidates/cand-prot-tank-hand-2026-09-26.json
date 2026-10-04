@@ -19,20 +19,24 @@
   ],
   "Protection": [
    [
+    "Improved Bloodrage",
+    2
+   ],
+   [
     "Shield Specialization",
     5
+   ],
+   [
+    "Iron Will",
+    4
    ],
    [
     "Anticipation",
     5
    ],
    [
-    "Improved Bloodrage",
-    2
-   ],
-   [
-    "Toughness",
-    5
+    "Improved Revenge",
+    3
    ],
    [
     "Last Stand",
@@ -45,10 +49,6 @@
    [
     "Defiance",
     3
-   ],
-   [
-    "Improved Revenge",
-    2
    ],
    [
     "Improved Sunder Armor",
@@ -67,12 +67,12 @@
     1
    ],
    [
-    "Bastion",
-    5
-   ],
-   [
     "Focused Rage",
     3
+   ],
+   [
+    "Bastion",
+    5
    ],
    [
     "Shield Slam",
@@ -80,5 +80,8 @@
    ]
   ]
  },
- "note": "The hand draft prot-raid-tank as it was before opt-prot-tank-raid-tank was adopted on 2026-09-26"
+ "note": "The hand draft prot-raid-tank as it was before opt-prot-tank-raid-tank was adopted on 2026-09-26",
+ "notes": [
+  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
+ ]
 }

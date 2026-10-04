@@ -15,8 +15,8 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 | Improved Slice and Dice | Assassination | 2 | +1.63% | manual |
 | Ruthlessness | Assassination | 2 | +1.36% | manual |
 | Precision | Combat | 2 | +1.24% | manual |
-| Improved Poisons | Assassination | 4 | +1.21% | manual |
 | Dual Wield Specialization | Combat | 4 | +1.21% | manual |
+| Improved Poisons | Assassination | 4 | +1.19% | manual |
 | Weapon Expertise | Combat | 6 | +0.96% | manual |
 | Ghostly Strike | Subtlety | 3 | +0.96% | manual |
 | Serrated Blades | Subtlety | 4 | +0.96% | manual |
@@ -40,7 +40,7 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 | Improved Gouge | Assassination | 1 | +0.00% | manual |
 | Remorseless Attacks | Assassination | 1 | +0.00% | manual |
 
-## Optimized build: 20/31/0  score +68.61%  (dps x1.686, sustain x1.000, surv x1.000, utility +0.00%)
+## Optimized build: 20/31/0  score +68.52%  (dps x1.685, sustain x1.000, surv x1.000, utility +0.00%)
 
 ```
   Assassination: Malice 5, Improved Slice and Dice 3, Ruthlessness 3, Murder 2, Relentless Strikes 1, Lethality 1, Improved Poisons 5
@@ -60,7 +60,7 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 | Flawless Execution | Combat 4 | 1/1 | +0.81% | yes |
 | Cold Blood | Assassination 4 | 1/1 | +0.50% | yes |
 | Quietus | Subtlety 6 | 1/5 | +0.46% | no |
-| Vile Poisons | Assassination 4 | 1/5 | +0.44% | yes |
+| Vile Poisons | Assassination 4 | 1/5 | +0.43% | yes |
 | Improved Expose Armor | Assassination 3 | 1/2 | +0.00% | yes |
 | Deflection | Combat 2 | 3/3 | +0.00% | yes |
 | Riposte | Combat 3 | 1/1 | +0.00% | no |

@@ -39,59 +39,59 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-affliction-raid-raid-dps`](builds/opt-affliction-raid-raid-dps.md) | ours: optimizer | 30/0/21 | 640 | +0.0% | 768 | +0.0% | 2 s |
-| 2 | [`affliction-dot-raid`](builds/affliction-dot-raid.md) | ours: hand draft | 30/0/21 | 633 | -1.1% | 763 | -0.6% | 3 s |
-| 3 | *Demonic Pact 2/31/18* | community simulator | - | 592 | -7.5% | 714 | -7.0% | 0 s |
-| 4 | *Demonic Pact* | community simulator | - | 587 | -8.4% | 704 | -8.3% | 0 s |
-| 5 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 574 | -10.4% | 689 | -10.3% | 2 s |
-| 6 | *Deep Affliction 35/0/16* | community simulator | - | 568 | -11.3% | 676 | -11.9% | 3 s |
-| 7 | *DS/Ruin* | community simulator | - | 564 | -11.8% | 683 | -11.1% | 1 s |
-| 8 | *Affliction* | community simulator | - | 561 | -12.4% | 668 | -12.9% | 2 s |
-| 9 | *Shadow and Flame 13/11/27* | community simulator | - | 547 | -14.6% | 657 | -14.4% | 1 s |
+| 1 | [`opt-affliction-raid-raid-dps`](builds/opt-affliction-raid-raid-dps.md) | ours: optimizer | 30/0/21 | 599 | +0.0% | 722 | +0.0% | 2 s |
+| 2 | [`affliction-dot-raid`](builds/affliction-dot-raid.md) | ours: hand draft | 30/0/21 | 592 | -1.1% | 718 | -0.6% | 3 s |
+| 3 | *Demonic Pact 2/31/18* | community simulator | - | 557 | -6.9% | 674 | -6.6% | 0 s |
+| 4 | *Demonic Pact* | community simulator | - | 551 | -7.9% | 665 | -8.0% | 0 s |
+| 5 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 537 | -10.4% | 648 | -10.2% | 2 s |
+| 6 | *Deep Affliction 35/0/16* | community simulator | - | 532 | -11.1% | 637 | -11.7% | 3 s |
+| 7 | *DS/Ruin* | community simulator | - | 529 | -11.6% | 639 | -11.5% | 0 s |
+| 8 | *Affliction* | community simulator | - | 526 | -12.2% | 630 | -12.7% | 2 s |
+| 9 | *Shadow and Flame 13/11/27* | community simulator | - | 512 | -14.5% | 620 | -14.2% | 1 s |
 
 **fire-destro-raid**
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`destruction-fire-raid`](builds/destruction-fire-raid.md) | ours: hand draft | 22/11/18 | 612 | +0.0% | 725 | +0.0% | 3 s |
-| 2 | [`opt-fire-destro-raid-raid-dps`](builds/opt-fire-destro-raid-raid-dps.md) | ours: optimizer | 10/11/30 | 611 | -0.1% | 717 | -1.0% | 2 s |
-| 3 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 586 | -4.3% | 693 | -4.4% | 3 s |
-| 4 | *DS/Ruin* | community simulator | - | 577 | -5.7% | 686 | -5.4% | 3 s |
-| 5 | *Shadow and Flame 13/11/27* | community simulator | - | 538 | -12.1% | 630 | -13.1% | 2 s |
-| 6 | *Deep Affliction 35/0/16* | community simulator | - | 515 | -15.9% | 602 | -16.9% | 3 s |
-| 7 | *Affliction* | community simulator | - | 507 | -17.2% | 594 | -18.0% | 3 s |
-| 8 | *Demonic Pact 2/31/18* | community simulator | - | 505 | -17.5% | 602 | -17.0% | 3 s |
-| 9 | *Demonic Pact* | community simulator | - | 501 | -18.2% | 593 | -18.2% | 3 s |
+| 1 | [`destruction-fire-raid`](builds/destruction-fire-raid.md) | ours: hand draft | 22/11/18 | 569 | +0.0% | 674 | +0.0% | 3 s |
+| 2 | [`opt-fire-destro-raid-raid-dps`](builds/opt-fire-destro-raid-raid-dps.md) | ours: optimizer | 10/11/30 | 568 | -0.1% | 669 | -0.8% | 3 s |
+| 3 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 544 | -4.4% | 645 | -4.3% | 3 s |
+| 4 | *DS/Ruin* | community simulator | - | 536 | -5.9% | 638 | -5.4% | 3 s |
+| 5 | *Shadow and Flame 13/11/27* | community simulator | - | 501 | -11.9% | 587 | -12.9% | 2 s |
+| 6 | *Deep Affliction 35/0/16* | community simulator | - | 478 | -16.1% | 560 | -17.0% | 3 s |
+| 7 | *Demonic Pact 2/31/18* | community simulator | - | 470 | -17.3% | 561 | -16.8% | 3 s |
+| 8 | *Affliction* | community simulator | - | 470 | -17.4% | 553 | -18.0% | 3 s |
+| 9 | *Demonic Pact* | community simulator | - | 465 | -18.3% | 552 | -18.1% | 3 s |
 
 **sb-raid**
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-sb-raid-raid-dps`](builds/opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 639 | +0.0% | 759 | +0.0% | 1 s |
-| 2 | [`ds-ruin-raid`](builds/ds-ruin-raid.md) | ours: hand draft | 22/11/18 | 636 | -0.5% | 759 | -0.1% | 1 s |
-| 3 | [`destruction-ml-raid`](builds/destruction-ml-raid.md) | ours: hand draft | 10/11/30 | 628 | -1.7% | 741 | -2.4% | 1 s |
-| 4 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 605 | -5.3% | 721 | -5.0% | 1 s |
-| 5 | *DS/Ruin* | community simulator | - | 598 | -6.5% | 709 | -6.6% | 1 s |
-| 6 | *Shadow and Flame 13/11/27* | community simulator | - | 554 | -13.3% | 653 | -14.0% | 1 s |
-| 7 | *Deep Affliction 35/0/16* | community simulator | - | 531 | -17.0% | 620 | -18.4% | 1 s |
-| 8 | *Demonic Pact 2/31/18* | community simulator | - | 525 | -17.9% | 623 | -18.0% | 1 s |
-| 9 | *Affliction* | community simulator | - | 523 | -18.2% | 612 | -19.4% | 1 s |
-| 10 | *Demonic Pact* | community simulator | - | 518 | -18.9% | 613 | -19.3% | 0 s |
+| 1 | [`opt-sb-raid-raid-dps`](builds/opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 594 | +0.0% | 710 | +0.0% | 1 s |
+| 2 | [`ds-ruin-raid`](builds/ds-ruin-raid.md) | ours: hand draft | 22/11/18 | 592 | -0.4% | 710 | -0.1% | 1 s |
+| 3 | [`destruction-ml-raid`](builds/destruction-ml-raid.md) | ours: hand draft | 10/11/30 | 586 | -1.4% | 693 | -2.4% | 0 s |
+| 4 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 564 | -5.1% | 672 | -5.4% | 1 s |
+| 5 | *DS/Ruin* | community simulator | - | 556 | -6.4% | 663 | -6.7% | 1 s |
+| 6 | *Shadow and Flame 13/11/27* | community simulator | - | 517 | -13.0% | 611 | -13.9% | 1 s |
+| 7 | *Deep Affliction 35/0/16* | community simulator | - | 490 | -17.5% | 578 | -18.6% | 1 s |
+| 8 | *Demonic Pact 2/31/18* | community simulator | - | 489 | -17.7% | 583 | -17.9% | 0 s |
+| 9 | *Affliction* | community simulator | - | 484 | -18.5% | 570 | -19.7% | 1 s |
+| 10 | *Demonic Pact* | community simulator | - | 484 | -18.6% | 574 | -19.2% | 0 s |
 
 **demonology-raid**
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`demonology-pact-raid`](builds/demonology-pact-raid.md) | ours: hand draft | 2/31/18 | 687 | +0.0% | 833 | -0.6% | 1 s |
-| 2 | [`demonology-ml-raid`](builds/demonology-ml-raid.md) | ours: hand draft | 2/31/18 | 686 | -0.1% | 838 | +0.0% | 1 s |
-| 3 | *Demonic Pact 2/31/18* | community simulator | - | 664 | -3.4% | 802 | -4.2% | 1 s |
-| 4 | *Demonic Pact* | community simulator | - | 659 | -4.2% | 790 | -5.7% | 1 s |
+| 1 | [`demonology-pact-raid`](builds/demonology-pact-raid.md) | ours: hand draft | 2/31/18 | 646 | +0.0% | 786 | -0.4% | 1 s |
+| 2 | [`demonology-ml-raid`](builds/demonology-ml-raid.md) | ours: hand draft | 2/31/18 | 646 | -0.0% | 789 | +0.0% | 1 s |
+| 3 | *Demonic Pact 2/31/18* | community simulator | - | 625 | -3.3% | 756 | -4.1% | 1 s |
+| 4 | *Demonic Pact* | community simulator | - | 619 | -4.3% | 746 | -5.5% | 1 s |
 
 **incinerate-raid**
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`destruction-incinerate-raid`](builds/destruction-incinerate-raid.md) | ours: hand draft | 9/11/31 | 561 | +0.0% | 647 | +0.0% | 2 s |
+| 1 | [`destruction-incinerate-raid`](builds/destruction-incinerate-raid.md) | ours: hand draft | 9/11/31 | 522 | +0.0% | 603 | +0.0% | 2 s |
 
 ## DPS by gear tier
 
@@ -112,59 +112,60 @@ The spells new in Forever, what the simulators measured them doing, and the buil
 
 | Spell | Tree | Level | Cooldown | What it does (beta tooltip) | Raid: the best raced build casting it (training dummy) | Rotation search: kept changes naming it | Leveling at the fight lab's top level | Note |
 |---|---|---|---|---|---|---|---|---|
-| Curse of the Elements | Affliction | 50 | - | Curses the target for 5 min, reducing Magic resistances by 75 and increases Magic damage taken by 10%. | no damage of its own, 0.4 casts/min: [`demonology-pact-raid`](builds/demonology-pact-raid.md) (demonology-raid) | fire-destro-raid (training dummy): move down below 'if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of  (+0.4%); sb-raid (training dummy): move to the top: if not Curse of the Elements is up: cast Curse of the Elements (+0.3%); demonology-raid (training dummy): move down below 'if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of  (+0.3%) | not cast | Forever's Curse of the Elements; the simulator's warlock rotations cast it. |
-| Wrack | Affliction | 40 | - | Tears the target apart from within, dealing 36 Shadow damage every 1 sec and increasing the damage they take from your other Shadow damage over time… | not cast by any raced build | - | not cast | Affliction capstone: a 6 s channel of 36 Shadow a second that makes Corruption and Bane of Agony tick 10% harder. Probed on the Affliction draft with Siphon Life and Wrack in the rotation (2026-09-28): every placement lost DPS against Shadow Bolt, so no build takes it. |
+| Curse of the Elements | Affliction | 50 | - | Curses the target for 5 min, reducing Magic resistances by 75 and increasing Magic damage taken by 10%. | no damage of its own, 0.4 casts/min: [`demonology-pact-raid`](builds/demonology-pact-raid.md) (demonology-raid) | fire-destro-raid (training dummy): move down below 'if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of  (+0.4%); sb-raid (training dummy): move to the top: if not Curse of the Elements is up: cast Curse of the Elements (+0.3%); demonology-raid (training dummy): move down below 'if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of  (+0.3%) | not cast | Forever's Curse of the Elements; the simulator's warlock rotations cast it. |
+| Wrack | Affliction | 40 | - | Tears the target apart from within, inflicting 36 Shadow damage every 1 sec and increasing the damage they take from your other Shadow damage over ti… | not cast by any raced build | - | not cast | Affliction capstone: a 6 s channel of 36 Shadow a second that makes Corruption and Bane of Agony tick 10% harder. Probed on the Affliction draft with Siphon Life and Wrack in the rotation (2026-09-28): every placement lost DPS against Shadow Bolt, so no build takes it. |
 | Bane of Havoc | Destruction | 30 | - | Afflicts the target for 5 min, causing 15% of all damage done by the Warlock to other targets to also be dealt to the cursed target. | not cast by any raced build | - | not cast | Splits 15% of the warlock's damage to a second target: nothing to split on one boss. |
-| Incinerate | Destruction | 60 | - | Deals 201 to 233 Fire damage to your target and an additional 25% damage if the target is afflicted by Immolate. | 37% of the damage, 13.4 casts/min: [`destruction-incinerate-raid`](builds/destruction-incinerate-raid.md) (incinerate-raid) | - | not cast |  |
+| Conflagrate | Destruction | 60 | 10 sec | Ignites a target that is already afflicted by your Immolate spell, dealing 251 to 313 Fire damage and consuming your Immolate effect. | 11% of the damage, 4.5 casts/min: [`destruction-ml-raid`](builds/destruction-ml-raid.md) (sb-raid) | fire-destro-raid (training dummy): spell probe: insert before the filler: cast Conflagrate (+8.3%); fire-destro-raid (raid): spell probe: insert in the middle: cast Conflagrate (+8.2%); sb-raid (training dummy): spell probe: insert before the filler: cast Conflagrate (+8.0%) | not cast |  |
+| Incinerate | Destruction | 60 | - | Deals 201 to 233 Fire damage to your target and an additional 25% damage if the target is afflicted by Immolate. | 37% of the damage, 13.3 casts/min: [`destruction-incinerate-raid`](builds/destruction-incinerate-raid.md) (incinerate-raid) | - | not cast |  |
 
 ### Builds searched around them
 
 | Idea | Build | Split | Dummy DPS | Raid DPS | Against the class's best | Talent search | Leveling |
 |---|---|---|---|---|---|---|---|
-| Demonic Pact from the simulator's Demonology preset: a raid Demonology build | [`demonology-pact-raid`](builds/demonology-pact-raid.md) | 2/31/18 | 687 | 833 | the class's best raid build on the training dummy; -0.6% in a raid | from `sim preset: Demonic Pact 2/31/18`, 2 moves | - |
-| Incinerate (+25% on an Immolated target) as the filler, with Conflagrate while Immolate burns | [`destruction-incinerate-raid`](builds/destruction-incinerate-raid.md) | 9/11/31 | 561 | 647 | -18.4% on the dummy; -22.7% in a raid. The rotation search on this build inserted Shadow Bolt ahead of Incinerate in its first round (training dummy and raid): Shadow Bolt out-damages Incinerate even on an Immolated target. The entry keeps the Incinerate rotation, so the numbers are the build as designed. | from `start-incinerate-8-11-32`, 2 moves | - |
+| Demonic Pact from the simulator's Demonology preset: a raid Demonology build | [`demonology-pact-raid`](builds/demonology-pact-raid.md) | 2/31/18 | 646 | 786 | the class's best raid build on the training dummy; -0.4% in a raid | from `sim preset: Demonic Pact 2/31/18`, 2 moves | - |
+| Incinerate (+25% on an Immolated target) as the filler, with Conflagrate while Immolate burns | [`destruction-incinerate-raid`](builds/destruction-incinerate-raid.md) | 9/11/31 | 522 | 603 | -19.3% on the dummy; -23.6% in a raid. The rotation search on this build inserted Shadow Bolt ahead of Incinerate in its first round (training dummy and raid): Shadow Bolt out-damages Incinerate even on an Immolated target. The entry keeps the Incinerate rotation, so the numbers are the build as designed. | from `start-incinerate-8-11-32`, 2 moves | - |
 
-The class's best raid DPS build on the training dummy: [`demonology-pact-raid`](builds/demonology-pact-raid.md) (demonology-raid), 687 DPS; in a raid: [`demonology-ml-raid`](builds/demonology-ml-raid.md) (demonology-raid), 838 DPS.
+The class's best raid DPS build on the training dummy: [`demonology-pact-raid`](builds/demonology-pact-raid.md) (demonology-raid), 646 DPS; in a raid: [`demonology-ml-raid`](builds/demonology-ml-raid.md) (demonology-raid), 789 DPS.
 
 ## Raid sim (community simulator, level 60)
 
-[`raidsim/`](raidsim/) runs every raid build through the ElliotWood/Forever simulator (the community's wowsims fork for the beta; commit 40be98e) with that simulator's own gear preset and rotation, 3000 iterations per build, next to the simulator's preset talent builds. **DPS specs are ranked on a boss-level training dummy with only your own buffs** (the class's self-buffs and the spec's standard consumables; no raid or party buffs, no debuffs from others): raw personal DPS decides the raid DPS builds. Tanks are measured in the raid setting (full buffs, boss melee). Same gear and rotation for every build, so only the talents differ. OOM s = seconds per fight out of mana: on the dummy a spec that lives on Blessing of Wisdom and Mana Spring in a raid runs dry, and its mana talents weigh more there than in a raid. The ranking of our builds against the simulator's own is the DPS ranking section above; this section shows the scorer's view and the other settings. Section generated by `_reference/data/render_raidsim_sections.py` on 2026-10-03 — do not hand-edit.
+[`raidsim/`](raidsim/) runs every raid build through the ElliotWood/Forever simulator (the community's wowsims fork for the beta; commit b0f0df3) with that simulator's own gear preset and rotation, 3000 iterations per build, next to the simulator's preset talent builds. **DPS specs are ranked on a boss-level training dummy with only your own buffs** (the class's self-buffs and the spec's standard consumables; no raid or party buffs, no debuffs from others): raw personal DPS decides the raid DPS builds. Tanks are measured in the raid setting (full buffs, boss melee). Same gear and rotation for every build, so only the talents differ. OOM s = seconds per fight out of mana: on the dummy a spec that lives on Blessing of Wisdom and Mana Spring in a raid runs dry, and its mana talents weigh more there than in a raid. The ranking of our builds against the simulator's own is the DPS ranking section above; this section shows the scorer's view and the other settings. Section generated by `_reference/data/render_raidsim_sections.py` on 2026-10-03 — do not hand-edit.
 
 | Spec model | Setting | Build | Split | DPS | vs best | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `affliction-raid` | dummy | `opt-affliction-raid-raid-dps` | 30/0/21 | 640 | +0.0% | 2 | +61% |
-| `affliction-raid` | dummy | `affliction-dot-raid` | 30/0/21 | 633 | -1.1% | 3 | +60% |
-| `affliction-raid` | dummy | sim preset: Demonic Pact 2/31/18 | - | 592 | -7.5% | 0 | - |
-| `affliction-raid` | dummy | sim preset: Demonic Pact | - | 587 | -8.4% | 0 | - |
-| `affliction-raid` | dummy | sim preset: DS/Ruin Pandemic 24/11/16 | - | 574 | -10.4% | 2 | - |
-| `affliction-raid` | dummy | sim preset: Deep Affliction 35/0/16 | - | 568 | -11.3% | 3 | - |
-| `affliction-raid` | dummy | sim preset: DS/Ruin | - | 564 | -11.8% | 1 | - |
-| `affliction-raid` | dummy | sim preset: Affliction | - | 561 | -12.4% | 2 | - |
-| `affliction-raid` | dummy | sim preset: Shadow and Flame 13/11/27 | - | 547 | -14.6% | 1 | - |
-| `demonology-raid` | dummy | `demonology-pact-raid` | 2/31/18 | 687 | +0.0% | 1 | - |
-| `demonology-raid` | dummy | `demonology-ml-raid` | 2/31/18 | 686 | -0.1% | 1 | - |
-| `demonology-raid` | dummy | sim preset: Demonic Pact 2/31/18 | - | 664 | -3.4% | 1 | - |
-| `demonology-raid` | dummy | sim preset: Demonic Pact | - | 659 | -4.2% | 1 | - |
-| `fire-destro-raid` | dummy | `destruction-fire-raid` | 22/11/18 | 612 | +0.0% | 3 | +85% |
-| `fire-destro-raid` | dummy | `opt-fire-destro-raid-raid-dps` | 10/11/30 | 611 | -0.1% | 2 | +98% |
-| `fire-destro-raid` | dummy | sim preset: DS/Ruin Pandemic 24/11/16 | - | 586 | -4.3% | 3 | - |
-| `fire-destro-raid` | dummy | sim preset: DS/Ruin | - | 577 | -5.7% | 3 | - |
-| `fire-destro-raid` | dummy | sim preset: Shadow and Flame 13/11/27 | - | 538 | -12.1% | 2 | - |
-| `fire-destro-raid` | dummy | sim preset: Deep Affliction 35/0/16 | - | 515 | -15.9% | 3 | - |
-| `fire-destro-raid` | dummy | sim preset: Affliction | - | 507 | -17.2% | 3 | - |
-| `fire-destro-raid` | dummy | sim preset: Demonic Pact 2/31/18 | - | 505 | -17.5% | 3 | - |
-| `fire-destro-raid` | dummy | sim preset: Demonic Pact | - | 501 | -18.2% | 3 | - |
-| `incinerate-raid` | dummy | `destruction-incinerate-raid` | 9/11/31 | 561 | +0.0% | 2 | - |
-| `sb-raid` | dummy | `opt-sb-raid-raid-dps` | 22/11/18 | 639 | +0.0% | 1 | +94% |
-| `sb-raid` | dummy | `ds-ruin-raid` | 22/11/18 | 636 | -0.5% | 1 | +92% |
-| `sb-raid` | dummy | `destruction-ml-raid` | 10/11/30 | 628 | -1.7% | 1 | +107% |
-| `sb-raid` | dummy | sim preset: DS/Ruin Pandemic 24/11/16 | - | 605 | -5.3% | 1 | - |
-| `sb-raid` | dummy | sim preset: DS/Ruin | - | 598 | -6.5% | 1 | - |
-| `sb-raid` | dummy | sim preset: Shadow and Flame 13/11/27 | - | 554 | -13.3% | 1 | - |
-| `sb-raid` | dummy | sim preset: Deep Affliction 35/0/16 | - | 531 | -17.0% | 1 | - |
-| `sb-raid` | dummy | sim preset: Demonic Pact 2/31/18 | - | 525 | -17.9% | 1 | - |
-| `sb-raid` | dummy | sim preset: Affliction | - | 523 | -18.2% | 1 | - |
-| `sb-raid` | dummy | sim preset: Demonic Pact | - | 518 | -18.9% | 0 | - |
+| `affliction-raid` | dummy | `opt-affliction-raid-raid-dps` | 30/0/21 | 599 | +0.0% | 2 | +60% |
+| `affliction-raid` | dummy | `affliction-dot-raid` | 30/0/21 | 592 | -1.1% | 3 | +59% |
+| `affliction-raid` | dummy | sim preset: Demonic Pact 2/31/18 | - | 557 | -6.9% | 0 | - |
+| `affliction-raid` | dummy | sim preset: Demonic Pact | - | 551 | -7.9% | 0 | - |
+| `affliction-raid` | dummy | sim preset: DS/Ruin Pandemic 24/11/16 | - | 537 | -10.4% | 2 | - |
+| `affliction-raid` | dummy | sim preset: Deep Affliction 35/0/16 | - | 532 | -11.1% | 3 | - |
+| `affliction-raid` | dummy | sim preset: DS/Ruin | - | 529 | -11.6% | 0 | - |
+| `affliction-raid` | dummy | sim preset: Affliction | - | 526 | -12.2% | 2 | - |
+| `affliction-raid` | dummy | sim preset: Shadow and Flame 13/11/27 | - | 512 | -14.5% | 1 | - |
+| `demonology-raid` | dummy | `demonology-pact-raid` | 2/31/18 | 646 | +0.0% | 1 | - |
+| `demonology-raid` | dummy | `demonology-ml-raid` | 2/31/18 | 646 | -0.0% | 1 | - |
+| `demonology-raid` | dummy | sim preset: Demonic Pact 2/31/18 | - | 625 | -3.3% | 1 | - |
+| `demonology-raid` | dummy | sim preset: Demonic Pact | - | 619 | -4.3% | 1 | - |
+| `fire-destro-raid` | dummy | `destruction-fire-raid` | 22/11/18 | 569 | +0.0% | 3 | +84% |
+| `fire-destro-raid` | dummy | `opt-fire-destro-raid-raid-dps` | 10/11/30 | 568 | -0.1% | 3 | +97% |
+| `fire-destro-raid` | dummy | sim preset: DS/Ruin Pandemic 24/11/16 | - | 544 | -4.4% | 3 | - |
+| `fire-destro-raid` | dummy | sim preset: DS/Ruin | - | 536 | -5.9% | 3 | - |
+| `fire-destro-raid` | dummy | sim preset: Shadow and Flame 13/11/27 | - | 501 | -11.9% | 2 | - |
+| `fire-destro-raid` | dummy | sim preset: Deep Affliction 35/0/16 | - | 478 | -16.1% | 3 | - |
+| `fire-destro-raid` | dummy | sim preset: Demonic Pact 2/31/18 | - | 470 | -17.3% | 3 | - |
+| `fire-destro-raid` | dummy | sim preset: Affliction | - | 470 | -17.4% | 3 | - |
+| `fire-destro-raid` | dummy | sim preset: Demonic Pact | - | 465 | -18.3% | 3 | - |
+| `incinerate-raid` | dummy | `destruction-incinerate-raid` | 9/11/31 | 522 | +0.0% | 2 | - |
+| `sb-raid` | dummy | `opt-sb-raid-raid-dps` | 22/11/18 | 594 | +0.0% | 1 | +94% |
+| `sb-raid` | dummy | `ds-ruin-raid` | 22/11/18 | 592 | -0.4% | 1 | +92% |
+| `sb-raid` | dummy | `destruction-ml-raid` | 10/11/30 | 586 | -1.4% | 0 | +106% |
+| `sb-raid` | dummy | sim preset: DS/Ruin Pandemic 24/11/16 | - | 564 | -5.1% | 1 | - |
+| `sb-raid` | dummy | sim preset: DS/Ruin | - | 556 | -6.4% | 1 | - |
+| `sb-raid` | dummy | sim preset: Shadow and Flame 13/11/27 | - | 517 | -13.0% | 1 | - |
+| `sb-raid` | dummy | sim preset: Deep Affliction 35/0/16 | - | 490 | -17.5% | 1 | - |
+| `sb-raid` | dummy | sim preset: Demonic Pact 2/31/18 | - | 489 | -17.7% | 0 | - |
+| `sb-raid` | dummy | sim preset: Affliction | - | 484 | -18.5% | 1 | - |
+| `sb-raid` | dummy | sim preset: Demonic Pact | - | 484 | -18.6% | 0 | - |
 
 Scorer = the stats model's own score of the allocation for its raid profile (relative to a talentless character; comparable within a spec model only). Tanks: DPS with the tank flag set (threat and mitigation are in the report JSON). Healers are not simulated (the simulator has no healing rotations for them).
 
@@ -172,50 +173,50 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 
 | Spec model | Builds lose to mana | Mana limit: loss / cap | Fit error | Mana talents: DPS lost when removed (simulator) |
 |---|---|---|---|---|
-| `affliction-raid` | 10.7-14.1% | 0.20 / 0.14 | 0.8 | Improved Life Tap 1.9%, Cataclysm 1.9% |
-| `fire-destro-raid` | 10.5-12.8% | 0.17 / 0.90 | 0.5 | Improved Life Tap 2.0%, Cataclysm 1.4% |
-| `sb-raid` | 11.3-14.3% | 0.18 / 0.90 | 0.5 | Improved Life Tap 2.0%, Cataclysm 1.7% |
+| `affliction-raid` | 11.1-14.1% | 0.20 / 0.14 | 0.8 | Cataclysm 1.8%, Improved Life Tap 1.6% |
+| `fire-destro-raid` | 10.5-12.6% | 0.17 / 0.90 | 0.6 | Improved Life Tap 2.0%, Cataclysm 1.5% |
+| `sb-raid` | 11.1-14.6% | 0.18 / 0.90 | 0.5 | Improved Life Tap 1.9%, Cataclysm 1.8% |
 
 **DPS by environment** ([reports](raidsim/)): the same builds on the boss-level training dummy with your own buffs (the ranking above), on an in-game style level-60 dummy (never dies, own buffs), in a full raid (phase-1 gear, every raid buff and debuff minus the one this spec brings, raid consumables) and at the theoretical maximum (best gear preset, everything on, 120 s and 60 s). A build that wins on the dummy but not in the raid column wins on its own buffs only. `opt-<spec>-parse` is the parse build: personal DPS only, the raid brings every buff. Simulator numbers, not measurements.
 
 | Spec model | Build | Split | Dummy | Dummy 60 | Raid | Maximum | Max 60 s |
 |---|---|---|---|---|---|---|---|
-| `affliction-raid` | `opt-affliction-raid-raid-dps` | 30/0/21 | 640 | 738 | 768 | 768 | 796 |
-| `affliction-raid` | `opt-affliction-raid-parse` | 30/0/21 | 634 | 732 | 764 | 764 | 804 |
-| `affliction-raid` | `affliction-dot-raid` | 30/0/21 | 633 | 730 | 763 | 763 | 803 |
-| `affliction-raid` | sim preset: Demonic Pact 2/31/18 | - | 592 | 703 | 714 | 714 | 744 |
-| `affliction-raid` | sim preset: Demonic Pact | - | 587 | 708 | 704 | 704 | 729 |
-| `affliction-raid` | sim preset: DS/Ruin Pandemic 24/11/16 | - | 574 | 659 | 689 | 689 | 725 |
-| `affliction-raid` | sim preset: Deep Affliction 35/0/16 | - | 568 | 649 | 676 | 676 | 698 |
-| `affliction-raid` | sim preset: DS/Ruin | - | 564 | 662 | 683 | 683 | 710 |
-| `affliction-raid` | sim preset: Affliction | - | 561 | 647 | 668 | 668 | 683 |
-| `affliction-raid` | sim preset: Shadow and Flame 13/11/27 | - | 547 | 631 | 657 | 657 | 681 |
-| `demonology-raid` | `demonology-pact-raid` | 2/31/18 | 687 | 823 | 833 | 833 | 862 |
-| `demonology-raid` | `demonology-ml-raid` | 2/31/18 | 686 | 819 | 838 | 838 | 873 |
-| `demonology-raid` | sim preset: Demonic Pact 2/31/18 | - | 664 | 786 | 802 | 802 | 832 |
-| `demonology-raid` | sim preset: Demonic Pact | - | 659 | 792 | 790 | 790 | 813 |
-| `fire-destro-raid` | `destruction-fire-raid` | 22/11/18 | 612 | 702 | 725 | 725 | 769 |
-| `fire-destro-raid` | `opt-fire-destro-raid-raid-dps` | 10/11/30 | 611 | 703 | 717 | 717 | 742 |
-| `fire-destro-raid` | `opt-fire-destro-raid-parse` | 10/11/30 | 597 | 682 | 712 | 712 | 755 |
-| `fire-destro-raid` | sim preset: DS/Ruin Pandemic 24/11/16 | - | 586 | 670 | 693 | 693 | 735 |
-| `fire-destro-raid` | sim preset: DS/Ruin | - | 577 | 672 | 686 | 686 | 714 |
-| `fire-destro-raid` | sim preset: Shadow and Flame 13/11/27 | - | 538 | 615 | 630 | 630 | 650 |
-| `fire-destro-raid` | sim preset: Deep Affliction 35/0/16 | - | 515 | 585 | 602 | 602 | 624 |
-| `fire-destro-raid` | sim preset: Affliction | - | 507 | 581 | 594 | 594 | 607 |
-| `fire-destro-raid` | sim preset: Demonic Pact 2/31/18 | - | 505 | 596 | 602 | 602 | 627 |
-| `fire-destro-raid` | sim preset: Demonic Pact | - | 501 | 602 | 593 | 593 | 614 |
-| `incinerate-raid` | `destruction-incinerate-raid` | 9/11/31 | 561 | 640 | 647 | 647 | 658 |
-| `sb-raid` | `opt-sb-raid-raid-dps` | 22/11/18 | 639 | 730 | 759 | 759 | 787 |
-| `sb-raid` | `ds-ruin-raid` | 22/11/18 | 636 | 725 | 759 | 759 | 796 |
-| `sb-raid` | `destruction-ml-raid` | 10/11/30 | 628 | 720 | 741 | 741 | 759 |
-| `sb-raid` | `opt-sb-raid-parse` | 10/11/30 | 613 | 700 | 733 | 733 | 768 |
-| `sb-raid` | sim preset: DS/Ruin Pandemic 24/11/16 | - | 605 | 692 | 721 | 721 | 763 |
-| `sb-raid` | sim preset: DS/Ruin | - | 598 | 696 | 709 | 709 | 736 |
-| `sb-raid` | sim preset: Shadow and Flame 13/11/27 | - | 554 | 634 | 653 | 653 | 675 |
-| `sb-raid` | sim preset: Deep Affliction 35/0/16 | - | 531 | 603 | 620 | 620 | 643 |
-| `sb-raid` | sim preset: Demonic Pact 2/31/18 | - | 525 | 617 | 623 | 623 | 648 |
-| `sb-raid` | sim preset: Affliction | - | 523 | 601 | 612 | 612 | 629 |
-| `sb-raid` | sim preset: Demonic Pact | - | 518 | 622 | 613 | 613 | 634 |
+| `affliction-raid` | `opt-affliction-raid-raid-dps` | 30/0/21 | 599 | 684 | 722 | 722 | 743 |
+| `affliction-raid` | `opt-affliction-raid-parse` | 30/0/21 | 594 | 681 | 716 | 716 | 750 |
+| `affliction-raid` | `affliction-dot-raid` | 30/0/21 | 592 | 678 | 718 | 718 | 753 |
+| `affliction-raid` | sim preset: Demonic Pact 2/31/18 | - | 557 | 654 | 674 | 674 | 699 |
+| `affliction-raid` | sim preset: Demonic Pact | - | 551 | 660 | 665 | 665 | 686 |
+| `affliction-raid` | sim preset: DS/Ruin Pandemic 24/11/16 | - | 537 | 613 | 648 | 648 | 680 |
+| `affliction-raid` | sim preset: Deep Affliction 35/0/16 | - | 532 | 604 | 637 | 637 | 655 |
+| `affliction-raid` | sim preset: DS/Ruin | - | 529 | 615 | 639 | 639 | 662 |
+| `affliction-raid` | sim preset: Affliction | - | 526 | 602 | 630 | 630 | 640 |
+| `affliction-raid` | sim preset: Shadow and Flame 13/11/27 | - | 512 | 588 | 620 | 620 | 639 |
+| `demonology-raid` | `demonology-pact-raid` | 2/31/18 | 646 | 768 | 786 | 786 | 813 |
+| `demonology-raid` | `demonology-ml-raid` | 2/31/18 | 646 | 763 | 789 | 789 | 822 |
+| `demonology-raid` | sim preset: Demonic Pact 2/31/18 | - | 625 | 732 | 756 | 756 | 781 |
+| `demonology-raid` | sim preset: Demonic Pact | - | 619 | 736 | 746 | 746 | 764 |
+| `fire-destro-raid` | `destruction-fire-raid` | 22/11/18 | 569 | 645 | 674 | 674 | 715 |
+| `fire-destro-raid` | `opt-fire-destro-raid-raid-dps` | 10/11/30 | 568 | 648 | 669 | 669 | 692 |
+| `fire-destro-raid` | `opt-fire-destro-raid-parse` | 10/11/30 | 555 | 629 | 665 | 665 | 703 |
+| `fire-destro-raid` | sim preset: DS/Ruin Pandemic 24/11/16 | - | 544 | 615 | 645 | 645 | 679 |
+| `fire-destro-raid` | sim preset: DS/Ruin | - | 536 | 616 | 638 | 638 | 662 |
+| `fire-destro-raid` | sim preset: Shadow and Flame 13/11/27 | - | 501 | 567 | 587 | 587 | 606 |
+| `fire-destro-raid` | sim preset: Deep Affliction 35/0/16 | - | 478 | 537 | 560 | 560 | 575 |
+| `fire-destro-raid` | sim preset: Demonic Pact 2/31/18 | - | 470 | 549 | 561 | 561 | 582 |
+| `fire-destro-raid` | sim preset: Affliction | - | 470 | 533 | 553 | 553 | 560 |
+| `fire-destro-raid` | sim preset: Demonic Pact | - | 465 | 554 | 552 | 552 | 570 |
+| `incinerate-raid` | `destruction-incinerate-raid` | 9/11/31 | 522 | 588 | 603 | 603 | 609 |
+| `sb-raid` | `opt-sb-raid-raid-dps` | 22/11/18 | 594 | 674 | 710 | 710 | 732 |
+| `sb-raid` | `ds-ruin-raid` | 22/11/18 | 592 | 669 | 710 | 710 | 741 |
+| `sb-raid` | `destruction-ml-raid` | 10/11/30 | 586 | 666 | 693 | 693 | 707 |
+| `sb-raid` | `opt-sb-raid-parse` | 10/11/30 | 573 | 650 | 686 | 686 | 717 |
+| `sb-raid` | sim preset: DS/Ruin Pandemic 24/11/16 | - | 564 | 638 | 672 | 672 | 708 |
+| `sb-raid` | sim preset: DS/Ruin | - | 556 | 643 | 663 | 663 | 684 |
+| `sb-raid` | sim preset: Shadow and Flame 13/11/27 | - | 517 | 586 | 611 | 611 | 628 |
+| `sb-raid` | sim preset: Deep Affliction 35/0/16 | - | 490 | 555 | 578 | 578 | 597 |
+| `sb-raid` | sim preset: Demonic Pact 2/31/18 | - | 489 | 570 | 583 | 583 | 604 |
+| `sb-raid` | sim preset: Affliction | - | 484 | 553 | 570 | 570 | 581 |
+| `sb-raid` | sim preset: Demonic Pact | - | 484 | 573 | 574 | 574 | 591 |
 
 **Classic Era check** — [`../talents/classic-baseline/raidsim/`](../talents/classic-baseline/raidsim/): the same run of our Classic-era community builds through the upstream wowsims/classic simulator (commit 7779ebb, its phase-1 presets), which the scorer's classic-era models are calibrated against. Our builds there are the community's; a preset ahead of them means the simulator's rotation prefers other talents.
 
@@ -238,9 +239,9 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
 |---|---|---|---|
-| Raid DPS, Shadow Bolt | sb-raid | [22/11/18](builds/opt-sb-raid-raid-dps.md) (+107.1%) | [ds-ruin-raid](builds/ds-ruin-raid.md) |
-| Raid DPS, Affliction DoTs | affliction-raid | [30/0/21](builds/opt-affliction-raid-raid-dps.md) (+60.7%) | [affliction-dot-raid](builds/affliction-dot-raid.md) |
-| Raid DPS, Fire Destruction | fire-destro-raid | [10/11/30](builds/opt-fire-destro-raid-raid-dps.md) (+97.7%) | [destruction-fire-raid](builds/destruction-fire-raid.md) |
+| Raid DPS, Shadow Bolt | sb-raid | [22/11/18](builds/opt-sb-raid-raid-dps.md) (+106.7%) | [ds-ruin-raid](builds/ds-ruin-raid.md) |
+| Raid DPS, Affliction DoTs | affliction-raid | [30/0/21](builds/opt-affliction-raid-raid-dps.md) (+60.2%) | [affliction-dot-raid](builds/affliction-dot-raid.md) |
+| Raid DPS, Fire Destruction | fire-destro-raid | [10/11/30](builds/opt-fire-destro-raid-raid-dps.md) (+96.9%) | [destruction-fire-raid](builds/destruction-fire-raid.md) |
 
 Model findings: The Shadow Bolt raid build is 10/11/30: Demonic Sacrifice plus 30 Destruction for Conflagrate → Shadow and Flame (+10% Shadow), so DS/Ruin survives in a new shape. Affliction 31/11/9 is a real DoT spec (Malevolence, Pandemic, Soul Siphon, Drain Hope) with Demonic Sacrifice. Fire Destruction 9/11/31 (Aftermath, Conflagrate, Fire and Brimstone, Incinerate) scores +164% against its own baseline; leveling stays Affliction with a Voidwalker (31/16/4).
 

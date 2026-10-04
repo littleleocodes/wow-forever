@@ -24,7 +24,7 @@ Allocation adopted on 2026-09-28 from `opt-prot-tank-raid-tank`, the best build 
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Redoubt** | 5/5 | changed | Damaging melee attacks against you have a 10% chance to increase your chance to block by 30%. Lasts 10 sec or 5 blocks. |
+| **Redoubt** | 5/5 | changed | Damaging melee attacks against you have a 10% chance to increase your chance to block by 20%. Lasts 10 sec or 5 blocks. |
 | **Precision** | 3/3 | changed | Improves your chance to hit by 3%. |
 | **Anticipation** | 5/5 | changed | Increases your Defense Skill by 20. |
 | **Improved Seal of Fury** | 1/1 | **NEW** | When Seal of Fury's shield is fully absorbed, restore 60 Mana, increased by 15% per level the attacker is above you, up to 45%. |
@@ -45,7 +45,7 @@ Allocation adopted on 2026-09-28 from `opt-prot-tank-raid-tank`, the best build 
 | **Sanctified Judgement** | 3/3 | **NEW** | Gives your Judgement ability a 100% chance to return 60% of the Mana cost of the judged seal. |
 | **Sacred Arbiter** | 1/1 | **NEW** | Increases the damage of your Holy Strike ability by 20% and causes it to refresh all Judgement effects on the target. |
 | **Vengeance** | 3/3 | changed | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times. |
-| **Champion of the Light** | 3/3 | **NEW** | Increases your spell damage and healing by up to 100% of your Intellect. |
+| **Champion of the Light** | 3/3 | **NEW** | Increases your spell damage by up to 60% of your Intellect. |
 | **Improved Judgement** | 2/2 | changed | Decreases the cooldown of your Judgement ability by 2 sec. |
 | **Eye for an Eye** | 1/2 | changed | All critical strikes against you cause 5% of the damage taken to the attacker as well. The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health. |
 
@@ -73,15 +73,15 @@ Allocation adopted on 2026-09-28 from `opt-prot-tank-raid-tank`, the best build 
 
 ## Rank among our builds and the community simulator's
 
-**1 of 5** for `prot-tank` by tank value in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 5** for `prot-tank` by tank value in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | **[`prot-tank`](prot-tank.md)** | ours: hand draft | 0/23/28 | 1.000 | +0.0% | 564 | 995 |
-| 2 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 0/23/28 | 0.984 | -1.6% | 544 | 990 |
-| 3 | *Protection 0/45/6* | community simulator | - | 0.891 | -10.9% | 459 | 1027 |
-| 4 | *P4 Prot* | community simulator | - | 0.871 | -12.9% | 472 | 1100 |
-| 5 | *P5 Prot* | community simulator | - | 0.864 | -13.6% | 465 | 1103 |
+| 1 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 0/32/19 | 1.013 | +0.0% | 488 | 916 |
+| 2 | **[`prot-tank`](prot-tank.md)** | ours: hand draft | 0/23/28 | 1.000 | -1.3% | 516 | 989 |
+| 3 | *Protection 0/45/6* | community simulator | - | 0.926 | -8.6% | 459 | 1028 |
+| 4 | *P4 Prot* | community simulator | - | 0.906 | -10.6% | 471 | 1100 |
+| 5 | *P5 Prot* | community simulator | - | 0.900 | -11.2% | 464 | 1100 |
 
 ## Rotation (community simulator, raid setting)
 
@@ -99,7 +99,7 @@ Before the pull: at -30s: cast Righteous Fury; at -3.5s: cast Seal of Righteousn
 | 1 | cast Templar's Bulwark | 0.3 |
 | 2 | use every other cooldown when ready | as ready |
 | 3 | if time left on Seal of Righteousness ≤ 1s: cast Seal of Righteousness | 2.3 |
-| 4 | cast Consecration | 6.6 |
+| 4 | cast Consecration | 6.5 |
 | 5 | cast Holy Strike | 5.7 |
 | 6 | if health % < 10%: cast Lay on Hands | 0.3 |
 | 7 | cast Retribution Aura | 25.5 |
@@ -111,11 +111,11 @@ Damage by ability (threat for tanks):
 | Ability | [`prot-tank`](prot-tank.md) |
 |---|---|
 | Auto Attack | 26% |
-| Seal of Righteousness | 16% |
 | Judgement of Righteousness | 15% |
 | Consecration | 14% |
-| Holy Strike | 10% |
-| Lay on Hands | 9% |
+| Seal of Righteousness | 14% |
+| Holy Strike | 11% |
+| Lay on Hands | 10% |
 | Retribution Aura | 5% |
 | OtherActionManaGain | 4% |
 | Thorns | 1% |

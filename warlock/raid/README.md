@@ -6,10 +6,10 @@
 
 | # | Spec and build | Full raid DPS | Training dummy DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Demonology](demonology.md) — Demonology — Demonic Pact | 833 | 687 | 653 | best |
-| 2 | [Affliction](affliction.md) — Affliction (optimized) | 768 | 640 | 618 | -8% |
-| 3 | [Shadow Bolt hybrid](shadow-bolt-hybrid.md) — Shadow Bolt hybrid (optimized) | 759 | 639 | 613 | -9% |
-| 4 | [Destruction](destruction.md) — Destruction — Raid 🔬 | 741 | 628 | 603 | -11% |
+| 1 | [Demonology](demonology.md) — Demonology — Demonic Pact | 786 | 646 | 616 | best |
+| 2 | [Affliction](affliction.md) — Affliction (optimized) | 722 | 599 | 579 | -8% |
+| 3 | [Shadow Bolt hybrid](shadow-bolt-hybrid.md) — Shadow Bolt hybrid (optimized) | 710 | 594 | 571 | -10% |
+| 4 | [Destruction](destruction.md) — Destruction — Raid 🔬 | 693 | 586 | 564 | -12% |
 
 **By gear tier**: each damage spec with its best talents for each tier, in its own gear (full raid / training dummy DPS; [every class](../../_reference/dps-rankings.md)):
 

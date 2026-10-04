@@ -4,38 +4,38 @@
 
 | Class | Spec model | Best of our builds | DPS | Best sim preset | DPS | Our optimizer build | DPS |
 |---|---|---|---|---|---|---|---|
-| mage | `arcane-dps` | `arcane-blast-raid` | 602 | - | - | - | - |
-| mage | `fire-raid` | `fire-raid` | 598 | Fire DPS | 579 | `opt-fire-raid-raid-dps` | 598 |
-| mage | `frost-raid` | `frost-ml-raid` | 647 | Frost DPS | 603 | `opt-frost-raid-raid-dps` | 643 |
-| mage | `frostfire-raid` | `frostfire-raid` | 615 | - | - | - | - |
-| priest | `shadow-dps` | `opt-shadow-dps-raid-dps` | 632 | Shadow | 618 | `opt-shadow-dps-raid-dps` | 632 |
-| priest | `smite-dps` | `smite-discipline-raid` | 444 | - | - | - | - |
-| warlock | `affliction-raid` | `opt-affliction-raid-raid-dps` | 640 | Demonic Pact 2/31/18 | 592 | `opt-affliction-raid-raid-dps` | 640 |
-| warlock | `demonology-raid` | `demonology-pact-raid` | 687 | - | - | - | - |
-| warlock | `fire-destro-raid` | `destruction-fire-raid` | 612 | DS/Ruin Pandemic 24/11/16 | 586 | `opt-fire-destro-raid-raid-dps` | 611 |
-| warlock | `incinerate-raid` | `destruction-incinerate-raid` | 561 | - | - | - | - |
-| warlock | `sb-raid` | `opt-sb-raid-raid-dps` | 639 | DS/Ruin Pandemic 24/11/16 | 605 | `opt-sb-raid-raid-dps` | 639 |
-| hunter | `bm-raid` | `beast-mastery-raid` | 465 | - | - | - | - |
-| hunter | `melee-dps` | `survival-raid` | 450 | - | - | - | - |
-| hunter | `mm-lonewolf-raid` | `marksmanship-ml-raid` | 447 | Beast Mastery 35/16/0 | 367 | `opt-mm-lonewolf-raid-raid-dps` | 446 |
-| hunter | `mm-raid` | `bm-mm-raid` | 457 | Beast Mastery 35/16/0 | 421 | `opt-mm-raid-raid-dps` | 457 |
-| warrior | `arms-2h-raid` | `arms-2h-raid` | 311 | DPS | 292 | `opt-arms-2h-raid-raid-dps` | 310 |
-| warrior | `arms-battle-raid` | `arms-battle-raid` | 391 | - | - | - | - |
-| warrior | `fury-dw-raid` | `fury-dw-raid` | 390 | DPS | 371 | `opt-fury-dw-raid-raid-dps` | 390 |
-| warrior | `prot-tank` | `prot-raid-tank` | 427 | Protection | 404 | `opt-prot-tank-raid-tank` | 426 |
+| mage | `arcane-dps` | `arcane-blast-raid` | 571 | - | - | - | - |
+| mage | `fire-raid` | `fire-raid` | 559 | Fire DPS | 543 | `opt-fire-raid-raid-dps` | 559 |
+| mage | `frost-raid` | `frost-ml-raid` | 617 | Frost DPS | 576 | `opt-frost-raid-raid-dps` | 614 |
+| mage | `frostfire-raid` | `frostfire-ml-raid` | 499 | - | - | - | - |
+| priest | `shadow-dps` | `opt-shadow-dps-raid-dps` | 589 | Shadow | 588 | `opt-shadow-dps-raid-dps` | 589 |
+| priest | `smite-dps` | `smite-discipline-raid` | 410 | - | - | - | - |
+| warlock | `affliction-raid` | `opt-affliction-raid-raid-dps` | 599 | Demonic Pact 2/31/18 | 557 | `opt-affliction-raid-raid-dps` | 599 |
+| warlock | `demonology-raid` | `demonology-pact-raid` | 646 | - | - | - | - |
+| warlock | `fire-destro-raid` | `destruction-fire-raid` | 569 | DS/Ruin Pandemic 24/11/16 | 544 | `opt-fire-destro-raid-raid-dps` | 568 |
+| warlock | `incinerate-raid` | `destruction-incinerate-raid` | 522 | - | - | - | - |
+| warlock | `sb-raid` | `opt-sb-raid-raid-dps` | 594 | DS/Ruin Pandemic 24/11/16 | 564 | `opt-sb-raid-raid-dps` | 594 |
+| hunter | `bm-raid` | `beast-mastery-raid` | 490 | - | - | - | - |
+| hunter | `melee-dps` | `survival-raid` | 445 | - | - | - | - |
+| hunter | `mm-lonewolf-raid` | `marksmanship-ml-raid` | 428 | Beast Mastery 35/16/0 | 368 | `opt-mm-lonewolf-raid-raid-dps` | 427 |
+| hunter | `mm-raid` | `bm-mm-raid` | 478 | Beast Mastery 35/16/0 | 456 | `opt-mm-raid-raid-dps` | 478 |
+| warrior | `arms-2h-raid` | `opt-arms-2h-raid-raid-dps` | 347 | DPS | 329 | `opt-arms-2h-raid-raid-dps` | 347 |
+| warrior | `arms-battle-raid` | `arms-community-parse` | 434 | - | - | - | - |
+| warrior | `fury-dw-raid` | `opt-fury-dw-raid-raid-dps` | 422 | DPS | 409 | `opt-fury-dw-raid-raid-dps` | 422 |
+| warrior | `prot-tank` | `opt-prot-tank-raid-tank` | 546 | Protection | 496 | `opt-prot-tank-raid-tank` | 546 |
 | rogue | `assassination-raid` | `assassination-seal-fate-raid` | 407 | - | - | - | - |
 | rogue | `combat-daggers-raid` | `opt-combat-daggers-raid-raid-dps` | 419 | Combat Dual-Wield 15/33/3 | 394 | `opt-combat-daggers-raid-raid-dps` | 419 |
-| rogue | `combat-swords-raid` | `combat-swords-raid` | 394 | Improved Expose Armor (SS) | 394 | `opt-combat-swords-raid-raid-dps` | 376 |
+| rogue | `combat-swords-raid` | `combat-swords-raid` | 393 | Improved Expose Armor (SS) | 393 | `opt-combat-swords-raid-raid-dps` | 376 |
 | rogue | `subtlety-raid` | `subtlety-hemo-raid` | 386 | - | - | - | - |
-| paladin | `prot-tank` | `prot-tank` | 518 | P4 Prot | 422 | `opt-prot-tank-raid-tank` | 502 |
-| paladin | `ret-dps` | `retribution-ml-raid` | 546 | P4/P5 Ret | 529 | `opt-ret-dps-raid-dps` | 544 |
-| paladin | `seal-of-fury-raid` | `ret-raid-dps` | 415 | - | - | - | - |
-| shaman | `elemental-dps` | `opt-elemental-dps-raid-dps` | 440 | Elemental 31/6/14 | 434 | `opt-elemental-dps-raid-dps` | 440 |
-| shaman | `enhancement-dps` | `opt-enhancement-dps-raid-dps` | 413 | Level 60 | 405 | `opt-enhancement-dps-raid-dps` | 413 |
+| paladin | `prot-tank` | `prot-tank` | 469 | P4 Prot | 413 | `opt-prot-tank-raid-tank` | 413 |
+| paladin | `ret-dps` | `retribution-ml-raid` | 486 | P4/P5 Ret | 472 | `opt-ret-dps-raid-dps` | 485 |
+| paladin | `seal-of-fury-raid` | `ret-raid-dps` | 359 | - | - | - | - |
+| shaman | `elemental-dps` | `elemental-raid-dps` | 410 | Elemental 31/6/14 | 404 | `opt-elemental-dps-raid-dps` | 408 |
+| shaman | `enhancement-dps` | `opt-enhancement-dps-raid-dps` | 400 | Level 60 | 393 | `opt-enhancement-dps-raid-dps` | 400 |
 | shaman | `stormcaller-dps` | - | - | - | - | - | - |
-| druid | `balance-dps` | `balance-moonkin-raid` | 534 | Balance | 485 | `opt-balance-dps-raid-dps` | 534 |
-| druid | `feral-bear-tank` | `feral-bear-tank` | 383 | Bear Tank 0/31/20 | 362 | `opt-feral-bear-tank-raid-tank` | 383 |
-| druid | `feral-cat-dps` | `opt-feral-cat-dps-raid-dps` | 370 | Feral Cat 9/35/7 | 370 | `opt-feral-cat-dps-raid-dps` | 370 |
+| druid | `balance-dps` | `balance-moonkin-raid` | 497 | Balance | 452 | `opt-balance-dps-raid-dps` | 497 |
+| druid | `feral-bear-tank` | `feral-bear-tank` | 395 | Bear Tank 0/31/20 | 372 | `opt-feral-bear-tank-raid-tank` | 395 |
+| druid | `feral-cat-dps` | `opt-feral-cat-dps-raid-dps` | 349 | Feral Cat 9/35/7 | 339 | `opt-feral-cat-dps-raid-dps` | 349 |
 
 ## DPS by environment: dummy, raid, maximum
 
@@ -43,47 +43,47 @@ The best of our builds per spec model on the boss-level training dummy with your
 
 | Class | Game | Spec model | Best build | Dummy | Dummy 60 | Raid | Maximum | Max 60 s | Parse build (max) | Best preset (max) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| mage | Forever | `arcane-dps` | `arcane-blast-raid` (35/11/5) | 602 | 690 | 690 | 690 | 756 | - | Arcane DPS 681 |
-| mage | Forever | `fire-raid` | `fire-raid` (12/34/5) | 598 | 689 | 747 | 747 | 810 | `opt-fire-raid-parse` 747 | Fire 0/35/16 720 |
-| mage | Forever | `frost-raid` | `frost-ml-raid` (21/0/30) | 647 | 710 | 739 | 739 | 750 | `opt-frost-raid-parse` 706 | Frost 14/0/37 702 |
-| mage | Forever | `frostfire-raid` | `frostfire-ml-raid` (4/31/16) | 608 | 737 | 734 | 734 | 679 | - | - |
+| mage | Forever | `arcane-dps` | `arcane-blast-raid` (35/11/5) | 571 | 654 | 659 | 659 | 723 | - | Arcane DPS 650 |
+| mage | Forever | `fire-raid` | `fire-raid` (12/34/5) | 559 | 644 | 700 | 700 | 748 | `opt-fire-raid-parse` 645 | Fire 0/35/16 671 |
+| mage | Forever | `frost-raid` | `frost-ml-raid` (21/0/30) | 617 | 678 | 705 | 705 | 715 | `opt-frost-raid-parse` 673 | Frost 14/0/37 670 |
+| mage | Forever | `frostfire-raid` | `frostfire-ml-raid` (4/31/16) | 499 | 593 | 614 | 614 | 675 | - | - |
 | mage | Classic | `fire-raid` | `fire-raid` (17/31/3) | 495 | - | 1003 | 1014 | 1025 | - | Frost DPS 752 |
 | mage | Classic | `frost-raid` | `frost-arcane-power-raid` (31/0/20) | 461 | - | 781 | 836 | 866 | - | Frost DPS 752 |
-| priest | Forever | `shadow-dps` | `opt-shadow-dps-raid-dps` (20/0/31) | 632 | 689 | 724 | 724 | 698 | `opt-shadow-dps-parse` 711 | Shadow 710 |
-| priest | Forever | `smite-dps` | `smite-discipline-raid` (31/17/3) | 444 | 484 | 602 | 602 | 661 | - | Smite 597 |
-| warlock | Forever | `affliction-raid` | `opt-affliction-raid-raid-dps` (30/0/21) | 640 | 738 | 768 | 768 | 796 | `opt-affliction-raid-parse` 764 | Demonic Pact 2/31/18 714 |
-| warlock | Forever | `demonology-raid` | `demonology-ml-raid` (2/31/18) | 686 | 819 | 838 | 838 | 873 | - | Demonic Pact 2/31/18 802 |
-| warlock | Forever | `fire-destro-raid` | `destruction-fire-raid` (22/11/18) | 612 | 702 | 725 | 725 | 769 | `opt-fire-destro-raid-parse` 712 | DS/Ruin Pandemic 24/11/16 693 |
-| warlock | Forever | `incinerate-raid` | `destruction-incinerate-raid` (9/11/31) | 561 | 640 | 647 | 647 | 658 | - | - |
-| warlock | Forever | `sb-raid` | `opt-sb-raid-raid-dps` (22/11/18) | 639 | 730 | 759 | 759 | 787 | `opt-sb-raid-parse` 733 | DS/Ruin Pandemic 24/11/16 721 |
+| priest | Forever | `shadow-dps` | `opt-shadow-dps-raid-dps` (18/0/33) | 589 | 635 | 679 | 679 | 675 | `opt-shadow-dps-parse` 679 | Shadow 680 |
+| priest | Forever | `smite-dps` | `smite-discipline-raid` (31/17/3) | 410 | 443 | 560 | 560 | 608 | - | Smite 556 |
+| warlock | Forever | `affliction-raid` | `opt-affliction-raid-raid-dps` (30/0/21) | 599 | 684 | 722 | 722 | 743 | `opt-affliction-raid-parse` 716 | Demonic Pact 2/31/18 674 |
+| warlock | Forever | `demonology-raid` | `demonology-ml-raid` (2/31/18) | 646 | 763 | 789 | 789 | 822 | - | Demonic Pact 2/31/18 756 |
+| warlock | Forever | `fire-destro-raid` | `destruction-fire-raid` (22/11/18) | 569 | 645 | 674 | 674 | 715 | `opt-fire-destro-raid-parse` 665 | DS/Ruin Pandemic 24/11/16 645 |
+| warlock | Forever | `incinerate-raid` | `destruction-incinerate-raid` (9/11/31) | 522 | 588 | 603 | 603 | 609 | - | - |
+| warlock | Forever | `sb-raid` | `opt-sb-raid-raid-dps` (22/11/18) | 594 | 674 | 710 | 710 | 732 | `opt-sb-raid-parse` 686 | DS/Ruin Pandemic 24/11/16 672 |
 | warlock | Classic | `sb-raid` | `sm-ruin-raid` (30/0/21) | 599 | - | 1092 | 1105 | 1153 | - | - |
-| hunter | Forever | `bm-raid` | `beast-marks-ml-raid` (22/29/0) | 451 | 489 | 821 | 821 | 839 | `beast-mastery-ml-parse` 812 | Beast Mastery 35/16/0 762 |
-| hunter | Forever | `melee-dps` | `melee-survival-raid` (5/11/35) | 426 | 501 | 991 | 991 | 1026 | `survival-ml-parse` 991 | - |
-| hunter | Forever | `mm-lonewolf-raid` | `marksmanship-ml-parse` (7/44/0) | 446 | 480 | 935 | 935 | 957 | `marksmanship-ml-parse` 935 | Marksmanship 748 |
-| hunter | Forever | `mm-raid` | `opt-mm-raid-parse` (22/29/0) | 439 | 474 | 771 | 785 | 803 | `opt-mm-raid-parse` 785 | Marksmanship 804 |
+| hunter | Forever | `bm-raid` | `beast-mastery-ml-parse` (31/20/0) | 478 | 519 | 868 | 868 | 869 | `beast-mastery-ml-parse` 868 | Beast Mastery 35/16/0 822 |
+| hunter | Forever | `melee-dps` | `survival-ml-parse` (5/14/32) | 342 | 409 | 1041 | 1041 | 1078 | `survival-ml-parse` 1041 | - |
+| hunter | Forever | `mm-lonewolf-raid` | `marksmanship-ml-parse` (7/44/0) | 426 | 458 | 901 | 901 | 923 | `marksmanship-ml-parse` 901 | Marksmanship 723 |
+| hunter | Forever | `mm-raid` | `opt-mm-raid-parse` (31/20/0) | 457 | 495 | 838 | 853 | 876 | `opt-mm-raid-parse` 853 | Marksmanship 822 |
 | hunter | Classic | `mm-raid` | `bm-mm-raid` (20/31/0) | 405 | - | 1049 | 1085 | 1146 | - | Marksmanship 1087 |
-| warrior | Forever | `arms-2h-raid` | `arms-2h-raid` (19/32/0) | 311 | 342 | 662 | 662 | 752 | `opt-arms-2h-raid-parse` 661 | DPS 630 |
-| warrior | Forever | `arms-battle-raid` | `arms-community-parse` (37/14/0) | 387 | 440 | 792 | 792 | 790 | `arms-community-parse` 792 | Arms 39/12/0 778 |
-| warrior | Forever | `fury-dw-raid` | `opt-fury-dw-raid-raid-dps` (13/38/0) | 390 | 404 | 710 | 710 | 745 | `opt-fury-dw-raid-parse` 710 | DPS 683 |
-| warrior | Forever | `prot-tank` | `prot-raid-tank` (14/5/32) | 232 | 260 | 427 | 323 | 319 | - | Protection 303 |
+| warrior | Forever | `arms-2h-raid` | `opt-arms-2h-raid-raid-dps` (20/31/0) | 347 | 410 | 733 | 733 | 828 | `opt-arms-2h-raid-parse` 733 | DPS 692 |
+| warrior | Forever | `arms-battle-raid` | `arms-community-parse` (37/14/0) | 434 | 506 | 890 | 890 | 878 | `arms-community-parse` 890 | Arms 39/12/0 884 |
+| warrior | Forever | `fury-dw-raid` | `opt-fury-dw-raid-raid-dps` (19/32/0) | 422 | 451 | 797 | 797 | 831 | `opt-fury-dw-raid-parse` 797 | DPS 781 |
+| warrior | Forever | `prot-tank` | `opt-prot-tank-raid-tank` (14/5/32) | 282 | 317 | 546 | 405 | 397 | - | Protection 368 |
 | warrior | Classic | `fury-dw-raid` | `fury-dw-raid` (17/34/0) | 527 | - | 1843 | 2163 | 2322 | - | DPS 2163 |
-| rogue | Forever | `assassination-raid` | `assassination-ml-raid` (30/19/2) | 394 | 461 | 687 | 696 | 739 | - | Mutilate 658 |
-| rogue | Forever | `combat-daggers-raid` | `combat-ml-raid` (16/33/2) | 402 | 469 | 720 | 729 | 827 | `opt-combat-daggers-raid-parse` 704 | Combat Dual-Wield 15/33/3 711 |
-| rogue | Forever | `combat-swords-raid` | `combat-swords-raid` (19/32/0) | 394 | 463 | 687 | 687 | 782 | `opt-combat-swords-raid-parse` 682 | Sinister Strike 696 |
-| rogue | Forever | `subtlety-raid` | `subtlety-hemo-raid` (20/0/31) | 386 | 440 | 653 | 653 | 719 | - | Subtlety Hemo 15/0/36 615 |
+| rogue | Forever | `assassination-raid` | `assassination-ml-raid` (30/19/2) | 394 | 462 | 734 | 743 | 787 | - | Mutilate 703 |
+| rogue | Forever | `combat-daggers-raid` | `combat-ml-raid` (16/33/2) | 402 | 468 | 772 | 781 | 882 | `opt-combat-daggers-raid-parse` 757 | Combat Dual-Wield 15/33/3 763 |
+| rogue | Forever | `combat-swords-raid` | `combat-swords-raid` (19/32/0) | 393 | 463 | 731 | 731 | 827 | `opt-combat-swords-raid-parse` 726 | Sinister Strike 741 |
+| rogue | Forever | `subtlety-raid` | `subtlety-hemo-raid` (20/0/31) | 386 | 439 | 686 | 686 | 749 | - | Subtlety Hemo 15/0/36 647 |
 | rogue | Classic | `combat-daggers-raid` | `combat-daggers-raid` (15/31/5) | 440 | - | 1259 | 1275 | 1367 | - | Backstab 1297 |
 | rogue | Classic | `combat-swords-raid` | `combat-swords-raid` (19/32/0) | 419 | - | 1267 | 1286 | 1395 | - | Sinister Strike 1292 |
-| paladin | Forever | `prot-tank` | `prot-tank` (0/23/28) | 153 | 184 | 518 | 518 | 520 | - | P4 Prot 422 |
-| paladin | Forever | `ret-dps` | `retribution-ml-raid` (11/8/32) | 546 | 608 | 1015 | 1015 | 1002 | `opt-ret-dps-parse` 1009 | P4/P5 Ret 983 |
-| paladin | Forever | `seal-of-fury-raid` | `ret-raid-dps` (17/0/34) | 415 | 459 | 738 | 738 | 749 | - | - |
+| paladin | Forever | `prot-tank` | `prot-tank` (0/23/28) | 144 | 174 | 469 | 469 | 471 | - | P4 Prot 413 |
+| paladin | Forever | `ret-dps` | `retribution-ml-raid` (11/8/32) | 486 | 543 | 890 | 890 | 882 | `opt-ret-dps-parse` 888 | P4/P5 Ret 861 |
+| paladin | Forever | `seal-of-fury-raid` | `ret-raid-dps` (17/0/34) | 359 | 397 | 635 | 635 | 641 | - | - |
 | paladin | Classic | `ret-dps` | `ret-raid-dps` (11/0/40) | 213 | - | 661 | 661 | 671 | - | P4/P5 Ret 710 |
-| shaman | Forever | `elemental-dps` | `elemental-raid-dps` (29/22/0) | 438 | 538 | 555 | 555 | 570 | `opt-elemental-dps-parse` 553 | Elemental 31/6/14 549 |
-| shaman | Forever | `enhancement-dps` | `enhancement-ml-raid` (19/32/0) | 409 | 458 | 801 | 801 | 862 | `opt-enhancement-dps-parse` 755 | Level 60 755 |
+| shaman | Forever | `elemental-dps` | `elemental-raid-dps` (29/22/0) | 410 | 504 | 524 | 524 | 539 | `opt-elemental-dps-parse` 518 | Elemental 31/6/14 514 |
+| shaman | Forever | `enhancement-dps` | `enhancement-ml-raid` (19/32/0) | 397 | 445 | 783 | 783 | 843 | `opt-enhancement-dps-parse` 747 | Level 60 737 |
 | shaman | Classic | `elemental-dps` | `elemental-raid-dps` (31/0/20) | 298 | - | 730 | 1051 | 1184 | - | Level 60 1014 |
 | shaman | Classic | `enhancement-dps` | `enhancement-raid-support` (0/31/20) | 222 | - | 777 | 938 | 958 | - | Level 60 938 |
-| druid | Forever | `balance-dps` | `balance-moonkin-raid` (33/5/13) | 534 | 615 | 617 | 617 | 612 | `opt-balance-dps-parse` 617 | Moonkin 38/0/13 609 |
-| druid | Forever | `feral-bear-tank` | `feral-bear-tank` (7/35/9) | 201 | 223 | 383 | 383 | 373 | - | Bear Tank 0/31/20 362 |
-| druid | Forever | `feral-cat-dps` | `opt-feral-cat-dps-raid-dps` (9/35/7) | 370 | 404 | 576 | 576 | 605 | `opt-feral-cat-dps-parse` 576 | Feral Cat 9/35/7 576 |
+| druid | Forever | `balance-dps` | `balance-moonkin-raid` (33/5/13) | 497 | 568 | 576 | 576 | 573 | `opt-balance-dps-parse` 576 | Moonkin 38/0/13 570 |
+| druid | Forever | `feral-bear-tank` | `feral-bear-tank` (7/35/9) | 205 | 227 | 395 | 395 | 383 | - | Bear Tank 0/31/20 372 |
+| druid | Forever | `feral-cat-dps` | `opt-feral-cat-dps-raid-dps` (9/31/11) | 349 | 384 | 538 | 538 | 573 | `opt-feral-cat-dps-parse` 538 | Feral Cat 9/35/7 523 |
 | druid | Classic | `balance-dps` | `balance-moonkin-raid` (35/0/16) | 224 | - | 567 | 740 | 746 | - | Balance 741 |
 | druid | Classic | `feral-cat-dps` | `feral-cat-dps` (14/32/5) | 239 | - | 671 | 1563 | 1666 | - | Feral 1597 |
 

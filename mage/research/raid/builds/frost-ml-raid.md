@@ -47,22 +47,22 @@ The Frost build the machine-learning talent search found on the training dummy (
 
 ## Rank among our builds and the community simulator's
 
-**1 of 12** for `frost-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 12** for `frost-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`frost-ml-raid`](frost-ml-raid.md)** | ours: hand draft | 21/0/30 | 647 | +0.0% | 739 | +0.0% | 0 s |
-| 2 | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 643 | -0.7% | 735 | -0.5% | 0 s |
-| 3 | [`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md) | ours: optimizer | 22/0/29 | 643 | -0.7% | 735 | -0.5% | 0 s |
-| 4 | *Frost DPS* | community simulator | - | 603 | -6.8% | 692 | -6.3% | 0 s |
-| 5 | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) | ours: hand draft | 32/0/19 | 602 | -7.0% | 694 | -6.1% | 0 s |
-| 6 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 1/13/37 | 591 | -8.7% | 709 | -4.0% | 7 s |
-| 7 | *Frost 14/0/37* | community simulator | - | 586 | -9.5% | 702 | -5.0% | 8 s |
-| 8 | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) | ours: hand draft | 21/0/30 | 575 | -11.2% | 658 | -10.9% | 0 s |
-| 9 | *Arcane 35/0/16* | community simulator | - | 517 | -20.1% | 596 | -19.3% | 0 s |
-| 10 | *Arcane DPS* | community simulator | - | 451 | -30.3% | 514 | -30.5% | 0 s |
-| 11 | *Fire 0/35/16* | community simulator | - | 408 | -37.0% | 472 | -36.1% | 0 s |
-| 12 | *Fire DPS* | community simulator | - | 341 | -47.4% | 388 | -47.4% | 0 s |
+| 1 | **[`frost-ml-raid`](frost-ml-raid.md)** | ours: hand draft | 21/0/30 | 617 | +0.0% | 705 | +0.0% | 0 s |
+| 2 | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 615 | -0.4% | 701 | -0.6% | 0 s |
+| 3 | [`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md) | ours: optimizer | 22/0/29 | 614 | -0.6% | 701 | -0.7% | 1 s |
+| 4 | *Frost DPS* | community simulator | - | 576 | -6.7% | 660 | -6.4% | 0 s |
+| 5 | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) | ours: hand draft | 32/0/19 | 575 | -6.8% | 660 | -6.5% | 0 s |
+| 6 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 1/13/37 | 564 | -8.6% | 675 | -4.3% | 7 s |
+| 7 | *Frost 14/0/37* | community simulator | - | 560 | -9.3% | 670 | -5.0% | 8 s |
+| 8 | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) | ours: hand draft | 21/0/30 | 548 | -11.1% | 626 | -11.2% | 0 s |
+| 9 | *Arcane 35/0/16* | community simulator | - | 493 | -20.1% | 567 | -19.7% | 0 s |
+| 10 | *Arcane DPS* | community simulator | - | 430 | -30.3% | 489 | -30.7% | 0 s |
+| 11 | *Fire 0/35/16* | community simulator | - | 387 | -37.2% | 448 | -36.4% | 0 s |
+| 12 | *Fire DPS* | community simulator | - | 324 | -47.5% | 369 | -47.7% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -88,7 +88,7 @@ Damage by ability:
 
 | Ability | [`frost-ml-raid`](frost-ml-raid.md) |
 |---|---|
-| Frostbolt | 61% |
+| Frostbolt | 60% |
 | Ice Lance | 20% |
 | Arcane Missiles | 19% |
 

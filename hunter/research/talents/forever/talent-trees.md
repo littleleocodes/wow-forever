@@ -1,6 +1,6 @@
-# Hunter — WoW: Forever talent trees (beta client 1.60.1.70009)
+# Hunter — WoW: Forever talent trees (beta client 1.60.1.70170)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70009, captured 2026-09-25. World of Warcraft: Forever beta client, build 1.60.1.70009: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-09-24, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70009; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70170, captured 2026-10-03. World of Warcraft: Forever beta client, build 1.60.1.70170: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-03, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70205; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -81,7 +81,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Improved Stings** | 3 | — | **NEW** | Increased the damage of your Serpent Sting ability by 6%, reduces the cooldown of your Viper Sting ability by 2 sec, and increases the duration of your Scorpid Sting ability by 15 sec. | Increased the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
+| **Improved Stings** | 3 | — | **NEW** | Increases the damage of your Serpent Sting ability by 6%, reduces the cooldown of your Viper Sting ability by 2 sec, and increases the duration of your Scorpid Sting ability by 15 sec. | Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
 | **Efficiency** | 5 | — | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 3%. | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
 | **Careful Aim** | 5 | — | **NEW** | Increases your Attack Power by 20% of your Intellect. | Increases your Attack Power by 100% of your Intellect. |
 
@@ -97,7 +97,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Trueshot Aura** | 1 | — | changed | Increases the Ranged Attack Power of party members within 45 yards by 30. Lasts 30 min. | — |
+| **Trueshot Aura** | 1 | — | changed | Increases the Ranged Attack Power of party members within 45 yds by 30. | — |
 | **Mortal Shots** | 5 | Careful Aim (5) | changed | Increases the critical strike damage bonus on all ranged abilities by 6%. | Increases the critical strike damage bonus on all ranged abilities by 30%. |
 
 ### Tier 5 — requires 20 points in Marksmanship
@@ -118,7 +118,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Sniper Shot** | 1 | Trueshot Aura (1) | **NEW** | A steady snipe that increases ranged damage by 160. | — |
+| **Sniper Shot** | 1 | Trueshot Aura (1) | **NEW** | A long-range shot that deals ranged damage plus 160 and increases the range of your next 3 Shots by 10 yards for 10 sec. | — |
 
 **Removed from Classic Marksmanship:** Improved Hunter's Mark, Lethal Shots, Aimed Shot, Improved Serpent Sting, Improved Scorpid Sting
 
@@ -129,7 +129,7 @@
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Improved Tracking** | 5 | — | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 1%. | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 5%. |
-| **Deflection** | 5 | — | changed | Increases your Parry chance by 2%. | Increases your Parry chance by 10%. |
+| **Deflection** | 5 | — | changed | Increases your Parry chance by 1%. | Increases your Parry chance by 5%. |
 
 ### Tier 2 — requires 5 points in Survival
 
@@ -153,7 +153,7 @@
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Survival Tactics** | 2 | — | **NEW** | Increases your chance to hit with your Trap and Feign Death abilities by 5%. | Increases your chance to hit with your Trap and Feign Death abilities by 10%. |
-| **Predator's Edge** | 5 | — | **NEW** | Increases your melee critical strike damage by 6% and your offhand weapon damage by 10%. | Increases your melee critical strike damage by 30% and your offhand weapon damage by 50%. |
+| **Predator's Edge** | 5 | — | **NEW** | Increases your melee critical strike damage by 6% and your Off Hand weapon damage by 10%. | Increases your melee critical strike damage by 30% and your Off Hand weapon damage by 50%. |
 | **Counterattack** | 1 | Deterrence (1) | changed | A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 13 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried. | — |
 
 ### Tier 5 — requires 20 points in Survival
@@ -169,13 +169,13 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Lightning Reflexes** | 5 | — | changed | Increases your Agility by 3%. | Increases your Agility by 15%. |
+| **Lightning Reflexes** | 5 | — | changed | Increases your Agility by 2%. | Increases your Agility by 10%. |
 
 ### Tier 7 — requires 30 points in Survival
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Lacerating Strikes** | 1 | Expose Prey (2) | **NEW** | Your Mongoose Bite also causes the target to Bleed for damage over 21 sec equal to 40% of the damage done by Mongoose Bite. | — |
+| **Lacerating Strikes** | 1 | Expose Prey (2) | **NEW** | Your Mongoose Bite also causes the target to Bleed for damage equal to 40% of the damage done by Mongoose Bite over 21 sec | — |
 
 **Removed from Classic Survival:** Monster Slaying, Humanoid Slaying, Trap Mastery, Improved Feign Death, Killer Instinct, Wyvern Sting
 
@@ -218,9 +218,9 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Improved Arcane Shot** (tooltip changed)
   - Classic: Reduces the cooldown of your Arcane Shot by 0 sec.
   - Forever: Reduces the cooldown of your Arcane Shot by 0.3 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot.
-- **Trueshot Aura** (tooltip changed, was Marksmanship row 7, col 2)
+- **Trueshot Aura** (tooltip changed, was Marksmanship row 7, col 2, tooltip changed in build 1.60.1.70170 (ranks 1))
   - Classic: Increases the attack power of party members within 0 yards by 50. Lasts 30 min.
-  - Forever: Increases the Ranged Attack Power of party members within 45 yards by 30. Lasts 30 min.
+  - Forever: Increases the Ranged Attack Power of party members within 45 yds by 30.
 - **Mortal Shots** (tooltip changed)
   - Classic: Increases your ranged weapon critical strike damage bonus by 6%.
   - Forever: Increases the critical strike damage bonus on all ranged abilities by 6%.
@@ -230,9 +230,9 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 
 ### Survival
 
-- **Deflection** (tooltip changed)
+- **Deflection** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5))
   - Classic: Increases your Parry chance by 1%.
-  - Forever: Increases your Parry chance by 2%.
+  - Forever: Increases your Parry chance by 1%.
 - **Entrapment** (tooltip changed)
   - Classic: Gives your Immolation Trap, Frost Trap, and Explosive Trap a 5% chance to entrap the target, preventing them from moving for 5 sec.
   - Forever: When your traps are triggered, all affected targets are Entrapped, preventing them from moving for 1 sec.
@@ -248,12 +248,12 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Surefooted** (tooltip changed, was Survival row 4, col 2)
   - Classic: Increases hit chance by 1% and increases the chance movement impairing effects will be resisted by an additional 5%.
   - Forever: Increases your hit chance by 1% and reduces the duration of movement impairing effects on you by 10%.
-- **Counterattack** (tooltip changed, was Survival row 5, col 3, tooltip changed in build 1.60.1.70009 (ranks 1))
+- **Counterattack** (tooltip changed, was Survival row 5, col 3, tooltip changed in build 1.60.1.70170 (ranks 1))
   - Classic: A strike that becomes active after parrying an opponent's attack. This attack deals 40 damage and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.
   - Forever: A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 13 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.
-- **Lightning Reflexes** (tooltip changed, tooltip changed in build 1.60.1.70009 (ranks 1, 2, 3, 4, 5))
+- **Lightning Reflexes** (tooltip changed)
   - Classic: Increases your Agility by 3%.
-  - Forever: Increases your Agility by 3%.
+  - Forever: Increases your Agility by 2%.
 
 ---
 

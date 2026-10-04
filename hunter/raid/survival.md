@@ -33,8 +33,8 @@
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 991 |
-| Training dummy, 3-minute fight (alone, only your own buffs) | 426 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 1041 |
+| Training dummy, 3-minute fight (alone, only your own buffs) | 419 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
@@ -69,7 +69,7 @@
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 426 → mana +8% → armor +50% → physical +56% → spell +4% → everything else +14% → raid 991
+Dummy 419 → mana +8% → armor +50% → physical +71% → spell +4% → everything else +15% → raid 1041
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -77,16 +77,16 @@ Dummy 426 → mana +8% → armor +50% → physical +56% → spell +4% → everyt
 
 | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|
-| 473 | 427 | 426 | 390 | 378 |
+| 466 | 421 | 419 | 384 | 372 |
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 
-**Alone instead of in a raid?** [Survival — Raid](../research/raid/builds/survival-raid.md) (5/16/30) does 450 DPS on the training dummy with only your own buffs (+6% over this build there) — [open the talent tree](https://talentsforever.com/hunter/60/5-005055001-50023023005022213-4).
+**Alone instead of in a raid?** [Survival — Raid](../research/raid/builds/survival-raid.md) (5/16/30) does 445 DPS on the training dummy with only your own buffs (+6% over this build there) — [open the talent tree](https://talentsforever.com/hunter/60/5-005055001-50023023005022213-4).
 
 ## Other builds of this spec
 
-- [Survival — Raid](../research/raid/builds/survival-raid.md) (5/16/30, 967 DPS in a full raid, 450 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5-005055001-50023023005022213-4)
-- [Melee hunter](../research/raid/builds/opt-melee-dps-raid-dps.md) (5/15/31, 965 DPS in a full raid, 430 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5-005045001-500250030050220151-4)
+- [Survival — Raid](../research/raid/builds/survival-raid.md) (5/16/30, 1022 DPS in a full raid, 445 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5-005055001-50023023005022213-4)
+- [Melee hunter](../research/raid/builds/opt-melee-dps-raid-dps.md) (5/15/31, 1016 DPS in a full raid, 424 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5-005045001-500250030050220151-4)
 - [Survival — Melee](../research/raid/builds/survival-melee.md) (9/11/31) — [open the talent tree](https://talentsforever.com/hunter/60/522-005015-500230131050220151-4)
 
 ---
