@@ -544,6 +544,12 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   search runs again; a 30,000-fight race against the entry's builds; talent values of the winner and our best build (removal, 12,000
   fights: DPS lost, per point, share) plus the search model's importances. Records `raidsim/families/<class>.json`, reports
   `research/raid/family-search.md` and `_reference/family-search.md`. A winner in a family no ML record covers is a lead for deep_opt.py.
+- **Open leveling search** (2026-10-04, user request: the leveling builds have the raid search's blind spot): `fightlab/fl_open_search.py
+  <class>`: per leveling rotation (derive_leveling.LEVEL), the ML search over every legal build (any split) scored on kills per hour at
+  level 60 in the fight lab (green gear; builds in parallel processes, common random numbers), the scorer's leveling order for the winner,
+  a race at levels 20-60 (weights level / 10) against our leveling builds of the trees that level with that rotation, and talent values at
+  60 (seconds per kill without each talent). Records `fightlab/open/<class>.json`, reports `research/leveling/open-search.md` and
+  `_reference/leveling-open-search.md`.
 - **Beta build 70170/70205** (2026-10-03, user request after Lightning Reflexes read 2% a rank in game): talents and spellbooks from
   talentsforever.com's 70170 export (the warrior with the 1-2 Oct hotfixes; thewowdb answered for six classes, the others fall back to the
   previous pull, and a tree the Trait snapshot disagrees on takes the export's positions and prerequisites: `refresh_forever_talents.py`),

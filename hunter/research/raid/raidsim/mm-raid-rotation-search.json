@@ -2,13 +2,30 @@
  "dummy": {
   "class": "hunter",
   "spec": "mm-raid",
-  "date": "2026-10-01",
-  "commit": "40be98e",
+  "date": "2026-10-04",
+  "commit": "b0f0df3",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "ui/specs/hunter/dps/apls/mm.apl.json",
   "start": "ui\\specs\\hunter\\dps\\apls\\mm.apl.json",
-  "builds": [],
+  "builds": [
+   {
+    "label": "open winner",
+    "talents": "5320001505101251-00532500014"
+   },
+   {
+    "label": "bm-mm-raid",
+    "talents": "53200005041002-005355010150004"
+   },
+   {
+    "label": "sim preset: Beast Mastery 35/16/0",
+    "talents": "5520001505121251-0050551"
+   },
+   {
+    "label": "bm-mm-full-buffs-raid",
+    "talents": "53200005050001-005155000150305"
+   }
+  ],
   "iterations": 3000,
   "confirm": 20000,
   "changes": [
@@ -59,24 +76,94 @@
     "gain_seed2": 0.0641,
     "candidates": 36,
     "pass": 5
+   },
+   {
+    "round": 7,
+    "change": "only with 10s or more of the fight left: if auraIsInactive: cast Summon Hawk",
+    "gain_seed1": 0.002854517770268128,
+    "gain_seed2": 0.0028178451165143947,
+    "candidates": 344,
+    "pass": 6
+   },
+   {
+    "round": 8,
+    "change": "only above 25% mana: if time to the next auto attack > 1s and time left in the fight \u2265 20s: cast Aimed Shot",
+    "gain_seed1": 0.002577690862006543,
+    "gain_seed2": 0.0025986993424793603,
+    "candidates": 355,
+    "pass": 6
    }
   ],
   "final": {
-   "dummy": {}
+   "dummy": {
+    "open winner": {
+     "before": 393.0696765203204,
+     "after": 466.74742952086564,
+     "base": 393.0696765203204,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 94.62342785319564,
+     "oom_after": 95.0325108252176
+    },
+    "bm-mm-raid": {
+     "before": 403.7912566958429,
+     "after": 482.0441977550909,
+     "base": 403.7912566958429,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 70.56212979668787,
+     "oom_after": 70.97837092619845
+    },
+    "sim preset: Beast Mastery 35/16/0": {
+     "before": 376.1978881618124,
+     "after": 458.3007377647809,
+     "base": 376.1978881618124,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 85.63630274656194,
+     "oom_after": 85.51793296397986
+    },
+    "bm-mm-full-buffs-raid": {
+     "before": 401.09123358739873,
+     "after": 432.0178117731204,
+     "base": 401.09123358739873,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 79.18536187631156,
+     "oom_after": 78.372941193868
+    }
+   }
   },
   "first_date": "2026-09-27",
-  "passes": 5
+  "passes": 6
  },
  "raid": {
   "class": "hunter",
   "spec": "mm-raid",
-  "date": "2026-10-01",
-  "commit": "40be98e",
+  "date": "2026-10-04",
+  "commit": "b0f0df3",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/hunter/dps/apls/mm.apl.json",
   "start": "ui\\specs\\hunter\\dps\\apls\\mm.apl.json",
-  "builds": [],
+  "builds": [
+   {
+    "label": "open winner",
+    "talents": "5320001505101251-00532500014"
+   },
+   {
+    "label": "bm-mm-raid",
+    "talents": "53200005041002-005355010150004"
+   },
+   {
+    "label": "sim preset: Beast Mastery 35/16/0",
+    "talents": "5520001505121251-0050551"
+   },
+   {
+    "label": "bm-mm-full-buffs-raid",
+    "talents": "53200005050001-005155000150305"
+   }
+  ],
   "iterations": 3000,
   "confirm": 20000,
   "changes": [
@@ -111,12 +198,81 @@
     "gain_seed2": 0.0127,
     "candidates": 36,
     "pass": 5
+   },
+   {
+    "round": 5,
+    "change": "insert in the middle: if time to the next auto attack > 1s: cast Aimed Shot",
+    "gain_seed1": 0.008417393313084887,
+    "gain_seed2": 0.008078490229008972,
+    "candidates": 357,
+    "pass": 6
+   },
+   {
+    "round": 6,
+    "change": "only with 10s or more of the fight left: if auraIsInactive: cast Summon Hawk",
+    "gain_seed1": 0.0025988106409748912,
+    "gain_seed2": 0.002604977675792597,
+    "candidates": 373,
+    "pass": 6
+   },
+   {
+    "round": 7,
+    "change": "threshold 1s -> 0.5s: if time to the next auto attack > 1s: cast Aimed Shot",
+    "gain_seed1": 0.001838511079214955,
+    "gain_seed2": 0.00254359325886222,
+    "candidates": 384,
+    "pass": 6
+   },
+   {
+    "round": 8,
+    "change": "insert before the filler: cast Intimidation",
+    "gain_seed1": 0.002363918724042957,
+    "gain_seed2": 0.0016146488071595577,
+    "candidates": 389,
+    "pass": 6
    }
   ],
   "final": {
-   "raid": {}
+   "raid": {
+    "open winner": {
+     "before": 797.0328852590047,
+     "after": 862.737295646754,
+     "base": 797.0328852590047,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "bm-mm-raid": {
+     "before": 783.1865389020702,
+     "after": 838.6579284736675,
+     "base": 783.1865389020702,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Beast Mastery 35/16/0": {
+     "before": 738.0600647898292,
+     "after": 810.2183063855402,
+     "base": 738.0600647898292,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "bm-mm-full-buffs-raid": {
+     "before": 786.0043354467243,
+     "after": 795.3623849312505,
+     "base": 786.0043354467243,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
   },
   "first_date": "2026-09-27",
-  "passes": 5
+  "passes": 6
  }
 }

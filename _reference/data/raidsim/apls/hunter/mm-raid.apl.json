@@ -34,13 +34,32 @@
   {
    "action": {
     "condition": {
-     "auraIsInactive": {
-      "sourceUnit": {
-       "type": "Self"
-      },
-      "auraId": {
-       "spellId": 1293527
-      }
+     "and": {
+      "vals": [
+       {
+        "auraIsInactive": {
+         "sourceUnit": {
+          "type": "Self"
+         },
+         "auraId": {
+          "spellId": 1293527
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "10s"
+          }
+         }
+        }
+       }
+      ]
      }
     },
     "castSpell": {
@@ -49,7 +68,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-10-01: changed or added by the rotation search (see mm-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-10-04: changed or added by the rotation search (see mm-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -122,6 +141,19 @@
           }
          }
         }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "25%"
+          }
+         }
+        }
        }
       ]
      }
@@ -132,7 +164,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see mm-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-10-04: changed or added by the rotation search (see mm-raid-rotation-search.json)"
   },
   {
    "action": {
