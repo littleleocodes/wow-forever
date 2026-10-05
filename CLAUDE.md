@@ -529,6 +529,21 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   setting), so `talent_opt.py --setting raid`, `fullraid_search.py` and `setting_audit.py`'s raid half ran full-raid builds on the
   dummy rotation before 2026-10-01; the ML pipeline's full-raid searches use the raid rotation. `_reference/data/filelock.py` locks the
   shared records on Windows (msvcrt) and POSIX (fcntl).
+- **Raid and leveling only** (2026-10-04, user decision: "I just want a raid DPS build and a leveling build ... clean up the GitHub pages to
+  only have leveling and raid builds"): the player pages (`render_modes.PAGE_MODES`) show leveling (solo, fight lab) and raid (full raid;
+  healer and tank picks included); the `pvp/` folders are gone and no training-dummy number is shown (no "alone" line, no dummy columns,
+  buff ladder or fight-length curve; the rankings page and the ranking artifact are full raid only). The PvP builds and every dummy record
+  stay under `research/`. `deep_opt.py` searches the full raid only (`SETTINGS`; `--dummy` adds the dummy back), about 35-40% faster; the
+  races, calibrations and the adopt step still run on the dummy (the scorer's raid profile is fitted there).
+- **Open talent search** (2026-10-04, user request: "Hybrid builds across the classes might be the best performing specs ... each spec
+  could be 17/17/17 ... a ranking of each specific talent and its weight ... different rotations"): every other search keeps a spec's tree
+  rule, so a build outside every family is never tried (the 16/11/24 Summon Hawk + Lone Wolf melee hunter, 7% ahead of the Survival pick
+  in the simulator, was found by hand). `raidsim/family_search.py <class>`: per damage entry (rotation and gear; the showcase entries too),
+  the ML search over every legal 51-point build (`Space(any_split=True)`) in a full raid from our builds, the presets and the popular
+  builds; when the winner is a family the entry was not built for, or 0.5% ahead of our best there, the rotation is re-tuned on it and the
+  search runs again; a 30,000-fight race against the entry's builds; talent values of the winner and our best build (removal, 12,000
+  fights: DPS lost, per point, share) plus the search model's importances. Records `raidsim/families/<class>.json`, reports
+  `research/raid/family-search.md` and `_reference/family-search.md`. A winner in a family no ML record covers is a lead for deep_opt.py.
 - **Beta build 70170/70205** (2026-10-03, user request after Lightning Reflexes read 2% a rank in game): talents and spellbooks from
   talentsforever.com's 70170 export (the warrior with the 1-2 Oct hotfixes; thewowdb answered for six classes, the others fall back to the
   previous pull, and a tree the Trait snapshot disagrees on takes the export's positions and prerequisites: `refresh_forever_talents.py`),

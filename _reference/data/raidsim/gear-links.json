@@ -1,9 +1,9 @@
 {
- "date": "2026-10-03",
+ "date": "2026-10-04",
  "site": "https://elliotwood.github.io/Forever/forever",
  "wowhead": "https://www.wowhead.com/forever",
  "api_version": 18,
- "commit": "40be98e",
+ "commit": "b0f0df3",
  "specs": {
   "druid|Balance": {
    "class": "druid",
@@ -623,386 +623,6 @@
      },
      {
       "slot": "Neck",
-      "id": 22340,
-      "name": "Pendant of Celerity",
-      "url": "https://www.wowhead.com/forever/item=22340",
-      "ilvl": 63,
-      "quality": 3,
-      "source": "Lord Valthalak\"]..\" - \"..format(AL[\"Tier %s Sets, Blackrock Spire"
-     },
-     {
-      "slot": "Shoulders",
-      "id": 271955,
-      "name": "Theramore Pauldrons",
-      "url": "https://www.wowhead.com/forever/item=271955",
-      "ilvl": 65,
-      "quality": 4,
-      "source": ""
-     },
-     {
-      "slot": "Back",
-      "id": 21187,
-      "name": "Earthweave Cloak",
-      "url": "https://www.wowhead.com/forever/item=21187",
-      "ilvl": 62,
-      "quality": 3,
-      "source": "",
-      "enchant": {
-       "name": "Enchant Cloak - Lesser Agility",
-       "url": "https://www.wowhead.com/forever/spell=13364"
-      }
-     },
-     {
-      "slot": "Chest",
-      "id": 16688,
-      "name": "Magister's Robes",
-      "url": "https://www.wowhead.com/forever/item=16688",
-      "ilvl": 63,
-      "quality": 3,
-      "source": "General Drakkisath, Blackrock Spire",
-      "enchant": {
-       "name": "Enchant Chest - Greater Stats",
-       "url": "https://www.wowhead.com/forever/spell=19988"
-      }
-     },
-     {
-      "slot": "Wrist",
-      "id": 21186,
-      "name": "Rockfury Bracers",
-      "url": "https://www.wowhead.com/forever/item=21186",
-      "ilvl": 62,
-      "quality": 4,
-      "source": "",
-      "enchant": {
-       "name": "Enchant Bracer - Minor Agility",
-       "url": "https://www.wowhead.com/forever/spell=7778"
-      }
-     },
-     {
-      "slot": "Hands",
-      "id": 16676,
-      "name": "Beaststalker's Gloves",
-      "url": "https://www.wowhead.com/forever/item=16676",
-      "ilvl": 59,
-      "quality": 3,
-      "source": "War Master Voone, Blackrock Spire",
-      "enchant": {
-       "name": "Enchant Gloves - Agility",
-       "url": "https://www.wowhead.com/forever/spell=13823"
-      }
-     },
-     {
-      "slot": "Waist",
-      "id": 22232,
-      "name": "Marksman's Girdle",
-      "url": "https://www.wowhead.com/forever/item=22232",
-      "ilvl": 61,
-      "quality": 3,
-      "source": "Urok Doomhowl, Blackrock Spire"
-     },
-     {
-      "slot": "Legs",
-      "id": 22673,
-      "name": "Outrider's Chain Leggings",
-      "url": "https://www.wowhead.com/forever/item=22673",
-      "ilvl": 65,
-      "quality": 4,
-      "source": "",
-      "enchant": {
-       "name": "Lesser Arcanum of Voracity",
-       "url": "https://www.wowhead.com/forever/item=11647"
-      }
-     },
-     {
-      "slot": "Feet",
-      "id": 22064,
-      "name": "Sorcerer's Boots",
-      "url": "https://www.wowhead.com/forever/item=22064",
-      "ilvl": 60,
-      "quality": 4,
-      "source": "",
-      "enchant": {
-       "name": "Enchant Boots - Greater Agility",
-       "url": "https://www.wowhead.com/forever/spell=13823"
-      }
-     },
-     {
-      "slot": "Finger",
-      "id": 276765,
-      "name": "Leafre's Ring of Precise Spell Power",
-      "url": "https://www.wowhead.com/forever/item=276765",
-      "ilvl": 66,
-      "quality": 4,
-      "source": ""
-     },
-     {
-      "slot": "Finger",
-      "id": 276765,
-      "name": "Leafre's Ring of Precise Spell Power",
-      "url": "https://www.wowhead.com/forever/item=276765",
-      "ilvl": 66,
-      "quality": 4,
-      "source": ""
-     },
-     {
-      "slot": "Trinket",
-      "id": 13965,
-      "name": "Blackhand's Breadth",
-      "url": "https://www.wowhead.com/forever/item=13965",
-      "ilvl": 63,
-      "quality": 3,
-      "source": ""
-     },
-     {
-      "slot": "Trinket",
-      "id": 18473,
-      "name": "Royal Seal of Eldre'Thalas",
-      "url": "https://www.wowhead.com/forever/item=18473",
-      "ilvl": 62,
-      "quality": 3,
-      "source": "quest: The Greatest Race of Hunters"
-     },
-     {
-      "slot": "Main hand",
-      "id": 18520,
-      "name": "Barbarous Blade",
-      "url": "https://www.wowhead.com/forever/item=18520",
-      "ilvl": 63,
-      "quality": 3,
-      "source": "King Gordok, Dire Maul",
-      "enchant": {
-       "name": "Enchant 2H Weapon - Superior Impact",
-       "url": "https://www.wowhead.com/forever/spell=20030"
-      }
-     },
-     {
-      "slot": "Ranged/relic",
-      "id": 272594,
-      "name": "Premier High Warlord's Recurve",
-      "url": "https://www.wowhead.com/forever/item=272594",
-      "ilvl": 65,
-      "quality": 4,
-      "source": "",
-      "enchant": {
-       "name": "Biznicks 247x128 Accurascope",
-       "url": "https://www.wowhead.com/forever/item=18283"
-      }
-     }
-    ],
-    "bis": [
-     {
-      "slot": "Head",
-      "id": 252605,
-      "name": "Black Dragonscale Helm",
-      "url": "https://www.wowhead.com/forever/item=252605",
-      "ilvl": 61,
-      "quality": 4,
-      "source": "Leatherworking",
-      "enchant": {
-       "name": "Lesser Arcanum of Voracity",
-       "url": "https://www.wowhead.com/forever/item=11647"
-      }
-     },
-     {
-      "slot": "Neck",
-      "id": 18404,
-      "name": "Onyxia Tooth Pendant",
-      "url": "https://www.wowhead.com/forever/item=18404",
-      "ilvl": 65,
-      "quality": 4,
-      "source": ""
-     },
-     {
-      "slot": "Shoulders",
-      "id": 16848,
-      "name": "Giantstalker's Epaulets",
-      "url": "https://www.wowhead.com/forever/item=16848",
-      "ilvl": 66,
-      "quality": 4,
-      "source": "Sulfuron Harbinger, Molten Core"
-     },
-     {
-      "slot": "Back",
-      "id": 21187,
-      "name": "Earthweave Cloak",
-      "url": "https://www.wowhead.com/forever/item=21187",
-      "ilvl": 62,
-      "quality": 3,
-      "source": "",
-      "enchant": {
-       "name": "Enchant Cloak - Lesser Agility",
-       "url": "https://www.wowhead.com/forever/spell=13364"
-      }
-     },
-     {
-      "slot": "Chest",
-      "id": 252483,
-      "name": "Dawn Armor",
-      "url": "https://www.wowhead.com/forever/item=252483",
-      "ilvl": 61,
-      "quality": 4,
-      "source": "Leatherworking",
-      "enchant": {
-       "name": "Enchant Chest - Greater Stats",
-       "url": "https://www.wowhead.com/forever/spell=19988"
-      }
-     },
-     {
-      "slot": "Wrist",
-      "id": 16850,
-      "name": "Giantstalker's Bracers",
-      "url": "https://www.wowhead.com/forever/item=16850",
-      "ilvl": 66,
-      "quality": 4,
-      "source": "Molten Core",
-      "enchant": {
-       "name": "Enchant Bracer - Minor Agility",
-       "url": "https://www.wowhead.com/forever/spell=7778"
-      }
-     },
-     {
-      "slot": "Hands",
-      "id": 16852,
-      "name": "Giantstalker's Gloves",
-      "url": "https://www.wowhead.com/forever/item=16852",
-      "ilvl": 66,
-      "quality": 4,
-      "source": "Shazzrah, Molten Core",
-      "enchant": {
-       "name": "Enchant Gloves - Agility",
-       "url": "https://www.wowhead.com/forever/spell=13823"
-      }
-     },
-     {
-      "slot": "Waist",
-      "id": 16851,
-      "name": "Giantstalker's Belt",
-      "url": "https://www.wowhead.com/forever/item=16851",
-      "ilvl": 66,
-      "quality": 4,
-      "source": "Molten Core"
-     },
-     {
-      "slot": "Legs",
-      "id": 16938,
-      "name": "Dragonstalker's Legguards",
-      "url": "https://www.wowhead.com/forever/item=16938",
-      "ilvl": 76,
-      "quality": 4,
-      "source": "Ragnaros, Molten Core",
-      "enchant": {
-       "name": "Lesser Arcanum of Voracity",
-       "url": "https://www.wowhead.com/forever/item=11647"
-      }
-     },
-     {
-      "slot": "Feet",
-      "id": 16849,
-      "name": "Giantstalker's Boots",
-      "url": "https://www.wowhead.com/forever/item=16849",
-      "ilvl": 66,
-      "quality": 4,
-      "source": "Gehennas, Molten Core",
-      "enchant": {
-       "name": "Enchant Boots - Greater Agility",
-       "url": "https://www.wowhead.com/forever/spell=13823"
-      }
-     },
-     {
-      "slot": "Finger",
-      "id": 276765,
-      "name": "Leafre's Ring of Precise Spell Power",
-      "url": "https://www.wowhead.com/forever/item=276765",
-      "ilvl": 66,
-      "quality": 4,
-      "source": ""
-     },
-     {
-      "slot": "Finger",
-      "id": 276765,
-      "name": "Leafre's Ring of Precise Spell Power",
-      "url": "https://www.wowhead.com/forever/item=276765",
-      "ilvl": 66,
-      "quality": 4,
-      "source": ""
-     },
-     {
-      "slot": "Trinket",
-      "id": 13965,
-      "name": "Blackhand's Breadth",
-      "url": "https://www.wowhead.com/forever/item=13965",
-      "ilvl": 63,
-      "quality": 3,
-      "source": ""
-     },
-     {
-      "slot": "Trinket",
-      "id": 18473,
-      "name": "Royal Seal of Eldre'Thalas",
-      "url": "https://www.wowhead.com/forever/item=18473",
-      "ilvl": 62,
-      "quality": 3,
-      "source": "quest: The Greatest Race of Hunters"
-     },
-     {
-      "slot": "Main hand",
-      "id": 18520,
-      "name": "Barbarous Blade",
-      "url": "https://www.wowhead.com/forever/item=18520",
-      "ilvl": 63,
-      "quality": 3,
-      "source": "King Gordok, Dire Maul",
-      "enchant": {
-       "name": "Enchant 2H Weapon - Superior Impact",
-       "url": "https://www.wowhead.com/forever/spell=20030"
-      }
-     },
-     {
-      "slot": "Ranged/relic",
-      "id": 18713,
-      "name": "Rhok'delar, Longbow of the Ancient Keepers",
-      "url": "https://www.wowhead.com/forever/item=18713",
-      "ilvl": 75,
-      "quality": 4,
-      "source": "",
-      "enchant": {
-       "name": "Biznicks 247x128 Accurascope",
-       "url": "https://www.wowhead.com/forever/item=18283"
-      }
-     }
-    ]
-   },
-   "ilvl": {
-    "prebis": 62.9,
-    "bis": 65.6
-   },
-   "sim": {
-    "prebis-raid": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVEFIFG0Ynndmduf1/UXXUX/HQX7m35//Z12Y5duR+VEjZvXUKQo6dCpHd21H0l1292DQwcQgJMNuGYqBSRoa2yGIoIslrLDRmlRCQlAGHjosXaJbzOxuHrom9ByG93veZ3i/5/3goXqEACigQQgYyP/8OPEMuiEGp+AsDEAS0jABcA1gFkBd8CMGBPUySfj0UaOy/weJ+PwBkIg7xQBJ+GwZlG0/SZifBOVjA0m4sQzKVyAJ706C8r6BRNxdd483H4L7u4T5tSq/8CVQ/Qo4M0oirs66wt1ZUA4aiCMJX20HlHfNwQhOOYGCo1x3tHvzENpfhGngp5xbsGTfgTV7Bfb68rC4DAWAEtxw+unQ5xO+w+wyGGNRk5lRFjXMqM6Y2cVMZjBmFnixxOMHfkakFkLVTyKWNiGI5CdRj7IstVbZlSUI1pFEPt2ImFl5HuRzdvri+VQ6pxnM+F9nPbrR3asNJe2xC4m4lspodjyeiGuDl7RcMqFlUjk756TGtGzCzgwltVA2kdAGR/WM7cT1WlOvNCMj2dRYp9pLTI5Qe7gNBRlH3Ju93ATVuwOLGGaWmsKN6Jf5QU6VyEdCF/tXrapkUeV7Ofm4eowMmVFLWEZB9m3wPPoqWhaJkhL+EwW57j5U7dU6puojAT+1ySNHbrGy2rffTv40K8p0ZhzBrJUlkDX1L2oNN6OvthLvtVnEzHrOd1oU4YAvQJk3rgich1BsGlqpmZrQH0AFOjkPZYtBcFWoc2tuYjjWfnvOxZb197CHN5ZR5hVJs8IFnvutkIvVqiPFf+u/fE7Pi2KxWD+Qj/VVidiAm1Rz4KTKV7fOvLZ6PJYrWX2uslj8bJ2uFHtWWMDHbf0dh9lQSb0TXu4lIQ3jMC5/HwBoNPrd",
-    "bis-raid": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVE9IFG0cnt/M7M7r7xNdX/VzHOTj/TaKdWGWd0cm1IhZPXWKgg6dytFd25F0l509GHQwNAjJkk4ZioFIKgUeCiLoUggrbLRm/yAhKAMPHZYu0S1mdjcPXRN6DsNvnucZfu/zDjxYTyAEKjCIAAd66NebyKEbEnAKzsIApCELEwDXAGYBtIUgISFJu4wKefqoUd39B2WyexNQJqVJQIU8XwZ1K+gNDxvVzw2okFeToH73pNeToH5sQJls+861KfA+V8hWjV/4Fqo+JTIzijJZnfWM72dB3WtAARUydwvUD83hGJlyQgVHve6we/MQ2V2EaRCnnNuwZN+F+/YK7PStw+IyFABKcMPpx/2cT8QOs8vgnMdNbsZ53DDjOudml2FyzrlZEOWSSD6JMzK2INGCXq4NCBMMoqzHuYutVXZlCcJ1qGBAN2KmS+eBnrOzF89nsnlmcOOoznt0o7uXDaXtsQupJMvkmJ1MppJs8BLLp1Msl8nbeSczxtyUnRtKs4ibSrHBUT1nO0m9JuoVMTbiZsY6tV7kNIbt0TYiUTLinezlBmj+GXjMMF1sijaSIBUHBU3BAEpd/LBWdVFZE3sFelw7hgbl2BKlRKKBZ6JIAhUvj8VRjf5LJFq3BtV4NcXUAiiRL2105MAjVq723Y+Tv+2Kc50bB7BrZQko0/7D1mgzCdSuxP/bPGa6fvLtFlXaEwtQFo0rkuAjkpiGVmzGJhIMERU6BR9li0N4VarzZmFiONF+Z87DpvX/sI+3llEWVYVZ0YIo/FXIJ2rTgeLIgz++p+dFsVisH1hP9FWJxIDXVHPgZMpXN8+8sXp8VihZfZ6zWPxqna4MO1ZUIo/b+jv2u6HSeif83ktDFsZhnP4cAB5J+iM=",
-    "prebis-dummy": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMj99LFG8Uxue8M7tzPN9vNr3+mqabaS9CF2Z5d3QijZjVPyAIui5Hd82RdGV3LxK6KDEIqbA7jcLAJA2N7SKIIAhLWGGjtaikhKAMvOhi6Sa8i1nXm65d6HPxct7nnMPzHJK4ZKyGETXZuEwqvnh6UN/6jxR8/RhIwfdFjVR8NQ/6ephUzI+D/r2eVFyZB/03kIoPxkH/Wk8KbiwH39tPIFhXMb9U1e/90qqvjDeHScHFqWBwYwr07XqSSMV365r+pSESwwlfK/j6Dd98eBdat2ZhEtiEPw1z3n1Y8hZgszsPs/NQACjBLb9Hes6OOI4thBCOcOJC2I4lhNPe4Qgh4u0FppQYfmMvFWokNMKkYGkVIkhhUqy4yFJTVV2Yg0gdqRSy7JiT5aeMk2RzQY1RjjIPrTCGIUOlEMkiFic92owyr3sE1c29jmOESMYfLXyIn/NGL55Pj+ZMW9jHLdFp2Se6zP5Bb+RCKmmmM6aXTKaSZt+YmRtMmZl0zsv56REzm/Iy/YNmazaVMvuGrYznJ629prXbjA1l0yNtxm7qTzunebLmXqxL4uNQcxuTmqONKHMcCk57uwrBicQ6skb1z8f+yhAXlojva4YWOvA5TKTgzjRwpikV651p0OVtVoAys6/KUoXWxCQ0UQMdwrCGOrRJFcqugMiiXBfU0pWBxOE7MwFr7tGBCh9du8x01XSjBSb9U+QSe1VNOba87z6db4rF4v+9+UR3VUj0wnWAGfDT5WtrZz+4nRVVKrndwWSx+NM9s1tsulEZn7X0MIRL/M8AXCAO0w==",
-    "bis-dummy": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMT81rE18Unftmkrm9v59tfP0ax80zC2kDE15GR2xFJu0fIAiutdMmtVNsU5IsLLhQW0GKH8VVK0qFUmyLQhcKIgiiFFKImPqNFgSt0IWL4Ea6k0mTjesGPIvHeefcy7mHFK6Yq2HEiGpeIB2fPW4yNv8jDTdvAmlYmgDS8eUCGOvhgDxqMr43ko5vJsD4HVjvJsD42kgavq1MLk9CsK7jek2/+ytSfVW8PkIaLk0Hg5+mwdhqJIV0nL0FxpfmaBwn/UjBN6754v4d6Nicgylgk/4MzHv34IG3CBs9KzC3AAWAEtzwe5WnbL/j2FJK6UgnIaXtWFI6hxxHSpmwC0wrMfzGnmvUQmiGgzKrEEUKk2YlZI5aq+riPEQbSKeQZcedHD9uHiObS2qJcVR56AVjGDJ1CpEq4wkyYm2o8oZlqG7WHMcMkYo/2vkwP+2NnTuTGcsLW9pHLNll2Ue7xcCQN3o2nRKZrPBSqXRK9I+L/FBaZDN5L+9nRkUu7WUHhkRHLp0W/SNW1vNTVs20dsz4cC4z2mnuXP1x+wRP1T2LdSv8MtQ9RlBbrAVVjsNBtderEFQkdjhnVv98/K8bEtKSiV29oZ32fA4Tabg9A5xFtEr09gwY6hYrQJnZl1Slgo7kFLRSM+3FcAQN6FQqKLsSoktqQ8CVi4PJfbdnA6y5BwYr+ODaZWbowo0VmPJPIZ+ssbri4MNdz+l6VSwW/+9bSfZUhWQfXAWYBT9TvrJ26r3bVVGVktsTTBaLP92TO2TDjan4pL2XIZznfwYACAkOGQ=="
-   }
-  },
-  "hunter|Hybrid Beast Mastery/Marksmanship": {
-   "class": "hunter",
-   "spec": "Hybrid Beast Mastery/Marksmanship",
-   "gear": {
-    "prebis": [
-     {
-      "slot": "Head",
-      "id": 252605,
-      "name": "Black Dragonscale Helm",
-      "url": "https://www.wowhead.com/forever/item=252605",
-      "ilvl": 61,
-      "quality": 4,
-      "source": "Leatherworking",
-      "enchant": {
-       "name": "Lesser Arcanum of Voracity",
-       "url": "https://www.wowhead.com/forever/item=11647"
-      }
-     },
-     {
-      "slot": "Neck",
       "id": 15411,
       "name": "Mark of Fordring",
       "url": "https://www.wowhead.com/forever/item=15411",
@@ -1108,19 +728,399 @@
      },
      {
       "slot": "Finger",
-      "id": 276765,
-      "name": "Leafre's Ring of Precise Spell Power",
-      "url": "https://www.wowhead.com/forever/item=276765",
-      "ilvl": 66,
+      "id": 21202,
+      "name": "Signet Ring of the Bronze Dragonflight",
+      "url": "https://www.wowhead.com/forever/item=21202",
+      "ilvl": 65,
       "quality": 4,
       "source": ""
      },
      {
       "slot": "Finger",
-      "id": 276765,
-      "name": "Leafre's Ring of Precise Spell Power",
-      "url": "https://www.wowhead.com/forever/item=276765",
+      "id": 19325,
+      "name": "Don Julio's Band",
+      "url": "https://www.wowhead.com/forever/item=19325",
+      "ilvl": 65,
+      "quality": 4,
+      "source": ""
+     },
+     {
+      "slot": "Trinket",
+      "id": 13965,
+      "name": "Blackhand's Breadth",
+      "url": "https://www.wowhead.com/forever/item=13965",
+      "ilvl": 63,
+      "quality": 3,
+      "source": ""
+     },
+     {
+      "slot": "Trinket",
+      "id": 18473,
+      "name": "Royal Seal of Eldre'Thalas",
+      "url": "https://www.wowhead.com/forever/item=18473",
+      "ilvl": 62,
+      "quality": 3,
+      "source": "quest: The Greatest Race of Hunters"
+     },
+     {
+      "slot": "Main hand",
+      "id": 18520,
+      "name": "Barbarous Blade",
+      "url": "https://www.wowhead.com/forever/item=18520",
+      "ilvl": 63,
+      "quality": 3,
+      "source": "King Gordok, Dire Maul",
+      "enchant": {
+       "name": "Enchant 2H Weapon - Superior Impact",
+       "url": "https://www.wowhead.com/forever/spell=20030"
+      }
+     },
+     {
+      "slot": "Ranged/relic",
+      "id": 272594,
+      "name": "Premier High Warlord's Recurve",
+      "url": "https://www.wowhead.com/forever/item=272594",
+      "ilvl": 65,
+      "quality": 4,
+      "source": "",
+      "enchant": {
+       "name": "Biznicks 247x128 Accurascope",
+       "url": "https://www.wowhead.com/forever/item=18283"
+      }
+     }
+    ],
+    "bis": [
+     {
+      "slot": "Head",
+      "id": 252605,
+      "name": "Black Dragonscale Helm",
+      "url": "https://www.wowhead.com/forever/item=252605",
+      "ilvl": 61,
+      "quality": 4,
+      "source": "Leatherworking",
+      "enchant": {
+       "name": "Lesser Arcanum of Voracity",
+       "url": "https://www.wowhead.com/forever/item=11647"
+      }
+     },
+     {
+      "slot": "Neck",
+      "id": 18404,
+      "name": "Onyxia Tooth Pendant",
+      "url": "https://www.wowhead.com/forever/item=18404",
+      "ilvl": 65,
+      "quality": 4,
+      "source": ""
+     },
+     {
+      "slot": "Shoulders",
+      "id": 16848,
+      "name": "Giantstalker's Epaulets",
+      "url": "https://www.wowhead.com/forever/item=16848",
       "ilvl": 66,
+      "quality": 4,
+      "source": "Sulfuron Harbinger, Molten Core"
+     },
+     {
+      "slot": "Back",
+      "id": 21187,
+      "name": "Earthweave Cloak",
+      "url": "https://www.wowhead.com/forever/item=21187",
+      "ilvl": 62,
+      "quality": 3,
+      "source": "",
+      "enchant": {
+       "name": "Enchant Cloak - Lesser Agility",
+       "url": "https://www.wowhead.com/forever/spell=13364"
+      }
+     },
+     {
+      "slot": "Chest",
+      "id": 16845,
+      "name": "Giantstalker's Breastplate",
+      "url": "https://www.wowhead.com/forever/item=16845",
+      "ilvl": 66,
+      "quality": 4,
+      "source": "Golemagg the Incinerator, Molten Core",
+      "enchant": {
+       "name": "Enchant Chest - Greater Stats",
+       "url": "https://www.wowhead.com/forever/spell=19988"
+      }
+     },
+     {
+      "slot": "Wrist",
+      "id": 16850,
+      "name": "Giantstalker's Bracers",
+      "url": "https://www.wowhead.com/forever/item=16850",
+      "ilvl": 66,
+      "quality": 4,
+      "source": "Molten Core",
+      "enchant": {
+       "name": "Enchant Bracer - Minor Agility",
+       "url": "https://www.wowhead.com/forever/spell=7778"
+      }
+     },
+     {
+      "slot": "Hands",
+      "id": 16852,
+      "name": "Giantstalker's Gloves",
+      "url": "https://www.wowhead.com/forever/item=16852",
+      "ilvl": 66,
+      "quality": 4,
+      "source": "Shazzrah, Molten Core",
+      "enchant": {
+       "name": "Enchant Gloves - Agility",
+       "url": "https://www.wowhead.com/forever/spell=13823"
+      }
+     },
+     {
+      "slot": "Waist",
+      "id": 16851,
+      "name": "Giantstalker's Belt",
+      "url": "https://www.wowhead.com/forever/item=16851",
+      "ilvl": 66,
+      "quality": 4,
+      "source": "Molten Core"
+     },
+     {
+      "slot": "Legs",
+      "id": 16938,
+      "name": "Dragonstalker's Legguards",
+      "url": "https://www.wowhead.com/forever/item=16938",
+      "ilvl": 76,
+      "quality": 4,
+      "source": "Ragnaros, Molten Core",
+      "enchant": {
+       "name": "Lesser Arcanum of Voracity",
+       "url": "https://www.wowhead.com/forever/item=11647"
+      }
+     },
+     {
+      "slot": "Feet",
+      "id": 16849,
+      "name": "Giantstalker's Boots",
+      "url": "https://www.wowhead.com/forever/item=16849",
+      "ilvl": 66,
+      "quality": 4,
+      "source": "Gehennas, Molten Core",
+      "enchant": {
+       "name": "Enchant Boots - Greater Agility",
+       "url": "https://www.wowhead.com/forever/spell=13823"
+      }
+     },
+     {
+      "slot": "Finger",
+      "id": 17063,
+      "name": "Band of Accuria",
+      "url": "https://www.wowhead.com/forever/item=17063",
+      "ilvl": 78,
+      "quality": 4,
+      "source": "Ragnaros, Molten Core"
+     },
+     {
+      "slot": "Finger",
+      "id": 21202,
+      "name": "Signet Ring of the Bronze Dragonflight",
+      "url": "https://www.wowhead.com/forever/item=21202",
+      "ilvl": 65,
+      "quality": 4,
+      "source": ""
+     },
+     {
+      "slot": "Trinket",
+      "id": 13965,
+      "name": "Blackhand's Breadth",
+      "url": "https://www.wowhead.com/forever/item=13965",
+      "ilvl": 63,
+      "quality": 3,
+      "source": ""
+     },
+     {
+      "slot": "Trinket",
+      "id": 18473,
+      "name": "Royal Seal of Eldre'Thalas",
+      "url": "https://www.wowhead.com/forever/item=18473",
+      "ilvl": 62,
+      "quality": 3,
+      "source": "quest: The Greatest Race of Hunters"
+     },
+     {
+      "slot": "Main hand",
+      "id": 18520,
+      "name": "Barbarous Blade",
+      "url": "https://www.wowhead.com/forever/item=18520",
+      "ilvl": 63,
+      "quality": 3,
+      "source": "King Gordok, Dire Maul",
+      "enchant": {
+       "name": "Enchant 2H Weapon - Superior Impact",
+       "url": "https://www.wowhead.com/forever/spell=20030"
+      }
+     },
+     {
+      "slot": "Ranged/relic",
+      "id": 18713,
+      "name": "Rhok'delar, Longbow of the Ancient Keepers",
+      "url": "https://www.wowhead.com/forever/item=18713",
+      "ilvl": 75,
+      "quality": 4,
+      "source": "",
+      "enchant": {
+       "name": "Biznicks 247x128 Accurascope",
+       "url": "https://www.wowhead.com/forever/item=18283"
+      }
+     }
+    ]
+   },
+   "ilvl": {
+    "prebis": 63.2,
+    "bis": 66.6
+   },
+   "sim": {
+    "prebis-raid": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVV9IPFUUnjMzu3M8/dD1ruY4SEwbxTo0y53RCTViVp+ihyjooadydNd2JN1ldx+sJyODkEp7sQzBQCSNAqOCCIIohBWmXJX+kRCUgQ897Fv0EMTM7ipIvbnQ93Tu+cP5zncv99AdhASooEMaOLD7rk4ihzHIwhPwNExDAUqwDPAqwDqA9i0iJiTtRVLwi0971Iu7SMKPl0jGsyBBCn69C+pJPDQ+6VF/6yYFX94E9U8gBYMgof7STTL+tBYe3/wIwuo4ri003ae7QDL+vQEk4esLJOP+epj34zqol90kkIKnJwn152Qqgyt+ouarr/n6e1uQvtiGVRBX/Ldhx3sXPvD24HzyALZ3oQZQhzf8Kbqe8nNxyBmxOeeWwx2LW7ZjmZw7I5bDLc6dmijXRfxV/DJOfYRanGSsH0IKKU6yafEK9be8ezuQ6iKFYqadcSpsA9gzXun5Z4ulqm5z+yHT4iYfndBnC97ic/mcXizrXi6Xz+kzL+jVQl4vF6te1S8u6pW8V54t6OlKPq/PLJhlz8+Z7aDZDGbmK8XFYW2UDJampNGLMRb7ShQxFhIh0apQr9GDcSY+JmgKxUiyeCUM4Q9/Pc62bhLj46Y9dqvEJoizDA0aAygxnA8bHx+CFonDM7ZzRW+mRW+E36+1spisiRMCe6vz6jn0IDOo30heqxddKs/8O8EYSXhcZI9oD5PNOPUZDKV2YTQFz1ikGnejxLreh9aLaEecqPz3ATbfcfHx6qZv9go1tDvQa28HmK7d8x9aRpOf9anSpViDhmi/JAkR0tlV6Kck9WI8gSoMCxEaLofUvtQV2sLyXHbwnc0QR+69cxG+d+2GqCq6a9RE4X+FarZtdRQPfHjrfca/CYLgzvRBdrLlyE6HX/sm+MXGK0dPfeeOR16h7k6GmUHwh/tk0zh3DQk/G5gauv5Om2vi0WhRFKAES7DE/hkAOyxLEQ==",
+    "bis-raid": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVU1IK1cUnjOTZI6novFG6zhImaa0xKET7oxOUUuZ6Kp0UVrooqvW0cRmpJqQZGGhC0sUivRHumhrESyI+EMLbgqlUCgtQoSIUfsHFQrv+cDFW2T3eLvHjImCvLcz8L7VyfnOyfnOd4d7qR0hCgpokAAO7IWrXyKHYUjBW/AuTEAW8rAA8CnACoBaQ8SopH5MMv76U6dy/gyF8PxLoBDWykAy/rEJynGEZDwsg3K3g2Q8KYPywKf+LIPyfweF8DSo3F0Ev13G42Z+a8n/n5NNIAk/n6UQ7qz4hf+ugHLRQQLJuPoVKP/F4klc9KIVT/nM07bWIHG+DssgLnrfwob7PfzgbsPZ2B6sb0IFoAZfeON0vecvYr89aHHOTZvbJjct2zQ4twctm3PO7YoYqol4R/wtQt2EasTfax/iSBEKGSYvUk8ju70B8TaSKWxYSbvIvgb2npv/8P1cvqRZ3HrFMLnBh0a1qaw790EmreUKmptOZ9La5EdaKZvRCrmSW/Jyc1ox4xamslqimMlok7NGwfXSRpM0LsnkTDE3N6AOkc4SFNO7MMzCv4sihn0hJJpF6tI7McLENwRVpjBJJi/6FP7z8E22dlMYHzGs4VsVNkqcJalP70WJ4Yw/+Ggf1MAcnrTsK3mTDXmD/EW1UcVCqjgqsG9a755NLzOdevTYtXvBofLk4wWGScKjHHtNfZUsxqlbZyg1G4MteNIkRX8WJda2C40vosnYQfu9XjbTcvPx6qRvzvI9tFowa3sDmKY+9wQvg81PuxXpQqxAXbQ+kYQAidQy9FCMujASRQUGhAB1h0N8R2rzY2FhOtX33aqPA+f56QB/O1ZdVGTN0Sui8FShlGpGLcVLP976nJHDarXaPrGXGmskUhP+5b4KXq6+dPDOX85IkBVqzphfWa3ed96+DM4cXcKfe8f7r6/Ty4fi9eCpyEIe5mGePRoANNZJ/g==",
+    "prebis-dummy": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMkc9LHGcYx+d5Z3bm8Wmr6+uv6dDDdGmLLszyzui01VJm9Q8oFHpuHd21jlRXdvdgc8oPA0GSaC5BQ8CASDQkYEgCIZBLgrDChKyGJCYRAokBDznsLXgIhNldLzkr5HP6vt/neXi+Dy9JXDJ2VMS4bBwjDe/fadJ3vyIZb02Rgk/COGn4cBn0TTUSt5v0t42k4akF0D8AaRiGcf11Iyn4YjZ6XrgJ0bSKs+M1e2sZSMGPF4FkPDdOCq7ORX3bc6DvNZJEGm5txvVXLYkUTgfxUqCfDcyrl6FzdxFmgE0H87DkX4Hr/grs9K/B4jKUAMpwPhiQ7rHv3G5HCGG7wrWF7bi2JYTb7bqRZ5eYUmb4hm0r1EpoqKRgeR0SSCopli0K1FZ3V5Yg0UAaxSwn5Rb478Zv5HBBrUmOMo89YAxjhkYxkkXKJj3ZjjJvuAb1yYOKa8RIxncdfIz/7U/+909usmg6wvnZEr2W82ufOTzqT/ybzZi5vOlnMtmMOfS/WRzNmvlc0S8GuQmzkPXzw6NmZyGbNYfGrbwfZKyDolUrpsYKuYkuo5b6+f4fPHPku1ifxE/Cka8xqT3ZijLHsei0x+sQnUisp2DU33zu8xC2sETPoYZI0Q88Qd+8VIkU3J8HzuIKNSebUOVsSKp99C/ix2qk/XnQ5T1WggpzTshSlc70DLRRCzWjGkcduqQqFU9AYlVuiLR0fCT97aWFiA3v+5EqzzynwnTN9JIlJn1RFNMH6kj56cah7+l9FIbh14Nr6f66kR6EMwALEOQqpzf+eur1Vl2p7PVHnWH43vuzJna8pIx3OwYYwhT/NADyhhD1",
+    "bis-dummy": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMkctLHFkUxuvcqu46npnR9vqqKWZR08wM2lDNrdKaGQ2hWv+AQCDrxNJuY0m0pbsXCWSRpBWC5CFZaQgYEPFBAm4CIZBNgtBCS1rzkkQSSAy4yKJ3wV2ofmyyVshvder7zqnzHS5JXNI/hBEjsn6ZVHz6qEnb/4UU3L8NpGApD6Ti8yXQtsOk4lYetM+NpOJOHrRvgfUqD9rHRlLwZaVzbQqCcRW36/rydPCfnSUgGW+Ok4Krs0Hj7ixoB40kkYrzd0B73xKN45QfKfjaDd9Yvged+wswA2zKn4NF7z488FZgr38dFpagAFCCW/6A9IT94XTbQgjLEY4lLNuxTCGcbscJNKvAlBLDT2xXoVZCPRxcswFRpDAppiWy1FZTVxYh2kAqhUw77mT5Sf0E2VxQa4yjzEPPGMOQrlKIZBG3SIu1o8wb1qA2WXccPUQyfungY/ysN3nhXHoyZ9jC/tcUvab9f58xPOpNnE8ljXTG8JLJVNIYumTkRlNGJp3zcn56wsimvMzwqNGZTaWMoXEz4/lJs26aVTM+lk1PdOnV1G8PT/Hkse9ifRK/Bse+xqD2WCvKHMeC015sQHAisZ6sXvvmsz+GsIQpeo40RJz+4lH67V2YSMHDOeAsolBzrAnDnA1J1Yf+T/xdiXQ4B5p8wApQZvZVWarQmZiBNmqhZgxHUIMuqULZFRBdlRuCWroykvj97nzApvvnSIU3rl1mmmq4sQKTfipyiXp1rPzz8Mj39G4Vi8VfB9cT/TUhMQjXAebBT5enN8+8dnsrqlRy+4POYvGre7pa7LkxGR93DDCEi/z7AAE1D+I="
+   }
+  },
+  "hunter|Hybrid Beast Mastery/Marksmanship": {
+   "class": "hunter",
+   "spec": "Hybrid Beast Mastery/Marksmanship",
+   "gear": {
+    "prebis": [
+     {
+      "slot": "Head",
+      "id": 252605,
+      "name": "Black Dragonscale Helm",
+      "url": "https://www.wowhead.com/forever/item=252605",
+      "ilvl": 61,
+      "quality": 4,
+      "source": "Leatherworking",
+      "enchant": {
+       "name": "Lesser Arcanum of Voracity",
+       "url": "https://www.wowhead.com/forever/item=11647"
+      }
+     },
+     {
+      "slot": "Neck",
+      "id": 15411,
+      "name": "Mark of Fordring",
+      "url": "https://www.wowhead.com/forever/item=15411",
+      "ilvl": 63,
+      "quality": 3,
+      "source": "quest: In Dreams"
+     },
+     {
+      "slot": "Shoulders",
+      "id": 271955,
+      "name": "Theramore Pauldrons",
+      "url": "https://www.wowhead.com/forever/item=271955",
+      "ilvl": 65,
+      "quality": 4,
+      "source": ""
+     },
+     {
+      "slot": "Back",
+      "id": 21187,
+      "name": "Earthweave Cloak",
+      "url": "https://www.wowhead.com/forever/item=21187",
+      "ilvl": 62,
+      "quality": 3,
+      "source": "",
+      "enchant": {
+       "name": "Enchant Cloak - Lesser Agility",
+       "url": "https://www.wowhead.com/forever/spell=13364"
+      }
+     },
+     {
+      "slot": "Chest",
+      "id": 252483,
+      "name": "Dawn Armor",
+      "url": "https://www.wowhead.com/forever/item=252483",
+      "ilvl": 61,
+      "quality": 4,
+      "source": "Leatherworking",
+      "enchant": {
+       "name": "Enchant Chest - Greater Stats",
+       "url": "https://www.wowhead.com/forever/spell=19988"
+      }
+     },
+     {
+      "slot": "Wrist",
+      "id": 19587,
+      "name": "Forest Stalker's Bracers",
+      "url": "https://www.wowhead.com/forever/item=19587",
+      "ilvl": 65,
+      "quality": 4,
+      "source": "",
+      "enchant": {
+       "name": "Enchant Bracer - Minor Agility",
+       "url": "https://www.wowhead.com/forever/spell=7778"
+      }
+     },
+     {
+      "slot": "Hands",
+      "id": 16676,
+      "name": "Beaststalker's Gloves",
+      "url": "https://www.wowhead.com/forever/item=16676",
+      "ilvl": 59,
+      "quality": 3,
+      "source": "War Master Voone, Blackrock Spire",
+      "enchant": {
+       "name": "Enchant Gloves - Agility",
+       "url": "https://www.wowhead.com/forever/spell=13823"
+      }
+     },
+     {
+      "slot": "Waist",
+      "id": 18393,
+      "name": "Warpwood Binding",
+      "url": "https://www.wowhead.com/forever/item=18393",
+      "ilvl": 61,
+      "quality": 3,
+      "source": "Tendris Warpwood, Dire Maul"
+     },
+     {
+      "slot": "Legs",
+      "id": 22673,
+      "name": "Outrider's Chain Leggings",
+      "url": "https://www.wowhead.com/forever/item=22673",
+      "ilvl": 65,
+      "quality": 4,
+      "source": "",
+      "enchant": {
+       "name": "Lesser Arcanum of Voracity",
+       "url": "https://www.wowhead.com/forever/item=11647"
+      }
+     },
+     {
+      "slot": "Feet",
+      "id": 22064,
+      "name": "Sorcerer's Boots",
+      "url": "https://www.wowhead.com/forever/item=22064",
+      "ilvl": 60,
+      "quality": 4,
+      "source": "",
+      "enchant": {
+       "name": "Enchant Boots - Greater Agility",
+       "url": "https://www.wowhead.com/forever/spell=13823"
+      }
+     },
+     {
+      "slot": "Finger",
+      "id": 21202,
+      "name": "Signet Ring of the Bronze Dragonflight",
+      "url": "https://www.wowhead.com/forever/item=21202",
+      "ilvl": 65,
+      "quality": 4,
+      "source": ""
+     },
+     {
+      "slot": "Finger",
+      "id": 19325,
+      "name": "Don Julio's Band",
+      "url": "https://www.wowhead.com/forever/item=19325",
+      "ilvl": 65,
       "quality": 4,
       "source": ""
      },
@@ -1290,21 +1290,21 @@
      },
      {
       "slot": "Finger",
-      "id": 276765,
-      "name": "Leafre's Ring of Precise Spell Power",
-      "url": "https://www.wowhead.com/forever/item=276765",
+      "id": 19147,
+      "name": "Ring of Spell Power",
+      "url": "https://www.wowhead.com/forever/item=19147",
       "ilvl": 66,
       "quality": 4,
-      "source": ""
+      "source": "Lucifron, Molten Core"
      },
      {
       "slot": "Finger",
-      "id": 276765,
-      "name": "Leafre's Ring of Precise Spell Power",
-      "url": "https://www.wowhead.com/forever/item=276765",
+      "id": 19147,
+      "name": "Ring of Spell Power",
+      "url": "https://www.wowhead.com/forever/item=19147",
       "ilvl": 66,
       "quality": 4,
-      "source": ""
+      "source": "Lucifron, Molten Core"
      },
      {
       "slot": "Trinket",
@@ -1353,14 +1353,14 @@
     ]
    },
    "ilvl": {
-    "prebis": 63.4,
+    "prebis": 62.8,
     "bis": 65.6
    },
    "sim": {
-    "prebis-raid": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVE9IFG0Yn2dmduf1+UTHV/0chw+Zbz++WBdmeXfWCTViVk+doqBDp3J013Yk3WV3D9bJyCAk024ZioFIGgVGBRF0KYQVJlqT/pEQlIGHDkuX6BYzu5uHrgn9DsPz/p7f8Ly/54Uf1hOQQQENwsCA/vfzxDPohgQcg5MwAGnIwgTAZYBZAHUhSIgsqOdRIk8eNio7f6FA7o+jSLZcGSXybBmUzaBXPGhUPjWgRC7OgfINUCKuKysfGlAk72a847V74P0dJDOjFXrhq1z9CmR6FEWyOuvp3s6CstuAHErk5aasvG8ORcmkIxcd5Yqj3ZqH8M4iTAE/6VyHJfsm3LFXYLtvDRaXoQhQgqtOP+65fMx3mHGDMcZMZsYYi+mMmfEus8LEWVeRF0s8+chPi9iCRA2iSErrECIYRFGPsTy2VtmVJQjVoYQB3YiaeToP9JSdPXs6ky1oBjMO6qxHN7p7taG0PXYmldQyOc1OJlNJbfCcVkintFymYBeczJiWT9m5obQWzqdS2uConrOdpF5r6pVmdCSfGetUe5HRKLZH2ohAyYh3sxfroPp3YFHDzGNTpJEEKT/IqRIGUIiz/9Wqiooq38vRw+ohNCjDlgglAg085XkSqGhZNIZK5G8i0LrbULVX65hqAAXyuY2O7LvFymrffD/6y6wY05mxD7NWloBqage2RppJoLYS/7VZ1Mz7zrdaFGGXL0KZNy4InI9wYgpasRmbSFAmCnRyPsoWg9CqUOfV3MRwov3GnIcN699hH68to8wrkmZFijz3R6GQqFX7igN3f/ucnueu69YPrCX6qkRiwEuqOXAy5UsbJ15ZPT7Llaw+T+m6X6zjlWLbigjkUVv/P3vpUEm9I37upSEL4zBOfwwAIfv6/g==",
-    "bis-raid": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVE9IFG8Ynndmdufz/Ymun/pzHEK+Nop1YZZvZ51QI2b11CkKOnQqR3dtR9Jddvdg0MHQICRLOmUYBiKpFHgoiKBLIayw0Zr9g4SgDDx0WLpEt5jZ3Tx0Teg5DO88zzO83/MNPFhPIAAqMAgBB3ro95vIoRvicArOwgCkIAMTANcAZgG0BT8hAUm7jAp59rhR3fkPZbJzE1AmpUlAhbxYAnXT7w6PGtUvDaiQ15Og/nClN5OgfmpAmWx5ztUpcD9XyGaNv/s9UH1KZGYUZbIy6xo/zIK624ACKmTuFqgfm4MRMuUECo563WH35yG0swDTIE45t2HRvgcP7GXY7luDhSUoAJTghtOPezmfih1mzOCcc5ObUc6jOudmrMusMDHeVRDlkkg+izMytiDR/G6ydQgS9KOsR3kOW6vs8iIE61BBn25EzBydB3rOzlw8n87kmcGNozrv0Y3uXjaUsscuJBMsnWV2IpFMsMFLLJ9Ksmw6b+ed9BjLJe3sUIqFcskkGxzVs7aT0GuiXhEjI7n0WKfWi5xGsD3cRiRKRtyTvVoHzTsDjxhmDpvCjcRPxUFBU9CHUowf1qouKmtir0CPa8fQoBxbwpRI1PdcFImv4uWRKKrh/4lE61ahGq+mmJoPJfK1jY7se8TK1b7/efKPXVGuc2Mfdi0vAmVaB7aGm4mvdiXe3+YRM+cl32pRpV2xAGXRuCIJHkLxaWjFZmwi/gBRoVPwULY4BFekOncWJobj7XfmXGxYB4c9vLOMsqgqzAoXROGfQj5em/YVRx7+9T09L4vFYv3AWryvSsQH3K6aAyddvrpx5q3V47FCyepzncXiN+t0Zdi2whJ50tZ/YK8dKr13wmu+FGRgHMbprwEAOAz6hw==",
-    "prebis-dummy": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMT91LFH0UnvOb2Z3jed9X5/35Ne9cvEx7Ebowy2/HJtKIWf0DgqDrcnTXHElXdvdCu+rDIKTS7jQKA5E0CowKIgiiMFaYaC36FoIy8KKLpZvwLmZ3velaoefi8JznnMPzHJK4ZDyPImqycYpUfPygQd/4i2S8N0YKvg40UvHZAuhr0ZDcb9C/1pOK52ZB/wmkYhBo+ud6UvDDVNheuQvhdRSnhqvy9R9arcp4aZgUXJoO995Pg75ZTxKp+GpN0z81xhI44WtFX7/omzevQdvGHEwCm/BnYN67Abe9RVjvXoa5BSgClOCy3yM9Yv87HbYQQjjCSQphW0nhdDiOECIZlo4iU0oMv7AnCjURGlFSsLQCMaQoKVZS5Km5pi7OQ6yOVIpYdsLJ80PGQbK5oKY4R5lHnjKGEUOlCMkikSQ93oIyr7sFtcvtiWNESMZvrXyIH/NGTx7PjhZMW9j7LdFp2Qe6zP5Bb+REJm1mc6aXTmfSZt+4WRjMmLlswSv42REzn/Fy/YNmWz6TMfuGrZznp63toVUdJoby2ZF2o5r63dZhnt51L9Yl8bOw6zYmtcSbUOY4FL72cgXCF4ntyxu1no//liEpLJHc0Qyt9M/HKJGCWzPAmaZUrLdmQJc3WRHKzD4jSxW0pSahmRrpX4xqqEO7VEHZFRBbkutCLp0eSP13dTbEqrtnoIK3rl1mumq68SKT/igUUttsV7H3zo77dL4IguDv3uVUd01I9cIFgFnws+Xzq0ffuJ0VVSq53eFmEHx3j1TJuhuX8WFrD0MY478GACcDDyY=",
-    "bis-dummy": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMT89LFGEYnveb2Z3Xt9Lt89c0h/jaQ+jCLN+OTaQRs/oHBEHncnTXHElXdveQ0KHSIKQf0kmjMBBJpcBDQQRBFMIKG639poSgDDx0WLqEt5h199JZoefw8XzP874870MKV8xCGDGimhdJx+dPGoyNPaThxi0gDUvjQDq+mgdjLRyQxw3Gj3rS8e04GH8C6/04GN/qScN3lcmlCQjWdVyr6fd+R6qvijeGScPFqWDw8xQYm/WkkI4zt8H42hiN44QfKfjGdV88uAttG7MwCWzCn4Y57z489BZgvXsZZuehAFCCm36P8owddDpsKaV0pJOQ0rakdDocRyZkwpFSdhSYVmL4nb3QqInQDAd9ViCKFCbNSsgcNVfVhTmI1pFOIcuOOzl+wjxONpfUFOOo8tBLxjBk6hQiVcYTZMRaUOV1S1DdrDmOGSIVf7byIX7GGz1/NjOaF7a0j1qy07KPdYn+QW/kXDolMlnhpVLplOgbE/nBtMhm8l7ez4yIXNrL9g+Ktlw6LfqGraznp6yaaW2b8aFcZqTd3L7609ZJntr1LNal8Cuw6zGCWmJNqHIcCqq9WYGgIrEjObP652P/3JCQlkzs6A2ttO9LmEjDrWngLKJVoremwVA3WQHKzL6sKhW0JSehmRppP4YjaEC7UkHZlRBdVOsCrlwaSB64MxNg1T00UMFH1y4zQxdurMCU/wr5ZI3tKg4/2vGcztfFYnFv73Kyuyoke+EawAz4mfLV1dMf3M6KqpTc7mCyWPzlntom625MxaetPQzhAv87ACtUDq8="
+    "prebis-raid": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVU9oI2UUnzczybw+S5t+ae10UBkjSjo44cukI21FJu1JPIiCB0/aaZOaKbYJSQ4VL1UrSPFPvVQrhQq12EqFigoiCKIUUog0bVF32cLCbhd62ENuyx4WlpkmLZTdWwP7O73v/eH93u/7+B61I0RABR3iwIE9c3YSOQxCGl6DN2EMclCAOYBPABYBtBoiRiTtfVLwj1871ePHSMKfZ0nGw2qEFPx7HdT9sG/80qne7CAFP1oG9Q6Qgt99COr1DpLx6hf+8cufwK9WcHur4T9YB5Lx3hKQhJ9Nk4ybi37ilUVQTzpIIAUP9iPqtWgsgfNepOKpn3r69ysQP16FBRDnva9hzf0WttwNOBrZhtV1qADU4HNvlM7H/F180rYsbvGkze0k51bK5NxOcZtbnNs8VRHlmog3xD/D1E2ohUnG2g7EkMIkm0leop6Gd2MNYm2kUMi0EnaJLQF7yy28+3a+UNYtbr1gJrnJB4b1iZw78042o+eLupvJZDP6+Ht6OZfVi/myW/byM3op6xYncnq8lM3q49Nm0fUyZjNongYTU6X8TL82QAaLU9TowhAL/SWKGPKJkJgsUZfRiWEmviJoCoVISvKSH8L/777KVi4S40OmNXipxIaJswT1Gb0oMZzyG+/tgBaIwxOWfUZvvEEvxZ/VGllM1sRhgX3VevVsep4Z1GNEz9ULLpUnHkwwRBLu5dlL2otkMU7dBkOpWRhMwRNJUo3HUWJtP0DjRTQjdlB+q5dNtVx8PLvpi718Da0W9NpYA6ZrTz1Ey2Dyw25VOhErUBetDyQhQDy9AD0UpS4MR1CFfiFA3eEQ25TafFuYm0z3fbPsY9d5ejLAf45VF1VFd4yKKDxSKKebVkvx3I+X3mfon2q12j62nR5pONJj/ue+DF6+/vHuG/86Q4FXqDkjfma1ett5/dQ4cgwJf+sdfeL8Pz1dFC8HqyIHBZiFWXZ/AOx3SyY=",
+    "bis-raid": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVU9IG2kUnzeTZD7fisYvuo7D7jKbZZc47IRvJs6iLstET8sell3ooafW0cRmpJqQ5GChB4sWivSPFPrHIlgQqUoLHloohUJpESJNMdb+gwqF1oKHHnIrvZUZEwVpbwb6O4SX93uP93u/b/g+rCcQBAkUiAAD+svuP55BJ8ThPzgMfZCCDIwBnAGYApDXCSFBQT6JIrl/p1Ha+g59ZOsCoI+UxgFF8mgepPWAG9xulN41oEiejoP00aWejYP0pgF9ZMOrXJoAt10k69X840tQ+RXIuWH0kcUpt/DVFEjbDcihSKYvgvQ6FI6SCSdYcKSzjnJjBiJbszAJ/IRzFebs63DTXoDNnmWYnYcCQAnOO724t+c9/kfTMJjOdJOZOtONmMaYGTNMxhgzWazA+0o8ecs/CGAzEjngLrYCYYIB9Gk6y2FLJbswB+E6FNGvGVEzRy8DPWJnjh9NZ/KKwYw/NJ1prKNbGUjZI8eSCSWdVexEIplQ+k8o+VRSyabzdt5Jjyi5pJ0dSCmRXDKp9A9rWdtJaFVS2yGjQ7n0SLvcgSqNYEhtIn7qf8jzxO8KQV7PYZPaSAKU/4eTRfSjoLOcS5GXn/6lM/uFsS7N6DxQYd3IaBTb1FYiUDLkDl5bAdkzh0UNc1def0VejP0qV6qoT+a7OXql9u6Z+DtVsUUN7bnnHSqLflmgHwWylqZ/yX+iQRk2q5QI1UZvCxbVUVK/JwKtW4LKF1FlTK/9fSsdqrn5ZPek989yPTRqMGthDqgi//QVL73NN5olYZsvQJk3Tgmch0h8ElowhE0kECQStHMeyhaD8KJQ58bc2GC87dq0i1Xr50EPLyyjzEuiYqkFnvumkI9Xo5rit1sHPqfrSbFYrO9bjvdUEvE+93afBiddPr166LnV5WW5ktXjVhaLH6z/d4JNSxXI3dbeH/bu052X4m/vrUhBBkZhlH4eAGIESoI=",
+    "prebis-dummy": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMkc9LFGEYx+d5Z3bn8al0ff01TZdpqdCFWd6dnEojZvUPCILO5eiuOZKu7O7B6FJmENIPu4RGYGCShoFRQQRdCmGFjVajshKCMvDQYW/hIYjZXS+dFfqcvu/3eR6e78NLEpf0tSBiSNYvkoqvntdo67tIxqfDpOD7fIhUfDMD2nLQF89qtB/VpOKVSdB+A6n4YAS0b9Wk4Odb/vP2E/CnVVyYr/grM0AK/rkDJOONAVJwbtxvXB0HbaOaJFJxZTmkfa0LR3HUC+U87bpnPLwHzetTMAZs1JuAafc+zLuzsNaxAFMzkAMowE2vU3rJ9tmtlhBC2MKOxYRlmULYh21bCBGzc0wpMPzOVhWqJ9SDpGBhEcJIQVLMmMhQQ8WdnYZwFakUMK2oneEn9ONkcUH1EY4yD7xmDAO6SgGSRTRGWqQRZV71CCqTWxVbD5CMP5t4Pz/jDp0/mxrKGpawjpiizbSOtRs9fe7guWTCSKUNN5FIJozuC0a2L2mkU1k366UGjUzSTff0Gc2ZZNLoHjDTrpcwt4pmuRjtz6QGW/Ry6k+bJ3lix3exdomPwI6vMagxUo8yx37/tHeL4J9IrDWjV958/N8QMWGK1m0NEaUDPEx7vgSJFNycAM5CCtVGajDIWbdU/uij4mAp0uYEaPIGy0GRWZdlqURzfAwaqI5qMRhCDVqkEkVHQHhOrvK1dKk3vvfupM+Ss7+3xEfHKjJNNZxIjkn/Fdn4ltpRDj3e9j1tb/P5/O6uhXhHxYh3wTWASfBSxatLpz84bSVXKjgdfmc+/8s5VRZrTkTGF02dDGGY/x0AYtsQpg==",
+    "bis-dummy": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMUd1LFH0UnvOb2Znjed9X159f804301KhC7P8dnIqjZjVPyAIui5Hd82RdGV3Lwq6qDQI6UOCQCMwEEmlwIuCCLophJU2WvuUMoIy8KKLvQvvYvbjpmuFnovhmec5h/M8/EjikvFFRQzLxgXS8NnjBn3zH1Jw8yaQgsVxIA1fzIO+pgbkUYP+vZ40fDMO+q/AejcO+td6UvBteXJpAoJ1Dddq+svbUP3KeH2EFFycCgbXp0DfqieJNJy5BfrnpkgMJ/xw3tev+eb9u9C+OQuTwCb8aZjz7sEDbwE2epZhdh7yAEW44fdKT9kep9MWQghHOPG4sG1LCOeg4wgh4k6eKUWG39i6Qs2EhhqUWYEIkkqKFRdZaqmqC3MQqSONQpYdc7L8mHGUbC6oOcpR5qHnjGHI0ChEsojFSY+2oszrlqC6WXMcI0Qy/mjjw/yUN3b2dHosZ9rCPmSJLss+0m0ODHmjZ1JJM50xvWQylTT7z5u5oZSZSee8nJ8eNbMpLzMwZLZnUymzf8TKeH7SqplWxYwNZ9OjHUYl9cft4zy567dYt8Qvw66fMak12owyx+Gg2usVCCoS68wa1X8+9WeIuLBE546GiNE+HqH/PqlECm5PA2dhhRqjDahy1i9VHvqw2F+OtD0NurzF8lBi9iVZKqM9MQkt1ESNqIZRhw6pjJIrILIo1wVcujiY+P/OTIBVd+9gGR9cu8R0zXSjeSb9VcglamxXceDhjt/pelUoFP7tW070VIVEH1wFmAE/XbqyevK921VWpaLbE0wWCj/dExWy4UZlfNLWyxDO8d8DAH/jEAI="
    }
   },
   "hunter|Marksmanship": {
@@ -1414,12 +1414,12 @@
      },
      {
       "slot": "Chest",
-      "id": 16688,
-      "name": "Magister's Robes",
-      "url": "https://www.wowhead.com/forever/item=16688",
-      "ilvl": 63,
-      "quality": 3,
-      "source": "General Drakkisath, Blackrock Spire",
+      "id": 252483,
+      "name": "Dawn Armor",
+      "url": "https://www.wowhead.com/forever/item=252483",
+      "ilvl": 61,
+      "quality": 4,
+      "source": "Leatherworking",
       "enchant": {
        "name": "Enchant Chest - Greater Stats",
        "url": "https://www.wowhead.com/forever/spell=19988"
@@ -1427,10 +1427,10 @@
      },
      {
       "slot": "Wrist",
-      "id": 21186,
-      "name": "Rockfury Bracers",
-      "url": "https://www.wowhead.com/forever/item=21186",
-      "ilvl": 62,
+      "id": 19587,
+      "name": "Forest Stalker's Bracers",
+      "url": "https://www.wowhead.com/forever/item=19587",
+      "ilvl": 65,
       "quality": 4,
       "source": "",
       "enchant": {
@@ -1475,12 +1475,12 @@
      },
      {
       "slot": "Feet",
-      "id": 22064,
-      "name": "Sorcerer's Boots",
-      "url": "https://www.wowhead.com/forever/item=22064",
-      "ilvl": 60,
-      "quality": 4,
-      "source": "",
+      "id": 13967,
+      "name": "Windreaver Greaves",
+      "url": "https://www.wowhead.com/forever/item=13967",
+      "ilvl": 61,
+      "quality": 3,
+      "source": "Kirtonos the Herald, Scholomance",
       "enchant": {
        "name": "Enchant Boots - Greater Agility",
        "url": "https://www.wowhead.com/forever/spell=13823"
@@ -1488,21 +1488,21 @@
      },
      {
       "slot": "Finger",
-      "id": 276765,
-      "name": "Leafre's Ring of Precise Spell Power",
-      "url": "https://www.wowhead.com/forever/item=276765",
-      "ilvl": 66,
+      "id": 21202,
+      "name": "Signet Ring of the Bronze Dragonflight",
+      "url": "https://www.wowhead.com/forever/item=21202",
+      "ilvl": 65,
       "quality": 4,
       "source": ""
      },
      {
       "slot": "Finger",
-      "id": 276765,
-      "name": "Leafre's Ring of Precise Spell Power",
-      "url": "https://www.wowhead.com/forever/item=276765",
-      "ilvl": 66,
-      "quality": 4,
-      "source": ""
+      "id": 18500,
+      "name": "Tarnished Elven Ring",
+      "url": "https://www.wowhead.com/forever/item=18500",
+      "ilvl": 61,
+      "quality": 3,
+      "source": "Dire Maul"
      },
      {
       "slot": "Trinket",
@@ -1596,12 +1596,12 @@
      },
      {
       "slot": "Chest",
-      "id": 16688,
-      "name": "Magister's Robes",
-      "url": "https://www.wowhead.com/forever/item=16688",
-      "ilvl": 63,
-      "quality": 3,
-      "source": "General Drakkisath, Blackrock Spire",
+      "id": 252483,
+      "name": "Dawn Armor",
+      "url": "https://www.wowhead.com/forever/item=252483",
+      "ilvl": 61,
+      "quality": 4,
+      "source": "Leatherworking",
       "enchant": {
        "name": "Enchant Chest - Greater Stats",
        "url": "https://www.wowhead.com/forever/spell=19988"
@@ -1670,19 +1670,19 @@
      },
      {
       "slot": "Finger",
-      "id": 276765,
-      "name": "Leafre's Ring of Precise Spell Power",
-      "url": "https://www.wowhead.com/forever/item=276765",
-      "ilvl": 66,
+      "id": 17063,
+      "name": "Band of Accuria",
+      "url": "https://www.wowhead.com/forever/item=17063",
+      "ilvl": 78,
       "quality": 4,
-      "source": ""
+      "source": "Ragnaros, Molten Core"
      },
      {
       "slot": "Finger",
-      "id": 276765,
-      "name": "Leafre's Ring of Precise Spell Power",
-      "url": "https://www.wowhead.com/forever/item=276765",
-      "ilvl": 66,
+      "id": 21202,
+      "name": "Signet Ring of the Bronze Dragonflight",
+      "url": "https://www.wowhead.com/forever/item=21202",
+      "ilvl": 65,
       "quality": 4,
       "source": ""
      },
@@ -1733,14 +1733,14 @@
     ]
    },
    "ilvl": {
-    "prebis": 63.1,
-    "bis": 65.8
+    "prebis": 62.9,
+    "bis": 66.3
    },
    "sim": {
-    "prebis-raid": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVU9o23YU9pNk6/ktycQvTqyJDRQfhmeQJznTtmQHOzkNxkYGg+22aLETKySWsQ3LYIcsZBDCNrLbMjaykWX5Qza8w6AUenEbcMAlTkP/0IYW2hRy6CH00NJbkewkpPTYhH4H8fTp/fR9T5+kH7UgSCCDClHQgXUdnXE6vA8pGIBByEIeJgFmAOYAlD+DiBKvfEsiXvj/VXnvFRLw0r9AAu7UJBLx4hLI2wESsTwF8r02ErGyBPJjIBH/mgL5ThsJePtRK4n483/gLhexvN7kf38oNY88/jhOAq7OuetuzIG830Y+EvHKtiTfao/EcdqWqrb8g60u/wbRvQWYBW7a/gUWrT9g3VqB3b4yLCxBFaAOP9n9dDzlea7dfEfr1s1u09RNwzD1bt00qpxQ5/AutyxSiFAJkID1DYggBUjQDL1IHU12ZREiQRLJryXiZpEV2YiVH/vSyZfUhJ54VzN0TU/0qkNZKzeSSatOQbXS6Uxa/eobtZTNqAWnZJVsJ6cWM1ZhKKtGi5mMOj6ujTm5zNfO2LBWsOy0dtilNbrio0Un95ZypM+m4Dmqxumohqn1ZoBIwOtPPmGcJHgm3FpQuF4fm3nWit6jJd47HStvUCjGkGf+CsehXxHJT7weNxQ/8Xg/zApn50T0NHdCrAJnl//n9DH7iDpjIeQZjroxbG2AGwdxRpHkWCcGWHANmi/J4eMxKRzrwADDNWh4PrqgNG/Bgs15thz29xnG+QEZ7G1vnhO+/cQTGNQRaz/hukF7niuTAzK/z1XhgEt8x/s8RFOz4H2sGJAwssoHXdI3OZx67dd5F5vJrmEP15KJA04W1WSsyvleKpRSh9Wp4s1/XrhOz+VardYyWE71NYnUoLtbzIPtHHy/+dnVZI/H+urJPrezVnuQ/LRR7CZjPJ4L979+/H9u7DsfwgB8AVnIwwRMsKcDAF0TfFU=",
-    "bis-raid": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVU1IG2kYzvvNJPPlXdcNn9HMDrsw5rBkA5OdGZnd1T0kelooLRYK7a1OTTQjmglJoBZ6sGpBpD/SUy0tCmL9oQUvhVLoxSJESDHW/tEKhdaChx6kl9JbmUmiWHqs0ucwvPN8z8zzvPPOzId1FAIgggwRUIE1754RFf6FBHRCF6QhC0MAYwATANK0n9IAJ51HgT6894u49RPydOsqIE/LI4ACfTQL4roPBbo0DOK7ehTokxEQPzlLT0dAfFOPPN1wlYuj4Fwu0PUaf+tjoHrk6OUB5OnChCN8OQHidj16UKCT10B83RCO0VErULTES5Y8dxMiW1MwDmTUug4z5jTcMedhs30JpmahCFCGK1YH7nX5gDBDaVGNFsPQDU0z9BbV0IqELxP6lswJGEQq+ZxuViBM0Ye8oql5bKyy8zMQ9qOAXkWPGXmWZ71mtv+0nS3Iuqr/rWiqouptcnfazPSmkrKdk81kMpWUz5yTC+mUnLMLZsGyM3I+Zea603Ikn0rJAwNKv51JnbX7e5ScaSWVmkqpqGJ9eTvzp7Trz4bhG67awbiG8OdXPkSevvh8jJEA74Zwal4ibR429nUUtVXR/zmYKL9jMMoox7zLhFCvJKAXOTWmSV7k6PsQyx1eEsH13AiyZTi8+Z/Eo+wINkWDlGO0zxnD2go440Ci5VGMNlEf8y9C9SWpPR4DQ9FG6mN0ESqZdxek6i2Yv9rPms1uH+I4/0ON/eX2sy+3FzkEDRujDftSV2g38/JQp8htkyLsEP0C53ERSYyD+7FSX4CGFzi/Q3qGehK/3ph0sBpv7nHxPK7vEFGQ49Ei8fxQKCRq1YHij7vf3af1calUqutaSrRXiUSXs1lMgmXvXFw98Sze6rKecrzdUZZKH+LHK8VmPMrR+6GO3/Z+z5Vt53/ohFOQhiwMwiD7MgBkWXq7",
-    "prebis-dummy": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMkU9oE2kYxuedmWTevLvthq9pMzuw3dkclm5gwjfTnd1tL0l7XXZBEDzasUnbKW2mJAEVPGipUIpKvVlRKtRiW6rEgyCCCLWFFCJNLf5Bi4JW6MFD8aB4k0kTD6I3Kz6H4eWZ5/2+3/u9JDBBu6MghiXtGCl4+8ZP6tYPJOPyNSAZN8phUvDuLKjrQVKwOArqy0ZScGkW1HdACl4eBfV5I8n47G0DKXj2OvjtChYXa/7FN+HaV8LTwyTj/KTf93gS1O1GEkjB++th9WlTLIFjbrjkqqdc/coFaNuahgkQx9xzMONcgkVnDja7ijA9CyWACpxxu4VbYqtt8XbOuc3/NDk3Dc7tdtvm3DRt3y2JckXEF+JygCKEWpBkrKxADClIsmHyPDXX3LkZiIVIoYBhJew8GwXW74wMHfRGCrrFrb8Mkxvc7NR7B5xsfyatezndSaczaf3QUb0wkNFzXsEpuF5Wz2ecXO+A3pbPZPThYWPIy2YOe0N9Rs5x00Y9ZeymEoN5L/uHFqWGJ0EiGR+9/5+JYbnK49eyJnYKbPxTFN5hWP/sDcovFIkzlFhgSRQxoCkUIIknTC1AEr6KsonPofy9Nyi/UnO8CQN1lOrGeMLO17fFQppS5VrzmK61fintJzYibOkbkh+g/9i/1BKPoMRw0MddWwEfm0QrT2q8BYMstAC1OeqPbFM03oxBhguwy/zxh1Y7QpW2xRLsiNYJSaiqLTUB1UkxGMbYvBTyTeF4X+rn81O+VpO/9VX1MGntiKqiJ+MlUfiuVEjVqz3V71e/+j0d98rl8o89xVRXzUj1wDjAFLjezsnV/Q+SHVVXqCS7/GS5/Dq5b7fYTMYlvBntFhGOsA8DAGAfKP8=",
-    "bis-dummy": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMkU9oE1sUxufcmWROznuvL9ymzXTgvTcvi0dfYMJN+uZpu0narSgIgks7Nmk7pc2UJKCCC20rlOKf4sqKUqEU26LQjSAFN9VCCpGm1n9oQdAKXbgobsSdzDRxIbqz4rcYDt/55t7fuYckLulLKmJY1k+Tivfu/K5t/UIKbl0CUrA6CqTi/VnQ1oOk4uIIaG8aSMVHo6B98FqPR0F71UAKbvjJhTHwfldxve5ffx+ufWW8MEQKzk96weeToG03kEQqTl0G7WVjLIFjTrjsaOcd4+Y1aN2ahglgY84VmLFvwC17DjY7F2F6FsoAVbjodElLrMUSSVMIq82yxH/JpCXahGVaQoi2MlOqDF+zBwGKEOpBb5QViCEFSTGTokhNNXduBmIhUilgphJWkY8A77OHB4+5wyUjJVL/m0lhimSH0dNv5/tyWcMtGHY2m8sax08Zpf6cUXBLdslx80YxZxd6+o3WYi5nDA2Zg24+d8Id7DULtpM16ylzN5UYKLr5f/Uo/fYiSKTgs4+HOAsrPo9XKzrrkPj4lyii3Uzt3xuUPygS5yjzwDJjGNBVCpAsEkk9QDK+jfKJr6Hs2xuUv6gp3oiBOoq/MZGwivVt8ZCu+lxrLjf0P7+V9hIbEb78A8mP0kF+gJrjEZQ5Dni4ayvgYRNLFUmLN2OQhxagNkf9kS2KxpswyHEBdpk/N/TaEZq8zcqww1JnZclXa2YC/EkxGMbYvBzyTOlMb6bl6pSn1fTfvb6eplM7TFONdLzMpJ9KpUy92lP9c/u739P+sFKp/Nq9mOmsGZluGAeYAsfdObd65Em63XelarrTS1Yq79KHd4vNdFzGu9EuhnCSfxoAZ2Immg=="
+    "prebis-raid": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVU1oI3UUz5uZzLw8+xH+TZtxUJjmIDEwcWbKqK2HpD0JolQQ9GbHJm2mNJmQBKx4qbVCKX7EmxWhQq39QKWCggheagspRJq2+IFbdmG3Cz3soadd9rbMJG3pssdt2d/pzW/e//9+7/2YedSGEAYZVIiDDqz37InT4WVIwzCMQA6KMA0wB1AFUBZDiGFe+ZAk/OPXTvnoKRJw6ycgAQ/qYZLwz2WQ90Qv+KVTvtVBEn68API9IAm/mwH5RgcJeP1uO0n45c/gHRfxi3yT3l/2rtmqAvH4WZ4EXKt6x/6rgnzcQQGScH8vLF/riiVx1gnXHPlTR135BuJHizAP3KzzFSzZ38IP9iocDm7A4jLUABrwuTNE503+zjFL69OtPssyLcOwzD7dMmqc0ODwJrciUYRQEUnAxjbEkEQSNEMvU3eLXV2CWIgkCmpm0iqzGWDjdnHyXbdYUU3dfFEzdE03BtTRnF0Yz2ZUt6TamUw2o773gVrJZdWSW7ErjltQy1m7NJpT4+VsVs3ntUm3kH3fnRzTSraT0U6ztGZWcqLsFp5XotT+v0gk4L/332BcWPD1eHH5ERrMy9FwNgQmKNxAgM093L/er5kvXU7tZymSYMiz4CbHYVCRKEi8njSUIPF4O8pKV6dE8mseRNgmXN3o36bX2WvUk4ggz3DCs2F3Gzw7iDPKJCd6UGShdWj5czoei6KJbhQZrkNT89kLpXUFC7X62XXZ91do5ytksBf8fi7oDhJPYFB3ouuC6ibta96cHpb5Y64GJ5z5ER/wEU/Pg/+xohjG2Bof8sjA9Fj66a8XPOykesd8/JMyTzhZUlOJGhd4olBJn0aXiud+fOx1+v+q1+ttIxvpwRaRHvF2xQI47sknO2/9ner32UAjNehl1ut3Um82g8NUgsffokPPnP+em1vnVRiGdyAHRZiCKfZgAJkoe1Y=",
+    "bis-raid": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVU1IFGEY3ndmdufbN9Plc3WnoWDcQ2wLs82MTKUddvUURGEQ1C0nd3VHdGfZXcigg6WCSD/SKSNQEPOHAg8FEXQxhBU2XLU/SgjKwEMHb9EtZnZXMTqm9Jzeeb5nvu953peZD6sI+EAACUKgAG3YfmIUOAUxaIN2SEIa+gGGAUYBxAkvIT5WvIE8efW8Rtg4gBzZuAfIkeIAIE9eT4Gw4rGLZzXCt2rkyeoACD/tpbcDIHypRo6sOcq5QbBf58lKhZ8esvdZnQJkyZ1e5MjsqC38OArCZjW6kCdj90H4XBuMkEHTlzeF26Y0/QhCG+MwAsyg+QAmjQl4YszAess8jE9BHqAId81W3En5kqG63Kjojbqu6aqqa42KruYZrsiQr8w0j34kosdOswhBgh7kZFXJYl2ZnZmEoBd5dMtaRM/SW0C7jHTPFSudkzRFOyGriqyozVJH0kh1JeKSlZGMeDwRl65el3LJhJSxckbOtFJSNmFkOpJSKJtISL29co+VSlyzejrljGHG5YpKLqki3VkrdUwM4MFPHkSOfPh1njI+zvFj19m/eND2xsN2EygnMs0uOvxnfqVJ1k7uzdlH0B+mhKXuBYYhbpFHN7JKRBXdyJLvAZrZPye8c+aany7A/rX+Ep6jZ7E+7CcsJd32GJYXwR4HMmoWhXA98VDvHJTnU2mPjoFwHfFQMgclz9sLYnkL6i3nWbbo430c52lU6XEnzy7fbmQRVKwL1+5yXaIdzwv9bQK7yeRhi9Fusi4HodgIOB8r8fhIcJb12qSrvzN26OGYjaVoQ6eD91FtixF4KRrOM67/CrlYpdpTHH36z89pelMoFKra52MtZSLWbl8WY2BaW0NLF99FmxzWVYy22MpC4Uf0QqlYj4ZZ8iLQenjn91y6ds5AG1yGJKShD/ro7wEAWy16dQ==",
+    "prebis-dummy": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMkc9LHGcYx+d5Z3bm8WnV9fXXdA5lurRFF2Z5Z+q01VJm9Q8oFHpuHd21jlRXdvfQkEtiDATJj81NQ8CAkWhIgoEEQiCXRGGFDVkNSSSRCIkBDznsKcFbmN31krNCPofhO9/nfd7n+/CSxCVjR0WMysZx0vDB3WZ99ytScPUWkIJPS1HS8NEi6BtqKO4062+bSMNTc6B/BNLw6hToO02k4OsPjaThxdsQtqt4Ybxmby6G16wWgGQ8N04KLhfCtq0C6HtNJJGGmxtR/VVrLIHTQbQY6GcD89pl6Nqdhxlg08EsLPhX4Ia/BNv9KzC/CEWAMpwPBqT77FvXdhwhhCt6bCFsyxbuT64rhLDDj1tkSpnhG7alUBuhoZKC5TWIIamkWLbIUXvdXVqAWANpFLGchJvjvxu/kcMFtcU5yjzykDGMGBpFSBYJm/R4B8q84TrUOw8qrhEhGd918jH+tz/53z+ZybzpCOdnS/Razq995vCoP/FvOmVmsqafSqVT5tAxMz+aNrOZvJ8PMhNmLu1nh0fNrlw6bQ6NW1k/SFkHRatWTIzlMhPdRi31i/0/eOrIZ7E+iU/BkY8xqSPehjLHsXC1J2sQrkisJ2fU/3nh8xC2sETPoYZI0Pc8Ro0vVSIF92eBs6hCLfFmVDkbkmoP/Yv4oRppfxZ0eY8VocKck7JUpSs5A+3USi2oRlGHbqlKxRMQW5YbQi2dGEl+c2kuZN37bqTKc8+pMF0zvXiRSV8U+eSBOlJ+vHnoc3ofl0qlrwdXkv11IzkIZwDmIMhUTq//9czrrbpS2esPT5ZK770/a2Lbi8t4r3OAIfzPPw0AOO8RXA==",
+    "bis-dummy": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMkU9IHGcYxuf9Znbm27etbj9XnQ60TJe22KGzfDM6tnrZ1WNLC4VCj3V0Vx3RHdlZaAs9tKgg0j/SUzYETBDxDwl4SCAEcjEIK9ngqvlHIgQSAx5y8BZyCzPuegg5xpDn9PK8z3zz+54PBSZoNxVKE6L2Byr0+pVm9eA9lOjBf4ASrU0BKvTGEqg7cjhcblafNKFCd6dAfR6ubk+B+qgJJboXJdemIfxcoTsNf3kmPGd3CVCk/0ygRFfnw+D9eVAPm1BAhZb/B/VhSypNp71ExVP/9vTlc9BxsABzQKa9M7DonoeL7grs963DwhJUAGrwr9cvXCOfODbv5Jw7vMvi3DI5dzodh3PLckK3QqQaoY9JLYZJpJoc3mcTUhRllEyLB9had1cWIRVHBWOmnXYCVgY24k6O/+JPlnSb292mxU3e1asPjbqFkXxO94u6m8vlc/rg73ppNK8X/ZJb8vyCHuTd4tCo3hHk8/rEhDnuF/K/+uPDZtH1cmYjZR6n0mOBX/hSS+NnLIUfPJARJXrvxQ+MJCT80GimMiPfCpqCMRQtHkSY4VrSSK/AZl8l5D2m/c3pEH6MSYNRkcU2CKGxYyKetrQYivRpO4trSjRu++zCW+ytG79iBrYaLTTWIIvelaedoNHf4El/nzeemW28rrmvT4fxZ/yefYdtRpKKjI6FBNubEJIgsQNUjTYqs/ga1NEazTrYbrRSmdE1CHvdS54stPoRqnhIKnBE7L9EIVJHdg6i21M5QVOrYjw0hT+Hsx+dLYfaynw6HOluxj4iqqJnjAoR3imVso3pVPXFpTf+n55b1Wr1/YH1bF/dyA7ALEAZPP9oZuunO5meyBVqmb4wWa0+y/x4POxnDJFebe8nFH5jLwcAAqAn3Q=="
    }
   },
   "hunter|Survival": {
@@ -1820,12 +1820,12 @@
      },
      {
       "slot": "Hands",
-      "id": 271948,
-      "name": "Theramore Gloves",
-      "url": "https://www.wowhead.com/forever/item=271948",
-      "ilvl": 65,
-      "quality": 4,
-      "source": "",
+      "id": 15063,
+      "name": "Devilsaur Gauntlets",
+      "url": "https://www.wowhead.com/forever/item=15063",
+      "ilvl": 58,
+      "quality": 3,
+      "source": "Leatherworking",
       "enchant": {
        "name": "Enchant Gloves - Agility",
        "url": "https://www.wowhead.com/forever/spell=13823"
@@ -2139,14 +2139,14 @@
     ]
    },
    "ilvl": {
-    "prebis": 63.4,
+    "prebis": 63.0,
     "bis": 67.6
    },
    "sim": {
-    "prebis-raid": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVE9IFGEU3/fNuPN8mQ5T4DREfBmECSOzIxutl1k9dSqDDh2CdnLHdkqdZXcPRhcjg5LszyU0IgMJCyoMC0KKDnVYYYK1P0Yl9M9DBwMvIR2CmFndhc4G/fgOv+/33pv3mw/eozoEGVTg0AwGKDsqN2bAHkhCFxyCFGQgC4MA5wAuA2ifRURZ0AaBJHz6qEFd3EACTg+QiK99mSS8UZLVuShJ+Pxhg/qtniQ8MwbqSpDu+7L6qZ5EfH8puF55AEF1FEdzZfn3VSARR5ZkEnCkjwScPEwSvpmT1aXgOy9Kq+TVnKx+3NTUikOuXHTVCy6fvA7Ni+MwDGzIHYUJ+ybctW/DQscUjN+CIkAJLrqdVP3ZGbYtrhtGPDwx3YgbZlt44oZpmrF4rMjEEsOvbJ6RQpJWQwL+9JokqiFBb8srpKEWJRFXJvcrosbaIxXl/gQotVq54pmnnFJSdrb3iJctcNMwd+sxQzdi7bw7Y/cfc9Lcy3E7nXbS/OhJXsg4POcV7ILr9fO8Y+e6M7w57zi8z+l1HD2dzetrYb0cbj2e9/p3aY208UOUSMR3v/YpTBZDHwFf83R+uqviacar0C+ecuIve0ZCNxPrbK/8Fk+qfX94qvCdFWGZmaeFSIjNyWFACrxGZWy6I9QGYmSwJ7nl2liAWWt7T4h5y1xmqsStliKL/FcoJNfYP8XOe+veJ/HS9/261FSyY1VIpoJhHwPXWz47e/CtlQjVSMnqCDJ9f8k6UCYLVouAjxs7t1Ynq7w49oarIwNZGIAB5c8AzPXVPg==",
-    "bis-raid": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVE1o1FwUnfuSTl7f16+EKDQGkWcFqYWUl5SI000yXbnSCi5cCE7spE60nQwzs6i4qU4HtPhTcGNFrFBkFFopuJEiuJ3CVKf+VNCCWGfhosJspLiTJPMDrit4COHk3Htzz3twL+nCIIIMFPqAgXSo9YUYHAMLRuAMJCAFGZgCuA4wC6Bs8RiLnHINiIBfF0Cu/Ud4XLsDhMfVgi8+rIryepQIeK0A8rduIuC3BZB3/ND7AshfugmP3wWZb8JyAa839VIRGm8O35ogHC6dJQJeLIK87f9o9m6DLBVB/ryndwBPu2LZlW+6tPQA+mrzMANo2r0HC/YjWLSfwGZ8GeYfQxmgCrfdYdI+7go6YKiMGWzQYExTmcH0Qf/RDMZ0XTO0MuKrCG+hDUQkIigdhMM/vV6BdBBOHcxJRMFKlPB4p3RS4hU0FGkpzxZA6lTCileedEVK2Jnxc14mT3WmH1U1pjJtiI6m7PQFJ0m9LLWTSSdJz1+m+ZRDs17ezrtemuYcOzuaon05x6ETzrjjqMlMTm2G1TA8cDHnpY8oPeT/T1FCePzx1wkJiXzgw+dNTzeej7Q8rXgt+tWTLv1hj8VUPbbL9sK7eNnu+8OTue+oDHWkX+UiAfZaM4CJ7zUq4t6nXKcvRqbGrH3353ysmgfHAmyYeh3JAjX7yyjyTyFvNdlfxeGlXe8TW6tUKl2JZSveEKyEP+5z4Hr14urpD2YsUCNVM+5nVirb5qmQbJr9HH7RM7y/PVnh6jgeLI8UZGASJqXfAwBjgtK6",
-    "prebis-dummy": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMkc9rE0EUx3dmt9nXUdtlFbouCGMPUgtbZidGSC+b9A/wB3gUzNpszWqbDUkOFS8VI2ixihdpRKxQJAoqlSpIUQTrIYUVEn+iFkTtwUOEXKR4EGSTNB702ILf03c+7828L2+IoAr6sw4ARdQnEJHhycNubWUTEWF+nEjwyleIDNcrilYNERkWH3RrX7uIDGeKSFsN2n1f0T51EQneXwqOl++j4HYIprNN/OsKIhJM1RQiwtQYEaF0mMjwuqpoteCd55WWeVlVtI9beweg4CplV7vg0tI11LcygyYRLrjTaNa+ge7Yt9ByfA7N3ERlhCroojskLOAdEYOxCItEGDONPWHGTcbDzIwwzrnJy1iqYPiCF0WiElnvICL88Hpl0kFEI5xTO/UmW/Da9rOnnlITdmb0iJfJU874XsNkBjMH6XDKTh9zktTLUjuZdJL06EmaTzk06+XtvOulac6xs8Mp2pdzHDrmjDqOkczkjLWy0SwPHM956d16D9nyIUSIBO9+7lOxIumhlic6NPxqab8q6XhQaJN7s6id8qmnnvhHSr7OKRvbUQpuO8P5+QN/DWZRg0c3YjA8/vMt3z1N/IbLqI75aVFoaFtsEgEJNhNSoPe22BlAYWIktv1qMdCStXOkobcWr2NNplZ/GQv/lfKxNbeh2nV33edEX/i+vzkxF4u3QCyBziFURK5XP7t06I0VbVChYsWDTt+vWQebZtnqF+FRzxAGNK7+HgAMqO6p",
-    "bis-dummy": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMkctrE1EUxufcmWZOr1qGUeg4IFy7kFqYcjNlhHQzSf8AH+BSMGMzNaNtJiRZKG7UJKDFF7ixIlYoEoVWCm6kCC50kUKqqU/QgqhZuKiQjRR3MpOHC1224McwfPzOufd8nEsFVdBf9CAqon4RqIwvi6A1tlEJG9eBSlgvBvBuXdFWI1TGlSJo3/qojK+LoG0EpbdF0D73UQnfhJ2vWsdlXO3wShnafxGvTlERK8eojPNl0NaDi27cbJuFMmifdg4MY8lTqp52xWOVOzDYmIVpICXvFsw592DeeQBriUWYvQ9VgDpc88aEJbLHMji3uGVxHjUszs2R4OMWN00zOlIlUp3gV/JcpCqV9R4q4k9/QKY9VDRG8mqv3mJLftd+8dVzatLJTh73swVmcvOAEeUGj46y8bSTOemmmJ9jTirlptiJs6yQdlnOLzgFz8+wvOvkxtNsMO+6bMqddF0jlc0bnbLRKg+fyvuZ/Xo/3fExQqmEH34dVIki6ZG2pzqGfqNySJV0Mip0yaM56KZ85qun/5HS3OSU4XaUktfNcPnx4b8G85hhxrZiMD798yw/fE38TqrQJOYFUQi1Kz4NSIPNRBQceCj2BlA4PxHffXsm0LK9dyLUe9tsEk1m9lCVCP+VCvGO21LtW9j0ObGVWq22PbkYT7RBPAmXAGbA85vl5aPv7FhIhbqdCDprtXX7SMus2UMiPukfIwhn1N8DAOJs7CU="
+    "prebis-raid": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVF9IFF8U3nNn3Dmenz8dpsBpiLgZhAkjMyMbrS+z+tRTGfTQQ9BO7thOqbPsbmD0kJFBSfbnJTQiAwkLKgwLQooe6mGFDdb+KJUUlQ89GPgS0kMQs6Mr9GzQx3347nfuuee7F86hGgQZVODQCAYo2yo7ZsAuSEAHHIAkpCED/QDnAC4DaB9FRFnQTpGETx/VqQv/kYCTfSTi66JMEt4oyepMlCR8/rBO/VpLEp4ZAXUZKIpzx9VPtSTiu0tAEl55AEFyFIezofzrKpCIQ4syCTjUQwKOHyQJ38zI6mJwzYvSCnk1I6sfNjQ044AnFzz1gsfHr0PjwigMAhvwhmHMuQl3ndsw3zYBo7egAFCCi147rT11im2J6YYRKy9TjxktlmFaLYYVM0zLMmNmgYklhl/YLCOFJK2KBPzhN0hURYLeklNIQy1KIi6P71VEjbVGKsr9MVCqtTDjma+cVJJOpvuQn8lzy7B26qahG2Yr70w7vUfcFPez3Eml3BQ/fILn0y7P+nkn7/m9POc62c40b8y5Lu9xu11XT2Vy+mpYD8PNR3N+7w6tnv5/HyUSce7nHoXJYtlHwFc9nZ/sqHia8iv0s68c+8OeEdet+DrbC//iyVrd774qfGMFWGLWaSFSxsbEICAFXqMyNtwRqgMx0t+V2HRtJMC0vbWrjFnbWmKqxO2mAov8U8gnVtlfxfZ7614n/rJYLNYkJxJtK0IiGbT6CHj+0tnp/W/teFmNlOy24GSxuGjvC8m83STg4/r2zWudFY6N3eXBkYYM9EGf8nsALl7U3Q==",
+    "bis-raid": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVE1oE10UzXkzzby+r18Jo9BxEHlWkFqY8jIlYrqZtCtXWsGFC8GMzdSMtp3QZFFxU00DWvwpuLEiVigShVYKbqQIblNINfWnghbE2oWLCt1IcSczaRJwXcHDMJw599655z24l7VQRKCBowMC6qH6FxE4hgT6cQZJpJHBOHAdmAL0dZnSiKRfA1Po6zy0jf+YTDfugMm0kvfFh5WIthJmCl3OQ/vWyhT6Ng9t2w+9z0P70spk+i7IfFMtV+hKTS8WsPOW6K1hJtHiWabQuQK0Tf9HU3d3yHwB2uc97V10wo2UXO2my4sP0LExg0mQCfceZu1HmLOfYK13ATOPUQIquO32scZxF8mBmCFETJgxIaKGT7qDJyaEaUZj0RKRK4Suk1XCVKboTUyiP712hTUxyejOqkynepjJdLt4UpV10hOqK89moTbr1YpXnnpFTdqZoXNeJsdNYR41osIQ0R4+kLZHLjgp7o1yO5VyUvz8ZZ5LO3zUy9k51xvhWcceHUjzjqzj8GFnyHGMVCZr1MJGNdx1MeuNHNHb2P+fwozJ9OOvEyqJyIEPn9c83XjeX/e06NXpV0+99Ic9ETfM+C7bq97Fy0bfH54mfSclbBHzqhQKsDcxCcp8r+EIbX8qNftiaHwwse/+tI8l6+BggFXL3CKawq3OEgn9U8glauyv4vD8rveJL5fL5ZbkQqJ3R0gk/XGfhuttFZZOf7DigRqqWL1+Zrm8aZ2qkjWrU6Iv2vr2NyarujqOB8sjjQzGMKb+HgBjc9K6",
+    "prebis-dummy": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMkN9LFF8Yxuc9M+68vt9vOkyB00Bw8iJMGDl7bIP1Zlb/gH5Al0FO7phT6sjuBkYXFRmUZNFNaEQGEhZUGBaEFAV2scIGa7+kEqLyogsDb0K6CGJ2db2oS4Weqw/PO3Oeh4cUU7GfVyEaqn2KdHz6qNZa+I9UnOwnDV8XDNLxRtGwZmOk4/TDWutrDel4dgSsZaAYzh23PtWQhu8vA+l45QFEP8dwOFO2f10F0nBo0SAVh3pIxfGDpOObWcNajJ55UVyBV7OG9XFzfRMOBEY+sC4GfPw6NCyMwiCwgWAYxrybcNe7DfOtEzB6C/IARbgUtClTbFvCESIhEgkh4s6uZiHjQjaLeEJIKeMyz7Qiwy9sWiWTdLuKVPwR1utURarTnDXJRjtGGi6P7zWr7fL9WVjBqTX8HJonzXavr/tQ2JfjUsjdTlw4It7CO7q83iN+mocZ7qXTfpofPsFzXT7PhDkvF4S9POt7mY4u3pD1fd7jd/u+k+7LOqtnp3xuOpoNe3fadbTpQ4xIw7mfe0xmaKV2EWs2a1Eqfe+PQYUvTO4zj/2lmlznaqUdjIHgjzCRdGRyI8Lwydr+30NL/cbysMTkGVUpaUtqEJCigWIG1t9RqyNTOd2Z2nptJNKMu72zpHeuXGKWzt3GPFP+KeVSq7Sh2nFv3XOSLwuFwv/tE6nWFSPVDucBRiAIl87NHHjrJkuuUnRboy8LhUV3fxnm3UYVH9e1MYR+8/cA+tzuSA==",
+    "bis-dummy": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMkMtrE1EUxufcmWZOr1qGUeg4IFy7kFqYMrkxQrqZpH+AD3ApmLGZmtE2E5IsFDdqEtDiC9xYESsUiUIrBTdSBBe6SCHV1CdoQdQsXFTIRoo7mcmjC1224LcYfnzfmXs+DhVUQX/Zg6iI+iWgMr4qgtbYRiVs3AAqYb3om/fqirYSojIuF0H73kdlfFMEbd2P3hVB+9JHJXwbTL5u/S7jSsevlKH9FfHaJBWxcpzKOFcGbc1/6OatNsyXQfu8c2AYS65SdbWrLqvchcHGDEwBKbm3Yda+D3P2Q1hNLMDMA6gC1OG6Oyoskj1RwzSjZjRqmmHjQMTkZphHfIdzHo5UiVQn+I28EKlKZb2HivjLG5BpDxWNSF6lOuohKuF65bDaq7fy514XFzfwq6eeV5N2duKEly0wbvKDRtg0zPAIG0vbmVNOink5ZqdSToqdPMcKaYflvIJdcL0Myzt2bizNBvOOwyadCccxUtm80YmNVjx8Ou9l9uv9dMenEKUSfvx9SCWKFLTzWdLJiNDt+3gWunzlyRH1zD+q8U2uFtxBKbl/LTNjBo9txTJ8tnH/n54m/iBVaBJ+URQC7YpPAVL/QCEFBx6Jvb4pXBiP774z7WvJ2jse6IPFm0STmTVUJcJ/pUK8Q1uqffObvie2XKvVticX4om2EU/CZYBpcL1meenYeysWuELdSviTtdqadbQFq9aQiE/7RwnCWfXPAH9n7CU="
    }
   },
   "mage|Arcane": {

@@ -3,31 +3,48 @@
  "spec": "bm-raid",
  "build": "beast-marks-ml-raid",
  "setting": "raid",
- "date": "2026-10-03",
+ "date": "2026-10-04",
  "tank": false,
  "removal": {
-  "Barrage": 0.01336478509675143,
-  "Bestial Discipline": 0.009401836455178003,
-  "Careful Aim": 0.04610919613584108,
-  "Deadly Aspects": 0.04734702707521987,
-  "Efficiency": 0.01497691127658829,
+  "Barrage": 0.011968319644962477,
+  "Bestial Discipline": 0.02617766100273422,
+  "Bestial Swiftness": -0.0,
+  "Careful Aim": 0.046163171909336054,
+  "Deadly Aspects": 0.038504624545680044,
+  "Efficiency": 0.006205172709354612,
   "Endurance Training": -0.0,
-  "Ferocity": 0.024788970725327153,
-  "Focused Fire": 0.01909765242763628,
-  "Improved Stings": 0.027476981551272206,
-  "Lethal Attacks": 0.04302989954638525,
-  "Mortal Shots": 0.03880841012006753,
-  "Ranged Weapon Specialization": 0.02094627266788629,
-  "Summon Hawk": 0.1770659488094516,
-  "Unleashed Fury": 0.034501995017841236
+  "Ferocity": 0.02960957616000026,
+  "Focused Fire": 0.019048117714450585,
+  "Frenzy": 0.029532968414539007,
+  "Improved Stings": 0.022734661282725277,
+  "Intimidation": 0.0017236649888083821,
+  "Lethal Attacks": 0.047380387456729456,
+  "Mortal Shots": 0.036268607967751554,
+  "Pathfinding": -0.0,
+  "Summon Hawk": 0.06482767286009872,
+  "Unleashed Fury": 0.04031576703358364
  },
  "free": [
-  "Endurance Training"
+  "Bestial Swiftness",
+  "Endurance Training",
+  "Pathfinding"
  ],
  "kept_for_rotation": [],
- "active_never_worth": [],
+ "active_never_worth": [
+  "Intimidation"
+ ],
  "abilities_never_cast": [],
- "moves": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Pathfinding",
+   "to": "Endurance Training",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  }
+ ],
  "final_seed3": 0.0,
  "start": {
   "Beast Mastery": [
@@ -37,11 +54,19 @@
    ],
    [
     "Endurance Training",
-    3
+    2
    ],
    [
     "Focused Fire",
     2
+   ],
+   [
+    "Pathfinding",
+    1
+   ],
+   [
+    "Bestial Swiftness",
+    1
    ],
    [
     "Unleashed Fury",
@@ -56,8 +81,16 @@
     1
    ],
    [
-    "Bestial Discipline",
+    "Intimidation",
     1
+   ],
+   [
+    "Bestial Discipline",
+    2
+   ],
+   [
+    "Frenzy",
+    3
    ]
   ],
   "Marksmanship": [
@@ -71,7 +104,7 @@
    ],
    [
     "Efficiency",
-    4
+    2
    ],
    [
     "Careful Aim",
@@ -84,10 +117,6 @@
    [
     "Barrage",
     3
-   ],
-   [
-    "Ranged Weapon Specialization",
-    4
    ]
   ],
   "Survival": []
@@ -107,6 +136,10 @@
     2
    ],
    [
+    "Bestial Swiftness",
+    1
+   ],
+   [
     "Unleashed Fury",
     5
    ],
@@ -119,8 +152,16 @@
     1
    ],
    [
-    "Bestial Discipline",
+    "Intimidation",
     1
+   ],
+   [
+    "Bestial Discipline",
+    2
+   ],
+   [
+    "Frenzy",
+    3
    ]
   ],
   "Marksmanship": [
@@ -134,7 +175,7 @@
    ],
    [
     "Efficiency",
-    4
+    2
    ],
    [
     "Careful Aim",
@@ -147,10 +188,6 @@
    [
     "Barrage",
     3
-   ],
-   [
-    "Ranged Weapon Specialization",
-    4
    ]
   ],
   "Survival": []

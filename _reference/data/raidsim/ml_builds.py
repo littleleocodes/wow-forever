@@ -440,14 +440,13 @@ def table(rs_, tier, src):
     best = winner(rows[0], f"{tier}-raid")["dps"]
     dummy = sorted((r for r in rows if winner(r, f"{tier}-dummy")), key=lambda r: -winner(r, f"{tier}-dummy")["dps"])
     rank = {(r["class"], r["spec"]): i for i, r in enumerate(dummy, 1)}
-    o = ["| # | Spec | Full raid | Behind the best | Training dummy | Dummy rank | Talents: full raid / dummy |", "|---|---|---|---|---|---|---|"]
+    o = ["| # | Spec | Full raid DPS | Behind the best | Talents |", "|---|---|---|---|---|"]
     for i, r in enumerate(rows, 1):
         d = winner(r, f"{tier}-raid")["dps"]
         page = paths.rel(src, ROOT / r["class"] / "raid" / f"{SM.spec_slug(r['class'], r['spec'])}.md")
         o.append(f"| {i} | [{SM.spec_name(r['class'], r['spec'])} {r['class'].title()}]({page}) | {d:.0f} | {'best' if i == 1 else f'{d / best - 1:+.0%}'} | "
-                 f"{num(r, f'{tier}-dummy')} | {rank.get((r['class'], r['spec']), '-')} | {tf(r, f'{tier}-raid')} / {tf(r, f'{tier}-dummy')} |")
-    return o + ["", "Ranked by DPS in a full raid (every raid buff and debuff: the group setting the raid pages recommend on); *training "
-                    "dummy* is the same spec's best build alone with only its own buffs, and its rank there.", ""]
+                 f"{tf(r, f'{tier}-raid')} |")
+    return o + ["", "Ranked by DPS in a full raid (every raid buff and debuff: the group setting the raid pages recommend on).", ""]
 
 
 def intro():
@@ -456,7 +455,7 @@ def intro():
             "weights for the spec, the best item per slot, set pieces and trinket pairs raced), and its talents are searched separately for "
             "each tier and setting (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal "
             "build of the spec; the finalists are raced on fresh seeds and the winner is checked against every one-move and prerequisite-chain "
-            "neighbour). *Training dummy*: a boss-level dummy with only your own buffs (the project's ranking setting). *Full raid*: every raid "
+            "neighbour). *Full raid*: every raid "
             "buff and debuff. 3-minute fights; each number is the winner's average over 100,000 fights (standard error about ±0.1 DPS; "
             "differences under 2-3% are within the model's assumptions). These numbers use each spec's own best gear, so they differ a little "
             "from the spec pages' ranking, which races every build in the project's standard set per spec. Simulations of the community's "

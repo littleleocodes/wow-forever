@@ -51,15 +51,15 @@ The Beast Mastery build the machine-learning talent search found in a full raid 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 490 | +0.0% | 849 | -2.3% | 22 s |
-| 2 | **[`beast-mastery-ml-parse`](beast-mastery-ml-parse.md)** | ours: parse build | 31/20/0 | 478 | -2.3% | 868 | +0.0% | 29 s |
-| 3 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 478 | -2.5% | 847 | -2.5% | 26 s |
-| 4 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: hand draft | 22/29/0 | 468 | -4.5% | 857 | -1.3% | 36 s |
-| 5 | *Beast Mastery 35/16/0* | community simulator | - | 462 | -5.8% | 822 | -5.4% | 28 s |
+| 1 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 490 | +0.0% | 855 | -2.9% | 22 s |
+| 2 | **[`beast-mastery-ml-parse`](beast-mastery-ml-parse.md)** | ours: parse build | 31/20/0 | 486 | -0.8% | 880 | +0.0% | 30 s |
+| 3 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: hand draft | 28/23/0 | 479 | -2.2% | 876 | -0.5% | 30 s |
+| 4 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 478 | -2.5% | 855 | -2.9% | 26 s |
+| 5 | *Beast Mastery 35/16/0* | community simulator | - | 464 | -5.3% | 832 | -5.4% | 20 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-02, 10 changes to the base rotation; third-seed check: ml: Beast Mastery 433 -> 465 DPS (+7.4%), ml: Hybrid Beast Mastery/Marksmanship 442 -> 473 DPS (+6.9%), beast-mastery-raid 433 -> 464 DPS (+7.2%), sim preset: Beast Mastery 35/16/0 406 -> 432 DPS (+6.4%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-04, 12 changes to the base rotation; third-seed check: deep: Beast Mastery (dummy) 466 -> 498 DPS (+6.9%), deep: Beast Mastery (raid) 453 -> 488 DPS (+7.8%), deep: Hybrid Beast Mastery/Marksmanship (dummy) 471 -> 494 DPS (+5.0%), deep: Hybrid Beast Mastery/Marksmanship (raid) 444 -> 479 DPS (+7.9%), beast-mastery-raid 467 -> 490 DPS (+4.9%), sim preset: Beast Mastery 35/16/0 439 -> 463 DPS (+5.5%), mm-hawk-raid 459 -> 478 DPS (+4.0%), beast-marks-ml-raid 447 -> 468 DPS (+4.6%)):
   1. drop: use every other cooldown when ready (+3.0%, pass 1)
   2. drop: if time to the next auto attack > 1s: cast Aimed Shot (+0.5%, pass 1)
   3. drop: if time to the next auto attack > 0.5s: cast Multi-Shot (+2.1%, pass 1)
@@ -70,7 +70,9 @@ The Beast Mastery build the machine-learning talent search found in a full raid 
   8. threshold 1s -> 2s: if time left on Serpent Sting < 1s: cast Serpent Sting (+0.4%, pass 2)
   9. threshold 2s -> 4s: if time left on Serpent Sting < 2s: cast Serpent Sting (+1.3%, pass 2)
   10. spell probe: insert at the end: if auraIsInactive: cast Intimidation (+0.5%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 5 passes, the last 2026-10-02, 8 changes to the base rotation; third-seed check: ml: Beast Mastery 762 -> 787 DPS (+3.3%), ml: Hybrid Beast Mastery/Marksmanship 782 -> 808 DPS (+3.2%), beast-mastery-raid 768 -> 793 DPS (+3.3%), sim preset: Beast Mastery 35/16/0 741 -> 763 DPS (+3.0%)):
+  11. only above 60% mana: if auraIsInactive: cast Intimidation (+0.2%, pass 7)
+  12. threshold 60% -> 70%: if auraIsInactive and mana % ≥ 60%: cast Intimidation (+0.3%, pass 8)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-04, 10 changes to the base rotation; third-seed check: deep: Beast Mastery (dummy) 835 -> 865 DPS (+3.5%), deep: Beast Mastery (raid) 859 -> 889 DPS (+3.5%), deep: Hybrid Beast Mastery/Marksmanship (dummy) 832 -> 861 DPS (+3.6%), deep: Hybrid Beast Mastery/Marksmanship (raid) 844 -> 876 DPS (+3.8%), beast-mastery-raid 826 -> 855 DPS (+3.5%), sim preset: Beast Mastery 35/16/0 803 -> 832 DPS (+3.6%), mm-hawk-raid 825 -> 855 DPS (+3.7%), beast-marks-ml-raid 836 -> 866 DPS (+3.6%)):
   1. move to the top: if time to the next auto attack > 0.5s: cast Multi-Shot (+1.9%, pass 1)
   2. drop the condition: if time to the next auto attack > 1s: cast Summon Hawk (+0.4%, pass 1)
   3. threshold 1s -> 0.75s: if time left on Serpent Sting < 1s and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 2)
@@ -79,23 +81,25 @@ The Beast Mastery build the machine-learning talent search found in a full raid 
   6. insert at the end: if time to the next auto attack > 0.5s: cast Multi-Shot (+0.3%, pass 5)
   7. move down below 'cast Summon Hawk': if time to the next auto attack > 1s: cast Aimed Shot (+0.4%, pass 5)
   8. drop the condition: if time to the next auto attack > 1s: cast Aimed Shot (+0.2%, pass 5)
+  9. insert at the top: if time to the next auto attack > 1s: cast Summon Hawk + insert in the middle: if time to the next auto attack > 0.5s and mana % ≥ 30%: cast Arcane Shot (+0.8%, pass 6)
+  10. only with 10s or more of the fight left: if time to the next auto attack > 1s: cast Summon Hawk (+0.2%, pass 6)
 
 Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`beast-mastery-ml-parse`](beast-mastery-ml-parse.md) casts/min |
 |---|---|---|
 | 1 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.3 |
-| 2 | cast Summon Hawk | 9.0 |
+| 2 | cast Summon Hawk | 9.7 |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if time left on Serpent Sting < 4s: cast Serpent Sting | 4.3 |
-| 5 | if auraIsInactive: cast Intimidation | 1.0 |
+| 5 | if auraIsInactive and mana % ≥ 70%: cast Intimidation | 0.3 |
 
 Damage by ability:
 
 | Ability | [`beast-mastery-ml-parse`](beast-mastery-ml-parse.md) |
 |---|---|
-| Auto Shot | 37% |
-| Summon Hawk | 26% |
+| Auto Shot | 36% |
+| Summon Hawk | 27% |
 | Serpent Sting | 18% |
 | Pet: Auto Attack | 15% |
 | Pet: Claw | 2% |

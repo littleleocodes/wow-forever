@@ -72,25 +72,28 @@ Allocation adopted on 2026-09-26 from `opt-mm-lonewolf-raid-raid-dps`, the best 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: hand draft | 11/40/0 | 428 | +0.0% | 859 | -4.7% | 100 s |
-| 2 | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) | ours: optimizer | 5/38/8 | 427 | -0.3% | 862 | -4.4% | 100 s |
-| 3 | [`marksmanship-ml-parse`](marksmanship-ml-parse.md) | ours: parse build | 7/44/0 | 426 | -0.3% | 901 | +0.0% | 100 s |
-| 4 | **[`mm-lone-wolf-raid`](mm-lone-wolf-raid.md)** | ours: hand draft | 11/40/0 | 424 | -0.8% | 805 | -10.7% | 87 s |
-| 5 | *Beast Mastery 35/16/0* | community simulator | - | 368 | -14.1% | 622 | -31.0% | 75 s |
-| 6 | *Marksmanship* | community simulator | - | 347 | -18.8% | 723 | -19.8% | 100 s |
-| 7 | *Marksmanship 0/39/12* | community simulator | - | 332 | -22.5% | 673 | -25.4% | 97 s |
-| 8 | *Survival 0/15/36* | community simulator | - | 298 | -30.3% | 559 | -38.0% | 84 s |
+| 1 | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) | ours: optimizer | 5/38/8 | 431 | +0.0% | 862 | -4.4% | 99 s |
+| 2 | [`marksmanship-ml-parse`](marksmanship-ml-parse.md) | ours: parse build | 7/44/0 | 431 | -0.1% | 901 | +0.0% | 100 s |
+| 3 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: hand draft | 11/40/0 | 428 | -0.6% | 859 | -4.7% | 97 s |
+| 4 | **[`mm-lone-wolf-raid`](mm-lone-wolf-raid.md)** | ours: hand draft | 11/40/0 | 427 | -0.9% | 805 | -10.7% | 89 s |
+| 5 | *Beast Mastery 35/16/0* | community simulator | - | 370 | -14.2% | 629 | -30.2% | 67 s |
+| 6 | *Marksmanship* | community simulator | - | 350 | -18.7% | 723 | -19.8% | 99 s |
+| 7 | *Marksmanship 0/39/12* | community simulator | - | 326 | -24.3% | 673 | -25.4% | 97 s |
+| 8 | *Survival 0/15/36* | community simulator | - | 300 | -30.3% | 559 | -38.0% | 90 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 5 passes, the last 2026-10-02, 6 changes to the base rotation; third-seed check: ml: Marksmanship 382 -> 455 DPS (+19.1%), opt-mm-lonewolf-raid-raid-dps 384 -> 446 DPS (+16.0%), sim preset: Marksmanship 304 -> 362 DPS (+19.2%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 8 passes, the last 2026-10-04, 9 changes to the base rotation; third-seed check: deep: Marksmanship (dummy) 399 -> 486 DPS (+21.9%), deep: Marksmanship (raid) 381 -> 432 DPS (+13.5%), marksmanship-ml-raid 392 -> 428 DPS (+9.1%), sim preset: Beast Mastery 35/16/0 289 -> 370 DPS (+27.8%), mm-lone-wolf-raid 388 -> 427 DPS (+10.0%), opt-mm-lonewolf-raid-raid-dps 391 -> 430 DPS (+10.0%)):
   1. drop: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+3.3%, pass 1)
   2. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+2.4%, pass 1)
   3. threshold 1s -> 0.5s: if time to the next auto attack > 1s: cast Aimed Shot (+0.7%, pass 1)
   4. threshold 1s -> 2s: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting (+0.2%, pass 1)
   5. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.5%, pass 2)
   6. spell probe: insert at the top: if auraIsInactive: cast Summon Hawk (+5.5%, pass 4)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 5 passes, the last 2026-10-02, 8 changes to the base rotation; third-seed check: ml: Marksmanship 670 -> 878 DPS (+31.1%), opt-mm-lonewolf-raid-raid-dps 683 -> 898 DPS (+31.4%), sim preset: Marksmanship 600 -> 749 DPS (+24.8%)):
+  7. move down below 'cast Arcane Shot': if time to the next auto attack > 0.5s: cast Aimed Shot (+0.4%, pass 6)
+  8. only with 10s or more of the fight left: if auraIsInactive: cast Summon Hawk (+0.2%, pass 6)
+  9. drop: if time to the next auto attack > 0.5s: cast Multi-Shot + only above 10% mana: if time to the next auto attack > 0.5s: cast Aimed Shot (+0.2%, pass 7)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 8 passes, the last 2026-10-04, 9 changes to the base rotation; third-seed check: deep: Marksmanship (dummy) 792 -> 858 DPS (+8.3%), deep: Marksmanship (raid) 872 -> 911 DPS (+4.4%), marksmanship-ml-raid 835 -> 859 DPS (+2.8%), sim preset: Beast Mastery 35/16/0 564 -> 629 DPS (+11.6%), mm-lone-wolf-raid 796 -> 805 DPS (+1.1%), opt-mm-lonewolf-raid-raid-dps 838 -> 862 DPS (+2.9%)):
   1. drop: if time to the next auto attack > 1s: cast Aimed Shot (+1.7%, pass 1)
   2. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.5%, pass 1)
   3. drop 'time to the next auto attack > 1s' from the condition: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+0.3%, pass 1)
@@ -99,6 +102,7 @@ Allocation adopted on 2026-09-26 from `opt-mm-lonewolf-raid-raid-dps`, the best 
   6. insert at the top: if time to the next auto attack > 1s: cast Aimed Shot (+2.7%, pass 5)
   7. drop the condition: if time to the next auto attack > 1s: cast Aimed Shot (+1.5%, pass 5)
   8. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+0.9%, pass 5)
+  9. move down below 'if auraIsInactive: cast Summon Hawk': cast Aimed Shot (+0.3%, pass 6)
 
 Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
@@ -106,21 +110,20 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
 | 2 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
-| 3 | if time to the next auto attack > 0.5s: cast Aimed Shot | 4.5 |
-| 4 | cast Arcane Shot | 7.1 |
+| 3 | cast Arcane Shot | 7.8 |
+| 4 | if time to the next auto attack > 0.5s and mana % ≥ 10%: cast Aimed Shot | 4.0 |
 | 5 | if time left on Serpent Sting < 2s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.3 |
 
-Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Multi-Shot (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent).
 
 Damage by ability:
 
 | Ability | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) |
 |---|---|
-| Auto Shot | 53% |
-| Arcane Shot | 21% |
-| Serpent Sting | 15% |
-| Aimed Shot | 11% |
-| Multi-Shot | 0% |
+| Auto Shot | 52% |
+| Arcane Shot | 22% |
+| Serpent Sting | 16% |
+| Aimed Shot | 10% |
 
 ## Notes
 

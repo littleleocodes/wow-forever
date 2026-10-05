@@ -34,13 +34,32 @@
   {
    "action": {
     "condition": {
-     "auraIsInactive": {
-      "sourceUnit": {
-       "type": "Self"
-      },
-      "auraId": {
-       "spellId": 1293527
-      }
+     "and": {
+      "vals": [
+       {
+        "auraIsInactive": {
+         "sourceUnit": {
+          "type": "Self"
+         },
+         "auraId": {
+          "spellId": 1293527
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "10s"
+          }
+         }
+        }
+       }
+      ]
      }
     },
     "castSpell": {
@@ -49,7 +68,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-10-01: changed or added by the rotation search (see mm-lonewolf-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-10-04: changed or added by the rotation search (see mm-lonewolf-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -83,31 +102,6 @@
   },
   {
    "action": {
-    "condition": {
-     "cmp": {
-      "op": "OpGt",
-      "lhs": {
-       "autoTimeToNext": {
-        "autoType": "RangedAuto"
-       }
-      },
-      "rhs": {
-       "const": {
-        "val": "0.5s"
-       }
-      }
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 20904
-     }
-    }
-   },
-   "notes": "apl_opt 2026-09-27: changed or added by the rotation search (see mm-lonewolf-raid-rotation-search.json)"
-  },
-  {
-   "action": {
     "castSpell": {
      "spellId": {
       "spellId": 14287
@@ -118,26 +112,46 @@
   {
    "action": {
     "condition": {
-     "cmp": {
-      "op": "OpGt",
-      "lhs": {
-       "autoTimeToNext": {
-        "autoType": "RangedAuto"
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpGt",
+         "lhs": {
+          "autoTimeToNext": {
+           "autoType": "RangedAuto"
+          }
+         },
+         "rhs": {
+          "const": {
+           "val": "0.5s"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "10%"
+          }
+         }
+        }
        }
-      },
-      "rhs": {
-       "const": {
-        "val": "0.5s"
-       }
-      }
+      ]
      }
     },
     "castSpell": {
      "spellId": {
-      "spellId": 2643
+      "spellId": 20904
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-04: changed or added by the rotation search (see mm-lonewolf-raid-rotation-search.json)"
   },
   {
    "action": {

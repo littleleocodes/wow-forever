@@ -2,25 +2,38 @@
  "dummy": {
   "class": "hunter",
   "spec": "mm-lonewolf-raid",
-  "date": "2026-10-02",
-  "commit": "40be98e",
+  "date": "2026-10-04",
+  "commit": "b0f0df3",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "ui/specs/hunter/dps/apls/mm.apl.json",
   "start": "ui\\specs\\hunter\\dps\\apls\\mm.apl.json",
   "builds": [
    {
-    "label": "ml: Marksmanship",
-    "talents": "501-005355041150305-50003",
+    "label": "deep: Marksmanship (dummy)",
+    "talents": "50131005041001-005355001150005",
     "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-bis.gear.json"
+   },
+   {
+    "label": "deep: Marksmanship (raid)",
+    "talents": "510001-1053552511523051",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-bis.gear.json"
+   },
+   {
+    "label": "marksmanship-ml-raid",
+    "talents": "5501-305355041150305"
+   },
+   {
+    "label": "sim preset: Beast Mastery 35/16/0",
+    "talents": "5520001505121251-0050551"
+   },
+   {
+    "label": "mm-lone-wolf-raid",
+    "talents": "5501-305355201152305"
    },
    {
     "label": "opt-mm-lonewolf-raid-raid-dps",
     "talents": "5-005355051150305-50003"
-   },
-   {
-    "label": "sim preset: Marksmanship",
-    "talents": "5023000501-0050550501503051"
    }
   ],
   "iterations": 3000,
@@ -73,64 +86,128 @@
     "gain_seed2": 0.0553,
     "candidates": 36,
     "pass": 4
+   },
+   {
+    "round": 7,
+    "change": "move down below 'cast Arcane Shot': if time to the next auto attack > 0.5s: cast Aimed Shot",
+    "gain_seed1": 0.004355423791640556,
+    "gain_seed2": 0.00415772257121283,
+    "candidates": 348,
+    "pass": 6
+   },
+   {
+    "round": 8,
+    "change": "only with 10s or more of the fight left: if auraIsInactive: cast Summon Hawk",
+    "gain_seed1": 0.00161109332200704,
+    "gain_seed2": 0.001567659656811049,
+    "candidates": 348,
+    "pass": 6
+   },
+   {
+    "round": 9,
+    "change": "drop: if time to the next auto attack > 0.5s: cast Multi-Shot + only above 10% mana: if time to the next auto attack > 0.5s: cast Aimed Shot",
+    "gain_seed1": 0.0016240119194621538,
+    "gain_seed2": 0.0015182532701194518,
+    "candidates": 359,
+    "pass": 7
    }
   ],
   "final": {
    "dummy": {
-    "ml: Marksmanship": {
-     "before": 382.1039582185975,
-     "after": 454.9538699815476,
-     "base": 382.1039582185975,
+    "deep: Marksmanship (dummy)": {
+     "before": 398.52101531907374,
+     "after": 485.9341393731372,
+     "base": 398.52101531907374,
      "before_value": null,
      "after_value": null,
-     "oom_before": 94.04337415242199,
-     "oom_after": 94.04337415242199
+     "oom_before": 81.13388549210092,
+     "oom_after": 81.13388549210092
+    },
+    "deep: Marksmanship (raid)": {
+     "before": 380.8818335241417,
+     "after": 432.36478339902885,
+     "base": 380.8818335241417,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 99.61656086942912,
+     "oom_after": 99.61656086942912
+    },
+    "marksmanship-ml-raid": {
+     "before": 391.8409340234555,
+     "after": 427.5967198774621,
+     "base": 391.8409340234555,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 96.40320800855402,
+     "oom_after": 96.40320800855402
+    },
+    "sim preset: Beast Mastery 35/16/0": {
+     "before": 289.2452688507194,
+     "after": 369.5222466574423,
+     "base": 289.2452688507194,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 66.82738510609664,
+     "oom_after": 66.82738510609664
+    },
+    "mm-lone-wolf-raid": {
+     "before": 388.06606585798295,
+     "after": 426.84713942169975,
+     "base": 388.06606585798295,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 88.89224651519072,
+     "oom_after": 88.89224651519072
     },
     "opt-mm-lonewolf-raid-raid-dps": {
-     "before": 384.4368090369877,
-     "after": 445.7745926346385,
-     "base": 384.4368090369877,
+     "before": 391.32064416406183,
+     "after": 430.4230527933494,
+     "base": 391.32064416406183,
      "before_value": null,
      "after_value": null,
-     "oom_before": 100.44417514332052,
-     "oom_after": 100.44417514332052
-    },
-    "sim preset: Marksmanship": {
-     "before": 303.7878921039203,
-     "after": 362.149269241782,
-     "base": 303.7878921039203,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 100.44417514332052,
-     "oom_after": 100.44417514332052
+     "oom_before": 99.21024544698582,
+     "oom_after": 99.21024544698582
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 5
+  "passes": 8
  },
  "raid": {
   "class": "hunter",
   "spec": "mm-lonewolf-raid",
-  "date": "2026-10-02",
-  "commit": "40be98e",
+  "date": "2026-10-04",
+  "commit": "b0f0df3",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/hunter/dps/apls/mm.apl.json",
   "start": "ui\\specs\\hunter\\dps\\apls\\mm.apl.json",
   "builds": [
    {
-    "label": "ml: Marksmanship",
-    "talents": "501-005355041150305-50003",
+    "label": "deep: Marksmanship (dummy)",
+    "talents": "50131005041001-005355001150005",
     "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-bis.gear.json"
+   },
+   {
+    "label": "deep: Marksmanship (raid)",
+    "talents": "510001-1053552511523051",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-bis.gear.json"
+   },
+   {
+    "label": "marksmanship-ml-raid",
+    "talents": "5501-305355041150305"
+   },
+   {
+    "label": "sim preset: Beast Mastery 35/16/0",
+    "talents": "5520001505121251-0050551"
+   },
+   {
+    "label": "mm-lone-wolf-raid",
+    "talents": "5501-305355201152305"
    },
    {
     "label": "opt-mm-lonewolf-raid-raid-dps",
     "talents": "5-005355051150305-50003"
-   },
-   {
-    "label": "sim preset: Marksmanship",
-    "talents": "5023000501-0050550501503051"
    }
   ],
   "iterations": 3000,
@@ -199,40 +276,75 @@
     "gain_seed2": 0.009149891825052103,
     "candidates": 364,
     "pass": 5
+   },
+   {
+    "round": 9,
+    "change": "move down below 'if auraIsInactive: cast Summon Hawk': cast Aimed Shot",
+    "gain_seed1": 0.003077271234577461,
+    "gain_seed2": 0.0031419619759711637,
+    "candidates": 365,
+    "pass": 6
    }
   ],
   "final": {
    "raid": {
-    "ml: Marksmanship": {
-     "before": 669.9368497239998,
-     "after": 878.3504062954919,
-     "base": 669.9368497239998,
+    "deep: Marksmanship (dummy)": {
+     "before": 791.9341602010627,
+     "after": 857.6910395617698,
+     "base": 791.9341602010627,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
-     "oom_after": 0.002215002171
+     "oom_after": 0
+    },
+    "deep: Marksmanship (raid)": {
+     "before": 872.4389081882667,
+     "after": 910.6099554959661,
+     "base": 872.4389081882667,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.49699121003885005,
+     "oom_after": 0.49699121003885005
+    },
+    "marksmanship-ml-raid": {
+     "before": 835.1367203538211,
+     "after": 858.5539474485242,
+     "base": 835.1367203538211,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.07623154226895,
+     "oom_after": 0.07623154226895
+    },
+    "sim preset: Beast Mastery 35/16/0": {
+     "before": 563.9319559970543,
+     "after": 629.1229253538653,
+     "base": 563.9319559970543,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "mm-lone-wolf-raid": {
+     "before": 796.2912059067272,
+     "after": 804.6906766781102,
+     "base": 796.2912059067272,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
     },
     "opt-mm-lonewolf-raid-raid-dps": {
-     "before": 683.2477174987459,
-     "after": 897.7508956693741,
-     "base": 683.2477174987459,
+     "before": 838.0704802524682,
+     "after": 862.0251811694236,
+     "base": 838.0704802524682,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
+     "oom_before": 0.16609137918825,
      "oom_after": 0.16609137918825
-    },
-    "sim preset: Marksmanship": {
-     "before": 600.1604389309994,
-     "after": 748.7111961227373,
-     "base": 600.1604389309994,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 5.72568635812715,
-     "oom_after": 14.234735612460199
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 5
+  "passes": 8
  }
 }

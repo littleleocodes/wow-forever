@@ -30,14 +30,13 @@
 | Setting | DPS |
 |---|---|
 | Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 765 |
-| Training dummy, 3-minute fight (alone, only your own buffs) | 398 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
-| Gear | Full raid | Training dummy | Best talents (full raid) |
-|---|---|---|---|
-| Pre-BiS | 672 | 383 | [16/33/2](https://talentsforever.com/rogue/60/00530310301-32330310001515231-002-4) |
-| Phase 1 BiS | 720 | 425 | [16/33/2](https://talentsforever.com/rogue/60/00530310301-30531300001515231-002-4) |
+| Gear | Full raid DPS | Best talents |
+|---|---|---|
+| Pre-BiS | 672 | [16/33/2](https://talentsforever.com/rogue/60/00530310301-32330310001515231-002-4) |
+| Phase 1 BiS | 720 | [16/33/2](https://talentsforever.com/rogue/60/00530310301-30531300001515231-002-4) |
 
 **The gear** (average item level: Pre-BiS 63.3; Phase 1 BiS 64.7; each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -63,22 +62,6 @@
 
 **Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://elliotwood.github.io/Forever/forever/rogue/dps/#eJzMVE9IHFcYn29mduf1q67Do8XpUMpoi6wL076Zca2rpbsKpaW9KO3BWx3d1V2ru8vu0movtf9swUrFQ1t7KC29WNqCmBCClxySwBomsBqTkyEk5iBhD0sgORkIM7u6JianxJDvMt/83u/3e7/3HnzYQEAGBTQIAgP6+sEfz6ALYtAPgzAEScjCDMCPAAsA6iwhvCyqX6FE7vwLys0XUSAnplAklxwZJfJHSVY2/CiRsyeblJ0ASuTbJVCuuo3jyMq1AIpkruQyVxY9tUR+LjdW8Xu/AIpkviyjQOYnUSR/LQBKZGtDVsquwbmS14hkc0NuDcnFlPJTKrg7wfZ6YtA/twmDq1uwCPxez2/wt/0n/Gcvw3ZvEaAP68dc41sYC1vMMpjFDN0yLa9nzAgbYdMydMbMIi/e4Gf99Feg43Z24tNMtqCZzOzUWUQ3u7q1kaSdHkvEtUxOs+PxRFwbntYKyYSWyxTsQiqT1vIJOzeS1IL5REIbyUwO2wU9bo+NJXJ5PWen4vo+Ua8S3xzPZ9Ltajtq9DWUQwHip8I3wKk+FBA6EFdBQl+QJ3c7XIhcT9MzzzbZAL5P33tEMkN963C6GoP/klP9KCL/dgSbQo1EoPyHNUmnu0CWbwP9AdTvAKfVLzBMrSPWBgZaGx6wdo38h4zwXfrOEVkYm0MvE4Hi2oGwSre8IL66PqLuE6h7iDb6hmcm1MOHIzVEuOCriQz3Q059RmU1cDhcN0c/fswdhZ/kjj5/6JENpjPj2B6ZePtWdj6iWOu3zoMi7PJFqPDm1wLn1UuxWyAij1zrP8ILLsDNjMZe+X3JrfVoy6hXV6JmhVckLRoq8txzVYXYfnes1fb/U98nctFxnIahlVhvDYgNuSN5CVKZyvfrn1yORjyUK0V7XabjlKMD1WY7GhLI6ea+V+tTsDreP/AGfBKyMAVT9P4AzCsgLA==) · [training dummy](https://elliotwood.github.io/Forever/forever/rogue/dps/#eJzMUk9IFG8Ynu+b2Z3v96rr/D4Kp6HDtITYwNQ3s621Gu0qRFCXJKluObqrrqkru0tpl7IIArU/HiKDouhiVCAWER66VLDGRKtZJyPIDhJ7WIKig0HM7K6JeUzoucw7D8/753n4gKOc8kMkWBKUMyCSb/eR/LkMePKoHwTy1pZAJLeykjzjBZE8f1wpL/hAJOfHkPzBKWxbkj/6QCBDWUc5Mep2i+RyrqLA/7yGQCAjOQl4MtIDArlzBYFI5mYkOecMeJF1C4HMzkh+TcrE5eF4zWI3W6qPoENDs+jY5BwaRXip/jq6a91GD6xxNN+QQaiRm8J+xoIBFjBMgzFDD5gB54cxZgSNoBkwdMbMDBY+4UEvfYNol9XXfTzRl1ZNZtbqBtOZWae2dVq9HbGomkiqVjQai6qtA2q6M6YmE2krHU/0qqmYlWzrVGtSsZjaluhptdJ61OroiCVTetKKR/WSUC8It3elEr3bFAuO0GbYrCmEp74pVAaeGg95dpRiyaN4QQBsmCBpPuKl/DnEKR7gAQWhUqsgXooPFIkA/K9VFgkRPMAbLKWIpVHDeJUjFtLN3evm6CaCq4heQjCgnIIgDfxxvgE+fznAJHIuxOT7ztV2amEv3bOG6yptI+EpTC03ltw7/Z7f/aHVcZjFOJxl1FB2QDXd6s7nKT7NFXIOhooM/8pTnGM4H/LkBD25xpMw1i1A4hxE8gsHqaT4VuZUx9HDShPsp/vWCMextTLTgmLZ3q6QmzK/ImV3zfhXRKG4cu4lkvlFnEF5bA7ynIsNkS9IAAyc/x7/n0NwZ9sjm26MOZgOb2l38T5s5rEsqmEtg7l/CulIqVpXVD/863tCr23bLm+ZiDQUiUgLuojQGIon8hemm9+FQy7LZcMNjtK2c+GmQjEf1njytKqR66e/BgCaKRTF); Phase 1 BiS: [full raid](https://elliotwood.github.io/Forever/forever/rogue/dps/#eJzMVEFIHFcYnn9mduf1r90ujxanQymjLbIuTPtmx7Gulu4qlJb2orQHD4U6uqu7VneX3aXVHopZ3BgSQ4IeEkMOgRw0ECHxEIKXXGKyhg3EYHIyhEQPEjwsgeTkIczs6pqYnBJD/sv8873v+9733oMfawh4QQYVfMCAfr37xzNogTB0Qjf0QAxSMAZwBOAkgJInhPeKyv8okclxkDc+RpFsnAAUyfUcoJucjckrbpTISg7kdQ9K5EYO5Ad2MzEN8kMPimQ5ByiRpZyjlsjNXAWfzds2l48CCuT4MApk9k+UyNg0yFu2/tmU04hkPg/1fm8hLk/GfZtDbLstDJ3H7kL3wipMAb/ddhrOW+fgojUHa+0FgA6snnKRr2PMNJihM4PpmsFMQzcYY0w3dTNg6BpjgQIvPuYPu+kpoINWauivZCqrBligWWNBLdDSqvbFrMRANKIm06oViUQjau+omo1F1XQya2XjyYSaiVrpvpjqy0Sjal9yuNfKahFrYCCazmhpKx7RdohamfjtYCaZaFQaUaVfodfvIW4q5IBTXCggNCEugIQuH0+eN9kQeZSg195vsi78mf70mmS68t3edBUG/x+nuFFE/vsgfur/hAiU/7UiabYXyNxToBOgjAOOKv+iSY191jp66mtesraN3HuM8Ef6wz6ZibX+z4lAcXFXWKYbThBXVR9UdgjUPkQD/cYxE6rhzWAFEW65KiLd/pArf1Ov4tkbrpWjv7/hjsy3uaN/XnlknWlMP7BHJs6+pfXfKFb61SWQhU2+ACU+cEjgnPos/ARE5JGrvyB8ZAPcWH/4izMzdi2H6vqduh8KlHhZUkP+As99UJUN73QHWg3z73yf4O1isVjTcyncXgHCPfZEnoF4spRf/uNeKOig3J1Qu80sFrdCXeVmLeQXyNXaji+rU7A83X9x5nsMUjACI/TFAEe/G/U=) · [training dummy](https://elliotwood.github.io/Forever/forever/rogue/dps/#eJzMUkFoFGcUnvfP7M7fl3Sz/WnJdOhhupSQDkz7z2w37SaluwmUQntpaGh7EMwku8luTLJhd1HjQZLFoGhUTC5GFAQPiWBAcxDJwZPRjaxoJHqKCCaHIDksgnrJQWZ2NoaYowG/y7z5eN977/v4UWCC+lamJCipR1Gm48dAWatBia6dBZTonQKgn15MKUt+lOlSAZTVAMr0bgGUZ05xfBKU5wGU6GIBUKYLBVct03sFj58ec8bcOAko0tMDKNLpfSjTkUlQNhz96wm3kOjsGIT0YDGtjKcb1/v5Zksc/j71GP6fW4YJIJst5+GKfRmu2TOw0loEaBPmSYjzSJiHTcvk3DTCVtj54ZybETNihU2Dc6tIpBdk1M8eAuuzh/r3Z4bymsWtJsPkBreate6UPdibTGiZrGYnEsmE1jWs5VNJLZvJ2/l0ZlDLJe1sd0przCWTWndmoMvOGwm7tzeZzRlZO50wqo1GpfGHvlxm8HvVxn9ZB36jq1RkgXmoQV+jj97+j5GgT/WjhMS0MKgHqJ+JBRBUH4oIEazTP6d+Rv70iDB+odd5hIw+FE2eU+XqqHGywxGPGtYve+boEuA5YGcAh9VDGGHhD843MRCqRZwD50JC3/y0004T/sZ+3cV1vf4VFRnObwmr7h29770+ujMOy4vDWcZM9UdsYN+580VGjgiVnCNRjxHv+7w5pvOhNw+wg7s8CXPPAqTOQbS8+hcLqoHtOTUL7B+1Hf9gv+8SjmNre6aVji17P0fdlMVtKbtrZl4BQ2/l8gIo4jopQplYo6Lg4sv4S5CQoBC6Kn7mEMJIT/zrC1MOFmPf9rh4GrPKRJG1mF4kwieFfLxa7SkaZj/6nuiDUqlU23k93uoR8U44ATAF6Ux5bLHjSSzqssKjWKvTWSptxNorxUpMF+mt+jbhMHs3AMvbEI4=).
 
-**Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
-
-Dummy 398 → mana -0% → armor +19% → physical +44% → spell +1% → everything else +27% → raid 765
-
-(*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
-
-**DPS by fight length** (training dummy; your average DPS if the fight lasts this long):
-
-| 1 min | 2 min | 3 min | 4 min | 6 min |
-|---|---|---|---|---|
-| 447 | 409 | 398 | 392 | 400 |
-
-Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
-
-**Alone instead of in a raid?** [Raid daggers](../research/raid/builds/opt-combat-daggers-raid-raid-dps.md) (17/32/2) does 419 DPS on the training dummy with only your own buffs (+5% over this build there) — [open the talent tree](https://talentsforever.com/rogue/60/005323121-30531300000515231-002-4).
-
 ## Other builds of this spec
 
 - [Combat — Raid](../research/raid/builds/combat-ml-raid.md) (16/33/2, 772 DPS in a full raid, 402 on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/00530310301-30531300001515231-002-4)
@@ -87,5 +70,5 @@ Falling numbers mean cooldowns used at the pull, or mana running out in long fig
 - [Raid Combat swords](../research/raid/builds/opt-combat-swords-raid-raid-dps.md) (20/31/0, 726 DPS in a full raid, 376 on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/005323101005-32502300000514231--4)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-03 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-04 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
 

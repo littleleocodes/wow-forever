@@ -37,14 +37,13 @@
 | Setting | DPS |
 |---|---|
 | Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 560 |
-| Training dummy, 3-minute fight (alone, only your own buffs) | 410 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
-| Gear | Full raid | Training dummy | Best talents (full raid) |
-|---|---|---|---|
-| Pre-BiS | 622 | 471 | this build |
-| Phase 1 BiS | 643 | 489 | this build |
+| Gear | Full raid DPS | Best talents |
+|---|---|---|
+| Pre-BiS | 622 | this build |
+| Phase 1 BiS | 643 | this build |
 
 **The gear** (average item level: Pre-BiS 63.0; Phase 1 BiS 65.4; each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -70,20 +69,6 @@
 
 **Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://elliotwood.github.io/Forever/forever/priest/dps/#eJzMlkGIG2UUx+d9M8m8vCRr/KzudCgyTVuJkVm/mTTS1EOyPUjx4goGvJmkmW1S2yTsBFzxsmqFIhhLD5WKRSroqrCyHlwWj7uIWYgaEAVRRFZEDy7EXVgPXmQyyUbidQ2+05v/93283/fe+3hDEYQYaGBAAgTwEwdfTMAZyMEcPA0FqEADlgCuAVwH0N+LIMYCepNU/GsFtF/CpOD2G0AK/rQXJQW/uwOk4vWdqPbzFKm48S5o30+RjJ9dJAV/3I9SEHfnvWMqvr4T1b4OkoK3d2Ok4OfL3r6XHFJwrRsjFXt3QGvfQwru3QSScfdy/CG8Wo21q8byW5D4sgVivzT32jvwKrCr1RvA9kvvw6+z67B6vgut6jkaXe5TZqRF2k4JO2WlRFoISwjL9Ly05fm2mWoz6LLwNvuI6AiFdJUCCcTbz8VVCpBsplyu6OysxG8ALxQbl5+pN5qGLexHTJEx7TNnjQuVYu2iUzbqC0axXHbKRul5o1lxjIV6s9is1muG6xQXLlSMhOs4hnul2nTMcsM1h8umvzxzya3XHtRn6AQ/TtF4mEK2D9LKUyw5hUHOHpf0ICnELDFgbOX5CxNgmrbvJVUPkIxvu0Q6UjARxO5N4NcmkZGTdDQ5jTIPXRoWxiMgxZpJuwe14pp+n31kRDms4lqeR3QfWcGXP57jtQkQ+/Fk3PzzCb40niJLmMI+5IDH6O7kXV6HlCTv3iSfFqdGCbD0h+kkj4831diR1MGRVp5/OInCPkaP8sw4hi1O9SV5JKUHkv8CBrB+6Rl+pfArE2D1+ymEm3l+/7/Tbf8z3ZPD6d8+PPhQ8ZM8f3Ysttds1iHH9t/YH4ua/BtrQ4/ZL8pS307nNkDRGUnxD+SQJ0hL87mjb97ybCt7fL5v32btHtNUI5tsM+l/Zc3c0PtP7YGVQ4+T+aLT6UQKq7nZgZAreCP7FlTrvVe2nvomm+mrUjc76+3sdH7PPuk7P2STMq5Pnzs2mpf++D/f/wGoQAMWYZH/PQDpH944) · [training dummy](https://elliotwood.github.io/Forever/forever/priest/dps/#eJzMkk9oE1sUxufemWROTl7avPv6XufNahqtxMjUmYkjtpukXYmrCmZtk2baprZJ6QSsuPFPBf9g1C4qFYtUlOqiUBeW4rIgphA1IAqiSKmILizEFrpxI9MkFrJxU4Pf6ptzz3B+nO8gxzj5ihfA75KzKML3OSJ98qIAqzcJCrCy4UMB3s4QFOH6mk/62IAiLN0n0rsG5OFpPwrwYdOHbljvc34T4dqaT3rlRgGm1/0owLNZp++chQIsFP0oQmmGSPl/UICNSYI8rA8F9sF4yp9PKbO3SfBFjmibie6rd8llQsdTE4RuJh6Qz52LZP5wkeRSXdwTqpiaaYQ1I6yHNVPTdE3TVceZuuMNNZynpEi9q3Tag03okUV0BQGmTwZEdCGvhm0myLSDYxOE9cRHho5nRrKKoRkHVV1TNaND6R2Ip/utpJIZVeLJpJVUEqeU7ICljGay8Wwqk1ZsKz7aO6AEbctS7OFU1lKTI7ZafVbLz22Ddia9V27DXawFfQEveowySC6G/lADuBk9wsluFJDqWoUxF2Ona5i0dtU4tMNMzca/KMou5OGOjSgDuoNuKE4SdonUYXoryiEJeOYZrAYje1BEl95mmPbPsJgk/2c0bWNWY1yIsXv1yC2KJgvX5tYY8lVycyGPxMS/Q43AM5rgHDrkdbPVMUEBVkR2ox7LVDHAlF9hVlaXi7F0HZDKByXA+UfdTJf3424WqAV01ubeXltYa91GHK4DYvmYKLwUmLfyIcLjGDtRM9s5LH2HZ5cv+tuYxH+heVKixlme29KB6BIRZIpc4CHvcQrcmb7o/7emHC1HWvq29CZilKgkKpFQnnJ/lLLRqvut2jO343PanxcKhb965qOdlUK0h1wkZIqkMqULy8deR9q3qlwx0ul0FgpfI0fL5n0kxMNicxc3xn4MAA+4q6I=); Phase 1 BiS: [full raid](https://elliotwood.github.io/Forever/forever/priest/dps/#eJzMlkFoI2UUx+d9M8m8vKQ1fq52dlhkNrsrMTL1m8lGNush6R5k8WIFA95MspndZN1NQidixUvVXVgEoxSyULGIglSFSj1YiidpEVKMGhEFUUEU0YNCbaEeBJHJJI3Eaw37Tu/7v/l4v++99/ENRRCioIEBcRDATxysmIAzkIVZeBzyUIY6LADcAHgFQF+JIEYD+lOk4l+roP0cJgX/XgRS8Ie9CVLwmzeAVNxugfbTJKm4+RZo306SjB9fIgU/annB71u9fSq+/PuE9mWQFFzejZKCn7SAZHzeIQXXu1FS8YvroLXvIAX3bnqR3Sux+/BaJdquGCuvQfyzJoj94uxLb8KLwK5VFoHtF9+GX2Y2YO18F5qVczQ83YfMSImUnRR20kqKlBCWEJbpeSnL820z2WbQZeEf2XtERyikqxSIIy4/HVMpQLKZdLmis7MSXwSeL9SvPFGrNwxb2A+YIm3aZ84aF8qF6iWnZNTmjEKp5JSM4jNGo+wYc7VGoVGpVQ3XKcxdKBtx13EM92ql4ZilumsOwqYfnr7s1qr36tN0gh+niViYQrYP0sxRNDGJQc4elvQgKcQs0Wds5vizY2Casu8kVQ+QjK+7RDpSMB7E7k3gN8ZRkZN0NDGFMg9dHjTGIyDFmk65B73imn6XfWRIOejieo5HdB9ZwRfen+XVMRD7+WTc+vMRvjBaIkuYwj7khMfo9sRt3oQUJe/cJJ8Wp4YFsPT76SSPjQ7VyJbkwZZmjr87jsY+RA/y9CiGLU71JHkopfqSfwP6sH7rGX6u8KtjYPXnKYRbOX73f8tt/7vc48PpnT7cX6j4QY4/OZLbGzbrkHP7d+yPeU3+lbVhh9nPyVLPTmc3QdEZSbF35JAnSAsXs0dfXfJsO3P8Ys++ztg7TFONTKLNpFvKGtmB97/aPauHnif9aafTieTXsjN9IZv33uwlqNR2rm8/9lUm3VOlbmbG+7LT+S3zqO98l0nIuDF17tjwvfTf//O9P4Ay1GEe5vk/AwCQid1h) · [training dummy](https://elliotwood.github.io/Forever/forever/priest/dps/#eJzMkk9oE2kYxuf7ZpJ582bTZr/tbmfnsEyz2yWbZbrfTHaWbS9Je1r21IXNeZs00zbdNimdLNtlL/unBS0YsZBCxSKKoh4K9WApnqQgpBg1IgqiQlFEDwq1hV4EkckfC7l4qcHn9M77zsf7430eFJigzvsBgh71D5Th1QpRnvhRgtcLBCXY2g2gBPdOEZRhs0iUx20ow8ZZotxvQxGujqIEV4ru8GGx+k6Goy8Cym0vSrC8E0QJrhUJivCfjRKsVYIow605opQ+QQl2F93JzkToW5jNBEsZ7dwJEr5RIHwvNXjkNJkndDazQOhe6jx52r9OVn+qkEJmQLhMv7C4ZUa5GTWi3OLc4NzQ3coyuMGjZomSCvU/oss+7ECfKqMnDLD8Z0hGD4p61GGSSvsEtkDYUHJq4rfcVF4zufmDbnCdm33a8FgyO2qntdy0lkyn7bSW+kvLj9nadC6fzGdyWc2xk9PDY1rYsW3NmczkbT095eiNsV4b94w7uew3ag9+ybowEPKjz6yBFBIYjLSBl9GfBdWLElKD1xkLCfZ3ExPv1c0fD5ip0/wUZdWDIpx0EFVAb9gLlUXCDpMWbO9GNaKAyHzjDWNUH8roMXpMy3lrFlPUz8yOfcyGjWsJdqYVvsXRYtFm39ojgbpvHhSRWPhxpB1ERlOCS4eiYXW7RViCLZkda8UxdQwx7V2Y9dMVEizbAqRaoCT4/+IgM9Tv8CsWagZ0z+bdP1uUd+8jTrYAsRYmCjcl5q9/yHApwX5v2u0Gyzjg3bVEv5xRxGe0RLap+a8oVPV9fINIKkUhdEH0uQ3hn5H458eXXG3Gukaquhszt6kia7FIiQoflPLxRvVe9fXKge/pvV4ulz8aWo331xvxIXKIkCWSyW3Pbf56J9Zb7QqVWL/7Z7n8PPZLrXgQi4iw3jkgzLA3AwBjWKpq).
 
-**Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
-
-Dummy 410 → mana +0% → armor +0% → physical -3% → spell +27% → everything else +12% → raid 560
-
-(*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
-
-**DPS by fight length** (training dummy; your average DPS if the fight lasts this long):
-
-| 1 min | 2 min | 3 min | 4 min | 6 min |
-|---|---|---|---|---|
-| 444 | 417 | 410 | 397 | 369 |
-
-Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
-
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-03 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-04 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
 

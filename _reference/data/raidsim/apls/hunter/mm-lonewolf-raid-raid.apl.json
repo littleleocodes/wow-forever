@@ -33,16 +33,6 @@
  "priorityList": [
   {
    "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 20904
-     }
-    }
-   },
-   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see mm-lonewolf-raid-rotation-search.json)"
-  },
-  {
-   "action": {
     "condition": {
      "auraIsInactive": {
       "sourceUnit": {
@@ -60,6 +50,16 @@
     }
    },
    "notes": "apl_opt 2026-10-01: changed or added by the rotation search (see mm-lonewolf-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 20904
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see mm-lonewolf-raid-rotation-search.json)"
   },
   {
    "action": {

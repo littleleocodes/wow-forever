@@ -2,37 +2,36 @@
 
 The best talents and the best way to play every class in **World of Warcraft: Forever** (the Classic+ release, launching 2026-11-04), worked out from the beta's talent trees and simulations: the community's combat simulator for raids and this project's own simulators for leveling and healing.
 
-**How to use it:** pick your class below. Its page has a grid of every spec against the three modes (leveling, raid, PvP), the recommended picks marked, and a ranking of the specs for each mode. Every link in the grid opens a build page: the talents (with a talent calculator link), the order to take them while leveling, and what to press.
+**How to use it:** pick your class below. Its page has a grid of every spec against the two modes (leveling, raid), the recommended picks marked, and a ranking of the specs for each mode. Every link in the grid opens a build page: the talents (with a talent calculator link), the order to take them while leveling, and what to press.
 
-| Class | Roles | Fastest leveling (solo) | Most raid damage (DPS: full raid / training dummy) |
+| Class | Roles | Fastest leveling (solo) | Most raid damage (DPS in a full raid) |
 |---|---|---|---|
-| [**Druid**](druid/README.md) | damage, tank, healer | [Feral Combat](druid/leveling/feral-combat.md) (25 s/kill) | [Balance](druid/raid/balance.md) (576 raid / 497 dummy) |
-| [**Hunter**](hunter/README.md) | damage | [Melee (split)](hunter/leveling/melee-split.md) (26 s/kill) | [Survival](hunter/raid/survival.md) (1041 raid / 419 dummy) |
-| [**Mage**](mage/README.md) | damage | [Frost](mage/leveling/frost.md) (26 s/kill) | [Frost](mage/raid/frost.md) (705 raid / 617 dummy), [Arcane-Frost](mage/raid/arcane-frost.md) (701 raid / 615 dummy), [Fire](mage/raid/fire.md) (700 raid / 559 dummy) |
-| [**Paladin**](paladin/README.md) | damage, tank, healer | [Retribution](paladin/leveling/retribution.md) (28 s/kill) | [Retribution](paladin/raid/retribution.md) (889 raid / 480 dummy) |
-| [**Priest**](priest/README.md) | damage, healer | [Shadow](priest/leveling/shadow.md) (26 s/kill) | [Shadow](priest/raid/shadow.md) (679 raid / 589 dummy) |
-| [**Rogue**](rogue/README.md) | damage | [Assassination](rogue/leveling/assassination.md) (25 s/kill), [Combat](rogue/leveling/combat.md) (26 s/kill) | [Combat](rogue/raid/combat.md) (765 raid / 398 dummy) |
-| [**Shaman**](shaman/README.md) | damage, healer | [Enhancement](shaman/leveling/enhancement.md) (33 s/kill) | [Enhancement](shaman/raid/enhancement.md) (783 raid / 397 dummy) |
-| [**Warlock**](warlock/README.md) | damage | [Demonology](warlock/leveling/demonology.md) (36 s/kill), [Affliction-Demonology](warlock/leveling/affliction-demonology.md) (37 s/kill) | [Demonology](warlock/raid/demonology.md) (786 raid / 646 dummy) |
-| [**Warrior**](warrior/README.md) | damage, tank | [Arms](warrior/leveling/arms.md) (28 s/kill), [Fury](warrior/leveling/fury.md) (29 s/kill) | [Arms](warrior/raid/arms.md) (890 raid / 434 dummy) |
+| [**Druid**](druid/README.md) | damage, tank, healer | [Feral Combat](druid/leveling/feral-combat.md) (25 s/kill) | [Balance](druid/raid/balance.md) (576 DPS) |
+| [**Hunter**](hunter/README.md) | damage | [Melee (split)](hunter/leveling/melee-split.md) (26 s/kill) | [Survival](hunter/raid/survival.md) (1041 DPS) |
+| [**Mage**](mage/README.md) | damage | [Frost](mage/leveling/frost.md) (26 s/kill) | [Frost](mage/raid/frost.md) (705 DPS), [Arcane-Frost](mage/raid/arcane-frost.md) (701 DPS), [Fire](mage/raid/fire.md) (700 DPS) |
+| [**Paladin**](paladin/README.md) | damage, tank, healer | [Retribution](paladin/leveling/retribution.md) (28 s/kill) | [Retribution](paladin/raid/retribution.md) (889 DPS) |
+| [**Priest**](priest/README.md) | damage, healer | [Shadow](priest/leveling/shadow.md) (26 s/kill) | [Shadow](priest/raid/shadow.md) (679 DPS) |
+| [**Rogue**](rogue/README.md) | damage | [Assassination](rogue/leveling/assassination.md) (25 s/kill), [Combat](rogue/leveling/combat.md) (26 s/kill) | [Combat](rogue/raid/combat.md) (765 DPS) |
+| [**Shaman**](shaman/README.md) | damage, healer | [Enhancement](shaman/leveling/enhancement.md) (33 s/kill) | [Enhancement](shaman/raid/enhancement.md) (783 DPS) |
+| [**Warlock**](warlock/README.md) | damage | [Demonology](warlock/leveling/demonology.md) (36 s/kill), [Affliction-Demonology](warlock/leveling/affliction-demonology.md) (37 s/kill) | [Demonology](warlock/raid/demonology.md) (786 DPS) |
+| [**Warrior**](warrior/README.md) | damage, tank | [Arms](warrior/leveling/arms.md) (28 s/kill), [Fury](warrior/leveling/fury.md) (29 s/kill) | [Arms](warrior/raid/arms.md) (890 DPS) |
 
-Two specs in one cell are a tie (within 3% of each other; the best spec of the class by DPS in a full raid). Leveling times compare across classes: every class runs in the same fight simulator, solo against same-level mobs. Raid numbers assume a group: every raid buff and debuff is up, which is where classes that live on raid buffs (warriors' rage, hunters' and shamans' mana) do their real damage; the training dummy (alone, only your own buffs) is shown next to it.
+Two specs in one cell are a tie (within 3% of each other; the best spec of the class by DPS in a full raid). Leveling times compare across classes: every class runs in the same fight simulator, solo against same-level mobs. Raid numbers assume a group: every raid buff and debuff is up, which is where classes that live on raid buffs (warriors' rage, hunters' and shamans' mana) do their real damage.
 
 ## How to read the numbers
 
 - **Full raid DPS** (what raid pages rank and recommend on): your personal damage against a raid boss over a 3-minute fight with every raid buff and debuff up, as in a real raid group. Each spec's raid page shows where its raid gain comes from (mana, armor debuffs, physical buffs, spell buffs).
-- **Training dummy DPS**: the same build alone, with only the buffs you bring yourself (a diagnostic, and the number for solo play).
 - **Seconds per kill** (leveling): a whole kill cycle against same-level mobs, including eating and drinking.
 - **✅ Recommended**: the best spec for that mode in its class, or within 3% of it. **⚗**: a generated build (a starting point).
 - Everything is a simulation of the beta, not a measurement in the game. Treat differences under 2-3% as a tie.
 
 ## Everything else
 
-- [Raid DPS rankings by gear tier](_reference/dps-rankings.md): every raid damage spec in pre-BiS and phase-1 BiS gear, on the training dummy and in a full raid, with its best talents and gear for each.
+- [Raid DPS rankings by gear tier](_reference/dps-rankings.md): every raid damage spec in pre-BiS and phase-1 BiS gear, in a full raid, with its best talents and gear for each.
 - [_reference/README.md](_reference/README.md): how the project works, its tools and its rules.
 - [_reference/](_reference/): cross-class reports (simulator summaries, the talentsforever.com comparison, launch checklists).
 - Each class's `research/` folder: every build, report and simulation behind its pages.
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-03 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-04 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
 

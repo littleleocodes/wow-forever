@@ -4,22 +4,28 @@
 
 *Marksmanship's shots with Beast Mastery's pet talents: the classic raid hunter split.* (a hybrid: Beast Mastery/Marksmanship).
 
-**[Marksmanship — Summon Hawk](../research/raid/builds/mm-hawk-raid.md)** (22/29/0) — [open the talent tree](https://talentsforever.com/hunter/60/53200005051001-105355000150004--4)
+**[Beast-Marks — Raid](../research/raid/builds/beast-marks-ml-raid.md)** (28/23/0) — [open the talent tree](https://talentsforever.com/hunter/60/532000150510123-0053250000503--4)
+
+> 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds). A model of the beta, to check at launch.
 
 ## How to play
 
 **Before the pull:** **Aspect of the Hawk**, **Aimed Shot**.
 
-**Talents with no line below:** **Trueshot Aura**: turn it on before the pull.
-
 **Then press the first one that is ready**, top to bottom:
 
 1. **Serpent Sting**: keep it on the target
-2. **Rapid Fire**
-3. **Summon Hawk**
-4. **Aimed Shot**
+2. **Arcane Shot**
+3. **Rapid Fire**
+4. **Summon Hawk**
+5. **Aimed Shot**
 
 **Aimed Shot** is your filler: cast it whenever nothing above is ready.
+
+**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
+
+- **Intimidation**: a cooldown, use it at the start of the fight and again whenever it is ready (about 3 times a fight)
+- Use your trinkets, your racial and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
@@ -27,17 +33,16 @@
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 847 |
-| Training dummy, 3-minute fight (alone, only your own buffs) | 478 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 876 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
-| Gear | Full raid | Training dummy | Best talents (full raid) |
-|---|---|---|---|
-| Pre-BiS | 781 | 440 | [22/29/0](https://talentsforever.com/hunter/60/53200005051001-005345000050304--4) |
-| Phase 1 BiS | 821 | 473 | [22/29/0](https://talentsforever.com/hunter/60/53200005051001-005345000050304--4) |
+| Gear | Full raid DPS | Best talents |
+|---|---|---|
+| Pre-BiS | 845 | [28/23/0](https://talentsforever.com/hunter/60/522020150510023-0053050200503--4) |
+| Phase 1 BiS | 876 | [28/23/0](https://talentsforever.com/hunter/60/522010150510123-0053250000503--4) |
 
-**The gear** (average item level: Pre-BiS 63.4; Phase 1 BiS 65.6; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 62.8; Phase 1 BiS 65.6; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
@@ -47,39 +52,25 @@
 | Back | [Earthweave Cloak](https://www.wowhead.com/forever/item=21187)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) | [Earthweave Cloak](https://www.wowhead.com/forever/item=21187)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) |
 | Chest | [Dawn Armor](https://www.wowhead.com/forever/item=252483) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Dawn Armor](https://www.wowhead.com/forever/item=252483) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
 | Wrist | [Forest Stalker's Bracers](https://www.wowhead.com/forever/item=19587)<br>+ [Enchant Bracer - Minor Agility](https://www.wowhead.com/forever/spell=7778) | [Giantstalker's Bracers](https://www.wowhead.com/forever/item=16850) · *Molten Core*<br>+ [Enchant Bracer - Minor Agility](https://www.wowhead.com/forever/spell=7778) |
-| Hands | [Theramore Gloves](https://www.wowhead.com/forever/item=271948)<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/spell=13823) | [Giantstalker's Gloves](https://www.wowhead.com/forever/item=16852) · *Shazzrah, Molten Core*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/spell=13823) |
+| Hands | [Beaststalker's Gloves](https://www.wowhead.com/forever/item=16676) · *War Master Voone, Blackrock Spire*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/spell=13823) | [Giantstalker's Gloves](https://www.wowhead.com/forever/item=16852) · *Shazzrah, Molten Core*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/spell=13823) |
 | Waist | [Warpwood Binding](https://www.wowhead.com/forever/item=18393) · *Tendris Warpwood, Dire Maul* | [Giantstalker's Belt](https://www.wowhead.com/forever/item=16851) · *Molten Core* |
 | Legs | [Outrider's Chain Leggings](https://www.wowhead.com/forever/item=22673)<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) | [Dragonstalker's Legguards](https://www.wowhead.com/forever/item=16938) · *Ragnaros, Molten Core*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) |
-| Feet | [Windreaver Greaves](https://www.wowhead.com/forever/item=13967) · *Kirtonos the Herald, Scholomance*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) | [Giantstalker's Boots](https://www.wowhead.com/forever/item=16849) · *Gehennas, Molten Core*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) |
-| Finger | [Leafre's Ring of Precise Spell Power](https://www.wowhead.com/forever/item=276765) | [Leafre's Ring of Precise Spell Power](https://www.wowhead.com/forever/item=276765) |
-| Finger | [Leafre's Ring of Precise Spell Power](https://www.wowhead.com/forever/item=276765) | [Leafre's Ring of Precise Spell Power](https://www.wowhead.com/forever/item=276765) |
+| Feet | [Sorcerer's Boots](https://www.wowhead.com/forever/item=22064)<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) | [Giantstalker's Boots](https://www.wowhead.com/forever/item=16849) · *Gehennas, Molten Core*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) |
+| Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21202) | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
+| Finger | [Don Julio's Band](https://www.wowhead.com/forever/item=19325) | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
 | Trinket | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) |
 | Trinket | [Royal Seal of Eldre'Thalas](https://www.wowhead.com/forever/item=18473) · *quest: The Greatest Race of Hunters* | [Royal Seal of Eldre'Thalas](https://www.wowhead.com/forever/item=18473) · *quest: The Greatest Race of Hunters* |
 | Main hand | [Barbarous Blade](https://www.wowhead.com/forever/item=18520) · *King Gordok, Dire Maul*<br>+ [Enchant 2H Weapon - Superior Impact](https://www.wowhead.com/forever/spell=20030) | [Barbarous Blade](https://www.wowhead.com/forever/item=18520) · *King Gordok, Dire Maul*<br>+ [Enchant 2H Weapon - Superior Impact](https://www.wowhead.com/forever/spell=20030) |
 | Ranged/relic | [Premier High Warlord's Recurve](https://www.wowhead.com/forever/item=272594)<br>+ [Biznicks 247x128 Accurascope](https://www.wowhead.com/forever/item=18283) | [Rhok'delar, Longbow of the Ancient Keepers](https://www.wowhead.com/forever/item=18713)<br>+ [Biznicks 247x128 Accurascope](https://www.wowhead.com/forever/item=18283) |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVE9IFG0Yn2dmduf1+UTHV/0chw+Zbz++WBdmeXfWCTViVk+doqBDp3J013Yk3WV3D9bJyCAk024ZioFIGgVGBRF0KYQVJlqT/pEQlIGHDkuX6BYzu5uHrgn9DsPz/p7f8Ly/54Uf1hOQQQENwsCA/vfzxDPohgQcg5MwAGnIwgTAZYBZAHUhSIgsqOdRIk8eNio7f6FA7o+jSLZcGSXybBmUzaBXPGhUPjWgRC7OgfINUCKuKysfGlAk72a847V74P0dJDOjFXrhq1z9CmR6FEWyOuvp3s6CstuAHErk5aasvG8ORcmkIxcd5Yqj3ZqH8M4iTAE/6VyHJfsm3LFXYLtvDRaXoQhQgqtOP+65fMx3mHGDMcZMZsYYi+mMmfEus8LEWVeRF0s8+chPi9iCRA2iSErrECIYRFGPsTy2VtmVJQjVoYQB3YiaeToP9JSdPXs6ky1oBjMO6qxHN7p7taG0PXYmldQyOc1OJlNJbfCcVkintFymYBeczJiWT9m5obQWzqdS2uConrOdpF5r6pVmdCSfGetUe5HRKLZH2ohAyYh3sxfroPp3YFHDzGNTpJEEKT/IqRIGUIiz/9Wqiooq38vRw+ohNCjDlgglAg085XkSqGhZNIZK5G8i0LrbULVX65hqAAXyuY2O7LvFymrffD/6y6wY05mxD7NWloBqage2RppJoLYS/7VZ1Mz7zrdaFGGXL0KZNy4InI9wYgpasRmbSFAmCnRyPsoWg9CqUOfV3MRwov3GnIcN699hH68to8wrkmZFijz3R6GQqFX7igN3f/ucnueu69YPrCX6qkRiwEuqOXAy5UsbJ15ZPT7Llaw+T+m6X6zjlWLbigjkUVv/P3vpUEm9I37upSEL4zBOfwwAIfv6/g==) · [training dummy](https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMT91LFH0UnvOb2Z3jed9X5/35Ne9cvEx7Ebowy2/HJtKIWf0DgqDrcnTXHElXdvdCu+rDIKTS7jQKA5E0CowKIgiiMFaYaC36FoIy8KKLpZvwLmZ3velaoefi8JznnMPzHJK4ZDyPImqycYpUfPygQd/4i2S8N0YKvg40UvHZAuhr0ZDcb9C/1pOK52ZB/wmkYhBo+ud6UvDDVNheuQvhdRSnhqvy9R9arcp4aZgUXJoO995Pg75ZTxKp+GpN0z81xhI44WtFX7/omzevQdvGHEwCm/BnYN67Abe9RVjvXoa5BSgClOCy3yM9Yv87HbYQQjjCSQphW0nhdDiOECIZlo4iU0oMv7AnCjURGlFSsLQCMaQoKVZS5Km5pi7OQ6yOVIpYdsLJ80PGQbK5oKY4R5lHnjKGEUOlCMkikSQ93oIyr7sFtcvtiWNESMZvrXyIH/NGTx7PjhZMW9j7LdFp2Qe6zP5Bb+REJm1mc6aXTmfSZt+4WRjMmLlswSv42REzn/Fy/YNmWz6TMfuGrZznp63toVUdJoby2ZF2o5r63dZhnt51L9Yl8bOw6zYmtcSbUOY4FL72cgXCF4ntyxu1no//liEpLJHc0Qyt9M/HKJGCWzPAmaZUrLdmQJc3WRHKzD4jSxW0pSahmRrpX4xqqEO7VEHZFRBbkutCLp0eSP13dTbEqrtnoIK3rl1mumq68SKT/igUUttsV7H3zo77dL4IguDv3uVUd01I9cIFgFnws+Xzq0ffuJ0VVSq53eFmEHx3j1TJuhuX8WFrD0MY478GACcDDyY=); Phase 1 BiS: [full raid](https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVE9IFG8Ynndmdufz/Ymun/pzHEK+Nop1YZZvZ51QI2b11CkKOnQqR3dtR9Jddvdg0MHQICRLOmUYBiKpFHgoiKBLIayw0Zr9g4SgDDx0WLpEt5jZ3Tx0Teg5DO88zzO83/MNPFhPIAAqMAgBB3ro95vIoRvicArOwgCkIAMTANcAZgG0BT8hAUm7jAp59rhR3fkPZbJzE1AmpUlAhbxYAnXT7w6PGtUvDaiQ15Og/nClN5OgfmpAmWx5ztUpcD9XyGaNv/s9UH1KZGYUZbIy6xo/zIK624ACKmTuFqgfm4MRMuUECo563WH35yG0swDTIE45t2HRvgcP7GXY7luDhSUoAJTghtOPezmfih1mzOCcc5ObUc6jOudmrMusMDHeVRDlkkg+izMytiDR/G6ydQgS9KOsR3kOW6vs8iIE61BBn25EzBydB3rOzlw8n87kmcGNozrv0Y3uXjaUsscuJBMsnWV2IpFMsMFLLJ9Ksmw6b+ed9BjLJe3sUIqFcskkGxzVs7aT0GuiXhEjI7n0WKfWi5xGsD3cRiRKRtyTvVoHzTsDjxhmDpvCjcRPxUFBU9CHUowf1qouKmtir0CPa8fQoBxbwpRI1PdcFImv4uWRKKrh/4lE61ahGq+mmJoPJfK1jY7se8TK1b7/efKPXVGuc2Mfdi0vAmVaB7aGm4mvdiXe3+YRM+cl32pRpV2xAGXRuCIJHkLxaWjFZmwi/gBRoVPwULY4BFekOncWJobj7XfmXGxYB4c9vLOMsqgqzAoXROGfQj5em/YVRx7+9T09L4vFYv3AWryvSsQH3K6aAyddvrpx5q3V47FCyepzncXiN+t0Zdi2whJ50tZ/YK8dKr13wmu+FGRgHMbprwEAOAz6hw==) · [training dummy](https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMT89LFGEYnveb2Z3Xt9Lt89c0h/jaQ+jCLN+OTaQRs/oHBEHncnTXHElXdveQ0KHSIKQf0kmjMBBJpcBDQQRBFMIKG639poSgDDx0WLqEt5h199JZoefw8XzP874870MKV8xCGDGimhdJx+dPGoyNPaThxi0gDUvjQDq+mgdjLRyQxw3Gj3rS8e04GH8C6/04GN/qScN3lcmlCQjWdVyr6fd+R6qvijeGScPFqWDw8xQYm/WkkI4zt8H42hiN44QfKfjGdV88uAttG7MwCWzCn4Y57z489BZgvXsZZuehAFCCm36P8owddDpsKaV0pJOQ0rakdDocRyZkwpFSdhSYVmL4nb3QqInQDAd9ViCKFCbNSsgcNVfVhTmI1pFOIcuOOzl+wjxONpfUFOOo8tBLxjBk6hQiVcYTZMRaUOV1S1DdrDmOGSIVf7byIX7GGz1/NjOaF7a0j1qy07KPdYn+QW/kXDolMlnhpVLplOgbE/nBtMhm8l7ez4yIXNrL9g+Ktlw6LfqGraznp6yaaW2b8aFcZqTd3L7609ZJntr1LNal8Cuw6zGCWmJNqHIcCqq9WYGgIrEjObP652P/3JCQlkzs6A2ttO9LmEjDrWngLKJVoremwVA3WQHKzL6sKhW0JSehmRppP4YjaEC7UkHZlRBdVOsCrlwaSB64MxNg1T00UMFH1y4zQxdurMCU/wr5ZI3tKg4/2vGcztfFYnFv73Kyuyoke+EawAz4mfLV1dMf3M6KqpTc7mCyWPzlntom625MxaetPQzhAv87ACtUDq8=).
-
-**Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
-
-Dummy 478 → mana +3% → armor +33% → physical +9% → spell +3% → everything else +29% → raid 847
-
-(*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
-
-**DPS by fight length** (training dummy; your average DPS if the fight lasts this long):
-
-| 1 min | 2 min | 3 min | 4 min | 6 min |
-|---|---|---|---|---|
-| 501 | 495 | 478 | 466 | 449 |
-
-Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVU9oI2UUnzczybw+S5t+ae10UBkjSjo44cukI21FJu1JPIiCB0/aaZOaKbYJSQ4VL1UrSPFPvVQrhQq12EqFigoiCKIUUog0bVF32cLCbhd62ENuyx4WlpkmLZTdWwP7O73v/eH93u/7+B61I0RABR3iwIE9c3YSOQxCGl6DN2EMclCAOYBPABYBtBoiRiTtfVLwj1871ePHSMKfZ0nGw2qEFPx7HdT9sG/80qne7CAFP1oG9Q6Qgt99COr1DpLx6hf+8cufwK9WcHur4T9YB5Lx3hKQhJ9Nk4ybi37ilUVQTzpIIAUP9iPqtWgsgfNepOKpn3r69ysQP16FBRDnva9hzf0WttwNOBrZhtV1qADU4HNvlM7H/F180rYsbvGkze0k51bK5NxOcZtbnNs8VRHlmog3xD/D1E2ohUnG2g7EkMIkm0leop6Gd2MNYm2kUMi0EnaJLQF7yy28+3a+UNYtbr1gJrnJB4b1iZw78042o+eLupvJZDP6+Ht6OZfVi/myW/byM3op6xYncnq8lM3q49Nm0fUyZjNongYTU6X8TL82QAaLU9TowhAL/SWKGPKJkJgsUZfRiWEmviJoCoVISvKSH8L/777KVi4S40OmNXipxIaJswT1Gb0oMZzyG+/tgBaIwxOWfUZvvEEvxZ/VGllM1sRhgX3VevVsep4Z1GNEz9ULLpUnHkwwRBLu5dlL2otkMU7dBkOpWRhMwRNJUo3HUWJtP0DjRTQjdlB+q5dNtVx8PLvpi718Da0W9NpYA6ZrTz1Ey2Dyw25VOhErUBetDyQhQDy9AD0UpS4MR1CFfiFA3eEQ25TafFuYm0z3fbPsY9d5ejLAf45VF1VFd4yKKDxSKKebVkvx3I+X3mfon2q12j62nR5pONJj/ue+DF6+/vHuG/86Q4FXqDkjfma1ett5/dQ4cgwJf+sdfeL8Pz1dFC8HqyIHBZiFWXZ/AOx3SyY=) · [training dummy](https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMkc9LFGEYx+d5Z3bn8al0ff01TZdpqdCFWd6dnEojZvUPCILO5eiuOZKu7O7B6FJmENIPu4RGYGCShoFRQQRdCmGFjVajshKCMvDQYW/hIYjZXS+dFfqcvu/3eR6e78NLEpf0tSBiSNYvkoqvntdo67tIxqfDpOD7fIhUfDMD2nLQF89qtB/VpOKVSdB+A6n4YAS0b9Wk4Odb/vP2E/CnVVyYr/grM0AK/rkDJOONAVJwbtxvXB0HbaOaJFJxZTmkfa0LR3HUC+U87bpnPLwHzetTMAZs1JuAafc+zLuzsNaxAFMzkAMowE2vU3rJ9tmtlhBC2MKOxYRlmULYh21bCBGzc0wpMPzOVhWqJ9SDpGBhEcJIQVLMmMhQQ8WdnYZwFakUMK2oneEn9ONkcUH1EY4yD7xmDAO6SgGSRTRGWqQRZV71CCqTWxVbD5CMP5t4Pz/jDp0/mxrKGpawjpiizbSOtRs9fe7guWTCSKUNN5FIJozuC0a2L2mkU1k366UGjUzSTff0Gc2ZZNLoHjDTrpcwt4pmuRjtz6QGW/Ry6k+bJ3lix3exdomPwI6vMagxUo8yx37/tHeL4J9IrDWjV958/N8QMWGK1m0NEaUDPEx7vgSJFNycAM5CCtVGajDIWbdU/uij4mAp0uYEaPIGy0GRWZdlqURzfAwaqI5qMRhCDVqkEkVHQHhOrvK1dKk3vvfupM+Ss7+3xEfHKjJNNZxIjkn/Fdn4ltpRDj3e9j1tb/P5/O6uhXhHxYh3wTWASfBSxatLpz84bSVXKjgdfmc+/8s5VRZrTkTGF02dDGGY/x0AYtsQpg==); Phase 1 BiS: [full raid](https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVU9IG2kUnzeTZD7fisYvuo7D7jKbZZc47IRvJs6iLstET8sell3ooafW0cRmpJqQ5GChB4sWivSPFPrHIlgQqUoLHloohUJpESJNMdb+gwqF1oKHHnIrvZUZEwVpbwb6O4SX93uP93u/b/g+rCcQBAkUiAAD+svuP55BJ8ThPzgMfZCCDIwBnAGYApDXCSFBQT6JIrl/p1Ha+g59ZOsCoI+UxgFF8mgepPWAG9xulN41oEiejoP00aWejYP0pgF9ZMOrXJoAt10k69X840tQ+RXIuWH0kcUpt/DVFEjbDcihSKYvgvQ6FI6SCSdYcKSzjnJjBiJbszAJ/IRzFebs63DTXoDNnmWYnYcCQAnOO724t+c9/kfTMJjOdJOZOtONmMaYGTNMxhgzWazA+0o8ecs/CGAzEjngLrYCYYIB9Gk6y2FLJbswB+E6FNGvGVEzRy8DPWJnjh9NZ/KKwYw/NJ1prKNbGUjZI8eSCSWdVexEIplQ+k8o+VRSyabzdt5Jjyi5pJ0dSCmRXDKp9A9rWdtJaFVS2yGjQ7n0SLvcgSqNYEhtIn7qf8jzxO8KQV7PYZPaSAKU/4eTRfSjoLOcS5GXn/6lM/uFsS7N6DxQYd3IaBTb1FYiUDLkDl5bAdkzh0UNc1def0VejP0qV6qoT+a7OXql9u6Z+DtVsUUN7bnnHSqLflmgHwWylqZ/yX+iQRk2q5QI1UZvCxbVUVK/JwKtW4LKF1FlTK/9fSsdqrn5ZPek989yPTRqMGthDqgi//QVL73NN5olYZsvQJk3Tgmch0h8ElowhE0kECQStHMeyhaD8KJQ58bc2GC87dq0i1Xr50EPLyyjzEuiYqkFnvumkI9Xo5rit1sHPqfrSbFYrO9bjvdUEvE+93afBiddPr166LnV5WW5ktXjVhaLH6z/d4JNSxXI3dbeH/bu052X4m/vrUhBBkZhlH4eAGIESoI=) · [training dummy](https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMUd1LFH0UnvOb2Znjed9X159f804301KhC7P8dnIqjZjVPyAIui5Hd82RdGV3Lwq6qDQI6UOCQCMwEEmlwIuCCLophJU2WvuUMoIy8KKLvQvvYvbjpmuFnovhmec5h/M8/EjikvFFRQzLxgXS8NnjBn3zH1Jw8yaQgsVxIA1fzIO+pgbkUYP+vZ40fDMO+q/AejcO+td6UvBteXJpAoJ1Dddq+svbUP3KeH2EFFycCgbXp0DfqieJNJy5BfrnpkgMJ/xw3tev+eb9u9C+OQuTwCb8aZjz7sEDbwE2epZhdh7yAEW44fdKT9kep9MWQghHOPG4sG1LCOeg4wgh4k6eKUWG39i6Qs2EhhqUWYEIkkqKFRdZaqmqC3MQqSONQpYdc7L8mHGUbC6oOcpR5qHnjGHI0ChEsojFSY+2oszrlqC6WXMcI0Qy/mjjw/yUN3b2dHosZ9rCPmSJLss+0m0ODHmjZ1JJM50xvWQylTT7z5u5oZSZSee8nJ8eNbMpLzMwZLZnUymzf8TKeH7SqplWxYwNZ9OjHUYl9cft4zy567dYt8Qvw66fMak12owyx+Gg2usVCCoS68wa1X8+9WeIuLBE546GiNE+HqH/PqlECm5PA2dhhRqjDahy1i9VHvqw2F+OtD0NurzF8lBi9iVZKqM9MQkt1ESNqIZRhw6pjJIrILIo1wVcujiY+P/OTIBVd+9gGR9cu8R0zXSjeSb9VcglamxXceDhjt/pelUoFP7tW070VIVEH1wFmAE/XbqyevK921VWpaLbE0wWCj/dExWy4UZlfNLWyxDO8d8DAH/jEAI=).
 
 ## Other builds of this spec
 
-- [Beast-Marks — Raid](../research/raid/builds/beast-marks-ml-raid.md) (22/29/0, 857 DPS in a full raid, 468 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/53200005051001-005345000050304--4)
+- [Marksmanship — Summon Hawk](../research/raid/builds/mm-hawk-raid.md) (22/29/0, 855 DPS in a full raid, 478 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/53200005051001-105355000150004--4)
 - [Beast Mastery / Marksmanship](../research/raid/builds/bm-mm-raid.md) (22/29/0, 823 DPS in a full raid, 478 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/53200005041002-005355010150004--4)
 - [Marksmanship raid DPS with a pet](../research/raid/builds/opt-mm-raid-raid-dps.md) (22/29/0, 823 DPS in a full raid, 478 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/53200005041002-005355010150004--4)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-03 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-04 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
 

@@ -23,14 +23,13 @@
 | Setting | DPS |
 |---|---|
 | Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 576 |
-| Training dummy, 3-minute fight (alone, only your own buffs) | 497 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
-| Gear | Full raid | Training dummy | Best talents (full raid) |
-|---|---|---|---|
-| Pre-BiS | 566 | 497 | this build |
-| Phase 1 BiS | 614 | 536 | this build |
+| Gear | Full raid DPS | Best talents |
+|---|---|---|
+| Pre-BiS | 566 | this build |
+| Phase 1 BiS | 614 | this build |
 
 **The gear** (average item level: Pre-BiS 62.8; Phase 1 BiS 65.7; each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -54,24 +53,10 @@
 
 **Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://elliotwood.github.io/Forever/forever/druid/balance/#eJzMk7FrFE0YxveZme/u/d4kulkjnqPi5UAJByezeywYm927ysIigoVYHRFjVhADUUkZJYJYBK0kQQsFiYKRVCI2wmnwAqscooIiIrFQUORQsLGR2ajxD1DwVyzP/uYZZop3uJvgooAiBmDg9f/6EwYxhrAfDYxiDJPAWeA8oJuC8m6XPsCKvs2DFS1ftN83X3pY0YsrYEkvT7Ci5jUbFw+zotdfe1jS04OsaOGmLV/+7LKih3NrWNLpQ6zodtuKe7fADjulrTSVuK2kOHcJA4+nMXT1Ac5BTCXX8a7WxnRS59VL3xXahNUgCIzvh6HxTehXTFgJTWhMtSXQFl3L4iT3MR3JsaLZJkrEOVYV34x7SotdjrdFb+Le8lpSnhh2dJ7/Y1k127Stf3oLb71eV+9lRRfuw8XKsjk67vVpr+6ypA97fresKdv4ZBEF+V600BHBKelk7IiHc1qxYKd0Q/5vjTM5Em+cnbEsRf0jGc+joCMK+WJUbgnnn+J4/DP9VbbP//FzBh+ladrdWIhrP0TcsOM8g+RY58zSvmfRYGaddlSzzTT9GO1dCa+isqQ7G+qbVyfOYCdi7M4exyjGMIEJ7/sAt+N2EA==) · [training dummy](https://elliotwood.github.io/Forever/forever/druid/balance/#eJzMkEFIFFEYx99781w/P7PWh5RNRS9BMWHkzchEepl1j1FQ0KlLzu6O7ojtyM4EdSsxiAihUyh1KAgLMjyFdAksaYUtlqigiBALCopYCrp0iRmNorNF/8PHnx8ffD8+ZO1UEH22ARrTzfox5PB9jiKH1cvxXPnaghxeXqOowauTyGHxRlyXRpDDm28tqMGzPHKYvx0vX/2SRg6PZjejBhMecrhbi8H9OxQJko7dMOmnK76cvUK7n0zRw9cf0guUTfo36fvBGp3ys+Qe05XdZ1mWMk3bVqayTUPZhq1spfoqjNZY8yp7p2EbwmgKOcws0g7AFHLDVKHgOhsgYpe+A1t7tgAXLEf0RmxArU916ink8PktFRepyLnjY8eD8UhaytpnqH7D2j8g80W3NOIVZFCWbqHgFWTutIyKniwHkRv5QUmGnlvOF2V36Hky5465pbxnFMZDoxxEbuQHJSP03HK+2DsaBqW9elfikBLswLqDqcJsK3K49ICm6RpSJ0LRpotsGjX4ePB3ijokwk+XqJj4N8I7k6dpv55m2p1x6aawslUEfziYylDmhjs0JQcBFg61ax9YhdaZdVYjSXozuZTOkSHpuKU1xYScGc5sn5mOs+zsGU7ywrHqrL1ROj0VRv6rRJmf7a+ma27D7/Q/rlarm4bmM4PrIDNEz1M6Tf2gfm756HOnP6Gk5gzGm9XqJ+fIWnnt9GiwsC1LTokfAwDF/Nxp); Phase 1 BiS: [full raid](https://elliotwood.github.io/Forever/forever/druid/balance/#eJzMk7FrFEEUxuebHe+eL5Fs1ojnqHg5UMLByeweC8Zm966ysIhgYWFxBIxZQQxEJGWUC4hFUEOKBG0EUcFAChGxkpjIHa5yCFpZiBYKihxaCiKzUeMfoOBXPL75zTe8Kd7jXoKLAooYgoE3+PskDWKM4BgaGMcEpoGLwGVAr0rKuz36OCv6tgRW9P2qrW++bmFF92esb8/bunIT7NDaSVb0KANP7vWxouW71l//4rKip/M2cuEEK2rOWbw4BxYsSnuombitpHjrGoaez2LkxiouQTaT23hf62A2qfPGtx9KbcJqEATG98PQ+Cb0KyashCY0ptqS6Miet/IcDzCdytkWKygR51hVfDPpKS0PCm+33sn95T5SnhwVOs+b2KmavdrGP7+Dt01vrfezoiuP4WL92pye9Aa0V3fZoY+H/6SsKXv4Yg0F54NsoSuD847ItD8ezWnFkkXpjrPZEjE9Fu9YXLBqR4NjmV5FQVcW8sWo3JLiv9LZ+Jf7p9q39Nf7DD9L07S3sRzXfoK4YQd6AcmZ7kz76MtoOKOiE9VsMk0/RUfWzeuo7NCD7fVdGxNncAAxDmXrMY4JTGHK+zEArSx07A==) · [training dummy](https://elliotwood.github.io/Forever/forever/druid/balance/#eJzMkEFoE00Yhmdmp+n06//TdChaV8Wx0FILW2Y3rJheNslRFBQ8CnaTbJstNRuyOehNSwoiUtDSQ4teBNGChR5EiiepVhKMEgQ9eSgqKCgS9CiIzKZF8VzF9zC8PLzs97BA+jFH+nIH64x366eBsm8rGCj7fk29m1//B8ruz6peX1Dv+i0MGtuYBMoeRuDJvR6gbPWu6je+xIGypwtqMuMBZdV5hZfmMSBAAwdY1Y/XfHH7Oh5+PodP3HyML2NS9e/g9+kmnvMz6AHRpZ2wLEuapm1LU9qmIW3DlraUiRrBTdL9hrzToA/YVEx9eR0PMIgBNUwZcqqTMcT363uhd6SHUU6ySO+EDtASclBX889vMb+CedYtTZ8JShVhSeuwIZOGdWRM5ApucdLLi6As3Hzey4vseVEpeKIcVNyKHxRF6LnlXEEMh54nsu60W8x5Rr4UGtsDoz0YnQqD4iF9KHKIcXJ0y8GUYaYXKLv6CMdxG8mzIe/TeSYOGvt47FcKOouEX2xgPvN3hPdFwtrPn2bag6oMY7a5iwe/OZjSkOaOO3RFBxlbO96vfSA13CLWRQ1FGU1lYzoFAmhgWetSBF2YSO1ZWlSpOwcnorxyrBbp7xTOSI2gfyqV1Hb7oxla2fE7yWeNRuO/8dVUegukxvEljBexH7Rm66deOsmIoqaTVstG45Nzsl1eOyMaW9udQef4jwEAOVzbRQ==).
 
-**Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
-
-Dummy 497 → mana +3% → armor +0% → physical -5% → spell +11% → everything else +7% → raid 576
-
-(*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
-
-**DPS by fight length** (training dummy; your average DPS if the fight lasts this long):
-
-| 1 min | 2 min | 3 min | 4 min | 6 min |
-|---|---|---|---|---|
-| 513 | 517 | 497 | 434 | 389 |
-
-Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
-
 ## Other builds of this spec
 
 - [Balance (optimized)](../research/raid/builds/opt-balance-dps-raid-dps.md) (33/5/13, 576 DPS in a full raid, 497 on the dummy) — [open the talent tree](https://talentsforever.com/druid/60/0532220115501051-05-505003-4)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-03 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-04 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
 

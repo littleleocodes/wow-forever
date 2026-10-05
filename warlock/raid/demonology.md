@@ -33,14 +33,13 @@
 | Setting | DPS |
 |---|---|
 | Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 786 |
-| Training dummy, 3-minute fight (alone, only your own buffs) | 646 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
-| Gear | Full raid | Training dummy | Best talents (full raid) |
-|---|---|---|---|
-| Pre-BiS | 801 | 656 | [2/31/18](https://talentsforever.com/warlock/60/011-0025003031220301351-0550005003-4) |
-| Phase 1 BiS | 836 | 689 | [2/31/18](https://talentsforever.com/warlock/60/011-0025003031220301351-0550005003-4) |
+| Gear | Full raid DPS | Best talents |
+|---|---|---|
+| Pre-BiS | 801 | [2/31/18](https://talentsforever.com/warlock/60/011-0025003031220301351-0550005003-4) |
+| Phase 1 BiS | 836 | [2/31/18](https://talentsforever.com/warlock/60/011-0025003031220301351-0550005003-4) |
 
 **The gear** (average item level: Pre-BiS 62.8; Phase 1 BiS 65.8; each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -66,24 +65,10 @@
 
 **Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://elliotwood.github.io/Forever/forever/warlock/dps/#eJzMlE9II1ccx/N7M8k8f/VPfKU4vrYwTVHS0JE3E8YaL4mepCcLPRQ81MRMTEQzIclBb7ZaWkqx0ksxtLRCxQq1pO3F9tQWwkbILl52Ydd1d/Gye9iDuJDLXpaZxBXWyx5Wdr+Hme983+8383nz4IedFIKgggZhEMDeffpEBIxAAibhE5iGLBRgGeArgHUA/odCpWAHd1Cmj3cBZXr8vXu996gLFXpzE9RlggG6n1d/VlCh/2+BetiNEq3NokzvNLtQoqcZVGj1N1C/VVCmP54GUaZXtt2iz22U6PoCKvTWJqj111Gmf/8Obst86H26mgvWc9r2DxC+tgaimfoayGruOyDN1K9wf6wKP23BHlQnDmAtN47nG/uHhIRh6EKYlhBRETVMU0SFEbUMXViWEMKN60Q6IK8dk7/87G3+JvaGerDrT0CU6b9fTjIS9PNA25tcYJgNYm+khwYY+dDHFfSjZFglL5IZSbWjD6wBLiNRe1mUG8/ZMywGuB+lYDPFZE5GfS2a1nvP2qJDlkez8g2wFWCZZGH+U6dQ1kxhDusippsjo9pMNpmftdOaU9SS6bSd1lJLWjlra0WnnCznnLxWspPFmawWLtm2lrYXnLwz78wu6cVkLq2fFemtoqG5kpN/j/djMNJNJW9/AZSRWB4q3ZliIa5hX+QNKjNlzo3+m+K0QtqudWO/PEtqCF2Yl0I6ioINYX+kj8qMzrm/6m4NeEeFtO2FcxAl3l56uZhH55hHFzHNNuZRDRhy6vnDGqjSA1KHE2J+Jvk8xRIV0omIlEoaGSEJCO1IHe6CbzmT6K9suNqPv5PxdCNunhBV0eKROvG9UionztylanD3hX8ndrXRaHROVxNj7SAx7U7PDcg5J1/sf3w9HvNS30F8zK1sNB7GP2qZ2/GIRPf6xt86H1+tSTzhzeIsFGARFtmTAQB/5BSA) · [training dummy](https://elliotwood.github.io/Forever/forever/warlock/dps/#eJzMUU1oE1sYnXtnkrn9Xn/S+3h0eh8P7ouk1uCUOxOmNt0k7UpcKbjrwibNpE1pMyXJwu6qVhTRKm6kQdGCpRasBN1UVyoUU4jSjYLWP7rRhYtSIRs3MsmUom5cWPEs5juc73wzhzMgUYktqEQONDAHFPJlCYFCNq64z/efm0AlL+eQNoXBT1az2g0VVPJ4HmnrzSCTlWFQyNtqE8hkKw0qKd1G2kUVFHJtKwAKebLgmk7aIJNL46CSV3NIK/8NCrl/B7knY8H9ZDoTKGf4wlXU+WwGiWryHMLTmcsIV5O30Ie+Ero+j5ZR6eAamsn0Sw9w0BCGLoRpCREREcM0RUQYEcvQhWUJIVy5jOU1/NcGvuej/7F/oTXYAk13EYBCHp45THHAx/weN5mATtoBreEW4qf4kMRU8IFsWPmapFCc9KQDVogpgLVWGmHGT950ixDzgRyoJqnCcK9UT1N/7/ZZpMuqpTl1HtEg49AW/ocoVB31gUweDTBSxB6rD3oT0XRiYuyYM1HgpjC7dUPowuzlQyOJ7LCd4k6OJ1IpO8WTk7wwYvOcU0gUMk6W5+1EbmiEd+Ztm6fscSfrjDnDk3oukUnp2ya9buoazTvZfawXBO2C9nAbUSgZdUO+W0GsoYg9+kMDIs+8FS1+H1NEdbNnV2IK2EtDtSzyTvWGFYJAuNmL5wcFcHfe/RlkcYBe+H0d7vmmvzc7/bnUmxQYqRW3voI0+SMuo01snpClGqLxIm4EAEJkjntwHAUX5QZ3IU2l4+3FWRersf/TNbyImZtYU3ksXMbSH4VCfJvtKjqWfvl3ok8rlUrjYCne5wnxQXQWoVmUcTZPrx59HovWVGkt1uc6K5VPsSN18joWlslyW790nH4dAOsVCs8=); Phase 1 BiS: [full raid](https://elliotwood.github.io/Forever/forever/warlock/dps/#eJzMlE9oG0cUxvVmV97xq//IU4rX0xa2Kjaq6JrZFetavkj2yfTkQg8FH2rJWlsyrlZIOtg3t5ZpKcUtLj5YtPQPNY0hDiLJwckpCQhkoiS+JBAck5BLcsjBOOBLIIRdyTHElxxiku+w++333uz+ZgcetlEIgAoahEAA+/TlExEwCHEYg29gAtKQgwWAnwB+A+AXFSoFWnkeZfpsE1Cmz1fc64On7ajQu/+AukBQoduroP6toEKvrYO624ESrU6jTK+sur3/lgAVWjkL6q8KyvTPgwDK9LpXKv0OKNEfbFTorSVQa++jTC+dc7OD2eDntJQJ1DLa/39A6OYyiMPkz0BKmRUgh8kz8Gi4An+twxZURndgOTOCx3u7TILCMHQhTEuIiIgYpikiwohYhi4sSwjhxjUi7ZD3HpILfvYx/xC7gp3Yfh7Qpf5xjJGAn7c0vckFhlgfdoU7aQsjX/q4gn6UDKvgRTIjyWb0hdXLZSRqF4tw4zXXDIhe7kcpcJhkMidDvgZN471HyyL9lkez+AuwRWBTidzst06uqJnCHNBFVDcHh7TJdCI7bac0J68lUik7pSXntWLa1vJOMVHMOFmtYCfyk2ktVLBtLWV/52SdWWd6Xs8nMin9qElvNPXPFJzsZ7wHA+EOKnn7a0EZieWh0o1xFuQadoc/oDJTZtzo6jinZdJ0jRv771VSQ+jCPBXSIRSsH3vC3VRmdMb9VferwFvLpGlPnIMo8Gbp7WLuHWPuncQ0m5h7VWDIqed3q6BKj0kN9on5veTzFI2XSRsiUippZJDEIbghtboF38JUvKe85mo79smUpzsxc5+oihYL14jvnVIxfuROVX2bb/w70Rv1er1tohIfbgbxCXeArkHG2V/a/vp2LOqlvp3YsNtZrz+JfdUw92JhiW51j3x0PL4aw3jUG8dpyMEczLEXAwCivRPl) · [training dummy](https://elliotwood.github.io/Forever/forever/warlock/dps/#eJzMkU9IFFEcx+e9mXWev/yzvgjHF8G0sWZLI29mGXO97OopOhV085C77qgjtiO7e8ib1UoRZWB4cCn6Q1JGxlIX61SBsNJWXgrCouhShw5i4CWImNkRqS4dMvoe5n35/n5v5sN3QKACuyMTMVjLsiCRb/MIJPJ9yn1++FoPMnlzHSnjGGSyNI2UazLI5OksUlYaQCSLgyCRx9Pu7o0CApmU7iLlogwSubIWBIk880aFSwhEcsoCmbycQEp5O0jk4T03WxsJ7ScFO1i21VuXUduLScTXU+cQLthTCK+nbqNP3SV0dRYtoNLBZTRp9wiPcEjnusa5YXIe5VHdMHiU61FT17hpcs7duIzFZbztI34QoLvYTmgKNUL9fQQu65nDFAcDrMb3BuPQRluhKdJIaig+JDAZAiDqZs6LJIpTfnTADDMJsNJEo0z/wzsdPMwCIAbXU1RiuEuo0lTfu3Et2m56NKfPIxpiKjRHdhCJysMBEMmTXkaK2HfVg95EdCA5OnLMGc2rBjc6NJ1r3OhS+4eSmUErrTpZNZlOW2k1Nabmhyw16+STedvJqDkrme0fUttylqWmreNOxhlxBse0bNJOaxtLWnWpfTjnZPaxLuC0HVoizUSiZNiFfL+IWG0R+/a3BniO+SNa/BWTxzSjc0swOeylYY9F3KxeN8MQjDT4eDUgAe7IuT+DzPXSC/+uwz0/9fdusz/X+icFRrziVhaRIn7GZbSKjZOi4CmWKOI6ACBEVHEnTqDQnFjrDoTxgURLccbVUnz3gKfXcWMVK7Iaj5Sx8F8pn9hwW6rW+b/+ndjzSqVS11dKdPtBog+dRWgG2c7qxNLRV/GYlwrL8W53s1L5Ej9SNW/jEZEsNPcIJ+iPAQAURgo0).
 
-**Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
-
-Dummy 646 → mana +5% → armor +3% → physical +4% → spell +1% → everything else +9% → raid 786
-
-(*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
-
-**DPS by fight length** (training dummy; your average DPS if the fight lasts this long):
-
-| 1 min | 2 min | 3 min | 4 min | 6 min |
-|---|---|---|---|---|
-| 697 | 647 | 641 | 623 | 616 |
-
-Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
-
 ## Other builds of this spec
 
 - [Demonology — Raid](../research/raid/builds/demonology-ml-raid.md) (2/31/18, 789 DPS in a full raid, 646 on the dummy) — [open the talent tree](https://talentsforever.com/warlock/60/011-0025003031220301351-0550005003-4)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-03 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-04 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
 

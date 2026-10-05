@@ -54,6 +54,7 @@ DEEP = dict(runs=6, budget=5000, screen=1500, patience=8, max_rounds=40, random_
 QUICK = dict(runs=3, budget=3000, screen=1500, patience=5, max_rounds=20, random_init=300, pool=8000, parents=40, finalists=6, screen_budget=600)
 FINAL_FIGHTS = 200000
 SMOKE = False
+SETTINGS = ("raid",)   # 2026-10-04, user decision: raid and leveling builds only; --dummy adds the training dummy back
 
 
 def log(m):
@@ -117,7 +118,8 @@ def retune(cls, winners, st):
         tune.write_text(json.dumps(builds, indent=1), encoding="utf-8")
         log(f"== rotations {cls}/{entry}: tuning on {', '.join(b['label'] for b in builds)} (every build the entry lists protected)")
         t0 = time.time()
-        r = subprocess.run([sys.executable, str(HERE / "apl_opt.py"), cls, "--spec", entry, "--tune", str(tune), "--write", "--rounds", "20"],
+        r = subprocess.run([sys.executable, str(HERE / "apl_opt.py"), cls, "--spec", entry, "--tune", str(tune), "--write", "--rounds", "20",
+                            *(["--setting", "raid"] if SETTINGS == ("raid",) else [])],
                            capture_output=True, text=True, encoding="utf-8", errors="replace", cwd=str(ROOT))
         for ln in r.stdout.splitlines():
             if ln.strip().startswith(("==", "round", "dummy", "raid", "wrote", "no change")):
@@ -170,12 +172,15 @@ def main():
     ap.add_argument("--cycles", type=int, default=3)
     ap.add_argument("--fresh", action="store_true")
     ap.add_argument("--smoke", action="store_true", help="tiny budgets, a separate record, no ML records or report written (a test)")
+    ap.add_argument("--dummy", action="store_true", help="also search the training dummy (off since 2026-10-04: the pages are raid and leveling only)")
     a = ap.parse_args()
-    global OUT, DEEP, QUICK, FINAL_FIGHTS, SMOKE
+    global OUT, DEEP, QUICK, FINAL_FIGHTS, SMOKE, SETTINGS
     if a.smoke:
         OUT, FINAL_FIGHTS, SMOKE = HERE / "deep-smoke", 4000, True
         DEEP = QUICK = dict(runs=1, budget=150, screen=300, patience=1, max_rounds=1, random_init=40, pool=600, parents=8, finalists=2, screen_budget=60,
                             race_stages=((1000, 2, 2), (2000, 3, 1), (4000, 4, 1)), cert_its=(500, 2000))   # a test: small races too
+    if a.dummy:
+        SETTINGS = ("dummy", "raid")
     cls = a.cls
     R.set_game("forever")
     repo = R.repo_path(argparse.Namespace(repo=None))
@@ -197,7 +202,7 @@ def main():
                 if cyc == 1 or SMOKE:   # (a test never rewrites gear sets)
                     c["gear"][spec] = rec["gear"]["bis"]["gear"]
                 else:
-                    w0 = prev["winners"][f"{spec}|dummy"]
+                    w0 = prev["winners"].get(f"{spec}|raid") or prev["winners"][f"{spec}|dummy"]
                     g = MP.gear(rec, "bis", flat_of(w0["allocation"]), "deep winner", w0["entry"], repo, db, zones)
                     c["gear"][spec] = g["gear"]
                     c.setdefault("gear_rec", {})[spec] = g
@@ -206,7 +211,7 @@ def main():
             # every earlier winner of the spec is a start (the ML record's four, the deep cycles')
             starts = [flat_of(x["winner"]["allocation"]) for x in rec.get("search", {}).values() if x and x.get("winner")]
             starts += [flat_of(w["allocation"]) for cc in st["cycles"] for k, w in cc["winners"].items() if k.startswith(spec + "|")]
-            for setting in ("dummy", "raid"):
+            for setting in SETTINGS:
                 k = f"{spec}|{setting}"
                 if k in c["winners"]:
                     continue
@@ -238,7 +243,7 @@ def main():
     for spec, rec in recs.items():
         gear_path = last["gear"][spec]
         gear = json.load(open(ROOT / gear_path, encoding="utf-8"))["items"]
-        for setting in ("dummy", "raid"):
+        for setting in SETTINGS:
             k = f"{spec}|{setting}"
             if k in fin.get("two_move", {}):
                 continue
@@ -258,14 +263,14 @@ def main():
     # 3. pre-BiS
     for spec, rec in recs.items():
         if f"{spec}|prebis-gear" not in fin:
-            w0 = last["winners"][f"{spec}|dummy"]
+            w0 = last["winners"].get(f"{spec}|raid") or last["winners"][f"{spec}|dummy"]
             g = rec["gear"]["prebis"] if SMOKE else MP.gear(rec, "prebis", flat_of(w0["allocation"]), "deep winner (bis)", w0["entry"], repo, db, zones)
             fin[f"{spec}|prebis-gear"] = g
             save(st)
         gear_path = fin[f"{spec}|prebis-gear"]["gear"]
-        starts = [flat_of(last["winners"][f"{spec}|{s}"]["allocation"]) for s in ("dummy", "raid")]
+        starts = [flat_of(last["winners"][f"{spec}|{s}"]["allocation"]) for s in SETTINGS]
         starts += [flat_of(x["winner"]["allocation"]) for kk, x in rec.get("search", {}).items() if kk.startswith("prebis") and x]
-        for setting in ("dummy", "raid"):
+        for setting in SETTINGS:
             k = f"{spec}|prebis-{setting}"
             if k in fin:
                 continue
@@ -274,7 +279,7 @@ def main():
             save(st)
     # 4. final races and the ML records
     for spec, rec in recs.items():
-        for tier, setting in (("bis", "dummy"), ("bis", "raid"), ("prebis", "dummy"), ("prebis", "raid")):
+        for tier, setting in [(t, st) for t in ("bis", "prebis") for st in SETTINGS]:
             k = f"{spec}|{tier}-{setting}-final"
             if k in fin:
                 continue
@@ -283,7 +288,7 @@ def main():
             save(st)
         new = dict(rec)
         new["search"] = dict(rec.get("search", {}))
-        for tier, setting in (("bis", "dummy"), ("bis", "raid"), ("prebis", "dummy"), ("prebis", "raid")):
+        for tier, setting in [(t, st) for t in ("bis", "prebis") for st in SETTINGS]:   # a setting not searched keeps the record's earlier winner
             w = last["winners"][f"{spec}|{setting}"] if tier == "bis" else fin[f"{spec}|prebis-{setting}"]
             f = fin[f"{spec}|{tier}-{setting}-final"]["deep winner"]
             new["search"][f"{tier}-{setting}"] = {"entry": w["entry"], "setting": setting, "date": TODAY, "deep": True,
@@ -327,7 +332,7 @@ def report(cls, st, recs):
         o += [f"## {SM.spec_name(cls, spec)}", "", "| Tier, setting | Talents | Rotation (entry) | DPS (200,000 fights) | Independent runs agreeing | Two-move check |",
               "|---|---|---|---|---|---|"]
         for tier, setting in (("bis", "dummy"), ("bis", "raid"), ("prebis", "dummy"), ("prebis", "raid")):
-            w = last["winners"][f"{spec}|{setting}"] if tier == "bis" else fin.get(f"{spec}|prebis-{setting}")
+            w = last["winners"].get(f"{spec}|{setting}") if tier == "bis" else fin.get(f"{spec}|prebis-{setting}")
             f = (fin.get(f"{spec}|{tier}-{setting}-final") or {}).get("deep winner") or {}
             tm = (fin.get("two_move") or {}).get(f"{spec}|{setting}") if tier == "bis" else None
             tms = "-"

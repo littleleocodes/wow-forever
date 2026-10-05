@@ -2,17 +2,34 @@
  "dummy": {
   "class": "hunter",
   "spec": "melee-dps",
-  "date": "2026-10-02",
-  "commit": "40be98e",
+  "date": "2026-10-04",
+  "commit": "b0f0df3",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/apls/hunter/melee-dps.base.apl.json",
   "start": "_reference/data/raidsim/apls/hunter/melee-dps.apl.json",
   "builds": [
    {
-    "label": "ml: Survival",
-    "talents": "5-005055001-50023023005022213",
+    "label": "deep: Survival (dummy)",
+    "talents": "5-005055001-43021023015022212",
     "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-bis.gear.json"
+   },
+   {
+    "label": "deep: Survival (raid)",
+    "talents": "5-005005001-050230231251022151",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-bis.gear.json"
+   },
+   {
+    "label": "survival-raid",
+    "talents": "5-005055001-50023023005022213"
+   },
+   {
+    "label": "melee-survival-raid",
+    "talents": "5-005005001-050230230250222151"
+   },
+   {
+    "label": "opt-melee-dps-raid-dps",
+    "talents": "5-005045001-500250030050220151"
    }
   ],
   "iterations": 3000,
@@ -57,38 +74,119 @@
     "gain_seed2": 0.0030927060542240703,
     "candidates": 281,
     "pass": 3
+   },
+   {
+    "round": 6,
+    "change": "move down below 'cast Strider Kick': cast Major Mana Potion",
+    "gain_seed1": 0.002210076667687133,
+    "gain_seed2": 0.0037165661267857253,
+    "candidates": 281,
+    "pass": 4
+   },
+   {
+    "round": 7,
+    "change": "move to the top: cast Mongoose Bite",
+    "gain_seed1": 0.003308750110145864,
+    "gain_seed2": 0.0016804080342853744,
+    "candidates": 281,
+    "pass": 4
+   },
+   {
+    "round": 8,
+    "change": "move to the top: cast Aspect of the Beast",
+    "gain_seed1": 0.0010039933538319445,
+    "gain_seed2": 0.0019679500125477922,
+    "candidates": 281,
+    "pass": 4
    }
   ],
   "final": {
    "dummy": {
-    "ml: Survival": {
-     "before": 317.51977283194043,
-     "after": 449.40515104283475,
-     "base": 317.51977283194043,
+    "deep: Survival (dummy)": {
+     "before": 311.57544429649266,
+     "after": 444.90423654626375,
+     "base": 311.57544429649266,
      "before_value": null,
      "after_value": null,
-     "oom_before": 12.198882036625506,
-     "oom_after": 11.635876733505997
+     "oom_before": 8.936353859561448,
+     "oom_after": 8.936353859561448
+    },
+    "deep: Survival (raid)": {
+     "before": 309.2020333147809,
+     "after": 335.3786726367725,
+     "base": 309.2020333147809,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 121.4010758831798,
+     "oom_after": 121.4010758831798
+    },
+    "survival-raid": {
+     "before": 313.46049124244075,
+     "after": 445.36695293151917,
+     "base": 313.46049124244075,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 8.948387912346597,
+     "oom_after": 8.948387912346597
+    },
+    "melee-survival-raid": {
+     "before": 319.48504780203,
+     "after": 423.43966855012604,
+     "base": 319.48504780203,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 44.0139784686227,
+     "oom_after": 44.0139784686227
+    },
+    "opt-melee-dps-raid-dps": {
+     "before": 319.4210131720093,
+     "after": 425.5264962765919,
+     "base": 319.4210131720093,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 7.783218451007452,
+     "oom_after": 7.783218451007452
     }
    }
   },
   "first_date": "2026-09-29",
-  "passes": 3
+  "passes": 6
  },
  "raid": {
   "class": "hunter",
   "spec": "melee-dps",
-  "date": "2026-10-02",
-  "commit": "40be98e",
+  "date": "2026-10-04",
+  "commit": "b0f0df3",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/apls/hunter/melee-dps.base.apl.json",
   "start": "_reference/data/raidsim/apls/hunter/melee-dps-raid.apl.json",
   "builds": [
    {
-    "label": "ml: Survival",
-    "talents": "5-005055001-50023023005022213",
+    "label": "deep: Survival (dummy)",
+    "talents": "5-005055001-43021023015022212",
     "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-bis.gear.json"
+   },
+   {
+    "label": "deep: Survival (raid)",
+    "talents": "5-005005001-050230231251022151",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-bis.gear.json"
+   },
+   {
+    "label": "survival-raid",
+    "talents": "5-005055001-50023023005022213"
+   },
+   {
+    "label": "melee-survival-raid",
+    "talents": "5-005005001-050230230250222151"
+   },
+   {
+    "label": "opt-melee-dps-raid-dps",
+    "talents": "5-005045001-500250030050220151"
+   },
+   {
+    "label": "survival-ml-parse",
+    "talents": "5-005035001-050230230150022151"
    }
   ],
   "iterations": 3000,
@@ -113,10 +211,55 @@
   ],
   "final": {
    "raid": {
-    "ml: Survival": {
-     "before": 712.6588279898169,
-     "after": 968.3145486357761,
-     "base": 712.6588279898169,
+    "deep: Survival (dummy)": {
+     "before": 747.0191036415348,
+     "after": 1017.7551701296213,
+     "base": 747.0191036415348,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "deep: Survival (raid)": {
+     "before": 766.8389876078072,
+     "after": 1040.0231191198532,
+     "base": 766.8389876078072,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "survival-raid": {
+     "before": 751.7426719762512,
+     "after": 1021.7234206934663,
+     "base": 751.7426719762512,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "melee-survival-raid": {
+     "before": 766.8389876078072,
+     "after": 1040.021760738336,
+     "base": 766.8389876078072,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "opt-melee-dps-raid-dps": {
+     "before": 766.8389876078072,
+     "after": 1014.9927656781907,
+     "base": 766.8389876078072,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "survival-ml-parse": {
+     "before": 766.8389876078072,
+     "after": 1040.0192238804168,
+     "base": 766.8389876078072,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -125,6 +268,6 @@
    }
   },
   "first_date": "2026-09-29",
-  "passes": 3
+  "passes": 6
  }
 }

@@ -1,5 +1,5 @@
 {
- "date": "2026-10-03",
+ "date": "2026-10-04",
  "rows": [
   {
    "class": "hunter",
@@ -9,7 +9,7 @@
    "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.017,
+   "removal_loss": 0.0175,
    "kind": "automatic",
    "needed_by": [],
    "advice": "turn it on before the pull"
@@ -22,7 +22,7 @@
    "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.0205,
+   "removal_loss": 0.0215,
    "kind": "automatic",
    "needed_by": [],
    "advice": "turn it on before the pull"
@@ -35,7 +35,7 @@
    "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.017,
+   "removal_loss": 0.0175,
    "kind": "automatic",
    "needed_by": [],
    "advice": "turn it on before the pull"
@@ -48,7 +48,7 @@
    "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.0229,
+   "removal_loss": 0.0237,
    "kind": "automatic",
    "needed_by": [],
    "advice": "turn it on before the pull"
@@ -61,7 +61,7 @@
    "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.0228,
+   "removal_loss": 0.0236,
    "kind": "automatic",
    "needed_by": [],
    "advice": "turn it on before the pull"
@@ -74,7 +74,7 @@
    "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "raid",
-   "removal_loss": 0.0206,
+   "removal_loss": 0.0214,
    "kind": "automatic",
    "needed_by": [
     "Sniper Shot"
@@ -89,7 +89,7 @@
    "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.0227,
+   "removal_loss": 0.0238,
    "kind": "automatic",
    "needed_by": [],
    "advice": "turn it on before the pull"
@@ -102,7 +102,7 @@
    "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.0158,
+   "removal_loss": 0.0165,
    "kind": "automatic",
    "needed_by": [],
    "advice": "turn it on before the pull"
@@ -115,7 +115,7 @@
    "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.0152,
+   "removal_loss": 0.0159,
    "kind": "automatic",
    "needed_by": [],
    "advice": "turn it on before the pull"
@@ -169,7 +169,7 @@
    "talent": "Demonic Sacrifice",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.1148,
+   "removal_loss": 0.1147,
    "kind": "automatic",
    "needed_by": [],
    "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
@@ -182,7 +182,7 @@
    "talent": "Demonic Sacrifice",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.1015,
+   "removal_loss": 0.101,
    "kind": "automatic",
    "needed_by": [],
    "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
@@ -195,7 +195,7 @@
    "talent": "Demonic Sacrifice",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.115,
+   "removal_loss": 0.1151,
    "kind": "automatic",
    "needed_by": [],
    "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
@@ -208,7 +208,7 @@
    "talent": "Demonic Sacrifice",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.1152,
+   "removal_loss": 0.1153,
    "kind": "automatic",
    "needed_by": [],
    "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
@@ -221,7 +221,7 @@
    "talent": "Demonic Sacrifice",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.1011,
+   "removal_loss": 0.1007,
    "kind": "automatic",
    "needed_by": [],
    "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
@@ -234,7 +234,7 @@
    "talent": "Demonic Sacrifice",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.1058,
+   "removal_loss": 0.1054,
    "kind": "automatic",
    "needed_by": [
     "Soul Link"
@@ -264,7 +264,7 @@
    "talent": "Demonic Sacrifice",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.1056,
+   "removal_loss": 0.1052,
    "kind": "automatic",
    "needed_by": [
     "Soul Link"
@@ -309,10 +309,23 @@
    "talent": "Demonic Sacrifice",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.0471,
+   "removal_loss": 0.0459,
    "kind": "automatic",
    "needed_by": [],
    "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
+  },
+  {
+   "class": "warrior",
+   "entry": "fury-dw-raid",
+   "build": "opt-fury-dw-raid-raid-dps",
+   "spec": "Fury",
+   "talent": "Spearing Strike",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0,
+   "kind": "wasted",
+   "needed_by": [],
+   "advice": "not cast by the rotation"
   }
  ]
 }

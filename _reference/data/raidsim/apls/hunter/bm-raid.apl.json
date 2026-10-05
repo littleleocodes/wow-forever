@@ -124,13 +124,32 @@
   {
    "action": {
     "condition": {
-     "auraIsInactive": {
-      "sourceUnit": {
-       "type": "Self"
-      },
-      "auraId": {
-       "spellId": 19577
-      }
+     "and": {
+      "vals": [
+       {
+        "auraIsInactive": {
+         "sourceUnit": {
+          "type": "Self"
+         },
+         "auraId": {
+          "spellId": 19577
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "70%"
+          }
+         }
+        }
+       }
+      ]
      }
     },
     "castSpell": {
@@ -139,7 +158,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-10-01: changed or added by the rotation search (see bm-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-10-04: changed or added by the rotation search (see bm-raid-rotation-search.json)"
   }
  ]
 }

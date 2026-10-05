@@ -28,14 +28,13 @@
 | Setting | DPS |
 |---|---|
 | Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 659 |
-| Training dummy, 3-minute fight (alone, only your own buffs) | 571 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
-| Gear | Full raid | Training dummy | Best talents (full raid) |
-|---|---|---|---|
-| Pre-BiS | 672 | 585 | [31/10/10](https://talentsforever.com/mage/60/052023203111011531-2305-0352-4) |
-| Phase 1 BiS | 692 | 605 | [31/10/10](https://talentsforever.com/mage/60/050025203111011531-2305-0253-4) (ties this build) |
+| Gear | Full raid DPS | Best talents |
+|---|---|---|
+| Pre-BiS | 672 | [31/10/10](https://talentsforever.com/mage/60/052023203111011531-2305-0352-4) |
+| Phase 1 BiS | 692 | [31/10/10](https://talentsforever.com/mage/60/050025203111011531-2305-0253-4) (ties this build) |
 
 **The gear** (average item level: Pre-BiS 62.2; Phase 1 BiS 66.1; each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -61,20 +60,6 @@
 
 **Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://elliotwood.github.io/Forever/forever/mage/dps/#eJzMVE9IFGEU3/fNuPN8/mkbqabBw2Qo29LYN7NuuF5m9RR1yKBDp3LWHd0N211292A3LYPwoFJdjAoUogI16aRBF8tYYQsv9sciopA6BImFly4xoyZ0ruh3md/83ve99/sevEeVCAFQQIMgcJD3//pjHJohBu1wCjogCVnoA7gMMAKgroiIAVTzJOGPSVBWKkjEi/eBRHz/rYpEfD0G5MdiWvlYTRLO3QblTTUJON9NIr5bryI/rnW5tyScngBlWCIRb64FSMTHU0ACXnBIwJFzJOHyGCjFGhJxdsrNPj4MdQdxIBUoprQ7NyD4fAj4erx9/AkMAhtIXQG2Hr8Ln1pnYGIQFmEo1Ubbj3vIannE5GbY5GHDMLhhRMKGboZ5ROfhiFlksMgqPrCvTBZV1uKTw6pBQbmBdoZ2oCCzuE+VqIwEI1LvSWUyO7opmTyvlpGAV0/LPbJtZ3vOZLIFzeTmYZ1HdbO5RetM2uluJ6FlcpqdSDgJLX5eKyQdLZcp2IVUJq3lHTvXmdSCecfR7FynnXb0RDavb8X1jXjj2XwmfUCVvGovj8u71BoqfwB+EvH7MlPdb/9TkG/Bv3ARpUOqTkpoN/rl8jnPxKNZZbNJjZHf+9bE6z2Dr+ZBJhU9fm3pmCJ8ZkVYZWa/4PPQFBt3cxFDqLsnlLuSr68rtvf6qIsFa1+XhxeWucoUSbNCReb7r1CIbbG/iobJP14n+qxUKlV2TMdaN4VYhzvxo5DKrF5aOLlkRT3Vt2i1uidLpS/WiQ3y1goJOLOnrXZ73Da2xxFvfyQhC73QK/8cALH3z4M=) · [training dummy](https://elliotwood.github.io/Forever/forever/mage/dps/#eJzMjk9IFV8Ux+fcGd+cd/wpMvKradrcXIRJI3fmNZFu5um2RQXtc/SNOmEz8t5b1C7LKFxoVBujFgpRgZq00qCNZYzwCjf2xyKiiFq0eFi8TRAxY25aW/TZ3C/fc+89H5I0yfihIDahUSIVv8+C/rGeFDx/D0jBd18bSMFXU0AZjEP9QyOpuHQL9NeNJOPyACn4ttZAGdzoT16pOD8D+oRKCt7caCIFH80ByXjOJxkvnyIV16dAj5tJwcW55PfpCWjZj6NBUxzw2zeg9dk4iFrv0enHMAZsNLgCrNZ7Bz51LcDMGKzCeNAtPWC7hSOEcISdsyyRsywnZ5l2znFMIZyYwSqrf8+uyppisE5JG9I8b3joRDRc5rawD5qiw7QPdfK+QS8c8As8KnKvUPALvPcMLw/6vBiVvXIQhbzke8W+Qd5a8n3uFfu80DcLwyVza25uzttPlqJwn6EadSTjiyPa/0YzZe9DhhT8ts6M5Bx5AtpF+BsWLaS37cCMll1KBR4u6oZKdSRb7U5q8nIZNDIwzdfWDmvhb1KWMIW93VLZxKGV4QTo8mcWQ5XZI7KUciA/nYgSQ2i5K2eTSjrbn991fTJhxd3Tn/LctatMV7nbFjPpn6Kc30p/lL2z276n42mlUvmvZz7f9avI98AlgEkIouqFleNrbkfaSqtuV3KzUvniHtsMb9w2GRd2dkuntZ8DAEC54Ss=); Phase 1 BiS: [full raid](https://elliotwood.github.io/Forever/forever/mage/dps/#eJzMlF9IFHsUx/f8ZnSOR69378i9dxp8mAxlWxr7zawTri+z+hT1kEEPPZWz7uhuyO6yu4G9aa0QPlhoPhgVJUQFGdGTBkFIxkpb+WL/H6IIewgSC1+CiBk1oeeKvi9z5nN+v3PO78A5VIMQBAU0CAEHedv3P8ahFWLQCQehC5KQhQGAkwCnAdQlETGI6lGS8MsUKO+qScSvo0Aivv70F4n4/BKQhPPjoLytJQlnL4PyspYEnOslEe+Oe86xon9PwosnQDklkYjnV4Ik4oNxL0xxDEjA4y5J+HgIlFIdiThzw2MrfQ07sJgKllLalXMQejQCfDXeOXkPhoEVU6PAVuNXYal9Gq4PwwKMpDpo83m3WT23ODctk0cMw+CGYUUM3YxwS+emFSkxWGDVb9hHJosqawvIEdWgkNxE/4T/RkFm8YAqUQUJhtXoowqZ7VlHJs+rFSTg2CG5T3acbN/hTLagmdzcpfOobra2ad1JJ93rJrRMTnMSCTehxY9phaSr5TIFp5DKpLW86+S6k1oo77qak+t20q6eyOb1Db++5m8+ks+kt6uSn+3pPvlftY6qbkElifj5BVO97+B9kC/A76giSjtVnZTwf1gpV836RdyZUdab1Gz92LcW3ugX+GwOZFLRt88s7lWE96wEy8wcFAK+WmKTXixiCA3XhCoPBQZ6YlvOTniat7f2+Hpim8tMkTQ7XGKBP0qF2Ib1S9U09dPzRB+Wy+Warpux9nUQ6/JmfgJSmeWh+QOLdtSngQW73TtZLn+w968Zr+ywgNP/d9Rvjtva/tjtb5AkZKEf+uVvAwBJ/88b) · [training dummy](https://elliotwood.github.io/Forever/forever/mage/dps/#eJzMjk9o024cxvN9ky3fvvv9xshQY7y87iC1mPEmNWJ3SburBxW8u7TN1khpSltBb5t2KDtssNrDREEHooIT8bQJggwnLVbtZf4/iCJ68FCm7CKIJHMXz1P8XPLwPHnf90MFRdDGuxD7UDtJZfy+AOrHHirhj1mgEr77+j+V8NVVoDI266B+6KUyLl8D9U0vFXFljEr4oB6MtWp4TsYrZ0GdkamEl9f6qISP68E11RpQEc+4VMZnk6A2+qmES7eDbi0/sA+rXl/DY9cvQfTpNPD19JH5hzAFpOrNAllP34BPqUW4NQVtmPaGhXtkF7c45xY344bB44ZhxQ3djFuWzrnVINAmPe9JTVQkjQwJSl5xnGL+uF+sMJObB3Se0M2DQyyTcwpjbpb5JeZks26WpU+zSs5lJb/iVDy/wMquU8rkWLTsuswpZZyCq2eLZX1z1zf2wRNlv7BXk7UuKuKLw8o2rZ9G7kI3lfDba6IF34lHoJyDv2ExQNXYduxWIsuhwP0lVZNpFxWNQSs0ebkCCtUwzBdWDymF36QMrnNzq6UigUOU4Ayo4mfSgA4xJ0QhZH9yPhClBGHgphgJKmF8NLnz4lxA0949GvLcNjtElZkdaxDhn6KS3Ex/lD0LW/5O4kmr1fpv5E4y9atIjsB5gDnw/M5k89iqnQhboW2ngj9brS/20Y3w1o6JuLhjWDil/BwAt6rgRA==).
 
-**Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
-
-Dummy 571 → mana +1% → armor +0% → physical -1% → spell +10% → everything else +5% → raid 659
-
-(*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
-
-**DPS by fight length** (training dummy; your average DPS if the fight lasts this long):
-
-| 1 min | 2 min | 3 min | 4 min | 6 min |
-|---|---|---|---|---|
-| 634 | 594 | 571 | 551 | 528 |
-
-Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
-
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-03 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-04 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
 

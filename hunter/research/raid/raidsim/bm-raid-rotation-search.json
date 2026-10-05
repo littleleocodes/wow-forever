@@ -2,21 +2,31 @@
  "dummy": {
   "class": "hunter",
   "spec": "bm-raid",
-  "date": "2026-10-02",
-  "commit": "40be98e",
+  "date": "2026-10-04",
+  "commit": "b0f0df3",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "ui/specs/hunter/dps/apls/bm.apl.json",
   "start": "ui\\specs\\hunter\\dps\\apls\\bm.apl.json",
   "builds": [
    {
-    "label": "ml: Beast Mastery",
-    "talents": "542000150510025-00535500012",
+    "label": "deep: Beast Mastery (dummy)",
+    "talents": "5320001505101251-00535500011",
     "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-beast-mastery-bis.gear.json"
    },
    {
-    "label": "ml: Hybrid Beast Mastery/Marksmanship",
-    "talents": "53200005051002-005355010150003",
+    "label": "deep: Beast Mastery (raid)",
+    "talents": "5320001505101251-00532500005",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-beast-mastery-bis.gear.json"
+   },
+   {
+    "label": "deep: Hybrid Beast Mastery/Marksmanship (dummy)",
+    "talents": "522002050511022-00535500015",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-hybrid-beast-mastery-marksmanship-bis.gear.json"
+   },
+   {
+    "label": "deep: Hybrid Beast Mastery/Marksmanship (raid)",
+    "talents": "522010150510123-0053250000503",
     "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-hybrid-beast-mastery-marksmanship-bis.gear.json"
    },
    {
@@ -26,6 +36,14 @@
    {
     "label": "sim preset: Beast Mastery 35/16/0",
     "talents": "5520001505121251-0050551"
+   },
+   {
+    "label": "mm-hawk-raid",
+    "talents": "53200005051001-105355000150004"
+   },
+   {
+    "label": "beast-marks-ml-raid",
+    "talents": "53200005051001-005345000050304"
    }
   ],
   "iterations": 3000,
@@ -110,69 +128,131 @@
     "gain_seed2": 0.0049,
     "candidates": 36,
     "pass": 5
+   },
+   {
+    "round": 11,
+    "change": "only above 60% mana: if auraIsInactive: cast Intimidation",
+    "gain_seed1": 0.0022766908373001993,
+    "gain_seed2": 0.0023447128716265198,
+    "candidates": 283,
+    "pass": 7
+   },
+   {
+    "round": 12,
+    "change": "threshold 60% -> 70%: if auraIsInactive and mana % \u2265 60%: cast Intimidation",
+    "gain_seed1": 0.0028959300385773545,
+    "gain_seed2": 0.002830467500375411,
+    "candidates": 291,
+    "pass": 8
    }
   ],
   "final": {
    "dummy": {
-    "ml: Beast Mastery": {
-     "before": 433.2986405107159,
-     "after": 465.1925243622667,
-     "base": 433.2986405107159,
+    "deep: Beast Mastery (dummy)": {
+     "before": 465.6495254993427,
+     "after": 497.9354467854754,
+     "base": 465.6495254993427,
      "before_value": null,
      "after_value": null,
-     "oom_before": 17.995768366564448,
-     "oom_after": 17.995768366564448
+     "oom_before": 17.906957530060346,
+     "oom_after": 17.906957530060346
     },
-    "ml: Hybrid Beast Mastery/Marksmanship": {
-     "before": 442.300439867752,
-     "after": 472.9453909205813,
-     "base": 442.300439867752,
+    "deep: Beast Mastery (raid)": {
+     "before": 452.82969466073723,
+     "after": 488.26904194803114,
+     "base": 452.82969466073723,
      "before_value": null,
      "after_value": null,
-     "oom_before": 17.988109651491804,
-     "oom_after": 17.988109651491804
+     "oom_before": 25.721304475212,
+     "oom_after": 25.721304475212
+    },
+    "deep: Hybrid Beast Mastery/Marksmanship (dummy)": {
+     "before": 470.79807852191124,
+     "after": 494.17154905937946,
+     "base": 470.79807852191124,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 17.990307709925798,
+     "oom_after": 17.990307709925798
+    },
+    "deep: Hybrid Beast Mastery/Marksmanship (raid)": {
+     "before": 444.2636536561501,
+     "after": 479.14703524986436,
+     "base": 444.2636536561501,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 29.982042651054144,
+     "oom_after": 29.982042651054144
     },
     "beast-mastery-raid": {
-     "before": 433.2860595706661,
-     "after": 464.4799697750194,
-     "base": 433.2860595706661,
+     "before": 466.947952459508,
+     "after": 489.99262267808,
+     "base": 466.947952459508,
      "before_value": null,
      "after_value": null,
-     "oom_before": 21.87445522196054,
-     "oom_after": 21.87445522196054
+     "oom_before": 21.872731333437546,
+     "oom_after": 21.872731333437546
     },
     "sim preset: Beast Mastery 35/16/0": {
-     "before": 405.9122644489623,
-     "after": 431.7499929128115,
-     "base": 405.9122644489623,
+     "before": 439.29365972263076,
+     "after": 463.4142413359564,
+     "base": 439.29365972263076,
      "before_value": null,
      "after_value": null,
-     "oom_before": 27.727549240026,
-     "oom_after": 27.727549240026
+     "oom_before": 20.30696081018733,
+     "oom_after": 20.30696081018733
+    },
+    "mm-hawk-raid": {
+     "before": 459.4008797230927,
+     "after": 477.83111203015636,
+     "base": 459.4008797230927,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 26.484753287468607,
+     "oom_after": 26.484753287468607
+    },
+    "beast-marks-ml-raid": {
+     "before": 447.4713739339172,
+     "after": 468.0239016368608,
+     "base": 447.4713739339172,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 36.00869741997817,
+     "oom_after": 36.00869741997817
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 6
+  "passes": 9
  },
  "raid": {
   "class": "hunter",
   "spec": "bm-raid",
-  "date": "2026-10-02",
-  "commit": "40be98e",
+  "date": "2026-10-04",
+  "commit": "b0f0df3",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/hunter/dps/apls/bm.apl.json",
   "start": "ui\\specs\\hunter\\dps\\apls\\bm.apl.json",
   "builds": [
    {
-    "label": "ml: Beast Mastery",
-    "talents": "542000150510025-00535500012",
+    "label": "deep: Beast Mastery (dummy)",
+    "talents": "5320001505101251-00535500011",
     "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-beast-mastery-bis.gear.json"
    },
    {
-    "label": "ml: Hybrid Beast Mastery/Marksmanship",
-    "talents": "53200005051002-005355010150003",
+    "label": "deep: Beast Mastery (raid)",
+    "talents": "5320001505101251-00532500005",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-beast-mastery-bis.gear.json"
+   },
+   {
+    "label": "deep: Hybrid Beast Mastery/Marksmanship (dummy)",
+    "talents": "522002050511022-00535500015",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-hybrid-beast-mastery-marksmanship-bis.gear.json"
+   },
+   {
+    "label": "deep: Hybrid Beast Mastery/Marksmanship (raid)",
+    "talents": "522010150510123-0053250000503",
     "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-hybrid-beast-mastery-marksmanship-bis.gear.json"
    },
    {
@@ -182,6 +262,14 @@
    {
     "label": "sim preset: Beast Mastery 35/16/0",
     "talents": "5520001505121251-0050551"
+   },
+   {
+    "label": "mm-hawk-raid",
+    "talents": "53200005051001-105355000150004"
+   },
+   {
+    "label": "beast-marks-ml-raid",
+    "talents": "53200005051001-005345000050304"
    }
   ],
   "iterations": 3000,
@@ -250,41 +338,93 @@
     "gain_seed2": 0.0018200417126905677,
     "candidates": 312,
     "pass": 5
+   },
+   {
+    "round": 9,
+    "change": "insert at the top: if time to the next auto attack > 1s: cast Summon Hawk + insert in the middle: if time to the next auto attack > 0.5s and mana % \u2265 30%: cast Arcane Shot",
+    "gain_seed1": 0.007952961157894345,
+    "gain_seed2": 0.008029007041421066,
+    "candidates": 310,
+    "pass": 6
+   },
+   {
+    "round": 10,
+    "change": "only with 10s or more of the fight left: if time to the next auto attack > 1s: cast Summon Hawk",
+    "gain_seed1": 0.0015903290438603612,
+    "gain_seed2": 0.0016321678481172608,
+    "candidates": 350,
+    "pass": 6
    }
   ],
   "final": {
    "raid": {
-    "ml: Beast Mastery": {
-     "before": 761.7159151731403,
-     "after": 786.5077135722704,
-     "base": 761.7159151731403,
+    "deep: Beast Mastery (dummy)": {
+     "before": 835.4614587892916,
+     "after": 864.9993956937811,
+     "base": 835.4614587892916,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
-    "ml: Hybrid Beast Mastery/Marksmanship": {
-     "before": 782.4330130255446,
-     "after": 807.5178313994088,
-     "base": 782.4330130255446,
+    "deep: Beast Mastery (raid)": {
+     "before": 859.2805882124885,
+     "after": 889.1310284768044,
+     "base": 859.2805882124885,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "deep: Hybrid Beast Mastery/Marksmanship (dummy)": {
+     "before": 831.8407003374039,
+     "after": 861.3938196689501,
+     "base": 831.8407003374039,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "deep: Hybrid Beast Mastery/Marksmanship (raid)": {
+     "before": 843.9551282496572,
+     "after": 876.4021997023419,
+     "base": 843.9551282496572,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "beast-mastery-raid": {
-     "before": 767.5916855032185,
-     "after": 792.7800896479359,
-     "base": 767.5916855032185,
+     "before": 825.8672156785971,
+     "after": 855.1464608817811,
+     "base": 825.8672156785971,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Beast Mastery 35/16/0": {
-     "before": 740.7629277510441,
-     "after": 762.7529259908606,
-     "base": 740.7629277510441,
+     "before": 803.2744017013957,
+     "after": 832.4646819742698,
+     "base": 803.2744017013957,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "mm-hawk-raid": {
+     "before": 824.5934985141567,
+     "after": 855.3397025975747,
+     "base": 824.5934985141567,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "beast-marks-ml-raid": {
+     "before": 836.0759275871038,
+     "after": 866.3470925165682,
+     "base": 836.0759275871038,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -293,6 +433,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 5
+  "passes": 8
  }
 }
