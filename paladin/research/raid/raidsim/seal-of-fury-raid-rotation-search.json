@@ -2,13 +2,17 @@
  "dummy": {
   "class": "paladin",
   "spec": "seal-of-fury-raid",
-  "date": "2026-09-29",
-  "commit": "40be98e",
+  "date": "2026-10-05",
+  "commit": "b0f0df3",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/apls/paladin/seal-of-fury-raid.base.apl.json",
-  "start": "_reference/data/raidsim/apls/paladin/seal-of-fury-raid.base.apl.json",
+  "start": "_reference\\data\\raidsim\\apls\\paladin\\seal-of-fury-raid.apl.json",
   "builds": [
+   {
+    "label": "open winner",
+    "talents": "35003-413-41205331001330321"
+   },
    {
     "label": "ret-raid-dps",
     "talents": "550030030001--05225331001330321"
@@ -16,31 +20,87 @@
   ],
   "iterations": 3000,
   "confirm": 20000,
-  "changes": [],
+  "changes": [
+   {
+    "round": 1,
+    "change": "insert at the top: if mana % \u2265 70%: cast Consecration",
+    "gain_seed1": 0.05769003699911801,
+    "gain_seed2": 0.059165274774539256,
+    "candidates": 236,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "threshold 70% -> 50%: if mana % \u2265 70%: cast Consecration",
+    "gain_seed1": 0.010939850280566876,
+    "gain_seed2": 0.010904209964973433,
+    "candidates": 253,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "threshold 50% -> 40%: if mana % \u2265 50%: cast Consecration",
+    "gain_seed1": 0.003600939156638283,
+    "gain_seed2": 0.0035978023297524864,
+    "candidates": 257,
+    "pass": 1
+   },
+   {
+    "round": 4,
+    "change": "threshold 40% -> 35%: if mana % \u2265 40%: cast Consecration",
+    "gain_seed1": 0.0018235578870271496,
+    "gain_seed2": 0.001825337497213697,
+    "candidates": 257,
+    "pass": 1
+   },
+   {
+    "round": 5,
+    "change": "threshold 35% -> 40%: if mana % \u2265 35%: cast Consecration",
+    "gain_seed1": 0.004570345968408773,
+    "gain_seed2": 0.004434721603153946,
+    "candidates": 257,
+    "pass": 2
+   }
+  ],
   "final": {
    "dummy": {
+    "open winner": {
+     "before": 371.0539587649737,
+     "after": 390.738003170769,
+     "base": 371.0539587649737,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 4.899999999999852,
+     "oom_after": 1.2391440168933499
+    },
     "ret-raid-dps": {
-     "before": 284.9627852651852,
-     "after": 284.9627852651852,
-     "base": 284.9627852651852,
+     "before": 359.1179140165256,
+     "after": 391.98941410227434,
+     "base": 359.1179140165256,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     }
    }
-  }
+  },
+  "first_date": "2026-10-05",
+  "passes": 2
  },
  "raid": {
   "class": "paladin",
   "spec": "seal-of-fury-raid",
-  "date": "2026-09-29",
-  "commit": "40be98e",
+  "date": "2026-10-05",
+  "commit": "b0f0df3",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/apls/paladin/seal-of-fury-raid.base.apl.json",
-  "start": "_reference/data/raidsim/apls/paladin/seal-of-fury-raid.base.apl.json",
+  "start": "_reference\\data\\raidsim\\apls\\paladin\\seal-of-fury-raid-raid.apl.json",
   "builds": [
+   {
+    "label": "open winner",
+    "talents": "35003-413-41205331001330321"
+   },
    {
     "label": "ret-raid-dps",
     "talents": "550030030001--05225331001330321"
@@ -48,19 +108,159 @@
   ],
   "iterations": 3000,
   "confirm": 20000,
-  "changes": [],
+  "changes": [
+   {
+    "round": 1,
+    "change": "insert at the top: cast Consecration",
+    "gain_seed1": 0.06020568132710635,
+    "gain_seed2": 0.061543139920895884,
+    "candidates": 232,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "insert at the end: if time left on Seal of Righteousness \u2264 1s: cast Seal of Righteousness",
+    "gain_seed1": 0.15018218837373887,
+    "gain_seed2": 0.14980119890089982,
+    "candidates": 246,
+    "pass": 2
+   },
+   {
+    "round": 3,
+    "change": "only above 25% mana: if time left on Seal of Fury \u2264 2s: cast Seal of Fury",
+    "gain_seed1": 0.019732021101291464,
+    "gain_seed2": 0.01933401750068886,
+    "candidates": 271,
+    "pass": 2
+   },
+   {
+    "round": 4,
+    "change": "move to the top: cast Holy Strike",
+    "gain_seed1": 0.004825687677275425,
+    "gain_seed2": 0.00603991496462708,
+    "candidates": 279,
+    "pass": 2
+   },
+   {
+    "round": 5,
+    "change": "move down below 'cast Consecration': cast Holy Strike",
+    "gain_seed1": 0.013421654810612749,
+    "gain_seed2": 0.01449172087092876,
+    "candidates": 279,
+    "pass": 2
+   },
+   {
+    "round": 6,
+    "change": "only with 10s or more of the fight left: if time left on Seal of Fury \u2264 2s and mana % \u2265 25%: cast Seal of Fury",
+    "gain_seed1": 0.002373894825180578,
+    "gain_seed2": 0.0024457501468688747,
+    "candidates": 279,
+    "pass": 2
+   },
+   {
+    "round": 7,
+    "change": "insert at the top: if Seal of Righteousness is up: cast Judgement",
+    "gain_seed1": 0.0016748936142216841,
+    "gain_seed2": 0.0021976285436391407,
+    "candidates": 289,
+    "pass": 2
+   },
+   {
+    "round": 8,
+    "change": "insert in the middle: if mana % \u2265 15% and time to the next auto attack < 0.4s and Seal of Righteousness is up: cast Seal of Command",
+    "gain_seed1": 0.004016849573156289,
+    "gain_seed2": 0.0033635693994060745,
+    "candidates": 297,
+    "pass": 2
+   },
+   {
+    "round": 9,
+    "change": "drop: if time left on Seal of Fury \u2264 2s and mana % \u2265 25% and time left in the fight \u2265 10s: cast Seal of Fury",
+    "gain_seed1": 0.010312984918212642,
+    "gain_seed2": 0.009340293180904125,
+    "candidates": 332,
+    "pass": 2
+   },
+   {
+    "round": 10,
+    "change": "drop 'time to the next auto attack < 0.4s' from the condition: if mana % \u2265 15% and time to the next auto attack < 0.4s and Seal of Righteousness is up: cast Seal of Command",
+    "gain_seed1": 0.019411505758385905,
+    "gain_seed2": 0.01940683317558678,
+    "candidates": 284,
+    "pass": 2
+   },
+   {
+    "round": 11,
+    "change": "insert at the top: if mana % \u2265 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness",
+    "gain_seed1": 0.014014232204203836,
+    "gain_seed2": 0.011995517132677325,
+    "candidates": 280,
+    "pass": 2
+   },
+   {
+    "round": 12,
+    "change": "only above 25% mana: cast Consecration",
+    "gain_seed1": 0.00824339274870578,
+    "gain_seed2": 0.008558622153950646,
+    "candidates": 315,
+    "pass": 2
+   },
+   {
+    "round": 13,
+    "change": "move to the top: cast Hammer of Wrath",
+    "gain_seed1": 0.006941095237204875,
+    "gain_seed2": 0.006592867544578995,
+    "candidates": 326,
+    "pass": 2
+   },
+   {
+    "round": 14,
+    "change": "drop 'Seal of Command is up' from the condition: if mana % \u2265 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness",
+    "gain_seed1": 0.004720441094565597,
+    "gain_seed2": 0.006186228668681348,
+    "candidates": 326,
+    "pass": 2
+   },
+   {
+    "round": 15,
+    "change": "rank 7 below 50% mana, above: if mana % \u2265 15% and time to the next auto attack < 0.4s: cast Seal of Righteousness",
+    "gain_seed1": 0.004482758833499023,
+    "gain_seed2": 0.003482465984730343,
+    "candidates": 329,
+    "pass": 2
+   },
+   {
+    "round": 16,
+    "change": "rank 2 below 30% mana, above: if mana % \u2265 15% and Seal of Righteousness is up: cast Seal of Command + only with 20s or more of the fight left: if Judgement can be cast: cast Judgement",
+    "gain_seed1": 0.0014368105153415023,
+    "gain_seed2": 0.0016443767063791803,
+    "candidates": 374,
+    "pass": 2
+   }
+  ],
   "final": {
    "raid": {
+    "open winner": {
+     "before": 656.9903849756511,
+     "after": 885.5007605791607,
+     "base": 656.9903849756511,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0.5356613485160493
+    },
     "ret-raid-dps": {
-     "before": 580.6520172388064,
-     "after": 580.6520172388064,
-     "base": 580.6520172388064,
+     "before": 634.7818567007154,
+     "after": 879.8463091073244,
+     "base": 634.7818567007154,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     }
    }
-  }
+  },
+  "first_date": "2026-10-05",
+  "passes": 2
  }
 }

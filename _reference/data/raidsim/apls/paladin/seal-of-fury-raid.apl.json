@@ -20,6 +20,30 @@
  "priorityList": [
   {
    "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "currentManaPercent": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "40%"
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 20924,
+      "rank": 5
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-05: changed or added by the rotation search (see seal-of-fury-raid-rotation-search.json)"
+  },
+  {
+   "action": {
     "autocastOtherCooldowns": {}
    }
   },

@@ -544,6 +544,14 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   search runs again; a 30,000-fight race against the entry's builds; talent values of the winner and our best build (removal, 12,000
   fights: DPS lost, per point, share) plus the search model's importances. Records `raidsim/families/<class>.json`, reports
   `research/raid/family-search.md` and `_reference/family-search.md`. A winner in a family no ML record covers is a lead for deep_opt.py.
+- **Running the open searches** (2026-10-05, user request: pause and resume at will): `bash _reference/data/run_open_searches.sh
+  [classes]` runs family_search.py then fl_open_search.py per class (default order hunter, mage, paladin, warrior, rogue, druid, shaman,
+  warlock, priest). Stop it any time; the same command resumes (both tools skip the rotations their records mark done; only the rotation
+  that was running starts over). Logs in `_reference/data/deep-runs/` (git-ignored). 2026-10-05 fixes after the first pass: random builds
+  in an any-split search come half from anywhere on the split simplex (not only within 6 points of the starts), and both searches seed
+  every pair of keystones (one-rank talents above tier 2) from different trees (`Space.keystone_starts`; the hunter's 16/11/24 Summon
+  Hawk + Lone Wolf build, 1118 against 1040 DPS on b0f0df3, was out of reach before); a start holding a talent the trees no longer have
+  is skipped. First-pass records are archived in `families/v1/` and `fightlab/open/v1/`.
 - **Open leveling search** (2026-10-04, user request: the leveling builds have the raid search's blind spot): `fightlab/fl_open_search.py
   <class>`: per leveling rotation (derive_leveling.LEVEL), the ML search over every legal build (any split) scored on kills per hour at
   level 60 in the fight lab (green gear; builds in parallel processes, common random numbers), the scorer's leveling order for the winner,

@@ -130,6 +130,8 @@ def main():
     starts = [FT.flat_of(b) for b in data.values()] + MLT.popular_allocs(cls)
     starts = [x for x in starts if space.valid(x)]
     space.start_splits = [space.split(x) for x in starts]
+    import random
+    starts = starts + space.keystone_starts(random.Random(83))   # every pair of keystones from different trees
     with multiprocessing.Pool(a.jobs, initializer=FT._init, initargs=("greens",)) as pool:
         for spec, (model, trees) in rotations(cls).items():
             if a.rotation and spec not in a.rotation:

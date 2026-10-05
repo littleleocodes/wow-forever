@@ -20,31 +20,10 @@
  "priorityList": [
   {
    "action": {
-    "autocastOtherCooldowns": {}
-   }
-  },
-  {
-   "action": {
-    "condition": {
-     "cmp": {
-      "op": "OpLe",
-      "lhs": {
-       "auraRemainingTime": {
-        "auraId": {
-         "spellId": 20423
-        }
-       }
-      },
-      "rhs": {
-       "const": {
-        "val": "2s"
-       }
-      }
-     }
-    },
     "castSpell": {
      "spellId": {
-      "spellId": 20423
+      "spellId": 24239,
+      "rank": 3
      }
     }
    }
@@ -52,9 +31,113 @@
   {
    "action": {
     "condition": {
-     "spellCanCast": {
-      "spellId": {
-       "spellId": 20271
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "15%"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpLt",
+         "lhs": {
+          "autoTimeToNext": {
+           "autoType": "MeleeAuto"
+          }
+         },
+         "rhs": {
+          "const": {
+           "val": "0.4s"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpLt",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "50%"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 20292,
+      "rank": 7
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-05: changed or added by the rotation search (see seal-of-fury-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "15%"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpLt",
+         "lhs": {
+          "autoTimeToNext": {
+           "autoType": "MeleeAuto"
+          }
+         },
+         "rhs": {
+          "const": {
+           "val": "0.4s"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 20293,
+      "rank": 8
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-05: changed or added by the rotation search (see seal-of-fury-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "auraIsActive": {
+      "auraId": {
+       "spellId": 20293,
+       "rank": 8
       }
      }
     },
@@ -63,17 +146,32 @@
       "spellId": 20271
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-05: changed or added by the rotation search (see seal-of-fury-raid-rotation-search.json)"
   },
   {
    "action": {
     "castSpell": {
      "spellId": {
-      "spellId": 24239,
-      "rank": 3
+      "spellId": 20924,
+      "rank": 5
+     }
+    },
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "currentManaPercent": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "25%"
+       }
+      }
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-05: changed or added by the rotation search (see seal-of-fury-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -87,6 +185,136 @@
   },
   {
    "action": {
+    "autocastOtherCooldowns": {}
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "15%"
+          }
+         }
+        }
+       },
+       {
+        "auraIsActive": {
+         "auraId": {
+          "spellId": 20293,
+          "rank": 8
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpLt",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "30%"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 20915,
+      "rank": 2
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-05: changed or added by the rotation search (see seal-of-fury-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "15%"
+          }
+         }
+        }
+       },
+       {
+        "auraIsActive": {
+         "auraId": {
+          "spellId": 20293,
+          "rank": 8
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 20920,
+      "rank": 5
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-05: changed or added by the rotation search (see seal-of-fury-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "spellCanCast": {
+         "spellId": {
+          "spellId": 20271
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "20s"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 20271
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-05: changed or added by the rotation search (see seal-of-fury-raid-rotation-search.json)"
+  },
+  {
+   "action": {
     "castSpell": {
      "spellId": {
       "spellId": 26573,
@@ -94,6 +322,35 @@
      }
     }
    }
+  },
+  {
+   "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpLe",
+      "lhs": {
+       "auraRemainingTime": {
+        "auraId": {
+         "spellId": 20293,
+         "rank": 8
+        }
+       }
+      },
+      "rhs": {
+       "const": {
+        "val": "1s"
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 20293,
+      "rank": 8
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-05: changed or added by the rotation search (see seal-of-fury-raid-rotation-search.json)"
   }
  ]
 }

@@ -20,6 +20,16 @@
  "priorityList": [
   {
    "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 24239,
+      "rank": 3
+     }
+    }
+   }
+  },
+  {
+   "action": {
     "autocastOtherCooldowns": {}
    }
   },
@@ -88,6 +98,19 @@
           }
          }
         }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "10s"
+          }
+         }
+        }
        }
       ]
      }
@@ -98,26 +121,35 @@
       "rank": 5
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-05: changed or added by the rotation search (see shockadin-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 20924,
+      "rank": 5
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-05: changed or added by the rotation search (see shockadin-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "itemId": 12662
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-05: changed or added by the rotation search (see shockadin-raid-rotation-search.json)"
   },
   {
    "action": {
     "condition": {
      "and": {
       "vals": [
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "currentManaPercent": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "15%"
-          }
-         }
-        }
-       },
        {
         "cmp": {
          "op": "OpLt",
@@ -128,7 +160,7 @@
          },
          "rhs": {
           "const": {
-           "val": "0.9s"
+           "val": "0.675s"
           }
          }
         }
@@ -146,11 +178,12 @@
     },
     "castSpell": {
      "spellId": {
-      "spellId": 20293,
-      "rank": 8
+      "spellId": 20292,
+      "rank": 7
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-05: changed or added by the rotation search (see shockadin-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -221,21 +254,52 @@
    "action": {
     "castSpell": {
      "spellId": {
-      "spellId": 24239,
-      "rank": 3
+      "spellId": 10333,
+      "rank": 8
      }
     }
    }
   },
   {
    "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "not": {
+         "val": {
+          "auraIsActive": {
+           "auraId": {
+            "spellId": 20920,
+            "rank": 5
+           }
+          }
+         }
+        }
+       },
+       {
+        "not": {
+         "val": {
+          "auraIsActive": {
+           "auraId": {
+            "spellId": 20293,
+            "rank": 8
+           }
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
     "castSpell": {
      "spellId": {
-      "spellId": 10333,
+      "spellId": 20293,
       "rank": 8
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-05: changed or added by the rotation search (see shockadin-raid-rotation-search.json)"
   },
   {
    "action": {

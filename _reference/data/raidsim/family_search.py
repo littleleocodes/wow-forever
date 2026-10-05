@@ -85,6 +85,10 @@ def run_search(cls, entry, repo, settings, starts, seed, protect=None):
     starts = [s for s in starts if s and space.valid(s)]
     space.protect = set(protect) if protect is not None else MLT.protected(cls, [entry], repo, "raid", starts)
     space.start_splits = [space.split(s) for s in starts]
+    import random
+    seeds = space.keystone_starts(random.Random(seed))   # every pair of keystones from different trees (Summon Hawk + Lone Wolf ...)
+    starts = starts + seeds
+    log(f"== {cls} {entry}: {len(seeds)} keystone seeds ({len(space.keystones())} keystones)")
     log(f"== {cls} {entry}: open search (any split, full raid), {len(starts)} valid starts; kept: {', '.join(sorted(space.protect)) or 'none'}")
     a = MLT.defaults(**settings, seed=seed)
     sim = MLT.Sim(cls, entry, "raid", None, repo, f"family-{cls}-{entry}")

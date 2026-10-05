@@ -104,7 +104,7 @@ class Space:
         """Rank caps, tier gating and prerequisites (any total)."""
         rows = {}
         for n, r in flat.items():
-            if r < 0 or r > self.max[n]:
+            if n not in self.max or r < 0 or r > self.max[n]:   # a talent the current trees no longer have (a start from older trees)
                 return False
             if r:
                 k = (self.tree_of[n], self.row[n])
@@ -168,8 +168,12 @@ class Space:
         T = self.tree_names
         for _ in range(50):
             if self.any:
-                base = dict(zip(T, (int(x) for x in rng.choice(self.start_splits).split("/")))) if self.start_splits else {t: 17 for t in T}
-                sp = {t: max(0, base[t] + rng.randint(-6, 6)) for t in T}
+                if self.start_splits and rng.random() < 0.5:
+                    base = dict(zip(T, (int(x) for x in rng.choice(self.start_splits).split("/"))))
+                    sp = {t: max(0, base[t] + rng.randint(-6, 6)) for t in T}
+                else:   # anywhere on the simplex (2026-10-05: drawing near the starts only never reached the 16/11/24 hunter)
+                    cuts = sorted(rng.randint(0, TOTAL) for _ in range(len(T) - 1))
+                    sp = dict(zip(T, [b - a for a, b in zip([0] + cuts, cuts + [TOTAL])]))
                 d = TOTAL - sum(sp.values())
                 big = max(T, key=lambda t: sp[t])
                 sp[big] += d
@@ -229,6 +233,27 @@ class Space:
                 if self.valid(flat):
                     return flat
         return None
+
+    def keystones(self):
+        """One-rank talents above the first two tiers: the trees' signature picks (Summon Hawk, Lone Wolf, Mortal Strike ...)."""
+        return [n for n in self.names if self.max[n] == 1 and self.row[n] >= 2]
+
+    def keystone_starts(self, rng, per_pair=3):
+        """Random legal builds holding each pair of keystones from different trees: an open search's seeds for combinations no build
+        of ours holds (2026-10-05: the 16/11/24 Summon Hawk + Lone Wolf hunter, 7.5% ahead, was never reached from our builds)."""
+        out, keep = [], self.protect
+        ks = self.keystones()
+        for i, a in enumerate(ks):
+            for b in ks[i + 1:]:
+                if self.tree_of[a] == self.tree_of[b]:
+                    continue
+                self.protect = set(keep) | {a, b}
+                for _ in range(per_pair):
+                    x = self.random_build(rng)
+                    if x:
+                        out.append(x)
+        self.protect = keep
+        return out
 
     # -- moves
     def mutate(self, rng, flat, n_moves):

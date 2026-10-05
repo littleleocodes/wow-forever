@@ -2,7 +2,7 @@
  "dummy": {
   "class": "hunter",
   "spec": "mm-raid",
-  "date": "2026-10-04",
+  "date": "2026-10-05",
   "commit": "b0f0df3",
   "setting": "dummy",
   "tank": false,
@@ -102,7 +102,7 @@
      "base": 393.0696765203204,
      "before_value": null,
      "after_value": null,
-     "oom_before": 94.62342785319564,
+     "oom_before": 95.0325108252176,
      "oom_after": 95.0325108252176
     },
     "bm-mm-raid": {
@@ -111,7 +111,7 @@
      "base": 403.7912566958429,
      "before_value": null,
      "after_value": null,
-     "oom_before": 70.56212979668787,
+     "oom_before": 70.97837092619845,
      "oom_after": 70.97837092619845
     },
     "sim preset: Beast Mastery 35/16/0": {
@@ -120,7 +120,7 @@
      "base": 376.1978881618124,
      "before_value": null,
      "after_value": null,
-     "oom_before": 85.63630274656194,
+     "oom_before": 85.51793296397986,
      "oom_after": 85.51793296397986
     },
     "bm-mm-full-buffs-raid": {
@@ -129,18 +129,18 @@
      "base": 401.09123358739873,
      "before_value": null,
      "after_value": null,
-     "oom_before": 79.18536187631156,
+     "oom_before": 78.372941193868,
      "oom_after": 78.372941193868
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 6
+  "passes": 7
  },
  "raid": {
   "class": "hunter",
   "spec": "mm-raid",
-  "date": "2026-10-04",
+  "date": "2026-10-05",
   "commit": "b0f0df3",
   "setting": "raid",
   "tank": false,
@@ -273,6 +273,6 @@
    }
   },
   "first_date": "2026-09-27",
-  "passes": 6
+  "passes": 7
  }
 }

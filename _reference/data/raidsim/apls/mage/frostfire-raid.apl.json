@@ -3,6 +3,65 @@
  "priorityList": [
   {
    "action": {
+    "condition": {
+     "or": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpLt",
+         "lhs": {
+          "auraNumStacks": {
+           "auraId": {
+            "spellId": 22959
+           }
+          }
+         },
+         "rhs": {
+          "const": {
+           "val": "5"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpLe",
+         "lhs": {
+          "auraRemainingTime": {
+           "auraId": {
+            "spellId": 22959
+           }
+          }
+         },
+         "rhs": {
+          "const": {
+           "val": "5s"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 10207
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-05: changed or added by the rotation search (see frostfire-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 10199
+     }
+    }
+   }
+  },
+  {
+   "action": {
     "castSpell": {
      "spellId": {
       "spellId": 20554
@@ -259,6 +318,19 @@
           }
          }
         }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "25%"
+          }
+         }
+        }
        }
       ]
      }
@@ -269,16 +341,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see frostfire-raid-rotation-search.json)"
-  },
-  {
-   "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 10199
-     }
-    }
-   }
+   "notes": "apl_opt 2026-10-05: changed or added by the rotation search (see frostfire-raid-rotation-search.json)"
   },
   {
    "action": {
