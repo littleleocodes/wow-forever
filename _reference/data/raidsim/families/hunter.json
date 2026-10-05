@@ -12,16 +12,12 @@
         5
        ],
        [
-        "Endurance Training",
-        3
-       ],
-       [
         "Focused Fire",
         2
        ],
        [
-        "Bestial Swiftness",
-        1
+        "Improved Aspect of the Monkey",
+        3
        ],
        [
         "Unleashed Fury",
@@ -29,27 +25,11 @@
        ],
        [
         "Ferocity",
-        5
+        3
        ],
        [
         "Summon Hawk",
         1
-       ],
-       [
-        "Intimidation",
-        1
-       ],
-       [
-        "Bestial Discipline",
-        2
-       ],
-       [
-        "Frenzy",
-        5
-       ],
-       [
-        "Bestial Wrath",
-        1
        ]
       ],
       "Marksmanship": [
@@ -63,497 +43,7 @@
        ],
        [
         "Efficiency",
-        2
-       ],
-       [
-        "Careful Aim",
-        5
-       ],
-       [
-        "Trueshot Aura",
-        1
-       ],
-       [
-        "Mortal Shots",
-        4
-       ]
-      ],
-      "Survival": []
-     },
-     "split": "31/20/0",
-     "dps": 862.99,
-     "se": 0.0733,
-     "iterations": 100000
-    },
-    "family": "Beast Mastery",
-    "runs_agree": 3,
-    "important_features": [
-     {
-      "feature": "Mortal Shots",
-      "importance": 0.3527
-     },
-     {
-      "feature": "Survival points",
-      "importance": 0.2365
-     },
-     {
-      "feature": "Frenzy",
-      "importance": 0.1285
-     },
-     {
-      "feature": "Ferocity",
-      "importance": 0.0641
-     },
-     {
-      "feature": "Careful Aim",
-      "importance": 0.0517
-     },
-     {
-      "feature": "Deflection",
-      "importance": 0.0242
-     },
-     {
-      "feature": "Beast Mastery points",
-      "importance": 0.0183
-     },
-     {
-      "feature": "Marksmanship points",
-      "importance": 0.0146
-     },
-     {
-      "feature": "Summon Hawk",
-      "importance": 0.0107
-     },
-     {
-      "feature": "Bestial Discipline",
-      "importance": 0.0107
-     },
-     {
-      "feature": "Improved Tracking",
-      "importance": 0.0089
-     },
-     {
-      "feature": "Improved Concussive Shot",
-      "importance": 0.0078
-     }
-    ],
-    "simulated_builds": 9747,
-    "protected": []
-   },
-   "race_first": {
-    "open winner": {
-     "dps": 862.9,
-     "se": 0.13
-    },
-    "bm-mm-raid": {
-     "dps": 838.4,
-     "se": 0.14
-    },
-    "bm-mm-full-buffs-raid": {
-     "dps": 795.3,
-     "se": 0.15
-    },
-    "opt-mm-raid-raid-dps": {
-     "dps": 838.4,
-     "se": 0.14
-    }
-   },
-   "rotation_changed": true,
-   "again": {
-    "winner": {
-     "allocation": {
-      "Beast Mastery": [
-       [
-        "Deadly Aspects",
-        5
-       ],
-       [
-        "Endurance Training",
         3
-       ],
-       [
-        "Focused Fire",
-        2
-       ],
-       [
-        "Bestial Swiftness",
-        1
-       ],
-       [
-        "Unleashed Fury",
-        5
-       ],
-       [
-        "Ferocity",
-        5
-       ],
-       [
-        "Summon Hawk",
-        1
-       ],
-       [
-        "Intimidation",
-        1
-       ],
-       [
-        "Bestial Discipline",
-        2
-       ],
-       [
-        "Frenzy",
-        5
-       ],
-       [
-        "Bestial Wrath",
-        1
-       ]
-      ],
-      "Marksmanship": [
-       [
-        "Lethal Attacks",
-        5
-       ],
-       [
-        "Improved Stings",
-        3
-       ],
-       [
-        "Efficiency",
-        2
-       ],
-       [
-        "Careful Aim",
-        5
-       ],
-       [
-        "Trueshot Aura",
-        1
-       ],
-       [
-        "Mortal Shots",
-        4
-       ]
-      ],
-      "Survival": []
-     },
-     "split": "31/20/0",
-     "dps": 862.99,
-     "se": 0.0733,
-     "iterations": 100000
-    },
-    "family": "Beast Mastery",
-    "runs_agree": 2,
-    "important_features": [
-     {
-      "feature": "Mortal Shots",
-      "importance": 0.2859
-     },
-     {
-      "feature": "Survival points",
-      "importance": 0.1932
-     },
-     {
-      "feature": "Frenzy",
-      "importance": 0.1248
-     },
-     {
-      "feature": "Deflection",
-      "importance": 0.0724
-     },
-     {
-      "feature": "Careful Aim",
-      "importance": 0.0431
-     },
-     {
-      "feature": "Marksmanship points",
-      "importance": 0.0312
-     },
-     {
-      "feature": "Improved Concussive Shot",
-      "importance": 0.025
-     },
-     {
-      "feature": "Entrapment",
-      "importance": 0.0247
-     },
-     {
-      "feature": "Summon Hawk",
-      "importance": 0.023
-     },
-     {
-      "feature": "Ferocity",
-      "importance": 0.0215
-     },
-     {
-      "feature": "Savage Strikes",
-      "importance": 0.0175
-     },
-     {
-      "feature": "Improved Tracking",
-      "importance": 0.0147
-     }
-    ],
-    "simulated_builds": 4539
-   },
-   "race": {
-    "open winner": {
-     "dps": 862.9,
-     "se": 0.13
-    },
-    "bm-mm-raid": {
-     "dps": 838.4,
-     "se": 0.14
-    },
-    "bm-mm-full-buffs-raid": {
-     "dps": 795.3,
-     "se": 0.15
-    },
-    "opt-mm-raid-raid-dps": {
-     "dps": 838.4,
-     "se": 0.14
-    }
-   },
-   "values": {
-    "Summon Hawk": {
-     "ranks": 1,
-     "lost": 55.7,
-     "per_point": 55.7,
-     "share": 0.0646
-    },
-    "Unleashed Fury": {
-     "ranks": 5,
-     "lost": 40.2,
-     "per_point": 8.0,
-     "share": 0.0466
-    },
-    "Lethal Attacks": {
-     "ranks": 5,
-     "lost": 39.4,
-     "per_point": 7.9,
-     "share": 0.0457
-    },
-    "Deadly Aspects": {
-     "ranks": 5,
-     "lost": 39.2,
-     "per_point": 7.8,
-     "share": 0.0454
-    },
-    "Careful Aim": {
-     "ranks": 5,
-     "lost": 39.0,
-     "per_point": 7.8,
-     "share": 0.0452
-    },
-    "Frenzy": {
-     "ranks": 5,
-     "lost": 30.7,
-     "per_point": 6.1,
-     "share": 0.0356
-    },
-    "Ferocity": {
-     "ranks": 5,
-     "lost": 27.5,
-     "per_point": 5.5,
-     "share": 0.0318
-    },
-    "Mortal Shots": {
-     "ranks": 4,
-     "lost": 23.5,
-     "per_point": 5.9,
-     "share": 0.0272
-    },
-    "Bestial Discipline": {
-     "ranks": 2,
-     "lost": 20.4,
-     "per_point": 10.2,
-     "share": 0.0236
-    },
-    "Improved Stings": {
-     "ranks": 3,
-     "lost": 17.9,
-     "per_point": 6.0,
-     "share": 0.0208
-    },
-    "Focused Fire": {
-     "ranks": 2,
-     "lost": 16.4,
-     "per_point": 8.2,
-     "share": 0.019
-    },
-    "Trueshot Aura": {
-     "ranks": 1,
-     "lost": 14.4,
-     "per_point": 14.4,
-     "share": 0.0167
-    },
-    "Bestial Wrath": {
-     "ranks": 1,
-     "lost": 12.9,
-     "per_point": 12.9,
-     "share": 0.015
-    },
-    "Efficiency": {
-     "ranks": 2,
-     "lost": 7.3,
-     "per_point": 3.6,
-     "share": 0.0084
-    },
-    "Intimidation": {
-     "ranks": 1,
-     "lost": 1.0,
-     "per_point": 1.0,
-     "share": 0.0012
-    },
-    "Endurance Training": {
-     "ranks": 3,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    },
-    "Bestial Swiftness": {
-     "ranks": 1,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    }
-   },
-   "values_base": 863.3,
-   "values_ours": {
-    "Deadly Aspects": {
-     "ranks": 5,
-     "lost": 43.2,
-     "per_point": 8.6,
-     "share": 0.0515
-    },
-    "Summon Hawk": {
-     "ranks": 1,
-     "lost": 42.8,
-     "per_point": 42.8,
-     "share": 0.051
-    },
-    "Careful Aim": {
-     "ranks": 5,
-     "lost": 39.5,
-     "per_point": 7.9,
-     "share": 0.0471
-    },
-    "Lethal Attacks": {
-     "ranks": 5,
-     "lost": 39.3,
-     "per_point": 7.9,
-     "share": 0.0468
-    },
-    "Unleashed Fury": {
-     "ranks": 5,
-     "lost": 34.2,
-     "per_point": 6.8,
-     "share": 0.0408
-    },
-    "Mortal Shots": {
-     "ranks": 5,
-     "lost": 30.3,
-     "per_point": 6.1,
-     "share": 0.0361
-    },
-    "Improved Stings": {
-     "ranks": 3,
-     "lost": 18.4,
-     "per_point": 6.1,
-     "share": 0.0219
-    },
-    "Ferocity": {
-     "ranks": 4,
-     "lost": 18.2,
-     "per_point": 4.5,
-     "share": 0.0217
-    },
-    "Ranged Weapon Specialization": {
-     "ranks": 4,
-     "lost": 17.0,
-     "per_point": 4.3,
-     "share": 0.0203
-    },
-    "Focused Fire": {
-     "ranks": 2,
-     "lost": 16.0,
-     "per_point": 8.0,
-     "share": 0.0191
-    },
-    "Trueshot Aura": {
-     "ranks": 1,
-     "lost": 14.6,
-     "per_point": 14.6,
-     "share": 0.0174
-    },
-    "Bestial Discipline": {
-     "ranks": 2,
-     "lost": 6.3,
-     "per_point": 3.1,
-     "share": 0.0075
-    },
-    "Efficiency": {
-     "ranks": 5,
-     "lost": 1.0,
-     "per_point": 0.2,
-     "share": 0.0011
-    },
-    "Improved Arcane Shot": {
-     "ranks": 1,
-     "lost": 0.1,
-     "per_point": 0.1,
-     "share": 0.0001
-    },
-    "Endurance Training": {
-     "ranks": 3,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    }
-   },
-   "values_ours_base": 838.8,
-   "ours_best": "bm-mm-raid",
-   "family": "Beast Mastery",
-   "split": "31/20/0",
-   "dps": 862.9,
-   "link": "https://talentsforever.com/hunter/60/5320001505101251-00532500014--4",
-   "gap_vs_ours": 0.0292,
-   "minutes": 40.6,
-   "done": true
-  },
-  "mm-lonewolf-raid": {
-   "first": {
-    "winner": {
-     "allocation": {
-      "Beast Mastery": [
-       [
-        "Deadly Aspects",
-        5
-       ],
-       [
-        "Endurance Training",
-        1
-       ],
-       [
-        "Improved Revive Pet",
-        1
-       ]
-      ],
-      "Marksmanship": [
-       [
-        "Hawk Eye",
-        1
-       ],
-       [
-        "Lethal Attacks",
-        5
-       ],
-       [
-        "Improved Stings",
-        3
-       ],
-       [
-        "Efficiency",
-        5
        ],
        [
         "Careful Aim",
@@ -562,14 +52,6 @@
        [
         "Rapid Killing",
         2
-       ],
-       [
-        "Improved Arcane Shot",
-        5
-       ],
-       [
-        "Lone Wolf",
-        1
        ],
        [
         "Trueshot Aura",
@@ -584,10 +66,6 @@
         2
        ],
        [
-        "Barrage",
-        3
-       ],
-       [
         "Ranged Weapon Specialization",
         5
        ],
@@ -598,1118 +76,182 @@
       ],
       "Survival": []
      },
-     "split": "7/44/0",
-     "dps": 901.92,
-     "se": 0.1044,
+     "split": "19/32/0",
+     "dps": 866.61,
+     "se": 0.082,
      "iterations": 100000
     },
     "family": "Marksmanship",
     "runs_agree": 3,
     "important_features": [
      {
-      "feature": "Marksmanship points",
-      "importance": 0.3377
-     },
-     {
-      "feature": "Ranged Weapon Specialization",
-      "importance": 0.1634
-     },
-     {
-      "feature": "Lone Wolf",
-      "importance": 0.1598
-     },
-     {
       "feature": "Mortal Shots",
-      "importance": 0.138
-     },
-     {
-      "feature": "Sniper Shot",
-      "importance": 0.0806
+      "importance": 0.2839
      },
      {
       "feature": "Survival points",
-      "importance": 0.0215
+      "importance": 0.2323
      },
      {
-      "feature": "Careful Aim",
-      "importance": 0.0163
+      "feature": "Savage Strikes",
+      "importance": 0.0894
      },
      {
-      "feature": "Barrage",
-      "importance": 0.0132
-     },
-     {
-      "feature": "Rapid Recuperation",
-      "importance": 0.0102
-     },
-     {
-      "feature": "Improved Arcane Shot",
-      "importance": 0.0089
-     },
-     {
-      "feature": "Beast Mastery points",
-      "importance": 0.0057
-     },
-     {
-      "feature": "Deadly Aspects",
-      "importance": 0.0055
-     }
-    ],
-    "simulated_builds": 9222,
-    "protected": []
-   },
-   "race_first": {
-    "open winner": {
-     "dps": 902.0,
-     "se": 0.19
-    },
-    "mm-lone-wolf-raid": {
-     "dps": 804.6,
-     "se": 0.18
-    },
-    "opt-mm-lonewolf-raid-raid-dps": {
-     "dps": 861.9,
-     "se": 0.18
-    },
-    "marksmanship-ml-parse": {
-     "dps": 902.0,
-     "se": 0.19
-    },
-    "marksmanship-ml-raid": {
-     "dps": 858.5,
-     "se": 0.18
-    }
-   },
-   "again": null,
-   "race": {
-    "open winner": {
-     "dps": 902.0,
-     "se": 0.19
-    },
-    "mm-lone-wolf-raid": {
-     "dps": 804.6,
-     "se": 0.18
-    },
-    "opt-mm-lonewolf-raid-raid-dps": {
-     "dps": 861.9,
-     "se": 0.18
-    },
-    "marksmanship-ml-parse": {
-     "dps": 902.0,
-     "se": 0.19
-    },
-    "marksmanship-ml-raid": {
-     "dps": 858.5,
-     "se": 0.18
-    }
-   },
-   "values": {
-    "Lone Wolf": {
-     "ranks": 1,
-     "lost": 149.3,
-     "per_point": 149.3,
-     "share": 0.1654
-    },
-    "Deadly Aspects": {
-     "ranks": 5,
-     "lost": 54.6,
-     "per_point": 10.9,
-     "share": 0.0605
-    },
-    "Careful Aim": {
-     "ranks": 5,
-     "lost": 52.3,
-     "per_point": 10.5,
-     "share": 0.0579
-    },
-    "Improved Arcane Shot": {
-     "ranks": 5,
-     "lost": 47.8,
-     "per_point": 9.6,
-     "share": 0.053
-    },
-    "Mortal Shots": {
-     "ranks": 5,
-     "lost": 45.8,
-     "per_point": 9.2,
-     "share": 0.0507
-    },
-    "Lethal Attacks": {
-     "ranks": 5,
-     "lost": 44.4,
-     "per_point": 8.9,
-     "share": 0.0492
-    },
-    "Sniper Shot": {
-     "ranks": 1,
-     "lost": 40.6,
-     "per_point": 40.6,
-     "share": 0.045
-    },
-    "Ranged Weapon Specialization": {
-     "ranks": 5,
-     "lost": 36.2,
-     "per_point": 7.2,
-     "share": 0.0401
-    },
-    "Efficiency": {
-     "ranks": 5,
-     "lost": 25.2,
-     "per_point": 5.0,
-     "share": 0.0279
-    },
-    "Improved Stings": {
-     "ranks": 3,
-     "lost": 22.7,
-     "per_point": 7.6,
-     "share": 0.0251
-    },
-    "Trueshot Aura": {
-     "ranks": 1,
-     "lost": 19.3,
-     "per_point": 19.3,
-     "share": 0.0214
-    },
-    "Barrage": {
-     "ranks": 3,
-     "lost": 13.5,
-     "per_point": 4.5,
-     "share": 0.015
-    },
-    "Rapid Recuperation": {
-     "ranks": 2,
-     "lost": 13.3,
-     "per_point": 6.6,
-     "share": 0.0147
-    },
-    "Endurance Training": {
-     "ranks": 1,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    },
-    "Improved Revive Pet": {
-     "ranks": 1,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    },
-    "Hawk Eye": {
-     "ranks": 1,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    },
-    "Rapid Killing": {
-     "ranks": 2,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    }
-   },
-   "values_base": 902.6,
-   "values_ours": {
-    "Lone Wolf": {
-     "ranks": 1,
-     "lost": 149.3,
-     "per_point": 149.3,
-     "share": 0.1654
-    },
-    "Deadly Aspects": {
-     "ranks": 5,
-     "lost": 54.6,
-     "per_point": 10.9,
-     "share": 0.0605
-    },
-    "Careful Aim": {
-     "ranks": 5,
-     "lost": 52.3,
-     "per_point": 10.5,
-     "share": 0.0579
-    },
-    "Improved Arcane Shot": {
-     "ranks": 5,
-     "lost": 47.8,
-     "per_point": 9.6,
-     "share": 0.053
-    },
-    "Mortal Shots": {
-     "ranks": 5,
-     "lost": 45.8,
-     "per_point": 9.2,
-     "share": 0.0507
-    },
-    "Lethal Attacks": {
-     "ranks": 5,
-     "lost": 44.4,
-     "per_point": 8.9,
-     "share": 0.0492
-    },
-    "Sniper Shot": {
-     "ranks": 1,
-     "lost": 40.6,
-     "per_point": 40.6,
-     "share": 0.045
-    },
-    "Ranged Weapon Specialization": {
-     "ranks": 5,
-     "lost": 36.2,
-     "per_point": 7.2,
-     "share": 0.0401
-    },
-    "Efficiency": {
-     "ranks": 5,
-     "lost": 25.2,
-     "per_point": 5.0,
-     "share": 0.0279
-    },
-    "Improved Stings": {
-     "ranks": 3,
-     "lost": 22.7,
-     "per_point": 7.6,
-     "share": 0.0251
-    },
-    "Trueshot Aura": {
-     "ranks": 1,
-     "lost": 19.3,
-     "per_point": 19.3,
-     "share": 0.0214
-    },
-    "Barrage": {
-     "ranks": 3,
-     "lost": 13.5,
-     "per_point": 4.5,
-     "share": 0.015
-    },
-    "Rapid Recuperation": {
-     "ranks": 2,
-     "lost": 13.3,
-     "per_point": 6.6,
-     "share": 0.0147
-    },
-    "Endurance Training": {
-     "ranks": 1,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    },
-    "Improved Revive Pet": {
-     "ranks": 1,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    },
-    "Hawk Eye": {
-     "ranks": 1,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    },
-    "Rapid Killing": {
-     "ranks": 2,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    }
-   },
-   "values_ours_base": 902.6,
-   "ours_best": "marksmanship-ml-parse",
-   "family": "Marksmanship",
-   "split": "7/44/0",
-   "dps": 902.0,
-   "link": "https://talentsforever.com/hunter/60/510001-1053552511523051--4",
-   "gap_vs_ours": 0.0,
-   "minutes": 11.0,
-   "done": true
-  },
-  "bm-raid": {
-   "first": {
-    "winner": {
-     "allocation": {
-      "Beast Mastery": [
-       [
-        "Deadly Aspects",
-        5
-       ],
-       [
-        "Endurance Training",
-        3
-       ],
-       [
-        "Focused Fire",
-        2
-       ],
-       [
-        "Bestial Swiftness",
-        1
-       ],
-       [
-        "Unleashed Fury",
-        5
-       ],
-       [
-        "Ferocity",
-        5
-       ],
-       [
-        "Summon Hawk",
-        1
-       ],
-       [
-        "Intimidation",
-        1
-       ],
-       [
-        "Bestial Discipline",
-        2
-       ],
-       [
-        "Frenzy",
-        5
-       ],
-       [
-        "Bestial Wrath",
-        1
-       ]
-      ],
-      "Marksmanship": [
-       [
-        "Lethal Attacks",
-        5
-       ],
-       [
-        "Improved Stings",
-        3
-       ],
-       [
-        "Efficiency",
-        2
-       ],
-       [
-        "Careful Aim",
-        5
-       ],
-       [
-        "Mortal Shots",
-        5
-       ]
-      ],
-      "Survival": []
-     },
-     "split": "31/20/0",
-     "dps": 880.24,
-     "se": 0.0784,
-     "iterations": 100000
-    },
-    "family": "Beast Mastery",
-    "runs_agree": 3,
-    "important_features": [
-     {
-      "feature": "Mortal Shots",
-      "importance": 0.3329
-     },
-     {
-      "feature": "Survival points",
-      "importance": 0.1967
-     },
-     {
-      "feature": "Frenzy",
-      "importance": 0.1725
+      "feature": "Summon Hawk",
+      "importance": 0.0753
      },
      {
       "feature": "Ferocity",
-      "importance": 0.0778
+      "importance": 0.0523
      },
      {
       "feature": "Careful Aim",
-      "importance": 0.037
+      "importance": 0.0337
      },
      {
-      "feature": "Bestial Discipline",
-      "importance": 0.0289
+      "feature": "Survivalist",
+      "importance": 0.0268
      },
      {
-      "feature": "Summon Hawk",
-      "importance": 0.0217
-     },
-     {
-      "feature": "Deflection",
-      "importance": 0.0177
-     },
-     {
-      "feature": "Beast Mastery points",
-      "importance": 0.0139
-     },
-     {
-      "feature": "Improved Concussive Shot",
-      "importance": 0.0116
-     },
-     {
-      "feature": "Deterrence",
-      "importance": 0.0112
+      "feature": "Surefooted",
+      "importance": 0.025
      },
      {
       "feature": "Marksmanship points",
-      "importance": 0.0096
+      "importance": 0.0222
+     },
+     {
+      "feature": "Unleashed Fury",
+      "importance": 0.0198
+     },
+     {
+      "feature": "Improved Concussive Shot",
+      "importance": 0.0166
+     },
+     {
+      "feature": "Hawk Eye",
+      "importance": 0.0121
      }
     ],
-    "simulated_builds": 9138,
-    "protected": []
+    "simulated_builds": 8402,
+    "protected": [],
+    "families": [
+     {
+      "keystones": "Summon Hawk + Sniper Shot",
+      "split": "19/32/0",
+      "family": "Marksmanship",
+      "score": 865.7
+     },
+     {
+      "keystones": "Bestial Wrath + Trueshot Aura",
+      "split": "31/20/0",
+      "family": "Beast Mastery",
+      "score": 864.2
+     },
+     {
+      "keystones": "Summon Hawk + Trueshot Aura",
+      "split": "28/23/0",
+      "family": "Hybrid Beast Mastery/Marksmanship",
+      "score": 863.0
+     },
+     {
+      "keystones": "Bestial Wrath + Lone Wolf",
+      "split": "31/20/0",
+      "family": "Beast Mastery",
+      "score": 861.2
+     },
+     {
+      "keystones": "Intimidation + Scatter Shot",
+      "split": "27/24/0",
+      "family": "Hybrid Beast Mastery/Marksmanship",
+      "score": 852.8
+     },
+     {
+      "keystones": "Bestial Swiftness + Scatter Shot",
+      "split": "11/38/2",
+      "family": "Marksmanship",
+      "score": 830.7
+     },
+     {
+      "keystones": "Summon Hawk + Lone Wolf",
+      "split": "16/34/1",
+      "family": "Marksmanship",
+      "score": 819.0
+     },
+     {
+      "keystones": "Bestial Swiftness + Lone Wolf",
+      "split": "27/24/0",
+      "family": "Hybrid Beast Mastery/Marksmanship",
+      "score": 816.2
+     },
+     {
+      "keystones": "Summon Hawk + Scatter Shot",
+      "split": "21/27/3",
+      "family": "Hybrid Beast Mastery/Marksmanship",
+      "score": 811.0
+     },
+     {
+      "keystones": "Intimidation + Trueshot Aura",
+      "split": "28/23/0",
+      "family": "Hybrid Beast Mastery/Marksmanship",
+      "score": 803.9
+     },
+     {
+      "keystones": "Bestial Swiftness + Sniper Shot",
+      "split": "11/40/0",
+      "family": "Marksmanship",
+      "score": 803.1
+     },
+     {
+      "keystones": "Bestial Swiftness + Deterrence",
+      "split": "22/18/11",
+      "family": "Hybrid Beast Mastery/Marksmanship",
+      "score": 798.1
+     },
+     {
+      "keystones": "Bestial Swiftness + Trueshot Aura",
+      "split": "17/24/10",
+      "family": "Hybrid Beast Mastery/Marksmanship",
+      "score": 791.8
+     },
+     {
+      "keystones": "Summon Hawk + Deterrence",
+      "split": "27/13/11",
+      "family": "Hybrid Beast Mastery/Marksmanship",
+      "score": 783.7
+     },
+     {
+      "keystones": "Sniper Shot + Deterrence",
+      "split": "5/31/15",
+      "family": "Marksmanship",
+      "score": 778.2
+     }
+    ]
    },
    "race_first": {
     "open winner": {
-     "dps": 880.3,
+     "dps": 866.6,
+     "se": 0.15
+    },
+    "bm-mm-raid": {
+     "dps": 838.4,
      "se": 0.14
     },
-    "mm-hawk-raid": {
-     "dps": 855.0,
-     "se": 0.14
+    "bm-mm-full-buffs-raid": {
+     "dps": 795.3,
+     "se": 0.15
     },
-    "beast-mastery-raid": {
-     "dps": 854.8,
-     "se": 0.13
-    },
-    "beast-mastery-ml-parse": {
-     "dps": 880.3,
-     "se": 0.14
-    },
-    "beast-marks-ml-raid": {
-     "dps": 876.1,
+    "opt-mm-raid-raid-dps": {
+     "dps": 838.4,
      "se": 0.14
     }
    },
-   "again": null,
-   "race": {
-    "open winner": {
-     "dps": 880.3,
-     "se": 0.14
-    },
-    "mm-hawk-raid": {
-     "dps": 855.0,
-     "se": 0.14
-    },
-    "beast-mastery-raid": {
-     "dps": 854.8,
-     "se": 0.13
-    },
-    "beast-mastery-ml-parse": {
-     "dps": 880.3,
-     "se": 0.14
-    },
-    "beast-marks-ml-raid": {
-     "dps": 876.1,
-     "se": 0.14
-    }
-   },
-   "values": {
-    "Summon Hawk": {
-     "ranks": 1,
-     "lost": 55.8,
-     "per_point": 55.8,
-     "share": 0.0634
-    },
-    "Lethal Attacks": {
-     "ranks": 5,
-     "lost": 41.2,
-     "per_point": 8.2,
-     "share": 0.0468
-    },
-    "Careful Aim": {
-     "ranks": 5,
-     "lost": 40.1,
-     "per_point": 8.0,
-     "share": 0.0456
-    },
-    "Unleashed Fury": {
-     "ranks": 5,
-     "lost": 37.6,
-     "per_point": 7.5,
-     "share": 0.0428
-    },
-    "Deadly Aspects": {
-     "ranks": 5,
-     "lost": 32.1,
-     "per_point": 6.4,
-     "share": 0.0365
-    },
-    "Mortal Shots": {
-     "ranks": 5,
-     "lost": 31.0,
-     "per_point": 6.2,
-     "share": 0.0352
-    },
-    "Frenzy": {
-     "ranks": 5,
-     "lost": 30.7,
-     "per_point": 6.1,
-     "share": 0.0349
-    },
-    "Ferocity": {
-     "ranks": 5,
-     "lost": 26.1,
-     "per_point": 5.2,
-     "share": 0.0297
-    },
-    "Bestial Discipline": {
-     "ranks": 2,
-     "lost": 22.7,
-     "per_point": 11.3,
-     "share": 0.0257
-    },
-    "Improved Stings": {
-     "ranks": 3,
-     "lost": 19.7,
-     "per_point": 6.6,
-     "share": 0.0224
-    },
-    "Focused Fire": {
-     "ranks": 2,
-     "lost": 16.8,
-     "per_point": 8.4,
-     "share": 0.019
-    },
-    "Bestial Wrath": {
-     "ranks": 1,
-     "lost": 12.5,
-     "per_point": 12.5,
-     "share": 0.0142
-    },
-    "Efficiency": {
-     "ranks": 2,
-     "lost": 8.4,
-     "per_point": 4.2,
-     "share": 0.0095
-    },
-    "Endurance Training": {
-     "ranks": 3,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    },
-    "Bestial Swiftness": {
-     "ranks": 1,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    },
-    "Intimidation": {
-     "ranks": 1,
-     "lost": -0.9,
-     "per_point": -0.9,
-     "share": -0.001
-    }
-   },
-   "values_base": 880.5,
-   "values_ours": {
-    "Summon Hawk": {
-     "ranks": 1,
-     "lost": 55.8,
-     "per_point": 55.8,
-     "share": 0.0634
-    },
-    "Lethal Attacks": {
-     "ranks": 5,
-     "lost": 41.2,
-     "per_point": 8.2,
-     "share": 0.0468
-    },
-    "Careful Aim": {
-     "ranks": 5,
-     "lost": 40.1,
-     "per_point": 8.0,
-     "share": 0.0456
-    },
-    "Unleashed Fury": {
-     "ranks": 5,
-     "lost": 37.6,
-     "per_point": 7.5,
-     "share": 0.0428
-    },
-    "Deadly Aspects": {
-     "ranks": 5,
-     "lost": 32.1,
-     "per_point": 6.4,
-     "share": 0.0365
-    },
-    "Mortal Shots": {
-     "ranks": 5,
-     "lost": 31.0,
-     "per_point": 6.2,
-     "share": 0.0352
-    },
-    "Frenzy": {
-     "ranks": 5,
-     "lost": 30.7,
-     "per_point": 6.1,
-     "share": 0.0349
-    },
-    "Ferocity": {
-     "ranks": 5,
-     "lost": 26.1,
-     "per_point": 5.2,
-     "share": 0.0297
-    },
-    "Bestial Discipline": {
-     "ranks": 2,
-     "lost": 22.7,
-     "per_point": 11.3,
-     "share": 0.0257
-    },
-    "Improved Stings": {
-     "ranks": 3,
-     "lost": 19.7,
-     "per_point": 6.6,
-     "share": 0.0224
-    },
-    "Focused Fire": {
-     "ranks": 2,
-     "lost": 16.8,
-     "per_point": 8.4,
-     "share": 0.019
-    },
-    "Bestial Wrath": {
-     "ranks": 1,
-     "lost": 12.5,
-     "per_point": 12.5,
-     "share": 0.0142
-    },
-    "Efficiency": {
-     "ranks": 2,
-     "lost": 8.4,
-     "per_point": 4.2,
-     "share": 0.0095
-    },
-    "Endurance Training": {
-     "ranks": 3,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    },
-    "Bestial Swiftness": {
-     "ranks": 1,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    },
-    "Intimidation": {
-     "ranks": 1,
-     "lost": -0.9,
-     "per_point": -0.9,
-     "share": -0.001
-    }
-   },
-   "values_ours_base": 880.5,
-   "ours_best": "beast-mastery-ml-parse",
-   "family": "Beast Mastery",
-   "split": "31/20/0",
-   "dps": 880.3,
-   "link": "https://talentsforever.com/hunter/60/5320001505101251-00532500005--4",
-   "gap_vs_ours": 0.0,
-   "minutes": 19.7,
-   "done": true
-  },
-  "melee-dps": {
-   "first": {
-    "winner": {
-     "allocation": {
-      "Beast Mastery": [
-       [
-        "Deadly Aspects",
-        5
-       ],
-       [
-        "Endurance Training",
-        2
-       ]
-      ],
-      "Marksmanship": [
-       [
-        "Lethal Attacks",
-        5
-       ],
-       [
-        "Careful Aim",
-        5
-       ],
-       [
-        "Lone Wolf",
-        1
-       ]
-      ],
-      "Survival": [
-       [
-        "Deflection",
-        5
-       ],
-       [
-        "Savage Strikes",
-        2
-       ],
-       [
-        "Survivalist",
-        3
-       ],
-       [
-        "Clever Traps",
-        2
-       ],
-       [
-        "Surefooted",
-        3
-       ],
-       [
-        "Survival Tactics",
-        2
-       ],
-       [
-        "Predator's Edge",
-        5
-       ],
-       [
-        "Expose Prey",
-        2
-       ],
-       [
-        "Survivalist's Discipline",
-        2
-       ],
-       [
-        "Strider Kick",
-        1
-       ],
-       [
-        "Lightning Reflexes",
-        5
-       ],
-       [
-        "Lacerating Strikes",
-        1
-       ]
-      ]
-     },
-     "split": "7/11/33",
-     "dps": 1039.77,
-     "se": 0.1696,
-     "iterations": 100000
-    },
-    "family": "Survival",
-    "runs_agree": 3,
-    "important_features": [
-     {
-      "feature": "Lightning Reflexes",
-      "importance": 0.3042
-     },
-     {
-      "feature": "Predator's Edge",
-      "importance": 0.1678
-     },
-     {
-      "feature": "Lone Wolf",
-      "importance": 0.1248
-     },
-     {
-      "feature": "Expose Prey",
-      "importance": 0.1027
-     },
-     {
-      "feature": "Survival points",
-      "importance": 0.0614
-     },
-     {
-      "feature": "Summon Hawk",
-      "importance": 0.0328
-     },
-     {
-      "feature": "Careful Aim",
-      "importance": 0.0295
-     },
-     {
-      "feature": "Strider Kick",
-      "importance": 0.0288
-     },
-     {
-      "feature": "Survivalist's Discipline",
-      "importance": 0.0279
-     },
-     {
-      "feature": "Lacerating Strikes",
-      "importance": 0.0238
-     },
-     {
-      "feature": "Deadly Aspects",
-      "importance": 0.0199
-     },
-     {
-      "feature": "Endurance Training",
-      "importance": 0.0153
-     }
+   "probe": {
+    "talents": [
+     "Trueshot Aura"
     ],
-    "simulated_builds": 9383,
-    "protected": []
-   },
-   "race_first": {
-    "open winner": {
-     "dps": 1039.6,
-     "se": 0.31
-    },
-    "melee-survival-raid": {
-     "dps": 1039.6,
-     "se": 0.31
-    },
-    "opt-melee-dps-raid-dps": {
-     "dps": 1015.4,
-     "se": 0.31
-    },
-    "survival-raid": {
-     "dps": 1021.7,
-     "se": 0.31
-    },
-    "survival-ml-parse": {
-     "dps": 1039.6,
-     "se": 0.31
-    }
-   },
-   "again": null,
-   "race": {
-    "open winner": {
-     "dps": 1039.6,
-     "se": 0.31
-    },
-    "melee-survival-raid": {
-     "dps": 1039.6,
-     "se": 0.31
-    },
-    "opt-melee-dps-raid-dps": {
-     "dps": 1015.4,
-     "se": 0.31
-    },
-    "survival-raid": {
-     "dps": 1021.7,
-     "se": 0.31
-    },
-    "survival-ml-parse": {
-     "dps": 1039.6,
-     "se": 0.31
-    }
-   },
-   "values": {
-    "Lone Wolf": {
-     "ranks": 1,
-     "lost": 170.2,
-     "per_point": 170.2,
-     "share": 0.1635
-    },
-    "Predator's Edge": {
-     "ranks": 5,
-     "lost": 122.2,
-     "per_point": 24.4,
-     "share": 0.1175
-    },
-    "Expose Prey": {
-     "ranks": 2,
-     "lost": 117.4,
-     "per_point": 58.7,
-     "share": 0.1128
-    },
-    "Deadly Aspects": {
-     "ranks": 5,
-     "lost": 88.3,
-     "per_point": 17.7,
-     "share": 0.0848
-    },
-    "Strider Kick": {
-     "ranks": 1,
-     "lost": 60.0,
-     "per_point": 60.0,
-     "share": 0.0576
-    },
-    "Careful Aim": {
-     "ranks": 5,
-     "lost": 59.3,
-     "per_point": 11.9,
-     "share": 0.0569
-    },
-    "Lethal Attacks": {
-     "ranks": 5,
-     "lost": 51.6,
-     "per_point": 10.3,
-     "share": 0.0495
-    },
-    "Surefooted": {
-     "ranks": 3,
-     "lost": 27.4,
-     "per_point": 9.1,
-     "share": 0.0264
-    },
-    "Lightning Reflexes": {
-     "ranks": 5,
-     "lost": 26.6,
-     "per_point": 5.3,
-     "share": 0.0255
-    },
-    "Survivalist's Discipline": {
-     "ranks": 2,
-     "lost": 15.8,
-     "per_point": 7.9,
-     "share": 0.0152
-    },
-    "Savage Strikes": {
-     "ranks": 2,
-     "lost": 15.0,
-     "per_point": 7.5,
-     "share": 0.0144
-    },
-    "Clever Traps": {
-     "ranks": 2,
-     "lost": 13.5,
-     "per_point": 6.7,
-     "share": 0.0129
-    },
-    "Lacerating Strikes": {
-     "ranks": 1,
-     "lost": 7.6,
-     "per_point": 7.6,
-     "share": 0.0073
-    },
-    "Survival Tactics": {
-     "ranks": 2,
-     "lost": 1.5,
-     "per_point": 0.8,
-     "share": 0.0015
-    },
-    "Endurance Training": {
-     "ranks": 2,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    },
-    "Deflection": {
-     "ranks": 5,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    },
-    "Survivalist": {
-     "ranks": 3,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    }
-   },
-   "values_base": 1040.8,
-   "values_ours": {
-    "Lone Wolf": {
-     "ranks": 1,
-     "lost": 170.2,
-     "per_point": 170.2,
-     "share": 0.1635
-    },
-    "Predator's Edge": {
-     "ranks": 5,
-     "lost": 122.2,
-     "per_point": 24.4,
-     "share": 0.1175
-    },
-    "Expose Prey": {
-     "ranks": 2,
-     "lost": 117.3,
-     "per_point": 58.7,
-     "share": 0.1127
-    },
-    "Deadly Aspects": {
-     "ranks": 5,
-     "lost": 88.3,
-     "per_point": 17.7,
-     "share": 0.0848
-    },
-    "Strider Kick": {
-     "ranks": 1,
-     "lost": 60.0,
-     "per_point": 60.0,
-     "share": 0.0576
-    },
-    "Careful Aim": {
-     "ranks": 5,
-     "lost": 59.3,
-     "per_point": 11.9,
-     "share": 0.0569
-    },
-    "Lethal Attacks": {
-     "ranks": 5,
-     "lost": 51.6,
-     "per_point": 10.3,
-     "share": 0.0495
-    },
-    "Surefooted": {
-     "ranks": 3,
-     "lost": 27.4,
-     "per_point": 9.1,
-     "share": 0.0264
-    },
-    "Lightning Reflexes": {
-     "ranks": 5,
-     "lost": 26.6,
-     "per_point": 5.3,
-     "share": 0.0255
-    },
-    "Survivalist's Discipline": {
-     "ranks": 2,
-     "lost": 15.8,
-     "per_point": 7.9,
-     "share": 0.0152
-    },
-    "Savage Strikes": {
-     "ranks": 2,
-     "lost": 15.0,
-     "per_point": 7.5,
-     "share": 0.0144
-    },
-    "Clever Traps": {
-     "ranks": 2,
-     "lost": 13.5,
-     "per_point": 6.7,
-     "share": 0.0129
-    },
-    "Lacerating Strikes": {
-     "ranks": 1,
-     "lost": 7.5,
-     "per_point": 7.5,
-     "share": 0.0073
-    },
-    "Survival Tactics": {
-     "ranks": 2,
-     "lost": 1.5,
-     "per_point": 0.8,
-     "share": 0.0015
-    },
-    "Survivalist": {
-     "ranks": 3,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    },
-    "Resourcefulness": {
-     "ranks": 2,
-     "lost": -0.0,
-     "per_point": -0.0,
-     "share": -0.0
-    },
-    "Deflection": {
-     "ranks": 5,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    }
-   },
-   "values_ours_base": 1040.8,
-   "ours_best": "melee-survival-raid",
-   "family": "Survival",
-   "split": "7/11/33",
-   "dps": 1039.6,
-   "link": "https://talentsforever.com/hunter/60/52-005005001-050230230250022151-4",
-   "gap_vs_ours": 0.0,
-   "minutes": 18.6,
-   "done": true
+    "lines_kept": 0
+   }
   }
  }
 }

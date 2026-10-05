@@ -11,7 +11,7 @@
   "builds": [
    {
     "label": "open winner",
-    "talents": "5320001505101251-00532500014"
+    "talents": "50230005031-0053352001520051"
    },
    {
     "label": "bm-mm-raid",
@@ -97,13 +97,13 @@
   "final": {
    "dummy": {
     "open winner": {
-     "before": 393.0696765203204,
-     "after": 466.74742952086564,
-     "base": 393.0696765203204,
+     "before": 369.98680453698483,
+     "after": 448.3988326734856,
+     "base": 369.98680453698483,
      "before_value": null,
      "after_value": null,
-     "oom_before": 95.0325108252176,
-     "oom_after": 95.0325108252176
+     "oom_before": 93.47791727219649,
+     "oom_after": 93.47791727219649
     },
     "bm-mm-raid": {
      "before": 403.7912566958429,
@@ -135,7 +135,7 @@
    }
   },
   "first_date": "2026-09-27",
-  "passes": 7
+  "passes": 8
  },
  "raid": {
   "class": "hunter",

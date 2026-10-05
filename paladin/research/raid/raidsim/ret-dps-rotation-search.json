@@ -200,25 +200,32 @@
  "raid": {
   "class": "paladin",
   "spec": "ret-dps",
-  "date": "2026-10-02",
-  "commit": "40be98e",
+  "date": "2026-10-05",
+  "commit": "b0f0df3",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/paladin/retribution/apls/default.apl.json",
   "start": "ui\\specs\\paladin\\retribution\\apls\\default.apl.json",
   "builds": [
    {
-    "label": "ml: Retribution",
-    "talents": "25003-053-32225231001330321",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-retribution-bis.gear.json"
-   },
-   {
-    "label": "opt-ret-dps-raid-dps",
-    "talents": "45003003004--05225131001330321"
+    "label": "retribution-ml-raid",
+    "talents": "25003001-503-05225131001330321"
    },
    {
     "label": "sim preset: P4/P5 Ret",
     "talents": "550030022001--05225231001330321"
+   },
+   {
+    "label": "ret-raid-dps",
+    "talents": "550030030001--05225331001330321"
+   },
+   {
+    "label": "ret-full-buffs-raid",
+    "talents": "52003-503-05225231001330321"
+   },
+   {
+    "label": "opt-ret-dps-raid-dps",
+    "talents": "25003002-503-05225131001230321"
    }
   ],
   "iterations": 3000,
@@ -309,28 +316,46 @@
   ],
   "final": {
    "raid": {
-    "ml: Retribution": {
-     "before": 922.0928640117107,
-     "after": 1012.543675257232,
-     "base": 922.0928640117107,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0.00054819999935
-    },
-    "opt-ret-dps-raid-dps": {
-     "before": 889.0373038612057,
-     "after": 978.2896474344357,
-     "base": 889.0373038612057,
+    "retribution-ml-raid": {
+     "before": 817.9630616596436,
+     "after": 907.3954373278168,
+     "base": 817.9630616596436,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: P4/P5 Ret": {
-     "before": 892.3219036147943,
-     "after": 981.8234176472205,
-     "base": 892.3219036147943,
+     "before": 793.2001377725393,
+     "after": 878.511552973363,
+     "base": 793.2001377725393,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "ret-raid-dps": {
+     "before": 794.6923455179133,
+     "after": 879.8463091073244,
+     "base": 794.6923455179133,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "ret-full-buffs-raid": {
+     "before": 818.0809275621231,
+     "after": 905.0163971650435,
+     "base": 818.0809275621231,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "opt-ret-dps-raid-dps": {
+     "before": 813.9192423893031,
+     "after": 903.0509943378862,
+     "base": 813.9192423893031,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -339,6 +364,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 6
+  "passes": 7
  }
 }

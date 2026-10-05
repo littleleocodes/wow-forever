@@ -54,7 +54,7 @@ KNOWN = HERE / "known-positives.json"
 OUT = HERE / "families"
 PAGE = ROOT / "_reference" / "family-search.md"
 TODAY = datetime.date.today().isoformat()
-POLISH = dict(fights=300, rounds=8, per_pair=2, top=5, full_fights=800)
+POLISH = dict(fights=300, rounds=6, per_pair=1, top=5, full_fights=800)   # 2026-10-05: trimmed (one draw, six rounds) to about half the time
 SEARCH = dict(runs=3, budget=3000, screen=1500, patience=5, max_rounds=20, random_init=400, pool=10000, parents=48, finalists=6, screen_budget=600)
 AGAIN = dict(SEARCH, runs=2, budget=2000)
 RACE, VALUES = 30000, 12000
@@ -100,7 +100,12 @@ def uncast_abilities(cls, entry, repo, flat):
     book = FA.spell_ids(cls)
     path = R.apl_path(R.SPECS[cls][entry], repo, "raid")
     ids = FA.apl_spell_ids(path, "priorityList") | FA.apl_spell_ids(path, "prepullActions")
-    return [talent for talent, name, sid, text in SP.talent_abilities(cls) if flat.get(talent) and name in book and not (book[name][0] & ids)]
+    auto = set()   # abilities the simulator applies without a cast (Trueshot Aura, Demonic Sacrifice, Soul Link: unused_abilities.py)
+    ua = HERE / "unused-abilities.json"
+    if ua.exists():
+        auto = {r["talent"] for r in json.load(open(ua, encoding="utf-8")).get("rows", []) if r.get("kind") == "automatic"}
+    return [talent for talent, name, sid, text in SP.talent_abilities(cls)
+            if flat.get(talent) and name in book and talent not in auto and not (book[name][0] & ids)]
 
 
 def ours(cls):

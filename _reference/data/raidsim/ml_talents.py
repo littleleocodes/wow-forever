@@ -234,9 +234,27 @@ class Space:
                     return flat
         return None
 
-    def keystones(self):
-        """One-rank talents above the first two tiers: the trees' signature picks (Summon Hawk, Lone Wolf, Mortal Strike ...)."""
-        return [n for n in self.names if self.max[n] == 1 and self.row[n] >= 2]
+    def keystones(self, damage_only=False):
+        """One-rank talents above the first two tiers: the trees' signature picks (Summon Hawk, Lone Wolf, Mortal Strike ...).
+        damage_only: those whose tooltip speaks of damage, attack power, crit, haste or hit (a utility keystone such as Deterrence
+        or Intimidation forces no family of its own; 2026-10-05, to halve the family polish)."""
+        ks = [n for n in self.names if self.max[n] == 1 and self.row[n] >= 2]
+        if not damage_only:
+            return ks
+        import re as _re
+        keep = _re.compile(r"damage|attack|critical|crit|haste|hit|rage|energy|mana|cast|instant|cooldown|proc|spell|strike|shot", _re.I)
+        always = {"Moonkin Form", "Demonic Pact", "Siphon Life", "Premeditation"}   # DPS keystones the wording test misses
+        out = []
+        for n in ks:
+            if n in always:
+                out.append(n)
+                continue
+            ranks = self.trees[self.tree_of[n]]["talents"][n].get("ranks") or []
+            text = " ".join((r.get("text") if isinstance(r, dict) else str(r)) for r in ranks)
+            heal_only = _re.search(r"heal", text, _re.I) and not _re.search(r"damage", text, _re.I)
+            if keep.search(text) and not heal_only:
+                out.append(n)
+        return out
 
     def keystone_starts(self, rng, per_pair=3):
         """Random legal builds holding each pair of keystones from different trees: an open search's seeds for combinations no build
@@ -450,7 +468,7 @@ def family_polish(space, sim, rng, log, fights=300, rounds=8, per_pair=2, top=5,
     `fights` per build); then the `top` best families again with every move on full_fights. Returns [(score, build, family label)],
     best first: the open search's extra starts and the report's family table."""
     keep0 = set(space.protect)
-    ks = space.keystones()
+    ks = space.keystones(damage_only=True)
     out = []
     for i, a in enumerate(ks):
         for b in ks[i + 1:]:

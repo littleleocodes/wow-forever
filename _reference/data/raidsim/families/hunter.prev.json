@@ -1,0 +1,272 @@
+{
+ "class": "hunter",
+ "date": "2026-10-05",
+ "entries": {
+  "melee-dps": {
+   "first": {
+    "winner": {
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        5
+       ],
+       [
+        "Focused Fire",
+        1
+       ],
+       [
+        "Improved Aspect of the Monkey",
+        3
+       ],
+       [
+        "Pathfinding",
+        1
+       ],
+       [
+        "Unleashed Fury",
+        5
+       ],
+       [
+        "Summon Hawk",
+        1
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Careful Aim",
+        5
+       ],
+       [
+        "Lone Wolf",
+        1
+       ]
+      ],
+      "Survival": [
+       [
+        "Improved Tracking",
+        5
+       ],
+       [
+        "Entrapment",
+        1
+       ],
+       [
+        "Savage Strikes",
+        2
+       ],
+       [
+        "Survivalist",
+        1
+       ],
+       [
+        "Improved Wing Clip",
+        1
+       ],
+       [
+        "Clever Traps",
+        2
+       ],
+       [
+        "Surefooted",
+        3
+       ],
+       [
+        "Predator's Edge",
+        5
+       ],
+       [
+        "Expose Prey",
+        2
+       ],
+       [
+        "Survivalist's Discipline",
+        1
+       ],
+       [
+        "Strider Kick",
+        1
+       ]
+      ]
+     },
+     "split": "16/11/24",
+     "dps": 1117.34,
+     "se": 0.1635,
+     "iterations": 100000
+    },
+    "family": "Hybrid Beast Mastery/Survival",
+    "runs_agree": 3,
+    "important_features": [
+     {
+      "feature": "Predator's Edge",
+      "importance": 0.2009
+     },
+     {
+      "feature": "Expose Prey",
+      "importance": 0.1928
+     },
+     {
+      "feature": "Lone Wolf",
+      "importance": 0.1526
+     },
+     {
+      "feature": "Summon Hawk",
+      "importance": 0.0923
+     },
+     {
+      "feature": "Strider Kick",
+      "importance": 0.0894
+     },
+     {
+      "feature": "Survival points",
+      "importance": 0.0751
+     },
+     {
+      "feature": "Marksmanship points",
+      "importance": 0.0509
+     },
+     {
+      "feature": "Beast Mastery points",
+      "importance": 0.0264
+     },
+     {
+      "feature": "Careful Aim",
+      "importance": 0.0242
+     },
+     {
+      "feature": "Unleashed Fury",
+      "importance": 0.023
+     },
+     {
+      "feature": "Surefooted",
+      "importance": 0.0143
+     },
+     {
+      "feature": "Clever Traps",
+      "importance": 0.0084
+     }
+    ],
+    "simulated_builds": 7331,
+    "protected": [],
+    "families": [
+     {
+      "keystones": "Summon Hawk + Deterrence",
+      "split": "16/11/24",
+      "family": "Hybrid Beast Mastery/Survival",
+      "score": 1112.8
+     },
+     {
+      "keystones": "Lone Wolf + Deterrence",
+      "split": "16/11/24",
+      "family": "Hybrid Beast Mastery/Survival",
+      "score": 1112.7
+     },
+     {
+      "keystones": "Summon Hawk + Counterattack",
+      "split": "16/11/24",
+      "family": "Hybrid Beast Mastery/Survival",
+      "score": 1104.5
+     },
+     {
+      "keystones": "Lone Wolf + Strider Kick",
+      "split": "5/15/31",
+      "family": "Survival",
+      "score": 1036.4
+     },
+     {
+      "keystones": "Trueshot Aura + Lacerating Strikes",
+      "split": "4/16/31",
+      "family": "Survival",
+      "score": 1025.6
+     },
+     {
+      "keystones": "Lone Wolf + Counterattack",
+      "split": "5/11/35",
+      "family": "Survival",
+      "score": 961.1
+     },
+     {
+      "keystones": "Scatter Shot + Strider Kick",
+      "split": "5/21/25",
+      "family": "Hybrid Marksmanship/Survival",
+      "score": 951.2
+     },
+     {
+      "keystones": "Scatter Shot + Counterattack",
+      "split": "6/21/24",
+      "family": "Hybrid Marksmanship/Survival",
+      "score": 938.6
+     },
+     {
+      "keystones": "Lone Wolf + Lacerating Strikes",
+      "split": "2/16/33",
+      "family": "Survival",
+      "score": 923.3
+     },
+     {
+      "keystones": "Bestial Swiftness + Counterattack",
+      "split": "11/12/28",
+      "family": "Hybrid Marksmanship/Survival",
+      "score": 920.7
+     },
+     {
+      "keystones": "Trueshot Aura + Deterrence",
+      "split": "11/17/23",
+      "family": "Hybrid Marksmanship/Survival",
+      "score": 916.1
+     },
+     {
+      "keystones": "Summon Hawk + Strider Kick",
+      "split": "16/9/26",
+      "family": "Hybrid Beast Mastery/Survival",
+      "score": 902.0
+     },
+     {
+      "keystones": "Trueshot Aura + Counterattack",
+      "split": "9/20/22",
+      "family": "Hybrid Marksmanship/Survival",
+      "score": 897.5
+     },
+     {
+      "keystones": "Bestial Swiftness + Deterrence",
+      "split": "11/13/27",
+      "family": "Hybrid Marksmanship/Survival",
+      "score": 895.4
+     },
+     {
+      "keystones": "Trueshot Aura + Strider Kick",
+      "split": "12/16/23",
+      "family": "Hybrid Marksmanship/Survival",
+      "score": 890.0
+     }
+    ]
+   },
+   "race_first": {
+    "open winner": {
+     "dps": 1117.7,
+     "se": 0.3
+    },
+    "melee-survival-raid": {
+     "dps": 1039.6,
+     "se": 0.31
+    },
+    "opt-melee-dps-raid-dps": {
+     "dps": 1015.4,
+     "se": 0.31
+    },
+    "survival-raid": {
+     "dps": 1021.7,
+     "se": 0.31
+    },
+    "survival-ml-parse": {
+     "dps": 1039.6,
+     "se": 0.31
+    }
+   }
+  }
+ }
+}
