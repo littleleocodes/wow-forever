@@ -966,6 +966,152 @@
    "gap_vs_ours": 0.033,
    "minutes": 74.8,
    "done": true
+  },
+  "shockadin-raid": {
+   "first": {
+    "winner": {
+     "allocation": {
+      "Holy": [
+       [
+        "Divine Strength",
+        3
+       ],
+       [
+        "Divine Intellect",
+        5
+       ],
+       [
+        "Improved Seals",
+        3
+       ]
+      ],
+      "Protection": [
+       [
+        "Toughness",
+        5
+       ],
+       [
+        "Precision",
+        3
+       ]
+      ],
+      "Retribution": [
+       [
+        "Benediction",
+        5
+       ],
+       [
+        "Improved Judgement",
+        2
+       ],
+       [
+        "Conviction",
+        5
+       ],
+       [
+        "Vindication",
+        3
+       ],
+       [
+        "Sanctified Judgement",
+        3
+       ],
+       [
+        "Seal of Command",
+        1
+       ],
+       [
+        "Sacred Arbiter",
+        1
+       ],
+       [
+        "Two-Handed Weapon Specialization",
+        3
+       ],
+       [
+        "Vengeance",
+        3
+       ],
+       [
+        "Champion of the Light",
+        3
+       ],
+       [
+        "Instrument of Law",
+        2
+       ],
+       [
+        "Twist of Light",
+        1
+       ]
+      ]
+     },
+     "split": "11/8/32",
+     "dps": 875.92,
+     "se": 0.1445,
+     "iterations": 100000
+    },
+    "family": "Retribution",
+    "runs_agree": 3,
+    "important_features": [
+     {
+      "feature": "Champion of the Light",
+      "importance": 0.3385
+     },
+     {
+      "feature": "Twist of Light",
+      "importance": 0.2501
+     },
+     {
+      "feature": "Instrument of Law",
+      "importance": 0.1358
+     },
+     {
+      "feature": "Vengeance",
+      "importance": 0.1041
+     },
+     {
+      "feature": "Retribution points",
+      "importance": 0.0517
+     },
+     {
+      "feature": "Holy Shock",
+      "importance": 0.0162
+     },
+     {
+      "feature": "Improved Seals",
+      "importance": 0.014
+     },
+     {
+      "feature": "Two-Handed Weapon Specialization",
+      "importance": 0.0135
+     },
+     {
+      "feature": "Deflection",
+      "importance": 0.0128
+     },
+     {
+      "feature": "Precision",
+      "importance": 0.0101
+     },
+     {
+      "feature": "Seal of Command",
+      "importance": 0.0091
+     },
+     {
+      "feature": "Protection points",
+      "importance": 0.0074
+     }
+    ],
+    "simulated_builds": 9352,
+    "protected": []
+   },
+   "race_first": {
+    "open winner": {
+     "dps": 875.7,
+     "se": 0.26
+    }
+   }
   }
  }
 }

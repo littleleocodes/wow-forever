@@ -120,14 +120,19 @@ def main():
     s.loader.exec_module(MLT)
     OUT.mkdir(parents=True, exist_ok=True)
     rp = OUT / f"{cls}.json"
+    prev = rp.with_suffix(".prev.json")
+    if a.fresh and rp.exists() and not SMOKE:
+        rp.replace(prev)   # warm start (2026-10-05): the last run's winners seed the new search after a beta update
     st = json.load(open(rp, encoding="utf-8")) if rp.exists() and not a.fresh else {"class": cls, "date": TODAY, "rotations": {}}
+    warm = [FT.flat_of(r["winner"]) for r in json.load(open(prev, encoding="utf-8")).get("rotations", {}).values()
+            if r.get("winner")] if prev.exists() else []
 
     def save():
         rp.write_text(json.dumps(st, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 
     data = {b["id"]: b for b in json.load(open(paths.builds_json("forever", cls), encoding="utf-8"))["builds"]}
     space = MLT.Space(cls, "any", any_split=True)
-    starts = [FT.flat_of(b) for b in data.values()] + MLT.popular_allocs(cls)
+    starts = [FT.flat_of(b) for b in data.values()] + MLT.popular_allocs(cls) + warm
     starts = [x for x in starts if space.valid(x)]
     space.start_splits = [space.split(x) for x in starts]
     import random

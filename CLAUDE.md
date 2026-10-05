@@ -80,6 +80,12 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
 - When a new beta build lands, run `refresh_forever_talents.py --fetch --raw <date>-beta-<build>` (then
   `build_forever_spells.py`, `effects.py`, the optimizer runs, `render_trees.py`, `validate_builds.py`,
   `render_builds.py`), read `forever-talents/README.md` for what moved, and revisit the manual effects it lists.
+  After every refresh and every simulator update also: `raidsim/sim_value_audit.py --write` (the simulator's per-rank talent numbers
+  against the new tooltips, `_reference/sim-value-audit.md`: a damage, crit, haste, stat or cost talent listed there and not patched means
+  the simulator lags the beta: patch it, as Lightning Reflexes in 2026-10), repair the builds the new trees break, `rebuild.py --steps
+  raid,regen`, race the rotation-only entries (`run.py --all --write`, `--env environments`), then the open searches with a warm start:
+  `bash _reference/data/run_open_searches.sh --fresh <classes>` (each record moves to `<class>.prev.json` and its winners seed the new
+  search; resume without --fresh).
 
 ## Stats model (`_reference/data/scorer/`)
 

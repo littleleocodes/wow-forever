@@ -156,13 +156,22 @@ def main():
     repo = R.repo_path(argparse.Namespace(repo=None))
     OUT.mkdir(parents=True, exist_ok=True)
     rp = OUT / f"{cls}.json"
+    prev = rp.with_suffix(".prev.json")
+    if a.fresh and rp.exists() and not SMOKE:
+        rp.replace(prev)   # warm start (2026-10-05): the last run's winners seed the new search after a beta update
     st = json.load(open(rp, encoding="utf-8")) if rp.exists() and not a.fresh else {"class": cls, "date": TODAY, "entries": {}}
+    warm = []
+    if prev.exists():
+        for e in json.load(open(prev, encoding="utf-8")).get("entries", {}).values():
+            for k in ("again", "first"):
+                if (e.get(k) or {}).get("winner"):
+                    warm.append(flat_of(e[k]["winner"]["allocation"]))
 
     def save():
         rp.write_text(json.dumps(st, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 
     mine_all = ours(cls)
-    starts = [R.alloc_of(b) for b in mine_all.values()] + MLT.popular_allocs(cls)
+    starts = [R.alloc_of(b) for b in mine_all.values()] + MLT.popular_allocs(cls) + warm
     for entry in a.entry or entries(cls):
         if entry in st["entries"] and st["entries"][entry].get("done"):
             continue
