@@ -6,94 +6,94 @@ Every legal 51-point build, no tree rule, searched in each leveling rotation of 
 
 | Rotation | Trees that level with it | Open winner | Family | Seconds per kill (20-60) | vs our fastest there |
 |---|---|---|---|---|---|
-| holy-leveling | Holy | [14/8/29](https://talentsforever.com/paladin/60/52103003-503-142051310213303-4) | Hybrid Holy/Retribution | 27.50 | +28.9% faster than holy-leveling |
-| prot-leveling | Protection | [0/22/29](https://talentsforever.com/paladin/60/-05302113113002-3322533000103031-4) | Hybrid Protection/Retribution | 35.04 | - |
-| ret-dps | Retribution | [9/8/34](https://talentsforever.com/paladin/60/50103-503-33225131011330321-4) | Retribution | 27.93 | +0.4% faster than leveling-retribution |
+| holy-leveling | Holy | [15/0/36](https://talentsforever.com/paladin/60/520030032--5122533110133132-4) | Retribution | 28.15 | +25.9% faster than holy-leveling |
+| prot-leveling | Protection | [2/19/30](https://talentsforever.com/paladin/60/11-05303103013-4322513000103132-4) | Retribution | 35.20 | - |
+| ret-dps | Retribution | [8/8/35](https://talentsforever.com/paladin/60/50003-503-33225231011330321-4) | Retribution | 27.97 | +0.2% faster than leveling-retribution |
 
 ## holy-leveling
 
-**Open winner 14/8/29** (Hybrid Holy/Retribution): talent values at level 60 (seconds per kill lost without the talent; the build: 32.53 s):
+**Open winner 15/0/36** (Retribution): talent values at level 60 (seconds per kill lost without the talent; the build: 33.39 s):
 
 | Talent | Ranks | Seconds lost without it | Per point |
 |---|---|---|---|
-| Sanctified Judgement | 3 | +3.11 | +1.04 |
-| Improved Seals | 3 | +1.69 | +0.56 |
-| Two-Handed Weapon Specialization | 3 | +1.66 | +0.55 |
-| Conviction | 5 | +1.54 | +0.31 |
-| Seal of Command | 1 | +1.34 | +1.34 |
-| Improved Judgement | 2 | +1.03 | +0.51 |
+| Sanctified Judgement | 3 | +3.43 | +1.14 |
+| Two-Handed Weapon Specialization | 3 | +1.62 | +0.54 |
+| Improved Seals | 3 | +1.61 | +0.54 |
+| Conviction | 5 | +1.50 | +0.30 |
+| Seal of Command | 1 | +1.22 | +1.22 |
+| Improved Judgement | 2 | +0.93 | +0.47 |
+| Reverence | 3 | +0.90 | +0.30 |
 | Sacred Arbiter | 1 | +0.82 | +0.82 |
-| Reverence | 3 | +0.80 | +0.27 |
-| Vengeance | 3 | +0.76 | +0.25 |
-| Divine Strength | 5 | +0.74 | +0.15 |
-| Precision | 3 | +0.69 | +0.23 |
-| Champion of the Light | 3 | +0.55 | +0.18 |
-| Vindication | 1 | +0.45 | +0.45 |
-| Deflection | 1 | +0.14 | +0.14 |
-| Benediction | 4 | +0.08 | +0.02 |
-| Toughness | 5 | +0.06 | +0.01 |
-| Eye for an Eye | 2 | +0.05 | +0.02 |
-| Divine Intellect | 2 | +0.02 | +0.01 |
-| Healing Light | 1 | +0.00 | +0.00 |
+| Vengeance | 3 | +0.72 | +0.24 |
+| Divine Strength | 5 | +0.65 | +0.13 |
+| Champion of the Light | 3 | +0.51 | +0.17 |
+| Vindication | 3 | +0.28 | +0.09 |
+| Deflection | 5 | +0.10 | +0.02 |
+| Benediction | 1 | +0.01 | +0.01 |
+| Divine Intellect | 2 | -0.00 | -0.00 |
+| Purifying Power | 2 | +0.00 | +0.00 |
+| Holy Conduit | 2 | +0.00 | +0.00 |
+| Pursuit of Justice | 1 | +0.00 | +0.00 |
+| Repentance | 1 | +0.00 | +0.00 |
+| Instrument of Law | 2 | +0.00 | +0.00 |
 
-Race at levels 20-60 (seconds per kill): open winner 27.50, holy-leveling 35.45.
+Race at levels 20-60 (seconds per kill): open winner 28.15, holy-leveling 35.45.
 
 ## prot-leveling
 
-**Open winner 0/22/29** (Hybrid Protection/Retribution): talent values at level 60 (seconds per kill lost without the talent; the build: 33.90 s):
+**Open winner 2/19/30** (Retribution): talent values at level 60 (seconds per kill lost without the talent; the build: 33.96 s):
 
 | Talent | Ranks | Seconds lost without it | Per point |
 |---|---|---|---|
-| Sanctified Judgement | 3 | +3.83 | +1.28 |
-| Holy Conduit | 2 | +3.48 | +1.74 |
-| Improved Seal of Fury | 1 | +3.21 | +3.21 |
-| One-Handed Weapon Specialization | 3 | +2.86 | +0.95 |
-| Conviction | 5 | +1.60 | +0.32 |
-| Vengeance | 3 | +1.28 | +0.43 |
-| Champion of the Light | 3 | +1.16 | +0.39 |
-| Shield Specialization | 3 | +1.06 | +0.35 |
-| Swift Judgement | 1 | +0.90 | +0.90 |
-| Improved Judgement | 2 | +0.86 | +0.43 |
-| Precision | 3 | +0.72 | +0.24 |
-| Sacred Arbiter | 1 | +0.69 | +0.69 |
-| Redoubt | 5 | +0.45 | +0.09 |
-| Reckoning | 2 | +0.34 | +0.17 |
-| Benediction | 3 | +0.33 | +0.11 |
-| Instrument of Law | 1 | +0.31 | +0.31 |
-| Vindication | 3 | +0.26 | +0.09 |
-| Anticipation | 2 | +0.16 | +0.08 |
-| Deflection | 3 | +0.12 | +0.04 |
-| Sacred Duty | 1 | +0.04 | +0.04 |
-| Improved Righteous Fury | 1 | -0.01 | -0.01 |
+| Sanctified Judgement | 3 | +3.81 | +1.27 |
+| Holy Conduit | 2 | +3.43 | +1.72 |
+| Improved Seal of Fury | 1 | +3.08 | +3.08 |
+| One-Handed Weapon Specialization | 3 | +3.02 | +1.01 |
+| Conviction | 5 | +1.62 | +0.32 |
+| Champion of the Light | 3 | +1.33 | +0.44 |
+| Vengeance | 3 | +1.18 | +0.39 |
+| Shield Specialization | 3 | +1.08 | +0.36 |
+| Swift Judgement | 1 | +0.95 | +0.95 |
+| Improved Judgement | 2 | +0.91 | +0.45 |
+| Sacred Arbiter | 1 | +0.83 | +0.83 |
+| Precision | 3 | +0.74 | +0.25 |
+| Instrument of Law | 2 | +0.61 | +0.30 |
+| Redoubt | 5 | +0.46 | +0.09 |
+| Vindication | 1 | +0.25 | +0.25 |
+| Deflection | 4 | +0.21 | +0.05 |
+| Benediction | 3 | +0.13 | +0.04 |
+| Anticipation | 3 | +0.07 | +0.02 |
+| Divine Intellect | 1 | +0.04 | +0.04 |
+| Repentance | 1 | +0.00 | +0.00 |
+| Divine Strength | 1 | -0.05 | -0.05 |
 
-Race at levels 20-60 (seconds per kill): open winner 35.04.
+Race at levels 20-60 (seconds per kill): open winner 35.20.
 
 ## ret-dps
 
-**Open winner 9/8/34** (Retribution): talent values at level 60 (seconds per kill lost without the talent; the build: 31.89 s):
+**Open winner 8/8/35** (Retribution): talent values at level 60 (seconds per kill lost without the talent; the build: 31.89 s):
 
 | Talent | Ranks | Seconds lost without it | Per point |
 |---|---|---|---|
 | Sanctified Judgement | 3 | +2.41 | +0.80 |
 | Seal of Command | 1 | +1.87 | +1.87 |
 | Two-Handed Weapon Specialization | 3 | +1.63 | +0.54 |
-| Holy Conduit | 2 | +1.43 | +0.71 |
+| Holy Conduit | 2 | +1.45 | +0.72 |
 | Improved Seals | 3 | +1.33 | +0.44 |
 | Conviction | 5 | +1.28 | +0.26 |
 | Improved Judgement | 2 | +1.03 | +0.51 |
 | Instrument of Law | 2 | +0.93 | +0.46 |
-| Precision | 3 | +0.74 | +0.25 |
+| Precision | 3 | +0.75 | +0.25 |
 | Sacred Arbiter | 1 | +0.73 | +0.73 |
-| Divine Strength | 5 | +0.70 | +0.14 |
+| Divine Strength | 5 | +0.71 | +0.14 |
 | Vengeance | 3 | +0.61 | +0.20 |
-| Champion of the Light | 3 | +0.57 | +0.19 |
-| Vindication | 1 | +0.45 | +0.45 |
-| Benediction | 3 | +0.25 | +0.08 |
-| Toughness | 5 | +0.18 | +0.04 |
+| Champion of the Light | 3 | +0.54 | +0.18 |
+| Vindication | 2 | +0.47 | +0.23 |
+| Benediction | 3 | +0.22 | +0.07 |
+| Toughness | 5 | +0.19 | +0.04 |
 | Deflection | 3 | +0.14 | +0.05 |
 | Twist of Light | 1 | +0.13 | +0.13 |
-| Eye for an Eye | 1 | +0.03 | +0.03 |
-| Healing Light | 1 | -0.00 | -0.00 |
+| Eye for an Eye | 1 | +0.04 | +0.04 |
 
-Race at levels 20-60 (seconds per kill): open winner 27.93, leveling-retribution 28.04, opt-ret-dps-solo-60 28.32, opt-ret-dps-leveling-st 28.38, opt-ret-dps-leveling-aoe 29.21.
+Race at levels 20-60 (seconds per kill): open winner 27.97, leveling-retribution 28.04, opt-ret-dps-solo-60 28.32, opt-ret-dps-leveling-st 28.38, opt-ret-dps-leveling-aoe 29.21.
 

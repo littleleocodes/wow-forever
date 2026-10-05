@@ -1,0 +1,1339 @@
+{
+ "class": "paladin",
+ "date": "2026-10-05",
+ "rotations": {
+  "holy-leveling": {
+   "model": "ret-dps",
+   "trees": [
+    "Holy"
+   ],
+   "winner": {
+    "allocation": {
+     "Holy": [
+      [
+       "Divine Strength",
+       5
+      ],
+      [
+       "Divine Intellect",
+       2
+      ],
+      [
+       "Improved Seals",
+       3
+      ],
+      [
+       "Reverence",
+       3
+      ],
+      [
+       "Purifying Power",
+       2
+      ]
+     ],
+     "Protection": [],
+     "Retribution": [
+      [
+       "Deflection",
+       5
+      ],
+      [
+       "Benediction",
+       1
+      ],
+      [
+       "Improved Judgement",
+       2
+      ],
+      [
+       "Holy Conduit",
+       2
+      ],
+      [
+       "Conviction",
+       5
+      ],
+      [
+       "Vindication",
+       3
+      ],
+      [
+       "Sanctified Judgement",
+       3
+      ],
+      [
+       "Seal of Command",
+       1
+      ],
+      [
+       "Pursuit of Justice",
+       1
+      ],
+      [
+       "Sacred Arbiter",
+       1
+      ],
+      [
+       "Two-Handed Weapon Specialization",
+       3
+      ],
+      [
+       "Vengeance",
+       3
+      ],
+      [
+       "Repentance",
+       1
+      ],
+      [
+       "Champion of the Light",
+       3
+      ],
+      [
+       "Instrument of Law",
+       2
+      ]
+     ]
+    },
+    "split": "15/0/36",
+    "dps": 107.74,
+    "se": 0.1778,
+    "iterations": 100000
+   },
+   "runs_agree": 3,
+   "simulated_builds": 6910,
+   "important_features": [
+    {
+     "feature": "Retribution points",
+     "importance": 0.2696
+    },
+    {
+     "feature": "Champion of the Light",
+     "importance": 0.1311
+    },
+    {
+     "feature": "Sanctified Judgement",
+     "importance": 0.1288
+    },
+    {
+     "feature": "Seal of Command",
+     "importance": 0.0897
+    },
+    {
+     "feature": "Vengeance",
+     "importance": 0.0884
+    },
+    {
+     "feature": "Improved Seals",
+     "importance": 0.0541
+    },
+    {
+     "feature": "Two-Handed Weapon Specialization",
+     "importance": 0.05
+    },
+    {
+     "feature": "Holy Shield",
+     "importance": 0.0389
+    },
+    {
+     "feature": "Protection points",
+     "importance": 0.034
+    },
+    {
+     "feature": "Instrument of Law",
+     "importance": 0.023
+    },
+    {
+     "feature": "Sacred Arbiter",
+     "importance": 0.0138
+    },
+    {
+     "feature": "Redoubt",
+     "importance": 0.0085
+    }
+   ],
+   "order": [
+    {
+     "levels": "10",
+     "tree": "Retribution",
+     "talent": "Benediction",
+     "points": 1
+    },
+    {
+     "levels": "11-14",
+     "tree": "Retribution",
+     "talent": "Deflection",
+     "points": 4
+    },
+    {
+     "levels": "15-16",
+     "tree": "Retribution",
+     "talent": "Holy Conduit",
+     "points": 2
+    },
+    {
+     "levels": "17-18",
+     "tree": "Retribution",
+     "talent": "Improved Judgement",
+     "points": 2
+    },
+    {
+     "levels": "19",
+     "tree": "Retribution",
+     "talent": "Conviction",
+     "points": 1
+    },
+    {
+     "levels": "20",
+     "tree": "Retribution",
+     "talent": "Seal of Command",
+     "points": 1
+    },
+    {
+     "levels": "21-22",
+     "tree": "Retribution",
+     "talent": "Sanctified Judgement",
+     "points": 2
+    },
+    {
+     "levels": "23",
+     "tree": "Retribution",
+     "talent": "Pursuit of Justice",
+     "points": 1
+    },
+    {
+     "levels": "24",
+     "tree": "Retribution",
+     "talent": "Sanctified Judgement",
+     "points": 1
+    },
+    {
+     "levels": "25",
+     "tree": "Retribution",
+     "talent": "Sacred Arbiter",
+     "points": 1
+    },
+    {
+     "levels": "26-29",
+     "tree": "Retribution",
+     "talent": "Conviction",
+     "points": 4
+    },
+    {
+     "levels": "30-32",
+     "tree": "Retribution",
+     "talent": "Two-Handed Weapon Specialization",
+     "points": 3
+    },
+    {
+     "levels": "33",
+     "tree": "Retribution",
+     "talent": "Repentance",
+     "points": 1
+    },
+    {
+     "levels": "34",
+     "tree": "Retribution",
+     "talent": "Vengeance",
+     "points": 1
+    },
+    {
+     "levels": "35-36",
+     "tree": "Retribution",
+     "talent": "Instrument of Law",
+     "points": 2
+    },
+    {
+     "levels": "37",
+     "tree": "Retribution",
+     "talent": "Champion of the Light",
+     "points": 1
+    },
+    {
+     "levels": "38-42",
+     "tree": "Holy",
+     "talent": "Divine Strength",
+     "points": 5
+    },
+    {
+     "levels": "43-45",
+     "tree": "Holy",
+     "talent": "Improved Seals",
+     "points": 3
+    },
+    {
+     "levels": "46-47",
+     "tree": "Retribution",
+     "talent": "Champion of the Light",
+     "points": 2
+    },
+    {
+     "levels": "48-49",
+     "tree": "Retribution",
+     "talent": "Vengeance",
+     "points": 2
+    },
+    {
+     "levels": "50-52",
+     "tree": "Retribution",
+     "talent": "Vindication",
+     "points": 3
+    },
+    {
+     "levels": "53-54",
+     "tree": "Holy",
+     "talent": "Divine Intellect",
+     "points": 2
+    },
+    {
+     "levels": "55-57",
+     "tree": "Holy",
+     "talent": "Reverence",
+     "points": 3
+    },
+    {
+     "levels": "58-59",
+     "tree": "Holy",
+     "talent": "Purifying Power",
+     "points": 2
+    },
+    {
+     "levels": "60",
+     "tree": "Retribution",
+     "talent": "Deflection",
+     "points": 1
+    }
+   ],
+   "race": {
+    "open winner": {
+     "weighted": 28.15,
+     "levels": {
+      "20": 19.47,
+      "30": 23.26,
+      "40": 28.15,
+      "50": 28.46,
+      "60": 33.23
+     }
+    },
+    "holy-leveling": {
+     "weighted": 35.45,
+     "levels": {
+      "20": 22.17,
+      "30": 27.67,
+      "40": 35.42,
+      "50": 36.88,
+      "60": 42.62
+     }
+    }
+   },
+   "values": {
+    "Sanctified Judgement": {
+     "ranks": 3,
+     "seconds": 3.43,
+     "per_point": 1.14
+    },
+    "Two-Handed Weapon Specialization": {
+     "ranks": 3,
+     "seconds": 1.62,
+     "per_point": 0.54
+    },
+    "Improved Seals": {
+     "ranks": 3,
+     "seconds": 1.61,
+     "per_point": 0.54
+    },
+    "Conviction": {
+     "ranks": 5,
+     "seconds": 1.5,
+     "per_point": 0.3
+    },
+    "Seal of Command": {
+     "ranks": 1,
+     "seconds": 1.22,
+     "per_point": 1.22
+    },
+    "Improved Judgement": {
+     "ranks": 2,
+     "seconds": 0.93,
+     "per_point": 0.47
+    },
+    "Reverence": {
+     "ranks": 3,
+     "seconds": 0.9,
+     "per_point": 0.3
+    },
+    "Sacred Arbiter": {
+     "ranks": 1,
+     "seconds": 0.82,
+     "per_point": 0.82
+    },
+    "Vengeance": {
+     "ranks": 3,
+     "seconds": 0.72,
+     "per_point": 0.24
+    },
+    "Divine Strength": {
+     "ranks": 5,
+     "seconds": 0.65,
+     "per_point": 0.13
+    },
+    "Champion of the Light": {
+     "ranks": 3,
+     "seconds": 0.51,
+     "per_point": 0.17
+    },
+    "Vindication": {
+     "ranks": 3,
+     "seconds": 0.28,
+     "per_point": 0.09
+    },
+    "Deflection": {
+     "ranks": 5,
+     "seconds": 0.1,
+     "per_point": 0.02
+    },
+    "Benediction": {
+     "ranks": 1,
+     "seconds": 0.01,
+     "per_point": 0.01
+    },
+    "Divine Intellect": {
+     "ranks": 2,
+     "seconds": -0.0,
+     "per_point": -0.0
+    },
+    "Purifying Power": {
+     "ranks": 2,
+     "seconds": 0.0,
+     "per_point": 0.0
+    },
+    "Holy Conduit": {
+     "ranks": 2,
+     "seconds": 0.0,
+     "per_point": 0.0
+    },
+    "Pursuit of Justice": {
+     "ranks": 1,
+     "seconds": 0.0,
+     "per_point": 0.0
+    },
+    "Repentance": {
+     "ranks": 1,
+     "seconds": 0.0,
+     "per_point": 0.0
+    },
+    "Instrument of Law": {
+     "ranks": 2,
+     "seconds": 0.0,
+     "per_point": 0.0
+    }
+   },
+   "values_base": 33.39,
+   "split": "15/0/36",
+   "family": "Retribution",
+   "link": "https://talentsforever.com/paladin/60/520030032--5122533110133132-4",
+   "ours_best": "holy-leveling",
+   "gain_vs_ours": 0.2593,
+   "minutes": 21.2,
+   "done": true
+  },
+  "prot-leveling": {
+   "model": "ret-dps",
+   "trees": [
+    "Protection"
+   ],
+   "winner": {
+    "allocation": {
+     "Holy": [
+      [
+       "Divine Strength",
+       1
+      ],
+      [
+       "Divine Intellect",
+       1
+      ]
+     ],
+     "Protection": [
+      [
+       "Redoubt",
+       5
+      ],
+      [
+       "Precision",
+       3
+      ],
+      [
+       "Anticipation",
+       3
+      ],
+      [
+       "Improved Seal of Fury",
+       1
+      ],
+      [
+       "Shield Specialization",
+       3
+      ],
+      [
+       "Swift Judgement",
+       1
+      ],
+      [
+       "One-Handed Weapon Specialization",
+       3
+      ]
+     ],
+     "Retribution": [
+      [
+       "Deflection",
+       4
+      ],
+      [
+       "Benediction",
+       3
+      ],
+      [
+       "Improved Judgement",
+       2
+      ],
+      [
+       "Holy Conduit",
+       2
+      ],
+      [
+       "Conviction",
+       5
+      ],
+      [
+       "Vindication",
+       1
+      ],
+      [
+       "Sanctified Judgement",
+       3
+      ],
+      [
+       "Sacred Arbiter",
+       1
+      ],
+      [
+       "Vengeance",
+       3
+      ],
+      [
+       "Repentance",
+       1
+      ],
+      [
+       "Champion of the Light",
+       3
+      ],
+      [
+       "Instrument of Law",
+       2
+      ]
+     ]
+    },
+    "split": "2/19/30",
+    "dps": 105.52,
+    "se": 0.1458,
+    "iterations": 100000
+   },
+   "runs_agree": 1,
+   "simulated_builds": 7289,
+   "important_features": [
+    {
+     "feature": "Holy points",
+     "importance": 0.1906
+    },
+    {
+     "feature": "Vengeance",
+     "importance": 0.1418
+    },
+    {
+     "feature": "One-Handed Weapon Specialization",
+     "importance": 0.122
+    },
+    {
+     "feature": "Sanctified Judgement",
+     "importance": 0.0854
+    },
+    {
+     "feature": "Divine Intellect",
+     "importance": 0.0639
+    },
+    {
+     "feature": "Toughness",
+     "importance": 0.0532
+    },
+    {
+     "feature": "Improved Seal of Fury",
+     "importance": 0.0486
+    },
+    {
+     "feature": "Healing Light",
+     "importance": 0.0398
+    },
+    {
+     "feature": "Swift Judgement",
+     "importance": 0.0317
+    },
+    {
+     "feature": "Champion of the Light",
+     "importance": 0.0301
+    },
+    {
+     "feature": "Holy Conduit",
+     "importance": 0.0274
+    },
+    {
+     "feature": "Protection points",
+     "importance": 0.0238
+    }
+   ],
+   "order": [
+    {
+     "levels": "10-12",
+     "tree": "Retribution",
+     "talent": "Benediction",
+     "points": 3
+    },
+    {
+     "levels": "13-14",
+     "tree": "Retribution",
+     "talent": "Deflection",
+     "points": 2
+    },
+    {
+     "levels": "15-16",
+     "tree": "Retribution",
+     "talent": "Holy Conduit",
+     "points": 2
+    },
+    {
+     "levels": "17-18",
+     "tree": "Retribution",
+     "talent": "Improved Judgement",
+     "points": 2
+    },
+    {
+     "levels": "19",
+     "tree": "Retribution",
+     "talent": "Conviction",
+     "points": 1
+    },
+    {
+     "levels": "20-22",
+     "tree": "Retribution",
+     "talent": "Sanctified Judgement",
+     "points": 3
+    },
+    {
+     "levels": "23-24",
+     "tree": "Retribution",
+     "talent": "Conviction",
+     "points": 2
+    },
+    {
+     "levels": "25",
+     "tree": "Retribution",
+     "talent": "Sacred Arbiter",
+     "points": 1
+    },
+    {
+     "levels": "26-27",
+     "tree": "Retribution",
+     "talent": "Conviction",
+     "points": 2
+    },
+    {
+     "levels": "28",
+     "tree": "Retribution",
+     "talent": "Vindication",
+     "points": 1
+    },
+    {
+     "levels": "29",
+     "tree": "Retribution",
+     "talent": "Deflection",
+     "points": 1
+    },
+    {
+     "levels": "30-32",
+     "tree": "Retribution",
+     "talent": "Vengeance",
+     "points": 3
+    },
+    {
+     "levels": "33",
+     "tree": "Retribution",
+     "talent": "Repentance",
+     "points": 1
+    },
+    {
+     "levels": "34",
+     "tree": "Retribution",
+     "talent": "Deflection",
+     "points": 1
+    },
+    {
+     "levels": "35-36",
+     "tree": "Retribution",
+     "talent": "Instrument of Law",
+     "points": 2
+    },
+    {
+     "levels": "37",
+     "tree": "Retribution",
+     "talent": "Champion of the Light",
+     "points": 1
+    },
+    {
+     "levels": "38",
+     "tree": "Holy",
+     "talent": "Divine Strength",
+     "points": 1
+    },
+    {
+     "levels": "39-40",
+     "tree": "Retribution",
+     "talent": "Champion of the Light",
+     "points": 2
+    },
+    {
+     "levels": "41-45",
+     "tree": "Protection",
+     "talent": "Redoubt",
+     "points": 5
+    },
+    {
+     "levels": "46-48",
+     "tree": "Protection",
+     "talent": "Precision",
+     "points": 3
+    },
+    {
+     "levels": "49-50",
+     "tree": "Protection",
+     "talent": "Anticipation",
+     "points": 2
+    },
+    {
+     "levels": "51-53",
+     "tree": "Protection",
+     "talent": "Shield Specialization",
+     "points": 3
+    },
+    {
+     "levels": "54",
+     "tree": "Protection",
+     "talent": "Anticipation",
+     "points": 1
+    },
+    {
+     "levels": "55",
+     "tree": "Protection",
+     "talent": "Improved Seal of Fury",
+     "points": 1
+    },
+    {
+     "levels": "56",
+     "tree": "Protection",
+     "talent": "Swift Judgement",
+     "points": 1
+    },
+    {
+     "levels": "57",
+     "tree": "Holy",
+     "talent": "Divine Intellect",
+     "points": 1
+    },
+    {
+     "levels": "58-60",
+     "tree": "Protection",
+     "talent": "One-Handed Weapon Specialization",
+     "points": 3
+    }
+   ],
+   "race": {
+    "open winner": {
+     "weighted": 35.2,
+     "levels": {
+      "20": 37.44,
+      "30": 30.02,
+      "40": 37.47,
+      "50": 36.95,
+      "60": 34.06
+     }
+    }
+   },
+   "values": {
+    "Sanctified Judgement": {
+     "ranks": 3,
+     "seconds": 3.81,
+     "per_point": 1.27
+    },
+    "Holy Conduit": {
+     "ranks": 2,
+     "seconds": 3.43,
+     "per_point": 1.72
+    },
+    "Improved Seal of Fury": {
+     "ranks": 1,
+     "seconds": 3.08,
+     "per_point": 3.08
+    },
+    "One-Handed Weapon Specialization": {
+     "ranks": 3,
+     "seconds": 3.02,
+     "per_point": 1.01
+    },
+    "Conviction": {
+     "ranks": 5,
+     "seconds": 1.62,
+     "per_point": 0.32
+    },
+    "Champion of the Light": {
+     "ranks": 3,
+     "seconds": 1.33,
+     "per_point": 0.44
+    },
+    "Vengeance": {
+     "ranks": 3,
+     "seconds": 1.18,
+     "per_point": 0.39
+    },
+    "Shield Specialization": {
+     "ranks": 3,
+     "seconds": 1.08,
+     "per_point": 0.36
+    },
+    "Swift Judgement": {
+     "ranks": 1,
+     "seconds": 0.95,
+     "per_point": 0.95
+    },
+    "Improved Judgement": {
+     "ranks": 2,
+     "seconds": 0.91,
+     "per_point": 0.45
+    },
+    "Sacred Arbiter": {
+     "ranks": 1,
+     "seconds": 0.83,
+     "per_point": 0.83
+    },
+    "Precision": {
+     "ranks": 3,
+     "seconds": 0.74,
+     "per_point": 0.25
+    },
+    "Instrument of Law": {
+     "ranks": 2,
+     "seconds": 0.61,
+     "per_point": 0.3
+    },
+    "Redoubt": {
+     "ranks": 5,
+     "seconds": 0.46,
+     "per_point": 0.09
+    },
+    "Vindication": {
+     "ranks": 1,
+     "seconds": 0.25,
+     "per_point": 0.25
+    },
+    "Deflection": {
+     "ranks": 4,
+     "seconds": 0.21,
+     "per_point": 0.05
+    },
+    "Benediction": {
+     "ranks": 3,
+     "seconds": 0.13,
+     "per_point": 0.04
+    },
+    "Anticipation": {
+     "ranks": 3,
+     "seconds": 0.07,
+     "per_point": 0.02
+    },
+    "Divine Intellect": {
+     "ranks": 1,
+     "seconds": 0.04,
+     "per_point": 0.04
+    },
+    "Repentance": {
+     "ranks": 1,
+     "seconds": 0.0,
+     "per_point": 0.0
+    },
+    "Divine Strength": {
+     "ranks": 1,
+     "seconds": -0.05,
+     "per_point": -0.05
+    }
+   },
+   "values_base": 33.96,
+   "split": "2/19/30",
+   "family": "Retribution",
+   "link": "https://talentsforever.com/paladin/60/11-05303103013-4322513000103132-4",
+   "ours_best": null,
+   "gain_vs_ours": null,
+   "minutes": 24.6,
+   "done": true
+  },
+  "ret-dps": {
+   "model": "ret-dps",
+   "trees": [
+    "Retribution"
+   ],
+   "winner": {
+    "allocation": {
+     "Holy": [
+      [
+       "Divine Strength",
+       5
+      ],
+      [
+       "Improved Seals",
+       3
+      ]
+     ],
+     "Protection": [
+      [
+       "Toughness",
+       5
+      ],
+      [
+       "Precision",
+       3
+      ]
+     ],
+     "Retribution": [
+      [
+       "Deflection",
+       3
+      ],
+      [
+       "Benediction",
+       3
+      ],
+      [
+       "Improved Judgement",
+       2
+      ],
+      [
+       "Holy Conduit",
+       2
+      ],
+      [
+       "Conviction",
+       5
+      ],
+      [
+       "Vindication",
+       2
+      ],
+      [
+       "Sanctified Judgement",
+       3
+      ],
+      [
+       "Seal of Command",
+       1
+      ],
+      [
+       "Eye for an Eye",
+       1
+      ],
+      [
+       "Sacred Arbiter",
+       1
+      ],
+      [
+       "Two-Handed Weapon Specialization",
+       3
+      ],
+      [
+       "Vengeance",
+       3
+      ],
+      [
+       "Champion of the Light",
+       3
+      ],
+      [
+       "Instrument of Law",
+       2
+      ],
+      [
+       "Twist of Light",
+       1
+      ]
+     ]
+    },
+    "split": "8/8/35",
+    "dps": 112.49,
+    "se": 0.1605,
+    "iterations": 100000
+   },
+   "runs_agree": 3,
+   "simulated_builds": 7216,
+   "important_features": [
+    {
+     "feature": "Retribution points",
+     "importance": 0.3295
+    },
+    {
+     "feature": "Champion of the Light",
+     "importance": 0.1946
+    },
+    {
+     "feature": "Seal of Command",
+     "importance": 0.0861
+    },
+    {
+     "feature": "Two-Handed Weapon Specialization",
+     "importance": 0.0719
+    },
+    {
+     "feature": "Sanctified Judgement",
+     "importance": 0.0597
+    },
+    {
+     "feature": "Vengeance",
+     "importance": 0.0573
+    },
+    {
+     "feature": "Improved Seals",
+     "importance": 0.0461
+    },
+    {
+     "feature": "Deflection",
+     "importance": 0.03
+    },
+    {
+     "feature": "Redoubt",
+     "importance": 0.0237
+    },
+    {
+     "feature": "Instrument of Law",
+     "importance": 0.0172
+    },
+    {
+     "feature": "Holy Conduit",
+     "importance": 0.0127
+    },
+    {
+     "feature": "Protection points",
+     "importance": 0.0088
+    }
+   ],
+   "order": [
+    {
+     "levels": "10-12",
+     "tree": "Retribution",
+     "talent": "Benediction",
+     "points": 3
+    },
+    {
+     "levels": "13-14",
+     "tree": "Retribution",
+     "talent": "Deflection",
+     "points": 2
+    },
+    {
+     "levels": "15-16",
+     "tree": "Retribution",
+     "talent": "Holy Conduit",
+     "points": 2
+    },
+    {
+     "levels": "17-18",
+     "tree": "Retribution",
+     "talent": "Improved Judgement",
+     "points": 2
+    },
+    {
+     "levels": "19",
+     "tree": "Retribution",
+     "talent": "Conviction",
+     "points": 1
+    },
+    {
+     "levels": "20",
+     "tree": "Retribution",
+     "talent": "Seal of Command",
+     "points": 1
+    },
+    {
+     "levels": "21-23",
+     "tree": "Retribution",
+     "talent": "Sanctified Judgement",
+     "points": 3
+    },
+    {
+     "levels": "24",
+     "tree": "Retribution",
+     "talent": "Conviction",
+     "points": 1
+    },
+    {
+     "levels": "25",
+     "tree": "Retribution",
+     "talent": "Sacred Arbiter",
+     "points": 1
+    },
+    {
+     "levels": "26-28",
+     "tree": "Retribution",
+     "talent": "Conviction",
+     "points": 3
+    },
+    {
+     "levels": "29",
+     "tree": "Retribution",
+     "talent": "Vindication",
+     "points": 1
+    },
+    {
+     "levels": "30-32",
+     "tree": "Retribution",
+     "talent": "Two-Handed Weapon Specialization",
+     "points": 3
+    },
+    {
+     "levels": "33-34",
+     "tree": "Retribution",
+     "talent": "Vengeance",
+     "points": 2
+    },
+    {
+     "levels": "35-36",
+     "tree": "Retribution",
+     "talent": "Instrument of Law",
+     "points": 2
+    },
+    {
+     "levels": "37-39",
+     "tree": "Retribution",
+     "talent": "Champion of the Light",
+     "points": 3
+    },
+    {
+     "levels": "40-44",
+     "tree": "Holy",
+     "talent": "Divine Strength",
+     "points": 5
+    },
+    {
+     "levels": "45-47",
+     "tree": "Holy",
+     "talent": "Improved Seals",
+     "points": 3
+    },
+    {
+     "levels": "48",
+     "tree": "Retribution",
+     "talent": "Vengeance",
+     "points": 1
+    },
+    {
+     "levels": "49",
+     "tree": "Retribution",
+     "talent": "Vindication",
+     "points": 1
+    },
+    {
+     "levels": "50-54",
+     "tree": "Protection",
+     "talent": "Toughness",
+     "points": 5
+    },
+    {
+     "levels": "55-57",
+     "tree": "Protection",
+     "talent": "Precision",
+     "points": 3
+    },
+    {
+     "levels": "58",
+     "tree": "Retribution",
+     "talent": "Deflection",
+     "points": 1
+    },
+    {
+     "levels": "59",
+     "tree": "Retribution",
+     "talent": "Eye for an Eye",
+     "points": 1
+    },
+    {
+     "levels": "60",
+     "tree": "Retribution",
+     "talent": "Twist of Light",
+     "points": 1
+    }
+   ],
+   "race": {
+    "open winner": {
+     "weighted": 27.97,
+     "levels": {
+      "20": 20.06,
+      "30": 23.15,
+      "40": 28.57,
+      "50": 28.79,
+      "60": 31.93
+     }
+    },
+    "leveling-retribution": {
+     "weighted": 28.04,
+     "levels": {
+      "20": 19.91,
+      "30": 23.19,
+      "40": 28.54,
+      "50": 28.81,
+      "60": 32.2
+     }
+    },
+    "opt-ret-dps-leveling-aoe": {
+     "weighted": 29.21,
+     "levels": {
+      "20": 22.16,
+      "30": 26.13,
+      "40": 30.85,
+      "50": 29.22,
+      "60": 32.0
+     }
+    },
+    "opt-ret-dps-leveling-st": {
+     "weighted": 28.38,
+     "levels": {
+      "20": 20.27,
+      "30": 23.59,
+      "40": 29.51,
+      "50": 28.99,
+      "60": 32.21
+     }
+    },
+    "opt-ret-dps-solo-60": {
+     "weighted": 28.32,
+     "levels": {
+      "20": 20.27,
+      "30": 23.59,
+      "40": 29.19,
+      "50": 28.99,
+      "60": 32.21
+     }
+    }
+   },
+   "values": {
+    "Sanctified Judgement": {
+     "ranks": 3,
+     "seconds": 2.41,
+     "per_point": 0.8
+    },
+    "Seal of Command": {
+     "ranks": 1,
+     "seconds": 1.87,
+     "per_point": 1.87
+    },
+    "Two-Handed Weapon Specialization": {
+     "ranks": 3,
+     "seconds": 1.63,
+     "per_point": 0.54
+    },
+    "Holy Conduit": {
+     "ranks": 2,
+     "seconds": 1.45,
+     "per_point": 0.72
+    },
+    "Improved Seals": {
+     "ranks": 3,
+     "seconds": 1.33,
+     "per_point": 0.44
+    },
+    "Conviction": {
+     "ranks": 5,
+     "seconds": 1.28,
+     "per_point": 0.26
+    },
+    "Improved Judgement": {
+     "ranks": 2,
+     "seconds": 1.03,
+     "per_point": 0.51
+    },
+    "Instrument of Law": {
+     "ranks": 2,
+     "seconds": 0.93,
+     "per_point": 0.46
+    },
+    "Precision": {
+     "ranks": 3,
+     "seconds": 0.75,
+     "per_point": 0.25
+    },
+    "Sacred Arbiter": {
+     "ranks": 1,
+     "seconds": 0.73,
+     "per_point": 0.73
+    },
+    "Divine Strength": {
+     "ranks": 5,
+     "seconds": 0.71,
+     "per_point": 0.14
+    },
+    "Vengeance": {
+     "ranks": 3,
+     "seconds": 0.61,
+     "per_point": 0.2
+    },
+    "Champion of the Light": {
+     "ranks": 3,
+     "seconds": 0.54,
+     "per_point": 0.18
+    },
+    "Vindication": {
+     "ranks": 2,
+     "seconds": 0.47,
+     "per_point": 0.23
+    },
+    "Benediction": {
+     "ranks": 3,
+     "seconds": 0.22,
+     "per_point": 0.07
+    },
+    "Toughness": {
+     "ranks": 5,
+     "seconds": 0.19,
+     "per_point": 0.04
+    },
+    "Deflection": {
+     "ranks": 3,
+     "seconds": 0.14,
+     "per_point": 0.05
+    },
+    "Twist of Light": {
+     "ranks": 1,
+     "seconds": 0.13,
+     "per_point": 0.13
+    },
+    "Eye for an Eye": {
+     "ranks": 1,
+     "seconds": 0.04,
+     "per_point": 0.04
+    }
+   },
+   "values_base": 31.89,
+   "split": "8/8/35",
+   "family": "Retribution",
+   "link": "https://talentsforever.com/paladin/60/50003-503-33225231011330321-4",
+   "ours_best": "leveling-retribution",
+   "gain_vs_ours": 0.0025,
+   "minutes": 16.3,
+   "done": true
+  }
+ }
+}

@@ -102,7 +102,8 @@ def with_line(apl, line, at):
     return a
 
 
-def probe(cls, spec, entry, build, setting, gear_items, any_split=False, log=print):
+def probe(cls, spec, entry, build, setting, gear_items, any_split=False, log=print, only=None):
+    """`only`: talent names to probe (default every talent ability; family_search.py probes the abilities a winner holds)."""
     repo = R.repo_path(argparse.Namespace(repo=None))
     e = R.SPECS[cls][entry]
     base_apl = json.load(open(R.apl_path(e, repo, setting), encoding="utf-8"))
@@ -127,6 +128,8 @@ def probe(cls, spec, entry, build, setting, gear_items, any_split=False, log=pri
     filler = spots(base_apl)[2][1]
     results = []
     for talent, name, sid, text in talent_abilities(cls):
+        if only is not None and talent not in only:
+            continue
         rank_ids = set()
         for tab in json.load(open(ROOT / "_reference/data/forever-spells" / f"{cls}.json", encoding="utf-8")).get("tabs", []):
             for sp in tab.get("spells", []):

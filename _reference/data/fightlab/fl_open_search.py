@@ -47,8 +47,10 @@ def _load(name, path):
 
 
 OUT = HERE / "open"
+KNOWN = ROOT / "_reference/data/raidsim/known-positives.json"
 PAGE = ROOT / "_reference" / "leveling-open-search.md"
 TODAY = datetime.date.today().isoformat()
+POLISH = dict(fights=150, rounds=6, per_pair=2, top=5, full_fights=600, min_gain=0.005)   # the fight lab is noisier: a bigger bar
 SEARCH = dict(runs=3, budget=2000, screen=400, patience=5, max_rounds=20, random_init=300, pool=8000, parents=40, finalists=6,
               race_stages=((1500, 2, 4), (4000, 3, 2), (10000, 4, 2)), cert_its=(800, 4000))
 RACE_FIGHTS, VALUE_FIGHTS = 3000, 3000
@@ -87,6 +89,13 @@ class LabSim:
         return [(3600.0 / t, 3600.0 * sd / t ** 2) if t < 1e8 else (0.0, 0.0) for t, sd in res]
 
 
+def known_positives(cls):
+    if not KNOWN.exists():
+        return []
+    return [{n: r for n, r in p["allocation"].items() if r} for p in json.load(open(KNOWN, encoding="utf-8")).get("positives", [])
+            if p.get("class") == cls and p.get("kind") == "leveling" and p.get("allocation")]
+
+
 def rotations(cls):
     """{fight-lab spec: (scorer model, [trees that level with it])}."""
     DL = _load("derive_leveling_open", ROOT / "_reference/data/derive_leveling.py")
@@ -105,13 +114,15 @@ def main():
     ap.add_argument("--smoke", action="store_true", help="tiny budgets, a separate record, nothing else written (a test)")
     ap.add_argument("--jobs", type=int, default=max(1, (os.cpu_count() or 4) - 2))
     ap.add_argument("--report", action="store_true")
+    ap.add_argument("--no-known", action="store_true", help="leave out the known positives and the last run's winners: a clean test of the search")
     a = ap.parse_args()
-    global OUT, SEARCH, RACE_FIGHTS, VALUE_FIGHTS, SMOKE
+    global OUT, SEARCH, RACE_FIGHTS, VALUE_FIGHTS, SMOKE, POLISH
     if a.report:
         write_page()
         return
     if a.smoke:
         OUT, SMOKE, RACE_FIGHTS, VALUE_FIGHTS = HERE / "open-smoke", True, 200, 200
+        POLISH = dict(fights=40, rounds=1, per_pair=1, top=1, full_fights=60, min_gain=0.01)
         SEARCH = dict(runs=1, budget=60, screen=60, patience=1, max_rounds=1, random_init=20, pool=300, parents=6, finalists=2,
                       race_stages=((100, 2, 2), (200, 3, 1), (300, 4, 1)), cert_its=(60, 200))
     cls = a.cls
@@ -132,11 +143,9 @@ def main():
 
     data = {b["id"]: b for b in json.load(open(paths.builds_json("forever", cls), encoding="utf-8"))["builds"]}
     space = MLT.Space(cls, "any", any_split=True)
-    starts = [FT.flat_of(b) for b in data.values()] + MLT.popular_allocs(cls) + warm
+    starts = [FT.flat_of(b) for b in data.values()] + MLT.popular_allocs(cls) + ([] if a.no_known else warm + known_positives(cls))
     starts = [x for x in starts if space.valid(x)]
     space.start_splits = [space.split(x) for x in starts]
-    import random
-    starts = starts + space.keystone_starts(random.Random(83))   # every pair of keystones from different trees
     with multiprocessing.Pool(a.jobs, initializer=FT._init, initargs=("greens",)) as pool:
         for spec, (model, trees) in rotations(cls).items():
             if a.rotation and spec not in a.rotation:
@@ -146,23 +155,38 @@ def main():
                 continue
             t0 = time.time()
             if "winner" not in r:
-                log(f"== {cls} {spec} (levels as {', '.join(trees)}): open search at level 60, {len(starts)} valid starts")
+                import random
                 sim = LabSim(cls, spec, pool, a.jobs)
+                log(f"== {cls} {spec}: family polish over every pair of {len(space.keystones())} keystones from different trees")
+                fam = MLT.family_polish(space, sim, random.Random(83), log, **POLISH)
+                r["families"] = [{"keystones": lab, "split": space.split(x), "family": space.classify(x), "kills_per_hour": round(sc, 2)}
+                                 for sc, x, lab in fam[:15]]
+                log(f"== {cls} {spec} (levels as {', '.join(trees)}): open search at level 60, {len(starts) + len(fam)} starts")
                 opts = MLT.defaults(**SEARCH, seed=81)
-                rec, win = MLT.optimize(space, {spec: sim}, starts, opts, log)
+                rec, win = MLT.optimize(space, {spec: sim}, starts + [x for _, x, _ in fam], opts, log)
                 r.update({"winner": rec["winner"], "runs_agree": rec["runs_agree"], "simulated_builds": rec["simulated_builds"],
-                          "important_features": rec.get("important_features")})
-                save()
-            w = FT.flat_of(r["winner"])
-            if "order" not in r:
-                r["order"] = FT.order_of(cls, model, w)
+                          "important_features": rec.get("important_features"), "finalists": rec.get("finalists") or []})
                 save()
             ours = {bid: b for bid, b in data.items() if SM.mode_of(b) == "leveling" and SM.spec_of(cls, b) in trees and b.get("order")}
             if "race" not in r:
-                builds = [{"id": "open winner", "allocation": r["winner"]["allocation"], "order": r["order"]}] + list(ours.values())
+                # the winner is picked by the 20-60 race among the level-60 finalists (2026-10-05: a build best at 60 can be slower on the
+                # way), each with the scorer's leveling order, raced together with our leveling builds
+                cands, seen = [], set()
+                for f in [r["winner"]] + r.get("finalists", []):
+                    k = tuple(sorted(FT.flat_of(f).items()))
+                    if k not in seen and len(cands) < 5:
+                        seen.add(k)
+                        cands.append({"id": f"finalist {space.split(FT.flat_of(f))}", "allocation": f["allocation"], "order": FT.order_of(cls, model, FT.flat_of(f))})
+                builds = cands + list(ours.values())
                 res = FT.race(pool, cls, spec, builds, RACE_FIGHTS, 3)
-                r["race"] = {b["id"]: {"weighted": round(x[0], 2), "levels": {str(L): round(v, 2) for L, v in x[1].items()}} for b, x in zip(builds, res)}
+                table = {b["id"]: {"weighted": round(x[0], 2), "levels": {str(L): round(v, 2) for L, v in x[1].items()}} for b, x in zip(builds, res)}
+                best = min(range(len(cands)), key=lambda i: res[i][0])
+                r["winner"] = {"allocation": cands[best]["allocation"], "split": space.split(FT.flat_of(cands[best])), "picked_by": "the 20-60 race among the finalists"}
+                r["order"] = cands[best]["order"]
+                table["open winner"] = table.pop(cands[best]["id"])
+                r["race"] = table
                 save()
+            w = FT.flat_of(r["winner"])
             if "values" not in r:
                 jobs = [(cls, spec, w, 60, VALUE_FIGHTS, 5)] + [(cls, spec, {k: v for k, v in w.items() if k != n}, 60, VALUE_FIGHTS, 5) for n in w]
                 res = pool.map(_ttk, jobs, chunksize=1)
@@ -172,7 +196,7 @@ def main():
                                           key=lambda kv: -kv[1]["seconds"]))
                 r["values_base"] = round(base, 2)
                 save()
-            best = min((k for k in r["race"] if k != "open winner"), key=lambda k: r["race"][k]["weighted"], default=None)
+            best = min((k for k in r["race"] if k != "open winner" and not k.startswith("finalist ")), key=lambda k: r["race"][k]["weighted"], default=None)
             r.update({"split": space.split(w), "family": space.classify(w), "link": RSH.tf_link(cls, w), "ours_best": best,
                       "gain_vs_ours": round(r["race"][best]["weighted"] / r["race"]["open winner"]["weighted"] - 1, 4) if best else None,
                       "minutes": round((time.time() - t0) / 60, 1), "done": True})

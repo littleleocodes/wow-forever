@@ -1,0 +1,69 @@
+{
+ "_readme": "Builds the open searches must find or beat (raidsim/search_check.py): known positives, each found once and missed by an earlier search. `allocation` is a flat {talent: ranks}; `build` names a build in the class's proposed-builds.json instead (repairs follow it). kind raid: entry = the specs.json entry (its rotation, full raid); kind leveling: rotation = the fight-lab spec.",
+ "positives": [
+  {
+   "class": "hunter",
+   "kind": "raid",
+   "entry": "melee-dps",
+   "name": "Summon Hawk + Lone Wolf melee hunter (16/11/24)",
+   "allocation": {
+    "Deadly Aspects": 5,
+    "Focused Fire": 2,
+    "Improved Aspect of the Monkey": 3,
+    "Unleashed Fury": 5,
+    "Summon Hawk": 1,
+    "Lethal Attacks": 5,
+    "Careful Aim": 5,
+    "Lone Wolf": 1,
+    "Improved Tracking": 5,
+    "Savage Strikes": 2,
+    "Survivalist": 3,
+    "Clever Traps": 2,
+    "Surefooted": 3,
+    "Predator's Edge": 5,
+    "Expose Prey": 2,
+    "Strider Kick": 1,
+    "Survivalist's Discipline": 1
+   },
+   "found": "by hand from the user's Summon Hawk build, 2026-10-03; 1118 vs 1040 DPS for the Survival pick on b0f0df3",
+   "missed_by": "deep_opt.py (family rule) and the first two open searches (random builds drawn only near the starts; a raw keystone seed dropped before tuning)"
+  },
+  {
+   "class": "warrior",
+   "kind": "raid",
+   "entry": "arms-battle-raid",
+   "build": "arms-community-parse",
+   "name": "the community's Arms build (Mortal Strike behind Sweeping Strikes)",
+   "found": "talentsforever.com popular builds, 2026-10-01; +13.7% over our Arms build in a full raid",
+   "missed_by": "every simulator search before prerequisite-chain moves (Mortal Strike requires Sweeping Strikes, worth ~1% alone)"
+  },
+  {
+   "class": "hunter",
+   "kind": "leveling",
+   "rotation": "melee-dps",
+   "name": "melee hunter with a pet (17/10/24)",
+   "allocation": {
+    "Deadly Aspects": 5,
+    "Endurance Training": 3,
+    "Focused Fire": 2,
+    "Unleashed Fury": 5,
+    "Ferocity": 2,
+    "Lethal Attacks": 5,
+    "Improved Stings": 3,
+    "Efficiency": 1,
+    "Careful Aim": 1,
+    "Improved Tracking": 5,
+    "Deflection": 3,
+    "Savage Strikes": 2,
+    "Clever Traps": 2,
+    "Surefooted": 3,
+    "Survival Tactics": 1,
+    "Predator's Edge": 4,
+    "Resourcefulness": 2,
+    "Survivalist's Discipline": 2
+   },
+   "found": "the first open leveling search, 2026-10-04; 24.45 vs 26.24 s per kill (20-60) for the Lone Wolf melee leveling build",
+   "missed_by": "the second (seeded) open leveling search, 2026-10-05 (found only a 7/14/30 at 25.68 s)"
+  }
+ ]
+}

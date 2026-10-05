@@ -1,0 +1,542 @@
+{
+ "class": "warrior",
+ "date": "2026-10-05",
+ "entries": {
+  "arms-2h-raid": {
+   "first": {
+    "winner": {
+     "allocation": {
+      "Arms": [
+       [
+        "Deflection",
+        3
+       ],
+       [
+        "Improved Rend",
+        3
+       ],
+       [
+        "Improved Tactical Mastery",
+        5
+       ],
+       [
+        "Anger Management",
+        1
+       ],
+       [
+        "Deep Wounds",
+        3
+       ],
+       [
+        "Two-Handed Weapon Specialization",
+        3
+       ],
+       [
+        "Impale",
+        2
+       ]
+      ],
+      "Fury": [
+       [
+        "Cruelty",
+        5
+       ],
+       [
+        "Lingering Rage",
+        2
+       ],
+       [
+        "Unbridled Wrath",
+        5
+       ],
+       [
+        "Blood Craze",
+        3
+       ],
+       [
+        "Raging Blows",
+        1
+       ],
+       [
+        "Enrage",
+        4
+       ],
+       [
+        "Improved Execute",
+        2
+       ],
+       [
+        "Improved Berserker Rage",
+        2
+       ],
+       [
+        "Death Wish",
+        1
+       ],
+       [
+        "Flurry",
+        5
+       ],
+       [
+        "Bloodthirst",
+        1
+       ]
+      ],
+      "Protection": []
+     },
+     "split": "20/31/0",
+     "dps": 734.82,
+     "se": 0.1891,
+     "iterations": 100000
+    },
+    "family": "Fury",
+    "runs_agree": 3,
+    "important_features": [
+     {
+      "feature": "Flurry",
+      "importance": 0.4364
+     },
+     {
+      "feature": "Bloodthirst",
+      "importance": 0.2278
+     },
+     {
+      "feature": "Protection points",
+      "importance": 0.0841
+     },
+     {
+      "feature": "Fury points",
+      "importance": 0.0775
+     },
+     {
+      "feature": "Deep Wounds",
+      "importance": 0.0341
+     },
+     {
+      "feature": "Death Wish",
+      "importance": 0.0327
+     },
+     {
+      "feature": "Mortal Strike",
+      "importance": 0.026
+     },
+     {
+      "feature": "Arms points",
+      "importance": 0.0163
+     },
+     {
+      "feature": "Two-Handed Weapon Specialization",
+      "importance": 0.0115
+     },
+     {
+      "feature": "Iron Will",
+      "importance": 0.0056
+     },
+     {
+      "feature": "Weaponmaster",
+      "importance": 0.0047
+     },
+     {
+      "feature": "Improved Tactical Mastery",
+      "importance": 0.0046
+     }
+    ],
+    "simulated_builds": 9153,
+    "protected": []
+   },
+   "race_first": {
+    "open winner": {
+     "dps": 734.7,
+     "se": 0.35
+    },
+    "arms-2h-raid": {
+     "dps": 722.5,
+     "se": 0.34
+    },
+    "opt-arms-2h-raid-raid-dps": {
+     "dps": 730.5,
+     "se": 0.35
+    }
+   },
+   "rotation_changed": true,
+   "again": {
+    "winner": {
+     "allocation": {
+      "Arms": [
+       [
+        "Deflection",
+        3
+       ],
+       [
+        "Improved Rend",
+        3
+       ],
+       [
+        "Improved Tactical Mastery",
+        5
+       ],
+       [
+        "Anger Management",
+        1
+       ],
+       [
+        "Deep Wounds",
+        3
+       ],
+       [
+        "Two-Handed Weapon Specialization",
+        3
+       ],
+       [
+        "Impale",
+        2
+       ]
+      ],
+      "Fury": [
+       [
+        "Cruelty",
+        5
+       ],
+       [
+        "Lingering Rage",
+        2
+       ],
+       [
+        "Unbridled Wrath",
+        5
+       ],
+       [
+        "Blood Craze",
+        3
+       ],
+       [
+        "Raging Blows",
+        1
+       ],
+       [
+        "Enrage",
+        4
+       ],
+       [
+        "Improved Execute",
+        2
+       ],
+       [
+        "Improved Berserker Rage",
+        2
+       ],
+       [
+        "Death Wish",
+        1
+       ],
+       [
+        "Flurry",
+        5
+       ],
+       [
+        "Bloodthirst",
+        1
+       ]
+      ],
+      "Protection": []
+     },
+     "split": "20/31/0",
+     "dps": 804.36,
+     "se": 0.215,
+     "iterations": 100000
+    },
+    "family": "Fury",
+    "runs_agree": 2,
+    "important_features": [
+     {
+      "feature": "Flurry",
+      "importance": 0.4287
+     },
+     {
+      "feature": "Bloodthirst",
+      "importance": 0.2079
+     },
+     {
+      "feature": "Deep Wounds",
+      "importance": 0.0986
+     },
+     {
+      "feature": "Fury points",
+      "importance": 0.076
+     },
+     {
+      "feature": "Protection points",
+      "importance": 0.0483
+     },
+     {
+      "feature": "Death Wish",
+      "importance": 0.0241
+     },
+     {
+      "feature": "Arms points",
+      "importance": 0.0193
+     },
+     {
+      "feature": "Booming Voice",
+      "importance": 0.0149
+     },
+     {
+      "feature": "Impale",
+      "importance": 0.0131
+     },
+     {
+      "feature": "Mortal Strike",
+      "importance": 0.013
+     },
+     {
+      "feature": "Two-Handed Weapon Specialization",
+      "importance": 0.0087
+     },
+     {
+      "feature": "Weaponmaster",
+      "importance": 0.0086
+     }
+    ],
+    "simulated_builds": 4624
+   },
+   "race": {
+    "open winner": {
+     "dps": 804.3,
+     "se": 0.39
+    },
+    "arms-2h-raid": {
+     "dps": 790.0,
+     "se": 0.4
+    },
+    "opt-arms-2h-raid-raid-dps": {
+     "dps": 799.5,
+     "se": 0.4
+    }
+   },
+   "values": {
+    "Flurry": {
+     "ranks": 5,
+     "lost": 124.8,
+     "per_point": 25.0,
+     "share": 0.1551
+    },
+    "Bloodthirst": {
+     "ranks": 1,
+     "lost": 92.9,
+     "per_point": 92.9,
+     "share": 0.1154
+    },
+    "Deep Wounds": {
+     "ranks": 3,
+     "lost": 54.6,
+     "per_point": 18.2,
+     "share": 0.0679
+    },
+    "Cruelty": {
+     "ranks": 5,
+     "lost": 46.2,
+     "per_point": 9.2,
+     "share": 0.0574
+    },
+    "Death Wish": {
+     "ranks": 1,
+     "lost": 33.1,
+     "per_point": 33.1,
+     "share": 0.0411
+    },
+    "Two-Handed Weapon Specialization": {
+     "ranks": 3,
+     "lost": 21.4,
+     "per_point": 7.1,
+     "share": 0.0266
+    },
+    "Impale": {
+     "ranks": 2,
+     "lost": 19.1,
+     "per_point": 9.6,
+     "share": 0.0238
+    },
+    "Unbridled Wrath": {
+     "ranks": 5,
+     "lost": 16.2,
+     "per_point": 3.2,
+     "share": 0.0202
+    },
+    "Improved Execute": {
+     "ranks": 2,
+     "lost": 15.5,
+     "per_point": 7.7,
+     "share": 0.0192
+    },
+    "Anger Management": {
+     "ranks": 1,
+     "lost": 8.7,
+     "per_point": 8.7,
+     "share": 0.0108
+    },
+    "Raging Blows": {
+     "ranks": 1,
+     "lost": 6.2,
+     "per_point": 6.2,
+     "share": 0.0076
+    },
+    "Deflection": {
+     "ranks": 3,
+     "lost": 0.0,
+     "per_point": 0.0,
+     "share": 0.0
+    },
+    "Improved Rend": {
+     "ranks": 3,
+     "lost": 0.0,
+     "per_point": 0.0,
+     "share": 0.0
+    },
+    "Improved Tactical Mastery": {
+     "ranks": 5,
+     "lost": 0.0,
+     "per_point": 0.0,
+     "share": 0.0
+    },
+    "Lingering Rage": {
+     "ranks": 2,
+     "lost": 0.0,
+     "per_point": 0.0,
+     "share": 0.0
+    },
+    "Blood Craze": {
+     "ranks": 3,
+     "lost": 0.0,
+     "per_point": 0.0,
+     "share": 0.0
+    },
+    "Enrage": {
+     "ranks": 4,
+     "lost": 0.0,
+     "per_point": 0.0,
+     "share": 0.0
+    },
+    "Improved Berserker Rage": {
+     "ranks": 2,
+     "lost": 0.0,
+     "per_point": 0.0,
+     "share": 0.0
+    }
+   },
+   "values_base": 804.7,
+   "values_ours": {
+    "Flurry": {
+     "ranks": 5,
+     "lost": 126.2,
+     "per_point": 25.2,
+     "share": 0.158
+    },
+    "Bloodthirst": {
+     "ranks": 1,
+     "lost": 87.5,
+     "per_point": 87.5,
+     "share": 0.1096
+    },
+    "Deep Wounds": {
+     "ranks": 3,
+     "lost": 54.6,
+     "per_point": 18.2,
+     "share": 0.0683
+    },
+    "Cruelty": {
+     "ranks": 5,
+     "lost": 45.8,
+     "per_point": 9.2,
+     "share": 0.0573
+    },
+    "Death Wish": {
+     "ranks": 1,
+     "lost": 32.3,
+     "per_point": 32.3,
+     "share": 0.0404
+    },
+    "Two-Handed Weapon Specialization": {
+     "ranks": 3,
+     "lost": 21.3,
+     "per_point": 7.1,
+     "share": 0.0266
+    },
+    "Impale": {
+     "ranks": 2,
+     "lost": 18.9,
+     "per_point": 9.5,
+     "share": 0.0237
+    },
+    "Unbridled Wrath": {
+     "ranks": 5,
+     "lost": 17.8,
+     "per_point": 3.6,
+     "share": 0.0223
+    },
+    "Improved Execute": {
+     "ranks": 2,
+     "lost": 15.2,
+     "per_point": 7.6,
+     "share": 0.0191
+    },
+    "Anger Management": {
+     "ranks": 1,
+     "lost": 10.4,
+     "per_point": 10.4,
+     "share": 0.013
+    },
+    "Deflection": {
+     "ranks": 3,
+     "lost": 0.0,
+     "per_point": 0.0,
+     "share": 0.0
+    },
+    "Improved Rend": {
+     "ranks": 3,
+     "lost": 0.0,
+     "per_point": 0.0,
+     "share": 0.0
+    },
+    "Improved Tactical Mastery": {
+     "ranks": 5,
+     "lost": 0.0,
+     "per_point": 0.0,
+     "share": 0.0
+    },
+    "Lingering Rage": {
+     "ranks": 2,
+     "lost": 0.0,
+     "per_point": 0.0,
+     "share": 0.0
+    },
+    "Blood Craze": {
+     "ranks": 3,
+     "lost": -0.0,
+     "per_point": -0.0,
+     "share": -0.0
+    },
+    "Enrage": {
+     "ranks": 5,
+     "lost": 0.0,
+     "per_point": 0.0,
+     "share": 0.0
+    },
+    "Improved Berserker Rage": {
+     "ranks": 2,
+     "lost": 0.0,
+     "per_point": 0.0,
+     "share": 0.0
+    }
+   },
+   "values_ours_base": 798.6,
+   "ours_best": "opt-arms-2h-raid-raid-dps",
+   "family": "Fury",
+   "split": "20/31/0",
+   "dps": 804.3,
+   "link": "https://talentsforever.com/warrior/60/03305013032-05250030142210501--4",
+   "gap_vs_ours": 0.006,
+   "minutes": 162.2,
+   "done": true
+  }
+ }
+}

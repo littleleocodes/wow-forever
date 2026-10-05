@@ -424,6 +424,58 @@ class Sim:
         return out
 
 
+# ------------------------------------------------------------------------------------------------ family polish (2026-10-05)
+def polish(space, sim, flat, fights, seed, rounds=8, min_gain=0.002, keep=(), small=True):
+    """Greedy hill climb from one build on common random numbers: every neighbour (small: 1-point and prerequisite-chain moves only)
+    that keeps `keep`, the best taken while it gains more than min_gain. Returns (build, score)."""
+    import re as _re
+    cur = dict(flat)
+    cur_s = sim.run([cur], fights, seed)[0][0]
+    for _ in range(rounds):
+        nb = [(m, x) for m, x in space.neighbours(cur) if all(x.get(k) for k in keep) and (not small or not _re.match(r"^[235] ", m))]
+        if not nb:
+            break
+        res = sim.run([x for _, x in nb], fights, seed)
+        i = max(range(len(nb)), key=lambda j: res[j][0])
+        if res[i][0] <= cur_s * (1 + min_gain):
+            break
+        cur, cur_s = nb[i][1], res[i][0]
+    return cur, cur_s
+
+
+def family_polish(space, sim, rng, log, fights=300, rounds=8, per_pair=2, top=5, full_fights=800, seed=37, min_gain=0.002):
+    """Niching for an open search (2026-10-05: a raw keystone seed with random filler points scored low and was dropped before the
+    search could tune it, so the 16/11/24 Summon Hawk + Lone Wolf hunter was never found): for each pair of keystones from different
+    trees, the better of per_pair random legal builds holding both, polished by a short hill climb that keeps the pair (1-point moves,
+    `fights` per build); then the `top` best families again with every move on full_fights. Returns [(score, build, family label)],
+    best first: the open search's extra starts and the report's family table."""
+    keep0 = set(space.protect)
+    ks = space.keystones()
+    out = []
+    for i, a in enumerate(ks):
+        for b in ks[i + 1:]:
+            if space.tree_of[a] == space.tree_of[b]:
+                continue
+            space.protect = keep0 | {a, b}
+            draws = [x for x in (space.random_build(rng) for _ in range(per_pair)) if x]
+            space.protect = keep0
+            if not draws:
+                continue
+            sc = sim.run(draws, fights, seed)
+            x0 = draws[max(range(len(draws)), key=lambda j: sc[j][0])]
+            x, sx = polish(space, sim, x0, fights, seed, rounds, min_gain=min_gain, keep=(a, b))
+            out.append((sx, x, f"{a} + {b}"))
+    out.sort(key=lambda t: -t[0])
+    final = []
+    for sx, x, lab in out[:top]:
+        pair = tuple(lab.split(" + "))
+        x2, s2 = polish(space, sim, x, full_fights, seed + 1, rounds, min_gain=min_gain, keep=pair, small=False)
+        final.append((s2, x2, lab))
+        log(f"    family {lab}: {space.split(x2)} {s2:.4g}" if s2 < 10 else f"    family {lab}: {space.split(x2)} {s2:.1f}")
+    final.sort(key=lambda t: -t[0])
+    return final + [t for t in out[top:]]
+
+
 # ------------------------------------------------------------------------------------------------ the search
 def _r(x, nd=2):
     """A score as stored: DPS to 2 decimals; a small-scale score (healer capacity, tank value: about 1) to 4."""
@@ -689,6 +741,9 @@ def optimize(space, sims, starts, a, log):
            "runner_up": ({"split": space.split(ru[0]), "dps": _r(ru[1]), "se": _r(ru[2], 3),
                           "differs": sorted(set(key(ru[0])) ^ set(key(win)))} if ru else None),
            "gap_to_runner_up": round(wd / ru[1] - 1, 4) if ru else None,
+           # the final race's standings (2026-10-05: the leveling open search picks its winner among them by the 20-60 race)
+           "finalists": [{"allocation": {t: [[n, f[n]] for n in space.by_tree[t] if f.get(n)] for t in space.tree_names}, "split": space.split(f),
+                          "dps": _r(d), "se": _r(se, 3)} for f, d, se in last[:6]],
            "runs": [dict({k: v for k, v in r.items() if k not in ("best", "finalists")}, agrees_with_winner=ag) for r, ag in zip(runs, agree)],
            "runs_agree": sum(agree), "race": hist, "certificate": cert,
            "other_entries": [{"entry": n, "dps": _r(l[0][1]), "split": space.split(l[0][0])} for n, l, _, _ in best_per_entry[1:]],

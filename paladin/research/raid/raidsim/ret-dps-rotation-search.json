@@ -295,6 +295,16 @@
     "gain_seed2": 0.0020764052406254674,
     "candidates": 348,
     "pass": 5
+   },
+   {
+    "round": 10,
+    "pass": 6,
+    "change": "rotation replaced by seal-of-fury-raid's raid rotation (keeps Seal of Righteousness up and judges it, Holy Strike, almost no seal twisting), which the open search's re-tune on a Retribution build produced",
+    "gain_seed1": 0.02,
+    "gain_seed2": null,
+    "candidates": 1,
+    "date": "2026-10-05",
+    "note": "10,000 fights, seed 13: ret-raid-dps +2.1%, ret-full-buffs-raid +1.8%, opt-ret-dps-raid-dps +2.1%, retribution-ml-raid +1.9%; the dummy rotation unchanged (that one loses 17% on the dummy)"
    }
   ],
   "final": {
@@ -329,6 +339,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 5
+  "passes": 6
  }
 }

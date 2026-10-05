@@ -558,6 +558,21 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   every pair of keystones (one-rank talents above tier 2) from different trees (`Space.keystone_starts`; the hunter's 16/11/24 Summon
   Hawk + Lone Wolf build, 1118 against 1040 DPS on b0f0df3, was out of reach before); a start holding a talent the trees no longer have
   is skipped. First-pass records are archived in `families/v1/` and `fightlab/open/v1/`.
+- **Open-search safeguards** (2026-10-05, user request "make sure there's nothing else we can do"): (1) `raidsim/known-positives.json` +
+  `raidsim/search_check.py [--write]`: builds a search once found and an earlier search missed (the 16/11/24 Summon Hawk + Lone Wolf
+  hunter, the community's Arms build, the 17/10/24 melee-with-pet leveling hunter); the check races each against the record's winner on
+  one seed and FAILs when the winner is 0.5% behind (`_reference/search-check.md`); both open searches take the positives as starts unless
+  `--no-known` (a clean test: `--no-known --fresh`, then the check). Add a positive whenever a search misses a build found another way.
+  (2) Family polish (`ml_talents.family_polish`): before the main search, every pair of keystones (one-rank talents above tier 2) from
+  different trees gets its own short hill climb that keeps the pair, the best five once more with every move; the polished families seed
+  the search and the report lists them (a raw keystone seed with random filler scored low and was dropped before tuning; with the polish
+  the hunter's melee search finds 16/11/24 at 1113 DPS by itself). (3) `family_search.py` probes a rotation line for every ability talent
+  the first winner holds that the rotation never casts (`spell_probe.probe(..., only=)`), writes a kept line as a rotation pass and
+  re-searches. (4) `fl_open_search.py` picks its winner by the 20-60 race among the level-60 finalists (`optimize` now records the final
+  race's standings as `finalists`), each with the scorer's order.
+  **Retribution's raid rotation** (2026-10-05): replaced by the one the open search's re-tune produced in the Seal of Fury showcase entry
+  (Seal of Righteousness kept up and judged, Holy Strike, almost no seal twisting): +1.8% to +2.1% for every Retribution build in a full
+  raid (the dummy rotation stays: that one loses 17% on the dummy); recorded as a pass in `ret-dps-rotation-search.json`.
 - **Open leveling search** (2026-10-04, user request: the leveling builds have the raid search's blind spot): `fightlab/fl_open_search.py
   <class>`: per leveling rotation (derive_leveling.LEVEL), the ML search over every legal build (any split) scored on kills per hour at
   level 60 in the fight lab (green gear; builds in parallel processes, common random numbers), the scorer's leveling order for the winner,

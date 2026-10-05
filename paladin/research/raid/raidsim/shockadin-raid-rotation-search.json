@@ -22,35 +22,40 @@
     "change": "drop 'time to the next auto attack < 0.2s' from the condition: if mana % \u2265 15% and time to the next auto attack < 0.2s and Seal of Righteousness is up and mana % \u2265 60%: cast Seal of Command",
     "gain_seed1": 0.022308170007314443,
     "gain_seed2": 0.018056987870230135,
-    "candidates": 345
+    "candidates": 345,
+    "pass": 1
    },
    {
     "round": 2,
     "change": "threshold 0.9s -> 0.4s: if mana % \u2265 15% and time to the next auto attack < 0.9s and Seal of Command is up: cast Seal of Righteousness",
     "gain_seed1": 0.015784866607972514,
     "gain_seed2": 0.0168043765891297,
-    "candidates": 337
+    "candidates": 337,
+    "pass": 1
    },
    {
     "round": 3,
     "change": "threshold 60% -> 40%: if mana % \u2265 15% and Seal of Righteousness is up and mana % \u2265 60%: cast Seal of Command",
     "gain_seed1": 0.012636747129390002,
     "gain_seed2": 0.013615047741138087,
-    "candidates": 332
+    "candidates": 332,
+    "pass": 1
    },
    {
     "round": 4,
     "change": "threshold 40% -> 30%: if mana % \u2265 15% and Seal of Righteousness is up and mana % \u2265 40%: cast Seal of Command",
     "gain_seed1": 0.007198637838694566,
     "gain_seed2": 0.006859170778592327,
-    "candidates": 332
+    "candidates": 332,
+    "pass": 1
    },
    {
     "round": 5,
     "change": "threshold 0.4s -> 0.3s: if mana % \u2265 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness",
     "gain_seed1": 0.0012823442608440594,
     "gain_seed2": 0.002021101465752295,
-    "candidates": 332
+    "candidates": 332,
+    "pass": 1
    }
   ],
   "final": {
@@ -61,11 +66,13 @@
      "base": 447.4247799007861,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
+     "oom_before": 2.7436263825096647,
      "oom_after": 2.7436263825096647
     }
    }
-  }
+  },
+  "first_date": "2026-10-05",
+  "passes": 2
  },
  "raid": {
   "class": "paladin",
@@ -90,49 +97,56 @@
     "change": "insert in the middle: cast Consecration",
     "gain_seed1": 0.04520022667205015,
     "gain_seed2": 0.04481309837189684,
-    "candidates": 345
+    "candidates": 345,
+    "pass": 1
    },
    {
     "round": 2,
     "change": "always rank 7 instead of rank 8: if mana % \u2265 15% and time to the next auto attack < 0.9s and Seal of Command is up: cast Seal of Righteousness",
     "gain_seed1": 0.035012959076465844,
     "gain_seed2": 0.033971158610580865,
-    "candidates": 355
+    "candidates": 355,
+    "pass": 1
    },
    {
     "round": 3,
     "change": "insert in the middle: cast Demonic Rune",
     "gain_seed1": 0.007340895576619877,
     "gain_seed2": 0.0075197266195186074,
-    "candidates": 355
+    "candidates": 355,
+    "pass": 1
    },
    {
     "round": 4,
     "change": "only with 10s or more of the fight left: if time left on Seal of Command \u2264 1s and time left on Seal of Righteousness \u2264 1s: cast Seal of Command",
     "gain_seed1": 0.0020852965350532937,
     "gain_seed2": 0.00245024733499255,
-    "candidates": 362
+    "candidates": 362,
+    "pass": 1
    },
    {
     "round": 5,
     "change": "insert before the filler: if not Seal of Command is up and not Seal of Righteousness is up: cast Seal of Righteousness",
     "gain_seed1": 0.0024916214848351714,
     "gain_seed2": 0.0026042150334582015,
-    "candidates": 376
+    "candidates": 376,
+    "pass": 1
    },
    {
     "round": 6,
     "change": "threshold 0.9s -> 0.675s: if mana % \u2265 15% and time to the next auto attack < 0.9s and Seal of Command is up: cast Seal of Righteousness",
     "gain_seed1": 0.0032676403013127686,
     "gain_seed2": 0.0018678071440061395,
-    "candidates": 398
+    "candidates": 398,
+    "pass": 1
    },
    {
     "round": 7,
     "change": "drop 'mana % \u2265 15%' from the condition: if mana % \u2265 15% and time to the next auto attack < 0.675s and Seal of Command is up: cast Seal of Righteousness + move to the top: cast Hammer of Wrath",
     "gain_seed1": 0.002649434585513255,
     "gain_seed2": 0.002826036703782009,
-    "candidates": 398
+    "candidates": 398,
+    "pass": 1
    }
   ],
   "final": {
@@ -143,10 +157,12 @@
      "base": 796.317157426524,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
+     "oom_before": 0.8009651975006981,
      "oom_after": 0.8009651975006981
     }
    }
-  }
+  },
+  "first_date": "2026-10-05",
+  "passes": 2
  }
 }

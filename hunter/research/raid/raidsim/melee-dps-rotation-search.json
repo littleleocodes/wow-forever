@@ -2,7 +2,7 @@
  "dummy": {
   "class": "hunter",
   "spec": "melee-dps",
-  "date": "2026-10-04",
+  "date": "2026-10-05",
   "commit": "b0f0df3",
   "setting": "dummy",
   "tank": false,
@@ -10,14 +10,8 @@
   "start": "_reference/data/raidsim/apls/hunter/melee-dps.apl.json",
   "builds": [
    {
-    "label": "deep: Survival (dummy)",
-    "talents": "5-005055001-43021023015022212",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-bis.gear.json"
-   },
-   {
-    "label": "deep: Survival (raid)",
-    "talents": "5-005005001-050230231251022151",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-bis.gear.json"
+    "label": "open winner",
+    "talents": "50131005001-005005001-5012112300500211"
    },
    {
     "label": "survival-raid",
@@ -98,27 +92,26 @@
     "gain_seed2": 0.0019679500125477922,
     "candidates": 281,
     "pass": 4
+   },
+   {
+    "round": 9,
+    "change": "move to the top: if auraIsInactive: cast Summon Hawk",
+    "gain_seed1": 0.0030210998474804462,
+    "gain_seed2": 0.003040972030365241,
+    "candidates": 281,
+    "pass": 7
    }
   ],
   "final": {
    "dummy": {
-    "deep: Survival (dummy)": {
-     "before": 311.57544429649266,
-     "after": 444.90423654626375,
-     "base": 311.57544429649266,
+    "open winner": {
+     "before": 297.9293555187521,
+     "after": 363.1678035885086,
+     "base": 297.9293555187521,
      "before_value": null,
      "after_value": null,
-     "oom_before": 8.936353859561448,
-     "oom_after": 8.936353859561448
-    },
-    "deep: Survival (raid)": {
-     "before": 309.2020333147809,
-     "after": 335.3786726367725,
-     "base": 309.2020333147809,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 121.4010758831798,
-     "oom_after": 121.4010758831798
+     "oom_before": 127.64913071456338,
+     "oom_after": 126.30079238267574
     },
     "survival-raid": {
      "before": 313.46049124244075,
@@ -150,12 +143,12 @@
    }
   },
   "first_date": "2026-09-29",
-  "passes": 6
+  "passes": 7
  },
  "raid": {
   "class": "hunter",
   "spec": "melee-dps",
-  "date": "2026-10-04",
+  "date": "2026-10-05",
   "commit": "b0f0df3",
   "setting": "raid",
   "tank": false,
@@ -163,14 +156,8 @@
   "start": "_reference/data/raidsim/apls/hunter/melee-dps-raid.apl.json",
   "builds": [
    {
-    "label": "deep: Survival (dummy)",
-    "talents": "5-005055001-43021023015022212",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-bis.gear.json"
-   },
-   {
-    "label": "deep: Survival (raid)",
-    "talents": "5-005005001-050230231251022151",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-bis.gear.json"
+    "label": "open winner",
+    "talents": "50131005001-005005001-5012112300500211"
    },
    {
     "label": "survival-raid",
@@ -211,19 +198,10 @@
   ],
   "final": {
    "raid": {
-    "deep: Survival (dummy)": {
-     "before": 747.0191036415348,
-     "after": 1017.7551701296213,
-     "base": 747.0191036415348,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "deep: Survival (raid)": {
-     "before": 766.8389876078072,
-     "after": 1040.0231191198532,
-     "base": 766.8389876078072,
+    "open winner": {
+     "before": 738.525752237135,
+     "after": 1117.7847921505634,
+     "base": 738.525752237135,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -268,6 +246,6 @@
    }
   },
   "first_date": "2026-09-29",
-  "passes": 6
+  "passes": 7
  }
 }

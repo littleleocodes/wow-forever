@@ -1111,7 +1111,263 @@
      "dps": 875.7,
      "se": 0.26
     }
-   }
+   },
+   "rotation_changed": true,
+   "again": {
+    "winner": {
+     "allocation": {
+      "Holy": [
+       [
+        "Divine Strength",
+        3
+       ],
+       [
+        "Divine Intellect",
+        5
+       ],
+       [
+        "Improved Seals",
+        3
+       ]
+      ],
+      "Protection": [
+       [
+        "Toughness",
+        5
+       ],
+       [
+        "Precision",
+        3
+       ]
+      ],
+      "Retribution": [
+       [
+        "Benediction",
+        5
+       ],
+       [
+        "Improved Judgement",
+        2
+       ],
+       [
+        "Conviction",
+        5
+       ],
+       [
+        "Vindication",
+        3
+       ],
+       [
+        "Sanctified Judgement",
+        3
+       ],
+       [
+        "Seal of Command",
+        1
+       ],
+       [
+        "Sacred Arbiter",
+        1
+       ],
+       [
+        "Two-Handed Weapon Specialization",
+        3
+       ],
+       [
+        "Vengeance",
+        3
+       ],
+       [
+        "Champion of the Light",
+        3
+       ],
+       [
+        "Instrument of Law",
+        2
+       ],
+       [
+        "Twist of Light",
+        1
+       ]
+      ]
+     },
+     "split": "11/8/32",
+     "dps": 875.92,
+     "se": 0.1445,
+     "iterations": 100000
+    },
+    "family": "Retribution",
+    "runs_agree": 2,
+    "important_features": [
+     {
+      "feature": "Twist of Light",
+      "importance": 0.3641
+     },
+     {
+      "feature": "Champion of the Light",
+      "importance": 0.1816
+     },
+     {
+      "feature": "Instrument of Law",
+      "importance": 0.1253
+     },
+     {
+      "feature": "Retribution points",
+      "importance": 0.0707
+     },
+     {
+      "feature": "Vengeance",
+      "importance": 0.0681
+     },
+     {
+      "feature": "Deflection",
+      "importance": 0.044
+     },
+     {
+      "feature": "Holy Shock",
+      "importance": 0.0249
+     },
+     {
+      "feature": "Redoubt",
+      "importance": 0.0148
+     },
+     {
+      "feature": "Improved Seals",
+      "importance": 0.0134
+     },
+     {
+      "feature": "Protection points",
+      "importance": 0.013
+     },
+     {
+      "feature": "Pursuit of Justice",
+      "importance": 0.0126
+     },
+     {
+      "feature": "Seal of Command",
+      "importance": 0.0118
+     }
+    ],
+    "simulated_builds": 4490
+   },
+   "race": {
+    "open winner": {
+     "dps": 875.7,
+     "se": 0.26
+    }
+   },
+   "values": {
+    "Twist of Light": {
+     "ranks": 1,
+     "lost": 162.4,
+     "per_point": 162.4,
+     "share": 0.1852
+    },
+    "Champion of the Light": {
+     "ranks": 3,
+     "lost": 114.4,
+     "per_point": 38.1,
+     "share": 0.1305
+    },
+    "Seal of Command": {
+     "ranks": 1,
+     "lost": 89.2,
+     "per_point": 89.2,
+     "share": 0.1018
+    },
+    "Vengeance": {
+     "ranks": 3,
+     "lost": 67.3,
+     "per_point": 22.4,
+     "share": 0.0768
+    },
+    "Instrument of Law": {
+     "ranks": 2,
+     "lost": 48.7,
+     "per_point": 24.3,
+     "share": 0.0555
+    },
+    "Improved Seals": {
+     "ranks": 3,
+     "lost": 48.0,
+     "per_point": 16.0,
+     "share": 0.0548
+    },
+    "Improved Judgement": {
+     "ranks": 2,
+     "lost": 35.6,
+     "per_point": 17.8,
+     "share": 0.0406
+    },
+    "Precision": {
+     "ranks": 3,
+     "lost": 35.1,
+     "per_point": 11.7,
+     "share": 0.0401
+    },
+    "Conviction": {
+     "ranks": 5,
+     "lost": 34.6,
+     "per_point": 6.9,
+     "share": 0.0395
+    },
+    "Benediction": {
+     "ranks": 5,
+     "lost": 22.7,
+     "per_point": 4.5,
+     "share": 0.026
+    },
+    "Sanctified Judgement": {
+     "ranks": 3,
+     "lost": 17.6,
+     "per_point": 5.9,
+     "share": 0.0201
+    },
+    "Sacred Arbiter": {
+     "ranks": 1,
+     "lost": 16.5,
+     "per_point": 16.5,
+     "share": 0.0188
+    },
+    "Divine Intellect": {
+     "ranks": 5,
+     "lost": 14.7,
+     "per_point": 2.9,
+     "share": 0.0168
+    },
+    "Two-Handed Weapon Specialization": {
+     "ranks": 3,
+     "lost": 13.3,
+     "per_point": 4.4,
+     "share": 0.0152
+    },
+    "Divine Strength": {
+     "ranks": 3,
+     "lost": 5.3,
+     "per_point": 1.8,
+     "share": 0.006
+    },
+    "Vindication": {
+     "ranks": 3,
+     "lost": 5.0,
+     "per_point": 1.7,
+     "share": 0.0058
+    },
+    "Toughness": {
+     "ranks": 5,
+     "lost": 0.0,
+     "per_point": 0.0,
+     "share": 0.0
+    }
+   },
+   "values_base": 876.6,
+   "family": "Retribution",
+   "split": "11/8/32",
+   "dps": 875.7,
+   "link": "https://talentsforever.com/paladin/60/35003-503-05205331001330321-4",
+   "gap_vs_ours": null,
+   "minutes": 15.1,
+   "done": true
   }
  }
 }

@@ -48,9 +48,13 @@ def _load(name, path):
 
 MLT = _load("ml_talents_family", HERE / "ml_talents.py")
 A, R = MLT.A, MLT.R
+SP = _load("spell_probe_family", HERE / "spell_probe.py")
+FA = _load("filler_audit_family", HERE / "filler_audit.py")
+KNOWN = HERE / "known-positives.json"
 OUT = HERE / "families"
 PAGE = ROOT / "_reference" / "family-search.md"
 TODAY = datetime.date.today().isoformat()
+POLISH = dict(fights=300, rounds=8, per_pair=2, top=5, full_fights=800)
 SEARCH = dict(runs=3, budget=3000, screen=1500, patience=5, max_rounds=20, random_init=400, pool=10000, parents=48, finalists=6, screen_budget=600)
 AGAIN = dict(SEARCH, runs=2, budget=2000)
 RACE, VALUES = 30000, 12000
@@ -75,6 +79,30 @@ def entries(cls):
             and x.get("profile", "raid-dps") == "raid-dps"]
 
 
+def known_positives(cls, kind="raid"):
+    """The known positives of a class (known-positives.json): flat allocations."""
+    if not KNOWN.exists():
+        return []
+    data = {b["id"]: b for b in json.load(open(paths.builds_json("forever", cls), encoding="utf-8"))["builds"]}
+    out = []
+    for p in json.load(open(KNOWN, encoding="utf-8")).get("positives", []):
+        if p.get("class") != cls or p.get("kind", "raid") != kind:
+            continue
+        if p.get("build") and p["build"] in data:
+            out.append(R.alloc_of(data[p["build"]]))
+        elif p.get("allocation"):
+            out.append({n: r for n, r in p["allocation"].items() if r})
+    return out
+
+
+def uncast_abilities(cls, entry, repo, flat):
+    """Ability talents the build holds whose spell the entry's raid rotation never casts (a line for it was never tried for this family)."""
+    book = FA.spell_ids(cls)
+    path = R.apl_path(R.SPECS[cls][entry], repo, "raid")
+    ids = FA.apl_spell_ids(path, "priorityList") | FA.apl_spell_ids(path, "prepullActions")
+    return [talent for talent, name, sid, text in SP.talent_abilities(cls) if flat.get(talent) and name in book and not (book[name][0] & ids)]
+
+
 def ours(cls):
     data = {b["id"]: b for b in json.load(open(paths.builds_json("forever", cls), encoding="utf-8"))["builds"]}
     return {bid: b for bid, b in data.items() if SM.mode_of(b) == "raid" and b.get("role") not in ("healer", "tank")}
@@ -86,13 +114,14 @@ def run_search(cls, entry, repo, settings, starts, seed, protect=None):
     space.protect = set(protect) if protect is not None else MLT.protected(cls, [entry], repo, "raid", starts)
     space.start_splits = [space.split(s) for s in starts]
     import random
-    seeds = space.keystone_starts(random.Random(seed))   # every pair of keystones from different trees (Summon Hawk + Lone Wolf ...)
-    starts = starts + seeds
-    log(f"== {cls} {entry}: {len(seeds)} keystone seeds ({len(space.keystones())} keystones)")
+    log(f"== {cls} {entry}: family polish over every pair of {len(space.keystones())} keystones from different trees")
+    fam = MLT.family_polish(space, MLT.Sim(cls, entry, "raid", None, repo, f"family-polish-{cls}-{entry}"), random.Random(seed), log, **POLISH)
+    starts = starts + [x for _, x, _ in fam]
     log(f"== {cls} {entry}: open search (any split, full raid), {len(starts)} valid starts; kept: {', '.join(sorted(space.protect)) or 'none'}")
     a = MLT.defaults(**settings, seed=seed)
     sim = MLT.Sim(cls, entry, "raid", None, repo, f"family-{cls}-{entry}")
     rec, win = MLT.optimize(space, {entry: sim}, starts, a, log)
+    rec["families"] = [{"keystones": lab, "split": space.split(x), "family": space.classify(x), "score": round(sc, 1)} for sc, x, lab in fam[:15]]
     return space, rec
 
 
@@ -142,13 +171,15 @@ def main():
     ap.add_argument("--fresh", action="store_true")
     ap.add_argument("--smoke", action="store_true", help="tiny budgets, a separate record, nothing else written (a test)")
     ap.add_argument("--report", action="store_true", help="write the cross-class page from the records and stop")
+    ap.add_argument("--no-known", action="store_true", help="leave out the known builds (candidate files, earlier winners): a clean test of the search")
     a = ap.parse_args()
-    global OUT, SEARCH, AGAIN, RACE, VALUES, SMOKE
+    global OUT, SEARCH, AGAIN, RACE, VALUES, SMOKE, POLISH
     if a.report:
         write_page()
         return
     if a.smoke:
         OUT, SMOKE, RACE, VALUES = HERE / "families-smoke", True, 2000, 1000
+        POLISH = dict(fights=60, rounds=1, per_pair=1, top=1, full_fights=100)
         SEARCH = AGAIN = dict(runs=1, budget=150, screen=300, patience=1, max_rounds=1, random_init=40, pool=600, parents=8, finalists=2,
                               screen_budget=60, race_stages=((1000, 2, 2), (2000, 3, 1), (4000, 4, 1)), cert_its=(500, 2000))
     cls = a.cls
@@ -171,7 +202,22 @@ def main():
         rp.write_text(json.dumps(st, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 
     mine_all = ours(cls)
-    starts = [R.alloc_of(b) for b in mine_all.values()] + MLT.popular_allocs(cls) + warm
+    starts = [R.alloc_of(b) for b in mine_all.values()] + MLT.popular_allocs(cls)
+    if not a.no_known:   # known good builds: the known positives, the last run's winners, the archived first pass, the saved raid candidates
+        starts += known_positives(cls) + warm
+        v1 = OUT / "v1" / f"{cls}.json"
+        if v1.exists():
+            for e in json.load(open(v1, encoding="utf-8")).get("entries", {}).values():
+                for k in ("again", "first"):
+                    if (e.get(k) or {}).get("winner"):
+                        starts.append(flat_of(e[k]["winner"]["allocation"]))
+        for f in sorted((paths.scenario_dir(cls, "raid") / "raidsim" / "candidates").glob("*.json")):
+            try:
+                x = json.load(open(f, encoding="utf-8"))
+                al = x.get("allocation") or {}
+                starts.append(flat_of(al) if al and isinstance(next(iter(al.values())), list) else {n: r for n, r in al.items() if r})
+            except (ValueError, StopIteration, AttributeError):
+                pass
     for entry in a.entry or entries(cls):
         if entry in st["entries"] and st["entries"][entry].get("done"):
             continue
@@ -181,7 +227,8 @@ def main():
         if "first" not in e:
             sp, rec = run_search(cls, entry, repo, SEARCH, starts + MLT.preset_allocs(cls, R.SPECS[cls][entry], repo), 71)
             e["first"] = {"winner": rec["winner"], "family": sp.classify(flat_of(rec["winner"]["allocation"])), "runs_agree": rec["runs_agree"],
-                          "important_features": rec.get("important_features"), "simulated_builds": rec["simulated_builds"], "protected": sorted(sp.protect)}
+                          "important_features": rec.get("important_features"), "simulated_builds": rec["simulated_builds"], "protected": sorted(sp.protect),
+                          "families": rec.get("families")}
             save()
         w = flat_of(e["first"]["winner"]["allocation"])
         if "race_first" not in e:
@@ -189,8 +236,22 @@ def main():
             save()
         best_ours = max((v["dps"] for k, v in e["race_first"].items() if k != "open winner"), default=0.0)
         new_family = e["first"]["family"] not in {SM.spec_of(cls, b) for b in here.values()}
+        if "probe" not in e:
+            # an ability talent the winner holds but the rotation never casts: give it a line (spell_probe: every line and spot, kept at
+            # 0.2% on a second seed), so the re-search can value it (2026-10-05: the talent search cannot see an ability without a line)
+            miss = uncast_abilities(cls, entry, repo, w)
+            if miss and not SMOKE:
+                log(f"== {cls} {entry}: the open winner holds {', '.join(miss)} and the rotation never casts them: probing lines")
+                res, base_apl = SP.probe(cls, "any", entry, w, "raid", None, any_split=True, log=log, only=set(miss))
+                n = SP.write(cls, entry, "raid", res, base_apl)
+                e["probe"] = {"talents": miss, "lines_kept": n}
+                if n:
+                    R.set_game("forever")
+            else:
+                e["probe"] = {"talents": miss, "lines_kept": 0} if miss else None
+            save()
         if "again" not in e:
-            if (new_family or e["race_first"]["open winner"]["dps"] > best_ours * 1.005) and not SMOKE:
+            if (new_family or e["race_first"]["open winner"]["dps"] > best_ours * 1.005 or (e.get("probe") or {}).get("lines_kept")) and not SMOKE:
                 e["rotation_changed"] = retune(cls, entry, w)
                 sp, rec = run_search(cls, entry, repo, AGAIN, [w] + starts, 72, protect=e["first"]["protected"])
                 e["again"] = {"winner": rec["winner"], "family": sp.classify(flat_of(rec["winner"]["allocation"])), "runs_agree": rec["runs_agree"],
@@ -247,7 +308,13 @@ def write_class(cls, st):
     for entry, e in st["entries"].items():
         if not e.get("done"):
             continue
-        o += [f"## {entry}", "", f"**Open winner {e['split']}** ({e['family']}):", ""] + table(e["values"], e["values_base"])
+        o += [f"## {entry}", ""]
+        fam = (e.get("first") or {}).get("families") or []
+        if fam:
+            o += ["**Best family per pair of keystones** (each polished by a short hill climb that keeps the pair; DPS on 800 fights, before "
+                  "the main search):", "", "| Keystones | Build | Family | DPS |", "|---|---|---|---|"]
+            o += [f"| {f['keystones']} | {f['split']} | {f['family']} | {f['score']:.1f} |" for f in fam[:10]] + [""]
+        o += [f"**Open winner {e['split']}** ({e['family']}):", ""] + table(e["values"], e["values_base"])
         if e.get("values_ours"):
             o += [f"**Our best build there, {e['ours_best']}:**", ""] + table(e["values_ours"], e["values_ours_base"])
         imp = (e.get("again") or e.get("first") or {}).get("important_features") or []
