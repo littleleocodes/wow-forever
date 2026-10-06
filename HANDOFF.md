@@ -189,6 +189,14 @@ Each class folder now opens with player pages and keeps the research below:
   `--smoke` test (see CLAUDE.md "Deep optimisation of one class" for the procedure at the end of the beta and the time it takes: about
   five days of computing for the eight classes left, less in parallel cloud sessions). Not started: the real runs (the user decides when).
 
+- **Open searches paused 2026-10-06 ~11:00 (user request, PC restart).** Hunter complete (raid: the 16/11/24 Summon Hawk + Lone Wolf
+  melee build +7.5%; leveling: melee with a pet +6.5%; both pass `raidsim/search_check.py`). Mage: Frost and Fire done (confirm our
+  builds); Arcane next, then Frostfire and the mage's leveling rotations. Resume with `bash _reference/data/run_open_searches.sh` (no
+  `--fresh`): the default order is hunter, mage, paladin, shaman, warrior, rogue, druid, warlock, priest (the user asked for the shaman
+  right after the paladin). Each class's rotations resume from its record; only the rotation that was running starts over. After the whole
+  run: write the open winners as builds (a writer step still to make: `-open-raid` / `-open-leveling` derived builds with `replaces` under
+  the 2% rule), re-race every entry (`run.py --all --write`, `--env environments --write`: several entries' gear changed on 2026-10-06),
+  `ml_builds.py --tidy-winners --rank`, `rebuild.py --steps regen`, `linkcheck.py`, then the ranking artifact.
 - **Gear sets checked for unique-equipped duplicates (2026-10-06):** four sets held the same unique ring twice (neither picker checked
   uniqueness; both do now). Repaired: hunter melee and Survival BiS (Don Julio's Band), rogue Combat BiS (Quick Strike Ring), warrior Fury
   pre-BiS (Ferocious Watcher's Signet); the Enhancement sets' caster-ring stand-in replaced by Don Julio's Band; the hunter ranged (+2.5%)

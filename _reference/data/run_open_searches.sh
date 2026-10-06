@@ -16,7 +16,7 @@ mkdir -p "$LOGS"
 FRESH=()
 if [ "$1" = "--fresh" ]; then FRESH=(--fresh); shift; fi
 CLASSES=("$@")
-[ ${#CLASSES[@]} -eq 0 ] && CLASSES=(hunter mage paladin warrior rogue druid shaman warlock priest)
+[ ${#CLASSES[@]} -eq 0 ] && CLASSES=(hunter mage paladin shaman warrior rogue druid warlock priest)
 for c in "${CLASSES[@]}"; do
   for kind in raid leveling; do
     if [ "$kind" = raid ]; then tool=_reference/data/raidsim/family_search.py; else tool=_reference/data/fightlab/fl_open_search.py; fi
