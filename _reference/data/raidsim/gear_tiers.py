@@ -176,7 +176,7 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current):
             if not curit and slot not in (15,):
                 continue
             cands = [it for it in db.values() if fits(it, slot, curit) and it["id"] not in used]
-            if allowed:
+            if allowed and not (curit["id"] in used and curit.get("unique")):   # a unique-equipped item held earlier in the set: not twice (2026-10-06)
                 cands.append(curit)
             best = max(cands, key=lambda it: G.value(it, w, slot)) if cands else (curit if allowed else None)
             if best is None:

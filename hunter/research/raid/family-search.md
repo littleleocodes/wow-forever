@@ -282,7 +282,7 @@ The search model's most important talents (random-forest importance): Survival p
 
 Sibling rotations (the entry's best build under each, 10,000 fights): mm-raid -49.8%, mm-lonewolf-raid -49.6%, bm-raid -49.6%; none adopted.
 
-Own phase-1 BiS set for this family (`_reference/data/raidsim/gear_sets/forever/tiers/hunter-hybrid-beast-mastery-survival-bis.gear.json`, item level 67.6): 1117.4 DPS against 1117.4 in the entry's standard set.
+Own phase-1 BiS set for this family (`_reference/data/raidsim/gear_sets/forever/tiers/hunter-hybrid-beast-mastery-survival-bis.gear.json`, item level 67.2): 1103.5 DPS against 1114.2 in the entry's standard set.
 
 The search model's most important talents (random-forest importance): Predator's Edge 0.28, Lone Wolf 0.15, Strider Kick 0.13, Expose Prey 0.08, Survival points 0.07, Summon Hawk 0.07, Marksmanship points 0.06, Surefooted 0.02, Unleashed Fury 0.02, Careful Aim 0.02.
 
