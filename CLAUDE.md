@@ -570,6 +570,16 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   the first winner holds that the rotation never casts (`spell_probe.probe(..., only=)`), writes a kept line as a rotation pass and
   re-searches. (4) `fl_open_search.py` picks its winner by the 20-60 race among the level-60 finalists (`optimize` now records the final
   race's standings as `finalists`), each with the scorer's order.
+  (5) After a class's entries (2026-10-06, the hunter's lessons): `cross_rotations` races every entry's builds under each sibling
+  entry's raid rotation in the entry's own gear (10,000 fights; a sibling rotation 0.5% ahead for the entry's best build, confirmed on
+  30,000 and costing no listed build 1%, replaces the entry's raid rotation as a pass in its rotation-search record, is polished by
+  `apl_opt --tune`, and the race and values are redone); `own_gear` gives an open winner in a family no ML record covers its own phase-1
+  BiS set (`gear_tiers.make`, `tiers/<class>-<family slug>-bis.gear.json`) and races it in both sets (the Hawk hunter was scored in
+  pure melee gear). (6) The known positives compete in the leveling finalists race. **Warlock demons** (2026-10-06): the simulator (and
+  upstream wowsims/classic) gives demons nothing from the warlock; Forever's guides say demons scale with the warlock's stats and gear
+  (the pet pane shows the inherited values) but publish no percentages and Blizzard's warlock deep dive is unpublished, so the warlock's
+  pet numbers are the class's decision-critical assumption: find the percentages (a beta tester's pet pane) and patch like
+  `pet_scaling.go` before trusting Demonology.
   **Retribution's raid rotation** (2026-10-05): replaced by the one the open search's re-tune produced in the Seal of Fury showcase entry
   (Seal of Righteousness kept up and judged, Holy Strike, almost no seal twisting): +1.8% to +2.1% for every Retribution build in a full
   raid (the dummy rotation stays: that one loses 17% on the dummy); recorded as a pass in `ret-dps-rotation-search.json`.

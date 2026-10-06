@@ -2242,5 +2242,138 @@
    "minutes": 247.3,
    "done": true
   }
+ },
+ "cross": {
+  "mm-raid": {
+   "tested": {
+    "mm-lonewolf-raid": {
+     "open winner": -0.0011,
+     "bm-mm-raid": -0.0034,
+     "bm-mm-full-buffs-raid": -0.0033,
+     "opt-mm-raid-raid-dps": -0.0034
+    },
+    "bm-raid": {
+     "open winner": -0.0282,
+     "bm-mm-raid": 0.0182,
+     "bm-mm-full-buffs-raid": 0.0149,
+     "opt-mm-raid-raid-dps": 0.0182
+    },
+    "melee-dps": {
+     "open winner": -0.3549,
+     "bm-mm-raid": -0.3218,
+     "bm-mm-full-buffs-raid": -0.4876,
+     "opt-mm-raid-raid-dps": -0.3218
+    }
+   },
+   "adopted": null
+  },
+  "mm-lonewolf-raid": {
+   "tested": {
+    "mm-raid": {
+     "open winner": -0.0066,
+     "mm-lone-wolf-raid": 0.0039,
+     "opt-mm-lonewolf-raid-raid-dps": -0.0071,
+     "marksmanship-ml-parse": -0.0066,
+     "marksmanship-ml-raid": -0.0028
+    },
+    "bm-raid": {
+     "open winner": -0.0415,
+     "mm-lone-wolf-raid": 0.0219,
+     "opt-mm-lonewolf-raid-raid-dps": -0.0149,
+     "marksmanship-ml-parse": -0.0415,
+     "marksmanship-ml-raid": -0.01
+    },
+    "melee-dps": {
+     "open winner": -0.6267,
+     "mm-lone-wolf-raid": -0.5819,
+     "opt-mm-lonewolf-raid-raid-dps": -0.6096,
+     "marksmanship-ml-parse": -0.6267,
+     "marksmanship-ml-raid": -0.6082
+    }
+   },
+   "adopted": null
+  },
+  "bm-raid": {
+   "tested": {
+    "mm-raid": {
+     "open winner": -0.0109,
+     "mm-hawk-raid": -0.0166,
+     "beast-mastery-raid": -0.0151,
+     "beast-mastery-ml-parse": -0.0109,
+     "beast-marks-ml-raid": -0.0137
+    },
+    "mm-lonewolf-raid": {
+     "open winner": -0.017,
+     "mm-hawk-raid": -0.0198,
+     "beast-mastery-raid": -0.0181,
+     "beast-mastery-ml-parse": -0.017,
+     "beast-marks-ml-raid": -0.0191
+    },
+    "melee-dps": {
+     "open winner": -0.3195,
+     "mm-hawk-raid": -0.3323,
+     "beast-mastery-raid": -0.3163,
+     "beast-mastery-ml-parse": -0.3195,
+     "beast-marks-ml-raid": -0.3353
+    }
+   },
+   "adopted": null
+  },
+  "melee-dps": {
+   "tested": {
+    "mm-raid": {
+     "open winner": -0.4979,
+     "melee-survival-raid": -0.6213,
+     "opt-melee-dps-raid-dps": -0.6119,
+     "survival-raid": -0.6194,
+     "survival-ml-parse": -0.6213
+    },
+    "mm-lonewolf-raid": {
+     "open winner": -0.4961,
+     "melee-survival-raid": -0.6213,
+     "opt-melee-dps-raid-dps": -0.6119,
+     "survival-raid": -0.6194,
+     "survival-ml-parse": -0.6213
+    },
+    "bm-raid": {
+     "open winner": -0.4956,
+     "melee-survival-raid": -0.6213,
+     "opt-melee-dps-raid-dps": -0.6119,
+     "survival-raid": -0.6194,
+     "survival-ml-parse": -0.6213
+    }
+   },
+   "adopted": null
+  }
+ },
+ "own_gear": {
+  "mm-raid": null,
+  "mm-lonewolf-raid": null,
+  "bm-raid": null,
+  "melee-dps": {
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-hybrid-beast-mastery-survival-bis.gear.json",
+   "ilvl": 67.6,
+   "names": [
+    "Giantstalker's Helmet",
+    "Onyxia Tooth Pendant",
+    "Giantstalker's Epaulets",
+    "Howler's Furs",
+    "Giantstalker's Breastplate",
+    "Giantstalker's Bracers",
+    "Giantstalker's Gloves",
+    "Giantstalker's Belt",
+    "Giantstalker's Leggings",
+    "Giantstalker's Boots",
+    "Band of Accuria",
+    "Band of Accuria",
+    "Blackhand's Breadth",
+    "Hand of Justice",
+    "Deathbringer",
+    "Brutality Blade",
+    "Striker's Mark"
+   ],
+   "dps_standard": 1117.4,
+   "dps_own_bis": 1117.4
+  }
  }
 }

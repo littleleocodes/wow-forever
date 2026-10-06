@@ -49,6 +49,7 @@ def _load(name, path):
 MLT = _load("ml_talents_family", HERE / "ml_talents.py")
 A, R = MLT.A, MLT.R
 SP = _load("spell_probe_family", HERE / "spell_probe.py")
+GT = _load("gear_tiers_family", HERE / "gear_tiers.py")
 FA = _load("filler_audit_family", HERE / "filler_audit.py")
 KNOWN = HERE / "known-positives.json"
 OUT = HERE / "families"
@@ -67,6 +68,11 @@ def log(m):
 
 def flat_of(alloc):
     return {n: r for items in alloc.values() for n, r in items if r}
+
+
+def resolve(path):
+    p = pathlib.Path(path)
+    return p if p.is_absolute() else ROOT / p
 
 
 def by_tree(space, flat):
@@ -285,9 +291,123 @@ def main():
         log(f"  {cls} {entry}: open winner {e['split']} ({e['family']}) {e['dps']:.1f} DPS"
             + (f", {e['gap_vs_ours']:+.1%} vs our best there ({e.get('ours_best')})" if e.get("gap_vs_ours") is not None else ""))
     if not SMOKE:
+        cross_rotations(cls, st, repo, save, mine_all)
+        own_gear(cls, st, repo, save)
         write_class(cls, st)
         write_page()
     log("== done")
+
+
+def cross_rotations(cls, st, repo, save, mine_all):
+    """Every entry's builds under each sibling entry's raid rotation, in the entry's own gear (2026-10-06, the hunter's lesson: the +2%
+    Retribution rotation came from a sibling entry's re-tune). A sibling rotation 0.5% ahead for the entry's best build on 10,000 fights
+    and again on 30,000 (another seed), costing no listed build 1%, replaces the entry's raid rotation (a pass in its rotation-search
+    record; apl_opt.py --tune then polishes it) and the entry's race and talent values are redone under it."""
+    done = st.setdefault("cross", {})
+    ents = [e for e, v in st["entries"].items() if v.get("done")]
+    trees = R.load_trees(repo, cls)
+    for entry in ents:
+        if entry in done:
+            continue
+        e = st["entries"][entry]
+        E = R.SPECS[cls][entry]
+        here = {bid: mine_all[bid] for bid in E.get("builds", []) if bid in mine_all}
+        w = flat_of((e.get("again") or e["first"])["winner"]["allocation"])
+        builds = {"open winner": w} | {bid: R.alloc_of(b) for bid, b in here.items()}
+        own_apl = json.load(open(R.apl_path(E, repo, "raid"), encoding="utf-8"))
+        rec = {"tested": {}, "adopted": None}
+        base = A.bench(E, repo, [{"label": k, "talents": R.talents_string(trees, v), "apl_json": own_apl} for k, v in builds.items()], 10000, 1, "raid", f"cross-{cls}")
+        best_label = max(base, key=lambda k: base[k].get("dps") or 0)
+        for sib in ents:
+            if sib == entry:
+                continue
+            apl = json.load(open(R.apl_path(R.SPECS[cls][sib], repo, "raid"), encoding="utf-8"))
+            rows = A.bench(E, repo, [{"label": k, "talents": R.talents_string(trees, v), "apl_json": apl} for k, v in builds.items()], 10000, 1, "raid", f"cross-{cls}")
+            gains = {k: round((rows[k].get("dps") or 0) / (base[k].get("dps") or 1) - 1, 4) for k in builds if rows.get(k) and base.get(k)}
+            rec["tested"][sib] = gains
+            g = gains.get(best_label, -1)
+            if g >= 0.005:
+                c = A.bench(E, repo, [{"label": "own", "talents": R.talents_string(trees, builds[best_label]), "apl_json": own_apl},
+                                     {"label": "sib", "talents": R.talents_string(trees, builds[best_label]), "apl_json": apl}], 30000, 2, "raid", f"cross-{cls}")
+                g2 = (c["sib"].get("dps") or 0) / (c["own"].get("dps") or 1) - 1
+                rec["tested"][sib]["confirm_seed2"] = round(g2, 4)
+                if g2 >= 0.005 and min(gains.values()) > -0.01 and (rec["adopted"] is None or g2 > rec["adopted"]["gain"]):
+                    rec["adopted"] = {"from": sib, "gain": round(g2, 4), "build": best_label}
+        log(f"  cross-rotations {entry}: " + ", ".join(f"{sib} {v.get(best_label, 0):+.1%}" for sib, v in rec["tested"].items())
+            + (f" -> adopting {rec['adopted']['from']}'s rotation ({rec['adopted']['gain']:+.1%})" if rec["adopted"] else ""))
+        if rec["adopted"]:
+            adopt_rotation(cls, entry, rec["adopted"]["from"], rec["adopted"]["gain"], repo)
+            retune(cls, entry, w)
+            e["race"] = race(cls, entry, repo, w, here)
+            e["values"], e["values_base"] = values(cls, entry, repo, w)
+            best = max((k for k in e["race"] if k != "open winner"), key=lambda k: e["race"][k]["dps"], default=None)
+            e.update({"dps": e["race"]["open winner"]["dps"], "ours_best": best,
+                      "gap_vs_ours": round(e["race"]["open winner"]["dps"] / e["race"][best]["dps"] - 1, 4) if best else None, "rotation_changed": True})
+        done[entry] = rec
+        save()
+
+
+def adopt_rotation(cls, entry, sib, gain, repo):
+    """Copy a sibling entry's raid rotation over the entry's, with a note per line and a pass in the entry's rotation-search record."""
+    E, S = R.SPECS[cls][entry], R.SPECS[cls][sib]
+    dst = R.apl_path(E, repo, "raid")
+    apl = json.load(open(R.apl_path(S, repo, "raid"), encoding="utf-8"))
+    for it in apl.get("priorityList", []):
+        it["notes"] = (f"{TODAY}: {sib}'s raid rotation adopted by the open search's cross-race ({gain:+.1%} for the entry's best build); "
+                       + (it.get("notes") or "")).rstrip("; ")
+    if not str(dst).startswith(str(ROOT)):   # the entry still ran the simulator's own rotation: give it a file of ours
+        dst = HERE / "apls" / cls / f"{entry}-raid.apl.json"
+        dst.parent.mkdir(parents=True, exist_ok=True)
+    dst.write_text(json.dumps(apl, indent=1) + "\n", encoding="utf-8")
+    rp = paths.scenario_dir(cls, "raid") / "raidsim" / f"{entry}-rotation-search.json"
+    rec = json.load(open(rp, encoding="utf-8")) if rp.exists() else {}
+    if "changes" in rec:
+        rec = {rec.get("setting", "dummy"): rec}
+    r = rec.setdefault("raid", {"class": cls, "spec": entry, "setting": "raid", "changes": [], "passes": 0, "start": "cross-race"})
+    r["passes"] = r.get("passes", 1) + 1
+    r.setdefault("changes", []).append({"round": len(r.get("changes", [])) + 1, "pass": r["passes"], "date": TODAY,
+                                         "change": f"rotation replaced by {sib}'s raid rotation (the open search's cross-race of every build under every sibling rotation)",
+                                         "gain_seed1": None, "gain_seed2": round(gain, 4), "candidates": 1})
+    rp.write_text(json.dumps(rec, indent=1) + "\n", encoding="utf-8")
+    with A.specs_lock():
+        A._point_specs(HERE / "specs.json", cls, entry, "apl_opt_raid", dst)
+    R.set_game("forever")
+
+
+def own_gear(cls, st, repo, save):
+    """A phase-1 BiS set of its own for every open winner in a family no machine-learning record covers (2026-10-06: the Hawk hunter
+    was scored in pure melee gear while its hawks scale with ranged attack power); the winner raced in it against the entry's standard
+    set, both recorded. gear_tiers.make writes raidsim/gear_sets/forever/tiers/<class>-<family slug>-bis.gear.json."""
+    done = st.setdefault("own_gear", {})
+    ml = {json.load(open(p, encoding="utf-8")).get("spec") for p in (HERE / "ml").glob(f"{cls}-*.json")}
+    db = zones = None
+    trees = R.load_trees(repo, cls)
+    for entry, e in st["entries"].items():
+        if not e.get("done") or entry in done:
+            continue
+        fam = e.get("family")
+        if fam in ml:
+            done[entry] = None
+            continue
+        if db is None:
+            db, zones = GT.load_db(repo)
+        w = flat_of((e.get("again") or e["first"])["winner"]["allocation"])
+        log(f"== {cls} {entry}: BiS set for the open winner's family ({fam}: no machine-learning record)")
+        try:
+            g = GT.make(cls, fam, "bis", entry, R.talents_string(trees, w), "open winner", repo, db, zones, GT.args_ns())
+        except Exception as ex:   # noqa: BLE001
+            log(f"  gear: failed ({type(ex).__name__}: {ex})")
+            done[entry] = {"error": str(ex)[:200]}
+            save()
+            continue
+        items = json.load(open(resolve(g["gear"]), encoding="utf-8"))["items"]
+        E = R.SPECS[cls][entry]
+        rows = A.bench(E, repo, [{"label": "standard", "talents": R.talents_string(trees, w)},
+                                {"label": "own BiS", "talents": R.talents_string(trees, w), "gear_json": {"items": items}}], 30000, 5, "raid", f"owngear-{cls}")
+        done[entry] = {"gear": g["gear"], "ilvl": g.get("ilvl"), "names": g.get("names"), "dps_standard": round(rows["standard"].get("dps") or 0, 1),
+                       "dps_own_bis": round(rows["own BiS"].get("dps") or 0, 1)}
+        log(f"  gear: standard set {done[entry]['dps_standard']} -> own BiS {done[entry]['dps_own_bis']} DPS")
+        save()
 
 
 def table(vals, base):
@@ -322,6 +442,15 @@ def write_class(cls, st):
         o += [f"**Open winner {e['split']}** ({e['family']}):", ""] + table(e["values"], e["values_base"])
         if e.get("values_ours"):
             o += [f"**Our best build there, {e['ours_best']}:**", ""] + table(e["values_ours"], e["values_ours_base"])
+        cr = (st.get("cross") or {}).get(entry)
+        if cr and cr.get("tested"):
+            lab = (cr.get("adopted") or {}).get("build") or "open winner"
+            o += ["Sibling rotations (the entry's best build under each, 10,000 fights): " + ", ".join(f"{sib} {v.get(lab, 0):+.1%}" for sib, v in cr["tested"].items())
+                  + (f"; **adopted {cr['adopted']['from']}'s rotation ({cr['adopted']['gain']:+.1%} on 30,000 fights)**" if cr.get("adopted") else "; none adopted") + ".", ""]
+        og = (st.get("own_gear") or {}).get(entry)
+        if og and og.get("gear"):
+            o += [f"Own phase-1 BiS set for this family (`{og['gear']}`, item level {og.get('ilvl')}): {og['dps_own_bis']:.1f} DPS against "
+                  f"{og['dps_standard']:.1f} in the entry's standard set.", ""]
         imp = (e.get("again") or e.get("first") or {}).get("important_features") or []
         if imp:
             o += ["The search model's most important talents (random-forest importance): "
