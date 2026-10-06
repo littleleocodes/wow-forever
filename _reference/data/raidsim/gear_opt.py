@@ -1,6 +1,8 @@
 """Equal-tier raid gear for every damage spec (2026-09-30, user request: the cross-spec raid ranking mixed gear levels).
 
-    python _reference/data/raidsim/gear_opt.py [classes] [--write] [--apply]
+    python _reference/data/raidsim/gear_opt.py [classes] [--write] [--fresh]   # optimize (and record)
+    python _reference/data/raidsim/gear_opt.py --apply                         # a separate call: write the recorded sets and point specs.json at them
+    (--apply alone applies the record as it is: never combine it with a fresh optimization in one call)
 
 The simulator's gear presets are not one tier: the warrior's "p1" sets average item level 59, Shadow's pre-raid set 60, the paladin's
 default 61, while mage, hunter, warlock and rogue sets are phase-1 raid gear (65-68). So the class ranking partly ranked gear. This
@@ -354,6 +356,10 @@ def main():
         if r["chosen"] == "current" or f'"gear": "{gear}"' not in text:   # kept, or a record of a set no entry uses any more
             continue
         cls = r["members"][0].split("/")[0]
+        gone = [x["id"] for x in r["items"] if x.get("id") and x["id"] not in db]
+        if gone:   # 2026-10-06: a record of 2026-10-01 still held the removed Leafre ring (276765) and --apply wrote it into three sets
+            print(f"{gear}: NOT applied, its record holds items the simulator no longer has ({gone}); run --write --fresh for it first")
+            continue
         gp = pathlib.Path(gear)   # ui/specs/<class>/<spec>/gear_sets/<name>: the spec folder keeps sets of one class apart
         spec_dir = gp.parent.parent.name if gp.parent.name == "gear_sets" else "project"
         name = gp.name if gp.name.endswith(".p1opt.gear.json") else f"{cls}-{spec_dir}-{gp.name.split('.')[0]}.p1opt.gear.json"   # re-runs: in place

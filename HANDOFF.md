@@ -189,6 +189,18 @@ Each class folder now opens with player pages and keeps the research below:
   `--smoke` test (see CLAUDE.md "Deep optimisation of one class" for the procedure at the end of the beta and the time it takes: about
   five days of computing for the eight classes left, less in parallel cloud sessions). Not started: the real runs (the user decides when).
 
+- **Paused 2026-10-06 (user request) with two things half done.** (1) The open searches (`bash _reference/data/run_open_searches.sh`
+  resumes; hunter complete, mage Frost and Fire done, Arcane next). (2) A gear repair: four sets held the same unique-equipped ring
+  twice (the picker never checked uniqueness; fixed in gear_opt.py); the duplicate was replaced by a placeholder (Blackstone Ring, 17713)
+  so the fixed picker would choose the best legal ring, but the re-pick was stopped before it ran. Done so far: the melee standard set and
+  the Survival BiS set (Don Julio's Band in the second slot). Still holding the placeholder: `tiers/hunter-hybrid-beast-mastery-survival-bis`
+  (remove `own_gear.melee-dps` from `raidsim/families/hunter.json`, run `family_search.py hunter`), `tiers/warrior-fury-prebis`
+  (`gear_tiers.py --set warrior Fury prebis --entry fury-dw-raid --build opt-fury-dw-raid-raid-dps`) and `tiers/rogue-combat-bis`
+  (`gear_tiers.py --set rogue Combat bis --entry combat-daggers-raid --build combat-ml-raid`). Lesson of the day: `gear_opt.py --apply`
+  wrote the 2026-10-01 record's item lists (still holding the removed Leafre ring, 276765) into three standard sets; reverted. The
+  standard physical sets still carry the 2026-10-03 Ring of Spell Power stand-in: `gear_opt.py --write --apply --fresh` (every class) is
+  the proper fix once the apply path only writes items the simulator has.
+
 ## Where things stand (2026-09-28)
 
 Everything below is generated and current as of this date; the pages are the source, not this summary.
