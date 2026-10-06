@@ -149,7 +149,7 @@
   "builds": [
    {
     "label": "open winner",
-    "talents": "5320001505101251-00532500014"
+    "talents": "50230005031-0053352001520051"
    },
    {
     "label": "bm-mm-raid",
@@ -230,18 +230,26 @@
     "gain_seed2": 0.0016146488071595577,
     "candidates": 389,
     "pass": 6
+   },
+   {
+    "round": 9,
+    "change": "drop 'mana % \u2265 30%' from the condition: if time left on Serpent Sting < 1s and time until Aimed Shot is ready \u2265 0.5 and time until Multi-Shot is ready \u2265 0.5 and mana % \u2265 30% and time left in the fight \u2265 6s: cast Serpent Sting",
+    "gain_seed1": 0.0019755803600252086,
+    "gain_seed2": 0.002087022461477961,
+    "candidates": 396,
+    "pass": 8
    }
   ],
   "final": {
    "raid": {
     "open winner": {
-     "before": 797.0328852590047,
-     "after": 862.737295646754,
-     "base": 797.0328852590047,
+     "before": 813.2611505266458,
+     "after": 873.6448446083895,
+     "base": 813.2611505266458,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
+     "oom_before": 0.27331541083959987,
+     "oom_after": 1.4445306569920005
     },
     "bm-mm-raid": {
      "before": 783.1865389020702,
@@ -254,7 +262,7 @@
     },
     "sim preset: Beast Mastery 35/16/0": {
      "before": 738.0600647898292,
-     "after": 810.2183063855402,
+     "after": 810.2188796138803,
      "base": 738.0600647898292,
      "before_value": null,
      "after_value": null,
@@ -273,6 +281,6 @@
    }
   },
   "first_date": "2026-09-27",
-  "passes": 7
+  "passes": 8
  }
 }

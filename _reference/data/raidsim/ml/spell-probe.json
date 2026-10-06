@@ -5830,5 +5830,99 @@
     "kept": false
    }
   ]
+ },
+ "hunter/mm-lonewolf-raid/raid/any": {
+  "class": "hunter",
+  "spec": "any",
+  "entry": "mm-lonewolf-raid",
+  "setting": "raid",
+  "date": "2026-10-05",
+  "base_dps": 901.35,
+  "abilities": [
+   {
+    "ability": "Trueshot Aura",
+    "talent": "Trueshot Aura",
+    "spell": 20906,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "7/44/0",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   }
+  ]
+ },
+ "hunter/bm-raid/raid/any": {
+  "class": "hunter",
+  "spec": "any",
+  "entry": "bm-raid",
+  "setting": "raid",
+  "date": "2026-10-05",
+  "base_dps": 880.33,
+  "abilities": [
+   {
+    "ability": "Bestial Wrath",
+    "talent": "Bestial Wrath",
+    "spell": 19574,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the top",
+     "gain_seed1": 0.0004,
+     "split": "31/20/0",
+     "vs_spec_build": 0.0004
+    },
+    "kept": false
+   },
+   {
+    "ability": "Intimidation",
+    "talent": "Intimidation",
+    "spell": 19577,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "in the middle",
+     "gain_seed1": 0.0006,
+     "split": "31/20/0",
+     "vs_spec_build": 0.0006
+    },
+    "kept": false
+   }
+  ]
+ },
+ "mage/fire-raid/raid/any": {
+  "class": "mage",
+  "spec": "any",
+  "entry": "fire-raid",
+  "setting": "raid",
+  "date": "2026-10-06",
+  "base_dps": 700.27,
+  "abilities": [
+   {
+    "ability": "Combustion",
+    "talent": "Combustion",
+    "spell": 11129,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "in the middle",
+     "gain_seed1": 0.0,
+     "split": "12/34/5",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   }
+  ]
  }
 }

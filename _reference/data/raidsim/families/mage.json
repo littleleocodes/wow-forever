@@ -1,6 +1,6 @@
 {
  "class": "mage",
- "date": "2026-10-05",
+ "date": "2026-10-06",
  "entries": {
   "frost-raid": {
    "first": {
@@ -93,56 +93,148 @@
     "runs_agree": 3,
     "important_features": [
      {
-      "feature": "Winter's Chill",
-      "importance": 0.3273
+      "feature": "Fingers of Frost",
+      "importance": 0.2942
      },
      {
-      "feature": "Fingers of Frost",
-      "importance": 0.2005
+      "feature": "Winter's Chill",
+      "importance": 0.2188
      },
      {
       "feature": "Frost points",
-      "importance": 0.1229
+      "importance": 0.13
      },
      {
       "feature": "Fire points",
-      "importance": 0.101
+      "importance": 0.0771
      },
      {
       "feature": "Shatter",
-      "importance": 0.0596
-     },
-     {
-      "feature": "Improved Frostbolt",
-      "importance": 0.0336
+      "importance": 0.0642
      },
      {
       "feature": "Missile Barrage",
-      "importance": 0.0288
+      "importance": 0.0323
      },
      {
-      "feature": "Piercing Ice",
-      "importance": 0.017
+      "feature": "Improved Frostbolt",
+      "importance": 0.0292
+     },
+     {
+      "feature": "Ice Lance",
+      "importance": 0.0287
+     },
+     {
+      "feature": "Ignite",
+      "importance": 0.0182
      },
      {
       "feature": "Ice Shards",
-      "importance": 0.0145
+      "importance": 0.0175
      },
      {
-      "feature": "Improved Fireball",
-      "importance": 0.0116
+      "feature": "Fire Power",
+      "importance": 0.0163
      },
      {
-      "feature": "Incineration",
-      "importance": 0.0111
-     },
-     {
-      "feature": "Frost Warding",
-      "importance": 0.0097
+      "feature": "Piercing Ice",
+      "importance": 0.008
      }
     ],
-    "simulated_builds": 9077,
-    "protected": []
+    "simulated_builds": 8323,
+    "protected": [],
+    "families": [
+     {
+      "keystones": "Missile Barrage + Cold Snap",
+      "split": "16/5/30",
+      "family": "Frost",
+      "score": 708.9
+     },
+     {
+      "keystones": "Arcane Blast + Ice Barrier",
+      "split": "13/5/33",
+      "family": "Frost",
+      "score": 674.4
+     },
+     {
+      "keystones": "Arcane Blast + Cold Snap",
+      "split": "13/3/35",
+      "family": "Frost",
+      "score": 674.4
+     },
+     {
+      "keystones": "Heating Up + Ice Barrier",
+      "split": "2/16/33",
+      "family": "Frost",
+      "score": 673.4
+     },
+     {
+      "keystones": "Pyroblast + Ice Block",
+      "split": "16/11/24",
+      "family": "Hybrid Arcane/Frost",
+      "score": 660.3
+     },
+     {
+      "keystones": "Arcane Blast + Ice Block",
+      "split": "16/3/32",
+      "family": "Frost",
+      "score": 622.6
+     },
+     {
+      "keystones": "Arcane Blast + Ice Lance",
+      "split": "11/7/33",
+      "family": "Frost",
+      "score": 616.4
+     },
+     {
+      "keystones": "Blast Wave + Ice Lance",
+      "split": "2/22/27",
+      "family": "Hybrid Fire/Frost",
+      "score": 608.9
+     },
+     {
+      "keystones": "Pyroblast + Cold Snap",
+      "split": "0/23/28",
+      "family": "Hybrid Fire/Frost",
+      "score": 596.6
+     },
+     {
+      "keystones": "Presence of Mind + Ice Lance",
+      "split": "21/3/27",
+      "family": "Hybrid Arcane/Frost",
+      "score": 594.3
+     },
+     {
+      "keystones": "Arcane Power + Ice Block",
+      "split": "31/4/16",
+      "family": "Arcane",
+      "score": 593.8
+     },
+     {
+      "keystones": "Heating Up + Ice Block",
+      "split": "6/22/23",
+      "family": "Hybrid Fire/Frost",
+      "score": 591.8
+     },
+     {
+      "keystones": "Arcane Power + Ice Lance",
+      "split": "32/5/14",
+      "family": "Arcane",
+      "score": 589.4
+     },
+     {
+      "keystones": "Missile Barrage + Ice Block",
+      "split": "16/11/24",
+      "family": "Hybrid Arcane/Frost",
+      "score": 586.5
+     },
+     {
+      "keystones": "Heating Up + Ice Lance",
+      "split": "8/16/27",
+      "family": "Hybrid Fire/Frost",
+      "score": 584.4
+     }
+    ]
    },
    "race_first": {
     "open winner": {
@@ -174,6 +266,7 @@
      "se": 0.24
     }
    },
+   "probe": null,
    "again": null,
    "race": {
     "open winner": {
@@ -421,7 +514,7 @@
    "dps": 704.9,
    "link": "https://talentsforever.com/mage/60/0520150030012101--055500031100030025-4",
    "gap_vs_ours": 0.001,
-   "minutes": 7.4,
+   "minutes": 40.5,
    "done": true
   },
   "fire-raid": {
@@ -508,56 +601,148 @@
     "runs_agree": 3,
     "important_features": [
      {
-      "feature": "Fire Power",
-      "importance": 0.3927
-     },
-     {
-      "feature": "Fire points",
-      "importance": 0.1942
-     },
-     {
       "feature": "Improved Scorch",
-      "importance": 0.1851
+      "importance": 0.302
      },
      {
       "feature": "Critical Mass",
-      "importance": 0.0882
+      "importance": 0.2674
      },
      {
-      "feature": "Combustion",
-      "importance": 0.0324
+      "feature": "Fire Power",
+      "importance": 0.1947
      },
      {
-      "feature": "Ignite",
-      "importance": 0.024
+      "feature": "Fire points",
+      "importance": 0.0827
      },
      {
       "feature": "Heating Up",
-      "importance": 0.0204
+      "importance": 0.0582
+     },
+     {
+      "feature": "Combustion",
+      "importance": 0.0237
+     },
+     {
+      "feature": "Ignite",
+      "importance": 0.0153
+     },
+     {
+      "feature": "Pyroblast",
+      "importance": 0.0138
      },
      {
       "feature": "Master of Elements",
-      "importance": 0.0149
-     },
-     {
-      "feature": "Arcane Concentration",
-      "importance": 0.0095
-     },
-     {
-      "feature": "Frost points",
-      "importance": 0.0074
-     },
-     {
-      "feature": "Impact",
-      "importance": 0.0058
+      "importance": 0.0105
      },
      {
       "feature": "Elemental Precision",
-      "importance": 0.0042
+      "importance": 0.0093
+     },
+     {
+      "feature": "Arcane Concentration",
+      "importance": 0.0031
+     },
+     {
+      "feature": "Frost points",
+      "importance": 0.0023
      }
     ],
-    "simulated_builds": 9242,
-    "protected": []
+    "simulated_builds": 8476,
+    "protected": [],
+    "families": [
+     {
+      "keystones": "Arcane Blast + Combustion",
+      "split": "12/34/5",
+      "family": "Fire",
+      "score": 699.0
+     },
+     {
+      "keystones": "Pyroblast + Ice Lance",
+      "split": "8/32/11",
+      "family": "Fire",
+      "score": 696.7
+     },
+     {
+      "keystones": "Missile Barrage + Combustion",
+      "split": "16/31/4",
+      "family": "Fire",
+      "score": 685.9
+     },
+     {
+      "keystones": "Blast Wave + Ice Lance",
+      "split": "2/32/17",
+      "family": "Fire",
+      "score": 674.9
+     },
+     {
+      "keystones": "Pyroblast + Cold Snap",
+      "split": "0/30/21",
+      "family": "Fire",
+      "score": 657.6
+     },
+     {
+      "keystones": "Presence of Mind + Blast Wave",
+      "split": "23/23/5",
+      "family": "Hybrid Arcane/Fire",
+      "score": 598.5
+     },
+     {
+      "keystones": "Heating Up + Ice Block",
+      "split": "4/31/16",
+      "family": "Fire",
+      "score": 596.0
+     },
+     {
+      "keystones": "Combustion + Ice Lance",
+      "split": "8/32/11",
+      "family": "Fire",
+      "score": 594.7
+     },
+     {
+      "keystones": "Combustion + Ice Block",
+      "split": "3/32/16",
+      "family": "Fire",
+      "score": 583.8
+     },
+     {
+      "keystones": "Missile Barrage + Blast Wave",
+      "split": "18/26/7",
+      "family": "Hybrid Arcane/Fire",
+      "score": 577.8
+     },
+     {
+      "keystones": "Presence of Mind + Heating Up",
+      "split": "21/19/11",
+      "family": "Hybrid Arcane/Fire",
+      "score": 568.9
+     },
+     {
+      "keystones": "Arcane Power + Heating Up",
+      "split": "31/18/2",
+      "family": "Arcane",
+      "score": 557.2
+     },
+     {
+      "keystones": "Blast Wave + Cold Snap",
+      "split": "3/27/21",
+      "family": "Hybrid Fire/Frost",
+      "score": 555.3
+     },
+     {
+      "keystones": "Presence of Mind + Pyroblast",
+      "split": "21/22/8",
+      "family": "Hybrid Arcane/Fire",
+      "score": 550.2
+     },
+     {
+      "keystones": "Missile Barrage + Ice Lance",
+      "split": "16/24/11",
+      "family": "Hybrid Arcane/Fire",
+      "score": 549.4
+     }
+    ]
    },
    "race_first": {
     "open winner": {
@@ -572,6 +757,12 @@
      "dps": 700.7,
      "se": 0.29
     }
+   },
+   "probe": {
+    "talents": [
+     "Combustion"
+    ],
+    "lines_kept": 0
    },
    "again": null,
    "race": {
@@ -792,928 +983,7 @@
    "dps": 700.7,
    "link": "https://talentsforever.com/mage/60/005205-23550020130133051-005-4",
    "gap_vs_ours": 0.0,
-   "minutes": 8.6,
-   "done": true
-  },
-  "arcane-dps": {
-   "first": {
-    "winner": {
-     "allocation": {
-      "Arcane": [
-       [
-        "Arcane Focus",
-        5
-       ],
-       [
-        "Improved Channeling",
-        3
-       ],
-       [
-        "Arcane Subtlety",
-        2
-       ],
-       [
-        "Arcane Concentration",
-        5
-       ],
-       [
-        "Arcane Impact",
-        3
-       ],
-       [
-        "Arcane Blast",
-        1
-       ],
-       [
-        "Arcane Meditation",
-        1
-       ],
-       [
-        "Missile Barrage",
-        1
-       ],
-       [
-        "Presence of Mind",
-        1
-       ],
-       [
-        "Arcane Mind",
-        5
-       ],
-       [
-        "Arcane Instability",
-        3
-       ],
-       [
-        "Arcane Power",
-        1
-       ]
-      ],
-      "Fire": [
-       [
-        "Wake of Fire",
-        2
-       ],
-       [
-        "Incineration",
-        3
-       ],
-       [
-        "Ignite",
-        5
-       ]
-      ],
-      "Frost": [
-       [
-        "Improved Frostbolt",
-        2
-       ],
-       [
-        "Elemental Precision",
-        5
-       ],
-       [
-        "Ice Shards",
-        2
-       ],
-       [
-        "Frostbite",
-        1
-       ]
-      ]
-     },
-     "split": "31/10/10",
-     "dps": 659.81,
-     "se": 0.107,
-     "iterations": 100000
-    },
-    "family": "Arcane",
-    "runs_agree": 3,
-    "important_features": [
-     {
-      "feature": "Arcane Blast",
-      "importance": 0.5806
-     },
-     {
-      "feature": "Arcane points",
-      "importance": 0.1139
-     },
-     {
-      "feature": "Arcane Instability",
-      "importance": 0.1047
-     },
-     {
-      "feature": "Arcane Mind",
-      "importance": 0.0853
-     },
-     {
-      "feature": "Arcane Power",
-      "importance": 0.0325
-     },
-     {
-      "feature": "Missile Barrage",
-      "importance": 0.0219
-     },
-     {
-      "feature": "Frost points",
-      "importance": 0.0093
-     },
-     {
-      "feature": "Ignite",
-      "importance": 0.0068
-     },
-     {
-      "feature": "Arcane Meditation",
-      "importance": 0.0048
-     },
-     {
-      "feature": "Fire points",
-      "importance": 0.0048
-     },
-     {
-      "feature": "Improved Fireball",
-      "importance": 0.004
-     },
-     {
-      "feature": "Improved Counterspell",
-      "importance": 0.003
-     }
-    ],
-    "simulated_builds": 9290,
-    "protected": []
-   },
-   "race_first": {
-    "open winner": {
-     "dps": 659.8,
-     "se": 0.19
-    },
-    "arcane-blast-raid": {
-     "dps": 659.7,
-     "se": 0.2
-    }
-   },
-   "again": null,
-   "race": {
-    "open winner": {
-     "dps": 659.8,
-     "se": 0.19
-    },
-    "arcane-blast-raid": {
-     "dps": 659.7,
-     "se": 0.2
-    }
-   },
-   "values": {
-    "Arcane Blast": {
-     "ranks": 1,
-     "lost": 494.3,
-     "per_point": 494.3,
-     "share": 0.7495
-    },
-    "Missile Barrage": {
-     "ranks": 1,
-     "lost": 126.0,
-     "per_point": 126.0,
-     "share": 0.1911
-    },
-    "Arcane Mind": {
-     "ranks": 5,
-     "lost": 60.7,
-     "per_point": 12.1,
-     "share": 0.0921
-    },
-    "Arcane Instability": {
-     "ranks": 3,
-     "lost": 33.1,
-     "per_point": 11.0,
-     "share": 0.0502
-    },
-    "Arcane Focus": {
-     "ranks": 5,
-     "lost": 25.8,
-     "per_point": 5.2,
-     "share": 0.0391
-    },
-    "Arcane Impact": {
-     "ranks": 3,
-     "lost": 22.0,
-     "per_point": 7.3,
-     "share": 0.0334
-    },
-    "Ignite": {
-     "ranks": 5,
-     "lost": 22.0,
-     "per_point": 4.4,
-     "share": 0.0333
-    },
-    "Incineration": {
-     "ranks": 3,
-     "lost": 20.1,
-     "per_point": 6.7,
-     "share": 0.0305
-    },
-    "Arcane Power": {
-     "ranks": 1,
-     "lost": 18.3,
-     "per_point": 18.3,
-     "share": 0.0278
-    },
-    "Wake of Fire": {
-     "ranks": 2,
-     "lost": 13.1,
-     "per_point": 6.5,
-     "share": 0.0198
-    },
-    "Elemental Precision": {
-     "ranks": 5,
-     "lost": 9.6,
-     "per_point": 1.9,
-     "share": 0.0145
-    },
-    "Presence of Mind": {
-     "ranks": 1,
-     "lost": 3.6,
-     "per_point": 3.6,
-     "share": 0.0055
-    },
-    "Arcane Meditation": {
-     "ranks": 1,
-     "lost": 0.2,
-     "per_point": 0.2,
-     "share": 0.0003
-    },
-    "Ice Shards": {
-     "ranks": 2,
-     "lost": 0.2,
-     "per_point": 0.1,
-     "share": 0.0002
-    },
-    "Improved Frostbolt": {
-     "ranks": 2,
-     "lost": 0.1,
-     "per_point": 0.1,
-     "share": 0.0002
-    },
-    "Improved Channeling": {
-     "ranks": 3,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    },
-    "Arcane Subtlety": {
-     "ranks": 2,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    },
-    "Arcane Concentration": {
-     "ranks": 5,
-     "lost": -0.0,
-     "per_point": -0.0,
-     "share": -0.0001
-    },
-    "Frostbite": {
-     "ranks": 1,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    }
-   },
-   "values_base": 659.5,
-   "values_ours": {
-    "Arcane Blast": {
-     "ranks": 1,
-     "lost": 493.9,
-     "per_point": 493.9,
-     "share": 0.7493
-    },
-    "Missile Barrage": {
-     "ranks": 1,
-     "lost": 122.1,
-     "per_point": 122.1,
-     "share": 0.1852
-    },
-    "Arcane Mind": {
-     "ranks": 5,
-     "lost": 60.7,
-     "per_point": 12.1,
-     "share": 0.092
-    },
-    "Arcane Instability": {
-     "ranks": 3,
-     "lost": 33.0,
-     "per_point": 11.0,
-     "share": 0.0501
-    },
-    "Arcane Focus": {
-     "ranks": 5,
-     "lost": 25.9,
-     "per_point": 5.2,
-     "share": 0.0393
-    },
-    "Arcane Impact": {
-     "ranks": 3,
-     "lost": 22.0,
-     "per_point": 7.3,
-     "share": 0.0333
-    },
-    "Ignite": {
-     "ranks": 5,
-     "lost": 22.0,
-     "per_point": 4.4,
-     "share": 0.0333
-    },
-    "Incineration": {
-     "ranks": 3,
-     "lost": 20.1,
-     "per_point": 6.7,
-     "share": 0.0306
-    },
-    "Wake of Fire": {
-     "ranks": 2,
-     "lost": 18.6,
-     "per_point": 9.3,
-     "share": 0.0282
-    },
-    "Arcane Power": {
-     "ranks": 1,
-     "lost": 18.2,
-     "per_point": 18.2,
-     "share": 0.0276
-    },
-    "Elemental Precision": {
-     "ranks": 5,
-     "lost": 9.6,
-     "per_point": 1.9,
-     "share": 0.0146
-    },
-    "Presence of Mind": {
-     "ranks": 1,
-     "lost": 3.2,
-     "per_point": 3.2,
-     "share": 0.0049
-    },
-    "Arcane Meditation": {
-     "ranks": 3,
-     "lost": 0.4,
-     "per_point": 0.1,
-     "share": 0.0005
-    },
-    "Improved Channeling": {
-     "ranks": 5,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    },
-    "Arcane Subtlety": {
-     "ranks": 2,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    },
-    "Burning Soul": {
-     "ranks": 1,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    },
-    "Arcane Concentration": {
-     "ranks": 5,
-     "lost": -0.1,
-     "per_point": -0.0,
-     "share": -0.0001
-    }
-   },
-   "values_ours_base": 659.1,
-   "ours_best": "arcane-blast-raid",
-   "family": "Arcane",
-   "split": "31/10/10",
-   "dps": 659.8,
-   "link": "https://talentsforever.com/mage/60/053205003100111531-2305-0252001-4",
-   "gap_vs_ours": 0.0002,
-   "minutes": 8.9,
-   "done": true
-  },
-  "frostfire-raid": {
-   "first": {
-    "winner": {
-     "allocation": {
-      "Arcane": [],
-      "Fire": [
-       [
-        "Wake of Fire",
-        2
-       ],
-       [
-        "Incineration",
-        3
-       ],
-       [
-        "Improved Fireball",
-        5
-       ],
-       [
-        "Ignite",
-        5
-       ],
-       [
-        "Pyroblast",
-        1
-       ],
-       [
-        "Improved Scorch",
-        3
-       ],
-       [
-        "Improved Fire Ward",
-        2
-       ],
-       [
-        "Heating Up",
-        1
-       ],
-       [
-        "Master of Elements",
-        3
-       ],
-       [
-        "Critical Mass",
-        3
-       ],
-       [
-        "Fire Power",
-        5
-       ],
-       [
-        "Combustion",
-        1
-       ]
-      ],
-      "Frost": [
-       [
-        "Improved Frostbolt",
-        1
-       ],
-       [
-        "Elemental Precision",
-        5
-       ],
-       [
-        "Ice Shards",
-        5
-       ],
-       [
-        "Piercing Ice",
-        3
-       ],
-       [
-        "Frost Channeling",
-        3
-       ]
-      ]
-     },
-     "split": "0/34/17",
-     "dps": 643.89,
-     "se": 0.1691,
-     "iterations": 100000
-    },
-    "family": "Fire",
-    "runs_agree": 3,
-    "important_features": [
-     {
-      "feature": "Fire Power",
-      "importance": 0.377
-     },
-     {
-      "feature": "Fire points",
-      "importance": 0.1911
-     },
-     {
-      "feature": "Combustion",
-      "importance": 0.0997
-     },
-     {
-      "feature": "Critical Mass",
-      "importance": 0.0977
-     },
-     {
-      "feature": "Improved Scorch",
-      "importance": 0.0701
-     },
-     {
-      "feature": "Ice Shards",
-      "importance": 0.0326
-     },
-     {
-      "feature": "Arcane points",
-      "importance": 0.0267
-     },
-     {
-      "feature": "Heating Up",
-      "importance": 0.0143
-     },
-     {
-      "feature": "Frost Channeling",
-      "importance": 0.0128
-     },
-     {
-      "feature": "Ignite",
-      "importance": 0.0124
-     },
-     {
-      "feature": "Piercing Ice",
-      "importance": 0.0124
-     },
-     {
-      "feature": "Improved Fireball",
-      "importance": 0.0114
-     }
-    ],
-    "simulated_builds": 9204,
-    "protected": []
-   },
-   "race_first": {
-    "open winner": {
-     "dps": 644.2,
-     "se": 0.31
-    },
-    "frostfire-raid": {
-     "dps": 589.0,
-     "se": 0.3
-    },
-    "frostfire-ml-raid": {
-     "dps": 613.3,
-     "se": 0.3
-    }
-   },
-   "rotation_changed": true,
-   "again": {
-    "winner": {
-     "allocation": {
-      "Arcane": [],
-      "Fire": [
-       [
-        "Wake of Fire",
-        2
-       ],
-       [
-        "Incineration",
-        3
-       ],
-       [
-        "Improved Fireball",
-        5
-       ],
-       [
-        "Ignite",
-        5
-       ],
-       [
-        "Pyroblast",
-        1
-       ],
-       [
-        "Improved Scorch",
-        3
-       ],
-       [
-        "Improved Fire Ward",
-        2
-       ],
-       [
-        "Heating Up",
-        1
-       ],
-       [
-        "Master of Elements",
-        3
-       ],
-       [
-        "Critical Mass",
-        3
-       ],
-       [
-        "Fire Power",
-        5
-       ],
-       [
-        "Combustion",
-        1
-       ]
-      ],
-      "Frost": [
-       [
-        "Improved Frostbolt",
-        1
-       ],
-       [
-        "Elemental Precision",
-        5
-       ],
-       [
-        "Ice Shards",
-        5
-       ],
-       [
-        "Piercing Ice",
-        3
-       ],
-       [
-        "Frost Channeling",
-        3
-       ]
-      ]
-     },
-     "split": "0/34/17",
-     "dps": 683.99,
-     "se": 0.1756,
-     "iterations": 100000
-    },
-    "family": "Fire",
-    "runs_agree": 2,
-    "important_features": [
-     {
-      "feature": "Improved Scorch",
-      "importance": 0.2914
-     },
-     {
-      "feature": "Fire points",
-      "importance": 0.1904
-     },
-     {
-      "feature": "Fire Power",
-      "importance": 0.1707
-     },
-     {
-      "feature": "Critical Mass",
-      "importance": 0.1006
-     },
-     {
-      "feature": "Combustion",
-      "importance": 0.0519
-     },
-     {
-      "feature": "Ignite",
-      "importance": 0.0304
-     },
-     {
-      "feature": "Piercing Ice",
-      "importance": 0.0251
-     },
-     {
-      "feature": "Heating Up",
-      "importance": 0.0174
-     },
-     {
-      "feature": "Master of Elements",
-      "importance": 0.0168
-     },
-     {
-      "feature": "Improved Fireball",
-      "importance": 0.0162
-     },
-     {
-      "feature": "Ice Shards",
-      "importance": 0.0157
-     },
-     {
-      "feature": "Frost Channeling",
-      "importance": 0.0101
-     }
-    ],
-    "simulated_builds": 4639
-   },
-   "race": {
-    "open winner": {
-     "dps": 683.9,
-     "se": 0.32
-    },
-    "frostfire-raid": {
-     "dps": 647.6,
-     "se": 0.32
-    },
-    "frostfire-ml-raid": {
-     "dps": 636.4,
-     "se": 0.31
-    }
-   },
-   "values": {
-    "Ignite": {
-     "ranks": 5,
-     "lost": 93.5,
-     "per_point": 18.7,
-     "share": 0.1367
-    },
-    "Improved Scorch": {
-     "ranks": 3,
-     "lost": 84.9,
-     "per_point": 28.3,
-     "share": 0.1241
-    },
-    "Fire Power": {
-     "ranks": 5,
-     "lost": 60.5,
-     "per_point": 12.1,
-     "share": 0.0885
-    },
-    "Critical Mass": {
-     "ranks": 3,
-     "lost": 53.0,
-     "per_point": 17.7,
-     "share": 0.0775
-    },
-    "Pyroblast": {
-     "ranks": 1,
-     "lost": 48.7,
-     "per_point": 48.7,
-     "share": 0.0712
-    },
-    "Heating Up": {
-     "ranks": 1,
-     "lost": 48.7,
-     "per_point": 48.7,
-     "share": 0.0712
-    },
-    "Ice Shards": {
-     "ranks": 5,
-     "lost": 46.3,
-     "per_point": 9.3,
-     "share": 0.0677
-    },
-    "Improved Fireball": {
-     "ranks": 5,
-     "lost": 41.0,
-     "per_point": 8.2,
-     "share": 0.0599
-    },
-    "Combustion": {
-     "ranks": 1,
-     "lost": 24.2,
-     "per_point": 24.2,
-     "share": 0.0354
-    },
-    "Elemental Precision": {
-     "ranks": 5,
-     "lost": 20.2,
-     "per_point": 4.0,
-     "share": 0.0296
-    },
-    "Piercing Ice": {
-     "ranks": 3,
-     "lost": 18.3,
-     "per_point": 6.1,
-     "share": 0.0267
-    },
-    "Incineration": {
-     "ranks": 3,
-     "lost": 17.8,
-     "per_point": 5.9,
-     "share": 0.0261
-    },
-    "Frost Channeling": {
-     "ranks": 3,
-     "lost": 5.8,
-     "per_point": 1.9,
-     "share": 0.0085
-    },
-    "Master of Elements": {
-     "ranks": 3,
-     "lost": 5.7,
-     "per_point": 1.9,
-     "share": 0.0083
-    },
-    "Wake of Fire": {
-     "ranks": 2,
-     "lost": 3.1,
-     "per_point": 1.5,
-     "share": 0.0045
-    },
-    "Improved Fire Ward": {
-     "ranks": 2,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    },
-    "Improved Frostbolt": {
-     "ranks": 1,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    }
-   },
-   "values_base": 684.0,
-   "values_ours": {
-    "Ignite": {
-     "ranks": 5,
-     "lost": 89.3,
-     "per_point": 17.9,
-     "share": 0.1377
-    },
-    "Improved Scorch": {
-     "ranks": 3,
-     "lost": 88.5,
-     "per_point": 29.5,
-     "share": 0.1365
-    },
-    "Pyroblast": {
-     "ranks": 1,
-     "lost": 57.2,
-     "per_point": 57.2,
-     "share": 0.0882
-    },
-    "Heating Up": {
-     "ranks": 1,
-     "lost": 57.2,
-     "per_point": 57.2,
-     "share": 0.0882
-    },
-    "Fire Power": {
-     "ranks": 5,
-     "lost": 57.2,
-     "per_point": 11.4,
-     "share": 0.0882
-    },
-    "Critical Mass": {
-     "ranks": 3,
-     "lost": 49.4,
-     "per_point": 16.5,
-     "share": 0.0762
-    },
-    "Ice Shards": {
-     "ranks": 5,
-     "lost": 48.5,
-     "per_point": 9.7,
-     "share": 0.0748
-    },
-    "Improved Fireball": {
-     "ranks": 2,
-     "lost": 25.3,
-     "per_point": 12.6,
-     "share": 0.039
-    },
-    "Combustion": {
-     "ranks": 1,
-     "lost": 25.0,
-     "per_point": 25.0,
-     "share": 0.0385
-    },
-    "Frost Channeling": {
-     "ranks": 3,
-     "lost": 23.2,
-     "per_point": 7.7,
-     "share": 0.0358
-    },
-    "Master of Elements": {
-     "ranks": 3,
-     "lost": 21.3,
-     "per_point": 7.1,
-     "share": 0.0329
-    },
-    "Piercing Ice": {
-     "ranks": 3,
-     "lost": 19.0,
-     "per_point": 6.3,
-     "share": 0.0293
-    },
-    "Elemental Precision": {
-     "ranks": 5,
-     "lost": 16.9,
-     "per_point": 3.4,
-     "share": 0.0261
-    },
-    "Incineration": {
-     "ranks": 3,
-     "lost": 14.4,
-     "per_point": 4.8,
-     "share": 0.0221
-    },
-    "Improved Channeling": {
-     "ranks": 4,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    },
-    "Flame Throwing": {
-     "ranks": 1,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    },
-    "Burning Soul": {
-     "ranks": 3,
-     "lost": 0.0,
-     "per_point": 0.0,
-     "share": 0.0
-    }
-   },
-   "values_ours_base": 648.4,
-   "ours_best": "frostfire-raid",
-   "family": "Fire",
-   "split": "0/34/17",
-   "dps": 683.9,
-   "link": "https://talentsforever.com/mage/60/-23550000132133051-015500033-4",
-   "gap_vs_ours": 0.0561,
-   "minutes": 35.7,
+   "minutes": 47.5,
    "done": true
   }
  }

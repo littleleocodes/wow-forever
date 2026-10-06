@@ -1,11 +1,103 @@
 {
  "class": "hunter",
- "date": "2026-10-05",
+ "date": "2026-10-06",
  "rotations": {
   "bm-leveling": {
    "model": "bm-leveling",
    "trees": [
     "Beast Mastery"
+   ],
+   "families": [
+    {
+     "keystones": "Summon Hawk + Scatter Shot",
+     "split": "27/24/0",
+     "family": "Hybrid Beast Mastery/Marksmanship",
+     "kills_per_hour": 121.28
+    },
+    {
+     "keystones": "Bestial Wrath + Trueshot Aura",
+     "split": "32/19/0",
+     "family": "Beast Mastery",
+     "kills_per_hour": 120.46
+    },
+    {
+     "keystones": "Summon Hawk + Trueshot Aura",
+     "split": "28/23/0",
+     "family": "Hybrid Beast Mastery/Marksmanship",
+     "kills_per_hour": 119.91
+    },
+    {
+     "keystones": "Summon Hawk + Sniper Shot",
+     "split": "19/32/0",
+     "family": "Marksmanship",
+     "kills_per_hour": 119.85
+    },
+    {
+     "keystones": "Intimidation + Counterattack",
+     "split": "25/10/16",
+     "family": "Hybrid Beast Mastery/Survival",
+     "kills_per_hour": 118.98
+    },
+    {
+     "keystones": "Summon Hawk + Strider Kick",
+     "split": "18/12/21",
+     "family": "Hybrid Beast Mastery/Survival",
+     "kills_per_hour": 114.73
+    },
+    {
+     "keystones": "Intimidation + Scatter Shot",
+     "split": "23/26/2",
+     "family": "Hybrid Beast Mastery/Marksmanship",
+     "kills_per_hour": 114.51
+    },
+    {
+     "keystones": "Intimidation + Trueshot Aura",
+     "split": "24/22/5",
+     "family": "Hybrid Beast Mastery/Marksmanship",
+     "kills_per_hour": 114.34
+    },
+    {
+     "keystones": "Bestial Wrath + Counterattack",
+     "split": "31/3/17",
+     "family": "Beast Mastery",
+     "kills_per_hour": 113.45
+    },
+    {
+     "keystones": "Intimidation + Strider Kick",
+     "split": "27/0/24",
+     "family": "Hybrid Beast Mastery/Survival",
+     "kills_per_hour": 111.39
+    },
+    {
+     "keystones": "Summon Hawk + Counterattack",
+     "split": "16/9/26",
+     "family": "Hybrid Beast Mastery/Survival",
+     "kills_per_hour": 108.85
+    },
+    {
+     "keystones": "Summon Hawk + Lacerating Strikes",
+     "split": "18/2/31",
+     "family": "Survival",
+     "kills_per_hour": 107.86
+    },
+    {
+     "keystones": "Trueshot Aura + Counterattack",
+     "split": "0/27/24",
+     "family": "Hybrid Marksmanship/Survival",
+     "kills_per_hour": 98.69
+    },
+    {
+     "keystones": "Trueshot Aura + Strider Kick",
+     "split": "0/17/34",
+     "family": "Survival",
+     "kills_per_hour": 98.57
+    },
+    {
+     "keystones": "Scatter Shot + Counterattack",
+     "split": "8/26/17",
+     "family": "Hybrid Marksmanship/Survival",
+     "kills_per_hour": 98.0
+    }
    ],
    "winner": {
     "allocation": {
@@ -16,7 +108,7 @@
       ],
       [
        "Endurance Training",
-       2
+       1
       ],
       [
        "Focused Fire",
@@ -25,6 +117,10 @@
       [
        "Pathfinding",
        2
+      ],
+      [
+       "Improved Revive Pet",
+       1
       ],
       [
        "Unleashed Fury",
@@ -48,7 +144,7 @@
       ],
       [
        "Frenzy",
-       3
+       4
       ]
      ],
      "Marksmanship": [
@@ -72,65 +168,215 @@
      "Survival": [
       [
        "Improved Tracking",
-       5
+       4
       ]
      ]
     },
-    "split": "28/18/5",
-    "dps": 123.84,
-    "se": 0.0907,
-    "iterations": 100000
+    "split": "29/18/4",
+    "picked_by": "the 20-60 race among the finalists"
    },
    "runs_agree": 3,
-   "simulated_builds": 8169,
+   "simulated_builds": 41813,
    "important_features": [
     {
      "feature": "Lone Wolf",
-     "importance": 0.5715
+     "importance": 0.4265
     },
     {
      "feature": "Summon Hawk",
-     "importance": 0.1647
+     "importance": 0.2272
     },
     {
      "feature": "Ferocity",
-     "importance": 0.0464
-    },
-    {
-     "feature": "Beast Mastery points",
-     "importance": 0.0367
+     "importance": 0.0998
     },
     {
      "feature": "Unleashed Fury",
-     "importance": 0.0313
+     "importance": 0.095
     },
     {
-     "feature": "Survival points",
-     "importance": 0.0254
-    },
-    {
-     "feature": "Improved Concussive Shot",
-     "importance": 0.0209
-    },
-    {
-     "feature": "Marksmanship points",
-     "importance": 0.0191
-    },
-    {
-     "feature": "Hawk Eye",
-     "importance": 0.0148
+     "feature": "Beast Mastery points",
+     "importance": 0.0497
     },
     {
      "feature": "Bestial Discipline",
-     "importance": 0.0135
+     "importance": 0.0198
     },
     {
-     "feature": "Deflection",
-     "importance": 0.0055
+     "feature": "Frenzy",
+     "importance": 0.0179
     },
     {
-     "feature": "Endurance Training",
-     "importance": 0.0048
+     "feature": "Efficiency",
+     "importance": 0.0094
+    },
+    {
+     "feature": "Survival points",
+     "importance": 0.0082
+    },
+    {
+     "feature": "Marksmanship points",
+     "importance": 0.0058
+    },
+    {
+     "feature": "Improved Tracking",
+     "importance": 0.0047
+    },
+    {
+     "feature": "Bestial Swiftness",
+     "importance": 0.0045
+    }
+   ],
+   "finalists": [
+    {
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        5
+       ],
+       [
+        "Endurance Training",
+        1
+       ],
+       [
+        "Focused Fire",
+        2
+       ],
+       [
+        "Pathfinding",
+        2
+       ],
+       [
+        "Improved Revive Pet",
+        1
+       ],
+       [
+        "Unleashed Fury",
+        5
+       ],
+       [
+        "Ferocity",
+        5
+       ],
+       [
+        "Summon Hawk",
+        1
+       ],
+       [
+        "Spirit Bond",
+        1
+       ],
+       [
+        "Bestial Discipline",
+        2
+       ],
+       [
+        "Frenzy",
+        4
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Improved Stings",
+        3
+       ],
+       [
+        "Efficiency",
+        5
+       ],
+       [
+        "Careful Aim",
+        5
+       ]
+      ],
+      "Survival": [
+       [
+        "Improved Tracking",
+        4
+       ]
+      ]
+     },
+     "split": "29/18/4",
+     "dps": 123.68,
+     "se": 0.0904
+    },
+    {
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        5
+       ],
+       [
+        "Endurance Training",
+        1
+       ],
+       [
+        "Focused Fire",
+        2
+       ],
+       [
+        "Pathfinding",
+        2
+       ],
+       [
+        "Unleashed Fury",
+        5
+       ],
+       [
+        "Ferocity",
+        5
+       ],
+       [
+        "Summon Hawk",
+        1
+       ],
+       [
+        "Spirit Bond",
+        2
+       ],
+       [
+        "Bestial Discipline",
+        2
+       ],
+       [
+        "Frenzy",
+        4
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Improved Stings",
+        3
+       ],
+       [
+        "Efficiency",
+        5
+       ],
+       [
+        "Careful Aim",
+        5
+       ]
+      ],
+      "Survival": [
+       [
+        "Improved Tracking",
+        4
+       ]
+      ]
+     },
+     "split": "29/18/4",
+     "dps": 123.68,
+     "se": 0.0904
     }
    ],
    "order": [
@@ -213,47 +459,37 @@
      "points": 1
     },
     {
-     "levels": "50-54",
+     "levels": "50-53",
      "tree": "Survival",
      "talent": "Improved Tracking",
-     "points": 5
+     "points": 4
     },
     {
-     "levels": "55",
+     "levels": "54",
      "tree": "Beast Mastery",
      "talent": "Bestial Discipline",
      "points": 1
     },
     {
-     "levels": "56",
-     "tree": "Beast Mastery",
-     "talent": "Endurance Training",
-     "points": 1
-    },
-    {
-     "levels": "57",
+     "levels": "55",
      "tree": "Beast Mastery",
      "talent": "Spirit Bond",
      "points": 1
     },
     {
-     "levels": "58-60",
+     "levels": "56",
+     "tree": "Beast Mastery",
+     "talent": "Improved Revive Pet",
+     "points": 1
+    },
+    {
+     "levels": "57-60",
      "tree": "Beast Mastery",
      "talent": "Frenzy",
-     "points": 3
+     "points": 4
     }
    ],
    "race": {
-    "open winner": {
-     "weighted": 26.35,
-     "levels": {
-      "20": 17.75,
-      "30": 22.72,
-      "40": 27.19,
-      "50": 27.95,
-      "60": 29.14
-     }
-    },
     "beast-mastery-leveling": {
      "weighted": 26.59,
      "levels": {
@@ -263,38 +499,43 @@
       "50": 28.2,
       "60": 29.6
      }
+    },
+    "open winner": {
+     "weighted": 26.36,
+     "levels": {
+      "20": 17.75,
+      "30": 22.72,
+      "40": 27.19,
+      "50": 27.95,
+      "60": 29.17
+     }
     }
    },
    "values": {
     "Summon Hawk": {
      "ranks": 1,
-     "seconds": 2.48,
-     "per_point": 2.48
+     "seconds": 2.5,
+     "per_point": 2.5
     },
     "Efficiency": {
      "ranks": 5,
-     "seconds": 1.17,
+     "seconds": 1.15,
      "per_point": 0.23
     },
     "Unleashed Fury": {
      "ranks": 5,
-     "seconds": 1.12,
-     "per_point": 0.22
+     "seconds": 1.13,
+     "per_point": 0.23
     },
     "Bestial Discipline": {
      "ranks": 2,
-     "seconds": 1.03,
-     "per_point": 0.52
+     "seconds": 0.99,
+     "per_point": 0.5
     },
     "Ferocity": {
      "ranks": 5,
-     "seconds": 0.78,
+     "seconds": 0.79,
      "per_point": 0.16
-    },
-    "Improved Tracking": {
-     "ranks": 5,
-     "seconds": 0.43,
-     "per_point": 0.09
     },
     "Improved Stings": {
      "ranks": 3,
@@ -303,36 +544,41 @@
     },
     "Careful Aim": {
      "ranks": 5,
-     "seconds": 0.38,
-     "per_point": 0.08
+     "seconds": 0.37,
+     "per_point": 0.07
     },
-    "Focused Fire": {
-     "ranks": 2,
-     "seconds": 0.31,
-     "per_point": 0.15
+    "Improved Tracking": {
+     "ranks": 4,
+     "seconds": 0.35,
+     "per_point": 0.09
     },
     "Lethal Attacks": {
      "ranks": 5,
      "seconds": 0.28,
      "per_point": 0.06
     },
-    "Deadly Aspects": {
-     "ranks": 5,
-     "seconds": 0.24,
-     "per_point": 0.05
+    "Focused Fire": {
+     "ranks": 2,
+     "seconds": 0.27,
+     "per_point": 0.13
     },
     "Spirit Bond": {
      "ranks": 1,
-     "seconds": 0.18,
-     "per_point": 0.18
+     "seconds": 0.27,
+     "per_point": 0.27
+    },
+    "Deadly Aspects": {
+     "ranks": 5,
+     "seconds": 0.22,
+     "per_point": 0.04
     },
     "Frenzy": {
-     "ranks": 3,
-     "seconds": 0.18,
-     "per_point": 0.06
+     "ranks": 4,
+     "seconds": 0.22,
+     "per_point": 0.05
     },
     "Endurance Training": {
-     "ranks": 2,
+     "ranks": 1,
      "seconds": 0.0,
      "per_point": 0.0
     },
@@ -340,21 +586,118 @@
      "ranks": 2,
      "seconds": 0.0,
      "per_point": 0.0
+    },
+    "Improved Revive Pet": {
+     "ranks": 1,
+     "seconds": 0.0,
+     "per_point": 0.0
     }
    },
-   "values_base": 29.13,
-   "split": "28/18/5",
+   "values_base": 29.17,
+   "split": "29/18/4",
    "family": "Hybrid Beast Mastery/Marksmanship",
-   "link": "https://talentsforever.com/hunter/60/522020050511023-005355-5-4",
+   "link": "https://talentsforever.com/hunter/60/512021050511024-005355-4-4",
    "ours_best": "beast-mastery-leveling",
-   "gain_vs_ours": 0.0091,
-   "minutes": 23.8,
+   "gain_vs_ours": 0.0087,
+   "minutes": 109.0,
    "done": true
   },
   "mm-raid": {
    "model": "mm-raid",
    "trees": [
     "Marksmanship"
+   ],
+   "families": [
+    {
+     "keystones": "Summon Hawk + Trueshot Aura",
+     "split": "26/21/4",
+     "family": "Hybrid Beast Mastery/Marksmanship",
+     "kills_per_hour": 120.58
+    },
+    {
+     "keystones": "Bestial Wrath + Trueshot Aura",
+     "split": "33/18/0",
+     "family": "Beast Mastery",
+     "kills_per_hour": 119.23
+    },
+    {
+     "keystones": "Summon Hawk + Scatter Shot",
+     "split": "23/28/0",
+     "family": "Hybrid Beast Mastery/Marksmanship",
+     "kills_per_hour": 119.1
+    },
+    {
+     "keystones": "Intimidation + Scatter Shot",
+     "split": "26/23/2",
+     "family": "Hybrid Beast Mastery/Marksmanship",
+     "kills_per_hour": 118.37
+    },
+    {
+     "keystones": "Summon Hawk + Sniper Shot",
+     "split": "19/32/0",
+     "family": "Marksmanship",
+     "kills_per_hour": 116.68
+    },
+    {
+     "keystones": "Summon Hawk + Strider Kick",
+     "split": "17/12/22",
+     "family": "Hybrid Beast Mastery/Survival",
+     "kills_per_hour": 113.81
+    },
+    {
+     "keystones": "Intimidation + Trueshot Aura",
+     "split": "21/23/7",
+     "family": "Hybrid Beast Mastery/Marksmanship",
+     "kills_per_hour": 113.19
+    },
+    {
+     "keystones": "Intimidation + Counterattack",
+     "split": "27/6/18",
+     "family": "Hybrid Beast Mastery/Survival",
+     "kills_per_hour": 112.92
+    },
+    {
+     "keystones": "Bestial Wrath + Counterattack",
+     "split": "33/1/17",
+     "family": "Beast Mastery",
+     "kills_per_hour": 111.02
+    },
+    {
+     "keystones": "Intimidation + Strider Kick",
+     "split": "26/0/25",
+     "family": "Hybrid Beast Mastery/Survival",
+     "kills_per_hour": 110.6
+    },
+    {
+     "keystones": "Summon Hawk + Lacerating Strikes",
+     "split": "18/2/31",
+     "family": "Survival",
+     "kills_per_hour": 107.86
+    },
+    {
+     "keystones": "Summon Hawk + Counterattack",
+     "split": "16/10/25",
+     "family": "Hybrid Beast Mastery/Survival",
+     "kills_per_hour": 107.23
+    },
+    {
+     "keystones": "Scatter Shot + Counterattack",
+     "split": "8/27/16",
+     "family": "Hybrid Marksmanship/Survival",
+     "kills_per_hour": 106.39
+    },
+    {
+     "keystones": "Scatter Shot + Strider Kick",
+     "split": "3/27/21",
+     "family": "Hybrid Marksmanship/Survival",
+     "kills_per_hour": 103.09
+    },
+    {
+     "keystones": "Trueshot Aura + Strider Kick",
+     "split": "2/21/28",
+     "family": "Hybrid Marksmanship/Survival",
+     "kills_per_hour": 102.7
+    }
    ],
    "winner": {
     "allocation": {
@@ -365,7 +708,7 @@
       ],
       [
        "Endurance Training",
-       3
+       2
       ],
       [
        "Focused Fire",
@@ -373,7 +716,7 @@
       ],
       [
        "Pathfinding",
-       1
+       2
       ],
       [
        "Unleashed Fury",
@@ -426,60 +769,206 @@
      ]
     },
     "split": "28/18/5",
-    "dps": 122.55,
-    "se": 0.0818,
-    "iterations": 100000
+    "picked_by": "the 20-60 race among the finalists"
    },
    "runs_agree": 3,
-   "simulated_builds": 8037,
+   "simulated_builds": 39087,
    "important_features": [
     {
      "feature": "Lone Wolf",
-     "importance": 0.618
+     "importance": 0.4529
     },
     {
      "feature": "Summon Hawk",
-     "importance": 0.0736
+     "importance": 0.1717
     },
     {
      "feature": "Ferocity",
-     "importance": 0.0686
+     "importance": 0.0946
     },
     {
      "feature": "Unleashed Fury",
-     "importance": 0.0623
-    },
-    {
-     "feature": "Survival points",
-     "importance": 0.0315
-    },
-    {
-     "feature": "Marksmanship points",
-     "importance": 0.0212
-    },
-    {
-     "feature": "Bestial Discipline",
-     "importance": 0.0183
+     "importance": 0.0902
     },
     {
      "feature": "Beast Mastery points",
-     "importance": 0.0148
+     "importance": 0.0554
     },
     {
-     "feature": "Hawk Eye",
-     "importance": 0.0148
+     "feature": "Bestial Discipline",
+     "importance": 0.0279
+    },
+    {
+     "feature": "Frenzy",
+     "importance": 0.0204
+    },
+    {
+     "feature": "Survival points",
+     "importance": 0.0182
     },
     {
      "feature": "Efficiency",
-     "importance": 0.0093
+     "importance": 0.0142
+    },
+    {
+     "feature": "Marksmanship points",
+     "importance": 0.0064
+    },
+    {
+     "feature": "Spirit Bond",
+     "importance": 0.0051
     },
     {
      "feature": "Improved Concussive Shot",
-     "importance": 0.0084
+     "importance": 0.0044
+    }
+   ],
+   "finalists": [
+    {
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        5
+       ],
+       [
+        "Endurance Training",
+        2
+       ],
+       [
+        "Focused Fire",
+        2
+       ],
+       [
+        "Pathfinding",
+        2
+       ],
+       [
+        "Unleashed Fury",
+        5
+       ],
+       [
+        "Ferocity",
+        5
+       ],
+       [
+        "Summon Hawk",
+        1
+       ],
+       [
+        "Spirit Bond",
+        1
+       ],
+       [
+        "Bestial Discipline",
+        2
+       ],
+       [
+        "Frenzy",
+        3
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Improved Stings",
+        3
+       ],
+       [
+        "Efficiency",
+        5
+       ],
+       [
+        "Careful Aim",
+        5
+       ]
+      ],
+      "Survival": [
+       [
+        "Improved Tracking",
+        5
+       ]
+      ]
+     },
+     "split": "28/18/5",
+     "dps": 122.55,
+     "se": 0.0818
     },
     {
-     "feature": "Deflection",
-     "importance": 0.0078
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        5
+       ],
+       [
+        "Endurance Training",
+        3
+       ],
+       [
+        "Focused Fire",
+        2
+       ],
+       [
+        "Pathfinding",
+        1
+       ],
+       [
+        "Unleashed Fury",
+        5
+       ],
+       [
+        "Ferocity",
+        5
+       ],
+       [
+        "Summon Hawk",
+        1
+       ],
+       [
+        "Spirit Bond",
+        1
+       ],
+       [
+        "Bestial Discipline",
+        2
+       ],
+       [
+        "Frenzy",
+        3
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Improved Stings",
+        3
+       ],
+       [
+        "Efficiency",
+        5
+       ],
+       [
+        "Careful Aim",
+        5
+       ]
+      ],
+      "Survival": [
+       [
+        "Improved Tracking",
+        5
+       ]
+      ]
+     },
+     "split": "28/18/5",
+     "dps": 122.55,
+     "se": 0.0818
     }
    ],
    "order": [
@@ -550,58 +1039,58 @@
      "points": 1
     },
     {
-     "levels": "35-36",
+     "levels": "35",
      "tree": "Survival",
      "talent": "Improved Tracking",
-     "points": 2
-    },
-    {
-     "levels": "37",
-     "tree": "Beast Mastery",
-     "talent": "Pathfinding",
      "points": 1
     },
     {
-     "levels": "38-39",
+     "levels": "36-37",
      "tree": "Beast Mastery",
-     "talent": "Endurance Training",
+     "talent": "Pathfinding",
      "points": 2
     },
     {
-     "levels": "40-44",
+     "levels": "38",
+     "tree": "Beast Mastery",
+     "talent": "Endurance Training",
+     "points": 1
+    },
+    {
+     "levels": "39-43",
      "tree": "Beast Mastery",
      "talent": "Unleashed Fury",
      "points": 5
     },
     {
-     "levels": "45",
+     "levels": "44",
      "tree": "Beast Mastery",
      "talent": "Summon Hawk",
      "points": 1
     },
     {
-     "levels": "46-49",
+     "levels": "45-48",
      "tree": "Beast Mastery",
      "talent": "Ferocity",
      "points": 4
     },
     {
-     "levels": "50-51",
+     "levels": "49-50",
      "tree": "Beast Mastery",
      "talent": "Bestial Discipline",
      "points": 2
     },
     {
-     "levels": "52",
+     "levels": "51",
      "tree": "Beast Mastery",
      "talent": "Spirit Bond",
      "points": 1
     },
     {
-     "levels": "53",
+     "levels": "52-53",
      "tree": "Survival",
      "talent": "Improved Tracking",
-     "points": 1
+     "points": 2
     },
     {
      "levels": "54-55",
@@ -629,16 +1118,6 @@
     }
    ],
    "race": {
-    "open winner": {
-     "weighted": 27.33,
-     "levels": {
-      "20": 18.92,
-      "30": 23.81,
-      "40": 29.76,
-      "50": 28.37,
-      "60": 29.39
-     }
-    },
     "leveling-beast-mastery": {
      "weighted": 27.46,
      "levels": {
@@ -677,6 +1156,16 @@
       "40": 29.07,
       "50": 31.09,
       "60": 33.73
+     }
+    },
+    "open winner": {
+     "weighted": 27.33,
+     "levels": {
+      "20": 18.92,
+      "30": 23.81,
+      "40": 29.76,
+      "50": 28.37,
+      "60": 29.39
      }
     }
    },
@@ -736,23 +1225,23 @@
      "seconds": 0.21,
      "per_point": 0.04
     },
+    "Spirit Bond": {
+     "ranks": 1,
+     "seconds": 0.15,
+     "per_point": 0.15
+    },
     "Frenzy": {
      "ranks": 3,
      "seconds": 0.15,
      "per_point": 0.05
     },
-    "Spirit Bond": {
-     "ranks": 1,
-     "seconds": 0.08,
-     "per_point": 0.08
-    },
     "Endurance Training": {
-     "ranks": 3,
+     "ranks": 2,
      "seconds": 0.0,
      "per_point": 0.0
     },
     "Pathfinding": {
-     "ranks": 1,
+     "ranks": 2,
      "seconds": 0.0,
      "per_point": 0.0
     }
@@ -760,10 +1249,10 @@
    "values_base": 29.46,
    "split": "28/18/5",
    "family": "Hybrid Beast Mastery/Marksmanship",
-   "link": "https://talentsforever.com/hunter/60/532010050511023-005355-5-4",
+   "link": "https://talentsforever.com/hunter/60/522020050511023-005355-5-4",
    "ours_best": "leveling-beast-mastery",
    "gain_vs_ours": 0.0048,
-   "minutes": 21.0,
+   "minutes": 91.8,
    "done": true
   },
   "melee-dps": {
@@ -771,16 +1260,120 @@
    "trees": [
     "Survival"
    ],
+   "families": [
+    {
+     "keystones": "Summon Hawk + Strider Kick",
+     "split": "17/9/25",
+     "family": "Hybrid Beast Mastery/Survival",
+     "kills_per_hour": 129.52
+    },
+    {
+     "keystones": "Summon Hawk + Lacerating Strikes",
+     "split": "17/2/32",
+     "family": "Survival",
+     "kills_per_hour": 125.85
+    },
+    {
+     "keystones": "Intimidation + Counterattack",
+     "split": "22/6/23",
+     "family": "Hybrid Beast Mastery/Survival",
+     "kills_per_hour": 125.47
+    },
+    {
+     "keystones": "Trueshot Aura + Counterattack",
+     "split": "0/17/34",
+     "family": "Survival",
+     "kills_per_hour": 124.78
+    },
+    {
+     "keystones": "Trueshot Aura + Strider Kick",
+     "split": "2/16/33",
+     "family": "Survival",
+     "kills_per_hour": 124.47
+    },
+    {
+     "keystones": "Intimidation + Strider Kick",
+     "split": "24/0/27",
+     "family": "Hybrid Beast Mastery/Survival",
+     "kills_per_hour": 122.61
+    },
+    {
+     "keystones": "Scatter Shot + Strider Kick",
+     "split": "4/23/24",
+     "family": "Hybrid Marksmanship/Survival",
+     "kills_per_hour": 121.21
+    },
+    {
+     "keystones": "Trueshot Aura + Lacerating Strikes",
+     "split": "2/17/32",
+     "family": "Survival",
+     "kills_per_hour": 119.83
+    },
+    {
+     "keystones": "Summon Hawk + Counterattack",
+     "split": "17/8/26",
+     "family": "Hybrid Beast Mastery/Survival",
+     "kills_per_hour": 119.67
+    },
+    {
+     "keystones": "Summon Hawk + Trueshot Aura",
+     "split": "28/21/2",
+     "family": "Hybrid Beast Mastery/Marksmanship",
+     "kills_per_hour": 117.38
+    },
+    {
+     "keystones": "Bestial Wrath + Counterattack",
+     "split": "35/0/16",
+     "family": "Beast Mastery",
+     "kills_per_hour": 113.36
+    },
+    {
+     "keystones": "Bestial Wrath + Trueshot Aura",
+     "split": "34/16/1",
+     "family": "Beast Mastery",
+     "kills_per_hour": 112.91
+    },
+    {
+     "keystones": "Intimidation + Scatter Shot",
+     "split": "24/26/1",
+     "family": "Hybrid Beast Mastery/Marksmanship",
+     "kills_per_hour": 109.63
+    },
+    {
+     "keystones": "Sniper Shot + Counterattack",
+     "split": "0/31/20",
+     "family": "Marksmanship",
+     "kills_per_hour": 108.37
+    },
+    {
+     "keystones": "Scatter Shot + Counterattack",
+     "split": "8/26/17",
+     "family": "Hybrid Marksmanship/Survival",
+     "kills_per_hour": 108.26
+    }
+   ],
    "winner": {
     "allocation": {
      "Beast Mastery": [
       [
        "Deadly Aspects",
+       3
+      ],
+      [
+       "Endurance Training",
        5
       ],
       [
        "Focused Fire",
        2
+      ],
+      [
+       "Unleashed Fury",
+       5
+      ],
+      [
+       "Ferocity",
+       4
       ]
      ],
      "Marksmanship": [
@@ -791,14 +1384,6 @@
       [
        "Improved Stings",
        3
-      ],
-      [
-       "Efficiency",
-       1
-      ],
-      [
-       "Careful Aim",
-       5
       ]
      ],
      "Survival": [
@@ -808,7 +1393,7 @@
       ],
       [
        "Deflection",
-       4
+       3
       ],
       [
        "Savage Strikes",
@@ -823,20 +1408,12 @@
        3
       ],
       [
-       "Deterrence",
-       1
-      ],
-      [
        "Survival Tactics",
-       2
+       1
       ],
       [
        "Predator's Edge",
-       5
-      ],
-      [
-       "Counterattack",
-       1
+       4
       ],
       [
        "Resourcefulness",
@@ -845,215 +1422,329 @@
       [
        "Survivalist's Discipline",
        2
-      ],
-      [
-       "Lightning Reflexes",
-       1
       ]
      ]
     },
-    "split": "7/14/30",
-    "dps": 127.25,
-    "se": 0.1528,
-    "iterations": 100000
+    "split": "19/8/24",
+    "picked_by": "the 20-60 race among the finalists"
    },
-   "runs_agree": 2,
-   "simulated_builds": 7615,
+   "runs_agree": 1,
+   "simulated_builds": 44296,
    "important_features": [
     {
      "feature": "Lone Wolf",
-     "importance": 0.5522
+     "importance": 0.375
     },
     {
      "feature": "Resourcefulness",
-     "importance": 0.1633
-    },
-    {
-     "feature": "Hawk Eye",
-     "importance": 0.0596
+     "importance": 0.1825
     },
     {
      "feature": "Marksmanship points",
-     "importance": 0.0306
-    },
-    {
-     "feature": "Predator's Edge",
-     "importance": 0.0267
-    },
-    {
-     "feature": "Lightning Reflexes",
-     "importance": 0.0266
-    },
-    {
-     "feature": "Improved Concussive Shot",
-     "importance": 0.0149
+     "importance": 0.1364
     },
     {
      "feature": "Survivalist's Discipline",
-     "importance": 0.0147
+     "importance": 0.0868
     },
     {
      "feature": "Survival points",
-     "importance": 0.0137
+     "importance": 0.0472
+    },
+    {
+     "feature": "Unleashed Fury",
+     "importance": 0.035
+    },
+    {
+     "feature": "Predator's Edge",
+     "importance": 0.0204
     },
     {
      "feature": "Beast Mastery points",
-     "importance": 0.0103
+     "importance": 0.0167
     },
     {
-     "feature": "Careful Aim",
-     "importance": 0.0082
+     "feature": "Improved Stings",
+     "importance": 0.0124
     },
     {
-     "feature": "Improved Tracking",
-     "importance": 0.007
+     "feature": "Clever Traps",
+     "importance": 0.0099
+    },
+    {
+     "feature": "Focused Fire",
+     "importance": 0.0095
+    },
+    {
+     "feature": "Improved Concussive Shot",
+     "importance": 0.0071
+    }
+   ],
+   "finalists": [
+    {
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        3
+       ],
+       [
+        "Endurance Training",
+        5
+       ],
+       [
+        "Focused Fire",
+        2
+       ],
+       [
+        "Unleashed Fury",
+        5
+       ],
+       [
+        "Ferocity",
+        4
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Improved Stings",
+        3
+       ]
+      ],
+      "Survival": [
+       [
+        "Improved Tracking",
+        5
+       ],
+       [
+        "Deflection",
+        3
+       ],
+       [
+        "Savage Strikes",
+        2
+       ],
+       [
+        "Clever Traps",
+        2
+       ],
+       [
+        "Surefooted",
+        3
+       ],
+       [
+        "Survival Tactics",
+        1
+       ],
+       [
+        "Predator's Edge",
+        4
+       ],
+       [
+        "Resourcefulness",
+        2
+       ],
+       [
+        "Survivalist's Discipline",
+        2
+       ]
+      ]
+     },
+     "split": "19/8/24",
+     "dps": 133.56,
+     "se": 0.1641
+    },
+    {
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        5
+       ],
+       [
+        "Endurance Training",
+        3
+       ],
+       [
+        "Focused Fire",
+        2
+       ],
+       [
+        "Unleashed Fury",
+        5
+       ],
+       [
+        "Ferocity",
+        4
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Improved Stings",
+        3
+       ]
+      ],
+      "Survival": [
+       [
+        "Improved Tracking",
+        5
+       ],
+       [
+        "Deflection",
+        2
+       ],
+       [
+        "Savage Strikes",
+        2
+       ],
+       [
+        "Improved Wing Clip",
+        1
+       ],
+       [
+        "Clever Traps",
+        2
+       ],
+       [
+        "Surefooted",
+        3
+       ],
+       [
+        "Survival Tactics",
+        1
+       ],
+       [
+        "Predator's Edge",
+        4
+       ],
+       [
+        "Resourcefulness",
+        2
+       ],
+       [
+        "Survivalist's Discipline",
+        2
+       ]
+      ]
+     },
+     "split": "19/8/24",
+     "dps": 133.11,
+     "se": 0.1604
     }
    ],
    "order": [
     {
      "levels": "10-14",
-     "tree": "Survival",
-     "talent": "Improved Tracking",
-     "points": 5
-    },
-    {
-     "levels": "15-16",
-     "tree": "Survival",
-     "talent": "Savage Strikes",
-     "points": 2
-    },
-    {
-     "levels": "17-19",
-     "tree": "Survival",
-     "talent": "Deflection",
-     "points": 3
-    },
-    {
-     "levels": "20-22",
-     "tree": "Survival",
-     "talent": "Surefooted",
-     "points": 3
-    },
-    {
-     "levels": "23",
-     "tree": "Survival",
-     "talent": "Deterrence",
-     "points": 1
-    },
-    {
-     "levels": "24",
-     "tree": "Survival",
-     "talent": "Deflection",
-     "points": 1
-    },
-    {
-     "levels": "25",
-     "tree": "Survival",
-     "talent": "Counterattack",
-     "points": 1
-    },
-    {
-     "levels": "26-29",
-     "tree": "Survival",
-     "talent": "Predator's Edge",
-     "points": 4
-    },
-    {
-     "levels": "30-31",
-     "tree": "Survival",
-     "talent": "Resourcefulness",
-     "points": 2
-    },
-    {
-     "levels": "32",
-     "tree": "Survival",
-     "talent": "Predator's Edge",
-     "points": 1
-    },
-    {
-     "levels": "33-37",
      "tree": "Marksmanship",
      "talent": "Lethal Attacks",
      "points": 5
     },
     {
-     "levels": "38-40",
+     "levels": "15-17",
      "tree": "Marksmanship",
      "talent": "Improved Stings",
      "points": 3
     },
     {
-     "levels": "41-43",
-     "tree": "Marksmanship",
-     "talent": "Careful Aim",
+     "levels": "18-22",
+     "tree": "Survival",
+     "talent": "Improved Tracking",
+     "points": 5
+    },
+    {
+     "levels": "23-24",
+     "tree": "Survival",
+     "talent": "Savage Strikes",
+     "points": 2
+    },
+    {
+     "levels": "25-27",
+     "tree": "Survival",
+     "talent": "Deflection",
      "points": 3
     },
     {
-     "levels": "44",
-     "tree": "Beast Mastery",
-     "talent": "Deadly Aspects",
-     "points": 1
+     "levels": "28-30",
+     "tree": "Survival",
+     "talent": "Surefooted",
+     "points": 3
     },
     {
-     "levels": "45-46",
-     "tree": "Marksmanship",
-     "talent": "Careful Aim",
+     "levels": "31-32",
+     "tree": "Survival",
+     "talent": "Clever Traps",
      "points": 2
     },
     {
-     "levels": "47-50",
-     "tree": "Beast Mastery",
-     "talent": "Deadly Aspects",
+     "levels": "33-36",
+     "tree": "Survival",
+     "talent": "Predator's Edge",
      "points": 4
     },
     {
-     "levels": "51-52",
-     "tree": "Beast Mastery",
-     "talent": "Focused Fire",
+     "levels": "37",
+     "tree": "Survival",
+     "talent": "Survival Tactics",
+     "points": 1
+    },
+    {
+     "levels": "38-39",
+     "tree": "Survival",
+     "talent": "Resourcefulness",
      "points": 2
     },
     {
-     "levels": "53-54",
+     "levels": "40-41",
      "tree": "Survival",
      "talent": "Survivalist's Discipline",
      "points": 2
     },
     {
-     "levels": "55",
-     "tree": "Survival",
-     "talent": "Lightning Reflexes",
-     "points": 1
+     "levels": "42-44",
+     "tree": "Beast Mastery",
+     "talent": "Deadly Aspects",
+     "points": 3
     },
     {
-     "levels": "56",
-     "tree": "Marksmanship",
-     "talent": "Efficiency",
-     "points": 1
-    },
-    {
-     "levels": "57-58",
-     "tree": "Survival",
-     "talent": "Survival Tactics",
+     "levels": "45-46",
+     "tree": "Beast Mastery",
+     "talent": "Endurance Training",
      "points": 2
     },
     {
-     "levels": "59-60",
-     "tree": "Survival",
-     "talent": "Clever Traps",
+     "levels": "47-48",
+     "tree": "Beast Mastery",
+     "talent": "Focused Fire",
      "points": 2
+    },
+    {
+     "levels": "49-51",
+     "tree": "Beast Mastery",
+     "talent": "Endurance Training",
+     "points": 3
+    },
+    {
+     "levels": "52-56",
+     "tree": "Beast Mastery",
+     "talent": "Unleashed Fury",
+     "points": 5
+    },
+    {
+     "levels": "57-60",
+     "tree": "Beast Mastery",
+     "talent": "Ferocity",
+     "points": 4
     }
    ],
    "race": {
-    "open winner": {
-     "weighted": 25.68,
-     "levels": {
-      "20": 17.24,
-      "30": 21.48,
-      "40": 26.65,
-      "50": 28.09,
-      "60": 27.92
-     }
-    },
     "leveling-melee": {
      "weighted": 26.31,
      "levels": {
@@ -1083,107 +1774,107 @@
       "50": 33.23,
       "60": 34.48
      }
+    },
+    "open winner": {
+     "weighted": 24.64,
+     "levels": {
+      "20": 17.1,
+      "30": 22.43,
+      "40": 26.34,
+      "50": 25.05,
+      "60": 26.79
+     }
     }
    },
    "values": {
     "Resourcefulness": {
      "ranks": 2,
-     "seconds": 2.89,
-     "per_point": 1.44
+     "seconds": 3.02,
+     "per_point": 1.51
     },
     "Survivalist's Discipline": {
      "ranks": 2,
-     "seconds": 1.95,
-     "per_point": 0.97
+     "seconds": 2.43,
+     "per_point": 1.21
+    },
+    "Unleashed Fury": {
+     "ranks": 5,
+     "seconds": 1.45,
+     "per_point": 0.29
     },
     "Clever Traps": {
      "ranks": 2,
-     "seconds": 0.89,
-     "per_point": 0.45
+     "seconds": 1.13,
+     "per_point": 0.57
+    },
+    "Improved Tracking": {
+     "ranks": 5,
+     "seconds": 0.71,
+     "per_point": 0.14
+    },
+    "Ferocity": {
+     "ranks": 4,
+     "seconds": 0.7,
+     "per_point": 0.17
     },
     "Lethal Attacks": {
      "ranks": 5,
      "seconds": 0.6,
      "per_point": 0.12
     },
-    "Predator's Edge": {
-     "ranks": 5,
-     "seconds": 0.6,
-     "per_point": 0.12
+    "Improved Stings": {
+     "ranks": 3,
+     "seconds": 0.49,
+     "per_point": 0.16
     },
-    "Improved Tracking": {
-     "ranks": 5,
-     "seconds": 0.55,
+    "Predator's Edge": {
+     "ranks": 4,
+     "seconds": 0.45,
      "per_point": 0.11
     },
     "Focused Fire": {
      "ranks": 2,
-     "seconds": 0.4,
-     "per_point": 0.2
-    },
-    "Careful Aim": {
-     "ranks": 5,
-     "seconds": 0.35,
-     "per_point": 0.07
-    },
-    "Improved Stings": {
-     "ranks": 3,
-     "seconds": 0.34,
-     "per_point": 0.11
+     "seconds": 0.43,
+     "per_point": 0.22
     },
     "Surefooted": {
      "ranks": 3,
-     "seconds": 0.34,
-     "per_point": 0.11
+     "seconds": 0.39,
+     "per_point": 0.13
     },
-    "Deadly Aspects": {
+    "Endurance Training": {
      "ranks": 5,
-     "seconds": 0.29,
+     "seconds": 0.28,
      "per_point": 0.06
     },
     "Savage Strikes": {
      "ranks": 2,
-     "seconds": 0.28,
-     "per_point": 0.14
+     "seconds": 0.26,
+     "per_point": 0.13
     },
-    "Deflection": {
-     "ranks": 4,
-     "seconds": 0.21,
-     "per_point": 0.05
-    },
-    "Counterattack": {
-     "ranks": 1,
-     "seconds": 0.18,
-     "per_point": 0.18
+    "Deadly Aspects": {
+     "ranks": 3,
+     "seconds": 0.2,
+     "per_point": 0.07
     },
     "Survival Tactics": {
-     "ranks": 2,
-     "seconds": 0.15,
-     "per_point": 0.08
-    },
-    "Efficiency": {
      "ranks": 1,
+     "seconds": 0.17,
+     "per_point": 0.17
+    },
+    "Deflection": {
+     "ranks": 3,
      "seconds": 0.09,
-     "per_point": 0.09
-    },
-    "Lightning Reflexes": {
-     "ranks": 1,
-     "seconds": 0.02,
-     "per_point": 0.02
-    },
-    "Deterrence": {
-     "ranks": 1,
-     "seconds": 0.0,
-     "per_point": 0.0
+     "per_point": 0.03
     }
    },
-   "values_base": 28.08,
-   "split": "7/14/30",
-   "family": "Survival",
-   "link": "https://talentsforever.com/hunter/60/502-005315-54020023125120201-4",
+   "values_base": 26.77,
+   "split": "19/8/24",
+   "family": "Hybrid Beast Mastery/Survival",
+   "link": "https://talentsforever.com/hunter/60/3520000504-0053-530200230140202-4",
    "ours_best": "opt-melee-dps-solo-60",
-   "gain_vs_ours": 0.0218,
-   "minutes": 24.0,
+   "gain_vs_ours": 0.0649,
+   "minutes": 125.2,
    "done": true
   }
  }

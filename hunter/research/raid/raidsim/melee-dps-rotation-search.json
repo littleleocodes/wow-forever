@@ -11,7 +11,7 @@
   "builds": [
    {
     "label": "open winner",
-    "talents": "50131005001-005005001-5012112300500211"
+    "talents": "50230005001-005005001-5002302300500211"
    },
    {
     "label": "survival-raid",
@@ -110,7 +110,7 @@
      "base": 297.9293555187521,
      "before_value": null,
      "after_value": null,
-     "oom_before": 127.64913071456338,
+     "oom_before": 126.30079238267574,
      "oom_after": 126.30079238267574
     },
     "survival-raid": {
@@ -143,12 +143,12 @@
    }
   },
   "first_date": "2026-09-29",
-  "passes": 7
+  "passes": 8
  },
  "raid": {
   "class": "hunter",
   "spec": "melee-dps",
-  "date": "2026-10-05",
+  "date": "2026-10-06",
   "commit": "b0f0df3",
   "setting": "raid",
   "tank": false,
@@ -157,7 +157,7 @@
   "builds": [
    {
     "label": "open winner",
-    "talents": "50131005001-005005001-5012112300500211"
+    "talents": "50230005001-005005001-5002302300500211"
    },
    {
     "label": "survival-raid",
@@ -246,6 +246,6 @@
    }
   },
   "first_date": "2026-09-29",
-  "passes": 7
+  "passes": 8
  }
 }

@@ -6,13 +6,14 @@ The best build found with no tree rule in each damage rotation, in a full raid, 
 
 | Class | Rotation (entry) | Open winner | Family | DPS | vs our best there |
 |---|---|---|---|---|---|
-| [hunter](../hunter/research/raid/family-search.md) | melee-dps | [7/11/33](https://talentsforever.com/hunter/60/52-005005001-050230230250022151-4) | Survival | 1039.6 | +0.0% |
+| [hunter](../hunter/research/raid/family-search.md) | melee-dps | [16/11/24](https://talentsforever.com/hunter/60/50230005001-005005001-5002302300500211-4) | Hybrid Beast Mastery/Survival | 1117.7 | +7.5% |
 | [paladin](../paladin/research/raid/family-search.md) | seal-of-fury-raid | [11/8/32](https://talentsforever.com/paladin/60/35003-503-05225131001330321-4) | Retribution | 908.6 | +3.3% |
 | [hunter](../hunter/research/raid/family-search.md) | mm-lonewolf-raid | [7/44/0](https://talentsforever.com/hunter/60/510001-1053552511523051--4) | Marksmanship | 902.0 | +0.0% |
 | [paladin](../paladin/research/raid/family-search.md) | ret-dps | [11/8/32](https://talentsforever.com/paladin/60/35003-503-05225131001330321-4) | Retribution | 890.7 | +0.2% |
 | [hunter](../hunter/research/raid/family-search.md) | bm-raid | [31/20/0](https://talentsforever.com/hunter/60/5320001505101251-00532500005--4) | Beast Mastery | 880.3 | +0.0% |
+| [hunter](../hunter/research/raid/family-search.md) | mm-raid | [20/31/0](https://talentsforever.com/hunter/60/51210105041-0053252001520051--4) | Marksmanship | 877.2 | +4.6% |
 | [paladin](../paladin/research/raid/family-search.md) | shockadin-raid | [11/8/32](https://talentsforever.com/paladin/60/35003-503-05205331001330321-4) | Retribution | 875.7 | - |
-| [hunter](../hunter/research/raid/family-search.md) | mm-raid | [31/20/0](https://talentsforever.com/hunter/60/5320001505101251-00532500014--4) | Beast Mastery | 862.9 | +2.9% |
+| [warrior](../warrior/research/raid/family-search.md) | arms-2h-raid | [20/31/0](https://talentsforever.com/warrior/60/03305013032-05250030142210501--4) | Fury | 804.3 | +0.6% |
 | [mage](../mage/research/raid/family-search.md) | frost-raid | [21/0/30](https://talentsforever.com/mage/60/0520150030012101--055500031100030025-4) | Frost | 704.9 | +0.1% |
 | [mage](../mage/research/raid/family-search.md) | fire-raid | [12/34/5](https://talentsforever.com/mage/60/005205-23550020130133051-005-4) | Fire | 700.7 | +0.0% |
 | [mage](../mage/research/raid/family-search.md) | frostfire-raid | [0/34/17](https://talentsforever.com/mage/60/-23550000132133051-015500033-4) | Fire | 683.9 | +5.6% |

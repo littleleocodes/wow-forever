@@ -172,9 +172,13 @@ def main():
                 # the winner is picked by the 20-60 race among the level-60 finalists (2026-10-05: a build best at 60 can be slower on the
                 # way), each with the scorer's leveling order, raced together with our leveling builds
                 cands, seen = [], set()
-                for f in [r["winner"]] + r.get("finalists", []):
+                # eligible winners: the level-60 winner and finalists, plus the known positives (2026-10-06: the search's level-60 objective
+                # preferred a 19/8/24 hunter that the 20-60 race put 0.8% behind the 17/10/24 positive it started from)
+                pos = [] if a.no_known else [{"allocation": {t: [[n, x[n]] for n in space.by_tree[t] if x.get(n)] for t in space.tree_names}}
+                                             for x in known_positives(cls)]
+                for f in [r["winner"]] + r.get("finalists", [])[:5] + pos:
                     k = tuple(sorted(FT.flat_of(f).items()))
-                    if k not in seen and len(cands) < 5:
+                    if k not in seen:
                         seen.add(k)
                         cands.append({"id": f"finalist {space.split(FT.flat_of(f))}", "allocation": f["allocation"], "order": FT.order_of(cls, model, FT.flat_of(f))})
                 builds = cands + list(ours.values())

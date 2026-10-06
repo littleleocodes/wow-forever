@@ -6,36 +6,52 @@ Every legal 51-point build, no tree rule, searched in each damage rotation of th
 
 | Rotation (entry) | Open winner | Family | DPS | vs our best build there | Rotation re-tuned |
 |---|---|---|---|---|---|
-| mm-raid | [31/20/0](https://talentsforever.com/hunter/60/5320001505101251-00532500014--4) | Beast Mastery | 862.9 | +2.9% (bm-mm-raid) | yes |
+| mm-raid | [20/31/0](https://talentsforever.com/hunter/60/51210105041-0053252001520051--4) | Marksmanship | 877.2 | +4.6% (bm-mm-raid) | yes |
 | mm-lonewolf-raid | [7/44/0](https://talentsforever.com/hunter/60/510001-1053552511523051--4) | Marksmanship | 902.0 | +0.0% (marksmanship-ml-parse) | no |
 | bm-raid | [31/20/0](https://talentsforever.com/hunter/60/5320001505101251-00532500005--4) | Beast Mastery | 880.3 | +0.0% (beast-mastery-ml-parse) | no |
-| melee-dps | [7/11/33](https://talentsforever.com/hunter/60/52-005005001-050230230250022151-4) | Survival | 1039.6 | +0.0% (melee-survival-raid) | no |
+| melee-dps | [16/11/24](https://talentsforever.com/hunter/60/50230005001-005005001-5002302300500211-4) | Hybrid Beast Mastery/Survival | 1117.7 | +7.5% (melee-survival-raid) | yes |
 
 ## mm-raid
 
-**Open winner 31/20/0** (Beast Mastery):
+**Best family per pair of keystones** (each polished by a short hill climb that keeps the pair; DPS on 800 fights, before the main search):
+
+| Keystones | Build | Family | DPS |
+|---|---|---|---|
+| Summon Hawk + Sniper Shot | 19/32/0 | Marksmanship | 865.7 |
+| Bestial Wrath + Trueshot Aura | 31/20/0 | Beast Mastery | 864.2 |
+| Summon Hawk + Trueshot Aura | 28/23/0 | Hybrid Beast Mastery/Marksmanship | 863.0 |
+| Bestial Wrath + Lone Wolf | 31/20/0 | Beast Mastery | 861.2 |
+| Intimidation + Scatter Shot | 27/24/0 | Hybrid Beast Mastery/Marksmanship | 852.8 |
+| Bestial Swiftness + Scatter Shot | 11/38/2 | Marksmanship | 830.7 |
+| Summon Hawk + Lone Wolf | 16/34/1 | Marksmanship | 819.0 |
+| Bestial Swiftness + Lone Wolf | 27/24/0 | Hybrid Beast Mastery/Marksmanship | 816.2 |
+| Summon Hawk + Scatter Shot | 21/27/3 | Hybrid Beast Mastery/Marksmanship | 811.0 |
+| Intimidation + Trueshot Aura | 28/23/0 | Hybrid Beast Mastery/Marksmanship | 803.9 |
+
+**Open winner 20/31/0** (Marksmanship):
 
 | Talent | Ranks | DPS lost without it | Per point | Share of the build |
 |---|---|---|---|---|
-| Summon Hawk | 1 | +55.7 | +55.7 | +6.5% |
-| Unleashed Fury | 5 | +40.2 | +8.0 | +4.7% |
-| Lethal Attacks | 5 | +39.4 | +7.9 | +4.6% |
-| Deadly Aspects | 5 | +39.2 | +7.8 | +4.5% |
-| Careful Aim | 5 | +39.0 | +7.8 | +4.5% |
-| Frenzy | 5 | +30.7 | +6.1 | +3.6% |
-| Ferocity | 5 | +27.5 | +5.5 | +3.2% |
-| Mortal Shots | 4 | +23.5 | +5.9 | +2.7% |
-| Bestial Discipline | 2 | +20.4 | +10.2 | +2.4% |
-| Improved Stings | 3 | +17.9 | +6.0 | +2.1% |
-| Focused Fire | 2 | +16.4 | +8.2 | +1.9% |
-| Trueshot Aura | 1 | +14.4 | +14.4 | +1.7% |
-| Bestial Wrath | 1 | +12.9 | +12.9 | +1.5% |
-| Efficiency | 2 | +7.3 | +3.6 | +0.8% |
-| Intimidation | 1 | +1.0 | +1.0 | +0.1% |
-| Endurance Training | 3 | +0.0 | +0.0 | +0.0% |
-| Bestial Swiftness | 1 | +0.0 | +0.0 | +0.0% |
+| Summon Hawk | 1 | +46.1 | +46.1 | +5.2% |
+| Deadly Aspects | 5 | +42.1 | +8.4 | +4.8% |
+| Careful Aim | 5 | +41.8 | +8.4 | +4.8% |
+| Lethal Attacks | 5 | +40.8 | +8.2 | +4.7% |
+| Sniper Shot | 1 | +39.9 | +39.9 | +4.5% |
+| Unleashed Fury | 5 | +33.4 | +6.7 | +3.8% |
+| Mortal Shots | 5 | +29.8 | +6.0 | +3.4% |
+| Ranged Weapon Specialization | 5 | +23.3 | +4.7 | +2.7% |
+| Rapid Recuperation | 2 | +23.1 | +11.5 | +2.6% |
+| Ferocity | 4 | +17.9 | +4.5 | +2.0% |
+| Improved Stings | 3 | +17.8 | +5.9 | +2.0% |
+| Focused Fire | 2 | +16.7 | +8.4 | +1.9% |
+| Trueshot Aura | 1 | +15.4 | +15.4 | +1.8% |
+| Efficiency | 2 | +8.8 | +4.4 | +1.0% |
+| Endurance Training | 1 | +0.0 | +0.0 | +0.0% |
+| Improved Aspect of the Monkey | 1 | +0.0 | +0.0 | +0.0% |
+| Improved Revive Pet | 1 | +0.0 | +0.0 | +0.0% |
+| Rapid Killing | 2 | +0.0 | +0.0 | +0.0% |
 
-(the build: 863.3 DPS in a full raid; removal values do not add up to the build: talents interact)
+(the build: 877.3 DPS in a full raid; removal values do not add up to the build: talents interact)
 
 **Our best build there, bm-mm-raid:**
 
@@ -52,16 +68,31 @@ Every legal 51-point build, no tree rule, searched in each damage rotation of th
 | Ranged Weapon Specialization | 4 | +17.0 | +4.3 | +2.0% |
 | Focused Fire | 2 | +16.0 | +8.0 | +1.9% |
 | Trueshot Aura | 1 | +14.6 | +14.6 | +1.7% |
-| Bestial Discipline | 2 | +6.3 | +3.1 | +0.8% |
-| Efficiency | 5 | +1.0 | +0.2 | +0.1% |
+| Bestial Discipline | 2 | +5.6 | +2.8 | +0.7% |
 | Improved Arcane Shot | 1 | +0.1 | +0.1 | +0.0% |
 | Endurance Training | 3 | +0.0 | +0.0 | +0.0% |
+| Efficiency | 5 | -0.3 | -0.1 | -0.0% |
 
 (the build: 838.8 DPS in a full raid; removal values do not add up to the build: talents interact)
 
-The search model's most important talents (random-forest importance): Mortal Shots 0.29, Survival points 0.19, Frenzy 0.12, Deflection 0.07, Careful Aim 0.04, Marksmanship points 0.03, Improved Concussive Shot 0.03, Entrapment 0.02, Summon Hawk 0.02, Ferocity 0.02.
+The search model's most important talents (random-forest importance): Mortal Shots 0.30, Survival points 0.21, Summon Hawk 0.09, Marksmanship points 0.08, Savage Strikes 0.04, Surefooted 0.03, Careful Aim 0.03, Ranged Weapon Specialization 0.02, Ferocity 0.02, Unleashed Fury 0.02.
 
 ## mm-lonewolf-raid
+
+**Best family per pair of keystones** (each polished by a short hill climb that keeps the pair; DPS on 800 fights, before the main search):
+
+| Keystones | Build | Family | DPS |
+|---|---|---|---|
+| Bestial Swiftness + Sniper Shot | 11/40/0 | Marksmanship | 897.8 |
+| Bestial Swiftness + Lone Wolf | 11/40/0 | Marksmanship | 897.8 |
+| Summon Hawk + Lone Wolf | 16/35/0 | Marksmanship | 892.7 |
+| Summon Hawk + Sniper Shot | 16/35/0 | Marksmanship | 891.2 |
+| Sniper Shot + Deterrence | 5/35/11 | Marksmanship | 869.2 |
+| Scatter Shot + Deterrence | 9/31/11 | Marksmanship | 834.2 |
+| Summon Hawk + Trueshot Aura | 26/24/1 | Hybrid Beast Mastery/Marksmanship | 825.2 |
+| Sniper Shot + Counterattack | 1/34/16 | Marksmanship | 825.1 |
+| Bestial Wrath + Trueshot Aura | 31/20/0 | Beast Mastery | 814.3 |
+| Bestial Wrath + Lone Wolf | 31/20/0 | Beast Mastery | 808.4 |
 
 **Open winner 7/44/0** (Marksmanship):
 
@@ -111,9 +142,24 @@ The search model's most important talents (random-forest importance): Mortal Sho
 
 (the build: 902.6 DPS in a full raid; removal values do not add up to the build: talents interact)
 
-The search model's most important talents (random-forest importance): Marksmanship points 0.34, Ranged Weapon Specialization 0.16, Lone Wolf 0.16, Mortal Shots 0.14, Sniper Shot 0.08, Survival points 0.02, Careful Aim 0.02, Barrage 0.01, Rapid Recuperation 0.01, Improved Arcane Shot 0.01.
+The search model's most important talents (random-forest importance): Marksmanship points 0.36, Lone Wolf 0.26, Sniper Shot 0.13, Mortal Shots 0.05, Ranged Weapon Specialization 0.04, Improved Arcane Shot 0.04, Survival points 0.02, Careful Aim 0.02, Trueshot Aura 0.01, Barrage 0.01.
 
 ## bm-raid
+
+**Best family per pair of keystones** (each polished by a short hill climb that keeps the pair; DPS on 800 fights, before the main search):
+
+| Keystones | Build | Family | DPS |
+|---|---|---|---|
+| Bestial Wrath + Lone Wolf | 31/20/0 | Beast Mastery | 877.0 |
+| Bestial Wrath + Trueshot Aura | 31/20/0 | Beast Mastery | 873.7 |
+| Summon Hawk + Trueshot Aura | 28/23/0 | Hybrid Beast Mastery/Marksmanship | 873.0 |
+| Intimidation + Scatter Shot | 28/23/0 | Hybrid Beast Mastery/Marksmanship | 870.1 |
+| Summon Hawk + Sniper Shot | 18/33/0 | Marksmanship | 853.5 |
+| Summon Hawk + Scatter Shot | 21/28/2 | Hybrid Beast Mastery/Marksmanship | 829.6 |
+| Bestial Swiftness + Lone Wolf | 27/24/0 | Hybrid Beast Mastery/Marksmanship | 829.1 |
+| Bestial Swiftness + Scatter Shot | 11/38/2 | Marksmanship | 818.5 |
+| Summon Hawk + Lone Wolf | 16/34/1 | Marksmanship | 813.4 |
+| Intimidation + Trueshot Aura | 29/22/0 | Hybrid Beast Mastery/Marksmanship | 813.2 |
 
 **Open winner 31/20/0** (Beast Mastery):
 
@@ -161,33 +207,48 @@ The search model's most important talents (random-forest importance): Marksmansh
 
 (the build: 880.5 DPS in a full raid; removal values do not add up to the build: talents interact)
 
-The search model's most important talents (random-forest importance): Mortal Shots 0.33, Survival points 0.20, Frenzy 0.17, Ferocity 0.08, Careful Aim 0.04, Bestial Discipline 0.03, Summon Hawk 0.02, Deflection 0.02, Beast Mastery points 0.01, Improved Concussive Shot 0.01.
+The search model's most important talents (random-forest importance): Survival points 0.30, Frenzy 0.15, Mortal Shots 0.14, Ferocity 0.09, Summon Hawk 0.06, Bestial Discipline 0.06, Careful Aim 0.03, Beast Mastery points 0.03, Marksmanship points 0.02, Improved Concussive Shot 0.02.
 
 ## melee-dps
 
-**Open winner 7/11/33** (Survival):
+**Best family per pair of keystones** (each polished by a short hill climb that keeps the pair; DPS on 800 fights, before the main search):
+
+| Keystones | Build | Family | DPS |
+|---|---|---|---|
+| Bestial Swiftness + Strider Kick | 16/11/24 | Hybrid Beast Mastery/Survival | 1113.3 |
+| Summon Hawk + Counterattack | 16/11/24 | Hybrid Beast Mastery/Survival | 1108.6 |
+| Lone Wolf + Strider Kick | 6/11/34 | Survival | 1040.3 |
+| Lone Wolf + Deterrence | 5/11/35 | Survival | 1040.3 |
+| Scatter Shot + Strider Kick | 5/21/25 | Hybrid Marksmanship/Survival | 1006.6 |
+| Lone Wolf + Lacerating Strikes | 4/16/31 | Survival | 963.7 |
+| Trueshot Aura + Lacerating Strikes | 4/16/31 | Survival | 962.9 |
+| Scatter Shot + Counterattack | 3/21/27 | Hybrid Marksmanship/Survival | 954.8 |
+| Lone Wolf + Counterattack | 11/11/29 | Hybrid Beast Mastery/Survival | 952.9 |
+| Trueshot Aura + Strider Kick | 8/20/23 | Hybrid Marksmanship/Survival | 921.5 |
+
+**Open winner 16/11/24** (Hybrid Beast Mastery/Survival):
 
 | Talent | Ranks | DPS lost without it | Per point | Share of the build |
 |---|---|---|---|---|
-| Lone Wolf | 1 | +170.2 | +170.2 | +16.4% |
-| Predator's Edge | 5 | +122.2 | +24.4 | +11.8% |
-| Expose Prey | 2 | +117.4 | +58.7 | +11.3% |
-| Deadly Aspects | 5 | +88.3 | +17.7 | +8.5% |
-| Strider Kick | 1 | +60.0 | +60.0 | +5.8% |
-| Careful Aim | 5 | +59.3 | +11.9 | +5.7% |
-| Lethal Attacks | 5 | +51.6 | +10.3 | +5.0% |
-| Surefooted | 3 | +27.4 | +9.1 | +2.6% |
-| Lightning Reflexes | 5 | +26.6 | +5.3 | +2.5% |
-| Survivalist's Discipline | 2 | +15.8 | +7.9 | +1.5% |
-| Savage Strikes | 2 | +15.0 | +7.5 | +1.4% |
-| Clever Traps | 2 | +13.5 | +6.7 | +1.3% |
-| Lacerating Strikes | 1 | +7.6 | +7.6 | +0.7% |
-| Survival Tactics | 2 | +1.5 | +0.8 | +0.1% |
-| Endurance Training | 2 | +0.0 | +0.0 | +0.0% |
-| Deflection | 5 | +0.0 | +0.0 | +0.0% |
+| Lone Wolf | 1 | +182.5 | +182.5 | +16.3% |
+| Summon Hawk | 1 | +122.1 | +122.1 | +10.9% |
+| Predator's Edge | 5 | +112.2 | +22.4 | +10.0% |
+| Expose Prey | 2 | +93.1 | +46.5 | +8.3% |
+| Deadly Aspects | 5 | +83.9 | +16.8 | +7.5% |
+| Careful Aim | 5 | +58.8 | +11.8 | +5.3% |
+| Lethal Attacks | 5 | +55.0 | +11.0 | +4.9% |
+| Strider Kick | 1 | +54.3 | +54.3 | +4.9% |
+| Surefooted | 3 | +28.2 | +9.4 | +2.5% |
+| Unleashed Fury | 5 | +21.9 | +4.4 | +2.0% |
+| Savage Strikes | 2 | +13.5 | +6.8 | +1.2% |
+| Clever Traps | 2 | +9.6 | +4.8 | +0.9% |
+| Survivalist's Discipline | 1 | +3.6 | +3.6 | +0.3% |
+| Focused Fire | 2 | +0.0 | +0.0 | +0.0% |
+| Improved Aspect of the Monkey | 3 | +0.0 | +0.0 | +0.0% |
+| Improved Tracking | 5 | +0.0 | +0.0 | +0.0% |
 | Survivalist | 3 | +0.0 | +0.0 | +0.0% |
 
-(the build: 1040.8 DPS in a full raid; removal values do not add up to the build: talents interact)
+(the build: 1117.6 DPS in a full raid; removal values do not add up to the build: talents interact)
 
 **Our best build there, melee-survival-raid:**
 
@@ -213,5 +274,5 @@ The search model's most important talents (random-forest importance): Mortal Sho
 
 (the build: 1040.8 DPS in a full raid; removal values do not add up to the build: talents interact)
 
-The search model's most important talents (random-forest importance): Lightning Reflexes 0.30, Predator's Edge 0.17, Lone Wolf 0.12, Expose Prey 0.10, Survival points 0.06, Summon Hawk 0.03, Careful Aim 0.03, Strider Kick 0.03, Survivalist's Discipline 0.03, Lacerating Strikes 0.02.
+The search model's most important talents (random-forest importance): Predator's Edge 0.28, Lone Wolf 0.15, Strider Kick 0.13, Expose Prey 0.08, Survival points 0.07, Summon Hawk 0.07, Marksmanship points 0.06, Surefooted 0.02, Unleashed Fury 0.02, Careful Aim 0.02.
 
