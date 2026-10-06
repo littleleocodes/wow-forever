@@ -462,7 +462,8 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   Strike's bonus), so no other class moved (a mage build is bit-identical). Hunter records made before the fix (the ML, deep, family and
   filler-audit records; two filler audits had moved Improved Tracking out of hand drafts, undone the same day) under-value the talent:
   re-run them (`family_search.py hunter --fresh`, `ml_pipeline.py hunter --fresh`).
-- **Open-search winners as builds** (2026-10-06, `_reference/data/open_builds.py [classes] --write [--no-tidy] [--partial]`): per done entry
+- **Open-search winners as builds** (2026-10-06, `_reference/data/open_builds.py [classes] --write [--race] [--regen] [--no-tidy]
+  [--partial]`; `--race --regen` re-races the entries that got a build and regenerates the pages): per done entry
   of `raidsim/families/<class>.json` the winner becomes `<spec slug>-open-raid` (🔬 derived) when 0.5%+ ahead of every build of ours of its
   spec (the entry's race, plus the spec's other builds at the pages' full-raid numbers), `replaces` the spec's best hand draft at 2%+; per
   done rotation of `fightlab/open/<class>.json` likewise `<spec slug>-open-leveling` (the record's order; the pages take its numbers from

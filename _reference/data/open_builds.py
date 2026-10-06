@@ -38,6 +38,7 @@ import paths  # noqa: E402
 import spec_modes as SM  # noqa: E402
 import spec_builds as SB  # noqa: E402
 import render_start_here as RSH  # noqa: E402
+from filelock import locked  # noqa: E402
 from fmt_json import dumps  # noqa: E402
 
 FAMILIES = HERE / "raidsim" / "families"
@@ -289,6 +290,8 @@ def main():
     ap.add_argument("--write", action="store_true", help="write the builds (else print the verdicts)")
     ap.add_argument("--no-tidy", action="store_true", help="skip filler_audit.py on the written raid builds")
     ap.add_argument("--partial", action="store_true", help="use a record whose search is still running (its done entries only)")
+    ap.add_argument("--race", action="store_true", help="re-race the entries that got a build (raidsim/run.py --write and --env environments --write)")
+    ap.add_argument("--regen", action="store_true", help="rebuild.py <class> --steps regen afterwards (the pages)")
     a = ap.parse_args()
     import render_modes as RM
     ML = _load("ml_builds_open", HERE / "raidsim" / "ml_builds.py")
@@ -315,26 +318,47 @@ def main():
         old = [b["id"] for b in data["builds"] if is_open(b)]
         data["builds"] = [b for b in data["builds"] if not is_open(b)] + new
         bp.write_text(dumps(data) + "\n", encoding="utf-8")
-        if old:
-            ML.drop_from_entries(cls, set(old))
+        with locked(HERE / "raidsim" / "specs.json.lock"):   # a running search of another class may point an entry at a new rotation
+            if old:
+                ML.drop_from_entries(cls, set(old))
+            if use_fam:
+                for entry, spec, wd, b, why in rc:
+                    if b:
+                        SB.add_to_entry(cls, entry, b["id"])
         gone = sorted(set(old) - {b["id"] for b in new})
         print(f"  wrote {bp.relative_to(ROOT).as_posix()}: {', '.join(b['id'] for b in new) or 'no open build'}" + (f"; removed {', '.join(gone)}" if gone else ""))
+        raced = []
         if use_fam:
             for entry, spec, wd, b, why in rc:
                 fam["entries"][entry]["builds"] = {"written": [b["id"]] if b else [], "why": why, "spec": spec, "date": TODAY}
             save_record(FAMILIES / f"{cls}.json", fam)
             for entry, spec, wd, b, why in rc:
                 if b:
-                    SB.add_to_entry(cls, entry, b["id"])
+                    raced.append(entry)
                     if not a.no_tidy:
                         ML.tidy(cls, entry, b["id"])
         if use_lvl:
             for rot, spec, wt, b, why in lc:
                 lvl["rotations"][rot]["builds"] = {"written": [b["id"]] if b else [], "why": why, "spec": spec, "date": TODAY}
             save_record(OPEN / f"{cls}.json", lvl)
-    if a.write:
+        if a.race or a.regen:
+            import subprocess
+            steps = [[sys.executable, str(HERE / "validate_builds.py"), cls]]
+            if a.race:
+                for entry in raced:
+                    steps += [[sys.executable, str(HERE / "raidsim" / "run.py"), cls, "--spec", entry, "--write"],
+                              [sys.executable, str(HERE / "raidsim" / "run.py"), cls, "--spec", entry, "--env", "environments", "--write"]]
+            if a.regen:
+                steps.append([sys.executable, str(HERE / "rebuild.py"), cls, "--steps", "regen"])
+            for args in steps:
+                r = subprocess.run(args, capture_output=True, text=True, encoding="utf-8", errors="replace", cwd=str(ROOT))
+                last = (r.stdout.strip().splitlines() or [""])[-1]
+                print(f"  [rc={r.returncode}] {' '.join(pathlib.Path(x).name if '/' in x or chr(92) in x else x for x in args[1:])} | {last[:160]}", flush=True)
+                if r.returncode:
+                    print("    " + r.stderr[-600:].replace("\n", "\n    "), flush=True)
+    if a.write and not (a.race and a.regen):
         print("next: validate_builds.py and render_builds.py; re-race the entries that got a build (raidsim/run.py --spec <entry> --write and "
-              "--env environments --write); rebuild.py --steps regen")
+              "--env environments --write); rebuild.py --steps regen (or --race --regen here)")
 
 
 if __name__ == "__main__":
