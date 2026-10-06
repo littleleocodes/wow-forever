@@ -240,7 +240,9 @@ def optimize(gear, members, repo, db, zones, a):
             if not curit and slot not in (15,):
                 continue
             cands = [it for it in db.values() if fits(it, slot, curit) and it["id"] not in used]
-            if curit and in_pool(curit, zones):
+            # the current item stays a candidate unless the set already holds it in an earlier slot and it is unique-equipped
+            # (2026-10-06: three hunter melee sets and the warrior's Fury pre-BiS set carried the same unique ring twice)
+            if curit and in_pool(curit, zones) and not (curit["id"] in used and curit.get("unique")):
                 cands.append(curit)
             best = max(cands, key=lambda it: value(it, w, slot)) if cands else curit   # an empty pool keeps the current item
             if best and best["id"] != curx.get("id"):
