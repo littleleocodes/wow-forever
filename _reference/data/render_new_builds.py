@@ -132,7 +132,10 @@ def search_use(cls, sp):
         return any(part.rsplit("cast ", 1)[-1].startswith(sp["name"]) for part in change.split(" + ") if "cast " in part)
     hits = [(spec, st, c) for spec, st, c in search_changes(cls) if names_it(c["change"])]
     hits.sort(key=lambda x: -x[2].get("gain_seed2", 0))
-    return "; ".join(f"{spec} ({'training dummy' if st == 'dummy' else 'raid'}): {c['change'][:90]} ({c['gain_seed2'] * 100:+.1f}%)" for spec, st, c in hits[:3]) or "-"
+    def gain(c):   # a rotation adopted whole (the open search's cross-race) records one seed only
+        g = c.get("gain_seed2") if isinstance(c.get("gain_seed2"), (int, float)) else c.get("gain_seed1")
+        return f"{g * 100:+.1f}%" if isinstance(g, (int, float)) else "gain not re-measured"
+    return "; ".join(f"{spec} ({'training dummy' if st == 'dummy' else 'raid'}): {c['change'][:90]} ({gain(c)})" for spec, st, c in hits[:3]) or "-"
 
 
 @functools.lru_cache(maxsize=None)

@@ -232,6 +232,9 @@ def write_class(cls, st):
               f"talent; the build: {r['values_base']:.2f} s):", "", "| Talent | Ranks | Seconds lost without it | Per point |", "|---|---|---|---|"]
         o += [f"| {n} | {v['ranks']} | {v['seconds']:+.2f} | {v['per_point']:+.2f} |" for n, v in r["values"].items()]
         o += ["", "Race at levels 20-60 (seconds per kill): " + ", ".join(f"{k} {v['weighted']:.2f}" for k, v in sorted(r["race"].items(), key=lambda kv: kv[1]["weighted"])) + ".", ""]
+        bw = r.get("builds")
+        if bw:   # open_builds.py's verdict: a derived build on the pages, or the build it confirms
+            o += [f"Build ({bw['date']}, open_builds.py): " + (", ".join(f"`{b}`" for b in bw["written"]) if bw.get("written") else bw.get("why") or "none") + ".", ""]
     p = paths.scenario_dir(cls, "leveling") / "open-search.md"
     p.write_text("\n".join(o) + "\n", encoding="utf-8")
     log(f"wrote {p.relative_to(ROOT).as_posix()}")
@@ -240,6 +243,8 @@ def write_class(cls, st):
 def write_page():
     rows = []
     for f in sorted(OUT.glob("*.json")):
+        if f.name.endswith(".prev.json"):   # a warm-start record of an earlier pass (2026-10-06: it had put the pass's rows on the page)
+            continue
         st = json.load(open(f, encoding="utf-8"))
         for spec, r in st.get("rotations", {}).items():
             if r.get("done"):

@@ -94,6 +94,8 @@ Models: bm-leveling, mm-raid, mm-lonewolf-raid, melee-dps. Same mob, same gear, 
 - Whether the pet holds melee-hunter threat as well as the fight lab assumes (it Growls every 5 s and loses the mob when your threat passes 130% of its own).
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 - A generated Beast Mastery build: check it against the community's Beast Mastery builds at launch.
+- An open-search Beast-Marks leveling build: check it while leveling at launch.
+- An open-search Beast-Survival leveling build: check it while leveling at launch.
 
 ## Mage
 

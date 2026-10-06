@@ -454,6 +454,21 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   and write the Classic split into each source's `game_overrides["classic-era"]` plus raid-mode fits into
   `effects/classic-era/`, reports under `<class>/research/talents/classic-baseline/raidsim/`. `rebuild.py --steps classic` does all of
   it and ends with `scorer/classic_check.py --write`. Quote these as "wowsims/classic" numbers (Classic Era, not Forever).
+- **The bench's target is an Elemental** (2026-10-06): the simulator's default target has no creature type (its UI preset is Mechanical),
+  so every effect keyed on the type read 0 in our runs until then, above all the hunter's Improved Tracking (+5% damage against every raid
+  creature type but Mechanical; the simulator implements it: +4.9% for the melee hunter in a full raid). `foreverbench` sets the type
+  (`mobType` in the config overrides; "Unknown" reproduces older runs). Elemental is tracked by hunters but is neither Humanoid/Giant
+  (Murder stays hand-valued through `not_measured`), Undead/Demon (Exorcism, Holy Wrath, the Scourge items) nor Giant/Dragonkin (Spearing
+  Strike's bonus), so no other class moved (a mage build is bit-identical). Hunter records made before the fix (the ML, deep, family and
+  filler-audit records; two filler audits had moved Improved Tracking out of hand drafts, undone the same day) under-value the talent:
+  re-run them (`family_search.py hunter --fresh`, `ml_pipeline.py hunter --fresh`).
+- **Open-search winners as builds** (2026-10-06, `_reference/data/open_builds.py [classes] --write [--no-tidy] [--partial]`): per done entry
+  of `raidsim/families/<class>.json` the winner becomes `<spec slug>-open-raid` (🔬 derived) when 0.5%+ ahead of every build of ours of its
+  spec (the entry's race, plus the spec's other builds at the pages' full-raid numbers), `replaces` the spec's best hand draft at 2%+; per
+  done rotation of `fightlab/open/<class>.json` likewise `<spec slug>-open-leveling` (the record's order; the pages take its numbers from
+  the record, `render_modes.leveling_numbers`). One build per spec; raid builds join their entry in specs.json and go through the filler
+  audit; re-race the entries and regen afterwards. A new hybrid family needs a name in `spec_modes.HYBRID_NAMES` (the hunter's
+  Beast-Survival, 16/11/24 Summon Hawk + Lone Wolf, 2026-10-06).
 - Gear presets must be complete (weapon, rings, trinkets, neck, back): some of the simulator's presets list only the armor slots
   (shadow priest and Protection warrior `p1.bis`, feral cat `p0.bis` in 40be98e). `specs.json` names complete ones (`gear_note`
   says why) and `run.py`'s `best_gear` skips incomplete presets (`gear_complete`).

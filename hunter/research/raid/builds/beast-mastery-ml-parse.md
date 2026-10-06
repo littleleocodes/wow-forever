@@ -51,11 +51,11 @@ The Beast Mastery build the machine-learning talent search found in a full raid 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 490 | +0.0% | 855 | -2.9% | 22 s |
-| 2 | **[`beast-mastery-ml-parse`](beast-mastery-ml-parse.md)** | ours: parse build | 31/20/0 | 486 | -0.8% | 880 | +0.0% | 30 s |
-| 3 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: hand draft | 28/23/0 | 479 | -2.2% | 876 | -0.5% | 30 s |
-| 4 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 478 | -2.5% | 855 | -2.9% | 26 s |
-| 5 | *Beast Mastery 35/16/0* | community simulator | - | 464 | -5.3% | 832 | -5.4% | 20 s |
+| 1 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 499 | +0.0% | 867 | -3.1% | 6 s |
+| 2 | **[`beast-mastery-ml-parse`](beast-mastery-ml-parse.md)** | ours: parse build | 31/20/0 | 498 | -0.2% | 895 | +0.0% | 25 s |
+| 3 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: hand draft | 28/23/0 | 493 | -1.3% | 890 | -0.6% | 18 s |
+| 4 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 490 | -1.8% | 868 | -3.1% | 13 s |
+| 5 | *Beast Mastery 35/16/0* | community simulator | - | 474 | -5.0% | 845 | -5.6% | 14 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -91,7 +91,7 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 | 1 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.3 |
 | 2 | cast Summon Hawk | 9.7 |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | if time left on Serpent Sting < 4s: cast Serpent Sting | 4.3 |
+| 4 | if time left on Serpent Sting < 4s: cast Serpent Sting | 4.7 |
 | 5 | if auraIsInactive and mana % ≥ 70%: cast Intimidation | 0.3 |
 
 Damage by ability:

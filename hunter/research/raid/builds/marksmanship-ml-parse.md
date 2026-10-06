@@ -48,18 +48,18 @@ The Marksmanship build the machine-learning talent search found in a full raid (
 
 ## Rank among our builds and the community simulator's
 
-**2 of 8** for `mm-lonewolf-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 8** for `mm-lonewolf-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) | ours: optimizer | 5/38/8 | 431 | +0.0% | 862 | -4.4% | 99 s |
-| 2 | **[`marksmanship-ml-parse`](marksmanship-ml-parse.md)** | ours: parse build | 7/44/0 | 431 | -0.1% | 901 | +0.0% | 100 s |
-| 3 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: hand draft | 11/40/0 | 428 | -0.6% | 859 | -4.7% | 97 s |
-| 4 | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) | ours: hand draft | 11/40/0 | 427 | -0.9% | 805 | -10.7% | 89 s |
-| 5 | *Beast Mastery 35/16/0* | community simulator | - | 370 | -14.2% | 629 | -30.2% | 67 s |
-| 6 | *Marksmanship* | community simulator | - | 350 | -18.7% | 723 | -19.8% | 99 s |
-| 7 | *Marksmanship 0/39/12* | community simulator | - | 326 | -24.3% | 673 | -25.4% | 97 s |
-| 8 | *Survival 0/15/36* | community simulator | - | 300 | -30.3% | 559 | -38.0% | 90 s |
+| 1 | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) | ours: optimizer | 5/38/8 | 463 | +0.0% | 913 | -4.5% | 92 s |
+| 2 | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) | ours: hand draft | 5/41/5 | 457 | -1.2% | 957 | +0.0% | 97 s |
+| 3 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: hand draft | 11/40/0 | 444 | -4.0% | 867 | -9.4% | 89 s |
+| 4 | **[`marksmanship-ml-parse`](marksmanship-ml-parse.md)** | ours: parse build | 7/44/0 | 441 | -4.7% | 911 | -4.7% | 92 s |
+| 5 | *Beast Mastery 35/16/0* | community simulator | - | 381 | -17.7% | 638 | -33.3% | 52 s |
+| 6 | *Marksmanship* | community simulator | - | 359 | -22.5% | 740 | -22.6% | 92 s |
+| 7 | *Marksmanship 0/39/12* | community simulator | - | 359 | -22.5% | 716 | -25.1% | 90 s |
+| 8 | *Survival 0/15/36* | community simulator | - | 323 | -30.2% | 593 | -38.0% | 75 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -90,8 +90,8 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
 | 2 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
-| 3 | cast Arcane Shot | 9.0 |
-| 4 | if time to the next auto attack > 0.5s and mana % ≥ 10%: cast Aimed Shot | 3.2 |
+| 3 | cast Arcane Shot | 9.5 |
+| 4 | if time to the next auto attack > 0.5s and mana % ≥ 10%: cast Aimed Shot | 3.4 |
 | 5 | if time left on Serpent Sting < 2s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent).
@@ -102,7 +102,7 @@ Damage by ability:
 |---|---|
 | Auto Shot | 52% |
 | Arcane Shot | 26% |
-| Serpent Sting | 15% |
+| Serpent Sting | 14% |
 | Aimed Shot | 8% |
 
 ## Notes

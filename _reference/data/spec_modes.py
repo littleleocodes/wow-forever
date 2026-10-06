@@ -33,6 +33,7 @@ LEVEL_AS = {("druid", "Restoration"): "Feral Combat", ("paladin", "Holy"): "Retr
 HYBRID_NAMES = {
     ("hunter", "Hybrid Beast Mastery/Marksmanship"): ("Beast-Marks", "beast-marks", "Marksmanship's shots with Beast Mastery's pet talents: the classic raid hunter split."),
     ("hunter", "Hybrid Marksmanship/Survival"): ("Melee (split)", "melee-split", "Dual-wield melee with Marksmanship support, short of 30 Survival points."),
+    ("hunter", "Hybrid Beast Mastery/Survival"): ("Beast-Survival", "beast-survival", "Dual-wield melee with Beast Mastery's aspect and pet talents (Summon Hawk and Lone Wolf in a raid, a pet while leveling), short of 30 Survival points."),
     ("mage", "Hybrid Arcane/Frost"): ("Arcane-Frost", "arcane-frost", "A Frostbolt caster with Arcane's mana and cooldown talents (Arcane Power, Presence of Mind)."),
     ("mage", "Hybrid Fire/Frost"): ("Frostfire", "frostfire", "Built around Frostfire Bolt, a new Forever spell that uses both trees."),
     ("paladin", "Hybrid Holy/Retribution"): ("Shockadin", "shockadin", "Holy Shock burst and heals with Retribution's melee talents."),

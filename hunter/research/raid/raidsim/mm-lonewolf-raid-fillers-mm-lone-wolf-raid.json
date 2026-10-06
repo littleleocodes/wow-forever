@@ -2,168 +2,99 @@
  "class": "hunter",
  "spec": "mm-lonewolf-raid",
  "build": "mm-lone-wolf-raid",
- "setting": "dummy",
- "date": "2026-09-29",
+ "setting": "raid",
+ "date": "2026-10-06",
  "tank": false,
  "removal": {
-  "Barrage": 0.01002837442842297,
-  "Careful Aim": 0.03790697518017461,
-  "Deadly Aspects": 0.05272104622896634,
-  "Efficiency": 0.06677470216409687,
+  "Barrage": 0.017647292910323298,
+  "Careful Aim": 0.06990913999345483,
+  "Deadly Aspects": 0.05223528524175447,
+  "Efficiency": 0.0007520133752998426,
   "Hawk Eye": -0.0,
-  "Improved Stings": 0.024650491822786225,
-  "Improved Tracking": -0.0,
-  "Lethal Attacks": 0.050985298464442996,
-  "Lone Wolf": 0.16666666666666663,
-  "Mortal Shots": 0.04901293569116927,
-  "Ranged Weapon Specialization": 0.0405760499553941,
+  "Improved Aspect of the Monkey": -0.0,
+  "Improved Stings": 0.026579718451154588,
+  "Improved Tracking": 0.047267255646347595,
+  "Lethal Attacks": 0.048909354985607445,
+  "Lone Wolf": 0.1654353947622178,
+  "Mortal Shots": 0.05675356767833084,
+  "Ranged Weapon Specialization": 0.03967305037458968,
   "Rapid Killing": -0.0,
-  "Rapid Recuperation": -0.0,
-  "Sniper Shot": -0.0,
-  "Trueshot Aura": 0.024299343064214662
+  "Rapid Recuperation": 2.8408946998847995e-05,
+  "Trueshot Aura": 0.022030191174407854
  },
  "free": [
+  "Efficiency",
   "Hawk Eye",
-  "Improved Tracking",
+  "Improved Aspect of the Monkey",
   "Rapid Killing",
-  "Rapid Recuperation",
-  "Sniper Shot"
+  "Rapid Recuperation"
  ],
  "kept_for_rotation": [],
  "active_never_worth": [],
+ "abilities_never_cast": [
+  "Trueshot Aura"
+ ],
  "moves": [
   {
    "round": 1,
-   "kind": "utility",
-   "from": "Improved Tracking",
-   "to": "Endurance Training",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "survival"
+   "kind": "gain",
+   "from": "Rapid Recuperation",
+   "to": "Sniper Shot",
+   "seed1": 0.06323154909237538,
+   "seed2": 0.06232743799684903,
+   "utility": "range"
   },
   {
    "round": 2,
-   "kind": "utility",
-   "from": "Improved Tracking",
-   "to": "Endurance Training",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "survival"
+   "kind": "gain",
+   "from": "Hawk Eye",
+   "to": "Improved Arcane Shot",
+   "seed1": 0.005357735266209085,
+   "seed2": 0.005410240253934884,
+   "utility": null
   },
   {
    "round": 3,
-   "kind": "utility",
-   "from": "Improved Tracking",
-   "to": "Endurance Training",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "survival"
+   "kind": "gain",
+   "from": "Efficiency",
+   "to": "Improved Arcane Shot",
+   "seed1": 0.00919541098801857,
+   "seed2": 0.010631165499554784,
+   "utility": null
   },
   {
    "round": 4,
-   "kind": "utility",
-   "from": "Improved Tracking",
-   "to": "Endurance Training",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "survival"
+   "kind": "gain",
+   "from": "Hawk Eye",
+   "to": "Improved Arcane Shot",
+   "seed1": 0.012875494148327116,
+   "seed2": 0.012928744902092948,
+   "utility": null
   },
   {
    "round": 5,
-   "kind": "utility",
-   "from": "Improved Tracking",
-   "to": "Endurance Training",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "survival"
+   "kind": "gain",
+   "from": "Hawk Eye",
+   "to": "Improved Arcane Shot",
+   "seed1": 0.011840236337148147,
+   "seed2": 0.012932212900959916,
+   "utility": null
   },
   {
    "round": 6,
-   "kind": "utility",
-   "from": "Sniper Shot",
-   "to": "Improved Aspect of the Monkey",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "survival"
+   "kind": "gain",
+   "from": "Improved Aspect of the Monkey",
+   "to": "Improved Arcane Shot",
+   "seed1": 0.011582637745955138,
+   "seed2": 0.010275974043071345,
+   "utility": null
   }
  ],
- "final_seed3": 0.0,
+ "final_seed3": 0.11875737763281058,
  "start": {
   "Beast Mastery": [
    [
     "Deadly Aspects",
-    5
-   ]
-  ],
-  "Marksmanship": [
-   [
-    "Lethal Attacks",
-    5
-   ],
-   [
-    "Hawk Eye",
-    3
-   ],
-   [
-    "Careful Aim",
-    5
-   ],
-   [
-    "Improved Stings",
-    3
-   ],
-   [
-    "Efficiency",
-    5
-   ],
-   [
-    "Lone Wolf",
-    1
-   ],
-   [
-    "Rapid Killing",
-    2
-   ],
-   [
-    "Trueshot Aura",
-    1
-   ],
-   [
-    "Mortal Shots",
-    5
-   ],
-   [
-    "Barrage",
-    3
-   ],
-   [
-    "Rapid Recuperation",
-    2
-   ],
-   [
-    "Ranged Weapon Specialization",
-    5
-   ],
-   [
-    "Sniper Shot",
-    1
-   ]
-  ],
-  "Survival": [
-   [
-    "Improved Tracking",
-    5
-   ]
-  ]
- },
- "allocation": {
-  "Beast Mastery": [
-   [
-    "Deadly Aspects",
-    5
-   ],
-   [
-    "Endurance Training",
     5
    ],
    [
@@ -221,6 +152,79 @@
     5
    ]
   ],
-  "Survival": []
+  "Survival": [
+   [
+    "Improved Tracking",
+    5
+   ]
+  ]
+ },
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Efficiency",
+    4
+   ],
+   [
+    "Lone Wolf",
+    1
+   ],
+   [
+    "Rapid Killing",
+    2
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Mortal Shots",
+    5
+   ],
+   [
+    "Barrage",
+    3
+   ],
+   [
+    "Rapid Recuperation",
+    1
+   ],
+   [
+    "Ranged Weapon Specialization",
+    5
+   ],
+   [
+    "Sniper Shot",
+    1
+   ],
+   [
+    "Improved Arcane Shot",
+    5
+   ]
+  ],
+  "Survival": [
+   [
+    "Improved Tracking",
+    5
+   ]
+  ]
  }
 }

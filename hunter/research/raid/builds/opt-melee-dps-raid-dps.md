@@ -58,18 +58,19 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dp
 
 ## Rank among our builds and the community simulator's
 
-**2 of 4** for `melee-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 5** for `melee-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`survival-raid`](survival-raid.md) | ours: hand draft | 5/16/30 | 445 | +0.0% | 1022 | -1.8% | 9 s |
-| 2 | **[`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md)** | ours: optimizer | 5/15/31 | 426 | -4.4% | 1016 | -2.4% | 8 s |
-| 3 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 424 | -4.9% | 1041 | -0.0% | 44 s |
-| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: parse build | 5/14/32 | 345 | -22.5% | 1041 | +0.0% | 117 s |
+| 1 | [`survival-raid`](survival-raid.md) | ours: hand draft | 5/16/30 | 467 | +0.0% | 1070 | -8.6% | 9 s |
+| 2 | **[`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md)** | ours: optimizer | 5/15/31 | 447 | -4.3% | 1062 | -9.2% | 8 s |
+| 3 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 445 | -4.8% | 1086 | -7.1% | 44 s |
+| 4 | [`beast-survival-open-raid`](beast-survival-open-raid.md) | ours: hand draft | 16/11/24 | 380 | -18.6% | 1170 | +0.0% | 126 s |
+| 5 | [`survival-ml-parse`](survival-ml-parse.md) | ours: parse build | 5/14/32 | 344 | -26.3% | 1036 | -11.5% | 117 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 6 passes, the last 2026-10-04, 8 changes to the base rotation; third-seed check: deep: Survival (dummy) 312 -> 445 DPS (+42.8%), deep: Survival (raid) 309 -> 335 DPS (+8.5%), survival-raid 313 -> 445 DPS (+42.1%), melee-survival-raid 319 -> 423 DPS (+32.5%), opt-melee-dps-raid-dps 319 -> 426 DPS (+33.2%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 8 passes, the last 2026-10-05, 9 changes to the base rotation; third-seed check: open winner 298 -> 363 DPS (+21.9%), survival-raid 313 -> 445 DPS (+42.1%), melee-survival-raid 319 -> 423 DPS (+32.5%), opt-melee-dps-raid-dps 319 -> 426 DPS (+33.2%)):
   1. insert before the filler: cast Wing Clip (+7.4%, pass 1)
   2. spell probe: insert at the top: if auraIsInactive: cast Summon Hawk (+14.3%, pass 2)
   3. insert in the middle: cast Major Mana Potion (+0.4%, pass 3)
@@ -78,7 +79,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dp
   6. move down below 'cast Strider Kick': cast Major Mana Potion (+0.4%, pass 4)
   7. move to the top: cast Mongoose Bite (+0.2%, pass 4)
   8. move to the top: cast Aspect of the Beast (+0.2%, pass 4)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 6 passes, the last 2026-10-04, 2 changes to the base rotation; third-seed check: deep: Survival (dummy) 747 -> 1018 DPS (+36.2%), deep: Survival (raid) 767 -> 1040 DPS (+35.6%), survival-raid 752 -> 1022 DPS (+35.9%), melee-survival-raid 767 -> 1040 DPS (+35.6%), opt-melee-dps-raid-dps 767 -> 1015 DPS (+32.4%), survival-ml-parse 767 -> 1040 DPS (+35.6%)):
+  9. move to the top: if auraIsInactive: cast Summon Hawk (+0.3%, pass 7)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 8 passes, the last 2026-10-06, 2 changes to the base rotation; third-seed check: open winner 739 -> 1118 DPS (+51.4%), survival-raid 752 -> 1022 DPS (+35.9%), melee-survival-raid 767 -> 1040 DPS (+35.6%), opt-melee-dps-raid-dps 767 -> 1015 DPS (+32.4%), survival-ml-parse 767 -> 1040 DPS (+35.6%)):
   1. insert before the filler: cast Wing Clip (+10.3%, pass 1)
   2. spell probe: insert in the middle: if auraIsInactive: cast Summon Hawk (+15.0%, pass 2)
 
@@ -87,7 +89,7 @@ Before the pull: at -3s: cast Hunter's Mark.
 | # | Priority (the first line whose condition holds is cast) | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) casts/min |
 |---|---|---|
 | 1 | cast Aspect of the Beast | 0.3 |
-| 2 | cast Mongoose Bite | 12.2 |
+| 2 | cast Mongoose Bite | 12.1 |
 | 3 | cast Raptor Strike | 20.0 |
 | 4 | cast Immolation Trap | 2.0 |
 | 5 | use every other cooldown when ready | as ready |
@@ -103,7 +105,7 @@ Damage by ability:
 |---|---|
 | Auto Attack | 45% |
 | Raptor Strike | 17% |
-| Mongoose Bite | 14% |
+| Mongoose Bite | 15% |
 | Strider Kick | 8% |
 | Wing Clip | 6% |
 | Immolation Trap | 6% |

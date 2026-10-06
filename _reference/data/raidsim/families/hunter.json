@@ -622,7 +622,13 @@
    "link": "https://talentsforever.com/hunter/60/51210105041-0053252001520051--4",
    "gap_vs_ours": 0.0463,
    "minutes": 277.4,
-   "done": true
+   "done": true,
+   "builds": {
+    "written": [],
+    "why": "confirms marksmanship-ml-parse (-2.68% in a full raid, against the pages' number)",
+    "spec": "Marksmanship",
+    "date": "2026-10-06"
+   }
   },
   "mm-lonewolf-raid": {
    "first": {
@@ -1122,7 +1128,13 @@
    "link": "https://talentsforever.com/hunter/60/510001-1053552511523051--4",
    "gap_vs_ours": 0.0,
    "minutes": 60.3,
-   "done": true
+   "done": true,
+   "builds": {
+    "written": [],
+    "why": "confirms marksmanship-ml-parse (+0.00% in a full raid, raced together)",
+    "spec": "Marksmanship",
+    "date": "2026-10-06"
+   }
   },
   "bm-raid": {
    "first": {
@@ -1607,7 +1619,13 @@
    "link": "https://talentsforever.com/hunter/60/5320001505101251-00532500005--4",
    "gap_vs_ours": 0.0,
    "minutes": 111.1,
-   "done": true
+   "done": true,
+   "builds": {
+    "written": [],
+    "why": "confirms beast-mastery-ml-parse (+0.00% in a full raid, raced together)",
+    "spec": "Beast Mastery",
+    "date": "2026-10-06"
+   }
   },
   "melee-dps": {
    "first": {
@@ -2240,7 +2258,15 @@
    "link": "https://talentsforever.com/hunter/60/50230005001-005005001-5002302300500211-4",
    "gap_vs_ours": 0.0751,
    "minutes": 247.3,
-   "done": true
+   "done": true,
+   "builds": {
+    "written": [
+     "beast-survival-open-raid"
+    ],
+    "why": null,
+    "spec": "Hybrid Beast Mastery/Survival",
+    "date": "2026-10-06"
+   }
   }
  },
  "cross": {

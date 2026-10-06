@@ -69,54 +69,61 @@ Allocation adopted on 2026-10-02 from `opt-mm-raid-raid-dps`, the best build in 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`bm-mm-raid`](bm-mm-raid.md)** | ours: hand draft | 22/29/0 | 478 | +0.0% | 823 | +0.0% | 71 s |
-| 2 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 22/29/0 | 478 | +0.0% | 823 | +0.0% | 71 s |
-| 3 | *Beast Mastery 35/16/0* | community simulator | - | 456 | -4.7% | 794 | -3.6% | 86 s |
-| 4 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 432 | -9.6% | 792 | -3.8% | 79 s |
-| 5 | *Marksmanship* | community simulator | - | 414 | -13.4% | 822 | -0.1% | 97 s |
-| 6 | *Marksmanship 0/39/12* | community simulator | - | 380 | -20.6% | 744 | -9.6% | 95 s |
-| 7 | *Survival 0/15/36* | community simulator | - | 353 | -26.2% | 654 | -20.5% | 87 s |
+| 1 | **[`bm-mm-raid`](bm-mm-raid.md)** | ours: hand draft | 22/29/0 | 498 | +0.0% | 852 | -1.2% | 65 s |
+| 2 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 22/29/0 | 498 | +0.0% | 852 | -1.2% | 65 s |
+| 3 | *Beast Mastery 35/16/0* | community simulator | - | 468 | -6.0% | 823 | -4.5% | 76 s |
+| 4 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 445 | -10.6% | 806 | -6.5% | 72 s |
+| 5 | *Marksmanship* | community simulator | - | 425 | -14.5% | 862 | +0.0% | 89 s |
+| 6 | *Marksmanship 0/39/12* | community simulator | - | 412 | -17.2% | 807 | -6.3% | 86 s |
+| 7 | *Survival 0/15/36* | community simulator | - | 377 | -24.3% | 690 | -19.9% | 73 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 5 passes, the last 2026-10-01, 6 changes to the base rotation; third-seed check: ):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 8 passes, the last 2026-10-05, 8 changes to the base rotation; third-seed check: open winner 370 -> 448 DPS (+21.2%), bm-mm-raid 404 -> 482 DPS (+19.4%), sim preset: Beast Mastery 35/16/0 376 -> 458 DPS (+21.8%), bm-mm-full-buffs-raid 401 -> 432 DPS (+7.7%)):
   1. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+2.3%, pass 1)
   2. drop: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+1.7%, pass 1)
   3. threshold 0.5s -> 1s: if time to the next auto attack > 0.5s: cast Multi-Shot (+0.6%, pass 1)
   4. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.3%, pass 1)
   5. only with 20s or more of the fight left: if time to the next auto attack > 1s: cast Aimed Shot (+0.2%, pass 2)
   6. spell probe: insert at the top: if auraIsInactive: cast Summon Hawk (+6.4%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 5 passes, the last 2026-10-01, 4 changes to the base rotation; third-seed check: ):
+  7. only with 10s or more of the fight left: if auraIsInactive: cast Summon Hawk (+0.3%, pass 6)
+  8. only above 25% mana: if time to the next auto attack > 1s and time left in the fight ≥ 20s: cast Aimed Shot (+0.3%, pass 6)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 8 passes, the last 2026-10-05, 9 changes to the base rotation; third-seed check: open winner 813 -> 874 DPS (+7.4%), bm-mm-raid 783 -> 839 DPS (+7.1%), sim preset: Beast Mastery 35/16/0 738 -> 810 DPS (+9.8%), bm-mm-full-buffs-raid 786 -> 795 DPS (+1.2%)):
   1. drop: if time to the next auto attack > 1s: cast Aimed Shot (+1.0%, pass 1)
   2. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.3%, pass 1)
   3. only with 6s or more of the fight left: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 1)
   4. spell probe: insert at the top: if auraIsInactive: cast Summon Hawk (+1.3%, pass 5)
+  5. insert in the middle: if time to the next auto attack > 1s: cast Aimed Shot (+0.8%, pass 6)
+  6. only with 10s or more of the fight left: if auraIsInactive: cast Summon Hawk (+0.3%, pass 6)
+  7. threshold 1s -> 0.5s: if time to the next auto attack > 1s: cast Aimed Shot (+0.3%, pass 6)
+  8. insert before the filler: cast Intimidation (+0.2%, pass 6)
+  9. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30% and time left in the fight ≥ 6s: cast Serpent Sting (+0.2%, pass 8)
 
 Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`bm-mm-raid`](bm-mm-raid.md) casts/min |
 |---|---|---|
-| 1 | if auraIsInactive: cast Summon Hawk | 8.5 |
-| 2 | use every other cooldown when ready | as ready |
-| 3 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
-| 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s: cast Aimed Shot | 4.4 |
-| 5 | if time to the next auto attack > 1s: cast Multi-Shot | 0.6 |
-| 6 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.3 |
-
-Lines of the simulator's rotation these builds never cast: cast Arcane Shot (its condition never held in these fights).
+| 1 | if auraIsInactive and time left in the fight ≥ 10s: cast Summon Hawk | 8.3 |
+| 2 | cast Arcane Shot | 0.3 |
+| 3 | use every other cooldown when ready | as ready |
+| 4 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
+| 5 | if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 25%: cast Aimed Shot | 4.0 |
+| 6 | if time to the next auto attack > 1s: cast Multi-Shot | 1.3 |
+| 7 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.7 |
 
 Damage by ability:
 
 | Ability | [`bm-mm-raid`](bm-mm-raid.md) |
 |---|---|
 | Auto Shot | 39% |
-| Summon Hawk | 26% |
-| Serpent Sting | 12% |
+| Summon Hawk | 25% |
+| Serpent Sting | 13% |
 | Pet: Auto Attack | 11% |
 | Aimed Shot | 7% |
+| Multi-Shot | 2% |
 | Pet: Claw | 2% |
-| Pet: Bite | 2% |
-| Multi-Shot | 1% |
+| Pet: Bite | 1% |
+| Arcane Shot | 1% |
 
 ## Notes
 

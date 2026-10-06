@@ -218,7 +218,9 @@ def raid_tuning_lines(cls, spec, setting):
     o = [f"- **{where.capitalize()}:** our tuned rotation (`raidsim/apl_opt.py`, {when}, {len(rec['changes'])} changes to the base rotation; "
          f"third-seed check: {gains}):"]
     for c in rec["changes"]:
-        o.append(f"  {c['round']}. {c['change']} ({c['gain_seed2']:+.1%}" + (f", pass {c['pass']}" if passes > 1 else "") + ")")
+        g2, g1 = c.get("gain_seed2"), c.get("gain_seed1")   # a rotation adopted whole (the open search's cross-race) records one seed only
+        gain = f"{g2:+.1%}" if isinstance(g2, (int, float)) else (f"{g1:+.1%} on one seed" if isinstance(g1, (int, float)) else "gain not re-measured")
+        o.append(f"  {c['round']}. {c['change']} ({gain}" + (f", pass {c['pass']}" if passes > 1 else "") + ")")
     return o
 
 

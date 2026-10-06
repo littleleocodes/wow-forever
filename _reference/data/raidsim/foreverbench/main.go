@@ -85,6 +85,7 @@ type config struct {
 	Duration           float64         `json:"duration"`
 	TargetLevel        int32           `json:"targetLevel"` // 0 = the sim's default raid boss (63); 60 = a training dummy
 	NoExecute          bool            `json:"noExecute"`   // no execute phases (a dummy never dies)
+	MobType            string          `json:"mobType"`     // the target's creature type (a proto MobType name without its prefix); "" = Elemental, see below
 	Seed               int64           `json:"seed"`
 	IsTank             bool            `json:"isTank"`
 	// "statweights": true prints, per build, the simulator's stat weights (DPS per point of each stat, weapon DPS as pseudo-stats)
@@ -362,19 +363,31 @@ func main() {
 		}
 		encounter := core.MakeSingleTargetEncounter(0)
 		encounter.Duration = cfg.Duration
-		if cfg.TargetLevel > 0 || cfg.NoExecute {
-			tgt := gproto.Clone(encounter.Targets[0]).(*proto.Target)
-			if cfg.TargetLevel > 0 {
-				tgt.Level = cfg.TargetLevel
-			}
-			encounter.Targets = []*proto.Target{tgt}
-			if cfg.NoExecute { // every execute_proportion_* field to zero (the two sims have different sets of them)
-				er := encounter.ProtoReflect()
-				fds := er.Descriptor().Fields()
-				for i := 0; i < fds.Len(); i++ {
-					if strings.HasPrefix(string(fds.Get(i).Name()), "execute_proportion") {
-						er.Clear(fds.Get(i))
-					}
+		// The target's creature type (2026-10-06): the sim's default target has none (the UI's preset is Mechanical), so every effect
+		// keyed on it read 0 in our runs, above all a hunter's Improved Tracking (+5% against every raid creature type but Mechanical).
+		// Elemental by default (Ragnaros, Garr, Baron Geddon): tracked by hunters, but neither Humanoid/Giant (Murder: hand-valued in
+		// specs.json), Undead/Demon (Exorcism, Holy Wrath, the Scourge items) nor Giant/Dragonkin (Spearing Strike), which stay off as
+		// before. "mobType" in the config overrides ("Unknown" reproduces runs from before this date).
+		tgt := gproto.Clone(encounter.Targets[0]).(*proto.Target)
+		mobType := cfg.MobType
+		if mobType == "" {
+			mobType = "Elemental"
+		}
+		if v, ok := proto.MobType_value["MobType"+mobType]; ok {
+			tgt.MobType = proto.MobType(v)
+		} else {
+			die("mobType: no creature type %q (Elemental, Beast, Humanoid, Undead, Demon, Dragonkin, Giant, Mechanical, Unknown ...)", mobType)
+		}
+		if cfg.TargetLevel > 0 {
+			tgt.Level = cfg.TargetLevel
+		}
+		encounter.Targets = []*proto.Target{tgt}
+		if cfg.NoExecute { // every execute_proportion_* field to zero (the two sims have different sets of them)
+			er := encounter.ProtoReflect()
+			fds := er.Descriptor().Fields()
+			for i := 0; i < fds.Len(); i++ {
+				if strings.HasPrefix(string(fds.Get(i).Name()), "execute_proportion") {
+					er.Clear(fds.Get(i))
 				}
 			}
 		}

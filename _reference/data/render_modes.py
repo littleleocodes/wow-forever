@@ -189,12 +189,27 @@ def leveling_numbers(cls):
             bid = f"{SM.slug(tree)}-leveling"
             out[bid] = {int(Lv): v for Lv, v in rec["levels"].items()}
             LEVEL_MODEL[(cls, bid)] = rec["spec"]
+    for spec, rec in open_leveling(cls).items():   # open-search builds (open_builds.py): the 20-60 race's numbers (seed 3)
+        lv = ((rec.get("race") or {}).get("open winner") or {}).get("levels") or {}
+        for bid in (rec.get("builds") or {}).get("written") or []:
+            if lv:
+                out[bid] = {int(Lv): v for Lv, v in lv.items()}
+                LEVEL_MODEL[(cls, bid)] = spec
     for bid, info in (GEN.get(cls) or {}).items():
         if info.get("levels"):
             out.setdefault(bid, {int(L): v for L, v in info["levels"].items()})
         if info.get("model"):
             LEVEL_MODEL[(cls, bid)] = info["model"]
     return out
+
+
+def open_leveling(cls):
+    """The open leveling search's record (fightlab/open/<class>.json): {rotation: record}; {} while a search is writing it."""
+    f = HERE / "fightlab" / "open" / f"{cls}.json"
+    try:
+        return json.load(open(f, encoding="utf-8")).get("rotations") or {} if f.exists() else {}
+    except ValueError:
+        return {}
 
 
 _ENV = {}
@@ -287,6 +302,21 @@ def rank_builds(cls, mode, builds, nums):
     return main + [b for b in builds if b["id"] in parse_ids]
 
 
+def derived_text(mode, top):
+    """Where a derived build comes from, for the page's note."""
+    if top["id"].endswith("-open-raid"):
+        return ("found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, "
+                "raced against the rotation's builds)")
+    if top["id"].endswith("-open-leveling"):
+        return ("found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling "
+                "simulator; the winner picked by a race at levels 20-60)")
+    return {"leveling": "searched in the fight lab (this project's leveling simulator) from the spec's builds and the stats model's best one",
+            "raid": ("found by this project's machine-learning search over every legal build of the spec in the community's raid "
+                     "simulator (phase-1 BiS gear, then raced against the spec's builds)" if top["id"].endswith("-ml-raid")
+                     else "searched in the community's raid simulator from the spec's best build"),
+            "pvp": "the stats model's best PvP build, with the community's most-picked talents where the model rates talents alike"}[mode]
+
+
 def bname(cls, b):
     """A build's player name; an optimizer build whose name is only a damage breakdown reads "<spec> (optimized)" instead of a tree name."""
     n = rs.display_name(cls, b)
@@ -350,11 +380,7 @@ def mode_section(cls, spec, mode, builds, nums, src):
               + (" (" + "; ".join(f"{k}: {v['weighted']:.0f} s per kill" for k, v in sorted(ords.items(), key=lambda kv: kv[1]['weighted'])) + ")"
                  if ords else "") + ". A model of the beta, to check at launch.", ""]
     elif top.get("derived"):
-        o += [f"> {DER_MARK} Derived build: " + {"leveling": "searched in the fight lab (this project's leveling simulator) from the spec's builds and the stats model's best one",
-                                               "raid": ("found by this project's machine-learning search over every legal build of the spec in the community's raid "
-                                                        "simulator (phase-1 BiS gear, then raced against the spec's builds)" if top["id"].endswith("-ml-raid")
-                                                        else "searched in the community's raid simulator from the spec's best build"),
-                                               "pvp": "the stats model's best PvP build, with the community's most-picked talents where the model rates talents alike"}[mode]
+        o += [f"> {DER_MARK} Derived build: " + derived_text(mode, top)
               + (f"; it beat the hand-made build ({top['replaces']}) by 2% or more, which stays below as the alternative" if top.get("replaces") else "")
               + ". A model of the beta, to check at launch.", ""]
     elif top.get("generated"):

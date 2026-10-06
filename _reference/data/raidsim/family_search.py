@@ -455,6 +455,9 @@ def write_class(cls, st):
         if imp:
             o += ["The search model's most important talents (random-forest importance): "
                   + ", ".join(f"{x['feature']} {x['importance']:.2f}" for x in imp[:10]) + ".", ""]
+        bw = e.get("builds")
+        if bw:   # open_builds.py's verdict: a derived build on the pages, or the build it confirms
+            o += [f"Build ({bw['date']}, open_builds.py): " + (", ".join(f"`{b}`" for b in bw["written"]) if bw.get("written") else bw.get("why") or "none") + ".", ""]
     p = paths.scenario_dir(cls, "raid") / "family-search.md"
     p.write_text("\n".join(o) + "\n", encoding="utf-8")
     log(f"wrote {p.relative_to(ROOT).as_posix()}")
@@ -463,6 +466,8 @@ def write_class(cls, st):
 def write_page():
     rows = []
     for f in sorted(OUT.glob("*.json")):
+        if f.name.endswith(".prev.json"):   # a warm-start record of an earlier pass (2026-10-06: it had put the pass's rows on the page)
+            continue
         st = json.load(open(f, encoding="utf-8"))
         for entry, e in st.get("entries", {}).items():
             if e.get("done"):

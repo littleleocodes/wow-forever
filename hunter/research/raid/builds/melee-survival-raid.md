@@ -33,6 +33,7 @@ Forever's melee hunter for raids, built around traps: Survival's melee package (
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
+| **Improved Tracking** | 5/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 5%. |
 | **Savage Strikes** | 2/2 | changed | Increases the critical strike chance of all your melee abilities by 4%. |
 | **Survivalist** | 3/5 | changed | Increases your total Health by 6%. |
 | **Clever Traps** | 2/2 | unchanged | Increases the duration of Freezing and Frost trap effects by 30% and the damage of Immolation and Explosive trap effects by 30%. |
@@ -45,7 +46,6 @@ Forever's melee hunter for raids, built around traps: Survival's melee package (
 | **Strider Kick** | 1/1 | **NEW** | A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec. |
 | **Lightning Reflexes** | 5/5 | changed | Increases your Agility by 10%. |
 | **Lacerating Strikes** | 1/1 | **NEW** | Your Mongoose Bite also causes the target to Bleed for damage equal to 40% of the damage done by Mongoose Bite over 21 sec |
-| **Deflection** | 5/5 | changed | Increases your Parry chance by 5%. |
 
 ## Core talents (priority order)
 
@@ -74,18 +74,19 @@ Forever's melee hunter for raids, built around traps: Survival's melee package (
 
 ## Rank among our builds and the community simulator's
 
-**3 of 4** for `melee-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 5** for `melee-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`survival-raid`](survival-raid.md) | ours: hand draft | 5/16/30 | 445 | +0.0% | 1022 | -1.8% | 9 s |
-| 2 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 426 | -4.4% | 1016 | -2.4% | 8 s |
-| 3 | **[`melee-survival-raid`](melee-survival-raid.md)** | ours: hand draft | 5/11/35 | 424 | -4.9% | 1041 | -0.0% | 44 s |
-| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: parse build | 5/14/32 | 345 | -22.5% | 1041 | +0.0% | 117 s |
+| 1 | [`survival-raid`](survival-raid.md) | ours: hand draft | 5/16/30 | 467 | +0.0% | 1070 | -8.6% | 9 s |
+| 2 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 447 | -4.3% | 1062 | -9.2% | 8 s |
+| 3 | **[`melee-survival-raid`](melee-survival-raid.md)** | ours: hand draft | 5/11/35 | 445 | -4.8% | 1086 | -7.1% | 44 s |
+| 4 | [`beast-survival-open-raid`](beast-survival-open-raid.md) | ours: hand draft | 16/11/24 | 380 | -18.6% | 1170 | +0.0% | 126 s |
+| 5 | [`survival-ml-parse`](survival-ml-parse.md) | ours: parse build | 5/14/32 | 344 | -26.3% | 1036 | -11.5% | 117 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 6 passes, the last 2026-10-04, 8 changes to the base rotation; third-seed check: deep: Survival (dummy) 312 -> 445 DPS (+42.8%), deep: Survival (raid) 309 -> 335 DPS (+8.5%), survival-raid 313 -> 445 DPS (+42.1%), melee-survival-raid 319 -> 423 DPS (+32.5%), opt-melee-dps-raid-dps 319 -> 426 DPS (+33.2%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 8 passes, the last 2026-10-05, 9 changes to the base rotation; third-seed check: open winner 298 -> 363 DPS (+21.9%), survival-raid 313 -> 445 DPS (+42.1%), melee-survival-raid 319 -> 423 DPS (+32.5%), opt-melee-dps-raid-dps 319 -> 426 DPS (+33.2%)):
   1. insert before the filler: cast Wing Clip (+7.4%, pass 1)
   2. spell probe: insert at the top: if auraIsInactive: cast Summon Hawk (+14.3%, pass 2)
   3. insert in the middle: cast Major Mana Potion (+0.4%, pass 3)
@@ -94,7 +95,8 @@ Forever's melee hunter for raids, built around traps: Survival's melee package (
   6. move down below 'cast Strider Kick': cast Major Mana Potion (+0.4%, pass 4)
   7. move to the top: cast Mongoose Bite (+0.2%, pass 4)
   8. move to the top: cast Aspect of the Beast (+0.2%, pass 4)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 6 passes, the last 2026-10-04, 2 changes to the base rotation; third-seed check: deep: Survival (dummy) 747 -> 1018 DPS (+36.2%), deep: Survival (raid) 767 -> 1040 DPS (+35.6%), survival-raid 752 -> 1022 DPS (+35.9%), melee-survival-raid 767 -> 1040 DPS (+35.6%), opt-melee-dps-raid-dps 767 -> 1015 DPS (+32.4%), survival-ml-parse 767 -> 1040 DPS (+35.6%)):
+  9. move to the top: if auraIsInactive: cast Summon Hawk (+0.3%, pass 7)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 8 passes, the last 2026-10-06, 2 changes to the base rotation; third-seed check: open winner 739 -> 1118 DPS (+51.4%), survival-raid 752 -> 1022 DPS (+35.9%), melee-survival-raid 767 -> 1040 DPS (+35.6%), opt-melee-dps-raid-dps 767 -> 1015 DPS (+32.4%), survival-ml-parse 767 -> 1040 DPS (+35.6%)):
   1. insert before the filler: cast Wing Clip (+10.3%, pass 1)
   2. spell probe: insert in the middle: if auraIsInactive: cast Summon Hawk (+15.0%, pass 2)
 
@@ -103,13 +105,13 @@ Before the pull: at -3s: cast Hunter's Mark.
 | # | Priority (the first line whose condition holds is cast) | [`melee-survival-raid`](melee-survival-raid.md) casts/min |
 |---|---|---|
 | 1 | cast Aspect of the Beast | 0.3 |
-| 2 | cast Mongoose Bite | 10.9 |
+| 2 | cast Mongoose Bite | 10.8 |
 | 3 | cast Raptor Strike | 18.4 |
 | 4 | cast Immolation Trap | 3.0 |
 | 5 | use every other cooldown when ready | as ready |
 | 6 | cast Strider Kick | 5.1 |
 | 7 | cast Major Mana Potion | as ready |
-| 8 | cast Wing Clip | 19.6 |
+| 8 | cast Wing Clip | 19.7 |
 
 Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Counterattack (needs the Counterattack talent); cast Explosive Trap (its condition never held in these fights).
 
@@ -118,7 +120,7 @@ Damage by ability:
 | Ability | [`melee-survival-raid`](melee-survival-raid.md) |
 |---|---|
 | Auto Attack | 45% |
-| Raptor Strike | 15% |
+| Raptor Strike | 16% |
 | Mongoose Bite | 13% |
 | Immolation Trap | 12% |
 | Strider Kick | 7% |
@@ -131,7 +133,7 @@ Damage by ability:
 - Rotation: dual wield two fast one-handers; Aspect of the Beast on; Hunter's Mark and Serpent Sting from range on the pull, then Mongoose Bite when active, Strider Kick on cooldown, Raptor Strike on the next swing, and Immolation Trap under the boss whenever it is off cooldown (fire traps share a cooldown; Explosive Trap instead on packs).
 - No pet: Lone Wolf's +20% beats the pet's damage once the hunter melees (the model's raid pet share is 12%, the break-even 16.7%). Beast Mastery's pet talents are absent for that reason.
 - The community simulator plays this build on our own melee rotation (raidsim/specs.json melee-dps); it models only Aspect of the Hawk, so Aspect of the Beast's attack power and Deadly Aspects' haste are missing and the DPS is a lower bound. The fight lab's melee rotation has no traps yet, so the leveling numbers leave the trap talents at zero.
-- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Tracking -> Deflection (survival); Improved Tracking -> Deflection (survival); Improved Tracking -> Deflection (survival); Improved Tracking -> Deflection (survival); Improved Tracking -> Deflection (survival). Net +0.00% on a third seed.
+- 2026-09-29 filler audit, undone 2026-10-06: it had moved Improved Tracking 5 -> Deflection because the simulator measured Improved Tracking at 0, but that was the bench's blind spot: its target had no creature type, and Improved Tracking is +5% damage against every raid creature type but Mechanical (the bench's target is an Elemental since 2026-10-06; it reads +4.9% in a full raid now). The 5 points are back in Improved Tracking.
 
 ## Open questions (verify in the live game)
 

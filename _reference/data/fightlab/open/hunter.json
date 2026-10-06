@@ -600,7 +600,15 @@
    "ours_best": "beast-mastery-leveling",
    "gain_vs_ours": 0.0087,
    "minutes": 109.0,
-   "done": true
+   "done": true,
+   "builds": {
+    "written": [
+     "beast-marks-open-leveling"
+    ],
+    "why": null,
+    "spec": "Hybrid Beast Mastery/Marksmanship",
+    "date": "2026-10-06"
+   }
   },
   "mm-raid": {
    "model": "mm-raid",
@@ -1253,7 +1261,13 @@
    "ours_best": "leveling-beast-mastery",
    "gain_vs_ours": 0.0048,
    "minutes": 91.8,
-   "done": true
+   "done": true,
+   "builds": {
+    "written": [],
+    "why": "confirms leveling-beast-mastery (+0.48% faster per kill, levels 20-60, raced together)",
+    "spec": "Hybrid Beast Mastery/Marksmanship",
+    "date": "2026-10-06"
+   }
   },
   "melee-dps": {
    "model": "melee-dps",
@@ -1875,7 +1889,15 @@
    "ours_best": "opt-melee-dps-solo-60",
    "gain_vs_ours": 0.0649,
    "minutes": 125.2,
-   "done": true
+   "done": true,
+   "builds": {
+    "written": [
+     "beast-survival-open-leveling"
+    ],
+    "why": null,
+    "spec": "Hybrid Beast Mastery/Survival",
+    "date": "2026-10-06"
+   }
   }
  }
 }

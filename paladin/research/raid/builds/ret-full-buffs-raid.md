@@ -105,7 +105,7 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `ret-raid-d
   15. drop 'mana % ≥ 15%' from the condition: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness (+0.2%, pass 5)
   16. threshold 70% -> 65%: if mana % ≥ 15% and Seal of Righteousness is up and mana % ≥ 70%: cast Seal of Command (+0.5%, pass 5)
   17. threshold 1s -> 2s: if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 1s: cast Seal of Command (+0.2%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 5 passes, the last 2026-10-02, 9 changes to the base rotation; third-seed check: ml: Retribution 922 -> 1013 DPS (+9.8%), opt-ret-dps-raid-dps 889 -> 978 DPS (+10.0%), sim preset: P4/P5 Ret 892 -> 982 DPS (+10.0%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 7 passes, the last 2026-10-05, 10 changes to the base rotation; third-seed check: retribution-ml-raid 818 -> 907 DPS (+10.9%), sim preset: P4/P5 Ret 793 -> 879 DPS (+10.8%), ret-raid-dps 795 -> 880 DPS (+10.7%), ret-full-buffs-raid 818 -> 905 DPS (+10.6%), opt-ret-dps-raid-dps 814 -> 903 DPS (+11.0%)):
   1. drop 'time left on Seal of Righteousness ≤ 1s' from the condition: if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 1s: cast Seal of Command (+2.4%, pass 1)
   2. threshold 70% -> 50%: if mana % ≥ 70%: cast Consecration (+1.4%, pass 1)
   3. move to the top: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness (+0.2%, pass 1)
@@ -115,6 +115,7 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `ret-raid-d
   7. spell probe: insert at the end: cast Holy Shock (+6.6%, pass 4)
   8. insert in the middle: cast Consecration (+7.1%, pass 5)
   9. insert in the middle: cast Demonic Rune (+0.2%, pass 5)
+  10. rotation replaced by seal-of-fury-raid's raid rotation (keeps Seal of Righteousness up and judges it, Holy Strike, almost no seal twisting), which the open search's re-tune on a Retribution build produced (+2.0% on one seed, pass 6)
 
 Before the pull: at -1.5s: cast Seal of Command.
 

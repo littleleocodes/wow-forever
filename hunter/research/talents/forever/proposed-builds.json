@@ -137,25 +137,26 @@
       "summary": "Allocation adopted on 2026-09-26 from `opt-mm-lonewolf-raid-raid-dps`, the best build in the community simulator (+13.8% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: Lone Wolf (+20% damage with no pet) plus the full Marksmanship core, with Survival for Improved Tracking (+5% vs. the tracked creature type), Surefooted (+3% hit) and Deterrence. The petless alternative to the BM/MM build; no Classic baseline.",
       "allocation": {
         "Beast Mastery": [
-          ["Deadly Aspects", 5],
-          ["Endurance Training", 5],
-          ["Improved Aspect of the Monkey", 1]
+          ["Deadly Aspects", 5]
         ],
         "Marksmanship": [
           ["Lethal Attacks", 5],
-          ["Hawk Eye", 3],
           ["Careful Aim", 5],
           ["Improved Stings", 3],
-          ["Efficiency", 5],
+          ["Efficiency", 4],
           ["Lone Wolf", 1],
           ["Rapid Killing", 2],
           ["Trueshot Aura", 1],
           ["Mortal Shots", 5],
           ["Barrage", 3],
-          ["Rapid Recuperation", 2],
-          ["Ranged Weapon Specialization", 5]
+          ["Rapid Recuperation", 1],
+          ["Ranged Weapon Specialization", 5],
+          ["Sniper Shot", 1],
+          ["Improved Arcane Shot", 5]
         ],
-        "Survival": []
+        "Survival": [
+          ["Improved Tracking", 5]
+        ]
       },
       "core": [
         {"talent": "Lone Wolf", "why": "+20% damage with all attacks while no pet is active. Raid sim (2026-09-26): removing it costs +20% DPS."},
@@ -165,13 +166,14 @@
         {"talent": "Mortal Shots", "why": "Ranged crit damage. Raid sim (2026-09-26): removing it costs +6% DPS."},
         {"talent": "Lethal Attacks", "why": "Crit. Raid sim (2026-09-26): removing it costs +5% DPS."},
         {"talent": "Ranged Weapon Specialization", "why": "Ranged damage. Raid sim (2026-09-26): removing it costs +4% DPS."},
-        {"talent": "Improved Stings", "why": "Raid sim (2026-09-26): removing it costs +3% DPS."}
+        {"talent": "Improved Stings", "why": "Raid sim (2026-09-26): removing it costs +3% DPS."},
+        {"talent": "Improved Tracking", "why": "+5% damage against every raid creature type but Mechanical (beta tooltip; the simulator reads +4.9% in a full raid since the bench's target got a creature type, 2026-10-06)."}
       ],
       "flex": [
         {
           "points": 3,
-          "default": "Hawk Eye",
-          "alternatives": ["any utility talent legal at that tier"],
+          "default": "Improved Arcane Shot",
+          "alternatives": ["Hawk Eye", "any utility talent legal at that tier"],
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         },
         {
@@ -200,12 +202,12 @@
         },
         {
           "points": 5,
-          "default": "Endurance Training",
-          "alternatives": ["Improved Tracking", "any utility talent legal at that tier"],
+          "default": "Improved Tracking",
+          "alternatives": ["Endurance Training", "any utility talent legal at that tier"],
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-26: opt-mm-lonewolf-raid-raid-dps beat the previous draft by +13.8% DPS; the rationale below predates the adoption where it names talents no longer taken.", "No pet means no Focused Fire, no pet damage, but also no pet management, no Growl pulls and no dead-pet downtime.", "2026-09-27 scenario audit: Improved Revive Pet 2 -> Efficiency 2. Improved Revive Pet speeds up reviving a pet this build never has out (Lone Wolf). Efficiency's cheaper shots and stings are mana over a long fight (scorer +0.4 points; the simulator's 120 s fight shows no mana shortage).", "Summon Hawk (new-builds survey, 2026-09-28): this draft does not take Summon Hawk, and the Marksmanship rotation never casts it. In the simulator one point in it, under a rotation that casts it on cooldown, is worth +47% to bm-mm-raid on the training dummy: see mm-hawk-raid, whose lead rests on the simulator's guess at the hawks' follow-up attacks.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Tracking -> Endurance Training (survival); Improved Tracking -> Endurance Training (survival); Improved Tracking -> Endurance Training (survival); Improved Tracking -> Endurance Training (survival); Improved Tracking -> Endurance Training (survival); Sniper Shot -> Improved Aspect of the Monkey (survival). Net +0.00% on a third seed."],
+      "notes": ["Adopted from the community simulator on 2026-09-26: opt-mm-lonewolf-raid-raid-dps beat the previous draft by +13.8% DPS; the rationale below predates the adoption where it names talents no longer taken.", "No pet means no Focused Fire, no pet damage, but also no pet management, no Growl pulls and no dead-pet downtime.", "2026-09-27 scenario audit: Improved Revive Pet 2 -> Efficiency 2. Improved Revive Pet speeds up reviving a pet this build never has out (Lone Wolf). Efficiency's cheaper shots and stings are mana over a long fight (scorer +0.4 points; the simulator's 120 s fight shows no mana shortage).", "Summon Hawk (new-builds survey, 2026-09-28): this draft does not take Summon Hawk, and the Marksmanship rotation never casts it. In the simulator one point in it, under a rotation that casts it on cooldown, is worth +47% to bm-mm-raid on the training dummy: see mm-hawk-raid, whose lead rests on the simulator's guess at the hawks' follow-up attacks.", "2026-09-29 filler audit, undone 2026-10-06: it had moved Improved Tracking 5 -> Endurance Training because the simulator measured Improved Tracking at 0, but that was the bench's blind spot: its target had no creature type, and Improved Tracking is +5% damage against every raid creature type but Mechanical (the bench's target is an Elemental since 2026-10-06; it reads +4.9% in a full raid now). The 5 points are back in Improved Tracking. Its other move, Sniper Shot 1 -> Improved Aspect of the Monkey (the rotation never cast Sniper Shot), stands.", "2026-10-06 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Rapid Recuperation -> Sniper Shot (+6.2% DPS); Hawk Eye -> Improved Arcane Shot (+0.5% DPS); Efficiency -> Improved Arcane Shot (+1.1% DPS); Hawk Eye -> Improved Arcane Shot (+1.3% DPS); Hawk Eye -> Improved Arcane Shot (+1.3% DPS); Improved Aspect of the Monkey -> Improved Arcane Shot (+1.0% DPS). Net +11.88% on a third seed."],
       "open_questions": ["Lone Wolf +20% vs. a Ferocity/Unleashed Fury pet: needs a sim or parse comparison at 60."],
       "sources": ["https://warcraftforever.games/talents/hunter"]
     },
@@ -561,7 +563,7 @@
           "why": "Measures +0.0% time per kill at 60 in the fight lab (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the fight-lab race on 2026-09-26: cand-bm-r2 beat the previous draft by +3.8% (level-weighted time per kill); the rationale below the fight-lab note predates the adoption where it names talents no longer taken.", "Loop: pet in, Hunter's Mark, Serpent Sting, Auto Shot (+ hawk from 25); Feign Death if the pet loses the mob; Mend Pet between pulls.", "Lone Wolf (+20% damage with no pet) is not a leveling choice — the pet is the leveling engine.", "2026-09-27 scenario audit: Improved Revive Pet 2, Bestial Swiftness 1 -> Ferocity 3. Improved Revive Pet only helps after a pet death and Bestial Swiftness only speeds the pet's run to the mob; the fight lab measures both at 0.0%. Ferocity's pet and hawk crit is damage on every fight. Fight lab race (1500 fights per level): equal at 20, 0.3-0.5% less time per kill at 30-50, 1.5% less at 60; Pathfinding moves to 18-19 to keep Unleashed Fury at 20.", "2026-09-30: renamed from \"Leveling — Beast Mastery (fight-lab winner adopted 2026-09-26)\" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py).", "Fight lab (leveling/fightlab/bm-leveling.md, 2026-10-04, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 18/24/28/29/30 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-bm-leveling-leveling-st is -1% at 60 and -10% at 30 (negative = faster); race winner over the leveling: leveling-beast-mastery; top talents at 60: Summon Hawk +14%, Unleashed Fury +4%, Efficiency +4%, Rapid Recuperation +3%; about zero: Barrage, Endurance Training, Pathfinding, Rapid Killing, Scatter Shot, Sniper Shot. See the Fight lab section of leveling/README.md."],
+      "notes": ["Adopted from the fight-lab race on 2026-09-26: cand-bm-r2 beat the previous draft by +3.8% (level-weighted time per kill); the rationale below the fight-lab note predates the adoption where it names talents no longer taken.", "Loop: pet in, Hunter's Mark, Serpent Sting, Auto Shot (+ hawk from 25); Feign Death if the pet loses the mob; Mend Pet between pulls.", "Lone Wolf (+20% damage with no pet) is not a leveling choice — the pet is the leveling engine.", "2026-09-27 scenario audit: Improved Revive Pet 2, Bestial Swiftness 1 -> Ferocity 3. Improved Revive Pet only helps after a pet death and Bestial Swiftness only speeds the pet's run to the mob; the fight lab measures both at 0.0%. Ferocity's pet and hawk crit is damage on every fight. Fight lab race (1500 fights per level): equal at 20, 0.3-0.5% less time per kill at 30-50, 1.5% less at 60; Pathfinding moves to 18-19 to keep Unleashed Fury at 20.", "2026-09-30: renamed from \"Leveling — Beast Mastery (fight-lab winner adopted 2026-09-26)\" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py).", "Fight lab (leveling/fightlab/bm-leveling.md, 2026-10-06, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 18/24/28/29/30 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-bm-leveling-leveling-st is -1% at 60 and -10% at 30 (negative = faster); race winner over the leveling: leveling-beast-mastery; top talents at 60: Summon Hawk +14%, Unleashed Fury +4%, Efficiency +4%, Rapid Recuperation +3%; about zero: Barrage, Endurance Training, Pathfinding, Rapid Killing, Scatter Shot, Sniper Shot. See the Fight lab section of leveling/README.md."],
       "open_questions": ["Summon Hawk damage at 60 and whether the 'only 2 hawks' text means two can be up at once.", "Deadly Aspects rank scaling (extrapolated from 2%)."],
       "sources": ["https://warcraftforever.games/talents/hunter"]
     },
@@ -582,6 +584,7 @@
           ["Lone Wolf", 1]
         ],
         "Survival": [
+          ["Improved Tracking", 5],
           ["Savage Strikes", 2],
           ["Survivalist", 3],
           ["Clever Traps", 2],
@@ -593,8 +596,7 @@
           ["Survivalist's Discipline", 2],
           ["Strider Kick", 1],
           ["Lightning Reflexes", 5],
-          ["Lacerating Strikes", 1],
-          ["Deflection", 5]
+          ["Lacerating Strikes", 1]
         ]
       },
       "core": [
@@ -628,7 +630,7 @@
           "why": "+3% hit against a level-63 boss."
         }
       ],
-      "notes": ["Adopted 2026-09-29 (user request): the talentsforever.com #1 hunter build (5/11/35) beat the previous draft by +8.7% on the training dummy (380.1 vs 349.9) and +4.6% in the raid setting (791.7 vs 757.2) with the trap rotation, on two independent seeds (community simulator 40be98e). raidsim/talent_opt.py from both builds, dummy and raid: from the old draft it took exactly Survivalist's Discipline, Clever Traps and Survival Tactics (it paid with Deadly Aspects, which the simulator scores at zero because it lacks the melee haste proc); from this build no move wins. The old draft is kept as raidsim/candidates/cand-melee-dps-hand-2026-09-29.json.", "Rotation: dual wield two fast one-handers; Aspect of the Beast on; Hunter's Mark and Serpent Sting from range on the pull, then Mongoose Bite when active, Strider Kick on cooldown, Raptor Strike on the next swing, and Immolation Trap under the boss whenever it is off cooldown (fire traps share a cooldown; Explosive Trap instead on packs).", "No pet: Lone Wolf's +20% beats the pet's damage once the hunter melees (the model's raid pet share is 12%, the break-even 16.7%). Beast Mastery's pet talents are absent for that reason.", "The community simulator plays this build on our own melee rotation (raidsim/specs.json melee-dps); it models only Aspect of the Hawk, so Aspect of the Beast's attack power and Deadly Aspects' haste are missing and the DPS is a lower bound. The fight lab's melee rotation has no traps yet, so the leveling numbers leave the trap talents at zero.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Tracking -> Deflection (survival); Improved Tracking -> Deflection (survival); Improved Tracking -> Deflection (survival); Improved Tracking -> Deflection (survival); Improved Tracking -> Deflection (survival). Net +0.00% on a third seed."],
+      "notes": ["Adopted 2026-09-29 (user request): the talentsforever.com #1 hunter build (5/11/35) beat the previous draft by +8.7% on the training dummy (380.1 vs 349.9) and +4.6% in the raid setting (791.7 vs 757.2) with the trap rotation, on two independent seeds (community simulator 40be98e). raidsim/talent_opt.py from both builds, dummy and raid: from the old draft it took exactly Survivalist's Discipline, Clever Traps and Survival Tactics (it paid with Deadly Aspects, which the simulator scores at zero because it lacks the melee haste proc); from this build no move wins. The old draft is kept as raidsim/candidates/cand-melee-dps-hand-2026-09-29.json.", "Rotation: dual wield two fast one-handers; Aspect of the Beast on; Hunter's Mark and Serpent Sting from range on the pull, then Mongoose Bite when active, Strider Kick on cooldown, Raptor Strike on the next swing, and Immolation Trap under the boss whenever it is off cooldown (fire traps share a cooldown; Explosive Trap instead on packs).", "No pet: Lone Wolf's +20% beats the pet's damage once the hunter melees (the model's raid pet share is 12%, the break-even 16.7%). Beast Mastery's pet talents are absent for that reason.", "The community simulator plays this build on our own melee rotation (raidsim/specs.json melee-dps); it models only Aspect of the Hawk, so Aspect of the Beast's attack power and Deadly Aspects' haste are missing and the DPS is a lower bound. The fight lab's melee rotation has no traps yet, so the leveling numbers leave the trap talents at zero.", "2026-09-29 filler audit, undone 2026-10-06: it had moved Improved Tracking 5 -> Deflection because the simulator measured Improved Tracking at 0, but that was the bench's blind spot: its target had no creature type, and Improved Tracking is +5% damage against every raid creature type but Mechanical (the bench's target is an Elemental since 2026-10-06; it reads +4.9% in a full raid now). The 5 points are back in Improved Tracking."],
       "open_questions": ["Whether traps can be placed in combat and trigger at once under a boss, as the simulator assumes.", "Fire traps sharing one cooldown (the user's reading, and the simulator's model): with separate cooldowns Explosive Trap adds about 5% more on the dummy.", "Survival Tactics' +10% trap hit: whether traps can miss a boss at all.", "Expose Prey's proc rate against a marked target (5%/rank per attack assumed) decides how often Mongoose Bite is available; check the actual rate in the beta.", "Whether Aspect of the Beast (+110 melee attack power) and the Deadly Aspects melee haste proc work as the tooltips read.", "Lacerating Strikes: 40% of Mongoose Bite over 21 s; whether the bleed can crit or stack."],
       "sources": ["https://talentsforever.com/hunter/60/5-005005001-500230230250222151-4", "https://warcraftforever.games/talents/hunter", "beta client 1.60.1.70009 tooltips (_reference/data/forever-talents/hunter.json)", "hunter/raid/raidsim/melee-dps.md"]
     },
@@ -1856,6 +1858,193 @@
       "notes": ["Against the best hand draft mm-hawk-raid in a full raid, same gear and fights (100,000, one seed): +1.4% (under the 2% bar: the hand draft stays the pick).", "Search result (full raid): 28/23/0 at 876.2 ± 0.06 DPS over 200,000 fights; runner-up 28/23/0 (+0.00%; the winner takes Endurance Training 2, Pathfinding 1; the runner-up Endurance Training 1, Pathfinding 2); 7,254 builds simulated; certificate: none of its 188 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 28/23/0 at 844.7 DPS in a full raid (other talents: _reference/dps-rankings.md).", "Alone on the training dummy (only your own buffs) the search's best is 27/24/0 at 494.2 DPS.", "2026-10-04 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Pathfinding -> Endurance Training (survival). Net +0.00% on a third seed."],
       "open_questions": ["A machine-searched Beast-Marks build: check it against the community's Beast-Marks builds at launch."],
       "sources": ["https://github.com/ElliotWood/Forever"]
+    },
+    {
+      "id": "beast-survival-open-raid",
+      "name": "Beast-Survival — Raid (open talent search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Hybrid Beast Mastery/Survival",
+      "generated": "2026-10-06",
+      "derived": "raid",
+      "summary": "The Beast-Survival (a Beast Mastery/Survival hybrid) raid build the open talent search found on 2026-10-06: every legal 51-point build with no tree rule, searched in the community simulator's melee-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +7.5% over melee-survival-raid, the best of our builds in that rotation.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Improved Aspect of the Monkey", 3],
+          ["Unleashed Fury", 5],
+          ["Summon Hawk", 1],
+          ["Endurance Training", 2]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Careful Aim", 5],
+          ["Lone Wolf", 1]
+        ],
+        "Survival": [
+          ["Improved Tracking", 5],
+          ["Savage Strikes", 2],
+          ["Survivalist", 3],
+          ["Clever Traps", 2],
+          ["Surefooted", 3],
+          ["Predator's Edge", 5],
+          ["Expose Prey", 2],
+          ["Survivalist's Discipline", 1],
+          ["Strider Kick", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Lone Wolf", "why": "182 DPS lost without it (16% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Summon Hawk", "why": "122 DPS lost without it (11% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Predator's Edge", "why": "112 DPS lost without it (10% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Expose Prey", "why": "93 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Deadly Aspects", "why": "84 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Careful Aim", "why": "59 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Lethal Attacks", "why": "55 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Strider Kick", "why": "54 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["Open search result (melee-dps, full raid): 16/11/24 (Beast-Survival (a Beast Mastery/Survival hybrid)) at 1117.7 DPS; melee-survival-raid 1039.6, survival-ml-parse 1039.6, survival-raid 1021.7, opt-melee-dps-raid-dps 1015.4 in the same fights; 4,445 builds simulated, 2 independent runs reached the top.", "The melee-dps raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): mm-raid -49.8%, mm-lonewolf-raid -49.6%, bm-raid -49.6%; none adopted.", "A phase-1 BiS set picked for this family (_reference/data/raidsim/gear_sets/forever/tiers/hunter-hybrid-beast-mastery-survival-bis.gear.json, item level 67.2): 1103.5 DPS against 1114.2 in the rotation's standard set: the standard set stays.", "The search ran before 2026-10-06, when the bench's target got a creature type (an Elemental): Improved Tracking measured 0 in it and is +5% damage against every raid creature type but Mechanical since (+4.9% for this build in a full raid). The search's numbers above are from that run; the page's numbers come from the re-race. Re-run the search (family_search.py --fresh) to value the talent in the search itself.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Focused Fire, Improved Aspect of the Monkey, Survivalist.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever b0f0df3 with this project's patches), not in-game measurements.", "2026-10-06 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Focused Fire -> Endurance Training (survival); Focused Fire -> Endurance Training (survival). Net +0.00% on a third seed."],
+      "open_questions": ["An open-search Beast-Survival build: check it against the community's Beast-Survival builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/hunter/60/50230005001-005005001-5002302300500211-4"]
+    },
+    {
+      "id": "beast-marks-open-leveling",
+      "name": "Beast-Marks — Leveling (open talent search)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "spec": "Hybrid Beast Mastery/Marksmanship",
+      "generated": "2026-10-06",
+      "derived": "leveling",
+      "summary": "The Beast-Marks (a Beast Mastery/Marksmanship hybrid) leveling build the open leveling search found on 2026-10-06: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the bm-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (bm-leveling). +0.9% faster per kill than beast-mastery-leveling, the fastest of our leveling builds in that race.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Endurance Training", 1],
+          ["Focused Fire", 2],
+          ["Pathfinding", 2],
+          ["Improved Revive Pet", 1],
+          ["Unleashed Fury", 5],
+          ["Ferocity", 5],
+          ["Summon Hawk", 1],
+          ["Spirit Bond", 1],
+          ["Bestial Discipline", 2],
+          ["Frenzy", 4]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Improved Stings", 3],
+          ["Efficiency", 5],
+          ["Careful Aim", 5]
+        ],
+        "Survival": [
+          ["Improved Tracking", 4]
+        ]
+      },
+      "order": [
+        {"levels": "10-14", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 5},
+        {"levels": "15-16", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
+        {"levels": "17-18", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 2},
+        {"levels": "19", "tree": "Beast Mastery", "talent": "Endurance Training", "points": 1},
+        {"levels": "20-24", "tree": "Beast Mastery", "talent": "Unleashed Fury", "points": 5},
+        {"levels": "25", "tree": "Beast Mastery", "talent": "Summon Hawk", "points": 1},
+        {"levels": "26-29", "tree": "Beast Mastery", "talent": "Ferocity", "points": 4},
+        {"levels": "30", "tree": "Beast Mastery", "talent": "Bestial Discipline", "points": 1},
+        {"levels": "31-35", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 5},
+        {"levels": "36-40", "tree": "Marksmanship", "talent": "Efficiency", "points": 5},
+        {"levels": "41-45", "tree": "Marksmanship", "talent": "Careful Aim", "points": 5},
+        {"levels": "46-48", "tree": "Marksmanship", "talent": "Improved Stings", "points": 3},
+        {"levels": "49", "tree": "Beast Mastery", "talent": "Ferocity", "points": 1},
+        {"levels": "50-53", "tree": "Survival", "talent": "Improved Tracking", "points": 4},
+        {"levels": "54", "tree": "Beast Mastery", "talent": "Bestial Discipline", "points": 1},
+        {"levels": "55", "tree": "Beast Mastery", "talent": "Spirit Bond", "points": 1},
+        {"levels": "56", "tree": "Beast Mastery", "talent": "Improved Revive Pet", "points": 1},
+        {"levels": "57-60", "tree": "Beast Mastery", "talent": "Frenzy", "points": 4}
+      ],
+      "core": [
+        {"talent": "Summon Hawk", "why": "+2.5 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Efficiency", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Unleashed Fury", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Bestial Discipline", "why": "+1.0 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Ferocity", "why": "+0.8 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Improved Stings", "why": "+0.4 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Careful Aim", "why": "+0.4 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Improved Tracking", "why": "+0.3 s per kill at level 60 without it (removal, 3,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 26.36; beast-mastery-leveling 26.59. The search simulated 41,813 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "open_questions": ["An open-search Beast-Marks leveling build: check it while leveling at launch."],
+      "sources": ["https://talentsforever.com/hunter", "https://talentsforever.com/hunter/60/512021050511024-005355-4-4"]
+    },
+    {
+      "id": "beast-survival-open-leveling",
+      "name": "Beast-Survival — Leveling (open talent search)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "spec": "Hybrid Beast Mastery/Survival",
+      "generated": "2026-10-06",
+      "derived": "leveling",
+      "summary": "The Beast-Survival (a Beast Mastery/Survival hybrid) leveling build the open leveling search found on 2026-10-06: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the melee-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (melee-dps). +6.5% faster per kill than opt-melee-dps-solo-60, the fastest of our leveling builds in that race.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 3],
+          ["Endurance Training", 5],
+          ["Focused Fire", 2],
+          ["Unleashed Fury", 5],
+          ["Ferocity", 4]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Improved Stings", 3]
+        ],
+        "Survival": [
+          ["Improved Tracking", 5],
+          ["Deflection", 3],
+          ["Savage Strikes", 2],
+          ["Clever Traps", 2],
+          ["Surefooted", 3],
+          ["Survival Tactics", 1],
+          ["Predator's Edge", 4],
+          ["Resourcefulness", 2],
+          ["Survivalist's Discipline", 2]
+        ]
+      },
+      "order": [
+        {"levels": "10-14", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 5},
+        {"levels": "15-17", "tree": "Marksmanship", "talent": "Improved Stings", "points": 3},
+        {"levels": "18-22", "tree": "Survival", "talent": "Improved Tracking", "points": 5},
+        {"levels": "23-24", "tree": "Survival", "talent": "Savage Strikes", "points": 2},
+        {"levels": "25-27", "tree": "Survival", "talent": "Deflection", "points": 3},
+        {"levels": "28-30", "tree": "Survival", "talent": "Surefooted", "points": 3},
+        {"levels": "31-32", "tree": "Survival", "talent": "Clever Traps", "points": 2},
+        {"levels": "33-36", "tree": "Survival", "talent": "Predator's Edge", "points": 4},
+        {"levels": "37", "tree": "Survival", "talent": "Survival Tactics", "points": 1},
+        {"levels": "38-39", "tree": "Survival", "talent": "Resourcefulness", "points": 2},
+        {"levels": "40-41", "tree": "Survival", "talent": "Survivalist's Discipline", "points": 2},
+        {"levels": "42-44", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 3},
+        {"levels": "45-46", "tree": "Beast Mastery", "talent": "Endurance Training", "points": 2},
+        {"levels": "47-48", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
+        {"levels": "49-51", "tree": "Beast Mastery", "talent": "Endurance Training", "points": 3},
+        {"levels": "52-56", "tree": "Beast Mastery", "talent": "Unleashed Fury", "points": 5},
+        {"levels": "57-60", "tree": "Beast Mastery", "talent": "Ferocity", "points": 4}
+      ],
+      "core": [
+        {"talent": "Resourcefulness", "why": "+3.0 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Survivalist's Discipline", "why": "+2.4 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Unleashed Fury", "why": "+1.4 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Clever Traps", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Improved Tracking", "why": "+0.7 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Ferocity", "why": "+0.7 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Lethal Attacks", "why": "+0.6 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Improved Stings", "why": "+0.5 s per kill at level 60 without it (removal, 3,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 24.64; opt-melee-dps-solo-60 26.24, leveling-melee 26.31, opt-bm-leveling-leveling-aoe 29.88. The search simulated 44,296 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "open_questions": ["An open-search Beast-Survival leveling build: check it while leveling at launch."],
+      "sources": ["https://talentsforever.com/hunter", "https://talentsforever.com/hunter/60/3520000504-0053-530200230140202-4"]
     }
   ]
 }

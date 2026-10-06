@@ -541,7 +541,7 @@ def run_spec(cls, spec, a, repo):
               + f" | model sources: " + ", ".join(f"{k} {v * 100:.0f}%" for k, v in first["source_shares"].items()) + f" (unmatched {first['unmatched_share'] * 100:.0f}%)")
     out = {"class": cls, "spec": spec, "game": GAME, "sim": {"repo": str(repo), "commit": git_commit(repo), "spec_folder": entry["sim_spec"], "gear": entry["gear"], "apl": apl_label(entry, repo), "apl_sim": entry["apl"],
                                               "race": cfg["race"], "setting": setting(entry), "buffs": setting_text(entry, setting(entry)), "consumables": cfg["consumables"],
-                                              "encounter": (f"a boss-level training dummy (level 63), {a.duration}s, execute phases 20/25/35/45/90%" if setting(entry) == "dummy" else f"single level-63 target, {a.duration}s, execute phases 20/25/35/45/90%"), "iterations": a.iterations, "seed": a.seed, "duration": a.duration},
+                                              "encounter": (f"a boss-level training dummy (level 63, creature type Elemental), {a.duration}s, execute phases 20/25/35/45/90%" if setting(entry) == "dummy" else f"single level-63 target (creature type Elemental), {a.duration}s, execute phases 20/25/35/45/90%"), "iterations": a.iterations, "seed": a.seed, "duration": a.duration},
            "date": datetime.date.today().isoformat(), "results": results, "deltas": deltas}
     if a.write:
         write_report(out)

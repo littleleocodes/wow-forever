@@ -1,10 +1,10 @@
-# Marksmanship — Lone Wolf (simulator winner adopted 2026-09-26) — 11/40/0
+# Marksmanship — Lone Wolf (simulator winner adopted 2026-09-26) — 5/41/5
 
 *[Hunter](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 11/40/0 (Beast Mastery / Marksmanship / Survival) |
+| **Build** | 5/41/5 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70009 (2026-09-25 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
@@ -15,34 +15,35 @@ Allocation adopted on 2026-09-26 from `opt-mm-lonewolf-raid-raid-dps`, the best 
 
 ## Point allocation
 
-### Beast Mastery (11)
+### Beast Mastery (5)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Deadly Aspects** | 5/5 | **NEW** | While Aspect of the Hawk is active, Auto Shot has a 10% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by 30% for 12 sec. |
-| **Endurance Training** | 5/5 | changed | Increases the Health and Armor of your pets by 15%. |
-| **Improved Aspect of the Monkey** | 1/3 | changed | Increases the Dodge bonus of your Aspect of the Monkey by 2%. Additionally, your pet gains 50% of the effect of your Aspect of the Monkey ability. |
 
-### Marksmanship (40)
+### Marksmanship (41)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
-| **Hawk Eye** | 3/3 | moved | Increases the range of your ranged weapons by 6 yards. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
 | **Improved Stings** | 3/3 | **NEW** | Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
-| **Efficiency** | 5/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
+| **Efficiency** | 4/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 12%. |
 | **Lone Wolf** | 1/1 | **NEW** | You deal 20% increased damage with all attacks while you do not have an active pet. |
 | **Rapid Killing** | 2/2 | **NEW** | Reduces the cooldown on your Rapid Fire ability by 2 min. In addition, when you kill a non-trivial enemy or it dies while afflicted by your Serpent Sting, you gain Rapid Killing, increasing the damage of your next Shot ability within 20 sec by 20%. |
 | **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party members within 45 yds by 30. |
 | **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
 | **Barrage** | 3/3 | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 10%. |
-| **Rapid Recuperation** | 2/2 | **NEW** | Hitting a target with your Serpent Sting ability grants you 50% and consuming Rapid Killing grants you 100% of your Mana regeneration while casting for the next 15 sec. |
+| **Rapid Recuperation** | 1/2 | **NEW** | Hitting a target with your Serpent Sting ability grants you 25% and consuming Rapid Killing grants you 50% of your Mana regeneration while casting for the next 15 sec. |
 | **Ranged Weapon Specialization** | 5/5 | unchanged | Increases the damage you deal with ranged weapons by 5%. |
+| **Sniper Shot** | 1/1 | **NEW** | A long-range shot that deals ranged damage plus 160 and increases the range of your next 3 Shots by 10 yards for 10 sec. |
+| **Improved Arcane Shot** | 5/5 | changed | Reduces the cooldown of your Arcane Shot by 1.5 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot. |
 
-### Survival (0)
+### Survival (5)
 
-*No points.*
+| Talent | Pts | vs Classic | Effect at this rank |
+|---|---|---|---|
+| **Improved Tracking** | 5/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 5%. |
 
 ## Core talents (priority order)
 
@@ -54,32 +55,33 @@ Allocation adopted on 2026-09-26 from `opt-mm-lonewolf-raid-raid-dps`, the best 
 6. **Lethal Attacks** — Crit. Raid sim (2026-09-26): removing it costs +5% DPS.
 7. **Ranged Weapon Specialization** — Ranged damage. Raid sim (2026-09-26): removing it costs +4% DPS.
 8. **Improved Stings** — Raid sim (2026-09-26): removing it costs +3% DPS.
+9. **Improved Tracking** — +5% damage against every raid creature type but Mechanical (beta tooltip; the simulator reads +4.9% in a full raid since the bench's target got a creature type, 2026-10-06).
 
 ## Flex points
 
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
-| 3 | Hawk Eye | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
+| 3 | Improved Arcane Shot | Hawk Eye, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 3 | Efficiency | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 2 | Rapid Killing | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 1 | Trueshot Aura | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 2 | Rapid Recuperation | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
-| 5 | Endurance Training | Improved Tracking, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
+| 5 | Improved Tracking | Endurance Training, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 
 ## Rank among our builds and the community simulator's
 
-**4 of 8** for `mm-lonewolf-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 8** for `mm-lonewolf-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) | ours: optimizer | 5/38/8 | 431 | +0.0% | 862 | -4.4% | 99 s |
-| 2 | [`marksmanship-ml-parse`](marksmanship-ml-parse.md) | ours: parse build | 7/44/0 | 431 | -0.1% | 901 | +0.0% | 100 s |
-| 3 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: hand draft | 11/40/0 | 428 | -0.6% | 859 | -4.7% | 97 s |
-| 4 | **[`mm-lone-wolf-raid`](mm-lone-wolf-raid.md)** | ours: hand draft | 11/40/0 | 427 | -0.9% | 805 | -10.7% | 89 s |
-| 5 | *Beast Mastery 35/16/0* | community simulator | - | 370 | -14.2% | 629 | -30.2% | 67 s |
-| 6 | *Marksmanship* | community simulator | - | 350 | -18.7% | 723 | -19.8% | 99 s |
-| 7 | *Marksmanship 0/39/12* | community simulator | - | 326 | -24.3% | 673 | -25.4% | 97 s |
-| 8 | *Survival 0/15/36* | community simulator | - | 300 | -30.3% | 559 | -38.0% | 90 s |
+| 1 | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) | ours: optimizer | 5/38/8 | 463 | +0.0% | 913 | -4.5% | 92 s |
+| 2 | **[`mm-lone-wolf-raid`](mm-lone-wolf-raid.md)** | ours: hand draft | 5/41/5 | 457 | -1.2% | 957 | +0.0% | 97 s |
+| 3 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: hand draft | 11/40/0 | 444 | -4.0% | 867 | -9.4% | 89 s |
+| 4 | [`marksmanship-ml-parse`](marksmanship-ml-parse.md) | ours: parse build | 7/44/0 | 441 | -4.7% | 911 | -4.7% | 92 s |
+| 5 | *Beast Mastery 35/16/0* | community simulator | - | 381 | -17.7% | 638 | -33.3% | 52 s |
+| 6 | *Marksmanship* | community simulator | - | 359 | -22.5% | 740 | -22.6% | 92 s |
+| 7 | *Marksmanship 0/39/12* | community simulator | - | 359 | -22.5% | 716 | -25.1% | 90 s |
+| 8 | *Survival 0/15/36* | community simulator | - | 323 | -30.2% | 593 | -38.0% | 75 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -110,8 +112,8 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
 | 2 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
-| 3 | cast Arcane Shot | 7.8 |
-| 4 | if time to the next auto attack > 0.5s and mana % ≥ 10%: cast Aimed Shot | 4.0 |
+| 3 | cast Arcane Shot | 9.2 |
+| 4 | if time to the next auto attack > 0.5s and mana % ≥ 10%: cast Aimed Shot | 3.4 |
 | 5 | if time left on Serpent Sting < 2s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent).
@@ -120,10 +122,10 @@ Damage by ability:
 
 | Ability | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) |
 |---|---|
-| Auto Shot | 52% |
-| Arcane Shot | 22% |
-| Serpent Sting | 16% |
-| Aimed Shot | 10% |
+| Auto Shot | 53% |
+| Arcane Shot | 25% |
+| Serpent Sting | 14% |
+| Aimed Shot | 8% |
 
 ## Notes
 
@@ -131,7 +133,8 @@ Damage by ability:
 - No pet means no Focused Fire, no pet damage, but also no pet management, no Growl pulls and no dead-pet downtime.
 - 2026-09-27 scenario audit: Improved Revive Pet 2 -> Efficiency 2. Improved Revive Pet speeds up reviving a pet this build never has out (Lone Wolf). Efficiency's cheaper shots and stings are mana over a long fight (scorer +0.4 points; the simulator's 120 s fight shows no mana shortage).
 - Summon Hawk (new-builds survey, 2026-09-28): this draft does not take Summon Hawk, and the Marksmanship rotation never casts it. In the simulator one point in it, under a rotation that casts it on cooldown, is worth +47% to bm-mm-raid on the training dummy: see mm-hawk-raid, whose lead rests on the simulator's guess at the hawks' follow-up attacks.
-- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Tracking -> Endurance Training (survival); Improved Tracking -> Endurance Training (survival); Improved Tracking -> Endurance Training (survival); Improved Tracking -> Endurance Training (survival); Improved Tracking -> Endurance Training (survival); Sniper Shot -> Improved Aspect of the Monkey (survival). Net +0.00% on a third seed.
+- 2026-09-29 filler audit, undone 2026-10-06: it had moved Improved Tracking 5 -> Endurance Training because the simulator measured Improved Tracking at 0, but that was the bench's blind spot: its target had no creature type, and Improved Tracking is +5% damage against every raid creature type but Mechanical (the bench's target is an Elemental since 2026-10-06; it reads +4.9% in a full raid now). The 5 points are back in Improved Tracking. Its other move, Sniper Shot 1 -> Improved Aspect of the Monkey (the rotation never cast Sniper Shot), stands.
+- 2026-10-06 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Rapid Recuperation -> Sniper Shot (+6.2% DPS); Hawk Eye -> Improved Arcane Shot (+0.5% DPS); Efficiency -> Improved Arcane Shot (+1.1% DPS); Hawk Eye -> Improved Arcane Shot (+1.3% DPS); Hawk Eye -> Improved Arcane Shot (+1.3% DPS); Improved Aspect of the Monkey -> Improved Arcane Shot (+1.0% DPS). Net +11.88% on a third seed.
 
 ## Open questions (verify in the live game)
 

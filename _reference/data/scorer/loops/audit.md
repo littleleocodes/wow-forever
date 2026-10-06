@@ -37,7 +37,7 @@
 | classic | `resto-swiftmend-healer` | resto-heal / raid-heal | **Nature's Focus** | Restoration | 5 | +0.36% | manual | throughput | Pushback resistance on Healing Touch/Regrowth when hit. |
 | forever-draft | `feral-cat-dps` | feral-cat-dps / raid-dps | **Feral Charge** | Feral Combat | 1 | +0.00% | manual | OPEN |  |
 
-## Hunter - 32 flagged of 57 taken talents, 5 without a documented reason
+## Hunter - 30 flagged of 55 taken talents, 5 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
@@ -68,11 +68,9 @@
 | forever-draft | `bm-solo-farm` | bm-leveling / solo-60 | **Frenzy** | Beast Mastery | 5 | +0.23% | manual | enabler | 'One of the most powerful talents', increasing the 'pet's damage and threat immensely'. |
 | forever-draft | `bm-solo-farm` | bm-leveling / solo-60 | **Bestial Wrath** | Beast Mastery | 1 | +0.36% | manual | throughput | 'An incredible damage cooldown... what makes this spec viable at low gear levels at Level 60.' |
 | forever-draft | `leveling-beast-mastery` | bm-leveling / leveling-st | **Hawk Eye** | Marksmanship | 3 | +0.00% | manual | control | Range: one more shot before the mob arrives and a wider kiting / dead-zone margin. |
-| forever-draft | `mm-lone-wolf-raid` | mm-lonewolf-raid / raid-dps | **Endurance Training** | Beast Mastery | 5 | +0.00% | manual | filler (from bm-leveling) | Icy Veins prefers Thick Hide (pet armor) over Endurance Training; both are tier-1 paths. The model values pet health at ~0.2%/rank of leveli |
-| forever-draft | `mm-lone-wolf-raid` | mm-lonewolf-raid / raid-dps | **Improved Aspect of the Monkey** | Beast Mastery | 1 | +0.00% | manual | OPEN |  |
-| forever-draft | `mm-lone-wolf-raid` | mm-lonewolf-raid / raid-dps | **Hawk Eye** | Marksmanship | 3 | +0.00% | manual | control (from bm-leveling) | Range: one more shot before the mob arrives and a wider kiting / dead-zone margin. |
 | forever-draft | `mm-lone-wolf-raid` | mm-lonewolf-raid / raid-dps | **Rapid Killing** | Marksmanship | 2 | +0.00% | manual | OPEN |  |
-| forever-draft | `mm-lone-wolf-raid` | mm-lonewolf-raid / raid-dps | **Rapid Recuperation** | Marksmanship | 2 | +0.00% | manual | OPEN |  |
+| forever-draft | `mm-lone-wolf-raid` | mm-lonewolf-raid / raid-dps | **Sniper Shot** | Marksmanship | 1 | +0.00% | manual | OPEN |  |
+| forever-draft | `mm-lone-wolf-raid` | mm-lonewolf-raid / raid-dps | **Rapid Recuperation** | Marksmanship | 1 | +0.00% | manual | OPEN |  |
 
 ## Mage - 51 flagged of 105 taken talents, 5 without a documented reason
 

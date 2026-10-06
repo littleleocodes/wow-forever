@@ -59,7 +59,7 @@ The Frostfire build the machine-learning talent search found in a full raid (eve
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-10-02, 13 changes to the base rotation; third-seed check: ml: Hybrid Fire/Frost 557 -> 612 DPS (+10.0%), frostfire-raid 552 -> 616 DPS (+11.7%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 5 passes, the last 2026-10-05, 16 changes to the base rotation; third-seed check: open winner 527 -> 550 DPS (+4.4%), frostfire-ml-raid 482 -> 513 DPS (+6.4%), frostfire-raid 514 -> 514 DPS (+0.0%)):
   1. insert before the filler: cast Fireball (+0.7%, pass 1)
   2. threshold 20% -> 10%: if mana % < 20% and time left in the fight > 25s: cast Evocation (+0.5%, pass 1)
   3. only with 3s or more of the fight left: cast Fireball (+0.3%, pass 1)
@@ -73,7 +73,10 @@ The Frostfire build the machine-learning talent search found in a full raid (eve
   11. insert in the middle: if stacks of Hot Streak = 3: cast Pyroblast (+0.6%, pass 4)
   12. only with 20s or more of the fight left: if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch (+0.3%, pass 4)
   13. insert in the middle: cast Combustion (+0.3%, pass 4)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 5 passes, the last 2026-10-02, 10 changes to the base rotation; third-seed check: ml: Hybrid Fire/Frost 670 -> 727 DPS (+8.5%), frostfire-raid 664 -> 723 DPS (+8.9%)):
+  14. only above 25% mana: if mana % ≥ 10% and time left in the fight ≥ 6s: cast Frostfire Bolt (+0.7%, pass 5)
+  15. move to the top: cast Fire Blast (+3.8%, pass 5)
+  16. insert at the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+0.5%, pass 5)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-05, 16 changes to the base rotation; third-seed check: open winner 679 -> 682 DPS (+0.5%), frostfire-ml-raid 630 -> 635 DPS (+0.8%), frostfire-raid 625 -> 648 DPS (+3.8%)):
   1. insert at the top: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   2. threshold 110 -> 82.5: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   3. insert at the top: cast Berserking (+0.3%, pass 3)
@@ -84,23 +87,30 @@ The Frostfire build the machine-learning talent search found in a full raid (eve
   8. threshold 165 -> 330: if mana ≥ (time left in the fight × 165): cast Fire Blast (+0.5%, pass 5)
   9. threshold 3 -> 2: if stacks of Hot Streak = 3: cast Pyroblast (+0.3%, pass 5)
   10. insert in the middle: if stacks of Hot Streak = 3: cast Pyroblast (+0.6%, pass 5)
+  11. drop the condition: if mana ≥ (time left in the fight × 330): cast Fire Blast (+4.9%, pass 6)
+  12. threshold 25s -> 50s: if mana % < 20% and time left in the fight > 25s: cast Evocation (+0.6%, pass 6)
+  13. drop: if stacks of Heating Up = 2: cast Pyroblast (+0.3%, pass 6)
+  14. drop: cast Berserking (+0.3%, pass 6)
+  15. move down below 'if mana % ≥ 10%: cast Frostfire Bolt': if mana % < 20% and time left in the fight > 50s: cast Evocation (+0.2%, pass 6)
+  16. move to the top: if stacks of Heating Up = 3: cast Pyroblast (+0.2%, pass 6)
 
 | # | Priority (the first line whose condition holds is cast) | [`frostfire-ml-raid`](frostfire-ml-raid.md) casts/min |
 |---|---|---|
-| 1 | cast Berserking | 0.3 |
-| 2 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 4.3 |
-| 3 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
-| 4 | use every other cooldown when ready | as ready |
-| 5 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 6 | if stacks of Heating Up = 2: cast Pyroblast | 1.7 |
-| 7 | if stacks of Heating Up = 3: cast Pyroblast | 1.7 |
-| 8 | cast Combustion | 0.3 |
-| 9 | cast Mana Citrine | as ready |
-| 10 | if mana % ≥ 10% and time left in the fight ≥ 6s: cast Frostfire Bolt | 15.1 |
-| 11 | cast Fire Blast | 1.0 |
-| 12 | if time left in the fight ≥ 3s: cast Fireball | 3.0 |
-| 13 | cast Robe of the Archmage | as ready |
-| 14 | cast Scorch | 0.3 |
+| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 4.3 |
+| 2 | cast Fire Blast | 1.0 |
+| 3 | cast Berserking | 0.3 |
+| 4 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 4.3 |
+| 5 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
+| 6 | use every other cooldown when ready | as ready |
+| 7 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
+| 8 | if stacks of Heating Up = 2: cast Pyroblast | 1.7 |
+| 9 | if stacks of Heating Up = 3: cast Pyroblast | 1.7 |
+| 10 | cast Combustion | 0.3 |
+| 11 | cast Mana Citrine | as ready |
+| 12 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 15.1 |
+| 13 | if time left in the fight ≥ 3s: cast Fireball | 3.0 |
+| 14 | cast Robe of the Archmage | as ready |
+| 15 | cast Scorch | 0.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Arcane Missiles (its condition never held in these fights).
 

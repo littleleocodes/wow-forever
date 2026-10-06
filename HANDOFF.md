@@ -9,7 +9,7 @@ index), then this page.
 
 1. **Only if the task needs the raid simulator** (`raidsim/run.py`, `apl_opt.py`, `talent_opt.py`, `calibrate.py`, `rebuild.py`
    with the raid step): `python _reference/data/cloud_setup.py` (add `--classic` for the Classic-era checks). It pip-installs
-   `requirements.txt` (numpy), builds the ElliotWood/Forever simulator at the pinned commit **40be98e** with our patches and the
+   `requirements.txt` (numpy), builds the ElliotWood/Forever simulator at the pinned commit **b0f0df3** (`raidsim/setup.py` GAMES) with our patches and the
    `foreverbench` tool under `~/.wow-forever-tools`, and runs the checks. It takes several minutes: run it in the background (or
    with the 10-minute timeout) and read its output. The container is thrown away after the session, so the tools are rebuilt
    each session that needs them.
@@ -189,14 +189,30 @@ Each class folder now opens with player pages and keeps the research below:
   `--smoke` test (see CLAUDE.md "Deep optimisation of one class" for the procedure at the end of the beta and the time it takes: about
   five days of computing for the eight classes left, less in parallel cloud sessions). Not started: the real runs (the user decides when).
 
-- **Open searches paused 2026-10-06 ~11:00 (user request, PC restart).** Hunter complete (raid: the 16/11/24 Summon Hawk + Lone Wolf
-  melee build +7.5%; leveling: melee with a pet +6.5%; both pass `raidsim/search_check.py`). Mage: Frost and Fire done (confirm our
-  builds); Arcane next, then Frostfire and the mage's leveling rotations. Resume with `bash _reference/data/run_open_searches.sh` (no
-  `--fresh`): the default order is hunter, mage, paladin, shaman, warrior, rogue, druid, warlock, priest (the user asked for the shaman
-  right after the paladin). Each class's rotations resume from its record; only the rotation that was running starts over. After the whole
-  run: write the open winners as builds (a writer step still to make: `-open-raid` / `-open-leveling` derived builds with `replaces` under
-  the 2% rule), re-race every entry (`run.py --all --write`, `--env environments --write`: several entries' gear changed on 2026-10-06),
-  `ml_builds.py --tidy-winners --rank`, `rebuild.py --steps regen`, `linkcheck.py`, then the ranking artifact.
+- **Open searches resumed 2026-10-06 ~17:30** (`bash _reference/data/run_open_searches.sh`, default order hunter, mage, paladin, shaman,
+  warrior, rogue, druid, warlock, priest; logs `_reference/data/deep-runs/open-*.log`). Hunter complete (raid: the 16/11/24 Summon Hawk +
+  Lone Wolf melee build +7.5%; leveling: melee with a pet +6.5%; both pass `raidsim/search_check.py`). Mage: Frost and Fire done (confirm
+  our builds), Arcane running at the resume, then Frostfire and the leveling rotations. The paladin (raid and leveling) and warrior (raid)
+  records of 2026-10-05 morning predate the safeguards of that afternoon (family polish, ability probe, finalists race), so they were moved
+  to `.prev.json` (a warm restart: their winners seed the new search). Pause: stop it; resume: the same command, no `--fresh`.
+- **Open winners as builds (2026-10-06):** `_reference/data/open_builds.py [classes] --write` (see CLAUDE.md "Open-search winners as
+  builds"). Run it for each class once its searches are done (a class still running is skipped unless `--partial`), then validate, re-race
+  the entries that got a build (`raidsim/run.py <class> --spec <entry> --write` and `--env environments --write`) and `rebuild.py <class>
+  --steps regen`. Hunter done: `beast-survival-open-raid` (16/11/24, a new Beast-Survival hybrid, `spec_modes.HYBRID_NAMES`),
+  `beast-survival-open-leveling` (19/8/24) and `beast-marks-open-leveling` (29/18/4); the other rotations confirm existing builds.
+- **Bench target fix (2026-10-06):** the bench's target had no creature type, so Improved Tracking (+5% against every raid creature type
+  but Mechanical) read 0 in every hunter run; the target is an Elemental now (CLAUDE.md "The bench's target is an Elemental"). Done the same
+  day: the two 2026-09-29 filler audits that had moved the talent out of `melee-survival-raid` and `mm-lone-wolf-raid` undone, the three
+  builds re-audited, the hunter's four entries re-raced, pages regenerated. **Queued for the hunter** (a waiter started 2026-10-06
+  ~18:40 runs it as soon as the open-search runner exits: `_reference/data/deep-runs/hunter_after_queue.sh <runner bash PIDs>`,
+  git-ignored, log `deep-runs/hunter-after-queue.log`; after a PC restart run its commands by hand): the searches made before the fix
+  again, so the talent is valued inside them: `python -u _reference/data/raidsim/family_search.py hunter --fresh` (about 11 h; then
+  `open_builds.py hunter --write`, re-race, regen), `ml_pipeline.py hunter --fresh` (the BiS/pre-BiS rankings; then `ml_builds.py hunter
+  --builds`, `--tidy-winners`, `--rank`). The hunter's deep record (`raidsim/deep/hunter.json`, 2026-10-04) is stale too: redo it with
+  the deep runs at the end of the beta. The fight lab (leveling) models the talent itself: nothing to redo there.
+- **After the whole open-search run:** `open_builds.py --write` for every class, re-race every entry (`run.py --all --write`, `--env
+  environments --write`: several entries' gear changed on 2026-10-06), `ml_builds.py --tidy-winners --rank`, `rebuild.py --steps regen`,
+  `linkcheck.py`, then the ranking artifact.
 - **Gear sets checked for unique-equipped duplicates (2026-10-06):** four sets held the same unique ring twice (neither picker checked
   uniqueness; both do now). Repaired: hunter melee and Survival BiS (Don Julio's Band), rogue Combat BiS (Quick Strike Ring), warrior Fury
   pre-BiS (Ferocious Watcher's Signet); the Enhancement sets' caster-ring stand-in replaced by Don Julio's Band; the hunter ranged (+2.5%)
