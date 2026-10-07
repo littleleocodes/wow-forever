@@ -8,8 +8,8 @@ The fastest leveling build found with no tree rule in each leveling rotation (fi
 |---|---|---|---|---|---|
 | [hunter](../hunter/research/leveling/open-search.md) | melee-dps | [22/5/24](https://talentsforever.com/hunter/60/35200005041002-005-530200230140202-4) | Hybrid Beast Mastery/Survival | 24.02 | +9.2% |
 | [mage](../mage/research/leveling/open-search.md) | frost-leveling | [18/2/31](https://talentsforever.com/mage/60/2521050000003-02-1535003331000301201-4) | Frost | 25.75 | +2.0% |
-| [hunter](../hunter/research/leveling/open-search.md) | bm-leveling | [29/18/4](https://talentsforever.com/hunter/60/512021050511024-005355-4-4) | Hybrid Beast Mastery/Marksmanship | 26.36 | +0.9% |
-| [hunter](../hunter/research/leveling/open-search.md) | mm-raid | [28/18/5](https://talentsforever.com/hunter/60/522020050511023-005355-5-4) | Hybrid Beast Mastery/Marksmanship | 27.33 | +0.5% |
+| [hunter](../hunter/research/leveling/open-search.md) | bm-leveling | [29/18/4](https://talentsforever.com/hunter/60/512021050511024-005355-4-4) | Hybrid Beast Mastery/Marksmanship | 26.09 | +1.9% |
+| [hunter](../hunter/research/leveling/open-search.md) | mm-raid | [33/13/5](https://talentsforever.com/hunter/60/522322050511023-005053-5-4) | Beast Mastery | 26.54 | +3.5% |
 | [paladin](../paladin/research/leveling/open-search.md) | holy-leveling | [8/16/27](https://talentsforever.com/paladin/60/50003-5231110021-332052310013301-4) | Hybrid Protection/Retribution | 27.48 | +29.0% |
 | [paladin](../paladin/research/leveling/open-search.md) | ret-dps | [11/8/32](https://talentsforever.com/paladin/60/50103101-503-1522513100133032-4) | Retribution | 27.83 | +0.8% |
 | [mage](../mage/research/leveling/open-search.md) | arcane-leveling | [28/1/22](https://talentsforever.com/mage/60/23210501310011053-01-20350030310003002-4) | Hybrid Arcane/Frost | 30.73 | +6.3% |

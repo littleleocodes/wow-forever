@@ -1299,7 +1299,7 @@
       "spec": "Retribution",
       "generated": "2026-10-07",
       "derived": "leveling",
-      "summary": "The Retribution leveling build the open leveling search found on 2026-10-07: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the ret-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (ret-dps). +0.6% faster per kill than leveling-retribution, the fastest of our leveling builds in that race.",
+      "summary": "The Retribution leveling build the open leveling search found on 2026-10-07: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the ret-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (ret-dps). +0.8% faster per kill than leveling-retribution, the fastest of our leveling builds in that race.",
       "allocation": {
         "Holy": [
           ["Divine Strength", 5],
@@ -1343,13 +1343,12 @@
         {"levels": "33-34", "tree": "Retribution", "talent": "Vengeance", "points": 2},
         {"levels": "35-36", "tree": "Retribution", "talent": "Instrument of Law", "points": 2},
         {"levels": "37-39", "tree": "Retribution", "talent": "Champion of the Light", "points": 3},
-        {"levels": "40-44", "tree": "Holy", "talent": "Divine Strength", "points": 5},
-        {"levels": "45-47", "tree": "Holy", "talent": "Improved Seals", "points": 3},
-        {"levels": "48", "tree": "Protection", "talent": "Toughness", "points": 1},
-        {"levels": "49", "tree": "Retribution", "talent": "Vengeance", "points": 1},
-        {"levels": "50-53", "tree": "Protection", "talent": "Toughness", "points": 4},
-        {"levels": "54-56", "tree": "Protection", "talent": "Precision", "points": 3},
-        {"levels": "57", "tree": "Retribution", "talent": "Deflection", "points": 1},
+        {"levels": "40", "tree": "Retribution", "talent": "Vengeance", "points": 1},
+        {"levels": "41", "tree": "Retribution", "talent": "Deflection", "points": 1},
+        {"levels": "42-46", "tree": "Holy", "talent": "Divine Strength", "points": 5},
+        {"levels": "47-49", "tree": "Holy", "talent": "Improved Seals", "points": 3},
+        {"levels": "50-54", "tree": "Protection", "talent": "Toughness", "points": 5},
+        {"levels": "55-57", "tree": "Protection", "talent": "Precision", "points": 3},
         {"levels": "58", "tree": "Holy", "talent": "Unyielding Faith", "points": 1},
         {"levels": "59", "tree": "Holy", "talent": "Healing Light", "points": 1},
         {"levels": "60", "tree": "Holy", "talent": "Reverence", "points": 1}
@@ -1365,7 +1364,7 @@
         {"talent": "Improved Judgement", "why": "+0.8 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["+0.6% faster than the hand draft leveling-retribution, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 27.88; leveling-retribution 28.04, opt-ret-dps-solo-60 28.32, opt-ret-dps-leveling-st 28.38, opt-ret-dps-leveling-aoe 29.21. The search simulated 72,959 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["+0.8% faster than the hand draft leveling-retribution, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 27.83; leveling-retribution 28.04, opt-ret-dps-solo-60 28.32, opt-ret-dps-leveling-st 28.38, opt-ret-dps-leveling-aoe 29.21. The search simulated 72,959 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Retribution leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/paladin", "https://talentsforever.com/paladin/60/50103101-503-1522513100133032-4"],
       "replaces": "leveling-retribution"

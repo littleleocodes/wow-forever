@@ -6,8 +6,8 @@ Every legal 51-point build, no tree rule, searched in each leveling rotation of 
 
 | Rotation | Trees that level with it | Open winner | Family | Seconds per kill (20-60) | vs our fastest there |
 |---|---|---|---|---|---|
-| bm-leveling | Beast Mastery | [29/18/4](https://talentsforever.com/hunter/60/512021050511024-005355-4-4) | Hybrid Beast Mastery/Marksmanship | 26.36 | +0.9% faster than beast-mastery-leveling |
-| mm-raid | Marksmanship | [28/18/5](https://talentsforever.com/hunter/60/522020050511023-005355-5-4) | Hybrid Beast Mastery/Marksmanship | 27.33 | +0.5% faster than leveling-beast-mastery |
+| bm-leveling | Beast Mastery | [29/18/4](https://talentsforever.com/hunter/60/512021050511024-005355-4-4) | Hybrid Beast Mastery/Marksmanship | 26.09 | +1.9% faster than beast-mastery-leveling |
+| mm-raid | Marksmanship | [33/13/5](https://talentsforever.com/hunter/60/522322050511023-005053-5-4) | Beast Mastery | 26.54 | +3.5% faster than leveling-beast-mastery |
 | melee-dps | Survival | [22/5/24](https://talentsforever.com/hunter/60/35200005041002-005-530200230140202-4) | Hybrid Beast Mastery/Survival | 24.02 | +9.2% faster than opt-melee-dps-solo-60 |
 
 ## bm-leveling
@@ -33,41 +33,42 @@ Every legal 51-point build, no tree rule, searched in each leveling rotation of 
 | Pathfinding | 2 | +0.00 | +0.00 |
 | Improved Revive Pet | 1 | +0.00 | +0.00 |
 
-Race at levels 20-60 (seconds per kill): open winner 26.36, beast-mastery-leveling 26.59.
+Race at levels 20-60 (seconds per kill): open winner 26.09, finalist 29/18/4 (stats model order) 26.36, beast-mastery-leveling 26.59, finalist 29/18/4 (own tree last order) 26.87.
 
 **Synergy certificate** (2026-10-07, fightlab/fl_synergy.py): 36 relevant talents, 24 the winner lacks; 561 pairs measured around 29/18/4 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Rapid Recuperation + Bestial Discipline +2.7% (build -0.8%), Lone Wolf + Bestial Discipline +2.1% (build -33.9%), Lone Wolf + Unleashed Fury +1.8% (build -34.3%), Lone Wolf + Resourcefulness +1.7% (build -30.6%), Lone Wolf + Surefooted +1.6% (build -29.7%), Intimidation + Lone Wolf +1.4% (build -32.5%). No pair build within 1% of the winner. The certificate confirms the winner.
 
-Under the other leveling rotations (seconds per kill, 20-60): mm-raid 26.71, melee-dps 27.33; its own rotation plays it best (26.36 s).
+Under the other leveling rotations (seconds per kill, 20-60): mm-raid 26.43, melee-dps 26.52; its own rotation plays it best (26.09 s).
 
 Build (2026-10-07, open_builds.py): `beast-marks-open-leveling`.
 
 ## mm-raid
 
-**Open winner 28/18/5** (Hybrid Beast Mastery/Marksmanship): talent values at level 60 (seconds per kill lost without the talent; the build: 29.46 s):
+**Open winner 33/13/5** (Beast Mastery): talent values at level 60 (seconds per kill lost without the talent; the build: 30.01 s):
 
 | Talent | Ranks | Seconds lost without it | Per point |
 |---|---|---|---|
-| Summon Hawk | 1 | +1.90 | +1.90 |
-| Efficiency | 5 | +1.27 | +0.25 |
-| Unleashed Fury | 5 | +1.09 | +0.22 |
-| Bestial Discipline | 2 | +0.98 | +0.49 |
-| Ferocity | 5 | +0.77 | +0.15 |
-| Improved Tracking | 5 | +0.44 | +0.09 |
-| Improved Stings | 3 | +0.42 | +0.14 |
-| Careful Aim | 5 | +0.34 | +0.07 |
-| Lethal Attacks | 5 | +0.31 | +0.06 |
-| Focused Fire | 2 | +0.29 | +0.15 |
-| Deadly Aspects | 5 | +0.21 | +0.04 |
-| Spirit Bond | 1 | +0.15 | +0.15 |
-| Frenzy | 3 | +0.15 | +0.05 |
+| Summon Hawk | 1 | +2.23 | +2.23 |
+| Efficiency | 5 | +1.30 | +0.26 |
+| Unleashed Fury | 5 | +1.18 | +0.24 |
+| Bestial Discipline | 2 | +1.06 | +0.53 |
+| Ferocity | 5 | +0.83 | +0.17 |
+| Improved Tracking | 5 | +0.45 | +0.09 |
+| Lethal Attacks | 5 | +0.38 | +0.08 |
+| Spirit Bond | 1 | +0.29 | +0.29 |
+| Focused Fire | 2 | +0.27 | +0.14 |
+| Deadly Aspects | 5 | +0.25 | +0.05 |
+| Careful Aim | 3 | +0.23 | +0.08 |
+| Frenzy | 3 | +0.16 | +0.05 |
 | Endurance Training | 2 | +0.00 | +0.00 |
+| Improved Aspect of the Monkey | 3 | +0.00 | +0.00 |
 | Pathfinding | 2 | +0.00 | +0.00 |
+| Improved Revive Pet | 2 | +0.00 | +0.00 |
 
-Race at levels 20-60 (seconds per kill): open winner 27.33, leveling-beast-mastery 27.46, opt-bm-leveling-leveling-st 27.91, opt-bm-leveling-solo-60 27.93, opt-mm-raid-leveling-st 29.19.
+Race at levels 20-60 (seconds per kill): open winner 26.54, finalist 33/13/5 (stats model order, before the order polish) 26.63, finalist 33/13/5 (own tree first order) 26.95, finalist 33/13/5 (own tree last order) 27.17, finalist 28/18/5 (before the 20-60 polish) 27.33, leveling-beast-mastery 27.46, opt-bm-leveling-leveling-st 27.91, opt-bm-leveling-solo-60 27.93, opt-mm-raid-leveling-st 29.19.
 
-**Synergy certificate** (2026-10-07, fightlab/fl_synergy.py): 36 relevant talents, 24 the winner lacks; 561 pairs measured around 28/18/5 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Rapid Recuperation + Bestial Discipline +3.2% (build -0.4%), Lone Wolf + Unleashed Fury +2.0% (build -32.8%), Lone Wolf + Ferocity +2.0% (build -31.6%), Lone Wolf + Resourcefulness +1.9% (build -28.9%), Lone Wolf + Deadly Aspects +1.7% (build -30.9%), Intimidation + Lone Wolf +1.6% (build -31.0%). No pair build within 1% of the winner. The certificate confirms the winner.
+**Synergy certificate** (2026-10-07, fightlab/fl_synergy.py): 36 relevant talents, 25 the winner lacks; 569 pairs measured around 33/13/5 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Lone Wolf + Unleashed Fury +2.8% (build -35.8%), Lone Wolf + Surefooted +2.8% (build -30.6%), Rapid Recuperation + Bestial Discipline +2.7% (build -1.0%), Lone Wolf + Bestial Discipline +2.6% (build -35.5%), Lone Wolf + Deadly Aspects +2.4% (build -33.8%), Lone Wolf + Resourcefulness +2.4% (build -31.9%). Leads polished and raced at 20-60: Improved Stings + Mortal Shots -> 26/21/4 -2.8%, Improved Stings + Barrage -> 26/21/4 -2.8%, Rapid Killing + Surefooted -> 26/14/11 -3.0%. The certificate confirms the winner.
 
-Under the other leveling rotations (seconds per kill, 20-60): bm-leveling 26.71, melee-dps 27.31; **bm-leveling plays it faster (26.71 s against 27.33 s): the page shows it with that rotation.**
+Under the other leveling rotations (seconds per kill, 20-60): bm-leveling 26.2, melee-dps 26.82; **bm-leveling plays it faster (26.2 s against 26.54 s): the page shows it with that rotation.**
 
 Build (2026-10-07, open_builds.py): confirms leveling-beast-mastery (+0.48% faster per kill, levels 20-60, raced together).
 
@@ -95,7 +96,7 @@ Build (2026-10-07, open_builds.py): confirms leveling-beast-mastery (+0.48% fast
 | Deflection | 3 | +0.05 | +0.02 |
 | Summon Hawk | 1 | +0.00 | +0.00 |
 
-Race at levels 20-60 (seconds per kill): open winner 24.02, finalist 19/8/24 24.47, finalist 23/4/24 24.50, finalist 23/3/25 24.62, opt-melee-dps-solo-60 26.24, leveling-melee 26.31, opt-bm-leveling-leveling-aoe 29.88.
+Race at levels 20-60 (seconds per kill): open winner 24.02, finalist 22/5/24 (own tree first order) 24.02, finalist 19/8/24 24.47, finalist 23/4/24 24.50, finalist 23/3/25 24.62, finalist 22/5/24 (own tree last order) 25.89, opt-melee-dps-solo-60 26.24, leveling-melee 26.31, opt-bm-leveling-leveling-aoe 29.88.
 
 **Synergy certificate** (2026-10-07, fightlab/fl_synergy.py): 36 relevant talents, 22 the winner lacks; 552 pairs measured around 19/8/24 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Lone Wolf + Unleashed Fury +5.1% (build -24.1%), Lone Wolf + Resourcefulness +5.1% (build -28.7%), Lone Wolf + Ferocity +2.4% (build -24.1%), Lone Wolf + Survivalist's Discipline +1.9% (build -29.8%), Careful Aim + Lone Wolf +1.6% (build -21.3%), Careful Aim + Survivalist's Discipline +1.5% (build -4.9%). Leads polished and raced at 20-60: Summon Hawk + Bestial Discipline -> 22/5/24 +1.7%, Bestial Discipline + Expose Prey -> 23/3/25 -0.5%, Bestial Discipline + Improved Concussive Shot -> 23/4/24 -0.2%. **The search had missed it: searched again from the lead 22/5/24, winner now 22/5/24 at 24.02 s per kill.**
 

@@ -4,4 +4,5 @@
 
 | Class | Spec model | Best build | Capacity | Effective HPS | Overheal | Healing split | Top talents (capacity lost when removed) |
 |---|---|---|---|---|---|---|---|
+| paladin | `holy-heal` | `holy-raid-healer` (33/0/18) | 0.668 | 380 | 7% | Holy Light 52%, Flash of Light 44%, Lay on Hands 3%, Holy Shock 0% | Illumination +17%, Reverence +13%, Healing Light +7%, Holy Power +6%, Infusion of Light +4% |
 

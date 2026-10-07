@@ -39,16 +39,16 @@ One point per level from 10, in this order:
 | 25 | Summon Hawk (Beast Mastery) | 1 |
 | 26-29 | Ferocity (Beast Mastery) | 4 |
 | 30 | Bestial Discipline (Beast Mastery) | 1 |
-| 31-35 | Lethal Attacks (Marksmanship) | 5 |
-| 36-40 | Efficiency (Marksmanship) | 5 |
-| 41-45 | Careful Aim (Marksmanship) | 5 |
-| 46-48 | Improved Stings (Marksmanship) | 3 |
-| 49 | Ferocity (Beast Mastery) | 1 |
-| 50-53 | Improved Tracking (Survival) | 4 |
-| 54 | Bestial Discipline (Beast Mastery) | 1 |
-| 55 | Spirit Bond (Beast Mastery) | 1 |
-| 56 | Improved Revive Pet (Beast Mastery) | 1 |
-| 57-60 | Frenzy (Beast Mastery) | 4 |
+| 31 | Ferocity (Beast Mastery) | 1 |
+| 32 | Bestial Discipline (Beast Mastery) | 1 |
+| 33 | Spirit Bond (Beast Mastery) | 1 |
+| 34 | Improved Revive Pet (Beast Mastery) | 1 |
+| 35-38 | Frenzy (Beast Mastery) | 4 |
+| 39-43 | Lethal Attacks (Marksmanship) | 5 |
+| 44-48 | Efficiency (Marksmanship) | 5 |
+| 49-53 | Careful Aim (Marksmanship) | 5 |
+| 54-56 | Improved Stings (Marksmanship) | 3 |
+| 57-60 | Improved Tracking (Survival) | 4 |
 
 ## The numbers
 
@@ -57,7 +57,7 @@ One point per level from 10, in this order:
 | 20 | 18 |
 | 30 | 23 |
 | 40 | 27 |
-| 50 | 28 |
+| 50 | 27 |
 | 60 | 29 |
 
 ---

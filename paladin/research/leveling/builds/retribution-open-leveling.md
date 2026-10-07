@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Retribution leveling build the open leveling search found on 2026-10-07: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the ret-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (ret-dps). +0.6% faster per kill than leveling-retribution, the fastest of our leveling builds in that race.
+The Retribution leveling build the open leveling search found on 2026-10-07: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the ret-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (ret-dps). +0.8% faster per kill than leveling-retribution, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -68,13 +68,12 @@ The Retribution leveling build the open leveling search found on 2026-10-07: eve
 | 33-34 | Retribution | Vengeance | 2 | 0/0/25 |
 | 35-36 | Retribution | Instrument of Law | 2 | 0/0/27 |
 | 37-39 | Retribution | Champion of the Light | 3 | 0/0/30 |
-| 40-44 | Holy | Divine Strength | 5 | 5/0/30 |
-| 45-47 | Holy | Improved Seals | 3 | 8/0/30 |
-| 48 | Protection | Toughness | 1 | 8/1/30 |
-| 49 | Retribution | Vengeance | 1 | 8/1/31 |
-| 50-53 | Protection | Toughness | 4 | 8/5/31 |
-| 54-56 | Protection | Precision | 3 | 8/8/31 |
-| 57 | Retribution | Deflection | 1 | 8/8/32 |
+| 40 | Retribution | Vengeance | 1 | 0/0/31 |
+| 41 | Retribution | Deflection | 1 | 0/0/32 |
+| 42-46 | Holy | Divine Strength | 5 | 5/0/32 |
+| 47-49 | Holy | Improved Seals | 3 | 8/0/32 |
+| 50-54 | Protection | Toughness | 5 | 8/5/32 |
+| 55-57 | Protection | Precision | 3 | 8/8/32 |
 | 58 | Holy | Unyielding Faith | 1 | 9/8/32 |
 | 59 | Holy | Healing Light | 1 | 10/8/32 |
 | 60 | Holy | Reverence | 1 | 11/8/32 |
@@ -96,8 +95,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- +0.6% faster than the hand draft leveling-retribution, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 27.88; leveling-retribution 28.04, opt-ret-dps-solo-60 28.32, opt-ret-dps-leveling-st 28.38, opt-ret-dps-leveling-aoe 29.21. The search simulated 72,959 builds.
+- +0.8% faster than the hand draft leveling-retribution, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 27.83; leveling-retribution 28.04, opt-ret-dps-solo-60 28.32, opt-ret-dps-leveling-st 28.38, opt-ret-dps-leveling-aoe 29.21. The search simulated 72,959 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)

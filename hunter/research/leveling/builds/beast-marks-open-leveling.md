@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Beast-Marks (a Beast Mastery/Marksmanship hybrid) leveling build the open leveling search found on 2026-10-07: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the bm-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (bm-leveling). +0.9% faster per kill than beast-mastery-leveling, the fastest of our leveling builds in that race.
+The Beast-Marks (a Beast Mastery/Marksmanship hybrid) leveling build the open leveling search found on 2026-10-07: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the bm-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (bm-leveling). +1.9% faster per kill than beast-mastery-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -58,16 +58,16 @@ The Beast-Marks (a Beast Mastery/Marksmanship hybrid) leveling build the open le
 | 25 | Beast Mastery | Summon Hawk | 1 | 16/0/0 |
 | 26-29 | Beast Mastery | Ferocity | 4 | 20/0/0 |
 | 30 | Beast Mastery | Bestial Discipline | 1 | 21/0/0 |
-| 31-35 | Marksmanship | Lethal Attacks | 5 | 21/5/0 |
-| 36-40 | Marksmanship | Efficiency | 5 | 21/10/0 |
-| 41-45 | Marksmanship | Careful Aim | 5 | 21/15/0 |
-| 46-48 | Marksmanship | Improved Stings | 3 | 21/18/0 |
-| 49 | Beast Mastery | Ferocity | 1 | 22/18/0 |
-| 50-53 | Survival | Improved Tracking | 4 | 22/18/4 |
-| 54 | Beast Mastery | Bestial Discipline | 1 | 23/18/4 |
-| 55 | Beast Mastery | Spirit Bond | 1 | 24/18/4 |
-| 56 | Beast Mastery | Improved Revive Pet | 1 | 25/18/4 |
-| 57-60 | Beast Mastery | Frenzy | 4 | 29/18/4 |
+| 31 | Beast Mastery | Ferocity | 1 | 22/0/0 |
+| 32 | Beast Mastery | Bestial Discipline | 1 | 23/0/0 |
+| 33 | Beast Mastery | Spirit Bond | 1 | 24/0/0 |
+| 34 | Beast Mastery | Improved Revive Pet | 1 | 25/0/0 |
+| 35-38 | Beast Mastery | Frenzy | 4 | 29/0/0 |
+| 39-43 | Marksmanship | Lethal Attacks | 5 | 29/5/0 |
+| 44-48 | Marksmanship | Efficiency | 5 | 29/10/0 |
+| 49-53 | Marksmanship | Careful Aim | 5 | 29/15/0 |
+| 54-56 | Marksmanship | Improved Stings | 3 | 29/18/0 |
+| 57-60 | Survival | Improved Tracking | 4 | 29/18/4 |
 
 ## Core talents (priority order)
 
@@ -86,7 +86,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 26.36; beast-mastery-leveling 26.59. The search simulated 41,813 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 26.09; beast-mastery-leveling 26.59. The search simulated 41,813 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)

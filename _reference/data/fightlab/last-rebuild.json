@@ -7506,9 +7506,9 @@
   }
  },
  "last_run": {
-  "date": "2026-10-07T17:19:43",
+  "date": "2026-10-07T17:40:06",
   "classes": [
-   "mage"
+   "paladin"
   ],
   "steps": [
    "regen"
@@ -7519,62 +7519,63 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 303,
+  "seconds": 112,
   "refresh": null,
   "regen_log": [
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py mage",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py paladin",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "formatted F:\\wow-forever\\mage\\research\\talents\\forever\\proposed-builds.json",
-     "mage: README section + leveling-frost note written"
+     "formatted F:\\wow-forever\\paladin\\research\\talents\\forever\\proposed-builds.json",
+     "paladin: README section + leveling-retribution note written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py mage",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py paladin",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "mage: raid sim section written (4 specs)",
+     "paladin: raid sim section written (2 specs)",
      "wrote _reference\\raidsim-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py mage",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py paladin",
     "rc": 0,
     "seconds": 0,
     "tail": [
+     "paladin: healer lab section written (1 specs)",
      "wrote _reference\\heallab-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py mage",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py paladin",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "mage: leveling/guide.md written"
+     "paladin: leveling/guide.md written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py mage",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py paladin",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "mage: raid gear and consumables written"
+     "paladin: raid gear and consumables written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py mage",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py paladin",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "mage: raid and leveling rotations, DPS ranking written"
+     "paladin: raid and leveling rotations, DPS ranking written"
     ],
     "stderr": []
    },
@@ -7601,7 +7602,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_builds.py",
     "rc": 0,
-    "seconds": 3,
+    "seconds": 2,
     "tail": [
      "rogue/classic-baseline: 5 build pages + README.md",
      "rogue: 22 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
@@ -7619,7 +7620,7 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py mage",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py paladin",
     "rc": 0,
     "seconds": 1,
     "tail": [
@@ -7647,15 +7648,15 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py mage --write",
+    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py paladin --write",
     "rc": 0,
-    "seconds": 292,
+    "seconds": 103,
     "tail": [
-     "| fire-leveling -> level-20 build (0/0/11) | +0.7% | +3.6% | +42.8% | +44.0% | +52.7% | +54.5% | +55.5% | +56.5% | +60.1% | +63.0% | +64.2% |",
-     "| fire-leveling -> level-30 build (0/10/11) | +0.7% | +3.6% | +14.9% | +20.7% | +52.7% | +54.5% | +55.5% | +56.5% | +60.1% | +63.0% | +64.2% |",
-     "| fire-leveling -> level-40 build (0/15/16) | +0.7% | +3.6% | +14.9% | +21.7% | +24.0% | +54.5% | +55.8% | +56.8% | +57.8% | +61.4% | +64.2% |",
-     "| fire-leveling -> level-50 build (0/30/11) | +0.5% | +6.7% | +19.6% | +21.6% | +23.8% | +26.3% | +32.0% | +34.0% | +60.1% | +63.0% | +64.2% |",
-     "| fire-leveling -> level-60 build (0/32/19) | +0.5% | +6.7% | +19.6% | +21.6% | +23.8% | +26.3% | +36.0% | +38.0% | +38.6% | +62.7% | +64.6% |",
+     "| ret-dps -> level-20 build (0/0/11) | +0.7% | +4.7% | +16.9% | +24.3% | +28.0% | +32.3% | +34.9% | +35.3% | +36.1% | +38.8% | +39.3% |",
+     "| ret-dps -> level-30 build (0/0/21) | +0.7% | +4.1% | +15.7% | +24.4% | +28.3% | +32.4% | +35.0% | +35.3% | +36.1% | +38.8% | +39.3% |",
+     "| ret-dps -> level-40 build (0/0/31) | +0.7% | +3.3% | +16.0% | +24.2% | +28.1% | +32.4% | +35.2% | +35.3% | +36.1% | +38.8% | +39.4% |",
+     "| ret-dps -> level-50 build (8/0/33) | +0.7% | +3.3% | +16.0% | +24.2% | +28.1% | +32.4% | +35.0% | +35.1% | +38.0% | +38.8% | +39.4% |",
+     "| ret-dps -> level-60 build (15/0/36) | +0.0% | +2.8% | +15.7% | +24.2% | +28.1% | +32.4% | +35.0% | +35.3% | +36.1% | +38.8% | +39.4% |",
      "",
      "## Reading it",
      "",
@@ -7703,7 +7704,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\loop_audit.py",
     "rc": 0,
-    "seconds": 2,
+    "seconds": 1,
     "tail": [
      "druid    flagged 30/98  open 2",
      "hunter   flagged 30/55  open 5",
