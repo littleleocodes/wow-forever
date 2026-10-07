@@ -4,9 +4,8 @@
 
 | Class | Spec model | Best of our builds | DPS | Best sim preset | DPS | Our optimizer build | DPS |
 |---|---|---|---|---|---|---|---|
-| shaman | `elemental-dps` | `elemental-raid-dps` | 410 | Elemental 31/6/14 | 404 | `opt-elemental-dps-raid-dps` | 408 |
-| shaman | `enhancement-dps` | `opt-enhancement-dps-raid-dps` | 400 | Level 60 | 393 | `opt-enhancement-dps-raid-dps` | 400 |
-| shaman | `stormcaller-dps` | - | - | - | - | - | - |
+| paladin | `prot-tank` | `prot-tank` | 469 | P4 Prot | 413 | `opt-prot-tank-raid-tank` | 413 |
+| paladin | `ret-dps` | `opt-ret-dps-raid-dps` | 507 | P4/P5 Ret | 491 | `opt-ret-dps-raid-dps` | 507 |
 
 ## DPS by environment: dummy, raid, maximum
 
@@ -14,10 +13,9 @@ The best of our builds per spec model on the boss-level training dummy with your
 
 | Class | Game | Spec model | Best build | Dummy | Dummy 60 | Raid | Maximum | Max 60 s | Parse build (max) | Best preset (max) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| shaman | Forever | `elemental-dps` | `elemental-raid-dps` (29/22/0) | 410 | 504 | 524 | 524 | 539 | `opt-elemental-dps-parse` 518 | Elemental 31/6/14 514 |
-| shaman | Forever | `enhancement-dps` | `enhancement-ml-raid` (19/32/0) | 397 | 445 | 783 | 783 | 843 | `opt-enhancement-dps-parse` 747 | Level 60 737 |
-| shaman | Classic | `elemental-dps` | `elemental-raid-dps` (31/0/20) | 298 | - | 730 | 1051 | 1184 | - | Level 60 1014 |
-| shaman | Classic | `enhancement-dps` | `enhancement-raid-support` (0/31/20) | 222 | - | 777 | 938 | 958 | - | Level 60 938 |
+| paladin | Forever | `prot-tank` | `prot-tank` (0/23/28) | 144 | 174 | 469 | 469 | 471 | - | P4 Prot 413 |
+| paladin | Forever | `ret-dps` | `retribution-ml-raid` (11/8/32) | 499 | 555 | 961 | 961 | 975 | `opt-ret-dps-parse` 958 | P4/P5 Ret 931 |
+| paladin | Classic | `ret-dps` | `ret-raid-dps` (11/0/40) | 213 | - | 661 | 661 | 671 | - | P4/P5 Ret 710 |
 
 ## Classic Era check (upstream wowsims/classic)
 
@@ -25,6 +23,5 @@ Our Classic-era community builds (`<class>/research/talents/classic-baseline/bui
 
 | Class | Spec model | Best of our builds | DPS | Best sim preset | DPS | Damage split (model sources) |
 |---|---|---|---|---|---|---|
-| shaman | `elemental-dps` | `elemental-raid-dps` | 730 | Level 60 | 699 | lightning_bolt 72%, chain_lightning 26%, earth_shock 2% (unmatched 7%) |
-| shaman | `enhancement-dps` | `enhancement-raid-support` | 777 | Level 60 | 777 | white 67%, windfury 33% (unmatched 6%) |
+| paladin | `ret-dps` | `ret-raid-dps` | 661 | P4/P5 Ret | 710 | white 74%, seal 20%, judgement 6% |
 

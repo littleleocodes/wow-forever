@@ -56,11 +56,11 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) (ours: optimizer, 507 DPS), [`retribution-ml-raid`](builds/retribution-ml-raid.md) (ours: hand draft, 499 DPS), [`ret-raid-dps`](builds/ret-raid-dps.md) (ours: hand draft, 494 DPS), *P4/P5 Ret* (community simulator, 491 DPS), [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) (ours: hand draft, 485 DPS), [`retribution-open-raid`](builds/retribution-open-raid.md) (ours: hand draft, 471 DPS), *Retribution 9/0/42* (community simulator, 454 DPS)
+### [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) (ours: optimizer, 507 DPS), [`retribution-ml-raid`](builds/retribution-ml-raid.md) (ours: hand draft, 499 DPS), [`ret-raid-dps`](builds/ret-raid-dps.md) (ours: hand draft, 494 DPS), *P4/P5 Ret* (community simulator, 491 DPS), [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) (ours: hand draft, 485 DPS), `retribution-open-raid` (ours, 471 DPS), *Retribution 9/0/42* (community simulator, 454 DPS)
 
 Before the pull: at -1.5s: cast Seal of Command.
 
-| # | Priority (the first line whose condition holds is cast) | [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) casts/min | [`retribution-ml-raid`](builds/retribution-ml-raid.md) casts/min | [`ret-raid-dps`](builds/ret-raid-dps.md) casts/min | *P4/P5 Ret* casts/min | [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) casts/min | [`retribution-open-raid`](builds/retribution-open-raid.md) casts/min | *Retribution 9/0/42* casts/min |
+| # | Priority (the first line whose condition holds is cast) | [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) casts/min | [`retribution-ml-raid`](builds/retribution-ml-raid.md) casts/min | [`ret-raid-dps`](builds/ret-raid-dps.md) casts/min | *P4/P5 Ret* casts/min | [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) casts/min | `retribution-open-raid` casts/min | *Retribution 9/0/42* casts/min |
 |---|---|---|---|---|---|---|---|---|
 | 1 | if time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness | 5.0 | 5.0 | 5.0 | 5.0 | 4.7 | 4.7 | 4.7 |
 | 2 | use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready | as ready | as ready |
@@ -75,7 +75,7 @@ Lines of the simulator's rotation these builds never cast: cast Holy Shock, cast
 
 Damage by ability:
 
-| Ability | [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) | [`retribution-ml-raid`](builds/retribution-ml-raid.md) | [`ret-raid-dps`](builds/ret-raid-dps.md) | *P4/P5 Ret* | [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) | [`retribution-open-raid`](builds/retribution-open-raid.md) | *Retribution 9/0/42* |
+| Ability | [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) | [`retribution-ml-raid`](builds/retribution-ml-raid.md) | [`ret-raid-dps`](builds/ret-raid-dps.md) | *P4/P5 Ret* | [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) | `retribution-open-raid` | *Retribution 9/0/42* |
 |---|---|---|---|---|---|---|---|
 | Seal of Righteousness | 19% | 19% | 19% | 19% | 19% | 19% | 19% |
 | Auto Attack | 17% | 18% | 18% | 18% | 19% | 19% | 19% |

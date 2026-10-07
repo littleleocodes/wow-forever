@@ -40,7 +40,7 @@ Our builds and the community simulator's own builds, run through the same simula
 | 3 | [`ret-raid-dps`](builds/ret-raid-dps.md) | ours: hand draft | 17/0/34 | 494 | -2.5% | 933 | -2.9% | 11 s |
 | 4 | *P4/P5 Ret* | community simulator | - | 491 | -3.3% | 931 | -3.1% | 5 s |
 | 5 | [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) | ours: hand draft | 10/8/33 | 485 | -4.3% | 959 | -0.2% | 20 s |
-| 6 | [`retribution-open-raid`](builds/retribution-open-raid.md) | ours: hand draft | 9/8/34 | 471 | -7.2% | 958 | -0.2% | 19 s |
+| 6 | `retribution-open-raid` | ours | 9/8/34 | 471 | -7.2% | 958 | -0.2% | 19 s |
 | 7 | *Retribution 9/0/42* | community simulator | - | 454 | -10.4% | 923 | -4.0% | 19 s |
 
 **prot-tank** (tank)

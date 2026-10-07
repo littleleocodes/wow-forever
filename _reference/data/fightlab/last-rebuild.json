@@ -7506,9 +7506,9 @@
   }
  },
  "last_run": {
-  "date": "2026-10-07T16:46:44",
+  "date": "2026-10-07T16:52:03",
   "classes": [
-   "shaman"
+   "paladin"
   ],
   "steps": [
    "regen"
@@ -7519,63 +7519,63 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 245,
+  "seconds": 150,
   "refresh": null,
   "regen_log": [
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py shaman",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py paladin",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
-     "formatted F:\\wow-forever\\shaman\\research\\talents\\forever\\proposed-builds.json",
-     "shaman: README section + leveling-enhancement note written"
+     "formatted F:\\wow-forever\\paladin\\research\\talents\\forever\\proposed-builds.json",
+     "paladin: README section + leveling-retribution note written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py shaman",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py paladin",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "shaman: raid sim section written (3 specs)",
+     "paladin: raid sim section written (2 specs)",
      "wrote _reference\\raidsim-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py shaman",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py paladin",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "shaman: healer lab section written (1 specs)",
+     "paladin: healer lab section written (1 specs)",
      "wrote _reference\\heallab-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py shaman",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py paladin",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "shaman: leveling/guide.md written"
+     "paladin: leveling/guide.md written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py shaman",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py paladin",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
-     "shaman: raid gear and consumables written"
+     "paladin: raid gear and consumables written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py shaman",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py paladin",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
-     "shaman: raid and leveling rotations, DPS ranking written"
+     "paladin: raid and leveling rotations, DPS ranking written"
     ],
     "stderr": []
    },
@@ -7602,7 +7602,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_builds.py",
     "rc": 0,
-    "seconds": 4,
+    "seconds": 2,
     "tail": [
      "rogue/classic-baseline: 5 build pages + README.md",
      "rogue: 22 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
@@ -7620,7 +7620,7 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py shaman",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py paladin",
     "rc": 0,
     "seconds": 1,
     "tail": [
@@ -7648,15 +7648,15 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py shaman --write",
+    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py paladin --write",
     "rc": 0,
-    "seconds": 232,
+    "seconds": 139,
     "tail": [
-     "| elemental-dps -> level-20 build (11/0/0) | +1.5% | +7.0% | +13.2% | +15.8% | +17.0% | +19.2% | +24.9% | +28.4% | +32.2% | +35.9% | +36.8% |",
-     "| elemental-dps -> level-30 build (14/7/0) | +1.5% | +7.0% | +13.2% | +15.4% | +19.2% | +20.8% | +22.4% | +28.0% | +32.2% | +35.9% | +36.8% |",
-     "| elemental-dps -> level-40 build (17/14/0) | +1.5% | +7.0% | +13.2% | +15.8% | +17.2% | +21.1% | +25.3% | +26.5% | +30.0% | +35.9% | +36.9% |",
-     "| elemental-dps -> level-50 build (30/11/0) | +1.5% | +7.0% | +13.2% | +15.8% | +17.2% | +21.1% | +25.0% | +26.6% | +33.1% | +35.9% | +36.8% |",
-     "| elemental-dps -> level-60 build (31/12/8) | +1.5% | +7.0% | +13.2% | +15.8% | +17.2% | +21.1% | +25.1% | +26.7% | +32.1% | +35.6% | +37.9% |",
+     "| ret-dps -> level-20 build (0/0/11) | +0.7% | +4.7% | +16.9% | +24.3% | +28.0% | +32.3% | +34.9% | +35.3% | +36.1% | +38.8% | +39.3% |",
+     "| ret-dps -> level-30 build (0/0/21) | +0.7% | +4.1% | +15.7% | +24.4% | +28.3% | +32.4% | +35.0% | +35.3% | +36.1% | +38.8% | +39.3% |",
+     "| ret-dps -> level-40 build (0/0/31) | +0.7% | +3.3% | +16.0% | +24.2% | +28.1% | +32.4% | +35.2% | +35.3% | +36.1% | +38.8% | +39.4% |",
+     "| ret-dps -> level-50 build (8/0/33) | +0.7% | +3.3% | +16.0% | +24.2% | +28.1% | +32.4% | +35.0% | +35.1% | +38.0% | +38.8% | +39.4% |",
+     "| ret-dps -> level-60 build (15/0/36) | +0.0% | +2.8% | +15.7% | +24.2% | +28.1% | +32.4% | +35.0% | +35.3% | +36.1% | +38.8% | +39.4% |",
      "",
      "## Reading it",
      "",
@@ -7740,7 +7740,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\summary.py --write",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
      "wrote _reference\\fightlab-summary.md"
     ],
