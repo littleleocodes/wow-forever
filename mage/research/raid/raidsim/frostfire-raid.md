@@ -5,6 +5,7 @@
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
 | `frostfire-open-raid` | 3/32/16 | 551 | 39 | +0.0% | 535 | 1 | - |
+| `frostfire-fingers-of-frost-raid` | 0/29/22 | 539 | 45 | -2.1% | 515 | 0 | - |
 | `frostfire-raid` | 4/31/16 | 516 | 41 | -6.3% | 367 | 0 | - |
 | `frostfire-ml-raid` | 4/31/16 | 513 | 36 | -6.9% | 369 | 1 | - |
 
@@ -25,6 +26,7 @@ Mapped onto the spec model's sources: ; 100% of the damage matched no source (ra
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
 - frostfire-open-raid: `003-23550000130133051-005500033`
+- frostfire-fingers-of-frost-raid: `-0355100013013304-00550003310003002`
 - frostfire-raid: `004-03251030130133051-005500033`
 - frostfire-ml-raid: `004-10452131130103051-005500033`
 

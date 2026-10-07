@@ -1436,6 +1436,50 @@
       "open_questions": ["An open-search Frostfire build: check it against the community's Frostfire builds at launch."],
       "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/mage/60/-23550000132133051-015500033-4"],
       "replaces": "frostfire-raid"
+    },
+    {
+      "id": "frostfire-fingers-of-frost-raid",
+      "name": "Frostfire — Fingers of Frost / Ice Lance (user build)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Hybrid Fire/Frost",
+      "summary": "A Frostfire Bolt build the user brought on 2026-10-06 (talentsforever.com link): 29 Fire points for Ignite, Heating Up, Pyroblast, Master of Elements, Critical Mass and Fire Power, 22 Frost points for Elemental Precision, Ice Shards, Piercing Ice, Frost Channeling, Shatter, Ice Lance and Fingers of Frost. In the Frostfire rotation in a full raid it beat the open search's 0/34/17 winner by 2.1% (698 against 684 DPS, 30,000 fights, seed 2), which that search had missed; an Ice Lance line on Fingers of Frost procs adds about 0.9% more.",
+      "allocation": {
+        "Arcane": [],
+        "Fire": [
+          ["Incineration", 3],
+          ["Improved Fireball", 5],
+          ["Ignite", 5],
+          ["Flame Throwing", 1],
+          ["Pyroblast", 1],
+          ["Improved Scorch", 3],
+          ["Heating Up", 1],
+          ["Master of Elements", 3],
+          ["Critical Mass", 3],
+          ["Fire Power", 4]
+        ],
+        "Frost": [
+          ["Elemental Precision", 5],
+          ["Ice Shards", 5],
+          ["Piercing Ice", 3],
+          ["Frost Channeling", 3],
+          ["Ice Lance", 1],
+          ["Shatter", 3],
+          ["Fingers of Frost", 2]
+        ]
+      },
+      "core": [
+        {"talent": "Fingers of Frost", "why": "Frostfire Bolt chills, so its procs let Ice Lance and Shatter crit; the 22 Frost points exist for this."},
+        {"talent": "Shatter", "why": "Crit against frozen targets for Frostfire Bolt, Ice Lance and the Fire spells alike."},
+        {"talent": "Ignite", "why": "The Fire half: crits burn for 40% more."},
+        {"talent": "Heating Up", "why": "Instant Pyroblasts off crit streaks."},
+        {"talent": "Master of Elements", "why": "Mana back from crits; the build has no Arcane mana talents."}
+      ],
+      "flex": [],
+      "notes": ["Added 2026-10-06 from the user's link; the open talent search of the same day found 0/34/17 at 684 DPS in the Frostfire rotation and missed this build (698): recorded in raidsim/known-positives.json so later searches start from it.", "Alone on a training dummy (own buffs only) it is 2% behind the 0/34/17 build; in a full raid 2% ahead. Simulator numbers are the community's model of the beta (ElliotWood/Forever b0f0df3 with this project's patches), not in-game measurements."],
+      "open_questions": ["Does Frostfire Bolt's chill proc Fingers of Frost in the live game as the simulator assumes?"],
+      "sources": ["https://talentsforever.com/mage/60/-0355100013013304-00550003310003002-TUV4WaVbdeflmqrswzh-6"]
     }
   ]
 }

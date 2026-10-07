@@ -302,6 +302,9 @@
 **Frostfire — Raid (open talent search)** (`mage/research/raid/builds/frostfire-open-raid.md`)
 - [ ] An open-search Frostfire build: check it against the community's Frostfire builds at launch.
 
+**Frostfire — Fingers of Frost / Ice Lance (user build)** (`mage/research/raid/builds/frostfire-fingers-of-frost-raid.md`)
+- [ ] Does Frostfire Bolt's chill proc Fingers of Frost in the live game as the simulator assumes?
+
 ### Paladin
 
 **Holy — Raid Healer (31/0/20)** (`paladin/research/raid/builds/holy-raid-healer.md`)

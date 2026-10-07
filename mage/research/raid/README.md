@@ -19,6 +19,7 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | [Frost — Raid (machine-learning search)](builds/frost-ml-raid.md) | 21/0/30 | DPS | — |
 | [Frostfire — Raid (machine-learning search)](builds/frostfire-ml-raid.md) | 4/31/16 | DPS | — |
 | [Frostfire — Raid (open talent search)](builds/frostfire-open-raid.md) | 3/32/16 | DPS | — |
+| [Frostfire — Fingers of Frost / Ice Lance (user build)](builds/frostfire-fingers-of-frost-raid.md) | 0/29/22 | DPS | — |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
@@ -78,9 +79,10 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`frostfire-open-raid`](builds/frostfire-open-raid.md) | ours: hand draft | 3/32/16 | 551 | +0.0% | 683 | +0.0% | 1 s |
-| 2 | [`frostfire-raid`](builds/frostfire-raid.md) | ours: hand draft | 4/31/16 | 516 | -6.3% | 647 | -5.2% | 0 s |
-| 3 | [`frostfire-ml-raid`](builds/frostfire-ml-raid.md) | ours: hand draft | 4/31/16 | 513 | -6.9% | 635 | -7.1% | 1 s |
+| 1 | [`frostfire-open-raid`](builds/frostfire-open-raid.md) | ours: hand draft | 3/32/16 | 551 | +0.0% | 691 | -2.3% | 1 s |
+| 2 | [`frostfire-fingers-of-frost-raid`](builds/frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 539 | -2.1% | 707 | +0.0% | 0 s |
+| 3 | [`frostfire-raid`](builds/frostfire-raid.md) | ours: hand draft | 4/31/16 | 516 | -6.3% | 648 | -8.4% | 0 s |
+| 4 | [`frostfire-ml-raid`](builds/frostfire-ml-raid.md) | ours: hand draft | 4/31/16 | 513 | -6.9% | 644 | -9.0% | 1 s |
 
 ## DPS by gear tier
 
@@ -105,17 +107,17 @@ The spells new in Forever, what the simulators measured them doing, and the buil
 | Arcane Blast | Arcane | 60 | - | Blasts the target with energy, dealing 364 to 424 Arcane damage. | 39% of the damage, 12.6 casts/min: [`arcane-blast-raid`](builds/arcane-blast-raid.md) (arcane-dps) | - | not cast |  |
 | Teleport: Dalaran | Arcane | 50 | - | Teleports the caster to Dalaran. | not cast by any raced build | - | not cast | Travel. |
 | Frostfire Bolt | Fire | 60 | - | Launches a bolt of frostfire at the enemy, causing 270 to 314 Frostfire damage, slowing movement speed by 40% and causing an additional 57 Frostfire… | 25% of the damage, 6.8 casts/min: [`frostfire-open-raid`](builds/frostfire-open-raid.md) (frostfire-raid) | frostfire-raid (training dummy): only with 6s or more of the fight left: if mana % ≥ 10%: cast Frostfire Bolt (+1.1%); frostfire-raid (training dummy): only above 25% mana: if mana % ≥ 10% and time left in the fight ≥ 6s: cast Frostfire Bolt (+0.7%) | 16% of the damage, 1.5 casts a kill: `opt-frost-leveling-leveling-st` at 60 (frostfire-leveling) | The community simulator ships it as a stub; this project implements it (raidsim/patches/forever/sim/mage/frostfire_bolt.go), so its numbers are our model. The fight lab plays it from level 40 (fightlab/mage.py decide_frostfire). |
-| Ice Lance | Frost | 56 | - | Deals 136 to 160 Frost damage to an enemy target. | 20% of the damage, 4.5 casts/min: [`frost-ml-raid`](builds/frost-ml-raid.md) (frost-raid) | frost-raid (training dummy): move down below 'if Missile Barrage is known and Missile Barrage is up: cast Arcane Missil (+0.2%); frost-raid (raid): move down below 'if Missile Barrage is known and Missile Barrage is up: cast Arcane Missil (+0.2%) | 69% of the damage, 2.5 casts a kill: `opt-frost-leveling-leveling-st` at 60 (frost-leveling) | Frost talent; the simulator's Frost rotation casts it on Fingers of Frost. |
+| Ice Lance | Frost | 56 | - | Deals 136 to 160 Frost damage to an enemy target. | 20% of the damage, 4.5 casts/min: [`frost-ml-raid`](builds/frost-ml-raid.md) (frost-raid) | frost-raid (training dummy): move down below 'if Missile Barrage is known and Missile Barrage is up: cast Arcane Missil (+0.2%); frostfire-raid (raid): insert at the top: if Fingers of Frost is up: cast Ice Lance (+0.2%); frost-raid (raid): move down below 'if Missile Barrage is known and Missile Barrage is up: cast Arcane Missil (+0.2%) | 69% of the damage, 2.5 casts a kill: `opt-frost-leveling-leveling-st` at 60 (frost-leveling) | Frost talent; the simulator's Frost rotation casts it on Fingers of Frost. |
 
 ### Builds searched around them
 
 | Idea | Build | Split | Dummy DPS | Raid DPS | Against the class's best | Talent search | Leveling |
 |---|---|---|---|---|---|---|---|
-| Frostfire Bolt, which counts as Fire and Frost, as the filler of a Fire/Frost hybrid (the build asked for by name) | [`frostfire-raid`](builds/frostfire-raid.md) | 4/31/16 | 516 | 647 | -16.4% on the dummy; -8.2% in a raid | from `frostfire-raid`, 1 move | the Frost leveling build playing Frostfire Bolt instead of Frostbolt from 40, against itself playing Frostbolt (fight lab `frostfire-leveling`): 40: 35.4 s a kill against 29.2 (+21%); 50: 29.8 s a kill against 24.5 (+22%); 60: 27.4 s a kill against 23.1 (+19%) |
-| Arcane Blast, a Forever Arcane talent that stacks its own damage and cost, as a build of its own | [`arcane-blast-raid`](builds/arcane-blast-raid.md) | 35/11/5 | 571 | 659 | -7.5% on the dummy; -6.5% in a raid | from `sim preset: Arcane DPS`, 2 moves | - |
-| Arcane Power Frost with Missile Barrage (Forever talent): Frostbolt, and Arcane Missiles on its procs, which the simulator's Frost rotation never cast | [`frost-arcane-power-raid`](builds/frost-arcane-power-raid.md) | 32/0/19 | 575 | 660 | -6.8% on the dummy; -6.5% in a raid | from `frost-arcane-power-raid`, 2 moves | - |
+| Frostfire Bolt, which counts as Fire and Frost, as the filler of a Fire/Frost hybrid (the build asked for by name) | [`frostfire-raid`](builds/frostfire-raid.md) | 4/31/16 | 516 | 648 | -16.4% on the dummy; -8.4% in a raid | from `frostfire-raid`, 1 move | the Frost leveling build playing Frostfire Bolt instead of Frostbolt from 40, against itself playing Frostbolt (fight lab `frostfire-leveling`): 40: 35.4 s a kill against 29.2 (+21%); 50: 29.8 s a kill against 24.5 (+22%); 60: 27.4 s a kill against 23.1 (+19%) |
+| Arcane Blast, a Forever Arcane talent that stacks its own damage and cost, as a build of its own | [`arcane-blast-raid`](builds/arcane-blast-raid.md) | 35/11/5 | 571 | 659 | -7.5% on the dummy; -6.8% in a raid | from `sim preset: Arcane DPS`, 2 moves | - |
+| Arcane Power Frost with Missile Barrage (Forever talent): Frostbolt, and Arcane Missiles on its procs, which the simulator's Frost rotation never cast | [`frost-arcane-power-raid`](builds/frost-arcane-power-raid.md) | 32/0/19 | 575 | 660 | -6.8% on the dummy; -6.7% in a raid | from `frost-arcane-power-raid`, 2 moves | - |
 
-The class's best raid DPS build on the training dummy: [`frost-ml-raid`](builds/frost-ml-raid.md) (frost-raid), 617 DPS; in a raid: [`frost-ml-raid`](builds/frost-ml-raid.md) (frost-raid), 705 DPS.
+The class's best raid DPS build on the training dummy: [`frost-ml-raid`](builds/frost-ml-raid.md) (frost-raid), 617 DPS; in a raid: [`frostfire-fingers-of-frost-raid`](builds/frostfire-fingers-of-frost-raid.md) (frostfire-raid), 707 DPS.
 
 ## Raid sim (community simulator, level 60)
 
@@ -147,6 +149,7 @@ The class's best raid DPS build on the training dummy: [`frost-ml-raid`](builds/
 | `frost-raid` | dummy | sim preset: Fire 0/35/16 | - | 387 | -37.2% | 0 | - |
 | `frost-raid` | dummy | sim preset: Fire DPS | - | 324 | -47.5% | 0 | - |
 | `frostfire-raid` | dummy | `frostfire-open-raid` | 3/32/16 | 551 | +0.0% | 1 | - |
+| `frostfire-raid` | dummy | `frostfire-fingers-of-frost-raid` | 0/29/22 | 539 | -2.1% | 0 | - |
 | `frostfire-raid` | dummy | `frostfire-raid` | 4/31/16 | 516 | -6.3% | 0 | - |
 | `frostfire-raid` | dummy | `frostfire-ml-raid` | 4/31/16 | 513 | -6.9% | 1 | - |
 
@@ -188,9 +191,10 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 | `frost-raid` | sim preset: Arcane DPS | - | 430 | 490 | 489 | 489 | 530 |
 | `frost-raid` | sim preset: Fire 0/35/16 | - | 387 | 417 | 448 | 448 | 465 |
 | `frost-raid` | sim preset: Fire DPS | - | 324 | 369 | 369 | 369 | 384 |
-| `frostfire-raid` | `frostfire-open-raid` | 3/32/16 | 551 | 644 | 683 | 683 | 745 |
-| `frostfire-raid` | `frostfire-raid` | 4/31/16 | 516 | 605 | 647 | 647 | 693 |
-| `frostfire-raid` | `frostfire-ml-raid` | 4/31/16 | 513 | 599 | 635 | 635 | 707 |
+| `frostfire-raid` | `frostfire-open-raid` | 3/32/16 | 551 | 644 | 691 | 691 | 745 |
+| `frostfire-raid` | `frostfire-fingers-of-frost-raid` | 0/29/22 | 539 | 638 | 707 | 707 | 698 |
+| `frostfire-raid` | `frostfire-raid` | 4/31/16 | 516 | 605 | 648 | 648 | 686 |
+| `frostfire-raid` | `frostfire-ml-raid` | 4/31/16 | 513 | 599 | 644 | 644 | 705 |
 
 **Classic Era check** — [`../talents/classic-baseline/raidsim/`](../talents/classic-baseline/raidsim/): the same run of our Classic-era community builds through the upstream wowsims/classic simulator (commit 7779ebb, its phase-1 presets), which the scorer's classic-era models are calibrated against. Our builds there are the community's; a preset ahead of them means the simulator's rotation prefers other talents.
 

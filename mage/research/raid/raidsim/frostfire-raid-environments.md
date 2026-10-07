@@ -4,9 +4,10 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `frostfire-open-raid` | 3/32/16 | 551 | 644 | 683 | 683 | 745 |
-| `frostfire-raid` | 4/31/16 | 516 | 605 | 647 | 647 | 693 |
-| `frostfire-ml-raid` | 4/31/16 | 513 | 599 | 635 | 635 | 707 |
+| `frostfire-open-raid` | 3/32/16 | 551 | 644 | 691 | 691 | 745 |
+| `frostfire-fingers-of-frost-raid` | 0/29/22 | 539 | 638 | 707 | 707 | 698 |
+| `frostfire-raid` | 4/31/16 | 516 | 605 | 648 | 648 | 686 |
+| `frostfire-ml-raid` | 4/31/16 | 513 | 599 | 644 | 644 | 705 |
 
 - **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
 - **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
@@ -20,9 +21,10 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
-| `frostfire-open-raid` | 551 | +4% | +0% | -0% | +10% | +10% | 683 |
-| `frostfire-raid` | 516 | +4% | +0% | -1% | +10% | +12% | 647 |
-| `frostfire-ml-raid` | 513 | +4% | +0% | -1% | +10% | +10% | 635 |
+| `frostfire-open-raid` | 551 | +4% | +0% | -0% | +10% | +11% | 691 |
+| `frostfire-fingers-of-frost-raid` | 539 | +6% | +0% | -1% | +10% | +16% | 707 |
+| `frostfire-raid` | 516 | +4% | +0% | -1% | +10% | +12% | 648 |
+| `frostfire-ml-raid` | 513 | +4% | +0% | -1% | +10% | +12% | 644 |
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
 
@@ -33,6 +35,7 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
 | `frostfire-open-raid` | 641 | 571 | 551 | 475 | 426 |
+| `frostfire-fingers-of-frost-raid` | 588 | 552 | 539 | 470 | 423 |
 | `frostfire-raid` | 597 | 531 | 516 | 464 | 417 |
 | `frostfire-ml-raid` | 608 | 535 | 513 | 442 | 397 |
 

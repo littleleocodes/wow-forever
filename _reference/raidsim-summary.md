@@ -18,7 +18,7 @@ The best of our builds per spec model on the boss-level training dummy with your
 | mage | Forever | `arcane-dps` | `arcane-blast-raid` (35/11/5) | 571 | 654 | 659 | 659 | 723 | - | Arcane DPS 650 |
 | mage | Forever | `fire-raid` | `fire-raid` (12/34/5) | 559 | 644 | 700 | 700 | 748 | `opt-fire-raid-parse` 645 | Fire 0/35/16 671 |
 | mage | Forever | `frost-raid` | `frost-ml-raid` (21/0/30) | 617 | 678 | 705 | 705 | 715 | `opt-frost-raid-parse` 673 | Frost 14/0/37 670 |
-| mage | Forever | `frostfire-raid` | `frostfire-open-raid` (3/32/16) | 551 | 644 | 683 | 683 | 745 | - | - |
+| mage | Forever | `frostfire-raid` | `frostfire-fingers-of-frost-raid` (0/29/22) | 539 | 638 | 707 | 707 | 698 | - | - |
 | mage | Classic | `fire-raid` | `fire-raid` (17/31/3) | 495 | - | 1003 | 1014 | 1025 | - | Frost DPS 752 |
 | mage | Classic | `frost-raid` | `frost-arcane-power-raid` (31/0/20) | 461 | - | 781 | 836 | 866 | - | Frost DPS 752 |
 

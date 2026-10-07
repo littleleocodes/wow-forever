@@ -7506,7 +7506,7 @@
   }
  },
  "last_run": {
-  "date": "2026-10-06T20:23:26",
+  "date": "2026-10-06T23:00:57",
   "classes": [
    "mage"
   ],
@@ -7519,13 +7519,13 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 354,
+  "seconds": 333,
   "refresh": null,
   "regen_log": [
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py mage",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
      "formatted F:\\wow-forever\\mage\\research\\talents\\forever\\proposed-builds.json",
      "mage: README section + leveling-frost note written"
@@ -7563,7 +7563,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py mage",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
      "mage: raid gear and consumables written"
     ],
@@ -7572,7 +7572,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py mage",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
      "mage: raid and leveling rotations, DPS ranking written"
     ],
@@ -7601,7 +7601,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_builds.py",
     "rc": 0,
-    "seconds": 3,
+    "seconds": 2,
     "tail": [
      "rogue/classic-baseline: 5 build pages + README.md",
      "rogue: 22 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
@@ -7610,7 +7610,7 @@
      "shaman/classic-baseline: 5 build pages + README.md",
      "shaman: 21 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "mage/classic-baseline: 7 build pages + README.md",
-     "mage: 24 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
+     "mage: 25 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "warlock/classic-baseline: 4 build pages + README.md",
      "warlock: 24 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "druid/classic-baseline: 7 build pages + README.md",
@@ -7631,7 +7631,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_modes.py",
     "rc": 0,
-    "seconds": 2,
+    "seconds": 1,
     "tail": [
      "druid: README.md sections and 3 mode folders written",
      "hunter: README.md sections and 3 mode folders written",
@@ -7649,7 +7649,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py mage --write",
     "rc": 0,
-    "seconds": 340,
+    "seconds": 324,
     "tail": [
      "| fire-leveling -> level-20 build (0/0/11) | +0.7% | +3.6% | +42.8% | +44.0% | +52.7% | +54.5% | +55.5% | +56.5% | +60.1% | +63.0% | +64.2% |",
      "| fire-leveling -> level-30 build (0/10/11) | +0.7% | +3.6% | +14.9% | +20.7% | +52.7% | +54.5% | +55.5% | +56.5% | +60.1% | +63.0% | +64.2% |",
@@ -7723,7 +7723,7 @@
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote _reference\\launch-checklist.md (268 per-build questions)"
+     "wrote _reference\\launch-checklist.md (269 per-build questions)"
     ],
     "stderr": []
    },
@@ -7739,7 +7739,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\summary.py --write",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
      "wrote _reference\\fightlab-summary.md"
     ],

@@ -68,17 +68,18 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 
 ## Rank among our builds and the community simulator's
 
-**2 of 3** for `frostfire-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 4** for `frostfire-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`frostfire-open-raid`](frostfire-open-raid.md) | ours: hand draft | 3/32/16 | 551 | +0.0% | 683 | +0.0% | 1 s |
-| 2 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 4/31/16 | 516 | -6.3% | 647 | -5.2% | 0 s |
-| 3 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: hand draft | 4/31/16 | 513 | -6.9% | 635 | -7.1% | 1 s |
+| 1 | [`frostfire-open-raid`](frostfire-open-raid.md) | ours: hand draft | 3/32/16 | 551 | +0.0% | 691 | -2.3% | 1 s |
+| 2 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 539 | -2.1% | 707 | +0.0% | 0 s |
+| 3 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 4/31/16 | 516 | -6.3% | 648 | -8.4% | 0 s |
+| 4 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: hand draft | 4/31/16 | 513 | -6.9% | 644 | -9.0% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-06, 16 changes to the base rotation; third-seed check: open winner 527 -> 550 DPS (+4.4%), frostfire-ml-raid 482 -> 513 DPS (+6.4%), frostfire-raid 514 -> 514 DPS (+0.0%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 7 passes, the last 2026-10-06, 16 changes to the base rotation; third-seed check: frostfire-fingers-of-frost-raid 535 -> 539 DPS (+0.8%), frostfire-open-raid 527 -> 550 DPS (+4.4%), frostfire-raid 514 -> 514 DPS (+0.0%), frostfire-ml-raid 482 -> 513 DPS (+6.4%)):
   1. insert before the filler: cast Fireball (+0.7%, pass 1)
   2. threshold 20% -> 10%: if mana % < 20% and time left in the fight > 25s: cast Evocation (+0.5%, pass 1)
   3. only with 3s or more of the fight left: cast Fireball (+0.3%, pass 1)
@@ -95,7 +96,7 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
   14. only above 25% mana: if mana % ≥ 10% and time left in the fight ≥ 6s: cast Frostfire Bolt (+0.7%, pass 5)
   15. move to the top: cast Fire Blast (+3.8%, pass 5)
   16. insert at the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+0.5%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 7 passes, the last 2026-10-06, 16 changes to the base rotation; third-seed check: open winner 679 -> 682 DPS (+0.5%), frostfire-ml-raid 630 -> 635 DPS (+0.8%), frostfire-raid 625 -> 648 DPS (+3.8%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-06, 20 changes to the base rotation; third-seed check: frostfire-fingers-of-frost-raid 686 -> 707 DPS (+3.0%), frostfire-open-raid 679 -> 692 DPS (+1.9%), frostfire-raid 625 -> 648 DPS (+3.7%), frostfire-ml-raid 630 -> 646 DPS (+2.5%)):
   1. insert at the top: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   2. threshold 110 -> 82.5: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   3. insert at the top: cast Berserking (+0.3%, pass 3)
@@ -112,6 +113,10 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
   14. drop: cast Berserking (+0.3%, pass 6)
   15. move down below 'if mana % ≥ 10%: cast Frostfire Bolt': if mana % < 20% and time left in the fight > 50s: cast Evocation (+0.2%, pass 6)
   16. move to the top: if stacks of Heating Up = 3: cast Pyroblast (+0.2%, pass 6)
+  17. insert at the top: if Fingers of Frost is up: cast Ice Lance (+0.2%, pass 8)
+  18. threshold 7.5s -> 15s: if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 7.5s): cast Scorch + insert before the filler: cast Fireball (+0.2%, pass 8)
+  19. drop: if mana % < 20% and time left in the fight > 50s: cast Evocation (+0.4%, pass 8)
+  20. insert in the middle: cast Mana Citrine (+0.2%, pass 8)
 
 | # | Priority (the first line whose condition holds is cast) | [`frostfire-raid`](frostfire-raid.md) casts/min |
 |---|---|---|
