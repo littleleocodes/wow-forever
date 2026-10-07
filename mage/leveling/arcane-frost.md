@@ -4,7 +4,7 @@
 
 *A Frostbolt caster with Arcane's mana and cooldown talents (Arcane Power, Presence of Mind).* (a hybrid: Arcane/Frost).
 
-**[Arcane-Frost — Leveling](../research/leveling/builds/arcane-frost-open-leveling.md)** (28/0/23) — [open the talent tree](https://talentsforever.com/mage/60/23020501210031053--10450033110003002-4)
+**[Arcane-Frost — Leveling](../research/leveling/builds/arcane-frost-open-leveling.md)** (28/1/22) — [open the talent tree](https://talentsforever.com/mage/60/05010501310031053-01-20350030310003002-4)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
@@ -28,24 +28,24 @@ One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
-| 10-13 | Elemental Precision (Frost) | 4 |
-| 14 | Frost Warding (Frost) | 1 |
+| 10-12 | Elemental Precision (Frost) | 3 |
+| 13-14 | Frost Warding (Frost) | 2 |
 | 15-17 | Frostbite (Frost) | 3 |
 | 18-19 | Ice Shards (Frost) | 2 |
 | 20 | Ice Lance (Frost) | 1 |
-| 21 | Frost Channeling (Frost) | 1 |
-| 22-24 | Piercing Ice (Frost) | 3 |
+| 21-23 | Frost Channeling (Frost) | 3 |
+| 24 | Ice Shards (Frost) | 1 |
 | 25 | Shatter (Frost) | 1 |
 | 26-27 | Ice Shards (Frost) | 2 |
 | 28-29 | Shatter (Frost) | 2 |
 | 30-31 | Fingers of Frost (Frost) | 2 |
-| 32 | Ice Shards (Frost) | 1 |
-| 33-34 | Wand Specialization (Arcane) | 2 |
-| 35-37 | Arcane Focus (Arcane) | 3 |
-| 38-42 | Arcane Concentration (Arcane) | 5 |
-| 43-44 | Arcane Subtlety (Arcane) | 2 |
-| 45 | Arcane Geometry (Arcane) | 1 |
-| 46-47 | Arcane Impact (Arcane) | 2 |
+| 32 | Incineration (Fire) | 1 |
+| 33-37 | Arcane Focus (Arcane) | 5 |
+| 38-41 | Arcane Concentration (Arcane) | 4 |
+| 42 | Arcane Subtlety (Arcane) | 1 |
+| 43 | Arcane Concentration (Arcane) | 1 |
+| 44 | Arcane Geometry (Arcane) | 1 |
+| 45-47 | Arcane Impact (Arcane) | 3 |
 | 48-50 | Arcane Meditation (Arcane) | 3 |
 | 51 | Arcane Blast (Arcane) | 1 |
 | 52 | Missile Barrage (Arcane) | 1 |

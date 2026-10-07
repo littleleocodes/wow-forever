@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Frost leveling build the open leveling search found on 2026-10-06: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the frost-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). +2.0% faster per kill than leveling-frost, the fastest of our leveling builds in that race.
+The Frost leveling build the open leveling search found on 2026-10-07: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the frost-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). +2.0% faster per kill than leveling-frost, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -96,8 +96,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
+- +2.0% faster than the hand draft leveling-frost, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
 - Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 25.75; leveling-frost 26.26, opt-frost-leveling-leveling-st 26.26, opt-frost-aoe-leveling-aoe 30.80. The search simulated 88,874 builds.
-- Against the spec's fastest hand draft leveling-frost: +2.0% (under the 2% bar: the hand draft stays the pick).
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)

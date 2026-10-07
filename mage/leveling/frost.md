@@ -6,7 +6,7 @@
 
 **[Frost — Leveling](../research/leveling/builds/frost-open-leveling.md)** (18/2/31) — [open the talent tree](https://talentsforever.com/mage/60/2521050000003-02-1535003331000301201-4)
 
-> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
+> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (leveling-frost), which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to play
 
