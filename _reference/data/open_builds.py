@@ -92,6 +92,27 @@ def spec_of_alloc(cls, alloc):
     return SM.spec_of(cls, {"allocation": alloc, "role": "dps"})
 
 
+def entry_hybrid(cls, entry, data):
+    """The hybrid spec an entry's rotation showcases (its builds carry a `spec` override: Frostfire's frostfire-raid, Shockadin's
+    shockadin-raid), or None. A winner found in such a rotation is filed under that hybrid whatever its split: a build played around
+    Frostfire Bolt is Frostfire although one tree has 30 points (spec_modes, 2026-09-29)."""
+    specs = json.load(open(HERE / "raidsim" / "specs.json", encoding="utf-8"))
+    ids = ((specs.get(cls) or {}).get(entry) or {}).get("builds") or []
+    by = {b["id"]: b for b in data["builds"]}
+    found = {SM.spec_of(cls, by[i]) for i in ids if i in by and not is_open(by[i])}   # every build of ours in the entry
+    one = next(iter(found)) if len(found) == 1 else None
+    return one if one and one.startswith("Hybrid") else None   # frost-raid hosts Frost and Arcane-Frost builds: by split there
+
+
+def raid_spec(cls, entry, alloc, data):
+    """The spec a raid winner belongs to: the entry's hybrid when the rotation showcases one and the split sits in its trees, else by split."""
+    spec = spec_of_alloc(cls, alloc)
+    hyb = entry_hybrid(cls, entry, data)
+    if hyb and (spec == hyb or spec in hyb.replace("Hybrid ", "").split("/")):
+        return hyb
+    return spec
+
+
 def family_text(cls, spec):
     """'Beast-Survival (a Beast Mastery/Survival hybrid)' or the tree name."""
     name = SM.spec_name(cls, spec)
@@ -107,7 +128,7 @@ def raid_candidates(cls, st, data, RM):
         if not e.get("done"):
             continue
         w = (e.get("again") or e["first"])["winner"]
-        spec = spec_of_alloc(cls, w["allocation"])
+        spec = raid_spec(cls, entry, w["allocation"], data)
         race = e["race"]
         wd = race["open winner"]["dps"]
         rivals = {k: v["dps"] for k, v in race.items() if k != "open winner" and v.get("dps")}   # raced with it: the same fights
