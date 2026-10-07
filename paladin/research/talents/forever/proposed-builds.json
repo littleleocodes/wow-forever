@@ -1258,6 +1258,168 @@
       "notes": ["Open search result (shockadin-raid, full raid): 9/8/34 (Retribution) at 963.6 DPS;  in the same fights; 4,930 builds simulated, 2 independent runs reached the top.", "The spec's other builds on the pages (their best entry, full raid): retribution-ml-raid 957.1, opt-ret-dps-raid-dps 955.5, ret-full-buffs-raid 953.8, ret-raid-dps 935.2.", "Against the spec's best hand draft ret-full-buffs-raid: +1.0% (under the 2% bar: the hand draft stays the pick unless the re-race says otherwise).", "The shockadin-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): ret-dps +3.0%, seal-of-fury-raid +3.1%; seal-of-fury-raid's rotation adopted (+3.1%).", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Toughness.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever b0f0df3 with this project's patches), not in-game measurements."],
       "open_questions": ["An open-search Retribution build: check it against the community's Retribution builds at launch."],
       "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/paladin/60/51003-503-05225331001330321-4"]
+    },
+    {
+      "id": "prot-ret-open-leveling",
+      "name": "Prot-Ret — Leveling (open talent search)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "spec": "Hybrid Protection/Retribution",
+      "generated": "2026-10-07",
+      "derived": "leveling",
+      "summary": "The Prot-Ret (a Protection/Retribution hybrid) leveling build the open leveling search found on 2026-10-07: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the holy-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (ret-dps). +29.0% faster per kill than holy-leveling, the fastest of our leveling builds in that race.",
+      "allocation": {
+        "Holy": [
+          ["Divine Strength", 5],
+          ["Improved Seals", 3]
+        ],
+        "Protection": [
+          ["Toughness", 5],
+          ["Redoubt", 2],
+          ["Precision", 3],
+          ["Guardian's Favor", 1],
+          ["Anticipation", 1],
+          ["Improved Seal of Fury", 1],
+          ["Sacred Duty", 2],
+          ["Swift Judgement", 1]
+        ],
+        "Retribution": [
+          ["Deflection", 3],
+          ["Benediction", 3],
+          ["Improved Judgement", 2],
+          ["Conviction", 5],
+          ["Vindication", 2],
+          ["Sanctified Judgement", 3],
+          ["Seal of Command", 1],
+          ["Sacred Arbiter", 1],
+          ["Two-Handed Weapon Specialization", 3],
+          ["Vengeance", 3],
+          ["Champion of the Light", 1]
+        ]
+      },
+      "order": [
+        {"levels": "10-12", "tree": "Retribution", "talent": "Benediction", "points": 3},
+        {"levels": "13-14", "tree": "Retribution", "talent": "Deflection", "points": 2},
+        {"levels": "15-16", "tree": "Retribution", "talent": "Improved Judgement", "points": 2},
+        {"levels": "17-19", "tree": "Retribution", "talent": "Conviction", "points": 3},
+        {"levels": "20", "tree": "Retribution", "talent": "Seal of Command", "points": 1},
+        {"levels": "21-23", "tree": "Retribution", "talent": "Sanctified Judgement", "points": 3},
+        {"levels": "24", "tree": "Retribution", "talent": "Conviction", "points": 1},
+        {"levels": "25", "tree": "Retribution", "talent": "Sacred Arbiter", "points": 1},
+        {"levels": "26", "tree": "Retribution", "talent": "Conviction", "points": 1},
+        {"levels": "27-28", "tree": "Retribution", "talent": "Vindication", "points": 2},
+        {"levels": "29", "tree": "Retribution", "talent": "Deflection", "points": 1},
+        {"levels": "30-32", "tree": "Retribution", "talent": "Two-Handed Weapon Specialization", "points": 3},
+        {"levels": "33-37", "tree": "Holy", "talent": "Divine Strength", "points": 5},
+        {"levels": "38-40", "tree": "Holy", "talent": "Improved Seals", "points": 3},
+        {"levels": "41-42", "tree": "Retribution", "talent": "Vengeance", "points": 2},
+        {"levels": "43", "tree": "Retribution", "talent": "Champion of the Light", "points": 1},
+        {"levels": "44", "tree": "Retribution", "talent": "Vengeance", "points": 1},
+        {"levels": "45-49", "tree": "Protection", "talent": "Toughness", "points": 5},
+        {"levels": "50-52", "tree": "Protection", "talent": "Precision", "points": 3},
+        {"levels": "53", "tree": "Protection", "talent": "Anticipation", "points": 1},
+        {"levels": "54", "tree": "Protection", "talent": "Redoubt", "points": 1},
+        {"levels": "55-56", "tree": "Protection", "talent": "Sacred Duty", "points": 2},
+        {"levels": "57", "tree": "Protection", "talent": "Redoubt", "points": 1},
+        {"levels": "58", "tree": "Protection", "talent": "Guardian's Favor", "points": 1},
+        {"levels": "59", "tree": "Protection", "talent": "Improved Seal of Fury", "points": 1},
+        {"levels": "60", "tree": "Protection", "talent": "Swift Judgement", "points": 1}
+      ],
+      "core": [
+        {"talent": "Sanctified Judgement", "why": "+3.6 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Seal of Command", "why": "+2.5 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Improved Seals", "why": "+1.7 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Two-Handed Weapon Specialization", "why": "+1.7 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Swift Judgement", "why": "+1.6 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Conviction", "why": "+1.4 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Sacred Arbiter", "why": "+1.0 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Vengeance", "why": "+0.9 s per kill at level 60 without it (removal, 3,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 27.48; holy-leveling 35.45. The search simulated 68,400 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "open_questions": ["An open-search Prot-Ret leveling build: check it while leveling at launch."],
+      "sources": ["https://talentsforever.com/paladin", "https://talentsforever.com/paladin/60/50003-5231110021-332052310013301-4"]
+    },
+    {
+      "id": "retribution-open-leveling",
+      "name": "Retribution — Leveling (open talent search)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "spec": "Retribution",
+      "generated": "2026-10-07",
+      "derived": "leveling",
+      "summary": "The Retribution leveling build the open leveling search found on 2026-10-07: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the ret-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (ret-dps). +0.6% faster per kill than leveling-retribution, the fastest of our leveling builds in that race.",
+      "allocation": {
+        "Holy": [
+          ["Divine Strength", 5],
+          ["Healing Light", 1],
+          ["Improved Seals", 3],
+          ["Unyielding Faith", 1],
+          ["Reverence", 1]
+        ],
+        "Protection": [
+          ["Toughness", 5],
+          ["Precision", 3]
+        ],
+        "Retribution": [
+          ["Deflection", 1],
+          ["Benediction", 5],
+          ["Improved Judgement", 2],
+          ["Holy Conduit", 2],
+          ["Conviction", 5],
+          ["Vindication", 1],
+          ["Sanctified Judgement", 3],
+          ["Seal of Command", 1],
+          ["Sacred Arbiter", 1],
+          ["Two-Handed Weapon Specialization", 3],
+          ["Vengeance", 3],
+          ["Champion of the Light", 3],
+          ["Instrument of Law", 2]
+        ]
+      },
+      "order": [
+        {"levels": "10-14", "tree": "Retribution", "talent": "Benediction", "points": 5},
+        {"levels": "15-16", "tree": "Retribution", "talent": "Holy Conduit", "points": 2},
+        {"levels": "17-18", "tree": "Retribution", "talent": "Improved Judgement", "points": 2},
+        {"levels": "19", "tree": "Retribution", "talent": "Conviction", "points": 1},
+        {"levels": "20", "tree": "Retribution", "talent": "Seal of Command", "points": 1},
+        {"levels": "21-23", "tree": "Retribution", "talent": "Sanctified Judgement", "points": 3},
+        {"levels": "24", "tree": "Retribution", "talent": "Conviction", "points": 1},
+        {"levels": "25", "tree": "Retribution", "talent": "Sacred Arbiter", "points": 1},
+        {"levels": "26-28", "tree": "Retribution", "talent": "Conviction", "points": 3},
+        {"levels": "29", "tree": "Retribution", "talent": "Vindication", "points": 1},
+        {"levels": "30-32", "tree": "Retribution", "talent": "Two-Handed Weapon Specialization", "points": 3},
+        {"levels": "33-34", "tree": "Retribution", "talent": "Vengeance", "points": 2},
+        {"levels": "35-36", "tree": "Retribution", "talent": "Instrument of Law", "points": 2},
+        {"levels": "37-39", "tree": "Retribution", "talent": "Champion of the Light", "points": 3},
+        {"levels": "40-44", "tree": "Holy", "talent": "Divine Strength", "points": 5},
+        {"levels": "45-47", "tree": "Holy", "talent": "Improved Seals", "points": 3},
+        {"levels": "48", "tree": "Protection", "talent": "Toughness", "points": 1},
+        {"levels": "49", "tree": "Retribution", "talent": "Vengeance", "points": 1},
+        {"levels": "50-53", "tree": "Protection", "talent": "Toughness", "points": 4},
+        {"levels": "54-56", "tree": "Protection", "talent": "Precision", "points": 3},
+        {"levels": "57", "tree": "Retribution", "talent": "Deflection", "points": 1},
+        {"levels": "58", "tree": "Holy", "talent": "Unyielding Faith", "points": 1},
+        {"levels": "59", "tree": "Holy", "talent": "Healing Light", "points": 1},
+        {"levels": "60", "tree": "Holy", "talent": "Reverence", "points": 1}
+      ],
+      "core": [
+        {"talent": "Sanctified Judgement", "why": "+2.4 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Seal of Command", "why": "+1.8 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Two-Handed Weapon Specialization", "why": "+1.7 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Improved Seals", "why": "+1.4 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Conviction", "why": "+1.3 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Holy Conduit", "why": "+1.0 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Instrument of Law", "why": "+0.8 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Improved Judgement", "why": "+0.8 s per kill at level 60 without it (removal, 3,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["+0.6% faster than the hand draft leveling-retribution, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 27.88; leveling-retribution 28.04, opt-ret-dps-solo-60 28.32, opt-ret-dps-leveling-st 28.38, opt-ret-dps-leveling-aoe 29.21. The search simulated 72,959 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "open_questions": ["An open-search Retribution leveling build: check it while leveling at launch."],
+      "sources": ["https://talentsforever.com/paladin", "https://talentsforever.com/paladin/60/50103101-503-1522513100133032-4"],
+      "replaces": "leveling-retribution"
     }
   ]
 }

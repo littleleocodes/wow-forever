@@ -66,13 +66,13 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md)** | ours: optimizer | 12/8/31 | 507 | +0.0% | 956 | -0.2% | 4 s |
-| 2 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: hand draft | 11/8/32 | 499 | -1.5% | 957 | +0.0% | 14 s |
-| 3 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/0/34 | 494 | -2.5% | 934 | -2.4% | 11 s |
-| 4 | *P4/P5 Ret* | community simulator | - | 491 | -3.3% | 929 | -2.9% | 5 s |
-| 5 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 10/8/33 | 485 | -4.3% | 954 | -0.3% | 20 s |
-| 6 | [`retribution-open-raid`](retribution-open-raid.md) | ours: hand draft | 9/8/34 | 471 | -7.2% | 954 | -0.3% | 19 s |
-| 7 | *Retribution 9/0/42* | community simulator | - | 454 | -10.4% | 919 | -4.0% | 19 s |
+| 1 | **[`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md)** | ours: optimizer | 12/8/31 | 507 | +0.0% | 958 | -0.3% | 4 s |
+| 2 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: hand draft | 11/8/32 | 499 | -1.5% | 961 | +0.0% | 14 s |
+| 3 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/0/34 | 494 | -2.5% | 933 | -2.9% | 11 s |
+| 4 | *P4/P5 Ret* | community simulator | - | 491 | -3.3% | 931 | -3.1% | 5 s |
+| 5 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 10/8/33 | 485 | -4.3% | 959 | -0.2% | 20 s |
+| 6 | [`retribution-open-raid`](retribution-open-raid.md) | ours: hand draft | 9/8/34 | 471 | -7.2% | 958 | -0.2% | 19 s |
+| 7 | *Retribution 9/0/42* | community simulator | - | 454 | -10.4% | 923 | -4.0% | 19 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -94,7 +94,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
   15. drop 'mana % ≥ 15%' from the condition: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness (+0.2%, pass 5)
   16. threshold 70% -> 65%: if mana % ≥ 15% and Seal of Righteousness is up and mana % ≥ 70%: cast Seal of Command (+0.5%, pass 5)
   17. threshold 1s -> 2s: if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 1s: cast Seal of Command (+0.2%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 7 passes, the last 2026-10-05, 10 changes to the base rotation; third-seed check: retribution-ml-raid 818 -> 907 DPS (+10.9%), sim preset: P4/P5 Ret 793 -> 879 DPS (+10.8%), ret-raid-dps 795 -> 880 DPS (+10.7%), ret-full-buffs-raid 818 -> 905 DPS (+10.6%), opt-ret-dps-raid-dps 814 -> 903 DPS (+11.0%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-07, 11 changes to the base rotation; third-seed check: retribution-open-raid 867 -> 959 DPS (+10.6%), ret-full-buffs-raid 867 -> 959 DPS (+10.7%), opt-ret-dps-raid-dps 860 -> 957 DPS (+11.2%), sim preset: P4/P5 Ret 840 -> 931 DPS (+10.9%), ret-raid-dps 841 -> 933 DPS (+10.9%), retribution-ml-raid 865 -> 960 DPS (+11.1%)):
   1. drop 'time left on Seal of Righteousness ≤ 1s' from the condition: if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 1s: cast Seal of Command (+2.4%, pass 1)
   2. threshold 70% -> 50%: if mana % ≥ 70%: cast Consecration (+1.4%, pass 1)
   3. move to the top: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness (+0.2%, pass 1)
@@ -105,6 +105,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
   8. insert in the middle: cast Consecration (+7.1%, pass 5)
   9. insert in the middle: cast Demonic Rune (+0.2%, pass 5)
   10. rotation replaced by seal-of-fury-raid's raid rotation (keeps Seal of Righteousness up and judges it, Holy Strike, almost no seal twisting), which the open search's re-tune on a Retribution build produced (+2.0% on one seed, pass 6)
+  11. always rank 4 instead of rank 5: if mana % ≥ 15% and Seal of Righteousness is up: cast Seal of Command (+0.3%, pass 8)
 
 Before the pull: at -1.5s: cast Seal of Command.
 

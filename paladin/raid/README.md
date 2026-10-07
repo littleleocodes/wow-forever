@@ -6,7 +6,7 @@
 
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
-| 1 | [Retribution](retribution.md) — Two-handed Retribution | 956 | best |
+| 1 | [Retribution](retribution.md) — Retribution — Seal of Command / Twist of Light | 959 | best |
 
 **Tanking**: [Protection](protection.md) — Shield tank.
 

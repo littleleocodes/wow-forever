@@ -13,6 +13,8 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | [Leveling — Retribution (fight-lab winner adopted 2026-09-26)](builds/leveling-retribution.md) | 15/0/36 | DPS | [leveling-retribution](../talents/classic-baseline/leveling-retribution.md) |
 | [Holy — Leveling into the raid build](builds/holy-leveling.md) | 33/0/18 | DPS | — |
 | [Protection — Leveling into the raid build](builds/protection-leveling.md) | 0/23/28 | DPS | — |
+| [Prot-Ret — Leveling (open talent search)](builds/prot-ret-open-leveling.md) | 8/16/27 | DPS | — |
+| [Retribution — Leveling (open talent search)](builds/retribution-open-leveling.md) | 11/8/32 | DPS | — |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

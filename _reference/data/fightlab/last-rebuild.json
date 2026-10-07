@@ -7506,7 +7506,7 @@
   }
  },
  "last_run": {
-  "date": "2026-10-07T10:21:58",
+  "date": "2026-10-07T11:54:01",
   "classes": [
    "paladin"
   ],
@@ -7519,7 +7519,7 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 140,
+  "seconds": 144,
   "refresh": null,
   "regen_log": [
    {
@@ -7573,7 +7573,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py paladin",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
      "paladin: raid and leveling rotations, DPS ranking written"
     ],
@@ -7650,7 +7650,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py paladin --write",
     "rc": 0,
-    "seconds": 129,
+    "seconds": 133,
     "tail": [
      "| ret-dps -> level-20 build (0/0/11) | +0.7% | +4.7% | +16.9% | +24.3% | +28.0% | +32.3% | +34.9% | +35.3% | +36.1% | +38.8% | +39.3% |",
      "| ret-dps -> level-30 build (0/0/21) | +0.7% | +4.1% | +15.7% | +24.4% | +28.3% | +32.4% | +35.0% | +35.3% | +36.1% | +38.8% | +39.3% |",
@@ -7724,7 +7724,7 @@
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote _reference\\launch-checklist.md (271 per-build questions)"
+     "wrote _reference\\launch-checklist.md (273 per-build questions)"
     ],
     "stderr": []
    },

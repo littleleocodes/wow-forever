@@ -200,7 +200,7 @@
  "raid": {
   "class": "paladin",
   "spec": "ret-dps",
-  "date": "2026-10-05",
+  "date": "2026-10-07",
   "commit": "b0f0df3",
   "setting": "raid",
   "tank": false,
@@ -208,8 +208,16 @@
   "start": "ui\\specs\\paladin\\retribution\\apls\\default.apl.json",
   "builds": [
    {
-    "label": "retribution-ml-raid",
-    "talents": "25003001-503-05225131001330321"
+    "label": "retribution-open-raid",
+    "talents": "51003-503-05225331001330321"
+   },
+   {
+    "label": "ret-full-buffs-raid",
+    "talents": "52003-503-05225231001330321"
+   },
+   {
+    "label": "opt-ret-dps-raid-dps",
+    "talents": "25003002-503-05225131001230321"
    },
    {
     "label": "sim preset: P4/P5 Ret",
@@ -220,12 +228,8 @@
     "talents": "550030030001--05225331001330321"
    },
    {
-    "label": "ret-full-buffs-raid",
-    "talents": "52003-503-05225231001330321"
-   },
-   {
-    "label": "opt-ret-dps-raid-dps",
-    "talents": "25003002-503-05225131001230321"
+    "label": "retribution-ml-raid",
+    "talents": "25003001-503-05225131001330321"
    }
   ],
   "iterations": 3000,
@@ -312,50 +316,67 @@
     "candidates": 1,
     "date": "2026-10-05",
     "note": "10,000 fights, seed 13: ret-raid-dps +2.1%, ret-full-buffs-raid +1.8%, opt-ret-dps-raid-dps +2.1%, retribution-ml-raid +1.9%; the dummy rotation unchanged (that one loses 17% on the dummy)"
+   },
+   {
+    "round": 11,
+    "change": "always rank 4 instead of rank 5: if mana % \u2265 15% and Seal of Righteousness is up: cast Seal of Command",
+    "gain_seed1": 0.002993453469576357,
+    "gain_seed2": 0.0029195298106705625,
+    "candidates": 435,
+    "pass": 8
    }
   ],
   "final": {
    "raid": {
-    "retribution-ml-raid": {
-     "before": 817.9630616596436,
-     "after": 907.3954373278168,
-     "base": 817.9630616596436,
+    "retribution-open-raid": {
+     "before": 867.1996896662477,
+     "after": 959.2688552676696,
+     "base": 867.1996896662477,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.00329599999575,
+     "oom_after": 0.0002245000001
+    },
+    "ret-full-buffs-raid": {
+     "before": 866.9545499683262,
+     "after": 959.4312107626273,
+     "base": 866.9545499683262,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.0027173999986499996,
+     "oom_after": 0.000125
+    },
+    "opt-ret-dps-raid-dps": {
+     "before": 860.3687216611959,
+     "after": 957.1431359223258,
+     "base": 860.3687216611959,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: P4/P5 Ret": {
-     "before": 793.2001377725393,
-     "after": 878.511552973363,
-     "base": 793.2001377725393,
+     "before": 839.6817989093956,
+     "after": 931.3090189308732,
+     "base": 839.6817989093956,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "ret-raid-dps": {
-     "before": 794.6923455179133,
-     "after": 879.8463091073244,
-     "base": 794.6923455179133,
+     "before": 841.4708982867986,
+     "after": 932.8619757740335,
+     "base": 841.4708982867986,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
-    "ret-full-buffs-raid": {
-     "before": 818.0809275621231,
-     "after": 905.0163971650435,
-     "base": 818.0809275621231,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "opt-ret-dps-raid-dps": {
-     "before": 813.9192423893031,
-     "after": 903.0509943378862,
-     "base": 813.9192423893031,
+    "retribution-ml-raid": {
+     "before": 864.6100483171634,
+     "after": 960.4362610537535,
+     "base": 864.6100483171634,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -364,6 +385,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 7
+  "passes": 8
  }
 }

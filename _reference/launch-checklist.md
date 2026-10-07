@@ -379,6 +379,12 @@
 **Retribution — Raid (open talent search)** (`paladin/research/raid/builds/retribution-open-raid.md`)
 - [ ] An open-search Retribution build: check it against the community's Retribution builds at launch.
 
+**Prot-Ret — Leveling (open talent search)** (`paladin/research/leveling/builds/prot-ret-open-leveling.md`)
+- [ ] An open-search Prot-Ret leveling build: check it while leveling at launch.
+
+**Retribution — Leveling (open talent search)** (`paladin/research/leveling/builds/retribution-open-leveling.md`)
+- [ ] An open-search Retribution leveling build: check it while leveling at launch.
+
 ### Priest
 
 **Holy — Raid Healer (healer lab winner adopted 2026-09-26)** (`priest/research/raid/builds/holy-raid-healer.md`)

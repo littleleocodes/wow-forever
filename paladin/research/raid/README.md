@@ -36,13 +36,13 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) | ours: optimizer | 12/8/31 | 507 | +0.0% | 956 | -0.2% | 4 s |
-| 2 | [`retribution-ml-raid`](builds/retribution-ml-raid.md) | ours: hand draft | 11/8/32 | 499 | -1.5% | 957 | +0.0% | 14 s |
-| 3 | [`ret-raid-dps`](builds/ret-raid-dps.md) | ours: hand draft | 17/0/34 | 494 | -2.5% | 934 | -2.4% | 11 s |
-| 4 | *P4/P5 Ret* | community simulator | - | 491 | -3.3% | 929 | -2.9% | 5 s |
-| 5 | [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) | ours: hand draft | 10/8/33 | 485 | -4.3% | 954 | -0.3% | 20 s |
-| 6 | [`retribution-open-raid`](builds/retribution-open-raid.md) | ours: hand draft | 9/8/34 | 471 | -7.2% | 954 | -0.3% | 19 s |
-| 7 | *Retribution 9/0/42* | community simulator | - | 454 | -10.4% | 919 | -4.0% | 19 s |
+| 1 | [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) | ours: optimizer | 12/8/31 | 507 | +0.0% | 958 | -0.3% | 4 s |
+| 2 | [`retribution-ml-raid`](builds/retribution-ml-raid.md) | ours: hand draft | 11/8/32 | 499 | -1.5% | 961 | +0.0% | 14 s |
+| 3 | [`ret-raid-dps`](builds/ret-raid-dps.md) | ours: hand draft | 17/0/34 | 494 | -2.5% | 933 | -2.9% | 11 s |
+| 4 | *P4/P5 Ret* | community simulator | - | 491 | -3.3% | 931 | -3.1% | 5 s |
+| 5 | [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) | ours: hand draft | 10/8/33 | 485 | -4.3% | 959 | -0.2% | 20 s |
+| 6 | [`retribution-open-raid`](builds/retribution-open-raid.md) | ours: hand draft | 9/8/34 | 471 | -7.2% | 958 | -0.2% | 19 s |
+| 7 | *Retribution 9/0/42* | community simulator | - | 454 | -10.4% | 923 | -4.0% | 19 s |
 
 **prot-tank** (tank)
 
@@ -82,7 +82,7 @@ The spells new in Forever, what the simulators measured them doing, and the buil
 
 No new spell of this class opened a build of its own: the new spells go into the existing builds' rotations (above).
 
-The class's best raid DPS build on the training dummy: [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) (ret-dps), 507 DPS; in a raid: [`retribution-ml-raid`](builds/retribution-ml-raid.md) (ret-dps), 957 DPS.
+The class's best raid DPS build on the training dummy: [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) (ret-dps), 507 DPS; in a raid: [`retribution-ml-raid`](builds/retribution-ml-raid.md) (ret-dps), 961 DPS.
 
 ## Raid sim (community simulator, level 60)
 
@@ -120,14 +120,14 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 | `prot-tank` | sim preset: P4 Prot | - | 135 | 163 | 413 | 413 | 429 |
 | `prot-tank` | sim preset: P5 Prot | - | 132 | 159 | 407 | 407 | 427 |
 | `prot-tank` | sim preset: Protection 0/45/6 | - | 127 | 153 | 393 | 393 | 407 |
-| `ret-dps` | `opt-ret-dps-raid-dps` | 12/8/31 | 507 | 562 | 956 | 956 | 971 |
-| `ret-dps` | `retribution-ml-raid` | 11/8/32 | 499 | 555 | 957 | 957 | 975 |
-| `ret-dps` | `ret-raid-dps` | 17/0/34 | 494 | 559 | 934 | 934 | 947 |
-| `ret-dps` | sim preset: P4/P5 Ret | - | 491 | 557 | 929 | 929 | 945 |
-| `ret-dps` | `ret-full-buffs-raid` | 10/8/33 | 485 | 539 | 954 | 954 | 978 |
-| `ret-dps` | `retribution-open-raid` | 9/8/34 | 471 | 528 | 954 | 954 | 979 |
-| `ret-dps` | `opt-ret-dps-parse` | 9/8/34 | 471 | 528 | 954 | 954 | 979 |
-| `ret-dps` | sim preset: Retribution 9/0/42 | - | 454 | 524 | 919 | 919 | 939 |
+| `ret-dps` | `opt-ret-dps-raid-dps` | 12/8/31 | 507 | 562 | 958 | 958 | 971 |
+| `ret-dps` | `retribution-ml-raid` | 11/8/32 | 499 | 555 | 961 | 961 | 975 |
+| `ret-dps` | `ret-raid-dps` | 17/0/34 | 494 | 559 | 933 | 933 | 947 |
+| `ret-dps` | sim preset: P4/P5 Ret | - | 491 | 557 | 931 | 931 | 945 |
+| `ret-dps` | `ret-full-buffs-raid` | 10/8/33 | 485 | 539 | 959 | 959 | 976 |
+| `ret-dps` | `retribution-open-raid` | 9/8/34 | 471 | 528 | 958 | 958 | 976 |
+| `ret-dps` | `opt-ret-dps-parse` | 9/8/34 | 471 | 528 | 958 | 958 | 976 |
+| `ret-dps` | sim preset: Retribution 9/0/42 | - | 454 | 524 | 923 | 923 | 939 |
 
 **Classic Era check** — [`../talents/classic-baseline/raidsim/`](../talents/classic-baseline/raidsim/): the same run of our Classic-era community builds through the upstream wowsims/classic simulator (commit 7779ebb, its phase-1 presets), which the scorer's classic-era models are calibrated against. Our builds there are the community's; a preset ahead of them means the simulator's rotation prefers other talents.
 

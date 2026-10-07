@@ -189,6 +189,8 @@ Models: holy-heal, ret-dps, prot-tank. Same mob, same gear, ~10 kills each, note
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 - Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
 - Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
+- An open-search Prot-Ret leveling build: check it while leveling at launch.
+- An open-search Retribution leveling build: check it while leveling at launch.
 
 ## Priest
 

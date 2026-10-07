@@ -63,6 +63,7 @@ One point per level from 10, in this order:
 
 ## Other builds of this spec
 
+- [Retribution — Leveling](../research/leveling/builds/retribution-open-leveling.md) (11/8/32, 28 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/paladin/60/50103101-503-1522513100133032-4)
 - [Two-handed Retribution](../research/leveling/builds/opt-ret-dps-leveling-st.md) (15/0/36, 28 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/paladin/60/520030032--5022533120133132-4)
 - [Two-handed Retribution](../research/leveling/builds/opt-ret-dps-leveling-aoe.md) (8/8/35) — [open the talent tree](https://talentsforever.com/paladin/60/50003-503-05225331101330321-4)
 - [Two-handed Retribution](../research/leveling/builds/opt-ret-dps-solo-60.md) (15/0/36) — [open the talent tree](https://talentsforever.com/paladin/60/520030032--5022533120133132-4)

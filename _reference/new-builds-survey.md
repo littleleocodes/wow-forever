@@ -103,7 +103,7 @@ The class's best raid DPS build on the training dummy: [`frost-ml-raid`](../mage
 
 No new spell of this class opened a build of its own: the new spells go into the existing builds' rotations (above).
 
-The class's best raid DPS build on the training dummy: [`opt-ret-dps-raid-dps`](../paladin/research/raid/builds/opt-ret-dps-raid-dps.md) (ret-dps), 507 DPS; in a raid: [`retribution-ml-raid`](../paladin/research/raid/builds/retribution-ml-raid.md) (ret-dps), 957 DPS.
+The class's best raid DPS build on the training dummy: [`opt-ret-dps-raid-dps`](../paladin/research/raid/builds/opt-ret-dps-raid-dps.md) (ret-dps), 507 DPS; in a raid: [`retribution-ml-raid`](../paladin/research/raid/builds/retribution-ml-raid.md) (ret-dps), 961 DPS.
 
 ## Priest
 

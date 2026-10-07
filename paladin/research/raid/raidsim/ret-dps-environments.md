@@ -4,14 +4,14 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `opt-ret-dps-raid-dps` | 12/8/31 | 507 | 562 | 956 | 956 | 971 |
-| `retribution-ml-raid` | 11/8/32 | 499 | 555 | 957 | 957 | 975 |
-| `ret-raid-dps` | 17/0/34 | 494 | 559 | 934 | 934 | 947 |
-| sim preset: P4/P5 Ret | - | 491 | 557 | 929 | 929 | 945 |
-| `ret-full-buffs-raid` | 10/8/33 | 485 | 539 | 954 | 954 | 978 |
-| `retribution-open-raid` | 9/8/34 | 471 | 528 | 954 | 954 | 979 |
-| `opt-ret-dps-parse` | 9/8/34 | 471 | 528 | 954 | 954 | 979 |
-| sim preset: Retribution 9/0/42 | - | 454 | 524 | 919 | 919 | 939 |
+| `opt-ret-dps-raid-dps` | 12/8/31 | 507 | 562 | 958 | 958 | 971 |
+| `retribution-ml-raid` | 11/8/32 | 499 | 555 | 961 | 961 | 975 |
+| `ret-raid-dps` | 17/0/34 | 494 | 559 | 933 | 933 | 947 |
+| sim preset: P4/P5 Ret | - | 491 | 557 | 931 | 931 | 945 |
+| `ret-full-buffs-raid` | 10/8/33 | 485 | 539 | 959 | 959 | 976 |
+| `retribution-open-raid` | 9/8/34 | 471 | 528 | 958 | 958 | 976 |
+| `opt-ret-dps-parse` | 9/8/34 | 471 | 528 | 958 | 958 | 976 |
+| sim preset: Retribution 9/0/42 | - | 454 | 524 | 923 | 923 | 939 |
 
 - **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
 - **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
@@ -25,14 +25,14 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
-| `opt-ret-dps-raid-dps` | 507 | +6% | +8% | +28% | +27% | +20% | 956 |
-| `retribution-ml-raid` | 499 | +8% | +9% | +29% | +27% | +20% | 957 |
-| `ret-raid-dps` | 494 | +6% | +9% | +28% | +27% | +20% | 934 |
-| sim preset: P4/P5 Ret | 491 | +6% | +9% | +29% | +26% | +19% | 929 |
-| `ret-full-buffs-raid` | 485 | +10% | +9% | +30% | +28% | +20% | 954 |
-| `retribution-open-raid` | 471 | +13% | +9% | +31% | +28% | +20% | 954 |
-| `opt-ret-dps-parse` | 471 | +13% | +9% | +31% | +28% | +20% | 954 |
-| sim preset: Retribution 9/0/42 | 454 | +14% | +9% | +31% | +28% | +20% | 919 |
+| `opt-ret-dps-raid-dps` | 507 | +6% | +8% | +28% | +27% | +20% | 958 |
+| `retribution-ml-raid` | 499 | +8% | +9% | +29% | +27% | +20% | 961 |
+| `ret-raid-dps` | 494 | +6% | +9% | +28% | +27% | +19% | 933 |
+| sim preset: P4/P5 Ret | 491 | +6% | +9% | +29% | +26% | +20% | 931 |
+| `ret-full-buffs-raid` | 485 | +10% | +9% | +30% | +28% | +21% | 959 |
+| `retribution-open-raid` | 471 | +13% | +9% | +31% | +28% | +21% | 958 |
+| `opt-ret-dps-parse` | 471 | +13% | +9% | +31% | +28% | +21% | 958 |
+| sim preset: Retribution 9/0/42 | 454 | +14% | +9% | +31% | +28% | +21% | 923 |
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
 

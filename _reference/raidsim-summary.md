@@ -14,7 +14,7 @@ The best of our builds per spec model on the boss-level training dummy with your
 | Class | Game | Spec model | Best build | Dummy | Dummy 60 | Raid | Maximum | Max 60 s | Parse build (max) | Best preset (max) |
 |---|---|---|---|---|---|---|---|---|---|---|
 | paladin | Forever | `prot-tank` | `prot-tank` (0/23/28) | 144 | 174 | 469 | 469 | 471 | - | P4 Prot 413 |
-| paladin | Forever | `ret-dps` | `retribution-ml-raid` (11/8/32) | 499 | 555 | 957 | 957 | 975 | `opt-ret-dps-parse` 954 | P4/P5 Ret 929 |
+| paladin | Forever | `ret-dps` | `retribution-ml-raid` (11/8/32) | 499 | 555 | 961 | 961 | 975 | `opt-ret-dps-parse` 958 | P4/P5 Ret 931 |
 | paladin | Classic | `ret-dps` | `ret-raid-dps` (11/0/40) | 213 | - | 661 | 661 | 671 | - | P4/P5 Ret 710 |
 
 ## Classic Era check (upstream wowsims/classic)

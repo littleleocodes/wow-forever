@@ -26,7 +26,7 @@ Our tuned rotation `ret-dps.apl.json` (the simulator's `default.apl.json` with t
   15. drop 'mana % ≥ 15%' from the condition: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness (+0.2%, pass 5)
   16. threshold 70% -> 65%: if mana % ≥ 15% and Seal of Righteousness is up and mana % ≥ 70%: cast Seal of Command (+0.5%, pass 5)
   17. threshold 1s -> 2s: if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 1s: cast Seal of Command (+0.2%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 7 passes, the last 2026-10-05, 10 changes to the base rotation; third-seed check: retribution-ml-raid 818 -> 907 DPS (+10.9%), sim preset: P4/P5 Ret 793 -> 879 DPS (+10.8%), ret-raid-dps 795 -> 880 DPS (+10.7%), ret-full-buffs-raid 818 -> 905 DPS (+10.6%), opt-ret-dps-raid-dps 814 -> 903 DPS (+11.0%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-07, 11 changes to the base rotation; third-seed check: retribution-open-raid 867 -> 959 DPS (+10.6%), ret-full-buffs-raid 867 -> 959 DPS (+10.7%), opt-ret-dps-raid-dps 860 -> 957 DPS (+11.2%), sim preset: P4/P5 Ret 840 -> 931 DPS (+10.9%), ret-raid-dps 841 -> 933 DPS (+10.9%), retribution-ml-raid 865 -> 960 DPS (+11.1%)):
   1. drop 'time left on Seal of Righteousness ≤ 1s' from the condition: if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 1s: cast Seal of Command (+2.4%, pass 1)
   2. threshold 70% -> 50%: if mana % ≥ 70%: cast Consecration (+1.4%, pass 1)
   3. move to the top: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness (+0.2%, pass 1)
@@ -37,6 +37,7 @@ Our tuned rotation `ret-dps.apl.json` (the simulator's `default.apl.json` with t
   8. insert in the middle: cast Consecration (+7.1%, pass 5)
   9. insert in the middle: cast Demonic Rune (+0.2%, pass 5)
   10. rotation replaced by seal-of-fury-raid's raid rotation (keeps Seal of Righteousness up and judges it, Holy Strike, almost no seal twisting), which the open search's re-tune on a Retribution build produced (+2.0% on one seed, pass 6)
+  11. always rank 4 instead of rank 5: if mana % ≥ 15% and Seal of Righteousness is up: cast Seal of Command (+0.3%, pass 8)
 
 The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring change what mana is worth), top priority first:
 
