@@ -7,8 +7,8 @@ Every legal 51-point build, no tree rule, searched in each leveling rotation of 
 | Rotation | Trees that level with it | Open winner | Family | Seconds per kill (20-60) | vs our fastest there |
 |---|---|---|---|---|---|
 | holy-leveling | Holy | [8/16/27](https://talentsforever.com/paladin/60/50003-5231110021-332052310013301-4) | Hybrid Protection/Retribution | 27.48 | +29.0% faster than holy-leveling |
-| prot-leveling | Protection | [0/22/29](https://talentsforever.com/paladin/60/-15303103013002-2522513010103031-4) | Hybrid Protection/Retribution | 34.87 | +2.2% faster than protection-leveling |
-| ret-dps | Retribution | [11/8/32](https://talentsforever.com/paladin/60/50103101-503-1522513100133032-4) | Retribution | 27.88 | +0.6% faster than leveling-retribution |
+| prot-leveling | Protection | [0/22/29](https://talentsforever.com/paladin/60/-15303103013002-2512523010103031-4) | Hybrid Protection/Retribution | 32.52 | +9.6% faster than protection-leveling |
+| ret-dps | Retribution | [11/8/32](https://talentsforever.com/paladin/60/50103101-503-1522513100133032-4) | Retribution | 27.83 | +0.8% faster than leveling-retribution |
 
 ## holy-leveling
 
@@ -38,7 +38,7 @@ Every legal 51-point build, no tree rule, searched in each leveling rotation of 
 | Guardian's Favor | 1 | +0.00 | +0.00 |
 | Improved Seal of Fury | 1 | +0.00 | +0.00 |
 
-Race at levels 20-60 (seconds per kill): open winner 27.48, holy-leveling 35.45.
+Race at levels 20-60 (seconds per kill): open winner 27.48, finalist 8/16/27 (own tree first order) 27.57, finalist 8/16/27 (own tree last order) 30.72, holy-leveling 35.45.
 
 **Synergy certificate** (2026-10-07, fightlab/fl_synergy.py): 39 relevant talents, 22 the winner lacks; 639 pairs measured around 8/16/27 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Holy Shield + Sanctified Judgement +3.5% (build -20.7%), Reverence + Holy Shock +2.4% (build +2.8%), Holy Shock + Vengeance +1.8% (build -2.2%), Holy Shield + Conviction +1.8% (build -16.8%), Holy Shock + Improved Hammer of Justice +1.7% (build -0.6%), Improved Hammer of Justice + Holy Shield +1.5% (build -13.7%). No pair build within 1% of the winner. The certificate confirms the winner.
 
@@ -48,37 +48,37 @@ Build (2026-10-07, open_builds.py): `prot-ret-open-leveling`.
 
 ## prot-leveling
 
-**Open winner 0/22/29** (Hybrid Protection/Retribution): talent values at level 60 (seconds per kill lost without the talent; the build: 34.07 s):
+**Open winner 0/22/29** (Hybrid Protection/Retribution): talent values at level 60 (seconds per kill lost without the talent; the build: 34.34 s):
 
 | Talent | Ranks | Seconds lost without it | Per point |
 |---|---|---|---|
-| Sanctified Judgement | 3 | +3.32 | +1.11 |
-| Holy Conduit | 2 | +3.15 | +1.57 |
-| Improved Seal of Fury | 1 | +2.81 | +2.81 |
-| One-Handed Weapon Specialization | 3 | +2.53 | +0.84 |
-| Conviction | 5 | +1.51 | +0.30 |
-| Champion of the Light | 3 | +0.94 | +0.31 |
-| Vengeance | 3 | +0.93 | +0.31 |
+| Holy Conduit | 2 | +3.33 | +1.66 |
+| Sanctified Judgement | 3 | +3.24 | +1.08 |
+| Improved Seal of Fury | 1 | +2.98 | +2.98 |
+| One-Handed Weapon Specialization | 3 | +2.73 | +0.91 |
+| Conviction | 5 | +1.55 | +0.31 |
+| Vengeance | 3 | +1.15 | +0.38 |
+| Champion of the Light | 3 | +1.10 | +0.37 |
+| Sacred Arbiter | 1 | +0.85 | +0.85 |
+| Swift Judgement | 1 | +0.74 | +0.74 |
 | Precision | 3 | +0.71 | +0.24 |
-| Shield Specialization | 3 | +0.63 | +0.21 |
-| Improved Judgement | 2 | +0.61 | +0.31 |
-| Swift Judgement | 1 | +0.60 | +0.60 |
-| Sacred Arbiter | 1 | +0.47 | +0.47 |
-| Redoubt | 5 | +0.30 | +0.06 |
-| Reckoning | 2 | +0.18 | +0.09 |
-| Vindication | 1 | +0.08 | +0.08 |
-| Benediction | 5 | +0.07 | +0.01 |
+| Shield Specialization | 3 | +0.52 | +0.17 |
+| Redoubt | 5 | +0.44 | +0.09 |
+| Reckoning | 2 | +0.39 | +0.19 |
+| Improved Judgement | 1 | +0.35 | +0.35 |
+| Vindication | 2 | +0.22 | +0.11 |
+| Benediction | 5 | +0.17 | +0.03 |
+| Instrument of Law | 1 | +0.11 | +0.11 |
+| Toughness | 1 | +0.02 | +0.02 |
 | Pursuit of Justice | 1 | +0.00 | +0.00 |
-| Instrument of Law | 1 | -0.05 | -0.05 |
-| Toughness | 1 | -0.08 | -0.08 |
-| Anticipation | 3 | -0.11 | -0.04 |
-| Deflection | 2 | -0.16 | -0.08 |
+| Deflection | 2 | -0.05 | -0.03 |
+| Anticipation | 3 | -0.10 | -0.03 |
 
-Race at levels 20-60 (seconds per kill): open winner 34.87, finalist 2/19/30 35.11, protection-leveling 35.64.
+Race at levels 20-60 (seconds per kill): open winner 32.52, finalist 0/22/29 (stats model's order) 34.46, finalist 0/22/29 (own tree first order) 34.46, finalist 0/22/29 (before the 20-60 polish) 34.87, finalist 2/19/30 35.11, protection-leveling 35.64.
 
-**Synergy certificate** (2026-10-07, fightlab/fl_synergy.py): 39 relevant talents, 22 the winner lacks; 649 pairs measured around 0/22/29 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Reverence + Holy Shield +4.2% (build +6.0%), Holy Shield + Vindication +3.1% (build +2.7%), Reverence + Shield Specialization +2.9% (build -0.2%), Divine Precision + Redoubt +2.1% (build -0.5%), Holy Shield + Conviction +2.0% (build -0.8%), Holy Shield + Holy Conduit +1.7% (build -4.9%). No pair build within 1% of the winner. The certificate confirms the winner.
+**Synergy certificate** (2026-10-07, fightlab/fl_synergy.py): 39 relevant talents, 22 the winner lacks; 649 pairs measured around 0/22/29 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Holy Shield + Sacred Arbiter +2.4% (build +0.4%), Divine Precision + Sacred Arbiter +2.1% (build -1.6%), Improved Righteous Fury + Sacred Arbiter +2.1% (build -1.8%), Holy Shield + Vengeance +2.0% (build -1.0%), Improved Righteous Fury + Sanctified Judgement +2.0% (build -8.2%), Holy Shield + Holy Conduit +2.0% (build -5.9%). No pair build within 1% of the winner. The certificate confirms the winner.
 
-Under the other leveling rotations (seconds per kill, 20-60): holy-leveling 31.58, ret-dps 31.98; **holy-leveling plays it faster (31.58 s against 34.87 s): the page shows it with that rotation.**
+Under the other leveling rotations (seconds per kill, 20-60): holy-leveling 34.07, ret-dps 34.54; its own rotation plays it best (32.52 s).
 
 Build (2026-10-07, open_builds.py): the holy-leveling rotation's winner of the same spec is faster (27.48 against 34.87 s per kill).
 
@@ -109,11 +109,11 @@ Build (2026-10-07, open_builds.py): the holy-leveling rotation's winner of the s
 | Healing Light | 1 | +0.01 | +0.01 |
 | Unyielding Faith | 1 | +0.00 | +0.00 |
 
-Race at levels 20-60 (seconds per kill): open winner 27.88, finalist 9/8/34 27.96, leveling-retribution 28.04, opt-ret-dps-solo-60 28.32, opt-ret-dps-leveling-st 28.38, opt-ret-dps-leveling-aoe 29.21.
+Race at levels 20-60 (seconds per kill): open winner 27.83, finalist 11/8/32 (stats model's order) 27.88, finalist 9/8/34 27.96, leveling-retribution 28.04, opt-ret-dps-solo-60 28.32, opt-ret-dps-leveling-st 28.38, opt-ret-dps-leveling-aoe 29.21, finalist 11/8/32 (own tree last order) 29.91.
 
 **Synergy certificate** (2026-10-07, fightlab/fl_synergy.py): 39 relevant talents, 24 the winner lacks; 675 pairs measured around 11/8/32 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Reckoning + Two-Handed Weapon Specialization +1.3% (build -0.6%), Improved Hammer of Justice + Improved Seals +1.0% (build -1.9%), Improved Hammer of Justice + Two-Handed Weapon Specialization +0.9% (build -3.2%), Improved Hammer of Justice + Champion of the Light +0.8% (build +0.3%), Improved Hammer of Justice + Vengeance +0.7% (build -0.4%), Twist of Light + Improved Seals +0.7% (build -2.5%). No pair build within 1% of the winner. The certificate confirms the winner.
 
-Under the other leveling rotations (seconds per kill, 20-60): holy-leveling 27.92, prot-leveling 36.94; its own rotation plays it best (27.88 s).
+Under the other leveling rotations (seconds per kill, 20-60): holy-leveling 27.85, prot-leveling 36.86; its own rotation plays it best (27.83 s).
 
 Build (2026-10-07, open_builds.py): `retribution-open-leveling`.
 

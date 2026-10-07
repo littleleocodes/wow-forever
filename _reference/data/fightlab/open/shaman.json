@@ -611,6 +611,16 @@
       "50": 41.15,
       "60": 37.37
      }
+    },
+    "finalist 31/11/9 (stats model order)": {
+     "weighted": 37.6,
+     "levels": {
+      "20": 28.08,
+      "30": 39.55,
+      "40": 38.13,
+      "50": 40.1,
+      "60": 37.37
+     }
     }
    },
    "values_base": 37.31,
@@ -660,7 +670,7 @@
       "seconds_30_50": 38.45
      }
     ],
-    "minutes": 0.1,
+    "minutes": 0.2,
     "changed": true
    },
    "values": {
@@ -7926,7 +7936,137 @@
     "why": null,
     "spec": "Elemental",
     "date": "2026-10-07"
-   }
+   },
+   "order_stats": [
+    {
+     "levels": "10-14",
+     "tree": "Elemental",
+     "talent": "Convection",
+     "points": 5
+    },
+    {
+     "levels": "15-17",
+     "tree": "Elemental",
+     "talent": "Call of Flame",
+     "points": 3
+    },
+    {
+     "levels": "18-19",
+     "tree": "Elemental",
+     "talent": "Concussion",
+     "points": 2
+    },
+    {
+     "levels": "20",
+     "tree": "Elemental",
+     "talent": "Elemental Focus",
+     "points": 1
+    },
+    {
+     "levels": "21-25",
+     "tree": "Enhancement",
+     "talent": "Thundering Strikes",
+     "points": 5
+    },
+    {
+     "levels": "26-27",
+     "tree": "Enhancement",
+     "talent": "Improved Ghost Wolf",
+     "points": 2
+    },
+    {
+     "levels": "28-30",
+     "tree": "Enhancement",
+     "talent": "Improved Lightning Shield",
+     "points": 3
+    },
+    {
+     "levels": "31",
+     "tree": "Enhancement",
+     "talent": "Shamanistic Focus",
+     "points": 1
+    },
+    {
+     "levels": "32-34",
+     "tree": "Elemental",
+     "talent": "Elemental Alacrity",
+     "points": 3
+    },
+    {
+     "levels": "35",
+     "tree": "Elemental",
+     "talent": "Concussion",
+     "points": 1
+    },
+    {
+     "levels": "36",
+     "tree": "Elemental",
+     "talent": "Call of Thunder",
+     "points": 1
+    },
+    {
+     "levels": "37-39",
+     "tree": "Elemental",
+     "talent": "Eye of the Storm",
+     "points": 3
+    },
+    {
+     "levels": "40",
+     "tree": "Elemental",
+     "talent": "Reverberation",
+     "points": 1
+    },
+    {
+     "levels": "41-43",
+     "tree": "Elemental",
+     "talent": "Lightning Overload",
+     "points": 3
+    },
+    {
+     "levels": "44",
+     "tree": "Elemental",
+     "talent": "Reverberation",
+     "points": 1
+    },
+    {
+     "levels": "45",
+     "tree": "Elemental",
+     "talent": "Elemental Devastation",
+     "points": 1
+    },
+    {
+     "levels": "46-50",
+     "tree": "Elemental",
+     "talent": "Elemental Fury",
+     "points": 5
+    },
+    {
+     "levels": "51",
+     "tree": "Elemental",
+     "talent": "Lava Burst",
+     "points": 1
+    },
+    {
+     "levels": "52-56",
+     "tree": "Restoration",
+     "talent": "Totemic Focus",
+     "points": 5
+    },
+    {
+     "levels": "57-59",
+     "tree": "Restoration",
+     "talent": "Mindfulness",
+     "points": 3
+    },
+    {
+     "levels": "60",
+     "tree": "Restoration",
+     "talent": "Tidal Focus",
+     "points": 1
+    }
+   ],
+   "order_stats_split": "31/11/9",
+   "orders_raced": "31/11/9"
   },
   "enhancement-dps": {
    "model": "enhancement-dps",
@@ -8557,13 +8697,13 @@
       "60": 36.21
      }
     },
-    "finalist 9/32/10 (own tree first order)": {
-     "weighted": 32.72,
+    "finalist 9/32/10 (stats model order)": {
+     "weighted": 32.9,
      "levels": {
       "20": 20.87,
       "30": 30.41,
-      "40": 33.06,
-      "50": 34.39,
+      "40": 33.97,
+      "50": 34.37,
       "60": 36.21
      }
     }
@@ -8597,7 +8737,7 @@
     "minutes": 1.5,
     "changed": true
    },
-   "order_label": "stats model",
+   "order_label": "own tree first",
    "order_polish": {
     "date": "2026-10-07",
     "levels": [
@@ -8605,7 +8745,7 @@
      40,
      50
     ],
-    "from": "stats model",
+    "from": "own tree first",
     "steps": [],
     "minutes": 0.1,
     "changed": false
@@ -16079,7 +16219,143 @@
     "why": null,
     "spec": "Enhancement",
     "date": "2026-10-07"
-   }
+   },
+   "order_stats": [
+    {
+     "levels": "10-14",
+     "tree": "Enhancement",
+     "talent": "Thundering Strikes",
+     "points": 5
+    },
+    {
+     "levels": "15-17",
+     "tree": "Enhancement",
+     "talent": "Mental Dexterity",
+     "points": 3
+    },
+    {
+     "levels": "18-19",
+     "tree": "Enhancement",
+     "talent": "Improved Lightning Shield",
+     "points": 2
+    },
+    {
+     "levels": "20",
+     "tree": "Enhancement",
+     "talent": "Shamanistic Focus",
+     "points": 1
+    },
+    {
+     "levels": "21",
+     "tree": "Enhancement",
+     "talent": "Improved Lightning Shield",
+     "points": 1
+    },
+    {
+     "levels": "22-24",
+     "tree": "Enhancement",
+     "talent": "Elemental Weapons",
+     "points": 3
+    },
+    {
+     "levels": "25",
+     "tree": "Enhancement",
+     "talent": "Stormstrike",
+     "points": 1
+    },
+    {
+     "levels": "26-29",
+     "tree": "Enhancement",
+     "talent": "Flurry",
+     "points": 4
+    },
+    {
+     "levels": "30-31",
+     "tree": "Enhancement",
+     "talent": "Mental Quickness",
+     "points": 2
+    },
+    {
+     "levels": "32",
+     "tree": "Enhancement",
+     "talent": "Flurry",
+     "points": 1
+    },
+    {
+     "levels": "33",
+     "tree": "Enhancement",
+     "talent": "Spirit Weapons",
+     "points": 1
+    },
+    {
+     "levels": "34-38",
+     "tree": "Restoration",
+     "talent": "Totemic Focus",
+     "points": 5
+    },
+    {
+     "levels": "39-43",
+     "tree": "Restoration",
+     "talent": "Tidal Focus",
+     "points": 5
+    },
+    {
+     "levels": "44-45",
+     "tree": "Enhancement",
+     "talent": "Improved Stormstrike",
+     "points": 2
+    },
+    {
+     "levels": "46-49",
+     "tree": "Enhancement",
+     "talent": "Maelstrom Weapon",
+     "points": 4
+    },
+    {
+     "levels": "50",
+     "tree": "Enhancement",
+     "talent": "Rage of the Farseer",
+     "points": 1
+    },
+    {
+     "levels": "51",
+     "tree": "Elemental",
+     "talent": "Concussion",
+     "points": 1
+    },
+    {
+     "levels": "52-55",
+     "tree": "Elemental",
+     "talent": "Convection",
+     "points": 4
+    },
+    {
+     "levels": "56-57",
+     "tree": "Elemental",
+     "talent": "Call of Flame",
+     "points": 2
+    },
+    {
+     "levels": "58",
+     "tree": "Elemental",
+     "talent": "Elemental Devastation",
+     "points": 1
+    },
+    {
+     "levels": "59",
+     "tree": "Elemental",
+     "talent": "Convection",
+     "points": 1
+    },
+    {
+     "levels": "60",
+     "tree": "Enhancement",
+     "talent": "Maelstrom Weapon",
+     "points": 1
+    }
+   ],
+   "order_stats_split": "9/32/10",
+   "orders_raced": "9/32/10"
   }
  },
  "cross": {

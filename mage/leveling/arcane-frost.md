@@ -4,7 +4,7 @@
 
 *A Frostbolt caster with Arcane's mana and cooldown talents (Arcane Power, Presence of Mind).* (a hybrid: Arcane/Frost).
 
-**[Arcane-Frost — Leveling](../research/leveling/builds/arcane-frost-open-leveling.md)** (28/1/22) — [open the talent tree](https://talentsforever.com/mage/60/05010501310031053-01-20350030310003002-4)
+**[Arcane-Frost — Leveling](../research/leveling/builds/arcane-frost-open-leveling.md)** (28/1/22) — [open the talent tree](https://talentsforever.com/mage/60/23210501310011053-01-20350030310003002-4)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
@@ -40,15 +40,17 @@ One point per level from 10, in this order:
 | 28-29 | Shatter (Frost) | 2 |
 | 30-31 | Fingers of Frost (Frost) | 2 |
 | 32 | Incineration (Fire) | 1 |
-| 33-37 | Arcane Focus (Arcane) | 5 |
+| 33-35 | Arcane Focus (Arcane) | 3 |
+| 36-37 | Improved Channeling (Arcane) | 2 |
 | 38-41 | Arcane Concentration (Arcane) | 4 |
 | 42 | Arcane Subtlety (Arcane) | 1 |
 | 43 | Arcane Concentration (Arcane) | 1 |
 | 44 | Arcane Geometry (Arcane) | 1 |
 | 45-47 | Arcane Impact (Arcane) | 3 |
-| 48-50 | Arcane Meditation (Arcane) | 3 |
-| 51 | Arcane Blast (Arcane) | 1 |
-| 52 | Missile Barrage (Arcane) | 1 |
+| 48 | Arcane Meditation (Arcane) | 1 |
+| 49 | Arcane Blast (Arcane) | 1 |
+| 50 | Missile Barrage (Arcane) | 1 |
+| 51-52 | Wand Specialization (Arcane) | 2 |
 | 53-57 | Arcane Mind (Arcane) | 5 |
 | 58-60 | Arcane Instability (Arcane) | 3 |
 
@@ -59,7 +61,7 @@ One point per level from 10, in this order:
 | 20 | 28 |
 | 30 | 29 |
 | 40 | 32 |
-| 50 | 25 |
+| 50 | 26 |
 | 60 | 24 |
 
 ---

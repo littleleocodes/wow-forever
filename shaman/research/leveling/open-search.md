@@ -35,11 +35,13 @@ Every legal 51-point build, no tree rule, searched in each leveling rotation of 
 | Tidal Focus | 1 | +0.09 | +0.09 |
 | Improved Ghost Wolf | 2 | +0.00 | +0.00 |
 
-Race at levels 20-60 (seconds per kill): open winner 37.28, finalist 31/11/9 (polished order) 37.36, finalist 31/11/9 (stats model's order) 37.60, opt-elemental-dps-leveling-st 38.04, finalist 31/11/9 (before the 20-60 polish) 38.39, finalist 31/11/9 (own tree first order) 38.45.
+Race at levels 20-60 (seconds per kill): open winner 37.28, finalist 31/11/9 (polished order) 37.36, finalist 31/11/9 (stats model's order) 37.60, finalist 31/11/9 (stats model order) 37.60, opt-elemental-dps-leveling-st 38.04, finalist 31/11/9 (before the 20-60 polish) 38.39, finalist 31/11/9 (own tree first order) 38.45.
 
 **Synergy certificate** (2026-10-07, fightlab/fl_synergy.py): 35 relevant talents, 17 the winner lacks; 501 pairs measured around 31/11/9 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Maelstrom Weapon + Elemental Focus +3.5% (build -3.0%), Maelstrom Weapon + Lightning Overload +2.8% (build -0.3%), Mental Dexterity + Elemental Alacrity +2.7% (build -0.9%), Spirit Weapons + Call of Flame +2.6% (build -1.8%), Maelstrom Weapon + Eye of the Storm +2.6% (build -0.0%), Elemental Reach + Shamanistic Focus +2.5% (build -12.8%). No pair build within 1% of the winner. The certificate confirms the winner.
 
 Under the other leveling rotations (seconds per kill, 20-60): enhancement-dps 37.26; its own rotation plays it best (37.28 s).
+
+Build (2026-10-07, open_builds.py): `elemental-open-leveling`.
 
 ## enhancement-dps
 
@@ -66,9 +68,11 @@ Under the other leveling rotations (seconds per kill, 20-60): enhancement-dps 37
 | Elemental Devastation | 1 | +0.04 | +0.04 |
 | Concussion | 1 | +0.03 | +0.03 |
 
-Race at levels 20-60 (seconds per kill): open winner 32.72, finalist 9/32/10 (own tree first order) 32.72, finalist 10/31/10 (before the 20-60 polish) 33.27, opt-enhancement-dps-leveling-st 33.58, leveling-enhancement 33.61, opt-enhancement-dps-solo-60 33.82, finalist 9/32/10 (own tree last order) 34.22, opt-enhancement-dps-leveling-aoe 37.26, restoration-leveling 43.23.
+Race at levels 20-60 (seconds per kill): open winner 32.72, finalist 9/32/10 (stats model order) 32.90, finalist 10/31/10 (before the 20-60 polish) 33.27, opt-enhancement-dps-leveling-st 33.58, leveling-enhancement 33.61, opt-enhancement-dps-solo-60 33.82, finalist 9/32/10 (own tree last order) 34.22, opt-enhancement-dps-leveling-aoe 37.26, restoration-leveling 43.23.
 
 **Synergy certificate** (2026-10-07, fightlab/fl_synergy.py): 35 relevant talents, 18 the winner lacks; 519 pairs measured around 9/32/10 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Elemental Reach + Mental Quickness +2.1% (build -0.0%), Elemental Focus + Flurry +2.1% (build -0.6%), Elemental Focus + Elemental Reach +1.9% (build +1.6%), Mindfulness + Improved Stormstrike +1.9% (build +0.2%), Reverberation + Shamanistic Focus +1.8% (build -7.7%), Elemental Reach + Flurry +1.6% (build -1.6%). No pair build within 1% of the winner. The certificate confirms the winner.
 
 Under the other leveling rotations (seconds per kill, 20-60): elemental-dps 40.52; its own rotation plays it best (32.72 s).
+
+Build (2026-10-07, open_builds.py): `enhancement-open-leveling`.
 

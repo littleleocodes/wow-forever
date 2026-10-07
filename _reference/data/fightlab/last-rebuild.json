@@ -7506,9 +7506,9 @@
   }
  },
  "last_run": {
-  "date": "2026-10-07T16:59:08",
+  "date": "2026-10-07T17:19:43",
   "classes": [
-   "hunter"
+   "mage"
   ],
   "steps": [
    "regen"
@@ -7519,31 +7519,31 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 77,
+  "seconds": 303,
   "refresh": null,
   "regen_log": [
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py hunter",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py mage",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "formatted F:\\wow-forever\\hunter\\research\\talents\\forever\\proposed-builds.json",
-     "hunter: README section + leveling-beast-mastery note written"
+     "formatted F:\\wow-forever\\mage\\research\\talents\\forever\\proposed-builds.json",
+     "mage: README section + leveling-frost note written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py hunter",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py mage",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "hunter: raid sim section written (4 specs)",
+     "mage: raid sim section written (4 specs)",
      "wrote _reference\\raidsim-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py hunter",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py mage",
     "rc": 0,
     "seconds": 0,
     "tail": [
@@ -7552,29 +7552,29 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py hunter",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py mage",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "hunter: leveling/guide.md written"
+     "mage: leveling/guide.md written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py hunter",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py mage",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "hunter: raid gear and consumables written"
+     "mage: raid gear and consumables written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py hunter",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py mage",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "hunter: raid and leveling rotations, DPS ranking written"
+     "mage: raid and leveling rotations, DPS ranking written"
     ],
     "stderr": []
    },
@@ -7601,7 +7601,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_builds.py",
     "rc": 0,
-    "seconds": 2,
+    "seconds": 3,
     "tail": [
      "rogue/classic-baseline: 5 build pages + README.md",
      "rogue: 22 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
@@ -7619,7 +7619,7 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py hunter",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py mage",
     "rc": 0,
     "seconds": 1,
     "tail": [
@@ -7647,15 +7647,15 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py hunter --write",
+    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py mage --write",
     "rc": 0,
-    "seconds": 67,
+    "seconds": 292,
     "tail": [
-     "| bm-leveling -> level-20 build (0/11/0) | +0.2% | +1.9% | +6.0% | +8.3% | +11.0% | +14.2% | +16.1% | +19.3% | +20.7% | +22.4% | +27.6% |",
-     "| bm-leveling -> level-30 build (21/0/0) | +0.4% | +2.2% | +3.6% | +10.7% | +12.2% | +12.9% | +17.4% | +19.4% | +20.5% | +24.7% | +26.2% |",
-     "| bm-leveling -> level-40 build (16/15/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.5% | +16.0% | +18.0% | +19.2% | +23.4% | +24.7% | +27.6% |",
-     "| bm-leveling -> level-50 build (16/25/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.5% | +16.0% | +18.0% | +19.2% | +23.4% | +24.7% | +27.6% |",
-     "| bm-leveling -> level-60 build (19/32/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.9% | +14.4% | +17.7% | +19.6% | +23.0% | +24.8% | +27.6% |",
+     "| fire-leveling -> level-20 build (0/0/11) | +0.7% | +3.6% | +42.8% | +44.0% | +52.7% | +54.5% | +55.5% | +56.5% | +60.1% | +63.0% | +64.2% |",
+     "| fire-leveling -> level-30 build (0/10/11) | +0.7% | +3.6% | +14.9% | +20.7% | +52.7% | +54.5% | +55.5% | +56.5% | +60.1% | +63.0% | +64.2% |",
+     "| fire-leveling -> level-40 build (0/15/16) | +0.7% | +3.6% | +14.9% | +21.7% | +24.0% | +54.5% | +55.8% | +56.8% | +57.8% | +61.4% | +64.2% |",
+     "| fire-leveling -> level-50 build (0/30/11) | +0.5% | +6.7% | +19.6% | +21.6% | +23.8% | +26.3% | +32.0% | +34.0% | +60.1% | +63.0% | +64.2% |",
+     "| fire-leveling -> level-60 build (0/32/19) | +0.5% | +6.7% | +19.6% | +21.6% | +23.8% | +26.3% | +36.0% | +38.0% | +38.6% | +62.7% | +64.6% |",
      "",
      "## Reading it",
      "",
