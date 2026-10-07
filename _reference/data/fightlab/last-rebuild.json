@@ -7506,7 +7506,7 @@
   }
  },
  "last_run": {
-  "date": "2026-10-07T11:54:01",
+  "date": "2026-10-07T11:55:44",
   "classes": [
    "paladin"
   ],
@@ -7519,13 +7519,13 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 144,
+  "seconds": 140,
   "refresh": null,
   "regen_log": [
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py paladin",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
      "formatted F:\\wow-forever\\paladin\\research\\talents\\forever\\proposed-builds.json",
      "paladin: README section + leveling-retribution note written"
@@ -7564,7 +7564,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py paladin",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
      "paladin: raid gear and consumables written"
     ],
@@ -7573,7 +7573,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py paladin",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
      "paladin: raid and leveling rotations, DPS ranking written"
     ],
@@ -7602,7 +7602,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_builds.py",
     "rc": 0,
-    "seconds": 2,
+    "seconds": 4,
     "tail": [
      "rogue/classic-baseline: 5 build pages + README.md",
      "rogue: 22 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
@@ -7650,7 +7650,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py paladin --write",
     "rc": 0,
-    "seconds": 133,
+    "seconds": 128,
     "tail": [
      "| ret-dps -> level-20 build (0/0/11) | +0.7% | +4.7% | +16.9% | +24.3% | +28.0% | +32.3% | +34.9% | +35.3% | +36.1% | +38.8% | +39.3% |",
      "| ret-dps -> level-30 build (0/0/21) | +0.7% | +4.1% | +15.7% | +24.4% | +28.3% | +32.4% | +35.0% | +35.3% | +36.1% | +38.8% | +39.3% |",
