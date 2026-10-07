@@ -60,6 +60,9 @@ type build struct {
 	APL     string          `json:"apl"`      // optional: this build's own rotation (a path, absolute or relative to --root) ...
 	APLJSON json.RawMessage `json:"apl_json"` // ... or the rotation itself inline (raidsim/apl_opt.py scores many variants in one run)
 	GearJSON json.RawMessage `json:"gear_json"` // optional: this build's own gear set inline (raidsim/gear_opt.py races gear sets)
+	// optional: extra stats added to the character (proto Stat names: "StatSpellDamage", "StatAttackPower", ...), the simulator's
+	// own bonus_stats; 2026-10-07: how much spell power a caster needs to match another spec's DPS
+	BonusStats map[string]float64 `json:"bonus_stats"`
 }
 
 type config struct {
@@ -300,6 +303,17 @@ func main() {
 		player.Profession1 = prof(cfg.Profession1, proto.Profession_Engineering)
 		player.Profession2 = prof(cfg.Profession2, proto.Profession_ProfessionUnknown)
 		player.Rotation = rotation
+		if len(b.BonusStats) > 0 {
+			st := make([]float64, len(proto.Stat_name))
+			for k, v := range b.BonusStats {
+				idx, ok := proto.Stat_value[k]
+				if !ok {
+					die("unknown stat %q in bonus_stats (proto Stat names, e.g. StatSpellDamage)", k)
+				}
+				st[idx] = v
+			}
+			player.BonusStats = &proto.UnitStats{Stats: st}
+		}
 		if len(b.GearJSON) > 0 {
 			own := &proto.EquipmentSpec{}
 			if err := unmarshal.Unmarshal(b.GearJSON, own); err != nil {

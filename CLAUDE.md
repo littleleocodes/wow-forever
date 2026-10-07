@@ -719,7 +719,10 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   pin), our data refreshed (refresh_forever_talents.py and the steps after it), then deep_class.py per class (deep_opt.py takes its specs,
   first gear sets and starting builds from the ML records; starts the new trees no longer allow are dropped, and from cycle 2 it re-gears
   itself, so `ml_pipeline.py`, about 15 hours, is only needed when a new spec or hybrid appears).
-- Our `foreverbench/main.go` is the source of truth for the bench tool (setup.py copies it into the clone and builds it).
+- Our `foreverbench/main.go` is the source of truth for the bench tool (setup.py copies it into the clone and builds it). A build may
+  carry `bonus_stats` ({proto Stat name: value}, the simulator's own bonus stats; 2026-10-07, user question "how much spell power would a
+  shaman need to equal the Beast-Survival hunter": the Elemental pick gains a linear 0.45 DPS per spell power in a full raid, 524 -> 1170
+  at about +1,450 on top of its set's 390).
   A fresh setup builds the pinned simulator commit (`GAMES[...]["commit"]` in setup.py, b0f0df3 since 2026-10-03: client build 1.60.1.70205 with hotfixes to that day; 40be98e before) so every machine
   and cloud session simulates the same fork; after a simulator update (`setup.py --update`) set the new pin and re-run
   `rebuild.py --steps raid,regen`.
