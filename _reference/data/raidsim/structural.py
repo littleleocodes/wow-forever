@@ -297,9 +297,19 @@ def rank_structures(space, model, top):
 def structural(cls, entry, e, repo, save, a):
     t0 = time.time()
     syn = e.get("synergy") or {}
-    if "singles_all" not in syn:
-        log(f"== {cls} {entry}: no full measurements in the record; run synergy.py --fresh first")
-        return
+    cur = FS.flat_of((e.get("again") or e["first"])["winner"]["allocation"])
+    measured = {n: r for items in (syn.get("winner_allocation") or {}).values() for n, r in items if r} if syn else {}
+    if "singles_all" not in syn or measured != cur:
+        # the certificate measured around an older winner (its own re-search moved it): measure again around the current one
+        # (2026-10-07 audit: the standalone run re-found the hunter Lone Wolf lead against the old winner and re-searched it for nothing)
+        log(f"== {cls} {entry}: {'no full measurements' if 'singles_all' not in syn else 'the certificate measured an older winner'}; measuring around the current winner")
+        if syn:
+            e["synergy_before_structural"] = syn
+        e.pop("synergy", None)
+        SY.certificate(cls, entry, e, repo, None, save, argparse.Namespace(no_search=True))
+        syn = e.get("synergy") or {}
+        if "singles_all" not in syn:
+            return
     space = MLT.Space(cls, "any", any_split=True)
     space.protect = set(e.get("first", {}).get("protected") or ())
     model = Model(space, syn)
