@@ -617,7 +617,11 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   needs, the best 8 per tree and point count kept, every split of 51 combined with the cross-tree pair terms; the model's top 300 legal
   structures are simulated (1,500 fights), the best 20 raced (10,000), the best polished and raced on 30,000; a lead 0.5% ahead
   re-searches through `synergy.research` (shared with the certificate). From the Frostfire search's 0/34/17 it rediscovers the user's
-  0/29/22 (+2.0%) in 1.3 min; the model's fit on the simulated top is logged (correlation +0.80 there). (9) **Cost**: `Sim.run` caches
+  0/29/22 (+2.0%) in 1.3 min; the model's fit on the simulated top is logged (correlation +0.80 there). The leveling search has the same
+  certificate: `fightlab/fl_synergy.py` (singles and pairs unpaid around the leveling winner at level 60 in the fight lab, 400 fights,
+  parallel processes; legal leads polished and raced at levels 20-60 with the stats model's order; a lead 1% faster per kill re-searches
+  with the leads as starts and the winner by the 20-60 race), run by fl_open_search per rotation and standalone post hoc (`fl_synergy.py
+  <class> [--rotation] [--fresh] [--no-search]`; about 2-3 min per rotation). (9) **Cost**: `Sim.run` caches
   results within a process (talents, fights, seed, rotation file and time: common random numbers make repeats exact) and `polish` tries
   neighbours in random batches of 120 with first improvement, up to 24 steps (a step costs a batch; a full pass without a gain ends at a
   local optimum). A certificate costs 1-3 min per entry, the ranking 1-2 min; the family polish 40 min (16 keystones, 69 families) and the

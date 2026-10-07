@@ -218,9 +218,13 @@ Each class folder now opens with player pages and keeps the research below:
   model fitted to the certificate's measurements: needs a record with `singles_all` etc., i.e. a certificate run after that code landed).
   First test (mage frostfire-raid): the certificate flagged Shatter + Fingers of Frost at once and polished it to 0/29/22 at 706 against
   691 for the search's winner; the user's own 0/29/22 build (a hand draft since 2026-10-06, `frostfire-fingers-of-frost-raid`, and a known
-  positive) leads the mage at 707 DPS after the rotation re-tune. Classes searched before this night (hunter, mage's other entries) have no
-  certificate yet: run `synergy.py <class>` then `structural.py <class>` per class when the queue is idle; `open_builds.py <class> --write
-  --race --regen` afterwards when a winner changed. Audit finding (2026-10-07 01:30): the paladin's `ret-dps` and `seal-of-fury-raid`
+  positive) leads the mage at 707 DPS after the rotation re-tune. Post hoc on 2026-10-07: certificates and structural rankings on every
+  hunter, mage and paladin raid entry (the hunter's Lone Wolf and Marksmanship entries re-searched from leads with Improved Tracking; all
+  mage and paladin winners confirmed). The leveling counterpart `fightlab/fl_synergy.py` (same night) runs inside fl_open_search from the
+  shaman on; post hoc for the hunter and mage leveling rotations (done 2026-10-07 morning) and still to run for the paladin's leveling
+  rotations once its leveling search ends (`fl_synergy.py paladin`, then `open_builds.py paladin --write --only leveling --regen`).
+  For a class searched without them: `synergy.py <class>`, `structural.py <class>`, `fl_synergy.py <class>`, then `open_builds.py <class>
+  --write --race --regen`. The replacement bar is 0.5% since 2026-10-07 (was 2%). Audit finding (2026-10-07 01:30): the paladin's `ret-dps` and `seal-of-fury-raid`
   entries produce identical results (956.6 DPS, the same 11/8/32 winner) because Retribution's raid rotation was replaced by the Seal of
   Fury one on 2026-10-05; the second search is a duplicate costing about 1.5 h. Merge or retire `seal-of-fury-raid` (or skip an entry
   whose raid rotation, gear and options equal a done entry's).
