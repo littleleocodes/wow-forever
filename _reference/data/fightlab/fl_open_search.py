@@ -142,6 +142,8 @@ def main():
     def save():
         rp.write_text(json.dumps(st, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 
+    log(f"=== {cls} open leveling search started {datetime.datetime.now():%Y-%m-%d %H:%M}" + (" (--fresh)" if a.fresh else "")
+        + f"; record {rp.name} ({len([r for r in st['rotations'].values() if r.get('done')])} rotations done)")   # the log is cumulative
     data = {b["id"]: b for b in json.load(open(paths.builds_json("forever", cls), encoding="utf-8"))["builds"]}
     space = MLT.Space(cls, "any", any_split=True)
     starts = [FT.flat_of(b) for b in data.values()] + MLT.popular_allocs(cls) + ([] if a.no_known else warm + known_positives(cls))

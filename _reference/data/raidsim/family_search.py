@@ -238,6 +238,8 @@ def main():
     def save():
         rp.write_text(json.dumps(st, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 
+    log(f"=== {cls} open raid search started {datetime.datetime.now():%Y-%m-%d %H:%M}" + (" (--fresh)" if a.fresh else "")
+        + f"; record {rp.name} ({len([e for e in st['entries'].values() if e.get('done')])} entries done)")   # the log is cumulative
     mine_all = ours(cls)
     starts = [R.alloc_of(b) for b in mine_all.values()] + MLT.popular_allocs(cls)
     if not a.no_known:   # known good builds: the known positives, the last run's winners, the archived first pass, the saved raid candidates
