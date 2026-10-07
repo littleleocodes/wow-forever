@@ -7,5 +7,8 @@ The fastest leveling build found with no tree rule in each leveling rotation (fi
 | Class | Rotation | Open winner | Family | Seconds per kill | vs ours |
 |---|---|---|---|---|---|
 | [hunter](../hunter/research/leveling/open-search.md) | melee-dps | [19/8/24](https://talentsforever.com/hunter/60/3520000504-0053-530200230140202-4) | Hybrid Beast Mastery/Survival | 24.64 | +6.5% |
+| [mage](../mage/research/leveling/open-search.md) | frost-leveling | [18/2/31](https://talentsforever.com/mage/60/2521050000003-02-1535003331000301201-4) | Frost | 25.75 | +2.0% |
 | [hunter](../hunter/research/leveling/open-search.md) | bm-leveling | [29/18/4](https://talentsforever.com/hunter/60/512021050511024-005355-4-4) | Hybrid Beast Mastery/Marksmanship | 26.36 | +0.9% |
 | [hunter](../hunter/research/leveling/open-search.md) | mm-raid | [28/18/5](https://talentsforever.com/hunter/60/522020050511023-005355-5-4) | Hybrid Beast Mastery/Marksmanship | 27.33 | +0.5% |
+| [mage](../mage/research/leveling/open-search.md) | arcane-leveling | [28/0/23](https://talentsforever.com/mage/60/23020501210031053--10450033110003002-4) | Hybrid Arcane/Frost | 30.95 | +5.5% |
+| [mage](../mage/research/leveling/open-search.md) | fire-leveling | [0/31/20](https://talentsforever.com/mage/60/-03450031101033151-00550231010003-4) | Fire | 34.64 | - |

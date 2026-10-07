@@ -2,9 +2,9 @@
 
 [Mage](../README.md) > [Leveling (solo)](README.md) > Fire
 
-**[Fire — Leveling](../research/leveling/builds/fire-leveling.md)** (0/32/19) — [open the talent tree](https://talentsforever.com/mage/60/-00550130130133151-00551030010013-4)
+**[Fire — Leveling](../research/leveling/builds/fire-open-leveling.md)** (0/31/20) — [open the talent tree](https://talentsforever.com/mage/60/-03450031101033151-00550231010003-4)
 
-> 🔬 Derived build: searched in the fight lab (this project's leveling simulator) from the spec's builds and the stats model's best one; it beat the hand-made build (opt-fire-leveling-leveling-st) by 2% or more, which stays below as the alternative. A model of the beta, to check at launch.
+> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
 ## How to play
 
@@ -20,18 +20,48 @@
 
 **Between fights:** Drink your conjured water below a third of your mana, **Evocation** when you are out, eat below two thirds of your health.
 
+## Talents while leveling
+
+One point per level from 10, in this order:
+
+| Levels | Talent | Points |
+|---|---|---|
+| 10-14 | Elemental Precision (Frost) | 5 |
+| 15-17 | Frostbite (Frost) | 3 |
+| 18-19 | Improved Frost Nova (Frost) | 2 |
+| 20 | Ice Lance (Frost) | 1 |
+| 21-24 | Improved Fireball (Fire) | 4 |
+| 25 | Incineration (Fire) | 1 |
+| 26-30 | Ignite (Fire) | 5 |
+| 31-33 | Burning Soul (Fire) | 3 |
+| 34 | Pyroblast (Fire) | 1 |
+| 35 | Incineration (Fire) | 1 |
+| 36-38 | Master of Elements (Fire) | 3 |
+| 39 | Incineration (Fire) | 1 |
+| 40 | Improved Flamestrike (Fire) | 1 |
+| 41 | Blast Wave (Fire) | 1 |
+| 42-44 | Critical Mass (Fire) | 3 |
+| 45 | Improved Fire Ward (Fire) | 1 |
+| 46-50 | Fire Power (Fire) | 5 |
+| 51 | Combustion (Fire) | 1 |
+| 52 | Piercing Ice (Frost) | 1 |
+| 53-55 | Ice Shards (Frost) | 3 |
+| 56-58 | Shatter (Frost) | 3 |
+| 59-60 | Ice Shards (Frost) | 2 |
+
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
-| 20 | 37 |
-| 30 | 38 |
-| 40 | 43 |
+| 20 | 30 |
+| 30 | 37 |
+| 40 | 44 |
 | 50 | 36 |
-| 60 | 29 |
+| 60 | 28 |
 
 ## Other builds of this spec
 
+- [Fire — Leveling](../research/leveling/builds/fire-leveling.md) (0/32/19, 36 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/mage/60/-00550130130133151-00551030010013-4)
 - [Single-target Fireball leveling](../research/leveling/builds/opt-fire-leveling-leveling-st.md) (0/33/18, 37 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/mage/60/-00552330130103151-00551030010012-4)
 
 ---

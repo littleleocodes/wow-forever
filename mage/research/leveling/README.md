@@ -13,6 +13,9 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | [Leveling — Frost (Ice Lance at 20, Shatter at 25, Ice Barrier at 40)](builds/leveling-frost.md) | 12/0/39 | DPS | [leveling-frost](../talents/classic-baseline/leveling-frost.md) |
 | [Arcane — Leveling (derived)](builds/arcane-leveling.md) | 30/0/21 | DPS | — |
 | [Fire — Leveling (derived)](builds/fire-leveling.md) | 0/32/19 | DPS | — |
+| [Arcane-Frost — Leveling (open talent search)](builds/arcane-frost-open-leveling.md) | 28/0/23 | DPS | — |
+| [Fire — Leveling (open talent search)](builds/fire-open-leveling.md) | 0/31/20 | DPS | — |
+| [Frost — Leveling (open talent search)](builds/frost-open-leveling.md) | 18/2/31 | DPS | — |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

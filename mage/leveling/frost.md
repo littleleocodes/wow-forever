@@ -4,7 +4,9 @@
 
 **✅ Recommended** for leveling (the best mage spec here, or within 3% of it).
 
-**[Leveling — Frost](../research/leveling/builds/leveling-frost.md)** (12/0/39) — [open the talent tree](https://talentsforever.com/mage/60/230205--0555003331011301251-4)
+**[Frost — Leveling](../research/leveling/builds/frost-open-leveling.md)** (18/2/31) — [open the talent tree](https://talentsforever.com/mage/60/2521050000003-02-1535003331000301201-4)
+
+> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
 ## How to play
 
@@ -26,40 +28,45 @@ One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
-| 10-14 | Elemental Precision (Frost) | 5 |
+| 10-14 | Improved Frostbolt (Frost) | 5 |
 | 15-17 | Frostbite (Frost) | 3 |
-| 18-19 | Ice Shards (Frost) | 2 |
+| 18-19 | Elemental Precision (Frost) | 2 |
 | 20 | Ice Lance (Frost) | 1 |
-| 21-23 | Ice Shards (Frost) | 3 |
+| 21-23 | Frost Channeling (Frost) | 3 |
 | 24 | Piercing Ice (Frost) | 1 |
-| 25-27 | Shatter (Frost) | 3 |
-| 28-29 | Piercing Ice (Frost) | 2 |
+| 25-26 | Shatter (Frost) | 2 |
+| 27-28 | Ice Shards (Frost) | 2 |
+| 29 | Shatter (Frost) | 1 |
 | 30-31 | Fingers of Frost (Frost) | 2 |
-| 32 | Ice Block (Frost) | 1 |
-| 33-35 | Frost Channeling (Frost) | 3 |
-| 36 | Cold Snap (Frost) | 1 |
-| 37 | Arctic Reach (Frost) | 1 |
-| 38-39 | Winter's Chill (Frost) | 2 |
+| 32-34 | Ice Shards (Frost) | 3 |
+| 35-36 | Piercing Ice (Frost) | 2 |
+| 37 | Elemental Precision (Frost) | 1 |
+| 38 | Frost Warding (Frost) | 1 |
+| 39 | Cold Snap (Frost) | 1 |
 | 40 | Ice Barrier (Frost) | 1 |
-| 41-43 | Winter's Chill (Frost) | 3 |
-| 44-48 | Improved Frostbolt (Frost) | 5 |
-| 49-50 | Wand Specialization (Arcane) | 2 |
-| 51-53 | Arcane Focus (Arcane) | 3 |
-| 54-55 | Arcane Subtlety (Arcane) | 2 |
-| 56-60 | Arcane Concentration (Arcane) | 5 |
+| 41-42 | Incineration (Fire) | 2 |
+| 43-44 | Wand Specialization (Arcane) | 2 |
+| 45-47 | Arcane Focus (Arcane) | 3 |
+| 48-50 | Arcane Concentration (Arcane) | 3 |
+| 51 | Arcane Subtlety (Arcane) | 1 |
+| 52-53 | Arcane Concentration (Arcane) | 2 |
+| 54-55 | Arcane Focus (Arcane) | 2 |
+| 56-57 | Improved Channeling (Arcane) | 2 |
+| 58-60 | Arcane Meditation (Arcane) | 3 |
 
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
-| 20 | 28 |
-| 30 | 30 |
-| 40 | 30 |
-| 50 | 25 |
-| 60 | 23 |
+| 20 | 27 |
+| 30 | 31 |
+| 40 | 29 |
+| 50 | 24 |
+| 60 | 22 |
 
 ## Other builds of this spec
 
+- [Leveling — Frost](../research/leveling/builds/leveling-frost.md) (12/0/39, 26 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/mage/60/230205--0555003331011301251-4)
 - [Single-target Frostbolt leveling](../research/leveling/builds/opt-frost-leveling-leveling-st.md) (12/3/36, 26 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/mage/60/230205-03-0555003331001301231-4)
 - [AoE grinding](../research/leveling/builds/opt-frost-aoe-leveling-aoe.md) (2/3/46) — [open the talent tree](https://talentsforever.com/mage/60/02-03-0555320331321331231-4)
 

@@ -305,6 +305,15 @@
 **Frostfire — Fingers of Frost / Ice Lance (user build)** (`mage/research/raid/builds/frostfire-fingers-of-frost-raid.md`)
 - [ ] Does Frostfire Bolt's chill proc Fingers of Frost in the live game as the simulator assumes?
 
+**Arcane-Frost — Leveling (open talent search)** (`mage/research/leveling/builds/arcane-frost-open-leveling.md`)
+- [ ] An open-search Arcane-Frost leveling build: check it while leveling at launch.
+
+**Fire — Leveling (open talent search)** (`mage/research/leveling/builds/fire-open-leveling.md`)
+- [ ] An open-search Fire leveling build: check it while leveling at launch.
+
+**Frost — Leveling (open talent search)** (`mage/research/leveling/builds/frost-open-leveling.md`)
+- [ ] An open-search Frost leveling build: check it while leveling at launch.
+
 ### Paladin
 
 **Holy — Raid Healer (31/0/20)** (`paladin/research/raid/builds/holy-raid-healer.md`)

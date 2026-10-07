@@ -1,0 +1,2132 @@
+{
+ "class": "mage",
+ "date": "2026-10-06",
+ "rotations": {
+  "arcane-leveling": {
+   "model": "frost-leveling",
+   "trees": [
+    "Arcane"
+   ],
+   "families": [
+    {
+     "keystones": "Missile Barrage + Ice Barrier",
+     "split": "19/1/31",
+     "family": "Frost",
+     "kills_per_hour": 138.58
+    },
+    {
+     "keystones": "Arcane Blast + Cold Snap",
+     "split": "22/2/27",
+     "family": "Hybrid Arcane/Frost",
+     "kills_per_hour": 134.32
+    },
+    {
+     "keystones": "Presence of Mind + Ice Lance",
+     "split": "21/3/27",
+     "family": "Hybrid Arcane/Frost",
+     "kills_per_hour": 134.15
+    },
+    {
+     "keystones": "Arcane Blast + Ice Lance",
+     "split": "31/1/19",
+     "family": "Arcane",
+     "kills_per_hour": 132.47
+    },
+    {
+     "keystones": "Pyroblast + Cold Snap",
+     "split": "17/11/23",
+     "family": "Hybrid Arcane/Frost",
+     "kills_per_hour": 129.14
+    },
+    {
+     "keystones": "Presence of Mind + Ice Block",
+     "split": "29/0/22",
+     "family": "Hybrid Arcane/Frost",
+     "kills_per_hour": 123.0
+    },
+    {
+     "keystones": "Presence of Mind + Cold Snap",
+     "split": "21/0/30",
+     "family": "Frost",
+     "kills_per_hour": 122.02
+    },
+    {
+     "keystones": "Arcane Power + Ice Lance",
+     "split": "31/8/12",
+     "family": "Arcane",
+     "kills_per_hour": 121.91
+    },
+    {
+     "keystones": "Pyroblast + Ice Barrier",
+     "split": "0/20/31",
+     "family": "Frost",
+     "kills_per_hour": 119.83
+    },
+    {
+     "keystones": "Missile Barrage + Ice Lance",
+     "split": "36/3/12",
+     "family": "Arcane",
+     "kills_per_hour": 119.75
+    },
+    {
+     "keystones": "Arcane Blast + Ice Block",
+     "split": "19/3/29",
+     "family": "Hybrid Arcane/Frost",
+     "kills_per_hour": 119.7
+    },
+    {
+     "keystones": "Presence of Mind + Pyroblast",
+     "split": "23/11/17",
+     "family": "Hybrid Arcane/Frost",
+     "kills_per_hour": 119.28
+    },
+    {
+     "keystones": "Missile Barrage + Cold Snap",
+     "split": "26/0/25",
+     "family": "Hybrid Arcane/Frost",
+     "kills_per_hour": 118.96
+    },
+    {
+     "keystones": "Pyroblast + Ice Lance",
+     "split": "4/11/36",
+     "family": "Frost",
+     "kills_per_hour": 118.61
+    },
+    {
+     "keystones": "Arcane Blast + Blast Wave",
+     "split": "19/21/11",
+     "family": "Hybrid Arcane/Fire",
+     "kills_per_hour": 116.98
+    }
+   ],
+   "winner": {
+    "allocation": {
+     "Arcane": [
+      [
+       "Wand Specialization",
+       2
+      ],
+      [
+       "Arcane Focus",
+       3
+      ],
+      [
+       "Arcane Subtlety",
+       2
+      ],
+      [
+       "Arcane Concentration",
+       5
+      ],
+      [
+       "Arcane Geometry",
+       1
+      ],
+      [
+       "Arcane Impact",
+       2
+      ],
+      [
+       "Arcane Blast",
+       1
+      ],
+      [
+       "Arcane Meditation",
+       3
+      ],
+      [
+       "Missile Barrage",
+       1
+      ],
+      [
+       "Arcane Mind",
+       5
+      ],
+      [
+       "Arcane Instability",
+       3
+      ]
+     ],
+     "Fire": [],
+     "Frost": [
+      [
+       "Frost Warding",
+       1
+      ],
+      [
+       "Elemental Precision",
+       4
+      ],
+      [
+       "Ice Shards",
+       5
+      ],
+      [
+       "Frostbite",
+       3
+      ],
+      [
+       "Piercing Ice",
+       3
+      ],
+      [
+       "Frost Channeling",
+       1
+      ],
+      [
+       "Ice Lance",
+       1
+      ],
+      [
+       "Shatter",
+       3
+      ],
+      [
+       "Fingers of Frost",
+       2
+      ]
+     ]
+    },
+    "split": "28/0/23",
+    "picked_by": "the 20-60 race among the finalists"
+   },
+   "runs_agree": 2,
+   "simulated_builds": 84254,
+   "important_features": [
+    {
+     "feature": "Fingers of Frost",
+     "importance": 0.3056
+    },
+    {
+     "feature": "Ice Lance",
+     "importance": 0.1248
+    },
+    {
+     "feature": "Shatter",
+     "importance": 0.1219
+    },
+    {
+     "feature": "Fire points",
+     "importance": 0.1024
+    },
+    {
+     "feature": "Arcane Instability",
+     "importance": 0.0826
+    },
+    {
+     "feature": "Arcane Mind",
+     "importance": 0.0653
+    },
+    {
+     "feature": "Arcane points",
+     "importance": 0.0395
+    },
+    {
+     "feature": "Arcane Meditation",
+     "importance": 0.0294
+    },
+    {
+     "feature": "Missile Barrage",
+     "importance": 0.0281
+    },
+    {
+     "feature": "Arcane Blast",
+     "importance": 0.02
+    },
+    {
+     "feature": "Arcane Concentration",
+     "importance": 0.0143
+    },
+    {
+     "feature": "Improved Frostbolt",
+     "importance": 0.0101
+    }
+   ],
+   "finalists": [
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Arcane Focus",
+        5
+       ],
+       [
+        "Arcane Subtlety",
+        2
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Arcane Geometry",
+        1
+       ],
+       [
+        "Arcane Impact",
+        2
+       ],
+       [
+        "Arcane Blast",
+        1
+       ],
+       [
+        "Arcane Meditation",
+        3
+       ],
+       [
+        "Missile Barrage",
+        1
+       ],
+       [
+        "Presence of Mind",
+        1
+       ],
+       [
+        "Arcane Mind",
+        5
+       ],
+       [
+        "Arcane Instability",
+        3
+       ]
+      ],
+      "Fire": [],
+      "Frost": [
+       [
+        "Frost Warding",
+        1
+       ],
+       [
+        "Elemental Precision",
+        4
+       ],
+       [
+        "Ice Shards",
+        5
+       ],
+       [
+        "Frostbite",
+        3
+       ],
+       [
+        "Piercing Ice",
+        2
+       ],
+       [
+        "Frost Channeling",
+        1
+       ],
+       [
+        "Ice Lance",
+        1
+       ],
+       [
+        "Shatter",
+        3
+       ],
+       [
+        "Fingers of Frost",
+        2
+       ]
+      ]
+     },
+     "split": "29/0/22",
+     "dps": 140.31,
+     "se": 0.1469
+    },
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Wand Specialization",
+        2
+       ],
+       [
+        "Arcane Focus",
+        3
+       ],
+       [
+        "Arcane Subtlety",
+        2
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Arcane Geometry",
+        1
+       ],
+       [
+        "Arcane Impact",
+        2
+       ],
+       [
+        "Arcane Blast",
+        1
+       ],
+       [
+        "Arcane Meditation",
+        3
+       ],
+       [
+        "Missile Barrage",
+        1
+       ],
+       [
+        "Arcane Mind",
+        5
+       ],
+       [
+        "Arcane Instability",
+        3
+       ]
+      ],
+      "Fire": [],
+      "Frost": [
+       [
+        "Frost Warding",
+        1
+       ],
+       [
+        "Elemental Precision",
+        4
+       ],
+       [
+        "Ice Shards",
+        5
+       ],
+       [
+        "Frostbite",
+        3
+       ],
+       [
+        "Piercing Ice",
+        3
+       ],
+       [
+        "Frost Channeling",
+        1
+       ],
+       [
+        "Ice Lance",
+        1
+       ],
+       [
+        "Shatter",
+        3
+       ],
+       [
+        "Fingers of Frost",
+        2
+       ]
+      ]
+     },
+     "split": "28/0/23",
+     "dps": 139.84,
+     "se": 0.1426
+    }
+   ],
+   "order": [
+    {
+     "levels": "10-13",
+     "tree": "Frost",
+     "talent": "Elemental Precision",
+     "points": 4
+    },
+    {
+     "levels": "14",
+     "tree": "Frost",
+     "talent": "Frost Warding",
+     "points": 1
+    },
+    {
+     "levels": "15-17",
+     "tree": "Frost",
+     "talent": "Frostbite",
+     "points": 3
+    },
+    {
+     "levels": "18-19",
+     "tree": "Frost",
+     "talent": "Ice Shards",
+     "points": 2
+    },
+    {
+     "levels": "20",
+     "tree": "Frost",
+     "talent": "Ice Lance",
+     "points": 1
+    },
+    {
+     "levels": "21",
+     "tree": "Frost",
+     "talent": "Frost Channeling",
+     "points": 1
+    },
+    {
+     "levels": "22-24",
+     "tree": "Frost",
+     "talent": "Piercing Ice",
+     "points": 3
+    },
+    {
+     "levels": "25",
+     "tree": "Frost",
+     "talent": "Shatter",
+     "points": 1
+    },
+    {
+     "levels": "26-27",
+     "tree": "Frost",
+     "talent": "Ice Shards",
+     "points": 2
+    },
+    {
+     "levels": "28-29",
+     "tree": "Frost",
+     "talent": "Shatter",
+     "points": 2
+    },
+    {
+     "levels": "30-31",
+     "tree": "Frost",
+     "talent": "Fingers of Frost",
+     "points": 2
+    },
+    {
+     "levels": "32",
+     "tree": "Frost",
+     "talent": "Ice Shards",
+     "points": 1
+    },
+    {
+     "levels": "33-34",
+     "tree": "Arcane",
+     "talent": "Wand Specialization",
+     "points": 2
+    },
+    {
+     "levels": "35-37",
+     "tree": "Arcane",
+     "talent": "Arcane Focus",
+     "points": 3
+    },
+    {
+     "levels": "38-42",
+     "tree": "Arcane",
+     "talent": "Arcane Concentration",
+     "points": 5
+    },
+    {
+     "levels": "43-44",
+     "tree": "Arcane",
+     "talent": "Arcane Subtlety",
+     "points": 2
+    },
+    {
+     "levels": "45",
+     "tree": "Arcane",
+     "talent": "Arcane Geometry",
+     "points": 1
+    },
+    {
+     "levels": "46-47",
+     "tree": "Arcane",
+     "talent": "Arcane Impact",
+     "points": 2
+    },
+    {
+     "levels": "48-50",
+     "tree": "Arcane",
+     "talent": "Arcane Meditation",
+     "points": 3
+    },
+    {
+     "levels": "51",
+     "tree": "Arcane",
+     "talent": "Arcane Blast",
+     "points": 1
+    },
+    {
+     "levels": "52",
+     "tree": "Arcane",
+     "talent": "Missile Barrage",
+     "points": 1
+    },
+    {
+     "levels": "53-57",
+     "tree": "Arcane",
+     "talent": "Arcane Mind",
+     "points": 5
+    },
+    {
+     "levels": "58-60",
+     "tree": "Arcane",
+     "talent": "Arcane Instability",
+     "points": 3
+    }
+   ],
+   "race": {
+    "finalist 29/0/22": {
+     "weighted": 31.24,
+     "levels": {
+      "20": 30.84,
+      "30": 34.8,
+      "40": 36.74,
+      "50": 31.39,
+      "60": 25.82
+     }
+    },
+    "arcane-leveling": {
+     "weighted": 32.66,
+     "levels": {
+      "20": 31.23,
+      "30": 35.85,
+      "40": 37.96,
+      "50": 31.98,
+      "60": 28.58
+     }
+    },
+    "open winner": {
+     "weighted": 30.95,
+     "levels": {
+      "20": 30.84,
+      "30": 35.39,
+      "40": 36.55,
+      "50": 30.02,
+      "60": 25.81
+     }
+    }
+   },
+   "values": {
+    "Ice Lance": {
+     "ranks": 1,
+     "seconds": 5.01,
+     "per_point": 5.01
+    },
+    "Shatter": {
+     "ranks": 3,
+     "seconds": 3.24,
+     "per_point": 1.08
+    },
+    "Missile Barrage": {
+     "ranks": 1,
+     "seconds": 2.51,
+     "per_point": 2.51
+    },
+    "Ice Shards": {
+     "ranks": 5,
+     "seconds": 2.18,
+     "per_point": 0.44
+    },
+    "Arcane Blast": {
+     "ranks": 1,
+     "seconds": 1.67,
+     "per_point": 1.67
+    },
+    "Frostbite": {
+     "ranks": 3,
+     "seconds": 1.56,
+     "per_point": 0.52
+    },
+    "Fingers of Frost": {
+     "ranks": 2,
+     "seconds": 1.35,
+     "per_point": 0.68
+    },
+    "Arcane Concentration": {
+     "ranks": 5,
+     "seconds": 0.9,
+     "per_point": 0.18
+    },
+    "Arcane Meditation": {
+     "ranks": 3,
+     "seconds": 0.8,
+     "per_point": 0.27
+    },
+    "Arcane Mind": {
+     "ranks": 5,
+     "seconds": 0.79,
+     "per_point": 0.16
+    },
+    "Arcane Instability": {
+     "ranks": 3,
+     "seconds": 0.73,
+     "per_point": 0.24
+    },
+    "Elemental Precision": {
+     "ranks": 4,
+     "seconds": 0.33,
+     "per_point": 0.08
+    },
+    "Arcane Geometry": {
+     "ranks": 1,
+     "seconds": 0.31,
+     "per_point": 0.31
+    },
+    "Arcane Impact": {
+     "ranks": 2,
+     "seconds": 0.28,
+     "per_point": 0.14
+    },
+    "Piercing Ice": {
+     "ranks": 3,
+     "seconds": 0.27,
+     "per_point": 0.09
+    },
+    "Arcane Focus": {
+     "ranks": 3,
+     "seconds": 0.18,
+     "per_point": 0.06
+    },
+    "Arcane Subtlety": {
+     "ranks": 2,
+     "seconds": 0.17,
+     "per_point": 0.08
+    },
+    "Frost Channeling": {
+     "ranks": 1,
+     "seconds": 0.12,
+     "per_point": 0.12
+    },
+    "Frost Warding": {
+     "ranks": 1,
+     "seconds": 0.04,
+     "per_point": 0.04
+    },
+    "Wand Specialization": {
+     "ranks": 2,
+     "seconds": 0.01,
+     "per_point": 0.0
+    }
+   },
+   "values_base": 25.75,
+   "split": "28/0/23",
+   "family": "Hybrid Arcane/Frost",
+   "link": "https://talentsforever.com/mage/60/23020501210031053--10450033110003002-4",
+   "ours_best": "arcane-leveling",
+   "gain_vs_ours": 0.0553,
+   "minutes": 65.5,
+   "done": true,
+   "builds": {
+    "written": [
+     "arcane-frost-open-leveling"
+    ],
+    "why": null,
+    "spec": "Hybrid Arcane/Frost",
+    "date": "2026-10-06"
+   }
+  },
+  "fire-leveling": {
+   "model": "fire-leveling",
+   "trees": [
+    "Fire"
+   ],
+   "families": [
+    {
+     "keystones": "Blast Wave + Cold Snap",
+     "split": "1/23/27",
+     "family": "Hybrid Fire/Frost",
+     "kills_per_hour": 127.98
+    },
+    {
+     "keystones": "Arcane Blast + Cold Snap",
+     "split": "22/1/28",
+     "family": "Hybrid Arcane/Frost",
+     "kills_per_hour": 126.31
+    },
+    {
+     "keystones": "Presence of Mind + Ice Lance",
+     "split": "22/0/29",
+     "family": "Hybrid Arcane/Frost",
+     "kills_per_hour": 126.03
+    },
+    {
+     "keystones": "Arcane Blast + Ice Barrier",
+     "split": "11/7/33",
+     "family": "Frost",
+     "kills_per_hour": 125.19
+    },
+    {
+     "keystones": "Missile Barrage + Ice Barrier",
+     "split": "19/0/32",
+     "family": "Frost",
+     "kills_per_hour": 124.44
+    },
+    {
+     "keystones": "Arcane Blast + Pyroblast",
+     "split": "19/11/21",
+     "family": "Hybrid Arcane/Frost",
+     "kills_per_hour": 119.02
+    },
+    {
+     "keystones": "Combustion + Ice Lance",
+     "split": "3/31/17",
+     "family": "Fire",
+     "kills_per_hour": 118.91
+    },
+    {
+     "keystones": "Presence of Mind + Cold Snap",
+     "split": "21/0/30",
+     "family": "Frost",
+     "kills_per_hour": 118.06
+    },
+    {
+     "keystones": "Presence of Mind + Ice Block",
+     "split": "26/1/24",
+     "family": "Hybrid Arcane/Frost",
+     "kills_per_hour": 117.35
+    },
+    {
+     "keystones": "Pyroblast + Ice Barrier",
+     "split": "0/18/33",
+     "family": "Frost",
+     "kills_per_hour": 116.7
+    },
+    {
+     "keystones": "Pyroblast + Ice Block",
+     "split": "0/25/26",
+     "family": "Hybrid Fire/Frost",
+     "kills_per_hour": 115.79
+    },
+    {
+     "keystones": "Blast Wave + Ice Lance",
+     "split": "4/23/24",
+     "family": "Hybrid Fire/Frost",
+     "kills_per_hour": 115.56
+    },
+    {
+     "keystones": "Arcane Blast + Ice Block",
+     "split": "22/5/24",
+     "family": "Hybrid Arcane/Frost",
+     "kills_per_hour": 115.36
+    },
+    {
+     "keystones": "Heating Up + Cold Snap",
+     "split": "1/24/26",
+     "family": "Hybrid Fire/Frost",
+     "kills_per_hour": 115.34
+    },
+    {
+     "keystones": "Pyroblast + Ice Lance",
+     "split": "2/11/38",
+     "family": "Frost",
+     "kills_per_hour": 115.23
+    }
+   ],
+   "winner": {
+    "allocation": {
+     "Arcane": [],
+     "Fire": [
+      [
+       "Incineration",
+       3
+      ],
+      [
+       "Improved Fireball",
+       4
+      ],
+      [
+       "Ignite",
+       5
+      ],
+      [
+       "Burning Soul",
+       3
+      ],
+      [
+       "Improved Flamestrike",
+       1
+      ],
+      [
+       "Pyroblast",
+       1
+      ],
+      [
+       "Improved Fire Ward",
+       1
+      ],
+      [
+       "Master of Elements",
+       3
+      ],
+      [
+       "Critical Mass",
+       3
+      ],
+      [
+       "Blast Wave",
+       1
+      ],
+      [
+       "Fire Power",
+       5
+      ],
+      [
+       "Combustion",
+       1
+      ]
+     ],
+     "Frost": [
+      [
+       "Elemental Precision",
+       5
+      ],
+      [
+       "Ice Shards",
+       5
+      ],
+      [
+       "Improved Frost Nova",
+       2
+      ],
+      [
+       "Frostbite",
+       3
+      ],
+      [
+       "Piercing Ice",
+       1
+      ],
+      [
+       "Ice Lance",
+       1
+      ],
+      [
+       "Shatter",
+       3
+      ]
+     ]
+    },
+    "split": "0/31/20",
+    "picked_by": "the 20-60 race among the finalists"
+   },
+   "runs_agree": 3,
+   "simulated_builds": 81340,
+   "important_features": [
+    {
+     "feature": "Ice Lance",
+     "importance": 0.4191
+    },
+    {
+     "feature": "Shatter",
+     "importance": 0.1561
+    },
+    {
+     "feature": "Arcane points",
+     "importance": 0.0797
+    },
+    {
+     "feature": "Combustion",
+     "importance": 0.0631
+    },
+    {
+     "feature": "Fire Power",
+     "importance": 0.0595
+    },
+    {
+     "feature": "Ice Shards",
+     "importance": 0.0518
+    },
+    {
+     "feature": "Frost points",
+     "importance": 0.0326
+    },
+    {
+     "feature": "Fire points",
+     "importance": 0.0202
+    },
+    {
+     "feature": "Fingers of Frost",
+     "importance": 0.0184
+    },
+    {
+     "feature": "Critical Mass",
+     "importance": 0.0149
+    },
+    {
+     "feature": "Frostbite",
+     "importance": 0.0135
+    },
+    {
+     "feature": "Improved Frostbolt",
+     "importance": 0.0084
+    }
+   ],
+   "finalists": [
+    {
+     "allocation": {
+      "Arcane": [],
+      "Fire": [
+       [
+        "Incineration",
+        3
+       ],
+       [
+        "Improved Fireball",
+        5
+       ],
+       [
+        "Ignite",
+        5
+       ],
+       [
+        "Burning Soul",
+        3
+       ],
+       [
+        "Improved Flamestrike",
+        1
+       ],
+       [
+        "Pyroblast",
+        1
+       ],
+       [
+        "Master of Elements",
+        3
+       ],
+       [
+        "Critical Mass",
+        3
+       ],
+       [
+        "Blast Wave",
+        1
+       ],
+       [
+        "Fire Power",
+        5
+       ],
+       [
+        "Combustion",
+        1
+       ]
+      ],
+      "Frost": [
+       [
+        "Elemental Precision",
+        5
+       ],
+       [
+        "Ice Shards",
+        5
+       ],
+       [
+        "Improved Frost Nova",
+        2
+       ],
+       [
+        "Frostbite",
+        3
+       ],
+       [
+        "Piercing Ice",
+        1
+       ],
+       [
+        "Ice Lance",
+        1
+       ],
+       [
+        "Shatter",
+        3
+       ]
+      ]
+     },
+     "split": "0/31/20",
+     "dps": 130.03,
+     "se": 0.1334
+    },
+    {
+     "allocation": {
+      "Arcane": [],
+      "Fire": [
+       [
+        "Incineration",
+        3
+       ],
+       [
+        "Improved Fireball",
+        4
+       ],
+       [
+        "Ignite",
+        5
+       ],
+       [
+        "Burning Soul",
+        3
+       ],
+       [
+        "Improved Flamestrike",
+        1
+       ],
+       [
+        "Pyroblast",
+        1
+       ],
+       [
+        "Improved Fire Ward",
+        1
+       ],
+       [
+        "Master of Elements",
+        3
+       ],
+       [
+        "Critical Mass",
+        3
+       ],
+       [
+        "Blast Wave",
+        1
+       ],
+       [
+        "Fire Power",
+        5
+       ],
+       [
+        "Combustion",
+        1
+       ]
+      ],
+      "Frost": [
+       [
+        "Elemental Precision",
+        5
+       ],
+       [
+        "Ice Shards",
+        5
+       ],
+       [
+        "Improved Frost Nova",
+        2
+       ],
+       [
+        "Frostbite",
+        3
+       ],
+       [
+        "Piercing Ice",
+        1
+       ],
+       [
+        "Ice Lance",
+        1
+       ],
+       [
+        "Shatter",
+        3
+       ]
+      ]
+     },
+     "split": "0/31/20",
+     "dps": 129.72,
+     "se": 0.1334
+    }
+   ],
+   "order": [
+    {
+     "levels": "10-14",
+     "tree": "Frost",
+     "talent": "Elemental Precision",
+     "points": 5
+    },
+    {
+     "levels": "15-17",
+     "tree": "Frost",
+     "talent": "Frostbite",
+     "points": 3
+    },
+    {
+     "levels": "18-19",
+     "tree": "Frost",
+     "talent": "Improved Frost Nova",
+     "points": 2
+    },
+    {
+     "levels": "20",
+     "tree": "Frost",
+     "talent": "Ice Lance",
+     "points": 1
+    },
+    {
+     "levels": "21-24",
+     "tree": "Fire",
+     "talent": "Improved Fireball",
+     "points": 4
+    },
+    {
+     "levels": "25",
+     "tree": "Fire",
+     "talent": "Incineration",
+     "points": 1
+    },
+    {
+     "levels": "26-30",
+     "tree": "Fire",
+     "talent": "Ignite",
+     "points": 5
+    },
+    {
+     "levels": "31-33",
+     "tree": "Fire",
+     "talent": "Burning Soul",
+     "points": 3
+    },
+    {
+     "levels": "34",
+     "tree": "Fire",
+     "talent": "Pyroblast",
+     "points": 1
+    },
+    {
+     "levels": "35",
+     "tree": "Fire",
+     "talent": "Incineration",
+     "points": 1
+    },
+    {
+     "levels": "36-38",
+     "tree": "Fire",
+     "talent": "Master of Elements",
+     "points": 3
+    },
+    {
+     "levels": "39",
+     "tree": "Fire",
+     "talent": "Incineration",
+     "points": 1
+    },
+    {
+     "levels": "40",
+     "tree": "Fire",
+     "talent": "Improved Flamestrike",
+     "points": 1
+    },
+    {
+     "levels": "41",
+     "tree": "Fire",
+     "talent": "Blast Wave",
+     "points": 1
+    },
+    {
+     "levels": "42-44",
+     "tree": "Fire",
+     "talent": "Critical Mass",
+     "points": 3
+    },
+    {
+     "levels": "45",
+     "tree": "Fire",
+     "talent": "Improved Fire Ward",
+     "points": 1
+    },
+    {
+     "levels": "46-50",
+     "tree": "Fire",
+     "talent": "Fire Power",
+     "points": 5
+    },
+    {
+     "levels": "51",
+     "tree": "Fire",
+     "talent": "Combustion",
+     "points": 1
+    },
+    {
+     "levels": "52",
+     "tree": "Frost",
+     "talent": "Piercing Ice",
+     "points": 1
+    },
+    {
+     "levels": "53-55",
+     "tree": "Frost",
+     "talent": "Ice Shards",
+     "points": 3
+    },
+    {
+     "levels": "56-58",
+     "tree": "Frost",
+     "talent": "Shatter",
+     "points": 3
+    },
+    {
+     "levels": "59-60",
+     "tree": "Frost",
+     "talent": "Ice Shards",
+     "points": 2
+    }
+   ],
+   "race": {
+    "open winner": {
+     "weighted": 34.64,
+     "levels": {
+      "20": 29.84,
+      "30": 36.62,
+      "40": 44.45,
+      "50": 35.52,
+      "60": 28.0
+     }
+    }
+   },
+   "values": {
+    "Ice Lance": {
+     "ranks": 1,
+     "seconds": 9.66,
+     "per_point": 9.66
+    },
+    "Shatter": {
+     "ranks": 3,
+     "seconds": 3.37,
+     "per_point": 1.12
+    },
+    "Frostbite": {
+     "ranks": 3,
+     "seconds": 1.99,
+     "per_point": 0.66
+    },
+    "Ice Shards": {
+     "ranks": 5,
+     "seconds": 1.84,
+     "per_point": 0.37
+    },
+    "Combustion": {
+     "ranks": 1,
+     "seconds": 1.07,
+     "per_point": 1.07
+    },
+    "Master of Elements": {
+     "ranks": 3,
+     "seconds": 0.93,
+     "per_point": 0.31
+    },
+    "Ignite": {
+     "ranks": 5,
+     "seconds": 0.87,
+     "per_point": 0.17
+    },
+    "Improved Frost Nova": {
+     "ranks": 2,
+     "seconds": 0.82,
+     "per_point": 0.41
+    },
+    "Blast Wave": {
+     "ranks": 1,
+     "seconds": 0.76,
+     "per_point": 0.76
+    },
+    "Fire Power": {
+     "ranks": 5,
+     "seconds": 0.71,
+     "per_point": 0.14
+    },
+    "Elemental Precision": {
+     "ranks": 5,
+     "seconds": 0.71,
+     "per_point": 0.14
+    },
+    "Improved Fireball": {
+     "ranks": 4,
+     "seconds": 0.56,
+     "per_point": 0.14
+    },
+    "Incineration": {
+     "ranks": 3,
+     "seconds": 0.54,
+     "per_point": 0.18
+    },
+    "Critical Mass": {
+     "ranks": 3,
+     "seconds": 0.35,
+     "per_point": 0.12
+    },
+    "Burning Soul": {
+     "ranks": 3,
+     "seconds": 0.21,
+     "per_point": 0.07
+    },
+    "Piercing Ice": {
+     "ranks": 1,
+     "seconds": 0.07,
+     "per_point": 0.07
+    },
+    "Improved Flamestrike": {
+     "ranks": 1,
+     "seconds": 0.0,
+     "per_point": 0.0
+    },
+    "Pyroblast": {
+     "ranks": 1,
+     "seconds": 0.0,
+     "per_point": 0.0
+    },
+    "Improved Fire Ward": {
+     "ranks": 1,
+     "seconds": 0.0,
+     "per_point": 0.0
+    }
+   },
+   "values_base": 27.9,
+   "split": "0/31/20",
+   "family": "Fire",
+   "link": "https://talentsforever.com/mage/60/-03450031101033151-00550231010003-4",
+   "ours_best": null,
+   "gain_vs_ours": null,
+   "minutes": 67.4,
+   "done": true,
+   "builds": {
+    "written": [
+     "fire-open-leveling"
+    ],
+    "why": null,
+    "spec": "Fire",
+    "date": "2026-10-06"
+   }
+  },
+  "frost-leveling": {
+   "model": "frost-leveling",
+   "trees": [
+    "Frost"
+   ],
+   "families": [
+    {
+     "keystones": "Arcane Blast + Ice Barrier",
+     "split": "12/4/35",
+     "family": "Frost",
+     "kills_per_hour": 160.95
+    },
+    {
+     "keystones": "Arcane Blast + Cold Snap",
+     "split": "21/2/28",
+     "family": "Hybrid Arcane/Frost",
+     "kills_per_hour": 160.79
+    },
+    {
+     "keystones": "Pyroblast + Ice Barrier",
+     "split": "0/19/32",
+     "family": "Frost",
+     "kills_per_hour": 158.16
+    },
+    {
+     "keystones": "Arcane Blast + Pyroblast",
+     "split": "17/11/23",
+     "family": "Hybrid Arcane/Frost",
+     "kills_per_hour": 151.11
+    },
+    {
+     "keystones": "Blast Wave + Cold Snap",
+     "split": "0/21/30",
+     "family": "Frost",
+     "kills_per_hour": 150.23
+    },
+    {
+     "keystones": "Pyroblast + Ice Lance",
+     "split": "2/11/38",
+     "family": "Frost",
+     "kills_per_hour": 146.06
+    },
+    {
+     "keystones": "Pyroblast + Cold Snap",
+     "split": "18/11/22",
+     "family": "Hybrid Arcane/Frost",
+     "kills_per_hour": 145.74
+    },
+    {
+     "keystones": "Blast Wave + Ice Lance",
+     "split": "4/21/26",
+     "family": "Hybrid Fire/Frost",
+     "kills_per_hour": 144.47
+    },
+    {
+     "keystones": "Presence of Mind + Cold Snap",
+     "split": "21/0/30",
+     "family": "Frost",
+     "kills_per_hour": 144.22
+    },
+    {
+     "keystones": "Heating Up + Ice Lance",
+     "split": "5/21/25",
+     "family": "Hybrid Fire/Frost",
+     "kills_per_hour": 142.78
+    },
+    {
+     "keystones": "Arcane Blast + Ice Block",
+     "split": "19/3/29",
+     "family": "Hybrid Arcane/Frost",
+     "kills_per_hour": 140.66
+    },
+    {
+     "keystones": "Presence of Mind + Ice Block",
+     "split": "25/0/26",
+     "family": "Hybrid Arcane/Frost",
+     "kills_per_hour": 140.04
+    },
+    {
+     "keystones": "Pyroblast + Ice Block",
+     "split": "0/22/29",
+     "family": "Hybrid Fire/Frost",
+     "kills_per_hour": 139.65
+    },
+    {
+     "keystones": "Missile Barrage + Ice Barrier",
+     "split": "16/2/33",
+     "family": "Frost",
+     "kills_per_hour": 138.22
+    },
+    {
+     "keystones": "Presence of Mind + Ice Lance",
+     "split": "21/0/30",
+     "family": "Frost",
+     "kills_per_hour": 136.46
+    }
+   ],
+   "winner": {
+    "allocation": {
+     "Arcane": [
+      [
+       "Wand Specialization",
+       2
+      ],
+      [
+       "Arcane Focus",
+       5
+      ],
+      [
+       "Improved Channeling",
+       2
+      ],
+      [
+       "Arcane Subtlety",
+       1
+      ],
+      [
+       "Arcane Concentration",
+       5
+      ],
+      [
+       "Arcane Meditation",
+       3
+      ]
+     ],
+     "Fire": [
+      [
+       "Incineration",
+       2
+      ]
+     ],
+     "Frost": [
+      [
+       "Frost Warding",
+       1
+      ],
+      [
+       "Improved Frostbolt",
+       5
+      ],
+      [
+       "Elemental Precision",
+       3
+      ],
+      [
+       "Ice Shards",
+       5
+      ],
+      [
+       "Frostbite",
+       3
+      ],
+      [
+       "Piercing Ice",
+       3
+      ],
+      [
+       "Frost Channeling",
+       3
+      ],
+      [
+       "Ice Lance",
+       1
+      ],
+      [
+       "Shatter",
+       3
+      ],
+      [
+       "Cold Snap",
+       1
+      ],
+      [
+       "Fingers of Frost",
+       2
+      ],
+      [
+       "Ice Barrier",
+       1
+      ]
+     ]
+    },
+    "split": "18/2/31",
+    "picked_by": "the 20-60 race among the finalists"
+   },
+   "runs_agree": 1,
+   "simulated_builds": 88874,
+   "important_features": [
+    {
+     "feature": "Fingers of Frost",
+     "importance": 0.37
+    },
+    {
+     "feature": "Ice Lance",
+     "importance": 0.2056
+    },
+    {
+     "feature": "Shatter",
+     "importance": 0.1609
+    },
+    {
+     "feature": "Frost points",
+     "importance": 0.0877
+    },
+    {
+     "feature": "Winter's Chill",
+     "importance": 0.0553
+    },
+    {
+     "feature": "Cold Snap",
+     "importance": 0.0258
+    },
+    {
+     "feature": "Ice Barrier",
+     "importance": 0.0149
+    },
+    {
+     "feature": "Ice Shards",
+     "importance": 0.0146
+    },
+    {
+     "feature": "Frostbite",
+     "importance": 0.009
+    },
+    {
+     "feature": "Frost Channeling",
+     "importance": 0.0083
+    },
+    {
+     "feature": "Fire points",
+     "importance": 0.0046
+    },
+    {
+     "feature": "Piercing Ice",
+     "importance": 0.0042
+    }
+   ],
+   "finalists": [
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Wand Specialization",
+        2
+       ],
+       [
+        "Arcane Focus",
+        5
+       ],
+       [
+        "Improved Channeling",
+        2
+       ],
+       [
+        "Arcane Subtlety",
+        1
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Arcane Meditation",
+        3
+       ]
+      ],
+      "Fire": [
+       [
+        "Incineration",
+        2
+       ]
+      ],
+      "Frost": [
+       [
+        "Frost Warding",
+        1
+       ],
+       [
+        "Improved Frostbolt",
+        5
+       ],
+       [
+        "Elemental Precision",
+        3
+       ],
+       [
+        "Ice Shards",
+        5
+       ],
+       [
+        "Frostbite",
+        3
+       ],
+       [
+        "Piercing Ice",
+        3
+       ],
+       [
+        "Frost Channeling",
+        3
+       ],
+       [
+        "Ice Lance",
+        1
+       ],
+       [
+        "Shatter",
+        3
+       ],
+       [
+        "Cold Snap",
+        1
+       ],
+       [
+        "Fingers of Frost",
+        2
+       ],
+       [
+        "Ice Barrier",
+        1
+       ]
+      ]
+     },
+     "split": "18/2/31",
+     "dps": 163.78,
+     "se": 0.2685
+    },
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Arcane Focus",
+        5
+       ],
+       [
+        "Improved Channeling",
+        2
+       ],
+       [
+        "Arcane Subtlety",
+        1
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Arcane Resilience",
+        2
+       ],
+       [
+        "Arcane Meditation",
+        3
+       ]
+      ],
+      "Fire": [
+       [
+        "Incineration",
+        1
+       ]
+      ],
+      "Frost": [
+       [
+        "Frost Warding",
+        1
+       ],
+       [
+        "Improved Frostbolt",
+        5
+       ],
+       [
+        "Elemental Precision",
+        3
+       ],
+       [
+        "Ice Shards",
+        5
+       ],
+       [
+        "Frostbite",
+        3
+       ],
+       [
+        "Piercing Ice",
+        3
+       ],
+       [
+        "Frost Channeling",
+        3
+       ],
+       [
+        "Ice Lance",
+        1
+       ],
+       [
+        "Shatter",
+        3
+       ],
+       [
+        "Improved Cone of Cold",
+        1
+       ],
+       [
+        "Cold Snap",
+        1
+       ],
+       [
+        "Fingers of Frost",
+        2
+       ],
+       [
+        "Ice Barrier",
+        1
+       ]
+      ]
+     },
+     "split": "18/1/32",
+     "dps": 162.39,
+     "se": 0.2659
+    }
+   ],
+   "order": [
+    {
+     "levels": "10-14",
+     "tree": "Frost",
+     "talent": "Improved Frostbolt",
+     "points": 5
+    },
+    {
+     "levels": "15-17",
+     "tree": "Frost",
+     "talent": "Frostbite",
+     "points": 3
+    },
+    {
+     "levels": "18-19",
+     "tree": "Frost",
+     "talent": "Elemental Precision",
+     "points": 2
+    },
+    {
+     "levels": "20",
+     "tree": "Frost",
+     "talent": "Ice Lance",
+     "points": 1
+    },
+    {
+     "levels": "21-23",
+     "tree": "Frost",
+     "talent": "Frost Channeling",
+     "points": 3
+    },
+    {
+     "levels": "24",
+     "tree": "Frost",
+     "talent": "Piercing Ice",
+     "points": 1
+    },
+    {
+     "levels": "25-26",
+     "tree": "Frost",
+     "talent": "Shatter",
+     "points": 2
+    },
+    {
+     "levels": "27-28",
+     "tree": "Frost",
+     "talent": "Ice Shards",
+     "points": 2
+    },
+    {
+     "levels": "29",
+     "tree": "Frost",
+     "talent": "Shatter",
+     "points": 1
+    },
+    {
+     "levels": "30-31",
+     "tree": "Frost",
+     "talent": "Fingers of Frost",
+     "points": 2
+    },
+    {
+     "levels": "32-34",
+     "tree": "Frost",
+     "talent": "Ice Shards",
+     "points": 3
+    },
+    {
+     "levels": "35-36",
+     "tree": "Frost",
+     "talent": "Piercing Ice",
+     "points": 2
+    },
+    {
+     "levels": "37",
+     "tree": "Frost",
+     "talent": "Elemental Precision",
+     "points": 1
+    },
+    {
+     "levels": "38",
+     "tree": "Frost",
+     "talent": "Frost Warding",
+     "points": 1
+    },
+    {
+     "levels": "39",
+     "tree": "Frost",
+     "talent": "Cold Snap",
+     "points": 1
+    },
+    {
+     "levels": "40",
+     "tree": "Frost",
+     "talent": "Ice Barrier",
+     "points": 1
+    },
+    {
+     "levels": "41-42",
+     "tree": "Fire",
+     "talent": "Incineration",
+     "points": 2
+    },
+    {
+     "levels": "43-44",
+     "tree": "Arcane",
+     "talent": "Wand Specialization",
+     "points": 2
+    },
+    {
+     "levels": "45-47",
+     "tree": "Arcane",
+     "talent": "Arcane Focus",
+     "points": 3
+    },
+    {
+     "levels": "48-50",
+     "tree": "Arcane",
+     "talent": "Arcane Concentration",
+     "points": 3
+    },
+    {
+     "levels": "51",
+     "tree": "Arcane",
+     "talent": "Arcane Subtlety",
+     "points": 1
+    },
+    {
+     "levels": "52-53",
+     "tree": "Arcane",
+     "talent": "Arcane Concentration",
+     "points": 2
+    },
+    {
+     "levels": "54-55",
+     "tree": "Arcane",
+     "talent": "Arcane Focus",
+     "points": 2
+    },
+    {
+     "levels": "56-57",
+     "tree": "Arcane",
+     "talent": "Improved Channeling",
+     "points": 2
+    },
+    {
+     "levels": "58-60",
+     "tree": "Arcane",
+     "talent": "Arcane Meditation",
+     "points": 3
+    }
+   ],
+   "race": {
+    "finalist 18/1/32": {
+     "weighted": 25.86,
+     "levels": {
+      "20": 26.77,
+      "30": 30.87,
+      "40": 28.96,
+      "50": 24.27,
+      "60": 22.3
+     }
+    },
+    "leveling-frost": {
+     "weighted": 26.26,
+     "levels": {
+      "20": 27.99,
+      "30": 29.42,
+      "40": 29.78,
+      "50": 24.5,
+      "60": 23.23
+     }
+    },
+    "opt-frost-leveling-leveling-st": {
+     "weighted": 26.26,
+     "levels": {
+      "20": 26.77,
+      "30": 32.22,
+      "40": 28.92,
+      "50": 24.36,
+      "60": 22.92
+     }
+    },
+    "opt-frost-aoe-leveling-aoe": {
+     "weighted": 30.8,
+     "levels": {
+      "20": 32.06,
+      "30": 37.47,
+      "40": 35.52,
+      "50": 27.83,
+      "60": 26.36
+     }
+    },
+    "open winner": {
+     "weighted": 25.75,
+     "levels": {
+      "20": 26.77,
+      "30": 30.87,
+      "40": 28.96,
+      "50": 24.03,
+      "60": 22.14
+     }
+    }
+   },
+   "values": {
+    "Ice Lance": {
+     "ranks": 1,
+     "seconds": 8.45,
+     "per_point": 8.45
+    },
+    "Shatter": {
+     "ranks": 3,
+     "seconds": 5.41,
+     "per_point": 1.8
+    },
+    "Ice Shards": {
+     "ranks": 5,
+     "seconds": 3.88,
+     "per_point": 0.78
+    },
+    "Fingers of Frost": {
+     "ranks": 2,
+     "seconds": 1.94,
+     "per_point": 0.97
+    },
+    "Frostbite": {
+     "ranks": 3,
+     "seconds": 1.53,
+     "per_point": 0.51
+    },
+    "Frost Channeling": {
+     "ranks": 3,
+     "seconds": 1.41,
+     "per_point": 0.47
+    },
+    "Arcane Meditation": {
+     "ranks": 3,
+     "seconds": 1.16,
+     "per_point": 0.39
+    },
+    "Piercing Ice": {
+     "ranks": 3,
+     "seconds": 0.74,
+     "per_point": 0.25
+    },
+    "Arcane Concentration": {
+     "ranks": 5,
+     "seconds": 0.69,
+     "per_point": 0.14
+    },
+    "Elemental Precision": {
+     "ranks": 3,
+     "seconds": 0.66,
+     "per_point": 0.22
+    },
+    "Ice Barrier": {
+     "ranks": 1,
+     "seconds": 0.58,
+     "per_point": 0.58
+    },
+    "Improved Frostbolt": {
+     "ranks": 5,
+     "seconds": 0.53,
+     "per_point": 0.11
+    },
+    "Incineration": {
+     "ranks": 2,
+     "seconds": 0.3,
+     "per_point": 0.15
+    },
+    "Wand Specialization": {
+     "ranks": 2,
+     "seconds": 0.11,
+     "per_point": 0.06
+    },
+    "Arcane Subtlety": {
+     "ranks": 1,
+     "seconds": 0.11,
+     "per_point": 0.11
+    },
+    "Cold Snap": {
+     "ranks": 1,
+     "seconds": 0.01,
+     "per_point": 0.01
+    },
+    "Arcane Focus": {
+     "ranks": 5,
+     "seconds": -0.0,
+     "per_point": -0.0
+    },
+    "Improved Channeling": {
+     "ranks": 2,
+     "seconds": 0.0,
+     "per_point": 0.0
+    },
+    "Frost Warding": {
+     "ranks": 1,
+     "seconds": 0.0,
+     "per_point": 0.0
+    }
+   },
+   "values_base": 22.21,
+   "split": "18/2/31",
+   "family": "Frost",
+   "link": "https://talentsforever.com/mage/60/2521050000003-02-1535003331000301201-4",
+   "ours_best": "leveling-frost",
+   "gain_vs_ours": 0.0198,
+   "minutes": 62.2,
+   "done": true,
+   "builds": {
+    "written": [
+     "frost-open-leveling"
+    ],
+    "why": null,
+    "spec": "Frost",
+    "date": "2026-10-06"
+   }
+  }
+ }
+}

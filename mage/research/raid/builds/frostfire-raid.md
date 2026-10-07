@@ -79,7 +79,7 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 7 passes, the last 2026-10-06, 16 changes to the base rotation; third-seed check: frostfire-fingers-of-frost-raid 535 -> 539 DPS (+0.8%), frostfire-open-raid 527 -> 550 DPS (+4.4%), frostfire-raid 514 -> 514 DPS (+0.0%), frostfire-ml-raid 482 -> 513 DPS (+6.4%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-06, 16 changes to the base rotation; third-seed check: open winner 533 -> 540 DPS (+1.4%), frostfire-open-raid 527 -> 550 DPS (+4.4%), frostfire-raid 514 -> 514 DPS (+0.0%), frostfire-ml-raid 482 -> 513 DPS (+6.4%), frostfire-fingers-of-frost-raid 535 -> 539 DPS (+0.8%)):
   1. insert before the filler: cast Fireball (+0.7%, pass 1)
   2. threshold 20% -> 10%: if mana % < 20% and time left in the fight > 25s: cast Evocation (+0.5%, pass 1)
   3. only with 3s or more of the fight left: cast Fireball (+0.3%, pass 1)
@@ -96,7 +96,7 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
   14. only above 25% mana: if mana % ≥ 10% and time left in the fight ≥ 6s: cast Frostfire Bolt (+0.7%, pass 5)
   15. move to the top: cast Fire Blast (+3.8%, pass 5)
   16. insert at the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+0.5%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-06, 20 changes to the base rotation; third-seed check: frostfire-fingers-of-frost-raid 686 -> 707 DPS (+3.0%), frostfire-open-raid 679 -> 692 DPS (+1.9%), frostfire-raid 625 -> 648 DPS (+3.7%), frostfire-ml-raid 630 -> 646 DPS (+2.5%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-06, 20 changes to the base rotation; third-seed check: open winner 687 -> 705 DPS (+2.7%), frostfire-open-raid 679 -> 692 DPS (+1.9%), frostfire-raid 625 -> 648 DPS (+3.7%), frostfire-ml-raid 630 -> 646 DPS (+2.5%), frostfire-fingers-of-frost-raid 686 -> 707 DPS (+3.0%)):
   1. insert at the top: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   2. threshold 110 -> 82.5: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   3. insert at the top: cast Berserking (+0.3%, pass 3)

@@ -10,8 +10,8 @@
   "start": "_reference\\data\\raidsim\\apls\\mage\\frostfire-raid.apl.json",
   "builds": [
    {
-    "label": "frostfire-fingers-of-frost-raid",
-    "talents": "-0355100013013304-00550003310003002"
+    "label": "open winner",
+    "talents": "-1355000013013304-00550003310003002"
    },
    {
     "label": "frostfire-open-raid",
@@ -24,6 +24,10 @@
    {
     "label": "frostfire-ml-raid",
     "talents": "004-10452131130103051-005500033"
+   },
+   {
+    "label": "frostfire-fingers-of-frost-raid",
+    "talents": "-0355100013013304-00550003310003002"
    }
   ],
   "iterations": 3000,
@@ -160,14 +164,14 @@
   ],
   "final": {
    "dummy": {
-    "frostfire-fingers-of-frost-raid": {
-     "before": 534.5583047687732,
-     "after": 538.8448985823154,
-     "base": 534.5583047687732,
+    "open winner": {
+     "before": 533.0663792832598,
+     "after": 540.4577101469374,
+     "base": 533.0663792832598,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.17785244999904992,
-     "oom_after": 0.17785244999904992
+     "oom_before": 0.3011451499999995,
+     "oom_after": 0.3011451499999995
     },
     "frostfire-open-raid": {
      "before": 527.1026056845678,
@@ -195,11 +199,20 @@
      "after_value": null,
      "oom_before": 1.4688217491994013,
      "oom_after": 1.4688217491994013
+    },
+    "frostfire-fingers-of-frost-raid": {
+     "before": 534.5583047687732,
+     "after": 538.8448985823154,
+     "base": 534.5583047687732,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.17785244999904992,
+     "oom_after": 0.17785244999904992
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 7
+  "passes": 8
  },
  "raid": {
   "class": "mage",
@@ -212,8 +225,8 @@
   "start": "_reference\\data\\raidsim\\apls\\mage\\frostfire-raid.base.apl.json",
   "builds": [
    {
-    "label": "frostfire-fingers-of-frost-raid",
-    "talents": "-0355100013013304-00550003310003002"
+    "label": "open winner",
+    "talents": "-1355000013013304-00550003310003002"
    },
    {
     "label": "frostfire-open-raid",
@@ -226,6 +239,10 @@
    {
     "label": "frostfire-ml-raid",
     "talents": "004-10452131130103051-005500033"
+   },
+   {
+    "label": "frostfire-fingers-of-frost-raid",
+    "talents": "-0355100013013304-00550003310003002"
    }
   ],
   "iterations": 3000,
@@ -394,14 +411,14 @@
   ],
   "final": {
    "raid": {
-    "frostfire-fingers-of-frost-raid": {
-     "before": 685.702131745033,
-     "after": 706.542017927011,
-     "base": 685.702131745033,
+    "open winner": {
+     "before": 686.5450343794419,
+     "after": 705.2298258845367,
+     "base": 686.5450343794419,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.38227839999499974,
-     "oom_after": 0.17915164999299996
+     "oom_before": 0.3519175999799997,
+     "oom_after": 0.3519175999799997
     },
     "frostfire-open-raid": {
      "before": 679.038192883027,
@@ -409,7 +426,7 @@
      "base": 679.038192883027,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.30458424998845,
+     "oom_before": 1.1811004999783015,
      "oom_after": 1.1811004999783015
     },
     "frostfire-raid": {
@@ -418,7 +435,7 @@
      "base": 624.6347571124755,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.06123479999750001,
+     "oom_before": 0.039591099997250016,
      "oom_after": 0.039591099997250016
     },
     "frostfire-ml-raid": {
@@ -427,12 +444,21 @@
      "base": 630.2064482863759,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0515419999959,
+     "oom_before": 1.3279163999202042,
      "oom_after": 1.3279163999202042
+    },
+    "frostfire-fingers-of-frost-raid": {
+     "before": 685.702131745033,
+     "after": 706.542017927011,
+     "base": 685.702131745033,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.17915164999299996,
+     "oom_after": 0.17915164999299996
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 8
+  "passes": 9
  }
 }
