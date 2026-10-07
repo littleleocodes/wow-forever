@@ -149,27 +149,35 @@ def polish(cls, spec, r, model, pool, space, save, cfg=None):
     return (cur, cur_b["order"]) if steps else None
 
 
-def pick_order(cls, spec, r, pool, space, save, before=None):
-    """Race the winner's three orders (and, after a polish, the race's old pick) at levels 20-60 on the race's seed and fights; the
-    fastest row becomes "open winner" (the old pick wins back when it is faster: the 20-60 race decides)."""
+def pick_order(cls, spec, r, pool, space, save, before=None, model=None):
+    """Race the winner's orders at levels 20-60 on the race's seed and fights: the stats model's (`order_stats`, computed from the model
+    when the record has none for this build), own tree first, own tree last, the current order when it is none of those (a polished one
+    from an earlier run) and, after a build polish, the race's old pick; the fastest row becomes "open winner" (the old pick wins back
+    when it is faster: the 20-60 race decides)."""
     w = FT.flat_of(r["winner"])
     split = space.split(w)
+    if r.get("order_stats_split") != split or not r.get("order_stats"):
+        r["order_stats"] = FT.order_of(cls, model, w) if model else r["order"]
+        r["order_stats_split"] = split
+    stats = r["order_stats"]
     lead = max(space.tree_names, key=lambda t: sum(w.get(n, 0) for n in space.by_tree[t]))
-    pts = expand(r["order"])
-    variants = [("own tree first", compress([p for p in pts if p[0] == lead] + [p for p in pts if p[0] != lead])),
-                ("own tree last", compress([p for p in pts if p[0] != lead] + [p for p in pts if p[0] == lead]))]
+    pts = expand(stats)
+    variants = [("stats model", stats),
+                ("own tree first", compress([x for x in pts if x[0] == lead] + [x for x in pts if x[0] != lead])),
+                ("own tree last", compress([x for x in pts if x[0] != lead] + [x for x in pts if x[0] == lead]))]
+    cur_lab = r.get("order_label") or "stats model"
+    if r["order"] not in [o for _, o in variants]:   # a polished order from an earlier run competes under its own label
+        variants.append((cur_lab, r["order"]))
     table = r["race"]
-    labels = {f"finalist {split} (stats model's order)": ("stats model", r["order"])}
     before_id = None
     if before:
         before_id = f"finalist {before['split']} (before the 20-60 polish)"
         table[before_id] = table.pop("open winner")
-        variants.insert(0, ("stats model", r["order"]))
     else:
-        table[next(iter(labels))] = table["open winner"]
-    cands = []
+        table[f"finalist {split} ({cur_lab} order)"] = table["open winner"]
+    labels, cands = {}, []
     for lab, o in variants:
-        cid = f"finalist {split} ({lab}{'' if lab == 'stats model' else ' order'})" if lab != "stats model" else f"finalist {split} (stats model's order)"
+        cid = f"finalist {split} ({lab} order)"
         labels[cid] = (lab, o)
         cands.append({"id": cid, "allocation": r["winner"]["allocation"], "order": o})
     res = FT.race(pool, cls, spec, cands, FO.RACE_FIGHTS, 3)
@@ -180,7 +188,8 @@ def pick_order(cls, spec, r, pool, space, save, before=None):
     if before_id and best_id == before_id:
         r["winner"] = {"allocation": before["allocation"], "split": before["split"],
                        "picked_by": "the 20-60 race (the polish's gain at levels 40-60 did not hold at 20-60)"}
-        r["order"], r["order_label"] = before["order"], "stats model"
+        r["order"], r["order_label"] = before["order"], before.get("order_label", "stats model")
+        r["order_stats"], r["order_stats_split"] = before.get("order_stats", before["order"]), before["split"]
         log(f"  {cls} {spec}: the race's old pick {before['split']} stays ({table[before_id]['weighted']:.2f} s against the polished "
             f"{split} at {min(table[k]['weighted'] for k in labels):.2f})")
     else:
@@ -193,12 +202,13 @@ def pick_order(cls, spec, r, pool, space, save, before=None):
     save()
 
 
-def ensure_order(cls, spec, r, pool, space, save):
+def ensure_order(cls, spec, r, pool, space, save, model=None):
     """After a certificate re-search put a new winner in with the stats model's order (fl_synergy.research), race its orders too."""
     split = space.split(FT.flat_of(r["winner"]))
     if r.get("orders_raced") == split and r.get("order_label"):   # (the chosen order's own row moves under "open winner": a key test failed)
         return False
-    choose_order(cls, spec, r, pool, space, save)
+    r["order_stats"], r["order_stats_split"] = r["order"], split   # the re-search gave the new winner the stats model's order
+    choose_order(cls, spec, r, pool, space, save, None, None, model)
     finish(cls, spec, r, space)
     save()
     return True
@@ -304,9 +314,9 @@ def order_polish(cls, spec, r, pool, space, save, cfg=None):
     return cur if steps else None
 
 
-def choose_order(cls, spec, r, pool, space, save, before=None, cfg=None):
+def choose_order(cls, spec, r, pool, space, save, before=None, cfg=None, model=None):
     """The three orders raced (pick_order), then the order polish; a polished order becomes the page's when it is faster at 20-60."""
-    pick_order(cls, spec, r, pool, space, save, before)
+    pick_order(cls, spec, r, pool, space, save, before, model)
     o = order_polish(cls, spec, r, pool, space, save, cfg)
     if not o:
         return
@@ -345,13 +355,18 @@ def finish(cls, spec, r, space):
 def after_race(cls, spec, r, model, trees, pool, space, ours, save, cfg=None, ocfg=None):
     """After the race's pick: the polish, then the order (three orders raced, the order polish); a changed winner gets new values and
     loses its certificate. Returns whether the winner changed."""
-    before = {"allocation": r["winner"]["allocation"], "order": r["order"], "split": space.split(FT.flat_of(r["winner"]))}
+    split0 = space.split(FT.flat_of(r["winner"]))
+    if r.get("order_stats_split") != split0:   # the race's pick carries the stats model's order
+        r["order_stats"], r["order_stats_split"] = r["order"], split0
+    before = {"allocation": r["winner"]["allocation"], "order": r["order"], "split": split0, "order_label": r.get("order_label", "stats model"),
+              "order_stats": r["order_stats"]}
     moved = polish(cls, spec, r, model, pool, space, save, cfg)
     if moved:
         flat, order = moved
         r["winner"] = {"allocation": alloc_of(space, flat), "split": space.split(flat), "picked_by": "the 20-60 polish after the race"}
         r["order"] = order
-    choose_order(cls, spec, r, pool, space, save, before if moved else None, ocfg)
+        r["order_stats"], r["order_stats_split"] = order, space.split(flat)   # order_job gave the polished build the stats model's order
+    choose_order(cls, spec, r, pool, space, save, before if moved else None, ocfg, model)
     changed = FT.flat_of(r["winner"]) != FT.flat_of(before)
     r["level_polish"]["changed"] = changed
     if changed:
@@ -401,7 +416,7 @@ def main():
                     log(f"  {cls} {spec}: order polished already ({r['order_polish'].get('date')}); --fresh redoes it")
                     continue
                 before_order = r["order"]
-                choose_order(cls, spec, r, pool, space, save, None, ocfg)
+                choose_order(cls, spec, r, pool, space, save, None, ocfg, model)
                 finish(cls, spec, r, space)
                 save()
                 changed_any |= r["order"] != before_order

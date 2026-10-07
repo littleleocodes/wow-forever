@@ -223,7 +223,7 @@ def main():
                 SYL = _load("fl_synergy_fo", HERE / "fl_synergy.py")
                 SYL.certificate(cls, spec, r, model, trees, pool, a.jobs, space, MLT, ours, argparse.Namespace(no_search=False), save)
                 FL = _load("fl_levels_fo", HERE / "fl_levels.py")
-                FL.ensure_order(cls, spec, r, pool, space, save)   # a re-search's new winner comes with the stats model's order only
+                FL.ensure_order(cls, spec, r, pool, space, save, model)   # a re-search's new winner comes with the stats model's order only
                 w = FT.flat_of(r["winner"])
             best = min((k for k in r["race"] if k != "open winner" and not k.startswith("finalist ")), key=lambda k: r["race"][k]["weighted"], default=None)
             r.update({"split": space.split(w), "family": space.classify(w), "link": RSH.tf_link(cls, w), "ours_best": best,
