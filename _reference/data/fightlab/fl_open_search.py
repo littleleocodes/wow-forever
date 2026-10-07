@@ -201,6 +201,12 @@ def main():
                 table["open winner"] = table.pop(cands[best]["id"])
                 r["race"] = table
                 save()
+            if "level_polish" not in r and not SMOKE:
+                # the 20-60 polish and the order choice (2026-10-07, fl_levels.py): the race's pick climbs on the pages' measure (time per
+                # kill at levels 20-60; the shaman's Elemental winner was 2.1% faster at 60 and 5.7% slower at 50), then its three orders
+                # race; a changed winner gets new values here and a new certificate below
+                FL = _load("fl_levels_fo", HERE / "fl_levels.py")
+                FL.after_race(cls, spec, r, model, trees, pool, space, ours, save)
             w = FT.flat_of(r["winner"])
             if "values" not in r:
                 jobs = [(cls, spec, w, 60, VALUE_FIGHTS, 5)] + [(cls, spec, {k: v for k, v in w.items() if k != n}, 60, VALUE_FIGHTS, 5) for n in w]
@@ -216,6 +222,8 @@ def main():
                 # around the winner at level 60; a lead 1% faster at levels 20-60 searches again from it and redoes the race and values
                 SYL = _load("fl_synergy_fo", HERE / "fl_synergy.py")
                 SYL.certificate(cls, spec, r, model, trees, pool, a.jobs, space, MLT, ours, argparse.Namespace(no_search=False), save)
+                FL = _load("fl_levels_fo", HERE / "fl_levels.py")
+                FL.ensure_order(cls, spec, r, pool, space, save)   # a re-search's new winner comes with the stats model's order only
                 w = FT.flat_of(r["winner"])
             best = min((k for k in r["race"] if k != "open winner" and not k.startswith("finalist ")), key=lambda k: r["race"][k]["weighted"], default=None)
             r.update({"split": space.split(w), "family": space.classify(w), "link": RSH.tf_link(cls, w), "ours_best": best,

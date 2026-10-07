@@ -651,7 +651,15 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   level 60 in the fight lab (green gear; builds in parallel processes, common random numbers), the scorer's leveling order for the winner,
   a race at levels 20-60 (weights level / 10) against our leveling builds of the trees that level with that rotation, and talent values at
   60 (seconds per kill without each talent). Records `fightlab/open/<class>.json`, reports `research/leveling/open-search.md` and
-  `_reference/leveling-open-search.md`.
+  `_reference/leveling-open-search.md`. **20-60 polish and order choice** (2026-10-07, self-audit of the shaman's Elemental rotation: the level-60 winner was 2.1%
+  faster at 60 than opt-elemental-dps-leveling-st, 5.7% slower at 50 and 0.9% slower at 20-60): `fightlab/fl_levels.py` runs after the
+  race's pick (hooked into fl_open_search; `fl_levels.py <class>` post hoc, `--fresh` redoes): a hill climb over the pick's one-move,
+  chain and tier-chain neighbours (random batches of 40, each with the stats model's own order computed in the pool) on the weighted time
+  per kill at levels 40, 50 and 60, kept at 0.3% on a second seed; then the winner's three orders (stats model, own tree first, own tree
+  last) raced at 20-60 on the race's seed and fights, the fastest is the page's (`order_label`); after a polish the race's old pick stays a
+  finalist and wins back when faster. A changed winner gets new values and a new certificate (`ensure_order` re-races the orders after a
+  certificate re-search). Records `level_polish`, `order_label` and `finalist <split> (<order>)` race rows. `_reference/data/low_priority.py
+  <script> [args]` runs a post-hoc job at below-normal CPU priority next to the queue.
 - **Beta build 70170/70205** (2026-10-03, user request after Lightning Reflexes read 2% a rank in game): talents and spellbooks from
   talentsforever.com's 70170 export (the warrior with the 1-2 Oct hotfixes; thewowdb answered for six classes, the others fall back to the
   previous pull, and a tree the Trait snapshot disagrees on takes the export's positions and prerequisites: `refresh_forever_talents.py`),

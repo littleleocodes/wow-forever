@@ -242,6 +242,18 @@ Each class folder now opens with player pages and keeps the research below:
   Frost mage (150 iterations, 2 rounds): 282 candidates on one build in 15 s, every build still checked and printed. The running hunter
   chain and every later re-tune (family_search `retune`, fl/raid cross-rotation polish, ml_pipeline's rotations step) pick it up as
   they spawn apl_opt.py afresh.
+  **Self-audit 2026-10-07 afternoon (shaman elemental-dps leveling):** the level-60 winner 31/11/9 was 2.1% faster at 60 than
+  opt-elemental-dps-leveling-st and 5.7% slower at 50 (0.9% slower at 20-60, so no build): level 60 is only a proxy for the pages' measure.
+  New `fightlab/fl_levels.py` (hooked into fl_open_search after the race; CLAUDE.md "20-60 polish and order choice"): a hill climb on
+  the weighted time per kill at levels 40-60 plus a race of the winner's three talent orders (the smoke test had own-tree-last 4% faster
+  than the stats model's order for that shaman build). Running post hoc at below-normal priority for the mage, paladin and hunter
+  (`_reference/data/deep-runs/levels-<class>.log`); the shaman's waiter runs it when its leveling search ends, then open_builds. The
+  running shaman search has the old code: its rotations get the polish post hoc. After a post-hoc change: `open_builds.py <class> --write
+  --only leveling --regen`. **Racials** (user question 2026-10-07): the raid sim runs each entry as the race its preset had (mage, priest,
+  hunter Troll; warlock Gnome; rogue Dwarf; warrior Human but arms-battle Dwarf; paladin Human; shaman Troll but one entry Orc; druid
+  Tauren), racial stats included; the only racial ability a tuned rotation casts is the Frostfire mage's Berserking (the warrior
+  rotations' Blood Fury lines never fire for a Human); the fight lab and healer lab model no race. Planned for the post-run re-race: one
+  race per class, racial casts stripped, a note on the raid pages pointing at `_reference/race-sweep.md`.
 - **After the whole open-search run:** `open_builds.py --write` for every class, re-race every entry (`run.py --all --write`, `--env
   environments --write`: several entries' gear changed on 2026-10-06), `ml_builds.py --tidy-winners --rank`, `rebuild.py --steps regen`,
   `linkcheck.py`, then the ranking artifact.

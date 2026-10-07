@@ -73,6 +73,17 @@ def order_of(cls, model, flat):
     return [{"levels": lv, "tree": t, "talent": n, "points": pts} for lv, t, n, pts in opt.compress_order(steps)]
 
 
+def order_job(job):
+    """(cls, model, flat) -> the stats model's leveling order, None when it fails (a pool job: fl_levels.py computes the orders of a
+    batch of neighbours in parallel, about 9 s a build)."""
+    cls, model, flat = job
+    try:
+        return order_of(cls, model, flat)
+    except Exception as e:   # noqa: BLE001
+        print(f"  order error {type(e).__name__}: {e}", flush=True)
+        return None
+
+
 def race(pool, cls, spec, builds, fights, seed):
     """Level-weighted time per kill for each {"allocation", "order"} build; returns [(weighted, {level: time})]."""
     jobs = [(cls, spec, FR.allocation_at(b, L), L, fights, seed) for b in builds for L in LEVELS]
