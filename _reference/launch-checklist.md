@@ -305,9 +305,6 @@
 **Arcane-Frost — Leveling (open talent search)** (`mage/research/leveling/builds/arcane-frost-open-leveling.md`)
 - [ ] An open-search Arcane-Frost leveling build: check it while leveling at launch.
 
-**Fire — Leveling (open talent search)** (`mage/research/leveling/builds/fire-open-leveling.md`)
-- [ ] An open-search Fire leveling build: check it while leveling at launch.
-
 **Frost — Leveling (open talent search)** (`mage/research/leveling/builds/frost-open-leveling.md`)
 - [ ] An open-search Frost leveling build: check it while leveling at launch.
 

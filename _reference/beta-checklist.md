@@ -143,7 +143,6 @@ Models: frost-leveling, frost-aoe, fire-leveling, frost-raid, fire-raid. Same mo
 - A derived Arcane leveling build: check it while leveling at launch.
 - A derived Fire leveling build: check it while leveling at launch.
 - An open-search Arcane-Frost leveling build: check it while leveling at launch.
-- An open-search Fire leveling build: check it while leveling at launch.
 - An open-search Frost leveling build: check it while leveling at launch.
 
 ## Paladin

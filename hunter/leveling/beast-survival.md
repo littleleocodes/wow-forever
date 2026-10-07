@@ -6,7 +6,7 @@
 
 **✅ Recommended** for leveling (the best hunter spec here, or within 3% of it).
 
-**[Beast-Survival — Leveling](../research/leveling/builds/beast-survival-open-leveling.md)** (19/8/24) — [open the talent tree](https://talentsforever.com/hunter/60/3520000504-0053-530200230140202-4)
+**[Beast-Survival — Leveling](../research/leveling/builds/beast-survival-open-leveling.md)** (22/5/24) — [open the talent tree](https://talentsforever.com/hunter/60/35200005041002-005-530200230140202-4)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
@@ -31,31 +31,32 @@ One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
-| 10-14 | Lethal Attacks (Marksmanship) | 5 |
-| 15-17 | Improved Stings (Marksmanship) | 3 |
-| 18-22 | Improved Tracking (Survival) | 5 |
-| 23-24 | Savage Strikes (Survival) | 2 |
-| 25-27 | Deflection (Survival) | 3 |
-| 28-30 | Surefooted (Survival) | 3 |
-| 31-32 | Clever Traps (Survival) | 2 |
-| 33-36 | Predator's Edge (Survival) | 4 |
-| 37 | Survival Tactics (Survival) | 1 |
-| 38-39 | Resourcefulness (Survival) | 2 |
-| 40-41 | Survivalist's Discipline (Survival) | 2 |
-| 42-44 | Deadly Aspects (Beast Mastery) | 3 |
-| 45-46 | Endurance Training (Beast Mastery) | 2 |
-| 47-48 | Focused Fire (Beast Mastery) | 2 |
-| 49-51 | Endurance Training (Beast Mastery) | 3 |
-| 52-56 | Unleashed Fury (Beast Mastery) | 5 |
-| 57-60 | Ferocity (Beast Mastery) | 4 |
+| 10-14 | Improved Tracking (Survival) | 5 |
+| 15-16 | Savage Strikes (Survival) | 2 |
+| 17-19 | Deflection (Survival) | 3 |
+| 20-22 | Surefooted (Survival) | 3 |
+| 23-24 | Clever Traps (Survival) | 2 |
+| 25-28 | Predator's Edge (Survival) | 4 |
+| 29 | Survival Tactics (Survival) | 1 |
+| 30-31 | Resourcefulness (Survival) | 2 |
+| 32-36 | Lethal Attacks (Marksmanship) | 5 |
+| 37-38 | Survivalist's Discipline (Survival) | 2 |
+| 39-41 | Deadly Aspects (Beast Mastery) | 3 |
+| 42-43 | Endurance Training (Beast Mastery) | 2 |
+| 44-45 | Focused Fire (Beast Mastery) | 2 |
+| 46-48 | Endurance Training (Beast Mastery) | 3 |
+| 49-53 | Unleashed Fury (Beast Mastery) | 5 |
+| 54-57 | Ferocity (Beast Mastery) | 4 |
+| 58 | Summon Hawk (Beast Mastery) | 1 |
+| 59-60 | Bestial Discipline (Beast Mastery) | 2 |
 
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
 | 20 | 17 |
-| 30 | 22 |
-| 40 | 26 |
+| 30 | 21 |
+| 40 | 24 |
 | 50 | 25 |
 | 60 | 27 |
 

@@ -7,7 +7,7 @@ The best talents and the best way to play every class in **World of Warcraft: Fo
 | Class | Roles | Fastest leveling (solo) | Most raid damage (DPS in a full raid) |
 |---|---|---|---|
 | [**Druid**](druid/README.md) | damage, tank, healer | [Feral Combat](druid/leveling/feral-combat.md) (25 s/kill) | [Balance](druid/raid/balance.md) (576 DPS) |
-| [**Hunter**](hunter/README.md) | damage | [Beast-Survival](hunter/leveling/beast-survival.md) (25 s/kill) | [Beast-Survival](hunter/raid/beast-survival.md) (1170 DPS) |
+| [**Hunter**](hunter/README.md) | damage | [Beast-Survival](hunter/leveling/beast-survival.md) (24 s/kill) | [Beast-Survival](hunter/raid/beast-survival.md) (1170 DPS) |
 | [**Mage**](mage/README.md) | damage | [Frost](mage/leveling/frost.md) (26 s/kill) | [Frostfire](mage/raid/frostfire.md) (707 DPS), [Frost](mage/raid/frost.md) (705 DPS), [Arcane-Frost](mage/raid/arcane-frost.md) (701 DPS), [Fire](mage/raid/fire.md) (700 DPS) |
 | [**Paladin**](paladin/README.md) | damage, tank, healer | [Retribution](paladin/leveling/retribution.md) (28 s/kill) | [Retribution](paladin/raid/retribution.md) (966 DPS) |
 | [**Priest**](priest/README.md) | damage, healer | [Shadow](priest/leveling/shadow.md) (26 s/kill) | [Shadow](priest/raid/shadow.md) (679 DPS) |
