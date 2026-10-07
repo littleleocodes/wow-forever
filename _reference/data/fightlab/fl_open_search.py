@@ -207,6 +207,12 @@ def main():
                                           key=lambda kv: -kv[1]["seconds"]))
                 r["values_base"] = round(base, 2)
                 save()
+            if "synergy" not in r and not SMOKE:
+                # the leveling synergy certificate (2026-10-07, fightlab/fl_synergy.py): every single and pair of relevant talents measured
+                # around the winner at level 60; a lead 1% faster at levels 20-60 searches again from it and redoes the race and values
+                SYL = _load("fl_synergy_fo", HERE / "fl_synergy.py")
+                SYL.certificate(cls, spec, r, model, trees, pool, a.jobs, space, MLT, ours, argparse.Namespace(no_search=False), save)
+                w = FT.flat_of(r["winner"])
             best = min((k for k in r["race"] if k != "open winner" and not k.startswith("finalist ")), key=lambda k: r["race"][k]["weighted"], default=None)
             r.update({"split": space.split(w), "family": space.classify(w), "link": RSH.tf_link(cls, w), "ours_best": best,
                       "gain_vs_ours": round(r["race"][best]["weighted"] / r["race"]["open winner"]["weighted"] - 1, 4) if best else None,
@@ -239,6 +245,14 @@ def write_class(cls, st):
               f"talent; the build: {r['values_base']:.2f} s):", "", "| Talent | Ranks | Seconds lost without it | Per point |", "|---|---|---|---|"]
         o += [f"| {n} | {v['ranks']} | {v['seconds']:+.2f} | {v['per_point']:+.2f} |" for n, v in r["values"].items()]
         o += ["", "Race at levels 20-60 (seconds per kill): " + ", ".join(f"{k} {v['weighted']:.2f}" for k, v in sorted(r["race"].items(), key=lambda kv: kv[1]["weighted"])) + ".", ""]
+        sy = r.get("synergy")
+        if sy:   # fl_synergy.py: every pair of relevant talents measured around the winner at level 60
+            o += [f"**Synergy certificate** ({sy['date']}, fightlab/fl_synergy.py): {sy['relevant']} relevant talents, {sy['missing']} the winner lacks; "
+                  f"{sy['pairs']} pairs measured around {sy['winner']} at level 60 on {sy['screen_fights']} fights. Largest interactions (kills per hour of both "
+                  "against the two alone): " + ", ".join(f"{x['pair']} {x['interaction']:+.1%} (build {x['gain']:+.1%})" for x in sy.get("top_interactions", [])[:6]) + ". "
+                  + (("Leads polished and raced at 20-60: " + ", ".join(f"{ld['pair']} -> {ld['split']} {ld['gain']:+.1%}" for ld in sy["leads"]) + ". ") if sy.get("leads") else "No pair build within 1% of the winner. ")
+                  + (f"**The search had missed it: searched again from the lead {sy['researched']['lead']}, winner now {sy['researched']['winner']} at {sy['researched']['seconds']:.2f} s per kill.**"
+                     if sy.get("researched") else "The certificate confirms the winner."), ""]
         bw = r.get("builds")
         if bw:   # open_builds.py's verdict: a derived build on the pages, or the build it confirms
             o += [f"Build ({bw['date']}, open_builds.py): " + (", ".join(f"`{b}`" for b in bw["written"]) if bw.get("written") else bw.get("why") or "none") + ".", ""]
