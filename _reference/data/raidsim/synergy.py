@@ -330,7 +330,7 @@ def research(cls, entry, e, repo, save, leads, best, rec, source):
     mine_all = FS.ours(cls)
     here = {bid: mine_all[bid] for bid in R.SPECS[cls][entry].get("builds", []) if bid in mine_all}
     starts = [FS.flat_of(ld["allocation"]) for ld in leads] + [w] + [R.alloc_of(b) for b in mine_all.values()] + FS.known_positives(cls)
-    sp, rec2 = FS.run_search(cls, entry, repo, FS.AGAIN, starts, 73, protect=e["first"]["protected"])
+    sp, rec2 = FS.run_search(cls, entry, repo, FS.AGAIN, starts, 73, protect=e["first"]["protected"], reuse=True)
     e["again"] = {"winner": rec2["winner"], "family": sp.classify(FS.flat_of(rec2["winner"]["allocation"])), "runs_agree": rec2["runs_agree"],
                   "important_features": rec2.get("important_features"), "simulated_builds": rec2["simulated_builds"], "from": source}
     w2 = FS.flat_of(rec2["winner"]["allocation"])

@@ -120,7 +120,11 @@ def ours(cls):
     return {bid: b for bid, b in data.items() if SM.mode_of(b) == "raid" and b.get("role") not in ("healer", "tank")}
 
 
-def run_search(cls, entry, repo, settings, starts, seed, protect=None):
+def family_cache(cls, entry):
+    return OUT / "cache" / f"{cls}-{entry}.families.json"
+
+
+def run_search(cls, entry, repo, settings, starts, seed, protect=None, reuse=False):
     space = MLT.Space(cls, "any", any_split=True)
     starts = [s for s in starts if s and space.valid(s)]
     space.protect = set(protect) if protect is not None else MLT.protected(cls, [entry], repo, "raid", starts)
@@ -128,8 +132,19 @@ def run_search(cls, entry, repo, settings, starts, seed, protect=None):
     import random
     t0 = time.time()
     psim = MLT.Sim(cls, entry, "raid", None, repo, f"family-polish-{cls}-{entry}")
-    log(f"== {cls} {entry}: family polish over every pair of {len(space.keystones(damage_only=True))} damage keystones from different trees")
-    fam = MLT.family_polish(space, psim, random.Random(seed), log, **POLISH)
+    fp = family_cache(cls, entry)
+    fam = None
+    if reuse and fp.exists():   # 2026-10-07 audit: a re-search (after a re-tune or a certificate lead) repeated the 40-minute polish
+        try:
+            fam = [(d["score"], d["build"], d["label"]) for d in json.load(open(fp, encoding="utf-8")) if space.valid(d["build"])]
+            log(f"== {cls} {entry}: {len(fam)} polished families reused from {fp.name} (the first search's; the rotation may have moved since)")
+        except (ValueError, KeyError, TypeError):
+            fam = None
+    if fam is None:
+        log(f"== {cls} {entry}: family polish over every pair of {len(space.keystones(damage_only=True))} damage keystones from different trees")
+        fam = MLT.family_polish(space, psim, random.Random(seed), log, **POLISH)
+        fp.parent.mkdir(parents=True, exist_ok=True)
+        fp.write_text(json.dumps([{"score": sc, "build": x, "label": lab} for sc, x, lab in fam]) + "\n", encoding="utf-8")
     log(f"   polish: {len(fam)} families, {psim.n:,} builds simulated ({psim.hits:,} cache hits), {(time.time() - t0) / 60:.1f} min")
     starts = starts + [x for _, x, _ in fam]
     log(f"== {cls} {entry}: open search (any split, full raid), {len(starts)} valid starts; kept: {', '.join(sorted(space.protect)) or 'none'}")
@@ -272,7 +287,7 @@ def main():
         if "again" not in e:
             if (new_family or e["race_first"]["open winner"]["dps"] > best_ours * 1.005 or (e.get("probe") or {}).get("lines_kept")) and not SMOKE:
                 e["rotation_changed"] = retune(cls, entry, w)
-                sp, rec = run_search(cls, entry, repo, AGAIN, [w] + starts, 72, protect=e["first"]["protected"])
+                sp, rec = run_search(cls, entry, repo, AGAIN, [w] + starts, 72, protect=e["first"]["protected"], reuse=True)
                 e["again"] = {"winner": rec["winner"], "family": sp.classify(flat_of(rec["winner"]["allocation"])), "runs_agree": rec["runs_agree"],
                               "important_features": rec.get("important_features"), "simulated_builds": rec["simulated_builds"]}
             else:
