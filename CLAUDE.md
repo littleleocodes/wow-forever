@@ -621,7 +621,11 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   certificate: `fightlab/fl_synergy.py` (singles and pairs unpaid around the leveling winner at level 60 in the fight lab, 400 fights,
   parallel processes; legal leads polished and raced at levels 20-60 with the stats model's order; a lead 1% faster per kill re-searches
   with the leads as starts and the winner by the 20-60 race), run by fl_open_search per rotation and standalone post hoc (`fl_synergy.py
-  <class> [--rotation] [--fresh] [--no-search]`; about 2-3 min per rotation). (9) **Cost**: `Sim.run` caches
+  <class> [--rotation] [--fresh] [--no-search]`; about 2-3 min per rotation). After a class's rotations, `fl_synergy.cross_rotations`
+  races every leveling winner at 20-60 under the class's other leveling rotations (`cross` in the record): a sibling 1% faster is the
+  rotation the page shows for that build (`render_modes.leveling_numbers`: the mage's Arcane-Frost leveling winner plays as Frost, 26.9
+  against 30.9 s), and a leveling page lists talent-granted abilities the build cannot have ("Not in this build": the paladin's Prot-Ret
+  split came out of the Holy rotation's search without Holy Shock, which the fight lab simply never cast). (9) **Cost**: `Sim.run` caches
   results within a process (talents, fights, seed, rotation file and time: common random numbers make repeats exact) and `polish` tries
   neighbours in random batches of 120 with first improvement, up to 24 steps (a step costs a batch; a full pass without a gain ends at a
   local optimum). A certificate costs 1-3 min per entry, the ranking 1-2 min; the family polish 40 min (16 keystones, 69 families) and the
