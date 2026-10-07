@@ -219,7 +219,10 @@ Each class folder now opens with player pages and keeps the research below:
   691 for the search's winner; the user's own 0/29/22 build (a hand draft since 2026-10-06, `frostfire-fingers-of-frost-raid`, and a known
   positive) leads the mage at 707 DPS after the rotation re-tune. Classes searched before this night (hunter, mage's other entries) have no
   certificate yet: run `synergy.py <class>` then `structural.py <class>` per class when the queue is idle; `open_builds.py <class> --write
-  --race --regen` afterwards when a winner changed.
+  --race --regen` afterwards when a winner changed. Audit finding (2026-10-07 01:30): the paladin's `ret-dps` and `seal-of-fury-raid`
+  entries produce identical results (956.6 DPS, the same 11/8/32 winner) because Retribution's raid rotation was replaced by the Seal of
+  Fury one on 2026-10-05; the second search is a duplicate costing about 1.5 h. Merge or retire `seal-of-fury-raid` (or skip an entry
+  whose raid rotation, gear and options equal a done entry's).
 - **After the whole open-search run:** `open_builds.py --write` for every class, re-race every entry (`run.py --all --write`, `--env
   environments --write`: several entries' gear changed on 2026-10-06), `ml_builds.py --tidy-winners --rank`, `rebuild.py --steps regen`,
   `linkcheck.py`, then the ranking artifact.
