@@ -248,11 +248,15 @@ Each class folder now opens with player pages and keeps the research below:
   the weighted time per kill at levels 40-60 plus a race of the winner's three talent orders (the smoke test had own-tree-last 4% faster
   than the stats model's order for that shaman build). Running post hoc at below-normal priority for the mage, paladin and hunter
   (`_reference/data/deep-runs/levels-<class>.log`); the shaman's waiter runs it when its leveling search ends, then open_builds. The
-  running shaman search had the old code: its rotations got the polish post hoc (done 16:42: Elemental 31/11/9 at 37.28 s, +2.0% ->
-  `elemental-open-leveling`; Enhancement 9/32/10 at 32.72 s, +2.6% -> `enhancement-open-leveling` replaces leveling-enhancement). The
-  order polish (block moves, levels 30-50) came after that run; the mage's post-hoc run started before it too: run `fl_levels.py mage
-  --orders --fresh` and `fl_levels.py shaman --orders --fresh` when the CPU is free, then `open_builds.py <class> --write --only leveling
-  --regen`. After a post-hoc change: `open_builds.py <class> --write --only leveling --regen`. **Hunter post hoc done** (16:59, commit
+  post-hoc runs are done for every finished class (hunter, mage, paladin, shaman; 2026-10-07 17:37, commits 1ddc590 to 37b03f8): every
+  leveling pick got the build polish, the three-order race and the order polish, its builds were rewritten (`open_builds.py <class>
+  --write --only leveling --regen`) and the pages regenerated. Gains over the hand drafts at 20-60: mage Frost 18/2/31 25.75 s (+2.0%),
+  Arcane-Frost 28/1/22 30.73 s; shaman Elemental 31/11/9 37.28 s (+2.0%, own tree last), Enhancement 9/32/10 32.72 s (+2.6%, own tree
+  first); paladin Prot-Ret 8/16/27 27.48 s, Retribution 11/8/32 27.83 s (+0.8%); hunter Beast-Survival 22/5/24 24.02 s (+9.2%),
+  Beast-Marks 29/18/4 26.09 s (own tree first), the Marksmanship rotation's 33/13/5 at 26.54 s plays as Beast Mastery and stays under
+  the bar (+0.47%). The order alone moved builds by up to 8% (own tree first against the stats model's order, mage Arcane) and the
+  order polish won once (hunter 33/13/5: Efficiency earlier, Careful Aim later, -0.3%). From the rogue on, fl_open_search runs all of
+  it in-loop. After any later post-hoc change: `open_builds.py <class> --write --only leveling --regen`. **Hunter post hoc done** (16:59, commit
   dc691b4): bm-raid's structural lead 27/19/5 held after the re-tune and re-search (903 DPS, +0.9%) -> `beast-marks-open-raid` replaces
   mm-hawk-raid; melee-dps 16/11/24 confirmed -> `beast-survival-open-raid` (1170 in a full raid, the class's best); the Marksmanship
   entries confirm mm-lone-wolf-raid. **Racials** (user question 2026-10-07): the raid sim runs each entry as the race its preset had (mage, priest,
