@@ -1,5 +1,5 @@
 """The open talent searches' winners as builds (2026-10-06; HANDOFF: "write the open winners as builds ... -open-raid / -open-leveling
-derived builds with replaces under the 2% rule").
+derived builds with replaces under the replacement bar").
 
     python _reference/data/open_builds.py [classes] [--write] [--no-tidy] [--partial]
 
@@ -9,7 +9,7 @@ raid): each done entry's winner (after the rotation re-tune when one happened) i
 (30,000 fights, common random numbers) and the spec's other raid builds at their full-raid numbers on the pages
 (render_modes.raid_numbers: each build's best entry). It becomes `<spec slug>-open-raid` (🔬, `derived: raid`) when GAIN_NEW (0.5%)
 ahead of all of them, else the record says which build it confirms; `replaces` names the spec's best hand draft when the winner is
-MIN_GAIN (2%) ahead of it (the user's rule: the hand draft stays as the alternative; the pages enforce the bar on race numbers,
+MIN_GAIN (0.5% since 2026-10-07, 2% before) ahead of it (the hand draft stays as the alternative; the pages enforce the bar on race numbers,
 render_modes.DERIVED_BAR). One build per spec: the best winner across entries. The build joins its entry's `builds` in specs.json and
 goes through filler_audit.py in the full raid (ml_builds.tidy) unless --no-tidy; re-race the entry afterwards (raidsim/run.py --spec
 <entry> --write and --env environments --write) for the pages' numbers.
@@ -45,7 +45,7 @@ FAMILIES = HERE / "raidsim" / "families"
 OPEN = HERE / "fightlab" / "open"
 TODAY = datetime.date.today().isoformat()
 GAIN_NEW = 0.005    # a winner becomes a build only this far ahead of every build of ours it is compared with (ml_builds.GAIN_NEW)
-MIN_GAIN = 0.02     # the user's replacement bar (hand draft -> derived build)
+MIN_GAIN = 0.005    # the replacement bar (hand draft -> derived build): 0.5% since 2026-10-07 (2% before; a rule Claude set, not the user)
 CORE_SHARE = 0.02   # raid: a talent worth this share of the build's full-raid DPS is core
 CORE_SECONDS = 0.3  # leveling: a talent saving this many seconds per kill at 60 is core
 CORE_MAX = 8
@@ -191,10 +191,10 @@ def make_raid_build(cls, entry, e, st, spec, w, allr, best, rivals, best_hand, h
         b["notes"].append("The spec's other builds on the pages (their best entry, full raid): " + ", ".join(f"{k} {v:.1f}" for k, v in sorted(pages.items(), key=lambda kv: -kv[1])) + ".")
     if replaces:
         b["replaces"] = replaces
-        b["notes"].insert(0, f"{wd / hand_dps - 1:+.1%} over the best hand draft of the spec, {replaces}, over the 2% replacement bar: this build is the "
+        b["notes"].insert(0, f"{wd / hand_dps - 1:+.1%} over the best hand draft of the spec, {replaces}, over the replacement bar: this build is the "
                              f"spec's raid pick, the hand draft stays as the alternative.")
     elif best_hand:
-        b["notes"].append(f"Against the spec's best hand draft {best_hand}: {wd / hand_dps - 1:+.1%} (under the 2% bar: the hand draft stays the pick "
+        b["notes"].append(f"Against the spec's best hand draft {best_hand}: {wd / hand_dps - 1:+.1%} (under the replacement bar: the hand draft stays the pick "
                           f"unless the re-race says otherwise).")
     if e.get("rotation_changed"):
         b["notes"].append(f"The {entry} raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.")
@@ -292,10 +292,10 @@ def make_leveling_build(cls, rot, r, spec, allr, rivals, best_hand, hand_t, repl
         b["notes"].append("The spec's other leveling builds on the pages: " + ", ".join(f"{k} {v:.2f} s" for k, v in sorted(pages.items(), key=lambda kv: kv[1])) + ".")
     if replaces:
         b["replaces"] = replaces
-        b["notes"].insert(0, f"{hand_t / wt - 1:+.1%} faster than the hand draft {replaces}, over the 2% replacement bar: this build is the spec's "
+        b["notes"].insert(0, f"{hand_t / wt - 1:+.1%} faster than the hand draft {replaces}, over the replacement bar: this build is the spec's "
                              f"leveling pick, the hand draft stays as the alternative.")
     elif best_hand:
-        b["notes"].append(f"Against the spec's fastest hand draft {best_hand}: {hand_t / wt - 1:+.1%} (under the 2% bar: the hand draft stays the pick).")
+        b["notes"].append(f"Against the spec's fastest hand draft {best_hand}: {hand_t / wt - 1:+.1%} (under the replacement bar: the hand draft stays the pick).")
     b["notes"].append("Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.")
     return b
 

@@ -10,7 +10,7 @@ every raid damage spec, and "DPS ranking for Pre-bis as well as best in slot arm
   raid`) when the record's full-raid comparison race (`compare_raid`: ml_pipeline.compare(..., "raid"), 100,000 fights, one fresh seed,
   BiS set) has it 0.5% or more ahead of every build raced there (the spec's three best builds by full-raid DPS and its two best hand
   drafts); otherwise the search confirms the current pick and no build is written. It carries `replaces` when it beats the spec's best
-  hand draft there by 2% or more (the user's rule: the hand draft stays as the alternative; the pages enforce the rule on the race
+  hand draft there by the replacement bar (0.5% since 2026-10-07, 2% before; the hand draft stays as the alternative; the pages enforce the rule on the race
   numbers, render_modes.DERIVED_BAR). It supersedes the spec's earlier derived raid builds (derive_raid.py's local search, earlier ML
   builds, the old training-dummy `-ml-raid` and full-raid `-ml-parse` pair), removed and marked "superseded" in derived-raid.json so a
   later `derive_raid.py --write` does not bring them back. It joins the specs.json builds of the entry it won in.
@@ -56,7 +56,7 @@ OUT = HERE / "ml"
 PAGE = ROOT / "_reference" / "dps-rankings.md"
 DERIVED_RAID = ROOT / "_reference" / "data" / "derived-raid.json"
 TODAY = datetime.date.today().isoformat()
-MIN_GAIN = 0.02     # the user's replacement bar (hand draft -> derived build)
+MIN_GAIN = 0.005    # the replacement bar (hand draft -> derived build): 0.5% since 2026-10-07 (2% before; a rule Claude set, not the user)
 GAIN_NEW = 0.005    # an ML winner becomes a build only this far ahead of every build in its comparison race (else it confirms them)
 ALIGN_TOL = 0.0003  # alignment: moves toward the hand draft keep the build within this of the winner (same seed)
 KEYS = ("bis-dummy", "bis-raid", "prebis-dummy", "prebis-raid")
@@ -183,8 +183,8 @@ def make_build(r):
     if c.get("gain_vs_hand") is not None:
         over = c["gain_vs_hand"] >= MIN_GAIN
         b["notes"].insert(0, f"Against the best hand draft {c['best_hand']} in a full raid, same gear and fights (100,000, one seed): "
-                             f"{c['gain_vs_hand']:+.1%}" + (" (over the 2% bar: this build is the spec's raid pick, the hand draft stays as the "
-                                                            "alternative)." if over else " (under the 2% bar: the hand draft stays the pick)."))
+                             f"{c['gain_vs_hand']:+.1%}" + (" (over the replacement bar: this build is the spec's raid pick, the hand draft stays as the "
+                                                            "alternative)." if over else " (under the replacement bar: the hand draft stays the pick)."))
         if over:
             b["replaces"] = c["best_hand"]
     if al.get("moves"):

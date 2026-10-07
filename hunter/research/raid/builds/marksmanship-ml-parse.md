@@ -63,7 +63,7 @@ The Marksmanship build the machine-learning talent search found in a full raid (
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 8 passes, the last 2026-10-04, 9 changes to the base rotation; third-seed check: deep: Marksmanship (dummy) 399 -> 486 DPS (+21.9%), deep: Marksmanship (raid) 381 -> 432 DPS (+13.5%), marksmanship-ml-raid 392 -> 428 DPS (+9.1%), sim preset: Beast Mastery 35/16/0 289 -> 370 DPS (+27.8%), mm-lone-wolf-raid 388 -> 427 DPS (+10.0%), opt-mm-lonewolf-raid-raid-dps 391 -> 430 DPS (+10.0%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 9 passes, the last 2026-10-07, 9 changes to the base rotation; third-seed check: open winner 396 -> 444 DPS (+12.2%), opt-mm-lonewolf-raid-raid-dps 422 -> 463 DPS (+9.5%), sim preset: Beast Mastery 35/16/0 298 -> 381 DPS (+27.8%), mm-lone-wolf-raid 405 -> 457 DPS (+12.8%), marksmanship-ml-raid 403 -> 444 DPS (+10.3%)):
   1. drop: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+3.3%, pass 1)
   2. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+2.4%, pass 1)
   3. threshold 1s -> 0.5s: if time to the next auto attack > 1s: cast Aimed Shot (+0.7%, pass 1)
@@ -73,7 +73,7 @@ The Marksmanship build the machine-learning talent search found in a full raid (
   7. move down below 'cast Arcane Shot': if time to the next auto attack > 0.5s: cast Aimed Shot (+0.4%, pass 6)
   8. only with 10s or more of the fight left: if auraIsInactive: cast Summon Hawk (+0.2%, pass 6)
   9. drop: if time to the next auto attack > 0.5s: cast Multi-Shot + only above 10% mana: if time to the next auto attack > 0.5s: cast Aimed Shot (+0.2%, pass 7)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 8 passes, the last 2026-10-04, 9 changes to the base rotation; third-seed check: deep: Marksmanship (dummy) 792 -> 858 DPS (+8.3%), deep: Marksmanship (raid) 872 -> 911 DPS (+4.4%), marksmanship-ml-raid 835 -> 859 DPS (+2.8%), sim preset: Beast Mastery 35/16/0 564 -> 629 DPS (+11.6%), mm-lone-wolf-raid 796 -> 805 DPS (+1.1%), opt-mm-lonewolf-raid-raid-dps 838 -> 862 DPS (+2.9%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 9 passes, the last 2026-10-07, 9 changes to the base rotation; third-seed check: open winner 911 -> 956 DPS (+4.9%), opt-mm-lonewolf-raid-raid-dps 896 -> 914 DPS (+2.0%), sim preset: Beast Mastery 35/16/0 570 -> 638 DPS (+12.0%), mm-lone-wolf-raid 907 -> 956 DPS (+5.4%), marksmanship-ml-parse 879 -> 911 DPS (+3.7%), marksmanship-ml-raid 848 -> 867 DPS (+2.2%)):
   1. drop: if time to the next auto attack > 1s: cast Aimed Shot (+1.7%, pass 1)
   2. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.5%, pass 1)
   3. drop 'time to the next auto attack > 1s' from the condition: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+0.3%, pass 1)

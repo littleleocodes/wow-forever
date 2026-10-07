@@ -6,7 +6,7 @@
 
 **[Enhancement — Raid](../research/raid/builds/enhancement-ml-raid.md)** (19/32/0) — [open the talent tree](https://talentsforever.com/shaman/60/500533102-055030021005102251--4)
 
-> 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds); it beat the hand-made build (enhancement-raid-dps) by 2% or more, which stays below as the alternative. A model of the beta, to check at launch.
+> 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds); it beat the hand-made build (enhancement-raid-dps), which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to play
 

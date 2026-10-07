@@ -2,7 +2,7 @@
  "dummy": {
   "class": "hunter",
   "spec": "mm-lonewolf-raid",
-  "date": "2026-10-04",
+  "date": "2026-10-07",
   "commit": "b0f0df3",
   "setting": "dummy",
   "tank": false,
@@ -10,18 +10,12 @@
   "start": "ui\\specs\\hunter\\dps\\apls\\mm.apl.json",
   "builds": [
    {
-    "label": "deep: Marksmanship (dummy)",
-    "talents": "50131005041001-005355001150005",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-bis.gear.json"
+    "label": "open winner",
+    "talents": "5-0053252511523051-5001"
    },
    {
-    "label": "deep: Marksmanship (raid)",
-    "talents": "510001-1053552511523051",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-bis.gear.json"
-   },
-   {
-    "label": "marksmanship-ml-raid",
-    "talents": "5501-305355041150305"
+    "label": "opt-mm-lonewolf-raid-raid-dps",
+    "talents": "5-005355051150305-50003"
    },
    {
     "label": "sim preset: Beast Mastery 35/16/0",
@@ -29,11 +23,11 @@
    },
    {
     "label": "mm-lone-wolf-raid",
-    "talents": "5501-305355201152305"
+    "talents": "5-0053452511513051-5"
    },
    {
-    "label": "opt-mm-lonewolf-raid-raid-dps",
-    "talents": "5-005355051150305-50003"
+    "label": "marksmanship-ml-raid",
+    "talents": "5501-305355041150305"
    }
   ],
   "iterations": 3000,
@@ -114,69 +108,60 @@
   ],
   "final": {
    "dummy": {
-    "deep: Marksmanship (dummy)": {
-     "before": 398.52101531907374,
-     "after": 485.9341393731372,
-     "base": 398.52101531907374,
+    "open winner": {
+     "before": 395.86104166883274,
+     "after": 443.98315454883584,
+     "base": 395.86104166883274,
      "before_value": null,
      "after_value": null,
-     "oom_before": 81.13388549210092,
-     "oom_after": 81.13388549210092
-    },
-    "deep: Marksmanship (raid)": {
-     "before": 380.8818335241417,
-     "after": 432.36478339902885,
-     "base": 380.8818335241417,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 99.61656086942912,
-     "oom_after": 99.61656086942912
-    },
-    "marksmanship-ml-raid": {
-     "before": 391.8409340234555,
-     "after": 427.5967198774621,
-     "base": 391.8409340234555,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 96.40320800855402,
-     "oom_after": 96.40320800855402
-    },
-    "sim preset: Beast Mastery 35/16/0": {
-     "before": 289.2452688507194,
-     "after": 369.5222466574423,
-     "base": 289.2452688507194,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 66.82738510609664,
-     "oom_after": 66.82738510609664
-    },
-    "mm-lone-wolf-raid": {
-     "before": 388.06606585798295,
-     "after": 426.84713942169975,
-     "base": 388.06606585798295,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 88.89224651519072,
-     "oom_after": 88.89224651519072
+     "oom_before": 101.56488716322544,
+     "oom_after": 101.56488716322544
     },
     "opt-mm-lonewolf-raid-raid-dps": {
-     "before": 391.32064416406183,
-     "after": 430.4230527933494,
-     "base": 391.32064416406183,
+     "before": 422.42273097186956,
+     "after": 462.7520627758238,
+     "base": 422.42273097186956,
      "before_value": null,
      "after_value": null,
-     "oom_before": 99.21024544698582,
-     "oom_after": 99.21024544698582
+     "oom_before": 91.9357228204576,
+     "oom_after": 91.9357228204576
+    },
+    "sim preset: Beast Mastery 35/16/0": {
+     "before": 298.15287733677377,
+     "after": 381.00623823581543,
+     "base": 298.15287733677377,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 51.743648442261374,
+     "oom_after": 51.743648442261374
+    },
+    "mm-lone-wolf-raid": {
+     "before": 405.2076663242195,
+     "after": 457.05595792602844,
+     "base": 405.2076663242195,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 96.91710128899203,
+     "oom_after": 96.91710128899203
+    },
+    "marksmanship-ml-raid": {
+     "before": 402.789891580726,
+     "after": 444.20938461588435,
+     "base": 402.789891580726,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 88.96059486205313,
+     "oom_after": 88.96059486205313
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 8
+  "passes": 9
  },
  "raid": {
   "class": "hunter",
   "spec": "mm-lonewolf-raid",
-  "date": "2026-10-04",
+  "date": "2026-10-07",
   "commit": "b0f0df3",
   "setting": "raid",
   "tank": false,
@@ -184,18 +169,12 @@
   "start": "ui\\specs\\hunter\\dps\\apls\\mm.apl.json",
   "builds": [
    {
-    "label": "deep: Marksmanship (dummy)",
-    "talents": "50131005041001-005355001150005",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-bis.gear.json"
+    "label": "open winner",
+    "talents": "5-0053252511523051-5001"
    },
    {
-    "label": "deep: Marksmanship (raid)",
-    "talents": "510001-1053552511523051",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-bis.gear.json"
-   },
-   {
-    "label": "marksmanship-ml-raid",
-    "talents": "5501-305355041150305"
+    "label": "opt-mm-lonewolf-raid-raid-dps",
+    "talents": "5-005355051150305-50003"
    },
    {
     "label": "sim preset: Beast Mastery 35/16/0",
@@ -203,11 +182,15 @@
    },
    {
     "label": "mm-lone-wolf-raid",
-    "talents": "5501-305355201152305"
+    "talents": "5-0053452511513051-5"
    },
    {
-    "label": "opt-mm-lonewolf-raid-raid-dps",
-    "talents": "5-005355051150305-50003"
+    "label": "marksmanship-ml-parse",
+    "talents": "510001-1053552511523051"
+   },
+   {
+    "label": "marksmanship-ml-raid",
+    "talents": "5501-305355041150305"
    }
   ],
   "iterations": 3000,
@@ -288,63 +271,63 @@
   ],
   "final": {
    "raid": {
-    "deep: Marksmanship (dummy)": {
-     "before": 791.9341602010627,
-     "after": 857.6910395617698,
-     "base": 791.9341602010627,
+    "open winner": {
+     "before": 911.1799784314755,
+     "after": 955.9185491908723,
+     "base": 911.1799784314755,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
+     "oom_before": 3.252458205847148,
+     "oom_after": 3.252458205847148
     },
-    "deep: Marksmanship (raid)": {
-     "before": 872.4389081882667,
-     "after": 910.6099554959661,
-     "base": 872.4389081882667,
+    "opt-mm-lonewolf-raid-raid-dps": {
+     "before": 895.6582967948024,
+     "after": 913.527517875344,
+     "base": 895.6582967948024,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.49699121003885005,
-     "oom_after": 0.49699121003885005
-    },
-    "marksmanship-ml-raid": {
-     "before": 835.1367203538211,
-     "after": 858.5539474485242,
-     "base": 835.1367203538211,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.07623154226895,
-     "oom_after": 0.07623154226895
+     "oom_before": 0.0015556851827499998,
+     "oom_after": 0.0015556851827499998
     },
     "sim preset: Beast Mastery 35/16/0": {
-     "before": 563.9319559970543,
-     "after": 629.1229253538653,
-     "base": 563.9319559970543,
+     "before": 569.7690901027834,
+     "after": 638.2319645151131,
+     "base": 569.7690901027834,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "mm-lone-wolf-raid": {
-     "before": 796.2912059067272,
-     "after": 804.6906766781102,
-     "base": 796.2912059067272,
+     "before": 907.1851265624159,
+     "after": 956.2390945744412,
+     "base": 907.1851265624159,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
+     "oom_before": 2.3588863996707494,
+     "oom_after": 2.3588863996707494
     },
-    "opt-mm-lonewolf-raid-raid-dps": {
-     "before": 838.0704802524682,
-     "after": 862.0251811694236,
-     "base": 838.0704802524682,
+    "marksmanship-ml-parse": {
+     "before": 878.694618675394,
+     "after": 911.3162126756367,
+     "base": 878.694618675394,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.16609137918825,
-     "oom_after": 0.16609137918825
+     "oom_before": 0.0183502362337,
+     "oom_after": 0.0183502362337
+    },
+    "marksmanship-ml-raid": {
+     "before": 847.820395144847,
+     "after": 866.8603294171897,
+     "base": 847.820395144847,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.0004163043482,
+     "oom_after": 0.0004163043482
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 8
+  "passes": 9
  }
 }

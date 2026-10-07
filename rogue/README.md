@@ -10,8 +10,8 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling (solo) | Raid (group: full raid DPS) |
 |---|---|---|
-| **Assassination** | **✅ Recommended**<br>[Raid Combat swords](leveling/assassination.md)<br>25 s/kill | [Assassination — Seal Fate daggers](raid/assassination.md)<br>728 DPS (raid) |
-| **Combat** | **✅ Recommended**<br>[Combat — Leveling](leveling/combat.md) ⚗<br>26 s/kill | **✅ Recommended**<br>[Combat Daggers](raid/combat.md)<br>765 DPS (raid) |
+| **Assassination** | **✅ Recommended**<br>[Raid Combat swords](leveling/assassination.md)<br>25 s/kill | [Assassination — Raid](raid/assassination.md) 🔬<br>734 DPS (raid) |
+| **Combat** | **✅ Recommended**<br>[Combat — Leveling](leveling/combat.md) ⚗<br>26 s/kill | **✅ Recommended**<br>[Combat — Raid](raid/combat.md) 🔬<br>772 DPS (raid) |
 | **Subtlety** | [Subtlety — Leveling](leveling/subtlety.md) 🔬<br>27 s/kill | [Subtlety — Hemorrhage](raid/subtlety.md)<br>686 DPS (raid) |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
@@ -45,9 +45,9 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
-| 1 | [Combat](raid/combat.md) — Combat Daggers | 765 | best |
-| 2 | [Assassination](raid/assassination.md) — Assassination — Seal Fate daggers | 728 | -5% |
-| 3 | [Subtlety](raid/subtlety.md) — Subtlety — Hemorrhage | 686 | -10% |
+| 1 | [Combat](raid/combat.md) — Combat — Raid 🔬 | 772 | best |
+| 2 | [Assassination](raid/assassination.md) — Assassination — Raid 🔬 | 734 | -5% |
+| 3 | [Subtlety](raid/subtlety.md) — Subtlety — Hemorrhage | 686 | -11% |
 
 Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie. Everything is a simulation of the beta, not a measurement in the game.
 

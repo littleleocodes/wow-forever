@@ -4,7 +4,9 @@
 
 **✅ Recommended** for raid (the best rogue spec here, or within 3% of it).
 
-**[Combat Daggers](../research/raid/builds/combat-daggers-raid.md)** (16/33/2) — [open the talent tree](https://talentsforever.com/rogue/60/005323102-30531300001515231-002-4)
+**[Combat — Raid](../research/raid/builds/combat-ml-raid.md)** (16/33/2) — [open the talent tree](https://talentsforever.com/rogue/60/00530310301-30531300001515231-002-4)
+
+> 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds). A model of the beta, to check at launch.
 
 ## How to play
 
@@ -12,9 +14,10 @@
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Eviscerate** when you have 4 combo points and Slice and Dice is active
-2. **Adrenaline Rush**
-3. **Backstab**
+1. **Cold Blood** when you have 4 combo points and Dice is active
+2. **Eviscerate** when you have 4 combo points and Slice and Dice is active
+3. **Adrenaline Rush**
+4. **Backstab**
 
 **Backstab** is your filler: cast it whenever nothing above is ready.
 
@@ -29,14 +32,14 @@
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 765 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 772 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
 | Pre-BiS | 672 | [16/33/2](https://talentsforever.com/rogue/60/00530310301-32330310001515231-002-4) |
-| Phase 1 BiS | 720 | [16/33/2](https://talentsforever.com/rogue/60/00530310301-30531300001515231-002-4) |
+| Phase 1 BiS | 720 | this build |
 
 **The gear** (average item level: Pre-BiS 63.3; Phase 1 BiS 64.7; each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -64,7 +67,7 @@
 
 ## Other builds of this spec
 
-- [Combat — Raid](../research/raid/builds/combat-ml-raid.md) (16/33/2, 772 DPS in a full raid, 402 on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/00530310301-30531300001515231-002-4)
+- [Combat Daggers](../research/raid/builds/combat-daggers-raid.md) (16/33/2, 765 DPS in a full raid, 398 on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/005323102-30531300001515231-002-4)
 - [Raid daggers](../research/raid/builds/opt-combat-daggers-raid-raid-dps.md) (17/32/2, 747 DPS in a full raid, 419 on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/005323121-30531300000515231-002-4)
 - [Combat Swords](../research/raid/builds/combat-swords-raid.md) (19/32/0, 731 DPS in a full raid, 393 on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/005303125-32403300001515131--4)
 - [Raid Combat swords](../research/raid/builds/opt-combat-swords-raid-raid-dps.md) (20/31/0, 726 DPS in a full raid, 376 on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/005323101005-32502300000514231--4)

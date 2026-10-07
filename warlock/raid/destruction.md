@@ -4,7 +4,7 @@
 
 **[Destruction — Raid](../research/raid/builds/destruction-ml-raid.md)** (10/11/30) — [open the talent tree](https://talentsforever.com/warlock/60/253-0050203001-055020510310035-4)
 
-> 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds); it beat the hand-made build (destruction-incinerate-raid) by 2% or more, which stays below as the alternative. A model of the beta, to check at launch.
+> 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds); it beat the hand-made build (destruction-incinerate-raid), which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to play
 

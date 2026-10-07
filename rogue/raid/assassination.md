@@ -2,7 +2,9 @@
 
 [Rogue](../README.md) > [Raid (group)](README.md) > Assassination
 
-**[Assassination — Seal Fate daggers](../research/raid/builds/assassination-seal-fate-raid.md)** (30/19/2) — [open the talent tree](https://talentsforever.com/rogue/60/0053031232150005-305313000013-002-4)
+**[Assassination — Raid](../research/raid/builds/assassination-ml-raid.md)** (30/19/2) — [open the talent tree](https://talentsforever.com/rogue/60/0053031052150005-305313000013-002-4)
+
+> 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds). A model of the beta, to check at launch.
 
 ## How to play
 
@@ -22,14 +24,14 @@
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 728 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 734 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
 | Pre-BiS | 647 | [30/19/2](https://talentsforever.com/rogue/60/0053031052150005-304313100013-002-4) |
-| Phase 1 BiS | 703 | [30/19/2](https://talentsforever.com/rogue/60/0053031052150005-305313000013-002-4) |
+| Phase 1 BiS | 703 | this build |
 
 **The gear** (average item level: Pre-BiS 63.1; Phase 1 BiS 67.2; each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -57,7 +59,7 @@
 
 ## Other builds of this spec
 
-- [Assassination — Raid](../research/raid/builds/assassination-ml-raid.md) (30/19/2, 734 DPS in a full raid, 394 on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/0053031052150005-305313000013-002-4)
+- [Assassination — Seal Fate daggers](../research/raid/builds/assassination-seal-fate-raid.md) (30/19/2, 728 DPS in a full raid, 407 on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/0053031232150005-305313000013-002-4)
 - [Assassination — Seal Fate / Vigor](../research/raid/builds/assassination-mutilate-raid.md) (30/21/0, 714 DPS in a full raid, 394 on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/0053031252112005-305313000015--4)
 
 ---

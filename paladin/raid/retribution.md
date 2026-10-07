@@ -4,13 +4,15 @@
 
 **✅ Recommended** for raid (the best paladin spec here, or within 3% of it).
 
-**[Two-handed Retribution](../research/raid/builds/opt-ret-dps-raid-dps.md)** (12/8/31) — [open the talent tree](https://talentsforever.com/paladin/60/25003002-503-05225131001230321-4)
+**[Retribution — Raid](../research/raid/builds/retribution-open-raid.md)** (9/8/34) — [open the talent tree](https://talentsforever.com/paladin/60/51003-503-05225331001330321-4)
+
+> 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds). A model of the beta, to check at launch.
 
 ## How to play
 
 **Before the pull:** **Seal of Command**.
 
-**Keep up all fight:** **Seal of Command**, **Seal of Righteousness**.
+**Keep up all fight:** **Seal of Righteousness**, **Seal of Command**.
 
 **Then press the first one that is ready**, top to bottom:
 
@@ -26,9 +28,7 @@
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 956 |
-
-> Note: Retribution's equal-tier set (raidsim/gear_opt.py, 2026-09-30) is caster gear: the simulator's stat weights value spell damage more than Strength for this spec, and the set leans on Forever launch items (Leafre's Ring of Precise Spell Power, +100 spell damage). In a full raid it also gains from both the physical and the spell buffs, and in Forever Curse of the Elements covers Holy (beta tooltip: 'Magic damage taken'). Check the launch items' availability before trusting the full-raid number.
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 966 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
@@ -62,8 +62,8 @@
 
 ## Other builds of this spec
 
-- [Retribution — Raid](../research/raid/builds/retribution-open-raid.md) (9/8/34, 966 DPS in a full raid, 505 on the dummy) — [open the talent tree](https://talentsforever.com/paladin/60/51003-503-05225331001330321-4)
 - [Retribution — Raid](../research/raid/builds/retribution-ml-raid.md) (11/8/32, 957 DPS in a full raid, 499 on the dummy) — [open the talent tree](https://talentsforever.com/paladin/60/25003001-503-05225131001330321-4)
+- [Two-handed Retribution](../research/raid/builds/opt-ret-dps-raid-dps.md) (12/8/31, 956 DPS in a full raid, 507 on the dummy) — [open the talent tree](https://talentsforever.com/paladin/60/25003002-503-05225131001230321-4)
 - [Retribution — Seal of Command / Twist of Light](../research/raid/builds/ret-full-buffs-raid.md) (10/8/33, 954 DPS in a full raid, 485 on the dummy) — [open the talent tree](https://talentsforever.com/paladin/60/52003-503-05225231001330321-4)
 - [Retribution — Seal of Command / Twist of Light](../research/raid/builds/ret-raid-dps.md) (17/0/34, 935 DPS in a full raid, 421 on the dummy) — [open the talent tree](https://talentsforever.com/paladin/60/550030030001--05225331001330321-4)
 

@@ -386,7 +386,9 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   sections and `<class>/leveling|raid|pvp/`; `render_start_here.py` is its helper library (`tf_link`, `display_name`, `rotation_lines`).
   `_reference/organization-plan.md` records the reorganization (done 2026-09-29).
 - **Derived builds** (2026-09-30, user request "each spec to have a leveling, raid and PvP spec that we can best derive from
-  everything"; the user's rule: a derived build replaces a hand draft only when it is 2%+ better, and the hand draft stays as the
+  everything"; the replacement bar: a derived build replaces a hand draft only when it is better by the bar (2% from 2026-09-30, a rule
+  Claude set that these notes misattributed to the user; **0.5% since 2026-10-07**, the user's principle being the highest DPS in a raid
+  and 0.5% being above the noise between separate page races), and the hand draft stays as the
   alternative). Builds carry `derived: leveling|raid|pvp` (shown with 🔬), `replaces: <hand id>` when they beat one; records in
   `_reference/data/derived-<mode>.json` (generated; each script resumes from its record unless `--fresh`).
   - Leveling: `derive_leveling.py` (`LEVEL`: per class and tree the fight-lab rotation and the scorer model). Starts = the spec's

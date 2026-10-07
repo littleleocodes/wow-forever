@@ -6,7 +6,7 @@ PvP spec that we can best derive from everything").
 For every (class, tree) and role (damage; tank where the tree tanks) with raid builds: start from the spec's best raid build of ours in
 the last race (training dummy DPS; tanks: tank value), and run raidsim/talent_opt.py in that build's entry with --min-tree <tree>=30 (the
 dummy setting for damage, the entry's setting for tanks). The derived build replaces the spec's pick only when it beats the best hand
-draft by 2% or more (the user's rule), estimated as (start / hand in the race) x (search result / start on the search's third seed);
+draft by the replacement bar (0.5% since 2026-10-07, 2% before), estimated as (start / hand in the race) x (search result / start on the search's third seed);
 the hand draft stays as the alternative. The re-race afterwards (raidsim/run.py --write) sets the numbers the pages show. Healers: the
 healer lab's own pipeline does this (rebuild.py --steps heal,adopt: calibrate, optimize, race, adopt over 2%).
 Records: `_reference/data/derived-raid.json` (generated; reused unless --fresh); candidates
@@ -31,7 +31,7 @@ from fmt_json import dumps  # noqa: E402
 
 OUT = HERE / "derived-raid.json"
 TODAY = datetime.date.today().isoformat()
-MIN_GAIN = 0.02
+MIN_GAIN = 0.005   # the replacement bar: 0.5% since 2026-10-07 (2% before)
 
 
 def hand(b):
@@ -112,7 +112,7 @@ def build_of(cls, rec, c):
          "sources": ["https://github.com/ElliotWood/Forever"]}
     if rec["verdict"] == "replaces":
         b["replaces"] = rec["hand"]
-        b["notes"].insert(0, f"About {rec['gain_vs_hand']:+.1%} over the hand draft {rec['hand']} (over the 2% replacement bar): this build is the "
+        b["notes"].insert(0, f"About {rec['gain_vs_hand']:+.1%} over the hand draft {rec['hand']} (over the replacement bar): this build is the "
                              f"spec's raid pick, the hand draft stays as the alternative.")
     return b
 

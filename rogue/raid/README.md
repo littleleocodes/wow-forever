@@ -6,9 +6,9 @@
 
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
-| 1 | [Combat](combat.md) — Combat Daggers | 765 | best |
-| 2 | [Assassination](assassination.md) — Assassination — Seal Fate daggers | 728 | -5% |
-| 3 | [Subtlety](subtlety.md) — Subtlety — Hemorrhage | 686 | -10% |
+| 1 | [Combat](combat.md) — Combat — Raid 🔬 | 772 | best |
+| 2 | [Assassination](assassination.md) — Assassination — Raid 🔬 | 734 | -5% |
+| 3 | [Subtlety](subtlety.md) — Subtlety — Hemorrhage | 686 | -11% |
 
 **By gear tier**: each damage spec with its best talents for each tier, in its own gear (DPS in a full raid; [every class](../../_reference/dps-rankings.md)):
 

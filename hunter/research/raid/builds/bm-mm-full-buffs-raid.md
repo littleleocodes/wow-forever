@@ -83,7 +83,7 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `bm-mm-raid
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 8 passes, the last 2026-10-05, 8 changes to the base rotation; third-seed check: open winner 370 -> 448 DPS (+21.2%), bm-mm-raid 404 -> 482 DPS (+19.4%), sim preset: Beast Mastery 35/16/0 376 -> 458 DPS (+21.8%), bm-mm-full-buffs-raid 401 -> 432 DPS (+7.7%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 9 passes, the last 2026-10-07, 11 changes to the base rotation; third-seed check: open winner 389 -> 430 DPS (+10.5%), bm-mm-raid 416 -> 498 DPS (+19.8%), sim preset: Beast Mastery 35/16/0 387 -> 475 DPS (+22.8%), bm-mm-full-buffs-raid 412 -> 445 DPS (+8.0%)):
   1. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+2.3%, pass 1)
   2. drop: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+1.7%, pass 1)
   3. threshold 0.5s -> 1s: if time to the next auto attack > 0.5s: cast Multi-Shot (+0.6%, pass 1)
@@ -92,6 +92,9 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `bm-mm-raid
   6. spell probe: insert at the top: if auraIsInactive: cast Summon Hawk (+6.4%, pass 5)
   7. only with 10s or more of the fight left: if auraIsInactive: cast Summon Hawk (+0.3%, pass 6)
   8. only above 25% mana: if time to the next auto attack > 1s and time left in the fight ≥ 20s: cast Aimed Shot (+0.3%, pass 6)
+  9. threshold 25% -> 20%: if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 25%: cast Aimed Shot (+0.2%, pass 9)
+  10. threshold 10s -> 15s: if auraIsInactive and time left in the fight ≥ 10s: cast Summon Hawk + only above 10% mana: if time to the next auto attack > 1s: cast Multi-Shot (+0.2%, pass 9)
+  11. insert in the middle: cast Intimidation + only above 60% mana: cast Intimidation (+0.3%, pass 9)
 - **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 8 passes, the last 2026-10-05, 9 changes to the base rotation; third-seed check: open winner 813 -> 874 DPS (+7.4%), bm-mm-raid 783 -> 839 DPS (+7.1%), sim preset: Beast Mastery 35/16/0 738 -> 810 DPS (+9.8%), bm-mm-full-buffs-raid 786 -> 795 DPS (+1.2%)):
   1. drop: if time to the next auto attack > 1s: cast Aimed Shot (+1.0%, pass 1)
   2. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.3%, pass 1)
@@ -110,11 +113,11 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 | 1 | cast Arcane Shot | 8.1 |
 | 2 | use every other cooldown when ready | as ready |
 | 3 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
-| 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 25%: cast Aimed Shot | 3.7 |
-| 5 | if time to the next auto attack > 1s: cast Multi-Shot | 1.3 |
+| 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 20%: cast Aimed Shot | 3.7 |
+| 5 | if time to the next auto attack > 1s and mana % ≥ 10%: cast Multi-Shot | 1.3 |
 | 6 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.6 |
 
-Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent).
+Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Intimidation (needs the Intimidation talent).
 
 Damage by ability:
 

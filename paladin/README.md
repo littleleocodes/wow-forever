@@ -12,7 +12,7 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 |---|---|---|
 | **Holy** | [Holy — Leveling into the raid build](leveling/holy.md) 🔬<br>35 s/kill | [Holy — Raid Healer](raid/holy.md)<br>healer |
 | **Protection** | [Protection — Leveling into the raid build](leveling/protection.md) 🔬<br>31 s/kill | [Shield tank](raid/protection.md)<br>tank |
-| **Retribution** | **✅ Recommended**<br>[Leveling — Retribution](leveling/retribution.md)<br>28 s/kill | **✅ Recommended**<br>[Two-handed Retribution](raid/retribution.md)<br>956 DPS (raid) |
+| **Retribution** | **✅ Recommended**<br>[Leveling — Retribution](leveling/retribution.md)<br>28 s/kill | **✅ Recommended**<br>[Retribution — Raid](raid/retribution.md) 🔬<br>966 DPS (raid) |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
 
@@ -44,7 +44,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
-| 1 | [Retribution](raid/retribution.md) — Two-handed Retribution | 956 | best |
+| 1 | [Retribution](raid/retribution.md) — Retribution — Raid 🔬 | 966 | best |
 
 **Tanking**: [Protection](raid/protection.md) — Shield tank.
 

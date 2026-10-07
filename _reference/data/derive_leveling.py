@@ -163,7 +163,7 @@ def build_of(cls, tree, rec, c):
          "sources": ["https://talentsforever.com/" + cls]}
     if rec["verdict"] == "replaces":
         b["replaces"] = rec["incumbent"]
-        b["notes"].insert(0, f"{s['race']['gain']:+.1%} faster than the hand draft {rec['incumbent']}, over the 2% replacement bar: this build "
+        b["notes"].insert(0, f"{s['race']['gain']:+.1%} faster than the hand draft {rec['incumbent']}, over the replacement bar: this build "
                              f"is the spec's leveling pick, the hand draft stays as the alternative.")
     return b
 
@@ -174,7 +174,7 @@ def main():
     ap.add_argument("--only")
     ap.add_argument("--fresh", action="store_true")
     ap.add_argument("--write", action="store_true")
-    ap.add_argument("--min-gain", type=float, default=0.02)
+    ap.add_argument("--min-gain", type=float, default=0.005)   # the replacement bar: 0.5% since 2026-10-07 (2% before)
     ap.add_argument("--jobs", type=int, default=4)
     a = ap.parse_args()
     done = json.load(open(OUT, encoding="utf-8")) if OUT.exists() else {}
