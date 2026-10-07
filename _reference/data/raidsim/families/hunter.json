@@ -8593,6 +8593,12 @@
      "lead": "7/39/5",
      "source": "structural ranking"
     }
+   },
+   "builds": {
+    "written": [],
+    "why": "confirms mm-lone-wolf-raid (-4.78% in a full raid, against the pages' number)",
+    "spec": "Marksmanship",
+    "date": "2026-10-07"
    }
   },
   "mm-lonewolf-raid": {
@@ -26090,6 +26096,12 @@
      }
     },
     "minutes": 1.2
+   },
+   "builds": {
+    "written": [],
+    "why": "confirms mm-lone-wolf-raid (+0.05% in a full raid, raced together)",
+    "spec": "Marksmanship",
+    "date": "2026-10-07"
    }
   },
   "bm-raid": {
@@ -26347,107 +26359,244 @@
     ],
     "lines_kept": 0
    },
-   "again": null,
+   "again": {
+    "winner": {
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        5
+       ],
+       [
+        "Endurance Training",
+        3
+       ],
+       [
+        "Focused Fire",
+        2
+       ],
+       [
+        "Improved Aspect of the Monkey",
+        1
+       ],
+       [
+        "Pathfinding",
+        1
+       ],
+       [
+        "Unleashed Fury",
+        5
+       ],
+       [
+        "Ferocity",
+        5
+       ],
+       [
+        "Summon Hawk",
+        1
+       ],
+       [
+        "Bestial Discipline",
+        2
+       ],
+       [
+        "Frenzy",
+        2
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Improved Stings",
+        3
+       ],
+       [
+        "Efficiency",
+        1
+       ],
+       [
+        "Careful Aim",
+        5
+       ],
+       [
+        "Lone Wolf",
+        1
+       ],
+       [
+        "Mortal Shots",
+        4
+       ]
+      ],
+      "Survival": [
+       [
+        "Improved Tracking",
+        5
+       ]
+      ]
+     },
+     "split": "27/19/5",
+     "dps": 903.2,
+     "se": 0.0803,
+     "iterations": 100000
+    },
+    "family": "Hybrid Beast Mastery/Marksmanship",
+    "runs_agree": 2,
+    "important_features": [
+     {
+      "feature": "Frenzy",
+      "importance": 0.1784
+     },
+     {
+      "feature": "Ferocity",
+      "importance": 0.1764
+     },
+     {
+      "feature": "Mortal Shots",
+      "importance": 0.1351
+     },
+     {
+      "feature": "Summon Hawk",
+      "importance": 0.097
+     },
+     {
+      "feature": "Careful Aim",
+      "importance": 0.0951
+     },
+     {
+      "feature": "Bestial Discipline",
+      "importance": 0.0659
+     },
+     {
+      "feature": "Survival points",
+      "importance": 0.0441
+     },
+     {
+      "feature": "Unleashed Fury",
+      "importance": 0.0318
+     },
+     {
+      "feature": "Improved Concussive Shot",
+      "importance": 0.0304
+     },
+     {
+      "feature": "Beast Mastery points",
+      "importance": 0.0254
+     },
+     {
+      "feature": "Lethal Attacks",
+      "importance": 0.0192
+     },
+     {
+      "feature": "Marksmanship points",
+      "importance": 0.0163
+     }
+    ],
+    "simulated_builds": 4434,
+    "from": "structural ranking"
+   },
    "race": {
     "open winner": {
-     "dps": 880.3,
-     "se": 0.14
+     "dps": 903.1,
+     "se": 0.15
     },
     "mm-hawk-raid": {
-     "dps": 855.0,
-     "se": 0.14
+     "dps": 867.7,
+     "se": 0.15
     },
     "beast-mastery-raid": {
-     "dps": 854.8,
-     "se": 0.13
+     "dps": 866.9,
+     "se": 0.14
     },
     "beast-mastery-ml-parse": {
-     "dps": 880.3,
-     "se": 0.14
+     "dps": 895.2,
+     "se": 0.15
     },
     "beast-marks-ml-raid": {
-     "dps": 876.1,
-     "se": 0.14
+     "dps": 889.7,
+     "se": 0.15
     }
    },
    "values": {
     "Summon Hawk": {
      "ranks": 1,
-     "lost": 55.8,
-     "per_point": 55.8,
-     "share": 0.0634
-    },
-    "Lethal Attacks": {
-     "ranks": 5,
-     "lost": 41.2,
-     "per_point": 8.2,
-     "share": 0.0468
+     "lost": 60.5,
+     "per_point": 60.5,
+     "share": 0.067
     },
     "Careful Aim": {
      "ranks": 5,
-     "lost": 40.1,
-     "per_point": 8.0,
-     "share": 0.0456
+     "lost": 48.9,
+     "per_point": 9.8,
+     "share": 0.0541
     },
-    "Unleashed Fury": {
+    "Lethal Attacks": {
      "ranks": 5,
-     "lost": 37.6,
-     "per_point": 7.5,
-     "share": 0.0428
+     "lost": 42.2,
+     "per_point": 8.4,
+     "share": 0.0467
     },
     "Deadly Aspects": {
      "ranks": 5,
-     "lost": 32.1,
-     "per_point": 6.4,
-     "share": 0.0365
+     "lost": 39.9,
+     "per_point": 8.0,
+     "share": 0.0441
+    },
+    "Unleashed Fury": {
+     "ranks": 5,
+     "lost": 36.6,
+     "per_point": 7.3,
+     "share": 0.0406
+    },
+    "Improved Tracking": {
+     "ranks": 5,
+     "lost": 35.3,
+     "per_point": 7.1,
+     "share": 0.0391
     },
     "Mortal Shots": {
-     "ranks": 5,
-     "lost": 31.0,
-     "per_point": 6.2,
-     "share": 0.0352
-    },
-    "Frenzy": {
-     "ranks": 5,
-     "lost": 30.7,
-     "per_point": 6.1,
-     "share": 0.0349
+     "ranks": 4,
+     "lost": 27.7,
+     "per_point": 6.9,
+     "share": 0.0307
     },
     "Ferocity": {
      "ranks": 5,
-     "lost": 26.1,
-     "per_point": 5.2,
-     "share": 0.0297
+     "lost": 27.0,
+     "per_point": 5.4,
+     "share": 0.0299
     },
-    "Bestial Discipline": {
+    "Frenzy": {
      "ranks": 2,
-     "lost": 22.7,
-     "per_point": 11.3,
-     "share": 0.0257
+     "lost": 22.8,
+     "per_point": 11.4,
+     "share": 0.0252
     },
     "Improved Stings": {
      "ranks": 3,
-     "lost": 19.7,
-     "per_point": 6.6,
-     "share": 0.0224
+     "lost": 20.2,
+     "per_point": 6.7,
+     "share": 0.0223
     },
     "Focused Fire": {
      "ranks": 2,
-     "lost": 16.8,
-     "per_point": 8.4,
-     "share": 0.019
+     "lost": 17.2,
+     "per_point": 8.6,
+     "share": 0.0191
     },
-    "Bestial Wrath": {
-     "ranks": 1,
-     "lost": 12.5,
-     "per_point": 12.5,
-     "share": 0.0142
+    "Bestial Discipline": {
+     "ranks": 2,
+     "lost": 15.7,
+     "per_point": 7.9,
+     "share": 0.0174
     },
     "Efficiency": {
-     "ranks": 2,
-     "lost": 8.4,
-     "per_point": 4.2,
-     "share": 0.0095
+     "ranks": 1,
+     "lost": 0.5,
+     "per_point": 0.5,
+     "share": 0.0006
     },
     "Endurance Training": {
      "ranks": 3,
@@ -26455,98 +26604,110 @@
      "per_point": 0.0,
      "share": 0.0
     },
-    "Bestial Swiftness": {
+    "Improved Aspect of the Monkey": {
      "ranks": 1,
      "lost": 0.0,
      "per_point": 0.0,
      "share": 0.0
     },
-    "Intimidation": {
+    "Pathfinding": {
      "ranks": 1,
-     "lost": -0.9,
-     "per_point": -0.9,
-     "share": -0.001
+     "lost": 0.0,
+     "per_point": 0.0,
+     "share": 0.0
+    },
+    "Lone Wolf": {
+     "ranks": 1,
+     "lost": 0.0,
+     "per_point": 0.0,
+     "share": 0.0
     }
    },
-   "values_base": 880.5,
+   "values_base": 903.2,
    "values_ours": {
     "Summon Hawk": {
      "ranks": 1,
-     "lost": 55.8,
-     "per_point": 55.8,
-     "share": 0.0634
-    },
-    "Lethal Attacks": {
-     "ranks": 5,
-     "lost": 41.2,
-     "per_point": 8.2,
-     "share": 0.0468
+     "lost": 60.5,
+     "per_point": 60.5,
+     "share": 0.0675
     },
     "Careful Aim": {
      "ranks": 5,
-     "lost": 40.1,
-     "per_point": 8.0,
-     "share": 0.0456
+     "lost": 47.8,
+     "per_point": 9.6,
+     "share": 0.0534
+    },
+    "Lethal Attacks": {
+     "ranks": 5,
+     "lost": 41.3,
+     "per_point": 8.3,
+     "share": 0.0461
     },
     "Unleashed Fury": {
      "ranks": 5,
-     "lost": 37.6,
-     "per_point": 7.5,
-     "share": 0.0428
+     "lost": 38.1,
+     "per_point": 7.6,
+     "share": 0.0425
     },
     "Deadly Aspects": {
      "ranks": 5,
-     "lost": 32.1,
-     "per_point": 6.4,
-     "share": 0.0365
+     "lost": 34.1,
+     "per_point": 6.8,
+     "share": 0.0381
     },
     "Mortal Shots": {
      "ranks": 5,
-     "lost": 31.0,
-     "per_point": 6.2,
-     "share": 0.0352
+     "lost": 33.1,
+     "per_point": 6.6,
+     "share": 0.0369
     },
     "Frenzy": {
      "ranks": 5,
-     "lost": 30.7,
-     "per_point": 6.1,
-     "share": 0.0349
+     "lost": 31.4,
+     "per_point": 6.3,
+     "share": 0.0351
     },
     "Ferocity": {
      "ranks": 5,
-     "lost": 26.1,
+     "lost": 25.9,
      "per_point": 5.2,
-     "share": 0.0297
-    },
-    "Bestial Discipline": {
-     "ranks": 2,
-     "lost": 22.7,
-     "per_point": 11.3,
-     "share": 0.0257
+     "share": 0.029
     },
     "Improved Stings": {
      "ranks": 3,
-     "lost": 19.7,
-     "per_point": 6.6,
-     "share": 0.0224
+     "lost": 19.3,
+     "per_point": 6.4,
+     "share": 0.0215
     },
     "Focused Fire": {
      "ranks": 2,
+     "lost": 17.1,
+     "per_point": 8.5,
+     "share": 0.019
+    },
+    "Bestial Discipline": {
+     "ranks": 2,
      "lost": 16.8,
      "per_point": 8.4,
-     "share": 0.019
+     "share": 0.0187
     },
     "Bestial Wrath": {
      "ranks": 1,
-     "lost": 12.5,
-     "per_point": 12.5,
-     "share": 0.0142
+     "lost": 14.3,
+     "per_point": 14.3,
+     "share": 0.0159
     },
     "Efficiency": {
      "ranks": 2,
-     "lost": 8.4,
-     "per_point": 4.2,
-     "share": 0.0095
+     "lost": 4.2,
+     "per_point": 2.1,
+     "share": 0.0046
+    },
+    "Intimidation": {
+     "ranks": 1,
+     "lost": 0.5,
+     "per_point": 0.5,
+     "share": 0.0005
     },
     "Endurance Training": {
      "ranks": 3,
@@ -26559,29 +26720,17 @@
      "lost": 0.0,
      "per_point": 0.0,
      "share": 0.0
-    },
-    "Intimidation": {
-     "ranks": 1,
-     "lost": -0.9,
-     "per_point": -0.9,
-     "share": -0.001
     }
    },
-   "values_ours_base": 880.5,
+   "values_ours_base": 895.2,
    "ours_best": "beast-mastery-ml-parse",
-   "family": "Beast Mastery",
-   "split": "31/20/0",
-   "dps": 880.3,
-   "link": "https://talentsforever.com/hunter/60/5320001505101251-00532500005--4",
-   "gap_vs_ours": 0.0,
+   "family": "Hybrid Beast Mastery/Marksmanship",
+   "split": "27/19/5",
+   "dps": 903.1,
+   "link": "https://talentsforever.com/hunter/60/532110050510022-00531500104-5-4",
+   "gap_vs_ours": 0.0088,
    "minutes": 111.1,
    "done": true,
-   "builds": {
-    "written": [],
-    "why": "confirms beast-mastery-ml-parse (+0.00% in a full raid, raced together)",
-    "spec": "Beast Mastery",
-    "date": "2026-10-06"
-   },
    "synergy": {
     "date": "2026-10-07",
     "winner": "31/20/0",
@@ -35055,7 +35204,22 @@
       }
      }
     ],
-    "minutes": 3.3
+    "minutes": 3.3,
+    "researched": {
+     "winner": "27/19/5",
+     "dps": 903.1,
+     "lead": "27/19/5",
+     "source": "structural ranking"
+    }
+   },
+   "rotation_changed": true,
+   "builds": {
+    "written": [
+     "beast-marks-open-raid"
+    ],
+    "why": null,
+    "spec": "Hybrid Beast Mastery/Marksmanship",
+    "date": "2026-10-07"
    }
   },
   "melee-dps": {
@@ -35696,7 +35860,7 @@
     ],
     "why": null,
     "spec": "Hybrid Beast Mastery/Survival",
-    "date": "2026-10-06"
+    "date": "2026-10-07"
    },
    "synergy": {
     "date": "2026-10-07",
@@ -43271,6 +43435,79 @@
      }
     },
     "minutes": 1.7
+   },
+   "structural": {
+    "date": "2026-10-07",
+    "winner": "16/11/24",
+    "live": 17,
+    "screened": 300,
+    "correlation": 0.998,
+    "screen_best": [
+     {
+      "split": "16/11/24",
+      "simulated": 0.0,
+      "model": 0.0
+     },
+     {
+      "split": "16/11/24",
+      "simulated": -0.0039,
+      "model": -0.0039
+     },
+     {
+      "split": "16/11/24",
+      "simulated": -0.0043,
+      "model": -0.0043
+     },
+     {
+      "split": "16/11/24",
+      "simulated": -0.0059,
+      "model": -0.0062
+     },
+     {
+      "split": "16/11/24",
+      "simulated": -0.0079,
+      "model": -0.0079
+     },
+     {
+      "split": "16/11/24",
+      "simulated": -0.0082,
+      "model": -0.0082
+     },
+     {
+      "split": "16/11/24",
+      "simulated": -0.0085,
+      "model": -0.0085
+     },
+     {
+      "split": "16/11/24",
+      "simulated": -0.009,
+      "model": -0.0086
+     }
+    ],
+    "raced": [
+     {
+      "split": "16/11/24",
+      "gain": 0.0
+     },
+     {
+      "split": "16/11/24",
+      "gain": -0.0039
+     },
+     {
+      "split": "16/11/24",
+      "gain": -0.0043
+     },
+     {
+      "split": "16/11/24",
+      "gain": -0.006
+     },
+     {
+      "split": "16/11/24",
+      "gain": -0.0079
+     }
+    ],
+    "leads": [],
+    "minutes": 2.1
    }
   }
  },

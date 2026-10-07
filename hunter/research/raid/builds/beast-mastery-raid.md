@@ -47,15 +47,16 @@ The Beast Mastery raid damage build derived on 2026-09-30 (derive_raid.py): the 
 
 ## Rank among our builds and the community simulator's
 
-**1 of 5** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 6** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`beast-mastery-raid`](beast-mastery-raid.md)** | ours: hand draft | 30/21/0 | 499 | +0.0% | 867 | -3.1% | 6 s |
-| 2 | [`beast-mastery-ml-parse`](beast-mastery-ml-parse.md) | ours: parse build | 31/20/0 | 498 | -0.2% | 895 | +0.0% | 25 s |
-| 3 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: hand draft | 28/23/0 | 493 | -1.3% | 890 | -0.6% | 18 s |
-| 4 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 490 | -1.8% | 868 | -3.1% | 13 s |
-| 5 | *Beast Mastery 35/16/0* | community simulator | - | 474 | -5.0% | 845 | -5.6% | 14 s |
+| 1 | [`beast-marks-open-raid`](beast-marks-open-raid.md) | ours: hand draft | 27/19/5 | 505 | +0.0% | 903 | +0.0% | 20 s |
+| 2 | **[`beast-mastery-raid`](beast-mastery-raid.md)** | ours: hand draft | 30/21/0 | 499 | -1.2% | 867 | -3.9% | 6 s |
+| 3 | [`beast-mastery-ml-parse`](beast-mastery-ml-parse.md) | ours: parse build | 31/20/0 | 498 | -1.4% | 895 | -0.8% | 25 s |
+| 4 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: hand draft | 28/23/0 | 493 | -2.4% | 890 | -1.4% | 18 s |
+| 5 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 490 | -2.9% | 868 | -3.9% | 13 s |
+| 6 | *Beast Mastery 35/16/0* | community simulator | - | 474 | -6.1% | 845 | -6.4% | 14 s |
 
 ## Rotation (community simulator, training dummy)
 

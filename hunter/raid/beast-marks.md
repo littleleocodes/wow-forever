@@ -4,9 +4,9 @@
 
 *Marksmanship's shots with Beast Mastery's pet talents: the classic raid hunter split.* (a hybrid: Beast Mastery/Marksmanship).
 
-**[Beast-Marks — Raid](../research/raid/builds/beast-marks-ml-raid.md)** (28/23/0) — [open the talent tree](https://talentsforever.com/hunter/60/532000150510123-0053250000503--4)
+**[Beast-Marks — Raid](../research/raid/builds/beast-marks-open-raid.md)** (27/19/5) — [open the talent tree](https://talentsforever.com/hunter/60/542100050510022-00532500004-5-4)
 
-> 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds). A model of the beta, to check at launch.
+> 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (mm-hawk-raid), which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to play
 
@@ -22,18 +22,13 @@
 
 **Aimed Shot** is your filler: cast it whenever nothing above is ready.
 
-**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
-
-- **Intimidation**: a cooldown, use it at the start of the fight and again whenever it is ready (about 3 times a fight)
-- Use your trinkets, your racial and a potion together with your big cooldowns.
-
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
 ## The numbers
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 890 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 903 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
@@ -67,6 +62,7 @@
 
 ## Other builds of this spec
 
+- [Beast-Marks — Raid](../research/raid/builds/beast-marks-ml-raid.md) (28/23/0, 890 DPS in a full raid, 493 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/532000150510123-0053250000503--4)
 - [Marksmanship — Summon Hawk](../research/raid/builds/mm-hawk-raid.md) (22/29/0, 868 DPS in a full raid, 490 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/53200005051001-105355000150004--4)
 - [Beast Mastery / Marksmanship](../research/raid/builds/bm-mm-raid.md) (22/29/0, 852 DPS in a full raid, 498 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/53200005041002-005355010150004--4)
 - [Marksmanship raid DPS with a pet](../research/raid/builds/opt-mm-raid-raid-dps.md) (22/29/0, 852 DPS in a full raid, 498 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/53200005041002-005355010150004--4)

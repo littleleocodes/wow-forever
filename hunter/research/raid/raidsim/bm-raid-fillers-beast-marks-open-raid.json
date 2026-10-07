@@ -1,0 +1,202 @@
+{
+ "class": "hunter",
+ "spec": "bm-raid",
+ "build": "beast-marks-open-raid",
+ "setting": "raid",
+ "date": "2026-10-07",
+ "tank": false,
+ "removal": {
+  "Bestial Discipline": 0.016700710378062533,
+  "Careful Aim": 0.05413294631432786,
+  "Deadly Aspects": 0.0441492027494953,
+  "Efficiency": 0.0005504822837485435,
+  "Endurance Training": -0.0,
+  "Ferocity": 0.030148024554209285,
+  "Focused Fire": 0.019062241470639063,
+  "Frenzy": 0.02587880880675042,
+  "Improved Aspect of the Monkey": -0.0,
+  "Improved Stings": 0.02236851558694286,
+  "Improved Tracking": 0.03906929357635358,
+  "Lethal Attacks": 0.04625883459347935,
+  "Lone Wolf": -0.0,
+  "Mortal Shots": 0.030694103058894417,
+  "Pathfinding": -0.0,
+  "Summon Hawk": 0.068114796473693,
+  "Unleashed Fury": 0.04056109033594546
+ },
+ "free": [
+  "Efficiency",
+  "Endurance Training",
+  "Improved Aspect of the Monkey",
+  "Lone Wolf",
+  "Pathfinding"
+ ],
+ "kept_for_rotation": [],
+ "active_never_worth": [],
+ "abilities_never_cast": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Lone Wolf",
+   "to": "Efficiency",
+   "seed1": -0.0005847950821480374,
+   "seed2": 3.7500316611316364e-05,
+   "utility": "mana"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Pathfinding",
+   "to": "Endurance Training",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  }
+ ],
+ "final_seed3": 0.00018046226018175737,
+ "start": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    3
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Improved Aspect of the Monkey",
+    1
+   ],
+   [
+    "Pathfinding",
+    1
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Summon Hawk",
+    1
+   ],
+   [
+    "Bestial Discipline",
+    2
+   ],
+   [
+    "Frenzy",
+    2
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Efficiency",
+    1
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Lone Wolf",
+    1
+   ],
+   [
+    "Mortal Shots",
+    4
+   ]
+  ],
+  "Survival": [
+   [
+    "Improved Tracking",
+    5
+   ]
+  ]
+ },
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    4
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Improved Aspect of the Monkey",
+    1
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Summon Hawk",
+    1
+   ],
+   [
+    "Bestial Discipline",
+    2
+   ],
+   [
+    "Frenzy",
+    2
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Efficiency",
+    2
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Mortal Shots",
+    4
+   ]
+  ],
+  "Survival": [
+   [
+    "Improved Tracking",
+    5
+   ]
+  ]
+ }
+}

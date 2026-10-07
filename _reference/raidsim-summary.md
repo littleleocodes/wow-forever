@@ -4,8 +4,10 @@
 
 | Class | Spec model | Best of our builds | DPS | Best sim preset | DPS | Our optimizer build | DPS |
 |---|---|---|---|---|---|---|---|
-| paladin | `prot-tank` | `prot-tank` | 469 | P4 Prot | 413 | `opt-prot-tank-raid-tank` | 413 |
-| paladin | `ret-dps` | `opt-ret-dps-raid-dps` | 507 | P4/P5 Ret | 491 | `opt-ret-dps-raid-dps` | 507 |
+| hunter | `bm-raid` | `beast-marks-open-raid` | 505 | - | - | - | - |
+| hunter | `melee-dps` | `survival-raid` | 467 | - | - | - | - |
+| hunter | `mm-lonewolf-raid` | `opt-mm-lonewolf-raid-raid-dps` | 463 | Beast Mastery 35/16/0 | 381 | `opt-mm-lonewolf-raid-raid-dps` | 463 |
+| hunter | `mm-raid` | `bm-mm-raid` | 498 | Beast Mastery 35/16/0 | 468 | `opt-mm-raid-raid-dps` | 498 |
 
 ## DPS by environment: dummy, raid, maximum
 
@@ -13,9 +15,11 @@ The best of our builds per spec model on the boss-level training dummy with your
 
 | Class | Game | Spec model | Best build | Dummy | Dummy 60 | Raid | Maximum | Max 60 s | Parse build (max) | Best preset (max) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| paladin | Forever | `prot-tank` | `prot-tank` (0/23/28) | 144 | 174 | 469 | 469 | 471 | - | P4 Prot 413 |
-| paladin | Forever | `ret-dps` | `retribution-ml-raid` (11/8/32) | 499 | 555 | 961 | 961 | 975 | `opt-ret-dps-parse` 958 | P4/P5 Ret 931 |
-| paladin | Classic | `ret-dps` | `ret-raid-dps` (11/0/40) | 213 | - | 661 | 661 | 671 | - | P4/P5 Ret 710 |
+| hunter | Forever | `bm-raid` | `beast-marks-open-raid` (27/19/5) | 505 | 547 | 903 | 903 | 923 | `beast-mastery-ml-parse` 895 | Beast Mastery 35/16/0 845 |
+| hunter | Forever | `melee-dps` | `beast-survival-open-raid` (16/11/24) | 380 | 452 | 1170 | 1170 | 1195 | `survival-ml-parse` 1036 | - |
+| hunter | Forever | `mm-lonewolf-raid` | `mm-lone-wolf-raid` (5/41/5) | 457 | 492 | 957 | 957 | 980 | `marksmanship-ml-parse` 911 | Marksmanship 740 |
+| hunter | Forever | `mm-raid` | `opt-mm-raid-parse` (31/20/0) | 478 | 518 | 870 | 885 | 913 | `opt-mm-raid-parse` 885 | Marksmanship 862 |
+| hunter | Classic | `mm-raid` | `bm-mm-raid` (20/31/0) | 405 | - | 1049 | 1085 | 1146 | - | Marksmanship 1087 |
 
 ## Classic Era check (upstream wowsims/classic)
 
@@ -23,5 +27,5 @@ Our Classic-era community builds (`<class>/research/talents/classic-baseline/bui
 
 | Class | Spec model | Best of our builds | DPS | Best sim preset | DPS | Damage split (model sources) |
 |---|---|---|---|---|---|---|
-| paladin | `ret-dps` | `ret-raid-dps` | 661 | P4/P5 Ret | 710 | white 74%, seal 20%, judgement 6% |
+| hunter | `mm-raid` | `bm-mm-raid` | 1049 | Marksmanship | 1051 | auto 39%, aimed 21%, pet 20%, multi 15%, serpent 4% |
 

@@ -268,29 +268,29 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`beast-mastery-raid`](builds/beast-mastery-raid.md) (ours: hand draft, 499 DPS), [`mm-hawk-raid`](builds/mm-hawk-raid.md) (ours: hand draft, 490 DPS)
+### [`beast-marks-open-raid`](builds/beast-marks-open-raid.md) (ours: hand draft, 505 DPS), [`beast-mastery-raid`](builds/beast-mastery-raid.md) (ours: hand draft, 499 DPS), [`mm-hawk-raid`](builds/mm-hawk-raid.md) (ours: hand draft, 490 DPS)
 
 Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
-| # | Priority (the first line whose condition holds is cast) | [`beast-mastery-raid`](builds/beast-mastery-raid.md) casts/min | [`mm-hawk-raid`](builds/mm-hawk-raid.md) casts/min |
-|---|---|---|---|
-| 1 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.3 | 0.3 |
-| 2 | cast Summon Hawk | 10.0 | 10.0 |
-| 3 | use every other cooldown when ready | as ready | as ready |
-| 4 | if time left on Serpent Sting < 4s: cast Serpent Sting | 5.0 | 4.7 |
+| # | Priority (the first line whose condition holds is cast) | [`beast-marks-open-raid`](builds/beast-marks-open-raid.md) casts/min | [`beast-mastery-raid`](builds/beast-mastery-raid.md) casts/min | [`mm-hawk-raid`](builds/mm-hawk-raid.md) casts/min |
+|---|---|---|---|---|
+| 1 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.3 | 0.3 | 0.3 |
+| 2 | cast Summon Hawk | 9.7 | 10.0 | 10.0 |
+| 3 | use every other cooldown when ready | as ready | as ready | as ready |
+| 4 | if time left on Serpent Sting < 4s: cast Serpent Sting | 4.7 | 5.0 | 4.7 |
 
 Lines of the simulator's rotation these builds never cast: cast Intimidation (needs the Intimidation talent).
 
 Damage by ability:
 
-| Ability | [`beast-mastery-raid`](builds/beast-mastery-raid.md) | [`mm-hawk-raid`](builds/mm-hawk-raid.md) |
-|---|---|---|
-| Auto Shot | 37% | 40% |
-| Summon Hawk | 27% | 28% |
-| Serpent Sting | 19% | 19% |
-| Pet: Auto Attack | 14% | 11% |
-| Pet: Claw | 2% | 2% |
-| Pet: Bite | 2% | 1% |
+| Ability | [`beast-marks-open-raid`](builds/beast-marks-open-raid.md) | [`beast-mastery-raid`](builds/beast-mastery-raid.md) | [`mm-hawk-raid`](builds/mm-hawk-raid.md) |
+|---|---|---|---|
+| Auto Shot | 37% | 37% | 40% |
+| Summon Hawk | 28% | 27% | 28% |
+| Serpent Sting | 19% | 19% | 19% |
+| Pet: Auto Attack | 13% | 14% | 11% |
+| Pet: Claw | 2% | 2% | 2% |
+| Pet: Bite | 2% | 2% | 1% |
 
 ### [`beast-mastery-ml-parse`](builds/beast-mastery-ml-parse.md) (ours: parse build, 498 DPS), [`beast-marks-ml-raid`](builds/beast-marks-ml-raid.md) (ours: hand draft, 493 DPS), *Beast Mastery 35/16/0* (community simulator, 474 DPS)
 

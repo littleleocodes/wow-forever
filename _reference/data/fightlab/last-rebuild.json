@@ -7506,9 +7506,9 @@
   }
  },
  "last_run": {
-  "date": "2026-10-07T16:52:03",
+  "date": "2026-10-07T16:59:08",
   "classes": [
-   "paladin"
+   "hunter"
   ],
   "steps": [
    "regen"
@@ -7519,63 +7519,62 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 150,
+  "seconds": 77,
   "refresh": null,
   "regen_log": [
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py paladin",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py hunter",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "formatted F:\\wow-forever\\paladin\\research\\talents\\forever\\proposed-builds.json",
-     "paladin: README section + leveling-retribution note written"
+     "formatted F:\\wow-forever\\hunter\\research\\talents\\forever\\proposed-builds.json",
+     "hunter: README section + leveling-beast-mastery note written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py paladin",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py hunter",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "paladin: raid sim section written (2 specs)",
+     "hunter: raid sim section written (4 specs)",
      "wrote _reference\\raidsim-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py paladin",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py hunter",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "paladin: healer lab section written (1 specs)",
      "wrote _reference\\heallab-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py paladin",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py hunter",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "paladin: leveling/guide.md written"
+     "hunter: leveling/guide.md written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py paladin",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py hunter",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "paladin: raid gear and consumables written"
+     "hunter: raid gear and consumables written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py paladin",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py hunter",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "paladin: raid and leveling rotations, DPS ranking written"
+     "hunter: raid and leveling rotations, DPS ranking written"
     ],
     "stderr": []
    },
@@ -7620,7 +7619,7 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py paladin",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py hunter",
     "rc": 0,
     "seconds": 1,
     "tail": [
@@ -7648,15 +7647,15 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py paladin --write",
+    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py hunter --write",
     "rc": 0,
-    "seconds": 139,
+    "seconds": 67,
     "tail": [
-     "| ret-dps -> level-20 build (0/0/11) | +0.7% | +4.7% | +16.9% | +24.3% | +28.0% | +32.3% | +34.9% | +35.3% | +36.1% | +38.8% | +39.3% |",
-     "| ret-dps -> level-30 build (0/0/21) | +0.7% | +4.1% | +15.7% | +24.4% | +28.3% | +32.4% | +35.0% | +35.3% | +36.1% | +38.8% | +39.3% |",
-     "| ret-dps -> level-40 build (0/0/31) | +0.7% | +3.3% | +16.0% | +24.2% | +28.1% | +32.4% | +35.2% | +35.3% | +36.1% | +38.8% | +39.4% |",
-     "| ret-dps -> level-50 build (8/0/33) | +0.7% | +3.3% | +16.0% | +24.2% | +28.1% | +32.4% | +35.0% | +35.1% | +38.0% | +38.8% | +39.4% |",
-     "| ret-dps -> level-60 build (15/0/36) | +0.0% | +2.8% | +15.7% | +24.2% | +28.1% | +32.4% | +35.0% | +35.3% | +36.1% | +38.8% | +39.4% |",
+     "| bm-leveling -> level-20 build (0/11/0) | +0.2% | +1.9% | +6.0% | +8.3% | +11.0% | +14.2% | +16.1% | +19.3% | +20.7% | +22.4% | +27.6% |",
+     "| bm-leveling -> level-30 build (21/0/0) | +0.4% | +2.2% | +3.6% | +10.7% | +12.2% | +12.9% | +17.4% | +19.4% | +20.5% | +24.7% | +26.2% |",
+     "| bm-leveling -> level-40 build (16/15/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.5% | +16.0% | +18.0% | +19.2% | +23.4% | +24.7% | +27.6% |",
+     "| bm-leveling -> level-50 build (16/25/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.5% | +16.0% | +18.0% | +19.2% | +23.4% | +24.7% | +27.6% |",
+     "| bm-leveling -> level-60 build (19/32/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.9% | +14.4% | +17.7% | +19.6% | +23.0% | +24.8% | +27.6% |",
      "",
      "## Reading it",
      "",
@@ -7724,7 +7723,7 @@
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote _reference\\launch-checklist.md (274 per-build questions)"
+     "wrote _reference\\launch-checklist.md (275 per-build questions)"
     ],
     "stderr": []
    },
@@ -7740,7 +7739,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\summary.py --write",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
      "wrote _reference\\fightlab-summary.md"
     ],

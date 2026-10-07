@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Beast-Survival (a Beast Mastery/Survival hybrid) raid build the open talent search found on 2026-10-06: every legal 51-point build with no tree rule, searched in the community simulator's melee-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +7.5% over melee-survival-raid, the best of our builds in that rotation.
+The Beast-Survival (a Beast Mastery/Survival hybrid) raid build the open talent search found on 2026-10-07: every legal 51-point build with no tree rule, searched in the community simulator's melee-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +7.5% over melee-survival-raid, the best of our builds in that rotation.
 
 ## Point allocation
 
@@ -124,7 +124,7 @@ Damage by ability:
 - The search ran before 2026-10-06, when the bench's target got a creature type (an Elemental): Improved Tracking measured 0 in it and is +5% damage against every raid creature type but Mechanical since (+4.9% for this build in a full raid). The search's numbers above are from that run; the page's numbers come from the re-race. Re-run the search (family_search.py --fresh) to value the talent in the search itself.
 - Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Focused Fire, Improved Aspect of the Monkey, Survivalist.
 - Simulator numbers are the community's model of the beta (ElliotWood/Forever b0f0df3 with this project's patches), not in-game measurements.
-- 2026-10-06 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Focused Fire -> Endurance Training (survival); Focused Fire -> Endurance Training (survival). Net +0.00% on a third seed.
+- 2026-10-07 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Focused Fire -> Endurance Training (survival); Focused Fire -> Endurance Training (survival). Net +0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 
