@@ -213,13 +213,15 @@ def legal_order(space, pts, total):
     return len(pts) == total
 
 
-def order_moves(order, rng, n, space, upto=41):
+def order_moves(order, rng, n, space, levels=(30, 40, 50)):
     """Up to n random legal orders one block move away from `order`: a talent's block, or a part of it, moved up to three blocks
     earlier or later (the first ranks of a talent are worth more than the last: a split lets them come early and the rest late).
-    A move that leaves the first `upto` points as they are (41 points = levels 10-50, all the order polish scores) is skipped."""
+    Only moves that change the build at one of `levels` count: the race looks at levels 20-60 in steps of ten, so a move inside one
+    decade changes nothing it can see (26 of 30 random moves in a first test)."""
     blocks = [(s["tree"], s["talent"], s["points"]) for s in order]
     total = sum(p for _, _, p in blocks)
     cur_key = tuple((t, nm) for t, nm, p in blocks for _ in range(p))
+    base_at = {L: FR.allocation_at({"order": order}, L) for L in levels}
     seen = {cur_key}
     out, tries = [], 0
     while len(out) < n and tries < n * 30:
@@ -243,10 +245,13 @@ def order_moves(order, rng, n, space, upto=41):
             b.insert(j, (t, name, k))
         pts = [(tt, nn) for tt, nn, pp in b for _ in range(pp)]
         key = tuple(pts)
-        if key in seen or key[:upto] == cur_key[:upto] or not legal_order(space, pts, total):
+        if key in seen:
             continue
         seen.add(key)
-        out.append(compress(pts))
+        cand = compress(pts)
+        if all(FR.allocation_at({"order": cand}, L) == base_at[L] for L in levels) or not legal_order(space, pts, total):
+            continue
+        out.append(cand)
     return out
 
 
@@ -273,7 +278,7 @@ def order_polish(cls, spec, r, pool, space, save, cfg=None):
     log(f"== {cls} {spec}: order polish of the {r.get('order_label', 'stats model')} order (levels {', '.join(map(str, lv))}, batches of "
         f"{cfg['batch']} block moves, {cfg['fights']} fights, kept at {cfg['min_gain']:.1%} on a second seed)")
     for rnd in range(1, cfg["rounds"] + 1):
-        cands = order_moves(cur, rng, cfg["batch"], space)
+        cands = order_moves(cur, rng, cfg["batch"], space, lv)
         if not cands:
             log(f"    round {rnd}: no legal block move left")
             break
