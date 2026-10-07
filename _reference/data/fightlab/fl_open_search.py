@@ -50,7 +50,8 @@ OUT = HERE / "open"
 KNOWN = ROOT / "_reference/data/raidsim/known-positives.json"
 PAGE = ROOT / "_reference" / "leveling-open-search.md"
 TODAY = datetime.date.today().isoformat()
-POLISH = dict(fights=150, rounds=24, per_pair=2, top=5, full_fights=600, min_gain=0.005)   # the fight lab is noisier: a bigger bar; 24 batched steps (2026-10-07)
+POLISH = dict(fights=150, rounds=24, per_pair=1, top=5, full_fights=600, min_gain=0.005)   # the fight lab is noisier: a bigger bar; 24 batched steps and one draw
+                                                                                            # per pair (2026-10-07 audit: 18 keystones made the polish an hour per rotation)
 SEARCH = dict(runs=3, budget=2000, screen=400, patience=5, max_rounds=20, random_init=300, pool=8000, parents=40, finalists=6,
               race_stages=((1500, 2, 4), (4000, 3, 2), (10000, 4, 2)), cert_its=(800, 4000))
 RACE_FIGHTS, VALUE_FIGHTS = 3000, 3000
