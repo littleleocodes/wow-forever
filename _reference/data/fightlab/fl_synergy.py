@@ -36,7 +36,7 @@ def _load(name, path):
     return m
 
 
-FO = _load("fl_open_search_syn", HERE / "fl_open_search.py")
+import fl_open_search as FO  # noqa: E402  (a real import: the worker processes unpickle its _ttk by module name)
 FT, FR, SM, RSH = FO.FT, FO.FR, FO.SM, FO.RSH
 SY = _load("synergy_fl", ROOT / "_reference/data/raidsim/synergy.py")   # pay / add_talent / with_talents / fill_up (generic over a Space)
 TODAY = datetime.date.today().isoformat()
