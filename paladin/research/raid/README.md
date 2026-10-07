@@ -41,7 +41,8 @@ Our builds and the community simulator's own builds, run through the same simula
 | 3 | [`ret-raid-dps`](builds/ret-raid-dps.md) | ours: hand draft | 17/0/34 | 494 | -2.5% | 934 | -2.4% | 11 s |
 | 4 | *P4/P5 Ret* | community simulator | - | 491 | -3.3% | 929 | -2.9% | 5 s |
 | 5 | [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) | ours: hand draft | 10/8/33 | 485 | -4.3% | 954 | -0.3% | 20 s |
-| 6 | *Retribution 9/0/42* | community simulator | - | 454 | -10.4% | 919 | -4.0% | 19 s |
+| 6 | [`retribution-open-raid`](builds/retribution-open-raid.md) | ours: hand draft | 9/8/34 | 471 | -7.2% | 954 | -0.3% | 19 s |
+| 7 | *Retribution 9/0/42* | community simulator | - | 454 | -10.4% | 919 | -4.0% | 19 s |
 
 **prot-tank** (tank)
 
@@ -52,18 +53,6 @@ Our builds and the community simulator's own builds, run through the same simula
 | 3 | *Protection 0/45/6* | community simulator | - | 0.926 | -8.6% | 459 | 1028 |
 | 4 | *P4 Prot* | community simulator | - | 0.906 | -10.6% | 471 | 1100 |
 | 5 | *P5 Prot* | community simulator | - | 0.900 | -11.2% | 464 | 1100 |
-
-**seal-of-fury-raid**
-
-| Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
-|---|---|---|---|---|---|---|---|---|
-| 1 | [`ret-raid-dps`](builds/ret-raid-dps.md) | ours: hand draft | 17/0/34 | 421 | +0.0% | 935 | +0.0% | 0 s |
-
-**shockadin-raid**
-
-| Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
-|---|---|---|---|---|---|---|---|---|
-| 1 | [`retribution-open-raid`](builds/retribution-open-raid.md) | ours: hand draft | 9/8/34 | 505 | +0.0% | 966 | +0.0% | 0 s |
 
 ## DPS by gear tier
 
@@ -84,19 +73,16 @@ The spells new in Forever, what the simulators measured them doing, and the buil
 | Holy Shock | Holy | 56 | 10 sec | Blasts the target with Holy energy, causing 334 to 362 Holy damage to an enemy, or 307 to 333 healing to an ally. | not cast by any raced build | ret-dps (training dummy): spell probe: insert at the top: cast Holy Shock (+8.0%); ret-dps (raid): spell probe: insert at the end: cast Holy Shock (+6.6%) | not cast |  |
 | Light's Vigil | Holy | 60 | 6 sec | Applies Light's Vigil to the target for 30 sec. | not cast by any raced build | - | not cast |  |
 | Voice of Truth | Holy | 20 | 3 min | Grants you immunity to Silence and Interrupt effects for 6 sec. | not cast by any raced build | - | not cast | Silence and interrupt immunity: utility. |
-| Seal of Fury | Protection | 58 | - | Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 35 Holy damage. | 9% of the damage, 2.3 casts/min: [`ret-raid-dps`](builds/ret-raid-dps.md) (seal-of-fury-raid) | seal-of-fury-raid (raid): only above 25% mana: if time left on Seal of Fury ≤ 2s: cast Seal of Fury (+1.9%); seal-of-fury-raid (raid): drop: if time left on Seal of Fury ≤ 2s and mana % ≥ 25% and time left in the fight ≥ 10s: (+0.9%); seal-of-fury-raid (raid): only with 10s or more of the fight left: if time left on Seal of Fury ≤ 2s and mana % ≥ 25 (+0.2%) | not cast |  |
+| Seal of Fury | Protection | 58 | - | Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 35 Holy damage. | not cast by any raced build | - | not cast |  |
 | Swift Judgement | Protection | 25 | 1 min | Finishes the remaining cooldown on your Judgement ability and reduces the Mana cost of your next Judgement by 100%. | no damage of its own, 1.0 casts/min: [`prot-tank`](builds/prot-tank.md) (prot-tank) | - | not cast | Ends Judgement's cooldown (1 min); the rotation search offers it. |
 | Templar's Bulwark | Protection | 30 | 5 min | When activated, this ability grants you an absorb shield equal to 100% of your maximum health for 8 sec. | no damage of its own, 0.3 casts/min: [`prot-tank`](builds/prot-tank.md) (prot-tank) | prot-tank (raid): insert at the top: cast Templar's Bulwark (+1.4%) | not cast | A tank absorb cooldown; the Protection rotation search offers it. |
-| Holy Strike | Retribution | 60 | 10 sec | An instant strike that causes 50% weapon damage plus an additional 40 to 53 as Holy damage. | 14% of the damage, 5.9 casts/min: [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) (ret-dps) | seal-of-fury-raid (raid): move down below 'cast Consecration': cast Holy Strike (+1.4%); seal-of-fury-raid (raid): move to the top: cast Holy Strike (+0.6%); ret-dps (raid): move down below 'if mana % ≥ 50%: cast Consecration': cast Holy Strike (+0.6%) | 18% of the damage, 2.4 casts a kill: `opt-ret-dps-leveling-aoe` at 60 (ret-dps-aoe) | The new baseline Retribution strike; every paladin rotation of the simulator casts it. |
+| Holy Strike | Retribution | 60 | 10 sec | An instant strike that causes 50% weapon damage plus an additional 40 to 53 as Holy damage. | 14% of the damage, 5.9 casts/min: [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) (ret-dps) | ret-dps (raid): move down below 'if mana % ≥ 50%: cast Consecration': cast Holy Strike (+0.6%) | 18% of the damage, 2.4 casts a kill: `opt-ret-dps-leveling-aoe` at 60 (ret-dps-aoe) | The new baseline Retribution strike; every paladin rotation of the simulator casts it. |
 
 ### Builds searched around them
 
-| Idea | Build | Split | Dummy DPS | Raid DPS | Against the class's best | Talent search | Leveling |
-|---|---|---|---|---|---|---|---|
-| Seal of Fury (Holy damage on every melee hit, and its Judgement of Fury) kept up instead of the Seal of Command / Righteousness twist | [`ret-raid-dps`](builds/ret-raid-dps.md) (playing Seal of Fury) | 17/0/34 | 421 | 935 | -16.9% on the dummy; -3.1% in a raid. As a straight swap the Retribution draft loses a fifth of its training-dummy DPS with Seal of Fury; the rotation search on that build dropped Seal of Fury and went back to the Seal of Command / Seal of Righteousness twist within four rounds. No Seal of Fury build. | from `ret-raid-dps`, 0 moves | - |
-| Holy Shock and Light's Vigil from the Holy tree on a Retribution rotation (a Shockadin) | none | - | - | - | The talent search from a 21/0/30 Holy Shock start moved every point back to the Retribution draft's talents: Holy Shock never paid for its points. | from `start-shockadin-21-0-30`, 3 moves | - |
+No new spell of this class opened a build of its own: the new spells go into the existing builds' rotations (above).
 
-The class's best raid DPS build on the training dummy: [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) (ret-dps), 507 DPS; in a raid: [`retribution-open-raid`](builds/retribution-open-raid.md) (shockadin-raid), 966 DPS.
+The class's best raid DPS build on the training dummy: [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) (ret-dps), 507 DPS; in a raid: [`retribution-ml-raid`](builds/retribution-ml-raid.md) (ret-dps), 957 DPS.
 
 ## Raid sim (community simulator, level 60)
 
@@ -114,9 +100,8 @@ The class's best raid DPS build on the training dummy: [`opt-ret-dps-raid-dps`](
 | `ret-dps` | dummy | `ret-raid-dps` | 17/0/34 | 494 | -2.5% | 11 | +223% |
 | `ret-dps` | dummy | sim preset: P4/P5 Ret | - | 491 | -3.3% | 5 | - |
 | `ret-dps` | dummy | `ret-full-buffs-raid` | 10/8/33 | 485 | -4.3% | 20 | +226% |
+| `ret-dps` | dummy | `retribution-open-raid` | 9/8/34 | 471 | -7.2% | 19 | +225% |
 | `ret-dps` | dummy | sim preset: Retribution 9/0/42 | - | 454 | -10.4% | 19 | - |
-| `seal-of-fury-raid` | dummy | `ret-raid-dps` | 17/0/34 | 421 | +0.0% | 0 | - |
-| `shockadin-raid` | dummy | `retribution-open-raid` | 9/8/34 | 505 | +0.0% | 0 | - |
 
 Scorer = the stats model's own score of the allocation for its raid profile (relative to a talentless character; comparable within a spec model only). Tanks: DPS with the tank flag set (threat and mitigation are in the report JSON). Healers are not simulated (the simulator has no healing rotations for them).
 
@@ -140,10 +125,9 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 | `ret-dps` | `ret-raid-dps` | 17/0/34 | 494 | 559 | 934 | 934 | 947 |
 | `ret-dps` | sim preset: P4/P5 Ret | - | 491 | 557 | 929 | 929 | 945 |
 | `ret-dps` | `ret-full-buffs-raid` | 10/8/33 | 485 | 539 | 954 | 954 | 978 |
+| `ret-dps` | `retribution-open-raid` | 9/8/34 | 471 | 528 | 954 | 954 | 979 |
 | `ret-dps` | `opt-ret-dps-parse` | 9/8/34 | 471 | 528 | 954 | 954 | 979 |
 | `ret-dps` | sim preset: Retribution 9/0/42 | - | 454 | 524 | 919 | 919 | 939 |
-| `seal-of-fury-raid` | `ret-raid-dps` | 17/0/34 | 421 | 468 | 935 | 935 | 947 |
-| `shockadin-raid` | `retribution-open-raid` | 9/8/34 | 505 | 558 | 966 | 966 | 977 |
 
 **Classic Era check** — [`../talents/classic-baseline/raidsim/`](../talents/classic-baseline/raidsim/): the same run of our Classic-era community builds through the upstream wowsims/classic simulator (commit 7779ebb, its phase-1 presets), which the scorer's classic-era models are calibrated against. Our builds there are the community's; a preset ahead of them means the simulator's rotation prefers other talents.
 

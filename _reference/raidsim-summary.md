@@ -6,8 +6,6 @@
 |---|---|---|---|---|---|---|---|
 | paladin | `prot-tank` | `prot-tank` | 469 | P4 Prot | 413 | `opt-prot-tank-raid-tank` | 413 |
 | paladin | `ret-dps` | `opt-ret-dps-raid-dps` | 507 | P4/P5 Ret | 491 | `opt-ret-dps-raid-dps` | 507 |
-| paladin | `seal-of-fury-raid` | `ret-raid-dps` | 421 | - | - | - | - |
-| paladin | `shockadin-raid` | `retribution-open-raid` | 505 | - | - | - | - |
 
 ## DPS by environment: dummy, raid, maximum
 
@@ -17,8 +15,6 @@ The best of our builds per spec model on the boss-level training dummy with your
 |---|---|---|---|---|---|---|---|---|---|---|
 | paladin | Forever | `prot-tank` | `prot-tank` (0/23/28) | 144 | 174 | 469 | 469 | 471 | - | P4 Prot 413 |
 | paladin | Forever | `ret-dps` | `retribution-ml-raid` (11/8/32) | 499 | 555 | 957 | 957 | 975 | `opt-ret-dps-parse` 954 | P4/P5 Ret 929 |
-| paladin | Forever | `seal-of-fury-raid` | `ret-raid-dps` (17/0/34) | 421 | 468 | 935 | 935 | 947 | - | - |
-| paladin | Forever | `shockadin-raid` | `retribution-open-raid` (9/8/34) | 505 | 558 | 966 | 966 | 977 | - | - |
 | paladin | Classic | `ret-dps` | `ret-raid-dps` (11/0/40) | 213 | - | 661 | 661 | 671 | - | P4/P5 Ret 710 |
 
 ## Classic Era check (upstream wowsims/classic)

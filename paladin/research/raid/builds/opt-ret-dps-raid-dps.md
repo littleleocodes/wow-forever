@@ -62,7 +62,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 
 ## Rank among our builds and the community simulator's
 
-**1 of 6** for `ret-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 7** for `ret-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
@@ -71,7 +71,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 | 3 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/0/34 | 494 | -2.5% | 934 | -2.4% | 11 s |
 | 4 | *P4/P5 Ret* | community simulator | - | 491 | -3.3% | 929 | -2.9% | 5 s |
 | 5 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 10/8/33 | 485 | -4.3% | 954 | -0.3% | 20 s |
-| 6 | *Retribution 9/0/42* | community simulator | - | 454 | -10.4% | 919 | -4.0% | 19 s |
+| 6 | [`retribution-open-raid`](retribution-open-raid.md) | ours: hand draft | 9/8/34 | 471 | -7.2% | 954 | -0.3% | 19 s |
+| 7 | *Retribution 9/0/42* | community simulator | - | 454 | -10.4% | 919 | -4.0% | 19 s |
 
 ## Rotation (community simulator, training dummy)
 

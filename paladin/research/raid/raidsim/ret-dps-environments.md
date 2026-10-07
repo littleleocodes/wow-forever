@@ -9,6 +9,7 @@
 | `ret-raid-dps` | 17/0/34 | 494 | 559 | 934 | 934 | 947 |
 | sim preset: P4/P5 Ret | - | 491 | 557 | 929 | 929 | 945 |
 | `ret-full-buffs-raid` | 10/8/33 | 485 | 539 | 954 | 954 | 978 |
+| `retribution-open-raid` | 9/8/34 | 471 | 528 | 954 | 954 | 979 |
 | `opt-ret-dps-parse` | 9/8/34 | 471 | 528 | 954 | 954 | 979 |
 | sim preset: Retribution 9/0/42 | - | 454 | 524 | 919 | 919 | 939 |
 
@@ -29,6 +30,7 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 | `ret-raid-dps` | 494 | +6% | +9% | +28% | +27% | +20% | 934 |
 | sim preset: P4/P5 Ret | 491 | +6% | +9% | +29% | +26% | +19% | 929 |
 | `ret-full-buffs-raid` | 485 | +10% | +9% | +30% | +28% | +20% | 954 |
+| `retribution-open-raid` | 471 | +13% | +9% | +31% | +28% | +20% | 954 |
 | `opt-ret-dps-parse` | 471 | +13% | +9% | +31% | +28% | +20% | 954 |
 | sim preset: Retribution 9/0/42 | 454 | +14% | +9% | +31% | +28% | +20% | 919 |
 
@@ -45,6 +47,7 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 | `ret-raid-dps` | 508 | 481 | 468 | 448 | 427 |
 | sim preset: P4/P5 Ret | 513 | 482 | 467 | 451 | 430 |
 | `ret-full-buffs-raid` | 527 | 479 | 463 | 436 | 409 |
+| `retribution-open-raid` | 526 | 482 | 454 | 416 | 393 |
 | `opt-ret-dps-parse` | 526 | 482 | 454 | 416 | 393 |
 | sim preset: Retribution 9/0/42 | 508 | 465 | 438 | 401 | 380 |
 
