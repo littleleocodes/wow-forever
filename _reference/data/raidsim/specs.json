@@ -830,7 +830,7 @@
         "potId": 13444,
         "conjuredId": 12662
       },
-      "builds": ["ret-raid-dps", "ret-full-buffs-raid", "opt-ret-dps-raid-dps", "retribution-ml-raid", "retribution-open-raid"],
+      "builds": ["ret-raid-dps", "ret-full-buffs-raid", "opt-ret-dps-raid-dps", "retribution-ml-raid"],
       "self_buffs": {"greater_blessing_of_might": true},
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
     },

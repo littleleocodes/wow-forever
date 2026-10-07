@@ -221,8 +221,8 @@ Each class folder now opens with player pages and keeps the research below:
   positive) leads the mage at 707 DPS after the rotation re-tune. Post hoc on 2026-10-07: certificates and structural rankings on every
   hunter, mage and paladin raid entry (the hunter's Lone Wolf and Marksmanship entries re-searched from leads with Improved Tracking; all
   mage and paladin winners confirmed). The leveling counterpart `fightlab/fl_synergy.py` (same night) runs inside fl_open_search from the
-  shaman on; post hoc for the hunter and mage leveling rotations (done 2026-10-07 morning) and still to run for the paladin's leveling
-  rotations once its leveling search ends (`fl_synergy.py paladin`, then `open_builds.py paladin --write --only leveling --regen`).
+  shaman on; post hoc for the hunter, mage and paladin leveling rotations (done 2026-10-07, every winner confirmed; the cross-rotation
+  races moved the mage's Arcane-Frost, the hunter's Marksmanship and the paladin's Protection winners to sibling rotations).
   For a class searched without them: `synergy.py <class>`, `structural.py <class>`, `fl_synergy.py <class>`, then `open_builds.py <class>
   --write --race --regen`. The replacement bar is 0.5% since 2026-10-07 (was 2%). **Duplicate entries** (2026-10-07, user decision): the
   paladin's `seal-of-fury-raid` and `shockadin-raid` showcase entries were retired (removed from specs.json and the new-builds survey,

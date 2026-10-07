@@ -243,7 +243,7 @@ Rotation-only target (2026-09-27): a talent tree none of our scorer spec models 
   10. spell probe: insert at the end: if auraIsInactive: cast Intimidation (+0.5%, pass 5)
   11. only above 60% mana: if auraIsInactive: cast Intimidation (+0.2%, pass 7)
   12. threshold 60% -> 70%: if auraIsInactive and mana % ≥ 60%: cast Intimidation (+0.3%, pass 8)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-04, 10 changes to the base rotation; third-seed check: deep: Beast Mastery (dummy) 835 -> 865 DPS (+3.5%), deep: Beast Mastery (raid) 859 -> 889 DPS (+3.5%), deep: Hybrid Beast Mastery/Marksmanship (dummy) 832 -> 861 DPS (+3.6%), deep: Hybrid Beast Mastery/Marksmanship (raid) 844 -> 876 DPS (+3.8%), beast-mastery-raid 826 -> 855 DPS (+3.5%), sim preset: Beast Mastery 35/16/0 803 -> 832 DPS (+3.6%), mm-hawk-raid 825 -> 855 DPS (+3.7%), beast-marks-ml-raid 836 -> 866 DPS (+3.6%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-07, 10 changes to the base rotation; third-seed check: open winner 871 -> 904 DPS (+3.8%), beast-mastery-raid 839 -> 867 DPS (+3.3%), sim preset: Beast Mastery 35/16/0 816 -> 844 DPS (+3.4%), mm-hawk-raid 838 -> 868 DPS (+3.5%), beast-mastery-ml-parse 863 -> 895 DPS (+3.6%), beast-marks-ml-raid 858 -> 890 DPS (+3.7%)):
   1. move to the top: if time to the next auto attack > 0.5s: cast Multi-Shot (+1.9%, pass 1)
   2. drop the condition: if time to the next auto attack > 1s: cast Summon Hawk (+0.4%, pass 1)
   3. threshold 1s -> 0.75s: if time left on Serpent Sting < 1s and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 2)

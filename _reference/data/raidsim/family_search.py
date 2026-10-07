@@ -64,7 +64,8 @@ SMOKE = False
 
 
 def log(m):
-    print(m, flush=True)
+    """Step lines ('== ...') carry the time of day: the logs under deep-runs/ are the record of what each step costs."""
+    print((time.strftime("%H:%M ") if m.startswith("==") else "") + m, flush=True)
 
 
 def flat_of(alloc):

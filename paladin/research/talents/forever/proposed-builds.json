@@ -1209,57 +1209,6 @@
       "sources": ["https://warcraftforever.games/talents/paladin"]
     },
     {
-      "id": "retribution-open-raid",
-      "name": "Retribution — Raid (open talent search)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Retribution",
-      "generated": "2026-10-07",
-      "derived": "raid",
-      "summary": "The Retribution raid build the open talent search found on 2026-10-07: every legal 51-point build with no tree rule, searched in the community simulator's shockadin-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). ",
-      "allocation": {
-        "Holy": [
-          ["Divine Strength", 5],
-          ["Divine Intellect", 1],
-          ["Improved Seals", 3]
-        ],
-        "Protection": [
-          ["Toughness", 5],
-          ["Precision", 3]
-        ],
-        "Retribution": [
-          ["Benediction", 5],
-          ["Improved Judgement", 2],
-          ["Holy Conduit", 2],
-          ["Conviction", 5],
-          ["Vindication", 3],
-          ["Sanctified Judgement", 3],
-          ["Seal of Command", 1],
-          ["Sacred Arbiter", 1],
-          ["Two-Handed Weapon Specialization", 3],
-          ["Vengeance", 3],
-          ["Champion of the Light", 3],
-          ["Instrument of Law", 2],
-          ["Twist of Light", 1]
-        ]
-      },
-      "core": [
-        {"talent": "Twist of Light", "why": "172 DPS lost without it (18% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Seal of Command", "why": "136 DPS lost without it (14% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Champion of the Light", "why": "84 DPS lost without it (9% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Vengeance", "why": "74 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Improved Seals", "why": "56 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Instrument of Law", "why": "48 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Holy Conduit", "why": "48 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Precision", "why": "38 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."}
-      ],
-      "flex": [],
-      "notes": ["Open search result (shockadin-raid, full raid): 9/8/34 (Retribution) at 963.6 DPS;  in the same fights; 4,930 builds simulated, 2 independent runs reached the top.", "The spec's other builds on the pages (their best entry, full raid): retribution-ml-raid 957.1, opt-ret-dps-raid-dps 955.5, ret-full-buffs-raid 953.8, ret-raid-dps 935.2.", "Against the spec's best hand draft ret-full-buffs-raid: +1.0% (under the 2% bar: the hand draft stays the pick unless the re-race says otherwise).", "The shockadin-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): ret-dps +3.0%, seal-of-fury-raid +3.1%; seal-of-fury-raid's rotation adopted (+3.1%).", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Toughness.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever b0f0df3 with this project's patches), not in-game measurements."],
-      "open_questions": ["An open-search Retribution build: check it against the community's Retribution builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/paladin/60/51003-503-05225331001330321-4"]
-    },
-    {
       "id": "prot-ret-open-leveling",
       "name": "Prot-Ret — Leveling (open talent search)",
       "role": "dps",

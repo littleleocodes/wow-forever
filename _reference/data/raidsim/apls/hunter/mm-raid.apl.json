@@ -54,7 +54,7 @@
          },
          "rhs": {
           "const": {
-           "val": "10s"
+           "val": "15s"
           }
          }
         }
@@ -68,7 +68,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-10-04: changed or added by the rotation search (see mm-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-10-07: changed or added by the rotation search (see mm-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -83,6 +83,29 @@
    "action": {
     "autocastOtherCooldowns": {}
    }
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 19577
+     }
+    },
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "currentManaPercent": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "60%"
+       }
+      }
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-07: changed or added by the rotation search (see mm-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -150,7 +173,7 @@
          },
          "rhs": {
           "const": {
-           "val": "25%"
+           "val": "20%"
           }
          }
         }
@@ -164,23 +187,42 @@
      }
     }
    },
-   "notes": "apl_opt 2026-10-04: changed or added by the rotation search (see mm-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-10-07: changed or added by the rotation search (see mm-raid-rotation-search.json)"
   },
   {
    "action": {
     "condition": {
-     "cmp": {
-      "op": "OpGt",
-      "lhs": {
-       "autoTimeToNext": {
-        "autoType": "RangedAuto"
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpGt",
+         "lhs": {
+          "autoTimeToNext": {
+           "autoType": "RangedAuto"
+          }
+         },
+         "rhs": {
+          "const": {
+           "val": "1s"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "10%"
+          }
+         }
+        }
        }
-      },
-      "rhs": {
-       "const": {
-        "val": "1s"
-       }
-      }
+      ]
      }
     },
     "castSpell": {
@@ -189,7 +231,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-09-27: changed or added by the rotation search (see mm-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-10-07: changed or added by the rotation search (see mm-raid-rotation-search.json)"
   },
   {
    "action": {
