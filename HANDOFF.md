@@ -203,13 +203,14 @@ Each class folder now opens with player pages and keeps the research below:
 - **Bench target fix (2026-10-06):** the bench's target had no creature type, so Improved Tracking (+5% against every raid creature type
   but Mechanical) read 0 in every hunter run; the target is an Elemental now (CLAUDE.md "The bench's target is an Elemental"). Done the same
   day: the two 2026-09-29 filler audits that had moved the talent out of `melee-survival-raid` and `mm-lone-wolf-raid` undone, the three
-  builds re-audited, the hunter's four entries re-raced, pages regenerated. **Queued for the hunter** (a waiter started 2026-10-06
-  ~18:40 runs it as soon as the open-search runner exits: `_reference/data/deep-runs/hunter_after_queue.sh <runner bash PIDs>`,
-  git-ignored, log `deep-runs/hunter-after-queue.log`; after a PC restart run its commands by hand): the searches made before the fix
-  again, so the talent is valued inside them: `python -u _reference/data/raidsim/family_search.py hunter --fresh` (about 11 h; then
-  `open_builds.py hunter --write`, re-race, regen), `ml_pipeline.py hunter --fresh` (the BiS/pre-BiS rankings; then `ml_builds.py hunter
-  --builds`, `--tidy-winners`, `--rank`). The hunter's deep record (`raidsim/deep/hunter.json`, 2026-10-04) is stale too: redo it with
-  the deep runs at the end of the beta. The fight lab (leveling) models the talent itself: nothing to redo there.
+  builds re-audited, the hunter's four entries re-raced, pages regenerated. The hunter's open-search entries were repaired on 2026-10-07
+  by the synergy certificates and structural rankings (two leads with Improved Tracking found and re-searched, two entries confirmed), so
+  the family search needs no re-run. **Queued for the hunter** (a waiter started 2026-10-07 ~07:30 runs it as soon as the open-search
+  runner exits: `_reference/data/deep-runs/hunter_ml_after_queue.sh <runner bash PIDs>`, git-ignored, log
+  `deep-runs/hunter-ml-after-queue.log`; after a PC restart run its commands by hand): `ml_pipeline.py hunter --fresh` (the BiS/pre-BiS
+  rankings; then `ml_builds.py hunter --builds`, `--tidy-winners`, `--rank`, the entries re-raced, regen). The hunter's deep record
+  (`raidsim/deep/hunter.json`, 2026-10-04) is stale too: redo it with the deep runs at the end of the beta. The fight lab (leveling)
+  models the talent itself: nothing to redo there.
 - **Search completeness work (night of 2026-10-06/07, user request: "how do we stop missing potentially good builds?"):** every missed
   build was a synergy package (see CLAUDE.md "Open-search safeguards" (7)-(8)). Landed: multi-rank proc talents as keystones, tier-chain
   moves, `raidsim/synergy.py` (the pairwise synergy certificate, run by family_search per entry after the values; standalone with
