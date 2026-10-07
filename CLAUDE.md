@@ -604,10 +604,22 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   interaction = both - a - b + winner; the best pair builds within 1% polished keeping the pair and raced on 10,000 fights; a lead 0.5%
   ahead means the search missed it: the rotation is re-tuned on it, the search runs again seeded with the leads (AGAIN budget), race and
   values redone (`entry["synergy"]`, the class report shows it). Complete at the pairwise level; a third member one move from a pair is
-  reached by the polish. (8) **Cost**: `Sim.run` caches results within a process (talents, fights, seed, rotation file and time: common
-  random numbers make repeats exact) and `polish` tries neighbours in random batches of 120 with first improvement (a step costs a batch,
-  a full pass without a gain still ends at a local optimum). Open: dead-talent pruning and an exhaustive ranking of every legal
-  structure on a quadratic model fitted to the certificate's measurements (the plan's steps 3-4). **Warlock demons** (2026-10-06): the simulator (and
+  reached by the polish. Singles and pairs are measured **unpaid** (2026-10-07): the winner with the talents added at full rank or
+  removed, 51 points or not (the simulator applies the string as given), so each effect is a clean marginal; present talents are also
+  measured at one rank less; only the lead builds are made legal (tier points filled, the cost paid from the winner's cheapest points by
+  its removal values, or points added where a swap leaves the build short). (8) **Exhaustive structural ranking** (`raidsim/structural.py`,
+  run by family_search after the certificate, re-measured around a new winner; standalone with `--fresh`, `--no-search`): a quadratic
+  model fitted sequentially to the certificate's builds (main effects from the singles, each pair's interaction from its build; three
+  states per present multi-rank talent: in, one rank less, out; unmeasured pairs 0); talents with no effect above 0.1% alone and no
+  interaction above 0.2% are tier filler budget; every state combination of each tree's live talents is scored with the tier points it
+  needs, the best 8 per tree and point count kept, every split of 51 combined with the cross-tree pair terms; the model's top 300 legal
+  structures are simulated (1,500 fights), the best 20 raced (10,000), the best polished and raced on 30,000; a lead 0.5% ahead
+  re-searches through `synergy.research` (shared with the certificate). From the Frostfire search's 0/34/17 it rediscovers the user's
+  0/29/22 (+2.0%) in 1.3 min; the model's fit on the simulated top is logged (correlation +0.80 there). (9) **Cost**: `Sim.run` caches
+  results within a process (talents, fights, seed, rotation file and time: common random numbers make repeats exact) and `polish` tries
+  neighbours in random batches of 120 with first improvement, up to 24 steps (a step costs a batch; a full pass without a gain ends at a
+  local optimum). A certificate costs 1-3 min per entry, the ranking 1-2 min; the family polish 40 min (16 keystones, 69 families) and the
+  search 25 min for a paladin entry. **Warlock demons** (2026-10-06): the simulator (and
   upstream wowsims/classic) gives demons nothing from the warlock; Forever's guides say demons scale with the warlock's stats and gear
   (the pet pane shows the inherited values) but publish no percentages and Blizzard's warlock deep dive is unpublished, so the warlock's
   pet numbers are the class's decision-critical assumption: find the percentages (a beta tester's pet pane) and patch like
