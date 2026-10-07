@@ -167,7 +167,14 @@ def main():
                 r.update({"winner": rec["winner"], "runs_agree": rec["runs_agree"], "simulated_builds": rec["simulated_builds"],
                           "important_features": rec.get("important_features"), "finalists": rec.get("finalists") or []})
                 save()
-            ours = {bid: b for bid, b in data.items() if SM.mode_of(b) == "leveling" and SM.spec_of(cls, b) in trees and b.get("order")}
+            ours = {bid: b for bid, b in data.items() if SM.mode_of(b) == "leveling" and SM.spec_of(cls, b) in trees}
+            for bid, b in list(ours.items()):   # 2026-10-06 audit: a leveling build without an order (the mage's Fire ones) was left out of the
+                if not b.get("order"):          # race, so a winner raced against nothing; it gets the stats model's order instead
+                    try:
+                        ours[bid] = dict(b, order=FT.order_of(cls, model, FT.flat_of(b)))
+                    except Exception as ex:   # noqa: BLE001
+                        log(f"  {bid}: no order and none could be made ({type(ex).__name__}: {ex}); left out of the race")
+                        ours.pop(bid)
             if "race" not in r:
                 # the winner is picked by the 20-60 race among the level-60 finalists (2026-10-05: a build best at 60 can be slower on the
                 # way), each with the scorer's leveling order, raced together with our leveling builds
