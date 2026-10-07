@@ -168,7 +168,7 @@ def certificate(cls, entry, e, repo, st, save, a):
             labels.append(t)
     for t in present:
         b = {n: r for n, r in w.items() if n != t}
-        if space.valid(b):
+        if space.ok_partial(b):   # a removal leaves fewer than 51 points: legal for the simulator (tiers and prerequisites kept)
             builds.append(b)
             labels.append(f"-{t}")
     # pairs
@@ -191,14 +191,14 @@ def certificate(cls, entry, e, repo, st, save, a):
     for a1, b1 in pairs:
         if a1 in present:   # present x present: the winner without both
             drop2 = {n: r for n, r in w.items() if n not in (a1, b1)}
-            if space.valid(drop2):
+            if space.ok_partial(drop2):
                 pair_builds[(a1, b1)] = (drop2, "removed")
         elif b1 in present:   # missing x present: the pair's build is "add a, keep b" measured against "add a, drop b"
             b = with_talents(space, w, [a1], cost)
             if b is None:
                 continue
             drop = {n: r for n, r in b.items() if n != b1}
-            if not space.valid(drop):
+            if not space.ok_partial(drop):
                 continue
             pair_builds[(a1, b1)] = (b, drop)
         else:
