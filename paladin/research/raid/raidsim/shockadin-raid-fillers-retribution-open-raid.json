@@ -1,0 +1,196 @@
+{
+ "class": "paladin",
+ "spec": "shockadin-raid",
+ "build": "retribution-open-raid",
+ "setting": "raid",
+ "date": "2026-10-07",
+ "tank": false,
+ "removal": {
+  "Benediction": 0.02650180732279872,
+  "Champion of the Light": 0.0873579714642696,
+  "Conviction": 0.039320813321456205,
+  "Divine Intellect": 0.0023468127963883756,
+  "Divine Strength": 0.009641140452187669,
+  "Holy Conduit": 0.04927217000503259,
+  "Improved Judgement": 0.03885276310737584,
+  "Improved Seals": 0.05773539207277756,
+  "Instrument of Law": 0.049844273085008384,
+  "Precision": 0.039437613545203254,
+  "Sacred Arbiter": 0.0170745161778747,
+  "Sanctified Judgement": 0.01739316713016803,
+  "Seal of Command": 0.1412701593094391,
+  "Toughness": -0.0,
+  "Twist of Light": 0.17797119833786845,
+  "Two-Handed Weapon Specialization": 0.014357940091047183,
+  "Vengeance": 0.0769947312199738,
+  "Vindication": 0.005476415756488495
+ },
+ "free": [
+  "Toughness"
+ ],
+ "kept_for_rotation": [],
+ "active_never_worth": [],
+ "abilities_never_cast": [],
+ "moves": [],
+ "final_seed3": 0.0,
+ "start": {
+  "Holy": [
+   [
+    "Divine Strength",
+    5
+   ],
+   [
+    "Divine Intellect",
+    1
+   ],
+   [
+    "Improved Seals",
+    3
+   ]
+  ],
+  "Protection": [
+   [
+    "Toughness",
+    5
+   ],
+   [
+    "Precision",
+    3
+   ]
+  ],
+  "Retribution": [
+   [
+    "Benediction",
+    5
+   ],
+   [
+    "Improved Judgement",
+    2
+   ],
+   [
+    "Holy Conduit",
+    2
+   ],
+   [
+    "Conviction",
+    5
+   ],
+   [
+    "Vindication",
+    3
+   ],
+   [
+    "Sanctified Judgement",
+    3
+   ],
+   [
+    "Seal of Command",
+    1
+   ],
+   [
+    "Sacred Arbiter",
+    1
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Vengeance",
+    3
+   ],
+   [
+    "Champion of the Light",
+    3
+   ],
+   [
+    "Instrument of Law",
+    2
+   ],
+   [
+    "Twist of Light",
+    1
+   ]
+  ]
+ },
+ "allocation": {
+  "Holy": [
+   [
+    "Divine Strength",
+    5
+   ],
+   [
+    "Divine Intellect",
+    1
+   ],
+   [
+    "Improved Seals",
+    3
+   ]
+  ],
+  "Protection": [
+   [
+    "Toughness",
+    5
+   ],
+   [
+    "Precision",
+    3
+   ]
+  ],
+  "Retribution": [
+   [
+    "Benediction",
+    5
+   ],
+   [
+    "Improved Judgement",
+    2
+   ],
+   [
+    "Holy Conduit",
+    2
+   ],
+   [
+    "Conviction",
+    5
+   ],
+   [
+    "Vindication",
+    3
+   ],
+   [
+    "Sanctified Judgement",
+    3
+   ],
+   [
+    "Seal of Command",
+    1
+   ],
+   [
+    "Sacred Arbiter",
+    1
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Vengeance",
+    3
+   ],
+   [
+    "Champion of the Light",
+    3
+   ],
+   [
+    "Instrument of Law",
+    2
+   ],
+   [
+    "Twist of Light",
+    1
+   ]
+  ]
+ }
+}

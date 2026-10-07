@@ -2,7 +2,7 @@
  "dummy": {
   "class": "paladin",
   "spec": "shockadin-raid",
-  "date": "2026-10-05",
+  "date": "2026-10-07",
   "commit": "b0f0df3",
   "setting": "dummy",
   "tank": false,
@@ -11,7 +11,7 @@
   "builds": [
    {
     "label": "open winner",
-    "talents": "35003-503-05205331001330321"
+    "talents": "51003-503-05225331001330321"
    }
   ],
   "iterations": 3000,
@@ -56,28 +56,36 @@
     "gain_seed2": 0.002021101465752295,
     "candidates": 332,
     "pass": 1
+   },
+   {
+    "round": 6,
+    "change": "threshold 30% -> 25%: if mana % \u2265 15% and Seal of Righteousness is up and mana % \u2265 30%: cast Seal of Command",
+    "gain_seed1": 0.00905070528014118,
+    "gain_seed2": 0.007949258277840654,
+    "candidates": 336,
+    "pass": 3
    }
   ],
   "final": {
    "dummy": {
     "open winner": {
-     "before": 447.4247799007861,
-     "after": 473.5832632106398,
-     "base": 447.4247799007861,
+     "before": 481.9911675132671,
+     "after": 505.13410917234756,
+     "base": 481.9911675132671,
      "before_value": null,
      "after_value": null,
-     "oom_before": 2.7436263825096647,
-     "oom_after": 2.7436263825096647
+     "oom_before": 0.09511000000000006,
+     "oom_after": 0.09511000000000006
     }
    }
   },
   "first_date": "2026-10-05",
-  "passes": 2
+  "passes": 4
  },
  "raid": {
   "class": "paladin",
   "spec": "shockadin-raid",
-  "date": "2026-10-05",
+  "date": "2026-10-07",
   "commit": "b0f0df3",
   "setting": "raid",
   "tank": false,
@@ -86,7 +94,7 @@
   "builds": [
    {
     "label": "open winner",
-    "talents": "35003-503-05205331001330321"
+    "talents": "51003-503-05225331001330321"
    }
   ],
   "iterations": 3000,
@@ -147,22 +155,47 @@
     "gain_seed2": 0.002826036703782009,
     "candidates": 398,
     "pass": 1
+   },
+   {
+    "round": 8,
+    "pass": 4,
+    "date": "2026-10-06",
+    "change": "rotation replaced by seal-of-fury-raid's raid rotation (the open search's cross-race of every build under every sibling rotation)",
+    "gain_seed1": null,
+    "gain_seed2": 0.0308,
+    "candidates": 1
+   },
+   {
+    "round": 9,
+    "change": "always rank 3 instead of rank 5: if mana % \u2265 15% and Seal of Righteousness is up: cast Seal of Command",
+    "gain_seed1": 0.0095849583294485,
+    "gain_seed2": 0.007515448876198816,
+    "candidates": 420,
+    "pass": 5
+   },
+   {
+    "round": 10,
+    "change": "insert in the middle: if time left on Seal of Righteousness \u2264 1.5s: cast Seal of Righteousness",
+    "gain_seed1": 0.0011000920323689378,
+    "gain_seed2": 0.0017886106693065784,
+    "candidates": 416,
+    "pass": 5
    }
   ],
   "final": {
    "raid": {
     "open winner": {
-     "before": 796.317157426524,
-     "after": 876.0364945198045,
-     "base": 796.317157426524,
+     "before": 842.5079476608182,
+     "after": 964.4599967689421,
+     "base": 842.5079476608182,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.8009651975006981,
-     "oom_after": 0.8009651975006981
+     "oom_before": 0.6364372491115975,
+     "oom_after": 0.0003654999980999999
     }
    }
   },
   "first_date": "2026-10-05",
-  "passes": 2
+  "passes": 5
  }
 }

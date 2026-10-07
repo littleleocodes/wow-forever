@@ -2,7 +2,7 @@
  "class": "paladin",
  "spec": "shockadin-raid",
  "game": "forever",
- "date": "2026-10-03",
+ "date": "2026-10-07",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
   "commit": "b0f0df3",
@@ -69,5 +69,55 @@
    "how": "the training dummy without execute phases, a 360 s fight (the DPS-over-time curve)"
   }
  },
- "results": []
+ "results": [
+  {
+   "label": "retribution-open-raid",
+   "split": "9/8/34",
+   "ours": true,
+   "dps": {
+    "dummy": 504.9748609064906,
+    "dummy60": 557.6414149572657,
+    "ladder-mana": 518.7738177143377,
+    "ladder-armor": 562.42847124016,
+    "ladder-physical": 710.2226868399075,
+    "ladder-spell": 835.9818920458754,
+    "raid": 965.5093437361445,
+    "curve60": 496.37329315826526,
+    "curve120": 486.84013132646743,
+    "curve180": 477.88543983826025,
+    "curve240": 463.64341148945687,
+    "curve360": 453.5129055169394,
+    "max": 965.5093437361445,
+    "max60": 977.0712742668393
+   },
+   "raid_spell_casts": {
+    "20920": 1.0,
+    "20285": 0.31633333333333336,
+    "20968": 0.004,
+    "10333": 17.0,
+    "20961": 3.505333333333333,
+    "20918": 35.667,
+    "20293": 41.358333333333334,
+    "20286": 18.929,
+    "20292": 1.5826666666666667,
+    "20924": 20.0,
+    "20915": 0.36966666666666664,
+    "24239": 6.0
+   },
+   "raid_casts": {
+    "Seal of Command": 37.03666666666667,
+    "Judgement of Righteousness": 19.24533333333333,
+    "Auto Attack": 72.90666666666667,
+    "item 272439": 2.0,
+    "Judgement of Command": 3.509333333333333,
+    "Holy Strike": 17.0,
+    "Seal of Righteousness": 42.941,
+    "Consecration": 20.0,
+    "Demonic Rune": 1.9983333333333333,
+    "Major Mana Potion": 1.0,
+    "Hammer of Wrath": 6.0,
+    "OtherActionManaGain": 104.083
+   }
+  }
+ ]
 }

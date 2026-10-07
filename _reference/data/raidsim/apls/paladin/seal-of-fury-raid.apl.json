@@ -28,7 +28,7 @@
       },
       "rhs": {
        "const": {
-        "val": "40%"
+        "val": "20%"
        }
       }
      }
@@ -40,7 +40,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-10-05: changed or added by the rotation search (see seal-of-fury-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-10-07: changed or added by the rotation search (see seal-of-fury-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -108,6 +108,16 @@
      }
     }
    }
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "itemId": 13444
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-07: changed or added by the rotation search (see seal-of-fury-raid-rotation-search.json)"
   },
   {
    "action": {

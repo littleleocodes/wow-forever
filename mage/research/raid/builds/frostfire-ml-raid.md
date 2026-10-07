@@ -54,7 +54,7 @@ The Frostfire build the machine-learning talent search found in a full raid (eve
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`frostfire-open-raid`](frostfire-open-raid.md) | ours: hand draft | 3/32/16 | 551 | +0.0% | 691 | -2.3% | 1 s |
+| 1 | `frostfire-open-raid` | ours | 3/32/16 | 551 | +0.0% | 691 | -2.3% | 1 s |
 | 2 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 539 | -2.1% | 707 | +0.0% | 0 s |
 | 3 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 4/31/16 | 516 | -6.3% | 648 | -8.4% | 0 s |
 | 4 | **[`frostfire-ml-raid`](frostfire-ml-raid.md)** | ours: hand draft | 4/31/16 | 513 | -6.9% | 644 | -9.0% | 1 s |

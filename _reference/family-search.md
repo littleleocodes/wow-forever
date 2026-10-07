@@ -7,6 +7,7 @@ The best build found with no tree rule in each damage rotation, in a full raid, 
 | Class | Rotation (entry) | Open winner | Family | DPS | vs our best there |
 |---|---|---|---|---|---|
 | [hunter](../hunter/research/raid/family-search.md) | melee-dps | [16/11/24](https://talentsforever.com/hunter/60/50230005001-005005001-5002302300500211-4) | Hybrid Beast Mastery/Survival | 1117.7 | +7.5% |
+| [paladin](../paladin/research/raid/family-search.md) | shockadin-raid | [9/8/34](https://talentsforever.com/paladin/60/51003-503-05225331001330321-4) | Retribution | 963.6 | - |
 | [paladin](../paladin/research/raid/family-search.md) | seal-of-fury-raid | [11/8/32](https://talentsforever.com/paladin/60/25003001-503-05225131001330321-4) | Retribution | 960.4 | +2.9% |
 | [hunter](../hunter/research/raid/family-search.md) | mm-lonewolf-raid | [5/41/5](https://talentsforever.com/hunter/60/5-0053352511523051-5-4) | Marksmanship | 957.3 | +0.1% |
 | [paladin](../paladin/research/raid/family-search.md) | ret-dps | [11/8/32](https://talentsforever.com/paladin/60/43003001-503-05225131001330321-4) | Retribution | 956.4 | -0.1% |

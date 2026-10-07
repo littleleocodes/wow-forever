@@ -1,0 +1,89 @@
+{
+ "class": "paladin",
+ "spec": "shockadin-raid",
+ "game": "forever",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "commit": "b0f0df3",
+  "spec_folder": "paladin/retribution",
+  "gear": "_reference/data/raidsim/gear_sets/forever/paladin-retribution-default.p1opt.gear.json",
+  "apl": "_reference/data/raidsim/apls/paladin/shockadin-raid.apl.json",
+  "apl_sim": "_reference/data/raidsim/apls/paladin/shockadin-raid.base.apl.json",
+  "race": "RaceHuman",
+  "setting": "dummy",
+  "buffs": "a boss-level training dummy (level 63, execute phases as a dying boss) with only your own buffs: what the class code adds itself (its talent auras, Arcane Brilliance, the priest buffs, its own shout, curses, totems and weapon imbues in the rotation) plus greater_blessing_of_might and the spec's standard consumables; no raid or party buffs and no debuffs from others",
+  "consumables": {
+   "flaskId": 13512,
+   "battleElixirId": 13452,
+   "spellPowerElixirId": 13454,
+   "schoolElixirId": 21546,
+   "strengthBuffId": 12451,
+   "attackPowerBuffId": 12460,
+   "zanzaId": 8410,
+   "dragonbreathChili": true,
+   "foodId": 13810,
+   "potId": 13444,
+   "conjuredId": 12662
+  },
+  "encounter": "a boss-level training dummy (level 63, creature type Elemental), 180.0s, execute phases 20/25/35/45/90%",
+  "iterations": 3000,
+  "seed": 1,
+  "duration": 180.0
+ },
+ "date": "2026-10-07",
+ "results": [
+  {
+   "label": "retribution-open-raid",
+   "talents": "51003-503-05225331001330321",
+   "split": "9/8/34",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "20968": 11.497,
+    "20920": 23.995333333333335,
+    "20293": 23.995333333333335,
+    "10333": 18.0,
+    "24239": 5.995333333333333,
+    "20286": 11.503,
+    "26573": 19.004666666666665
+   },
+   "casts": {
+    "item 272439": 2.0,
+    "Judgement of Command": 11.497,
+    "OtherActionManaGain": 27.0,
+    "Seal of Command": 23.995333333333335,
+    "Seal of Righteousness": 23.995333333333335,
+    "Demonic Rune": 2.0,
+    "Auto Attack": 53.0,
+    "Holy Strike": 18.0,
+    "Hammer of Wrath": 5.995333333333333,
+    "Judgement of Righteousness": 11.503,
+    "Major Mana Potion": 2.0,
+    "Consecration": 19.004666666666665
+   },
+   "dps": 504.9748609064906,
+   "dps_stdev": 22.473959754695642,
+   "threat": 426.1473537251928,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.09500000000000003,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Seal of Righteousness": 0.20406462841242057,
+    "Auto Attack": 0.18248588850959135,
+    "Holy Strike": 0.14330835404366057,
+    "Consecration": 0.11655132023540285,
+    "Judgement of Righteousness": 0.0967186913827487,
+    "Seal of Command": 0.088933263328244,
+    "Judgement of Command": 0.0787907109832456,
+    "Hammer of Wrath": 0.060274011097097735,
+    "Dragonbreath Chili": 0.028873132007588568
+   },
+   "source_shares": {},
+   "unmatched_share": 1.0
+  }
+ ],
+ "deltas": {}
+}
