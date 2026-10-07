@@ -657,8 +657,12 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   chain and tier-chain neighbours (random batches of 40, each with the stats model's own order computed in the pool) on the weighted time
   per kill at levels 40, 50 and 60, kept at 0.3% on a second seed; then the winner's three orders (stats model, own tree first, own tree
   last) raced at 20-60 on the race's seed and fights, the fastest is the page's (`order_label`); after a polish the race's old pick stays a
-  finalist and wins back when faster. A changed winner gets new values and a new certificate (`ensure_order` re-races the orders after a
-  certificate re-search). Records `level_polish`, `order_label` and `finalist <split> (<order>)` race rows. `_reference/data/low_priority.py
+  finalist and wins back when faster; then the **order polish**: block moves of the chosen order (a talent's block or part of it up to
+  three blocks earlier or later; only moves that change the build at a race level, since the race looks every ten levels), scored at
+  levels 30-50, kept at 0.3% on a second seed and raced at 20-60 (the order matters: own tree first against the stats model's order was
+  8% for the mage's Arcane build, 4% for the shaman's Elemental one). A changed winner gets new values and a new certificate
+  (`ensure_order` re-races the orders after a certificate re-search; `orders_raced`). `fl_levels.py <class> --orders` redoes the order
+  choice alone. Records `level_polish`, `order_polish`, `order_label` and `finalist <split> (<order>)` race rows. `_reference/data/low_priority.py
   <script> [args]` runs a post-hoc job at below-normal CPU priority next to the queue.
 - **Beta build 70170/70205** (2026-10-03, user request after Lightning Reflexes read 2% a rank in game): talents and spellbooks from
   talentsforever.com's 70170 export (the warrior with the 1-2 Oct hotfixes; thewowdb answered for six classes, the others fall back to the

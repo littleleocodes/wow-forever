@@ -248,8 +248,14 @@ Each class folder now opens with player pages and keeps the research below:
   the weighted time per kill at levels 40-60 plus a race of the winner's three talent orders (the smoke test had own-tree-last 4% faster
   than the stats model's order for that shaman build). Running post hoc at below-normal priority for the mage, paladin and hunter
   (`_reference/data/deep-runs/levels-<class>.log`); the shaman's waiter runs it when its leveling search ends, then open_builds. The
-  running shaman search has the old code: its rotations get the polish post hoc. After a post-hoc change: `open_builds.py <class> --write
-  --only leveling --regen`. **Racials** (user question 2026-10-07): the raid sim runs each entry as the race its preset had (mage, priest,
+  running shaman search had the old code: its rotations got the polish post hoc (done 16:42: Elemental 31/11/9 at 37.28 s, +2.0% ->
+  `elemental-open-leveling`; Enhancement 9/32/10 at 32.72 s, +2.6% -> `enhancement-open-leveling` replaces leveling-enhancement). The
+  order polish (block moves, levels 30-50) came after that run; the mage's post-hoc run started before it too: run `fl_levels.py mage
+  --orders --fresh` and `fl_levels.py shaman --orders --fresh` when the CPU is free, then `open_builds.py <class> --write --only leveling
+  --regen`. After a post-hoc change: `open_builds.py <class> --write --only leveling --regen`. **Hunter post hoc done** (16:59, commit
+  dc691b4): bm-raid's structural lead 27/19/5 held after the re-tune and re-search (903 DPS, +0.9%) -> `beast-marks-open-raid` replaces
+  mm-hawk-raid; melee-dps 16/11/24 confirmed -> `beast-survival-open-raid` (1170 in a full raid, the class's best); the Marksmanship
+  entries confirm mm-lone-wolf-raid. **Racials** (user question 2026-10-07): the raid sim runs each entry as the race its preset had (mage, priest,
   hunter Troll; warlock Gnome; rogue Dwarf; warrior Human but arms-battle Dwarf; paladin Human; shaman Troll but one entry Orc; druid
   Tauren), racial stats included; the only racial ability a tuned rotation casts is the Frostfire mage's Berserking (the warrior
   rotations' Blood Fury lines never fire for a Human); the fight lab and healer lab model no race. Planned for the post-run re-race: one
