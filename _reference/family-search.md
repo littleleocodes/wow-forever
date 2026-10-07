@@ -11,9 +11,12 @@ The best build found with no tree rule in each damage rotation, in a full raid, 
 | [paladin](../paladin/research/raid/family-search.md) | seal-of-fury-raid | [11/8/32](https://talentsforever.com/paladin/60/25003001-503-05225131001330321-4) | Retribution | 960.4 | +2.9% |
 | [hunter](../hunter/research/raid/family-search.md) | mm-lonewolf-raid | [5/41/5](https://talentsforever.com/hunter/60/5-0053352511523051-5-4) | Marksmanship | 957.3 | +0.1% |
 | [paladin](../paladin/research/raid/family-search.md) | ret-dps | [11/8/32](https://talentsforever.com/paladin/60/43003001-503-05225131001330321-4) | Retribution | 956.4 | -0.1% |
+| [hunter](../hunter/research/raid/family-search.md) | mm-raid | [16/31/4](https://talentsforever.com/hunter/60/52201005001-0053450001502051-4-4) | Marksmanship | 910.8 | +6.9% |
 | [hunter](../hunter/research/raid/family-search.md) | bm-raid | [31/20/0](https://talentsforever.com/hunter/60/5320001505101251-00532500005--4) | Beast Mastery | 880.3 | +0.0% |
-| [hunter](../hunter/research/raid/family-search.md) | mm-raid | [20/31/0](https://talentsforever.com/hunter/60/51210105041-0053252001520051--4) | Marksmanship | 877.2 | +4.6% |
+| [shaman](../shaman/research/raid/family-search.md) | enhancement-dps | [19/32/0](https://talentsforever.com/shaman/60/500533102-054030031005102251--4) | Enhancement | 786.8 | -0.0% |
 | [mage](../mage/research/raid/family-search.md) | frostfire-raid | [0/29/22](https://talentsforever.com/mage/60/-0355100013013304-00550003310003002-4) | Hybrid Fire/Frost | 706.5 | +0.0% |
 | [mage](../mage/research/raid/family-search.md) | frost-raid | [21/0/30](https://talentsforever.com/mage/60/0520150030012101--055500031100030025-4) | Frost | 704.9 | +0.1% |
 | [mage](../mage/research/raid/family-search.md) | fire-raid | [12/34/5](https://talentsforever.com/mage/60/005205-23550020130133051-005-4) | Fire | 700.7 | +0.0% |
 | [mage](../mage/research/raid/family-search.md) | arcane-dps | [31/10/10](https://talentsforever.com/mage/60/053205003100111531-2305-0253-4) | Arcane | 659.8 | +0.0% |
+| [shaman](../shaman/research/raid/family-search.md) | elemental-dps | [29/22/0](https://talentsforever.com/shaman/60/550530030010304-055130001121102--4) | Hybrid Elemental/Enhancement | 524.9 | +0.1% |
+| [shaman](../shaman/research/raid/family-search.md) | stormcaller-dps | [29/22/0](https://talentsforever.com/shaman/60/550031130210314-055211201200102--4) | Hybrid Elemental/Enhancement | 524.3 | - |

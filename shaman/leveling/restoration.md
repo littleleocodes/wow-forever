@@ -10,6 +10,8 @@
 
 ## How to play
 
+**Not in this build:** **Stormstrike** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
+
 **Before the fight:** **Lightning Shield** up, **Rockbiter Weapon** on your weapon (**Windfury Weapon** from 30), a slow two-handed weapon. Drop **Searing Totem** as you pull.
 
 **In the fight**, top to bottom:

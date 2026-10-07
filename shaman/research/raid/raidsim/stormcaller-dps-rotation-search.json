@@ -2,13 +2,17 @@
  "dummy": {
   "class": "shaman",
   "spec": "stormcaller-dps",
-  "date": "2026-09-29",
-  "commit": "40be98e",
+  "date": "2026-10-07",
+  "commit": "b0f0df3",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "ui/specs/shaman/elemental/apls/forever.apl.json",
   "start": "ui\\specs\\shaman\\elemental\\apls\\forever.apl.json",
   "builds": [
+   {
+    "label": "open winner",
+    "talents": "550031130210314-055211201200102"
+   },
    {
     "label": "sim preset: Stormcaller 28/23/0",
     "talents": "150533130010303-055030030004102"
@@ -48,34 +52,71 @@
     "gain_seed2": 0.003178121347373386,
     "candidates": 221,
     "pass": 1
+   },
+   {
+    "round": 5,
+    "change": "threshold 52.5 -> 26.25: if mana \u2265 (time left in the fight \u00d7 52.5): cast Lightning Bolt",
+    "gain_seed1": 0.01114726330998339,
+    "gain_seed2": 0.012286423877317043,
+    "candidates": 339,
+    "pass": 3
+   },
+   {
+    "round": 6,
+    "change": "insert at the top: if time left on the totem \u2264 0s and time left in the fight \u2265 20s: cast Searing Totem",
+    "gain_seed1": 0.01856688849062893,
+    "gain_seed2": 0.018156547534238898,
+    "candidates": 339,
+    "pass": 3
+   },
+   {
+    "round": 7,
+    "change": "only with 3s or more of the fight left: if mana \u2265 (time left in the fight \u00d7 26.25): cast Lightning Bolt + move down below 'if mana \u2265 (time left in the fight \u00d7 26.25) and time left in the fight \u2265 3s: cast Lightning Bolt': if (Clearcasting is up or number of targets \u2265 2 or mana \u2265 (time left in the fight \u00d7 100)): cast Chain Lightning",
+    "gain_seed1": 0.001855553831807022,
+    "gain_seed2": 0.0026089452814210823,
+    "candidates": 372,
+    "pass": 3
    }
   ],
   "final": {
    "dummy": {
-    "sim preset: Stormcaller 28/23/0": {
-     "before": 353.9022300661156,
-     "after": 382.3274655252943,
-     "base": 353.9022300661156,
+    "open winner": {
+     "before": 399.1958379089459,
+     "after": 414.0637183197794,
+     "base": 399.1958379089459,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.28366859999844657,
-     "oom_after": 0.28366859999844657
+     "oom_before": 8.38e-05,
+     "oom_after": 0.00248
+    },
+    "sim preset: Stormcaller 28/23/0": {
+     "before": 376.9831824403074,
+     "after": 393.8428754829216,
+     "base": 376.9831824403074,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.1311817999992997,
+     "oom_after": 0.6760811999996048
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 2
+  "passes": 3
  },
  "raid": {
   "class": "shaman",
   "spec": "stormcaller-dps",
-  "date": "2026-09-29",
-  "commit": "40be98e",
+  "date": "2026-10-07",
+  "commit": "b0f0df3",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/shaman/elemental/apls/forever.apl.json",
   "start": "ui\\specs\\shaman\\elemental\\apls\\forever.apl.json",
   "builds": [
+   {
+    "label": "open winner",
+    "talents": "550031130210314-055211201200102"
+   },
    {
     "label": "sim preset: Stormcaller 28/23/0",
     "talents": "150533130010303-055030030004102"
@@ -99,22 +140,39 @@
     "gain_seed2": 0.0015422378197851305,
     "candidates": 226,
     "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "drop the condition: if mana \u2265 (time left in the fight \u00d7 35): cast Lightning Bolt",
+    "gain_seed1": 0.002456255657620865,
+    "gain_seed2": 0.002595351671561108,
+    "candidates": 342,
+    "pass": 3
    }
   ],
   "final": {
    "raid": {
-    "sim preset: Stormcaller 28/23/0": {
-     "before": 490.65374117953,
-     "after": 493.8770271806233,
-     "base": 490.65374117953,
+    "open winner": {
+     "before": 524.3377145307524,
+     "after": 524.3983083773238,
+     "base": 524.3377145307524,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.03931749999989998,
-     "oom_after": 0.03931749999989998
+     "oom_before": 0.0100097,
+     "oom_after": 0.010159699999999999
+    },
+    "sim preset: Stormcaller 28/23/0": {
+     "before": 502.01143335814135,
+     "after": 508.1664321069529,
+     "base": 502.01143335814135,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.035917899999999996,
+     "oom_after": 0.20536419999999994
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 2
+  "passes": 3
  }
 }

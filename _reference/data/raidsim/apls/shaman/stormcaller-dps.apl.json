@@ -24,6 +24,50 @@
       "vals": [
        {
         "cmp": {
+         "op": "OpLe",
+         "lhs": {
+          "totemRemainingTime": {
+           "totemType": "Fire"
+          }
+         },
+         "rhs": {
+          "const": {
+           "val": "0s"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "20s"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 10438
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-07: changed or added by the rotation search (see stormcaller-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
          "op": "OpEq",
          "lhs": {
           "numberTargets": {}
@@ -146,6 +190,57 @@
   {
    "action": {
     "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentMana": {}
+         },
+         "rhs": {
+          "math": {
+           "op": "OpMul",
+           "lhs": {
+            "remainingTime": {}
+           },
+           "rhs": {
+            "const": {
+             "val": "26.25"
+            }
+           }
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "3s"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 10392,
+      "rank": 8
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-07: changed or added by the rotation search (see stormcaller-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
      "or": {
       "vals": [
        {
@@ -198,38 +293,6 @@
      }
     }
    }
-  },
-  {
-   "action": {
-    "condition": {
-     "cmp": {
-      "op": "OpGe",
-      "lhs": {
-       "currentMana": {}
-      },
-      "rhs": {
-       "math": {
-        "op": "OpMul",
-        "lhs": {
-         "remainingTime": {}
-        },
-        "rhs": {
-         "const": {
-          "val": "52.5"
-         }
-        }
-       }
-      }
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 10392,
-      "rank": 8
-     }
-    }
-   },
-   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see stormcaller-dps-rotation-search.json)"
   },
   {
    "action": {
