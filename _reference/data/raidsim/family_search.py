@@ -55,7 +55,8 @@ KNOWN = HERE / "known-positives.json"
 OUT = HERE / "families"
 PAGE = ROOT / "_reference" / "family-search.md"
 TODAY = datetime.date.today().isoformat()
-POLISH = dict(fights=300, rounds=6, per_pair=1, top=5, full_fights=800)   # 2026-10-05: trimmed (one draw, six rounds) to about half the time
+POLISH = dict(fights=300, rounds=24, per_pair=1, top=5, full_fights=800)   # 2026-10-05: one draw; 2026-10-07: batched climbs (ml_talents.polish) take
+                                                                            # small cheap steps, so the cap is 24 steps and a climb ends on a full pass without gain
 SEARCH = dict(runs=3, budget=3000, screen=1500, patience=5, max_rounds=20, random_init=400, pool=10000, parents=48, finalists=6, screen_budget=600)
 AGAIN = dict(SEARCH, runs=2, budget=2000)
 RACE, VALUES = 30000, 12000

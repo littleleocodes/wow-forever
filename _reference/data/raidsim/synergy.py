@@ -269,7 +269,7 @@ def certificate(cls, entry, e, repo, st, save, a):
     cands.sort(key=lambda x: -x[0])
     polished = []
     for sc, pair, b in cands[:TOP_LEADS]:
-        x, sx = MLT.polish(space, sim, b, POLISH_FIGHTS, 62, rounds=8, min_gain=0.002, keep=pair, small=False)
+        x, sx = MLT.polish(space, sim, b, POLISH_FIGHTS, 62, rounds=24, min_gain=0.002, keep=pair, small=False)
         polished.append((sx, pair, x))
         log(f"    lead {pair[0]} + {pair[1]}: {space.split(b)} {sc:.1f} -> polished {space.split(x)} {sx:.1f} (winner {base:.1f} on {SCREEN})")
     leads = []
