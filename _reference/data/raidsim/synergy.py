@@ -206,10 +206,13 @@ def certificate(cls, entry, e, repo, st, save, a):
     for t in present:
         builds.append(removed(w, [t]))
         labels.append(f"-{t}")
-    for t in present:   # one rank less (2026-10-07): the structural model's third state; the real optimum shaves single points
+    for t in present:   # one and two ranks less (2026-10-07): the structural model's extra states; the real optimum shaves single points
         if w[t] >= 2:
             builds.append(dict(w, **{t: w[t] - 1}))
             labels.append(f"{t} -1")
+        if w[t] >= 3:
+            builds.append(dict(w, **{t: w[t] - 2}))
+            labels.append(f"{t} -2")
     pairs = []   # (a, b, kind): "add" = both missing; "swap" = a missing in, b present out; "drop" = both present out
     for i, a1 in enumerate(missing):
         for b1 in missing[i + 1:]:
@@ -253,8 +256,9 @@ def certificate(cls, entry, e, repo, st, save, a):
         singles[t] = round(score[t] / base - 1, 4)
     for t in present:
         singles[f"-{t}"] = round(score[f"-{t}"] / base - 1, 4)
-        if f"{t} -1" in score:
-            singles[f"{t} -1"] = round(score[f"{t} -1"] / base - 1, 4)
+        for k in ("-1", "-2"):
+            if f"{t} {k}" in score:
+                singles[f"{t} {k}"] = round(score[f"{t} {k}"] / base - 1, 4)
     inter = {}
     removed_pairs = {}
     for (a1, b1), kind in pair_kind.items():

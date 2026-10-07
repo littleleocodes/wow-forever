@@ -67,7 +67,7 @@ class Model:
                 self.main[next(iter(d["removed"]))] = d["gain"]
         unknown = set()
         for lab, d in diffs.items():   # 2. additions (one talent added, possibly with tier fillers and prerequisites: all part of its effect)
-            if lab.startswith("-") or " + " in lab or " - " in lab or lab.endswith(" -1"):
+            if lab.startswith("-") or " + " in lab or " - " in lab or lab.endswith((" -1", " -2")):
                 continue
             paid = [n for n in d["removed"] if n != lab]
             if any(n not in self.main for n in paid):
@@ -92,25 +92,32 @@ class Model:
                     self.pair[(a, b)] = d["gain"] - self.main[a] - self.main[b] - sum(self.main[n] for n in changed)
         self.present = {n for n in self.main if self.w.get(n)}
         self.missing = {n for n in self.main if not self.w.get(n)}
-        self.minus = {}   # present talent -> gain with one rank less (the third state: "minus one")
+        self.minus = {}    # present talent -> gain with one rank less (the state "minus")
+        self.minus2 = {}   # present talent -> gain with two ranks less (the state "minus2", talents with 3+ ranks)
         for lab, d in diffs.items():
             if lab.endswith(" -1") and len(d["removed"]) == 1 and not d["added"]:
                 self.minus[lab[:-3]] = d["gain"]
+            elif lab.endswith(" -2") and len(d["removed"]) == 1 and not d["added"]:
+                self.minus2[lab[:-3]] = d["gain"]
         if unknown:
             print(f"   model: {len(unknown)} single builds paid with a talent of unknown effect, left out", flush=True)
 
     def state_delta(self, n, state):
-        """Main effect of talent n in a state: 'in' (the winner's rank or full), 'minus' (one rank less), 'out'."""
+        """Main effect of talent n in a state: 'in' (the winner's rank or full), 'minus' (one rank less), 'minus2' (two less), 'out'."""
         if state == "in":
             return self.main[n] if n in self.missing else 0.0
         if state == "minus":
             return self.minus.get(n, self.main[n] / max(1, self.w.get(n, 1)))
+        if state == "minus2":
+            return self.minus2.get(n, 2 * self.main[n] / max(1, self.w.get(n, 1)))
         return 0.0 if n in self.missing else self.main[n]
 
     def state_pair(self, a, sa, b, sb):
-        """Interaction for two states; a 'minus' state takes the removal term scaled by one rank out of the talent's ranks."""
-        fa = 0.0 if sa == "in" else (1.0 / max(1, self.w.get(a, 1)) if sa == "minus" else 1.0)
-        fb = 0.0 if sb == "in" else (1.0 / max(1, self.w.get(b, 1)) if sb == "minus" else 1.0)
+        """Interaction for two states; a 'minus' / 'minus2' state takes the removal term scaled by the ranks out of the talent's ranks."""
+        def frac(n, s):
+            r = max(1, self.w.get(n, 1))
+            return {"in": 0.0, "minus": 1.0 / r, "minus2": 2.0 / r, "out": 1.0}[s]
+        fa, fb = frac(a, sa), frac(b, sb)
         if a in self.missing:
             fa = 1.0 if sa == "in" else 0.0
         if b in self.missing:
@@ -159,8 +166,28 @@ def tree_subsets(space, model, tree, live_t, dead_t):
     """[(points, score, chosen)] for every subset of the tree's live talents, with tier fillers from the dead talents and prerequisites."""
     out = []
     dead_room = sorted(((space.row[d], d, space.max[d]) for d in dead_t), key=lambda x: x[0])
-    # states per live talent: missing -> out / in; present with 2+ ranks -> out / minus one / in; present with 1 rank -> out / in
-    options = [("out", "in") if (t in model.missing or model.w.get(t, 0) < 2) else ("out", "minus", "in") for t in live_t]
+    # states per live talent: missing -> out / in; present -> out / (minus two) / (minus one) / in by its ranks; the combinations per
+    # tree are capped at 300,000 by dropping the minus-two state of the talents with the smallest effects
+    def opts(t, two=True):
+        r = model.w.get(t, 0)
+        if t in model.missing or r < 2:
+            return ("out", "in")
+        if r >= 3 and two:
+            return ("out", "minus2", "minus", "in")
+        return ("out", "minus", "in")
+    options = [opts(t) for t in live_t]
+    total = 1
+    for o in options:
+        total *= len(o)
+    by_effect = sorted(live_t, key=lambda n: abs(model.main.get(n, 0)))
+    while total > 300000 and by_effect:
+        t = by_effect.pop(0)
+        i = live_t.index(t)
+        if len(options[i]) == 4:
+            options[i] = opts(t, two=False)
+            total = 1
+            for o in options:
+                total *= len(o)
     for states in itertools.product(*options):
             sel = {t for t, s in zip(live_t, states) if s != "out"}
             st_of = dict(zip(live_t, states))
@@ -179,7 +206,7 @@ def tree_subsets(space, model, tree, live_t, dead_t):
                     break
             if not ok:
                 continue
-            ranks = {t: (model.rank[t] - 1 if st_of[t] == "minus" else model.rank[t]) for t in chosen}
+            ranks = {t: model.rank[t] - {"minus": 1, "minus2": 2}.get(st_of[t], 0) for t in chosen}
             ranks.update(extra)
             # tier fillers: every chosen talent needs 5*row points in lower rows; fill from dead talents by row
             need = 0
