@@ -9,6 +9,7 @@
 | `ret-raid-dps` | 17/0/34 | 494 | 23 | -2.5% | 417 | 11 | +223.1% |
 | sim preset: P4/P5 Ret | - | 491 | 22 | -3.3% | 414 | 5 | - |
 | `ret-full-buffs-raid` | 10/8/33 | 485 | 21 | -4.3% | 410 | 20 | +226.2% |
+| `retribution-open-raid` | 9/8/34 | 471 | 20 | -7.2% | 398 | 19 | +225.1% |
 | sim preset: Retribution 9/0/42 | - | 454 | 21 | -10.4% | 385 | 19 | - |
 
 ## Damage shares (`opt-ret-dps-raid-dps`, simulator actions)
@@ -35,5 +36,6 @@ Scorer = the expected-value stats model's score of the same allocation for its r
 - ret-raid-dps: `550030030001--05225331001330321`
 - sim preset: P4/P5 Ret: `550030022001--05225231001330321`
 - ret-full-buffs-raid: `52003-503-05225231001330321`
+- retribution-open-raid: `51003-503-05225331001330321`
 - sim preset: Retribution 9/0/42: `51003--55225331201331321`
 

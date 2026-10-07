@@ -830,7 +830,7 @@
         "potId": 13444,
         "conjuredId": 12662
       },
-      "builds": ["ret-raid-dps", "ret-full-buffs-raid", "opt-ret-dps-raid-dps", "retribution-ml-raid"],
+      "builds": ["ret-raid-dps", "ret-full-buffs-raid", "opt-ret-dps-raid-dps", "retribution-ml-raid", "retribution-open-raid"],
       "self_buffs": {"greater_blessing_of_might": true},
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
     },
@@ -866,80 +866,6 @@
         "foodId": 20452
       },
       "builds": ["prot-tank", "opt-prot-tank-raid-tank"]
-    },
-    "seal-of-fury-raid": {
-      "apl_opt_raid": "_reference/data/raidsim/apls/paladin/seal-of-fury-raid-raid.apl.json",
-      "apl_opt": "_reference/data/raidsim/apls/paladin/seal-of-fury-raid.apl.json",
-      "sim_class": "ClassPaladin",
-      "sim_spec": "paladin/retribution",
-      "race": "RaceHuman",
-      "distance": 5,
-      "profession1": "Engineering",
-      "gear": "_reference/data/raidsim/gear_sets/forever/paladin-retribution-default.p1opt.gear.json",
-      "apl": "_reference/data/raidsim/apls/paladin/seal-of-fury-raid.base.apl.json",
-      "spec": {
-        "retributionPaladin": {
-          "options": {
-            "classOptions": {}
-          }
-        }
-      },
-      "consumables": {
-        "flaskId": 13512,
-        "battleElixirId": 13452,
-        "spellPowerElixirId": 13454,
-        "schoolElixirId": 21546,
-        "strengthBuffId": 12451,
-        "attackPowerBuffId": 12460,
-        "zanzaId": 8410,
-        "dragonbreathChili": true,
-        "foodId": 13810,
-        "potId": 13444,
-        "conjuredId": 12662
-      },
-      "self_buffs": {"greater_blessing_of_might": true},
-      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
-      "builds": ["ret-raid-dps"],
-      "rotation_only": true,
-      "preset_names": [],
-      "rotation_note": "Seal of Fury Retribution (2026-09-28, new-builds survey): Seal of Fury, a Forever seal (35 Holy damage on every melee hit; a shield turns half of it into an absorb), kept up instead of the Seal of Command / Seal of Righteousness twist of the Retribution rotation. Kept as that untuned swap: the rotation search on this entry (2026-09-28) first added Consecration, then dropped Seal of Fury and went back to the twist within four rounds (the Retribution rotation of ret-dps, which it then matched), so a tuned rotation here would no longer be a Seal of Fury rotation."
-    },
-    "shockadin-raid": {
-      "apl_opt_raid": "_reference/data/raidsim/apls/paladin/shockadin-raid-raid.apl.json",
-      "apl_opt": "_reference/data/raidsim/apls/paladin/shockadin-raid.apl.json",
-      "sim_class": "ClassPaladin",
-      "sim_spec": "paladin/retribution",
-      "race": "RaceHuman",
-      "distance": 5,
-      "profession1": "Engineering",
-      "gear": "_reference/data/raidsim/gear_sets/forever/paladin-retribution-default.p1opt.gear.json",
-      "apl": "_reference/data/raidsim/apls/paladin/shockadin-raid.base.apl.json",
-      "spec": {
-        "retributionPaladin": {
-          "options": {
-            "classOptions": {}
-          }
-        }
-      },
-      "consumables": {
-        "flaskId": 13512,
-        "battleElixirId": 13452,
-        "spellPowerElixirId": 13454,
-        "schoolElixirId": 21546,
-        "strengthBuffId": 12451,
-        "attackPowerBuffId": 12460,
-        "zanzaId": 8410,
-        "dragonbreathChili": true,
-        "foodId": 13810,
-        "potId": 13444,
-        "conjuredId": 12662
-      },
-      "self_buffs": {"greater_blessing_of_might": true},
-      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
-      "builds": ["retribution-open-raid"],
-      "rotation_only": true,
-      "preset_names": [],
-      "rotation_note": "Shockadin (2026-09-28, new-builds survey): Holy Shock from the Holy tree on top of the Retribution rotation (21/0/30 and deeper Holy starts with Light's Vigil); none of the simulator's paladin rotations casts Holy Shock or Light's Vigil."
     }
   },
   "shaman": {

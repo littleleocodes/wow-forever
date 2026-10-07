@@ -625,7 +625,10 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   results within a process (talents, fights, seed, rotation file and time: common random numbers make repeats exact) and `polish` tries
   neighbours in random batches of 120 with first improvement, up to 24 steps (a step costs a batch; a full pass without a gain ends at a
   local optimum). A certificate costs 1-3 min per entry, the ranking 1-2 min; the family polish 40 min (16 keystones, 69 families) and the
-  search 25 min for a paladin entry. **Warlock demons** (2026-10-06): the simulator (and
+  search 25 min for a paladin entry. (10) **Duplicate entries are skipped** (2026-10-07, user decision): an entry whose raid rotation
+  (actions, notes stripped), gear, race, options, consumables and buff switches equal a finished entry's gets that entry's results
+  (`signature`, `same_as`) instead of a search; the paladin's Seal of Fury and Shockadin showcase entries, both running Retribution's
+  rotation since the 2026-10-05 and 2026-10-07 replacements, were retired the same day. **Warlock demons** (2026-10-06): the simulator (and
   upstream wowsims/classic) gives demons nothing from the warlock; Forever's guides say demons scale with the warlock's stats and gear
   (the pet pane shows the inherited values) but publish no percentages and Blizzard's warlock deep dive is unpublished, so the warlock's
   pet numbers are the class's decision-critical assumption: find the percentages (a beta tester's pet pane) and patch like

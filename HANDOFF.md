@@ -224,10 +224,16 @@ Each class folder now opens with player pages and keeps the research below:
   shaman on; post hoc for the hunter and mage leveling rotations (done 2026-10-07 morning) and still to run for the paladin's leveling
   rotations once its leveling search ends (`fl_synergy.py paladin`, then `open_builds.py paladin --write --only leveling --regen`).
   For a class searched without them: `synergy.py <class>`, `structural.py <class>`, `fl_synergy.py <class>`, then `open_builds.py <class>
-  --write --race --regen`. The replacement bar is 0.5% since 2026-10-07 (was 2%). Audit finding (2026-10-07 01:30): the paladin's `ret-dps` and `seal-of-fury-raid`
-  entries produce identical results (956.6 DPS, the same 11/8/32 winner) because Retribution's raid rotation was replaced by the Seal of
-  Fury one on 2026-10-05; the second search is a duplicate costing about 1.5 h. Merge or retire `seal-of-fury-raid` (or skip an entry
-  whose raid rotation, gear and options equal a done entry's).
+  --write --race --regen`. The replacement bar is 0.5% since 2026-10-07 (was 2%). **Duplicate entries** (2026-10-07, user decision): the
+  paladin's `seal-of-fury-raid` and `shockadin-raid` showcase entries were retired (removed from specs.json and the new-builds survey,
+  their reports deleted; the 9/8/34 Retribution build the Shockadin entry found, `retribution-open-raid`, moved to `ret-dps`):
+  Retribution's raid rotation had been replaced by the Seal of Fury one on 2026-10-05 and the Shockadin entry adopted it on 2026-10-07,
+  so all three searched the same thing at 1.5 h a pass. `family_search` now skips an entry whose raid rotation (actions, notes stripped),
+  gear, race, options, consumables and buff switches equal a finished entry's (`signature`, `same_as`: the twin's results copied) and
+  `open_builds.py` skips retired or duplicate entries. **Queue order** (user decision 2026-10-07): the warlock runs last (its demon
+  scaling is unresolved); the runner is restarted after the paladin with shaman, rogue, druid, warrior, priest, warlock (a watcher
+  does it as soon as the paladin's leveling search ends; after a PC restart: `bash _reference/data/run_open_searches.sh shaman rogue
+  druid warrior priest warlock`).
 - **After the whole open-search run:** `open_builds.py --write` for every class, re-race every entry (`run.py --all --write`, `--env
   environments --write`: several entries' gear changed on 2026-10-06), `ml_builds.py --tidy-winners --rank`, `rebuild.py --steps regen`,
   `linkcheck.py`, then the ranking artifact.

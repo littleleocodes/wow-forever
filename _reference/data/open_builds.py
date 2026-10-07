@@ -123,9 +123,13 @@ def family_text(cls, spec):
 def raid_candidates(cls, st, data, RM):
     """Per done entry: (entry, spec, dps, build or None, why). The build is made only for winners that qualify."""
     nums = RM.raid_numbers(cls)
+    specs = json.load(open(HERE / "raidsim" / "specs.json", encoding="utf-8")).get(cls) or {}
     out = []
     for entry, e in st["entries"].items():
         if not e.get("done"):
+            continue
+        if entry not in specs or e.get("same_as"):   # a retired entry (the paladin's Seal of Fury and Shockadin showcases, 2026-10-07) or a duplicate
+            print(f"  raid {entry}: {'retired' if entry not in specs else 'the same search as ' + e['same_as']}, skipped")
             continue
         w = (e.get("again") or e["first"])["winner"]
         spec = raid_spec(cls, entry, w["allocation"], data)

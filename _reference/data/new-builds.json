@@ -84,32 +84,7 @@
    }
   },
   "paladin": {
-   "targets": [
-    {
-     "spec": "seal-of-fury-raid",
-     "build": null,
-     "idea": "Seal of Fury (Holy damage on every melee hit, and its Judgement of Fury) kept up instead of the Seal of Command / Righteousness twist",
-     "spells": [
-      "Seal of Fury"
-     ],
-     "candidates": "cand-seal-of-fury-raid-*",
-     "preset": null,
-     "result": "As a straight swap the Retribution draft loses a fifth of its training-dummy DPS with Seal of Fury; the rotation search on that build dropped Seal of Fury and went back to the Seal of Command / Seal of Righteousness twist within four rounds. No Seal of Fury build.",
-     "race": "ret-raid-dps",
-     "race_note": "playing Seal of Fury"
-    },
-    {
-     "spec": "shockadin-raid",
-     "build": null,
-     "idea": "Holy Shock and Light's Vigil from the Holy tree on a Retribution rotation (a Shockadin)",
-     "spells": [
-      "Holy Shock",
-      "Light's Vigil"
-     ],
-     "candidates": "cand-shockadin-raid-*",
-     "result": "The talent search from a 21/0/30 Holy Shock start moved every point back to the Retribution draft's talents: Holy Shock never paid for its points."
-    }
-   ],
+   "targets": [],
    "notes": {
     "Holy Strike": "The new baseline Retribution strike; every paladin rotation of the simulator casts it.",
     "Swift Judgement": "Ends Judgement's cooldown (1 min); the rotation search offers it.",

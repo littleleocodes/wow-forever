@@ -184,6 +184,21 @@ def race(cls, entry, repo, flat, mine):
     return {k: {"dps": round(d, 1), "se": round(sd / math.sqrt(RACE), 2)} for k, (d, sd) in zip(rows, res)}
 
 
+def signature(cls, entry, repo):
+    """What a search of an entry depends on: its raid rotation's actions (notes stripped), gear set, race, options, consumables and
+    buff switches; two entries with the same signature search the same thing."""
+    import hashlib
+    E = R.SPECS[cls][entry]
+    try:
+        apl = json.load(open(R.apl_path(E, repo, "raid"), encoding="utf-8"))
+    except (OSError, ValueError):
+        apl = {}
+    acts = [{k: v for k, v in it.items() if k != "notes"} for it in apl.get("priorityList", [])]
+    body = [acts, apl.get("prepullActions", []), E.get("gear"), E.get("race"), E.get("spec"), E.get("consumables"), E.get("self_buffs"),
+            E.get("self_debuffs"), E.get("buffs_off"), E.get("debuffs_off"), E.get("profession1"), E.get("profession2"), E.get("distance")]
+    return hashlib.md5(json.dumps(body, sort_keys=True, default=str).encode("utf-8")).hexdigest()[:12]
+
+
 def retune(cls, entry, flat, quick=False):
     """apl_opt --tune on a build (the entry's listed builds protected). quick (2026-10-07, the certificates' re-searches): the raid setting
     only, 8 rounds, no two-edit lookahead; a full re-tune of a 16-line rotation took over three hours on a shared CPU."""
@@ -263,6 +278,13 @@ def main():
         t0 = time.time()
         e = st["entries"].setdefault(entry, {})
         here = {bid: mine_all[bid] for bid in R.SPECS[cls][entry].get("builds", []) if bid in mine_all}
+        e["signature"] = signature(cls, entry, repo)
+        twin = next((e2 for e2, v in st["entries"].items() if e2 != entry and v.get("done") and v.get("signature") == e["signature"]), None)
+        if twin:   # 2026-10-07 (user decision): an entry whose raid rotation, gear and options equal a finished entry's is a duplicate
+            log(f"== {cls} {entry}: the same raid rotation, gear and options as {twin}: its results copied, nothing searched twice")
+            e.update({k: v for k, v in st["entries"][twin].items() if k not in ("signature", "minutes", "builds")}, same_as=twin, minutes=0.0, done=True)
+            save()
+            continue
         if "first" not in e:
             sp, rec = run_search(cls, entry, repo, SEARCH, starts + MLT.preset_allocs(cls, R.SPECS[cls][entry], repo), 71)
             e["first"] = {"winner": rec["winner"], "family": sp.classify(flat_of(rec["winner"]["allocation"])), "runs_agree": rec["runs_agree"],
