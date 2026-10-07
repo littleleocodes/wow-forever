@@ -8,6 +8,8 @@
 
 ## How to play
 
+**Not in this build:** **Adrenaline Rush** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
+
 **Before the fight:** **Instant Poison** on your main hand, **Deadly Poison** on your off hand. Stealth up behind the mob.
 
 **In the fight**, top to bottom:

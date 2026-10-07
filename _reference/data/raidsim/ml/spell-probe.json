@@ -5976,5 +5976,83 @@
     "kept": false
    }
   ]
+ },
+ "shaman/elemental-dps/raid/any": {
+  "class": "shaman",
+  "spec": "any",
+  "entry": "elemental-dps",
+  "setting": "raid",
+  "date": "2026-10-07",
+  "base_dps": 525.02,
+  "abilities": [
+   {
+    "ability": "Stormstrike",
+    "talent": "Stormstrike",
+    "spell": 17364,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "29/22/0",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   }
+  ]
+ },
+ "shaman/enhancement-dps/raid/any": {
+  "class": "shaman",
+  "spec": "any",
+  "entry": "enhancement-dps",
+  "setting": "raid",
+  "date": "2026-10-07",
+  "base_dps": 786.89,
+  "abilities": [
+   {
+    "ability": "Rage of the Farseer",
+    "talent": "Rage of the Farseer",
+    "spell": 425336,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the top",
+     "gain_seed1": -0.0007,
+     "split": "19/32/0",
+     "vs_spec_build": -0.0007
+    },
+    "kept": false
+   }
+  ]
+ },
+ "shaman/stormcaller-dps/raid/any": {
+  "class": "shaman",
+  "spec": "any",
+  "entry": "stormcaller-dps",
+  "setting": "raid",
+  "date": "2026-10-07",
+  "base_dps": 524.76,
+  "abilities": [
+   {
+    "ability": "Stormstrike",
+    "talent": "Stormstrike",
+    "spell": 17364,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "before the filler",
+     "gain_seed1": 0.0002,
+     "split": "29/22/0",
+     "vs_spec_build": 0.0002
+    },
+    "kept": false
+   }
+  ]
  }
 }

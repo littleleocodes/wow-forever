@@ -10,6 +10,8 @@
 
 ## How to play
 
+**Not in this build:** **Wrack** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
+
 **Before the fight:** **Demon Skin** (later **Demon Armor**) up, **Summon Voidwalker**. Send the Voidwalker in first and let it hold the mob.
 
 **In the fight**, top to bottom:

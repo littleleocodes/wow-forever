@@ -7,10 +7,12 @@ Local search over the priority list, starting from the rotation the spec uses no
 `apl_opt`, else the simulator's): move an action up, to the top or down; drop it; show a hidden one; drop its condition or one
 part of an and/or; change a numeric threshold (mana %, seconds, stacks); insert an action taken from the class's other
 rotations in the simulator (at the top, in the middle or before the filler). Every candidate runs through the ElliotWood/Forever
-simulator with common random numbers (seed 1, `--iterations`) on the spec's main builds (our best build and the simulator's best
-preset from the last race), in the setting the spec is ranked in (the training dummy for DPS, the raid setting for tanks, where the
-score is the tank value). The best candidates are run again on seed 2 with `--confirm` iterations, and a change is kept only when
-it wins there by more than `--min-gain`. The loop stops when no change wins.
+simulator with common random numbers (seed 1, `--iterations`) on the spec's tuning builds (our best build and the simulator's best
+preset from the last race, or the `--tune` builds), in the setting the spec is ranked in (the training dummy for DPS, the raid
+setting for tanks, where the score is the tank value). The best candidates are run again on seed 2 with `--confirm` iterations on
+every build the entry lists, and a change is kept only when it wins there by more than `--min-gain` on the tuning builds and costs no
+listed build more than `--max-loss` (against the current rotation and against the pass's start). The loop stops when no change wins.
+Until 2026-10-07 every candidate ran on every listed build and the score averaged over all of them (see `search`).
 
 With --write: the rotation goes to `_reference/data/raidsim/apls/<class>/<spec>.apl.json` (changed items carry a note), the
 search record to `<class>/research/raid/raidsim/<spec>-rotation-search.json`, and specs.json gets `apl_opt` pointing at the file, so the
@@ -544,7 +546,15 @@ def search(cls, spec, a, repo, N, where=None):
     builds = main_builds(cls, spec, entry, repo, trees, setting)
     if getattr(a, "tune", None):   # the given builds first; the entry's main builds stay protected (no change may cost them 0.1% either)
         extra = tune_builds(a.tune, cls, trees)
-        builds = extra + [b for b in builds if b["talents"] not in {x["talents"] for x in extra}]
+        builds = extra + [dict(b, protect_only=True) for b in builds if b["talents"] not in {x["talents"] for x in extra}]
+    # Tuning builds and protected builds (2026-10-07): candidates are scored on the tuning builds only (the --tune builds, else our best
+    # build, the simulator's best preset and the entry's tune_builds) and run on them alone on seed 1; the protected builds (every
+    # other build the entry lists) are run only for the confirmed few on seed 2, where no change may cost any build --max-loss against
+    # the current rotation or against this pass's start. Before, every candidate ran on every build and the score averaged over all of
+    # them: a re-tune of the hunter's bm-raid rotation ran 365 candidates on 6 builds for one round that kept nothing (2 h 17 min),
+    # and a gain on the tuned build alone was diluted by the number of protected builds (6 builds: +0.6% on the winner read +0.1%).
+    tune_idx = [bi for bi, b in enumerate(builds) if not b.get("protect_only")] or list(range(len(builds)))
+    tune_labels = [(bi, bi) for bi in tune_idx]
     base_path = (repo / entry["apl"]) if getattr(a, "fresh", False) and not entry["apl"].startswith("_reference/") else R.apl_path(entry, repo, setting)
     base = json.load(open(base_path, encoding="utf-8"))
     pool = class_pool(repo, entry)
@@ -560,11 +570,15 @@ def search(cls, spec, a, repo, N, where=None):
     pool += news
     if INSERT_ONLY[0]:
         pool = news
-    print(f"== {cls} {spec}: {len(items(base))} actions from {base_path.name}, {len(pool)} pool actions ({len(cds)} cooldowns, {len(news)} spellbook spells), builds "
-          + ", ".join(b["label"] for b in builds) + f" ({setting}{', tank value' if tank else ''})", flush=True)
+    print(f"== {cls} {spec}: {len(items(base))} actions from {base_path.name}, {len(pool)} pool actions ({len(cds)} cooldowns, {len(news)} spellbook spells), tuned on "
+          + ", ".join(builds[bi]["label"] for bi in tune_idx)
+          + (("; protected: " + ", ".join(b["label"] for bi, b in enumerate(builds) if bi not in tune_idx)) if len(tune_idx) < len(builds) else "")
+          + f" ({setting}{', tank value' if tank else ''})", flush=True)
 
-    def run_set(apls, iterations, seed):
-        bl = [{"label": f"{ci}|{bi}", "talents": b["talents"], "apl_json": ap, **gear_of(b)} for ci, ap in enumerate(apls) for bi, b in enumerate(builds)]
+    def run_set(apls, iterations, seed, which=None):
+        """{"<candidate>|<build>": row} for the candidate rotations on the builds `which` (indices; default every build)."""
+        idx = list(range(len(builds))) if which is None else which
+        bl = [{"label": f"{ci}|{bi}", "talents": builds[bi]["talents"], "apl_json": ap, **gear_of(builds[bi])} for ci, ap in enumerate(apls) for bi in idx]
         return bench(entry, repo, bl, iterations, seed, setting, tag)
 
     def per_build(rows, ci):
@@ -576,10 +590,10 @@ def search(cls, spec, a, repo, N, where=None):
     log = []
     for rnd in range(1, a.rounds + 1):
         cands = neighbors(cur, pool, N)
-        rows = run_set([ap for _, ap in cands], a.iterations, 1)
+        rows = run_set([ap for _, ap in cands], a.iterations, 1, tune_idx)
         scored = []
         for ci, (d, ap) in enumerate(cands):
-            sc = score({bi: r for bi, r in per_build(rows, ci).items()}, cur1, [(bi, bi) for bi in range(len(builds))], tank)
+            sc = score({bi: r for bi, r in per_build(rows, ci).items()}, cur1, tune_labels, tank)
             if sc is not None:
                 scored.append((sc, ci, d, ap))
         scored.sort(key=lambda x: -x[0])
@@ -591,10 +605,10 @@ def search(cls, spec, a, repo, N, where=None):
             for sc_a, ci_a, d_a, ap_a in seeds_:
                 for d_b, ap_b in neighbors(ap_a, pool, N):
                     pairs.append((f"{d_a} + {d_b}", ap_b))
-            prow = run_set([ap for _, ap in pairs], a.iterations, 1)
+            prow = run_set([ap for _, ap in pairs], a.iterations, 1, tune_idx)
             ps = []
             for ci, (d, ap) in enumerate(pairs):
-                sc = score(per_build(prow, ci), cur1, [(bi, bi) for bi in range(len(builds))], tank)
+                sc = score(per_build(prow, ci), cur1, tune_labels, tank)
                 if sc is not None:
                     ps.append((sc, ci, d, ap))
             ps.sort(key=lambda x: -x[0])
@@ -609,9 +623,12 @@ def search(cls, spec, a, repo, N, where=None):
         best = None
         for k, (sc1, ci, d, ap) in enumerate(top, start=1):
             rows_k = per_build(conf, k)
-            sc2 = score(rows_k, ref2, [(bi, bi) for bi in range(len(builds))], tank)
+            sc2 = score(rows_k, ref2, tune_labels, tank)
+            # a change must not cost any of the builds (a preset's gain cannot pay for our build's loss), neither against the current
+            # rotation nor against this pass's start (so kept changes cannot wear a protected build down round by round)
             worst = min((value(rows_k.get(bi), ref2.get(bi), tank) or 0.0) for bi in range(len(builds)))
-            if worst < 1 - a.max_loss:   # a change must not cost any of the builds (a preset's gain cannot pay for our build's loss)
+            worst0 = min((value(rows_k.get(bi), start_rows[2].get(bi), tank) or 0.0) for bi in range(len(builds)))
+            if worst < 1 - a.max_loss or worst0 < 1 - a.max_loss:
                 continue
             if sc2 is not None and (best is None or sc2 > best[0]):
                 best = (sc2, sc1, d, ap)
@@ -642,7 +659,7 @@ def search(cls, spec, a, repo, N, where=None):
     return {"class": cls, "spec": spec, "date": datetime.date.today().isoformat(), "commit": R.git_commit(repo), "setting": setting, "tank": tank,
             "simulator_apl": entry["apl"],
             "start": str(base_path.relative_to(repo) if str(base_path).startswith(str(repo)) else base_path.relative_to(ROOT)),
-            "builds": [{k: v for k, v in b.items() if k != "gear_json"} for b in builds], "iterations": a.iterations, "confirm": a.confirm, "changes": log, "final": final}, base, cur
+            "builds": [{k: v for k, v in b.items() if k != "gear_json"} for b in builds], "tuned_on": [builds[bi]["label"] for bi in tune_idx], "iterations": a.iterations, "confirm": a.confirm, "changes": log, "final": final}, base, cur
 
 
 def write(cls, spec, rec, base, cur, N):

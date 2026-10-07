@@ -234,6 +234,14 @@ Each class folder now opens with player pages and keeps the research below:
   scaling is unresolved); the runner is restarted after the paladin with shaman, rogue, druid, warrior, priest, warlock (a watcher
   does it as soon as the paladin's leveling search ends; after a PC restart: `bash _reference/data/run_open_searches.sh shaman rogue
   druid warrior priest warlock`).
+  **Self-audit 2026-10-07 afternoon (hunter bm-raid certificate re-tune):** one quick re-tune round (365 candidates, 6 protected builds,
+  raid setting) took 2 h 17 min and kept nothing, because `apl_opt.search` ran every candidate on every listed build and averaged the
+  score over all of them (a gain on the tuned build alone was diluted 6x). Fixed in apl_opt.py: candidates run on the tuning builds only
+  (the `--tune` builds, else our best + the best preset + `tune_builds`); the other listed builds are `protect_only` and run only in the
+  seed-2 confirmation, where no change may cost any of them 0.1% against the current rotation or the pass's start. Smoke test on the
+  Frost mage (150 iterations, 2 rounds): 282 candidates on one build in 15 s, every build still checked and printed. The running hunter
+  chain and every later re-tune (family_search `retune`, fl/raid cross-rotation polish, ml_pipeline's rotations step) pick it up as
+  they spawn apl_opt.py afresh.
 - **After the whole open-search run:** `open_builds.py --write` for every class, re-race every entry (`run.py --all --write`, `--env
   environments --write`: several entries' gear changed on 2026-10-06), `ml_builds.py --tidy-winners --rank`, `rebuild.py --steps regen`,
   `linkcheck.py`, then the ranking artifact.

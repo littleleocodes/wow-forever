@@ -6,6 +6,8 @@
 
 ## How to play
 
+**Not in this build:** **Insect Swarm** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
+
 **Before the fight:** Moonkin Form once you have it.
 
 **In the fight**, top to bottom:

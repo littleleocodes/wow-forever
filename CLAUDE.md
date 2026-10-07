@@ -305,11 +305,17 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   `raidsim/apl_opt.py` searches each raid spec's rotation (the simulator's APL) locally: move, drop, show, insert (from the class's
   other rotations) an action; drop or loosen a condition; change a threshold; add a mana guard or a fight-time guard; cast a lower
   spell rank always or below a mana share; two-edit lookahead when no single edit wins. Candidates run with common random numbers on
-  the spec's main builds (our best and the simulator's best preset); a change is kept only when it wins on a second seed and costs no
-  tuning build more than 0.1%. Since 2026-10-02 every other build of ours the entry lists is a protected tuning build too (parse builds
-  only in the raid setting): the 2026-10-01 pass, tuned on the best builds alone, dropped Frost's Evocation line and cost the 1/13/37
+  the spec's tuning builds (our best and the simulator's best preset, the entry's `tune_builds`, or the `--tune` builds); a change is
+  kept only when it wins on a second seed and costs no listed build more than 0.1%. Since 2026-10-02 every other build of ours the entry
+  lists is protected too (parse builds only in the raid setting): the 2026-10-01 pass, tuned on the best builds alone, dropped Frost's
+  Evocation line and cost the 1/13/37
   Frost build 6.1% (repaired with Evocation below 5% mana, a recorded pass; a race of every re-tuned entry's builds under the old and
-  new rotations found no other loss above 0.5% outside a parse build's dummy number). Two rotations per DPS spec: `apl_opt` for the training dummies (own buffs, short of mana) and
+  new rotations found no other loss above 0.5% outside a parse build's dummy number). **Tuning versus protected builds** (2026-10-07,
+  self-audit of the hunter's certificate re-tune: one round of 365 candidates on 6 builds took 2 h 17 min and kept nothing): candidates
+  run on the tuning builds only and are scored there; the protected builds run only in the seed-2 confirmation of the few candidates
+  ahead, where a change may cost none of them 0.1% against the current rotation or against the pass's start (`protect_only`,
+  `tuned_on` in the record). Before, every candidate ran on every build and the score averaged over all of them, so a gain on the
+  tuned build alone was diluted by the number of protected builds (+0.6% on the winner read +0.1% with 6 builds). Two rotations per DPS spec: `apl_opt` for the training dummies (own buffs, short of mana) and
   `apl_opt_raid` for the raid settings (full buffs); tanks one (`apl_opt_raid`). `run.py apl_path(entry, repo, where)` picks the
   rotation for a setting (environments included), falling back to the simulator's; a search that finds nothing keeps the
   simulator's rotation (no copy). Records: `<class>/research/raid/raidsim/<spec>-rotation-search.json`; rotations:
