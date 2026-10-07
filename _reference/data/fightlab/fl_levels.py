@@ -42,6 +42,7 @@ import render_start_here as RSH  # noqa: E402
 import spec_modes as SM  # noqa: E402
 
 POLISH = dict(levels=(40, 50, 60), fights=150, batch=40, rounds=6, min_gain=0.003, confirm=400)
+ORDER = dict(levels=(30, 40, 50), fights=150, batch=30, rounds=6, min_gain=0.003, confirm=400)   # the order polish: level 60 is the same for every order
 log = FO.log
 
 
@@ -196,10 +197,126 @@ def ensure_order(cls, spec, r, pool, space, save):
     split = space.split(FT.flat_of(r["winner"]))
     if f"finalist {split} (own tree first order)" in r["race"] and r.get("order_label"):
         return False
-    pick_order(cls, spec, r, pool, space, save)
+    choose_order(cls, spec, r, pool, space, save)
     finish(cls, spec, r, space)
     save()
     return True
+
+
+def legal_order(space, pts, total):
+    """Every prefix of a per-point order is a legal partial build (rank caps, tier gating, prerequisites) and it spends every point."""
+    alloc = {}
+    for _, name in pts:
+        alloc[name] = alloc.get(name, 0) + 1
+        if not space.ok_partial(alloc):
+            return False
+    return len(pts) == total
+
+
+def order_moves(order, rng, n, space, upto=41):
+    """Up to n random legal orders one block move away from `order`: a talent's block, or a part of it, moved up to three blocks
+    earlier or later (the first ranks of a talent are worth more than the last: a split lets them come early and the rest late).
+    A move that leaves the first `upto` points as they are (41 points = levels 10-50, all the order polish scores) is skipped."""
+    blocks = [(s["tree"], s["talent"], s["points"]) for s in order]
+    total = sum(p for _, _, p in blocks)
+    cur_key = tuple((t, nm) for t, nm, p in blocks for _ in range(p))
+    seen = {cur_key}
+    out, tries = [], 0
+    while len(out) < n and tries < n * 30:
+        tries += 1
+        i = rng.randrange(len(blocks))
+        t, name, p = blocks[i]
+        d = rng.choice([-3, -2, -1, 1, 2, 3])
+        b = list(blocks)
+        if p == 1 or rng.random() < 0.5:   # the whole block
+            blk = b.pop(i)
+            j = i + d
+            if j < 0 or j > len(b):
+                continue
+            b.insert(j, blk)
+        else:   # part of it: the last k points move later, the first k earlier
+            k = rng.randrange(1, p)
+            b[i] = (t, name, p - k)
+            j = i + d + (1 if d > 0 else 0)
+            if j < 0 or j > len(b):
+                continue
+            b.insert(j, (t, name, k))
+        pts = [(tt, nn) for tt, nn, pp in b for _ in range(pp)]
+        key = tuple(pts)
+        if key in seen or key[:upto] == cur_key[:upto] or not legal_order(space, pts, total):
+            continue
+        seen.add(key)
+        out.append(compress(pts))
+    return out
+
+
+def order_diff(a, b):
+    """'Talent: levels -> levels' for the talents whose levels changed (the first three)."""
+    la = {}
+    for s in a:
+        la.setdefault(s["talent"], []).append(s["levels"])
+    lb = {}
+    for s in b:
+        lb.setdefault(s["talent"], []).append(s["levels"])
+    ch = [f"{n}: {'/'.join(la.get(n, ['-']))} -> {'/'.join(lb.get(n, ['-']))}" for n in lb if la.get(n) != lb.get(n)]
+    return "; ".join(ch[:3]) + (f" (+{len(ch) - 3} more)" if len(ch) > 3 else "")
+
+
+def order_polish(cls, spec, r, pool, space, save, cfg=None):
+    """Hill climb over the winner's order (block moves) on the weighted time per kill at levels 30-50; returns the order when it moved."""
+    cfg = cfg or ORDER
+    lv = list(cfg["levels"])
+    alloc = r["winner"]["allocation"]
+    cur = r["order"]
+    rng = random.Random(53)
+    steps, t0 = [], time.time()
+    log(f"== {cls} {spec}: order polish of the {r.get('order_label', 'stats model')} order (levels {', '.join(map(str, lv))}, batches of "
+        f"{cfg['batch']} block moves, {cfg['fights']} fights, kept at {cfg['min_gain']:.1%} on a second seed)")
+    for rnd in range(1, cfg["rounds"] + 1):
+        cands = order_moves(cur, rng, cfg["batch"], space)
+        if not cands:
+            log(f"    round {rnd}: no legal block move left")
+            break
+        sc = evaluate(pool, cls, spec, [{"allocation": alloc, "order": o} for o in [cur] + cands], lv, cfg["fights"], 13)
+        ref, sc = sc[0], sc[1:]
+        bi = min(range(len(cands)), key=lambda i: sc[i])
+        if sc[bi] > ref * (1 - cfg["min_gain"]):
+            log(f"    round {rnd}: {len(cands)} orders, none {cfg['min_gain']:.1%} faster at levels 30-50 (best {sc[bi] / ref - 1:+.2%})")
+            break
+        c2 = evaluate(pool, cls, spec, [{"allocation": alloc, "order": o} for o in (cur, cands[bi])], lv, cfg["confirm"], 14)
+        desc = order_diff(cur, cands[bi])
+        if c2[1] > c2[0] * (1 - cfg["min_gain"]):
+            log(f"    round {rnd}: {desc}: {sc[bi] / ref - 1:+.2%} on seed 13, {c2[1] / c2[0] - 1:+.2%} on seed 14: not confirmed")
+            continue
+        steps.append({"round": rnd, "change": desc, "seed1": round(sc[bi] / ref - 1, 4), "seed2": round(c2[1] / c2[0] - 1, 4),
+                      "seconds_30_50": round(c2[1], 2)})
+        log(f"    round {rnd}: {desc}: {steps[-1]['seed1']:+.2%} on seed 13, {steps[-1]['seed2']:+.2%} on seed 14 ({c2[0]:.2f} -> {c2[1]:.2f} s): kept")
+        cur = cands[bi]
+    r["order_polish"] = {"date": FO.TODAY, "levels": lv, "from": r.get("order_label", "stats model"), "steps": steps,
+                         "minutes": round((time.time() - t0) / 60, 1), "changed": bool(steps)}
+    save()
+    return cur if steps else None
+
+
+def choose_order(cls, spec, r, pool, space, save, before=None, cfg=None):
+    """The three orders raced (pick_order), then the order polish; a polished order becomes the page's when it is faster at 20-60."""
+    pick_order(cls, spec, r, pool, space, save, before)
+    o = order_polish(cls, spec, r, pool, space, save, cfg)
+    if not o:
+        return
+    split = space.split(FT.flat_of(r["winner"]))
+    res = FT.race(pool, cls, spec, [{"id": "x", "allocation": r["winner"]["allocation"], "order": o}], FO.RACE_FIGHTS, 3)[0]
+    table = r["race"]
+    label = r.get("order_label", "stats model")
+    if res[0] < table["open winner"]["weighted"]:
+        table[f"finalist {split} ({label} order, before the order polish)"] = table["open winner"]
+        table["open winner"] = row(res)
+        r["order"], r["order_label"] = o, f"polished from the {label} order"
+        log(f"  {cls} {spec}: the polished order is the page's ({res[0]:.2f} s per kill at 20-60, was {table[f'finalist {split} ({label} order, before the order polish)']['weighted']:.2f})")
+    else:
+        table[f"finalist {split} (polished order)"] = row(res)
+        log(f"  {cls} {spec}: the polished order did not hold at 20-60 ({res[0]:.2f} against {table['open winner']['weighted']:.2f}): the {label} order stays")
+    save()
 
 
 def values(cls, spec, r, pool):
@@ -219,16 +336,16 @@ def finish(cls, spec, r, space):
               "gain_vs_ours": round(r["race"][best]["weighted"] / r["race"]["open winner"]["weighted"] - 1, 4) if best else None})
 
 
-def after_race(cls, spec, r, model, trees, pool, space, ours, save, cfg=None):
-    """After the race's pick: the polish, then the order; a changed winner gets new values and loses its certificate. Returns whether
-    the winner changed."""
+def after_race(cls, spec, r, model, trees, pool, space, ours, save, cfg=None, ocfg=None):
+    """After the race's pick: the polish, then the order (three orders raced, the order polish); a changed winner gets new values and
+    loses its certificate. Returns whether the winner changed."""
     before = {"allocation": r["winner"]["allocation"], "order": r["order"], "split": space.split(FT.flat_of(r["winner"]))}
     moved = polish(cls, spec, r, model, pool, space, save, cfg)
     if moved:
         flat, order = moved
         r["winner"] = {"allocation": alloc_of(space, flat), "split": space.split(flat), "picked_by": "the 20-60 polish after the race"}
         r["order"] = order
-    pick_order(cls, spec, r, pool, space, save, before if moved else None)
+    choose_order(cls, spec, r, pool, space, save, before if moved else None, ocfg)
     changed = FT.flat_of(r["winner"]) != FT.flat_of(before)
     r["level_polish"]["changed"] = changed
     if changed:
@@ -248,12 +365,14 @@ def main():
     ap.add_argument("--fresh", action="store_true", help="polish again a rotation that has a level_polish record")
     ap.add_argument("--jobs", type=int, default=max(1, (os.cpu_count() or 4) - 2))
     ap.add_argument("--smoke", action="store_true", help="tiny budgets on the open-smoke copy of the record; nothing else written")
+    ap.add_argument("--orders", action="store_true", help="only the order choice and order polish of each done rotation (the build stays)")
     a = ap.parse_args()
     cls = a.cls
-    cfg = dict(POLISH)
+    cfg, ocfg = dict(POLISH), dict(ORDER)
     if a.smoke:
         FO.OUT, FO.SMOKE, FO.RACE_FIGHTS, FO.VALUE_FIGHTS = HERE / "open-smoke", True, 200, 200
         cfg.update(fights=30, batch=4, rounds=1, confirm=40)
+        ocfg.update(fights=30, batch=4, rounds=1, confirm=40)
     MLT = FO._load("ml_talents_open", ROOT / "_reference/data/raidsim/ml_talents.py")
     rp = FO.OUT / f"{cls}.json"
     st = json.load(open(rp, encoding="utf-8"))
@@ -271,11 +390,23 @@ def main():
             r = st["rotations"].get(spec)
             if not r or not r.get("done") or (a.rotation and spec not in a.rotation):
                 continue
+            if a.orders:   # the order only: the three orders raced and the order polish, on the current winner
+                if "order_polish" in r and not a.fresh:
+                    log(f"  {cls} {spec}: order polished already ({r['order_polish'].get('date')}); --fresh redoes it")
+                    continue
+                before_order = r["order"]
+                choose_order(cls, spec, r, pool, space, save, None, ocfg)
+                finish(cls, spec, r, space)
+                save()
+                changed_any |= r["order"] != before_order
+                log(f"  {cls} {spec}: open winner {r['split']} ({r['family']}), {r['race']['open winner']['weighted']:.2f} s per kill (20-60), "
+                    f"order {r.get('order_label')}" + (" [order changed]" if r["order"] != before_order else ""))
+                continue
             if "level_polish" in r and not a.fresh:
                 log(f"  {cls} {spec}: polished already ({r['level_polish'].get('date')}); --fresh redoes it")
                 continue
             ours = our_builds(cls, model, trees, data)
-            ch = after_race(cls, spec, r, model, trees, pool, space, ours, save, cfg)
+            ch = after_race(cls, spec, r, model, trees, pool, space, ours, save, cfg, ocfg)
             if ch and not FO.SMOKE:
                 SYL.certificate(cls, spec, r, model, trees, pool, a.jobs, space, MLT, ours, argparse.Namespace(no_search=False), save)
                 ensure_order(cls, spec, r, pool, space, save)   # a re-search's new winner comes with the stats model's order only
