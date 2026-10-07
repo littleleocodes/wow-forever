@@ -10,6 +10,8 @@
 
 ## How to play
 
+**Not in this build:** **Holy Shield** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
+
 **Before the fight:** **Blessing of Might** and **Devotion Aura** up, a one-handed weapon and a shield. **Seal of Fury** before each pull (it also shields you).
 
 **In the fight**, top to bottom:

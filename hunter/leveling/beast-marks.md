@@ -10,6 +10,8 @@
 
 ## How to play
 
+**Not in this build:** **Bestial Wrath**, **Intimidation** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+
 **Before the fight:** Pet out (a cat), **Aspect of the Hawk** up. Send the pet in first and let it hold the mob.
 
 **In the fight**, top to bottom:

@@ -12,6 +12,8 @@
 
 ## How to play
 
+**Not in this build:** **Counterattack**, **Deterrence**, **Strider Kick** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+
 **Before the fight:** Pet out, **Aspect of the Monkey** (**Aspect of the Beast** once you have it). **Hunter's Mark** and **Serpent Sting** from range, then walk in.
 
 **In the fight**, top to bottom:

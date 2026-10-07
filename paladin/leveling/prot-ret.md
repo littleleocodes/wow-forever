@@ -12,6 +12,8 @@
 
 ## How to play
 
+**Not in this build:** **Holy Shock** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
+
 **Before the fight:** **Blessing of Wisdom** and **Devotion Aura** up, a two-handed weapon. **Seal of Righteousness** before each pull.
 
 **In the fight**, top to bottom:

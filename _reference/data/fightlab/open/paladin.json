@@ -29676,5 +29676,55 @@
     "date": "2026-10-07"
    }
   }
+ },
+ "cross": {
+  "holy-leveling": {
+   "own": 27.48,
+   "tested": {
+    "prot-leveling": 38.2,
+    "ret-dps": 28.92
+   },
+   "best": "holy-leveling",
+   "best_seconds": 27.48,
+   "levels": {
+    "20": 19.34,
+    "30": 23.02,
+    "40": 26.75,
+    "50": 28.44,
+    "60": 32.13
+   }
+  },
+  "prot-leveling": {
+   "own": 34.87,
+   "tested": {
+    "holy-leveling": 31.58,
+    "ret-dps": 31.98
+   },
+   "best": "holy-leveling",
+   "best_seconds": 31.58,
+   "levels": {
+    "20": 22.37,
+    "30": 26.48,
+    "40": 31.0,
+    "50": 32.05,
+    "60": 37.19
+   }
+  },
+  "ret-dps": {
+   "own": 27.88,
+   "tested": {
+    "holy-leveling": 27.92,
+    "prot-leveling": 36.94
+   },
+   "best": "ret-dps",
+   "best_seconds": 27.88,
+   "levels": {
+    "20": 19.91,
+    "30": 23.19,
+    "40": 28.5,
+    "50": 28.62,
+    "60": 31.85
+   }
+  }
  }
 }

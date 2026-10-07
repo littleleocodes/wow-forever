@@ -26043,5 +26043,55 @@
     "date": "2026-10-07"
    }
   }
+ },
+ "cross": {
+  "bm-leveling": {
+   "own": 26.36,
+   "tested": {
+    "mm-raid": 26.71,
+    "melee-dps": 27.33
+   },
+   "best": "bm-leveling",
+   "best_seconds": 26.36,
+   "levels": {
+    "20": 17.75,
+    "30": 22.72,
+    "40": 27.19,
+    "50": 27.95,
+    "60": 29.17
+   }
+  },
+  "mm-raid": {
+   "own": 27.33,
+   "tested": {
+    "bm-leveling": 26.71,
+    "melee-dps": 27.31
+   },
+   "best": "bm-leveling",
+   "best_seconds": 26.71,
+   "levels": {
+    "20": 17.65,
+    "30": 22.55,
+    "40": 29.38,
+    "50": 27.79,
+    "60": 29.14
+   }
+  },
+  "melee-dps": {
+   "own": 24.02,
+   "tested": {
+    "bm-leveling": 29.44,
+    "mm-raid": 29.88
+   },
+   "best": "melee-dps",
+   "best_seconds": 24.02,
+   "levels": {
+    "20": 17.24,
+    "30": 21.19,
+    "40": 24.17,
+    "50": 25.15,
+    "60": 26.64
+   }
+  }
  }
 }

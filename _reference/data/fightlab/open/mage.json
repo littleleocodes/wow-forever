@@ -48806,5 +48806,55 @@
     "minutes": 2.3
    }
   }
+ },
+ "cross": {
+  "arcane-leveling": {
+   "own": 30.92,
+   "tested": {
+    "fire-leveling": 32.0,
+    "frost-leveling": 26.9
+   },
+   "best": "frost-leveling",
+   "best_seconds": 26.9,
+   "levels": {
+    "20": 27.95,
+    "30": 29.0,
+    "40": 32.02,
+    "50": 24.99,
+    "60": 23.69
+   }
+  },
+  "fire-leveling": {
+   "own": 33.27,
+   "tested": {
+    "arcane-leveling": 35.04,
+    "frost-leveling": 33.41
+   },
+   "best": "fire-leveling",
+   "best_seconds": 33.27,
+   "levels": {
+    "20": 30.64,
+    "30": 36.6,
+    "40": 38.07,
+    "50": 33.41,
+    "60": 29.17
+   }
+  },
+  "frost-leveling": {
+   "own": 25.75,
+   "tested": {
+    "arcane-leveling": 32.01,
+    "fire-leveling": 32.44
+   },
+   "best": "frost-leveling",
+   "best_seconds": 25.75,
+   "levels": {
+    "20": 26.77,
+    "30": 30.87,
+    "40": 28.96,
+    "50": 24.03,
+    "60": 22.14
+   }
+  }
  }
 }

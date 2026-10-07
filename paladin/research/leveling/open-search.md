@@ -42,6 +42,10 @@ Race at levels 20-60 (seconds per kill): open winner 27.48, holy-leveling 35.45.
 
 **Synergy certificate** (2026-10-07, fightlab/fl_synergy.py): 39 relevant talents, 22 the winner lacks; 639 pairs measured around 8/16/27 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Holy Shield + Sanctified Judgement +3.5% (build -20.7%), Reverence + Holy Shock +2.4% (build +2.8%), Holy Shock + Vengeance +1.8% (build -2.2%), Holy Shield + Conviction +1.8% (build -16.8%), Holy Shock + Improved Hammer of Justice +1.7% (build -0.6%), Improved Hammer of Justice + Holy Shield +1.5% (build -13.7%). No pair build within 1% of the winner. The certificate confirms the winner.
 
+Under the other leveling rotations (seconds per kill, 20-60): prot-leveling 38.2, ret-dps 28.92; its own rotation plays it best (27.48 s).
+
+Build (2026-10-07, open_builds.py): `prot-ret-open-leveling`.
+
 ## prot-leveling
 
 **Open winner 0/22/29** (Hybrid Protection/Retribution): talent values at level 60 (seconds per kill lost without the talent; the build: 34.07 s):
@@ -74,6 +78,10 @@ Race at levels 20-60 (seconds per kill): open winner 34.87, finalist 2/19/30 35.
 
 **Synergy certificate** (2026-10-07, fightlab/fl_synergy.py): 39 relevant talents, 22 the winner lacks; 649 pairs measured around 0/22/29 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Reverence + Holy Shield +4.2% (build +6.0%), Holy Shield + Vindication +3.1% (build +2.7%), Reverence + Shield Specialization +2.9% (build -0.2%), Divine Precision + Redoubt +2.1% (build -0.5%), Holy Shield + Conviction +2.0% (build -0.8%), Holy Shield + Holy Conduit +1.7% (build -4.9%). No pair build within 1% of the winner. The certificate confirms the winner.
 
+Under the other leveling rotations (seconds per kill, 20-60): holy-leveling 31.58, ret-dps 31.98; **holy-leveling plays it faster (31.58 s against 34.87 s): the page shows it with that rotation.**
+
+Build (2026-10-07, open_builds.py): the holy-leveling rotation's winner of the same spec is faster (27.48 against 34.87 s per kill).
+
 ## ret-dps
 
 **Open winner 11/8/32** (Retribution): talent values at level 60 (seconds per kill lost without the talent; the build: 31.84 s):
@@ -104,4 +112,8 @@ Race at levels 20-60 (seconds per kill): open winner 34.87, finalist 2/19/30 35.
 Race at levels 20-60 (seconds per kill): open winner 27.88, finalist 9/8/34 27.96, leveling-retribution 28.04, opt-ret-dps-solo-60 28.32, opt-ret-dps-leveling-st 28.38, opt-ret-dps-leveling-aoe 29.21.
 
 **Synergy certificate** (2026-10-07, fightlab/fl_synergy.py): 39 relevant talents, 24 the winner lacks; 675 pairs measured around 11/8/32 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Reckoning + Two-Handed Weapon Specialization +1.3% (build -0.6%), Improved Hammer of Justice + Improved Seals +1.0% (build -1.9%), Improved Hammer of Justice + Two-Handed Weapon Specialization +0.9% (build -3.2%), Improved Hammer of Justice + Champion of the Light +0.8% (build +0.3%), Improved Hammer of Justice + Vengeance +0.7% (build -0.4%), Twist of Light + Improved Seals +0.7% (build -2.5%). No pair build within 1% of the winner. The certificate confirms the winner.
+
+Under the other leveling rotations (seconds per kill, 20-60): holy-leveling 27.92, prot-leveling 36.94; its own rotation plays it best (27.88 s).
+
+Build (2026-10-07, open_builds.py): `retribution-open-leveling`.
 

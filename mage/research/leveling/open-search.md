@@ -40,6 +40,10 @@ Race at levels 20-60 (seconds per kill): open winner 30.92, finalist 28/0/23 30.
 
 **Synergy certificate** (2026-10-07, fightlab/fl_synergy.py): 51 relevant talents, 32 the winner lacks; 1137 pairs measured around 28/0/23 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Presence of Mind + Ice Barrier +3.4% (build +3.3%), Presence of Mind + Improved Frost Nova +3.4% (build +1.8%), Presence of Mind + Shatter +2.9% (build -11.0%), Presence of Mind + Arcane Power +2.9% (build +0.8%), Improved Channeling + Shatter +2.6% (build -9.3%), Arcane Power + Impact +2.6% (build +0.8%). Leads polished and raced at 20-60: Presence of Mind + Improved Frost Nova -> 29/0/22 +1.2%. **The search had missed it: searched again from the lead 29/0/22, winner now 28/1/22 at 30.92 s per kill.**
 
+Under the other leveling rotations (seconds per kill, 20-60): fire-leveling 32.0, frost-leveling 26.9; **frost-leveling plays it faster (26.9 s against 30.92 s): the page shows it with that rotation.**
+
+Build (2026-10-07, open_builds.py): `arcane-frost-open-leveling`.
+
 ## fire-leveling
 
 **Open winner 18/11/22** (Hybrid Arcane/Frost): talent values at level 60 (seconds per kill lost without the talent; the build: 29.31 s):
@@ -66,6 +70,10 @@ Race at levels 20-60 (seconds per kill): open winner 30.92, finalist 28/0/23 30.
 Race at levels 20-60 (seconds per kill): open winner 33.27, finalist 0/31/20 34.64, fire-open-leveling 34.64, fire-leveling 35.69, opt-fire-leveling-leveling-st 36.89.
 
 **Synergy certificate** (2026-10-07, fightlab/fl_synergy.py): 51 relevant talents, 33 the winner lacks; 1149 pairs measured around 0/31/20 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Arcane Meditation + Arcane Mind +3.2% (build +5.2%), Frost Channeling + Ice Barrier +3.0% (build +2.3%), Ice Barrier + Burning Soul +2.9% (build -0.2%), Arcane Mind + Burning Soul +2.5% (build +0.4%), Arcane Meditation + Ice Lance +2.5% (build -21.3%), Arcane Meditation + Burning Soul +2.5% (build +2.5%). Leads polished and raced at 20-60: Arcane Meditation + Fingers of Frost -> 18/11/22 +3.2%. **The search had missed it: searched again from the lead 18/11/22, winner now 18/11/22 at 33.27 s per kill.**
+
+Under the other leveling rotations (seconds per kill, 20-60): arcane-leveling 35.04, frost-leveling 33.41; its own rotation plays it best (33.27 s).
+
+Build (2026-10-07, open_builds.py): the arcane-leveling rotation's winner of the same spec is faster (30.92 against 33.27 s per kill).
 
 ## frost-leveling
 
@@ -97,5 +105,7 @@ Race at levels 20-60 (seconds per kill): open winner 25.75, finalist 18/1/32 25.
 
 **Synergy certificate** (2026-10-07, fightlab/fl_synergy.py): 51 relevant talents, 33 the winner lacks; 1127 pairs measured around 18/2/31 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Arctic Reach + Arcane Concentration +3.1% (build -6.1%), Winter's Chill + Arcane Concentration +2.8% (build -2.4%), Presence of Mind + Ice Barrier +2.5% (build -0.9%), Winter's Chill + Incineration +2.2% (build +0.9%), Presence of Mind + Winter's Chill +2.2% (build +1.8%), Presence of Mind + Elemental Precision +1.8% (build -3.9%). No pair build within 1% of the winner. The certificate confirms the winner.
 
-Build (2026-10-06, open_builds.py): `frost-open-leveling`.
+Under the other leveling rotations (seconds per kill, 20-60): arcane-leveling 32.01, fire-leveling 32.44; its own rotation plays it best (25.75 s).
+
+Build (2026-10-07, open_builds.py): `frost-open-leveling`.
 

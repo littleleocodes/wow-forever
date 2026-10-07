@@ -37,7 +37,9 @@ Race at levels 20-60 (seconds per kill): open winner 26.36, beast-mastery-leveli
 
 **Synergy certificate** (2026-10-07, fightlab/fl_synergy.py): 36 relevant talents, 24 the winner lacks; 561 pairs measured around 29/18/4 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Rapid Recuperation + Bestial Discipline +2.7% (build -0.8%), Lone Wolf + Bestial Discipline +2.1% (build -33.9%), Lone Wolf + Unleashed Fury +1.8% (build -34.3%), Lone Wolf + Resourcefulness +1.7% (build -30.6%), Lone Wolf + Surefooted +1.6% (build -29.7%), Intimidation + Lone Wolf +1.4% (build -32.5%). No pair build within 1% of the winner. The certificate confirms the winner.
 
-Build (2026-10-06, open_builds.py): `beast-marks-open-leveling`.
+Under the other leveling rotations (seconds per kill, 20-60): mm-raid 26.71, melee-dps 27.33; its own rotation plays it best (26.36 s).
+
+Build (2026-10-07, open_builds.py): `beast-marks-open-leveling`.
 
 ## mm-raid
 
@@ -65,7 +67,9 @@ Race at levels 20-60 (seconds per kill): open winner 27.33, leveling-beast-maste
 
 **Synergy certificate** (2026-10-07, fightlab/fl_synergy.py): 36 relevant talents, 24 the winner lacks; 561 pairs measured around 28/18/5 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Rapid Recuperation + Bestial Discipline +3.2% (build -0.4%), Lone Wolf + Unleashed Fury +2.0% (build -32.8%), Lone Wolf + Ferocity +2.0% (build -31.6%), Lone Wolf + Resourcefulness +1.9% (build -28.9%), Lone Wolf + Deadly Aspects +1.7% (build -30.9%), Intimidation + Lone Wolf +1.6% (build -31.0%). No pair build within 1% of the winner. The certificate confirms the winner.
 
-Build (2026-10-06, open_builds.py): confirms leveling-beast-mastery (+0.48% faster per kill, levels 20-60, raced together).
+Under the other leveling rotations (seconds per kill, 20-60): bm-leveling 26.71, melee-dps 27.31; **bm-leveling plays it faster (26.71 s against 27.33 s): the page shows it with that rotation.**
+
+Build (2026-10-07, open_builds.py): confirms leveling-beast-mastery (+0.48% faster per kill, levels 20-60, raced together).
 
 ## melee-dps
 
@@ -94,4 +98,8 @@ Build (2026-10-06, open_builds.py): confirms leveling-beast-mastery (+0.48% fast
 Race at levels 20-60 (seconds per kill): open winner 24.02, finalist 19/8/24 24.47, finalist 23/4/24 24.50, finalist 23/3/25 24.62, opt-melee-dps-solo-60 26.24, leveling-melee 26.31, opt-bm-leveling-leveling-aoe 29.88.
 
 **Synergy certificate** (2026-10-07, fightlab/fl_synergy.py): 36 relevant talents, 22 the winner lacks; 552 pairs measured around 19/8/24 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Lone Wolf + Unleashed Fury +5.1% (build -24.1%), Lone Wolf + Resourcefulness +5.1% (build -28.7%), Lone Wolf + Ferocity +2.4% (build -24.1%), Lone Wolf + Survivalist's Discipline +1.9% (build -29.8%), Careful Aim + Lone Wolf +1.6% (build -21.3%), Careful Aim + Survivalist's Discipline +1.5% (build -4.9%). Leads polished and raced at 20-60: Summon Hawk + Bestial Discipline -> 22/5/24 +1.7%, Bestial Discipline + Expose Prey -> 23/3/25 -0.5%, Bestial Discipline + Improved Concussive Shot -> 23/4/24 -0.2%. **The search had missed it: searched again from the lead 22/5/24, winner now 22/5/24 at 24.02 s per kill.**
+
+Under the other leveling rotations (seconds per kill, 20-60): bm-leveling 29.44, mm-raid 29.88; its own rotation plays it best (24.02 s).
+
+Build (2026-10-07, open_builds.py): `beast-survival-open-leveling`.
 
