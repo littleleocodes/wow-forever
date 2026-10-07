@@ -114,20 +114,45 @@ def add_talent(space, flat, t, ranks, cost):
     return new, added
 
 
-def with_talents(space, flat, talents, cost):
-    """The winner with the talents added (lower rows first) and the cost paid from its cheapest points; None when illegal."""
+def fill_up(space, flat, need, cost, keep):
+    """Add `need` points to the cheapest talents with room (by cost; unknown = 0), legality kept; None when impossible."""
     new = dict(flat)
-    added = 0
+    left = need
+    order = sorted((n for n in space.names if n not in keep), key=lambda n: (cost.get(n, 0.0), space.row[n], n))
+    progress = True
+    while left and progress:
+        progress = False
+        for n in order:
+            if new.get(n, 0) >= space.max[n]:
+                continue
+            trial = dict(new)
+            trial[n] = trial.get(n, 0) + 1
+            if space.ok_partial(trial):
+                new = trial
+                left -= 1
+                progress = True
+                break
+    return None if left else new
+
+
+def with_talents(space, flat, talents, cost, drop=()):
+    """A legal build: the winner without `drop`, with `talents` added (lower rows first, tier points filled, prerequisites brought
+    along), then the points over 51 paid from its cheapest points, or the points short of 51 added to its cheapest talents with room."""
+    new = {n: r for n, r in flat.items() if n not in drop}
     for t in sorted(talents, key=lambda t: (space.row[t], t)):
         r = add_talent(space, new, t, space.max[t] - new.get(t, 0), cost)
         if r is None:
             return None
-        new, k = r
-        added += k
-    paid = pay(space, new, added, cost, keep=set(talents) | set(space.protect))
-    if paid is None or not space.valid(paid):
+        new, _ = r
+    over = sum(new.values()) - 51
+    keep = set(talents) | set(space.protect)
+    if over > 0:
+        new = pay(space, new, over, cost, keep=keep)
+    elif over < 0:
+        new = fill_up(space, new, -over, cost, keep=keep | set(drop))
+    if new is None or not space.valid(new):
         return None
-    return paid
+    return new
 
 
 def tuned_near(cls, entry, flat, within=4):
@@ -158,69 +183,66 @@ def certificate(cls, entry, e, repo, st, save, a):
     missing = [n for n in relevant if not w.get(n)]
     present = [n for n in relevant if w.get(n)]
     sim = MLT.Sim(cls, entry, "raid", None, repo, f"synergy-{cls}-{entry}")
-    # singles
+    # Singles and pairs are measured UNPAID (2026-10-07): the winner with the talent(s) added at full rank or removed, no points taken
+    # back, no tier fillers. The simulator applies a talent string as given, 51 points or not, so each effect is a clean marginal and
+    # the structural model's variables stay binary; legality, tiers and the 51-point budget belong to the structural ranking and to the
+    # lead builds below. (The first version paid for every addition from the winner's cheapest points, which confounded the effects
+    # with partial ranks of the talents that paid, and skipped most removals as "illegal".)
     singles = {}
     builds, labels = [w], ["winner"]
+
+    def added(flat, names):
+        new = dict(flat)
+        for n in names:
+            new[n] = space.max[n]
+        return new
+
+    def removed(flat, names):
+        return {n: r for n, r in flat.items() if n not in names}
+
     for t in missing:
-        b = with_talents(space, w, [t], cost)
-        if b:
-            builds.append(b)
-            labels.append(t)
+        builds.append(added(w, [t]))
+        labels.append(t)
     for t in present:
-        b = {n: r for n, r in w.items() if n != t}
-        if space.ok_partial(b):   # a removal leaves fewer than 51 points: legal for the simulator (tiers and prerequisites kept)
-            builds.append(b)
-            labels.append(f"-{t}")
-    # pairs
-    pairs = []
+        builds.append(removed(w, [t]))
+        labels.append(f"-{t}")
+    for t in present:   # one rank less (2026-10-07): the structural model's third state; the real optimum shaves single points
+        if w[t] >= 2:
+            builds.append(dict(w, **{t: w[t] - 1}))
+            labels.append(f"{t} -1")
+    pairs = []   # (a, b, kind): "add" = both missing; "swap" = a missing in, b present out; "drop" = both present out
     for i, a1 in enumerate(missing):
         for b1 in missing[i + 1:]:
-            pairs.append((a1, b1))
+            pairs.append((a1, b1, "add"))
     for a1 in missing:
         for b1 in present:
             if space.tree_of[a1] != space.tree_of[b1]:
-                pairs.append((a1, b1))
-    for i, a1 in enumerate(present):   # both removed: the structural ranking needs the present x present terms too
+                pairs.append((a1, b1, "swap"))
+    for i, a1 in enumerate(present):
         for b1 in present[i + 1:]:
-            pairs.append((a1, b1))
+            pairs.append((a1, b1, "drop"))
     rng = random.Random(97)
     if len(pairs) > MAX_PAIRS:
         rng.shuffle(pairs)
         pairs = pairs[:MAX_PAIRS]
-    pair_builds = {}
-    for a1, b1 in pairs:
-        if a1 in present:   # present x present: the winner without both
-            drop2 = {n: r for n, r in w.items() if n not in (a1, b1)}
-            if space.ok_partial(drop2):
-                pair_builds[(a1, b1)] = (drop2, "removed")
-        elif b1 in present:   # missing x present: the pair's build is "add a, keep b" measured against "add a, drop b"
-            b = with_talents(space, w, [a1], cost)
-            if b is None:
-                continue
-            drop = {n: r for n, r in b.items() if n != b1}
-            if not space.ok_partial(drop):
-                continue
-            pair_builds[(a1, b1)] = (b, drop)
-        else:
-            b = with_talents(space, w, [a1, b1], cost)
-            if b is not None:
-                pair_builds[(a1, b1)] = (b, None)
-    for (a1, b1), (b, drop) in pair_builds.items():
-        if drop == "removed":
-            builds.append(b)
-            labels.append(f"-{a1} - {b1}")
-            continue
-        builds.append(b)
-        labels.append(f"{a1} + {b1}")
-        if drop is not None:
-            builds.append(drop)
+    pair_kind = {}
+    for a1, b1, kind in pairs:
+        if kind == "add":
+            builds.append(added(w, [a1, b1]))
+            labels.append(f"{a1} + {b1}")
+        elif kind == "swap":
+            builds.append(removed(added(w, [a1]), [b1]))
             labels.append(f"{a1} - {b1}")
+        else:
+            builds.append(removed(w, [a1, b1]))
+            labels.append(f"-{a1} - {b1}")
+        pair_kind[(a1, b1)] = kind
     log(f"== {cls} {entry}: synergy certificate around {space.split(w)}: {len(relevant)} relevant talents, {len(missing)} missing; "
-        f"{len(builds) - 1} builds ({len(pair_builds)} pairs) on {SCREEN} fights")
+        f"{len(builds) - 1} builds ({len(pair_kind)} pairs) on {SCREEN} fights")
     res = sim.run(builds, SCREEN, 61)
     score = {lab: r[0] for lab, r in zip(labels, res)}
     base = score["winner"]
-    # what each measured build changed against the winner (the structural model fits the effects from these, payment included)
+    # what each measured build changed against the winner (the structural model fits its effects from these)
     diffs = {}
     for lab, b in zip(labels, builds):
         if lab == "winner":
@@ -228,48 +250,47 @@ def certificate(cls, entry, e, repo, st, save, a):
         diffs[lab] = {"added": {n: b[n] - w.get(n, 0) for n in b if b[n] > w.get(n, 0)},
                       "removed": {n: w[n] - b.get(n, 0) for n in w if w[n] > b.get(n, 0)}, "gain": round(score[lab] / base - 1, 5)}
     for t in missing:
-        if t in score:
-            singles[t] = round(score[t] / base - 1, 4)
+        singles[t] = round(score[t] / base - 1, 4)
     for t in present:
-        if f"-{t}" in score:
-            singles[f"-{t}"] = round(score[f"-{t}"] / base - 1, 4)
+        singles[f"-{t}"] = round(score[f"-{t}"] / base - 1, 4)
+        if f"{t} -1" in score:
+            singles[f"{t} -1"] = round(score[f"{t} -1"] / base - 1, 4)
     inter = {}
     removed_pairs = {}
-    for (a1, b1), (b, drop) in pair_builds.items():
-        if drop == "removed":
-            lab = f"-{a1} - {b1}"
-            if lab in score:
-                ra = score.get(f"-{a1}", base) / base - 1
-                rb = score.get(f"-{b1}", base) / base - 1
-                removed_pairs[f"{a1} + {b1}"] = {"gain": round(score[lab] / base - 1, 4), "interaction": round(score[lab] / base - 1 - ra - rb, 4)}
-            continue
-        lab = f"{a1} + {b1}"
-        if lab not in score:
-            continue
-        if drop is None:
-            ia = score.get(a1, base) / base - 1
-            ib = score.get(b1, base) / base - 1
-            inter[lab] = {"gain": round(score[lab] / base - 1, 4), "interaction": round(score[lab] / base - 1 - ia - ib, 4)}
+    for (a1, b1), kind in pair_kind.items():
+        if kind == "add":
+            g = score[f"{a1} + {b1}"] / base - 1
+            inter[f"{a1} + {b1}"] = {"gain": round(g, 4), "interaction": round(g - singles[a1] - singles[b1], 4)}
+        elif kind == "swap":
+            g = score[f"{a1} - {b1}"] / base - 1
+            inter[f"{a1} + {b1}"] = {"gain": round(g, 4), "interaction": round(g - singles[a1] - singles[f"-{b1}"], 4), "kind": "swap"}
         else:
-            # does a need b: (a with b) - (a without b) against (winner) - (winner without b)
-            ia_with = score[lab] / base - 1
-            ia_without = score[f"{a1} - {b1}"] / base - 1
-            ib = score.get(f"-{b1}", base) / base - 1
-            inter[lab] = {"gain": round(ia_with, 4), "interaction": round(ia_with - ia_without + ib, 4)}
+            g = score[f"-{a1} - {b1}"] / base - 1
+            removed_pairs[f"{a1} + {b1}"] = {"gain": round(g, 4), "interaction": round(g - singles[f"-{a1}"] - singles[f"-{b1}"], 4)}
     top_pairs = sorted(inter.items(), key=lambda kv: -kv[1]["gain"])[:12]
     top_inter = sorted(inter.items(), key=lambda kv: -kv[1]["interaction"])[:12]
-    rec = {"date": TODAY, "winner": space.split(w), "relevant": len(relevant), "missing": len(missing), "pairs": len(pair_builds),
+    rec = {"date": TODAY, "winner": space.split(w), "relevant": len(relevant), "missing": len(missing), "pairs": len(pair_kind),
            "screen_fights": SCREEN, "singles": dict(sorted(singles.items(), key=lambda kv: -kv[1])[:12]),
            "top_pairs": [{"pair": k, **v} for k, v in top_pairs], "top_interactions": [{"pair": k, **v} for k, v in top_inter], "leads": [],
            # every measurement, for the structural ranking (raidsim/structural.py): gains relative to the winner's DPS
            "base": round(base, 1), "winner_allocation": {t: [[n, w[n]] for n in space.by_tree[t] if w.get(n)] for t in space.tree_names},
            "singles_all": singles, "pairs_all": inter, "removed_pairs_all": removed_pairs, "builds_all": diffs}
-    # leads: the best pair builds within the window, polished keeping the pair; a pair whose build neither gains nor shows an interaction
-    # is a filler swap around the winner (2026-10-07 audit: the paladin's five leads were Redoubt / Reverence / Eye for an Eye pairs)
-    cands = [(score[f"{a1} + {b1}"], (a1, b1), b) for (a1, b1), (b, drop) in pair_builds.items()
-             if drop != "removed" and f"{a1} + {b1}" in score and score[f"{a1} + {b1}"] >= base * (1 - LEAD_WINDOW)
-             and (score[f"{a1} + {b1}"] >= base * 1.002 or inter.get(f"{a1} + {b1}", {}).get("interaction", 0) >= 0.002)]
-    cands.sort(key=lambda x: -(x[0] + base * inter.get(f"{x[1][0]} + {x[1][1]}", {}).get("interaction", 0)))
+    # leads: the pairs that gain or interact, ranked by gain plus interaction, built LEGALLY (tier points filled, the cost paid from
+    # the winner's cheapest points, or points added where a swap leaves the build short) and screened; those within the window are
+    # polished keeping the pair (a pair whose build neither gains nor interacts is a filler swap around the winner: 2026-10-07 audit)
+    ranked = sorted(((v["gain"] + v["interaction"], k) for k, v in inter.items() if v["gain"] >= 0.002 or v["interaction"] >= 0.002), reverse=True)
+    legal = []
+    for _, lab in ranked[:TOP_LEADS * 4]:
+        a1, b1 = lab.split(" + ")
+        b = with_talents(space, w, [a1], cost, drop=[b1]) if b1 in present else with_talents(space, w, [a1, b1], cost)
+        if b is not None:
+            legal.append(((a1, b1), b))
+    cands = []
+    if legal:
+        res2 = sim.run([b for _, b in legal], SCREEN, 61)
+        cands = [(r[0], pair, b) for (pair, b), r in zip(legal, res2) if r[0] >= base * (1 - LEAD_WINDOW)]
+        cands.sort(key=lambda x: -x[0])
+        log(f"   {len(legal)} lead builds screened, {len(cands)} within {LEAD_WINDOW:.0%} of the winner")
     polished = []
     for sc, pair, b in cands[:TOP_LEADS]:
         x, sx = MLT.polish(space, sim, b, POLISH_FIGHTS, 62, rounds=24, min_gain=0.002, keep=pair, small=False)

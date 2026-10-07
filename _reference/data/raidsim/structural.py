@@ -67,7 +67,7 @@ class Model:
                 self.main[next(iter(d["removed"]))] = d["gain"]
         unknown = set()
         for lab, d in diffs.items():   # 2. additions (one talent added, possibly with tier fillers and prerequisites: all part of its effect)
-            if lab.startswith("-") or " + " in lab or " - " in lab:
+            if lab.startswith("-") or " + " in lab or " - " in lab or lab.endswith(" -1"):
                 continue
             paid = [n for n in d["removed"] if n != lab]
             if any(n not in self.main for n in paid):
@@ -92,8 +92,37 @@ class Model:
                     self.pair[(a, b)] = d["gain"] - self.main[a] - self.main[b] - sum(self.main[n] for n in changed)
         self.present = {n for n in self.main if self.w.get(n)}
         self.missing = {n for n in self.main if not self.w.get(n)}
+        self.minus = {}   # present talent -> gain with one rank less (the third state: "minus one")
+        for lab, d in diffs.items():
+            if lab.endswith(" -1") and len(d["removed"]) == 1 and not d["added"]:
+                self.minus[lab[:-3]] = d["gain"]
         if unknown:
             print(f"   model: {len(unknown)} single builds paid with a talent of unknown effect, left out", flush=True)
+
+    def state_delta(self, n, state):
+        """Main effect of talent n in a state: 'in' (the winner's rank or full), 'minus' (one rank less), 'out'."""
+        if state == "in":
+            return self.main[n] if n in self.missing else 0.0
+        if state == "minus":
+            return self.minus.get(n, self.main[n] / max(1, self.w.get(n, 1)))
+        return 0.0 if n in self.missing else self.main[n]
+
+    def state_pair(self, a, sa, b, sb):
+        """Interaction for two states; a 'minus' state takes the removal term scaled by one rank out of the talent's ranks."""
+        fa = 0.0 if sa == "in" else (1.0 / max(1, self.w.get(a, 1)) if sa == "minus" else 1.0)
+        fb = 0.0 if sb == "in" else (1.0 / max(1, self.w.get(b, 1)) if sb == "minus" else 1.0)
+        if a in self.missing:
+            fa = 1.0 if sa == "in" else 0.0
+        if b in self.missing:
+            fb = 1.0 if sb == "in" else 0.0
+        v = self.pair.get((a, b))
+        if v is None:
+            v = self.pair.get((b, a))
+            if v is None:
+                return 0.0
+            a, b, fa, fb = b, a, fb, fa
+        # the measured term applies to: both missing in | a missing in and b present out | both present out
+        return v * fa * fb
 
     def live(self):
         hot = {n for n, g in self.main.items() if abs(g) >= DEAD_MAIN}
@@ -129,10 +158,13 @@ class Model:
 def tree_subsets(space, model, tree, live_t, dead_t):
     """[(points, score, chosen)] for every subset of the tree's live talents, with tier fillers from the dead talents and prerequisites."""
     out = []
-    dead_room = sorted(((space.row[d], d, space.max[d] - (0 if d in model.missing else 0)) for d in dead_t), key=lambda x: x[0])
-    for k in range(len(live_t) + 1):
-        for chosen in itertools.combinations(live_t, k):
-            sel = set(chosen)
+    dead_room = sorted(((space.row[d], d, space.max[d]) for d in dead_t), key=lambda x: x[0])
+    # states per live talent: missing -> out / in; present with 2+ ranks -> out / minus one / in; present with 1 rank -> out / in
+    options = [("out", "in") if (t in model.missing or model.w.get(t, 0) < 2) else ("out", "minus", "in") for t in live_t]
+    for states in itertools.product(*options):
+            sel = {t for t, s in zip(live_t, states) if s != "out"}
+            st_of = dict(zip(live_t, states))
+            chosen = tuple(sel)
             # prerequisites: a chosen talent's missing prerequisite must be chosen (live) or is added (dead)
             ok = True
             extra = {}
@@ -147,7 +179,7 @@ def tree_subsets(space, model, tree, live_t, dead_t):
                     break
             if not ok:
                 continue
-            ranks = {t: model.rank[t] for t in chosen}
+            ranks = {t: (model.rank[t] - 1 if st_of[t] == "minus" else model.rank[t]) for t in chosen}
             ranks.update(extra)
             # tier fillers: every chosen talent needs 5*row points in lower rows; fill from dead talents by row
             need = 0
@@ -176,10 +208,10 @@ def tree_subsets(space, model, tree, live_t, dead_t):
             points = sum(ranks.values()) + sum(filler.values())
             if points > 51:
                 continue
-            score = sum(model.delta(t, t in sel) for t in live_t)
+            score = sum(model.state_delta(t, st_of[t]) for t in live_t)
             for a, b in itertools.combinations(live_t, 2):
-                score += model.pair_term(a, a in sel, b, b in sel)
-            out.append((points, score, dict(ranks, **filler)))
+                score += model.state_pair(a, st_of[a], b, st_of[b])
+            out.append((points, score, dict(ranks, **filler), st_of))
     return out
 
 
@@ -194,9 +226,9 @@ def rank_structures(space, model, top):
             log(f"   {t}: {len(by_tree[t])} live talents, keeping the 16 with the largest effects")
             by_tree[t] = sorted(by_tree[t], key=lambda n: -abs(model.main.get(n, 0)))[:16]
         subs = tree_subsets(space, model, t, by_tree[t], dead[t])
-        for points, score, build in subs:
+        for points, score, build, st_of in subs:
             lst = best.setdefault((t, points), [])
-            lst.append((score, build))
+            lst.append((score, build, st_of))
             lst.sort(key=lambda x: -x[0])
             del lst[KEEP_PER_TREE_POINTS:]
         log(f"   {t}: {len(subs):,} subsets scored")
@@ -209,17 +241,17 @@ def rank_structures(space, model, top):
             p3 = 51 - p1 - p2
             if p3 < 0 or (T[2], p3) not in best:
                 continue
-            for s1, b1 in best[(T[0], p1)]:
-                for s2, b2 in best[(T[1], p2)]:
-                    for s3, b3 in best[(T[2], p3)]:
+            for s1, b1, st1 in best[(T[0], p1)]:
+                for s2, b2, st2 in best[(T[1], p2)]:
+                    for s3, b3, st3 in best[(T[2], p3)]:
                         build = dict(b1, **b2, **b3)
-                        inside = {n for n in live if build.get(n)}
+                        states = dict(st1, **st2, **st3)
                         cross = 0.0
                         for a in by_tree[T[0]] + by_tree[T[1]] + by_tree[T[2]]:
                             for b in live:
-                                if b <= a or space.tree_of[a] == space.tree_of[b]:
+                                if b <= a or space.tree_of[a] == space.tree_of[b] or b not in states:
                                     continue
-                                cross += model.pair_term(a, a in inside, b, b in inside)
+                                cross += model.state_pair(a, states[a], b, states[b])
                         cands.append((s1 + s2 + s3 + cross, build))
     cands.sort(key=lambda x: -x[0])
     out, seen = [], set()
