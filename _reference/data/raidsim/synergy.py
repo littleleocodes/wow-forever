@@ -130,6 +130,22 @@ def with_talents(space, flat, talents, cost):
     return paid
 
 
+def tuned_near(cls, entry, flat, within=4):
+    """Was the entry's rotation last tuned on a build within `within` rank differences of `flat` (the tune files family_search and
+    apl_opt --tune leave under families/tune/)?"""
+    for p in sorted((FS.OUT / "tune").glob(f"{cls}-{entry}*.json")):
+        try:
+            for b in json.load(open(p, encoding="utf-8")):
+                al = b.get("allocation") or {}
+                if al and all(isinstance(v, list) for v in al.values()):
+                    al = {n: r for items in al.values() for n, r in items}
+                if al and sum(abs(flat.get(n, 0) - al.get(n, 0)) for n in set(flat) | set(al)) <= within:
+                    return True
+        except (ValueError, AttributeError, TypeError):
+            continue
+    return False
+
+
 def certificate(cls, entry, e, repo, st, save, a):
     t0 = time.time()
     space = MLT.Space(cls, "any", any_split=True)
@@ -164,13 +180,20 @@ def certificate(cls, entry, e, repo, st, save, a):
         for b1 in present:
             if space.tree_of[a1] != space.tree_of[b1]:
                 pairs.append((a1, b1))
+    for i, a1 in enumerate(present):   # both removed: the structural ranking needs the present x present terms too
+        for b1 in present[i + 1:]:
+            pairs.append((a1, b1))
     rng = random.Random(97)
     if len(pairs) > MAX_PAIRS:
         rng.shuffle(pairs)
         pairs = pairs[:MAX_PAIRS]
     pair_builds = {}
     for a1, b1 in pairs:
-        if b1 in present:   # missing x present: the pair's build is "add a, keep b" measured against "add a, drop b"
+        if a1 in present:   # present x present: the winner without both
+            drop2 = {n: r for n, r in w.items() if n not in (a1, b1)}
+            if space.valid(drop2):
+                pair_builds[(a1, b1)] = (drop2, "removed")
+        elif b1 in present:   # missing x present: the pair's build is "add a, keep b" measured against "add a, drop b"
             b = with_talents(space, w, [a1], cost)
             if b is None:
                 continue
@@ -183,6 +206,10 @@ def certificate(cls, entry, e, repo, st, save, a):
             if b is not None:
                 pair_builds[(a1, b1)] = (b, None)
     for (a1, b1), (b, drop) in pair_builds.items():
+        if drop == "removed":
+            builds.append(b)
+            labels.append(f"-{a1} - {b1}")
+            continue
         builds.append(b)
         labels.append(f"{a1} + {b1}")
         if drop is not None:
@@ -200,7 +227,15 @@ def certificate(cls, entry, e, repo, st, save, a):
         if f"-{t}" in score:
             singles[f"-{t}"] = round(score[f"-{t}"] / base - 1, 4)
     inter = {}
+    removed_pairs = {}
     for (a1, b1), (b, drop) in pair_builds.items():
+        if drop == "removed":
+            lab = f"-{a1} - {b1}"
+            if lab in score:
+                ra = score.get(f"-{a1}", base) / base - 1
+                rb = score.get(f"-{b1}", base) / base - 1
+                removed_pairs[f"{a1} + {b1}"] = {"gain": round(score[lab] / base - 1, 4), "interaction": round(score[lab] / base - 1 - ra - rb, 4)}
+            continue
         lab = f"{a1} + {b1}"
         if lab not in score:
             continue
@@ -218,7 +253,10 @@ def certificate(cls, entry, e, repo, st, save, a):
     top_inter = sorted(inter.items(), key=lambda kv: -kv[1]["interaction"])[:12]
     rec = {"date": TODAY, "winner": space.split(w), "relevant": len(relevant), "missing": len(missing), "pairs": len(pair_builds),
            "screen_fights": SCREEN, "singles": dict(sorted(singles.items(), key=lambda kv: -kv[1])[:12]),
-           "top_pairs": [{"pair": k, **v} for k, v in top_pairs], "top_interactions": [{"pair": k, **v} for k, v in top_inter], "leads": []}
+           "top_pairs": [{"pair": k, **v} for k, v in top_pairs], "top_interactions": [{"pair": k, **v} for k, v in top_inter], "leads": [],
+           # every measurement, for the structural ranking (raidsim/structural.py): gains relative to the winner's DPS
+           "base": round(base, 1), "winner_allocation": {t: [[n, w[n]] for n in space.by_tree[t] if w.get(n)] for t in space.tree_names},
+           "singles_all": singles, "pairs_all": inter, "removed_pairs_all": removed_pairs}
     # leads: the best pair builds within the window, polished keeping the pair
     cands = [(score[f"{a1} + {b1}"], (a1, b1), b) for (a1, b1), (b, _) in pair_builds.items() if f"{a1} + {b1}" in score and score[f"{a1} + {b1}"] >= base * (1 - LEAD_WINDOW)]
     cands.sort(key=lambda x: -x[0])
@@ -249,7 +287,10 @@ def certificate(cls, entry, e, repo, st, save, a):
     best = max(ahead, key=lambda ld: ld["gain"])
     lead_flat = FS.flat_of(best["allocation"])
     log(f"== {cls} {entry}: the certificate's lead {best['split']} is {best['gain']:+.1%} ahead: re-tuning the rotation on it and searching again")
-    e["rotation_changed"] = FS.retune(cls, entry, lead_flat) or e.get("rotation_changed")
+    if tuned_near(cls, entry, lead_flat):   # audit 2026-10-06: a re-tune on a build the rotation was just tuned on finds nothing
+        log(f"   rotation: already tuned on a build within 2 points of the lead; re-tune skipped")
+    else:
+        e["rotation_changed"] = FS.retune(cls, entry, lead_flat) or e.get("rotation_changed")
     mine_all = FS.ours(cls)
     here = {bid: mine_all[bid] for bid in R.SPECS[cls][entry].get("builds", []) if bid in mine_all}
     starts = [FS.flat_of(ld["allocation"]) for ld in leads] + [w] + [R.alloc_of(b) for b in mine_all.values()] + FS.known_positives(cls)

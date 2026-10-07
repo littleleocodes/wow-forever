@@ -125,14 +125,21 @@ def run_search(cls, entry, repo, settings, starts, seed, protect=None):
     space.protect = set(protect) if protect is not None else MLT.protected(cls, [entry], repo, "raid", starts)
     space.start_splits = [space.split(s) for s in starts]
     import random
-    log(f"== {cls} {entry}: family polish over every pair of {len(space.keystones())} keystones from different trees")
-    fam = MLT.family_polish(space, MLT.Sim(cls, entry, "raid", None, repo, f"family-polish-{cls}-{entry}"), random.Random(seed), log, **POLISH)
+    t0 = time.time()
+    psim = MLT.Sim(cls, entry, "raid", None, repo, f"family-polish-{cls}-{entry}")
+    log(f"== {cls} {entry}: family polish over every pair of {len(space.keystones(damage_only=True))} damage keystones from different trees")
+    fam = MLT.family_polish(space, psim, random.Random(seed), log, **POLISH)
+    log(f"   polish: {len(fam)} families, {psim.n:,} builds simulated ({psim.hits:,} cache hits), {(time.time() - t0) / 60:.1f} min")
     starts = starts + [x for _, x, _ in fam]
     log(f"== {cls} {entry}: open search (any split, full raid), {len(starts)} valid starts; kept: {', '.join(sorted(space.protect)) or 'none'}")
+    t1 = time.time()
     a = MLT.defaults(**settings, seed=seed)
     sim = MLT.Sim(cls, entry, "raid", None, repo, f"family-{cls}-{entry}")
     rec, win = MLT.optimize(space, {entry: sim}, starts, a, log)
+    log(f"   search: {sim.n:,} builds simulated ({sim.hits:,} cache hits), {(time.time() - t1) / 60:.1f} min")
     rec["families"] = [{"keystones": lab, "split": space.split(x), "family": space.classify(x), "score": round(sc, 1)} for sc, x, lab in fam[:15]]
+    rec["timing"] = {"polish_min": round((time.time() - t0) / 60 - (time.time() - t1) / 60, 1), "search_min": round((time.time() - t1) / 60, 1),
+                     "polish_builds": psim.n, "search_builds": sim.n, "cache_hits": psim.hits + sim.hits}
     return space, rec
 
 
