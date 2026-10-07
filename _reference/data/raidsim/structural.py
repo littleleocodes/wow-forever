@@ -316,6 +316,8 @@ def structural(cls, entry, e, repo, save, a):
     save()
     verdict = f"found a lead {leads[0]['split']} ({leads[0]['gain']:+.1%})" if leads else "confirms the winner"
     log(f"  {cls} {entry}: structural ranking {verdict} ({e['structural']['minutes']} min)")
+    if leads and not getattr(a, "no_search", False):
+        SY.research(cls, entry, e, repo, save, leads, leads[0], e["structural"], "structural ranking")
 
 
 def main():
@@ -325,6 +327,7 @@ def main():
     ap.add_argument("--top", type=int, default=300)
     ap.add_argument("--race", type=int, default=20)
     ap.add_argument("--fresh", action="store_true")
+    ap.add_argument("--no-search", action="store_true", help="rank, simulate and race only; no re-search on a lead")
     a = ap.parse_args()
     R.set_game("forever")
     repo = R.repo_path(argparse.Namespace(repo=None))

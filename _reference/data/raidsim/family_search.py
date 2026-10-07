@@ -298,6 +298,18 @@ def main():
             SY.__spec__.loader.exec_module(SY)
             SY.certificate(cls, entry, e, repo, st, save, argparse.Namespace(no_search=False))
             R.set_game("forever")   # the certificate's re-tune may have pointed the entry at a new rotation file
+            if (e.get("synergy") or {}).get("researched"):   # a new winner: measure around it again for the structural ranking
+                e["synergy_first"] = e["synergy"]
+                e.pop("synergy")
+                SY.certificate(cls, entry, e, repo, st, save, argparse.Namespace(no_search=True))
+            w = flat_of((e.get("again") or e["first"])["winner"]["allocation"])
+        if "structural" not in e and not SMOKE and (e.get("synergy") or {}).get("singles_all"):
+            # the exhaustive structural ranking (2026-10-07, raidsim/structural.py): a quadratic model fitted to the certificate's
+            # measurements ranks every legal structure; the model's top 300 are simulated and raced; a lead re-searches like the certificate's
+            ST = importlib.util.module_from_spec(importlib.util.spec_from_file_location("structural_fs", HERE / "structural.py"))
+            ST.__spec__.loader.exec_module(ST)
+            ST.structural(cls, entry, e, repo, save, argparse.Namespace(top=300, race=20, no_search=False))
+            R.set_game("forever")
             w = flat_of((e.get("again") or e["first"])["winner"]["allocation"])
         sp = MLT.Space(cls, "any", any_split=True)
         e.update({"family": sp.classify(w), "split": sp.split(w), "dps": e["race"]["open winner"]["dps"], "link": RSH.tf_link(cls, w),

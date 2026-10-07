@@ -314,10 +314,15 @@ def certificate(cls, entry, e, repo, st, save, a):
     if not ahead or a.no_search:
         log(f"  {cls} {entry}: certificate {'confirms the winner' if not ahead else 'found leads (no search: --no-search)'} ({rec['minutes']} min)")
         return
-    # the search missed something: re-tune the rotation on the best lead, search again seeded with the leads, redo race and values
-    best = max(ahead, key=lambda ld: ld["gain"])
+    research(cls, entry, e, repo, save, leads, max(ahead, key=lambda ld: ld["gain"]), rec, "synergy certificate")
+
+
+def research(cls, entry, e, repo, save, leads, best, rec, source):
+    """The search missed something (a lead `best` of the certificate or the structural ranking, LEAD_BAR ahead of the winner): re-tune
+    the rotation on it, run the open search again seeded with the leads, redo the entry's race and values; `rec` gets `researched`."""
+    w = FS.flat_of((e.get("again") or e["first"])["winner"]["allocation"])
     lead_flat = FS.flat_of(best["allocation"])
-    log(f"== {cls} {entry}: the certificate's lead {best['split']} is {best['gain']:+.1%} ahead: re-tuning the rotation on it and searching again")
+    log(f"== {cls} {entry}: the {source}'s lead {best['split']} is {best['gain']:+.1%} ahead: re-tuning the rotation on it and searching again")
     if tuned_near(cls, entry, lead_flat):   # audit 2026-10-06: a re-tune on a build the rotation was just tuned on finds nothing
         log(f"   rotation: already tuned on a build within 2 points of the lead; re-tune skipped")
     else:
@@ -327,7 +332,7 @@ def certificate(cls, entry, e, repo, st, save, a):
     starts = [FS.flat_of(ld["allocation"]) for ld in leads] + [w] + [R.alloc_of(b) for b in mine_all.values()] + FS.known_positives(cls)
     sp, rec2 = FS.run_search(cls, entry, repo, FS.AGAIN, starts, 73, protect=e["first"]["protected"])
     e["again"] = {"winner": rec2["winner"], "family": sp.classify(FS.flat_of(rec2["winner"]["allocation"])), "runs_agree": rec2["runs_agree"],
-                  "important_features": rec2.get("important_features"), "simulated_builds": rec2["simulated_builds"], "from": "synergy certificate"}
+                  "important_features": rec2.get("important_features"), "simulated_builds": rec2["simulated_builds"], "from": source}
     w2 = FS.flat_of(rec2["winner"]["allocation"])
     e["race"] = FS.race(cls, entry, repo, w2, here)
     e["values"], e["values_base"] = FS.values(cls, entry, repo, w2)
@@ -337,10 +342,10 @@ def certificate(cls, entry, e, repo, st, save, a):
         e["ours_best"] = best_ours
     e.update({"family": sp.classify(w2), "split": sp.split(w2), "dps": e["race"]["open winner"]["dps"], "link": RSH.tf_link(cls, w2),
               "gap_vs_ours": round(e["race"]["open winner"]["dps"] / e["race"][best_ours]["dps"] - 1, 4) if best_ours else None})
-    rec["researched"] = {"winner": e["split"], "dps": e["dps"], "lead": best["split"]}
+    rec["researched"] = {"winner": e["split"], "dps": e["dps"], "lead": best["split"], "source": source}
     e.pop("builds", None)   # open_builds.py writes the entry's build again from the new winner
     save()
-    log(f"  {cls} {entry}: after the certificate the open winner is {e['split']} ({e['family']}) {e['dps']:.1f} DPS"
+    log(f"  {cls} {entry}: after the {source} the open winner is {e['split']} ({e['family']}) {e['dps']:.1f} DPS"
         + (f", {e['gap_vs_ours']:+.1%} vs our best there ({best_ours})" if e.get("gap_vs_ours") is not None else ""))
 
 
