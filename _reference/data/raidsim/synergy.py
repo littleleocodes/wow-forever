@@ -264,9 +264,12 @@ def certificate(cls, entry, e, repo, st, save, a):
            # every measurement, for the structural ranking (raidsim/structural.py): gains relative to the winner's DPS
            "base": round(base, 1), "winner_allocation": {t: [[n, w[n]] for n in space.by_tree[t] if w.get(n)] for t in space.tree_names},
            "singles_all": singles, "pairs_all": inter, "removed_pairs_all": removed_pairs, "builds_all": diffs}
-    # leads: the best pair builds within the window, polished keeping the pair
-    cands = [(score[f"{a1} + {b1}"], (a1, b1), b) for (a1, b1), (b, _) in pair_builds.items() if f"{a1} + {b1}" in score and score[f"{a1} + {b1}"] >= base * (1 - LEAD_WINDOW)]
-    cands.sort(key=lambda x: -x[0])
+    # leads: the best pair builds within the window, polished keeping the pair; a pair whose build neither gains nor shows an interaction
+    # is a filler swap around the winner (2026-10-07 audit: the paladin's five leads were Redoubt / Reverence / Eye for an Eye pairs)
+    cands = [(score[f"{a1} + {b1}"], (a1, b1), b) for (a1, b1), (b, drop) in pair_builds.items()
+             if drop != "removed" and f"{a1} + {b1}" in score and score[f"{a1} + {b1}"] >= base * (1 - LEAD_WINDOW)
+             and (score[f"{a1} + {b1}"] >= base * 1.002 or inter.get(f"{a1} + {b1}", {}).get("interaction", 0) >= 0.002)]
+    cands.sort(key=lambda x: -(x[0] + base * inter.get(f"{x[1][0]} + {x[1][1]}", {}).get("interaction", 0)))
     polished = []
     for sc, pair, b in cands[:TOP_LEADS]:
         x, sx = MLT.polish(space, sim, b, POLISH_FIGHTS, 62, rounds=24, min_gain=0.002, keep=pair, small=False)
