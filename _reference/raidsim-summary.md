@@ -4,10 +4,10 @@
 
 | Class | Spec model | Best of our builds | DPS | Best sim preset | DPS | Our optimizer build | DPS |
 |---|---|---|---|---|---|---|---|
-| hunter | `bm-raid` | `beast-mastery-raid` | 499 | - | - | - | - |
-| hunter | `melee-dps` | `survival-raid` | 467 | - | - | - | - |
-| hunter | `mm-lonewolf-raid` | `opt-mm-lonewolf-raid-raid-dps` | 463 | Beast Mastery 35/16/0 | 381 | `opt-mm-lonewolf-raid-raid-dps` | 463 |
-| hunter | `mm-raid` | `bm-mm-raid` | 498 | Beast Mastery 35/16/0 | 468 | `opt-mm-raid-raid-dps` | 498 |
+| mage | `arcane-dps` | `arcane-blast-raid` | 571 | - | - | - | - |
+| mage | `fire-raid` | `fire-raid` | 559 | Fire DPS | 543 | `opt-fire-raid-raid-dps` | 559 |
+| mage | `frost-raid` | `frost-ml-raid` | 617 | Frost DPS | 576 | `opt-frost-raid-raid-dps` | 614 |
+| mage | `frostfire-raid` | `frostfire-open-raid` | 551 | - | - | - | - |
 
 ## DPS by environment: dummy, raid, maximum
 
@@ -15,11 +15,12 @@ The best of our builds per spec model on the boss-level training dummy with your
 
 | Class | Game | Spec model | Best build | Dummy | Dummy 60 | Raid | Maximum | Max 60 s | Parse build (max) | Best preset (max) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| hunter | Forever | `bm-raid` | `beast-mastery-ml-parse` (31/20/0) | 498 | 540 | 895 | 895 | 914 | `beast-mastery-ml-parse` 895 | Beast Mastery 35/16/0 845 |
-| hunter | Forever | `melee-dps` | `beast-survival-open-raid` (16/11/24) | 380 | 452 | 1170 | 1170 | 1195 | `survival-ml-parse` 1036 | - |
-| hunter | Forever | `mm-lonewolf-raid` | `mm-lone-wolf-raid` (5/41/5) | 457 | 492 | 957 | 957 | 980 | `marksmanship-ml-parse` 911 | Marksmanship 740 |
-| hunter | Forever | `mm-raid` | `opt-mm-raid-parse` (31/20/0) | 478 | 518 | 870 | 885 | 913 | `opt-mm-raid-parse` 885 | Marksmanship 862 |
-| hunter | Classic | `mm-raid` | `bm-mm-raid` (20/31/0) | 405 | - | 1049 | 1085 | 1146 | - | Marksmanship 1087 |
+| mage | Forever | `arcane-dps` | `arcane-blast-raid` (35/11/5) | 571 | 654 | 659 | 659 | 723 | - | Arcane DPS 650 |
+| mage | Forever | `fire-raid` | `fire-raid` (12/34/5) | 559 | 644 | 700 | 700 | 748 | `opt-fire-raid-parse` 645 | Fire 0/35/16 671 |
+| mage | Forever | `frost-raid` | `frost-ml-raid` (21/0/30) | 617 | 678 | 705 | 705 | 715 | `opt-frost-raid-parse` 673 | Frost 14/0/37 670 |
+| mage | Forever | `frostfire-raid` | `frostfire-open-raid` (3/32/16) | 551 | 644 | 683 | 683 | 745 | - | - |
+| mage | Classic | `fire-raid` | `fire-raid` (17/31/3) | 495 | - | 1003 | 1014 | 1025 | - | Frost DPS 752 |
+| mage | Classic | `frost-raid` | `frost-arcane-power-raid` (31/0/20) | 461 | - | 781 | 836 | 866 | - | Frost DPS 752 |
 
 ## Classic Era check (upstream wowsims/classic)
 
@@ -27,5 +28,6 @@ Our Classic-era community builds (`<class>/research/talents/classic-baseline/bui
 
 | Class | Spec model | Best of our builds | DPS | Best sim preset | DPS | Damage split (model sources) |
 |---|---|---|---|---|---|---|
-| hunter | `mm-raid` | `bm-mm-raid` | 1049 | Marksmanship | 1051 | auto 39%, aimed 21%, pet 20%, multi 15%, serpent 4% |
+| mage | `fire-raid` | `fire-raid` | 1003 | Frost DPS | 752 | fireball 64%, ignite 30%, scorch 6% |
+| mage | `frost-raid` | `frost-arcane-power-raid` | 781 | Frost DPS | 700 | frostbolt 100% |
 

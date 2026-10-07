@@ -1,0 +1,213 @@
+{
+ "class": "mage",
+ "spec": "frostfire-raid",
+ "build": "frostfire-open-raid",
+ "setting": "raid",
+ "date": "2026-10-06",
+ "tank": false,
+ "removal": {
+  "Combustion": 0.034752953848767754,
+  "Critical Mass": 0.07446410817777682,
+  "Elemental Precision": 0.025970708342845983,
+  "Fire Power": 0.08847461794381684,
+  "Frost Channeling": 0.009560520045250542,
+  "Heating Up": 0.07168660204101351,
+  "Ice Shards": 0.06782884191428751,
+  "Ignite": 0.1364295712085295,
+  "Improved Fire Ward": -0.0,
+  "Improved Fireball": 0.056866885619525576,
+  "Improved Frostbolt": -0.0,
+  "Improved Scorch": 0.12425914649333425,
+  "Incineration": 0.025345229776501,
+  "Master of Elements": 0.007219997799496003,
+  "Piercing Ice": 0.0267792026180117,
+  "Pyroblast": 0.07168660204101351,
+  "Wake of Fire": 0.006741678236307891
+ },
+ "free": [
+  "Improved Fire Ward",
+  "Improved Frostbolt"
+ ],
+ "kept_for_rotation": [
+  "Heating Up"
+ ],
+ "active_never_worth": [],
+ "abilities_never_cast": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Improved Fire Ward",
+   "to": "Improved Channeling",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "interrupt"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Improved Fire Ward",
+   "to": "Improved Channeling",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "interrupt"
+  },
+  {
+   "round": 3,
+   "kind": "utility",
+   "from": "Improved Frostbolt",
+   "to": "Improved Channeling",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "interrupt"
+  }
+ ],
+ "final_seed3": 0.0,
+ "start": {
+  "Arcane": [],
+  "Fire": [
+   [
+    "Wake of Fire",
+    2
+   ],
+   [
+    "Incineration",
+    3
+   ],
+   [
+    "Improved Fireball",
+    5
+   ],
+   [
+    "Ignite",
+    5
+   ],
+   [
+    "Pyroblast",
+    1
+   ],
+   [
+    "Improved Scorch",
+    3
+   ],
+   [
+    "Improved Fire Ward",
+    2
+   ],
+   [
+    "Heating Up",
+    1
+   ],
+   [
+    "Master of Elements",
+    3
+   ],
+   [
+    "Critical Mass",
+    3
+   ],
+   [
+    "Fire Power",
+    5
+   ],
+   [
+    "Combustion",
+    1
+   ]
+  ],
+  "Frost": [
+   [
+    "Improved Frostbolt",
+    1
+   ],
+   [
+    "Elemental Precision",
+    5
+   ],
+   [
+    "Ice Shards",
+    5
+   ],
+   [
+    "Piercing Ice",
+    3
+   ],
+   [
+    "Frost Channeling",
+    3
+   ]
+  ]
+ },
+ "allocation": {
+  "Arcane": [
+   [
+    "Improved Channeling",
+    3
+   ]
+  ],
+  "Fire": [
+   [
+    "Wake of Fire",
+    2
+   ],
+   [
+    "Incineration",
+    3
+   ],
+   [
+    "Improved Fireball",
+    5
+   ],
+   [
+    "Ignite",
+    5
+   ],
+   [
+    "Pyroblast",
+    1
+   ],
+   [
+    "Improved Scorch",
+    3
+   ],
+   [
+    "Heating Up",
+    1
+   ],
+   [
+    "Master of Elements",
+    3
+   ],
+   [
+    "Critical Mass",
+    3
+   ],
+   [
+    "Fire Power",
+    5
+   ],
+   [
+    "Combustion",
+    1
+   ]
+  ],
+  "Frost": [
+   [
+    "Elemental Precision",
+    5
+   ],
+   [
+    "Ice Shards",
+    5
+   ],
+   [
+    "Piercing Ice",
+    3
+   ],
+   [
+    "Frost Channeling",
+    3
+   ]
+  ]
+ }
+}

@@ -9,8 +9,8 @@
 | 1 | [Frost](frost.md) — Frost — Raid 🔬 | 705 | best |
 | 2 | [Arcane-Frost](arcane-frost.md) — Frost — Fingers of Frost / Ice Lance / Shatter | 701 | -1% |
 | 3 | [Fire](fire.md) — Fire — Ignite / Hot Streak | 700 | -1% |
-| 4 | [Arcane](arcane.md) — Arcane — Arcane Blast | 659 | -7% |
-| 5 | [Frostfire](frostfire.md) — Frostfire — Raid 🔬 | 614 | -13% |
+| 4 | [Frostfire](frostfire.md) — Frostfire — Raid 🔬 | 683 | -3% |
+| 5 | [Arcane](arcane.md) — Arcane — Arcane Blast | 659 | -7% |
 
 **By gear tier**: each damage spec with its best talents for each tier, in its own gear (DPS in a full raid; [every class](../../_reference/dps-rankings.md)):
 

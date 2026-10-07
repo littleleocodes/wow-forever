@@ -299,6 +299,9 @@
 **Optimizer — Raid Fireball spam with Scorch upkeep (parse)** (`mage/research/raid/builds/opt-fire-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
+**Frostfire — Raid (open talent search)** (`mage/research/raid/builds/frostfire-open-raid.md`)
+- [ ] An open-search Frostfire build: check it against the community's Frostfire builds at launch.
+
 ### Paladin
 
 **Holy — Raid Healer (31/0/20)** (`paladin/research/raid/builds/holy-raid-healer.md`)

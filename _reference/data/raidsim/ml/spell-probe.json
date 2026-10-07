@@ -5924,5 +5924,57 @@
     "kept": false
    }
   ]
+ },
+ "mage/arcane-dps/raid/any": {
+  "class": "mage",
+  "spec": "any",
+  "entry": "arcane-dps",
+  "setting": "raid",
+  "date": "2026-10-06",
+  "base_dps": 660.22,
+  "abilities": [
+   {
+    "ability": "Arcane Power",
+    "talent": "Arcane Power",
+    "spell": 12042,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the top",
+     "gain_seed1": 0.0,
+     "split": "31/10/10",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   }
+  ]
+ },
+ "mage/frostfire-raid/raid/any": {
+  "class": "mage",
+  "spec": "any",
+  "entry": "frostfire-raid",
+  "setting": "raid",
+  "date": "2026-10-06",
+  "base_dps": 682.95,
+  "abilities": [
+   {
+    "ability": "Combustion",
+    "talent": "Combustion",
+    "spell": 11129,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "in the middle",
+     "gain_seed1": 0.0,
+     "split": "0/34/17",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   }
+  ]
  }
 }

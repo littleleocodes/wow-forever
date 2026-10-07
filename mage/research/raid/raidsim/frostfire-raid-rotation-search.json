@@ -2,7 +2,7 @@
  "dummy": {
   "class": "mage",
   "spec": "frostfire-raid",
-  "date": "2026-10-05",
+  "date": "2026-10-06",
   "commit": "b0f0df3",
   "setting": "dummy",
   "tank": false,
@@ -162,7 +162,7 @@
      "base": 527.1026056845678,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.5089381500000001,
+     "oom_before": 1.0384363499250042,
      "oom_after": 1.0384363499250042
     },
     "frostfire-ml-raid": {
@@ -171,7 +171,7 @@
      "base": 481.81370871704894,
      "before_value": null,
      "after_value": null,
-     "oom_before": 2.347618449996502,
+     "oom_before": 1.4688217491994013,
      "oom_after": 1.4688217491994013
     },
     "frostfire-raid": {
@@ -180,18 +180,18 @@
      "base": 514.0483835816847,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
+     "oom_before": 0.0223425,
      "oom_after": 0.0223425
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 5
+  "passes": 6
  },
  "raid": {
   "class": "mage",
   "spec": "frostfire-raid",
-  "date": "2026-10-05",
+  "date": "2026-10-06",
   "commit": "b0f0df3",
   "setting": "raid",
   "tank": false,
@@ -351,7 +351,7 @@
      "base": 679.038192883027,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0001609,
+     "oom_before": 0.30458424998845,
      "oom_after": 0.30458424998845
     },
     "frostfire-ml-raid": {
@@ -360,7 +360,7 @@
      "base": 630.2064482863759,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.00068775,
+     "oom_before": 0.0515419999959,
      "oom_after": 0.0515419999959
     },
     "frostfire-raid": {
@@ -369,12 +369,12 @@
      "base": 624.6347571124755,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
+     "oom_before": 0.06123479999750001,
      "oom_after": 0.06123479999750001
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 6
+  "passes": 7
  }
 }

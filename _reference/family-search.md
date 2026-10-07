@@ -12,3 +12,5 @@ The best build found with no tree rule in each damage rotation, in a full raid, 
 | [hunter](../hunter/research/raid/family-search.md) | mm-raid | [20/31/0](https://talentsforever.com/hunter/60/51210105041-0053252001520051--4) | Marksmanship | 877.2 | +4.6% |
 | [mage](../mage/research/raid/family-search.md) | frost-raid | [21/0/30](https://talentsforever.com/mage/60/0520150030012101--055500031100030025-4) | Frost | 704.9 | +0.1% |
 | [mage](../mage/research/raid/family-search.md) | fire-raid | [12/34/5](https://talentsforever.com/mage/60/005205-23550020130133051-005-4) | Fire | 700.7 | +0.0% |
+| [mage](../mage/research/raid/family-search.md) | frostfire-raid | [0/34/17](https://talentsforever.com/mage/60/-23550000132133051-015500033-4) | Fire | 683.9 | +5.6% |
+| [mage](../mage/research/raid/family-search.md) | arcane-dps | [31/10/10](https://talentsforever.com/mage/60/053205003100111531-2305-0253-4) | Arcane | 659.8 | +0.0% |

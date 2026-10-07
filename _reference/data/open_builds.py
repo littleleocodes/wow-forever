@@ -311,13 +311,15 @@ def main():
     ap.add_argument("--write", action="store_true", help="write the builds (else print the verdicts)")
     ap.add_argument("--no-tidy", action="store_true", help="skip filler_audit.py on the written raid builds")
     ap.add_argument("--partial", action="store_true", help="use a record whose search is still running (its done entries only)")
+    ap.add_argument("--only", choices=["raid", "leveling"], help="one kind of record only (raid while the class's leveling search still runs)")
     ap.add_argument("--race", action="store_true", help="re-race the entries that got a build (raidsim/run.py --write and --env environments --write)")
     ap.add_argument("--regen", action="store_true", help="rebuild.py <class> --steps regen afterwards (the pages)")
     a = ap.parse_args()
     import render_modes as RM
     ML = _load("ml_builds_open", HERE / "raidsim" / "ml_builds.py")
     for cls in a.classes or SM.CLASSES:
-        fam, lvl = load_record(FAMILIES / f"{cls}.json"), load_record(OPEN / f"{cls}.json")
+        fam = load_record(FAMILIES / f"{cls}.json") if a.only != "leveling" else None
+        lvl = load_record(OPEN / f"{cls}.json") if a.only != "raid" else None
         use_fam = fam and (complete(fam, "entries") or (a.partial and fam.get("entries")))
         use_lvl = lvl and (complete(lvl, "rotations") or (a.partial and lvl.get("rotations")))
         if not use_fam and not use_lvl:
@@ -336,8 +338,9 @@ def main():
         if not a.write:
             continue
         new = [b for *_, b, _ in rc if b] + [b for *_, b, _ in lc if b]
-        old = [b["id"] for b in data["builds"] if is_open(b)]
-        data["builds"] = [b for b in data["builds"] if not is_open(b)] + new
+        kinds = ("-open-raid",) if a.only == "raid" else ("-open-leveling",) if a.only == "leveling" else ("-open-raid", "-open-leveling")
+        old = [b["id"] for b in data["builds"] if b["id"].endswith(kinds)]   # rewritten from the records (the other kind stays with --only)
+        data["builds"] = [b for b in data["builds"] if not b["id"].endswith(kinds)] + new
         bp.write_text(dumps(data) + "\n", encoding="utf-8")
         with locked(HERE / "raidsim" / "specs.json.lock"):   # a running search of another class may point an entry at a new rotation
             if old:
