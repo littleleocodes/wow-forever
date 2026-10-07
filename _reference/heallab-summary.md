@@ -4,4 +4,5 @@
 
 | Class | Spec model | Best build | Capacity | Effective HPS | Overheal | Healing split | Top talents (capacity lost when removed) |
 |---|---|---|---|---|---|---|---|
+| shaman | `resto-heal` | `cand-resto-r2` (0/10/41) | 0.697 | 397 | 11% | Healing Wave 73%, Healing Stream Totem 10%, Riptide 10%, Lesser Healing Wave 6% | Mindfulness +22%, Healing Way +14%, Water Shield +8%, Purification +6%, Mana Tide Totem +5% |
 

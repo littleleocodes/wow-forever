@@ -11,8 +11,8 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling (solo) | Raid (group: full raid DPS) |
 |---|---|---|
-| **Elemental** | [Elemental (optimized)](leveling/elemental.md)<br>38 s/kill | [Elemental (optimized)](raid/elemental.md)<br>518 DPS (raid) |
-| **Enhancement** | **✅ Recommended**<br>[Leveling — Enhancement](leveling/enhancement.md)<br>33 s/kill | **✅ Recommended**<br>[Enhancement — Raid](raid/enhancement.md) 🔬<br>783 DPS (raid) |
+| **Elemental** | [Elemental — Leveling](leveling/elemental.md) 🔬<br>37 s/kill | [Elemental (optimized)](raid/elemental.md)<br>518 DPS (raid) |
+| **Enhancement** | **✅ Recommended**<br>[Enhancement — Leveling](leveling/enhancement.md) 🔬<br>33 s/kill | **✅ Recommended**<br>[Enhancement — Raid](raid/enhancement.md) 🔬<br>783 DPS (raid) |
 | **Restoration** | [Restoration — Leveling into the raid build](leveling/restoration.md) 🔬<br>43 s/kill | [Restoration — Raid Healer](raid/restoration.md)<br>healer |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
@@ -35,9 +35,9 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
-| 1 | [Enhancement](leveling/enhancement.md) — Leveling — Enhancement | 33 | fastest |
-| 2 | [Elemental](leveling/elemental.md) — Elemental (optimized) | 38 | +15% |
-| 3 | [Restoration](leveling/restoration.md) — Restoration — Leveling into the raid build 🔬 | 43 | +30% |
+| 1 | [Enhancement](leveling/enhancement.md) — Enhancement — Leveling 🔬 | 33 | fastest |
+| 2 | [Elemental](leveling/elemental.md) — Elemental — Leveling 🔬 | 37 | +14% |
+| 3 | [Restoration](leveling/restoration.md) — Restoration — Leveling into the raid build 🔬 | 43 | +32% |
 
 ### Raid (group)
 
@@ -79,7 +79,7 @@ The research behind the pages above: every build, report and simulation.
 
 | Folder | What is in it | Hand drafts |
 |---|---|---|
-| [research/leveling/](research/leveling/README.md) | Leveling and solo builds, the leveling guide, rotation and respec plan, fight-lab reports (6 builds) | [leveling-enhancement](research/leveling/builds/leveling-enhancement.md), [restoration-leveling](research/leveling/builds/restoration-leveling.md) |
+| [research/leveling/](research/leveling/README.md) | Leveling and solo builds, the leveling guide, rotation and respec plan, fight-lab reports (8 builds) | [leveling-enhancement](research/leveling/builds/leveling-enhancement.md), [restoration-leveling](research/leveling/builds/restoration-leveling.md), [elemental-open-leveling](research/leveling/builds/elemental-open-leveling.md), [enhancement-open-leveling](research/leveling/builds/enhancement-open-leveling.md) |
 | [research/raid/](research/raid/README.md) | Raid DPS, tank and healer builds, training-dummy and raid-sim rankings, rotation, gear, consumables (11 builds) | [resto-raid-healer](research/raid/builds/resto-raid-healer.md), [elemental-raid-dps](research/raid/builds/elemental-raid-dps.md), [enhancement-raid-dps](research/raid/builds/enhancement-raid-dps.md), [elemental-raid](research/raid/builds/elemental-raid.md), [enhancement-ml-raid](research/raid/builds/enhancement-ml-raid.md), [elemental-enhancement-ml-raid](research/raid/builds/elemental-enhancement-ml-raid.md) |
 | [research/pvp/](research/pvp/README.md) | PvP builds (no rotation: PvP play depends on the fight) (4 builds) | [pvp-elemental-ns](research/pvp/builds/pvp-elemental-ns.md), [elemental-pvp](research/pvp/builds/elemental-pvp.md), [enhancement-pvp](research/pvp/builds/enhancement-pvp.md), [restoration-pvp](research/pvp/builds/restoration-pvp.md) |
 | [research/spells/](research/spells/README.md) | Spell ranks and numbers from the beta client | |

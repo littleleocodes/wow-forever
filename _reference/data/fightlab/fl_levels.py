@@ -189,13 +189,14 @@ def pick_order(cls, spec, r, pool, space, save, before=None):
         log(f"  {cls} {spec}: order {labels[best_id][0]} ({table[best_id]['weighted']:.2f} s per kill at 20-60; {others})")
     table["open winner"] = table.pop(best_id)
     r["race"] = table
+    r["orders_raced"] = split   # ensure_order's test: the orders of this build were raced (the chosen one's row is "open winner")
     save()
 
 
 def ensure_order(cls, spec, r, pool, space, save):
     """After a certificate re-search put a new winner in with the stats model's order (fl_synergy.research), race its orders too."""
     split = space.split(FT.flat_of(r["winner"]))
-    if f"finalist {split} (own tree first order)" in r["race"] and r.get("order_label"):
+    if r.get("orders_raced") == split and r.get("order_label"):   # (the chosen order's own row moves under "open winner": a key test failed)
         return False
     choose_order(cls, spec, r, pool, space, save)
     finish(cls, spec, r, space)

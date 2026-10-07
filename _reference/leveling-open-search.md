@@ -12,6 +12,8 @@ The fastest leveling build found with no tree rule in each leveling rotation (fi
 | [hunter](../hunter/research/leveling/open-search.md) | mm-raid | [28/18/5](https://talentsforever.com/hunter/60/522020050511023-005355-5-4) | Hybrid Beast Mastery/Marksmanship | 27.33 | +0.5% |
 | [paladin](../paladin/research/leveling/open-search.md) | holy-leveling | [8/16/27](https://talentsforever.com/paladin/60/50003-5231110021-332052310013301-4) | Hybrid Protection/Retribution | 27.48 | +29.0% |
 | [paladin](../paladin/research/leveling/open-search.md) | ret-dps | [11/8/32](https://talentsforever.com/paladin/60/50103101-503-1522513100133032-4) | Retribution | 27.88 | +0.6% |
-| [mage](../mage/research/leveling/open-search.md) | arcane-leveling | [28/1/22](https://talentsforever.com/mage/60/05010501310031053-01-20350030310003002-4) | Hybrid Arcane/Frost | 30.92 | +5.6% |
-| [mage](../mage/research/leveling/open-search.md) | fire-leveling | [18/11/22](https://talentsforever.com/mage/60/2350050000003-0335-00550201310003002-4) | Hybrid Arcane/Frost | 33.27 | +4.1% |
+| [mage](../mage/research/leveling/open-search.md) | arcane-leveling | [28/1/22](https://talentsforever.com/mage/60/23210501310011053-01-20350030310003002-4) | Hybrid Arcane/Frost | 30.73 | +6.3% |
+| [mage](../mage/research/leveling/open-search.md) | fire-leveling | [18/7/26](https://talentsforever.com/mage/60/2350050000003-0331-005502313100030021-4) | Hybrid Arcane/Frost | 31.37 | +10.4% |
+| [shaman](../shaman/research/leveling/open-search.md) | enhancement-dps | [9/32/10](https://talentsforever.com/shaman/60/510021-050030331005112251-05005-4) | Enhancement | 32.72 | +2.6% |
 | [paladin](../paladin/research/leveling/open-search.md) | prot-leveling | [0/22/29](https://talentsforever.com/paladin/60/-15303103013002-2522513010103031-4) | Hybrid Protection/Retribution | 34.87 | +2.2% |
+| [shaman](../shaman/research/leveling/open-search.md) | elemental-dps | [31/11/9](https://talentsforever.com/shaman/60/5302311303103051-050002301-05301-4) | Elemental | 37.28 | +2.0% |

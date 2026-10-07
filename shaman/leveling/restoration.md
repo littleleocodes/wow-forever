@@ -6,7 +6,7 @@
 
 > 🔬 These are your **raid talents** ([resto-raid-healer](../raid/restoration.md)), taken in the order that levels fastest: the fight lab raced three orders to them (stats model's order: 43 s per kill; own tree last: 44 s per kill; own tree first: 44 s per kill). A model of the beta, to check at launch.
 
-**Leveling as Restoration or as Enhancement?** This build takes 43 s per kill (level-weighted, 20-60), [Enhancement](../leveling/enhancement.md) 33 s: Restoration is 30% slower. Your first Restoration point comes at level 10. Level this way if you want to heal dungeons later on the way; otherwise level as Enhancement and switch at 60 (a respec at a class trainer).
+**Leveling as Restoration or as Enhancement?** This build takes 43 s per kill (level-weighted, 20-60), [Enhancement](../leveling/enhancement.md) 33 s: Restoration is 32% slower. Your first Restoration point comes at level 10. Level this way if you want to heal dungeons later on the way; otherwise level as Enhancement and switch at 60 (a respec at a class trainer).
 
 ## How to play
 

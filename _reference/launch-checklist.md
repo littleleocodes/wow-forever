@@ -575,6 +575,12 @@
 **Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (parse)** (`shaman/research/raid/builds/opt-enhancement-dps-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
+**Elemental — Leveling (open talent search)** (`shaman/research/leveling/builds/elemental-open-leveling.md`)
+- [ ] An open-search Elemental leveling build: check it while leveling at launch.
+
+**Enhancement — Leveling (open talent search)** (`shaman/research/leveling/builds/enhancement-open-leveling.md`)
+- [ ] An open-search Enhancement leveling build: check it while leveling at launch.
+
 ### Warlock
 
 **DS/Ruin — Demonic Sacrifice + Ruin (simulator winner adopted 2026-09-26)** (`warlock/research/raid/builds/ds-ruin-raid.md`)

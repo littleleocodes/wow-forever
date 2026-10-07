@@ -7506,9 +7506,9 @@
   }
  },
  "last_run": {
-  "date": "2026-10-07T16:05:39",
+  "date": "2026-10-07T16:46:44",
   "classes": [
-   "hunter"
+   "shaman"
   ],
   "steps": [
    "regen"
@@ -7519,62 +7519,63 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 79,
+  "seconds": 245,
   "refresh": null,
   "regen_log": [
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py hunter",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py shaman",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
-     "formatted F:\\wow-forever\\hunter\\research\\talents\\forever\\proposed-builds.json",
-     "hunter: README section + leveling-beast-mastery note written"
+     "formatted F:\\wow-forever\\shaman\\research\\talents\\forever\\proposed-builds.json",
+     "shaman: README section + leveling-enhancement note written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py hunter",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py shaman",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "hunter: raid sim section written (4 specs)",
+     "shaman: raid sim section written (3 specs)",
      "wrote _reference\\raidsim-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py hunter",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py shaman",
     "rc": 0,
     "seconds": 0,
     "tail": [
+     "shaman: healer lab section written (1 specs)",
      "wrote _reference\\heallab-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py hunter",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py shaman",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "hunter: leveling/guide.md written"
+     "shaman: leveling/guide.md written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py hunter",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py shaman",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
-     "hunter: raid gear and consumables written"
+     "shaman: raid gear and consumables written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py hunter",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py shaman",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
-     "hunter: raid and leveling rotations, DPS ranking written"
+     "shaman: raid and leveling rotations, DPS ranking written"
     ],
     "stderr": []
    },
@@ -7601,14 +7602,14 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_builds.py",
     "rc": 0,
-    "seconds": 2,
+    "seconds": 4,
     "tail": [
      "rogue/classic-baseline: 5 build pages + README.md",
      "rogue: 22 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "priest/classic-baseline: 4 build pages + README.md",
      "priest: 15 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "shaman/classic-baseline: 5 build pages + README.md",
-     "shaman: 21 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
+     "shaman: 23 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "mage/classic-baseline: 7 build pages + README.md",
      "mage: 26 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "warlock/classic-baseline: 4 build pages + README.md",
@@ -7619,7 +7620,7 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py hunter",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py shaman",
     "rc": 0,
     "seconds": 1,
     "tail": [
@@ -7647,15 +7648,15 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py hunter --write",
+    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py shaman --write",
     "rc": 0,
-    "seconds": 69,
+    "seconds": 232,
     "tail": [
-     "| bm-leveling -> level-20 build (0/11/0) | +0.2% | +1.9% | +6.0% | +8.3% | +11.0% | +14.2% | +16.1% | +19.3% | +20.7% | +22.4% | +27.6% |",
-     "| bm-leveling -> level-30 build (21/0/0) | +0.4% | +2.2% | +3.6% | +10.7% | +12.2% | +12.9% | +17.4% | +19.4% | +20.5% | +24.7% | +26.2% |",
-     "| bm-leveling -> level-40 build (16/15/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.5% | +16.0% | +18.0% | +19.2% | +23.4% | +24.7% | +27.6% |",
-     "| bm-leveling -> level-50 build (16/25/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.5% | +16.0% | +18.0% | +19.2% | +23.4% | +24.7% | +27.6% |",
-     "| bm-leveling -> level-60 build (19/32/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.9% | +14.4% | +17.7% | +19.6% | +23.0% | +24.8% | +27.6% |",
+     "| elemental-dps -> level-20 build (11/0/0) | +1.5% | +7.0% | +13.2% | +15.8% | +17.0% | +19.2% | +24.9% | +28.4% | +32.2% | +35.9% | +36.8% |",
+     "| elemental-dps -> level-30 build (14/7/0) | +1.5% | +7.0% | +13.2% | +15.4% | +19.2% | +20.8% | +22.4% | +28.0% | +32.2% | +35.9% | +36.8% |",
+     "| elemental-dps -> level-40 build (17/14/0) | +1.5% | +7.0% | +13.2% | +15.8% | +17.2% | +21.1% | +25.3% | +26.5% | +30.0% | +35.9% | +36.9% |",
+     "| elemental-dps -> level-50 build (30/11/0) | +1.5% | +7.0% | +13.2% | +15.8% | +17.2% | +21.1% | +25.0% | +26.6% | +33.1% | +35.9% | +36.8% |",
+     "| elemental-dps -> level-60 build (31/12/8) | +1.5% | +7.0% | +13.2% | +15.8% | +17.2% | +21.1% | +25.1% | +26.7% | +32.1% | +35.6% | +37.9% |",
      "",
      "## Reading it",
      "",
@@ -7723,7 +7724,7 @@
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote _reference\\launch-checklist.md (272 per-build questions)"
+     "wrote _reference\\launch-checklist.md (274 per-build questions)"
     ],
     "stderr": []
    },
@@ -7739,7 +7740,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\summary.py --write",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
      "wrote _reference\\fightlab-summary.md"
     ],
