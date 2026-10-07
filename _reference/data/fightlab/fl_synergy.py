@@ -240,6 +240,35 @@ def research(cls, spec, r, model, trees, pool, jobs, space, MLT, ours, leads, be
         + (f", {r['gain_vs_ours']:+.1%} faster than {best_ours}" if best_ours else ""))
 
 
+def cross_rotations(cls, st, pool, save):
+    """Every done rotation's winner raced at levels 20-60 under each sibling leveling rotation of the class (2026-10-07: the paladin's
+    Holy rotation produced a Prot-Ret split that cannot cast Holy Shock; the fight lab had played it as a melee build, and the page would
+    have shown it the Holy steps). A sibling 1% faster becomes the rotation the page shows for that build (`cross[spec].best`)."""
+    rots = FO.rotations(cls)
+    done = st.setdefault("cross", {})
+    for spec, r in st["rotations"].items():
+        if not r.get("done") or spec in done:
+            continue
+        b = {"id": "winner", "allocation": r["winner"]["allocation"], "order": r["order"]}
+        base = r["race"]["open winner"]["weighted"]
+        rec = {"own": round(base, 2), "tested": {}, "best": spec, "best_seconds": round(base, 2), "levels": r["race"]["open winner"]["levels"]}
+        for sib in rots:
+            if sib == spec:
+                continue
+            try:
+                t, per = FT.race(pool, cls, sib, [b], FO.RACE_FIGHTS, 3)[0]
+            except Exception as ex:   # noqa: BLE001 - a rotation that cannot play this build at all
+                rec["tested"][sib] = f"failed: {type(ex).__name__}"
+                continue
+            rec["tested"][sib] = round(t, 2)
+            if t < rec["best_seconds"] * (1 - 0.01):
+                rec.update(best=sib, best_seconds=round(t, 2), levels={str(L): round(v, 2) for L, v in per.items()})
+        done[spec] = rec
+        save()
+        log(f"  cross-rotations {spec}: own {base:.2f} s; " + ", ".join(f"{k} {v}" for k, v in rec["tested"].items())
+            + (f" -> the page shows it as {rec['best']} ({rec['best_seconds']:.2f} s)" if rec["best"] != spec else "; its own rotation plays it best"))
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("cls")
@@ -276,6 +305,8 @@ def main():
                     except Exception:   # noqa: BLE001
                         ours.pop(bid)
             certificate(cls, spec, r, model, trees, pool, a.jobs, space, MLT, ours, a, save)
+        if not a.rotation:
+            cross_rotations(cls, st, pool, save)
     FO.write_class(cls, st)
     FO.write_page()
     log("== done")

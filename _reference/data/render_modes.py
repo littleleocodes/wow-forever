@@ -191,12 +191,17 @@ def leveling_numbers(cls):
             bid = f"{SM.slug(tree)}-leveling"
             out[bid] = {int(Lv): v for Lv, v in rec["levels"].items()}
             LEVEL_MODEL[(cls, bid)] = rec["spec"]
-    for spec, rec in open_leveling(cls).items():   # open-search builds (open_builds.py): the 20-60 race's numbers (seed 3)
+    whole = open_leveling(cls, whole=True)
+    for spec, rec in (whole.get("rotations") or {}).items():   # open-search builds (open_builds.py): the 20-60 race's numbers (seed 3)
         lv = ((rec.get("race") or {}).get("open winner") or {}).get("levels") or {}
+        model = spec
+        cr = (whole.get("cross") or {}).get(spec)   # fl_synergy.cross_rotations: a sibling rotation that plays the winner faster
+        if cr and cr.get("best") and cr["best"] != spec and cr.get("levels"):
+            model, lv = cr["best"], cr["levels"]
         for bid in (rec.get("builds") or {}).get("written") or []:
             if lv:
                 out[bid] = {int(Lv): v for Lv, v in lv.items()}
-                LEVEL_MODEL[(cls, bid)] = spec
+                LEVEL_MODEL[(cls, bid)] = model
     for bid, info in (GEN.get(cls) or {}).items():
         if info.get("levels"):
             out.setdefault(bid, {int(L): v for L, v in info["levels"].items()})
@@ -205,13 +210,36 @@ def leveling_numbers(cls):
     return out
 
 
-def open_leveling(cls):
-    """The open leveling search's record (fightlab/open/<class>.json): {rotation: record}; {} while a search is writing it."""
+def open_leveling(cls, whole=False):
+    """The open leveling search's record (fightlab/open/<class>.json): {rotation: record} (whole=True: the record itself); {} while a
+    search is writing it."""
     f = HERE / "fightlab" / "open" / f"{cls}.json"
     try:
-        return json.load(open(f, encoding="utf-8")).get("rotations") or {} if f.exists() else {}
+        st = json.load(open(f, encoding="utf-8")) if f.exists() else {}
     except ValueError:
         return {}
+    return st if whole else (st.get("rotations") or {})
+
+
+_TALENT_SPELLS = {}
+
+
+def talent_spells(cls):
+    """Names of the class's active spells that a talent grants (Holy Shock, Mortal Strike, Summon Hawk ...): the spellbook's active
+    spells whose name is a talent name."""
+    if cls not in _TALENT_SPELLS:
+        talents = {t["name"] for tr in json.load(open(HERE / "forever-talents" / f"{cls}.json", encoding="utf-8"))["trees"] for t in tr["talents"]}
+        out = set()
+        sp = HERE / "forever-spells" / f"{cls}.json"
+        for tab in (json.load(open(sp, encoding="utf-8")).get("tabs", []) if sp.exists() else []):
+            if tab.get("name") == "Pets":
+                continue
+            for s in tab.get("spells", []):
+                ranks = [r for r in s.get("ranks", []) if r.get("id")]
+                if s.get("name") in talents and ranks and "Passive" not in (ranks[-1].get("rank") or ""):
+                    out.add(s["name"])
+        _TALENT_SPELLS[cls] = out
+    return _TALENT_SPELLS[cls]
 
 
 _ENV = {}
@@ -398,6 +426,15 @@ def mode_section(cls, spec, mode, builds, nums, src):
         st = STEPS.get(cls, {}).get(spec_model)
         if st:
             play += ["## How to play", ""]
+            # abilities the steps name that this build cannot have (a talent grants them and the build lacks it): the paladin's Prot-Ret
+            # leveling split came out of the Holy rotation's search without Holy Shock (2026-10-07)
+            held = {n for items in top["allocation"].values() for n, r in items if r}
+            named = {m for x in (st.get("before") or []) + list(st.get("steps") or []) + (st.get("between") or []) for m in re.findall(r"\*\*(.+?)\*\*", x)}
+            lacking = sorted(n for n in named if n in talent_spells(cls) and n not in held)
+            if lacking:
+                play += ["**Not in this build:** " + ", ".join(f"**{n}**" for n in lacking) + (" is a talent this build does not take" if len(lacking) == 1 else " are talents this build does not take")
+                         + ": skip the lines that use " + ("it" if len(lacking) == 1 else "them") + ". The fight lab played the build without "
+                         + ("it" if len(lacking) == 1 else "them") + ".", ""]
             if st.get("before"):
                 play += ["**Before the fight:** " + " ".join(st["before"]), ""]
             play += ["**In the fight**, top to bottom:", ""] + [f"{i}. {x}" for i, x in enumerate(st["steps"], 1)] + [""]

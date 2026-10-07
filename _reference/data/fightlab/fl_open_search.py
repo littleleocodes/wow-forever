@@ -223,6 +223,9 @@ def main():
             save()
             log(f"  {cls} {spec}: open winner {r['split']} ({r['family']}), {r['race']['open winner']['weighted']:.2f} s per kill (20-60)"
                 + (f", {r['gain_vs_ours']:+.1%} faster than {best} ({r['race'][best]['weighted']:.2f} s)" if best else ""))
+        if not SMOKE and not a.rotation:   # every winner under the class's other leveling rotations (fl_synergy.cross_rotations, 2026-10-07)
+            SYL = _load("fl_synergy_fo", HERE / "fl_synergy.py")
+            SYL.cross_rotations(cls, st, pool, save)
     if not SMOKE:
         write_class(cls, st)
         write_page()
@@ -256,6 +259,11 @@ def write_class(cls, st):
                   + (("Leads polished and raced at 20-60: " + ", ".join(f"{ld['pair']} -> {ld['split']} {ld['gain']:+.1%}" for ld in sy["leads"]) + ". ") if sy.get("leads") else "No pair build within 1% of the winner. ")
                   + (f"**The search had missed it: searched again from the lead {sy['researched']['lead']}, winner now {sy['researched']['winner']} at {sy['researched']['seconds']:.2f} s per kill.**"
                      if sy.get("researched") else "The certificate confirms the winner."), ""]
+        cr = (st.get("cross") or {}).get(spec)
+        if cr:   # fl_synergy.cross_rotations: the winner under the class's other leveling rotations
+            o += ["Under the other leveling rotations (seconds per kill, 20-60): " + ", ".join(f"{k} {v}" for k, v in cr["tested"].items())
+                  + (f"; **{cr['best']} plays it faster ({cr['best_seconds']} s against {cr['own']} s): the page shows it with that rotation.**" if cr.get("best") != spec
+                     else f"; its own rotation plays it best ({cr['own']} s)."), ""]
         bw = r.get("builds")
         if bw:   # open_builds.py's verdict: a derived build on the pages, or the build it confirms
             o += [f"Build ({bw['date']}, open_builds.py): " + (", ".join(f"`{b}`" for b in bw["written"]) if bw.get("written") else bw.get("why") or "none") + ".", ""]
