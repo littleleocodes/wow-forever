@@ -617,20 +617,22 @@ def family_polish(space, sim, rng, log, fights=300, rounds=8, per_pair=2, top=5,
     best first: the open search's extra starts and the report's family table."""
     keep0 = set(space.protect)
     ks = space.keystones(damage_only=True)
+    pairs = [(a, b) for i, a in enumerate(ks) for b in ks[i + 1:] if space.tree_of[a] != space.tree_of[b]]
     out = []
-    for i, a in enumerate(ks):
-        for b in ks[i + 1:]:
-            if space.tree_of[a] == space.tree_of[b]:
-                continue
-            space.protect = keep0 | {a, b}
-            draws = [x for x in (space.random_build(rng) for _ in range(per_pair)) if x]
-            space.protect = keep0
-            if not draws:
-                continue
-            sc = sim.run(draws, fights, seed)
-            x0 = draws[max(range(len(draws)), key=lambda j: sc[j][0])]
-            x, sx = polish(space, sim, x0, fights, seed, rounds, min_gain=min_gain, keep=(a, b))
-            out.append((sx, x, f"{a} + {b}"))
+    t0 = time.time()
+    for k, (a, b) in enumerate(pairs, start=1):
+        space.protect = keep0 | {a, b}
+        draws = [x for x in (space.random_build(rng) for _ in range(per_pair)) if x]
+        space.protect = keep0
+        if not draws:
+            continue
+        sc = sim.run(draws, fights, seed)
+        x0 = draws[max(range(len(draws)), key=lambda j: sc[j][0])]
+        x, sx = polish(space, sim, x0, fights, seed, rounds, min_gain=min_gain, keep=(a, b))
+        out.append((sx, x, f"{a} + {b}"))
+        if k % 20 == 0 or k == len(pairs):   # progress (2026-10-07: a 136-pair polish was an hour of silence on a shared CPU)
+            log(f"    polish: {k}/{len(pairs)} pairs, {(time.time() - t0) / 60:.0f} min, best so far {max(out, key=lambda t: t[0])[2]} "
+                f"{max(t[0] for t in out):.4g}")
     out.sort(key=lambda t: -t[0])
     final = []
     for sx, x, lab in out[:top]:
