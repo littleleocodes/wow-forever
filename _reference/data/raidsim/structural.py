@@ -52,26 +52,48 @@ class Model:
     """Quadratic model relative to the winner, on binary x_t (t at its rank in the build); gains as fractions of the winner's DPS."""
 
     def __init__(self, space, syn):
+        """Sequential fit on the certificate's builds (`builds_all`: what each changed against the winner, payment included):
+        1. a present talent's main effect = the gain of the build that removes only it;
+        2. a missing talent's main effect = the gain of its single build minus the main effects of the talents that paid for it;
+        3. a pair's interaction = the gain of its build minus every main effect it changed (added, removed, paid).
+        Each measured build is then reproduced exactly by the model; unmeasured pairs count 0."""
         self.space = space
         self.w = {n: r for items in syn["winner_allocation"].values() for n, r in items if r}
-        self.rank = {}   # a talent's rank when in the build: the winner's rank if present, else full
-        self.main = {}   # t -> (gain when added if missing | gain when removed if present)
-        for n in space.relevant():
-            self.rank[n] = self.w.get(n) or space.max[n]
-        for t, g in syn["singles_all"].items():
-            if t.startswith("-"):
-                self.main[t[1:]] = g       # present: gain of removal (negative)
-            else:
-                self.main[t] = g           # missing: gain of adding
-        self.pair = {}   # frozenset -> interaction term for (a added, b added) | (a added, b removed) | (a removed, b removed)
-        for lab, v in syn["pairs_all"].items():
-            a, b = lab.split(" + ")
-            self.pair[(a, b)] = v["interaction"]
-        for lab, v in syn["removed_pairs_all"].items():
-            a, b = lab.split(" + ")
-            self.pair[(a, b)] = v["interaction"]
+        self.rank = {n: self.w.get(n) or space.max[n] for n in space.relevant()}
+        diffs = syn.get("builds_all") or {}
+        self.main = {}
+        for lab, d in diffs.items():   # 1. removals
+            if lab.startswith("-") and " - " not in lab and len(d["removed"]) == 1 and not d["added"]:
+                self.main[next(iter(d["removed"]))] = d["gain"]
+        unknown = set()
+        for lab, d in diffs.items():   # 2. additions (one talent added, possibly with tier fillers and prerequisites: all part of its effect)
+            if lab.startswith("-") or " + " in lab or " - " in lab:
+                continue
+            paid = [n for n in d["removed"] if n != lab]
+            if any(n not in self.main for n in paid):
+                unknown.add(lab)
+                continue
+            self.main[lab] = d["gain"] - sum(self.main[n] for n in paid)
+        self.pair = {}
+        for lab, d in diffs.items():   # 3. pairs: (a added, b added) | (a added, b removed: "a - b") | (both removed: "-a - b")
+            if " + " in lab:
+                a, b = lab.split(" + ")
+                changed = [n for n in list(d["added"]) + list(d["removed"]) if n not in (a, b)]
+                if a in self.main and b in self.main and all(n in self.main for n in changed):
+                    self.pair[(a, b)] = d["gain"] - self.main[a] - self.main[b] - sum(self.main[n] for n in changed)
+            elif lab.startswith("-") and " - " in lab:
+                a, b = lab[1:].split(" - ")
+                if a in self.main and b in self.main:
+                    self.pair[(a, b)] = d["gain"] - self.main[a] - self.main[b]
+            elif " - " in lab:
+                a, b = lab.split(" - ")   # a added, b removed, the rest paid
+                changed = [n for n in list(d["added"]) + list(d["removed"]) if n not in (a, b)]
+                if a in self.main and b in self.main and all(n in self.main for n in changed):
+                    self.pair[(a, b)] = d["gain"] - self.main[a] - self.main[b] - sum(self.main[n] for n in changed)
         self.present = {n for n in self.main if self.w.get(n)}
         self.missing = {n for n in self.main if not self.w.get(n)}
+        if unknown:
+            print(f"   model: {len(unknown)} single builds paid with a talent of unknown effect, left out", flush=True)
 
     def live(self):
         hot = {n for n, g in self.main.items() if abs(g) >= DEAD_MAIN}
@@ -97,8 +119,8 @@ class Model:
             a, ina, b, inb = b, inb, a, ina
         if a in self.missing and b in self.missing:
             return v if (ina and inb) else 0.0
-        if a in self.missing and b in self.present:   # measured as (a with b) - (a without b) + (-b): the term applies to a in, b out
-            return -v if (ina and not inb) else 0.0
+        if a in self.missing and b in self.present:   # fitted on the build with a added and b removed
+            return v if (ina and not inb) else 0.0
         if a in self.present and b in self.present:
             return v if (not ina and not inb) else 0.0
         return 0.0

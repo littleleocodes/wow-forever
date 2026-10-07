@@ -210,6 +210,16 @@ Each class folder now opens with player pages and keeps the research below:
   `open_builds.py hunter --write`, re-race, regen), `ml_pipeline.py hunter --fresh` (the BiS/pre-BiS rankings; then `ml_builds.py hunter
   --builds`, `--tidy-winners`, `--rank`). The hunter's deep record (`raidsim/deep/hunter.json`, 2026-10-04) is stale too: redo it with
   the deep runs at the end of the beta. The fight lab (leveling) models the talent itself: nothing to redo there.
+- **Search completeness work (night of 2026-10-06/07, user request: "how do we stop missing potentially good builds?"):** every missed
+  build was a synergy package (see CLAUDE.md "Open-search safeguards" (7)-(8)). Landed: multi-rank proc talents as keystones, tier-chain
+  moves, `raidsim/synergy.py` (the pairwise synergy certificate, run by family_search per entry after the values; standalone with
+  `--fresh`), a result cache in `Sim.run`, batched polishing, `raidsim/structural.py` (the exhaustive structural ranking on a quadratic
+  model fitted to the certificate's measurements: needs a record with `singles_all` etc., i.e. a certificate run after that code landed).
+  First test (mage frostfire-raid): the certificate flagged Shatter + Fingers of Frost at once and polished it to 0/29/22 at 706 against
+  691 for the search's winner; the user's own 0/29/22 build (a hand draft since 2026-10-06, `frostfire-fingers-of-frost-raid`, and a known
+  positive) leads the mage at 707 DPS after the rotation re-tune. Classes searched before this night (hunter, mage's other entries) have no
+  certificate yet: run `synergy.py <class>` then `structural.py <class>` per class when the queue is idle; `open_builds.py <class> --write
+  --race --regen` afterwards when a winner changed.
 - **After the whole open-search run:** `open_builds.py --write` for every class, re-race every entry (`run.py --all --write`, `--env
   environments --write`: several entries' gear changed on 2026-10-06), `ml_builds.py --tidy-winners --rank`, `rebuild.py --steps regen`,
   `linkcheck.py`, then the ranking artifact.

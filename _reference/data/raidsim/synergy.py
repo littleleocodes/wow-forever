@@ -220,6 +220,13 @@ def certificate(cls, entry, e, repo, st, save, a):
     res = sim.run(builds, SCREEN, 61)
     score = {lab: r[0] for lab, r in zip(labels, res)}
     base = score["winner"]
+    # what each measured build changed against the winner (the structural model fits the effects from these, payment included)
+    diffs = {}
+    for lab, b in zip(labels, builds):
+        if lab == "winner":
+            continue
+        diffs[lab] = {"added": {n: b[n] - w.get(n, 0) for n in b if b[n] > w.get(n, 0)},
+                      "removed": {n: w[n] - b.get(n, 0) for n in w if w[n] > b.get(n, 0)}, "gain": round(score[lab] / base - 1, 5)}
     for t in missing:
         if t in score:
             singles[t] = round(score[t] / base - 1, 4)
@@ -256,7 +263,7 @@ def certificate(cls, entry, e, repo, st, save, a):
            "top_pairs": [{"pair": k, **v} for k, v in top_pairs], "top_interactions": [{"pair": k, **v} for k, v in top_inter], "leads": [],
            # every measurement, for the structural ranking (raidsim/structural.py): gains relative to the winner's DPS
            "base": round(base, 1), "winner_allocation": {t: [[n, w[n]] for n in space.by_tree[t] if w.get(n)] for t in space.tree_names},
-           "singles_all": singles, "pairs_all": inter, "removed_pairs_all": removed_pairs}
+           "singles_all": singles, "pairs_all": inter, "removed_pairs_all": removed_pairs, "builds_all": diffs}
     # leads: the best pair builds within the window, polished keeping the pair
     cands = [(score[f"{a1} + {b1}"], (a1, b1), b) for (a1, b1), (b, _) in pair_builds.items() if f"{a1} + {b1}" in score and score[f"{a1} + {b1}"] >= base * (1 - LEAD_WINDOW)]
     cands.sort(key=lambda x: -x[0])
