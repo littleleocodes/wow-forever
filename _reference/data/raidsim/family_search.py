@@ -184,13 +184,16 @@ def race(cls, entry, repo, flat, mine):
     return {k: {"dps": round(d, 1), "se": round(sd / math.sqrt(RACE), 2)} for k, (d, sd) in zip(rows, res)}
 
 
-def retune(cls, entry, flat):
+def retune(cls, entry, flat, quick=False):
+    """apl_opt --tune on a build (the entry's listed builds protected). quick (2026-10-07, the certificates' re-searches): the raid setting
+    only, 8 rounds, no two-edit lookahead; a full re-tune of a 16-line rotation took over three hours on a shared CPU."""
     tune = OUT / "tune" / f"{cls}-{entry}.json"
     tune.parent.mkdir(parents=True, exist_ok=True)
     tune.write_text(json.dumps([{"label": "open winner", "allocation": flat}], indent=1), encoding="utf-8")
-    log(f"== rotation {cls}/{entry}: tuning on the open winner (every build the entry lists protected)")
-    r = subprocess.run([sys.executable, str(HERE / "apl_opt.py"), cls, "--spec", entry, "--tune", str(tune), "--write", "--rounds", "20"],
-                       capture_output=True, text=True, encoding="utf-8", errors="replace", cwd=str(ROOT))
+    log(f"== rotation {cls}/{entry}: tuning on the open winner (every build the entry lists protected){' (quick: raid setting, 8 rounds, no lookahead)' if quick else ''}")
+    args = [sys.executable, str(HERE / "apl_opt.py"), cls, "--spec", entry, "--tune", str(tune), "--write"]
+    args += ["--rounds", "8", "--lookahead", "0", "--setting", "raid"] if quick else ["--rounds", "20"]
+    r = subprocess.run(args, capture_output=True, text=True, encoding="utf-8", errors="replace", cwd=str(ROOT))
     for ln in r.stdout.splitlines():
         if ln.strip().startswith(("==", "round", "raid", "wrote", "no change")):
             log("  " + ln.strip()[:220])
@@ -356,6 +359,11 @@ def cross_rotations(cls, st, repo, save, mine_all):
         e = st["entries"][entry]
         E = R.SPECS[cls][entry]
         here = {bid: mine_all[bid] for bid in E.get("builds", []) if bid in mine_all}
+        if not here:   # 2026-10-07 audit: a showcase entry with none of our builds (Shockadin) spent an hour adopting and re-tuning a sibling rotation
+            log(f"  cross-rotations {entry}: no build of ours in the entry, skipped")
+            done[entry] = {"tested": {}, "adopted": None, "skipped": "no builds of ours"}
+            save()
+            continue
         w = flat_of((e.get("again") or e["first"])["winner"]["allocation"])
         builds = {"open winner": w} | {bid: R.alloc_of(b) for bid, b in here.items()}
         own_apl = json.load(open(R.apl_path(E, repo, "raid"), encoding="utf-8"))

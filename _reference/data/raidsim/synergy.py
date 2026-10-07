@@ -326,7 +326,7 @@ def research(cls, entry, e, repo, save, leads, best, rec, source):
     if tuned_near(cls, entry, lead_flat):   # audit 2026-10-06: a re-tune on a build the rotation was just tuned on finds nothing
         log(f"   rotation: already tuned on a build within 2 points of the lead; re-tune skipped")
     else:
-        e["rotation_changed"] = FS.retune(cls, entry, lead_flat) or e.get("rotation_changed")
+        e["rotation_changed"] = FS.retune(cls, entry, lead_flat, quick=True) or e.get("rotation_changed")
     mine_all = FS.ours(cls)
     here = {bid: mine_all[bid] for bid in R.SPECS[cls][entry].get("builds", []) if bid in mine_all}
     starts = [FS.flat_of(ld["allocation"]) for ld in leads] + [w] + [R.alloc_of(b) for b in mine_all.values()] + FS.known_positives(cls)
