@@ -234,27 +234,45 @@ class Space:
                     return flat
         return None
 
+    DAMAGE_WORDS = r"damage|attack|critical|crit\b|haste|hit|rage|energy|mana|cast|instant|cooldown|proc|spell|strike|shot"
+    PROC_WORDS = r"chance to|grants?\b|your next|refund|stacks?\b|procs?\b|whenever|each time|every time"
+    NOT_DAMAGE = r"casting time|pushback|threat|reflect|absorb|resist|interrupt|silence|dispel|stun|snare|fear"
+    ALWAYS_KEYSTONE = {"Moonkin Form", "Demonic Pact", "Siphon Life", "Premeditation"}   # DPS keystones the wording test misses
+
+    def text_of(self, n):
+        ranks = self.trees[self.tree_of[n]]["talents"][n].get("ranks") or []
+        return " ".join((r.get("text") if isinstance(r, dict) else str(r)) for r in ranks)
+
+    def damage_talent(self, n):
+        """The tooltip speaks of damage, attack power, crit, haste, hit or a resource (and not only of healing)."""
+        import re as _re
+        if n in self.ALWAYS_KEYSTONE:
+            return True
+        text = self.text_of(n)
+        heal_only = _re.search(r"heal", text, _re.I) and not _re.search(r"damage", text, _re.I)
+        return bool(_re.search(self.DAMAGE_WORDS, text, _re.I)) and not heal_only
+
+    def proc_talent(self, n):
+        """A multi-rank talent that grants a proc, a stack or an effect on the next spell (Fingers of Frost, Improved Scorch, Master of
+        Elements, Expose Prey, Flurry ...), as opposed to a flat bonus; pushback, threat, reflect and absorb talents are left out."""
+        import re as _re
+        text = self.text_of(n)
+        return bool(_re.search(self.PROC_WORDS, text, _re.I)) and self.damage_talent(n) and not _re.search(self.NOT_DAMAGE, text, _re.I)
+
+    def relevant(self):
+        """Every talent a damage search should decide on: those with damage wording (any rank count, any row). The rest are tier fillers."""
+        return [n for n in self.names if self.damage_talent(n)]
+
     def keystones(self, damage_only=False):
-        """One-rank talents above the first two tiers: the trees' signature picks (Summon Hawk, Lone Wolf, Mortal Strike ...).
-        damage_only: those whose tooltip speaks of damage, attack power, crit, haste or hit (a utility keystone such as Deterrence
-        or Intimidation forces no family of its own; 2026-10-05, to halve the family polish)."""
-        ks = [n for n in self.names if self.max[n] == 1 and self.row[n] >= 2]
+        """The trees' signature picks: one-rank talents above the first two tiers (Summon Hawk, Lone Wolf, Mortal Strike ...) and, since
+        2026-10-06, multi-rank proc talents there too (Fingers of Frost: a two-rank proc worth nothing without Shatter, which no family
+        was ever seeded around, so the user's 0/29/22 Frostfire mage was missed). damage_only: those whose tooltip speaks of damage,
+        attack power, crit, haste or hit (a utility keystone such as Deterrence or Intimidation forces no family of its own; 2026-10-05,
+        to halve the family polish)."""
+        ks = [n for n in self.names if self.row[n] >= 2 and (self.max[n] == 1 or self.proc_talent(n))]
         if not damage_only:
             return ks
-        import re as _re
-        keep = _re.compile(r"damage|attack|critical|crit|haste|hit|rage|energy|mana|cast|instant|cooldown|proc|spell|strike|shot", _re.I)
-        always = {"Moonkin Form", "Demonic Pact", "Siphon Life", "Premeditation"}   # DPS keystones the wording test misses
-        out = []
-        for n in ks:
-            if n in always:
-                out.append(n)
-                continue
-            ranks = self.trees[self.tree_of[n]]["talents"][n].get("ranks") or []
-            text = " ".join((r.get("text") if isinstance(r, dict) else str(r)) for r in ranks)
-            heal_only = _re.search(r"heal", text, _re.I) and not _re.search(r"damage", text, _re.I)
-            if keep.search(text) and not heal_only:
-                out.append(n)
-        return out
+        return [n for n in ks if self.damage_talent(n)]
 
     def keystone_starts(self, rng, per_pair=3):
         """Random legal builds holding each pair of keystones from different trees: an open search's seeds for combinations no build
@@ -278,8 +296,11 @@ class Space:
         cur = dict(flat)
         for _ in range(n_moves):
             for _try in range(40):
-                if rng.random() < 0.15:
+                u = rng.random()
+                if u < 0.1:
                     new = self.random_chain(rng, cur)
+                elif u < 0.2:   # 2026-10-06: tier chains (a talent plus the tier points its tree lacks)
+                    new = self.random_tier_chain(rng, cur)
                 else:
                     a = rng.choice([n for n in cur if cur[n] > 0])
                     b = rng.choice(self.names)
@@ -364,8 +385,99 @@ class Space:
                     return None
         return cur if self.valid(cur) else None
 
-    def neighbours(self, flat):
-        """Every legal one-move (1, 2, 3 or 5 points from one talent to another) and prerequisite-chain neighbour."""
+    def tier_chains(self, flat, max_gap=5):
+        """Tier-chain moves (2026-10-06): a talent the build cannot reach yet because its tree lacks the tier points, bought together with
+        those points. The user's 0/29/22 Frostfire mage showed the valley: Fingers of Frost sat one tier beyond the winner's 17 Frost points
+        and is worth nothing without Shatter, Shatter nothing without it, so Shatter 3 + Fingers of Frost 2 (+ Ice Lance 1) was six
+        coordinated points away and no one-talent move, prerequisite chain or keystone pair crossed it (the winner stayed 2% behind).
+        The gap (1-5 points) goes to one lower-row talent of the tree (every candidate), the target gets 1 or all ranks, and the points
+        come from one talent, or from two or three talents holding at most two ranks (fillers and keystones: the points a build can spare)."""
+        from itertools import combinations
+        out, seen = [], {key(flat)}
+        small = [x for x, rx in flat.items() if 0 < rx <= 2]
+        for b in self.names:
+            room_b = self.max[b] - flat.get(b, 0)
+            if room_b <= 0 or self.row[b] == 0:
+                continue
+            t = self.tree_of[b]
+            below = sum(flat.get(m, 0) for m in self.by_tree[t] if self.row[m] < self.row[b])
+            gap = 5 * self.row[b] - below
+            if not 0 < gap <= max_gap:
+                continue
+            fillers = [f for f in self.by_tree[t] if self.row[f] < self.row[b] and self.max[f] - flat.get(f, 0) >= gap]
+            for kb in sorted({1, min(self.max[b], room_b)}):
+                for f in fillers:
+                    add = {f: gap, b: kb}
+                    need = gap + kb
+                    srcs = [x for x, rx in flat.items() if rx > 0 and x not in add]
+                    plans = [{x: need} for x in srcs if flat[x] >= need]
+                    sm = [x for x in small if x not in add]
+                    for n in (2, 3):
+                        for combo in combinations(sm, n):
+                            tot = sum(flat[x] for x in combo)
+                            if tot < need:
+                                continue
+                            take, left = {}, need
+                            for x in combo:
+                                take[x] = min(flat[x], left)
+                                left -= take[x]
+                            if not left and all(take.values()):
+                                plans.append(take)
+                    for take in plans:
+                        new = dict(flat)
+                        for x, n in take.items():
+                            new[x] -= n
+                            if not new[x]:
+                                del new[x]
+                        for x, n in add.items():
+                            new[x] = new.get(x, 0) + n
+                        kk = key(new)
+                        if kk not in seen and self.valid(new):
+                            seen.add(kk)
+                            out.append((" + ".join(f"{n} {x}" for x, n in take.items()) + " -> " + " + ".join(f"{n} {x}" for x, n in add.items()) + " (tier chain)", new))
+        return out
+
+    def random_tier_chain(self, rng, flat):
+        """One random tier-chain move (mutate): a random reachable target, filler and payment."""
+        cands = []
+        for b in self.names:
+            if self.max[b] - flat.get(b, 0) <= 0 or self.row[b] == 0:
+                continue
+            t = self.tree_of[b]
+            below = sum(flat.get(m, 0) for m in self.by_tree[t] if self.row[m] < self.row[b])
+            gap = 5 * self.row[b] - below
+            if 0 < gap <= 5:
+                cands.append((b, gap))
+        if not cands:
+            return None
+        b, gap = rng.choice(cands)
+        t = self.tree_of[b]
+        fillers = [f for f in self.by_tree[t] if self.row[f] < self.row[b] and self.max[f] - flat.get(f, 0) >= gap]
+        if not fillers:
+            return None
+        add = {rng.choice(fillers): gap, b: rng.choice(sorted({1, self.max[b] - flat.get(b, 0)}))}
+        need = sum(add.values())
+        srcs = [x for x, r in flat.items() if r > 0 and x not in add]
+        rng.shuffle(srcs)
+        new, left = dict(flat), need
+        for x in srcs[:3]:
+            tk = min(new[x], left) - (1 if x in self.protect and new[x] <= left else 0)
+            if tk <= 0:
+                continue
+            new[x] -= tk
+            left -= tk
+            if not new[x]:
+                del new[x]
+            if not left:
+                break
+        if left:
+            return None
+        for x, n in add.items():
+            new[x] = new.get(x, 0) + n
+        return new
+
+    def neighbours(self, flat, tier=True):
+        """Every legal one-move (1, 2, 3 or 5 points from one talent to another), prerequisite-chain and (tier=True) tier-chain neighbour."""
         out, seen = [], {key(flat)}
         for a, ra in list(flat.items()):
             if ra <= 0:
@@ -413,6 +525,12 @@ class Space:
                     if kk not in seen and self.valid(new):
                         seen.add(kk)
                         out.append((" + ".join(f"{n} {x}" for x, n in take.items()) + " -> " + " + ".join(f"{n} {x}" for x, n in add.items()), new))
+        if tier:
+            for m, new in self.tier_chains(flat):
+                kk = key(new)
+                if kk not in seen:
+                    seen.add(kk)
+                    out.append((m, new))
         return out
 
 
@@ -426,38 +544,68 @@ class Sim:
         self.sim_trees = R.load_trees(repo, cls)
         self.n = 0
         self.fights = 0
+        self.cache = {}   # (talents, fights, seed, rotation file and its time) -> (dps, sd): common random numbers make a repeat exact
+        self.hits = 0
+
+    def _stamp(self):
+        """The rotation in force for this setting (a re-tune mid-run changes it): part of the cache key."""
+        import os
+        try:
+            p = R.apl_path(self.entry, self.repo, self.setting)
+            return (str(p), os.path.getmtime(p))
+        except Exception:   # noqa: BLE001
+            return None
 
     def run(self, allocs, iterations, seed):
-        out = []
-        for i0 in range(0, len(allocs), 400):
-            chunk = allocs[i0:i0 + 400]
-            bl = [{"label": str(i), "talents": R.talents_string(self.sim_trees, al), **({"gear_json": {"items": self.gear}} if self.gear else {})}
-                  for i, al in enumerate(chunk)]
+        stamp = self._stamp()
+        keys = [(R.talents_string(self.sim_trees, al), iterations, seed, stamp) for al in allocs]
+        todo = []
+        seen = set()
+        for k in keys:
+            if k not in self.cache and k not in seen:
+                seen.add(k)
+                todo.append(k)
+        self.hits += len(keys) - len(todo)
+        for i0 in range(0, len(todo), 400):
+            chunk = todo[i0:i0 + 400]
+            bl = [{"label": str(i), "talents": k[0], **({"gear_json": {"items": self.gear}} if self.gear else {})} for i, k in enumerate(chunk)]
             rows = A.bench(self.entry, self.repo, bl, iterations, seed, self.setting, self.tag)
-            for i in range(len(chunk)):
+            for i, k in enumerate(chunk):
                 r = rows.get(str(i)) or {}
-                out.append((float(r.get("dps") or 0.0), float(r.get("dps_stdev") or 0.0)))
+                self.cache[k] = (float(r.get("dps") or 0.0), float(r.get("dps_stdev") or 0.0))
             self.n += len(chunk)
             self.fights += len(chunk) * iterations
-        return out
+        return [self.cache[k] for k in keys]
 
 
 # ------------------------------------------------------------------------------------------------ family polish (2026-10-05)
-def polish(space, sim, flat, fights, seed, rounds=8, min_gain=0.002, keep=(), small=True):
-    """Greedy hill climb from one build on common random numbers: every neighbour (small: 1-point and prerequisite-chain moves only)
-    that keeps `keep`, the best taken while it gains more than min_gain. Returns (build, score)."""
+def polish(space, sim, flat, fights, seed, rounds=8, min_gain=0.002, keep=(), small=True, batch=120):
+    """Hill climb from one build on common random numbers over the neighbours (small: 1-point and prerequisite-chain moves only) that
+    keep `keep`. Since 2026-10-06 the neighbours are tried in random batches of `batch` (first improvement: the best of the first batch
+    that beats the build by min_gain is taken, so a climb costs a batch per step instead of the whole neighbourhood of 500-800 builds);
+    a step is kept only while it gains more than min_gain; a full pass without a gain ends the climb: the result is still a local optimum
+    over every neighbour. `rounds` caps the steps. Returns (build, score)."""
+    import random as _random
     import re as _re
+    rng = _random.Random(seed * 7919 + len(flat))
     cur = dict(flat)
     cur_s = sim.run([cur], fights, seed)[0][0]
     for _ in range(rounds):
         nb = [(m, x) for m, x in space.neighbours(cur) if all(x.get(k) for k in keep) and (not small or not _re.match(r"^[235] ", m))]
         if not nb:
             break
-        res = sim.run([x for _, x in nb], fights, seed)
-        i = max(range(len(nb)), key=lambda j: res[j][0])
-        if res[i][0] <= cur_s * (1 + min_gain):
+        rng.shuffle(nb)
+        moved = False
+        for i0 in range(0, len(nb), batch):
+            part = nb[i0:i0 + batch]
+            res = sim.run([x for _, x in part], fights, seed)
+            i = max(range(len(part)), key=lambda j: res[j][0])
+            if res[i][0] > cur_s * (1 + min_gain):
+                cur, cur_s = part[i][1], res[i][0]
+                moved = True
+                break
+        if not moved:
             break
-        cur, cur_s = nb[i][1], res[i][0]
     return cur, cur_s
 
 
@@ -607,6 +755,10 @@ def certificate(space, sim, winner, log, its=3000, seed=5, conf_its=30000):
     steps = []
     for step in range(6):
         nb = space.neighbours(winner)
+        if len(nb) > 600:   # tier chains (2026-10-06) multiply the set: screen them on fewer fights, race the best 200 on `its`
+            r0 = sim.run([winner] + [x[1] for x in nb], max(500, its // 4), seed + 40 + 2 * step)
+            keep = sorted(range(len(nb)), key=lambda i: -r0[i + 1][0])[:200]
+            nb = [nb[i] for i in keep]
         res = sim.run([winner] + [x[1] for x in nb], its, seed + 2 * step)
         w = res[0][0]
         gaps = sorted(((res[i + 1][0] / w - 1, i) for i in range(len(nb))), reverse=True)
@@ -638,7 +790,7 @@ def two_moves(space, flat, expand=None):
     for m1, n1 in first:
         if expand is not None and key(n1) not in expand:
             continue
-        for m2, n2 in space.neighbours(n1):
+        for m2, n2 in space.neighbours(n1, tier=False):   # the second move: plain moves only (tier chains would square the set)
             k = key(n2)
             if k not in seen:
                 seen.add(k)

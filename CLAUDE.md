@@ -591,7 +591,23 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   30,000 and costing no listed build 1%, replaces the entry's raid rotation as a pass in its rotation-search record, is polished by
   `apl_opt --tune`, and the race and values are redone); `own_gear` gives an open winner in a family no ML record covers its own phase-1
   BiS set (`gear_tiers.make`, `tiers/<class>-<family slug>-bis.gear.json`) and races it in both sets (the Hawk hunter was scored in
-  pure melee gear). (6) The known positives compete in the leveling finalists race. **Warlock demons** (2026-10-06): the simulator (and
+  pure melee gear). (6) The known positives compete in the leveling finalists race. (7) **Synergy packages** (2026-10-06, the third
+  miss: the user's 0/29/22 Frostfire mage, Shatter + Fingers of Frost + Ice Lance behind a Frost tier, +2% over the search's 0/34/17 in
+  the same rotation; every miss so far was talents worth nothing alone and a lot together, behind a step that costs value): the search's
+  keystones now include multi-rank proc talents at row 2+ (`Space.proc_talent`: "chance to", "grant", "your next", "refund", "stacks";
+  Fingers of Frost, Improved Scorch, Expose Prey, Flurry, Eclipse, Seal Fate, Maelstrom Weapon ...), so each gets a polished family (a
+  Fingers of Frost family reached 0/29/22 at 688 on its own); `Space.tier_chains` adds "the talent plus the tier points its tree lacks"
+  moves to the mutation and the certificates (the second move of the two-move check stays plain); and `raidsim/synergy.py` is the
+  **synergy certificate** every family_search entry runs after its values (standalone: `synergy.py <class> [--entry] [--fresh]
+  [--no-search]`): every single and every pair of relevant talents (damage wording, `Space.relevant`) measured around the winner on
+  1,500 fights (tier points filled from the tree, the cost paid from the winner's cheapest points by its removal values, legality kept),
+  interaction = both - a - b + winner; the best pair builds within 1% polished keeping the pair and raced on 10,000 fights; a lead 0.5%
+  ahead means the search missed it: the rotation is re-tuned on it, the search runs again seeded with the leads (AGAIN budget), race and
+  values redone (`entry["synergy"]`, the class report shows it). Complete at the pairwise level; a third member one move from a pair is
+  reached by the polish. (8) **Cost**: `Sim.run` caches results within a process (talents, fights, seed, rotation file and time: common
+  random numbers make repeats exact) and `polish` tries neighbours in random batches of 120 with first improvement (a step costs a batch,
+  a full pass without a gain still ends at a local optimum). Open: dead-talent pruning and an exhaustive ranking of every legal
+  structure on a quadratic model fitted to the certificate's measurements (the plan's steps 3-4). **Warlock demons** (2026-10-06): the simulator (and
   upstream wowsims/classic) gives demons nothing from the warlock; Forever's guides say demons scale with the warlock's stats and gear
   (the pet pane shows the inherited values) but publish no percentages and Blizzard's warlock deep dive is unpublished, so the warlock's
   pet numbers are the class's decision-critical assumption: find the percentages (a beta tester's pet pane) and patch like

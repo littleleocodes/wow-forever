@@ -282,6 +282,15 @@ def main():
                 e["values_ours"], e["values_ours_base"] = values(cls, entry, repo, R.alloc_of(mine_all[best]))
                 e["ours_best"] = best
             save()
+        if "synergy" not in e and not SMOKE:
+            # the synergy certificate (2026-10-06, raidsim/synergy.py): every pair of relevant talents measured around the winner; a lead
+            # 0.5% ahead re-tunes the rotation, searches again from it and redoes the race and values (a missed package: Shatter +
+            # Fingers of Frost + Ice Lance on the Frostfire mage)
+            SY = importlib.util.module_from_spec(importlib.util.spec_from_file_location("synergy_fs", HERE / "synergy.py"))
+            SY.__spec__.loader.exec_module(SY)
+            SY.certificate(cls, entry, e, repo, st, save, argparse.Namespace(no_search=False))
+            R.set_game("forever")   # the certificate's re-tune may have pointed the entry at a new rotation file
+            w = flat_of((e.get("again") or e["first"])["winner"]["allocation"])
         sp = MLT.Space(cls, "any", any_split=True)
         e.update({"family": sp.classify(w), "split": sp.split(w), "dps": e["race"]["open winner"]["dps"], "link": RSH.tf_link(cls, w),
                   "gap_vs_ours": round(e["race"]["open winner"]["dps"] / max(1e-9, max((v["dps"] for k, v in e["race"].items() if k != "open winner"),
@@ -455,6 +464,14 @@ def write_class(cls, st):
         if imp:
             o += ["The search model's most important talents (random-forest importance): "
                   + ", ".join(f"{x['feature']} {x['importance']:.2f}" for x in imp[:10]) + ".", ""]
+        sy = e.get("synergy")
+        if sy:   # synergy.py: every pair of relevant talents measured around the winner
+            o += [f"**Synergy certificate** ({sy['date']}, raidsim/synergy.py): {sy['relevant']} relevant talents, {sy['missing']} the winner lacks; "
+                  f"{sy['pairs']} pairs measured around {sy['winner']} on {sy['screen_fights']} fights. Largest interactions (DPS of both against the "
+                  "two alone): " + ", ".join(f"{x['pair']} {x['interaction']:+.1%} (build {x['gain']:+.1%})" for x in sy.get("top_interactions", [])[:6]) + ". "
+                  + (("Leads polished and raced: " + ", ".join(f"{ld['pair']} -> {ld['split']} {ld['gain']:+.1%}" for ld in sy["leads"]) + ". ") if sy.get("leads") else "No pair build within 1% of the winner. ")
+                  + (f"**The search had missed it: searched again from the lead {sy['researched']['lead']}, winner now {sy['researched']['winner']} at {sy['researched']['dps']:.1f} DPS.**"
+                     if sy.get("researched") else "The certificate confirms the winner."), ""]
         bw = e.get("builds")
         if bw:   # open_builds.py's verdict: a derived build on the pages, or the build it confirms
             o += [f"Build ({bw['date']}, open_builds.py): " + (", ".join(f"`{b}`" for b in bw["written"]) if bw.get("written") else bw.get("why") or "none") + ".", ""]
