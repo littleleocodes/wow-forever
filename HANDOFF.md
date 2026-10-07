@@ -256,7 +256,16 @@ Each class folder now opens with player pages and keeps the research below:
   Beast-Marks 29/18/4 26.09 s (own tree first), the Marksmanship rotation's 33/13/5 at 26.54 s plays as Beast Mastery and stays under
   the bar (+0.47%). The order alone moved builds by up to 8% (own tree first against the stats model's order, mage Arcane) and the
   order polish won once (hunter 33/13/5: Efficiency earlier, Careful Aim later, -0.3%). From the rogue on, fl_open_search runs all of
-  it in-loop. After any later post-hoc change: `open_builds.py <class> --write --only leveling --regen`. **Hunter post hoc done** (16:59, commit
+  it in-loop. After any later post-hoc change: `open_builds.py <class> --write --only leveling --regen`.
+  **PAUSED 2026-10-07 18:53 (user request: pause at a good point until they say):** the rogue's first raid entry finished (combat-swords-raid:
+  18/33/0 at 746.6 DPS, +1.9% over opt-combat-swords-raid-raid-dps; rotation re-tuned on it, +0.15%; certificate and structural ranking
+  confirm; record `families/rogue.json`, rotations and rotation-search record committed) and the runner was killed as the second entry's
+  polish began. Nothing else of the rogue ran. **Resume** (when the user says so): `bash _reference/data/run_open_searches.sh rogue druid
+  warrior priest warlock` (combat-swords-raid is skipped as done; combat-daggers-raid, assassination-raid, subtlety-raid, then the rogue's
+  three leveling rotations, then the other classes), then restart the hunter ML waiter on the new runner's bash PID (`bash
+  _reference/data/deep-runs/hunter_ml_after_queue.sh <pid>`; it was stopped so the pause would not start a three-hour job) and the
+  per-class writer waiters (rogue raid: `open_builds.py rogue --write --only raid --race --regen` after "rogue raid ok" in
+  open-searches.log; leveling likewise with `--only leveling --regen`). **Hunter post hoc done** (16:59, commit
   dc691b4): bm-raid's structural lead 27/19/5 held after the re-tune and re-search (903 DPS, +0.9%) -> `beast-marks-open-raid` replaces
   mm-hawk-raid; melee-dps 16/11/24 confirmed -> `beast-survival-open-raid` (1170 in a full raid, the class's best); the Marksmanship
   entries confirm mm-lone-wolf-raid. **Racials** (user question 2026-10-07): the raid sim runs each entry as the race its preset had (mage, priest,

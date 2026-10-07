@@ -4,6 +4,19 @@
   {
    "action": {
     "condition": {
+     "auraIsActive": {
+      "auraId": {
+       "spellId": 6774,
+       "rank": 2
+      }
+     }
+    },
+    "autocastOtherCooldowns": {}
+   }
+  },
+  {
+   "action": {
+    "condition": {
      "auraIsInactive": {
       "sourceUnit": {
        "type": "Self"
@@ -278,19 +291,6 @@
     }
    },
    "notes": "apl_opt 2026-10-01: changed or added by the rotation search (see combat-swords-raid-rotation-search.json)"
-  },
-  {
-   "action": {
-    "condition": {
-     "auraIsActive": {
-      "auraId": {
-       "spellId": 6774,
-       "rank": 2
-      }
-     }
-    },
-    "autocastOtherCooldowns": {}
-   }
   },
   {
    "action": {

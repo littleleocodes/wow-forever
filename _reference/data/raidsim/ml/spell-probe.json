@@ -6054,5 +6054,31 @@
     "kept": false
    }
   ]
+ },
+ "rogue/combat-swords-raid/raid/any": {
+  "class": "rogue",
+  "spec": "any",
+  "entry": "combat-swords-raid",
+  "setting": "raid",
+  "date": "2026-10-07",
+  "base_dps": 745.99,
+  "abilities": [
+   {
+    "ability": "Blade Flurry",
+    "talent": "Blade Flurry",
+    "spell": 13877,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0002,
+     "split": "18/33/0",
+     "vs_spec_build": 0.0002
+    },
+    "kept": false
+   }
+  ]
  }
 }
