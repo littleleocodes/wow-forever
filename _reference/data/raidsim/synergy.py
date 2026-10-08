@@ -36,6 +36,7 @@ import time
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
 sys.path[:0] = [str(HERE), str(ROOT / "_reference/data"), str(ROOT / "_reference/data/scorer")]
+import spec_modes as SM  # noqa: E402  (own-rotation rule: RAID_ENTRY_TREES)
 
 
 def _load(name, path):
@@ -174,6 +175,7 @@ def tuned_near(cls, entry, flat, within=4):
 def certificate(cls, entry, e, repo, st, save, a):
     t0 = time.time()
     space = MLT.Space(cls, "any", any_split=True)
+    space.allow_trees = SM.RAID_ENTRY_TREES.get((cls, entry))   # leads only among builds that may use the entry's rotation (2026-10-08)
     space.protect = set(e.get("first", {}).get("protected") or ())
     fin = e.get("again") or e["first"]
     w = FS.flat_of(fin["winner"]["allocation"])

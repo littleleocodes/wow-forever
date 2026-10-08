@@ -26,6 +26,7 @@ import time
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
 sys.path[:0] = [str(HERE), str(ROOT / "_reference/data"), str(ROOT / "_reference/data/scorer")]
+import spec_modes as SM  # noqa: E402  (own-rotation rule: RAID_ENTRY_TREES)
 
 
 def _load(name, path):
@@ -311,6 +312,7 @@ def structural(cls, entry, e, repo, save, a):
         if "singles_all" not in syn:
             return
     space = MLT.Space(cls, "any", any_split=True)
+    space.allow_trees = SM.RAID_ENTRY_TREES.get((cls, entry))   # leads only among builds that may use the entry's rotation (2026-10-08)
     space.protect = set(e.get("first", {}).get("protected") or ())
     model = Model(space, syn)
     w = dict(model.w)

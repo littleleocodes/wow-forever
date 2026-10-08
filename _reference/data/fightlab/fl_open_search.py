@@ -184,6 +184,10 @@ def main():
             if r.get("done"):
                 continue
             t0 = time.time()
+            # only builds that may use this rotation (2026-10-08, user decision: no spec takes another spec's rotation; the priest's
+            # Discipline rotation had found a 31-point Shadow build, which no page may show with it)
+            space.allow_trees = SM.leveling_rotation_trees(cls).get(spec)
+            rstarts = [x for x in starts if space.valid(x)]
             if "winner" not in r:
                 import random
                 sim = LabSim(cls, spec, pool, a.jobs)
@@ -195,11 +199,11 @@ def main():
                     fp.write_text(json.dumps([{"score": sc, "build": x, "label": lab} for sc, x, lab in fam]) + "\n", encoding="utf-8")
                 r["families"] = [{"keystones": lab, "split": space.split(x), "family": space.classify(x), "kills_per_hour": round(sc, 2)}
                                  for sc, x, lab in fam[:15]]
-                sib = sibling_starts(cls, spec, space, starts + [x for _, x, _ in fam])
-                log(f"== {cls} {spec} (levels as {', '.join(trees)}): open search at level 60, {len(starts) + len(fam) + len(sib)} starts "
+                sib = sibling_starts(cls, spec, space, rstarts + [x for _, x, _ in fam])
+                log(f"== {cls} {spec} (levels as {', '.join(trees)}): open search at level 60, {len(rstarts) + len(fam) + len(sib)} starts "
                     f"({len(sib)} from sibling rotations' families)")
                 opts = MLT.defaults(**SEARCH, seed=81)
-                rec, win = MLT.optimize(space, {spec: sim}, starts + [x for _, x, _ in fam] + sib, opts, log)
+                rec, win = MLT.optimize(space, {spec: sim}, rstarts + [x for _, x, _ in fam] + sib, opts, log)
                 r.update({"winner": rec["winner"], "runs_agree": rec["runs_agree"], "simulated_builds": rec["simulated_builds"],
                           "important_features": rec.get("important_features"), "finalists": rec.get("finalists") or []})
                 save()

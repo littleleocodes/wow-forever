@@ -290,6 +290,21 @@ Each class folder now opens with player pages and keeps the research below:
   (`fightlab/own_rotation_race.py`: the hunter's two Marksmanship-point builds that played Beast Mastery, the rogue's two Assassination-
   point builds that played swords). The user confirmed the one exception (2026-10-08): "For leveling, you can use another spec if that
   healing spec doesn't have any viable leveling build": the Restoration druid and shaman keep leveling as Feral and Enhancement (LEVEL_AS).
+  **Searches restricted to builds that may use the rotation (2026-10-08 ~18:30):** `ml_talents.Space.allow_trees` (set by family_search,
+  synergy, structural and fl_open_search per entry or rotation): the open searches had run any split, so six searches' winners belonged
+  to another spec and cannot be shown under the rule: priest Discipline and Holy leveling (a Shadow build), paladin Holy leveling
+  (Prot-Ret), hunter Marksmanship leveling (a Beast Mastery build), mage Fire leveling (Arcane-Frost), rogue Assassination raid (Combat).
+  The warlock runs restricted. **To do after the queue:** re-run those six restricted (remove each one's entry from its record, then
+  `fl_open_search.py <class> --rotation <rot>` or `family_search.py rogue --entry assassination-raid`, then `open_builds.py <class> --write
+  --only leveling|raid [--race] --regen`), about 6-7 hours.
+  **PAUSED 2026-10-08 18:3x (user: "find a good stopping point and pause")** after the priest's Discipline leveling rotation (done and
+  saved; its winner is a Shadow build, so nothing is written for Discipline until its restricted re-run). The Holy rotation was 10 minutes
+  into its polish and starts over. Nothing is running: the runner, the priest search, the smoke tests and the hunter ML waiter were
+  stopped (the warlock writer waiter may still be alive). **Resume:** (1) leveling smoke test of the restricted search: `python -u
+  _reference/data/fightlab/fl_open_search.py priest --smoke --rotation discipline-leveling --jobs 4` (the raid one passed: warlock
+  demonology-raid's winner 2/31/18 Demonology); (2) `bash _reference/data/run_open_searches.sh priest warlock`; (3) re-arm the writer
+  waiters (priest: leveling half only, the raid half is written; warlock: both halves) and the hunter ML waiter on the runner script's
+  own bash PID (the `usr/bin/bash.exe ... run_open_searches.sh` process: killing the outer wrapper leaves the script running).
   **Racials (2026-10-08 05:2x):** the simulator applies more racials in Forever than Classic (Tauren +1% hit, Night Elf's Elune's Light
   +10% crit, Berserking, Blood Fury, weapon specializations), and the generic cooldown line casts the on-use ones, so stripping rotation
   lines would not remove them. Patch `patches/forever/sim/core/no_racials.go` (+ an edits.json insertion in racials.go) switches all of them

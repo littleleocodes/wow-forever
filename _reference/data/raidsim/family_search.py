@@ -166,6 +166,7 @@ def sibling_starts(cls, entry, space, have):
 
 def run_search(cls, entry, repo, settings, starts, seed, protect=None, reuse=False):
     space = MLT.Space(cls, "any", any_split=True)
+    space.allow_trees = SM.RAID_ENTRY_TREES.get((cls, entry))   # only builds that may use this entry's rotation (2026-10-08)
     starts = [s for s in starts if s and space.valid(s)]
     space.protect = set(protect) if protect is not None else MLT.protected(cls, [entry], repo, "raid", starts)
     space.start_splits = [space.split(s) for s in starts]

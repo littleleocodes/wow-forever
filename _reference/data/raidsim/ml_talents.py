@@ -88,6 +88,10 @@ class Space:
         self.start_splits = [s for s in start_splits if s]
         self.pair = [t for t in self.tree_names if t in spec.replace("Hybrid ", "").split("/")] if spec.startswith("Hybrid") else []
         self.trees = trees
+        # the trees the searched rotation is built for (2026-10-08, user decision: no spec takes another spec's rotation): an open
+        # search only tries builds that may use the rotation (spec_modes.rotation_allows; a showcase hybrid's entry takes any split of its
+        # two trees, as open_builds.raid_spec files it), so every winner can be written; None = no restriction
+        self.allow_trees = None
 
     # -- rules
     def points(self, flat):
@@ -122,10 +126,22 @@ class Space:
                     return False
         return True
 
+    def allowed(self, flat):
+        """Whether the build may use the searched rotation (allow_trees; see __init__)."""
+        if self.allow_trees is None:
+            return True
+        spec = self.classify(flat)
+        for t in self.allow_trees:
+            if t.startswith("Hybrid ") and (spec == t or spec in t[len("Hybrid "):].split("/")):
+                return True
+        return SM.rotation_allows(spec, self.allow_trees)
+
     def valid(self, flat):
         if sum(flat.values()) != TOTAL or not self.ok_partial(flat):
             return False
         if any(not flat.get(n) for n in self.protect):
+            return False
+        if not self.allowed(flat):
             return False
         return self.any or self.classify(flat) == self.spec
 
