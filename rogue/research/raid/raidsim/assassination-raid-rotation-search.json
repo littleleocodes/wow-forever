@@ -2,26 +2,40 @@
  "dummy": {
   "class": "rogue",
   "spec": "assassination-raid",
-  "date": "2026-10-02",
-  "commit": "40be98e",
+  "date": "2026-10-07",
+  "commit": "b0f0df3",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "ui/specs/rogue/dps/apls/forever_mutilate.apl.json",
   "start": "ui\\specs\\rogue\\dps\\apls\\forever_mutilate.apl.json",
   "builds": [
    {
-    "label": "ml: Assassination",
-    "talents": "0053031214150005-304313001013-002",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-assassination-bis.gear.json"
+    "label": "open winner",
+    "talents": "00530310301-30531300001515231-002"
    },
    {
     "label": "assassination-seal-fate-raid",
-    "talents": "0053031232150005-305313000013-002"
+    "talents": "0053031232150005-305313000013-002",
+    "protect_only": true
    },
    {
     "label": "sim preset: Mutilate",
-    "talents": "00530310551021051-302303202004"
+    "talents": "00530310551021051-302303202004",
+    "protect_only": true
+   },
+   {
+    "label": "assassination-mutilate-raid",
+    "talents": "0053031252112005-305313000015",
+    "protect_only": true
+   },
+   {
+    "label": "assassination-ml-raid",
+    "talents": "0053031052150005-305313000013-002",
+    "protect_only": true
    }
+  ],
+  "tuned_on": [
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -101,28 +115,46 @@
   ],
   "final": {
    "dummy": {
-    "ml: Assassination": {
-     "before": 152.4498080609921,
-     "after": 410.7953305177082,
-     "base": 152.4498080609921,
+    "open winner": {
+     "before": 148.7832279080657,
+     "after": 400.83524257667625,
+     "base": 148.7832279080657,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "assassination-seal-fate-raid": {
-     "before": 148.49778731292164,
-     "after": 406.66563910243826,
-     "base": 148.49778731292164,
+     "before": 148.43345623985505,
+     "after": 406.33178425868886,
+     "base": 148.43345623985505,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Mutilate": {
-     "before": 329.3623192428868,
-     "after": 371.1741383892699,
-     "base": 329.3623192428868,
+     "before": 334.8657991601011,
+     "after": 371.0316117782276,
+     "base": 334.8657991601011,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "assassination-mutilate-raid": {
+     "before": 143.31207640407567,
+     "after": 394.3585831925683,
+     "base": 143.31207640407567,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "assassination-ml-raid": {
+     "before": 148.43345623985505,
+     "after": 394.1037256074423,
+     "base": 148.43345623985505,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -131,31 +163,45 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 6
+  "passes": 7
  },
  "raid": {
   "class": "rogue",
   "spec": "assassination-raid",
-  "date": "2026-10-02",
-  "commit": "40be98e",
+  "date": "2026-10-07",
+  "commit": "b0f0df3",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/rogue/dps/apls/forever_mutilate.apl.json",
   "start": "ui\\specs\\rogue\\dps\\apls\\forever_mutilate.apl.json",
   "builds": [
    {
-    "label": "ml: Assassination",
-    "talents": "0053031214150005-304313001013-002",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-assassination-bis.gear.json"
+    "label": "open winner",
+    "talents": "00530310301-30531300001515231-002"
    },
    {
     "label": "assassination-seal-fate-raid",
-    "talents": "0053031232150005-305313000013-002"
+    "talents": "0053031232150005-305313000013-002",
+    "protect_only": true
    },
    {
     "label": "sim preset: Mutilate",
-    "talents": "00530310551021051-302303202004"
+    "talents": "00530310551021051-302303202004",
+    "protect_only": true
+   },
+   {
+    "label": "assassination-mutilate-raid",
+    "talents": "0053031252112005-305313000015",
+    "protect_only": true
+   },
+   {
+    "label": "assassination-ml-raid",
+    "talents": "0053031052150005-305313000013-002",
+    "protect_only": true
    }
+  ],
+  "tuned_on": [
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -187,28 +233,46 @@
   ],
   "final": {
    "raid": {
-    "ml: Assassination": {
-     "before": 311.0352286129348,
-     "after": 696.5730781923928,
-     "base": 311.0352286129348,
+    "open winner": {
+     "before": 336.8080502038769,
+     "after": 770.7873494308664,
+     "base": 336.8080502038769,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "assassination-seal-fate-raid": {
-     "before": 294.14627242311184,
-     "after": 682.476629519118,
-     "base": 294.14627242311184,
+     "before": 321.71317478681215,
+     "after": 728.2166871587498,
+     "base": 321.71317478681215,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Mutilate": {
-     "before": 641.5858962562902,
-     "after": 647.9260806891301,
-     "base": 641.5858962562902,
+     "before": 700.8374718214079,
+     "after": 692.6816308968264,
+     "base": 700.8374718214079,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "assassination-mutilate-raid": {
+     "before": 317.9636295650043,
+     "after": 713.0569861219288,
+     "base": 317.9636295650043,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "assassination-ml-raid": {
+     "before": 321.71317478681215,
+     "after": 733.6952901672645,
+     "base": 321.71317478681215,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -217,6 +281,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 6
+  "passes": 7
  }
 }

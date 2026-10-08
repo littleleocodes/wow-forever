@@ -81,7 +81,7 @@ Seal Fate daggers with Vigor and Lethality: an Assassination Backstab build. It 
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-02, 9 changes to the base rotation; third-seed check: ml: Assassination 152 -> 411 DPS (+169.5%), assassination-seal-fate-raid 148 -> 407 DPS (+173.9%), sim preset: Mutilate 329 -> 371 DPS (+12.7%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 7 passes, the last 2026-10-07, 9 changes to the base rotation; third-seed check: open winner 149 -> 401 DPS (+169.4%), assassination-seal-fate-raid 148 -> 406 DPS (+173.7%), sim preset: Mutilate 335 -> 371 DPS (+10.8%), assassination-mutilate-raid 143 -> 394 DPS (+175.2%), assassination-ml-raid 148 -> 394 DPS (+165.5%)):
   1. insert at the top: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3: cast Expose Armor (+8.6%, pass 1)
   2. threshold 5 -> 3.75: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3: cast Expose Armor (+0.8%, pass 1)
   3. insert at the top: cast Backstab (+1.6%, pass 1)
@@ -91,7 +91,7 @@ Seal Fate daggers with Vigor and Lethality: an Assassination Backstab build. It 
   7. insert at the top: if energy ≤ 29 and timeToNextEnergyTick > 1 and combo points < 5 and not Adrenaline Rush is up: cast Thistle Tea + threshold 29 -> 43.5: if energy ≤ 29 and timeToNextEnergyTick > 1 and combo points < 5 and not Adrenaline Rush is up: cast Thistle Tea (+0.3%, pass 3)
   8. spell probe: insert at the end: cast Hemorrhage (+8.4%, pass 5)
   9. spell probe: insert at the top: if auraIsInactive: cast Ghostly Strike (+2.0%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-02, 3 changes to the base rotation; third-seed check: ml: Assassination 311 -> 697 DPS (+124.0%), assassination-seal-fate-raid 294 -> 682 DPS (+132.0%), sim preset: Mutilate 642 -> 648 DPS (+1.0%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 7 passes, the last 2026-10-07, 3 changes to the base rotation; third-seed check: open winner 337 -> 771 DPS (+128.9%), assassination-seal-fate-raid 322 -> 728 DPS (+126.4%), sim preset: Mutilate 701 -> 693 DPS (-1.2%), assassination-mutilate-raid 318 -> 713 DPS (+124.3%), assassination-ml-raid 322 -> 734 DPS (+128.1%)):
   1. insert before the filler: cast Backstab (+0.8%, pass 1)
   2. spell probe: insert at the end: cast Hemorrhage (+9.9%, pass 5)
   3. spell probe: insert in the middle: if auraIsInactive: cast Ghostly Strike (+1.8%, pass 5)

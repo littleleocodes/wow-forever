@@ -6126,5 +6126,73 @@
     "kept": false
    }
   ]
+ },
+ "rogue/combat-daggers-raid/raid/any": {
+  "class": "rogue",
+  "spec": "any",
+  "entry": "combat-daggers-raid",
+  "setting": "raid",
+  "date": "2026-10-07",
+  "base_dps": 772.07,
+  "abilities": [
+   {
+    "ability": "Blade Flurry",
+    "talent": "Blade Flurry",
+    "spell": 13877,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": -0.0011,
+     "split": "16/33/2",
+     "vs_spec_build": -0.0011
+    },
+    "kept": false
+   }
+  ]
+ },
+ "rogue/assassination-raid/raid/any": {
+  "class": "rogue",
+  "spec": "any",
+  "entry": "assassination-raid",
+  "setting": "raid",
+  "date": "2026-10-07",
+  "base_dps": 771.34,
+  "abilities": [
+   {
+    "ability": "Adrenaline Rush",
+    "talent": "Adrenaline Rush",
+    "spell": 13750,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": -0.0004,
+     "split": "16/33/2",
+     "vs_spec_build": -0.0004
+    },
+    "kept": false
+   },
+   {
+    "ability": "Blade Flurry",
+    "talent": "Blade Flurry",
+    "spell": 13877,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": -0.0002,
+     "split": "16/33/2",
+     "vs_spec_build": -0.0002
+    },
+    "kept": false
+   }
+  ]
  }
 }
