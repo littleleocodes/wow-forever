@@ -676,8 +676,8 @@
   "spec": "Beast Mastery",
   "entry": "bm-raid",
   "setting": "dummy",
-  "date": "2026-10-01",
-  "base_dps": 452.28,
+  "date": "2026-10-07",
+  "base_dps": 495.99,
   "abilities": [
    {
     "ability": "Bestial Wrath",
@@ -688,26 +688,10 @@
     "lines_tried": 36,
     "best": {
      "line": "aura not on you",
-     "spot": "at the top",
-     "gain_seed1": 0.0007,
+     "spot": "in the middle",
+     "gain_seed1": 0.0,
      "split": "31/20/0",
-     "vs_spec_build": -0.0076
-    },
-    "kept": false
-   },
-   {
-    "ability": "Intimidation",
-    "talent": "Intimidation",
-    "spell": 19577,
-    "builds": "one move from the spec's build",
-    "builds_tried": 53,
-    "lines_tried": 36,
-    "best": {
-     "line": "aura not on you",
-     "spot": "at the end",
-     "gain_seed1": 0.0001,
-     "split": "31/20/0",
-     "vs_spec_build": -0.0083
+     "vs_spec_build": 0.0078
     },
     "kept": false
    },
@@ -723,7 +707,7 @@
      "spot": "at the end",
      "gain_seed1": 0.0,
      "split": "30/21/0",
-     "vs_spec_build": -0.0131
+     "vs_spec_build": -0.011
     },
     "kept": false
    },
@@ -760,8 +744,8 @@
      "line": "aura not on you",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "35/0/16",
-     "vs_spec_build": -0.176
+     "split": "32/3/16",
+     "vs_spec_build": -0.1575
     },
     "kept": false
    },
@@ -776,8 +760,8 @@
      "line": "aura not on you",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "40/0/11",
-     "vs_spec_build": -0.1674
+     "split": "30/10/11",
+     "vs_spec_build": -0.1456
     },
     "kept": false
    },
@@ -793,7 +777,7 @@
      "spot": "at the end",
      "gain_seed1": 0.0,
      "split": "30/0/21",
-     "vs_spec_build": -0.2151
+     "vs_spec_build": -0.1905
     },
     "kept": false
    }
@@ -804,8 +788,8 @@
   "spec": "Beast Mastery",
   "entry": "bm-raid",
   "setting": "raid",
-  "date": "2026-10-01",
-  "base_dps": 747.79,
+  "date": "2026-10-07",
+  "base_dps": 860.91,
   "abilities": [
    {
     "ability": "Bestial Wrath",
@@ -817,9 +801,9 @@
     "best": {
      "line": "aura not on you",
      "spot": "at the top",
-     "gain_seed1": 0.0002,
+     "gain_seed1": 0.0005,
      "split": "32/19/0",
-     "vs_spec_build": 0.0142
+     "vs_spec_build": 0.018
     },
     "kept": false
    },
@@ -832,10 +816,10 @@
     "lines_tried": 36,
     "best": {
      "line": "aura not on you",
-     "spot": "in the middle",
-     "gain_seed1": 0.0001,
+     "spot": "at the end",
+     "gain_seed1": 0.0009,
      "split": "31/20/0",
-     "vs_spec_build": 0.0136
+     "vs_spec_build": 0.0182
     },
     "kept": false
    },
@@ -851,7 +835,7 @@
      "spot": "at the end",
      "gain_seed1": 0.0,
      "split": "30/21/0",
-     "vs_spec_build": -0.0072
+     "vs_spec_build": -0.0073
     },
     "kept": false
    },
@@ -888,8 +872,8 @@
      "line": "aura not on you",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "35/0/16",
-     "vs_spec_build": -0.1528
+     "split": "32/3/16",
+     "vs_spec_build": -0.1361
     },
     "kept": false
    },
@@ -904,8 +888,8 @@
      "line": "aura not on you",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "33/7/11",
-     "vs_spec_build": -0.13
+     "split": "31/6/14",
+     "vs_spec_build": -0.1204
     },
     "kept": false
    },
@@ -921,7 +905,7 @@
      "spot": "at the end",
      "gain_seed1": 0.0,
      "split": "30/0/21",
-     "vs_spec_build": -0.1674
+     "vs_spec_build": -0.158
     },
     "kept": false
    }
@@ -932,8 +916,8 @@
   "spec": "Marksmanship",
   "entry": "mm-lonewolf-raid",
   "setting": "dummy",
-  "date": "2026-10-01",
-  "base_dps": 437.45,
+  "date": "2026-10-07",
+  "base_dps": 460.08,
   "abilities": [
    {
     "ability": "Bestial Wrath",
@@ -953,46 +937,9 @@
      "spot": "at the end",
      "gain_seed1": 0.0,
      "split": "21/30/0",
-     "vs_spec_build": -0.1063
+     "vs_spec_build": -0.1379
     },
     "kept": false
-   },
-   {
-    "ability": "Summon Hawk",
-    "talent": "Summon Hawk",
-    "spell": 1293527,
-    "builds": "random builds of the spec holding it",
-    "builds_tried": 20,
-    "lines_tried": 36,
-    "best": {
-     "line": "aura not on you",
-     "spot": "at the top",
-     "gain_seed1": 0.0559,
-     "split": "16/32/3",
-     "vs_spec_build": -0.0514,
-     "gain_seed2": 0.0553
-    },
-    "kept": true,
-    "line": {
-     "action": {
-      "condition": {
-       "auraIsInactive": {
-        "sourceUnit": {
-         "type": "Self"
-        },
-        "auraId": {
-         "spellId": 1293527
-        }
-       }
-      },
-      "castSpell": {
-       "spellId": {
-        "spellId": 1293527
-       }
-      }
-     }
-    },
-    "at": 0
    },
    {
     "ability": "Scatter Shot",
@@ -1006,7 +953,7 @@
      "spot": "at the end",
      "gain_seed1": 0.0,
      "split": "5/38/8",
-     "vs_spec_build": -0.0025
+     "vs_spec_build": -0.0022
     },
     "kept": false
    },
@@ -1016,13 +963,13 @@
     "spell": 1310786,
     "builds": "one move from the spec's build",
     "builds_tried": 9,
-    "lines_tried": 12,
+    "lines_tried": 36,
     "best": {
-     "line": "plain",
+     "line": "aura not on you",
      "spot": "at the end",
-     "gain_seed1": -0.0497,
+     "gain_seed1": -0.0342,
      "split": "5/38/8",
-     "vs_spec_build": -0.052
+     "vs_spec_build": -0.0363
     },
     "kept": false
    },
@@ -1053,8 +1000,8 @@
      "line": "aura not on you",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "3/32/16",
-     "vs_spec_build": -0.1201
+     "split": "4/30/17",
+     "vs_spec_build": -0.1532
     },
     "kept": false
    },
@@ -1062,15 +1009,15 @@
     "ability": "Deterrence",
     "talent": "Deterrence",
     "spell": 19263,
-    "builds": "random builds of the spec holding it",
-    "builds_tried": 20,
+    "builds": "one move from the spec's build",
+    "builds_tried": 35,
     "lines_tried": 36,
     "best": {
      "line": "aura not on you",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "0/40/11",
-     "vs_spec_build": -0.1109
+     "split": "5/35/11",
+     "vs_spec_build": 0.0011
     },
     "kept": false
    },
@@ -1086,7 +1033,7 @@
      "spot": "at the end",
      "gain_seed1": 0.0,
      "split": "0/30/21",
-     "vs_spec_build": -0.1726
+     "vs_spec_build": -0.1616
     },
     "kept": false
    }
@@ -1097,8 +1044,8 @@
   "spec": "Marksmanship",
   "entry": "mm-lonewolf-raid",
   "setting": "raid",
-  "date": "2026-10-01",
-  "base_dps": 827.2,
+  "date": "2026-10-07",
+  "base_dps": 904.36,
   "abilities": [
    {
     "ability": "Bestial Wrath",
@@ -1118,46 +1065,9 @@
      "spot": "at the end",
      "gain_seed1": 0.0,
      "split": "21/30/0",
-     "vs_spec_build": -0.1137
+     "vs_spec_build": -0.1822
     },
     "kept": false
-   },
-   {
-    "ability": "Summon Hawk",
-    "talent": "Summon Hawk",
-    "spell": 1293527,
-    "builds": "random builds of the spec holding it",
-    "builds_tried": 20,
-    "lines_tried": 36,
-    "best": {
-     "line": "aura not on you",
-     "spot": "at the top",
-     "gain_seed1": 0.024,
-     "split": "16/32/3",
-     "vs_spec_build": -0.0504,
-     "gain_seed2": 0.0228
-    },
-    "kept": true,
-    "line": {
-     "action": {
-      "condition": {
-       "auraIsInactive": {
-        "sourceUnit": {
-         "type": "Self"
-        },
-        "auraId": {
-         "spellId": 1293527
-        }
-       }
-      },
-      "castSpell": {
-       "spellId": {
-        "spellId": 1293527
-       }
-      }
-     }
-    },
-    "at": 0
    },
    {
     "ability": "Scatter Shot",
@@ -1171,7 +1081,7 @@
      "spot": "at the end",
      "gain_seed1": 0.0,
      "split": "5/38/8",
-     "vs_spec_build": -0.004
+     "vs_spec_build": -0.0037
     },
     "kept": false
    },
@@ -1202,8 +1112,8 @@
      "line": "aura not on you",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "5/30/16",
-     "vs_spec_build": -0.1381
+     "split": "4/30/17",
+     "vs_spec_build": -0.155
     },
     "kept": false
    },
@@ -1211,15 +1121,15 @@
     "ability": "Deterrence",
     "talent": "Deterrence",
     "spell": 19263,
-    "builds": "random builds of the spec holding it",
-    "builds_tried": 20,
+    "builds": "one move from the spec's build",
+    "builds_tried": 35,
     "lines_tried": 36,
     "best": {
      "line": "aura not on you",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "0/40/11",
-     "vs_spec_build": -0.0848
+     "split": "5/35/11",
+     "vs_spec_build": -0.0016
     },
     "kept": false
    },
@@ -1235,7 +1145,7 @@
      "spot": "at the end",
      "gain_seed1": 0.0,
      "split": "0/30/21",
-     "vs_spec_build": -0.1854
+     "vs_spec_build": -0.1605
     },
     "kept": false
    }
@@ -1246,67 +1156,14 @@
   "spec": "Marksmanship",
   "entry": "mm-raid",
   "setting": "dummy",
-  "date": "2026-10-01",
-  "base_dps": 395.95,
+  "date": "2026-10-07",
+  "base_dps": 435.05,
   "abilities": [
    {
     "ability": "Bestial Wrath",
     "talent": "Bestial Wrath",
     "kept": false,
     "result": "no legal build of the spec can hold it"
-   },
-   {
-    "ability": "Intimidation",
-    "talent": "Intimidation",
-    "spell": 19577,
-    "builds": "random builds of the spec holding it",
-    "builds_tried": 20,
-    "lines_tried": 36,
-    "best": {
-     "line": "aura not on you",
-     "spot": "at the end",
-     "gain_seed1": 0.0005,
-     "split": "21/30/0",
-     "vs_spec_build": -0.0544
-    },
-    "kept": false
-   },
-   {
-    "ability": "Summon Hawk",
-    "talent": "Summon Hawk",
-    "spell": 1293527,
-    "builds": "random builds of the spec holding it",
-    "builds_tried": 20,
-    "lines_tried": 36,
-    "best": {
-     "line": "aura not on you",
-     "spot": "at the top",
-     "gain_seed1": 0.0639,
-     "split": "16/32/3",
-     "vs_spec_build": -0.0141,
-     "gain_seed2": 0.0641
-    },
-    "kept": true,
-    "line": {
-     "action": {
-      "condition": {
-       "auraIsInactive": {
-        "sourceUnit": {
-         "type": "Self"
-        },
-        "auraId": {
-         "spellId": 1293527
-        }
-       }
-      },
-      "castSpell": {
-       "spellId": {
-        "spellId": 1293527
-       }
-      }
-     }
-    },
-    "at": 0
    },
    {
     "ability": "Scatter Shot",
@@ -1330,162 +1187,13 @@
     "spell": 1310786,
     "builds": "one move from the spec's build",
     "builds_tried": 9,
-    "lines_tried": 12,
+    "lines_tried": 36,
     "best": {
-     "line": "plain",
+     "line": "aura not on you",
      "spot": "at the end",
-     "gain_seed1": -0.0386,
+     "gain_seed1": -0.0339,
      "split": "5/39/7",
-     "vs_spec_build": -0.0386
-    },
-    "kept": false
-   },
-   {
-    "ability": "Trueshot Aura",
-    "talent": "Trueshot Aura",
-    "spell": 20906,
-    "builds": "the spec's build",
-    "builds_tried": 1,
-    "lines_tried": 4,
-    "best": {
-     "line": "plain",
-     "spot": "at the end",
-     "gain_seed1": 0.0,
-     "split": "5/38/8",
-     "vs_spec_build": 0.0
-    },
-    "kept": false
-   },
-   {
-    "ability": "Counterattack",
-    "talent": "Counterattack",
-    "spell": 20910,
-    "builds": "random builds of the spec holding it",
-    "builds_tried": 20,
-    "lines_tried": 36,
-    "best": {
-     "line": "aura not on you",
-     "spot": "at the end",
-     "gain_seed1": 0.0,
-     "split": "3/32/16",
-     "vs_spec_build": -0.1074
-    },
-    "kept": false
-   },
-   {
-    "ability": "Deterrence",
-    "talent": "Deterrence",
-    "spell": 19263,
-    "builds": "random builds of the spec holding it",
-    "builds_tried": 20,
-    "lines_tried": 36,
-    "best": {
-     "line": "aura not on you",
-     "spot": "at the end",
-     "gain_seed1": 0.0,
-     "split": "0/40/11",
-     "vs_spec_build": -0.1054
-    },
-    "kept": false
-   },
-   {
-    "ability": "Strider Kick",
-    "talent": "Strider Kick",
-    "spell": 1317257,
-    "builds": "random builds of the spec holding it",
-    "builds_tried": 20,
-    "lines_tried": 36,
-    "best": {
-     "line": "aura not on you",
-     "spot": "at the end",
-     "gain_seed1": 0.0,
-     "split": "0/30/21",
-     "vs_spec_build": -0.1507
-    },
-    "kept": false
-   }
-  ]
- },
- "hunter/mm-raid/raid/Marksmanship": {
-  "class": "hunter",
-  "spec": "Marksmanship",
-  "entry": "mm-raid",
-  "setting": "raid",
-  "date": "2026-10-01",
-  "base_dps": 748.13,
-  "abilities": [
-   {
-    "ability": "Bestial Wrath",
-    "talent": "Bestial Wrath",
-    "kept": false,
-    "result": "no legal build of the spec can hold it"
-   },
-   {
-    "ability": "Intimidation",
-    "talent": "Intimidation",
-    "spell": 19577,
-    "builds": "random builds of the spec holding it",
-    "builds_tried": 20,
-    "lines_tried": 36,
-    "best": {
-     "line": "aura not on you",
-     "spot": "in the middle",
-     "gain_seed1": 0.0002,
-     "split": "21/30/0",
-     "vs_spec_build": -0.0743
-    },
-    "kept": false
-   },
-   {
-    "ability": "Summon Hawk",
-    "talent": "Summon Hawk",
-    "spell": 1293527,
-    "builds": "random builds of the spec holding it",
-    "builds_tried": 20,
-    "lines_tried": 36,
-    "best": {
-     "line": "aura not on you",
-     "spot": "at the top",
-     "gain_seed1": 0.0128,
-     "split": "16/32/3",
-     "vs_spec_build": -0.0339,
-     "gain_seed2": 0.0127
-    },
-    "kept": true,
-    "line": {
-     "action": {
-      "condition": {
-       "auraIsInactive": {
-        "sourceUnit": {
-         "type": "Self"
-        },
-        "auraId": {
-         "spellId": 1293527
-        }
-       }
-      },
-      "castSpell": {
-       "spellId": {
-        "spellId": 1293527
-       }
-      }
-     }
-    },
-    "at": 0
-   },
-   {
-    "ability": "Scatter Shot",
-    "talent": "Scatter Shot",
-    "spell": 19503,
-    "builds": "one move from the spec's build",
-    "builds_tried": 10,
-    "lines_tried": 36,
-    "best": {
-     "line": "aura not on you",
-     "spot": "at the end",
-     "gain_seed1": 0.0,
-     "split": "5/38/8",
-     "vs_spec_build": -0.0001
+     "vs_spec_build": -0.0339
     },
     "kept": false
    },
@@ -1517,7 +1225,7 @@
      "spot": "at the end",
      "gain_seed1": 0.0,
      "split": "2/33/16",
-     "vs_spec_build": -0.1245
+     "vs_spec_build": -0.0914
     },
     "kept": false
    },
@@ -1525,15 +1233,15 @@
     "ability": "Deterrence",
     "talent": "Deterrence",
     "spell": 19263,
-    "builds": "random builds of the spec holding it",
-    "builds_tried": 20,
+    "builds": "one move from the spec's build",
+    "builds_tried": 35,
     "lines_tried": 36,
     "best": {
      "line": "aura not on you",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "0/40/11",
-     "vs_spec_build": -0.0805
+     "split": "5/35/11",
+     "vs_spec_build": 0.003
     },
     "kept": false
    },
@@ -1549,7 +1257,103 @@
      "spot": "at the end",
      "gain_seed1": 0.0,
      "split": "0/30/21",
-     "vs_spec_build": -0.1696
+     "vs_spec_build": -0.1487
+    },
+    "kept": false
+   }
+  ]
+ },
+ "hunter/mm-raid/raid/Marksmanship": {
+  "class": "hunter",
+  "spec": "Marksmanship",
+  "entry": "mm-raid",
+  "setting": "raid",
+  "date": "2026-10-07",
+  "base_dps": 841.94,
+  "abilities": [
+   {
+    "ability": "Bestial Wrath",
+    "talent": "Bestial Wrath",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Scatter Shot",
+    "talent": "Scatter Shot",
+    "spell": 19503,
+    "builds": "one move from the spec's build",
+    "builds_tried": 10,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "5/38/8",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Trueshot Aura",
+    "talent": "Trueshot Aura",
+    "spell": 20906,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "5/38/8",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Counterattack",
+    "talent": "Counterattack",
+    "spell": 20910,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "0/31/20",
+     "vs_spec_build": -0.1105
+    },
+    "kept": false
+   },
+   {
+    "ability": "Deterrence",
+    "talent": "Deterrence",
+    "spell": 19263,
+    "builds": "one move from the spec's build",
+    "builds_tried": 35,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "5/35/11",
+     "vs_spec_build": -0.0004
+    },
+    "kept": false
+   },
+   {
+    "ability": "Strider Kick",
+    "talent": "Strider Kick",
+    "spell": 1317257,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "0/30/21",
+     "vs_spec_build": -0.1602
     },
     "kept": false
    }
@@ -1560,8 +1364,8 @@
   "spec": "Survival",
   "entry": "melee-dps",
   "setting": "dummy",
-  "date": "2026-10-01",
-  "base_dps": 444.75,
+  "date": "2026-10-07",
+  "base_dps": 466.81,
   "abilities": [
    {
     "ability": "Bestial Wrath",
@@ -1581,60 +1385,23 @@
      "spot": "at the end",
      "gain_seed1": 0.0,
      "split": "21/0/30",
-     "vs_spec_build": -0.4484
+     "vs_spec_build": -0.4019
     },
     "kept": false
-   },
-   {
-    "ability": "Summon Hawk",
-    "talent": "Summon Hawk",
-    "spell": 1293527,
-    "builds": "random builds of the spec holding it",
-    "builds_tried": 20,
-    "lines_tried": 36,
-    "best": {
-     "line": "aura not on you",
-     "spot": "at the top",
-     "gain_seed1": 0.1431,
-     "split": "16/2/33",
-     "vs_spec_build": -0.3496,
-     "gain_seed2": 0.1432
-    },
-    "kept": true,
-    "line": {
-     "action": {
-      "condition": {
-       "auraIsInactive": {
-        "sourceUnit": {
-         "type": "Self"
-        },
-        "auraId": {
-         "spellId": 1293527
-        }
-       }
-      },
-      "castSpell": {
-       "spellId": {
-        "spellId": 1293527
-       }
-      }
-     }
-    },
-    "at": 0
    },
    {
     "ability": "Scatter Shot",
     "talent": "Scatter Shot",
     "spell": 19503,
-    "builds": "random builds of the spec holding it",
-    "builds_tried": 20,
+    "builds": "one move from the spec's build",
+    "builds_tried": 3,
     "lines_tried": 36,
     "best": {
      "line": "aura not on you",
      "spot": "at the end",
      "gain_seed1": 0.0,
      "split": "0/21/30",
-     "vs_spec_build": -0.3231
+     "vs_spec_build": -0.068
     },
     "kept": false
    },
@@ -1656,7 +1423,7 @@
      "spot": "at the end",
      "gain_seed1": 0.0,
      "split": "5/16/30",
-     "vs_spec_build": -0.0133
+     "vs_spec_build": -0.0109
     },
     "kept": false
    },
@@ -1683,8 +1450,8 @@
   "spec": "Survival",
   "entry": "melee-dps",
   "setting": "raid",
-  "date": "2026-10-01",
-  "base_dps": 967.33,
+  "date": "2026-10-07",
+  "base_dps": 1069.65,
   "abilities": [
    {
     "ability": "Bestial Wrath",
@@ -1704,60 +1471,23 @@
      "spot": "at the end",
      "gain_seed1": 0.0,
      "split": "21/0/30",
-     "vs_spec_build": -0.3608
+     "vs_spec_build": -0.2962
     },
     "kept": false
-   },
-   {
-    "ability": "Summon Hawk",
-    "talent": "Summon Hawk",
-    "spell": 1293527,
-    "builds": "random builds of the spec holding it",
-    "builds_tried": 20,
-    "lines_tried": 36,
-    "best": {
-     "line": "aura not on you",
-     "spot": "in the middle",
-     "gain_seed1": 0.1521,
-     "split": "20/0/31",
-     "vs_spec_build": -0.2189,
-     "gain_seed2": 0.1502
-    },
-    "kept": true,
-    "line": {
-     "action": {
-      "condition": {
-       "auraIsInactive": {
-        "sourceUnit": {
-         "type": "Self"
-        },
-        "auraId": {
-         "spellId": 1293527
-        }
-       }
-      },
-      "castSpell": {
-       "spellId": {
-        "spellId": 1293527
-       }
-      }
-     }
-    },
-    "at": 4
    },
    {
     "ability": "Scatter Shot",
     "talent": "Scatter Shot",
     "spell": 19503,
-    "builds": "random builds of the spec holding it",
-    "builds_tried": 20,
+    "builds": "one move from the spec's build",
+    "builds_tried": 3,
     "lines_tried": 36,
     "best": {
      "line": "aura not on you",
      "spot": "at the end",
      "gain_seed1": 0.0,
      "split": "0/21/30",
-     "vs_spec_build": -0.2964
+     "vs_spec_build": -0.0851
     },
     "kept": false
    },
@@ -1778,8 +1508,8 @@
      "line": "plain",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "5/16/30",
-     "vs_spec_build": -0.0114
+     "split": "4/17/30",
+     "vs_spec_build": -0.0126
     },
     "kept": false
    },
@@ -1806,29 +1536,23 @@
   "spec": "Hybrid Beast Mastery/Marksmanship",
   "entry": "bm-raid",
   "setting": "dummy",
-  "date": "2026-10-01",
-  "base_dps": 460.63,
+  "date": "2026-10-07",
+  "base_dps": 499.61,
   "abilities": [
    {
     "ability": "Bestial Wrath",
     "talent": "Bestial Wrath",
-    "kept": false,
-    "result": "no legal build of the spec can hold it"
-   },
-   {
-    "ability": "Intimidation",
-    "talent": "Intimidation",
-    "spell": 19577,
-    "builds": "one move from the spec's build",
-    "builds_tried": 12,
+    "spell": 19574,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
     "lines_tried": 36,
     "best": {
      "line": "aura not on you",
-     "spot": "at the end",
-     "gain_seed1": 0.0051,
-     "split": "22/29/0",
-     "vs_spec_build": -0.0201,
-     "gain_seed2": 0.0049
+     "spot": "before the filler",
+     "gain_seed1": 0.0093,
+     "split": "31/13/7",
+     "vs_spec_build": -0.1282,
+     "gain_seed2": 0.0098
     },
     "kept": true,
     "line": {
@@ -1839,13 +1563,13 @@
          "type": "Self"
         },
         "auraId": {
-         "spellId": 19577
+         "spellId": 19574
         }
        }
       },
       "castSpell": {
        "spellId": {
-        "spellId": 19577
+        "spellId": 19574
        }
       }
      }
@@ -1857,36 +1581,46 @@
     "talent": "Scatter Shot",
     "spell": 19503,
     "builds": "one move from the spec's build",
-    "builds_tried": 7,
+    "builds_tried": 16,
     "lines_tried": 36,
     "best": {
      "line": "aura not on you",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "22/29/0",
-     "vs_spec_build": -0.0046
+     "split": "27/21/3",
+     "vs_spec_build": -0.0072
     },
     "kept": false
    },
    {
     "ability": "Sniper Shot",
     "talent": "Sniper Shot",
-    "kept": false,
-    "result": "no legal build of the spec can hold it"
+    "spell": 1310786,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": -0.0157,
+     "split": "18/31/2",
+     "vs_spec_build": -0.1944
+    },
+    "kept": false
    },
    {
     "ability": "Trueshot Aura",
     "talent": "Trueshot Aura",
     "spell": 20906,
-    "builds": "the spec's build",
-    "builds_tried": 1,
-    "lines_tried": 4,
+    "builds": "one move from the spec's build",
+    "builds_tried": 11,
+    "lines_tried": 12,
     "best": {
      "line": "plain",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "22/29/0",
-     "vs_spec_build": 0.0
+     "split": "26/20/5",
+     "vs_spec_build": 0.0075
     },
     "kept": false
    },
@@ -1901,8 +1635,8 @@
      "line": "aura not on you",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "17/18/16",
-     "vs_spec_build": -0.1969
+     "split": "26/6/19",
+     "vs_spec_build": -0.1855
     },
     "kept": false
    },
@@ -1910,6 +1644,22 @@
     "ability": "Deterrence",
     "talent": "Deterrence",
     "spell": 19263,
+    "builds": "one move from the spec's build",
+    "builds_tried": 3,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "21/19/11",
+     "vs_spec_build": -0.0702
+    },
+    "kept": false
+   },
+   {
+    "ability": "Strider Kick",
+    "talent": "Strider Kick",
+    "spell": 1317257,
     "builds": "random builds of the spec holding it",
     "builds_tried": 20,
     "lines_tried": 36,
@@ -1917,16 +1667,10 @@
      "line": "aura not on you",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "25/15/11",
-     "vs_spec_build": -0.1871
+     "split": "15/15/21",
+     "vs_spec_build": -0.4212
     },
     "kept": false
-   },
-   {
-    "ability": "Strider Kick",
-    "talent": "Strider Kick",
-    "kept": false,
-    "result": "no legal build of the spec can hold it"
    }
   ]
  },
@@ -1935,28 +1679,38 @@
   "spec": "Hybrid Beast Mastery/Marksmanship",
   "entry": "bm-raid",
   "setting": "raid",
-  "date": "2026-10-01",
-  "base_dps": 797.53,
+  "date": "2026-10-07",
+  "base_dps": 896.6,
   "abilities": [
    {
     "ability": "Bestial Wrath",
     "talent": "Bestial Wrath",
-    "kept": false,
-    "result": "no legal build of the spec can hold it"
+    "spell": 19574,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the top",
+     "gain_seed1": 0.0007,
+     "split": "37/14/0",
+     "vs_spec_build": -0.1161
+    },
+    "kept": false
    },
    {
     "ability": "Intimidation",
     "talent": "Intimidation",
     "spell": 19577,
     "builds": "one move from the spec's build",
-    "builds_tried": 12,
+    "builds_tried": 53,
     "lines_tried": 36,
     "best": {
      "line": "aura not on you",
      "spot": "at the end",
-     "gain_seed1": 0.0,
-     "split": "22/29/0",
-     "vs_spec_build": -0.0078
+     "gain_seed1": 0.0008,
+     "split": "27/19/5",
+     "vs_spec_build": 0.0011
     },
     "kept": false
    },
@@ -1965,36 +1719,67 @@
     "talent": "Scatter Shot",
     "spell": 19503,
     "builds": "one move from the spec's build",
-    "builds_tried": 7,
+    "builds_tried": 16,
     "lines_tried": 36,
     "best": {
      "line": "aura not on you",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "22/29/0",
-     "vs_spec_build": -0.0001
+     "split": "27/21/3",
+     "vs_spec_build": -0.0155
     },
     "kept": false
    },
    {
     "ability": "Sniper Shot",
     "talent": "Sniper Shot",
-    "kept": false,
-    "result": "no legal build of the spec can hold it"
+    "spell": 1310786,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "in the middle",
+     "gain_seed1": 0.0352,
+     "split": "0/45/6",
+     "vs_spec_build": -0.1146,
+     "gain_seed2": 0.035
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "condition": {
+       "auraIsInactive": {
+        "sourceUnit": {
+         "type": "Self"
+        },
+        "auraId": {
+         "spellId": 1310786
+        }
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "spellId": 1310786
+       }
+      }
+     }
+    },
+    "at": 4
    },
    {
     "ability": "Trueshot Aura",
     "talent": "Trueshot Aura",
     "spell": 20906,
-    "builds": "the spec's build",
-    "builds_tried": 1,
-    "lines_tried": 4,
+    "builds": "one move from the spec's build",
+    "builds_tried": 11,
+    "lines_tried": 12,
     "best": {
      "line": "plain",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "22/29/0",
-     "vs_spec_build": 0.0
+     "split": "26/20/5",
+     "vs_spec_build": -0.0085
     },
     "kept": false
    },
@@ -2010,7 +1795,7 @@
      "spot": "at the end",
      "gain_seed1": 0.0,
      "split": "17/18/16",
-     "vs_spec_build": -0.174
+     "vs_spec_build": -0.1546
     },
     "kept": false
    },
@@ -2018,6 +1803,22 @@
     "ability": "Deterrence",
     "talent": "Deterrence",
     "spell": 19263,
+    "builds": "one move from the spec's build",
+    "builds_tried": 3,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "21/19/11",
+     "vs_spec_build": -0.0568
+    },
+    "kept": false
+   },
+   {
+    "ability": "Strider Kick",
+    "talent": "Strider Kick",
+    "spell": 1317257,
     "builds": "random builds of the spec holding it",
     "builds_tried": 20,
     "lines_tried": 36,
@@ -2025,16 +1826,10 @@
      "line": "aura not on you",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "20/20/11",
-     "vs_spec_build": -0.1795
+     "split": "18/12/21",
+     "vs_spec_build": -0.2084
     },
     "kept": false
-   },
-   {
-    "ability": "Strider Kick",
-    "talent": "Strider Kick",
-    "kept": false,
-    "result": "no legal build of the spec can hold it"
    }
   ]
  },
@@ -2043,66 +1838,91 @@
   "spec": "Hybrid Beast Mastery/Marksmanship",
   "entry": "mm-raid",
   "setting": "dummy",
-  "date": "2026-10-01",
-  "base_dps": 450.55,
+  "date": "2026-10-07",
+  "base_dps": 494.11,
   "abilities": [
    {
     "ability": "Bestial Wrath",
     "talent": "Bestial Wrath",
-    "kept": false,
-    "result": "no legal build of the spec can hold it"
-   },
-   {
-    "ability": "Intimidation",
-    "talent": "Intimidation",
-    "spell": 19577,
-    "builds": "one move from the spec's build",
-    "builds_tried": 12,
+    "spell": 19574,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
     "lines_tried": 36,
     "best": {
      "line": "aura not on you",
-     "spot": "at the end",
-     "gain_seed1": 0.0004,
-     "split": "24/27/0",
-     "vs_spec_build": -0.0218
+     "spot": "at the top",
+     "gain_seed1": 0.0042,
+     "split": "37/14/0",
+     "vs_spec_build": -0.1384,
+     "gain_seed2": 0.0043
     },
-    "kept": false
+    "kept": true,
+    "line": {
+     "action": {
+      "condition": {
+       "auraIsInactive": {
+        "sourceUnit": {
+         "type": "Self"
+        },
+        "auraId": {
+         "spellId": 19574
+        }
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "spellId": 19574
+       }
+      }
+     }
+    },
+    "at": 0
    },
    {
     "ability": "Scatter Shot",
     "talent": "Scatter Shot",
     "spell": 19503,
     "builds": "one move from the spec's build",
-    "builds_tried": 7,
+    "builds_tried": 16,
     "lines_tried": 36,
     "best": {
      "line": "aura not on you",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "22/29/0",
-     "vs_spec_build": -0.006
+     "split": "27/21/3",
+     "vs_spec_build": -0.0098
     },
     "kept": false
    },
    {
     "ability": "Sniper Shot",
     "talent": "Sniper Shot",
-    "kept": false,
-    "result": "no legal build of the spec can hold it"
+    "spell": 1310786,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": -0.0192,
+     "split": "19/31/1",
+     "vs_spec_build": -0.1638
+    },
+    "kept": false
    },
    {
     "ability": "Trueshot Aura",
     "talent": "Trueshot Aura",
     "spell": 20906,
-    "builds": "the spec's build",
-    "builds_tried": 1,
-    "lines_tried": 4,
+    "builds": "one move from the spec's build",
+    "builds_tried": 11,
+    "lines_tried": 12,
     "best": {
      "line": "plain",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "22/29/0",
-     "vs_spec_build": 0.0
+     "split": "26/20/5",
+     "vs_spec_build": 0.0075
     },
     "kept": false
    },
@@ -2118,7 +1938,7 @@
      "spot": "at the end",
      "gain_seed1": 0.0,
      "split": "17/18/16",
-     "vs_spec_build": -0.201
+     "vs_spec_build": -0.2035
     },
     "kept": false
    },
@@ -2126,6 +1946,22 @@
     "ability": "Deterrence",
     "talent": "Deterrence",
     "spell": 19263,
+    "builds": "one move from the spec's build",
+    "builds_tried": 3,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "21/19/11",
+     "vs_spec_build": -0.0894
+    },
+    "kept": false
+   },
+   {
+    "ability": "Strider Kick",
+    "talent": "Strider Kick",
+    "spell": 1317257,
     "builds": "random builds of the spec holding it",
     "builds_tried": 20,
     "lines_tried": 36,
@@ -2133,16 +1969,10 @@
      "line": "aura not on you",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "17/20/14",
-     "vs_spec_build": -0.2077
+     "split": "15/15/21",
+     "vs_spec_build": -0.2514
     },
     "kept": false
-   },
-   {
-    "ability": "Strider Kick",
-    "talent": "Strider Kick",
-    "kept": false,
-    "result": "no legal build of the spec can hold it"
    }
   ]
  },
@@ -2151,28 +1981,22 @@
   "spec": "Hybrid Beast Mastery/Marksmanship",
   "entry": "mm-raid",
   "setting": "raid",
-  "date": "2026-10-01",
-  "base_dps": 786.42,
+  "date": "2026-10-07",
+  "base_dps": 870.0,
   "abilities": [
    {
     "ability": "Bestial Wrath",
     "talent": "Bestial Wrath",
-    "kept": false,
-    "result": "no legal build of the spec can hold it"
-   },
-   {
-    "ability": "Intimidation",
-    "talent": "Intimidation",
-    "spell": 19577,
-    "builds": "one move from the spec's build",
-    "builds_tried": 12,
+    "spell": 19574,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
     "lines_tried": 36,
     "best": {
      "line": "aura not on you",
-     "spot": "in the middle",
-     "gain_seed1": 0.0,
-     "split": "22/29/0",
-     "vs_spec_build": -0.0094
+     "spot": "at the top",
+     "gain_seed1": 0.0003,
+     "split": "35/15/1",
+     "vs_spec_build": -0.1244
     },
     "kept": false
    },
@@ -2181,14 +2005,14 @@
     "talent": "Scatter Shot",
     "spell": 19503,
     "builds": "one move from the spec's build",
-    "builds_tried": 7,
+    "builds_tried": 16,
     "lines_tried": 36,
     "best": {
      "line": "aura not on you",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "22/29/0",
-     "vs_spec_build": -0.0053
+     "split": "27/21/3",
+     "vs_spec_build": -0.0087
     },
     "kept": false
    },
@@ -2196,15 +2020,15 @@
     "ability": "Trueshot Aura",
     "talent": "Trueshot Aura",
     "spell": 20906,
-    "builds": "the spec's build",
-    "builds_tried": 1,
-    "lines_tried": 4,
+    "builds": "one move from the spec's build",
+    "builds_tried": 11,
+    "lines_tried": 12,
     "best": {
      "line": "plain",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "22/29/0",
-     "vs_spec_build": 0.0
+     "split": "26/20/5",
+     "vs_spec_build": 0.0082
     },
     "kept": false
    },
@@ -2219,8 +2043,8 @@
      "line": "aura not on you",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "18/17/16",
-     "vs_spec_build": -0.162
+     "split": "11/24/16",
+     "vs_spec_build": -0.1892
     },
     "kept": false
    },
@@ -2228,6 +2052,22 @@
     "ability": "Deterrence",
     "talent": "Deterrence",
     "spell": 19263,
+    "builds": "one move from the spec's build",
+    "builds_tried": 3,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "21/19/11",
+     "vs_spec_build": -0.0502
+    },
+    "kept": false
+   },
+   {
+    "ability": "Strider Kick",
+    "talent": "Strider Kick",
+    "spell": 1317257,
     "builds": "random builds of the spec holding it",
     "builds_tried": 20,
     "lines_tried": 36,
@@ -2235,16 +2075,10 @@
      "line": "aura not on you",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "20/20/11",
-     "vs_spec_build": -0.1564
+     "split": "15/15/21",
+     "vs_spec_build": -0.2008
     },
     "kept": false
-   },
-   {
-    "ability": "Strider Kick",
-    "talent": "Strider Kick",
-    "kept": false,
-    "result": "no legal build of the spec can hold it"
    }
   ]
  },
@@ -6076,6 +5910,218 @@
      "gain_seed1": 0.0002,
      "split": "18/33/0",
      "vs_spec_build": 0.0002
+    },
+    "kept": false
+   }
+  ]
+ },
+ "hunter/melee-dps/dummy/Hybrid Beast Mastery/Survival": {
+  "class": "hunter",
+  "spec": "Hybrid Beast Mastery/Survival",
+  "entry": "melee-dps",
+  "setting": "dummy",
+  "date": "2026-10-07",
+  "base_dps": 380.58,
+  "abilities": [
+   {
+    "ability": "Bestial Wrath",
+    "talent": "Bestial Wrath",
+    "spell": 19574,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "32/15/4",
+     "vs_spec_build": -0.3501
+    },
+    "kept": false
+   },
+   {
+    "ability": "Intimidation",
+    "talent": "Intimidation",
+    "spell": 19577,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "21/6/24",
+     "vs_spec_build": -0.3548
+    },
+    "kept": false
+   },
+   {
+    "ability": "Scatter Shot",
+    "talent": "Scatter Shot",
+    "spell": 19503,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "10/21/20",
+     "vs_spec_build": -0.3142
+    },
+    "kept": false
+   },
+   {
+    "ability": "Sniper Shot",
+    "talent": "Sniper Shot",
+    "spell": 1310786,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "10/31/10",
+     "vs_spec_build": -0.3416
+    },
+    "kept": false
+   },
+   {
+    "ability": "Trueshot Aura",
+    "talent": "Trueshot Aura",
+    "spell": 20906,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "4/16/31",
+     "vs_spec_build": -0.2939
+    },
+    "kept": false
+   },
+   {
+    "ability": "Deterrence",
+    "talent": "Deterrence",
+    "spell": 19263,
+    "builds": "one move from the spec's build",
+    "builds_tried": 40,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "16/11/24",
+     "vs_spec_build": -0.0051
+    },
+    "kept": false
+   }
+  ]
+ },
+ "hunter/melee-dps/raid/Hybrid Beast Mastery/Survival": {
+  "class": "hunter",
+  "spec": "Hybrid Beast Mastery/Survival",
+  "entry": "melee-dps",
+  "setting": "raid",
+  "date": "2026-10-07",
+  "base_dps": 1156.34,
+  "abilities": [
+   {
+    "ability": "Bestial Wrath",
+    "talent": "Bestial Wrath",
+    "spell": 19574,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "40/6/5",
+     "vs_spec_build": -0.3959
+    },
+    "kept": false
+   },
+   {
+    "ability": "Intimidation",
+    "talent": "Intimidation",
+    "spell": 19577,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "26/20/5",
+     "vs_spec_build": -0.3961
+    },
+    "kept": false
+   },
+   {
+    "ability": "Scatter Shot",
+    "talent": "Scatter Shot",
+    "spell": 19503,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "14/21/16",
+     "vs_spec_build": -0.3524
+    },
+    "kept": false
+   },
+   {
+    "ability": "Sniper Shot",
+    "talent": "Sniper Shot",
+    "spell": 1310786,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "10/31/10",
+     "vs_spec_build": -0.3673
+    },
+    "kept": false
+   },
+   {
+    "ability": "Trueshot Aura",
+    "talent": "Trueshot Aura",
+    "spell": 20906,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "4/16/31",
+     "vs_spec_build": -0.3606
+    },
+    "kept": false
+   },
+   {
+    "ability": "Deterrence",
+    "talent": "Deterrence",
+    "spell": 19263,
+    "builds": "one move from the spec's build",
+    "builds_tried": 40,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "16/11/24",
+     "vs_spec_build": -0.0068
     },
     "kept": false
    }

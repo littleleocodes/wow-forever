@@ -9,10 +9,14 @@
     ],
     [
      "Endurance Training",
-     4
+     1
     ],
     [
      "Focused Fire",
+     2
+    ],
+    [
+     "Improved Aspect of the Monkey",
      2
     ],
     [
@@ -29,6 +33,10 @@
     ],
     [
      "Summon Hawk",
+     1
+    ],
+    [
+     "Intimidation",
      1
     ],
     [
@@ -51,7 +59,7 @@
     ],
     [
      "Efficiency",
-     5
+     2
     ],
     [
      "Careful Aim",
@@ -60,13 +68,14 @@
     [
      "Trueshot Aura",
      1
-    ],
-    [
-     "Mortal Shots",
-     2
     ]
    ],
-   "Survival": []
+   "Survival": [
+    [
+     "Improved Tracking",
+     5
+    ]
+   ]
   },
   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-beast-mastery-bis.gear.json"
  },
@@ -80,11 +89,19 @@
     ],
     [
      "Endurance Training",
-     3
+     2
     ],
     [
      "Focused Fire",
      2
+    ],
+    [
+     "Improved Revive Pet",
+     1
+    ],
+    [
+     "Bestial Swiftness",
+     1
     ],
     [
      "Unleashed Fury",
@@ -99,7 +116,15 @@
      1
     ],
     [
+     "Intimidation",
+     1
+    ],
+    [
      "Bestial Discipline",
+     2
+    ],
+    [
+     "Frenzy",
      2
     ]
    ],
@@ -114,15 +139,11 @@
     ],
     [
      "Efficiency",
-     5
+     2
     ],
     [
      "Careful Aim",
      5
-    ],
-    [
-     "Improved Arcane Shot",
-     1
     ],
     [
      "Trueshot Aura",
@@ -130,14 +151,15 @@
     ],
     [
      "Mortal Shots",
-     5
-    ],
-    [
-     "Ranged Weapon Specialization",
      3
     ]
    ],
-   "Survival": []
+   "Survival": [
+    [
+     "Improved Tracking",
+     5
+    ]
+   ]
   },
   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-hybrid-beast-mastery-marksmanship-bis.gear.json"
  }
