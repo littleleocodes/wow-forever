@@ -276,6 +276,8 @@ Models: combat-swords-raid, combat-daggers-raid. Same mob, same gear, ~10 kills 
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 - A generated Combat build: check it against the community's Combat builds at launch.
 - A derived Subtlety leveling build: check it while leveling at launch.
+- An open-search Daggers (split) leveling build: check it while leveling at launch.
+- An open-search Combat-Subtlety leveling build: check it while leveling at launch.
 
 ## Shaman
 

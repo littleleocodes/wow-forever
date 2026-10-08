@@ -508,6 +508,12 @@
 **Optimizer — Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (parse)** (`rogue/research/raid/builds/opt-combat-daggers-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
+**Daggers (split) — Leveling (open talent search)** (`rogue/research/leveling/builds/daggers-split-open-leveling.md`)
+- [ ] An open-search Daggers (split) leveling build: check it while leveling at launch.
+
+**Combat-Subtlety — Leveling (open talent search)** (`rogue/research/leveling/builds/combat-subtlety-open-leveling.md`)
+- [ ] An open-search Combat-Subtlety leveling build: check it while leveling at launch.
+
 ### Shaman
 
 **Restoration — Raid Healer (healer lab winner adopted 2026-09-26)** (`shaman/research/raid/builds/resto-raid-healer.md`)

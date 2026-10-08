@@ -40,6 +40,7 @@ HYBRID_NAMES = {
     ("paladin", "Hybrid Protection/Retribution"): ("Prot-Ret", "prot-ret", "Retribution's melee talents with Protection's Seal of Fury, Swift Judgement and Toughness: a melee split short of 30 Retribution points."),
     ("priest", "Hybrid Discipline/Holy"): ("Smite", "smite", "Damage from Smite and Holy Fire, carried by Discipline talents."),
     ("rogue", "Hybrid Assassination/Combat"): ("Daggers (split)", "daggers-split", "Daggers with points split between Assassination and Combat."),
+    ("rogue", "Hybrid Combat/Subtlety"): ("Combat-Subtlety", "combat-subtlety", "Subtlety's openers, Ghostly Strike and Hemorrhage with Combat's weapon talents (2026-10-08, the open leveling search)."),
     ("shaman", "Hybrid Elemental/Enhancement"): ("Elemental-Enhancement", "elemental-enhancement", "A Lightning Bolt caster that dips Enhancement for its passive bonuses."),
     ("warlock", "Hybrid Affliction/Destruction"): ("Shadow Bolt hybrid", "shadow-bolt-hybrid", "Shadow Bolt and fire casters mixing Affliction's curses with Destruction's Ruin (DS/Ruin)."),
     ("warlock", "Hybrid Affliction/Demonology"): ("Affliction-Demonology", "affliction-demonology", "Dots with a Voidwalker tanking: the classic warlock leveling split."),
