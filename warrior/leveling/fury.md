@@ -4,7 +4,9 @@
 
 **✅ Recommended** for leveling (the best warrior spec here, or within 3% of it).
 
-**[Raid dual-wield Fury](../research/leveling/builds/opt-fury-dw-raid-leveling-st.md)** (13/38/0) — [open the talent tree](https://talentsforever.com/warrior/60/3202501-25053035152010501--4)
+**[Fury — Leveling](../research/leveling/builds/fury-open-leveling.md)** (20/31/0) — [open the talent tree](https://talentsforever.com/warrior/60/1132521302-05250030052210501--4)
+
+> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
 ## How to play
 
@@ -21,18 +23,47 @@
 
 **Between fights:** Bandage below 60% health, eat below half.
 
+## Talents while leveling
+
+One point per level from 10, in this order:
+
+| Levels | Talent | Points |
+|---|---|---|
+| 10-14 | Cruelty (Fury) | 5 |
+| 15-19 | Unbridled Wrath (Fury) | 5 |
+| 20-22 | Blood Craze (Fury) | 3 |
+| 23-24 | Lingering Rage (Fury) | 2 |
+| 25-26 | Improved Execute (Fury) | 2 |
+| 27-29 | Enrage (Fury) | 3 |
+| 30 | Death Wish (Fury) | 1 |
+| 31-32 | Enrage (Fury) | 2 |
+| 33-34 | Improved Berserker Rage (Fury) | 2 |
+| 35-39 | Flurry (Fury) | 5 |
+| 40 | Bloodthirst (Fury) | 1 |
+| 41-43 | Improved Rend (Arms) | 3 |
+| 44 | Deflection (Arms) | 1 |
+| 45 | Improved Heroic Strike (Arms) | 1 |
+| 46-47 | Improved Charge (Arms) | 2 |
+| 48-50 | Improved Tactical Mastery (Arms) | 3 |
+| 51-53 | Deep Wounds (Arms) | 3 |
+| 54-55 | Improved Tactical Mastery (Arms) | 2 |
+| 56 | Anger Management (Arms) | 1 |
+| 57-58 | Improved Overpower (Arms) | 2 |
+| 59-60 | Two-Handed Weapon Specialization (Arms) | 2 |
+
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
 | 20 | 20 |
 | 30 | 24 |
-| 40 | 29 |
-| 50 | 29 |
-| 60 | 33 |
+| 40 | 26 |
+| 50 | 27 |
+| 60 | 29 |
 
 ## Other builds of this spec
 
+- [Raid dual-wield Fury](../research/leveling/builds/opt-fury-dw-raid-leveling-st.md) (13/38/0, 29 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/warrior/60/3202501-25053035152010501--4)
 - [Raid dual-wield Fury](../research/leveling/builds/opt-fury-dw-raid-solo-60.md) (13/38/0) — [open the talent tree](https://talentsforever.com/warrior/60/3202501-25053035152010501--4)
 - [Fury (optimized)](../research/leveling/builds/opt-arms-2h-raid-leveling-aoe.md) (19/32/0) — [open the talent tree](https://talentsforever.com/warrior/60/0530220313-45050130052010501--4)
 

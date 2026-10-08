@@ -14,7 +14,7 @@ The best talents and the best way to play every class in **World of Warcraft: Fo
 | [**Rogue**](rogue/README.md) | damage | [Combat-Subtlety](rogue/leveling/combat-subtlety.md) (26 s/kill), [Combat](rogue/leveling/combat.md) (26 s/kill) | [Combat](rogue/raid/combat.md) (772 DPS) |
 | [**Shaman**](shaman/README.md) | damage, healer | [Enhancement](shaman/leveling/enhancement.md) (33 s/kill) | [Enhancement](shaman/raid/enhancement.md) (783 DPS) |
 | [**Warlock**](warlock/README.md) | damage | [Demonology](warlock/leveling/demonology.md) (36 s/kill), [Affliction-Demonology](warlock/leveling/affliction-demonology.md) (37 s/kill) | [Demonology](warlock/raid/demonology.md) (786 DPS) |
-| [**Warrior**](warrior/README.md) | damage, tank | [Arms](warrior/leveling/arms.md) (28 s/kill), [Fury](warrior/leveling/fury.md) (29 s/kill) | [Arms](warrior/raid/arms.md) (890 DPS) |
+| [**Warrior**](warrior/README.md) | damage, tank | [Fury](warrior/leveling/fury.md) (26 s/kill) | [Arms](warrior/raid/arms.md) (890 DPS) |
 
 Two specs in one cell are a tie (within 3% of each other; the best spec of the class by DPS in a full raid). Leveling times compare across classes: every class runs in the same fight simulator, solo against same-level mobs. Raid numbers assume a group: every raid buff and debuff is up, which is where classes that live on raid buffs (warriors' rage, hunters' and shamans' mana) do their real damage.
 

@@ -746,3 +746,9 @@
 **Fury — Raid (open talent search)** (`warrior/research/raid/builds/fury-open-raid.md`)
 - [ ] An open-search Fury build: check it against the community's Fury builds at launch.
 
+**Fury — Leveling (open talent search)** (`warrior/research/leveling/builds/fury-open-leveling.md`)
+- [ ] An open-search Fury leveling build: check it while leveling at launch.
+
+**Protection — Leveling (open talent search)** (`warrior/research/leveling/builds/protection-open-leveling.md`)
+- [ ] An open-search Protection leveling build: check it while leveling at launch.
+

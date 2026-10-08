@@ -7506,7 +7506,7 @@
   }
  },
  "last_run": {
-  "date": "2026-10-08T11:16:42",
+  "date": "2026-10-08T16:08:11",
   "classes": [
    "warrior"
   ],
@@ -7519,7 +7519,7 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 190,
+  "seconds": 201,
   "refresh": null,
   "regen_log": [
    {
@@ -7563,7 +7563,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py warrior",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
      "warrior: raid gear and consumables written"
     ],
@@ -7572,7 +7572,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py warrior",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
      "warrior: raid and leveling rotations, DPS ranking written"
     ],
@@ -7581,7 +7581,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\validate_builds.py",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
      "  ok   feral-combat-pvp (0/32/19)",
      "  ok   restoration-pvp (0/11/40)",
@@ -7601,7 +7601,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_builds.py",
     "rc": 0,
-    "seconds": 2,
+    "seconds": 7,
     "tail": [
      "rogue/classic-baseline: 5 build pages + README.md",
      "rogue: 24 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
@@ -7649,7 +7649,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py warrior --write",
     "rc": 0,
-    "seconds": 181,
+    "seconds": 184,
     "tail": [
      "| fury-dw-raid -> level-20 build (0/11/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.9% | +21.4% | +34.9% | +36.1% | +36.8% | +37.4% | +39.2% |",
      "| fury-dw-raid -> level-30 build (0/21/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.9% | +21.4% | +34.9% | +36.1% | +36.8% | +37.4% | +39.2% |",
@@ -7723,7 +7723,7 @@
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote _reference\\launch-checklist.md (279 per-build questions)"
+     "wrote _reference\\launch-checklist.md (281 per-build questions)"
     ],
     "stderr": []
    },

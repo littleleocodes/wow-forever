@@ -10,9 +10,9 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling (solo) | Raid (group: full raid DPS) |
 |---|---|---|
-| **Arms** | **✅ Recommended**<br>[Two-handed Arms/raid or leveling](leveling/arms.md)<br>28 s/kill | **✅ Recommended**<br>[Arms — Full raid](raid/arms.md) 🔬<br>890 DPS (raid) |
-| **Fury** | **✅ Recommended**<br>[Raid dual-wield Fury](leveling/fury.md)<br>29 s/kill | [Fury — Raid](raid/fury.md) 🔬<br>842 DPS (raid) |
-| **Protection** | [Protection — Leveling into the raid build](leveling/protection.md) 🔬<br>31 s/kill | [Raid tank in Defensive Stance with a shield](raid/protection.md)<br>tank |
+| **Arms** | [Two-handed Arms/raid or leveling](leveling/arms.md)<br>28 s/kill | **✅ Recommended**<br>[Arms — Full raid](raid/arms.md) 🔬<br>890 DPS (raid) |
+| **Fury** | **✅ Recommended**<br>[Fury — Leveling](leveling/fury.md) 🔬<br>26 s/kill | [Fury — Raid](raid/fury.md) 🔬<br>842 DPS (raid) |
+| **Protection** | [Protection — Leveling](leveling/protection.md) 🔬<br>31 s/kill | [Raid tank in Defensive Stance with a shield](raid/protection.md)<br>tank |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
 
@@ -26,9 +26,9 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
-| 1 | [Arms](leveling/arms.md) — Two-handed Arms/raid or leveling | 28 | fastest |
-| 2 | [Fury](leveling/fury.md) — Raid dual-wield Fury | 29 | +1% |
-| 3 | [Protection](leveling/protection.md) — Protection — Leveling into the raid build 🔬 | 31 | +11% |
+| 1 | [Fury](leveling/fury.md) — Fury — Leveling 🔬 | 26 | fastest |
+| 2 | [Arms](leveling/arms.md) — Two-handed Arms/raid or leveling | 28 | +8% |
+| 3 | [Protection](leveling/protection.md) — Protection — Leveling 🔬 | 31 | +18% |
 
 ### Raid (group)
 
@@ -68,7 +68,7 @@ The research behind the pages above: every build, report and simulation.
 
 | Folder | What is in it | Hand drafts |
 |---|---|---|
-| [research/leveling/](research/leveling/README.md) | Leveling and solo builds, the leveling guide, rotation and respec plan, fight-lab reports (6 builds) | [leveling-arms](research/leveling/builds/leveling-arms.md), [protection-leveling](research/leveling/builds/protection-leveling.md) |
+| [research/leveling/](research/leveling/README.md) | Leveling and solo builds, the leveling guide, rotation and respec plan, fight-lab reports (8 builds) | [leveling-arms](research/leveling/builds/leveling-arms.md), [protection-leveling](research/leveling/builds/protection-leveling.md), [fury-open-leveling](research/leveling/builds/fury-open-leveling.md), [protection-open-leveling](research/leveling/builds/protection-open-leveling.md) |
 | [research/raid/](research/raid/README.md) | Raid DPS, tank and healer builds, training-dummy and raid-sim rankings, rotation, gear, consumables (11 builds) | [fury-dw-raid](research/raid/builds/fury-dw-raid.md), [arms-2h-raid](research/raid/builds/arms-2h-raid.md), [arms-battle-raid](research/raid/builds/arms-battle-raid.md), [prot-raid-tank](research/raid/builds/prot-raid-tank.md), [arms-community-parse](research/raid/builds/arms-community-parse.md), [fury-open-raid](research/raid/builds/fury-open-raid.md) |
 | [research/pvp/](research/pvp/README.md) | PvP builds (no rotation: PvP play depends on the fight) (3 builds) | [arms-pvp](research/pvp/builds/arms-pvp.md), [fury-pvp](research/pvp/builds/fury-pvp.md), [protection-pvp](research/pvp/builds/protection-pvp.md) |
 | [research/spells/](research/spells/README.md) | Spell ranks and numbers from the beta client | |

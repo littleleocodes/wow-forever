@@ -268,7 +268,8 @@ def cross_rotations(cls, st, pool, save):
         done[spec] = rec
         save()
         log(f"  cross-rotations {spec}: own {base:.2f} s; " + ", ".join(f"{k} {v}" for k, v in rec["tested"].items())
-            + (f" -> the page shows it as {rec['best']} ({rec['best_seconds']:.2f} s)" if rec["best"] != spec else "; its own rotation plays it best"))
+            + (f" -> {rec['best']} plays it faster ({rec['best_seconds']:.2f} s): recorded only, the page keeps its own rotation"
+               if rec["best"] != spec else "; its own rotation plays it best"))
 
 
 def main():
