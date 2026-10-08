@@ -11001,8 +11001,10 @@
    "minutes": 67.7,
    "done": true,
    "builds": {
-    "written": [],
-    "why": "the combat-swords-raid rotation's winner of the same spec is faster (25.13 against 26.54 s per kill)",
+    "written": [
+     "daggers-split-open-leveling"
+    ],
+    "why": null,
     "spec": "Hybrid Assassination/Combat",
     "date": "2026-10-08"
    }
@@ -21972,10 +21974,8 @@
    "minutes": 65.7,
    "done": true,
    "builds": {
-    "written": [
-     "daggers-split-open-leveling"
-    ],
-    "why": null,
+    "written": [],
+    "why": "the combat-daggers-raid rotation is Daggers (split)'s own leveling rotation: its winner is the one written",
     "spec": "Hybrid Assassination/Combat",
     "date": "2026-10-08"
    }

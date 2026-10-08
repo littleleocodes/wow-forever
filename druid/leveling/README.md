@@ -8,7 +8,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 |---|---|---|---|
 | 1 | [Feral Combat](feral-combat.md) — Leveling — Feral cat | 25 | fastest |
 | 2 | [Restoration](restoration.md) — Restoration — Leveling into the raid build 🔬 | 33 | +28% |
-| 3 | [Balance](balance.md) — Balance (optimized) | 53 | +110% |
+| 3 | [Balance](balance.md) — Balance — Leveling 🔬 | 52 | +104% |
 
 🔬 = a derived build (searched in a simulator). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 

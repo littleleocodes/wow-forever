@@ -43,6 +43,7 @@ Models: resto-heal, balance-dps, feral-cat-dps, feral-bear-tank. Same mob, same 
 - Whether a cat Mangle rank exists — if so, Mangle at 25 replaces Predatory Strikes' slot and Berserk becomes much stronger.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 - Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
+- An open-search Balance leveling build: check it while leveling at launch.
 
 ## Hunter
 

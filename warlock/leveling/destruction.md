@@ -8,19 +8,20 @@
 
 ## How to play
 
-**Not in this build:** **Wrack** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
+**Not in this build:** **Incinerate**, **Shadowburn** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
 
-**Before the fight:** **Demon Skin** (later **Demon Armor**) up, **Summon Voidwalker**. Send the Voidwalker in first and let it hold the mob.
+**Before the fight:** **Demon Armor** up, **Summon Voidwalker**. Send the Voidwalker in first and let it hold the mob.
 
 **In the fight**, top to bottom:
 
-1. **Corruption**, **Bane of Agony**, **Siphon Life** and **Immolate** on the mob.
-2. **Wrack** once the damage-over-time spells are up.
-3. **Shadow Bolt** while you have plenty of mana, your wand otherwise.
-4. **Drain Life** when you are hurt, **Life Tap** when you are low on mana.
-5. If a mob reaches you: **Fear** it or **Death Coil**.
+1. **Corruption** (not on a mob that is nearly dead) and **Bane of Agony** while the Voidwalker grabs the mob.
+2. **Immolate** while you have more than half your mana, then **Conflagrate** when Immolate is about to run out.
+3. **Incinerate** on a burning mob while your mana is nearly full; your wand otherwise.
+4. **Shadowburn** or **Conflagrate** to finish a mob they would kill.
+5. **Life Tap** when you are low on mana.
+6. If a mob reaches you: **Death Coil** (skip Fear and Drain Life: the Voidwalker takes the mob back).
 
-**Between fights:** **Life Tap** back to 70% mana, heal the Voidwalker with **Consume Shadows** or **Health Funnel**, eat only below a third of your health.
+**Between fights:** **Life Tap** back up, heal the Voidwalker with **Health Funnel**, eat below 40% health.
 
 ## Talents while leveling
 

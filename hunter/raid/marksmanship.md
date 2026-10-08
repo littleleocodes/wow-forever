@@ -67,7 +67,7 @@
 
 ## Other builds of this spec
 
-- [Marksmanship without a pet](../research/raid/builds/opt-mm-lonewolf-raid-raid-dps.md) (5/38/8, 913 DPS in a full raid, 463 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5-005355051150305-50003-4)
+- [Marksmanship (optimized)](../research/raid/builds/opt-mm-lonewolf-raid-raid-dps.md) (5/38/8, 913 DPS in a full raid, 463 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5-005355051150305-50003-4)
 - [Marksmanship — Raid](../research/raid/builds/marksmanship-ml-raid.md) (11/40/0, 867 DPS in a full raid, 444 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5501-305355041150305--4)
 - [Marksmanship with Beast Mastery support](../research/raid/builds/bm-mm-full-buffs-raid.md) (21/30/0, 806 DPS in a full raid, 445 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/53200005050001-005155000150305--4)
 

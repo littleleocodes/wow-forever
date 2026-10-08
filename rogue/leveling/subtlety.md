@@ -8,18 +8,17 @@
 
 ## How to play
 
-**Not in this build:** **Adrenaline Rush**, **Blade Flurry** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+**Not in this build:** **Hemorrhage** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
 
-**Before the fight:** **Instant Poison** on your main hand, **Deadly Poison** on your off hand. Stealth up behind the mob.
+**Before the fight:** Daggers in both hands, poisons on. Stealth up behind the mob; **Premeditation** for two free combo points.
 
 **In the fight**, top to bottom:
 
-1. Open with **Cheap Shot** (**Garrote** before level 26).
-2. **Slice and Dice** at 1-2 combo points when it is not up.
-3. **Sinister Strike** until you have 5 combo points.
-4. At 5 points: **Eviscerate** (**Kidney Shot** instead if you are below half health).
-5. **Riposte** after you parry.
-6. **Blade Flurry** and **Adrenaline Rush** at the start of a fight; **Evasion** when your health gets low.
+1. Open with **Ambush** at low level, **Garrote** once you have it at 30 (it bleeds through armor).
+2. **Ghostly Strike** whenever ready (it also makes you dodge more).
+3. **Hemorrhage** (or **Sinister Strike** before you have it) to build combo points.
+4. At 5 points: **Eviscerate** (or earlier if it would kill the mob).
+5. **Riposte** after you parry; **Evasion** when your health gets low (**Preparation** resets it).
 
 **Between fights:** Bandage below 60% health, eat below half.
 

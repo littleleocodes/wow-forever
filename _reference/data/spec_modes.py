@@ -90,6 +90,69 @@ def slug(spec):
     return spec.lower().replace("hybrid ", "hybrid-").replace("/", "-").replace(" ", "-")
 
 
+# ------------------------------------------------------------------------------------------------ each spec plays its own rotation
+# User decision 2026-10-08: "I don't want classes specs taking other specs rotations or builds or anything just because it's faster."
+# A build is ranked on its spec's page only with a rotation built for its own tree; a hybrid with a rotation of either of its two trees
+# or one built for the hybrid itself (Frostfire's frostfire-raid, Smite's smite-dps). No step may move a build to another spec's rotation
+# because it is faster there (the cross-rotation races stay as research). The trees each raid entry's rotation is built for:
+RAID_ENTRY_TREES = {
+    ("mage", "frost-raid"): {"Frost"}, ("mage", "fire-raid"): {"Fire"}, ("mage", "arcane-dps"): {"Arcane"},
+    ("mage", "frostfire-raid"): {"Hybrid Fire/Frost"},
+    ("priest", "shadow-dps"): {"Shadow"}, ("priest", "smite-dps"): {"Hybrid Discipline/Holy"},
+    ("warlock", "affliction-raid"): {"Affliction"}, ("warlock", "fire-destro-raid"): {"Destruction"}, ("warlock", "sb-raid"): {"Destruction"},
+    ("warlock", "demonology-raid"): {"Demonology"}, ("warlock", "incinerate-raid"): {"Destruction"},
+    ("hunter", "mm-raid"): {"Marksmanship"}, ("hunter", "mm-lonewolf-raid"): {"Marksmanship"}, ("hunter", "bm-raid"): {"Beast Mastery"},
+    ("hunter", "melee-dps"): {"Survival"},
+    ("rogue", "combat-swords-raid"): {"Combat"}, ("rogue", "combat-daggers-raid"): {"Combat"}, ("rogue", "assassination-raid"): {"Assassination"},
+    ("rogue", "subtlety-raid"): {"Subtlety"},
+    # the simulator has one warrior DPS rotation for Arms and Fury; the two entries are its two-handed and dual-wield gear setups
+    ("warrior", "arms-2h-raid"): {"Arms", "Fury"}, ("warrior", "fury-dw-raid"): {"Arms", "Fury"}, ("warrior", "arms-battle-raid"): {"Arms"},
+    ("warrior", "prot-tank"): {"Protection"},
+    ("paladin", "ret-dps"): {"Retribution"}, ("paladin", "prot-tank"): {"Protection"},
+    ("shaman", "elemental-dps"): {"Elemental"}, ("shaman", "enhancement-dps"): {"Enhancement"}, ("shaman", "stormcaller-dps"): {"Elemental"},
+    ("druid", "balance-dps"): {"Balance"}, ("druid", "feral-cat-dps"): {"Feral Combat"}, ("druid", "feral-bear-tank"): {"Feral Combat"},
+}
+# leveling rotations come from derive_leveling.LEVEL (each tree's rotation; a healing tree without one levels as LEVEL_AS's damage spec,
+# the 2026-09-29 agreement); a weapon variant of a tree's rotation counts as that tree's too:
+LEVELING_EXTRA_TREES = {("rogue", "combat-daggers-raid"): {"Combat"}}
+
+
+def rotation_allows(spec, trees_):
+    """Whether a rotation built for `trees_` is `spec`'s own: the spec itself, or for a hybrid either of its two trees."""
+    if not trees_:
+        return False
+    if spec in trees_:
+        return True
+    if spec.startswith("Hybrid "):
+        return any(t in trees_ for t in spec[len("Hybrid "):].split("/"))
+    return False
+
+
+def leveling_rotation_trees(cls):
+    """{fight-lab rotation: {trees it is built for}} of a class (derive_leveling.LEVEL plus LEVELING_EXTRA_TREES)."""
+    import derive_leveling as DL   # (imported here: derive_leveling imports this module)
+    out = {}
+    for (c, tree), (rot, _model) in DL.LEVEL.items():
+        if c == cls:
+            out.setdefault(rot, set()).add(tree)
+    for (c, rot), ts in LEVELING_EXTRA_TREES.items():
+        if c == cls:
+            out.setdefault(rot, set()).update(ts)
+    return out
+
+
+def own_leveling_rotation(cls, spec, alloc=None):
+    """The rotation a spec levels with: its tree's (derive_leveling.LEVEL); a hybrid's: its lead tree's (the most points in `alloc`)."""
+    import derive_leveling as DL
+    tree = spec
+    if spec.startswith("Hybrid ") and alloc:
+        pts = {t: sum(k for _, k in items) for t, items in alloc.items()}
+        parts = spec[len("Hybrid "):].split("/")
+        tree = max(parts, key=lambda t: pts.get(t, 0))
+    hit = DL.LEVEL.get((cls, tree))
+    return hit[0] if hit else None
+
+
 def grid(cls, builds):
     """{spec: {mode: [build, ...]}} with the class's three trees first (empty where no build exists), hybrids after."""
     out = {t: {m: [] for m in MODES} for t in trees(cls)}

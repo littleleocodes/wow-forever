@@ -10,7 +10,7 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling (solo) | Raid (group: full raid DPS) |
 |---|---|---|
-| **Affliction** | [Affliction — Leveling](leveling/affliction.md) 🔬<br>38 s/kill | [Affliction (optimized)](raid/affliction.md)<br>722 DPS (raid) |
+| **Affliction** | [Affliction — Leveling](leveling/affliction.md) 🔬<br>38 s/kill | [Affliction](raid/affliction.md)<br>722 DPS (raid) |
 | **Demonology** | **✅ Recommended**<br>[Demonology — Leveling](leveling/demonology.md) 🔬<br>36 s/kill | **✅ Recommended**<br>[Demonology — Demonic Pact](raid/demonology.md)<br>786 DPS (raid) |
 | **Destruction** | [Destruction — Leveling](leveling/destruction.md) 🔬<br>39 s/kill | [Destruction — Raid](raid/destruction.md) 🔬<br>693 DPS (raid) |
 
@@ -47,7 +47,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
 | 1 | [Demonology](raid/demonology.md) — Demonology — Demonic Pact | 786 | best |
-| 2 | [Affliction](raid/affliction.md) — Affliction (optimized) | 722 | -8% |
+| 2 | [Affliction](raid/affliction.md) — Affliction | 722 | -8% |
 | 3 | [Shadow Bolt hybrid](raid/shadow-bolt-hybrid.md) — Shadow Bolt hybrid (optimized) | 710 | -10% |
 | 4 | [Destruction](raid/destruction.md) — Destruction — Raid 🔬 | 693 | -12% |
 

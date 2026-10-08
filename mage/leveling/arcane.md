@@ -8,15 +8,17 @@
 
 ## How to play
 
-**Before the fight:** **Frost Armor** (later **Ice Armor** or **Mage Armor**) and **Arcane Intellect** up. Pull from as far away as you can.
+**Not in this build:** **Arcane Blast**, **Arcane Power** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+
+**Before the fight:** **Frost Armor** (later **Mage Armor**) and **Arcane Intellect** up. Pull from as far away as you can; **Arcane Power** and **Presence of Mind** at the pull when they are ready.
 
 **In the fight**, top to bottom:
 
-1. **Frostbolt** while the mob walks in (it slows it).
-2. **Frost Nova** when it reaches you, then step back.
-3. **Ice Lance** (or **Frostbolt**) while it is frozen.
+1. **Arcane Blast** twice while the mob walks in (each cast makes the next one cost more; stop at two).
+2. **Arcane Missiles** after the Arcane Blasts, and at once when Missile Barrage lights up (not on a mob that is nearly dead).
+3. **Frost Nova** when the mob reaches you, then step back.
 4. Finish a nearly dead mob with **Fire Blast** or your wand.
-5. **Counterspell** a mob that casts spells.
+5. Low on mana: **Frostbolt** instead of Arcane Blast.
 
 **Between fights:** Drink your conjured water below a third of your mana, **Evocation** when you are out, eat below two thirds of your health.
 

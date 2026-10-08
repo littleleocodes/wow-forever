@@ -6,11 +6,11 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
-| 1 | [Daggers (split)](daggers-split.md) — Daggers — Leveling 🔬 | 25 | fastest |
-| 2 | [Assassination](assassination.md) — Raid Combat swords | 25 | +1% |
-| 3 | [Combat-Subtlety](combat-subtlety.md) — Combat-Subtlety — Leveling 🔬 | 26 | +2% |
-| 4 | [Combat](combat.md) — Combat — Leveling ⚗ | 26 | +2% |
-| 5 | [Subtlety](subtlety.md) — Subtlety — Leveling 🔬 | 27 | +5% |
+| 1 | [Combat-Subtlety](combat-subtlety.md) — Combat-Subtlety — Leveling 🔬 | 26 | fastest |
+| 2 | [Combat](combat.md) — Combat — Leveling ⚗ | 26 | +1% |
+| 3 | [Subtlety](subtlety.md) — Subtlety — Leveling 🔬 | 27 | +4% |
+| 4 | [Daggers (split)](daggers-split.md) — Daggers — Leveling 🔬 | 27 | +4% |
+| 5 | [Assassination](assassination.md) — Assassination (optimized) | 27 | +5% |
 
 🔬 = a derived build (searched in a simulator). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 

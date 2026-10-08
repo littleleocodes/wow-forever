@@ -135,6 +135,13 @@ def raid_candidates(cls, st, data, RM):
         spec = raid_spec(cls, entry, w["allocation"], data)
         race = e["race"]
         wd = race["open winner"]["dps"]
+        own = SM.RAID_ENTRY_TREES.get((cls, entry))
+        if own and not SM.rotation_allows(spec, own):
+            # user decision 2026-10-08: "I don't want classes specs taking other specs rotations or builds or anything just because it's
+            # faster": a winner of another spec found in this entry's rotation is not written for that spec
+            out.append((entry, spec, wd, None, f"found in {entry}, a rotation built for {'/'.join(sorted(own))}, not {SM.spec_name(cls, spec)}'s own: "
+                                               "not written (each spec plays its own rotation)"))
+            continue
         rivals = {k: v["dps"] for k, v in race.items() if k != "open winner" and v.get("dps")}   # raced with it: the same fights
         same = [b for b in data["builds"] if SM.mode_of(b) == "raid" and b.get("role", "dps") == "dps" and not is_open(b)
                 and SM.spec_of(cls, b) == spec]
@@ -150,14 +157,25 @@ def raid_candidates(cls, st, data, RM):
         replaces = bh if bh and wd >= hands[bh] * (1 + MIN_GAIN) else None
         b = None if why else make_raid_build(cls, entry, e, st, spec, w, allr, best, rivals, bh, hands.get(bh), replaces)
         out.append((entry, spec, wd, b, why))
-    # one build per spec: the best winner across the class's rotations
+    # one build per spec: among the spec's own rotations (a tree's weapon or stance variants: the rogue's swords and daggers, the hunter's
+    # Lone Wolf) the best winner; a hybrid's winners first from a rotation built for the hybrid or its lead tree (never the faster tree)
+    def pref(entry, spec, b):
+        if not spec.startswith("Hybrid ") or b is None:
+            return 0
+        own = SM.RAID_ENTRY_TREES.get((cls, entry)) or set()
+        pts = {t: sum(k for _, k in items) for t, items in b["allocation"].items()}
+        lead = max(spec[len("Hybrid "):].split("/"), key=lambda t: pts.get(t, 0))
+        return 0 if (spec in own or lead in own) else 1
+    keyed = [(pref(e2, s2, b2), -d2, e2, s2, d2) for e2, s2, d2, b2, w2 in out if b2 is not None]
     for i, (entry, spec, wd, b, why) in enumerate(out):
         if b is None:
             continue
-        better = [(e2, d2) for e2, s2, d2, b2, w2 in out if b2 is not None and s2 == spec and d2 > wd]
+        mine = (pref(entry, spec, b), -wd)
+        better = sorted(k for k in keyed if k[3] == spec and k[2] != entry and (k[0], k[1]) < mine)
         if better:
-            e2, d2 = max(better, key=lambda x: x[1])
-            out[i] = (entry, spec, wd, None, f"the {e2} rotation's winner of the same spec is better ({d2:.1f} against {wd:.1f} DPS)")
+            p2, _, e2, _, d2 = better[0]
+            out[i] = (entry, spec, wd, None, f"the {e2} rotation's winner of the same spec comes first ({d2:.1f} against {wd:.1f} DPS"
+                      + ("; built for the hybrid or its lead tree" if p2 < mine[0] else "") + ")")
     return out
 
 
@@ -236,6 +254,13 @@ def leveling_candidates(cls, st, data, RM):
         spec = spec_of_alloc(cls, r["winner"]["allocation"])
         race = r["race"]
         wt = race["open winner"]["weighted"]
+        own = SM.leveling_rotation_trees(cls).get(spec_rot)
+        if own and not SM.rotation_allows(spec, own):
+            # user decision 2026-10-08: no spec takes another spec's rotation because it is faster (the paladin's Holy rotation had
+            # found a Protection/Retribution build, written as Prot-Ret's leveling build)
+            out.append((spec_rot, spec, wt, None, f"found in the {spec_rot} rotation, built for {'/'.join(sorted(own))}, not "
+                                                  f"{SM.spec_name(cls, spec)}'s own: not written (each spec plays its own rotation)"))
+            continue
         rivals = {k: v["weighted"] for k, v in race.items() if k != "open winner" and not k.startswith("finalist ") and v.get("weighted")}
         same = [b for b in data["builds"] if SM.mode_of(b) == "leveling" and not is_open(b) and SM.spec_of(cls, b) == spec]
         pages = {}
@@ -256,13 +281,20 @@ def leveling_candidates(cls, st, data, RM):
         replaces = bh if bh and hands[bh] / wt - 1 >= MIN_GAIN else None
         b = None if why else make_leveling_build(cls, spec_rot, r, spec, allr, rivals, bh, hands.get(bh), replaces)
         out.append((spec_rot, spec, wt, b, why))
+    # one build per spec: the winner from the spec's own leveling rotation (spec_modes.own_leveling_rotation: the tree's, a hybrid's lead
+    # tree's); until 2026-10-08 the fastest rotation's winner was taken (the rogue's Daggers split from the swords rotation)
     for i, (rot, spec, wt, b, why) in enumerate(out):
         if b is None:
             continue
-        better = [(r2, t2) for r2, s2, t2, b2, w2 in out if b2 is not None and s2 == spec and t2 < wt]
-        if better:
-            r2, t2 = min(better, key=lambda x: x[1])
-            out[i] = (rot, spec, wt, None, f"the {r2} rotation's winner of the same spec is faster ({t2:.2f} against {wt:.2f} s per kill)")
+        mine = 0 if rot == SM.own_leveling_rotation(cls, spec, b["allocation"]) else 1
+        first = [r2 for r2, s2, t2, b2, w2 in out if b2 is not None and s2 == spec and r2 != rot
+                 and (0 if r2 == SM.own_leveling_rotation(cls, s2, b2["allocation"]) else 1) < mine]
+        twin = [r2 for r2, s2, t2, b2, w2 in out[:i] if b2 is not None and s2 == spec
+                and (0 if r2 == SM.own_leveling_rotation(cls, s2, b2["allocation"]) else 1) == mine]
+        if first or twin:
+            r2 = (first or twin)[0]
+            out[i] = (rot, spec, wt, None, f"the {r2} rotation is {SM.spec_name(cls, spec)}'s own leveling rotation: its winner is the one written"
+                      if first else f"the {r2} rotation's winner of the same spec is written first")
     return out
 
 

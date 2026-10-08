@@ -45,6 +45,17 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   `research/leveling/rotation.md` the fight lab's priority and casts per kill by level for every simulated leveling build. The research
   raid README's "DPS ranking" ranks our builds against the simulator's own (training dummy, raid column next to it; tanks by tank
   value), and every build page carries its rank and its own rotation.
+  **Each spec plays its own rotation** (user decision 2026-10-08: "I don't want classes specs taking other specs rotations or builds or
+  anything just because it's faster"): a build is ranked on its spec's page only with a rotation built for its tree (a hybrid: either of
+  its two trees, or a rotation built for the hybrid), and no step moves a build to another spec's rotation because it is faster there.
+  `spec_modes.RAID_ENTRY_TREES` (raid entries; the warrior's two entries share the simulator's one Arms/Fury rotation) and
+  `leveling_rotation_trees` (derive_leveling.LEVEL plus weapon variants: the rogue's Combat daggers rotation) say which trees a rotation is
+  for; `render_modes` counts a raid build only in its own entries and keeps a leveling build on its page only with its own rotation's
+  numbers (`fightlab/own_rotation_race.py` races page builds that had played another rotation, record `fightlab/own-rotation.json`);
+  `open_builds.py` writes a winner only for a spec whose rotation found it (one build per spec: the spec's own leveling rotation, a
+  hybrid's lead tree's; never the faster rotation's); the raid and leveling cross-rotation races are research only (`faster_sibling`,
+  `cross[...].best`). Healing trees that level as a damage spec (`LEVEL_AS`, Restoration druid and shaman) keep that agreed exception.
+  Optimizer builds are named after their own spec on the pages ("Assassination (optimized)", not their model's "Raid Combat swords").
   If you add an optimization category, add it with the same name and layout to every class, even if some are only a stub.
 - Folders that are *not* classes start with an underscore: `_reference/` (facts, data, scripts), `_templates/`.
 - File names: lowercase kebab-case. Build ids: `<spec>-<variant>-<content>` (e.g. `fury-dw-raid`, `pvp-frost`, `leveling-arms`).

@@ -65,7 +65,7 @@
 
 ## Other builds of this spec
 
-- [Raid Frostbolt with Ice Lance on Fingers of Frost charges](../research/raid/builds/opt-frost-raid-raid-dps.md) (22/0/29, 701 DPS in a full raid, 614 on the dummy) — [open the talent tree](https://talentsforever.com/mage/60/1502050030003111--055500030100031024-4)
+- [Arcane-Frost (optimized)](../research/raid/builds/opt-frost-raid-raid-dps.md) (22/0/29, 701 DPS in a full raid, 614 on the dummy) — [open the talent tree](https://talentsforever.com/mage/60/1502050030003111--055500030100031024-4)
 - [Frost — Arcane Power / Frostbolt](../research/raid/builds/frost-arcane-power-raid.md) (32/0/19, 660 DPS in a full raid, 575 on the dummy) — [open the talent tree](https://talentsforever.com/mage/60/055005003000311531--055500031-4)
 
 ---

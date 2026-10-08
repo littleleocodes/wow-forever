@@ -4,27 +4,26 @@
 
 *Retribution's melee talents with Protection's Seal of Fury, Swift Judgement and Toughness: a melee split short of 30 Retribution points.* (a hybrid: Protection/Retribution).
 
-**✅ Recommended** for leveling (the best paladin spec here, or within 3% of it).
-
-**[Prot-Ret — Leveling](../research/leveling/builds/prot-ret-open-leveling.md)** (8/16/27) — [open the talent tree](https://talentsforever.com/paladin/60/50003-5231110021-332052310013301-4)
+**[Prot-Ret — Leveling](../research/leveling/builds/prot-ret-open-leveling.md)** (0/22/29) — [open the talent tree](https://talentsforever.com/paladin/60/-15303103013002-2512523010103031-4)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
 ## How to play
 
-**Not in this build:** **Holy Shock** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
+**Not in this build:** **Holy Shield**, **Templar's Bulwark** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
 
-**Before the fight:** **Blessing of Wisdom** and **Devotion Aura** up, a two-handed weapon. **Seal of Righteousness** before each pull.
+**Before the fight:** **Blessing of Might** and **Devotion Aura** up, a one-handed weapon and a shield. **Seal of Fury** before each pull (it also shields you).
 
 **In the fight**, top to bottom:
 
-1. **Holy Shock** the mob as it walks in (while your mana is high).
-2. **Judgement** and **Holy Strike** whenever ready.
-3. Keep **Seal of Righteousness** up.
-4. Low on health: **Holy Shock** on yourself, **Divine Protection**, **Hammer of Justice**, then **Holy Light**; **Lay on Hands** in an emergency.
-5. **Hammer of Justice** a mob that casts spells.
+1. **Holy Shield** whenever it is down.
+2. **Judgement** and **Holy Strike** whenever ready (**Swift Judgement** to reset Judgement).
+3. Keep **Seal of Fury** up.
+4. **Consecration** while your mana is above 60%.
+5. **Hammer of Wrath** when the mob is below 20% health.
+6. Low on health: **Templar's Bulwark**, **Divine Protection**, **Hammer of Justice**, then **Holy Light**; **Lay on Hands** in an emergency.
 
-**Between fights:** Heal yourself back up with **Holy Light**, drink below a quarter of your mana.
+**Between fights:** Drink below a sixth of your mana; you rarely need to eat.
 
 ## Talents while leveling
 
@@ -32,42 +31,41 @@ One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
-| 10-12 | Benediction (Retribution) | 3 |
-| 13-14 | Deflection (Retribution) | 2 |
-| 15-16 | Improved Judgement (Retribution) | 2 |
-| 17-19 | Conviction (Retribution) | 3 |
-| 20 | Seal of Command (Retribution) | 1 |
-| 21-23 | Sanctified Judgement (Retribution) | 3 |
-| 24 | Conviction (Retribution) | 1 |
-| 25 | Sacred Arbiter (Retribution) | 1 |
-| 26 | Conviction (Retribution) | 1 |
-| 27-28 | Vindication (Retribution) | 2 |
-| 29 | Deflection (Retribution) | 1 |
-| 30-32 | Two-Handed Weapon Specialization (Retribution) | 3 |
-| 33-37 | Divine Strength (Holy) | 5 |
-| 38-40 | Improved Seals (Holy) | 3 |
-| 41-42 | Vengeance (Retribution) | 2 |
-| 43 | Champion of the Light (Retribution) | 1 |
-| 44 | Vengeance (Retribution) | 1 |
-| 45-49 | Toughness (Protection) | 5 |
-| 50-52 | Precision (Protection) | 3 |
-| 53 | Anticipation (Protection) | 1 |
-| 54 | Redoubt (Protection) | 1 |
-| 55-56 | Sacred Duty (Protection) | 2 |
-| 57 | Redoubt (Protection) | 1 |
-| 58 | Guardian's Favor (Protection) | 1 |
-| 59 | Improved Seal of Fury (Protection) | 1 |
-| 60 | Swift Judgement (Protection) | 1 |
+| 10-14 | Redoubt (Protection) | 5 |
+| 15-17 | Precision (Protection) | 3 |
+| 18-19 | Anticipation (Protection) | 2 |
+| 20-22 | Shield Specialization (Protection) | 3 |
+| 23 | Anticipation (Protection) | 1 |
+| 24 | Improved Seal of Fury (Protection) | 1 |
+| 25 | Swift Judgement (Protection) | 1 |
+| 26 | Toughness (Protection) | 1 |
+| 27-29 | One-Handed Weapon Specialization (Protection) | 3 |
+| 30-31 | Reckoning (Protection) | 2 |
+| 32-36 | Benediction (Retribution) | 5 |
+| 37-38 | Holy Conduit (Retribution) | 2 |
+| 39 | Improved Judgement (Retribution) | 1 |
+| 40-41 | Conviction (Retribution) | 2 |
+| 42-43 | Sanctified Judgement (Retribution) | 2 |
+| 44 | Pursuit of Justice (Retribution) | 1 |
+| 45 | Sanctified Judgement (Retribution) | 1 |
+| 46 | Conviction (Retribution) | 1 |
+| 47 | Sacred Arbiter (Retribution) | 1 |
+| 48-49 | Conviction (Retribution) | 2 |
+| 50-51 | Vindication (Retribution) | 2 |
+| 52-54 | Vengeance (Retribution) | 3 |
+| 55-56 | Deflection (Retribution) | 2 |
+| 57 | Instrument of Law (Retribution) | 1 |
+| 58-60 | Champion of the Light (Retribution) | 3 |
 
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
-| 20 | 19 |
-| 30 | 23 |
-| 40 | 27 |
-| 50 | 28 |
-| 60 | 32 |
+| 20 | 33 |
+| 30 | 27 |
+| 40 | 35 |
+| 50 | 32 |
+| 60 | 34 |
 
 ---
 *Generated by `_reference/data/render_modes.py` on 2026-10-08 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*

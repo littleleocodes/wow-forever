@@ -2,7 +2,7 @@
 
 [Warlock](../README.md) > [Raid (group)](README.md) > Affliction
 
-**[Affliction (optimized)](../research/raid/builds/opt-affliction-raid-raid-dps.md)** (30/0/21) — [open the talent tree](https://talentsforever.com/warlock/60/2552002013500005--0550305003-4)
+**[Affliction](../research/raid/builds/opt-affliction-raid-raid-dps.md)** (30/0/21) — [open the talent tree](https://talentsforever.com/warlock/60/2552002013500005--0550305003-4)
 
 ## How to play
 

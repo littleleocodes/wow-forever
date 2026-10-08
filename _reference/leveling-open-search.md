@@ -15,8 +15,10 @@ The fastest leveling build found with no tree rule in each leveling rotation (fi
 | [rogue](../rogue/research/leveling/open-search.md) | combat-daggers-raid | [22/16/13](https://talentsforever.com/rogue/60/0253201020151-32303301001-32030023-4) | Hybrid Assassination/Combat | 26.54 | +1.4% |
 | [paladin](../paladin/research/leveling/open-search.md) | holy-leveling | [8/16/27](https://talentsforever.com/paladin/60/50003-5231110021-332052310013301-4) | Hybrid Protection/Retribution | 27.48 | +29.0% |
 | [paladin](../paladin/research/leveling/open-search.md) | ret-dps | [11/8/32](https://talentsforever.com/paladin/60/50103101-503-1522513100133032-4) | Retribution | 27.83 | +0.8% |
+| [druid](../druid/research/leveling/open-search.md) | feral-cat-dps | [9/31/11](https://talentsforever.com/druid/60/050022-55200302020030012051-50303-4) | Feral Combat | 29.02 | +0.3% |
 | [mage](../mage/research/leveling/open-search.md) | arcane-leveling | [28/1/22](https://talentsforever.com/mage/60/23210501310011053-01-20350030310003002-4) | Hybrid Arcane/Frost | 30.73 | +6.3% |
 | [mage](../mage/research/leveling/open-search.md) | fire-leveling | [18/7/26](https://talentsforever.com/mage/60/2350050000003-0331-005502313100030021-4) | Hybrid Arcane/Frost | 31.37 | +10.4% |
 | [paladin](../paladin/research/leveling/open-search.md) | prot-leveling | [0/22/29](https://talentsforever.com/paladin/60/-15303103013002-2512523010103031-4) | Hybrid Protection/Retribution | 32.52 | +9.6% |
 | [shaman](../shaman/research/leveling/open-search.md) | enhancement-dps | [9/32/10](https://talentsforever.com/shaman/60/510021-050030331005112251-05005-4) | Enhancement | 32.72 | +2.6% |
 | [shaman](../shaman/research/leveling/open-search.md) | elemental-dps | [31/11/9](https://talentsforever.com/shaman/60/5302311303103051-050002301-05301-4) | Elemental | 37.28 | +2.0% |
+| [druid](../druid/research/leveling/open-search.md) | balance-dps | [36/2/13](https://talentsforever.com/druid/60/5532200015501151-02-325003-4) | Balance | 52.01 | +3.1% |

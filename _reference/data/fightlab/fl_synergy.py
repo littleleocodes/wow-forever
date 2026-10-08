@@ -243,7 +243,9 @@ def research(cls, spec, r, model, trees, pool, jobs, space, MLT, ours, leads, be
 def cross_rotations(cls, st, pool, save):
     """Every done rotation's winner raced at levels 20-60 under each sibling leveling rotation of the class (2026-10-07: the paladin's
     Holy rotation produced a Prot-Ret split that cannot cast Holy Shock; the fight lab had played it as a melee build, and the page would
-    have shown it the Holy steps). A sibling 1% faster becomes the rotation the page shows for that build (`cross[spec].best`)."""
+    have shown it the Holy steps). Research only since 2026-10-08 (user decision: "I don't want classes specs taking other specs rotations
+    or builds or anything just because it's faster"): `cross[spec].best` records a faster sibling rotation; the pages always show a build
+    with its own spec's rotation (render_modes.leveling_numbers, open_builds.leveling_candidates)."""
     rots = FO.rotations(cls)
     done = st.setdefault("cross", {})
     for spec, r in st["rotations"].items():

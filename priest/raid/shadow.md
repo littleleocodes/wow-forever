@@ -4,7 +4,7 @@
 
 **✅ Recommended** for raid (the best priest spec here, or within 3% of it).
 
-**[Shadow leveling/raid](../research/raid/builds/opt-shadow-dps-raid-dps.md)** (18/0/33) — [open the talent tree](https://talentsforever.com/priest/60/005300231103--500320501201312251-4)
+**[Shadow (optimized)](../research/raid/builds/opt-shadow-dps-raid-dps.md)** (18/0/33) — [open the talent tree](https://talentsforever.com/priest/60/005300231103--500320501201312251-4)
 
 ## How to play
 

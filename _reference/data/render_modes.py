@@ -69,6 +69,8 @@ def ml_tiers():
 
 
 TIERS = ml_tiers()
+OWN_ROT = (json.load(open(HERE / "fightlab" / "own-rotation.json", encoding="utf-8"))
+           if (HERE / "fightlab" / "own-rotation.json").exists() else {})   # {class: {build id: {rotation, levels}}}
 
 
 def unused_talents():
@@ -166,9 +168,13 @@ def raid_numbers(cls):
     the highest DPS in a raid/group setting") raid pages rank by `group` = DPS in a full raid (every raid buff and debuff), the training
     dummy's DPS when a build has no raid number; `d`/`row` carry the raid rotation's lines (render_rotations.spec_data, raid view)."""
     out = {}
+    B = rr.builds(cls)
     for x in rs.raid_rows(cls, "raid"):
         r = x["row"]
         lab = r["label"]
+        own = SM.RAID_ENTRY_TREES.get((cls, x["spec"]))
+        if lab in B and own and not SM.rotation_allows(SM.spec_of(cls, B[lab]), own):
+            continue   # 2026-10-08 (user decision): a build counts only in an entry built for its own spec, never in a faster sibling's
         grp = r.get("value") if x["tank"] else (r.get("raid") or r.get("dps"))
         cur = out.get(lab)
         if cur is None or (grp or 0) > (cur["group"] or 0):
@@ -206,10 +212,8 @@ def leveling_numbers(cls):
     whole = open_leveling(cls, whole=True)
     for spec, rec in (whole.get("rotations") or {}).items():   # open-search builds (open_builds.py): the 20-60 race's numbers (seed 3)
         lv = ((rec.get("race") or {}).get("open winner") or {}).get("levels") or {}
-        model = spec
-        cr = (whole.get("cross") or {}).get(spec)   # fl_synergy.cross_rotations: a sibling rotation that plays the winner faster
-        if cr and cr.get("best") and cr["best"] != spec and cr.get("levels"):
-            model, lv = cr["best"], cr["levels"]
+        model = spec   # the rotation it was found in: a faster sibling rotation (fl_synergy.cross_rotations) is research only since
+                       # 2026-10-08 (user decision: no spec takes another spec's rotation because it is faster)
         for bid in (rec.get("builds") or {}).get("written") or []:
             if lv:
                 out[bid] = {int(Lv): v for Lv, v in lv.items()}
@@ -217,8 +221,12 @@ def leveling_numbers(cls):
     for bid, info in (GEN.get(cls) or {}).items():
         if info.get("levels"):
             out.setdefault(bid, {int(L): v for L, v in info["levels"].items()})
-        if info.get("model"):
-            LEVEL_MODEL[(cls, bid)] = info["model"]
+        if info.get("model"):   # setdefault (2026-10-08): a stale generated record (arcane-leveling from 2026-09-29, the borrowed
+            LEVEL_MODEL.setdefault((cls, bid), info["model"])   # frost-leveling model) had overwritten the derived build's own rotation
+    for bid, rec in (OWN_ROT.get(cls) or {}).items():   # fightlab/own_rotation_race.py: page builds raced with their spec's own rotation
+        if rec.get("levels"):
+            out[bid] = {int(L): v for L, v in rec["levels"].items()}
+            LEVEL_MODEL[(cls, bid)] = rec["rotation"]
     return out
 
 
@@ -362,7 +370,9 @@ def derived_text(mode, top):
 def bname(cls, b):
     """A build's player name; an optimizer build whose name is only a damage breakdown reads "<spec> (optimized)" instead of a tree name."""
     n = rs.display_name(cls, b)
-    if b["id"].startswith("opt-") and n in SM.trees(cls):
+    if b["id"].startswith("opt-") and n != SM.spec_name(cls, SM.spec_of(cls, b)):
+        # 2026-10-08: an optimizer build is named after its scorer model ("Raid Combat swords"), which is another spec's rotation when
+        # its points put it elsewhere (an Assassination page showed "Raid Combat swords"): pages name it after its own spec
         return f"{SM.spec_name(cls, SM.spec_of(cls, b))} (optimized)"
     return n
 
@@ -656,10 +666,26 @@ def cell(cls, spec, mode, builds, nums, src, rec=False):
     return (f"**{BADGE}**<br>" if rec else "") + f"[{bname(cls, top)}]({page}){gen}" + (f"<br>{note}" if note else "")
 
 
+def own_rotation_only(cls, g, nums):
+    """Leveling builds whose numbers come from another spec's rotation leave their spec's page (user decision 2026-10-08: "I don't want
+    classes specs taking other specs rotations or builds or anything just because it's faster"): kept only with a rotation built for the
+    spec's tree (a hybrid: either tree). fightlab/own_rotation_race.py gives such builds their own rotation's numbers first."""
+    trees_of = SM.leveling_rotation_trees(cls)
+    for spec, modes in g.items():
+        keep = []
+        for b in modes.get("leveling") or []:
+            rot = LEVEL_MODEL.get((cls, b["id"]))
+            if not weighted(nums[1].get(b["id"]) or {}) or rot is None or rot not in trees_of or SM.rotation_allows(spec, trees_of[rot]):
+                keep.append(b)
+        modes["leveling"] = keep
+    return g
+
+
 def class_pages(cls):
     B = rr.builds(cls)
     g = SM.grid(cls, list(B.values()))
     nums = (raid_numbers(cls), leveling_numbers(cls), healer_numbers(cls))
+    g = own_rotation_only(cls, g, nums)
     specs = SM.trees(cls) + sorted(s for s in g if s.startswith("Hybrid") and any(g[s].values()))
     rec = {m: recommended(cls, g, specs, m, nums) for m in SM.MODES}
     readme = ROOT / cls / "README.md"

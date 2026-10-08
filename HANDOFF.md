@@ -280,6 +280,16 @@ Each class folder now opens with player pages and keeps the research below:
   8 families 5-9% worse, so it was not adopted; the sibling families are added to each search's starts instead (raid and leveling, from
   the next class on; the rogue's running processes have the old code).
   **Improvement log:** `_reference/search-improvements.md` (user request 2026-10-07): changes, rejected ideas, ranked open ideas; keep it current.
+  **Each spec plays its own rotation (user decision 2026-10-08 ~07:50):** no page, writer or search step may move a build to another
+  spec's rotation because it is faster (CLAUDE.md, Structure rules). Done the same morning: the raid cross-rotation step records a faster
+  sibling but never adopts it (the warrior search restarted at 07:55 to load it); the pages dropped every sibling-rotation number (druid
+  Balance had shown cat play, mage Arcane and Arcane-Frost Frost play, the rogue's Daggers split the swords rotation) and a stale generated
+  record that showed the Frost rotation on the Arcane page (and the borrowed Affliction rotation on Demonology and Destruction); the writer
+  re-wrote the leveling builds (paladin Prot-Ret from the Protection rotation instead of the Holy one; rogue Daggers split from the daggers
+  rotation; the mage Fire rotation's Arcane-Frost winner is not written); four page builds were raced with their own rotation
+  (`fightlab/own_rotation_race.py`: the hunter's two Marksmanship-point builds that played Beast Mastery, the rogue's two Assassination-
+  point builds that played swords). Open question for the user: the Restoration druid and shaman still level with the Feral and
+  Enhancement rotations (LEVEL_AS, agreed 2026-09-29), as no healing tree has a damage rotation of its own.
   **Racials (2026-10-08 05:2x):** the simulator applies more racials in Forever than Classic (Tauren +1% hit, Night Elf's Elune's Light
   +10% crit, Berserking, Blood Fury, weapon specializations), and the generic cooldown line casts the on-use ones, so stripping rotation
   lines would not remove them. Patch `patches/forever/sim/core/no_racials.go` (+ an edits.json insertion in racials.go) switches all of them

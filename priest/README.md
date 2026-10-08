@@ -12,7 +12,7 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 |---|---|---|
 | **Discipline** | [Discipline — Leveling into the raid build](leveling/discipline.md) 🔬<br>45 s/kill | [Discipline — Penance / Divine Aegis / Power Infusion](raid/discipline.md)<br>healer |
 | **Holy** | [Holy — Leveling into the raid build](leveling/holy.md) 🔬<br>45 s/kill | [Holy — Raid Healer](raid/holy.md)<br>healer |
-| **Shadow** | **✅ Recommended**<br>[Leveling — Shadow](leveling/shadow.md)<br>26 s/kill | **✅ Recommended**<br>[Shadow leveling/raid](raid/shadow.md)<br>679 DPS (raid) |
+| **Shadow** | **✅ Recommended**<br>[Leveling — Shadow](leveling/shadow.md)<br>26 s/kill | **✅ Recommended**<br>[Shadow (optimized)](raid/shadow.md)<br>679 DPS (raid) |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
 
@@ -44,7 +44,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
-| 1 | [Shadow](raid/shadow.md) — Shadow leveling/raid | 679 | best |
+| 1 | [Shadow](raid/shadow.md) — Shadow (optimized) | 679 | best |
 | 2 | [Smite](raid/smite.md) — Discipline/Holy — Smite | 560 | -17% |
 
 **Healing** (ranked by the healer lab's capacity: the raid damage the healer keeps up with): [Holy](raid/holy.md) — Holy — Raid Healer (0.62), [Discipline](raid/discipline.md) — Discipline — Penance / Divine Aegis / Power Infusion (0.56).

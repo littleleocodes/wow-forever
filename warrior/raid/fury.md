@@ -2,7 +2,7 @@
 
 [Warrior](../README.md) > [Raid (group)](README.md) > Fury
 
-**[Raid dual-wield Fury](../research/raid/builds/opt-fury-dw-raid-raid-dps.md)** (19/32/0) — [open the talent tree](https://talentsforever.com/warrior/60/04305013102-25050035102210501--4)
+**[Fury (optimized)](../research/raid/builds/opt-fury-dw-raid-raid-dps.md)** (19/32/0) — [open the talent tree](https://talentsforever.com/warrior/60/04305013102-25050035102210501--4)
 
 ## How to play
 
@@ -64,7 +64,7 @@
 ## Other builds of this spec
 
 - [Fury — Dual Wield](../research/raid/builds/fury-dw-raid.md) (13/38/0, 789 DPS in a full raid, 417 on the dummy) — [open the talent tree](https://talentsforever.com/warrior/60/20305012-55053005152010501--4)
-- [Two-handed Arms/raid or leveling](../research/raid/builds/opt-arms-2h-raid-raid-dps.md) (20/31/0, 733 DPS in a full raid, 347 on the dummy) — [open the talent tree](https://talentsforever.com/warrior/60/03305013032-05250030052210501--4)
+- [Fury (optimized)](../research/raid/builds/opt-arms-2h-raid-raid-dps.md) (20/31/0, 733 DPS in a full raid, 347 on the dummy) — [open the talent tree](https://talentsforever.com/warrior/60/03305013032-05250030052210501--4)
 - [Fury — Two-Handed](../research/raid/builds/arms-2h-raid.md) (19/32/0, 725 DPS in a full raid, 344 on the dummy) — [open the talent tree](https://talentsforever.com/warrior/60/03305013031-55350000052010501--4)
 
 ---

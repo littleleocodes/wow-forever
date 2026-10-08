@@ -10,7 +10,7 @@ Healing capacity 0.75 (the raid damage it heals through in this project's healer
 
 ## Other builds of this spec
 
-- [Restoration (optimized)](../research/raid/builds/opt-resto-heal-raid-heal.md) (11/5/35) — [open the talent tree](https://talentsforever.com/druid/60/05302001-05-5050035153113021-4)
+- [Restoration](../research/raid/builds/opt-resto-heal-raid-heal.md) (11/5/35) — [open the talent tree](https://talentsforever.com/druid/60/05302001-05-5050035153113021-4)
 - [Restoration — Regrowth / Nature's Grace, with a Balance dip](../research/raid/builds/resto-regrowth-natures-grace.md) (21/0/30) — [open the talent tree](https://talentsforever.com/druid/60/1532223110001--505003510311105-4)
 
 ---

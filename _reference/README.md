@@ -69,7 +69,7 @@ mage). Empty spec x mode slots are filled by `spec_builds.py` (marked ⚗ genera
 
 | Class | Classic baseline builds | Forever tree (beta client 1.60.1.70009) | Forever builds | Scenario folders |
 |---|---|---|---|---|
-| [Druid](../druid/README.md) | 7 | 52 talents | 11 hand drafts + 9 optimizer builds | [leveling](../druid/research/leveling/README.md) · [raid](../druid/research/raid/README.md) · [pvp](../druid/research/pvp/README.md) |
+| [Druid](../druid/README.md) | 7 | 52 talents | 12 hand drafts + 9 optimizer builds | [leveling](../druid/research/leveling/README.md) · [raid](../druid/research/raid/README.md) · [pvp](../druid/research/pvp/README.md) |
 | [Hunter](../hunter/README.md) | 5 | 50 talents | 25 hand drafts + 11 optimizer builds | [leveling](../hunter/research/leveling/README.md) · [raid](../hunter/research/raid/README.md) · [pvp](../hunter/research/pvp/README.md) |
 | [Mage](../mage/README.md) | 7 | 54 talents | 18 hand drafts + 8 optimizer builds | [leveling](../mage/research/leveling/README.md) · [raid](../mage/research/raid/README.md) · [pvp](../mage/research/pvp/README.md) |
 | [Paladin](../paladin/README.md) | 5 | 50 talents | 14 hand drafts + 7 optimizer builds | [leveling](../paladin/research/leveling/README.md) · [raid](../paladin/research/raid/README.md) · [pvp](../paladin/research/pvp/README.md) |

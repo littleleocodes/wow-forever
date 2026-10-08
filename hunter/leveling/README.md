@@ -7,11 +7,11 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
 | 1 | [Beast-Survival](beast-survival.md) — Beast-Survival — Leveling 🔬 | 24 | fastest |
-| 2 | [Melee (split)](melee-split.md) — Melee hunter | 26 | +7% |
+| 2 | [Melee (split)](melee-split.md) — Melee (split) (optimized) | 26 | +7% |
 | 3 | [Beast-Marks](beast-marks.md) — Beast-Marks — Leveling 🔬 | 26 | +9% |
 | 4 | [Beast Mastery](beast-mastery.md) — Beast Mastery — Leveling ⚗ | 27 | +11% |
-| 5 | [Marksmanship](marksmanship.md) — Leveling — Marksmanship with a pet | 27 | +13% |
-| 6 | [Survival](survival.md) — Melee Survival leveling | 27 | +14% |
+| 5 | [Survival](survival.md) — Melee Survival leveling | 27 | +14% |
+| 6 | [Marksmanship](marksmanship.md) — Leveling — Marksmanship with a pet | 27 | +14% |
 
 🔬 = a derived build (searched in a simulator). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 

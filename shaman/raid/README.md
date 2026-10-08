@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 1 | [Enhancement](enhancement.md) — Enhancement — Raid 🔬 | 783 | best |
 | 2 | [Elemental-Enhancement](elemental-enhancement.md) — Elemental-Enhancement — Raid 🔬 | 748 | -4% |
-| 3 | [Elemental](elemental.md) — Elemental (optimized) | 518 | -34% |
+| 3 | [Elemental](elemental.md) — Elemental | 518 | -34% |
 
 **Healing**: [Restoration](restoration.md) — Restoration — Raid Healer.
 

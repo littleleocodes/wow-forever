@@ -7,7 +7,7 @@
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
 | 1 | [Balance](balance.md) — Balance — Moonkin / Eclipse | 576 | best |
-| 2 | [Feral Combat](feral-combat.md) — Feral Combat (optimized) | 538 | -7% |
+| 2 | [Feral Combat](feral-combat.md) — Feral Combat | 538 | -7% |
 
 **Healing**: [Restoration](restoration.md) — Restoration — Raid Healer.
 

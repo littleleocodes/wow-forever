@@ -413,9 +413,10 @@ def main():
 
 def cross_rotations(cls, st, repo, save, mine_all):
     """Every entry's builds under each sibling entry's raid rotation, in the entry's own gear (2026-10-06, the hunter's lesson: the +2%
-    Retribution rotation came from a sibling entry's re-tune). A sibling rotation 0.5% ahead for the entry's best build on 10,000 fights
-    and again on 30,000 (another seed), costing no listed build 1%, replaces the entry's raid rotation (a pass in its rotation-search
-    record; apl_opt.py --tune then polishes it) and the entry's race and talent values are redone under it."""
+    Retribution rotation came from a sibling entry's re-tune). Research only since 2026-10-08 (user decision: "I don't want classes specs
+    taking other specs rotations or builds or anything just because it's faster"): a sibling rotation 0.5% ahead for the entry's best
+    build (10,000 fights, confirmed on 30,000) is recorded as `faster_sibling`, never adopted. Until then it replaced the entry's raid
+    rotation (only the retired Shockadin entry ever adopted one)."""
     done = st.setdefault("cross", {})
     ents = [e for e, v in st["entries"].items() if v.get("done")]
     trees = R.load_trees(repo, cls)
@@ -451,9 +452,14 @@ def cross_rotations(cls, st, repo, save, mine_all):
                 rec["tested"][sib]["confirm_seed2"] = round(g2, 4)
                 if g2 >= 0.005 and min(gains.values()) > -0.01 and (rec["adopted"] is None or g2 > rec["adopted"]["gain"]):
                     rec["adopted"] = {"from": sib, "gain": round(g2, 4), "build": best_label}
+        # user decision 2026-10-08: "I don't want classes specs taking other specs rotations or builds or anything just because it's
+        # faster": the races stay as research (`tested`), a faster sibling rotation is only recorded (`faster_sibling`), never adopted
+        rec["faster_sibling"] = rec.pop("adopted")
+        rec["adopted"] = None
         log(f"  cross-rotations {entry}: " + ", ".join(f"{sib} {v.get(best_label, 0):+.1%}" for sib, v in rec["tested"].items())
-            + (f" -> adopting {rec['adopted']['from']}'s rotation ({rec['adopted']['gain']:+.1%})" if rec["adopted"] else ""))
-        if rec["adopted"]:
+            + (f" ({rec['faster_sibling']['from']}'s rotation is {rec['faster_sibling']['gain']:+.1%} faster: recorded, not adopted)"
+               if rec["faster_sibling"] else ""))
+        if rec["adopted"]:   # never since 2026-10-08 (kept for the record's shape)
             adopt_rotation(cls, entry, rec["adopted"]["from"], rec["adopted"]["gain"], repo)
             retune(cls, entry, w)
             e["race"] = race(cls, entry, repo, w, here)

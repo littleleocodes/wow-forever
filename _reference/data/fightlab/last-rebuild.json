@@ -7506,7 +7506,7 @@
   }
  },
  "last_run": {
-  "date": "2026-10-08T05:50:21",
+  "date": "2026-10-08T07:47:13",
   "classes": [
    "druid"
   ],
@@ -7519,7 +7519,7 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 312,
+  "seconds": 349,
   "refresh": null,
   "regen_log": [
    {
@@ -7584,7 +7584,6 @@
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "  ok   balance-pvp (32/11/8)",
      "  ok   feral-combat-pvp (0/32/19)",
      "  ok   restoration-pvp (0/11/40)",
      "  ok   opt-resto-heal-raid-heal (11/5/35)",
@@ -7594,6 +7593,7 @@
      "  ok   opt-feral-cat-dps-raid-dps (9/31/11)",
      "  ok   opt-feral-cat-dps-parse (9/31/11)",
      "  ok   opt-feral-bear-tank-raid-tank (7/35/9)",
+     "  ok   balance-open-leveling (36/2/13)",
      "",
      "all builds valid"
     ],
@@ -7615,7 +7615,7 @@
      "warlock/classic-baseline: 4 build pages + README.md",
      "warlock: 24 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "druid/classic-baseline: 7 build pages + README.md",
-     "druid: 20 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs"
+     "druid: 21 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs"
     ],
     "stderr": []
    },
@@ -7650,7 +7650,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py druid --write",
     "rc": 0,
-    "seconds": 303,
+    "seconds": 339,
     "tail": [
      "| balance-dps -> level-20 build (11/0/0) | +2.0% | +13.3% | +23.6% | +27.8% | +36.0% | +45.4% | +51.5% | +55.7% | +56.1% | +57.0% | +59.5% |",
      "| balance-dps -> level-30 build (21/0/0) | +2.0% | +13.3% | +20.9% | +27.1% | +37.2% | +46.7% | +53.1% | +56.9% | +57.0% | +57.9% | +60.4% |",
@@ -7704,7 +7704,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\loop_audit.py",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 2,
     "tail": [
      "druid    flagged 30/98  open 2",
      "hunter   flagged 30/55  open 5",
@@ -7724,7 +7724,7 @@
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote _reference\\launch-checklist.md (277 per-build questions)"
+     "wrote _reference\\launch-checklist.md (278 per-build questions)"
     ],
     "stderr": []
    },

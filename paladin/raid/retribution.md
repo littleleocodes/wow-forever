@@ -63,7 +63,7 @@
 ## Other builds of this spec
 
 - [Retribution — Raid](../research/raid/builds/retribution-ml-raid.md) (11/8/32, 961 DPS in a full raid, 499 on the dummy) — [open the talent tree](https://talentsforever.com/paladin/60/25003001-503-05225131001330321-4)
-- [Two-handed Retribution](../research/raid/builds/opt-ret-dps-raid-dps.md) (12/8/31, 958 DPS in a full raid, 507 on the dummy) — [open the talent tree](https://talentsforever.com/paladin/60/25003002-503-05225131001230321-4)
+- [Retribution (optimized)](../research/raid/builds/opt-ret-dps-raid-dps.md) (12/8/31, 958 DPS in a full raid, 507 on the dummy) — [open the talent tree](https://talentsforever.com/paladin/60/25003002-503-05225131001230321-4)
 - [Retribution — Seal of Command / Twist of Light](../research/raid/builds/ret-raid-dps.md) (17/0/34, 933 DPS in a full raid, 494 on the dummy) — [open the talent tree](https://talentsforever.com/paladin/60/550030030001--05225331001330321-4)
 
 ---

@@ -9688,12 +9688,10 @@
     "minutes": 2.9
    },
    "builds": {
-    "written": [
-     "prot-ret-open-leveling"
-    ],
-    "why": null,
+    "written": [],
+    "why": "found in the holy-leveling rotation, built for Holy, not Prot-Ret's own: not written (each spec plays its own rotation)",
     "spec": "Hybrid Protection/Retribution",
-    "date": "2026-10-07"
+    "date": "2026-10-08"
    },
    "level_polish": {
     "date": "2026-10-07",
@@ -10385,10 +10383,12 @@
    "minutes": 128.9,
    "done": true,
    "builds": {
-    "written": [],
-    "why": "the holy-leveling rotation's winner of the same spec is faster (27.48 against 32.52 s per kill)",
+    "written": [
+     "prot-ret-open-leveling"
+    ],
+    "why": null,
     "spec": "Hybrid Protection/Retribution",
-    "date": "2026-10-07"
+    "date": "2026-10-08"
    },
    "level_polish": {
     "date": "2026-10-07",
@@ -29799,7 +29799,7 @@
     ],
     "why": null,
     "spec": "Retribution",
-    "date": "2026-10-07"
+    "date": "2026-10-08"
    },
    "level_polish": {
     "date": "2026-10-07",

@@ -95,6 +95,9 @@
 **Optimizer — Maul 40%, white 30%, Swipe 15%, Faerie Fire/Demoralizing Roar 5%, Thorns 10%; Mangle arrives as a talent effect (raid-tank)** (`druid/research/raid/builds/opt-feral-bear-tank-raid-tank.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
+**Balance — Leveling (open talent search)** (`druid/research/leveling/builds/balance-open-leveling.md`)
+- [ ] An open-search Balance leveling build: check it while leveling at launch.
+
 ### Hunter
 
 **Beast Mastery / Marksmanship (simulator winner adopted 2026-10-02)** (`hunter/research/raid/builds/bm-mm-raid.md`)
