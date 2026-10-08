@@ -272,8 +272,9 @@ Each class folder now opens with player pages and keeps the research below:
   running** (since 18:55, `ml_pipeline.py hunter --fresh`, PID 5028 at below-normal priority): the first waiter's child bash survived
   its stop (TaskStop ends the task's shell, not the `bash hunter_ml_after_queue.sh` it spawned; kill such trees with `taskkill //PID
   <pid> //T //F`) and fired when the pause killed the runner; its chain (ml_builds --builds, --tidy-winners, --rank, the hunter re-race,
-  regen) continues in `deep-runs/hunter-ml-after-queue.log`; commit the hunter when it ends. The duplicate waiter started at the
-  resume was killed. **Hunter post hoc done** (16:59, commit
+  regen) was then killed at 21:10 (it took half the CPU from the rogue's polish: 2.5 min a pair against 1); its gear and spell-probe
+  progress is committed, its partial rotation writes reverted. A fresh waiter (`hunter_ml_after_queue.sh 9320`, now without `--fresh`,
+  so the pipeline resumes from its records) runs the chain when the runner exits; stop it only with `taskkill //PID <bash pid> //T //F`. **Hunter post hoc done** (16:59, commit
   dc691b4): bm-raid's structural lead 27/19/5 held after the re-tune and re-search (903 DPS, +0.9%) -> `beast-marks-open-raid` replaces
   mm-hawk-raid; melee-dps 16/11/24 confirmed -> `beast-survival-open-raid` (1170 in a full raid, the class's best); the Marksmanship
   entries confirm mm-lone-wolf-raid. **Racials** (user question 2026-10-07): the raid sim runs each entry as the race its preset had (mage, priest,
