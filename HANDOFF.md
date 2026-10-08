@@ -279,7 +279,13 @@ Each class folder now opens with player pages and keeps the research below:
   entries' polished families cut the builds by 80% in an A/B test (shaman Stormcaller, 8 pairs) with the same best family, but made 4 of
   8 families 5-9% worse, so it was not adopted; the sibling families are added to each search's starts instead (raid and leveling, from
   the next class on; the rogue's running processes have the old code).
-  **Improvement log:** `_reference/search-improvements.md` (user request 2026-10-07): changes, rejected ideas, ranked open ideas; keep it current. **Hunter post hoc done** (16:59, commit
+  **Improvement log:** `_reference/search-improvements.md` (user request 2026-10-07): changes, rejected ideas, ranked open ideas; keep it current.
+  **Racials (2026-10-08 05:2x):** the simulator applies more racials in Forever than Classic (Tauren +1% hit, Night Elf's Elune's Light
+  +10% crit, Berserking, Blood Fury, weapon specializations), and the generic cooldown line casts the on-use ones, so stripping rotation
+  lines would not remove them. Patch `patches/forever/sim/core/no_racials.go` (+ an edits.json insertion in racials.go) switches all of them
+  off under `WOW_FOREVER_NO_RACIALS=1`; it compiles and works (test binary, deleted: Troll Frostfire -0.6%, Tauren Balance -1.1%, Troll
+  melee hunter -0.3%). The clone's sources are patched; the bench binary is NOT rebuilt (not during the queue): run `setup.py --rebuild`
+  after the queue, then the final re-race with the variable set. **Hunter post hoc done** (16:59, commit
   dc691b4): bm-raid's structural lead 27/19/5 held after the re-tune and re-search (903 DPS, +0.9%) -> `beast-marks-open-raid` replaces
   mm-hawk-raid; melee-dps 16/11/24 confirmed -> `beast-survival-open-raid` (1170 in a full raid, the class's best); the Marksmanship
   entries confirm mm-lone-wolf-raid. **Racials** (user question 2026-10-07): the raid sim runs each entry as the race its preset had (mage, priest,

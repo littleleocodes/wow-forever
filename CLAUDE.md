@@ -647,6 +647,10 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   (the pet pane shows the inherited values) but publish no percentages and Blizzard's warlock deep dive is unpublished, so the warlock's
   pet numbers are the class's decision-critical assumption: find the percentages (a beta tester's pet pane) and patch like
   `pet_scaling.go` before trusting Demonology.
+  **Racials** (2026-10-08; user, 2026-10-07: "I don't necessarily want it to [account for racials], because then it can be unbiased as
+  possible. But it's okay if it does"): the patch `sim/core/no_racials.go` switches every racial effect off when `WOW_FOREVER_NO_RACIALS=1`
+  is set (off by default, built at the next `setup.py --rebuild`); planned for the final re-race after the open searches, with the
+  race sweep (`_reference/race-sweep.md`) for players who want their race's share.
   **Retribution's raid rotation** (2026-10-05): replaced by the one the open search's re-tune produced in the Seal of Fury showcase entry
   (Seal of Righteousness kept up and judged, Holy Strike, almost no seal twisting): +1.8% to +2.1% for every Retribution build in a full
   raid (the dummy rotation stays: that one loses 17% on the dummy); recorded as a pass in `ret-dps-rotation-search.json`.

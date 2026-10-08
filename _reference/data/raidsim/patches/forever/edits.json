@@ -16,5 +16,11 @@
   "after": "\tif hunter.Talents.LightningReflexes == 0 {\n\t\treturn\n\t}\n",
   "insert": "\t// wow-forever patch: 2% Agility a rank (client 70205's trait node 110859; the spell 19168 the fork reads still says 3%). The factor\n\t// corrects the line below to 1 + 0.02 x rank and is 1 once the fork reads the trait's value.\n\thunter.MultiplyStat(stats.Agility, (1+0.02*float64(hunter.Talents.LightningReflexes))/spellData.LightningReflexes.MultiplierAt(hunter.Talents.LightningReflexes))\n",
   "why": "Lightning Reflexes: 70205 gives 2% Agility a rank (10% at 5/5); the fork applies the base spell's 3%"
+ },
+ {
+  "file": "sim/core/racials.go",
+  "after": "func applyRaceEffects(agent Agent) {\n",
+  "insert": "\tif noRacials() { // wow-forever patch: WOW_FOREVER_NO_RACIALS=1 (patches/forever/sim/core/no_racials.go)\n\t\treturn\n\t}\n",
+  "why": "racial effects off on request, so builds compare without the preset's race (user preference 2026-10-07: as unbiased as possible)"
  }
 ]
