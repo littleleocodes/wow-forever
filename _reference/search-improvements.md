@@ -80,6 +80,19 @@
 - Polish cost per pair is about 10 improving steps of 120 builds plus a final pass of about 160: the climb, not the final pass, is the
   cost. Cheaper climbs must not change where they end (the warm-start test above).
 
+## Overnight measurements (2026-10-08)
+
+| Step | Before | After | Note |
+|---|---|---|---|
+| Raid family polish, rogue entry (94 pairs) | 49-60 min, 113-132k builds, sequential, CPU to itself | | the rogue ran the old code |
+| Raid family polish, druid Balance (59 pairs) | | 13 min, 81k builds | two threads; caster simulations are faster than melee |
+| Leveling family polish, rogue rotation (94 pairs) | | 42-45 min | two threads |
+| Full re-tune, both Assassination rotations | one round 2 h 17 min (hunter, before the fix) | 5 min | tuning builds only |
+| Sibling starts in a leveling search | | 81 of 186 starts (rogue Combat swords) | free |
+
+First in-loop runs of the 20-60 steps (rogue): the order choice made the daggers pick 1.5% faster (own tree last), and the order
+polish kept two block moves for the Combat-Subtlety pick (-0.3% and -0.8% at levels 30-50, 25.64 -> 25.52 s at 20-60).
+
 ## Self-audit checklist (after every class)
 
 - Step timings in the logs (polish, search, certificate, structural ranking, re-tunes) against earlier classes.
