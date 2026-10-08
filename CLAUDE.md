@@ -649,6 +649,9 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   **Retribution's raid rotation** (2026-10-05): replaced by the one the open search's re-tune produced in the Seal of Fury showcase entry
   (Seal of Righteousness kept up and judged, Holy Strike, almost no seal twisting): +1.8% to +2.1% for every Retribution build in a full
   raid (the dummy rotation stays: that one loses 17% on the dummy); recorded as a pass in `ret-dps-rotation-search.json`.
+- **Improvement log** (2026-10-07, user request: "make sure we're taking notes of any improvements and changes we can make"):
+  `_reference/search-improvements.md` (hand-kept) records every change to the search process with its evidence, every idea tested and
+  rejected, the ranked open ideas and the per-class self-audit checklist. Add to it at every self-audit.
 - **Open leveling search** (2026-10-04, user request: the leveling builds have the raid search's blind spot): `fightlab/fl_open_search.py
   <class>`: per leveling rotation (derive_leveling.LEVEL), the ML search over every legal build (any split) scored on kills per hour at
   level 60 in the fight lab (green gear; builds in parallel processes, common random numbers), the scorer's leveling order for the winner,

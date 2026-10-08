@@ -36,6 +36,7 @@ wow-forever/
 │   ├── dps-rankings.md           every raid damage spec, pre-BiS and phase-1 BiS, dummy and full raid (generated, raidsim/ml_builds.py)
 │   ├── scenario-audit.md  pvp-check.md  raid-buff-values.md  unused-abilities.md   audits (generated)
 │   ├── popular-builds.md  popular-picks.md  new-builds-survey.md  race-sweep.md  sim-gaps.md   surveys and audits
+│   ├── search-improvements.md    the open searches' improvement log: changes with evidence, rejected ideas, ranked open ideas (hand-kept)
 │   └── data/                     datasets + scripts (see "Tooling"); `paths.py` says where every class file lives
 ├── _templates/              ← templates for new class docs / builds
 └── <class>/                 ← druid, hunter, mage, paladin, priest, rogue, shaman, warlock, warrior
