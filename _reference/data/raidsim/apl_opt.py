@@ -69,12 +69,16 @@ def bench(entry, repo, builds, iterations, seed, setting, tag, extra=None):
            **(extra or {})}   # extra config keys: {"link": true, "api_version": n} makes share links (gear_links.py)
     d = repo / "bench"
     d.mkdir(exist_ok=True)
-    p = d / f"aplopt-{tag}-{os.getpid()}.json"
+    import threading
+    worker = threading.current_thread() is not threading.main_thread()   # threaded callers (the family polish) get their own file
+    p = d / (f"aplopt-{tag}-{os.getpid()}" + (f"-t{threading.get_ident()}" if worker else "") + ".json")
     p.write_text(json.dumps(cfg), encoding="utf-8")
     bench_exe = repo / ("foreverbench.exe" if (repo / "foreverbench.exe").exists() else "foreverbench")
     r = subprocess.run([str(bench_exe), "--config", str(p), "--root", str(repo)], capture_output=True, text=True, encoding="utf-8", errors="replace")
     if r.returncode:
         raise SystemExit(f"bench failed: {r.stderr[-1500:]}")
+    if worker:
+        p.unlink(missing_ok=True)
     rows = {}
     for line in r.stdout.splitlines():
         if line.startswith("{"):

@@ -638,7 +638,8 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   search 25 min for a paladin entry. A class's other entries' (leveling: other rotations') polished families join each search's starts
   (`sibling_starts`, caches `families/cache/` and `fightlab/open/cache/`, git-ignored; 2026-10-07). Using them as warm starts of the
   polish was tested and rejected (shaman Stormcaller, 8 pairs: 80% fewer builds, same best family, but 4 families 5-9% worse: a climb from
-  a sibling's optimum stops there). (10) **Duplicate entries are skipped** (2026-10-07, user decision): an entry whose raid rotation
+  a sibling's optimum stops there). The raid family polish climbs two pairs at once (`workers=2`; identical families, a test 22% faster).
+  (10) **Duplicate entries are skipped** (2026-10-07, user decision): an entry whose raid rotation
   (actions, notes stripped), gear, race, options, consumables and buff switches equal a finished entry's gets that entry's results
   (`signature`, `same_as`) instead of a search; the paladin's Seal of Fury and Shockadin showcase entries, both running Retribution's
   rotation since the 2026-10-05 and 2026-10-07 replacements, were retired the same day. **Warlock demons** (2026-10-06): the simulator (and

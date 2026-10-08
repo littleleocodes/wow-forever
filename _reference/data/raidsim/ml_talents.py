@@ -609,7 +609,8 @@ def polish(space, sim, flat, fights, seed, rounds=8, min_gain=0.002, keep=(), sm
     return cur, cur_s
 
 
-def family_polish(space, sim, rng, log, fights=300, rounds=8, per_pair=2, top=5, full_fights=800, seed=37, min_gain=0.002, warm=None):
+def family_polish(space, sim, rng, log, fights=300, rounds=8, per_pair=2, top=5, full_fights=800, seed=37, min_gain=0.002, warm=None,
+                  workers=1):
     """Niching for an open search (2026-10-05: a raw keystone seed with random filler points scored low and was dropped before the
     search could tune it, so the 16/11/24 Summon Hawk + Lone Wolf hunter was never found): for each pair of keystones from different
     trees, the better of per_pair random legal builds holding both, polished by a short hill climb that keeps the pair (1-point moves,
@@ -619,14 +620,17 @@ def family_polish(space, sim, rng, log, fights=300, rounds=8, per_pair=2, top=5,
     gear); they compete with the random draws for the start (the better-scoring start is climbed), so a climb begins near a tuned build
     instead of random filler; the random draw stays, so a pair is never limited to its sibling's region. A/B test the same day (shaman
     Stormcaller, 8 pairs, 150 fights): 80% fewer builds and the same best family, but 4 of 8 families 5-9% worse and 3 better, so no
-    caller passes it; family_search adds the sibling families to the search's starts instead (`sibling_starts`)."""
+    caller passes it; family_search adds the sibling families to the search's starts instead (`sibling_starts`).
+    workers (2026-10-07): climbs run in that many threads (each its own simulator process). The start draws are made first in the
+    sequential order and a climb never touches `rng` (polish has its own random stream), and common random numbers make every result
+    independent of what else is simulated, so the families are identical to a sequential polish; the machine idled a fifth of the time
+    between one climb's batches."""
     keep0 = set(space.protect)
     ks = space.keystones(damage_only=True)
     pairs = [(a, b) for i, a in enumerate(ks) for b in ks[i + 1:] if space.tree_of[a] != space.tree_of[b]]
-    out = []
-    t0 = time.time()
+    plan = []
     n_warm = 0
-    for k, (a, b) in enumerate(pairs, start=1):
+    for a, b in pairs:
         space.protect = keep0 | {a, b}
         draws = [x for x in (space.random_build(rng) for _ in range(per_pair)) if x]
         space.protect = keep0
@@ -635,21 +639,42 @@ def family_polish(space, sim, rng, log, fights=300, rounds=8, per_pair=2, top=5,
         if ws:
             n_warm += 1
             draws = draws + [w for i, w in enumerate(ws) if w not in ws[:i]]
+        plan.append((a, b, draws))
+
+    def climb(item):
+        a, b, draws = item
         if not draws:
-            continue
+            return None
         sc = sim.run(draws, fights, seed)
         x0 = draws[max(range(len(draws)), key=lambda j: sc[j][0])]
         x, sx = polish(space, sim, x0, fights, seed, rounds, min_gain=min_gain, keep=(a, b))
-        out.append((sx, x, f"{a} + {b}"))
-        if k % 20 == 0 or k == len(pairs):   # progress (2026-10-07: a 136-pair polish was an hour of silence on a shared CPU)
-            log(f"    polish: {k}/{len(pairs)} pairs, {(time.time() - t0) / 60:.0f} min, best so far {max(out, key=lambda t: t[0])[2]} "
-                f"{max(t[0] for t in out):.4g}" + (f" ({n_warm} warm starts)" if warm else ""))
-    out.sort(key=lambda t: -t[0])
-    final = []
-    for sx, x, lab in out[:top]:
-        pair = tuple(lab.split(" + "))
-        x2, s2 = polish(space, sim, x, full_fights, seed + 1, rounds, min_gain=min_gain, keep=pair, small=False)
-        final.append((s2, x2, lab))
+        return (sx, x, f"{a} + {b}")
+
+    def full(item):
+        sx, x, lab = item
+        x2, s2 = polish(space, sim, x, full_fights, seed + 1, rounds, min_gain=min_gain, keep=tuple(lab.split(" + ")), small=False)
+        return (s2, x2, lab)
+
+    ex = None
+    if workers > 1:
+        from concurrent.futures import ThreadPoolExecutor
+        ex = ThreadPoolExecutor(max_workers=workers)
+    mapper = ex.map if ex else map
+    out = []
+    t0 = time.time()
+    try:
+        for k, res in enumerate(mapper(climb, plan), start=1):
+            if res:
+                out.append(res)
+            if out and (k % 20 == 0 or k == len(plan)):   # progress (2026-10-07: a 136-pair polish was an hour of silence on a shared CPU)
+                log(f"    polish: {k}/{len(plan)} pairs, {(time.time() - t0) / 60:.0f} min, best so far {max(out, key=lambda t: t[0])[2]} "
+                    f"{max(t[0] for t in out):.4g}" + (f" ({n_warm} warm starts)" if warm else ""))
+        out.sort(key=lambda t: -t[0])
+        final = list(mapper(full, out[:top]))
+    finally:
+        if ex:
+            ex.shutdown()
+    for s2, x2, lab in final:
         log(f"    family {lab}: {space.split(x2)} {s2:.4g}" if s2 < 10 else f"    family {lab}: {space.split(x2)} {s2:.1f}")
     final.sort(key=lambda t: -t[0])
     return final + [t for t in out[top:]]
