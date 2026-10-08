@@ -255,6 +255,11 @@ def main():
             if a.spec and t["spec"] != a.spec:
                 continue
             rec = load(cls, t["spec"])
+            if rec is not None and a.fresh and any(((rec.get("search") or {}).get(k) or {}).get("winner") for k in ("bis-dummy", "prebis-dummy")):
+                # keep the finished record (2026-10-08): the pages show its gear tiers until the new run has its own (render_modes.ml_tiers)
+                pv = OUT / "prev" / f"{cls}-{rec.get('slug') or t.get('slug')}.json"
+                pv.parent.mkdir(parents=True, exist_ok=True)
+                pv.write_text(json.dumps(rec, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
             if rec is None or a.fresh:
                 rec = dict(t, date=TODAY, gear={}, search={})
             else:

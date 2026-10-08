@@ -4,10 +4,10 @@
 
 | Class | Spec model | Best of our builds | DPS | Best sim preset | DPS | Our optimizer build | DPS |
 |---|---|---|---|---|---|---|---|
-| rogue | `assassination-raid` | `assassination-seal-fate-raid` | 407 | - | - | - | - |
-| rogue | `combat-daggers-raid` | `opt-combat-daggers-raid-raid-dps` | 419 | Combat Dual-Wield 15/33/3 | 394 | `opt-combat-daggers-raid-raid-dps` | 419 |
-| rogue | `combat-swords-raid` | `combat-swords-raid` | 393 | Improved Expose Armor (SS) | 393 | `opt-combat-swords-raid-raid-dps` | 376 |
-| rogue | `subtlety-raid` | `subtlety-hemo-raid` | 386 | - | - | - | - |
+| hunter | `bm-raid` | `beast-marks-open-raid` | 505 | - | - | - | - |
+| hunter | `melee-dps` | `survival-raid` | 467 | - | - | - | - |
+| hunter | `mm-lonewolf-raid` | `opt-mm-lonewolf-raid-raid-dps` | 463 | Beast Mastery 35/16/0 | 381 | `opt-mm-lonewolf-raid-raid-dps` | 463 |
+| hunter | `mm-raid` | `bm-mm-raid` | 498 | Beast Mastery 35/16/0 | 468 | `opt-mm-raid-raid-dps` | 498 |
 
 ## DPS by environment: dummy, raid, maximum
 
@@ -15,12 +15,11 @@ The best of our builds per spec model on the boss-level training dummy with your
 
 | Class | Game | Spec model | Best build | Dummy | Dummy 60 | Raid | Maximum | Max 60 s | Parse build (max) | Best preset (max) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| rogue | Forever | `assassination-raid` | `assassination-ml-raid` (30/19/2) | 394 | 462 | 734 | 743 | 787 | - | Mutilate 703 |
-| rogue | Forever | `combat-daggers-raid` | `combat-ml-raid` (16/33/2) | 402 | 468 | 772 | 781 | 882 | `opt-combat-daggers-raid-parse` 757 | Combat Dual-Wield 15/33/3 763 |
-| rogue | Forever | `combat-swords-raid` | `combat-swords-raid` (19/32/0) | 393 | 463 | 731 | 731 | 827 | `opt-combat-swords-raid-parse` 726 | Sinister Strike 741 |
-| rogue | Forever | `subtlety-raid` | `subtlety-hemo-raid` (20/0/31) | 386 | 439 | 686 | 686 | 749 | - | Subtlety Hemo 15/0/36 647 |
-| rogue | Classic | `combat-daggers-raid` | `combat-daggers-raid` (15/31/5) | 440 | - | 1259 | 1275 | 1367 | - | Backstab 1297 |
-| rogue | Classic | `combat-swords-raid` | `combat-swords-raid` (19/32/0) | 419 | - | 1267 | 1286 | 1395 | - | Sinister Strike 1292 |
+| hunter | Forever | `bm-raid` | `beast-marks-open-raid` (27/19/5) | 505 | 547 | 903 | 903 | 923 | `beast-mastery-ml-parse` 895 | Beast Mastery 35/16/0 845 |
+| hunter | Forever | `melee-dps` | `beast-survival-open-raid` (16/11/24) | 380 | 452 | 1170 | 1170 | 1195 | `survival-ml-parse` 1036 | - |
+| hunter | Forever | `mm-lonewolf-raid` | `mm-lone-wolf-raid` (5/41/5) | 457 | 492 | 957 | 957 | 980 | `marksmanship-ml-parse` 911 | Marksmanship 740 |
+| hunter | Forever | `mm-raid` | `opt-mm-raid-parse` (31/20/0) | 478 | 518 | 870 | 885 | 913 | `opt-mm-raid-parse` 885 | Marksmanship 862 |
+| hunter | Classic | `mm-raid` | `bm-mm-raid` (20/31/0) | 405 | - | 1049 | 1085 | 1146 | - | Marksmanship 1087 |
 
 ## Classic Era check (upstream wowsims/classic)
 
@@ -28,6 +27,5 @@ Our Classic-era community builds (`<class>/research/talents/classic-baseline/bui
 
 | Class | Spec model | Best of our builds | DPS | Best sim preset | DPS | Damage split (model sources) |
 |---|---|---|---|---|---|---|
-| rogue | `combat-daggers-raid` | `combat-daggers-raid` | 1259 | Backstab | 1285 | white_mh 39%, backstab 32%, white_oh 21%, poisons 6%, eviscerate 3% |
-| rogue | `combat-swords-raid` | `combat-swords-raid` | 1267 | Sinister Strike | 1273 | white_mh 42%, sinister 24%, white_oh 23%, eviscerate 7%, poisons 5% |
+| hunter | `mm-raid` | `bm-mm-raid` | 1049 | Marksmanship | 1051 | auto 39%, aimed 21%, pet 20%, multi 15%, serpent 4% |
 

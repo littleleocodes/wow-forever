@@ -55,6 +55,16 @@ def ml_tiers():
             continue
         if r.get("class") and any(((r.get("search") or {}).get(k) or {}).get("winner") for k in ("bis-dummy", "prebis-dummy")):
             out[(r["class"], r["spec"])] = r
+    # a spec whose record is being re-run (ml_pipeline --fresh keeps the finished one in ml/prev/, 2026-10-08) shows the previous run's
+    # tiers, flagged, instead of losing its gear tables until the new run ends
+    for p in sorted((d / "prev").glob("*.json")) if (d / "prev").exists() else []:
+        try:
+            r = json.load(open(p, encoding="utf-8"))
+        except ValueError:
+            continue
+        if r.get("class") and (r["class"], r["spec"]) not in out and any(((r.get("search") or {}).get(k) or {}).get("winner")
+                                                                       for k in ("bis-dummy", "prebis-dummy")):
+            out[(r["class"], r["spec"])] = dict(r, _prev=True)
     return out
 
 
@@ -106,6 +116,8 @@ def tier_lines(cls, spec, src, top):
             tl += " (ties this build)"
         o.append(f"| {name} | {tier_dps(r, f'{t}-raid')} | {tl} |")
     o.append("")
+    if r.get("_prev"):
+        o += [f"*From the search run of {r.get('date', 'an earlier date')}; a new run is queued and will replace these numbers.*", ""]
     gt = gear_tables.table(cls, spec)   # every item and enchant linked to Wowhead, where it drops (raidsim/gear_links.py)
     if gt:
         il = "; ".join(f"{name} {((r.get('gear') or {}).get(t) or {}).get('ilvl', '-')}" for t, name in TIER_KEYS if (r.get("gear") or {}).get(t))
