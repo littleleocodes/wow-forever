@@ -71,7 +71,7 @@
 
 ## Other builds of this spec
 
-- [Destruction](../research/raid/builds/opt-fire-destro-raid-raid-dps.md) (10/11/30, 669 DPS in a full raid, 568 on the dummy) — [open the talent tree](https://talentsforever.com/warlock/60/253-0050203001-055030510310025-4)
+- [Destruction (optimized)](../research/raid/builds/opt-fire-destro-raid-raid-dps.md) (10/11/30, 669 DPS in a full raid, 568 on the dummy) — [open the talent tree](https://talentsforever.com/warlock/60/253-0050203001-055030510310025-4)
 - [Destruction — Incinerate](../research/raid/builds/destruction-incinerate-raid.md) (9/11/31, 603 DPS in a full raid, 522 on the dummy) — [open the talent tree](https://talentsforever.com/warlock/60/153-0050203001-0050245103101351-4)
 
 ---

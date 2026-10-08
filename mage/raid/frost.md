@@ -65,7 +65,7 @@
 
 ## Other builds of this spec
 
-- [Frost (optimized)](../research/raid/builds/opt-frost-raid-raid-dps-extwc.md) (1/13/37, 675 DPS in a full raid, 564 on the dummy) — [open the talent tree](https://talentsforever.com/mage/60/1-2330203-0555000331021301251-4)
+- [Raid Frostbolt with Ice Lance on Fingers of Frost charges](../research/raid/builds/opt-frost-raid-raid-dps-extwc.md) (1/13/37, 675 DPS in a full raid, 564 on the dummy) — [open the talent tree](https://talentsforever.com/mage/60/1-2330203-0555000331021301251-4)
 - [Frost — Winter's Chill](../research/raid/builds/frost-winters-chill-raid.md) (21/0/30, 626 DPS in a full raid, 548 on the dummy) — [open the talent tree](https://talentsforever.com/mage/60/054005003000211--055500033002100105-4)
 
 ---

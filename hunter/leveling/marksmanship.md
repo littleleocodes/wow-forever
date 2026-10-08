@@ -60,7 +60,7 @@ One point per level from 10, in this order:
 ## Other builds of this spec
 
 - [Marksmanship (optimized)](../research/leveling/builds/opt-bm-leveling-leveling-st.md) (19/32/0, 28 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/hunter/60/51202005031-0053552001022151--4)
-- [Marksmanship (optimized)](../research/leveling/builds/opt-mm-raid-leveling-st.md) (12/33/6, 29 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/hunter/60/5020221-0053552001023151-51-4)
+- [Marksmanship raid DPS with a pet](../research/leveling/builds/opt-mm-raid-leveling-st.md) (12/33/6, 29 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/hunter/60/5020221-0053552001023151-51-4)
 - [Marksmanship (optimized)](../research/leveling/builds/opt-bm-leveling-solo-60.md) (18/33/0) — [open the talent tree](https://talentsforever.com/hunter/60/51202005021-0053552001023151--4)
 
 ---

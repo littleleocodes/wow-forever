@@ -7,7 +7,7 @@
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
 | 1 | [Demonology](demonology.md) — Demonology — Demonic Pact | 786 | best |
-| 2 | [Affliction](affliction.md) — Affliction | 722 | -8% |
+| 2 | [Affliction](affliction.md) — Affliction (optimized) | 722 | -8% |
 | 3 | [Shadow Bolt hybrid](shadow-bolt-hybrid.md) — Shadow Bolt hybrid (optimized) | 710 | -10% |
 | 4 | [Destruction](destruction.md) — Destruction — Raid 🔬 | 693 | -12% |
 

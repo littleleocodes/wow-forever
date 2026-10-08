@@ -7,9 +7,9 @@
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
 | 1 | [Arms](arms.md) — Arms — Full raid 🔬 | 890 | best |
-| 2 | [Fury](fury.md) — Fury (optimized) | 797 | -10% |
+| 2 | [Fury](fury.md) — Raid dual-wield Fury | 797 | -10% |
 
-**Tanking**: [Protection](protection.md) — Protection (optimized).
+**Tanking**: [Protection](protection.md) — Raid tank in Defensive Stance with a shield.
 
 **By gear tier**: each damage spec with its best talents for each tier, in its own gear (DPS in a full raid; [every class](../../_reference/dps-rankings.md)):
 

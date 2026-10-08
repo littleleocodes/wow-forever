@@ -370,10 +370,17 @@ def derived_text(mode, top):
 def bname(cls, b):
     """A build's player name; an optimizer build whose name is only a damage breakdown reads "<spec> (optimized)" instead of a tree name."""
     n = rs.display_name(cls, b)
-    if b["id"].startswith("opt-") and n != SM.spec_name(cls, SM.spec_of(cls, b)):
-        # 2026-10-08: an optimizer build is named after its scorer model ("Raid Combat swords"), which is another spec's rotation when
-        # its points put it elsewhere (an Assassination page showed "Raid Combat swords"): pages name it after its own spec
-        return f"{SM.spec_name(cls, SM.spec_of(cls, b))} (optimized)"
+    if b["id"].startswith("opt-"):
+        spec = SM.spec_of(cls, b)
+        # 2026-10-08: an optimizer build is named after its scorer model ("Raid Combat swords"); when that model is another spec's
+        # rotation (its points put it elsewhere: an Assassination page showed "Raid Combat swords") the page names it after its own spec
+        rest = b["id"][len("opt-"):]
+        lev = SM.leveling_rotation_trees(cls)
+        models = [m for m in list(lev) + [e for c, e in SM.RAID_ENTRY_TREES if c == cls] if rest.startswith(m + "-")]
+        model = max(models, key=len) if models else None
+        trees_ = (lev.get(model) if SM.mode_of(b) == "leveling" else SM.RAID_ENTRY_TREES.get((cls, model))) if model else None
+        if n in SM.trees(cls) or (trees_ and not SM.rotation_allows(spec, trees_)):
+            return f"{SM.spec_name(cls, spec)} (optimized)"
     return n
 
 

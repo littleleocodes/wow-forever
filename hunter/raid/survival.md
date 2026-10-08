@@ -69,7 +69,7 @@
 ## Other builds of this spec
 
 - [Survival — Raid](../research/raid/builds/survival-raid.md) (5/16/30, 1070 DPS in a full raid, 467 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5-005055001-50023023005022213-4)
-- [Survival (optimized)](../research/raid/builds/opt-melee-dps-raid-dps.md) (5/15/31, 1062 DPS in a full raid, 447 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5-005045001-500250030050220151-4)
+- [Melee hunter](../research/raid/builds/opt-melee-dps-raid-dps.md) (5/15/31, 1062 DPS in a full raid, 447 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5-005045001-500250030050220151-4)
 - [Survival — Melee](../research/raid/builds/survival-melee.md) (9/11/31) — [open the talent tree](https://talentsforever.com/hunter/60/522-005015-500230131050220151-4)
 
 ---

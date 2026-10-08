@@ -2,7 +2,7 @@
 
 [Shaman](../README.md) > [Raid (group)](README.md) > Elemental
 
-**[Elemental](../research/raid/builds/opt-elemental-dps-raid-dps.md)** (31/7/13) — [open the talent tree](https://talentsforever.com/shaman/60/5500301303113051-052-05305-4)
+**[Elemental (optimized)](../research/raid/builds/opt-elemental-dps-raid-dps.md)** (31/7/13) — [open the talent tree](https://talentsforever.com/shaman/60/5500301303113051-052-05305-4)
 
 ## How to play
 

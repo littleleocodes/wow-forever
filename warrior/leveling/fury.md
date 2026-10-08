@@ -4,7 +4,7 @@
 
 **✅ Recommended** for leveling (the best warrior spec here, or within 3% of it).
 
-**[Fury (optimized)](../research/leveling/builds/opt-fury-dw-raid-leveling-st.md)** (13/38/0) — [open the talent tree](https://talentsforever.com/warrior/60/3202501-25053035152010501--4)
+**[Raid dual-wield Fury](../research/leveling/builds/opt-fury-dw-raid-leveling-st.md)** (13/38/0) — [open the talent tree](https://talentsforever.com/warrior/60/3202501-25053035152010501--4)
 
 ## How to play
 
@@ -33,7 +33,7 @@
 
 ## Other builds of this spec
 
-- [Fury (optimized)](../research/leveling/builds/opt-fury-dw-raid-solo-60.md) (13/38/0) — [open the talent tree](https://talentsforever.com/warrior/60/3202501-25053035152010501--4)
+- [Raid dual-wield Fury](../research/leveling/builds/opt-fury-dw-raid-solo-60.md) (13/38/0) — [open the talent tree](https://talentsforever.com/warrior/60/3202501-25053035152010501--4)
 - [Fury (optimized)](../research/leveling/builds/opt-arms-2h-raid-leveling-aoe.md) (19/32/0) — [open the talent tree](https://talentsforever.com/warrior/60/0530220313-45050130052010501--4)
 
 ---

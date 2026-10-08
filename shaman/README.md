@@ -11,7 +11,7 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling (solo) | Raid (group: full raid DPS) |
 |---|---|---|
-| **Elemental** | [Elemental — Leveling](leveling/elemental.md) 🔬<br>37 s/kill | [Elemental](raid/elemental.md)<br>518 DPS (raid) |
+| **Elemental** | [Elemental — Leveling](leveling/elemental.md) 🔬<br>37 s/kill | [Elemental (optimized)](raid/elemental.md)<br>518 DPS (raid) |
 | **Enhancement** | **✅ Recommended**<br>[Enhancement — Leveling](leveling/enhancement.md) 🔬<br>33 s/kill | **✅ Recommended**<br>[Enhancement — Raid](raid/enhancement.md) 🔬<br>783 DPS (raid) |
 | **Restoration** | [Restoration — Leveling into the raid build](leveling/restoration.md) 🔬<br>43 s/kill | [Restoration — Raid Healer](raid/restoration.md)<br>healer |
 
@@ -47,7 +47,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 |---|---|---|---|
 | 1 | [Enhancement](raid/enhancement.md) — Enhancement — Raid 🔬 | 783 | best |
 | 2 | [Elemental-Enhancement](raid/elemental-enhancement.md) — Elemental-Enhancement — Raid 🔬 | 748 | -4% |
-| 3 | [Elemental](raid/elemental.md) — Elemental | 518 | -34% |
+| 3 | [Elemental](raid/elemental.md) — Elemental (optimized) | 518 | -34% |
 
 **Healing**: [Restoration](raid/restoration.md) — Restoration — Raid Healer.
 

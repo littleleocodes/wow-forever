@@ -4,7 +4,7 @@
 
 *Dual-wield melee with Marksmanship support, short of 30 Survival points.* (a hybrid: Marksmanship/Survival).
 
-**[Melee (split) (optimized)](../research/leveling/builds/opt-melee-dps-leveling-st.md)** (9/13/29) — [open the talent tree](https://talentsforever.com/hunter/60/50202-005305-54020003105122211-4)
+**[Melee hunter](../research/leveling/builds/opt-melee-dps-leveling-st.md)** (9/13/29) — [open the talent tree](https://talentsforever.com/hunter/60/50202-005305-54020003105122211-4)
 
 ## How to play
 

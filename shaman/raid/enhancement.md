@@ -66,7 +66,7 @@
 
 ## Other builds of this spec
 
-- [Enhancement (optimized)](../research/raid/builds/opt-enhancement-dps-raid-dps.md) (11/31/9, 738 DPS in a full raid, 400 on the dummy) — [open the talent tree](https://talentsforever.com/shaman/60/5000321-055030031005102051-05004-4)
+- [One slow weapon](../research/raid/builds/opt-enhancement-dps-raid-dps.md) (11/31/9, 738 DPS in a full raid, 400 on the dummy) — [open the talent tree](https://talentsforever.com/shaman/60/5000321-055030031005102051-05004-4)
 - [Enhancement — Stormstrike / Maelstrom Weapon](../research/raid/builds/enhancement-raid-dps.md) (11/31/9, 729 DPS in a full raid, 395 on the dummy) — [open the talent tree](https://talentsforever.com/shaman/60/5200031-055030031005102051-05004-4)
 
 ---

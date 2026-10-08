@@ -58,7 +58,7 @@ One point per level from 10, in this order:
 
 ## Other builds of this spec
 
-- [Survival (optimized)](../research/leveling/builds/opt-melee-dps-solo-60.md) (9/10/32) — [open the talent tree](https://talentsforever.com/hunter/60/50202-005005-540200031051220151-4)
+- [Melee hunter](../research/leveling/builds/opt-melee-dps-solo-60.md) (9/10/32) — [open the talent tree](https://talentsforever.com/hunter/60/50202-005005-540200031051220151-4)
 - [Survival (optimized)](../research/leveling/builds/opt-bm-leveling-leveling-aoe.md) (20/0/31) — [open the talent tree](https://talentsforever.com/hunter/60/50202105041--543003031001022151-4)
 
 ---

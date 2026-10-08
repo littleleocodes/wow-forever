@@ -2,7 +2,7 @@
 
 [Warrior](../README.md) > [Raid (group)](README.md) > Protection
 
-**[Protection (optimized)](../research/raid/builds/opt-prot-tank-raid-tank.md)** (14/5/32) — [open the talent tree](https://talentsforever.com/warrior/60/35300003-05-050533020301001351-4)
+**[Raid tank in Defensive Stance with a shield](../research/raid/builds/opt-prot-tank-raid-tank.md)** (14/5/32) — [open the talent tree](https://talentsforever.com/warrior/60/35300003-05-050533020301001351-4)
 
 ## How to play
 
