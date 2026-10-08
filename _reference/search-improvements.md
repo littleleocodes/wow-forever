@@ -57,7 +57,13 @@
    an Undead or Demon target; 90 s and 300 s) and flag a pick that is not robust.
 7. **Model fidelity** (biggest real-game gap, not search): warlock demon scaling (a beta tester's pet pane), the hunter pet attack-speed
    question, the final beta build refresh, comparison with beta logs and real leveling times.
-8. **Mana-conditional spell ranks.** Retribution's lower Seal of Command rank pays only for mana-hungry builds: a rank line guarded by
+8. **Weapon variants on the pages.** The rogue's swords entry found 18/33/0 at 746.6 DPS, +1.9% over our swords builds, but the Combat
+   page shows one build per spec (the daggers build at 770), so a swords player never sees it. Idea: a weapon line on the page when a
+   spec's entries differ in weapon type (swords, daggers, maces), each with its entry's best build. A page change, not a search change.
+9. **Skip a sibling's checks when an entry's winner equals a finished entry's.** The rogue's Assassination entry ended on the daggers
+   entry's 16/33/2 at the same DPS, and the two rotations are interchangeable for it (cross-rotation race +0.0%), yet both ran the
+   certificate and the structural ranking. Saving: about 4 min per such entry; low priority.
+10. **Mana-conditional spell ranks.** Retribution's lower Seal of Command rank pays only for mana-hungry builds: a rank line guarded by
    mana would let one rotation serve both.
 
 ## Efficiency (measured)
