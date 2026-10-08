@@ -265,7 +265,11 @@ Each class folder now opens with player pages and keeps the research below:
   three leveling rotations, then the other classes), then restart the hunter ML waiter on the new runner's bash PID (`bash
   _reference/data/deep-runs/hunter_ml_after_queue.sh <pid>`; it was stopped so the pause would not start a three-hour job) and the
   per-class writer waiters (rogue raid: `open_builds.py rogue --write --only raid --race --regen` after "rogue raid ok" in
-  open-searches.log; leveling likewise with `--only leveling --regen`). **Hunter post hoc done** (16:59, commit
+  open-searches.log; leveling likewise with `--only leveling --regen`).
+  **Resumed 2026-10-07 19:3x** (user: "Resume the runs"): runner restarted with the same order; per-class writer waiters armed for rogue,
+  druid, warrior, priest and warlock (each half: `open_builds.py <class> --write --only raid --race --regen` after "<class> raid ok",
+  `--only leveling --regen` after "<class> leveling ok"; logs `deep-runs/<class>-post.log`); the hunter ML waiter restarted on the new
+  runner's PID. **Hunter post hoc done** (16:59, commit
   dc691b4): bm-raid's structural lead 27/19/5 held after the re-tune and re-search (903 DPS, +0.9%) -> `beast-marks-open-raid` replaces
   mm-hawk-raid; melee-dps 16/11/24 confirmed -> `beast-survival-open-raid` (1170 in a full raid, the class's best); the Marksmanship
   entries confirm mm-lone-wolf-raid. **Racials** (user question 2026-10-07): the raid sim runs each entry as the race its preset had (mage, priest,
