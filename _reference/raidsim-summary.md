@@ -4,9 +4,10 @@
 
 | Class | Spec model | Best of our builds | DPS | Best sim preset | DPS | Our optimizer build | DPS |
 |---|---|---|---|---|---|---|---|
-| druid | `balance-dps` | `balance-moonkin-raid` | 497 | Balance | 452 | `opt-balance-dps-raid-dps` | 497 |
-| druid | `feral-bear-tank` | `feral-bear-tank` | 395 | Bear Tank 0/31/20 | 372 | `opt-feral-bear-tank-raid-tank` | 395 |
-| druid | `feral-cat-dps` | `opt-feral-cat-dps-raid-dps` | 349 | Feral Cat 9/35/7 | 339 | `opt-feral-cat-dps-raid-dps` | 349 |
+| warrior | `arms-2h-raid` | `opt-arms-2h-raid-raid-dps` | 347 | DPS | 329 | `opt-arms-2h-raid-raid-dps` | 347 |
+| warrior | `arms-battle-raid` | `arms-community-parse` | 434 | - | - | - | - |
+| warrior | `fury-dw-raid` | `fury-open-raid` | 443 | DPS | 410 | `opt-fury-dw-raid-raid-dps` | 424 |
+| warrior | `prot-tank` | `opt-prot-tank-raid-tank` | 546 | Protection | 496 | `opt-prot-tank-raid-tank` | 546 |
 
 ## DPS by environment: dummy, raid, maximum
 
@@ -14,11 +15,11 @@ The best of our builds per spec model on the boss-level training dummy with your
 
 | Class | Game | Spec model | Best build | Dummy | Dummy 60 | Raid | Maximum | Max 60 s | Parse build (max) | Best preset (max) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| druid | Forever | `balance-dps` | `balance-moonkin-raid` (33/5/13) | 497 | 568 | 576 | 576 | 573 | `opt-balance-dps-parse` 576 | Moonkin 38/0/13 570 |
-| druid | Forever | `feral-bear-tank` | `feral-bear-tank` (7/35/9) | 205 | 227 | 395 | 395 | 383 | - | Bear Tank 0/31/20 372 |
-| druid | Forever | `feral-cat-dps` | `opt-feral-cat-dps-raid-dps` (9/31/11) | 349 | 384 | 538 | 538 | 573 | `opt-feral-cat-dps-parse` 538 | Feral Cat 9/35/7 523 |
-| druid | Classic | `balance-dps` | `balance-moonkin-raid` (35/0/16) | 224 | - | 567 | 740 | 746 | - | Balance 741 |
-| druid | Classic | `feral-cat-dps` | `feral-cat-dps` (14/32/5) | 239 | - | 671 | 1563 | 1666 | - | Feral 1597 |
+| warrior | Forever | `arms-2h-raid` | `opt-arms-2h-raid-raid-dps` (20/31/0) | 347 | 410 | 733 | 733 | 828 | `opt-arms-2h-raid-parse` 733 | DPS 692 |
+| warrior | Forever | `arms-battle-raid` | `arms-community-parse` (37/14/0) | 434 | 506 | 890 | 890 | 878 | `arms-community-parse` 890 | Arms 39/12/0 884 |
+| warrior | Forever | `fury-dw-raid` | `fury-open-raid` (18/31/2) | 443 | 463 | 842 | 842 | 884 | `opt-fury-dw-raid-parse` 810 | DPS 799 |
+| warrior | Forever | `prot-tank` | `opt-prot-tank-raid-tank` (14/5/32) | 282 | 317 | 546 | 405 | 397 | - | Protection 368 |
+| warrior | Classic | `fury-dw-raid` | `fury-dw-raid` (17/34/0) | 527 | - | 1843 | 2163 | 2322 | - | DPS 2163 |
 
 ## Classic Era check (upstream wowsims/classic)
 
@@ -26,6 +27,5 @@ Our Classic-era community builds (`<class>/research/talents/classic-baseline/bui
 
 | Class | Spec model | Best of our builds | DPS | Best sim preset | DPS | Damage split (model sources) |
 |---|---|---|---|---|---|---|
-| druid | `balance-dps` | `balance-moonkin-raid` | 567 | Balance | 565 | starfire 79%, moonfire_direct 20%, wrath 1% |
-| druid | `feral-cat-dps` | `feral-cat-dps` | 671 | Feral | 691 | shred 44%, white 37%, ferocious_bite 19% |
+| warrior | `fury-dw-raid` | `fury-dw-raid` | 1843 | DPS | 1843 | heroic_strike 34%, white_mh 20%, execute 18%, bloodthirst 13%, white_oh 11%, whirlwind 3% |
 

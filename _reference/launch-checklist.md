@@ -743,3 +743,6 @@
 **Optimizer — Raid tank in Defensive Stance with a shield: threat sources are Heroic Strike, Sunder Armor, Revenge, white swings, Thunder Clap; Shield Slam arrives as a talent effect (raid-tank)** (`warrior/research/raid/builds/opt-prot-tank-raid-tank.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
+**Fury — Raid (open talent search)** (`warrior/research/raid/builds/fury-open-raid.md`)
+- [ ] An open-search Fury build: check it against the community's Fury builds at launch.
+

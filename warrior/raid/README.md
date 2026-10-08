@@ -7,7 +7,7 @@
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
 | 1 | [Arms](arms.md) — Arms — Full raid 🔬 | 890 | best |
-| 2 | [Fury](fury.md) — Raid dual-wield Fury | 797 | -10% |
+| 2 | [Fury](fury.md) — Fury — Raid 🔬 | 842 | -5% |
 
 **Tanking**: [Protection](protection.md) — Raid tank in Defensive Stance with a shield.
 

@@ -207,4 +207,4 @@ The class's best raid DPS build on the training dummy: [`demonology-pact-raid`](
 
 No new spell of this class opened a build of its own: the new spells go into the existing builds' rotations (above).
 
-The class's best raid DPS build on the training dummy: [`arms-community-parse`](../warrior/research/raid/builds/arms-community-parse.md) (arms-battle-raid), 434 DPS; in a raid: [`arms-community-parse`](../warrior/research/raid/builds/arms-community-parse.md) (arms-battle-raid), 890 DPS.
+The class's best raid DPS build on the training dummy: [`fury-open-raid`](../warrior/research/raid/builds/fury-open-raid.md) (fury-dw-raid), 443 DPS; in a raid: [`arms-community-parse`](../warrior/research/raid/builds/arms-community-parse.md) (arms-battle-raid), 890 DPS.

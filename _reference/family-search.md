@@ -13,6 +13,9 @@ The best build found with no tree rule in each damage rotation, in a full raid, 
 | [paladin](../paladin/research/raid/family-search.md) | ret-dps | [11/8/32](https://talentsforever.com/paladin/60/43003001-503-05225131001330321-4) | Retribution | 956.4 | -0.1% |
 | [hunter](../hunter/research/raid/family-search.md) | mm-raid | [16/31/4](https://talentsforever.com/hunter/60/52201005001-0053450001502051-4-4) | Marksmanship | 910.8 | +6.9% |
 | [hunter](../hunter/research/raid/family-search.md) | bm-raid | [27/19/5](https://talentsforever.com/hunter/60/532110050510022-00531500104-5-4) | Hybrid Beast Mastery/Marksmanship | 903.1 | +0.9% |
+| [warrior](../warrior/research/raid/family-search.md) | arms-battle-raid | [36/13/2](https://talentsforever.com/warrior/60/20305213132515201-250501-2-4) | Arms | 893.5 | +0.5% |
+| [warrior](../warrior/research/raid/family-search.md) | fury-dw-raid | [17/32/2](https://talentsforever.com/warrior/60/30305013002-45053005102010501-2-4) | Fury | 842.2 | +3.9% |
+| [warrior](../warrior/research/raid/family-search.md) | arms-2h-raid | [20/31/0](https://talentsforever.com/warrior/60/12305013032-55152000132010501--4) | Fury | 804.3 | +0.6% |
 | [shaman](../shaman/research/raid/family-search.md) | enhancement-dps | [19/32/0](https://talentsforever.com/shaman/60/500533102-054030031005102251--4) | Enhancement | 786.8 | -0.0% |
 | [rogue](../rogue/research/raid/family-search.md) | combat-daggers-raid | [16/33/2](https://talentsforever.com/rogue/60/00530310301-30531300001515231-002-4) | Combat | 770.4 | +0.0% |
 | [rogue](../rogue/research/raid/family-search.md) | assassination-raid | [16/33/2](https://talentsforever.com/rogue/60/00530310301-30531300001515231-002-4) | Combat | 770.4 | +5.1% |

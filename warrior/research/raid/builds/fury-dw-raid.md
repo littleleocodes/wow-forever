@@ -70,19 +70,20 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
 
 ## Rank among our builds and the community simulator's
 
-**2 of 5** for `fury-dw-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 6** for `fury-dw-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 19/32/0 | 422 | +0.0% | 797 | +0.0% | 0 s |
-| 2 | **[`fury-dw-raid`](fury-dw-raid.md)** | ours: hand draft | 13/38/0 | 417 | -1.1% | 789 | -1.0% | 0 s |
-| 3 | *DPS* | community simulator | - | 409 | -3.1% | 781 | -2.0% | 0 s |
-| 4 | *Fury 17/34/0* | community simulator | - | 396 | -6.2% | 765 | -4.0% | 0 s |
-| 5 | *Arms 39/12/0* | community simulator | - | 291 | -31.0% | 596 | -25.2% | 0 s |
+| 1 | [`fury-open-raid`](fury-open-raid.md) | ours: hand draft | 18/31/2 | 443 | +0.0% | 842 | +0.0% | 0 s |
+| 2 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 19/32/0 | 424 | -4.3% | 810 | -3.8% | 0 s |
+| 3 | **[`fury-dw-raid`](fury-dw-raid.md)** | ours: hand draft | 13/38/0 | 418 | -5.5% | 805 | -4.4% | 0 s |
+| 4 | *DPS* | community simulator | - | 410 | -7.5% | 799 | -5.2% | 0 s |
+| 5 | *Fury 17/34/0* | community simulator | - | 397 | -10.5% | 780 | -7.4% | 0 s |
+| 6 | *Arms 39/12/0* | community simulator | - | 291 | -34.2% | 588 | -30.2% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 5 passes, the last 2026-10-02, 20 changes to the base rotation; third-seed check: ml: Fury 320 -> 396 DPS (+23.9%), fury-dw-raid 318 -> 390 DPS (+22.6%), sim preset: DPS 299 -> 371 DPS (+24.0%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-08, 21 changes to the base rotation; third-seed check: open winner 356 -> 443 DPS (+24.4%), opt-fury-dw-raid-raid-dps 342 -> 423 DPS (+23.5%), sim preset: DPS 335 -> 411 DPS (+22.9%), fury-dw-raid 338 -> 419 DPS (+24.0%)):
   1. insert at the top: if time left in the fight ≤ 15s: cast Recklessness (+14.7%, pass 1)
   2. insert before the filler: if stacks of Sunder Armor < 5: cast Sunder Armor (+12.1%, pass 1)
   3. threshold 15s -> 22.5s: if time left in the fight ≤ 15s: cast Recklessness (+1.5%, pass 1)
@@ -103,7 +104,8 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
   18. threshold 22.5s -> 33.75s: if time left in the fight ≤ 22.5s: cast Recklessness (+0.3%, pass 5)
   19. threshold 30s -> 45s: if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish (+1.2%, pass 5)
   20. threshold 22.5s -> 33.75s: if (time left in the fight ≤ 22.5s or time left in the fight ≥ 70s): use every other cooldown when ready (+0.4%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 5 passes, the last 2026-10-02, 9 changes to the base rotation; third-seed check: ml: Fury 669 -> 720 DPS (+7.6%), fury-dw-raid 665 -> 707 DPS (+6.3%), sim preset: DPS 632 -> 683 DPS (+8.1%)):
+  21. drop: if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring (+0.3%, pass 6)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-08, 12 changes to the base rotation; third-seed check: open winner 786 -> 842 DPS (+7.1%), opt-fury-dw-raid-raid-dps 748 -> 810 DPS (+8.2%), sim preset: DPS 742 -> 798 DPS (+7.5%), fury-dw-raid 749 -> 804 DPS (+7.3%)):
   1. drop: if false: cast Recklessness (+11.1%, pass 1)
   2. drop: if number of targets = 1 and (rage ≥ 40 or execute phase (E20)): cast Heroic Strike (+2.5%, pass 1)
   3. threshold 90 -> 45: if rage < 90: cast Bloodrage (+0.7%, pass 1)
@@ -113,6 +115,9 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
   7. threshold 30s -> 45s: if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish (+0.7%, pass 5)
   8. threshold 1.5s -> 0s: if time until Bloodthirst is ready > 1.5s: cast Whirlwind (+0.6%, pass 5)
   9. threshold 30s -> 45s: if time left in the fight ≤ 30s: use every other cooldown when ready (+0.5%, pass 5)
+  10. drop 'rage > 80' from the condition: if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring (+1.4%, pass 6)
+  11. threshold 1.5s -> 1.125s: if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s: cast Hamstring (+0.4%, pass 6)
+  12. move to the top: cast Bloodthirst (+0.2%, pass 6)
 
 | # | Priority (the first line whose condition holds is cast) | [`fury-dw-raid`](fury-dw-raid.md) casts/min |
 |---|---|---|
@@ -130,9 +135,8 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
 | 12 | if (time left in the fight ≤ 33.75s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready |
 | 13 | cast Whirlwind | 4.4 |
 | 14 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 4.4 |
-| 15 | if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring | 1.0 |
-| 16 | if not Battle Shout is up: cast Battle Shout | 0.3 |
-| 17 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.0 |
+| 15 | if not Battle Shout is up: cast Battle Shout | 0.3 |
+| 16 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.1 |
 
 Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Heroic Strike, cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
 
@@ -146,7 +150,6 @@ Damage by ability:
 | Whirlwind | 9% |
 | Deep Wound | 4% |
 | Dragonbreath Chili | 1% |
-| Hamstring | 0% |
 
 ## Notes
 

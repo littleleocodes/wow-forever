@@ -2,17 +2,19 @@
 
 [Warrior](../README.md) > [Raid (group)](README.md) > Fury
 
-**[Raid dual-wield Fury](../research/raid/builds/opt-fury-dw-raid-raid-dps.md)** (19/32/0) — [open the talent tree](https://talentsforever.com/warrior/60/04305013102-25050035102210501--4)
+**[Fury — Raid](../research/raid/builds/fury-open-raid.md)** (18/31/2) — [open the talent tree](https://talentsforever.com/warrior/60/04305013002-05053035102010501-2-4)
+
+> 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (fury-dw-raid), which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to play
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Death Wish**: a big cooldown, use it at the start of the fight and again whenever it is ready
-2. **Whirlwind**
-3. **Execute** when the target is below 20% health
-4. **Bloodthirst**
-5. **Hamstring** when you have 80+ rage to spare
+1. **Bloodthirst**
+2. **Death Wish**: a big cooldown, use it at the start of the fight and again whenever it is ready
+3. **Whirlwind**
+4. **Execute** when the target is below 20% health
+5. **Hamstring**
 6. **Bloodrage**
 
 **Bloodrage** is your filler: cast it whenever nothing above is ready.
@@ -28,14 +30,14 @@
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 797 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 842 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
 | Pre-BiS | 705 | [13/38/0](https://talentsforever.com/warrior/60/20305012-25050005152010501--4) |
-| Phase 1 BiS | 723 | [13/38/0](https://talentsforever.com/warrior/60/20305012-25050005152010501--4) (ties this build) |
+| Phase 1 BiS | 723 | [13/38/0](https://talentsforever.com/warrior/60/20305012-25050005152010501--4) |
 
 **The gear** (average item level: Pre-BiS 62.9; Phase 1 BiS 65.4; each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -63,7 +65,8 @@
 
 ## Other builds of this spec
 
-- [Fury — Dual Wield](../research/raid/builds/fury-dw-raid.md) (13/38/0, 789 DPS in a full raid, 417 on the dummy) — [open the talent tree](https://talentsforever.com/warrior/60/20305012-55053005152010501--4)
+- [Raid dual-wield Fury](../research/raid/builds/opt-fury-dw-raid-raid-dps.md) (19/32/0, 810 DPS in a full raid, 424 on the dummy) — [open the talent tree](https://talentsforever.com/warrior/60/04305013102-25050035102210501--4)
+- [Fury — Dual Wield](../research/raid/builds/fury-dw-raid.md) (13/38/0, 805 DPS in a full raid, 418 on the dummy) — [open the talent tree](https://talentsforever.com/warrior/60/20305012-55053005152010501--4)
 - [Two-handed Arms/raid or leveling](../research/raid/builds/opt-arms-2h-raid-raid-dps.md) (20/31/0, 733 DPS in a full raid, 347 on the dummy) — [open the talent tree](https://talentsforever.com/warrior/60/03305013032-05250030052210501--4)
 - [Fury — Two-Handed](../research/raid/builds/arms-2h-raid.md) (19/32/0, 725 DPS in a full raid, 344 on the dummy) — [open the talent tree](https://talentsforever.com/warrior/60/03305013031-55350000052010501--4)
 

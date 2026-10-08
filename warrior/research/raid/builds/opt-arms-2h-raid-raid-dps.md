@@ -71,7 +71,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 5 passes, the last 2026-10-05, 18 changes to the base rotation; third-seed check: open winner 302 -> 378 DPS (+25.1%), opt-arms-2h-raid-raid-dps 299 -> 372 DPS (+24.5%), sim preset: DPS 280 -> 341 DPS (+22.0%), arms-2h-raid 296 -> 357 DPS (+20.7%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-08, 18 changes to the base rotation; third-seed check: open winner 302 -> 367 DPS (+21.3%), opt-arms-2h-raid-raid-dps 299 -> 372 DPS (+24.5%), sim preset: DPS 280 -> 341 DPS (+22.0%), arms-2h-raid 296 -> 357 DPS (+20.7%)):
   1. drop: if false: cast Recklessness (+16.4%, pass 1)
   2. insert before the filler: if stacks of Sunder Armor < 5: cast Sunder Armor (+5.8%, pass 1)
   3. drop: if rage < 90: cast Bloodrage (+1.7%, pass 1)
@@ -90,7 +90,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-
   16. move to the top: if not Battle Shout is up: cast Battle Shout + move to the top: cast Berserker Rage (+0.5%, pass 5)
   17. insert in the middle: if stacks of Sunder Armor < 1 and not Expose Armor is up: cast Sunder Armor + threshold 1 -> 3: if stacks of Sunder Armor < 1 and not Expose Armor is up: cast Sunder Armor (+2.0%, pass 5)
   18. threshold 3 -> 4: if stacks of Sunder Armor < 3 and not Expose Armor is up: cast Sunder Armor (+0.5%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 5 passes, the last 2026-10-05, 9 changes to the base rotation; third-seed check: open winner 663 -> 804 DPS (+21.2%), opt-arms-2h-raid-raid-dps 659 -> 799 DPS (+21.2%), sim preset: DPS 618 -> 750 DPS (+21.3%), arms-2h-raid 653 -> 790 DPS (+20.9%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-08, 9 changes to the base rotation; third-seed check: open winner 667 -> 804 DPS (+20.6%), opt-arms-2h-raid-raid-dps 659 -> 799 DPS (+21.2%), sim preset: DPS 618 -> 750 DPS (+21.3%), arms-2h-raid 653 -> 790 DPS (+20.9%)):
   1. drop: if false: cast Recklessness (+12.7%, pass 1)
   2. drop: if number of targets = 1 and (rage ≥ 40 or execute phase (E20)): cast Heroic Strike (+5.3%, pass 1)
   3. drop: if not Battle Shout is up: cast Battle Shout (+1.0%, pass 1)

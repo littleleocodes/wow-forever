@@ -4,5 +4,4 @@
 
 | Class | Spec model | Best build | Capacity | Effective HPS | Overheal | Healing split | Top talents (capacity lost when removed) |
 |---|---|---|---|---|---|---|---|
-| druid | `resto-heal` | `resto-raid-healer` (11/5/35) | 0.750 | 453 | 9% | Healing Touch 66%, Regrowth 21%, Rejuvenation 11%, Swiftmend 1% | Reflection +43%, Moonglow +33%, Tranquil Spirit +10%, Gift of Nature +8%, Living Spirit +6% |
 

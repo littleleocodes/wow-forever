@@ -2,7 +2,7 @@
  "dummy": {
   "class": "warrior",
   "spec": "arms-2h-raid",
-  "date": "2026-10-05",
+  "date": "2026-10-08",
   "commit": "b0f0df3",
   "setting": "dummy",
   "tank": false,
@@ -11,20 +11,26 @@
   "builds": [
    {
     "label": "open winner",
-    "talents": "03305013032-05250030142210501"
+    "talents": "12305013032-55152000132010501"
    },
    {
     "label": "opt-arms-2h-raid-raid-dps",
-    "talents": "03305013032-05250030052210501"
+    "talents": "03305013032-05250030052210501",
+    "protect_only": true
    },
    {
     "label": "sim preset: DPS",
-    "talents": "30305013-05553005150010501"
+    "talents": "30305013-05553005150010501",
+    "protect_only": true
    },
    {
     "label": "arms-2h-raid",
-    "talents": "03305013031-55350000052010501"
+    "talents": "03305013031-55350000052010501",
+    "protect_only": true
    }
+  ],
+  "tuned_on": [
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -177,9 +183,9 @@
   "final": {
    "dummy": {
     "open winner": {
-     "before": 302.3378529621677,
-     "after": 378.09915536262724,
-     "base": 302.3378529621677,
+     "before": 302.40871357269145,
+     "after": 366.86258919355816,
+     "base": 302.40871357269145,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -215,12 +221,12 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 5
+  "passes": 6
  },
  "raid": {
   "class": "warrior",
   "spec": "arms-2h-raid",
-  "date": "2026-10-05",
+  "date": "2026-10-08",
   "commit": "b0f0df3",
   "setting": "raid",
   "tank": false,
@@ -229,20 +235,26 @@
   "builds": [
    {
     "label": "open winner",
-    "talents": "03305013032-05250030142210501"
+    "talents": "12305013032-55152000132010501"
    },
    {
     "label": "opt-arms-2h-raid-raid-dps",
-    "talents": "03305013032-05250030052210501"
+    "talents": "03305013032-05250030052210501",
+    "protect_only": true
    },
    {
     "label": "sim preset: DPS",
-    "talents": "30305013-05553005150010501"
+    "talents": "30305013-05553005150010501",
+    "protect_only": true
    },
    {
     "label": "arms-2h-raid",
-    "talents": "03305013031-55350000052010501"
+    "talents": "03305013031-55350000052010501",
+    "protect_only": true
    }
+  ],
+  "tuned_on": [
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -323,9 +335,9 @@
   "final": {
    "raid": {
     "open winner": {
-     "before": 663.4862112227755,
-     "after": 803.8275268398027,
-     "base": 663.4862112227755,
+     "before": 666.541408257461,
+     "after": 803.830573476443,
+     "base": 666.541408257461,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -361,6 +373,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 5
+  "passes": 6
  }
 }

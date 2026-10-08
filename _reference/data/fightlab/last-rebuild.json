@@ -7506,9 +7506,9 @@
   }
  },
  "last_run": {
-  "date": "2026-10-08T07:47:13",
+  "date": "2026-10-08T11:16:42",
   "classes": [
-   "druid"
+   "warrior"
   ],
   "steps": [
    "regen"
@@ -7519,63 +7519,62 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 349,
+  "seconds": 190,
   "refresh": null,
   "regen_log": [
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py druid",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py warrior",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "formatted F:\\wow-forever\\druid\\research\\talents\\forever\\proposed-builds.json",
-     "druid: README section + leveling-feral note written"
+     "formatted F:\\wow-forever\\warrior\\research\\talents\\forever\\proposed-builds.json",
+     "warrior: README section + leveling-arms note written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py druid",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py warrior",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "druid: raid sim section written (3 specs)",
+     "warrior: raid sim section written (4 specs)",
      "wrote _reference\\raidsim-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py druid",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py warrior",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "druid: healer lab section written (1 specs)",
      "wrote _reference\\heallab-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py druid",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py warrior",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "druid: leveling/guide.md written"
+     "warrior: leveling/guide.md written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py druid",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py warrior",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "druid: raid gear and consumables written"
+     "warrior: raid gear and consumables written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py druid",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py warrior",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "druid: raid and leveling rotations, DPS ranking written"
+     "warrior: raid and leveling rotations, DPS ranking written"
     ],
     "stderr": []
    },
@@ -7620,7 +7619,7 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py druid",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py warrior",
     "rc": 0,
     "seconds": 1,
     "tail": [
@@ -7648,15 +7647,15 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py druid --write",
+    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py warrior --write",
     "rc": 0,
-    "seconds": 339,
+    "seconds": 181,
     "tail": [
-     "| balance-dps -> level-20 build (11/0/0) | +2.0% | +13.3% | +23.6% | +27.8% | +36.0% | +45.4% | +51.5% | +55.7% | +56.1% | +57.0% | +59.5% |",
-     "| balance-dps -> level-30 build (21/0/0) | +2.0% | +13.3% | +20.9% | +27.1% | +37.2% | +46.7% | +53.1% | +56.9% | +57.0% | +57.9% | +60.4% |",
-     "| balance-dps -> level-40 build (31/0/0) | +2.0% | +13.3% | +20.9% | +27.1% | +37.2% | +46.7% | +53.2% | +56.9% | +57.0% | +57.9% | +60.4% |",
-     "| balance-dps -> level-50 build (35/6/0) | +2.0% | +13.3% | +20.9% | +27.1% | +37.2% | +46.7% | +53.1% | +56.7% | +57.5% | +58.5% | +59.4% |",
-     "| balance-dps -> level-60 build (36/2/13) | +2.0% | +13.3% | +20.9% | +27.1% | +37.2% | +46.7% | +53.1% | +56.9% | +57.0% | +57.9% | +60.4% |",
+     "| fury-dw-raid -> level-20 build (0/11/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.9% | +21.4% | +34.9% | +36.1% | +36.8% | +37.4% | +39.2% |",
+     "| fury-dw-raid -> level-30 build (0/21/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.9% | +21.4% | +34.9% | +36.1% | +36.8% | +37.4% | +39.2% |",
+     "| fury-dw-raid -> level-40 build (0/31/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.9% | +21.4% | +34.9% | +36.2% | +36.8% | +37.4% | +39.2% |",
+     "| fury-dw-raid -> level-50 build (4/37/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.9% | +21.4% | +34.9% | +36.2% | +36.9% | +37.4% | +39.2% |",
+     "| fury-dw-raid -> level-60 build (13/38/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.9% | +21.4% | +34.9% | +36.1% | +36.8% | +37.4% | +39.2% |",
      "",
      "## Reading it",
      "",
@@ -7724,7 +7723,7 @@
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote _reference\\launch-checklist.md (278 per-build questions)"
+     "wrote _reference\\launch-checklist.md (279 per-build questions)"
     ],
     "stderr": []
    },

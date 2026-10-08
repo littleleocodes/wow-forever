@@ -3,6 +3,16 @@
  "priorityList": [
   {
    "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 23894,
+      "rank": 4
+     }
+    }
+   }
+  },
+  {
+   "action": {
     "condition": {
      "and": {
       "vals": [
@@ -481,16 +491,6 @@
   },
   {
    "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 23894,
-      "rank": 4
-     }
-    }
-   }
-  },
-  {
-   "action": {
     "condition": {
      "cmp": {
       "op": "OpGt",
@@ -590,7 +590,7 @@
          },
          "rhs": {
           "const": {
-           "val": "1.5s"
+           "val": "1.125s"
           }
          }
         }
@@ -612,19 +612,6 @@
           }
          }
         }
-       },
-       {
-        "cmp": {
-         "op": "OpGt",
-         "lhs": {
-          "currentRage": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "80"
-          }
-         }
-        }
        }
       ]
      }
@@ -635,7 +622,8 @@
       "rank": 3
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-08: changed or added by the rotation search (see fury-dw-raid-rotation-search.json)"
   },
   {
    "action": {
