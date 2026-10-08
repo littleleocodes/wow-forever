@@ -54,7 +54,9 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   numbers (`fightlab/own_rotation_race.py` races page builds that had played another rotation, record `fightlab/own-rotation.json`);
   `open_builds.py` writes a winner only for a spec whose rotation found it (one build per spec: the spec's own leveling rotation, a
   hybrid's lead tree's; never the faster rotation's); the raid and leveling cross-rotation races are research only (`faster_sibling`,
-  `cross[...].best`). Healing trees that level as a damage spec (`LEVEL_AS`, Restoration druid and shaman) keep that agreed exception.
+  `cross[...].best`). The one exception, confirmed by the user the same day: "For leveling, you can use another spec if that healing spec
+  doesn't have any viable leveling build" (`LEVEL_AS`: the Restoration druid and shaman level with the Feral and Enhancement rotations;
+  a healing spec with a viable leveling rotation of its own, Holy and Discipline priest, Holy paladin, uses it).
   Optimizer builds are named after their own spec on the pages ("Assassination (optimized)", not their model's "Raid Combat swords").
   If you add an optimization category, add it with the same name and layout to every class, even if some are only a stub.
 - Folders that are *not* classes start with an underscore: `_reference/` (facts, data, scripts), `_templates/`.

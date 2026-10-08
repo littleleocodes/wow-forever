@@ -288,8 +288,8 @@ Each class folder now opens with player pages and keeps the research below:
   re-wrote the leveling builds (paladin Prot-Ret from the Protection rotation instead of the Holy one; rogue Daggers split from the daggers
   rotation; the mage Fire rotation's Arcane-Frost winner is not written); four page builds were raced with their own rotation
   (`fightlab/own_rotation_race.py`: the hunter's two Marksmanship-point builds that played Beast Mastery, the rogue's two Assassination-
-  point builds that played swords). Open question for the user: the Restoration druid and shaman still level with the Feral and
-  Enhancement rotations (LEVEL_AS, agreed 2026-09-29), as no healing tree has a damage rotation of its own.
+  point builds that played swords). The user confirmed the one exception (2026-10-08): "For leveling, you can use another spec if that
+  healing spec doesn't have any viable leveling build": the Restoration druid and shaman keep leveling as Feral and Enhancement (LEVEL_AS).
   **Racials (2026-10-08 05:2x):** the simulator applies more racials in Forever than Classic (Tauren +1% hit, Night Elf's Elune's Light
   +10% crit, Berserking, Blood Fury, weapon specializations), and the generic cooldown line casts the on-use ones, so stripping rotation
   lines would not remove them. Patch `patches/forever/sim/core/no_racials.go` (+ an edits.json insertion in racials.go) switches all of them
