@@ -7506,9 +7506,9 @@
   }
  },
  "last_run": {
-  "date": "2026-10-08T16:08:11",
+  "date": "2026-10-08T16:57:24",
   "classes": [
-   "warrior"
+   "priest"
   ],
   "steps": [
    "regen"
@@ -7519,69 +7519,70 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 201,
+  "seconds": 82,
   "refresh": null,
   "regen_log": [
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py warrior",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py priest",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "formatted F:\\wow-forever\\warrior\\research\\talents\\forever\\proposed-builds.json",
-     "warrior: README section + leveling-arms note written"
+     "formatted F:\\wow-forever\\priest\\research\\talents\\forever\\proposed-builds.json",
+     "priest: README section + leveling-shadow note written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py warrior",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py priest",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "warrior: raid sim section written (4 specs)",
+     "priest: raid sim section written (2 specs)",
      "wrote _reference\\raidsim-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py warrior",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py priest",
     "rc": 0,
     "seconds": 0,
     "tail": [
+     "priest: healer lab section written (1 specs)",
      "wrote _reference\\heallab-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py warrior",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py priest",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "warrior: leveling/guide.md written"
+     "priest: leveling/guide.md written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py warrior",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py priest",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
-     "warrior: raid gear and consumables written"
+     "priest: raid gear and consumables written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py warrior",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py priest",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
-     "warrior: raid and leveling rotations, DPS ranking written"
+     "priest: raid and leveling rotations, DPS ranking written"
     ],
     "stderr": []
    },
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\validate_builds.py",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
      "  ok   feral-combat-pvp (0/32/19)",
      "  ok   restoration-pvp (0/11/40)",
@@ -7601,12 +7602,12 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_builds.py",
     "rc": 0,
-    "seconds": 7,
+    "seconds": 2,
     "tail": [
      "rogue/classic-baseline: 5 build pages + README.md",
      "rogue: 24 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "priest/classic-baseline: 4 build pages + README.md",
-     "priest: 15 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
+     "priest: 16 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "shaman/classic-baseline: 5 build pages + README.md",
      "shaman: 23 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "mage/classic-baseline: 7 build pages + README.md",
@@ -7619,7 +7620,7 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py warrior",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py priest",
     "rc": 0,
     "seconds": 1,
     "tail": [
@@ -7647,15 +7648,15 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py warrior --write",
+    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py priest --write",
     "rc": 0,
-    "seconds": 184,
+    "seconds": 73,
     "tail": [
-     "| fury-dw-raid -> level-20 build (0/11/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.9% | +21.4% | +34.9% | +36.1% | +36.8% | +37.4% | +39.2% |",
-     "| fury-dw-raid -> level-30 build (0/21/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.9% | +21.4% | +34.9% | +36.1% | +36.8% | +37.4% | +39.2% |",
-     "| fury-dw-raid -> level-40 build (0/31/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.9% | +21.4% | +34.9% | +36.2% | +36.8% | +37.4% | +39.2% |",
-     "| fury-dw-raid -> level-50 build (4/37/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.9% | +21.4% | +34.9% | +36.2% | +36.9% | +37.4% | +39.2% |",
-     "| fury-dw-raid -> level-60 build (13/38/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.9% | +21.4% | +34.9% | +36.1% | +36.8% | +37.4% | +39.2% |",
+     "| shadow-dps -> level-20 build (0/0/11) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +56.1% | +71.6% | +72.3% | +72.4% | +72.4% | +72.9% |",
+     "| shadow-dps -> level-30 build (2/0/19) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +55.8% | +57.7% | +72.3% | +72.4% | +72.4% | +72.9% |",
+     "| shadow-dps -> level-40 build (0/0/31) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +56.1% | +71.6% | +72.3% | +72.4% | +72.4% | +72.9% |",
+     "| shadow-dps -> level-50 build (8/0/33) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +56.1% | +71.6% | +72.3% | +72.4% | +72.5% | +72.6% |",
+     "| shadow-dps -> level-60 build (7/11/33) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +56.1% | +71.6% | +72.3% | +72.4% | +72.4% | +72.9% |",
      "",
      "## Reading it",
      "",
@@ -7703,7 +7704,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\loop_audit.py",
     "rc": 0,
-    "seconds": 2,
+    "seconds": 1,
     "tail": [
      "druid    flagged 30/98  open 2",
      "hunter   flagged 30/55  open 5",
@@ -7723,7 +7724,7 @@
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote _reference\\launch-checklist.md (281 per-build questions)"
+     "wrote _reference\\launch-checklist.md (282 per-build questions)"
     ],
     "stderr": []
    },

@@ -438,6 +438,9 @@
 **Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (parse)** (`priest/research/raid/builds/opt-shadow-dps-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
+**Smite — Raid (open talent search)** (`priest/research/raid/builds/smite-open-raid.md`)
+- [ ] An open-search Smite build: check it against the community's Smite builds at launch.
+
 ### Rogue
 
 **Combat Swords (simulator winner adopted 2026-09-28)** (`rogue/research/raid/builds/combat-swords-raid.md`)

@@ -4,10 +4,8 @@
 
 | Class | Spec model | Best of our builds | DPS | Best sim preset | DPS | Our optimizer build | DPS |
 |---|---|---|---|---|---|---|---|
-| warrior | `arms-2h-raid` | `opt-arms-2h-raid-raid-dps` | 347 | DPS | 329 | `opt-arms-2h-raid-raid-dps` | 347 |
-| warrior | `arms-battle-raid` | `arms-community-parse` | 434 | - | - | - | - |
-| warrior | `fury-dw-raid` | `fury-open-raid` | 443 | DPS | 410 | `opt-fury-dw-raid-raid-dps` | 424 |
-| warrior | `prot-tank` | `opt-prot-tank-raid-tank` | 546 | Protection | 496 | `opt-prot-tank-raid-tank` | 546 |
+| priest | `shadow-dps` | `opt-shadow-dps-raid-dps` | 589 | Shadow | 588 | `opt-shadow-dps-raid-dps` | 589 |
+| priest | `smite-dps` | `smite-open-raid` | 419 | - | - | - | - |
 
 ## DPS by environment: dummy, raid, maximum
 
@@ -15,17 +13,6 @@ The best of our builds per spec model on the boss-level training dummy with your
 
 | Class | Game | Spec model | Best build | Dummy | Dummy 60 | Raid | Maximum | Max 60 s | Parse build (max) | Best preset (max) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| warrior | Forever | `arms-2h-raid` | `opt-arms-2h-raid-raid-dps` (20/31/0) | 347 | 410 | 733 | 733 | 828 | `opt-arms-2h-raid-parse` 733 | DPS 692 |
-| warrior | Forever | `arms-battle-raid` | `arms-community-parse` (37/14/0) | 434 | 506 | 890 | 890 | 878 | `arms-community-parse` 890 | Arms 39/12/0 884 |
-| warrior | Forever | `fury-dw-raid` | `fury-open-raid` (18/31/2) | 443 | 463 | 842 | 842 | 884 | `opt-fury-dw-raid-parse` 810 | DPS 799 |
-| warrior | Forever | `prot-tank` | `opt-prot-tank-raid-tank` (14/5/32) | 282 | 317 | 546 | 405 | 397 | - | Protection 368 |
-| warrior | Classic | `fury-dw-raid` | `fury-dw-raid` (17/34/0) | 527 | - | 1843 | 2163 | 2322 | - | DPS 2163 |
-
-## Classic Era check (upstream wowsims/classic)
-
-Our Classic-era community builds (`<class>/research/talents/classic-baseline/builds.json`) through the upstream wowsims/classic simulator with its phase-1 presets: the damage split the scorer's classic-era models now use, and how the community builds fare against the simulator's own preset talents. Reports: `<class>/research/talents/classic-baseline/raidsim/<spec>.md`.
-
-| Class | Spec model | Best of our builds | DPS | Best sim preset | DPS | Damage split (model sources) |
-|---|---|---|---|---|---|---|
-| warrior | `fury-dw-raid` | `fury-dw-raid` | 1843 | DPS | 1843 | heroic_strike 34%, white_mh 20%, execute 18%, bloodthirst 13%, white_oh 11%, whirlwind 3% |
+| priest | Forever | `shadow-dps` | `opt-shadow-dps-raid-dps` (18/0/33) | 589 | 635 | 679 | 679 | 675 | `opt-shadow-dps-parse` 679 | Shadow 680 |
+| priest | Forever | `smite-dps` | `smite-open-raid` (21/23/7) | 419 | 442 | 571 | 571 | 598 | - | Smite 558 |
 

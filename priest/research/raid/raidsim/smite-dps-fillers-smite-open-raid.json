@@ -1,0 +1,237 @@
+{
+ "class": "priest",
+ "spec": "smite-dps",
+ "build": "smite-open-raid",
+ "setting": "raid",
+ "date": "2026-10-08",
+ "tank": false,
+ "removal": {
+  "Divine Fury": 0.10651623832219625,
+  "Holy Precision": 0.08631219232270237,
+  "Holy Specialization": 0.0157704179979139,
+  "Improved Healing": 0.0030481748766406636,
+  "Improved Renew": -0.0,
+  "Improved Shadow Word: Pain": 0.023718816092982542,
+  "Inner Focus": 0.012355141906877365,
+  "Inspiration": -0.0,
+  "Meditation": 0.02626524060614288,
+  "Mental Agility": 0.004413910328471382,
+  "Mental Strength": 0.0029017680491288944,
+  "Penance": 0.06044343888720982,
+  "Power in Light": 0.04656071753490987,
+  "Searing Light": 0.03338937342645576,
+  "Shadow Focus": 0.011247914636590584,
+  "Spell Warding": -0.0,
+  "Spiritual Guidance": 0.009669725805762197,
+  "Twin Disciplines": 0.00914176241365161
+ },
+ "free": [
+  "Improved Renew",
+  "Inspiration",
+  "Spell Warding"
+ ],
+ "kept_for_rotation": [
+  "Inner Focus"
+ ],
+ "active_never_worth": [],
+ "abilities_never_cast": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Improved Renew",
+   "to": "Twilight Focus",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "interrupt"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Improved Renew",
+   "to": "Twilight Focus",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "interrupt"
+  },
+  {
+   "round": 3,
+   "kind": "utility",
+   "from": "Inspiration",
+   "to": "Twilight Focus",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "interrupt"
+  },
+  {
+   "round": 4,
+   "kind": "utility",
+   "from": "Inspiration",
+   "to": "Holy Nova",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "threat"
+  }
+ ],
+ "final_seed3": 0.0,
+ "start": {
+  "Discipline": [
+   [
+    "Power in Light",
+    5
+   ],
+   [
+    "Twin Disciplines",
+    5
+   ],
+   [
+    "Holy Precision",
+    2
+   ],
+   [
+    "Mental Agility",
+    2
+   ],
+   [
+    "Inner Focus",
+    1
+   ],
+   [
+    "Meditation",
+    3
+   ],
+   [
+    "Mental Strength",
+    2
+   ],
+   [
+    "Penance",
+    1
+   ]
+  ],
+  "Holy": [
+   [
+    "Improved Renew",
+    2
+   ],
+   [
+    "Holy Specialization",
+    5
+   ],
+   [
+    "Spell Warding",
+    1
+   ],
+   [
+    "Divine Fury",
+    5
+   ],
+   [
+    "Inspiration",
+    2
+   ],
+   [
+    "Improved Healing",
+    3
+   ],
+   [
+    "Searing Light",
+    2
+   ],
+   [
+    "Spiritual Guidance",
+    3
+   ]
+  ],
+  "Shadow": [
+   [
+    "Shadow Focus",
+    5
+   ],
+   [
+    "Improved Shadow Word: Pain",
+    2
+   ]
+  ]
+ },
+ "allocation": {
+  "Discipline": [
+   [
+    "Power in Light",
+    5
+   ],
+   [
+    "Twin Disciplines",
+    5
+   ],
+   [
+    "Holy Precision",
+    2
+   ],
+   [
+    "Mental Agility",
+    2
+   ],
+   [
+    "Inner Focus",
+    1
+   ],
+   [
+    "Meditation",
+    3
+   ],
+   [
+    "Mental Strength",
+    2
+   ],
+   [
+    "Penance",
+    1
+   ]
+  ],
+  "Holy": [
+   [
+    "Holy Specialization",
+    5
+   ],
+   [
+    "Spell Warding",
+    1
+   ],
+   [
+    "Divine Fury",
+    5
+   ],
+   [
+    "Improved Healing",
+    3
+   ],
+   [
+    "Searing Light",
+    2
+   ],
+   [
+    "Spiritual Guidance",
+    3
+   ],
+   [
+    "Twilight Focus",
+    3
+   ],
+   [
+    "Holy Nova",
+    1
+   ]
+  ],
+  "Shadow": [
+   [
+    "Shadow Focus",
+    5
+   ],
+   [
+    "Improved Shadow Word: Pain",
+    2
+   ]
+  ]
+ }
+}

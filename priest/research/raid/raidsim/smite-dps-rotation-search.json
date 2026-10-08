@@ -2,26 +2,30 @@
  "dummy": {
   "class": "priest",
   "spec": "smite-dps",
-  "date": "2026-10-02",
-  "commit": "40be98e",
+  "date": "2026-10-08",
+  "commit": "b0f0df3",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "ui/specs/priest/dps/apls/smite.apl.json",
   "start": "ui\\specs\\priest\\dps\\apls\\smite.apl.json",
   "builds": [
    {
-    "label": "ml: Hybrid Discipline/Holy",
-    "talents": "505031131305021001-30505101032",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-hybrid-discipline-holy-bis.gear.json"
+    "label": "open winner",
+    "talents": "505020021302001-025150020320003-50002"
    },
    {
     "label": "smite-discipline-raid",
-    "talents": "505230231305001001-30505101002-3"
+    "talents": "505230231305001001-30505101002-3",
+    "protect_only": true
    },
    {
     "label": "sim preset: Smite",
-    "talents": "515330031305001001-30505113002"
+    "talents": "515330031305001001-30505113002",
+    "protect_only": true
    }
+  ],
+  "tuned_on": [
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -137,65 +141,85 @@
     "gain_seed2": 0.002229023702104982,
     "candidates": 337,
     "pass": 6
+   },
+   {
+    "round": 15,
+    "change": "insert in the middle: if execute phase (E20): cast Shadow Word: Death",
+    "gain_seed1": 0.009935070230556065,
+    "gain_seed2": 0.009806747203495947,
+    "candidates": 389,
+    "pass": 7
+   },
+   {
+    "round": 16,
+    "change": "threshold 1.25s -> 1.875s: if time left on Holy Fire < 1.25s: cast Holy Fire",
+    "gain_seed1": 0.005676136923135955,
+    "gain_seed2": 0.005723757839163124,
+    "candidates": 399,
+    "pass": 7
    }
   ],
   "final": {
    "dummy": {
-    "ml: Hybrid Discipline/Holy": {
-     "before": 348.74408873797984,
-     "after": 489.10376287860487,
-     "base": 348.74408873797984,
+    "open winner": {
+     "before": 310.86530564622245,
+     "after": 419.06955713165894,
+     "base": 310.86530564622245,
      "before_value": null,
      "after_value": null,
-     "oom_before": 4.179133549992034,
-     "oom_after": 5.948392199966342
+     "oom_before": 0.0176059999996,
+     "oom_after": 0.23630564999245002
     },
     "smite-discipline-raid": {
-     "before": 299.64177218430063,
-     "after": 444.483761951524,
-     "base": 299.64177218430063,
+     "before": 302.38418764632553,
+     "after": 414.195851031828,
+     "base": 302.38418764632553,
      "before_value": null,
      "after_value": null,
-     "oom_before": 19.821066899922826,
-     "oom_after": 20.154386049890803
+     "oom_before": 2.8862222499149013,
+     "oom_after": 4.300646749538891
     },
     "sim preset: Smite": {
-     "before": 298.78784428489206,
-     "after": 441.2170539854862,
-     "base": 298.78784428489206,
+     "before": 301.7100536370775,
+     "after": 410.9360139140448,
+     "base": 301.7100536370775,
      "before_value": null,
      "after_value": null,
-     "oom_before": 21.360486899907016,
-     "oom_after": 22.259302599866846
+     "oom_before": 4.000284149894257,
+     "oom_after": 6.03675024948724
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 6
+  "passes": 7
  },
  "raid": {
   "class": "priest",
   "spec": "smite-dps",
-  "date": "2026-10-02",
-  "commit": "40be98e",
+  "date": "2026-10-08",
+  "commit": "b0f0df3",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/priest/dps/apls/smite.apl.json",
   "start": "ui\\specs\\priest\\dps\\apls\\smite.apl.json",
   "builds": [
    {
-    "label": "ml: Hybrid Discipline/Holy",
-    "talents": "505031131305021001-30505101032",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-hybrid-discipline-holy-bis.gear.json"
+    "label": "open winner",
+    "talents": "505020021302001-025150020320003-50002"
    },
    {
     "label": "smite-discipline-raid",
-    "talents": "505230231305001001-30505101002-3"
+    "talents": "505230231305001001-30505101002-3",
+    "protect_only": true
    },
    {
     "label": "sim preset: Smite",
-    "talents": "515330031305001001-30505113002"
+    "talents": "515330031305001001-30505113002",
+    "protect_only": true
    }
+  ],
+  "tuned_on": [
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -335,40 +359,48 @@
     "gain_seed2": 0.0015264033195976356,
     "candidates": 418,
     "pass": 6
+   },
+   {
+    "round": 18,
+    "change": "insert before the filler: cast Dark Sacrifice",
+    "gain_seed1": 0.003024197822886432,
+    "gain_seed2": 0.0029177957999675375,
+    "candidates": 434,
+    "pass": 7
    }
   ],
   "final": {
    "raid": {
-    "ml: Hybrid Discipline/Holy": {
-     "before": 630.7844109563913,
-     "after": 639.2755530465137,
-     "base": 630.7844109563913,
+    "open winner": {
+     "before": 542.8005903282967,
+     "after": 571.2134883077556,
+     "base": 542.8005903282967,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.28724824999880005,
-     "oom_after": 0.16088884998660002
+     "oom_before": 1.0640611996965528,
+     "oom_after": 0.7496547499744987
     },
     "smite-discipline-raid": {
-     "before": 572.1273718470835,
-     "after": 601.369594036171,
-     "base": 572.1273718470835,
+     "before": 532.3007543025358,
+     "after": 562.2996251454998,
+     "base": 532.3007543025358,
      "before_value": null,
      "after_value": null,
-     "oom_before": 4.080308899991479,
-     "oom_after": 3.209696649627646
+     "oom_before": 3.0004625995882344,
+     "oom_after": 3.079112499632597
     },
     "sim preset: Smite": {
-     "before": 569.9575646359889,
-     "after": 596.5791476352011,
-     "base": 569.9575646359889,
+     "before": 530.3605801911796,
+     "after": 557.8827237488275,
+     "base": 530.3605801911796,
      "before_value": null,
      "after_value": null,
-     "oom_before": 4.941982599988135,
-     "oom_after": 3.6109208496418015
+     "oom_before": 3.1361667995955367,
+     "oom_after": 3.411166399647501
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 6
+  "passes": 7
  }
 }

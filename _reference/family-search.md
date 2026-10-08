@@ -24,8 +24,10 @@ The best build found with no tree rule in each damage rotation, in a full raid, 
 | [mage](../mage/research/raid/family-search.md) | frost-raid | [21/0/30](https://talentsforever.com/mage/60/0520150030012101--055500031100030025-4) | Frost | 704.9 | +0.1% |
 | [mage](../mage/research/raid/family-search.md) | fire-raid | [12/34/5](https://talentsforever.com/mage/60/005205-23550020130133051-005-4) | Fire | 700.7 | +0.0% |
 | [rogue](../rogue/research/raid/family-search.md) | subtlety-raid | [20/0/31](https://talentsforever.com/rogue/60/005303103014--4021013302113211501-4) | Subtlety | 689.6 | +0.4% |
+| [priest](../priest/research/raid/family-search.md) | shadow-dps | [20/0/31](https://talentsforever.com/priest/60/005300211305--504020501201302051-4) | Shadow | 681.2 | +0.4% |
 | [mage](../mage/research/raid/family-search.md) | arcane-dps | [31/10/10](https://talentsforever.com/mage/60/053205003100111531-2305-0253-4) | Arcane | 659.8 | +0.0% |
 | [druid](../druid/research/raid/family-search.md) | balance-dps | [33/5/13](https://talentsforever.com/druid/60/0532220115501051-05-505003-4) | Balance | 577.2 | +0.0% |
+| [priest](../priest/research/raid/family-search.md) | smite-dps | [21/23/7](https://talentsforever.com/priest/60/505020021302001-025150020320003-50002-4) | Hybrid Discipline/Holy | 571.2 | +1.6% |
 | [druid](../druid/research/raid/family-search.md) | feral-cat-dps | [9/31/11](https://talentsforever.com/druid/60/050022-25000332020032012051-055001-4) | Feral Combat | 538.3 | +0.0% |
 | [shaman](../shaman/research/raid/family-search.md) | elemental-dps | [29/22/0](https://talentsforever.com/shaman/60/550530030010304-055130001121102--4) | Hybrid Elemental/Enhancement | 524.9 | +0.1% |
 | [shaman](../shaman/research/raid/family-search.md) | stormcaller-dps | [29/22/0](https://talentsforever.com/shaman/60/550031130210314-055211201200102--4) | Hybrid Elemental/Enhancement | 524.3 | - |

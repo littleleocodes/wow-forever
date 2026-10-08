@@ -200,7 +200,7 @@
         "conjuredId": 12662,
         "mhImbueId": 20749
       },
-      "builds": ["smite-discipline-raid"],
+      "builds": ["smite-discipline-raid", "smite-open-raid"],
       "rotation_only": true,
       "preset_names": ["Smite", "Smite 31/17/3"],
       "rotation_note": "Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs. Holy/Discipline damage (Smite, Holy Fire)."

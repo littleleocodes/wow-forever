@@ -4,4 +4,5 @@
 
 | Class | Spec model | Best build | Capacity | Effective HPS | Overheal | Healing split | Top talents (capacity lost when removed) |
 |---|---|---|---|---|---|---|---|
+| priest | `holy-heal` | `holy-raid-healer` (22/29/0) | 0.623 | 346 | 9% | Greater Heal 67%, Prayer of Healing 17%, Flash Heal 9%, Penance 3% | Meditation +24%, Improved Healing +9%, Spiritual Healing +7%, Penance +6%, Mental Strength +5% |
 
