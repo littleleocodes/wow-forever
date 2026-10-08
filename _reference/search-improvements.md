@@ -65,8 +65,11 @@
 - 2026-10-07 night: during a rogue family polish the machine ran at about 80% CPU (12 logical processors). A bench call costs about
   0.2 s to start; a batch of 120 builds at 300 fights about 4-5 s; neighbour generation about 0.07 s. The idle fifth is the gap between
   batches (Python work, the batch tail). Done the same night: two climbs at once in threads, identical outputs against the sequential
-  polish (shaman Stormcaller, 3 pairs, 6,204 builds each way), 128 s -> 99 s at low priority next to the running queue. Still open: the
-  same for the leveling polish (its fight-lab pool is shared by both threads; needs its own identity test).
+  polish (shaman Stormcaller, 3 pairs, 6,204 builds each way), 128 s -> 99 s at low priority next to the running queue. The leveling
+  polish too (2026-10-08 00:3x: shaman Enhancement, 3 pairs, 5,247 builds each way, identical, 169 s -> 150 s under load; both threads
+  share the fight-lab pool), from the rogue's leveling half on.
+- 2026-10-08: a full re-tune of both Assassination rotations (rogue) took 5 minutes after the apl_opt fix; one round of the hunter's
+  bm-raid re-tune had taken 2 h 17 min before it.
 - Polish cost per pair is about 10 improving steps of 120 builds plus a final pass of about 160: the climb, not the final pass, is the
   cost. Cheaper climbs must not change where they end (the warm-start test above).
 
