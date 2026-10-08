@@ -6194,5 +6194,31 @@
     "kept": false
    }
   ]
+ },
+ "druid/feral-cat-dps/raid/any": {
+  "class": "druid",
+  "spec": "any",
+  "entry": "feral-cat-dps",
+  "setting": "raid",
+  "date": "2026-10-08",
+  "base_dps": 537.99,
+  "abilities": [
+   {
+    "ability": "Berserk",
+    "talent": "Berserk",
+    "spell": 417141,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "in the middle",
+     "gain_seed1": -0.0007,
+     "split": "9/31/11",
+     "vs_spec_build": -0.0007
+    },
+    "kept": false
+   }
+  ]
  }
 }

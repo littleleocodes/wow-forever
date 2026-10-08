@@ -4,10 +4,9 @@
 
 | Class | Spec model | Best of our builds | DPS | Best sim preset | DPS | Our optimizer build | DPS |
 |---|---|---|---|---|---|---|---|
-| rogue | `assassination-raid` | `assassination-seal-fate-raid` | 407 | - | - | - | - |
-| rogue | `combat-daggers-raid` | `opt-combat-daggers-raid-raid-dps` | 419 | Combat Dual-Wield 15/33/3 | 394 | `opt-combat-daggers-raid-raid-dps` | 419 |
-| rogue | `combat-swords-raid` | `combat-swords-raid` | 393 | Improved Expose Armor (SS) | 393 | `opt-combat-swords-raid-raid-dps` | 376 |
-| rogue | `subtlety-raid` | `subtlety-hemo-raid` | 386 | - | - | - | - |
+| druid | `balance-dps` | `balance-moonkin-raid` | 497 | Balance | 452 | `opt-balance-dps-raid-dps` | 497 |
+| druid | `feral-bear-tank` | `feral-bear-tank` | 395 | Bear Tank 0/31/20 | 372 | `opt-feral-bear-tank-raid-tank` | 395 |
+| druid | `feral-cat-dps` | `opt-feral-cat-dps-raid-dps` | 349 | Feral Cat 9/35/7 | 339 | `opt-feral-cat-dps-raid-dps` | 349 |
 
 ## DPS by environment: dummy, raid, maximum
 
@@ -15,12 +14,11 @@ The best of our builds per spec model on the boss-level training dummy with your
 
 | Class | Game | Spec model | Best build | Dummy | Dummy 60 | Raid | Maximum | Max 60 s | Parse build (max) | Best preset (max) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| rogue | Forever | `assassination-raid` | `assassination-ml-raid` (30/19/2) | 394 | 462 | 734 | 743 | 787 | - | Mutilate 703 |
-| rogue | Forever | `combat-daggers-raid` | `combat-ml-raid` (16/33/2) | 402 | 468 | 772 | 781 | 882 | `opt-combat-daggers-raid-parse` 757 | Combat Dual-Wield 15/33/3 763 |
-| rogue | Forever | `combat-swords-raid` | `combat-swords-raid` (19/32/0) | 393 | 463 | 731 | 731 | 827 | `opt-combat-swords-raid-parse` 726 | Sinister Strike 741 |
-| rogue | Forever | `subtlety-raid` | `subtlety-hemo-raid` (20/0/31) | 386 | 439 | 686 | 686 | 749 | - | Subtlety Hemo 15/0/36 647 |
-| rogue | Classic | `combat-daggers-raid` | `combat-daggers-raid` (15/31/5) | 440 | - | 1259 | 1275 | 1367 | - | Backstab 1297 |
-| rogue | Classic | `combat-swords-raid` | `combat-swords-raid` (19/32/0) | 419 | - | 1267 | 1286 | 1395 | - | Sinister Strike 1292 |
+| druid | Forever | `balance-dps` | `balance-moonkin-raid` (33/5/13) | 497 | 568 | 576 | 576 | 573 | `opt-balance-dps-parse` 576 | Moonkin 38/0/13 570 |
+| druid | Forever | `feral-bear-tank` | `feral-bear-tank` (7/35/9) | 205 | 227 | 395 | 395 | 383 | - | Bear Tank 0/31/20 372 |
+| druid | Forever | `feral-cat-dps` | `opt-feral-cat-dps-raid-dps` (9/31/11) | 349 | 384 | 538 | 538 | 573 | `opt-feral-cat-dps-parse` 538 | Feral Cat 9/35/7 523 |
+| druid | Classic | `balance-dps` | `balance-moonkin-raid` (35/0/16) | 224 | - | 567 | 740 | 746 | - | Balance 741 |
+| druid | Classic | `feral-cat-dps` | `feral-cat-dps` (14/32/5) | 239 | - | 671 | 1563 | 1666 | - | Feral 1597 |
 
 ## Classic Era check (upstream wowsims/classic)
 
@@ -28,6 +26,6 @@ Our Classic-era community builds (`<class>/research/talents/classic-baseline/bui
 
 | Class | Spec model | Best of our builds | DPS | Best sim preset | DPS | Damage split (model sources) |
 |---|---|---|---|---|---|---|
-| rogue | `combat-daggers-raid` | `combat-daggers-raid` | 1259 | Backstab | 1285 | white_mh 39%, backstab 32%, white_oh 21%, poisons 6%, eviscerate 3% |
-| rogue | `combat-swords-raid` | `combat-swords-raid` | 1267 | Sinister Strike | 1273 | white_mh 42%, sinister 24%, white_oh 23%, eviscerate 7%, poisons 5% |
+| druid | `balance-dps` | `balance-moonkin-raid` | 567 | Balance | 565 | starfire 79%, moonfire_direct 20%, wrath 1% |
+| druid | `feral-cat-dps` | `feral-cat-dps` | 671 | Feral | 691 | shred 44%, white 37%, ferocious_bite 19% |
 
