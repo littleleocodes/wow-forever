@@ -125,6 +125,44 @@ def family_cache(cls, entry):
     return OUT / "cache" / f"{cls}-{entry}.families.json"
 
 
+def sibling_families(cls, entry):
+    """{family label: [builds]} from the polished-family caches of the class's other entries (2026-10-07 audit: the family polish was
+    the most expensive step, 80-120 minutes a rogue entry, and every entry of a class climbed each pair from random filler again)."""
+    warm, n = {}, 0
+    for p in sorted((OUT / "cache").glob(f"{cls}-*.families.json")):
+        if p == family_cache(cls, entry):
+            continue
+        try:
+            rows = json.load(open(p, encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        n += 1
+        for d in rows:
+            if isinstance(d, dict) and d.get("label") and d.get("build"):
+                warm.setdefault(d["label"], []).append(d["build"])
+    if warm:
+        warm["_n"] = n
+    return warm
+
+
+def sibling_starts(cls, entry, space, have):
+    """The class's other entries' polished families as extra starts of this entry's search (2026-10-07). They were tested as warm starts
+    of the family polish instead (ml_talents.family_polish `warm`, shaman Stormcaller, 8 pairs): 80% fewer builds simulated and the same
+    best family, but 4 of the 8 pair families came out 5-9% worse (a climb from a sibling's optimum stops at it) and 3 better, so the
+    polish keeps its random starts and the sibling families join the search's starts instead, at the cost of one evaluation each."""
+    warm = sibling_families(cls, entry)
+    warm.pop("_n", None)
+    seen = {tuple(sorted(x.items())) for x in have}
+    out = []
+    for builds in warm.values():
+        for b in builds:
+            k = tuple(sorted(b.items()))
+            if k not in seen and space.valid(b):
+                seen.add(k)
+                out.append(dict(b))
+    return out
+
+
 def run_search(cls, entry, repo, settings, starts, seed, protect=None, reuse=False):
     space = MLT.Space(cls, "any", any_split=True)
     starts = [s for s in starts if s and space.valid(s)]
@@ -147,8 +185,10 @@ def run_search(cls, entry, repo, settings, starts, seed, protect=None, reuse=Fal
         fp.parent.mkdir(parents=True, exist_ok=True)
         fp.write_text(json.dumps([{"score": sc, "build": x, "label": lab} for sc, x, lab in fam]) + "\n", encoding="utf-8")
     log(f"   polish: {len(fam)} families, {psim.n:,} builds simulated ({psim.hits:,} cache hits), {(time.time() - t0) / 60:.1f} min")
-    starts = starts + [x for _, x, _ in fam]
-    log(f"== {cls} {entry}: open search (any split, full raid), {len(starts)} valid starts; kept: {', '.join(sorted(space.protect)) or 'none'}")
+    sib = sibling_starts(cls, entry, space, starts + [x for _, x, _ in fam])
+    starts = starts + [x for _, x, _ in fam] + sib
+    log(f"== {cls} {entry}: open search (any split, full raid), {len(starts)} valid starts ({len(sib)} from sibling entries' families); "
+        f"kept: {', '.join(sorted(space.protect)) or 'none'}")
     t1 = time.time()
     a = MLT.defaults(**settings, seed=seed)
     sim = MLT.Sim(cls, entry, "raid", None, repo, f"family-{cls}-{entry}")

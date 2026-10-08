@@ -609,21 +609,32 @@ def polish(space, sim, flat, fights, seed, rounds=8, min_gain=0.002, keep=(), sm
     return cur, cur_s
 
 
-def family_polish(space, sim, rng, log, fights=300, rounds=8, per_pair=2, top=5, full_fights=800, seed=37, min_gain=0.002):
+def family_polish(space, sim, rng, log, fights=300, rounds=8, per_pair=2, top=5, full_fights=800, seed=37, min_gain=0.002, warm=None):
     """Niching for an open search (2026-10-05: a raw keystone seed with random filler points scored low and was dropped before the
     search could tune it, so the 16/11/24 Summon Hawk + Lone Wolf hunter was never found): for each pair of keystones from different
     trees, the better of per_pair random legal builds holding both, polished by a short hill climb that keeps the pair (1-point moves,
     `fights` per build); then the `top` best families again with every move on full_fights. Returns [(score, build, family label)],
-    best first: the open search's extra starts and the report's family table."""
+    best first: the open search's extra starts and the report's family table.
+    warm ({family label: [builds]}, 2026-10-07): the same pair's polished builds from sibling entries of the class (another rotation or
+    gear); they compete with the random draws for the start (the better-scoring start is climbed), so a climb begins near a tuned build
+    instead of random filler; the random draw stays, so a pair is never limited to its sibling's region. A/B test the same day (shaman
+    Stormcaller, 8 pairs, 150 fights): 80% fewer builds and the same best family, but 4 of 8 families 5-9% worse and 3 better, so no
+    caller passes it; family_search adds the sibling families to the search's starts instead (`sibling_starts`)."""
     keep0 = set(space.protect)
     ks = space.keystones(damage_only=True)
     pairs = [(a, b) for i, a in enumerate(ks) for b in ks[i + 1:] if space.tree_of[a] != space.tree_of[b]]
     out = []
     t0 = time.time()
+    n_warm = 0
     for k, (a, b) in enumerate(pairs, start=1):
         space.protect = keep0 | {a, b}
         draws = [x for x in (space.random_build(rng) for _ in range(per_pair)) if x]
         space.protect = keep0
+        ws = [dict(w) for w in (warm or {}).get(f"{a} + {b}", []) + (warm or {}).get(f"{b} + {a}", [])
+              if w and w.get(a) and w.get(b) and space.valid(w)]
+        if ws:
+            n_warm += 1
+            draws = draws + [w for i, w in enumerate(ws) if w not in ws[:i]]
         if not draws:
             continue
         sc = sim.run(draws, fights, seed)
@@ -632,7 +643,7 @@ def family_polish(space, sim, rng, log, fights=300, rounds=8, per_pair=2, top=5,
         out.append((sx, x, f"{a} + {b}"))
         if k % 20 == 0 or k == len(pairs):   # progress (2026-10-07: a 136-pair polish was an hour of silence on a shared CPU)
             log(f"    polish: {k}/{len(pairs)} pairs, {(time.time() - t0) / 60:.0f} min, best so far {max(out, key=lambda t: t[0])[2]} "
-                f"{max(t[0] for t in out):.4g}")
+                f"{max(t[0] for t in out):.4g}" + (f" ({n_warm} warm starts)" if warm else ""))
     out.sort(key=lambda t: -t[0])
     final = []
     for sx, x, lab in out[:top]:

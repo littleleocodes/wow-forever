@@ -91,6 +91,32 @@ class LabSim:
         return [(3600.0 / t, 3600.0 * sd / t ** 2) if t < 1e8 else (0.0, 0.0) for t, sd in res]
 
 
+def family_cache(cls, spec):
+    return OUT / "cache" / f"{cls}-{spec}.families.json"
+
+
+def sibling_starts(cls, spec, space, have):
+    """The class's other leveling rotations' polished families as extra search starts (2026-10-07, as raidsim/family_search.py
+    sibling_starts: tested as warm starts of the polish instead, they made 4 of 8 families worse)."""
+    seen = {tuple(sorted(x.items())) for x in have}
+    out = []
+    for fp in sorted((OUT / "cache").glob(f"{cls}-*.families.json")):
+        if fp == family_cache(cls, spec):
+            continue
+        try:
+            rows = json.load(open(fp, encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        for d in rows:
+            b = d.get("build") if isinstance(d, dict) else None
+            if b:
+                k = tuple(sorted(b.items()))
+                if k not in seen and space.valid(b):
+                    seen.add(k)
+                    out.append(dict(b))
+    return out
+
+
 def known_positives(cls):
     if not KNOWN.exists():
         return []
@@ -163,11 +189,17 @@ def main():
                 sim = LabSim(cls, spec, pool, a.jobs)
                 log(f"== {cls} {spec}: family polish over every pair of {len(space.keystones())} keystones from different trees")
                 fam = MLT.family_polish(space, sim, random.Random(83), log, **POLISH)
+                if not SMOKE:   # the polished families, for the class's other rotations (their search starts) and re-runs
+                    fp = family_cache(cls, spec)
+                    fp.parent.mkdir(parents=True, exist_ok=True)
+                    fp.write_text(json.dumps([{"score": sc, "build": x, "label": lab} for sc, x, lab in fam]) + "\n", encoding="utf-8")
                 r["families"] = [{"keystones": lab, "split": space.split(x), "family": space.classify(x), "kills_per_hour": round(sc, 2)}
                                  for sc, x, lab in fam[:15]]
-                log(f"== {cls} {spec} (levels as {', '.join(trees)}): open search at level 60, {len(starts) + len(fam)} starts")
+                sib = sibling_starts(cls, spec, space, starts + [x for _, x, _ in fam])
+                log(f"== {cls} {spec} (levels as {', '.join(trees)}): open search at level 60, {len(starts) + len(fam) + len(sib)} starts "
+                    f"({len(sib)} from sibling rotations' families)")
                 opts = MLT.defaults(**SEARCH, seed=81)
-                rec, win = MLT.optimize(space, {spec: sim}, starts + [x for _, x, _ in fam], opts, log)
+                rec, win = MLT.optimize(space, {spec: sim}, starts + [x for _, x, _ in fam] + sib, opts, log)
                 r.update({"winner": rec["winner"], "runs_agree": rec["runs_agree"], "simulated_builds": rec["simulated_builds"],
                           "important_features": rec.get("important_features"), "finalists": rec.get("finalists") or []})
                 save()
