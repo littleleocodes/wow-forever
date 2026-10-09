@@ -373,8 +373,10 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   Form threat +50%, rage from damage taken over the expected creature health, no 1% hit suppression or spell-miss floor, the downranking
   penalty (TBC's rule as the assumption, also in the healer lab), no off-hand hit bonus under a queued Raptor Strike. The fight lab got
   Forever's rage rules (`tables.RAGE_MODEL`: normalized swing rage, double crit rage, rage taken over the expected creature health, 1.25
-  decay; Arms leveling up to 7% faster at 60). Open (not modelled, in `_reference/search-improvements.md`): temporary enchants stacking with
-  poisons and shaman imbues for rogues, the warlock's Firestone and Spellstone imbues, the lower proc chance of low ranks, the client's
+  decay; Arms leveling up to 7% faster at 60). Stacked temporary enchants (`extraMhImbueId` / `extraOhImbueId` in an entry's consumables:
+  rogues' stones over poisons, the warlock's Spellstone over Wizard Oil; `raidsim/build_next_bench.py` builds a patched bench under another
+  name so it can be swapped in by rename while a queue runs). Open (not modelled, in `_reference/search-improvements.md`): the lower proc
+  chance of low ranks, the client's
   ExpectedStat creature health for leveling mobs (7-35% above the lab's Classic medians; whether the server uses it is unknown, so
   `MOB_HP_MULT` stays a sensitivity), glancing and crit suppression against bosses, negative resistance from debuffs, Forever's Spirit
   regeneration, crit per stat point below level 40, leveling gear from Forever's item database.

@@ -345,6 +345,9 @@ Each class folder now opens with player pages and keeps the research below:
   the downranking penalty (simulator and healer lab), the Raptor Strike queue, and Forever's rage rules in the fight lab. The
   re-baseline was stopped at the warlock's entries and restarted at 00:42 for every entry (the bench before the audit is kept as
   `foreverbench-preaudit.exe`). Open items are listed in CLAUDE.md's audit note and the improvement log.
+  Then (01:0x) stacked temporary enchants for rogues and warlocks: built with `raidsim/build_next_bench.py` and swapped in by rename while
+  the rotation pass ran (`foreverbench-audit1.exe` is the binary before it; the running pass had loaded specs.json before the new keys,
+  so its rogue and warlock rotations are tuned without the extra stones, which add flat stats only).
   **Racials (2026-10-08 05:2x):** the simulator applies more racials in Forever than Classic (Tauren +1% hit, Night Elf's Elune's Light
   +10% crit, Berserking, Blood Fury, weapon specializations), and the generic cooldown line casts the on-use ones, so stripping rotation
   lines would not remove them. Patch `patches/forever/sim/core/no_racials.go` (+ an edits.json insertion in racials.go) switches all of them
