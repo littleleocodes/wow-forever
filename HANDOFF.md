@@ -333,6 +333,11 @@ Each class folder now opens with player pages and keeps the research below:
   the mage's Arcane rotation and restarted at 23:31 with `apl_opt --skip-commit 2ce8265` (Frost and Fire kept). The sweep's P4 now
   runs ml_pipeline's targets,gear,spells,talents,final (the final step needs the talents step's winner; it had listed
   targets,gear,final only). Raid spec pages got the weapon and stance line (`render_modes.variant_lines`).
+  The fight lab follows the same pet rules (`tables.PET_SCALING`, `HUNTER_PET_SPEED`, engine pets with a spell power; hunter leveling
+  4-11% faster per kill, warlock 2-5%); the mage regression baseline moved with 70291's spell ranks (identical before that commit and
+  with or without the pet change). Open: the scorer's calibrations (fight lab and raid) predate 70291 and the pet patches for every
+  class; they feed the stats model's talent orders, screening, respec plans and audits, not the page picks (`rebuild.py <classes>
+  --steps calibrate,raid` when time allows).
   **Racials (2026-10-08 05:2x):** the simulator applies more racials in Forever than Classic (Tauren +1% hit, Night Elf's Elune's Light
   +10% crit, Berserking, Blood Fury, weapon specializations), and the generic cooldown line casts the on-use ones, so stripping rotation
   lines would not remove them. Patch `patches/forever/sim/core/no_racials.go` (+ an edits.json insertion in racials.go) switches all of them
