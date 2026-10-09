@@ -44,18 +44,31 @@ def load_popular(path):
     return json.loads(s[s.index("{"): s.rindex("}") + 1])
 
 
+# The site's code version whose talent order our forever-talents/ data follows. Version 4 was build 70009's order; the site moved to
+# version 6 with its later tree changes (its changelog: old links are translated on open), and our data comes from the site's own
+# export at build 70291 (2026-10-08), so version-6 codes map digit by digit onto it. Checked for every code of the 2026-10-09 list:
+# each tree has exactly as many digits as talents, no digit exceeds its talent's rank cap, the per-tree points equal the site's own
+# `pts`, and the validator passes. A code of another version is refused rather than decoded onto the wrong talents.
+CODE_VERSION = "6"
+
+
 def decode(cls, code, trees_data):
-    """Site code -> {tree: [[talent, ranks], ...]} in our dataset's names and order."""
+    """Site code -> {tree: [[talent, ranks], ...]} in our dataset's names and order (strict: a digit count or rank that does not fit
+    the tree raises, so a talent order that moved is noticed instead of clamped away)."""
     body = code.split("/")[2]
     segs = body.split("-")
-    if segs[-1] != "4" or len(segs) != len(trees_data) + 1:
-        raise ValueError(f"{code}: not a version-4 code (only those are in build 70009's talent order)")
+    if segs[-1] != CODE_VERSION or len(segs) != len(trees_data) + 1:
+        raise ValueError(f"{code}: not a version-{CODE_VERSION} code (our talent data follows that version's order)")
     alloc = {}
     for tr, digits in zip(trees_data, segs[:-1]):
+        if digits and len(digits) > len(tr["talents"]):
+            raise ValueError(f"{code}: {len(digits)} digits for the {tr['name']} tree, which has {len(tr['talents'])} talents")
         items = []
         for t, d in zip(tr["talents"], digits):
+            if int(d) > t["maxRank"]:
+                raise ValueError(f"{code}: {int(d)} points in {t['name']} (rank cap {t['maxRank']})")
             if int(d):
-                items.append([t["name"], min(int(d), t["maxRank"])])
+                items.append([t["name"], int(d)])
         alloc[tr["name"]] = items
     return alloc
 
@@ -69,7 +82,17 @@ def main():
         d = RAW / f"{datetime.date.today().isoformat()}-talentsforever-popular"
         d.mkdir(parents=True, exist_ok=True)
         req = urllib.request.Request(URL, headers={"User-Agent": "wow-forever knowledge base"})
-        (d / "popular.js").write_bytes(urllib.request.urlopen(req, timeout=60).read())
+        try:
+            (d / "popular.js").write_bytes(urllib.request.urlopen(req, timeout=60).read())
+        except urllib.error.URLError as ex:
+            # 2026-10-09: Python's certificate store on Windows rejected Let's Encrypt's new chain ("certificate has expired") while the
+            # site's certificate was valid; curl verifies with its own store, so it is the fallback (verification stays on)
+            import shutil
+            import subprocess
+            if not shutil.which("curl"):
+                raise
+            print(f"urllib failed ({ex.reason}); fetching with curl")
+            subprocess.run(["curl", "-sSf", "--max-time", "60", "-A", "wow-forever knowledge base", "-o", str(d / "popular.js"), URL], check=True)
         print(f"fetched {URL} -> {d.relative_to(HERE.parents[1])}")
     src = RAW / a.raw if a.raw else latest_raw()
     pop = load_popular(src / "popular.js")
