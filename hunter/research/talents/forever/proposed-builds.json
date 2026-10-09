@@ -632,7 +632,7 @@
       ],
       "notes": ["Adopted 2026-09-29 (user request): the talentsforever.com #1 hunter build (5/11/35) beat the previous draft by +8.7% on the training dummy (380.1 vs 349.9) and +4.6% in the raid setting (791.7 vs 757.2) with the trap rotation, on two independent seeds (community simulator 40be98e). raidsim/talent_opt.py from both builds, dummy and raid: from the old draft it took exactly Survivalist's Discipline, Clever Traps and Survival Tactics (it paid with Deadly Aspects, which the simulator scores at zero because it lacks the melee haste proc); from this build no move wins. The old draft is kept as raidsim/candidates/cand-melee-dps-hand-2026-09-29.json.", "Rotation: dual wield two fast one-handers; Aspect of the Beast on; Hunter's Mark and Serpent Sting from range on the pull, then Mongoose Bite when active, Strider Kick on cooldown, Raptor Strike on the next swing, and Immolation Trap under the boss whenever it is off cooldown (fire traps share a cooldown; Explosive Trap instead on packs).", "No pet: Lone Wolf's +20% beats the pet's damage once the hunter melees (the model's raid pet share is 12%, the break-even 16.7%). Beast Mastery's pet talents are absent for that reason.", "The community simulator plays this build on our own melee rotation (raidsim/specs.json melee-dps); it models only Aspect of the Hawk, so Aspect of the Beast's attack power and Deadly Aspects' haste are missing and the DPS is a lower bound. The fight lab's melee rotation has no traps yet, so the leveling numbers leave the trap talents at zero.", "2026-09-29 filler audit, undone 2026-10-06: it had moved Improved Tracking 5 -> Deflection because the simulator measured Improved Tracking at 0, but that was the bench's blind spot: its target had no creature type, and Improved Tracking is +5% damage against every raid creature type but Mechanical (the bench's target is an Elemental since 2026-10-06; it reads +4.9% in a full raid now). The 5 points are back in Improved Tracking."],
       "open_questions": ["Whether traps can be placed in combat and trigger at once under a boss, as the simulator assumes.", "Fire traps sharing one cooldown (the user's reading, and the simulator's model): with separate cooldowns Explosive Trap adds about 5% more on the dummy.", "Survival Tactics' +10% trap hit: whether traps can miss a boss at all.", "Expose Prey's proc rate against a marked target (5%/rank per attack assumed) decides how often Mongoose Bite is available; check the actual rate in the beta.", "Whether Aspect of the Beast (+110 melee attack power) and the Deadly Aspects melee haste proc work as the tooltips read.", "Lacerating Strikes: 40% of Mongoose Bite over 21 s; whether the bleed can crit or stack."],
-      "sources": ["https://talentsforever.com/hunter/60/5-005005001-500230230250222151-4", "https://warcraftforever.games/talents/hunter", "beta client 1.60.1.70009 tooltips (_reference/data/forever-talents/hunter.json)", "hunter/raid/raidsim/melee-dps.md"]
+      "sources": ["https://talentsforever.com/hunter/60/5-005005001-500230230250222151-6", "https://warcraftforever.games/talents/hunter", "beta client 1.60.1.70009 tooltips (_reference/data/forever-talents/hunter.json)", "hunter/raid/raidsim/melee-dps.md"]
     },
     {
       "id": "leveling-melee",
@@ -2025,7 +2025,7 @@
       "flex": [],
       "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 26.09; beast-mastery-leveling 26.59. The search simulated 41,813 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Beast-Marks leveling build: check it while leveling at launch."],
-      "sources": ["https://talentsforever.com/hunter", "https://talentsforever.com/hunter/60/512021050511024-005355-4-4"]
+      "sources": ["https://talentsforever.com/hunter", "https://talentsforever.com/hunter/60/512021050511024-005355-4-6"]
     },
     {
       "id": "beast-survival-open-leveling",
@@ -2095,7 +2095,7 @@
       "flex": [],
       "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 24.02; opt-melee-dps-solo-60 26.24, leveling-melee 26.31, opt-bm-leveling-leveling-aoe 29.88. The search simulated 48,123 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Beast-Survival leveling build: check it while leveling at launch."],
-      "sources": ["https://talentsforever.com/hunter", "https://talentsforever.com/hunter/60/35200005041002-005-530200230140202-4"]
+      "sources": ["https://talentsforever.com/hunter", "https://talentsforever.com/hunter/60/35200005041002-005-530200230140202-6"]
     }
   ]
 }

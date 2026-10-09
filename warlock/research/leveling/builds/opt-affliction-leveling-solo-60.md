@@ -7,7 +7,7 @@
 | **Build** | 27/24/0 (Affliction / Demonology / Destruction) |
 | **Role** | DPS — Solo/farming |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70009 (2026-09-25 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70291 (2026-10-08 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 

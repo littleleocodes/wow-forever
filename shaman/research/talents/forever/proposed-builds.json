@@ -1285,7 +1285,7 @@
       "flex": [],
       "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 37.28; opt-elemental-dps-leveling-st 38.04. The search simulated 40,150 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Elemental leveling build: check it while leveling at launch."],
-      "sources": ["https://talentsforever.com/shaman", "https://talentsforever.com/shaman/60/5302311303103051-050002301-05301-4"]
+      "sources": ["https://talentsforever.com/shaman", "https://talentsforever.com/shaman/60/5302311303103051-050002301-05301-6"]
     },
     {
       "id": "enhancement-open-leveling",
@@ -1360,7 +1360,7 @@
       "flex": [],
       "notes": ["+2.7% faster than the hand draft leveling-enhancement, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 32.72; opt-enhancement-dps-leveling-st 33.58, leveling-enhancement 33.61, opt-enhancement-dps-solo-60 33.82, opt-enhancement-dps-leveling-aoe 37.26, restoration-leveling 43.23. The search simulated 34,563 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Enhancement leveling build: check it while leveling at launch."],
-      "sources": ["https://talentsforever.com/shaman", "https://talentsforever.com/shaman/60/510021-050030331005112251-05005-4"],
+      "sources": ["https://talentsforever.com/shaman", "https://talentsforever.com/shaman/60/510021-050030331005112251-05005-6"],
       "replaces": "leveling-enhancement"
     }
   ]

@@ -1166,7 +1166,7 @@
       "flex": [],
       "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 40.28; holy-leveling 45.10. The search simulated 39,186 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Smite leveling build: check it while leveling at launch."],
-      "sources": ["https://talentsforever.com/priest", "https://talentsforever.com/priest/60/024013031311101-135050010320003-005002-4"]
+      "sources": ["https://talentsforever.com/priest", "https://talentsforever.com/priest/60/024013031311101-135050010320003-005002-6"]
     },
     {
       "id": "shadow-open-leveling",
@@ -1248,7 +1248,7 @@
       "flex": [],
       "notes": ["+1.0% faster than the hand draft leveling-shadow, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 25.57; leveling-shadow 25.83, opt-shadow-dps-leveling-aoe 28.63, opt-shadow-dps-leveling-st 29.49, opt-shadow-dps-solo-60 29.49. The search simulated 47,721 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Shadow leveling build: check it while leveling at launch."],
-      "sources": ["https://talentsforever.com/priest", "https://talentsforever.com/priest/60/01501303131--345002401201202151-4"],
+      "sources": ["https://talentsforever.com/priest", "https://talentsforever.com/priest/60/01501303131--345002401201202151-6"],
       "replaces": "leveling-shadow"
     }
   ]

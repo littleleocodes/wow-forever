@@ -4,22 +4,22 @@
 
 **✅ Recommended** for raid (the best rogue spec here, or within 3% of it).
 
-**[Combat — Raid](../research/raid/builds/combat-ml-raid.md)** (16/33/2) — [open the talent tree](https://talentsforever.com/rogue/60/00530310301-30531300001515231-002-4)
+**[Combat — Raid](../research/raid/builds/combat-ml-raid.md)** (16/33/2) — [open the talent tree](https://talentsforever.com/rogue/60/00530310301-30531300001515231-002-6)
 
 > 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds). A model of the beta, to check at launch.
 
 **Other weapons and stances.** This build is the Daggers setup. The spec's best build for each other setup, in a full raid:
 
-- Swords: [Raid Combat swords](../research/raid/builds/opt-combat-swords-raid-raid-dps.md) (20/31/0), 704 DPS in a full raid — [open the talent tree](https://talentsforever.com/rogue/60/005323101005-32502300000514231--4)
+- Swords: [Raid Combat swords](../research/raid/builds/opt-combat-swords-raid-raid-dps.md) (20/31/0), 704 DPS in a full raid — [open the talent tree](https://talentsforever.com/rogue/60/005323101005-32502300000514231--6)
 
 ## How to play
 
-**Keep up all fight:** **Slice and Dice**.
+**Keep up all fight:** **Slice and Dice** (put it back up as soon as it drops, even with 1 combo point).
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Cold Blood** when you have 4 combo points and Dice is active
-2. **Eviscerate** when you have 4 combo points and Slice and Dice is active
+1. **Cold Blood** right before your finisher, when you have 4 or more combo points and Slice and Dice is active
+2. **Eviscerate** when you have 4 or more combo points and Slice and Dice is active
 3. **Adrenaline Rush**
 4. **Backstab**
 
@@ -32,6 +32,29 @@
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
+## Why this rotation
+
+Combat in a raid is an energy rhythm: build combo points with **Backstab**, keep **Slice and Dice** up for its attack speed, and spend everything else on **Eviscerate**. **Adrenaline Rush** and **Blade Flurry** go on cooldown.
+
+**Why it works**
+
+- **Slice and Dice** comes first because 30% more attack speed for the whole fight is worth more than any single hit. Put it back up the moment it drops, even with 1 combo point: it lasts 9 seconds at 1 point and 21 at 5, and **Improved Slice and Dice** makes that 45% longer. With 5 points and under 3 seconds left on it, refresh it rather than let it fall off.
+- **Eviscerate** goes at 4 or more combo points, not only at 5. Its damage grows by the same amount per point, so the fifth point adds no bonus, and every point costs a 60-energy **Backstab**. **Ruthlessness** often gives you a free point after each finisher and **Relentless Strikes** refunds energy, so shorter cycles let you finish more often. The simulator measured finishing at 4 or more about 0.7% better than waiting for 5.
+- **Cold Blood** spends no combo points. It makes your next attack a sure critical strike, so the rotation times it right before an **Eviscerate** at 4 or more points, your biggest hit.
+- **Adrenaline Rush** doubles your energy regeneration for 15 seconds: press it whenever it is ready. The rotation used to hold it for low energy, and pressing it on cooldown measured 1.5% better.
+- **Backstab** is your only combo point builder and your filler: everything above it only spends what it builds.
+
+**Caveats**
+
+- **Backstab** needs a dagger in your main hand and you behind the target. If you cannot get behind the boss, or you hold a sword, build with **Sinister Strike** instead (the swords setup on this page plays that way).
+- When your energy is nearly full (79 or more) and you hold 4 or more points, **Eviscerate** even if **Slice and Dice** is down so no energy goes to waste, then put **Slice and Dice** back up with the next points.
+- **Blade Flurry** copies your hits to a second target for 15 seconds. On a single boss it is still worth pressing on cooldown for its 20% attack speed; with adds, it is your best cleave.
+
+**When to change it**
+
+- In the last 6 seconds of a fight, skip **Slice and Dice** and put every combo point into **Eviscerate**: a buff that outlives the boss does nothing.
+- If the boss is about to die and you hold only 1 to 3 points, an **Eviscerate** still beats keeping them.
+
 ## The numbers
 
 | Setting | DPS |
@@ -42,7 +65,7 @@
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 672 | [16/33/2](https://talentsforever.com/rogue/60/00530310301-32330310001515231-002-4) |
+| Pre-BiS | 672 | [16/33/2](https://talentsforever.com/rogue/60/00530310301-32330310001515231-002-6) |
 | Phase 1 BiS | 720 | this build |
 
 **The gear** (average item level: Pre-BiS 63.3; Phase 1 BiS 64.7; each item opens its Wowhead page, with where it drops and its enchant):
@@ -71,11 +94,11 @@
 
 ## Other builds of this spec
 
-- [Combat Daggers](../research/raid/builds/combat-daggers-raid.md) (16/33/2, 728 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005323102-30531300001515231-002-4)
-- [Raid daggers](../research/raid/builds/opt-combat-daggers-raid-raid-dps.md) (17/32/2, 713 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005323121-30531300000515231-002-4)
-- [Raid Combat swords](../research/raid/builds/opt-combat-swords-raid-raid-dps.md) (20/31/0, 704 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005323101005-32502300000514231--4)
-- [Combat Swords](../research/raid/builds/combat-swords-raid.md) (19/32/0, 703 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005303125-32403300001515131--4)
+- [Combat Daggers](../research/raid/builds/combat-daggers-raid.md) (16/33/2, 728 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005323102-30531300001515231-002-6)
+- [Raid daggers](../research/raid/builds/opt-combat-daggers-raid-raid-dps.md) (17/32/2, 713 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005323121-30531300000515231-002-6)
+- [Raid Combat swords](../research/raid/builds/opt-combat-swords-raid-raid-dps.md) (20/31/0, 704 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005323101005-32502300000514231--6)
+- [Combat Swords](../research/raid/builds/combat-swords-raid.md) (19/32/0, 703 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005303125-32403300001515131--6)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-09 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-09 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
 

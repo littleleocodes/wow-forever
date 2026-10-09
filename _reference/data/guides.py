@@ -94,12 +94,13 @@ def class_names(cls):
     return names
 
 
-def render(cls, spec, mode, label, fingerprint):
-    """Markdown lines for a spec page (empty when the spec has no guide for the mode)."""
+def render(cls, spec, mode, label, fingerprint, title="Why this rotation"):
+    """Markdown lines for a spec page (empty when the spec has no guide for the mode). Healer pages have no rotation list, so their
+    guide is the page's "How to heal"."""
     g = guide(cls, spec, mode)
     if not g:
         return []
-    o = ["## Why this rotation", ""]
+    o = [f"## {title}", ""]
     if g.get("plan"):
         o += [g["plan"], ""]
     for key, head in (("why", "Why it works"), ("caveats", "Caveats"), ("diverge", "When to change it")):

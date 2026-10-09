@@ -618,7 +618,7 @@ def mode_section(cls, spec, mode, builds, nums, src):
     gl = []   # the hand-written rotation guide (guides.py, 2026-10-09 user request), under How to play
     if mode == "raid":
         if top.get("role") == "healer":
-            gl = guides.render(cls, spec, mode, "healer-policy", guides.healer_fingerprint(cls))
+            gl = guides.render(cls, spec, mode, "healer-policy", guides.healer_fingerprint(cls), title="How to heal")
         else:
             ent = (R.get(top["id"]) or {}).get("entry")
             gl = guides.render(cls, spec, mode, ent, guides.raid_fingerprint(cls, ent) if ent else None)

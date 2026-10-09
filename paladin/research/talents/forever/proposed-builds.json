@@ -1286,7 +1286,7 @@
       "flex": [],
       "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 32.52; protection-leveling 35.64. The search simulated 72,124 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Prot-Ret leveling build: check it while leveling at launch."],
-      "sources": ["https://talentsforever.com/paladin", "https://talentsforever.com/paladin/60/-15303103013002-2512523010103031-4"]
+      "sources": ["https://talentsforever.com/paladin", "https://talentsforever.com/paladin/60/-15303103013002-2512523010103031-6"]
     },
     {
       "id": "retribution-open-leveling",
@@ -1364,7 +1364,7 @@
       "flex": [],
       "notes": ["+0.8% faster than the hand draft leveling-retribution, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 27.83; leveling-retribution 28.04, opt-ret-dps-solo-60 28.32, opt-ret-dps-leveling-st 28.38, opt-ret-dps-leveling-aoe 29.21. The search simulated 72,959 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Retribution leveling build: check it while leveling at launch."],
-      "sources": ["https://talentsforever.com/paladin", "https://talentsforever.com/paladin/60/50103101-503-1522513100133032-4"],
+      "sources": ["https://talentsforever.com/paladin", "https://talentsforever.com/paladin/60/50103101-503-1522513100133032-6"],
       "replaces": "leveling-retribution"
     }
   ]

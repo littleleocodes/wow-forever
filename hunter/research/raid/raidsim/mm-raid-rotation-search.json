@@ -2,8 +2,8 @@
  "dummy": {
   "class": "hunter",
   "spec": "mm-raid",
-  "date": "2026-10-07",
-  "commit": "b0f0df3",
+  "date": "2026-10-09",
+  "commit": "2ce8265",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "ui/specs/hunter/dps/apls/mm.apl.json",
@@ -14,17 +14,23 @@
     "talents": "502-0053252501523051-5"
    },
    {
-    "label": "bm-mm-raid",
-    "talents": "53200005041002-005355010150004"
-   },
-   {
-    "label": "sim preset: Beast Mastery 35/16/0",
-    "talents": "5520001505121251-0050551"
-   },
-   {
     "label": "bm-mm-full-buffs-raid",
-    "talents": "53200005050001-005155000150305"
+    "talents": "53200005050001-005155000150305",
+    "protect_only": true
+   },
+   {
+    "label": "sim preset: Marksmanship",
+    "talents": "5023000501-0050550501503051",
+    "protect_only": true
+   },
+   {
+    "label": "bm-mm-raid",
+    "talents": "53200005041002-005355010150004",
+    "protect_only": true
    }
+  ],
+  "tuned_on": [
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -116,50 +122,58 @@
     "gain_seed2": 0.003378962046060252,
     "candidates": 369,
     "pass": 9
+   },
+   {
+    "round": 12,
+    "change": "threshold 20% -> 15%: if time to the next auto attack > 1s and time left in the fight \u2265 20s and mana % \u2265 20%: cast Aimed Shot",
+    "gain_seed1": 0.0016031338855218014,
+    "gain_seed2": 0.0016402925796439316,
+    "candidates": 367,
+    "pass": 10
    }
   ],
   "final": {
    "dummy": {
     "open winner": {
-     "before": 388.96075602226136,
-     "after": 429.6331871240335,
-     "base": 388.96075602226136,
+     "before": 418.24839916437094,
+     "after": 452.09761031050124,
+     "base": 418.24839916437094,
      "before_value": null,
      "after_value": null,
-     "oom_before": 97.18514563426984,
-     "oom_after": 97.25997307313175
-    },
-    "bm-mm-raid": {
-     "before": 416.1609998393856,
-     "after": 498.42433406497054,
-     "base": 416.1609998393856,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 64.89098170062425,
-     "oom_after": 51.804149606991515
-    },
-    "sim preset: Beast Mastery 35/16/0": {
-     "before": 386.78587313572166,
-     "after": 474.7973585960857,
-     "base": 386.78587313572166,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 75.59105813059352,
-     "oom_after": 73.42354782057652
+     "oom_before": 97.25898398118682,
+     "oom_after": 98.12676633557722
     },
     "bm-mm-full-buffs-raid": {
-     "before": 412.30631603762833,
-     "after": 445.47718780656066,
-     "base": 412.30631603762833,
+     "before": 438.6427727721855,
+     "after": 472.5497878890166,
+     "base": 438.6427727721855,
      "before_value": null,
      "after_value": null,
-     "oom_before": 72.44397845924179,
-     "oom_after": 67.56541336932904
+     "oom_before": 67.5276481802907,
+     "oom_after": 67.77303287883146
+    },
+    "sim preset: Marksmanship": {
+     "before": 416.781712214375,
+     "after": 453.9588483941908,
+     "base": 416.781712214375,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 88.44526282580686,
+     "oom_after": 88.58948171996188
+    },
+    "bm-mm-raid": {
+     "before": 443.39141941340046,
+     "after": 460.55103321784156,
+     "base": 443.39141941340046,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 51.81254332956906,
+     "oom_after": 53.455955834076555
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 9
+  "passes": 10
  },
  "raid": {
   "class": "hunter",
@@ -172,22 +186,27 @@
   "start": "ui\\specs\\hunter\\dps\\apls\\mm.apl.json",
   "builds": [
    {
-    "label": "bm-mm-raid",
-    "talents": "53200005041002-005355010150004"
-   },
-   {
-    "label": "sim preset: Beast Mastery 35/16/0",
-    "talents": "5520001505121251-0050551"
+    "label": "open winner",
+    "talents": "502-0053252501523051-5"
    },
    {
     "label": "bm-mm-full-buffs-raid",
     "talents": "53200005050001-005155000150305",
     "protect_only": true
+   },
+   {
+    "label": "sim preset: Marksmanship",
+    "talents": "5023000501-0050550501503051",
+    "protect_only": true
+   },
+   {
+    "label": "bm-mm-raid",
+    "talents": "53200005041002-005355010150004",
+    "protect_only": true
    }
   ],
   "tuned_on": [
-   "bm-mm-raid",
-   "sim preset: Beast Mastery 35/16/0"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -275,23 +294,14 @@
   ],
   "final": {
    "raid": {
-    "bm-mm-raid": {
-     "before": 785.5487446048759,
-     "after": 806.3808669232321,
-     "base": 785.5487446048759,
+    "open winner": {
+     "before": 820.7283164807822,
+     "after": 881.1267995643843,
+     "base": 820.7283164807822,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "sim preset: Beast Mastery 35/16/0": {
-     "before": 755.8228046883979,
-     "after": 770.1724670187727,
-     "base": 755.8228046883979,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
+     "oom_before": 5.3862329441110495,
+     "oom_after": 5.3862329441110495
     },
     "bm-mm-full-buffs-raid": {
      "before": 788.2987345014969,
@@ -301,10 +311,28 @@
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
+    },
+    "sim preset: Marksmanship": {
+     "before": 784.7440082222523,
+     "after": 844.9252702784448,
+     "base": 784.7440082222523,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 9.087768598693952,
+     "oom_after": 9.087768598693952
+    },
+    "bm-mm-raid": {
+     "before": 785.5487446048759,
+     "after": 806.3808669232321,
+     "base": 785.5487446048759,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 9
+  "passes": 10
  }
 }

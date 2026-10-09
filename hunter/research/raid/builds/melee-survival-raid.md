@@ -7,7 +7,7 @@
 | **Build** | 5/11/35 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70009 (2026-09-25 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70291 (2026-10-08 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -146,7 +146,7 @@ Damage by ability:
 
 ## Sources
 
-- <https://talentsforever.com/hunter/60/5-005005001-500230230250222151-4>
+- <https://talentsforever.com/hunter/60/5-005005001-500230230250222151-6>
 - <https://warcraftforever.games/talents/hunter>
 - <beta client 1.60.1.70009 tooltips (_reference/data/forever-talents/hunter.json)>
 - <hunter/raid/raidsim/melee-dps.md>
