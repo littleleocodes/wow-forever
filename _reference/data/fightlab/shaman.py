@@ -130,7 +130,7 @@ MECHANICS = {
     "Elemental Reach": "+6 yd Lightning Bolt (longer pulls)",
     "Lightning Overload": "3.3%/rank: a second half-damage Lightning Bolt",
     "Earthbound": "not used",
-    "Elemental Fury": "+20%/rank spell crit damage bonus",
+    "Elemental Fury": "spell and fire totem crit damage bonus +20% per rank of the 50% bonus (x2.0 at 5/5)",
     "Lava Burst": "Elemental: cast on cooldown (20% more damage on a Flame Shocked target: the 70291 tooltip; Wrath's guaranteed crit until 2026-10-09)",
     "Earth's Grasp": "+25%/rank Stoneclaw Totem health",
     "Thundering Strikes": "+1%/rank crit with spells and attacks",
@@ -359,7 +359,7 @@ class ShamanModule(BaseModule):
 
     def crit_damage_bonus(self, spell):
         if spell.kind in ("spell", "channel") or spell.name == "Searing Totem":
-            return self.tv("Elemental Fury", 0) / 100
+            return 0.5 * self.tv("Elemental Fury", 0) / 100   # 100% of a spell crit's 50% bonus: x2.0 (x2.5 until 2026-10-09)
         return 0.0
 
     def damage_multiplier(self, spell, frozen):

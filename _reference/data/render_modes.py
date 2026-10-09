@@ -404,9 +404,19 @@ def bname(cls, b):
         models = [m for m in list(lev) + [e for c, e in SM.RAID_ENTRY_TREES if c == cls] if rest.startswith(m + "-")]
         model = max(models, key=len) if models else None
         trees_ = (lev.get(model) if SM.mode_of(b) == "leveling" else SM.RAID_ENTRY_TREES.get((cls, model))) if model else None
-        if n in SM.trees(cls) or (trees_ and not SM.rotation_allows(spec, trees_)):
-            return f"{SM.spec_name(cls, spec)} (optimized)"
+        # 2026-10-09 (the class reviews): always the spec's name, never the scorer model's ("Two-handed Retribution", "Raid Frostbolt with
+        # Ice Lance on Fingers of Frost charges" had read as other specs); the weapon variant and the scenario keep two apart
+        prof = rest[len(model) + 1:] if model else ""
+        parts = [SM.RAID_ENTRY_VARIANT.get((cls, model), "").lower()] if model and SM.mode_of(b) != "leveling" else []
+        parts.append(OPT_PROFILE.get(prof, "") or ("tank" if prof == "raid-tank" and "Protection" not in spec else ""))   # the bear beside the cat
+        parts = [x for x in parts if x]
+        return f"{SM.spec_name(cls, spec)} (optimized{', ' + ', '.join(parts) if parts else ''})"
     return n
+
+
+# the scorer profile an optimizer build was exported for, as the pages say it (empty: the mode's main profile)
+OPT_PROFILE = {"raid-dps": "", "raid-tank": "", "raid-heal": "", "leveling-st": "", "parse": "parse", "raid-dps-extwc": "another mage's Winter's Chill",
+               "leveling-aoe": "AoE pulls", "solo-60": "solo at 60"}
 
 
 def link(cls, b, src):
@@ -483,6 +493,14 @@ def mode_section(cls, spec, mode, builds, nums, src):
             o += ["No leveling build for this spec yet.", ""]
         return o
     if not ranked:
+        if spec.startswith("Hybrid "):   # a split found in one mode only: point to where it has a build and to its two trees (2026-10-09)
+            word = SM.MODE_TITLE[mode].split(" (")[0].lower()
+            other = next((m for m in PAGE_MODES if m != mode), None)
+            own = [t for t in spec[len("Hybrid "):].split("/") if t in SM.trees(cls)]
+            o += [f"No {word} build of this split: the searches found {SM.spec_name(cls, spec)} for "
+                  f"[{SM.MODE_TITLE[other].split(' (')[0].lower()}](../{other}/{SM.spec_slug(cls, spec)}.md) only. "
+                  + (f"For {word}, play one of its trees: " + " or ".join(f"[{t}]({SM.spec_slug(cls, t)}.md)" for t in own) + "." if own else ""), ""]
+            return o
         return ["No build for this spec in this mode yet.", ""]
     top = ranked[0]
     o += [f"**{link(cls, top, src)}** ({rs.split_of(cls, rs.flat(top))}) — {tree_link(cls, top)}", ""]
@@ -677,6 +695,11 @@ def mode_section(cls, spec, mode, builds, nums, src):
     return o
 
 
+def gap_text(x):
+    """A gap behind the best: one decimal under 1% (a 0.3% gap had printed as "-0%")."""
+    return f"{x:+.1%}" if abs(x) < 0.01 else f"{x:+.0%}"
+
+
 def ranking(cls, g, specs, mode, nums, prefix=""):
     """One mode's specs, best first, as markdown lines. Leveling: level-weighted seconds per kill (fight lab, the same simulator for every
     spec, so specs compare). Raid: damage specs by training-dummy DPS, then tanks and healers (other jobs, their own measures). PvP: no
@@ -697,7 +720,7 @@ def ranking(cls, g, specs, mode, nums, prefix=""):
         best = scored[0][0]
         o += ["Ranked by time per kill in the fight lab (levels 20-60, higher levels count more; lower is faster):", "",
               "| # | Spec and build | Seconds per kill | Behind the fastest |", "|---|---|---|---|"]
-        o += [f"| {i} | {name(spec, b)} | {w:.0f} | {'fastest' if i == 1 else f'{w / best - 1:+.0%}'} |" for i, (w, spec, b) in enumerate(scored, 1)]
+        o += [f"| {i} | {name(spec, b)} | {w:.0f} | {'fastest' if i == 1 else gap_text(w / best - 1)} |" for i, (w, spec, b) in enumerate(scored, 1)]
         lv = [spec for spec in specs if not g[spec][mode] and SM.LEVEL_AS.get((cls, spec))]
         if lv:
             o += ["", "Healing and tanking specs level as a damage spec and switch at 60: "
@@ -718,14 +741,21 @@ def ranking(cls, g, specs, mode, nums, prefix=""):
             o += ["**Damage**, ranked by DPS in a full raid over a 3-minute fight (every raid buff and debuff: the group setting).", "",
                   "| # | Spec and build | Full raid DPS | Behind the best |", "|---|---|---|---|"]
             for i, (d, spec, b) in enumerate(dps, 1):
-                o.append(f"| {i} | {name(spec, b)} | {-d:.0f} | {'best' if i == 1 else f'{-d / best - 1:+.0%}'} |")
+                o.append(f"| {i} | {name(spec, b)} | {-d:.0f} | {'best' if i == 1 else gap_text(-d / best - 1)} |")
             o.append("")
+        for spec in specs:   # a spec whose pick is a damage build can hold the class's tank build too (the druid's bear in Feral Combat)
+            if any(s2 == spec for s2, _ in tanks):
+                continue
+            tb = [b for b in (g.get(spec) or {}).get(mode, []) if (R.get(b["id"]) or {}).get("tank")]
+            if tb:
+                tanks.append((spec, max(tb, key=lambda b: R[b["id"]].get("value") or 0)))
         if tanks:
             o += ["**Tanking**: " + ", ".join(name(spec, b) for spec, b in tanks) + ".", ""]
         if heals:
             heals.sort(key=lambda x: x[0])
-            o += ["**Healing**" + (" (ranked by the healer lab's capacity: the raid damage the healer keeps up with)" if len(heals) > 1 else "") + ": "
-                  + ", ".join(name(spec, b) + (f" ({-c:.2f})" if len(heals) > 1 and c else "") for c, spec, b in heals) + ".", ""]
+            o += ["**Healing**" + (" (ranked by the healer lab's capacity: the multiple of the lab's standard raid damage the healer keeps "
+                                   "up with)" if len(heals) > 1 else "") + ": "
+                  + ", ".join(name(spec, b) + (f" (capacity {-c:.2f})" if len(heals) > 1 and c else "") for c, spec, b in heals) + ".", ""]
     else:
         o += ["Not ranked: no simulator plays PvP, so there is nothing fair to rank on. The builds below rest on the talents' descriptions "
               "and the community's PvP builds.", ""]
@@ -776,7 +806,8 @@ def class_pages(cls):
     g = SM.grid(cls, list(B.values()))
     nums = (raid_numbers(cls), leveling_numbers(cls), healer_numbers(cls))
     g = own_rotation_only(cls, g, nums)
-    specs = SM.trees(cls) + sorted(s for s in g if s.startswith("Hybrid") and any(g[s].values()))
+    # a hybrid gets pages only with a build in a mode the pages show (2026-10-09: the paladin's Shockadin had pages from its PvP build alone)
+    specs = SM.trees(cls) + sorted(s for s in g if s.startswith("Hybrid") and any(g[s].get(m) for m in PAGE_MODES))
     rec = {m: recommended(cls, g, specs, m, nums) for m in SM.MODES}
     readme = ROOT / cls / "README.md"
     import shutil

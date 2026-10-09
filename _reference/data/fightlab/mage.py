@@ -1,7 +1,7 @@
 """Mage module for the fight lab.
 
 Spell ranks (damage, cost, cast, cooldown, chill, root, coefficient, burn) are read from
-`_reference/data/forever-spells/mage.json` (beta client build 1.60.1.70009); talent numbers are read from each rank's
+`_reference/data/forever-spells/mage.json` (the beta client build in forever-spells/); talent numbers are read from each rank's
 tooltip in `_reference/data/forever-talents/mage.json`. What a talent *does* (the mechanic) is coded here per talent;
 the numbers are the client's. Talents with no entry in MECHANICS are not simulated (listed by `not_simulated()`).
 
@@ -10,7 +10,7 @@ Playstyles:
   when it reaches melee, step back, Ice Lance / Frostbolt into the freeze, Fire Blast and wand to finish without
   overkill, Cone of Cold and Cold Snap as extra control, Ice Barrier before pulls.
 - `fire-leveling`: Fireball at range, Scorch and Fire Blast when the mob is close, Frost Nova / Blast Wave for
-  distance, Ice Lance into freezes if talented, Pyroblast on a full Hot Streak, Combustion on the pull.
+  distance, Ice Lance into freezes if talented, Pyroblast on a full Heating Up, Combustion on the pull.
 - `arcane-leveling` (2026-09-30, `decide_arcane`): Arcane Power and Presence of Mind on the pull, Arcane Blast stacked while the
   mana allows (each stack +10% to the next other spell, +175% to the next Arcane Blast's cost), Arcane Missiles as the channel
   (free and twice as fast on a Missile Barrage proc), Frost Nova / Cone of Cold and a step back when the mob reaches you, Ice Lance
@@ -46,7 +46,9 @@ AB_STACK = re.compile(r"other spells is increased by (\d+)% and the mana cost of
 TALENT_SPELLS = {"Ice Lance": "Ice Lance", "Ice Barrier": "Ice Barrier", "Cold Snap": "Cold Snap", "Ice Block": "Ice Block",
                  "Pyroblast": "Pyroblast", "Blast Wave": "Blast Wave"}
 DEFAULT_RANGE = {"Frost Nova": 10.0, "Cone of Cold": 10.0, "Arcane Explosion": 10.0, "Blast Wave": 10.0}
-ASSUMED_COEF = {"Ice Lance": 0.143, "Pyroblast": 1.0, "Blast Wave": 0.129}   # the client carries none; Classic-style values
+# the client carries none: Pyroblast and Blast Wave Classic-style values; Ice Lance 0.10, the community simulator's fit to beta combat logs
+# (2ce8265: hits of two level 20-26 mages at known spell power; 0.143 until 2026-10-09)
+ASSUMED_COEF = {"Ice Lance": 0.10, "Pyroblast": 1.0, "Blast Wave": 0.129}
 
 
 def _num(s):
@@ -155,13 +157,13 @@ MECHANICS = {
     "Improved Frostbolt": "Frostbolt cast time -0.1s per rank",
     "Improved Counterspell": "Counterspell also silences: +2/4 s lockout on a caster mob (tables.MOB_CASTER_SHARE of pulls)",
     "Elemental Precision": "+1% hit per rank with Frost and Fire spells",
-    "Ice Shards": "+20% Frost crit damage bonus per rank",
+    "Ice Shards": "Frost crit damage bonus +20% per rank of the 50% spell bonus (x2.0 at 5/5)",
     "Permafrost": "chill duration +11/22/33%, extra slow +3/6/10%",
     "Improved Frost Nova": "Frost Nova cooldown -2s per rank",
     "Frostbite": "each chill (Frostbolt, Cone of Cold, Ice Armor proc) has 5% per rank to freeze 5s",
     "Piercing Ice": "+2% Frost damage per rank",
     "Frost Channeling": "-5% Frost mana cost per rank",
-    "Ice Lance": "unlocks Ice Lance (ranks by level; x4 damage vs Frozen; coefficient assumed 0.143)",
+    "Ice Lance": "unlocks Ice Lance (ranks by level; x4 damage vs Frozen; coefficient 0.10, the simulator's fit to beta logs)",
     "Arctic Reach": "+10% Frostbolt range per rank (longer pull)",
     "Shatter": "+17/33/50% crit vs Frozen targets (Frost Nova, Frostbite, Fingers of Frost)",
     "Improved Cone of Cold": "+12/23/35% Cone of Cold damage",
@@ -189,12 +191,12 @@ MECHANICS = {
     "Ignite": "Fire crits burn for 8% per rank of the crit's damage over 4s",
     "Impact": "Fire spell hits have 3/7/10% chance to stun 2s (no movement, no swings)",
     "Burning Soul": "23%/rank chance to ignore pushback on Fire spells",
-    "Pyroblast": "unlocks Pyroblast (6s cast; ranks synthesised from Fireball); cast on a full Hot Streak",
-    "Improved Scorch": "33%/rank chance per Scorch to stack +3% Fire damage taken (5 stacks, 30s)",
-    "Hot Streak": "Fireball/Fire Blast/Scorch crits stack (3 = Pyroblast cast -75%), 20s",
+    "Pyroblast": "unlocks Pyroblast (6s cast; ranks synthesised from Fireball); cast on a full Heating Up",
+    "Improved Scorch": "Scorch's chance (the rank) to stack +3% Fire damage taken, up to 5 stacks at every rank, 30s",
+    "Heating Up": "Fireball/Fire Blast/Scorch crits stack (3 = Pyroblast cast -75%), 20s",
     "Critical Mass": "+2% Fire crit per rank",
     "Blast Wave": "unlocks Blast Wave (instant AoE, daze 50% 6s, 45s cooldown; ranks synthesised): a snare when the mob is on us",
-    "Combustion": "on the pull every 3 min: +10% Fire crit per Fire hit until 4 crits",
+    "Combustion": "on the pull every 3 min (shared with Presence of Mind): +10% Fire crit per Fire hit until 3 crits",
 }
 # Talent effects only the Arcane playstyle (spec strings starting with "arcane", decide_arcane, 2026-09-30) applies; the Frost, Fire
 # and Frostfire playstyles keep MECHANICS as it is (they never cast Arcane Blast or Arcane Missiles, so these are worth nothing there).
@@ -242,7 +244,7 @@ FIT = {"Improved Counterspell": "scale",
     "Fire Power": "scale",
     "Critical Mass": "scale",
     "Improved Scorch": "scale",
-    "Hot Streak": "scale",
+    "Heating Up": "scale",
     "Master of Elements": "scale",
     "Impact": "scale",
     "Burning Soul": "scale",
@@ -384,7 +386,7 @@ class MageModule(BaseModule):
         if spell.name in ("Fireball", "Frostfire Bolt"):
             c = max(GCD, c - 0.1 * self.rank("Improved Fireball"))
         if spell.name == "Pyroblast" and self._fight:
-            hs = self._fight.p.buff("Hot Streak", self._fight.t)
+            hs = self._fight.p.buff("Heating Up", self._fight.t)
             if hs:
                 c = max(GCD, c * (1 - 0.25 * hs["stacks"]))
         if c > 0 and self._fight and self._fight.p.buff("Presence of Mind", self._fight.t):
@@ -441,10 +443,12 @@ class MageModule(BaseModule):
         return c
 
     def crit_damage_bonus(self, spell):
+        # "increases the critical strike damage bonus of your Frost spells by 100%": 100% of a spell crit's 50% bonus, x2.0 at 5/5 (as the
+        # warlock's Ruin and the druid's Vengeance). Until 2026-10-09 the full rank value was added: x2.5 (found by the shaman's review)
         if self.sch(spell, "frost"):
-            return self.tv("Ice Shards", 0) / 100
+            return 0.5 * self.tv("Ice Shards", 0) / 100
         if self.sch(spell, "arcane"):
-            return self.tv("Arcane Mind", 1) / 100
+            return 0.5 * self.tv("Arcane Mind", 1) / 100
         return 0.0
 
     def damage_multiplier(self, spell, frozen):
@@ -515,12 +519,14 @@ class MageModule(BaseModule):
                 p.absorb, p.absorb_until = ib.absorb, t + 60.0
                 p.cooldowns["Ice Barrier"] = t + ib.cooldown
                 fight.note(f"Ice Barrier ({ib.absorb:.0f})")
-        if self.rank("Presence of Mind") and p.ready("Presence of Mind", t):
-            p.buffs["Presence of Mind"] = {"until": t + 60.0}
-            p.cooldowns["Presence of Mind"] = t + 180.0
+        # one 3-minute cooldown for both (client category 1151, the simulator since 2ce8265): a Fire model with Combustion uses it,
+        # anything else Presence of Mind
         if self.rank("Combustion") and p.ready("Combustion", t) and self.is_fire():
             p.buffs["Combustion"] = {"until": t + 120.0, "hits": 0, "crits": 0}
-            p.cooldowns["Combustion"] = t + 180.0
+            p.cooldowns["Combustion"] = p.cooldowns["Presence of Mind"] = t + 180.0
+        elif self.rank("Presence of Mind") and p.ready("Presence of Mind", t):
+            p.buffs["Presence of Mind"] = {"until": t + 60.0}
+            p.cooldowns["Presence of Mind"] = p.cooldowns["Combustion"] = t + 180.0
         if self.is_arcane():
             p.buffs.pop("Arcane Blast", None)   # stacks do not outlast the 8 s between fights
             if self.rank("Arcane Power") and p.ready("Arcane Power", t) and p.mana >= self.AP_MIN_MANA * p.mana_max:
@@ -548,6 +554,14 @@ class MageModule(BaseModule):
         return False
 
     def on_hit(self, fight, spell, amount, crit, frozen):
+        if amount > 0 and self.is_arcane() and self.rank("Missile Barrage") and spell.name in ("Arcane Blast", "Frostbolt", "Fireball", "Frostfire Bolt"):
+            chance = self.tv("Missile Barrage", 0) if spell.name == "Arcane Blast" else self.tv("Missile Barrage", 1)
+            if chance and fight.rng.random() < chance / 100:
+                fight.p.buffs["Missile Barrage"] = {"until": fight.t + 15.0}
+                fight.note("Missile Barrage")
+        self._on_hit(fight, spell, amount, crit, frozen)
+
+    def _on_hit(self, fight, spell, amount, crit, frozen):
         p, m, t, rng = fight.p, fight.m, fight.t, fight.rng
         if amount <= 0:
             return
@@ -564,23 +578,23 @@ class MageModule(BaseModule):
         if self.sch(spell, "fire"):
             if crit and self.rank("Ignite"):
                 fight.add_dot("Ignite", amount * self.tv("Ignite", 0) / 100, 2, 2.0)
-            if crit and self.rank("Hot Streak") and spell.name in ("Fireball", "Frostfire Bolt", "Fire Blast", "Scorch"):
-                b = p.buffs.get("Hot Streak")
+            if crit and self.rank("Heating Up") and spell.name in ("Fireball", "Frostfire Bolt", "Fire Blast", "Scorch"):   # Hot Streak until 70170
+                b = p.buffs.get("Heating Up")
                 stacks = min(3, (b["stacks"] if b and b["until"] > t else 0) + 1)
-                p.buffs["Hot Streak"] = {"until": t + 20.0, "stacks": stacks}
+                p.buffs["Heating Up"] = {"until": t + 20.0, "stacks": stacks}
             if self.rank("Impact") and rng.random() < self.tv("Impact", 0) / 100 and not m.frozen(t):
                 m.stun_until = t + 2.0
                 fight.note("Impact stun")
             if spell.name == "Scorch" and self.rank("Improved Scorch") and rng.random() < self.tv("Improved Scorch", 0) / 100:
                 b = m.debuffs.get("Improved Scorch")
-                stacks = min(max(1, self.rank("Winter's Chill")), (b["stacks"] if b and b["until"] > t else 0) + 1)   # 70009: stacks cap at the rank
+                stacks = min(5, (b["stacks"] if b and b["until"] > t else 0) + 1)   # 70291: "stacking up to 5 times" at every rank (it used Winter's Chill's rank until 2026-10-09)
                 m.debuffs["Improved Scorch"] = {"until": t + 30.0, "stacks": stacks}
             cb = p.buff("Combustion", t)
             if cb:
                 cb["hits"] += 1
                 if crit:
                     cb["crits"] += 1
-                    if cb["crits"] >= 4:
+                    if cb["crits"] >= 3:   # 70291: "until you have caused 3 non-periodic critical strikes" (4 in 70009)
                         del p.buffs["Combustion"]
 
     def on_tick(self, fight, spell, amount, crit):
@@ -607,8 +621,8 @@ class MageModule(BaseModule):
             p.cooldowns[spell.name] = t + cd
         if spell.cast > 0 and p.buff("Presence of Mind", t):
             del p.buffs["Presence of Mind"]
-        if spell.name == "Pyroblast" and p.buff("Hot Streak", t):
-            del p.buffs["Hot Streak"]
+        if spell.name == "Pyroblast" and p.buff("Heating Up", t):
+            del p.buffs["Heating Up"]
         if self.is_arcane():
             if spell.name == "Arcane Blast" and spell.ab_stack:
                 stacks = min(spell.ab_stack[2], self.ab_stacks(fight) + 1)
@@ -617,12 +631,7 @@ class MageModule(BaseModule):
                 p.buffs.pop("Arcane Blast", None)
             if spell.name == "Arcane Missiles":
                 p.buffs.pop("Missile Barrage", None)
-            elif self.rank("Missile Barrage"):
-                chance = self.tv("Missile Barrage", 0) if spell.name == "Arcane Blast" else (
-                    self.tv("Missile Barrage", 1) if spell.name in ("Frostbolt", "Fireball", "Frostfire Bolt") else 0.0)
-                if chance and fight.rng.random() < chance / 100:
-                    p.buffs["Missile Barrage"] = {"until": t + 15.0}
-                    fight.note("Missile Barrage")
+            # Missile Barrage rolls in on_hit: only a spell that lands procs it (2026-10-09; it rolled after every cast, misses too)
         if spell.name in ("Frost Nova", "Cone of Cold", "Blast Wave") and m.in_melee and m.hp > 0:
             if spell.name == "Frost Nova" and m.rooted(t):
                 fight.retreat_until = t + self.retreat_time()
@@ -844,7 +853,7 @@ class MageModule(BaseModule):
 
     def decide_frostfire(self, fight):
         """Frostfire Bolt (from level 40; Frostbolt before) as the bolt: it chills like Frostbolt and counts as Frost and Fire, so both
-        trees' talents apply. Finish with Fire Blast, Ice Lance or the wand; Pyroblast on a full Hot Streak; Frost Nova, Cone of Cold and
+        trees' talents apply. Finish with Fire Blast, Ice Lance or the wand; Pyroblast on a full Heating Up; Frost Nova, Cone of Cold and
         a step back when the mob reaches you; Ice Lance on a frozen mob."""
         p, m, t, in_melee, rooted, frozen, avg, can = self._common(fight)
         sp = self.spells
@@ -861,7 +870,7 @@ class MageModule(BaseModule):
             return lance
         if hp <= wand_hit * 1.5:
             return "wand"
-        hs = p.buff("Hot Streak", t)
+        hs = p.buff("Heating Up", t)
         if pyro and hs and hs["stacks"] >= 3 and can(pyro) and hp > avg(bolt) * 1.2:
             return pyro
         if in_melee and not rooted:
@@ -911,8 +920,8 @@ class MageModule(BaseModule):
             return scorch
         if hp <= wand_hit * 1.5:
             return "wand"
-        # a full Hot Streak: a 1.5s Pyroblast beats everything
-        hs = p.buff("Hot Streak", t)
+        # a full Heating Up: a 1.5s Pyroblast beats everything
+        hs = p.buff("Heating Up", t)
         if pyro and hs and hs["stacks"] >= 3 and can(pyro) and hp > avg(scorch) * 1.5 if scorch else False:
             return pyro
         # control when the mob is on us
