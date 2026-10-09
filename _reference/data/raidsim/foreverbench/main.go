@@ -247,6 +247,25 @@ func main() {
 		}
 	}
 	consumables := &proto.ConsumesSpec{}
+	// 2026-10-09: Forever lets temporary enchants stack with poisons, shaman imbues and the warlock's Firestone/Spellstone imbues; the
+	// simulator has one consumable enchant per hand, so "extraMhImbueId" / "extraOhImbueId" in the consumables go to the patched core
+	// through WOW_FOREVER_EXTRA_IMBUES (patches/forever/sim/core/forever_rules_patch.go foreverExtraImbues) and are removed here.
+	if len(cfg.Consumables) > 0 {
+		var raw map[string]json.RawMessage
+		if json.Unmarshal(cfg.Consumables, &raw) == nil {
+			var extra []string
+			for _, kv := range [][2]string{{"extraMhImbueId", "mh"}, {"extraOhImbueId", "oh"}} {
+				if v, ok := raw[kv[0]]; ok {
+					extra = append(extra, kv[1]+":"+strings.TrimSpace(string(v)))
+					delete(raw, kv[0])
+				}
+			}
+			if len(extra) > 0 {
+				os.Setenv("WOW_FOREVER_EXTRA_IMBUES", strings.Join(extra, ","))
+				cfg.Consumables, _ = json.Marshal(raw)
+			}
+		}
+	}
 	if len(cfg.Consumables) > 0 {
 		if err := unmarshal.Unmarshal(cfg.Consumables, consumables); err != nil {
 			die("bad consumables: %v", err)

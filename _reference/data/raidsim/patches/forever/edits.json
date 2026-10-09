@@ -76,5 +76,11 @@
   "replace": "\t\t\thunter.PseudoStats.DisableDWMissPenalty = true\n",
   "with": "\t\t\thunter.PseudoStats.DisableDWMissPenalty = foreverRaptorQueueHit() // wow-forever patch: no off-hand hit bonus while queued (patches/forever/sim/hunter/raptor_queue.go)\n",
   "why": "Forever removed the off-hand hit bonus of a queued Heroic Strike; we assume the same for Raptor Strike"
+ },
+ {
+  "file": "sim/core/consumes.go",
+  "after": "\tif consumables.OhImbueId != 0 {\n\t\tregisterStaticImbue(agent, consumables.OhImbueId, character.AutoAttacks.OH())\n\t}\n",
+  "insert": "\tforeverExtraImbues(agent) // wow-forever patch: a second temporary enchant per weapon, as Forever allows (patches/forever/sim/core/forever_rules_patch.go)\n",
+  "why": "Forever lets stones and oils stack with poisons, shaman imbues and the warlock's Firestone/Spellstone imbues"
  }
 ]
