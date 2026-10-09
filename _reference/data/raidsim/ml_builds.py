@@ -37,6 +37,22 @@ HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
 sys.path[:0] = [str(ROOT / "_reference/data"), str(HERE)]
 import gear_tables as GTAB  # noqa: E402
+
+
+def sim_of(r):
+    """The simulator commit a search record ran on: its own `commit` (ml_pipeline.py writes it since 2026-10-09), else the pin of the
+    record's date (40be98e until 2026-10-03, b0f0df3 until 2026-10-08, then setup.py's pin)."""
+    if r.get("commit"):
+        return r["commit"][:7]
+    d = r.get("date") or ""
+    if d < "2026-10-03":
+        return "40be98e"
+    if d < "2026-10-08":
+        return "b0f0df3"
+    import re as _re
+    t = (HERE / "setup.py").read_text(encoding="utf-8")
+    m = _re.search(r'"forever":\s*\{.*?"commit":\s*"([0-9a-f]{7})', t, _re.S)
+    return m.group(1) if m else "?"
 import paths  # noqa: E402
 import readme_sections as RS  # noqa: E402
 import render_start_here as RSH  # noqa: E402
@@ -175,7 +191,7 @@ def make_build(r):
                    f"{w['winner']['iterations']:,} fights; runner-up "
                    + (f"{ru['split']} ({w['gap_to_runner_up']:+.2%}; {differs_text(w)})" if ru and w.get("gap_to_runner_up") is not None else "none")
                    + f"; {w.get('simulated_builds') or 0:,} builds simulated; certificate: {cert_text(w)}.",
-                   "Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game "
+                   f"Simulator numbers are the community's model of the beta (ElliotWood/Forever {sim_of(r)} with this project's patches), not in-game "
                    "measurements; the talents are the simulator's answer for this gear and rotation."],
          "open_questions": [f"A machine-searched {name} build: check it against the community's {name} builds at launch."],
          "sources": ["https://github.com/ElliotWood/Forever"]}
@@ -459,7 +475,8 @@ def intro():
             "buff and debuff. 3-minute fights; each number is the winner's average over 100,000 fights (standard error about ±0.1 DPS; "
             "differences under 2-3% are within the model's assumptions). These numbers use each spec's own best gear, so they differ a little "
             "from the spec pages' ranking, which races every build in the project's standard set per spec. Simulations of the community's "
-            "model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements.")
+            "model of the beta (ElliotWood/Forever with this project's patches; each spec's record names the commit its search ran on), "
+            "not in-game measurements.")
 
 
 def write_rankings(classes):

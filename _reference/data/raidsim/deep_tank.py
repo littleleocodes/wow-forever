@@ -267,7 +267,7 @@ def report(cls, spec, entry, st):
          f"Talents and rotation were tuned in turns until neither moved, in the `{entry}` entry's raid setting and gear; the winner was checked "
          "against every build one or two talent moves away and raced against our tank builds over "
          f"{FINAL_FIGHTS:,} fights. Tank value: the raid-tank profile's weights on threat per second and on damage avoided, relative to the "
-         f"hand draft {st['ref']['build']} (1.000). The community simulator's model of the beta (ElliotWood/Forever 40be98e with this "
+         f"hand draft {st['ref']['build']} (1.000). The community simulator's model of the beta (ElliotWood/Forever {R.git_commit(R.repo_path(argparse.Namespace(repo=None)))} with this "
          "project's patches), not in-game measurements; it models no threat from other players, taunts or tank swaps.", "",
          f"**Winner:** [{w['split']}]({RSH.tf_link(cls, flat_of(w['allocation']))}), tank value {fin['deep winner']['value']:.4f} ± "
          f"{fin['deep winner']['se']:.4f}; cycles {len(st['cycles'])}" + (f" (converged in cycle {st['converged']})" if st.get("converged") else "")

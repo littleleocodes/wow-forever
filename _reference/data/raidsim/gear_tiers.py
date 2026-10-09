@@ -5,7 +5,7 @@ like WoWSims does").
 
 (ml_pipeline.py makes every spec's sets through `make`.)
 
-Two tiers, one item pool each (the simulator's item database, ElliotWood/Forever 40be98e):
+Two tiers, one item pool each (the simulator's item database at the pinned ElliotWood/Forever commit, raidsim/setup.py):
 - **bis** (phase 1): `gear_opt.py`'s pool: dungeons, Molten Core, Onyxia, world drops, crafted, quest; items with no listed source only
   when a community phase-0/1, launch or pre-raid preset uses them (the Forever launch items); no BWL, ZG, AQ, Naxxramas, world bosses
   or legendaries; the hunter's Molten Core quest bow and stave (Rhok'delar, Lok'delar) count.

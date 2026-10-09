@@ -512,16 +512,27 @@ def main_builds(cls, spec, entry, repo, trees, where=None):
     rep_path = paths.raidsim_dir(cls) / f"{spec}.json"
     tank = bool(entry.get("tank"))
     out = []
+    data = {b["id"]: b for b in json.load(open(ROOT / cls / "research/talents/forever/proposed-builds.json", encoding="utf-8"))["builds"]}
+    raid = (where or R.setting(entry)) == "raid"
     if rep_path.exists():
         rep = json.load(open(rep_path, encoding="utf-8"))
-        rows = [x for x in rep["results"] if x.get("dps") and not x.get("error") and not x["label"].startswith("cand-")]
-        keyf = (lambda x: x.get("value") or 0) if tank else (lambda x: x["dps"])
-        ours = sorted([x for x in rows if x["ours"]], key=lambda x: -keyf(x))
-        theirs = sorted([x for x in rows if not x["ours"]], key=lambda x: -keyf(x))
+        # 2026-10-09: only builds the entry still lists (the 70291 re-tune of the Frostfire raid rotation was tuned on frostfire-open-raid,
+        # removed days before but still in the last race's report, and missed a +1.0% to +2.4% change for every current build)
+        rows = [x for x in rep["results"] if x.get("dps") and not x.get("error") and not x["label"].startswith("cand-")
+                and (not x["ours"] or x["label"] in entry.get("builds", []))]
+        # the full-raid rotation is tuned on the best build in a full raid (the environments run's raid column, what the pages rank on),
+        # not on the training dummy's best (2026-10-09: the Frostfire dummy race had the old hand draft level with the 0/29/22 page pick,
+        # which leads it by 6% in a full raid)
+        env = paths.raidsim_dir(cls) / f"{spec}-environments.json"
+        rd = {}
+        if raid and not tank and env.exists():
+            rd = {x["label"]: (x.get("dps") or {}).get("raid") for x in json.load(open(env, encoding="utf-8")).get("results", [])}
+        keyf = (lambda x: (0, x.get("value") or 0)) if tank else (lambda x: (1, rd[x["label"]]) if rd.get(x["label"]) else (0, x["dps"]))
+        ours = sorted([x for x in rows if x["ours"]], key=keyf, reverse=True)
+        theirs = sorted([x for x in rows if not x["ours"]], key=keyf, reverse=True)
         for x in ours[:1] + theirs[:1]:
             if x.get("talents") and x["talents"] not in {b["talents"] for b in out}:
                 out.append({"label": x["label"], "talents": x["talents"]})
-    data = {b["id"]: b for b in json.load(open(ROOT / cls / "research/talents/forever/proposed-builds.json", encoding="utf-8"))["builds"]}
     if not out:
         for bid in entry["builds"][:1]:
             out.append({"label": bid, "talents": R.talents_string(trees, R.alloc_of(data[bid]))})
@@ -533,7 +544,6 @@ def main_builds(cls, spec, entry, repo, trees, where=None):
         t = R.talents_string(trees, R.alloc_of(data[bid]))
         if t not in {b["talents"] for b in out}:
             out.append({"label": bid, "talents": t, "protect_only": True})
-    raid = (where or R.setting(entry)) == "raid"
     for bid in entry.get("builds", []):   # every alternative the pages show is protected too
         if bid in data and (raid or not bid.endswith("-parse")):
             t = R.talents_string(trees, R.alloc_of(data[bid]))

@@ -92,6 +92,27 @@ SLOTS = ["Head", "Neck", "Shoulders", "Back", "Chest", "Wrist", "Hands", "Waist"
 RANKINGS = ROOT / "_reference" / "dps-rankings.md"
 
 
+# the simulator the pages' other numbers come from: beta 70291 (2ce8265) with the 2026-10-09 audit (Atiesh out of the full raid, the
+# downranking penalty, hit rules). Gear-tier records searched before it ran on older simulators (40be98e / b0f0df3, Atiesh in): flagged
+# (2026-10-09: the mage page ranked Arcane first in a full raid and last in its tier table)
+SIM_SINCE = "2026-10-09"
+
+
+def tier_date(r):
+    """The latest date of a record's tier searches (its own date when they carry none)."""
+    ds = [((r.get("search") or {}).get(f"{t}-{w}") or {}).get("date") for t, _ in TIER_KEYS for w in ("raid", "dummy")]
+    return max([d for d in ds if d] or [r.get("date") or ""])
+
+
+def tier_stale_note(dates):
+    old = sorted({d for d in dates if d and d < SIM_SINCE})
+    if not old:
+        return []
+    return [f"*Gear-tier numbers searched on {', '.join(old)}, on an older simulator build than the rest of this page (before beta "
+            f"70291 and the 2026-10-09 audit that took Atiesh out of the full raid): they run 3-7% high and can order the specs "
+            f"differently than the full-raid ranking. The searches are queued to run again.*", ""]
+
+
 def tier_dps(r, k):
     w = ((r.get("search") or {}).get(k) or {}).get("winner")
     return f"{w['dps']:.0f}" if w else "-"
@@ -122,6 +143,8 @@ def tier_lines(cls, spec, src, top):
     o.append("")
     if r.get("_prev"):
         o += [f"*From the search run of {r.get('date', 'an earlier date')}; a new run is queued and will replace these numbers.*", ""]
+    else:
+        o += tier_stale_note([tier_date(r)])
     gt = gear_tables.table(cls, spec)   # every item and enchant linked to Wowhead, where it drops (raidsim/gear_links.py)
     if gt:
         il = "; ".join(f"{name} {((r.get('gear') or {}).get(t) or {}).get('ilvl', '-')}" for t, name in TIER_KEYS if (r.get("gear") or {}).get(t))
@@ -148,7 +171,7 @@ def tier_table(cls, specs, src):
          f"[every class]({paths.rel(src, RANKINGS)})):", "", "| Spec | Pre-BiS | Phase 1 BiS |", "|---|---|---|"]
     for spec, r in rows:
         o.append(f"| [{SM.spec_name(cls, spec)}]({SM.spec_slug(cls, spec)}.md) | {tier_dps(r, 'prebis-raid')} | {tier_dps(r, 'bis-raid')} |")
-    return o + [""]
+    return o + [""] + tier_stale_note([tier_date(r) for _, r in rows])
 
 
 def mark(b):

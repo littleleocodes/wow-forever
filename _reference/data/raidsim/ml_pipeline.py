@@ -86,6 +86,11 @@ def load(cls, spec):
 
 
 def save(rec):
+    if not rec.get("commit"):   # the simulator commit the search runs on (2026-10-09: records had none, so pages could not date them)
+        try:
+            rec["commit"] = R.git_commit(R.repo_path(argparse.Namespace(repo=None)))
+        except Exception:   # noqa: BLE001 - a record without a commit falls back to its date (ml_builds.sim_of)
+            pass
     p = rec_path(rec["class"], rec["spec"])
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps(rec, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")

@@ -131,7 +131,7 @@ MECHANICS = {
     "Lightning Overload": "3.3%/rank: a second half-damage Lightning Bolt",
     "Earthbound": "not used",
     "Elemental Fury": "+20%/rank spell crit damage bonus",
-    "Lava Burst": "Elemental: cast on cooldown (a guaranteed crit on a Flame Shocked target)",
+    "Lava Burst": "Elemental: cast on cooldown (20% more damage on a Flame Shocked target: the 70291 tooltip; Wrath's guaranteed crit until 2026-10-09)",
     "Earth's Grasp": "+25%/rank Stoneclaw Totem health",
     "Thundering Strikes": "+1%/rank crit with spells and attacks",
     "Ancestral Knowledge": "+2%/rank Intellect",
@@ -195,6 +195,24 @@ PIPELINE = {"variants": [{'spec': 'enhancement-dps', 'opt': 'opt-enhancement-dps
                            'levels': '20,30,40,50,60', 'calibrate_levels': '30,60', 'label': 'Elemental (its own rotation)', 'report': 'elemental-dps-opt'}], "spec": "enhancement-dps", "hand": "leveling-enhancement", "opt": "opt-enhancement-dps-leveling-st", "tag": "enh", "lookahead": 16,
             "levels": "20,30,40,50,60", "calibrate_levels": "30,60",
             "extra_reports": [{"spec": "elemental-dps", "build": "opt-elemental-dps-leveling-st", "compare": ["opt-enhancement-dps-leveling-st"]}]}
+
+
+def _lava_burst_flame_shock():
+    """Lava Burst's bonus on a Flame Shocked target, from the beta spellbook ("Lava Burst deals 20% increased damage")."""
+    import json
+    import pathlib
+    import re
+    book = json.load(open(pathlib.Path(__file__).resolve().parent.parent / "forever-spells" / "shaman.json", encoding="utf-8"))
+    for tab in book["tabs"]:
+        for sp in tab["spells"]:
+            if sp["name"] == "Lava Burst":
+                m = re.search(r"Lava Burst deals (\d+)% increased damage", sp["ranks"][-1].get("text") or "")
+                if m:
+                    return float(m.group(1))
+    return 20.0
+
+
+LAVA_BURST_FLAME_SHOCK = _lava_burst_flame_shock()
 
 
 class ShamanModule(BaseModule):
@@ -330,13 +348,7 @@ class ShamanModule(BaseModule):
     def hit_bonus(self, spell):
         return 0.0
 
-    def _lava_burst_crit(self, spell):
-        f = self._fight
-        return 1.0 if (spell.name == "Lava Burst" and f is not None and f.dot_active("Flame Shock")) else 0.0
-
     def crit_bonus(self, spell, frozen):
-        if spell.name == "Lava Burst":
-            return self._lava_burst_crit(spell)
         c = 0.0
         f = self._fight
         if spell.name in ("Lightning Bolt", "Chain Lightning"):
@@ -357,8 +369,10 @@ class ShamanModule(BaseModule):
             m *= 1 + self.tv("Concussion", 0) / 100
             if f and f.p.buff("Stormstrike", f.t):
                 m *= 1.20
-        if spell.name in ("Flame Shock", "Searing Totem", "Magma Totem", "Fire Nova"):
+        if spell.name in ("Flame Shock", "Searing Totem", "Magma Totem", "Fire Nova", "Lava Burst"):   # Call of Flame names Lava Burst
             m *= 1 + self.tv("Call of Flame", 0) / 100
+        if spell.name == "Lava Burst" and f is not None and f.dot_active("Flame Shock"):
+            m *= 1 + LAVA_BURST_FLAME_SHOCK / 100
         if spell.name == "Lightning Shield":
             m *= 1 + self.tv("Improved Lightning Shield", 0) / 100
         return m

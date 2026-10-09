@@ -72,7 +72,8 @@ def sim_line(cls, spec_name, raid_first=True):
         return ""
     parts = []
     for t in ("prebis", "bis"):
-        links = [f"[{lab}]({s['sim'][f'{t}-{st}']})" for st, lab in (("raid", "full raid"), ("dummy", "training dummy")) if s["sim"].get(f"{t}-{st}")]
+        # the full raid only: the player pages show no training-dummy setting since 2026-10-04 (user decision: raid and leveling only)
+        links = [f"[{lab}]({s['sim'][f'{t}-{st}']})" for st, lab in (("raid", "full raid"),) if s["sim"].get(f"{t}-{st}")]
         if links:
             parts.append(f"{TIER_NAME[t]}: " + " · ".join(links))
     return ("**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, "

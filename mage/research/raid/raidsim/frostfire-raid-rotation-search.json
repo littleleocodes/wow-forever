@@ -225,8 +225,8 @@
   "start": "_reference\\data\\raidsim\\apls\\mage\\frostfire-raid.base.apl.json",
   "builds": [
    {
-    "label": "frostfire-open-raid",
-    "talents": "003-23550000130133051-005500033"
+    "label": "frostfire-fingers-of-frost-raid",
+    "talents": "-0355100013013304-00550003310003002"
    },
    {
     "label": "frostfire-raid",
@@ -237,15 +237,10 @@
     "label": "frostfire-ml-raid",
     "talents": "004-10452131130103051-005500033",
     "protect_only": true
-   },
-   {
-    "label": "frostfire-fingers-of-frost-raid",
-    "talents": "-0355100013013304-00550003310003002",
-    "protect_only": true
    }
   ],
   "tuned_on": [
-   "frostfire-open-raid"
+   "frostfire-fingers-of-frost-raid"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -409,49 +404,56 @@
     "gain_seed2": 0.001585489634029713,
     "candidates": 342,
     "pass": 8
+   },
+   {
+    "round": 21,
+    "change": "rank 2 below 30% mana, above: if mana % \u2265 10%: cast Frostfire Bolt",
+    "gain_seed1": 0.014693014111169633,
+    "gain_seed2": 0.013676532559411259,
+    "candidates": 369,
+    "pass": 12
+   },
+   {
+    "round": 22,
+    "change": "drop 'mana % \u2265 10%' from the condition: if mana % \u2265 10% and mana % < 30%: cast Frostfire Bolt",
+    "gain_seed1": 0.0077474588579018455,
+    "gain_seed2": 0.008666293372777467,
+    "candidates": 398,
+    "pass": 12
    }
   ],
   "final": {
    "raid": {
-    "frostfire-open-raid": {
-     "before": 670.867518570984,
-     "after": 636.9369890188163,
-     "base": 670.867518570984,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 1.4278540499853478,
-     "oom_after": 1.4278540499853478
-    },
-    "frostfire-raid": {
-     "before": 613.2103614165908,
-     "after": 628.8186078072071,
-     "base": 613.2103614165908,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.10113099999225002,
-     "oom_after": 0.10113099999225002
-    },
-    "frostfire-ml-raid": {
-     "before": 622.8555770509748,
-     "after": 593.1579925550142,
-     "base": 622.8555770509748,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 1.3546425999081548,
-     "oom_after": 1.3546425999081548
-    },
     "frostfire-fingers-of-frost-raid": {
      "before": 678.0803309359433,
-     "after": 663.7707452969851,
+     "after": 678.9092827915829,
      "base": 678.0803309359433,
      "before_value": null,
      "after_value": null,
      "oom_before": 0.2822627499916498,
-     "oom_after": 0.2822627499916498
+     "oom_after": 0.15419319999499995
+    },
+    "frostfire-raid": {
+     "before": 613.2103614165908,
+     "after": 632.6962248987754,
+     "base": 613.2103614165908,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.10113099999225002,
+     "oom_after": 0.025185099998500004
+    },
+    "frostfire-ml-raid": {
+     "before": 622.8555770509748,
+     "after": 608.6485996039206,
+     "base": 622.8555770509748,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 1.3546425999081548,
+     "oom_after": 0.354265799949049
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 11
+  "passes": 12
  }
 }

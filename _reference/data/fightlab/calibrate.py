@@ -41,6 +41,7 @@ sys.path.insert(0, str(ROOT / "_reference/data/scorer"))
 sys.path.insert(0, str(HERE))   # last so that `run` is the fight lab runner, not the scorer's
 sys.path.append(str(pathlib.Path(__file__).resolve().parents[1]))   # _reference/data: paths.py
 import paths  # noqa: E402
+from data_build import BUILD as DATA_BUILD  # noqa: E402
 import splitfx  # noqa: E402  (scorer/splitfx.py: the shared split of effect entries)
 
 from run import MODULES, allocation_at, apply_overrides, load_build, simulate  # noqa: E402
@@ -206,7 +207,7 @@ def main():
     model["fight_coupling"] = collections.OrderedDict((pid, alpha) for pid in LEVELING_MODES)
     print(f"fight coupling alpha = {alpha} (median of {len(alphas)} removal experiments: {', '.join(f'{x:.2f}' for x in alphas)})")
     model["note"] = model.get("note", "").split(" Fight lab calibration")[0] + (
-        f" Fight lab calibration ({datetime.date.today().isoformat()}, beta client 1.60.1.70009, build {pathlib.Path(share_bid).stem} at level {top}, {a.fights} fights): shares are the measured damage split "
+        f" Fight lab calibration ({datetime.date.today().isoformat()}, beta client {DATA_BUILD}, build {pathlib.Path(share_bid).stem} at level {top}, {a.fights} fights): shares are the measured damage split "
         f"({', '.join(f'{k} {v * 100:.0f}%' for k, v in shares.items())}) and the leveling time split is fight {split['fight']:.0%} / drink {split['drink']:.0%} / eat {split['eat']:.0%} / other {split['other']:.0%} / death {split['death']:.0%} "
         f"of talent-affected time with fight_coupling {alpha} (downtime and deaths scale with fight length)."
         + (" Ice Lance is a source so Frost crit/damage talents scale with the Frozen-target loop." if a.cls == "mage" else ""))
