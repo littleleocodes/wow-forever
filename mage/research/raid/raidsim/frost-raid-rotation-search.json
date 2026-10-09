@@ -156,7 +156,7 @@
  "raid": {
   "class": "mage",
   "spec": "frost-raid",
-  "date": "2026-10-08",
+  "date": "2026-10-09",
   "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
@@ -224,63 +224,63 @@
   "final": {
    "raid": {
     "frost-ml-raid": {
-     "before": 698.377396367114,
-     "after": 708.1160716212102,
-     "base": 698.377396367114,
+     "before": 673.1081191923093,
+     "after": 682.8990117216208,
+     "base": 673.1081191923093,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Frost DPS": {
-     "before": 655.4813581581386,
-     "after": 659.7107728909641,
-     "base": 655.4813581581386,
+     "before": 631.3290933204299,
+     "after": 635.4592479873623,
+     "base": 631.3290933204299,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "frost-arcane-power-raid": {
-     "before": 673.0656501423624,
-     "after": 676.881624479465,
-     "base": 673.0656501423624,
+     "before": 646.4020384817271,
+     "after": 650.1533989148411,
+     "base": 646.4020384817271,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "frost-winters-chill-raid": {
-     "before": 640.4779214507123,
-     "after": 644.1730624764833,
-     "base": 640.4779214507123,
+     "before": 615.9537296742981,
+     "after": 619.5440986041593,
+     "base": 615.9537296742981,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "frost-fingers-of-frost-raid": {
-     "before": 694.2029073807507,
-     "after": 705.7268708026542,
-     "base": 694.2029073807507,
+     "before": 668.948829659896,
+     "after": 680.1545915806853,
+     "base": 668.948829659896,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "opt-frost-raid-raid-dps": {
-     "before": 694.3565917244922,
-     "after": 705.7626648867032,
-     "base": 694.3565917244922,
+     "before": 669.0224100592466,
+     "after": 680.312872661107,
+     "base": 669.0224100592466,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "opt-frost-raid-raid-dps-extwc": {
-     "before": 670.2026389309592,
-     "after": 674.5658348858727,
-     "base": 670.2026389309592,
+     "before": 645.3370993373314,
+     "after": 649.5925589516941,
+     "base": 645.3370993373314,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -289,6 +289,6 @@
    }
   },
   "first_date": "2026-10-02",
-  "passes": 2
+  "passes": 3
  }
 }

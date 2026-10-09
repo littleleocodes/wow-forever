@@ -78,13 +78,31 @@
  "raid": {
   "class": "warlock",
   "spec": "fire-destro-raid",
-  "date": "2026-10-01",
-  "commit": "40be98e",
+  "date": "2026-10-09",
+  "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/warlock/dps/apls/destruction.apl.json",
   "start": "ui\\specs\\warlock\\dps\\apls\\destruction.apl.json",
-  "builds": [],
+  "builds": [
+   {
+    "label": "destruction-fire-raid",
+    "talents": "25500010135-0050203001-0550004103"
+   },
+   {
+    "label": "sim preset: DS/Ruin Pandemic 24/11/16",
+    "talents": "25220010135201-0025003001-05500051"
+   },
+   {
+    "label": "opt-fire-destro-raid-raid-dps",
+    "talents": "253-0050203001-055030510310025",
+    "protect_only": true
+   }
+  ],
+  "tuned_on": [
+   "destruction-fire-raid",
+   "sim preset: DS/Ruin Pandemic 24/11/16"
+  ],
   "iterations": 3000,
   "confirm": 20000,
   "changes": [
@@ -119,12 +137,56 @@
     "gain_seed2": 0.0823,
     "candidates": 4,
     "pass": 4
+   },
+   {
+    "round": 5,
+    "change": "insert before the filler: cast Talisman of Ephemeral Power",
+    "gain_seed1": 0.008712247324377032,
+    "gain_seed2": 0.008678688591401862,
+    "candidates": 474,
+    "pass": 5
+   },
+   {
+    "round": 6,
+    "change": "insert before the filler: cast Eureka!",
+    "gain_seed1": 0.0017659441923894015,
+    "gain_seed2": 0.0016232716643505007,
+    "candidates": 481,
+    "pass": 5
    }
   ],
   "final": {
-   "raid": {}
+   "raid": {
+    "destruction-fire-raid": {
+     "before": 669.3993097124232,
+     "after": 670.8787085571474,
+     "base": 669.3993097124232,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 4.054525,
+     "oom_after": 4.054525
+    },
+    "sim preset: DS/Ruin Pandemic 24/11/16": {
+     "before": 640.3177700240482,
+     "after": 641.4100261489316,
+     "base": 640.3177700240482,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 2.8396,
+     "oom_after": 2.8396
+    },
+    "opt-fire-destro-raid-raid-dps": {
+     "before": 643.6434988280931,
+     "after": 670.776850991637,
+     "base": 643.6434988280931,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 5.052075,
+     "oom_after": 5.052075
+    }
+   }
   },
   "first_date": "2026-09-27",
-  "passes": 4
+  "passes": 6
  }
 }

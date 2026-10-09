@@ -196,7 +196,7 @@
  "raid": {
   "class": "priest",
   "spec": "smite-dps",
-  "date": "2026-10-08",
+  "date": "2026-10-09",
   "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
@@ -407,40 +407,64 @@
     "gain_seed2": 0.0022042422474219947,
     "candidates": 478,
     "pass": 8
+   },
+   {
+    "round": 24,
+    "change": "drop: cast Smite",
+    "gain_seed1": 0.033304684254400474,
+    "gain_seed2": 0.03398506984454386,
+    "candidates": 478,
+    "pass": 9
+   },
+   {
+    "round": 25,
+    "change": "drop the condition: if mana % \u2265 80%: cast Smite",
+    "gain_seed1": 0.04936968217251536,
+    "gain_seed2": 0.04890763682957533,
+    "candidates": 467,
+    "pass": 9
+   },
+   {
+    "round": 26,
+    "change": "drop: cast Devouring Plague",
+    "gain_seed1": 0.020352679139143515,
+    "gain_seed2": 0.0202751059633417,
+    "candidates": 460,
+    "pass": 9
    }
   ],
   "final": {
    "raid": {
     "smite-open-raid": {
-     "before": 585.8304375479003,
-     "after": 618.4297284737352,
-     "base": 585.8304375479003,
+     "before": 562.2202248239579,
+     "after": 583.1941074727021,
+     "base": 562.2202248239579,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.7496547499744987,
-     "oom_after": 1.719057849994559
+     "oom_before": 2.4205037499887707,
+     "oom_after": 5.49743739999771
     },
     "sim preset: Smite": {
-     "before": 578.5418481442192,
-     "after": 602.5779349055495,
-     "base": 578.5418481442192,
+     "before": 558.6040606439518,
+     "after": 580.2752948502815,
+     "base": 558.6040606439518,
      "before_value": null,
      "after_value": null,
-     "oom_before": 3.411166399647501,
-     "oom_after": 3.9591047999912887
+     "oom_before": 6.592752849994217,
+     "oom_after": 5.137796399972488
     },
     "smite-discipline-raid": {
-     "before": 580.6787179032099,
-     "after": 608.0568269736398,
-     "base": 580.6787179032099,
+     "before": 560.8873030488282,
+     "after": 584.2471131890661,
+     "base": 560.8873030488282,
      "before_value": null,
      "after_value": null,
-     "oom_before": 3.079112499632597,
-     "oom_after": 2.959270099992418
+     "oom_before": 5.4675970499952005,
+     "oom_after": 4.589873749981542
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 8
+  "passes": 9
  }
 }

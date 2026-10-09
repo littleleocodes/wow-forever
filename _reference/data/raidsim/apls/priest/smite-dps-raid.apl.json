@@ -177,17 +177,6 @@
    "action": {
     "castSpell": {
      "spellId": {
-      "spellId": 19280,
-      "rank": 6
-     }
-    }
-   },
-   "notes": "apl_opt 2026-10-08: changed or added by the rotation search (see smite-dps-rotation-search.json)"
-  },
-  {
-   "action": {
-    "castSpell": {
-     "spellId": {
       "spellId": 10060
      }
     }
@@ -196,19 +185,6 @@
   },
   {
    "action": {
-    "condition": {
-     "cmp": {
-      "op": "OpGe",
-      "lhs": {
-       "currentManaPercent": {}
-      },
-      "rhs": {
-       "const": {
-        "val": "80%"
-       }
-      }
-     }
-    },
     "castSpell": {
      "spellId": {
       "spellId": 10934,
@@ -216,7 +192,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-10-08: changed or added by the rotation search (see smite-dps-rotation-search.json)"
+   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see smite-dps-rotation-search.json)"
   },
   {
    "action": {
@@ -348,17 +324,6 @@
      }
     }
    }
-  },
-  {
-   "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 591,
-      "rank": 2
-     }
-    }
-   },
-   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see smite-dps-rotation-search.json)"
   },
   {
    "action": {

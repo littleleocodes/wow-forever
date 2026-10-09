@@ -144,18 +144,13 @@
  "raid": {
   "class": "warlock",
   "spec": "demonology-raid",
-  "date": "2026-10-02",
-  "commit": "40be98e",
+  "date": "2026-10-09",
+  "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/warlock/dps/apls/demonic_pact.apl.json",
   "start": "ui\\specs\\warlock\\dps\\apls\\demonic_pact.apl.json",
   "builds": [
-   {
-    "label": "ml: Demonology",
-    "talents": "101-0115003031220301351-0550005003",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-demonology-bis.gear.json"
-   },
    {
     "label": "demonology-pact-raid",
     "talents": "101-0035003021220301351-0550005003"
@@ -163,7 +158,16 @@
    {
     "label": "sim preset: Demonic Pact 2/31/18",
     "talents": "113-0005003221220311351-0550005"
+   },
+   {
+    "label": "demonology-ml-raid",
+    "talents": "011-0025003031220301351-0550005003",
+    "protect_only": true
    }
+  ],
+  "tuned_on": [
+   "demonology-pact-raid",
+   "sim preset: Demonic Pact 2/31/18"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -207,40 +211,56 @@
     "gain_seed2": 0.0016819245802168759,
     "candidates": 459,
     "pass": 5
+   },
+   {
+    "round": 6,
+    "change": "insert before the filler: cast Talisman of Ephemeral Power",
+    "gain_seed1": 0.004476935608792587,
+    "gain_seed2": 0.004085925171022131,
+    "candidates": 475,
+    "pass": 6
+   },
+   {
+    "round": 7,
+    "change": "insert before the filler: cast Eureka!",
+    "gain_seed1": 0.0017952699486418755,
+    "gain_seed2": 0.001527196561108335,
+    "candidates": 482,
+    "pass": 6
    }
   ],
   "final": {
    "raid": {
-    "ml: Demonology": {
-     "before": 825.0043976675433,
-     "after": 832.0633239228902,
-     "base": 825.0043976675433,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 1.7957549999999995,
-     "oom_after": 1.4790749999999984
-    },
     "demonology-pact-raid": {
-     "before": 825.146322990072,
-     "after": 831.4014032597354,
-     "base": 825.146322990072,
+     "before": 809.5173237115171,
+     "after": 804.5305120885653,
+     "base": 809.5173237115171,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.7638149999999992,
-     "oom_after": 1.4874949999999987
+     "oom_before": 1.4093349999999982,
+     "oom_after": 1.4093349999999982
     },
     "sim preset: Demonic Pact 2/31/18": {
-     "before": 795.0031721064315,
-     "after": 801.4656657421758,
-     "base": 795.0031721064315,
+     "before": 782.1694885407472,
+     "after": 776.1059193619934,
+     "base": 782.1694885407472,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.5887,
-     "oom_after": 1.4905249999999999
+     "oom_before": 1.379275,
+     "oom_after": 1.379275
+    },
+    "demonology-ml-raid": {
+     "before": 814.7905339624275,
+     "after": 809.6349908691056,
+     "base": 814.7905339624275,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 1.6204849999999968,
+     "oom_after": 1.6204849999999968
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 5
+  "passes": 7
  }
 }

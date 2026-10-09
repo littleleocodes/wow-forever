@@ -120,7 +120,7 @@
  "raid": {
   "class": "mage",
   "spec": "arcane-dps",
-  "date": "2026-10-08",
+  "date": "2026-10-09",
   "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
@@ -227,26 +227,26 @@
   "final": {
    "raid": {
     "arcane-blast-raid": {
-     "before": 705.7185813273295,
-     "after": 721.5045927250687,
-     "base": 705.7185813273295,
+     "before": 678.6526653519228,
+     "after": 693.6861373704097,
+     "base": 678.6526653519228,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0.2530255500000001
+     "oom_before": 0.29020239999999997,
+     "oom_after": 0.29020239999999997
     },
     "sim preset: Arcane DPS": {
-     "before": 699.6232895331487,
-     "after": 714.8584623090453,
-     "base": 699.6232895331487,
+     "before": 672.7792420627754,
+     "after": 687.2470737491462,
+     "base": 672.7792420627754,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0.20768780000000003
+     "oom_before": 0.24109225,
+     "oom_after": 0.24109225
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 6
+  "passes": 7
  }
 }

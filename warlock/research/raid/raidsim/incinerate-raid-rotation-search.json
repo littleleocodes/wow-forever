@@ -34,31 +34,77 @@
  "raid": {
   "class": "warlock",
   "spec": "incinerate-raid",
-  "date": "2026-09-29",
-  "commit": "40be98e",
+  "date": "2026-10-09",
+  "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/apls/warlock/incinerate-raid.base.apl.json",
-  "start": "_reference/data/raidsim/apls/warlock/incinerate-raid.base.apl.json",
+  "start": "_reference\\data\\raidsim\\apls\\warlock\\incinerate-raid-raid.apl.json",
   "builds": [
    {
     "label": "destruction-incinerate-raid",
-    "talents": "153-0025003001-0050245103101351"
+    "talents": "153-0050203001-0050245103101351"
    }
+  ],
+  "tuned_on": [
+   "destruction-incinerate-raid"
   ],
   "iterations": 3000,
   "confirm": 20000,
-  "changes": [],
+  "changes": [
+   {
+    "round": 1,
+    "change": "insert before the filler: cast Shadowburn",
+    "gain_seed1": 0.07004988782843169,
+    "gain_seed2": 0.06902413514056449,
+    "candidates": 479
+   },
+   {
+    "round": 2,
+    "change": "insert before the filler: cast Shadow Bolt",
+    "gain_seed1": 0.016427069586646637,
+    "gain_seed2": 0.017858005255213305,
+    "candidates": 489
+   },
+   {
+    "round": 3,
+    "change": "insert at the top: if time left on Immolate \u2264 cast time of Immolate: cast Immolate",
+    "gain_seed1": 0.005989240251133676,
+    "gain_seed2": 0.004201367830458214,
+    "candidates": 508
+   },
+   {
+    "round": 4,
+    "change": "move to the top: if not Curse of the Elements is up: cast Curse of the Elements",
+    "gain_seed1": 0.0015012327704500006,
+    "gain_seed2": 0.00475914510233566,
+    "candidates": 528
+   },
+   {
+    "round": 5,
+    "change": "move to the top: if time left on Corruption \u2264 cast time of Corruption: cast Corruption",
+    "gain_seed1": 0.005585005972508439,
+    "gain_seed2": 0.003071207729804515,
+    "candidates": 528
+   },
+   {
+    "round": 6,
+    "change": "only with 10s or more of the fight left: cast Shadowburn",
+    "gain_seed1": 0.002237343175919726,
+    "gain_seed2": 0.0020273246171607084,
+    "candidates": 528
+   }
+  ],
   "final": {
    "raid": {
     "destruction-incinerate-raid": {
-     "before": 560.1394290207288,
-     "after": 560.1394290207288,
-     "base": 560.1394290207288,
+     "before": 597.6479913826806,
+     "after": 659.5031196136566,
+     "base": 597.6479913826806,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.20127499999999998,
-     "oom_after": 0.20127499999999998
+     "oom_before": 0.389125,
+     "oom_after": 1.07915
     }
    }
   }

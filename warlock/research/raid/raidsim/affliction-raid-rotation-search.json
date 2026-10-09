@@ -96,18 +96,13 @@
  "raid": {
   "class": "warlock",
   "spec": "affliction-raid",
-  "date": "2026-10-02",
-  "commit": "40be98e",
+  "date": "2026-10-09",
+  "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/warlock/dps/apls/affliction.apl.json",
   "start": "ui\\specs\\warlock\\dps\\apls\\affliction.apl.json",
   "builds": [
-   {
-    "label": "ml: Affliction",
-    "talents": "2525002013500005--0550305003",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-affliction-bis.gear.json"
-   },
    {
     "label": "opt-affliction-raid-raid-dps",
     "talents": "2552002013500005--0550305003"
@@ -115,7 +110,16 @@
    {
     "label": "sim preset: Demonic Pact 2/31/18",
     "talents": "113-0005003221220311351-0550005"
+   },
+   {
+    "label": "affliction-dot-raid",
+    "talents": "2550002013520005--0550035003",
+    "protect_only": true
    }
+  ],
+  "tuned_on": [
+   "opt-affliction-raid-raid-dps",
+   "sim preset: Demonic Pact 2/31/18"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -135,40 +139,64 @@
     "gain_seed2": 0.0022188738958281995,
     "candidates": 306,
     "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "insert before the filler: cast Talisman of Ephemeral Power",
+    "gain_seed1": 0.0040061498300145715,
+    "gain_seed2": 0.003919768341220653,
+    "candidates": 495,
+    "pass": 5
+   },
+   {
+    "round": 4,
+    "change": "only above 25% mana: cast Talisman of Ephemeral Power",
+    "gain_seed1": 0.0022817506207006844,
+    "gain_seed2": 0.00229657496049418,
+    "candidates": 502,
+    "pass": 5
+   },
+   {
+    "round": 5,
+    "change": "insert before the filler: cast Eureka!",
+    "gain_seed1": 0.0016360884576964718,
+    "gain_seed2": 0.0015160670249541042,
+    "candidates": 513,
+    "pass": 5
    }
   ],
   "final": {
    "raid": {
-    "ml: Affliction": {
-     "before": 768.0496406615442,
-     "after": 770.2177810432418,
-     "base": 768.0496406615442,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.7897749999999999,
-     "oom_after": 0.7897749999999999
-    },
     "opt-affliction-raid-raid-dps": {
-     "before": 766.0573779336939,
-     "after": 768.1322896625429,
-     "base": 766.0573779336939,
+     "before": 739.6128837360835,
+     "after": 739.0250704378503,
+     "base": 739.6128837360835,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.99495,
-     "oom_after": 0.99495
+     "oom_before": 0.702625,
+     "oom_after": 0.702625
     },
     "sim preset: Demonic Pact 2/31/18": {
-     "before": 711.3695797152824,
-     "after": 713.6038918366321,
-     "base": 711.3695797152824,
+     "before": 702.4661502833341,
+     "after": 695.4344140932167,
+     "base": 702.4661502833341,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.643585,
-     "oom_after": 0.643585
+     "oom_before": 0.6057699999999999,
+     "oom_after": 0.6057699999999999
+    },
+    "affliction-dot-raid": {
+     "before": 734.4112573719217,
+     "after": 734.5721082820122,
+     "base": 734.4112573719217,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 1.578775,
+     "oom_after": 1.578775
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 4
+  "passes": 6
  }
 }

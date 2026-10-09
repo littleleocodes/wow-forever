@@ -120,7 +120,7 @@
  "raid": {
   "class": "mage",
   "spec": "fire-raid",
-  "date": "2026-10-08",
+  "date": "2026-10-09",
   "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
@@ -227,40 +227,72 @@
     "gain_seed2": 0.0022544189384414715,
     "candidates": 341,
     "pass": 5
+   },
+   {
+    "round": 11,
+    "change": "drop: cast Fireball",
+    "gain_seed1": 0.010003162665426224,
+    "gain_seed2": 0.009928281390090499,
+    "candidates": 386,
+    "pass": 6
+   },
+   {
+    "round": 12,
+    "change": "drop 'mana % \u2265 10%' from the condition: if mana % \u2265 10% and time left in the fight \u2265 3s: cast Fireball",
+    "gain_seed1": 0.004165079495012547,
+    "gain_seed2": 0.0037458323935639637,
+    "candidates": 375,
+    "pass": 6
+   },
+   {
+    "round": 13,
+    "change": "insert in the middle: cast Major Mana Potion",
+    "gain_seed1": 0.001552252760965711,
+    "gain_seed2": 0.002970901921401037,
+    "candidates": 368,
+    "pass": 6
+   },
+   {
+    "round": 14,
+    "change": "move down below 'use every other cooldown when ready': if mana % \u2264 80%: cast Mana Ruby (mana gem)",
+    "gain_seed1": 0.0020954558709826987,
+    "gain_seed2": 0.0018966977910910288,
+    "candidates": 375,
+    "pass": 6
    }
   ],
   "final": {
    "raid": {
     "fire-raid": {
-     "before": 715.0573812513219,
-     "after": 729.5199032765497,
-     "base": 715.0573812513219,
+     "before": 679.7611717088821,
+     "after": 687.8513921395347,
+     "base": 679.7611717088821,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.5441640499751007,
-     "oom_after": 0.5577575999736508
+     "oom_before": 0.7870688499707502,
+     "oom_after": 0.8545524999760503
     },
     "sim preset: Fire DPS": {
-     "before": 695.8624189881514,
-     "after": 696.413994709867,
-     "base": 695.8624189881514,
+     "before": 662.0297461800698,
+     "after": 664.7042913361254,
+     "base": 662.0297461800698,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.01067424999955,
-     "oom_after": 0.013552549999
+     "oom_before": 0.027071849998200004,
+     "oom_after": 0.06580734999650001
     },
     "opt-fire-raid-raid-dps": {
-     "before": 715.0573812513219,
-     "after": 729.5199032765497,
-     "base": 715.0573812513219,
+     "before": 679.7611717088821,
+     "after": 687.8513921395347,
+     "base": 679.7611717088821,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.5441640499751007,
-     "oom_after": 0.5577575999736508
+     "oom_before": 0.7870688499707502,
+     "oom_after": 0.8545524999760503
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 5
+  "passes": 6
  }
 }

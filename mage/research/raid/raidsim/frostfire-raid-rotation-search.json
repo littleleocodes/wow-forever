@@ -217,7 +217,7 @@
  "raid": {
   "class": "mage",
   "spec": "frostfire-raid",
-  "date": "2026-10-08",
+  "date": "2026-10-09",
   "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
@@ -414,44 +414,44 @@
   "final": {
    "raid": {
     "frostfire-open-raid": {
-     "before": 708.1163750252754,
-     "after": 722.0511533899536,
-     "base": 708.1163750252754,
+     "before": 670.867518570984,
+     "after": 636.9369890188163,
+     "base": 670.867518570984,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.1820052999784012,
-     "oom_after": 1.1820052999784012
+     "oom_before": 1.4278540499853478,
+     "oom_after": 1.4278540499853478
     },
     "frostfire-raid": {
-     "before": 652.3182240304398,
-     "after": 676.0024640755001,
-     "base": 652.3182240304398,
+     "before": 613.2103614165908,
+     "after": 628.8186078072071,
+     "base": 613.2103614165908,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.03791714999700001,
-     "oom_after": 0.03791714999700001
+     "oom_before": 0.10113099999225002,
+     "oom_after": 0.10113099999225002
     },
     "frostfire-ml-raid": {
-     "before": 657.5229170356411,
-     "after": 674.5800481173295,
-     "base": 657.5229170356411,
+     "before": 622.8555770509748,
+     "after": 593.1579925550142,
+     "base": 622.8555770509748,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.3636389999090035,
-     "oom_after": 1.3636389999090035
+     "oom_before": 1.3546425999081548,
+     "oom_after": 1.3546425999081548
     },
     "frostfire-fingers-of-frost-raid": {
-     "before": 715.7395678038164,
-     "after": 723.845842966777,
-     "base": 715.7395678038164,
+     "before": 678.0803309359433,
+     "after": 663.7707452969851,
+     "base": 678.0803309359433,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.17354409999334994,
-     "oom_after": 0.17354409999334994
+     "oom_before": 0.2822627499916498,
+     "oom_after": 0.2822627499916498
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 10
+  "passes": 11
  }
 }

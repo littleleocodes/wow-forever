@@ -88,7 +88,7 @@
  "raid": {
   "class": "priest",
   "spec": "shadow-dps",
-  "date": "2026-10-08",
+  "date": "2026-10-09",
   "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
@@ -139,18 +139,18 @@
   "final": {
    "raid": {
     "opt-shadow-dps-raid-dps": {
-     "before": 718.1108056197713,
-     "after": 723.7838037858152,
-     "base": 718.1108056197713,
+     "before": 692.422395272649,
+     "after": 697.4943198590684,
+     "base": 692.422395272649,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Shadow": {
-     "before": 718.9525256858027,
-     "after": 721.6642494596455,
-     "base": 718.9525256858027,
+     "before": 691.4359589368291,
+     "after": 695.4520733756791,
+     "base": 691.4359589368291,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -159,6 +159,6 @@
    }
   },
   "first_date": "2026-09-27",
-  "passes": 5
+  "passes": 6
  }
 }
