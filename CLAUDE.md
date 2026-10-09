@@ -379,7 +379,9 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   chance of low ranks, the client's
   ExpectedStat creature health for leveling mobs (7-35% above the lab's Classic medians; whether the server uses it is unknown, so
   `MOB_HP_MULT` stays a sensitivity), glancing and crit suppression against bosses, negative resistance from debuffs, Forever's Spirit
-  regeneration, crit per stat point below level 40, leveling gear from Forever's item database.
+  regeneration, leveling gear from Forever's item database. Done the same night in the lab: crit per Agility and Intellect by level
+  from the client's PlayerExpectedStat (`fightlab/player_expected_stat.json`, `tables.CRIT_PER_STAT_TABLE`); the client tables the audit
+  used are archived in `raw/2026-10-08-beta-70291/client-tables/`.
 - **New-builds survey** (2026-09-28, user request): `_reference/data/new-builds.json` (hand-kept: per class the targets searched
   around new spells, each a rotation-only entry with its own rotation and a build, plus notes; no numbers) and
   `render_new_builds.py` (regen step) write `_reference/new-builds-survey.md` and the "New spells and builds" section of each raid

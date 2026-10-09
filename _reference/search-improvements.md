@@ -72,7 +72,7 @@
    proc chance of low ranks; leveling mob health from the client's ExpectedStat table (+7-35% over the lab's Classic medians; unknown
    whether the server uses it: a `MOB_HP_MULT` sensitivity); glancing and crit suppression against bosses (a beta tester's Skills
    panel shows them); negative resistance from debuffs (testable at level 30 with Curse of the Elements rank 2); Forever's Spirit regen;
-   crit per stat point below level 40 (client PlayerExpectedStat); leveling gear from Forever's item database.
+   leveling gear from Forever's item database. (Crit per stat point by level now follows the client's table, 2026-10-09.)
 8. **Weapon variants on the pages.** The rogue's swords entry found 18/33/0 at 746.6 DPS, +1.9% over our swords builds, but the Combat
    page shows one build per spec (the daggers build at 770), so a swords player never sees it. Idea: a weapon line on the page when a
    spec's entries differ in weapon type (swords, daggers, maces), each with its entry's best build. A page change, not a search change.
