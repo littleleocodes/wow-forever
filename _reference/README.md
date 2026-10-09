@@ -67,7 +67,7 @@ mage). Empty spec x mode slots are filled by `spec_builds.py` (marked ⚗ genera
 
 ## Classes
 
-| Class | Classic baseline builds | Forever tree (beta client 1.60.1.70009) | Forever builds | Scenario folders |
+| Class | Classic baseline builds | Forever tree (beta client 1.60.1.70291) | Forever builds | Scenario folders |
 |---|---|---|---|---|
 | [Druid](../druid/README.md) | 7 | 52 talents | 12 hand drafts + 9 optimizer builds | [leveling](../druid/research/leveling/README.md) · [raid](../druid/research/raid/README.md) · [pvp](../druid/research/pvp/README.md) |
 | [Hunter](../hunter/README.md) | 5 | 50 talents | 25 hand drafts + 11 optimizer builds | [leveling](../hunter/research/leveling/README.md) · [raid](../hunter/research/raid/README.md) · [pvp](../hunter/research/pvp/README.md) |
