@@ -39,6 +39,16 @@ import render_start_here as RSH  # noqa: E402
 import spec_modes as SM  # noqa: E402
 
 
+
+def live_link(cls, rec):
+    """A record's winner as a talentsforever link made now (current code version and talent order); the stored one if that fails."""
+    try:
+        w = rec.get("winner") or ((rec.get("again") or rec.get("first") or {}).get("winner") or {})
+        flat = {n: k for items in (w.get("allocation") or {}).values() for n, k in items if k}
+        return RSH.tf_link(cls, flat) if flat else rec.get("link", "")
+    except Exception:   # noqa: BLE001 - a report must not fail on a link
+        return rec.get("link", "")
+
 def _load(name, path):
     spec = importlib.util.spec_from_file_location(name, path)
     m = importlib.util.module_from_spec(spec)
@@ -286,7 +296,7 @@ def write_class(cls, st):
          "| Rotation | Trees that level with it | Open winner | Family | Seconds per kill (20-60) | vs our fastest there |", "|---|---|---|---|---|---|"]
     for spec, r in st["rotations"].items():
         if r.get("done"):
-            o.append(f"| {spec} | {', '.join(r['trees'])} | [{r['split']}]({r['link']}) | {r['family']} | {r['race']['open winner']['weighted']:.2f} | "
+            o.append(f"| {spec} | {', '.join(r['trees'])} | [{r['split']}]({live_link(cls, r)}) | {r['family']} | {r['race']['open winner']['weighted']:.2f} | "
                      + (f"{r['gain_vs_ours']:+.1%} faster than {r['ours_best']}" if r.get("ours_best") else "-") + " |")
     o.append("")
     for spec, r in st["rotations"].items():
@@ -332,7 +342,7 @@ def write_page():
          "our fastest leveling build there. This project's fight-lab model; not in-game measurements.", "",
          "| Class | Rotation | Open winner | Family | Seconds per kill | vs ours |", "|---|---|---|---|---|---|"]
     for cls, spec, r in sorted(rows, key=lambda x: x[2]["race"]["open winner"]["weighted"]):
-        o.append(f"| [{cls}]({paths.rel(PAGE, paths.scenario_dir(cls, 'leveling') / 'open-search.md')}) | {spec} | [{r['split']}]({r['link']}) | "
+        o.append(f"| [{cls}]({paths.rel(PAGE, paths.scenario_dir(cls, 'leveling') / 'open-search.md')}) | {spec} | [{r['split']}]({live_link(cls, r)}) | "
                  f"{r['family']} | {r['race']['open winner']['weighted']:.2f} | " + (f"{r['gain_vs_ours']:+.1%}" if r.get("gain_vs_ours") is not None else "-") + " |")
     PAGE.write_text("\n".join(o) + "\n", encoding="utf-8")
     log(f"wrote {PAGE.relative_to(ROOT).as_posix()}")

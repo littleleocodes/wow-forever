@@ -39,6 +39,16 @@ import render_start_here as RSH  # noqa: E402
 import spec_modes as SM  # noqa: E402
 
 
+
+def live_link(cls, rec):
+    """A record's winner as a talentsforever link made now (current code version and talent order); the stored one if that fails."""
+    try:
+        w = rec.get("winner") or ((rec.get("again") or rec.get("first") or {}).get("winner") or {})
+        flat = {n: k for items in (w.get("allocation") or {}).values() for n, k in items if k}
+        return RSH.tf_link(cls, flat) if flat else rec.get("link", "")
+    except Exception:   # noqa: BLE001 - a report must not fail on a link
+        return rec.get("link", "")
+
 def _load(name, path):
     spec = importlib.util.spec_from_file_location(name, path)
     m = importlib.util.module_from_spec(spec)
@@ -551,7 +561,7 @@ def write_class(cls, st):
     for entry, e in st["entries"].items():
         if not e.get("done"):
             continue
-        o.append(f"| {entry} | [{e['split']}]({e['link']}) | {e['family']} | {e['dps']:.1f} | "
+        o.append(f"| {entry} | [{e['split']}]({live_link(cls, e)}) | {e['family']} | {e['dps']:.1f} | "
                  + (f"{e['gap_vs_ours']:+.1%} ({e.get('ours_best')})" if e.get("gap_vs_ours") is not None else "-")
                  + f" | {'yes' if e.get('rotation_changed') else 'no'} |")
     o.append("")
@@ -612,7 +622,7 @@ def write_page():
          "the beta with this project's patches; not in-game measurements.", "",
          "| Class | Rotation (entry) | Open winner | Family | DPS | vs our best there |", "|---|---|---|---|---|---|"]
     for cls, entry, e in sorted(rows, key=lambda x: -x[2]["dps"]):
-        o.append(f"| [{cls}]({paths.rel(PAGE, paths.scenario_dir(cls, 'raid') / 'family-search.md')}) | {entry} | [{e['split']}]({e['link']}) | "
+        o.append(f"| [{cls}]({paths.rel(PAGE, paths.scenario_dir(cls, 'raid') / 'family-search.md')}) | {entry} | [{e['split']}]({live_link(cls, e)}) | "
                  f"{e['family']} | {e['dps']:.1f} | " + (f"{e['gap_vs_ours']:+.1%}" if e.get("gap_vs_ours") is not None else "-") + " |")
     PAGE.write_text("\n".join(o) + "\n", encoding="utf-8")
     log(f"wrote {PAGE.relative_to(ROOT).as_posix()}")
