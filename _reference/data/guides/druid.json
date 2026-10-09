@@ -35,38 +35,38 @@
     "why": [
      "**Moonfire** and **Insect Swarm** first: both are instant, so they tick while the mob is still running at you, and **Genesis** adds up to 5% to their ticks. The fight lab puts **Moonfire** only on a mob above 35% health and **Insect Swarm** above 40%: a mob below that dies before they pay off.",
      "**Wrath** is the default nuke: with **Improved Wrath** it is a 1.5-second cast for half the mana, and a short cast loses little to pushback once the mob is hitting you. Each **Wrath** also stores 2 **Eclipse** charges for the **Starfire** casts after it. Before **Eclipse** at 30 the fight lab casts almost nothing else, about 10 Wraths a kill at 20.",
-     "**Starfire** hits about three times as hard at 60 but takes 3 seconds even with **Improved Starfire**, so it waits for a faster or a safe moment: when **Eclipse** has charges (each charge shortens one **Starfire**), or when the mob is rooted or stunned (**Improved Starfire** stuns for 3 seconds 15% of the time).",
+     "**Starfire** hits about three times as hard at 60 but takes 3 seconds even with **Improved Starfire**, so it waits for a faster or a safe moment: when **Eclipse** has charges (each charge shortens one **Starfire**), or when the mob is rooted or stunned (**Improved Starfire** stuns for 3 seconds 15% of the time). From 41, **Nature's Focus** also lets you ignore some of the pushback.",
      "Low on health: **Entangling Roots** holds the mob in place but it still hits you if you stand next to it, so step away, then cast **Regrowth** from range. A direct hit can break the roots."
     ],
     "caveats": [
-     "**Eclipse** at the 1 point this build takes saves 0.17 seconds a charge (0.5 at 3 points). The fight lab gives the 1-point **Eclipse** the full 0.5 seconds, so it overrates the weave: expect a smaller gain in the game (to check at launch).",
-     "**Moonkin Form** (40) blocks healing spells: to cast **Regrowth** you must leave it, and going back costs 35% of your base mana. The fight lab ignores both, so leave the form only when you must heal.",
+     "**Eclipse** at the 1 point this build takes saves 0.17 seconds a charge (0.5 at 3 points), so the weave is a small gain: the fight lab measured the full 0.5 seconds it used to give every rank as 2-3% faster per kill than the real 1-point value.",
+     "**Moonkin Form** (40) blocks healing spells: to cast **Regrowth** you must leave it, and going back costs 35% of your base mana. So stay in the form between fights and eat; leave it only for an emergency heal, and go back in while the mob still has half its health (the fight lab plays it that way).",
      "Mana: **Moonglow** cuts your damage spells' cost by 25% and **Reflection** keeps half your regeneration going while you cast. The tuned fight lab drinks below 45% mana and eats below 80% health: topping up early measured 1.7% faster per kill, with fewer deaths at 40-50."
     ],
     "diverge": [
      "When the mob is nearly dead, finish it with an instant **Moonfire** or a quick **Wrath** rather than a **Starfire** it will not live through: the fight lab does exactly that."
     ],
     "rotations": {
-     "leveling:feral-cat-dps": "de7135da6d2f",
-     "leveling:balance-dps": "985d26ba1d97"
+     "leveling:feral-cat-dps": "16d2cf55e9e2",
+     "leveling:balance-dps": "a25cd760d1dd"
     },
     "written": "2026-10-09"
    }
   },
   "Feral Combat": {
    "raid": {
-    "plan": "A raid cat keeps **Rip** bleeding on the boss and spends the rest of its energy on **Shred** from behind. Tiger's Fury and **Berserk** go on cooldown, and **Faerie Fire** opens the fight.",
+    "plan": "A raid cat keeps **Rip** bleeding on the boss, turns mana into energy with **Shifting Power**, and spends the rest on **Shred** from behind. Tiger's Fury and **Berserk** go on cooldown, and **Faerie Fire** opens the fight.",
     "why": [
      "**Faerie Fire** takes 505 armor off the boss for 40 seconds, so your **Shred** and white hits land harder, and in **Cat Form** it costs nothing. Cast it on the pull. In a full raid the simulator assumes the raid keeps it up and casts it once a fight; if nobody else does, refresh it before it runs out.",
-     "**Rip** is your biggest damage source, close to 40%. Put it back up as soon as it falls off, at 4 or more combo points: its attack power bonus stops growing at 4 points (the simulator's model, as in Classic), so the fifth point adds only a flat 153 damage while the boss goes without a bleed. The simulator measured Rip at 4 or more about 1% better in a full raid than waiting for 5.",
+     "**Rip** does a large share of your damage (close to 40% on the training dummy). Put it back up as soon as it falls off, at 4 or more combo points: its attack power bonus stops growing at 4 points (the simulator's model, as in Classic), so the fifth point adds only a flat 153 damage while the boss goes without a bleed. The simulator measured Rip at 4 or more about 1% better in a full raid than waiting for 5.",
      "**Shred** is the filler: 42 energy with **Shredding Attacks**, 1 combo point, 2 on a critical strike with **Blood Frenzy**, and 10% more damage from **Rend and Tear** while **Rip** bleeds. **Rip** lasts 12 seconds, about the time three Shreds take, and those Shreds bring about 4 combo points with their critical strikes. So when Rip falls off, you usually hold the points to put it straight back.",
      "**Ferocious Bite** is not in the list: the simulator measured the rotation 1% better in a full raid without it, the energy going to **Shred** instead. With **Rip** up and 5 combo points, keep shredding; points beyond 5 are lost.",
-     "Tiger's Fury is the top line: it costs no energy and no combo points and adds 15% physical damage for 6 seconds every 30 seconds, about 7 times a fight, so press it the moment it is ready. The beta's trainer list no longer shows it; the simulator reads it from the client.",
-     "**Berserk** (3-minute cooldown) makes every **Shred** a critical strike for 15 seconds, each worth 2 combo points with **Blood Frenzy**, and **Natural Instinct** makes those crits hit harder. Press it on the pull: a 3-minute fight has room for one."
+     "**Shifting Power** turns 55% of your base mana into 40 energy every 8 seconds with **Improved Shifting Power**: cast it whenever it is ready and your energy is 60 or less, so none of the 40 spills over your 100 cap. A raid's mana buffs pay for it, and in the simulator the builds that take it do 12-16% more damage in a full raid than the 9/31/11 build without it.",
+     "Tiger's Fury costs no energy and no combo points and adds 15% physical damage for 6 seconds every 30 seconds (about 7 times a fight; the beta's trainer list no longer shows it, the simulator reads it from the client), so it is the top line. **Berserk** (3-minute cooldown) makes every **Shred** a critical strike for 15 seconds, each worth 2 combo points with **Blood Frenzy**: press it on the pull."
     ],
     "caveats": [
      "**Shred** only works from behind. If the boss faces you, or you have to tank, build with **Claw** instead (110% weapon damage plus 126 for 45 energy, less with **Ferocity**).",
-     "If your build takes **Shifting Power** (after **Shredding Attacks**), cast it whenever it is ready and your energy is 60 or less: it turns 55% of your base mana into 40 energy, and at 60 or less none of it spills over your 100 cap. Its cooldown is 16 seconds, 8 with **Improved Shifting Power**. The full-raid rotation has that line, and in the simulator the builds that take it do 12-16% more damage in a full raid than the 9/31/11 build without it.",
+     "Without a raid's mana buffs (a dungeon group, or alone) each **Shifting Power** costs more than half your base mana and you run dry fast: keep the mana for a shift and a **Regrowth**. Solo, the fight lab found that drinking the mana back costs more time than the energy saves.",
      "Powershifting is nearly gone in Forever: **Furor** keeps your energy through a shift, plus 10 a second out of form, instead of granting a flat 40, and leaving **Cat Form** ends Tiger's Fury. The rotation shifts out only with Clearcasting up and under 14 energy, about twice a fight, and the simulator found almost nothing in it: skip it if it costs you attention.",
      "The bear builds under Other builds are tank builds: they play **Lacerate**, **Maul** and **Barkskin** in **Dire Bear Form**, not this list (the research rotation page has their priority)."
     ],
@@ -86,13 +86,13 @@
     "why": [
      "Levels 10-19: no **Cat Form** yet, so **Bear Form**'s armor and health carry you. You start each fight with no rage: **Enrage** first (10 rage at once, 20 more over 10 seconds), then **Demoralizing Roar** to cut the mob's attack power, then **Maul** on every swing you can pay for.",
      "From 20, **Prowl** up behind the mob and open with your hardest stealth hit: **Ravage** from 32 (350% weapon damage plus a bonus, about 15% of all your damage at 60), **Shred** from 22 to 31, **Claw** at 20 and 21. **Pounce** only arrives at 36, after **Ravage**, so the fight lab never opens with it.",
-     "Tiger's Fury goes right after the opener (from 24): it costs nothing and adds 15% physical damage for 6 seconds on a 30-second cooldown. The fight lab does not model it, so the times on this page leave it out.",
+     "Tiger's Fury goes right after the opener (from 24): it costs nothing and adds 15% physical damage for 6 seconds on a 30-second cooldown, about 2% faster per kill at 60 in the fight lab. The beta's trainer list no longer shows it (the client grants it since build 70170), so check at launch that you have it.",
      "**Rake** once: a cheap bleed (35 energy with **Ferocity**) that ticks while you claw, and while the mob bleeds **Rend and Tear** adds 10% to your attacks. The fight lab puts it back only while the mob has more than 30% of its health.",
      "**Claw** builds your combo points because the mob faces you: **Shred** needs you behind it, which only the opener gives. With **Ferocity** it costs 40 energy.",
      "**Ferocious Bite** (from 32) ends most fights: the fight lab bites whenever the bite would kill, at any number of points, about once a kill. **Rip** only goes on a mob with more than half its health at 5 points, about one kill in five at 60: on a mob that dies sooner, most of its 12 seconds are wasted."
     ],
     "caveats": [
-     "Before 32 there is no **Ferocious Bite**, and the fight lab casts no finisher at all at 20-31: by the time you have 5 points the mob is under half health. A **Rip** at 3 or 4 points on a fresh mob was not tested.",
+     "Before 32 there is no **Ferocious Bite**, so **Rip** is your only finisher: put it on at 2 or more points while the mob has more than 40% of its health. The fight lab measured that 3% faster per kill at 30 than waiting for 5 points on a mob above half health, which almost never came.",
      "Leaving **Cat Form** costs you: going back costs 55% of your base mana (20% less with **Natural Shapeshifter**), and without **Furor** your energy starts from zero. Heal between fights rather than in them when you can.",
      "Your mana only pays for shifts and heals, so drink late: the tuned fight lab drinks below 15% mana, about 1% faster per kill than drinking at about a third.",
      "**Berserk**, once you have it, goes on the pull whenever it is ready: 15 seconds of sure critical strikes on your combo point attacks, every 3 minutes."
@@ -102,8 +102,8 @@
      "In the bear levels, **Bash** a mob that starts casting, or when you are low: the fight lab does both."
     ],
     "rotations": {
-     "leveling:feral-cat-dps": "de7135da6d2f",
-     "leveling:balance-dps": "985d26ba1d97"
+     "leveling:feral-cat-dps": "16d2cf55e9e2",
+     "leveling:balance-dps": "a25cd760d1dd"
     },
     "written": "2026-10-09"
    }
@@ -120,10 +120,10 @@
      "**Wild Growth** heals the target's whole party, up to five people, for 679 over 7 seconds (1,050 mana, 6-second cooldown): cast it when three or more people in one party are under half health. The lab's test fight rarely had that, so it measured no value there; in fights with heavy raid damage it is the heal that covers it."
     ],
     "caveats": [
-     "Mana runs out before cast time does: in the lab's five-minute fight the build spends about 15 seconds out of mana, and **Reflection** (half your mana regeneration keeps going while you cast) is worth more than any other talent there. Drink a mana potion once you are 20% down after the first 45 seconds, and **Innervate** yourself under 40% mana: the lab measured early potions as 1 to 2% more healing capacity.",
+     "Mana runs out before cast time does: in the lab's five-minute fight the build spends about 30 seconds out of mana, and **Reflection** (half your mana regeneration keeps going while you cast) is worth more than any other talent there. Drink a mana potion once you are 20% down after the first 45 seconds, and **Innervate** yourself under 40% mana: the lab measured early potions as 1 to 2% more healing capacity.",
      "Leave raid members above half health to their own regeneration and the other healers: the lab measured healing them only under 50%, instead of 70%, as 2% more healing capacity, the mana going to the tank.",
      "Forever gives low ranks less of your healing power (Blizzard's beta notes; the exact rule is not published). The lab assumes TBC's rule: **Healing Touch** ranks 9 to 11 keep their full bonus, rank 8 about 92% and rank 7 about 82%, so downrank only that far.",
-     "The beta's **Swiftmend** tooltip no longer says it uses up the heal over time, as Classic's did; the lab still assumes it does. If it does not, **Swiftmend** is worth pressing far more often."
+     "The beta's **Swiftmend** tooltip no longer says it uses up the heal over time, as Classic's did, and the lab now leaves it ticking (worth about 3% healing capacity there). If it does use it up at launch, save **Swiftmend** for emergencies and keep a **Rejuvenation** ready to put back."
     ],
     "diverge": [
      "The tank under 55%: **Nature's Swiftness** and **Healing Touch** if it is ready, else **Swiftmend** if your heal over time is on the tank, else **Regrowth**. The lab measured reacting at 55% rather than 35% as 1 to 2.5% more healing capacity.",
@@ -140,7 +140,7 @@
     "plan": "You level as a cat with your healer's talents: the Feral Combat steps, about a fifth slower per kill. Your Restoration points make your heals stronger, not your claws.",
     "why": [
      "Levels 10-19 are the bear steps (**Enrage**, **Demoralizing Roar**, **Maul**). Your first points, **Nature's Focus** and **Naturalist**, do little there beyond **Naturalist**'s 5% more damage.",
-     "From 20 the cat steps follow the Feral Combat page: open from **Prowl** (**Ravage** from 32, **Shred** from 22, **Claw** before), then **Rake**, **Claw** to 5 points, **Ferocious Bite** when it will kill and **Rip** only on a mob above half health. The mob faces you, so **Shred** is for the opener only.",
+     "From 20 the cat steps follow the Feral Combat page: open from **Prowl** (**Ravage** from 32, **Shred** from 22, **Claw** before), then **Rake**, **Claw** to 5 points, **Ferocious Bite** when it will kill and **Rip** on a mob above half health (before 32, **Rip** at 2 points while the mob has more than 40% of its health: 6-7% faster per kill for this build in the fight lab). The mob faces you, so **Shred** is for the opener only.",
      "Few of your points add damage: **Naturalist** (+5%), **Genesis** (+5% to **Rake** and **Rip** ticks), **Nature's Majesty** (+4% critical strike chance) and **Heart of the Wild** (+10% Strength in **Cat Form**), all in by 31. Without **Ferocity**, **Claw** and **Rake** cost their full 45 and 40 energy.",
      "The rest makes healing strong and cheap: **Reflection** keeps half your mana regeneration going while you cast, **Gift of Nature** and **Improved Rejuvenation** make the between-fight **Rejuvenation** and **Regrowth** heal more, and **Nature's Swiftness** (57) makes one **Healing Touch** instant when a fight goes wrong."
     ],
@@ -155,8 +155,8 @@
      "In a dungeon group, heal instead: that is the reason to level with these talents, and the times on this page are solo kills."
     ],
     "rotations": {
-     "leveling:feral-cat-dps": "de7135da6d2f",
-     "leveling:balance-dps": "985d26ba1d97"
+     "leveling:feral-cat-dps": "16d2cf55e9e2",
+     "leveling:balance-dps": "a25cd760d1dd"
     },
     "written": "2026-10-09"
    }

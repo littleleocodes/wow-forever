@@ -143,10 +143,10 @@
    "leveling": {
     "plan": "Melee Survival levels with the pet as the tank: you sting the mob from range, walk in and fight beside the pet with two one-handers. **Raptor Strike** and **Strider Kick** are your steady hits, **Immolation Trap** burns the longer fights, and white swings do the rest.",
     "why": [
-     "**Serpent Sting** from range opens every fight and ticks for all of it: about a seventh of your damage at 60 in the fight lab. The page also lists **Hunter's Mark**, which **Expose Prey** needs, but the fight lab's tuned play skips the mark and measured about 3% faster kills without it.",
+     "**Serpent Sting** from range opens every fight and ticks for all of it: about a seventh of your damage at 60 in the fight lab. **Hunter's Mark** matters to a melee hunter only through **Expose Prey**, and even with **Expose Prey** working the fight lab measured the mark slightly slower per kill while leveling (about 0.5 to 1%), so skip it.",
      "**Immolation Trap** goes at your feet as you reach the mob: traps work in combat in Forever but land where you stand. Only while the mob has more than 70% of its health, because the burn lasts 15 seconds; played that way the trap saved 4.6 to 6.3% time per kill at levels 40-60 in the fight lab.",
      "**Mongoose Bite** lights up after you dodge (not the mob) or, with **Expose Prey**, after hits on a marked mob; **Counterattack** lights up after you parry. With the pet tanking both come rarely, under one cast a kill at 60, so press them whenever you see them.",
-     "**Strider Kick** on its 8-second cooldown and **Raptor Strike** whenever it is ready: about a tenth of your damage each. **Raptor Strike** replaces your next main-hand swing and costs no global cooldown, so it never competes with the other buttons.",
+     "**Raptor Strike** whenever it is ready and **Strider Kick** on its 8-second cooldown: about a tenth of your damage each. **Raptor Strike** replaces your next main-hand swing and costs no global cooldown, so queue it first; the fight lab lost about 1% per kill when it waited behind other buttons.",
      "**Aspect of the Monkey** until level 30 (its dodges also light up **Mongoose Bite**), then **Aspect of the Beast**: melee attack power, and with **Deadly Aspects** a 10% chance per swing for 30% faster swings for 12 seconds.",
      "**Deterrence** when you fall below 40% health while the mob still has some left: +25% dodge and parry for 10 seconds, which also lights up **Mongoose Bite** and **Counterattack**."
     ],
@@ -199,7 +199,7 @@
     "plan": "Beast-Marks levels exactly like Beast Mastery: the cat tanks and you shoot from range. The split adds Marksmanship's cheaper shots (**Efficiency**) and stronger stings (**Improved Stings**) to a full set of pet talents.",
     "why": [
      "Send the pet first, then **Hunter's Mark** and **Serpent Sting** while the mob is still healthy (the fight lab: above 30% and 40% of its health). The cat holds the mob until your threat passes 130% of its own, and **Unleashed Fury**, **Ferocity** and **Frenzy** make it a real part of your damage.",
-     "**Summon Hawk** (level 25) gets the timer it shares with **Arcane Shot**: the fight lab never casts **Arcane Shot** with this rotation (about 2% faster per kill), and in the leveling search **Summon Hawk** was this build's most valuable talent at 60.",
+     "**Summon Hawk** (level 25) gets the timer it shares with **Arcane Shot**: the fight lab never casts **Arcane Shot** with this rotation (about 2% faster per kill), and the hawks do about a tenth of your damage at 60.",
      "**Aimed Shot** gets the cooldown it shares with **Multi-Shot**: on one mob the fight lab never casts **Multi-Shot** (about 2.5% faster), and it skips **Aimed Shot** once the mob is below a quarter of its health.",
      "**Auto Shot** does most of the rest and cannot fire within 8 yards: step back out if the mob ends up beside you.",
      "**Rapid Fire** at the start of a fight when it is ready (a 5-minute cooldown in this build), and **Mend Pet** when the pet drops below about a third."
@@ -232,7 +232,7 @@
      "**Deterrence** below 40% health: +25% dodge and parry for 10 seconds, every 3 minutes with **Survivalist's Discipline**, and those dodges and parries light up **Mongoose Bite** and **Counterattack**."
     ],
     "caveats": [
-     "The page lists **Hunter's Mark**, which **Expose Prey** (levels 33-34) needs; the fight lab's tuned play skips the mark and measured about 3% faster kills without it.",
+     "**Expose Prey** (levels 33-34) needs **Hunter's Mark** on the mob, but even with it working the fight lab measured the mark slightly slower per kill while leveling (about 0.5 to 1.5%): skip the mark, as the tuned rotation does.",
      "**Aspect of the Monkey** until level 30, then **Aspect of the Beast** for its melee attack power; **Deadly Aspects** (levels 51-55) adds its swing-speed chance to Aspect of the Beast.",
      "**Improved Tracking** (levels 10-14) adds damage only against the creature type you are tracking: keep tracking set to what you are killing."
     ],
@@ -285,7 +285,7 @@
     ],
     "caveats": [
      "This build takes none of **Counterattack**, **Strider Kick** or **Deterrence**: skip those steps. Between traps your global cooldown is mostly free.",
-     "**Summon Hawk** (level 58) is the 20th Beast Mastery point, which opens **Bestial Discipline**. The fight lab's melee list never casts it, so its worth while leveling is untested.",
+     "**Summon Hawk** (level 58) is the 20th Beast Mastery point, which opens **Bestial Discipline**. Do not cast it while leveling: as a melee hunter the fight lab measured it about 5% slower per kill at 60, its 190 mana a cast outweighing its damage.",
      "**Improved Tracking** (levels 10-14) adds damage only against the creature type you are tracking: keep tracking set to what you are killing."
     ],
     "diverge": [

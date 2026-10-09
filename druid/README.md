@@ -49,21 +49,19 @@ Differences under 2-3% are within the simulations' noise and assumptions: treat 
 
 ## Roles and specs
 
-| Spec | Raid role | Classic standing | Forever outlook |
+| Spec | Raid role | Classic standing | Forever outlook (beta client build 1.60.1.70291) |
 |---|---|---|---|
-| Balance | DPS (one per raid) | Mana-starved crit-aura bot | Eclipse + Balance of Nature + Moonfury: deep Balance is a real caster spec |
-| Feral Combat | Tank / melee DPS | Off-tank and powershift cat with the right gear | Mangle, Berserk, Rend and Tear, Natural Reaction; Heart of the Wild at tier 1 |
-| Restoration | Raid healer | Swiftmend early, Regrowth/Nature's Grace late | Wild Growth capstone, Swiftmend at 16, Naturalist, Living Spirit |
+| Balance | DPS (one per raid for the crit aura) | Mana-starved crit-aura bot | A real caster: Starfire as the filler with Insect Swarm and Moonfire kept up, Vengeance and Moonfury behind it, Moonkin Form doubling Omen of Clarity. Eclipse (each Wrath speeds up the next two Starfires) is not in the raid pick, and the raid rotation never weaves Wrath. |
+| Feral Combat | Melee DPS / tank | Off-tank and powershift cat with the right gear | Powershifting is gone: Furor carries your energy through a shift instead of granting 40. Shifting Power (mana into energy) is the cat's raid tool and leads in the simulator; Rip with Rend and Tear, Berserk. Bear: Lacerate, Primal Bite, a 50% threat bonus. |
+| Restoration | Raid healer | Swiftmend early, Regrowth/Nature's Grace late | Wild Growth capstone; Swiftmend at tier 4 and its tooltip no longer says it uses up the heal over time; Gift of the Earthmother, Living Spirit, Naturalist. Moonglow now cheapens damaging spells only, not heals. |
 
-## Forever headline changes (beta client build 1.60.1.70009, 2026-09-25)
+## Forever headline changes (beta client build 1.60.1.70291, 2026-10-08)
 
-- **Removed:** Nature's Grasp, Improved Nature's Grasp, Natural Weapons, Improved Thorns, Omen of Clarity (baseline) (Balance);
-  Feral Aggression, Feline Swiftness, Improved Shred, Blood Frenzy (the name came back in build 70009 on the renamed Primal Fury), Faerie Fire (Feral) (baseline) (Feral); Improved Mark of the Wild, Improved Healing Touch, Improved Enrage (Restoration).
-- **New:** Genesis, Nature's Majesty, Nature's Splendor, Overgrowth, Eclipse (Balance; Balance of Nature was cut in beta build 69893);
-  Feral Swiftness, Shredding Attacks, Primal Bite (bear-only; named Mangle until build 70009), Predatory Instincts, King of the Jungle, Natural Reaction, Rend and Tear, Berserk (Feral);
-  Naturalist, Gift of the Earthmother, Living Spirit, Wild Growth (Restoration).
-- **Moved/reworked:** Heart of the Wild → Feral T1, Insect Swarm → Balance T4, Swiftmend → Resto T4, Furor retains cat energy, Nature's Grace = 3s haste, Nature's Swiftness requires Naturalist.
-- **Beta client (build 70009):** Wrath base damage +50%; Rejuvenation, Tranquility and Wild Growth can crit; Moonkin Form doubles Omen of Clarity procs; King of the Jungle grants 20/40/60 Energy; Furor keeps 100% Energy at 5/5; Shred is 155% weapon damage (Classic 225%); Primal Bite ranks at 25/40/50/60, Lacerate at 42/50/58; no cat Mangle.
+- **Baseline now:** Omen of Clarity (a passive trained at 20; it procs from spells and attacks, and Wrath does not use it), Nature's Grasp (trained at 10, one charge, castable in forms), Faerie Fire in Cat, Bear and Dire Bear Form (free, 6 sec cooldown; Faerie Fire (Feral) is gone), Lacerate (42), Revive (an out-of-combat resurrection). Tiger's Fury is no longer in the trainer list: the community simulator reads it from the client as granted since build 70170 (15% more physical damage for 6 sec, 30 sec cooldown).
+- **Removed talents:** Nature's Grasp, Improved Nature's Grasp, Natural Weapons, Improved Thorns, Omen of Clarity (now baseline) (Balance); Feral Aggression, Feline Swiftness, Improved Shred, Faerie Fire (Feral) (Feral); Improved Mark of the Wild, Improved Healing Touch, Improved Enrage (Restoration). King of the Jungle came in build 70009 and went in 70170.
+- **New talents:** Genesis, Nature's Majesty, Nature's Splendor, Overgrowth, Eclipse (Balance); Feral Swiftness, Shredding Attacks, Shifting Power and Improved Shifting Power (build 70170), Primal Bite (bear only), Natural Instinct (named Predatory Instincts until 70291; it also adds a share of your Intellect to spell healing), Natural Reaction, Rend and Tear, Berserk (Feral); Gift of the Earthmother, Living Spirit, Wild Growth (Restoration). Blood Frenzy now does what Classic's Blood Frenzy and Primal Fury did between them: rage from bear critical strikes, an extra combo point from cat critical strikes.
+- **Moved or reworked:** Heart of the Wild to Feral tier 1 (Intellect, plus Strength in Cat Form and Stamina in Bear Form); Insect Swarm to Balance tier 4; Natural Shapeshifter to Restoration; Swiftmend from Classic's capstone to Restoration tier 4; Nature's Swiftness needs 5 points in Naturalist; Furor restores the Cat Form energy you left with (up to 100%) plus 10 a second out of form, instead of a chance at 40; Nature's Grace is 10% faster casts and global cooldown for 3 sec after a critical hit; Nature's Focus covers every Arcane and Nature spell; Moonglow cheapens damaging spells only (25%); Moonkin Form doubles Omen of Clarity's chance, gives a 45-yard 3% critical strike aura that does not stack with Leader of the Pack, and blocks healing spells.
+- **Spells:** Shred is 155% weapon damage (Classic 225%) and Claw 110% weapon damage plus a bonus; in forms your equipped weapon's DPS sets your damage at a 1.0 sec (cat) or 2.5 sec (bear) swing (Blizzard's druid deep dive, 2026-09-30), weapon enchants work in forms and you can use items and potions without shifting out; Wrath, Starfire, Moonfire, Insect Swarm and Rip show lower base damage on their tooltips; Barkskin no longer slows casts or attacks; Entangling Roots works indoors, on one target at a time; Mark of the Wild and Gift of the Wild give 385 armor, 16 to all attributes and 27 resistances for an hour, Gift of the Wild to the whole raid; Enrage gives 10 rage at once; Frenzied Regeneration turns each point of rage into 1% health; the Bear and Dire Bear Form threat bonus is 50% (from 30%, beta notes of 2026-10-08).
 
 ## Research files
 

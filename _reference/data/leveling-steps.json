@@ -3,32 +3,37 @@
  "druid": {
   "feral-cat-dps": {
    "before": [
-    "Levels 10-19: Bear Form. From 20: Cat Form, then Prowl (stealth) up behind the mob."
+    "Levels 10-19: **Bear Form**. From 20: **Cat Form**, then **Prowl** (stealth) up behind the mob."
    ],
    "steps": [
-    "Levels 10-19 (bear): **Enrage**, **Demoralizing Roar**, then **Maul** whenever you have the rage.",
-    "From 20 (cat), open from Prowl with **Ravage** (**Pounce** before 32, **Claw** before that), then **Tiger's Fury**.",
+    "Levels 10-19 (bear): **Enrage**, **Demoralizing Roar**, then **Maul** whenever you have the rage; **Bash** a mob that starts casting.",
+    "From 20 (cat), open from **Prowl** with **Ravage** (from 32; **Shred** from 22, **Claw** before that), then Tiger's Fury (from 24).",
     "**Rake** once.",
-    "**Claw** until you have 5 combo points.",
-    "At 5 points: **Rip** on a mob with plenty of health, **Ferocious Bite** on one that is nearly dead."
+    "**Claw** to build combo points.",
+    "**Ferocious Bite** (from 32) whenever it will kill the mob, at any number of points.",
+    "**Rip** at 5 points on a mob above half its health. Before **Ferocious Bite** (levels 20-31): **Rip** at 2 points while the mob has more than 40% of its health.",
+    "**Berserk** on the pull whenever it is ready.",
+    "Under 30% health while the mob has more than a quarter of its health: leave **Cat Form**, cast **Regrowth**, then **Cat Form** again."
    ],
    "between": [
-    "Low on health: leave Cat Form and cast **Regrowth** or **Rejuvenation**, then shift back.",
-    "Drink when your mana is below a third."
+    "Low on health: leave **Cat Form** and cast **Rejuvenation** and **Regrowth**, then shift back (only with the mana to shift back).",
+    "Drink when your mana is below 15%: it only pays for shifts and heals."
    ]
   },
   "balance-dps": {
    "before": [
-    "Moonkin Form once you have it."
+    "**Moonkin Form** once you have it."
    ],
    "steps": [
-    "**Moonfire** and **Insect Swarm** on the mob.",
-    "**Wrath** while the mob walks in.",
-    "**Starfire** when Eclipse lights up or the mob is rooted or stunned, **Wrath** otherwise.",
-    "Low on health: **Entangling Roots** on the mob, then **Regrowth**."
+    "**Moonfire** on a mob above a third of its health, **Insect Swarm** above 40%.",
+    "**Wrath** while the mob walks in and whenever nothing below applies: each one stores **Eclipse** charges.",
+    "**Starfire** while **Eclipse** has charges, or while the mob is rooted or stunned.",
+    "A nearly dead mob: finish it with **Moonfire** or **Wrath**.",
+    "Low on health: **Entangling Roots** on the mob, step out of melee, then **Regrowth** (it drops **Moonkin Form**; go back in while the mob still has half its health)."
    ],
    "between": [
-    "Drink when your mana is below a third."
+    "Stay in **Moonkin Form** and eat when your health is below 80%.",
+    "Drink when your mana is below 45%."
    ]
   }
  },

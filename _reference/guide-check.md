@@ -9,11 +9,11 @@
 | Class | Spec | Mode | Written | Rotations stamped |
 |---|---|---|---|---|
 | druid | Balance | raid | 2026-10-09 | balance-dps 2b2250394daf |
-| druid | Balance | leveling | 2026-10-09 | leveling:balance-dps 985d26ba1d97, leveling:feral-cat-dps de7135da6d2f |
+| druid | Balance | leveling | 2026-10-09 | leveling:balance-dps a25cd760d1dd, leveling:feral-cat-dps 16d2cf55e9e2 |
 | druid | Feral Combat | raid | 2026-10-09 | feral-bear-tank b7a596b37484, feral-cat-dps d0a11d810771 |
-| druid | Feral Combat | leveling | 2026-10-09 | leveling:balance-dps 985d26ba1d97, leveling:feral-cat-dps de7135da6d2f |
+| druid | Feral Combat | leveling | 2026-10-09 | leveling:balance-dps a25cd760d1dd, leveling:feral-cat-dps 16d2cf55e9e2 |
 | druid | Restoration | raid | 2026-10-09 | healer-policy d9ac0c5f115f |
-| druid | Restoration | leveling | 2026-10-09 | leveling:balance-dps 985d26ba1d97, leveling:feral-cat-dps de7135da6d2f |
+| druid | Restoration | leveling | 2026-10-09 | leveling:balance-dps a25cd760d1dd, leveling:feral-cat-dps 16d2cf55e9e2 |
 | hunter | Beast Mastery | raid | 2026-10-09 | bm-raid e3be453e2dc2 |
 | hunter | Beast Mastery | leveling | 2026-10-09 | leveling:bm-leveling bdd5caffa622, leveling:melee-dps 0d356a8c2896, leveling:mm-raid 2b92afb9a84f |
 | hunter | Marksmanship | raid | 2026-10-09 | mm-lonewolf-raid 91babb5dc17c, mm-raid 65f6da1ac1d4 |

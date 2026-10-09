@@ -1,16 +1,31 @@
-"""Druid module for the fight lab (Feral cat leveling from 20).
+"""Druid module for the fight lab (Bear Form at 10-19, Cat Form from 20; Balance as a second spec model).
 
-Spell ranks are read from `_reference/data/forever-spells/druid.json` (beta client build 1.60.1.70009); talent numbers from each
+Spell ranks are read from `_reference/data/forever-spells/druid.json` (beta client build 1.60.1.70291); talent numbers from each
 rank's tooltip in `_reference/data/forever-talents/druid.json`. Cat Form attacks once a second with a "paw" whose damage grows
 like a one-hander by level (`tables.weapon_dps`), attack power from the client's base stats (2 AP per Strength, 1 per Agility)
 plus Cat Form's 120 + Agility and Predatory Strikes.
 
-Playstyle `feral-cat-dps` (the scorer's model id, used for leveling): prowl up behind the mob, open with Ravage (Pounce before
-32, Claw before that), Tiger's Fury, Rake once, Claw to five points, Rip on a healthy mob or Ferocious Bite, Berserk on the
-pull when ready; shift out to Regrowth when low (Nature's Swiftness + Healing Touch in an emergency) and shift back (Cat Form
-costs 55% of base mana, Furor keeps the energy). Between fights: Rejuvenation / Regrowth in caster form when hurt, then Cat
-Form again; water below 35% mana. Levels 10-19 (Bear Form) are not simulated: the fight lab starts at 20.
+Playstyle `feral-cat-dps` (the scorer's model id, used for leveling): prowl up behind the mob, open with Ravage from 32 (Shred from
+22, Claw before; Pounce comes at 36, after Ravage), Tiger's Fury (from 24, see TIGERS_FURY), Rake once, Claw to five points,
+Ferocious Bite whenever it kills (from 32), Rip at five points on a mob above half health (before Ferocious Bite: Rip at
+RIP_EARLY_CP points on a mob above RIP_EARLY_HP of its health), Berserk on the pull when ready; shift out to Regrowth when low
+(Nature's Swiftness + Healing Touch in an emergency) and shift back (Cat Form costs 55% of base mana; Furor carries a share of the
+energy you left with plus some per second out of form). Between fights: Rejuvenation / Regrowth in caster form when hurt (only with
+the mana to shift back), then Cat Form again; water below 35% mana (the tuned rule in rotations/ drinks lower).
+
+Playstyle `balance-dps`: see decide_balance. Moonkin Form (40) blocks healing spells: an emergency heal leaves the form and going back
+costs the form's mana; between fights a Moonkin stays in the form and eats.
+
+2026-10-09 fixes (against the 70291 tooltips): Eclipse by rank (0.17/0.33/0.5 s, was 0.5 at any rank), Forever's Nature's Grace
+(10% faster casts and global cooldown for 3 s, was Classic's 0.5 s off the next cast), Nature's Focus on every Arcane and Nature spell
+(was heals only), Moonkin Form and healing, no wand (druids cannot use one), Rip before Ferocious Bite, Tiger's Fury, Furor's cat
+energy (read the rage number: 10% at any rank), Heart of the Wild (cat Strength and bear Stamina were swapped), Blood Frenzy's cat
+combo point, Nature's Splendor's longer damage and heals over time, Improved Moonfire's critical strike chance, Omen of Clarity at the
+simulator's beta-log rate from attacks and spells (Wrath does not use Clearcasting), Rip's attack power share capped at 4 points,
+Shifting Power in place of King of the Jungle (removed in 70170), and Entangling Roots, Hurricane and Lacerate parsed (Entangling Roots
+had parsed to no root, so the Balance emergency cast it for nothing; now it roots and the druid steps out before the heal).
 """
+import copy
 import json
 import pathlib
 import re
@@ -45,9 +60,14 @@ SWIPE = re.compile(r"inflicting (\d+) damage")
 ROAR = re.compile(r"melee attack power by (\d+)\. Lasts (\d+) sec")
 STUN = re.compile(r"Stuns the target for (\d+) sec")
 COEF = re.compile(r"([\d.]+)% of spell power \((\w+(?: \w+)?)\)")
+ROOTS = re.compile(r"Roots the target in place and causes (\d[\d,]*) Nature damage over (\d+) sec")
+STORM = re.compile(r"causing (\d[\d,]*) Nature damage to enemies every (\d+) sec(?:.*?Lasts (\d+) sec)?")
+LACERATE = re.compile(r"bleed for (\d[\d,]*) damage over (\d+) sec")
+ENERGIZE = re.compile(r"into (\d+) Energy")
 
 TALENT_SPELLS = {"Berserk": "Berserk", "Feral Charge": "Feral Charge", "Primal Bite": "Primal Bite", "Swiftmend": "Swiftmend", "Nature's Swiftness": "Nature's Swiftness",
-                 "Insect Swarm": "Insect Swarm", "Moonkin Form": "Moonkin Form", "Wild Growth": "Wild Growth", "Leader of the Pack": "Leader of the Pack"}
+                 "Insect Swarm": "Insect Swarm", "Moonkin Form": "Moonkin Form", "Wild Growth": "Wild Growth", "Leader of the Pack": "Leader of the Pack",
+                 "Shifting Power": "Shifting Power"}
 CAT = {"Claw", "Rake", "Shred", "Rip", "Ferocious Bite", "Tiger's Fury", "Pounce", "Ravage", "Cower", "Dash", "Prowl"}
 BEAR = {"Maul", "Swipe", "Demoralizing Roar", "Enrage", "Bash", "Growl", "Primal Bite"}
 
@@ -145,6 +165,25 @@ def load_spellbook():
                     s.kind = "buff"
                 if name == "Feral Charge":
                     s.kind, s.charge, s.root, s.resource, s.cost = "buff", True, 4.0, "none", 0.0
+                # 2026-10-09 (module_lint): these parsed to no damage, and Entangling Roots to no root, so casting it did nothing
+                if name == "Entangling Roots" and ROOTS.search(txt):
+                    er = ROOTS.search(txt)
+                    s.dot, s.dot_dur = _num(er.group(1)), float(er.group(2))
+                    s.dot_ticks, s.dot_coef, s.root = max(1, int(round(s.dot_dur / 3.0))), coefs.get("per tick", 0.0), s.dot_dur
+                if name == "Hurricane" and STORM.search(txt):   # a channelled storm on the target's area (no druid rotation casts it)
+                    hu = STORM.search(txt)
+                    per, every = _num(hu.group(1)), float(hu.group(2))
+                    dur = float(hu.group(3)) if hu.group(3) else 10.0
+                    s.kind, s.channel, s.aoe = "channel", dur, True
+                    s.dot, s.dot_dur, s.dot_ticks, s.dot_coef = per * dur / every, dur, max(1, int(dur / every)), coefs.get("per tick", 0.0)
+                if name == "Lacerate" and LACERATE.search(txt):   # a bear bleed from 42 (the bear levels at 10-19 only): the base bleed, no stacks
+                    la = LACERATE.search(txt)
+                    s.kind, s.school = "melee", "physical"
+                    s.dot, s.dot_dur = _num(la.group(1)), float(la.group(2))
+                    s.dot_ticks = max(1, int(round(s.dot_dur / 3.0)))
+                if name == "Shifting Power":   # a cat talent since 70170 (where King of the Jungle was): mana into energy
+                    en = ENERGIZE.search(txt)
+                    s.kind, s.energize = "buff", (float(en.group(1)) if en else 0.0)
                 book.setdefault(name, []).append(s)
     for name in book:
         book[name].sort(key=lambda x: (x.level, x.rank))
@@ -152,6 +191,40 @@ def load_spellbook():
 
 
 BOOK = load_spellbook()
+
+# Tiger's Fury: since build 70170 the client grants it instead of a trainer teaching it, so the beta spellbook exports this module reads
+# (forever-spells) no longer list it. The numbers are the client's for spell 5217 as the ElliotWood/Forever simulator's spell data carries
+# them (commit 2ce8265, client 1.60.1.70291): level 24, 15% more physical damage for 6 sec, 30 sec cooldown, no cost, Cat Form only.
+# Whether players still have it is open (talentsforever.com's 70291 export lists it as gone): False leaves it out.
+TIGERS_FURY = True
+TIGERS_FURY_LEVEL, TIGERS_FURY_DURATION, TIGERS_FURY_COOLDOWN, TIGERS_FURY_BONUS = 24, 6.0, 30.0, 0.15
+if TIGERS_FURY and "Tiger's Fury" not in BOOK:
+    _tf = Spell(name="Tiger's Fury", school="physical", rank=1, level=TIGERS_FURY_LEVEL, cost=0.0, cast=0.0, cooldown=TIGERS_FURY_COOLDOWN,
+                range=5.0, resource="none")
+    _tf.kind = "buff"
+    _tf.text = "Increases physical damage done by 15% for 6 sec."
+    _tf.interrupt = parse_interrupt(_tf.text)
+    BOOK["Tiger's Fury"] = [_tf]
+
+# Rip before Ferocious Bite (levels 20-31): the only finisher, so it goes on at this many combo points while the mob has more than
+# this share of its health left. The old rule (5 points above half health) never fired at 20 or 30. 2026-10-09 smoke test (1,500
+# fights, seed 1, tuned drink rule): 2 points above 40% was the best of 1-5 points and 0-60% health, and against the old rule 3% faster
+# per kill at 30 for leveling-feral (0.3% at 20, noise) and 6-7% at 20 and 30 for restoration-leveling. ROTATION_KNOBS lets
+# rotation_opt.py tune both.
+RIP_EARLY_CP = 2
+RIP_EARLY_HP = 0.4
+# Shifting Power only above this share of mana; 1.01 = never. 2026-10-09 smoke test (a leveling-feral variant with Shredding Attacks,
+# Shifting Power and Improved Shifting Power, level 60, 1,500 fights): above 50% 38.1 s per kill, 65% 37.4, 80% 35.4, 95% 34.4, never
+# 33.9: solo, the mana comes back as drinking time (about 600 mana a cast) and costs more than the 40 energy saves. A raid's mana
+# buffs change that (the raid rotation casts it at 60 energy or less).
+SHIFTING_POWER_ABOVE = 1.01
+# Omen of Clarity: the client states no rate; the ElliotWood/Forever simulator fits beta logs at 2 procs a minute (4% a hit in Cat Form,
+# 8% in Bear Form; spells by their cast time, instants by a 1.5 s global cooldown) outside the client's 10 s internal cooldown, which
+# Moonkin Form halves (and doubles the chance: its tooltip). Clearcasting lasts 15 s.
+OMEN_PPM = 2.0
+OMEN_ICD = 10.0
+OMEN_MOONKIN_ICD = 0.5
+CLEARCASTING_DURATION = 15.0
 
 
 def talent_numbers():
@@ -177,10 +250,13 @@ MECHANICS = {
     "Shredding Attacks": "-6 energy/rank Shred (used only in the opener from behind)",
     "Primal Bite": "bear (levels 10-19): 100% weapon damage plus a bonus for 20 rage every 6 s",
     "Predatory Strikes": "+50%/rank of your level as attack power in forms",
-    "Blood Frenzy": "bear (levels 10-19): 50%/rank chance of 5 rage on a critical strike",
+    "Blood Frenzy": "bear: 50%/rank chance of 5 rage on a critical strike; cat: 50%/rank chance of an extra combo point on a critical Claw, Rake, Shred or Ravage",
     "Natural Instinct": "+10%/rank crit damage bonus on abilities",
     "Leader of the Pack": "+3% crit in forms",
-    "King of the Jungle": "Tiger's Fury grants 20 energy per rank",
+    "Shifting Power": "cat: 40 energy for 55% of base mana (less with Natural Shapeshifter) every 16 s, at 60 energy or less, above "
+                      "SHIFTING_POWER_ABOVE of mana (default never: solo its mana costs more drinking time than the energy saves) and "
+                      "keeping the mana for an emergency heal and the way back (70170 put it where King of the Jungle was)",
+    "Improved Shifting Power": "-4 s/rank Shifting Power cooldown",
     "Natural Reaction": "+1%/rank dodge",
     "Rend and Tear": "+2%/rank ability damage on a bleeding mob (Rake, Rip, Pounce)",
     "Berserk": "+100% crit on combo-point abilities for 15 s every 3 min",
@@ -188,16 +264,19 @@ MECHANICS = {
     "Nature's Majesty": "+2%/rank crit with spells and melee",
     "Nature's Reach": "+2%/rank hit",
     "Moonglow": "caster form only",
-    "Improved Moonfire": "Balance: +5%/rank Moonfire damage and crit (cat: no Moonfire)",
+    "Improved Moonfire": "Balance: +5%/rank Moonfire damage and critical strike chance (cat: no Moonfire)",
     "Improved Wrath": "Balance: -0.1 s/rank Wrath cast, -10%/rank mana (cat: not used)",
     "Vengeance": "Balance: +20%/rank Arcane / Nature crit damage bonus",
     "Moonfury": "Balance: +2%/rank Arcane / Nature damage",
-    "Nature's Grace": "Balance: a spell crit makes the next cast 0.5 s faster",
+    "Nature's Grace": "Balance: a critical hit from a non-periodic damage spell gives 10% faster casts and a 10% shorter global cooldown for 3 s",
     "Insect Swarm": "Balance: a Nature DoT kept up",
     "Improved Starfire": "Balance: -0.1 s/rank Starfire cast, 3%/rank chance of a 3 s stun",
-    "Eclipse": "Balance: after a Wrath the next two Starfires cast 0.5 s faster (up to 4 charges, 15 s)",
-    "Moonkin Form": "Balance: +360% armor from items from 40 (no shapeshift costs in the fights)",
-    "Furor": "20%/rank of your energy kept when shifting into Cat Form; 20%/rank chance of 10 rage when shifting into Bear Form (expected value)",
+    "Eclipse": "Balance: each Wrath stores 2 charges (up to 4, 15 s); each charge takes 0.17/0.33/0.5 s (by rank) off one Starfire",
+    "Moonkin Form": "Balance: +360% armor from items from 40 and Omen of Clarity twice as likely; healing spells need you out of the form "
+                    "(35% of base mana to go back); between fights a Moonkin eats instead of shifting out to heal",
+    "Nature's Splendor": "Moonfire and Rejuvenation +3 s, Regrowth +6 s, Insect Swarm +2 s: one or two more ticks of the same size",
+    "Furor": "Cat Form: back in with 20%/rank of the energy you left with plus 2/rank energy a second out of form (at most 20/rank); "
+             "Bear Form: 20%/rank chance of 10 rage (expected value)",
     "Naturalist": "+1%/rank all damage, -0.1 s/rank Healing Touch",
     "Natural Shapeshifter": "-10%/rank shapeshift mana",
     "Reflection": "17%/rank mana regen while casting",
@@ -208,12 +287,12 @@ MECHANICS = {
     "Living Spirit": "+5%/rank Spirit",
     "Swiftmend": "instant heal of a running Rejuvenation / Regrowth",
     "Subtlety": "threat only",
-    "Nature's Focus": "14%/rank less pushback on heals",
+    "Nature's Focus": "14%/rank chance to ignore pushback on Arcane and Nature spells (Wrath, Starfire, the heals)",
 }
 FIT = {
     "Ferocity": "scale", "Heart of the Wild": "scale", "Feral Swiftness": "scale", "Brutal Impact": "scale", "Thick Hide": "scale", "Savage Fury": "scale",
     "Sharpened Claws": "scale", "Shredding Attacks": "scale", "Predatory Strikes": "scale", "Natural Instinct": "scale", "Leader of the Pack": "scale",
-    "King of the Jungle": "scale", "Natural Reaction": "scale", "Rend and Tear": "scale", "Berserk": "scale", "Genesis": "scale", "Nature's Majesty": "scale",
+    "Shifting Power": "scale", "Improved Shifting Power": "scale", "Natural Reaction": "scale", "Rend and Tear": "scale", "Berserk": "scale", "Genesis": "scale", "Nature's Majesty": "scale",
     "Nature's Reach": "scale", "Furor": "scale", "Naturalist": "scale", "Natural Shapeshifter": "scale", "Reflection": "scale", "Gift of Nature": "scale",
     "Improved Rejuvenation": "scale", "Tranquil Spirit": "scale", "Nature's Swiftness": "scale", "Living Spirit": "scale", "Swiftmend": "scale", "Blood Frenzy": "scale",
     "Feral Charge": "scale", "Feral Instinct": "scale", "Moonglow": "scale", "Improved Moonfire": "scale", "Improved Wrath": "scale", "Nature's Focus": "scale",
@@ -223,11 +302,14 @@ SHARE_SOURCE = {"Melee": "white", "Shred": "shred", "Ferocious Bite": "ferocious
 NEW_SOURCES = {}
 KEY_TALENTS = ["Predatory Strikes", "Savage Fury", "Sharpened Claws"]
 DESCRIPTION = ("Single-target leveling fights against normal mobs of your level. Levels 10-19 in Bear Form: walk up, Enrage, Demoralizing Roar, Maul on every swing "
-               "the rage allows, Bash when low or against a casting mob. From 20 in Cat Form: prowl up behind the mob and open with Ravage (Pounce before 32, Claw "
-               "before that), Tiger's Fury, Rake once, Claw to five points (the mob faces you, so Shred is only for the opener), Rip on a healthy mob or Ferocious Bite, "
-               "Berserk on the pull; when low, shift out for a Regrowth (Nature's Swiftness + Healing Touch in an emergency) and shift back at 55% of base mana with Furor "
-               "keeping the energy. Between fights: 2 s loot, 6 s travel, Rejuvenation / Regrowth in caster form when hurt then Cat Form again, water below 35% mana.")
-NOT_MODELLED = "levels 1-9 (Wrath / Moonfire), Moonfire / Wrath pulls in bear levels, Faerie Fire, Swipe, Growl, Dash, Innervate, Barkskin, adds, gear upgrades within a level bracket."
+               "the rage allows, Bash when low or against a casting mob. From 20 in Cat Form: prowl up behind the mob and open with Ravage from 32 (Shred from 22, "
+               "Claw before; Pounce comes at 36, after Ravage), Tiger's Fury (from 24), Rake once, Claw to five points (the mob faces you, so Shred is only for the "
+               "opener), Ferocious Bite whenever it kills (from 32), Rip at five points on a mob above half health (before Ferocious Bite: Rip at "
+               f"{RIP_EARLY_CP} points on a mob above {RIP_EARLY_HP:.0%} of its health), Berserk on the pull; when low, shift out for a Regrowth (Nature's Swiftness "
+               "+ Healing Touch in an emergency) and shift back at 55% of base mana, Furor carrying the energy. Between fights: 2 s loot, 6 s travel, Rejuvenation / "
+               "Regrowth in caster form when hurt (only with the mana to shift back) then Cat Form again, water below 35% mana (the tuned rule drinks lower).")
+NOT_MODELLED = ("levels 1-9 (Wrath / Moonfire), Moonfire / Wrath pulls in bear levels, Faerie Fire, Swipe, Growl, Dash, Innervate, Barkskin, Hurricane, "
+                "Lacerate's stacks, adds, gear upgrades within a level bracket.")
 # rebuild.py: which scorer model, hand draft and optimizer build the pipeline calibrates, races and reports for this class
 PIPELINE = {"variants": [{'spec': 'balance-dps', 'opt': 'opt-balance-dps-leveling-st', 'tag': 'bal', 'profile': 'leveling-st', 'lookahead': 16, 'sets': [],
                           'levels': '20,30,40,50,60', 'calibrate_levels': '30,60', 'label': 'Balance (its own rotation)', 'report': 'balance-dps-opt'}],
@@ -239,6 +321,11 @@ PIPELINE = {"variants": [{'spec': 'balance-dps', 'opt': 'opt-balance-dps-levelin
 class DruidModule(BaseModule):
     resource = "energy"
     melee = True
+    RIP_EARLY_CP = RIP_EARLY_CP   # Rip before Ferocious Bite: at this many combo points ...
+    RIP_EARLY_HP = RIP_EARLY_HP   # ... while the mob has more than this share of its health
+    SHIFTING_POWER_ABOVE = SHIFTING_POWER_ABOVE   # Shifting Power only above this share of mana (1.01: never; see the module constant)
+    ROTATION_KNOBS = {"RIP_EARLY_CP": [2, 3, 4, 5], "RIP_EARLY_HP": [0.0, 0.25, 0.4, 0.5],
+                      "SHIFTING_POWER_ABOVE": [0.5, 0.65, 0.8, 0.95, 1.01]}   # tuned by rotation_opt.py (1.01: never)
 
     def __init__(self, talents, level, spec="feral-cat-dps", gear="leveling"):
         self.t = {k: v for k, v in talents.items() if v > 0}
@@ -260,6 +347,36 @@ class DruidModule(BaseModule):
         self.resource = "rage" if self.form == "bear" else ("mana" if self.balance else "energy")
         self.opened = False
         self.armor_spell_used = {"cat": "Cat Form", "bear": "Bear Form"}.get(self.form, "caster")
+        self.in_moonkin = self.moonkin       # Moonkin Form is up from the first pull; an emergency heal leaves it
+        self._moonkin_armor = 0.0
+        self._cat_exit = None                # (time, energy) when Cat Form was last left: Furor
+        self._omen_ready = 0.0               # Omen of Clarity's internal cooldown
+        self._apply_splendor()
+
+    def _apply_splendor(self):
+        """Nature's Splendor: Moonfire, Rejuvenation, Regrowth and Insect Swarm last longer; the extra time adds ticks of the same size
+        (this module's own copies: BOOK is shared)."""
+        if not self.rank("Nature's Splendor"):
+            return
+        text = next((t["ranks"][0] for tr in TREE["trees"] for t in tr["talents"] if t["name"] == "Nature's Splendor"), "")
+        for name in ("Moonfire", "Rejuvenation", "Regrowth", "Insect Swarm"):
+            mt = re.search(rf"{name}(?: and [A-Z][\w' ]+?)? spells? by ([\d.]+) sec", text)
+            s = self.spells.get(name)
+            if not mt or s is None:
+                continue
+            extra = float(mt.group(1))
+            s = copy.copy(s)
+            if s.dot > 0 and s.dot_ticks > 0 and s.dot_dur > 0:
+                every = s.dot_dur / s.dot_ticks
+                n = max(1, int(round(extra / every)))
+                s.dot += s.dot / s.dot_ticks * n
+                s.dot_ticks += n
+                s.dot_dur += n * every
+            if s.hot > 0 and s.hot_dur > 0:
+                s.hot *= (s.hot_dur + extra) / s.hot_dur
+                s.hot_dur += extra
+            self.spells[name] = s
+            self.book[name] = s
 
     # ------------------------------------------------------------ talent helpers
     def rank(self, name):
@@ -285,15 +402,21 @@ class DruidModule(BaseModule):
     def make_player(self, level):
         base = class_base_stats("druid", level)
         g = gear_stats(level, self.gear, "druid")
-        strength = (base["strength"] + g["strength"]) * (1 + self.tv("Heart of the Wild", 1) / 100 if self.form == "cat" else 1.0)
+        # Heart of the Wild's tooltip: Intellect, then Stamina in Bear Form, then Strength in Cat Form (numbers 0, 1, 2)
+        strength = (base["strength"] + g["strength"]) * (1 + self.tv("Heart of the Wild", 2) / 100 if self.form == "cat" else 1.0)
         agility = base["agility"] + g["agility"]
-        stamina = (base["stamina"] + g["stamina"]) * (1 + self.tv("Heart of the Wild", 2) / 100 if self.form == "bear" else 1.0)
+        stamina = (base["stamina"] + g["stamina"]) * (1 + self.tv("Heart of the Wild", 1) / 100 if self.form == "bear" else 1.0)
         intellect = (base["intellect"] + g["intellect"]) * (1 + self.tv("Heart of the Wild", 0) / 100)
         spirit = (base["spirit"] + g["spirit"]) * (1 + self.tv("Living Spirit", 0) / 100)
         motw = self.book.get("Mark of the Wild")
         mm = re.search(r"armor by (\d+)", motw.text) if motw else None
         form = self.form_spell
-        armor = g["armor"] * (1 + (3.6 if self.moonkin else getattr(form, "form_armor_pct", 0.0) / 100)) + (_num(mm.group(1)) if mm else 0.0) + level * self.rank("Thick Hide")
+        moonkin_pct = self.tv("Moonkin Form", 1) / 100 if self.moonkin else 0.0   # "Armor contribution from items by 360%"
+        self._moonkin_armor = g["armor"] * moonkin_pct
+        self.in_moonkin = self.moonkin           # a new session (its clock starts again): fresh state
+        self._cat_exit = None
+        self._omen_ready = 0.0
+        armor = g["armor"] * (1 + (moonkin_pct if self.moonkin else getattr(form, "form_armor_pct", 0.0) / 100)) + (_num(mm.group(1)) if mm else 0.0) + level * self.rank("Thick Hide")
         bm = class_base_mana("druid", level)
         cat = self.book.get("Cat Form")
         p = Player(level=level, hp_max=class_base_health("druid", level) + 10 * stamina + getattr(form, "form_hp", 0.0), hp=0.0, mana_max=bm + 15 * intellect, mana=0.0, base_mana=bm,
@@ -332,6 +455,57 @@ class DruidModule(BaseModule):
         form = self.form_spell
         return (form.cost / 100 * p.base_mana if form else 0.0) * (1 - self.tv("Natural Shapeshifter", 0) / 100)
 
+    # Moonkin Form "prevents the use of healing spells": a heal leaves the form (free), going back costs the form's mana
+    def moonkin_cost(self, p):
+        mk = self.spells.get("Moonkin Form")
+        if mk is None:
+            return 0.0
+        cost = mk.cost / 100 * p.base_mana if "cost_pct" in mk.tags else mk.cost
+        return cost * (1 - self.tv("Natural Shapeshifter", 0) / 100)
+
+    def leave_moonkin(self, fight):
+        if self.in_moonkin:
+            self.in_moonkin = False
+            fight.note("leaves Moonkin Form to heal")
+
+    def enter_moonkin(self, fight_or_none, p, t):
+        cost = self.moonkin_cost(p)
+        if p.mana < cost:
+            return False
+        p.mana -= cost
+        p.fsr_until = t + 5.0
+        self.in_moonkin = True
+        if fight_or_none is not None:
+            fight_or_none.note("Moonkin Form")
+            fight_or_none.casts["Moonkin Form"] = fight_or_none.casts.get("Moonkin Form", 0) + 1
+        return True
+
+    def eclipse_charges(self, fight):
+        e = fight.p.buff("Eclipse", fight.t) if fight else None
+        return e.get("charges", 0) if e else 0
+
+    def omen_roll(self, fight, seconds):
+        """Omen of Clarity (from 20): a chance at Clearcasting on a landed attack or spell, OMEN_PPM procs a minute by the swing or cast
+        time, outside the internal cooldown; Moonkin Form doubles the chance (its tooltip) and halves the cooldown (the client)."""
+        if "Omen of Clarity" not in self.spells or fight.t < self._omen_ready:
+            return
+        moonkin = self.balance and self.in_moonkin
+        chance = OMEN_PPM * seconds / 60.0 * ((1 + self.tv("Moonkin Form", 0) / 100) if moonkin else 1.0)
+        if fight.rng.random() < chance:
+            fight.p.buffs["Clearcasting"] = {"until": fight.t + CLEARCASTING_DURATION}
+            self._omen_ready = fight.t + OMEN_ICD * (OMEN_MOONKIN_ICD if moonkin else 1.0)
+
+    def base_cast(self, spell):
+        """The cast time with the talents' flat cuts only (no haste, no Eclipse): what Omen of Clarity's rate reads."""
+        c = spell.cast
+        if spell.name == "Healing Touch":
+            c = max(GCD, c - self.tv("Naturalist", 0))
+        elif spell.name == "Wrath":
+            c = max(GCD, c - self.tv("Improved Wrath", 0))
+        elif spell.name == "Starfire":
+            c = max(GCD, c - self.tv("Improved Starfire", 0))
+        return c
+
     # ------------------------------------------------------------ engine hooks: numbers
     def mana_cost(self, spell):
         cost = spell.cost
@@ -347,37 +521,39 @@ class DruidModule(BaseModule):
             cost = max(0.0, cost - 6.0 * self.rank("Shredding Attacks"))
         if spell.name == "Healing Touch":
             cost *= 1 - self.tv("Tranquil Spirit", 0) / 100
+        if spell.name == "Shifting Power":   # "cost is reduced by effects that reduce the cost of Shapeshifting"
+            cost *= 1 - self.tv("Natural Shapeshifter", 0) / 100
         return cost
 
     def final_cost(self, fight, spell, cost):
-        if fight.p.buff("Clearcasting", fight.t) and spell.kind in ("melee", "heal", "spell") and cost > 0:
+        # Clearcasting: the next ability or spell that costs something is free; "Clearcasting is not consumed by Wrath" (Forever)
+        if fight.p.buff("Clearcasting", fight.t) and spell.kind in ("melee", "heal", "spell") and cost > 0 and spell.name != "Wrath":
             del fight.p.buffs["Clearcasting"]
             return 0.0
         return cost
 
     def cast_time(self, spell):
-        c = spell.cast
-        if spell.name == "Healing Touch":
-            c = max(GCD, c - 0.1 * self.rank("Naturalist"))
-        if spell.name == "Wrath":
-            c = max(GCD, c - 0.1 * self.rank("Improved Wrath"))
-        if spell.name == "Starfire":
-            c = max(GCD, c - 0.1 * self.rank("Improved Starfire"))
-            f = self._fight
-            if f and f.p.buff("Eclipse", f.t) and f.p.buffs["Eclipse"].get("charges", 0) > 0:
-                c = max(GCD, c - 0.5)
+        """Stateless (the engine also calls it for pushback): flat talent cuts, Eclipse's cut by rank while it holds charges, Nature's
+        Swiftness, then Nature's Grace's haste (10%, floored at its 10% shorter global cooldown)."""
         f = self._fight
-        if c > 0 and f and f.p.buff("Nature's Grace", f.t):
-            c = max(GCD, c - 0.5)
-        if c > 0 and self._fight and self._fight.p.buff("Nature's Swiftness", self._fight.t) and spell.school == "nature":
+        c = self.base_cast(spell)
+        if spell.name == "Starfire" and self.rank("Eclipse") and self.eclipse_charges(f) > 0:
+            c = max(GCD, c - self.tv("Eclipse", 1))
+        if c > 0 and f and f.p.buff("Nature's Swiftness", f.t) and spell.school == "nature":
             return 0.0
+        if c > 0 and f and self.rank("Nature's Grace") and f.p.buff("Nature's Grace", f.t):
+            ng = self.tv("Nature's Grace", 0) / 100
+            c = max(GCD * (1 - ng), c / (1 + ng))
         return c
 
     def crit_bonus(self, spell, frozen):
         f = self._fight
+        bonus = 0.0
         if f and spell.combo > 0 and f.p.buff("Berserk", f.t):
-            return 1.0
-        return 0.0
+            bonus += 1.0
+        if spell.name == "Moonfire":
+            bonus += self.tv("Improved Moonfire", 0) / 100   # "damage and critical strike chance of your Moonfire spell"
+        return bonus
 
     def crit_damage_bonus(self, spell):
         if spell.kind == "melee" and spell.name != "Melee":
@@ -393,8 +569,8 @@ class DruidModule(BaseModule):
             if spell.name == "Moonfire":
                 m *= 1 + self.tv("Improved Moonfire", 0) / 100
         f = self._fight
-        if f and f.p.buff("Tiger's Fury", f.t):
-            m *= 1.15
+        if f and spell.school == "physical" and f.p.buff("Tiger's Fury", f.t):
+            m *= 1 + TIGERS_FURY_BONUS
         if spell.name in ("Claw", "Rake", "Shred", "Maul", "Swipe"):
             m *= 1 + self.tv("Savage Fury", 0) / 100
         if spell.kind == "melee" and spell.name != "Melee" and f and (f.dot_active("Rake") or f.dot_active("Rip") or f.dot_active("Pounce")):
@@ -426,7 +602,8 @@ class DruidModule(BaseModule):
         return class_health_regen_tick("druid", p.spirit)
 
     def pushback_resisted(self, fight, spell):
-        if spell.kind == "heal" and self.rank("Nature's Focus"):
+        # Nature's Focus (Forever): "avoid interruption caused by damage while casting Arcane and Nature spells", damage spells included
+        if self.rank("Nature's Focus") and spell.school in ("arcane", "nature") and spell.kind in ("spell", "heal", "channel"):
             return fight.rng.random() < self.tv("Nature's Focus", 0) / 100
         return False
 
@@ -436,15 +613,30 @@ class DruidModule(BaseModule):
     # ------------------------------------------------------------ forms
     def shift_out(self, fight):
         p = fight.p
+        if self.form == "cat" and self.in_cat:
+            self._cat_exit = (fight.t, p.energy)
+            p.buffs.pop("Tiger's Fury", None)   # leaving Cat Form ends Tiger's Fury
         self.in_cat = False
         p.mh = None
         fight.note(f"shifts out of {self.form_spell.name if self.form_spell else 'form'}")
 
     def armor_bonus(self):
         f = self._fight
+        bonus = 0.0
         if f and self.form == "bear" and f.p.buff("Enrage", f.t):
-            return -0.27 * f.p.armor
-        return 0.0
+            bonus -= 0.27 * f.p.armor
+        if self.moonkin and not self.in_moonkin:
+            bonus -= self._moonkin_armor   # out of Moonkin Form after a heal: no armor bonus from the form
+        return bonus
+
+    def furor_energy(self, p, t):
+        """Energy on entering Cat Form (Forever's Furor): a share of the energy you left the form with plus some per second out of it,
+        up to a cap (20%, 2 a second and 20 a rank: tooltip numbers 2, 3 and 4; number 1 is the bear's 10 rage). None without Furor."""
+        if not self.rank("Furor"):
+            return 0.0
+        left_t, left_e = self._cat_exit if self._cat_exit else (t, p.energy)
+        carry = left_e * self.tv("Furor", 2) / 100 + self.tv("Furor", 3) * max(0.0, t - left_t)
+        return min(self.tv("Furor", 4), carry, p.energy_max)
 
     def on_regen_tick(self, fight, p, t):
         en = p.buff("Enrage", t)
@@ -460,9 +652,9 @@ class DruidModule(BaseModule):
         p.mana -= cost
         p.fsr_until = t + 5.0
         if self.form == "bear":
-            p.rage = min(p.rage_max, p.rage + 10.0 * self.tv("Furor", 0) / 100)   # expected value of the rage chance
+            p.rage = min(p.rage_max, p.rage + self.tv("Furor", 1) * self.tv("Furor", 0) / 100)   # expected value of the rage chance
         else:
-            p.energy = p.energy * self.tv("Furor", 1) / 100 if self.rank("Furor") else 0.0
+            p.energy = self.furor_energy(p, t)
         self.in_cat = True
         p.mh = self.paw
         name = self.form_spell.name if self.form_spell else "form"
@@ -478,6 +670,8 @@ class DruidModule(BaseModule):
         p, m, t = fight.p, fight.m, fight.t
         self.opened = False
         if self.balance:
+            if self.moonkin and not self.in_moonkin:
+                self.enter_moonkin(fight, p, t)   # back into Moonkin Form before the pull when the mana allows
             return
         if not self.in_cat:
             if not self.shift_in(fight, p, t):
@@ -500,35 +694,37 @@ class DruidModule(BaseModule):
             self.opened = True
         if outcome in ("miss", "dodge", "parry"):
             return
-        if "Omen of Clarity" in self.spells and fight.rng.random() < 0.06:
-            p.buffs["Clearcasting"] = {"until": t + 15.0}
+        if p.mh is not None:
+            self.omen_roll(fight, p.mh.speed)   # white hits and abilities alike, by the form's swing
         if outcome == "crit" and self.form == "bear" and self.rank("Blood Frenzy") and fight.rng.random() < self.tv("Blood Frenzy", 0) / 100:
-            p.rage = min(p.rage_max, p.rage + 5.0)
+            p.rage = min(p.rage_max, p.rage + self.tv("Blood Frenzy", 1))
+        # Blood Frenzy's cat half: "your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 50%/100%
+        # chance to add an additional Combo Point"
+        if (outcome == "crit" and self.form == "cat" and spell.combo > 0 and amount > 0 and self.rank("Blood Frenzy")
+                and fight.rng.random() < self.tv("Blood Frenzy", 2) / 100):
+            p.combo = min(5, p.combo + 1)
         if spell.name == "Rip" and amount == 0:
             cp = max(1, fight.last_combo)
             lo1, _ = spell.one
             lo5, _ = spell.five
-            total = (lo1 + (lo5 - lo1) * (cp - 1) / 4 + 0.06 * cp * p.attack_power) * self.periodic_multiplier(spell)
+            # attack power: 1% a combo point a tick over 6 ticks, no more above 4 points (Classic's rule, as the raid simulator has it)
+            total = (lo1 + (lo5 - lo1) * (cp - 1) / 4 + 0.06 * min(cp, 4) * p.attack_power) * self.periodic_multiplier(spell)
             fight.refresh_dot("Rip", total, 6, spell.dot_dur / 6.0, p.melee_crit, 2.0)
 
     def on_hit(self, fight, spell, amount, crit, frozen):
         p, m, t = fight.p, fight.m, fight.t
+        if spell.kind in ("spell", "heal"):
+            self.omen_roll(fight, self.base_cast(spell) or GCD)   # spells by their cast time, instants by the global cooldown
         if self.balance and spell.kind == "spell":
-            if spell.name == "Wrath" and self.rank("Eclipse"):
-                e = p.buffs.get("Eclipse") if p.buff("Eclipse", t) else None
-                p.buffs["Eclipse"] = {"until": t + 15.0, "charges": min(4, (e["charges"] if e else 0) + 2)}
-            if spell.name == "Starfire" and p.buff("Eclipse", t) and p.buffs["Eclipse"].get("charges", 0) > 0:
-                p.buffs["Eclipse"]["charges"] -= 1
-            if crit and self.rank("Nature's Grace") and spell.cast > 0:
-                p.buffs["Nature's Grace"] = {"until": t + 15.0}
-            elif spell.cast > 0 and p.buff("Nature's Grace", t) and not crit:
-                del p.buffs["Nature's Grace"]
+            # Nature's Grace (Forever): any critical non-periodic damage spell, 10% faster casts and global cooldown for 3 s
+            if crit and amount > 0 and self.rank("Nature's Grace"):
+                p.buffs["Nature's Grace"] = {"until": t + self.tv("Nature's Grace", 1)}
             if spell.name == "Starfire" and self.rank("Improved Starfire") and fight.rng.random() < self.tv("Improved Starfire", 1) / 100:
-                m.stun_until = max(m.stun_until, t + 3.0)
+                m.stun_until = max(m.stun_until, t + self.tv("Improved Starfire", 2))
         if spell.name == "Tiger's Fury":
-            p.buffs["Tiger's Fury"] = {"until": t + 6.0}
-            if self.rank("King of the Jungle"):
-                p.energy = min(p.energy_max, p.energy + self.tv("King of the Jungle", 0))
+            p.buffs["Tiger's Fury"] = {"until": t + TIGERS_FURY_DURATION}
+        if spell.name == "Shifting Power":
+            p.energy = min(p.energy_max, p.energy + getattr(spell, "energize", 0.0))
         if spell.name == "Nature's Swiftness":
             p.buffs["Nature's Swiftness"] = {"until": t + 60.0}
         if spell.kind == "heal" and spell.cast > 0 and p.buff("Nature's Swiftness", t):
@@ -546,14 +742,34 @@ class DruidModule(BaseModule):
     def after_cast(self, fight, spell):
         p, t = fight.p, fight.t
         if spell.cooldown > 0:
-            p.cooldowns[spell.name] = t + spell.cooldown - (15.0 * self.rank("Brutal Impact") if spell.name == "Bash" else 0.0)
+            cut = 15.0 * self.rank("Brutal Impact") if spell.name == "Bash" else (self.tv("Improved Shifting Power", 0) if spell.name == "Shifting Power" else 0.0)
+            p.cooldowns[spell.name] = t + spell.cooldown - cut
         if spell.name in ("Cat Form", "Bear Form"):
             self.shift_in(fight, p, t)
+        if self.balance and self.rank("Eclipse"):
+            # Eclipse: a completed Wrath stores 2 charges (up to 4, 15 s); a completed Starfire spends one (its cast time read the charge)
+            e = p.buff("Eclipse", t)
+            if spell.name == "Wrath":
+                charges = min(int(self.tv("Eclipse", 2)), (e.get("charges", 0) if e else 0) + int(self.tv("Eclipse", 0)))
+                p.buffs["Eclipse"] = {"until": t + self.tv("Eclipse", 3), "charges": charges}
+            elif spell.name == "Starfire" and e and e.get("charges", 0) > 0:
+                e["charges"] -= 1
+        if self.balance and spell.kind in ("spell", "heal"):
+            # global cooldown: an instant's was set just now (t + GCD) and is 10% shorter under Nature's Grace; a cast spell's started
+            # with the cast and ends with it at the latest (Nature's Grace can haste a cast below 1.5 s)
+            if p.gcd_until - t < GCD - 1e-6:
+                p.gcd_until = min(p.gcd_until, t)
+            elif self.rank("Nature's Grace") and p.buff("Nature's Grace", t):
+                p.gcd_until = min(p.gcd_until, t + GCD * (1 - self.tv("Nature's Grace", 0) / 100))
 
     def after_fight(self, p, t):
-        """Heal in caster form when hurt (Rejuvenation, Regrowth), then Cat Form again if the mana allows."""
+        """Heal in caster form when hurt (Rejuvenation, Regrowth), then Cat Form again if the mana allows. A Moonkin stays in its form
+        and eats (healing spells would need the form dropped and 35% of base mana to go back); out of it after an emergency heal, it
+        heals here and shifts back."""
         spent = 0.0
         if self.balance:
+            if self.in_moonkin:
+                return 0.0
             rj, rg = self.spells.get("Rejuvenation"), self.spells.get("Regrowth")
             for heal in (rj, rg):
                 if heal is None or p.hp >= 0.85 * p.hp_max or p.hp >= 0.70 * p.hp_max and heal is rg or p.mana < self.mana_cost(heal):
@@ -562,10 +778,16 @@ class DruidModule(BaseModule):
                 total = ((heal.heal_min + heal.heal_max) / 2 + heal.heal_coef * p.spell_power + heal.hot) * self.heal_multiplier(heal)
                 p.hp = min(p.hp_max, p.hp + total)
                 spent += max(GCD, heal.cast)
+            if self.moonkin and not self.in_moonkin and self.enter_moonkin(None, p, t):
+                spent += GCD
             return spent
         rj, rg = self.spells.get("Rejuvenation"), self.spells.get("Regrowth")
-        if p.hp < 0.70 * p.hp_max and (rj or rg) and self.form != "caster":
+        cheapest = min((self.mana_cost(h) for h in (rj, rg) if h is not None), default=0.0)
+        # shift out to heal only with the mana for a heal and the way back (out of form already: heal with what there is)
+        if p.hp < 0.70 * p.hp_max and (rj or rg) and self.form != "caster" and (not self.in_cat or p.mana >= self.shift_cost(p) + cheapest):
             if self.in_cat:
+                if self.form == "cat":
+                    self._cat_exit = (t, p.energy)
                 self.in_cat = False
                 p.mh = None
             for heal in (rj, rg):
@@ -603,7 +825,8 @@ class DruidModule(BaseModule):
     def decide_balance(self, fight, can, in_melee):
         """Balance: Moonfire and Insect Swarm up, Wrath while the mob walks in (Eclipse charges), Starfire on Eclipse charges
         or when the mob is rooted / stunned, Wrath otherwise (pushback in melee), Regrowth below 35% health with Nature's
-        Swiftness when it is up; Entangling Roots when low and the mob is not rooted."""
+        Swiftness when it is up; Entangling Roots when low and the mob is not rooted. A heal leaves Moonkin Form; the druid goes
+        back in while the mob still has half its health (else after the fight). Out of mana it waits: druids cannot use wands."""
         p, m, t = fight.p, fight.m, fight.t
         sp = self.spells
         wrath, mf, sf, swarm, roots, rg, ns, ht = (sp.get(n) for n in ("Wrath", "Moonfire", "Starfire", "Insect Swarm", "Entangling Roots", "Regrowth", "Nature's Swiftness", "Healing Touch"))
@@ -616,11 +839,20 @@ class DruidModule(BaseModule):
             if ns and can(ns) and ht and not p.buff("Nature's Swiftness", t):
                 return ns
             if ht and can(ht) and p.buff("Nature's Swiftness", t):
+                self.leave_moonkin(fight)
                 return ht
             if roots and can(roots) and in_melee and not m.rooted(t) and hp > 0.3 * m.hp_max:
                 return roots
+            if m.rooted(t) and in_melee and not m.stunned(t):
+                return "retreat"   # a rooted mob still swings at you in melee range: step out before the heal
             if rg and can(rg) and (m.rooted(t) or m.stunned(t) or not in_melee):
+                self.leave_moonkin(fight)
                 return rg
+        if self.moonkin and not self.in_moonkin and p.hp >= 0.5 * p.hp_max and hp > 0.5 * m.hp_max:
+            reserve = 2 * self.mana_cost(sf) if sf else 0.0   # keep the mana for two Starfires
+            if p.mana >= self.moonkin_cost(p) + reserve and self.enter_moonkin(fight, p, t):
+                p.gcd_until = t + GCD
+                return None
         if mf and can(mf) and hp <= avg(mf) * 0.9:
             return mf
         if wrath and can(wrath) and hp <= avg(wrath) * 0.9:
@@ -629,14 +861,16 @@ class DruidModule(BaseModule):
             return mf
         if swarm and can(swarm) and not fight.dot_active("Insect Swarm") and hp > 0.4 * m.hp_max:
             return swarm
-        eclipse = p.buff("Eclipse", t) and p.buffs["Eclipse"].get("charges", 0) > 0
+        eclipse = self.rank("Eclipse") and self.eclipse_charges(fight) > 0
         if sf and can(sf) and (eclipse or m.rooted(t) or m.stunned(t)) and hp > avg(sf) * 0.5:
             return sf
         if wrath and can(wrath) and hp > avg(wrath) * 0.5:
             return wrath
         if sf and can(sf):
             return sf
-        return "wand" if p.mana < 50 else None
+        if wrath and can(wrath):
+            return wrath
+        return None   # out of mana: wait for regeneration (druids cannot use a wand)
 
     def decide(self, fight):
         p, m, t = fight.p, fight.m, fight.t
@@ -696,12 +930,22 @@ class DruidModule(BaseModule):
             if hp <= est * 0.95:
                 fight._bite_extra = max(0.0, p.energy - self.mana_cost(bite))
                 return bite
+        # before Ferocious Bite (levels 20-31) Rip is the only finisher: spend the points on it while the mob will live through some ticks
+        if bite is None and rip and can(rip) and not fight.dot_active("Rip") and p.combo >= self.RIP_EARLY_CP and hp > self.RIP_EARLY_HP * m.hp_max:
+            return rip
         if p.combo >= 5:
             if rip and can(rip) and hp > 0.5 * m.hp_max and not fight.dot_active("Rip"):
                 return rip
             if bite and can(bite):
                 fight._bite_extra = max(0.0, p.energy - self.mana_cost(bite))
                 return bite
+        # Shifting Power: 40 energy for mana, at 60 energy or less (nothing spills over the cap) on a mob worth it, keeping the mana for
+        # an emergency Regrowth and the shift back
+        spw = sp.get("Shifting Power")
+        if (spw and can(spw) and p.energy <= p.energy_max - getattr(spw, "energize", 0.0) and hp > 0.3 * m.hp_max
+                and p.mana >= self.SHIFTING_POWER_ABOVE * p.mana_max
+                and p.mana - self.mana_cost(spw) >= self.shift_cost(p) + (self.mana_cost(rg) if rg else 0.0)):
+            return spw
         if rake and can(rake) and not fight.dot_active("Rake") and hp > 0.3 * m.hp_max:
             return rake
         if claw and can(claw):

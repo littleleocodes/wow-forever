@@ -1,10 +1,56 @@
 """Restoration druid raid healer for the healer lab: Rejuvenation kept on the tank, Healing Touch (downranked to the deficit)
 when the tank is low, Regrowth as the fast heal, Swiftmend and Nature's Swiftness in emergencies, Wild Growth or Tranquility
-when the group is hurt, Innervate on yourself when mana runs low; Nature's Grace speeds the cast after a critical heal."""
+when the group is hurt, Innervate on yourself when mana runs low.
+
+Talent mechanics follow the 70291 tooltips (`forever-talents/druid.json`, numbers read from them; 2026-10-09 fixes): Nature's Grace
+gives 10% faster casts and a 10% shorter global cooldown for 3 s after a critical direct heal (Classic's was 0.5 s off the next
+cast); Gift of the Earthmother takes 0.5 s off the global cooldown of Rejuvenation, Swiftmend and Wild Growth (it was modelled as
++5% periodic healing); Nature's Splendor lengthens Rejuvenation by 3 s and Regrowth by 6 s, more ticks of the same size (it was
++4%); Swiftmend leaves the heal over time in place (Forever's tooltip dropped Classic's "Consumes"; SWIFTMEND_CONSUMES reads it);
+Moonglow does nothing for heals (it cheapens damaging spells only, and the engine's damage-only test reads "damage spell", not
+"damaging spells", so its parsed -25% mana had reached every heal)."""
+import json
+import re
+
 import engine as E
 import tables as T
 
 PIPELINE = {"spec": "resto-heal", "hand": "resto-raid-healer", "opt": "opt-resto-heal-raid-heal", "tag": "resto"}
+
+_TREE = json.load(open(E.ROOT / "_reference/data/forever-talents/druid.json", encoding="utf-8"))
+_RANKS = {t["name"]: t["ranks"] for tr in _TREE["trees"] for t in tr["talents"]}
+_NUM = re.compile(r"(\d+(?:\.\d+)?)")
+
+
+def talent_text(name, rank=1):
+    """A talent's beta tooltip at a rank ('' when the tree has no such talent)."""
+    ranks = _RANKS.get(name) or [""]
+    return ranks[min(max(rank, 1), len(ranks)) - 1] or ""
+
+
+def talent_numbers(name, rank=1):
+    return [float(x) for x in _NUM.findall(talent_text(name, rank).replace(",", ""))]
+
+
+def _first(nums, i, default=0.0):
+    return nums[i] if len(nums) > i else default
+
+
+# Nature's Grace: "... increasing your spellcasting speed and reducing your global cooldown by 10% for 3 sec."
+NG_HASTE = _first(talent_numbers("Nature's Grace"), 0) / 100
+NG_DURATION = _first(talent_numbers("Nature's Grace"), 1, 3.0)
+# Gift of the Earthmother: "Reduces the global cooldown by 0.5 seconds on your Rejuvenation, Swiftmend, and Wild Growth spells."
+_gote = re.search(r"by ([\d.]+) seconds? on your (.+?) spells?", talent_text("Gift of the Earthmother"))
+GOTE_CUT = float(_gote.group(1)) if _gote else 0.0
+GOTE_SPELLS = tuple(x.strip() for x in re.split(r",\s*(?:and\s+)?|\s+and\s+", _gote.group(2)) if x.strip()) if _gote else ()
+# Nature's Splendor: "Increases the duration of your Moonfire and Rejuvenation spells by 3 sec, your Regrowth spell by 6 sec, ..."
+SPLENDOR = {}
+for _name in ("Rejuvenation", "Regrowth"):
+    _m = re.search(rf"{_name} spells? by ([\d.]+) sec", talent_text("Nature's Splendor"))
+    if _m:
+        SPLENDOR[_name] = float(_m.group(1))
+# Swiftmend: Classic "Consumes a Rejuvenation or Regrowth effect ..."; Forever's tooltip no longer says so.
+SWIFTMEND_CONSUMES = bool(re.search(r"\bconsume", talent_text("Swiftmend"), re.I))
 
 
 class Healer(E.BaseHealer):
@@ -13,12 +59,14 @@ class Healer(E.BaseHealer):
     ROLES = {"big": "Healing Touch", "fast": "Regrowth", "hot": "Rejuvenation", "group": "Wild Growth", "instant": "Swiftmend"}
     TALENT_SPELLS = {"Swiftmend": "Swiftmend", "Wild Growth": "Wild Growth", "Nature's Swiftness": "Nature's Swiftness"}
     MECHANICS = {
-        "Swiftmend": "instant heal for the full periodic amount of the target's Rejuvenation or Regrowth (consumed), 15 s cooldown",
-        "Nature's Swiftness": "instant Healing Touch on a tank under 35%, every 3 min",
-        "Nature's Grace": "after a critical heal the next cast is 0.5 s faster",
+        "Swiftmend": "instant heal for the full periodic amount of the target's Regrowth or Rejuvenation, 15 s cooldown; the heal over time "
+                     "stays (Forever's tooltip no longer says it is consumed)",
+        "Nature's Swiftness": "instant Healing Touch on a tank under the emergency threshold, every 3 min",
+        "Nature's Grace": "a critical direct heal: 10% faster casts and a 10% shorter global cooldown for 3 s",
         "Genesis": "+1%/rank periodic healing",
-        "Gift of the Earthmother": "+5% periodic healing",
-        "Nature's Splendor": "+4% Rejuvenation and Regrowth",
+        "Gift of the Earthmother": "Rejuvenation, Swiftmend and Wild Growth: 0.5 s shorter global cooldown",
+        "Nature's Splendor": "Rejuvenation +3 s, Regrowth +6 s: one or two more ticks of the same size",
+        "Moonglow": "nothing for heals: Forever's Moonglow cheapens damaging spells only",
         "Wild Growth": "679 over 7 s on the group, 6 s cooldown: the group heal",
         "Innervate": "on yourself under 40% mana (every 6 min)",
     }
@@ -30,14 +78,19 @@ class Healer(E.BaseHealer):
         super().__init__(allocation, game)
         if "Wild Growth" not in self.book:
             self.ROLES = dict(self.ROLES, group="Tranquility")
+        if self.rank("Nature's Splendor"):
+            for name, extra in SPLENDOR.items():
+                for h in self.book.get(name, []):   # this healer's own copy of the spellbook
+                    if h.hot > 0 and h.hot_dur > 0 and h.tick_every > 0:
+                        ticks = max(1, int(round(h.hot_dur / h.tick_every)))
+                        add = max(1, int(round(extra / h.tick_every)))
+                        h.hot *= (ticks + add) / ticks
+                        h.hot_dur += add * h.tick_every
 
     def heal_mult_hook(self, spell, target, sim):
-        m = 1.0
         if "hot" in spell.tags:
-            m *= (1 + 0.01 * self.rank("Genesis")) * (1 + 0.05 * (1 if self.rank("Gift of the Earthmother") else 0))
-        if spell.name in ("Rejuvenation", "Regrowth"):
-            m *= 1 + 0.04 * (1 if self.rank("Nature's Splendor") else 0)
-        return m
+            return 1 + _first(talent_numbers("Genesis", self.rank("Genesis")), 0) / 100 if self.rank("Genesis") else 1.0
+        return 1.0
 
     def cast_hook(self, spell, sim):
         return 1.0
@@ -45,13 +98,12 @@ class Healer(E.BaseHealer):
     def cast_time(self, spell, sim):
         t = super().cast_time(spell, sim)
         if t > 0 and sim.buffs.get("Nature's Grace", 0.0) > sim.t:
-            sim.buffs["Nature's Grace"] = 0.0
-            t = max(0.5, t - 0.5)
+            t = max(T.GCD * (1 - NG_HASTE), t / (1 + NG_HASTE))
         return t
 
     def on_heal(self, sim, spell, target, amount, crit):
-        if crit and self.rank("Nature's Grace"):
-            sim.buffs["Nature's Grace"] = sim.t + 15.0
+        if crit and self.rank("Nature's Grace") and spell.heal_min > 0:
+            sim.buffs["Nature's Grace"] = sim.t + NG_DURATION
 
     def before_decide(self, sim):
         tank = sim.tank
@@ -83,6 +135,16 @@ class Healer(E.BaseHealer):
                     src = self.book[name][-1]
                     per = target.hots[name][0]
                     ticks = max(1, int(round(src.hot_dur / src.tick_every)))
-                    del target.hots[name]
+                    if SWIFTMEND_CONSUMES:
+                        del target.hots[name]
                     sim.apply_heal(spell, target, per * ticks, False, label="Swiftmend")
                     break
+        # a shorter global cooldown after an instant (the engine set the full one just before this hook; a cast spell's has run out):
+        # Gift of the Earthmother on its three spells, Nature's Grace 10% of the base global cooldown (the simulator's flat reading)
+        gcd = T.GCD
+        if self.rank("Gift of the Earthmother") and spell.name in GOTE_SPELLS:
+            gcd -= GOTE_CUT
+        if self.rank("Nature's Grace") and sim.buffs.get("Nature's Grace", 0.0) > sim.t:
+            gcd -= T.GCD * NG_HASTE
+        if gcd < T.GCD:
+            sim.gcd_until = min(sim.gcd_until, sim.t + gcd)
