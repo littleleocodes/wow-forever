@@ -12,12 +12,12 @@ Respec plan: **71.4 h** (20.6% faster than talentless), 0 respec(s).
 
 | Level | Bracket | Fight | Time per kill | Kills/hour | Deaths/100 | Downtime/kill | In dungeon blues |
 |---|---|---|---|---|---|---|---|
-| 15 | level 15 | 18s | 27s | 135 | 0.0 | 1s | 23s (-14%) |
-| 20 | levels 15-25 | 9s | 17s | 209 | 0.0 | 1s | 16s (-10%) |
-| 30 | levels 25-35 | 14s | 23s | 155 | 0.0 | 1s | 20s (-12%) |
-| 40 | levels 35-45 | 16s | 26s | 139 | 0.0 | 2s | 24s (-9%) |
-| 50 | levels 45-55 | 18s | 28s | 127 | 0.0 | 3s | 27s (-6%) |
-| 60 | level 55-60 | 20s | 32s | 112 | 0.0 | 4s | 30s (-8%) |
+| 15 | level 15 | 18s | 27s | 135 | 0.0 | 1s | 23s (-13%) |
+| 20 | levels 15-25 | 9s | 18s | 202 | 0.0 | 1s | 16s (-9%) |
+| 30 | levels 25-35 | 13s | 23s | 159 | 0.0 | 1s | 21s (-9%) |
+| 40 | levels 35-45 | 17s | 27s | 135 | 0.0 | 2s | 24s (-8%) |
+| 50 | levels 45-55 | 18s | 29s | 123 | 0.0 | 3s | 27s (-7%) |
+| 60 | level 55-60 | 21s | 33s | 109 | 0.0 | 4s | 31s (-8%) |
 
 - **Level 15:** deaths are rare; almost no downtime.
 - **Level 20:** deaths are rare; almost no downtime; 19% of pulls are casters.
@@ -28,19 +28,19 @@ Respec plan: **71.4 h** (20.6% faster than talentless), 0 respec(s).
 
 ## How the fights go
 
-Single-target leveling fights against normal mobs of your level. Levels 10-19 in Bear Form: walk up, Enrage, Demoralizing Roar, Maul on every swing the rage allows, Bash when low or against a casting mob. From 20 in Cat Form: prowl up behind the mob and open with Ravage (Pounce before 32, Claw before that), Tiger's Fury, Rake once, Claw to five points (the mob faces you, so Shred is only for the opener), Rip on a healthy mob or Ferocious Bite, Berserk on the pull; when low, shift out for a Regrowth (Nature's Swiftness + Healing Touch in an emergency) and shift back at 55% of base mana with Furor keeping the energy. Between fights: 2 s loot, 6 s travel, Rejuvenation / Regrowth in caster form when hurt then Cat Form again, water below 35% mana.
+Single-target leveling fights against normal mobs of your level. Levels 10-19 in Bear Form: walk up, Enrage, Demoralizing Roar, Maul on every swing the rage allows, Bash when low or against a casting mob. From 20 in Cat Form: prowl up behind the mob and open with Ravage from 32 (Shred from 22, Claw before; Pounce comes at 36, after Ravage), Tiger's Fury (from 24), Rake once, Claw to five points (the mob faces you, so Shred is only for the opener), Ferocious Bite whenever it kills (from 32), Rip at five points on a mob above half health (before Ferocious Bite: Rip at 2 points on a mob above 40% of its health), Berserk on the pull; when low, shift out for a Regrowth (Nature's Swiftness + Healing Touch in an emergency) and shift back at 55% of base mana, Furor carrying the energy. Between fights: 2 s loot, 6 s travel, Rejuvenation / Regrowth in caster form when hurt (only with the mana to shift back) then Cat Form again, water below 35% mana (the tuned rule drinks lower).
 
 ## Talents that carry the build
 
-- **Level 30:** Sharpened Claws (+4% time per kill without it), Predatory Strikes (+4% time per kill without it), Savage Fury (+4% time per kill without it), Naturalist (+4% time per kill without it), Ferocity (+4% time per kill without it), Nature's Reach (+3% time per kill without it).
-- **Level 60:** Ferocity (+5% time per kill without it), Nature's Reach (+4% time per kill without it), Sharpened Claws (+3% time per kill without it), Naturalist (+3% time per kill without it), Berserk (+3% time per kill without it), Predatory Strikes (+3% time per kill without it).
-- **Free to move** (no measurable effect single-target): Berserk, Feral Swiftness, Genesis, Natural Shapeshifter, Nature's Focus, Thick Hide.
+- **Level 30:** Predatory Strikes (+4% time per kill without it), Sharpened Claws (+3% time per kill without it), Naturalist (+3% time per kill without it), Nature's Reach (+3% time per kill without it), Savage Fury (+2% time per kill without it), Nature's Majesty (+2% time per kill without it).
+- **Level 60:** Ferocity (+6% time per kill without it), Nature's Reach (+5% time per kill without it), Naturalist (+5% time per kill without it), Predatory Strikes (+4% time per kill without it), Sharpened Claws (+4% time per kill without it), Berserk (+4% time per kill without it).
+- **Free to move** (no measurable effect single-target): Berserk, Feral Swiftness, Natural Shapeshifter, Nature's Focus, Thick Hide.
 
 ## Other specs while leveling
 
-Time per kill relative to the main spec's optimizer build on the same mobs (positive = slower): `balance-dps` (opt-balance-dps-leveling-st): L30 +126%, L60 +60% vs the main build.
+Time per kill relative to the main spec's optimizer build on the same mobs (positive = slower): `balance-dps` (opt-balance-dps-leveling-st): L30 +134%, L60 +30% vs the main build.
 
 ## Not simulated
 
-levels 1-9 (Wrath / Moonfire), Moonfire / Wrath pulls in bear levels, Faerie Fire, Swipe, Growl, Dash, Innervate, Barkskin, adds, gear upgrades within a level bracket.
+levels 1-9 (Wrath / Moonfire), Moonfire / Wrath pulls in bear levels, Faerie Fire, Swipe, Growl, Dash, Innervate, Barkskin, Hurricane, Lacerate's stacks, adds, gear upgrades within a level bracket.
 

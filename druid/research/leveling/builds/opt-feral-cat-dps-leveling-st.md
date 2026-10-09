@@ -62,23 +62,26 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 
 Balance: Moonfire and Insect Swarm up, Wrath while the mob walks in (Eclipse charges), Starfire on Eclipse charges or when the mob is rooted / stunned, Wrath otherwise (pushback in melee), Regrowth below 35% health with Nature's Swiftness when it is up; Entangling Roots when low and the mob is not rooted. A heal leaves Moonkin Form; the druid goes back in while the mob still has half its health (else after the fight). Out of mana it waits: druids cannot use wands.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): drink below 45% mana; eat below 80% health. Together +1.7% time per kill saved for `opt-balance-dps-leveling-st` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): drink below 60% mana; eat below 80% health. Together +4.5% time per kill saved for `opt-balance-dps-leveling-st` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/balance-dps.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L15 casts/kill | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|---|
-| Melee | 4.0 | 8.4 | 13.2 | 15.2 | 16.4 | 19.0 | 32% |
-| Claw | 0.0 | 4.8 | 3.7 | 3.3 | 3.5 | 4.0 | 22% |
-| Rake | 0.0 | 0.0 | 1.3 | 1.5 | 1.6 | 1.9 | 8% |
-| Ferocious Bite | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.0 | 18% |
+| Melee | 4.0 | 8.8 | 12.7 | 15.8 | 17.1 | 19.8 | 34% |
+| Claw | 0.0 | 3.9 | 2.2 | 3.1 | 3.3 | 3.8 | 22% |
+| Rake | 0.0 | 0.0 | 1.3 | 1.5 | 1.6 | 1.8 | 8% |
+| Ferocious Bite | 0.0 | 0.0 | 0.0 | 0.9 | 1.0 | 1.1 | 18% |
 | Ravage | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.0 | 15% |
-| Rip | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 6% |
+| Tiger's Fury | 0.0 | 0.0 | 0.6 | 0.8 | 0.8 | 1.0 | 0% |
+| Rip | 0.0 | 0.8 | 1.0 | 0.0 | 0.0 | 0.1 | 3% |
 | Enrage | 0.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Demoralizing Roar | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Maul | 3.3 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Bash | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Shred | 0.0 | 0.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Regrowth | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Cat Form | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes
 

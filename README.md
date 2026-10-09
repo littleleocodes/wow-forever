@@ -6,15 +6,15 @@ The best talents and the best way to play every class in **World of Warcraft: Fo
 
 | Class | Roles | Fastest leveling (solo) | Most raid damage (DPS in a full raid) |
 |---|---|---|---|
-| [**Druid**](druid/README.md) | damage, tank, healer | [Feral Combat](druid/leveling/feral-combat.md) (27 s/kill) | [Feral Combat](druid/raid/feral-combat.md) (691 DPS) |
+| [**Druid**](druid/README.md) | damage, tank, healer | [Feral Combat](druid/leveling/feral-combat.md) (28 s/kill) | [Feral Combat](druid/raid/feral-combat.md) (691 DPS) |
 | [**Hunter**](hunter/README.md) | damage | [Beast-Survival](hunter/leveling/beast-survival.md) (24 s/kill), [Survival](hunter/leveling/survival.md) (24 s/kill) | [Beast-Survival](hunter/raid/beast-survival.md) (1056 DPS), [Survival](hunter/raid/survival.md) (1047 DPS) |
 | [**Mage**](mage/README.md) | damage | [Frost](mage/leveling/frost.md) (27 s/kill) | [Arcane](mage/raid/arcane.md) (694 DPS), [Arcane-Frost](mage/raid/arcane-frost.md) (692 DPS), [Fire](mage/raid/fire.md) (688 DPS), [Frost](mage/raid/frost.md) (684 DPS), [Frostfire](mage/raid/frostfire.md) (680 DPS) |
 | [**Paladin**](paladin/README.md) | damage, tank, healer | [Retribution](paladin/leveling/retribution.md) (28 s/kill) | [Retribution](paladin/raid/retribution.md) (996 DPS) |
 | [**Priest**](priest/README.md) | damage, healer | [Shadow](priest/leveling/shadow.md) (26 s/kill) | [Shadow](priest/raid/shadow.md) (698 DPS) |
 | [**Rogue**](rogue/README.md) | damage | [Combat-Subtlety](rogue/leveling/combat-subtlety.md) (26 s/kill), [Combat](rogue/leveling/combat.md) (26 s/kill) | [Combat](rogue/raid/combat.md) (735 DPS) |
-| [**Shaman**](shaman/README.md) | damage, healer | [Enhancement](shaman/leveling/enhancement.md) (33 s/kill) | [Enhancement](shaman/raid/enhancement.md) (739 DPS) |
+| [**Shaman**](shaman/README.md) | damage, healer | [Enhancement](shaman/leveling/enhancement.md) (32 s/kill) | [Enhancement](shaman/raid/enhancement.md) (739 DPS) |
 | [**Warlock**](warlock/README.md) | damage | [Affliction-Demonology](warlock/leveling/affliction-demonology.md) (36 s/kill), [Demonology](warlock/leveling/demonology.md) (36 s/kill) | [Demonology](warlock/raid/demonology.md) (832 DPS) |
-| [**Warrior**](warrior/README.md) | damage, tank | [Arms](warrior/leveling/arms.md) (25 s/kill) | [Arms](warrior/raid/arms.md) (984 DPS) |
+| [**Warrior**](warrior/README.md) | damage, tank | [Fury](warrior/leveling/fury.md) (25 s/kill), [Arms](warrior/leveling/arms.md) (25 s/kill) | [Arms](warrior/raid/arms.md) (984 DPS) |
 
 Two specs in one cell are a tie (within 3% of each other; the best spec of the class by DPS in a full raid). Leveling times compare across classes: every class runs in the same fight simulator, solo against same-level mobs. Raid numbers assume a group: every raid buff and debuff is up, which is where classes that live on raid buffs (warriors' rage, hunters' and shamans' mana) do their real damage.
 

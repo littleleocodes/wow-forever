@@ -89,19 +89,18 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 
 Elemental: Lightning Bolts from range (the pull and while the mob walks in), then Flame Shock, Earth Shock and Lava Burst on cooldown with Lightning Bolts between them while mana lasts; a bolt in melee eats pushback (Eye of the Storm resists it); the weapon swings whenever nothing is cast.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): eat below 80% health. Together +2.0% time per kill saved for `opt-elemental-dps-leveling-st` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): eat below 80% health. Together +1.9% time per kill saved for `opt-elemental-dps-leveling-st` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/elemental-dps.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 3.6 | 3.9 | 4.8 | 5.5 | 6.3 | 28% |
-| Windfury | 0.0 | 2.0 | 2.4 | 2.9 | 3.3 | 19% |
-| Stormstrike | 0.0 | 1.9 | 2.1 | 2.4 | 2.7 | 12% |
-| Earth Shock | 0.7 | 0.7 | 0.8 | 0.8 | 0.9 | 9% |
-| Lightning Shield | 0.7 | 0.7 | 0.7 | 0.8 | 0.9 | 15% |
-| Searing Totem | 0.8 | 0.8 | 0.8 | 0.8 | 0.8 | 9% |
-| Flame Shock | 0.9 | 0.6 | 0.7 | 0.7 | 0.7 | 7% |
+| Melee | 3.5 | 3.9 | 4.8 | 5.2 | 6.0 | 26% |
+| Windfury | 0.0 | 1.9 | 2.3 | 2.6 | 3.0 | 17% |
+| Earth Shock | 2.1 | 2.0 | 2.2 | 2.3 | 2.6 | 24% |
+| Stormstrike | 0.0 | 1.7 | 1.9 | 2.1 | 2.4 | 11% |
+| Lightning Shield | 0.6 | 0.7 | 0.7 | 0.8 | 0.9 | 15% |
+| Searing Totem | 0.7 | 0.7 | 0.7 | 0.7 | 0.7 | 6% |
 
 ## Notes
 

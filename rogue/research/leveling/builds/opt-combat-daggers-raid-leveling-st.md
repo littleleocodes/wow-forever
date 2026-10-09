@@ -97,14 +97,14 @@ What this build casts per kill ([report](../fightlab/combat-daggers-raid.md), al
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 7.4 | 8.5 | 10.7 | 11.6 | 12.1 | 19% |
-| Melee (off-hand) | 6.8 | 7.9 | 10.3 | 11.3 | 11.8 | 10% |
-| Sinister Strike | 2.9 | 3.3 | 4.1 | 4.5 | 4.8 | 18% |
-| Riposte | 0.0 | 0.9 | 1.1 | 1.2 | 1.3 | 4% |
-| Eviscerate | 0.7 | 0.7 | 1.0 | 1.1 | 1.2 | 23% |
-| Garrote | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 12% |
-| Hack and Slash | 0.0 | 0.0 | 0.0 | 0.0 | 0.8 | 1% |
+| Melee | 7.3 | 8.3 | 10.4 | 11.5 | 11.7 | 20% |
+| Melee (off-hand) | 6.7 | 7.8 | 10.0 | 11.1 | 11.4 | 11% |
+| Sinister Strike | 2.8 | 3.3 | 4.0 | 4.4 | 4.6 | 16% |
+| Eviscerate | 0.7 | 0.7 | 1.0 | 1.2 | 1.3 | 25% |
+| Riposte | 0.0 | 0.9 | 1.1 | 1.2 | 1.2 | 4% |
+| Garrote | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 13% |
 | Kick | 0.3 | 0.3 | 0.3 | 0.3 | 0.2 | 0% |
+| Cold Blood | 0.0 | 0.0 | 0.0 | 0.1 | 0.1 | 0% |
 | Evasion | 0.0 | 0.0 | 0.0 | 0.1 | 0.1 | 0% |
 
 ## Notes

@@ -12,7 +12,7 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 | Spec | Leveling (solo) | Raid (group: full raid DPS) |
 |---|---|---|
 | **Elemental** | [Elemental — Leveling](leveling/elemental.md) 🔬<br>37 s/kill | [Elemental (optimized)](raid/elemental.md)<br>510 DPS (raid) |
-| **Enhancement** | **✅ Recommended**<br>[Enhancement — Leveling](leveling/enhancement.md) 🔬<br>33 s/kill | **✅ Recommended**<br>[Enhancement — Raid](raid/enhancement.md) 🔬<br>739 DPS (raid) |
+| **Enhancement** | **✅ Recommended**<br>[Leveling — Enhancement](leveling/enhancement.md)<br>32 s/kill | **✅ Recommended**<br>[Enhancement — Raid](raid/enhancement.md) 🔬<br>739 DPS (raid) |
 | **Restoration** | [Restoration — Leveling into the raid build](leveling/restoration.md) 🔬<br>43 s/kill | [Restoration — Raid Healer](raid/restoration.md)<br>healer |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
@@ -35,9 +35,9 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
-| 1 | [Enhancement](leveling/enhancement.md) — Enhancement — Leveling 🔬 | 33 | fastest |
-| 2 | [Elemental](leveling/elemental.md) — Elemental — Leveling 🔬 | 37 | +14% |
-| 3 | [Restoration](leveling/restoration.md) — Restoration — Leveling into the raid build 🔬 | 43 | +32% |
+| 1 | [Enhancement](leveling/enhancement.md) — Leveling — Enhancement | 32 | fastest |
+| 2 | [Elemental](leveling/elemental.md) — Elemental — Leveling 🔬 | 37 | +16% |
+| 3 | [Restoration](leveling/restoration.md) — Restoration — Leveling into the raid build 🔬 | 43 | +35% |
 
 ### Raid (group)
 

@@ -11,7 +11,7 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 | Spec | Leveling (solo) | Raid (group: full raid DPS) |
 |---|---|---|
 | **Balance** | [Balance — Leveling](leveling/balance.md) 🔬<br>52 s/kill | [Balance — Moonkin / Eclipse](raid/balance.md)<br>592 DPS (raid) |
-| **Feral Combat** | **✅ Recommended**<br>[Leveling — Feral cat](leveling/feral-combat.md)<br>27 s/kill | **✅ Recommended**<br>[Feral Combat — Shifting Power](raid/feral-combat.md) 🔬<br>691 DPS (raid) |
+| **Feral Combat** | **✅ Recommended**<br>[Feral Combat (optimized)](leveling/feral-combat.md)<br>28 s/kill | **✅ Recommended**<br>[Feral Combat — Shifting Power](raid/feral-combat.md) 🔬<br>691 DPS (raid) |
 | **Restoration** | [Restoration — Leveling into the raid build](leveling/restoration.md) 🔬<br>33 s/kill | [Restoration — Raid Healer](raid/restoration.md)<br>healer |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
@@ -26,9 +26,9 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
-| 1 | [Feral Combat](leveling/feral-combat.md) — Leveling — Feral cat | 27 | fastest |
-| 2 | [Restoration](leveling/restoration.md) — Restoration — Leveling into the raid build 🔬 | 33 | +21% |
-| 3 | [Balance](leveling/balance.md) — Balance — Leveling 🔬 | 52 | +92% |
+| 1 | [Feral Combat](leveling/feral-combat.md) — Feral Combat (optimized) | 28 | fastest |
+| 2 | [Restoration](leveling/restoration.md) — Restoration — Leveling into the raid build 🔬 | 33 | +18% |
+| 3 | [Balance](leveling/balance.md) — Balance — Leveling 🔬 | 52 | +88% |
 
 ### Raid (group)
 

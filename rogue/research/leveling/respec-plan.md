@@ -31,7 +31,7 @@ Total: **71.8 h** (20.2% faster than talentless), 0 respec(s).
   - at level 60: **Subtlety**: Opportunity 2; **Combat**: Lightning Reflexes 5, Puncturing Wounds 3, Precision 3, Deflection 3, Riposte 1, Flawless Execution 1, Endurance 2, Dual Wield Specialization 2, Hack and Slash 4, Blade Flurry 1, Aggression 3; **Assassination**: Malice 5, Ruthlessness 3, Murder 2, Relentless Strikes 1, Lethality 5, Cold Blood 1, Improved Poisons 3, Mutilate 1
   - order: 10-11 Opportunity x2, 12-16 Lightning Reflexes x5, 17-19 Puncturing Wounds x3, 20 Precision, 21-25 Malice x5, 26-28 Ruthlessness x3, 29-30 Murder x2, 31 Relentless Strikes, 32-36 Lethality x5, 37 Cold Blood, 38-40 Improved Poisons x3, 41 Mutilate, 42-43 Precision x2, 44-46 Deflection x3, 47 Riposte, 48 Flawless Execution, 49-50 Endurance x2, 51-52 Dual Wield Specialization x2, 53-55 Hack and Slash x3, 56 Blade Flurry, 57 Hack and Slash, 58-60 Aggression x3
 
-Total: **77.3 h** (14.1% faster than talentless), 0 respec(s).
+Total: **76.0 h** (15.6% faster than talentless), 0 respec(s).
 
 ## Never respec: best single plan
 
@@ -42,11 +42,11 @@ Total: **77.3 h** (14.1% faster than talentless), 0 respec(s).
 | combat-swords-raid -> level-50 build (23/16/2) | 72.1 | +0.2 h |
 | combat-swords-raid -> level-20 build (0/11/0) | 72.1 | +0.2 h |
 | combat-swords-raid -> level-40 build (11/18/2) | 72.3 | +0.5 h |
-| combat-daggers-raid -> level-20 build (0/9/2) | 77.3 | +5.5 h |
-| combat-daggers-raid -> level-30 build (3/16/2) | 77.6 | +5.8 h |
-| combat-daggers-raid -> level-40 build (13/16/2) | 78.5 | +6.7 h |
-| combat-daggers-raid -> level-50 build (23/16/2) | 79.1 | +7.2 h |
-| combat-daggers-raid -> level-60 build (21/28/2) | 79.3 | +7.5 h |
+| combat-daggers-raid -> level-20 build (0/9/2) | 76.0 | +4.1 h |
+| combat-daggers-raid -> level-30 build (3/16/2) | 76.3 | +4.5 h |
+| combat-daggers-raid -> level-40 build (13/16/2) | 77.2 | +5.3 h |
+| combat-daggers-raid -> level-50 build (23/16/2) | 77.7 | +5.9 h |
+| combat-daggers-raid -> level-60 build (21/28/2) | 78.0 | +6.1 h |
 
 ## Leveling score by level (fraction of time per kill saved)
 

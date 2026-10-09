@@ -90,7 +90,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `elementa
 
 Elemental: Lightning Bolts from range (the pull and while the mob walks in), then Flame Shock, Earth Shock and Lava Burst on cooldown with Lightning Bolts between them while mana lasts; a bolt in melee eats pushback (Eye of the Storm resists it); the weapon swings whenever nothing is cast.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): eat below 80% health. Together +2.0% time per kill saved for `opt-elemental-dps-leveling-st` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): eat below 80% health. Together +1.9% time per kill saved for `opt-elemental-dps-leveling-st` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/elemental-dps-opt.md), all leveling builds: [leveling rotations](../rotation.md)):
 

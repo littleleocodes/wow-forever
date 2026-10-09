@@ -2854,10 +2854,11 @@
    "spec": "arms-2h-raid",
    "hand": "leveling-arms",
    "opt": "opt-arms-2h-raid-leveling-st",
-   "started": "2026-10-09T05:09:13",
+   "started": "2026-10-09T18:11:05",
    "steps": [
     "race",
-    "report"
+    "report",
+    "regen"
    ],
    "raid": {
     "arms-2h-raid": {
@@ -3142,44 +3143,44 @@
      "environments": null
     }
    },
-   "seconds": 329,
+   "seconds": 806,
    "log": [
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py warrior --spec arms-2h-raid --build leveling-arms --compare F:\\wow-forever\\warrior\\research\\leveling\\fightlab\\candidates\\cand-arms-r1.json F:\\wow-forever\\warrior\\research\\leveling\\fightlab\\candidates\\cand-arms-r2-ms40.json F:\\wow-forever\\warrior\\research\\leveling\\fightlab\\candidates\\cand-arms-r2.json F:\\wow-forever\\warrior\\research\\leveling\\fightlab\\candidates\\cand-arms-r3.json F:\\wow-forever\\warrior\\research\\leveling\\fightlab\\candidates\\cand-arms-r4.json F:\\wow-forever\\warrior\\research\\leveling\\fightlab\\candidates\\cand-arms-r6.json F:\\wow-forever\\warrior\\research\\leveling\\fightlab\\candidates\\cand-arms-r7.json --levels 20,30,40,50,60 --fights 1000",
      "rc": 0,
-     "seconds": 57,
+     "seconds": 136,
      "tail": [
-      "   vs cand-arms-r4: time/kill 26.7s (+2.9%), fight 17.9s, deaths/100 0.0",
-      "   vs cand-arms-r6: time/kill 28.6s (+10.4%), fight 20.3s, deaths/100 0.0",
-      "   vs cand-arms-r7: time/kill 26.6s (+2.5%), fight 17.7s, deaths/100 0.0",
-      "L60: fight 20.6s (median 20.6, p90 28.2), downtime 0.9s, deaths/100 0.0, time/kill 29.5s, 122 kills/h, mana/kill 1, shares Melee 36%, Mortal Strike 22%, Execute 17%, Overpower 11%, Rend 7%",
-      "   vs cand-arms-r1: time/kill 30.2s (+2.3%), fight 21.2s, deaths/100 0.0",
-      "   vs cand-arms-r2-ms40: time/kill 29.5s (+0.0%), fight 20.6s, deaths/100 0.0",
-      "   vs cand-arms-r2: time/kill 29.5s (+0.0%), fight 20.6s, deaths/100 0.0",
-      "   vs cand-arms-r3: time/kill 30.1s (+2.0%), fight 20.8s, deaths/100 0.0",
-      "   vs cand-arms-r4: time/kill 29.4s (-0.3%), fight 20.5s, deaths/100 0.0",
-      "   vs cand-arms-r6: time/kill 31.1s (+5.3%), fight 22.7s, deaths/100 0.0",
-      "   vs cand-arms-r7: time/kill 29.1s (-1.3%), fight 20.1s, deaths/100 0.0",
-      "done in 56s"
+      "   vs cand-arms-r4: time/kill 27.6s (+3.4%), fight 18.7s, deaths/100 0.0",
+      "   vs cand-arms-r6: time/kill 29.4s (+10.2%), fight 20.4s, deaths/100 0.0",
+      "   vs cand-arms-r7: time/kill 27.2s (+2.2%), fight 18.3s, deaths/100 0.0",
+      "L60: fight 21.2s (median 20.6, p90 28.2), downtime 0.9s, deaths/100 0.0, time/kill 30.2s, 119 kills/h, mana/kill 1, shares Melee 38%, Mortal Strike 22%, Execute 17%, Overpower 13%, Rend 6%",
+      "   vs cand-arms-r1: time/kill 30.9s (+2.5%), fight 21.9s, deaths/100 0.0",
+      "   vs cand-arms-r2-ms40: time/kill 30.2s (+0.0%), fight 21.2s, deaths/100 0.0",
+      "   vs cand-arms-r2: time/kill 30.2s (+0.0%), fight 21.2s, deaths/100 0.0",
+      "   vs cand-arms-r3: time/kill 30.4s (+0.8%), fight 21.1s, deaths/100 0.0",
+      "   vs cand-arms-r4: time/kill 30.1s (-0.3%), fight 21.1s, deaths/100 0.0",
+      "   vs cand-arms-r6: time/kill 32.8s (+8.6%), fight 23.3s, deaths/100 0.0",
+      "   vs cand-arms-r7: time/kill 30.0s (-0.5%), fight 20.9s, deaths/100 0.0",
+      "done in 136s"
      ],
      "stderr": []
     },
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py warrior --spec arms-2h-raid --build opt-arms-2h-raid-leveling-st --compare leveling-arms --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --gear-tiers --write",
      "rc": 0,
-     "seconds": 130,
+     "seconds": 334,
      "tail": [
-      "   Impale                   2  sim   +1.7% (fight   +2.4% +-0.6)  EV   +1.0%",
-      "   Improved Charge          2  sim   +2.2% (fight   +3.0% +-0.6)  EV   +0.8%",
-      "   Improved Overpower       2  sim   +4.4% (fight   +5.8% +-0.6)  EV   +2.9%",
-      "   Improved Rend            3  sim   +1.9% (fight   +2.5% +-0.6)  EV   +2.8%",
+      "   Impale                   2  sim   +1.1% (fight   +1.6% +-0.6)  EV   +1.0%",
+      "   Improved Charge          2  sim   +0.5% (fight   +0.9% +-0.6)  EV   +0.8%",
+      "   Improved Overpower       2  sim   +3.9% (fight   +5.2% +-0.6)  EV   +2.9%",
+      "   Improved Rend            3  sim   +0.6% (fight   +0.8% +-0.6)  EV   +2.8%",
       "   Improved Tactical Mastery 3  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.2%",
-      "   Mortal Strike            1  sim  +20.3% (fight  +26.4% +-0.8)  EV  +11.2%",
+      "   Mortal Strike            1  sim  +16.3% (fight  +20.9% +-0.8)  EV  +11.2%",
       "   Sweeping Strikes         1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.0%",
-      "   Two-Handed Weapon Specialization 3  sim   +2.4% (fight   +3.2% +-0.6)  EV   +2.7%",
-      "   Unbridled Wrath          5  sim   +2.5% (fight   +3.3% +-0.7)  EV   +2.4%",
-      "   Weaponmaster             5  sim   +5.1% (fight   +6.8% +-0.6)  EV   +5.9%",
-      "done in 130s",
+      "   Two-Handed Weapon Specialization 3  sim   +1.7% (fight   +2.2% +-0.6)  EV   +2.7%",
+      "   Unbridled Wrath          5  sim   +0.7% (fight   +0.9% +-0.7)  EV   +2.4%",
+      "   Weaponmaster             5  sim   +4.3% (fight   +5.8% +-0.6)  EV   +5.9%",
+      "done in 334s",
       "wrote F:\\wow-forever\\warrior\\research\\leveling\\fightlab\\arms-2h-raid.md"
      ],
      "stderr": []
@@ -3187,19 +3188,19 @@
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py warrior --spec fury-dw-raid --build opt-fury-dw-raid-leveling-st --compare opt-arms-2h-raid-leveling-st --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --write",
      "rc": 0,
-     "seconds": 143,
+     "seconds": 335,
      "tail": [
-      "   Dual Wield Specialization 5  sim   +0.0% (fight   +0.0% +-0.0)  EV   +3.7%",
-      "   Enrage                   5  sim   +4.6% (fight   +6.0% +-0.6)  EV   +4.8%",
-      "   Flurry                   5  sim   +9.8% (fight  +12.2% +-0.6)  EV   +2.1%",
-      "   Furious Precision        3  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.0%",
-      "   Improved Charge          2  sim   +1.1% (fight   +1.3% +-0.6)  EV   +0.7%",
-      "   Improved Execute         2  sim   +1.4% (fight   +1.9% +-0.5)  EV   +3.1%",
-      "   Improved Heroic Strike   3  sim   +0.6% (fight   +1.0% +-0.6)  EV   +0.0%",
+      "   Dual Wield Specialization 5  sim   +7.5% (fight   +9.3% +-0.6)  EV   +3.7%",
+      "   Enrage                   5  sim   +4.7% (fight   +5.8% +-0.6)  EV   +4.8%",
+      "   Flurry                   5  sim   +6.0% (fight   +7.7% +-0.6)  EV   +2.1%",
+      "   Furious Precision        3  sim   +3.6% (fight   +4.5% +-0.6)  EV   +0.0%",
+      "   Improved Charge          2  sim   +1.3% (fight   +1.6% +-0.5)  EV   +0.7%",
+      "   Improved Execute         2  sim   +1.0% (fight   +1.4% +-0.5)  EV   +3.1%",
+      "   Improved Heroic Strike   3  sim   +0.6% (fight   +0.8% +-0.5)  EV   +0.0%",
       "   Improved Tactical Mastery 5  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.2%",
       "   Raging Blows             1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +2.5%",
-      "   Unbridled Wrath          5  sim   +2.6% (fight   +3.3% +-0.6)  EV   +1.7%",
-      "done in 142s",
+      "   Unbridled Wrath          5  sim   +1.7% (fight   +2.2% +-0.6)  EV   +1.7%",
+      "done in 334s",
       "wrote F:\\wow-forever\\warrior\\research\\leveling\\fightlab\\fury-dw-raid.md"
      ],
      "stderr": []
@@ -3209,7 +3210,7 @@
      "rc": 0,
      "seconds": 0,
      "tail": [
-      "0.93"
+      "1.01"
      ],
      "stderr": []
     }
@@ -3218,71 +3219,71 @@
    "race": {
     "time_per_kill": {
      "leveling-arms": {
-      "20": 18.7,
-      "30": 21.3,
-      "40": 23.1,
-      "50": 25.9,
-      "60": 29.5
-     },
-     "cand-arms-r1": {
-      "20": 21.2,
-      "30": 24.6,
-      "40": 28.5,
-      "50": 27.3,
+      "20": 19.1,
+      "30": 21.8,
+      "40": 23.9,
+      "50": 26.6,
       "60": 30.2
      },
+     "cand-arms-r1": {
+      "20": 22.1,
+      "30": 25.8,
+      "40": 28.9,
+      "50": 28.1,
+      "60": 30.9
+     },
      "cand-arms-r2-ms40": {
-      "20": 21.6,
-      "30": 25.3,
-      "40": 25.4,
-      "50": 26.7,
-      "60": 29.5
+      "20": 22.5,
+      "30": 26.3,
+      "40": 26.3,
+      "50": 27.7,
+      "60": 30.2
      },
      "cand-arms-r2": {
-      "20": 21.2,
-      "30": 24.9,
-      "40": 28.5,
-      "50": 26.7,
-      "60": 29.5
+      "20": 22.1,
+      "30": 25.8,
+      "40": 28.9,
+      "50": 27.7,
+      "60": 30.2
      },
      "cand-arms-r3": {
-      "20": 21.5,
-      "30": 25.0,
-      "40": 25.3,
-      "50": 26.6,
-      "60": 30.1
+      "20": 22.5,
+      "30": 26.3,
+      "40": 25.9,
+      "50": 27.3,
+      "60": 30.4
      },
      "cand-arms-r4": {
-      "20": 21.6,
-      "30": 25.1,
-      "40": 25.5,
-      "50": 26.7,
-      "60": 29.4
+      "20": 22.5,
+      "30": 26.2,
+      "40": 26.1,
+      "50": 27.6,
+      "60": 30.1
      },
      "cand-arms-r6": {
-      "20": 22.2,
-      "30": 25.3,
-      "40": 27.0,
-      "50": 28.6,
-      "60": 31.1
+      "20": 22.9,
+      "30": 25.7,
+      "40": 27.1,
+      "50": 29.4,
+      "60": 32.8
      },
      "cand-arms-r7": {
-      "20": 21.2,
-      "30": 24.7,
-      "40": 28.6,
-      "50": 26.6,
-      "60": 29.1
+      "20": 22.1,
+      "30": 25.7,
+      "40": 29.6,
+      "50": 27.2,
+      "60": 30.0
      }
     },
     "mean": {
-     "leveling-arms": 25.009999999999998,
-     "cand-arms-r1": 27.395,
-     "cand-arms-r2-ms40": 26.560000000000002,
-     "cand-arms-r2": 27.080000000000002,
-     "cand-arms-r3": 26.639999999999997,
-     "cand-arms-r4": 26.52,
-     "cand-arms-r6": 27.895,
-     "cand-arms-r7": 26.925
+     "leveling-arms": 25.669999999999998,
+     "cand-arms-r1": 28.155,
+     "cand-arms-r2-ms40": 27.439999999999998,
+     "cand-arms-r2": 27.845,
+     "cand-arms-r3": 27.32,
+     "cand-arms-r4": 27.330000000000002,
+     "cand-arms-r6": 28.755000000000003,
+     "cand-arms-r7": 27.785000000000004
     },
     "winner": "leveling-arms",
     "gain_vs_hand": 0.0,
@@ -3393,18 +3394,18 @@
    ],
    "converged": true,
    "time_per_kill": {
-    "20": 18.6,
-    "30": 21.2,
-    "40": 22.8,
-    "50": 25.4,
-    "60": 29.1
+    "20": 19.1,
+    "30": 21.9,
+    "40": 23.7,
+    "50": 26.2,
+    "60": 30.0
    },
    "hand_time_per_kill": {
-    "20": 18.7,
-    "30": 21.5,
-    "40": 23.1,
-    "50": 25.7,
-    "60": 29.4
+    "20": 19.2,
+    "30": 21.9,
+    "40": 24.0,
+    "50": 26.7,
+    "60": 30.1
    },
    "classic": {
     "fury-dw-raid": {
@@ -3442,10 +3443,11 @@
    "spec": "combat-swords-raid",
    "hand": "leveling-combat-swords",
    "opt": "opt-combat-swords-raid-leveling-st",
-   "started": "2026-10-09T05:05:25",
+   "started": "2026-10-09T17:10:32",
    "steps": [
     "race",
-    "report"
+    "report",
+    "regen"
    ],
    "raid": {
     "combat-swords-raid": {
@@ -3845,44 +3847,44 @@
      }
     }
    },
-   "seconds": 264,
+   "seconds": 456,
    "log": [
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py rogue --spec combat-swords-raid --build leveling-combat-swords --compare F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-hand-2026-09-26.json F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r1.json F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r2.json F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r3.json F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r4.json F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r5.json F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r6.json F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r7.json F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r8.json F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r9.json --levels 20,30,40,50,60 --fights 1000",
      "rc": 0,
-     "seconds": 59,
+     "seconds": 102,
      "tail": [
-      "L60: fight 17.8s (median 17.7, p90 24.2), downtime 2.3s, deaths/100 0.0, time/kill 28.1s, 128 kills/h, mana/kill 90, shares Eviscerate 26%, Sinister Strike 22%, Melee 17%, Garrote 11%, Melee (off-hand) 10%",
-      "   vs cand-combat-hand-2026-09-26: time/kill 29.2s (+4.1%), fight 18.8s, deaths/100 0.0",
-      "   vs cand-combat-r1: time/kill 29.7s (+5.9%), fight 19.2s, deaths/100 0.0",
-      "   vs cand-combat-r2: time/kill 28.1s (+0.2%), fight 17.9s, deaths/100 0.0",
-      "   vs cand-combat-r3: time/kill 29.1s (+3.6%), fight 18.6s, deaths/100 0.0",
-      "   vs cand-combat-r4: time/kill 28.3s (+0.7%), fight 17.9s, deaths/100 0.0",
-      "   vs cand-combat-r5: time/kill 28.1s (+0.2%), fight 17.9s, deaths/100 0.0",
-      "   vs cand-combat-r6: time/kill 28.5s (+1.5%), fight 18.1s, deaths/100 0.0",
-      "   vs cand-combat-r7: time/kill 28.5s (+1.6%), fight 18.1s, deaths/100 0.0",
-      "   vs cand-combat-r8: time/kill 27.6s (-1.9%), fight 17.4s, deaths/100 0.0",
-      "   vs cand-combat-r9: time/kill 27.7s (-1.3%), fight 17.5s, deaths/100 0.0",
-      "done in 59s"
+      "L60: fight 17.6s (median 17.7, p90 23.4), downtime 2.3s, deaths/100 0.0, time/kill 27.9s, 129 kills/h, mana/kill 89, shares Eviscerate 27%, Sinister Strike 21%, Melee 17%, Garrote 11%, Melee (off-hand) 10%",
+      "   vs cand-combat-hand-2026-09-26: time/kill 28.6s (+2.2%), fight 18.2s, deaths/100 0.0",
+      "   vs cand-combat-r1: time/kill 29.5s (+5.5%), fight 19.0s, deaths/100 0.0",
+      "   vs cand-combat-r2: time/kill 27.9s (-0.2%), fight 17.6s, deaths/100 0.0",
+      "   vs cand-combat-r3: time/kill 28.9s (+3.5%), fight 18.5s, deaths/100 0.0",
+      "   vs cand-combat-r4: time/kill 28.4s (+1.5%), fight 18.0s, deaths/100 0.0",
+      "   vs cand-combat-r5: time/kill 27.9s (-0.2%), fight 17.6s, deaths/100 0.0",
+      "   vs cand-combat-r6: time/kill 28.4s (+1.6%), fight 18.0s, deaths/100 0.0",
+      "   vs cand-combat-r7: time/kill 28.4s (+1.6%), fight 18.0s, deaths/100 0.0",
+      "   vs cand-combat-r8: time/kill 27.6s (-1.3%), fight 17.4s, deaths/100 0.0",
+      "   vs cand-combat-r9: time/kill 27.4s (-1.9%), fight 17.3s, deaths/100 0.0",
+      "done in 102s"
      ],
      "stderr": []
     },
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py rogue --spec combat-swords-raid --build opt-combat-swords-raid-leveling-st --compare leveling-combat-swords --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --gear-tiers --write",
      "rc": 0,
-     "seconds": 94,
+     "seconds": 161,
      "tail": [
-      "   Malice                   5  sim   +4.1% (fight   +5.7% +-0.5)  EV   +2.8%",
-      "   Murder                   2  sim   +1.7% (fight   +2.5% +-0.4)  EV   +0.8%",
-      "   Opportunity              2  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.7%",
-      "   Precision                3  sim   +2.9% (fight   +4.1% +-0.6)  EV   +2.1%",
-      "   Relentless Strikes       1  sim   +2.6% (fight   +3.5% +-0.5)  EV   +2.0%",
-      "   Remorseless Attacks      2  sim   +2.8% (fight   +3.8% +-0.6)  EV   +2.1%",
-      "   Riposte                  1  sim   +3.2% (fight   +4.5% +-0.6)  EV   +3.5%",
-      "   Seal Fate                5  sim   +5.6% (fight   +7.8% +-0.6)  EV   +4.0%",
-      "   Vigor                    2  sim   +1.8% (fight   +2.5% +-0.7)  EV   +1.0%",
-      "   Vile Poisons             5  sim   +2.0% (fight   +2.8% +-0.4)  EV   +1.7%",
-      "done in 94s",
+      "   Malice                   5  sim   +3.9% (fight   +5.5% +-0.4)  EV   +2.8%",
+      "   Murder                   2  sim   +1.4% (fight   +1.9% +-0.2)  EV   +0.8%",
+      "   Opportunity              2  sim   +1.0% (fight   +1.3% +-0.2)  EV   +0.7%",
+      "   Precision                3  sim   +2.2% (fight   +3.1% +-0.5)  EV   +2.1%",
+      "   Relentless Strikes       1  sim   +2.2% (fight   +3.1% +-0.3)  EV   +2.0%",
+      "   Remorseless Attacks      2  sim   +3.2% (fight   +4.4% +-0.4)  EV   +2.1%",
+      "   Riposte                  1  sim   +2.6% (fight   +3.8% +-0.4)  EV   +3.5%",
+      "   Seal Fate                5  sim   +5.1% (fight   +7.1% +-0.5)  EV   +4.0%",
+      "   Vigor                    2  sim   +1.3% (fight   +1.8% +-0.5)  EV   +1.0%",
+      "   Vile Poisons             5  sim   +1.6% (fight   +2.3% +-0.2)  EV   +1.7%",
+      "done in 161s",
       "wrote F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\combat-swords-raid.md"
      ],
      "stderr": []
@@ -3890,19 +3892,19 @@
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py rogue --spec combat-daggers-raid --build opt-combat-daggers-raid-leveling-st --compare opt-combat-swords-raid-leveling-st --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --write",
      "rc": 0,
-     "seconds": 112,
+     "seconds": 193,
      "tail": [
-      "   Lightning Reflexes       2  sim   +0.4% (fight   +0.2% +-0.3)  EV   +0.3%",
-      "   Malice                   5  sim   +2.7% (fight   +3.5% +-0.3)  EV   +2.2%",
-      "   Murder                   2  sim   +1.5% (fight   +1.9% +-0.3)  EV   +1.1%",
+      "   Lightning Reflexes       2  sim   +0.2% (fight   -0.0% +-0.2)  EV   +0.3%",
+      "   Malice                   5  sim   +2.4% (fight   +3.3% +-0.2)  EV   +2.2%",
+      "   Murder                   2  sim   +1.1% (fight   +1.6% +-0.2)  EV   +1.1%",
       "   Mutilate                 1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +6.8%",
-      "   Opportunity              2  sim   +0.0% (fight   +0.0% +-0.0)  EV   +3.5%",
-      "   Precision                3  sim   +3.7% (fight   +4.7% +-0.5)  EV   +1.9%",
+      "   Opportunity              2  sim   +0.7% (fight   +1.0% +-0.1)  EV   +3.5%",
+      "   Precision                3  sim   +3.1% (fight   +4.2% +-0.4)  EV   +1.9%",
       "   Puncturing Wounds        3  sim   +0.0% (fight   +0.0% +-0.0)  EV  +11.8%",
-      "   Relentless Strikes       1  sim   +0.8% (fight   +1.1% +-0.3)  EV   +2.2%",
-      "   Riposte                  1  sim   +0.7% (fight   +1.0% +-0.5)  EV   +1.6%",
-      "   Ruthlessness             3  sim   +0.3% (fight   +0.4% +-0.3)  EV   +2.2%",
-      "done in 111s",
+      "   Relentless Strikes       1  sim   +0.8% (fight   +1.1% +-0.2)  EV   +2.2%",
+      "   Riposte                  1  sim   -0.1% (fight   +0.0% +-0.4)  EV   +1.6%",
+      "   Ruthlessness             3  sim   +0.3% (fight   +0.5% +-0.1)  EV   +2.2%",
+      "done in 193s",
       "wrote F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\combat-daggers-raid.md"
      ],
      "stderr": []
@@ -3912,7 +3914,7 @@
      "rc": 0,
      "seconds": 0,
      "tail": [
-      "0.862"
+      "0.877"
      ],
      "stderr": []
     }
@@ -3923,96 +3925,96 @@
      "leveling-combat-swords": {
       "20": 18.6,
       "30": 22.5,
-      "40": 26.8,
-      "50": 27.6,
-      "60": 28.1
+      "40": 27.2,
+      "50": 27.8,
+      "60": 27.9
      },
      "cand-combat-hand-2026-09-26": {
       "20": 19.2,
-      "30": 22.5,
-      "40": 25.9,
-      "50": 27.5,
-      "60": 29.2
+      "30": 22.4,
+      "40": 25.7,
+      "50": 27.2,
+      "60": 28.6
      },
      "cand-combat-r1": {
       "20": 19.2,
-      "30": 22.9,
-      "40": 26.9,
+      "30": 22.8,
+      "40": 26.7,
       "50": 27.8,
-      "60": 29.7
+      "60": 29.5
      },
      "cand-combat-r2": {
       "20": 18.6,
-      "30": 22.4,
-      "40": 26.6,
-      "50": 27.4,
-      "60": 28.1
+      "30": 22.3,
+      "40": 26.5,
+      "50": 27.0,
+      "60": 27.9
      },
      "cand-combat-r3": {
       "20": 18.6,
       "30": 22.7,
-      "40": 26.8,
+      "40": 27.2,
       "50": 28.0,
-      "60": 29.1
+      "60": 28.9
      },
      "cand-combat-r4": {
       "20": 18.6,
       "30": 22.7,
-      "40": 26.8,
-      "50": 27.6,
-      "60": 28.3
+      "40": 27.2,
+      "50": 27.8,
+      "60": 28.4
      },
      "cand-combat-r5": {
       "20": 18.6,
       "30": 22.8,
-      "40": 26.9,
-      "50": 28.1,
-      "60": 28.1
+      "40": 27.4,
+      "50": 28.2,
+      "60": 27.9
      },
      "cand-combat-r6": {
       "20": 18.6,
       "30": 22.5,
-      "40": 26.8,
-      "50": 27.6,
-      "60": 28.5
+      "40": 27.2,
+      "50": 27.8,
+      "60": 28.4
      },
      "cand-combat-r7": {
       "20": 18.6,
       "30": 22.5,
-      "40": 26.8,
-      "50": 27.6,
-      "60": 28.5
+      "40": 27.2,
+      "50": 27.8,
+      "60": 28.4
      },
      "cand-combat-r8": {
       "20": 18.6,
       "30": 22.2,
-      "40": 26.5,
-      "50": 26.9,
+      "40": 26.9,
+      "50": 27.2,
       "60": 27.6
      },
      "cand-combat-r9": {
-      "20": 18.7,
-      "30": 21.9,
+      "20": 18.8,
+      "30": 22.0,
       "40": 26.2,
-      "50": 27.2,
-      "60": 27.7
+      "50": 27.4,
+      "60": 27.4
      }
     },
     "mean": {
-     "leveling-combat-swords": 25.925,
-     "cand-combat-hand-2026-09-26": 26.109999999999996,
-     "cand-combat-r1": 26.595,
-     "cand-combat-r2": 25.82,
-     "cand-combat-r3": 26.355,
-     "cand-combat-r4": 26.014999999999997,
-     "cand-combat-r5": 26.115,
-     "cand-combat-r6": 26.044999999999998,
-     "cand-combat-r7": 26.044999999999998,
-     "cand-combat-r8": 25.494999999999997,
-     "cand-combat-r9": 25.505
+     "leveling-combat-swords": 25.994999999999997,
+     "cand-combat-hand-2026-09-26": 25.8,
+     "cand-combat-r1": 26.48,
+     "cand-combat-r2": 25.625,
+     "cand-combat-r3": 26.375,
+     "cand-combat-r4": 26.175,
+     "cand-combat-r5": 26.18,
+     "cand-combat-r6": 26.145,
+     "cand-combat-r7": 26.145,
+     "cand-combat-r8": 25.65,
+     "cand-combat-r9": 25.490000000000002
     },
-    "winner": "cand-combat-r8",
-    "gain_vs_hand": 0.0166,
+    "winner": "cand-combat-r9",
+    "gain_vs_hand": 0.0194,
     "recommended": "leveling-combat-swords",
     "margin": 0.02,
     "candidate_files": {
@@ -4134,18 +4136,18 @@
    ],
    "converged": true,
    "time_per_kill": {
-    "20": 18.7,
-    "30": 21.7,
-    "40": 26.1,
-    "50": 27.1,
-    "60": 27.5
+    "20": 18.8,
+    "30": 21.8,
+    "40": 26.0,
+    "50": 27.2,
+    "60": 27.3
    },
    "hand_time_per_kill": {
     "20": 18.6,
     "30": 22.4,
-    "40": 26.7,
-    "50": 27.3,
-    "60": 27.9
+    "40": 27.0,
+    "50": 27.5,
+    "60": 27.8
    },
    "classic": {
     "combat-swords-raid": {
@@ -4668,10 +4670,11 @@
    "spec": "enhancement-dps",
    "hand": "leveling-enhancement",
    "opt": "opt-enhancement-dps-leveling-st",
-   "started": "2026-10-09T05:05:51",
+   "started": "2026-10-09T17:01:52",
    "steps": [
     "race",
-    "report"
+    "report",
+    "regen"
    ],
    "raid": {
     "elemental-dps": {
@@ -4972,44 +4975,44 @@
      }
     }
    },
-   "seconds": 202,
+   "seconds": 310,
    "log": [
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py shaman --spec enhancement-dps --build leveling-enhancement --compare F:\\wow-forever\\shaman\\research\\leveling\\fightlab\\candidates\\cand-enh-r1.json F:\\wow-forever\\shaman\\research\\leveling\\fightlab\\candidates\\cand-enh-r2.json F:\\wow-forever\\shaman\\research\\leveling\\fightlab\\candidates\\cand-enh-r3.json F:\\wow-forever\\shaman\\research\\leveling\\fightlab\\candidates\\cand-enh-r4.json F:\\wow-forever\\shaman\\research\\leveling\\fightlab\\candidates\\cand-enh-r5.json F:\\wow-forever\\shaman\\research\\leveling\\fightlab\\candidates\\cand-enh-r6.json --levels 20,30,40,50,60 --fights 1000",
      "rc": 0,
-     "seconds": 39,
+     "seconds": 58,
      "tail": [
-      "   vs cand-enh-r3: time/kill 38.3s (+5.5%), fight 18.2s, deaths/100 0.0",
-      "   vs cand-enh-r4: time/kill 37.7s (+4.0%), fight 17.9s, deaths/100 0.0",
-      "   vs cand-enh-r5: time/kill 36.3s (+0.2%), fight 18.0s, deaths/100 0.0",
-      "   vs cand-enh-r6: time/kill 35.5s (-2.0%), fight 17.0s, deaths/100 0.0",
-      "L60: fight 19.8s (median 18.6, p90 27.8), downtime 9.1s, deaths/100 0.0, time/kill 36.9s, 97 kills/h, mana/kill 793, shares Melee 29%, Windfury 21%, Lightning Shield 14%, Stormstrike 12%, Earth Shock 9%",
-      "   vs cand-enh-r1: time/kill 39.5s (+6.9%), fight 21.3s, deaths/100 0.0",
-      "   vs cand-enh-r2: time/kill 39.1s (+5.8%), fight 21.8s, deaths/100 0.0",
-      "   vs cand-enh-r3: time/kill 40.5s (+9.6%), fight 21.7s, deaths/100 0.0",
-      "   vs cand-enh-r4: time/kill 39.5s (+7.0%), fight 20.9s, deaths/100 0.0",
-      "   vs cand-enh-r5: time/kill 38.3s (+3.7%), fight 20.9s, deaths/100 0.0",
-      "   vs cand-enh-r6: time/kill 37.0s (+0.0%), fight 19.3s, deaths/100 0.0",
-      "done in 39s"
+      "   vs cand-enh-r3: time/kill 37.0s (+9.4%), fight 16.7s, deaths/100 0.0",
+      "   vs cand-enh-r4: time/kill 36.8s (+8.5%), fight 16.6s, deaths/100 0.0",
+      "   vs cand-enh-r5: time/kill 35.3s (+4.2%), fight 16.5s, deaths/100 0.0",
+      "   vs cand-enh-r6: time/kill 35.1s (+3.7%), fight 16.1s, deaths/100 0.0",
+      "L60: fight 17.0s (median 16.1, p90 23.3), downtime 9.4s, deaths/100 0.0, time/kill 34.4s, 105 kills/h, mana/kill 1033, shares Melee 25%, Earth Shock 23%, Windfury 18%, Lightning Shield 13%, Stormstrike 12%",
+      "   vs cand-enh-r1: time/kill 37.8s (+9.9%), fight 19.3s, deaths/100 0.0",
+      "   vs cand-enh-r2: time/kill 36.6s (+6.4%), fight 19.1s, deaths/100 0.0",
+      "   vs cand-enh-r3: time/kill 38.7s (+12.3%), fight 19.5s, deaths/100 0.1",
+      "   vs cand-enh-r4: time/kill 38.3s (+11.3%), fight 19.2s, deaths/100 0.0",
+      "   vs cand-enh-r5: time/kill 36.7s (+6.7%), fight 18.9s, deaths/100 0.0",
+      "   vs cand-enh-r6: time/kill 36.8s (+7.0%), fight 18.4s, deaths/100 0.0",
+      "done in 57s"
      ],
      "stderr": []
     },
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py shaman --spec enhancement-dps --build opt-enhancement-dps-leveling-st --compare leveling-enhancement --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --gear-tiers --write",
      "rc": 0,
-     "seconds": 99,
+     "seconds": 138,
      "tail": [
-      "   Mental Dexterity         3  sim   +4.7% (fight   +7.1% +-0.8)  EV   +3.8%",
-      "   Mental Quickness         2  sim   +1.7% (fight   +2.6% +-0.7)  EV   +1.7%",
-      "   Rage of the Farseer      1  sim   +1.9% (fight   +3.2% +-0.6)  EV   +1.1%",
-      "   Reverberation            2  sim   +0.2% (fight   +0.4% +-0.6)  EV   +0.4%",
-      "   Shamanistic Focus        1  sim  +12.7% (fight   +6.3% +-0.8)  EV  +13.7%",
-      "   Spirit Weapons           1  sim   +1.2% (fight   +1.2% +-0.7)  EV   +0.5%",
-      "   Stormstrike              1  sim   +8.6% (fight  +29.7% +-1.0)  EV   +9.8%",
-      "   Thundering Strikes       5  sim   +4.2% (fight   +6.2% +-0.7)  EV   +2.6%",
-      "   Tidal Focus              5  sim   +4.1% (fight   +5.9% +-0.8)  EV   +2.4%",
-      "   Totemic Focus            5  sim   +0.7% (fight   -0.3% +-0.6)  EV   +1.2%",
-      "done in 99s",
+      "   Mental Dexterity         3  sim   +3.3% (fight   +4.6% +-0.8)  EV   +3.8%",
+      "   Mental Quickness         2  sim   +1.3% (fight   +1.5% +-0.6)  EV   +1.7%",
+      "   Rage of the Farseer      1  sim   +1.3% (fight   +1.2% +-0.6)  EV   +1.1%",
+      "   Reverberation            2  sim   +0.2% (fight   +0.7% +-0.7)  EV   +0.4%",
+      "   Shamanistic Focus        1  sim  +11.9% (fight   +9.3% +-0.9)  EV  +13.7%",
+      "   Spirit Weapons           1  sim   -0.1% (fight   -0.6% +-0.7)  EV   +0.5%",
+      "   Stormstrike              1  sim   +9.7% (fight  +18.7% +-0.9)  EV   +9.8%",
+      "   Thundering Strikes       5  sim   +3.7% (fight   +4.7% +-0.8)  EV   +2.6%",
+      "   Tidal Focus              5  sim   +3.2% (fight   +4.7% +-0.9)  EV   +2.4%",
+      "   Totemic Focus            5  sim   +0.2% (fight   -0.5% +-0.7)  EV   +1.2%",
+      "done in 137s",
       "wrote F:\\wow-forever\\shaman\\research\\leveling\\fightlab\\enhancement-dps.md"
      ],
      "stderr": []
@@ -5017,19 +5020,19 @@
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py shaman --spec elemental-dps --build opt-elemental-dps-leveling-st --compare opt-enhancement-dps-leveling-st --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --write",
      "rc": 0,
-     "seconds": 63,
+     "seconds": 115,
      "tail": [
-      "   Elemental Fury           5  sim  +10.3% (fight  +15.9% +-1.6)  EV   +9.9%",
-      "   Eye of the Storm         3  sim   +0.9% (fight   +2.6% +-1.0)  EV   +0.4%",
+      "   Elemental Fury           5  sim   +2.6% (fight   +4.4% +-1.4)  EV   +9.9%",
+      "   Eye of the Storm         3  sim   +0.7% (fight   +2.7% +-1.4)  EV   +0.4%",
       "   Guardian Totems          2  sim   +0.0% (fight   +0.0% +-0.0)  EV   +1.0%",
       "   Improved Ghost Wolf      2  sim   +0.0% (fight   +0.0% +-0.0)  EV   +4.8%",
-      "   Lava Burst               1  sim   +4.5% (fight   +8.3% +-1.4)  EV   +3.4%",
-      "   Lightning Overload       3  sim   +2.1% (fight   +4.5% +-1.2)  EV   +1.7%",
-      "   Mindfulness              3  sim   +3.8% (fight   +4.6% +-1.1)  EV   +3.6%",
-      "   Shamanistic Focus        1  sim  +13.5% (fight  +14.2% +-1.8)  EV   +3.7%",
-      "   Thundering Strikes       5  sim   +5.2% (fight   +8.7% +-0.8)  EV   +5.4%",
-      "   Totemic Focus            5  sim   +0.4% (fight   +0.1% +-1.3)  EV   +0.2%",
-      "done in 63s",
+      "   Lava Burst               1  sim   +0.1% (fight   +2.0% +-1.3)  EV   +3.4%",
+      "   Lightning Overload       3  sim   +1.6% (fight   +3.0% +-1.5)  EV   +1.7%",
+      "   Mindfulness              3  sim   +4.3% (fight   +4.7% +-1.1)  EV   +3.6%",
+      "   Shamanistic Focus        1  sim  +12.3% (fight   +7.0% +-1.5)  EV   +3.7%",
+      "   Thundering Strikes       5  sim   +4.2% (fight   +6.1% +-0.9)  EV   +5.4%",
+      "   Totemic Focus            5  sim   +0.2% (fight   -0.5% +-1.3)  EV   +0.2%",
+      "done in 114s",
       "wrote F:\\wow-forever\\shaman\\research\\leveling\\fightlab\\elemental-dps.md"
      ],
      "stderr": []
@@ -5039,7 +5042,7 @@
      "rc": 0,
      "seconds": 0,
      "tail": [
-      "0.883"
+      "0.853"
      ],
      "stderr": []
     }
@@ -5048,63 +5051,63 @@
    "race": {
     "time_per_kill": {
      "leveling-enhancement": {
-      "20": 21.3,
-      "30": 31.0,
-      "40": 33.4,
-      "50": 36.3,
-      "60": 36.9
+      "20": 23.1,
+      "30": 31.2,
+      "40": 32.1,
+      "50": 33.9,
+      "60": 34.4
      },
      "cand-enh-r1": {
-      "20": 21.0,
-      "30": 31.6,
-      "40": 36.1,
-      "50": 37.7,
-      "60": 39.5
+      "20": 23.0,
+      "30": 31.3,
+      "40": 35.7,
+      "50": 36.5,
+      "60": 37.8
      },
      "cand-enh-r2": {
-      "20": 21.0,
-      "30": 30.1,
-      "40": 33.5,
-      "50": 36.1,
-      "60": 39.1
+      "20": 23.0,
+      "30": 30.3,
+      "40": 33.4,
+      "50": 35.5,
+      "60": 36.6
      },
      "cand-enh-r3": {
-      "20": 21.2,
-      "30": 31.3,
-      "40": 36.1,
-      "50": 38.3,
-      "60": 40.5
+      "20": 23.0,
+      "30": 31.4,
+      "40": 35.8,
+      "50": 37.0,
+      "60": 38.7
      },
      "cand-enh-r4": {
-      "20": 21.2,
-      "30": 31.3,
-      "40": 35.6,
-      "50": 37.7,
-      "60": 39.5
-     },
-     "cand-enh-r5": {
-      "20": 21.3,
-      "30": 31.8,
-      "40": 34.5,
-      "50": 36.3,
+      "20": 23.1,
+      "30": 31.0,
+      "40": 35.7,
+      "50": 36.8,
       "60": 38.3
      },
+     "cand-enh-r5": {
+      "20": 23.2,
+      "30": 31.4,
+      "40": 34.1,
+      "50": 35.3,
+      "60": 36.7
+     },
      "cand-enh-r6": {
-      "20": 21.3,
+      "20": 23.2,
       "30": 31.0,
-      "40": 34.3,
-      "50": 35.5,
-      "60": 37.0
+      "40": 34.4,
+      "50": 35.1,
+      "60": 36.8
      }
     },
     "mean": {
-     "leveling-enhancement": 33.605000000000004,
-     "cand-enh-r1": 35.335,
-     "cand-enh-r2": 34.07,
-     "cand-enh-r3": 35.76,
-     "cand-enh-r4": 35.21,
-     "cand-enh-r5": 34.364999999999995,
-     "cand-enh-r6": 33.614999999999995
+     "leveling-enhancement": 32.205,
+     "cand-enh-r1": 34.6,
+     "cand-enh-r2": 33.38,
+     "cand-enh-r3": 35.03,
+     "cand-enh-r4": 34.79,
+     "cand-enh-r5": 33.684999999999995,
+     "cand-enh-r6": 33.665
     },
     "winner": "leveling-enhancement",
     "gain_vs_hand": 0.0,
@@ -5217,18 +5220,18 @@
    ],
    "converged": true,
    "time_per_kill": {
-    "20": 21.3,
-    "30": 30.6,
-    "40": 34.3,
-    "50": 35.5,
-    "60": 37.1
+    "20": 22.9,
+    "30": 30.8,
+    "40": 34.4,
+    "50": 35.1,
+    "60": 36.7
    },
    "hand_time_per_kill": {
-    "20": 21.3,
+    "20": 22.8,
     "30": 30.9,
-    "40": 33.2,
-    "50": 36.2,
-    "60": 37.0
+    "40": 32.0,
+    "50": 33.7,
+    "60": 34.4
    },
    "classic": {
     "elemental-dps": {
@@ -5302,10 +5305,11 @@
    "spec": "feral-cat-dps",
    "hand": "leveling-feral",
    "opt": "opt-feral-cat-dps-leveling-st",
-   "started": "2026-10-09T05:00:29",
+   "started": "2026-10-09T17:38:10",
    "steps": [
     "race",
-    "report"
+    "report",
+    "regen"
    ],
    "raid": {
     "balance-dps": {
@@ -5558,44 +5562,44 @@
      "environments": null
     }
    },
-   "seconds": 230,
+   "seconds": 484,
    "log": [
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py druid --spec feral-cat-dps --build leveling-feral --compare F:\\wow-forever\\druid\\research\\leveling\\fightlab\\candidates\\cand-cat-hand-2026-09-26.json F:\\wow-forever\\druid\\research\\leveling\\fightlab\\candidates\\cand-cat-r1.json F:\\wow-forever\\druid\\research\\leveling\\fightlab\\candidates\\cand-cat-r2.json F:\\wow-forever\\druid\\research\\leveling\\fightlab\\candidates\\cand-cat-r3.json F:\\wow-forever\\druid\\research\\leveling\\fightlab\\candidates\\cand-cat-r4.json F:\\wow-forever\\druid\\research\\leveling\\fightlab\\candidates\\cand-cat-r5.json --levels 15,20,30,40,50,60 --fights 1000",
      "rc": 0,
-     "seconds": 51,
+     "seconds": 117,
      "tail": [
-      "   vs cand-cat-r2: time/kill 31.6s (+11.0%), fight 19.4s, deaths/100 0.0",
-      "   vs cand-cat-r3: time/kill 30.3s (+6.5%), fight 18.3s, deaths/100 0.0",
-      "   vs cand-cat-r4: time/kill 30.3s (+6.5%), fight 18.3s, deaths/100 0.0",
-      "   vs cand-cat-r5: time/kill 30.3s (+6.6%), fight 18.5s, deaths/100 0.0",
-      "L60: fight 20.6s (median 20.2, p90 27.8), downtime 3.6s, deaths/100 0.0, time/kill 32.1s, 112 kills/h, mana/kill 81, shares Melee 32%, Claw 22%, Ferocious Bite 18%, Ravage 15%, Rake 8%",
-      "   vs cand-cat-hand-2026-09-26: time/kill 33.2s (+3.5%), fight 20.5s, deaths/100 0.0",
-      "   vs cand-cat-r1: time/kill 33.1s (+3.1%), fight 21.5s, deaths/100 0.0",
-      "   vs cand-cat-r2: time/kill 32.7s (+1.7%), fight 21.2s, deaths/100 0.0",
-      "   vs cand-cat-r3: time/kill 32.3s (+0.7%), fight 20.3s, deaths/100 0.0",
-      "   vs cand-cat-r4: time/kill 32.1s (+0.0%), fight 20.6s, deaths/100 0.0",
-      "   vs cand-cat-r5: time/kill 32.3s (+0.7%), fight 20.3s, deaths/100 0.0",
-      "done in 51s"
+      "   vs cand-cat-r2: time/kill 31.2s (+6.8%), fight 19.2s, deaths/100 0.0",
+      "   vs cand-cat-r3: time/kill 31.4s (+7.4%), fight 19.2s, deaths/100 0.0",
+      "   vs cand-cat-r4: time/kill 31.4s (+7.4%), fight 19.2s, deaths/100 0.0",
+      "   vs cand-cat-r5: time/kill 31.0s (+6.0%), fight 19.1s, deaths/100 0.0",
+      "L60: fight 21.4s (median 21.2, p90 28.2), downtime 3.9s, deaths/100 0.0, time/kill 33.4s, 108 kills/h, mana/kill 84, shares Melee 34%, Claw 22%, Ferocious Bite 18%, Ravage 15%, Rake 8%",
+      "   vs cand-cat-hand-2026-09-26: time/kill 32.6s (-2.4%), fight 20.0s, deaths/100 0.0",
+      "   vs cand-cat-r1: time/kill 32.5s (-2.6%), fight 21.1s, deaths/100 0.0",
+      "   vs cand-cat-r2: time/kill 32.6s (-2.4%), fight 21.2s, deaths/100 0.0",
+      "   vs cand-cat-r3: time/kill 33.1s (-0.7%), fight 21.0s, deaths/100 0.0",
+      "   vs cand-cat-r4: time/kill 33.4s (+0.0%), fight 21.4s, deaths/100 0.0",
+      "   vs cand-cat-r5: time/kill 33.1s (-0.7%), fight 21.0s, deaths/100 0.0",
+      "done in 117s"
      ],
      "stderr": []
     },
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py druid --spec feral-cat-dps --build opt-feral-cat-dps-leveling-st --compare leveling-feral --levels 15,20,30,40,50,60 --fights 2000 --deltas 30,60 --gear-tiers --write",
      "rc": 0,
-     "seconds": 114,
+     "seconds": 251,
      "tail": [
-      "   Natural Shapeshifter     1  sim   +1.8% (fight   +0.4% +-0.4)  EV   +0.8%",
-      "   Naturalist               5  sim   +3.2% (fight   +4.4% +-0.4)  EV   +4.4%",
+      "   Natural Shapeshifter     1  sim   +1.6% (fight   +0.2% +-0.5)  EV   +0.8%",
+      "   Naturalist               5  sim   +4.6% (fight   +5.6% +-0.5)  EV   +4.4%",
       "   Nature's Focus           5  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.0%",
-      "   Nature's Majesty         2  sim   +2.7% (fight   +4.0% +-0.4)  EV   +2.6%",
-      "   Nature's Reach           2  sim   +3.8% (fight   +5.5% +-0.6)  EV   +3.1%",
-      "   Predatory Strikes        3  sim   +3.1% (fight   +4.0% +-0.4)  EV   +3.3%",
-      "   Rend and Tear            5  sim   +2.5% (fight   +3.6% +-0.4)  EV   +2.5%",
-      "   Savage Fury              2  sim   +2.0% (fight   +3.0% +-0.4)  EV   +2.9%",
-      "   Sharpened Claws          2  sim   +3.3% (fight   +4.8% +-0.5)  EV   +4.0%",
-      "   Thick Hide               3  sim   +0.8% (fight   +0.5% +-0.3)  EV   +1.6%",
-      "done in 114s",
+      "   Nature's Majesty         2  sim   +3.1% (fight   +3.8% +-0.5)  EV   +2.6%",
+      "   Nature's Reach           2  sim   +4.8% (fight   +6.1% +-0.7)  EV   +3.1%",
+      "   Predatory Strikes        3  sim   +4.3% (fight   +5.1% +-0.5)  EV   +3.3%",
+      "   Rend and Tear            5  sim   +2.5% (fight   +3.2% +-0.5)  EV   +2.5%",
+      "   Savage Fury              2  sim   +2.9% (fight   +3.8% +-0.5)  EV   +2.9%",
+      "   Sharpened Claws          2  sim   +4.2% (fight   +5.5% +-0.5)  EV   +4.0%",
+      "   Thick Hide               3  sim   +1.2% (fight   +0.5% +-0.5)  EV   +1.6%",
+      "done in 250s",
       "wrote F:\\wow-forever\\druid\\research\\leveling\\fightlab\\feral-cat-dps.md"
      ],
      "stderr": []
@@ -5603,19 +5607,19 @@
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py druid --spec balance-dps --build opt-balance-dps-leveling-st --compare opt-feral-cat-dps-leveling-st --levels 15,20,30,40,50,60 --fights 2000 --deltas 30,60 --write",
      "rc": 0,
-     "seconds": 65,
+     "seconds": 117,
      "tail": [
-      "   Moonfury                 5  sim   +7.5% (fight   +8.9% +-0.4)  EV  +10.3%",
-      "   Moonglow                 3  sim   +8.3% (fight   +2.6% +-0.5)  EV   +8.1%",
-      "   Moonkin Form             1  sim   +1.3% (fight   -1.7% +-0.3)  EV   +5.6%",
-      "   Naturalist               5  sim   +4.0% (fight   +4.9% +-0.4)  EV   +3.7%",
-      "   Nature's Focus           5  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.0%",
-      "   Nature's Grace           1  sim   +0.3% (fight   +0.3% +-0.3)  EV   +3.6%",
-      "   Nature's Majesty         2  sim   +2.8% (fight   +2.7% +-0.3)  EV   +3.0%",
-      "   Nature's Splendor        1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +3.7%",
-      "   Reflection               3  sim   +4.0% (fight   +0.5% +-0.7)  EV   +4.6%",
-      "   Vengeance                5  sim   +2.5% (fight   +2.5% +-0.4)  EV  +10.8%",
-      "done in 65s",
+      "   Moonfury                 5  sim   +7.3% (fight   +9.4% +-0.2)  EV  +10.3%",
+      "   Moonglow                 3  sim  +10.2% (fight   +1.9% +-0.3)  EV   +8.1%",
+      "   Moonkin Form             1  sim  +10.3% (fight   -0.1% +-0.2)  EV   +5.6%",
+      "   Naturalist               5  sim   +3.7% (fight   +5.1% +-0.2)  EV   +3.7%",
+      "   Nature's Focus           5  sim   +5.5% (fight  +11.0% +-0.4)  EV   +0.0%",
+      "   Nature's Grace           1  sim   +0.7% (fight   +1.6% +-0.2)  EV   +3.6%",
+      "   Nature's Majesty         2  sim   +2.8% (fight   +4.1% +-0.2)  EV   +3.0%",
+      "   Nature's Splendor        1  sim   +1.0% (fight   +0.1% +-0.3)  EV   +3.7%",
+      "   Reflection               3  sim   +3.3% (fight   +0.1% +-0.1)  EV   +4.6%",
+      "   Vengeance                5  sim   +3.3% (fight   +4.3% +-0.2)  EV  +10.8%",
+      "done in 116s",
       "wrote F:\\wow-forever\\druid\\research\\leveling\\fightlab\\balance-dps.md"
      ],
      "stderr": []
@@ -5625,7 +5629,7 @@
      "rc": 0,
      "seconds": 0,
      "tail": [
-      "0.513"
+      "0.59"
      ],
      "stderr": []
     }
@@ -5634,70 +5638,70 @@
    "race": {
     "time_per_kill": {
      "leveling-feral": {
-      "15": 26.7,
-      "20": 17.3,
-      "30": 23.4,
-      "40": 26.0,
-      "50": 28.4,
-      "60": 32.1
+      "15": 26.6,
+      "20": 17.9,
+      "30": 22.8,
+      "40": 26.7,
+      "50": 29.2,
+      "60": 33.4
      },
      "cand-cat-hand-2026-09-26": {
-      "15": 35.9,
-      "20": 22.6,
-      "30": 26.8,
-      "40": 29.1,
-      "50": 31.5,
-      "60": 33.2
+      "15": 36.0,
+      "20": 22.2,
+      "30": 25.6,
+      "40": 28.9,
+      "50": 31.7,
+      "60": 32.6
      },
      "cand-cat-r1": {
       "15": 35.4,
-      "20": 22.8,
-      "30": 28.4,
-      "40": 30.4,
-      "50": 31.7,
-      "60": 33.1
+      "20": 22.2,
+      "30": 26.7,
+      "40": 30.2,
+      "50": 31.0,
+      "60": 32.5
      },
      "cand-cat-r2": {
       "15": 35.4,
-      "20": 22.8,
-      "30": 28.4,
-      "40": 30.4,
-      "50": 31.6,
-      "60": 32.7
+      "20": 22.2,
+      "30": 26.7,
+      "40": 30.2,
+      "50": 31.2,
+      "60": 32.6
      },
      "cand-cat-r3": {
-      "15": 35.9,
-      "20": 22.6,
-      "30": 27.3,
-      "40": 29.0,
-      "50": 30.3,
-      "60": 32.3
+      "15": 36.0,
+      "20": 22.2,
+      "30": 26.1,
+      "40": 29.6,
+      "50": 31.4,
+      "60": 33.1
      },
      "cand-cat-r4": {
       "15": 35.1,
-      "20": 22.0,
-      "30": 27.3,
-      "40": 29.0,
-      "50": 30.3,
-      "60": 32.1
+      "20": 22.1,
+      "30": 26.1,
+      "40": 29.6,
+      "50": 31.4,
+      "60": 33.4
      },
      "cand-cat-r5": {
       "15": 35.2,
       "20": 22.5,
-      "30": 27.5,
-      "40": 29.4,
-      "50": 30.3,
-      "60": 32.3
+      "30": 26.2,
+      "40": 29.6,
+      "50": 31.0,
+      "60": 33.1
      }
     },
     "mean": {
-     "leveling-feral": 27.137209302325584,
-     "cand-cat-hand-2026-09-26": 30.35116279069768,
-     "cand-cat-r1": 30.81860465116279,
-     "cand-cat-r2": 30.68372093023256,
-     "cand-cat-r3": 29.872093023255815,
-     "cand-cat-r4": 29.704651162790697,
-     "cand-cat-r5": 29.916279069767437
+     "leveling-feral": 27.781395348837208,
+     "cand-cat-hand-2026-09-26": 29.995348837209303,
+     "cand-cat-r1": 30.15813953488372,
+     "cand-cat-r2": 30.232558139534884,
+     "cand-cat-r3": 30.26511627906977,
+     "cand-cat-r4": 30.276744186046514,
+     "cand-cat-r5": 30.15813953488372
     },
     "winner": "leveling-feral",
     "gain_vs_hand": 0.0,
@@ -5810,20 +5814,20 @@
    ],
    "converged": true,
    "time_per_kill": {
-    "15": 26.7,
-    "20": 17.2,
-    "30": 23.2,
-    "40": 26.0,
-    "50": 28.4,
-    "60": 32.2
+    "15": 26.6,
+    "20": 17.8,
+    "30": 22.7,
+    "40": 26.6,
+    "50": 29.2,
+    "60": 33.1
    },
    "hand_time_per_kill": {
-    "15": 26.9,
-    "20": 17.3,
-    "30": 23.4,
-    "40": 26.1,
-    "50": 28.2,
-    "60": 32.1
+    "15": 26.8,
+    "20": 17.9,
+    "30": 22.9,
+    "40": 26.8,
+    "50": 29.1,
+    "60": 33.2
    },
    "classic": {
     "feral-cat-dps": {
@@ -5867,9 +5871,9 @@
   }
  },
  "last_run": {
-  "date": "2026-10-09T17:02:10",
+  "date": "2026-10-09T18:28:54",
   "classes": [
-   "mage"
+   "warrior"
   ],
   "steps": [
    "race",
@@ -5882,31 +5886,31 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 830,
+  "seconds": 1068,
   "refresh": null,
   "regen_log": [
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py mage",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py warrior",
     "rc": 0,
     "seconds": 1,
     "tail": [
-     "formatted F:\\wow-forever\\mage\\research\\talents\\forever\\proposed-builds.json",
-     "mage: README section + leveling-frost note written"
+     "formatted F:\\wow-forever\\warrior\\research\\talents\\forever\\proposed-builds.json",
+     "warrior: README section + leveling-arms note written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py mage",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py warrior",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
-     "mage: raid sim section written (4 specs)",
+     "warrior: raid sim section written (4 specs)",
      "wrote _reference\\raidsim-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py mage",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py warrior",
     "rc": 0,
     "seconds": 0,
     "tail": [
@@ -5915,36 +5919,36 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py mage",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py warrior",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
-     "mage: leveling/guide.md written"
+     "warrior: leveling/guide.md written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py mage",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py warrior",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
-     "mage: raid gear and consumables written"
+     "warrior: raid gear and consumables written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py mage",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py warrior",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
-     "mage: raid and leveling rotations, DPS ranking written"
+     "warrior: raid and leveling rotations, DPS ranking written"
     ],
     "stderr": []
    },
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\validate_builds.py",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
      "  ok   restoration-pvp (0/11/40)",
      "  ok   opt-resto-heal-raid-heal (11/5/35)",
@@ -5982,7 +5986,7 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py mage",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py warrior",
     "rc": 0,
     "seconds": 1,
     "tail": [
@@ -6010,15 +6014,15 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py mage --write",
+    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py warrior --write",
     "rc": 0,
-    "seconds": 357,
+    "seconds": 248,
     "tail": [
-     "| fire-leveling -> level-20 build (0/0/11) | +0.7% | +3.6% | +42.8% | +44.0% | +52.7% | +54.5% | +55.5% | +56.5% | +60.1% | +63.0% | +64.2% |",
-     "| fire-leveling -> level-30 build (0/10/11) | +0.7% | +3.6% | +14.9% | +20.7% | +52.7% | +54.5% | +55.5% | +56.5% | +60.1% | +63.0% | +64.2% |",
-     "| fire-leveling -> level-40 build (0/15/16) | +0.7% | +3.6% | +14.9% | +21.7% | +24.0% | +54.5% | +55.8% | +56.8% | +57.8% | +61.4% | +64.2% |",
-     "| fire-leveling -> level-50 build (0/30/11) | +0.5% | +6.7% | +19.6% | +21.6% | +23.8% | +26.3% | +32.0% | +34.0% | +60.1% | +63.0% | +64.2% |",
-     "| fire-leveling -> level-60 build (0/32/19) | +0.5% | +6.7% | +19.6% | +21.6% | +23.8% | +26.3% | +36.0% | +38.0% | +38.6% | +62.7% | +64.6% |",
+     "| fury-dw-raid -> level-20 build (0/11/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.9% | +21.4% | +34.9% | +36.1% | +36.8% | +37.4% | +39.2% |",
+     "| fury-dw-raid -> level-30 build (0/21/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.9% | +21.4% | +34.9% | +36.1% | +36.8% | +37.4% | +39.2% |",
+     "| fury-dw-raid -> level-40 build (0/31/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.9% | +21.4% | +34.9% | +36.2% | +36.8% | +37.4% | +39.2% |",
+     "| fury-dw-raid -> level-50 build (4/37/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.9% | +21.4% | +34.9% | +36.2% | +36.9% | +37.4% | +39.2% |",
+     "| fury-dw-raid -> level-60 build (13/38/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.9% | +21.4% | +34.9% | +36.1% | +36.8% | +37.4% | +39.2% |",
      "",
      "## Reading it",
      "",
@@ -6032,7 +6036,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_optimizer_sections.py",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
      "updated hunter/leveling/README.md and hunter/raid/README.md",
      "updated mage/leveling/README.md and mage/raid/README.md",

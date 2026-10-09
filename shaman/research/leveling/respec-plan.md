@@ -31,7 +31,7 @@ Total: **62.3 h** (30.8% faster than talentless), 0 respec(s).
   - at level 60: **Elemental**: Convection 5, Call of Flame 3, Concussion 5, Elemental Focus 1, Elemental Alacrity 3, Call of Thunder 1, Elemental Warding 2, Eye of the Storm 1, Lightning Overload 3, Earthbound 1, Elemental Fury 5, Lava Burst 1; **Enhancement**: Thundering Strikes 5, Improved Ghost Wolf 2, Guardian Totems 2, Earth's Grasp 1, Shamanistic Focus 1, Anticipation 3; **Restoration**: Totemic Focus 5, Mindfulness 1
   - order: 10-14 Convection x5, 15-17 Call of Flame x3, 18-19 Concussion x2, 20 Elemental Focus, 21-23 Elemental Alacrity x3, 24-26 Concussion x3, 27-31 Thundering Strikes x5, 32-33 Improved Ghost Wolf x2, 34-35 Guardian Totems x2, 36 Earth's Grasp, 37 Shamanistic Focus, 38 Call of Thunder, 39 Elemental Warding, 40 Eye of the Storm, 41-43 Lightning Overload x3, 44 Earthbound, 45 Elemental Warding, 46-50 Elemental Fury x5, 51 Lava Burst, 52-54 Anticipation x3, 55-59 Totemic Focus x5, 60 Mindfulness
 
-Total: **75.4 h** (16.3% faster than talentless), 0 respec(s).
+Total: **78.0 h** (13.3% faster than talentless), 0 respec(s).
 
 ## Never respec: best single plan
 
@@ -42,11 +42,11 @@ Total: **75.4 h** (16.3% faster than talentless), 0 respec(s).
 | enhancement-dps -> level-40 build (0/31/0) | 62.3 | +0.0 h |
 | enhancement-dps -> level-50 build (0/31/10) | 62.3 | +0.0 h |
 | enhancement-dps -> level-60 build (8/33/10) | 62.4 | +0.0 h |
-| elemental-dps -> level-50 build (30/11/0) | 75.4 | +13.0 h |
-| elemental-dps -> level-20 build (11/0/0) | 75.5 | +13.2 h |
-| elemental-dps -> level-30 build (14/7/0) | 75.5 | +13.2 h |
-| elemental-dps -> level-60 build (31/12/8) | 75.5 | +13.2 h |
-| elemental-dps -> level-40 build (17/14/0) | 76.0 | +13.7 h |
+| elemental-dps -> level-50 build (30/11/0) | 78.0 | +15.7 h |
+| elemental-dps -> level-20 build (11/0/0) | 78.1 | +15.8 h |
+| elemental-dps -> level-30 build (14/7/0) | 78.2 | +15.9 h |
+| elemental-dps -> level-60 build (31/12/8) | 78.2 | +15.9 h |
+| elemental-dps -> level-40 build (17/14/0) | 78.7 | +16.4 h |
 
 ## Leveling score by level (fraction of time per kill saved)
 

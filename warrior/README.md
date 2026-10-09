@@ -11,7 +11,7 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 | Spec | Leveling (solo) | Raid (group: full raid DPS) |
 |---|---|---|
 | **Arms** | **✅ Recommended**<br>[Arms (optimized)](leveling/arms.md)<br>25 s/kill | **✅ Recommended**<br>[Arms — Full raid](raid/arms.md) 🔬<br>984 DPS (raid) |
-| **Fury** | [Fury — Leveling](leveling/fury.md) 🔬<br>26 s/kill | [Fury — Raid](raid/fury.md) 🔬<br>925 DPS (raid) |
+| **Fury** | **✅ Recommended**<br>[Fury (optimized)](leveling/fury.md)<br>25 s/kill | [Fury — Raid](raid/fury.md) 🔬<br>925 DPS (raid) |
 | **Protection** | [Protection — Leveling](leveling/protection.md) 🔬<br>31 s/kill | [Protection (optimized)](raid/protection.md)<br>tank |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
@@ -26,9 +26,9 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
-| 1 | [Arms](leveling/arms.md) — Arms (optimized) | 25 | fastest |
-| 2 | [Fury](leveling/fury.md) — Fury — Leveling 🔬 | 26 | +5% |
-| 3 | [Protection](leveling/protection.md) — Protection — Leveling 🔬 | 31 | +24% |
+| 1 | [Fury](leveling/fury.md) — Fury (optimized) | 25 | fastest |
+| 2 | [Arms](leveling/arms.md) — Arms (optimized) | 25 | +1% |
+| 3 | [Protection](leveling/protection.md) — Protection — Leveling 🔬 | 31 | +21% |
 
 ### Raid (group)
 

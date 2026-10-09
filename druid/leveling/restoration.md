@@ -6,7 +6,7 @@
 
 > 🔬 These are your **raid talents** ([resto-raid-healer](../raid/restoration.md)), taken in the order that levels fastest: the fight lab raced three orders to them (stats model's order: 33 s per kill; own tree last: 33 s per kill; own tree first: 33 s per kill). A model of the beta, to check at launch.
 
-**Leveling as Restoration or as Feral Combat?** This build takes 33 s per kill (level-weighted, 20-60), [Feral Combat](../leveling/feral-combat.md) 27 s: Restoration is 21% slower. Your first Restoration point comes at level 10. Level this way if you want to heal dungeons later on the way; otherwise level as Feral Combat and switch at 60 (a respec at a class trainer).
+**Leveling as Restoration or as Feral Combat?** This build takes 33 s per kill (level-weighted, 20-60), [Feral Combat](../leveling/feral-combat.md) 28 s: Restoration is 18% slower. Your first Restoration point comes at level 10. Level this way if you want to heal dungeons later on the way; otherwise level as Feral Combat and switch at 60 (a respec at a class trainer).
 
 ## How to play
 
@@ -49,6 +49,8 @@ You level as a cat with your healer's talents: the Feral Combat steps, about a f
 
 - Under 30% health with the mob still above a quarter of its health: shift out and cast **Regrowth**, or from 57 **Nature's Swiftness** and an instant **Healing Touch**, then back into **Cat Form**.
 - In a dungeon group, heal instead: that is the reason to level with these talents, and the times on this page are solo kills.
+
+*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 

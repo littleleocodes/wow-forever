@@ -42,20 +42,20 @@ Classic Era reference builds: [leveling-feral](../talents/classic-baseline/level
 
 | Build | L15 | L20 | L30 | L40 | L50 | L60 | Deaths/100 at 60 | Downtime/kill at 60 |
 |---|---|---|---|---|---|---|---|---|
-| `opt-feral-cat-dps-leveling-st` (optimizer) | 26.7s | 17.2s | 23.2s | 26.0s | 28.4s | 32.2s | 0.0 | 3.8s |
-| `leveling-feral` (hand draft) | 26.9s (+1%) | 17.3s (+1%) | 23.4s (+1%) | 26.1s (+0%) | 28.2s (-1%) | 32.1s (-1%) | 0.0 | 3.4s |
-| `opt-feral-cat-dps-leveling-st` in blues (dungeon blues from the item database) | 23.1s (-14%) | 15.6s (-10%) | 20.5s (-12%) | 23.7s (-9%) | 26.6s (-6%) | 29.6s (-8%) | 0.0 | 2.6s |
+| `opt-feral-cat-dps-leveling-st` (optimizer) | 26.6s | 17.8s | 22.7s | 26.6s | 29.2s | 33.1s | 0.0 | 3.9s |
+| `leveling-feral` (hand draft) | 26.8s (+1%) | 17.9s (+1%) | 22.9s (+1%) | 26.8s (+1%) | 29.1s (-0%) | 33.2s (+0%) | 0.0 | 3.6s |
+| `opt-feral-cat-dps-leveling-st` in blues (dungeon blues from the item database) | 23.1s (-13%) | 16.1s (-9%) | 20.5s (-9%) | 24.4s (-8%) | 27.3s (-7%) | 30.6s (-8%) | 0.0 | 2.7s |
 
 Time per kill = fight + loot, travel, eating, drinking, healing and deaths; a build's cell shows its time and the difference to the optimizer build on the same mobs and seeds.
 
-- **Talents that matter** (time per kill lost when the talent is removed from `opt-feral-cat-dps-leveling-st` at level 60): Ferocity +5% (L30 +4%), Nature's Reach +4% (L30 +3%), Sharpened Claws +3% (L30 +4%), Naturalist +3% (L30 +4%), Berserk +3% (L30 +0%), Predatory Strikes +3% (L30 +4%).
+- **Talents that matter** (time per kill lost when the talent is removed from `opt-feral-cat-dps-leveling-st` at level 60): Ferocity +6% (L30 +1%), Nature's Reach +5% (L30 +3%), Naturalist +5% (L30 +3%), Predatory Strikes +4% (L30 +4%), Sharpened Claws +4% (L30 +3%), Berserk +4% (L30 +0%).
 - **Measure about zero** single-target at 60 (kept for other reasons or not simulated): Nature's Focus.
 - **Caster mobs:** 19% of pulls at level 20 are casters (creature-database share); 0.00 interrupts per kill at 60.
 - **Race** (hand draft vs every optimizer candidate, 2026-10-09, mean time per kill over levels 15/20/30/40/50/60): leveling-feral 27.1s, cand-cat-r4 29.7s, cand-cat-r3 29.9s, cand-cat-r5 29.9s, cand-cat-hand-2026-09-26 30.4s, cand-cat-r2 30.7s, cand-cat-r1 30.8s — fastest: **leveling-feral**.
 - **Calibration:** the scorer's `feral-cat-dps` leveling values were fitted jointly to the hand draft and every candidate in [`fightlab/candidates/`](fightlab/candidates/) (1 round, converged: the optimizer build repeats).
-- **Other spec, same module:** `balance-dps` with `opt-balance-dps-leveling-st` ([report](fightlab/balance-dps.md)): L30 52.5s (+126% vs `opt-feral-cat-dps-leveling-st`), L60 51.4s (+60% vs `opt-feral-cat-dps-leveling-st`). Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
-- **Balance (its own rotation):** `balance-dps` with `opt-balance-dps-leveling-st` ([report](fightlab/balance-dps-opt.md)): L40 60.9s per mob in pulls of 1 (single-target build 26.0s), 0.0 deaths/100; L60 51.3s per mob in pulls of 1 (single-target build 32.2s), 0.0 deaths/100.
-- **Not simulated:** levels 1-9 (Wrath / Moonfire), Moonfire / Wrath pulls in bear levels, Faerie Fire, Swipe, Growl, Dash, Innervate, Barkskin, adds, gear upgrades within a level bracket.
+- **Other spec, same module:** `balance-dps` with `opt-balance-dps-leveling-st` ([report](fightlab/balance-dps.md)): L30 53.1s (+134% vs `opt-feral-cat-dps-leveling-st`), L60 43.0s (+30% vs `opt-feral-cat-dps-leveling-st`). Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
+- **Balance (its own rotation):** `balance-dps` with `opt-balance-dps-leveling-st` ([report](fightlab/balance-dps-opt.md)): L40 60.9s per mob in pulls of 1 (single-target build 26.6s), 0.0 deaths/100; L60 51.3s per mob in pulls of 1 (single-target build 33.1s), 0.0 deaths/100.
+- **Not simulated:** levels 1-9 (Wrath / Moonfire), Moonfire / Wrath pulls in bear levels, Faerie Fire, Swipe, Growl, Dash, Innervate, Barkskin, Hurricane, Lacerate's stacks, adds, gear upgrades within a level bracket.
 - **Recommended:** the hand draft `leveling-feral` (no candidate beats it by more than the 2% margin).
 
 ## Optimizer (stats model) — builds derived from talent numbers

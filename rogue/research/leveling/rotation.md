@@ -4,9 +4,9 @@
 
 ## combat-daggers-raid
 
-Single-target leveling fights against normal mobs of your level with two swords: open from stealth behind the mob with Cheap Shot (Garrote before 26; the mob turns to face you after the opener, so it can parry from then on), Slice and Dice at 1-2 points when it is down, Sinister Strike to 5 points, Eviscerate (Kidney Shot instead when below 50% health), Riposte after a parry, Blade Flurry and Adrenaline Rush on the pull, Evasion when low; white swings with both hands (19% extra miss on white dual-wield hits), Instant Poison on the main hand and Deadly Poison on the off hand. Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below 50%; a death costs 90 s.
+Single-target leveling fights against normal mobs of your level with two swords (the daggers models: two daggers, still Sinister Strike: the mob faces you after the opener, so no Backstab): open from stealth behind the mob with Cheap Shot (Garrote before 26; the mob turns to face you after the opener, so it can parry from then on), Slice and Dice at 1-2 points when it is down, Sinister Strike to 5 points, Eviscerate (Kidney Shot instead when below 60% health, stunning for the tooltip's seconds per point), Eviscerate at fewer points when it would kill the mob, Cold Blood right before a 5-point Eviscerate, Riposte after a parry, Blade Flurry and Adrenaline Rush on the pull, Evasion when low; white swings with both hands (19% extra miss on white dual-wield hits), Instant Poison on the main hand and Deadly Poison on the off hand. Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below 65%; a death costs 90 s. The tuned rules (rotations/rogue-<spec>.json) veto spells and move the thresholds on top of this list.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): never cast Cheap Shot; eat below 40% health; never cast Slice and Dice; never cast Kidney Shot. Together +17.1% time per kill saved for `opt-combat-daggers-raid-leveling-st` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): never cast Cheap Shot; eat below 40% health; never cast Slice and Dice; never cast Kidney Shot. Together +15.8% time per kill saved for `opt-combat-daggers-raid-leveling-st` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/combat-daggers-raid.md](fightlab/combat-daggers-raid.md).
 
@@ -14,33 +14,34 @@ Report: [fightlab/combat-daggers-raid.md](fightlab/combat-daggers-raid.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 7.4 | 8.5 | 10.7 | 11.6 | 12.1 | 19% |
-| Melee (off-hand) | 6.8 | 7.9 | 10.3 | 11.3 | 11.8 | 10% |
-| Sinister Strike | 2.9 | 3.3 | 4.1 | 4.5 | 4.8 | 18% |
-| Riposte | 0.0 | 0.9 | 1.1 | 1.2 | 1.3 | 4% |
-| Eviscerate | 0.7 | 0.7 | 1.0 | 1.1 | 1.2 | 23% |
-| Garrote | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 12% |
-| Hack and Slash | 0.0 | 0.0 | 0.0 | 0.0 | 0.8 | 1% |
+| Melee | 7.3 | 8.3 | 10.4 | 11.5 | 11.7 | 20% |
+| Melee (off-hand) | 6.7 | 7.8 | 10.0 | 11.1 | 11.4 | 11% |
+| Sinister Strike | 2.8 | 3.3 | 4.0 | 4.4 | 4.6 | 16% |
+| Eviscerate | 0.7 | 0.7 | 1.0 | 1.2 | 1.3 | 25% |
+| Riposte | 0.0 | 0.9 | 1.1 | 1.2 | 1.2 | 4% |
+| Garrote | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 13% |
 | Kick | 0.3 | 0.3 | 0.3 | 0.3 | 0.2 | 0% |
+| Cold Blood | 0.0 | 0.0 | 0.0 | 0.1 | 0.1 | 0% |
 | Evasion | 0.0 | 0.0 | 0.0 | 0.1 | 0.1 | 0% |
 
 ### [`opt-combat-swords-raid-leveling-st`](builds/opt-combat-swords-raid-leveling-st.md)
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 4.4 | 5.4 | 6.6 | 6.8 | 6.9 | 16% |
-| Melee (off-hand) | 3.8 | 4.8 | 6.2 | 6.4 | 6.5 | 8% |
-| Sinister Strike | 2.9 | 3.5 | 4.3 | 4.7 | 4.8 | 23% |
-| Eviscerate | 0.4 | 0.7 | 0.9 | 1.0 | 1.4 | 26% |
-| Garrote | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 11% |
-| Riposte | 0.0 | 0.6 | 0.8 | 0.8 | 0.9 | 4% |
+| Melee | 4.4 | 5.4 | 6.5 | 6.9 | 6.8 | 16% |
+| Melee (off-hand) | 3.8 | 4.8 | 6.1 | 6.4 | 6.4 | 8% |
+| Sinister Strike | 2.9 | 3.5 | 4.3 | 4.6 | 4.7 | 21% |
+| Eviscerate | 0.4 | 0.7 | 1.0 | 1.1 | 1.5 | 27% |
+| Garrote | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 12% |
+| Riposte | 0.0 | 0.6 | 0.8 | 0.9 | 0.9 | 4% |
+| Cold Blood | 0.0 | 0.0 | 0.0 | 0.1 | 0.1 | 0% |
 | Evasion | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## combat-swords-raid in pulls of several mobs
 
-Pulls of several mobs: area attacks when enough mobs stand in reach, then damage over time spread over the pull, else the single-target priority below. Single-target leveling fights against normal mobs of your level with two swords: open from stealth behind the mob with Cheap Shot (Garrote before 26; the mob turns to face you after the opener, so it can parry from then on), Slice and Dice at 1-2 points when it is down, Sinister Strike to 5 points, Eviscerate (Kidney Shot instead when below 50% health), Riposte after a parry, Blade Flurry and Adrenaline Rush on the pull, Evasion when low; white swings with both hands (19% extra miss on white dual-wield hits), Instant Poison on the main hand and Deadly Poison on the off hand. Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below 50%; a death costs 90 s.
+Pulls of several mobs: area attacks when enough mobs stand in reach, then damage over time spread over the pull, else the single-target priority below. Single-target leveling fights against normal mobs of your level with two swords (the daggers models: two daggers, still Sinister Strike: the mob faces you after the opener, so no Backstab): open from stealth behind the mob with Cheap Shot (Garrote before 26; the mob turns to face you after the opener, so it can parry from then on), Slice and Dice at 1-2 points when it is down, Sinister Strike to 5 points, Eviscerate (Kidney Shot instead when below 60% health, stunning for the tooltip's seconds per point), Eviscerate at fewer points when it would kill the mob, Cold Blood right before a 5-point Eviscerate, Riposte after a parry, Blade Flurry and Adrenaline Rush on the pull, Evasion when low; white swings with both hands (19% extra miss on white dual-wield hits), Instant Poison on the main hand and Deadly Poison on the off hand. Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below 65%; a death costs 90 s. The tuned rules (rotations/rogue-<spec>.json) veto spells and move the thresholds on top of this list.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): never cast Cheap Shot; eat below 40% health; never cast Slice and Dice; never cast Kidney Shot; never cast Kick. Together +15.9% time per kill saved for `leveling-combat-swords` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): never cast Cheap Shot; eat below 40% health; never cast Slice and Dice; never cast Kidney Shot; never cast Kick. Together +15.6% time per kill saved for `leveling-combat-swords` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/combat-swords-raid-aoe.md](fightlab/combat-swords-raid-aoe.md).
 
@@ -84,9 +85,9 @@ Report: [fightlab/combat-swords-raid-aoe.md](fightlab/combat-swords-raid-aoe.md)
 
 ## combat-swords-raid
 
-Single-target leveling fights against normal mobs of your level with two swords: open from stealth behind the mob with Cheap Shot (Garrote before 26; the mob turns to face you after the opener, so it can parry from then on), Slice and Dice at 1-2 points when it is down, Sinister Strike to 5 points, Eviscerate (Kidney Shot instead when below 50% health), Riposte after a parry, Blade Flurry and Adrenaline Rush on the pull, Evasion when low; white swings with both hands (19% extra miss on white dual-wield hits), Instant Poison on the main hand and Deadly Poison on the off hand. Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below 50%; a death costs 90 s.
+Single-target leveling fights against normal mobs of your level with two swords (the daggers models: two daggers, still Sinister Strike: the mob faces you after the opener, so no Backstab): open from stealth behind the mob with Cheap Shot (Garrote before 26; the mob turns to face you after the opener, so it can parry from then on), Slice and Dice at 1-2 points when it is down, Sinister Strike to 5 points, Eviscerate (Kidney Shot instead when below 60% health, stunning for the tooltip's seconds per point), Eviscerate at fewer points when it would kill the mob, Cold Blood right before a 5-point Eviscerate, Riposte after a parry, Blade Flurry and Adrenaline Rush on the pull, Evasion when low; white swings with both hands (19% extra miss on white dual-wield hits), Instant Poison on the main hand and Deadly Poison on the off hand. Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below 65%; a death costs 90 s. The tuned rules (rotations/rogue-<spec>.json) veto spells and move the thresholds on top of this list.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): never cast Cheap Shot; eat below 40% health; never cast Slice and Dice; never cast Kidney Shot; never cast Kick. Together +15.9% time per kill saved for `leveling-combat-swords` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): never cast Cheap Shot; eat below 40% health; never cast Slice and Dice; never cast Kidney Shot; never cast Kick. Together +15.6% time per kill saved for `leveling-combat-swords` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/combat-swords-raid.md](fightlab/combat-swords-raid.md).
 
@@ -94,22 +95,24 @@ Report: [fightlab/combat-swords-raid.md](fightlab/combat-swords-raid.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 4.4 | 5.4 | 6.6 | 6.8 | 6.9 | 16% |
-| Melee (off-hand) | 3.8 | 4.8 | 6.2 | 6.4 | 6.5 | 8% |
-| Sinister Strike | 2.9 | 3.5 | 4.3 | 4.7 | 4.8 | 23% |
-| Eviscerate | 0.4 | 0.7 | 0.9 | 1.0 | 1.4 | 26% |
-| Garrote | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 11% |
-| Riposte | 0.0 | 0.6 | 0.8 | 0.8 | 0.9 | 4% |
+| Melee | 4.4 | 5.4 | 6.5 | 6.9 | 6.8 | 16% |
+| Melee (off-hand) | 3.8 | 4.8 | 6.1 | 6.4 | 6.4 | 8% |
+| Sinister Strike | 2.9 | 3.5 | 4.3 | 4.6 | 4.7 | 21% |
+| Eviscerate | 0.4 | 0.7 | 1.0 | 1.1 | 1.5 | 27% |
+| Garrote | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 12% |
+| Riposte | 0.0 | 0.6 | 0.8 | 0.9 | 0.9 | 4% |
+| Cold Blood | 0.0 | 0.0 | 0.0 | 0.1 | 0.1 | 0% |
 | Evasion | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ### [`leveling-combat-swords`](builds/leveling-combat-swords.md)
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 4.4 | 5.5 | 6.7 | 6.8 | 7.0 | 17% |
-| Melee (off-hand) | 3.8 | 5.0 | 6.3 | 6.4 | 6.6 | 9% |
-| Sinister Strike | 2.9 | 3.5 | 4.2 | 4.5 | 4.8 | 22% |
-| Eviscerate | 0.3 | 0.4 | 0.8 | 1.1 | 1.4 | 26% |
+| Melee | 4.4 | 5.5 | 6.8 | 6.9 | 7.0 | 17% |
+| Melee (off-hand) | 3.8 | 5.0 | 6.4 | 6.4 | 6.6 | 9% |
+| Sinister Strike | 2.9 | 3.5 | 4.2 | 4.5 | 4.8 | 21% |
+| Eviscerate | 0.3 | 0.4 | 0.9 | 1.2 | 1.5 | 27% |
 | Garrote | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 11% |
 | Riposte | 0.5 | 0.6 | 0.8 | 0.8 | 0.9 | 4% |
+| Cold Blood | 0.0 | 0.0 | 0.1 | 0.1 | 0.1 | 0% |
 | Evasion | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |

@@ -41,6 +41,8 @@ Pull with instants, then cast: **Moonfire** and **Insect Swarm** on the mob, **W
 
 - When the mob is nearly dead, finish it with an instant **Moonfire** or a quick **Wrath** rather than a **Starfire** it will not live through: the fight lab does exactly that.
 
+*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

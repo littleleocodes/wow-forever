@@ -4,9 +4,9 @@
 
 ## arms-2h-raid in pulls of several mobs
 
-Pulls of several mobs: area attacks when enough mobs stand in reach, then damage over time spread over the pull, else the single-target priority below. Single-target leveling fights against normal mobs of your level with a two-hander in Battle Stance: Bloodrage and Charge on the pull (the mob is stunned 1 s), Battle Shout kept up, Victory Rush after a kill, Mortal Strike on cooldown, Overpower after a dodge or a Bloodthrill proc, Rend once, Execute under 20% with all the rage, Heroic Strike with spare rage, white swings that generate rage by Forever's normalized rule (weapon speed, double on a crit; tables.RAGE_MODEL) (the mob dodges 5%, parries 5%, 10% of swings glance for 95%). Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below 50%, rage decays; a death costs 90 s.
+Pulls of several mobs: area attacks when enough mobs stand in reach, then damage over time spread over the pull, else the single-target priority below. Single-target leveling fights against normal mobs of your level. Arms (a two-hander) and Fury (a weapon in each hand) fight in Battle Stance: Bloodrage and Charge on the pull (the mob is stunned 1 s; Death Wish too when the build has it), Battle Shout kept up, Victory Rush after a kill, Mortal Strike or Bloodthirst on cooldown, Overpower after a dodge or a Bloodthrill proc, Rend once, Execute under 20% with all the rage, Heroic Strike with spare rage; spells that need Berserker Stance (Whirlwind, Berserker Rage) are never cast. Protection fights sword and board in Defensive Stance: Charge from Battle Stance, then Shield Block while the mob hits, Revenge, Shield Slam, Rend and Heroic Strike. White swings generate rage by Forever's normalized rule (weapon speed, half for the off-hand, double on a crit; tables.RAGE_MODEL) (the mob dodges 5%, parries 5%, 10% of swings glance for 95%). Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below the eating threshold (65%; 40% under the tuned Arms and Fury rules), rage decays; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): eat below 40% health. Together +2.9% time per kill saved for `leveling-arms` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): eat below 40% health. Together +1.7% time per kill saved for `leveling-arms` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/arms-2h-raid-aoe.md](fightlab/arms-2h-raid-aoe.md).
 
@@ -66,9 +66,9 @@ Report: [fightlab/arms-2h-raid-aoe.md](fightlab/arms-2h-raid-aoe.md).
 
 ## arms-2h-raid
 
-Single-target leveling fights against normal mobs of your level with a two-hander in Battle Stance: Bloodrage and Charge on the pull (the mob is stunned 1 s), Battle Shout kept up, Victory Rush after a kill, Mortal Strike on cooldown, Overpower after a dodge or a Bloodthrill proc, Rend once, Execute under 20% with all the rage, Heroic Strike with spare rage, white swings that generate rage by Forever's normalized rule (weapon speed, double on a crit; tables.RAGE_MODEL) (the mob dodges 5%, parries 5%, 10% of swings glance for 95%). Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below 50%, rage decays; a death costs 90 s.
+Single-target leveling fights against normal mobs of your level. Arms (a two-hander) and Fury (a weapon in each hand) fight in Battle Stance: Bloodrage and Charge on the pull (the mob is stunned 1 s; Death Wish too when the build has it), Battle Shout kept up, Victory Rush after a kill, Mortal Strike or Bloodthirst on cooldown, Overpower after a dodge or a Bloodthrill proc, Rend once, Execute under 20% with all the rage, Heroic Strike with spare rage; spells that need Berserker Stance (Whirlwind, Berserker Rage) are never cast. Protection fights sword and board in Defensive Stance: Charge from Battle Stance, then Shield Block while the mob hits, Revenge, Shield Slam, Rend and Heroic Strike. White swings generate rage by Forever's normalized rule (weapon speed, half for the off-hand, double on a crit; tables.RAGE_MODEL) (the mob dodges 5%, parries 5%, 10% of swings glance for 95%). Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below the eating threshold (65%; 40% under the tuned Arms and Fury rules), rage decays; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): eat below 40% health. Together +2.9% time per kill saved for `leveling-arms` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): eat below 40% health. Together +1.7% time per kill saved for `leveling-arms` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/arms-2h-raid.md](fightlab/arms-2h-raid.md).
 
@@ -76,37 +76,37 @@ Report: [fightlab/arms-2h-raid.md](fightlab/arms-2h-raid.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 1.9 | 3.0 | 4.9 | 5.4 | 6.3 | 36% |
+| Melee | 2.1 | 3.1 | 5.2 | 5.7 | 6.6 | 38% |
 | Mortal Strike | 0.0 | 0.0 | 2.0 | 2.3 | 2.6 | 22% |
-| Execute | 0.0 | 1.1 | 1.1 | 1.2 | 1.3 | 17% |
-| Rend | 1.1 | 1.2 | 1.1 | 1.1 | 1.1 | 7% |
+| Execute | 0.0 | 1.1 | 1.0 | 1.1 | 1.3 | 17% |
+| Rend | 1.1 | 1.2 | 1.1 | 1.1 | 1.1 | 6% |
+| Overpower | 0.6 | 0.7 | 0.8 | 0.9 | 1.1 | 11% |
 | Charge | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
-| Overpower | 0.4 | 0.5 | 0.6 | 0.7 | 0.9 | 9% |
-| Victory Rush | 0.2 | 0.5 | 0.5 | 0.6 | 0.7 | 1% |
+| Victory Rush | 0.2 | 0.5 | 0.5 | 0.7 | 0.7 | 1% |
 | Bloodrage | 0.3 | 0.3 | 0.3 | 0.3 | 0.4 | 0% |
-| Heroic Strike | 2.0 | 1.5 | 0.1 | 0.2 | 0.3 | 2% |
+| Heroic Strike | 2.0 | 1.6 | 0.1 | 0.2 | 0.2 | 2% |
 | Battle Shout | 0.1 | 0.1 | 0.1 | 0.1 | 0.2 | 0% |
 
 ### [`leveling-arms`](builds/leveling-arms.md)
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 1.9 | 3.1 | 5.0 | 5.6 | 6.5 | 36% |
+| Melee | 2.1 | 3.2 | 5.3 | 5.8 | 6.7 | 38% |
 | Mortal Strike | 0.0 | 0.0 | 2.0 | 2.3 | 2.6 | 22% |
-| Execute | 0.0 | 1.1 | 1.1 | 1.2 | 1.3 | 17% |
-| Rend | 1.1 | 1.2 | 1.1 | 1.1 | 1.1 | 7% |
-| Overpower | 0.4 | 0.5 | 0.7 | 0.8 | 1.0 | 10% |
+| Execute | 0.0 | 1.1 | 1.1 | 1.1 | 1.3 | 16% |
+| Overpower | 0.7 | 0.8 | 0.9 | 1.0 | 1.2 | 13% |
+| Rend | 1.1 | 1.2 | 1.1 | 1.1 | 1.1 | 6% |
 | Charge | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
-| Victory Rush | 0.2 | 0.4 | 0.5 | 0.6 | 0.7 | 1% |
-| Bloodrage | 0.3 | 0.3 | 0.3 | 0.3 | 0.4 | 0% |
-| Heroic Strike | 2.0 | 1.6 | 0.1 | 0.2 | 0.3 | 2% |
+| Victory Rush | 0.2 | 0.5 | 0.6 | 0.7 | 0.8 | 1% |
+| Bloodrage | 0.3 | 0.3 | 0.3 | 0.4 | 0.4 | 0% |
+| Heroic Strike | 1.9 | 1.6 | 0.1 | 0.2 | 0.2 | 2% |
 | Battle Shout | 0.1 | 0.1 | 0.1 | 0.1 | 0.2 | 0% |
 
 ## fury-dw-raid
 
-Single-target leveling fights against normal mobs of your level with a two-hander in Battle Stance: Bloodrage and Charge on the pull (the mob is stunned 1 s), Battle Shout kept up, Victory Rush after a kill, Mortal Strike on cooldown, Overpower after a dodge or a Bloodthrill proc, Rend once, Execute under 20% with all the rage, Heroic Strike with spare rage, white swings that generate rage by Forever's normalized rule (weapon speed, double on a crit; tables.RAGE_MODEL) (the mob dodges 5%, parries 5%, 10% of swings glance for 95%). Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below 50%, rage decays; a death costs 90 s.
+Single-target leveling fights against normal mobs of your level. Arms (a two-hander) and Fury (a weapon in each hand) fight in Battle Stance: Bloodrage and Charge on the pull (the mob is stunned 1 s; Death Wish too when the build has it), Battle Shout kept up, Victory Rush after a kill, Mortal Strike or Bloodthirst on cooldown, Overpower after a dodge or a Bloodthrill proc, Rend once, Execute under 20% with all the rage, Heroic Strike with spare rage; spells that need Berserker Stance (Whirlwind, Berserker Rage) are never cast. Protection fights sword and board in Defensive Stance: Charge from Battle Stance, then Shield Block while the mob hits, Revenge, Shield Slam, Rend and Heroic Strike. White swings generate rage by Forever's normalized rule (weapon speed, half for the off-hand, double on a crit; tables.RAGE_MODEL) (the mob dodges 5%, parries 5%, 10% of swings glance for 95%). Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below the eating threshold (65%; 40% under the tuned Arms and Fury rules), rage decays; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): eat below 40% health. Together +1.2% time per kill saved for `opt-fury-dw-raid-leveling-st` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): eat below 40% health. Together +2.6% time per kill saved for `opt-fury-dw-raid-leveling-st` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/fury-dw-raid.md](fightlab/fury-dw-raid.md).
 
@@ -114,29 +114,30 @@ Report: [fightlab/fury-dw-raid.md](fightlab/fury-dw-raid.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee (off-hand) | 5.1 | 6.4 | 8.1 | 9.2 | 11.0 | 17% |
-| Melee | 2.2 | 3.8 | 7.1 | 7.9 | 9.4 | 29% |
-| Bloodthirst | 0.0 | 0.0 | 2.0 | 2.3 | 2.7 | 15% |
-| Heroic Strike | 2.8 | 2.5 | 0.9 | 1.2 | 1.5 | 10% |
-| Execute | 0.0 | 1.2 | 1.2 | 1.3 | 1.4 | 17% |
-| Rend | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 6% |
-| Overpower | 0.5 | 0.6 | 0.8 | 1.0 | 1.2 | 5% |
+| Melee (off-hand) | 4.9 | 5.8 | 7.0 | 8.0 | 9.4 | 20% |
+| Melee | 2.2 | 3.1 | 5.9 | 6.5 | 7.7 | 23% |
+| Bloodthirst | 0.0 | 0.0 | 2.0 | 2.3 | 2.7 | 17% |
+| Heroic Strike | 2.7 | 2.7 | 1.1 | 1.5 | 1.7 | 11% |
+| Execute | 0.0 | 1.2 | 1.1 | 1.3 | 1.4 | 17% |
+| Rend | 1.1 | 1.2 | 1.2 | 1.2 | 1.2 | 5% |
+| Overpower | 0.5 | 0.6 | 0.8 | 0.9 | 1.0 | 4% |
 | Charge | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
-| Victory Rush | 0.2 | 0.4 | 0.4 | 0.6 | 0.8 | 2% |
+| Victory Rush | 0.2 | 0.4 | 0.6 | 0.7 | 0.8 | 1% |
 | Bloodrage | 0.3 | 0.3 | 0.3 | 0.4 | 0.4 | 0% |
 | Battle Shout | 0.1 | 0.1 | 0.1 | 0.1 | 0.2 | 0% |
+| Death Wish | 0.0 | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
 
 ### [`opt-arms-2h-raid-leveling-st`](builds/opt-arms-2h-raid-leveling-st.md)
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 1.9 | 3.0 | 4.9 | 5.4 | 6.3 | 36% |
+| Melee | 2.1 | 3.1 | 5.2 | 5.7 | 6.6 | 38% |
 | Mortal Strike | 0.0 | 0.0 | 2.0 | 2.3 | 2.6 | 22% |
-| Execute | 0.0 | 1.1 | 1.1 | 1.2 | 1.3 | 17% |
-| Rend | 1.1 | 1.2 | 1.1 | 1.1 | 1.1 | 7% |
+| Execute | 0.0 | 1.1 | 1.0 | 1.1 | 1.3 | 17% |
+| Rend | 1.1 | 1.2 | 1.1 | 1.1 | 1.1 | 6% |
+| Overpower | 0.6 | 0.7 | 0.8 | 0.9 | 1.1 | 11% |
 | Charge | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
-| Overpower | 0.4 | 0.5 | 0.6 | 0.7 | 0.9 | 9% |
-| Victory Rush | 0.2 | 0.5 | 0.5 | 0.6 | 0.7 | 1% |
+| Victory Rush | 0.2 | 0.5 | 0.5 | 0.7 | 0.7 | 1% |
 | Bloodrage | 0.3 | 0.3 | 0.3 | 0.3 | 0.4 | 0% |
-| Heroic Strike | 2.0 | 1.5 | 0.1 | 0.2 | 0.3 | 2% |
+| Heroic Strike | 2.0 | 1.6 | 0.1 | 0.2 | 0.2 | 2% |
 | Battle Shout | 0.1 | 0.1 | 0.1 | 0.1 | 0.2 | 0% |
