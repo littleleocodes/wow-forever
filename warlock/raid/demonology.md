@@ -17,16 +17,15 @@
 1. **Curse of the Elements**: keep it on the target
 2. **Life Tap** when your mana is below 5%
 3. **Bane of Agony**: keep it on the target
-4. **Corruption**: keep it on the target
-5. **Immolate**: keep it on the target
+4. **Corruption**: keep it on the target, until the last 10 seconds of the fight
+5. **Immolate**: keep it on the target, until the last 20 seconds of the fight
 6. **Shadow Bolt**
 
 **Shadow Bolt** is your filler: cast it whenever nothing above is ready.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
-- **Searing Pain**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
-- Use your trinkets, your racial and a potion together with your big cooldowns.
+- **Searing Pain**: in the last 3.5 seconds of the fight, when there is no time left for another **Shadow Bolt**
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 

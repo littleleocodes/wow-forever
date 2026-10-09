@@ -8,18 +8,18 @@
 
 > 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds). A model of the beta, to check at launch.
 
-**Other weapons and stances.** This build is the Daggers setup. The spec's best build for each other setup, in a full raid:
+**Other setups of this spec.** This build is the Daggers setup. The spec's best build for each other setup, in a full raid:
 
 - Swords: [Raid Combat swords](../research/raid/builds/opt-combat-swords-raid-raid-dps.md) (20/31/0), 704 DPS in a full raid — [open the talent tree](https://talentsforever.com/rogue/60/005323101005-32502300000514231--6)
 
 ## How to play
 
-**Keep up all fight:** **Slice and Dice** (put it back up as soon as it drops, even with 1 combo point).
+**Keep up all fight:** **Slice and Dice** (put it back up as soon as it drops, even with 1 combo point; refresh it early at 5 combo points when it has under 3 seconds left).
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Cold Blood** right before your finisher, when you have 4 or more combo points and Slice and Dice is active
-2. **Eviscerate** when you have 4 or more combo points and Slice and Dice is active
+1. **Cold Blood** right before your finisher
+2. **Eviscerate** when you have 4 or more combo points and either Slice and Dice is active or you have 79+ energy
 3. **Adrenaline Rush**
 4. **Backstab**
 
@@ -28,7 +28,7 @@
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
 - **Blade Flurry**: a cooldown, use it at the start of the fight and again whenever it is ready (about 2 times a fight)
-- Use your trinkets, your racial and a potion together with your big cooldowns.
+- Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 

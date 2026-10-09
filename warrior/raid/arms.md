@@ -10,7 +10,7 @@
 
 ## How to play
 
-**Before the pull:** **Battle Stance**.
+**Before the pull, then keep up all fight:** **Battle Stance**.
 
 **Then press the first one that is ready**, top to bottom:
 
@@ -21,9 +21,9 @@
 5. **Execute** when the target is below 20% health
 6. **Spearing Strike**
 7. **Hamstring**
-8. **Bloodrage**
+8. **Bloodrage** when you have less than 90 rage
 
-**Bloodrage** is your filler: cast it whenever nothing above is ready.
+Between these, your white swings do the rest.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 

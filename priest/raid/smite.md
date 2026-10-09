@@ -15,15 +15,19 @@
 **Then press the first one that is ready**, top to bottom:
 
 1. **Penance**
-2. **Shadow Word: Pain**: keep it on the target
+2. **Shadow Word: Pain**: keep it on the target, until the last 10 seconds of the fight
 3. **Inner Focus**, then straight away **Devouring Plague**
 4. **Holy Fire**: keep it on the target
-5. **Shadow Word: Death**
-6. **Power Infusion**
-7. **Smite**
-8. **Dark Sacrifice**
+5. **Inner Focus**, then straight away **Smite**
+6. **Shadow Word: Death**
+7. **Power Infusion**
+8. **Smite**
 
-**Dark Sacrifice** is your filler: cast it whenever nothing above is ready.
+**Smite** is your filler: cast it whenever nothing above is ready.
+
+**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
+
+- **Dark Sacrifice**: when you run low on mana (about 1 time a fight)
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 

@@ -6,16 +6,16 @@
 
 ## How to play
 
-**Keep up all fight:** **Slice and Dice** (put it back up as soon as it drops, even with 1 combo point).
+**Keep up all fight:** **Slice and Dice** (put it back up as soon as it drops, even with 1 combo point; refresh it early at 4 combo points when it has under 3 seconds left).
 
 **Then press the first one that is ready**, top to bottom:
 
 1. **Rupture**: keep it on the target, when you have 2 or more combo points
-2. **Vanish** when Slice and Dice is active
+2. **Vanish** when you have 60+ energy and 3 or fewer combo points and Slice and Dice is active, until the last 10 seconds of the fight
 3. **Premeditation**
 4. **Garrote**: keep it on the target
-5. **Eviscerate** when you have 4 or more combo points and Slice and Dice is active
-6. **Cold Blood**
+5. **Eviscerate** when you have 4 or more combo points and either Slice and Dice is active or you have 79+ energy
+6. **Cold Blood** right before your finisher
 7. **Ghostly Strike**
 8. **Hemorrhage**
 
@@ -23,8 +23,8 @@
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
-- **Preparation**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
-- Use your trinkets, your racial and a potion together with your big cooldowns.
+- **Preparation**: once a fight, right after **Vanish**: it finishes the cooldown on your other rogue abilities, so you can Vanish again
+- Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 

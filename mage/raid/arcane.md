@@ -11,16 +11,17 @@
 **Then press the first one that is ready**, top to bottom:
 
 1. **Arcane Missiles** when Missile Barrage is active
-2. **Fire Blast**
+2. **Fire Blast** until the last 40 seconds of the fight
 3. **Arcane Blast**
 
 **Arcane Blast** is your filler: cast it whenever nothing above is ready.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
+- **Fire Blast**: in the last 3 seconds of the fight, when there is no time left for another **Arcane Blast**
 - **Presence of Mind**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
 - **Arcane Power**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
-- Use your trinkets, your racial and a potion together with your big cooldowns.
+- Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 

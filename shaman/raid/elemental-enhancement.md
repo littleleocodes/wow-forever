@@ -15,12 +15,12 @@
 **Then press the first one that is ready**, top to bottom:
 
 1. **Stormstrike**
-2. **Flame Shock**: keep it on the target
-3. **Lightning Bolt** when Maelstrom Weapon has 4 or more stacks
+2. **Flame Shock**: keep it on the target, until the last 10 seconds of the fight
+3. **Lightning Bolt** when Maelstrom Weapon has 5 or more stacks
 4. **Earth Shock**
 5. **Fire Nova**
 
-**Fire Nova** is your filler: cast it whenever nothing above is ready.
+Between these, your white swings do the rest.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 

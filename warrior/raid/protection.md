@@ -6,23 +6,23 @@
 
 ## How to play
 
-**Before the pull:** **Battle Shout**.
+**Before the pull, then keep up all fight:** **Battle Shout**.
 
 **Then press the first one that is ready**, top to bottom:
 
 1. **Shield Wall**
 2. **Revenge** after you block, dodge or parry
 3. **Shield Slam**
-4. **Heroic Strike** when you have 45+ rage to spare
+4. **Heroic Strike** when you have 45+ rage
 5. **Rend**: keep it on the target
 6. **Shield Bash**
 
-**Shield Bash** is your filler: cast it whenever nothing above is ready.
+Between these, your white swings do the rest.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
 - **Bloodrage**: a cooldown, use it at the start of the fight and again whenever it is ready (about 3 times a fight)
-- Use your trinkets, your racial and a potion together with your big cooldowns.
+- Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 

@@ -14,7 +14,7 @@
 
 1. **Flame Shock**: keep it on the target
 2. **Lava Burst**
-3. **Chain Lightning** when Clearcasting is active
+3. **Chain Lightning** when Clearcasting is active or there are 2 or more targets or you have mana to spare for the rest of the fight
 4. **Lightning Bolt**
 
 **Lightning Bolt** is your filler: cast it whenever nothing above is ready.

@@ -10,15 +10,20 @@
 
 **Before the pull:** **Seal of Command**.
 
-**Keep up all fight:** **Seal of Command**, **Seal of Righteousness**.
+**Keep up all fight:** **Seal of Righteousness**.
 
 **Then press the first one that is ready**, top to bottom:
 
 1. **Hammer of Wrath** when the target is below 20% health
-2. **Consecration**
-3. **Holy Strike**
+2. **Judgement** when Seal of Righteousness is active
+3. **Consecration** when you have at least 25% mana
+4. **Holy Strike**
 
-**Holy Strike** is your filler: cast it whenever nothing above is ready.
+Between these, your white swings do the rest.
+
+**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
+
+- **Seal of Command**: seal twisting. While **Seal of Righteousness** is up and you have at least 15% mana, switch to Seal of Command; just before your next swing, switch back to **Seal of Righteousness**, so the swing gets both seals
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 

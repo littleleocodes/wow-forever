@@ -15,17 +15,17 @@
 **Then press the first one that is ready**, top to bottom:
 
 1. **Stormstrike**
-2. **Flame Shock**: keep it on the target
-3. **Lightning Bolt** when Maelstrom Weapon has 4 or more stacks
+2. **Flame Shock**: keep it on the target, until the last 10 seconds of the fight
+3. **Lightning Bolt** when Maelstrom Weapon has 5 or more stacks
 4. **Earth Shock**
 5. **Fire Nova**
 
-**Fire Nova** is your filler: cast it whenever nothing above is ready.
+Between these, your white swings do the rest.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
 - **Rage of the Farseer**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
-- Use your trinkets, your racial and a potion together with your big cooldowns.
+- Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 

@@ -13,8 +13,8 @@
 1. **Ice Lance** when Fingers of Frost is active
 2. **Pyroblast** when Heating Up has 3 stacks
 3. **Fire Blast**
-4. **Scorch** when the target has fewer than 5 stacks of Fire Vulnerability
-5. **Frostfire Bolt**
+4. **Scorch** when the target has fewer than 5 stacks of Fire Vulnerability or Fire Vulnerability has under 15 seconds left
+5. **Frostfire Bolt** when you have at least 10% mana
 6. **Fireball**
 
 **Fireball** is your filler: cast it whenever nothing above is ready.

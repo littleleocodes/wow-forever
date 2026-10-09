@@ -8,12 +8,12 @@
 
 ## How to play
 
-**Keep up all fight:** **Slice and Dice** (put it back up as soon as it drops, even with 1 combo point).
+**Keep up all fight:** **Slice and Dice** (put it back up as soon as it drops, even with 1 combo point; refresh it early at 5 combo points when it has under 3 seconds left).
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Cold Blood** right before your finisher, when you have 4 or more combo points and Slice and Dice is active
-2. **Eviscerate** when you have 4 or more combo points and Slice and Dice is active
+1. **Cold Blood** right before your finisher
+2. **Eviscerate** when you have 4 or more combo points and either Slice and Dice is active or you have 79+ energy
 3. **Backstab**
 
 **Backstab** is your filler: cast it whenever nothing above is ready.

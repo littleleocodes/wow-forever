@@ -6,13 +6,13 @@
 
 **[Shadow Bolt hybrid (optimized)](../research/raid/builds/opt-sb-raid-raid-dps.md)** (22/11/18) — [open the talent tree](https://talentsforever.com/warlock/60/25500020035-0050203001-0550005003-6)
 
-**Other weapons and stances.** This build is the Shadow Bolt setup. The spec's best build for each other setup, in a full raid:
+**Other setups of this spec.** This build is the Shadow Bolt setup. The spec's best build for each other setup, in a full raid:
 
 - Fire: [Destruction — Immolate / Conflagrate / Incinerate](../research/raid/builds/destruction-fire-raid.md) (22/11/18), 693 DPS in a full raid — [open the talent tree](https://talentsforever.com/warlock/60/25500010135-0050203001-0550004103-6)
 
 ## How to play
 
-**Before the pull:** **Amplify Curse**, **Life Tap**.
+**Before the pull:** **Life Tap**.
 
 **Talents with no line below:** **Demonic Sacrifice**: before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it).
 
@@ -21,16 +21,15 @@
 1. **Curse of the Elements**: keep it on the target
 2. **Life Tap** when your mana is below 5%
 3. **Bane of Agony**: keep it on the target
-4. **Corruption**: keep it on the target
-5. **Immolate**: keep it on the target
+4. **Corruption**: keep it on the target, until the last 10 seconds of the fight
+5. **Immolate**: keep it on the target, until the last 20 seconds of the fight
 6. **Shadow Bolt**
 
 **Shadow Bolt** is your filler: cast it whenever nothing above is ready.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
-- **Searing Pain**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
-- Use your trinkets, your racial and a potion together with your big cooldowns.
+- **Searing Pain**: in the last 3.5 seconds of the fight, when there is no time left for another **Shadow Bolt**
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 

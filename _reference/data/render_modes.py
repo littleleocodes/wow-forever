@@ -437,7 +437,7 @@ def variant_lines(cls, top, builds, nums, src):
             best[v] = (lab, g)
     if not best:
         return []
-    o = ["**Other weapons and stances.** " + (f"This build is the {own_var} setup. " if own_var else "")
+    o = ["**Other setups of this spec.** " + (f"This build is the {own_var} setup. " if own_var else "")
          + "The spec's best build for each other setup, in a full raid:", ""]
     for v, (lab, g) in sorted(best.items(), key=lambda kv: -kv[1][1]):
         b = ids[lab]
@@ -563,11 +563,15 @@ def mode_section(cls, spec, mode, builds, nums, src):
                             "Falling numbers mean cooldowns used at the pull, or mana running out in long fights.", ""]
         if r:
             texts = [ln["text"] for ln, pl in zip(r["d"]["lines"], r["row"]["lines"]) if pl["used"]]
-            late = []   # end-of-fight extras after the filler (simple_rotation.simplify)
-            keep, prio = simple_rotation.simplify(cls, texts, late)
+            late, twists = [], []   # end-of-fight extras after the filler; seal twisting (simple_rotation.simplify)
+            keep, prio = simple_rotation.simplify(cls, texts, late, twists)
+            held = {n for items in top["allocation"].values() for n, k in items if k}
+            pre = simple_rotation.pre_pull(cls, r["d"]["pre"], held)
+            names_kept = [x.split("|")[0] for x in keep]
+            # a form or self-buff put up before the pull is kept up all fight (Moonkin Form, Shadowform): said once, not left out
+            keep += [x for x in pre if simple_rotation.is_self(x) and not x.startswith("Seal of") and x not in names_kept]
             keep_names = [x.split("|")[0] for x in keep]   # an item may carry "|<how to keep it up>" (Slice and Dice's combo points)
             keep_text = ", ".join(f"**{x.split('|')[0]}**" + (f" ({x.split('|', 1)[1]})" if "|" in x else "") for x in keep)
-            pre = simple_rotation.pre_pull(cls, r["d"]["pre"])
             play += ["## How to play", ""]
             if pre and set(pre) == set(keep_names):   # totems and self-buffs: one line instead of the same list twice
                 play += ["**Before the pull, then keep up all fight:** " + keep_text + ".", ""]
@@ -581,16 +585,26 @@ def mode_section(cls, spec, mode, builds, nums, src):
                 play += ["**Talents with no line below:** " + "; ".join(f"**{u['talent']}**: {u['advice']}" for u in quiet) + ".", ""]
             if prio:
                 play += ["**Then press the first one that is ready**, top to bottom:", ""] + [f"{i}. {x}" for i, x in enumerate(prio, 1)]
-                filler = prio[-1].count("**") == 2 and prio[-1].endswith("**")   # a plain last line: the filler
+                # the filler: the last line when it has no condition and no cooldown (2026-10-09: Bloodrage, Aimed Shot, Fire Nova had been
+                # called fillers); else what fills the gaps on its own (Auto Shot, white swings)
+                fill = simple_rotation.filler(cls, prio)
                 shown = set(pre) | set(keep_names) | {m for x in prio for m in re.findall(r"\*\*(.+?)\*\*", x)} | {x for x, _, _ in late}
                 # the build's casts in the full raid the page ranks on (the dummy race's when the environments run has none)
                 casts = raid_casts_of(cls, r["entry"], top["id"]) or casts_of(cls, r["entry"], top["id"])
-                extra = [f"**{x}**: in the last {n:.0f} seconds of the fight, when there is no time left for another **{f}**" for x, n, f in late]
-                extra += simple_rotation.advanced(cls, casts, shown)
-                play += [""] + ([f"{prio[-1]} is your filler: cast it whenever nothing above is ready.", ""] if filler else [])
+                extra = [f"**{x}**: in the last {n:g} seconds of the fight, when there is no time left for another **{f}**" for x, n, f in late]
+                extra += twists
+                extra += simple_rotation.advanced(cls, casts, shown, simple_rotation.mcd_window(texts))
+                if fill:
+                    play += ["", f"**{fill}** is your filler: cast it whenever nothing above is ready.", ""]
+                else:
+                    auto = simple_rotation.auto_line(cls, r["d"].get("entry"))
+                    play += ["", auto, ""] if auto else [""]
                 if extra:
                     play += ["**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:", ""] + [f"- {x}" for x in extra]
-                    play += ["- Use your trinkets, your racial and a potion together with your big cooldowns.", ""]
+                    if any("cooldown" in x or "once a fight" in x for x in extra):
+                        play += ["- Use your trinkets and a potion together with your big cooldowns.", ""]
+                    else:
+                        play += [""]
                 play += [f"*The simulator's full rotation for this build, with every condition: [research rotation page]"
                          f"({paths.rel(src, paths.rotation_page(cls, 'raid'))}).*", ""]
         # the build with the most DPS alone (training dummy), when it is not the pick: for players who play without a raid's buffs

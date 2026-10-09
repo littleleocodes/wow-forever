@@ -147,6 +147,20 @@ def spell_ids(x):
     return ids
 
 
+# Spells whose casts the simulator records under other ids: a paladin's Judgement (20271) is counted as the judged seal's judgement
+# (Judgement of Righteousness 20187/20280-20286, of Command 20425/20961-20968, of the Crusader, Wisdom, Light, Justice), so the
+# rotation's Judgement lines read as never used and the Retribution page lost Judgement (2026-10-09, the paladin's guide review).
+CAST_ALIASES = {20271: [20187, 20280, 20281, 20282, 20283, 20284, 20285, 20286, 20425, 20961, 20962, 20963, 20964, 20965, 20966, 20967, 20968,
+                        20184, 20185, 20186, 20188, 20300, 20301, 20302, 20303, 21183, 20344, 20345, 20346, 20354, 20355]}
+
+
+def cast_ids(ids):
+    out = []
+    for i in ids:
+        out += [i] + CAST_ALIASES.get(i, [])
+    return out
+
+
 @functools.lru_cache(maxsize=None)
 def spec_data(cls, spec, setting="dummy"):
     """Everything the raid pages need for one spec model: the rotation lines and, per build, its lines, casts and damage.
@@ -182,7 +196,7 @@ def spec_data(cls, spec, setting="dummy"):
             if not ln["ids"]:
                 per_line.append({"used": True, "cpm": None, "why": ""})
                 continue
-            cpm = sum(casts.get(i, 0.0) for i in ln["ids"]) / dur * 60
+            cpm = sum(casts.get(i, 0.0) for i in cast_ids(ln["ids"])) / dur * 60
             need = [grant[i] for i in ln["ids"] if i in grant and grant[i] not in alloc]
             per_line.append({"used": cpm >= MIN_CPM, "cpm": cpm, "why": f"needs the {need[0]} talent" if need else "its condition never held in these fights"})
         rows.append({"label": x["label"], "by": made_by(cls, x["label"]), "split": x.get("split") or "", "dps": x["dps"], "value": x.get("value"),

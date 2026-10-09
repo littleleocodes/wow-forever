@@ -8,6 +8,8 @@
 
 ## How to play
 
+**Before the pull, then keep up all fight:** **Moonkin Form**.
+
 **Then press the first one that is ready**, top to bottom:
 
 1. **Insect Swarm**: keep it on the target
@@ -19,7 +21,6 @@
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
 - **Innervate**: when you run out of mana (needed in about 1 of 10 fights)
-- Use your trinkets, your racial and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 

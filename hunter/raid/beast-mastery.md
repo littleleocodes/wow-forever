@@ -10,19 +10,21 @@
 
 **Before the pull:** **Aspect of the Hawk**, **Aimed Shot**.
 
+**Keep up all fight:** **Aspect of the Hawk**.
+
 **Then press the first one that is ready**, top to bottom:
 
-1. **Serpent Sting**: keep it on the target
+1. **Serpent Sting**: keep it on the target, when you have at least 30% mana
 2. **Arcane Shot**
 3. **Rapid Fire**
 4. **Aimed Shot**
 
-**Aimed Shot** is your filler: cast it whenever nothing above is ready.
+Between these, **Auto Shot** keeps firing on its own.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
 - **Bestial Wrath**: a cooldown, use it at the start of the fight and again whenever it is ready (about 2 times a fight)
-- Use your trinkets, your racial and a potion together with your big cooldowns.
+- Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 

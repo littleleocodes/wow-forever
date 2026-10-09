@@ -11,16 +11,18 @@
 **Then press the first one that is ready**, top to bottom:
 
 1. **Fire Blast**
-2. **Scorch** when the target has fewer than 5 stacks of Fire Vulnerability
-3. **Pyroblast** when Heating Up has 2 or more stacks
-4. **Fireball**
+2. **Scorch** when the target has fewer than 5 stacks of Fire Vulnerability or Fire Vulnerability has under 7.5 seconds left
+3. **Pyroblast** when Heating Up has 2 or more stacks and Heating Up has under 3.5 seconds left
+4. **Pyroblast** when Heating Up has 3 stacks
+5. **Fireball**
 
 **Fireball** is your filler: cast it whenever nothing above is ready.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
+- **Scorch**: in the last 3 seconds of the fight, when there is no time left for another **Fireball**
 - **Combustion**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
-- Use your trinkets, your racial and a potion together with your big cooldowns.
+- Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 

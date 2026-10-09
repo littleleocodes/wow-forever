@@ -6,14 +6,14 @@
 
 > 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds); it beat the hand-made build (destruction-incinerate-raid), which stays below as the alternative. A model of the beta, to check at launch.
 
-**Other weapons and stances.** This build is the Shadow Bolt setup. The spec's best build for each other setup, in a full raid:
+**Other setups of this spec.** This build is the Shadow Bolt setup. The spec's best build for each other setup, in a full raid:
 
 - Fire: [Destruction (optimized)](../research/raid/builds/opt-fire-destro-raid-raid-dps.md) (10/11/30), 692 DPS in a full raid — [open the talent tree](https://talentsforever.com/warlock/60/253-0050203001-055030510310025-6)
 - Incinerate: [Destruction — Incinerate](../research/raid/builds/destruction-incinerate-raid.md) (9/11/31), 672 DPS in a full raid — [open the talent tree](https://talentsforever.com/warlock/60/153-0050203001-0050245103101351-6)
 
 ## How to play
 
-**Before the pull:** **Amplify Curse**, **Life Tap**.
+**Before the pull:** **Life Tap**.
 
 **Talents with no line below:** **Demonic Sacrifice**: before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it).
 
@@ -22,8 +22,8 @@
 1. **Curse of the Elements**: keep it on the target
 2. **Life Tap** when your mana is below 5%
 3. **Bane of Agony**: keep it on the target
-4. **Corruption**: keep it on the target
-5. **Immolate**: keep it on the target
+4. **Corruption**: keep it on the target, until the last 10 seconds of the fight
+5. **Immolate**: keep it on the target, until the last 20 seconds of the fight
 6. **Conflagrate**
 7. **Shadow Bolt**
 
@@ -31,9 +31,8 @@
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
-- **Searing Pain**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
-- **Shadowburn**: now and then (in about 7 of 10 fights)
-- Use your trinkets, your racial and a potion together with your big cooldowns.
+- **Shadowburn**: in the last 1.5 seconds of the fight, when there is no time left for another **Shadow Bolt**
+- **Searing Pain**: in the last 3.5 seconds of the fight, when there is no time left for another **Shadow Bolt**
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 

@@ -6,7 +6,7 @@
 
 > 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (fury-dw-raid), which stays below as the alternative. A model of the beta, to check at launch.
 
-**Other weapons and stances.** This build is the Dual-wield setup. The spec's best build for each other setup, in a full raid:
+**Other setups of this spec.** This build is the Dual-wield setup. The spec's best build for each other setup, in a full raid:
 
 - Two-handed: [Two-handed Arms/raid or leveling](../research/raid/builds/opt-arms-2h-raid-raid-dps.md) (20/31/0), 898 DPS in a full raid — [open the talent tree](https://talentsforever.com/warrior/60/03305013032-05250030052210501--6)
 
@@ -15,19 +15,19 @@
 **Then press the first one that is ready**, top to bottom:
 
 1. **Bloodthirst**
-2. **Death Wish**: a big cooldown, use it at the start of the fight and again whenever it is ready
+2. **Death Wish**: a big cooldown, save it for the last 45 seconds of the fight
 3. **Whirlwind**
 4. **Execute** when the target is below 20% health
 5. **Hamstring**
-6. **Bloodrage**
-7. **Heroic Strike**
+6. **Bloodrage** when you have less than 23 rage
+7. **Heroic Strike** when you have 68+ rage
 
-**Heroic Strike** is your filler: cast it whenever nothing above is ready.
+Between these, your white swings do the rest.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
-- **Recklessness**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
-- Use your trinkets, your racial and a potion together with your big cooldowns.
+- **Recklessness**: once a fight, in the last 45 seconds of the fight
+- Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 

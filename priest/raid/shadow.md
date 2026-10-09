@@ -8,17 +8,18 @@
 
 ## How to play
 
-**Before the pull:** **Shadowform**.
+**Before the pull, then keep up all fight:** **Shadowform**.
 
 **Talents with no line below:** **Vampiric Embrace**: taken because Shadowform requires it.
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Shadow Word: Pain**: keep it on the target
+1. **Shadow Word: Pain**: keep it on the target, until the last 10 seconds of the fight
 2. **Inner Focus**, then straight away **Devouring Plague**
 3. **Shadow Word: Death**
 4. **Mind Blast**
-5. **Mind Flay**
+5. **Devouring Plague**
+6. **Mind Flay**
 
 **Mind Flay** is your filler: cast it whenever nothing above is ready.
 

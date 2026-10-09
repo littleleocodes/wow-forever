@@ -8,20 +8,23 @@
 
 **Before the pull:** **Righteous Fury**, **Seal of Righteousness**, **Holy Shield**.
 
-**Keep up all fight:** **Seal of Righteousness**.
+**Keep up all fight:** **Seal of Righteousness**, **Righteous Fury**.
 
 **Then press the first one that is ready**, top to bottom:
 
 1. **Templar's Bulwark**
 2. **Holy Shield**
-3. **Consecration**
-4. **Holy Strike**
-5. **Lay on Hands** when your health is below 10%
+3. **Judgement**
+4. **Consecration**
+5. **Holy Strike**
+6. **Lay on Hands** when your health is below 10%
+
+Between these, your white swings do the rest.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
-- **Swift Judgement**: a cooldown, use it at the start of the fight and again whenever it is ready (about 3 times a fight)
-- Use your trinkets, your racial and a potion together with your big cooldowns.
+- **Swift Judgement**: whenever it is ready: it finishes the cooldown on **Judgement** and makes the next one free, so judge again at once
+- Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 

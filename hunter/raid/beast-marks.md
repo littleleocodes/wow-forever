@@ -8,7 +8,7 @@
 
 > 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (mm-hawk-raid), which stays below as the alternative. A model of the beta, to check at launch.
 
-**Other weapons and stances.** The spec's best build for each other setup, in a full raid:
+**Other setups of this spec.** The spec's best build for each other setup, in a full raid:
 
 - With a pet: [Beast Mastery / Marksmanship](../research/raid/builds/bm-mm-raid.md) (22/29/0), 806 DPS in a full raid — [open the talent tree](https://talentsforever.com/hunter/60/53200005041002-005355010150004--6)
 
@@ -16,14 +16,16 @@
 
 **Before the pull:** **Aspect of the Hawk**, **Aimed Shot**.
 
+**Keep up all fight:** **Aspect of the Hawk**.
+
 **Then press the first one that is ready**, top to bottom:
 
-1. **Serpent Sting**: keep it on the target
+1. **Serpent Sting**: keep it on the target, when you have at least 30% mana
 2. **Arcane Shot**
 3. **Rapid Fire**
 4. **Aimed Shot**
 
-**Aimed Shot** is your filler: cast it whenever nothing above is ready.
+Between these, **Auto Shot** keeps firing on its own.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 

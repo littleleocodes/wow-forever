@@ -4,13 +4,15 @@
 
 **[Marksmanship — Lone Wolf](../research/raid/builds/mm-lone-wolf-raid.md)** (5/41/5) — [open the talent tree](https://talentsforever.com/hunter/60/5-0053452511513051-5-6)
 
-**Other weapons and stances.** This build is the Lone Wolf setup. The spec's best build for each other setup, in a full raid:
+**Other setups of this spec.** This build is the Lone Wolf setup. The spec's best build for each other setup, in a full raid:
 
 - With a pet: [Marksmanship — With a pet](../research/raid/builds/marksmanship-with-a-pet-open-raid.md) (7/39/5), 881 DPS in a full raid — [open the talent tree](https://talentsforever.com/hunter/60/502-0053252501523051-5-6)
 
 ## How to play
 
 **Before the pull:** **Aspect of the Hawk**, **Aimed Shot**.
+
+**Keep up all fight:** **Aspect of the Hawk**.
 
 **Talents with no line below:** **Trueshot Aura**: turn it on before the pull.
 
@@ -23,7 +25,7 @@
 5. **Arcane Shot**
 6. **Sniper Shot**
 
-**Sniper Shot** is your filler: cast it whenever nothing above is ready.
+Between these, **Auto Shot** keeps firing on its own.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 

@@ -14,7 +14,7 @@
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Mongoose Bite** when it lights up (after the target dodges)
+1. **Mongoose Bite** after you dodge
 2. **Strider Kick**
 3. **Raptor Strike**
 4. **Immolation Trap**
@@ -25,7 +25,7 @@
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
 - **Rapid Fire**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
-- Use your trinkets, your racial and a potion together with your big cooldowns.
+- Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
