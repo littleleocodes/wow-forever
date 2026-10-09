@@ -414,6 +414,36 @@ def recommended(cls, g, specs, mode, nums):
 
 
 # ------------------------------------------------------------------------------------------------ pages
+def variant_lines(cls, top, builds, nums, src):
+    """Weapon and stance setups of a spec's raid play (2026-10-08, the improvement log's "weapon variants on the pages"; user: "Do all of
+    them"): for each setup of the spec (spec_modes.RAID_ENTRY_VARIANT) other than the pick's, the spec's best build raced in that setup's
+    entries, by full-raid DPS (own-rotation rule kept), so a player with swords, a two-hander or no pet sees the build for it."""
+    R = nums[0]
+    own_var = SM.RAID_ENTRY_VARIANT.get((cls, (R.get(top["id"]) or {}).get("entry")))
+    ids = {b["id"]: b for b in builds if not b["id"].endswith("-parse")}
+    best = {}
+    for x in rs.raid_rows(cls, "raid"):
+        v = SM.RAID_ENTRY_VARIANT.get((cls, x["spec"]))
+        lab = x["row"]["label"]
+        if x["tank"] or not v or v == own_var or lab not in ids:
+            continue
+        own = SM.RAID_ENTRY_TREES.get((cls, x["spec"]))
+        if own and not SM.rotation_allows(SM.spec_of(cls, ids[lab]), own):
+            continue
+        g = x["row"].get("raid")
+        if g and (v not in best or g > best[v][1]):
+            best[v] = (lab, g)
+    if not best:
+        return []
+    o = ["**Other weapons and stances.** " + (f"This build is the {own_var} setup. " if own_var else "")
+         + "The spec's best build for each other setup, in a full raid:", ""]
+    for v, (lab, g) in sorted(best.items(), key=lambda kv: -kv[1][1]):
+        b = ids[lab]
+        o.append(f"- {v}: " + ("this build too" if lab == top["id"] else f"{link(cls, b, src)} ({rs.split_of(cls, rs.flat(b))})")
+                 + f", {g:.0f} DPS in a full raid — {tree_link(cls, b)}")
+    return o + [""]
+
+
 def mode_section(cls, spec, mode, builds, nums, src):
     """The body of one spec x mode page."""
     R, L, H = nums
@@ -446,6 +476,8 @@ def mode_section(cls, spec, mode, builds, nums, src):
         o += [f"> {GEN_MARK} Generated build: no hand-made {spec} build exists for this mode yet, so this is the stats model's best {spec} build"
               + (", refined in the raid simulator" if mode == "raid" and (GEN.get(cls, {}).get(top["id"], {}).get("entry")) else "")
               + ". A starting point, not a proven build.", ""]
+    if mode == "raid":
+        o += variant_lines(cls, top, builds, nums, src)
     play, talents, numbers = [], [], []   # the page reads: build, how to play, talents while leveling, the numbers, other builds
     if mode == "leveling":
         if top.get("order"):
@@ -586,7 +618,7 @@ def mode_section(cls, spec, mode, builds, nums, src):
         for b in alts:
             extra = ""
             if mode == "raid" and (R.get(b["id"]) or {}).get("group") and not (R.get(b["id"]) or {}).get("tank"):
-                extra = f", {R[b['id']]['group']:.0f} DPS in a full raid" + (f", {R[b['id']]['dps']:.0f} on the dummy" if R[b["id"]].get("dps") else "")
+                extra = f", {R[b['id']]['group']:.0f} DPS in a full raid"   # no dummy number on the pages (user decision, 2026-10-04)
             if mode == "leveling" and weighted(L.get(b["id"]) or {}):
                 extra = f", {weighted(L[b['id']]):.0f} s per kill (level-weighted)"
             o.append(f"- {link(cls, b, src)} ({rs.split_of(cls, rs.flat(b))}{extra}) — {tree_link(cls, b)}")

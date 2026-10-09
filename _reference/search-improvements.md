@@ -10,7 +10,8 @@
 - Within the models: raid builds probably within about 0.5% of the best build a spec's rotation and gear allow; leveling within 1-2%.
   Races separate builds to about 0.3%, so the "best build" is a handful of tied builds.
 - Against the real game the models limit us, not the search: a few percent within a spec, more between specs. Lowest confidence:
-  warlock (demon scaling unknown), hunter (our pet-scaling patch, the Summon Hawk model), tanks and healers (our own weights and lab),
+  warlock (demon scaling from the client's UI since 2026-10-08; hit rate, school and melee crit are our readings), hunter (our
+  pet patches: stats and the unnormalized hit, unmeasured at level 60; the Summon Hawk model), tanks and healers (our own weights and lab),
   leveling everywhere (Classic mob and gear data, assumed pulls, drinking and eating).
 - Blind spots of the search itself: builds that need a rotation nobody wrote; gear coupling (a family is searched in another spec's gear
   until it wins); three-talent packages that pay nothing in any pair; leveling builds strong early but weaker at 60 (the main search
@@ -20,6 +21,8 @@
 
 | Date | Change | Why (evidence) | Effect |
 |---|---|---|---|
+| 2026-10-08 night | Demon scaling and the pet hit rule patched into the simulator (`patches/README.md`) | The client's own UI text (build 70291) gives the demon percentages; the Faster Attack passives and two forum logs show pet damage is not normalized by attack speed, which the fork does | Full raid, 3,000 fights: demon-keeping warlocks +3.6-4.2%, hunters with a pet +3.0-3.9%; sacrifice and Lone Wolf builds unchanged |
+| 2026-10-08 night | `apl_opt --skip-commit <sha>` skips entries whose rotation record was written on that simulator commit | A restarted `--all` pass redoes every finished entry (no resume) | The re-baseline restart after the pet patches kept the mage rotations already tuned on 2ce8265 |
 | 2026-10-08 | `apl_opt` without `--tune`: our best build and the best preset are the tuning builds, every other listed build protected | An `--all` pass scored every candidate on 6 to 8 builds an entry (the commit message's "40 minutes" was a misread clock: the first run had been going 4 minutes) | Several times less work per round; the same protection |
 | 2026-10-08 | Open searches only try builds that may use their rotation (`Space.allow_trees`) | Six searches had spent their time on another spec's build (the priest's Discipline rotation found a 31-point Shadow build), which the own-rotation rule cannot show | Every winner is writable; pairs from two other trees are skipped in the polish (cheaper); the six get restricted re-runs after the queue |
 | 2026-10-08 | Each spec plays its own rotation (user decision): no sibling-rotation numbers or adoptions; writer, pages and the raid cross step changed; four page builds re-raced with their own rotation | "I don't want classes specs taking other specs rotations or builds or anything just because it's faster" | Pages show each build with its spec's play; some leveling numbers got slower (druid Balance 37.9 -> 52.0 s as a caster) |
@@ -57,10 +60,11 @@
    into triples and measure them unpaid. Cost: small (tens of builds).
 5. **Gear coupling.** A new family is searched in another spec's gear until it wins. Idea: give the top three families of each entry a
    quick phase-1 set (`gear_tiers.make`) and race them in it. Cost: about 10 min per family.
-6. **Fight variety.** Every raid number is one fight. Idea: race the top builds of each spec in two more settings (two to three targets;
-   an Undead or Demon target; 90 s and 300 s) and flag a pick that is not robust.
-7. **Model fidelity** (biggest real-game gap, not search): warlock demon scaling (a beta tester's pet pane), the hunter pet attack-speed
-   question, the final beta build refresh, comparison with beta logs and real leveling times.
+6. **Fight variety.** Done 2026-10-08: `raidsim/fight_variety.py` races each spec's pick and next builds in five full-raid fights
+   (standard, three targets, Undead, 90 s, 300 s) and flags a pick 2% behind; the sweep's last phase runs it for every class.
+7. **Model fidelity** (biggest real-game gap, not search): demon scaling and the pet hit rule are patched from the client's text and
+   forum logs (2026-10-08) but unmeasured at level 60 (a beta tester's pet pane and a level-60 pet log would confirm them); the final
+   beta build refresh; comparison with beta logs and real leveling times.
 8. **Weapon variants on the pages.** The rogue's swords entry found 18/33/0 at 746.6 DPS, +1.9% over our swords builds, but the Combat
    page shows one build per spec (the daggers build at 770), so a swords player never sees it. Idea: a weapon line on the page when a
    spec's entries differ in weapon type (swords, daggers, maces), each with its entry's best build. A page change, not a search change.

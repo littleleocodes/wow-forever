@@ -747,6 +747,17 @@ def _point_specs(sp, cls, spec, k, out):
         R.SPECS[cls][spec][k] = rel
 
 
+def tuned_on(cls, spec, where, commit):
+    """True when the entry's rotation-search record for this setting was written on this simulator commit."""
+    f = paths.raidsim_dir(cls) / f"{spec}-rotation-search.json"
+    if not f.exists():
+        return False
+    rec = json.load(open(f, encoding="utf-8"))
+    if "changes" in rec:   # an older single-setting record
+        rec = {rec.get("setting", "dummy"): rec}
+    return str((rec.get(where) or {}).get("commit", "")).startswith(commit)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("cls", nargs="?")
@@ -766,6 +777,8 @@ def main():
     ap.add_argument("--write", action="store_true")
     ap.add_argument("--insert-only", action="store_true", help="try only insertions of spellbook spells the rotation does not cast (the sweep of 2026-09-29)")
     ap.add_argument("--tune", help="JSON list of builds to tune on instead of the last race's best (see tune_builds)")
+    ap.add_argument("--skip-commit", help="skip an entry and setting whose rotation-search record was written on this simulator commit "
+                                          "(a restarted --all pass, 2026-10-08)")
     a = ap.parse_args()
     INSERT_ONLY[0] = a.insert_only
     R.set_game("forever")
@@ -776,6 +789,9 @@ def main():
         entry = R.SPECS[cls][spec]
         wheres = [a.setting] if a.setting else (["raid"] if entry.get("tank") else ["dummy", "raid"])
         for where in wheres:
+            if a.skip_commit and tuned_on(cls, spec, where, a.skip_commit):
+                print(f"== {cls} {spec} ({where}): already tuned on {a.skip_commit}, skipped", flush=True)
+                continue
             rec, base, cur = search(cls, spec, a, repo, N, where)
             if a.write:
                 write(cls, spec, rec, base, cur, N)

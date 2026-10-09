@@ -83,13 +83,16 @@ def apply_patches(game, repo):
         print(f"  patch: {f.relative_to(d).as_posix()}")
     edits = d / "edits.json"
     for e in (json.load(open(edits, encoding="utf-8")) if edits.exists() else []):
+        # {"file", "after", "insert"} inserts text after a unique anchor; {"file", "replace", "with"} swaps a unique text for ours
+        # (2026-10-08: the demon scaling and the pet hit rule change one expression each). Both are idempotent.
         target = repo / e["file"]
         txt = target.read_text(encoding="utf-8")
-        if e["insert"] in txt:
+        old, new = (e["after"], e["after"] + e["insert"]) if "insert" in e else (e["replace"], e["with"])
+        if (e["insert"] if "insert" in e else e["with"]) in txt:
             continue
-        if txt.count(e["after"]) != 1:
-            raise SystemExit(f"patch {e['file']}: anchor not found once: {e['after']!r}")
-        target.write_text(txt.replace(e["after"], e["after"] + e["insert"]), encoding="utf-8")
+        if txt.count(old) != 1:
+            raise SystemExit(f"patch {e['file']}: anchor not found once: {old!r}")
+        target.write_text(txt.replace(old, new), encoding="utf-8")
         print(f"  patch: {e['file']} ({e.get('why', '')})")
 
 

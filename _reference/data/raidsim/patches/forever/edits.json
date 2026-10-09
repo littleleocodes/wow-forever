@@ -22,5 +22,17 @@
   "after": "func applyRaceEffects(agent Agent) {\n",
   "insert": "\tif noRacials() { // wow-forever patch: WOW_FOREVER_NO_RACIALS=1 (patches/forever/sim/core/no_racials.go)\n\t\treturn\n\t}\n",
   "why": "racial effects off on request, so builds compare without the preset's race (user preference 2026-10-07: as unbiased as possible)"
+ },
+ {
+  "file": "sim/warlock/pets.go",
+  "replace": "StatInheritance: func(_ stats.Stats) stats.Stats { return stats.Stats{} },",
+  "with": "StatInheritance: foreverDemonScaling, // wow-forever patch: Forever's demon scaling (patches/forever/sim/warlock/demon_scaling.go)",
+  "why": "the fork's demons inherit nothing from the warlock; Forever demons get 17% of the warlock's spell damage as attack power, 10% as spell damage, 35% armor, 7.5 health per Stamina, its spell crit (client 70291 UI)"
+ },
+ {
+  "file": "sim/hunter/pet.go",
+  "replace": "\t\t\tBaseDamageMin: 18.17 * attackSpeed,\n\t\t\tBaseDamageMax: 27.66 * attackSpeed,\n",
+  "with": "\t\t\tBaseDamageMin: 18.17 * foreverPetHitSpeed(attackSpeed), // wow-forever patch: Forever does not normalize pet damage (patches/forever/sim/hunter/pet_scaling.go)\n\t\t\tBaseDamageMax: 27.66 * foreverPetHitSpeed(attackSpeed),\n",
+  "why": "the fork scales a pet's base hit with its attack speed (equal damage at every speed); in Forever a faster pet hits as hard and does more damage"
  }
 ]
