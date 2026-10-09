@@ -89,6 +89,7 @@ type config struct {
 	TargetLevel        int32           `json:"targetLevel"` // 0 = the sim's default raid boss (63); 60 = a training dummy
 	NoExecute          bool            `json:"noExecute"`   // no execute phases (a dummy never dies)
 	MobType            string          `json:"mobType"`     // the target's creature type (a proto MobType name without its prefix); "" = Elemental, see below
+	NumTargets         int             `json:"numTargets"`  // targets in the encounter (2026-10-08, the fight-variety check); 0 or 1 = one
 	Seed               int64           `json:"seed"`
 	IsTank             bool            `json:"isTank"`
 	// "statweights": true prints, per build, the simulator's stat weights (DPS per point of each stat, weapon DPS as pseudo-stats)
@@ -396,6 +397,9 @@ func main() {
 			tgt.Level = cfg.TargetLevel
 		}
 		encounter.Targets = []*proto.Target{tgt}
+		for i := 1; i < cfg.NumTargets; i++ { // several identical targets (cleave and area fights)
+			encounter.Targets = append(encounter.Targets, gproto.Clone(tgt).(*proto.Target))
+		}
 		if cfg.NoExecute { // every execute_proportion_* field to zero (the two sims have different sets of them)
 			er := encounter.ProtoReflect()
 			fds := er.Descriptor().Fields()
