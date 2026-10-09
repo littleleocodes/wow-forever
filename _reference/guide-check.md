@@ -73,8 +73,8 @@
 | warlock | Hybrid Affliction/Destruction | raid | 2026-10-09 | affliction-raid 1e87f29537b5, fire-destro-raid 2ea8a5946f06, incinerate-raid cc3bd67667b2, sb-raid 053cdc613b86 |
 | warlock | Hybrid Affliction/Demonology | leveling | 2026-10-09 | leveling:affliction-leveling c7ec74239a0b, leveling:demonology-leveling 48f980d55b71, leveling:destruction-leveling b70c98d7eaad |
 | warrior | Arms | raid | 2026-10-09 | arms-2h-raid d2f527aed9b3, arms-battle-raid c54c2d9971c5, fury-dw-raid e44982e8703e |
-| warrior | Arms | leveling | 2026-10-09 | leveling:arms-2h-raid 6740a89fa45f, leveling:fury-dw-raid a3683bcf3790, leveling:prot-leveling 3b358e339097 |
+| warrior | Arms | leveling | 2026-10-09 | leveling:arms-2h-raid 82a1e14b306e, leveling:fury-dw-raid 26eba980d81e, leveling:prot-leveling a1b7ef2b8d8c |
 | warrior | Fury | raid | 2026-10-09 | arms-2h-raid d2f527aed9b3, fury-dw-raid e44982e8703e |
-| warrior | Fury | leveling | 2026-10-09 | leveling:arms-2h-raid 6740a89fa45f, leveling:fury-dw-raid a3683bcf3790, leveling:prot-leveling 3b358e339097 |
+| warrior | Fury | leveling | 2026-10-09 | leveling:arms-2h-raid 82a1e14b306e, leveling:fury-dw-raid 26eba980d81e, leveling:prot-leveling a1b7ef2b8d8c |
 | warrior | Protection | raid | 2026-10-09 | prot-tank b093b7e893bc |
-| warrior | Protection | leveling | 2026-10-09 | leveling:arms-2h-raid 6740a89fa45f, leveling:fury-dw-raid a3683bcf3790, leveling:prot-leveling 3b358e339097 |
+| warrior | Protection | leveling | 2026-10-09 | leveling:arms-2h-raid 82a1e14b306e, leveling:fury-dw-raid 26eba980d81e, leveling:prot-leveling a1b7ef2b8d8c |

@@ -35,10 +35,10 @@
     "plan": "Arms levels with a two-hander in **Battle Stance**. Open with **Bloodrage** and **Charge**, keep **Rend** on the mob so **Bloodthrill** lights up **Overpower**, hit **Mortal Strike** on cooldown and finish with **Execute**; bandage and eat between pulls instead of resting.",
     "why": [
      "**Bloodrage** then **Charge** puts rage in your bar before the first swing: **Bloodrage** gives 10 at once and 10 more over 10 seconds, **Charge** 9 to 15 by rank plus 6 with **Improved Charge**, and the mob is stunned for a second. The fight lab uses **Bloodrage** only above 45% health, on about every third pull (1-minute cooldown).",
-     "Once the mob is below 20%, **Execute** goes before everything else in the fight lab, although the list above shows it sixth: it spends all your rage (600 damage plus 15 per extra point at rank 5) and usually ends the fight. It is about a sixth of your damage at 60.",
+     "Once the mob is below 20%, **Execute** goes before everything else in the fight lab: it spends all your rage (600 damage plus 15 per extra point at rank 5) and usually ends the fight. It is about a sixth of your damage at 60.",
      "**Overpower** comes next whenever it lights up: 5 rage, 50% more crit chance with **Improved Overpower**, and a window of only 5 to 6 seconds. With **Bloodthrill** (16% with your 4 points), main-hand hits on a mob with your **Rend** light it up too, so it is not just a dodge reaction.",
      "**Mortal Strike** (from 40) on cooldown is your biggest attack, about a fifth of your damage at 60. **Rend** goes on once per mob, early: the fight lab casts it only while the mob has more than a third of its health and you have 40 rage or **Mortal Strike** is cooling down, so it never delays **Mortal Strike**.",
-     "**Heroic Strike** only takes rage you will not need: the fight lab keeps 15 for an **Overpower** and, when **Mortal Strike** is 3 seconds or less from ready, 30 more for it. Before 40 it is your main rage dump (about 40% of your damage at level 20); after **Mortal Strike** it almost disappears.",
+     "**Heroic Strike** only takes rage you will not need: the fight lab keeps 15 for an **Overpower** and, when **Mortal Strike** is 3 seconds or less from ready, 30 more for it. Before 40 it is your main rage dump (about a quarter of your damage at level 30); after **Mortal Strike** it almost disappears.",
      "**Battle Shout** lasts 3 minutes in Forever, so one shout covers several pulls. **Victory Rush** is free for 20 seconds after a kill and heals 10% of your health: it opens your next fight whenever you are below 90%."
     ],
     "caveats": [
@@ -52,9 +52,9 @@
      "A mob that runs at low health: **Hamstring** it before it gets away, or finish it with **Execute** (the fight lab does not model runners)."
     ],
     "rotations": {
-     "leveling:arms-2h-raid": "6740a89fa45f",
-     "leveling:fury-dw-raid": "a3683bcf3790",
-     "leveling:prot-leveling": "3b358e339097"
+     "leveling:arms-2h-raid": "82a1e14b306e",
+     "leveling:fury-dw-raid": "26eba980d81e",
+     "leveling:prot-leveling": "a1b7ef2b8d8c"
     },
     "written": "2026-10-09"
    }
@@ -94,12 +94,12 @@
      "The opening matches Arms: **Bloodrage** (above 45% health) and **Charge** fill your rage before the first swing. The fight lab also presses **Death Wish** on the pull whenever it is ready (3-minute cooldown): 20% more physical damage for 30 seconds covers a whole fight.",
      "Below 20%, **Execute** comes first: it spends all your rage, and **Improved Execute** cuts its cost to 10. **Overpower** comes next when the mob dodges (this build has no **Bloodthrill**): 5 rage with 50% more crit chance from **Improved Overpower**.",
      "**Bloodthirst** (from 40: 30 rage, 6-second cooldown, 45% of your attack power) is your main attack. Before 40, **Heroic Strike** is where your rage goes.",
-     "**Rend** goes on once per mob while it has more than a third of its health. The list above leaves it out, but the fight lab casts it about once a kill and your build takes **Improved Rend**.",
-     "**Heroic Strike** takes the spare rage once 15 are kept for an **Overpower**. Your rage comes from landed white swings and doubles on a crit, which is why **Flurry** (faster swings after a crit), **Cruelty** and **Enrage** are worth the most in the fight lab: 1 to 2 seconds per kill each at 60.",
+     "**Rend** goes on once per mob while it has more than a third of its health: the fight lab casts it about once a kill, and your build takes **Improved Rend**.",
+     "**Heroic Strike** takes the spare rage once 15 are kept for an **Overpower**. Your rage comes from landed white swings of both hands and doubles on a crit, which is why the build leans on **Flurry** (faster swings after a crit), **Cruelty** and **Enrage**.",
      "**Battle Shout** lasts 3 minutes in Forever, so one shout covers several pulls, and **Victory Rush** (free, heals 10%) opens the next fight whenever you are below 90% health."
     ],
     "caveats": [
-     "**Berserker Rage** needs **Berserker Stance**, so in **Battle Stance** your 2 points in **Improved Berserker Rage** do nothing. The fight lab presses it below 30 rage without checking the stance and credits it with about 1 second per kill, so the build plays a little slower than its number.",
+     "**Berserker Rage** needs **Berserker Stance**, so in **Battle Stance** your 2 points in **Improved Berserker Rage** do nothing: treat them as free points.",
      "The 2 points in **Two-Handed Weapon Specialization** only help with a two-hander: with two one-handers treat them as free points.",
      "Between fights the fight lab bandages below 60% health and eats below 40%.",
      "Several mobs: **Whirlwind** needs **Berserker Stance**. In **Battle Stance**, use **Cleave** instead of **Heroic Strike** and **Thunder Clap** to slow them (20% slower attacks)."
@@ -109,9 +109,9 @@
      "A mob that runs at low health: **Hamstring** it, or finish it with **Execute**."
     ],
     "rotations": {
-     "leveling:arms-2h-raid": "6740a89fa45f",
-     "leveling:fury-dw-raid": "a3683bcf3790",
-     "leveling:prot-leveling": "3b358e339097"
+     "leveling:arms-2h-raid": "82a1e14b306e",
+     "leveling:fury-dw-raid": "26eba980d81e",
+     "leveling:prot-leveling": "a1b7ef2b8d8c"
     },
     "written": "2026-10-09"
    }
@@ -144,17 +144,17 @@
     "written": "2026-10-09"
    },
    "leveling": {
-    "plan": "Protection levels sword and board in **Defensive Stance**: slower kills than Arms, but almost no time spent eating. **Charge** in from **Battle Stance**, switch back, keep **Shield Block** up while the mob hits you, and spend rage on **Revenge**, **Shield Slam** and **Heroic Strike**.",
+    "plan": "Protection levels sword and board in **Defensive Stance**, with almost no time spent eating or bandaging. **Charge** in from **Battle Stance**, switch back, keep **Shield Block** up while the mob hits you, and spend rage on **Revenge**, **Shield Slam** and **Heroic Strike**.",
     "why": [
      "**Charge** needs **Battle Stance** (this build has no **Vanguard**), so you swap for it and come back. **Tactical Mastery** with your 5 points in **Improved Tactical Mastery** keeps up to 25 rage through the swap, and the fight lab spends anything above that on **Shield Slam** or **Rend** before it switches.",
      "**Shield Block** goes up whenever the mob is hitting you (10 rage, 5-second cooldown, off the global cooldown): 75% more block chance for 7 seconds or 2 blocks. Each block gives 5 rage with **Shield Specialization** and opens **Revenge**, so it pays for itself; **Shield Specialization** is the build's second most valuable talent in the fight lab.",
-     "**Revenge** (2 rage with **Focused Rage**) whenever it lights up and **Shield Slam** (from 40) on cooldown are your damage. **Shield Slam** alone is worth about 10 seconds per kill at 60, by far the build's biggest talent.",
+     "**Revenge** (2 rage with **Focused Rage**) whenever it lights up and **Shield Slam** (from 40) on cooldown are your damage. **Shield Slam** is by far the build's most valuable talent in the fight lab.",
      "**Heroic Strike** takes the spare rage after the fight lab keeps enough for **Shield Slam** (when it is 2 seconds or less from ready) and for **Revenge**. **Rend** goes on once while the mob has more than half its health.",
-     "**Thunder Clap**, **Demoralizing Shout** and **Sunder Armor** stay off on a single mob: the fight lab measured **Thunder Clap** at +1.2 seconds and **Demoralizing Shout** at +1.0 second per kill with no fewer deaths, and **Sunder Armor** never beat **Heroic Strike** for the rage.",
+     "**Thunder Clap**, **Demoralizing Shout** and **Sunder Armor** stay off on a single mob: the fight lab measured **Thunder Clap** at +1.2 seconds and **Demoralizing Shout** at +1.0 second per kill with no fewer deaths (a 2026-09-30 test), and **Sunder Armor** never beat **Heroic Strike** for the rage.",
      "**Concussion Blow** (a 5-second stun, 45-second cooldown) is your emergency button below half health, and **Victory Rush** heals 10% at the start of the next fight. **Shield Bash** is for casters: it interrupts and locks that school for 6 seconds."
     ],
     "caveats": [
-     "You trade speed for safety: in the fight lab Protection is about a quarter slower per kill than Arms. The slowest stretch is before **Shield Slam** at 40 (34 seconds per kill at level 30 against 29 at 40).",
+     "The comparison with Arms above shows what the shield costs or saves in time per kill; your damage jumps at 40 with **Shield Slam**.",
      "Several of the build's points (**Iron Will**, **Defiance**, **Improved Sunder Armor**, **Improved Thunder Clap**) measure zero on a single mob: they fill tiers on the way to **Shield Slam** and **Bastion**."
     ],
     "diverge": [
@@ -162,9 +162,9 @@
      "In real trouble, **Shield Wall** (60% less damage for 12 seconds, 15-minute cooldown) buys time, and an early **Concussion Blow** keeps a hard hitter off you for 5 seconds."
     ],
     "rotations": {
-     "leveling:arms-2h-raid": "6740a89fa45f",
-     "leveling:fury-dw-raid": "a3683bcf3790",
-     "leveling:prot-leveling": "3b358e339097"
+     "leveling:arms-2h-raid": "82a1e14b306e",
+     "leveling:fury-dw-raid": "26eba980d81e",
+     "leveling:prot-leveling": "a1b7ef2b8d8c"
     },
     "written": "2026-10-09"
    }

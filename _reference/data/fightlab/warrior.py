@@ -1,16 +1,28 @@
-"""Warrior module for the fight lab (two-handed Arms leveling).
+"""Warrior module for the fight lab (Arms two-hander, Fury dual wield and Protection sword and board leveling).
 
-Spell ranks are read from `_reference/data/forever-spells/warrior.json` (beta client build 1.60.1.70009); talent numbers from
-each rank's tooltip in `_reference/data/forever-talents/warrior.json`. Weapon damage uses a quest-green two-hander by level
-(`tables.weapon_dps`), attack power from the client's base stats and the class's 2 AP per Strength.
+Spell ranks are read from `_reference/data/forever-spells/warrior.json` (beta client build 1.60.1.70291); talent numbers from
+each rank's tooltip in `_reference/data/forever-talents/warrior.json`. Weapon damage uses a quest-green two-hander (Arms) or two
+one-handers (any spec string starting with "fury") by level (`tables.weapon_dps`), attack power from the client's base stats and
+the class's 2 AP per Strength. A spell is cast only in the stances its spellbook entry requires (STANCES, from the beta client's
+"Requires ... Stance"): the Arms and Fury playstyles fight in Battle Stance, so Whirlwind, Berserker Rage, Pummel, Intercept and
+Recklessness (Berserker Stance) are never cast.
 
-Playstyle `arms-2h-raid` (the scorer's model id, used for leveling): Bloodrage and Charge on the pull, Battle Shout kept up,
-Victory Rush after a kill, Mortal Strike on cooldown, Overpower after a dodge (or a Bloodthrill proc), Rend once, Execute
-under 20%, Heroic Strike with spare rage; Battle Stance throughout. Between fights: a bandage below 60% health (First Aid,
-60 s cooldown), food below 50%.
+Playstyle `arms-2h-raid` (the scorer's model id, used for leveling; `fury-dw-raid` the same priority with Bloodthirst and two
+weapons): Bloodrage and Charge on the pull (Death Wish too when the build has it), Battle Shout kept up, Victory Rush after a
+kill, Mortal Strike or Bloodthirst on cooldown, Overpower after a dodge (or a Bloodthrill proc), Rend once, Execute under 20%,
+Heroic Strike with spare rage; Sweeping Strikes when a second mob stands in reach. Between fights: a bandage below 60% health
+(First Aid, 60 s cooldown), food below `eat_below` (the tuned rules in rotations/ set 40% for both models).
 
 Playstyle `prot-leveling` (any spec string starting with "prot"): sword and board in Defensive Stance, see `decide_prot` and
 PROT_NOTES below. Every other spec string runs exactly as before (the shield code is behind `self.prot`).
+
+2026-10-09 (70291 review): Rend is a bleed with no direct hit (its "bleed for N damage" had been read as a hit as well) plus
+Forever's 2% of attack power a tick, with Improved Rend on the bleed; Bloodthirst keeps its flat damage; Revenge and Thunder Clap
+take Forever's attack power shares (FOREVER_AP); Two-Handed Weapon Specialization only with a two-hander; Dual Wield
+Specialization (off-hand damage and rage), Furious Precision (off-hand hit), Gore Drinker and Sweeping Strikes are simulated;
+Unbridled Wrath gives 1 rage on either hand; Bloodthrill triggers on every main-hand attack; Blood Craze no longer triggers on
+Bloodthirst; Deep Wounds rolls the main hand's average weapon damage without attack power; Flurry charges go on either hand's
+landed white swings; Death Wish adds 5% damage taken; Thunder Clap never crits.
 """
 import json
 import pathlib
@@ -35,6 +47,11 @@ CHARGE = re.compile(r"generate (\d+) Rage, and Stun it for (\d+) sec")
 SHOUT = re.compile(r"melee attack power of all party members[^.]*? by (\d+)")
 SLOW = re.compile(r"slowing the enemy's movement by (\d+)% for (\d+) sec")
 AP_PCT = re.compile(r"(\d+)% of (?:your )?Attack Power")
+AP_PLUS = re.compile(r"of (?:your )?Attack Power plus (\d[\d,]*)")   # Bloodthirst: "45% of your Attack Power plus 48"
+# Attack power shares Forever adds that the client rows do not carry, as the community raid simulator fits them to beta logs
+# (ElliotWood/Forever sim/warrior rend.go, revenge.go, thunder_clap.go): Rend 0.02 of attack power a tick, Revenge 0.25, Thunder
+# Clap 0.0255 (fitted below level 20; the same share at 60 is assumed there too).
+FOREVER_AP = {"Rend": ("tick", 0.02), "Revenge": ("hit", 0.25), "Thunder Clap": ("hit", 0.0255)}
 
 TALENT_SPELLS = {"Mortal Strike": "Mortal Strike", "Sweeping Strikes": "Sweeping Strikes", "Piercing Howl": "Piercing Howl", "Death Wish": "Death Wish",
                  "Bloodthirst": "Bloodthirst", "Concussion Blow": "Concussion Blow", "Last Stand": "Last Stand", "Shield Slam": "Shield Slam",
@@ -79,13 +96,22 @@ def load_spellbook():
                     s.rage_dmg = float(ex.group(2))
                 elif rg:
                     s.dmg_min, s.dmg_max = _num(rg.group(1)), _num(rg.group(2))
-                elif fl:
+                elif fl and not bl:   # Rend's "bleed for N damage over T sec" is the bleed, not a hit as well
                     s.dmg_min = s.dmg_max = _num(fl.group(1) or fl.group(2) or fl.group(3))
                 if ap:
                     s.coef = float(ap.group(1)) / 100   # attack power coefficient (Bloodthirst, Victory Rush)
+                    apf = AP_PLUS.search(txt)
+                    if apf:   # Bloodthirst's flat part ("... of your Attack Power plus 48")
+                        s.dmg_min = s.dmg_max = _num(apf.group(1))
                 if bl:
                     s.dot, s.dot_dur = _num(bl.group(1)), float(bl.group(2))
                     s.dot_ticks = max(1, int(round(s.dot_dur / 3.0)))
+                if name in FOREVER_AP:
+                    how, share = FOREVER_AP[name]
+                    if how == "tick":
+                        s.dot_coef = share   # engine.apply_periodic: (dot + dot_coef x attack power x ticks)
+                    else:
+                        s.coef = share
                 if name == "Whirlwind":
                     s.weapon_pct = 1.0
                 if ch:
@@ -110,6 +136,36 @@ def load_spellbook():
 
 BOOK = load_spellbook()
 
+STANCE_NAMES = ("Battle Stance", "Berserker Stance", "Defensive Stance")
+
+
+def load_stances():
+    """{spell: the stances it can be cast in} from the beta spellbook's "requires" field ("Requires Battle Stance, Berserker Stance";
+    "Requires Defensive Stance; Requires Shields"); spells without a stance requirement are absent."""
+    out = {}
+    for tab in SPELLBOOK["tabs"]:
+        for sp in tab["spells"]:
+            for r in sp["ranks"]:
+                st = {s for s in STANCE_NAMES if s in (r.get("requires") or "")}
+                if st:
+                    out.setdefault(sp["name"], set()).update(st)
+    return out
+
+
+STANCES = load_stances()
+WHITE = ("Melee", "Melee (off-hand)")   # the engine's auto attack placeholders (engine.Fight.auto_swing)
+NOT_WEAPON_ATTACK = {"Thunder Clap", "Shield Slam", "Shield Bash"}   # damage that is not a main-hand weapon attack (Bloodthrill, Gore Drinker)
+NO_CRIT = {"Thunder Clap", "Rend", "Concussion Blow"}   # Thunder Clap rolls on the spell table and warriors have no spell crit (raid
+                                                        # simulator, beta logs: 0 of 799 claps crit); Rend's application and
+                                                        # Concussion Blow deal no damage, so their roll is no crit either
+NO_SWEEP = {"Execute", "Thunder Clap", "Whirlwind", "Cleave", "Rend", "Concussion Blow"}   # Sweeping Strikes: area attacks hit more
+                                                        # mobs on their own; Execute's copy is only a weapon hit in the raid simulator; no damage, no copy
+SHOUTS = {"Battle Shout", "Demoralizing Shout", "Challenging Shout", "Intimidating Shout"}   # Booming Voice's rage cost cut
+SWEEP_CHARGES = int(NUM.search(BOOK["Sweeping Strikes"][-1].text).group(1))   # "Your next 5 melee attacks strike an additional nearby opponent."
+SWEEP_DURATION = 20.0   # the client's duration of 12292 (the raid simulator's spell data: DurationMs 20000); the tooltip gives none
+OVERPOWER_WINDOW = 5.0  # a dodge's Overpower window (the client's Offensive State aura 1282733, 5 s; Bloodthrill's own lasts 6 s)
+GORE = Spell("Gore Drinker", "physical", kind="buff", resource="none")   # healing bookkeeping for Gore Drinker
+
 
 def talent_numbers():
     out = {}
@@ -126,65 +182,66 @@ MECHANICS = {
     "Deflection": "+1%/rank parry",
     "Improved Rend": "+11.7%/rank Rend bleed",
     "Improved Charge": "+3 rage/rank on Charge",
-    "Improved Tactical Mastery": "no stance changes here",
+    "Improved Tactical Mastery": "+3 rage/rank kept through a stance change (sword and board: the swap back after Charge)",
     "Improved Overpower": "+25%/rank Overpower crit",
     "Anger Management": "+1 rage per 3 s in combat",
-    "Deep Wounds": "crits bleed 20%/rank of average weapon damage over 12 s",
+    "Deep Wounds": "crits bleed 20%/rank of the main hand's average weapon damage over 12 s (no attack power; a crit on a running bleed adds what it still owed)",
     "Spearing Strike": "40% weapon damage instant: not used (Beasts/Humanoids)",
-    "Two-Handed Weapon Specialization": "+1%/rank two-hander damage",
+    "Two-Handed Weapon Specialization": "+1%/rank damage with a two-hander (nothing with one-handers)",
     "Impale": "+10%/rank ability crit damage bonus",
-    "Bloodthrill": "4%/rank per main-hand hit on a Rended mob: Overpower usable for 6 s",
-    "Sweeping Strikes": "AoE only",
+    "Bloodthrill": "4%/rank per main-hand attack (white or ability) on a Rended mob: Overpower usable for 6 s",
+    "Sweeping Strikes": "pulls of several mobs: the next 5 melee attacks (20 s) also hit a second mob; 30 rage, Battle Stance, off the global cooldown",
     "Weaponmaster": "axe/polearm: +1%/rank crit (assumed weapon type)",
     "Improved Slam": "not used (Slam is a 1.5 s cast on an 18 s cooldown: Mortal Strike and Heroic Strike fill the rage)",
     "Improved Hamstring": "not used",
     "Mortal Strike": "unlocks Mortal Strike (30 rage, weapon plus 85..160, 6 s cooldown)",
-    "Booming Voice": "range only",
+    "Booming Voice": "-5%/rank shout rage cost (Battle Shout; the larger area does nothing here)",
     "Cruelty": "+1%/rank melee crit",
     "Iron Will": "PvP",
-    "Unbridled Wrath": "12%/rank per weapon hit: +2 rage with a two-hander",
-    "Improved Cleave": "AoE only",
+    "Lingering Rage": "not modelled (the engine decays rage between fights with no module hook)",
+    "Unbridled Wrath": "12%/rank per weapon hit, either hand: +1 rage",
+    "Furious Precision": "+4/7/10% off-hand hit (dual wield)",
     "Piercing Howl": "not used (the mob stands and fights)",
-    "Blood Craze": "1%/rank health over 6 s after being crit, dropping 20% in one hit, or dealing damage with Bloodthirst",
-    "Boundless Rage": "+10 max rage/rank",
-    "Dual Wield Specialization": "two-hander build",
-    "Raging Blows": "two-hander build",
+    "Blood Craze": "1%/rank health over 6 s after being crit or losing 20% in one hit",
+    "Dual Wield Specialization": "+5%/rank off-hand damage, +10%/rank off-hand rage (dual wield)",
+    "Raging Blows": "-3 rage Cleave (Whirlwind needs Berserker Stance)",
     "Enrage": "30% chance after any hit taken: +2%/rank physical damage for 12 s",
     "Improved Execute": "-2.5 rage/rank Execute",
-    "Precision": "+1%/rank hit",
-    "Death Wish": "+20% damage 30 s every 3 min (on the pull)",
+    "Death Wish": "+20% physical damage and +5% damage taken for 30 s every 3 min (on the pull)",
     "Improved Intercept": "Berserker Stance only",
-    "Improved Berserker Rage": "Berserker Rage gives 10 rage (used on cooldown)",
-    "Flurry": "crits: +5%/rank attack speed for the next 3 swings",
-    "Bloodthirst": "unlocks Bloodthirst (30 rage, 35% AP plus 30..48, 6 s cooldown)",
-    "Shield Specialization": "no shield",
+    "Improved Berserker Rage": "Berserker Rage needs Berserker Stance: nothing in the Battle Stance and Defensive Stance playstyles",
+    "Flurry": "crits: +5%/rank attack speed for the next 3 swings (either hand's landed white swings spend them)",
+    "Gore Drinker": "after Enrage, Bloodrage, Death Wish or Bloodthirst the next 3 melee attacks heal 0.5%/rank of maximum health",
+    "Bloodthirst": "unlocks Bloodthirst (30 rage, 45% AP plus 30..48, 6 s cooldown)",
+    "Shield Specialization": "+1%/rank block, 5 rage per block (sword and board; nothing without a shield)",
     "Anticipation": "+20 Defense: ~-1.6% chance to be hit (assumed)",
     "Improved Bloodrage": "+50% Bloodrage rage",
-    "Toughness": "+2%/rank armor",
-    "Improved Thunder Clap": "not used",
+    "Improved Thunder Clap": "-2 rage/rank Thunder Clap (pulls of several mobs; Thunder Clap is off on a single mob)",
     "Last Stand": "+30% health for 20 s every 3 min when low",
-    "Master of Defense": "no shield",
-    "Improved Revenge": "no shield (Revenge follows a block, dodge or parry: not used in Battle Stance)",
+    "Master of Defense": "5 rage per dodge or parry with a shield (sword and board)",
+    "Improved Revenge": "+20%/rank Revenge (sword and board in Defensive Stance)",
     "Defiance": "threat only",
     "Improved Sunder Armor": "not used",
     "Improved Disarm": "not used",
-    "Vanguard": "not used",
+    "Vanguard": "Charge in Defensive Stance (sword and board: no swap to Battle Stance for it)",
     "Improved Shield Wall": "not used",
     "Concussion Blow": "5 s stun every 45 s (when the mob is on you)",
-    "Improved Shield Bash": "no shield",
-    "Bastion": "no shield",
+    "Improved Shield Bash": "silence not modelled (Shield Bash's own 6 s lockout is)",
+    "Bastion": "+2%/rank damage with a shield (sword and board)",
     "Focused Rage": "-3 rage on offensive abilities",
-    "Shield Slam": "no shield",
+    "Shield Slam": "sword and board: 20 rage, 640..670 plus block value, 6 s cooldown",
 }
 FIT = {
     "Improved Rend": "scale", "Improved Heroic Strike": "scale", "Deflection": "scale", "Improved Charge": "scale", "Improved Overpower": "scale",
     "Anger Management": "scale", "Deep Wounds": "scale", "Two-Handed Weapon Specialization": "scale", "Impale": "scale", "Bloodthrill": "scale",
     "Weaponmaster": "scale", "Improved Slam": "scale",
     "Mortal Strike": ("replace", [{"channel": "dmg", "scope": ["type:melee"], "values": [0.12]}]),
-    "Cruelty": "scale", "Unbridled Wrath": "scale", "Blood Craze": "scale", "Boundless Rage": "scale", "Enrage": "scale", "Improved Execute": "scale",
-    "Precision": "scale", "Flurry": "scale", "Death Wish": "scale", "Improved Berserker Rage": "scale", "Toughness": "scale", "Improved Bloodrage": "scale",
+    "Cruelty": "scale", "Unbridled Wrath": "scale", "Blood Craze": "scale", "Enrage": "scale", "Improved Execute": "scale",
+    "Flurry": "scale", "Death Wish": "scale", "Improved Berserker Rage": "scale", "Improved Bloodrage": "scale",
     "Last Stand": "scale", "Concussion Blow": "scale", "Focused Rage": "scale", "Anticipation": "scale", "Iron Will": "scale", "Piercing Howl": "scale",
     "Spearing Strike": "scale", "Sweeping Strikes": "scale", "Improved Hamstring": "scale",
+    # simulated since 2026-10-09 (70291 review): the off-hand talents, Gore Drinker, Raging Blows' Cleave cost
+    "Dual Wield Specialization": "scale", "Furious Precision": "scale", "Gore Drinker": "scale", "Raging Blows": "scale",
 }
 SHARE_SOURCE = {'Cleave': 'cleave', 'Thunder Clap': 'thunder_clap', "Melee": "white", "Heroic Strike": "heroic_strike", "Overpower": "overpower", "Execute": "execute", "Whirlwind": "whirlwind", "Rend": "rend",
                 "Mortal Strike": "mortal_strike", "Deep Wounds": "deep_wounds", "Victory Rush": "victory_rush", "Bloodthirst": "bloodthirst"}
@@ -216,11 +273,17 @@ PROT_NOTES = ("Protection leveling (sword and board): a one-hander (tables.weapo
               "5% + Shield Specialization + Defense, block value 0.65 x item level + Strength / 20), Defensive Stance (-10% damage taken and "
               "dealt), Charge from Battle Stance (Defensive with Vanguard) then a stance swap keeping Tactical Mastery's rage.")
 
-DESCRIPTION = ("Single-target leveling fights against normal mobs of your level with a two-hander in Battle Stance: Bloodrage and Charge on the pull (the mob is stunned 1 s), "
-               "Battle Shout kept up, Victory Rush after a kill, Mortal Strike on cooldown, Overpower after a dodge or a Bloodthrill proc, Rend once, Execute under 20% "
-               "with all the rage, Heroic Strike with spare rage, white swings that generate rage by Forever's normalized rule (weapon speed, double on a crit; tables.RAGE_MODEL) (the mob dodges 5%, parries 5%, 10% of swings "
-               "glance for 95%). Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below 50%, rage decays; a death costs 90 s.")
-NOT_MODELLED = "runners, adds, stance dancing (Whirlwind / Intercept in Berserker Stance), Sweeping Strikes, Hamstring kiting, Retaliation, weapon skill, gear upgrades within a level bracket."
+DESCRIPTION = ("Single-target leveling fights against normal mobs of your level. Arms (a two-hander) and Fury (a weapon in each hand) fight in Battle Stance: "
+               "Bloodrage and Charge on the pull (the mob is stunned 1 s; Death Wish too when the build has it), Battle Shout kept up, Victory Rush after a kill, "
+               "Mortal Strike or Bloodthirst on cooldown, Overpower after a dodge or a Bloodthrill proc, Rend once, Execute under 20% with all the rage, Heroic Strike "
+               "with spare rage; spells that need Berserker Stance (Whirlwind, Berserker Rage) are never cast. Protection fights sword and board in Defensive Stance: "
+               "Charge from Battle Stance, then Shield Block while the mob hits, Revenge, Shield Slam, Rend and Heroic Strike. White swings generate rage by "
+               "Forever's normalized rule (weapon speed, half for the off-hand, double on a crit; tables.RAGE_MODEL) (the mob dodges 5%, parries 5%, 10% of swings "
+               "glance for 95%). Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below the eating threshold "
+               "(65%; 40% under the tuned Arms and Fury rules), rage decays; a death costs 90 s.")
+NOT_MODELLED = ("runners, stance dancing (Whirlwind, Berserker Rage, Intercept and Pummel need Berserker Stance, which the Battle Stance playstyles never "
+                "take), Hamstring kiting, Retaliation, weapon skill, Lingering Rage and Anger Management's slower rage loss out of combat (the engine decays "
+                "rage between fights with no module hook), gear upgrades within a level bracket.")
 # rebuild.py: which scorer model, hand draft and optimizer build the pipeline calibrates, races and reports for this class
 PIPELINE = {"variants": [{'spec': 'arms-2h-raid', 'opt': 'opt-arms-2h-raid-leveling-aoe', 'tag': 'aoe', 'profile': 'leveling-aoe', 'lookahead': 16, 'sets': ['MOBS_PER_PULL=3'], 'levels': '30,40,50,60', 'calibrate_levels': '40,60', 'label': 'AoE grinding, 3 mobs per pull'}], "spec": "arms-2h-raid", "hand": "leveling-arms", "opt": "opt-arms-2h-raid-leveling-st", "tag": "arms", "lookahead": 20,
             "levels": "20,30,40,50,60", "calibrate_levels": "30,60",
@@ -247,12 +310,17 @@ class WarriorModule(BaseModule):
         self._fight = None
         self.execute_extra = 0.0
         self.flurry_swings = 0
+        self.gore_charges = 0
+        self.two_hander = False   # set by make_player (Two-Handed Weapon Specialization)
         self.armor_spell_used = "Battle Stance"
+        self.stance = "Battle Stance"   # Arms and Fury level in Battle Stance (Charge, Overpower); every cast checks STANCES
         self.prot = spec.startswith("prot")
-        if self.prot:   # sword and board: Defensive Stance; Whirlwind (Berserker Stance) is out of the area priority
+        if self.prot:   # sword and board: Defensive Stance (Battle Stance for Charge only)
             self.armor_spell_used = "Defensive Stance"
-            self.AOE = {'direct': ['Thunder Clap', 'Cleave'], 'min_near': 2}
             self.stance = "Defensive Stance"
+        # the area priority keeps the attacks the playstyle's stance allows: Whirlwind needs Berserker Stance, which neither playstyle
+        # takes (Thunder Clap works in Battle and Defensive Stance, Cleave in any); Sweeping Strikes goes off the global cooldown (decide)
+        self.AOE = {'direct': [n for n in ('Whirlwind', 'Thunder Clap', 'Cleave') if self.stance_ok(n)], 'min_near': 2}
 
     # ------------------------------------------------------------ talent helpers
     def rank(self, name):
@@ -270,6 +338,16 @@ class WarriorModule(BaseModule):
     def not_simulated(self):
         return sorted(n for n in self.t if n not in MECHANICS)
 
+    def stance_ok(self, name):
+        """Whether `name` can be cast in the current stance (the spellbook's "Requires ... Stance"; Vanguard lets Charge work in
+        Defensive Stance). Spells with no stance requirement always can."""
+        need = STANCES.get(name)
+        if not need:
+            return True
+        if name == "Charge" and self.rank("Vanguard"):
+            need = need | {"Defensive Stance"}
+        return self.stance in need
+
     def rank_at(self, name):
         ranks = [s for s in BOOK.get(name, []) if s.level <= self.level]
         return ranks[-1] if ranks else None
@@ -282,13 +360,13 @@ class WarriorModule(BaseModule):
         agility = base["agility"] + g["agility"]
         stamina = base["stamina"] + g["stamina"]
         spirit = base["spirit"] + g["spirit"]
-        if self.prot:   # Toughness counts the shield's armor too (armor from items)
+        if self.prot:   # the shield's armor adds to the gear's (Toughness, which raised armor from items, left the tree in 70291)
             sh = SHIELD_GEAR.get(tables.GEAR_TIER if self.gear == "leveling" else self.gear, SHIELD_GEAR["greens"])
             sh_armor = interp([(L, a) for L, a, _ in sh], level) * (1 + (tables.GEAR_STAT_MULT - 1) / 2)
             sh_ilvl = interp([(L, i) for L, _, i in sh], level)
-            armor = (g["armor"] + sh_armor) * (1 + self.tv("Toughness", 0) / 100)
+            armor = g["armor"] + sh_armor
         else:
-            armor = g["armor"] * (1 + self.tv("Toughness", 0) / 100)
+            armor = g["armor"]
         p = Player(level=level, hp_max=class_base_health("warrior", level) + 10 * stamina, hp=0.0, mana_max=0.0, mana=0.0, base_mana=0.0,
                    spirit=spirit, intellect=base["intellect"], spell_power=0.0, armor=armor, spell_crit=0.0,
                    dodge=class_dodge("warrior", level, agility), ranged_crit=0.0)
@@ -296,7 +374,7 @@ class WarriorModule(BaseModule):
         p.attack_power = class_attack_power("warrior", level, strength, agility)
         self.base_ap = p.attack_power
         p.melee_crit = class_melee_crit("warrior", level, agility) + self.tv("Cruelty", 0) / 100 + (self.tv("Weaponmaster", 0) / 100 if self.rank("Weaponmaster") else 0.0)
-        p.hit_bonus = self.tv("Precision", 0) / 100
+        p.hit_bonus = 0.0   # no talent gives both hands hit in 70291 (Precision left the tree; Furious Precision is off-hand only: hit_bonus)
         p.parry = 0.05 + self.tv("Deflection", 0) / 100
         p.dodge -= 0.0
         if self.prot:   # sword and board: one one-hander and a shield (Anticipation's Defense adds dodge, parry and block)
@@ -315,7 +393,8 @@ class WarriorModule(BaseModule):
         else:
             dps = weapon_dps(level, "2h")
             p.mh = Weapon(dmg_min=dps * WEAPON_SPEED["2h"] * 0.8, dmg_max=dps * WEAPON_SPEED["2h"] * 1.2, speed=WEAPON_SPEED["2h"], kind="2h")
-        p.rage_max = 100.0 + self.tv("Boundless Rage", 0)
+        self.two_hander = p.mh.kind == "2h"
+        p.rage_max = 100.0   # (Boundless Rage, +10 maximum rage a rank, left the tree in 70291)
         p.rage = 0.0
         p.hp = p.hp_max
         return p
@@ -330,14 +409,31 @@ class WarriorModule(BaseModule):
             cost = max(0.0, cost - self.tv("Improved Heroic Strike", 0))
         if spell.name == "Execute":
             cost = max(0.0, cost - self.tv("Improved Execute", 0))
-        if self.prot:
-            if spell.name == "Thunder Clap":
-                cost = max(0.0, cost - self.tv("Improved Thunder Clap", 0))
-            if spell.name == "Sunder Armor":
-                cost = max(0.0, cost - self.tv("Improved Sunder Armor", 0))
+        if spell.name == "Thunder Clap":
+            cost = max(0.0, cost - self.tv("Improved Thunder Clap", 0))
+        if spell.name == "Sunder Armor":
+            cost = max(0.0, cost - self.tv("Improved Sunder Armor", 0))
+        if spell.name in ("Cleave", "Whirlwind"):   # Raging Blows: "Reduces the Rage cost of your Cleave and Whirlwind abilities by 3"
+            cost = max(0.0, cost - self.tv("Raging Blows", 0))
+        if spell.name in SHOUTS:   # Booming Voice: "reduces their Rage cost by 25%" (5% a rank)
+            cost *= 1 - self.tv("Booming Voice", 1) / 100
         if spell.resource == "rage" and cost > 0 and spell.kind == "melee":
             cost = max(0.0, cost - self.tv("Focused Rage", 0))
         return cost
+
+    def hit_bonus(self, spell):
+        """Furious Precision: off-hand attacks hit more often (the engine adds the dual-wield miss penalty to white swings)."""
+        if spell.hand == "oh":
+            return self.tv("Furious Precision", 0) / 100
+        return 0.0
+
+    def rage_from_hit(self, fight, amount, weapon, hand, crit):
+        """Forever's normalized swing rage (tables.rage_from_hit, untouched) plus Dual Wield Specialization's "Rage generated by your
+        off-hand attacks" (+10% a rank)."""
+        rage = super().rage_from_hit(fight, amount, weapon, hand, crit)
+        if hand == "oh":
+            rage *= 1 + self.tv("Dual Wield Specialization", 1) / 100
+        return rage
 
     def final_cost(self, fight, spell, cost):
         if spell.name == "Execute":   # spends everything: the extra rage becomes damage
@@ -346,6 +442,8 @@ class WarriorModule(BaseModule):
         return cost
 
     def crit_bonus(self, spell, frozen):
+        if spell.name in NO_CRIT:   # Thunder Clap (spell table, no spell crit); Rend's application and Concussion Blow (no damage)
+            return -1.0
         c = 0.0
         if spell.name == "Overpower":
             c += self.tv("Improved Overpower", 0) / 100
@@ -366,17 +464,35 @@ class WarriorModule(BaseModule):
             if spell.name == "Shield Slam" and spell.dmg_max > 0:   # "increased by your Block Value"
                 avg = (spell.dmg_min + spell.dmg_max) / 2
                 m *= (avg + self._fight.p.block_value) / avg if self._fight else 1.0
-        else:
-            m = 1 + self.tv("Two-Handed Weapon Specialization", 0) / 100
+        else:   # "damage you deal with two-handed melee weapons": nothing with one-handers (Fury dual wield)
+            m = 1 + (self.tv("Two-Handed Weapon Specialization", 0) / 100 if self.two_hander else 0.0)
+        if spell.hand == "oh":   # Dual Wield Specialization: "Increases the damage done by your off-hand weapon by 25%"
+            m *= 1 + self.tv("Dual Wield Specialization", 0) / 100
         f = self._fight
         if f and f.p.buff("Enrage", f.t):
             m *= 1 + self.tv("Enrage", 1) / 100   # +2%/rank (70009); was a flat +10% at every rank
         if f and f.p.buff("Death Wish", f.t):
-            m *= 1.20
-        if spell.name == "Rend":
-            m *= 1 + self.tv("Improved Rend", 0) / 100
+            m *= 1 + self.tv("Death Wish", 0) / 100   # "increases your Physical damage done by 20%"
         if spell.name == "Execute" and spell.dmg_max > 0:
             m *= (spell.dmg_max + getattr(spell, "rage_dmg", 0.0) * self.execute_extra) / spell.dmg_max
+        return m
+
+    def periodic_multiplier(self, spell):
+        """Rend's bleed (its only damage): Improved Rend ("Increases the Bleed damage done by your Rend ability by 35%", on the whole tick
+        as the raid simulator fits the beta logs), the physical damage buffs (Enrage, Death Wish) and, with a shield, Bastion and
+        Defensive Stance's -10% (beta logs: Rend loses its 10% there). Deep Wounds goes through refresh_dot without modifiers."""
+        m = 1.0
+        if spell.name == "Rend":
+            m *= 1 + self.tv("Improved Rend", 0) / 100
+        f = self._fight
+        if f and f.p.buff("Enrage", f.t):
+            m *= 1 + self.tv("Enrage", 1) / 100
+        if f and f.p.buff("Death Wish", f.t):
+            m *= 1 + self.tv("Death Wish", 0) / 100
+        if self.prot:
+            m *= 1 + self.tv("Bastion", 0) / 100
+            if self.stance == "Defensive Stance":
+                m *= 0.90
         return m
 
     def periodic_can_crit(self, spell):
@@ -384,8 +500,21 @@ class WarriorModule(BaseModule):
 
     def split_damage_taken(self, fight, dmg):
         if self.prot and self.stance == "Defensive Stance":
-            return dmg * 0.90   # Defensive Stance: "Decreases damage taken by 10%" (melee and spells)
+            dmg *= 0.90   # Defensive Stance: "Decreases damage taken by 10%" (melee and spells)
+        if fight.p.buff("Death Wish", fight.t):
+            dmg *= 1 + self.tv("Death Wish", 1) / 100   # Death Wish: "increases all damage you take by 5%"
         return dmg
+
+    def extra_targets(self, fight, spell, white):
+        """Sweeping Strikes: a landed melee attack also hits a second mob while charges last (engine.Fight.hit_others_melee rolls it).
+        Area attacks hit more mobs on their own; Execute's copy is a plain weapon hit in the raid simulator, so it is left out."""
+        b = fight.p.buffs.get("Sweeping Strikes")
+        if not b or b["until"] <= fight.t or b.get("charges", 0) <= 0 or spell.kind != "melee" or spell.name in NO_SWEEP:
+            return 0
+        b["charges"] -= 1
+        if b["charges"] <= 0:
+            fight.p.buffs.pop("Sweeping Strikes", None)
+        return 1
 
     def block_bonus(self, fight):
         b = fight.p.buffs.get("Shield Block") if self.prot else None
@@ -452,17 +581,26 @@ class WarriorModule(BaseModule):
             p.buffs["Bloodrage"] = {"until": t + 10.0, "left": gain}
             p.cooldowns["Bloodrage"] = t + br.cooldown
             fight.casts["Bloodrage"] = fight.casts.get("Bloodrage", 0) + 1
+            self._gore()
         dw = self.spells.get("Death Wish")
-        if dw is not None and p.ready("Death Wish", t) and p.rage >= 10:
-            p.rage -= 10
-            p.buffs["Death Wish"] = {"until": t + 30.0}
+        if dw is not None and p.ready("Death Wish", t) and p.rage >= self.mana_cost(dw):
+            p.rage -= self.mana_cost(dw)
+            p.buffs["Death Wish"] = {"until": t + (self.tv("Death Wish", 2) or 30.0)}
             p.cooldowns["Death Wish"] = t + dw.cooldown
+            fight.casts["Death Wish"] = fight.casts.get("Death Wish", 0) + 1
+            self._gore()
+
+    def _gore(self):
+        """Gore Drinker: "Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks
+        to restore 1.0% of your maximum Health" (charges spent in on_swing)."""
+        if self.rank("Gore Drinker"):
+            self.gore_charges = int(self.tv("Gore Drinker", 0) or 3)
 
     def on_hit(self, fight, spell, amount, crit, frozen):
         p, m, t = fight.p, fight.m, fight.t
-        if spell.name == "Bloodthirst" and amount > 0 and self.rank("Blood Craze"):   # 70009: Bloodthirst damage triggers Blood Craze too
-            p.hots = [h for h in p.hots if h[0] != "Blood Craze"]
-            p.hots.append(["Blood Craze", p.hp_max * self.tv("Blood Craze", 0) / 100 / 3, 3, t + 2.0, 2.0, "player"])
+        # (Blood Craze no longer triggers on Bloodthirst in 70291: Blizzard's 2026-10-02 notes and the tooltip; see on_hit_taken)
+        if spell.name in ("Bloodthirst", "Berserker Rage") and (amount > 0 or spell.name == "Berserker Rage"):
+            self._gore()
         if spell.name == "Charge":
             p.rage = min(p.rage_max, p.rage + getattr(spell, "charge_rage", 9.0) + self.tv("Improved Charge", 0))
             m.stun_until = max(m.stun_until, t + spell.stun)
@@ -498,28 +636,40 @@ class WarriorModule(BaseModule):
 
     def on_swing(self, fight, spell, outcome, amount, hand):
         p, m, t = fight.p, fight.m, fight.t
+        white = spell.name in WHITE
         if outcome == "dodge":
-            p.buffs["Overpower"] = {"until": t + 5.0}
+            p.buffs["Overpower"] = {"until": t + OVERPOWER_WINDOW}
         if outcome in ("miss", "dodge", "parry"):
             return
-        weapon_hit = spell.name == "Melee" or spell.weapon_pct > 0
+        weapon_hit = white or spell.weapon_pct > 0   # either hand (the off-hand's white swing is "Melee (off-hand)")
         if weapon_hit and self.rank("Unbridled Wrath") and fight.rng.random() < self.tv("Unbridled Wrath", 0) / 100:
-            p.rage = min(p.rage_max, p.rage + (1.0 if self.prot else 2.0))   # "increased to 2 Rage for two-handed weapons"
-        if spell.name == "Melee" and self.rank("Bloodthrill") and fight.dot_active("Rend") and fight.rng.random() < self.tv("Bloodthrill", 0) / 100:
-            p.buffs["Overpower"] = {"until": t + 6.0}
-        if outcome == "crit":
+            p.rage = min(p.rage_max, p.rage + self.tv("Unbridled Wrath", 1))   # "1 additional Rage" (70291: no longer 2 for a two-hander)
+        attack = amount > 0 and spell.kind == "melee" and spell.name not in NOT_WEAPON_ATTACK   # a weapon attack that dealt damage
+        # Bloodthrill: "Your Main Hand melee attacks against enemies afflicted by your Rend" (white swings and main-hand abilities,
+        # Heroic Strike and Cleave included: Blizzard's 2026-09-24 notes; Overpower's own hit is spent by after_cast)
+        if attack and hand == "mh" and self.rank("Bloodthrill") and fight.dot_active("Rend") and fight.rng.random() < self.tv("Bloodthrill", 0) / 100:
+            b = p.buffs.get("Overpower")
+            p.buffs["Overpower"] = {"until": max(b["until"] if b else 0.0, t + (self.tv("Bloodthrill", 1) or 6.0))}
+        if attack and self.gore_charges > 0:   # Gore Drinker's heal on each of the next 3 melee attacks
+            self.gore_charges -= 1
+            fight.heal(GORE, p.hp_max * self.tv("Gore Drinker", 1) / 100)
+        if outcome == "crit" and amount > 0:
             if self.rank("Deep Wounds"):
-                avg = (p.mh.dmg_min + p.mh.dmg_max) / 2 + p.attack_power / 14.0 * p.mh.speed
-                fight.refresh_dot("Deep Wounds", avg * self.tv("Deep Wounds", 0) / 100, 4, 3.0)
+                # 60% of the main hand's average weapon damage over 12 s, no attack power, rolling: a crit on a running bleed adds what
+                # it still owed (Blizzard's 2026-10-08 notes; the raid simulator's fit to beta logs: share x average / 4 a tick)
+                owed = sum(d[1] * d[2] for d in m.dots if d[0] == "Deep Wounds")
+                dur = self.tv("Deep Wounds", 1) or 12.0
+                fight.refresh_dot("Deep Wounds", owed + (p.mh.dmg_min + p.mh.dmg_max) / 2 * self.tv("Deep Wounds", 0) / 100, max(1, int(round(dur / 3.0))), 3.0)
             if self.rank("Flurry"):
-                self.flurry_swings = 3
-        elif spell.name == "Melee" and self.flurry_swings > 0:
+                self.flurry_swings = int(self.tv("Flurry", 1) or 3)
+        elif white and self.flurry_swings > 0:   # either hand's landed white swing spends a charge (the raid simulator's rule)
             self.flurry_swings -= 1
 
     def on_hit_taken(self, fight, dmg, crit=False):
         p, t = fight.p, fight.t
         if self.rank("Enrage") and fight.rng.random() < self.tv("Enrage", 0) / 100:
             p.buffs["Enrage"] = {"until": t + 12.0}
+            self._gore()
         if self.rank("Blood Craze") and (crit or dmg > 0.2 * p.hp_max):
             p.hots = [h for h in p.hots if h[0] != "Blood Craze"]
             p.hots.append(["Blood Craze", p.hp_max * self.tv("Blood Craze", 0) / 100 / 3, 3, t + 2.0, 2.0, "player"])
@@ -549,6 +699,8 @@ class WarriorModule(BaseModule):
         """Bandage below 60% health (First Aid by level, 8 s, 60 s cooldown); Bloodrage's trickle is dropped between fights."""
         p.buffs.pop("Bloodrage", None)
         p.buffs.pop("Enrage", None)
+        p.buffs.pop("Sweeping Strikes", None)
+        self.gore_charges = 0
         if self.prot:
             p.buffs.pop("Revenge", None)
             p.buffs.pop("Shield Block", None)
@@ -559,10 +711,28 @@ class WarriorModule(BaseModule):
         return 0.0
 
     # ------------------------------------------------------------ priority list
+    def _sweep(self, fight):
+        """Sweeping Strikes (Battle Stance, 30 rage, off the global cooldown as in the raid simulator) once a second mob stands in reach:
+        the next 5 melee attacks also hit it (extra_targets)."""
+        p, t = fight.p, fight.t
+        ss = self.spells.get("Sweeping Strikes")
+        if (ss is None or not self.stance_ok(ss.name) or p.buff("Sweeping Strikes", t) or not p.ready(ss.name, t) or not fight.m.in_melee
+                or not any(x.in_melee for x in fight.others())):
+            return
+        cost = self.mana_cost(ss)
+        if not fight.can_afford(ss, cost):
+            return
+        fight.spend(cost, ss)
+        p.buffs["Sweeping Strikes"] = {"until": t + SWEEP_DURATION, "charges": SWEEP_CHARGES}
+        p.cooldowns[ss.name] = t + ss.cooldown
+        fight.casts[ss.name] = fight.casts.get(ss.name, 0) + 1
+        fight.note(f"Sweeping Strikes ({SWEEP_CHARGES} attacks)")
+
     def decide(self, fight):
         if self.prot:
             return self.decide_prot(fight)
-        if fight.others():   # a pull of several mobs: the area priority first (engine.BaseModule.decide_aoe, AOE below)
+        if fight.others():   # a pull of several mobs: Sweeping Strikes, then the area priority (engine.BaseModule.decide_aoe, self.AOE)
+            self._sweep(fight)
             r = self.decide_aoe(fight)
             if r is not None:
                 return r
@@ -570,8 +740,8 @@ class WarriorModule(BaseModule):
         sp = self.spells
         in_melee = m.in_melee and m.dist <= MELEE_RANGE + 0.5
 
-        def can(s):
-            return s is not None and p.ready(s.name, t) and fight.can_afford(s, self.mana_cost(s))
+        def can(s):   # every cast needs its stance (STANCES): Berserker Rage never goes off in Battle Stance
+            return s is not None and self.stance_ok(s.name) and p.ready(s.name, t) and fight.can_afford(s, self.mana_cost(s))
 
         charge, shout, vr, execute, over, ms, rend, hs, bt, cb, brage = (sp.get(n) for n in ("Charge", "Battle Shout", "Victory Rush", "Execute", "Overpower", "Mortal Strike", "Rend", "Heroic Strike", "Bloodthirst", "Concussion Blow", "Berserker Rage"))
         hp = m.hp
@@ -653,8 +823,8 @@ class WarriorModule(BaseModule):
         in_melee = m.in_melee and m.dist <= MELEE_RANGE + 0.5
         use = set(self.PROT_OPTIONAL) - set(self.prot_off)
 
-        def can(s):
-            return s is not None and p.ready(s.name, t) and fight.can_afford(s, self.mana_cost(s))
+        def can(s):   # every cast needs its stance (STANCES; Vanguard: Charge in Defensive Stance)
+            return s is not None and self.stance_ok(s.name) and p.ready(s.name, t) and fight.can_afford(s, self.mana_cost(s))
 
         # Bloodrage's trickle: 1 rage per second for 10 s (as in the Arms priority)
         br = p.buffs.get("Bloodrage")

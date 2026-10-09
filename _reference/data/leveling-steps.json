@@ -434,16 +434,17 @@
     "**Battle Stance**, a two-handed weapon."
    ],
    "steps": [
-    "**Bloodrage**, then **Charge** in.",
-    "**Battle Shout**: keep it up.",
+    "**Bloodrage** (above 45% health), then **Charge** in; open with **Victory Rush** when it is up and you are below 90% health.",
+    "**Battle Shout**: keep it up (it lasts 3 minutes).",
+    "**Execute** first once the mob is below 20% health.",
+    "**Overpower** whenever it lights up: after a dodge, or from **Bloodthrill** while **Rend** ticks.",
     "**Mortal Strike** whenever ready.",
-    "**Overpower** when it lights up (after a dodge).",
-    "**Rend** once.",
-    "**Execute** when the mob is below 20% health.",
-    "**Heroic Strike** with spare rage; **Victory Rush** after a kill."
+    "**Rend** once, while the mob has more than a third of its health.",
+    "**Heroic Strike** with spare rage: keep 15 for **Overpower**, and 30 more when **Mortal Strike** is almost ready.",
+    "Two or more mobs: **Sweeping Strikes**, then **Thunder Clap** and **Cleave**."
    ],
    "between": [
-    "Bandage below 60% health, eat below half."
+    "Bandage below 60% health, eat below 40%."
    ]
   },
   "fury-dw-raid": {
@@ -451,15 +452,17 @@
     "**Battle Stance**, a weapon in each hand."
    ],
    "steps": [
-    "**Bloodrage**, then **Charge** in.",
-    "**Battle Shout**: keep it up.",
+    "**Bloodrage** (above 45% health) and **Death Wish** when it is ready, then **Charge** in; open with **Victory Rush** when it is up and you are below 90% health.",
+    "**Battle Shout**: keep it up (it lasts 3 minutes).",
+    "**Execute** first once the mob is below 20% health.",
+    "**Overpower** whenever it lights up (after a dodge).",
     "**Bloodthirst** whenever ready.",
-    "**Overpower** when it lights up (after a dodge).",
-    "**Execute** when the mob is below 20% health.",
-    "**Heroic Strike** with spare rage; **Victory Rush** after a kill."
+    "**Rend** once, while the mob has more than a third of its health.",
+    "**Heroic Strike** with spare rage: keep 15 for **Overpower**.",
+    "Two or more mobs: **Thunder Clap** and **Cleave** (**Whirlwind** needs **Berserker Stance**)."
    ],
    "between": [
-    "Bandage below 60% health, eat below half."
+    "Bandage below 60% health, eat below 40%."
    ]
   },
   "prot-leveling": {
@@ -467,14 +470,14 @@
     "A one-handed weapon and a shield, **Defensive Stance**."
    ],
    "steps": [
-    "**Battle Stance**, **Charge** in, then back to **Defensive Stance**.",
-    "**Battle Shout**: keep it up.",
+    "**Battle Stance**, **Charge** in, spend the rage **Tactical Mastery** cannot keep on **Shield Slam** or **Rend**, then back to **Defensive Stance** (with **Vanguard**, **Charge** straight from **Defensive Stance**).",
+    "**Shield Bash** a mob that is casting.",
     "**Shield Block** whenever the mob is hitting you.",
-    "**Revenge** whenever it lights up (after a block, dodge or parry).",
-    "**Shield Slam** whenever ready.",
-    "**Rend** once.",
-    "**Shield Bash** a mob that casts spells.",
-    "**Heroic Strike** with spare rage; **Victory Rush** after a kill; **Concussion Blow** when you are hurt."
+    "**Battle Shout**: keep it up (it lasts 3 minutes).",
+    "**Concussion Blow** when you drop below half health; **Victory Rush** after a kill when you are below 90%.",
+    "**Revenge** whenever it lights up (after a block, dodge or parry), then **Shield Slam** whenever ready.",
+    "**Rend** once, while the mob has more than half its health.",
+    "**Heroic Strike** with spare rage, keeping enough for **Shield Slam** and **Revenge**; two or more mobs: **Thunder Clap**, **Demoralizing Shout** and **Cleave**."
    ],
    "between": [
     "You rarely need to eat or bandage: the shield soaks most of the damage."
