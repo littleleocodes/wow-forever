@@ -93,13 +93,13 @@ What this build casts per kill ([report](../fightlab/affliction-leveling.md), al
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Wand | 6.8 | 9.2 | 12.5 | 14.0 | 12.9 | 17% |
+| Wand | 6.7 | 9.5 | 12.4 | 14.0 | 13.0 | 17% |
 | Torment | 3.2 | 4.3 | 5.1 | 5.4 | 5.2 | 0% |
-| Corruption | 1.0 | 1.0 | 1.4 | 1.6 | 1.4 | 26% |
+| Corruption | 1.0 | 1.0 | 1.3 | 1.6 | 1.4 | 25% |
 | Bane of Agony | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 25% |
 | Siphon Life | 0.0 | 1.0 | 1.0 | 1.0 | 1.0 | 11% |
-| Immolate | 1.0 | 0.9 | 0.9 | 0.6 | 0.4 | 5% |
-| Drain Life | 0.0 | 0.0 | 0.0 | 0.1 | 0.3 | 2% |
+| Immolate | 1.0 | 0.8 | 0.8 | 0.5 | 0.3 | 5% |
+| Drain Life | 0.0 | 0.0 | 0.0 | 0.1 | 0.2 | 2% |
 | Death Coil | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Life Tap | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Create Healthstone | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |

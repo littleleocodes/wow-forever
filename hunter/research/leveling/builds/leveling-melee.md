@@ -35,14 +35,14 @@ Leveling as a melee hunter with the pet as the tank: Survival's melee package fi
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Tracking** | 5/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 5%. |
-| **Deflection** | 4/5 | changed | Increases your Parry chance by 4%. |
+| **Deflection** | 4/5 | unchanged | Increases your Parry chance by 4%. |
 | **Savage Strikes** | 2/2 | changed | Increases the critical strike chance of all your melee abilities by 4%. |
 | **Surefooted** | 3/3 | changed | Increases your hit chance by 3% and reduces the duration of movement impairing effects on you by 30%. |
 | **Deterrence** | 1/1 | unchanged | When activated, increases your Dodge and Parry chance by 25% for 10 sec. |
 | **Predator's Edge** | 5/5 | **NEW** | Increases your melee critical strike damage by 30% and your Off Hand weapon damage by 50%. |
 | **Counterattack** | 1/1 | changed | A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 13 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried. |
 | **Strider Kick** | 1/1 | **NEW** | A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec. |
-| **Expose Prey** | 2/2 | **NEW** | Your attacks against targets with Hunter's Mark have a 10% chance to activate your Mongoose Bite for 5 sec. |
+| **Expose Prey** | 2/2 | **NEW** | Your attacks against targets with Hunter's Mark have a 10% chance to activate your Mongoose Bite for 10 sec. |
 | **Resourcefulness** | 2/2 | **NEW** | Reduces the mana cost of your Trap abilities and melee abilities by 60%. In addition, your critical strikes have a 60% chance to allow 50% of your Mana regeneration to continue while casting for 30 sec. |
 | **Lightning Reflexes** | 5/5 | changed | Increases your Agility by 10%. |
 | **Lacerating Strikes** | 1/1 | **NEW** | Your Mongoose Bite also causes the target to Bleed for damage equal to 40% of the damage done by Mongoose Bite over 21 sec |
@@ -103,18 +103,18 @@ What this build casts per kill ([report](../fightlab/melee-dps.md), all leveling
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee (off-hand) | 3.2 | 4.3 | 6.2 | 6.9 | 8.0 | 15% |
-| Claw | 3.6 | 4.3 | 5.1 | 5.4 | 5.9 | 6% |
-| Melee | 1.8 | 2.9 | 4.2 | 4.7 | 5.6 | 16% |
-| Growl | 1.9 | 2.5 | 3.4 | 3.7 | 4.1 | 0% |
-| Strider Kick | 0.0 | 1.8 | 2.4 | 2.6 | 2.8 | 10% |
-| Raptor Strike | 1.4 | 1.4 | 2.0 | 2.2 | 2.4 | 12% |
+| Melee (off-hand) | 2.8 | 3.8 | 5.2 | 5.8 | 6.6 | 12% |
+| Claw | 3.3 | 4.0 | 4.7 | 4.9 | 5.2 | 6% |
+| Melee | 1.7 | 2.7 | 3.6 | 4.1 | 4.8 | 13% |
+| Growl | 1.7 | 2.3 | 3.0 | 3.2 | 3.5 | 0% |
+| Strider Kick | 0.0 | 1.6 | 2.0 | 2.2 | 2.4 | 9% |
+| Raptor Strike | 1.1 | 1.2 | 1.6 | 1.8 | 2.0 | 10% |
 | Auto Shot | 1.2 | 1.2 | 1.2 | 1.2 | 1.1 | 6% |
 | Serpent Sting | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 14% |
 | Bite | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2% |
-| Mongoose Bite | 0.0 | 0.0 | 0.1 | 0.3 | 0.4 | 2% |
-| Counterattack | 0.0 | 0.0 | 0.0 | 0.0 | 0.4 | 1% |
-| Mend Pet | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Immolation Trap | 0.4 | 0.1 | 0.3 | 0.4 | 0.5 | 7% |
+| Mongoose Bite | 0.0 | 0.0 | 0.1 | 0.1 | 0.2 | 1% |
+| Counterattack | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 0% |
 
 ## Notes
 

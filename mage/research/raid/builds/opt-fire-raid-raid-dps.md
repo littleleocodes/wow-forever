@@ -60,18 +60,18 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
 
 ## Rank among our builds and the community simulator's
 
-**2 of 8** for `fire-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 8** for `fire-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`fire-raid`](fire-raid.md) | ours: hand draft | 12/34/5 | 559 | +0.0% | 700 | +0.0% | 3 s |
-| 2 | **[`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md)** | ours: optimizer | 14/32/5 | 559 | +0.0% | 700 | +0.0% | 3 s |
-| 3 | *Fire DPS* | community simulator | - | 543 | -2.9% | 670 | -4.4% | 1 s |
-| 4 | *Fire 0/35/16* | community simulator | - | 533 | -4.7% | 671 | -4.1% | 5 s |
-| 5 | *Arcane DPS* | community simulator | - | 423 | -24.3% | 512 | -26.9% | 0 s |
-| 6 | *Arcane 35/0/16* | community simulator | - | 303 | -45.9% | 373 | -46.8% | 2 s |
-| 7 | *Frost DPS* | community simulator | - | 282 | -49.6% | 355 | -49.3% | 0 s |
-| 8 | *Frost 14/0/37* | community simulator | - | 278 | -50.3% | 358 | -48.9% | 0 s |
+| 1 | *Fire DPS* | community simulator | - | 525 | +0.0% | 664 | -3.4% | 1 s |
+| 2 | [`fire-raid`](fire-raid.md) | ours: hand draft | 12/34/5 | 519 | -1.1% | 688 | +0.0% | 3 s |
+| 3 | **[`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md)** | ours: optimizer | 14/32/5 | 519 | -1.1% | 688 | +0.0% | 3 s |
+| 4 | *Fire 0/35/16* | community simulator | - | 474 | -9.6% | 639 | -7.1% | 5 s |
+| 5 | *Arcane DPS* | community simulator | - | 423 | -19.5% | 510 | -25.9% | 0 s |
+| 6 | *Arcane 35/0/16* | community simulator | - | 292 | -44.3% | 373 | -45.8% | 2 s |
+| 7 | *Frost 14/0/37* | community simulator | - | 277 | -47.2% | 357 | -48.1% | 0 s |
+| 8 | *Frost DPS* | community simulator | - | 273 | -48.0% | 356 | -48.2% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -83,7 +83,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
   5. insert before the filler: cast Fireball (+0.3%, pass 4)
   6. threshold 5s -> 6s: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+0.3%, pass 4)
   7. only with 3s or more of the fight left: cast Fireball (+0.2%, pass 4)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 4 passes, the last 2026-10-02, 9 changes to the base rotation; third-seed check: ml: Fire 697 -> 754 DPS (+8.2%), fire-raid 688 -> 746 DPS (+8.4%), sim preset: Fire DPS 659 -> 713 DPS (+8.2%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 6 passes, the last 2026-10-09, 14 changes to the base rotation; third-seed check: fire-raid 680 -> 688 DPS (+1.2%), sim preset: Fire DPS 662 -> 665 DPS (+0.4%), opt-fire-raid-raid-dps 680 -> 688 DPS (+1.2%)):
   1. drop the condition: if mana ≥ (time left in the fight × 110): cast Fire Blast (+3.7%, pass 1)
   2. move to the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+2.5%, pass 1)
   3. drop: if mana % < 20% and time left in the fight > 25s: cast Evocation (+0.2%, pass 1)
@@ -93,6 +93,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
   7. insert before the filler: cast Blast Wave (+0.3%, pass 3)
   8. insert before the filler: cast Cone of Cold (+0.3%, pass 3)
   9. insert before the filler: cast Fireball (+0.3%, pass 4)
+  10. insert in the middle: if stacks of Heating Up ≥ 2 and (time left in the fight < 6s or time left on Heating Up < 3.5s): cast Pyroblast (+0.2%, pass 5)
+  11. drop: cast Fireball (+1.0%, pass 6)
+  12. drop 'mana % ≥ 10%' from the condition: if mana % ≥ 10% and time left in the fight ≥ 3s: cast Fireball (+0.4%, pass 6)
+  13. insert in the middle: cast Major Mana Potion (+0.3%, pass 6)
+  14. move down below 'use every other cooldown when ready': if mana % ≤ 80%: cast Mana Ruby (mana gem) (+0.2%, pass 6)
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) casts/min |
 |---|---|---|
@@ -101,9 +106,9 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
 | 5 | if stacks of Heating Up = 3: cast Pyroblast | 1.5 |
-| 6 | cast Fire Blast | 7.0 |
-| 7 | if mana % ≥ 10%: cast Fireball | 9.6 |
-| 8 | if time left in the fight ≥ 3s: cast Fireball | 5.6 |
+| 6 | cast Fire Blast | 7.1 |
+| 7 | if mana % ≥ 10%: cast Fireball | 9.7 |
+| 8 | if time left in the fight ≥ 3s: cast Fireball | 5.5 |
 | 9 | cast Scorch | 0.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Arcane Missiles (its condition never held in these fights).
@@ -112,10 +117,10 @@ Damage by ability:
 
 | Ability | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) |
 |---|---|
-| Fireball | 51% |
-| Fire Blast | 20% |
+| Fireball | 48% |
+| Fire Blast | 21% |
 | Ignite | 11% |
-| Pyroblast | 10% |
+| Pyroblast | 11% |
 | Scorch | 8% |
 
 ## Notes

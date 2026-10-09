@@ -45,7 +45,7 @@ The Protection PvP build derived on 2026-10-03 (derive_pvp.py): the stats model'
 | **Improved Disarm** | 3/3 | changed | Reduces the cooldown of your Disarm ability by 20 secs. |
 | **Vanguard** | 1/1 | **NEW** | Your Charge ability is now usable while in Defensive Stance. |
 | **Improved Shield Bash** | 2/2 | unchanged | Gives your Shield Bash ability a 100% chance to Silence the target for 3 sec. |
-| **Improved Shield Wall** | 2/2 | changed | Reduces the cooldown of your Shield Wall ability by 11 min. |
+| **Improved Shield Wall** | 2/2 | changed | Reduces the cooldown of your Shield Wall ability by 11.0 min. |
 | **Concussion Blow** | 1/1 | changed | Stuns the target for 5 sec. |
 | **Focused Rage** | 3/3 | **NEW** | Reduces the Rage cost of your offensive abilities by 3. |
 

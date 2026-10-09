@@ -10,46 +10,46 @@ Single-target leveling fights against normal mobs of your level with a Voidwalke
 
 | Level | Talents | Fight mean | median | p90 | Downtime/kill | Deaths/100 kills | Time/kill | Kills/hour | Mana/kill | Pushbacks/kill | Pet deaths/100 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 20 | 11 | 15.8s | 15.7s | 18.9s | 1.8s | 0.0 | 25.6s | 140 | 140 | 0.00 | 0% |
-| 30 | 21 | 20.9s | 20.7s | 25.0s | 3.5s | 0.0 | 32.4s | 111 | 318 | 0.00 | 0% |
-| 40 | 31 | 26.3s | 26.2s | 31.6s | 4.7s | 0.0 | 38.9s | 92 | 477 | 0.00 | 0% |
-| 50 | 41 | 28.9s | 28.4s | 34.8s | 4.7s | 0.0 | 41.6s | 86 | 660 | 0.04 | 0% |
-| 60 | 51 | 27.3s | 27.2s | 33.0s | 3.9s | 0.0 | 39.2s | 92 | 861 | 0.03 | 0% |
+| 20 | 11 | 15.6s | 15.7s | 17.9s | 1.0s | 0.0 | 24.6s | 146 | 143 | 0.00 | 0% |
+| 30 | 21 | 21.0s | 20.7s | 25.0s | 2.4s | 0.0 | 31.4s | 115 | 292 | 0.00 | 0% |
+| 40 | 31 | 26.0s | 25.7s | 30.4s | 3.7s | 0.0 | 37.8s | 95 | 454 | 0.00 | 0% |
+| 50 | 41 | 28.7s | 28.4s | 34.6s | 3.8s | 0.0 | 40.6s | 89 | 633 | 0.02 | 0% |
+| 60 | 51 | 27.0s | 27.2s | 32.5s | 3.2s | 0.0 | 38.2s | 94 | 825 | 0.03 | 0% |
 
 ## Measured damage shares (vs. the spec model's assumed shares)
 
 | Level | Bane of Agony | Corruption | Death Coil | Drain Life | Immolate | Siphon Life | Voidwalker melee | Wand |
 |---|---|---|---|---|---|---|---|---|
-| 20 | 16% | 16% | 0% | 0% | 17% | 0% | 27% | 25% |
-| 30 | 17% | 16% | 0% | 0% | 13% | 7% | 24% | 24% |
-| 40 | 20% | 17% | 0% | 0% | 11% | 10% | 21% | 22% |
-| 50 | 23% | 20% | 0% | 1% | 8% | 11% | 18% | 19% |
-| 60 | 25% | 26% | 0% | 2% | 5% | 11% | 15% | 17% |
+| 20 | 16% | 15% | 0% | 0% | 16% | 0% | 28% | 24% |
+| 30 | 17% | 16% | 0% | 0% | 10% | 7% | 26% | 25% |
+| 40 | 20% | 17% | 0% | 0% | 9% | 9% | 23% | 22% |
+| 50 | 23% | 20% | 0% | 1% | 7% | 11% | 19% | 20% |
+| 60 | 25% | 25% | 0% | 2% | 5% | 11% | 16% | 17% |
 
 Spec model (`_reference/data/scorer/specs`) assumes: corruption 22%, agony 22%, drain_life 2%, shadow_bolt 23%, immolate 4%, wand 6%, voidwalker 10%, siphon_life 10%, death_coil 0%, rain_of_fire 0%.
 
 ## Realized crit rates and player at each level
 
-- **Level 20**: 1051 health, 1676 mana, 80 Int, 70 Spirit, 0 spell power, base spell crit 5.7%, armor 444 (Demon Armor); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Corruption 25%, Bane of Agony 23%, Torment 0%, Immolate 22%, Wand 3%. Health after a fight 99%, mana 76%.
-- **Level 30**: 1512 health, 2594 mana, 126 Int, 101 Spirit, 0 spell power, base spell crit 5.9%, armor 572 (Demon Armor); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Corruption 33%, Torment 0%, Bane of Agony 36%, Siphon Life 34%, Immolate 30%, Wand 3%. Health after a fight 75%, mana 56%.
-- **Level 40**: 1602 health, 3572 mana, 176 Int, 119 Spirit, 26 spell power, base spell crit 6.1%, armor 712 (Demon Armor); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Corruption 48%, Torment 0%, Bane of Agony 67%, Siphon Life 66%, Immolate 34%, Wand 3%, Drain Life 43%, Create Healthstone 0%. Health after a fight 84%, mana 54%.
-- **Level 50**: 2276 health, 4107 mana, 197 Int, 149 Spirit, 48 spell power, base spell crit 5.6%, armor 871 (Demon Armor); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Corruption 46%, Torment 0%, Bane of Agony 66%, Siphon Life 70%, Immolate 29%, Wand 3%, Death Coil 20%, Drain Life 38%, Life Tap 0%, Create Healthstone 20%. Health after a fight 84%, mana 47%.
-- **Level 60**: 2662 health, 5143 mana, 235 Int, 184 Spirit, 138 spell power, base spell crit 5.6%, armor 1214 (Demon Armor); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Corruption 46%, Torment 0%, Bane of Agony 66%, Siphon Life 65%, Immolate 26%, Wand 3%, Drain Life 37%, Death Coil 12%, Life Tap 0%. Health after a fight 89%, mana 44%.
+- **Level 20**: 1051 health, 1676 mana, 80 Int, 70 Spirit, 0 spell power, base spell crit 6.0%, armor 444 (Demon Armor); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Corruption 26%, Bane of Agony 25%, Torment 0%, Immolate 23%, Wand 3%. Health after a fight 97%, mana 71%.
+- **Level 30**: 1512 health, 2594 mana, 126 Int, 101 Spirit, 0 spell power, base spell crit 6.2%, armor 572 (Demon Armor); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Corruption 37%, Torment 0%, Bane of Agony 38%, Siphon Life 35%, Immolate 27%, Wand 3%. Health after a fight 74%, mana 53%.
+- **Level 40**: 1602 health, 3572 mana, 176 Int, 119 Spirit, 26 spell power, base spell crit 6.3%, armor 712 (Demon Armor); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Corruption 51%, Torment 0%, Bane of Agony 69%, Siphon Life 68%, Immolate 37%, Wand 3%, Create Healthstone 0%, Drain Life 43%. Health after a fight 83%, mana 52%.
+- **Level 50**: 2276 health, 4107 mana, 197 Int, 149 Spirit, 48 spell power, base spell crit 5.7%, armor 871 (Demon Armor); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Corruption 47%, Torment 0%, Bane of Agony 67%, Siphon Life 69%, Immolate 33%, Wand 3%, Death Coil 10%, Drain Life 33%, Create Healthstone 0%, Life Tap 0%. Health after a fight 84%, mana 47%.
+- **Level 60**: 2662 health, 5143 mana, 235 Int, 184 Spirit, 138 spell power, base spell crit 5.6%, armor 1214 (Demon Armor); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Corruption 47%, Torment 0%, Bane of Agony 64%, Siphon Life 65%, Immolate 28%, Wand 3%, Drain Life 40%, Death Coil 0%, Life Tap 0%. Health after a fight 89%, mana 45%.
 
 ## Other builds (same mobs, same seeds)
 
 | Level | Build | Time/kill | vs. main | Fight mean | Deaths/100 | Downtime/kill |
 |---|---|---|---|---|---|---|
-| 20 | opt-affliction-leveling-leveling-st | 25.6s | - | 15.8s | 0.0 | 1.8s |
-| 20 | leveling-affliction | 25.7s | +0.1% | 15.9s | 0.0 | 1.7s |
-| 30 | opt-affliction-leveling-leveling-st | 32.4s | - | 20.9s | 0.0 | 3.5s |
-| 30 | leveling-affliction | 32.3s | -0.3% | 20.8s | 0.0 | 3.5s |
-| 40 | opt-affliction-leveling-leveling-st | 38.9s | - | 26.3s | 0.0 | 4.7s |
-| 40 | leveling-affliction | 38.3s | -1.7% | 26.5s | 0.0 | 3.8s |
-| 50 | opt-affliction-leveling-leveling-st | 41.6s | - | 28.9s | 0.0 | 4.7s |
-| 50 | leveling-affliction | 40.2s | -3.4% | 28.9s | 0.0 | 3.3s |
-| 60 | opt-affliction-leveling-leveling-st | 39.2s | - | 27.3s | 0.0 | 3.9s |
-| 60 | leveling-affliction | 38.0s | -3.0% | 27.9s | 0.0 | 2.2s |
+| 20 | opt-affliction-leveling-leveling-st | 24.6s | - | 15.6s | 0.0 | 1.0s |
+| 20 | leveling-affliction | 24.6s | -0.1% | 15.7s | 0.0 | 0.9s |
+| 30 | opt-affliction-leveling-leveling-st | 31.4s | - | 21.0s | 0.0 | 2.4s |
+| 30 | leveling-affliction | 31.3s | -0.4% | 20.9s | 0.0 | 2.4s |
+| 40 | opt-affliction-leveling-leveling-st | 37.8s | - | 26.0s | 0.0 | 3.7s |
+| 40 | leveling-affliction | 37.3s | -1.2% | 26.3s | 0.0 | 3.0s |
+| 50 | opt-affliction-leveling-leveling-st | 40.6s | - | 28.7s | 0.0 | 3.8s |
+| 50 | leveling-affliction | 39.2s | -3.3% | 28.6s | 0.0 | 2.6s |
+| 60 | opt-affliction-leveling-leveling-st | 38.2s | - | 27.0s | 0.0 | 3.2s |
+| 60 | leveling-affliction | 37.3s | -2.2% | 27.5s | 0.0 | 1.9s |
 
 ## Gear tiers (main build)
 
@@ -57,16 +57,16 @@ Spec model (`_reference/data/scorer/specs`) assumes: corruption 22%, agony 22%, 
 
 | Level | Gear | Time/kill | vs. greens | Fight mean | Deaths/100 | Downtime/kill | Kills/hour |
 |---|---|---|---|---|---|---|---|
-| 20 | greens | 25.6s | - | 15.8s | 0.0 | 1.8s | 140 |
-| 20 | blues | 24.1s | -5.9% | 14.3s | 0.0 | 1.8s | 149 |
-| 30 | greens | 32.4s | - | 20.9s | 0.0 | 3.5s | 111 |
-| 30 | blues | 29.6s | -8.6% | 18.5s | 0.0 | 3.1s | 122 |
-| 40 | greens | 38.9s | - | 26.3s | 0.0 | 4.7s | 92 |
-| 40 | blues | 34.4s | -11.6% | 22.7s | 0.0 | 3.7s | 105 |
-| 50 | greens | 41.6s | - | 28.9s | 0.0 | 4.7s | 86 |
-| 50 | blues | 38.1s | -8.5% | 26.0s | 0.0 | 4.1s | 95 |
-| 60 | greens | 39.2s | - | 27.3s | 0.0 | 3.9s | 92 |
-| 60 | blues | 37.1s | -5.4% | 25.4s | 0.0 | 3.6s | 97 |
+| 20 | greens | 24.6s | - | 15.6s | 0.0 | 1.0s | 146 |
+| 20 | blues | 23.2s | -5.6% | 14.1s | 0.0 | 1.1s | 155 |
+| 30 | greens | 31.4s | - | 21.0s | 0.0 | 2.4s | 115 |
+| 30 | blues | 28.2s | -10.1% | 18.5s | 0.0 | 1.7s | 128 |
+| 40 | greens | 37.8s | - | 26.0s | 0.0 | 3.7s | 95 |
+| 40 | blues | 33.0s | -12.6% | 22.5s | 0.0 | 2.5s | 109 |
+| 50 | greens | 40.6s | - | 28.7s | 0.0 | 3.8s | 89 |
+| 50 | blues | 36.6s | -9.7% | 25.8s | 0.0 | 2.9s | 98 |
+| 60 | greens | 38.2s | - | 27.0s | 0.0 | 3.2s | 94 |
+| 60 | blues | 35.8s | -6.1% | 25.2s | 0.0 | 2.6s | 100 |
 
 ## Talent values at level 30
 
@@ -74,13 +74,13 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Improved Corruption | 5 | +2.1% | +2.6% ± 0.2 | +0.4% | +2.0% | 0.0 |
-| Malediction | 5 | +1.3% | +1.7% ± 0.2 | +0.3% | +1.9% | 0.0 |
-| Suppression | 4 | +1.2% | +1.5% ± 0.2 | +0.3% | +1.3% | 0.0 |
+| Improved Corruption | 5 | +2.0% | +2.5% ± 0.2 | +0.4% | +2.0% | 0.0 |
+| Malediction | 5 | +1.4% | +1.9% ± 0.2 | +0.3% | +1.9% | 0.0 |
 | Improved Bane of Agony | 2 | +0.9% | +1.1% ± 0.2 | +0.5% | +1.2% | 0.0 |
-| Pandemic | 3 | +0.8% | +1.0% ± 0.2 | +0.3% | +1.2% | 0.0 |
-| Amplify Curse | 1 | +0.7% | +0.8% ± 0.1 | +0.7% | +0.9% | 0.0 |
-| Siphon Life | 1 | -2.6% | +2.5% ± 0.2 | -2.6% | +10.2% | 0.0 |
+| Suppression | 4 | +0.9% | +1.2% ± 0.2 | +0.2% | +1.3% | 0.0 |
+| Pandemic | 3 | +0.6% | +0.9% ± 0.2 | +0.2% | +1.2% | 0.0 |
+| Amplify Curse | 1 | +0.6% | +0.8% ± 0.2 | +0.6% | +0.9% | 0.0 |
+| Siphon Life | 1 | -3.7% | +0.5% ± 0.3 | -3.7% | +10.2% | 0.0 |
 
 ## Talent values at level 60
 
@@ -88,46 +88,46 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Siphon Life | 1 | +6.9% | +12.1% ± 0.4 | +6.9% | +10.3% | 0.0 |
-| Demonic Knowledge | 3 | +5.2% | +6.0% ± 0.3 | +1.7% | +4.7% | 0.0 |
-| Improved Voidwalker | 3 | +2.8% | +0.1% ± 0.3 | +0.9% | +0.0% | 0.0 |
-| Malediction | 5 | +2.5% | +2.9% ± 0.3 | +0.5% | +1.9% | 0.0 |
-| Soul Link | 1 | +2.2% | +2.8% ± 0.3 | +2.2% | +2.1% | 0.0 |
-| Improved Corruption | 5 | +2.0% | +2.0% ± 0.3 | +0.4% | +2.2% | 0.0 |
-| Pandemic | 3 | +1.8% | +2.0% ± 0.3 | +0.6% | +1.6% | 0.0 |
-| Improved Bane of Agony | 2 | +1.5% | +1.8% ± 0.3 | +0.8% | +1.2% | 0.0 |
-| Amplify Curse | 1 | +1.4% | +1.6% ± 0.3 | +1.4% | +1.0% | 0.0 |
-| Malevolence | 3 | +1.4% | +1.6% ± 0.3 | +0.5% | +0.9% | 0.0 |
-| Unholy Power | 5 | +1.1% | +1.6% ± 0.3 | +0.2% | +1.3% | 0.0 |
-| Suppression | 5 | +1.1% | +1.2% ± 0.3 | +0.2% | +1.6% | 0.0 |
-| Shadow Mastery | 2 | +1.0% | +1.1% ± 0.3 | +0.5% | +1.0% | 0.0 |
-| Fel Vitality | 1 | +0.2% | -0.2% ± 0.3 | +0.2% | +0.0% | 0.0 |
-| Demonic Aegis | 2 | +0.1% | +0.1% ± 0.3 | +0.0% | +0.0% | 0.0 |
+| Siphon Life | 1 | +6.6% | +11.9% ± 0.4 | +6.6% | +10.3% | 0.0 |
+| Demonic Knowledge | 3 | +5.3% | +6.4% ± 0.3 | +1.8% | +4.7% | 0.0 |
+| Improved Voidwalker | 3 | +2.8% | +0.3% ± 0.3 | +0.9% | +0.0% | 0.0 |
+| Malediction | 5 | +2.4% | +3.0% ± 0.3 | +0.5% | +1.9% | 0.0 |
+| Soul Link | 1 | +2.2% | +2.7% ± 0.3 | +2.2% | +2.1% | 0.0 |
+| Improved Corruption | 5 | +2.0% | +2.2% ± 0.3 | +0.4% | +2.2% | 0.0 |
+| Pandemic | 3 | +1.8% | +2.2% ± 0.3 | +0.6% | +1.6% | 0.0 |
+| Amplify Curse | 1 | +1.5% | +1.7% ± 0.3 | +1.5% | +1.0% | 0.0 |
+| Improved Bane of Agony | 2 | +1.4% | +1.7% ± 0.3 | +0.7% | +1.2% | 0.0 |
+| Malevolence | 3 | +1.3% | +1.7% ± 0.3 | +0.4% | +0.9% | 0.0 |
+| Unholy Power | 5 | +1.2% | +1.6% ± 0.3 | +0.2% | +1.3% | 0.0 |
+| Suppression | 5 | +1.2% | +1.4% ± 0.3 | +0.2% | +1.6% | 0.0 |
+| Shadow Mastery | 2 | +1.0% | +1.3% ± 0.3 | +0.5% | +1.0% | 0.0 |
+| Fel Vitality | 1 | +0.4% | -0.0% ± 0.3 | +0.4% | +0.0% | 0.0 |
+| Demonic Aegis | 2 | +0.3% | +0.2% ± 0.3 | +0.1% | +0.0% | 0.0 |
+| Demonic Embrace | 5 | +0.2% | +0.2% ± 0.3 | +0.0% | +0.0% | 0.0 |
 | Demonic Sacrifice | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.0% | 0.0 |
 | Improved Imp | 3 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.0% | 0.0 |
-| Demonic Embrace | 5 | -0.0% | +0.1% ± 0.3 | -0.0% | +0.0% | 0.0 |
 
 ## Assumptions (edit `tables.py` to change them)
 
 - Mob health Median health of a normal outdoor mob at the level, from the Classic 1.12 creature database (cmangos classic-db z2815, 2,262
-    templates weighted by spawn count: 187 at 10, 466 at 20, 1,002 at 30, 1,844 at 40, 2,672 at 50, 3,878 at 60; `mob_stats.json`).
-    Unverified for WoW: Forever (creature stats are server side; the Wowhead Forever tooltips carry level and type only).
+templates weighted by spawn count: 187 at 10, 466 at 20, 1,002 at 30, 1,844 at 40, 2,672 at 50, 3,878 at 60; `mob_stats.json`).
+Unverified for WoW: Forever (creature stats are server side; the Wowhead Forever tooltips carry level and type only).
 - Mob melee Median melee swing of a normal mob before armor, from the Classic 1.12 creature database (13 at 10, 32 at 20, 48 at 30, 68 at 40,
-    95 at 50, 117 at 60 per 2.0 s swing; the earlier rule of thumb was 2-2.5x higher). Unverified for WoW: Forever.
+95 at 50, 117 at 60 per 2.0 s swing; the earlier rule of thumb was 2-2.5x higher). Unverified for WoW: Forever.
 - Caster mobs: the creature database share by level (Share of normal outdoor mob spawns whose unit class is mage or paladin, by level, from the Classic 1.12 creature database
-    (5% at 1-5, 14% at 10, 12-23% from 15 to 55, 9% at 60; `mob_stats.json`).); a caster stands at up to 30 yd and casts a bolt every 3.5 s for 1.6x its melee swing (spell damage, no armor) until interrupted or stunned, then runs in and melees until the lockout ends; Median health of a mage-class mob (Classic 1.12 creature database: 75-90% of the all-mob median).
+(5% at 1-5, 14% at 10, 12-23% from 15 to 55, 9% at 60; `mob_stats.json`).); a caster stands at up to 30 yd and casts a bolt every 3.5 s for 1.6x its melee swing (spell damage, no armor) until interrupted or stunned, then runs in and melees until the lockout ends; Median health of a mage-class mob (Classic 1.12 creature database: 75-90% of the all-mob median).
 - Runners: 0% of pulls flee at 20% health for 5 s (roots and stuns hold them; `RUNNER_SHARE`, 0 = not simulated, see sensitivity.md).
 - Spell miss: Classic spell miss vs a mob `level_diff` levels above the caster: 4% at +0, 5% at +1, 6% at +2, 17% at +3. Partial resists cost 2.5% on average.
-- Spell crit: 0.91% base plus Intellect / (Intellect per 1% spell crit: 59.5 at 60 for mages (Forever client: 0.0168% per Intellect at max level), scaling with level (~30 at 30).)
+- Spell crit: 0.91% base plus Intellect / (Intellect per 1% spell crit for mages: the client's PlayerExpectedStat by level (59.5 at 60; 2026-10-09), else 59.5 x L / 60.)
 - Pushback: 0.5s for the first melee hit taken during a cast, 0.5s per further hit; a direct hit breaks a freeze with 20% chance.
 - Gear: Gear stats by level from the Classic 1.12 item database (`gear_stats.json`, built by gear_stats.py): every slot holds a typical
-    good pick among the fixed-stat green items (GEAR_TIER "greens", mostly quest rewards) or the blue items ("blues") the class can wear,
-    with required level 2-7 levels below the character (a mage at 40: Int 87, Spirit 66, Stamina 14; a warrior at 40: Str 86, Sta 79,
-    armor 2,369 in plate). Spell power and healing come from the items' on-equip spells (spell_template auras 13 / 135; a
-    school-specific bonus counts half). Classic items: unverified for WoW: Forever. GEAR_STAT_MULT scales the stats (sensitivity). Wand: Wand dps by level from the Classic 1.12 item database (median green wand with required level 2-7 below the character:
-    11 at 10, 17 at 20, 26 at 30, 33 at 40, 41 at 50, 55 at 60; blues 25 / 33 / 38 / 51 / 63 from 20).
+good pick among the fixed-stat green items (GEAR_TIER "greens", mostly quest rewards) or the blue items ("blues") the class can wear,
+with required level 2-7 levels below the character (a mage at 40: Int 87, Spirit 66, Stamina 14; a warrior at 40: Str 86, Sta 79,
+armor 2,369 in plate). Spell power and healing come from the items' on-equip spells (spell_template auras 13 / 135; a
+school-specific bonus counts half). Classic items: unverified for WoW: Forever. GEAR_STAT_MULT scales the stats (sensitivity). Wand: Wand dps by level from the Classic 1.12 item database (median green wand with required level 2-7 below the character:
+11 at 10, 17 at 20, 26 at 30, 33 at 40, 41 at 50, 55 at 60; blues 25 / 33 / 38 / 51 / 63 from 20).
 - Regen: Vanilla mage/priest mana regen per 2-second tick while not casting: 13 + Spirit / 4. Drinking: Conjured water, Forever beta tooltips (Wowhead Forever items 5350/2288/2136/3772/8077/8078/8079, read 2026-09-26) at the
-    Conjure Water rank levels 4/10/20/30/40/50/60: 145/18s, 420/21s, 803/24s, 1293/27s, 1915/30s, 2821/30s, 4038/30s mana.
+Conjure Water rank levels 4/10/20/30/40/50/60: 145/18s, 420/21s, 803/24s, 1293/27s, 1915/30s, 2821/30s, 4038/30s mana.
 - Between fights: loot 2s, travel 6s, drink below 35% mana, eat below 65% health, a death costs 90s.
 - Not modelled yet: runners, adds, soul shard economy (Drain Soul, Shadowburn shards), Curse of Exhaustion kiting, Sacrifice, Demonic Sacrifice, Succubus/Felhunter pets, gear upgrades within a level bracket.
 

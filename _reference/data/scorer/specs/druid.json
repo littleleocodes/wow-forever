@@ -65,7 +65,7 @@
       "abs_dps_factor": 1.0
     },
     "balance-dps": {
-      "note": "Starfire 55%, Wrath 20%, Moonfire 20% (8% direct, 12% DoT), Insect Swarm arrives as a talent effect. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Wrath rank 8 92-102 in 2s for 120 mana (57.1% coefficient; +50% base in build 70009), Starfire rank 7 350-412 in 3.5s for 340 mana (100%): Starfire still leads per cast-second, Wrath per mana, so the 55/20 split stands; Moonfire rank 10 128-151 plus 240 over 12s. Raid sim shares (2026-10-03, balance-moonkin-raid in the ElliotWood/Forever simulator b0f0df3, every mana-only buff on: the split before the mana limit): starfire 65%, moonfire_direct 18%, insect_swarm 18%; 0% of the damage matched no source.",
+      "note": "Starfire 55%, Wrath 20%, Moonfire 20% (8% direct, 12% DoT), Insect Swarm arrives as a talent effect. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Wrath rank 8 92-102 in 2s for 120 mana (57.1% coefficient; +50% base in build 70009), Starfire rank 7 350-412 in 3.5s for 340 mana (100%): Starfire still leads per cast-second, Wrath per mana, so the 55/20 split stands; Moonfire rank 10 128-151 plus 240 over 12s. Raid sim shares (2026-10-03, balance-moonkin-raid in the ElliotWood/Forever simulator b0f0df3, every mana-only buff on: the split before the mana limit): starfire 65%, moonfire_direct 18%, insect_swarm 18%; 0% of the damage matched no source. Fight lab speed (2026-10-09): its leveling build kills 0.51x as fast as feral-cat-dps's optimizer build (level-weighted time per kill 52.8s vs 27.1s), written as abs_dps_factor so respec.py compares the models on that.",
       "sources": [
         {
           "id": "starfire",
@@ -169,7 +169,7 @@
         "ability:Healing": 0.0
       },
       "regen_share": 0.4,
-      "abs_dps_factor": 0.491,
+      "abs_dps_factor": 0.513,
       "time": {
         "leveling-st": {"fight": 0.548, "drink": 0.358, "eat": 0.048, "other": 0.0, "death": 0.046},
         "solo-60": {"fight": 0.548, "drink": 0.358, "eat": 0.048, "other": 0.0, "death": 0.046}

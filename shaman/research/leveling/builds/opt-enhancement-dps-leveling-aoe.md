@@ -26,7 +26,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 | **Thundering Strikes** | 5/5 | changed | Improves your chance to get a critical strike with all spells and attacks by 5%. |
 | **Earth's Grasp** | 2/2 | moved | Increases the health of your Stoneclaw Totem by 50% and the radius of your Earthbind Totem by 20%. |
 | **Mental Dexterity** | 3/3 | **NEW** | Increases your Attack Power by an amount equal to 100% of your Intellect. |
-| **Improved Ghost Wolf** | 2/2 | changed | Reduces the cast time of your Ghost Wolf spell by 3 sec, and Ghost Wolf may be used indoors. |
+| **Improved Ghost Wolf** | 2/2 | changed | Reduces the cast time of your Ghost Wolf spell by 3.0 sec, and Ghost Wolf may be used indoors. |
 | **Guardian Totems** | 2/2 | unchanged | Increases the amount of damage reduced by your Stoneskin Totem and Windwall Totem by 20% and reduces the cooldown of your Grounding Totem by 2 sec. |
 | **Improved Lightning Shield** | 2/3 | unchanged | Increases the damage done by your Lightning Shield orbs by 10%. |
 | **Anticipation** | 3/3 | changed | Increases your chance to dodge by an additional 6%. |

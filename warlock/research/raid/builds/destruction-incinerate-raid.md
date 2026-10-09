@@ -72,16 +72,22 @@ Destruction to Incinerate, the Forever capstone (Fire damage, +25% on a target w
 
 ## Rank among our builds and the community simulator's
 
-**1 of 1** for `incinerate-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 1** for `incinerate-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`destruction-incinerate-raid`](destruction-incinerate-raid.md)** | ours: hand draft | 9/11/31 | 522 | +0.0% | 603 | +0.0% | 2 s |
+| 1 | **[`destruction-incinerate-raid`](destruction-incinerate-raid.md)** | ours: hand draft | 9/11/31 | 550 | +0.0% | 672 | +0.0% | 2 s |
 
 ## Rotation (community simulator, training dummy)
 
 - **The training dummy:** the simulator's own rotation: no single change (and no pair of changes) beat it on two seeds (`raidsim/apl_opt.py`, 2026-09-29).
-- **A fully buffed raid:** the simulator's own rotation: no single change (and no pair of changes) beat it on two seeds (`raidsim/apl_opt.py`, 2026-09-29).
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-09, 6 changes to the base rotation; third-seed check: destruction-incinerate-raid 598 -> 660 DPS (+10.3%)):
+  1. insert before the filler: cast Shadowburn (+6.9%)
+  2. insert before the filler: cast Shadow Bolt (+1.8%)
+  3. insert at the top: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.4%)
+  4. move to the top: if not Curse of the Elements is up: cast Curse of the Elements (+0.5%)
+  5. move to the top: if time left on Corruption ≤ cast time of Corruption: cast Corruption (+0.3%)
+  6. only with 10s or more of the fight left: cast Shadowburn (+0.2%)
 
 Before the pull: at -1.5s: cast Life Tap.
 
@@ -91,23 +97,23 @@ Before the pull: at -1.5s: cast Life Tap.
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if time left in the fight ≤ 1.5: cast Shadowburn | 0.2 |
-| 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
+| 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.5 |
 | 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.9 |
-| 7 | if mana % < 10%: cast Life Tap | 7.1 |
+| 7 | if mana % < 10%: cast Life Tap | 7.3 |
 | 8 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
-| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.5 |
-| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 |
-| 11 | if Immolate is on the target: cast Conflagrate | 4.6 |
-| 12 | cast Incinerate | 13.3 |
+| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.3 |
+| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
+| 11 | if Immolate is on the target: cast Conflagrate | 4.7 |
+| 12 | cast Incinerate | 13.8 |
 
 Damage by ability:
 
 | Ability | [`destruction-incinerate-raid`](destruction-incinerate-raid.md) |
 |---|---|
-| Incinerate | 37% |
-| Corruption | 18% |
+| Incinerate | 38% |
+| Corruption | 17% |
 | Bane of Agony | 17% |
-| Immolate | 15% |
+| Immolate | 14% |
 | Conflagrate | 12% |
 | Searing Pain | 1% |
 | Shadowburn | 1% |

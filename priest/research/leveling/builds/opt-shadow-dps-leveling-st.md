@@ -96,7 +96,7 @@ What this build casts per kill ([report](../fightlab/shadow-dps.md), all levelin
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
 | Mind Flay | 2.9 | 3.7 | 2.6 | 2.4 | 2.3 | 37% |
-| Mind Blast | 2.0 | 1.9 | 1.9 | 1.9 | 1.8 | 29% |
+| Mind Blast | 2.0 | 2.0 | 1.9 | 1.9 | 1.8 | 29% |
 | Shadow Word: Pain | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 17% |
 | Shadow Word: Death | 0.0 | 0.0 | 1.0 | 0.9 | 0.9 | 17% |
 | Vampiric Embrace | 0.0 | 0.5 | 0.4 | 0.4 | 0.4 | 0% |

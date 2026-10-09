@@ -10,31 +10,31 @@ Single-target leveling fights against normal mobs of your level: pull at max ran
 
 | Level | Talents | Fight mean | median | p90 | Downtime/kill | Deaths/100 kills | Time/kill | Kills/hour | Mana/kill | Pushbacks/kill | Frozen casts |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 20 | 11 | 16.0s | 15.7s | 20.5s | 12.4s | 0.0 | 36.4s | 99 | 490 | 1.00 | 24% |
-| 30 | 21 | 15.4s | 15.3s | 19.5s | 14.1s | 0.0 | 37.6s | 96 | 810 | 1.11 | 35% |
-| 40 | 31 | 18.3s | 17.9s | 24.2s | 16.8s | 0.0 | 43.1s | 84 | 1183 | 1.28 | 36% |
-| 50 | 41 | 15.2s | 14.9s | 20.3s | 14.3s | 0.0 | 37.5s | 96 | 1440 | 1.15 | 35% |
-| 60 | 51 | 12.5s | 12.1s | 16.6s | 11.4s | 0.0 | 31.9s | 113 | 1615 | 0.99 | 31% |
+| 20 | 51 | 9.9s | 9.4s | 13.0s | 6.7s | 0.0 | 24.6s | 147 | 339 | 0.69 | 21% |
+| 30 | 51 | 11.6s | 11.4s | 15.1s | 11.6s | 0.0 | 31.2s | 115 | 690 | 0.98 | 27% |
+| 40 | 51 | 14.5s | 13.9s | 19.2s | 14.2s | 0.0 | 36.7s | 98 | 1025 | 1.18 | 33% |
+| 50 | 51 | 13.0s | 12.2s | 17.3s | 12.4s | 0.0 | 33.3s | 108 | 1257 | 1.05 | 31% |
+| 60 | 51 | 12.6s | 12.1s | 16.8s | 11.2s | 0.0 | 31.8s | 113 | 1585 | 1.00 | 32% |
 
 ## Measured damage shares (vs. the spec model's assumed shares)
 
-| Level | Blast Wave | Fire Blast | Fireball | Fireball burn | Frost Nova | Ice Lance | Ignite | Pyroblast | Pyroblast burn | Scorch | Wand |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| 20 | 0% | 20% | 64% | 6% | 4% | 0% | 1% | 0% | 0% | 0% | 5% |
-| 30 | 0% | 26% | 25% | 3% | 3% | 36% | 1% | 0% | 0% | 4% | 1% |
-| 40 | 0% | 24% | 20% | 2% | 3% | 43% | 1% | 0% | 0% | 6% | 2% |
-| 50 | 4% | 18% | 23% | 2% | 2% | 47% | 2% | 0% | 0% | 1% | 1% |
-| 60 | 4% | 16% | 28% | 2% | 1% | 40% | 5% | 2% | 0% | 1% | 0% |
+| Level | Blast Wave | Fire Blast | Fireball | Fireball burn | Frost Nova | Ice Lance | Ignite | Scorch | Wand |
+|---|---|---|---|---|---|---|---|---|---|
+| 20 | 0% | 14% | 42% | 3% | 2% | 33% | 5% | 0% | 2% |
+| 30 | 4% | 22% | 32% | 3% | 2% | 30% | 6% | 1% | 1% |
+| 40 | 5% | 22% | 25% | 2% | 2% | 36% | 6% | 2% | 1% |
+| 50 | 4% | 18% | 26% | 2% | 1% | 42% | 5% | 1% | 0% |
+| 60 | 4% | 16% | 28% | 2% | 1% | 42% | 5% | 1% | 0% |
 
 Spec model (`_reference/data/scorer/specs`) assumes: fireball 22%, fire_blast 14%, scorch 4%, ignite 10%, pyroblast 5%, frost_nova 2%, missiles 0%, wand 0%, ice_lance 58%.
 
 ## Realized crit rates and player at each level
 
-- **Level 20**: 872 health, 1635 mana, 81 Int, 72 Spirit, 0 spell power, base spell crit 5.0%, armor 396 (Frost Armor); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Fireball 5%, Wand 3%, Fire Blast 5%, Frost Nova 5%. Health after a fight 79%, mana 47%.
-- **Level 30**: 1262 health, 2724 mana, 140 Int, 109 Spirit, 0 spell power, base spell crit 5.6%, armor 566 (Ice Armor); mob 1002 health, hits for 48, casters 16% of pulls (0.15 interrupts per kill). Crit rates: Fireball 6%, Fire Blast 5%, Frost Nova 6%, Ice Lance 6%, Scorch 7%, Counterspell 0%, Wand 3%. Health after a fight 78%, mana 47%.
-- **Level 40**: 1361 health, 3633 mana, 188 Int, 143 Spirit, 16 spell power, base spell crit 5.6%, armor 706 (Ice Armor); mob 1844 health, hits for 68, casters 15% of pulls (0.14 interrupts per kill). Crit rates: Fireball 7%, Fire Blast 6%, Frost Nova 6%, Ice Lance 20%, Scorch 7%, Wand 2%, Counterspell 0%. Health after a fight 75%, mana 44%. Not simulated: Ice Block.
-- **Level 50**: 1831 health, 4167 mana, 210 Int, 185 Spirit, 36 spell power, base spell crit 5.1%, armor 874 (Ice Armor); mob 2672 health, hits for 95, casters 14% of pulls (0.14 interrupts per kill). Crit rates: Fireball 10%, Fire Blast 10%, Frost Nova 5%, Ice Lance 20%, Scorch 9%, Blast Wave 7%, Wand 3%, Counterspell 0%. Health after a fight 77%, mana 43%. Not simulated: Ice Block.
-- **Level 60**: 2155 health, 5016 mana, 254 Int, 203 Spirit, 74 spell power, base spell crit 5.2%, armor 1037 (Ice Armor); mob 3878 health, hits for 117, casters 9% of pulls (0.08 interrupts per kill). Crit rates: Fireball 27%, Fire Blast 25%, Frost Nova 6%, Ice Lance 34%, Scorch 25%, Blast Wave 25%, Pyroblast 42%, Wand 3%, Counterspell 0%. Health after a fight 78%, mana 45%. Not simulated: Ice Block.
+- **Level 20**: 872 health, 1635 mana, 81 Int, 72 Spirit, 0 spell power, base spell crit 5.7%, armor 396 (Frost Armor); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Fireball 24%, Ice Lance 32%, Fire Blast 25%, Frost Nova 5%, Wand 3%. Health after a fight 85%, mana 54%. Not simulated: Heating Up, Ice Block.
+- **Level 30**: 1262 health, 2724 mana, 140 Int, 109 Spirit, 0 spell power, base spell crit 6.0%, armor 566 (Ice Armor); mob 1002 health, hits for 48, casters 16% of pulls (0.14 interrupts per kill). Crit rates: Fireball 27%, Fire Blast 26%, Frost Nova 6%, Ice Lance 36%, Scorch 31%, Blast Wave 22%, Counterspell 0%, Wand 3%. Health after a fight 80%, mana 50%. Not simulated: Heating Up, Ice Block.
+- **Level 40**: 1361 health, 3633 mana, 188 Int, 143 Spirit, 16 spell power, base spell crit 6.1%, armor 706 (Ice Armor); mob 1844 health, hits for 68, casters 15% of pulls (0.14 interrupts per kill). Crit rates: Fireball 27%, Fire Blast 26%, Frost Nova 6%, Ice Lance 37%, Scorch 29%, Blast Wave 29%, Wand 3%, Counterspell 0%. Health after a fight 77%, mana 48%. Not simulated: Heating Up, Ice Block.
+- **Level 50**: 1831 health, 4167 mana, 210 Int, 185 Spirit, 36 spell power, base spell crit 5.3%, armor 874 (Ice Armor); mob 2672 health, hits for 95, casters 14% of pulls (0.13 interrupts per kill). Crit rates: Fireball 27%, Fire Blast 26%, Frost Nova 6%, Ice Lance 36%, Scorch 31%, Blast Wave 28%, Wand 3%, Counterspell 0%. Health after a fight 78%, mana 46%. Not simulated: Heating Up, Ice Block.
+- **Level 60**: 2155 health, 5016 mana, 254 Int, 203 Spirit, 74 spell power, base spell crit 5.2%, armor 1037 (Ice Armor); mob 3878 health, hits for 117, casters 9% of pulls (0.08 interrupts per kill). Crit rates: Fireball 27%, Fire Blast 26%, Frost Nova 6%, Ice Lance 35%, Scorch 25%, Blast Wave 24%, Wand 3%, Counterspell 0%. Health after a fight 78%, mana 45%. Not simulated: Heating Up, Ice Block.
 
 ## Talent values at level 30
 
@@ -42,13 +42,25 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Ice Lance | 1 | +20.2% | +22.7% ± 0.5 | +20.2% | +67.4% | 0.0 |
-| Elemental Precision | 5 | +4.2% | +4.0% ± 0.4 | +0.8% | +3.6% | 0.0 |
-| Improved Fireball | 5 | +3.2% | +5.6% ± 0.4 | +0.6% | +1.8% | 0.0 |
-| Frostbite | 3 | +2.5% | +0.6% ± 0.5 | +0.8% | +0.6% | 0.0 |
-| Ignite | 5 | +1.7% | +1.6% ± 0.3 | +0.3% | +18.5% | 0.0 |
-| Ice Shards | 1 | +1.2% | +0.4% ± 0.3 | +1.2% | +0.1% | 0.0 |
-| Permafrost | 1 | +0.9% | +0.5% ± 0.3 | +0.9% | +0.1% | 0.0 |
+| Ice Lance | 1 | +15.3% | +22.2% ± 0.6 | +15.3% | +68.6% | 0.0 |
+| Shatter | 2 | +5.3% | +6.8% ± 0.5 | +2.6% | +1.9% | 0.0 |
+| Combustion | 1 | +5.2% | +5.3% ± 0.4 | +5.2% | +6.4% | 0.0 |
+| Ignite | 5 | +4.6% | +5.1% ± 0.5 | +0.9% | +19.0% | 0.0 |
+| Fire Power | 5 | +4.4% | +5.0% ± 0.5 | +0.9% | +9.0% | 0.0 |
+| Ice Shards | 5 | +3.5% | +5.0% ± 0.5 | +0.7% | +1.5% | 0.0 |
+| Frostbite | 3 | +3.2% | +0.8% ± 0.6 | +1.1% | +0.6% | 0.0 |
+| Elemental Precision | 5 | +2.4% | +2.3% ± 0.5 | +0.5% | +3.7% | 0.0 |
+| Critical Mass | 3 | +1.4% | +1.2% ± 0.5 | +0.5% | +1.0% | 0.0 |
+| Burning Soul | 3 | +0.8% | +2.7% ± 0.5 | +0.3% | +2.7% | 0.0 |
+| Improved Fireball | 5 | +0.7% | +3.6% ± 0.5 | +0.1% | +1.5% | 0.0 |
+| Heating Up | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.0% | 0.0 |
+| Ice Block | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +3.0% | 0.0 |
+| Pyroblast | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.3% | 0.0 |
+| Blast Wave | 1 | -0.4% | +3.0% ± 0.5 | -0.4% | +0.9% | 0.0 |
+| Improved Scorch | 3 | -0.5% | -0.4% ± 0.4 | -0.2% | +1.3% | 0.0 |
+| Permafrost | 1 | -0.5% | -0.4% ± 0.4 | -0.5% | +0.2% | 0.0 |
+| Impact | 3 | -1.1% | -1.9% ± 0.6 | -0.4% | +1.8% | 0.0 |
+| Flame Throwing | 2 | -1.6% | -2.8% ± 0.5 | -0.8% | +0.9% | 0.0 |
 
 ## Talent values at level 60
 
@@ -56,25 +68,25 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Ice Lance | 1 | +23.9% | +38.5% ± 1.0 | +23.9% | +68.5% | 0.0 |
-| Shatter | 2 | +7.4% | +10.7% ± 0.7 | +3.7% | +1.9% | 0.0 |
-| Combustion | 1 | +4.7% | +7.0% ± 0.6 | +4.7% | +6.4% | 0.0 |
-| Ice Shards | 5 | +4.0% | +5.7% ± 0.6 | +0.8% | +1.5% | 0.0 |
-| Ignite | 5 | +3.8% | +5.4% ± 0.6 | +0.8% | +19.0% | 0.0 |
-| Fire Power | 5 | +3.5% | +5.1% ± 0.7 | +0.7% | +9.1% | 0.0 |
-| Frostbite | 3 | +3.3% | +2.3% ± 0.8 | +1.1% | +0.6% | 0.0 |
-| Blast Wave | 1 | +2.8% | +5.4% ± 0.7 | +2.8% | +0.9% | 0.0 |
-| Elemental Precision | 5 | +2.4% | +3.4% ± 0.7 | +0.5% | +3.7% | 0.0 |
-| Critical Mass | 3 | +1.1% | +1.6% ± 0.6 | +0.4% | +1.0% | 0.0 |
-| Burning Soul | 3 | +0.6% | +2.1% ± 0.7 | +0.2% | +2.7% | 0.0 |
-| Improved Fireball | 5 | +0.4% | +3.7% ± 0.7 | +0.1% | +1.5% | 0.0 |
+| Ice Lance | 1 | +25.7% | +41.6% ± 1.0 | +25.7% | +68.6% | 0.0 |
+| Shatter | 2 | +7.5% | +10.8% ± 0.6 | +3.8% | +1.9% | 0.0 |
+| Ice Shards | 5 | +5.0% | +6.6% ± 0.6 | +1.0% | +1.5% | 0.0 |
+| Combustion | 1 | +4.9% | +6.3% ± 0.5 | +4.9% | +6.4% | 0.0 |
+| Ignite | 5 | +4.4% | +5.5% ± 0.6 | +0.9% | +19.0% | 0.0 |
+| Fire Power | 5 | +4.3% | +5.3% ± 0.8 | +0.9% | +9.0% | 0.1 |
+| Frostbite | 3 | +4.2% | +3.3% ± 0.8 | +1.4% | +0.6% | 0.0 |
+| Blast Wave | 1 | +2.8% | +5.2% ± 0.6 | +2.8% | +0.9% | 0.0 |
+| Elemental Precision | 5 | +2.6% | +3.5% ± 0.7 | +0.5% | +3.7% | 0.0 |
+| Critical Mass | 3 | +1.6% | +1.9% ± 0.6 | +0.5% | +1.0% | 0.0 |
+| Improved Fireball | 5 | +0.9% | +3.7% ± 0.7 | +0.2% | +1.5% | 0.0 |
+| Burning Soul | 3 | +0.7% | +2.5% ± 0.6 | +0.2% | +2.7% | 0.0 |
+| Permafrost | 1 | +0.5% | -0.1% ± 0.5 | +0.5% | +0.2% | 0.0 |
+| Improved Scorch | 3 | +0.5% | +0.3% ± 0.5 | +0.2% | +1.3% | 0.0 |
+| Heating Up | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.0% | 0.0 |
 | Ice Block | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +3.0% | 0.0 |
-| Improved Scorch | 3 | -0.0% | +0.3% ± 0.6 | -0.0% | +1.3% | 0.0 |
-| Hot Streak | 1 | -0.2% | +0.8% ± 0.6 | -0.2% | +0.5% | 0.0 |
-| Pyroblast | 1 | -0.2% | +0.8% ± 0.6 | -0.2% | +0.3% | 0.0 |
-| Permafrost | 1 | -0.3% | -0.6% ± 0.6 | -0.3% | +0.2% | 0.0 |
-| Impact | 3 | -1.3% | -2.0% ± 0.8 | -0.4% | +1.8% | 0.0 |
-| Flame Throwing | 2 | -1.9% | -2.8% ± 0.7 | -0.9% | +0.9% | 0.0 |
+| Pyroblast | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.3% | 0.0 |
+| Impact | 3 | -0.6% | -1.7% ± 0.8 | -0.2% | +1.8% | 0.0 |
+| Flame Throwing | 2 | -1.5% | -2.6% ± 0.7 | -0.7% | +0.9% | 0.0 |
 
 ## Assumptions (edit `tables.py` to change them)
 
@@ -87,7 +99,7 @@ Unverified for WoW: Forever (creature stats are server side; the Wowhead Forever
 (5% at 1-5, 14% at 10, 12-23% from 15 to 55, 9% at 60; `mob_stats.json`).); a caster stands at up to 30 yd and casts a bolt every 3.5 s for 1.6x its melee swing (spell damage, no armor) until interrupted or stunned, then runs in and melees until the lockout ends; Median health of a mage-class mob (Classic 1.12 creature database: 75-90% of the all-mob median).
 - Runners: 0% of pulls flee at 20% health for 5 s (roots and stuns hold them; `RUNNER_SHARE`, 0 = not simulated, see sensitivity.md).
 - Spell miss: Classic spell miss vs a mob `level_diff` levels above the caster: 4% at +0, 5% at +1, 6% at +2, 17% at +3. Partial resists cost 2.5% on average.
-- Spell crit: 0.91% base plus Intellect / (Intellect per 1% spell crit: 59.5 at 60 for mages (Forever client: 0.0168% per Intellect at max level), scaling with level (~30 at 30).)
+- Spell crit: 0.91% base plus Intellect / (Intellect per 1% spell crit for mages: the client's PlayerExpectedStat by level (59.5 at 60; 2026-10-09), else 59.5 x L / 60.)
 - Pushback: 0.5s for the first melee hit taken during a cast, 0.5s per further hit; a direct hit breaks a freeze with 20% chance.
 - Gear: Gear stats by level from the Classic 1.12 item database (`gear_stats.json`, built by gear_stats.py): every slot holds a typical
 good pick among the fixed-stat green items (GEAR_TIER "greens", mostly quest rewards) or the blue items ("blues") the class can wear,
@@ -98,5 +110,5 @@ school-specific bonus counts half). Classic items: unverified for WoW: Forever. 
 - Regen: Vanilla mage/priest mana regen per 2-second tick while not casting: 13 + Spirit / 4. Drinking: Conjured water, Forever beta tooltips (Wowhead Forever items 5350/2288/2136/3772/8077/8078/8079, read 2026-09-26) at the
 Conjure Water rank levels 4/10/20/30/40/50/60: 145/18s, 420/21s, 803/24s, 1293/27s, 1915/30s, 2821/30s, 4038/30s mana.
 - Between fights: loot 2s, travel 6s, drink below 35% mana, eat below 65% health, a death costs 90s.
-- Not modelled yet: runners, Ice Block, Mana Shield, Arcane Missiles, gear upgrades within a level bracket (adds and Blizzard only in the AoE variant, tables.MOBS_PER_PULL).
+- Not modelled yet: runners, Ice Block, Mana Shield, Arcane Missiles (outside the arcane-leveling rotation), gear upgrades within a level bracket (adds and Blizzard only in the AoE variant, tables.MOBS_PER_PULL).
 

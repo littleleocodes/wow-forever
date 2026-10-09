@@ -10,51 +10,51 @@ Single-target leveling fights against normal mobs of your level with a cat: the 
 
 | Level | Talents | Fight mean | median | p90 | Downtime/kill | Deaths/100 kills | Time/kill | Kills/hour | Mana/kill | Pushbacks/kill | Pet deaths/100 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 20 | 11 | 9.0s | 9.2s | 12.0s | 0.2s | 0.0 | 17.2s | 210 | 86 | 0.00 | 0% |
-| 30 | 21 | 11.6s | 12.1s | 15.1s | 3.6s | 0.0 | 23.2s | 155 | 240 | 0.00 | 0% |
-| 40 | 31 | 16.3s | 15.9s | 20.7s | 2.5s | 0.0 | 26.8s | 134 | 167 | 0.00 | 0% |
-| 50 | 41 | 17.8s | 17.9s | 23.3s | 2.9s | 0.0 | 28.7s | 125 | 259 | 0.00 | 0% |
-| 60 | 51 | 19.9s | 19.5s | 26.1s | 4.0s | 0.0 | 32.0s | 113 | 376 | 0.00 | 0% |
+| 20 | 11 | 7.7s | 7.2s | 9.9s | 0.5s | 0.0 | 16.2s | 222 | 103 | 0.00 | 0% |
+| 30 | 21 | 10.4s | 9.9s | 12.6s | 3.0s | 0.0 | 21.5s | 168 | 229 | 0.00 | 0% |
+| 40 | 31 | 13.9s | 13.3s | 17.9s | 1.5s | 0.0 | 23.4s | 154 | 174 | 0.00 | 0% |
+| 50 | 41 | 15.2s | 15.1s | 18.1s | 2.2s | 0.0 | 25.3s | 142 | 274 | 0.00 | 0% |
+| 60 | 51 | 16.8s | 16.4s | 20.7s | 2.9s | 0.0 | 27.7s | 130 | 396 | 0.00 | 0% |
 
 ## Measured damage shares (vs. the spec model's assumed shares)
 
-| Level | Auto Shot | Bite | Cat melee | Claw | Counterattack | Lacerate | Melee | Melee (off-hand) | Mongoose Bite | Raptor Strike | Serpent Sting | Strider Kick |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 20 | 15% | 5% | 23% | 10% | 0% | 0% | 12% | 12% | 0% | 17% | 7% | 0% |
-| 30 | 10% | 3% | 20% | 7% | 0% | 0% | 14% | 14% | 0% | 12% | 8% | 11% |
-| 40 | 8% | 2% | 19% | 7% | 0% | 0% | 16% | 15% | 1% | 13% | 9% | 11% |
-| 50 | 7% | 2% | 16% | 7% | 0% | 0% | 16% | 15% | 1% | 13% | 11% | 11% |
-| 60 | 6% | 2% | 16% | 6% | 1% | 0% | 16% | 15% | 2% | 12% | 14% | 10% |
+| Level | Auto Shot | Bite | Cat melee | Claw | Counterattack | Immolation Trap | Lacerate | Melee | Melee (off-hand) | Mongoose Bite | Raptor Strike | Serpent Sting | Strider Kick |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 20 | 15% | 5% | 27% | 9% | 0% | 3% | 0% | 12% | 10% | 0% | 14% | 6% | 0% |
+| 30 | 10% | 3% | 26% | 7% | 0% | 1% | 0% | 13% | 12% | 0% | 10% | 7% | 11% |
+| 40 | 8% | 3% | 24% | 7% | 0% | 4% | 0% | 14% | 13% | 0% | 10% | 8% | 10% |
+| 50 | 7% | 2% | 22% | 6% | 0% | 5% | 0% | 14% | 13% | 1% | 10% | 11% | 10% |
+| 60 | 6% | 2% | 21% | 6% | 0% | 7% | 0% | 13% | 12% | 1% | 10% | 14% | 9% |
 
 Spec model (`_reference/data/scorer/specs`) assumes: melee 26%, melee_oh 12%, raptor_strike 18%, mongoose_bite 12%, lacerate 5%, counterattack 4%, strider_kick 5%, serpent 6%, pet 12%.
 
 ## Realized crit rates and player at each level
 
-- **Level 20**: 1209 health, 1158 mana, 38 Int, 36 Spirit, 33 Str, 86 Agi, 175 AP, melee crit 3.3%, 0 spell power, base spell crit 5.5%, armor 492 (Aspect of the Hawk); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 4%, Serpent Sting 4%, Growl 0%, Bite 6%, Raptor Strike 7%, Melee (off-hand) 8%, Claw 6%, Melee 3%, Mongoose Bite 20%. Health after a fight 100%, mana 88%.
-- **Level 30**: 1736 health, 1623 mana, 50 Int, 60 Spirit, 41 Str, 126 Agi, 261 AP, melee crit 3.2%, 0 spell power, base spell crit 5.3%, armor 564 (Aspect of the Hawk); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 3%, Serpent Sting 4%, Growl 0%, Bite 7%, Claw 7%, Strider Kick 6%, Melee 3%, Melee (off-hand) 7%, Raptor Strike 8%, Mongoose Bite 6%, Mend Pet 0%. Health after a fight 99%, mana 58%. Not simulated: Strider Kick.
-- **Level 40**: 2183 health, 1930 mana, 52 Int, 63 Spirit, 56 Str, 172 Agi, 362 AP, melee crit 8.4%, 0 spell power, base spell crit 4.9%, armor 866 (Aspect of the Hawk); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 9%, Serpent Sting 8%, Growl 0%, Bite 7%, Claw 7%, Strider Kick 12%, Melee 9%, Melee (off-hand) 13%, Raptor Strike 13%, Mongoose Bite 14%, Mend Pet 0%. Health after a fight 97%, mana 63%. Not simulated: Expose Prey, Strider Kick.
-- **Level 50**: 2540 health, 2365 mana, 62 Int, 92 Spirit, 70 Str, 241 Agi, 531 AP, melee crit 8.9%, 0 spell power, base spell crit 4.8%, armor 1520 (Aspect of the Hawk); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 9%, Serpent Sting 8%, Growl 0%, Bite 8%, Claw 8%, Strider Kick 13%, Melee 9%, Melee (off-hand) 13%, Raptor Strike 13%, Mongoose Bite 13%, Mend Pet 0%. Health after a fight 90%, mana 61%. Not simulated: Expose Prey, Strider Kick.
-- **Level 60**: 3227 health, 2868 mana, 76 Int, 94 Spirit, 65 Str, 275 Agi, 627 AP, melee crit 8.7%, 0 spell power, base spell crit 4.9%, armor 1700 (Aspect of the Hawk); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 9%, Serpent Sting 8%, Growl 0%, Bite 9%, Claw 9%, Strider Kick 13%, Melee 9%, Melee (off-hand) 13%, Raptor Strike 13%, Mongoose Bite 13%, Counterattack 12%. Health after a fight 83%, mana 59%. Not simulated: Expose Prey, Lacerating Strikes, Strider Kick.
+- **Level 20**: 1209 health, 1158 mana, 38 Int, 36 Spirit, 33 Str, 86 Agi, 175 AP, melee crit 4.1%, 0 spell power, base spell crit 5.1%, armor 492 (Aspect of the Hawk); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 4%, Serpent Sting 4%, Growl 0%, Bite 9%, Raptor Strike 8%, Melee (off-hand) 8%, Claw 10%, Immolation Trap 0%, Melee 4%, Mongoose Bite 0%. Health after a fight 100%, mana 63%.
+- **Level 30**: 1736 health, 1623 mana, 50 Int, 60 Spirit, 41 Str, 126 Agi, 261 AP, melee crit 3.7%, 0 spell power, base spell crit 5.1%, armor 564 (Aspect of the Hawk); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 4%, Serpent Sting 4%, Growl 0%, Bite 9%, Claw 9%, Strider Kick 7%, Melee 4%, Melee (off-hand) 8%, Raptor Strike 8%, Immolation Trap 0%, Mongoose Bite 4%. Health after a fight 99%, mana 59%. Not simulated: Strider Kick.
+- **Level 40**: 2183 health, 1930 mana, 52 Int, 63 Spirit, 56 Str, 171 Agi, 360 AP, melee crit 8.6%, 0 spell power, base spell crit 4.9%, armor 866 (Aspect of the Hawk); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 9%, Serpent Sting 8%, Growl 0%, Bite 14%, Claw 14%, Strider Kick 12%, Melee 9%, Melee (off-hand) 13%, Raptor Strike 13%, Immolation Trap 0%, Mongoose Bite 11%. Health after a fight 98%, mana 62%. Not simulated: Expose Prey, Strider Kick.
+- **Level 50**: 2540 health, 2365 mana, 62 Int, 92 Spirit, 70 Str, 230 Agi, 521 AP, melee crit 8.8%, 0 spell power, base spell crit 4.8%, armor 1520 (Aspect of the Hawk); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 9%, Serpent Sting 8%, Growl 0%, Bite 16%, Claw 15%, Strider Kick 12%, Melee 9%, Melee (off-hand) 13%, Raptor Strike 13%, Mongoose Bite 12%, Immolation Trap 0%. Health after a fight 95%, mana 60%. Not simulated: Expose Prey, Strider Kick.
+- **Level 60**: 3227 health, 2868 mana, 76 Int, 94 Spirit, 65 Str, 263 Agi, 615 AP, melee crit 8.5%, 0 spell power, base spell crit 4.9%, armor 1700 (Aspect of the Hawk); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 9%, Serpent Sting 8%, Growl 0%, Bite 16%, Claw 15%, Strider Kick 12%, Melee 8%, Melee (off-hand) 12%, Immolation Trap 0%, Raptor Strike 13%, Mongoose Bite 12%, Counterattack 13%. Health after a fight 86%, mana 58%. Not simulated: Expose Prey, Lacerating Strikes, Strider Kick.
 
 ## Other builds (same mobs, same seeds)
 
 | Level | Build | Time/kill | vs. main | Fight mean | Deaths/100 | Downtime/kill |
 |---|---|---|---|---|---|---|
-| 20 | leveling-melee | 17.2s | - | 9.0s | 0.0 | 0.2s |
-| 20 | opt-bm-leveling-leveling-st (played as `bm-leveling`) | 17.2s | +0.2% | 8.0s | 0.0 | 1.2s |
-| 20 | opt-melee-dps-leveling-st | 17.2s | +0.0% | 9.0s | 0.0 | 0.2s |
-| 30 | leveling-melee | 23.2s | - | 11.6s | 0.0 | 3.6s |
-| 30 | opt-bm-leveling-leveling-st (played as `bm-leveling`) | 21.2s | -8.6% | 12.1s | 0.0 | 1.1s |
-| 30 | opt-melee-dps-leveling-st | 23.2s | +0.0% | 11.6s | 0.0 | 3.6s |
-| 40 | leveling-melee | 26.8s | - | 16.3s | 0.0 | 2.5s |
-| 40 | opt-bm-leveling-leveling-st (played as `bm-leveling`) | 29.4s | +9.4% | 17.1s | 0.0 | 4.2s |
-| 40 | opt-melee-dps-leveling-st | 26.8s | +0.0% | 16.3s | 0.0 | 2.5s |
-| 50 | leveling-melee | 28.7s | - | 17.8s | 0.0 | 2.9s |
-| 50 | opt-bm-leveling-leveling-st (played as `bm-leveling`) | 32.2s | +12.1% | 19.4s | 0.0 | 4.7s |
-| 50 | opt-melee-dps-leveling-st | 28.7s | +0.0% | 17.8s | 0.0 | 2.9s |
-| 60 | leveling-melee | 32.0s | - | 19.9s | 0.0 | 4.0s |
-| 60 | opt-bm-leveling-leveling-st (played as `bm-leveling`) | 30.0s | -6.2% | 16.2s | 0.0 | 5.8s |
-| 60 | opt-melee-dps-leveling-st | 32.0s | +0.0% | 19.9s | 0.0 | 4.0s |
+| 20 | leveling-melee | 16.2s | - | 7.7s | 0.0 | 0.5s |
+| 20 | opt-bm-leveling-leveling-st (played as `bm-leveling`) | 16.2s | -0.1% | 7.0s | 0.0 | 1.2s |
+| 20 | opt-melee-dps-leveling-st | 16.2s | +0.0% | 7.7s | 0.0 | 0.5s |
+| 30 | leveling-melee | 21.5s | - | 10.4s | 0.0 | 3.0s |
+| 30 | opt-bm-leveling-leveling-st (played as `bm-leveling`) | 19.5s | -9.2% | 10.6s | 0.0 | 0.9s |
+| 30 | opt-melee-dps-leveling-st | 21.6s | +0.6% | 10.5s | 0.0 | 3.1s |
+| 40 | leveling-melee | 23.4s | - | 13.9s | 0.0 | 1.5s |
+| 40 | opt-bm-leveling-leveling-st (played as `bm-leveling`) | 26.1s | +11.5% | 15.1s | 0.0 | 3.0s |
+| 40 | opt-melee-dps-leveling-st | 23.4s | +0.1% | 13.9s | 0.0 | 1.5s |
+| 50 | leveling-melee | 25.3s | - | 15.2s | 0.0 | 2.2s |
+| 50 | opt-bm-leveling-leveling-st (played as `bm-leveling`) | 28.9s | +14.2% | 17.2s | 0.0 | 3.7s |
+| 50 | opt-melee-dps-leveling-st | 24.8s | -2.0% | 14.6s | 0.0 | 2.2s |
+| 60 | leveling-melee | 27.7s | - | 16.8s | 0.0 | 2.9s |
+| 60 | opt-bm-leveling-leveling-st (played as `bm-leveling`) | 32.7s | +18.0% | 18.1s | 0.0 | 6.6s |
+| 60 | opt-melee-dps-leveling-st | 26.9s | -2.8% | 15.6s | 0.0 | 3.3s |
 
 ## Talent values at level 30
 
@@ -62,13 +62,13 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Predator's Edge | 5 | +3.8% | +4.2% ± 0.2 | +0.8% | +9.5% | 0.0 |
-| Improved Tracking | 5 | +3.4% | +3.8% ± 0.2 | +0.7% | +3.1% | 0.0 |
-| Surefooted | 3 | +2.4% | +2.5% ± 0.4 | +0.8% | +2.6% | 0.0 |
-| Savage Strikes | 2 | +2.3% | +2.8% ± 0.2 | +1.2% | +3.1% | 0.0 |
-| Deflection | 4 | +0.1% | -0.1% ± 0.2 | +0.0% | +0.2% | 0.0 |
+| Predator's Edge | 5 | +2.4% | +3.5% ± 0.2 | +0.5% | +5.6% | 0.0 |
+| Improved Tracking | 5 | +2.3% | +3.1% ± 0.2 | +0.5% | +2.2% | 0.0 |
+| Surefooted | 3 | +1.4% | +1.7% ± 0.3 | +0.5% | +1.9% | 0.0 |
+| Savage Strikes | 2 | +1.4% | +2.1% ± 0.2 | +0.7% | +2.5% | 0.0 |
+| Deflection | 4 | +0.0% | -0.0% ± 0.0 | +0.0% | +0.4% | 0.0 |
 | Deterrence | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.4% | 0.0 |
-| Strider Kick | 1 | -0.1% | +13.7% ± 0.4 | -0.1% | +15.0% | 0.0 |
+| Strider Kick | 1 | -2.8% | +6.2% ± 0.4 | -2.8% | +10.1% | 0.0 |
 
 ## Talent values at level 60
 
@@ -76,23 +76,23 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Resourcefulness | 2 | +11.1% | -0.3% ± 0.4 | +5.6% | +3.2% | 0.0 |
-| Strider Kick | 1 | +8.8% | +16.5% ± 0.5 | +8.8% | +14.0% | 0.0 |
-| Lethal Attacks | 5 | +5.7% | +6.4% ± 0.4 | +1.1% | +6.6% | 0.0 |
-| Predator's Edge | 5 | +4.7% | +7.0% ± 0.3 | +0.9% | +8.8% | 0.0 |
-| Careful Aim | 5 | +3.6% | +5.4% ± 0.3 | +0.7% | +3.9% | 0.0 |
-| Improved Tracking | 5 | +3.6% | +5.3% ± 0.3 | +0.7% | +3.2% | 0.0 |
-| Surefooted | 3 | +3.0% | +4.2% ± 0.4 | +1.0% | +2.7% | 0.0 |
-| Lightning Reflexes | 5 | +2.8% | +4.0% ± 0.3 | +0.6% | +4.1% | 0.0 |
-| Savage Strikes | 2 | +2.6% | +3.0% ± 0.3 | +1.3% | +3.4% | 0.0 |
-| Deadly Aspects | 5 | +2.4% | +3.0% ± 0.5 | +0.5% | +3.0% | 0.0 |
-| Focused Fire | 2 | +1.8% | +2.6% ± 0.3 | +0.9% | +2.1% | 0.0 |
-| Deflection | 4 | +1.2% | +0.8% ± 0.3 | +0.3% | +0.2% | 0.0 |
-| Counterattack | 1 | +0.2% | +1.1% ± 0.2 | +0.2% | +0.7% | 0.0 |
-| Lacerating Strikes | 1 | +0.2% | +0.3% ± 0.2 | +0.2% | +0.7% | 0.0 |
-| Deterrence | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.5% | 0.0 |
-| Expose Prey | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +9.9% | 0.0 |
-| Pathfinding | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +1.2% | 0.0 |
+| Resourcefulness | 2 | +13.3% | -1.2% ± 0.4 | +6.6% | +11.8% | 0.0 |
+| Lethal Attacks | 5 | +5.1% | +5.7% ± 0.4 | +1.0% | +5.0% | 0.0 |
+| Predator's Edge | 5 | +3.3% | +4.4% ± 0.4 | +0.7% | +5.8% | 0.0 |
+| Improved Tracking | 5 | +3.0% | +4.3% ± 0.4 | +0.6% | +2.4% | 0.0 |
+| Careful Aim | 5 | +2.8% | +4.1% ± 0.4 | +0.6% | +2.8% | 0.0 |
+| Strider Kick | 1 | +2.8% | +8.9% ± 0.5 | +2.8% | +10.4% | 0.0 |
+| Savage Strikes | 2 | +1.9% | +2.4% ± 0.3 | +1.0% | +2.9% | 0.0 |
+| Surefooted | 3 | +1.6% | +2.3% ± 0.4 | +0.5% | +2.0% | 0.0 |
+| Deadly Aspects | 5 | +1.5% | +2.1% ± 0.5 | +0.3% | +1.9% | 0.0 |
+| Lightning Reflexes | 5 | +1.5% | +2.0% ± 0.4 | +0.3% | +1.5% | 0.0 |
+| Focused Fire | 2 | +1.4% | +2.2% ± 0.3 | +0.7% | +1.6% | 0.0 |
+| Deflection | 4 | +0.8% | +0.6% ± 0.3 | +0.2% | +0.9% | 0.0 |
+| Counterattack | 1 | +0.2% | +0.3% ± 0.3 | +0.2% | +2.0% | 0.0 |
+| Lacerating Strikes | 1 | +0.1% | +0.2% ± 0.3 | +0.1% | +0.1% | 0.0 |
+| Deterrence | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.8% | 0.0 |
+| Expose Prey | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +2.7% | 0.0 |
+| Pathfinding | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +1.0% | 0.0 |
 
 ## Assumptions (edit `tables.py` to change them)
 
@@ -105,7 +105,7 @@ Unverified for WoW: Forever (creature stats are server side; the Wowhead Forever
 (5% at 1-5, 14% at 10, 12-23% from 15 to 55, 9% at 60; `mob_stats.json`).); a caster stands at up to 30 yd and casts a bolt every 3.5 s for 1.6x its melee swing (spell damage, no armor) until interrupted or stunned, then runs in and melees until the lockout ends; Median health of a mage-class mob (Classic 1.12 creature database: 75-90% of the all-mob median).
 - Runners: 0% of pulls flee at 20% health for 5 s (roots and stuns hold them; `RUNNER_SHARE`, 0 = not simulated, see sensitivity.md).
 - Spell miss: Classic spell miss vs a mob `level_diff` levels above the caster: 4% at +0, 5% at +1, 6% at +2, 17% at +3. Partial resists cost 2.5% on average.
-- Spell crit: 0.91% base plus Intellect / (Intellect per 1% spell crit: 59.5 at 60 for mages (Forever client: 0.0168% per Intellect at max level), scaling with level (~30 at 30).)
+- Spell crit: 0.91% base plus Intellect / (Intellect per 1% spell crit for mages: the client's PlayerExpectedStat by level (59.5 at 60; 2026-10-09), else 59.5 x L / 60.)
 - Pushback: 0.5s for the first melee hit taken during a cast, 0.5s per further hit; a direct hit breaks a freeze with 20% chance.
 - Gear: Gear stats by level from the Classic 1.12 item database (`gear_stats.json`, built by gear_stats.py): every slot holds a typical
 good pick among the fixed-stat green items (GEAR_TIER "greens", mostly quest rewards) or the blue items ("blues") the class can wear,
@@ -116,5 +116,5 @@ school-specific bonus counts half). Classic items: unverified for WoW: Forever. 
 - Regen: Vanilla mage/priest mana regen per 2-second tick while not casting: 13 + Spirit / 4. Drinking: Conjured water, Forever beta tooltips (Wowhead Forever items 5350/2288/2136/3772/8077/8078/8079, read 2026-09-26) at the
 Conjure Water rank levels 4/10/20/30/40/50/60: 145/18s, 420/21s, 803/24s, 1293/27s, 1915/30s, 2821/30s, 4038/30s mana.
 - Between fights: loot 2s, travel 6s, drink below 35% mana, eat below 65% health, a death costs 90s.
-- Not modelled yet: runners, adds, traps, kiting (Concussive Shot / Wing Clip and running), Scatter Shot, Disengage, Volley, pet happiness and feeding, gear upgrades within a level bracket.
+- Not modelled yet: runners, adds, the ranged hunter's traps (the pet holds the mob away from them), kiting (Concussive Shot / Wing Clip and running), Scatter Shot, Disengage, Volley, pet happiness and feeding, gear upgrades within a level bracket.
 

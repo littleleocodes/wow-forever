@@ -12,7 +12,7 @@
 
 ## Summary
 
-Allocation adopted on 2026-09-26 from `opt-feral-cat-dps-raid-dps`, the best build in the community simulator (+7.9% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: Omen of Clarity is baseline and Natural Weapons is gone, so the Classic Balance dip becomes Genesis (bleed damage), Nature's Majesty (+4% crit) and Nature's Reach (+4% hit); Furor and Naturalist (+5% all damage) come from Restoration. Feral gets Heart of the Wild at tier 1, Shredding Attacks (the Improved Shred replacement), Predatory Instincts, Rend and Tear (damage on bleeding targets) and the Berserk capstone.
+Allocation adopted on 2026-09-26 from `opt-feral-cat-dps-raid-dps`, the best build in the community simulator (+7.9% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: Omen of Clarity is baseline and Natural Weapons is gone, so the Classic Balance dip becomes Genesis (bleed damage), Nature's Majesty (+4% crit) and Nature's Reach (+4% hit); Furor and Naturalist (+5% all damage) come from Restoration. Feral gets Heart of the Wild at tier 1, Shredding Attacks (the Improved Shred replacement), Natural Instinct, Rend and Tear (damage on bleeding targets) and the Berserk capstone.
 
 ## Point allocation
 
@@ -33,12 +33,12 @@ Allocation adopted on 2026-09-26 from `opt-feral-cat-dps-raid-dps`, the best bui
 | **Thick Hide** | 3/3 | changed | While in Bear Form, Cat Form, Dire Bear Form, or Moonkin Form, you gain 3 additional base Armor per level and another 2.00 base Armor for each point of defense skill beyond five times your level. This amount can be further increased by multipliers from those forms. |
 | **Shredding Attacks** | 3/3 | **NEW** | Reduces the Energy cost of your Shred ability by 18 and reduces the Rage cost of your Lacerate ability by 3. |
 | **Savage Fury** | 2/2 | changed | Increases the damage caused by your Claw, Rake, Shred, Maul, and Swipe abilities by 10%. |
-| **Feral Charge** | 1/1 | changed | Charge an enemy, immobilizing them and interrupting any spell they are casting for 4 sec.  Leap behind an enemy. |
+| **Feral Charge** | 1/1 | changed | Charge an enemy, immobilizing them and interrupting any spell they are casting for 4 sec.  Feral Charge (Cat): 8-25 yd range, Instant, 30 sec cooldown, Requires Cat Form. Leap behind an enemy. |
 | **Sharpened Claws** | 2/2 | changed | Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by 6%. |
 | **Predatory Strikes** | 3/3 | changed | Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 150% of your level. |
 | **Blood Frenzy** | 2/2 | changed | Gives you a 100% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 100% chance to add an additional Combo Point. |
 | **Leader of the Pack** | 1/1 | changed | While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the critical strike chance of all party members within 45 yards by 3%, exclusive with Moonkin Aura. |
-| **Predatory Instincts** | 2/2 | **NEW** | Increases the critical strike damage bonus of your melee abilities by 20%. |
+| **Natural Instinct** | 2/2 | **NEW** | Increases the critical strike damage bonus of your melee abilities by 20% and increases your spell healing by 25% of your Intellect. |
 | **Rend and Tear** | 2/5 | **NEW** | Increases damage done by your melee abilities on Bleeding targets by 4%. |
 | **Berserk** | 1/1 | **NEW** | Causes your Primal Bite ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generating abilities by 100%. Clears and grants immunity to Fear effects for the duration. Lasts 15 sec. |
 
@@ -46,7 +46,7 @@ Allocation adopted on 2026-09-26 from `opt-feral-cat-dps-raid-dps`, the best bui
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Furor** | 5/5 | changed | Gives you a 100% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 100% of the Energy you had when you were last in Cat Form, plus 10 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 100 Energy. |
+| **Furor** | 5/5 | changed | Gives you a 100% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 100% of the Energy you had when last in Cat Form, plus 10 Energy per sec spent outside Cat Form, up to 100 Energy.  Bear Form and Dire Bear Form forfeit this Energy and halt its restoration while active. |
 | **Naturalist** | 5/5 | **NEW** | Reduces the cast time of your Healing Touch spell by 0.5 sec and increases all damage you deal by 5%. |
 
 ## Core talents (priority order)
@@ -71,14 +71,14 @@ Allocation adopted on 2026-09-26 from `opt-feral-cat-dps-raid-dps`, the best bui
 
 ## Rank among our builds and the community simulator's
 
-**3 of 4** for `feral-cat-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 4** for `feral-cat-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/31/11 | 349 | +0.0% | 538 | +0.0% | 0 s |
-| 2 | *Feral Cat 9/35/7* | community simulator | - | 339 | -2.9% | 523 | -2.8% | 0 s |
-| 3 | **[`feral-cat-dps`](feral-cat-dps.md)** | ours: hand draft | 9/32/10 | 339 | -3.0% | 524 | -2.6% | 0 s |
-| 4 | *Feral* | community simulator | - | 322 | -7.6% | 501 | -6.9% | 0 s |
+| 1 | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/31/11 | 368 | +0.0% | 594 | -14.1% | 0 s |
+| 2 | *Feral Cat 9/35/7* | community simulator | - | 357 | -2.9% | 691 | +0.0% | 0 s |
+| 3 | **[`feral-cat-dps`](feral-cat-dps.md)** | ours: hand draft | 9/32/10 | 357 | -3.0% | 579 | -16.2% | 0 s |
+| 4 | *Feral* | community simulator | - | 340 | -7.7% | 665 | -3.8% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -92,23 +92,24 @@ Allocation adopted on 2026-09-26 from `opt-feral-cat-dps-raid-dps`, the best bui
   7. threshold 14.0s -> 28s: if Faerie Fire should be refreshed: cast Faerie Fire (+0.2%, pass 1)
   8. drop the condition: if Faerie Fire should be refreshed: cast Faerie Fire (+0.6%, pass 4)
   9. only with 6s or more of the fight left: cast Faerie Fire (+0.8%, pass 4)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-10-02, 5 changes to the base rotation; third-seed check: ml: Feral Combat 558 -> 576 DPS (+3.2%), sim preset: Feral Cat 9/35/7 558 -> 576 DPS (+3.2%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 5 passes, the last 2026-10-09, 6 changes to the base rotation; third-seed check: opt-feral-cat-dps-raid-dps 582 -> 593 DPS (+1.9%), sim preset: Feral Cat 9/35/7 680 -> 691 DPS (+1.6%), feral-cat-dps 570 -> 579 DPS (+1.5%)):
   1. drop: if combo points = 5.0 and not Clearcasting is up and (energy + 20.2) < (current cost + current cost): cast Ferocious Bite (+1.0%, pass 1)
   2. threshold 5 -> 3.75: if combo points ≥ 5 and not Rip is on the target: cast Rip (+1.3%, pass 1)
   3. drop: if not Cat Form is up and mana % ≤ 40% and time left in the fight ≥ 20.0 and not (Demonic Rune is known and Demonic Rune is ready or Potion is known and Potion is ready): cast Innervate (+0.5%, pass 1)
   4. threshold 27.8 -> 13.9: if Furor is known and mana ≥ current cost and the global cooldown is ready and Clearcasting is known and Clearcasting is up and energy < 27.8: cancel Cat Form (+0.2%, pass 1)
   5. drop: if Furor is known and mana ≥ current cost and the global cooldown is ready and (combo points < 5.0 and (energy + 20.2) < current cost or combo points = 5.0 and (energy + 20.2) < current cost or Clearcasting is known and Clearcasting is up and energy < 27.8): cancel Cat Form (+0.2%, pass 4)
+  6. insert in the middle: if Shifting Power is known and energy ≤ 60: cast Shifting Power (+9.9%, pass 5)
 
 Before the pull: at -1.0s: cast Faerie Fire; at -3.5s: cast Tiger's Fury.
 
 | # | Priority (the first line whose condition holds is cast) | [`feral-cat-dps`](feral-cat-dps.md) casts/min |
 |---|---|---|
 | 1 | cast Tiger's Fury | 2.3 |
-| 2 | if Faerie Fire should be refreshed: cast Faerie Fire | 39.6 |
+| 2 | if Faerie Fire should be refreshed: cast Faerie Fire | 39.7 |
 | 3 | if Cat Form is up: use every other cooldown when ready | as ready |
 | 4 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 4.7 |
-| 5 | cast Shred | 15.0 |
-| 6 | if time left in the fight ≥ 6s: cast Faerie Fire | 39.6 |
+| 5 | cast Shred | 14.8 |
+| 6 | if time left in the fight ≥ 6s: cast Faerie Fire | 39.7 |
 | 7 | cast Goblin Sapper Charge | as ready |
 | 8 | if not Cat Form is up and (mana + 1500.0) ≤ (mana ÷ mana %): cast Demonic Rune | as ready |
 | 9 | if not Cat Form is up and (mana + 2250.0) ≤ (mana ÷ mana %): cast Potion | as ready |
@@ -120,9 +121,9 @@ Damage by ability:
 
 | Ability | [`feral-cat-dps`](feral-cat-dps.md) |
 |---|---|
-| Rip | 37% |
+| Rip | 38% |
 | Auto Attack | 33% |
-| Shred | 28% |
+| Shred | 27% |
 | Goblin Sapper Charge | 2% |
 | Dragonbreath Chili | 1% |
 

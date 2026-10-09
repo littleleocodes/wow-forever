@@ -10,44 +10,86 @@ Single-target leveling fights against normal mobs of your level: pull at max ran
 
 | Level | Talents | Fight mean | median | p90 | Downtime/kill | Deaths/100 kills | Time/kill | Kills/hour | Mana/kill | Pushbacks/kill | Frozen casts |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 20 | 11 | 11.8s | 11.4s | 16.6s | 7.4s | 0.0 | 27.2s | 132 | 356 | 0.86 | 37% |
-| 30 | 21 | 13.5s | 12.9s | 18.2s | 11.3s | 0.0 | 32.8s | 110 | 643 | 0.81 | 47% |
-| 40 | 31 | 14.6s | 14.1s | 19.8s | 12.8s | 0.0 | 35.4s | 102 | 1058 | 0.19 | 50% |
-| 50 | 41 | 11.7s | 11.3s | 16.6s | 10.1s | 0.0 | 29.8s | 121 | 1190 | 0.12 | 48% |
+| 20 | 11 | 11.2s | 11.0s | 15.6s | 6.8s | 0.0 | 26.0s | 138 | 338 | 0.82 | 37% |
+| 30 | 21 | 13.2s | 12.9s | 17.7s | 11.0s | 0.0 | 32.2s | 112 | 634 | 0.80 | 48% |
+| 40 | 31 | 14.5s | 14.0s | 19.7s | 12.8s | 0.0 | 35.3s | 102 | 1056 | 0.20 | 50% |
+| 50 | 41 | 11.7s | 11.3s | 16.6s | 10.1s | 0.0 | 29.7s | 121 | 1182 | 0.12 | 48% |
 | 60 | 51 | 11.3s | 10.4s | 16.5s | 8.1s | 0.0 | 27.4s | 131 | 1343 | 0.10 | 47% |
 
 ## Measured damage shares (vs. the spec model's assumed shares)
 
 | Level | Cone of Cold | Fire Blast | Frost Nova | Frostbolt | Frostfire Bolt | Frostfire Bolt burn | Ice Lance | Wand |
 |---|---|---|---|---|---|---|---|---|
-| 20 | 0% | 15% | 2% | 33% | 0% | 0% | 49% | 0% |
-| 30 | 4% | 26% | 2% | 16% | 0% | 0% | 51% | 0% |
-| 40 | 4% | 19% | 2% | 0% | 13% | 2% | 59% | 0% |
+| 20 | 0% | 14% | 2% | 36% | 0% | 0% | 47% | 0% |
+| 30 | 4% | 26% | 2% | 17% | 0% | 0% | 50% | 0% |
+| 40 | 4% | 19% | 2% | 0% | 14% | 2% | 59% | 0% |
 | 50 | 3% | 14% | 1% | 0% | 14% | 1% | 66% | 0% |
 | 60 | 3% | 13% | 1% | 0% | 15% | 1% | 67% | 0% |
 
 ## Realized crit rates and player at each level
 
-- **Level 20**: 872 health, 1635 mana, 81 Int, 72 Spirit, 0 spell power, base spell crit 5.0%, armor 396 (Frost Armor); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Frostbolt 5%, Fire Blast 5%, Ice Lance 5%, Frost Nova 5%, Wand 3%. Health after a fight 83%, mana 54%.
-- **Level 30**: 1262 health, 2724 mana, 140 Int, 109 Spirit, 0 spell power, base spell crit 5.6%, armor 566 (Ice Armor); mob 1002 health, hits for 48, casters 16% of pulls (0.14 interrupts per kill). Crit rates: Frostbolt 12%, Fire Blast 16%, Frost Nova 13%, Ice Lance 52%, Cone of Cold 12%, Counterspell 0%, Wand 1%. Health after a fight 79%, mana 52%. Not simulated: Ice Block.
-- **Level 40**: 1361 health, 3633 mana, 188 Int, 143 Spirit, 16 spell power, base spell crit 5.6%, armor 706 (Ice Armor); mob 1844 health, hits for 68, casters 15% of pulls (0.14 interrupts per kill). Crit rates: Frostfire Bolt 12%, Fire Blast 13%, Frost Nova 15%, Ice Lance 55%, Cone of Cold 18%, Counterspell 0%, Wand 5%. Health after a fight 95%, mana 46%. Not simulated: Ice Block.
-- **Level 50**: 1831 health, 4167 mana, 210 Int, 185 Spirit, 36 spell power, base spell crit 5.1%, armor 874 (Ice Armor); mob 2672 health, hits for 95, casters 14% of pulls (0.13 interrupts per kill). Crit rates: Frostfire Bolt 10%, Fire Blast 18%, Frost Nova 15%, Ice Lance 59%, Cone of Cold 19%, Counterspell 0%, Wand 2%. Health after a fight 97%, mana 47%. Not simulated: Ice Block.
+- **Level 20**: 872 health, 1635 mana, 81 Int, 72 Spirit, 0 spell power, base spell crit 5.7%, armor 396 (Frost Armor); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Frostbolt 6%, Fire Blast 6%, Ice Lance 5%, Frost Nova 6%, Wand 2%. Health after a fight 85%, mana 54%.
+- **Level 30**: 1262 health, 2724 mana, 140 Int, 109 Spirit, 0 spell power, base spell crit 6.0%, armor 566 (Ice Armor); mob 1002 health, hits for 48, casters 16% of pulls (0.15 interrupts per kill). Crit rates: Frostbolt 12%, Fire Blast 16%, Frost Nova 13%, Ice Lance 53%, Cone of Cold 13%, Counterspell 0%, Wand 1%. Health after a fight 79%, mana 52%. Not simulated: Ice Block.
+- **Level 40**: 1361 health, 3633 mana, 188 Int, 143 Spirit, 16 spell power, base spell crit 6.1%, armor 706 (Ice Armor); mob 1844 health, hits for 68, casters 15% of pulls (0.14 interrupts per kill). Crit rates: Frostfire Bolt 13%, Fire Blast 14%, Frost Nova 16%, Ice Lance 55%, Cone of Cold 19%, Counterspell 0%, Wand 3%. Health after a fight 95%, mana 46%. Not simulated: Ice Block.
+- **Level 50**: 1831 health, 4167 mana, 210 Int, 185 Spirit, 36 spell power, base spell crit 5.3%, armor 874 (Ice Armor); mob 2672 health, hits for 95, casters 14% of pulls (0.13 interrupts per kill). Crit rates: Frostfire Bolt 11%, Fire Blast 18%, Frost Nova 15%, Ice Lance 59%, Cone of Cold 18%, Counterspell 0%, Wand 3%. Health after a fight 97%, mana 47%. Not simulated: Ice Block.
 - **Level 60**: 2155 health, 5016 mana, 254 Int, 203 Spirit, 74 spell power, base spell crit 5.2%, armor 1037 (Ice Armor); mob 3878 health, hits for 117, casters 9% of pulls (0.08 interrupts per kill). Crit rates: Frostfire Bolt 11%, Fire Blast 17%, Frost Nova 13%, Ice Lance 63%, Cone of Cold 18%, Wand 3%, Counterspell 0%. Health after a fight 97%, mana 48%. Not simulated: Ice Block.
 
 ## Other builds (same mobs, same seeds)
 
 | Level | Build | Time/kill | vs. main | Fight mean | Deaths/100 | Downtime/kill |
 |---|---|---|---|---|---|---|
-| 20 | opt-frost-leveling-leveling-st | 27.2s | - | 11.8s | 0.0 | 7.4s |
-| 20 | opt-frost-leveling-leveling-st (played as `frost-leveling`) | 26.7s | -1.9% | 12.5s | 0.0 | 6.2s |
-| 30 | opt-frost-leveling-leveling-st | 32.8s | - | 13.5s | 0.0 | 11.3s |
-| 30 | opt-frost-leveling-leveling-st (played as `frost-leveling`) | 32.4s | -1.0% | 16.9s | 0.0 | 7.5s |
-| 40 | opt-frost-leveling-leveling-st | 35.4s | - | 14.6s | 0.0 | 12.8s |
-| 40 | opt-frost-leveling-leveling-st (played as `frost-leveling`) | 29.2s | -17.6% | 14.5s | 0.0 | 6.7s |
-| 50 | opt-frost-leveling-leveling-st | 29.8s | - | 11.7s | 0.0 | 10.1s |
-| 50 | opt-frost-leveling-leveling-st (played as `frost-leveling`) | 24.5s | -18.0% | 11.0s | 0.0 | 5.4s |
+| 20 | opt-frost-leveling-leveling-st | 26.0s | - | 11.2s | 0.0 | 6.8s |
+| 20 | opt-frost-leveling-leveling-st (played as `frost-leveling`) | 25.2s | -3.0% | 11.8s | 0.0 | 5.4s |
+| 30 | opt-frost-leveling-leveling-st | 32.2s | - | 13.2s | 0.0 | 11.0s |
+| 30 | opt-frost-leveling-leveling-st (played as `frost-leveling`) | 31.5s | -2.2% | 16.5s | 0.0 | 7.0s |
+| 40 | opt-frost-leveling-leveling-st | 35.3s | - | 14.5s | 0.0 | 12.8s |
+| 40 | opt-frost-leveling-leveling-st (played as `frost-leveling`) | 29.2s | -17.4% | 14.5s | 0.0 | 6.7s |
+| 50 | opt-frost-leveling-leveling-st | 29.7s | - | 11.7s | 0.0 | 10.1s |
+| 50 | opt-frost-leveling-leveling-st (played as `frost-leveling`) | 24.5s | -17.5% | 11.1s | 0.0 | 5.4s |
 | 60 | opt-frost-leveling-leveling-st | 27.4s | - | 11.3s | 0.0 | 8.1s |
 | 60 | opt-frost-leveling-leveling-st (played as `frost-leveling`) | 23.1s | -15.9% | 10.5s | 0.0 | 4.5s |
+
+## Talent values at level 30
+
+Sim: how much longer each kill takes (fight + downtime + deaths) when the talent is removed from the build, so positive = the talent helps; 'fight' is the same for fight time alone with its standard error (paired by mob). EV: the expected-value scorer's value of the same removal converted to the same scale (its scores are relative to a talentless character), the number the optimizer builds are ranked by.
+
+| Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
+|---|---|---|---|---|---|---|
+| Ice Lance | 1 | +30.6% | +41.8% ± 0.6 | +30.6% | n/a | 0.0 |
+| Shatter | 3 | +13.0% | +14.6% ± 0.5 | +4.3% | n/a | 0.0 |
+| Frostbite | 3 | +11.5% | +4.9% ± 0.7 | +3.8% | n/a | 0.0 |
+| Ice Shards | 1 | +4.4% | +4.2% ± 0.4 | +4.4% | n/a | 0.0 |
+| Frost Channeling | 3 | +4.4% | -0.4% ± 0.4 | +1.5% | n/a | 0.0 |
+| Fingers of Frost | 1 | +3.1% | +2.4% ± 0.7 | +3.1% | n/a | 0.0 |
+| Elemental Precision | 2 | +2.5% | +2.8% ± 0.4 | +1.3% | n/a | 0.0 |
+| Piercing Ice | 1 | +1.7% | +1.5% ± 0.4 | +1.7% | n/a | 0.0 |
+| Improved Frostbolt | 5 | +1.5% | +3.9% ± 0.5 | +0.3% | n/a | 0.0 |
+| Ice Block | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | n/a | 0.0 |
+
+## Talent values at level 60
+
+Sim: how much longer each kill takes (fight + downtime + deaths) when the talent is removed from the build, so positive = the talent helps; 'fight' is the same for fight time alone with its standard error (paired by mob). EV: the expected-value scorer's value of the same removal converted to the same scale (its scores are relative to a talentless character), the number the optimizer builds are ranked by.
+
+| Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
+|---|---|---|---|---|---|---|
+| Ice Lance | 1 | +68.4% | +98.0% ± 1.2 | +68.4% | n/a | 0.0 |
+| Shatter | 3 | +20.8% | +27.5% ± 0.8 | +6.9% | n/a | 0.0 |
+| Ice Shards | 5 | +16.4% | +21.2% ± 0.7 | +3.3% | n/a | 0.0 |
+| Frostbite | 3 | +9.1% | +7.4% ± 1.0 | +3.0% | n/a | 0.0 |
+| Fingers of Frost | 2 | +8.7% | +11.2% ± 1.0 | +4.4% | n/a | 0.0 |
+| Frost Channeling | 3 | +6.4% | +0.7% ± 0.6 | +2.1% | n/a | 0.0 |
+| Elemental Precision | 5 | +3.0% | +3.6% ± 0.6 | +0.6% | n/a | 0.0 |
+| Piercing Ice | 3 | +3.0% | +3.5% ± 0.5 | +1.0% | n/a | 0.0 |
+| Arcane Concentration | 5 | +2.7% | -1.7% ± 0.9 | +0.5% | n/a | 0.0 |
+| Incineration | 3 | +2.1% | +2.2% ± 0.5 | +0.7% | n/a | 0.0 |
+| Ice Barrier | 1 | +1.1% | +3.1% ± 0.5 | +1.1% | n/a | 0.0 |
+| Winter's Chill | 3 | +1.0% | +1.2% ± 0.9 | +0.3% | n/a | 0.0 |
+| Arcane Subtlety | 2 | +0.7% | +0.9% ± 0.3 | +0.4% | n/a | 0.0 |
+| Arcane Focus | 3 | +0.0% | +0.0% ± 0.1 | +0.0% | n/a | 0.0 |
+| Wand Specialization | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | n/a | 0.0 |
+| Cold Snap | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | n/a | 0.0 |
+| Ice Block | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | n/a | 0.0 |
+| Improved Frostbolt | 5 | +0.0% | +0.0% ± 0.0 | +0.0% | n/a | 0.0 |
 
 ## Assumptions (edit `tables.py` to change them)
 
@@ -60,7 +102,7 @@ Unverified for WoW: Forever (creature stats are server side; the Wowhead Forever
 (5% at 1-5, 14% at 10, 12-23% from 15 to 55, 9% at 60; `mob_stats.json`).); a caster stands at up to 30 yd and casts a bolt every 3.5 s for 1.6x its melee swing (spell damage, no armor) until interrupted or stunned, then runs in and melees until the lockout ends; Median health of a mage-class mob (Classic 1.12 creature database: 75-90% of the all-mob median).
 - Runners: 0% of pulls flee at 20% health for 5 s (roots and stuns hold them; `RUNNER_SHARE`, 0 = not simulated, see sensitivity.md).
 - Spell miss: Classic spell miss vs a mob `level_diff` levels above the caster: 4% at +0, 5% at +1, 6% at +2, 17% at +3. Partial resists cost 2.5% on average.
-- Spell crit: 0.91% base plus Intellect / (Intellect per 1% spell crit: 59.5 at 60 for mages (Forever client: 0.0168% per Intellect at max level), scaling with level (~30 at 30).)
+- Spell crit: 0.91% base plus Intellect / (Intellect per 1% spell crit for mages: the client's PlayerExpectedStat by level (59.5 at 60; 2026-10-09), else 59.5 x L / 60.)
 - Pushback: 0.5s for the first melee hit taken during a cast, 0.5s per further hit; a direct hit breaks a freeze with 20% chance.
 - Gear: Gear stats by level from the Classic 1.12 item database (`gear_stats.json`, built by gear_stats.py): every slot holds a typical
 good pick among the fixed-stat green items (GEAR_TIER "greens", mostly quest rewards) or the blue items ("blues") the class can wear,
@@ -71,5 +113,5 @@ school-specific bonus counts half). Classic items: unverified for WoW: Forever. 
 - Regen: Vanilla mage/priest mana regen per 2-second tick while not casting: 13 + Spirit / 4. Drinking: Conjured water, Forever beta tooltips (Wowhead Forever items 5350/2288/2136/3772/8077/8078/8079, read 2026-09-26) at the
 Conjure Water rank levels 4/10/20/30/40/50/60: 145/18s, 420/21s, 803/24s, 1293/27s, 1915/30s, 2821/30s, 4038/30s mana.
 - Between fights: loot 2s, travel 6s, drink below 35% mana, eat below 65% health, a death costs 90s.
-- Not modelled yet: runners, Ice Block, Mana Shield, Arcane Missiles, gear upgrades within a level bracket (adds and Blizzard only in the AoE variant, tables.MOBS_PER_PULL).
+- Not modelled yet: runners, Ice Block, Mana Shield, Arcane Missiles (outside the arcane-leveling rotation), gear upgrades within a level bracket (adds and Blizzard only in the AoE variant, tables.MOBS_PER_PULL).
 

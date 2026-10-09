@@ -84,14 +84,14 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Arms | Deep Wounds | 3 | changed | tier 3, max 3 — tooltip changed |
 | Arms | Impale | 2 | changed | tier 4, max 2 — tooltip changed |
 | Fury | Cruelty | 5 | changed | tier 1, max 5 — tooltip changed |
-| Fury | Unbridled Wrath | 5 | changed | tier 2, max 5 — tooltip changed; tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5) |
+| Fury | Unbridled Wrath | 5 | changed | tier 2, max 5 — tooltip changed; tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3, 4, 5) |
 | Fury | Improved Battle Shout | 5 | **REMOVED** | removed from Classic |
-| Fury | Dual Wield Specialization | 5 | changed | tier 4, max 5 — tooltip changed; tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5) |
+| Fury | Dual Wield Specialization | 5 | changed | tier 4, max 5 — tooltip changed; tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3, 4, 5) |
 | Fury | Improved Execute | 2 | changed | tier 4, max 2 — tooltip changed; was Fury row 4, col 2 |
 | Fury | Enrage | 5 | changed | tier 4, max 5 — tooltip changed |
 | Fury | Death Wish | 1 | changed | tier 5, max 1 — tooltip changed |
-| Fury | Flurry | 5 | changed | tier 6, max 5 — tooltip changed; moved in build 1.60.1.70170: was row 6, col 3; prerequisite changed in build 1.60.1.70170: was enrage |
-| Fury | Bloodthirst | 1 | changed | tier 7, max 1 — tooltip changed; tooltip changed in build 1.60.1.70170 (ranks 1); prerequisite changed in build 1.60.1.70170: was death wish |
+| Fury | Flurry | 5 | changed | tier 6, max 5 — tooltip changed; moved in build 1.60.1.70291: was row 6, col 3; prerequisite changed in build 1.60.1.70291: was enrage |
+| Fury | Bloodthirst | 1 | changed | tier 7, max 1 — tooltip changed; tooltip changed in build 1.60.1.70291 (ranks 1); prerequisite changed in build 1.60.1.70291: was death wish |
 
 **10 point(s) of this build no longer exist in Forever** and must be re-spent; see `../forever/README.md` for how they were re-spent.
 

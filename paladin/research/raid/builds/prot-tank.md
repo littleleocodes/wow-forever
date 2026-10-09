@@ -41,7 +41,7 @@ Allocation adopted on 2026-09-28 from `opt-prot-tank-raid-tank`, the best build 
 | **Deflection** | 5/5 | moved | Increases your Parry chance by 5%. |
 | **Holy Conduit** | 2/2 | **NEW** | Reduces the mana cost of your Consecration, Holy Wrath, Exorcism, and Hammer of Wrath spells by 40%. |
 | **Conviction** | 5/5 | changed | Improves your chance to get a critical strike with melee attacks by 5%. |
-| **Vindication** | 3/3 | changed | Gives your damaging melee attacks a chance to reduce the target's Attack Power by 200, and increase your Attack Power by 3% for 30 sec. |
+| **Vindication** | 3/3 | changed | Gives your damaging melee attacks a chance to reduce the target's Attack Power by 204, and increase your Attack Power by 3% for 30 sec. |
 | **Sanctified Judgement** | 3/3 | **NEW** | Gives your Judgement ability a 100% chance to return 60% of the Mana cost of the judged seal. |
 | **Sacred Arbiter** | 1/1 | **NEW** | Increases the damage of your Holy Strike ability by 20% and causes it to refresh all Judgement effects on the target. |
 | **Vengeance** | 3/3 | changed | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times. |
@@ -73,24 +73,25 @@ Allocation adopted on 2026-09-28 from `opt-prot-tank-raid-tank`, the best build 
 
 ## Rank among our builds and the community simulator's
 
-**2 of 5** for `prot-tank` by tank value in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 5** for `prot-tank` by tank value in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 0/32/19 | 1.013 | +0.0% | 488 | 916 |
-| 2 | **[`prot-tank`](prot-tank.md)** | ours: hand draft | 0/23/28 | 1.000 | -1.3% | 516 | 989 |
-| 3 | *Protection 0/45/6* | community simulator | - | 0.926 | -8.6% | 459 | 1028 |
-| 4 | *P4 Prot* | community simulator | - | 0.906 | -10.6% | 471 | 1100 |
-| 5 | *P5 Prot* | community simulator | - | 0.900 | -11.2% | 464 | 1100 |
+| 1 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 0/32/19 | 1.025 | +0.0% | 487 | 915 |
+| 2 | **[`prot-tank`](prot-tank.md)** | ours: hand draft | 0/23/28 | 1.000 | -2.4% | 505 | 992 |
+| 3 | *Protection 0/45/6* | community simulator | - | 0.924 | -9.8% | 444 | 1024 |
+| 4 | *P4 Prot* | community simulator | - | 0.902 | -12.0% | 455 | 1099 |
+| 5 | *P5 Prot* | community simulator | - | 0.896 | -12.5% | 449 | 1098 |
 
 ## Rotation (community simulator, raid setting)
 
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 5 changes to the base rotation; third-seed check: prot-tank 451 -> 496 DPS (+10.0%), sim preset: Protection 0/45/6 371 -> 405 DPS (+9.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-10-09, 6 changes to the base rotation; third-seed check: opt-prot-tank-raid-tank 390 -> 406 DPS (+4.3%), sim preset: Protection 0/45/6 368 -> 376 DPS (+2.0%), prot-tank 459 -> 455 DPS (-0.8%)):
   1. insert before the filler: if health % < 10%: cast Lay on Hands (+7.8%, pass 1)
   2. drop the condition: if time left on Seal of Righteousness < 2s: cast Judgement (+4.3%, pass 1)
   3. insert at the top: cast Holy Shield (+1.3%, pass 1)
   4. insert at the top: cast Templar's Bulwark (+1.4%, pass 2)
   5. insert before the filler: cast Retribution Aura (+0.2%, pass 3)
+  6. drop: cast Retribution Aura (+1.4%, pass 4)
 
 Before the pull: at -30s: cast Righteous Fury; at -3.5s: cast Seal of Righteousness; at -2s: cast Holy Shield.
 
@@ -99,10 +100,9 @@ Before the pull: at -30s: cast Righteous Fury; at -3.5s: cast Seal of Righteousn
 | 1 | cast Templar's Bulwark | 0.3 |
 | 2 | use every other cooldown when ready | as ready |
 | 3 | if time left on Seal of Righteousness ≤ 1s: cast Seal of Righteousness | 2.3 |
-| 4 | cast Consecration | 6.5 |
-| 5 | cast Holy Strike | 5.7 |
+| 4 | cast Consecration | 7.1 |
+| 5 | cast Holy Strike | 6.0 |
 | 6 | if health % < 10%: cast Lay on Hands | 0.3 |
-| 7 | cast Retribution Aura | 25.5 |
 
 Lines of the simulator's rotation these builds never cast: cast Holy Shield (needs the Holy Shield talent); cast Judgement (its condition never held in these fights).
 
@@ -110,14 +110,14 @@ Damage by ability (threat for tanks):
 
 | Ability | [`prot-tank`](prot-tank.md) |
 |---|---|
-| Auto Attack | 26% |
+| Auto Attack | 25% |
+| Consecration | 15% |
 | Judgement of Righteousness | 15% |
-| Consecration | 14% |
 | Seal of Righteousness | 14% |
 | Holy Strike | 11% |
 | Lay on Hands | 10% |
 | Retribution Aura | 5% |
-| OtherActionManaGain | 4% |
+| OtherActionManaGain | 5% |
 | Thorns | 1% |
 | Eye for an Eye | 1% |
 

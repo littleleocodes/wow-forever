@@ -59,7 +59,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-
 
 ## Leveling rotation (fight lab)
 
-Single-target leveling fights against normal mobs of your level with a two-hander in Battle Stance: Bloodrage and Charge on the pull (the mob is stunned 1 s), Battle Shout kept up, Victory Rush after a kill, Mortal Strike on cooldown, Overpower after a dodge or a Bloodthrill proc, Rend once, Execute under 20% with all the rage, Heroic Strike with spare rage, white swings that generate rage by Classic's formula (the mob dodges 5%, parries 5%, 10% of swings glance for 95%). Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below 50%, rage decays; a death costs 90 s.
+Single-target leveling fights against normal mobs of your level with a two-hander in Battle Stance: Bloodrage and Charge on the pull (the mob is stunned 1 s), Battle Shout kept up, Victory Rush after a kill, Mortal Strike on cooldown, Overpower after a dodge or a Bloodthrill proc, Rend once, Execute under 20% with all the rage, Heroic Strike with spare rage, white swings that generate rage by Forever's normalized rule (weapon speed, double on a crit; tables.RAGE_MODEL) (the mob dodges 5%, parries 5%, 10% of swings glance for 95%). Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below 50%, rage decays; a death costs 90 s.
 
 **Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): eat below 40% health. Together +2.9% time per kill saved for `leveling-arms` (level-weighted, a third seed of 3000 fights per level).
 
@@ -67,16 +67,16 @@ What this build casts per kill ([report](../fightlab/arms-2h-raid.md), all level
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 3.1 | 4.2 | 4.7 | 6.4 | 7.1 | 41% |
-| Mortal Strike | 0.0 | 0.0 | 0.0 | 2.0 | 2.3 | 20% |
-| Rend | 1.2 | 1.2 | 1.2 | 1.1 | 1.1 | 7% |
-| Execute | 0.0 | 1.1 | 1.1 | 1.0 | 1.1 | 14% |
-| Overpower | 0.3 | 0.4 | 0.6 | 0.9 | 1.0 | 11% |
+| Melee | 1.9 | 3.0 | 4.9 | 5.4 | 6.3 | 36% |
+| Mortal Strike | 0.0 | 0.0 | 2.0 | 2.3 | 2.6 | 22% |
+| Execute | 0.0 | 1.1 | 1.1 | 1.2 | 1.3 | 17% |
+| Rend | 1.1 | 1.2 | 1.1 | 1.1 | 1.1 | 7% |
 | Charge | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
-| Victory Rush | 0.3 | 0.6 | 0.7 | 0.7 | 0.8 | 2% |
-| Bloodrage | 0.3 | 0.3 | 0.4 | 0.4 | 0.4 | 0% |
-| Battle Shout | 0.1 | 0.1 | 0.2 | 0.2 | 0.2 | 0% |
-| Heroic Strike | 1.7 | 1.5 | 2.0 | 0.0 | 0.0 | 0% |
+| Overpower | 0.4 | 0.5 | 0.6 | 0.7 | 0.9 | 9% |
+| Victory Rush | 0.2 | 0.5 | 0.5 | 0.6 | 0.7 | 1% |
+| Bloodrage | 0.3 | 0.3 | 0.3 | 0.3 | 0.4 | 0% |
+| Heroic Strike | 2.0 | 1.5 | 0.1 | 0.2 | 0.3 | 2% |
+| Battle Shout | 0.1 | 0.1 | 0.1 | 0.1 | 0.2 | 0% |
 
 ## Notes
 

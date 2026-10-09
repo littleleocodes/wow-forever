@@ -71,13 +71,13 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 
 ## Rank among our builds and the community simulator's
 
-**1 of 3** for `arcane-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 3** for `arcane-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`arcane-blast-raid`](arcane-blast-raid.md)** | ours: hand draft | 35/11/5 | 571 | +0.0% | 659 | +0.0% | 0 s |
-| 2 | *Arcane DPS* | community simulator | - | 565 | -1.0% | 650 | -1.5% | 0 s |
-| 3 | *Arcane 35/0/16* | community simulator | - | 541 | -5.2% | 618 | -6.2% | 0 s |
+| 1 | **[`arcane-blast-raid`](arcane-blast-raid.md)** | ours: hand draft | 35/11/5 | 569 | +0.0% | 694 | +0.0% | 0 s |
+| 2 | *Arcane DPS* | community simulator | - | 566 | -0.6% | 687 | -1.0% | 0 s |
+| 3 | *Arcane 35/0/16* | community simulator | - | 557 | -2.2% | 669 | -3.7% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -89,30 +89,37 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
   5. move down below 'use every other cooldown when ready': cast Fire Blast (+0.4%, pass 2)
   6. drop: if mana % < 15% and time left in the fight > 20s: cast Evocation (+0.9%, pass 5)
   7. insert at the end: cast Fireball (+0.6%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 5 passes, the last 2026-10-02, 3 changes to the base rotation; third-seed check: ml: Arcane 675 -> 691 DPS (+2.3%), arcane-blast-raid 667 -> 691 DPS (+3.6%), sim preset: Arcane DPS 664 -> 681 DPS (+2.5%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 7 passes, the last 2026-10-09, 10 changes to the base rotation; third-seed check: arcane-blast-raid 679 -> 694 DPS (+2.2%), sim preset: Arcane DPS 673 -> 687 DPS (+2.2%)):
   1. threshold 3 -> 1.5: if (stacks of Arcane Blast ≥ 3 or mana % < 40%): cast Frostbolt (+0.2%, pass 1)
   2. insert in the middle: if mana ≥ (time left in the fight × 110): cast Fire Blast (+2.3%, pass 2)
   3. drop the condition: if mana ≥ (time left in the fight × 110): cast Fire Blast (+2.4%, pass 2)
+  4. move down below 'if Missile Barrage is up: cast Arcane Missiles': cast Fire Blast (+3.3%, pass 6)
+  5. drop: if (stacks of Arcane Blast ≥ 1.5 or mana % < 40%): cast Frostbolt (+0.3%, pass 6)
+  6. only with 20s or more of the fight left: cast Fire Blast (+0.2%, pass 6)
+  7. threshold 20s -> 40s: if time left in the fight ≥ 20s: cast Fire Blast (+0.2%, pass 6)
+  8. insert at the end: if stacks of Arcane Blast ≥ 2: cast Fire Blast (+0.2%, pass 6)
+  9. only with 3s or more of the fight left: cast Arcane Blast (+0.2%, pass 6)
+  10. drop the condition: if stacks of Arcane Blast ≥ 2: cast Fire Blast (+0.3%, pass 6)
 
 | # | Priority (the first line whose condition holds is cast) | [`arcane-blast-raid`](arcane-blast-raid.md) casts/min |
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
-| 2 | cast Fire Blast | 8.9 |
-| 3 | if Missile Barrage is up: cast Arcane Missiles | 5.2 |
-| 4 | if stacks of Arcane Blast ≥ 1.5: cast Frostbolt | 0.1 |
-| 5 | cast Arcane Blast | 12.6 |
-| 6 | cast Fireball | 0.9 |
+| 2 | cast Fire Blast | 8.8 |
+| 3 | if Missile Barrage is up: cast Arcane Missiles | 4.9 |
+| 4 | if stacks of Arcane Blast ≥ 1.5: cast Frostbolt | 0.2 |
+| 5 | cast Arcane Blast | 12.8 |
+| 6 | cast Fireball | 1.2 |
 
 Damage by ability:
 
 | Ability | [`arcane-blast-raid`](arcane-blast-raid.md) |
 |---|---|
 | Arcane Blast | 39% |
-| Arcane Missiles | 34% |
+| Arcane Missiles | 35% |
 | Fire Blast | 22% |
 | Ignite | 3% |
-| Fireball | 1% |
 | Frostbolt | 1% |
+| Fireball | 0% |
 
 ## Notes
 

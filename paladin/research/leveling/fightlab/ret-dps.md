@@ -10,46 +10,46 @@ Single-target leveling fights against normal mobs of your level with a two-hande
 
 | Level | Talents | Fight mean | median | p90 | Downtime/kill | Deaths/100 kills | Time/kill | Kills/hour | Mana/kill | Pushbacks/kill |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 20 | 11 | 10.8s | 10.9s | 15.2s | 1.8s | 0.0 | 20.6s | 175 | 126 | 0.00 |
-| 30 | 21 | 14.2s | 14.5s | 18.7s | 1.6s | 0.0 | 23.8s | 151 | 85 | 0.00 |
-| 40 | 31 | 18.4s | 18.7s | 25.0s | 2.9s | 0.0 | 29.3s | 123 | 118 | 0.00 |
-| 50 | 41 | 16.3s | 15.2s | 22.2s | 4.7s | 0.0 | 28.9s | 125 | 306 | 0.00 |
-| 60 | 51 | 19.2s | 18.7s | 25.7s | 4.9s | 0.0 | 32.1s | 112 | 348 | 0.00 |
+| 20 | 11 | 10.9s | 10.9s | 15.2s | 1.8s | 0.0 | 20.7s | 174 | 126 | 0.00 |
+| 30 | 21 | 14.3s | 14.5s | 18.7s | 1.6s | 0.0 | 23.8s | 151 | 85 | 0.00 |
+| 40 | 31 | 18.6s | 18.7s | 25.2s | 3.0s | 0.0 | 29.5s | 122 | 118 | 0.00 |
+| 50 | 41 | 16.6s | 16.1s | 22.2s | 4.7s | 0.0 | 29.3s | 123 | 305 | 0.00 |
+| 60 | 51 | 19.6s | 19.0s | 25.7s | 4.9s | 0.0 | 32.4s | 111 | 347 | 0.00 |
 
 ## Measured damage shares (vs. the spec model's assumed shares)
 
 | Level | Hammer of Wrath | Holy Strike | Judgement | Melee | Seal of Command |
 |---|---|---|---|---|---|
-| 20 | 0% | 8% | 29% | 45% | 17% |
-| 30 | 0% | 12% | 25% | 46% | 17% |
+| 20 | 0% | 8% | 29% | 46% | 17% |
+| 30 | 0% | 11% | 25% | 46% | 17% |
 | 40 | 0% | 13% | 24% | 44% | 19% |
-| 50 | 12% | 12% | 24% | 34% | 17% |
-| 60 | 14% | 15% | 21% | 34% | 17% |
+| 50 | 12% | 13% | 23% | 35% | 18% |
+| 60 | 13% | 15% | 20% | 34% | 17% |
 
-Spec model (`_reference/data/scorer/specs`) assumes: white 21%, seal 23%, judgement 17%, consecration 18%, holy_strike 14%, hammer_of_wrath 6%.
+Spec model (`_reference/data/scorer/specs`) assumes: white 18%, seal 32%, judgement 16%, consecration 15%, holy_strike 13%, hammer_of_wrath 6%.
 
 ## Realized crit rates and player at each level
 
-- **Level 20**: 1308 health, 1115 mana, 40 Int, 38 Spirit, 77 Str, 38 Agi, 220 AP, melee crit 7.4%, 0 spell power, base spell crit 5.3%, armor 1236 (Devotion Aura); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Seal of Command 9%, Hammer of Justice 0%, Melee 7%, Judgement 5%, Holy Strike 8%. Health after a fight 88%, mana 52%.
-- **Level 30**: 1818 health, 1467 mana, 47 Int, 49 Spirit, 124 Str, 52 Agi, 359 AP, melee crit 9.9%, 8 spell power, base spell crit 4.9%, armor 1584 (Devotion Aura); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Seal of Command 14%, Melee 10%, Hammer of Justice 0%, Judgement 4%, Holy Strike 10%. Health after a fight 86%, mana 59%.
-- **Level 40**: 2372 health, 1842 mana, 55 Int, 58 Spirit, 170 Str, 66 Agi, 501 AP, melee crit 10.7%, 34 spell power, base spell crit 4.7%, armor 2882 (Devotion Aura); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Seal of Command 20%, Melee 10%, Hammer of Justice 0%, Judgement 4%, Holy Strike 11%. Health after a fight 84%, mana 59%.
-- **Level 50**: 2962 health, 2255 mana, 66 Int, 73 Spirit, 237 Str, 84 Agi, 687 AP, melee crit 10.7%, 90 spell power, base spell crit 4.7%, armor 3476 (Devotion Aura); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Seal of Command 17%, Melee 10%, Hammer of Justice 0%, Judgement 4%, Holy Strike 10%, Hammer of Wrath 4%. Health after a fight 83%, mana 51%.
-- **Level 60**: 3641 health, 2604 mana, 73 Int, 82 Spirit, 264 Str, 72 Agi, 821 AP, melee crit 9.3%, 105 spell power, base spell crit 4.5%, armor 3958 (Devotion Aura); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Seal of Command 17%, Melee 9%, Hammer of Justice 0%, Judgement 5%, Holy Strike 9%, Hammer of Wrath 4%. Health after a fight 81%, mana 52%.
+- **Level 20**: 1308 health, 1115 mana, 40 Int, 38 Spirit, 77 Str, 38 Agi, 220 AP, melee crit 6.3%, 0 spell power, base spell crit 5.0%, armor 1236 (Devotion Aura); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Seal of Command 8%, Hammer of Justice 0%, Melee 6%, Judgement 4%, Holy Strike 7%. Health after a fight 88%, mana 52%.
+- **Level 30**: 1818 health, 1467 mana, 47 Int, 49 Spirit, 124 Str, 52 Agi, 359 AP, melee crit 9.5%, 8 spell power, base spell crit 4.8%, armor 1584 (Devotion Aura); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Seal of Command 13%, Melee 9%, Hammer of Justice 0%, Judgement 4%, Holy Strike 9%. Health after a fight 86%, mana 60%.
+- **Level 40**: 2372 health, 1842 mana, 55 Int, 58 Spirit, 170 Str, 66 Agi, 501 AP, melee crit 10.6%, 27 spell power, base spell crit 4.7%, armor 2882 (Devotion Aura); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Seal of Command 20%, Melee 10%, Hammer of Justice 0%, Judgement 5%, Holy Strike 10%. Health after a fight 84%, mana 59%.
+- **Level 50**: 2962 health, 2255 mana, 66 Int, 73 Spirit, 237 Str, 84 Agi, 687 AP, melee crit 10.7%, 64 spell power, base spell crit 4.7%, armor 3476 (Devotion Aura); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Seal of Command 18%, Melee 10%, Hammer of Justice 0%, Judgement 4%, Holy Strike 11%, Hammer of Wrath 5%. Health after a fight 83%, mana 50%.
+- **Level 60**: 3641 health, 2604 mana, 73 Int, 82 Spirit, 264 Str, 72 Agi, 821 AP, melee crit 9.3%, 76 spell power, base spell crit 4.5%, armor 3958 (Devotion Aura); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Seal of Command 17%, Melee 9%, Hammer of Justice 0%, Judgement 4%, Holy Strike 9%, Hammer of Wrath 4%. Health after a fight 81%, mana 51%.
 
 ## Other builds (same mobs, same seeds)
 
 | Level | Build | Time/kill | vs. main | Fight mean | Deaths/100 | Downtime/kill |
 |---|---|---|---|---|---|---|
-| 20 | opt-ret-dps-leveling-st | 20.6s | - | 10.8s | 0.0 | 1.8s |
-| 20 | leveling-retribution | 20.3s | -1.5% | 10.9s | 0.0 | 1.4s |
-| 30 | opt-ret-dps-leveling-st | 23.8s | - | 14.2s | 0.0 | 1.6s |
+| 20 | opt-ret-dps-leveling-st | 20.7s | - | 10.9s | 0.0 | 1.8s |
+| 20 | leveling-retribution | 20.3s | -1.6% | 10.9s | 0.0 | 1.4s |
+| 30 | opt-ret-dps-leveling-st | 23.8s | - | 14.3s | 0.0 | 1.6s |
 | 30 | leveling-retribution | 23.5s | -1.2% | 14.0s | 0.0 | 1.5s |
-| 40 | opt-ret-dps-leveling-st | 29.3s | - | 18.4s | 0.0 | 2.9s |
-| 40 | leveling-retribution | 28.2s | -3.8% | 17.5s | 0.0 | 2.7s |
-| 50 | opt-ret-dps-leveling-st | 28.9s | - | 16.3s | 0.0 | 4.7s |
-| 50 | leveling-retribution | 28.7s | -0.6% | 16.4s | 0.0 | 4.3s |
-| 60 | opt-ret-dps-leveling-st | 32.1s | - | 19.2s | 0.0 | 4.9s |
-| 60 | leveling-retribution | 32.0s | -0.2% | 19.1s | 0.0 | 4.9s |
+| 40 | opt-ret-dps-leveling-st | 29.5s | - | 18.6s | 0.0 | 3.0s |
+| 40 | leveling-retribution | 28.5s | -3.6% | 17.7s | 0.0 | 2.7s |
+| 50 | opt-ret-dps-leveling-st | 29.3s | - | 16.6s | 0.0 | 4.7s |
+| 50 | leveling-retribution | 29.0s | -1.0% | 16.6s | 0.0 | 4.4s |
+| 60 | opt-ret-dps-leveling-st | 32.4s | - | 19.6s | 0.0 | 4.9s |
+| 60 | leveling-retribution | 32.4s | -0.1% | 19.4s | 0.0 | 5.0s |
 
 ## Gear tiers (main build)
 
@@ -57,16 +57,16 @@ Spec model (`_reference/data/scorer/specs`) assumes: white 21%, seal 23%, judgem
 
 | Level | Gear | Time/kill | vs. greens | Fight mean | Deaths/100 | Downtime/kill | Kills/hour |
 |---|---|---|---|---|---|---|---|
-| 20 | greens | 20.6s | - | 10.8s | 0.0 | 1.8s | 175 |
-| 20 | blues | 18.4s | -10.5% | 9.2s | 0.0 | 1.3s | 196 |
-| 30 | greens | 23.8s | - | 14.2s | 0.0 | 1.6s | 151 |
-| 30 | blues | 21.1s | -11.3% | 12.3s | 0.0 | 0.8s | 171 |
-| 40 | greens | 29.3s | - | 18.4s | 0.0 | 2.9s | 123 |
-| 40 | blues | 26.7s | -9.0% | 16.7s | 0.0 | 2.0s | 135 |
-| 50 | greens | 28.9s | - | 16.3s | 0.0 | 4.7s | 125 |
-| 50 | blues | 26.9s | -7.0% | 14.9s | 0.0 | 3.9s | 134 |
-| 60 | greens | 32.1s | - | 19.2s | 0.0 | 4.9s | 112 |
-| 60 | blues | 29.8s | -7.1% | 17.5s | 0.0 | 4.3s | 121 |
+| 20 | greens | 20.7s | - | 10.9s | 0.0 | 1.8s | 174 |
+| 20 | blues | 18.6s | -10.2% | 9.3s | 0.0 | 1.3s | 194 |
+| 30 | greens | 23.8s | - | 14.3s | 0.0 | 1.6s | 151 |
+| 30 | blues | 21.2s | -10.8% | 12.5s | 0.0 | 0.8s | 169 |
+| 40 | greens | 29.5s | - | 18.6s | 0.0 | 3.0s | 122 |
+| 40 | blues | 26.7s | -9.5% | 16.7s | 0.0 | 2.0s | 135 |
+| 50 | greens | 29.3s | - | 16.6s | 0.0 | 4.7s | 123 |
+| 50 | blues | 27.4s | -6.5% | 15.3s | 0.0 | 4.0s | 132 |
+| 60 | greens | 32.4s | - | 19.6s | 0.0 | 4.9s | 111 |
+| 60 | blues | 30.3s | -6.5% | 18.0s | 0.0 | 4.4s | 119 |
 
 ## Talent values at level 30
 
@@ -74,13 +74,13 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Seal of Command | 1 | +15.5% | +20.8% ± 0.5 | +15.5% | +10.7% | 0.0 |
-| Sanctified Judgement | 3 | +13.4% | -0.7% ± 0.6 | +4.5% | +7.3% | 0.0 |
+| Seal of Command | 1 | +15.7% | +21.0% ± 0.5 | +15.7% | +10.7% | 0.0 |
+| Sanctified Judgement | 3 | +13.7% | -0.7% ± 0.6 | +4.6% | +7.3% | 0.0 |
 | Conviction | 4 | +2.1% | +2.8% ± 0.4 | +0.5% | +2.7% | 0.0 |
-| Sacred Arbiter | 1 | +1.7% | +2.1% ± 0.4 | +1.7% | +2.4% | 0.0 |
-| Deflection | 5 | +1.3% | +0.2% ± 0.4 | +0.3% | +0.6% | 0.0 |
-| Two-Handed Weapon Specialization | 1 | +1.2% | +1.8% ± 0.4 | +1.2% | +1.9% | 0.0 |
-| Improved Judgement | 2 | +0.2% | +3.3% ± 0.5 | +0.1% | +1.9% | 0.0 |
+| Sacred Arbiter | 1 | +1.8% | +2.3% ± 0.4 | +1.8% | +2.4% | 0.0 |
+| Two-Handed Weapon Specialization | 1 | +1.5% | +2.0% ± 0.4 | +1.5% | +1.9% | 0.0 |
+| Deflection | 5 | +1.3% | +0.5% ± 0.4 | +0.3% | +0.6% | 0.0 |
+| Improved Judgement | 2 | +0.7% | +4.0% ± 0.5 | +0.4% | +1.9% | 0.0 |
 | Holy Conduit | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +1.0% | 0.0 |
 | Pursuit of Justice | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +3.2% | 0.0 |
 
@@ -90,22 +90,22 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Sanctified Judgement | 3 | +8.8% | +1.2% ± 0.6 | +2.9% | +5.7% | 0.0 |
-| Two-Handed Weapon Specialization | 3 | +5.3% | +7.2% ± 0.4 | +1.8% | +5.8% | 0.0 |
-| Improved Seals | 3 | +4.7% | +6.4% ± 0.4 | +1.6% | +4.3% | 0.0 |
-| Conviction | 5 | +4.2% | +5.7% ± 0.4 | +0.8% | +3.0% | 0.0 |
-| Holy Conduit | 2 | +4.2% | +1.0% ± 0.4 | +2.1% | +0.9% | 0.0 |
-| Champion of the Light | 3 | +3.1% | +4.0% ± 0.4 | +1.0% | +2.8% | 0.0 |
-| Instrument of Law | 2 | +2.9% | +4.5% ± 0.4 | +1.4% | +3.0% | 0.0 |
-| Vengeance | 3 | +2.4% | +3.1% ± 0.4 | +0.8% | +1.4% | 0.0 |
-| Improved Judgement | 2 | +2.4% | +4.5% ± 0.5 | +1.2% | +1.8% | 0.0 |
-| Sacred Arbiter | 1 | +2.3% | +2.8% ± 0.4 | +2.3% | +2.2% | 0.0 |
-| Divine Strength | 5 | +1.8% | +2.7% ± 0.4 | +0.4% | +1.2% | 0.0 |
-| Seal of Command | 1 | +1.5% | +2.6% ± 0.5 | +1.5% | +9.3% | 0.0 |
-| Reverence | 3 | +1.2% | +0.1% ± 0.4 | +0.4% | +0.7% | 0.0 |
-| Vindication | 3 | +1.2% | +1.6% ± 0.6 | +0.4% | +1.1% | 0.0 |
-| Deflection | 5 | +0.3% | -0.5% ± 0.4 | +0.1% | +0.6% | 0.0 |
-| Divine Intellect | 2 | +0.3% | +0.3% ± 0.3 | +0.1% | +0.2% | 0.0 |
+| Sanctified Judgement | 3 | +8.6% | +0.7% ± 0.6 | +2.9% | +5.7% | 0.0 |
+| Two-Handed Weapon Specialization | 3 | +4.9% | +6.4% ± 0.4 | +1.6% | +5.8% | 0.0 |
+| Improved Seals | 3 | +4.7% | +6.0% ± 0.4 | +1.6% | +4.3% | 0.0 |
+| Conviction | 5 | +4.3% | +5.4% ± 0.4 | +0.9% | +3.0% | 0.0 |
+| Holy Conduit | 2 | +3.8% | +0.1% ± 0.4 | +1.9% | +0.9% | 0.0 |
+| Seal of Command | 1 | +3.4% | +5.5% ± 0.5 | +3.4% | +9.3% | 0.0 |
+| Improved Judgement | 2 | +2.7% | +4.5% ± 0.5 | +1.4% | +1.8% | 0.0 |
+| Instrument of Law | 2 | +2.6% | +3.3% ± 0.4 | +1.3% | +3.0% | 0.0 |
+| Sacred Arbiter | 1 | +2.5% | +3.2% ± 0.4 | +2.5% | +2.2% | 0.0 |
+| Vengeance | 3 | +2.2% | +2.6% ± 0.4 | +0.7% | +1.4% | 0.0 |
+| Champion of the Light | 3 | +1.9% | +2.0% ± 0.4 | +0.6% | +2.8% | 0.0 |
+| Divine Strength | 5 | +1.7% | +2.0% ± 0.4 | +0.3% | +1.2% | 0.0 |
+| Reverence | 3 | +1.6% | -0.3% ± 0.4 | +0.5% | +0.7% | 0.0 |
+| Vindication | 3 | +1.5% | +1.5% ± 0.6 | +0.5% | +1.1% | 0.0 |
+| Deflection | 5 | +0.7% | -0.3% ± 0.4 | +0.1% | +0.6% | 0.0 |
+| Divine Intellect | 2 | +0.0% | -0.4% ± 0.3 | +0.0% | +0.2% | 0.0 |
 | Purifying Power | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.3% | 0.0 |
 | Pursuit of Justice | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +3.8% | 0.0 |
 | Repentance | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.5% | 0.0 |
@@ -113,24 +113,24 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 ## Assumptions (edit `tables.py` to change them)
 
 - Mob health Median health of a normal outdoor mob at the level, from the Classic 1.12 creature database (cmangos classic-db z2815, 2,262
-    templates weighted by spawn count: 187 at 10, 466 at 20, 1,002 at 30, 1,844 at 40, 2,672 at 50, 3,878 at 60; `mob_stats.json`).
-    Unverified for WoW: Forever (creature stats are server side; the Wowhead Forever tooltips carry level and type only).
+templates weighted by spawn count: 187 at 10, 466 at 20, 1,002 at 30, 1,844 at 40, 2,672 at 50, 3,878 at 60; `mob_stats.json`).
+Unverified for WoW: Forever (creature stats are server side; the Wowhead Forever tooltips carry level and type only).
 - Mob melee Median melee swing of a normal mob before armor, from the Classic 1.12 creature database (13 at 10, 32 at 20, 48 at 30, 68 at 40,
-    95 at 50, 117 at 60 per 2.0 s swing; the earlier rule of thumb was 2-2.5x higher). Unverified for WoW: Forever.
+95 at 50, 117 at 60 per 2.0 s swing; the earlier rule of thumb was 2-2.5x higher). Unverified for WoW: Forever.
 - Caster mobs: the creature database share by level (Share of normal outdoor mob spawns whose unit class is mage or paladin, by level, from the Classic 1.12 creature database
-    (5% at 1-5, 14% at 10, 12-23% from 15 to 55, 9% at 60; `mob_stats.json`).); a caster stands at up to 30 yd and casts a bolt every 3.5 s for 1.6x its melee swing (spell damage, no armor) until interrupted or stunned, then runs in and melees until the lockout ends; Median health of a mage-class mob (Classic 1.12 creature database: 75-90% of the all-mob median).
+(5% at 1-5, 14% at 10, 12-23% from 15 to 55, 9% at 60; `mob_stats.json`).); a caster stands at up to 30 yd and casts a bolt every 3.5 s for 1.6x its melee swing (spell damage, no armor) until interrupted or stunned, then runs in and melees until the lockout ends; Median health of a mage-class mob (Classic 1.12 creature database: 75-90% of the all-mob median).
 - Runners: 0% of pulls flee at 20% health for 5 s (roots and stuns hold them; `RUNNER_SHARE`, 0 = not simulated, see sensitivity.md).
 - Spell miss: Classic spell miss vs a mob `level_diff` levels above the caster: 4% at +0, 5% at +1, 6% at +2, 17% at +3. Partial resists cost 2.5% on average.
-- Spell crit: 0.91% base plus Intellect / (Intellect per 1% spell crit: 59.5 at 60 for mages (Forever client: 0.0168% per Intellect at max level), scaling with level (~30 at 30).)
+- Spell crit: 0.91% base plus Intellect / (Intellect per 1% spell crit for mages: the client's PlayerExpectedStat by level (59.5 at 60; 2026-10-09), else 59.5 x L / 60.)
 - Pushback: 0.5s for the first melee hit taken during a cast, 0.5s per further hit; a direct hit breaks a freeze with 20% chance.
 - Gear: Gear stats by level from the Classic 1.12 item database (`gear_stats.json`, built by gear_stats.py): every slot holds a typical
-    good pick among the fixed-stat green items (GEAR_TIER "greens", mostly quest rewards) or the blue items ("blues") the class can wear,
-    with required level 2-7 levels below the character (a mage at 40: Int 87, Spirit 66, Stamina 14; a warrior at 40: Str 86, Sta 79,
-    armor 2,369 in plate). Spell power and healing come from the items' on-equip spells (spell_template auras 13 / 135; a
-    school-specific bonus counts half). Classic items: unverified for WoW: Forever. GEAR_STAT_MULT scales the stats (sensitivity). Wand: Wand dps by level from the Classic 1.12 item database (median green wand with required level 2-7 below the character:
-    11 at 10, 17 at 20, 26 at 30, 33 at 40, 41 at 50, 55 at 60; blues 25 / 33 / 38 / 51 / 63 from 20).
+good pick among the fixed-stat green items (GEAR_TIER "greens", mostly quest rewards) or the blue items ("blues") the class can wear,
+with required level 2-7 levels below the character (a mage at 40: Int 87, Spirit 66, Stamina 14; a warrior at 40: Str 86, Sta 79,
+armor 2,369 in plate). Spell power and healing come from the items' on-equip spells (spell_template auras 13 / 135; a
+school-specific bonus counts half). Classic items: unverified for WoW: Forever. GEAR_STAT_MULT scales the stats (sensitivity). Wand: Wand dps by level from the Classic 1.12 item database (median green wand with required level 2-7 below the character:
+11 at 10, 17 at 20, 26 at 30, 33 at 40, 41 at 50, 55 at 60; blues 25 / 33 / 38 / 51 / 63 from 20).
 - Regen: Vanilla mage/priest mana regen per 2-second tick while not casting: 13 + Spirit / 4. Drinking: Conjured water, Forever beta tooltips (Wowhead Forever items 5350/2288/2136/3772/8077/8078/8079, read 2026-09-26) at the
-    Conjure Water rank levels 4/10/20/30/40/50/60: 145/18s, 420/21s, 803/24s, 1293/27s, 1915/30s, 2821/30s, 4038/30s mana.
+Conjure Water rank levels 4/10/20/30/40/50/60: 145/18s, 420/21s, 803/24s, 1293/27s, 1915/30s, 2821/30s, 4038/30s mana.
 - Between fights: loot 2s, travel 6s, drink below 35% mana, eat below 65% health, a death costs 90s.
 - Not modelled yet: runners, adds, Exorcism / Holy Wrath (Undead and Demons), Repentance, Seal of Wisdom / Seal of Light twisting, Blessing of Kings, shields, gear upgrades within a level bracket.
 

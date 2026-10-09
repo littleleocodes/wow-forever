@@ -10,10 +10,10 @@ Single-target leveling fights against normal mobs of your level with a slow two-
 
 | Level | Talents | Fight mean | median | p90 | Downtime/kill | Deaths/100 kills | Time/kill | Kills/hour | Mana/kill | Pushbacks/kill |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 20 | 11 | 12.2s | 11.8s | 16.0s | 0.9s | 0.0 | 21.1s | 171 | 67 | 0.00 |
-| 30 | 21 | 17.9s | 17.5s | 26.1s | 2.7s | 0.0 | 28.6s | 126 | 76 | 0.00 |
-| 40 | 31 | 15.1s | 14.2s | 21.3s | 11.1s | 0.0 | 34.2s | 105 | 569 | 0.00 |
-| 50 | 41 | 17.0s | 16.4s | 23.9s | 10.4s | 0.0 | 35.3s | 102 | 682 | 0.00 |
+| 20 | 11 | 12.4s | 12.1s | 16.2s | 0.9s | 0.0 | 21.3s | 169 | 67 | 0.00 |
+| 30 | 21 | 13.1s | 12.4s | 18.6s | 9.5s | 0.0 | 30.6s | 118 | 388 | 0.00 |
+| 40 | 31 | 15.2s | 14.3s | 22.1s | 11.1s | 0.0 | 34.3s | 105 | 568 | 0.00 |
+| 50 | 41 | 17.1s | 16.4s | 24.3s | 10.4s | 0.0 | 35.5s | 101 | 685 | 0.00 |
 | 60 | 51 | 19.4s | 18.6s | 26.7s | 9.6s | 0.0 | 37.1s | 97 | 903 | 0.00 |
 
 ## Measured damage shares (vs. the spec model's assumed shares)
@@ -21,33 +21,33 @@ Single-target leveling fights against normal mobs of your level with a slow two-
 | Level | Earth Shock | Flame Shock | Lightning Shield | Melee | Searing Totem | Stormstrike | Windfury |
 |---|---|---|---|---|---|---|---|
 | 20 | 7% | 10% | 10% | 60% | 13% | 0% | 0% |
-| 30 | 7% | 6% | 12% | 47% | 8% | 0% | 20% |
+| 30 | 7% | 5% | 10% | 33% | 9% | 16% | 20% |
 | 40 | 7% | 5% | 14% | 32% | 8% | 14% | 20% |
-| 50 | 8% | 4% | 14% | 31% | 8% | 13% | 21% |
+| 50 | 8% | 4% | 14% | 31% | 9% | 13% | 21% |
 | 60 | 9% | 7% | 15% | 28% | 9% | 12% | 19% |
 
-Spec model (`_reference/data/scorer/specs`) assumes: white 35%, windfury 23%, earth_shock 21%, lightning_bolt 7%, flame_shock 0%, lightning_shield 0%, rockbiter 0%, stormstrike 14%, searing_totem 0%, chain_lightning 0%.
+Spec model (`_reference/data/scorer/specs`) assumes: white 39%, windfury 0%, earth_shock 17%, lightning_bolt 15%, flame_shock 14%, lightning_shield 0%, rockbiter 0%, stormstrike 15%, searing_totem 0%, chain_lightning 0%.
 
 ## Realized crit rates and player at each level
 
-- **Level 20**: 1169 health, 1214 mana, 46 Int, 46 Spirit, 56 Str, 55 Agi, 296 AP, melee crit 15.0%, 0 spell power, base spell crit 9.5%, armor 490 (Rockbiter Weapon, Lightning Shield); mob 466 health, hits for 32, casters 19% of pulls (0.14 interrupts per kill). Crit rates: Lightning Shield 29%, Searing Totem 46%, Melee 15%, Flame Shock 30%, Earth Shock 9%. Health after a fight 84%, mana 55%.
-- **Level 30**: 1788 health, 1716 mana, 63 Int, 66 Spirit, 68 Str, 66 Agi, 239 AP, melee crit 13.4%, 9 spell power, base spell crit 9.3%, armor 550 (Windfury Weapon, Lightning Shield); mob 1002 health, hits for 48, casters 16% of pulls (0.13 interrupts per kill). Crit rates: Lightning Shield 27%, Searing Totem 67%, Melee 13%, Flame Shock 35%, Windfury 14%, Earth Shock 9%. Health after a fight 79%, mana 55%.
-- **Level 40**: 2347 health, 2087 mana, 71 Int, 88 Spirit, 133 Str, 62 Agi, 398 AP, melee crit 11.4%, 21 spell power, base spell crit 9.0%, armor 1382 (Windfury Weapon, Lightning Shield); mob 1844 health, hits for 68, casters 15% of pulls (0.11 interrupts per kill). Crit rates: Lightning Shield 27%, Searing Totem 54%, Melee 12%, Stormstrike 11%, Flame Shock 33%, Windfury 12%, Earth Shock 9%. Health after a fight 83%, mana 50%.
-- **Level 50**: 2761 health, 2490 mana, 81 Int, 96 Spirit, 169 Str, 73 Agi, 499 AP, melee crit 11.1%, 24 spell power, base spell crit 8.8%, armor 1442 (Windfury Weapon, Lightning Shield); mob 2672 health, hits for 95, casters 14% of pulls (0.11 interrupts per kill). Crit rates: Lightning Shield 25%, Searing Totem 61%, Melee 11%, Stormstrike 11%, Flame Shock 36%, Windfury 11%, Earth Shock 7%. Health after a fight 79%, mana 51%.
+- **Level 20**: 1169 health, 1214 mana, 46 Int, 46 Spirit, 56 Str, 55 Agi, 296 AP, melee crit 12.5%, 0 spell power, base spell crit 9.6%, armor 490 (Rockbiter Weapon, Lightning Shield); mob 466 health, hits for 32, casters 19% of pulls (0.14 interrupts per kill). Crit rates: Lightning Shield 30%, Searing Totem 46%, Melee 12%, Flame Shock 29%, Earth Shock 7%. Health after a fight 84%, mana 55%.
+- **Level 30**: 1788 health, 1716 mana, 63 Int, 66 Spirit, 68 Str, 66 Agi, 239 AP, melee crit 12.4%, 9 spell power, base spell crit 9.4%, armor 550 (Windfury Weapon, Lightning Shield); mob 1002 health, hits for 48, casters 16% of pulls (0.11 interrupts per kill). Crit rates: Lightning Shield 28%, Searing Totem 47%, Melee 12%, Stormstrike 12%, Flame Shock 29%, Earth Shock 10%, Windfury 13%. Health after a fight 83%, mana 53%.
+- **Level 40**: 2347 health, 2087 mana, 71 Int, 88 Spirit, 133 Str, 62 Agi, 398 AP, melee crit 11.1%, 21 spell power, base spell crit 9.1%, armor 1382 (Windfury Weapon, Lightning Shield); mob 1844 health, hits for 68, casters 15% of pulls (0.11 interrupts per kill). Crit rates: Lightning Shield 26%, Searing Totem 54%, Melee 12%, Stormstrike 11%, Flame Shock 32%, Windfury 12%, Earth Shock 9%. Health after a fight 83%, mana 50%.
+- **Level 50**: 2761 health, 2490 mana, 81 Int, 96 Spirit, 169 Str, 73 Agi, 499 AP, melee crit 11.1%, 24 spell power, base spell crit 8.9%, armor 1442 (Windfury Weapon, Lightning Shield); mob 2672 health, hits for 95, casters 14% of pulls (0.12 interrupts per kill). Crit rates: Lightning Shield 25%, Searing Totem 62%, Melee 11%, Stormstrike 10%, Flame Shock 35%, Windfury 11%, Earth Shock 8%. Health after a fight 79%, mana 51%.
 - **Level 60**: 3415 health, 3236 mana, 114 Int, 109 Spirit, 156 Str, 82 Agi, 525 AP, melee crit 10.8%, 57 spell power, base spell crit 9.1%, armor 1824 (Windfury Weapon, Lightning Shield); mob 3878 health, hits for 117, casters 9% of pulls (0.07 interrupts per kill). Crit rates: Lightning Shield 28%, Searing Totem 70%, Melee 11%, Stormstrike 11%, Flame Shock 39%, Windfury 11%, Earth Shock 10%. Health after a fight 77%, mana 50%.
 
 ## Other builds (same mobs, same seeds)
 
 | Level | Build | Time/kill | vs. main | Fight mean | Deaths/100 | Downtime/kill |
 |---|---|---|---|---|---|---|
-| 20 | opt-enhancement-dps-leveling-st | 21.1s | - | 12.2s | 0.0 | 0.9s |
-| 20 | leveling-enhancement | 21.0s | -0.4% | 12.1s | 0.0 | 0.9s |
-| 30 | opt-enhancement-dps-leveling-st | 28.6s | - | 17.9s | 0.0 | 2.7s |
-| 30 | leveling-enhancement | 28.8s | +0.7% | 18.0s | 0.0 | 2.8s |
-| 40 | opt-enhancement-dps-leveling-st | 34.2s | - | 15.1s | 0.0 | 11.1s |
-| 40 | leveling-enhancement | 33.2s | -3.0% | 14.9s | 0.0 | 10.2s |
-| 50 | opt-enhancement-dps-leveling-st | 35.3s | - | 17.0s | 0.0 | 10.4s |
-| 50 | leveling-enhancement | 36.0s | +1.9% | 17.7s | 0.0 | 10.3s |
+| 20 | opt-enhancement-dps-leveling-st | 21.3s | - | 12.4s | 0.0 | 0.9s |
+| 20 | leveling-enhancement | 21.3s | -0.0% | 12.4s | 0.0 | 0.9s |
+| 30 | opt-enhancement-dps-leveling-st | 30.6s | - | 13.1s | 0.0 | 9.5s |
+| 30 | leveling-enhancement | 30.9s | +0.7% | 13.2s | 0.0 | 9.6s |
+| 40 | opt-enhancement-dps-leveling-st | 34.3s | - | 15.2s | 0.0 | 11.1s |
+| 40 | leveling-enhancement | 33.2s | -3.1% | 15.0s | 0.0 | 10.2s |
+| 50 | opt-enhancement-dps-leveling-st | 35.5s | - | 17.1s | 0.0 | 10.4s |
+| 50 | leveling-enhancement | 36.2s | +1.8% | 17.8s | 0.0 | 10.4s |
 | 60 | opt-enhancement-dps-leveling-st | 37.1s | - | 19.4s | 0.0 | 9.6s |
 | 60 | leveling-enhancement | 37.0s | -0.4% | 19.8s | 0.0 | 9.1s |
 
@@ -57,14 +57,14 @@ Spec model (`_reference/data/scorer/specs`) assumes: white 35%, windfury 23%, ea
 
 | Level | Gear | Time/kill | vs. greens | Fight mean | Deaths/100 | Downtime/kill | Kills/hour |
 |---|---|---|---|---|---|---|---|
-| 20 | greens | 21.1s | - | 12.2s | 0.0 | 0.9s | 171 |
-| 20 | blues | 19.5s | -7.5% | 10.8s | 0.0 | 0.7s | 185 |
-| 30 | greens | 28.6s | - | 17.9s | 0.0 | 2.7s | 126 |
-| 30 | blues | 25.1s | -12.4% | 15.3s | 0.0 | 1.7s | 144 |
-| 40 | greens | 34.2s | - | 15.1s | 0.0 | 11.1s | 105 |
-| 40 | blues | 31.3s | -8.5% | 13.8s | 0.0 | 9.5s | 115 |
-| 50 | greens | 35.3s | - | 17.0s | 0.0 | 10.4s | 102 |
-| 50 | blues | 32.9s | -6.9% | 15.8s | 0.0 | 9.0s | 110 |
+| 20 | greens | 21.3s | - | 12.4s | 0.0 | 0.9s | 169 |
+| 20 | blues | 19.8s | -7.0% | 11.1s | 0.0 | 0.7s | 182 |
+| 30 | greens | 30.6s | - | 13.1s | 0.0 | 9.5s | 118 |
+| 30 | blues | 27.2s | -11.0% | 11.3s | 0.0 | 7.9s | 132 |
+| 40 | greens | 34.3s | - | 15.2s | 0.0 | 11.1s | 105 |
+| 40 | blues | 31.3s | -8.8% | 13.8s | 0.0 | 9.5s | 115 |
+| 50 | greens | 35.5s | - | 17.1s | 0.0 | 10.4s | 101 |
+| 50 | blues | 32.8s | -7.6% | 15.8s | 0.0 | 9.0s | 110 |
 | 60 | greens | 37.1s | - | 19.4s | 0.0 | 9.6s | 97 |
 | 60 | blues | 34.2s | -7.9% | 17.8s | 0.0 | 8.4s | 105 |
 
@@ -74,15 +74,15 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Shamanistic Focus | 1 | +13.0% | -3.3% ± 0.8 | +13.0% | +13.5% | 0.0 |
-| Mental Dexterity | 3 | +6.1% | +7.5% ± 0.8 | +2.0% | +5.0% | 0.0 |
-| Thundering Strikes | 5 | +4.1% | +5.0% ± 0.8 | +0.8% | +3.5% | 0.0 |
-| Flurry | 4 | +2.9% | +3.7% ± 0.8 | +0.7% | +2.7% | 0.0 |
-| Improved Lightning Shield | 3 | +1.2% | +0.6% ± 0.8 | +0.4% | +1.3% | 0.0 |
-| Mental Quickness | 1 | +0.8% | +1.0% ± 0.8 | +0.8% | +1.1% | 0.0 |
-| Guardian Totems | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.5% | 0.0 |
-| Improved Ghost Wolf | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +4.6% | 0.0 |
-| Stormstrike | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +13.6% | 0.0 |
+| Shamanistic Focus | 1 | +9.9% | +0.1% ± 0.7 | +9.9% | +15.4% | 0.0 |
+| Mental Dexterity | 3 | +6.2% | +8.3% ± 0.7 | +2.1% | +3.7% | 0.0 |
+| Thundering Strikes | 5 | +4.3% | +5.6% ± 0.7 | +0.9% | +2.6% | 0.0 |
+| Flurry | 4 | +2.0% | +2.4% ± 0.7 | +0.5% | +2.0% | 0.0 |
+| Mental Quickness | 1 | +1.1% | +1.3% ± 0.6 | +1.1% | +0.8% | 0.0 |
+| Improved Lightning Shield | 3 | +1.0% | +1.4% ± 0.6 | +0.3% | +1.0% | 0.0 |
+| Guardian Totems | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.4% | 0.0 |
+| Improved Ghost Wolf | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +4.3% | 0.0 |
+| Stormstrike | 1 | -6.0% | +37.9% ± 1.1 | -6.0% | +10.1% | 0.0 |
 
 ## Talent values at level 60
 
@@ -90,24 +90,24 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Shamanistic Focus | 1 | +12.7% | +6.3% ± 0.8 | +12.7% | +11.4% | 0.0 |
-| Stormstrike | 1 | +8.6% | +29.7% ± 1.0 | +8.6% | +13.3% | 0.0 |
-| Mental Dexterity | 3 | +4.7% | +7.1% ± 0.8 | +1.6% | +5.1% | 0.0 |
-| Thundering Strikes | 5 | +4.2% | +6.2% ± 0.7 | +0.8% | +3.5% | 0.0 |
-| Tidal Focus | 5 | +4.1% | +5.9% ± 0.8 | +0.8% | +3.1% | 0.0 |
-| Flurry | 5 | +2.6% | +4.0% ± 0.7 | +0.5% | +3.4% | 0.0 |
-| Improved Lightning Shield | 3 | +2.2% | +3.6% ± 0.7 | +0.7% | +1.3% | 0.0 |
-| Rage of the Farseer | 1 | +1.9% | +3.2% ± 0.6 | +1.9% | +1.5% | 0.0 |
-| Mental Quickness | 2 | +1.7% | +2.6% ± 0.7 | +0.8% | +2.4% | 0.0 |
-| Call of Flame | 3 | +1.7% | +2.5% ± 0.7 | +0.6% | +1.8% | 0.0 |
-| Spirit Weapons | 1 | +1.2% | +1.2% ± 0.7 | +1.2% | +0.4% | 0.0 |
-| Anticipation | 3 | +1.1% | +0.6% ± 0.7 | +0.4% | +0.6% | 0.0 |
-| Totemic Focus | 5 | +0.7% | -0.3% ± 0.6 | +0.1% | +1.0% | 0.0 |
+| Shamanistic Focus | 1 | +12.7% | +6.3% ± 0.8 | +12.7% | +13.7% | 0.0 |
+| Stormstrike | 1 | +8.6% | +29.7% ± 1.0 | +8.6% | +9.8% | 0.0 |
+| Mental Dexterity | 3 | +4.7% | +7.1% ± 0.8 | +1.6% | +3.8% | 0.0 |
+| Thundering Strikes | 5 | +4.2% | +6.2% ± 0.7 | +0.8% | +2.6% | 0.0 |
+| Tidal Focus | 5 | +4.1% | +5.9% ± 0.8 | +0.8% | +2.4% | 0.0 |
+| Flurry | 5 | +2.6% | +4.0% ± 0.7 | +0.5% | +2.5% | 0.0 |
+| Improved Lightning Shield | 3 | +2.2% | +3.6% ± 0.7 | +0.7% | +1.0% | 0.0 |
+| Rage of the Farseer | 1 | +1.9% | +3.2% ± 0.6 | +1.9% | +1.1% | 0.0 |
+| Mental Quickness | 2 | +1.7% | +2.6% ± 0.7 | +0.8% | +1.7% | 0.0 |
+| Call of Flame | 3 | +1.7% | +2.5% ± 0.7 | +0.6% | +1.3% | 0.0 |
+| Spirit Weapons | 1 | +1.2% | +1.2% ± 0.7 | +1.2% | +0.5% | 0.0 |
+| Anticipation | 3 | +1.1% | +0.6% ± 0.7 | +0.4% | +0.7% | 0.0 |
+| Totemic Focus | 5 | +0.7% | -0.3% ± 0.6 | +0.1% | +1.2% | 0.0 |
 | Ancestral Knowledge | 2 | +0.5% | +1.3% ± 0.6 | +0.3% | +0.4% | 0.0 |
-| Concussion | 5 | +0.4% | +0.9% ± 0.4 | +0.1% | +0.4% | 0.0 |
-| Reverberation | 2 | +0.2% | +0.4% ± 0.6 | +0.1% | +0.5% | 0.0 |
-| Guardian Totems | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +1.0% | 0.0 |
-| Improved Ghost Wolf | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +5.1% | 0.0 |
+| Concussion | 5 | +0.4% | +0.9% ± 0.4 | +0.1% | +0.3% | 0.0 |
+| Reverberation | 2 | +0.2% | +0.4% ± 0.6 | +0.1% | +0.4% | 0.0 |
+| Guardian Totems | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.9% | 0.0 |
+| Improved Ghost Wolf | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +4.7% | 0.0 |
 
 ## Assumptions (edit `tables.py` to change them)
 
@@ -120,7 +120,7 @@ Unverified for WoW: Forever (creature stats are server side; the Wowhead Forever
 (5% at 1-5, 14% at 10, 12-23% from 15 to 55, 9% at 60; `mob_stats.json`).); a caster stands at up to 30 yd and casts a bolt every 3.5 s for 1.6x its melee swing (spell damage, no armor) until interrupted or stunned, then runs in and melees until the lockout ends; Median health of a mage-class mob (Classic 1.12 creature database: 75-90% of the all-mob median).
 - Runners: 0% of pulls flee at 20% health for 5 s (roots and stuns hold them; `RUNNER_SHARE`, 0 = not simulated, see sensitivity.md).
 - Spell miss: Classic spell miss vs a mob `level_diff` levels above the caster: 4% at +0, 5% at +1, 6% at +2, 17% at +3. Partial resists cost 2.5% on average.
-- Spell crit: 0.91% base plus Intellect / (Intellect per 1% spell crit: 59.5 at 60 for mages (Forever client: 0.0168% per Intellect at max level), scaling with level (~30 at 30).)
+- Spell crit: 0.91% base plus Intellect / (Intellect per 1% spell crit for mages: the client's PlayerExpectedStat by level (59.5 at 60; 2026-10-09), else 59.5 x L / 60.)
 - Pushback: 0.5s for the first melee hit taken during a cast, 0.5s per further hit; a direct hit breaks a freeze with 20% chance.
 - Gear: Gear stats by level from the Classic 1.12 item database (`gear_stats.json`, built by gear_stats.py): every slot holds a typical
 good pick among the fixed-stat green items (GEAR_TIER "greens", mostly quest rewards) or the blue items ("blues") the class can wear,

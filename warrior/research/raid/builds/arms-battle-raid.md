@@ -29,8 +29,8 @@ Deep Arms played in Battle Stance (2026-09-29): Rend kept up so Bloodthrill open
 | **Impale** | 2/2 | changed | Increases the critical strike damage bonus of your abilities by 20%. |
 | **Bloodthrill** | 5/5 | **NEW** | Your Main Hand melee attacks against enemies afflicted by your Rend have a 20% chance to allow the use of your Overpower ability on the target. Lasts 6 sec. |
 | **Weaponmaster** | 5/5 | **NEW** | Gives your melee weapon attacks a benefit depending on the weapon.   Axe/Polearm: Increases your  critical strike chance by 5%.   Mace/Staff: Your attacks ignore  15% of your target's armor.   Sword: Your successful melee   attacks have a 5% chance to   trigger an extra attack on the   target. |
-| **Improved Slam** | 2/2 | changed | Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3 sec. |
-| **Spearing Strike** | 1/1 | **NEW** | A brutal attack that deals 40% weapon damage, plus an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. |
+| **Improved Slam** | 2/2 | changed | Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3.0 sec. |
+| **Spearing Strike** | 1/1 | **NEW** | A brutal attack that deals 40% weapon damage. Deals an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted. |
 
 ### Fury (17)
 
@@ -67,13 +67,13 @@ Deep Arms played in Battle Stance (2026-09-29): Rend kept up so Bloodthrill open
 
 ## Rank among our builds and the community simulator's
 
-**2 of 3** for `arms-battle-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 3** for `arms-battle-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`arms-community-parse`](arms-community-parse.md) | ours: parse build | 37/14/0 | 434 | +0.0% | 890 | +0.0% | 0 s |
-| 2 | **[`arms-battle-raid`](arms-battle-raid.md)** | ours: hand draft | 34/17/0 | 433 | -0.2% | 808 | -9.2% | 0 s |
-| 3 | *Arms 39/12/0* | community simulator | - | 428 | -1.3% | 884 | -0.7% | 0 s |
+| 1 | [`arms-community-parse`](arms-community-parse.md) | ours: parse build | 37/14/0 | 491 | +0.0% | 984 | +0.0% | 0 s |
+| 2 | **[`arms-battle-raid`](arms-battle-raid.md)** | ours: hand draft | 34/17/0 | 489 | -0.5% | 883 | -10.3% | 0 s |
+| 3 | *Arms 39/12/0* | community simulator | - | 488 | -0.8% | 982 | -0.2% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -90,7 +90,7 @@ Deep Arms played in Battle Stance (2026-09-29): Rend kept up so Bloodthrill open
   10. insert before the filler: if time until Bloodthirst is ready > 1.5s: cast Whirlwind (+0.5%, pass 2)
   11. move to the top: if not Battle Stance is up: cast Battle Stance (+0.2%, pass 2)
   12. threshold 24.5s -> 36.75s: if time left in the fight ≤ 24.5s: use every other cooldown when ready (+0.3%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 2 passes, the last 2026-10-02, 10 changes to the base rotation; third-seed check: ml: Arms 626 -> 755 DPS (+20.6%), sim preset: Arms 39/12/0 722 -> 777 DPS (+7.7%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 3 passes, the last 2026-10-09, 12 changes to the base rotation; third-seed check: arms-community-parse 867 -> 985 DPS (+13.5%), sim preset: Arms 39/12/0 866 -> 983 DPS (+13.5%), arms-battle-raid 692 -> 882 DPS (+27.4%)):
   1. move to the top: cast Overpower (+2.0%, pass 1)
   2. drop: if (time left in the fight ≤ 30s or time left in the fight ≥ 140s): use every other cooldown when ready (+1.2%, pass 1)
   3. drop 'time until Whirlwind is ready > 1.5s' from the condition: if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring (+0.4%, pass 1)
@@ -101,14 +101,16 @@ Deep Arms played in Battle Stance (2026-09-29): Rend kept up so Bloodthrill open
   8. move down below 'if not Rend is on the target: cast Rend': cast Mortal Strike (+0.3%, pass 1)
   9. move down below 'if not Rend is on the target: cast Rend': if execute phase (E20): cast Execute (+0.6%, pass 2)
   10. drop the condition: if time until Bloodthirst is ready > 1.5s and rage > 40: cast Hamstring (+0.4%, pass 2)
+  11. move down below 'cast Mortal Strike': if execute phase (E20): cast Execute (+0.7%, pass 3)
+  12. insert before the filler: cast Mighty Rage Potion (+0.3%, pass 3)
 
 Before the pull: at -1s: cast Battle Stance.
 
 | # | Priority (the first line whose condition holds is cast) | [`arms-battle-raid`](arms-battle-raid.md) casts/min |
 |---|---|---|
-| 1 | if not Battle Stance is up: cast Battle Stance | 25.6 |
-| 2 | cast Overpower | 6.4 |
-| 3 | if execute phase (E20): cast Execute | 3.5 |
+| 1 | if not Battle Stance is up: cast Battle Stance | 25.5 |
+| 2 | cast Overpower | 6.6 |
+| 3 | if execute phase (E20): cast Execute | 3.8 |
 | 4 | cast Goblin Sapper Charge | as ready |
 | 5 | cast Dense Dynamite | as ready |
 | 6 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
@@ -117,15 +119,15 @@ Before the pull: at -1s: cast Battle Stance.
 | 9 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 10 | if time left in the fight ≤ 36.75s: use every other cooldown when ready | as ready |
 | 11 | if rage < 90: cast Bloodrage | 1.0 |
-| 12 | if number of targets > 1: cast Whirlwind | 1.7 |
+| 12 | if number of targets > 1: cast Whirlwind | 1.8 |
 | 13 | if not Rend is on the target: cast Rend | 2.5 |
 | 14 | cast Slam | 2.8 |
 | 15 | if not Battle Shout is up: cast Battle Shout | 0.3 |
-| 16 | if stacks of Sunder Armor < 5: cast Sunder Armor | 8.4 |
-| 17 | if not Berserker Stance is up: cast Berserker Stance | 25.4 |
+| 16 | if stacks of Sunder Armor < 5: cast Sunder Armor | 8.5 |
+| 17 | if not Berserker Stance is up: cast Berserker Stance | 25.3 |
 | 18 | cast Spearing Strike | 1.6 |
-| 19 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 1.7 |
-| 20 | cast Sunder Armor | 8.4 |
+| 19 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 1.8 |
+| 20 | cast Sunder Armor | 8.5 |
 
 Lines of the simulator's rotation these builds never cast: cast Death Wish (needs the Death Wish talent); cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Cleave, cast Hamstring (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Bloodthirst (needs the Bloodthirst talent).
 
@@ -135,8 +137,8 @@ Damage by ability:
 |---|---|
 | Auto Attack | 38% |
 | Overpower | 23% |
-| Execute | 13% |
-| Deep Wound | 8% |
+| Execute | 14% |
+| Deep Wound | 7% |
 | Slam | 7% |
 | Rend | 5% |
 | Whirlwind | 4% |

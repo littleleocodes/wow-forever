@@ -23,10 +23,10 @@ The Smite (a Discipline/Holy hybrid) raid build the open talent search found on 
 | **Twin Disciplines** | 5/5 | **NEW** | Increases the damage and healing of your instant cast spells by 5%. |
 | **Holy Precision** | 2/3 | **NEW** | Improves your chance to hit with Holy spells by 12%. |
 | **Mental Agility** | 2/3 | changed | Reduces the mana cost of your Smite, Holy Fire, and instant cast spells by 7%. |
-| **Inner Focus** | 1/1 | unchanged | When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is a non-periodic spell and capable of a critical effect. |
+| **Inner Focus** | 1/1 | changed | When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is a non-periodic spell and capable of a critical effect. |
 | **Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
 | **Mental Strength** | 2/5 | changed | Increases your total Intellect by 6%. |
-| **Penance** | 1/1 | **NEW** | Launches a volley of holy light at the target, causing 81 Holy damage to an enemy, or 184 healing to an ally, instantly and every 1 sec for 2 sec. |
+| **Penance** | 1/1 | **NEW** | Launches a volley of holy light at the target, causing 44 Holy damage to an enemy, or 133 healing to an ally, instantly and every 1 sec for 2 sec. |
 
 ### Holy (23)
 
@@ -60,14 +60,14 @@ The Smite (a Discipline/Holy hybrid) raid build the open talent search found on 
 
 ## Rank among our builds and the community simulator's
 
-**1 of 4** for `smite-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 4** for `smite-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`smite-open-raid`](smite-open-raid.md)** | ours: hand draft | 21/23/7 | 419 | +0.0% | 571 | +0.0% | 0 s |
-| 2 | [`smite-discipline-raid`](smite-discipline-raid.md) | ours: hand draft | 31/17/3 | 414 | -1.2% | 562 | -1.6% | 4 s |
-| 3 | *Smite* | community simulator | - | 411 | -1.9% | 558 | -2.3% | 6 s |
-| 4 | *Smite 31/17/3* | community simulator | - | 411 | -1.9% | 558 | -2.3% | 6 s |
+| 1 | **[`smite-open-raid`](smite-open-raid.md)** | ours: hand draft | 21/23/7 | 306 | +0.0% | 583 | -0.2% | 0 s |
+| 2 | [`smite-discipline-raid`](smite-discipline-raid.md) | ours: hand draft | 31/17/3 | 303 | -0.9% | 584 | +0.0% | 4 s |
+| 3 | *Smite* | community simulator | - | 300 | -2.1% | 580 | -0.7% | 6 s |
+| 4 | *Smite 31/17/3* | community simulator | - | 300 | -2.1% | 580 | -0.7% | 6 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -88,7 +88,7 @@ The Smite (a Discipline/Holy hybrid) raid build the open talent search found on 
   14. rank 4 below 15% mana, above: if not Shadow Word: Pain is on the target and time left in the fight ≥ 5: cast Shadow Word: Pain (+0.2%, pass 6)
   15. insert in the middle: if execute phase (E20): cast Shadow Word: Death (+1.0%, pass 7)
   16. threshold 1.25s -> 1.875s: if time left on Holy Fire < 1.25s: cast Holy Fire (+0.6%, pass 7)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 7 passes, the last 2026-10-08, 18 changes to the base rotation; third-seed check: open winner 543 -> 571 DPS (+5.2%), smite-discipline-raid 532 -> 562 DPS (+5.6%), sim preset: Smite 530 -> 558 DPS (+5.2%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-09, 26 changes to the base rotation; third-seed check: smite-open-raid 562 -> 583 DPS (+3.7%), sim preset: Smite 559 -> 580 DPS (+3.9%), smite-discipline-raid 561 -> 584 DPS (+4.2%)):
   1. rank 4 below 50% mana, above: if mana % ≥ 20%: cast Smite (+8.7%, pass 1)
   2. insert at the top: if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain (+2.1%, pass 1)
   3. always rank 2 instead of rank 4: if mana % ≥ 20% and mana % < 50%: cast Smite (+1.2%, pass 1)
@@ -107,6 +107,14 @@ The Smite (a Discipline/Holy hybrid) raid build the open talent search found on 
   16. insert in the middle: if mana % ≥ 40%: cast Smite (+0.7%, pass 6)
   17. move down below 'if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain': strict sequence: cast Inner Focus; cast Devouring Plague (+0.2%, pass 6)
   18. insert before the filler: cast Dark Sacrifice (+0.3%, pass 7)
+  19. insert at the top: cast Penance (+3.1%, pass 8)
+  20. insert in the middle: cast Devouring Plague (+0.8%, pass 8)
+  21. insert in the middle: cast Power Infusion (+0.2%, pass 8)
+  22. threshold 40% -> 60%: if mana % ≥ 40%: cast Smite (+0.2%, pass 8)
+  23. threshold 60% -> 80%: if mana % ≥ 60%: cast Smite (+0.2%, pass 8)
+  24. drop: cast Smite (+3.4%, pass 9)
+  25. drop the condition: if mana % ≥ 80%: cast Smite (+4.9%, pass 9)
+  26. drop: cast Devouring Plague (+2.0%, pass 9)
 
 Before the pull: at -3s: cast Holy Fire.
 
@@ -129,12 +137,12 @@ Damage by ability:
 
 | Ability | [`smite-open-raid`](smite-open-raid.md) |
 |---|---|
-| Smite | 34% |
-| Shadow Word: Pain | 22% |
-| Penance | 21% |
-| Holy Fire | 19% |
-| Shadow Word: Death | 3% |
-| Devouring Plague | 2% |
+| Shadow Word: Pain | 30% |
+| Penance | 28% |
+| Holy Fire | 26% |
+| Smite | 10% |
+| Shadow Word: Death | 4% |
+| Devouring Plague | 3% |
 
 ## Notes
 

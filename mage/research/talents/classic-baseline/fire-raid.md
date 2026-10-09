@@ -92,13 +92,13 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Fire | Ignite | 5 | unchanged | tier 2, max 5 |
 | Fire | Flame Throwing | 2 | unchanged | tier 2, max 2 |
 | Fire | Incinerate | 1 | **REMOVED** | removed from Classic |
-| Fire | Pyroblast | 1 | changed | tier 3, max 1 — tooltip changed; tooltip changed in build 1.60.1.70170 (ranks 1) |
+| Fire | Pyroblast | 1 | changed | tier 3, max 1 — tooltip changed; tooltip changed in build 1.60.1.70291 (ranks 1) |
 | Fire | Burning Soul | 2 | changed | tier 3, max 3 — max rank 2 → 3; tooltip changed; was Fire row 3, col 4 |
 | Fire | Improved Scorch | 3 | changed | tier 4, max 3 — tooltip changed |
 | Fire | Master of Elements | 3 | changed | tier 4, max 3 — tooltip changed |
 | Fire | Critical Mass | 3 | unchanged | tier 5, max 3 |
 | Fire | Fire Power | 5 | unchanged | tier 6, max 5 |
-| Fire | Combustion | 1 | changed | tier 7, max 1 — tooltip changed; tooltip changed in build 1.60.1.70170 (ranks 1) |
+| Fire | Combustion | 1 | changed | tier 7, max 1 — tooltip changed |
 | Frost | Elemental Precision | 3 | changed | tier 1, max 5 — max rank 3 → 5; tooltip changed |
 
 **6 point(s) of this build no longer exist in Forever** and must be re-spent; see `../forever/README.md` for how they were re-spent.

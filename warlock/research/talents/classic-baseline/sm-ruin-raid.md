@@ -95,7 +95,7 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Destruction | Cataclysm | 2 | changed | tier 2, max 3 — max rank 5 → 3; tooltip changed; was Destruction row 1, col 3 |
 | Destruction | Bane | 5 | changed | tier 1, max 5 — tooltip changed; was Destruction row 2, col 2 |
 | Destruction | Devastation | 5 | **REMOVED** | removed from Classic |
-| Destruction | Shadowburn | 1 | changed | tier 3, max 1 — tooltip changed; was Destruction row 3, col 4; tooltip changed in build 1.60.1.70170 (ranks 1) |
+| Destruction | Shadowburn | 1 | changed | tier 3, max 1 — tooltip changed; was Destruction row 3, col 4; tooltip changed in build 1.60.1.70291 (ranks 1) |
 | Destruction | Destructive Reach | 2 | changed | tier 1, max 2 — tooltip changed; was Destruction row 4, col 2 |
 | Destruction | Ruin | 1 | changed | tier 3, max 5 — max rank 1 → 5; tooltip changed; was Destruction row 5, col 3 |
 

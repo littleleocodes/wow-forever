@@ -35,7 +35,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 | **Sharpened Claws** | 2/2 | changed | Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by 6%. |
 | **Predatory Strikes** | 3/3 | changed | Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 150% of your level. |
 | **Leader of the Pack** | 1/1 | changed | While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the critical strike chance of all party members within 45 yards by 3%, exclusive with Moonkin Aura. |
-| **Predatory Instincts** | 2/2 | **NEW** | Increases the critical strike damage bonus of your melee abilities by 20%. |
+| **Natural Instinct** | 2/2 | **NEW** | Increases the critical strike damage bonus of your melee abilities by 20% and increases your spell healing by 25% of your Intellect. |
 | **Rend and Tear** | 5/5 | **NEW** | Increases damage done by your melee abilities on Bleeding targets by 10%. |
 | **Berserk** | 1/1 | **NEW** | Causes your Primal Bite ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generating abilities by 100%. Clears and grants immunity to Fear effects for the duration. Lasts 15 sec. |
 
@@ -54,7 +54,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 3. **Sharpened Claws** — Removing it costs 2.3 points of score in this model.
 4. **Predatory Strikes** — Removing it costs 2.2 points of score in this model.
 5. **Nature's Reach** — Removing it costs 2.0 points of score in this model.
-6. **Predatory Instincts** — Removing it costs 2.0 points of score in this model.
+6. **Natural Instinct** — Removing it costs 2.0 points of score in this model.
 7. **Savage Fury** — Removing it costs 1.9 points of score in this model.
 8. **Berserk** — Removing it costs 1.9 points of score in this model.
 

@@ -24,7 +24,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-level
 | **Focused Fire** | 2/2 | **NEW** | Increases all damage you and your pet deal by 2% while your pet is active. |
 | **Pathfinding** | 2/2 | moved | Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 6%. |
 | **Unleashed Fury** | 5/5 | changed | Increases the damage done by your pets and hawks by 15%. |
-| **Summon Hawk** | 1/1 | **NEW** | Command a hawk to dive-bomb your targeted enemy, dealing 32 Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot. |
+| **Summon Hawk** | 1/1 | **NEW** | Command a hawk to dive-bomb your targeted enemy, dealing 32 plus 5% of your Ranged Attack Power Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot. |
 | **Ferocity** | 3/5 | changed | Increases the critical strike chance of your pets and hawks by 6%. |
 
 ### Marksmanship (32)
@@ -92,19 +92,18 @@ What this build casts per kill ([report](../fightlab/bm-leveling.md), all leveli
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Auto Shot | 3.5 | 4.7 | 5.9 | 6.7 | 5.8 | 28% |
-| Claw | 3.3 | 4.0 | 4.9 | 5.2 | 4.9 | 6% |
-| Growl | 1.7 | 2.4 | 3.2 | 3.5 | 3.1 | 0% |
-| Summon Hawk | 0.0 | 0.0 | 0.0 | 0.0 | 1.8 | 3% |
-| Aimed Shot | 1.0 | 1.1 | 1.6 | 1.7 | 1.1 | 10% |
-| Serpent Sting | 1.0 | 1.1 | 1.1 | 1.0 | 1.0 | 16% |
+| Auto Shot | 3.1 | 4.3 | 5.5 | 6.5 | 7.3 | 36% |
+| Claw | 3.1 | 3.8 | 4.6 | 4.8 | 5.3 | 7% |
+| Growl | 1.5 | 2.2 | 3.0 | 3.2 | 3.7 | 0% |
+| Summon Hawk | 0.0 | 0.0 | 0.0 | 0.0 | 1.9 | 0% |
+| Aimed Shot | 1.0 | 1.0 | 1.4 | 1.6 | 1.4 | 12% |
+| Serpent Sting | 1.0 | 1.1 | 1.1 | 1.0 | 1.0 | 17% |
 | Bite | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2% |
 | Hunter's Mark | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
-| Melee | 0.0 | 0.2 | 0.3 | 0.6 | 0.6 | 2% |
-| Raptor Strike | 0.0 | 0.1 | 0.2 | 0.4 | 0.2 | 1% |
-| Wing Clip | 0.0 | 0.1 | 0.2 | 0.3 | 0.2 | 0% |
-| Mongoose Bite | 0.0 | 0.0 | 0.1 | 0.1 | 0.1 | 1% |
-| Mend Pet | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Melee | 0.0 | 0.1 | 0.1 | 0.2 | 0.0 | 0% |
+| Raptor Strike | 0.0 | 0.0 | 0.1 | 0.1 | 0.0 | 0% |
+| Wing Clip | 0.0 | 0.0 | 0.1 | 0.2 | 0.0 | 0% |
+| Mongoose Bite | 0.0 | 0.0 | 0.0 | 0.1 | 0.0 | 0% |
 
 ## Notes
 

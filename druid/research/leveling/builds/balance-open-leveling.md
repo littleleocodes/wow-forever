@@ -43,7 +43,7 @@ The Balance leveling build the open leveling search found on 2026-10-08: every l
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Nature's Focus** | 3/5 | changed | Gives you a 42% chance to avoid interruption caused by damage while casting Arcane and Nature spells. |
-| **Furor** | 2/5 | changed | Gives you a 40% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 40% of the Energy you had when you were last in Cat Form, plus 4 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 40 Energy. |
+| **Furor** | 2/5 | changed | Gives you a 40% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 40% of the Energy you had when last in Cat Form, plus 4 Energy per sec spent outside Cat Form, up to 40 Energy.  Bear Form and Dire Bear Form forfeit this Energy and halt its restoration while active. |
 | **Naturalist** | 5/5 | **NEW** | Reduces the cast time of your Healing Touch spell by 0.5 sec and increases all damage you deal by 5%. |
 | **Reflection** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
 

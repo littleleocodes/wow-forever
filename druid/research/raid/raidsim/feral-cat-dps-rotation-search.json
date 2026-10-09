@@ -123,22 +123,30 @@
  "raid": {
   "class": "druid",
   "spec": "feral-cat-dps",
-  "date": "2026-10-02",
-  "commit": "40be98e",
+  "date": "2026-10-09",
+  "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/druid/feralcat/apls/default.apl.json",
   "start": "ui\\specs\\druid\\feralcat\\apls\\default.apl.json",
   "builds": [
    {
-    "label": "ml: Feral Combat",
-    "talents": "050022-2500032123032213051-052",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-bis.gear.json"
+    "label": "opt-feral-cat-dps-raid-dps",
+    "talents": "050022-25000332020032012051-055001"
    },
    {
     "label": "sim preset: Feral Cat 9/35/7",
-    "talents": "050022-5500002123032213051-052"
+    "talents": "050022-55000032121032212051-052"
+   },
+   {
+    "label": "feral-cat-dps",
+    "talents": "050022-55000332120032012021-055",
+    "protect_only": true
    }
+  ],
+  "tuned_on": [
+   "opt-feral-cat-dps-raid-dps",
+   "sim preset: Feral Cat 9/35/7"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -182,23 +190,40 @@
     "gain_seed2": 0.001823315024780836,
     "candidates": 480,
     "pass": 4
+   },
+   {
+    "round": 6,
+    "change": "insert in the middle: if Shifting Power is known and energy \u2264 60: cast Shifting Power",
+    "gain_seed1": 0.09866291258255577,
+    "gain_seed2": 0.09880388665303785,
+    "candidates": 460,
+    "pass": 5
    }
   ],
   "final": {
    "raid": {
-    "ml: Feral Combat": {
-     "before": 557.9076573616202,
-     "after": 575.8153192411974,
-     "base": 557.9076573616202,
+    "opt-feral-cat-dps-raid-dps": {
+     "before": 582.4813573834896,
+     "after": 593.2943848688002,
+     "base": 582.4813573834896,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Feral Cat 9/35/7": {
-     "before": 557.9076573616202,
-     "after": 575.8153192411974,
-     "base": 557.9076573616202,
+     "before": 680.2510229797779,
+     "after": 691.0445080795116,
+     "base": 680.2510229797779,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0.00120994999865
+    },
+    "feral-cat-dps": {
+     "before": 570.3294840831298,
+     "after": 578.8360928914879,
+     "base": 570.3294840831298,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -207,6 +232,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 4
+  "passes": 5
  }
 }

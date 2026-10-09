@@ -50,14 +50,13 @@ The Frostfire build the machine-learning talent search found in a full raid (eve
 
 ## Rank among our builds and the community simulator's
 
-**4 of 4** for `frostfire-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 3** for `frostfire-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | `frostfire-open-raid` | ours | 3/32/16 | 551 | +0.0% | 691 | -2.3% | 1 s |
-| 2 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 539 | -2.1% | 707 | +0.0% | 0 s |
-| 3 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 4/31/16 | 516 | -6.3% | 648 | -8.4% | 0 s |
-| 4 | **[`frostfire-ml-raid`](frostfire-ml-raid.md)** | ours: hand draft | 4/31/16 | 513 | -6.9% | 644 | -9.0% | 1 s |
+| 1 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 4/31/16 | 476 | +0.0% | 628 | -5.4% | 0 s |
+| 2 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 476 | -0.0% | 665 | +0.0% | 0 s |
+| 3 | **[`frostfire-ml-raid`](frostfire-ml-raid.md)** | ours: hand draft | 4/31/16 | 439 | -7.7% | 592 | -10.9% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -78,7 +77,7 @@ The Frostfire build the machine-learning talent search found in a full raid (eve
   14. only above 25% mana: if mana % ≥ 10% and time left in the fight ≥ 6s: cast Frostfire Bolt (+0.7%, pass 5)
   15. move to the top: cast Fire Blast (+3.8%, pass 5)
   16. insert at the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+0.5%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-06, 20 changes to the base rotation; third-seed check: open winner 687 -> 705 DPS (+2.7%), frostfire-open-raid 679 -> 692 DPS (+1.9%), frostfire-raid 625 -> 648 DPS (+3.7%), frostfire-ml-raid 630 -> 646 DPS (+2.5%), frostfire-fingers-of-frost-raid 686 -> 707 DPS (+3.0%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 11 passes, the last 2026-10-09, 20 changes to the base rotation; third-seed check: frostfire-open-raid 671 -> 637 DPS (-5.1%), frostfire-raid 613 -> 629 DPS (+2.5%), frostfire-ml-raid 623 -> 593 DPS (-4.8%), frostfire-fingers-of-frost-raid 678 -> 664 DPS (-2.1%)):
   1. insert at the top: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   2. threshold 110 -> 82.5: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   3. insert at the top: cast Berserking (+0.3%, pass 3)
@@ -124,12 +123,12 @@ Damage by ability:
 
 | Ability | [`frostfire-ml-raid`](frostfire-ml-raid.md) |
 |---|---|
-| Frostfire Bolt | 27% |
-| Fire Blast | 21% |
-| Pyroblast | 16% |
-| Fireball | 16% |
+| Frostfire Bolt | 32% |
+| Fire Blast | 24% |
+| Pyroblast | 19% |
 | Ignite | 11% |
-| Scorch | 8% |
+| Scorch | 9% |
+| Fireball | 4% |
 
 ## Notes
 

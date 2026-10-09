@@ -59,14 +59,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
 
 ## Rank among our builds and the community simulator's
 
-**2 of 4** for `balance-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 4** for `balance-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`balance-moonkin-raid`](balance-moonkin-raid.md) | ours: hand draft | 33/5/13 | 497 | +0.0% | 576 | +0.0% | 7 s |
-| 2 | **[`opt-balance-dps-raid-dps`](opt-balance-dps-raid-dps.md)** | ours: optimizer | 33/5/13 | 497 | +0.0% | 576 | +0.0% | 7 s |
-| 3 | *Balance* | community simulator | - | 452 | -9.0% | 513 | -11.0% | 1 s |
-| 4 | *Moonkin 38/0/13* | community simulator | - | 397 | -20.2% | 570 | -1.1% | 39 s |
+| 1 | [`balance-moonkin-raid`](balance-moonkin-raid.md) | ours: hand draft | 33/5/13 | 513 | +0.0% | 592 | +0.0% | 4 s |
+| 2 | **[`opt-balance-dps-raid-dps`](opt-balance-dps-raid-dps.md)** | ours: optimizer | 33/5/13 | 513 | +0.0% | 592 | +0.0% | 4 s |
+| 3 | *Balance* | community simulator | - | 468 | -8.6% | 526 | -11.2% | 0 s |
+| 4 | *Moonkin 38/0/13* | community simulator | - | 411 | -19.9% | 584 | -1.3% | 36 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -77,8 +77,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
   4. move down below 'cast Starfire': if mana % < 15%: cast Starfire (+0.3%, pass 1)
   5. only with 10s or more of the fight left: keep Insect Swarm on up to 1 targets (refresh under 0ms) (+0.2%, pass 2)
   6. insert at the end: cast Wrath (+0.2%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-01, 1 changes to the base rotation; third-seed check: ml: Balance 609 -> 614 DPS (+0.7%), sim preset: Balance 548 -> 548 DPS (+0.1%)):
-  1. move down below 'keep Insect Swarm on up to 1 targets (refresh under 0ms)': keep Moonfire on up to 1 targets (refresh under 0ms) (+0.3%)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-01, 2 passes, the last 2026-10-09, 1 changes to the base rotation; third-seed check: balance-moonkin-raid 590 -> 591 DPS (+0.2%), sim preset: Balance 527 -> 526 DPS (-0.3%)):
+  1. move down below 'keep Insect Swarm on up to 1 targets (refresh under 0ms)': keep Moonfire on up to 1 targets (refresh under 0ms) (+0.3%, pass 1)
 
 Before the pull: at -10s: activate Moonkin Form.
 
@@ -87,9 +87,9 @@ Before the pull: at -10s: activate Moonkin Form.
 | 1 | use every other cooldown when ready | as ready |
 | 2 | if mana % ≤ 30%: cast Innervate | 0.3 |
 | 3 | if time left in the fight ≥ 10s: keep Insect Swarm on up to 1 targets (refresh under 0ms) | 4.3 |
-| 4 | keep Moonfire on up to 1 targets (refresh under 0ms) | 3.8 |
-| 5 | cast Starfire | 14.6 |
-| 6 | if mana % < 15%: cast Starfire | 1.4 |
+| 4 | keep Moonfire on up to 1 targets (refresh under 0ms) | 3.9 |
+| 5 | cast Starfire | 15.1 |
+| 6 | if mana % < 15%: cast Starfire | 1.0 |
 
 Lines of the simulator's rotation these builds never cast: cast Wrath (its condition never held in these fights).
 

@@ -69,17 +69,17 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `bm-mm-raid
 
 ## Rank among our builds and the community simulator's
 
-**4 of 7** for `mm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 7** for `mm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 498 | +0.0% | 852 | -1.2% | 65 s |
-| 2 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 22/29/0 | 498 | +0.0% | 852 | -1.2% | 65 s |
-| 3 | *Beast Mastery 35/16/0* | community simulator | - | 468 | -6.0% | 823 | -4.5% | 76 s |
-| 4 | **[`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md)** | ours: hand draft | 21/30/0 | 445 | -10.6% | 806 | -6.5% | 72 s |
-| 5 | *Marksmanship* | community simulator | - | 425 | -14.5% | 862 | +0.0% | 89 s |
-| 6 | *Marksmanship 0/39/12* | community simulator | - | 412 | -17.2% | 807 | -6.3% | 86 s |
-| 7 | *Survival 0/15/36* | community simulator | - | 377 | -24.3% | 690 | -19.9% | 73 s |
+| 1 | **[`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md)** | ours: hand draft | 21/30/0 | 472 | +0.0% | 803 | -5.0% | 67 s |
+| 2 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 461 | -2.3% | 806 | -4.6% | 52 s |
+| 3 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 22/29/0 | 461 | -2.3% | 806 | -4.6% | 52 s |
+| 4 | *Marksmanship* | community simulator | - | 454 | -3.8% | 845 | +0.0% | 88 s |
+| 5 | *Beast Mastery 35/16/0* | community simulator | - | 444 | -5.9% | 770 | -8.8% | 73 s |
+| 6 | *Marksmanship 0/39/12* | community simulator | - | 430 | -8.9% | 791 | -6.3% | 82 s |
+| 7 | *Survival 0/15/36* | community simulator | - | 398 | -15.7% | 680 | -19.5% | 71 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -95,7 +95,7 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `bm-mm-raid
   9. threshold 25% -> 20%: if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 25%: cast Aimed Shot (+0.2%, pass 9)
   10. threshold 10s -> 15s: if auraIsInactive and time left in the fight ≥ 10s: cast Summon Hawk + only above 10% mana: if time to the next auto attack > 1s: cast Multi-Shot (+0.2%, pass 9)
   11. insert in the middle: cast Intimidation + only above 60% mana: cast Intimidation (+0.3%, pass 9)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 8 passes, the last 2026-10-05, 9 changes to the base rotation; third-seed check: open winner 813 -> 874 DPS (+7.4%), bm-mm-raid 783 -> 839 DPS (+7.1%), sim preset: Beast Mastery 35/16/0 738 -> 810 DPS (+9.8%), bm-mm-full-buffs-raid 786 -> 795 DPS (+1.2%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 9 passes, the last 2026-10-09, 10 changes to the base rotation; third-seed check: bm-mm-raid 786 -> 806 DPS (+2.7%), sim preset: Beast Mastery 35/16/0 756 -> 770 DPS (+1.9%), bm-mm-full-buffs-raid 788 -> 802 DPS (+1.8%)):
   1. drop: if time to the next auto attack > 1s: cast Aimed Shot (+1.0%, pass 1)
   2. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.3%, pass 1)
   3. only with 6s or more of the fight left: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 1)
@@ -105,17 +105,18 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `bm-mm-raid
   7. threshold 1s -> 0.5s: if time to the next auto attack > 1s: cast Aimed Shot (+0.3%, pass 6)
   8. insert before the filler: cast Intimidation (+0.2%, pass 6)
   9. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30% and time left in the fight ≥ 6s: cast Serpent Sting (+0.2%, pass 8)
+  10. move to the top: cast Arcane Shot (+3.0%, pass 9)
 
 Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) casts/min |
 |---|---|---|
-| 1 | cast Arcane Shot | 8.1 |
+| 1 | cast Arcane Shot | 8.5 |
 | 2 | use every other cooldown when ready | as ready |
 | 3 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
-| 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 20%: cast Aimed Shot | 3.7 |
-| 5 | if time to the next auto attack > 1s and mana % ≥ 10%: cast Multi-Shot | 1.3 |
-| 6 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.6 |
+| 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 20%: cast Aimed Shot | 4.0 |
+| 5 | if time to the next auto attack > 1s and mana % ≥ 10%: cast Multi-Shot | 0.6 |
+| 6 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.5 |
 
 Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Intimidation (needs the Intimidation talent).
 
@@ -123,14 +124,14 @@ Damage by ability:
 
 | Ability | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) |
 |---|---|
-| Auto Shot | 44% |
+| Auto Shot | 41% |
 | Arcane Shot | 18% |
-| Serpent Sting | 12% |
-| Pet: Auto Attack | 12% |
+| Pet: Auto Attack | 15% |
+| Serpent Sting | 11% |
 | Aimed Shot | 8% |
-| Multi-Shot | 2% |
-| Pet: Claw | 2% |
-| Pet: Bite | 1% |
+| Pet: Claw | 5% |
+| Multi-Shot | 1% |
+| Pet: Bite | 0% |
 
 ## Notes
 

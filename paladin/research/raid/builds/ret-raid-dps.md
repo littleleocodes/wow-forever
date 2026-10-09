@@ -40,12 +40,12 @@ Allocation adopted on 2026-09-27 from `cand-ret-dps-r1`, the best build in the c
 | **Conviction** | 5/5 | changed | Improves your chance to get a critical strike with melee attacks by 5%. |
 | **Seal of Command** | 1/1 | changed | Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.  Unleashing this Seal's energy will judge an enemy, instantly causing 68 to 73 Holy damage, 137 to 145 if the target is stunned or incapacitated. |
 | **Sanctified Judgement** | 3/3 | **NEW** | Gives your Judgement ability a 100% chance to return 60% of the Mana cost of the judged seal. |
-| **Vindication** | 3/3 | changed | Gives your damaging melee attacks a chance to reduce the target's Attack Power by 200, and increase your Attack Power by 3% for 30 sec. |
+| **Vindication** | 3/3 | changed | Gives your damaging melee attacks a chance to reduce the target's Attack Power by 204, and increase your Attack Power by 3% for 30 sec. |
 | **Sacred Arbiter** | 1/1 | **NEW** | Increases the damage of your Holy Strike ability by 20% and causes it to refresh all Judgement effects on the target. |
 | **Vengeance** | 3/3 | changed | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times. |
-| **Two-Handed Weapon Specialization** | 3/3 | changed | Increases the damage you deal with two-handed melee weapons by 6%. |
+| **Two-Handed Weapon Specialization** | 3/3 | unchanged | Increases the damage you deal with two-handed melee weapons by 6%. |
 | **Champion of the Light** | 3/3 | **NEW** | Increases your spell damage by up to 60% of your Intellect. |
-| **Instrument of Law** | 2/2 | **NEW** | Reduces the cast time of your Hammer of Wrath by 1 sec, and reduces all threat you generate by 20% while Righteous Fury is not active. |
+| **Instrument of Law** | 2/2 | **NEW** | Reduces the cast time of your Hammer of Wrath by 1.0 sec, and reduces all threat you generate by 20% while Righteous Fury is not active. |
 | **Twist of Light** | 1/1 | **NEW** | Reduces the Mana cost of your Seal spells by 20%, and when you replace your Seal of Command, Seal of Righteousness, Seal of Fury, or Seal of Justice with a different Seal, you gain an Echo of that Seal. Your next melee attack applies the replaced Seal's effects, consuming the Echo. |
 
 ## Core talents (priority order)
@@ -68,17 +68,16 @@ Allocation adopted on 2026-09-27 from `cand-ret-dps-r1`, the best build in the c
 
 ## Rank among our builds and the community simulator's
 
-**3 of 7** for `ret-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 6** for `ret-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 12/8/31 | 507 | +0.0% | 958 | -0.3% | 4 s |
-| 2 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: hand draft | 11/8/32 | 499 | -1.5% | 961 | +0.0% | 14 s |
-| 3 | **[`ret-raid-dps`](ret-raid-dps.md)** | ours: hand draft | 17/0/34 | 494 | -2.5% | 933 | -2.9% | 11 s |
-| 4 | *P4/P5 Ret* | community simulator | - | 491 | -3.3% | 931 | -3.1% | 5 s |
-| 5 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 10/8/33 | 485 | -4.3% | 959 | -0.2% | 20 s |
-| 6 | `retribution-open-raid` | ours | 9/8/34 | 471 | -7.2% | 958 | -0.2% | 19 s |
-| 7 | *Retribution 9/0/42* | community simulator | - | 454 | -10.4% | 923 | -4.0% | 19 s |
+| 1 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 12/8/31 | 542 | +0.0% | 995 | -0.4% | 2 s |
+| 2 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: hand draft | 11/8/32 | 534 | -1.5% | 999 | +0.0% | 7 s |
+| 3 | **[`ret-raid-dps`](ret-raid-dps.md)** | ours: hand draft | 17/0/34 | 532 | -1.9% | 970 | -2.8% | 2 s |
+| 4 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 10/8/33 | 524 | -3.4% | 996 | -0.3% | 21 s |
+| 5 | *P4/P5 Ret* | community simulator | - | 519 | -4.2% | 969 | -3.0% | 10 s |
+| 6 | *Retribution 9/0/42* | community simulator | - | 498 | -8.3% | 956 | -4.3% | 16 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -100,7 +99,7 @@ Allocation adopted on 2026-09-27 from `cand-ret-dps-r1`, the best build in the c
   15. drop 'mana % ≥ 15%' from the condition: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness (+0.2%, pass 5)
   16. threshold 70% -> 65%: if mana % ≥ 15% and Seal of Righteousness is up and mana % ≥ 70%: cast Seal of Command (+0.5%, pass 5)
   17. threshold 1s -> 2s: if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 1s: cast Seal of Command (+0.2%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-07, 11 changes to the base rotation; third-seed check: retribution-open-raid 867 -> 959 DPS (+10.6%), ret-full-buffs-raid 867 -> 959 DPS (+10.7%), opt-ret-dps-raid-dps 860 -> 957 DPS (+11.2%), sim preset: P4/P5 Ret 840 -> 931 DPS (+10.9%), ret-raid-dps 841 -> 933 DPS (+10.9%), retribution-ml-raid 865 -> 960 DPS (+11.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-09, 11 changes to the base rotation; third-seed check: opt-ret-dps-raid-dps 894 -> 995 DPS (+11.3%), sim preset: P4/P5 Ret 873 -> 969 DPS (+11.1%), ret-raid-dps 875 -> 972 DPS (+11.1%), ret-full-buffs-raid 902 -> 998 DPS (+10.5%), retribution-ml-raid 899 -> 998 DPS (+11.0%)):
   1. drop 'time left on Seal of Righteousness ≤ 1s' from the condition: if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 1s: cast Seal of Command (+2.4%, pass 1)
   2. threshold 70% -> 50%: if mana % ≥ 70%: cast Consecration (+1.4%, pass 1)
   3. move to the top: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness (+0.2%, pass 1)
@@ -123,8 +122,8 @@ Before the pull: at -1.5s: cast Seal of Command.
 | 4 | if mana % ≥ 15% and Seal of Righteousness is up and mana % ≥ 65%: cast Seal of Command | 5.0 |
 | 5 | cast Hammer of Wrath | 2.0 |
 | 6 | cast Holy Strike | 6.0 |
-| 7 | cast Consecration | 6.0 |
-| 8 | cast Consecration | 0.7 |
+| 7 | cast Consecration | 6.3 |
+| 8 | cast Consecration | 0.6 |
 
 Lines of the simulator's rotation these builds never cast: cast Holy Shock, cast Judgement (its condition never held in these fights).
 
@@ -132,14 +131,14 @@ Damage by ability:
 
 | Ability | [`ret-raid-dps`](ret-raid-dps.md) |
 |---|---|
+| Auto Attack | 19% |
 | Seal of Righteousness | 19% |
-| Auto Attack | 18% |
-| Consecration | 17% |
+| Consecration | 16% |
 | Holy Strike | 14% |
-| Judgement of Righteousness | 13% |
+| Judgement of Righteousness | 14% |
 | Hammer of Wrath | 6% |
 | Seal of Command | 5% |
-| Judgement of Command | 5% |
+| Judgement of Command | 4% |
 | Dragonbreath Chili | 3% |
 
 ## Notes

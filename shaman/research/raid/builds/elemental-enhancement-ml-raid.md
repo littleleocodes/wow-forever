@@ -21,7 +21,7 @@ The Elemental-Enhancement build the machine-learning talent search found in a fu
 |---|---|---|---|
 | **Convection** | 5/5 | changed | Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 10%. |
 | **Concussion** | 3/5 | changed | Increases the damage done by your Lightning Bolt, Chain Lightning, and Earth Shock spells by 3%. |
-| **Reverberation** | 5/5 | changed | Reduces the cooldown of your Shock spells by 1 sec. |
+| **Reverberation** | 5/5 | changed | Reduces the cooldown of your Shock spells by 1.0 sec. |
 | **Call of Flame** | 3/3 | changed | Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 15%. |
 | **Elemental Devastation** | 3/3 | changed | Your offensive spell critical strikes will increase your chance to get a critical strike with melee attacks by 9% for 10 sec. |
 | **Elemental Focus** | 1/1 | moved | Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
@@ -48,16 +48,16 @@ The Elemental-Enhancement build the machine-learning talent search found in a fu
 
 ## Rank among our builds and the community simulator's
 
-**5 of 6** for `enhancement-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**5 of 6** for `enhancement-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) | ours: optimizer | 11/31/9 | 400 | +0.0% | 738 | -5.7% | 14 s |
-| 2 | [`enhancement-ml-raid`](enhancement-ml-raid.md) | ours: hand draft | 19/32/0 | 397 | -0.8% | 783 | +0.0% | 29 s |
-| 3 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 395 | -1.4% | 729 | -6.9% | 14 s |
-| 4 | *Level 60* | community simulator | - | 393 | -1.8% | 737 | -5.8% | 31 s |
-| 5 | **[`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md)** | ours: hand draft | 22/29/0 | 377 | -5.9% | 748 | -4.4% | 34 s |
-| 6 | *Enhancement 16/35/0* | community simulator | - | 357 | -10.7% | 720 | -8.0% | 84 s |
+| 1 | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) | ours: optimizer | 11/31/9 | 391 | +0.0% | 694 | -6.1% | 14 s |
+| 2 | [`enhancement-ml-raid`](enhancement-ml-raid.md) | ours: hand draft | 19/32/0 | 390 | -0.4% | 739 | +0.0% | 30 s |
+| 3 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 386 | -1.3% | 684 | -7.5% | 14 s |
+| 4 | *Level 60* | community simulator | - | 386 | -1.4% | 696 | -5.8% | 32 s |
+| 5 | **[`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md)** | ours: hand draft | 22/29/0 | 366 | -6.4% | 690 | -6.7% | 35 s |
+| 6 | *Enhancement 16/35/0* | community simulator | - | 351 | -10.3% | 675 | -8.7% | 84 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -67,7 +67,7 @@ The Elemental-Enhancement build the machine-learning talent search found in a fu
   3. drop the condition: if mana % ≥ 60%: cast Earth Shock (+3.0%, pass 2)
   4. threshold 5 -> 3.75: if stacks of Maelstrom Weapon ≥ 5: cast Lightning Bolt (+0.8%, pass 4)
   5. insert at the end: if number of targets = 1 and not Searing Totem is on the target: cast Searing Totem (+0.4%, pass 4)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 7 passes, the last 2026-10-03, 7 changes to the base rotation; third-seed check: deep: Enhancement (dummy) 685 -> 773 DPS (+12.8%), deep: Enhancement (raid) 679 -> 802 DPS (+18.0%), deep: Hybrid Elemental/Enhancement (raid) 542 -> 679 DPS (+25.2%), sim preset: Level 60 669 -> 756 DPS (+13.0%), enhancement-raid-dps 666 -> 745 DPS (+11.7%), opt-enhancement-dps-raid-dps 662 -> 755 DPS (+14.1%), enhancement-ml-parse 663 -> 797 DPS (+20.2%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-09, 8 changes to the base rotation; third-seed check: opt-enhancement-dps-raid-dps 676 -> 693 DPS (+2.5%), sim preset: Level 60 675 -> 696 DPS (+3.1%), enhancement-raid-dps 673 -> 683 DPS (+1.5%), enhancement-ml-raid 715 -> 739 DPS (+3.4%), elemental-enhancement-ml-raid 668 -> 690 DPS (+3.3%)):
   1. insert in the middle: if not Flame Shock is on the target: cast Flame Shock (+1.0%, pass 1)
   2. threshold 5 -> 3.75: if stacks of Maelstrom Weapon ≥ 5: cast Lightning Bolt (+0.3%, pass 1)
   3. drop 'time left in the fight ≥ 20s' from the condition: if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem (+0.2%, pass 1)
@@ -75,6 +75,7 @@ The Elemental-Enhancement build the machine-learning talent search found in a fu
   5. move down below 'cast Stormstrike': if not Flame Shock is on the target: cast Flame Shock (+0.3%, pass 2)
   6. move down below 'cast Earth Shock': cast Fire Nova + only with 10s or more of the fight left: if not Flame Shock is on the target: cast Flame Shock (+0.2%, pass 2)
   7. threshold 3.75 -> 2.812: if stacks of Maelstrom Weapon ≥ 3.75: cast Lightning Bolt (+0.3%, pass 4)
+  8. threshold 2.812 -> 4.218: if stacks of Maelstrom Weapon ≥ 2.812: cast Lightning Bolt (+5.1%, pass 8)
 
 Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of Air Totem; at -1.5s: cast Searing Totem.
 
@@ -83,10 +84,10 @@ Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of A
 | 1 | if time left on the totem ≤ 0s: cast Strength of Earth Totem | 0.3 |
 | 2 | if time left on the totem ≤ 0s: cast Grace of Air Totem | 0.3 |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | cast Stormstrike | 14.0 |
-| 5 | if stacks of Maelstrom Weapon ≥ 3.75: cast Lightning Bolt | 3.6 |
+| 4 | cast Stormstrike | 14.1 |
+| 5 | if stacks of Maelstrom Weapon ≥ 3.75: cast Lightning Bolt | 3.4 |
 | 6 | if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.3 |
-| 7 | if not Flame Shock is on the target: cast Flame Shock | 3.5 |
+| 7 | if not Flame Shock is on the target: cast Flame Shock | 3.4 |
 | 8 | cast Earth Shock | 5.6 |
 | 9 | if number of targets = 1 and not Searing Totem is on the target: cast Searing Totem | 1.3 |
 
@@ -96,10 +97,10 @@ Damage by ability:
 |---|---|
 | Auto Attack | 28% |
 | spell 439440 | 18% |
-| Earth Shock | 13% |
-| Stormstrike | 11% |
+| Earth Shock | 14% |
+| Stormstrike | 12% |
 | Flame Shock | 10% |
-| Lightning Bolt | 9% |
+| Lightning Bolt | 8% |
 | Attack | 7% |
 | Dragonbreath Chili | 3% |
 

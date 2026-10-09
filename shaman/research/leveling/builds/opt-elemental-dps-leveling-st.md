@@ -37,7 +37,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `elementa
 |---|---|---|---|
 | **Thundering Strikes** | 5/5 | changed | Improves your chance to get a critical strike with all spells and attacks by 5%. |
 | **Earth's Grasp** | 1/2 | moved | Increases the health of your Stoneclaw Totem by 25% and the radius of your Earthbind Totem by 10%. |
-| **Improved Ghost Wolf** | 2/2 | changed | Reduces the cast time of your Ghost Wolf spell by 3 sec, and Ghost Wolf may be used indoors. |
+| **Improved Ghost Wolf** | 2/2 | changed | Reduces the cast time of your Ghost Wolf spell by 3.0 sec, and Ghost Wolf may be used indoors. |
 | **Guardian Totems** | 2/2 | unchanged | Increases the amount of damage reduced by your Stoneskin Totem and Windwall Totem by 20% and reduces the cooldown of your Grounding Totem by 2 sec. |
 | **Shamanistic Focus** | 1/1 | **NEW** | Reduces the mana cost of your Shock and Lightning Shield spells by 45%. |
 | **Anticipation** | 1/3 | changed | Increases your chance to dodge by an additional 2%. |

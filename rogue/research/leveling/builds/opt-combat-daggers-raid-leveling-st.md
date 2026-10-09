@@ -97,9 +97,9 @@ What this build casts per kill ([report](../fightlab/combat-daggers-raid.md), al
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 7.5 | 8.6 | 10.7 | 11.7 | 12.1 | 19% |
-| Melee (off-hand) | 6.9 | 8.0 | 10.3 | 11.3 | 11.8 | 10% |
-| Sinister Strike | 2.9 | 3.3 | 4.2 | 4.5 | 4.8 | 18% |
+| Melee | 7.4 | 8.5 | 10.7 | 11.6 | 12.1 | 19% |
+| Melee (off-hand) | 6.8 | 7.9 | 10.3 | 11.3 | 11.8 | 10% |
+| Sinister Strike | 2.9 | 3.3 | 4.1 | 4.5 | 4.8 | 18% |
 | Riposte | 0.0 | 0.9 | 1.1 | 1.2 | 1.3 | 4% |
 | Eviscerate | 0.7 | 0.7 | 1.0 | 1.1 | 1.2 | 23% |
 | Garrote | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 12% |

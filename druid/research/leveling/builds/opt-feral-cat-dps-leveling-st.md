@@ -35,7 +35,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 | **Sharpened Claws** | 2/2 | changed | Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by 6%. |
 | **Predatory Strikes** | 3/3 | changed | Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 150% of your level. |
 | **Leader of the Pack** | 1/1 | changed | While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the critical strike chance of all party members within 45 yards by 3%, exclusive with Moonkin Aura. |
-| **Predatory Instincts** | 2/2 | **NEW** | Increases the critical strike damage bonus of your melee abilities by 20%. |
+| **Natural Instinct** | 2/2 | **NEW** | Increases the critical strike damage bonus of your melee abilities by 20% and increases your spell healing by 25% of your Intellect. |
 | **Rend and Tear** | 5/5 | **NEW** | Increases damage done by your melee abilities on Bleeding targets by 10%. |
 | **Berserk** | 1/1 | **NEW** | Causes your Primal Bite ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generating abilities by 100%. Clears and grants immunity to Fear effects for the duration. Lasts 15 sec. |
 
@@ -68,16 +68,15 @@ What this build casts per kill ([report](../fightlab/balance-dps.md), all leveli
 
 | Ability | L15 casts/kill | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|---|
-| Melee | 4.3 | 9.6 | 13.3 | 14.5 | 14.7 | 16.4 | 31% |
-| Claw | 0.0 | 5.2 | 3.9 | 3.7 | 3.7 | 4.2 | 24% |
-| Rake | 0.0 | 0.0 | 1.3 | 1.5 | 1.4 | 1.6 | 7% |
-| Ferocious Bite | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.1 | 20% |
+| Melee | 4.0 | 8.4 | 13.2 | 15.2 | 16.4 | 19.0 | 32% |
+| Claw | 0.0 | 4.8 | 3.7 | 3.3 | 3.5 | 4.0 | 22% |
+| Rake | 0.0 | 0.0 | 1.3 | 1.5 | 1.6 | 1.9 | 8% |
+| Ferocious Bite | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.0 | 18% |
 | Ravage | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.0 | 15% |
-| Tiger's Fury | 0.0 | 0.0 | 0.6 | 0.7 | 0.7 | 0.8 | 0% |
-| Rip | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.1 | 3% |
+| Rip | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 6% |
 | Enrage | 0.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Demoralizing Roar | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Maul | 3.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Maul | 3.3 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Bash | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Shred | 0.0 | 0.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0% |
 

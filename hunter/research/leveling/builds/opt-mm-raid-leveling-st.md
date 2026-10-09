@@ -46,7 +46,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Tracking** | 5/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 5%. |
-| **Deflection** | 1/5 | changed | Increases your Parry chance by 1%. |
+| **Deflection** | 1/5 | unchanged | Increases your Parry chance by 1%. |
 
 ## Leveling order
 
@@ -100,19 +100,19 @@ What this build casts per kill ([report](../fightlab/mm-raid.md), all leveling b
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Auto Shot | 3.2 | 4.6 | 6.1 | 6.4 | 6.1 | 31% |
-| Claw | 3.2 | 4.0 | 4.7 | 4.8 | 5.3 | 6% |
-| Growl | 1.7 | 2.3 | 3.0 | 3.1 | 3.5 | 0% |
-| Arcane Shot | 1.0 | 1.1 | 1.6 | 1.7 | 1.7 | 11% |
-| Aimed Shot | 0.8 | 1.0 | 1.1 | 1.3 | 1.4 | 12% |
-| Serpent Sting | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 18% |
+| Auto Shot | 2.9 | 4.1 | 5.7 | 6.3 | 6.1 | 31% |
+| Claw | 3.0 | 3.7 | 4.5 | 4.6 | 4.9 | 6% |
+| Growl | 1.6 | 2.1 | 2.8 | 3.0 | 3.3 | 0% |
+| Arcane Shot | 0.9 | 1.0 | 1.3 | 1.5 | 1.7 | 11% |
+| Aimed Shot | 0.7 | 1.0 | 1.0 | 1.1 | 1.2 | 11% |
+| Serpent Sting | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 17% |
 | Hunter's Mark | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
 | Bite | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2% |
-| Melee | 0.0 | 0.1 | 0.2 | 0.5 | 0.9 | 4% |
-| Raptor Strike | 0.0 | 0.0 | 0.1 | 0.2 | 0.5 | 3% |
-| Feign Death | 0.0 | 0.0 | 0.0 | 0.1 | 0.4 | 0% |
-| Wing Clip | 0.0 | 0.0 | 0.0 | 0.1 | 0.3 | 0% |
-| Mongoose Bite | 0.0 | 0.0 | 0.0 | 0.1 | 0.2 | 1% |
+| Melee | 0.0 | 0.0 | 0.0 | 0.1 | 0.5 | 2% |
+| Raptor Strike | 0.0 | 0.0 | 0.0 | 0.1 | 0.3 | 2% |
+| Wing Clip | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 0% |
+| Feign Death | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 0% |
+| Mongoose Bite | 0.0 | 0.0 | 0.0 | 0.0 | 0.1 | 1% |
 
 ## Notes
 

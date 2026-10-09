@@ -209,7 +209,7 @@ Models: holy-heal, ret-dps, prot-tank. Same mob, same gear, ~10 kills each, note
 
 | Tree | Row | Talent | Beta tooltip (level 60, build 1.60.1.70009) |
 |---|---|---|---|
-| Discipline | 5 | Penance | Launches a volley of holy light at the target, causing 81 Holy damage to an enemy, or 184 healing to an ally, instantly and every 1 sec for 2 sec. |
+| Discipline | 5 | Penance | Launches a volley of holy light at the target, causing 44 Holy damage to an enemy, or 133 healing to an ally, instantly and every 1 sec for 2 sec. |
 | Holy | 3 | Inspiration | Your non-periodic critical heals increase your target's Armor by 8% for 15 sec. |
 | Holy | 4 | Binding Heal | Heals a friendly target and the caster for 236 to 284. Low threat. |
 
@@ -398,9 +398,9 @@ Models: sb-raid, affliction-raid, fire-destro-raid, affliction-leveling. Same mo
 
 ### 4. Play the recommended 10-30 order and time it
 
-Plan: **fury-dw-raid -> level-50 build (4/37/0)** (from `warrior/leveling/respec-plan.md`)
+Plan: **arms-2h-raid -> level-20 build (7/4/0)** (from `warrior/leveling/respec-plan.md`)
 
-- 10-14 Cruelty x5; 15-19 Unbridled Wrath x5; 20-22 Blood Craze x3; 23 Piercing Howl; 24 Booming Voice; 25-26 Improved Execute x2; 27-29 Enrage x3; 30 Death Wish
+- 10-12 Improved Rend x3; 13-16 Cruelty x4; 17-18 Deflection x2; 19-20 Improved Overpower x2; 21-22 Improved Charge x2; 23 Improved Tactical Mastery; 24-26 Deep Wounds x3; 27-28 Improved Tactical Mastery x2; 29-31 Two-Handed Weapon Specialization x3
 
 Log per level bracket: kills per hour, deaths, drink/eat time; compare with the alternative plans on the same page.
 

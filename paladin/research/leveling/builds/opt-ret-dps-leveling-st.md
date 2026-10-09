@@ -40,12 +40,12 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 | **Seal of Command** | 1/1 | changed | Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.  Unleashing this Seal's energy will judge an enemy, instantly causing 68 to 73 Holy damage, 137 to 145 if the target is stunned or incapacitated. |
 | **Sanctified Judgement** | 3/3 | **NEW** | Gives your Judgement ability a 100% chance to return 60% of the Mana cost of the judged seal. |
 | **Pursuit of Justice** | 2/2 | changed | Increases movement speed and mounted movement speed by 15%. This does not stack with other movement speed increasing effects. |
-| **Vindication** | 3/3 | changed | Gives your damaging melee attacks a chance to reduce the target's Attack Power by 200, and increase your Attack Power by 3% for 30 sec. |
+| **Vindication** | 3/3 | changed | Gives your damaging melee attacks a chance to reduce the target's Attack Power by 204, and increase your Attack Power by 3% for 30 sec. |
 | **Sacred Arbiter** | 1/1 | **NEW** | Increases the damage of your Holy Strike ability by 20% and causes it to refresh all Judgement effects on the target. |
-| **Two-Handed Weapon Specialization** | 3/3 | changed | Increases the damage you deal with two-handed melee weapons by 6%. |
+| **Two-Handed Weapon Specialization** | 3/3 | unchanged | Increases the damage you deal with two-handed melee weapons by 6%. |
 | **Vengeance** | 3/3 | changed | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times. |
 | **Repentance** | 1/1 | moved | Puts the enemy target in a state of meditation, incapacitating them for up to 6 sec. Any damage caused will awaken the target. Only works against Humanoids. |
-| **Instrument of Law** | 2/2 | **NEW** | Reduces the cast time of your Hammer of Wrath by 1 sec, and reduces all threat you generate by 20% while Righteous Fury is not active. |
+| **Instrument of Law** | 2/2 | **NEW** | Reduces the cast time of your Hammer of Wrath by 1.0 sec, and reduces all threat you generate by 20% while Righteous Fury is not active. |
 | **Champion of the Light** | 3/3 | **NEW** | Increases your spell damage by up to 60% of your Intellect. |
 
 ## Leveling order
@@ -98,11 +98,11 @@ What this build casts per kill ([report](../fightlab/ret-dps.md), all leveling b
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 3.5 | 4.5 | 5.7 | 5.0 | 5.9 | 34% |
-| Judgement | 1.7 | 2.2 | 2.6 | 2.4 | 2.6 | 21% |
-| Holy Strike | 1.2 | 1.6 | 2.1 | 1.8 | 2.1 | 15% |
+| Melee | 3.6 | 4.5 | 5.8 | 5.1 | 6.0 | 34% |
+| Judgement | 1.8 | 2.2 | 2.6 | 2.4 | 2.7 | 20% |
+| Holy Strike | 1.2 | 1.6 | 2.1 | 1.8 | 2.2 | 15% |
 | Seal of Command | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 17% |
-| Hammer of Wrath | 0.0 | 0.0 | 0.0 | 0.9 | 1.0 | 14% |
+| Hammer of Wrath | 0.0 | 0.0 | 0.0 | 0.9 | 1.0 | 13% |
 | Hammer of Justice | 0.3 | 0.3 | 0.4 | 0.4 | 0.5 | 0% |
 
 ## Notes

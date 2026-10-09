@@ -4,7 +4,7 @@
  "game": "forever",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
-  "commit": "b0f0df3",
+  "commit": "2ce8265",
   "spec_folder": "druid/feralcat",
   "gear": "_reference/data/raidsim/gear_sets/forever/druid-feralcat-launch.p1opt.gear.json",
   "apl": "_reference/data/raidsim/apls/druid/feral-cat-dps.apl.json",
@@ -22,14 +22,15 @@
    "foodId": 13928,
    "potId": 13444,
    "conjuredId": 12662,
-   "goblinSapper": true
+   "goblinSapper": true,
+   "mhImbueId": 22756
   },
-  "encounter": "a boss-level training dummy (level 63), 180.0s, execute phases 20/25/35/45/90%",
+  "encounter": "a boss-level training dummy (level 63, creature type Elemental), 180.0s, execute phases 20/25/35/45/90%",
   "iterations": 3000,
   "seed": 1,
   "duration": 180.0
  },
- "date": "2026-10-03",
+ "date": "2026-10-09",
  "results": [
   {
    "label": "feral-cat-dps",
@@ -38,45 +39,45 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
+    "417141": 1.0003333333333333,
+    "9907": 119.14533333333334,
+    "9830": 44.48766666666667,
     "5217": 7.0,
-    "9896": 13.993333333333334,
-    "9907": 118.901,
-    "9830": 44.929,
-    "768": 1.0,
-    "417141": 1.0003333333333333
+    "9896": 14.158666666666667,
+    "768": 1.0
    },
    "casts": {
-    "Tiger's Fury": 7.0,
-    "Rip": 13.993333333333334,
-    "Faerie Fire": 118.901,
-    "Shred": 44.929,
     "Auto Attack": 180.00533333333334,
+    "Berserk": 1.0003333333333333,
     "Goblin Sapper Charge": 1.0,
-    "Cat Form": 1.0,
-    "Berserk": 1.0003333333333333
+    "Faerie Fire": 119.14533333333334,
+    "Shred": 44.48766666666667,
+    "Tiger's Fury": 7.0,
+    "Rip": 14.158666666666667,
+    "Cat Form": 1.0
    },
-   "dps": 338.5505070176392,
-   "dps_stdev": 14.009560330814546,
-   "threat": 291.1393310936349,
-   "dtps": 3.532074462244723,
+   "dps": 356.7695792074082,
+   "dps_stdev": 14.877615240829146,
+   "threat": 304.2264967928154,
+   "dtps": 3.6127382922626436,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
    "scorer": 0.8474712905553764,
    "shares": {
-    "Rip": 0.36791904402824166,
-    "Auto Attack": 0.3261850416993311,
-    "Shred": 0.2768559501778877,
-    "Goblin Sapper Charge": 0.02132374718684335,
-    "Dragonbreath Chili": 0.007716216907696191
+    "Rip": 0.3758910090861491,
+    "Auto Attack": 0.3253267286636398,
+    "Shred": 0.2709174634137303,
+    "Goblin Sapper Charge": 0.02046951956396559,
+    "Dragonbreath Chili": 0.007395279272515181
    },
    "source_shares": {
-    "rip": 0.3789,
-    "white": 0.3359,
-    "shred": 0.2851
+    "rip": 0.3867,
+    "white": 0.3347,
+    "shred": 0.2787
    },
-   "unmatched_share": 0.029
+   "unmatched_share": 0.0279
   },
   {
    "label": "opt-feral-cat-dps-raid-dps",
@@ -85,45 +86,45 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "417141": 1.0003333333333333,
-    "5217": 7.0,
-    "9830": 44.929,
-    "9907": 118.901,
     "768": 1.0,
-    "9896": 13.993333333333334
+    "9907": 119.14533333333334,
+    "5217": 7.0,
+    "9896": 14.158666666666667,
+    "9830": 44.48766666666667,
+    "417141": 1.0003333333333333
    },
    "casts": {
-    "Berserk": 1.0003333333333333,
     "Goblin Sapper Charge": 1.0,
-    "Tiger's Fury": 7.0,
-    "Shred": 44.929,
-    "Auto Attack": 180.00533333333334,
-    "Faerie Fire": 118.901,
     "Cat Form": 1.0,
-    "Rip": 13.993333333333334
+    "Faerie Fire": 119.14533333333334,
+    "Tiger's Fury": 7.0,
+    "Rip": 14.158666666666667,
+    "Auto Attack": 180.00533333333334,
+    "Shred": 44.48766666666667,
+    "Berserk": 1.0003333333333333
    },
-   "dps": 348.94237930177854,
-   "dps_stdev": 14.743284305895997,
-   "threat": 298.51756041537385,
-   "dtps": 3.532074462244723,
+   "dps": 367.8373118983752,
+   "dps_stdev": 15.660957149726643,
+   "threat": 312.084587003402,
+   "dtps": 3.6127382922626436,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
    "scorer": 0.911073333977959,
    "shares": {
-    "Rip": 0.37443879659850837,
-    "Auto Attack": 0.3165682503031368,
-    "Shred": 0.2808091633869055,
-    "Goblin Sapper Charge": 0.020695067136364268,
-    "Dragonbreath Chili": 0.007488722575085126
+    "Rip": 0.38244010993724664,
+    "Auto Attack": 0.31563328732952783,
+    "Shred": 0.2748920639676519,
+    "Goblin Sapper Charge": 0.019859609373536976,
+    "Dragonbreath Chili": 0.007174929392036662
    },
    "source_shares": {
-    "rip": 0.3853,
-    "white": 0.3257,
-    "shred": 0.289
+    "rip": 0.3931,
+    "white": 0.3244,
+    "shred": 0.2825
    },
-   "unmatched_share": 0.0282
+   "unmatched_share": 0.027
   },
   {
    "label": "sim preset: Feral",
@@ -131,45 +132,45 @@
    "split": "",
    "ours": false,
    "spell_casts": {
+    "417141": 1.001,
+    "9896": 14.382,
+    "9907": 117.73633333333333,
     "768": 1.0,
-    "9907": 117.43533333333333,
-    "417141": 1.0,
-    "9830": 46.190333333333335,
-    "5217": 7.0,
-    "9896": 14.199
+    "9830": 45.704,
+    "5217": 7.0
    },
    "casts": {
+    "Berserk": 1.001,
+    "Rip": 14.382,
+    "Faerie Fire": 117.73633333333333,
     "Cat Form": 1.0,
-    "Faerie Fire": 117.43533333333333,
-    "Auto Attack": 180.00566666666666,
-    "Berserk": 1.0,
     "Goblin Sapper Charge": 1.0,
-    "Shred": 46.190333333333335,
+    "Shred": 45.704,
     "Tiger's Fury": 7.0,
-    "Rip": 14.199
+    "Auto Attack": 180.00566666666666
    },
-   "dps": 322.2954055674765,
-   "dps_stdev": 14.251349024740456,
-   "threat": 276.7657823973526,
-   "dtps": 3.5368230096709246,
+   "dps": 339.6521470668492,
+   "dps_stdev": 15.363722037317618,
+   "threat": 289.27792886190724,
+   "dtps": 3.596393228988002,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
    "scorer": null,
    "shares": {
-    "Rip": 0.3610397539253243,
-    "Auto Attack": 0.31953426417959835,
-    "Shred": 0.289919613237628,
-    "Goblin Sapper Charge": 0.02205003625758274,
-    "Dragonbreath Chili": 0.0074563323998666315
+    "Rip": 0.3693892315000536,
+    "Auto Attack": 0.31901233708813476,
+    "Shred": 0.2833565862991532,
+    "Goblin Sapper Charge": 0.021195239946470372,
+    "Dragonbreath Chili": 0.007046605166188035
    },
    "source_shares": {
-    "rip": 0.372,
-    "white": 0.3292,
-    "shred": 0.2987
+    "rip": 0.3801,
+    "white": 0.3283,
+    "shred": 0.2916
    },
-   "unmatched_share": 0.0295
+   "unmatched_share": 0.0282
   },
   {
    "label": "sim preset: Feral Cat 9/35/7",
@@ -177,45 +178,45 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "768": 1.0,
-    "9907": 118.901,
-    "9830": 44.929,
     "417141": 1.0003333333333333,
-    "9896": 13.993333333333334,
-    "5217": 7.0
+    "768": 1.0,
+    "5217": 7.0,
+    "9896": 14.158666666666667,
+    "9830": 44.48766666666667,
+    "9907": 119.14533333333334
    },
    "casts": {
-    "Cat Form": 1.0,
-    "Faerie Fire": 118.901,
-    "Auto Attack": 180.00533333333334,
-    "Shred": 44.929,
     "Berserk": 1.0003333333333333,
-    "Rip": 13.993333333333334,
+    "Cat Form": 1.0,
     "Tiger's Fury": 7.0,
-    "Goblin Sapper Charge": 1.0
+    "Auto Attack": 180.00533333333334,
+    "Rip": 14.158666666666667,
+    "Goblin Sapper Charge": 1.0,
+    "Shred": 44.48766666666667,
+    "Faerie Fire": 119.14533333333334
    },
-   "dps": 338.97259703601355,
-   "dps_stdev": 14.322047611440064,
-   "threat": 291.43901500668073,
-   "dtps": 3.4311580490377307,
+   "dps": 357.32767441556456,
+   "dps_stdev": 15.213501231161933,
+   "threat": 304.6227443906063,
+   "dtps": 3.5095171981979965,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
    "scorer": null,
    "shares": {
-    "Rip": 0.3744387965985084,
-    "Auto Attack": 0.31656825030313673,
-    "Shred": 0.28080916338690537,
-    "Goblin Sapper Charge": 0.020695067136364265,
-    "Dragonbreath Chili": 0.007488722575085125
+    "Rip": 0.3824401099372467,
+    "Auto Attack": 0.31563328732952783,
+    "Shred": 0.27489206396765187,
+    "Goblin Sapper Charge": 0.019859609373536972,
+    "Dragonbreath Chili": 0.007174929392036662
    },
    "source_shares": {
-    "rip": 0.3853,
-    "white": 0.3257,
-    "shred": 0.289
+    "rip": 0.3931,
+    "white": 0.3244,
+    "shred": 0.2825
    },
-   "unmatched_share": 0.0282
+   "unmatched_share": 0.027
   }
  ],
  "deltas": {}

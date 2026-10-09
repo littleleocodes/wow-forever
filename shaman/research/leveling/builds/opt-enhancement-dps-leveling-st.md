@@ -30,7 +30,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 | **Thundering Strikes** | 5/5 | changed | Improves your chance to get a critical strike with all spells and attacks by 5%. |
 | **Ancestral Knowledge** | 2/5 | changed | Increases your Intellect by 4%. |
 | **Mental Dexterity** | 3/3 | **NEW** | Increases your Attack Power by an amount equal to 100% of your Intellect. |
-| **Improved Ghost Wolf** | 2/2 | changed | Reduces the cast time of your Ghost Wolf spell by 3 sec, and Ghost Wolf may be used indoors. |
+| **Improved Ghost Wolf** | 2/2 | changed | Reduces the cast time of your Ghost Wolf spell by 3.0 sec, and Ghost Wolf may be used indoors. |
 | **Improved Lightning Shield** | 3/3 | unchanged | Increases the damage done by your Lightning Shield orbs by 15%. |
 | **Guardian Totems** | 2/2 | unchanged | Increases the amount of damage reduced by your Stoneskin Totem and Windwall Totem by 20% and reduces the cooldown of your Grounding Totem by 2 sec. |
 | **Shamanistic Focus** | 1/1 | **NEW** | Reduces the mana cost of your Shock and Lightning Shield spells by 45%. |
@@ -95,13 +95,13 @@ What this build casts per kill ([report](../fightlab/elemental-dps.md), all leve
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 3.5 | 5.5 | 4.8 | 5.4 | 6.3 | 28% |
-| Windfury | 0.0 | 1.9 | 2.4 | 2.9 | 3.3 | 19% |
-| Stormstrike | 0.0 | 0.0 | 2.1 | 2.3 | 2.7 | 12% |
-| Earth Shock | 0.7 | 0.8 | 0.8 | 0.8 | 0.9 | 9% |
-| Lightning Shield | 0.6 | 0.8 | 0.7 | 0.8 | 0.9 | 15% |
-| Searing Totem | 0.8 | 0.5 | 0.8 | 0.8 | 0.8 | 9% |
-| Flame Shock | 0.9 | 0.7 | 0.7 | 0.7 | 0.7 | 7% |
+| Melee | 3.6 | 3.9 | 4.8 | 5.5 | 6.3 | 28% |
+| Windfury | 0.0 | 2.0 | 2.4 | 2.9 | 3.3 | 19% |
+| Stormstrike | 0.0 | 1.9 | 2.1 | 2.4 | 2.7 | 12% |
+| Earth Shock | 0.7 | 0.7 | 0.8 | 0.8 | 0.9 | 9% |
+| Lightning Shield | 0.7 | 0.7 | 0.7 | 0.8 | 0.9 | 15% |
+| Searing Totem | 0.8 | 0.8 | 0.8 | 0.8 | 0.8 | 9% |
+| Flame Shock | 0.9 | 0.6 | 0.7 | 0.7 | 0.7 | 7% |
 
 ## Notes
 

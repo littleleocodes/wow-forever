@@ -25,7 +25,7 @@ Our Marksmanship raid draft's tree split with Summon Hawk, a Forever Beast Maste
 | **Unleashed Fury** | 5/5 | changed | Increases the damage done by your pets and hawks by 15%. |
 | **Ferocity** | 5/5 | changed | Increases the critical strike chance of your pets and hawks by 10%. |
 | **Bestial Discipline** | 1/2 | changed | Increases the Focus regeneration of your pets by 10% and allows 25% of your Mana regeneration to continue while casting. |
-| **Summon Hawk** | 1/1 | **NEW** | Command a hawk to dive-bomb your targeted enemy, dealing 32 Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot. |
+| **Summon Hawk** | 1/1 | **NEW** | Command a hawk to dive-bomb your targeted enemy, dealing 32 plus 5% of your Ranged Attack Power Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot. |
 
 ### Marksmanship (29)
 
@@ -66,16 +66,16 @@ Our Marksmanship raid draft's tree split with Summon Hawk, a Forever Beast Maste
 
 ## Rank among our builds and the community simulator's
 
-**5 of 6** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**5 of 6** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`beast-marks-open-raid`](beast-marks-open-raid.md) | ours: hand draft | 27/19/5 | 505 | +0.0% | 903 | +0.0% | 20 s |
-| 2 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 499 | -1.2% | 867 | -3.9% | 6 s |
-| 3 | [`beast-mastery-ml-parse`](beast-mastery-ml-parse.md) | ours: parse build | 31/20/0 | 498 | -1.4% | 895 | -0.8% | 25 s |
-| 4 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: hand draft | 28/23/0 | 493 | -2.4% | 890 | -1.4% | 18 s |
-| 5 | **[`mm-hawk-raid`](mm-hawk-raid.md)** | ours: hand draft | 22/29/0 | 490 | -2.9% | 868 | -3.9% | 13 s |
-| 6 | *Beast Mastery 35/16/0* | community simulator | - | 474 | -6.1% | 845 | -6.4% | 14 s |
+| 1 | [`beast-marks-open-raid`](beast-marks-open-raid.md) | ours: hand draft | 27/19/5 | 464 | +0.0% | 842 | +0.0% | 20 s |
+| 2 | [`beast-mastery-ml-parse`](beast-mastery-ml-parse.md) | ours: parse build | 31/20/0 | 464 | -0.1% | 841 | -0.1% | 25 s |
+| 3 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 461 | -0.7% | 810 | -3.9% | 6 s |
+| 4 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: hand draft | 28/23/0 | 454 | -2.2% | 833 | -1.2% | 18 s |
+| 5 | **[`mm-hawk-raid`](mm-hawk-raid.md)** | ours: hand draft | 22/29/0 | 446 | -4.0% | 805 | -4.5% | 13 s |
+| 6 | *Beast Mastery 35/16/0* | community simulator | - | 439 | -5.4% | 790 | -6.3% | 14 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -92,7 +92,7 @@ Our Marksmanship raid draft's tree split with Summon Hawk, a Forever Beast Maste
   10. spell probe: insert at the end: if auraIsInactive: cast Intimidation (+0.5%, pass 5)
   11. only above 60% mana: if auraIsInactive: cast Intimidation (+0.2%, pass 7)
   12. threshold 60% -> 70%: if auraIsInactive and mana % ≥ 60%: cast Intimidation (+0.3%, pass 8)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-07, 10 changes to the base rotation; third-seed check: open winner 871 -> 904 DPS (+3.8%), beast-mastery-raid 839 -> 867 DPS (+3.3%), sim preset: Beast Mastery 35/16/0 816 -> 844 DPS (+3.4%), mm-hawk-raid 838 -> 868 DPS (+3.5%), beast-mastery-ml-parse 863 -> 895 DPS (+3.6%), beast-marks-ml-raid 858 -> 890 DPS (+3.7%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 10 passes, the last 2026-10-09, 11 changes to the base rotation; third-seed check: beast-marks-open-raid 805 -> 842 DPS (+4.6%), sim preset: Beast Mastery 35/16/0 761 -> 790 DPS (+3.8%), mm-hawk-raid 766 -> 805 DPS (+5.1%), beast-mastery-raid 776 -> 810 DPS (+4.4%), beast-mastery-ml-parse 805 -> 841 DPS (+4.5%), beast-marks-ml-raid 796 -> 832 DPS (+4.5%)):
   1. move to the top: if time to the next auto attack > 0.5s: cast Multi-Shot (+1.9%, pass 1)
   2. drop the condition: if time to the next auto attack > 1s: cast Summon Hawk (+0.4%, pass 1)
   3. threshold 1s -> 0.75s: if time left on Serpent Sting < 1s and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 2)
@@ -103,6 +103,7 @@ Our Marksmanship raid draft's tree split with Summon Hawk, a Forever Beast Maste
   8. drop the condition: if time to the next auto attack > 1s: cast Aimed Shot (+0.2%, pass 5)
   9. insert at the top: if time to the next auto attack > 1s: cast Summon Hawk + insert in the middle: if time to the next auto attack > 0.5s and mana % ≥ 30%: cast Arcane Shot (+0.8%, pass 6)
   10. only with 10s or more of the fight left: if time to the next auto attack > 1s: cast Summon Hawk (+0.2%, pass 6)
+  11. drop: if time to the next auto attack > 1s and time left in the fight ≥ 10s: cast Summon Hawk (+1.1%, pass 10)
 
 Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
@@ -119,12 +120,12 @@ Damage by ability:
 
 | Ability | [`mm-hawk-raid`](mm-hawk-raid.md) |
 |---|---|
-| Auto Shot | 40% |
-| Summon Hawk | 28% |
-| Serpent Sting | 19% |
-| Pet: Auto Attack | 11% |
-| Pet: Claw | 2% |
-| Pet: Bite | 1% |
+| Auto Shot | 44% |
+| Serpent Sting | 20% |
+| Pet: Auto Attack | 16% |
+| Summon Hawk | 15% |
+| Pet: Claw | 6% |
+| Pet: Bite | 0% |
 
 ## Notes
 

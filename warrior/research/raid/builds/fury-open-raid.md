@@ -60,16 +60,16 @@ The Fury raid build the open talent search found on 2026-10-08: every legal 51-p
 
 ## Rank among our builds and the community simulator's
 
-**1 of 6** for `fury-dw-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 6** for `fury-dw-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`fury-open-raid`](fury-open-raid.md)** | ours: hand draft | 18/31/2 | 443 | +0.0% | 842 | +0.0% | 0 s |
-| 2 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 19/32/0 | 424 | -4.3% | 810 | -3.8% | 0 s |
-| 3 | [`fury-dw-raid`](fury-dw-raid.md) | ours: hand draft | 13/38/0 | 418 | -5.5% | 805 | -4.4% | 0 s |
-| 4 | *DPS* | community simulator | - | 410 | -7.5% | 799 | -5.2% | 0 s |
-| 5 | *Fury 17/34/0* | community simulator | - | 397 | -10.5% | 780 | -7.4% | 0 s |
-| 6 | *Arms 39/12/0* | community simulator | - | 291 | -34.2% | 588 | -30.2% | 0 s |
+| 1 | **[`fury-open-raid`](fury-open-raid.md)** | ours: hand draft | 18/31/2 | 528 | +0.0% | 925 | +0.0% | 0 s |
+| 2 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 19/32/0 | 508 | -3.8% | 885 | -4.3% | 0 s |
+| 3 | [`fury-dw-raid`](fury-dw-raid.md) | ours: hand draft | 13/38/0 | 501 | -5.1% | 884 | -4.4% | 0 s |
+| 4 | *DPS* | community simulator | - | 496 | -6.1% | 884 | -4.4% | 0 s |
+| 5 | *Fury 17/34/0* | community simulator | - | 482 | -8.8% | 861 | -6.9% | 0 s |
+| 6 | *Arms 39/12/0* | community simulator | - | 352 | -33.4% | 649 | -29.8% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -95,7 +95,7 @@ The Fury raid build the open talent search found on 2026-10-08: every legal 51-p
   19. threshold 30s -> 45s: if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish (+1.2%, pass 5)
   20. threshold 22.5s -> 33.75s: if (time left in the fight ≤ 22.5s or time left in the fight ≥ 70s): use every other cooldown when ready (+0.4%, pass 5)
   21. drop: if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring (+0.3%, pass 6)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-08, 12 changes to the base rotation; third-seed check: open winner 786 -> 842 DPS (+7.1%), opt-fury-dw-raid-raid-dps 748 -> 810 DPS (+8.2%), sim preset: DPS 742 -> 798 DPS (+7.5%), fury-dw-raid 749 -> 804 DPS (+7.3%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 7 passes, the last 2026-10-09, 16 changes to the base rotation; third-seed check: fury-open-raid 844 -> 925 DPS (+9.6%), sim preset: DPS 814 -> 885 DPS (+8.8%), fury-dw-raid 813 -> 885 DPS (+8.9%), opt-fury-dw-raid-raid-dps 809 -> 886 DPS (+9.5%)):
   1. drop: if false: cast Recklessness (+11.1%, pass 1)
   2. drop: if number of targets = 1 and (rage ≥ 40 or execute phase (E20)): cast Heroic Strike (+2.5%, pass 1)
   3. threshold 90 -> 45: if rage < 90: cast Bloodrage (+0.7%, pass 1)
@@ -108,12 +108,16 @@ The Fury raid build the open talent search found on 2026-10-08: every legal 51-p
   10. drop 'rage > 80' from the condition: if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring (+1.4%, pass 6)
   11. threshold 1.5s -> 1.125s: if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s: cast Hamstring (+0.4%, pass 6)
   12. move to the top: cast Bloodthirst (+0.2%, pass 6)
+  13. insert before the filler: if number of targets = 1 and rage ≥ 45: cast Heroic Strike (+1.3%, pass 7)
+  14. threshold 45 -> 67.5: if number of targets = 1 and rage ≥ 45: cast Heroic Strike (+0.9%, pass 7)
+  15. threshold 20s -> 30s: if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion (+0.4%, pass 7)
+  16. drop the condition: if number of targets > 1: cast Whirlwind (+0.3%, pass 7)
 
 | # | Priority (the first line whose condition holds is cast) | [`fury-open-raid`](fury-open-raid.md) casts/min |
 |---|---|---|
 | 1 | if (time left in the fight ≤ 45s or time left in the fight ≥ 211.5s): cast Death Wish | 0.3 |
-| 2 | if execute phase (E20): cast Execute | 6.4 |
-| 3 | cast Bloodthirst | 6.6 |
+| 2 | if execute phase (E20): cast Execute | 6.7 |
+| 3 | cast Bloodthirst | 7.6 |
 | 4 | if time left in the fight ≤ 33.75s: cast Recklessness | 0.3 |
 | 5 | cast Goblin Sapper Charge | as ready |
 | 6 | cast Dense Dynamite | as ready |
@@ -123,8 +127,8 @@ The Fury raid build the open talent search found on 2026-10-08: every legal 51-p
 | 10 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 11 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 12 | if (time left in the fight ≤ 33.75s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready |
-| 13 | cast Whirlwind | 4.4 |
-| 14 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 4.4 |
+| 13 | cast Whirlwind | 4.6 |
+| 14 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 4.6 |
 | 15 | if not Battle Shout is up: cast Battle Shout | 0.3 |
 | 16 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.1 |
 
@@ -134,12 +138,12 @@ Damage by ability:
 
 | Ability | [`fury-open-raid`](fury-open-raid.md) |
 |---|---|
-| Auto Attack | 46% |
-| Execute | 24% |
-| Bloodthirst | 15% |
+| Auto Attack | 45% |
+| Execute | 23% |
+| Bloodthirst | 17% |
 | Whirlwind | 9% |
-| Deep Wound | 6% |
-| Dragonbreath Chili | 1% |
+| Deep Wound | 5% |
+| Dragonbreath Chili | 0% |
 
 ## Notes
 

@@ -34,14 +34,14 @@ The Survival build the machine-learning talent search found in a full raid (ever
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Deflection** | 5/5 | changed | Increases your Parry chance by 5%. |
+| **Deflection** | 5/5 | unchanged | Increases your Parry chance by 5%. |
 | **Savage Strikes** | 2/2 | changed | Increases the critical strike chance of all your melee abilities by 4%. |
 | **Survivalist** | 3/5 | changed | Increases your total Health by 6%. |
 | **Clever Traps** | 2/2 | unchanged | Increases the duration of Freezing and Frost trap effects by 30% and the damage of Immolation and Explosive trap effects by 30%. |
 | **Surefooted** | 3/3 | changed | Increases your hit chance by 3% and reduces the duration of movement impairing effects on you by 30%. |
 | **Survival Tactics** | 1/2 | **NEW** | Increases your chance to hit with your Trap and Feign Death abilities by 5%. |
 | **Predator's Edge** | 5/5 | **NEW** | Increases your melee critical strike damage by 30% and your Off Hand weapon damage by 50%. |
-| **Expose Prey** | 2/2 | **NEW** | Your attacks against targets with Hunter's Mark have a 10% chance to activate your Mongoose Bite for 5 sec. |
+| **Expose Prey** | 2/2 | **NEW** | Your attacks against targets with Hunter's Mark have a 10% chance to activate your Mongoose Bite for 10 sec. |
 | **Survivalist's Discipline** | 2/2 | **NEW** | Reduces the cooldown of your Trap and Deterrence abilities by 40%. |
 | **Strider Kick** | 1/1 | **NEW** | A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec. |
 | **Lightning Reflexes** | 5/5 | changed | Increases your Agility by 10%. |
@@ -49,15 +49,15 @@ The Survival build the machine-learning talent search found in a full raid (ever
 
 ## Rank among our builds and the community simulator's
 
-**5 of 5** for `melee-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**5 of 5** for `melee-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`survival-raid`](survival-raid.md) | ours: hand draft | 5/16/30 | 467 | +0.0% | 1070 | -8.6% | 9 s |
-| 2 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 447 | -4.3% | 1062 | -9.2% | 8 s |
-| 3 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 445 | -4.8% | 1086 | -7.1% | 44 s |
-| 4 | [`beast-survival-open-raid`](beast-survival-open-raid.md) | ours: hand draft | 16/11/24 | 380 | -18.6% | 1170 | +0.0% | 126 s |
-| 5 | **[`survival-ml-parse`](survival-ml-parse.md)** | ours: parse build | 5/14/32 | 344 | -26.3% | 1036 | -11.5% | 117 s |
+| 1 | [`survival-raid`](survival-raid.md) | ours: hand draft | 5/16/30 | 486 | +0.0% | 1028 | -2.1% | 9 s |
+| 2 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 464 | -4.6% | 1048 | -0.1% | 44 s |
+| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 463 | -4.7% | 1016 | -3.2% | 8 s |
+| 4 | [`beast-survival-open-raid`](beast-survival-open-raid.md) | ours: hand draft | 16/11/24 | 360 | -25.8% | 1049 | +0.0% | 126 s |
+| 5 | **[`survival-ml-parse`](survival-ml-parse.md)** | ours: parse build | 5/14/32 | 359 | -26.2% | 999 | -4.8% | 117 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -71,7 +71,7 @@ The Survival build the machine-learning talent search found in a full raid (ever
   7. move to the top: cast Mongoose Bite (+0.2%, pass 4)
   8. move to the top: cast Aspect of the Beast (+0.2%, pass 4)
   9. move to the top: if auraIsInactive: cast Summon Hawk (+0.3%, pass 7)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 8 passes, the last 2026-10-06, 2 changes to the base rotation; third-seed check: open winner 739 -> 1118 DPS (+51.4%), survival-raid 752 -> 1022 DPS (+35.9%), melee-survival-raid 767 -> 1040 DPS (+35.6%), opt-melee-dps-raid-dps 767 -> 1015 DPS (+32.4%), survival-ml-parse 767 -> 1040 DPS (+35.6%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 9 passes, the last 2026-10-09, 2 changes to the base rotation; third-seed check: survival-raid 749 -> 1027 DPS (+37.1%), melee-survival-raid 764 -> 1047 DPS (+37.0%), opt-melee-dps-raid-dps 764 -> 1017 DPS (+33.0%), survival-ml-parse 729 -> 998 DPS (+37.0%), beast-survival-open-raid 736 -> 1051 DPS (+42.7%)):
   1. insert before the filler: cast Wing Clip (+10.3%, pass 1)
   2. spell probe: insert in the middle: if auraIsInactive: cast Summon Hawk (+15.0%, pass 2)
 
@@ -97,7 +97,7 @@ Damage by ability:
 | Auto Attack | 55% |
 | Raptor Strike | 14% |
 | Mongoose Bite | 12% |
-| Immolation Trap | 8% |
+| Immolation Trap | 9% |
 | Strider Kick | 4% |
 | Wing Clip | 3% |
 | Dragonbreath Chili | 3% |

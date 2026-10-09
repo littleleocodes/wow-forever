@@ -51,20 +51,20 @@ The Combat build the machine-learning talent search found in a full raid (every 
 
 ## Rank among our builds and the community simulator's
 
-**2 of 10** for `combat-daggers-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b0f0df3); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 10** for `combat-daggers-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 17/32/2 | 419 | +0.0% | 747 | -3.3% | 0 s |
-| 2 | **[`combat-ml-raid`](combat-ml-raid.md)** | ours: hand draft | 16/33/2 | 402 | -4.0% | 772 | +0.0% | 0 s |
-| 3 | [`combat-daggers-raid`](combat-daggers-raid.md) | ours: hand draft | 16/33/2 | 398 | -4.9% | 765 | -1.0% | 0 s |
-| 4 | *Combat Dual-Wield 15/33/3* | community simulator | - | 394 | -6.0% | 754 | -2.3% | 0 s |
-| 5 | *Backstab* | community simulator | - | 371 | -11.5% | 721 | -6.6% | 0 s |
-| 6 | *Mutilate* | community simulator | - | 363 | -13.3% | 700 | -9.3% | 0 s |
-| 7 | *Improved Expose Armor (SS)* | community simulator | - | 350 | -16.4% | 668 | -13.4% | 0 s |
-| 8 | *Assassination Mutilate 31/20/0* | community simulator | - | 349 | -16.5% | 681 | -11.8% | 0 s |
-| 9 | *Sinister Strike* | community simulator | - | 334 | -20.1% | 680 | -11.9% | 0 s |
-| 10 | *Subtlety Hemo 15/0/36* | community simulator | - | 258 | -38.3% | 539 | -30.2% | 0 s |
+| 1 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 17/32/2 | 424 | +0.0% | 713 | -3.0% | 0 s |
+| 2 | **[`combat-ml-raid`](combat-ml-raid.md)** | ours: hand draft | 16/33/2 | 406 | -4.1% | 735 | +0.0% | 0 s |
+| 3 | [`combat-daggers-raid`](combat-daggers-raid.md) | ours: hand draft | 16/33/2 | 404 | -4.8% | 728 | -0.9% | 0 s |
+| 4 | *Combat Dual-Wield 15/33/3* | community simulator | - | 399 | -5.9% | 718 | -2.3% | 0 s |
+| 5 | *Mutilate* | community simulator | - | 383 | -9.6% | 672 | -8.6% | 0 s |
+| 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 382 | -9.9% | 654 | -11.0% | 0 s |
+| 7 | *Backstab* | community simulator | - | 375 | -11.5% | 690 | -6.2% | 0 s |
+| 8 | *Improved Expose Armor (SS)* | community simulator | - | 355 | -16.4% | 642 | -12.7% | 0 s |
+| 9 | *Sinister Strike* | community simulator | - | 340 | -19.9% | 651 | -11.5% | 0 s |
+| 10 | *Subtlety Hemo 15/0/36* | community simulator | - | 270 | -36.3% | 524 | -28.8% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -75,19 +75,20 @@ The Combat build the machine-learning talent search found in a full raid (every 
   4. threshold 3 -> 6: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor (+0.2%, pass 2)
   5. spell probe: insert in the middle: cast Mutilate (+15.6%, pass 4)
   6. threshold 6 -> 12: if time left on Expose Armor < 6 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor (+0.4%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 5 passes, the last 2026-10-02, 3 changes to the base rotation; third-seed check: ml: Combat 707 -> 713 DPS (+0.8%), sim preset: Combat Dual-Wield 15/33/3 697 -> 702 DPS (+0.8%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-09, 4 changes to the base rotation; third-seed check: opt-combat-daggers-raid-raid-dps 687 -> 699 DPS (+1.7%), sim preset: Combat Dual-Wield 15/33/3 690 -> 704 DPS (+2.0%), combat-daggers-raid 699 -> 714 DPS (+2.2%), combat-ml-raid 703 -> 721 DPS (+2.5%)):
   1. insert at the top: if combo points ≥ 4 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate (+0.9%, pass 1)
   2. insert at the top: if combo points ≥ 4 and Slice and Dice is up: cast Cold Blood (+0.3%, pass 1)
   3. spell probe: insert before the filler: cast Mutilate (+9.9%, pass 4)
+  4. drop the condition: if energy < 59 and timeToNextEnergyTick < 1: cast Adrenaline Rush (+1.5%, pass 6)
 
 | # | Priority (the first line whose condition holds is cast) | [`combat-ml-raid`](combat-ml-raid.md) casts/min |
 |---|---|---|
 | 1 | if time left on Expose Armor < 12 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.9 |
-| 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.7 |
+| 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.8 |
 | 3 | if energy < 59 and timeToNextEnergyTick < 1: cast Adrenaline Rush | 0.3 |
 | 4 | if Slice and Dice is up: use every other cooldown when ready | as ready |
-| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.4 |
-| 6 | cast Backstab | 11.8 |
+| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.3 |
+| 6 | cast Backstab | 11.5 |
 
 Lines of the simulator's rotation these builds never cast: cast Mutilate (needs the Mutilate talent).
 
@@ -95,13 +96,13 @@ Damage by ability:
 
 | Ability | [`combat-ml-raid`](combat-ml-raid.md) |
 |---|---|
-| Auto Attack | 48% |
-| Backstab | 37% |
+| Auto Attack | 49% |
+| Backstab | 36% |
 | Deadly Poison | 6% |
 | Dense Sharpening Stone | 3% |
 | Dragonbreath Chili | 2% |
-| Eviscerate | 2% |
 | Goblin Sapper Charge | 2% |
+| Eviscerate | 2% |
 
 ## Notes
 

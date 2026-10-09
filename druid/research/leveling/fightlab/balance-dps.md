@@ -10,51 +10,51 @@ Single-target leveling fights against normal mobs of your level. Levels 10-19 in
 
 | Level | Talents | Fight mean | median | p90 | Downtime/kill | Deaths/100 kills | Time/kill | Kills/hour | Energy/kill | Pushbacks/kill |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 15 | 6 | 18.7s | 18.9s | 23.2s | 10.4s | 0.0 | 37.1s | 97 | 234 | 5.14 |
-| 20 | 11 | 22.8s | 22.6s | 27.7s | 11.7s | 0.0 | 42.5s | 85 | 290 | 6.03 |
-| 30 | 21 | 23.0s | 23.1s | 27.9s | 20.5s | 0.0 | 51.5s | 70 | 792 | 6.43 |
+| 15 | 6 | 19.1s | 19.4s | 23.7s | 12.8s | 0.0 | 39.9s | 90 | 241 | 5.29 |
+| 20 | 11 | 23.2s | 23.1s | 28.3s | 13.5s | 0.0 | 44.7s | 81 | 296 | 6.19 |
+| 30 | 21 | 23.1s | 23.1s | 27.9s | 21.4s | 0.0 | 52.5s | 69 | 793 | 6.45 |
 | 40 | 31 | 27.4s | 26.9s | 34.1s | 25.5s | 0.0 | 60.9s | 59 | 1275 | 7.83 |
-| 50 | 41 | 25.0s | 24.4s | 30.0s | 22.4s | 0.0 | 55.4s | 65 | 1626 | 6.98 |
-| 60 | 51 | 25.5s | 24.9s | 31.0s | 17.8s | 0.0 | 51.3s | 70 | 1813 | 7.33 |
+| 50 | 41 | 25.0s | 24.4s | 30.0s | 22.4s | 0.0 | 55.4s | 65 | 1627 | 6.98 |
+| 60 | 51 | 25.5s | 24.8s | 30.8s | 18.0s | 0.0 | 51.4s | 70 | 1813 | 7.31 |
 
 ## Measured damage shares (vs. the spec model's assumed shares)
 
 | Level | Moonfire | Starfire | Wand | Wrath |
 |---|---|---|---|---|
-| 15 | 17% | 0% | 0% | 83% |
-| 20 | 27% | 0% | 0% | 73% |
+| 15 | 18% | 0% | 0% | 82% |
+| 20 | 28% | 0% | 0% | 72% |
 | 30 | 26% | 60% | 0% | 14% |
 | 40 | 29% | 58% | 0% | 13% |
 | 50 | 24% | 65% | 0% | 11% |
 | 60 | 25% | 63% | 0% | 12% |
 
-Spec model (`_reference/data/scorer/specs`) assumes: starfire 64%, wrath 0%, moonfire_direct 19%, moonfire_dot 0%, insect_swarm 16%, wand_white 5%.
+Spec model (`_reference/data/scorer/specs`) assumes: starfire 65%, wrath 0%, moonfire_direct 18%, moonfire_dot 0%, insect_swarm 18%, wand_white 5%.
 
 ## Realized crit rates and player at each level
 
-- **Level 15**: 1006 health, 933 mana, 40 Int, 41 Spirit, 39 Str, 44 Agi, 101 AP, melee crit 9.8%, 0 spell power, base spell crit 4.5%, armor 994 (caster); mob 328 health, hits for 24, casters 13% of pulls (0.00 interrupts per kill). Crit rates: Moonfire 17%, Wrath 4%. Health after a fight 82%, mana 57%.
-- **Level 20**: 1274 health, 1173 mana, 49 Int, 49 Spirit, 43 Str, 65 Agi, 131 AP, melee crit 14.8%, 0 spell power, base spell crit 8.3%, armor 1529 (caster); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Moonfire 28%, Wrath 8%. Health after a fight 80%, mana 57%.
-- **Level 30**: 1785 health, 1647 mana, 67 Int, 72 Spirit, 51 Str, 94 Agi, 176 AP, melee crit 14.3%, 12 spell power, base spell crit 8.1%, armor 1771 (caster); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Moonfire 29%, Wrath 8%, Starfire 8%, Wand 0%. Health after a fight 79%, mana 39%. Not simulated: Improved Entangling Roots, Nature's Splendor.
-- **Level 40**: 2241 health, 1962 mana, 75 Int, 88 Spirit, 76 Str, 129 Agi, 260 AP, melee crit 14.6%, 24 spell power, base spell crit 7.7%, armor 3336 (caster); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Moonfire 30%, Wrath 8%, Starfire 7%, Wand 0%. Health after a fight 77%, mana 33%. Not simulated: Improved Entangling Roots, Nature's Splendor.
-- **Level 50**: 2772 health, 2338 mana, 86 Int, 98 Spirit, 125 Str, 163 Agi, 394 AP, melee crit 14.8%, 36 spell power, base spell crit 7.6%, armor 3976 (caster); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Moonfire 28%, Wrath 8%, Starfire 7%, Wand 0%. Health after a fight 77%, mana 29%. Not simulated: Improved Entangling Roots, Nature's Splendor.
-- **Level 60**: 3343 health, 2804 mana, 104 Int, 113 Spirit, 104 Str, 206 Agi, 395 AP, melee crit 15.3%, 48 spell power, base spell crit 7.6%, armor 4576 (caster); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Moonfire 29%, Wrath 8%, Starfire 7%, Wand 0%. Health after a fight 80%, mana 31%. Not simulated: Improved Entangling Roots, Nature's Splendor.
+- **Level 15**: 826 health, 933 mana, 40 Int, 41 Spirit, 39 Str, 44 Agi, 101 AP, melee crit 7.0%, 0 spell power, base spell crit 4.6%, armor 412 (caster); mob 328 health, hits for 24, casters 13% of pulls (0.00 interrupts per kill). Crit rates: Moonfire 17%, Wrath 5%. Health after a fight 79%, mana 56%.
+- **Level 20**: 1094 health, 1173 mana, 49 Int, 49 Spirit, 43 Str, 65 Agi, 131 AP, melee crit 12.4%, 0 spell power, base spell crit 8.4%, armor 638 (caster); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Moonfire 29%, Wrath 8%. Health after a fight 76%, mana 58%.
+- **Level 30**: 1605 health, 1647 mana, 67 Int, 72 Spirit, 51 Str, 94 Agi, 176 AP, melee crit 13.3%, 12 spell power, base spell crit 8.2%, armor 763 (caster); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Moonfire 30%, Wrath 8%, Starfire 8%, Wand 0%. Health after a fight 76%, mana 40%. Not simulated: Improved Entangling Roots, Nature's Splendor.
+- **Level 40**: 2061 health, 1962 mana, 75 Int, 88 Spirit, 76 Str, 129 Agi, 260 AP, melee crit 14.2%, 24 spell power, base spell crit 7.8%, armor 3336 (caster); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Moonfire 30%, Wrath 8%, Starfire 7%, Wand 0%. Health after a fight 76%, mana 33%. Not simulated: Improved Entangling Roots, Nature's Splendor.
+- **Level 50**: 2592 health, 2338 mana, 86 Int, 98 Spirit, 125 Str, 163 Agi, 394 AP, melee crit 14.7%, 36 spell power, base spell crit 7.6%, armor 3976 (caster); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Moonfire 28%, Wrath 8%, Starfire 7%, Wand 0%. Health after a fight 76%, mana 30%. Not simulated: Improved Entangling Roots, Nature's Splendor.
+- **Level 60**: 3163 health, 2804 mana, 104 Int, 113 Spirit, 104 Str, 206 Agi, 395 AP, melee crit 15.3%, 48 spell power, base spell crit 7.6%, armor 4576 (caster); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Moonfire 29%, Wrath 8%, Starfire 7%, Wand 0%. Health after a fight 79%, mana 32%. Not simulated: Improved Entangling Roots, Nature's Splendor.
 
 ## Other builds (same mobs, same seeds)
 
 | Level | Build | Time/kill | vs. main | Fight mean | Deaths/100 | Downtime/kill |
 |---|---|---|---|---|---|---|
-| 15 | opt-balance-dps-leveling-st | 37.1s | - | 18.7s | 0.0 | 10.4s |
-| 15 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 26.3s | -29.0% | 17.6s | 0.0 | 0.7s |
-| 20 | opt-balance-dps-leveling-st | 42.5s | - | 22.8s | 0.0 | 11.7s |
-| 20 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 18.7s | -56.0% | 10.0s | 0.0 | 0.7s |
-| 30 | opt-balance-dps-leveling-st | 51.5s | - | 23.0s | 0.0 | 20.5s |
-| 30 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 23.3s | -54.7% | 14.1s | 0.0 | 1.3s |
+| 15 | opt-balance-dps-leveling-st | 39.9s | - | 19.1s | 0.0 | 12.8s |
+| 15 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 26.7s | -33.1% | 17.7s | 0.0 | 1.0s |
+| 20 | opt-balance-dps-leveling-st | 44.7s | - | 23.2s | 0.0 | 13.5s |
+| 20 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 17.2s | -61.4% | 8.7s | 0.0 | 0.5s |
+| 30 | opt-balance-dps-leveling-st | 52.5s | - | 23.1s | 0.0 | 21.4s |
+| 30 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 23.2s | -55.8% | 13.9s | 0.0 | 1.3s |
 | 40 | opt-balance-dps-leveling-st | 60.9s | - | 27.4s | 0.0 | 25.5s |
-| 40 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 25.2s | -58.7% | 15.5s | 0.0 | 1.7s |
+| 40 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 26.0s | -57.3% | 16.2s | 0.0 | 1.7s |
 | 50 | opt-balance-dps-leveling-st | 55.4s | - | 25.0s | 0.0 | 22.4s |
-| 50 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 26.7s | -51.9% | 15.7s | 0.0 | 2.9s |
-| 60 | opt-balance-dps-leveling-st | 51.3s | - | 25.5s | 0.0 | 17.8s |
-| 60 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 28.6s | -44.3% | 17.5s | 0.0 | 3.0s |
+| 50 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 28.4s | -48.8% | 17.5s | 0.0 | 2.8s |
+| 60 | opt-balance-dps-leveling-st | 51.4s | - | 25.5s | 0.0 | 18.0s |
+| 60 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 32.2s | -37.3% | 20.4s | 0.0 | 3.8s |
 
 ## Talent values at level 30
 
@@ -62,14 +62,14 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Moonglow | 3 | +13.5% | +3.2% ± 0.4 | +4.5% | +15.7% | 0.0 |
-| Improved Wrath | 5 | +5.9% | +7.1% ± 0.4 | +1.2% | +1.9% | 0.0 |
-| Improved Starfire | 5 | +5.2% | +9.8% ± 0.3 | +1.0% | +15.0% | 0.0 |
-| Eclipse | 1 | +4.5% | +16.8% ± 0.3 | +4.5% | +4.7% | 0.0 |
-| Improved Moonfire | 2 | +2.1% | +2.9% ± 0.2 | +1.1% | +1.3% | 0.0 |
-| Nature's Majesty | 2 | +1.6% | +1.7% ± 0.2 | +0.8% | +1.1% | 0.0 |
+| Moonglow | 3 | +12.2% | +2.5% ± 0.4 | +4.1% | +14.0% | 0.0 |
+| Improved Wrath | 5 | +5.9% | +7.1% ± 0.6 | +1.2% | +3.2% | 0.1 |
+| Improved Starfire | 5 | +5.2% | +9.7% ± 0.3 | +1.0% | +14.7% | 0.0 |
+| Eclipse | 1 | +5.0% | +17.9% ± 0.3 | +5.0% | +4.6% | 0.0 |
+| Improved Moonfire | 2 | +1.6% | +2.5% ± 0.2 | +0.8% | +1.3% | 0.0 |
+| Nature's Majesty | 2 | +1.2% | +1.8% ± 0.2 | +0.6% | +1.0% | 0.0 |
 | Improved Entangling Roots | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +1.0% | 0.0 |
-| Nature's Splendor | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +3.8% | 0.0 |
+| Nature's Splendor | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +3.9% | 0.0 |
 
 ## Talent values at level 60
 
@@ -77,19 +77,19 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Eclipse | 3 | +19.1% | +48.0% ± 0.5 | +6.4% | +16.4% | 0.0 |
-| Moonglow | 3 | +8.3% | +2.4% ± 0.5 | +2.8% | +9.0% | 0.0 |
-| Moonfury | 5 | +7.6% | +8.9% ± 0.5 | +1.5% | +10.5% | 0.0 |
-| Improved Wrath | 5 | +6.1% | +5.6% ± 0.8 | +1.2% | +1.3% | 0.1 |
-| Improved Starfire | 5 | +5.2% | +9.2% ± 0.5 | +1.0% | +19.0% | 0.0 |
-| Naturalist | 5 | +4.1% | +4.8% ± 0.4 | +0.8% | +3.8% | 0.0 |
-| Reflection | 3 | +3.9% | +0.8% ± 0.8 | +1.3% | +2.9% | 0.1 |
-| Nature's Majesty | 2 | +2.8% | +2.9% ± 0.3 | +1.4% | +3.1% | 0.0 |
-| Vengeance | 5 | +2.6% | +2.6% ± 0.4 | +0.5% | +11.0% | 0.0 |
+| Eclipse | 3 | +19.0% | +48.3% ± 0.5 | +6.3% | +16.1% | 0.0 |
+| Moonglow | 3 | +8.3% | +2.6% ± 0.5 | +2.8% | +8.1% | 0.0 |
+| Moonfury | 5 | +7.5% | +8.9% ± 0.4 | +1.5% | +10.3% | 0.0 |
+| Improved Wrath | 5 | +6.1% | +5.6% ± 0.8 | +1.2% | +2.0% | 0.2 |
+| Improved Starfire | 5 | +5.1% | +9.1% ± 0.5 | +1.0% | +18.6% | 0.0 |
+| Naturalist | 5 | +4.0% | +4.9% ± 0.4 | +0.8% | +3.7% | 0.0 |
+| Reflection | 3 | +4.0% | +0.5% ± 0.7 | +1.3% | +4.6% | 0.1 |
+| Nature's Majesty | 2 | +2.8% | +2.7% ± 0.3 | +1.4% | +3.0% | 0.0 |
+| Vengeance | 5 | +2.5% | +2.5% ± 0.4 | +0.5% | +10.8% | 0.0 |
 | Improved Moonfire | 2 | +1.9% | +2.4% ± 0.3 | +0.9% | +2.0% | 0.0 |
-| Moonkin Form | 1 | +0.8% | -0.8% ± 0.3 | +0.8% | +5.7% | 0.0 |
-| Nature's Grace | 1 | +0.3% | +0.4% ± 0.3 | +0.3% | +3.7% | 0.0 |
-| Heart of the Wild | 2 | +0.2% | -0.3% ± 0.3 | +0.1% | +0.3% | 0.0 |
+| Moonkin Form | 1 | +1.3% | -1.7% ± 0.3 | +1.3% | +5.6% | 0.0 |
+| Nature's Grace | 1 | +0.3% | +0.3% ± 0.3 | +0.3% | +3.6% | 0.0 |
+| Heart of the Wild | 2 | +0.2% | -0.1% ± 0.2 | +0.1% | +0.1% | 0.0 |
 | Improved Entangling Roots | 3 | +0.0% | +0.0% ± 0.0 | +0.0% | +2.3% | 0.0 |
 | Nature's Focus | 5 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.0% | 0.0 |
 | Nature's Splendor | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +3.7% | 0.0 |
@@ -105,7 +105,7 @@ Unverified for WoW: Forever (creature stats are server side; the Wowhead Forever
 (5% at 1-5, 14% at 10, 12-23% from 15 to 55, 9% at 60; `mob_stats.json`).); a caster stands at up to 30 yd and casts a bolt every 3.5 s for 1.6x its melee swing (spell damage, no armor) until interrupted or stunned, then runs in and melees until the lockout ends; Median health of a mage-class mob (Classic 1.12 creature database: 75-90% of the all-mob median).
 - Runners: 0% of pulls flee at 20% health for 5 s (roots and stuns hold them; `RUNNER_SHARE`, 0 = not simulated, see sensitivity.md).
 - Spell miss: Classic spell miss vs a mob `level_diff` levels above the caster: 4% at +0, 5% at +1, 6% at +2, 17% at +3. Partial resists cost 2.5% on average.
-- Spell crit: 0.91% base plus Intellect / (Intellect per 1% spell crit: 59.5 at 60 for mages (Forever client: 0.0168% per Intellect at max level), scaling with level (~30 at 30).)
+- Spell crit: 0.91% base plus Intellect / (Intellect per 1% spell crit for mages: the client's PlayerExpectedStat by level (59.5 at 60; 2026-10-09), else 59.5 x L / 60.)
 - Pushback: 0.5s for the first melee hit taken during a cast, 0.5s per further hit; a direct hit breaks a freeze with 20% chance.
 - Gear: Gear stats by level from the Classic 1.12 item database (`gear_stats.json`, built by gear_stats.py): every slot holds a typical
 good pick among the fixed-stat green items (GEAR_TIER "greens", mostly quest rewards) or the blue items ("blues") the class can wear,

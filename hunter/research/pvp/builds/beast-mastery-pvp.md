@@ -26,7 +26,7 @@ The Beast Mastery PvP build derived on 2026-09-30 (derive_pvp.py): the stats mod
 | **Bestial Swiftness** | 1/1 | changed | Increases the movement speed of your pets by 30%. |
 | **Unleashed Fury** | 5/5 | changed | Increases the damage done by your pets and hawks by 15%. |
 | **Ferocity** | 5/5 | changed | Increases the critical strike chance of your pets and hawks by 10%. |
-| **Summon Hawk** | 1/1 | **NEW** | Command a hawk to dive-bomb your targeted enemy, dealing 32 Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot. |
+| **Summon Hawk** | 1/1 | **NEW** | Command a hawk to dive-bomb your targeted enemy, dealing 32 plus 5% of your Ranged Attack Power Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot. |
 | **Spirit Bond** | 2/2 | unchanged | While your pet is active, you and your pet will regenerate 1% of total health every 5 sec. |
 | **Intimidation** | 1/1 | changed | Command your pet to Stun the target for 3 sec on its next successful attack, which also gains 100% increased critical strike chance. Generates high threat. |
 | **Bestial Discipline** | 2/2 | changed | Increases the Focus regeneration of your pets by 20% and allows 50% of your Mana regeneration to continue while casting. |
@@ -41,7 +41,7 @@ The Beast Mastery PvP build derived on 2026-09-30 (derive_pvp.py): the stats mod
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Deflection** | 5/5 | changed | Increases your Parry chance by 5%. |
+| **Deflection** | 5/5 | unchanged | Increases your Parry chance by 5%. |
 | **Entrapment** | 5/5 | changed | When your traps are triggered, all affected targets are Entrapped, preventing them from moving for 5 sec. |
 | **Improved Wing Clip** | 3/3 | changed | Gives your Wing Clip ability a 20% chance to immobilize the target for 5 sec. |
 | **Surefooted** | 3/3 | changed | Increases your hit chance by 3% and reduces the duration of movement impairing effects on you by 30%. |
