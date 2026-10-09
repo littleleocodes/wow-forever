@@ -363,6 +363,21 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   removed there): our additions to the community simulator. Frostfire Bolt was one until 2026-10-03, when the fork implemented it (retired).
   Since b0f0df3 also Lightning Reflexes at 2% Agility a rank (70205's trait value; the fork's curve for spell 19168 still says 3%; a curve
   audit of 354 multi-rank talents against the 70170 tooltips found no other damage talent off). Since 2026-10-03 also Forever's hunter pet scaling (`patches/forever/sim/hunter/pet_scaling.go`; Blizzard's class deep dive: pets get stats from the hunter's gear; the community's numbers: 10% of the highest attack power, 100% of crit, 30% of armor, 2 health per Stamina; the fork gives pets nothing; `WOW_FOREVER_PET_SCALING=0` turns it off): a Beast Mastery pet 97 -> 166 DPS in a full raid, the build +8.5%. Since 2026-10-08 (client 70291's own text: GlobalStrings and Camelot/PaperDollFrame.lua) the pet shares are confirmed, and two more patches: **demon scaling** (`sim/warlock/demon_scaling.go`: attack power 17% of the warlock's spell damage, spell damage 10%, armor 35%, 7.5 health per Stamina, 100% of its spell crit; our readings: Fire or Shadow, whichever is higher, crit on melee too, hit inherited at an assumed 100%; `WOW_FOREVER_DEMON_SCALING=0`; demon-keeping warlocks +3.6-4.2%) and the **pet hit rule** (`foreverPetHitSpeed`: Forever does not normalize pet damage by attack speed; the Faster Attack passives raise a 2.0 s base and forum logs put a 1.2 s cat 42% ahead at level 20, so every pet hits with the fork's 2.0 s base; our entries' 1.2 s cat: hunters with a pet +3.0-3.9%; `WOW_FOREVER_PET_NORMALIZE=1` restores the fork's rule). `setup.py`'s edits take `replace`/`with` as well as `after`/`insert`; `patches/README.md` lists every patch with its sources. Numbers that depend on a patch are our model: say so.
+- **Audit of 2026-10-09** (user request: "a full search for any missing data"; a research pass over Blizzard's deep dives, beta notes
+  and the 70291 client, each claim checked against the source and the code): configuration gaps fixed: the full raid carried the fork's
+  four Atiesh auras (casters 4-7% high; `foreverbench` leaves them out, `"atiesh": true` restores), 15 gear sets had no enchants (Balance,
+  feral, Retribution, Arms, Fury: the gear tools only carry a slot's old enchant; `raidsim/fill_enchants.py` fills them from role templates
+  and `gear_tiers.make` fills every set it writes; +3.5% to +8.5%), the feral sets had the idol in the main hand (the fork's 16-slot launch
+  preset; numbers unchanged, but the weapon was never optimized), consumables (Wizard Oil for warlocks and caster shamans, sharpening
+  stones where the weapon slot is free, Mighty Rage Potion for warriors). Mechanics patched (`patches/README.md`): crit rage x2.0, Bear
+  Form threat +50%, rage from damage taken over the expected creature health, no 1% hit suppression or spell-miss floor, the downranking
+  penalty (TBC's rule as the assumption, also in the healer lab), no off-hand hit bonus under a queued Raptor Strike. The fight lab got
+  Forever's rage rules (`tables.RAGE_MODEL`: normalized swing rage, double crit rage, rage taken over the expected creature health, 1.25
+  decay; Arms leveling up to 7% faster at 60). Open (not modelled, in `_reference/search-improvements.md`): temporary enchants stacking with
+  poisons and shaman imbues for rogues, the warlock's Firestone and Spellstone imbues, the lower proc chance of low ranks, the client's
+  ExpectedStat creature health for leveling mobs (7-35% above the lab's Classic medians; whether the server uses it is unknown, so
+  `MOB_HP_MULT` stays a sensitivity), glancing and crit suppression against bosses, negative resistance from debuffs, Forever's Spirit
+  regeneration, crit per stat point below level 40, leveling gear from Forever's item database.
 - **New-builds survey** (2026-09-28, user request): `_reference/data/new-builds.json` (hand-kept: per class the targets searched
   around new spells, each a rotation-only entry with its own rotation and a build, plus notes; no numbers) and
   `render_new_builds.py` (regen step) write `_reference/new-builds-survey.md` and the "New spells and builds" section of each raid

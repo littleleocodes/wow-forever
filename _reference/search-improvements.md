@@ -21,6 +21,8 @@
 
 | Date | Change | Why (evidence) | Effect |
 |---|---|---|---|
+| 2026-10-09 night | Configuration audit: Atiesh out of the full raid; enchants on 15 gear sets (`fill_enchants.py`, also inside `gear_tiers.make`); feral weapon and idol in their slots; oils, stones and Mighty Rage Potion added | A research pass and a check of every gear set and consumable list: the fork's full party carries Naxxramas's Atiesh, the gear tools never add an enchant a preset lacked, one preset is misaligned | Full raid: casters -4% to -7%; Arms +7.4%, Fury +8.5%, Retribution +4.4%, Balance +3.5%, feral +6.2% (enchants); warlock +4.4%, Elemental +3.8% (oil); Arms +5.8% (stone and potion). Larger than most search gains |
+| 2026-10-09 night | Mechanics from Blizzard's notes and the client: crit rage x2.0, Bear Form threat +50%, rage from damage taken over the expected creature health, no 1% hit suppression or spell floor, downranking penalty, Raptor Strike queue; the fight lab's rage rules; the healer lab's penalty | Each statement quoted in `patches/README.md` | Warriors +1.8% to +2.8%, melee +0.5% to +0.8%; Smite -10.9% and Fire -4.0% until their rotations are re-tuned; Arms leveling up to 7% faster; Holy paladin capacity -5% |
 | 2026-10-08 night | Demon scaling and the pet hit rule patched into the simulator (`patches/README.md`) | The client's own UI text (build 70291) gives the demon percentages; the Faster Attack passives and two forum logs show pet damage is not normalized by attack speed, which the fork does | Full raid, 3,000 fights: demon-keeping warlocks +3.6-4.2%, hunters with a pet +3.0-3.9%; sacrifice and Lone Wolf builds unchanged |
 | 2026-10-08 night | The fight lab's pets follow the same rules (`tables.PET_SCALING`, `HUNTER_PET_SPEED`; engine pets get a spell power) | Its hunter pet and demons inherited nothing and the cat swung at 2.0 s, the leveling half of the same gap | Hunter leveling 4-11% faster per kill, warlock 2-5% (400 fights, levels 20-60); the mage regression is identical with and without the change; its baseline moved with the 70291 spell ranks (identical before that commit) |
 | 2026-10-08 night | `apl_opt --skip-commit <sha>` skips entries whose rotation record was written on that simulator commit | A restarted `--all` pass redoes every finished entry (no resume) | The re-baseline restart after the pet patches kept the mage rotations already tuned on 2ce8265 |
@@ -64,8 +66,13 @@
 6. **Fight variety.** Done 2026-10-08: `raidsim/fight_variety.py` races each spec's pick and next builds in five full-raid fights
    (standard, three targets, Undead, 90 s, 300 s) and flags a pick 2% behind; the sweep's last phase runs it for every class.
 7. **Model fidelity** (biggest real-game gap, not search): demon scaling and the pet hit rule are patched from the client's text and
-   forum logs (2026-10-08) but unmeasured at level 60 (a beta tester's pet pane and a level-60 pet log would confirm them); the final
-   beta build refresh; comparison with beta logs and real leveling times.
+   forum logs (2026-10-08) but unmeasured at level 60; the final beta build refresh; comparison with beta logs and real leveling times.
+   Open after the 2026-10-09 audit, roughly by size: temporary enchants stacking with poisons and shaman imbues (rogues and Enhancement
+   +1-3%, needs a second enchant slot in the simulator); the warlock's Firestone and Spellstone imbues (not in the simulator); the lower
+   proc chance of low ranks; leveling mob health from the client's ExpectedStat table (+7-35% over the lab's Classic medians; unknown
+   whether the server uses it: a `MOB_HP_MULT` sensitivity); glancing and crit suppression against bosses (a beta tester's Skills
+   panel shows them); negative resistance from debuffs (testable at level 30 with Curse of the Elements rank 2); Forever's Spirit regen;
+   crit per stat point below level 40 (client PlayerExpectedStat); leveling gear from Forever's item database.
 8. **Weapon variants on the pages.** The rogue's swords entry found 18/33/0 at 746.6 DPS, +1.9% over our swords builds, but the Combat
    page shows one build per spec (the daggers build at 770), so a swords player never sees it. Idea: a weapon line on the page when a
    spec's entries differ in weapon type (swords, daggers, maces), each with its entry's best build. A page change, not a search change.
@@ -107,6 +114,9 @@ polish kept two block moves for the Combat-Subtlety pick (-0.3% and -0.8% at lev
 
 ## Self-audit checklist (after every class)
 
+- Configuration, not only the search (2026-10-09: four configuration errors moved specs 4-8%, more than most search gains): the full
+  raid's buff list against the current phase, an enchant in every enchantable slot of every gear set, each spec's consumables (oil,
+  stone, potion), items in the slots their type allows.
 - Step timings in the logs (polish, search, certificate, structural ranking, re-tunes) against earlier classes.
 - Every lead: its cause (search gap, rotation, gear, bench bug) and whether a known positive should be added.
 - Winners holding abilities the rotation never casts; "Not in this build" notes on the leveling pages.

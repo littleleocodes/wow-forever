@@ -338,6 +338,13 @@ Each class folder now opens with player pages and keeps the research below:
   with or without the pet change). Open: the scorer's calibrations (fight lab and raid) predate 70291 and the pet patches for every
   class; they feed the stats model's talent orders, screening, respec plans and audits, not the page picks (`rebuild.py <classes>
   --steps calibrate,raid` when time allows).
+  **Audit of 2026-10-09 00:20-00:45:** a background research pass (Blizzard's deep dives and beta notes, the 70291 client's
+  GlobalStrings and ExpectedStat tables, the fork's code) found configuration and mechanic gaps; each claim was checked against the
+  source, then fixed and committed (7fbff0c, 2ad4c51, 27389e5): Atiesh out of the full raid, enchants on 15 gear sets, the feral
+  slots, oils, stones and Mighty Rage Potion, crit rage x2.0, Bear threat +50%, rage taken over the expected creature health, hit caps,
+  the downranking penalty (simulator and healer lab), the Raptor Strike queue, and Forever's rage rules in the fight lab. The
+  re-baseline was stopped at the warlock's entries and restarted at 00:42 for every entry (the bench before the audit is kept as
+  `foreverbench-preaudit.exe`). Open items are listed in CLAUDE.md's audit note and the improvement log.
   **Racials (2026-10-08 05:2x):** the simulator applies more racials in Forever than Classic (Tauren +1% hit, Night Elf's Elune's Light
   +10% crit, Berserking, Blood Fury, weapon specializations), and the generic cooldown line casts the on-use ones, so stripping rotation
   lines would not remove them. Patch `patches/forever/sim/core/no_racials.go` (+ an edits.json insertion in racials.go) switches all of them
