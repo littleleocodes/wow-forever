@@ -13,7 +13,12 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | [Holy — Raid Healer (healer lab winner adopted 2026-09-26)](builds/holy-raid-healer.md) | 22/29/0 | HEALER | [holy-raid-healer](../talents/classic-baseline/holy-raid-healer.md) |
 | [Discipline — Penance / Divine Aegis / Power Infusion (raid healer)](builds/disc-penance-healer.md) | 31/20/0 | HEALER | [disc-power-infusion-healer](../talents/classic-baseline/disc-power-infusion-healer.md) |
 | [Discipline/Holy — Smite (raid)](builds/smite-discipline-raid.md) | 31/17/3 | DPS | — |
-| [Smite — Raid (open talent search)](builds/smite-open-raid.md) | 21/23/7 | DPS | — |
+
+Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
+
+| Build | Split | Role |
+|---|---|---|
+| [Smite — Raid (open talent search)](builds/smite-open-raid.md) 🔬 | 21/23/7 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

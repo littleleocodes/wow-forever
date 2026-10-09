@@ -11,8 +11,13 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
 | [Leveling — Feral cat (fight-lab winner adopted 2026-09-27)](builds/leveling-feral.md) | 9/31/11 | DPS | [leveling-feral](../talents/classic-baseline/leveling-feral.md) |
-| [Restoration — Leveling into the raid build](builds/restoration-leveling.md) | 11/5/35 | DPS | — |
-| [Balance — Leveling (open talent search)](builds/balance-open-leveling.md) | 36/2/13 | DPS | — |
+
+Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
+
+| Build | Split | Role |
+|---|---|---|
+| [Restoration — Leveling into the raid build](builds/restoration-leveling.md) 🔬 | 11/5/35 | DPS |
+| [Balance — Leveling (open talent search)](builds/balance-open-leveling.md) 🔬 | 36/2/13 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

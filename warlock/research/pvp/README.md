@@ -11,9 +11,14 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
 | [Soul Link / Shadow Mastery (PvP)](builds/pvp-soul-link.md) | 30/21/0 | DPS | [pvp-soul-link](../talents/classic-baseline/pvp-soul-link.md) |
-| [Affliction — PvP (derived)](builds/affliction-pvp.md) | 30/21/0 | DPS | — |
-| [Demonology — PvP (derived)](builds/demonology-pvp.md) | 21/30/0 | DPS | — |
-| [Destruction — PvP (derived)](builds/destruction-pvp.md) | 21/0/30 | DPS | — |
+
+Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
+
+| Build | Split | Role |
+|---|---|---|
+| [Affliction — PvP (derived)](builds/affliction-pvp.md) 🔬 | 30/21/0 | DPS |
+| [Demonology — PvP (derived)](builds/demonology-pvp.md) 🔬 | 21/30/0 | DPS |
+| [Destruction — PvP (derived)](builds/destruction-pvp.md) 🔬 | 21/0/30 | DPS |
 
 Classic Era reference builds: [pvp-soul-link](../talents/classic-baseline/pvp-soul-link.md).
 

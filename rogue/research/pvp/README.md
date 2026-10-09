@@ -12,8 +12,13 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 |---|---|---|---|
 | [Seal Fate / Mutilate Daggers (PvP)](builds/pvp-seal-fate-daggers.md) | 30/8/13 | DPS | [pvp-seal-fate-daggers](../talents/classic-baseline/pvp-seal-fate-daggers.md) |
 | [Hemorrhage / Preparation / Thousand Cuts (PvP)](builds/pvp-hemo-prep.md) | 20/0/31 | DPS | [pvp-hemo-prep](../talents/classic-baseline/pvp-hemo-prep.md) |
-| [Assassination — PvP (derived)](builds/assassination-pvp.md) | 30/0/21 | DPS | — |
-| [Combat — PvP (derived)](builds/combat-pvp.md) | 3/31/17 | DPS | — |
+
+Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
+
+| Build | Split | Role |
+|---|---|---|
+| [Assassination — PvP (derived)](builds/assassination-pvp.md) 🔬 | 30/0/21 | DPS |
+| [Combat — PvP (derived)](builds/combat-pvp.md) 🔬 | 3/31/17 | DPS |
 
 Classic Era reference builds: [pvp-seal-fate-daggers](../talents/classic-baseline/pvp-seal-fate-daggers.md), [pvp-hemo-prep](../talents/classic-baseline/pvp-hemo-prep.md).
 

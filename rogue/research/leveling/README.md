@@ -11,10 +11,15 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
 | [Leveling — Assassination with swords (31/20/0)](builds/leveling-combat-swords.md) | 31/20/0 | DPS | [leveling-combat-swords](../talents/classic-baseline/leveling-combat-swords.md) |
-| [Combat — Leveling (generated)](builds/combat-leveling.md) | 18/31/2 | DPS | — |
-| [Subtlety — Leveling (derived)](builds/subtlety-leveling.md) | 5/16/30 | DPS | — |
-| [Daggers (split) — Leveling (open talent search)](builds/daggers-split-open-leveling.md) | 22/16/13 | DPS | — |
-| [Combat-Subtlety — Leveling (open talent search)](builds/combat-subtlety-open-leveling.md) | 11/17/23 | DPS | — |
+
+Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
+
+| Build | Split | Role |
+|---|---|---|
+| [Combat — Leveling (generated)](builds/combat-leveling.md) ⚗ | 18/31/2 | DPS |
+| [Subtlety — Leveling (derived)](builds/subtlety-leveling.md) 🔬 | 5/16/30 | DPS |
+| [Daggers (split) — Leveling (open talent search)](builds/daggers-split-open-leveling.md) 🔬 | 22/16/13 | DPS |
+| [Combat-Subtlety — Leveling (open talent search)](builds/combat-subtlety-open-leveling.md) 🔬 | 11/17/23 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

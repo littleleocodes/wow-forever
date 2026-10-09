@@ -16,16 +16,21 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | [Marksmanship — Summon Hawk (raid)](builds/mm-hawk-raid.md) | 22/29/0 | DPS | — |
 | [Survival — Melee (Strider Kick / Lacerating Strikes)](builds/survival-melee.md) | 9/11/31 | DPS | — |
 | [Melee Survival — Lone Wolf (dual wield, raid)](builds/melee-survival-raid.md) | 5/11/35 | DPS | — |
-| [Beast Mastery — Raid (derived)](builds/beast-mastery-raid.md) | 30/21/0 | DPS | — |
-| [Survival — Raid (derived)](builds/survival-raid.md) | 5/16/30 | DPS | — |
-| [Beast Mastery — Full raid (parse) (machine-learning search)](builds/beast-mastery-ml-parse.md) | 31/20/0 | DPS | — |
-| [Marksmanship — Raid (machine-learning search)](builds/marksmanship-ml-raid.md) | 11/40/0 | DPS | — |
-| [Marksmanship — Full raid (parse) (machine-learning search)](builds/marksmanship-ml-parse.md) | 7/44/0 | DPS | — |
-| [Survival — Full raid (parse) (machine-learning search)](builds/survival-ml-parse.md) | 5/14/32 | DPS | — |
-| [Beast-Marks — Raid (machine-learning search)](builds/beast-marks-ml-raid.md) | 28/23/0 | DPS | — |
-| [Marksmanship — With a pet (open talent search)](builds/marksmanship-with-a-pet-open-raid.md) | 7/39/5 | DPS | — |
-| [Beast-Marks — Raid (open talent search)](builds/beast-marks-open-raid.md) | 27/21/3 | DPS | — |
-| [Beast-Survival — Raid (open talent search)](builds/beast-survival-open-raid.md) | 16/11/24 | DPS | — |
+
+Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
+
+| Build | Split | Role |
+|---|---|---|
+| [Beast Mastery — Raid (derived)](builds/beast-mastery-raid.md) 🔬 | 30/21/0 | DPS |
+| [Survival — Raid (derived)](builds/survival-raid.md) 🔬 | 5/16/30 | DPS |
+| [Beast Mastery — Full raid (parse) (machine-learning search)](builds/beast-mastery-ml-parse.md) 🔬 | 31/20/0 | DPS |
+| [Marksmanship — Raid (machine-learning search)](builds/marksmanship-ml-raid.md) 🔬 | 11/40/0 | DPS |
+| [Marksmanship — Full raid (parse) (machine-learning search)](builds/marksmanship-ml-parse.md) 🔬 | 7/44/0 | DPS |
+| [Survival — Full raid (parse) (machine-learning search)](builds/survival-ml-parse.md) 🔬 | 5/14/32 | DPS |
+| [Beast-Marks — Raid (machine-learning search)](builds/beast-marks-ml-raid.md) 🔬 | 28/23/0 | DPS |
+| [Marksmanship — With a pet (open talent search)](builds/marksmanship-with-a-pet-open-raid.md) 🔬 | 7/39/5 | DPS |
+| [Beast-Marks — Raid (open talent search)](builds/beast-marks-open-raid.md) 🔬 | 27/21/3 | DPS |
+| [Beast-Survival — Raid (open talent search)](builds/beast-survival-open-raid.md) 🔬 | 16/11/24 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

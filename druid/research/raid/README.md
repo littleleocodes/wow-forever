@@ -15,7 +15,12 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | [Feral — Cat DPS (simulator winner adopted 2026-09-26)](builds/feral-cat-dps.md) | 9/32/10 | DPS | [feral-cat-dps](../talents/classic-baseline/feral-cat-dps.md) |
 | [Feral — Bear Tank (simulator winner adopted 2026-09-27)](builds/feral-bear-tank.md) | 7/35/9 | TANK | [feral-bear-tank](../talents/classic-baseline/feral-bear-tank.md) |
 | [Balance — Moonkin / Eclipse (simulator winner adopted 2026-09-26)](builds/balance-moonkin-raid.md) | 33/5/13 | DPS | [balance-moonkin-raid](../talents/classic-baseline/balance-moonkin-raid.md) |
-| [Feral Combat — Shifting Power (the simulator's Feral Cat 9/35/7)](builds/feral-combat-shifting-power-raid.md) | 9/35/7 | DPS | — |
+
+Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
+
+| Build | Split | Role |
+|---|---|---|
+| [Feral Combat — Shifting Power (the simulator's Feral Cat 9/35/7)](builds/feral-combat-shifting-power-raid.md) 🔬 | 9/35/7 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

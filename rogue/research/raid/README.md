@@ -15,8 +15,13 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | [Assassination — Seal Fate / Vigor (raid DPS; formerly the Mutilate draft)](builds/assassination-mutilate-raid.md) | 30/21/0 | DPS | — |
 | [Assassination — Seal Fate daggers (raid)](builds/assassination-seal-fate-raid.md) | 30/19/2 | DPS | — |
 | [Subtlety — Hemorrhage (raid)](builds/subtlety-hemo-raid.md) | 20/0/31 | DPS | — |
-| [Assassination — Raid (machine-learning search)](builds/assassination-ml-raid.md) | 30/19/2 | DPS | — |
-| [Combat — Raid (machine-learning search)](builds/combat-ml-raid.md) | 16/33/2 | DPS | — |
+
+Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
+
+| Build | Split | Role |
+|---|---|---|
+| [Assassination — Raid (machine-learning search)](builds/assassination-ml-raid.md) 🔬 | 30/19/2 | DPS |
+| [Combat — Raid (machine-learning search)](builds/combat-ml-raid.md) 🔬 | 16/33/2 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

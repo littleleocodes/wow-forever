@@ -11,8 +11,13 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
 | [Shadow (PvP / solo)](builds/shadow-pvp.md) | 16/0/35 | DPS | [pvp-shadow](../talents/classic-baseline/pvp-shadow.md) |
-| [Discipline — PvP (derived)](builds/discipline-pvp.md) | 32/3/16 | HEALER | — |
-| [Holy — PvP (derived)](builds/holy-pvp.md) | 0/35/16 | HEALER | — |
+
+Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
+
+| Build | Split | Role |
+|---|---|---|
+| [Discipline — PvP (derived)](builds/discipline-pvp.md) 🔬 | 32/3/16 | HEALER |
+| [Holy — PvP (derived)](builds/holy-pvp.md) 🔬 | 0/35/16 | HEALER |
 
 Classic Era reference builds: [pvp-shadow](../talents/classic-baseline/pvp-shadow.md).
 

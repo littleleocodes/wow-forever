@@ -11,8 +11,13 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
 | [Arms — Mortal Strike (PvP)](builds/arms-pvp.md) | 31/20/0 | DPS | [arms-pvp](../talents/classic-baseline/arms-pvp.md) |
-| [Fury — PvP (derived)](builds/fury-pvp.md) | 14/36/1 | DPS | — |
-| [Protection — PvP (derived)](builds/protection-pvp.md) | 0/21/30 | DPS | — |
+
+Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
+
+| Build | Split | Role |
+|---|---|---|
+| [Fury — PvP (derived)](builds/fury-pvp.md) 🔬 | 14/36/1 | DPS |
+| [Protection — PvP (derived)](builds/protection-pvp.md) 🔬 | 0/21/30 | DPS |
 
 Classic Era reference builds: [arms-pvp](../talents/classic-baseline/arms-pvp.md).
 

@@ -13,9 +13,14 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | [Restoration — Raid Healer (healer lab winner adopted 2026-09-26)](builds/resto-raid-healer.md) | 0/10/41 | HEALER | [resto-raid-healer](../talents/classic-baseline/resto-raid-healer.md) |
 | [Elemental — Lava Burst / Lightning Overload (simulator winner adopted 2026-09-26)](builds/elemental-raid-dps.md) | 29/22/0 | DPS | [elemental-raid-dps](../talents/classic-baseline/elemental-raid-dps.md) |
 | [Enhancement — Stormstrike / Maelstrom Weapon (simulator winner adopted 2026-09-27)](builds/enhancement-raid-dps.md) | 11/31/9 | DPS | [enhancement-raid-support](../talents/classic-baseline/enhancement-raid-support.md) |
-| [Elemental — Raid (generated)](builds/elemental-raid.md) | 31/7/13 | DPS | — |
-| [Enhancement — Raid (machine-learning search)](builds/enhancement-ml-raid.md) | 19/32/0 | DPS | — |
-| [Elemental-Enhancement — Raid (machine-learning search)](builds/elemental-enhancement-ml-raid.md) | 22/29/0 | DPS | — |
+
+Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
+
+| Build | Split | Role |
+|---|---|---|
+| [Elemental — Raid (generated)](builds/elemental-raid.md) ⚗ | 31/7/13 | DPS |
+| [Enhancement — Raid (machine-learning search)](builds/enhancement-ml-raid.md) 🔬 | 19/32/0 | DPS |
+| [Elemental-Enhancement — Raid (machine-learning search)](builds/elemental-enhancement-ml-raid.md) 🔬 | 22/29/0 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

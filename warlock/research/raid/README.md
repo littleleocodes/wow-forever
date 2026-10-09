@@ -15,8 +15,13 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | [Destruction — Immolate / Conflagrate / Incinerate (simulator winner adopted 2026-09-28)](builds/destruction-fire-raid.md) | 22/11/18 | DPS | — |
 | [Demonology — Demonic Pact (raid)](builds/demonology-pact-raid.md) | 2/31/18 | DPS | — |
 | [Destruction — Incinerate (raid)](builds/destruction-incinerate-raid.md) | 9/11/31 | DPS | — |
-| [Destruction — Raid (machine-learning search)](builds/destruction-ml-raid.md) | 10/11/30 | DPS | — |
-| [Demonology — Raid (machine-learning search)](builds/demonology-ml-raid.md) | 2/31/18 | DPS | — |
+
+Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
+
+| Build | Split | Role |
+|---|---|---|
+| [Destruction — Raid (machine-learning search)](builds/destruction-ml-raid.md) 🔬 | 10/11/30 | DPS |
+| [Demonology — Raid (machine-learning search)](builds/demonology-ml-raid.md) 🔬 | 2/31/18 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

@@ -14,8 +14,13 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | [Fury — Two-Handed (Improved Slam / Bloodthrill)](builds/arms-2h-raid.md) | 19/32/0 | DPS | [fury-2h-raid](../talents/classic-baseline/fury-2h-raid.md) |
 | [Arms — Battle Stance: Overpower, Rend and Slam (raid)](builds/arms-battle-raid.md) | 34/17/0 | DPS | — |
 | [Protection — Raid Tank (simulator winner adopted 2026-09-27)](builds/prot-raid-tank.md) | 14/5/32 | TANK | [prot-raid-tank](../talents/classic-baseline/prot-raid-tank.md) |
-| [Arms — Full raid (the community's #2 Arms build)](builds/arms-community-parse.md) | 37/14/0 | DPS | — |
-| [Fury — Raid (open talent search)](builds/fury-open-raid.md) | 18/31/2 | DPS | — |
+
+Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
+
+| Build | Split | Role |
+|---|---|---|
+| [Arms — Full raid (the community's #2 Arms build)](builds/arms-community-parse.md) 🔬 | 37/14/0 | DPS |
+| [Fury — Raid (open talent search)](builds/fury-open-raid.md) 🔬 | 18/31/2 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

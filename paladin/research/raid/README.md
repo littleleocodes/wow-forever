@@ -14,7 +14,12 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | [Retribution — Seal of Command / Twist of Light (simulator winner adopted 2026-09-27)](builds/ret-raid-dps.md) | 17/0/34 | DPS | [ret-raid-dps](../talents/classic-baseline/ret-raid-dps.md) |
 | [Retribution — Seal of Command / Twist of Light (full raid buffs, 10/8/33)](builds/ret-full-buffs-raid.md) | 10/8/33 | DPS | [ret-raid-dps](../talents/classic-baseline/ret-raid-dps.md) |
 | [Protection — Tank (simulator winner adopted 2026-09-28)](builds/prot-tank.md) | 0/23/28 | TANK | [prot-tank](../talents/classic-baseline/prot-tank.md) |
-| [Retribution — Raid (machine-learning search)](builds/retribution-ml-raid.md) | 11/8/32 | DPS | — |
+
+Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
+
+| Build | Split | Role |
+|---|---|---|
+| [Retribution — Raid (machine-learning search)](builds/retribution-ml-raid.md) 🔬 | 11/8/32 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

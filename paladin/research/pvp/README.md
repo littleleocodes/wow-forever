@@ -11,9 +11,14 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
 | [Shockadin — Holy/Retribution (PvP)](builds/pvp-shockadin.md) | 31/0/20 | HEALER | [pvp-shockadin](../talents/classic-baseline/pvp-shockadin.md) |
-| [Holy — PvP (derived)](builds/holy-pvp.md) | 31/18/2 | HEALER | — |
-| [Protection — PvP (derived)](builds/protection-pvp.md) | 0/30/21 | DPS | — |
-| [Retribution — PvP (derived)](builds/retribution-pvp.md) | 21/0/30 | DPS | — |
+
+Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
+
+| Build | Split | Role |
+|---|---|---|
+| [Holy — PvP (derived)](builds/holy-pvp.md) 🔬 | 31/18/2 | HEALER |
+| [Protection — PvP (derived)](builds/protection-pvp.md) 🔬 | 0/30/21 | DPS |
+| [Retribution — PvP (derived)](builds/retribution-pvp.md) 🔬 | 21/0/30 | DPS |
 
 Classic Era reference builds: [pvp-shockadin](../talents/classic-baseline/pvp-shockadin.md).
 

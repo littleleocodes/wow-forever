@@ -11,9 +11,14 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
 | [Leveling — Enhancement (Stormstrike at 25, Rage of the Farseer at 40)](builds/leveling-enhancement.md) | 7/34/10 | DPS | [leveling-enhancement](../talents/classic-baseline/leveling-enhancement.md) |
-| [Restoration — Leveling into the raid build](builds/restoration-leveling.md) | 0/10/41 | DPS | — |
-| [Elemental — Leveling (open talent search)](builds/elemental-open-leveling.md) | 31/11/9 | DPS | — |
-| [Enhancement — Leveling (open talent search)](builds/enhancement-open-leveling.md) | 9/32/10 | DPS | — |
+
+Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
+
+| Build | Split | Role |
+|---|---|---|
+| [Restoration — Leveling into the raid build](builds/restoration-leveling.md) 🔬 | 0/10/41 | DPS |
+| [Elemental — Leveling (open talent search)](builds/elemental-open-leveling.md) 🔬 | 31/11/9 | DPS |
+| [Enhancement — Leveling (open talent search)](builds/enhancement-open-leveling.md) 🔬 | 9/32/10 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

@@ -11,9 +11,14 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
 | [Leveling — Arms two-hander (Mortal Strike at 40, Enrage last)](builds/leveling-arms.md) | 31/20/0 | DPS | [leveling-arms](../talents/classic-baseline/leveling-arms.md) |
-| [Protection — Leveling into the raid build](builds/protection-leveling.md) | 14/5/32 | DPS | — |
-| [Fury — Leveling (open talent search)](builds/fury-open-leveling.md) | 20/31/0 | DPS | — |
-| [Protection — Leveling (open talent search)](builds/protection-open-leveling.md) | 15/5/31 | DPS | — |
+
+Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
+
+| Build | Split | Role |
+|---|---|---|
+| [Protection — Leveling into the raid build](builds/protection-leveling.md) 🔬 | 14/5/32 | DPS |
+| [Fury — Leveling (open talent search)](builds/fury-open-leveling.md) 🔬 | 20/31/0 | DPS |
+| [Protection — Leveling (open talent search)](builds/protection-open-leveling.md) 🔬 | 15/5/31 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

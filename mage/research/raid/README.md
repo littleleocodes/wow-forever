@@ -16,10 +16,15 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | [Fire — Ignite / Hot Streak (simulator winner adopted 2026-09-28)](builds/fire-raid.md) | 12/34/5 | DPS | [fire-raid](../talents/classic-baseline/fire-raid.md) |
 | [Frostfire — Frostfire Bolt / Hot Streak (Fire/Frost hybrid, raid)](builds/frostfire-raid.md) | 4/31/16 | DPS | [fire-raid](../talents/classic-baseline/fire-raid.md) |
 | [Arcane — Arcane Blast (raid)](builds/arcane-blast-raid.md) | 35/11/5 | DPS | — |
-| [Frost — Raid (machine-learning search)](builds/frost-ml-raid.md) | 21/0/30 | DPS | — |
-| [Frostfire — Raid (machine-learning search)](builds/frostfire-ml-raid.md) | 4/31/16 | DPS | — |
 | [Frostfire — Fingers of Frost / Ice Lance (user build)](builds/frostfire-fingers-of-frost-raid.md) | 0/29/22 | DPS | — |
-| [Arcane-Frost — Raid (open talent search)](builds/arcane-frost-open-raid.md) | 28/0/23 | DPS | — |
+
+Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
+
+| Build | Split | Role |
+|---|---|---|
+| [Frost — Raid (machine-learning search)](builds/frost-ml-raid.md) 🔬 | 21/0/30 | DPS |
+| [Frostfire — Raid (machine-learning search)](builds/frostfire-ml-raid.md) 🔬 | 4/31/16 | DPS |
+| [Arcane-Frost — Raid (open talent search)](builds/arcane-frost-open-raid.md) 🔬 | 28/0/23 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

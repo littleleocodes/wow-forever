@@ -13,9 +13,14 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | [Beast Mastery (solo / farming, 31/20/0)](builds/bm-solo-farm.md) | 31/20/0 | DPS | [bm-solo-farm](../talents/classic-baseline/bm-solo-farm.md) |
 | [Leveling — Marksmanship with a pet (20/31/0)](builds/leveling-beast-mastery.md) | 20/31/0 | DPS | [leveling-beast-mastery](../talents/classic-baseline/leveling-beast-mastery.md) |
 | [Melee Survival leveling (dual wield, pet kept)](builds/leveling-melee.md) | 9/10/32 | DPS | — |
-| [Beast Mastery — Leveling (generated)](builds/beast-mastery-leveling.md) | 30/21/0 | DPS | — |
-| [Beast-Marks — Leveling (open talent search)](builds/beast-marks-open-leveling.md) | 29/18/4 | DPS | — |
-| [Beast-Survival — Leveling (open talent search)](builds/beast-survival-open-leveling.md) | 22/5/24 | DPS | — |
+
+Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
+
+| Build | Split | Role |
+|---|---|---|
+| [Beast Mastery — Leveling (generated)](builds/beast-mastery-leveling.md) ⚗ | 30/21/0 | DPS |
+| [Beast-Marks — Leveling (open talent search)](builds/beast-marks-open-leveling.md) 🔬 | 29/18/4 | DPS |
+| [Beast-Survival — Leveling (open talent search)](builds/beast-survival-open-leveling.md) 🔬 | 22/5/24 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
