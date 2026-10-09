@@ -319,6 +319,12 @@ Each class folder now opens with player pages and keeps the research below:
   <class> --steps heal,tank` for priest, paladin, druid and warrior); (4) the machine-learning pipeline for the gear tiers on the new item
   data; (5) the final race-neutral re-race (`WOW_FOREVER_NO_RACIALS=1`), rankings, gear links, pages; (6) safety checks (search_check,
   own-rotation audit, fight-lab regression, link check), the fight-variety check, weapon variants on the pages.
+  **Running it (2026-10-08 23:2x):** `deep-runs/rebaseline_70291.sh` (rotation pass limited to the full-raid rotations, 8 rounds, no
+  lookahead: the full pass took 20 minutes for one entry), then a waiter starts `deep-runs/sweep_70291.sh` (phases P2-P6; logs
+  `deep-runs/sweep.log`). **Resume after any stop:** run `bash _reference/data/deep-runs/sweep_70291.sh` again: each open-search half
+  starts fresh only once (marker `deep-runs/fresh-70291-<class>-<half>.started`), each phase is skipped once `deep-runs/sweep-p<N>.done`
+  exists. Also new: weapon and stance variant builds (`spec_modes.RAID_ENTRY_VARIANT`), the fight-variety check
+  (`raidsim/fight_variety.py`, bench `numTargets`, `foreverbench-variety.exe` until the next bench rebuild), the runner's `--write`.
   **Racials (2026-10-08 05:2x):** the simulator applies more racials in Forever than Classic (Tauren +1% hit, Night Elf's Elune's Light
   +10% crit, Berserking, Blood Fury, weapon specializations), and the generic cooldown line casts the on-use ones, so stripping rotation
   lines would not remove them. Patch `patches/forever/sim/core/no_racials.go` (+ an edits.json insertion in racials.go) switches all of them

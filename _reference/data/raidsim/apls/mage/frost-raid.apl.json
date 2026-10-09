@@ -122,8 +122,58 @@
      "spellId": {
       "spellId": 25304
      }
+    },
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "remainingTime": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "3s"
+       }
+      }
+     }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-08: changed or added by the rotation search (see frost-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 10199
+     }
+    },
+    "condition": {
+     "or": {
+      "vals": [
+       {
+        "auraIsActive": {
+         "auraId": {
+          "spellId": 12536
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "10%"
+          }
+         }
+        }
+       }
+      ]
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-08: changed or added by the rotation search (see frost-raid-rotation-search.json)"
   }
  ]
 }
