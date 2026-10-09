@@ -320,7 +320,7 @@ Each class folder now opens with player pages and keeps the research below:
   data; (5) the final race-neutral re-race (`WOW_FOREVER_NO_RACIALS=1`), rankings, gear links, pages; (6) safety checks (search_check,
   own-rotation audit, fight-lab regression, link check), the fight-variety check, weapon variants on the pages.
   **Running it (2026-10-08 23:2x):** `deep-runs/rebaseline_70291.sh` (rotation pass limited to the full-raid rotations, 8 rounds, no
-  lookahead: the full pass took 20 minutes for one entry), then a waiter starts `deep-runs/sweep_70291.sh` (phases P2-P6; logs
+  lookahead: a full pass in both settings would take about 5 hours, the quick one 1-2), then a waiter starts `deep-runs/sweep_70291.sh` (phases P2-P6; logs
   `deep-runs/sweep.log`). **Resume after any stop:** run `bash _reference/data/deep-runs/sweep_70291.sh` again: each open-search half
   starts fresh only once (marker `deep-runs/fresh-70291-<class>-<half>.started`), each phase is skipped once `deep-runs/sweep-p<N>.done`
   exists. Also new: weapon and stance variant builds (`spec_modes.RAID_ENTRY_VARIANT`), the fight-variety check
