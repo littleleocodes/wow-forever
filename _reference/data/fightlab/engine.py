@@ -361,7 +361,7 @@ class BaseModule:
         return 30.0
 
     def rage_from_hit(self, fight, amount, weapon, hand, crit):
-        return tables.rage_from_hit(amount, weapon.speed, hand, crit, fight.p.level)
+        return tables.rage_from_hit(amount, weapon.speed, hand, crit, fight.p.level, two_hand=getattr(weapon, "kind", "") == "2h")
 
     # events
     def on_fight_start(self, fight):
@@ -1182,7 +1182,7 @@ class Fight:
         dmg = self.mod.split_damage_taken(self, dmg)
         p.hp -= dmg
         if p.rage_max > 0:
-            p.rage = min(p.rage_max, p.rage + pre_armor * tables.RAGE_PER_DAMAGE_TAKEN / tables.rage_conversion(m.level))
+            p.rage = min(p.rage_max, p.rage + tables.rage_from_damage_taken(pre_armor, m.level))
         self.note(f"mob hits {dmg:.0f}{f' (absorbed {absorbed:.0f})' if absorbed else ''} -> me {max(0, p.hp):.0f}")
         self.damage_taken_effects(dmg, crit_taken)
 
@@ -1224,7 +1224,7 @@ class Fight:
         dmg = self.mod.split_damage_taken(self, dmg)
         p.hp -= dmg
         if p.rage_max > 0:
-            p.rage = min(p.rage_max, p.rage + pre * tables.RAGE_PER_DAMAGE_TAKEN / tables.rage_conversion(m.level))
+            p.rage = min(p.rage_max, p.rage + tables.rage_from_damage_taken(pre, m.level))
         self.note(f"mob's bolt hits {dmg:.0f}{f' (absorbed {absorbed:.0f})' if absorbed else ''} -> me {max(0, p.hp):.0f}")
         self.damage_taken_effects(dmg, crit_taken)
 

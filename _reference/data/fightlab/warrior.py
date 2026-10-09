@@ -218,7 +218,7 @@ PROT_NOTES = ("Protection leveling (sword and board): a one-hander (tables.weapo
 
 DESCRIPTION = ("Single-target leveling fights against normal mobs of your level with a two-hander in Battle Stance: Bloodrage and Charge on the pull (the mob is stunned 1 s), "
                "Battle Shout kept up, Victory Rush after a kill, Mortal Strike on cooldown, Overpower after a dodge or a Bloodthrill proc, Rend once, Execute under 20% "
-               "with all the rage, Heroic Strike with spare rage, white swings that generate rage by Classic's formula (the mob dodges 5%, parries 5%, 10% of swings "
+               "with all the rage, Heroic Strike with spare rage, white swings that generate rage by Forever's normalized rule (weapon speed, double on a crit; tables.RAGE_MODEL) (the mob dodges 5%, parries 5%, 10% of swings "
                "glance for 95%). Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below 50%, rage decays; a death costs 90 s.")
 NOT_MODELLED = "runners, adds, stance dancing (Whirlwind / Intercept in Berserker Stance), Sweeping Strikes, Hamstring kiting, Retaliation, weapon skill, gear upgrades within a level bracket."
 # rebuild.py: which scorer model, hand draft and optimizer build the pipeline calibrates, races and reports for this class

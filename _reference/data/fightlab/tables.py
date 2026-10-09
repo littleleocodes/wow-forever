@@ -160,7 +160,7 @@ MIN_RANGED_RANGE = 8.0        # bows and guns cannot fire inside this (wowsims F
 ENERGY_PER_TICK = 20.0        # per 2-second tick (wowsims Forever: 20.2 per 2.02 s), 100 maximum
 ENERGY_MAX = 100.0
 RAGE_MAX = 100.0
-RAGE_DECAY = 1.0              # rage lost per second out of combat (assumption; Classic decays it within a minute)
+RAGE_DECAY = 1.25             # rage lost per second out of combat (the Forever client's rage tooltip, build 70291: "1.25 Rage is lost every 1 sec")
 
 
 def rage_conversion(level):
@@ -168,15 +168,49 @@ def rage_conversion(level):
     return 0.0091 * level * level + 3.23 * level + 4.37
 
 
-def rage_from_hit(amount, speed, hand, crit, level):
-    """Classic rage from a white hit: 15 d / (4 c) + f s / 2 with hit factor f = 3.5 (main hand), 7 (main-hand crit),
-    1.75 / 3.5 for the off-hand. The Forever simulator uses a flat 3.46 (one-hand) / 4.5 (two-hand) x speed per hit
-    that it marks as untested at high levels; the Classic formula is kept here."""
-    f = (7.0 if crit else 3.5) if hand == "mh" else (3.5 if crit else 1.75)
-    return 15.0 * amount / (4.0 * rage_conversion(level)) + f * speed / 2.0
+# Rage (2026-10-09): Forever's rules, as the raid simulator has them. Blizzard's Warrior deep dive (2026-09-30): "Rage from dealing
+# damage: We have fully-normalized this Rage. Rage gained is now based on the speed of the weapon that dealt the damage"; the
+# ElliotWood/Forever simulator fitted 3.46 rage per second of weapon speed one-handed and 4.5 two-handed from beta logs (fork commit
+# f9f9f218; the off-hand half; nothing on a miss, dodge or parry), assumed the same at every level. Critical strikes double it
+# ("increased to 100% increased Rage (was 75%)": warriors 2026-10-02, druids 2026-10-08). Rage from damage taken: the simulator's
+# 10 x pre-armor damage / health, with the expected creature health of the client's ExpectedStat table (build 70291) instead of the
+# player's (beta notes 2026-10-08: "Fixed a bug where the Rage calculation was incorrectly using the player's health ... instead of
+# an expected creature's health"); the same notes rebalance an armor assumption "in the 20% to 40% range" without a number (not
+# modelled). RAGE_MODEL = "classic" restores Classic's formulas (the model before 2026-10-09: 15 d / (4 c) + f s / 2 per white hit,
+# 2.5 x pre-armor damage / c(L) taken, 1.0 decay).
+RAGE_MODEL = "forever"
+RAGE_HIT_1H = 3.46
+RAGE_HIT_2H = 4.5
+RAGE_CRIT_MULT = 2.0
+RAGE_TAKEN_FACTOR = 10.0
+EXPECTED_CREATURE_HEALTH = {
+    1: 42, 2: 55, 3: 71, 4: 86, 5: 102, 6: 120, 7: 137, 8: 156, 9: 180, 10: 208, 11: 239, 12: 272,
+    13: 307, 14: 345, 15: 385, 16: 427, 17: 473, 18: 521, 19: 572, 20: 629, 21: 677, 22: 731, 23: 787, 24: 846,
+    25: 909, 26: 975, 27: 1040, 28: 1109, 29: 1177, 30: 1242, 31: 1308, 32: 1374, 33: 1443, 34: 1512, 35: 1586, 36: 1660,
+    37: 1737, 38: 1814, 39: 1897, 40: 1981, 41: 2061, 42: 2146, 43: 2231, 44: 2317, 45: 2402, 46: 2495, 47: 2587, 48: 2681,
+    49: 2779, 50: 2909, 51: 3040, 52: 3174, 53: 3317, 54: 3458, 55: 3602, 56: 3755, 57: 3909, 58: 4105, 59: 4234, 60: 4365,
+    61: 4496, 62: 4629, 63: 4763,
+}
 
 
-RAGE_PER_DAMAGE_TAKEN = 2.5   # Classic: rage from damage taken = 2.5 d / c(L); stored here as the numerator (engine divides by c)
+def rage_from_hit(amount, speed, hand, crit, level, two_hand=False):
+    """Rage from a landed white hit. Forever: (3.46 one-hand, 4.5 two-hand) x weapon speed, half for the off-hand, x2 on a crit.
+    Classic (RAGE_MODEL = "classic"): 15 d / (4 c) + f s / 2 with f = 3.5 (main hand), 7 (main-hand crit), 1.75 / 3.5 off-hand."""
+    if RAGE_MODEL == "classic":
+        f = (7.0 if crit else 3.5) if hand == "mh" else (3.5 if crit else 1.75)
+        return 15.0 * amount / (4.0 * rage_conversion(level)) + f * speed / 2.0
+    r = (RAGE_HIT_2H if two_hand else RAGE_HIT_1H) * speed * (0.5 if hand == "oh" else 1.0)
+    return r * RAGE_CRIT_MULT if crit else r
+
+
+RAGE_PER_DAMAGE_TAKEN = 2.5   # Classic: rage from damage taken = 2.5 d / c(L) (RAGE_MODEL = "classic")
+
+
+def rage_from_damage_taken(pre_armor, level):
+    """Rage from a hit taken (pre-armor damage): Forever 10 x damage / the expected creature health at that level; Classic 2.5 d / c(L)."""
+    if RAGE_MODEL == "classic":
+        return pre_armor * RAGE_PER_DAMAGE_TAKEN / rage_conversion(level)
+    return pre_armor * RAGE_TAKEN_FACTOR / EXPECTED_CREATURE_HEALTH[max(1, min(63, int(level)))]
 
 
 # ------------------------------------------------------------------ pets and threat
