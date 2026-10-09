@@ -21,6 +21,7 @@ from validate_builds import (CLASSES, ROOT, load_classic, load_forever, find_tal
                              split_string, forever_status)
 import paths  # noqa: E402
 import readme_sections as rs  # noqa: E402
+from data_build import BUILD as DATA_BUILD, CAPTURED as DATA_CAPTURED  # noqa: E402
 
 TIER_LABEL = {"primary": "Primary", "alternative": "Alternative", "situational": "Situational", "draft": "Draft"}
 CONTENT_LABEL = {"raid": "Raid", "dungeon": "Dungeon", "pvp": "PvP", "leveling": "Leveling", "solo": "Solo/farming"}
@@ -66,7 +67,7 @@ def render_build(cls: str, game: str, build: dict, trees: dict, forever_trees: d
         o.append("| **Data** | Classic Era 1.12-era trees (validated against `_reference/data/classic-era-talents.json`) |")
         o.append("| **Forever** | This is the *baseline*; see the Forever status table below and `../forever/` for the adapted build |")
     else:
-        o.append("| **Data** | WoW: Forever beta client build 1.60.1.70009 (2026-09-25 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |")
+        o.append(f"| **Data** | WoW: Forever beta client build {DATA_BUILD} ({DATA_CAPTURED} snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |")
         if build.get("based_on"):
             o.append(f"| **Based on** | Classic baseline `{build['based_on']}` |")
     o.append("")
@@ -182,7 +183,7 @@ def render_index(cls: str, game: str, data: dict, trees: dict) -> str:
     else:
         o.append(f"# {data['class']} — WoW: Forever proposed builds\n")
         o.append("Draft builds for WoW: Forever, derived from the Classic baseline and re-spent onto the Forever beta-client "
-                 "trees (build 1.60.1.70009). Validated against the beta tree data for point math, **not** for performance — nothing has "
+                 "trees (build " + DATA_BUILD + "). Validated against the beta tree data for point math, **not** for performance — nothing has "
                  "been simulated or play-tested yet. Treat every one as a hypothesis to confirm at launch.\n")
     o.append("| Build | Split | Role | Content | Status | File |")
     o.append("|---|---|---|---|---|---|")
@@ -202,7 +203,7 @@ def render_index(cls: str, game: str, data: dict, trees: dict) -> str:
 SCENARIO_INTRO = {
     "leveling": ("Leveling and solo farming builds with their leveling orders, the leveling guide and rotation the fight lab plays, "
                  "and the respec plan. Numbers come from the fight lab (a Monte Carlo fight simulator of stated assumptions) and the "
-                 "stats model; every build is a hypothesis for the beta client 1.60.1.70009."),
+                 "stats model; every build is a hypothesis for the beta client " + DATA_BUILD + "."),
     "raid": ("Raid DPS, tank and healer builds. DPS builds are ranked on a boss-level training dummy with only your own buffs in the "
              "community simulator (ElliotWood/Forever); the raid setting and the parse build are shown next to it. Tanks are measured "
              "in the raid setting and healers in the healer lab. Simulations of the community's model of the beta, not measurements."),
@@ -275,7 +276,7 @@ def class_index_section(cls, data, classic_data):
 def classes_section(forever, classic):
     """The "Classes" table of the top-level README.md: build counts and links to each class's scenario folders."""
     o = ["## Classes", "",
-         "| Class | Classic baseline builds | Forever tree (beta client 1.60.1.70009) | Forever builds | Scenario folders |", "|---|---|---|---|---|"]
+         f"| Class | Classic baseline builds | Forever tree (beta client {DATA_BUILD}) | Forever builds | Scenario folders |", "|---|---|---|---|---|"]
     for cls in sorted(CLASSES):
         fp, cp = paths.builds_json("forever", cls), paths.builds_json("classic-era", cls)
         fb = json.load(open(fp, encoding="utf-8"))["builds"] if fp.exists() else []

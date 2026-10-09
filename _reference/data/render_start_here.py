@@ -18,22 +18,30 @@ ROOT = HERE.parents[1]
 sys.path.insert(0, str(HERE))
 import paths  # noqa: E402
 import render_rotations as rr  # noqa: E402
+from data_build import BUILD as DATA_BUILD, CAPTURED as DATA_CAPTURED  # noqa: E402
 
 CLASSES = ["druid", "hunter", "mage", "paladin", "priest", "rogue", "shaman", "warlock", "warrior"]
-BUILD = "1.60.1.70009"
+BUILD = DATA_BUILD
 TODAY = datetime.date.today().isoformat()
 
 
 # ------------------------------------------------------------------------------------------------ talent links
+# The site's code version for the talent order our forever-talents/ data follows (its export at build 70291). Until 2026-10-09 the links
+# said '-4' (build 70009's order): the site read the digits in that order, so for the trees that changed since (druid Feral, warrior Fury
+# and Protection, and renames in the mage and warlock trees) a link could open other talents than the page's build. Checked: every one
+# of the site's 45 popular version-6 codes re-encodes to the same digits (popular_builds.CODE_VERSION).
+TF_CODE_VERSION = "6"
+
+
 def tf_link(cls, alloc):
     """talentsforever.com link for {talent: ranks}: one digit per talent in the tree's order (the site's order is our dataset's),
-    trailing zeros dropped, '-4' for the site's current code version."""
+    trailing zeros dropped, the site's current code version at the end (TF_CODE_VERSION)."""
     data = json.load(open(HERE / "forever-talents" / f"{cls}.json", encoding="utf-8"))
     parts = []
     for tr in data["trees"]:
         digits = "".join(str(min(int(alloc.get(t["name"], 0)), t["maxRank"])) for t in tr["talents"]).rstrip("0")
         parts.append(digits)
-    return f"https://talentsforever.com/{cls}/60/" + "-".join(parts) + "-4"
+    return f"https://talentsforever.com/{cls}/60/" + "-".join(parts) + "-" + TF_CODE_VERSION
 
 
 def flat(b):

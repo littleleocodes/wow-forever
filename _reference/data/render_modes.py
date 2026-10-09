@@ -29,12 +29,14 @@ import paths  # noqa: E402
 import readme_sections  # noqa: E402
 import gear_tables  # noqa: E402
 import simple_rotation  # noqa: E402
+import guides  # noqa: E402
 import render_rotations as rr  # noqa: E402
 import render_start_here as rs  # noqa: E402
 import spec_modes as SM  # noqa: E402
+from data_build import BUILD as DATA_BUILD, CAPTURED as DATA_CAPTURED  # noqa: E402
 
 TODAY = datetime.date.today().isoformat()
-BUILD = "1.60.1.70009"
+BUILD = DATA_BUILD
 GEN = json.load(open(HERE / "spec-builds.json", encoding="utf-8")) if (HERE / "spec-builds.json").exists() else {}
 GEN_MARK = "⚗"   # marks a generated build (spec_builds.py) wherever a player picks one
 DER_MARK = "🔬"   # marks a derived build (derive_leveling.py, derive_raid.py, derive_pvp.py): searched in a simulator or from the model + community
@@ -563,22 +565,24 @@ def mode_section(cls, spec, mode, builds, nums, src):
             texts = [ln["text"] for ln, pl in zip(r["d"]["lines"], r["row"]["lines"]) if pl["used"]]
             late = []   # end-of-fight extras after the filler (simple_rotation.simplify)
             keep, prio = simple_rotation.simplify(cls, texts, late)
+            keep_names = [x.split("|")[0] for x in keep]   # an item may carry "|<how to keep it up>" (Slice and Dice's combo points)
+            keep_text = ", ".join(f"**{x.split('|')[0]}**" + (f" ({x.split('|', 1)[1]})" if "|" in x else "") for x in keep)
             pre = simple_rotation.pre_pull(cls, r["d"]["pre"])
             play += ["## How to play", ""]
-            if pre and set(pre) == set(keep):   # totems and self-buffs: one line instead of the same list twice
-                play += ["**Before the pull, then keep up all fight:** " + ", ".join(f"**{x}**" for x in keep) + ".", ""]
+            if pre and set(pre) == set(keep_names):   # totems and self-buffs: one line instead of the same list twice
+                play += ["**Before the pull, then keep up all fight:** " + keep_text + ".", ""]
             else:
                 if pre:
                     play += ["**Before the pull:** " + ", ".join(f"**{x}**" for x in pre) + ".", ""]
                 if keep:
-                    play += ["**Keep up all fight:** " + ", ".join(f"**{x}**" for x in keep) + ".", ""]
+                    play += ["**Keep up all fight:** " + keep_text + ".", ""]
             quiet = [u for u in UNUSED.get((cls, top["id"]), []) if u["kind"] != "wasted"]
             if quiet:   # talents the build takes whose ability has no line in the rotation (2026-10-02, user report on unused abilities)
                 play += ["**Talents with no line below:** " + "; ".join(f"**{u['talent']}**: {u['advice']}" for u in quiet) + ".", ""]
             if prio:
                 play += ["**Then press the first one that is ready**, top to bottom:", ""] + [f"{i}. {x}" for i, x in enumerate(prio, 1)]
                 filler = prio[-1].count("**") == 2 and prio[-1].endswith("**")   # a plain last line: the filler
-                shown = set(pre) | set(keep) | {m for x in prio for m in re.findall(r"\*\*(.+?)\*\*", x)} | {x for x, _, _ in late}
+                shown = set(pre) | set(keep_names) | {m for x in prio for m in re.findall(r"\*\*(.+?)\*\*", x)} | {x for x, _, _ in late}
                 # the build's casts in the full raid the page ranks on (the dummy race's when the environments run has none)
                 casts = raid_casts_of(cls, r["entry"], top["id"]) or casts_of(cls, r["entry"], top["id"])
                 extra = [f"**{x}**: in the last {n:.0f} seconds of the fight, when there is no time left for another **{f}**" for x, n, f in late]
@@ -611,7 +615,17 @@ def mode_section(cls, spec, mode, builds, nums, src):
                 play += [""]
             else:
                 play += [f"The community agrees: every talent most {spec} builds take is in this build.", ""]
-    o += play + talents + numbers
+    gl = []   # the hand-written rotation guide (guides.py, 2026-10-09 user request), under How to play
+    if mode == "raid":
+        if top.get("role") == "healer":
+            gl = guides.render(cls, spec, mode, "healer-policy", guides.healer_fingerprint(cls))
+        else:
+            ent = (R.get(top["id"]) or {}).get("entry")
+            gl = guides.render(cls, spec, mode, ent, guides.raid_fingerprint(cls, ent) if ent else None)
+    elif mode == "leveling":
+        mdl = LEVEL_MODEL.get((cls, top["id"])) or (GEN.get(cls, {}).get(top["id"], {}) or {}).get("model") or rs.leveling_pick(cls)[1]
+        gl = guides.render(cls, spec, mode, f"leveling:{mdl}", guides.leveling_fingerprint(cls, mdl))
+    o += play + gl + talents + numbers
     alts = [b for b in ranked[1:] if not b["id"].endswith("-parse")]
     if alts:
         o += ["## Other builds of this spec", ""]

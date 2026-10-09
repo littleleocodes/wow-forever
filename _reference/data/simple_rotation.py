@@ -74,8 +74,8 @@ def _unwrap(c):
 def _clause(c, spell, ok):
     """One condition clause -> (kind, plain text) or None to drop it."""
     c = _unwrap(c)
-    if " or " in c:   # an either-or group: keep the first part a player can see (a proc, rage, the execute phase), drop the rest
-        for part in c.split(" or "):
+    if " or " in _protect(c):   # an either-or group: keep the first part a player can see (a proc, rage, the execute phase), drop the rest
+        for part in (_restore(p) for p in _protect(c).split(" or ")):
             got = _clause(part, spell, ok)
             if got and got[0] == "when":
                 return got
@@ -100,6 +100,8 @@ def _clause(c, spell, ok):
         n = round(float(m.group(3)))
         if m.group(1) == spell and m.group(2) == "<":
             return ("stack", f"{n}")
+        if m.group(2) == "≥":
+            return ("when", f"{m.group(1)} has {n} or more stacks")
         if m.group(2) != "<":
             return ("when", f"{m.group(1)} has {n} stacks")
         return ("when", f"the target has fewer than {n} stacks of {m.group(1)}")   # a debuff the spell builds (Scorch's Fire Vulnerability)
@@ -117,14 +119,42 @@ def _clause(c, spell, ok):
         return ("when", f"you have {m.group(1)}+ rage to spare")
     m = re.match(r"combo points ≥ ([\d.]+)$", c)
     if m:
-        return ("when", f"you have {round(float(m.group(1)))} combo points")
+        n = round(float(m.group(1)))
+        return ("when", f"you have {n} combo points" if n >= 5 else f"you have {n} or more combo points")
     return None   # anything else is fine tuning a new player can skip
 
 
+_JOINED = []
+
+
+def _joined_names():
+    """Every spell and talent name of any class that contains ' and ' or ' or ' (Slice and Dice): split conditions keep them whole."""
+    if not _JOINED:
+        names = set()
+        for f in (HERE / "forever-spells").glob("*.json"):
+            for tab in json.load(open(f, encoding="utf-8"))["tabs"]:
+                names.update(sp["name"] for sp in tab["spells"])
+        for f in (HERE / "forever-talents").glob("*.json"):
+            for tr in json.load(open(f, encoding="utf-8")).get("trees", []):
+                names.update(t["name"] for t in tr.get("talents", []))
+        _JOINED.extend(sorted((n for n in names if " and " in n or " or " in n), key=len, reverse=True) or [""])
+    return [n for n in _JOINED if n]
+
+
+def _protect(c):
+    for n in _joined_names():
+        c = c.replace(n, n.replace(" and ", " \u2227 ").replace(" or ", " \u2228 "))
+    return c
+
+
+def _restore(c):
+    return c.replace(" \u2227 ", " and ").replace(" \u2228 ", " or ")
+
+
 def _cond_parts(cond):
-    """Split a condition on its top-level ' and '."""
+    """Split a condition on its top-level ' and ' (names that contain ' and ', such as Slice and Dice, stay whole)."""
     parts, depth, cur = [], 0, ""
-    for tok in re.split(r"(\(|\)| and )", cond):
+    for tok in re.split(r"(\(|\)| and )", _protect(cond)):
         if tok == "(":
             depth += 1
         elif tok == ")":
@@ -135,7 +165,7 @@ def _cond_parts(cond):
         else:
             cur += tok
     parts.append(cur)
-    return [p for p in parts if p.strip()]
+    return [_restore(p) for p in parts if p.strip()]
 
 
 LINE = re.compile(r"^(?:[Ii]f (.+): )?((?:cast|channel|keep|use|strict sequence|sequence)\b.*)$", re.I)
@@ -146,6 +176,11 @@ REACTIVE = {"Mongoose Bite": "when it lights up (after the target dodges)", "Ove
             "Riposte": "after you parry", "Counterattack": "after you parry", "Revenge": "after you block, dodge or parry",
             "Victory Rush": "after a kill", "Hammer of Wrath": "when the target is below 20% health", "Shadow Word: Death": "",
             "Execute": "when the target is below 20% health"}
+# one-shot boosts whose condition times them for the ability after them (Cold Blood's "4 or more combo points" means: right before the
+# finisher), said in those words so the line does not read as if the boost spent combo points (2026-10-09, user report)
+PREP = {"Cold Blood": "right before your finisher", "Inner Focus": "right before your next big spell",
+        "Presence of Mind": "right before a long cast", "Nature's Swiftness": "right before a long cast",
+        "Elemental Mastery": "right before your next big spell", "Divine Favor": "right before your next big heal"}
 CUR = [None]   # the class being parsed (for _clause's other-class test)
 FLOOR = [None]   # (spell, seconds) when the line just parsed is an always-ready spell cast while more than that many seconds are left
 
@@ -177,6 +212,10 @@ def _parse(cls, t):
     if swing and sp.startswith("Seal of"):   # seal twisting (a second seal timed to the swing): an advanced trick
         return None
     if sp.endswith("Totem") or is_self(sp):   # totems and self-buffs go in the "keep up all fight" line
+        cp = re.search(r"combo points ≥ ([\d.]+)", cond or "")
+        if cp and round(float(cp.group(1))) < 5:   # a finisher kept up: say how few combo points it may take (Slice and Dice)
+            n = round(float(cp.group(1)))
+            return ([sp], f"KEEP:{sp}|put it back up as soon as it drops, even with {n} combo point{'s' if n != 1 else ''}", swing)
         return ([sp], f"KEEP:{sp}", swing)
     clauses = [c for c in (_clause(x, sp, ok) for x in (_cond_parts(cond) if cond else [])) if c]
     fl = re.fullmatch(r"time left in the fight (?:≥|>) ([\d.]+)s?", _unwrap(cond)) if cond else None
@@ -197,6 +236,8 @@ def _parse(cls, t):
         txt = f"**{sp}**: " + ("keep it down" if sp.endswith("Totem") else "keep it up" if is_self(sp) else "keep it on the target")
     else:
         txt = f"**{sp}**"
+    if whens and PREP.get(sp):
+        txt += f" {PREP[sp]}"
     if not whens and REACTIVE.get(sp):
         whens = [REACTIVE[sp].replace("when ", "", 1)] if REACTIVE[sp].startswith("when ") else []
         if not whens:

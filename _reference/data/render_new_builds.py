@@ -23,6 +23,7 @@ ROOT = HERE.parents[1]
 sys.path.insert(0, str(HERE))
 import paths  # noqa: E402
 import readme_sections as rs  # noqa: E402
+from data_build import BUILD as DATA_BUILD, CAPTURED as DATA_CAPTURED  # noqa: E402
 
 CLASSES = ["druid", "hunter", "mage", "paladin", "priest", "rogue", "shaman", "warlock", "warrior"]
 HEAD = "## New spells and builds"
@@ -320,7 +321,7 @@ def class_part(cls, src, level=3):
     return o
 
 
-INTRO = ("Every spell the Forever beta spellbook (build 1.60.1.70009) marks new against Classic Era, what the community simulator "
+INTRO = ("Every spell the Forever beta spellbook (build " + DATA_BUILD + ") marks new against Classic Era, what the community simulator "
          "(ElliotWood/Forever, with this project's Frostfire Bolt, `raidsim/patches/`) and the fight lab measured it doing, and the builds "
          "searched around the new spells: each target has its own rotation (a rotation-only entry of `raidsim/specs.json`, tuned by "
          "`raidsim/apl_opt.py`, whose pool offers every new spell) and its talents found by `raidsim/talent_opt.py` (a local search over "

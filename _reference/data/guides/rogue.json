@@ -1,0 +1,32 @@
+{
+ "class": "rogue",
+ "about": "Hand-written rotation guides for the rogue's player pages (guides.py). Every bold name is a rogue spell or talent. Stamp with: python _reference/data/guides.py --stamp rogue",
+ "guides": {
+  "Combat": {
+   "raid": {
+    "plan": "Combat in a raid is an energy rhythm: build combo points with **Backstab**, keep **Slice and Dice** up for its attack speed, and spend everything else on **Eviscerate**. **Adrenaline Rush** and **Blade Flurry** go on cooldown.",
+    "why": [
+     "**Slice and Dice** comes first because 30% more attack speed for the whole fight is worth more than any single hit. Put it back up the moment it drops, even with 1 combo point: it lasts 9 seconds at 1 point and 21 at 5, and **Improved Slice and Dice** makes that 45% longer. With 5 points and under 3 seconds left on it, refresh it rather than let it fall off.",
+     "**Eviscerate** goes at 4 or more combo points, not only at 5. Its damage grows by the same amount per point, so the fifth point adds no bonus, and every point costs a 60-energy **Backstab**. **Ruthlessness** often gives you a free point after each finisher and **Relentless Strikes** refunds energy, so shorter cycles let you finish more often. The simulator measured finishing at 4 or more about 0.7% better than waiting for 5.",
+     "**Cold Blood** spends no combo points. It makes your next attack a sure critical strike, so the rotation times it right before an **Eviscerate** at 4 or more points, your biggest hit.",
+     "**Adrenaline Rush** doubles your energy regeneration for 15 seconds: press it whenever it is ready. The rotation used to hold it for low energy, and pressing it on cooldown measured 1.5% better.",
+     "**Backstab** is your only combo point builder and your filler: everything above it only spends what it builds."
+    ],
+    "caveats": [
+     "**Backstab** needs a dagger in your main hand and you behind the target. If you cannot get behind the boss, or you hold a sword, build with **Sinister Strike** instead (the swords setup on this page plays that way).",
+     "When your energy is nearly full (79 or more) and you hold 4 or more points, **Eviscerate** even if **Slice and Dice** is down so no energy goes to waste, then put **Slice and Dice** back up with the next points.",
+     "**Blade Flurry** copies your hits to a second target for 15 seconds. On a single boss it is still worth pressing on cooldown for its 20% attack speed; with adds, it is your best cleave."
+    ],
+    "diverge": [
+     "In the last 6 seconds of a fight, skip **Slice and Dice** and put every combo point into **Eviscerate**: a buff that outlives the boss does nothing.",
+     "If the boss is about to die and you hold only 1 to 3 points, an **Eviscerate** still beats keeping them."
+    ],
+    "rotations": {
+     "combat-swords-raid": "0f13285f52c7",
+     "combat-daggers-raid": "99ffbf54f283"
+    },
+    "written": "2026-10-09"
+   }
+  }
+ }
+}
