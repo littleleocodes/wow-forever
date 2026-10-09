@@ -20,6 +20,17 @@
  "priorityList": [
   {
    "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 1240721,
+      "rank": 3
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-08: changed or added by the rotation search (see smite-dps-rotation-search.json)"
+  },
+  {
+   "action": {
     "autocastOtherCooldowns": {}
    }
   },
@@ -164,6 +175,27 @@
   },
   {
    "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 19280,
+      "rank": 6
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-08: changed or added by the rotation search (see smite-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 10060
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-08: changed or added by the rotation search (see smite-dps-rotation-search.json)"
+  },
+  {
+   "action": {
     "condition": {
      "cmp": {
       "op": "OpGe",
@@ -172,7 +204,7 @@
       },
       "rhs": {
        "const": {
-        "val": "40%"
+        "val": "80%"
        }
       }
      }
@@ -184,7 +216,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see smite-dps-rotation-search.json)"
+   "notes": "apl_opt 2026-10-08: changed or added by the rotation search (see smite-dps-rotation-search.json)"
   },
   {
    "action": {

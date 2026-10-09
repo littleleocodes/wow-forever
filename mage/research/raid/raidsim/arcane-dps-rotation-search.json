@@ -120,18 +120,13 @@
  "raid": {
   "class": "mage",
   "spec": "arcane-dps",
-  "date": "2026-10-02",
-  "commit": "40be98e",
+  "date": "2026-10-08",
+  "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/mage/dps/apls/arcane.apl.json",
   "start": "ui\\specs\\mage\\dps\\apls\\arcane.apl.json",
   "builds": [
-   {
-    "label": "ml: Arcane",
-    "talents": "050005023110311531-2305-0451",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-arcane-bis.gear.json"
-   },
    {
     "label": "arcane-blast-raid",
     "talents": "055205003100311531-2305001-005"
@@ -140,6 +135,10 @@
     "label": "sim preset: Arcane DPS",
     "talents": "050215003100311531-2305003202003-"
    }
+  ],
+  "tuned_on": [
+   "arcane-blast-raid",
+   "sim preset: Arcane DPS"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -167,40 +166,87 @@
     "gain_seed2": 0.02413190267225329,
     "candidates": 191,
     "pass": 2
+   },
+   {
+    "round": 4,
+    "change": "move down below 'if Missile Barrage is up: cast Arcane Missiles': cast Fire Blast",
+    "gain_seed1": 0.03293713852379376,
+    "gain_seed2": 0.03297266763119522,
+    "candidates": 305,
+    "pass": 6
+   },
+   {
+    "round": 5,
+    "change": "drop: if (stacks of Arcane Blast \u2265 1.5 or mana % < 40%): cast Frostbolt",
+    "gain_seed1": 0.0029051427346702408,
+    "gain_seed2": 0.002597616564193217,
+    "candidates": 305,
+    "pass": 6
+   },
+   {
+    "round": 6,
+    "change": "only with 20s or more of the fight left: cast Fire Blast",
+    "gain_seed1": 0.001828434853508254,
+    "gain_seed2": 0.0017075465174927196,
+    "candidates": 269,
+    "pass": 6
+   },
+   {
+    "round": 7,
+    "change": "threshold 20s -> 40s: if time left in the fight \u2265 20s: cast Fire Blast",
+    "gain_seed1": 0.0018074814805242312,
+    "gain_seed2": 0.002209600636974285,
+    "candidates": 279,
+    "pass": 6
+   },
+   {
+    "round": 8,
+    "change": "insert at the end: if stacks of Arcane Blast \u2265 2: cast Fire Blast",
+    "gain_seed1": 0.0018263053427702847,
+    "gain_seed2": 0.0017859363548762275,
+    "candidates": 279,
+    "pass": 6
+   },
+   {
+    "round": 9,
+    "change": "only with 3s or more of the fight left: cast Arcane Blast",
+    "gain_seed1": 0.0016967481089467107,
+    "gain_seed2": 0.0016274183329532121,
+    "candidates": 295,
+    "pass": 6
+   },
+   {
+    "round": 10,
+    "change": "drop the condition: if stacks of Arcane Blast \u2265 2: cast Fire Blast",
+    "gain_seed1": 0.0030143536023710116,
+    "gain_seed2": 0.0031303380364717803,
+    "candidates": 309,
+    "pass": 6
    }
   ],
   "final": {
    "raid": {
-    "ml: Arcane": {
-     "before": 675.2558232357023,
-     "after": 690.7276240323154,
-     "base": 675.2558232357023,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
     "arcane-blast-raid": {
-     "before": 666.6773806200792,
-     "after": 690.7929553814713,
-     "base": 666.6773806200792,
+     "before": 705.7185813273295,
+     "after": 721.5045927250687,
+     "base": 705.7185813273295,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
-     "oom_after": 0
+     "oom_after": 0.2530255500000001
     },
     "sim preset: Arcane DPS": {
-     "before": 664.0958505777761,
-     "after": 680.9865380750813,
-     "base": 664.0958505777761,
+     "before": 699.6232895331487,
+     "after": 714.8584623090453,
+     "base": 699.6232895331487,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
-     "oom_after": 0
+     "oom_after": 0.20768780000000003
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 5
+  "passes": 6
  }
 }

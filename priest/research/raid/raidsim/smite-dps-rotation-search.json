@@ -197,29 +197,29 @@
   "class": "priest",
   "spec": "smite-dps",
   "date": "2026-10-08",
-  "commit": "b0f0df3",
+  "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/priest/dps/apls/smite.apl.json",
   "start": "ui\\specs\\priest\\dps\\apls\\smite.apl.json",
   "builds": [
    {
-    "label": "open winner",
-    "talents": "505020021302001-025150020320003-50002"
+    "label": "smite-open-raid",
+    "talents": "505020021302001-305151000320003-50002"
+   },
+   {
+    "label": "sim preset: Smite",
+    "talents": "515330031305001001-30505113002"
    },
    {
     "label": "smite-discipline-raid",
     "talents": "505230231305001001-30505101002-3",
     "protect_only": true
-   },
-   {
-    "label": "sim preset: Smite",
-    "talents": "515330031305001001-30505113002",
-    "protect_only": true
    }
   ],
   "tuned_on": [
-   "open winner"
+   "smite-open-raid",
+   "sim preset: Smite"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -367,40 +367,80 @@
     "gain_seed2": 0.0029177957999675375,
     "candidates": 434,
     "pass": 7
+   },
+   {
+    "round": 19,
+    "change": "insert at the top: cast Penance",
+    "gain_seed1": 0.030966824910668045,
+    "gain_seed2": 0.03129485374972707,
+    "candidates": 448,
+    "pass": 8
+   },
+   {
+    "round": 20,
+    "change": "insert in the middle: cast Devouring Plague",
+    "gain_seed1": 0.008198296698520124,
+    "gain_seed2": 0.008488241902337323,
+    "candidates": 457,
+    "pass": 8
+   },
+   {
+    "round": 21,
+    "change": "insert in the middle: cast Power Infusion",
+    "gain_seed1": 0.001851517018427451,
+    "gain_seed2": 0.0016864964735652244,
+    "candidates": 467,
+    "pass": 8
+   },
+   {
+    "round": 22,
+    "change": "threshold 40% -> 60%: if mana % \u2265 40%: cast Smite",
+    "gain_seed1": 0.0021431003488399103,
+    "gain_seed2": 0.0016051122083009517,
+    "candidates": 474,
+    "pass": 8
+   },
+   {
+    "round": 23,
+    "change": "threshold 60% -> 80%: if mana % \u2265 60%: cast Smite",
+    "gain_seed1": 0.0022727696512327977,
+    "gain_seed2": 0.0022042422474219947,
+    "candidates": 478,
+    "pass": 8
    }
   ],
   "final": {
    "raid": {
-    "open winner": {
-     "before": 542.8005903282967,
-     "after": 571.2134883077556,
-     "base": 542.8005903282967,
+    "smite-open-raid": {
+     "before": 585.8304375479003,
+     "after": 618.4297284737352,
+     "base": 585.8304375479003,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.0640611996965528,
-     "oom_after": 0.7496547499744987
-    },
-    "smite-discipline-raid": {
-     "before": 532.3007543025358,
-     "after": 562.2996251454998,
-     "base": 532.3007543025358,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 3.0004625995882344,
-     "oom_after": 3.079112499632597
+     "oom_before": 0.7496547499744987,
+     "oom_after": 1.719057849994559
     },
     "sim preset: Smite": {
-     "before": 530.3605801911796,
-     "after": 557.8827237488275,
-     "base": 530.3605801911796,
+     "before": 578.5418481442192,
+     "after": 602.5779349055495,
+     "base": 578.5418481442192,
      "before_value": null,
      "after_value": null,
-     "oom_before": 3.1361667995955367,
-     "oom_after": 3.411166399647501
+     "oom_before": 3.411166399647501,
+     "oom_after": 3.9591047999912887
+    },
+    "smite-discipline-raid": {
+     "before": 580.6787179032099,
+     "after": 608.0568269736398,
+     "base": 580.6787179032099,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 3.079112499632597,
+     "oom_after": 2.959270099992418
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 7
+  "passes": 8
  }
 }

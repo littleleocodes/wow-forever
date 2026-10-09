@@ -108,6 +108,17 @@
   },
   {
    "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 19280,
+      "rank": 6
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-08: changed or added by the rotation search (see shadow-dps-rotation-search.json)"
+  },
+  {
+   "action": {
     "channelSpell": {
      "spellId": {
       "spellId": 18807,
@@ -115,6 +126,16 @@
      }
     }
    }
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 1277328
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-08: changed or added by the rotation search (see shadow-dps-rotation-search.json)"
   }
  ]
 }

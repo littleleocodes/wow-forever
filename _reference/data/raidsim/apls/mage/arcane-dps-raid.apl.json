@@ -49,16 +49,6 @@
   },
   {
    "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 10199
-     }
-    }
-   },
-   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see arcane-dps-rotation-search.json)"
-  },
-  {
-   "action": {
     "condition": {
      "auraIsActive": {
       "auraId": {
@@ -75,55 +65,55 @@
   },
   {
    "action": {
-    "condition": {
-     "or": {
-      "vals": [
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "auraNumStacks": {
-           "auraId": {
-            "spellId": 400573
-           }
-          }
-         },
-         "rhs": {
-          "const": {
-           "val": "1.5"
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpLt",
-         "lhs": {
-          "currentManaPercent": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "40%"
-          }
-         }
-        }
-       }
-      ]
-     }
-    },
     "castSpell": {
      "spellId": {
-      "spellId": 25304
+      "spellId": 10199
+     }
+    },
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "remainingTime": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "40s"
+       }
+      }
      }
     }
    },
-   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see arcane-dps-rotation-search.json)"
+   "notes": "apl_opt 2026-10-08: changed or added by the rotation search (see arcane-dps-rotation-search.json)"
   },
   {
    "action": {
     "castSpell": {
      "spellId": {
       "spellId": 1239700
+     }
+    },
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "remainingTime": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "3s"
+       }
+      }
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-08: changed or added by the rotation search (see arcane-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 10199
      }
     }
    }
