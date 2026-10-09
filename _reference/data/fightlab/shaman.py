@@ -11,6 +11,7 @@ Earth Shock (buffed by Stormstrike), Flame Shock while mana allows and instant M
 Stoneclaw Totem and a Lesser Healing Wave when low, Nature's Swiftness + Healing Wave in an emergency; Reincarnation makes a
 death cheap once an hour. Between fights: heals back to 80% health, water below 35% mana.
 """
+import dataclasses
 import json
 import pathlib
 import re
@@ -24,7 +25,11 @@ SPELLBOOK = json.load(open(ROOT / "_reference/data/forever-spells/shaman.json", 
 TREE = json.load(open(ROOT / "_reference/data/forever-talents/shaman.json", encoding="utf-8"))
 
 NUM = re.compile(r"(\d+(?:\.\d+)?)")
-DMG = re.compile(r"(?:for|causing|dealing) (\d[\d,]*) to (\d[\d,]*) (\w+) damage")
+# "inflicts": Fire Nova ("Instantly inflicts 413 to 459 fire damage to enemies within 10 yd of your active Fire totem"), which parsed to 0
+# damage until 2026-10-09 (the AoE variant paid 520 mana a cast for nothing)
+DMG = re.compile(r"(?:for|causing|dealing|inflicts) (\d[\d,]*) to (\d[\d,]*) (\w+) damage")
+# Magma Totem: "... for 20 sec that causes 73 Fire damage to creatures within 8 yards every 2 seconds" (0 damage until 2026-10-09)
+MAGMA = re.compile(r"for (\d+) sec that causes (\d+) Fire damage to creatures within (\d+) yards every (\d+) seconds")
 FLAME = re.compile(r"causing (\d[\d,]*) Fire damage immediately and (\d[\d,]*) Fire damage over (\d+) sec")
 HEAL = re.compile(r"Heals (?:a|the) friendly target for (\d[\d,]*) to (\d[\d,]*)")
 ROCK = re.compile(r"increasing melee attack power by (\d+)")
@@ -69,7 +74,7 @@ def load_spellbook():
                           range=_num(rm.group(1)) if rm else 0.0, coef=coefs.get("direct", 0.0), tags=("cost_pct",) if "base mana" in cost_txt else ())
                 s.text = txt
                 s.interrupt = parse_interrupt(txt)
-                dm, fs, he, rk, wf, ft, sh, se, cl, sl = (rx.search(txt) for rx in (DMG, FLAME, HEAL, ROCK, WIND, FLAME_W, SHIELD, SEARING, CLAW, SLOW))
+                dm, fs, he, rk, wf, ft, sh, se, cl, sl, mg = (rx.search(txt) for rx in (DMG, FLAME, HEAL, ROCK, WIND, FLAME_W, SHIELD, SEARING, CLAW, SLOW, MAGMA))
                 if name == "Stormstrike":
                     s.kind, s.weapon_pct, s.school = "melee", 1.0, "physical"
                 elif fs:
@@ -91,6 +96,11 @@ def load_spellbook():
                     s.kind, s.totem_dur, s.totem_min, s.totem_max = "buff", float(se.group(1)), float(se.group(3)), float(se.group(4))
                 if cl:
                     s.kind, s.claw_hp, s.claw_dur = "buff", float(cl.group(1)), float(cl.group(2))
+                if mg:   # a totem summon (no hit roll): on_hit lays its pulses on every mob within reach (ShamanModule.drop_magma)
+                    s.kind, s.totem_dur, s.totem_pulse, s.totem_radius, s.totem_every = "buff", float(mg.group(1)), float(mg.group(2)), float(mg.group(3)), float(mg.group(4))
+                    s.totem_coef = coefs.get("per tick", 0.0)
+                if "of your active Fire totem" in txt:
+                    s.needs_fire_totem = True
                 if sl:
                     s.daze, s.chill_dur = float(sl.group(1)) / 100, float(sl.group(2))
                 if name in ("Water Shield", "Nature's Swiftness", "Rage of the Farseer", "Mana Tide Totem", "Strength of Earth Totem", "Stoneskin Totem",
@@ -120,17 +130,17 @@ MECHANICS = {
     "Concussion": "+1%/rank Lightning Bolt, Chain Lightning, Earth Shock",
     "Elemental Warding": "no caster mobs here",
     "Reverberation": "-0.2 s/rank shock cooldown",
-    "Call of Flame": "+5%/rank fire totems and Flame Shock",
+    "Call of Flame": "+5%/rank Searing and Magma Totem, Flame Shock, Fire Nova and Lava Burst",
     "Elemental Devastation": "spell crits: +3%/rank melee crit for 10 s",
-    "Elemental Focus": "10% Clearcasting: the next damage spell is free",
-    "Elemental Alacrity": "-0.17 s/rank Lightning Bolt cast",
-    "Improved Fire Nova": "AoE only",
-    "Eye of the Storm": "23%/rank less pushback on Lightning Bolt",
-    "Call of Thunder": "+3% Lightning Bolt crit",
-    "Elemental Reach": "+6 yd Lightning Bolt (longer pulls)",
-    "Lightning Overload": "3.3%/rank: a second half-damage Lightning Bolt",
+    "Elemental Focus": "10% chance after any Fire, Frost or Nature damage spell cast, hit or miss: Clearcasting, the next damage spell is free",
+    "Elemental Alacrity": "-0.17 s/rank Lightning Bolt, Chain Lightning and Lava Burst cast",
+    "Improved Fire Nova": "+10%/rank Fire Nova damage and -2 s/rank cooldown (pulls of several mobs: single targets never use Fire Nova)",
+    "Eye of the Storm": "a 23%/rank chance to ignore a pushback on Lightning Bolt, Chain Lightning and Lava Burst (tooltip: 70% less pushback at 3/3)",
+    "Call of Thunder": "+3% Lightning Bolt and Chain Lightning crit",
+    "Elemental Reach": "+3 yd/rank Lightning Bolt (longer pulls)",
+    "Lightning Overload": "3/7/10%: a free half-damage copy of Lightning Bolt or Chain Lightning (the chain's jumps too)",
     "Earthbound": "not used",
-    "Elemental Fury": "spell and fire totem crit damage bonus +20% per rank of the 50% bonus (x2.0 at 5/5)",
+    "Elemental Fury": "spell, Searing and Magma Totem crit damage bonus +20% per rank of the 50% bonus (x2.0 at 5/5)",
     "Lava Burst": "Elemental: cast on cooldown (20% more damage on a Flame Shocked target: the 70291 tooltip; Wrath's guaranteed crit until 2026-10-09)",
     "Earth's Grasp": "+25%/rank Stoneclaw Totem health",
     "Thundering Strikes": "+1%/rank crit with spells and attacks",
@@ -147,8 +157,9 @@ MECHANICS = {
     "Stormstrike": "unlocks Stormstrike (weapon damage, +20% on the next Lightning Bolt / Earth Shock, 8 s cooldown)",
     "Spirit Weapons": "+5% parry",
     "Mental Quickness": "+15%/rank of Intellect as spell damage",
-    "Improved Stormstrike": "Stormstrike: 50% mana regen while casting for 15 s and a chance to reset its cooldown",
-    "Maelstrom Weapon": "4%/rank per melee hit: the next Lightning Bolt casts 20% faster and cheaper per stack (5 stacks = instant)",
+    "Improved Stormstrike": "Stormstrike: a 50%/rank chance of 50% mana regen while casting for 15 s; a 50%/rank chance to reset Stormstrike when you dodge or parry",
+    "Maelstrom Weapon": "-4%/rank cast time and mana per stack on the next Lightning Bolt (5 stacks at 5/5: instant and free); stacks come at 2 procs per minute per "
+                        "point on landed melee hits (the raid simulator's assumption: the client gives no rate)",
     "Rage of the Farseer": "+30% attack speed for 25 s (on the pull, every 3 min assumed)",
     "Improved Healing Wave": "-0.1 s/rank Healing Wave cast",
     "Totemic Focus": "-5%/rank totem mana",
@@ -188,7 +199,8 @@ DESCRIPTION = ("Single-target leveling fights against normal mobs of your level 
                "walks in, then Stormstrike, Earth Shock (buffed by Stormstrike), Flame Shock while mana allows and instant Maelstrom Lightning Bolts between white swings; "
                "Stoneclaw Totem and a Lesser Healing Wave when low, Nature's Swiftness + Healing Wave in an emergency; a death with Reincarnation ready costs 30 s "
                "instead of 90. Between fights: 2 s loot, 6 s travel, heals back to 80% health, water below 35% mana.")
-NOT_MODELLED = "runners, adds, Strength of Earth / Stoneskin / Grace of Air totems (5-minute totems left behind between mobs), Frost Shock kiting, Chain Lightning, Ghost Wolf travel, gear upgrades within a level bracket."
+NOT_MODELLED = ("runners, adds, Strength of Earth / Stoneskin / Grace of Air totems (5-minute totems left behind between mobs), Frost Shock kiting, Chain Lightning on "
+                "single targets, Ghost Wolf travel, gear upgrades within a level bracket, where a Fire totem stands (Fire Nova and Magma Totem reach the mobs around you).")
 # rebuild.py: which scorer model, hand draft and optimizer build the pipeline calibrates, races and reports for this class
 PIPELINE = {"variants": [{'spec': 'enhancement-dps', 'opt': 'opt-enhancement-dps-leveling-aoe', 'tag': 'aoe', 'profile': 'leveling-aoe', 'lookahead': 16, 'sets': ['MOBS_PER_PULL=3'], 'levels': '30,40,50,60', 'calibrate_levels': '40,60', 'label': 'AoE grinding, 3 mobs per pull'},
                           {'spec': 'elemental-dps', 'opt': 'opt-elemental-dps-leveling-st', 'tag': 'ele', 'profile': 'leveling-st', 'lookahead': 16, 'sets': [],
@@ -214,6 +226,14 @@ def _lava_burst_flame_shock():
 
 LAVA_BURST_FLAME_SHOCK = _lava_burst_flame_shock()
 
+# Searing Totem shoots every 2.435 s: the raid simulator's value from beta logs (sim/shaman/fire_totems.go: the 2.2 s pulse cast plus a
+# 0.23 s wait, the median of 1,267 attacks); the fight lab used 2.2 s until 2026-10-09
+SEARING_INTERVAL = 2.435
+# Maelstrom Weapon's proc rate: the client gives none, so the raid simulator's assumption, 2 procs per minute per talent point on landed
+# melee hits (sim/shaman/talents_enhancement.go: a full stack about every 30 s at 5/5); the per-hit chance is rate x weapon speed / 60
+# (0.57 a hit with the lab's 3.4 s two-hander at 5/5). The fight lab used 4% a hit per point until 2026-10-09.
+MW_PPM_PER_POINT = 2.0
+
 
 class ShamanModule(BaseModule):
     resource = "mana"
@@ -235,6 +255,7 @@ class ShamanModule(BaseModule):
         self._fight = None
         self._base_mana = 0.0
         self.flurry_swings = 0
+        self.fire_totem = None   # the active Fire totem: {"name", "until"} (+ Searing Totem's shot), for Fire Nova and one-Fire-totem rules
         self.imbue = self.pick_imbue()
         self.armor_spell_used = f"{self.imbue.name if self.imbue else 'no imbue'}, Lightning Shield" if "Lightning Shield" in self.spells else "none"
 
@@ -319,8 +340,16 @@ class ShamanModule(BaseModule):
         if spell.name == "Lightning Bolt" and self._fight:
             mw = self._fight.p.buff("Maelstrom Weapon", self._fight.t)
             if mw:
-                cost *= max(0.0, 1 - 0.2 * mw["stacks"])
+                cost *= max(0.0, 1 - self.mw_per_stack() * mw["stacks"])
         return cost
+
+    def mw_per_stack(self):
+        """Maelstrom Weapon's cut per stack (the tooltip's 4/8/12/16/20%; a flat 20% per stack at every rank until 2026-10-09)."""
+        return self.tv("Maelstrom Weapon", 0) / 100
+
+    def fire_totem_up(self, t):
+        ft = self.fire_totem
+        return ft["name"] if ft and ft["until"] > t else None
 
     def final_cost(self, fight, spell, cost):
         if fight.p.buff("Clearcasting", fight.t) and spell.dmg_max > 0:
@@ -336,8 +365,8 @@ class ShamanModule(BaseModule):
             if spell.name == "Lightning Bolt" and f:
                 mw = f.p.buff("Maelstrom Weapon", f.t)
                 if mw:
-                    c = c * max(0.0, 1 - 0.2 * mw["stacks"])
-                    if c < 0.5:
+                    c = c * max(0.0, 1 - self.mw_per_stack() * mw["stacks"])
+                    if c < 0.05:   # 5 stacks at 5/5: instant (4/5 leaves a 0.5 s cast)
                         c = 0.0
         if spell.name == "Healing Wave":
             c = max(GCD, c - 0.1 * self.rank("Improved Healing Wave"))
@@ -358,7 +387,7 @@ class ShamanModule(BaseModule):
         return c
 
     def crit_damage_bonus(self, spell):
-        if spell.kind in ("spell", "channel") or spell.name == "Searing Totem":
+        if spell.kind in ("spell", "channel") or spell.name in ("Searing Totem", "Magma Totem"):
             return 0.5 * self.tv("Elemental Fury", 0) / 100   # 100% of a spell crit's 50% bonus: x2.0 (x2.5 until 2026-10-09)
         return 0.0
 
@@ -373,6 +402,8 @@ class ShamanModule(BaseModule):
             m *= 1 + self.tv("Call of Flame", 0) / 100
         if spell.name == "Lava Burst" and f is not None and f.dot_active("Flame Shock"):
             m *= 1 + LAVA_BURST_FLAME_SHOCK / 100
+        if spell.name == "Fire Nova":
+            m *= 1 + self.tv("Improved Fire Nova", 0) / 100
         if spell.name == "Lightning Shield":
             m *= 1 + self.tv("Improved Lightning Shield", 0) / 100
         return m
@@ -393,7 +424,7 @@ class ShamanModule(BaseModule):
         return f
 
     def mana_regen(self, p, t):
-        p.regen_while_casting = max(self.base_regen_while_casting, 0.5 if p.buff("Improved Stormstrike", t) else 0.0)
+        p.regen_while_casting = max(self.base_regen_while_casting, self.tv("Improved Stormstrike", 1) / 100 if p.buff("Improved Stormstrike", t) else 0.0)
         return class_mana_regen_tick("shaman", p.spirit)
 
     def health_regen(self, p):
@@ -428,14 +459,19 @@ class ShamanModule(BaseModule):
                 p.mana -= self.mana_cost(ls)
                 p.buffs["Shield"] = {"until": t + 600.0, "charges": 3, "kind": "lightning", "icd": 0.0, "dmg": ls.shield_dmg + ls.coef * p.spell_power}
                 fight.casts["Lightning Shield"] = fight.casts.get("Lightning Shield", 0) + 1
-        # Searing Totem: a fire totem that shoots the mob every 2.2 s
+        # Searing Totem: a fire totem that shoots the mob every 2.435 s (one Fire totem at a time; a new pull drops a new one). A pull of
+        # several mobs leaves the Fire totem slot to Magma Totem once you know it (decide_aoe drops it when two mobs stand in its reach).
+        self.fire_totem = None
         st = self.spells.get("Searing Totem")
-        if st is not None and p.mana >= self.mana_cost(st) + 200 and p.mana > 0.5 * p.mana_max:
+        aoe_pull = len(fight.mobs) > 1 and "Magma Totem" in self.spells
+        if st is not None and not aoe_pull and p.mana >= self.mana_cost(st) + 200 and p.mana > 0.5 * p.mana_max:
             p.mana -= self.mana_cost(st)
-            ticks = int(st.totem_dur / 2.2)
-            per = (st.totem_min + st.totem_max) / 2 + st.coef * p.spell_power
-            fight.refresh_dot("Searing Totem", per * ticks * self.damage_multiplier(st, False), ticks, 2.2, p.spell_crit, 1.5 + self.crit_damage_bonus(st))
+            ticks = int(st.totem_dur / SEARING_INTERVAL)
+            per = ((st.totem_min + st.totem_max) / 2 + st.coef * p.spell_power) * self.damage_multiplier(st, False)
+            crit, mult = p.spell_crit, 1.5 + self.crit_damage_bonus(st)
+            fight.refresh_dot("Searing Totem", per * ticks, ticks, SEARING_INTERVAL, crit, mult)
             fight.casts["Searing Totem"] = fight.casts.get("Searing Totem", 0) + 1
+            self.fire_totem = {"name": "Searing Totem", "until": t + st.totem_dur, "per": per, "crit": crit, "mult": mult}
             p.gcd_until = t + 1.0
         rf = self.spells.get("Rage of the Farseer")
         if rf is not None and p.ready("Rage of the Farseer", t):
@@ -463,14 +499,26 @@ class ShamanModule(BaseModule):
             elif getattr(imb, "ft_max", 0.0):
                 dmg = fight.rng.uniform(imb.ft_min, imb.ft_max) * (1 + self.tv("Elemental Weapons", 2) / 100)
                 fight.deal(Spell("Flametongue Weapon", "fire"), dmg, False)
-        if self.rank("Maelstrom Weapon") and fight.rng.random() < 0.04 * self.rank("Maelstrom Weapon"):
+        if self.rank("Maelstrom Weapon") and fight.rng.random() < MW_PPM_PER_POINT * self.rank("Maelstrom Weapon") * p.mh.speed / 60.0:
             b = p.buffs.get("Maelstrom Weapon")
             stacks = min(5, (b["stacks"] if b and b["until"] > t else 0) + 1)
             p.buffs["Maelstrom Weapon"] = {"until": t + 30.0, "stacks": stacks}
         if spell.name == "Stormstrike":
             p.buffs["Stormstrike"] = {"until": t + 12.0}
-            if self.rank("Improved Stormstrike"):
-                p.buffs["Improved Stormstrike"] = {"until": t + 15.0}
+            # Improved Stormstrike: "a 50% (100% at 2/2) chance to gain 50% mana regeneration while casting spells for 15 sec"
+            if self.rank("Improved Stormstrike") and fight.rng.random() < self.tv("Improved Stormstrike", 0) / 100:
+                p.buffs["Improved Stormstrike"] = {"until": t + self.tv("Improved Stormstrike", 2)}
+
+    def stormstrike_reset(self, fight):
+        """Improved Stormstrike: "Stormstrike's cooldown has a 50% (100% at 2/2) chance to reset each time you Dodge or Parry"."""
+        if "Stormstrike" in self.spells and self.rank("Improved Stormstrike") and fight.rng.random() < self.tv("Improved Stormstrike", 3) / 100:
+            fight.p.cooldowns["Stormstrike"] = fight.t
+
+    def on_dodge(self, fight):
+        self.stormstrike_reset(fight)
+
+    def on_parry(self, fight):
+        self.stormstrike_reset(fight)
 
     def on_hit(self, fight, spell, amount, crit, frozen):
         p, m, t = fight.p, fight.m, fight.t
@@ -478,10 +526,14 @@ class ShamanModule(BaseModule):
             del p.buffs["Stormstrike"]
         if spell.name == "Lightning Bolt" and p.buff("Maelstrom Weapon", t):
             del p.buffs["Maelstrom Weapon"]
-        if spell.name == "Lightning Bolt" and self.rank("Lightning Overload") and amount > 0 and fight.rng.random() < self.tv("Lightning Overload", 0) / 100:
-            fight.deal(Spell("Lightning Bolt", "nature"), amount * 0.5, False)
-        if spell.kind == "spell" and amount > 0 and self.rank("Elemental Focus") and fight.rng.random() < 0.10:
-            p.buffs["Clearcasting"] = {"until": t + 15.0}
+        # Lightning Overload: "Lightning Bolt and Chain Lightning ... a second, similar spell on the same target at no additional cost that causes
+        # half damage" (Chain Lightning's copy jumps like the original, each jump with its own roll)
+        if spell.name in ("Lightning Bolt", "Chain Lightning") and self.rank("Lightning Overload") and amount > 0 and fight.rng.random() < self.tv("Lightning Overload", 0) / 100:
+            fight.deal(Spell(spell.name, "nature"), amount * 0.5, False)
+            if spell.name == "Chain Lightning" and spell.aoe and fight.others():
+                fight.hit_others(dataclasses.replace(spell, dmg_min=spell.dmg_min * 0.5, dmg_max=spell.dmg_max * 0.5, coef=spell.coef * 0.5))
+        if spell.name == "Magma Totem":
+            self.drop_magma(fight, spell)
         if crit and spell.kind == "spell" and self.rank("Elemental Devastation"):
             p.buffs["Elemental Devastation"] = {"until": t + 10.0}
         if spell.name == "Nature's Swiftness":
@@ -507,9 +559,58 @@ class ShamanModule(BaseModule):
             else:
                 p.mana = min(p.mana_max, p.mana + 0.02 * p.mana_max)
 
+    def drop_magma(self, fight, s):
+        """Magma Totem: one Fire totem at a time, so the Searing Totem goes; its pulses ("N Fire damage to creatures within 8 yards every 2
+        seconds" for 20 s, 3.3% of spell power each) become a periodic effect on every mob of the pull within reach when it lands (the
+        totem stands at your feet; a mob that walks in later is not added: an assumption that undercounts a straggler)."""
+        p, t = fight.p, fight.t
+        for om in fight.mobs:
+            om.dots = [d for d in om.dots if d[0] != "Searing Totem"]
+        ticks = max(1, int(round(s.totem_dur / s.totem_every)))
+        per = (s.totem_pulse + s.totem_coef * p.spell_power) * self.damage_multiplier(s, False)
+        crit, mult = p.spell_crit, 1.5 + self.crit_damage_bonus(s)
+        reach = max(s.aoe_range, s.totem_radius) + 0.5
+        target = fight.m
+        try:
+            for om in fight.alive():
+                if om.dist <= reach:
+                    fight.m = om
+                    fight.refresh_dot("Magma Totem", per * ticks, ticks, s.totem_every, crit, mult)
+        finally:
+            fight.m = target
+        self.fire_totem = {"name": "Magma Totem", "until": t + s.totem_dur}
+
+    def searing_follows(self, fight):
+        """A pull of several mobs: the Searing Totem shoots the next mob once its target dies (the totem lives 55 s; the fight lab's
+        Searing Totem was a periodic effect on the first mob only until 2026-10-09). No effect on single-mob fights."""
+        ft = self.fire_totem
+        t = fight.t
+        if ft and ft["name"] == "Searing Totem" and ft["until"] > t and fight.m.hp > 0 and not fight.dot_active("Searing Totem"):
+            ticks = int((ft["until"] - t) / SEARING_INTERVAL)
+            if ticks > 0:
+                fight.refresh_dot("Searing Totem", ft["per"] * ticks, ticks, SEARING_INTERVAL, ft["crit"], ft["mult"])
+
+    def decide_aoe(self, fight):
+        """The area priority (engine.BaseModule.decide_aoe) with the Fire totem rules: Fire Nova only while a Fire totem is down ("enemies
+        within 10 yd of your active Fire totem"), and no second Magma Totem while one still pulses."""
+        up = self.fire_totem_up(fight.t)
+        hide = [n for n in self.spells if (n == "Fire Nova" and up is None) or (n == "Magma Totem" and up == "Magma Totem")]
+        held = {n: self.spells.pop(n) for n in hide}
+        try:
+            return super().decide_aoe(fight)
+        finally:
+            self.spells.update(held)
+
     def after_cast(self, fight, spell):
         p, t = fight.p, fight.t
+        # Elemental Focus: "a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell": rolled when
+        # the cast is done, hit or miss (rolled on hits only until 2026-10-09); totems are the totem's, not the shaman's (as the raid simulator)
+        if (self.rank("Elemental Focus") and spell.kind == "spell" and (spell.dmg_max > 0 or spell.dot > 0) and spell.school in ("fire", "frost", "nature")
+                and fight.rng.random() < self.tv("Elemental Focus", 0) / 100):
+            p.buffs["Clearcasting"] = {"until": t + 15.0}
         cd = spell.cooldown
+        if spell.name == "Fire Nova":
+            cd = max(0.0, cd - self.tv("Improved Fire Nova", 1))
         if spell.name in ("Earth Shock", "Flame Shock", "Frost Shock"):
             cd = max(GCD, cd - self.tv("Reverberation", 0))
             for other in ("Earth Shock", "Flame Shock", "Frost Shock"):   # shocks share a cooldown
@@ -566,6 +667,8 @@ class ShamanModule(BaseModule):
         return None
 
     def decide(self, fight):
+        if len(fight.mobs) > 1:
+            self.searing_follows(fight)
         if fight.others():   # a pull of several mobs: the area priority first (engine.BaseModule.decide_aoe, AOE below)
             r = self.decide_aoe(fight)
             if r is not None:
