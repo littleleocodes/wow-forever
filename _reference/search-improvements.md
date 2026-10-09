@@ -74,6 +74,10 @@
    certificate and the structural ranking. Saving: about 4 min per such entry; low priority.
 10. **Mana-conditional spell ranks.** Retribution's lower Seal of Command rank pays only for mana-hungry builds: a rank line guarded by
    mana would let one rotation serve both.
+11. **Spells the models leave out (audit 2026-10-08).** The fork ships five Forever abilities as stubs (Revive, Enchanted Flare,
+   Confounding Flash, Contingency Plan, Divine Grace): none deals damage, so no raid number misses them. The healer lab casts neither
+   Divine Grace nor Contingency Plan (priest baseline heals on 10-minute cooldowns): every priest build would gain about the same, so
+   no talent choice moves. Low priority.
 
 ## Efficiency (measured)
 
