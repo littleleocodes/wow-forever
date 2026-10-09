@@ -70,15 +70,19 @@ func foreverExtraImbues(agent Agent) {
 	}
 }
 
+// The switches are read once at program start: os.Getenv in a hot path (every spell's hit roll) made the bench 3x slower on Windows.
+var foreverClassicHit = os.Getenv("WOW_FOREVER_CLASSIC_HIT") == "1"
+var foreverRagePlayerHealth = os.Getenv("WOW_FOREVER_RAGE_PLAYER_HEALTH") == "1"
+
 func foreverHitSuppression() float64 {
-	if os.Getenv("WOW_FOREVER_CLASSIC_HIT") == "1" {
+	if foreverClassicHit {
 		return 0.01
 	}
 	return 0
 }
 
 func foreverSpellMissFloor() float64 {
-	if os.Getenv("WOW_FOREVER_CLASSIC_HIT") == "1" {
+	if foreverClassicHit {
 		return 0.01
 	}
 	return 0
@@ -89,7 +93,7 @@ func foreverSpellMissFloor() float64 {
 var foreverExpectedCreatureHealth = map[int32]float64{60: 4365}
 
 func foreverRageHealth(unit *Unit) float64 {
-	if os.Getenv("WOW_FOREVER_RAGE_PLAYER_HEALTH") == "1" {
+	if foreverRagePlayerHealth {
 		return unit.MaxHealth()
 	}
 	if h, ok := foreverExpectedCreatureHealth[unit.Level]; ok {

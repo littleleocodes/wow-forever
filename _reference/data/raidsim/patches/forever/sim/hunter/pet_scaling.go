@@ -16,8 +16,12 @@ import (
 	"github.com/wowsims/forever/sim/core/stats"
 )
 
+// Read once at program start: the dynamic pet inherits on every owner stat change, a hot path.
+var petScalingOff = os.Getenv("WOW_FOREVER_PET_SCALING") == "0"
+var petNormalize = os.Getenv("WOW_FOREVER_PET_NORMALIZE") == "1"
+
 func foreverPetScaling(owner stats.Stats) stats.Stats {
-	if os.Getenv("WOW_FOREVER_PET_SCALING") == "0" {
+	if petScalingOff {
 		return stats.Stats{}
 	}
 	ap := owner[stats.AttackPower]
@@ -40,7 +44,7 @@ func foreverPetScaling(owner stats.Stats) stats.Stats {
 // with the pet's own speed (equal damage at every speed). Nobody has measured it at level 60. WOW_FOREVER_PET_NORMALIZE=1 restores
 // the fork's rule (comparisons).
 func foreverPetHitSpeed(attackSpeed float64) float64 {
-	if os.Getenv("WOW_FOREVER_PET_NORMALIZE") == "1" {
+	if petNormalize {
 		return attackSpeed
 	}
 	return 2.0

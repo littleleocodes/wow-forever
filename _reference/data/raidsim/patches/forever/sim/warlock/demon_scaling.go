@@ -19,8 +19,10 @@ import (
 	"github.com/wowsims/forever/sim/core/stats"
 )
 
+var demonScalingOff = os.Getenv("WOW_FOREVER_DEMON_SCALING") == "0" // read once at program start
+
 func foreverDemonScaling(owner stats.Stats) stats.Stats {
-	if os.Getenv("WOW_FOREVER_DEMON_SCALING") == "0" {
+	if demonScalingOff {
 		return stats.Stats{}
 	}
 	school := owner[stats.FireDamage]

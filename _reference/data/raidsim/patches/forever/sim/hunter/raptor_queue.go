@@ -9,6 +9,8 @@ package hunter
 
 import "os"
 
+var raptorQueueHit = os.Getenv("WOW_FOREVER_RAPTOR_QUEUE_HIT") == "1" // read once at program start
+
 func foreverRaptorQueueHit() bool {
-	return os.Getenv("WOW_FOREVER_RAPTOR_QUEUE_HIT") == "1"
+	return raptorQueueHit
 }

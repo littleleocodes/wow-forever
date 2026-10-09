@@ -20,6 +20,7 @@ import (
 
 const downrankLevel = 60
 
+var downrankOff = os.Getenv("WOW_FOREVER_DOWNRANK") == "0" // read once at program start (not in the hot path)
 var downrankOnce sync.Once
 var downrankNext map[int32]int16 // spell id -> the level the next higher rank of the same name is taught at
 var downrankTaught map[int32]int16
@@ -55,7 +56,7 @@ func buildDownrank() {
 
 // DownrankMultiplier is the share of its spell power coefficient a ranked spell keeps at level 60 (1 for the top rank).
 func DownrankMultiplier(spellID int32) float64 {
-	if os.Getenv("WOW_FOREVER_DOWNRANK") == "0" {
+	if downrankOff {
 		return 1
 	}
 	downrankOnce.Do(buildDownrank)
