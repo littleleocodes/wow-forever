@@ -134,7 +134,10 @@ def armor_mitigation(armor, attacker_level):
 
 
 def int_per_spell_crit(level):
-    """Intellect per 1% spell crit: 59.5 at 60 for mages (Forever client: 0.0168% per Intellect at max level), scaling with level (~30 at 30)."""
+    """Intellect per 1% spell crit for mages: the client's PlayerExpectedStat by level (59.5 at 60; 2026-10-09), else 59.5 x L / 60."""
+    per = _per_stat("mage", level, 1)
+    if per:
+        return 1.0 / per
     return max(8.0, 59.5 * level / 60.0)
 
 
@@ -268,17 +271,37 @@ def class_base_mana(cls, level):
     return 0.0 if m60 <= 0 else LEVEL1_MANA + (m60 - LEVEL1_MANA) * (level - 1) / 59.0
 
 
+# Crit per point of Agility and Intellect by class and level, the client's PlayerExpectedStat table (build 70291; 2026-10-09 audit:
+# the level-60 value scaled by 60 / level was 15-30% off at level 20 for most classes, about 10% at 30, close from 40). Levels the
+# table lacks fall back to the scaling. CRIT_PER_STAT_TABLE = False restores the scaling (the model before 2026-10-09).
+_PES = json.load(open(pathlib.Path(__file__).resolve().parent / "player_expected_stat.json", encoding="utf-8"))["classes"]
+CRIT_PER_STAT_TABLE = True
+
+
+def _per_stat(cls, level, i):
+    if not CRIT_PER_STAT_TABLE:
+        return None
+    row = _PES.get(cls, {}).get(str(int(round(level))))
+    return row[i] if row else None
+
+
 def class_spell_crit(cls, level, intellect):
-    """Spell crit from base and Intellect: base% + crit_per_int * Int at 60 (the Int per 1% scales with level)."""
+    """Spell crit from base and Intellect: base% + the client's percent per Intellect at that level (else the level-60 value x 60 / L)."""
     b = CLASS_BASE_60[cls]
-    per_int = b["crit_per_int"] * 60.0 / max(10.0, level) if b["crit_per_int"] else 0.0
+    if not b["crit_per_int"]:
+        return b["spell_crit"] / 100
+    per_int = _per_stat(cls, level, 1)
+    if per_int is None:
+        per_int = b["crit_per_int"] * 60.0 / max(10.0, level)
     return b["spell_crit"] / 100 + intellect * per_int / 100
 
 
 def class_melee_crit(cls, level, agility):
-    """Melee/ranged crit from base and Agility: base% + crit_per_agi * Agi (per-Agi value scaled to level as for Intellect)."""
+    """Melee/ranged crit from base and Agility: base% + the client's percent per Agility at that level (else the level-60 value x 60 / L)."""
     b = CLASS_BASE_60[cls]
-    per_agi = b["crit_per_agi"] * 60.0 / max(10.0, level)
+    per_agi = _per_stat(cls, level, 0)
+    if per_agi is None:
+        per_agi = b["crit_per_agi"] * 60.0 / max(10.0, level)
     return max(0.0, b["phys_crit"] / 100 + agility * per_agi / 100)
 
 

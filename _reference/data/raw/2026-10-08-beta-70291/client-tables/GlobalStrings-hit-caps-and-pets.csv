@@ -1,0 +1,23 @@
+ID,BaseTag,TagText_lang,Flags
+16917,PET_BONUS_TOOLTIP_RANGED_ATTACK_POWER,Increases your pet's Attack Power by %s,1
+16918,PET_BONUS_TOOLTIP_STAMINA,Increases your pet's Stamina by %d,1
+16919,PET_BONUS_TOOLTIP_INTELLECT,Increases your pet's Intellect by %d,1
+16920,PET_BONUS_TOOLTIP_ARMOR,Increases your pet's Armor by %d,1
+16921,PET_BONUS_TOOLTIP_RESISTANCE,Increases your pet's Resistance by %d,1
+16922,PET_BONUS_TOOLTIP_SPELLDAMAGE,Increases your pet's Spell Damage by %s,1
+16923,PET_BONUS_TOOLTIP_WARLOCK_SPELLDMG_SHADOW,|cFFBCBCBC\nIncreases your pet's Attack Power by %d and Spell Damage by %d|r,1
+16924,PET_BONUS_TOOLTIP_WARLOCK_SPELLDMG_FIRE,|cFFBCBCBC\nIncreases your pet's Attack Power by %d and Spell Damage by %d|r,1
+21011,STAT_SPELLPOWER_TOOLTIP,Increases the damage of your |cFFFFFFFFSpells|r by up to %d\n\nIncreased by |cFFFFFFFFSpell Damage|r and |cFFFFFFFFSpell Power|r\n\n|cffBCBCBCLonger cast times typically benefit more from Spell Damage\n\nSpell ranks far below your current level benefit less from Spell Damage and trigger class abilities less often|r,1
+21014,PET_BONUS_TOOLTIP_WARLOCK_SPELLDMG,|cFFBCBCBC\nIncreases your pet's Attack Power by %d and Spell Damage by %d|r,1
+21685,STAT_SPELLHEALING_TOOLTIP,Increases the healing of your |cFFFFFFFFSpells|r by up to %d\n\nIncreased by |cFFFFFFFFSpell Healing|r and |cFFFFFFFFSpell Power|r\n\n|cffBCBCBCLonger cast times typically benefit more from Spell Healing\n\nSpell ranks far below your current level benefit less from Spell Healing and trigger class abilities less often|r,1
+21755,STAT_HEALTH_PET_TOOLTIP,Used for |cFFFFFFFFTaking Damage|r\nResults in death when reduced to 0\n\nIncreased by |cFFFFFFFFMaster's Stamina|r\n\n|cFFBCBCBCEvery 1 Stamina adds 2 Health|r,1
+23644,BATTLE_PET_TOOLTIP_CLICK,[Click here to view in journal],1
+23674,BATTLE_PET_TOOLTIP_SUMMON,Summons and dismisses your %s.,1
+42466,AUCTION_HOUSE_BUCKET_VARIATION_PET_TOOLTIP,"Pets in this group may vary in stats, level, and quality. Check the auction's tooltip before buying.",5
+60051,CR_ROGUE_HIT_CAP_TOOLTIP,\n|cffBCBCBCTo never miss|r |cFFFF5A5ARaid Bosses|r|cffBCBCBC:\n  8.00%% Melee/Ranged\n17.00%% Spells\n27.00%% Dual Wielding\n\nTo never miss|r |cFF52E31ELvl %d Targets/Players|r|cffBCBCBC:\n  5.00%% Melee/Ranged\n  4.00%% Spells\n24.00%% Dual Wielding|r,1
+60052,CR_HUNTER_HIT_CAP_TOOLTIP,\n|cffBCBCBCTo never miss|r |cFFFF5A5ARaid Bosses|r|cffBCBCBC:\n  8.00%% Melee/Ranged\n17.00%% Spells\n27.00%% Dual Wielding\n\nTo never miss|r |cFF52E31ELvl %d Targets/Players|r|cffBCBCBC:\n  5.00%% Melee/Ranged\n  4.00%% Spells\n24.00%% Dual Wielding|r,1
+60053,CR_WARRIOR_HIT_CAP_TOOLTIP,\n|cffBCBCBCTo never miss|r |cFFFF5A5ARaid Bosses|r|cffBCBCBC:\n  8.00%% Melee/Ranged\n17.00%% Spells\n27.00%% Dual Wielding\n\nTo never miss|r |cFF52E31ELvl %d Targets/Players|r|cffBCBCBC:\n  5.00%% Melee/Ranged\n  4.00%% Spells\n24.00%% Dual Wielding|r,1
+60054,CR_DEFAULT_HIT_CAP_TOOLTIP,\n|cffBCBCBCTo never miss|r |cFFFF5A5ARaid Bosses|r|cffBCBCBC:\n  8.00%% Melee\n17.00%% Spells\n\nTo never miss|r |cFF52E31ELvl %d Targets/Players|r|cffBCBCBC:\n  5.00%% Melee\n  4.00%% Spells|r,1
+60215,STAT_ARMOR_PET_TOOLTIP,Reduces |cFFFFFFFFPhysical Damage|r taken by %0.2f%%\n\nIncreased by %d%% of |cFFFFFFFFMaster's Armor|r,1
+60228,STAT_SPELLPOWER_PET_TOOLTIP,Increases the damage of your |cFFFFFFFFSpells|r by up to %d\n\nIncreased by 10%% of |cFFFFFFFFMaster's Spell Damage|r\n\n|cffBCBCBCLonger cast times typically benefit more from Spell Damage|r,1
+60276,STAT_WARLOCK_HEALTH_PET_TOOLTIP,The maximum amount of |cFFFFFFFFDamage|r this pet can endure before dying\n\nIncreased by |cFFFFFFFFMaster's Stamina|r\n\n|cFFBCBCBCEvery 1 Stamina adds 7.5 Health|r,1
