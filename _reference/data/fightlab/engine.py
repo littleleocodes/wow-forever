@@ -128,6 +128,7 @@ class Pet:
     hit_bonus: float = 0.0
     dmg_mult: float = 1.0
     caster: bool = False         # imp: stands at range, is not attacked unless it pulls threat
+    spell_power: float = 0.0     # spell damage the pet's spells add with their coefficient (2026-10-08: a demon's share of the warlock's)
 
 
 @dataclass
@@ -1098,7 +1099,7 @@ class Fight:
             if r > 1.0 - spell_miss(m.level - p.level) + pet.hit_bonus:
                 self.note(f"{spell.name} MISS")
                 return True
-            amount = (self.rng.uniform(spell.dmg_min, spell.dmg_max) + spell.coef * 0.0) * pet.dmg_mult
+            amount = (self.rng.uniform(spell.dmg_min, spell.dmg_max) + spell.coef * pet.spell_power) * pet.dmg_mult
             crit = self.rng.random() < pet.crit
             if crit:
                 amount *= 1.5

@@ -171,7 +171,7 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   `MOB_CASTER_SHARE`, `RUNNER_SHARE` (mobs that flee at 20% health; default 0, a sensitivity row), `MOBS_PER_PULL` (pulls of
   several mobs: the first is the target, adds stay on the player, area spells and channels hit every mob in range, a kill is one
   mob; the mage's AoE grinding variant runs 4), `WEAPON_DPS_MULT`,
-  `GEAR_STAT_MULT`). Gear by level comes from the Classic 1.12 item database
+  `GEAR_STAT_MULT`; since 2026-10-08 `PET_SCALING` and `HUNTER_PET_SPEED`: pets inherit from their owner by the client's UI numbers and a 1.2 s cat swings with the 2.0 s base hit, the raid simulator's pet patches; hunter leveling 4-11% faster per kill, warlock 2-5%). Gear by level comes from the Classic 1.12 item database
   (`fightlab/gear_stats.json` by `gear_stats.py`: tiers greens / blues, `GEAR_TIER`, `run.py --gear`; spell power and healing
   from the items' on-equip spells in the same dump).
   A data-driven share of pulls are caster mobs that stand at range and cast until interrupted (`Spell.interrupt` = lockout

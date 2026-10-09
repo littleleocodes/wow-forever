@@ -16,6 +16,7 @@ import pathlib
 import dataclasses
 import re
 
+import tables
 from engine import parse_interrupt, BaseModule, Pet, Player, Spell, Weapon
 from tables import (GCD, MELEE_RANGE, WEAPON_SPEED, ammo_dps, class_attack_power, class_base_health, class_base_mana, class_base_stats,
                     class_dodge, class_health_regen_tick, class_mana_regen_tick, class_melee_crit, class_ranged_ap, class_spell_crit,
@@ -321,17 +322,23 @@ class HunterModule(BaseModule):
             p.mh = Weapon(dmg_min=mdps * WEAPON_SPEED["2h"] * 0.8, dmg_max=mdps * WEAPON_SPEED["2h"] * 1.2, speed=WEAPON_SPEED["2h"], kind="2h")
         p.hp, p.mana = p.hp_max, p.mana_max
         p.regen_while_casting = self.tv("Bestial Discipline", 1) / 100
-        p.pet = None if self.rank("Lone Wolf") else self.make_pet(level)   # Lone Wolf: no pet, +20% on every attack of your own
+        p.pet = None if self.rank("Lone Wolf") else self.make_pet(level, p)   # Lone Wolf: no pet, +20% on every attack of your own
         return p
 
-    def make_pet(self, level):
+    def make_pet(self, level, p=None):
+        """The cat. Since 2026-10-08 it inherits from the hunter (`tables.PET_SCALING`: 10% of the higher attack power, the crit chance,
+        30% of the armor, 2 health per Stamina) and swings every `tables.HUNTER_PET_SPEED` seconds with the 2.0 s base hit (Forever does not
+        normalize pet damage by attack speed)."""
         f = (level - 1) / 59.0
         stat = {k: 20 + (PET[k] - 20) * f for k in ("strength", "agility", "stamina", "intellect", "spirit")}
         et = 1 + self.tv("Endurance Training", 0) / 100
-        hp = (pet_health(level) + 10 * stat["stamina"] * 0.5) * PET["hp_mult"] * et
-        pet = Pet(name="Cat", hp_max=hp, hp=hp, armor=PET["armor_per_level"] * level * et,
-                  dmg_min=PET["dmg"][0] * PET["speed"] * level / 60.0, dmg_max=PET["dmg"][1] * PET["speed"] * level / 60.0, speed=PET["speed"],
-                  attack_power=max(0.0, 2 * stat["strength"] - 20), crit=0.05 + stat["agility"] * 0.05 / 100 + self.tv("Ferocity", 0) / 100,
+        k = tables.PET_SCALING if p is not None else 0.0
+        own_ap = max(p.attack_power, p.ranged_ap) if p is not None else 0.0
+        hp = (pet_health(level) + 10 * stat["stamina"] * 0.5 + k * 2 * (p.stamina if p is not None else 0.0)) * PET["hp_mult"] * et
+        pet = Pet(name="Cat", hp_max=hp, hp=hp, armor=(PET["armor_per_level"] * level + k * 0.30 * (p.armor if p is not None else 0.0)) * et,
+                  dmg_min=PET["dmg"][0] * PET["speed"] * level / 60.0, dmg_max=PET["dmg"][1] * PET["speed"] * level / 60.0, speed=tables.HUNTER_PET_SPEED,
+                  attack_power=max(0.0, 2 * stat["strength"] - 20) + k * 0.10 * own_ap,
+                  crit=0.05 + stat["agility"] * 0.05 / 100 + self.tv("Ferocity", 0) / 100 + k * (p.melee_crit if p is not None else 0.0),
                   focus=100.0, focus_max=100.0, focus_regen=5.0 * (1 + self.tv("Bestial Discipline", 0) / 100), threat_mult=1.0)
         pet.dmg_mult = PET["happiness"] * PET["dmg_family"] * (1 + self.tv("Unleashed Fury", 0) / 100) * (1 + self.tv("Focused Fire", 0) / 100)
         self.pet_base_speed = pet.speed

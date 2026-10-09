@@ -19,6 +19,7 @@ import json
 import pathlib
 import re
 
+import tables
 from engine import parse_interrupt, BaseModule, Pet, Player, Spell
 from tables import (GCD, MELEE_RANGE, THREAT_SWITCH, WAND_SPEED, class_base_health, class_base_mana, class_base_stats, class_health_regen_tick,
                     class_mana_regen_tick, class_spell_crit, gear_stats, interp, wand_dps)
@@ -341,21 +342,27 @@ class WarlockModule(BaseModule):
                    mana_max=(bm + 15 * intellect) * (1 + self.tv("Fel Vitality", 1) / 100), mana=0.0, base_mana=bm, spirit=spirit,
                    intellect=intellect, spell_power=sp, armor=armor, spell_crit=class_spell_crit("warlock", level, intellect), dodge=0.04, ranged_crit=0.03)
         p.hp, p.mana = p.hp_max, p.mana_max
-        p.pet = self.make_pet(level)
+        p.pet = self.make_pet(level, p, stamina)
         return p
 
-    def make_pet(self, level):
+    def make_pet(self, level, p=None, stamina=0.0):
+        """The demon. Since 2026-10-08 it inherits from the warlock (`tables.PET_SCALING`: 17% of the spell damage as attack power, 10% as
+        spell damage, 35% of the armor, 7.5 health per Stamina, the spell crit chance), as the raid simulator's demon_scaling patch."""
         cfg = PETS[self.pet_name]
         f = (level - 1) / 59.0
         stat = {k: 20 + (cfg[k] - 20) * f for k in ("strength", "agility", "stamina", "intellect", "spirit")}
-        hp = (pet_health(level) + 10 * stat["stamina"] * 0.5) * cfg["hp_mult"] * (1 + self.tv("Fel Vitality", 0) / 100)
-        pet = Pet(name=self.pet_name, hp_max=hp, hp=hp, armor=cfg["armor_per_level"] * level,
+        k = tables.PET_SCALING if p is not None else 0.0
+        sp = p.spell_power if p is not None else 0.0
+        hp = (pet_health(level) + 10 * stat["stamina"] * 0.5 + k * 7.5 * stamina) * cfg["hp_mult"] * (1 + self.tv("Fel Vitality", 0) / 100)
+        pet = Pet(name=self.pet_name, hp_max=hp, hp=hp, armor=cfg["armor_per_level"] * level + k * 0.35 * (p.armor if p is not None else 0.0),
                   dmg_min=cfg["dmg"][0] * level / 60.0, dmg_max=cfg["dmg"][1] * level / 60.0, speed=cfg["speed"],
-                  attack_power=max(0.0, 2 * stat["strength"] - 20), crit=0.05 + stat["agility"] * 0.05 / 100,
+                  attack_power=max(0.0, 2 * stat["strength"] - 20) + k * 0.17 * sp,
+                  crit=0.05 + stat["agility"] * 0.05 / 100 + k * (p.spell_crit if p is not None else 0.0),
                   focus=0.0, focus_max=0.0, focus_regen=0.0, mana=cfg["mana"] * level / 60.0 * (1 + self.tv("Fel Vitality", 0) / 100),
                   mana_max=cfg["mana"] * level / 60.0 * (1 + self.tv("Fel Vitality", 0) / 100), mana_regen=(15 + stat["spirit"] / 5) / 2.0,
                   threat_mult=cfg["threat_mult"], caster=cfg["caster"])
         pet.dmg_mult = (1 + self.tv("Unholy Power", 0) / 100) * (1.03 if self.rank("Soul Link") else 1.0)
+        pet.spell_power = k * 0.10 * sp
         self._pet_armor = pet.armor
         return pet
 
@@ -537,7 +544,8 @@ class WarlockModule(BaseModule):
         if pet.name == "Imp":
             fb = self.spells.get("Firebolt")
             if fb is not None and pet.cooldowns.get("Firebolt", -1.0) <= t and pet.mana >= fb.cost:
-                s = Spell("Firebolt", "fire", cost=fb.cost, cooldown=fb.cast + 0.2, kind="spell", dmg_min=fb.dmg_min, dmg_max=fb.dmg_max, resource="mana")
+                s = Spell("Firebolt", "fire", cost=fb.cost, cooldown=fb.cast + 0.2, kind="spell", dmg_min=fb.dmg_min, dmg_max=fb.dmg_max, resource="mana",
+                          coef=fb.coef)   # with the Imp's 10% of the warlock's spell damage (pet.spell_power, 2026-10-08)
                 s.dmg_min *= 1 + self.tv("Improved Imp", 0) / 100
                 s.dmg_max *= 1 + self.tv("Improved Imp", 0) / 100
                 return s
