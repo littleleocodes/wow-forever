@@ -305,6 +305,20 @@ Each class folder now opens with player pages and keeps the research below:
   demonology-raid's winner 2/31/18 Demonology); (2) `bash _reference/data/run_open_searches.sh priest warlock`; (3) re-arm the writer
   waiters (priest: leveling half only, the raid half is written; warlock: both halves) and the hunter ML waiter on the runner script's
   own bash PID (the `usr/bin/bash.exe ... run_open_searches.sh` process: killing the outer wrapper leaves the script running).
+  **Beta build 70291 and the full sweep (2026-10-08 night, user: "Do all of them. And do a fresh pull on any new beta changes and data
+  as well as do a full search for any missing data ... like the warlock demon scaling and hunter pet"):** 70291 landed on 8 Oct (Impale needs
+  3 Deep Wounds, Predatory Instincts -> Natural Instinct with Intellect to healing, Penance much weaker, Water Shield no cooldown, Reckoning
+  1.5 s limit, Expose Prey 10 s, spell ranks rescaled) and the simulator fork moved 199 commits (2ce8265). Done: the warlock's 70205 search
+  stopped; talents, spellbooks, effects and trees refreshed (`raw/2026-10-08-beta-70291`); the rename carried through 54 files; the
+  simulator updated and pinned with every patch (the racial switch built in, off by default); `run.py SIM_RENAMES` maps the fork's old
+  druid name; value audit clean. The fork's own code says "Forever's demons inherit nothing from the warlock" (sim/warlock/pets.go).
+  **Plan, in order:** (1) re-baseline (`deep-runs/rebaseline_70291.sh`: every raid rotation re-tuned, every entry re-raced in every
+  environment, fight-lab races and reports with the new spell ranks, own-rotation races, regen); (2) the open searches for every class
+  with a warm start and the restricted search (`run_open_searches.sh --fresh hunter mage paladin shaman rogue druid warrior priest
+  warlock`; covers the five owed restricted re-runs and the rotation re-tunes); (3) healer and tank deep searches (`deep_class.py
+  <class> --steps heal,tank` for priest, paladin, druid and warrior); (4) the machine-learning pipeline for the gear tiers on the new item
+  data; (5) the final race-neutral re-race (`WOW_FOREVER_NO_RACIALS=1`), rankings, gear links, pages; (6) safety checks (search_check,
+  own-rotation audit, fight-lab regression, link check), the fight-variety check, weapon variants on the pages.
   **Racials (2026-10-08 05:2x):** the simulator applies more racials in Forever than Classic (Tauren +1% hit, Night Elf's Elune's Light
   +10% crit, Berserking, Blood Fury, weapon specializations), and the generic cooldown line casts the on-use ones, so stripping rotation
   lines would not remove them. Patch `patches/forever/sim/core/no_racials.go` (+ an edits.json insertion in racials.go) switches all of them
