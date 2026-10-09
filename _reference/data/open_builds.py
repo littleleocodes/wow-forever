@@ -125,6 +125,7 @@ def raid_candidates(cls, st, data, RM):
     nums = RM.raid_numbers(cls)
     specs = json.load(open(HERE / "raidsim" / "specs.json", encoding="utf-8")).get(cls) or {}
     out = []
+    variants = {}   # entry -> the variant's build (weapon or stance variants, 2026-10-08)
     for entry, e in st["entries"].items():
         if not e.get("done"):
             continue
@@ -156,6 +157,18 @@ def raid_candidates(cls, st, data, RM):
         bh = max(hands, key=hands.get) if hands else None
         replaces = bh if bh and wd >= hands[bh] * (1 + MIN_GAIN) else None
         b = None if why else make_raid_build(cls, entry, e, st, spec, w, allr, best, rivals, bh, hands.get(bh), replaces)
+        # the entry's variant (weapon or stance): its own builds only are the bar, 0.5% (spec_modes.RAID_ENTRY_VARIANT)
+        vname = SM.RAID_ENTRY_VARIANT.get((cls, entry))
+        own_rivals = {k: v for k, v in rivals.items() if not k.startswith("sim preset")}
+        if vname and own_rivals:
+            vbest = max(own_rivals, key=own_rivals.get)
+            if wd >= own_rivals[vbest] * (1 + GAIN_NEW):
+                vb = make_raid_build(cls, entry, e, st, spec, w, own_rivals, vbest, own_rivals, None, None, None)
+                vb["id"] = f"{SM.spec_slug(cls, spec)}-{SM.slug(vname)}-open-raid"
+                vb["name"] = f"{SM.spec_name(cls, spec)} — {vname} (open talent search)"
+                vb["notes"].insert(0, f"The best {vname.lower()} build: {wd / own_rivals[vbest] - 1:+.1%} over {vbest}, the best of our builds in "
+                                      f"{entry}. The spec's raid pick may be another variant; the page lists this one among the spec's other builds.")
+                variants[entry] = vb
         out.append((entry, spec, wd, b, why))
     # one build per spec: among the spec's own rotations (a tree's weapon or stance variants: the rogue's swords and daggers, the hunter's
     # Lone Wolf) the best winner; a hybrid's winners first from a rotation built for the hybrid or its lead tree (never the faster tree)
@@ -176,6 +189,12 @@ def raid_candidates(cls, st, data, RM):
             p2, _, e2, _, d2 = better[0]
             out[i] = (entry, spec, wd, None, f"the {e2} rotation's winner of the same spec comes first ({d2:.1f} against {wd:.1f} DPS"
                       + ("; built for the hybrid or its lead tree" if p2 < mine[0] else "") + ")")
+    # a variant entry whose winner is not the spec's written build keeps its own best build (the swords build next to the daggers pick)
+    main_from = {s2: e2 for e2, s2, d2, b2, w2 in out if b2 is not None}
+    for i, (entry, spec, wd, b, why) in enumerate(out):
+        vb = variants.get(entry)
+        if b is None and vb is not None and main_from.get(spec) != entry:
+            out[i] = (entry, spec, wd, vb, f"{why}; kept as the {vb['name'].split(' — ')[1].split(' (')[0].lower()} variant's build")
     return out
 
 

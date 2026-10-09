@@ -112,6 +112,16 @@ RAID_ENTRY_TREES = {
     ("shaman", "elemental-dps"): {"Elemental"}, ("shaman", "enhancement-dps"): {"Enhancement"}, ("shaman", "stormcaller-dps"): {"Elemental"},
     ("druid", "balance-dps"): {"Balance"}, ("druid", "feral-cat-dps"): {"Feral Combat"}, ("druid", "feral-bear-tank"): {"Feral Combat"},
 }
+# weapon and stance variants of a spec's raid play (2026-10-08, the improvement log's "weapon variants on the pages": the rogue's swords
+# entry found a build 1.9% ahead of our swords builds, hidden behind the daggers pick): the open-build writer keeps each variant's best
+# build next to the spec's pick, and the page lists it among the spec's other builds
+RAID_ENTRY_VARIANT = {
+    ("rogue", "combat-swords-raid"): "Swords", ("rogue", "combat-daggers-raid"): "Daggers",
+    ("warrior", "arms-2h-raid"): "Two-handed", ("warrior", "fury-dw-raid"): "Dual-wield", ("warrior", "arms-battle-raid"): "Battle Stance",
+    ("hunter", "mm-raid"): "With a pet", ("hunter", "mm-lonewolf-raid"): "Lone Wolf",
+    ("warlock", "fire-destro-raid"): "Fire", ("warlock", "sb-raid"): "Shadow Bolt", ("warlock", "incinerate-raid"): "Incinerate",
+    ("shaman", "stormcaller-dps"): "Stormcaller",
+}
 # leveling rotations come from derive_leveling.LEVEL (each tree's rotation; a healing tree without one levels as LEVEL_AS's damage spec,
 # the 2026-09-29 agreement); a weapon variant of a tree's rotation counts as that tree's too:
 LEVELING_EXTRA_TREES = {("rogue", "combat-daggers-raid"): {"Combat"}}
