@@ -1,6 +1,6 @@
-# Paladin — WoW: Forever talent trees (beta client 1.60.1.70170)
+# Paladin — WoW: Forever talent trees (beta client 1.60.1.70291)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70170, captured 2026-10-03. World of Warcraft: Forever beta client, build 1.60.1.70170: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-03, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70009; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70291, captured 2026-10-08. World of Warcraft: Forever beta client, build 1.60.1.70291: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-08, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -10,7 +10,7 @@
 |---|---|---|---|---|---|---|
 | Holy | 17 | 8 | 6 | 1 | 2 | 5 |
 | Protection | 16 | 5 | 9 | 2 | 0 | 4 |
-| Retribution | 17 | 6 | 9 | 2 | 0 | 4 |
+| Retribution | 17 | 6 | 8 | 2 | 1 | 4 |
 
 ## Holy
 
@@ -42,7 +42,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Infusion of Light** | 2 | — | **NEW** | Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within 15 sec by 0.5 sec. | Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within 15 sec by 1 sec. |
+| **Infusion of Light** | 2 | — | **NEW** | Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within 15 sec by 0.5 sec. | Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within 15 sec by 1.0 sec. |
 | **Illumination** | 5 | Reverence (3) | changed | After getting a critical effect from your Flash of Light, Holy Light, Light's Vigil, or Holy Shock heal spell you have a 20% chance to gain Mana equal to 50% of the base cost of the spell. | After getting a critical effect from your Flash of Light, Holy Light, Light's Vigil, or Holy Shock heal spell you have a 100% chance to gain Mana equal to 50% of the base cost of the spell. |
 | **Divine Favor** | 1 | — | moved | When activated, gives your next Flash of Light, Holy Light, or Holy Shock spell a 100% critical effect chance. | — |
 
@@ -107,7 +107,7 @@
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Templar's Bulwark** | 1 | — | **NEW** | When activated, this ability grants you an absorb shield equal to 100% of your maximum health for 8 sec. Applies Forbearance for 1 min. Cannot be cast while Forbearance is active. | — |
-| **Reckoning** | 5 | — | changed | Gives you a 8% chance to gain an extra attack after Blocking a melee attack and a 20% chance to gain an extra attack after being the victim of a non-periodic critical strike. | Gives you a 40% chance to gain an extra attack after Blocking a melee attack and a 100% chance to gain an extra attack after being the victim of a non-periodic critical strike. |
+| **Reckoning** | 5 | — | changed | Gives you a 8% chance to gain an extra attack after Blocking a melee attack and a 20% chance to gain an extra attack after being the victim of a non-periodic critical strike. Cannot occur more often than once every 1.5 sec. | Gives you a 40% chance to gain an extra attack after Blocking a melee attack and a 100% chance to gain an extra attack after being the victim of a non-periodic critical strike. Cannot occur more often than once every 1.5 sec. |
 
 ### Tier 6 — requires 25 points in Protection
 
@@ -144,7 +144,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Vindication** | 3 | — | changed | Gives your damaging melee attacks a chance to reduce the target's Attack Power by 67, and increase your Attack Power by 1% for 30 sec. | Gives your damaging melee attacks a chance to reduce the target's Attack Power by 200, and increase your Attack Power by 3% for 30 sec. |
+| **Vindication** | 3 | — | changed | Gives your damaging melee attacks a chance to reduce the target's Attack Power by 68, and increase your Attack Power by 1% for 30 sec. | Gives your damaging melee attacks a chance to reduce the target's Attack Power by 204, and increase your Attack Power by 3% for 30 sec. |
 | **Sanctified Judgement** | 3 | — | **NEW** | Gives your Judgement ability a 33% chance to return 20% of the Mana cost of the judged seal. | Gives your Judgement ability a 100% chance to return 60% of the Mana cost of the judged seal. |
 | **Seal of Command** | 1 | — | changed | Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.  Unleashing this Seal's energy will judge an enemy, instantly causing 68 to 73 Holy damage, 137 to 145 if the target is stunned or incapacitated. | — |
 | **Pursuit of Justice** | 2 | — | changed | Increases movement speed and mounted movement speed by 8%. This does not stack with other movement speed increasing effects. | Increases movement speed and mounted movement speed by 15%. This does not stack with other movement speed increasing effects. |
@@ -160,7 +160,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Two-Handed Weapon Specialization** | 3 | — | changed | Increases the damage you deal with two-handed melee weapons by 2%. | Increases the damage you deal with two-handed melee weapons by 6%. |
+| **Two-Handed Weapon Specialization** | 3 | — | unchanged | Increases the damage you deal with two-handed melee weapons by 2%. | Increases the damage you deal with two-handed melee weapons by 6%. |
 | **Vengeance** | 3 | Sanctified Judgement (3) | changed | Increases your Physical and Holy damage dealt by 1% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times. | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times. |
 | **Repentance** | 1 | — | moved | Puts the enemy target in a state of meditation, incapacitating them for up to 6 sec. Any damage caused will awaken the target. Only works against Humanoids. | — |
 
@@ -169,7 +169,7 @@
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Champion of the Light** | 3 | — | **NEW** | Increases your spell damage by up to 20% of your Intellect. | Increases your spell damage by up to 60% of your Intellect. |
-| **Instrument of Law** | 2 | — | **NEW** | Reduces the cast time of your Hammer of Wrath by 0.5 sec, and reduces all threat you generate by 10% while Righteous Fury is not active. | Reduces the cast time of your Hammer of Wrath by 1 sec, and reduces all threat you generate by 20% while Righteous Fury is not active. |
+| **Instrument of Law** | 2 | — | **NEW** | Reduces the cast time of your Hammer of Wrath by 0.5 sec, and reduces all threat you generate by 10% while Righteous Fury is not active. | Reduces the cast time of your Hammer of Wrath by 1.0 sec, and reduces all threat you generate by 20% while Righteous Fury is not active. |
 
 ### Tier 7 — requires 30 points in Retribution
 
@@ -200,13 +200,13 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Holy Shock** (tooltip changed, was Holy row 7, col 2)
   - Classic: Blasts the target with Holy energy, causing 220 Holy damage to an enemy, or 220 healing to an ally.
   - Forever: Blasts the target with Holy energy, causing 129 to 139 Holy damage to an enemy, or 110 to 118 healing to an ally.
-- **Holy Power** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5))
+- **Holy Power** (tooltip changed)
   - Classic: Increases the critical effect chance of your Holy spells by 1%.
   - Forever: Increases the critical strike chance of your Holy Shock and Holy Strike spells by 3%, and all other spells by 1%.
 
 ### Protection
 
-- **Redoubt** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5))
+- **Redoubt** (tooltip changed)
   - Classic: Increases your chance to block attacks with your shield by 6% after being the victim of a critical strike. Lasts 10 sec or 5 blocks.
   - Forever: Damaging melee attacks against you have a 10% chance to increase your chance to block by 4%. Lasts 10 sec or 5 blocks.
 - **Precision** (tooltip changed)
@@ -221,16 +221,16 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Improved Righteous Fury** (tooltip changed)
   - Classic: Increases the amount of threat generated by your Righteous Fury spell by 16%.
   - Forever: While Righteous Fury is active, all damage taken is reduced by 2%.
-- **Shield Specialization** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3))
+- **Shield Specialization** (tooltip changed, tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3))
   - Classic: Increases the amount of damage absorbed by your shield by 10%.
   - Forever: Increases the amount of damage absorbed by your shield by 10%, and gives your blocks a 33% chance to restore 6% of your maximum Mana. May only occur once every 3 sec.
 - **One-Handed Weapon Specialization** (max rank 5 → 3, tooltip changed, was Protection row 6, col 3)
   - Classic: Increases the damage you deal with one-handed melee weapons by 2%.
   - Forever: Increases the damage you deal with one-handed melee weapons by 3%.
-- **Reckoning** (tooltip changed)
+- **Reckoning** (tooltip changed, tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3, 4, 5))
   - Classic: Gives you a 20% chance to gain an extra attack after being the victim of a critical strike.
-  - Forever: Gives you a 8% chance to gain an extra attack after Blocking a melee attack and a 20% chance to gain an extra attack after being the victim of a non-periodic critical strike.
-- **Holy Shield** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1))
+  - Forever: Gives you a 8% chance to gain an extra attack after Blocking a melee attack and a 20% chance to gain an extra attack after being the victim of a non-periodic critical strike. Cannot occur more often than once every 1.5 sec.
+- **Holy Shield** (tooltip changed)
   - Classic: Increases chance to block by 30% for 10 sec, and deals 65 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.
   - Forever: Increases chance to block by 30% for 10 sec, and deals 110 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.
 
@@ -245,10 +245,10 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Conviction** (tooltip changed, was Retribution row 3, col 2)
   - Classic: Increases your chance to get a critical strike with melee weapons by 1%.
   - Forever: Improves your chance to get a critical strike with melee attacks by 1%.
-- **Vindication** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 2, 3))
+- **Vindication** (tooltip changed, tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3))
   - Classic: Gives the Paladin's damaging melee attacks a chance to reduce the target's Strength and Agility by 5%10 sec.
-  - Forever: Gives your damaging melee attacks a chance to reduce the target's Attack Power by 67, and increase your Attack Power by 1% for 30 sec.
-- **Seal of Command** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1))
+  - Forever: Gives your damaging melee attacks a chance to reduce the target's Attack Power by 68, and increase your Attack Power by 1% for 30 sec.
+- **Seal of Command** (tooltip changed, tooltip changed in build 1.60.1.70291 (ranks 1))
   - Classic: Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.  Unleashing this Seal's energy will judge an enemy, instantly causing 51 Holy damage, 101 if the target is stunned or incapacitated.
   - Forever: Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.  Unleashing this Seal's energy will judge an enemy, instantly causing 68 to 73 Holy damage, 137 to 145 if the target is stunned or incapacitated.
 - **Pursuit of Justice** (tooltip changed)
@@ -257,10 +257,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Eye for an Eye** (tooltip changed)
   - Classic: All spell criticals against you cause 15% of the damage taken to the caster as well. The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health.
   - Forever: All critical strikes against you cause 5% of the damage taken to the attacker as well. The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health.
-- **Two-Handed Weapon Specialization** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3))
-  - Classic: Increases the damage you deal with two-handed melee weapons by 2%.
-  - Forever: Increases the damage you deal with two-handed melee weapons by 2%.
-- **Vengeance** (max rank 5 → 3, tooltip changed, was Retribution row 6, col 2, tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3))
+- **Vengeance** (max rank 5 → 3, tooltip changed, was Retribution row 6, col 2)
   - Classic: Gives you a 3% bonus to Physical and Holy damage you deal for 8 sec after dealing a critical strike from a weapon swing, spell, or ability.
   - Forever: Increases your Physical and Holy damage dealt by 1% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times.
 

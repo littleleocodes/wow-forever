@@ -1,43 +1,34 @@
 {
   "slug": "mage",
   "name": "Mage",
-  "build": "1.60.1.70170",
-  "captured": "2026-10-03",
+  "build": "1.60.1.70291",
+  "captured": "2026-10-08",
   "tooltip_level": 60,
-  "source": "World of Warcraft: Forever beta client, build 1.60.1.70170: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-03, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70009; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo).",
+  "source": "World of Warcraft: Forever beta client, build 1.60.1.70291: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-08, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo).",
   "sources": {
     "talentsforever": {
       "url": "https://talentsforever.com/data.json",
-      "generated": "2026-10-03",
-      "build": "1.60.1.70170",
+      "generated": "2026-10-08",
+      "build": "1.60.1.70291",
       "license": "CC-BY-4.0",
       "attribution": "Data from talentsforever.com (https://talentsforever.com)"
     },
     "thewowdb": {
       "url": "https://thewowdb.com/wow-forever/talents/mage/",
-      "build": "1.60.1.70009",
+      "build": "1.60.1.70291",
       "evidence": [
-        "https://wago.tools/db2/TraitNode?build=1.60.1.70009"
+        "https://wago.tools/db2/TraitNode?build=1.60.1.70291"
       ]
     },
     "warcraftforever": {
       "url": "https://warcraftforever.games/talents/mage",
-      "build": "1.60.1.69893",
-      "captured": "2026-09-18"
+      "build": "1.60.1.70205",
+      "captured": "2026-10-04"
     }
   },
   "removed_since_demo": [],
-  "renamed_since_demo": [
-    {
-      "tree": "Fire",
-      "from": "Hot Streak",
-      "to": "Heating Up",
-      "build": "1.60.1.70170"
-    }
-  ],
-  "merge_notes": [
-    "Fire: the Trait-edge snapshot disagrees with the talentsforever export (only in the snapshot: Hot Streak; only in the export: Heating Up); the export's positions, rank caps and prerequisites used for this tree"
-  ],
+  "renamed_since_demo": [],
+  "merge_notes": [],
   "trees": [
     {
       "id": "arcane",
@@ -240,9 +231,9 @@
           "ranks_prev": [
             "Blasts the target with energy, dealing 57 to 66 Arcane damage. Each time you cast Arcane Blast, the damage of all your other spells is increased by 10% and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 8 sec or until any other damage spell is cast."
           ],
-          "ranks_prev_build": "1.60.1.69893",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70170 (ranks 1)"
+            "tooltip changed in build 1.60.1.70291 (ranks 1)"
           ]
         },
         {
@@ -438,14 +429,7 @@
           ],
           "status": "new",
           "evidence": "mage/19-mage-fire-wake-of-fire.jpg",
-          "ranks_prev": [
-            "Reduces the cooldown of your Fire Blast spell by 1 sec. Killing a non-trivial target increases the critical strike chance of your next Fire Blast cast within 20 sec by 25%.",
-            "Reduces the cooldown of your Fire Blast spell by 2 sec. Killing a non-trivial target increases the critical strike chance of your next Fire Blast cast within 20 sec by 50%."
-          ],
-          "ranks_prev_build": "1.60.1.69893",
-          "diff": [
-            "tooltip changed in build 1.60.1.70170 (ranks 1, 2)"
-          ]
+          "diff": []
         },
         {
           "id": "fire/incineration",
@@ -606,10 +590,10 @@
           "ranks_prev": [
             "Hurls an immense fiery boulder that causes 100 to 132 Fire damage and an additional 44 Fire damage over 12 sec."
           ],
-          "ranks_prev_build": "1.60.1.69893",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "tooltip changed in build 1.60.1.70170 (ranks 1)"
+            "tooltip changed in build 1.60.1.70291 (ranks 1)"
           ]
         },
         {
@@ -655,21 +639,13 @@
           "row": 3,
           "col": 2,
           "name": "Heating Up",
-          "icon": "ability_mage_hotstreak",
+          "icon": "spell_fire_firebolt",
           "maxRank": 1,
           "ranks": [
             "Non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch reduce the cast time of your next Pyroblast cast within 20 sec by 25%, stacking up to 3 times."
           ],
           "status": "new",
-          "evidence": "mage/30-mage-fire-hot-streak.jpg",
-          "ranks_prev": [
-            "Your non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch grant Hot Streak for 15 sec. Hot Streak reduces the cast time of Pyroblast by 25%, stacking up to 3 times."
-          ],
-          "ranks_prev_build": "1.60.1.69893",
-          "diff": [
-            "renamed from Hot Streak in build 1.60.1.70170",
-            "tooltip changed in build 1.60.1.70170 (ranks 1)"
-          ],
+          "diff": [],
           "prereq": {
             "id": "fire/pyroblast",
             "rank": 1
@@ -732,10 +708,10 @@
           "ranks_prev": [
             "A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 153 to 185 Fire damage, and Dazing them for 50% reduced movement speed for 6 sec."
           ],
-          "ranks_prev_build": "1.60.1.69893",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "tooltip changed in build 1.60.1.70170 (ranks 1)"
+            "tooltip changed in build 1.60.1.70291 (ranks 1)"
           ]
         },
         {
@@ -771,13 +747,8 @@
             "When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 3 critical strikes with Fire spells."
           ],
           "evidence": "mage/35-mage-fire-combustion.jpg",
-          "ranks_prev": [
-            "When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 4 non-periodic critical strikes with Fire spells."
-          ],
-          "ranks_prev_build": "1.60.1.69893",
           "diff": [
-            "tooltip changed",
-            "tooltip changed in build 1.60.1.70170 (ranks 1)"
+            "tooltip changed"
           ],
           "prereq": {
             "id": "fire/critical-mass",
@@ -994,9 +965,9 @@
           "ranks_prev": [
             "Deals 28 to 33 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets."
           ],
-          "ranks_prev_build": "1.60.1.69893",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70170 (ranks 1)"
+            "tooltip changed in build 1.60.1.70291 (ranks 1)"
           ]
         },
         {
@@ -1188,10 +1159,10 @@
           "ranks_prev": [
             "Instantly shields you, absorbing 448 damage. Lasts 1 min. While the shield holds, your spellcasts will not be interrupted or delayed from taking damage."
           ],
-          "ranks_prev_build": "1.60.1.69893",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "tooltip changed in build 1.60.1.70170 (ranks 1)"
+            "tooltip changed in build 1.60.1.70291 (ranks 1)"
           ],
           "prereq": {
             "id": "frost/cold-snap",

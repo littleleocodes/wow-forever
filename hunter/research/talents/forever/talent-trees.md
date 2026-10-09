@@ -1,6 +1,6 @@
-# Hunter — WoW: Forever talent trees (beta client 1.60.1.70170)
+# Hunter — WoW: Forever talent trees (beta client 1.60.1.70291)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70170, captured 2026-10-03. World of Warcraft: Forever beta client, build 1.60.1.70170: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-03, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70205; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70291, captured 2026-10-08. World of Warcraft: Forever beta client, build 1.60.1.70291: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-08, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -10,7 +10,7 @@
 |---|---|---|---|---|---|---|
 | Beast Mastery | 16 | 3 | 8 | 1 | 4 | 3 |
 | Marksmanship | 16 | 7 | 5 | 2 | 2 | 5 |
-| Survival | 18 | 8 | 8 | 0 | 2 | 6 |
+| Survival | 18 | 8 | 7 | 0 | 3 | 6 |
 
 ## Beast Mastery
 
@@ -43,7 +43,7 @@
 |---|---|---|---|---|---|
 | **Improved Mend Pet** | 2 | — | changed | Gives your Mend Pet spell a 15% chance of cleansing 1 Curse, Disease, Magic, or Poison effect from your pet each time it heals and reduces the Mana cost by 10%. | Gives your Mend Pet spell a 50% chance of cleansing 1 Curse, Disease, Magic, or Poison effect from your pet each time it heals and reduces the Mana cost by 20%. |
 | **Ferocity** | 5 | — | changed | Increases the critical strike chance of your pets and hawks by 2%. | Increases the critical strike chance of your pets and hawks by 10%. |
-| **Summon Hawk** | 1 | — | **NEW** | Command a hawk to dive-bomb your targeted enemy, dealing 32 Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot. | — |
+| **Summon Hawk** | 1 | — | **NEW** | Command a hawk to dive-bomb your targeted enemy, dealing 32 plus 5% of your Ranged Attack Power Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot. | — |
 
 ### Tier 5 — requires 20 points in Beast Mastery
 
@@ -129,7 +129,7 @@
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Improved Tracking** | 5 | — | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 1%. | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 5%. |
-| **Deflection** | 5 | — | changed | Increases your Parry chance by 1%. | Increases your Parry chance by 5%. |
+| **Deflection** | 5 | — | unchanged | Increases your Parry chance by 1%. | Increases your Parry chance by 5%. |
 
 ### Tier 2 — requires 5 points in Survival
 
@@ -161,7 +161,7 @@
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Resourcefulness** | 2 | — | **NEW** | Reduces the mana cost of your Trap abilities and melee abilities by 30%. In addition, your critical strikes have a 30% chance to allow 50% of your Mana regeneration to continue while casting for 30 sec. | Reduces the mana cost of your Trap abilities and melee abilities by 60%. In addition, your critical strikes have a 60% chance to allow 50% of your Mana regeneration to continue while casting for 30 sec. |
-| **Expose Prey** | 2 | — | **NEW** | Your attacks against targets with Hunter's Mark have a 5% chance to activate your Mongoose Bite for 5 sec. | Your attacks against targets with Hunter's Mark have a 10% chance to activate your Mongoose Bite for 5 sec. |
+| **Expose Prey** | 2 | — | **NEW** | Your attacks against targets with Hunter's Mark have a 5% chance to activate your Mongoose Bite for 10 sec. | Your attacks against targets with Hunter's Mark have a 10% chance to activate your Mongoose Bite for 10 sec. |
 | **Survivalist's Discipline** | 2 | — | **NEW** | Reduces the cooldown of your Trap and Deterrence abilities by 20%. | Reduces the cooldown of your Trap and Deterrence abilities by 40%. |
 | **Strider Kick** | 1 | — | **NEW** | A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec. | — |
 
@@ -218,7 +218,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Improved Arcane Shot** (tooltip changed)
   - Classic: Reduces the cooldown of your Arcane Shot by 0 sec.
   - Forever: Reduces the cooldown of your Arcane Shot by 0.3 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot.
-- **Trueshot Aura** (tooltip changed, was Marksmanship row 7, col 2, tooltip changed in build 1.60.1.70170 (ranks 1))
+- **Trueshot Aura** (tooltip changed, was Marksmanship row 7, col 2)
   - Classic: Increases the attack power of party members within 0 yards by 50. Lasts 30 min.
   - Forever: Increases the Ranged Attack Power of party members within 45 yds by 30.
 - **Mortal Shots** (tooltip changed)
@@ -230,9 +230,6 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 
 ### Survival
 
-- **Deflection** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5))
-  - Classic: Increases your Parry chance by 1%.
-  - Forever: Increases your Parry chance by 1%.
 - **Entrapment** (tooltip changed)
   - Classic: Gives your Immolation Trap, Frost Trap, and Explosive Trap a 5% chance to entrap the target, preventing them from moving for 5 sec.
   - Forever: When your traps are triggered, all affected targets are Entrapped, preventing them from moving for 1 sec.
@@ -248,7 +245,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Surefooted** (tooltip changed, was Survival row 4, col 2)
   - Classic: Increases hit chance by 1% and increases the chance movement impairing effects will be resisted by an additional 5%.
   - Forever: Increases your hit chance by 1% and reduces the duration of movement impairing effects on you by 10%.
-- **Counterattack** (tooltip changed, was Survival row 5, col 3, tooltip changed in build 1.60.1.70170 (ranks 1))
+- **Counterattack** (tooltip changed, was Survival row 5, col 3, tooltip changed in build 1.60.1.70291 (ranks 1))
   - Classic: A strike that becomes active after parrying an opponent's attack. This attack deals 40 damage and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.
   - Forever: A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 13 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.
 - **Lightning Reflexes** (tooltip changed)

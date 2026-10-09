@@ -59,9 +59,17 @@ def field_name(name):
     return words[0].lower() + "".join(w[:1].upper() + w[1:] for w in words[1:]) if words else ""
 
 
+# talents the Forever client renamed before the simulator's data did: the simulator's name -> ours (2026-10-08: build 70291 renamed the
+# druid's Predatory Instincts to Natural Instinct; the fork at 2ce8265 still uses the old name). Harmless once the fork renames it.
+SIM_RENAMES = {"Predatory Instincts": "Natural Instinct"}
+
+
 def talent_key(t):
     g = GAMES[GAME]
-    return t.get(g["name_key"]) if GAME == "forever" else t["fieldName"]
+    if GAME != "forever":
+        return t["fieldName"]
+    n = t.get(g["name_key"])
+    return SIM_RENAMES.get(n, n)
 
 
 def talents_string(trees, alloc):

@@ -1,6 +1,6 @@
-# Rogue — WoW: Forever talent trees (beta client 1.60.1.70170)
+# Rogue — WoW: Forever talent trees (beta client 1.60.1.70291)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70170, captured 2026-10-03. World of Warcraft: Forever beta client, build 1.60.1.70170: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-03, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70170; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70291, captured 2026-10-08. World of Warcraft: Forever beta client, build 1.60.1.70291: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-08, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -255,7 +255,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Opportunity** (max rank 5 → 2, tooltip changed)
   - Classic: Increases the damage dealt when striking from behind with your Backstab, Garrote, or Ambush abilities by 4%.
   - Forever: Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 5%.
-- **Setup** (tooltip changed, was Subtlety row 4, col 1, tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3))
+- **Setup** (tooltip changed, was Subtlety row 4, col 1)
   - Classic: Gives you a 15% chance to add a combo point to your target after dodging their attack or fully resisting one of their spells.
   - Forever: Gives you a 33% chance to add a Combo Point to your target after Dodging one of their attacks or fully resisting one of their spells.
 - **Initiative** (tooltip changed)

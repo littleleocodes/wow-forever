@@ -1,6 +1,6 @@
-# Warrior — WoW: Forever talent trees (beta client 1.60.1.70170)
+# Warrior — WoW: Forever talent trees (beta client 1.60.1.70291)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70170, captured 2026-10-03. World of Warcraft: Forever beta client, build 1.60.1.70170: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-03, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70205; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70291, captured 2026-10-08. World of Warcraft: Forever beta client, build 1.60.1.70291: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-08, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -41,9 +41,9 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Spearing Strike** | 1 | — | **NEW** | A brutal attack that deals 40% weapon damage, plus an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. | — |
+| **Spearing Strike** | 1 | — | **NEW** | A brutal attack that deals 40% weapon damage. Deals an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted. | — |
 | **Two-Handed Weapon Specialization** | 3 | — | changed | Increases the damage you deal with two-handed melee weapons by 1%. | Increases the damage you deal with two-handed melee weapons by 3%. |
-| **Impale** | 2 | — | changed | Increases the critical strike damage bonus of your abilities by 10%. | Increases the critical strike damage bonus of your abilities by 20%. |
+| **Impale** | 2 | Deep Wounds (3) | changed | Increases the critical strike damage bonus of your abilities by 10%. | Increases the critical strike damage bonus of your abilities by 20%. |
 
 ### Tier 5 — requires 20 points in Arms
 
@@ -57,7 +57,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Improved Slam** | 2 | — | changed | Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3.0 sec. | Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3 sec. |
+| **Improved Slam** | 2 | — | changed | Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3.0 sec. | Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3.0 sec. |
 | **Improved Hamstring** | 3 | — | unchanged | Gives your Hamstring ability a 5% chance to immobilize the target for 5 sec. | Gives your Hamstring ability a 15% chance to immobilize the target for 5 sec. |
 
 ### Tier 7 — requires 30 points in Arms
@@ -114,7 +114,7 @@
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Flurry** | 5 | Death Wish (1) | changed | Increases your melee attack speed by 5% for your next 3 swings after dealing a melee critical strike. | Increases your melee attack speed by 25% for your next 3 swings after dealing a melee critical strike. |
-| **Gore Drinker** | 2 | Enrage (5) | **NEW** | Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore 0.5% of your maximum Health. | Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore 1% of your maximum Health. |
+| **Gore Drinker** | 2 | Enrage (5) | **NEW** | Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore 0.5% of your maximum Health. | Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore 1.0% of your maximum Health. |
 
 ### Tier 7 — requires 30 points in Fury
 
@@ -163,7 +163,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Improved Shield Wall** | 2 | — | changed | Reduces the cooldown of your Shield Wall ability by 5.5 min. | Reduces the cooldown of your Shield Wall ability by 11 min. |
+| **Improved Shield Wall** | 2 | — | changed | Reduces the cooldown of your Shield Wall ability by 5.5 min. | Reduces the cooldown of your Shield Wall ability by 11.0 min. |
 | **Concussion Blow** | 1 | — | changed | Stuns the target for 5 sec. | — |
 | **Focused Rage** | 3 | — | **NEW** | Reduces the Rage cost of your offensive abilities by 1. | Reduces the Rage cost of your offensive abilities by 3. |
 
@@ -208,34 +208,34 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Impale** (tooltip changed)
   - Classic: Increases the critical strike damage bonus of your abilities in Battle, Defensive, and Berserker stance by 10%.
   - Forever: Increases the critical strike damage bonus of your abilities by 10%.
-- **Improved Slam** (max rank 5 → 2, tooltip changed, was Fury row 5, col 1, tooltip changed in build 1.60.1.70170 (ranks 1, 2))
+- **Improved Slam** (max rank 5 → 2, tooltip changed, was Fury row 5, col 1, tooltip changed in build 1.60.1.70291 (ranks 1))
   - Classic: Decreases the casting time of your Slam ability by 0 sec.
   - Forever: Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3.0 sec.
 
 ### Fury
 
-- **Booming Voice** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5))
+- **Booming Voice** (tooltip changed, tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3, 4, 5))
   - Classic: Increases the area of effect and duration of your Battle Shout and Demoralizing Shout by 10%.
   - Forever: Increases the area of effect of your Shouts by 10% and reduces their Rage cost by 5%.
 - **Cruelty** (tooltip changed)
   - Classic: Increases your chance to get a critical strike with melee weapons by 1%.
   - Forever: Improves your chance to get a critical strike with melee attacks by 1%.
-- **Lingering Rage** (tooltip changed, was Protection row 2, col 4, renamed from Iron Will in build 1.60.1.70170, tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5))
+- **Lingering Rage** (tooltip changed, was Protection row 2, col 4, renamed from Iron Will in build 1.60.1.70291, tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3, 4, 5))
   - Classic: Increases your chance to resist Stun and Charm effects by an additional 3%.
   - Forever: Increases the time before your Rage begins to decay after leaving combat by 2 sec.
-- **Unbridled Wrath** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5))
+- **Unbridled Wrath** (tooltip changed, tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3, 4, 5))
   - Classic: Gives you a 8% chance to generate an additional Rage point when you deal melee damage with a weapon.
   - Forever: Gives you a 12% chance to generate 1 additional Rage when you deal melee damage with a weapon.
-- **Furious Precision** (tooltip changed, renamed from Improved Cleave in build 1.60.1.70170, tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3))
+- **Furious Precision** (tooltip changed, renamed from Improved Cleave in build 1.60.1.70291, tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3))
   - Classic: Increases the bonus damage done by your Cleave ability by 40%.
   - Forever: Increases your chance to hit with off-hand attacks by 4%.
-- **Piercing Howl** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1))
+- **Piercing Howl** (tooltip changed, tooltip changed in build 1.60.1.70291 (ranks 1))
   - Classic: Causes all enemies near the warrior to be dazed, reducing movement speed by 50% for 6 sec.
   - Forever: Causes all enemies within 10 yds to be Dazed, reducing movement speed by 50% for 6 sec.
-- **Blood Craze** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3))
+- **Blood Craze** (tooltip changed, tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3))
   - Classic: Regenerates 1% of your total Health over 6 sec after being the victim of a critical strike.
   - Forever: Regenerates 1% of your total Health over 6 sec after being the victim of a critical strike or suffering more than 20% of your maximum Health from a single attack.
-- **Dual Wield Specialization** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5))
+- **Dual Wield Specialization** (tooltip changed, tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3, 4, 5))
   - Classic: Increases the damage done by your offhand weapon by 5%.
   - Forever: Increases the damage done by your off-hand weapon by 5% and the Rage generated by your off-hand attacks by 10%.
 - **Enrage** (tooltip changed)
@@ -244,40 +244,40 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Improved Execute** (tooltip changed, was Fury row 4, col 2)
   - Classic: Reduces the Rage cost of your Execute ability by 2.
   - Forever: Reduces the Rage cost of your Execute ability by 3.
-- **Improved Berserker Rage** (tooltip changed, moved in build 1.60.1.70170: was row 6, col 1)
+- **Improved Berserker Rage** (tooltip changed, moved in build 1.60.1.70291: was row 6, col 1)
   - Classic: The Berserker Rage ability will generate 5 rage when used.
   - Forever: Your Berserker Rage ability will instantly generate 5 Rage and has a 50% chance to remove all movement impairing effects when activated.
 - **Death Wish** (tooltip changed)
   - Classic: When activated, increases your physical damage by 20% and makes you immune to Fear effects, but lowers your armor and all resistances by 20%. Lasts 30 sec.
   - Forever: When activated, increases your Physical damage done by 20% and makes you immune to Fear effects, but increases all damage you take by 5%. Lasts 30 sec.
-- **Flurry** (tooltip changed, moved in build 1.60.1.70170: was row 6, col 3, prerequisite changed in build 1.60.1.70170: was enrage)
+- **Flurry** (tooltip changed, moved in build 1.60.1.70291: was row 6, col 3, prerequisite changed in build 1.60.1.70291: was enrage)
   - Classic: Increases your attack speed by 10% for your next 3 swings after dealing a melee critical strike.
   - Forever: Increases your melee attack speed by 5% for your next 3 swings after dealing a melee critical strike.
-- **Bloodthirst** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1), prerequisite changed in build 1.60.1.70170: was death wish)
+- **Bloodthirst** (tooltip changed, tooltip changed in build 1.60.1.70291 (ranks 1), prerequisite changed in build 1.60.1.70291: was death wish)
   - Classic: Instantly attack the target causing damage equal to 45% of your attack power. In addition, the next 5 successful melee attacks will restore 10 health. This effect lasts 8 sec.
   - Forever: Instantly attack the target causing damage equal to 45% of your Attack Power plus 30 and increasing your movement speed by 10% for 10 sec.
 
 ### Protection
 
-- **Improved Bloodrage** (tooltip changed, moved in build 1.60.1.70170: was row 2, col 1)
+- **Improved Bloodrage** (tooltip changed, moved in build 1.60.1.70291: was row 2, col 1)
   - Classic: Increases the instant Rage generated by your Bloodrage ability by 2.
   - Forever: Increases all the Rage generated by your Bloodrage ability by 25%.
 - **Shield Specialization** (tooltip changed)
   - Classic: Increases your chance to block attacks with a shield by 1% and has a 20% chance to generate 1 rage when a block occurs.
   - Forever: Increases your chance to Block attacks with your shield by 1% and grants you a 20% chance to generate 5 Rage when you Block.
-- **Anticipation** (tooltip changed, moved in build 1.60.1.70170: was row 1, col 3)
+- **Anticipation** (tooltip changed, moved in build 1.60.1.70291: was row 1, col 3)
   - Classic: Increases your Defense skill by 2.
   - Forever: Increases your Defense Skill by 4.
-- **Improved Revenge** (tooltip changed, moved in build 1.60.1.70170: was row 3, col 3)
+- **Improved Revenge** (tooltip changed, moved in build 1.60.1.70291: was row 3, col 3)
   - Classic: Gives your Revenge ability a 15% chance to stun the target for 3 sec.
   - Forever: Increases damage dealt by your Revenge ability by 20%.
 - **Improved Thunder Clap** (tooltip changed, was Arms row 2, col 4)
   - Classic: Reduces the cost of your Thunder Clap ability by 1 rage point.
   - Forever: Reduces the Rage cost of your Thunder Clap ability by 2.
-- **Last Stand** (tooltip changed, prerequisite changed in build 1.60.1.70170: was improved bloodrage)
+- **Last Stand** (tooltip changed, prerequisite changed in build 1.60.1.70291: was improved bloodrage)
   - Classic: When activated, this ability temporarily grants you 30% of your maximum hit points for 20 seconds. After the effect expires, the hit points are lost.
   - Forever: When activated, this ability temporarily grants you 30% of your maximum health for 20 sec. After the effect expires, the health is lost.
-- **Improved Disarm** (tooltip changed, moved in build 1.60.1.70170: was row 4, col 2)
+- **Improved Disarm** (tooltip changed, moved in build 1.60.1.70291: was row 4, col 2)
   - Classic: Increases the duration of your Disarm ability by 1 secs.
   - Forever: Reduces the cooldown of your Disarm ability by 7 secs.
 - **Defiance** (max rank 5 → 3, tooltip changed)

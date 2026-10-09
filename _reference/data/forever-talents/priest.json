@@ -1,29 +1,29 @@
 {
   "slug": "priest",
   "name": "Priest",
-  "build": "1.60.1.70170",
-  "captured": "2026-10-03",
+  "build": "1.60.1.70291",
+  "captured": "2026-10-08",
   "tooltip_level": 60,
-  "source": "World of Warcraft: Forever beta client, build 1.60.1.70170: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-03, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70205; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo).",
+  "source": "World of Warcraft: Forever beta client, build 1.60.1.70291: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-08, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo).",
   "sources": {
     "talentsforever": {
       "url": "https://talentsforever.com/data.json",
-      "generated": "2026-10-03",
-      "build": "1.60.1.70170",
+      "generated": "2026-10-08",
+      "build": "1.60.1.70291",
       "license": "CC-BY-4.0",
       "attribution": "Data from talentsforever.com (https://talentsforever.com)"
     },
     "thewowdb": {
       "url": "https://thewowdb.com/wow-forever/talents/priest/",
-      "build": "1.60.1.70205",
+      "build": "1.60.1.70291",
       "evidence": [
-        "https://wago.tools/db2/TraitNode?build=1.60.1.70205"
+        "https://wago.tools/db2/TraitNode?build=1.60.1.70291"
       ]
     },
     "warcraftforever": {
       "url": "https://warcraftforever.games/talents/priest",
-      "build": "1.60.1.69893",
-      "captured": "2026-09-18"
+      "build": "1.60.1.70205",
+      "captured": "2026-10-04"
     }
   },
   "removed_since_demo": [],
@@ -221,14 +221,13 @@
           "ranks": [
             "When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is a non-periodic spell and capable of a critical effect."
           ],
-          "status": "same",
-          "evidence": "priest/09-priest-discipline-inner-focus.jpg",
-          "ranks_prev": [
+          "status": "changed",
+          "classic": [
             "When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is capable of a critical effect."
           ],
-          "ranks_prev_build": "1.60.1.69893",
+          "evidence": "priest/09-priest-discipline-inner-focus.jpg",
           "diff": [
-            "tooltip changed in build 1.60.1.70170 (ranks 1)"
+            "tooltip changed"
           ]
         },
         {
@@ -333,7 +332,7 @@
           "maxRank": 2,
           "ranks": [
             "Reduces the casting time of your Mana Burn spell by 0.5 sec.",
-            "Reduces the casting time of your Mana Burn spell by 1 sec."
+            "Reduces the casting time of your Mana Burn spell by 1.0 sec."
           ],
           "status": "changed",
           "classic": [
@@ -353,11 +352,17 @@
           "icon": "spell_holy_penance",
           "maxRank": 1,
           "ranks": [
-            "Launches a volley of holy light at the target, causing 81 Holy damage to an enemy, or 184 healing to an ally, instantly and every 1 sec for 2 sec."
+            "Launches a volley of holy light at the target, causing 44 Holy damage to an enemy, or 133 healing to an ally, instantly and every 1 sec for 2 sec."
           ],
           "status": "new",
           "evidence": "priest/15-priest-discipline-penance.jpg",
-          "diff": []
+          "ranks_prev": [
+            "Launches a volley of holy light at the target, causing 81 Holy damage to an enemy, or 184 healing to an ally, instantly and every 1 sec for 2 sec."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
+          "diff": [
+            "tooltip changed in build 1.60.1.70291 (ranks 1)"
+          ]
         },
         {
           "id": "discipline/renewed-hope",
@@ -547,10 +552,10 @@
           "ranks_prev": [
             "Causes an explosion of holy light around the caster, causing 26 to 30 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 50 to 57. These effects cause no threat."
           ],
-          "ranks_prev_build": "1.60.1.69893",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "tooltip changed in build 1.60.1.70170 (ranks 1)"
+            "tooltip changed in build 1.60.1.70291 (ranks 1)"
           ]
         },
         {
@@ -677,9 +682,9 @@
           "ranks_prev": [
             "Heals a friendly target and the caster for 235 to 286. Low threat."
           ],
-          "ranks_prev_build": "1.60.1.69893",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70170 (ranks 1)"
+            "tooltip changed in build 1.60.1.70291 (ranks 1)"
           ]
         },
         {
@@ -784,9 +789,9 @@
           "ranks_prev": [
             "Places a spell on the target that heals them for 172 plus bh the next time they take damage or receive non-periodic healing. When the heal occurs, Prayer of Mending jumps to a party or raid member within 20 yards. Jumps up to 5 times and lasts 30 sec after each jump. This spell can only be placed on one target at a time per caster."
           ],
-          "ranks_prev_build": "1.60.1.69893",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70170 (ranks 1)"
+            "tooltip changed in build 1.60.1.70291 (ranks 1)"
           ],
           "prereq": {
             "id": "holy/spirit-of-redemption",
@@ -877,18 +882,9 @@
             "Gives you a 100% chance to gain a 100% bonus to your Spirit after killing a target that yields experience. For the duration, your Mana will regenerate at a 50% rate while casting. Lasts 15 sec."
           ],
           "evidence": "priest/38-priest-shadow-magic-spirit-tap.jpg",
-          "ranks_prev": [
-            "Gives you a 20% chance to gain a 100% bonus to your Spirit for 15 sec after killing a non-trivial target. For the duration, your Mana will regenerate at a 50% of normal rate while casting.",
-            "Gives you a 40% chance to gain a 100% bonus to your Spirit for 15 sec after killing a non-trivial target. For the duration, your Mana will regenerate at a 50% of normal rate while casting.",
-            "Gives you a 60% chance to gain a 100% bonus to your Spirit for 15 sec after killing a non-trivial target. For the duration, your Mana will regenerate at a 50% of normal rate while casting.",
-            "Gives you a 80% chance to gain a 100% bonus to your Spirit for 15 sec after killing a non-trivial target. For the duration, your Mana will regenerate at a 50% of normal rate while casting.",
-            "Gives you a 100% chance to gain a 100% bonus to your Spirit for 15 sec after killing a non-trivial target. For the duration, your Mana will regenerate at a 50% of normal rate while casting."
-          ],
-          "ranks_prev_build": "1.60.1.69893",
           "diff": [
             "tooltip changed",
-            "was Shadow row 1, col 2",
-            "tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5)"
+            "was Shadow row 1, col 2"
           ]
         },
         {
@@ -1074,14 +1070,9 @@
             "Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow spell damage you deal for 1 min."
           ],
           "evidence": "priest/47-priest-shadow-magic-vampiric-embrace.jpg",
-          "ranks_prev": [
-            "Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow spell damage you deal for 30 sec. Vampiric Embrace also grants a chance for your Spirit Tap talent to trigger when enemies afflicted by it die."
-          ],
-          "ranks_prev_build": "1.60.1.69893",
           "diff": [
             "tooltip changed",
-            "was Shadow row 5, col 2",
-            "tooltip changed in build 1.60.1.70170 (ranks 1)"
+            "was Shadow row 5, col 2"
           ]
         },
         {
@@ -1143,14 +1134,7 @@
           ],
           "status": "new",
           "evidence": "priest/50-priest-shadow-magic-devouring-contagion.jpg",
-          "ranks_prev": [
-            "Reduces the mana cost of your Devouring Plague by 25%.\n\nTargets that die while Devouring Plague it is active spreads it, jumping to a nearby enemy within 5 yards for the remaining duration.",
-            "Reduces the mana cost of your Devouring Plague by 50%.\n\nTargets that die while Devouring Plague it is active spreads it, jumping to a nearby enemy within 10 yards for the remaining duration."
-          ],
-          "ranks_prev_build": "1.60.1.69893",
-          "diff": [
-            "tooltip changed in build 1.60.1.70170 (ranks 1, 2)"
-          ]
+          "diff": []
         },
         {
           "id": "shadow/early-demise",

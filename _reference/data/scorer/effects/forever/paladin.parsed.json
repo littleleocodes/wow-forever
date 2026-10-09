@@ -425,7 +425,7 @@
  "Reckoning": {
   "tree": "Protection",
   "max": 5,
-  "text": "Gives you a 8% chance to gain an extra attack after Blocking a melee attack and a 20% chance to gain an extra attack after being the victim of a non-periodic critical strike.",
+  "text": "Gives you a 8% chance to gain an extra attack after Blocking a melee attack and a 20% chance to gain an extra attack after being the victim of a non-periodic critical strike. Cannot occur more often than once every 1.5 s",
   "effects": []
  },
  "Iron Creed": {
@@ -561,7 +561,7 @@
  "Vindication": {
   "tree": "Retribution",
   "max": 3,
-  "text": "Gives your damaging melee attacks a chance to reduce the target's Attack Power by 67, and increase your Attack Power by 1% for 30 sec.",
+  "text": "Gives your damaging melee attacks a chance to reduce the target's Attack Power by 68, and increase your Attack Power by 1% for 30 sec.",
   "effects": []
  },
  "Sanctified Judgement": {

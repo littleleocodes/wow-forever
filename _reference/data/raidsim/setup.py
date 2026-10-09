@@ -31,7 +31,7 @@ PROTOC_VERSION = "36.2"
 REPO_URL = "https://github.com/ElliotWood/Forever"
 SPARSE = ["sim", "proto", "cmd", "ui", "assets/database", "tools"]
 GAMES = {"forever": {"url": "https://github.com/ElliotWood/Forever", "dir": "forever-repo", "module": "github.com/wowsims/forever", "bench": "foreverbench",
-                     "commit": "b0f0df368b1e7821376f10d11abc2e00f7c24aeb"},   # b0f0df3: client build 1.60.1.70205 with hotfixes to 2026-10-03 (was 40be98e, 2026-09-28)
+                     "commit": "2ce826577c5c42b93397d90461a30fd241fe8f7e"},   # 2ce8265: client build 1.60.1.70291, 2026-10-09 (was b0f0df3, 70205; 40be98e before)
          "classic": {"url": "https://github.com/wowsims/classic", "dir": "classic-repo", "module": "github.com/wowsims/classic", "bench": "classicbench",
                      "commit": "7779ebbf79dc7f1341e6ab939b28a3402c9a730a"}}
 

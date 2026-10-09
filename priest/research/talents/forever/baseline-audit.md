@@ -9,7 +9,7 @@
 | Discipline | Unbreakable Will | 5 | **REMOVED** | removed from Classic |
 | Discipline | Improved Power Word: Fortitude | 2 | **REMOVED** | removed from Classic |
 | Discipline | Silent Resolve | 4 | changed | tier 2, max 3 — max rank 5 → 3; tooltip changed |
-| Discipline | Inner Focus | 1 | unchanged | tier 3, max 1 — tooltip changed in build 1.60.1.70170 (ranks 1) |
+| Discipline | Inner Focus | 1 | changed | tier 3, max 1 — tooltip changed |
 | Discipline | Meditation | 3 | changed | tier 3, max 3 — tooltip changed; was Discipline row 3, col 3 |
 | Discipline | Mental Agility | 5 | changed | tier 3, max 3 — max rank 5 → 3; tooltip changed; was Discipline row 4, col 2 |
 | Discipline | Divine Spirit | 1 | **REMOVED** | removed from Classic |
@@ -22,7 +22,7 @@
 | Holy | Spiritual Guidance | 5 | changed | tier 5, max 5 — tooltip changed |
 | Holy | Spiritual Healing | 5 | changed | tier 6, max 3 — max rank 5 → 3; tooltip changed |
 
-**Orphaned points to re-spend: 10.** Points in changed/moved talents to re-evaluate: 33.
+**Orphaned points to re-spend: 10.** Points in changed/moved talents to re-evaluate: 34.
 
 ## Discipline / Holy — Power Infusion (raid healer) (31/20/0)
 
@@ -31,7 +31,7 @@
 | Discipline | Unbreakable Will | 5 | **REMOVED** | removed from Classic |
 | Discipline | Improved Power Word: Fortitude | 2 | **REMOVED** | removed from Classic |
 | Discipline | Silent Resolve | 4 | changed | tier 2, max 3 — max rank 5 → 3; tooltip changed |
-| Discipline | Inner Focus | 1 | unchanged | tier 3, max 1 — tooltip changed in build 1.60.1.70170 (ranks 1) |
+| Discipline | Inner Focus | 1 | changed | tier 3, max 1 — tooltip changed |
 | Discipline | Meditation | 3 | changed | tier 3, max 3 — tooltip changed; was Discipline row 3, col 3 |
 | Discipline | Mental Agility | 5 | changed | tier 3, max 3 — max rank 5 → 3; tooltip changed; was Discipline row 4, col 2 |
 | Discipline | Mental Strength | 5 | changed | tier 4, max 5 — tooltip changed; was Discipline row 5, col 2 |
@@ -45,7 +45,7 @@
 | Holy | Inspiration | 3 | changed | tier 3, max 3 — tooltip changed |
 | Holy | Improved Healing | 2 | changed | tier 4, max 3 — tooltip changed |
 
-**Orphaned points to re-spend: 14.** Points in changed/moved talents to re-evaluate: 28.
+**Orphaned points to re-spend: 14.** Points in changed/moved talents to re-evaluate: 29.
 
 ## Shadow (PvP) (7/0/44)
 
@@ -53,7 +53,7 @@
 |---|---|---|---|---|
 | Discipline | Unbreakable Will | 5 | **REMOVED** | removed from Classic |
 | Discipline | Improved Power Word: Shield | 2 | changed | tier 2, max 3 — tooltip changed |
-| Shadow | Spirit Tap | 5 | changed | tier 1, max 5 — tooltip changed; was Shadow row 1, col 2; tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5) |
+| Shadow | Spirit Tap | 5 | changed | tier 1, max 5 — tooltip changed; was Shadow row 1, col 2 |
 | Shadow | Blackout | 5 | moved | tier 1, max 5 — was Shadow row 1, col 3 |
 | Shadow | Improved Shadow Word: Pain | 2 | moved | tier 2, max 2 — was Shadow row 2, col 2 |
 | Shadow | Shadow Focus | 5 | changed | tier 1, max 5 — tooltip changed; was Shadow row 2, col 3 |
@@ -64,7 +64,7 @@
 | Shadow | Shadow Reach | 3 | changed | tier 2, max 2 — max rank 3 → 2; tooltip changed; was Shadow row 4, col 3 |
 | Shadow | Shadow Weaving | 5 | changed | tier 4, max 3 — max rank 5 → 3; tooltip changed; was Shadow row 4, col 4 |
 | Shadow | Silence | 1 | changed | tier 5, max 1 — tooltip changed |
-| Shadow | Vampiric Embrace | 1 | changed | tier 4, max 1 — tooltip changed; was Shadow row 5, col 2; tooltip changed in build 1.60.1.70170 (ranks 1) |
+| Shadow | Vampiric Embrace | 1 | changed | tier 4, max 1 — tooltip changed; was Shadow row 5, col 2 |
 | Shadow | Improved Vampiric Embrace | 2 | **REMOVED** | removed from Classic |
 | Shadow | Darkness | 5 | changed | tier 6, max 5 — tooltip changed |
 | Shadow | Shadowform | 1 | changed | tier 7, max 1 — tooltip changed |
@@ -77,7 +77,7 @@
 |---|---|---|---|---|
 | Discipline | Unbreakable Will | 5 | **REMOVED** | removed from Classic |
 | Discipline | Improved Power Word: Shield | 2 | changed | tier 2, max 3 — tooltip changed |
-| Shadow | Spirit Tap | 5 | changed | tier 1, max 5 — tooltip changed; was Shadow row 1, col 2; tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5) |
+| Shadow | Spirit Tap | 5 | changed | tier 1, max 5 — tooltip changed; was Shadow row 1, col 2 |
 | Shadow | Blackout | 5 | moved | tier 1, max 5 — was Shadow row 1, col 3 |
 | Shadow | Improved Shadow Word: Pain | 2 | moved | tier 2, max 2 — was Shadow row 2, col 2 |
 | Shadow | Shadow Focus | 5 | changed | tier 1, max 5 — tooltip changed; was Shadow row 2, col 3 |
@@ -88,7 +88,7 @@
 | Shadow | Shadow Reach | 3 | changed | tier 2, max 2 — max rank 3 → 2; tooltip changed; was Shadow row 4, col 3 |
 | Shadow | Shadow Weaving | 5 | changed | tier 4, max 3 — max rank 5 → 3; tooltip changed; was Shadow row 4, col 4 |
 | Shadow | Silence | 1 | changed | tier 5, max 1 — tooltip changed |
-| Shadow | Vampiric Embrace | 1 | changed | tier 4, max 1 — tooltip changed; was Shadow row 5, col 2; tooltip changed in build 1.60.1.70170 (ranks 1) |
+| Shadow | Vampiric Embrace | 1 | changed | tier 4, max 1 — tooltip changed; was Shadow row 5, col 2 |
 | Shadow | Improved Vampiric Embrace | 2 | **REMOVED** | removed from Classic |
 | Shadow | Darkness | 5 | changed | tier 6, max 5 — tooltip changed |
 | Shadow | Shadowform | 1 | changed | tier 7, max 1 — tooltip changed |

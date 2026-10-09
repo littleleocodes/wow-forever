@@ -19,7 +19,7 @@
 | Restoration | Healing Way | 3 | changed | tier 5, max 3 — tooltip changed; was Restoration row 5, col 1 |
 | Restoration | Nature's Swiftness | 1 | unchanged | tier 5, max 1 |
 | Restoration | Purification | 5 | unchanged | tier 6, max 5 |
-| Restoration | Mana Tide Totem | 1 | changed | tier 4, max 1 — tooltip changed; was Restoration row 7, col 2; tooltip changed in build 1.60.1.70170 (ranks 1) |
+| Restoration | Mana Tide Totem | 1 | changed | tier 4, max 1 — tooltip changed; was Restoration row 7, col 2; tooltip changed in build 1.60.1.70291 (ranks 1) |
 
 **Orphaned points to re-spend: 3.** Points in changed/moved talents to re-evaluate: 42.
 
@@ -31,9 +31,9 @@
 | Elemental | Concussion | 5 | changed | tier 1, max 5 — tooltip changed |
 | Elemental | Call of Flame | 3 | changed | tier 2, max 3 — tooltip changed |
 | Elemental | Elemental Focus | 1 | moved | tier 3, max 1 — was Elemental row 3, col 1 |
-| Elemental | Call of Thunder | 5 | changed | tier 4, max 1 — max rank 5 → 1; tooltip changed; was Elemental row 3, col 3; prerequisite changed in build 1.60.1.70170: was elemental fury |
+| Elemental | Call of Thunder | 5 | changed | tier 4, max 1 — max rank 5 → 1; tooltip changed; was Elemental row 3, col 3 |
 | Elemental | Eye of the Storm | 3 | changed | tier 4, max 3 — tooltip changed |
-| Elemental | Elemental Fury | 1 | changed | tier 6, max 5 — max rank 1 → 5; tooltip changed; was Elemental row 5, col 2; moved in build 1.60.1.70170: was row 3, col 3 |
+| Elemental | Elemental Fury | 1 | changed | tier 6, max 5 — max rank 1 → 5; tooltip changed; was Elemental row 5, col 2 |
 | Elemental | Storm Reach | 2 | **REMOVED** | removed from Classic |
 | Elemental | Lightning Mastery | 5 | **REMOVED** | removed from Classic |
 | Elemental | Elemental Mastery | 1 | **REMOVED** | removed from Classic |
@@ -78,9 +78,9 @@
 | Elemental | Earth's Grasp | 2 | moved-tree | now in Enhancement, tier 1 |
 | Elemental | Call of Flame | 1 | changed | tier 2, max 3 — tooltip changed |
 | Elemental | Elemental Focus | 1 | moved | tier 3, max 1 — was Elemental row 3, col 1 |
-| Elemental | Call of Thunder | 5 | changed | tier 4, max 1 — max rank 5 → 1; tooltip changed; was Elemental row 3, col 3; prerequisite changed in build 1.60.1.70170: was elemental fury |
+| Elemental | Call of Thunder | 5 | changed | tier 4, max 1 — max rank 5 → 1; tooltip changed; was Elemental row 3, col 3 |
 | Elemental | Eye of the Storm | 3 | changed | tier 4, max 3 — tooltip changed |
-| Elemental | Elemental Fury | 1 | changed | tier 6, max 5 — max rank 1 → 5; tooltip changed; was Elemental row 5, col 2; moved in build 1.60.1.70170: was row 3, col 3 |
+| Elemental | Elemental Fury | 1 | changed | tier 6, max 5 — max rank 1 → 5; tooltip changed; was Elemental row 5, col 2 |
 | Elemental | Storm Reach | 2 | **REMOVED** | removed from Classic |
 | Elemental | Lightning Mastery | 5 | **REMOVED** | removed from Classic |
 | Restoration | Tidal Focus | 5 | changed | tier 2, max 5 — tooltip changed; was Restoration row 1, col 3 |

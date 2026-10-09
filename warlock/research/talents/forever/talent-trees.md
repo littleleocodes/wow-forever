@@ -1,6 +1,6 @@
-# Warlock — WoW: Forever talent trees (beta client 1.60.1.70170)
+# Warlock — WoW: Forever talent trees (beta client 1.60.1.70291)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70170, captured 2026-10-03. World of Warcraft: Forever beta client, build 1.60.1.70170: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-03, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70009; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70291, captured 2026-10-08. World of Warcraft: Forever beta client, build 1.60.1.70291: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-08, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -102,7 +102,7 @@
 |---|---|---|---|---|---|
 | **Decimation** | 2 | — | **NEW** | Reduces the cooldown of your Soul Fire spell by 45%. When you cast Shadow Bolt or Searing Pain on an enemy below 35% health, they deal 3% increased damage, and for the next 10 sec your Soul Fire spell has its cast time reduced by 20% and costs no Soul Shards. | Reduces the cooldown of your Soul Fire spell by 90%. When you cast Shadow Bolt or Searing Pain on an enemy below 35% health, they deal 6% increased damage, and for the next 10 sec your Soul Fire spell has its cast time reduced by 40% and costs no Soul Shards. |
 | **Fel Domination** | 1 | Master Summoner (2) | changed | Your next Imp, Voidwalker, Succubus, Incubus, or Felhunter Summon spell has its casting time reduced by 5.5 sec and its Mana cost reduced by 50%. | — |
-| **Demonic Brand** | 3 | — | **NEW** | Your Searing Pain generates 17% less threat and brands the target for 10 sec. Your pet's next 2 attacks against the target generate high threat and deal 65 to 68 Fire or Shadow damage based on the pet. | Your Searing Pain generates 50% less threat and brands the target for 10 sec. Your pet's next 6 attacks against the target generate high threat and deal 65 to 68 Fire or Shadow damage based on the pet. |
+| **Demonic Brand** | 3 | — | **NEW** | Your Searing Pain generates 17% less threat and brands the target for 10 sec. Your pet's next 2 attacks against the target deal 65 to 68 Fire or Shadow damage based on the pet. If Shadow damage is dealt, it has high threat. | Your Searing Pain generates 50% less threat and brands the target for 10 sec. Your pet's next 6 attacks against the target deal 65 to 68 Fire or Shadow damage based on the pet. If Shadow damage is dealt, it has high threat. |
 
 ### Tier 5 — requires 20 points in Demonology
 
@@ -226,7 +226,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Unholy Power** (tooltip changed, was Demonology row 4, col 3)
   - Classic: Increases the damage done by your Voidwalker, Succubus, Incubus, and Felhunter's melee attacks by 4%.
   - Forever: Increases all damage done by your Imp, Voidwalker, Succubus, Incubus, and Felhunter pets by 2%.
-- **Demonic Sacrifice** (tooltip changed, was Demonology row 5, col 2, tooltip changed in build 1.60.1.70170 (ranks 1))
+- **Demonic Sacrifice** (tooltip changed, was Demonology row 5, col 2, tooltip changed in build 1.60.1.70291 (ranks 1))
   - Classic: When activated, sacrifices your summoned demon to grant you an effect that lasts 30 min. The effect is canceled if any Demon is summoned.  Imp: Increases your Fire damage by 15%.  Voidwalker: Restores 3% of total Health every 4 sec.  Succubus/Incubus: Increases your Shadow damage by 15%.  Felhunter: Restores 2% of total Mana every 4 sec.
   - Forever: When activated, sacrifices your summoned Demon to enhance the opposing aspect of your power, granting you an effect that lasts 2 hrs. The effect is canceled if any Demon is summoned.  Imp: Increases your Shadow damage by 15%.  Voidwalker: Restores 2% of your total Mana every 4 sec.  Succubus/Incubus: Increases your Fire damage by 15%.  Felhunter: Restores 3% of your total Health every 4 sec.
 - **Fel Domination** (tooltip changed, was Demonology row 3, col 2)
@@ -259,13 +259,13 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Ruin** (max rank 1 → 5, tooltip changed, was Destruction row 5, col 3)
   - Classic: Increases the critical strike damage bonus of your Destruction spells by 100%.
   - Forever: Increases the critical strike damage bonus of your Destruction spells by 20%.
-- **Shadowburn** (tooltip changed, was Destruction row 3, col 4, tooltip changed in build 1.60.1.70170 (ranks 1))
+- **Shadowburn** (tooltip changed, was Destruction row 3, col 4, tooltip changed in build 1.60.1.70291 (ranks 1))
   - Classic: Instantly blasts the target for 99 Shadow damage. If the target dies within 5 sec of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.
   - Forever: Instantly blasts the target for 65 to 73 Shadow damage. If a non-trivial target dies within 8 sec of being hit with Shadowburn, the caster gains a Soul Shard.
 - **Intensity** (max rank 2 → 3, tooltip changed)
   - Classic: Gives you a 35% chance to resist interruption caused by damage while channeling the Rain of Fire, Hellfire or Soul Fire spell.
   - Forever: Gives you a 23% chance to resist interruption caused by damage while casting or channeling any Destruction spell.
-- **Conflagrate** (tooltip changed, was Destruction row 7, col 2, tooltip changed in build 1.60.1.70170 (ranks 1))
+- **Conflagrate** (tooltip changed, was Destruction row 7, col 2, tooltip changed in build 1.60.1.70291 (ranks 1))
   - Classic: Ignites a target that is already afflicted by Immolate, dealing 306 Fire damage and consuming the Immolate spell.
   - Forever: Ignites a target that is already afflicted by your Immolate spell, dealing 88 to 110 Fire damage and consuming your Immolate effect.
 - **Pyroclasm** (tooltip changed)

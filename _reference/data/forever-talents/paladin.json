@@ -1,51 +1,32 @@
 {
   "slug": "paladin",
   "name": "Paladin",
-  "build": "1.60.1.70170",
-  "captured": "2026-10-03",
+  "build": "1.60.1.70291",
+  "captured": "2026-10-08",
   "tooltip_level": 60,
-  "source": "World of Warcraft: Forever beta client, build 1.60.1.70170: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-03, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70009; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo).",
+  "source": "World of Warcraft: Forever beta client, build 1.60.1.70291: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-08, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo).",
   "sources": {
     "talentsforever": {
       "url": "https://talentsforever.com/data.json",
-      "generated": "2026-10-03",
-      "build": "1.60.1.70170",
+      "generated": "2026-10-08",
+      "build": "1.60.1.70291",
       "license": "CC-BY-4.0",
       "attribution": "Data from talentsforever.com (https://talentsforever.com)"
     },
     "thewowdb": {
       "url": "https://thewowdb.com/wow-forever/talents/paladin/",
-      "build": "1.60.1.70009",
+      "build": "1.60.1.70291",
       "evidence": [
-        "https://wago.tools/db2/TraitNode?build=1.60.1.70009"
+        "https://wago.tools/db2/TraitNode?build=1.60.1.70291"
       ]
     },
     "warcraftforever": {
       "url": "https://warcraftforever.games/talents/paladin",
-      "build": "1.60.1.69893",
-      "captured": "2026-09-18"
+      "build": "1.60.1.70205",
+      "captured": "2026-10-04"
     }
   },
-  "removed_since_demo": [
-    {
-      "tree": "Holy",
-      "name": "Improved Holy Strike",
-      "build": "1.60.1.70170",
-      "row": 1,
-      "col": 1,
-      "maxRank": 2,
-      "rank1": "Reduces the cooldown of your Holy Strike ability by 1 sec."
-    },
-    {
-      "tree": "Retribution",
-      "name": "Crusade",
-      "build": "1.60.1.70170",
-      "row": 4,
-      "col": 4,
-      "maxRank": 2,
-      "rank1": "Increases all damage dealt by 1%. Increased by an additional 1% against Demon and Undead targets."
-    }
-  ],
+  "removed_since_demo": [],
   "renamed_since_demo": [],
   "merge_notes": [],
   "trees": [
@@ -190,13 +171,7 @@
           ],
           "status": "new",
           "evidence": "paladin/08-paladin-holy-voice-of-truth.jpg",
-          "ranks_prev": [
-            "Grants you immunity to Silence and Interrupt effects. Lasts 6 sec."
-          ],
-          "ranks_prev_build": "1.60.1.69893",
-          "diff": [
-            "tooltip changed in build 1.60.1.70170 (ranks 1)"
-          ]
+          "diff": []
         },
         {
           "id": "holy/reverence",
@@ -238,7 +213,7 @@
           "maxRank": 2,
           "ranks": [
             "Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within 15 sec by 0.5 sec.",
-            "Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within 15 sec by 1 sec."
+            "Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within 15 sec by 1.0 sec."
           ],
           "status": "new",
           "evidence": "paladin/11-paladin-holy-infusion-of-light.jpg",
@@ -369,17 +344,8 @@
             "Increases the critical effect chance of your Holy spells by 5%."
           ],
           "evidence": "paladin/17-paladin-holy-holy-power.jpg",
-          "ranks_prev": [
-            "Increases the critical strike chance of your Holy Shock spell by 3%, and all other spells by 1%.",
-            "Increases the critical strike chance of your Holy Shock spell by 6%, and all other spells by 2%.",
-            "Increases the critical strike chance of your Holy Shock spell by 9%, and all other spells by 3%.",
-            "Increases the critical strike chance of your Holy Shock spell by 12%, and all other spells by 4%.",
-            "Increases the critical strike chance of your Holy Shock spell by 15%, and all other spells by 5%."
-          ],
-          "ranks_prev_build": "1.60.1.69893",
           "diff": [
-            "tooltip changed",
-            "tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5)"
+            "tooltip changed"
           ]
         },
         {
@@ -395,11 +361,11 @@
           "status": "new",
           "evidence": "paladin/18-paladin-holy-lights-vigil.jpg",
           "ranks_prev": [
-            "Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes friendly targets to heal their party for 325 to 344, or enemy targets to suffer 175 to 189 Holy damage and refund 75% of Light's Vigil's Mana cost. You may only have 1 Light's Vigil active per Paladin, per party."
+            "Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer 175 to 189 Holy damage and refund 75% of Light's Vigil's Mana cost, or allied targets to heal their party for 325 to 344. You may only have one Light's Vigil active per party."
           ],
-          "ranks_prev_build": "1.60.1.69893",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70170 (ranks 1)"
+            "tooltip changed in build 1.60.1.70291 (ranks 1)"
           ],
           "prereq": {
             "id": "holy/holy-shock",
@@ -464,17 +430,8 @@
             "Increases your chance to block attacks with your shield by 30% after being the victim of a critical strike. Lasts 10 sec or 5 blocks."
           ],
           "evidence": "paladin/20-paladin-protection-redoubt.jpg",
-          "ranks_prev": [
-            "Damaging melee attacks against you have a 10% chance to increase your chance to block by 6%. Lasts 10 sec or 5 blocks.",
-            "Damaging melee attacks against you have a 10% chance to increase your chance to block by 12%. Lasts 10 sec or 5 blocks.",
-            "Damaging melee attacks against you have a 10% chance to increase your chance to block by 18%. Lasts 10 sec or 5 blocks.",
-            "Damaging melee attacks against you have a 10% chance to increase your chance to block by 24%. Lasts 10 sec or 5 blocks.",
-            "Damaging melee attacks against you have a 10% chance to increase your chance to block by 30%. Lasts 10 sec or 5 blocks."
-          ],
-          "ranks_prev_build": "1.60.1.69893",
           "diff": [
-            "tooltip changed",
-            "tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5)"
+            "tooltip changed"
           ]
         },
         {
@@ -610,10 +567,10 @@
             "Increases the amount of damage absorbed by your shield by 20%, and gives your blocks a 66% chance to restore 6% of your maximum Mana. May only occur once every 3 sec sec.",
             "Increases the amount of damage absorbed by your shield by 30%, and gives your blocks a 100% chance to restore 6% of your maximum Mana. May only occur once every 3 sec sec."
           ],
-          "ranks_prev_build": "1.60.1.69893",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3)"
+            "tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3)"
           ],
           "prereq": {
             "id": "protection/redoubt",
@@ -720,11 +677,11 @@
           "icon": "spell_holy_blessingofstrength",
           "maxRank": 5,
           "ranks": [
-            "Gives you a 8% chance to gain an extra attack after Blocking a melee attack and a 20% chance to gain an extra attack after being the victim of a non-periodic critical strike.",
-            "Gives you a 16% chance to gain an extra attack after Blocking a melee attack and a 40% chance to gain an extra attack after being the victim of a non-periodic critical strike.",
-            "Gives you a 24% chance to gain an extra attack after Blocking a melee attack and a 60% chance to gain an extra attack after being the victim of a non-periodic critical strike.",
-            "Gives you a 32% chance to gain an extra attack after Blocking a melee attack and a 80% chance to gain an extra attack after being the victim of a non-periodic critical strike.",
-            "Gives you a 40% chance to gain an extra attack after Blocking a melee attack and a 100% chance to gain an extra attack after being the victim of a non-periodic critical strike."
+            "Gives you a 8% chance to gain an extra attack after Blocking a melee attack and a 20% chance to gain an extra attack after being the victim of a non-periodic critical strike. Cannot occur more often than once every 1.5 sec.",
+            "Gives you a 16% chance to gain an extra attack after Blocking a melee attack and a 40% chance to gain an extra attack after being the victim of a non-periodic critical strike. Cannot occur more often than once every 1.5 sec.",
+            "Gives you a 24% chance to gain an extra attack after Blocking a melee attack and a 60% chance to gain an extra attack after being the victim of a non-periodic critical strike. Cannot occur more often than once every 1.5 sec.",
+            "Gives you a 32% chance to gain an extra attack after Blocking a melee attack and a 80% chance to gain an extra attack after being the victim of a non-periodic critical strike. Cannot occur more often than once every 1.5 sec.",
+            "Gives you a 40% chance to gain an extra attack after Blocking a melee attack and a 100% chance to gain an extra attack after being the victim of a non-periodic critical strike. Cannot occur more often than once every 1.5 sec."
           ],
           "status": "changed",
           "classic": [
@@ -735,8 +692,17 @@
             "Gives you a 100% chance to gain an extra attack after being the victim of a critical strike."
           ],
           "evidence": "paladin/32-paladin-protection-reckoning.jpg",
+          "ranks_prev": [
+            "Gives you a 8% chance to gain an extra attack after Blocking a melee attack and a 20% chance to gain an extra attack after being the victim of a non-periodic critical strike.",
+            "Gives you a 16% chance to gain an extra attack after Blocking a melee attack and a 40% chance to gain an extra attack after being the victim of a non-periodic critical strike.",
+            "Gives you a 24% chance to gain an extra attack after Blocking a melee attack and a 60% chance to gain an extra attack after being the victim of a non-periodic critical strike.",
+            "Gives you a 32% chance to gain an extra attack after Blocking a melee attack and a 80% chance to gain an extra attack after being the victim of a non-periodic critical strike.",
+            "Gives you a 40% chance to gain an extra attack after Blocking a melee attack and a 100% chance to gain an extra attack after being the victim of a non-periodic critical strike."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed"
+            "tooltip changed",
+            "tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3, 4, 5)"
           ]
         },
         {
@@ -755,17 +721,7 @@
           ],
           "status": "new",
           "evidence": "paladin/33-paladin-protection-iron-creed.jpg",
-          "ranks_prev": [
-            "Increases the threat generated by your Holy Strike ability 5%. While Righteous Fury is active, Holy Strike also reduces your damage taken by 2% for 6 sec.",
-            "Increases the threat generated by your Holy Strike ability 10%. While Righteous Fury is active, Holy Strike also reduces your damage taken by 4% for 6 sec.",
-            "Increases the threat generated by your Holy Strike ability 15%. While Righteous Fury is active, Holy Strike also reduces your damage taken by 6% for 6 sec.",
-            "Increases the threat generated by your Holy Strike ability 20%. While Righteous Fury is active, Holy Strike also reduces your damage taken by 8% for 6 sec.",
-            "Increases the threat generated by your Holy Strike ability 25%. While Righteous Fury is active, Holy Strike also reduces your damage taken by 10% for 6 sec."
-          ],
-          "ranks_prev_build": "1.60.1.69893",
-          "diff": [
-            "tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5)"
-          ]
+          "diff": []
         },
         {
           "id": "protection/holy-shield",
@@ -782,13 +738,8 @@
             "Increases chance to block by 30% for 10 sec, and deals 65 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges."
           ],
           "evidence": "paladin/34-paladin-protection-holy-shield.jpg",
-          "ranks_prev": [
-            "Increases chance to block by 20% for 10 sec, and deals 110 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges."
-          ],
-          "ranks_prev_build": "1.60.1.69893",
           "diff": [
-            "tooltip changed",
-            "tooltip changed in build 1.60.1.70170 (ranks 1)"
+            "tooltip changed"
           ],
           "prereq": {
             "id": "protection/templar-s-bulwark",
@@ -928,9 +879,9 @@
           "icon": "spell_holy_vindication",
           "maxRank": 3,
           "ranks": [
-            "Gives your damaging melee attacks a chance to reduce the target's Attack Power by 67, and increase your Attack Power by 1% for 30 sec.",
-            "Gives your damaging melee attacks a chance to reduce the target's Attack Power by 133, and increase your Attack Power by 2% for 30 sec.",
-            "Gives your damaging melee attacks a chance to reduce the target's Attack Power by 200, and increase your Attack Power by 3% for 30 sec."
+            "Gives your damaging melee attacks a chance to reduce the target's Attack Power by 68, and increase your Attack Power by 1% for 30 sec.",
+            "Gives your damaging melee attacks a chance to reduce the target's Attack Power by 136, and increase your Attack Power by 2% for 30 sec.",
+            "Gives your damaging melee attacks a chance to reduce the target's Attack Power by 204, and increase your Attack Power by 3% for 30 sec."
           ],
           "status": "changed",
           "classic": [
@@ -944,10 +895,10 @@
             "Gives your damaging melee attacks a chance to reduce the target's Attack Power by 134, and increase your Attack Power by 2% for 30 sec.",
             "Gives your damaging melee attacks a chance to reduce the target's Attack Power by 201, and increase your Attack Power by 3% for 30 sec."
           ],
-          "ranks_prev_build": "1.60.1.69893",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "tooltip changed in build 1.60.1.70170 (ranks 2, 3)"
+            "tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3)"
           ]
         },
         {
@@ -984,10 +935,10 @@
           "ranks_prev": [
             "Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing 71 Holy damage, 136 to 148 if the target is stunned or incapacitated."
           ],
-          "ranks_prev_build": "1.60.1.69893",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "tooltip changed in build 1.60.1.70170 (ranks 1)"
+            "tooltip changed in build 1.60.1.70291 (ranks 1)"
           ]
         },
         {
@@ -1044,13 +995,7 @@
           ],
           "status": "new",
           "evidence": "paladin/45-paladin-retribution-sacred-arbiter.jpg",
-          "ranks_prev": [
-            "Increases the damage of your Holy Strike ability by 10% and causes it to refresh all Judgement effects on the target."
-          ],
-          "ranks_prev_build": "1.60.1.69893",
-          "diff": [
-            "tooltip changed in build 1.60.1.70170 (ranks 1)"
-          ]
+          "diff": []
         },
         {
           "id": "retribution/two-handed-weapon-specialization",
@@ -1064,23 +1009,9 @@
             "Increases the damage you deal with two-handed melee weapons by 4%.",
             "Increases the damage you deal with two-handed melee weapons by 6%."
           ],
-          "status": "changed",
-          "classic": [
-            "Increases the damage you deal with two-handed melee weapons by 2%.",
-            "Increases the damage you deal with two-handed melee weapons by 4%.",
-            "Increases the damage you deal with two-handed melee weapons by 6%."
-          ],
+          "status": "same",
           "evidence": "paladin/47-paladin-retribution-two-handed-weapon-specialization.jpg",
-          "ranks_prev": [
-            "Increases the damage you deal with two-handed melee weapons by 3%.",
-            "Increases the damage you deal with two-handed melee weapons by 6%.",
-            "Increases the damage you deal with two-handed melee weapons by 9%."
-          ],
-          "ranks_prev_build": "1.60.1.69893",
-          "diff": [
-            "tooltip changed",
-            "tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3)"
-          ]
+          "diff": []
         },
         {
           "id": "retribution/vengeance",
@@ -1103,17 +1034,10 @@
             "Gives you a 15% bonus to Physical and Holy damage you deal for 8 sec after dealing a critical strike from a weapon swing, spell, or ability."
           ],
           "evidence": "paladin/48-paladin-retribution-vengeance.jpg",
-          "ranks_prev": [
-            "Increases your Physical and Holy damage dealt by 1% for 30 sec after landing a critical strike. Stacks up to 5 times.",
-            "Increases your Physical and Holy damage dealt by 2% for 30 sec after landing a critical strike. Stacks up to 5 times.",
-            "Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a critical strike. Stacks up to 5 times."
-          ],
-          "ranks_prev_build": "1.60.1.69893",
           "diff": [
             "max rank 5 → 3",
             "tooltip changed",
-            "was Retribution row 6, col 2",
-            "tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3)"
+            "was Retribution row 6, col 2"
           ],
           "prereq": {
             "id": "retribution/sanctified-judgement",
@@ -1150,15 +1074,7 @@
           ],
           "status": "new",
           "evidence": "paladin/50-paladin-retribution-champion-of-the-light.jpg",
-          "ranks_prev": [
-            "Increases your spell damage and healing by up to 33% of your Intellect.",
-            "Increases your spell damage and healing by up to 66% of your Intellect.",
-            "Increases your spell damage and healing by up to 100% of your Intellect."
-          ],
-          "ranks_prev_build": "1.60.1.69893",
-          "diff": [
-            "tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3)"
-          ]
+          "diff": []
         },
         {
           "id": "retribution/instrument-of-law",
@@ -1169,7 +1085,7 @@
           "maxRank": 2,
           "ranks": [
             "Reduces the cast time of your Hammer of Wrath by 0.5 sec, and reduces all threat you generate by 10% while Righteous Fury is not active.",
-            "Reduces the cast time of your Hammer of Wrath by 1 sec, and reduces all threat you generate by 20% while Righteous Fury is not active."
+            "Reduces the cast time of your Hammer of Wrath by 1.0 sec, and reduces all threat you generate by 20% while Righteous Fury is not active."
           ],
           "status": "new",
           "evidence": "paladin/51-paladin-retribution-instrument-of-law.jpg",
@@ -1187,13 +1103,7 @@
           ],
           "status": "new",
           "evidence": "paladin/52-paladin-retribution-twist-of-light.jpg",
-          "ranks_prev": [
-            "When you replace your Seal of Command, Seal of Righteousness, Seal of Fury, or Seal of Justice with a different Seal, gain an Echo. Your next melee attack applies the replaced Seal's effects, consuming the Echo."
-          ],
-          "ranks_prev_build": "1.60.1.69893",
-          "diff": [
-            "tooltip changed in build 1.60.1.70170 (ranks 1)"
-          ]
+          "diff": []
         }
       ],
       "removed": [

@@ -1,6 +1,6 @@
-# Priest — WoW: Forever talent trees (beta client 1.60.1.70170)
+# Priest — WoW: Forever talent trees (beta client 1.60.1.70291)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70170, captured 2026-10-03. World of Warcraft: Forever beta client, build 1.60.1.70170: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-03, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70205; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70291, captured 2026-10-08. World of Warcraft: Forever beta client, build 1.60.1.70291: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-08, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -8,7 +8,7 @@
 
 | Tree | Talents | New | Changed | Moved | Unchanged | Removed from Classic |
 |---|---|---|---|---|---|---|
-| Discipline | 18 | 7 | 10 | 0 | 1 | 4 |
+| Discipline | 18 | 7 | 11 | 0 | 0 | 4 |
 | Holy | 17 | 4 | 9 | 0 | 4 | 3 |
 | Shadow | 18 | 3 | 11 | 4 | 0 | 1 |
 
@@ -36,7 +36,7 @@
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Mental Agility** | 3 | — | changed | Reduces the mana cost of your Smite, Holy Fire, and instant cast spells by 3%. | Reduces the mana cost of your Smite, Holy Fire, and instant cast spells by 10%. |
-| **Inner Focus** | 1 | — | unchanged | When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is a non-periodic spell and capable of a critical effect. | — |
+| **Inner Focus** | 1 | — | changed | When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is a non-periodic spell and capable of a critical effect. | — |
 | **Meditation** | 3 | — | changed | Allows 17% of your Mana regeneration to continue while casting. | Allows 50% of your Mana regeneration to continue while casting. |
 
 ### Tier 4 — requires 15 points in Discipline
@@ -46,13 +46,13 @@
 | **Improved Inner Fire** | 3 | — | changed | Increases the Armor bonus of your Inner Fire spell by 15% and increases its total charges by 4. | Increases the Armor bonus of your Inner Fire spell by 45% and increases its total charges by 12. |
 | **Mental Strength** | 5 | — | changed | Increases your total Intellect by 3%. | Increases your total Intellect by 15%. |
 | **Soul Warding** | 1 | Improved Power Word: Shield (3) | **NEW** | Reduces the cooldown on your Power Word: Shield spell by 4 sec and reduces its mana cost by 15%. | — |
-| **Improved Mana Burn** | 2 | — | changed | Reduces the casting time of your Mana Burn spell by 0.5 sec. | Reduces the casting time of your Mana Burn spell by 1 sec. |
+| **Improved Mana Burn** | 2 | — | changed | Reduces the casting time of your Mana Burn spell by 0.5 sec. | Reduces the casting time of your Mana Burn spell by 1.0 sec. |
 
 ### Tier 5 — requires 20 points in Discipline
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Penance** | 1 | — | **NEW** | Launches a volley of holy light at the target, causing 81 Holy damage to an enemy, or 184 healing to an ally, instantly and every 1 sec for 2 sec. | — |
+| **Penance** | 1 | — | **NEW** | Launches a volley of holy light at the target, causing 44 Holy damage to an enemy, or 133 healing to an ally, instantly and every 1 sec for 2 sec. | — |
 | **Renewed Hope** | 5 | Soul Warding (1) | **NEW** | Your heals from Flash Heal, Binding Heal, Lesser Heal, Heal, Greater Heal, and Penance gain 2% increased critical strike chance when cast on targets with Weakened Soul, and reduce the remaining duration of Weakened Soul on their target by 1 sec. | Your heals from Flash Heal, Binding Heal, Lesser Heal, Heal, Greater Heal, and Penance gain 10% increased critical strike chance when cast on targets with Weakened Soul, and reduce the remaining duration of Weakened Soul on their target by 5 sec. |
 
 ### Tier 6 — requires 25 points in Discipline
@@ -203,6 +203,9 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Mental Agility** (max rank 5 → 3, tooltip changed, was Discipline row 4, col 2)
   - Classic: Reduces the mana cost of your instant cast spells by 2%.
   - Forever: Reduces the mana cost of your Smite, Holy Fire, and instant cast spells by 3%.
+- **Inner Focus** (tooltip changed)
+  - Classic: When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is capable of a critical effect.
+  - Forever: When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is a non-periodic spell and capable of a critical effect.
 - **Meditation** (tooltip changed, was Discipline row 3, col 3)
   - Classic: Allows 5% of your Mana regeneration to continue while casting.
   - Forever: Allows 17% of your Mana regeneration to continue while casting.
@@ -224,7 +227,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Divine Fury** (tooltip changed)
   - Classic: Reduces the casting time of your Smite, Holy Fire, Heal and Greater Heal spells by 0 sec.
   - Forever: Reduces the casting time of your Smite, Holy Fire, Heal, and Greater Heal spells by 0.1 sec.
-- **Holy Nova** (tooltip changed, tooltip changed in build 1.60.1.70170 (ranks 1))
+- **Holy Nova** (tooltip changed, tooltip changed in build 1.60.1.70291 (ranks 1))
   - Classic: Causes an explosion of holy light around the caster, causing 32 Holy damage to all enemy targets within 0 yards and healing all party members within 0 yards for 60. These effects cause no threat.
   - Forever: Causes an explosion of holy light around the caster, causing 26 to 30 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 49 to 57. These effects cause no threat.
 - **Blessed Recovery** (tooltip changed)
@@ -254,7 +257,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Shadow Focus** (tooltip changed, was Shadow row 2, col 3)
   - Classic: Reduces your target's chance to resist your Shadow spells by 2%.
   - Forever: Improves your chance to hit with Shadow spells by 1%.
-- **Spirit Tap** (tooltip changed, was Shadow row 1, col 2, tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5))
+- **Spirit Tap** (tooltip changed, was Shadow row 1, col 2)
   - Classic: Gives you a 20% chance to gain a 100% bonus to your Spirit after killing a target that yields experience. For the duration, your Mana will regenerate at a 50% rate while casting. Lasts 15 sec.
   - Forever: Gives you a 20% chance to increase your Spirit by 100% for 15 sec after killing a non-trivial target or when an enemy afflicted by your Vampiric Embrace dies. For the duration, 50% of your Mana regeneration will continue while casting.
 - **Shadow Affinity** (tooltip changed)
@@ -269,7 +272,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Mind Flay** (tooltip changed)
   - Classic: Assault the target's mind with Shadow energy, causing 75 Shadow damage over 3 sec and slowing their movement speed by 50%.
   - Forever: Assault the target's mind with Shadow energy, causing 63 Shadow damage over 3 sec and slowing their movement speed by 50%.
-- **Vampiric Embrace** (tooltip changed, was Shadow row 5, col 2, tooltip changed in build 1.60.1.70170 (ranks 1))
+- **Vampiric Embrace** (tooltip changed, was Shadow row 5, col 2)
   - Classic: Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow spell damage you deal for 1 min.
   - Forever: Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow spell damage you deal for 30 sec.
 - **Shadow Weaving** (max rank 5 → 3, tooltip changed, was Shadow row 4, col 4)

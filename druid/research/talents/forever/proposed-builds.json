@@ -151,7 +151,7 @@
       "content": "raid",
       "tier": "draft",
       "based_on": "feral-cat-dps",
-      "summary": "Allocation adopted on 2026-09-26 from `opt-feral-cat-dps-raid-dps`, the best build in the community simulator (+7.9% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: Omen of Clarity is baseline and Natural Weapons is gone, so the Classic Balance dip becomes Genesis (bleed damage), Nature's Majesty (+4% crit) and Nature's Reach (+4% hit); Furor and Naturalist (+5% all damage) come from Restoration. Feral gets Heart of the Wild at tier 1, Shredding Attacks (the Improved Shred replacement), Predatory Instincts, Rend and Tear (damage on bleeding targets) and the Berserk capstone.",
+      "summary": "Allocation adopted on 2026-09-26 from `opt-feral-cat-dps-raid-dps`, the best build in the community simulator (+7.9% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: Omen of Clarity is baseline and Natural Weapons is gone, so the Classic Balance dip becomes Genesis (bleed damage), Nature's Majesty (+4% crit) and Nature's Reach (+4% hit); Furor and Naturalist (+5% all damage) come from Restoration. Feral gets Heart of the Wild at tier 1, Shredding Attacks (the Improved Shred replacement), Natural Instinct, Rend and Tear (damage on bleeding targets) and the Berserk capstone.",
       "allocation": {
         "Balance": [
           ["Genesis", 5],
@@ -169,7 +169,7 @@
           ["Predatory Strikes", 3],
           ["Blood Frenzy", 2],
           ["Leader of the Pack", 1],
-          ["Predatory Instincts", 2],
+          ["Natural Instinct", 2],
           ["Rend and Tear", 2],
           ["Berserk", 1]
         ],
@@ -241,7 +241,7 @@
           ["Blood Frenzy", 2],
           ["Shredding Attacks", 3],
           ["Predatory Strikes", 3],
-          ["Predatory Instincts", 2],
+          ["Natural Instinct", 2],
           ["Natural Reaction", 5],
           ["Rend and Tear", 5]
         ],
@@ -452,7 +452,7 @@
           ["Sharpened Claws", 2],
           ["Predatory Strikes", 3],
           ["Leader of the Pack", 1],
-          ["Predatory Instincts", 2],
+          ["Natural Instinct", 2],
           ["Rend and Tear", 5],
           ["Berserk", 1]
         ],
@@ -512,7 +512,7 @@
           ["Sharpened Claws", 2],
           ["Predatory Strikes", 3],
           ["Leader of the Pack", 1],
-          ["Predatory Instincts", 2],
+          ["Natural Instinct", 2],
           ["Rend and Tear", 5],
           ["Berserk", 1]
         ],
@@ -559,7 +559,7 @@
           ["Sharpened Claws", 2],
           ["Predatory Strikes", 3],
           ["Leader of the Pack", 1],
-          ["Predatory Instincts", 2],
+          ["Natural Instinct", 2],
           ["Rend and Tear", 5],
           ["Berserk", 1]
         ],
@@ -575,7 +575,7 @@
         {"talent": "Sharpened Claws", "why": "Removing it costs 2.3 points of score in this model."},
         {"talent": "Predatory Strikes", "why": "Removing it costs 2.2 points of score in this model."},
         {"talent": "Nature's Reach", "why": "Removing it costs 2.0 points of score in this model."},
-        {"talent": "Predatory Instincts", "why": "Removing it costs 2.0 points of score in this model."},
+        {"talent": "Natural Instinct", "why": "Removing it costs 2.0 points of score in this model."},
         {"talent": "Savage Fury", "why": "Removing it costs 1.9 points of score in this model."},
         {"talent": "Berserk", "why": "Removing it costs 1.9 points of score in this model."}
       ],
@@ -730,7 +730,7 @@
           ["Predatory Strikes", 3],
           ["Blood Frenzy", 2],
           ["Leader of the Pack", 1],
-          ["Predatory Instincts", 2],
+          ["Natural Instinct", 2],
           ["Berserk", 1]
         ],
         "Restoration": [
@@ -1037,7 +1037,7 @@
           ["Blood Frenzy", 2],
           ["Predatory Strikes", 3],
           ["Leader of the Pack", 1],
-          ["Predatory Instincts", 2],
+          ["Natural Instinct", 2],
           ["Rend and Tear", 5],
           ["Berserk", 1]
         ],
@@ -1054,7 +1054,7 @@
         {"talent": "Rend and Tear", "why": "Removing it costs 9.5 points of score in this model."},
         {"talent": "Naturalist", "why": "Removing it costs 9.1 points of score in this model."},
         {"talent": "Predatory Strikes", "why": "Removing it costs 6.1 points of score in this model."},
-        {"talent": "Predatory Instincts", "why": "Removing it costs 5.9 points of score in this model."},
+        {"talent": "Natural Instinct", "why": "Removing it costs 5.9 points of score in this model."},
         {"talent": "Nature's Reach", "why": "Removing it costs 5.6 points of score in this model."}
       ],
       "flex": [],
@@ -1084,7 +1084,7 @@
           ["Savage Fury", 2],
           ["Blood Frenzy", 2],
           ["Predatory Strikes", 3],
-          ["Predatory Instincts", 2],
+          ["Natural Instinct", 2],
           ["Leader of the Pack", 1],
           ["Rend and Tear", 5],
           ["Berserk", 1]
@@ -1102,7 +1102,7 @@
         {"talent": "Rend and Tear", "why": "Removing it costs 9.2 points of score in this model."},
         {"talent": "Naturalist", "why": "Removing it costs 8.8 points of score in this model."},
         {"talent": "Predatory Strikes", "why": "Removing it costs 5.9 points of score in this model."},
-        {"talent": "Predatory Instincts", "why": "Removing it costs 5.6 points of score in this model."},
+        {"talent": "Natural Instinct", "why": "Removing it costs 5.6 points of score in this model."},
         {"talent": "Nature's Reach", "why": "Removing it costs 5.5 points of score in this model."}
       ],
       "flex": [],
@@ -1132,7 +1132,7 @@
           ["Savage Fury", 2],
           ["Blood Frenzy", 2],
           ["Predatory Strikes", 3],
-          ["Predatory Instincts", 2],
+          ["Natural Instinct", 2],
           ["Natural Reaction", 5],
           ["Rend and Tear", 5]
         ],

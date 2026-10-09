@@ -1,36 +1,36 @@
 {
   "slug": "warrior",
   "name": "Warrior",
-  "build": "1.60.1.70170",
-  "captured": "2026-10-03",
+  "build": "1.60.1.70291",
+  "captured": "2026-10-08",
   "tooltip_level": 60,
-  "source": "World of Warcraft: Forever beta client, build 1.60.1.70170: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-03, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70205; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.69893, captured 2026-09-18). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo).",
+  "source": "World of Warcraft: Forever beta client, build 1.60.1.70291: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-08, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo).",
   "sources": {
     "talentsforever": {
       "url": "https://talentsforever.com/data.json",
-      "generated": "2026-10-03",
-      "build": "1.60.1.70170",
+      "generated": "2026-10-08",
+      "build": "1.60.1.70291",
       "license": "CC-BY-4.0",
       "attribution": "Data from talentsforever.com (https://talentsforever.com)"
     },
     "thewowdb": {
       "url": "https://thewowdb.com/wow-forever/talents/warrior/",
-      "build": "1.60.1.70205",
+      "build": "1.60.1.70291",
       "evidence": [
-        "https://wago.tools/db2/TraitNode?build=1.60.1.70205"
+        "https://wago.tools/db2/TraitNode?build=1.60.1.70291"
       ]
     },
     "warcraftforever": {
       "url": "https://warcraftforever.games/talents/warrior",
-      "build": "1.60.1.69893",
-      "captured": "2026-09-18"
+      "build": "1.60.1.70205",
+      "captured": "2026-10-04"
     }
   },
   "removed_since_demo": [
     {
       "tree": "Fury",
       "name": "Boundless Rage",
-      "build": "1.60.1.70170",
+      "build": "1.60.1.70291",
       "row": 3,
       "col": 4,
       "maxRank": 3,
@@ -39,7 +39,7 @@
     {
       "tree": "Fury",
       "name": "Precision",
-      "build": "1.60.1.70170",
+      "build": "1.60.1.70291",
       "row": 5,
       "col": 1,
       "maxRank": 3,
@@ -48,7 +48,7 @@
     {
       "tree": "Protection",
       "name": "Toughness",
-      "build": "1.60.1.70170",
+      "build": "1.60.1.70291",
       "row": 2,
       "col": 3,
       "maxRank": 5,
@@ -60,19 +60,16 @@
       "tree": "Fury",
       "from": "Iron Will",
       "to": "Lingering Rage",
-      "build": "1.60.1.70170"
+      "build": "1.60.1.70291"
     },
     {
       "tree": "Fury",
       "from": "Improved Cleave",
       "to": "Furious Precision",
-      "build": "1.60.1.70170"
+      "build": "1.60.1.70291"
     }
   ],
-  "merge_notes": [
-    "Fury: the Trait-edge snapshot disagrees with the talentsforever export (only in the snapshot: Boundless Rage, Improved Cleave, Iron Will, Precision; only in the export: Furious Precision, Gore Drinker, Lingering Rage); the export's positions, rank caps and prerequisites used for this tree",
-    "Protection: the Trait-edge snapshot disagrees with the talentsforever export (only in the snapshot: Toughness; only in the export: Iron Will); the export's positions, rank caps and prerequisites used for this tree"
-  ],
+  "merge_notes": [],
   "trees": [
     {
       "id": "arms",
@@ -258,16 +255,16 @@
           "icon": "inv_spear_01",
           "maxRank": 1,
           "ranks": [
-            "A brutal attack that deals 40% weapon damage, plus an additional 80% weapon damage against Giants, Dragonkin, and mounted targets."
+            "A brutal attack that deals 40% weapon damage. Deals an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted."
           ],
           "status": "new",
           "evidence": "warrior/09-warrior-arms-spearing-strike.png",
           "ranks_prev": [
-            "A brutal attack that deals 40% weapon damage. Deals an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted."
+            "A brutal attack that deals 40% weapon damage, plus an additional 80% weapon damage against Giants, Dragonkin, and mounted targets."
           ],
-          "ranks_prev_build": "1.60.1.69893",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70170 (ranks 1)"
+            "tooltip changed in build 1.60.1.70291 (ranks 1)"
           ]
         },
         {
@@ -314,7 +311,11 @@
           "evidence": "warrior/11-warrior-arms-impale.png",
           "diff": [
             "tooltip changed"
-          ]
+          ],
+          "prereq": {
+            "id": "arms/deep-wounds",
+            "rank": 3
+          }
         },
         {
           "id": "arms/bloodthrill",
@@ -332,17 +333,7 @@
           ],
           "status": "new",
           "evidence": "warrior/12-warrior-arms-bloodthrill.png",
-          "ranks_prev": [
-            "Your melee attacks against targets afflicted by your Rend have a 2% chance to activate your Overpower ability for 1 attack on your current target. Lasts 6 sec.",
-            "Your melee attacks against targets afflicted by your Rend have a 4% chance to activate your Overpower ability for 1 attack on your current target. Lasts 6 sec.",
-            "Your melee attacks against targets afflicted by your Rend have a 6% chance to activate your Overpower ability for 1 attack on your current target. Lasts 6 sec.",
-            "Your melee attacks against targets afflicted by your Rend have a 8% chance to activate your Overpower ability for 1 attack on your current target. Lasts 6 sec.",
-            "Your melee attacks against targets afflicted by your Rend have a 10% chance to activate your Overpower ability for 1 attack on your current target. Lasts 6 sec."
-          ],
-          "ranks_prev_build": "1.60.1.69893",
-          "diff": [
-            "tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5)"
-          ]
+          "diff": []
         },
         {
           "id": "arms/sweeping-strikes",
@@ -385,7 +376,7 @@
           "maxRank": 2,
           "ranks": [
             "Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3.0 sec.",
-            "Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3 sec."
+            "Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3.0 sec."
           ],
           "status": "changed",
           "classic": [
@@ -397,15 +388,15 @@
           ],
           "evidence": "warrior/15-warrior-arms-improved-slam.png",
           "ranks_prev": [
-            "Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts your melee swing time.",
-            "Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts your melee swing time."
+            "Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 1.5 sec.",
+            "Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3.0 sec."
           ],
-          "ranks_prev_build": "1.60.1.69893",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "max rank 5 → 2",
             "tooltip changed",
             "was Fury row 5, col 1",
-            "tooltip changed in build 1.60.1.70170 (ranks 1, 2)"
+            "tooltip changed in build 1.60.1.70291 (ranks 1)"
           ]
         },
         {
@@ -487,10 +478,10 @@
             "Increases the radius of your Battle Shout and Demoralizing Shout abilities by 40%.",
             "Increases the radius of your Battle Shout and Demoralizing Shout abilities by 50%."
           ],
-          "ranks_prev_build": "1.60.1.69893",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5)"
+            "tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3, 4, 5)"
           ]
         },
         {
@@ -550,12 +541,12 @@
             "Reduces the duration of Stun and Fear effects inflicted on you by 12%.",
             "Reduces the duration of Stun and Fear effects inflicted on you by 15%."
           ],
-          "ranks_prev_build": "1.60.1.69893",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
             "was Protection row 2, col 4",
-            "renamed from Iron Will in build 1.60.1.70170",
-            "tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5)"
+            "renamed from Iron Will in build 1.60.1.70291",
+            "tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3, 4, 5)"
           ]
         },
         {
@@ -588,10 +579,10 @@
             "Gives you a 48% chance to generate 1 additional Rage when you deal melee damage with a weapon. This effect is increased to 2 Rage for two-handed weapons.",
             "Gives you a 60% chance to generate 1 additional Rage when you deal melee damage with a weapon. This effect is increased to 2 Rage for two-handed weapons."
           ],
-          "ranks_prev_build": "1.60.1.69893",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5)"
+            "tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3, 4, 5)"
           ]
         },
         {
@@ -618,11 +609,11 @@
             "Reduces the Rage cost of your Cleave ability by 2.",
             "Reduces the Rage cost of your Cleave ability by 3."
           ],
-          "ranks_prev_build": "1.60.1.69893",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "renamed from Improved Cleave in build 1.60.1.70170",
-            "tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3)"
+            "renamed from Improved Cleave in build 1.60.1.70291",
+            "tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3)"
           ]
         },
         {
@@ -643,10 +634,10 @@
           "ranks_prev": [
             "Causes all nearby enemies to be Dazed, reducing movement speed by 50% for 6 sec."
           ],
-          "ranks_prev_build": "1.60.1.69893",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "tooltip changed in build 1.60.1.70170 (ranks 1)"
+            "tooltip changed in build 1.60.1.70291 (ranks 1)"
           ]
         },
         {
@@ -673,10 +664,10 @@
             "Regenerates 2% of your total Health over 6 sec after being the victim of a critical strike, dealing damage with Bloodthirst, or suffering more than 20% of your maximum Health from a single attack.",
             "Regenerates 3% of your total Health over 6 sec after being the victim of a critical strike, dealing damage with Bloodthirst, or suffering more than 20% of your maximum Health from a single attack."
           ],
-          "ranks_prev_build": "1.60.1.69893",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3)"
+            "tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3)"
           ]
         },
         {
@@ -703,16 +694,16 @@
           ],
           "evidence": "warrior/26-warrior-fury-dual-wield-specialization.png",
           "ranks_prev": [
-            "Increases your off-hand weapon damage by 5%, off-hand Rage generation by 20%, and chance to hit with off-hand attacks by 2%.",
-            "Increases your off-hand weapon damage by 10%, off-hand Rage generation by 40%, and chance to hit with off-hand attacks by 4%.",
-            "Increases your off-hand weapon damage by 15%, off-hand Rage generation by 60%, and chance to hit with off-hand attacks by 6%.",
-            "Increases your off-hand weapon damage by 20%, off-hand Rage generation by 80%, and chance to hit with off-hand attacks by 8%.",
-            "Increases your off-hand weapon damage by 25%, off-hand Rage generation by 100%, and chance to hit with off-hand attacks by 10%."
+            "Increases your off-hand weapon damage by 5% and chance to hit with off-hand attacks by 2%.",
+            "Increases your off-hand weapon damage by 10% and chance to hit with off-hand attacks by 4%.",
+            "Increases your off-hand weapon damage by 15% and chance to hit with off-hand attacks by 6%.",
+            "Increases your off-hand weapon damage by 20% and chance to hit with off-hand attacks by 8%.",
+            "Increases your off-hand weapon damage by 25% and chance to hit with off-hand attacks by 10%."
           ],
-          "ranks_prev_build": "1.60.1.69893",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "tooltip changed in build 1.60.1.70170 (ranks 1, 2, 3, 4, 5)"
+            "tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3, 4, 5)"
           ]
         },
         {
@@ -728,11 +719,11 @@
           "status": "new",
           "evidence": "warrior/27-warrior-fury-raging-blows.png",
           "ranks_prev": [
-            "Causes your Whirlwind to also strike with your off-hand weapon, and reduces the Rage cost of your Cleave ability by 2."
+            "Causes your Whirlwind to also strike with your Off Hand weapon, and reduces the Rage cost of your Cleave ability by 2."
           ],
-          "ranks_prev_build": "1.60.1.69893",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70170 (ranks 1)"
+            "tooltip changed in build 1.60.1.70291 (ranks 1)"
           ]
         },
         {
@@ -803,7 +794,7 @@
           "evidence": "warrior/33-warrior-fury-improved-berserker-rage.png",
           "diff": [
             "tooltip changed",
-            "moved in build 1.60.1.70170: was row 6, col 1"
+            "moved in build 1.60.1.70291: was row 6, col 1"
           ]
         },
         {
@@ -865,8 +856,8 @@
           "evidence": "warrior/34-warrior-fury-flurry.png",
           "diff": [
             "tooltip changed",
-            "moved in build 1.60.1.70170: was row 6, col 3",
-            "prerequisite changed in build 1.60.1.70170: was enrage"
+            "moved in build 1.60.1.70291: was row 6, col 3",
+            "prerequisite changed in build 1.60.1.70291: was enrage"
           ],
           "prereq": {
             "id": "fury/death-wish",
@@ -882,11 +873,11 @@
           "maxRank": 2,
           "ranks": [
             "Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore 0.5% of your maximum Health.",
-            "Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore 1% of your maximum Health."
+            "Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore 1.0% of your maximum Health."
           ],
           "status": "new",
           "diff": [
-            "added in build 1.60.1.70170"
+            "added in build 1.60.1.70291"
           ],
           "prereq": {
             "id": "fury/enrage",
@@ -911,11 +902,11 @@
           "ranks_prev": [
             "Instantly attack the target causing damage equal to 35% of your Attack Power plus 30 and increasing your movement speed by 10% for 10 sec."
           ],
-          "ranks_prev_build": "1.60.1.69893",
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "tooltip changed in build 1.60.1.70170 (ranks 1)",
-            "prerequisite changed in build 1.60.1.70170: was death wish"
+            "tooltip changed in build 1.60.1.70291 (ranks 1)",
+            "prerequisite changed in build 1.60.1.70291: was death wish"
           ]
         }
       ],
@@ -949,7 +940,7 @@
           "evidence": "warrior/38-warrior-protection-improved-bloodrage.png",
           "diff": [
             "tooltip changed",
-            "moved in build 1.60.1.70170: was row 2, col 1"
+            "moved in build 1.60.1.70291: was row 2, col 1"
           ]
         },
         {
@@ -995,7 +986,7 @@
           ],
           "status": "new",
           "diff": [
-            "added in build 1.60.1.70170"
+            "added in build 1.60.1.70291"
           ]
         },
         {
@@ -1023,7 +1014,7 @@
           "evidence": "warrior/37-warrior-protection-anticipation.png",
           "diff": [
             "tooltip changed",
-            "moved in build 1.60.1.70170: was row 1, col 3"
+            "moved in build 1.60.1.70291: was row 1, col 3"
           ]
         },
         {
@@ -1047,7 +1038,7 @@
           "evidence": "warrior/43-warrior-protection-improved-revenge.png",
           "diff": [
             "tooltip changed",
-            "moved in build 1.60.1.70170: was row 3, col 3"
+            "moved in build 1.60.1.70291: was row 3, col 3"
           ]
         },
         {
@@ -1091,7 +1082,7 @@
           "evidence": "warrior/41-warrior-protection-last-stand.png",
           "diff": [
             "tooltip changed",
-            "prerequisite changed in build 1.60.1.70170: was improved bloodrage"
+            "prerequisite changed in build 1.60.1.70291: was improved bloodrage"
           ]
         },
         {
@@ -1134,7 +1125,7 @@
           "evidence": "warrior/46-warrior-protection-improved-disarm.png",
           "diff": [
             "tooltip changed",
-            "moved in build 1.60.1.70170: was row 4, col 2"
+            "moved in build 1.60.1.70291: was row 4, col 2"
           ]
         },
         {
@@ -1199,7 +1190,7 @@
           "status": "new",
           "evidence": "warrior/47-warrior-protection-vanguard.png",
           "diff": [
-            "moved in build 1.60.1.70170: was row 4, col 3"
+            "moved in build 1.60.1.70291: was row 4, col 3"
           ]
         },
         {
@@ -1216,7 +1207,7 @@
           "status": "same",
           "evidence": "warrior/50-warrior-protection-improved-shield-bash.png",
           "diff": [
-            "moved in build 1.60.1.70170: was row 5, col 3"
+            "moved in build 1.60.1.70291: was row 5, col 3"
           ]
         },
         {
@@ -1228,7 +1219,7 @@
           "maxRank": 2,
           "ranks": [
             "Reduces the cooldown of your Shield Wall ability by 5.5 min.",
-            "Reduces the cooldown of your Shield Wall ability by 11 min."
+            "Reduces the cooldown of your Shield Wall ability by 11.0 min."
           ],
           "status": "changed",
           "classic": [
@@ -1274,7 +1265,7 @@
           "status": "new",
           "evidence": "warrior/52-warrior-protection-focused-rage.png",
           "diff": [
-            "moved in build 1.60.1.70170: was row 6, col 3"
+            "moved in build 1.60.1.70291: was row 6, col 3"
           ]
         },
         {
@@ -1294,7 +1285,7 @@
           "status": "new",
           "evidence": "warrior/53-warrior-protection-bastion.png",
           "diff": [
-            "moved in build 1.60.1.70170: was row 5, col 4"
+            "moved in build 1.60.1.70291: was row 5, col 4"
           ]
         },
         {

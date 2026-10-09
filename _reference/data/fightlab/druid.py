@@ -178,7 +178,7 @@ MECHANICS = {
     "Primal Bite": "bear (levels 10-19): 100% weapon damage plus a bonus for 20 rage every 6 s",
     "Predatory Strikes": "+50%/rank of your level as attack power in forms",
     "Blood Frenzy": "bear (levels 10-19): 50%/rank chance of 5 rage on a critical strike",
-    "Predatory Instincts": "+10%/rank crit damage bonus on abilities",
+    "Natural Instinct": "+10%/rank crit damage bonus on abilities",
     "Leader of the Pack": "+3% crit in forms",
     "King of the Jungle": "Tiger's Fury grants 20 energy per rank",
     "Natural Reaction": "+1%/rank dodge",
@@ -212,7 +212,7 @@ MECHANICS = {
 }
 FIT = {
     "Ferocity": "scale", "Heart of the Wild": "scale", "Feral Swiftness": "scale", "Brutal Impact": "scale", "Thick Hide": "scale", "Savage Fury": "scale",
-    "Sharpened Claws": "scale", "Shredding Attacks": "scale", "Predatory Strikes": "scale", "Predatory Instincts": "scale", "Leader of the Pack": "scale",
+    "Sharpened Claws": "scale", "Shredding Attacks": "scale", "Predatory Strikes": "scale", "Natural Instinct": "scale", "Leader of the Pack": "scale",
     "King of the Jungle": "scale", "Natural Reaction": "scale", "Rend and Tear": "scale", "Berserk": "scale", "Genesis": "scale", "Nature's Majesty": "scale",
     "Nature's Reach": "scale", "Furor": "scale", "Naturalist": "scale", "Natural Shapeshifter": "scale", "Reflection": "scale", "Gift of Nature": "scale",
     "Improved Rejuvenation": "scale", "Tranquil Spirit": "scale", "Nature's Swiftness": "scale", "Living Spirit": "scale", "Swiftmend": "scale", "Blood Frenzy": "scale",
@@ -381,7 +381,7 @@ class DruidModule(BaseModule):
 
     def crit_damage_bonus(self, spell):
         if spell.kind == "melee" and spell.name != "Melee":
-            return self.tv("Predatory Instincts", 0) / 100
+            return self.tv("Natural Instinct", 0) / 100
         if spell.kind == "spell" and spell.school in ("arcane", "nature"):
             return self.tv("Vengeance", 0) / 100 * 0.5   # +100% of the 50% crit bonus = +50% damage on a crit
         return 0.0

@@ -107,7 +107,7 @@
  "Summon Hawk": {
   "tree": "Beast Mastery",
   "max": 1,
-  "text": "Command a hawk to dive-bomb your targeted enemy, dealing 32 Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.",
+  "text": "Command a hawk to dive-bomb your targeted enemy, dealing 32 plus 5% of your Ranged Attack Power Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown w",
   "effects": []
  },
  "Spirit Bond": {
@@ -592,7 +592,7 @@
  "Expose Prey": {
   "tree": "Survival",
   "max": 2,
-  "text": "Your attacks against targets with Hunter's Mark have a 5% chance to activate your Mongoose Bite for 5 sec.",
+  "text": "Your attacks against targets with Hunter's Mark have a 5% chance to activate your Mongoose Bite for 10 sec.",
   "effects": []
  },
  "Survivalist's Discipline": {
