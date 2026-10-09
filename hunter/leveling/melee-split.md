@@ -8,16 +8,18 @@
 
 ## How to play
 
-**Before the fight:** Pet out, **Aspect of the Monkey** (**Aspect of the Beast** once you have it). **Hunter's Mark** and **Serpent Sting** from range, then walk in.
+**Not in this build:** **Summon Hawk** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
+
+**Before the fight:** Pet out, **Aspect of the Monkey** (**Aspect of the Beast** from level 30). **Serpent Sting** from range, then walk in while the pet holds the mob.
 
 **In the fight**, top to bottom:
 
-1. **Immolation Trap** at your feet while the mob has most of its health.
-2. **Mongoose Bite** when it lights up (after a dodge).
-3. **Counterattack** after you parry.
-4. **Strider Kick** on cooldown.
-5. **Raptor Strike** on every swing it is ready.
-6. Low on health: **Deterrence**; **Mend Pet** for the pet.
+1. **Raptor Strike** every time it is ready: it replaces your next swing and costs no global cooldown.
+2. **Mongoose Bite** when it lights up (after you dodge), **Counterattack** after you parry.
+3. **Strider Kick** on cooldown.
+4. **Immolation Trap** at your feet while the mob has more than 70% of its health.
+5. Low on health: **Deterrence**; **Mend Pet** for the pet.
+6. Skip **Hunter's Mark** and **Summon Hawk** while leveling: the fight lab measured both slower per kill.
 
 **Between fights:** Mend the pet, drink below a third of your mana, eat below two thirds of your health.
 
@@ -35,7 +37,7 @@ The split melee build plays the melee Survival list: sting from range, trap at y
 
 **Caveats**
 
-- The page lists **Hunter's Mark**, which **Expose Prey** (levels 33-34) needs; the fight lab's tuned play skips the mark and measured about 3% faster kills without it.
+- **Expose Prey** (levels 33-34) needs **Hunter's Mark** on the mob, but even with it working the fight lab measured the mark slightly slower per kill while leveling (about 0.5 to 1.5%): skip the mark, as the tuned rotation does.
 - **Aspect of the Monkey** until level 30, then **Aspect of the Beast** for its melee attack power; **Deadly Aspects** (levels 51-55) adds its swing-speed chance to Aspect of the Beast.
 - **Improved Tracking** (levels 10-14) adds damage only against the creature type you are tracking: keep tracking set to what you are killing.
 

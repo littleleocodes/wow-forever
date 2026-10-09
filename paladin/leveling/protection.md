@@ -6,7 +6,7 @@
 
 > 🔬 These are your **raid talents** ([prot-tank](../raid/protection.md)), taken in the order that levels fastest: the fight lab raced three orders to them (own tree first: 31 s per kill; stats model's order: 33 s per kill; own tree last: 33 s per kill). A model of the beta, to check at launch.
 
-**Leveling as Protection or as Retribution?** This build takes 31 s per kill (level-weighted, 20-60), [Retribution](../leveling/retribution.md) 28 s: Protection is 11% slower. Level this way if you want to tank dungeons later on the way; otherwise level as Retribution and switch at 60 (a respec at a class trainer).
+**Leveling as Protection or as Retribution?** This build takes 31 s per kill (level-weighted, 20-60), [Retribution](../leveling/retribution.md) 28 s: Protection is 10% slower. Level this way if you want to tank dungeons later on the way; otherwise level as Retribution and switch at 60 (a respec at a class trainer).
 
 ## How to play
 

@@ -4,7 +4,7 @@
 
 **✅ Recommended** for leveling (the best mage spec here, or within 3% of it).
 
-**[Frost — Leveling](../research/leveling/builds/frost-open-leveling.md)** (18/2/31) — [open the talent tree](https://talentsforever.com/mage/60/2521050000003-02-1535003331000301201-6)
+**[Frost — Leveling](../research/leveling/builds/frost-open-leveling.md)** (18/2/31) — [open the talent tree](https://talentsforever.com/mage/60/2412150000003-02-1535003331000301201-6)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (leveling-frost), which stays below as the alternative. A model of the beta, to check at launch.
 
@@ -73,26 +73,27 @@ One point per level from 10, in this order:
 | 43-44 | Wand Specialization (Arcane) | 2 |
 | 45-47 | Arcane Focus (Arcane) | 3 |
 | 48-50 | Arcane Concentration (Arcane) | 3 |
-| 51 | Arcane Subtlety (Arcane) | 1 |
-| 52-53 | Arcane Concentration (Arcane) | 2 |
-| 54-55 | Arcane Focus (Arcane) | 2 |
-| 56-57 | Improved Channeling (Arcane) | 2 |
+| 51-52 | Arcane Subtlety (Arcane) | 2 |
+| 53-54 | Arcane Concentration (Arcane) | 2 |
+| 55 | Magic Absorption (Arcane) | 1 |
+| 56 | Arcane Focus (Arcane) | 1 |
+| 57 | Improved Channeling (Arcane) | 1 |
 | 58-60 | Arcane Meditation (Arcane) | 3 |
 
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
-| 20 | 27 |
+| 20 | 25 |
 | 30 | 31 |
-| 40 | 29 |
-| 50 | 24 |
-| 60 | 22 |
+| 40 | 32 |
+| 50 | 26 |
+| 60 | 24 |
 
 ## Other builds of this spec
 
-- [Frost (optimized)](../research/leveling/builds/opt-frost-leveling-leveling-st.md) (12/3/36, 26 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/mage/60/230205-03-0555003331001301231-6)
-- [Leveling — Frost](../research/leveling/builds/leveling-frost.md) (12/0/39, 26 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/mage/60/230205--0555003331011301251-6)
+- [Frost (optimized)](../research/leveling/builds/opt-frost-leveling-leveling-st.md) (12/3/36, 28 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/mage/60/230205-03-0555003331001301231-6)
+- [Leveling — Frost](../research/leveling/builds/leveling-frost.md) (12/0/39, 28 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/mage/60/230205--0555003331011301251-6)
 - [Frost (optimized)](../research/leveling/builds/opt-frost-aoe-leveling-aoe.md) (2/3/46) — [open the talent tree](https://talentsforever.com/mage/60/02-03-0555320331321331231-6)
 
 ---

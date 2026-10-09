@@ -95,7 +95,6 @@ One point per level from 10, in this order:
 
 - [Leveling — Shadow](../research/leveling/builds/leveling-shadow.md) (18/0/33, 26 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/priest/60/005003231301--535022001201310251-6)
 - [Shadow (optimized)](../research/leveling/builds/opt-shadow-dps-leveling-st.md) (7/11/33, 30 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/priest/60/005002-320501-551002501201300251-6)
-- [Shadow (optimized, solo at 60)](../research/leveling/builds/opt-shadow-dps-solo-60.md) (7/11/33) — [open the talent tree](https://talentsforever.com/priest/60/005002-320501-551002501201300251-6)
 - [Shadow (optimized, AoE pulls)](../research/leveling/builds/opt-shadow-dps-leveling-aoe.md) (17/3/31) — [open the talent tree](https://talentsforever.com/priest/60/024003201302-3-452022021211210231-6)
 
 ---

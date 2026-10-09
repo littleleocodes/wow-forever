@@ -108,7 +108,7 @@ Report: [fightlab/bm-leveling.md](fightlab/bm-leveling.md).
 
 ## melee-dps
 
-The melee hunter: mark and sting from range, then stand and fight: Counterattack after a parry, Mongoose Bite when a dodge or Expose Prey activates it, Strider Kick on cooldown, Raptor Strike on the next swing; Deterrence when low; Mend Pet for the pet.
+The melee hunter: Serpent Sting from range, then stand and fight beside the pet: Raptor Strike queued on the next swing whenever it is ready, Deterrence when low, Counterattack after a parry, Mongoose Bite when a dodge or Expose Prey activates it, Strider Kick on cooldown, Immolation Trap at your feet, then Summon Hawk and (with Expose Prey) Hunter's Mark in the free global cooldowns; Mend Pet for the pet.
 
 **Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): never cast Hunter's Mark; Immolation Trap only while the mob has more than 70% health. Together +3.4% time per kill saved for `leveling-melee` (level-weighted, a third seed of 3000 fights per level).
 
@@ -169,7 +169,7 @@ Report: [fightlab/melee-dps-opt.md](fightlab/melee-dps-opt.md).
 
 ## melee-dps
 
-The melee hunter: mark and sting from range, then stand and fight: Counterattack after a parry, Mongoose Bite when a dodge or Expose Prey activates it, Strider Kick on cooldown, Raptor Strike on the next swing; Deterrence when low; Mend Pet for the pet.
+The melee hunter: Serpent Sting from range, then stand and fight beside the pet: Raptor Strike queued on the next swing whenever it is ready, Deterrence when low, Counterattack after a parry, Mongoose Bite when a dodge or Expose Prey activates it, Strider Kick on cooldown, Immolation Trap at your feet, then Summon Hawk and (with Expose Prey) Hunter's Mark in the free global cooldowns; Mend Pet for the pet.
 
 **Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): never cast Hunter's Mark; Immolation Trap only while the mob has more than 70% health. Together +3.4% time per kill saved for `leveling-melee` (level-weighted, a third seed of 3000 fights per level).
 

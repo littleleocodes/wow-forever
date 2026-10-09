@@ -48,10 +48,10 @@ Fire levels with **Fireball** at range and **Fire Blast** up close, and borrows 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
 | 20 | 25 |
-| 30 | 31 |
-| 40 | 37 |
-| 50 | 33 |
-| 60 | 32 |
+| 30 | 32 |
+| 40 | 38 |
+| 50 | 34 |
+| 60 | 33 |
 
 ## Other builds of this spec
 

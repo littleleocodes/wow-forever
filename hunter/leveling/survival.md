@@ -8,16 +8,18 @@
 
 ## How to play
 
-**Before the fight:** Pet out, **Aspect of the Monkey** (**Aspect of the Beast** once you have it). **Hunter's Mark** and **Serpent Sting** from range, then walk in.
+**Not in this build:** **Summon Hawk** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
+
+**Before the fight:** Pet out, **Aspect of the Monkey** (**Aspect of the Beast** from level 30). **Serpent Sting** from range, then walk in while the pet holds the mob.
 
 **In the fight**, top to bottom:
 
-1. **Immolation Trap** at your feet while the mob has most of its health.
-2. **Mongoose Bite** when it lights up (after a dodge).
-3. **Counterattack** after you parry.
-4. **Strider Kick** on cooldown.
-5. **Raptor Strike** on every swing it is ready.
-6. Low on health: **Deterrence**; **Mend Pet** for the pet.
+1. **Raptor Strike** every time it is ready: it replaces your next swing and costs no global cooldown.
+2. **Mongoose Bite** when it lights up (after you dodge), **Counterattack** after you parry.
+3. **Strider Kick** on cooldown.
+4. **Immolation Trap** at your feet while the mob has more than 70% of its health.
+5. Low on health: **Deterrence**; **Mend Pet** for the pet.
+6. Skip **Hunter's Mark** and **Summon Hawk** while leveling: the fight lab measured both slower per kill.
 
 **Between fights:** Mend the pet, drink below a third of your mana, eat below two thirds of your health.
 
@@ -27,10 +29,10 @@ Melee Survival levels with the pet as the tank: you sting the mob from range, wa
 
 **Why it works**
 
-- **Serpent Sting** from range opens every fight and ticks for all of it: about a seventh of your damage at 60 in the fight lab. The page also lists **Hunter's Mark**, which **Expose Prey** needs, but the fight lab's tuned play skips the mark and measured about 3% faster kills without it.
+- **Serpent Sting** from range opens every fight and ticks for all of it: about a seventh of your damage at 60 in the fight lab. **Hunter's Mark** matters to a melee hunter only through **Expose Prey**, and even with **Expose Prey** working the fight lab measured the mark slightly slower per kill while leveling (about 0.5 to 1%), so skip it.
 - **Immolation Trap** goes at your feet as you reach the mob: traps work in combat in Forever but land where you stand. Only while the mob has more than 70% of its health, because the burn lasts 15 seconds; played that way the trap saved 4.6 to 6.3% time per kill at levels 40-60 in the fight lab.
 - **Mongoose Bite** lights up after you dodge (not the mob) or, with **Expose Prey**, after hits on a marked mob; **Counterattack** lights up after you parry. With the pet tanking both come rarely, under one cast a kill at 60, so press them whenever you see them.
-- **Strider Kick** on its 8-second cooldown and **Raptor Strike** whenever it is ready: about a tenth of your damage each. **Raptor Strike** replaces your next main-hand swing and costs no global cooldown, so it never competes with the other buttons.
+- **Raptor Strike** whenever it is ready and **Strider Kick** on its 8-second cooldown: about a tenth of your damage each. **Raptor Strike** replaces your next main-hand swing and costs no global cooldown, so queue it first; the fight lab lost about 1% per kill when it waited behind other buttons.
 - **Aspect of the Monkey** until level 30 (its dodges also light up **Mongoose Bite**), then **Aspect of the Beast**: melee attack power, and with **Deadly Aspects** a 10% chance per swing for 30% faster swings for 12 seconds.
 - **Deterrence** when you fall below 40% health while the mob still has some left: +25% dodge and parry for 10 seconds, which also lights up **Mongoose Bite** and **Counterattack**.
 
@@ -84,7 +86,6 @@ One point per level from 10, in this order:
 
 ## Other builds of this spec
 
-- [Survival (optimized, solo at 60)](../research/leveling/builds/opt-melee-dps-solo-60.md) (9/10/32) — [open the talent tree](https://talentsforever.com/hunter/60/50202-005005-540200031051220151-6)
 - [Survival (optimized, AoE pulls)](../research/leveling/builds/opt-bm-leveling-leveling-aoe.md) (20/0/31) — [open the talent tree](https://talentsforever.com/hunter/60/50202105041--543003031001022151-6)
 
 ---

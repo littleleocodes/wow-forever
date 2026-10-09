@@ -19,6 +19,7 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | [Frost — Raid (machine-learning search)](builds/frost-ml-raid.md) | 21/0/30 | DPS | — |
 | [Frostfire — Raid (machine-learning search)](builds/frostfire-ml-raid.md) | 4/31/16 | DPS | — |
 | [Frostfire — Fingers of Frost / Ice Lance (user build)](builds/frostfire-fingers-of-frost-raid.md) | 0/29/22 | DPS | — |
+| [Arcane-Frost — Raid (open talent search)](builds/arcane-frost-open-raid.md) | 28/0/23 | DPS | — |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
@@ -40,18 +41,19 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`frost-ml-raid`](builds/frost-ml-raid.md) | ours: hand draft | 21/0/30 | 605 | +0.0% | 684 | +0.0% | 0 s |
-| 2 | [`frost-fingers-of-frost-raid`](builds/frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 602 | -0.5% | 680 | -0.7% | 0 s |
-| 3 | [`opt-frost-raid-raid-dps`](builds/opt-frost-raid-raid-dps.md) | ours: optimizer | 22/0/29 | 599 | -0.9% | 680 | -0.7% | 1 s |
-| 4 | [`frost-arcane-power-raid`](builds/frost-arcane-power-raid.md) | ours: hand draft | 32/0/19 | 572 | -5.4% | 651 | -4.9% | 0 s |
-| 5 | *Frost DPS* | community simulator | - | 561 | -7.2% | 636 | -7.0% | 0 s |
-| 6 | [`opt-frost-raid-raid-dps-extwc`](builds/opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 1/13/37 | 550 | -9.1% | 650 | -5.0% | 7 s |
-| 7 | [`frost-winters-chill-raid`](builds/frost-winters-chill-raid.md) | ours: hand draft | 21/0/30 | 547 | -9.5% | 619 | -9.5% | 0 s |
-| 8 | *Frost 14/0/37* | community simulator | - | 546 | -9.7% | 646 | -5.6% | 8 s |
-| 9 | *Arcane 35/0/16* | community simulator | - | 490 | -18.9% | 557 | -18.7% | 0 s |
-| 10 | *Arcane DPS* | community simulator | - | 422 | -30.2% | 475 | -30.5% | 0 s |
-| 11 | *Fire 0/35/16* | community simulator | - | 392 | -35.3% | 446 | -34.8% | 0 s |
-| 12 | *Fire DPS* | community simulator | - | 329 | -45.7% | 368 | -46.2% | 0 s |
+| 1 | [`frost-ml-raid`](builds/frost-ml-raid.md) | ours: hand draft | 21/0/30 | 604 | +0.0% | 684 | -1.1% | 0 s |
+| 2 | [`frost-fingers-of-frost-raid`](builds/frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 601 | -0.5% | 680 | -1.8% | 0 s |
+| 3 | [`opt-frost-raid-raid-dps`](builds/opt-frost-raid-raid-dps.md) | ours: optimizer | 22/0/29 | 600 | -0.8% | 680 | -1.8% | 1 s |
+| 4 | [`arcane-frost-open-raid`](builds/arcane-frost-open-raid.md) | ours: hand draft | 28/0/23 | 592 | -2.0% | 692 | +0.0% | 5 s |
+| 5 | [`frost-arcane-power-raid`](builds/frost-arcane-power-raid.md) | ours: hand draft | 32/0/19 | 573 | -5.3% | 651 | -6.0% | 0 s |
+| 6 | *Frost DPS* | community simulator | - | 561 | -7.2% | 636 | -8.1% | 0 s |
+| 7 | [`opt-frost-raid-raid-dps-extwc`](builds/opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 1/13/37 | 550 | -9.0% | 650 | -6.0% | 7 s |
+| 8 | [`frost-winters-chill-raid`](builds/frost-winters-chill-raid.md) | ours: hand draft | 21/0/30 | 547 | -9.5% | 619 | -10.6% | 0 s |
+| 9 | *Frost 14/0/37* | community simulator | - | 546 | -9.8% | 646 | -6.7% | 8 s |
+| 10 | *Arcane 35/0/16* | community simulator | - | 490 | -18.9% | 557 | -19.6% | 0 s |
+| 11 | *Arcane DPS* | community simulator | - | 423 | -30.0% | 475 | -31.3% | 0 s |
+| 12 | *Fire 0/35/16* | community simulator | - | 392 | -35.2% | 446 | -35.6% | 0 s |
+| 13 | *Fire DPS* | community simulator | - | 329 | -45.6% | 368 | -46.8% | 0 s |
 
 **fire-raid**
 
@@ -102,24 +104,24 @@ The spells new in Forever, what the simulators measured them doing, and the buil
 
 | Spell | Tree | Level | Cooldown | What it does (beta tooltip) | Raid: the best raced build casting it (training dummy) | Rotation search: kept changes naming it | Leveling at the fight lab's top level | Note |
 |---|---|---|---|---|---|---|---|---|
-| Arcane Blast | Arcane | 60 | - | Blasts the target with energy, dealing 364 to 424 Arcane damage. | 39% of the damage, 12.8 casts/min: [`arcane-blast-raid`](builds/arcane-blast-raid.md) (arcane-dps) | arcane-dps (raid): only with 3s or more of the fight left: cast Arcane Blast (+0.2%) | not cast |  |
+| Arcane Blast | Arcane | 60 | - | Blasts the target with energy, dealing 364 to 424 Arcane damage. | 1% of the damage, 0.2 casts/min: [`arcane-frost-open-raid`](builds/arcane-frost-open-raid.md) (frost-raid) | frost-raid (training dummy): insert at the end: cast Arcane Blast (+0.2%); arcane-dps (raid): only with 3s or more of the fight left: cast Arcane Blast (+0.2%) | not cast |  |
 | Teleport: Dalaran | Arcane | 50 | - | Teleports the caster to Dalaran. | not cast by any raced build | - | not cast | Travel. |
-| Frostfire Bolt | Fire | 60 | - | Launches a bolt of frostfire at the enemy, causing 270 to 314 Frostfire damage, slowing movement speed by 40% and causing an additional 57 Frostfire… | 39% of the damage, 9.2 casts/min: [`frostfire-raid`](builds/frostfire-raid.md) (frostfire-raid) | frostfire-raid (training dummy): only with 6s or more of the fight left: if mana % ≥ 10%: cast Frostfire Bolt (+1.1%); frostfire-raid (training dummy): only above 25% mana: if mana % ≥ 10% and time left in the fight ≥ 6s: cast Frostfire Bolt (+0.7%) | 16% of the damage, 1.5 casts a kill: `opt-frost-leveling-leveling-st` at 60 (frostfire-leveling) | The community simulator ships it as a stub; this project implements it (raidsim/patches/forever/sim/mage/frostfire_bolt.go), so its numbers are our model. The fight lab plays it from level 40 (fightlab/mage.py decide_frostfire). |
+| Frostfire Bolt | Fire | 60 | - | Launches a bolt of frostfire at the enemy, causing 270 to 314 Frostfire damage, slowing movement speed by 40% and causing an additional 57 Frostfire… | 39% of the damage, 9.2 casts/min: [`frostfire-raid`](builds/frostfire-raid.md) (frostfire-raid) | frostfire-raid (raid): rank 2 below 30% mana, above: if mana % ≥ 10%: cast Frostfire Bolt (+1.4%); frostfire-raid (training dummy): only with 6s or more of the fight left: if mana % ≥ 10%: cast Frostfire Bolt (+1.1%); frostfire-raid (raid): drop 'mana % ≥ 10%' from the condition: if mana % ≥ 10% and mana % < 30%: cast Frostfire B (+0.9%) | 16% of the damage, 1.5 casts a kill: `opt-frost-leveling-leveling-st` at 60 (frostfire-leveling) | The community simulator ships it as a stub; this project implements it (raidsim/patches/forever/sim/mage/frostfire_bolt.go), so its numbers are our model. The fight lab plays it from level 40 (fightlab/mage.py decide_frostfire). |
 | Ice Lance | Frost | 56 | - | Deals 136 to 160 Frost damage to an enemy target. | 19% of the damage, 4.6 casts/min: [`frost-ml-raid`](builds/frost-ml-raid.md) (frost-raid) | frost-raid (training dummy): move down below 'if Missile Barrage is known and Missile Barrage is up: cast Arcane Missil (+0.2%); frostfire-raid (raid): insert at the top: if Fingers of Frost is up: cast Ice Lance (+0.2%); frost-raid (raid): move down below 'if Missile Barrage is known and Missile Barrage is up: cast Arcane Missil (+0.2%) | 69% of the damage, 2.5 casts a kill: `opt-frost-leveling-leveling-st` at 60 (frost-leveling) | Frost talent; the simulator's Frost rotation casts it on Fingers of Frost. |
 
 ### Builds searched around them
 
 | Idea | Build | Split | Dummy DPS | Raid DPS | Against the class's best | Talent search | Leveling |
 |---|---|---|---|---|---|---|---|
-| Frostfire Bolt, which counts as Fire and Frost, as the filler of a Fire/Frost hybrid (the build asked for by name) | [`frostfire-raid`](builds/frostfire-raid.md) | 4/31/16 | 476 | 628 | -21.3% on the dummy; -9.5% in a raid | from `frostfire-raid`, 1 move | the Frost leveling build playing Frostfire Bolt instead of Frostbolt from 40, against itself playing Frostbolt (fight lab `frostfire-leveling`): 40: 35.4 s a kill against 29.2 (+21%); 50: 29.8 s a kill against 24.5 (+22%); 60: 27.4 s a kill against 23.1 (+19%) |
-| Arcane Blast, a Forever Arcane talent that stacks its own damage and cost, as a build of its own | [`arcane-blast-raid`](builds/arcane-blast-raid.md) | 35/11/5 | 569 | 694 | -5.9% on the dummy; the best in a raid | from `sim preset: Arcane DPS`, 2 moves | - |
-| Arcane Power Frost with Missile Barrage (Forever talent): Frostbolt, and Arcane Missiles on its procs, which the simulator's Frost rotation never cast | [`frost-arcane-power-raid`](builds/frost-arcane-power-raid.md) | 32/0/19 | 572 | 651 | -5.4% on the dummy; -6.3% in a raid | from `frost-arcane-power-raid`, 2 moves | - |
+| Frostfire Bolt, which counts as Fire and Frost, as the filler of a Fire/Frost hybrid (the build asked for by name) | [`frostfire-raid`](builds/frostfire-raid.md) | 4/31/16 | 476 | 628 | -21.2% on the dummy; -9.5% in a raid | from `frostfire-raid`, 1 move | the Frost leveling build playing Frostfire Bolt instead of Frostbolt from 40, against itself playing Frostbolt (fight lab `frostfire-leveling`): 40: 35.3 s a kill against 29.2 (+21%); 50: 29.7 s a kill against 24.5 (+21%); 60: 27.4 s a kill against 23.1 (+19%) |
+| Arcane Blast, a Forever Arcane talent that stacks its own damage and cost, as a build of its own | [`arcane-blast-raid`](builds/arcane-blast-raid.md) | 35/11/5 | 569 | 694 | -5.8% on the dummy; the best in a raid | from `sim preset: Arcane DPS`, 2 moves | - |
+| Arcane Power Frost with Missile Barrage (Forever talent): Frostbolt, and Arcane Missiles on its procs, which the simulator's Frost rotation never cast | [`frost-arcane-power-raid`](builds/frost-arcane-power-raid.md) | 32/0/19 | 573 | 651 | -5.3% on the dummy; -6.3% in a raid | from `frost-arcane-power-raid`, 2 moves | - |
 
-The class's best raid DPS build on the training dummy: [`frost-ml-raid`](builds/frost-ml-raid.md) (frost-raid), 605 DPS; in a raid: [`arcane-blast-raid`](builds/arcane-blast-raid.md) (arcane-dps), 694 DPS.
+The class's best raid DPS build on the training dummy: [`frost-ml-raid`](builds/frost-ml-raid.md) (frost-raid), 604 DPS; in a raid: [`arcane-blast-raid`](builds/arcane-blast-raid.md) (arcane-dps), 694 DPS.
 
 ## Raid sim (community simulator, level 60)
 
-[`raidsim/`](raidsim/) runs every raid build through the ElliotWood/Forever simulator (the community's wowsims fork for the beta; commit 2ce8265) with that simulator's own gear preset and rotation, 3000 iterations per build, next to the simulator's preset talent builds. **DPS specs are ranked on a boss-level training dummy with only your own buffs** (the class's self-buffs and the spec's standard consumables; no raid or party buffs, no debuffs from others): raw personal DPS decides the raid DPS builds. Tanks are measured in the raid setting (full buffs, boss melee). Same gear and rotation for every build, so only the talents differ. OOM s = seconds per fight out of mana: on the dummy a spec that lives on Blessing of Wisdom and Mana Spring in a raid runs dry, and its mana talents weigh more there than in a raid. The ranking of our builds against the simulator's own is the DPS ranking section above; this section shows the scorer's view and the other settings. Section generated by `_reference/data/render_raidsim_sections.py` on 2026-10-09 — do not hand-edit.
+[`raidsim/`](raidsim/) runs every raid build through the ElliotWood/Forever simulator (the community's wowsims fork for the beta; commit 2ce8265) with that simulator's own gear preset and rotation, 3000 iterations per build, next to the simulator's preset talent builds. **DPS specs are ranked on a boss-level training dummy with only your own buffs** (the class's self-buffs and the spec's standard consumables; no raid or party buffs, no debuffs from others): the races, calibrations and the adopt step run there, while the pages rank raid builds by DPS in a full raid (2026-10-02). Tanks are measured in the raid setting (full buffs, boss melee). Same gear and rotation for every build, so only the talents differ. OOM s = seconds per fight out of mana: on the dummy a spec that lives on Blessing of Wisdom and Mana Spring in a raid runs dry, and its mana talents weigh more there than in a raid. The ranking of our builds against the simulator's own is the DPS ranking section above; this section shows the scorer's view and the other settings. Section generated by `_reference/data/render_raidsim_sections.py` on 2026-10-09 — do not hand-edit.
 
 | Spec model | Setting | Build | Split | DPS | vs best | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
@@ -134,18 +136,19 @@ The class's best raid DPS build on the training dummy: [`frost-ml-raid`](builds/
 | `fire-raid` | dummy | sim preset: Arcane 35/0/16 | - | 292 | -44.3% | 2 | - |
 | `fire-raid` | dummy | sim preset: Frost 14/0/37 | - | 277 | -47.2% | 0 | - |
 | `fire-raid` | dummy | sim preset: Frost DPS | - | 273 | -48.0% | 0 | - |
-| `frost-raid` | dummy | `frost-ml-raid` | 21/0/30 | 605 | +0.0% | 0 | +77% |
-| `frost-raid` | dummy | `frost-fingers-of-frost-raid` | 22/0/29 | 602 | -0.5% | 0 | +75% |
-| `frost-raid` | dummy | `opt-frost-raid-raid-dps` | 22/0/29 | 599 | -0.9% | 1 | +74% |
-| `frost-raid` | dummy | `frost-arcane-power-raid` | 32/0/19 | 572 | -5.4% | 0 | +68% |
+| `frost-raid` | dummy | `frost-ml-raid` | 21/0/30 | 604 | +0.0% | 0 | +77% |
+| `frost-raid` | dummy | `frost-fingers-of-frost-raid` | 22/0/29 | 601 | -0.5% | 0 | +75% |
+| `frost-raid` | dummy | `opt-frost-raid-raid-dps` | 22/0/29 | 600 | -0.8% | 1 | +74% |
+| `frost-raid` | dummy | `arcane-frost-open-raid` | 28/0/23 | 592 | -2.0% | 5 | +68% |
+| `frost-raid` | dummy | `frost-arcane-power-raid` | 32/0/19 | 573 | -5.3% | 0 | +68% |
 | `frost-raid` | dummy | sim preset: Frost DPS | - | 561 | -7.2% | 0 | - |
-| `frost-raid` | dummy | `opt-frost-raid-raid-dps-extwc` | 1/13/37 | 550 | -9.1% | 7 | +67% |
+| `frost-raid` | dummy | `opt-frost-raid-raid-dps-extwc` | 1/13/37 | 550 | -9.0% | 7 | +67% |
 | `frost-raid` | dummy | `frost-winters-chill-raid` | 21/0/30 | 547 | -9.5% | 0 | +65% |
-| `frost-raid` | dummy | sim preset: Frost 14/0/37 | - | 546 | -9.7% | 8 | - |
+| `frost-raid` | dummy | sim preset: Frost 14/0/37 | - | 546 | -9.8% | 8 | - |
 | `frost-raid` | dummy | sim preset: Arcane 35/0/16 | - | 490 | -18.9% | 0 | - |
-| `frost-raid` | dummy | sim preset: Arcane DPS | - | 422 | -30.2% | 0 | - |
-| `frost-raid` | dummy | sim preset: Fire 0/35/16 | - | 392 | -35.3% | 0 | - |
-| `frost-raid` | dummy | sim preset: Fire DPS | - | 329 | -45.7% | 0 | - |
+| `frost-raid` | dummy | sim preset: Arcane DPS | - | 423 | -30.0% | 0 | - |
+| `frost-raid` | dummy | sim preset: Fire 0/35/16 | - | 392 | -35.2% | 0 | - |
+| `frost-raid` | dummy | sim preset: Fire DPS | - | 329 | -45.6% | 0 | - |
 | `frostfire-raid` | dummy | `frostfire-raid` | 4/31/16 | 476 | +0.0% | 0 | - |
 | `frostfire-raid` | dummy | `frostfire-fingers-of-frost-raid` | 0/29/22 | 476 | -0.0% | 0 | - |
 | `frostfire-raid` | dummy | `frostfire-ml-raid` | 4/31/16 | 439 | -7.7% | 1 | - |
@@ -159,7 +162,7 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 | `fire-raid` | 5.9-12.7% | 0.16 / 0.90 | 0.8 | Arcane Concentration 4.5%, Master of Elements 3.8%, Arcane Meditation 3.0% |
 | `frost-raid` | 0.0-4.8% | 0.06 / 0.90 | 1.3 | Arcane Meditation 2.2%, Frost Channeling 1.6%, Arcane Concentration 1.4%, Master of Elements 0.3% |
 
-**DPS by environment** ([reports](raidsim/)): the same builds on the boss-level training dummy with your own buffs (the ranking above), on an in-game style level-60 dummy (never dies, own buffs), in a full raid (phase-1 gear, every raid buff and debuff minus the one this spec brings, raid consumables) and at the theoretical maximum (best gear preset, everything on, 120 s and 60 s). A build that wins on the dummy but not in the raid column wins on its own buffs only. `opt-<spec>-parse` is the parse build: personal DPS only, the raid brings every buff. Simulator numbers, not measurements.
+**DPS by environment** ([reports](raidsim/)): the same builds on the boss-level training dummy with your own buffs (the ranking above), on an in-game style level-60 dummy (never dies, own buffs), in a full raid (phase-1 gear, every raid buff and debuff minus the one this spec brings, raid consumables) and at the theoretical maximum (best gear preset, everything on, 180 s and 60 s). A build that wins on the dummy but not in the raid column wins on its own buffs only. `opt-<spec>-parse` is the parse build: personal DPS only, the raid brings every buff. Simulator numbers, not measurements.
 
 | Spec model | Build | Split | Dummy | Dummy 60 | Raid | Maximum | Max 60 s |
 |---|---|---|---|---|---|---|---|
@@ -175,17 +178,18 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 | `fire-raid` | sim preset: Arcane 35/0/16 | - | 292 | 340 | 373 | 373 | 370 |
 | `fire-raid` | sim preset: Frost 14/0/37 | - | 277 | 321 | 357 | 357 | 353 |
 | `fire-raid` | sim preset: Frost DPS | - | 273 | 317 | 356 | 356 | 353 |
-| `frost-raid` | `frost-ml-raid` | 21/0/30 | 605 | 673 | 684 | 684 | 694 |
-| `frost-raid` | `frost-fingers-of-frost-raid` | 22/0/29 | 602 | 670 | 680 | 680 | 690 |
-| `frost-raid` | `opt-frost-raid-raid-dps` | 22/0/29 | 599 | 668 | 680 | 680 | 690 |
-| `frost-raid` | `frost-arcane-power-raid` | 32/0/19 | 572 | 636 | 651 | 651 | 698 |
+| `frost-raid` | `frost-ml-raid` | 21/0/30 | 604 | 672 | 684 | 684 | 694 |
+| `frost-raid` | `frost-fingers-of-frost-raid` | 22/0/29 | 601 | 670 | 680 | 680 | 690 |
+| `frost-raid` | `opt-frost-raid-raid-dps` | 22/0/29 | 600 | 670 | 680 | 680 | 690 |
+| `frost-raid` | `arcane-frost-open-raid` | 28/0/23 | 592 | 673 | 692 | 692 | 698 |
+| `frost-raid` | `frost-arcane-power-raid` | 32/0/19 | 573 | 636 | 651 | 651 | 698 |
 | `frost-raid` | sim preset: Frost DPS | - | 561 | 616 | 636 | 636 | 642 |
-| `frost-raid` | `opt-frost-raid-parse` | 21/0/30 | 556 | 610 | 648 | 648 | 663 |
-| `frost-raid` | `opt-frost-raid-raid-dps-extwc` | 1/13/37 | 550 | 601 | 650 | 650 | 655 |
-| `frost-raid` | `frost-winters-chill-raid` | 21/0/30 | 547 | 607 | 619 | 619 | 630 |
-| `frost-raid` | sim preset: Frost 14/0/37 | - | 546 | 597 | 646 | 646 | 650 |
+| `frost-raid` | `opt-frost-raid-parse` | 21/0/30 | 559 | 613 | 648 | 648 | 663 |
+| `frost-raid` | `opt-frost-raid-raid-dps-extwc` | 1/13/37 | 550 | 602 | 650 | 650 | 655 |
+| `frost-raid` | `frost-winters-chill-raid` | 21/0/30 | 547 | 606 | 619 | 619 | 630 |
+| `frost-raid` | sim preset: Frost 14/0/37 | - | 546 | 596 | 646 | 646 | 650 |
 | `frost-raid` | sim preset: Arcane 35/0/16 | - | 490 | 546 | 557 | 557 | 601 |
-| `frost-raid` | sim preset: Arcane DPS | - | 422 | 497 | 475 | 475 | 513 |
+| `frost-raid` | sim preset: Arcane DPS | - | 423 | 497 | 475 | 475 | 513 |
 | `frost-raid` | sim preset: Fire 0/35/16 | - | 392 | 426 | 446 | 446 | 462 |
 | `frost-raid` | sim preset: Fire DPS | - | 329 | 378 | 368 | 368 | 383 |
 | `frostfire-raid` | `frostfire-raid` | 4/31/16 | 476 | 567 | 628 | 628 | 680 |

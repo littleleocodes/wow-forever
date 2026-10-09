@@ -4,17 +4,18 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `frost-ml-raid` | 21/0/30 | 605 | 673 | 684 | 684 | 694 |
-| `frost-fingers-of-frost-raid` | 22/0/29 | 602 | 670 | 680 | 680 | 690 |
-| `opt-frost-raid-raid-dps` | 22/0/29 | 599 | 668 | 680 | 680 | 690 |
-| `frost-arcane-power-raid` | 32/0/19 | 572 | 636 | 651 | 651 | 698 |
+| `frost-ml-raid` | 21/0/30 | 604 | 672 | 684 | 684 | 694 |
+| `frost-fingers-of-frost-raid` | 22/0/29 | 601 | 670 | 680 | 680 | 690 |
+| `opt-frost-raid-raid-dps` | 22/0/29 | 600 | 670 | 680 | 680 | 690 |
+| `arcane-frost-open-raid` | 28/0/23 | 592 | 673 | 692 | 692 | 698 |
+| `frost-arcane-power-raid` | 32/0/19 | 573 | 636 | 651 | 651 | 698 |
 | sim preset: Frost DPS | - | 561 | 616 | 636 | 636 | 642 |
-| `opt-frost-raid-parse` | 21/0/30 | 556 | 610 | 648 | 648 | 663 |
-| `opt-frost-raid-raid-dps-extwc` | 1/13/37 | 550 | 601 | 650 | 650 | 655 |
-| `frost-winters-chill-raid` | 21/0/30 | 547 | 607 | 619 | 619 | 630 |
-| sim preset: Frost 14/0/37 | - | 546 | 597 | 646 | 646 | 650 |
+| `opt-frost-raid-parse` | 21/0/30 | 559 | 613 | 648 | 648 | 663 |
+| `opt-frost-raid-raid-dps-extwc` | 1/13/37 | 550 | 602 | 650 | 650 | 655 |
+| `frost-winters-chill-raid` | 21/0/30 | 547 | 606 | 619 | 619 | 630 |
+| sim preset: Frost 14/0/37 | - | 546 | 596 | 646 | 646 | 650 |
 | sim preset: Arcane 35/0/16 | - | 490 | 546 | 557 | 557 | 601 |
-| sim preset: Arcane DPS | - | 422 | 497 | 475 | 475 | 513 |
+| sim preset: Arcane DPS | - | 423 | 497 | 475 | 475 | 513 |
 | sim preset: Fire 0/35/16 | - | 392 | 426 | 446 | 446 | 462 |
 | sim preset: Fire DPS | - | 329 | 378 | 368 | 368 | 383 |
 
@@ -30,17 +31,18 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
-| `frost-ml-raid` | 605 | +0% | +0% | +2% | +10% | +1% | 684 |
-| `frost-fingers-of-frost-raid` | 602 | -0% | +0% | +2% | +10% | +1% | 680 |
-| `opt-frost-raid-raid-dps` | 599 | +0% | +0% | +2% | +10% | +1% | 680 |
-| `frost-arcane-power-raid` | 572 | -0% | +0% | +3% | +10% | +1% | 651 |
+| `frost-ml-raid` | 604 | +0% | +0% | +2% | +10% | +1% | 684 |
+| `frost-fingers-of-frost-raid` | 601 | +0% | +0% | +2% | +10% | +1% | 680 |
+| `opt-frost-raid-raid-dps` | 600 | +0% | +0% | +2% | +10% | +1% | 680 |
+| `arcane-frost-open-raid` | 592 | +3% | +0% | +2% | +11% | +1% | 692 |
+| `frost-arcane-power-raid` | 573 | -0% | +0% | +3% | +10% | +1% | 651 |
 | sim preset: Frost DPS | 561 | +0% | +0% | +2% | +10% | +1% | 636 |
-| `opt-frost-raid-parse` | 556 | +3% | +0% | +2% | +11% | +1% | 648 |
-| `opt-frost-raid-raid-dps-extwc` | 550 | +5% | +0% | +2% | +11% | +1% | 650 |
+| `opt-frost-raid-parse` | 559 | +3% | +0% | +2% | +10% | +1% | 648 |
+| `opt-frost-raid-raid-dps-extwc` | 550 | +4% | +0% | +2% | +11% | +1% | 650 |
 | `frost-winters-chill-raid` | 547 | -0% | +0% | +2% | +10% | +1% | 619 |
 | sim preset: Frost 14/0/37 | 546 | +4% | +0% | +3% | +11% | +1% | 646 |
 | sim preset: Arcane 35/0/16 | 490 | -0% | +0% | +3% | +10% | +1% | 557 |
-| sim preset: Arcane DPS | 422 | +0% | +0% | +2% | +10% | +1% | 475 |
+| sim preset: Arcane DPS | 423 | +0% | +0% | +1% | +10% | +1% | 475 |
 | sim preset: Fire 0/35/16 | 392 | +0% | +0% | +3% | +10% | +1% | 446 |
 | sim preset: Fire DPS | 329 | +0% | +0% | +1% | +10% | +1% | 368 |
 
@@ -52,18 +54,19 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
-| `frost-ml-raid` | 614 | 611 | 605 | 599 | 587 |
-| `frost-fingers-of-frost-raid` | 612 | 608 | 602 | 598 | 585 |
-| `opt-frost-raid-raid-dps` | 612 | 608 | 599 | 589 | 567 |
-| `frost-arcane-power-raid` | 615 | 587 | 572 | 570 | 551 |
-| sim preset: Frost DPS | 566 | 568 | 561 | 548 | 538 |
-| `opt-frost-raid-parse` | 588 | 581 | 556 | 558 | 492 |
-| `opt-frost-raid-raid-dps-extwc` | 579 | 575 | 550 | 516 | 442 |
-| `frost-winters-chill-raid` | 556 | 554 | 547 | 550 | 537 |
-| sim preset: Frost 14/0/37 | 576 | 546 | 546 | 483 | 414 |
-| sim preset: Arcane 35/0/16 | 528 | 504 | 490 | 502 | 492 |
-| sim preset: Arcane DPS | 455 | 434 | 422 | 433 | 420 |
-| sim preset: Fire 0/35/16 | 406 | 398 | 392 | 373 | 362 |
+| `frost-ml-raid` | 612 | 611 | 604 | 598 | 587 |
+| `frost-fingers-of-frost-raid` | 612 | 609 | 601 | 596 | 585 |
+| `opt-frost-raid-raid-dps` | 613 | 609 | 600 | 582 | 566 |
+| `arcane-frost-open-raid` | 616 | 616 | 592 | 580 | 514 |
+| `frost-arcane-power-raid` | 616 | 588 | 573 | 565 | 551 |
+| sim preset: Frost DPS | 565 | 567 | 561 | 545 | 538 |
+| `opt-frost-raid-parse` | 587 | 580 | 559 | 554 | 491 |
+| `opt-frost-raid-raid-dps-extwc` | 577 | 575 | 550 | 516 | 442 |
+| `frost-winters-chill-raid` | 556 | 553 | 547 | 550 | 537 |
+| sim preset: Frost 14/0/37 | 575 | 546 | 546 | 484 | 414 |
+| sim preset: Arcane 35/0/16 | 528 | 503 | 490 | 502 | 492 |
+| sim preset: Arcane DPS | 457 | 435 | 423 | 434 | 421 |
+| sim preset: Fire 0/35/16 | 406 | 398 | 392 | 365 | 362 |
 | sim preset: Fire DPS | 342 | 334 | 329 | 324 | 317 |
 
 Gear presets: raid `mage-dps-p1.p1opt.gear.json`, maximum `mage-dps-p1.p1opt.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.

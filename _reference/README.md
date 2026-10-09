@@ -71,7 +71,7 @@ mage). Empty spec x mode slots are filled by `spec_builds.py` (marked ⚗ genera
 |---|---|---|---|---|
 | [Druid](../druid/README.md) | 7 | 52 talents | 13 hand drafts + 9 optimizer builds | [leveling](../druid/research/leveling/README.md) · [raid](../druid/research/raid/README.md) · [pvp](../druid/research/pvp/README.md) |
 | [Hunter](../hunter/README.md) | 5 | 50 talents | 26 hand drafts + 11 optimizer builds | [leveling](../hunter/research/leveling/README.md) · [raid](../hunter/research/raid/README.md) · [pvp](../hunter/research/pvp/README.md) |
-| [Mage](../mage/README.md) | 7 | 54 talents | 18 hand drafts + 8 optimizer builds | [leveling](../mage/research/leveling/README.md) · [raid](../mage/research/raid/README.md) · [pvp](../mage/research/pvp/README.md) |
+| [Mage](../mage/README.md) | 7 | 54 talents | 20 hand drafts + 8 optimizer builds | [leveling](../mage/research/leveling/README.md) · [raid](../mage/research/raid/README.md) · [pvp](../mage/research/pvp/README.md) |
 | [Paladin](../paladin/README.md) | 5 | 50 talents | 14 hand drafts + 7 optimizer builds | [leveling](../paladin/research/leveling/README.md) · [raid](../paladin/research/raid/README.md) · [pvp](../paladin/research/pvp/README.md) |
 | [Priest](../priest/README.md) | 4 | 53 talents | 12 hand drafts + 6 optimizer builds | [leveling](../priest/research/leveling/README.md) · [raid](../priest/research/raid/README.md) · [pvp](../priest/research/pvp/README.md) |
 | [Rogue](../rogue/README.md) | 5 | 53 talents | 16 hand drafts + 8 optimizer builds | [leveling](../rogue/research/leveling/README.md) · [raid](../rogue/research/raid/README.md) · [pvp](../rogue/research/pvp/README.md) |

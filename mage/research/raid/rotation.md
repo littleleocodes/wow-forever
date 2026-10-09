@@ -10,12 +10,15 @@ Base rotation (2026-09-28): the simulator's `frost.apl.json` plus Arcane Missile
 
 **Rotation search** (every change kept had to win on two random seeds and cost none of the tuning builds more than 0.1%):
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-02, 3 passes, the last 2026-10-08, 4 changes to the base rotation; third-seed check: frost-ml-raid 591 -> 604 DPS (+2.2%), sim preset: Frost DPS 551 -> 561 DPS (+1.7%), frost-arcane-power-raid 567 -> 572 DPS (+0.8%), frost-winters-chill-raid 544 -> 547 DPS (+0.6%), frost-fingers-of-frost-raid 588 -> 601 DPS (+2.3%), opt-frost-raid-raid-dps 580 -> 599 DPS (+3.3%), opt-frost-raid-raid-dps-extwc 545 -> 549 DPS (+0.7%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-02, 4 passes, the last 2026-10-09, 7 changes to the base rotation; third-seed check: open winner 576 -> 605 DPS (+5.1%), frost-ml-raid 591 -> 604 DPS (+2.2%), sim preset: Frost DPS 551 -> 561 DPS (+1.7%), frost-arcane-power-raid 567 -> 572 DPS (+0.8%), frost-winters-chill-raid 544 -> 547 DPS (+0.6%), frost-fingers-of-frost-raid 588 -> 602 DPS (+2.4%), opt-frost-raid-raid-dps 580 -> 600 DPS (+3.4%), opt-frost-raid-raid-dps-extwc 545 -> 549 DPS (+0.8%)):
   1. drop: if mana % < 20% and time left in the fight > 25s: cast Evocation (+0.3%, pass 1)
   2. move down below 'if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles': if Fingers of Frost is up: cast Ice Lance (+0.2%, pass 1)
   3. repair: insert before the filler: if mana % < 5% and time left in the fight > 25s: cast Evocation (every frost-raid build raced, 20,000 fights, seed 3: opt-frost-raid-raid-dps-extwc +6.6%, the others -0.02% to +0.00%) (+6.6%, pass 2)
   4. only with 3s or more of the fight left: cast Frostbolt + insert at the end: if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast (+0.6%, pass 3)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-02, 3 passes, the last 2026-10-09, 2 changes to the base rotation; third-seed check: frost-ml-raid 673 -> 683 DPS (+1.5%), sim preset: Frost DPS 631 -> 635 DPS (+0.7%), frost-arcane-power-raid 646 -> 650 DPS (+0.6%), frost-winters-chill-raid 616 -> 620 DPS (+0.6%), frost-fingers-of-frost-raid 669 -> 680 DPS (+1.7%), opt-frost-raid-raid-dps 669 -> 680 DPS (+1.7%), opt-frost-raid-raid-dps-extwc 645 -> 650 DPS (+0.7%)):
+  5. threshold 80% -> 60%: if mana % ≤ 80%: cast Mana Ruby (mana gem) (+0.2%, pass 4)
+  6. threshold 25s -> 50s: if mana % < 5% and time left in the fight > 25s: cast Evocation (+0.2%, pass 4)
+  7. insert at the end: cast Arcane Blast (+0.2%, pass 4)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-02, 4 passes, the last 2026-10-09, 2 changes to the base rotation; third-seed check: open winner 676 -> 693 DPS (+2.4%), frost-ml-raid 673 -> 683 DPS (+1.5%), sim preset: Frost DPS 631 -> 635 DPS (+0.7%), frost-arcane-power-raid 646 -> 650 DPS (+0.6%), frost-winters-chill-raid 616 -> 620 DPS (+0.6%), frost-fingers-of-frost-raid 669 -> 680 DPS (+1.7%), opt-frost-raid-raid-dps 669 -> 680 DPS (+1.7%), opt-frost-raid-raid-dps-extwc 645 -> 650 DPS (+0.7%)):
   1. move down below 'if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles': if Fingers of Frost is up: cast Ice Lance (+0.2%, pass 1)
   2. only with 3s or more of the fight left: cast Frostbolt + insert at the end: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.5%, pass 1)
 
@@ -31,45 +34,68 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`frost-ml-raid`](builds/frost-ml-raid.md) (ours: hand draft, 605 DPS), [`frost-fingers-of-frost-raid`](builds/frost-fingers-of-frost-raid.md) (ours: hand draft, 602 DPS), [`opt-frost-raid-raid-dps`](builds/opt-frost-raid-raid-dps.md) (ours: optimizer, 599 DPS)
+### [`frost-ml-raid`](builds/frost-ml-raid.md) (ours: hand draft, 604 DPS), [`frost-fingers-of-frost-raid`](builds/frost-fingers-of-frost-raid.md) (ours: hand draft, 601 DPS), [`opt-frost-raid-raid-dps`](builds/opt-frost-raid-raid-dps.md) (ours: optimizer, 600 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | [`frost-ml-raid`](builds/frost-ml-raid.md) casts/min | [`frost-fingers-of-frost-raid`](builds/frost-fingers-of-frost-raid.md) casts/min | [`opt-frost-raid-raid-dps`](builds/opt-frost-raid-raid-dps.md) casts/min |
 |---|---|---|---|---|
-| 1 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready | as ready | as ready |
+| 1 | if mana % ≤ 60%: cast Mana Ruby (mana gem) | as ready | as ready | as ready |
 | 2 | use every other cooldown when ready | as ready | as ready | as ready |
 | 3 | if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles | 3.3 | 3.3 | 3.3 |
 | 4 | if Fingers of Frost is up: cast Ice Lance | 4.6 | 4.6 | 4.6 |
 | 5 | if time left in the fight ≥ 3s: cast Frostbolt | 18.0 | 18.0 | 18.0 |
-| 6 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.2 | 0.3 | 0.2 |
+| 6 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.3 | 0.3 | 0.3 |
 
-Lines of the simulator's rotation these builds never cast: cast Evocation (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Evocation (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent).
 
 Damage by ability:
 
 | Ability | [`frost-ml-raid`](builds/frost-ml-raid.md) | [`frost-fingers-of-frost-raid`](builds/frost-fingers-of-frost-raid.md) | [`opt-frost-raid-raid-dps`](builds/opt-frost-raid-raid-dps.md) |
 |---|---|---|---|
-| Frostbolt | 62% | 62% | 62% |
+| Frostbolt | 63% | 62% | 62% |
 | Arcane Missiles | 18% | 19% | 19% |
-| Ice Lance | 19% | 18% | 19% |
+| Ice Lance | 19% | 19% | 19% |
 | Fire Blast | 0% | 0% | 0% |
 
-### [`frost-arcane-power-raid`](builds/frost-arcane-power-raid.md) (ours: hand draft, 572 DPS), [`frost-winters-chill-raid`](builds/frost-winters-chill-raid.md) (ours: hand draft, 547 DPS), *Arcane 35/0/16* (community simulator, 490 DPS), *Arcane DPS* (community simulator, 422 DPS)
+### [`arcane-frost-open-raid`](builds/arcane-frost-open-raid.md) (ours: hand draft, 592 DPS)
+
+| # | Priority (the first line whose condition holds is cast) | [`arcane-frost-open-raid`](builds/arcane-frost-open-raid.md) casts/min |
+|---|---|---|
+| 1 | if mana % ≤ 60%: cast Mana Ruby (mana gem) | as ready |
+| 2 | use every other cooldown when ready | as ready |
+| 3 | if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles | 3.2 |
+| 4 | if Fingers of Frost is up: cast Ice Lance | 4.3 |
+| 5 | if mana % < 5% and time left in the fight > 50s: cast Evocation | 0.1 |
+| 6 | if time left in the fight ≥ 3s: cast Frostbolt | 17.3 |
+| 7 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.2 |
+| 8 | cast Arcane Blast | 0.2 |
+
+Damage by ability:
+
+| Ability | [`arcane-frost-open-raid`](builds/arcane-frost-open-raid.md) |
+|---|---|
+| Frostbolt | 59% |
+| Arcane Missiles | 22% |
+| Ice Lance | 18% |
+| Arcane Blast | 1% |
+| Fire Blast | 0% |
+
+### [`frost-arcane-power-raid`](builds/frost-arcane-power-raid.md) (ours: hand draft, 573 DPS), [`frost-winters-chill-raid`](builds/frost-winters-chill-raid.md) (ours: hand draft, 547 DPS), *Arcane 35/0/16* (community simulator, 490 DPS), *Arcane DPS* (community simulator, 423 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | [`frost-arcane-power-raid`](builds/frost-arcane-power-raid.md) casts/min | [`frost-winters-chill-raid`](builds/frost-winters-chill-raid.md) casts/min | *Arcane 35/0/16* casts/min | *Arcane DPS* casts/min |
 |---|---|---|---|---|---|
-| 1 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready | as ready | as ready | as ready |
+| 1 | if mana % ≤ 60%: cast Mana Ruby (mana gem) | as ready | as ready | as ready | as ready |
 | 2 | use every other cooldown when ready | as ready | as ready | as ready | as ready |
 | 3 | if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles | 3.7 | 3.7 | 3.2 | 3.0 |
-| 4 | if time left in the fight ≥ 3s: cast Frostbolt | 20.4 | 20.4 | 17.5 | 17.6 |
+| 4 | if time left in the fight ≥ 3s: cast Frostbolt | 20.3 | 20.4 | 17.5 | 17.6 |
 | 5 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.3 | 0.3 | 0.3 | 0.3 |
 
-Lines of the simulator's rotation these builds never cast: cast Ice Lance (needs the Ice Lance talent); cast Evocation (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Ice Lance (needs the Ice Lance talent); cast Evocation (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent).
 
 Damage by ability:
 
 | Ability | [`frost-arcane-power-raid`](builds/frost-arcane-power-raid.md) | [`frost-winters-chill-raid`](builds/frost-winters-chill-raid.md) | *Arcane 35/0/16* | *Arcane DPS* |
 |---|---|---|---|---|
-| Frostbolt | 75% | 78% | 75% | 72% |
+| Frostbolt | 75% | 78% | 75% | 73% |
 | Arcane Missiles | 24% | 21% | 24% | 27% |
 | Fire Blast | 1% | 1% | 1% | 1% |
 | Ignite | 0% | 0% | 0% | 0% |
@@ -78,13 +104,13 @@ Damage by ability:
 
 | # | Priority (the first line whose condition holds is cast) | *Frost DPS* casts/min |
 |---|---|---|
-| 1 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
+| 1 | if mana % ≤ 60%: cast Mana Ruby (mana gem) | as ready |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if Fingers of Frost is up: cast Ice Lance | 5.4 |
+| 3 | if Fingers of Frost is up: cast Ice Lance | 5.3 |
 | 4 | if time left in the fight ≥ 3s: cast Frostbolt | 20.8 |
 | 5 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.3 |
 
-Lines of the simulator's rotation these builds never cast: cast Arcane Missiles, cast Evocation (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Arcane Missiles, cast Evocation (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent).
 
 Damage by ability:
 
@@ -98,14 +124,14 @@ Damage by ability:
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-frost-raid-raid-dps-extwc`](builds/opt-frost-raid-raid-dps-extwc.md) casts/min | *Frost 14/0/37* casts/min |
 |---|---|---|---|
-| 1 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready | as ready |
+| 1 | if mana % ≤ 60%: cast Mana Ruby (mana gem) | as ready | as ready |
 | 2 | use every other cooldown when ready | as ready | as ready |
 | 3 | if Fingers of Frost is up: cast Ice Lance | 5.1 | 5.1 |
-| 4 | if mana % < 5% and time left in the fight > 25s: cast Evocation | 0.3 | 0.3 |
+| 4 | if mana % < 5% and time left in the fight > 50s: cast Evocation | 0.3 | 0.3 |
 | 5 | if time left in the fight ≥ 3s: cast Frostbolt | 19.9 | 19.8 |
 | 6 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.3 | 0.3 |
 
-Lines of the simulator's rotation these builds never cast: cast Arcane Missiles (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Arcane Missiles (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent).
 
 Damage by ability:
 
@@ -119,12 +145,12 @@ Damage by ability:
 
 | # | Priority (the first line whose condition holds is cast) | *Fire 0/35/16* casts/min | *Fire DPS* casts/min |
 |---|---|---|---|
-| 1 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready | as ready |
+| 1 | if mana % ≤ 60%: cast Mana Ruby (mana gem) | as ready | as ready |
 | 2 | use every other cooldown when ready | as ready | as ready |
 | 3 | if time left in the fight ≥ 3s: cast Frostbolt | 20.0 | 20.0 |
 | 4 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.3 | 0.3 |
 
-Lines of the simulator's rotation these builds never cast: cast Arcane Missiles, cast Evocation (its condition never held in these fights); cast Ice Lance (needs the Ice Lance talent).
+Lines of the simulator's rotation these builds never cast: cast Arcane Missiles, cast Evocation (its condition never held in these fights); cast Ice Lance (needs the Ice Lance talent); cast Arcane Blast (needs the Arcane Blast talent).
 
 Damage by ability:
 
@@ -371,7 +397,7 @@ Frostfire Bolt mage (2026-09-28, new-builds survey): a Fire/Frost hybrid built o
   14. only above 25% mana: if mana % ≥ 10% and time left in the fight ≥ 6s: cast Frostfire Bolt (+0.7%, pass 5)
   15. move to the top: cast Fire Blast (+3.8%, pass 5)
   16. insert at the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+0.5%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 11 passes, the last 2026-10-09, 20 changes to the base rotation; third-seed check: frostfire-open-raid 671 -> 637 DPS (-5.1%), frostfire-raid 613 -> 629 DPS (+2.5%), frostfire-ml-raid 623 -> 593 DPS (-4.8%), frostfire-fingers-of-frost-raid 678 -> 664 DPS (-2.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 12 passes, the last 2026-10-09, 22 changes to the base rotation; third-seed check: frostfire-fingers-of-frost-raid 678 -> 679 DPS (+0.1%), frostfire-raid 613 -> 633 DPS (+3.2%), frostfire-ml-raid 623 -> 609 DPS (-2.3%)):
   1. insert at the top: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   2. threshold 110 -> 82.5: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   3. insert at the top: cast Berserking (+0.3%, pass 3)
@@ -392,6 +418,8 @@ Frostfire Bolt mage (2026-09-28, new-builds survey): a Fire/Frost hybrid built o
   18. threshold 7.5s -> 15s: if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 7.5s): cast Scorch + insert before the filler: cast Fireball (+0.2%, pass 8)
   19. drop: if mana % < 20% and time left in the fight > 50s: cast Evocation (+0.4%, pass 8)
   20. insert in the middle: cast Mana Citrine (+0.2%, pass 8)
+  21. rank 2 below 30% mana, above: if mana % ≥ 10%: cast Frostfire Bolt (+1.4%, pass 12)
+  22. drop 'mana % ≥ 10%' from the condition: if mana % ≥ 10% and mana % < 30%: cast Frostfire Bolt (+0.9%, pass 12)
 
 The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring change what mana is worth), top priority first:
 
@@ -402,10 +430,11 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 5. if mana % ≤ 80%: cast Mana Ruby (mana gem)
 6. cast Mana Citrine
 7. use every other cooldown when ready
-8. if mana % ≥ 10%: cast Frostfire Bolt
-9. if Missile Barrage is up: cast Arcane Missiles
-10. cast Fireball
-11. cast Scorch
+8. if mana % < 30%: cast Frostfire Bolt
+9. if mana % ≥ 10%: cast Frostfire Bolt
+10. if Missile Barrage is up: cast Arcane Missiles
+11. cast Fireball
+12. cast Scorch
 
 The tables below are the training-dummy rotation, filtered per build:
 

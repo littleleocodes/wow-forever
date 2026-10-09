@@ -10,17 +10,22 @@
 
 ## How to play
 
-**Before the fight:** Levels 10-19: Bear Form. From 20: Cat Form, then Prowl (stealth) up behind the mob.
+**Not in this build:** **Berserk** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
+
+**Before the fight:** Levels 10-19: **Bear Form**. From 20: **Cat Form**, then **Prowl** (stealth) up behind the mob.
 
 **In the fight**, top to bottom:
 
-1. Levels 10-19 (bear): **Enrage**, **Demoralizing Roar**, then **Maul** whenever you have the rage.
-2. From 20 (cat), open from Prowl with **Ravage** (**Pounce** before 32, **Claw** before that), then **Tiger's Fury**.
+1. Levels 10-19 (bear): **Enrage**, **Demoralizing Roar**, then **Maul** whenever you have the rage; **Bash** a mob that starts casting.
+2. From 20 (cat), open from **Prowl** with **Ravage** (from 32; **Shred** from 22, **Claw** before that), then Tiger's Fury (from 24).
 3. **Rake** once.
-4. **Claw** until you have 5 combo points.
-5. At 5 points: **Rip** on a mob with plenty of health, **Ferocious Bite** on one that is nearly dead.
+4. **Claw** to build combo points.
+5. **Ferocious Bite** (from 32) whenever it will kill the mob, at any number of points.
+6. **Rip** at 5 points on a mob above half its health. Before **Ferocious Bite** (levels 20-31): **Rip** at 2 points while the mob has more than 40% of its health.
+7. **Berserk** on the pull whenever it is ready.
+8. Under 30% health while the mob has more than a quarter of its health: leave **Cat Form**, cast **Regrowth**, then **Cat Form** again.
 
-**Between fights:** Low on health: leave Cat Form and cast **Regrowth** or **Rejuvenation**, then shift back. Drink when your mana is below a third.
+**Between fights:** Low on health: leave **Cat Form** and cast **Rejuvenation** and **Regrowth**, then shift back (only with the mana to shift back). Drink when your mana is below 15%: it only pays for shifts and heals.
 
 ## Why this rotation
 
@@ -29,7 +34,7 @@ You level as a cat with your healer's talents: the Feral Combat steps, about a f
 **Why it works**
 
 - Levels 10-19 are the bear steps (**Enrage**, **Demoralizing Roar**, **Maul**). Your first points, **Nature's Focus** and **Naturalist**, do little there beyond **Naturalist**'s 5% more damage.
-- From 20 the cat steps follow the Feral Combat page: open from **Prowl** (**Ravage** from 32, **Shred** from 22, **Claw** before), then **Rake**, **Claw** to 5 points, **Ferocious Bite** when it will kill and **Rip** only on a mob above half health. The mob faces you, so **Shred** is for the opener only.
+- From 20 the cat steps follow the Feral Combat page: open from **Prowl** (**Ravage** from 32, **Shred** from 22, **Claw** before), then **Rake**, **Claw** to 5 points, **Ferocious Bite** when it will kill and **Rip** on a mob above half health (before 32, **Rip** at 2 points while the mob has more than 40% of its health: 6-7% faster per kill for this build in the fight lab). The mob faces you, so **Shred** is for the opener only.
 - Few of your points add damage: **Naturalist** (+5%), **Genesis** (+5% to **Rake** and **Rip** ticks), **Nature's Majesty** (+4% critical strike chance) and **Heart of the Wild** (+10% Strength in **Cat Form**), all in by 31. Without **Ferocity**, **Claw** and **Rake** cost their full 45 and 40 energy.
 - The rest makes healing strong and cheap: **Reflection** keeps half your mana regeneration going while you cast, **Gift of Nature** and **Improved Rejuvenation** make the between-fight **Rejuvenation** and **Regrowth** heal more, and **Nature's Swiftness** (57) makes one **Healing Touch** instant when a fight goes wrong.
 

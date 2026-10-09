@@ -32,21 +32,21 @@
 
 ## Why this rotation
 
-A raid cat keeps **Rip** bleeding on the boss and spends the rest of its energy on **Shred** from behind. Tiger's Fury and **Berserk** go on cooldown, and **Faerie Fire** opens the fight.
+A raid cat keeps **Rip** bleeding on the boss, turns mana into energy with **Shifting Power**, and spends the rest on **Shred** from behind. Tiger's Fury and **Berserk** go on cooldown, and **Faerie Fire** opens the fight.
 
 **Why it works**
 
 - **Faerie Fire** takes 505 armor off the boss for 40 seconds, so your **Shred** and white hits land harder, and in **Cat Form** it costs nothing. Cast it on the pull. In a full raid the simulator assumes the raid keeps it up and casts it once a fight; if nobody else does, refresh it before it runs out.
-- **Rip** is your biggest damage source, close to 40%. Put it back up as soon as it falls off, at 4 or more combo points: its attack power bonus stops growing at 4 points (the simulator's model, as in Classic), so the fifth point adds only a flat 153 damage while the boss goes without a bleed. The simulator measured Rip at 4 or more about 1% better in a full raid than waiting for 5.
+- **Rip** does a large share of your damage (close to 40% on the training dummy). Put it back up as soon as it falls off, at 4 or more combo points: its attack power bonus stops growing at 4 points (the simulator's model, as in Classic), so the fifth point adds only a flat 153 damage while the boss goes without a bleed. The simulator measured Rip at 4 or more about 1% better in a full raid than waiting for 5.
 - **Shred** is the filler: 42 energy with **Shredding Attacks**, 1 combo point, 2 on a critical strike with **Blood Frenzy**, and 10% more damage from **Rend and Tear** while **Rip** bleeds. **Rip** lasts 12 seconds, about the time three Shreds take, and those Shreds bring about 4 combo points with their critical strikes. So when Rip falls off, you usually hold the points to put it straight back.
 - **Ferocious Bite** is not in the list: the simulator measured the rotation 1% better in a full raid without it, the energy going to **Shred** instead. With **Rip** up and 5 combo points, keep shredding; points beyond 5 are lost.
-- Tiger's Fury is the top line: it costs no energy and no combo points and adds 15% physical damage for 6 seconds every 30 seconds, about 7 times a fight, so press it the moment it is ready. The beta's trainer list no longer shows it; the simulator reads it from the client.
-- **Berserk** (3-minute cooldown) makes every **Shred** a critical strike for 15 seconds, each worth 2 combo points with **Blood Frenzy**, and **Natural Instinct** makes those crits hit harder. Press it on the pull: a 3-minute fight has room for one.
+- **Shifting Power** turns 55% of your base mana into 40 energy every 8 seconds with **Improved Shifting Power**: cast it whenever it is ready and your energy is 60 or less, so none of the 40 spills over your 100 cap. A raid's mana buffs pay for it, and in the simulator the builds that take it do 12-16% more damage in a full raid than the 9/31/11 build without it.
+- Tiger's Fury costs no energy and no combo points and adds 15% physical damage for 6 seconds every 30 seconds (about 7 times a fight; the beta's trainer list no longer shows it, the simulator reads it from the client), so it is the top line. **Berserk** (3-minute cooldown) makes every **Shred** a critical strike for 15 seconds, each worth 2 combo points with **Blood Frenzy**: press it on the pull.
 
 **Caveats**
 
 - **Shred** only works from behind. If the boss faces you, or you have to tank, build with **Claw** instead (110% weapon damage plus 126 for 45 energy, less with **Ferocity**).
-- If your build takes **Shifting Power** (after **Shredding Attacks**), cast it whenever it is ready and your energy is 60 or less: it turns 55% of your base mana into 40 energy, and at 60 or less none of it spills over your 100 cap. Its cooldown is 16 seconds, 8 with **Improved Shifting Power**. The full-raid rotation has that line, and in the simulator the builds that take it do 12-16% more damage in a full raid than the 9/31/11 build without it.
+- Without a raid's mana buffs (a dungeon group, or alone) each **Shifting Power** costs more than half your base mana and you run dry fast: keep the mana for a shift and a **Regrowth**. Solo, the fight lab found that drinking the mana back costs more time than the energy saves.
 - Powershifting is nearly gone in Forever: **Furor** keeps your energy through a shift, plus 10 a second out of form, instead of granting a flat 40, and leaving **Cat Form** ends Tiger's Fury. The rotation shifts out only with Clearcasting up and under 14 energy, about twice a fight, and the simulator found almost nothing in it: skip it if it costs you attention.
 - The bear builds under Other builds are tank builds: they play **Lacerate**, **Maul** and **Barkskin** in **Dire Bear Form**, not this list (the research rotation page has their priority).
 

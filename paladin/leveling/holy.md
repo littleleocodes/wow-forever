@@ -6,7 +6,7 @@
 
 > 🔬 These are your **raid talents** ([holy-raid-healer](../raid/holy.md)), taken in the order that levels fastest: the fight lab raced three orders to them (stats model's order: 35 s per kill; own tree last: 35 s per kill; own tree first: 37 s per kill). A model of the beta, to check at launch.
 
-**Leveling as Holy or as Retribution?** This build takes 35 s per kill (level-weighted, 20-60), [Retribution](../leveling/retribution.md) 28 s: Holy is 27% slower. The fastest order puts its first point into Holy at level 28: the damage talents come first. Level this way if you want to heal dungeons later on the way; otherwise level as Retribution and switch at 60 (a respec at a class trainer).
+**Leveling as Holy or as Retribution?** This build takes 35 s per kill (level-weighted, 20-60), [Retribution](../leveling/retribution.md) 28 s: Holy is 26% slower. The fastest order puts its first point into Holy at level 28: the damage talents come first. Level this way if you want to heal dungeons later on the way; otherwise level as Retribution and switch at 60 (a respec at a class trainer).
 
 ## How to play
 

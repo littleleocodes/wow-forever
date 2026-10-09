@@ -78,11 +78,11 @@ Forever's melee hunter for raids, built around traps: Survival's melee package (
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`survival-raid`](survival-raid.md) | ours: hand draft | 5/16/30 | 486 | +0.0% | 1028 | -2.1% | 9 s |
-| 2 | **[`melee-survival-raid`](melee-survival-raid.md)** | ours: hand draft | 5/11/35 | 464 | -4.6% | 1048 | -0.1% | 44 s |
-| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 463 | -4.7% | 1016 | -3.2% | 8 s |
-| 4 | [`beast-survival-open-raid`](beast-survival-open-raid.md) | ours: hand draft | 16/11/24 | 360 | -25.8% | 1049 | +0.0% | 126 s |
-| 5 | [`survival-ml-parse`](survival-ml-parse.md) | ours: parse build | 5/14/32 | 359 | -26.2% | 999 | -4.8% | 117 s |
+| 1 | [`survival-raid`](survival-raid.md) | ours: hand draft | 5/16/30 | 486 | +0.0% | 1027 | -2.7% | 9 s |
+| 2 | **[`melee-survival-raid`](melee-survival-raid.md)** | ours: hand draft | 5/11/35 | 464 | -4.6% | 1047 | -0.9% | 44 s |
+| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 463 | -4.7% | 1016 | -3.8% | 8 s |
+| 4 | [`beast-survival-open-raid`](beast-survival-open-raid.md) | ours: hand draft | 16/11/24 | 360 | -25.8% | 1056 | +0.0% | 126 s |
+| 5 | [`survival-ml-parse`](survival-ml-parse.md) | ours: parse build | 5/14/32 | 359 | -26.2% | 998 | -5.5% | 117 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -96,9 +96,11 @@ Forever's melee hunter for raids, built around traps: Survival's melee package (
   7. move to the top: cast Mongoose Bite (+0.2%, pass 4)
   8. move to the top: cast Aspect of the Beast (+0.2%, pass 4)
   9. move to the top: if auraIsInactive: cast Summon Hawk (+0.3%, pass 7)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 9 passes, the last 2026-10-09, 2 changes to the base rotation; third-seed check: survival-raid 749 -> 1027 DPS (+37.1%), melee-survival-raid 764 -> 1047 DPS (+37.0%), opt-melee-dps-raid-dps 764 -> 1017 DPS (+33.0%), survival-ml-parse 729 -> 998 DPS (+37.0%), beast-survival-open-raid 736 -> 1051 DPS (+42.7%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 10 passes, the last 2026-10-09, 4 changes to the base rotation; third-seed check: beast-survival-open-raid 736 -> 1057 DPS (+43.6%), melee-survival-raid 764 -> 1048 DPS (+37.1%), opt-melee-dps-raid-dps 764 -> 1017 DPS (+33.1%), survival-raid 749 -> 1028 DPS (+37.3%), survival-ml-parse 729 -> 999 DPS (+37.1%)):
   1. insert before the filler: cast Wing Clip (+10.3%, pass 1)
   2. spell probe: insert in the middle: if auraIsInactive: cast Summon Hawk (+15.0%, pass 2)
+  3. move down below 'cast Strider Kick': if auraIsInactive: cast Summon Hawk (+0.3%, pass 10)
+  4. move to the top: cast Raptor Strike (+0.3%, pass 10)
 
 Before the pull: at -3s: cast Hunter's Mark.
 

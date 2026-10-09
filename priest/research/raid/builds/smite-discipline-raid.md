@@ -100,7 +100,7 @@ A Smite damage build: Discipline to Penance and Power Infusion (Power in Light: 
   14. rank 4 below 15% mana, above: if not Shadow Word: Pain is on the target and time left in the fight ≥ 5: cast Shadow Word: Pain (+0.2%, pass 6)
   15. insert in the middle: if execute phase (E20): cast Shadow Word: Death (+1.0%, pass 7)
   16. threshold 1.25s -> 1.875s: if time left on Holy Fire < 1.25s: cast Holy Fire (+0.6%, pass 7)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-09, 26 changes to the base rotation; third-seed check: smite-open-raid 562 -> 583 DPS (+3.7%), sim preset: Smite 559 -> 580 DPS (+3.9%), smite-discipline-raid 561 -> 584 DPS (+4.2%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 10 passes, the last 2026-10-09, 26 changes to the base rotation; third-seed check: smite-discipline-raid 561 -> 584 DPS (+4.2%), sim preset: Smite 559 -> 580 DPS (+3.9%), smite-open-raid 562 -> 583 DPS (+3.7%)):
   1. rank 4 below 50% mana, above: if mana % ≥ 20%: cast Smite (+8.7%, pass 1)
   2. insert at the top: if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain (+2.1%, pass 1)
   3. always rank 2 instead of rank 4: if mana % ≥ 20% and mana % < 50%: cast Smite (+1.2%, pass 1)

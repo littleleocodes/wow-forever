@@ -6,7 +6,9 @@
 
 **✅ Recommended** for raid (the best mage spec here, or within 3% of it).
 
-**[Frost — Fingers of Frost / Ice Lance / Shatter](../research/raid/builds/frost-fingers-of-frost-raid.md)** (22/0/29) — [open the talent tree](https://talentsforever.com/mage/60/0530050030003111--055500031100030024-6)
+**[Arcane-Frost — Raid](../research/raid/builds/arcane-frost-open-raid.md)** (28/0/23) — [open the talent tree](https://talentsforever.com/mage/60/05520300310001053--05450003010003002-6)
+
+> 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (frost-fingers-of-frost-raid), which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to play
 
@@ -21,8 +23,6 @@
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
 - **Fire Blast**: in the last 3 seconds of the fight, when there is no time left for another **Frostbolt**
-- **Presence of Mind**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
-- Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
@@ -54,14 +54,14 @@ This hybrid plays exactly like the Frost page: **Frostbolt** as the filler, free
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 680 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 692 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
 | Pre-BiS | 712 | [22/0/29](https://talentsforever.com/mage/60/2512200130120102--055500030100031024-6) |
-| Phase 1 BiS | 735 | [22/0/29](https://talentsforever.com/mage/60/0502050030103102--055500030100031024-6) (ties this build) |
+| Phase 1 BiS | 735 | [22/0/29](https://talentsforever.com/mage/60/0502050030103102--055500030100031024-6) |
 
 *Gear-tier numbers searched on 2026-10-02, on an older simulator build than the rest of this page (before beta 70291 and the 2026-10-09 audit that took Atiesh out of the full raid): they run 3-7% high and can order the specs differently than the full-raid ranking. The searches are queued to run again.*
 
@@ -91,6 +91,7 @@ This hybrid plays exactly like the Frost page: **Frostbolt** as the filler, free
 
 ## Other builds of this spec
 
+- [Frost — Fingers of Frost / Ice Lance / Shatter](../research/raid/builds/frost-fingers-of-frost-raid.md) (22/0/29, 680 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/0530050030003111--055500031100030024-6)
 - [Arcane-Frost (optimized)](../research/raid/builds/opt-frost-raid-raid-dps.md) (22/0/29, 680 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/1502050030003111--055500030100031024-6)
 - [Frost — Arcane Power / Frostbolt](../research/raid/builds/frost-arcane-power-raid.md) (32/0/19, 651 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/055005003000311531--055500031-6)
 

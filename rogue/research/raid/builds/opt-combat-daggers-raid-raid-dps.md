@@ -86,7 +86,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
   4. threshold 3 -> 6: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor (+0.2%, pass 2)
   5. spell probe: insert in the middle: cast Mutilate (+15.6%, pass 4)
   6. threshold 6 -> 12: if time left on Expose Armor < 6 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor (+0.4%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-09, 4 changes to the base rotation; third-seed check: opt-combat-daggers-raid-raid-dps 687 -> 699 DPS (+1.7%), sim preset: Combat Dual-Wield 15/33/3 690 -> 704 DPS (+2.0%), combat-daggers-raid 699 -> 714 DPS (+2.2%), combat-ml-raid 703 -> 721 DPS (+2.5%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 7 passes, the last 2026-10-09, 4 changes to the base rotation; third-seed check: combat-ml-raid 718 -> 736 DPS (+2.5%), sim preset: Combat Dual-Wield 15/33/3 704 -> 719 DPS (+2.0%), combat-daggers-raid 713 -> 729 DPS (+2.1%), opt-combat-daggers-raid-raid-dps 702 -> 713 DPS (+1.7%)):
   1. insert at the top: if combo points ≥ 4 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate (+0.9%, pass 1)
   2. insert at the top: if combo points ≥ 4 and Slice and Dice is up: cast Cold Blood (+0.3%, pass 1)
   3. spell probe: insert before the filler: cast Mutilate (+9.9%, pass 4)

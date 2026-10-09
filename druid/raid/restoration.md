@@ -19,10 +19,10 @@ Keep **Rejuvenation** on the tank and heal it with **Healing Touch** at the rank
 
 **Caveats**
 
-- Mana runs out before cast time does: in the lab's five-minute fight the build spends about 15 seconds out of mana, and **Reflection** (half your mana regeneration keeps going while you cast) is worth more than any other talent there. Drink a mana potion once you are 20% down after the first 45 seconds, and **Innervate** yourself under 40% mana: the lab measured early potions as 1 to 2% more healing capacity.
+- Mana runs out before cast time does: in the lab's five-minute fight the build spends about 30 seconds out of mana, and **Reflection** (half your mana regeneration keeps going while you cast) is worth more than any other talent there. Drink a mana potion once you are 20% down after the first 45 seconds, and **Innervate** yourself under 40% mana: the lab measured early potions as 1 to 2% more healing capacity.
 - Leave raid members above half health to their own regeneration and the other healers: the lab measured healing them only under 50%, instead of 70%, as 2% more healing capacity, the mana going to the tank.
 - Forever gives low ranks less of your healing power (Blizzard's beta notes; the exact rule is not published). The lab assumes TBC's rule: **Healing Touch** ranks 9 to 11 keep their full bonus, rank 8 about 92% and rank 7 about 82%, so downrank only that far.
-- The beta's **Swiftmend** tooltip no longer says it uses up the heal over time, as Classic's did; the lab still assumes it does. If it does not, **Swiftmend** is worth pressing far more often.
+- The beta's **Swiftmend** tooltip no longer says it uses up the heal over time, as Classic's did, and the lab now leaves it ticking (worth about 3% healing capacity there). If it does use it up at launch, save **Swiftmend** for emergencies and keep a **Rejuvenation** ready to put back.
 
 **When to change it**
 
@@ -37,7 +37,6 @@ Healing capacity 0.75 (the raid damage it heals through in this project's healer
 
 ## Other builds of this spec
 
-- [Restoration (optimized)](../research/raid/builds/opt-resto-heal-raid-heal.md) (11/5/35) — [open the talent tree](https://talentsforever.com/druid/60/05302001-05-5050035153113021-6)
 - [Restoration — Regrowth / Nature's Grace, with a Balance dip](../research/raid/builds/resto-regrowth-natures-grace.md) (21/0/30) — [open the talent tree](https://talentsforever.com/druid/60/1532223110001--505003510311105-6)
 
 ---

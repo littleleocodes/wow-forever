@@ -4,29 +4,30 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `frost-ml-raid` | 21/0/30 | 605 | 35 | +0.0% | 497 | 0 | +76.5% |
-| `frost-fingers-of-frost-raid` | 22/0/29 | 602 | 34 | -0.5% | 496 | 0 | +75.1% |
-| `opt-frost-raid-raid-dps` | 22/0/29 | 599 | 36 | -0.9% | 500 | 1 | +74.4% |
-| `frost-arcane-power-raid` | 32/0/19 | 572 | 31 | -5.4% | 549 | 0 | +68.4% |
-| sim preset: Frost DPS | - | 561 | 34 | -7.2% | 343 | 0 | - |
-| `opt-frost-raid-raid-dps-extwc` | 1/13/37 | 550 | 35 | -9.1% | 339 | 7 | +67.3% |
-| `frost-winters-chill-raid` | 21/0/30 | 547 | 28 | -9.5% | 436 | 0 | +64.6% |
-| sim preset: Frost 14/0/37 | - | 546 | 34 | -9.7% | 473 | 8 | - |
-| sim preset: Arcane 35/0/16 | - | 490 | 31 | -18.9% | 397 | 0 | - |
-| sim preset: Arcane DPS | - | 422 | 30 | -30.2% | 407 | 0 | - |
-| sim preset: Fire 0/35/16 | - | 392 | 23 | -35.3% | 294 | 0 | - |
-| sim preset: Fire DPS | - | 329 | 18 | -45.7% | 347 | 0 | - |
+| `frost-ml-raid` | 21/0/30 | 604 | 34 | +0.0% | 499 | 0 | +76.5% |
+| `frost-fingers-of-frost-raid` | 22/0/29 | 601 | 35 | -0.5% | 497 | 0 | +75.1% |
+| `opt-frost-raid-raid-dps` | 22/0/29 | 600 | 36 | -0.8% | 501 | 1 | +74.4% |
+| `arcane-frost-open-raid` | 28/0/23 | 592 | 42 | -2.0% | 493 | 5 | +67.6% |
+| `frost-arcane-power-raid` | 32/0/19 | 573 | 32 | -5.3% | 549 | 0 | +68.4% |
+| sim preset: Frost DPS | - | 561 | 34 | -7.2% | 346 | 0 | - |
+| `opt-frost-raid-raid-dps-extwc` | 1/13/37 | 550 | 34 | -9.0% | 337 | 7 | +67.3% |
+| `frost-winters-chill-raid` | 21/0/30 | 547 | 28 | -9.5% | 437 | 0 | +64.6% |
+| sim preset: Frost 14/0/37 | - | 546 | 34 | -9.8% | 472 | 8 | - |
+| sim preset: Arcane 35/0/16 | - | 490 | 31 | -18.9% | 395 | 0 | - |
+| sim preset: Arcane DPS | - | 423 | 30 | -30.0% | 409 | 0 | - |
+| sim preset: Fire 0/35/16 | - | 392 | 22 | -35.2% | 296 | 0 | - |
+| sim preset: Fire DPS | - | 329 | 18 | -45.6% | 350 | 0 | - |
 
 ## Damage shares (`frost-ml-raid`, simulator actions)
 
 | Action | Share |
 |---|---|
 | Frostbolt | 62.5% |
-| Ice Lance | 18.7% |
+| Ice Lance | 18.6% |
 | Arcane Missiles | 18.4% |
 | Fire Blast | 0.5% |
 
-Mapped onto the spec model's sources: `frostbolt` 62%, `ice_lance` 19%, `missiles` 18%, `fire_blast` 0%; 0% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
+Mapped onto the spec model's sources: `frostbolt` 63%, `ice_lance` 19%, `missiles` 18%, `fire_blast` 0%; 0% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
@@ -34,6 +35,7 @@ Scorer = the expected-value stats model's score of the same allocation for its r
 - frost-ml-raid: `053005003000311--055500031100030025`
 - frost-fingers-of-frost-raid: `0530050030003111--055500031100030024`
 - opt-frost-raid-raid-dps: `1502050030003111--055500030100031024`
+- arcane-frost-open-raid: `05520300310001053--05450003010003002`
 - frost-arcane-power-raid: `055005003000311531--055500031`
 - sim preset: Frost DPS: `0502050030003--055500033100030024`
 - opt-frost-raid-raid-dps-extwc: `1-2330203-0555000331021301251`

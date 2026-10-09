@@ -96,7 +96,7 @@ Demonology to Demonic Pact, a Forever talent that keeps Demonic Sacrifice's effe
   8. move to the top: if not Curse of the Elements is up: cast Curse of the Elements (+0.3%, pass 5)
   9. move down below 'if time left on Corruption ≤ cast time of Corruption: cast Corruption': if mana % < 15% and time left in the fight ≥ 6s: cast Life Tap (+0.2%, pass 5)
   10. only with 10s or more of the fight left: if time left on Corruption ≤ cast time of Corruption: cast Corruption (+0.2%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 7 passes, the last 2026-10-09, 7 changes to the base rotation; third-seed check: demonology-pact-raid 810 -> 805 DPS (-0.6%), sim preset: Demonic Pact 2/31/18 782 -> 776 DPS (-0.8%), demonology-ml-raid 815 -> 810 DPS (-0.6%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-09, 7 changes to the base rotation; third-seed check: demonology-ml-raid 837 -> 832 DPS (-0.5%), sim preset: Demonic Pact 2/31/18 805 -> 798 DPS (-0.9%), demonology-pact-raid 833 -> 827 DPS (-0.7%)):
   1. drop: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.6%, pass 1)
   2. threshold 10% -> 5%: if mana % < 10%: cast Life Tap (+0.5%, pass 1)
   3. only with 10s or more of the fight left: if time left on Corruption ≤ cast time of Corruption: cast Corruption (+0.2%, pass 5)

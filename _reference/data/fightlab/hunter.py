@@ -1,10 +1,10 @@
 """Hunter module for the fight lab (Beast Mastery leveling with a cat).
 
-Spell ranks are read from `_reference/data/forever-spells/hunter.json` (beta client build 1.60.1.70009); talent numbers from
+Spell ranks are read from `_reference/data/forever-spells/hunter.json` (beta client build 1.60.1.70291); talent numbers from
 each rank's tooltip in `_reference/data/forever-talents/hunter.json`. Pet stats: the level-60 hunter pet of the
-ElliotWood/Forever simulator (`sim/hunter/pet.go`: Forever pets inherit nothing from the hunter; cat family x1.10 damage,
-happiness x1.25), scaled by level here; Claw/Bite from the beta spellbook; Summon Hawk as the simulator models it (dive
-bomb, then the same hit every 3 s for 18 s).
+ElliotWood/Forever simulator (`sim/hunter/pet.go`; cat family x1.10 damage, happiness x1.25), scaled by level here, plus what it
+inherits from the hunter since 2026-10-08 (`make_pet`); Claw/Bite from the beta spellbook; Summon Hawk as the raid simulator
+models it since its fit to beta combat logs (`summon_hawk`: the dive bomb, then a swing on arrival and every 2.5 s for 18 s).
 
 Playstyle `bm-leveling` (the scorer's model id): the cat runs in and Growls, the hunter shoots from 35 yd: Hunter's Mark,
 Serpent Sting, Summon Hawk or Arcane Shot, Multi-Shot / Aimed Shot on their shared cooldown, Auto Shot in between; Bestial
@@ -18,9 +18,9 @@ import re
 
 import tables
 from engine import parse_interrupt, BaseModule, Pet, Player, Spell, Weapon
-from tables import (GCD, MELEE_RANGE, WEAPON_SPEED, ammo_dps, class_attack_power, class_base_health, class_base_mana, class_base_stats,
-                    class_dodge, class_health_regen_tick, class_mana_regen_tick, class_melee_crit, class_ranged_ap, class_spell_crit,
-                    gear_stats, weapon_dps)
+from tables import (GCD, MELEE_RANGE, WEAPON_SPEED, ammo_dps, armor_mitigation, class_attack_power, class_base_health, class_base_mana,
+                    class_base_stats, class_dodge, class_health_regen_tick, class_mana_regen_tick, class_melee_crit, class_ranged_ap,
+                    class_spell_crit, gear_stats, weapon_dps)
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 SPELLBOOK = json.load(open(ROOT / "_reference/data/forever-spells/hunter.json", encoding="utf-8"))
@@ -38,6 +38,26 @@ MAP = re.compile(r"Melee Attack Power by (\d+)")
 DAZE = re.compile(r"slowing movement speed by (\d+)% for (\d+) sec|reduces the enemy target's movement speed by (\d+)% for (\d+) sec")
 STUN = re.compile(r"Stun the target for (\d+) sec")
 COEF = re.compile(r"([\d.]+)% of spell power \((\w+(?: \w+)?)\)")
+# Summon Hawk since build 70205: "dealing 108 plus 5% of your Ranged Attack Power Physical damage and continuing its assault for 18 sec.
+# Only 2 hawks can be active at once." (70205 read "of ranged attack power"; before it "dealing 108 Physical damage", which FLAT reads).
+# The generic FLAT pattern cannot read the new wording, so from the 70291 refresh (2026-10-08) to 2026-10-09 the lab's hawk did nothing.
+HAWK = re.compile(r"dealing (\d[\d,]*) plus (\d+(?:\.\d+)?)% of (?:your )?ranged attack power", re.I)
+HAWK_LIFE = re.compile(r"continuing its assault for (\d+) sec")
+HAWK_CAP = re.compile(r"Only (\d+) hawks? can be active at once")
+DODGE = re.compile(r"chance to dodge by (\d+(?:\.\d+)?)%")   # Aspect of the Monkey (Forever: 8%)
+# A Summon Hawk rank whose wording no pattern reads (a later rewording) keeps these instead of 0: the dive bomb's base by rank and its
+# ranged attack power share, from the 70291 tooltips (the raid simulator's spell data has the same numbers, sim/hunter/summon_hawk.go).
+HAWK_BASE_FALLBACK = {1: 32.0, 2: 47.0, 3: 85.0, 4: 108.0}
+HAWK_RAP_FALLBACK = 0.05
+HAWK_LIFE_FALLBACK, HAWK_CAP_FALLBACK = 18.0, 2
+# The hawk that stays after the dive bomb, as the raid simulator fits it to beta combat logs (foreverlogs reports 2695 and 2701, two
+# level 25/30 hunters, 534 landed swings at rank 1; sim/hunter/summon_hawk.go): a swing on arrival, then one every 2.5 s sped up by the
+# hunter's ranged haste, each about 0.35 of the rank's dive bomb base (compared target by target with the dive bomb, so armor applies the
+# same way); the swings do not crit. Until 2026-10-09 the lab used an older reading: the whole dive bomb, less 35%, every 3 s.
+HAWK_SWING_SHARE = 0.35
+HAWK_SWING_EVERY = 2.5
+WHITE = ("Melee", "Melee (off-hand)")   # the melee auto attacks: no ability modifiers (Savage Strikes, Predator's Edge's crit damage)
+HAWK_SWING = Spell("Summon Hawk", "physical", kind="melee", resource="none")   # the hawk's swings, booked under the spell's name
 
 TALENT_SPELLS = {"Summon Hawk": "Summon Hawk", "Intimidation": "Intimidation", "Bestial Wrath": "Bestial Wrath", "Trueshot Aura": "Trueshot Aura",
                  "Scatter Shot": "Scatter Shot", "Sniper Shot": "Sniper Shot", "Counterattack": "Counterattack", "Deterrence": "Deterrence",
@@ -94,6 +114,18 @@ def load_spellbook():
                         s.weapon_pct = 0.5 if name == "Scatter Shot" else 1.0
                     if rp:
                         s.dmg_min = s.dmg_max = _num(rp.group(1))
+                    if name == "Summon Hawk":   # the dive bomb: the rank's base plus a share of ranged attack power (resolve_attack adds coef x RAP)
+                        hm, lm, cm = HAWK.search(txt), HAWK_LIFE.search(txt), HAWK_CAP.search(txt)
+                        if hm:
+                            base, share = _num(hm.group(1)), float(hm.group(2)) / 100
+                        elif fl and fl.group(4):   # the wording before 70291: "dealing 108 Physical damage"
+                            base, share = _num(fl.group(4)), HAWK_RAP_FALLBACK
+                        else:
+                            base, share = HAWK_BASE_FALLBACK.get(s.rank, 0.0), HAWK_RAP_FALLBACK
+                        s.dmg_min = s.dmg_max = base
+                        s.coef = share
+                        s.hawk_life = float(lm.group(1)) if lm else HAWK_LIFE_FALLBACK
+                        s.hawk_cap = int(cm.group(1)) if cm else HAWK_CAP_FALLBACK
                 if dm and not s.dmg_max:
                     s.dmg_min, s.dmg_max = _num(dm.group(1)), _num(dm.group(2))
                 elif fl and not s.dmg_max:
@@ -135,17 +167,22 @@ def talent_numbers():
 TNUM = talent_numbers()
 
 MECHANICS = {
-    "Deadly Aspects": "2%/rank per Auto Shot: +30% ranged attack speed for 12s (Aspect of the Hawk)",
+    "Deadly Aspects": ("2%/rank per landed Auto Shot under Aspect of the Hawk (the ranged builds), or per landed melee auto attack, main and off "
+                       "hand, under Aspect of the Beast (the melee builds, from level 30): +30% attack speed for 12s"),
     "Endurance Training": "+3%/rank pet health and armor",
-    "Focused Fire": "+1%/rank damage for you and the pet",
-    "Improved Aspect of the Monkey": "not used (Aspect of the Hawk is up)",
+    "Focused Fire": "+1%/rank damage for you and the pet while the pet is alive",
+    "Improved Aspect of the Monkey": ("+2%/rank dodge on Aspect of the Monkey, the melee builds' aspect below level 30 (its dodges light up "
+                                      "Mongoose Bite); the ranged builds keep Aspect of the Hawk up"),
     "Pathfinding": "travel speed only",
     "Improved Revive Pet": "-3s/rank Revive Pet",
     "Bestial Swiftness": "+30% pet speed: the pet reaches the mob sooner",
     "Unleashed Fury": "+3%/rank pet and hawk damage",
     "Improved Mend Pet": "-10%/rank Mend Pet mana",
     "Ferocity": "+2%/rank pet and hawk crit",
-    "Summon Hawk": "unlocks Summon Hawk (dive bomb + the same hit every 3s for 18s, 2 hawks; shares Arcane Shot's cooldown)",
+    "Summon Hawk": ("unlocks Summon Hawk: a dive bomb (the rank's base + 5% of ranged attack power; Ferocity's crit and Unleashed Fury apply), "
+                    "then a hawk that swings on arrival and every 2.5 s (ranged haste) for 18 s at 0.35 of the base, no crits; 2 hawks at once, "
+                    "a new one replaces the one closest to leaving; shares Arcane Shot's cooldown; the ranged list casts it (the melee list "
+                    "leaves it out: it measured a net loss there, its mana)"),
     "Spirit Bond": "hunter and pet regain 1%/rank of health per 5s in combat",
     "Intimidation": "pet stuns the mob 3s (its next hit crits), every 1 min",
     "Bestial Discipline": "+10%/rank pet focus regen, 25%/rank mana regen while casting",
@@ -169,11 +206,17 @@ MECHANICS = {
     "Sniper Shot": "not used (4s cast; Multi-Shot / Aimed Shot fill the slot)",
     "Improved Tracking": "+1%/rank damage (the mob is assumed tracked)",
     "Deflection": "+2%/rank parry when meleeing",
-    "Savage Strikes": "+2%/rank melee ability crit",
+    "Savage Strikes": "+2%/rank crit on melee abilities (the client's class mask: abilities only, no auto attacks)",
     "Survivalist": "+2%/rank health",
     "Surefooted": "+1%/rank hit",
     "Lightning Reflexes": "+3%/rank Agility",
-    "Predator's Edge": "+6%/rank melee crit damage",
+    "Predator's Edge": ("+6%/rank crit damage on melee abilities and +10%/rank off-hand weapon damage (the client's class mask, as the raid "
+                        "simulator reads it: no auto attacks)"),
+    "Expose Prey": ("5%/rank per landed melee or ranged attack of yours on a target with your Hunter's Mark: Mongoose Bite usable for 10 s "
+                    "(a dodge opens it for 5 s); the melee list marks the mob in a free global cooldown when the build has the talent "
+                    "(the tuned rules veto the mark: it measured slower per kill even with Expose Prey)"),
+    "Lacerating Strikes": "Mongoose Bite adds a bleed of 40% of its damage over 21 s",
+    "Strider Kick": "unlocks Strider Kick (a weapon hit, 8 s cooldown), cast on cooldown by the melee list",
     "Improved Wing Clip": "6.7%/rank root 5s on Wing Clip",
     "Deterrence": "+25% dodge and parry for 10 s; the melee rotation presses it below 40% health (5 min cooldown)",
     "Survivalist's Discipline": "-20%/rank Deterrence and trap cooldown (the melee hunter's Immolation Trap)",
@@ -247,8 +290,19 @@ class HunterModule(BaseModule):
                 self.spells.pop(sname, None)
         self._fight = None
         self._base_mana = 0.0
-        self.hawks = 0
-        self.armor_spell_used = "Aspect of the Hawk" if "Aspect of the Hawk" in self.spells else "none"
+        # the aspect: the ranged builds keep Aspect of the Hawk up; the melee builds Aspect of the Beast from level 30 and Aspect of the Monkey
+        # before it (2026-10-09: the lab had given them the Beast's attack power at every level and Aspect of the Hawk's ranged attack power)
+        self.monkey_dodge = 0.0
+        if not self.is_melee():
+            self.armor_spell_used = "Aspect of the Hawk" if "Aspect of the Hawk" in self.spells else "none"
+        elif self.beast_known():
+            self.armor_spell_used = "Aspect of the Beast"
+        elif "Aspect of the Monkey" in self.spells:
+            self.armor_spell_used = "Aspect of the Monkey"
+            dm = DODGE.search(getattr(self.spells["Aspect of the Monkey"], "text", ""))
+            self.monkey_dodge = ((float(dm.group(1)) if dm else 8.0) + self.tv("Improved Aspect of the Monkey", 0)) / 100
+        else:
+            self.armor_spell_used = "none"
         self._fix_traps()
 
     def _fix_traps(self):
@@ -283,6 +337,10 @@ class HunterModule(BaseModule):
         ranks = [s for s in BOOK.get(name, []) if s.level <= self.level]
         return ranks[-1] if ranks else None
 
+    def beast_known(self):
+        """Aspect of the Beast is trained at level 30: the melee builds' aspect from then on."""
+        return self.book.get("Aspect of the Beast") is not None
+
     # ------------------------------------------------------------ character and pet
     def make_player(self, level):
         base = class_base_stats("hunter", level)
@@ -293,7 +351,7 @@ class HunterModule(BaseModule):
         spirit = base["spirit"] + g["spirit"]
         stamina = base["stamina"] + g["stamina"]
         bm = class_base_mana("hunter", level)
-        hawk = self.book.get("Aspect of the Hawk")
+        hawk = None if self.is_melee() else self.book.get("Aspect of the Hawk")   # the melee builds run Aspect of the Beast / Monkey instead
         tsa = self.book.get("Trueshot Aura") if self.rank("Trueshot Aura") else None
         rap = class_ranged_ap("hunter", level, agility) + (getattr(hawk, "rap", 0.0) if hawk else 0.0) + (getattr(tsa, "rap", 0.0) if tsa else 0.0)
         ap = class_attack_power("hunter", level, strength, agility)
@@ -315,8 +373,8 @@ class HunterModule(BaseModule):
             p.mh = Weapon(dmg_min=mdps * WEAPON_SPEED["1h"] * 0.8, dmg_max=mdps * WEAPON_SPEED["1h"] * 1.2, speed=WEAPON_SPEED["1h"], kind="1h")
             oh = 1 + self.tv("Predator's Edge", 1, 0.0) / 100
             p.oh = Weapon(dmg_min=mdps * WEAPON_SPEED["1h"] * 0.8 * oh, dmg_max=mdps * WEAPON_SPEED["1h"] * 1.2 * oh, speed=WEAPON_SPEED["1h"], kind="1h")
-            beast = self.book.get("Aspect of the Beast")
-            p.attack_power += getattr(beast, "ap", 110.0 * level / 60.0) if beast else 110.0 * level / 60.0
+            beast = self.book.get("Aspect of the Beast")   # rank by level: +50/70/90/110 melee attack power from 30/40/50/60; none before 30
+            p.attack_power += getattr(beast, "map", 0.0) if beast is not None else 0.0
         else:
             mdps = weapon_dps(level, "2h")
             p.mh = Weapon(dmg_min=mdps * WEAPON_SPEED["2h"] * 0.8, dmg_max=mdps * WEAPON_SPEED["2h"] * 1.2, speed=WEAPON_SPEED["2h"], kind="2h")
@@ -366,21 +424,30 @@ class HunterModule(BaseModule):
         return 0.0
 
     def crit_bonus(self, spell, frozen):
-        if spell.kind == "melee" and spell.name != "Melee":
+        if spell.kind == "melee" and spell.name not in WHITE:   # 2026-10-09: the off-hand auto attack had taken Savage Strikes too
             return self.tv("Savage Strikes", 0) / 100
+        if spell.name == "Summon Hawk":   # "pets and hawks": the dive bomb (the hawk's swings do not crit)
+            return self.tv("Ferocity", 0) / 100
         return 0.0
 
     def crit_damage_bonus(self, spell):
+        if spell.name == "Summon Hawk":   # the hawk is no ranged weapon attack: no Mortal Shots (the raid simulator's class masks)
+            return 0.0
         if spell.kind == "ranged":
             return self.tv("Mortal Shots", 0) / 100
-        if spell.kind == "melee":
+        if spell.kind == "melee" and spell.name not in WHITE:   # 2026-10-09: abilities only, as the client's class mask (it had applied to every auto attack)
             return self.tv("Predator's Edge", 0) / 100
         return 0.0
 
     def damage_multiplier(self, spell, frozen):
-        m = (1 + self.tv("Focused Fire", 0) / 100) * (1 + self.tv("Improved Tracking", 0) / 100)
+        m = 1 + self.tv("Improved Tracking", 0) / 100
+        pet = self._fight.p.pet if self._fight is not None else None
+        if pet is not None and pet.alive:   # Focused Fire: "while your pet is active" (2026-10-09: it had counted with no pet out too)
+            m *= 1 + self.tv("Focused Fire", 0) / 100
         if self.rank("Lone Wolf") and (self._fight is None or self._fight.p.pet is None):
             m *= 1 + self.tv("Lone Wolf", 0) / 100
+        if spell.name == "Summon Hawk":   # the dive bomb and the hawk's swings: Unleashed Fury ("pets and hawks"), no Ranged Weapon Specialization
+            return m * (1 + self.tv("Unleashed Fury", 0) / 100)
         if spell.kind == "ranged" or spell.name == "Auto Shot":
             m *= 1 + self.tv("Ranged Weapon Specialization", 0) / 100
         if spell.name in ("Multi-Shot", "Aimed Shot"):
@@ -401,6 +468,17 @@ class HunterModule(BaseModule):
                 f /= 1.4
             if self._fight.p.buff("Deadly Aspects", self._fight.t):
                 f /= 1.3
+        return f
+
+    def ranged_haste(self):
+        """The hunter's ranged attack speed factor (the hawk's swings follow it): Rapid Fire, and Deadly Aspects' Aspect of the Hawk half."""
+        f = 1.0
+        if self._fight:
+            p, t = self._fight.p, self._fight.t
+            if p.buff("Rapid Fire", t):
+                f *= 1.4
+            if p.buff("Deadly Aspects", t) and not self.is_melee():
+                f *= 1.3
         return f
 
     def mana_regen(self, p, t):
@@ -453,7 +531,6 @@ class HunterModule(BaseModule):
         self._fight = fight
         self._base_mana = fight.p.base_mana
         p, t = fight.p, fight.t
-        self.hawks = 0
         p.ranged_ap = self.base_rap          # Hunter's Mark is on the mob: it is gone with the last one
         p.buffs.pop("Hunter's Mark", None)
         pet = p.pet
@@ -478,7 +555,7 @@ class HunterModule(BaseModule):
             p.cooldowns["Intimidation"] = t + im.cooldown
 
     def dodge_bonus(self, fight):
-        return 0.25 if fight.p.buff("Deterrence", fight.t) else 0.0
+        return (0.25 if fight.p.buff("Deterrence", fight.t) else 0.0) + self.monkey_dodge   # Aspect of the Monkey: the melee builds below 30
 
     def parry_bonus(self, fight):
         return 0.25 if fight.p.buff("Deterrence", fight.t) else 0.0
@@ -489,11 +566,11 @@ class HunterModule(BaseModule):
             p.buffs["Deterrence"] = {"until": t + 10.0}
         if crit and self.rank("Resourcefulness") and fight.rng.random() < self.tv("Resourcefulness", 1) / 100:
             p.buffs["Resourcefulness"] = {"until": t + 30.0}
-        if self.is_melee() and spell.kind == "melee" and spell.name != "Melee" and amount > 0:
-            if self.rank("Expose Prey") and p.buff("Hunter's Mark", t) and fight.rng.random() < self.tv("Expose Prey", 0) / 100:
-                p.buffs["Mongoose"] = {"until": t + 5.0}
-            if spell.name == "Mongoose Bite" and self.rank("Lacerating Strikes"):
-                fight.refresh_dot("Lacerate", amount * 0.40, 7, 3.0)
+        # Expose Prey on your landed abilities (the auto attacks and Auto Shot roll in on_swing); not the hawk's dive bomb
+        if self.is_melee() and amount > 0 and spell.kind in ("melee", "ranged") and spell.name not in WHITE + ("Auto Shot", "Summon Hawk"):
+            self.expose_prey(fight)
+        if self.is_melee() and spell.name == "Mongoose Bite" and amount > 0 and self.rank("Lacerating Strikes"):
+            fight.refresh_dot("Lacerate", amount * 0.40, 7, 3.0)
         if spell.name == "Hunter's Mark":
             p.ranged_ap = self.base_rap + getattr(spell, "rap", 0.0)
             p.buffs["Hunter's Mark"] = {"until": t + 120.0}
@@ -505,9 +582,7 @@ class HunterModule(BaseModule):
                 m.in_melee = False
                 fight.note("Feign Death: the mob goes back to the pet")
         if spell.name == "Summon Hawk" and amount > 0:
-            self.hawks += 1
-            per = (spell.dmg_min + 0.05 * p.ranged_ap) * (1 + self.tv("Unleashed Fury", 0) / 100) * (1 - 0.35)
-            fight.refresh_dot(f"Summon Hawk {self.hawks % 2 + 1}", per * 6, 6, 3.0, self.spells["Summon Hawk"].rank and (0.05 + self.tv("Ferocity", 0) / 100), 2.0)
+            self.summon_hawk(fight, spell)
         if spell.name == "Serpent Sting" and self.rank("Rapid Recuperation"):
             p.buffs["Rapid Recuperation"] = {"until": t + 15.0}
         if spell.name == "Concussive Shot" and self.rank("Improved Concussive Shot") and fight.rng.random() < self.tv("Improved Concussive Shot", 0) / 100:
@@ -522,9 +597,45 @@ class HunterModule(BaseModule):
         if "Counterattack" in self.spells:
             fight.p.buffs["Counterattack"] = {"until": fight.t + 5.0}
 
+    def light_mongoose(self, fight, seconds):
+        """Mongoose Bite becomes usable for `seconds` (a dodge: 5 s; Expose Prey: its tooltip's 10 s); a shorter window never cuts a longer one."""
+        b = fight.p.buffs.get("Mongoose")
+        until = fight.t + seconds
+        if b is None or b.get("until", 0.0) < until:
+            fight.p.buffs["Mongoose"] = {"until": until}
+
+    def expose_prey(self, fight):
+        """Expose Prey: "Your attacks against targets with Hunter's Mark have a 10% chance to activate your Mongoose Bite for 10 sec" (the
+        deep dive: melee and ranged attacks on the target of your Hunter's Mark). One roll per landed attack of the hunter's own."""
+        p, t = fight.p, fight.t
+        if self.rank("Expose Prey") and p.buff("Hunter's Mark", t) and fight.rng.random() < self.tv("Expose Prey", 0) / 100:
+            self.light_mongoose(fight, self.tv("Expose Prey", 1) or 10.0)
+
+    def summon_hawk(self, fight, spell):
+        """The hawk that stays after a landed dive bomb (HAWK_SWING_* above): a swing on arrival, then one every 2.5 s divided by the
+        ranged haste for the hawk's life (the tooltip's 18 s); a cast past the cap (2) replaces the hawk closest to leaving. Each swing:
+        0.35 of the rank's dive bomb base with the hawk's multipliers (Unleashed Fury, Focused Fire with a living pet, Improved Tracking,
+        Lone Wolf without one), the target's armor as for the dive bomb, the melee miss chance as an average; no crits. The damage counts
+        as the hunter's threat, as a periodic effect does in this engine."""
+        p, m = fight.p, fight.m
+        swing = (HAWK_SWING_SHARE * spell.dmg_min * self.damage_multiplier(HAWK_SWING, False)
+                 * (1.0 - armor_mitigation(m.effective_armor(), p.level)) * (1.0 - tables.MELEE_MISS))
+        if swing <= 0:
+            return
+        every = HAWK_SWING_EVERY / self.ranged_haste()
+        ticks = max(1, int(getattr(spell, "hawk_life", HAWK_LIFE_FALLBACK) / every))
+        cap = getattr(spell, "hawk_cap", HAWK_CAP_FALLBACK)
+        hawks = [d for d in m.dots if d[0] == "Summon Hawk"]
+        if len(hawks) >= cap:
+            m.dots.remove(min(hawks, key=lambda d: d[2]))
+        fight.deal(HAWK_SWING, swing)   # the arrival swing
+        fight.add_dot("Summon Hawk", swing * ticks, ticks, every)
+        fight.note(f"hawk out ({min(len(hawks) + 1, cap)} up), {swing:.0f} a swing")
+
     def decide_melee(self, fight):
-        """The melee hunter: mark and sting from range, then stand and fight: Counterattack after a parry, Mongoose Bite when a dodge or
-        Expose Prey activates it, Strider Kick on cooldown, Raptor Strike on the next swing; Deterrence when low; Mend Pet for the pet."""
+        """The melee hunter: Serpent Sting from range, then stand and fight beside the pet: Raptor Strike queued on the next swing whenever
+        it is ready, Deterrence when low, Counterattack after a parry, Mongoose Bite when a dodge or Expose Prey activates it, Strider Kick on
+        cooldown, Immolation Trap at your feet, then (with Expose Prey) Hunter's Mark in a free global cooldown; Mend Pet for the pet."""
         p, m, t, pet = fight.p, fight.m, fight.t, fight.p.pet
         sp = self.spells
         if m.pet_in_melee and not m.in_melee:   # the pet holds the mob: the hunter closes in and fights beside it
@@ -540,12 +651,15 @@ class HunterModule(BaseModule):
         if mend and can(mend) and pet is not None and pet.alive and pet.hp < 0.35 * pet.hp_max and m.target == "pet":
             return mend
         if not in_melee:
-            if m.dist >= 8.0:
-                if mark and can(mark) and not p.buff("Hunter's Mark", t) and hp > 0.3 * m.hp_max:
-                    return mark
-                if sting and can(sting) and not fight.dot_active("Serpent Sting") and hp > 0.4 * m.hp_max:
-                    return sting
+            # only the sting at range (8-35 yd): a second global cooldown here delays the walk in (2026-10-09: the mark cast first had
+            # cost the sting whenever the pet met the mob within a global cooldown, which is why the tuned rules vetoed the mark)
+            if m.dist >= 8.0 and sting and can(sting) and not fight.dot_active("Serpent Sting") and hp > 0.4 * m.hp_max:
+                return sting
             return None   # wait for the mob to come
+        # Raptor Strike first: it costs no global cooldown (it replaces the next main-hand swing), but this engine asks for a decision only
+        # when the global cooldown is free, so a queue left behind a global-cooldown spell waited 1.5 s and could miss a swing (2026-10-09)
+        if raptor and can(raptor) and fight.queued_swing is None:
+            return raptor
         if deter and can(deter) and p.hp < 0.4 * p.hp_max and hp > 0.3 * m.hp_max:
             return deter
         if counter and can(counter) and p.buff("Counterattack", t):
@@ -558,22 +672,35 @@ class HunterModule(BaseModule):
         # last line, here before the Raptor Strike queue, which is off the GCD)
         if trap and can(trap) and hp > 0.4 * m.hp_max and not fight.dot_active("Immolation Trap"):
             return trap
-        if raptor and can(raptor) and fight.queued_swing is None:
-            return raptor
+        # 2026-10-09: Hunter's Mark (no minimum range) in a global cooldown the strikes leave free, when the build has Expose Prey (the
+        # mark's only use for a melee hunter). The tuned rules still veto it: with Expose Prey working the mark measured 0.5-1.3% slower
+        # per kill (level-weighted, 1,000 fights). No Summon Hawk line, unlike the raid list: tried the same day (on its timer while the mob
+        # had 30% health or more), it cost the Beast-Survival build 5.6% per kill at 60 (26.4 against 25.0 s; its 190 mana a cast, no
+        # mana talent pays for it) and still 0.6% when cast only above 80% mana.
+        if self.rank("Expose Prey") and mark and can(mark) and not p.buff("Hunter's Mark", t) and hp > 0.3 * m.hp_max:
+            return mark
         return None
 
     def on_swing(self, fight, spell, outcome, amount, hand):
+        """Auto attacks and Auto Shot. Deadly Aspects follows the aspect: melee auto attacks, both hands, under Aspect of the Beast (the melee
+        builds from 30); Auto Shot under Aspect of the Hawk (the ranged builds). 2026-10-09: the melee half had ignored the off hand and
+        counted below level 30, and a melee build's Auto Shot had rolled the Hawk half."""
         p, t = fight.p, fight.t
-        if self.is_melee() and spell.name == "Melee" and outcome not in ("miss", "dodge", "parry"):
-            if self.rank("Deadly Aspects") and fight.rng.random() < self.tv("Deadly Aspects", 0) / 100:
-                p.buffs["Deadly Aspects"] = {"until": t + 12.0}
-            if self.rank("Expose Prey") and p.buff("Hunter's Mark", t) and fight.rng.random() < self.tv("Expose Prey", 0) / 100:
-                p.buffs["Mongoose"] = {"until": t + 5.0}
-        if spell.name == "Auto Shot" and outcome not in ("miss", "dodge", "parry") and self.rank("Deadly Aspects") and fight.rng.random() < self.tv("Deadly Aspects", 0) / 100:
+        if outcome in ("miss", "dodge", "parry"):
+            return
+        da = self.rank("Deadly Aspects")
+        if self.is_melee():
+            if spell.name in WHITE:
+                if da and self.beast_known() and fight.rng.random() < self.tv("Deadly Aspects", 0) / 100:
+                    p.buffs["Deadly Aspects"] = {"until": t + 12.0}
+                self.expose_prey(fight)
+            elif spell.name == "Auto Shot":
+                self.expose_prey(fight)
+        elif spell.name == "Auto Shot" and da and fight.rng.random() < self.tv("Deadly Aspects", 0) / 100:
             p.buffs["Deadly Aspects"] = {"until": t + 12.0}
 
     def on_dodge(self, fight):
-        fight.p.buffs["Mongoose"] = {"until": fight.t + 5.0}
+        self.light_mongoose(fight, 5.0)
 
     def after_cast(self, fight, spell):
         p, t = fight.p, fight.t

@@ -12,14 +12,16 @@
 
 **In the fight**, top to bottom:
 
-1. **Bloodrage**, then **Charge** in.
-2. **Battle Shout**: keep it up.
-3. **Bloodthirst** whenever ready.
-4. **Overpower** when it lights up (after a dodge).
-5. **Execute** when the mob is below 20% health.
-6. **Heroic Strike** with spare rage; **Victory Rush** after a kill.
+1. **Bloodrage** (above 45% health) and **Death Wish** when it is ready, then **Charge** in; open with **Victory Rush** when it is up and you are below 90% health.
+2. **Battle Shout**: keep it up (it lasts 3 minutes).
+3. **Execute** first once the mob is below 20% health.
+4. **Overpower** whenever it lights up (after a dodge).
+5. **Bloodthirst** whenever ready.
+6. **Rend** once, while the mob has more than a third of its health.
+7. **Heroic Strike** with spare rage: keep 15 for **Overpower**.
+8. Two or more mobs: **Thunder Clap** and **Cleave** (**Whirlwind** needs **Berserker Stance**).
 
-**Between fights:** Bandage below 60% health, eat below half.
+**Between fights:** Bandage below 60% health, eat below 40%.
 
 ## Why this rotation
 
@@ -30,13 +32,13 @@ Fury levels with a weapon in each hand in **Battle Stance**. Open with **Bloodra
 - The opening matches Arms: **Bloodrage** (above 45% health) and **Charge** fill your rage before the first swing. The fight lab also presses **Death Wish** on the pull whenever it is ready (3-minute cooldown): 20% more physical damage for 30 seconds covers a whole fight.
 - Below 20%, **Execute** comes first: it spends all your rage, and **Improved Execute** cuts its cost to 10. **Overpower** comes next when the mob dodges (this build has no **Bloodthrill**): 5 rage with 50% more crit chance from **Improved Overpower**.
 - **Bloodthirst** (from 40: 30 rage, 6-second cooldown, 45% of your attack power) is your main attack. Before 40, **Heroic Strike** is where your rage goes.
-- **Rend** goes on once per mob while it has more than a third of its health. The list above leaves it out, but the fight lab casts it about once a kill and your build takes **Improved Rend**.
-- **Heroic Strike** takes the spare rage once 15 are kept for an **Overpower**. Your rage comes from landed white swings and doubles on a crit, which is why **Flurry** (faster swings after a crit), **Cruelty** and **Enrage** are worth the most in the fight lab: 1 to 2 seconds per kill each at 60.
+- **Rend** goes on once per mob while it has more than a third of its health: the fight lab casts it about once a kill, and your build takes **Improved Rend**.
+- **Heroic Strike** takes the spare rage once 15 are kept for an **Overpower**. Your rage comes from landed white swings of both hands and doubles on a crit, which is why the build leans on **Flurry** (faster swings after a crit), **Cruelty** and **Enrage**.
 - **Battle Shout** lasts 3 minutes in Forever, so one shout covers several pulls, and **Victory Rush** (free, heals 10%) opens the next fight whenever you are below 90% health.
 
 **Caveats**
 
-- **Berserker Rage** needs **Berserker Stance**, so in **Battle Stance** your 2 points in **Improved Berserker Rage** do nothing. The fight lab presses it below 30 rage without checking the stance and credits it with about 1 second per kill, so the build plays a little slower than its number.
+- **Berserker Rage** needs **Berserker Stance**, so in **Battle Stance** your 2 points in **Improved Berserker Rage** do nothing: treat them as free points.
 - The 2 points in **Two-Handed Weapon Specialization** only help with a two-hander: with two one-handers treat them as free points.
 - Between fights the fight lab bandages below 60% health and eats below 40%.
 - Several mobs: **Whirlwind** needs **Berserker Stance**. In **Battle Stance**, use **Cleave** instead of **Heroic Strike** and **Thunder Clap** to slow them (20% slower attacks).
@@ -87,7 +89,6 @@ One point per level from 10, in this order:
 ## Other builds of this spec
 
 - [Fury (optimized)](../research/leveling/builds/opt-fury-dw-raid-leveling-st.md) (13/38/0, 27 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/warrior/60/3202501-25053035152010501--6)
-- [Fury (optimized, solo at 60)](../research/leveling/builds/opt-fury-dw-raid-solo-60.md) (13/38/0) — [open the talent tree](https://talentsforever.com/warrior/60/3202501-25053035152010501--6)
 - [Fury (optimized, AoE pulls)](../research/leveling/builds/opt-arms-2h-raid-leveling-aoe.md) (19/32/0) — [open the talent tree](https://talentsforever.com/warrior/60/0530220313-45050130052010501--6)
 
 ---

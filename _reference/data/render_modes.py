@@ -686,6 +686,15 @@ def mode_section(cls, spec, mode, builds, nums, src):
         gl = guides.render(cls, spec, mode, f"leveling:{mdl}", guides.leveling_fingerprint(cls, mdl))
     o += play + gl + talents + numbers
     alts = [b for b in ranked[1:] if not b["id"].endswith("-parse")]
+    # one entry per talent set (2026-10-09: an optimizer that reproduced a hand draft, or its raid and solo exports, listed twice)
+    same = {json.dumps(sorted(rs.flat(top).items()))}
+    uniq = []
+    for b in alts:
+        k = json.dumps(sorted(rs.flat(b).items()))
+        if k not in same:
+            same.add(k)
+            uniq.append(b)
+    alts = uniq
     if alts:
         o += ["## Other builds of this spec", ""]
         for b in alts:

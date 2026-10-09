@@ -44,29 +44,29 @@
     "Send the pet in first and let it hold the mob."
    ],
    "steps": [
-    "**Hunter's Mark** and **Serpent Sting**.",
+    "**Hunter's Mark** and **Serpent Sting** while the mob has most of its health.",
     "**Bestial Wrath**, **Intimidation** and **Rapid Fire** at the start when they are ready.",
-    "**Aimed Shot** or **Multi-Shot** whenever ready (they share a cooldown), **Arcane Shot** or **Summon Hawk** in between.",
-    "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards.",
-    "**Mend Pet** when the pet drops below a third of its health.",
-    "If a mob reaches you: **Wing Clip** and **Raptor Strike**, or **Feign Death**."
+    "**Summon Hawk** whenever it is ready (from level 25) while the mob has a third of its health or more; skip **Arcane Shot**, which shares its timer.",
+    "**Aimed Shot** whenever it is ready while the mob has more than a quarter of its health; on a single mob never **Multi-Shot** (they share a cooldown).",
+    "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards. **Mend Pet** when the pet drops below a third of its health.",
+    "If a mob reaches you: **Wing Clip** and **Raptor Strike** until the pet takes it back."
    ],
    "between": [
-    "Mend the pet, drink below a third of your mana, eat below two thirds of your health."
+    "Mend the pet, drink below 15% mana, eat below two thirds of your health."
    ]
   },
   "mm-raid": {
    "before": [
-    "Pet out (a cat), **Aspect of the Hawk** up.",
+    "Pet out (a cat), **Aspect of the Hawk** and **Trueshot Aura** up.",
     "Send the pet in first and let it hold the mob."
    ],
    "steps": [
-    "**Hunter's Mark** and **Serpent Sting**.",
+    "**Hunter's Mark** and **Serpent Sting** while the mob has most of its health.",
     "**Rapid Fire** at the start when it is ready.",
-    "**Aimed Shot** or **Multi-Shot** whenever ready, **Arcane Shot** in between.",
-    "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards.",
-    "**Mend Pet** when the pet drops below a third of its health.",
-    "If a mob reaches you: **Wing Clip** and **Raptor Strike**, or **Feign Death**."
+    "**Aimed Shot** whenever it is ready while the mob has more than a quarter of its health; on a single mob never **Multi-Shot** (they share a cooldown).",
+    "**Arcane Shot** between them while the mob has more than a third of its health.",
+    "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards. **Mend Pet** when the pet drops below a third of its health.",
+    "If a mob reaches you: **Wing Clip** and **Raptor Strike**, or **Feign Death** while it still has more than a third of its health."
    ],
    "between": [
     "Mend the pet, drink below a third of your mana, eat below two thirds of your health."
@@ -74,16 +74,16 @@
   },
   "melee-dps": {
    "before": [
-    "Pet out, **Aspect of the Monkey** (**Aspect of the Beast** once you have it).",
-    "**Hunter's Mark** and **Serpent Sting** from range, then walk in."
+    "Pet out, **Aspect of the Monkey** (**Aspect of the Beast** from level 30).",
+    "**Serpent Sting** from range, then walk in while the pet holds the mob."
    ],
    "steps": [
-    "**Immolation Trap** at your feet while the mob has most of its health.",
-    "**Mongoose Bite** when it lights up (after a dodge).",
-    "**Counterattack** after you parry.",
+    "**Raptor Strike** every time it is ready: it replaces your next swing and costs no global cooldown.",
+    "**Mongoose Bite** when it lights up (after you dodge), **Counterattack** after you parry.",
     "**Strider Kick** on cooldown.",
-    "**Raptor Strike** on every swing it is ready.",
-    "Low on health: **Deterrence**; **Mend Pet** for the pet."
+    "**Immolation Trap** at your feet while the mob has more than 70% of its health.",
+    "Low on health: **Deterrence**; **Mend Pet** for the pet.",
+    "Skip **Hunter's Mark** and **Summon Hawk** while leveling: the fight lab measured both slower per kill."
    ],
    "between": [
     "Mend the pet, drink below a third of your mana, eat below two thirds of your health."

@@ -97,7 +97,7 @@ Allocation adopted on 2026-09-28 from the community simulator's own preset 'Impr
   7. spell probe: insert in the middle: cast Mutilate (+1.2%, pass 4)
   8. spell probe: insert at the top: if auraIsInactive: cast Ghostly Strike (+2.2%, pass 4)
   9. move to the top: if Slice and Dice is up: use every other cooldown when ready (+0.2%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-09, 5 changes to the base rotation; third-seed check: combat-swords-raid 687 -> 688 DPS (+0.2%), sim preset: Improved Expose Armor (SS) 687 -> 688 DPS (+0.2%), opt-combat-swords-raid-raid-dps 692 -> 690 DPS (-0.3%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 7 passes, the last 2026-10-09, 5 changes to the base rotation; third-seed check: opt-combat-swords-raid-raid-dps 706 -> 704 DPS (-0.3%), sim preset: Sinister Strike 710 -> 711 DPS (+0.1%), combat-swords-raid 702 -> 703 DPS (+0.1%)):
   1. threshold 5 -> 2.5: if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate (+0.5%, pass 1)
   2. spell probe: insert before the filler: cast Mutilate (+0.6%, pass 4)
   3. spell probe: insert at the top: if auraIsInactive: cast Ghostly Strike (+1.8%, pass 4)

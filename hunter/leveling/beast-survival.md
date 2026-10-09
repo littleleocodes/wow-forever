@@ -14,16 +14,16 @@
 
 **Not in this build:** **Counterattack**, **Deterrence**, **Strider Kick** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
 
-**Before the fight:** Pet out, **Aspect of the Monkey** (**Aspect of the Beast** once you have it). **Hunter's Mark** and **Serpent Sting** from range, then walk in.
+**Before the fight:** Pet out, **Aspect of the Monkey** (**Aspect of the Beast** from level 30). **Serpent Sting** from range, then walk in while the pet holds the mob.
 
 **In the fight**, top to bottom:
 
-1. **Immolation Trap** at your feet while the mob has most of its health.
-2. **Mongoose Bite** when it lights up (after a dodge).
-3. **Counterattack** after you parry.
-4. **Strider Kick** on cooldown.
-5. **Raptor Strike** on every swing it is ready.
-6. Low on health: **Deterrence**; **Mend Pet** for the pet.
+1. **Raptor Strike** every time it is ready: it replaces your next swing and costs no global cooldown.
+2. **Mongoose Bite** when it lights up (after you dodge), **Counterattack** after you parry.
+3. **Strider Kick** on cooldown.
+4. **Immolation Trap** at your feet while the mob has more than 70% of its health.
+5. Low on health: **Deterrence**; **Mend Pet** for the pet.
+6. Skip **Hunter's Mark** and **Summon Hawk** while leveling: the fight lab measured both slower per kill.
 
 **Between fights:** Mend the pet, drink below a third of your mana, eat below two thirds of your health.
 
@@ -42,7 +42,7 @@ Beast-Survival levels on **Immolation Trap** and a strong pet: the cat tanks and
 **Caveats**
 
 - This build takes none of **Counterattack**, **Strider Kick** or **Deterrence**: skip those steps. Between traps your global cooldown is mostly free.
-- **Summon Hawk** (level 58) is the 20th Beast Mastery point, which opens **Bestial Discipline**. The fight lab's melee list never casts it, so its worth while leveling is untested.
+- **Summon Hawk** (level 58) is the 20th Beast Mastery point, which opens **Bestial Discipline**. Do not cast it while leveling: as a melee hunter the fight lab measured it about 5% slower per kill at 60, its 190 mana a cast outweighing its damage.
 - **Improved Tracking** (levels 10-14) adds damage only against the creature type you are tracking: keep tracking set to what you are killing.
 
 **When to change it**

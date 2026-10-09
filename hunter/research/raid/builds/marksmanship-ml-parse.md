@@ -73,7 +73,7 @@ The Marksmanship build the machine-learning talent search found in a full raid (
   7. move down below 'cast Arcane Shot': if time to the next auto attack > 0.5s: cast Aimed Shot (+0.4%, pass 6)
   8. only with 10s or more of the fight left: if auraIsInactive: cast Summon Hawk (+0.2%, pass 6)
   9. drop: if time to the next auto attack > 0.5s: cast Multi-Shot + only above 10% mana: if time to the next auto attack > 0.5s: cast Aimed Shot (+0.2%, pass 7)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 10 passes, the last 2026-10-09, 12 changes to the base rotation; third-seed check: opt-mm-lonewolf-raid-raid-dps 793 -> 859 DPS (+8.2%), sim preset: Beast Mastery 35/16/0 534 -> 544 DPS (+1.9%), mm-lone-wolf-raid 819 -> 896 DPS (+9.4%), marksmanship-ml-parse 789 -> 855 DPS (+8.4%), marksmanship-ml-raid 756 -> 815 DPS (+7.8%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 11 passes, the last 2026-10-09, 12 changes to the base rotation; third-seed check: mm-lone-wolf-raid 819 -> 896 DPS (+9.4%), sim preset: Marksmanship 629 -> 692 DPS (+9.9%), opt-mm-lonewolf-raid-raid-dps 793 -> 859 DPS (+8.2%), marksmanship-ml-parse 789 -> 855 DPS (+8.4%), marksmanship-ml-raid 756 -> 815 DPS (+7.8%)):
   1. drop: if time to the next auto attack > 1s: cast Aimed Shot (+1.7%, pass 1)
   2. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.5%, pass 1)
   3. drop 'time to the next auto attack > 1s' from the condition: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+0.3%, pass 1)

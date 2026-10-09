@@ -92,10 +92,11 @@ Seal Fate daggers: Malice, Cold Blood, Seal Fate and Improved Poisons from Assas
   7. insert at the top: if energy ≤ 29 and timeToNextEnergyTick > 1 and combo points < 5 and not Adrenaline Rush is up: cast Thistle Tea + threshold 29 -> 43.5: if energy ≤ 29 and timeToNextEnergyTick > 1 and combo points < 5 and not Adrenaline Rush is up: cast Thistle Tea (+0.3%, pass 3)
   8. spell probe: insert at the end: cast Hemorrhage (+8.4%, pass 5)
   9. spell probe: insert at the top: if auraIsInactive: cast Ghostly Strike (+2.0%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-09, 3 changes to the base rotation; third-seed check: assassination-seal-fate-raid 304 -> 687 DPS (+125.8%), sim preset: Mutilate 658 -> 654 DPS (-0.6%), assassination-mutilate-raid 300 -> 672 DPS (+124.0%), assassination-ml-raid 304 -> 692 DPS (+127.5%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-09, 4 changes to the base rotation; third-seed check: assassination-ml-raid 312 -> 708 DPS (+126.9%), sim preset: Mutilate 674 -> 672 DPS (-0.2%), assassination-mutilate-raid 308 -> 688 DPS (+123.3%), assassination-seal-fate-raid 312 -> 702 DPS (+125.2%)):
   1. insert before the filler: cast Backstab (+0.8%, pass 1)
   2. spell probe: insert at the end: cast Hemorrhage (+9.9%, pass 5)
   3. spell probe: insert in the middle: if auraIsInactive: cast Ghostly Strike (+1.8%, pass 5)
+  4. move down below 'cast Mutilate': cast Backstab (+0.2%, pass 9)
 
 | # | Priority (the first line whose condition holds is cast) | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) casts/min |
 |---|---|---|

@@ -12,15 +12,16 @@
 
 **In the fight**, top to bottom:
 
-1. **Bloodrage**, then **Charge** in.
-2. **Battle Shout**: keep it up.
-3. **Mortal Strike** whenever ready.
-4. **Overpower** when it lights up (after a dodge).
-5. **Rend** once.
-6. **Execute** when the mob is below 20% health.
-7. **Heroic Strike** with spare rage; **Victory Rush** after a kill.
+1. **Bloodrage** (above 45% health), then **Charge** in; open with **Victory Rush** when it is up and you are below 90% health.
+2. **Battle Shout**: keep it up (it lasts 3 minutes).
+3. **Execute** first once the mob is below 20% health.
+4. **Overpower** whenever it lights up: after a dodge, or from **Bloodthrill** while **Rend** ticks.
+5. **Mortal Strike** whenever ready.
+6. **Rend** once, while the mob has more than a third of its health.
+7. **Heroic Strike** with spare rage: keep 15 for **Overpower**, and 30 more when **Mortal Strike** is almost ready.
+8. Two or more mobs: **Sweeping Strikes**, then **Thunder Clap** and **Cleave**.
 
-**Between fights:** Bandage below 60% health, eat below half.
+**Between fights:** Bandage below 60% health, eat below 40%.
 
 ## Why this rotation
 
@@ -29,10 +30,10 @@ Arms levels with a two-hander in **Battle Stance**. Open with **Bloodrage** and 
 **Why it works**
 
 - **Bloodrage** then **Charge** puts rage in your bar before the first swing: **Bloodrage** gives 10 at once and 10 more over 10 seconds, **Charge** 9 to 15 by rank plus 6 with **Improved Charge**, and the mob is stunned for a second. The fight lab uses **Bloodrage** only above 45% health, on about every third pull (1-minute cooldown).
-- Once the mob is below 20%, **Execute** goes before everything else in the fight lab, although the list above shows it sixth: it spends all your rage (600 damage plus 15 per extra point at rank 5) and usually ends the fight. It is about a sixth of your damage at 60.
+- Once the mob is below 20%, **Execute** goes before everything else in the fight lab: it spends all your rage (600 damage plus 15 per extra point at rank 5) and usually ends the fight. It is about a sixth of your damage at 60.
 - **Overpower** comes next whenever it lights up: 5 rage, 50% more crit chance with **Improved Overpower**, and a window of only 5 to 6 seconds. With **Bloodthrill** (16% with your 4 points), main-hand hits on a mob with your **Rend** light it up too, so it is not just a dodge reaction.
 - **Mortal Strike** (from 40) on cooldown is your biggest attack, about a fifth of your damage at 60. **Rend** goes on once per mob, early: the fight lab casts it only while the mob has more than a third of its health and you have 40 rage or **Mortal Strike** is cooling down, so it never delays **Mortal Strike**.
-- **Heroic Strike** only takes rage you will not need: the fight lab keeps 15 for an **Overpower** and, when **Mortal Strike** is 3 seconds or less from ready, 30 more for it. Before 40 it is your main rage dump (about 40% of your damage at level 20); after **Mortal Strike** it almost disappears.
+- **Heroic Strike** only takes rage you will not need: the fight lab keeps 15 for an **Overpower** and, when **Mortal Strike** is 3 seconds or less from ready, 30 more for it. Before 40 it is your main rage dump (about a quarter of your damage at level 30); after **Mortal Strike** it almost disappears.
 - **Battle Shout** lasts 3 minutes in Forever, so one shout covers several pulls. **Victory Rush** is free for 20 seconds after a kill and heals 10% of your health: it opens your next fight whenever you are below 90%.
 
 **Caveats**

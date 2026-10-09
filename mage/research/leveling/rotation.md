@@ -122,21 +122,21 @@ Report: [fightlab/frostfire-leveling.md](fightlab/frostfire-leveling.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Ice Lance | 2.1 | 2.8 | 3.1 | 2.4 | 2.3 | 67% |
+| Ice Lance | 2.0 | 2.7 | 3.1 | 2.4 | 2.3 | 67% |
 | Frostfire Bolt | 0.0 | 0.0 | 1.8 | 1.6 | 1.5 | 15% |
-| Fire Blast | 1.2 | 1.6 | 1.4 | 1.1 | 1.1 | 13% |
+| Fire Blast | 1.1 | 1.6 | 1.4 | 1.1 | 1.1 | 13% |
 | Frost Nova | 0.5 | 0.7 | 0.7 | 0.6 | 0.5 | 1% |
 | Cone of Cold | 0.0 | 0.4 | 0.4 | 0.3 | 0.3 | 3% |
 | Wand | 0.0 | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
-| Counterspell | 0.0 | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
-| Frostbolt | 2.6 | 1.6 | 0.0 | 0.0 | 0.0 | 0% |
+| Counterspell | 0.0 | 0.2 | 0.1 | 0.1 | 0.1 | 0% |
+| Frostbolt | 2.5 | 1.6 | 0.0 | 0.0 | 0.0 | 0% |
 
 ### [`opt-frost-leveling-leveling-st`](builds/opt-frost-leveling-leveling-st.md)
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Ice Lance | 2.7 | 3.8 | 3.6 | 2.7 | 2.5 | 69% |
-| Frostbolt | 2.9 | 2.8 | 2.3 | 1.9 | 1.9 | 29% |
-| Wand | 0.5 | 1.0 | 0.9 | 0.7 | 0.7 | 1% |
+| Ice Lance | 2.5 | 3.6 | 3.6 | 2.7 | 2.5 | 69% |
+| Frostbolt | 2.8 | 2.7 | 2.3 | 1.9 | 1.9 | 29% |
+| Wand | 0.4 | 0.9 | 0.9 | 0.7 | 0.7 | 1% |
 | Frost Nova | 0.5 | 0.8 | 0.7 | 0.6 | 0.6 | 1% |
 | Counterspell | 0.0 | 0.2 | 0.1 | 0.1 | 0.1 | 0% |

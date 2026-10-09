@@ -8,16 +8,17 @@
 
 ## How to play
 
-**Before the fight:** Moonkin Form once you have it.
+**Before the fight:** **Moonkin Form** once you have it.
 
 **In the fight**, top to bottom:
 
-1. **Moonfire** and **Insect Swarm** on the mob.
-2. **Wrath** while the mob walks in.
-3. **Starfire** when Eclipse lights up or the mob is rooted or stunned, **Wrath** otherwise.
-4. Low on health: **Entangling Roots** on the mob, then **Regrowth**.
+1. **Moonfire** on a mob above a third of its health, **Insect Swarm** above 40%.
+2. **Wrath** while the mob walks in and whenever nothing below applies: each one stores **Eclipse** charges.
+3. **Starfire** while **Eclipse** has charges, or while the mob is rooted or stunned.
+4. A nearly dead mob: finish it with **Moonfire** or **Wrath**.
+5. Low on health: **Entangling Roots** on the mob, step out of melee, then **Regrowth** (it drops **Moonkin Form**; go back in while the mob still has half its health).
 
-**Between fights:** Drink when your mana is below a third.
+**Between fights:** Stay in **Moonkin Form** and eat when your health is below 80%. Drink when your mana is below 45%.
 
 ## Why this rotation
 
@@ -27,13 +28,13 @@ Pull with instants, then cast: **Moonfire** and **Insect Swarm** on the mob, **W
 
 - **Moonfire** and **Insect Swarm** first: both are instant, so they tick while the mob is still running at you, and **Genesis** adds up to 5% to their ticks. The fight lab puts **Moonfire** only on a mob above 35% health and **Insect Swarm** above 40%: a mob below that dies before they pay off.
 - **Wrath** is the default nuke: with **Improved Wrath** it is a 1.5-second cast for half the mana, and a short cast loses little to pushback once the mob is hitting you. Each **Wrath** also stores 2 **Eclipse** charges for the **Starfire** casts after it. Before **Eclipse** at 30 the fight lab casts almost nothing else, about 10 Wraths a kill at 20.
-- **Starfire** hits about three times as hard at 60 but takes 3 seconds even with **Improved Starfire**, so it waits for a faster or a safe moment: when **Eclipse** has charges (each charge shortens one **Starfire**), or when the mob is rooted or stunned (**Improved Starfire** stuns for 3 seconds 15% of the time).
+- **Starfire** hits about three times as hard at 60 but takes 3 seconds even with **Improved Starfire**, so it waits for a faster or a safe moment: when **Eclipse** has charges (each charge shortens one **Starfire**), or when the mob is rooted or stunned (**Improved Starfire** stuns for 3 seconds 15% of the time). From 41, **Nature's Focus** also lets you ignore some of the pushback.
 - Low on health: **Entangling Roots** holds the mob in place but it still hits you if you stand next to it, so step away, then cast **Regrowth** from range. A direct hit can break the roots.
 
 **Caveats**
 
-- **Eclipse** at the 1 point this build takes saves 0.17 seconds a charge (0.5 at 3 points). The fight lab gives the 1-point **Eclipse** the full 0.5 seconds, so it overrates the weave: expect a smaller gain in the game (to check at launch).
-- **Moonkin Form** (40) blocks healing spells: to cast **Regrowth** you must leave it, and going back costs 35% of your base mana. The fight lab ignores both, so leave the form only when you must heal.
+- **Eclipse** at the 1 point this build takes saves 0.17 seconds a charge (0.5 at 3 points), so the weave is a small gain: the fight lab measured the full 0.5 seconds it used to give every rank as 2-3% faster per kill than the real 1-point value.
+- **Moonkin Form** (40) blocks healing spells: to cast **Regrowth** you must leave it, and going back costs 35% of your base mana. So stay in the form between fights and eat; leave it only for an emergency heal, and go back in while the mob still has half its health (the fight lab plays it that way).
 - Mana: **Moonglow** cuts your damage spells' cost by 25% and **Reflection** keeps half your regeneration going while you cast. The tuned fight lab drinks below 45% mana and eats below 80% health: topping up early measured 1.7% faster per kill, with fewer deaths at 40-50.
 
 **When to change it**

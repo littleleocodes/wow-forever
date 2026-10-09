@@ -16,14 +16,14 @@
 
 **In the fight**, top to bottom:
 
-1. **Hunter's Mark** and **Serpent Sting**.
+1. **Hunter's Mark** and **Serpent Sting** while the mob has most of its health.
 2. **Bestial Wrath**, **Intimidation** and **Rapid Fire** at the start when they are ready.
-3. **Aimed Shot** or **Multi-Shot** whenever ready (they share a cooldown), **Arcane Shot** or **Summon Hawk** in between.
-4. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards.
-5. **Mend Pet** when the pet drops below a third of its health.
-6. If a mob reaches you: **Wing Clip** and **Raptor Strike**, or **Feign Death**.
+3. **Summon Hawk** whenever it is ready (from level 25) while the mob has a third of its health or more; skip **Arcane Shot**, which shares its timer.
+4. **Aimed Shot** whenever it is ready while the mob has more than a quarter of its health; on a single mob never **Multi-Shot** (they share a cooldown).
+5. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards. **Mend Pet** when the pet drops below a third of its health.
+6. If a mob reaches you: **Wing Clip** and **Raptor Strike** until the pet takes it back.
 
-**Between fights:** Mend the pet, drink below a third of your mana, eat below two thirds of your health.
+**Between fights:** Mend the pet, drink below 15% mana, eat below two thirds of your health.
 
 ## Why this rotation
 
@@ -32,7 +32,7 @@ Beast-Marks levels exactly like Beast Mastery: the cat tanks and you shoot from 
 **Why it works**
 
 - Send the pet first, then **Hunter's Mark** and **Serpent Sting** while the mob is still healthy (the fight lab: above 30% and 40% of its health). The cat holds the mob until your threat passes 130% of its own, and **Unleashed Fury**, **Ferocity** and **Frenzy** make it a real part of your damage.
-- **Summon Hawk** (level 25) gets the timer it shares with **Arcane Shot**: the fight lab never casts **Arcane Shot** with this rotation (about 2% faster per kill), and in the leveling search **Summon Hawk** was this build's most valuable talent at 60.
+- **Summon Hawk** (level 25) gets the timer it shares with **Arcane Shot**: the fight lab never casts **Arcane Shot** with this rotation (about 2% faster per kill), and the hawks do about a tenth of your damage at 60.
 - **Aimed Shot** gets the cooldown it shares with **Multi-Shot**: on one mob the fight lab never casts **Multi-Shot** (about 2.5% faster), and it skips **Aimed Shot** once the mob is below a quarter of its health.
 - **Auto Shot** does most of the rest and cannot fire within 8 yards: step back out if the mob ends up beside you.
 - **Rapid Fire** at the start of a fight when it is ready (a 5-minute cooldown in this build), and **Mend Pet** when the pet drops below about a third.

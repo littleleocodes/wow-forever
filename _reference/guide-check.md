@@ -15,16 +15,16 @@
 | druid | Restoration | raid | 2026-10-09 | healer-policy d9ac0c5f115f |
 | druid | Restoration | leveling | 2026-10-09 | leveling:balance-dps a25cd760d1dd, leveling:feral-cat-dps 16d2cf55e9e2 |
 | hunter | Beast Mastery | raid | 2026-10-09 | bm-raid e3be453e2dc2 |
-| hunter | Beast Mastery | leveling | 2026-10-09 | leveling:bm-leveling bdd5caffa622, leveling:melee-dps 0d356a8c2896, leveling:mm-raid 2b92afb9a84f |
+| hunter | Beast Mastery | leveling | 2026-10-09 | leveling:bm-leveling d30c4730b4e6, leveling:melee-dps b142fcdc0898, leveling:mm-raid 5bb053fcbea8 |
 | hunter | Marksmanship | raid | 2026-10-09 | mm-lonewolf-raid 91babb5dc17c, mm-raid 65f6da1ac1d4 |
-| hunter | Marksmanship | leveling | 2026-10-09 | leveling:bm-leveling bdd5caffa622, leveling:melee-dps 0d356a8c2896, leveling:mm-raid 2b92afb9a84f |
+| hunter | Marksmanship | leveling | 2026-10-09 | leveling:bm-leveling d30c4730b4e6, leveling:melee-dps b142fcdc0898, leveling:mm-raid 5bb053fcbea8 |
 | hunter | Survival | raid | 2026-10-09 | melee-dps 01159031f70a |
-| hunter | Survival | leveling | 2026-10-09 | leveling:bm-leveling bdd5caffa622, leveling:melee-dps 0d356a8c2896, leveling:mm-raid 2b92afb9a84f |
+| hunter | Survival | leveling | 2026-10-09 | leveling:bm-leveling d30c4730b4e6, leveling:melee-dps b142fcdc0898, leveling:mm-raid 5bb053fcbea8 |
 | hunter | Hybrid Beast Mastery/Marksmanship | raid | 2026-10-09 | bm-raid e3be453e2dc2, mm-lonewolf-raid 91babb5dc17c, mm-raid 65f6da1ac1d4 |
-| hunter | Hybrid Beast Mastery/Marksmanship | leveling | 2026-10-09 | leveling:bm-leveling bdd5caffa622, leveling:melee-dps 0d356a8c2896, leveling:mm-raid 2b92afb9a84f |
-| hunter | Hybrid Marksmanship/Survival | leveling | 2026-10-09 | leveling:bm-leveling bdd5caffa622, leveling:melee-dps 0d356a8c2896, leveling:mm-raid 2b92afb9a84f |
+| hunter | Hybrid Beast Mastery/Marksmanship | leveling | 2026-10-09 | leveling:bm-leveling d30c4730b4e6, leveling:melee-dps b142fcdc0898, leveling:mm-raid 5bb053fcbea8 |
+| hunter | Hybrid Marksmanship/Survival | leveling | 2026-10-09 | leveling:bm-leveling d30c4730b4e6, leveling:melee-dps b142fcdc0898, leveling:mm-raid 5bb053fcbea8 |
 | hunter | Hybrid Beast Mastery/Survival | raid | 2026-10-09 | bm-raid e3be453e2dc2, melee-dps 01159031f70a |
-| hunter | Hybrid Beast Mastery/Survival | leveling | 2026-10-09 | leveling:bm-leveling bdd5caffa622, leveling:melee-dps 0d356a8c2896, leveling:mm-raid 2b92afb9a84f |
+| hunter | Hybrid Beast Mastery/Survival | leveling | 2026-10-09 | leveling:bm-leveling d30c4730b4e6, leveling:melee-dps b142fcdc0898, leveling:mm-raid 5bb053fcbea8 |
 | mage | Frost | raid | 2026-10-09 | frost-raid ceaa8ac62133 |
 | mage | Frost | leveling | 2026-10-09 | leveling:arcane-leveling ca255cff8f0d, leveling:fire-leveling 57da8af441b1, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 5854b75cdb27, leveling:frostfire-leveling b1bfa6483c74 |
 | mage | Hybrid Arcane/Frost | raid | 2026-10-09 | arcane-dps 7bae7936e6c9, frost-raid ceaa8ac62133 |

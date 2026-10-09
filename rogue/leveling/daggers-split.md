@@ -48,6 +48,8 @@ Daggers (split) plays the dagger leveling list: **Garrote** from stealth, **Sini
 - Below half health while the mob still has more than 30% of its health, press **Evasion** (50% more dodge for 15 seconds, and with **Setup** more combo points).
 - In a dungeon, where the tank holds the mob, stand behind it and build with **Backstab**; the fight lab only plays solo.
 
+*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

@@ -180,7 +180,7 @@ Arcane Shot (2026-09-29): no rotation had cast it (the rotation search only offe
   7. move down below 'cast Arcane Shot': if time to the next auto attack > 0.5s: cast Aimed Shot (+0.4%, pass 6)
   8. only with 10s or more of the fight left: if auraIsInactive: cast Summon Hawk (+0.2%, pass 6)
   9. drop: if time to the next auto attack > 0.5s: cast Multi-Shot + only above 10% mana: if time to the next auto attack > 0.5s: cast Aimed Shot (+0.2%, pass 7)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 10 passes, the last 2026-10-09, 12 changes to the base rotation; third-seed check: opt-mm-lonewolf-raid-raid-dps 793 -> 859 DPS (+8.2%), sim preset: Beast Mastery 35/16/0 534 -> 544 DPS (+1.9%), mm-lone-wolf-raid 819 -> 896 DPS (+9.4%), marksmanship-ml-parse 789 -> 855 DPS (+8.4%), marksmanship-ml-raid 756 -> 815 DPS (+7.8%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 11 passes, the last 2026-10-09, 12 changes to the base rotation; third-seed check: mm-lone-wolf-raid 819 -> 896 DPS (+9.4%), sim preset: Marksmanship 629 -> 692 DPS (+9.9%), opt-mm-lonewolf-raid-raid-dps 793 -> 859 DPS (+8.2%), marksmanship-ml-parse 789 -> 855 DPS (+8.4%), marksmanship-ml-raid 756 -> 815 DPS (+7.8%)):
   1. drop: if time to the next auto attack > 1s: cast Aimed Shot (+1.7%, pass 1)
   2. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.5%, pass 1)
   3. drop 'time to the next auto attack > 1s' from the condition: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+0.3%, pass 1)
@@ -396,19 +396,21 @@ Melee hunter (2026-09-27): our melee builds on our own base rotation and a dual-
   7. move to the top: cast Mongoose Bite (+0.2%, pass 4)
   8. move to the top: cast Aspect of the Beast (+0.2%, pass 4)
   9. move to the top: if auraIsInactive: cast Summon Hawk (+0.3%, pass 7)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 9 passes, the last 2026-10-09, 2 changes to the base rotation; third-seed check: survival-raid 749 -> 1027 DPS (+37.1%), melee-survival-raid 764 -> 1047 DPS (+37.0%), opt-melee-dps-raid-dps 764 -> 1017 DPS (+33.0%), survival-ml-parse 729 -> 998 DPS (+37.0%), beast-survival-open-raid 736 -> 1051 DPS (+42.7%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 10 passes, the last 2026-10-09, 4 changes to the base rotation; third-seed check: beast-survival-open-raid 736 -> 1057 DPS (+43.6%), melee-survival-raid 764 -> 1048 DPS (+37.1%), opt-melee-dps-raid-dps 764 -> 1017 DPS (+33.1%), survival-raid 749 -> 1028 DPS (+37.3%), survival-ml-parse 729 -> 999 DPS (+37.1%)):
   1. insert before the filler: cast Wing Clip (+10.3%, pass 1)
   2. spell probe: insert in the middle: if auraIsInactive: cast Summon Hawk (+15.0%, pass 2)
+  3. move down below 'cast Strider Kick': if auraIsInactive: cast Summon Hawk (+0.3%, pass 10)
+  4. move to the top: cast Raptor Strike (+0.3%, pass 10)
 
 The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring change what mana is worth), top priority first:
 
-1. cast Aspect of the Beast
-2. use every other cooldown when ready
-3. cast Counterattack
-4. cast Mongoose Bite
-5. if auraIsInactive: cast Summon Hawk
+1. cast Raptor Strike
+2. cast Aspect of the Beast
+3. use every other cooldown when ready
+4. cast Counterattack
+5. cast Mongoose Bite
 6. cast Strider Kick
-7. cast Raptor Strike
+7. if auraIsInactive: cast Summon Hawk
 8. cast Immolation Trap
 9. cast Wing Clip
 10. cast Explosive Trap

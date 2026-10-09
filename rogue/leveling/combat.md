@@ -50,6 +50,8 @@ Combat levels on short fights: open with **Garrote** from stealth, build 5 point
 - In long fights such as dungeon bosses, **Slice and Dice** pays again: the raid list keeps it up from the first point.
 - If a pull goes wrong, **Gouge**, **Kidney Shot**, **Vanish** and **Sprint** get you out; the fight lab does not model adds or escapes.
 
+*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

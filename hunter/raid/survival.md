@@ -14,9 +14,9 @@
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Mongoose Bite** after you dodge
-2. **Strider Kick**
-3. **Raptor Strike**
+1. **Raptor Strike**
+2. **Mongoose Bite** after you dodge
+3. **Strider Kick**
 4. **Immolation Trap**
 5. **Wing Clip**
 
@@ -56,11 +56,13 @@ Melee Survival fights at the boss with two one-handers and no pet. **Raptor Stri
 - If you pull threat, **Feign Death** (30-second cooldown; **Survival Tactics** makes it more likely to land).
 - In the last few seconds, skip a fresh **Immolation Trap**: its damage comes over 15 seconds.
 
+*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## The numbers
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 1048 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 1047 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
@@ -97,7 +99,7 @@ Melee Survival fights at the boss with two one-handers and no pet. **Raptor Stri
 
 ## Other builds of this spec
 
-- [Survival — Raid](../research/raid/builds/survival-raid.md) (5/16/30, 1028 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5-005055001-50023023005022213-6)
+- [Survival — Raid](../research/raid/builds/survival-raid.md) (5/16/30, 1027 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5-005055001-50023023005022213-6)
 - [Survival (optimized)](../research/raid/builds/opt-melee-dps-raid-dps.md) (5/15/31, 1016 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5-005045001-500250030050220151-6)
 - [Survival — Melee](../research/raid/builds/survival-melee.md) (9/11/31) — [open the talent tree](https://talentsforever.com/hunter/60/522-005015-500230131050220151-6)
 

@@ -26,7 +26,7 @@ Our tuned rotation `ret-dps.apl.json` (the simulator's `default.apl.json` with t
   15. drop 'mana % ≥ 15%' from the condition: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness (+0.2%, pass 5)
   16. threshold 70% -> 65%: if mana % ≥ 15% and Seal of Righteousness is up and mana % ≥ 70%: cast Seal of Command (+0.5%, pass 5)
   17. threshold 1s -> 2s: if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 1s: cast Seal of Command (+0.2%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-09, 11 changes to the base rotation; third-seed check: opt-ret-dps-raid-dps 894 -> 995 DPS (+11.3%), sim preset: P4/P5 Ret 873 -> 969 DPS (+11.1%), ret-raid-dps 875 -> 972 DPS (+11.1%), ret-full-buffs-raid 902 -> 998 DPS (+10.5%), retribution-ml-raid 899 -> 998 DPS (+11.0%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 10 passes, the last 2026-10-09, 11 changes to the base rotation; third-seed check: retribution-ml-raid 899 -> 998 DPS (+11.0%), sim preset: P4/P5 Ret 873 -> 969 DPS (+11.1%), ret-raid-dps 875 -> 972 DPS (+11.1%), ret-full-buffs-raid 902 -> 998 DPS (+10.5%), opt-ret-dps-raid-dps 894 -> 995 DPS (+11.3%)):
   1. drop 'time left on Seal of Righteousness ≤ 1s' from the condition: if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 1s: cast Seal of Command (+2.4%, pass 1)
   2. threshold 70% -> 50%: if mana % ≥ 70%: cast Consecration (+1.4%, pass 1)
   3. move to the top: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness (+0.2%, pass 1)
@@ -64,14 +64,15 @@ Before the pull: at -1.5s: cast Seal of Command.
 |---|---|---|---|---|---|---|---|
 | 1 | if time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness | 5.0 | 5.0 | 5.0 | 5.0 | 5.0 | 4.7 |
 | 2 | use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready | as ready |
-| 3 | if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 2s: cast Seal of Command | 5.0 | 5.0 | 5.0 | 5.0 | 5.0 | 4.7 |
-| 4 | if mana % ≥ 15% and Seal of Righteousness is up and mana % ≥ 65%: cast Seal of Command | 5.0 | 5.0 | 5.0 | 5.0 | 5.0 | 4.7 |
-| 5 | cast Hammer of Wrath | 2.0 | 2.0 | 2.0 | 1.7 | 1.9 | 1.3 |
-| 6 | cast Holy Strike | 6.0 | 5.9 | 6.0 | 5.7 | 6.0 | 5.7 |
-| 7 | cast Consecration | 6.2 | 5.9 | 6.3 | 5.7 | 6.1 | 6.0 |
-| 8 | cast Consecration | 0.7 | 0.6 | 0.6 | 0.7 | 0.5 | 1.0 |
+| 3 | if Judgement can be cast: cast Judgement | 7.7 | 7.4 | 7.7 | 7.0 | 7.3 | 7.0 |
+| 4 | if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 2s: cast Seal of Command | 5.0 | 5.0 | 5.0 | 5.0 | 5.0 | 4.7 |
+| 5 | if mana % ≥ 15% and Seal of Righteousness is up and mana % ≥ 65%: cast Seal of Command | 5.0 | 5.0 | 5.0 | 5.0 | 5.0 | 4.7 |
+| 6 | cast Hammer of Wrath | 2.0 | 2.0 | 2.0 | 1.7 | 1.9 | 1.3 |
+| 7 | cast Holy Strike | 6.0 | 5.9 | 6.0 | 5.7 | 6.0 | 5.7 |
+| 8 | cast Consecration | 6.2 | 5.9 | 6.3 | 5.7 | 6.1 | 6.0 |
+| 9 | cast Consecration | 0.7 | 0.6 | 0.6 | 0.7 | 0.5 | 1.0 |
 
-Lines of the simulator's rotation these builds never cast: cast Holy Shock, cast Judgement (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Holy Shock (its condition never held in these fights).
 
 Damage by ability:
 
@@ -110,13 +111,12 @@ Before the pull: at -30s: cast Righteous Fury; at -3.5s: cast Seal of Righteousn
 | 1 | cast Templar's Bulwark | 0.3 | 0.3 | 0.3 | 0.3 |
 | 2 | cast Holy Shield | 6.0 | 5.7 | 5.7 | 5.6 |
 | 3 | use every other cooldown when ready | as ready | as ready | as ready | as ready |
-| 4 | if time left on Seal of Righteousness ≤ 1s: cast Seal of Righteousness | 2.3 | 2.3 | 2.3 | 2.2 |
-| 5 | cast Consecration | 6.8 | 4.5 | 4.4 | 3.9 |
-| 6 | cast Holy Strike | 6.0 | 6.0 | 6.0 | 6.0 |
-| 7 | if health % < 10%: cast Lay on Hands | 0.3 | 0.3 | 0.3 | 0.3 |
-| 8 | if Redoubt is up: cast Holy Shield | 6.0 | 5.7 | 5.7 | 5.6 |
-
-Lines of the simulator's rotation these builds never cast: cast Judgement (its condition never held in these fights).
+| 4 | cast Judgement | 6.8 | 6.7 | 6.8 | 6.7 |
+| 5 | if time left on Seal of Righteousness ≤ 1s: cast Seal of Righteousness | 2.3 | 2.3 | 2.3 | 2.2 |
+| 6 | cast Consecration | 6.8 | 4.5 | 4.4 | 3.9 |
+| 7 | cast Holy Strike | 6.0 | 6.0 | 6.0 | 6.0 |
+| 8 | if health % < 10%: cast Lay on Hands | 0.3 | 0.3 | 0.3 | 0.3 |
+| 9 | if Redoubt is up: cast Holy Shield | 6.0 | 5.7 | 5.7 | 5.6 |
 
 Damage by ability (threat for tanks):
 
@@ -141,12 +141,13 @@ Before the pull: at -30s: cast Righteous Fury; at -3.5s: cast Seal of Righteousn
 |---|---|---|
 | 1 | cast Templar's Bulwark | 0.3 |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if time left on Seal of Righteousness ≤ 1s: cast Seal of Righteousness | 2.3 |
-| 4 | cast Consecration | 7.1 |
-| 5 | cast Holy Strike | 6.0 |
-| 6 | if health % < 10%: cast Lay on Hands | 0.3 |
+| 3 | cast Judgement | 8.3 |
+| 4 | if time left on Seal of Righteousness ≤ 1s: cast Seal of Righteousness | 2.3 |
+| 5 | cast Consecration | 7.1 |
+| 6 | cast Holy Strike | 6.0 |
+| 7 | if health % < 10%: cast Lay on Hands | 0.3 |
 
-Lines of the simulator's rotation these builds never cast: cast Holy Shield (needs the Holy Shield talent); cast Judgement (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Holy Shield (needs the Holy Shield talent).
 
 Damage by ability (threat for tanks):
 
