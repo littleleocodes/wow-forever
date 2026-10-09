@@ -24,6 +24,31 @@
 
 **Between fights:** **Life Tap** back to 70% mana, heal the Voidwalker with **Consume Shadows** or **Health Funnel**, eat only below a third of your health.
 
+## Why this rotation
+
+The classic warlock leveling split: Affliction's dots do the killing while a Voidwalker strengthened by Demonology holds the mob, and you shoot your wand between dots.
+
+**Why it works**
+
+- Send the Voidwalker in first: **Torment** holds the mob, **Improved Voidwalker** makes **Torment** and **Consume Shadows** 30% stronger, **Unholy Power** and **Soul Link** make the Voidwalker hit harder, and **Demonic Knowledge** adds spell damage for you while it is out. Open with **Amplify Curse** whenever it is ready: it makes that fight's **Bane of Agony** 50% stronger.
+- **Corruption** and **Bane of Agony** do about half your damage at 60 and **Siphon Life** another tenth while it heals you; the fight lab rates **Siphon Life** and **Demonic Knowledge** as the build's most valuable talents at 60. Skip **Corruption** on a mob below about a third of its health.
+- **Immolate** comes last, only on a mob above about half its health and while you have more than half your mana: about 5% of your damage at 60.
+- Your wand is the filler, not **Shadow Bolt**: the fight lab measured kills about 7% faster with no **Shadow Bolt** at all, since the wand costs no mana and the dots do the killing.
+- Between fights, **Life Tap** back to about 70% mana while your health stays above 60%; **Demonic Energies** gives the Voidwalker the same mana and heals it for 15% of your spell damage. Heal it with **Consume Shadows** (not usable in combat) or **Health Funnel**, which **Improved Health Funnel** makes cheaper and threat-free.
+
+**Caveats**
+
+- This build has no **Wrack**, so skip that line: the fight lab also measured kills about 6.5% faster when a build that has it never casts it.
+- When a mob reaches you, cast **Death Coil** if you are below about 60% health (it heals you for its damage); otherwise let **Torment** take it back. The fight lab measured never casting **Fear** about 1.5% faster.
+- **Curse of the Elements** costs more than it gives while leveling (up to 3% slower kills at levels 50-60 in the fight lab). **Curse of Exhaustion** (level 56) slows a mob by 30% for a runner or for kiting, which the fight lab does not simulate.
+- **Improved Sayaad** and **Improved Felhunter** only help other demons, and **Decimation** only **Soul Fire** and **Shadow Bolt**, which this rotation skips: the fight lab finds no use for them with the Voidwalker.
+
+**When to change it**
+
+- If the Voidwalker dies mid-fight, **Fel Domination** (5-minute cooldown) with **Master Summoner** cuts the 10-second summon to about half a second: put a new one up at once.
+- Below about a third of your health with a mob on you, use a Healthstone (**Create Healthstone** between fights).
+- Finish a nearly dead mob with the wand; start no new spell on it.
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

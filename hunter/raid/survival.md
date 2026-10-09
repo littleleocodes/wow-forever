@@ -29,6 +29,33 @@
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
+## Why this rotation
+
+Melee Survival fights at the boss with two one-handers and no pet. **Raptor Strike** replaces a swing every 6 seconds, **Mongoose Bite** goes whenever it lights up, **Strider Kick** and **Immolation Trap** go on cooldown, and **Wing Clip** fills every other global cooldown.
+
+**Why it works**
+
+- **Hunter's Mark** before the pull is for **Expose Prey**: each of your hits on a marked target has a 10% chance to light up **Mongoose Bite** for 10 seconds. Otherwise **Mongoose Bite** lights up only after you dodge (not the boss), and in a raid the boss hits your tank, so nearly all your bites come from **Expose Prey**. The mark lasts 2 minutes: put it back when it drops.
+- **Aspect of the Beast** adds 110 melee attack power, and with **Deadly Aspects** each melee auto attack has a 10% chance to speed your swings by 30% for 12 seconds. **Rapid Fire** speeds up melee too in Forever (40% for 15 seconds): press it at the pull.
+- **Mongoose Bite** comes first when it lights up: weapon damage plus 57, and **Lacerating Strikes** adds a bleed worth 40% of the bite over 21 seconds. Using it at once frees its 5-second cooldown for the next one.
+- **Strider Kick** (full weapon damage, 8-second cooldown) and **Immolation Trap** go on cooldown. Traps work in combat in Forever but land at your own feet, so standing at the boss puts the trap under it: 690 Fire damage over 15 seconds, 30% more with **Clever Traps**, every 18 seconds with **Survivalist's Discipline**.
+- **Raptor Strike** never waits its turn: it replaces your next main-hand swing and costs no global cooldown, so queue it every time its 6-second cooldown ends.
+- **Wing Clip** is the filler. Its own hit is small (50 damage), but every hit on your marked target is another chance at **Mongoose Bite**, and the simulator measured about 10% more damage in a full raid with **Wing Clip** in every empty global cooldown.
+
+**Caveats**
+
+- No pet: **Lone Wolf**'s 20% needs no active pet, so **Dismiss Pet** before the pull. Track the boss's creature type too: **Improved Tracking** adds 5% only against the type you are tracking.
+- Mana: **Resourcefulness** cuts the cost of traps and melee abilities by 60%, and in a full raid that is enough. With only your own buffs the simulator's hunter ran dry for about 45 seconds of a 3-minute fight; when short, spend the mana on **Mongoose Bite**, **Strider Kick** and the trap before **Wing Clip**.
+- Blizzard's notes say **Expose Prey** works on the target of your own **Hunter's Mark**. With several hunters in the raid, make sure the mark on the boss is yours (the simulator accepts any).
+- **Explosive Trap** shares the fire-trap cooldown with **Immolation Trap**, so on one target it never comes up.
+
+**When to change it**
+
+- Adds around you: **Explosive Trap** instead of **Immolation Trap**; it hits everything within 10 yards.
+- When you must leave the boss, make **Strider Kick** your last hit: it adds 30% movement speed for 3 seconds.
+- If you pull threat, **Feign Death** (30-second cooldown; **Survival Tactics** makes it more likely to land).
+- In the last few seconds, skip a fresh **Immolation Trap**: its damage comes over 15 seconds.
+
 ## The numbers
 
 | Setting | DPS |

@@ -22,6 +22,31 @@
 
 **Between fights:** Bandage below 60% health, eat below half.
 
+## Why this rotation
+
+Subtlety levels on its openers and on dodges: **Premeditation** and a stealth opener put up to 4 points on the mob, one builder makes 5, and **Eviscerate** ends most fights. **Ghostly Strike** and **Setup** turn the mob's dodged swings into combo points.
+
+**Why it works**
+
+- From stealth, **Premeditation** adds 2 points (a 2-minute cooldown, so about every fifth pull) and **Initiative** makes your opener add a second one: up to 4 points before your first builder.
+- Open with **Ambush** at low levels, where fights are short and its burst wins. From about level 30 **Garrote** is worth more, because its 18-second bleed ignores armor and the mob lives through it; **Dirty Deeds** later makes it 30 energy and usable from the front.
+- This build has no **Hemorrhage**, so **Sinister Strike** builds your points all the way (40 energy with **Improved Sinister Strike**). **Ghostly Strike** goes in on its 20-second cooldown once you have it: 180% weapon damage with a dagger and 15% more dodge for 7 seconds.
+- With **Setup**, every dodge adds a combo point, so **Ghostly Strike**, **Lightning Reflexes** and **Evasion** also build points.
+- At 5 points, wait for the energy for **Eviscerate** rather than press a builder whose point would be lost. Cast **Eviscerate** earlier when it would kill the mob: points left on a dead mob are lost.
+- Skip **Slice and Dice** and **Kidney Shot**: the fight lab measured leveling without them about 3% and 1% faster per kill.
+
+**Caveats**
+
+- **Ambush** needs a dagger in your main hand and you behind the mob, and **Ghostly Strike** hits much harder with a dagger: keep daggers in both hands.
+- Pull the next mob within 20 seconds of a kill: **Remorseless Attacks** gives your next **Sinister Strike**, **Ambush** or **Ghostly Strike** 40% more crit chance.
+- **Rupture** is not in the leveling list: the fight lab plays **Eviscerate**, so **Serrated Blades** counts here only for the armor it ignores.
+- Eat below 50% health and bandage below 60%: the fight lab measured eating that late about 4% faster than eating at 65%.
+
+**When to change it**
+
+- Below half health while the mob still has more than 30% of its health, press **Evasion**; if it is on cooldown, **Preparation** resets it, along with **Premeditation** and **Ghostly Strike**.
+- If a pull goes wrong, **Vanish** (90 seconds shorter with **Elusiveness**) gets you out; the fight lab does not model adds or escapes.
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

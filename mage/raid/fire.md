@@ -24,6 +24,31 @@
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
+## Why this rotation
+
+Fire keeps its own **Improved Scorch** debuff at 5 stacks, fires **Fire Blast** on cooldown and casts **Fireball** in between. Crits build **Heating Up**; at 3 stacks **Pyroblast** becomes a 1.5-second cast.
+
+**Why it works**
+
+- **Fire Blast** first whenever it is ready: every 6 seconds with **Wake of Fire**, instant, and **Incineration** and **Critical Mass** make it crit often, feeding **Heating Up** and **Ignite**. The simulator measured using it on cooldown, with no mana saving, 3.7% better than the rule it replaced.
+- **Scorch** keeps Fire Vulnerability at 5 stacks. In Forever **Improved Scorch** is your own debuff: +3% to your Fire damage per stack, for 30 seconds. Build 5 stacks, then refresh it once 7.5 seconds or less are left so a long cast cannot let it drop; the list shows only the stack count, but the early refresh is part of the rule (the simulator measured 7.5 seconds 0.4% better than 5).
+- **Pyroblast** waits for 3 stacks of **Heating Up**. Each crit from **Fireball**, **Fire Blast** or **Scorch** takes 25% off your next **Pyroblast**'s 6-second cast, so 3 stacks make it 1.5 seconds: your biggest hit for its cast time. The list's 2-stack line is a last-chance rule: cast a 3-second **Pyroblast** at 2 stacks only if **Heating Up** has under 3.5 seconds left or the boss dies within 6 seconds.
+- **Fireball** fills everything else: 3 seconds with **Improved Fireball**, about half your damage, and each crit also starts **Ignite**. The list stops starting it with under 3 seconds left, when it would land too late.
+- **Combustion** at the pull and whenever it is back (3 minutes): each Fire hit adds 10% crit until you land 3 crits, which fills **Heating Up** fast.
+
+**Caveats**
+
+- Mana: Fire runs short even in a full raid. The simulator uses your mana gem (from **Conjure Mana Ruby**) at 80% mana and a mana potion whenever it is ready, and still runs dry now and then; **Master of Elements** refunds 30% of a spell's base cost on each crit.
+- The raid list has no **Evocation**: in a 3-minute fight with raid buffs the simulator measured it slightly better without (0.2%). In a longer fight or without mana buffs, channel it when nearly empty with plenty of fight left; the simulator's list for playing without raid buffs does so below 10% mana with more than 25 seconds to go.
+- Several targets: the simulator's own Fire list adds **Blast Wave** and **Flamestrike** at 3 or more targets; this build has no **Blast Wave**, so use **Flamestrike**.
+- The simulator's boss resists nothing. Against an enemy that resists or ignores Fire, every spell here loses damage, and **Frostbolt** is your fallback.
+
+**When to change it**
+
+- In the last 3 seconds a **Fireball** would land too late: cast **Scorch**. The simulator's list uses Rank 1 there, the same line it falls back on when you cannot afford a **Fireball**; Forever gives ranks that low only part of your spell power and fewer talent procs, so use your top **Scorch** whenever you have the 150 mana.
+- With 2 stacks of **Heating Up** and the boss dying within 6 seconds, cast **Pyroblast** now: the third crit may never come.
+- After an add dies, your next **Fire Blast** within 30 seconds gets +50% crit chance from **Wake of Fire**, a likely **Heating Up** stack. The simulator never kills anything, so this is extra.
+
 ## The numbers
 
 | Setting | DPS |

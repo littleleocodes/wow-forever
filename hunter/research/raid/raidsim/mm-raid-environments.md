@@ -5,13 +5,14 @@
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
 | `bm-mm-full-buffs-raid` | 21/30/0 | 472 | 517 | 803 | 803 | 829 |
-| `bm-mm-raid` | 22/29/0 | 461 | 500 | 806 | 806 | 833 |
-| `opt-mm-raid-raid-dps` | 22/29/0 | 461 | 500 | 806 | 806 | 833 |
+| `bm-mm-raid` | 22/29/0 | 461 | 499 | 806 | 806 | 833 |
+| `opt-mm-raid-raid-dps` | 22/29/0 | 461 | 499 | 806 | 806 | 833 |
 | `opt-mm-raid-parse` | 31/20/0 | 454 | 496 | 821 | 836 | 868 |
 | sim preset: Marksmanship | - | 454 | 498 | 845 | 845 | 880 |
-| sim preset: Beast Mastery 35/16/0 | - | 444 | 483 | 770 | 784 | 815 |
-| sim preset: Marksmanship 0/39/12 | - | 430 | 471 | 791 | 791 | 841 |
-| sim preset: Survival 0/15/36 | - | 398 | 433 | 680 | 693 | 715 |
+| `marksmanship-with-a-pet-open-raid` | 7/39/5 | 451 | 495 | 881 | 881 | 914 |
+| sim preset: Beast Mastery 35/16/0 | - | 445 | 484 | 770 | 784 | 815 |
+| sim preset: Marksmanship 0/39/12 | - | 431 | 473 | 791 | 791 | 841 |
+| sim preset: Survival 0/15/36 | - | 396 | 431 | 680 | 693 | 715 |
 
 - **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
 - **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
@@ -28,11 +29,12 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 | `bm-mm-full-buffs-raid` | 472 | +14% | +33% | +9% | +5% | +9% | 803 |
 | `bm-mm-raid` | 461 | +11% | +35% | +10% | +3% | +15% | 806 |
 | `opt-mm-raid-raid-dps` | 461 | +11% | +35% | +10% | +3% | +15% | 806 |
-| `opt-mm-raid-parse` | 454 | +16% | +37% | +11% | +4% | +14% | 821 |
+| `opt-mm-raid-parse` | 454 | +15% | +37% | +11% | +4% | +13% | 821 |
 | sim preset: Marksmanship | 454 | +20% | +32% | +9% | +6% | +19% | 845 |
-| sim preset: Beast Mastery 35/16/0 | 444 | +12% | +37% | +10% | +3% | +12% | 770 |
-| sim preset: Marksmanship 0/39/12 | 430 | +21% | +32% | +9% | +6% | +16% | 791 |
-| sim preset: Survival 0/15/36 | 398 | +16% | +32% | +8% | +6% | +10% | 680 |
+| `marksmanship-with-a-pet-open-raid` | 451 | +26% | +33% | +9% | +7% | +20% | 881 |
+| sim preset: Beast Mastery 35/16/0 | 445 | +11% | +37% | +10% | +3% | +12% | 770 |
+| sim preset: Marksmanship 0/39/12 | 431 | +21% | +32% | +9% | +6% | +16% | 791 |
+| sim preset: Survival 0/15/36 | 396 | +17% | +32% | +8% | +6% | +10% | 680 |
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
 
@@ -42,14 +44,15 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
-| `bm-mm-full-buffs-raid` | 553 | 491 | 472 | 440 | 425 |
+| `bm-mm-full-buffs-raid` | 553 | 491 | 472 | 439 | 424 |
 | `bm-mm-raid` | 535 | 480 | 461 | 428 | 413 |
 | `opt-mm-raid-raid-dps` | 535 | 480 | 461 | 428 | 413 |
-| `opt-mm-raid-parse` | 555 | 466 | 454 | 427 | 414 |
-| sim preset: Marksmanship | 569 | 470 | 454 | 422 | 407 |
-| sim preset: Beast Mastery 35/16/0 | 524 | 456 | 444 | 416 | 406 |
-| sim preset: Marksmanship 0/39/12 | 538 | 451 | 430 | 401 | 383 |
-| sim preset: Survival 0/15/36 | 473 | 411 | 398 | 368 | 355 |
+| `opt-mm-raid-parse` | 555 | 466 | 454 | 426 | 414 |
+| sim preset: Marksmanship | 569 | 471 | 454 | 423 | 407 |
+| `marksmanship-with-a-pet-open-raid` | 595 | 470 | 451 | 423 | 405 |
+| sim preset: Beast Mastery 35/16/0 | 524 | 456 | 445 | 417 | 406 |
+| sim preset: Marksmanship 0/39/12 | 538 | 451 | 431 | 398 | 382 |
+| sim preset: Survival 0/15/36 | 473 | 411 | 396 | 369 | 354 |
 
 Gear presets: raid `hunter-dps-p1.p1opt.gear.json`, maximum `hunter-dps-p1.p1opt.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

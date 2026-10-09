@@ -25,6 +25,29 @@
 
 **Between fights:** Mend the pet, drink below a third of your mana, eat below two thirds of your health.
 
+## Why this rotation
+
+Beast-Marks levels exactly like Beast Mastery: the cat tanks and you shoot from range. The split adds Marksmanship's cheaper shots (**Efficiency**) and stronger stings (**Improved Stings**) to a full set of pet talents.
+
+**Why it works**
+
+- Send the pet first, then **Hunter's Mark** and **Serpent Sting** while the mob is still healthy (the fight lab: above 30% and 40% of its health). The cat holds the mob until your threat passes 130% of its own, and **Unleashed Fury**, **Ferocity** and **Frenzy** make it a real part of your damage.
+- **Summon Hawk** (level 25) gets the timer it shares with **Arcane Shot**: the fight lab never casts **Arcane Shot** with this rotation (about 2% faster per kill), and in the leveling search **Summon Hawk** was this build's most valuable talent at 60.
+- **Aimed Shot** gets the cooldown it shares with **Multi-Shot**: on one mob the fight lab never casts **Multi-Shot** (about 2.5% faster), and it skips **Aimed Shot** once the mob is below a quarter of its health.
+- **Auto Shot** does most of the rest and cannot fire within 8 yards: step back out if the mob ends up beside you.
+- **Rapid Fire** at the start of a fight when it is ready (a 5-minute cooldown in this build), and **Mend Pet** when the pet drops below about a third.
+
+**Caveats**
+
+- This build takes neither **Bestial Wrath** nor **Intimidation**: skip the step that names them.
+- From level 57, **Improved Tracking** adds damage only against the creature type you are tracking: switch tracking to what you are killing.
+- The fight lab drinks only below 15% mana, which measured slightly faster than drinking at a third, and never uses **Feign Death** to shed a mob: **Wing Clip** and **Raptor Strike** hold it until the pet's Growl takes it back.
+
+**When to change it**
+
+- Several mobs: **Multi-Shot** and **Volley** (no cooldown in Forever) instead of single-target shots.
+- If the pet dies, finish the mob in melee or **Feign Death**, and revive it before the next pull. When a mob is nearly dead, stop spending mana and let **Auto Shot** and the pet finish it.
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

@@ -7,7 +7,7 @@
 | druid | `balance-dps` | `balance-moonkin-raid` | 513 | Balance | 468 | `opt-balance-dps-raid-dps` | 513 |
 | druid | `feral-bear-tank` | `feral-bear-tank` | 542 | Bear Tank 0/31/20 | 505 | `opt-feral-bear-tank-raid-tank` | 542 |
 | druid | `feral-cat-dps` | `opt-feral-cat-dps-raid-dps` | 368 | Feral Cat 9/35/7 | 357 | `opt-feral-cat-dps-raid-dps` | 368 |
-| hunter | `bm-raid` | `beast-marks-open-raid` | 464 | - | - | - | - |
+| hunter | `bm-raid` | `beast-mastery-ml-parse` | 489 | - | - | - | - |
 | hunter | `melee-dps` | `survival-raid` | 486 | - | - | - | - |
 | hunter | `mm-lonewolf-raid` | `opt-mm-lonewolf-raid-raid-dps` | 463 | Marksmanship | 359 | `opt-mm-lonewolf-raid-raid-dps` | 463 |
 | hunter | `mm-raid` | `bm-mm-full-buffs-raid` | 472 | Marksmanship | 454 | `opt-mm-raid-raid-dps` | 461 |
@@ -47,10 +47,10 @@ The best of our builds per spec model on the boss-level training dummy with your
 | druid | Forever | `feral-cat-dps` | `opt-feral-cat-dps-raid-dps` (9/31/11) | 368 | 401 | 594 | 594 | 620 | `opt-feral-cat-dps-parse` 594 | Feral Cat 9/35/7 691 |
 | druid | Classic | `balance-dps` | `balance-moonkin-raid` (35/0/16) | 224 | - | 567 | 740 | 746 | - | Balance 741 |
 | druid | Classic | `feral-cat-dps` | `feral-cat-dps` (14/32/5) | 239 | - | 671 | 1563 | 1666 | - | Feral 1597 |
-| hunter | Forever | `bm-raid` | `beast-marks-open-raid` (27/19/5) | 464 | 508 | 842 | 842 | 868 | `beast-mastery-ml-parse` 841 | Beast Mastery 35/16/0 790 |
+| hunter | Forever | `bm-raid` | `beast-marks-open-raid` (27/21/3) | 474 | 525 | 855 | 855 | 886 | `beast-mastery-ml-parse` 843 | Beast Mastery 35/16/0 789 |
 | hunter | Forever | `melee-dps` | `beast-survival-open-raid` (16/11/24) | 360 | 427 | 1049 | 1049 | 1083 | `survival-ml-parse` 999 | - |
 | hunter | Forever | `mm-lonewolf-raid` | `mm-lone-wolf-raid` (5/41/5) | 457 | 492 | 897 | 897 | 920 | `marksmanship-ml-parse` 855 | Marksmanship 692 |
-| hunter | Forever | `mm-raid` | `opt-mm-raid-parse` (31/20/0) | 454 | 496 | 821 | 836 | 868 | `opt-mm-raid-parse` 836 | Marksmanship 845 |
+| hunter | Forever | `mm-raid` | `marksmanship-with-a-pet-open-raid` (7/39/5) | 451 | 495 | 881 | 881 | 914 | `opt-mm-raid-parse` 836 | Marksmanship 845 |
 | hunter | Classic | `mm-raid` | `bm-mm-raid` (20/31/0) | 405 | - | 1049 | 1085 | 1146 | - | Marksmanship 1087 |
 | mage | Forever | `arcane-dps` | `arcane-blast-raid` (35/11/5) | 569 | 672 | 694 | 694 | 756 | - | Arcane DPS 687 |
 | mage | Forever | `fire-raid` | `fire-raid` (12/34/5) | 519 | 607 | 688 | 688 | 739 | `opt-fire-raid-parse` 638 | Fire DPS 664 |

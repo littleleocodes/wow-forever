@@ -24,6 +24,29 @@
 
 **Between fights:** Heal back to 80% health, drink below a third of your mana.
 
+## Why this rotation
+
+You level with the raid healer's talents in the fastest order and play a simple melee shaman: a weapon imbue, a shield, **Searing Totem** at each pull, **Flame Shock** while mana allows and **Earth Shock** to finish. It is about a third slower than leveling as Enhancement (43 against 33 seconds per kill in the fight lab): the price of arriving at 60 ready to heal.
+
+**Why it works**
+
+- This build has neither **Stormstrike** nor **Maelstrom Weapon**, so line 2 is just **Earth Shock** and line 4 never comes up. In the fight lab it casts no **Lightning Bolt** at all: the opening bolt of line 1 is skipped by the mana rule below.
+- The fight lab plays this list with two mana rules: **Lightning Bolt** only once the mob is under 35% health and **Earth Shock** only under 20%. Spells cost drinking time; for Enhancement the two rules measured about 9% faster per kill.
+- Your damage is your weapon: **Rockbiter Weapon** until 30, then **Windfury Weapon**, on a slow two-hander, and **Lightning Shield** strikes back each time a mob hits you. From 28 you also have **Water Shield**: when your shield is gone and you are under 60% mana, the fight lab puts up Water Shield instead (only one shield can be up).
+- Drop **Searing Totem** at each pull while you have more than half your mana; **Totemic Focus**, your first five points, makes it a quarter cheaper.
+- **Flame Shock** only while you are above about half mana and the mob above 40% health: a burn on a dying mob is wasted.
+- Low on health: **Stoneclaw Totem** taunts the mob onto itself for a few hits, then **Lesser Healing Wave**. From 40, **Nature's Swiftness** makes a **Healing Wave** instant when you drop under 30%.
+
+**Caveats**
+
+- Level this way if you want to heal dungeons on the way; if you only quest, level as Enhancement and respec at 60.
+- **Mana Tide Totem** (from 30) has a 5-minute cooldown: the fight lab does not use it while soloing.
+
+**When to change it**
+
+- A caster mob that stays back: **Earth Shock** interrupts it and locks that school for 2 seconds, which brings it to you.
+- A mob that flees at low health: **Earth Shock** finishes it, or **Frost Shock** slows it by 50% (both share the shock cooldown).
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

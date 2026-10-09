@@ -66,16 +66,16 @@ Our Marksmanship raid draft's tree split with Summon Hawk, a Forever Beast Maste
 
 ## Rank among our builds and the community simulator's
 
-**5 of 6** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 6** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`beast-marks-open-raid`](beast-marks-open-raid.md) | ours: hand draft | 27/19/5 | 464 | +0.0% | 842 | +0.0% | 20 s |
-| 2 | [`beast-mastery-ml-parse`](beast-mastery-ml-parse.md) | ours: parse build | 31/20/0 | 464 | -0.1% | 841 | -0.1% | 25 s |
-| 3 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 461 | -0.7% | 810 | -3.9% | 6 s |
-| 4 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: hand draft | 28/23/0 | 454 | -2.2% | 833 | -1.2% | 18 s |
-| 5 | **[`mm-hawk-raid`](mm-hawk-raid.md)** | ours: hand draft | 22/29/0 | 446 | -4.0% | 805 | -4.5% | 13 s |
-| 6 | *Beast Mastery 35/16/0* | community simulator | - | 439 | -5.4% | 790 | -6.3% | 14 s |
+| 1 | [`beast-mastery-ml-parse`](beast-mastery-ml-parse.md) | ours: parse build | 31/20/0 | 489 | +0.0% | 843 | -1.4% | 25 s |
+| 2 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 487 | -0.4% | 810 | -5.3% | 6 s |
+| 3 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: hand draft | 28/23/0 | 479 | -2.0% | 833 | -2.6% | 18 s |
+| 4 | **[`mm-hawk-raid`](mm-hawk-raid.md)** | ours: hand draft | 22/29/0 | 475 | -2.9% | 807 | -5.6% | 13 s |
+| 5 | [`beast-marks-open-raid`](beast-marks-open-raid.md) | ours: hand draft | 27/21/3 | 474 | -3.1% | 855 | +0.0% | 23 s |
+| 6 | *Beast Mastery 35/16/0* | community simulator | - | 462 | -5.5% | 789 | -7.8% | 14 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -113,22 +113,24 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`mm-hawk-raid`](mm-hawk-raid.md) casts/min |
 |---|---|---|
-| 1 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.3 |
-| 2 | cast Summon Hawk | 10.0 |
-| 3 | use every other cooldown when ready | as ready |
-| 4 | if time left on Serpent Sting < 4s and time left in the fight ≥ 3s: cast Serpent Sting | 4.7 |
+| 1 | if time to the next auto attack > 0.5s and mana % ≥ 10%: cast Arcane Shot | 6.6 |
+| 2 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.3 |
+| 3 | cast Summon Hawk | 3.4 |
+| 4 | use every other cooldown when ready | as ready |
+| 5 | if time left on Serpent Sting < 4s and time left in the fight ≥ 3s: cast Serpent Sting | 4.7 |
 
-Lines of the simulator's rotation these builds never cast: cast Arcane Shot (its condition never held in these fights); cast Intimidation (needs the Intimidation talent).
+Lines of the simulator's rotation these builds never cast: cast Intimidation (needs the Intimidation talent).
 
 Damage by ability:
 
 | Ability | [`mm-hawk-raid`](mm-hawk-raid.md) |
 |---|---|
-| Auto Shot | 44% |
-| Serpent Sting | 20% |
-| Pet: Auto Attack | 16% |
-| Summon Hawk | 15% |
-| Pet: Claw | 6% |
+| Auto Shot | 41% |
+| Serpent Sting | 19% |
+| Pet: Auto Attack | 15% |
+| Arcane Shot | 14% |
+| Summon Hawk | 6% |
+| Pet: Claw | 5% |
 | Pet: Bite | 0% |
 
 ## Notes

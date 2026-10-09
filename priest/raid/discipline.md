@@ -4,6 +4,31 @@
 
 **[Discipline — Penance / Divine Aegis / Power Infusion](../research/raid/builds/disc-penance-healer.md)** (31/20/0) — [open the talent tree](https://talentsforever.com/priest/60/005203031303101531-215050030301--6)
 
+## How to heal
+
+The healer lab plays Discipline with the same heal choices as Holy, plus **Power Infusion** on cooldown: downranked **Greater Heal** on the tank, **Prayer of Healing** for the group, and **Power Word: Shield**, **Penance** and **Flash Heal** for emergencies. Your shield engine, **Renewed Hope** and **Divine Aegis**, is not in the lab, so play it on top.
+
+**Why it works**
+
+- **Greater Heal** on the tank is two thirds of your healing (2.5 seconds with **Divine Fury**). Start it when he is missing about half of what it heals and a boss swing is coming, at the lowest rank that covers the damage.
+- In an emergency (anyone below 35% health): **Power Word: Shield** on the tank if Weakened Soul is gone, then **Penance**, then a full-rank **Flash Heal**. **Soul Warding** removes the shield's 4-second cooldown and cuts its cost by 15%.
+- After a shield, heal the tank directly: with **Renewed Hope** your **Flash Heal**, **Greater Heal**, **Binding Heal** and **Penance** crit 10% more often on a target with Weakened Soul, and each cuts 5 seconds off it, so the next shield comes sooner. Each crit also leaves an absorb of 15% of the heal (**Divine Aegis**) and 25% more armor for 15 seconds (**Inspiration**).
+- **Power Infusion**: the lab casts it on yourself whenever it is ready and you have more than 20% mana, for 20% more healing over 15 seconds every 3 minutes. If you know when the boss hits hardest, saving it for that is your call; not measured.
+- **Inner Focus** on a full-rank **Greater Heal** when the tank is missing more than half of one; **Prayer of Healing** when two or more of the group drop below 70% (measured about 3% better than waiting for three); **Renew** on the tank once he is missing a fifth of his health.
+- Mana runs out first: in the lab's five-minute fight you spend 46 seconds dry. **Meditation** keeps half your regeneration going while you cast; take a mana potion below about two thirds of your mana.
+
+**Caveats**
+
+- The lab does not model **Divine Aegis** or **Renewed Hope**, so Discipline's lower capacity (0.56 against Holy's 0.62) leaves out part of what the spec does.
+- **Penance** changed on 2026-10-08: Blizzard made it cost less mana per point healed than **Heal** and **Greater Heal**. The lab's numbers predate that and use it only in emergencies; casting it on cooldown on the tank may now be better, but that is not measured.
+- Ranks far below your level now get less from your healing power (a beta change; the formula is our assumption). In our model **Greater Heal** ranks 3 to 5 lose nothing, so downranking within **Greater Heal** still pays.
+- This build gives up **Spiritual Guidance**, **Spiritual Healing** and **Prayer of Mending** for the Discipline talents.
+
+**When to change it**
+
+- When the tank takes a big hit while Weakened Soul is still on him, cast **Penance** or **Flash Heal** at once: each also takes 5 seconds off Weakened Soul (**Renewed Hope**), so you can shield again sooner.
+- When you and another player are both hurt, **Binding Heal** heals both with one cast.
+
 ## The numbers
 
 Healing capacity 0.56 (the raid damage it heals through in this project's healer lab), 310 healing per second. Healers are not in the community simulator.

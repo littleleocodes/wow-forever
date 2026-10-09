@@ -37,6 +37,31 @@
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
+## Why this rotation
+
+Destruction in a raid is still a **Shadow Bolt** spec: you sacrifice the Imp for 15% more Shadow damage, keep **Immolate** on the boss so **Conflagrate** can go out every 10 seconds, and let **Shadow and Flame** turn each **Conflagrate** into 10% more Shadow damage.
+
+**Why it works**
+
+- Before the pull: summon the Imp, use **Demonic Sacrifice** (+15% Shadow damage for 2 hours; summoning any demon ends it), then **Life Tap** once so you start full. Put a Spellstone (**Create Spellstone**) on your weapon on top of your wizard oil: Forever lets them stack, and the simulator measured about 3% more damage. This build has no **Amplify Curse**; without the sacrifice the simulator measured about 10% less damage.
+- **Curse of the Elements** goes up first: 10% more damage from every magic school, Fire and Shadow alike, and as a Curse it sits beside your **Bane of Agony**. **Life Tap** waits until you are below 5% mana (the simulator measured that 0.4% better than 10%), and **Improved Life Tap** adds 20% to each tap.
+- **Bane of Agony** grows over its 24 seconds, so recast it only once it has run out. **Corruption** (0.8 seconds with 3 points in **Improved Corruption**) goes back up when it is about to run out, but not in the last 10 seconds.
+- **Immolate** matters as much for **Conflagrate**, which needs it on the target, as for its own damage: start a new one when less than its cast (1.5 seconds with the **Bane** talent) is left on the old one, but not in the last 20 seconds. Both end-of-fight cut-offs measured small gains.
+- **Conflagrate** goes out whenever it is ready. With 5 points in **Shadow and Flame** it no longer eats your **Immolate**, and each hit gives you 10% more Shadow damage for 20 seconds, twice its cooldown; **Fire and Brimstone** and **Ruin** make its crits frequent and big. The simulator measured adding it at about 8% more damage.
+- **Shadow Bolt** is the filler, not **Incinerate**: the sacrificed Imp, **Improved Shadow Bolt** and **Shadow and Flame** raise Shadow damage only. Even the Incinerate build's own rotation search put **Shadow Bolt** ahead of **Incinerate** in a raid.
+
+**Caveats**
+
+- The last seconds belong to quick spells: with 3.5 seconds left the rotation casts **Searing Pain** (a 1.5-second cast) and with 1.5 left an instant **Shadowburn**, because a **Shadow Bolt** still casting when the boss dies does nothing. Neither belongs earlier in the fight.
+- **Shadowburn** on cooldown measured worse in the fire rotation (about 0.8%): it costs nearly as much mana as **Shadow Bolt** for about two thirds of the damage. Keep it for the last global cooldown, or for a moment when you must move.
+- With the Imp sacrificed you play without a demon: any summon ends the buff, so if you die, summon the Imp and sacrifice it again before the next pull.
+- On the move, **Bane of Agony**, **Curse of the Elements**, **Conflagrate**, **Shadowburn** and **Life Tap** are instant; **Corruption** still has a 0.8-second cast in this build.
+
+**When to change it**
+
+- If you play the Incinerate build listed above instead, it still fills with **Shadow Bolt** in a raid: its full-raid rotation adds **Shadowburn** on cooldown (with 10 or more seconds left) and keeps **Shadow Bolt** ahead of **Incinerate**.
+- A boss needs only one **Curse of the Elements** (in Classic two never stacked): if another warlock keeps it up, take the curse your raid gives you, such as **Curse of Recklessness** for the physical fighters.
+
 ## The numbers
 
 | Setting | DPS |

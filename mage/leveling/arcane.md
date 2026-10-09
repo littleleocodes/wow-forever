@@ -22,6 +22,29 @@
 
 **Between fights:** Drink your conjured water below a third of your mana, **Evocation** when you are out, eat below two thirds of your health.
 
+## Why this rotation
+
+Arcane levels on **Arcane Missiles** from range and the Frost tree's freeze up close: **Frost Nova**, step back, **Ice Lance** the frozen mob. A build with **Arcane Blast** stacks it twice before the Missiles; the build on this page skips **Arcane Blast**, **Missile Barrage** and **Arcane Power**, so it opens with the Missiles.
+
+**Why it works**
+
+- Your first 21 points (levels 10-30) go into Frost for **Ice Lance**, **Shatter**, **Frostbite** and **Ice Shards**. **Ice Lance** is not in the list above, but the Arcane rotation casts it whenever the mob is frozen: 300% more damage to a frozen target, plus **Shatter**'s crit.
+- **Arcane Missiles** is your main spell at range, a 5-second channel. The fight lab casts it only while the mob has more than 35% health (measured faster): below that a full channel overkills, so switch to **Frostbolt**, and below 20% finish with **Fire Blast**, **Ice Lance** or the wand.
+- **Frost Nova** when the mob reaches you, then step back: **Arcane Missiles** is a channel, and without **Improved Channeling** every hit you take cuts it short.
+- With **Arcane Blast** (a talent this build skips), cast it twice while the mob walks in: each cast makes your next other spell 10% stronger and the next **Arcane Blast** 175% more expensive, so stop at two and let **Arcane Missiles** spend the stacks.
+- **Presence of Mind** at the pull makes your next spell with a cast time instant. Low on mana, cast **Frostbolt** instead of **Arcane Missiles**: 290 mana at top rank against 655.
+
+**Caveats**
+
+- The fight lab's search for this spec also started from an **Arcane Blast** build and kept the build without it (about 29 against 31 seconds per kill at level 60). Skip the list's **Arcane Blast**, **Missile Barrage** and **Arcane Power** parts unless you take those talents.
+- **Arcane Missiles** is expensive: drink below a third of your mana and use **Evocation** between fights when it is ready.
+- Pulls of several mobs: **Arcane Explosion** hits everything within 10 yards.
+
+**When to change it**
+
+- Below 35% of the mob's health, stop starting **Arcane Missiles**; below 20%, stop **Frostbolt** too and finish with **Fire Blast**, an **Ice Lance** or the wand.
+- Against a caster mob, **Counterspell** it when it starts a cast, as every mage rotation in the fight lab does.
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

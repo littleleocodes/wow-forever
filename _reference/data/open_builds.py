@@ -5,7 +5,8 @@ derived builds with replaces under the replacement bar").
 
 Raid, from `raidsim/families/<class>.json` (family_search.py: every legal 51-point build, no tree rule, per damage rotation, in a full
 raid): each done entry's winner (after the rotation re-tune when one happened) is compared with every build of ours of its spec
-(spec_modes.spec_of: a tree with 30+ points, else the hybrid of its two largest trees): the builds raced with it in the entry's race
+(spec_modes.spec_of: a tree with 30+ points, else the hybrid of its two largest trees; other specs' builds and the simulator's presets
+raced in the entry do not count, since 2026-10-09): the builds of the spec raced with it in the entry's race
 (30,000 fights, common random numbers) and the spec's other raid builds at their full-raid numbers on the pages
 (render_modes.raid_numbers: each build's best entry). It becomes `<spec slug>-open-raid` (🔬, `derived: raid`) when GAIN_NEW (0.5%)
 ahead of all of them, else the record says which build it confirms; `replaces` names the spec's best hand draft when the winner is
@@ -143,7 +144,12 @@ def raid_candidates(cls, st, data, RM):
             out.append((entry, spec, wd, None, f"found in {entry}, a rotation built for {'/'.join(sorted(own))}, not {SM.spec_name(cls, spec)}'s own: "
                                                "not written (each spec plays its own rotation)"))
             continue
-        rivals = {k: v["dps"] for k, v in race.items() if k != "open winner" and v.get("dps")}   # raced with it: the same fights
+        raced = {k: v["dps"] for k, v in race.items() if k != "open winner" and v.get("dps")}   # raced with it: the same fights
+        byid = {b["id"]: b for b in data["builds"]}
+        # the bar is the spec's own builds (until 2026-10-09 every build raced in the entry counted, other specs' and the simulator's
+        # presets too: the hunter's Beast-Survival winner "confirmed" a Survival hand draft and the hybrid's raid page went empty);
+        # the build's notes still list every raced build
+        rivals = {k: v for k, v in raced.items() if k in byid and SM.spec_of(cls, byid[k]) == spec}
         same = [b for b in data["builds"] if SM.mode_of(b) == "raid" and b.get("role", "dps") == "dps" and not is_open(b)
                 and SM.spec_of(cls, b) == spec]
         pages = {b["id"]: nums[b["id"]]["group"] for b in same if b["id"] not in rivals and (nums.get(b["id"]) or {}).get("group")}
@@ -156,9 +162,32 @@ def raid_candidates(cls, st, data, RM):
         hands = {b["id"]: allr[b["id"]] for b in same if hand(b) and b["id"] in allr}
         bh = max(hands, key=hands.get) if hands else None
         replaces = bh if bh and wd >= hands[bh] * (1 + MIN_GAIN) else None
-        b = None if why else make_raid_build(cls, entry, e, st, spec, w, allr, best, rivals, bh, hands.get(bh), replaces)
+        if why and best.endswith("-open-raid"):
+            # the search confirms the spec's open build (2026-10-09: the writer deleted it, and the hunter's Beast-Survival page went
+            # empty): rewrite it from this record, its notes measured against our other builds
+            allr2 = {k: v for k, v in allr.items() if not k.endswith("-open-raid")}
+            best2 = max(allr2, key=allr2.get) if allr2 else None
+            if best2 is not None and wd < allr2[best2] * (1 + GAIN_NEW):
+                # it no longer clears the bar against our other builds: dropped like any winner that only confirms a build
+                why = (f"confirms {best2} ({wd / allr2[best2] - 1:+.2%} in a full raid, "
+                       + ("raced together" if best2 in rivals else "against the pages' number") + "); the spec's open build no longer clears the bar")
+                b = None
+            else:
+                b = make_raid_build(cls, entry, e, st, spec, w, allr2, best2, {k: v for k, v in raced.items() if not k.endswith("-open-raid")},
+                                    bh, hands.get(bh), replaces)
+                why = None
+        else:
+            b = None if why else make_raid_build(cls, entry, e, st, spec, w, allr, best, raced, bh, hands.get(bh), replaces)
         # the entry's variant (weapon or stance): its own builds only are the bar, 0.5% (spec_modes.RAID_ENTRY_VARIANT)
         vname = SM.RAID_ENTRY_VARIANT.get((cls, entry))
+        if b is not None and vname:
+            # the spec's main open build must also lead the spec's builds at their page numbers (their best entry, maybe another
+            # variant's gear); else it is this variant's build (2026-10-09: the rogue's swords winner, 746.6 DPS, would have been written
+            # as Combat's open build next to combat-ml-raid's 770 with daggers)
+            pg = {x["id"]: nums[x["id"]]["group"] for x in same if (nums.get(x["id"]) or {}).get("group")}
+            top = max(pg, key=pg.get) if pg else None
+            if top and wd < pg[top] * (1 + GAIN_NEW):
+                b, why = None, f"behind {top} on the pages ({wd / pg[top] - 1:+.2%} against its best entry's full-raid number)"
         own_rivals = {k: v for k, v in rivals.items() if not k.startswith("sim preset")}
         if vname and own_rivals:
             vbest = max(own_rivals, key=own_rivals.get)
@@ -211,6 +240,7 @@ def make_raid_build(cls, entry, e, st, spec, w, allr, best, rivals, best_hand, h
     run = e.get("again") or e["first"]
     wd = e["race"]["open winner"]["dps"]
     ob = e.get("ours_best")
+    known = {**rivals, **allr}   # every build raced in the entry and the spec's builds on the pages
     vals = e.get("values") or {}
     zero = [n for n, v in vals.items() if abs(v.get("lost", 0)) < 0.05]
     b = {"id": f"{SM.spec_slug(cls, spec)}-open-raid", "name": f"{name} — Raid (open talent search)",
@@ -219,7 +249,7 @@ def make_raid_build(cls, entry, e, st, spec, w, allr, best, rivals, best_hand, h
                      f"tree rule, searched in the community simulator's {entry} rotation in a full raid (every raid buff and debuff: the group "
                      f"setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning "
                      f"search, the winner raced against the rotation's builds over 30,000 fights). "
-                     + (f"{wd / allr[ob] - 1:+.1%} over {ob}, the best of our builds in that rotation." if ob in allr else "")),
+                     + (f"{wd / known[ob] - 1:+.1%} over {ob}, the best of our builds in that rotation." if ob in known else "")),
          "allocation": w["allocation"], "core": core_raid(vals), "flex": [],
          "notes": [f"Open search result ({entry}, full raid): {w['split']} ({family_text(cls, spec)}) at {wd:.1f} DPS; "
                    + ", ".join(f"{k} {v:.1f}" for k, v in sorted(rivals.items(), key=lambda kv: -kv[1])) + " in the same fights"
@@ -280,7 +310,10 @@ def leveling_candidates(cls, st, data, RM):
             out.append((spec_rot, spec, wt, None, f"found in the {spec_rot} rotation, built for {'/'.join(sorted(own))}, not "
                                                   f"{SM.spec_name(cls, spec)}'s own: not written (each spec plays its own rotation)"))
             continue
-        rivals = {k: v["weighted"] for k, v in race.items() if k != "open winner" and not k.startswith("finalist ") and v.get("weighted")}
+        raced = {k: v["weighted"] for k, v in race.items() if k != "open winner" and not k.startswith("finalist ") and v.get("weighted")}
+        byid = {b["id"]: b for b in data["builds"]}
+        # the bar is the spec's own builds (2026-10-09, as for raid); the build's notes list every raced build
+        rivals = {k: v for k, v in raced.items() if k in byid and SM.spec_of(cls, byid[k]) == spec}
         same = [b for b in data["builds"] if SM.mode_of(b) == "leveling" and not is_open(b) and SM.spec_of(cls, b) == spec]
         pages = {}
         for b in same:
@@ -298,7 +331,20 @@ def leveling_candidates(cls, st, data, RM):
         hands = {b["id"]: allr[b["id"]] for b in same if hand(b) and b["id"] in allr}
         bh = min(hands, key=hands.get) if hands else None
         replaces = bh if bh and hands[bh] / wt - 1 >= MIN_GAIN else None
-        b = None if why else make_leveling_build(cls, spec_rot, r, spec, allr, rivals, bh, hands.get(bh), replaces)
+        if why and best.endswith("-open-leveling"):
+            # the search confirms the spec's open leveling build: rewrite it from this record (2026-10-09, as for raid)
+            allr2 = {k: v for k, v in allr.items() if not k.endswith("-open-leveling")}
+            best2 = min(allr2, key=allr2.get) if allr2 else None
+            if best2 is not None and allr2[best2] / wt - 1 < GAIN_NEW:
+                why = (f"confirms {best2} ({allr2[best2] / wt - 1:+.2%} faster per kill, levels 20-60, "
+                       + ("raced together" if best2 in rivals else "against the pages' number") + "); the spec's open build no longer clears the bar")
+                b = None
+            else:
+                b = make_leveling_build(cls, spec_rot, r, spec, allr2, {k: v for k, v in raced.items() if not k.endswith("-open-leveling")},
+                                        bh, hands.get(bh), replaces)
+                why = None
+        else:
+            b = None if why else make_leveling_build(cls, spec_rot, r, spec, allr, raced, bh, hands.get(bh), replaces)
         out.append((spec_rot, spec, wt, b, why))
     # one build per spec: the winner from the spec's own leveling rotation (spec_modes.own_leveling_rotation: the tree's, a hybrid's lead
     # tree's); until 2026-10-08 the fastest rotation's winner was taken (the rogue's Daggers split from the swords rotation)
@@ -329,13 +375,14 @@ def make_leveling_build(cls, rot, r, spec, allr, rivals, best_hand, hand_t, repl
     name = SM.spec_name(cls, spec)
     wt = r["race"]["open winner"]["weighted"]
     ob = r.get("ours_best")
+    known = {**rivals, **allr}   # every build raced with it and the spec's builds on the pages
     b = {"id": f"{SM.spec_slug(cls, spec)}-open-leveling", "name": f"{name} — Leveling (open talent search)",
          "role": "dps", "content": "leveling", "tier": "draft", "spec": spec, "generated": TODAY, "derived": "leveling",
          "summary": (f"The {family_text(cls, spec)} leveling build the open leveling search found on {TODAY}: every legal 51-point build with no tree "
                      f"rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and "
                      f"deaths included) playing the {rot} rotation, the winner picked by a race at levels 20-60 among the level-60 finalists "
                      f"(fightlab/fl_open_search.py); the talent order is the stats model's ({r.get('model')}). "
-                     + (f"{allr[ob] / wt - 1:+.1%} faster per kill than {ob}, the fastest of our leveling builds in that race." if ob in allr else "")),
+                     + (f"{known[ob] / wt - 1:+.1%} faster per kill than {ob}, the fastest of our leveling builds in that race." if ob in known else "")),
          "allocation": r["winner"]["allocation"], "order": r["order"], "core": core_leveling(r.get("values") or {}), "flex": [],
          "notes": [f"Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build {wt:.2f}; "
                    + ", ".join(f"{k} {v:.2f}" for k, v in sorted(rivals.items(), key=lambda kv: kv[1])) + "."

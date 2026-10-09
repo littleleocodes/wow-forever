@@ -22,6 +22,30 @@
 
 **Between fights:** Drink only below 15% mana; **Renew** yourself instead of eating.
 
+## Why this rotation
+
+Leveling as Smite: pull with the instant **Shadow Word: Pain**, cast **Penance** and **Mind Blast** whenever they are ready, **Smite** while the mob has more than a third of its health, and let your wand finish. A **Power Word: Shield** before every pull lets you keep casting in melee.
+
+**Why it works**
+
+- **Shadow Word: Pain** pulls because it is instant and ticks for the whole fight; **Shadow Reach** gives it 20% more range.
+- **Penance** and **Mind Blast** hit harder for their cast time than **Smite**, so they go first whenever ready. **Penance** is this build's most valuable talent: the fight lab is 6.6 seconds per kill slower at 60 without it.
+- **Smite** only while the mob has more than about a third of its health and you have more than 30% mana. Below that your wand finishes without spending mana or starting a cast the mob may not live through; the fight lab measured the two limits about 4% and 3.5% faster.
+- Skip **Holy Fire**: a slow cast whose damage Forever cut about in half, and the fight lab measured leveling about 4% faster without it. That is also why this build takes no **Power in Light**.
+- **Inner Focus** at the start of a pull, whenever it is ready: press it right before **Mind Blast** or **Smite** to make that cast free with 25% more crit chance.
+- Mana: **Spirit Tap** doubles your Spirit for 15 seconds after each kill and **Meditation** keeps half your regeneration going while you cast, so drink only below 15% mana (measured about 3% faster than at 35%). After a fight, **Renew** heals you while you loot and walk; eat only if you are still low.
+
+**Caveats**
+
+- The pre-pull shield is part of this rotation: **Smite** takes 2 seconds or more to cast, and while **Power Word: Shield** holds, damage does not push your casts back. In melee, shield again once Weakened Soul is gone and you are below 80% health.
+- **Penance** comes at level 37 in this order; before that **Mind Blast** and **Smite** carry the damage.
+- This build has no area damage: pull one mob at a time. With two on you, **Psychic Scream** sends them running.
+
+**When to change it**
+
+- Hurt in a fight: shield again below half your health, **Flash Heal** below about a third, **Renew** below 60% if it is not already on you.
+- For pure speed, level as Shadow: 26 seconds per kill in the fight lab against this build's 40.
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

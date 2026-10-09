@@ -24,6 +24,31 @@
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
+## Why this rotation
+
+This hybrid is a melee shaman, not a caster: it plays the Enhancement list, and its 22 Elemental points make your shocks and **Fire Nova** cheaper, more frequent and harder hitting. Your weapon and **Windfury Weapon** still do about half the damage; spells fill the gaps between swings.
+
+**Why it works**
+
+- The order is Enhancement's: **Stormstrike** first (125 mana, a weapon hit, 20% more on your next **Lightning Bolt** or **Earth Shock**, and **Improved Stormstrike**'s mana regeneration while casting), then **Flame Shock** whenever the burn is off, a 5-stack **Lightning Bolt**, **Searing Totem** when it expires, **Earth Shock**, and **Fire Nova**.
+- Your Elemental points shape the shocks: **Reverberation** brings the shared shock cooldown to 5 seconds, **Convection** and **Shamanistic Focus** cut their cost, and **Call of Flame** adds 15% to **Flame Shock**, **Fire Nova** and **Searing Totem**.
+- You have 4 of 5 points in **Maelstrom Weapon**, so 5 stacks leave the bolt a half-second cast at a fifth of its mana. Still wait for 5 stacks: the rotation's condition is above 4.2 stacks, and the simulator measured waiting for 5 about 5% better than casting at 3 with this list.
+- **Fire Nova** erupts around your Fire totem, so keep **Searing Totem** within 10 yards of the boss; **Improved Fire Nova** makes it 20% stronger on a 6-second cooldown. Adding Fire Nova to this list measured 7% more damage.
+- **Elemental Devastation** turns every spell crit into 9% more melee crit chance for 10 seconds, which feeds **Flurry**: another reason to keep a spell going between swings.
+- Put **Windfury Weapon** on your weapon with a sharpening stone on top: in Forever an imbue and a stone stack.
+
+**Caveats**
+
+- No **Rage of the Farseer**: it needs 30 Enhancement points and this build has 29. Use your trinkets and potion at the pull instead.
+- Mana is tighter than for Enhancement: the simulator has this build out of mana for about 34 seconds of a 3-minute fight. Clearcasting from **Elemental Focus** makes your next damage spell free; use a mana potion when you are low, and do not hold shocks back.
+- Several targets: **Fire Nova** hits every enemy within 10 yards of your Fire totem.
+- A caster split of these trees (29/22/0) was the search's best only on the training dummy; in a full raid this melee build measured 22% ahead of the hand-made caster draft. For a Lightning Bolt caster, play Elemental.
+
+**When to change it**
+
+- In the last 10 seconds, skip **Flame Shock** (its burn would not finish) and use **Earth Shock**.
+- In a party of warriors and rogues, ask whether they want **Windfury Totem** instead of **Grace of Air Totem**: a party gets only one, and it does nothing for you while you use **Windfury Weapon**.
+
 ## The numbers
 
 | Setting | DPS |

@@ -1,17 +1,17 @@
-# Beast-Marks — Raid (open talent search) — 27/19/5
+# Beast-Marks — Raid (open talent search) — 27/21/3
 
 *[Hunter](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 27/19/5 (Beast Mastery / Marksmanship / Survival) |
+| **Build** | 27/21/3 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70291 (2026-10-08 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Beast-Marks (a Beast Mastery/Marksmanship hybrid) raid build the open talent search found on 2026-10-07: every legal 51-point build with no tree rule, searched in the community simulator's bm-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +0.9% over beast-mastery-ml-parse, the best of our builds in that rotation.
+The Beast-Marks (a Beast Mastery/Marksmanship hybrid) raid build the open talent search found on 2026-10-09: every legal 51-point build with no tree rule, searched in the community simulator's bm-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.4% over beast-marks-open-raid, the best of our builds in that rotation.
 
 ## Point allocation
 
@@ -20,54 +20,53 @@ The Beast-Marks (a Beast Mastery/Marksmanship hybrid) raid build the open talent
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Deadly Aspects** | 5/5 | **NEW** | While Aspect of the Hawk is active, Auto Shot has a 10% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by 30% for 12 sec. |
-| **Endurance Training** | 4/5 | changed | Increases the Health and Armor of your pets by 12%. |
+| **Endurance Training** | 5/5 | changed | Increases the Health and Armor of your pets by 15%. |
 | **Focused Fire** | 2/2 | **NEW** | Increases all damage you and your pet deal by 2% while your pet is active. |
 | **Improved Aspect of the Monkey** | 1/3 | changed | Increases the Dodge bonus of your Aspect of the Monkey by 2%. Additionally, your pet gains 50% of the effect of your Aspect of the Monkey ability. |
 | **Unleashed Fury** | 5/5 | changed | Increases the damage done by your pets and hawks by 15%. |
 | **Ferocity** | 5/5 | changed | Increases the critical strike chance of your pets and hawks by 10%. |
-| **Summon Hawk** | 1/1 | **NEW** | Command a hawk to dive-bomb your targeted enemy, dealing 32 plus 5% of your Ranged Attack Power Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot. |
 | **Bestial Discipline** | 2/2 | changed | Increases the Focus regeneration of your pets by 20% and allows 50% of your Mana regeneration to continue while casting. |
 | **Frenzy** | 2/5 | unchanged | Gives your pet a 40% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike. |
 
-### Marksmanship (19)
+### Marksmanship (21)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
 | **Improved Stings** | 3/3 | **NEW** | Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
-| **Efficiency** | 2/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 6%. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
-| **Mortal Shots** | 4/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 24%. |
+| **Improved Arcane Shot** | 3/5 | changed | Reduces the cooldown of your Arcane Shot by 0.9 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot. |
+| **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
 
-### Survival (5)
+### Survival (3)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Tracking** | 5/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 5%. |
+| **Improved Tracking** | 3/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 3%. |
 
 ## Core talents (priority order)
 
-1. **Summon Hawk** — 60 DPS lost without it (7% of the build in a full raid; removal, 12,000 fights).
-2. **Careful Aim** — 49 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights).
-3. **Lethal Attacks** — 42 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights).
-4. **Deadly Aspects** — 40 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
-5. **Unleashed Fury** — 37 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
-6. **Improved Tracking** — 35 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
-7. **Mortal Shots** — 28 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights).
-8. **Ferocity** — 27 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights).
+1. **Careful Aim** — 49 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights).
+2. **Lethal Attacks** — 42 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights).
+3. **Mortal Shots** — 38 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
+4. **Deadly Aspects** — 36 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
+5. **Frenzy** — 29 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights).
+6. **Bestial Discipline** — 26 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights).
+7. **Unleashed Fury** — 23 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights).
+8. **Ferocity** — 19 DPS lost without it (2% of the build in a full raid; removal, 12,000 fights).
 
 ## Rank among our builds and the community simulator's
 
-**1 of 6** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**5 of 6** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`beast-marks-open-raid`](beast-marks-open-raid.md)** | ours: hand draft | 27/19/5 | 464 | +0.0% | 842 | +0.0% | 20 s |
-| 2 | [`beast-mastery-ml-parse`](beast-mastery-ml-parse.md) | ours: parse build | 31/20/0 | 464 | -0.1% | 841 | -0.1% | 25 s |
-| 3 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 461 | -0.7% | 810 | -3.9% | 6 s |
-| 4 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: hand draft | 28/23/0 | 454 | -2.2% | 833 | -1.2% | 18 s |
-| 5 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 446 | -4.0% | 805 | -4.5% | 13 s |
-| 6 | *Beast Mastery 35/16/0* | community simulator | - | 439 | -5.4% | 790 | -6.3% | 14 s |
+| 1 | [`beast-mastery-ml-parse`](beast-mastery-ml-parse.md) | ours: parse build | 31/20/0 | 489 | +0.0% | 843 | -1.4% | 25 s |
+| 2 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 487 | -0.4% | 810 | -5.3% | 6 s |
+| 3 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: hand draft | 28/23/0 | 479 | -2.0% | 833 | -2.6% | 18 s |
+| 4 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 475 | -2.9% | 807 | -5.6% | 13 s |
+| 5 | **[`beast-marks-open-raid`](beast-marks-open-raid.md)** | ours: hand draft | 27/21/3 | 474 | -3.1% | 855 | +0.0% | 23 s |
+| 6 | *Beast Mastery 35/16/0* | community simulator | - | 462 | -5.5% | 789 | -7.8% | 14 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -105,34 +104,34 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`beast-marks-open-raid`](beast-marks-open-raid.md) casts/min |
 |---|---|---|
-| 1 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.3 |
-| 2 | cast Summon Hawk | 9.7 |
+| 1 | if time to the next auto attack > 0.5s and mana % ≥ 10%: cast Arcane Shot | 9.3 |
+| 2 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.3 |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | if time left on Serpent Sting < 4s and time left in the fight ≥ 3s: cast Serpent Sting | 4.7 |
+| 4 | if time left on Serpent Sting < 4s and time left in the fight ≥ 3s: cast Serpent Sting | 5.0 |
 
-Lines of the simulator's rotation these builds never cast: cast Arcane Shot (its condition never held in these fights); cast Intimidation (needs the Intimidation talent).
+Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Intimidation (needs the Intimidation talent).
 
 Damage by ability:
 
 | Ability | [`beast-marks-open-raid`](beast-marks-open-raid.md) |
 |---|---|
-| Auto Shot | 41% |
-| Serpent Sting | 20% |
+| Auto Shot | 39% |
+| Arcane Shot | 19% |
 | Pet: Auto Attack | 18% |
-| Summon Hawk | 14% |
+| Serpent Sting | 17% |
 | Pet: Claw | 6% |
 | Pet: Bite | 0% |
 
 ## Notes
 
-- +4.1% over the best hand draft of the spec, mm-hawk-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.
-- Open search result (bm-raid, full raid): 27/19/5 (Beast-Marks (a Beast Mastery/Marksmanship hybrid)) at 903.1 DPS; beast-mastery-ml-parse 895.2, beast-marks-ml-raid 889.7, mm-hawk-raid 867.7, beast-mastery-raid 866.9 in the same fights; 4,434 builds simulated, 2 independent runs reached the top.
-- The spec's other builds on the pages (their best entry, full raid): bm-mm-raid 851.8, opt-mm-raid-raid-dps 851.8.
+- +5.9% over the best hand draft of the spec, mm-hawk-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.
+- Open search result (bm-raid, full raid): 27/21/3 (Beast-Marks (a Beast Mastery/Marksmanship hybrid)) at 855.0 DPS; beast-marks-open-raid 843.3, beast-mastery-ml-parse 842.6, beast-marks-ml-raid 833.3, beast-mastery-raid 810.0, mm-hawk-raid 807.3 in the same fights; 4,589 builds simulated, 2 independent runs reached the top.
+- The spec's other builds on the pages (their best entry, full raid): bm-mm-raid 806.2, opt-mm-raid-raid-dps 806.2.
 - The bm-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.
-- Sibling rotations tried on it (10,000 fights): mm-raid -1.1%, mm-lonewolf-raid -1.7%, melee-dps -31.9%; none adopted.
-- Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Endurance Training, Improved Aspect of the Monkey, Pathfinding, Lone Wolf.
-- Simulator numbers are the community's model of the beta (ElliotWood/Forever b0f0df3 with this project's patches), not in-game measurements.
-- 2026-10-07 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Lone Wolf -> Efficiency (mana); Pathfinding -> Endurance Training (survival). Net +0.02% on a third seed.
+- Sibling rotations tried on it (10,000 fights): mm-raid +0.0%, mm-lonewolf-raid +0.2%, melee-dps -46.6%; none adopted.
+- Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Endurance Training, Improved Aspect of the Monkey, Improved Revive Pet, Improved Mend Pet.
+- Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements.
+- 2026-10-09 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Mend Pet -> Endurance Training (survival); Improved Revive Pet -> Endurance Training (survival); Improved Revive Pet -> Endurance Training (survival). Net +0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 
@@ -141,7 +140,7 @@ Damage by ability:
 ## Sources
 
 - <https://github.com/ElliotWood/Forever>
-- <https://talentsforever.com/hunter/60/532110050510022-00531500104-5-4>
+- <https://talentsforever.com/hunter/60/522102051500022-00530503005-3-4>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

@@ -19,6 +19,27 @@
 
 **Between fights:** Drink when your mana is below a third.
 
+## Why this rotation
+
+Pull with instants, then cast: **Moonfire** and **Insect Swarm** on the mob, **Wrath** while it runs in, then **Starfire** whenever **Eclipse** has shortened it or the mob cannot hit you, **Wrath** otherwise. Finish with an instant, and heal from range when you must.
+
+**Why it works**
+
+- **Moonfire** and **Insect Swarm** first: both are instant, so they tick while the mob is still running at you, and **Genesis** adds up to 5% to their ticks. The fight lab puts **Moonfire** only on a mob above 35% health and **Insect Swarm** above 40%: a mob below that dies before they pay off.
+- **Wrath** is the default nuke: with **Improved Wrath** it is a 1.5-second cast for half the mana, and a short cast loses little to pushback once the mob is hitting you. Each **Wrath** also stores 2 **Eclipse** charges for the **Starfire** casts after it. Before **Eclipse** at 30 the fight lab casts almost nothing else, about 10 Wraths a kill at 20.
+- **Starfire** hits about three times as hard at 60 but takes 3 seconds even with **Improved Starfire**, so it waits for a faster or a safe moment: when **Eclipse** has charges (each charge shortens one **Starfire**), or when the mob is rooted or stunned (**Improved Starfire** stuns for 3 seconds 15% of the time).
+- Low on health: **Entangling Roots** holds the mob in place but it still hits you if you stand next to it, so step away, then cast **Regrowth** from range. A direct hit can break the roots.
+
+**Caveats**
+
+- **Eclipse** at the 1 point this build takes saves 0.17 seconds a charge (0.5 at 3 points). The fight lab gives the 1-point **Eclipse** the full 0.5 seconds, so it overrates the weave: expect a smaller gain in the game (to check at launch).
+- **Moonkin Form** (40) blocks healing spells: to cast **Regrowth** you must leave it, and going back costs 35% of your base mana. The fight lab ignores both, so leave the form only when you must heal.
+- Mana: **Moonglow** cuts your damage spells' cost by 25% and **Reflection** keeps half your regeneration going while you cast. The tuned fight lab drinks below 45% mana and eats below 80% health: topping up early measured 1.7% faster per kill, with fewer deaths at 40-50.
+
+**When to change it**
+
+- When the mob is nearly dead, finish it with an instant **Moonfire** or a quick **Wrath** rather than a **Starfire** it will not live through: the fight lab does exactly that.
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

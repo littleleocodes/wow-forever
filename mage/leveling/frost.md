@@ -22,6 +22,31 @@
 
 **Between fights:** Drink your conjured water below a third of your mana, **Evocation** when you are out, eat below two thirds of your health.
 
+## Why this rotation
+
+Frost levels by slowing, freezing and shattering: **Frostbolt** slows the mob as it walks in, **Frost Nova** freezes it when it arrives, and you step back and **Ice Lance** the frozen target. In the fight lab, **Ice Lance** into frozen mobs is about two thirds of a Frost leveler's damage at level 60.
+
+**Why it works**
+
+- **Frostbolt** from as far away as you can: its 40% slow buys extra casts before the mob reaches you, and every chill can freeze it (**Frostbite**, 15%) or light up **Fingers of Frost** (15%). If the mob would reach you before the cast ends and **Frost Nova** is ready, wand it while it closes instead.
+- **Frost Nova** when it reaches you, then step back out of melee: it roots the mob for up to 8 seconds, and once you are out of reach it cannot hit you or push back your casts.
+- **Ice Lance** while the mob is frozen (**Frost Nova**, a **Frostbite** freeze or a **Fingers of Frost** charge): 300% more damage to a frozen target, 50% more crit chance from **Shatter** and bigger crits from **Ice Shards**. It is instant, so cast it again and again while the freeze lasts.
+- Finishing: the fight lab's tuned Frost rotation never casts **Fire Blast**, and it measured kills about 4% faster that way. No Frost talent helps **Fire Blast**, so finish with an **Ice Lance** that will kill or with your wand, and stop starting **Frostbolt** below 10% health.
+- **Ice Barrier** before each pull from level 40: besides the shield, hits do not push back your casts while it holds.
+- **Counterspell** a mob that casts spells: it stops the cast and locks that school for 10 seconds.
+
+**Caveats**
+
+- The list says drink below a third of your mana; the tuned rotation waits until a quarter. **Evocation** (8-minute cooldown) is for between fights, whenever it is ready and you are low.
+- **Cone of Cold** stays out of single pulls: the fight lab measured kills about 1% faster without it.
+- **Frost Armor** and **Ice Armor** can chill a mob that hits you, another roll for **Frostbite** to freeze it.
+- Pulls of several mobs are a different game: the AoE grinding build under Other builds gathers about four mobs, freezes them with **Frost Nova** and uses **Blizzard** and **Cone of Cold**.
+
+**When to change it**
+
+- If **Frost Nova** is on cooldown when the mob arrives, **Cold Snap** resets it; the fight lab does this when Nova has more than 8 seconds left and the mob still has 40% health or more.
+- Low on mana in a fight: let the wand finish anything under 10% health rather than start a **Frostbolt**.
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

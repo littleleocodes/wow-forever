@@ -34,6 +34,30 @@
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
+## Why this rotation
+
+Beast-Survival plays the melee Survival list with **Summon Hawk** added: no pet, so **Lone Wolf**'s 20% stays on, and up to two hawks attack the boss beside you.
+
+**Why it works**
+
+- **Summon Hawk** goes out every 6 seconds: a dive bomb for 108 plus 5% of your ranged attack power, then a hawk that attacks for 18 seconds. Two can be out at once and a new one replaces the one closest to leaving, so casting on cooldown keeps two up; **Unleashed Fury** makes them hit 15% harder.
+- The hawk sits high on the list: the simulator measured about 15% more damage for a hawk build once the hawk joined the melee rotation. It counts the hawks as guardians, not pets, so **Lone Wolf** (about 16% of this build's damage) stays on while they fly.
+- **Hunter's Mark** before the pull is for **Expose Prey**: each hit on a marked target has a 10% chance to light up **Mongoose Bite** for 10 seconds, and in a raid you never dodge, which is the bite's only other trigger. In the simulator **Expose Prey** is about 9% of this build's damage; recast the mark when its 2 minutes run out.
+- **Mongoose Bite** when it lights up, **Strider Kick** on its 8-second cooldown, and **Raptor Strike** whenever it is ready: it replaces your next main-hand swing and costs no global cooldown.
+- **Immolation Trap** at your feet under the boss every 24 seconds (one point in **Survivalist's Discipline**), 30% stronger with **Clever Traps**. **Wing Clip** fills the global cooldowns left over, for its small hit and another chance at **Mongoose Bite**.
+
+**Caveats**
+
+- Mana: this build has no **Resourcefulness**, and each hawk costs 190 mana. In a full raid the simulator needs one mana potion a fight; with only your own buffs it ran out of mana for more than two thirds of the fight and fell about a quarter behind the Survival builds. Without Blessing of Wisdom or Mana Spring, play Survival.
+- The build rests on the simulator's reading that a hawk is not a pet: if the game counts hawks as pets, **Lone Wolf** turns off while they are out. Check it at launch.
+- No pet: **Dismiss Pet** before the pull. Track the boss's creature type: **Improved Tracking** adds 5% only against the tracked type.
+
+**When to change it**
+
+- Adds around you: **Explosive Trap** instead of **Immolation Trap**; they share the fire-trap cooldown.
+- Pulled off the boss by a mechanic: **Summon Hawk** reaches 35 yards, so keep the hawks coming, and make **Strider Kick** your last hit before you run (30% movement speed for 3 seconds).
+- Short on mana: let **Wing Clip** go first; its own hit is your least damage per point of mana.
+
 ## The numbers
 
 | Setting | DPS |

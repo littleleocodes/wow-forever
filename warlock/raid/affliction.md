@@ -27,6 +27,32 @@
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
+## Why this rotation
+
+Affliction in a raid keeps **Curse of the Elements** and three damage-over-time spells on the boss and fills every gap with **Shadow Bolt**, about half your damage, with a Succubus out. Apart from **Amplify Curse**, your Affliction talents add no buttons: they make your dots and Shadow spells hit harder.
+
+**Why it works**
+
+- **Curse of the Elements** goes up first: one cast lasts 5 minutes and makes the boss take 10% more damage from every magic school, Shadow and Fire alike (Curse of Shadow is gone in Forever). It is a Curse and **Bane of Agony** is a Bane, so both stay on the boss together; the simulator measured the curse 0.2% better at the top of the list.
+- **Life Tap** waits until you are below 10% mana: every tap is a global cooldown with no damage, so the later you tap, the less mana you leave unspent when the boss dies. It stops 6 seconds before the end (the simulator measured that 0.25% better), and a mana potion below 75% mana or a Demonic Rune below 60% comes first.
+- **Amplify Curse** goes before the pull and again whenever it comes back (3-minute cooldown): it makes your next **Bane of Agony** 50% stronger. Its 30 seconds outlast the 24-second Bane, so pressing it early never wastes it.
+- **Bane of Agony** starts weak and grows over its 24 seconds, so recast it only once it has run out: refreshing it early throws away its strongest ticks. **Corruption** is instant with 5 points in **Improved Corruption**, so it goes back up the moment it drops.
+- Start a new **Immolate** when less time is left on the old one than its cast (1.5 seconds with the **Bane** talent), so the new one lands about as the old one ends.
+- **Shadow Bolt** is the filler. Its critical strikes trigger **Improved Shadow Bolt** (20% more Shadow damage from you for 12 seconds, your dots included), and **Malevolence** and **Ruin** make those crits more frequent and bigger. With **Nightfall**, as in the other build below, a proc makes your next **Shadow Bolt** instant: the list needs no change.
+
+**Caveats**
+
+- **Searing Pain** has no cooldown: the rotation casts it only in the last 3.5 seconds, where its 1.5-second cast lands before the boss dies and a **Shadow Bolt** might not. Never use it as a filler: it does less damage per second of casting than **Shadow Bolt** and causes a high amount of threat.
+- Your Succubus does about 8% of your damage with her attacks and **Lash of Pain**, and she takes 17% of your spell damage as attack power and 10% as spell damage. If she dies with less than about two minutes of the fight left, finish without her: a 10-second **Summon Succubus** costs about as much damage as she would add.
+- Moving costs you **Shadow Bolt** casts, so move with your instants: **Corruption**, **Bane of Agony**, **Curse of the Elements**, **Amplify Curse** and **Life Tap**.
+- The simulator measured only one boss. On a second target that lives a while, an instant **Corruption** and **Bane of Agony** add damage for one global cooldown each; **Bane of Doom** takes the same Bane slot and deals its damage only after a full minute, and the simulated rotations keep **Bane of Agony**.
+
+**When to change it**
+
+- Near the end of a fight, start no dot the boss will not outlive: on the training dummy the simulator measured it better to start no **Immolate** in the last 20 seconds and no **Corruption** in the last 10. Cast **Shadow Bolt** then, and **Searing Pain** in the last 3.5 seconds.
+- A boss needs only one **Curse of the Elements** (in Classic two never stacked): if another warlock keeps it up, take the curse your raid gives you, such as **Curse of Recklessness** for the physical fighters or **Curse of Tongues** on a caster boss.
+- When healing is tight, each **Life Tap** costs health someone must heal: use your mana potion and Demonic Rune before you tap.
+
 ## The numbers
 
 | Setting | DPS |

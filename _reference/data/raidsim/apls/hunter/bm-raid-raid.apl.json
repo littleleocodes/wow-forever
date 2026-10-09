@@ -84,47 +84,13 @@
   },
   {
    "action": {
-    "condition": {
-     "and": {
-      "vals": [
-       {
-        "cmp": {
-         "op": "OpGt",
-         "lhs": {
-          "autoTimeToNext": {
-           "autoType": "RangedAuto"
-          }
-         },
-         "rhs": {
-          "const": {
-           "val": "0.5s"
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "currentManaPercent": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "30%"
-          }
-         }
-        }
-       }
-      ]
-     }
-    },
     "castSpell": {
      "spellId": {
       "spellId": 14287
      }
     }
    },
-   "notes": "apl_opt 2026-10-04: changed or added by the rotation search (see bm-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see bm-raid-rotation-search.json)"
   },
   {
    "action": {

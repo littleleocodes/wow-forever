@@ -25,6 +25,30 @@
 
 **Between fights:** Drink below a sixth of your mana; you rarely need to eat.
 
+## Why this rotation
+
+Protection levels behind a shield: **Seal of Fury** turns half of its Holy damage into an absorb, blocks and judgements pay your mana back, and **Judgement**, **Holy Strike** and **Consecration** do the damage, so you rarely stop to eat.
+
+**Why it works**
+
+- **Seal of Fury** before each pull: at rank 7 it adds 35 Holy damage to every swing, and with a shield each swing also gives you an absorb of half that damage; **Improved Seal of Fury** returns 60 mana each time such a shield is used up.
+- Keep **Righteous Fury** up even alone: its threat does nothing solo, but **Improved Righteous Fury** (6% less damage taken) only works while it is on, and the fight lab assumed it always up.
+- **Judgement** and **Holy Strike** whenever ready, with **Swift Judgement** right after a **Judgement** (off the global cooldown, once a minute): it finishes the cooldown and makes the next one free. **Sanctified Judgement** returns 60% of your seal's mana cost each time you judge.
+- **Consecration** only while your mana is above 60%, a hand-set rule the fight lab plays (no search has tuned this rotation yet); **Holy Conduit** makes it and **Hammer of Wrath** 40% cheaper. **Hammer of Wrath** finishes mobs below 20% health from level 44.
+- Below about a third of your health: **Templar's Bulwark** first (an absorb as large as your health for 8 seconds), then **Holy Light** behind it. The fight lab casts **Holy Light** only while the mob cannot hurt you: inside the absorb, during **Divine Protection** or while **Hammer of Justice** holds it; **Lay on Hands** below 15%.
+
+**Caveats**
+
+- **Holy Shield** is not in this build (it needs 30 points in Protection first): skip its line.
+- **Templar's Bulwark** applies Forbearance for a minute, so **Divine Protection** is not available right after it.
+- Undead and Demons: **Exorcism** (instant, 15-second cooldown, 40% cheaper with **Holy Conduit**) hits them hard. The fight lab has no such mobs, so it was not measured.
+
+**When to change it**
+
+- A mob that casts spells: **Hammer of Justice** stops the cast.
+- Two or more mobs: **Consecration** hits them all; the 60% mana rule was set for single mobs, and this rotation was not measured on several.
+- Tanking a dungeon on the way: **Seal of Fury**'s judgement taunts for 4 seconds, and **Righteous Fury** makes your Holy damage 60% more threat.
+
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |

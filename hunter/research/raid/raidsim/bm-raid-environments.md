@@ -4,12 +4,12 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `beast-marks-open-raid` | 27/19/5 | 464 | 508 | 842 | 842 | 868 |
-| `beast-mastery-ml-parse` | 31/20/0 | 464 | 509 | 841 | 841 | 875 |
-| `beast-mastery-raid` | 30/21/0 | 461 | 503 | 810 | 810 | 833 |
-| `beast-marks-ml-raid` | 28/23/0 | 454 | 498 | 833 | 833 | 856 |
-| `mm-hawk-raid` | 22/29/0 | 446 | 485 | 805 | 805 | 831 |
-| sim preset: Beast Mastery 35/16/0 | - | 439 | 480 | 790 | 790 | 822 |
+| `beast-mastery-ml-parse` | 31/20/0 | 489 | 541 | 843 | 843 | 877 |
+| `beast-mastery-raid` | 30/21/0 | 487 | 536 | 810 | 810 | 834 |
+| `beast-marks-ml-raid` | 28/23/0 | 479 | 530 | 833 | 833 | 857 |
+| `mm-hawk-raid` | 22/29/0 | 475 | 521 | 807 | 807 | 835 |
+| `beast-marks-open-raid` | 27/21/3 | 474 | 525 | 855 | 855 | 886 |
+| sim preset: Beast Mastery 35/16/0 | - | 462 | 509 | 789 | 789 | 823 |
 
 - **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
 - **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
@@ -23,12 +23,12 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
-| `beast-marks-open-raid` | 464 | +1% | +30% | +12% | +3% | +34% | 842 |
-| `beast-mastery-ml-parse` | 464 | +2% | +31% | +12% | +3% | +33% | 841 |
-| `beast-mastery-raid` | 461 | +0% | +31% | +10% | +3% | +32% | 810 |
-| `beast-marks-ml-raid` | 454 | +1% | +31% | +13% | +3% | +36% | 833 |
-| `mm-hawk-raid` | 446 | +1% | +30% | +9% | +3% | +36% | 805 |
-| sim preset: Beast Mastery 35/16/0 | 439 | +1% | +32% | +12% | +3% | +32% | 790 |
+| `beast-mastery-ml-parse` | 489 | +2% | +28% | +11% | +5% | +27% | 843 |
+| `beast-mastery-raid` | 487 | +0% | +27% | +8% | +5% | +26% | 810 |
+| `beast-marks-ml-raid` | 479 | +1% | +27% | +11% | +5% | +29% | 833 |
+| `mm-hawk-raid` | 475 | +2% | +27% | +8% | +5% | +28% | 807 |
+| `beast-marks-open-raid` | 474 | +5% | +27% | +11% | +5% | +32% | 855 |
+| sim preset: Beast Mastery 35/16/0 | 462 | +1% | +28% | +11% | +4% | +26% | 789 |
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
 
@@ -38,12 +38,12 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
-| `beast-marks-open-raid` | 487 | 475 | 464 | 450 | 434 |
-| `beast-mastery-ml-parse` | 494 | 473 | 464 | 442 | 426 |
-| `beast-mastery-raid` | 479 | 467 | 461 | 449 | 431 |
-| `beast-marks-ml-raid` | 474 | 462 | 454 | 438 | 421 |
-| `mm-hawk-raid` | 472 | 457 | 446 | 434 | 417 |
-| sim preset: Beast Mastery 35/16/0 | 465 | 444 | 439 | 424 | 412 |
+| `beast-mastery-ml-parse` | 520 | 500 | 489 | 461 | 441 |
+| `beast-mastery-raid` | 506 | 494 | 487 | 471 | 449 |
+| `beast-marks-ml-raid` | 500 | 490 | 479 | 458 | 437 |
+| `mm-hawk-raid` | 501 | 488 | 475 | 457 | 435 |
+| `beast-marks-open-raid` | 516 | 489 | 474 | 450 | 441 |
+| sim preset: Beast Mastery 35/16/0 | 487 | 467 | 462 | 442 | 427 |
 
 Gear presets: raid `hunter-dps-p1.p1opt.gear.json`, maximum `hunter-dps-p1.p1opt.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

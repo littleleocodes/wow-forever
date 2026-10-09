@@ -3,33 +3,31 @@
  "spec": "bm-raid",
  "build": "beast-marks-open-raid",
  "setting": "raid",
- "date": "2026-10-07",
+ "date": "2026-10-09",
  "tank": false,
  "removal": {
-  "Bestial Discipline": 0.016700710378062533,
-  "Careful Aim": 0.05413294631432786,
-  "Deadly Aspects": 0.0441492027494953,
-  "Efficiency": 0.0005504822837485435,
+  "Bestial Discipline": 0.029634924933437334,
+  "Careful Aim": 0.05719614239286952,
+  "Deadly Aspects": 0.04184225500519012,
   "Endurance Training": -0.0,
-  "Ferocity": 0.030148024554209285,
-  "Focused Fire": 0.019062241470639063,
-  "Frenzy": 0.02587880880675042,
+  "Ferocity": 0.022725648438862156,
+  "Focused Fire": 0.01914311684387293,
+  "Frenzy": 0.03260462949885168,
+  "Improved Arcane Shot": 0.020151361190962613,
   "Improved Aspect of the Monkey": -0.0,
-  "Improved Stings": 0.02236851558694286,
-  "Improved Tracking": 0.03906929357635358,
-  "Lethal Attacks": 0.04625883459347935,
-  "Lone Wolf": -0.0,
-  "Mortal Shots": 0.030694103058894417,
-  "Pathfinding": -0.0,
-  "Summon Hawk": 0.068114796473693,
-  "Unleashed Fury": 0.04056109033594546
+  "Improved Mend Pet": -0.0,
+  "Improved Revive Pet": -0.0,
+  "Improved Stings": 0.02180110320601991,
+  "Improved Tracking": 0.022476656796053596,
+  "Lethal Attacks": 0.04998186703471963,
+  "Mortal Shots": 0.04407692420980758,
+  "Unleashed Fury": 0.026687009874743373
  },
  "free": [
-  "Efficiency",
   "Endurance Training",
   "Improved Aspect of the Monkey",
-  "Lone Wolf",
-  "Pathfinding"
+  "Improved Mend Pet",
+  "Improved Revive Pet"
  ],
  "kept_for_rotation": [],
  "active_never_worth": [],
@@ -38,23 +36,32 @@
   {
    "round": 1,
    "kind": "utility",
-   "from": "Lone Wolf",
-   "to": "Efficiency",
-   "seed1": -0.0005847950821480374,
-   "seed2": 3.7500316611316364e-05,
-   "utility": "mana"
+   "from": "Improved Mend Pet",
+   "to": "Endurance Training",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
   },
   {
    "round": 2,
    "kind": "utility",
-   "from": "Pathfinding",
+   "from": "Improved Revive Pet",
+   "to": "Endurance Training",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 3,
+   "kind": "utility",
+   "from": "Improved Revive Pet",
    "to": "Endurance Training",
    "seed1": 0.0,
    "seed2": 0.0,
    "utility": "survival"
   }
  ],
- "final_seed3": 0.00018046226018175737,
+ "final_seed3": 0.0,
  "start": {
   "Beast Mastery": [
    [
@@ -63,7 +70,7 @@
    ],
    [
     "Endurance Training",
-    3
+    2
    ],
    [
     "Focused Fire",
@@ -74,20 +81,20 @@
     1
    ],
    [
-    "Pathfinding",
-    1
+    "Improved Revive Pet",
+    2
    ],
    [
     "Unleashed Fury",
     5
    ],
    [
-    "Ferocity",
-    5
+    "Improved Mend Pet",
+    1
    ],
    [
-    "Summon Hawk",
-    1
+    "Ferocity",
+    5
    ],
    [
     "Bestial Discipline",
@@ -108,26 +115,22 @@
     3
    ],
    [
-    "Efficiency",
-    1
-   ],
-   [
     "Careful Aim",
     5
    ],
    [
-    "Lone Wolf",
-    1
+    "Improved Arcane Shot",
+    3
    ],
    [
     "Mortal Shots",
-    4
+    5
    ]
   ],
   "Survival": [
    [
     "Improved Tracking",
-    5
+    3
    ]
   ]
  },
@@ -139,7 +142,7 @@
    ],
    [
     "Endurance Training",
-    4
+    5
    ],
    [
     "Focused Fire",
@@ -156,10 +159,6 @@
    [
     "Ferocity",
     5
-   ],
-   [
-    "Summon Hawk",
-    1
    ],
    [
     "Bestial Discipline",
@@ -180,22 +179,22 @@
     3
    ],
    [
-    "Efficiency",
-    2
-   ],
-   [
     "Careful Aim",
     5
    ],
    [
+    "Improved Arcane Shot",
+    3
+   ],
+   [
     "Mortal Shots",
-    4
+    5
    ]
   ],
   "Survival": [
    [
     "Improved Tracking",
-    5
+    3
    ]
   ]
  }

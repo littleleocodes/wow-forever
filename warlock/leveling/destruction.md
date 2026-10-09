@@ -23,6 +23,29 @@
 
 **Between fights:** **Life Tap** back up, heal the Voidwalker with **Health Funnel**, eat below 40% health.
 
+## Why this rotation
+
+Destruction levels with the same Voidwalker and Affliction dots as the other specs, since its first 21 points are Affliction, and adds a hard-hitting **Immolate** and, from level 59, **Conflagrate**. This build takes neither **Incinerate** nor **Shadowburn**, so your filler is **Shadow Bolt** when your mana is nearly full and the wand otherwise.
+
+**Why it works**
+
+- **Corruption** and **Bane of Agony** go first: both are instant (with 5 points in **Improved Corruption**) and cheap, and they give the Voidwalker time to build threat before your fire spells land. **Amplify Curse** before the pull makes that **Bane of Agony** 50% stronger, and **Siphon Life** joins at level 30. Skip **Corruption** on a mob below about a third of its health.
+- **Immolate** only while you have more than half your mana: the fight lab measured that about 2.5% faster per kill than casting it every time. **Aftermath** makes its first hit 50% stronger, and the fight lab holds it back while it would pull the mob off the Voidwalker.
+- **Conflagrate** (level 59 in this order) eats your **Immolate** in this build, so cast it when **Immolate** has about 3 seconds left, or to finish a burning mob it would kill. **Fire and Brimstone** (level 60) adds to its crit chance and **Ruin** doubles its crit bonus.
+- Your filler is **Shadow Bolt** above about 80% mana and the wand below it. When a mob has too little health left for a **Shadow Bolt**, the fight lab casts **Searing Pain** instead, also only with nearly full mana.
+- **Life Tap** when your mana runs short and your health is above 60%; between fights, **Life Tap** back up and heal the Voidwalker with **Health Funnel**. Eat below 40% health: the fight lab measured that a little faster than waiting longer.
+
+**Caveats**
+
+- The steps' **Incinerate** and **Shadowburn** lines are for builds that take those talents: this one casts **Shadow Bolt** where they name **Incinerate** and finishes with **Conflagrate** or the wand. The talent search traded **Shadowburn** for a point of **Fire and Brimstone** and measured about 1% faster kills.
+- Until level 59 you have no **Conflagrate**: you play **Corruption**, **Bane of Agony**, **Siphon Life**, **Immolate**, then **Shadow Bolt** or the wand.
+- When a mob reaches you, cast **Death Coil** if you are hurt and let the Voidwalker take it back with **Torment**: the fight lab measured never casting **Fear** or **Drain Life** about 1% faster each. **Molten Skin** (10% less damage taken) and **Intensity** (casts that resist pushback) make those moments cheaper.
+
+**When to change it**
+
+- If you take **Incinerate** later, the fight lab's rotation casts it in place of **Shadow Bolt** on a burning mob: it deals 25% more damage while **Immolate** is on the target.
+- Finish a nearly dead mob with the wand or **Conflagrate** instead of a new **Immolate**: the fight lab starts no **Immolate** on a mob below about a third of its health.
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

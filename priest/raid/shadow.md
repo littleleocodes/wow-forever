@@ -24,6 +24,33 @@
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
+## Why this rotation
+
+Shadow in a raid keeps **Shadow Word: Pain** on the boss, casts **Devouring Plague**, **Shadow Word: Death** and **Mind Blast** each time they come off cooldown, and channels **Mind Flay** in every gap. **Shadowform** goes up before the pull and stays up all fight.
+
+**Why it works**
+
+- **Shadowform** is what makes the spec work: 10% more Shadow damage, half the mana cost on every Shadow spell and a doubled critical strike bonus. You cannot cast heals while in it.
+- **Shadow Word: Pain** is first because it does about a fifth of your damage for one global cooldown every 24 seconds (18, plus 6 from **Improved Shadow Word: Pain**). Recast it only after it falls off, and not in the last 10 seconds of the fight, when a new one gets only a few ticks.
+- **Inner Focus** makes your next spell free, and the list spends it on **Devouring Plague** at the pull (it comes back every 3 minutes, so once in a 3-minute fight). Its 25% crit bonus does not apply to a damage-over-time spell (beta notes of 2026-10-01), so the pair only saves mana; it comes from the community simulator's own rotation.
+- After that, **Devouring Plague** goes out each time its 1-minute cooldown ends, as soon as **Shadow Word: Death** and **Mind Blast** are both cooling down: three casts a fight, counting the free one. The list above shows it only after **Inner Focus**, but the simulator measured 2.5% more damage casting it on cooldown. **Devouring Contagion** halves its cost, and it heals you for the damage it deals.
+- **Shadow Word: Death** comes before **Mind Blast** because its cooldown is longer (15 seconds against 5.5 with **Improved Mind Blast**), so waiting costs it more; the simulator measured 0.4% more damage in this order. Below 20% of the boss's health, **Early Demise** adds 30% to its crit chance.
+- **Mind Flay** fills every gap and does almost half your damage: a 3-second channel that **Improved Mind Flay** makes 20% stronger. Every Shadow spell also stacks **Shadow Weaving** on you (2% Shadow damage a stack, up to 5, for 15 seconds), so while you keep casting it stays at 5 by itself.
+
+**Caveats**
+
+- **Shadow Word: Death** hits you for 10% of your maximum health every time the target survives it, about 11 times in a 3-minute fight. The damage numbers ignore that; your healers do not. **Devouring Plague** heals some of it back.
+- **Mind Blast** causes a lot of threat (its tooltip says so). In the first seconds of a fight or after a tank swap, hold it until the tank is ahead; **Shadow Affinity** in this build cuts the threat of your Shadow spells by 30%.
+- When you must move, **Mind Flay** and **Mind Blast** stop: use your instants, **Shadow Word: Death**, **Devouring Plague** and **Shadow Word: Pain** if it fell off. **Shadow Weaving** drops after 15 seconds without a Shadow spell.
+- Mana is not your problem in a full raid: the simulator's priest never runs dry, with one mana potion and two Demonic Runes a fight. The full list ends with **Dark Sacrifice** for an empty mana bar, but only Undead priests have it and it never fires there.
+
+**When to change it**
+
+- With adds up, keep **Shadow Word: Pain** on the ones that live longest and put **Devouring Plague** on one that dies first: **Devouring Contagion** makes the plague jump to a nearby enemy when its target dies. The simulator fights one target, so this is not measured.
+- **Silence** is in this build but not in the list: use it to stop a casting add. It costs one global cooldown.
+- **Vampiric Embrace** has no line because the simulator counts only damage. If your group takes damage, cast it on the boss: for 30 seconds your party heals for 20% of your Shadow damage, for 40 mana and one global cooldown a minute.
+- If your healers struggle, save **Shadow Word: Death** for the last 20% of the boss's health, where **Early Demise** makes it crit more. You give up some damage to stop the backlash.
+
 ## The numbers
 
 | Setting | DPS |

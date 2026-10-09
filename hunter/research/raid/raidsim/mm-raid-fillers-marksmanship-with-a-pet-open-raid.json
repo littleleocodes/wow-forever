@@ -1,0 +1,171 @@
+{
+ "class": "hunter",
+ "spec": "mm-raid",
+ "build": "marksmanship-with-a-pet-open-raid",
+ "setting": "raid",
+ "date": "2026-10-09",
+ "tank": false,
+ "removal": {
+  "Barrage": 0.010956741574429274,
+  "Careful Aim": 0.060921223565458926,
+  "Deadly Aspects": 0.04418585067867831,
+  "Efficiency": 0.016008621505714582,
+  "Focused Fire": 0.019227960106027897,
+  "Improved Arcane Shot": 0.030238790614750544,
+  "Improved Stings": 0.019016883707964616,
+  "Improved Tracking": 0.040608688784748326,
+  "Lethal Attacks": 0.0481058031963425,
+  "Mortal Shots": 0.045183338318428246,
+  "Ranged Weapon Specialization": 0.03517529343961534,
+  "Rapid Killing": -0.0,
+  "Rapid Recuperation": 0.03326819112760915,
+  "Sniper Shot": 0.04974425163863816,
+  "Trueshot Aura": 0.01919786456894723
+ },
+ "free": [
+  "Rapid Killing"
+ ],
+ "kept_for_rotation": [],
+ "active_never_worth": [],
+ "abilities_never_cast": [
+  "Trueshot Aura"
+ ],
+ "moves": [],
+ "final_seed3": 0.0,
+ "start": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Focused Fire",
+    2
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Efficiency",
+    2
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Rapid Killing",
+    2
+   ],
+   [
+    "Improved Arcane Shot",
+    5
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Mortal Shots",
+    5
+   ],
+   [
+    "Rapid Recuperation",
+    2
+   ],
+   [
+    "Barrage",
+    3
+   ],
+   [
+    "Ranged Weapon Specialization",
+    5
+   ],
+   [
+    "Sniper Shot",
+    1
+   ]
+  ],
+  "Survival": [
+   [
+    "Improved Tracking",
+    5
+   ]
+  ]
+ },
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Focused Fire",
+    2
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Efficiency",
+    2
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Rapid Killing",
+    2
+   ],
+   [
+    "Improved Arcane Shot",
+    5
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Mortal Shots",
+    5
+   ],
+   [
+    "Rapid Recuperation",
+    2
+   ],
+   [
+    "Barrage",
+    3
+   ],
+   [
+    "Ranged Weapon Specialization",
+    5
+   ],
+   [
+    "Sniper Shot",
+    1
+   ]
+  ],
+  "Survival": [
+   [
+    "Improved Tracking",
+    5
+   ]
+  ]
+ }
+}

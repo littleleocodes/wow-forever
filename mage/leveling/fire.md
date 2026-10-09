@@ -18,6 +18,30 @@
 
 **Between fights:** Drink your conjured water below a third of your mana, **Evocation** when you are out, eat below two thirds of your health.
 
+## Why this rotation
+
+Fire levels with **Fireball** at range and **Fire Blast** up close, and borrows the Frost tree's freeze: **Frost Nova**, step back, and **Ice Lance** the frozen mob. The list above leaves **Ice Lance** out, but in the fight lab it is this build's biggest damage source at level 60, ahead of **Fireball**.
+
+**Why it works**
+
+- **Fireball** from as far away as you can (**Flame Throwing** adds 6 yards): 3 seconds with **Improved Fireball**. Stop starting it below a fifth of the mob's health, where it overkills; the fight lab measured that faster.
+- **Fire Blast** is your instant for when the mob would reach you before a **Fireball** lands, or is already on you; at range, **Fireball** comes first. Leave the last 10% of the mob's health to the wand.
+- **Frost Nova** when the mob reaches you, then step back. When Nova is on cooldown, **Blast Wave** dazes the mob (50% slower for 6 seconds) so you can get away.
+- **Ice Lance** while the mob is frozen: this build takes **Ice Lance**, **Shatter**, **Frostbite** and **Ice Shards** from the Frost tree, so a frozen target takes 300% more damage with extra crit. That is about 40% of your damage at level 60 in the fight lab.
+- **Scorch** only above half your mana (tuned): when the mob is on you and your control is down, its 1.5-second cast is pushed back less than a **Fireball**.
+- **Combustion** goes at the pull. **Pyroblast** waits for 3 stacks of **Heating Up**, which almost never happens in a short leveling fight.
+
+**Caveats**
+
+- Mana: **Fireball** costs 410 at top rank against 290 for a **Frostbolt**. Drink below a third of your mana and use **Evocation** between fights when it is ready.
+- **Impact** stuns the mob for 2 seconds on 10% of your Fire hits, and **Burning Soul** keeps 70% of your Fire casts from being pushed back: both help when a mob reaches you.
+- Pulls of several mobs: **Blast Wave** and **Flamestrike** hit them all, but the fight lab only measured single pulls for Fire.
+
+**When to change it**
+
+- On a nearly dead mob, let the wand finish it rather than start a **Fireball** (below 20% health) or spend a **Fire Blast** (below 10%).
+- If you run low on mana in a fight, skip **Scorch** and keep **Fire Blast** and **Ice Lance** for the freeze; the fight lab casts **Scorch** only above half your mana.
+
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |

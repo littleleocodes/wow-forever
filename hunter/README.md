@@ -10,7 +10,7 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling (solo) | Raid (group: full raid DPS) |
 |---|---|---|
-| **Beast Mastery** | [Beast Mastery — Leveling](leveling/beast-mastery.md) ⚗<br>27 s/kill | [Beast Mastery — Full raid](raid/beast-mastery.md) 🔬<br>841 DPS (raid) |
+| **Beast Mastery** | [Beast Mastery — Leveling](leveling/beast-mastery.md) ⚗<br>27 s/kill | [Beast Mastery — Full raid](raid/beast-mastery.md) 🔬<br>843 DPS (raid) |
 | **Marksmanship** | [Marksmanship raid DPS with a pet](leveling/marksmanship.md)<br>27 s/kill | [Marksmanship — Lone Wolf](raid/marksmanship.md)<br>897 DPS (raid) |
 | **Survival** | **✅ Recommended**<br>[Melee Survival leveling](leveling/survival.md)<br>24 s/kill | **✅ Recommended**<br>[Melee Survival — Lone Wolf](raid/survival.md)<br>1048 DPS (raid) |
 
@@ -22,7 +22,7 @@ Builds that spend their points across two trees, each made for a particular job.
 
 | Hybrid | What it is | Builds |
 |---|---|---|
-| **Beast-Marks** | Marksmanship's shots with Beast Mastery's pet talents: the classic raid hunter split. | Leveling: [Beast-Marks — Leveling](leveling/beast-marks.md) 🔬 · 26 s/kill<br>Raid: [Beast-Marks — Raid](raid/beast-marks.md) 🔬 · 842 DPS (raid) |
+| **Beast-Marks** | Marksmanship's shots with Beast Mastery's pet talents: the classic raid hunter split. | Leveling: [Beast-Marks — Leveling](leveling/beast-marks.md) 🔬 · 26 s/kill<br>Raid: [Beast-Marks — Raid](raid/beast-marks.md) 🔬 · 855 DPS (raid) |
 | **Beast-Survival** | Dual-wield melee with Beast Mastery's aspect and pet talents (Summon Hawk and Lone Wolf in a raid, a pet while leveling), short of 30 Survival points. | Leveling: **✅ Recommended** · [Beast-Survival — Leveling](leveling/beast-survival.md) 🔬 · 24 s/kill<br>Raid: **✅ Recommended** · [Beast-Survival — Raid](raid/beast-survival.md) 🔬 · 1049 DPS (raid) |
 | **Melee (split)** | Dual-wield melee with Marksmanship support, short of 30 Survival points. | Leveling: [Melee hunter](leveling/melee-split.md) · 26 s/kill |
 
@@ -52,8 +52,8 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | 1 | [Beast-Survival](raid/beast-survival.md) — Beast-Survival — Raid 🔬 | 1049 | best |
 | 2 | [Survival](raid/survival.md) — Melee Survival — Lone Wolf | 1048 | -0% |
 | 3 | [Marksmanship](raid/marksmanship.md) — Marksmanship — Lone Wolf | 897 | -15% |
-| 4 | [Beast-Marks](raid/beast-marks.md) — Beast-Marks — Raid 🔬 | 842 | -20% |
-| 5 | [Beast Mastery](raid/beast-mastery.md) — Beast Mastery — Full raid 🔬 | 841 | -20% |
+| 4 | [Beast-Marks](raid/beast-marks.md) — Beast-Marks — Raid 🔬 | 855 | -19% |
+| 5 | [Beast Mastery](raid/beast-mastery.md) — Beast Mastery — Full raid 🔬 | 843 | -20% |
 
 Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie. Everything is a simulation of the beta, not a measurement in the game.
 
@@ -83,7 +83,7 @@ The research behind the pages above: every build, report and simulation.
 | Folder | What is in it | Hand drafts |
 |---|---|---|
 | [research/leveling/](research/leveling/README.md) | Leveling and solo builds, the leveling guide, rotation and respec plan, fight-lab reports (12 builds) | [bm-solo-farm](research/leveling/builds/bm-solo-farm.md), [leveling-beast-mastery](research/leveling/builds/leveling-beast-mastery.md), [leveling-melee](research/leveling/builds/leveling-melee.md), [beast-mastery-leveling](research/leveling/builds/beast-mastery-leveling.md), [beast-marks-open-leveling](research/leveling/builds/beast-marks-open-leveling.md), [beast-survival-open-leveling](research/leveling/builds/beast-survival-open-leveling.md) |
-| [research/raid/](research/raid/README.md) | Raid DPS, tank and healer builds, training-dummy and raid-sim rankings, rotation, gear, consumables (20 builds) | [bm-mm-raid](research/raid/builds/bm-mm-raid.md), [bm-mm-full-buffs-raid](research/raid/builds/bm-mm-full-buffs-raid.md), [mm-lone-wolf-raid](research/raid/builds/mm-lone-wolf-raid.md), [mm-hawk-raid](research/raid/builds/mm-hawk-raid.md), [survival-melee](research/raid/builds/survival-melee.md), [melee-survival-raid](research/raid/builds/melee-survival-raid.md), [beast-mastery-raid](research/raid/builds/beast-mastery-raid.md), [survival-raid](research/raid/builds/survival-raid.md), [beast-mastery-ml-parse](research/raid/builds/beast-mastery-ml-parse.md), [marksmanship-ml-raid](research/raid/builds/marksmanship-ml-raid.md), [marksmanship-ml-parse](research/raid/builds/marksmanship-ml-parse.md), [survival-ml-parse](research/raid/builds/survival-ml-parse.md), [beast-marks-ml-raid](research/raid/builds/beast-marks-ml-raid.md), [beast-marks-open-raid](research/raid/builds/beast-marks-open-raid.md), [beast-survival-open-raid](research/raid/builds/beast-survival-open-raid.md) |
+| [research/raid/](research/raid/README.md) | Raid DPS, tank and healer builds, training-dummy and raid-sim rankings, rotation, gear, consumables (21 builds) | [bm-mm-raid](research/raid/builds/bm-mm-raid.md), [bm-mm-full-buffs-raid](research/raid/builds/bm-mm-full-buffs-raid.md), [mm-lone-wolf-raid](research/raid/builds/mm-lone-wolf-raid.md), [mm-hawk-raid](research/raid/builds/mm-hawk-raid.md), [survival-melee](research/raid/builds/survival-melee.md), [melee-survival-raid](research/raid/builds/melee-survival-raid.md), [beast-mastery-raid](research/raid/builds/beast-mastery-raid.md), [survival-raid](research/raid/builds/survival-raid.md), [beast-mastery-ml-parse](research/raid/builds/beast-mastery-ml-parse.md), [marksmanship-ml-raid](research/raid/builds/marksmanship-ml-raid.md), [marksmanship-ml-parse](research/raid/builds/marksmanship-ml-parse.md), [survival-ml-parse](research/raid/builds/survival-ml-parse.md), [beast-marks-ml-raid](research/raid/builds/beast-marks-ml-raid.md), [marksmanship-with-a-pet-open-raid](research/raid/builds/marksmanship-with-a-pet-open-raid.md), [beast-marks-open-raid](research/raid/builds/beast-marks-open-raid.md), [beast-survival-open-raid](research/raid/builds/beast-survival-open-raid.md) |
 | [research/pvp/](research/pvp/README.md) | PvP builds (no rotation: PvP play depends on the fight) (4 builds) | [pvp-mm-surv](research/pvp/builds/pvp-mm-surv.md), [beast-mastery-pvp](research/pvp/builds/beast-mastery-pvp.md), [marksmanship-pvp](research/pvp/builds/marksmanship-pvp.md), [survival-pvp](research/pvp/builds/survival-pvp.md) |
 | [research/spells/](research/spells/README.md) | Spell ranks and numbers from the beta client | |
 | [research/talents/forever/](research/talents/forever/talent-trees.md) | Talent trees, the baseline audit, [adaptation notes](research/talents/forever/README.md) and `proposed-builds.json` (the source of truth for every build above) | |

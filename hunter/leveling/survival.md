@@ -21,6 +21,30 @@
 
 **Between fights:** Mend the pet, drink below a third of your mana, eat below two thirds of your health.
 
+## Why this rotation
+
+Melee Survival levels with the pet as the tank: you sting the mob from range, walk in and fight beside the pet with two one-handers. **Raptor Strike** and **Strider Kick** are your steady hits, **Immolation Trap** burns the longer fights, and white swings do the rest.
+
+**Why it works**
+
+- **Serpent Sting** from range opens every fight and ticks for all of it: about a seventh of your damage at 60 in the fight lab. The page also lists **Hunter's Mark**, which **Expose Prey** needs, but the fight lab's tuned play skips the mark and measured about 3% faster kills without it.
+- **Immolation Trap** goes at your feet as you reach the mob: traps work in combat in Forever but land where you stand. Only while the mob has more than 70% of its health, because the burn lasts 15 seconds; played that way the trap saved 4.6 to 6.3% time per kill at levels 40-60 in the fight lab.
+- **Mongoose Bite** lights up after you dodge (not the mob) or, with **Expose Prey**, after hits on a marked mob; **Counterattack** lights up after you parry. With the pet tanking both come rarely, under one cast a kill at 60, so press them whenever you see them.
+- **Strider Kick** on its 8-second cooldown and **Raptor Strike** whenever it is ready: about a tenth of your damage each. **Raptor Strike** replaces your next main-hand swing and costs no global cooldown, so it never competes with the other buttons.
+- **Aspect of the Monkey** until level 30 (its dodges also light up **Mongoose Bite**), then **Aspect of the Beast**: melee attack power, and with **Deadly Aspects** a 10% chance per swing for 30% faster swings for 12 seconds.
+- **Deterrence** when you fall below 40% health while the mob still has some left: +25% dodge and parry for 10 seconds, which also lights up **Mongoose Bite** and **Counterattack**.
+
+**Caveats**
+
+- The pet is still your tank: **Mend Pet** below about a third, and let it build threat before you hit hard. In the fight lab, dropping the pet tripled the downtime per kill at 60.
+- **Improved Tracking** (levels 10-14) adds damage only against the creature type you are tracking: switch tracking to what you are killing.
+- There is no filler: with **Raptor Strike**, **Strider Kick** and the trap on cooldown, the fight lab just swings. **Lacerate**, a melee bleed in your spellbook from level 30, is in none of this project's simulations, so its worth is unmeasured.
+
+**When to change it**
+
+- Two or more mobs: **Explosive Trap** instead of **Immolation Trap**; it hits everything within 10 yards and shares the fire-trap cooldown.
+- If the pet dies mid-fight, **Deterrence** and finish the mob, or **Feign Death** if it is going badly; revive the pet before the next pull.
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

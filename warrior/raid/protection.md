@@ -26,6 +26,32 @@
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
+## Why this rotation
+
+Protection tanks in **Defensive Stance** with a shield, and threat comes from three buttons: **Revenge** whenever it lights up, **Shield Slam** on cooldown and **Heroic Strike** whenever 45 rage is spare. The boss's debuffs and your big cooldowns are not on the list: they are yours to manage.
+
+**Why it works**
+
+- **Revenge** comes first: 5 rage (2 with **Focused Rage**) for high threat, usable only for 5 seconds after you block, dodge or parry, so a missed window is lost. The simulator measured it slightly better above **Shield Slam**.
+- **Shield Slam** (20 rage, 17 with **Focused Rage**, 6-second cooldown) is your hardest hit, made stronger by your block value, and causes very high threat; the simulator casts it every time it is ready.
+- **Heroic Strike** is about a third of your threat in the simulator. It goes on your next swing, off the global cooldown, so you can queue it on top of everything else; waiting for 45 rage keeps enough for **Shield Slam** and **Revenge**.
+- **Rend** (kept on the boss) and **Shield Bash** fill the remaining global cooldowns for a little threat, worth 0.5% and 0.2% of tank value in the simulator. Use **Bloodrage** whenever you are under 70 rage, about 3 times a fight.
+- **Shield Wall** (60% less damage for 12 seconds, 15-minute cooldown) is at the top only because the simulator's boss hits the same all fight, so any use saves the same damage there (3.2% of tank value). In a real fight, save it for the dangerous moment.
+
+**Caveats**
+
+- The list has no **Sunder Armor**, **Thunder Clap** or **Demoralizing Shout** because the simulator's raid already has those debuffs on the boss (a druid's Demoralizing Roar stands in for the shout), so casting them only cost rage there; dropping **Thunder Clap** measured 0.8% better. In a real raid they are usually yours.
+- **Shield Block** has no line at all: the simulator never casts it, so its worth is unmeasured. It gives 75% more block chance for 7 seconds or 2 blocks, and each block gives 5 rage with **Shield Specialization** and opens **Revenge**.
+- **Shield Bash** is your interrupt (12-second cooldown). As a filler it is worth little, so keep it ready for a spell the boss must not finish.
+- The simulator's boss only melees you: it does not model adds, tank swaps or damage spikes, so it never needs a **Taunt**.
+
+**When to change it**
+
+- On the pull, stack **Sunder Armor** to 5 for the raid's armor reduction and your threat, then refresh it before its 30 seconds run out.
+- Keep **Thunder Clap** (bosses attack 20% slower in Forever, 30 seconds) and **Demoralizing Shout** (204 less attack power, 45 seconds) up unless another warrior or a druid's Demoralizing Roar covers them.
+- Press **Shield Block** when the boss hits hard, and **Shield Wall** for the worst moments: an enrage, a healer down, your health low.
+- Adds: **Thunder Clap** hits up to 4 targets, **Challenging Shout** (10-minute cooldown) turns everything within 10 yards onto you for 6 seconds, and **Taunt** (8-second cooldown in Forever) takes back a single target.
+
 ## The numbers
 
 Tank value 1.005 (threat and damage taken under a boss, relative to our reference tank build).

@@ -4,13 +4,14 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `bm-mm-full-buffs-raid` | 21/30/0 | 472 | 15 | +0.0% | 386 | 67 | +49.1% |
-| `bm-mm-raid` | 22/29/0 | 461 | 14 | -2.3% | 375 | 52 | +66.2% |
-| `opt-mm-raid-raid-dps` | 22/29/0 | 461 | 14 | -2.3% | 375 | 52 | +66.2% |
-| sim preset: Marksmanship | - | 454 | 15 | -3.8% | 377 | 88 | - |
-| sim preset: Beast Mastery 35/16/0 | - | 444 | 12 | -5.9% | 324 | 73 | - |
-| sim preset: Marksmanship 0/39/12 | - | 430 | 14 | -8.9% | 368 | 82 | - |
-| sim preset: Survival 0/15/36 | - | 398 | 10 | -15.7% | 335 | 71 | - |
+| `bm-mm-full-buffs-raid` | 21/30/0 | 472 | 15 | +0.0% | 386 | 68 | +49.1% |
+| `bm-mm-raid` | 22/29/0 | 461 | 14 | -2.4% | 374 | 53 | +66.2% |
+| `opt-mm-raid-raid-dps` | 22/29/0 | 461 | 14 | -2.4% | 374 | 53 | +66.2% |
+| sim preset: Marksmanship | - | 454 | 15 | -3.8% | 377 | 89 | - |
+| `marksmanship-with-a-pet-open-raid` | 7/39/5 | 451 | 16 | -4.3% | 388 | 98 | +37.5% |
+| sim preset: Beast Mastery 35/16/0 | - | 445 | 12 | -5.7% | 325 | 75 | - |
+| sim preset: Marksmanship 0/39/12 | - | 431 | 14 | -8.7% | 368 | 83 | - |
+| sim preset: Survival 0/15/36 | - | 396 | 10 | -16.1% | 333 | 76 | - |
 
 ## Damage shares (`bm-mm-full-buffs-raid`, simulator actions)
 
@@ -19,10 +20,10 @@
 | Auto Shot | 41.5% |
 | Arcane Shot | 18.1% |
 | Pet: Auto Attack | 14.7% |
-| Serpent Sting | 11.4% |
-| Aimed Shot | 7.8% |
+| Serpent Sting | 11.3% |
+| Aimed Shot | 8.0% |
 | Pet: Claw | 5.3% |
-| Multi-Shot | 1.0% |
+| Multi-Shot | 0.9% |
 | Pet: Bite | 0.2% |
 
 Mapped onto the spec model's sources: `auto` 41%, `pet` 20%, `arcane` 18%, `serpent` 11%, `aimed` 8%, `multi` 1%; 0% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
@@ -34,6 +35,7 @@ Scorer = the expected-value stats model's score of the same allocation for its r
 - bm-mm-raid: `53200005041002-005355010150004`
 - opt-mm-raid-raid-dps: `53200005041002-005355010150004`
 - sim preset: Marksmanship: `5023000501-0050550501503051`
+- marksmanship-with-a-pet-open-raid: `502-0053252501523051-5`
 - sim preset: Beast Mastery 35/16/0: `5520001505121251-0050551`
 - sim preset: Marksmanship 0/39/12: `-3050552301503151-50024001`
 - sim preset: Survival 0/15/36: `-005055-550230031051220151`

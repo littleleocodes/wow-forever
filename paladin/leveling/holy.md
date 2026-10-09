@@ -22,6 +22,27 @@
 
 **Between fights:** Heal yourself back up with **Holy Light**, drink below a quarter of your mana.
 
+## Why this rotation
+
+Holy levels as a two-handed **Seal of Righteousness** paladin who heals itself. The order takes its Retribution points first, so for most levels you judge and **Holy Strike**; **Divine Favor** and **Holy Shock** come only at levels 58 and 59.
+
+**Why it works**
+
+- **Blessing of Wisdom** instead of **Blessing of Might**: the fight lab found the blessings within about 2% of each other for this build, and Wisdom's mana keeps coming while you fight and cast. **Seal of Righteousness** is your only damage seal, since this build has no **Seal of Command**.
+- **Judgement** and **Holy Strike** whenever ready: **Judgement** is off the global cooldown, back every 8 seconds with **Improved Judgement** (levels 15 and 16), and **Sanctified Judgement** (from level 20) returns 60% of your seal's mana cost each time.
+- **Holy Shock** opens at range as the mob walks in, but only while your mana is above about 70%: below that, its mana is worth more as heals. **Holy Power** adds 15% crit to it, and **Divine Favor** makes it a sure critical hit while you are healthy.
+- Heal in the fight once you drop below 40% health and the mob has more than a fifth left: **Holy Shock** on yourself first (instant), **Divine Protection** below 30%, **Hammer of Justice**, then **Holy Light**. Critical heals return half their base cost through **Illumination**, and **Spiritual Focus** protects 70% of your heals from pushback.
+- Not on the list: **Consecration** and **Hammer of Wrath**. The fight lab never casts **Consecration** as Holy (its mana buys more as heals and less drinking), and its tuned rotation skips **Hammer of Wrath** for about 1% faster kills; this build has no **Holy Conduit** to make either cheaper.
+
+**Caveats**
+
+- Until levels 58 and 59, skip the **Holy Shock** and **Divine Favor** lines: this order takes them last. Before that your in-fight heal is **Holy Light**, safest behind **Divine Protection** or a **Hammer of Justice** stun.
+- Undead and Demons: **Exorcism** and **Holy Wrath** come back a third faster with **Purifying Power** (levels 41 and 42), so use **Exorcism** on cooldown against them. The fight lab has no such mobs, so this is unmeasured.
+
+**When to change it**
+
+- A mob that casts spells: **Hammer of Justice** stops the cast.
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

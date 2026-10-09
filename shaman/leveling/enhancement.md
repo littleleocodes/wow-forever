@@ -22,6 +22,31 @@
 
 **Between fights:** Heal back to 80% health, drink below a third of your mana.
 
+## Why this rotation
+
+Melee with a slow two-hander and **Windfury Weapon**, and use your spells to finish mobs rather than to open on them: every spell costs mana, and mana costs drinking time.
+
+**Why it works**
+
+- Before every pull: **Lightning Shield** and your imbue (**Rockbiter Weapon** until 30, then **Windfury Weapon**). At 60 in the fight lab your swings and Windfury attacks do about half your damage, and **Lightning Shield** with **Improved Lightning Shield** about 15%, because a mob hits you all fight.
+- **Searing Totem** at the pull while you have more than half your mana: it shoots the mob all fight, about 9% of your damage at 60.
+- **Stormstrike** whenever it is ready: a weapon hit that makes your next **Earth Shock** or **Lightning Bolt** 20% stronger, and with **Improved Stormstrike** half your mana regeneration continues while you cast. It is this build's most valuable talent at 60 (4 seconds per kill without it).
+- The fight lab plays this list with two tuned mana rules: **Lightning Bolt** only once the mob is under 35% health, so the opening bolt of line 1 is skipped and a 5-stack bolt finishes the mob, and **Earth Shock** only under 20% health. Together they measured about 9% faster per kill (2026-09-28).
+- **Flame Shock** only while you are above about half mana and the mob above 40% health; it shares the shock cooldown with **Earth Shock**.
+- **Maelstrom Weapon** (from 36) stacks as you hit; with all 5 points (from 41), 5 stacks make **Lightning Bolt** instant and free. **Rage of the Farseer** (from 40) goes at the start of a fight whenever it is ready.
+
+**Caveats**
+
+- **Shamanistic Focus** (at 20) makes shocks and **Lightning Shield** 45% cheaper; at 60 it is worth almost 4 seconds per kill in the fight lab.
+- Before 25 you have no **Stormstrike** and before 36 no **Maelstrom Weapon**: until then it is weapon, shield, shocks and **Searing Totem**.
+- Several mobs at once: the fight lab's area version drops **Magma Totem** and uses **Fire Nova** (it erupts around your Fire totem) and **Chain Lightning** when two or more mobs stand close.
+
+**When to change it**
+
+- A caster mob that stays back: **Earth Shock** interrupts it and locks that school for 2 seconds, which brings it to you.
+- Do not spend a 5-stack **Lightning Bolt** on a mob your next swing will kill: the stacks last 30 seconds and may carry over to the next pull.
+- A mob that flees at low health: **Earth Shock** finishes it, or **Frost Shock** slows it by 50%.
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

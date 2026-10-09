@@ -4,6 +4,30 @@
 
 **[Holy — Raid Healer](../research/raid/builds/holy-raid-healer.md)** (33/0/18) — [open the talent tree](https://talentsforever.com/paladin/60/05320213225101051--352030302-6)
 
+## How to heal
+
+You heal with two spells: **Holy Light** on the tank, in the rank that covers what he is missing, and **Flash of Light** on everyone else. **Holy Shock**, **Divine Favor** and **Lay on Hands** are for emergencies, and your critical heals pay part of their mana back.
+
+**Why it works**
+
+- Keep **Blessing of Light** on the tank: it adds up to 400 to each **Holy Light** and 115 to each **Flash of Light** he receives. Start a **Holy Light** when he is missing at least half of one and more hits are coming; in the healer lab **Holy Light** and **Flash of Light** each do about half of your healing.
+- Downrank: cast the smallest rank that heals about what the target is missing. Forever gives ranks far below your level less of your +healing (TBC's rule, our assumption): **Holy Light** ranks 7 to 9 and **Flash of Light** ranks 5 and 6 lose nothing or almost nothing, while rank 6 **Holy Light** keeps 85% of the bonus and lower ranks less, so stay near the top.
+- **Flash of Light** is your raid heal: the lab heals other raid members only once they fall below half health, which measured about 1% more healing capacity than starting at 70%, and it tops up the tank when he misses most of a **Flash of Light**.
+- **Holy Shock** is instant but small (307 to 333 at rank 4): keep it for anyone under a quarter of their health, where speed matters more than size; the lab measured that threshold better than 35%. **Divine Favor** (2-minute cooldown) goes before a top-rank **Holy Light** on a tank who is missing most of one: a sure critical heal.
+- Mana: **Illumination** returns half the base cost of each critical **Holy Light**, **Flash of Light**, **Holy Shock** or **Light's Vigil** heal, **Holy Power** adds 5% crit to your heals, and **Reverence** keeps 30% of your mana regeneration going while you cast. Drink a mana potion as soon as you are below 80% mana (after the first 45 seconds); the lab measured that better than waiting for 65%.
+- **Lay on Hands** is for a tank about to die (the lab uses it under 20% health): it heals him for your maximum health but drains all your mana, and its 20-minute cooldown makes it once a fight.
+
+**Caveats**
+
+- The healer lab is this project's model: one tank under boss melee and four raid members under raid damage for five minutes. The numbers on this page date from 2026-09-30, before the 70291 spellbook and the downranking penalty.
+- **Light's Vigil**, your last talent, is not in the lab: put it on a party member, then **Holy Shock** them to heal their whole party for 684 to 724, with no cooldown on that **Holy Shock**. It costs 1,340 mana, so save it for damage you know will hit a whole party.
+- **Infusion of Light**: a critical **Holy Shock** or **Flash of Light** makes your next **Holy Light** within 15 seconds 1 second faster, so follow such a crit with **Holy Light** when the tank needs one. The lab does not model this timing.
+
+**When to change it**
+
+- When a whole party is taking damage, **Light's Vigil** and **Holy Shock** are your only group heal; otherwise heal the lowest member with **Flash of Light**.
+- **Cleanse** a harmful magic, poison or disease effect when it would cost more healing than the cast; the lab has no debuffs, so when is your call.
+
 ## The numbers
 
 Healing capacity 0.67 (the raid damage it heals through in this project's healer lab), 380 healing per second. Healers are not in the community simulator.

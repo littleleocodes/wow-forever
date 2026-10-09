@@ -25,6 +25,29 @@
 
 **Between fights:** Drink below a sixth of your mana; you rarely need to eat.
 
+## Why this rotation
+
+Prot-Ret plays like Protection (a one-hander, a shield and **Seal of Fury**) but spends its deeper points on Retribution's crit, **Vengeance** and cheaper Holy spells. Blocks and used-up **Seal of Fury** shields pay for **Consecration**.
+
+**Why it works**
+
+- **Seal of Fury** before each pull: 35 Holy damage on every swing at rank 7 and, with a shield, an absorb of half of it. **Improved Seal of Fury** returns 60 mana each time that absorb is used up and **Shield Specialization** 6% of your mana on a block (once every 3 seconds); the open search found **Improved Seal of Fury** worth about 3 seconds per kill at 60.
+- **Judgement** and **Holy Strike** whenever ready, with **Swift Judgement** right after a **Judgement** for a free second one. **Sanctified Judgement** returns 60% of your seal's mana cost each time you judge, and **Sacred Arbiter** adds 20% to **Holy Strike**.
+- **Consecration** while your mana is above 60%: **Holy Conduit** makes it 40% cheaper, and the open search found **Holy Conduit** the most valuable talent of this build at 60 (about 3.3 seconds per kill).
+- **Hammer of Wrath** finishes mobs below 20% health from level 44; 1 point in **Instrument of Law** cuts its cast by half a second.
+- Low on health: this build has no **Templar's Bulwark**, so use **Divine Protection** below 30% or a **Hammer of Justice** stun and cast **Holy Light** while the mob cannot hit you; **Flash of Light** below a quarter, **Lay on Hands** below 15%.
+
+**Caveats**
+
+- **Holy Shield** and **Templar's Bulwark** are not in this build: skip their lines.
+- The order spends levels 10 to 31 in Protection, starting with defensive talents (**Redoubt**, **Anticipation**, **Shield Specialization**), so early kills are slow: about 33 seconds at level 20 against 27 at 30.
+- Undead and Demons: **Exorcism** (40% cheaper with **Holy Conduit**) hits them hard; the fight lab has no such mobs, so it was not measured.
+
+**When to change it**
+
+- A mob that casts spells: **Hammer of Justice** stops the cast.
+- Two or more mobs: **Consecration** hits them all; the 60% mana rule was set for single mobs.
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

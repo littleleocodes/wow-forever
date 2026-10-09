@@ -27,6 +27,29 @@
 
 **Between fights:** Mend the pet, drink below a third of your mana, eat below two thirds of your health.
 
+## Why this rotation
+
+Beast-Survival levels on **Immolation Trap** and a strong pet: the cat tanks and hits hard, you sting from range, drop a trap at your feet and fight beside the pet with **Raptor Strike** and your white swings.
+
+**Why it works**
+
+- **Immolation Trap** is the heart of the build: **Clever Traps** (levels 23-24) adds 30%, **Survival Tactics** helps it hit, and **Survivalist's Discipline** (37-38) brings it back every 18 seconds. In the fight lab's search, **Survivalist's Discipline**, **Resourcefulness** (it pays for traps and strikes) and **Clever Traps** were the build's most valuable talents at 60.
+- Set the trap at your feet as you reach the mob (traps work in combat in Forever but land where you stand), and only while the mob has more than 70% of its health: the burn lasts 15 seconds.
+- From level 42 the Beast Mastery points go into the pet: **Endurance Training** for a sturdier tank, **Unleashed Fury**, **Ferocity** and **Focused Fire** for damage. Send it first and let it hold the mob.
+- **Serpent Sting** from range opens each fight. This build has no **Expose Prey**, so **Hunter's Mark** adds nothing to your melee, and the fight lab never casts it.
+- **Raptor Strike** on every swing it is ready: it replaces your next main-hand swing and costs no global cooldown. **Mongoose Bite** after you dodge; **Aspect of the Monkey** until 30, then **Aspect of the Beast** for melee attack power.
+
+**Caveats**
+
+- This build takes none of **Counterattack**, **Strider Kick** or **Deterrence**: skip those steps. Between traps your global cooldown is mostly free.
+- **Summon Hawk** (level 58) is the 20th Beast Mastery point, which opens **Bestial Discipline**. The fight lab's melee list never casts it, so its worth while leveling is untested.
+- **Improved Tracking** (levels 10-14) adds damage only against the creature type you are tracking: keep tracking set to what you are killing.
+
+**When to change it**
+
+- Two or more mobs: **Explosive Trap** instead of **Immolation Trap**; it hits everything within 10 yards and shares the fire-trap cooldown.
+- Low on health with no **Deterrence**: **Mend Pet** keeps your tank up, and **Feign Death** drops the mob back on the pet if it turns on you.
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

@@ -27,6 +27,32 @@
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
+## Why this rotation
+
+Arms in a raid stays in **Battle Stance** and lives off **Overpower**. Keep **Rend** on the boss so **Bloodthrill** keeps lighting up **Overpower**, use **Slam** and **Mortal Strike** on cooldown, let **Execute** take the leftover rage below 20%, and fill every gap with **Hamstring**.
+
+**Why it works**
+
+- **Overpower** is at the top: 5 rage for a full weapon hit with 50% more crit chance (**Improved Overpower**), and it stays lit for only 5 to 6 seconds. Most of yours come from **Bloodthrill**, not from dodges: each main-hand hit on a target with your **Rend** has a 20% chance to light it up. The simulator measured 2% more damage with **Overpower** first.
+- **Slam** comes next. With **Improved Slam** it is a 1-second cast on a 15-second cooldown that no longer delays your swing, so it costs only 15 rage and a short global cooldown; the simulator measured it best right under **Overpower**.
+- **Rend** goes before **Mortal Strike** because **Bloodthrill** only works while it ticks: without it, **Overpower** lights up on dodges alone. It lasts 21 seconds, about 9 casts a fight.
+- **Execute** stays below **Mortal Strike** even under 20%. It spends all your rage (600 damage plus 15 per extra rage point), so the rotation uses **Overpower**, **Slam**, **Rend** and **Mortal Strike** whenever they are ready and lets **Execute** take what is left; the simulator measured 1.3% more damage than with **Execute** at the top.
+- **Spearing Strike** (15 rage, 20-second cooldown) deals only 40% of your weapon damage against most bosses, so it sits under your main attacks and above the filler.
+- **Hamstring**, not **Bloodrage**, is your real filler. For 10 rage it is another main-hand hit that can light up **Overpower** through **Bloodthrill** and, in a raid, trigger a shaman's Windfury Totem; the simulator measured about 1% more damage casting it freely than only above 80 rage. **Bloodrage** is a 1-minute rage cooldown for when you run short: the rotation uses it under 90 rage when nothing else is ready, once or twice a fight.
+
+**Caveats**
+
+- This list is for a full raid. With fewer buffs you will not have the rage for free **Hamstring** casts: the simulator's rotation for a warrior alone on a training dummy never casts it and stacks **Sunder Armor** instead.
+- Several targets: **Whirlwind** needs **Berserker Stance**, so this list never uses it. With a second target in reach, press **Sweeping Strikes** (30 rage, 30-second cooldown: your next 5 melee attacks also hit a second target), and above 40 rage use **Cleave** in place of **Hamstring**.
+- The simulator's full list keeps a **Mocking Blow** line near the bottom that never fires. Never use it on a boss: it forces the boss to attack you for 6 seconds.
+- Stand behind the boss: from the front it can parry and block, and a swing that does not land gives you no rage.
+
+**When to change it**
+
+- If nobody in your group has **Battle Shout** up, cast it before the pull and again every 3 minutes: the list leaves it out because the simulator's raid already had one.
+- If the boss has no **Sunder Armor** and no Expose Armor, put one **Sunder Armor** on it. That is the full list's only **Sunder Armor** line; it never fired because the simulator's raid already carries the tank's 5 stacks.
+- Against Giants and Dragonkin, **Spearing Strike** deals an extra 80% of weapon damage (three times as much), so press it right after **Mortal Strike**. The simulator's boss is neither, so that order is untested.
+
 ## The numbers
 
 | Setting | DPS |

@@ -1,0 +1,173 @@
+{
+ "class": "warrior",
+ "about": "Hand-written rotation guides for the warrior's player pages (guides.py).",
+ "guides": {
+  "Arms": {
+   "raid": {
+    "plan": "Arms in a raid stays in **Battle Stance** and lives off **Overpower**. Keep **Rend** on the boss so **Bloodthrill** keeps lighting up **Overpower**, use **Slam** and **Mortal Strike** on cooldown, let **Execute** take the leftover rage below 20%, and fill every gap with **Hamstring**.",
+    "why": [
+     "**Overpower** is at the top: 5 rage for a full weapon hit with 50% more crit chance (**Improved Overpower**), and it stays lit for only 5 to 6 seconds. Most of yours come from **Bloodthrill**, not from dodges: each main-hand hit on a target with your **Rend** has a 20% chance to light it up. The simulator measured 2% more damage with **Overpower** first.",
+     "**Slam** comes next. With **Improved Slam** it is a 1-second cast on a 15-second cooldown that no longer delays your swing, so it costs only 15 rage and a short global cooldown; the simulator measured it best right under **Overpower**.",
+     "**Rend** goes before **Mortal Strike** because **Bloodthrill** only works while it ticks: without it, **Overpower** lights up on dodges alone. It lasts 21 seconds, about 9 casts a fight.",
+     "**Execute** stays below **Mortal Strike** even under 20%. It spends all your rage (600 damage plus 15 per extra rage point), so the rotation uses **Overpower**, **Slam**, **Rend** and **Mortal Strike** whenever they are ready and lets **Execute** take what is left; the simulator measured 1.3% more damage than with **Execute** at the top.",
+     "**Spearing Strike** (15 rage, 20-second cooldown) deals only 40% of your weapon damage against most bosses, so it sits under your main attacks and above the filler.",
+     "**Hamstring**, not **Bloodrage**, is your real filler. For 10 rage it is another main-hand hit that can light up **Overpower** through **Bloodthrill** and, in a raid, trigger a shaman's Windfury Totem; the simulator measured about 1% more damage casting it freely than only above 80 rage. **Bloodrage** is a 1-minute rage cooldown for when you run short: the rotation uses it under 90 rage when nothing else is ready, once or twice a fight."
+    ],
+    "caveats": [
+     "This list is for a full raid. With fewer buffs you will not have the rage for free **Hamstring** casts: the simulator's rotation for a warrior alone on a training dummy never casts it and stacks **Sunder Armor** instead.",
+     "Several targets: **Whirlwind** needs **Berserker Stance**, so this list never uses it. With a second target in reach, press **Sweeping Strikes** (30 rage, 30-second cooldown: your next 5 melee attacks also hit a second target), and above 40 rage use **Cleave** in place of **Hamstring**.",
+     "The simulator's full list keeps a **Mocking Blow** line near the bottom that never fires. Never use it on a boss: it forces the boss to attack you for 6 seconds.",
+     "Stand behind the boss: from the front it can parry and block, and a swing that does not land gives you no rage."
+    ],
+    "diverge": [
+     "If nobody in your group has **Battle Shout** up, cast it before the pull and again every 3 minutes: the list leaves it out because the simulator's raid already had one.",
+     "If the boss has no **Sunder Armor** and no Expose Armor, put one **Sunder Armor** on it. That is the full list's only **Sunder Armor** line; it never fired because the simulator's raid already carries the tank's 5 stacks.",
+     "Against Giants and Dragonkin, **Spearing Strike** deals an extra 80% of weapon damage (three times as much), so press it right after **Mortal Strike**. The simulator's boss is neither, so that order is untested."
+    ],
+    "rotations": {
+     "arms-2h-raid": "d2f527aed9b3",
+     "fury-dw-raid": "e44982e8703e",
+     "arms-battle-raid": "c54c2d9971c5"
+    },
+    "written": "2026-10-09"
+   },
+   "leveling": {
+    "plan": "Arms levels with a two-hander in **Battle Stance**. Open with **Bloodrage** and **Charge**, keep **Rend** on the mob so **Bloodthrill** lights up **Overpower**, hit **Mortal Strike** on cooldown and finish with **Execute**; bandage and eat between pulls instead of resting.",
+    "why": [
+     "**Bloodrage** then **Charge** puts rage in your bar before the first swing: **Bloodrage** gives 10 at once and 10 more over 10 seconds, **Charge** 9 to 15 by rank plus 6 with **Improved Charge**, and the mob is stunned for a second. The fight lab uses **Bloodrage** only above 45% health, on about every third pull (1-minute cooldown).",
+     "Once the mob is below 20%, **Execute** goes before everything else in the fight lab, although the list above shows it sixth: it spends all your rage (600 damage plus 15 per extra point at rank 5) and usually ends the fight. It is about a sixth of your damage at 60.",
+     "**Overpower** comes next whenever it lights up: 5 rage, 50% more crit chance with **Improved Overpower**, and a window of only 5 to 6 seconds. With **Bloodthrill** (16% with your 4 points), main-hand hits on a mob with your **Rend** light it up too, so it is not just a dodge reaction.",
+     "**Mortal Strike** (from 40) on cooldown is your biggest attack, about a fifth of your damage at 60. **Rend** goes on once per mob, early: the fight lab casts it only while the mob has more than a third of its health and you have 40 rage or **Mortal Strike** is cooling down, so it never delays **Mortal Strike**.",
+     "**Heroic Strike** only takes rage you will not need: the fight lab keeps 15 for an **Overpower** and, when **Mortal Strike** is 3 seconds or less from ready, 30 more for it. Before 40 it is your main rage dump (about 40% of your damage at level 20); after **Mortal Strike** it almost disappears.",
+     "**Battle Shout** lasts 3 minutes in Forever, so one shout covers several pulls. **Victory Rush** is free for 20 seconds after a kill and heals 10% of your health: it opens your next fight whenever you are below 90%."
+    ],
+    "caveats": [
+     "The fight lab's numbers are for one same-level mob at a time in quest greens, with an axe or polearm for **Weaponmaster** (+5% crit); it does not model runners, adds or stance swaps.",
+     "**Sweeping Strikes** is in the build only because **Mortal Strike** requires it: on a single mob it does nothing.",
+     "Between fights the fight lab bandages below 60% health and eats below 40%, which it measured about 3% faster per kill than eating at 65%.",
+     "Casters stand back and cast at you. **Charge** reaches them at the pull; in **Battle Stance** you have no interrupt (**Pummel** needs **Berserker Stance**), so just close in and hit."
+    ],
+    "diverge": [
+     "Two mobs: open with **Sweeping Strikes** (30 rage; your next 5 attacks also hit the second mob), slow both with **Thunder Clap** (20% slower attacks) and use **Cleave** instead of **Heroic Strike**. The single-mob numbers above do not cover this.",
+     "A mob that runs at low health: **Hamstring** it before it gets away, or finish it with **Execute** (the fight lab does not model runners)."
+    ],
+    "rotations": {
+     "leveling:arms-2h-raid": "6740a89fa45f",
+     "leveling:fury-dw-raid": "a3683bcf3790",
+     "leveling:prot-leveling": "3b358e339097"
+    },
+    "written": "2026-10-09"
+   }
+  },
+  "Fury": {
+   "raid": {
+    "plan": "Fury in a raid fights in **Berserker Stance** with a weapon in each hand: **Bloodthirst** and **Whirlwind** on cooldown, **Execute** in the gaps below 20%, **Hamstring** in the short gaps and **Heroic Strike** only when rage piles up. **Death Wish** and **Recklessness** wait for the last 45 seconds.",
+    "why": [
+     "**Bloodthirst** (30 rage, 6-second cooldown) and **Whirlwind** (25 rage, 22 with **Raging Blows**, 10-second cooldown) are your main attacks: press them the moment they are ready. **Whirlwind** now always hits with both weapons, and it needs **Berserker Stance**, the stance this list never leaves.",
+     "Below 20%, **Execute** still comes after **Bloodthirst** and **Whirlwind**. It spends all your rage (600 damage plus 15 per extra rage point; 10 rage to cast with **Improved Execute**), so it takes the global cooldowns between them; a full raid gives you enough rage that the simulator measured this order slightly better.",
+     "**Death Wish** (+20% physical damage for 30 seconds, 3-minute cooldown) and **Recklessness** (+100% crit chance for 15 seconds) wait until about 45 seconds are left, so they cover the execute phase; the line above that says to use **Death Wish** at the start does not match the rotation. Crits give double rage in Forever, so the **Recklessness** window also feeds bigger **Execute** hits. The simulator measured 0.7% more damage with **Death Wish** at 45 seconds than at 30, and in fights longer than about 3.5 minutes it presses it at the pull as well.",
+     "**Hamstring** (10 rage) fills a global cooldown only when **Bloodthirst** is more than a second away and **Whirlwind** more than 1.5 seconds: it is a cheap extra main-hand hit that can trigger on-hit effects such as a shaman's Windfury Totem, but it must never delay your main attacks. The simulator measured 1.9% more damage with this rule than with **Hamstring** only above 80 rage.",
+     "**Heroic Strike** is a rage dump, not a filler: queue it only at 67 rage or more on a single target. It replaces a white swing, and white swings are your steady rage (each gives rage in proportion to your weapon's speed, double on a crit), so an early one starves **Bloodthirst** and **Whirlwind**; in Forever it also no longer helps your off-hand hit. The simulator measured 0.9% more damage at 67 rage than at 45.",
+     "**Bloodrage** waits until you are under about 22 rage, so it refills an empty bar instead of topping up a full one. The simulator measured 1% more damage than pressing it whenever you are under 90."
+    ],
+    "caveats": [
+     "The page's numbers assume a **Recklessness** in every fight and two Mighty Rage Potions (one early, one in the last 30 seconds). **Recklessness** has a 30-minute cooldown, so you will not have it on every boss: the simulator measured 11% more damage with it than without.",
+     "With several targets, **Whirlwind** hits up to 4 of them, and above 40 rage **Cleave** replaces **Heroic Strike** (the full list does this).",
+     "The simulator ignores threat. **Heroic Strike** causes a high amount of threat, so it is the first thing to stop if you pull aggro. **Death Wish** and **Recklessness** also make you take 5% and 20% more damage.",
+     "Stand behind the boss: from the front it can parry and block, and a swing that does not land gives you no rage."
+    ],
+    "diverge": [
+     "Alone or in a small group (fewer buffs, less rage), put **Execute** first below 20%, stack **Sunder Armor** to 5 yourself and skip **Hamstring**. That is the simulator's rotation for a warrior alone on a training dummy, where stacking **Sunder Armor** was worth 12%.",
+     "If nobody in your group has **Battle Shout** up, keep it up yourself (3 minutes), and put one **Sunder Armor** on a boss that has none: the list leaves both out because the simulator's raid already had them.",
+     "Before a boss's fear, press **Berserker Rage** (30-second cooldown, 10 seconds of fear immunity); **Death Wish** also makes you immune. The simulator's boss never fears, so the list leaves it out.",
+     "With a two-hander (the page's two-handed option), drop **Heroic Strike** and cast **Hamstring** whenever nothing else is ready: in the simulator's two-handed raid rotation those two changes were worth 5.4% and 6.6%. That rotation also uses **Bloodrage** under 90 rage and puts **Whirlwind** before **Bloodthirst** when **Bloodthirst** is more than 1.5 seconds away."
+    ],
+    "rotations": {
+     "arms-2h-raid": "d2f527aed9b3",
+     "fury-dw-raid": "e44982e8703e"
+    },
+    "written": "2026-10-09"
+   },
+   "leveling": {
+    "plan": "Fury levels with a weapon in each hand in **Battle Stance**. Open with **Bloodrage** and **Charge** (and **Death Wish** when it is ready), hit **Bloodthirst** on cooldown, **Overpower** after a dodge and **Execute** below 20%, and spend the rest on **Heroic Strike**.",
+    "why": [
+     "The opening matches Arms: **Bloodrage** (above 45% health) and **Charge** fill your rage before the first swing. The fight lab also presses **Death Wish** on the pull whenever it is ready (3-minute cooldown): 20% more physical damage for 30 seconds covers a whole fight.",
+     "Below 20%, **Execute** comes first: it spends all your rage, and **Improved Execute** cuts its cost to 10. **Overpower** comes next when the mob dodges (this build has no **Bloodthrill**): 5 rage with 50% more crit chance from **Improved Overpower**.",
+     "**Bloodthirst** (from 40: 30 rage, 6-second cooldown, 45% of your attack power) is your main attack. Before 40, **Heroic Strike** is where your rage goes.",
+     "**Rend** goes on once per mob while it has more than a third of its health. The list above leaves it out, but the fight lab casts it about once a kill and your build takes **Improved Rend**.",
+     "**Heroic Strike** takes the spare rage once 15 are kept for an **Overpower**. Your rage comes from landed white swings and doubles on a crit, which is why **Flurry** (faster swings after a crit), **Cruelty** and **Enrage** are worth the most in the fight lab: 1 to 2 seconds per kill each at 60.",
+     "**Battle Shout** lasts 3 minutes in Forever, so one shout covers several pulls, and **Victory Rush** (free, heals 10%) opens the next fight whenever you are below 90% health."
+    ],
+    "caveats": [
+     "**Berserker Rage** needs **Berserker Stance**, so in **Battle Stance** your 2 points in **Improved Berserker Rage** do nothing. The fight lab presses it below 30 rage without checking the stance and credits it with about 1 second per kill, so the build plays a little slower than its number.",
+     "The 2 points in **Two-Handed Weapon Specialization** only help with a two-hander: with two one-handers treat them as free points.",
+     "Between fights the fight lab bandages below 60% health and eats below 40%.",
+     "Several mobs: **Whirlwind** needs **Berserker Stance**. In **Battle Stance**, use **Cleave** instead of **Heroic Strike** and **Thunder Clap** to slow them (20% slower attacks)."
+    ],
+    "diverge": [
+     "Fighting in **Berserker Stance** instead (3% more crit, 10% more damage taken) gives you **Whirlwind**, **Berserker Rage** and **Pummel** but costs **Overpower**; the fight lab has not measured that trade.",
+     "A mob that runs at low health: **Hamstring** it, or finish it with **Execute**."
+    ],
+    "rotations": {
+     "leveling:arms-2h-raid": "6740a89fa45f",
+     "leveling:fury-dw-raid": "a3683bcf3790",
+     "leveling:prot-leveling": "3b358e339097"
+    },
+    "written": "2026-10-09"
+   }
+  },
+  "Protection": {
+   "raid": {
+    "plan": "Protection tanks in **Defensive Stance** with a shield, and threat comes from three buttons: **Revenge** whenever it lights up, **Shield Slam** on cooldown and **Heroic Strike** whenever 45 rage is spare. The boss's debuffs and your big cooldowns are not on the list: they are yours to manage.",
+    "why": [
+     "**Revenge** comes first: 5 rage (2 with **Focused Rage**) for high threat, usable only for 5 seconds after you block, dodge or parry, so a missed window is lost. The simulator measured it slightly better above **Shield Slam**.",
+     "**Shield Slam** (20 rage, 17 with **Focused Rage**, 6-second cooldown) is your hardest hit, made stronger by your block value, and causes very high threat; the simulator casts it every time it is ready.",
+     "**Heroic Strike** is about a third of your threat in the simulator. It goes on your next swing, off the global cooldown, so you can queue it on top of everything else; waiting for 45 rage keeps enough for **Shield Slam** and **Revenge**.",
+     "**Rend** (kept on the boss) and **Shield Bash** fill the remaining global cooldowns for a little threat, worth 0.5% and 0.2% of tank value in the simulator. Use **Bloodrage** whenever you are under 70 rage, about 3 times a fight.",
+     "**Shield Wall** (60% less damage for 12 seconds, 15-minute cooldown) is at the top only because the simulator's boss hits the same all fight, so any use saves the same damage there (3.2% of tank value). In a real fight, save it for the dangerous moment."
+    ],
+    "caveats": [
+     "The list has no **Sunder Armor**, **Thunder Clap** or **Demoralizing Shout** because the simulator's raid already has those debuffs on the boss (a druid's Demoralizing Roar stands in for the shout), so casting them only cost rage there; dropping **Thunder Clap** measured 0.8% better. In a real raid they are usually yours.",
+     "**Shield Block** has no line at all: the simulator never casts it, so its worth is unmeasured. It gives 75% more block chance for 7 seconds or 2 blocks, and each block gives 5 rage with **Shield Specialization** and opens **Revenge**.",
+     "**Shield Bash** is your interrupt (12-second cooldown). As a filler it is worth little, so keep it ready for a spell the boss must not finish.",
+     "The simulator's boss only melees you: it does not model adds, tank swaps or damage spikes, so it never needs a **Taunt**."
+    ],
+    "diverge": [
+     "On the pull, stack **Sunder Armor** to 5 for the raid's armor reduction and your threat, then refresh it before its 30 seconds run out.",
+     "Keep **Thunder Clap** (bosses attack 20% slower in Forever, 30 seconds) and **Demoralizing Shout** (204 less attack power, 45 seconds) up unless another warrior or a druid's Demoralizing Roar covers them.",
+     "Press **Shield Block** when the boss hits hard, and **Shield Wall** for the worst moments: an enrage, a healer down, your health low.",
+     "Adds: **Thunder Clap** hits up to 4 targets, **Challenging Shout** (10-minute cooldown) turns everything within 10 yards onto you for 6 seconds, and **Taunt** (8-second cooldown in Forever) takes back a single target."
+    ],
+    "rotations": {
+     "prot-tank": "b093b7e893bc"
+    },
+    "written": "2026-10-09"
+   },
+   "leveling": {
+    "plan": "Protection levels sword and board in **Defensive Stance**: slower kills than Arms, but almost no time spent eating. **Charge** in from **Battle Stance**, switch back, keep **Shield Block** up while the mob hits you, and spend rage on **Revenge**, **Shield Slam** and **Heroic Strike**.",
+    "why": [
+     "**Charge** needs **Battle Stance** (this build has no **Vanguard**), so you swap for it and come back. **Tactical Mastery** with your 5 points in **Improved Tactical Mastery** keeps up to 25 rage through the swap, and the fight lab spends anything above that on **Shield Slam** or **Rend** before it switches.",
+     "**Shield Block** goes up whenever the mob is hitting you (10 rage, 5-second cooldown, off the global cooldown): 75% more block chance for 7 seconds or 2 blocks. Each block gives 5 rage with **Shield Specialization** and opens **Revenge**, so it pays for itself; **Shield Specialization** is the build's second most valuable talent in the fight lab.",
+     "**Revenge** (2 rage with **Focused Rage**) whenever it lights up and **Shield Slam** (from 40) on cooldown are your damage. **Shield Slam** alone is worth about 10 seconds per kill at 60, by far the build's biggest talent.",
+     "**Heroic Strike** takes the spare rage after the fight lab keeps enough for **Shield Slam** (when it is 2 seconds or less from ready) and for **Revenge**. **Rend** goes on once while the mob has more than half its health.",
+     "**Thunder Clap**, **Demoralizing Shout** and **Sunder Armor** stay off on a single mob: the fight lab measured **Thunder Clap** at +1.2 seconds and **Demoralizing Shout** at +1.0 second per kill with no fewer deaths, and **Sunder Armor** never beat **Heroic Strike** for the rage.",
+     "**Concussion Blow** (a 5-second stun, 45-second cooldown) is your emergency button below half health, and **Victory Rush** heals 10% at the start of the next fight. **Shield Bash** is for casters: it interrupts and locks that school for 6 seconds."
+    ],
+    "caveats": [
+     "You trade speed for safety: in the fight lab Protection is about a quarter slower per kill than Arms. The slowest stretch is before **Shield Slam** at 40 (34 seconds per kill at level 30 against 29 at 40).",
+     "Several of the build's points (**Iron Will**, **Defiance**, **Improved Sunder Armor**, **Improved Thunder Clap**) measure zero on a single mob: they fill tiers on the way to **Shield Slam** and **Bastion**."
+    ],
+    "diverge": [
+     "Two or three mobs: open with **Demoralizing Shout** and **Thunder Clap** (up to 4 targets, 20% slower attacks) and use **Cleave** for spare rage. On pulls of 3, the fight lab measured fewer deaths with **Demoralizing Shout** (1.1 to 0.75 per 100 kills).",
+     "In real trouble, **Shield Wall** (60% less damage for 12 seconds, 15-minute cooldown) buys time, and an early **Concussion Blow** keeps a hard hitter off you for 5 seconds."
+    ],
+    "rotations": {
+     "leveling:arms-2h-raid": "6740a89fa45f",
+     "leveling:fury-dw-raid": "a3683bcf3790",
+     "leveling:prot-leveling": "3b358e339097"
+    },
+    "written": "2026-10-09"
+   }
+  }
+ }
+}

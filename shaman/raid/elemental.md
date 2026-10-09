@@ -21,6 +21,32 @@
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
+## Why this rotation
+
+**Lightning Bolt** fills every gap; around it you keep **Flame Shock** ticking, cast **Lava Burst** on cooldown, spend Clearcasting on **Chain Lightning** and keep a **Searing Totem** down. Forever removed Elemental Mastery, so there is no burst window: you play the same list from pull to kill.
+
+**Why it works**
+
+- **Flame Shock** comes first because **Lava Burst** deals 20% more damage while your Flame Shock is on the target, and the burn itself is about a fifth of your damage. Recast it only after it falls off: it lasts 12 seconds and the shock cooldown is 6, so it never has to wait.
+- **Lava Burst** has the cast time of a **Lightning Bolt** and hits harder, and 20% harder again with Flame Shock up. Only its 10-second cooldown holds it back, so cast it whenever it is ready.
+- **Chain Lightning** waits for Clearcasting: **Elemental Focus** gives each damage spell a 10% chance to make your next one free. Chain Lightning costs more than twice the mana of a Lightning Bolt, so a free one saves the most, and on one target it does about the same damage per second of casting (1.5 seconds against 2 with **Elemental Alacrity**).
+- **Lightning Bolt** is the filler, always at the top rank. With a full raid's mana buffs the simulator does not run you dry in a 3-minute fight, and dropping the old rule that switched to a cheap low rank to save mana measured 1.4% better. Start the first bolt 2 seconds before the pull so it lands as the fight starts.
+- **Searing Totem** shoots the boss for about 7% of your damage. It lasts 55 seconds, so drop a new one when it expires, and stand within 20 yards of the boss: that is as far as it shoots.
+
+**Caveats**
+
+- Several targets: with two or more enemies close together the rotation casts **Chain Lightning** whenever it is ready (3 targets, each jump 30% weaker) and swaps **Searing Totem** for **Magma Totem**. Magma Totem only hits enemies within 8 yards of it; **Totemic Projection** can move it, but it moves all your totems.
+- Mana: in a full raid you will not run dry in 3 minutes; the simulator's list falls back to a cheap rank 2 **Lightning Bolt** only when it cannot pay for the top rank, which almost never happens there. Alone, or in much longer fights, keep **Chain Lightning** for Clearcasting and drink a mana potion instead of downranking: Forever gives ranks far below your level much less from spell power (Blizzard's beta notes; the exact rule is not published).
+- Moving: **Flame Shock** (28 yards with your point in **Elemental Reach**) and your totems are instant, so use them while you move. If you must keep moving, an **Earth Shock** (20 yards) beats casting nothing as long as Flame Shock has more than 6 seconds left: the two share a cooldown.
+- Your other totems: the simulator's full raid already counts **Mana Spring Totem**, **Strength of Earth Totem** and **Windfury Totem** as up, so this list drops only your Fire totem. If you are your group's shaman, drop what your group needs at the pull; they last 5 minutes.
+
+**When to change it**
+
+- In the last 10 seconds, do not drop a new **Searing Totem**: it would shoot only a few times. Cast a **Lightning Bolt** instead (the simulator measured this 0.5% better).
+- When your mana will clearly outlast the fight (more than 200 mana for every second left, say 6,000 with 30 seconds to go), cast **Chain Lightning** whenever it is ready, not only on Clearcasting. The simulator measured a small gain.
+- If the boss will die before a 2-second cast can finish, only an instant still lands: an **Earth Shock**, which hits harder at once than **Flame Shock**.
+- On a real pull, give the tank a moment before your first bolt: the simulator never lets the boss turn on you.
+
 ## The numbers
 
 | Setting | DPS |

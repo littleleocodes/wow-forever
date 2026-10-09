@@ -30,6 +30,31 @@
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
+## Why this rotation
+
+Demonology in a raid is a **Shadow Bolt** caster with two demons' worth of bonuses: you sacrifice the Imp for 15% more Shadow damage, and **Demonic Pact** keeps that buff while your Succubus fights. Then you keep **Curse of the Elements** and your dots up and cast **Shadow Bolt**.
+
+**Why it works**
+
+- Before the pull: summon the Imp, use **Demonic Sacrifice** (+15% Shadow damage for 2 hours), then summon the Succubus and turn on **Soul Link**. **Demonic Pact** keeps the sacrifice while a different demon is out, but summoning the Imp again cancels it; the simulator measured about 10% less damage without the sacrifice.
+- The Succubus earns her place: while she is out, **Master Demonologist** gives you and her 10% more Shadow damage, **Soul Link** 3% more damage and **Demonic Knowledge** 60 more spell damage at level 60. She takes 17% of your spell damage as attack power and 10% as spell damage, and her attacks and **Lash of Pain** add about 9% of your damage.
+- **Curse of the Elements** goes up first: 10% more damage from every magic school for 5 minutes, and as a Curse it sits beside your **Bane of Agony**. **Life Tap** waits until you are below 5% mana: every tap is a global cooldown with no damage, and the simulator measured tapping at 5% about 0.5% better than at 10%.
+- **Bane of Agony** grows over its 24 seconds, so recast it only once it has run out. **Corruption** (a 1.6-second cast with this build's single point of **Improved Corruption**) goes back up when less time is left on it than its cast, but not in the last 10 seconds.
+- **Immolate** is Fire, so none of your Shadow bonuses reach it, and it only just pays: the simulator measured this spec better without it when it was recast to the very end, and better with it when you stop 20 seconds before the end. Start it when less than its 1.5-second cast is left on the old one.
+- **Shadow Bolt** is the filler because every bonus you stacked is Shadow: the sacrificed Imp, **Master Demonologist** and **Improved Shadow Bolt**'s 20% after your own crits. **Decimation** adds 6% to it once the boss is below 35% health.
+
+**Caveats**
+
+- **Searing Pain** has no cooldown: the rotation casts it only in the last 3.5 seconds, when its 1.5-second cast lands before the boss dies and a **Shadow Bolt** might not. So **Demonic Brand** and the **Soul Fire** half of **Decimation** do nothing here: they are points on the way to deeper talents, and the simulator found **Soul Fire** a loss wherever it tried it.
+- If the Succubus dies, summon her again unless the boss is about to die (6 seconds with **Master Summoner**) and turn **Soul Link** back on: without a demon you lose **Master Demonologist**, **Soul Link**, **Demonic Knowledge** and her own damage. Never summon the Imp during the fight: that cancels your sacrifice even with **Demonic Pact**.
+- Summon her after your buffs, wizard oil and Spellstone (**Create Spellstone**) are on: in this project's model a demon copies its share of your spell damage when it is summoned. Forever lets the Spellstone stack with the oil, and the simulator measured about 3% more damage from it.
+- On the move, **Bane of Agony**, **Curse of the Elements** and **Life Tap** are instant; **Corruption** is not in this build, so keep it for when you stand still.
+
+**When to change it**
+
+- In the last 20 seconds start no new **Immolate**, and in the last 10 no **Corruption**: cast **Shadow Bolt**, then **Searing Pain** in the last 3.5 seconds.
+- A boss needs only one **Curse of the Elements** (in Classic two never stacked): if another warlock keeps it up, take the curse your raid gives you, such as **Curse of Recklessness** for the physical fighters.
+
 ## The numbers
 
 | Setting | DPS |

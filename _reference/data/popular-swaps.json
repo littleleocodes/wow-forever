@@ -9,18 +9,18 @@
      "build": "balance-moonkin-raid",
      "lead": "Balance",
      "talent": "Improved Wrath",
-     "pick": 90,
-     "change": "+Improved Wrath 5; -Moonglow 2, Subtlety 2, Reflection 1",
+     "pick": 89,
+     "change": "+Improved Wrath 5; -Genesis 5",
      "why": null,
      "dummy": {
-      "base": 461.34465275619766,
-      "swap": 422.4464845861427,
-      "delta": -0.08431476974462981
+      "base": 512.9880072293087,
+      "swap": 508.6503778095184,
+      "delta": -0.008455615645321157
      },
      "raid": {
-      "base": 516.610103855742,
-      "swap": 513.2243305735274,
-      "delta": -0.006553827067927509
+      "base": 591.5473305098243,
+      "swap": 582.8272227246388,
+      "delta": -0.014741183562894444
      }
     },
     {
@@ -31,17 +31,17 @@
      "lead": "Balance",
      "talent": "Eclipse",
      "pick": 81,
-     "change": "+Eclipse 3; -Subtlety 2, Reflection 1",
+     "change": "+Eclipse 3; -Heart of the Wild 3",
      "why": null,
      "dummy": {
-      "base": 461.34465275619766,
-      "swap": 461.03462898174894,
-      "delta": -0.0006720003637119554
+      "base": 512.9880072293087,
+      "swap": 504.8310059757241,
+      "delta": -0.01590095896713295
      },
      "raid": {
-      "base": 516.610103855742,
-      "swap": 516.5652962732162,
-      "delta": -8.673384858592925e-05
+      "base": 591.5473305098243,
+      "swap": 589.2212537790058,
+      "delta": -0.003932190394323576
      }
     },
     {
@@ -51,18 +51,18 @@
      "build": "opt-balance-dps-raid-dps",
      "lead": "Balance",
      "talent": "Improved Wrath",
-     "pick": 90,
-     "change": "+Improved Wrath 5; -Moonglow 2, Reflection 2, Genesis 1",
+     "pick": 89,
+     "change": "+Improved Wrath 5; -Genesis 5",
      "why": null,
      "dummy": {
-      "base": 462.19493356613464,
-      "swap": 415.66506084607164,
-      "delta": -0.10067153346111946
+      "base": 512.9880072293087,
+      "swap": 508.6503778095184,
+      "delta": -0.008455615645321157
      },
      "raid": {
-      "base": 517.5913746006702,
-      "swap": 511.3358411238896,
-      "delta": -0.012085853404351643
+      "base": 591.5473305098243,
+      "swap": 582.8272227246388,
+      "delta": -0.014741183562894444
      }
     },
     {
@@ -73,17 +73,17 @@
      "lead": "Balance",
      "talent": "Eclipse",
      "pick": 81,
-     "change": "+Eclipse 3; -Reflection 3",
+     "change": "+Eclipse 3; -Heart of the Wild 3",
      "why": null,
      "dummy": {
-      "base": 462.19493356613464,
-      "swap": 458.62772659894927,
-      "delta": -0.007717970726468293
+      "base": 512.9880072293087,
+      "swap": 504.8310059757241,
+      "delta": -0.01590095896713295
      },
      "raid": {
-      "base": 517.5913746006702,
-      "swap": 517.6165762492652,
-      "delta": 4.869024066422867e-05
+      "base": 591.5473305098243,
+      "swap": 589.2212537790058,
+      "delta": -0.003932190394323576
      }
     },
     {
@@ -92,18 +92,18 @@
      "tank": false,
      "build": "feral-cat-dps",
      "lead": "Feral Combat",
-     "talent": "Feral Charge",
-     "pick": 94,
-     "change": "+Feral Charge 1; -Ferocity 1",
+     "talent": "Feral Swiftness",
+     "pick": 84,
+     "change": "+Feral Swiftness 2; -Ferocity 2",
      "why": null,
      "dummy": {
-      "base": 355.3439622329026,
-      "swap": 355.3439622329026,
+      "base": 356.43953339312895,
+      "swap": 356.43953339312895,
       "delta": 0.0
      },
      "raid": {
-      "base": 565.1928040232285,
-      "swap": 565.1928040232285,
+      "base": 579.1438819541481,
+      "swap": 579.1438819541481,
       "delta": 0.0
      }
     },
@@ -114,18 +114,18 @@
      "build": "feral-cat-dps",
      "lead": "Feral Combat",
      "talent": "Primal Bite",
-     "pick": 71,
-     "change": "+Primal Bite 1; -Naturalist 1",
+     "pick": 72,
+     "change": "+Primal Bite 1; -Ferocity 1",
      "why": null,
      "dummy": {
-      "base": 355.3439622329026,
-      "swap": 351.9597340211604,
-      "delta": -0.009523809523810267
+      "base": 356.43953339312895,
+      "swap": 356.43953339312895,
+      "delta": 0.0
      },
      "raid": {
-      "base": 565.1928040232285,
-      "swap": 559.9836446411042,
-      "delta": -0.009216605988334958
+      "base": 579.1438819541481,
+      "swap": 579.1438819541481,
+      "delta": 0.0
      }
     },
     {
@@ -135,17 +135,38 @@
      "build": "opt-feral-cat-dps-raid-dps",
      "lead": "Feral Combat",
      "talent": "Feral Charge",
-     "pick": 94,
-     "change": "+Feral Charge 1; -Ferocity 1",
+     "pick": 92,
+     "change": "+Feral Charge 1; -Reflection 1",
      "why": null,
      "dummy": {
-      "base": 356.5245336279331,
-      "swap": 356.5245336279331,
+      "base": 367.49501636780326,
+      "swap": 367.49501636780326,
       "delta": 0.0
      },
      "raid": {
-      "base": 566.1088982474132,
-      "swap": 566.1088982474132,
+      "base": 593.6168058940495,
+      "swap": 593.6168058940495,
+      "delta": 0.0
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "feral-cat-dps",
+     "tank": false,
+     "build": "opt-feral-cat-dps-raid-dps",
+     "lead": "Feral Combat",
+     "talent": "Feral Swiftness",
+     "pick": 84,
+     "change": "+Feral Swiftness 2; -Ferocity 2",
+     "why": null,
+     "dummy": {
+      "base": 367.49501636780326,
+      "swap": 367.49501636780326,
+      "delta": 0.0
+     },
+     "raid": {
+      "base": 593.6168058940495,
+      "swap": 593.6168058940495,
       "delta": 0.0
      }
     },
@@ -156,18 +177,18 @@
      "build": "opt-feral-cat-dps-raid-dps",
      "lead": "Feral Combat",
      "talent": "Primal Bite",
-     "pick": 71,
-     "change": "+Primal Bite 1; -Naturalist 1",
+     "pick": 72,
+     "change": "+Primal Bite 1; -Reflection 1",
      "why": null,
      "dummy": {
-      "base": 356.5245336279331,
-      "swap": 353.0291950629529,
-      "delta": -0.009803921568628748
+      "base": 367.49501636780326,
+      "swap": 367.49501636780326,
+      "delta": 0.0
      },
      "raid": {
-      "base": 566.1088982474132,
-      "swap": 560.7417365047911,
-      "delta": -0.009480793817652433
+      "base": 593.6168058940495,
+      "swap": 593.6168058940495,
+      "delta": 0.0
      }
     },
     {
@@ -178,12 +199,12 @@
      "lead": "Feral Combat",
      "talent": "Leader of the Pack",
      "pick": 99,
-     "change": "+Leader of the Pack 1; -Naturalist 1",
+     "change": "+Leader of the Pack 1; -Savage Fury 1",
      "why": null,
      "raid": {
       "base": 1.0,
-      "swap": 0.9954923900806261,
-      "delta": -0.004507609919373934
+      "swap": 0.9937155123460646,
+      "delta": -0.006284487653935411
      }
     },
     {
@@ -193,13 +214,13 @@
      "build": "feral-bear-tank",
      "lead": "Feral Combat",
      "talent": "Heart of the Wild",
-     "pick": 95,
+     "pick": 96,
      "change": "+Heart of the Wild 5; -Savage Fury 2, Naturalist 3",
      "why": null,
      "raid": {
       "base": 1.0,
-      "swap": 0.9805528992280812,
-      "delta": -0.0194471007719188
+      "swap": 0.9741014619987944,
+      "delta": -0.025898538001205562
      }
     },
     {
@@ -209,7 +230,7 @@
      "build": "feral-bear-tank",
      "lead": "Feral Combat",
      "talent": "Berserk",
-     "pick": 94,
+     "pick": 95,
      "change": null,
      "why": "not tested: no single point can come out without breaking tier gating or a prerequisite",
      "raid": {
@@ -225,13 +246,13 @@
      "build": "feral-bear-tank",
      "lead": "Feral Combat",
      "talent": "Primal Bite",
-     "pick": 71,
+     "pick": 72,
      "change": "+Primal Bite 1; -Naturalist 1",
      "why": null,
      "raid": {
       "base": 1.0,
-      "swap": 0.9862831174149189,
-      "delta": -0.01371688258508108
+      "swap": 0.9915922957988104,
+      "delta": -0.008407704201189636
      }
     },
     {
@@ -242,12 +263,12 @@
      "lead": "Feral Combat",
      "talent": "Leader of the Pack",
      "pick": 99,
-     "change": "+Leader of the Pack 1; -Naturalist 1",
+     "change": "+Leader of the Pack 1; -Savage Fury 1",
      "why": null,
      "raid": {
       "base": 1.0,
-      "swap": 0.9954923900806261,
-      "delta": -0.004507609919373934
+      "swap": 0.9937155123460646,
+      "delta": -0.006284487653935411
      }
     },
     {
@@ -257,13 +278,13 @@
      "build": "opt-feral-bear-tank-raid-tank",
      "lead": "Feral Combat",
      "talent": "Heart of the Wild",
-     "pick": 95,
+     "pick": 96,
      "change": "+Heart of the Wild 5; -Savage Fury 2, Naturalist 3",
      "why": null,
      "raid": {
       "base": 1.0,
-      "swap": 0.9805528992280812,
-      "delta": -0.0194471007719188
+      "swap": 0.9741014619987944,
+      "delta": -0.025898538001205562
      }
     },
     {
@@ -273,7 +294,7 @@
      "build": "opt-feral-bear-tank-raid-tank",
      "lead": "Feral Combat",
      "talent": "Berserk",
-     "pick": 94,
+     "pick": 95,
      "change": null,
      "why": "not tested: no single point can come out without breaking tier gating or a prerequisite",
      "raid": {
@@ -289,7 +310,7 @@
      "build": "opt-feral-bear-tank-raid-tank",
      "lead": "Feral Combat",
      "talent": "Furor",
-     "pick": 75,
+     "pick": 77,
      "change": "+Furor 5; -Nature's Focus 5",
      "why": null,
      "raid": {
@@ -305,13 +326,13 @@
      "build": "opt-feral-bear-tank-raid-tank",
      "lead": "Feral Combat",
      "talent": "Primal Bite",
-     "pick": 71,
+     "pick": 72,
      "change": "+Primal Bite 1; -Naturalist 1",
      "why": null,
      "raid": {
       "base": 1.0,
-      "swap": 0.9862831174149189,
-      "delta": -0.01371688258508108
+      "swap": 0.9915922957988104,
+      "delta": -0.008407704201189636
      }
     }
    ],
@@ -325,15 +346,15 @@
      "pick": 97,
      "change": "+Blood Frenzy 2; -Heart of the Wild 2",
      "why": null,
-     "base": 25.404407119563842,
-     "swap": 25.597691130561053,
-     "delta": 0.007608286628675742,
+     "base": 29.088438730605077,
+     "swap": 29.26209378516009,
+     "delta": 0.005969899456044203,
      "levels": {
-      "20": 0.0,
-      "30": 0.005982850741079071,
-      "40": 0.007896859828970149,
-      "50": 0.006434693851725681,
-      "60": 0.010688937046989366
+      "20": -0.005899038248426414,
+      "30": 0.0,
+      "40": 0.008764986146980958,
+      "50": 0.010457443012092282,
+      "60": 0.006109655051451002
      }
     },
     {
@@ -342,18 +363,18 @@
      "build": "leveling-feral",
      "lead": "Feral Combat",
      "talent": "Feral Charge",
-     "pick": 94,
+     "pick": 92,
      "change": "+Feral Charge 1; -Heart of the Wild 1",
      "why": null,
-     "base": 25.404407119563842,
-     "swap": 25.43884029068326,
-     "delta": 0.001355401484370855,
+     "base": 29.088438730605077,
+     "swap": 29.116078405491372,
+     "delta": 0.0009501945134378076,
      "levels": {
       "20": 0.0,
-      "30": 0.0041925198207242165,
-      "40": 0.001217953163889396,
-      "50": -0.004173747729718791,
-      "60": 0.004870630717487279
+      "30": 0.0,
+      "40": 0.0032898131803871244,
+      "50": -0.0010878316618939676,
+      "60": 0.0017434316339979272
      }
     },
     {
@@ -362,11 +383,11 @@
      "build": "leveling-feral",
      "lead": "Feral Combat",
      "talent": "Furor",
-     "pick": 75,
+     "pick": 77,
      "change": "+Furor 5; -Nature's Focus 5",
      "why": null,
-     "base": 25.404407119563842,
-     "swap": 25.404407119563842,
+     "base": 29.088438730605077,
+     "swap": 29.088438730605077,
      "delta": 0.0,
      "levels": {
       "20": 0.0,
@@ -382,18 +403,38 @@
      "build": "leveling-feral",
      "lead": "Feral Combat",
      "talent": "Primal Bite",
-     "pick": 71,
+     "pick": 72,
      "change": "+Primal Bite 1; -Heart of the Wild 1",
      "why": null,
-     "base": 25.404407119563842,
-     "swap": 25.43884029068326,
-     "delta": 0.001355401484370855,
+     "base": 29.088438730605077,
+     "swap": 29.116078405491372,
+     "delta": 0.0009501945134378076,
      "levels": {
       "20": 0.0,
-      "30": 0.0041925198207242165,
-      "40": 0.001217953163889396,
-      "50": -0.004173747729718791,
-      "60": 0.004870630717487279
+      "30": 0.0,
+      "40": 0.0032898131803871244,
+      "50": -0.0010878316618939676,
+      "60": 0.0017434316339979272
+     }
+    },
+    {
+     "scenario": "leveling",
+     "spec": "feral-cat-dps",
+     "build": "leveling-feral",
+     "lead": "Feral Combat",
+     "talent": "Shredding Attacks",
+     "pick": 71,
+     "change": "+Shredding Attacks 3; -Heart of the Wild 3",
+     "why": null,
+     "base": 29.088438730605077,
+     "swap": 29.37396773262156,
+     "delta": 0.009815892996555498,
+     "levels": {
+      "20": -0.005899038248426414,
+      "30": 0.003096615907750566,
+      "40": 0.01305502430643668,
+      "50": 0.017452487172037623,
+      "60": 0.008472069004578753
      }
     },
     {
@@ -405,15 +446,15 @@
      "pick": 97,
      "change": "+Blood Frenzy 2; -Heart of the Wild 2",
      "why": null,
-     "base": 25.63790752363709,
-     "swap": 25.722284320668102,
-     "delta": 0.0032910953030476087,
+     "base": 29.140124139223797,
+     "swap": 29.380689825278882,
+     "delta": 0.00825547910865887,
      "levels": {
-      "20": 0.0,
-      "30": 0.006415629012415547,
-      "40": 0.0049626660886865626,
-      "50": -0.003605510824553626,
-      "60": 0.007114813644140128
+      "20": -0.005899038248426414,
+      "30": 0.0,
+      "40": 0.008764986146980958,
+      "50": 0.010457443012092282,
+      "60": 0.012998164849374438
      }
     },
     {
@@ -422,18 +463,18 @@
      "build": "opt-feral-cat-dps-leveling-st",
      "lead": "Feral Combat",
      "talent": "Feral Charge",
-     "pick": 94,
+     "pick": 92,
      "change": "+Feral Charge 1; -Heart of the Wild 1",
      "why": null,
-     "base": 25.63790752363709,
-     "swap": 25.653807876276527,
-     "delta": 0.0006201891720210018,
+     "base": 29.140124139223797,
+     "swap": 29.183399386175324,
+     "delta": 0.0014850742139864703,
      "levels": {
       "20": 0.0,
-      "30": 0.0030052495407317803,
-      "40": 0.003997035998528631,
-      "50": -0.0033235256804702296,
-      "60": 0.0008655097128091871
+      "30": 0.0,
+      "40": 0.0032898131803871244,
+      "50": -0.0010878316618939676,
+      "60": 0.003351439843772619
      }
     },
     {
@@ -442,11 +483,11 @@
      "build": "opt-feral-cat-dps-leveling-st",
      "lead": "Feral Combat",
      "talent": "Furor",
-     "pick": 75,
+     "pick": 77,
      "change": "+Furor 5; -Nature's Focus 5",
      "why": null,
-     "base": 25.63790752363709,
-     "swap": 25.63790752363709,
+     "base": 29.140124139223797,
+     "swap": 29.140124139223797,
      "delta": 0.0,
      "levels": {
       "20": 0.0,
@@ -462,18 +503,38 @@
      "build": "opt-feral-cat-dps-leveling-st",
      "lead": "Feral Combat",
      "talent": "Primal Bite",
-     "pick": 71,
+     "pick": 72,
      "change": "+Primal Bite 1; -Heart of the Wild 1",
      "why": null,
-     "base": 25.63790752363709,
-     "swap": 25.653807876276527,
-     "delta": 0.0006201891720210018,
+     "base": 29.140124139223797,
+     "swap": 29.183399386175324,
+     "delta": 0.0014850742139864703,
      "levels": {
       "20": 0.0,
-      "30": 0.0030052495407317803,
-      "40": 0.003997035998528631,
-      "50": -0.0033235256804702296,
-      "60": 0.0008655097128091871
+      "30": 0.0,
+      "40": 0.0032898131803871244,
+      "50": -0.0010878316618939676,
+      "60": 0.003351439843772619
+     }
+    },
+    {
+     "scenario": "leveling",
+     "spec": "feral-cat-dps",
+     "build": "opt-feral-cat-dps-leveling-st",
+     "lead": "Feral Combat",
+     "talent": "Shredding Attacks",
+     "pick": 71,
+     "change": "+Shredding Attacks 3; -Heart of the Wild 3",
+     "why": null,
+     "base": 29.140124139223797,
+     "swap": 29.467880058030396,
+     "delta": 0.01124758141868809,
+     "levels": {
+      "20": -0.005899038248426414,
+      "30": 0.003096615907750566,
+      "40": 0.01305502430643668,
+      "50": 0.017452487172037623,
+      "60": 0.012794688047805813
      }
     }
    ]
@@ -487,16 +548,16 @@
      "build": "bm-mm-raid",
      "lead": "Marksmanship",
      "talent": "Sniper Shot",
-     "pick": 82,
+     "pick": 81,
      "change": null,
      "why": "not tested: no single point can come out without breaking tier gating or a prerequisite",
      "dummy": {
-      "base": 399.53552362909136,
+      "base": 460.51150462473464,
       "swap": null,
       "delta": null
      },
      "raid": {
-      "base": 648.7757497957101,
+      "base": 805.8113236381063,
       "swap": null,
       "delta": null
      }
@@ -509,17 +570,38 @@
      "lead": "Marksmanship",
      "talent": "Hawk Eye",
      "pick": 78,
-     "change": "+Hawk Eye 3; -Barrage 2, Efficiency 1",
+     "change": "+Hawk Eye 3; -Improved Arcane Shot 1, Ranged Weapon Specialization 2",
      "why": null,
      "dummy": {
-      "base": 399.53552362909136,
-      "swap": 394.6952508138986,
-      "delta": -0.012114749575274808
+      "base": 460.51150462473464,
+      "swap": 455.61027239822135,
+      "delta": -0.010643017986070147
      },
      "raid": {
-      "base": 648.7757497957101,
-      "swap": 641.3968460176396,
-      "delta": -0.011373581365200502
+      "base": 805.8113236381063,
+      "swap": 789.7832154580474,
+      "delta": -0.01989064649488248
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "mm-raid",
+     "tank": false,
+     "build": "bm-mm-raid",
+     "lead": "Marksmanship",
+     "talent": "Barrage",
+     "pick": 78,
+     "change": "+Barrage 3; -Improved Arcane Shot 1, Ranged Weapon Specialization 2",
+     "why": null,
+     "dummy": {
+      "base": 460.51150462473464,
+      "swap": 459.42916012582026,
+      "delta": -0.002350309358278402
+     },
+     "raid": {
+      "base": 805.8113236381063,
+      "swap": 799.9926071209792,
+      "delta": -0.007220941610570297
      }
     },
     {
@@ -529,18 +611,18 @@
      "build": "bm-mm-raid",
      "lead": "Marksmanship",
      "talent": "Rapid Killing",
-     "pick": 75,
-     "change": "+Rapid Killing 2; -Barrage 2",
+     "pick": 77,
+     "change": "+Rapid Killing 2; -Improved Arcane Shot 1, Ranged Weapon Specialization 1",
      "why": null,
      "dummy": {
-      "base": 399.53552362909136,
-      "swap": 394.76929939311026,
-      "delta": -0.011929412915998472
+      "base": 460.51150462473464,
+      "swap": 457.91821310931834,
+      "delta": -0.005631328401946356
      },
      "raid": {
-      "base": 648.7757497957101,
-      "swap": 641.3968460176396,
-      "delta": -0.011373581365200502
+      "base": 805.8113236381063,
+      "swap": 794.9045123764186,
+      "delta": -0.013535192348061442
      }
     },
     {
@@ -551,17 +633,38 @@
      "lead": "Marksmanship",
      "talent": "Lone Wolf",
      "pick": 71,
-     "change": "+Lone Wolf 1; -Barrage 1",
+     "change": "+Lone Wolf 1; -Improved Arcane Shot 1",
      "why": null,
      "dummy": {
-      "base": 399.53552362909136,
-      "swap": 396.8119669228165,
-      "delta": -0.006816807380570444
+      "base": 460.51150462473464,
+      "swap": 460.22615382041465,
+      "delta": -0.0006196388178238976
      },
      "raid": {
-      "base": 648.7757497957101,
-      "swap": 644.5592333510998,
-      "delta": -0.006499189351541035
+      "base": 805.8113236381063,
+      "swap": 800.0258092947903,
+      "delta": -0.007179738201239627
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "mm-raid",
+     "tank": false,
+     "build": "bm-mm-full-buffs-raid",
+     "lead": "Marksmanship",
+     "talent": "Sniper Shot",
+     "pick": 81,
+     "change": "+Sniper Shot 1; -Bestial Discipline 1",
+     "why": null,
+     "dummy": {
+      "base": 472.3388625240696,
+      "swap": 460.4538441945716,
+      "delta": -0.025162059005662152
+     },
+     "raid": {
+      "base": 802.2659697498926,
+      "swap": 836.6351737411401,
+      "delta": 0.04284016185051698
      }
     },
     {
@@ -572,17 +675,38 @@
      "lead": "Marksmanship",
      "talent": "Hawk Eye",
      "pick": 78,
-     "change": "+Hawk Eye 3; -Rapid Killing 2, Sniper Shot 1",
+     "change": "+Hawk Eye 3; -Barrage 3",
      "why": null,
      "dummy": {
-      "base": 383.3374487426516,
-      "swap": 383.3374487426516,
-      "delta": 0.0
+      "base": 472.3388625240696,
+      "swap": 468.540062052025,
+      "delta": -0.008042532117185308
      },
      "raid": {
-      "base": 701.8047899094615,
-      "swap": 644.4014936027115,
-      "delta": -0.0817938223450363
+      "base": 802.2659697498926,
+      "swap": 791.7595190556935,
+      "delta": -0.013095969529250406
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "mm-raid",
+     "tank": false,
+     "build": "bm-mm-full-buffs-raid",
+     "lead": "Marksmanship",
+     "talent": "Rapid Killing",
+     "pick": 77,
+     "change": "+Rapid Killing 2; -Barrage 2",
+     "why": null,
+     "dummy": {
+      "base": 472.3388625240696,
+      "swap": 469.67970219363843,
+      "delta": -0.005629772482029671
+     },
+     "raid": {
+      "base": 802.2659697498926,
+      "swap": 794.9114542639533,
+      "delta": -0.009167178670475229
      }
     },
     {
@@ -593,17 +717,17 @@
      "lead": "Marksmanship",
      "talent": "Lone Wolf",
      "pick": 71,
-     "change": "+Lone Wolf 1; -Rapid Killing 1",
+     "change": "+Lone Wolf 1; -Barrage 1",
      "why": null,
      "dummy": {
-      "base": 383.3374487426516,
-      "swap": 383.3374487426516,
-      "delta": 0.0
+      "base": 472.3388625240696,
+      "swap": 471.1992223824565,
+      "delta": -0.0024127596351549707
      },
      "raid": {
-      "base": 701.8047899094615,
-      "swap": 701.8047899094615,
-      "delta": 0.0
+      "base": 802.2659697498926,
+      "swap": 799.1140345416326,
+      "delta": -0.0039287908587755105
      }
     },
     {
@@ -613,18 +737,18 @@
      "build": "opt-mm-raid-raid-dps",
      "lead": "Marksmanship",
      "talent": "Sniper Shot",
-     "pick": 82,
-     "change": "+Sniper Shot 1; -Ferocity 1",
-     "why": null,
+     "pick": 81,
+     "change": null,
+     "why": "not tested: no single point can come out without breaking tier gating or a prerequisite",
      "dummy": {
-      "base": 404.0186521249158,
-      "swap": 403.0212987019937,
-      "delta": -0.002468582620323456
+      "base": 460.51150462473464,
+      "swap": null,
+      "delta": null
      },
      "raid": {
-      "base": 660.1385233186259,
-      "swap": 715.7727898153505,
-      "delta": 0.08427665487092306
+      "base": 805.8113236381063,
+      "swap": null,
+      "delta": null
      }
     },
     {
@@ -635,17 +759,38 @@
      "lead": "Marksmanship",
      "talent": "Hawk Eye",
      "pick": 78,
-     "change": "+Hawk Eye 3; -Ferocity 3",
+     "change": "+Hawk Eye 3; -Improved Arcane Shot 1, Ranged Weapon Specialization 2",
      "why": null,
      "dummy": {
-      "base": 404.0186521249158,
-      "swap": 401.0429469195427,
-      "delta": -0.007365266899739598
+      "base": 460.51150462473464,
+      "swap": 455.61027239822135,
+      "delta": -0.010643017986070147
      },
      "raid": {
-      "base": 660.1385233186259,
-      "swap": 655.0856313075545,
-      "delta": -0.007654290474777281
+      "base": 805.8113236381063,
+      "swap": 789.7832154580474,
+      "delta": -0.01989064649488248
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "mm-raid",
+     "tank": false,
+     "build": "opt-mm-raid-raid-dps",
+     "lead": "Marksmanship",
+     "talent": "Barrage",
+     "pick": 78,
+     "change": "+Barrage 3; -Improved Arcane Shot 1, Ranged Weapon Specialization 2",
+     "why": null,
+     "dummy": {
+      "base": 460.51150462473464,
+      "swap": 459.42916012582026,
+      "delta": -0.002350309358278402
+     },
+     "raid": {
+      "base": 805.8113236381063,
+      "swap": 799.9926071209792,
+      "delta": -0.007220941610570297
      }
     },
     {
@@ -655,18 +800,18 @@
      "build": "opt-mm-raid-raid-dps",
      "lead": "Marksmanship",
      "talent": "Rapid Killing",
-     "pick": 75,
-     "change": "+Rapid Killing 2; -Ferocity 2",
+     "pick": 77,
+     "change": "+Rapid Killing 2; -Improved Arcane Shot 1, Ranged Weapon Specialization 1",
      "why": null,
      "dummy": {
-      "base": 404.0186521249158,
-      "swap": 402.03647858057343,
-      "delta": -0.004906143649351824
+      "base": 460.51150462473464,
+      "swap": 457.91821310931834,
+      "delta": -0.005631328401946356
      },
      "raid": {
-      "base": 660.1385233186259,
-      "swap": 656.7686491358486,
-      "delta": -0.005104798559302903
+      "base": 805.8113236381063,
+      "swap": 794.9045123764186,
+      "delta": -0.013535192348061442
      }
     },
     {
@@ -677,17 +822,80 @@
      "lead": "Marksmanship",
      "talent": "Lone Wolf",
      "pick": 71,
-     "change": "+Lone Wolf 1; -Ferocity 1",
+     "change": "+Lone Wolf 1; -Improved Arcane Shot 1",
      "why": null,
      "dummy": {
-      "base": 404.0186521249158,
-      "swap": 403.0212987019937,
-      "delta": -0.002468582620323456
+      "base": 460.51150462473464,
+      "swap": 460.22615382041465,
+      "delta": -0.0006196388178238976
      },
      "raid": {
-      "base": 660.1385233186259,
-      "swap": 658.4448858926078,
-      "delta": -0.0025655788386714784
+      "base": 805.8113236381063,
+      "swap": 800.0258092947903,
+      "delta": -0.007179738201239627
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "mm-lonewolf-raid",
+     "tank": false,
+     "build": "mm-lone-wolf-raid",
+     "lead": "Marksmanship",
+     "talent": "Hawk Eye",
+     "pick": 78,
+     "change": "+Hawk Eye 3; -Sniper Shot 1, Rapid Recuperation 1, Rapid Killing 1",
+     "why": null,
+     "dummy": {
+      "base": 457.0794275214086,
+      "swap": 457.0794275214086,
+      "delta": 0.0
+     },
+     "raid": {
+      "base": 896.0021463631482,
+      "swap": 858.097493246696,
+      "delta": -0.042304199013703636
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "mm-lonewolf-raid",
+     "tank": false,
+     "build": "opt-mm-lonewolf-raid-raid-dps",
+     "lead": "Marksmanship",
+     "talent": "Sniper Shot",
+     "pick": 81,
+     "change": "+Sniper Shot 1; -Survivalist 1",
+     "why": null,
+     "dummy": {
+      "base": 462.6269306263568,
+      "swap": 462.6269306263568,
+      "delta": 0.0
+     },
+     "raid": {
+      "base": 858.2797567327726,
+      "swap": 891.5846224753942,
+      "delta": 0.03880420746424651
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "mm-lonewolf-raid",
+     "tank": false,
+     "build": "opt-mm-lonewolf-raid-raid-dps",
+     "lead": "Marksmanship",
+     "talent": "Hawk Eye",
+     "pick": 78,
+     "change": "+Hawk Eye 3; -Survivalist 3",
+     "why": null,
+     "dummy": {
+      "base": 462.6269306263568,
+      "swap": 462.6269306263568,
+      "delta": 0.0
+     },
+     "raid": {
+      "base": 858.2797567327726,
+      "swap": 858.2797567327726,
+      "delta": 0.0
      }
     },
     {
@@ -697,17 +905,59 @@
      "build": "opt-mm-lonewolf-raid-raid-dps",
      "lead": "Marksmanship",
      "talent": "Rapid Killing",
-     "pick": 75,
-     "change": "+Rapid Killing 2; -Hawk Eye 2",
+     "pick": 77,
+     "change": "+Rapid Killing 2; -Survivalist 2",
      "why": null,
      "dummy": {
-      "base": 423.9941171580656,
-      "swap": 423.9941171580656,
+      "base": 462.6269306263568,
+      "swap": 462.6269306263568,
       "delta": 0.0
      },
      "raid": {
-      "base": 761.6556535798063,
-      "swap": 761.6556535798063,
+      "base": 858.2797567327726,
+      "swap": 858.2797567327726,
+      "delta": 0.0
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "mm-lonewolf-raid",
+     "tank": false,
+     "build": "marksmanship-ml-raid",
+     "lead": "Marksmanship",
+     "talent": "Sniper Shot",
+     "pick": 81,
+     "change": "+Sniper Shot 1; -Endurance Training 1",
+     "why": null,
+     "dummy": {
+      "base": 444.2997135453692,
+      "swap": 444.2997135453692,
+      "delta": 0.0
+     },
+     "raid": {
+      "base": 814.6588553922729,
+      "swap": 844.0389148245938,
+      "delta": 0.03606424853526424
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "mm-lonewolf-raid",
+     "tank": false,
+     "build": "marksmanship-ml-raid",
+     "lead": "Marksmanship",
+     "talent": "Rapid Killing",
+     "pick": 77,
+     "change": "+Rapid Killing 2; -Endurance Training 2",
+     "why": null,
+     "dummy": {
+      "base": 444.2997135453692,
+      "swap": 444.2997135453692,
+      "delta": 0.0
+     },
+     "raid": {
+      "base": 814.6588553922729,
+      "swap": 814.6588553922729,
       "delta": 0.0
      }
     }
@@ -732,15 +982,15 @@
      "pick": 71,
      "change": "+Lone Wolf 1; -Hawk Eye 1",
      "why": null,
-     "base": 26.96476801676156,
-     "swap": 35.237476959416256,
-     "delta": 0.30679696326377814,
+     "base": 28.14093242838569,
+     "swap": 40.85949241014508,
+     "delta": 0.451959437169545,
      "levels": {
       "20": 0.0,
       "30": 0.0,
       "40": 0.0,
-      "50": 0.48696826593928866,
-      "60": 0.5277203031646498
+      "50": 0.7095309256144096,
+      "60": 0.7276954725234217
      }
     },
     {
@@ -752,15 +1002,15 @@
      "pick": 97,
      "change": "+Mortal Shots 5; -Ferocity 3, Barrage 2",
      "why": null,
-     "base": 27.8036107143976,
-     "swap": 27.973986764677125,
-     "delta": 0.006127839007302072,
+     "base": 26.78331585358718,
+     "swap": 26.90443214483621,
+     "delta": 0.004522079786950961,
      "levels": {
       "20": 0.0,
       "30": 0.0,
-      "40": 0.0017700446123654068,
-      "50": 0.002048273462845529,
-      "60": 0.015951455323739205
+      "40": 0.0013279616123711424,
+      "50": -0.0006943835955294242,
+      "60": 0.012163769513345635
      }
     },
     {
@@ -772,15 +1022,15 @@
      "pick": 78,
      "change": "+Hawk Eye 3; -Lethal Attacks 3",
      "why": null,
-     "base": 27.8036107143976,
-     "swap": 28.081364315001405,
-     "delta": 0.0099898392139397,
+     "base": 26.78331585358718,
+     "swap": 27.284889308942336,
+     "delta": 0.018727085850648306,
      "levels": {
-      "20": 0.009225059617591125,
-      "30": 0.00919782101063693,
-      "40": 0.014183330970801267,
-      "50": 0.011817320696924316,
-      "60": 0.006044968881986579
+      "20": 0.015229326548150457,
+      "30": 0.013149049642889876,
+      "40": 0.019851777067942278,
+      "50": 0.015518799350539902,
+      "60": 0.02273638133832101
      }
     },
     {
@@ -792,15 +1042,15 @@
      "pick": 71,
      "change": "+Lone Wolf 1; -Ferocity 1",
      "why": null,
-     "base": 27.8036107143976,
-     "swap": 32.22919004715622,
-     "delta": 0.15917282752297046,
+     "base": 26.78331585358718,
+     "swap": 33.67343263062074,
+     "delta": 0.2572540612483851,
      "levels": {
       "20": 0.0,
       "30": 0.0,
       "40": 0.0,
       "50": 0.0,
-      "60": 0.4919073331731256
+      "60": 0.7030462497202838
      }
     }
    ]
@@ -813,19 +1063,61 @@
      "tank": false,
      "build": "frost-arcane-power-raid",
      "lead": "Arcane",
-     "talent": "Arcane Impact",
+     "talent": "Arcane Blast",
      "pick": 90,
-     "change": "+Arcane Impact 3; -Arcane Subtlety 2, Arcane Geometry 1",
+     "change": "+Arcane Blast 1; -Arcane Meditation 1",
      "why": null,
      "dummy": {
-      "base": 548.0984222094631,
-      "swap": 554.8205952869114,
-      "delta": 0.012264536450132812
+      "base": 571.5468624572441,
+      "swap": 571.1188633602578,
+      "delta": -0.0007488434021772905
      },
      "raid": {
-      "base": 626.846263213927,
-      "swap": 634.2287657298921,
-      "delta": 0.011777213886725368
+      "base": 649.341555934548,
+      "swap": 649.1331036757047,
+      "delta": -0.0003210209741516534
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "frost-raid",
+     "tank": false,
+     "build": "frost-arcane-power-raid",
+     "lead": "Arcane",
+     "talent": "Arcane Subtlety",
+     "pick": 78,
+     "change": "+Arcane Subtlety 2; -Arcane Meditation 1, Missile Barrage 1",
+     "why": null,
+     "dummy": {
+      "base": 571.5468624572441,
+      "swap": 492.67836199696353,
+      "delta": -0.13799131032091083
+     },
+     "raid": {
+      "base": 649.341555934548,
+      "swap": 579.6293236603346,
+      "delta": -0.10735834113355303
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "frost-raid",
+     "tank": false,
+     "build": "frost-arcane-power-raid",
+     "lead": "Arcane",
+     "talent": "Arcane Geometry",
+     "pick": 72,
+     "change": "+Arcane Geometry 2; -Arcane Meditation 1, Missile Barrage 1",
+     "why": null,
+     "dummy": {
+      "base": 571.5468624572441,
+      "swap": 492.67836199696353,
+      "delta": -0.13799131032091083
+     },
+     "raid": {
+      "base": 649.341555934548,
+      "swap": 579.6293236603346,
+      "delta": -0.10735834113355303
      }
     },
     {
@@ -835,18 +1127,18 @@
      "build": "frost-arcane-power-raid",
      "lead": "Arcane",
      "talent": "Incineration",
-     "pick": 71,
-     "change": "+Incineration 3; -Frost Channeling 2, Elemental Precision 1",
+     "pick": 72,
+     "change": "+Incineration 3; -Arcane Meditation 1, Frost Channeling 1, Elemental Precision 1",
      "why": null,
      "dummy": {
-      "base": 548.0984222094631,
-      "swap": 543.4424285304236,
-      "delta": -0.008494813140075386
+      "base": 571.5468624572441,
+      "swap": 562.9662140626245,
+      "delta": -0.015013026854401534
      },
      "raid": {
-      "base": 626.846263213927,
-      "swap": 621.5156101236278,
-      "delta": -0.008503924172680422
+      "base": 649.341555934548,
+      "swap": 643.5439056097413,
+      "delta": -0.008928506533764868
      }
     },
     {
@@ -856,18 +1148,39 @@
      "build": "frost-winters-chill-raid",
      "lead": "Frost",
      "talent": "Ice Lance",
-     "pick": 97,
-     "change": "+Ice Lance 1; -Arcane Meditation 1",
+     "pick": 98,
+     "change": "+Ice Lance 1; -Cold Snap 1",
      "why": null,
      "dummy": {
-      "base": 490.8381990467536,
-      "swap": 196.48206924874958,
-      "delta": -0.5997009409000089
+      "base": 546.9203637014831,
+      "swap": 546.9203637014831,
+      "delta": 0.0
      },
      "raid": {
-      "base": 559.5955646207287,
-      "swap": 224.43599319480734,
-      "delta": -0.5989317868398027
+      "base": 618.5888956763257,
+      "swap": 618.5888956763257,
+      "delta": 0.0
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "frost-raid",
+     "tank": false,
+     "build": "frost-winters-chill-raid",
+     "lead": "Frost",
+     "talent": "Shatter",
+     "pick": 96,
+     "change": "+Shatter 3; -Cold Snap 1, Arctic Reach 2",
+     "why": null,
+     "dummy": {
+      "base": 546.9203637014831,
+      "swap": 546.9203637014831,
+      "delta": 0.0
+     },
+     "raid": {
+      "base": 618.5888956763257,
+      "swap": 618.5888956763257,
+      "delta": 0.0
      }
     },
     {
@@ -877,16 +1190,16 @@
      "build": "frost-winters-chill-raid",
      "lead": "Frost",
      "talent": "Fingers of Frost",
-     "pick": 95,
+     "pick": 96,
      "change": null,
      "why": "not tested: no single point can come out without breaking tier gating or a prerequisite",
      "dummy": {
-      "base": 490.8381990467536,
+      "base": 546.9203637014831,
       "swap": null,
       "delta": null
      },
      "raid": {
-      "base": 559.5955646207287,
+      "base": 618.5888956763257,
       "swap": null,
       "delta": null
      }
@@ -897,39 +1210,39 @@
      "tank": false,
      "build": "frost-winters-chill-raid",
      "lead": "Frost",
-     "talent": "Frostbite",
-     "pick": 70,
-     "change": "+Frostbite 3; -Arcane Meditation 2, Arcane Subtlety 1",
+     "talent": "Ice Barrier",
+     "pick": 75,
+     "change": "+Ice Barrier 1; -Presence of Mind 1",
      "why": null,
      "dummy": {
-      "base": 490.8381990467536,
-      "swap": 490.5552220410605,
-      "delta": -0.00057651789580071
+      "base": 546.9203637014831,
+      "swap": 541.6114029511409,
+      "delta": -0.009707008739648804
      },
      "raid": {
-      "base": 559.5955646207287,
-      "swap": 559.3886820254019,
-      "delta": -0.00036970020566029493
+      "base": 618.5888956763257,
+      "swap": 612.5008757174534,
+      "delta": -0.009841786688097764
      }
     },
     {
      "scenario": "raid",
      "entry": "frost-raid",
      "tank": false,
-     "build": "frost-fingers-of-frost-raid",
+     "build": "frost-winters-chill-raid",
      "lead": "Frost",
-     "talent": "Cold Snap",
-     "pick": 91,
-     "change": "+Cold Snap 1; -Improved Cone of Cold 1",
+     "talent": "Frostbite",
+     "pick": 71,
+     "change": "+Frostbite 3; -Cold Snap 1, Arctic Reach 2",
      "why": null,
      "dummy": {
-      "base": 587.7499469537956,
-      "swap": 587.7499469537956,
+      "base": 546.9203637014831,
+      "swap": 546.9203637014831,
       "delta": 0.0
      },
      "raid": {
-      "base": 667.2471084179401,
-      "swap": 667.2471084179401,
+      "base": 618.5888956763257,
+      "swap": 618.5888956763257,
       "delta": 0.0
      }
     },
@@ -940,18 +1253,39 @@
      "build": "frost-fingers-of-frost-raid",
      "lead": "Frost",
      "talent": "Ice Block",
-     "pick": 90,
-     "change": "+Ice Block 1; -Improved Cone of Cold 1",
+     "pick": 91,
+     "change": "+Ice Block 1; -Frost Channeling 1",
      "why": null,
      "dummy": {
-      "base": 587.7499469537956,
-      "swap": 587.7499469537956,
-      "delta": 0.0
+      "base": 601.6175217612471,
+      "swap": 599.1742861881573,
+      "delta": -0.004061111062618528
      },
      "raid": {
-      "base": 667.2471084179401,
-      "swap": 667.2471084179401,
-      "delta": 0.0
+      "base": 679.9475325352065,
+      "swap": 679.6886646875398,
+      "delta": -0.00038071738668055133
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "frost-raid",
+     "tank": false,
+     "build": "frost-fingers-of-frost-raid",
+     "lead": "Frost",
+     "talent": "Cold Snap",
+     "pick": 89,
+     "change": "+Cold Snap 1; -Frost Channeling 1",
+     "why": null,
+     "dummy": {
+      "base": 601.6175217612471,
+      "swap": 599.1742861881573,
+      "delta": -0.004061111062618528
+     },
+     "raid": {
+      "base": 679.9475325352065,
+      "swap": 679.6886646875398,
+      "delta": -0.00038071738668055133
      }
     },
     {
@@ -961,39 +1295,18 @@
      "build": "frost-fingers-of-frost-raid",
      "lead": "Frost",
      "talent": "Ice Barrier",
-     "pick": 79,
+     "pick": 75,
      "change": null,
      "why": "not tested: no single point can come out without breaking tier gating or a prerequisite",
      "dummy": {
-      "base": 587.7499469537956,
+      "base": 601.6175217612471,
       "swap": null,
       "delta": null
      },
      "raid": {
-      "base": 667.2471084179401,
+      "base": 679.9475325352065,
       "swap": null,
       "delta": null
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "frost-raid",
-     "tank": false,
-     "build": "frost-fingers-of-frost-raid",
-     "lead": "Frost",
-     "talent": "Arctic Reach",
-     "pick": 71,
-     "change": "+Arctic Reach 2; -Improved Cone of Cold 1, Arcane Mind 1",
-     "why": null,
-     "dummy": {
-      "base": 587.7499469537956,
-      "swap": 585.0557947379327,
-      "delta": -0.0045838408490315175
-     },
-     "raid": {
-      "base": 667.2471084179401,
-      "swap": 663.5928326477654,
-      "delta": -0.0054766453448396035
      }
     },
     {
@@ -1003,39 +1316,39 @@
      "build": "frost-fingers-of-frost-raid",
      "lead": "Frost",
      "talent": "Frostbite",
-     "pick": 70,
-     "change": "+Frostbite 3; -Improved Cone of Cold 1, Arcane Mind 1, Presence of Mind 1",
+     "pick": 71,
+     "change": "+Frostbite 3; -Frost Channeling 1, Arcane Mind 1, Elemental Precision 1",
      "why": null,
      "dummy": {
-      "base": 587.7499469537956,
-      "swap": 580.7648710285566,
-      "delta": -0.011884434803340116
+      "base": 601.6175217612471,
+      "swap": 588.3734954796693,
+      "delta": -0.022014030181178312
      },
      "raid": {
-      "base": 667.2471084179401,
-      "swap": 658.6333014501404,
-      "delta": -0.01290947065806447
+      "base": 679.9475325352065,
+      "swap": 668.0185188790833,
+      "delta": -0.01754402080355444
      }
     },
     {
      "scenario": "raid",
      "entry": "frost-raid",
      "tank": false,
-     "build": "opt-frost-raid-raid-dps",
+     "build": "frost-fingers-of-frost-raid",
      "lead": "Frost",
-     "talent": "Cold Snap",
-     "pick": 91,
-     "change": "+Cold Snap 1; -Improved Cone of Cold 1",
+     "talent": "Arctic Reach",
+     "pick": 70,
+     "change": "+Arctic Reach 2; -Frost Channeling 1, Arcane Mind 1",
      "why": null,
      "dummy": {
-      "base": 587.7499469537956,
-      "swap": 587.7499469537956,
-      "delta": 0.0
+      "base": 601.6175217612471,
+      "swap": 594.6166615362347,
+      "delta": -0.011636729270313229
      },
      "raid": {
-      "base": 667.2471084179401,
-      "swap": 667.2471084179401,
-      "delta": 0.0
+      "base": 679.9475325352065,
+      "swap": 674.9825654051439,
+      "delta": -0.007301985656967713
      }
     },
     {
@@ -1045,17 +1358,38 @@
      "build": "opt-frost-raid-raid-dps",
      "lead": "Frost",
      "talent": "Ice Block",
-     "pick": 90,
+     "pick": 91,
      "change": "+Ice Block 1; -Improved Cone of Cold 1",
      "why": null,
      "dummy": {
-      "base": 587.7499469537956,
-      "swap": 587.7499469537956,
+      "base": 599.1742861881573,
+      "swap": 599.1742861881573,
       "delta": 0.0
      },
      "raid": {
-      "base": 667.2471084179401,
-      "swap": 667.2471084179401,
+      "base": 679.6886646875398,
+      "swap": 679.6886646875398,
+      "delta": 0.0
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "frost-raid",
+     "tank": false,
+     "build": "opt-frost-raid-raid-dps",
+     "lead": "Frost",
+     "talent": "Cold Snap",
+     "pick": 89,
+     "change": "+Cold Snap 1; -Improved Cone of Cold 1",
+     "why": null,
+     "dummy": {
+      "base": 599.1742861881573,
+      "swap": 599.1742861881573,
+      "delta": 0.0
+     },
+     "raid": {
+      "base": 679.6886646875398,
+      "swap": 679.6886646875398,
       "delta": 0.0
      }
     },
@@ -1066,39 +1400,18 @@
      "build": "opt-frost-raid-raid-dps",
      "lead": "Frost",
      "talent": "Ice Barrier",
-     "pick": 79,
+     "pick": 75,
      "change": null,
      "why": "not tested: no single point can come out without breaking tier gating or a prerequisite",
      "dummy": {
-      "base": 587.7499469537956,
+      "base": 599.1742861881573,
       "swap": null,
       "delta": null
      },
      "raid": {
-      "base": 667.2471084179401,
+      "base": 679.6886646875398,
       "swap": null,
       "delta": null
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "frost-raid",
-     "tank": false,
-     "build": "opt-frost-raid-raid-dps",
-     "lead": "Frost",
-     "talent": "Arctic Reach",
-     "pick": 71,
-     "change": "+Arctic Reach 2; -Improved Cone of Cold 1, Arcane Mind 1",
-     "why": null,
-     "dummy": {
-      "base": 587.7499469537956,
-      "swap": 585.0557947379327,
-      "delta": -0.0045838408490315175
-     },
-     "raid": {
-      "base": 667.2471084179401,
-      "swap": 663.5928326477654,
-      "delta": -0.0054766453448396035
      }
     },
     {
@@ -1108,18 +1421,39 @@
      "build": "opt-frost-raid-raid-dps",
      "lead": "Frost",
      "talent": "Frostbite",
-     "pick": 70,
-     "change": "+Frostbite 3; -Improved Cone of Cold 1, Arcane Mind 1, Presence of Mind 1",
+     "pick": 71,
+     "change": "+Frostbite 3; -Improved Cone of Cold 1, Arcane Mind 1, Elemental Precision 1",
      "why": null,
      "dummy": {
-      "base": 587.7499469537956,
-      "swap": 580.7648710285566,
-      "delta": -0.011884434803340116
+      "base": 599.1742861881573,
+      "swap": 588.3734954796693,
+      "delta": -0.018026125215086952
      },
      "raid": {
-      "base": 667.2471084179401,
-      "swap": 658.6333014501404,
-      "delta": -0.01290947065806447
+      "base": 679.6886646875398,
+      "swap": 668.0185188790833,
+      "delta": -0.017169840273592585
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "frost-raid",
+     "tank": false,
+     "build": "opt-frost-raid-raid-dps",
+     "lead": "Frost",
+     "talent": "Arctic Reach",
+     "pick": 70,
+     "change": "+Arctic Reach 2; -Improved Cone of Cold 1, Arcane Mind 1",
+     "why": null,
+     "dummy": {
+      "base": 599.1742861881573,
+      "swap": 594.6166615362347,
+      "delta": -0.007606509085891333
+     },
+     "raid": {
+      "base": 679.6886646875398,
+      "swap": 674.9825654051439,
+      "delta": -0.006923904321045837
      }
     },
     {
@@ -1129,39 +1463,123 @@
      "build": "opt-frost-raid-raid-dps-extwc",
      "lead": "Frost",
      "talent": "Frostbite",
-     "pick": 70,
-     "change": "+Frostbite 3; -Wand Specialization 1, Burning Soul 2",
+     "pick": 71,
+     "change": "+Frostbite 3; -Wand Specialization 1, Arctic Reach 2",
      "why": null,
      "dummy": {
-      "base": 570.4639967367418,
-      "swap": 570.4639967367418,
+      "base": 549.338419998209,
+      "swap": 549.338419998209,
       "delta": 0.0
      },
      "raid": {
-      "base": 648.944908296164,
-      "swap": 648.944908296164,
+      "base": 649.6093085755572,
+      "swap": 649.6093085755572,
       "delta": 0.0
      }
     },
     {
      "scenario": "raid",
-     "entry": "fire-raid",
+     "entry": "frost-raid",
      "tank": false,
-     "build": "fire-raid",
-     "lead": "Fire",
-     "talent": "Burning Soul",
-     "pick": 82,
-     "change": "+Burning Soul 3; -Wand Specialization 2, Magic Absorption 1",
+     "build": "frost-ml-raid",
+     "lead": "Frost",
+     "talent": "Ice Block",
+     "pick": 91,
+     "change": "+Ice Block 1; -Frost Channeling 1",
      "why": null,
      "dummy": {
-      "base": 533.6714075422101,
-      "swap": 533.6714075422101,
-      "delta": 0.0
+      "base": 604.6856630193611,
+      "swap": 601.7825791200323,
+      "delta": -0.004800980206530525
      },
      "raid": {
-      "base": 661.9779545042659,
-      "swap": 661.9779545042659,
-      "delta": 0.0
+      "base": 683.3372485873276,
+      "swap": 683.1176165855876,
+      "delta": -0.00032141084390480135
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "frost-raid",
+     "tank": false,
+     "build": "frost-ml-raid",
+     "lead": "Frost",
+     "talent": "Cold Snap",
+     "pick": 89,
+     "change": "+Cold Snap 1; -Frost Channeling 1",
+     "why": null,
+     "dummy": {
+      "base": 604.6856630193611,
+      "swap": 601.7825791200323,
+      "delta": -0.004800980206530525
+     },
+     "raid": {
+      "base": 683.3372485873276,
+      "swap": 683.1176165855876,
+      "delta": -0.00032141084390480135
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "frost-raid",
+     "tank": false,
+     "build": "frost-ml-raid",
+     "lead": "Frost",
+     "talent": "Ice Barrier",
+     "pick": 75,
+     "change": null,
+     "why": "not tested: no single point can come out without breaking tier gating or a prerequisite",
+     "dummy": {
+      "base": 604.6856630193611,
+      "swap": null,
+      "delta": null
+     },
+     "raid": {
+      "base": 683.3372485873276,
+      "swap": null,
+      "delta": null
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "frost-raid",
+     "tank": false,
+     "build": "frost-ml-raid",
+     "lead": "Frost",
+     "talent": "Frostbite",
+     "pick": 71,
+     "change": "+Frostbite 3; -Frost Channeling 1, Elemental Precision 2",
+     "why": null,
+     "dummy": {
+      "base": 604.6856630193611,
+      "swap": 589.0535830540875,
+      "delta": -0.025851580285893183
+     },
+     "raid": {
+      "base": 683.3372485873276,
+      "swap": 668.9254988502926,
+      "delta": -0.02109024462932274
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "frost-raid",
+     "tank": false,
+     "build": "frost-ml-raid",
+     "lead": "Frost",
+     "talent": "Arctic Reach",
+     "pick": 70,
+     "change": "+Arctic Reach 2; -Frost Channeling 1, Elemental Precision 1",
+     "why": null,
+     "dummy": {
+      "base": 604.6856630193611,
+      "swap": 595.3250527328806,
+      "delta": -0.015480126053824983
+     },
+     "raid": {
+      "base": 683.3372485873276,
+      "swap": 676.1574916973289,
+      "delta": -0.010506901101676513
      }
     },
     {
@@ -1171,18 +1589,18 @@
      "build": "fire-raid",
      "lead": "Fire",
      "talent": "Flame Throwing",
-     "pick": 78,
-     "change": "+Flame Throwing 2; -Wand Specialization 2",
+     "pick": 74,
+     "change": "+Flame Throwing 2; -Heating Up 1, Arcane Subtlety 1",
      "why": null,
      "dummy": {
-      "base": 533.6714075422101,
-      "swap": 533.6714075422101,
-      "delta": 0.0
+      "base": 518.9588179968318,
+      "swap": 496.19819378845614,
+      "delta": -0.04385824735810662
      },
      "raid": {
-      "base": 661.9779545042659,
-      "swap": 661.9779545042659,
-      "delta": 0.0
+      "base": 688.1399963145788,
+      "swap": 639.0886430720442,
+      "delta": -0.07128106708698134
      }
     },
     {
@@ -1192,18 +1610,39 @@
      "build": "opt-fire-raid-raid-dps",
      "lead": "Fire",
      "talent": "Burning Soul",
-     "pick": 82,
-     "change": "+Burning Soul 3; -Improved Channeling 1, Flame Throwing 1, Magic Absorption 1",
+     "pick": 81,
+     "change": "+Burning Soul 3; -Wand Specialization 1, Heating Up 1, Arcane Geometry 1",
      "why": null,
      "dummy": {
-      "base": 533.541294719372,
-      "swap": 533.541294719372,
-      "delta": 0.0
+      "base": 518.9588179968318,
+      "swap": 496.19819378845614,
+      "delta": -0.04385824735810662
      },
      "raid": {
-      "base": 661.9779545042659,
-      "swap": 661.9779545042659,
-      "delta": 0.0
+      "base": 688.1399963145788,
+      "swap": 639.0886430720442,
+      "delta": -0.07128106708698134
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "fire-raid",
+     "tank": false,
+     "build": "opt-fire-raid-raid-dps",
+     "lead": "Fire",
+     "talent": "Flame Throwing",
+     "pick": 74,
+     "change": "+Flame Throwing 2; -Wand Specialization 1, Heating Up 1",
+     "why": null,
+     "dummy": {
+      "base": 518.9588179968318,
+      "swap": 496.19819378845614,
+      "delta": -0.04385824735810662
+     },
+     "raid": {
+      "base": 688.1399963145788,
+      "swap": 639.0886430720442,
+      "delta": -0.07128106708698134
      }
     }
    ],
@@ -1214,12 +1653,12 @@
      "build": "opt-frost-leveling-leveling-st",
      "lead": "Frost",
      "talent": "Arctic Reach",
-     "pick": 71,
+     "pick": 70,
      "change": "+Arctic Reach 2; -Winter's Chill 2",
      "why": null,
-     "base": 26.41761507054743,
-     "swap": 26.538873202608464,
-     "delta": 0.004590048410396452,
+     "base": 26.128078697208053,
+     "swap": 26.249336829269094,
+     "delta": 0.004640912692673416,
      "levels": {
       "20": 0.0,
       "30": 0.0,
@@ -1239,18 +1678,18 @@
      "build": "ret-raid-dps",
      "lead": "Retribution",
      "talent": "Pursuit of Justice",
-     "pick": 83,
-     "change": "+Pursuit of Justice 2; -Divine Favor 1, Vindication 1",
+     "pick": 84,
+     "change": "+Pursuit of Justice 2; -Divine Favor 1, Divine Strength 1",
      "why": null,
      "dummy": {
-      "base": 367.1406095188503,
-      "swap": 367.7141917567172,
-      "delta": 0.0015622958152698985
+      "base": 531.1550708614111,
+      "swap": 531.1572173261061,
+      "delta": 4.041126241194348e-06
      },
      "raid": {
-      "base": 779.3927856904526,
-      "swap": 776.8380835099531,
-      "delta": -0.003277810915630064
+      "base": 972.1181392486199,
+      "swap": 969.5479984797595,
+      "delta": -0.002643856404990985
      }
     },
     {
@@ -1260,18 +1699,18 @@
      "build": "ret-full-buffs-raid",
      "lead": "Retribution",
      "talent": "Pursuit of Justice",
-     "pick": 83,
-     "change": "+Pursuit of Justice 2; -Vindication 2",
+     "pick": 84,
+     "change": "+Pursuit of Justice 2; -Divine Strength 2",
      "why": null,
      "dummy": {
-      "base": 365.4450133728243,
-      "swap": 363.90075907080416,
-      "delta": -0.004225681690844918
+      "base": 523.1771004223162,
+      "swap": 521.49751343421,
+      "delta": -0.0032103602905220185
      },
      "raid": {
-      "base": 804.8136897009362,
-      "swap": 800.0693236278407,
-      "delta": -0.005894986794842461
+      "base": 996.9898289441287,
+      "swap": 992.0466732954841,
+      "delta": -0.004958080318512081
      }
     },
     {
@@ -1281,18 +1720,39 @@
      "build": "opt-ret-dps-raid-dps",
      "lead": "Retribution",
      "talent": "Pursuit of Justice",
-     "pick": 83,
-     "change": "+Pursuit of Justice 2; -Illumination 1, Vindication 1",
+     "pick": 84,
+     "change": "+Pursuit of Justice 2; -Vindication 1, Two-Handed Weapon Specialization 1",
      "why": null,
      "dummy": {
-      "base": 368.4430518907618,
-      "swap": 367.7141917567172,
-      "delta": -0.001978216525740595
+      "base": 542.0309940112305,
+      "swap": 539.3986306265267,
+      "delta": -0.0048564812968043825
      },
      "raid": {
-      "base": 779.0982002625593,
-      "swap": 776.8380835099531,
-      "delta": -0.0029009395116617043
+      "base": 994.6017947080329,
+      "swap": 987.6402008596593,
+      "delta": -0.006999377927341399
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "ret-dps",
+     "tank": false,
+     "build": "retribution-ml-raid",
+     "lead": "Retribution",
+     "talent": "Pursuit of Justice",
+     "pick": 84,
+     "change": "+Pursuit of Justice 2; -Vindication 1, Two-Handed Weapon Specialization 1",
+     "why": null,
+     "dummy": {
+      "base": 534.3059702993932,
+      "swap": 531.659113738115,
+      "delta": -0.0049538217957680875
+     },
+     "raid": {
+      "base": 998.1042432482711,
+      "swap": 991.1189352576206,
+      "delta": -0.006998575587573219
      }
     },
     {
@@ -1301,30 +1761,14 @@
      "tank": true,
      "build": "prot-tank",
      "lead": "Retribution",
-     "talent": "Improved Judgement",
-     "pick": 94,
-     "change": "+Improved Judgement 2; -Benediction 2",
+     "talent": "Benediction",
+     "pick": 89,
+     "change": "+Benediction 5; -Improved Judgement 2, Eye for an Eye 1, Conviction 2",
      "why": null,
      "raid": {
       "base": 1.0,
-      "swap": 1.0177154482905473,
-      "delta": 0.017715448290547275
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "prot-tank",
-     "tank": true,
-     "build": "prot-tank",
-     "lead": "Retribution",
-     "talent": "Seal of Command",
-     "pick": 83,
-     "change": "+Seal of Command 1; -Benediction 1",
-     "why": null,
-     "raid": {
-      "base": 1.0,
-      "swap": 0.9998287727566084,
-      "delta": -0.00017122724339158069
+      "swap": 0.9721119240199563,
+      "delta": -0.027888075980043725
      }
     },
     {
@@ -1334,13 +1778,29 @@
      "build": "prot-tank",
      "lead": "Retribution",
      "talent": "Pursuit of Justice",
-     "pick": 83,
-     "change": "+Pursuit of Justice 2; -Benediction 2",
+     "pick": 84,
+     "change": "+Pursuit of Justice 2; -Improved Judgement 2",
      "why": null,
      "raid": {
       "base": 1.0,
-      "swap": 0.9996901141613224,
-      "delta": -0.0003098858386776371
+      "swap": 0.981536953300536,
+      "delta": -0.01846304669946397
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "prot-tank",
+     "tank": true,
+     "build": "prot-tank",
+     "lead": "Retribution",
+     "talent": "Seal of Command",
+     "pick": 81,
+     "change": "+Seal of Command 1; -Improved Judgement 1",
+     "why": null,
+     "raid": {
+      "base": 1.0,
+      "swap": 0.9878957825424624,
+      "delta": -0.012104217457537647
      }
     },
     {
@@ -1350,7 +1810,7 @@
      "build": "prot-tank",
      "lead": "Retribution",
      "talent": "Improved Seals",
-     "pick": 79,
+     "pick": 80,
      "change": null,
      "why": "not tested: no single point can come out without breaking tier gating or a prerequisite",
      "raid": {
@@ -1366,13 +1826,13 @@
      "build": "prot-tank",
      "lead": "Retribution",
      "talent": "Two-Handed Weapon Specialization",
-     "pick": 78,
-     "change": "+Two-Handed Weapon Specialization 3; -Benediction 2, Shield Specialization 1",
+     "pick": 76,
+     "change": "+Two-Handed Weapon Specialization 3; -Improved Judgement 2, Anticipation 1",
      "why": null,
      "raid": {
       "base": 1.0,
-      "swap": 0.9960091081920338,
-      "delta": -0.00399089180796619
+      "swap": 0.9779446207447693,
+      "delta": -0.02205537925523071
      }
     },
     {
@@ -1382,13 +1842,13 @@
      "build": "prot-tank",
      "lead": "Retribution",
      "talent": "Divine Strength",
-     "pick": 72,
-     "change": "+Divine Strength 5; -Shield Specialization 1, Anticipation 2, Templar's Bulwark 1, One-Handed Weapon Specialization 1",
+     "pick": 71,
+     "change": "+Divine Strength 5; -Anticipation 2, Champion of the Light 3",
      "why": null,
      "raid": {
       "base": 1.0,
-      "swap": 0.9667168831118924,
-      "delta": -0.03328311688810759
+      "swap": 0.9533942490080225,
+      "delta": -0.0466057509919775
      }
     },
     {
@@ -1396,95 +1856,47 @@
      "entry": "prot-tank",
      "tank": true,
      "build": "opt-prot-tank-raid-tank",
-     "lead": "Retribution",
+     "lead": "Protection",
+     "talent": "Reckoning",
+     "pick": 91,
+     "change": "+Reckoning 5; -Improved Hammer of Justice 1, Conviction 2, Anticipation 2",
+     "why": null,
+     "raid": {
+      "base": 1.0,
+      "swap": 0.9977393315539684,
+      "delta": -0.0022606684460315662
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "prot-tank",
+     "tank": true,
+     "build": "opt-prot-tank-raid-tank",
+     "lead": "Protection",
+     "talent": "Sacred Duty",
+     "pick": 83,
+     "change": "+Sacred Duty 2; -Improved Hammer of Justice 1, Conviction 1",
+     "why": null,
+     "raid": {
+      "base": 1.0,
+      "swap": 0.9989054715544738,
+      "delta": -0.001094528445526155
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "prot-tank",
+     "tank": true,
+     "build": "opt-prot-tank-raid-tank",
+     "lead": "Protection",
      "talent": "Improved Judgement",
-     "pick": 94,
-     "change": "+Improved Judgement 2; -Benediction 2",
-     "why": null,
-     "raid": {
-      "base": 1.0,
-      "swap": 1.0177154482905473,
-      "delta": 0.017715448290547275
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "prot-tank",
-     "tank": true,
-     "build": "opt-prot-tank-raid-tank",
-     "lead": "Retribution",
-     "talent": "Seal of Command",
-     "pick": 83,
-     "change": "+Seal of Command 1; -Benediction 1",
-     "why": null,
-     "raid": {
-      "base": 1.0,
-      "swap": 0.9998287727566084,
-      "delta": -0.00017122724339158069
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "prot-tank",
-     "tank": true,
-     "build": "opt-prot-tank-raid-tank",
-     "lead": "Retribution",
-     "talent": "Pursuit of Justice",
-     "pick": 83,
-     "change": "+Pursuit of Justice 2; -Benediction 2",
-     "why": null,
-     "raid": {
-      "base": 1.0,
-      "swap": 0.9996901141613224,
-      "delta": -0.0003098858386776371
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "prot-tank",
-     "tank": true,
-     "build": "opt-prot-tank-raid-tank",
-     "lead": "Retribution",
-     "talent": "Improved Seals",
-     "pick": 79,
-     "change": null,
-     "why": "not tested: no single point can come out without breaking tier gating or a prerequisite",
-     "raid": {
-      "base": 1.0,
-      "swap": null,
-      "delta": null
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "prot-tank",
-     "tank": true,
-     "build": "opt-prot-tank-raid-tank",
-     "lead": "Retribution",
-     "talent": "Two-Handed Weapon Specialization",
-     "pick": 78,
-     "change": "+Two-Handed Weapon Specialization 3; -Benediction 2, Shield Specialization 1",
-     "why": null,
-     "raid": {
-      "base": 1.0,
-      "swap": 0.9960091081920338,
-      "delta": -0.00399089180796619
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "prot-tank",
-     "tank": true,
-     "build": "opt-prot-tank-raid-tank",
-     "lead": "Retribution",
-     "talent": "Divine Strength",
      "pick": 72,
-     "change": "+Divine Strength 5; -Shield Specialization 1, Anticipation 2, Templar's Bulwark 1, One-Handed Weapon Specialization 1",
+     "change": "+Improved Judgement 2; -Improved Hammer of Justice 1, Conviction 1",
      "why": null,
      "raid": {
       "base": 1.0,
-      "swap": 0.9667168831118924,
-      "delta": -0.03328311688810759
+      "swap": 1.012106998748238,
+      "delta": 0.012106998748238063
      }
     }
    ],
@@ -1495,18 +1907,18 @@
      "build": "opt-ret-dps-leveling-st",
      "lead": "Retribution",
      "talent": "Benediction",
-     "pick": 90,
-     "change": "+Benediction 5; -Purifying Power 2, Deflection 3",
+     "pick": 89,
+     "change": "+Benediction 5; -Deflection 5",
      "why": null,
-     "base": 28.34876778847896,
-     "swap": 28.30035301298083,
-     "delta": -0.0017078264515542063,
+     "base": 28.5879531205258,
+     "swap": 28.489188050211123,
+     "delta": -0.0034547793575246954,
      "levels": {
-      "20": -0.015301695407175742,
-      "30": 0.0008674444995540043,
-      "40": 0.006971014859667557,
-      "50": -0.0034066998857593678,
-      "60": -0.0037727970487693163
+      "20": -0.0158573813428885,
+      "30": 0.0008528664752684989,
+      "40": 0.0014021800271586393,
+      "50": -0.009361858856770877,
+      "60": -0.0009074543950211567
      }
     }
    ]
@@ -1519,81 +1931,39 @@
      "tank": false,
      "build": "opt-shadow-dps-raid-dps",
      "lead": "Shadow",
+     "talent": "Shadow Reach",
+     "pick": 91,
+     "change": "+Shadow Reach 2; -Shadow Affinity 2",
+     "why": null,
+     "dummy": {
+      "base": 592.1746885141658,
+      "swap": 592.1746885141658,
+      "delta": 0.0
+     },
+     "raid": {
+      "base": 697.6263617569974,
+      "swap": 697.6263617569974,
+      "delta": 0.0
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "shadow-dps",
+     "tank": false,
+     "build": "opt-shadow-dps-raid-dps",
+     "lead": "Shadow",
      "talent": "Improved Power Word: Shield",
-     "pick": 81,
-     "change": "+Improved Power Word: Shield 3; -Power in Light 3",
+     "pick": 82,
+     "change": "+Improved Power Word: Shield 3; -Silent Resolve 3",
      "why": null,
      "dummy": {
-      "base": 554.2201727660934,
-      "swap": 554.2201727660934,
+      "base": 592.1746885141658,
+      "swap": 592.1746885141658,
       "delta": 0.0
      },
      "raid": {
-      "base": 636.2286026000265,
-      "swap": 636.2286026000265,
-      "delta": 0.0
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "shadow-dps",
-     "tank": false,
-     "build": "opt-shadow-dps-raid-dps",
-     "lead": "Shadow",
-     "talent": "Early Demise",
-     "pick": 74,
-     "change": "+Early Demise 2; -Mental Strength 2",
-     "why": null,
-     "dummy": {
-      "base": 554.2201727660934,
-      "swap": 555.0239254649882,
-      "delta": 0.0014502407858656419
-     },
-     "raid": {
-      "base": 636.2286026000265,
-      "swap": 636.6750485578043,
-      "delta": 0.0007017068329737697
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "shadow-dps",
-     "tank": false,
-     "build": "opt-shadow-dps-raid-dps",
-     "lead": "Shadow",
-     "talent": "Inner Focus",
-     "pick": 73,
-     "change": "+Inner Focus 1; -Power in Light 1",
-     "why": null,
-     "dummy": {
-      "base": 554.2201727660934,
-      "swap": 545.9843341381263,
-      "delta": -0.0148602288993962
-     },
-     "raid": {
-      "base": 636.2286026000265,
-      "swap": 627.7424126844787,
-      "delta": -0.01333827162260226
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "shadow-dps",
-     "tank": false,
-     "build": "opt-shadow-dps-raid-dps",
-     "lead": "Shadow",
-     "talent": "Silence",
-     "pick": 72,
-     "change": "+Silence 1; -Shadow Affinity 1",
-     "why": null,
-     "dummy": {
-      "base": 554.2201727660934,
-      "swap": 554.2201727660934,
-      "delta": 0.0
-     },
-     "raid": {
-      "base": 636.2286026000265,
-      "swap": 636.2286026000265,
+      "base": 697.6263617569974,
+      "swap": 697.6263617569974,
       "delta": 0.0
      }
     }
@@ -1608,9 +1978,9 @@
      "pick": 88,
      "change": "+Devouring Contagion 2; -Meditation 2",
      "why": null,
-     "base": 26.03653754795574,
-     "swap": 26.18284797542476,
-     "delta": 0.005619427206844829,
+     "base": 25.98984194955699,
+     "swap": 26.13615237702602,
+     "delta": 0.00562952355589541,
      "levels": {
       "20": 0.0,
       "30": 0.0,
@@ -1628,14 +1998,14 @@
      "pick": 83,
      "change": "+Improved Mind Blast 5; -Meditation 2, Spirit Tap 3",
      "why": null,
-     "base": 26.03653754795574,
-     "swap": 28.85891127628478,
-     "delta": 0.10840050153099723,
+     "base": 25.98984194955699,
+     "swap": 28.808532406837532,
+     "delta": 0.10845354360950976,
      "levels": {
       "20": 0.0,
-      "30": 0.10507214617622007,
-      "40": 0.13989953864495508,
-      "50": 0.13048489543985475,
+      "30": 0.10533930493215204,
+      "40": 0.13716953338374172,
+      "50": 0.1325491344262577,
       "60": 0.132932135643701
      }
     },
@@ -1648,14 +2018,14 @@
      "pick": 94,
      "change": "+Improved Shadow Word: Pain 2; -Spirit Tap 1, Improved Power Word: Shield 1",
      "why": null,
-     "base": 29.613001847047407,
-     "swap": 30.20501415685659,
-     "delta": 0.019991634514695766,
+     "base": 29.57220178973457,
+     "swap": 30.177508106668938,
+     "delta": 0.020468760535256703,
      "levels": {
       "20": 0.0,
       "30": 0.0,
-      "40": 0.03331237819043498,
-      "50": 0.03467986891293329,
+      "40": 0.03639022220566446,
+      "50": 0.03426091114677554,
       "60": 0.023211984582632628
      }
     },
@@ -1668,16 +2038,26 @@
      "pick": 88,
      "change": "+Devouring Contagion 2; -Spirit Tap 1, Improved Power Word: Shield 1",
      "why": null,
-     "base": 29.613001847047407,
-     "swap": 30.17774821161555,
-     "delta": 0.019070892153557617,
+     "base": 29.57220178973457,
+     "swap": 30.12668286112954,
+     "delta": 0.018750077364460882,
      "levels": {
       "20": 0.0,
       "30": 0.0,
-      "40": 0.03433325124092024,
-      "50": 0.03366378484146226,
+      "40": 0.03309765600717496,
+      "50": 0.03325418909337108,
       "60": 0.019825251110870745
      }
+    },
+    {
+     "scenario": "leveling",
+     "spec": "shadow-dps",
+     "build": "opt-shadow-dps-leveling-st",
+     "lead": "Shadow",
+     "talent": "Meditation",
+     "pick": 74,
+     "change": null,
+     "why": "not tested: no single point can come out without breaking tier gating or a prerequisite"
     },
     {
      "scenario": "leveling",
@@ -1694,28 +2074,18 @@
      "spec": "shadow-dps",
      "build": "opt-shadow-dps-leveling-st",
      "lead": "Shadow",
-     "talent": "Meditation",
-     "pick": 73,
-     "change": null,
-     "why": "not tested: no single point can come out without breaking tier gating or a prerequisite"
-    },
-    {
-     "scenario": "leveling",
-     "spec": "shadow-dps",
-     "build": "opt-shadow-dps-leveling-st",
-     "lead": "Shadow",
      "talent": "Silence",
      "pick": 72,
      "change": "+Silence 1; -Spirit Tap 1",
      "why": null,
-     "base": 29.613001847047407,
-     "swap": 30.20501415685659,
-     "delta": 0.019991634514695766,
+     "base": 29.57220178973457,
+     "swap": 30.177508106668938,
+     "delta": 0.020468760535256703,
      "levels": {
       "20": 0.0,
       "30": 0.0,
-      "40": 0.03331237819043498,
-      "50": 0.03467986891293329,
+      "40": 0.03639022220566446,
+      "50": 0.03426091114677554,
       "60": 0.023211984582632628
      }
     }
@@ -1727,6 +2097,48 @@
      "scenario": "raid",
      "entry": "combat-swords-raid",
      "tank": false,
+     "build": "combat-swords-raid",
+     "lead": "Combat",
+     "talent": "Endurance",
+     "pick": 89,
+     "change": "+Endurance 2; -Improved Expose Armor 2",
+     "why": null,
+     "dummy": {
+      "base": 409.00115302867937,
+      "swap": 382.24561446666524,
+      "delta": -0.06541678028017195
+     },
+     "raid": {
+      "base": 702.6946615232414,
+      "swap": 702.6946615232414,
+      "delta": 0.0
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "combat-swords-raid",
+     "tank": false,
+     "build": "combat-swords-raid",
+     "lead": "Combat",
+     "talent": "Improved Sprint",
+     "pick": 77,
+     "change": "+Improved Sprint 2; -Improved Expose Armor 2",
+     "why": null,
+     "dummy": {
+      "base": 409.00115302867937,
+      "swap": 382.24561446666524,
+      "delta": -0.06541678028017195
+     },
+     "raid": {
+      "base": 702.6946615232414,
+      "swap": 702.6946615232414,
+      "delta": 0.0
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "combat-swords-raid",
+     "tank": false,
      "build": "opt-combat-swords-raid-raid-dps",
      "lead": "Combat",
      "talent": "Endurance",
@@ -1734,13 +2146,13 @@
      "change": "+Endurance 2; -Lightning Reflexes 2",
      "why": null,
      "dummy": {
-      "base": 381.3861534419448,
-      "swap": 381.3861534419448,
+      "base": 390.9738020925567,
+      "swap": 390.9738020925567,
       "delta": 0.0
      },
      "raid": {
-      "base": 708.1328909541879,
-      "swap": 708.1328909541879,
+      "base": 703.6942991784049,
+      "swap": 703.6942991784049,
       "delta": 0.0
      }
     },
@@ -1751,17 +2163,38 @@
      "build": "opt-combat-swords-raid-raid-dps",
      "lead": "Combat",
      "talent": "Improved Sprint",
-     "pick": 76,
+     "pick": 77,
      "change": "+Improved Sprint 2; -Lightning Reflexes 2",
      "why": null,
      "dummy": {
-      "base": 381.3861534419448,
-      "swap": 381.3861534419448,
+      "base": 390.9738020925567,
+      "swap": 390.9738020925567,
       "delta": 0.0
      },
      "raid": {
-      "base": 708.1328909541879,
-      "swap": 708.1328909541879,
+      "base": 703.6942991784049,
+      "swap": 703.6942991784049,
+      "delta": 0.0
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "combat-daggers-raid",
+     "tank": false,
+     "build": "combat-daggers-raid",
+     "lead": "Combat",
+     "talent": "Endurance",
+     "pick": 89,
+     "change": "+Endurance 2; -Lightning Reflexes 2",
+     "why": null,
+     "dummy": {
+      "base": 403.8042234191971,
+      "swap": 403.8042234191971,
+      "delta": 0.0
+     },
+     "raid": {
+      "base": 728.335814691599,
+      "swap": 728.335814691599,
       "delta": 0.0
      }
     },
@@ -1776,13 +2209,76 @@
      "change": "+Improved Sinister Strike 2; -Lightning Reflexes 2",
      "why": null,
      "dummy": {
-      "base": 410.06167150344476,
-      "swap": 410.06167150344476,
+      "base": 403.8042234191971,
+      "swap": 403.8042234191971,
       "delta": 0.0
      },
      "raid": {
-      "base": 732.1016365112635,
-      "swap": 732.1016365112635,
+      "base": 728.335814691599,
+      "swap": 728.335814691599,
+      "delta": 0.0
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "combat-daggers-raid",
+     "tank": false,
+     "build": "combat-daggers-raid",
+     "lead": "Combat",
+     "talent": "Improved Sprint",
+     "pick": 77,
+     "change": "+Improved Sprint 2; -Lightning Reflexes 2",
+     "why": null,
+     "dummy": {
+      "base": 403.8042234191971,
+      "swap": 403.8042234191971,
+      "delta": 0.0
+     },
+     "raid": {
+      "base": 728.335814691599,
+      "swap": 728.335814691599,
+      "delta": 0.0
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "combat-daggers-raid",
+     "tank": false,
+     "build": "opt-combat-daggers-raid-raid-dps",
+     "lead": "Combat",
+     "talent": "Endurance",
+     "pick": 89,
+     "change": "+Endurance 2; -Lightning Reflexes 2",
+     "why": null,
+     "dummy": {
+      "base": 424.10492399817923,
+      "swap": 424.10492399817923,
+      "delta": 0.0
+     },
+     "raid": {
+      "base": 713.390427447216,
+      "swap": 713.390427447216,
+      "delta": 0.0
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "combat-daggers-raid",
+     "tank": false,
+     "build": "opt-combat-daggers-raid-raid-dps",
+     "lead": "Combat",
+     "talent": "Improved Sinister Strike",
+     "pick": 86,
+     "change": "+Improved Sinister Strike 2; -Lightning Reflexes 2",
+     "why": null,
+     "dummy": {
+      "base": 424.10492399817923,
+      "swap": 424.10492399817923,
+      "delta": 0.0
+     },
+     "raid": {
+      "base": 713.390427447216,
+      "swap": 713.390427447216,
       "delta": 0.0
      }
     },
@@ -1793,17 +2289,80 @@
      "build": "opt-combat-daggers-raid-raid-dps",
      "lead": "Combat",
      "talent": "Improved Sprint",
-     "pick": 76,
-     "change": "+Improved Sprint 2; -Improved Sinister Strike 2",
+     "pick": 77,
+     "change": "+Improved Sprint 2; -Lightning Reflexes 2",
      "why": null,
      "dummy": {
-      "base": 413.72010315315674,
-      "swap": 413.72010315315674,
+      "base": 424.10492399817923,
+      "swap": 424.10492399817923,
       "delta": 0.0
      },
      "raid": {
-      "base": 741.9560524369863,
-      "swap": 741.9560524369863,
+      "base": 713.390427447216,
+      "swap": 713.390427447216,
+      "delta": 0.0
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "combat-daggers-raid",
+     "tank": false,
+     "build": "combat-ml-raid",
+     "lead": "Combat",
+     "talent": "Endurance",
+     "pick": 89,
+     "change": "+Endurance 2; -Lightning Reflexes 2",
+     "why": null,
+     "dummy": {
+      "base": 406.4631735117534,
+      "swap": 406.4631735117534,
+      "delta": 0.0
+     },
+     "raid": {
+      "base": 735.2560485259269,
+      "swap": 735.2560485259269,
+      "delta": 0.0
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "combat-daggers-raid",
+     "tank": false,
+     "build": "combat-ml-raid",
+     "lead": "Combat",
+     "talent": "Improved Sinister Strike",
+     "pick": 86,
+     "change": "+Improved Sinister Strike 2; -Lightning Reflexes 2",
+     "why": null,
+     "dummy": {
+      "base": 406.4631735117534,
+      "swap": 406.4631735117534,
+      "delta": 0.0
+     },
+     "raid": {
+      "base": 735.2560485259269,
+      "swap": 735.2560485259269,
+      "delta": 0.0
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "combat-daggers-raid",
+     "tank": false,
+     "build": "combat-ml-raid",
+     "lead": "Combat",
+     "talent": "Improved Sprint",
+     "pick": 77,
+     "change": "+Improved Sprint 2; -Lightning Reflexes 2",
+     "why": null,
+     "dummy": {
+      "base": 406.4631735117534,
+      "swap": 406.4631735117534,
+      "delta": 0.0
+     },
+     "raid": {
+      "base": 735.2560485259269,
+      "swap": 735.2560485259269,
       "delta": 0.0
      }
     }
@@ -1818,14 +2377,14 @@
      "pick": 96,
      "change": "+Lethality 5; -Improved Gouge 3, Improved Slice and Dice 2",
      "why": null,
-     "base": 25.80320089037695,
-     "swap": 25.627521644274374,
-     "delta": -0.006808428413549783,
+     "base": 25.74514535979132,
+     "swap": 25.541768375411465,
+     "delta": -0.00789962462971705,
      "levels": {
       "20": 0.0,
       "30": 0.0,
-      "40": -0.008391325114485593,
-      "50": -0.008146606217505403,
+      "40": -0.009420760273142537,
+      "50": -0.011393522273986934,
       "60": -0.008914165787681116
      }
     },
@@ -1835,17 +2394,17 @@
      "build": "leveling-combat-swords",
      "lead": "Assassination",
      "talent": "Ruthlessness",
-     "pick": 91,
+     "pick": 92,
      "change": "+Ruthlessness 3; -Improved Gouge 3",
      "why": null,
-     "base": 25.80320089037695,
-     "swap": 25.772028440434166,
-     "delta": -0.0012080846122625166,
+     "base": 25.74514535979132,
+     "swap": 25.699977062253765,
+     "delta": -0.0017544394061995705,
      "levels": {
       "20": 0.0,
       "30": 0.0,
-      "40": 0.001481885246546577,
-      "50": 0.0002159816868847475,
+      "40": 0.00178866987877635,
+      "50": -0.002050992559589959,
       "60": -0.004847458173417918
      }
     },
@@ -1858,14 +2417,14 @@
      "pick": 79,
      "change": "+Opportunity 2; -Improved Gouge 1, Dual Wield Specialization 1",
      "why": null,
-     "base": 25.80320089037695,
-     "swap": 25.662196761433403,
-     "delta": -0.005464598347414085,
+     "base": 25.74514535979132,
+     "swap": 25.583482172028237,
+     "delta": -0.006279365896126099,
      "levels": {
       "20": 0.0,
       "30": 0.0,
-      "40": -0.009019980392144245,
-      "50": -0.01751933985470422,
+      "40": -0.009303744090834898,
+      "50": -0.020314672989704352,
       "60": 0.0033199805886574563
      }
     },
@@ -1875,18 +2434,38 @@
      "build": "leveling-combat-swords",
      "lead": "Assassination",
      "talent": "Puncturing Wounds",
-     "pick": 72,
+     "pick": 73,
      "change": "+Puncturing Wounds 3; -Improved Gouge 1, Improved Sprint 2",
      "why": null,
-     "base": 25.80320089037695,
-     "swap": 25.81702316336478,
-     "delta": 0.000535680555546314,
+     "base": 25.74514535979132,
+     "swap": 25.74845215440007,
+     "delta": 0.00012844342350915028,
      "levels": {
       "20": 0.0,
       "30": 0.0,
       "40": 0.0,
-      "50": 0.0020106472139815867,
+      "50": 0.00048053308599360633,
       "60": 0.0
+     }
+    },
+    {
+     "scenario": "leveling",
+     "spec": "combat-swords-raid",
+     "build": "opt-combat-swords-raid-leveling-st",
+     "lead": "Assassination",
+     "talent": "Ruthlessness",
+     "pick": 92,
+     "change": "+Ruthlessness 3; -Improved Gouge 1, Lethality 2",
+     "why": null,
+     "base": 25.3876408227675,
+     "swap": 25.407806052637504,
+     "delta": 0.0007942931763835759,
+     "levels": {
+      "20": 0.0,
+      "30": 0.0,
+      "40": 0.0017593963255833067,
+      "50": 0.005573524605262836,
+      "60": -0.003240611304566543
      }
     },
     {
@@ -1898,9 +2477,9 @@
      "pick": 92,
      "change": "+Mutilate 1; -Vile Poisons 1",
      "why": null,
-     "base": 25.47589844885759,
-     "swap": 25.499208448857228,
-     "delta": 0.0009149824508225546,
+     "base": 25.3876408227675,
+     "swap": 25.41095082276714,
+     "delta": 0.0009181632969510467,
      "levels": {
       "20": 0.0,
       "30": 0.0,
@@ -1914,38 +2493,18 @@
      "spec": "combat-swords-raid",
      "build": "opt-combat-swords-raid-leveling-st",
      "lead": "Assassination",
-     "talent": "Ruthlessness",
-     "pick": 91,
-     "change": "+Ruthlessness 3; -Improved Gouge 1, Lethality 2",
-     "why": null,
-     "base": 25.47589844885759,
-     "swap": 25.47788605263677,
-     "delta": 7.801898657944228e-05,
-     "levels": {
-      "20": 0.0,
-      "30": 0.0,
-      "40": 0.0020622546184683177,
-      "50": 0.0026403871245739285,
-      "60": -0.003240611304566543
-     }
-    },
-    {
-     "scenario": "leveling",
-     "spec": "combat-swords-raid",
-     "build": "opt-combat-swords-raid-leveling-st",
-     "lead": "Assassination",
      "talent": "Puncturing Wounds",
-     "pick": 72,
+     "pick": 73,
      "change": "+Puncturing Wounds 3; -Lightning Reflexes 3",
      "why": null,
-     "base": 25.47589844885759,
-     "swap": 25.595761338863753,
-     "delta": 0.0047049524179407776,
+     "base": 25.3876408227675,
+     "swap": 25.53304927407162,
+     "delta": 0.005727529088630945,
      "levels": {
       "20": 0.0,
-      "30": 0.004705106963384997,
-      "40": 0.009840867329270475,
-      "50": 0.001291313995149812,
+      "30": 0.004747997118529579,
+      "40": 0.009864146929855488,
+      "50": 0.005069515504962929,
       "60": 0.0053392929113154075
      }
     }
@@ -1964,14 +2523,14 @@
      "change": "+Elemental Reach 2; -Reverberation 2",
      "why": null,
      "dummy": {
-      "base": 396.38570988218504,
-      "swap": 396.08803740247515,
-      "delta": -0.0007509667283372989
+      "base": 376.86306105765823,
+      "swap": 377.2561545634333,
+      "delta": 0.001043067220947158
      },
      "raid": {
-      "base": 504.6079062770113,
-      "swap": 504.38783296173636,
-      "delta": -0.0004361273625271833
+      "base": 517.6443761376742,
+      "swap": 518.185718237243,
+      "delta": 0.0010457799302447945
      }
     },
     {
@@ -1981,81 +2540,18 @@
      "build": "elemental-raid-dps",
      "lead": "Elemental",
      "talent": "Lava Burst",
-     "pick": 81,
+     "pick": 82,
      "change": null,
      "why": "not tested: no single point can come out without breaking tier gating or a prerequisite",
      "dummy": {
-      "base": 396.38570988218504,
+      "base": 376.86306105765823,
       "swap": null,
       "delta": null
      },
      "raid": {
-      "base": 504.6079062770113,
+      "base": 517.6443761376742,
       "swap": null,
       "delta": null
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "elemental-dps",
-     "tank": false,
-     "build": "elemental-raid-dps",
-     "lead": "Elemental",
-     "talent": "Eye of the Storm",
-     "pick": 70,
-     "change": "+Eye of the Storm 3; -Reverberation 3",
-     "why": null,
-     "dummy": {
-      "base": 396.38570988218504,
-      "swap": 395.4525792523026,
-      "delta": -0.0023540975535162323
-     },
-     "raid": {
-      "base": 504.6079062770113,
-      "swap": 503.553946245331,
-      "delta": -0.0020886712605364677
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "elemental-dps",
-     "tank": false,
-     "build": "opt-elemental-dps-raid-dps",
-     "lead": "Elemental",
-     "talent": "Elemental Reach",
-     "pick": 86,
-     "change": "+Elemental Reach 2; -Reverberation 1, Elemental Warding 1",
-     "why": null,
-     "dummy": {
-      "base": 396.7150515220295,
-      "swap": 397.840370970329,
-      "delta": 0.002836593781814223
-     },
-     "raid": {
-      "base": 496.259882084959,
-      "swap": 498.086546506961,
-      "delta": 0.0036808625640412096
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "elemental-dps",
-     "tank": false,
-     "build": "opt-elemental-dps-raid-dps",
-     "lead": "Elemental",
-     "talent": "Eye of the Storm",
-     "pick": 70,
-     "change": "+Eye of the Storm 3; -Reverberation 1, Elemental Warding 2",
-     "why": null,
-     "dummy": {
-      "base": 396.7150515220295,
-      "swap": 397.840370970329,
-      "delta": 0.002836593781814223
-     },
-     "raid": {
-      "base": 496.259882084959,
-      "swap": 498.086546506961,
-      "delta": 0.0036808625640412096
      }
     },
     {
@@ -2065,18 +2561,18 @@
      "build": "enhancement-raid-dps",
      "lead": "Enhancement",
      "talent": "Improved Stormstrike",
-     "pick": 95,
-     "change": "+Improved Stormstrike 2; -Ancestral Knowledge 2",
+     "pick": 96,
+     "change": "+Improved Stormstrike 2; -Elemental Weapons 2",
      "why": null,
      "dummy": {
-      "base": 411.4170535502917,
-      "swap": 408.93354071158524,
-      "delta": -0.006036484917859353
+      "base": 386.97815295914097,
+      "swap": 383.44735479223823,
+      "delta": -0.009124024547389697
      },
      "raid": {
-      "base": 767.2182662611424,
-      "swap": 764.8733518846393,
-      "delta": -0.003056384968426862
+      "base": 683.3091220795018,
+      "swap": 679.4555172028311,
+      "delta": -0.005639621588751975
      }
     },
     {
@@ -2087,17 +2583,17 @@
      "lead": "Enhancement",
      "talent": "Spirit Weapons",
      "pick": 82,
-     "change": "+Spirit Weapons 1; -Ancestral Knowledge 1",
+     "change": "+Spirit Weapons 1; -Elemental Weapons 1",
      "why": null,
      "dummy": {
-      "base": 411.4170535502917,
-      "swap": 410.0849721364586,
-      "delta": -0.003237788522225893
+      "base": 386.97815295914097,
+      "swap": 385.7185754946579,
+      "delta": -0.003254905877376646
      },
      "raid": {
-      "base": 767.2182662611424,
-      "swap": 766.0426034901255,
-      "delta": -0.0015323706730109299
+      "base": 683.3091220795018,
+      "swap": 681.2904312923367,
+      "delta": -0.002954286313376908
      }
     },
     {
@@ -2107,18 +2603,18 @@
      "build": "enhancement-raid-dps",
      "lead": "Enhancement",
      "talent": "Improved Ghost Wolf",
-     "pick": 75,
-     "change": "+Improved Ghost Wolf 2; -Ancestral Knowledge 2",
+     "pick": 79,
+     "change": "+Improved Ghost Wolf 2; -Elemental Weapons 2",
      "why": null,
      "dummy": {
-      "base": 411.4170535502917,
-      "swap": 408.8645493044784,
-      "delta": -0.006204177060203708
+      "base": 386.97815295914097,
+      "swap": 384.3621074559839,
+      "delta": -0.006760189129935923
      },
      "raid": {
-      "base": 767.2182662611424,
-      "swap": 765.1452179041037,
-      "delta": -0.0027020320659741914
+      "base": 683.3091220795018,
+      "swap": 679.1164565984669,
+      "delta": -0.0061358254200900575
      }
     },
     {
@@ -2128,18 +2624,18 @@
      "build": "opt-enhancement-dps-raid-dps",
      "lead": "Enhancement",
      "talent": "Improved Stormstrike",
-     "pick": 95,
-     "change": "+Improved Stormstrike 2; -Ancestral Knowledge 2",
+     "pick": 96,
+     "change": "+Improved Stormstrike 2; -Elemental Weapons 2",
      "why": null,
      "dummy": {
-      "base": 415.3747463643,
-      "swap": 412.87288820097797,
-      "delta": -0.0060231349768380404
+      "base": 391.99718565844137,
+      "swap": 388.4911145267493,
+      "delta": -0.008944123223239231
      },
      "raid": {
-      "base": 773.882973583037,
-      "swap": 771.7816603818226,
-      "delta": -0.0027152854797741766
+      "base": 693.8478771699266,
+      "swap": 689.7066545622113,
+      "delta": -0.005968487825611879
      }
     },
     {
@@ -2150,17 +2646,38 @@
      "lead": "Enhancement",
      "talent": "Spirit Weapons",
      "pick": 82,
-     "change": "+Spirit Weapons 1; -Ancestral Knowledge 1",
+     "change": "+Spirit Weapons 1; -Elemental Weapons 1",
      "why": null,
      "dummy": {
-      "base": 415.3747463643,
-      "swap": 414.08778047600447,
-      "delta": -0.003098324824896359
+      "base": 391.99718565844137,
+      "swap": 390.7497046922479,
+      "delta": -0.003182372251214094
      },
      "raid": {
-      "base": 773.882973583037,
-      "swap": 772.7259368513447,
-      "delta": -0.0014951055536669422
+      "base": 693.8478771699266,
+      "swap": 691.8505858002817,
+      "delta": -0.0028785724297255566
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "enhancement-dps",
+     "tank": false,
+     "build": "opt-enhancement-dps-raid-dps",
+     "lead": "Enhancement",
+     "talent": "Improved Ghost Wolf",
+     "pick": 79,
+     "change": "+Improved Ghost Wolf 2; -Elemental Weapons 2",
+     "why": null,
+     "dummy": {
+      "base": 391.99718565844137,
+      "swap": 389.4062636517326,
+      "delta": -0.006609542367904342
+     },
+     "raid": {
+      "base": 693.8478771699266,
+      "swap": 689.6996566329717,
+      "delta": -0.005978573507891549
      }
     },
     {
@@ -2170,39 +2687,144 @@
      "build": "opt-enhancement-dps-raid-dps",
      "lead": "Enhancement",
      "talent": "Concussion",
-     "pick": 78,
-     "change": "+Concussion 5; -Convection 5",
+     "pick": 76,
+     "change": "+Concussion 5; -Elemental Devastation 2, Tidal Focus 3",
      "why": null,
      "dummy": {
-      "base": 415.3747463643,
-      "swap": 408.31699341798856,
-      "delta": -0.01699129041446712
+      "base": 391.99718565844137,
+      "swap": 386.5535328774013,
+      "delta": -0.013886969040087127
      },
      "raid": {
-      "base": 773.882973583037,
-      "swap": 776.3698987999408,
-      "delta": 0.003213567557106778
+      "base": 693.8478771699266,
+      "swap": 677.2915684598512,
+      "delta": -0.023861582999439968
      }
     },
     {
      "scenario": "raid",
      "entry": "enhancement-dps",
      "tank": false,
-     "build": "opt-enhancement-dps-raid-dps",
+     "build": "enhancement-ml-raid",
      "lead": "Enhancement",
-     "talent": "Improved Ghost Wolf",
-     "pick": 75,
-     "change": "+Improved Ghost Wolf 2; -Ancestral Knowledge 2",
+     "talent": "Spirit Weapons",
+     "pick": 82,
+     "change": "+Spirit Weapons 1; -Improved Fire Nova 1",
      "why": null,
      "dummy": {
-      "base": 415.3747463643,
-      "swap": 412.8584826949772,
-      "delta": -0.00605781572266284
+      "base": 389.86983374738975,
+      "swap": 389.86983374738975,
+      "delta": 0.0
      },
      "raid": {
-      "base": 773.882973583037,
-      "swap": 771.8472688366692,
-      "delta": -0.0026305072160234255
+      "base": 738.9901617096934,
+      "swap": 731.1685826319908,
+      "delta": -0.010584145071169782
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "enhancement-dps",
+     "tank": false,
+     "build": "enhancement-ml-raid",
+     "lead": "Enhancement",
+     "talent": "Improved Ghost Wolf",
+     "pick": 79,
+     "change": "+Improved Ghost Wolf 2; -Improved Fire Nova 2",
+     "why": null,
+     "dummy": {
+      "base": 389.86983374738975,
+      "swap": 389.86983374738975,
+      "delta": 0.0
+     },
+     "raid": {
+      "base": 738.9901617096934,
+      "swap": 712.0440289322374,
+      "delta": -0.03646345265966011
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "enhancement-dps",
+     "tank": false,
+     "build": "enhancement-ml-raid",
+     "lead": "Enhancement",
+     "talent": "Concussion",
+     "pick": 76,
+     "change": "+Concussion 5; -Improved Fire Nova 2, Elemental Weapons 1, Reverberation 2",
+     "why": null,
+     "dummy": {
+      "base": 389.86983374738975,
+      "swap": 391.24814688498935,
+      "delta": 0.003535316196052962
+     },
+     "raid": {
+      "base": 738.9901617096934,
+      "swap": 703.8031725942574,
+      "delta": -0.04761496287586442
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "enhancement-dps",
+     "tank": false,
+     "build": "elemental-enhancement-ml-raid",
+     "lead": "Enhancement",
+     "talent": "Rage of the Farseer",
+     "pick": 86,
+     "change": null,
+     "why": "not tested: no single point can come out without breaking tier gating or a prerequisite",
+     "dummy": {
+      "base": 366.59582745706876,
+      "swap": null,
+      "delta": null
+     },
+     "raid": {
+      "base": 690.3466051511072,
+      "swap": null,
+      "delta": null
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "enhancement-dps",
+     "tank": false,
+     "build": "elemental-enhancement-ml-raid",
+     "lead": "Enhancement",
+     "talent": "Spirit Weapons",
+     "pick": 82,
+     "change": "+Spirit Weapons 1; -Improved Fire Nova 1",
+     "why": null,
+     "dummy": {
+      "base": 366.59582745706876,
+      "swap": 366.59582745706876,
+      "delta": 0.0
+     },
+     "raid": {
+      "base": 690.3466051511072,
+      "swap": 683.66153699905,
+      "delta": -0.009683640220978451
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "enhancement-dps",
+     "tank": false,
+     "build": "elemental-enhancement-ml-raid",
+     "lead": "Enhancement",
+     "talent": "Improved Ghost Wolf",
+     "pick": 79,
+     "change": "+Improved Ghost Wolf 2; -Improved Fire Nova 2",
+     "why": null,
+     "dummy": {
+      "base": 366.59582745706876,
+      "swap": 366.59582745706876,
+      "delta": 0.0
+     },
+     "raid": {
+      "base": 690.3466051511072,
+      "swap": 668.5924059107481,
+      "delta": -0.031511995681643645
      }
     }
    ],
@@ -2213,17 +2835,17 @@
      "build": "leveling-enhancement",
      "lead": "Enhancement",
      "talent": "Improved Ghost Wolf",
-     "pick": 75,
+     "pick": 79,
      "change": "+Improved Ghost Wolf 2; -Elemental Weapons 2",
      "why": null,
-     "base": 32.987583235614714,
-     "swap": 33.194454793330216,
-     "delta": 0.006271194717051953,
+     "base": 33.34654717704565,
+     "swap": 33.581634264114214,
+     "delta": 0.007049817956276794,
      "levels": {
-      "20": 0.004389954371523563,
-      "30": -0.004317282145544943,
-      "40": 0.005786753666898958,
-      "50": 0.011749783255580626,
+      "20": 0.00028806272662107446,
+      "30": 0.005600971876501992,
+      "40": 0.006305715628690978,
+      "50": 0.010433790804998955,
       "60": 0.0067733330773760425
      }
     },
@@ -2233,17 +2855,17 @@
      "build": "leveling-enhancement",
      "lead": "Enhancement",
      "talent": "Elemental Devastation",
-     "pick": 74,
+     "pick": 73,
      "change": "+Elemental Devastation 3; -Elemental Weapons 2, Improved Stormstrike 1",
      "why": null,
-     "base": 32.987583235614714,
-     "swap": 33.07311377099997,
-     "delta": 0.0025928099907879254,
+     "base": 33.34654717704565,
+     "swap": 33.4039145543063,
+     "delta": 0.0017203393489606533,
      "levels": {
       "20": 0.0,
       "30": 0.0,
       "40": 0.0,
-      "50": 0.002554703975563566,
+      "50": -0.0007098426533206359,
       "60": 0.00572819354867482
      }
     },
@@ -2253,17 +2875,17 @@
      "build": "opt-enhancement-dps-leveling-st",
      "lead": "Enhancement",
      "talent": "Improved Stormstrike",
-     "pick": 95,
+     "pick": 96,
      "change": "+Improved Stormstrike 2; -Ancestral Knowledge 2",
      "why": null,
-     "base": 33.197480405325386,
-     "swap": 32.85017789986769,
-     "delta": -0.010461712793178868,
+     "base": 33.587423910069035,
+     "swap": 33.20296456674467,
+     "delta": -0.011446526662889145,
      "levels": {
       "20": 0.0,
       "30": 0.0,
-      "40": 0.0018132736065656907,
-      "50": -0.028613502695096993,
+      "40": 0.001696723858743976,
+      "50": -0.03254483658051355,
       "60": -0.009623230764668977
      }
     },
@@ -2276,14 +2898,14 @@
      "pick": 92,
      "change": "+Elemental Weapons 3; -Ancestral Knowledge 2, Reverberation 1",
      "why": null,
-     "base": 33.197480405325386,
-     "swap": 33.00515145107666,
-     "delta": -0.00579348046600181,
+     "base": 33.587423910069035,
+     "swap": 33.41913614768825,
+     "delta": -0.005010439705985803,
      "levels": {
       "20": 0.0,
       "30": 0.0,
-      "40": 0.0018132736065656907,
-      "50": -0.0075197518724920975,
+      "40": 0.001696723858743976,
+      "50": -0.004683079020420089,
       "60": -0.012434697941049788
      }
     },
@@ -2293,17 +2915,17 @@
      "build": "opt-enhancement-dps-leveling-st",
      "lead": "Enhancement",
      "talent": "Maelstrom Weapon",
-     "pick": 78,
+     "pick": 77,
      "change": "+Maelstrom Weapon 5; -Ancestral Knowledge 2, Reverberation 2, Anticipation 1",
      "why": null,
-     "base": 33.197480405325386,
-     "swap": 33.22089538431747,
-     "delta": 0.0007053239795973276,
+     "base": 33.587423910069035,
+     "swap": 33.566913837321366,
+     "delta": -0.0006106473900048259,
      "levels": {
       "20": 0.0,
       "30": 0.0,
-      "40": 0.0018132736065656907,
-      "50": 0.005386521862704052,
+      "40": 0.001696723858743976,
+      "50": 0.0004954435927735368,
       "60": -0.0032854717922801147
      }
     },
@@ -2313,12 +2935,12 @@
      "build": "opt-enhancement-dps-leveling-st",
      "lead": "Enhancement",
      "talent": "Elemental Devastation",
-     "pick": 74,
+     "pick": 73,
      "change": "+Elemental Devastation 3; -Reverberation 2, Call of Flame 1",
      "why": null,
-     "base": 33.197480405325386,
-     "swap": 33.31047432738719,
-     "delta": 0.003403689698200152,
+     "base": 33.587423910069035,
+     "swap": 33.70041783213084,
+     "delta": 0.0033641735181699772,
      "levels": {
       "20": 0.0,
       "30": 0.0,
@@ -2338,18 +2960,39 @@
      "build": "affliction-dot-raid",
      "lead": "Affliction",
      "talent": "Siphon Life",
-     "pick": 94,
-     "change": "+Siphon Life 1; -Improved Life Tap 1",
+     "pick": 95,
+     "change": "+Siphon Life 1; -Nightfall 1",
      "why": null,
      "dummy": {
-      "base": 571.8287186243072,
-      "swap": 562.832710728227,
-      "delta": -0.015731997367537942
+      "base": 650.2229364522133,
+      "swap": 640.2975074990982,
+      "delta": -0.015264655238510727
      },
      "raid": {
-      "base": 696.9372810215164,
-      "swap": 685.2955668243925,
-      "delta": -0.016704105970712813
+      "base": 755.6514036893116,
+      "swap": 746.8205530802722,
+      "delta": -0.011686407999673576
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "affliction-raid",
+     "tank": false,
+     "build": "affliction-dot-raid",
+     "lead": "Affliction",
+     "talent": "Demonic Embrace",
+     "pick": 82,
+     "change": "+Demonic Embrace 5; -Aftermath 3, Shadow Mastery 2",
+     "why": null,
+     "dummy": {
+      "base": 650.2229364522133,
+      "swap": 634.6321547122341,
+      "delta": -0.02397759424643897
+     },
+     "raid": {
+      "base": 755.6514036893116,
+      "swap": 738.5274495989364,
+      "delta": -0.02266118213606294
      }
     },
     {
@@ -2360,38 +3003,17 @@
      "lead": "Affliction",
      "talent": "Malediction",
      "pick": 80,
-     "change": "+Malediction 5; -Improved Life Tap 2, Aftermath 3",
+     "change": "+Malediction 5; -Nightfall 2, Amplify Curse 1, Aftermath 2",
      "why": null,
      "dummy": {
-      "base": 571.8287186243072,
-      "swap": 569.6285346759967,
-      "delta": -0.0038476275791178294
+      "base": 650.2229364522133,
+      "swap": 652.1534117397044,
+      "delta": 0.0029689436949491554
      },
      "raid": {
-      "base": 696.9372810215164,
-      "swap": 698.1960263132231,
-      "delta": 0.0018061098551964694
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "affliction-raid",
-     "tank": false,
-     "build": "affliction-dot-raid",
-     "lead": "Affliction",
-     "talent": "Demonic Embrace",
-     "pick": 79,
-     "change": "+Demonic Embrace 5; -Aftermath 3, Shadow Mastery 2",
-     "why": null,
-     "dummy": {
-      "base": 571.8287186243072,
-      "swap": 558.6906620460664,
-      "delta": -0.022975510236435737
-     },
-     "raid": {
-      "base": 696.9372810215164,
-      "swap": 680.9591202871818,
-      "delta": -0.022926253436916122
+      "base": 755.6514036893116,
+      "swap": 756.6069101628138,
+      "delta": 0.00126448051156558
      }
     },
     {
@@ -2401,18 +3023,81 @@
      "build": "affliction-dot-raid",
      "lead": "Affliction",
      "talent": "Improved Drains",
-     "pick": 73,
-     "change": "+Improved Drains 3; -Improved Life Tap 2, Aftermath 1",
+     "pick": 76,
+     "change": "+Improved Drains 3; -Nightfall 2, Amplify Curse 1",
      "why": null,
      "dummy": {
-      "base": 571.8287186243072,
-      "swap": 560.5687837641252,
-      "delta": -0.019691097165023153
+      "base": 650.2229364522133,
+      "swap": 643.2029543276996,
+      "delta": -0.010796269603801756
      },
      "raid": {
-      "base": 696.9372810215164,
-      "swap": 688.2574540848005,
-      "delta": -0.01245424398016648
+      "base": 755.6514036893116,
+      "swap": 747.061754538224,
+      "delta": -0.011367211268516586
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "affliction-raid",
+     "tank": false,
+     "build": "affliction-dot-raid",
+     "lead": "Affliction",
+     "talent": "Soul Siphon",
+     "pick": 75,
+     "change": "+Soul Siphon 3; -Nightfall 2, Amplify Curse 1",
+     "why": null,
+     "dummy": {
+      "base": 650.2229364522133,
+      "swap": 643.2029543276996,
+      "delta": -0.010796269603801756
+     },
+     "raid": {
+      "base": 755.6514036893116,
+      "swap": 747.061754538224,
+      "delta": -0.011367211268516586
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "affliction-raid",
+     "tank": false,
+     "build": "affliction-dot-raid",
+     "lead": "Affliction",
+     "talent": "Fel Vitality",
+     "pick": 72,
+     "change": null,
+     "why": "not tested: no single point can come out without breaking tier gating or a prerequisite",
+     "dummy": {
+      "base": 650.2229364522133,
+      "swap": null,
+      "delta": null
+     },
+     "raid": {
+      "base": 755.6514036893116,
+      "swap": null,
+      "delta": null
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "affliction-raid",
+     "tank": false,
+     "build": "affliction-dot-raid",
+     "lead": "Affliction",
+     "talent": "Demonic Sacrifice",
+     "pick": 72,
+     "change": null,
+     "why": "not tested: no single point can come out without breaking tier gating or a prerequisite",
+     "dummy": {
+      "base": 650.2229364522133,
+      "swap": null,
+      "delta": null
+     },
+     "raid": {
+      "base": 755.6514036893116,
+      "swap": null,
+      "delta": null
      }
     },
     {
@@ -2422,16 +3107,16 @@
      "build": "affliction-dot-raid",
      "lead": "Affliction",
      "talent": "Demonic Aegis",
-     "pick": 70,
+     "pick": 71,
      "change": null,
      "why": "not tested: no single point can come out without breaking tier gating or a prerequisite",
      "dummy": {
-      "base": 571.8287186243072,
+      "base": 650.2229364522133,
       "swap": null,
       "delta": null
      },
      "raid": {
-      "base": 696.9372810215164,
+      "base": 755.6514036893116,
       "swap": null,
       "delta": null
      }
@@ -2443,18 +3128,18 @@
      "build": "opt-affliction-raid-raid-dps",
      "lead": "Affliction",
      "talent": "Siphon Life",
-     "pick": 94,
-     "change": "+Siphon Life 1; -Improved Life Tap 1",
+     "pick": 95,
+     "change": "+Siphon Life 1; -Malediction 1",
      "why": null,
      "dummy": {
-      "base": 571.9403738902148,
-      "swap": 563.7521214901999,
-      "delta": -0.014316618958581606
+      "base": 655.1415151315357,
+      "swap": 644.5420133491382,
+      "delta": -0.016178949948347232
      },
      "raid": {
-      "base": 697.5594280675108,
-      "swap": 685.9056286206298,
-      "delta": -0.016706532774083738
+      "base": 760.8768658223904,
+      "swap": 751.3104415373415,
+      "delta": -0.01257289413669993
      }
     },
     {
@@ -2465,17 +3150,17 @@
      "lead": "Affliction",
      "talent": "Nightfall",
      "pick": 84,
-     "change": "+Nightfall 2; -Improved Life Tap 2",
+     "change": "+Nightfall 2; -Malediction 2",
      "why": null,
      "dummy": {
-      "base": 571.9403738902148,
-      "swap": 566.9701958418076,
-      "delta": -0.008690028323409149
+      "base": 655.1415151315357,
+      "swap": 655.4389873059832,
+      "delta": 0.00045405789066466085
      },
      "raid": {
-      "base": 697.5594280675108,
-      "swap": 695.760027650348,
-      "delta": -0.0025795657613686407
+      "base": 760.8768658223904,
+      "swap": 761.0898929033899,
+      "delta": 0.00027997576292349
      }
     },
     {
@@ -2485,18 +3170,18 @@
      "build": "opt-affliction-raid-raid-dps",
      "lead": "Affliction",
      "talent": "Demonic Embrace",
-     "pick": 79,
-     "change": "+Demonic Embrace 5; -Aftermath 3, Shadow Mastery 2",
+     "pick": 82,
+     "change": "+Demonic Embrace 5; -Cataclysm 3, Shadow Mastery 2",
      "why": null,
      "dummy": {
-      "base": 571.9403738902148,
-      "swap": 558.8098097748428,
-      "delta": -0.02295792483762016
+      "base": 655.1415151315357,
+      "swap": 636.2784264209441,
+      "delta": -0.02879238801834183
      },
      "raid": {
-      "base": 697.5594280675108,
-      "swap": 681.579109064953,
-      "delta": -0.02290889974325061
+      "base": 760.8768658223904,
+      "swap": 738.2663229670696,
+      "delta": -0.0297164283354604
      }
     },
     {
@@ -2506,18 +3191,81 @@
      "build": "opt-affliction-raid-raid-dps",
      "lead": "Affliction",
      "talent": "Improved Drains",
-     "pick": 73,
-     "change": "+Improved Drains 3; -Improved Life Tap 2, Malediction 1",
+     "pick": 76,
+     "change": "+Improved Drains 3; -Malediction 2, Amplify Curse 1",
      "why": null,
      "dummy": {
-      "base": 571.9403738902148,
-      "swap": 558.7491217033437,
-      "delta": -0.023064033925681904
+      "base": 655.1415151315357,
+      "swap": 647.4827783271255,
+      "delta": -0.011690202234966751
      },
      "raid": {
-      "base": 697.5594280675108,
-      "swap": 688.7142371639977,
-      "delta": -0.012680196908838925
+      "base": 760.8768658223904,
+      "swap": 752.6954883812084,
+      "delta": -0.010752564322400793
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "affliction-raid",
+     "tank": false,
+     "build": "opt-affliction-raid-raid-dps",
+     "lead": "Affliction",
+     "talent": "Soul Siphon",
+     "pick": 75,
+     "change": "+Soul Siphon 3; -Malediction 2, Amplify Curse 1",
+     "why": null,
+     "dummy": {
+      "base": 655.1415151315357,
+      "swap": 647.4827783271255,
+      "delta": -0.011690202234966751
+     },
+     "raid": {
+      "base": 760.8768658223904,
+      "swap": 752.6954883812084,
+      "delta": -0.010752564322400793
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "affliction-raid",
+     "tank": false,
+     "build": "opt-affliction-raid-raid-dps",
+     "lead": "Affliction",
+     "talent": "Fel Vitality",
+     "pick": 72,
+     "change": null,
+     "why": "not tested: no single point can come out without breaking tier gating or a prerequisite",
+     "dummy": {
+      "base": 655.1415151315357,
+      "swap": null,
+      "delta": null
+     },
+     "raid": {
+      "base": 760.8768658223904,
+      "swap": null,
+      "delta": null
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "affliction-raid",
+     "tank": false,
+     "build": "opt-affliction-raid-raid-dps",
+     "lead": "Affliction",
+     "talent": "Demonic Sacrifice",
+     "pick": 72,
+     "change": null,
+     "why": "not tested: no single point can come out without breaking tier gating or a prerequisite",
+     "dummy": {
+      "base": 655.1415151315357,
+      "swap": null,
+      "delta": null
+     },
+     "raid": {
+      "base": 760.8768658223904,
+      "swap": null,
+      "delta": null
      }
     },
     {
@@ -2527,16 +3275,16 @@
      "build": "opt-affliction-raid-raid-dps",
      "lead": "Affliction",
      "talent": "Demonic Aegis",
-     "pick": 70,
+     "pick": 71,
      "change": null,
      "why": "not tested: no single point can come out without breaking tier gating or a prerequisite",
      "dummy": {
-      "base": 571.9403738902148,
+      "base": 655.1415151315357,
       "swap": null,
       "delta": null
      },
      "raid": {
-      "base": 697.5594280675108,
+      "base": 760.8768658223904,
       "swap": null,
       "delta": null
      }
@@ -2548,18 +3296,18 @@
      "build": "destruction-fire-raid",
      "lead": "Affliction",
      "talent": "Siphon Life",
-     "pick": 94,
+     "pick": 95,
      "change": "+Siphon Life 1; -Amplify Curse 1",
      "why": null,
      "dummy": {
-      "base": 558.4961279189874,
-      "swap": 554.6408986275643,
-      "delta": -0.0069028755951954235
+      "base": 609.186986222099,
+      "swap": 606.7547438063489,
+      "delta": -0.003992604029238733
      },
      "raid": {
-      "base": 664.5792092990603,
-      "swap": 660.4446369210335,
-      "delta": -0.006221338736111748
+      "base": 692.9720889963984,
+      "swap": 690.4230935750337,
+      "delta": -0.003678352219143921
      }
     },
     {
@@ -2573,14 +3321,14 @@
      "change": "+Nightfall 2; -Amplify Curse 1, Improved Bane of Agony 1",
      "why": null,
      "dummy": {
-      "base": 558.4961279189874,
-      "swap": 554.3425499117823,
-      "delta": -0.007437075746042909
+      "base": 609.186986222099,
+      "swap": 607.4157137846461,
+      "delta": -0.0029076005849001385
      },
      "raid": {
-      "base": 664.5792092990603,
-      "swap": 660.3751709280093,
-      "delta": -0.006325865016880372
+      "base": 692.9720889963984,
+      "swap": 691.1212080060723,
+      "delta": -0.0026709315132831257
      }
     },
     {
@@ -2594,35 +3342,14 @@
      "change": "+Malediction 5; -Amplify Curse 1, Improved Bane of Agony 1, Improved Corruption 3",
      "why": null,
      "dummy": {
-      "base": 558.4961279189874,
-      "swap": 555.031750703507,
-      "delta": -0.006203046077309593
+      "base": 609.186986222099,
+      "swap": 607.0334080311343,
+      "delta": -0.0035351677558317363
      },
      "raid": {
-      "base": 664.5792092990603,
-      "swap": 662.3193729958177,
-      "delta": -0.0034004017453781454
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "fire-destro-raid",
-     "tank": false,
-     "build": "destruction-fire-raid",
-     "lead": "Affliction",
-     "talent": "Demonic Embrace",
-     "pick": 79,
-     "change": "+Demonic Embrace 5; -Improved Health Funnel 2, Improved Imp 3",
-     "why": null,
-     "dummy": {
-      "base": 558.4961279189874,
-      "swap": 558.4961279189874,
-      "delta": 0.0
-     },
-     "raid": {
-      "base": 664.5792092990603,
-      "swap": 664.5792092990603,
-      "delta": 0.0
+      "base": 692.9720889963984,
+      "swap": 691.7450360601695,
+      "delta": -0.001770710474076953
      }
     },
     {
@@ -2632,18 +3359,39 @@
      "build": "destruction-fire-raid",
      "lead": "Affliction",
      "talent": "Improved Drains",
-     "pick": 73,
+     "pick": 76,
      "change": "+Improved Drains 3; -Amplify Curse 1, Improved Bane of Agony 1, Improved Corruption 1",
      "why": null,
      "dummy": {
-      "base": 558.4961279189874,
-      "swap": 547.2528525215765,
-      "delta": -0.020131339924064462
+      "base": 609.186986222099,
+      "swap": 598.6639783901963,
+      "delta": -0.017273855269236082
      },
      "raid": {
-      "base": 664.5792092990603,
-      "swap": 653.2194396028003,
-      "delta": -0.017093176460096005
+      "base": 692.9720889963984,
+      "swap": 682.8437369235766,
+      "delta": -0.014615815317309933
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "fire-destro-raid",
+     "tank": false,
+     "build": "destruction-fire-raid",
+     "lead": "Affliction",
+     "talent": "Soul Siphon",
+     "pick": 75,
+     "change": "+Soul Siphon 3; -Amplify Curse 1, Improved Bane of Agony 1, Agonizing Flames 1",
+     "why": null,
+     "dummy": {
+      "base": 609.186986222099,
+      "swap": 590.882703907698,
+      "delta": -0.03004706720331607
+     },
+     "raid": {
+      "base": 692.9720889963984,
+      "swap": 672.4022063046962,
+      "delta": -0.029683565930473055
      }
     },
     {
@@ -2653,16 +3401,16 @@
      "build": "destruction-fire-raid",
      "lead": "Affliction",
      "talent": "Shadow Mastery",
-     "pick": 71,
+     "pick": 70,
      "change": null,
      "why": "not tested: no single point can come out without breaking tier gating or a prerequisite",
      "dummy": {
-      "base": 558.4961279189874,
+      "base": 609.186986222099,
       "swap": null,
       "delta": null
      },
      "raid": {
-      "base": 664.5792092990603,
+      "base": 692.9720889963984,
       "swap": null,
       "delta": null
      }
@@ -2672,20 +3420,20 @@
      "entry": "fire-destro-raid",
      "tank": false,
      "build": "opt-fire-destro-raid-raid-dps",
-     "lead": "Affliction",
-     "talent": "Siphon Life",
-     "pick": 94,
-     "change": "+Siphon Life 1; -Amplify Curse 1",
+     "lead": "Destruction",
+     "talent": "Bane of Havoc",
+     "pick": 77,
+     "change": "+Bane of Havoc 1; -Fire and Brimstone 1",
      "why": null,
      "dummy": {
-      "base": 558.4961279189874,
-      "swap": 554.6408986275643,
-      "delta": -0.0069028755951954235
+      "base": 606.6786262191499,
+      "swap": 602.5019445713672,
+      "delta": -0.0068845043607552725
      },
      "raid": {
-      "base": 664.5792092990603,
-      "swap": 660.4446369210335,
-      "delta": -0.006221338736111748
+      "base": 691.4722801371099,
+      "swap": 686.6925813030329,
+      "delta": -0.0069123506051887995
      }
     },
     {
@@ -2693,20 +3441,20 @@
      "entry": "fire-destro-raid",
      "tank": false,
      "build": "opt-fire-destro-raid-raid-dps",
-     "lead": "Affliction",
-     "talent": "Nightfall",
-     "pick": 84,
-     "change": "+Nightfall 2; -Amplify Curse 1, Improved Bane of Agony 1",
+     "lead": "Destruction",
+     "talent": "Destructive Reach",
+     "pick": 74,
+     "change": "+Destructive Reach 2; -Fire and Brimstone 2",
      "why": null,
      "dummy": {
-      "base": 558.4961279189874,
-      "swap": 554.3425499117823,
-      "delta": -0.007437075746042909
+      "base": 606.6786262191499,
+      "swap": 598.778214032903,
+      "delta": -0.01302240073213512
      },
      "raid": {
-      "base": 664.5792092990603,
-      "swap": 660.3751709280093,
-      "delta": -0.006325865016880372
+      "base": 691.4722801371099,
+      "swap": 682.4667211138953,
+      "delta": -0.013023745538185416
      }
     },
     {
@@ -2714,83 +3462,20 @@
      "entry": "fire-destro-raid",
      "tank": false,
      "build": "opt-fire-destro-raid-raid-dps",
-     "lead": "Affliction",
-     "talent": "Malediction",
-     "pick": 80,
-     "change": "+Malediction 5; -Amplify Curse 1, Improved Bane of Agony 1, Improved Corruption 3",
-     "why": null,
-     "dummy": {
-      "base": 558.4961279189874,
-      "swap": 555.031750703507,
-      "delta": -0.006203046077309593
-     },
-     "raid": {
-      "base": 664.5792092990603,
-      "swap": 662.3193729958177,
-      "delta": -0.0034004017453781454
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "fire-destro-raid",
-     "tank": false,
-     "build": "opt-fire-destro-raid-raid-dps",
-     "lead": "Affliction",
-     "talent": "Demonic Embrace",
-     "pick": 79,
-     "change": "+Demonic Embrace 5; -Improved Health Funnel 2, Improved Imp 3",
-     "why": null,
-     "dummy": {
-      "base": 558.4961279189874,
-      "swap": 558.4961279189874,
-      "delta": 0.0
-     },
-     "raid": {
-      "base": 664.5792092990603,
-      "swap": 664.5792092990603,
-      "delta": 0.0
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "fire-destro-raid",
-     "tank": false,
-     "build": "opt-fire-destro-raid-raid-dps",
-     "lead": "Affliction",
-     "talent": "Improved Drains",
+     "lead": "Destruction",
+     "talent": "Aftermath",
      "pick": 73,
-     "change": "+Improved Drains 3; -Amplify Curse 1, Improved Bane of Agony 1, Improved Corruption 1",
+     "change": "+Aftermath 5; -Fire and Brimstone 2, Ruin 3",
      "why": null,
      "dummy": {
-      "base": 558.4961279189874,
-      "swap": 547.2528525215765,
-      "delta": -0.020131339924064462
+      "base": 606.6786262191499,
+      "swap": 593.1707170515227,
+      "delta": -0.022265345413285953
      },
      "raid": {
-      "base": 664.5792092990603,
-      "swap": 653.2194396028003,
-      "delta": -0.017093176460096005
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "fire-destro-raid",
-     "tank": false,
-     "build": "opt-fire-destro-raid-raid-dps",
-     "lead": "Affliction",
-     "talent": "Shadow Mastery",
-     "pick": 71,
-     "change": null,
-     "why": "not tested: no single point can come out without breaking tier gating or a prerequisite",
-     "dummy": {
-      "base": 558.4961279189874,
-      "swap": null,
-      "delta": null
-     },
-     "raid": {
-      "base": 664.5792092990603,
-      "swap": null,
-      "delta": null
+      "base": 691.4722801371099,
+      "swap": 670.5575827705059,
+      "delta": -0.030246617207065674
      }
     },
     {
@@ -2800,249 +3485,312 @@
      "build": "ds-ruin-raid",
      "lead": "Affliction",
      "talent": "Siphon Life",
-     "pick": 94,
+     "pick": 95,
+     "change": "+Siphon Life 1; -Amplify Curse 1",
+     "why": null,
+     "dummy": {
+      "base": 634.5789305836255,
+      "swap": 632.1669924035589,
+      "delta": -0.0038008481905448255
+     },
+     "raid": {
+      "base": 724.6351612477561,
+      "swap": 721.6947172915136,
+      "delta": -0.004057826770618278
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "sb-raid",
+     "tank": false,
+     "build": "ds-ruin-raid",
+     "lead": "Affliction",
+     "talent": "Nightfall",
+     "pick": 84,
+     "change": "+Nightfall 2; -Amplify Curse 1, Improved Bane of Agony 1",
+     "why": null,
+     "dummy": {
+      "base": 634.5789305836255,
+      "swap": 631.0910366824138,
+      "delta": -0.005496390965902154
+     },
+     "raid": {
+      "base": 724.6351612477561,
+      "swap": 721.1729857517355,
+      "delta": -0.0047778187992686405
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "sb-raid",
+     "tank": false,
+     "build": "ds-ruin-raid",
+     "lead": "Affliction",
+     "talent": "Malediction",
+     "pick": 80,
+     "change": "+Malediction 5; -Amplify Curse 1, Improved Bane of Agony 2, Pandemic 2",
+     "why": null,
+     "dummy": {
+      "base": 634.5789305836255,
+      "swap": 623.2121915166409,
+      "delta": -0.01791225412499986
+     },
+     "raid": {
+      "base": 724.6351612477561,
+      "swap": 709.8490284210797,
+      "delta": -0.02040493425852541
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "sb-raid",
+     "tank": false,
+     "build": "ds-ruin-raid",
+     "lead": "Affliction",
+     "talent": "Improved Drains",
+     "pick": 76,
+     "change": "+Improved Drains 3; -Amplify Curse 1, Improved Bane of Agony 2",
+     "why": null,
+     "dummy": {
+      "base": 634.5789305836255,
+      "swap": 621.7829079238459,
+      "delta": -0.02016458795442677
+     },
+     "raid": {
+      "base": 724.6351612477561,
+      "swap": 710.6584083219564,
+      "delta": -0.01928798611115279
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "sb-raid",
+     "tank": false,
+     "build": "ds-ruin-raid",
+     "lead": "Affliction",
+     "talent": "Soul Siphon",
+     "pick": 75,
+     "change": "+Soul Siphon 3; -Amplify Curse 1, Improved Bane of Agony 1, Agonizing Flames 1",
+     "why": null,
+     "dummy": {
+      "base": 634.5789305836255,
+      "swap": 615.7981233750181,
+      "delta": -0.029595699295176026
+     },
+     "raid": {
+      "base": 724.6351612477561,
+      "swap": 702.9744144705654,
+      "delta": -0.029891934501070527
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "sb-raid",
+     "tank": false,
+     "build": "ds-ruin-raid",
+     "lead": "Affliction",
+     "talent": "Shadow Mastery",
+     "pick": 70,
+     "change": null,
+     "why": "not tested: no single point can come out without breaking tier gating or a prerequisite",
+     "dummy": {
+      "base": 634.5789305836255,
+      "swap": null,
+      "delta": null
+     },
+     "raid": {
+      "base": 724.6351612477561,
+      "swap": null,
+      "delta": null
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "sb-raid",
+     "tank": false,
+     "build": "opt-sb-raid-raid-dps",
+     "lead": "Affliction",
+     "talent": "Siphon Life",
+     "pick": 95,
      "change": "+Siphon Life 1; -Improved Bane of Agony 1",
      "why": null,
      "dummy": {
-      "base": 573.8772869829846,
-      "swap": 568.6624491154341,
-      "delta": -0.009087026069573456
+      "base": 637.5675965277102,
+      "swap": 632.3638512772098,
+      "delta": -0.00816187221377107
      },
      "raid": {
-      "base": 693.2049701302867,
-      "swap": 687.3226170477515,
-      "delta": -0.008485734142139378
+      "base": 725.9571361379482,
+      "swap": 720.4398468888711,
+      "delta": -0.007600020682252295
      }
     },
     {
      "scenario": "raid",
      "entry": "sb-raid",
      "tank": false,
-     "build": "ds-ruin-raid",
+     "build": "opt-sb-raid-raid-dps",
      "lead": "Affliction",
      "talent": "Nightfall",
      "pick": 84,
      "change": "+Nightfall 2; -Improved Bane of Agony 2",
      "why": null,
      "dummy": {
-      "base": 573.8772869829846,
-      "swap": 568.262969000642,
-      "delta": -0.009783133275510059
+      "base": 637.5675965277102,
+      "swap": 632.1296500166955,
+      "delta": -0.008529207790092586
      },
      "raid": {
-      "base": 693.2049701302867,
-      "swap": 687.678934402119,
-      "delta": -0.007971719716794667
+      "base": 725.9571361379482,
+      "swap": 720.3077147428264,
+      "delta": -0.007782031629548158
      }
     },
     {
      "scenario": "raid",
      "entry": "sb-raid",
      "tank": false,
-     "build": "ds-ruin-raid",
+     "build": "opt-sb-raid-raid-dps",
      "lead": "Affliction",
      "talent": "Malediction",
      "pick": 80,
-     "change": "+Malediction 5; -Improved Bane of Agony 2, Amplify Curse 1, Pandemic 2",
+     "change": "+Malediction 5; -Improved Bane of Agony 2, Pandemic 3",
      "why": null,
      "dummy": {
-      "base": 573.8772869829846,
-      "swap": 562.586634671749,
-      "delta": -0.019674332069480105
+      "base": 637.5675965277102,
+      "swap": 622.8694476359217,
+      "delta": -0.02305347538337399
      },
      "raid": {
-      "base": 693.2049701302867,
-      "swap": 676.8281847759151,
-      "delta": -0.023624737357687442
+      "base": 725.9571361379482,
+      "swap": 706.7945761559479,
+      "delta": -0.026396269184629895
      }
     },
     {
      "scenario": "raid",
      "entry": "sb-raid",
      "tank": false,
-     "build": "ds-ruin-raid",
+     "build": "opt-sb-raid-raid-dps",
      "lead": "Affliction",
      "talent": "Improved Drains",
-     "pick": 73,
-     "change": "+Improved Drains 3; -Improved Bane of Agony 2, Amplify Curse 1",
+     "pick": 76,
+     "change": "+Improved Drains 3; -Improved Bane of Agony 2, Pandemic 1",
      "why": null,
      "dummy": {
-      "base": 573.8772869829846,
-      "swap": 559.9279954213079,
-      "delta": -0.024307098186463594
+      "base": 637.5675965277102,
+      "swap": 621.6746423534771,
+      "delta": -0.02492748104011011
      },
      "raid": {
-      "base": 693.2049701302867,
-      "swap": 677.5635137350528,
-      "delta": -0.022563970353954854
+      "base": 725.9571361379482,
+      "swap": 707.9319221414726,
+      "delta": -0.02482958441922445
      }
     },
     {
      "scenario": "raid",
      "entry": "sb-raid",
      "tank": false,
-     "build": "ds-ruin-raid",
+     "build": "opt-sb-raid-raid-dps",
+     "lead": "Affliction",
+     "talent": "Soul Siphon",
+     "pick": 75,
+     "change": "+Soul Siphon 3; -Improved Bane of Agony 2, Agonizing Flames 1",
+     "why": null,
+     "dummy": {
+      "base": 637.5675965277102,
+      "swap": 615.8207555704173,
+      "delta": -0.034109074983938115
+     },
+     "raid": {
+      "base": 725.9571361379482,
+      "swap": 701.5965728237604,
+      "delta": -0.03355647613547075
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "sb-raid",
+     "tank": false,
+     "build": "opt-sb-raid-raid-dps",
      "lead": "Affliction",
      "talent": "Shadow Mastery",
-     "pick": 71,
-     "change": null,
-     "why": "not tested: no single point can come out without breaking tier gating or a prerequisite",
-     "dummy": {
-      "base": 573.8772869829846,
-      "swap": null,
-      "delta": null
-     },
-     "raid": {
-      "base": 693.2049701302867,
-      "swap": null,
-      "delta": null
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "sb-raid",
-     "tank": false,
-     "build": "ds-ruin-raid",
-     "lead": "Affliction",
-     "talent": "Demonic Aegis",
      "pick": 70,
-     "change": "+Demonic Aegis 2; -Demonic Embrace 2",
-     "why": null,
-     "dummy": {
-      "base": 573.8772869829846,
-      "swap": 573.8772869829846,
-      "delta": 0.0
-     },
-     "raid": {
-      "base": 693.2049701302867,
-      "swap": 693.2049701302867,
-      "delta": 0.0
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "sb-raid",
-     "tank": false,
-     "build": "opt-sb-raid-raid-dps",
-     "lead": "Affliction",
-     "talent": "Siphon Life",
-     "pick": 94,
-     "change": "+Siphon Life 1; -Amplify Curse 1",
-     "why": null,
-     "dummy": {
-      "base": 574.7122187555995,
-      "swap": 570.7060770907128,
-      "delta": -0.006970691650790006
-     },
-     "raid": {
-      "base": 689.8886797806349,
-      "swap": 685.8568607144908,
-      "delta": -0.0058441588973833225
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "sb-raid",
-     "tank": false,
-     "build": "opt-sb-raid-raid-dps",
-     "lead": "Affliction",
-     "talent": "Nightfall",
-     "pick": 84,
-     "change": "+Nightfall 2; -Amplify Curse 1, Improved Bane of Agony 1",
-     "why": null,
-     "dummy": {
-      "base": 574.7122187555995,
-      "swap": 569.8494867797325,
-      "delta": -0.008461159893896175
-     },
-     "raid": {
-      "base": 689.8886797806349,
-      "swap": 686.3023060669254,
-      "delta": -0.005198481753389328
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "sb-raid",
-     "tank": false,
-     "build": "opt-sb-raid-raid-dps",
-     "lead": "Affliction",
-     "talent": "Malediction",
-     "pick": 80,
-     "change": "+Malediction 5; -Amplify Curse 1, Improved Bane of Agony 1, Pandemic 3",
-     "why": null,
-     "dummy": {
-      "base": 574.7122187555995,
-      "swap": 563.4630062377261,
-      "delta": -0.019573644253172207
-     },
-     "raid": {
-      "base": 689.8886797806349,
-      "swap": 672.1863904951513,
-      "delta": -0.02565963148012873
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "sb-raid",
-     "tank": false,
-     "build": "opt-sb-raid-raid-dps",
-     "lead": "Affliction",
-     "talent": "Demonic Embrace",
-     "pick": 79,
-     "change": "+Demonic Embrace 5; -Improved Health Funnel 2, Improved Imp 3",
-     "why": null,
-     "dummy": {
-      "base": 574.7122187555995,
-      "swap": 574.7122187555995,
-      "delta": 0.0
-     },
-     "raid": {
-      "base": 689.8886797806349,
-      "swap": 689.8886797806349,
-      "delta": 0.0
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "sb-raid",
-     "tank": false,
-     "build": "opt-sb-raid-raid-dps",
-     "lead": "Affliction",
-     "talent": "Improved Drains",
-     "pick": 73,
-     "change": "+Improved Drains 3; -Amplify Curse 1, Improved Bane of Agony 1, Pandemic 1",
-     "why": null,
-     "dummy": {
-      "base": 574.7122187555995,
-      "swap": 561.0702666262072,
-      "delta": -0.02373701425546626
-     },
-     "raid": {
-      "base": 689.8886797806349,
-      "swap": 673.2639356239008,
-      "delta": -0.024097719884344615
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "sb-raid",
-     "tank": false,
-     "build": "opt-sb-raid-raid-dps",
-     "lead": "Affliction",
-     "talent": "Shadow Mastery",
-     "pick": 71,
      "change": null,
      "why": "not tested: no single point can come out without breaking tier gating or a prerequisite",
      "dummy": {
-      "base": 574.7122187555995,
+      "base": 637.5675965277102,
       "swap": null,
       "delta": null
      },
      "raid": {
-      "base": 689.8886797806349,
+      "base": 725.9571361379482,
       "swap": null,
       "delta": null
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "sb-raid",
+     "tank": false,
+     "build": "destruction-ml-raid",
+     "lead": "Destruction",
+     "talent": "Bane of Havoc",
+     "pick": 77,
+     "change": "+Bane of Havoc 1; -Cataclysm 1",
+     "why": null,
+     "dummy": {
+      "base": 626.3458508818492,
+      "swap": 622.8262347388796,
+      "delta": -0.005619285476249569
+     },
+     "raid": {
+      "base": 711.3274491183054,
+      "swap": 706.9726807395583,
+      "delta": -0.006122030555892111
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "sb-raid",
+     "tank": false,
+     "build": "destruction-ml-raid",
+     "lead": "Destruction",
+     "talent": "Destructive Reach",
+     "pick": 74,
+     "change": "+Destructive Reach 2; -Cataclysm 2",
+     "why": null,
+     "dummy": {
+      "base": 626.3458508818492,
+      "swap": 619.410081219508,
+      "delta": -0.01107338645666145
+     },
+     "raid": {
+      "base": 711.3274491183054,
+      "swap": 702.560635765568,
+      "delta": -0.012324581827404368
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "sb-raid",
+     "tank": false,
+     "build": "destruction-ml-raid",
+     "lead": "Destruction",
+     "talent": "Aftermath",
+     "pick": 73,
+     "change": "+Aftermath 5; -Cataclysm 2, Fire and Brimstone 1, Ruin 2",
+     "why": null,
+     "dummy": {
+      "base": 626.3458508818492,
+      "swap": 613.5065606729835,
+      "delta": -0.020498723174726674
+     },
+     "raid": {
+      "base": 711.3274491183054,
+      "swap": 692.0902287490806,
+      "delta": -0.027044113640025347
      }
     }
    ],
@@ -3053,18 +3801,18 @@
      "build": "leveling-affliction",
      "lead": "Demonology",
      "talent": "Fel Vitality",
-     "pick": 90,
+     "pick": 91,
      "change": "+Fel Vitality 3; -Curse of Exhaustion 1, Improved Health Funnel 2",
      "why": null,
-     "base": 35.94260502298279,
-     "swap": 35.80225433079448,
-     "delta": -0.0039048558694775304,
+     "base": 35.661775273262485,
+     "swap": 35.60033750075879,
+     "delta": -0.0017227906359938983,
      "levels": {
       "20": 0.0,
       "30": 0.0,
-      "40": -0.006183858537664344,
-      "50": -0.007053896349901723,
-      "60": -0.0021561701720831383
+      "40": -0.0045432531298748025,
+      "50": -0.00408633259021185,
+      "60": 0.0011360175950556606
      }
     },
     {
@@ -3076,35 +3824,15 @@
      "pick": 87,
      "change": "+Master Demonologist 5; -Curse of Exhaustion 1, Improved Felhunter 1, Destructive Reach 2, Malevolence 1",
      "why": null,
-     "base": 35.94260502298279,
-     "swap": 36.084832408540414,
-     "delta": 0.003957069485271969,
+     "base": 35.661775273262485,
+     "swap": 35.78093331341143,
+     "delta": 0.0033413378676716565,
      "levels": {
       "20": 0.0,
       "30": 0.0,
-      "40": 0.004722192483622489,
-      "50": 0.004684651689852881,
-      "60": 0.005403990299047479
-     }
-    },
-    {
-     "scenario": "leveling",
-     "spec": "affliction-leveling",
-     "build": "leveling-affliction",
-     "lead": "Demonology",
-     "talent": "Demonic Embrace",
-     "pick": 78,
-     "change": "+Demonic Embrace 5; -Curse of Exhaustion 1, Improved Health Funnel 2, Improved Voidwalker 2",
-     "why": null,
-     "base": 35.94260502298279,
-     "swap": 36.27271541528779,
-     "delta": 0.009184375815106227,
-     "levels": {
-      "20": 0.0,
-      "30": 0.0,
-      "40": 0.007920865858017656,
-      "50": 0.007098088191541008,
-      "60": 0.017932717728536662
+      "40": 0.002059532686579768,
+      "50": 0.005391993587034571,
+      "60": 0.004538497118194762
      }
     },
     {
@@ -3113,9 +3841,29 @@
      "build": "leveling-affliction",
      "lead": "Demonology",
      "talent": "Demonic Pact",
-     "pick": 78,
+     "pick": 82,
      "change": null,
      "why": "not tested: no single point can come out without breaking tier gating or a prerequisite"
+    },
+    {
+     "scenario": "leveling",
+     "spec": "affliction-leveling",
+     "build": "leveling-affliction",
+     "lead": "Demonology",
+     "talent": "Demonic Embrace",
+     "pick": 76,
+     "change": "+Demonic Embrace 5; -Curse of Exhaustion 1, Improved Health Funnel 2, Improved Voidwalker 2",
+     "why": null,
+     "base": 35.661775273262485,
+     "swap": 35.98817676538676,
+     "delta": 0.00915269892267534,
+     "levels": {
+      "20": 0.0,
+      "30": 0.0,
+      "40": 0.007831522646021716,
+      "50": 0.008071909687273449,
+      "60": 0.0168282713420278
+     }
     },
     {
      "scenario": "leveling",
@@ -3124,17 +3872,17 @@
      "lead": "Affliction",
      "talent": "Nightfall",
      "pick": 84,
-     "change": "+Nightfall 2; -Suppression 2",
+     "change": "+Nightfall 2; -Malevolence 2",
      "why": null,
-     "base": 36.56011811987071,
-     "swap": 36.76342655522136,
-     "delta": 0.005560934860332045,
+     "base": 36.301173561727104,
+     "swap": 36.56292509089512,
+     "delta": 0.007210552813752047,
      "levels": {
       "20": 0.0,
       "30": 0.0,
-      "40": 0.008888633510466315,
-      "50": 0.005118862210776953,
-      "60": 0.00734734430799211
+      "40": 0.00919085193288649,
+      "50": 0.008120726141733314,
+      "60": 0.009616161682342472
      }
     },
     {
@@ -3143,18 +3891,38 @@
      "build": "opt-affliction-leveling-leveling-st",
      "lead": "Affliction",
      "talent": "Improved Drains",
-     "pick": 73,
-     "change": "+Improved Drains 3; -Suppression 3",
+     "pick": 76,
+     "change": "+Improved Drains 3; -Malevolence 3",
      "why": null,
-     "base": 36.56011811987071,
-     "swap": 36.74699556201363,
-     "delta": 0.0051115108963872835,
+     "base": 36.301173561727104,
+     "swap": 36.59902239541914,
+     "delta": 0.008204936768382076,
      "levels": {
       "20": 0.0,
       "30": 0.0,
-      "40": 0.012020889613480357,
-      "50": 0.004970180993054685,
-      "60": 0.003956885173308278
+      "40": 0.012627469415339876,
+      "50": 0.008471030664271018,
+      "60": 0.010192740753484975
+     }
+    },
+    {
+     "scenario": "leveling",
+     "spec": "affliction-leveling",
+     "build": "opt-affliction-leveling-leveling-st",
+     "lead": "Affliction",
+     "talent": "Soul Siphon",
+     "pick": 75,
+     "change": "+Soul Siphon 3; -Malevolence 3",
+     "why": null,
+     "base": 36.301173561727104,
+     "swap": 36.56894489757062,
+     "delta": 0.007376382347203947,
+     "levels": {
+      "20": 0.0,
+      "30": 0.0,
+      "40": 0.011563681266544723,
+      "50": 0.008082800948489233,
+      "60": 0.008610488424890095
      }
     }
    ]
@@ -3163,107 +3931,44 @@
    "raid": [
     {
      "scenario": "raid",
-     "entry": "arms-2h-raid",
+     "entry": "fury-dw-raid",
      "tank": false,
-     "build": "arms-2h-raid",
+     "build": "opt-fury-dw-raid-raid-dps",
      "lead": "Fury",
-     "talent": "Dual Wield Specialization",
-     "pick": 73,
-     "change": "+Dual Wield Specialization 5; -Two-Handed Weapon Specialization 3, Precision 2",
+     "talent": "Enrage",
+     "pick": 86,
+     "change": "+Enrage 5; -Deflection 1, Improved Berserker Rage 2, Spearing Strike 1, Raging Blows 1",
      "why": null,
      "dummy": {
-      "base": 216.26917971744706,
-      "swap": 204.04199275783148,
-      "delta": -0.05653689062671918
+      "base": 508.34442234548527,
+      "swap": 504.9606166109655,
+      "delta": -0.0066565218103643575
      },
      "raid": {
-      "base": 455.13743788953786,
-      "swap": 426.8518979818308,
-      "delta": -0.06214724949647399
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "arms-2h-raid",
-     "tank": false,
-     "build": "arms-2h-raid",
-     "lead": "Fury",
-     "talent": "Raging Blows",
-     "pick": 73,
-     "change": "+Raging Blows 1; -Two-Handed Weapon Specialization 1",
-     "why": null,
-     "dummy": {
-      "base": 216.26917971744706,
-      "swap": 214.18307293259778,
-      "delta": -0.009645881061623118
-     },
-     "raid": {
-      "base": 455.13743788953786,
-      "swap": 450.81655172681053,
-      "delta": -0.009493585460170428
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "arms-2h-raid",
-     "tank": false,
-     "build": "opt-arms-2h-raid-raid-dps",
-     "lead": "Fury",
-     "talent": "Dual Wield Specialization",
-     "pick": 73,
-     "change": "+Dual Wield Specialization 5; -Two-Handed Weapon Specialization 2, Precision 3",
-     "why": null,
-     "dummy": {
-      "base": 217.65715576960827,
-      "swap": 207.38013325498406,
-      "delta": -0.047216561653054545
-     },
-     "raid": {
-      "base": 456.5301088264422,
-      "swap": 432.261563578273,
-      "delta": -0.053158695952286616
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "arms-2h-raid",
-     "tank": false,
-     "build": "opt-arms-2h-raid-raid-dps",
-     "lead": "Fury",
-     "talent": "Raging Blows",
-     "pick": 73,
-     "change": "+Raging Blows 1; -Two-Handed Weapon Specialization 1",
-     "why": null,
-     "dummy": {
-      "base": 217.65715576960827,
-      "swap": 215.5369893491021,
-      "delta": -0.009740853283732087
-     },
-     "raid": {
-      "base": 456.5301088264422,
-      "swap": 452.15384212025214,
-      "delta": -0.00958593227824489
+      "base": 886.1468426874519,
+      "swap": 879.816738743006,
+      "delta": -0.007143402920951947
      }
     },
     {
      "scenario": "raid",
      "entry": "fury-dw-raid",
      "tank": false,
-     "build": "opt-fury-dw-raid-raid-dps",
+     "build": "fury-open-raid",
      "lead": "Fury",
-     "talent": "Bloodthirst",
-     "pick": 92,
-     "change": "+Bloodthirst 1; -Deep Wounds 1",
+     "talent": "Enrage",
+     "pick": 86,
+     "change": "+Enrage 5; -Furious Precision 1, Improved Bloodrage 2, Deflection 1, Raging Blows 1",
      "why": null,
      "dummy": {
-      "base": 256.5806559465865,
-      "swap": 254.6474918479877,
-      "delta": -0.007534332981833258
+      "base": 528.5316168907693,
+      "swap": 517.0831151731417,
+      "delta": -0.02166095906424026
      },
      "raid": {
-      "base": 441.239667478586,
-      "swap": 455.4069895410764,
-      "delta": 0.03210799732364955
+      "base": 924.6730583891374,
+      "swap": 907.3422351952767,
+      "delta": -0.018742649671282252
      }
     },
     {
@@ -3272,14 +3977,14 @@
      "tank": true,
      "build": "prot-raid-tank",
      "lead": "Protection",
-     "talent": "Improved Bloodrage",
-     "pick": 93,
-     "change": "+Improved Bloodrage 2; -Improved Heroic Strike 2",
+     "talent": "Vanguard",
+     "pick": 94,
+     "change": "+Vanguard 1; -Improved Bloodrage 1",
      "why": null,
      "raid": {
       "base": 1.0,
-      "swap": 0.9983468797340479,
-      "delta": -0.0016531202659521016
+      "swap": 0.9990636549800292,
+      "delta": -0.0009363450199707524
      }
     },
     {
@@ -3289,13 +3994,13 @@
      "build": "prot-raid-tank",
      "lead": "Protection",
      "talent": "Last Stand",
-     "pick": 89,
-     "change": null,
-     "why": "not tested: no single point can come out without breaking tier gating or a prerequisite",
+     "pick": 92,
+     "change": "+Last Stand 1; -Improved Bloodrage 1",
+     "why": null,
      "raid": {
       "base": 1.0,
-      "swap": null,
-      "delta": null
+      "swap": 0.9990636549800292,
+      "delta": -0.0009363450199707524
      }
     },
     {
@@ -3305,29 +4010,13 @@
      "build": "prot-raid-tank",
      "lead": "Protection",
      "talent": "Improved Shield Wall",
-     "pick": 73,
-     "change": "+Improved Shield Wall 2; -Improved Heroic Strike 2",
+     "pick": 80,
+     "change": "+Improved Shield Wall 2; -Improved Bloodrage 1, Improved Heroic Strike 1",
      "why": null,
      "raid": {
       "base": 1.0,
-      "swap": 0.9952652541289695,
-      "delta": -0.00473474587103051
-     }
-    },
-    {
-     "scenario": "raid",
-     "entry": "prot-tank",
-     "tank": true,
-     "build": "opt-prot-tank-raid-tank",
-     "lead": "Protection",
-     "talent": "Improved Bloodrage",
-     "pick": 93,
-     "change": "+Improved Bloodrage 2; -Improved Heroic Strike 2",
-     "why": null,
-     "raid": {
-      "base": 1.0,
-      "swap": 0.9983468797340479,
-      "delta": -0.0016531202659521016
+      "swap": 0.9938535014103664,
+      "delta": -0.0061464985896335644
      }
     },
     {
@@ -3337,13 +4026,29 @@
      "build": "opt-prot-tank-raid-tank",
      "lead": "Protection",
      "talent": "Last Stand",
-     "pick": 89,
-     "change": null,
-     "why": "not tested: no single point can come out without breaking tier gating or a prerequisite",
+     "pick": 92,
+     "change": "+Last Stand 1; -Deep Wounds 1",
+     "why": null,
      "raid": {
       "base": 1.0,
-      "swap": null,
-      "delta": null
+      "swap": 0.9973875297277427,
+      "delta": -0.0026124702722573057
+     }
+    },
+    {
+     "scenario": "raid",
+     "entry": "prot-tank",
+     "tank": true,
+     "build": "opt-prot-tank-raid-tank",
+     "lead": "Protection",
+     "talent": "Improved Bloodrage",
+     "pick": 85,
+     "change": "+Improved Bloodrage 2; -Deep Wounds 2",
+     "why": null,
+     "raid": {
+      "base": 1.0,
+      "swap": 0.9977052386767699,
+      "delta": -0.0022947613232301434
      }
     },
     {
@@ -3353,13 +4058,13 @@
      "build": "opt-prot-tank-raid-tank",
      "lead": "Protection",
      "talent": "Improved Shield Wall",
-     "pick": 73,
-     "change": "+Improved Shield Wall 2; -Improved Heroic Strike 2",
+     "pick": 80,
+     "change": "+Improved Shield Wall 2; -Deep Wounds 2",
      "why": null,
      "raid": {
       "base": 1.0,
-      "swap": 0.9952652541289695,
-      "delta": -0.00473474587103051
+      "swap": 0.9947750594554853,
+      "delta": -0.005224940544514722
      }
     }
    ],
@@ -3370,18 +4075,18 @@
      "build": "leveling-arms",
      "lead": "Arms",
      "talent": "Improved Tactical Mastery",
-     "pick": 95,
+     "pick": 96,
      "change": "+Improved Tactical Mastery 5; -Deflection 3, Spearing Strike 1, Improved Charge 1",
      "why": null,
-     "base": 28.27503749980952,
-     "swap": 28.503319999807122,
-     "delta": 0.008073640927943604,
+     "base": 26.97863749982514,
+     "swap": 27.218362499823115,
+     "delta": 0.008885734129439493,
      "levels": {
       "20": 0.0,
-      "30": 0.00029911104197322125,
-      "40": 0.007185186080751471,
-      "50": 0.017689719468120035,
-      "60": 0.0063315495826119506
+      "30": 0.006479411273585534,
+      "40": 0.008724431587372683,
+      "50": 0.010384996028139026,
+      "60": 0.011022292582486992
      }
     },
     {
@@ -3390,7 +4095,7 @@
      "build": "leveling-arms",
      "lead": "Arms",
      "talent": "Anger Management",
-     "pick": 80,
+     "pick": 87,
      "change": null,
      "why": "not tested: no single point can come out without breaking tier gating or a prerequisite"
     },
@@ -3400,7 +4105,7 @@
      "build": "opt-arms-2h-raid-leveling-st",
      "lead": "Arms",
      "talent": "Anger Management",
-     "pick": 80,
+     "pick": 87,
      "change": null,
      "why": "not tested: no single point can come out without breaking tier gating or a prerequisite"
     }
@@ -3408,7 +4113,7 @@
   }
  },
  "high": 70,
- "date": "2026-09-29",
+ "date": "2026-10-09",
  "checks": [
   {
    "class": "paladin",

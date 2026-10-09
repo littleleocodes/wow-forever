@@ -57,17 +57,18 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 
 ## Rank among our builds and the community simulator's
 
-**3 of 7** for `mm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 8** for `mm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 472 | +0.0% | 803 | -5.0% | 67 s |
-| 2 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 461 | -2.3% | 806 | -4.6% | 52 s |
-| 3 | **[`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md)** | ours: optimizer | 22/29/0 | 461 | -2.3% | 806 | -4.6% | 52 s |
-| 4 | *Marksmanship* | community simulator | - | 454 | -3.8% | 845 | +0.0% | 88 s |
-| 5 | *Beast Mastery 35/16/0* | community simulator | - | 444 | -5.9% | 770 | -8.8% | 73 s |
-| 6 | *Marksmanship 0/39/12* | community simulator | - | 430 | -8.9% | 791 | -6.3% | 82 s |
-| 7 | *Survival 0/15/36* | community simulator | - | 398 | -15.7% | 680 | -19.5% | 71 s |
+| 1 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 472 | +0.0% | 803 | -8.9% | 68 s |
+| 2 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 461 | -2.4% | 806 | -8.5% | 53 s |
+| 3 | **[`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md)** | ours: optimizer | 22/29/0 | 461 | -2.4% | 806 | -8.5% | 53 s |
+| 4 | *Marksmanship* | community simulator | - | 454 | -3.8% | 845 | -4.1% | 89 s |
+| 5 | [`marksmanship-with-a-pet-open-raid`](marksmanship-with-a-pet-open-raid.md) | ours: hand draft | 7/39/5 | 451 | -4.3% | 881 | +0.0% | 98 s |
+| 6 | *Beast Mastery 35/16/0* | community simulator | - | 445 | -5.7% | 770 | -12.6% | 75 s |
+| 7 | *Marksmanship 0/39/12* | community simulator | - | 431 | -8.7% | 791 | -10.2% | 83 s |
+| 8 | *Survival 0/15/36* | community simulator | - | 396 | -16.1% | 680 | -22.8% | 76 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -101,11 +102,11 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 | # | Priority (the first line whose condition holds is cast) | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) casts/min |
 |---|---|---|
 | 1 | if auraIsInactive and time left in the fight ≥ 15s: cast Summon Hawk | 8.3 |
-| 2 | cast Arcane Shot | 0.8 |
+| 2 | cast Arcane Shot | 0.7 |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
-| 5 | if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 15%: cast Aimed Shot | 4.2 |
-| 6 | if time to the next auto attack > 1s and mana % ≥ 10%: cast Multi-Shot | 0.5 |
+| 5 | if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 15%: cast Aimed Shot | 4.4 |
+| 6 | if time to the next auto attack > 1s and mana % ≥ 10%: cast Multi-Shot | 0.4 |
 | 7 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.7 |
 
 Lines of the simulator's rotation these builds never cast: cast Intimidation (needs the Intimidation talent).

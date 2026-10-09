@@ -25,6 +25,29 @@
 
 **Between fights:** You rarely need to eat or bandage: the shield soaks most of the damage.
 
+## Why this rotation
+
+Protection levels sword and board in **Defensive Stance**: slower kills than Arms, but almost no time spent eating. **Charge** in from **Battle Stance**, switch back, keep **Shield Block** up while the mob hits you, and spend rage on **Revenge**, **Shield Slam** and **Heroic Strike**.
+
+**Why it works**
+
+- **Charge** needs **Battle Stance** (this build has no **Vanguard**), so you swap for it and come back. **Tactical Mastery** with your 5 points in **Improved Tactical Mastery** keeps up to 25 rage through the swap, and the fight lab spends anything above that on **Shield Slam** or **Rend** before it switches.
+- **Shield Block** goes up whenever the mob is hitting you (10 rage, 5-second cooldown, off the global cooldown): 75% more block chance for 7 seconds or 2 blocks. Each block gives 5 rage with **Shield Specialization** and opens **Revenge**, so it pays for itself; **Shield Specialization** is the build's second most valuable talent in the fight lab.
+- **Revenge** (2 rage with **Focused Rage**) whenever it lights up and **Shield Slam** (from 40) on cooldown are your damage. **Shield Slam** alone is worth about 10 seconds per kill at 60, by far the build's biggest talent.
+- **Heroic Strike** takes the spare rage after the fight lab keeps enough for **Shield Slam** (when it is 2 seconds or less from ready) and for **Revenge**. **Rend** goes on once while the mob has more than half its health.
+- **Thunder Clap**, **Demoralizing Shout** and **Sunder Armor** stay off on a single mob: the fight lab measured **Thunder Clap** at +1.2 seconds and **Demoralizing Shout** at +1.0 second per kill with no fewer deaths, and **Sunder Armor** never beat **Heroic Strike** for the rage.
+- **Concussion Blow** (a 5-second stun, 45-second cooldown) is your emergency button below half health, and **Victory Rush** heals 10% at the start of the next fight. **Shield Bash** is for casters: it interrupts and locks that school for 6 seconds.
+
+**Caveats**
+
+- You trade speed for safety: in the fight lab Protection is about a quarter slower per kill than Arms. The slowest stretch is before **Shield Slam** at 40 (34 seconds per kill at level 30 against 29 at 40).
+- Several of the build's points (**Iron Will**, **Defiance**, **Improved Sunder Armor**, **Improved Thunder Clap**) measure zero on a single mob: they fill tiers on the way to **Shield Slam** and **Bastion**.
+
+**When to change it**
+
+- Two or three mobs: open with **Demoralizing Shout** and **Thunder Clap** (up to 4 targets, 20% slower attacks) and use **Cleave** for spare rage. On pulls of 3, the fight lab measured fewer deaths with **Demoralizing Shout** (1.1 to 0.75 per 100 kills).
+- In real trouble, **Shield Wall** (60% less damage for 12 seconds, 15-minute cooldown) buys time, and an early **Concussion Blow** keeps a hard hitter off you for 5 seconds.
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

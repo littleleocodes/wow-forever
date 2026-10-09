@@ -24,6 +24,31 @@
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
+## Why this rotation
+
+Arcane in a raid builds **Arcane Blast** stacks and spends them. Each **Arcane Blast** makes your next other spell stronger and the next **Arcane Blast** much dearer, so free **Arcane Missiles** from **Missile Barrage** and a **Fire Blast** every 6 seconds spend the stacks before the cost runs away.
+
+**Why it works**
+
+- **Arcane Blast** is the filler: a 2.5-second cast that adds a stack each time (up to 4, for 8 seconds). Each stack adds 10% to the damage of your other spells and 175% to the next **Arcane Blast**'s mana cost, and casting any other damage spell spends them all.
+- **Arcane Missiles** on **Missile Barrage** comes first. Each **Arcane Blast** has a 40% chance to make your next Missiles free and twice as fast, and the Missiles carry your stacks: about a third of your damage in the simulator.
+- **Fire Blast** whenever it is ready is why this Arcane build spends 11 points in Fire: **Wake of Fire** brings it back every 6 seconds and **Incineration** adds crit. It is instant, it takes your stacks' bonus, and it puts **Arcane Blast** back to its base cost. Adding it was the biggest gain of the rotation search, about 8% over three steps.
+- **Arcane Power** and **Presence of Mind** go at the pull: 30% more damage for 15 seconds (at 30% more mana cost) and one instant spell. Both have 3-minute cooldowns, so a 3-minute fight gets one of each.
+- Mana: **Evocation** only below 15% mana with more than 20 seconds left. With a raid's mana buffs, your mana gems and a mana potion, the simulator almost never needed it.
+
+**Caveats**
+
+- Without a raid's mana buffs you run dry sooner. The simulator's list for playing without them also spends two stacks on a **Frostbolt** when **Fire Blast** is not ready, which keeps **Arcane Blast** cheap.
+- Moving: **Arcane Blast** and **Arcane Missiles** both need you to stand. **Fire Blast** is your instant, and **Presence of Mind** makes one **Arcane Blast** instant.
+- Threat: **Arcane Subtlety** cuts your Arcane threat by 30%, but the simulator ignores threat, and **Arcane Power** at the pull is when you are most likely to pull the boss.
+- Several targets: this list is for one boss. **Arcane Explosion** hits everything within 10 yards.
+
+**When to change it**
+
+- In the last 40 seconds, stop resetting with **Fire Blast** and keep casting **Arcane Blast**. Its cost climbs, but mana left when the boss dies is wasted and your free Missiles spend bigger stacks; the simulator measured these end-of-fight rules about 1% better together.
+- In the last 3 seconds an **Arcane Blast** cannot finish: cast the **Fire Blast** you saved.
+- In a fight longer than 3 minutes, use **Arcane Power** and **Presence of Mind** again when they are back, and channel **Evocation** below 15% mana while more than 20 seconds remain.
+
 ## The numbers
 
 | Setting | DPS |

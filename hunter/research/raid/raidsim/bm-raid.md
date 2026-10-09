@@ -4,33 +4,34 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `beast-marks-open-raid` | 27/19/5 | 464 | 13 | +0.0% | 361 | 20 | - |
-| `beast-mastery-ml-parse` | 31/20/0 | 464 | 13 | -0.1% | 345 | 25 | - |
-| `beast-mastery-raid` | 30/21/0 | 461 | 12 | -0.7% | 353 | 6 | - |
-| `beast-marks-ml-raid` | 28/23/0 | 454 | 13 | -2.2% | 348 | 18 | - |
-| `mm-hawk-raid` | 22/29/0 | 446 | 13 | -4.0% | 360 | 13 | - |
-| sim preset: Beast Mastery 35/16/0 | - | 439 | 11 | -5.4% | 320 | 14 | - |
+| `beast-mastery-ml-parse` | 31/20/0 | 489 | 14 | +0.0% | 370 | 25 | - |
+| `beast-mastery-raid` | 30/21/0 | 487 | 13 | -0.4% | 379 | 6 | - |
+| `beast-marks-ml-raid` | 28/23/0 | 479 | 14 | -2.0% | 373 | 18 | - |
+| `mm-hawk-raid` | 22/29/0 | 475 | 15 | -2.9% | 389 | 13 | - |
+| `beast-marks-open-raid` | 27/21/3 | 474 | 15 | -3.1% | 370 | 23 | - |
+| sim preset: Beast Mastery 35/16/0 | - | 462 | 12 | -5.5% | 343 | 14 | - |
 
-## Damage shares (`beast-marks-open-raid`, simulator actions)
+## Damage shares (`beast-mastery-ml-parse`, simulator actions)
 
 | Action | Share |
 |---|---|
-| Auto Shot | 40.6% |
-| Serpent Sting | 20.5% |
-| Pet: Auto Attack | 18.3% |
-| Summon Hawk | 14.4% |
-| Pet: Claw | 5.9% |
-| Pet: Bite | 0.2% |
+| Auto Shot | 37.0% |
+| Pet: Auto Attack | 20.0% |
+| Serpent Sting | 18.4% |
+| Arcane Shot | 13.6% |
+| Pet: Claw | 6.2% |
+| Summon Hawk | 4.5% |
+| Pet: Bite | 0.3% |
 
 Mapped onto the spec model's sources: ; 100% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
-- beast-marks-open-raid: `542100050510022-00532500004-5`
 - beast-mastery-ml-parse: `5320001505101251-00532500005`
 - beast-mastery-raid: `522002150510025-00534500013`
 - beast-marks-ml-raid: `532000150510123-0053250000503`
 - mm-hawk-raid: `53200005051001-105355000150004`
+- beast-marks-open-raid: `552100050500022-00530503005-3`
 - sim preset: Beast Mastery 35/16/0: `5520001505121251-0050551`
 

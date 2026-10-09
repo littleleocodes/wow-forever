@@ -23,6 +23,29 @@
 
 **Between fights:** **Life Tap** back up, heal the Voidwalker with **Health Funnel**, eat only below a third of your health.
 
+## Why this rotation
+
+Demonology levels like Affliction with a stronger Voidwalker: the same dots from your 21 Affliction points, while **Demonic Knowledge**, **Soul Link**, **Master Demonologist** and **Unholy Power** make you and the Voidwalker hit harder and take less damage. From level 49, **Demonic Brand** turns **Searing Pain** into extra damage from the Voidwalker.
+
+**Why it works**
+
+- Until level 30 this order is pure Affliction, and the dots stay the core: Voidwalker in first, **Amplify Curse** before the pull when it is ready, then **Corruption**, **Bane of Agony** and, from 30, **Siphon Life**. Skip **Corruption** on a mob below about a third of its health: it dies before the spell pays for its mana.
+- **Searing Pain** with **Demonic Brand** brands the mob for 10 seconds: the Voidwalker's next attacks (6 with all 3 points, from level 55) each deal about 65 extra damage at level 60, and the brand halves **Searing Pain**'s own threat. Recast it whenever the brand is gone and the Voidwalker is hitting the mob; the fight lab measured 3 talent points moved into **Demonic Brand** at about 3% faster kills.
+- **Immolate** also goes on while you have more than half your mana; the fight lab casts it after the other dots.
+- **Shadow Bolt** only when your mana is nearly full (above 80% in the fight lab), the wand otherwise: the dots do the killing and the wand costs nothing. When a mob has too little health left for a **Shadow Bolt**, the fight lab casts **Searing Pain** instead.
+- The Demonology talents work on their own: **Soul Link** (from 51) moves 30% of the damage you take to the Voidwalker and adds 3% damage for both, **Demonic Energies** heals it for 15% of your spell damage and gives it the mana your **Life Tap** gives you, and **Master Demonologist** with the Voidwalker cuts physical damage taken by 10% for both. **Demonic Sacrifice** is only the step to **Soul Link**: never sacrifice your tank.
+
+**Caveats**
+
+- This build has no **Decimation**, so the **Soul Fire** line does not apply: without it **Soul Fire** is a 6-second cast on a 1-minute cooldown, and the fight lab never casts it for this build.
+- **Improved Imp** does nothing while the Voidwalker is out: those 3 points only help reach the deeper talents.
+- When a mob reaches you, cast **Death Coil** if you are below about 60% health (it heals you for its damage), otherwise **Fear** it and let the Voidwalker take it back.
+
+**When to change it**
+
+- If the Voidwalker dies, finish the mob with dots, **Death Coil** and the wand, and summon a new one before the next pull: without a demon out you also lose **Demonic Knowledge**, **Soul Link** and **Master Demonologist**.
+- Finish a nearly dead mob with the wand or **Searing Pain**; start no new dot on it.
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

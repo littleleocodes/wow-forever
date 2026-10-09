@@ -21,6 +21,29 @@
 
 **Between fights:** Mend the pet, drink below a third of your mana, eat below two thirds of your health.
 
+## Why this rotation
+
+The split melee build plays the melee Survival list: sting from range, trap at your feet, then fight beside the pet. Its Marksmanship points buy a stronger **Serpent Sting** (**Improved Stings**), and **Survivalist's Discipline** brings the trap back sooner.
+
+**Why it works**
+
+- **Serpent Sting** from range opens every fight: 20% stronger with **Improved Stings** (levels 41-43), it is about a sixth of your damage at 60 in the fight lab.
+- **Immolation Trap** at your feet as you reach the mob, while it has more than 70% of its health (the burn lasts 15 seconds). From level 49 **Survivalist's Discipline** cuts its cooldown from 30 to 18 seconds, and at 60 the trap is about a ninth of your damage.
+- **Strider Kick** on cooldown and **Raptor Strike** on every swing it is ready (it replaces your next main-hand swing and costs no global cooldown): together about a sixth of your damage.
+- **Counterattack** after you parry (**Deflection** raises your parry) and **Mongoose Bite** after you dodge: with the pet tanking they come rarely, so press them when they light up.
+- **Deterrence** below 40% health: +25% dodge and parry for 10 seconds, every 3 minutes with **Survivalist's Discipline**, and those dodges and parries light up **Mongoose Bite** and **Counterattack**.
+
+**Caveats**
+
+- The page lists **Hunter's Mark**, which **Expose Prey** (levels 33-34) needs; the fight lab's tuned play skips the mark and measured about 3% faster kills without it.
+- **Aspect of the Monkey** until level 30, then **Aspect of the Beast** for its melee attack power; **Deadly Aspects** (levels 51-55) adds its swing-speed chance to Aspect of the Beast.
+- **Improved Tracking** (levels 10-14) adds damage only against the creature type you are tracking: keep tracking set to what you are killing.
+
+**When to change it**
+
+- Two or more mobs: **Explosive Trap** instead of **Immolation Trap**; it hits everything within 10 yards and shares the fire-trap cooldown.
+- If the pet dies, **Deterrence** and finish the mob, or **Feign Death** if it is going badly; revive the pet before the next pull.
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

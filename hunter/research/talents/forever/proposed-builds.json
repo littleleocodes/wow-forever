@@ -1860,105 +1860,6 @@
       "sources": ["https://github.com/ElliotWood/Forever"]
     },
     {
-      "id": "beast-marks-open-raid",
-      "name": "Beast-Marks — Raid (open talent search)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Hybrid Beast Mastery/Marksmanship",
-      "generated": "2026-10-07",
-      "derived": "raid",
-      "summary": "The Beast-Marks (a Beast Mastery/Marksmanship hybrid) raid build the open talent search found on 2026-10-07: every legal 51-point build with no tree rule, searched in the community simulator's bm-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +0.9% over beast-mastery-ml-parse, the best of our builds in that rotation.",
-      "allocation": {
-        "Beast Mastery": [
-          ["Deadly Aspects", 5],
-          ["Endurance Training", 4],
-          ["Focused Fire", 2],
-          ["Improved Aspect of the Monkey", 1],
-          ["Unleashed Fury", 5],
-          ["Ferocity", 5],
-          ["Summon Hawk", 1],
-          ["Bestial Discipline", 2],
-          ["Frenzy", 2]
-        ],
-        "Marksmanship": [
-          ["Lethal Attacks", 5],
-          ["Improved Stings", 3],
-          ["Efficiency", 2],
-          ["Careful Aim", 5],
-          ["Mortal Shots", 4]
-        ],
-        "Survival": [
-          ["Improved Tracking", 5]
-        ]
-      },
-      "core": [
-        {"talent": "Summon Hawk", "why": "60 DPS lost without it (7% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Careful Aim", "why": "49 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Lethal Attacks", "why": "42 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Deadly Aspects", "why": "40 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Unleashed Fury", "why": "37 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Improved Tracking", "why": "35 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Mortal Shots", "why": "28 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Ferocity", "why": "27 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
-      ],
-      "flex": [],
-      "notes": ["+4.1% over the best hand draft of the spec, mm-hawk-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (bm-raid, full raid): 27/19/5 (Beast-Marks (a Beast Mastery/Marksmanship hybrid)) at 903.1 DPS; beast-mastery-ml-parse 895.2, beast-marks-ml-raid 889.7, mm-hawk-raid 867.7, beast-mastery-raid 866.9 in the same fights; 4,434 builds simulated, 2 independent runs reached the top.", "The spec's other builds on the pages (their best entry, full raid): bm-mm-raid 851.8, opt-mm-raid-raid-dps 851.8.", "The bm-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): mm-raid -1.1%, mm-lonewolf-raid -1.7%, melee-dps -31.9%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Endurance Training, Improved Aspect of the Monkey, Pathfinding, Lone Wolf.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever b0f0df3 with this project's patches), not in-game measurements.", "2026-10-07 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Lone Wolf -> Efficiency (mana); Pathfinding -> Endurance Training (survival). Net +0.02% on a third seed."],
-      "open_questions": ["An open-search Beast-Marks build: check it against the community's Beast-Marks builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/hunter/60/532110050510022-00531500104-5-4"],
-      "replaces": "mm-hawk-raid"
-    },
-    {
-      "id": "beast-survival-open-raid",
-      "name": "Beast-Survival — Raid (open talent search)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Hybrid Beast Mastery/Survival",
-      "generated": "2026-10-07",
-      "derived": "raid",
-      "summary": "The Beast-Survival (a Beast Mastery/Survival hybrid) raid build the open talent search found on 2026-10-07: every legal 51-point build with no tree rule, searched in the community simulator's melee-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +7.5% over melee-survival-raid, the best of our builds in that rotation.",
-      "allocation": {
-        "Beast Mastery": [
-          ["Deadly Aspects", 5],
-          ["Improved Aspect of the Monkey", 3],
-          ["Unleashed Fury", 5],
-          ["Summon Hawk", 1],
-          ["Endurance Training", 2]
-        ],
-        "Marksmanship": [
-          ["Lethal Attacks", 5],
-          ["Careful Aim", 5],
-          ["Lone Wolf", 1]
-        ],
-        "Survival": [
-          ["Improved Tracking", 5],
-          ["Savage Strikes", 2],
-          ["Survivalist", 3],
-          ["Clever Traps", 2],
-          ["Surefooted", 3],
-          ["Predator's Edge", 5],
-          ["Expose Prey", 2],
-          ["Survivalist's Discipline", 1],
-          ["Strider Kick", 1]
-        ]
-      },
-      "core": [
-        {"talent": "Lone Wolf", "why": "182 DPS lost without it (16% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Summon Hawk", "why": "122 DPS lost without it (11% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Predator's Edge", "why": "112 DPS lost without it (10% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Expose Prey", "why": "93 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Deadly Aspects", "why": "84 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Careful Aim", "why": "59 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Lethal Attacks", "why": "55 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Strider Kick", "why": "54 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."}
-      ],
-      "flex": [],
-      "notes": ["Open search result (melee-dps, full raid): 16/11/24 (Beast-Survival (a Beast Mastery/Survival hybrid)) at 1117.7 DPS; melee-survival-raid 1039.6, survival-ml-parse 1039.6, survival-raid 1021.7, opt-melee-dps-raid-dps 1015.4 in the same fights; 4,445 builds simulated, 2 independent runs reached the top.", "The melee-dps raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): mm-raid -49.8%, mm-lonewolf-raid -49.6%, bm-raid -49.6%; none adopted.", "A phase-1 BiS set picked for this family (_reference/data/raidsim/gear_sets/forever/tiers/hunter-hybrid-beast-mastery-survival-bis.gear.json, item level 67.2): 1103.5 DPS against 1114.2 in the rotation's standard set: the standard set stays.", "The search ran before 2026-10-06, when the bench's target got a creature type (an Elemental): Improved Tracking measured 0 in it and is +5% damage against every raid creature type but Mechanical since (+4.9% for this build in a full raid). The search's numbers above are from that run; the page's numbers come from the re-race. Re-run the search (family_search.py --fresh) to value the talent in the search itself.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Focused Fire, Improved Aspect of the Monkey, Survivalist.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever b0f0df3 with this project's patches), not in-game measurements.", "2026-10-07 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Focused Fire -> Endurance Training (survival); Focused Fire -> Endurance Training (survival). Net +0.00% on a third seed."],
-      "open_questions": ["An open-search Beast-Survival build: check it against the community's Beast-Survival builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/hunter/60/50230005001-005005001-5002302300500211-4"]
-    },
-    {
       "id": "beast-marks-open-leveling",
       "name": "Beast-Marks — Leveling (open talent search)",
       "role": "dps",
@@ -2096,6 +1997,152 @@
       "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 24.02; opt-melee-dps-solo-60 26.24, leveling-melee 26.31, opt-bm-leveling-leveling-aoe 29.88. The search simulated 48,123 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Beast-Survival leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/hunter", "https://talentsforever.com/hunter/60/35200005041002-005-530200230140202-6"]
+    },
+    {
+      "id": "marksmanship-with-a-pet-open-raid",
+      "name": "Marksmanship — With a pet (open talent search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Marksmanship",
+      "generated": "2026-10-09",
+      "derived": "raid",
+      "summary": "The Marksmanship raid build the open talent search found on 2026-10-09: every legal 51-point build with no tree rule, searched in the community simulator's mm-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +9.3% over bm-mm-raid, the best of our builds in that rotation.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Focused Fire", 2]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Improved Stings", 3],
+          ["Efficiency", 2],
+          ["Careful Aim", 5],
+          ["Rapid Killing", 2],
+          ["Improved Arcane Shot", 5],
+          ["Trueshot Aura", 1],
+          ["Mortal Shots", 5],
+          ["Rapid Recuperation", 2],
+          ["Barrage", 3],
+          ["Ranged Weapon Specialization", 5],
+          ["Sniper Shot", 1]
+        ],
+        "Survival": [
+          ["Improved Tracking", 5]
+        ]
+      },
+      "core": [
+        {"talent": "Careful Aim", "why": "54 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Sniper Shot", "why": "43 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Lethal Attacks", "why": "42 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Mortal Shots", "why": "40 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Deadly Aspects", "why": "38 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Improved Tracking", "why": "36 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Ranged Weapon Specialization", "why": "31 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Rapid Recuperation", "why": "29 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["The best with a pet build: +9.3% over bm-mm-raid, the best of our builds in mm-raid. The spec's raid pick may be another variant; the page lists this one among the spec's other builds.", "Open search result (mm-raid, full raid): 7/39/5 (Marksmanship) at 880.9 DPS; bm-mm-raid 806.2, opt-mm-raid-raid-dps 806.2, bm-mm-full-buffs-raid 802.2 in the same fights; 4,317 builds simulated, 2 independent runs reached the top.", "The mm-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): mm-lonewolf-raid +0.4%, bm-raid -3.0%, melee-dps -53.5%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Rapid Killing.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements."],
+      "open_questions": ["An open-search Marksmanship build: check it against the community's Marksmanship builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/hunter/60/502-0053252501523051-5-4"]
+    },
+    {
+      "id": "beast-marks-open-raid",
+      "name": "Beast-Marks — Raid (open talent search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Hybrid Beast Mastery/Marksmanship",
+      "generated": "2026-10-09",
+      "derived": "raid",
+      "summary": "The Beast-Marks (a Beast Mastery/Marksmanship hybrid) raid build the open talent search found on 2026-10-09: every legal 51-point build with no tree rule, searched in the community simulator's bm-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.4% over beast-marks-open-raid, the best of our builds in that rotation.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Endurance Training", 5],
+          ["Focused Fire", 2],
+          ["Improved Aspect of the Monkey", 1],
+          ["Unleashed Fury", 5],
+          ["Ferocity", 5],
+          ["Bestial Discipline", 2],
+          ["Frenzy", 2]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Improved Stings", 3],
+          ["Careful Aim", 5],
+          ["Improved Arcane Shot", 3],
+          ["Mortal Shots", 5]
+        ],
+        "Survival": [
+          ["Improved Tracking", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Careful Aim", "why": "49 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Lethal Attacks", "why": "42 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Mortal Shots", "why": "38 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Deadly Aspects", "why": "36 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Frenzy", "why": "29 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Bestial Discipline", "why": "26 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Unleashed Fury", "why": "23 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Ferocity", "why": "19 DPS lost without it (2% of the build in a full raid; removal, 12,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["+5.9% over the best hand draft of the spec, mm-hawk-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (bm-raid, full raid): 27/21/3 (Beast-Marks (a Beast Mastery/Marksmanship hybrid)) at 855.0 DPS; beast-marks-open-raid 843.3, beast-mastery-ml-parse 842.6, beast-marks-ml-raid 833.3, beast-mastery-raid 810.0, mm-hawk-raid 807.3 in the same fights; 4,589 builds simulated, 2 independent runs reached the top.", "The spec's other builds on the pages (their best entry, full raid): bm-mm-raid 806.2, opt-mm-raid-raid-dps 806.2.", "The bm-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): mm-raid +0.0%, mm-lonewolf-raid +0.2%, melee-dps -46.6%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Endurance Training, Improved Aspect of the Monkey, Improved Revive Pet, Improved Mend Pet.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements.", "2026-10-09 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Mend Pet -> Endurance Training (survival); Improved Revive Pet -> Endurance Training (survival); Improved Revive Pet -> Endurance Training (survival). Net +0.00% on a third seed."],
+      "open_questions": ["An open-search Beast-Marks build: check it against the community's Beast-Marks builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/hunter/60/522102051500022-00530503005-3-4"],
+      "replaces": "mm-hawk-raid"
+    },
+    {
+      "id": "beast-survival-open-raid",
+      "name": "Beast-Survival — Raid (open talent search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Hybrid Beast Mastery/Survival",
+      "generated": "2026-10-09",
+      "derived": "raid",
+      "summary": "The Beast-Survival (a Beast Mastery/Survival hybrid) raid build the open talent search found on 2026-10-09: every legal 51-point build with no tree rule, searched in the community simulator's melee-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). ",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Endurance Training", 2],
+          ["Improved Aspect of the Monkey", 3],
+          ["Unleashed Fury", 5],
+          ["Summon Hawk", 1]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Careful Aim", 5],
+          ["Lone Wolf", 1]
+        ],
+        "Survival": [
+          ["Improved Tracking", 5],
+          ["Savage Strikes", 2],
+          ["Survivalist", 3],
+          ["Clever Traps", 2],
+          ["Surefooted", 3],
+          ["Predator's Edge", 5],
+          ["Expose Prey", 2],
+          ["Survivalist's Discipline", 1],
+          ["Strider Kick", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Lone Wolf", "why": "172 DPS lost without it (16% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Predator's Edge", "why": "114 DPS lost without it (11% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Expose Prey", "why": "97 DPS lost without it (9% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Deadly Aspects", "why": "85 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Careful Aim", "why": "59 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Strider Kick", "why": "54 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Summon Hawk", "why": "53 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Lethal Attacks", "why": "50 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["Open search result (melee-dps, full raid): 16/11/24 (Beast-Survival (a Beast Mastery/Survival hybrid)) at 1050.7 DPS; melee-survival-raid 1047.8, survival-raid 1028.2, opt-melee-dps-raid-dps 1016.6, survival-ml-parse 998.8 in the same fights; 8,204 builds simulated, 3 independent runs reached the top.", "Sibling rotations tried on it (10,000 fights): mm-raid -53.6%, mm-lonewolf-raid -54.0%, bm-raid -53.3%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Endurance Training, Improved Aspect of the Monkey, Survivalist.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements."],
+      "open_questions": ["An open-search Beast-Survival build: check it against the community's Beast-Survival builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/hunter/60/52030005001-005005001-5002302300500211-4"]
     }
   ]
 }

@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Beast-Survival (a Beast Mastery/Survival hybrid) raid build the open talent search found on 2026-10-07: every legal 51-point build with no tree rule, searched in the community simulator's melee-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +7.5% over melee-survival-raid, the best of our builds in that rotation.
+The Beast-Survival (a Beast Mastery/Survival hybrid) raid build the open talent search found on 2026-10-09: every legal 51-point build with no tree rule, searched in the community simulator's melee-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). 
 
 ## Point allocation
 
@@ -20,10 +20,10 @@ The Beast-Survival (a Beast Mastery/Survival hybrid) raid build the open talent 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Deadly Aspects** | 5/5 | **NEW** | While Aspect of the Hawk is active, Auto Shot has a 10% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by 30% for 12 sec. |
+| **Endurance Training** | 2/5 | changed | Increases the Health and Armor of your pets by 6%. |
 | **Improved Aspect of the Monkey** | 3/3 | changed | Increases the Dodge bonus of your Aspect of the Monkey by 6%. Additionally, your pet gains 50% of the effect of your Aspect of the Monkey ability. |
 | **Unleashed Fury** | 5/5 | changed | Increases the damage done by your pets and hawks by 15%. |
 | **Summon Hawk** | 1/1 | **NEW** | Command a hawk to dive-bomb your targeted enemy, dealing 32 plus 5% of your Ranged Attack Power Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot. |
-| **Endurance Training** | 2/5 | changed | Increases the Health and Armor of your pets by 6%. |
 
 ### Marksmanship (11)
 
@@ -49,14 +49,14 @@ The Beast-Survival (a Beast Mastery/Survival hybrid) raid build the open talent 
 
 ## Core talents (priority order)
 
-1. **Lone Wolf** — 182 DPS lost without it (16% of the build in a full raid; removal, 12,000 fights).
-2. **Summon Hawk** — 122 DPS lost without it (11% of the build in a full raid; removal, 12,000 fights).
-3. **Predator's Edge** — 112 DPS lost without it (10% of the build in a full raid; removal, 12,000 fights).
-4. **Expose Prey** — 93 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights).
-5. **Deadly Aspects** — 84 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights).
-6. **Careful Aim** — 59 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights).
-7. **Lethal Attacks** — 55 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights).
-8. **Strider Kick** — 54 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights).
+1. **Lone Wolf** — 172 DPS lost without it (16% of the build in a full raid; removal, 12,000 fights).
+2. **Predator's Edge** — 114 DPS lost without it (11% of the build in a full raid; removal, 12,000 fights).
+3. **Expose Prey** — 97 DPS lost without it (9% of the build in a full raid; removal, 12,000 fights).
+4. **Deadly Aspects** — 85 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights).
+5. **Careful Aim** — 59 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights).
+6. **Strider Kick** — 54 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights).
+7. **Summon Hawk** — 53 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights).
+8. **Lethal Attacks** — 50 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights).
 
 ## Rank among our builds and the community simulator's
 
@@ -117,14 +117,10 @@ Damage by ability:
 
 ## Notes
 
-- Open search result (melee-dps, full raid): 16/11/24 (Beast-Survival (a Beast Mastery/Survival hybrid)) at 1117.7 DPS; melee-survival-raid 1039.6, survival-ml-parse 1039.6, survival-raid 1021.7, opt-melee-dps-raid-dps 1015.4 in the same fights; 4,445 builds simulated, 2 independent runs reached the top.
-- The melee-dps raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.
-- Sibling rotations tried on it (10,000 fights): mm-raid -49.8%, mm-lonewolf-raid -49.6%, bm-raid -49.6%; none adopted.
-- A phase-1 BiS set picked for this family (_reference/data/raidsim/gear_sets/forever/tiers/hunter-hybrid-beast-mastery-survival-bis.gear.json, item level 67.2): 1103.5 DPS against 1114.2 in the rotation's standard set: the standard set stays.
-- The search ran before 2026-10-06, when the bench's target got a creature type (an Elemental): Improved Tracking measured 0 in it and is +5% damage against every raid creature type but Mechanical since (+4.9% for this build in a full raid). The search's numbers above are from that run; the page's numbers come from the re-race. Re-run the search (family_search.py --fresh) to value the talent in the search itself.
-- Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Focused Fire, Improved Aspect of the Monkey, Survivalist.
-- Simulator numbers are the community's model of the beta (ElliotWood/Forever b0f0df3 with this project's patches), not in-game measurements.
-- 2026-10-07 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Focused Fire -> Endurance Training (survival); Focused Fire -> Endurance Training (survival). Net +0.00% on a third seed.
+- Open search result (melee-dps, full raid): 16/11/24 (Beast-Survival (a Beast Mastery/Survival hybrid)) at 1050.7 DPS; melee-survival-raid 1047.8, survival-raid 1028.2, opt-melee-dps-raid-dps 1016.6, survival-ml-parse 998.8 in the same fights; 8,204 builds simulated, 3 independent runs reached the top.
+- Sibling rotations tried on it (10,000 fights): mm-raid -53.6%, mm-lonewolf-raid -54.0%, bm-raid -53.3%; none adopted.
+- Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Endurance Training, Improved Aspect of the Monkey, Survivalist.
+- Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements.
 
 ## Open questions (verify in the live game)
 
@@ -133,7 +129,7 @@ Damage by ability:
 ## Sources
 
 - <https://github.com/ElliotWood/Forever>
-- <https://talentsforever.com/hunter/60/50230005001-005005001-5002302300500211-4>
+- <https://talentsforever.com/hunter/60/52030005001-005005001-5002302300500211-4>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

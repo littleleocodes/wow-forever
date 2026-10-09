@@ -1,0 +1,227 @@
+{
+ "class": "warlock",
+ "about": "Hand-written rotation guides for the warlock's player pages (guides.py).",
+ "guides": {
+  "Affliction": {
+   "raid": {
+    "plan": "Affliction in a raid keeps **Curse of the Elements** and three damage-over-time spells on the boss and fills every gap with **Shadow Bolt**, about half your damage, with a Succubus out. Apart from **Amplify Curse**, your Affliction talents add no buttons: they make your dots and Shadow spells hit harder.",
+    "why": [
+     "**Curse of the Elements** goes up first: one cast lasts 5 minutes and makes the boss take 10% more damage from every magic school, Shadow and Fire alike (Curse of Shadow is gone in Forever). It is a Curse and **Bane of Agony** is a Bane, so both stay on the boss together; the simulator measured the curse 0.2% better at the top of the list.",
+     "**Life Tap** waits until you are below 10% mana: every tap is a global cooldown with no damage, so the later you tap, the less mana you leave unspent when the boss dies. It stops 6 seconds before the end (the simulator measured that 0.25% better), and a mana potion below 75% mana or a Demonic Rune below 60% comes first.",
+     "**Amplify Curse** goes before the pull and again whenever it comes back (3-minute cooldown): it makes your next **Bane of Agony** 50% stronger. Its 30 seconds outlast the 24-second Bane, so pressing it early never wastes it.",
+     "**Bane of Agony** starts weak and grows over its 24 seconds, so recast it only once it has run out: refreshing it early throws away its strongest ticks. **Corruption** is instant with 5 points in **Improved Corruption**, so it goes back up the moment it drops.",
+     "Start a new **Immolate** when less time is left on the old one than its cast (1.5 seconds with the **Bane** talent), so the new one lands about as the old one ends.",
+     "**Shadow Bolt** is the filler. Its critical strikes trigger **Improved Shadow Bolt** (20% more Shadow damage from you for 12 seconds, your dots included), and **Malevolence** and **Ruin** make those crits more frequent and bigger. With **Nightfall**, as in the other build below, a proc makes your next **Shadow Bolt** instant: the list needs no change."
+    ],
+    "caveats": [
+     "**Searing Pain** has no cooldown: the rotation casts it only in the last 3.5 seconds, where its 1.5-second cast lands before the boss dies and a **Shadow Bolt** might not. Never use it as a filler: it does less damage per second of casting than **Shadow Bolt** and causes a high amount of threat.",
+     "Your Succubus does about 8% of your damage with her attacks and **Lash of Pain**, and she takes 17% of your spell damage as attack power and 10% as spell damage. If she dies with less than about two minutes of the fight left, finish without her: a 10-second **Summon Succubus** costs about as much damage as she would add.",
+     "Moving costs you **Shadow Bolt** casts, so move with your instants: **Corruption**, **Bane of Agony**, **Curse of the Elements**, **Amplify Curse** and **Life Tap**.",
+     "The simulator measured only one boss. On a second target that lives a while, an instant **Corruption** and **Bane of Agony** add damage for one global cooldown each; **Bane of Doom** takes the same Bane slot and deals its damage only after a full minute, and the simulated rotations keep **Bane of Agony**."
+    ],
+    "diverge": [
+     "Near the end of a fight, start no dot the boss will not outlive: on the training dummy the simulator measured it better to start no **Immolate** in the last 20 seconds and no **Corruption** in the last 10. Cast **Shadow Bolt** then, and **Searing Pain** in the last 3.5 seconds.",
+     "A boss needs only one **Curse of the Elements** (in Classic two never stacked): if another warlock keeps it up, take the curse your raid gives you, such as **Curse of Recklessness** for the physical fighters or **Curse of Tongues** on a caster boss.",
+     "When healing is tight, each **Life Tap** costs health someone must heal: use your mana potion and Demonic Rune before you tap."
+    ],
+    "rotations": {
+     "affliction-raid": "1e87f29537b5"
+    },
+    "written": "2026-10-09"
+   },
+   "leveling": {
+    "plan": "Affliction levels by letting its damage-over-time spells do the killing while the Voidwalker holds the mob: you put **Corruption**, **Bane of Agony** and **Siphon Life** on it, add **Immolate** when mana allows, and shoot your wand while they tick.",
+    "why": [
+     "Send the Voidwalker in first: its **Torment** holds the mob while you stand at range, and your dots build threat slowly enough that it keeps the mob. Open with **Amplify Curse** whenever it is ready (3-minute cooldown): it makes that fight's **Bane of Agony** 50% stronger.",
+     "**Corruption** and **Bane of Agony** do about half your damage at 60, and **Siphon Life** (from level 30) another tenth while it heals you. Skip **Corruption** on a mob below about a third of its health: it dies before the spell pays for its mana (the fight lab measured that about 1% faster).",
+     "**Immolate** comes last, only on a mob above about half its health and while you have more than half your mana: it is your weakest dot for its cost, about 5% of your damage at 60.",
+     "Your wand is the filler, not **Shadow Bolt**: the fight lab measured kills about 7% faster with no **Shadow Bolt** at all. The wand costs no mana, so you spend less time getting mana back while the dots do the killing.",
+     "**Drain Life** is for when you are hurt, not for damage. Between fights, **Life Tap** back to about 70% mana while your health stays above 60%, and eat only below a third of your health: **Siphon Life** and **Drain Life** win the health back during the next fight."
+    ],
+    "caveats": [
+     "This build has no **Wrack**, so skip that line: the fight lab also measured kills about 6.5% faster when a build that has it never casts it, since its 6-second channel holds you in place for little damage.",
+     "When a mob reaches you, cast **Death Coil** if you are below about 60% health (it heals you for its damage); otherwise let the Voidwalker's **Torment** take it back. The fight lab measured never casting **Fear** about 1.5% faster.",
+     "**Curse of the Elements** does not pay while leveling: the fight lab measured kills up to 3% slower at levels 50-60 with it, because the mob dies before the curse repays its global cooldown and mana.",
+     "Pulls of several mobs with **Rain of Fire** were slower than single pulls at level 40 in the fight lab and only about 10% faster at 60, with about one death per ten kills: pull one mob at a time."
+    ],
+    "diverge": [
+     "Finish a nearly dead mob with the wand; start no new spell on it.",
+     "Below about a third of your health with a mob on you, use a Healthstone (**Create Healthstone** between fights).",
+     "If the Voidwalker dies, summon a new one before the next pull rather than fight without your tank, and heal a hurt one between fights with **Consume Shadows** (not usable in combat) or **Health Funnel**."
+    ],
+    "rotations": {
+     "leveling:affliction-leveling": "d92d88627e8b",
+     "leveling:demonology-leveling": "cec5b7b670ce",
+     "leveling:destruction-leveling": "c8c11a56cbbb"
+    },
+    "written": "2026-10-09"
+   }
+  },
+  "Demonology": {
+   "raid": {
+    "plan": "Demonology in a raid is a **Shadow Bolt** caster with two demons' worth of bonuses: you sacrifice the Imp for 15% more Shadow damage, and **Demonic Pact** keeps that buff while your Succubus fights. Then you keep **Curse of the Elements** and your dots up and cast **Shadow Bolt**.",
+    "why": [
+     "Before the pull: summon the Imp, use **Demonic Sacrifice** (+15% Shadow damage for 2 hours), then summon the Succubus and turn on **Soul Link**. **Demonic Pact** keeps the sacrifice while a different demon is out, but summoning the Imp again cancels it; the simulator measured about 10% less damage without the sacrifice.",
+     "The Succubus earns her place: while she is out, **Master Demonologist** gives you and her 10% more Shadow damage, **Soul Link** 3% more damage and **Demonic Knowledge** 60 more spell damage at level 60. She takes 17% of your spell damage as attack power and 10% as spell damage, and her attacks and **Lash of Pain** add about 9% of your damage.",
+     "**Curse of the Elements** goes up first: 10% more damage from every magic school for 5 minutes, and as a Curse it sits beside your **Bane of Agony**. **Life Tap** waits until you are below 5% mana: every tap is a global cooldown with no damage, and the simulator measured tapping at 5% about 0.5% better than at 10%.",
+     "**Bane of Agony** grows over its 24 seconds, so recast it only once it has run out. **Corruption** (a 1.6-second cast with this build's single point of **Improved Corruption**) goes back up when less time is left on it than its cast, but not in the last 10 seconds.",
+     "**Immolate** is Fire, so none of your Shadow bonuses reach it, and it only just pays: the simulator measured this spec better without it when it was recast to the very end, and better with it when you stop 20 seconds before the end. Start it when less than its 1.5-second cast is left on the old one.",
+     "**Shadow Bolt** is the filler because every bonus you stacked is Shadow: the sacrificed Imp, **Master Demonologist** and **Improved Shadow Bolt**'s 20% after your own crits. **Decimation** adds 6% to it once the boss is below 35% health."
+    ],
+    "caveats": [
+     "**Searing Pain** has no cooldown: the rotation casts it only in the last 3.5 seconds, when its 1.5-second cast lands before the boss dies and a **Shadow Bolt** might not. So **Demonic Brand** and the **Soul Fire** half of **Decimation** do nothing here: they are points on the way to deeper talents, and the simulator found **Soul Fire** a loss wherever it tried it.",
+     "If the Succubus dies, summon her again unless the boss is about to die (6 seconds with **Master Summoner**) and turn **Soul Link** back on: without a demon you lose **Master Demonologist**, **Soul Link**, **Demonic Knowledge** and her own damage. Never summon the Imp during the fight: that cancels your sacrifice even with **Demonic Pact**.",
+     "Summon her after your buffs, wizard oil and Spellstone (**Create Spellstone**) are on: in this project's model a demon copies its share of your spell damage when it is summoned. Forever lets the Spellstone stack with the oil, and the simulator measured about 3% more damage from it.",
+     "On the move, **Bane of Agony**, **Curse of the Elements** and **Life Tap** are instant; **Corruption** is not in this build, so keep it for when you stand still."
+    ],
+    "diverge": [
+     "In the last 20 seconds start no new **Immolate**, and in the last 10 no **Corruption**: cast **Shadow Bolt**, then **Searing Pain** in the last 3.5 seconds.",
+     "A boss needs only one **Curse of the Elements** (in Classic two never stacked): if another warlock keeps it up, take the curse your raid gives you, such as **Curse of Recklessness** for the physical fighters."
+    ],
+    "rotations": {
+     "demonology-raid": "0077e0a9b76b"
+    },
+    "written": "2026-10-09"
+   },
+   "leveling": {
+    "plan": "Demonology levels like Affliction with a stronger Voidwalker: the same dots from your 21 Affliction points, while **Demonic Knowledge**, **Soul Link**, **Master Demonologist** and **Unholy Power** make you and the Voidwalker hit harder and take less damage. From level 49, **Demonic Brand** turns **Searing Pain** into extra damage from the Voidwalker.",
+    "why": [
+     "Until level 30 this order is pure Affliction, and the dots stay the core: Voidwalker in first, **Amplify Curse** before the pull when it is ready, then **Corruption**, **Bane of Agony** and, from 30, **Siphon Life**. Skip **Corruption** on a mob below about a third of its health: it dies before the spell pays for its mana.",
+     "**Searing Pain** with **Demonic Brand** brands the mob for 10 seconds: the Voidwalker's next attacks (6 with all 3 points, from level 55) each deal about 65 extra damage at level 60, and the brand halves **Searing Pain**'s own threat. Recast it whenever the brand is gone and the Voidwalker is hitting the mob; the fight lab measured 3 talent points moved into **Demonic Brand** at about 3% faster kills.",
+     "**Immolate** also goes on while you have more than half your mana; the fight lab casts it after the other dots.",
+     "**Shadow Bolt** only when your mana is nearly full (above 80% in the fight lab), the wand otherwise: the dots do the killing and the wand costs nothing. When a mob has too little health left for a **Shadow Bolt**, the fight lab casts **Searing Pain** instead.",
+     "The Demonology talents work on their own: **Soul Link** (from 51) moves 30% of the damage you take to the Voidwalker and adds 3% damage for both, **Demonic Energies** heals it for 15% of your spell damage and gives it the mana your **Life Tap** gives you, and **Master Demonologist** with the Voidwalker cuts physical damage taken by 10% for both. **Demonic Sacrifice** is only the step to **Soul Link**: never sacrifice your tank."
+    ],
+    "caveats": [
+     "This build has no **Decimation**, so the **Soul Fire** line does not apply: without it **Soul Fire** is a 6-second cast on a 1-minute cooldown, and the fight lab never casts it for this build.",
+     "**Improved Imp** does nothing while the Voidwalker is out: those 3 points only help reach the deeper talents.",
+     "When a mob reaches you, cast **Death Coil** if you are below about 60% health (it heals you for its damage), otherwise **Fear** it and let the Voidwalker take it back."
+    ],
+    "diverge": [
+     "If the Voidwalker dies, finish the mob with dots, **Death Coil** and the wand, and summon a new one before the next pull: without a demon out you also lose **Demonic Knowledge**, **Soul Link** and **Master Demonologist**.",
+     "Finish a nearly dead mob with the wand or **Searing Pain**; start no new dot on it."
+    ],
+    "rotations": {
+     "leveling:affliction-leveling": "d92d88627e8b",
+     "leveling:demonology-leveling": "cec5b7b670ce",
+     "leveling:destruction-leveling": "c8c11a56cbbb"
+    },
+    "written": "2026-10-09"
+   }
+  },
+  "Destruction": {
+   "raid": {
+    "plan": "Destruction in a raid is still a **Shadow Bolt** spec: you sacrifice the Imp for 15% more Shadow damage, keep **Immolate** on the boss so **Conflagrate** can go out every 10 seconds, and let **Shadow and Flame** turn each **Conflagrate** into 10% more Shadow damage.",
+    "why": [
+     "Before the pull: summon the Imp, use **Demonic Sacrifice** (+15% Shadow damage for 2 hours; summoning any demon ends it), then **Life Tap** once so you start full. Put a Spellstone (**Create Spellstone**) on your weapon on top of your wizard oil: Forever lets them stack, and the simulator measured about 3% more damage. This build has no **Amplify Curse**; without the sacrifice the simulator measured about 10% less damage.",
+     "**Curse of the Elements** goes up first: 10% more damage from every magic school, Fire and Shadow alike, and as a Curse it sits beside your **Bane of Agony**. **Life Tap** waits until you are below 5% mana (the simulator measured that 0.4% better than 10%), and **Improved Life Tap** adds 20% to each tap.",
+     "**Bane of Agony** grows over its 24 seconds, so recast it only once it has run out. **Corruption** (0.8 seconds with 3 points in **Improved Corruption**) goes back up when it is about to run out, but not in the last 10 seconds.",
+     "**Immolate** matters as much for **Conflagrate**, which needs it on the target, as for its own damage: start a new one when less than its cast (1.5 seconds with the **Bane** talent) is left on the old one, but not in the last 20 seconds. Both end-of-fight cut-offs measured small gains.",
+     "**Conflagrate** goes out whenever it is ready. With 5 points in **Shadow and Flame** it no longer eats your **Immolate**, and each hit gives you 10% more Shadow damage for 20 seconds, twice its cooldown; **Fire and Brimstone** and **Ruin** make its crits frequent and big. The simulator measured adding it at about 8% more damage.",
+     "**Shadow Bolt** is the filler, not **Incinerate**: the sacrificed Imp, **Improved Shadow Bolt** and **Shadow and Flame** raise Shadow damage only. Even the Incinerate build's own rotation search put **Shadow Bolt** ahead of **Incinerate** in a raid."
+    ],
+    "caveats": [
+     "The last seconds belong to quick spells: with 3.5 seconds left the rotation casts **Searing Pain** (a 1.5-second cast) and with 1.5 left an instant **Shadowburn**, because a **Shadow Bolt** still casting when the boss dies does nothing. Neither belongs earlier in the fight.",
+     "**Shadowburn** on cooldown measured worse in the fire rotation (about 0.8%): it costs nearly as much mana as **Shadow Bolt** for about two thirds of the damage. Keep it for the last global cooldown, or for a moment when you must move.",
+     "With the Imp sacrificed you play without a demon: any summon ends the buff, so if you die, summon the Imp and sacrifice it again before the next pull.",
+     "On the move, **Bane of Agony**, **Curse of the Elements**, **Conflagrate**, **Shadowburn** and **Life Tap** are instant; **Corruption** still has a 0.8-second cast in this build."
+    ],
+    "diverge": [
+     "If you play the Incinerate build listed above instead, it still fills with **Shadow Bolt** in a raid: its full-raid rotation adds **Shadowburn** on cooldown (with 10 or more seconds left) and keeps **Shadow Bolt** ahead of **Incinerate**.",
+     "A boss needs only one **Curse of the Elements** (in Classic two never stacked): if another warlock keeps it up, take the curse your raid gives you, such as **Curse of Recklessness** for the physical fighters."
+    ],
+    "rotations": {
+     "fire-destro-raid": "2ea8a5946f06",
+     "sb-raid": "053cdc613b86",
+     "incinerate-raid": "cc3bd67667b2"
+    },
+    "written": "2026-10-09"
+   },
+   "leveling": {
+    "plan": "Destruction levels with the same Voidwalker and Affliction dots as the other specs, since its first 21 points are Affliction, and adds a hard-hitting **Immolate** and, from level 59, **Conflagrate**. This build takes neither **Incinerate** nor **Shadowburn**, so your filler is **Shadow Bolt** when your mana is nearly full and the wand otherwise.",
+    "why": [
+     "**Corruption** and **Bane of Agony** go first: both are instant (with 5 points in **Improved Corruption**) and cheap, and they give the Voidwalker time to build threat before your fire spells land. **Amplify Curse** before the pull makes that **Bane of Agony** 50% stronger, and **Siphon Life** joins at level 30. Skip **Corruption** on a mob below about a third of its health.",
+     "**Immolate** only while you have more than half your mana: the fight lab measured that about 2.5% faster per kill than casting it every time. **Aftermath** makes its first hit 50% stronger, and the fight lab holds it back while it would pull the mob off the Voidwalker.",
+     "**Conflagrate** (level 59 in this order) eats your **Immolate** in this build, so cast it when **Immolate** has about 3 seconds left, or to finish a burning mob it would kill. **Fire and Brimstone** (level 60) adds to its crit chance and **Ruin** doubles its crit bonus.",
+     "Your filler is **Shadow Bolt** above about 80% mana and the wand below it. When a mob has too little health left for a **Shadow Bolt**, the fight lab casts **Searing Pain** instead, also only with nearly full mana.",
+     "**Life Tap** when your mana runs short and your health is above 60%; between fights, **Life Tap** back up and heal the Voidwalker with **Health Funnel**. Eat below 40% health: the fight lab measured that a little faster than waiting longer."
+    ],
+    "caveats": [
+     "The steps' **Incinerate** and **Shadowburn** lines are for builds that take those talents: this one casts **Shadow Bolt** where they name **Incinerate** and finishes with **Conflagrate** or the wand. The talent search traded **Shadowburn** for a point of **Fire and Brimstone** and measured about 1% faster kills.",
+     "Until level 59 you have no **Conflagrate**: you play **Corruption**, **Bane of Agony**, **Siphon Life**, **Immolate**, then **Shadow Bolt** or the wand.",
+     "When a mob reaches you, cast **Death Coil** if you are hurt and let the Voidwalker take it back with **Torment**: the fight lab measured never casting **Fear** or **Drain Life** about 1% faster each. **Molten Skin** (10% less damage taken) and **Intensity** (casts that resist pushback) make those moments cheaper."
+    ],
+    "diverge": [
+     "If you take **Incinerate** later, the fight lab's rotation casts it in place of **Shadow Bolt** on a burning mob: it deals 25% more damage while **Immolate** is on the target.",
+     "Finish a nearly dead mob with the wand or **Conflagrate** instead of a new **Immolate**: the fight lab starts no **Immolate** on a mob below about a third of its health."
+    ],
+    "rotations": {
+     "leveling:affliction-leveling": "d92d88627e8b",
+     "leveling:demonology-leveling": "cec5b7b670ce",
+     "leveling:destruction-leveling": "c8c11a56cbbb"
+    },
+    "written": "2026-10-09"
+   }
+  },
+  "Hybrid Affliction/Destruction": {
+   "raid": {
+    "plan": "The Shadow Bolt hybrid is the classic DS/Ruin warlock (**Demonic Sacrifice** plus **Ruin**): the Imp sacrificed for 15% more Shadow damage, Affliction's instant **Corruption** and crit talents, and Destruction's **Bane**, **Improved Shadow Bolt** and **Ruin**. You keep **Curse of the Elements** and three dots up and cast **Shadow Bolt** the rest of the time, about half your damage.",
+    "why": [
+     "Before the pull: summon the Imp, use **Demonic Sacrifice** (+15% Shadow damage for 2 hours; summoning any demon ends it), then **Life Tap** once so you start full. This build has no **Amplify Curse**; the simulator measured about 11% less damage without the sacrifice.",
+     "**Curse of the Elements** goes up first: one cast lasts 5 minutes and makes the boss take 10% more damage from every magic school (Curse of Shadow is gone in Forever). As a Curse it sits beside your **Bane of Agony**, and the simulator measured it 0.3% better at the top of the list.",
+     "**Life Tap** waits until you are below 5% mana: every tap is a global cooldown with no damage, and the simulator measured tapping at 5% about 0.4% better than at 10%. **Improved Life Tap** adds 20% to each tap, and the list uses a mana potion below 75% mana and a Demonic Rune below 80%, never in the last 15 seconds.",
+     "**Bane of Agony** grows over its 24 seconds, so recast it only once it has run out. **Corruption** is instant with 5 points in **Improved Corruption** and goes back up the moment it drops, except in the last 10 seconds.",
+     "Start a new **Immolate** when less time is left on the old one than its cast (1.5 seconds with the **Bane** talent), so it lands as the old one ends, but start none in the last 20 seconds: it would not run long enough to beat a **Shadow Bolt**. Both end-of-fight cut-offs measured small gains.",
+     "**Shadow Bolt** is the filler: its crits trigger **Improved Shadow Bolt** (20% more Shadow damage from you for 12 seconds, your dots included), **Malevolence** makes them more frequent and **Ruin** doubles their bonus. **Pandemic** does the same for your dots' crits."
+    ],
+    "caveats": [
+     "**Searing Pain** has no cooldown: the rotation casts it only in the last 3.5 seconds, when its 1.5-second cast lands before the boss dies and a **Shadow Bolt** might not. Never use it as a filler: it does less damage per second of casting and causes a high amount of threat.",
+     "With the Imp sacrificed you play without a demon: any summon ends the buff, so if you die, summon the Imp and sacrifice it again before the next pull.",
+     "Put a Spellstone (**Create Spellstone**) on your weapon on top of your wizard oil: Forever lets them stack, and the simulator measured about 3% more damage.",
+     "On the move, use the instants: **Corruption**, **Bane of Agony**, **Curse of the Elements** and **Life Tap**."
+    ],
+    "diverge": [
+     "In the last 20 seconds start no new **Immolate**, and in the last 10 no **Corruption**: cast **Shadow Bolt**, then **Searing Pain** in the last 3.5 seconds.",
+     "A boss needs only one **Curse of the Elements** (in Classic two never stacked): if another warlock keeps it up, take the curse your raid gives you, such as **Curse of Recklessness** for the physical fighters.",
+     "When healing is tight, each **Life Tap** costs health someone must heal: use your mana potion and Demonic Rune before you tap."
+    ],
+    "rotations": {
+     "affliction-raid": "1e87f29537b5",
+     "fire-destro-raid": "2ea8a5946f06",
+     "sb-raid": "053cdc613b86",
+     "incinerate-raid": "cc3bd67667b2"
+    },
+    "written": "2026-10-09"
+   }
+  },
+  "Hybrid Affliction/Demonology": {
+   "leveling": {
+    "plan": "The classic warlock leveling split: Affliction's dots do the killing while a Voidwalker strengthened by Demonology holds the mob, and you shoot your wand between dots.",
+    "why": [
+     "Send the Voidwalker in first: **Torment** holds the mob, **Improved Voidwalker** makes **Torment** and **Consume Shadows** 30% stronger, **Unholy Power** and **Soul Link** make the Voidwalker hit harder, and **Demonic Knowledge** adds spell damage for you while it is out. Open with **Amplify Curse** whenever it is ready: it makes that fight's **Bane of Agony** 50% stronger.",
+     "**Corruption** and **Bane of Agony** do about half your damage at 60 and **Siphon Life** another tenth while it heals you; the fight lab rates **Siphon Life** and **Demonic Knowledge** as the build's most valuable talents at 60. Skip **Corruption** on a mob below about a third of its health.",
+     "**Immolate** comes last, only on a mob above about half its health and while you have more than half your mana: about 5% of your damage at 60.",
+     "Your wand is the filler, not **Shadow Bolt**: the fight lab measured kills about 7% faster with no **Shadow Bolt** at all, since the wand costs no mana and the dots do the killing.",
+     "Between fights, **Life Tap** back to about 70% mana while your health stays above 60%; **Demonic Energies** gives the Voidwalker the same mana and heals it for 15% of your spell damage. Heal it with **Consume Shadows** (not usable in combat) or **Health Funnel**, which **Improved Health Funnel** makes cheaper and threat-free."
+    ],
+    "caveats": [
+     "This build has no **Wrack**, so skip that line: the fight lab also measured kills about 6.5% faster when a build that has it never casts it.",
+     "When a mob reaches you, cast **Death Coil** if you are below about 60% health (it heals you for its damage); otherwise let **Torment** take it back. The fight lab measured never casting **Fear** about 1.5% faster.",
+     "**Curse of the Elements** costs more than it gives while leveling (up to 3% slower kills at levels 50-60 in the fight lab). **Curse of Exhaustion** (level 56) slows a mob by 30% for a runner or for kiting, which the fight lab does not simulate.",
+     "**Improved Sayaad** and **Improved Felhunter** only help other demons, and **Decimation** only **Soul Fire** and **Shadow Bolt**, which this rotation skips: the fight lab finds no use for them with the Voidwalker."
+    ],
+    "diverge": [
+     "If the Voidwalker dies mid-fight, **Fel Domination** (5-minute cooldown) with **Master Summoner** cuts the 10-second summon to about half a second: put a new one up at once.",
+     "Below about a third of your health with a mob on you, use a Healthstone (**Create Healthstone** between fights).",
+     "Finish a nearly dead mob with the wand; start no new spell on it."
+    ],
+    "rotations": {
+     "leveling:affliction-leveling": "d92d88627e8b",
+     "leveling:demonology-leveling": "cec5b7b670ce",
+     "leveling:destruction-leveling": "c8c11a56cbbb"
+    },
+    "written": "2026-10-09"
+   }
+  }
+ }
+}

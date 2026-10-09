@@ -144,12 +144,12 @@ def main():
                "| Class | Spec model | Best of our builds | DPS | Best sim preset | DPS | Our optimizer build | DPS |", "|---|---|---|---|---|---|---|---|"]
     classic_rows = []
     env_rows = []
-    for cls in classes:
+    for cls in sorted(CLASSES):   # the summary covers every class, the sections only the classes asked for (2026-10-09: a one-class run cut it)
         reports = load(cls)
         if not reports:
             continue
         classic = load(cls, "classic-era")
-        text = render(cls, reports, classic)
+        text = render(cls, reports, classic) if cls in classes else None
         for r in load_env(cls) + load_env(cls, "classic-era"):
             game = "Forever" if r.get("game", "forever") == "forever" else "Classic"
             ours = [x for x in r["results"] if x["ours"] and x["dps"].get("max")]
@@ -173,8 +173,9 @@ def main():
             bt_d = f"{bt['dps']:.0f}" if bt else "-"
             classic_rows.append(f"| {cls} | `{r['spec']}` | {('`' + bo['label'] + '`') if bo else '-'} | {bo_d} | "
                                 f"{bt['label'].replace('sim preset: ', '') if bt else '-'} | {bt_d} | {split}{unm} |")
-        rs.splice_ordered(paths.scenario_readme(cls, "raid"), "raid", "## Raid sim", text)
-        rs.drop(ROOT / cls / "README.md", "## Raid sim")   # moved to raid/README.md (2026-09-27 layout)
+        if text is not None:
+            rs.splice_ordered(paths.scenario_readme(cls, "raid"), "raid", "## Raid sim", text)
+            rs.drop(ROOT / cls / "README.md", "## Raid sim")   # moved to raid/README.md (2026-09-27 layout)
         for r in reports:
             ours = [x for x in r["results"] if x["ours"] and x.get("dps")]
             theirs = [x for x in r["results"] if not x["ours"] and x.get("dps")]
@@ -185,7 +186,8 @@ def main():
             summary.append(f"| {cls} | `{r['spec']}` | {('`' + bo['label'] + '`') if bo else '-'} | {bo['dps']:.0f} | {bt['label'].replace('sim preset: ', '') if bt else '-'} | "
                            f"{bt['dps']:.0f} | {('`' + bp['label'] + '`') if bp else '-'} | {bp['dps']:.0f} |" if bo and bt and bp else
                            f"| {cls} | `{r['spec']}` | {('`' + bo['label'] + '`') if bo else '-'} | {round(bo['dps']) if bo else '-'} | - | - | - | - |")
-        print(f"{cls}: raid sim section written ({len(reports)} specs)")
+        if text is not None:
+            print(f"{cls}: raid sim section written ({len(reports)} specs)")
     summary.append("")
     if env_rows:
         summary += ["## DPS by environment: dummy, raid, maximum", "",

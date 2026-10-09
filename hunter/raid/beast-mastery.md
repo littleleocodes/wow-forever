@@ -15,8 +15,7 @@
 1. **Serpent Sting**: keep it on the target
 2. **Arcane Shot**
 3. **Rapid Fire**
-4. **Summon Hawk**
-5. **Aimed Shot**
+4. **Aimed Shot**
 
 **Aimed Shot** is your filler: cast it whenever nothing above is ready.
 
@@ -27,11 +26,37 @@
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
+## Why this rotation
+
+Beast Mastery in a raid is **Auto Shot** and your pet with a short list on top: keep **Serpent Sting** ticking, fire **Arcane Shot** and **Aimed Shot** each time their cooldowns end, and send **Bestial Wrath** whenever it is ready.
+
+**Why it works**
+
+- **Serpent Sting** comes first so it never drops: it is about a fifth of your damage in the simulator, 20% more with **Improved Stings**. Recast it only as it runs out, since a new sting replaces the old one and its last ticks; the full rotation recasts it only while you have 30% mana or more.
+- **Arcane Shot** goes out every time its 6-second cooldown ends, about 29 times in a 3-minute fight. **Summon Hawk** shares that cooldown, and in a full raid the simulator measured about 1.4% more damage giving all of it to **Arcane Shot**, so this build no longer sends the hawk there.
+- **Rapid Fire** (40% faster attacks for 15 seconds, 5-minute cooldown) goes once a fight, at the pull. The full rotation presses it just before an **Auto Shot** with **Aimed Shot** about to come off cooldown, so the next **Aimed Shot** is cast under it.
+- **Aimed Shot** is last on the list but it is not a spam filler: it goes out almost every time it can, a 2-second cast and then its 6-second cooldown, about 23 times a fight. The instants above it cost only a global cooldown, and the simulator measured **Aimed Shot** slightly better below them.
+- **Bestial Wrath** (+50% pet damage for 18 seconds) goes at the pull and on every 2-minute cooldown, about twice a fight. **Intimidation** is in the build only because **Bestial Wrath** requires it; the full-raid list never presses it.
+- Your pet is about a quarter of your damage. It takes 10% of your attack power and all of your crit (this project's model of Forever's pet scaling), so **Ferocity** and **Frenzy** keep it critting and attacking faster, and **Focused Fire** adds 2% to you both while it is out.
+
+**Caveats**
+
+- Mana: the list assumes a full raid with Blessing of Wisdom and Mana Spring. With only your own buffs the simulator's best rotation never casts **Aimed Shot** (310 mana) and keeps **Arcane Shot** going above 10% mana, so **Aimed Shot** is the first thing to drop when you run low.
+- Keep the pet alive with **Mend Pet**: Forever pets take no stat buffs from players, and a dead pet takes **Focused Fire** with it. A faster pet does more damage as modelled here (a 1.2-second cat over a 2.0-second pet; players have measured this only at levels 20 and 30).
+- Moving: **Auto Shot** and **Aimed Shot** stop while you move; **Arcane Shot** and **Serpent Sting** are instant, so keep pressing them.
+- The simulator starts **Aimed Shot** 2.5 seconds before the pull so it lands as the fight begins; in a real raid, start it once your tank has the boss.
+
+**When to change it**
+
+- Two or more targets close together: **Multi-Shot** instead of **Aimed Shot** on their shared cooldown, since it hits up to 3 targets for weapon damage each while **Aimed Shot** adds 166 to one. For a pack, **Volley**: a 6-second channel with no cooldown in Forever, which holds **Auto Shot** while you channel.
+- In the last few seconds, skip the **Serpent Sting** refresh: its damage comes over 15 seconds. The simulator's other hunter rotations stop refreshing it 3 to 6 seconds before the end.
+- Inside 8 yards your shots and **Auto Shot** stop. Step back out; if you cannot, **Summon Hawk** still works, as it has no minimum range.
+
 ## The numbers
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 841 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 843 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 

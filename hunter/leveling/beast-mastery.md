@@ -23,6 +23,31 @@
 
 **Between fights:** Mend the pet, drink below a third of your mana, eat below two thirds of your health.
 
+## Why this rotation
+
+Beast Mastery levels with the cat as the tank: it holds the mob while **Auto Shot**, **Serpent Sting** and your cooldown shots kill it from range. Your job is to keep the mob on the pet and to spend mana only where it shortens the fight.
+
+**Why it works**
+
+- Send the pet first, then **Hunter's Mark** and **Serpent Sting**. In the fight lab the cat Growls every 5 seconds and keeps the mob until your threat passes 130% of its own, so two cheap openers give it a head start; the lab casts them only while the mob has more than 30% and 40% of its health.
+- **Aimed Shot** and **Multi-Shot** share one 6-second cooldown. On a single mob it goes to **Aimed Shot**, which adds a flat bonus to the weapon hit: the fight lab never casts **Multi-Shot** on one mob, which measured about 2.5% faster kills, and stops casting **Aimed Shot** once the mob is below a quarter of its health.
+- **Summon Hawk** (level 25) and **Arcane Shot** share a timer too. The fight lab gives it to the hawk while the mob has more than 30% of its health and never casts **Arcane Shot**, which measured about 2% faster per kill.
+- **Auto Shot** is the biggest part of your damage (about a third at 60) and cannot fire within 8 yards: if the mob ends up next to you while the pet holds it, step back rather than melee.
+- **Rapid Fire** at the start of a fight whenever it is ready: 40% faster attacks for 15 seconds, every 3 minutes once **Rapid Killing** is in (levels 49-50 in this order).
+- **Mend Pet** when the pet drops below about a third while it holds the mob. A dead pet costs a **Revive Pet** before the next pull and your **Focused Fire** bonus until then.
+
+**Caveats**
+
+- This build takes neither **Bestial Wrath** nor **Intimidation**: skip the step that names them.
+- The fight lab's tuned play drinks only below 15% mana, not at a third, which measured slightly faster: less time sitting between pulls.
+- **Feign Death**: the fight lab levels slightly faster never using it to send a mob back to the pet. A mob that reaches you gets **Wing Clip** and **Raptor Strike** until the pet's Growl takes it back.
+- Several mobs at once: **Multi-Shot** and **Volley** (a 6-second channel with no cooldown in Forever) are your area damage. In the fight lab's three-mob pulls **Volley** is about a tenth of the damage at 60.
+
+**When to change it**
+
+- When the mob is nearly dead, stop spending mana: **Auto Shot** and the pet finish it, and you start the next pull fuller.
+- If the pet dies mid-fight, finish the mob with **Raptor Strike** and **Wing Clip** (or **Feign Death** if it is going badly), and revive the pet before the next pull.
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

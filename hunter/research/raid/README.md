@@ -23,7 +23,8 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | [Marksmanship — Full raid (parse) (machine-learning search)](builds/marksmanship-ml-parse.md) | 7/44/0 | DPS | — |
 | [Survival — Full raid (parse) (machine-learning search)](builds/survival-ml-parse.md) | 5/14/32 | DPS | — |
 | [Beast-Marks — Raid (machine-learning search)](builds/beast-marks-ml-raid.md) | 28/23/0 | DPS | — |
-| [Beast-Marks — Raid (open talent search)](builds/beast-marks-open-raid.md) | 27/19/5 | DPS | — |
+| [Marksmanship — With a pet (open talent search)](builds/marksmanship-with-a-pet-open-raid.md) | 7/39/5 | DPS | — |
+| [Beast-Marks — Raid (open talent search)](builds/beast-marks-open-raid.md) | 27/21/3 | DPS | — |
 | [Beast-Survival — Raid (open talent search)](builds/beast-survival-open-raid.md) | 16/11/24 | DPS | — |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
@@ -46,13 +47,14 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`bm-mm-full-buffs-raid`](builds/bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 472 | +0.0% | 803 | -5.0% | 67 s |
-| 2 | [`bm-mm-raid`](builds/bm-mm-raid.md) | ours: hand draft | 22/29/0 | 461 | -2.3% | 806 | -4.6% | 52 s |
-| 3 | [`opt-mm-raid-raid-dps`](builds/opt-mm-raid-raid-dps.md) | ours: optimizer | 22/29/0 | 461 | -2.3% | 806 | -4.6% | 52 s |
-| 4 | *Marksmanship* | community simulator | - | 454 | -3.8% | 845 | +0.0% | 88 s |
-| 5 | *Beast Mastery 35/16/0* | community simulator | - | 444 | -5.9% | 770 | -8.8% | 73 s |
-| 6 | *Marksmanship 0/39/12* | community simulator | - | 430 | -8.9% | 791 | -6.3% | 82 s |
-| 7 | *Survival 0/15/36* | community simulator | - | 398 | -15.7% | 680 | -19.5% | 71 s |
+| 1 | [`bm-mm-full-buffs-raid`](builds/bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 472 | +0.0% | 803 | -8.9% | 68 s |
+| 2 | [`bm-mm-raid`](builds/bm-mm-raid.md) | ours: hand draft | 22/29/0 | 461 | -2.4% | 806 | -8.5% | 53 s |
+| 3 | [`opt-mm-raid-raid-dps`](builds/opt-mm-raid-raid-dps.md) | ours: optimizer | 22/29/0 | 461 | -2.4% | 806 | -8.5% | 53 s |
+| 4 | *Marksmanship* | community simulator | - | 454 | -3.8% | 845 | -4.1% | 89 s |
+| 5 | [`marksmanship-with-a-pet-open-raid`](builds/marksmanship-with-a-pet-open-raid.md) | ours: hand draft | 7/39/5 | 451 | -4.3% | 881 | +0.0% | 98 s |
+| 6 | *Beast Mastery 35/16/0* | community simulator | - | 445 | -5.7% | 770 | -12.6% | 75 s |
+| 7 | *Marksmanship 0/39/12* | community simulator | - | 431 | -8.7% | 791 | -10.2% | 83 s |
+| 8 | *Survival 0/15/36* | community simulator | - | 396 | -16.1% | 680 | -22.8% | 76 s |
 
 **mm-lonewolf-raid**
 
@@ -71,12 +73,12 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`beast-marks-open-raid`](builds/beast-marks-open-raid.md) | ours: hand draft | 27/19/5 | 464 | +0.0% | 842 | +0.0% | 20 s |
-| 2 | [`beast-mastery-ml-parse`](builds/beast-mastery-ml-parse.md) | ours: parse build | 31/20/0 | 464 | -0.1% | 841 | -0.1% | 25 s |
-| 3 | [`beast-mastery-raid`](builds/beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 461 | -0.7% | 810 | -3.9% | 6 s |
-| 4 | [`beast-marks-ml-raid`](builds/beast-marks-ml-raid.md) | ours: hand draft | 28/23/0 | 454 | -2.2% | 833 | -1.2% | 18 s |
-| 5 | [`mm-hawk-raid`](builds/mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 446 | -4.0% | 805 | -4.5% | 13 s |
-| 6 | *Beast Mastery 35/16/0* | community simulator | - | 439 | -5.4% | 790 | -6.3% | 14 s |
+| 1 | [`beast-mastery-ml-parse`](builds/beast-mastery-ml-parse.md) | ours: parse build | 31/20/0 | 489 | +0.0% | 843 | -1.4% | 25 s |
+| 2 | [`beast-mastery-raid`](builds/beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 487 | -0.4% | 810 | -5.3% | 6 s |
+| 3 | [`beast-marks-ml-raid`](builds/beast-marks-ml-raid.md) | ours: hand draft | 28/23/0 | 479 | -2.0% | 833 | -2.6% | 18 s |
+| 4 | [`mm-hawk-raid`](builds/mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 475 | -2.9% | 807 | -5.6% | 13 s |
+| 5 | [`beast-marks-open-raid`](builds/beast-marks-open-raid.md) | ours: hand draft | 27/21/3 | 474 | -3.1% | 855 | +0.0% | 23 s |
+| 6 | *Beast Mastery 35/16/0* | community simulator | - | 462 | -5.5% | 789 | -7.8% | 14 s |
 
 **melee-dps**
 
@@ -108,7 +110,7 @@ The spells new in Forever, what the simulators measured them doing, and the buil
 | Spell | Tree | Level | Cooldown | What it does (beta tooltip) | Raid: the best raced build casting it (training dummy) | Rotation search: kept changes naming it | Leveling at the fight lab's top level | Note |
 |---|---|---|---|---|---|---|---|---|
 | Aspect of the Beast | Beast Mastery | 60 | - | You take on the aspects of a beast, becoming untrackable and increasing Melee Attack Power by 110. | no damage of its own, 0.3 casts/min: [`survival-raid`](builds/survival-raid.md) (melee-dps) | melee-dps (training dummy): move to the top: cast Aspect of the Beast (+0.2%) | not cast | Melee attack power, and melee haste with Deadly Aspects: not in the simulator (it models only Aspect of the Hawk), so the melee hunter plays without it. |
-| Summon Hawk | Beast Mastery | 60 | 6 sec | Command a hawk to dive-bomb your targeted enemy, dealing 108 plus 5% of your Ranged Attack Power Physical damage and continuing its assault for 18 se… | 14% of the damage, 9.7 casts/min: [`beast-marks-open-raid`](builds/beast-marks-open-raid.md) (bm-raid) | melee-dps (raid): spell probe: insert in the middle: if auraIsInactive: cast Summon Hawk (+15.0%); melee-dps (training dummy): spell probe: insert at the top: if auraIsInactive: cast Summon Hawk (+14.3%); mm-raid (training dummy): spell probe: insert at the top: if auraIsInactive: cast Summon Hawk (+6.4%) | 2% of the damage, 0.2 casts a kill: `opt-bm-leveling-leveling-aoe` at 60 (bm-leveling-aoe) |  |
+| Summon Hawk | Beast Mastery | 60 | 6 sec | Command a hawk to dive-bomb your targeted enemy, dealing 108 plus 5% of your Ranged Attack Power Physical damage and continuing its assault for 18 se… | 5% of the damage, 2.7 casts/min: [`beast-mastery-ml-parse`](builds/beast-mastery-ml-parse.md) (bm-raid) | melee-dps (raid): spell probe: insert in the middle: if auraIsInactive: cast Summon Hawk (+15.0%); melee-dps (training dummy): spell probe: insert at the top: if auraIsInactive: cast Summon Hawk (+14.3%); mm-raid (training dummy): spell probe: insert at the top: if auraIsInactive: cast Summon Hawk (+6.4%) | 2% of the damage, 0.2 casts a kill: `opt-bm-leveling-leveling-aoe` at 60 (bm-leveling-aoe) |  |
 | Enchanted Flare | Marksmanship | 32 | 30 sec | Exposes all hidden and invisible enemies within 10 yards of the targeted area, and staves off magical darkness for 30 sec. | not cast by any raced build | - | not cast | Reveals stealth: utility. |
 | Sniper Shot | Marksmanship | 58 | 15 sec | A long-range shot that deals ranged damage plus 295 and increases the range of your next 3 Shots by 10 yards for 10 sec. | not cast by any raced build | mm-lonewolf-raid (training dummy): drop: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time (+3.3%); mm-raid (training dummy): drop: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time (+1.7%); mm-lonewolf-raid (raid): drop 'time to the next auto attack > 1s' from the condition: if time to the next auto atta (+0.3%) | not cast | A new Marksmanship shot (15 s cooldown); the rotation search offers it. |
 | Trueshot Aura | Marksmanship | 60 | - | Increases the Ranged Attack Power of party members within 45 yards by 50. | not cast by any raced build | - | not cast |  |
@@ -121,10 +123,10 @@ The spells new in Forever, what the simulators measured them doing, and the buil
 
 | Idea | Build | Split | Dummy DPS | Raid DPS | Against the class's best | Talent search | Leveling |
 |---|---|---|---|---|---|---|---|
-| Summon Hawk, a Forever Beast Mastery talent that sends a hawk to dive-bomb the target every 6 seconds (two hawks attack at once), in a raid build: searched from the simulator's Beast Mastery preset and from our Marksmanship draft | [`mm-hawk-raid`](builds/mm-hawk-raid.md) | 22/29/0 | 446 | 805 | -8.2% on the dummy; -23.3% in a raid | from `bm-mm-raid`, 4 moves | - |
-| A melee hunter around the new Survival abilities (Strider Kick, Lacerate) and Aspect of the Beast | [`melee-survival-raid`](builds/melee-survival-raid.md) | 5/11/35 | 464 | 1048 | -4.6% on the dummy; -0.1% in a raid | from `melee-survival-raid`, 0 moves | - |
+| Summon Hawk, a Forever Beast Mastery talent that sends a hawk to dive-bomb the target every 6 seconds (two hawks attack at once), in a raid build: searched from the simulator's Beast Mastery preset and from our Marksmanship draft | [`mm-hawk-raid`](builds/mm-hawk-raid.md) | 22/29/0 | 475 | 807 | -2.9% on the dummy; -23.1% in a raid | from `bm-mm-raid`, 4 moves | - |
+| A melee hunter around the new Survival abilities (Strider Kick, Lacerate) and Aspect of the Beast | [`melee-survival-raid`](builds/melee-survival-raid.md) | 5/11/35 | 464 | 1048 | -5.2% on the dummy; -0.1% in a raid | from `melee-survival-raid`, 0 moves | - |
 
-The class's best raid DPS build on the training dummy: [`survival-raid`](builds/survival-raid.md) (melee-dps), 486 DPS; in a raid: [`beast-survival-open-raid`](builds/beast-survival-open-raid.md) (melee-dps), 1049 DPS.
+The class's best raid DPS build on the training dummy: [`beast-mastery-ml-parse`](builds/beast-mastery-ml-parse.md) (bm-raid), 489 DPS; in a raid: [`beast-survival-open-raid`](builds/beast-survival-open-raid.md) (melee-dps), 1049 DPS.
 
 ## Raid sim (community simulator, level 60)
 
@@ -132,12 +134,12 @@ The class's best raid DPS build on the training dummy: [`survival-raid`](builds/
 
 | Spec model | Setting | Build | Split | DPS | vs best | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `bm-raid` | dummy | `beast-marks-open-raid` | 27/19/5 | 464 | +0.0% | 20 | - |
-| `bm-raid` | dummy | `beast-mastery-ml-parse` | 31/20/0 | 464 | -0.1% | 25 | - |
-| `bm-raid` | dummy | `beast-mastery-raid` | 30/21/0 | 461 | -0.7% | 6 | - |
-| `bm-raid` | dummy | `beast-marks-ml-raid` | 28/23/0 | 454 | -2.2% | 18 | - |
-| `bm-raid` | dummy | `mm-hawk-raid` | 22/29/0 | 446 | -4.0% | 13 | - |
-| `bm-raid` | dummy | sim preset: Beast Mastery 35/16/0 | - | 439 | -5.4% | 14 | - |
+| `bm-raid` | dummy | `beast-mastery-ml-parse` | 31/20/0 | 489 | +0.0% | 25 | - |
+| `bm-raid` | dummy | `beast-mastery-raid` | 30/21/0 | 487 | -0.4% | 6 | - |
+| `bm-raid` | dummy | `beast-marks-ml-raid` | 28/23/0 | 479 | -2.0% | 18 | - |
+| `bm-raid` | dummy | `mm-hawk-raid` | 22/29/0 | 475 | -2.9% | 13 | - |
+| `bm-raid` | dummy | `beast-marks-open-raid` | 27/21/3 | 474 | -3.1% | 23 | - |
+| `bm-raid` | dummy | sim preset: Beast Mastery 35/16/0 | - | 462 | -5.5% | 14 | - |
 | `melee-dps` | dummy | `survival-raid` | 5/16/30 | 486 | +0.0% | 9 | +112% |
 | `melee-dps` | dummy | `melee-survival-raid` | 5/11/35 | 464 | -4.6% | 44 | +121% |
 | `melee-dps` | dummy | `opt-melee-dps-raid-dps` | 5/15/31 | 463 | -4.7% | 8 | +124% |
@@ -151,13 +153,14 @@ The class's best raid DPS build on the training dummy: [`survival-raid`](builds/
 | `mm-lonewolf-raid` | dummy | sim preset: Marksmanship 0/39/12 | - | 359 | -22.5% | 90 | - |
 | `mm-lonewolf-raid` | dummy | sim preset: Survival 0/15/36 | - | 323 | -30.2% | 75 | - |
 | `mm-lonewolf-raid` | dummy | sim preset: Beast Mastery 35/16/0 | - | 315 | -32.0% | 52 | - |
-| `mm-raid` | dummy | `bm-mm-full-buffs-raid` | 21/30/0 | 472 | +0.0% | 67 | +49% |
-| `mm-raid` | dummy | `bm-mm-raid` | 22/29/0 | 461 | -2.3% | 52 | +66% |
-| `mm-raid` | dummy | `opt-mm-raid-raid-dps` | 22/29/0 | 461 | -2.3% | 52 | +66% |
-| `mm-raid` | dummy | sim preset: Marksmanship | - | 454 | -3.8% | 88 | - |
-| `mm-raid` | dummy | sim preset: Beast Mastery 35/16/0 | - | 444 | -5.9% | 73 | - |
-| `mm-raid` | dummy | sim preset: Marksmanship 0/39/12 | - | 430 | -8.9% | 82 | - |
-| `mm-raid` | dummy | sim preset: Survival 0/15/36 | - | 398 | -15.7% | 71 | - |
+| `mm-raid` | dummy | `bm-mm-full-buffs-raid` | 21/30/0 | 472 | +0.0% | 68 | +49% |
+| `mm-raid` | dummy | `bm-mm-raid` | 22/29/0 | 461 | -2.4% | 53 | +66% |
+| `mm-raid` | dummy | `opt-mm-raid-raid-dps` | 22/29/0 | 461 | -2.4% | 53 | +66% |
+| `mm-raid` | dummy | sim preset: Marksmanship | - | 454 | -3.8% | 89 | - |
+| `mm-raid` | dummy | `marksmanship-with-a-pet-open-raid` | 7/39/5 | 451 | -4.3% | 98 | +37% |
+| `mm-raid` | dummy | sim preset: Beast Mastery 35/16/0 | - | 445 | -5.7% | 75 | - |
+| `mm-raid` | dummy | sim preset: Marksmanship 0/39/12 | - | 431 | -8.7% | 83 | - |
+| `mm-raid` | dummy | sim preset: Survival 0/15/36 | - | 396 | -16.1% | 76 | - |
 
 Scorer = the stats model's own score of the allocation for its raid profile (relative to a talentless character; comparable within a spec model only). Tanks: DPS with the tank flag set (threat and mitigation are in the report JSON). Healers are not simulated (the simulator has no healing rotations for them).
 
@@ -172,12 +175,12 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 
 | Spec model | Build | Split | Dummy | Dummy 60 | Raid | Maximum | Max 60 s |
 |---|---|---|---|---|---|---|---|
-| `bm-raid` | `beast-marks-open-raid` | 27/19/5 | 464 | 508 | 842 | 842 | 868 |
-| `bm-raid` | `beast-mastery-ml-parse` | 31/20/0 | 464 | 509 | 841 | 841 | 875 |
-| `bm-raid` | `beast-mastery-raid` | 30/21/0 | 461 | 503 | 810 | 810 | 833 |
-| `bm-raid` | `beast-marks-ml-raid` | 28/23/0 | 454 | 498 | 833 | 833 | 856 |
-| `bm-raid` | `mm-hawk-raid` | 22/29/0 | 446 | 485 | 805 | 805 | 831 |
-| `bm-raid` | sim preset: Beast Mastery 35/16/0 | - | 439 | 480 | 790 | 790 | 822 |
+| `bm-raid` | `beast-mastery-ml-parse` | 31/20/0 | 489 | 541 | 843 | 843 | 877 |
+| `bm-raid` | `beast-mastery-raid` | 30/21/0 | 487 | 536 | 810 | 810 | 834 |
+| `bm-raid` | `beast-marks-ml-raid` | 28/23/0 | 479 | 530 | 833 | 833 | 857 |
+| `bm-raid` | `mm-hawk-raid` | 22/29/0 | 475 | 521 | 807 | 807 | 835 |
+| `bm-raid` | `beast-marks-open-raid` | 27/21/3 | 474 | 525 | 855 | 855 | 886 |
+| `bm-raid` | sim preset: Beast Mastery 35/16/0 | - | 462 | 509 | 789 | 789 | 823 |
 | `melee-dps` | `survival-raid` | 5/16/30 | 486 | 566 | 1028 | 1028 | 1062 |
 | `melee-dps` | `melee-survival-raid` | 5/11/35 | 464 | 539 | 1048 | 1048 | 1083 |
 | `melee-dps` | `opt-melee-dps-raid-dps` | 5/15/31 | 463 | 540 | 1016 | 1016 | 1055 |
@@ -193,13 +196,14 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 | `mm-lonewolf-raid` | sim preset: Survival 0/15/36 | - | 323 | 344 | 557 | 569 | 603 |
 | `mm-lonewolf-raid` | sim preset: Beast Mastery 35/16/0 | - | 315 | 330 | 544 | 555 | 579 |
 | `mm-raid` | `bm-mm-full-buffs-raid` | 21/30/0 | 472 | 517 | 803 | 803 | 829 |
-| `mm-raid` | `bm-mm-raid` | 22/29/0 | 461 | 500 | 806 | 806 | 833 |
-| `mm-raid` | `opt-mm-raid-raid-dps` | 22/29/0 | 461 | 500 | 806 | 806 | 833 |
+| `mm-raid` | `bm-mm-raid` | 22/29/0 | 461 | 499 | 806 | 806 | 833 |
+| `mm-raid` | `opt-mm-raid-raid-dps` | 22/29/0 | 461 | 499 | 806 | 806 | 833 |
 | `mm-raid` | `opt-mm-raid-parse` | 31/20/0 | 454 | 496 | 821 | 836 | 868 |
 | `mm-raid` | sim preset: Marksmanship | - | 454 | 498 | 845 | 845 | 880 |
-| `mm-raid` | sim preset: Beast Mastery 35/16/0 | - | 444 | 483 | 770 | 784 | 815 |
-| `mm-raid` | sim preset: Marksmanship 0/39/12 | - | 430 | 471 | 791 | 791 | 841 |
-| `mm-raid` | sim preset: Survival 0/15/36 | - | 398 | 433 | 680 | 693 | 715 |
+| `mm-raid` | `marksmanship-with-a-pet-open-raid` | 7/39/5 | 451 | 495 | 881 | 881 | 914 |
+| `mm-raid` | sim preset: Beast Mastery 35/16/0 | - | 445 | 484 | 770 | 784 | 815 |
+| `mm-raid` | sim preset: Marksmanship 0/39/12 | - | 431 | 473 | 791 | 791 | 841 |
+| `mm-raid` | sim preset: Survival 0/15/36 | - | 396 | 431 | 680 | 693 | 715 |
 
 **Classic Era check** — [`../talents/classic-baseline/raidsim/`](../talents/classic-baseline/raidsim/): the same run of our Classic-era community builds through the upstream wowsims/classic simulator (commit 7779ebb, its phase-1 presets), which the scorer's classic-era models are calibrated against. Our builds there are the community's; a preset ahead of them means the simulator's rotation prefers other talents.
 

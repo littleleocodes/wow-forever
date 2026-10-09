@@ -22,6 +22,31 @@
 
 **Between fights:** **Life Tap** back to 70% mana, heal the Voidwalker with **Consume Shadows** or **Health Funnel**, eat only below a third of your health.
 
+## Why this rotation
+
+Affliction levels by letting its damage-over-time spells do the killing while the Voidwalker holds the mob: you put **Corruption**, **Bane of Agony** and **Siphon Life** on it, add **Immolate** when mana allows, and shoot your wand while they tick.
+
+**Why it works**
+
+- Send the Voidwalker in first: its **Torment** holds the mob while you stand at range, and your dots build threat slowly enough that it keeps the mob. Open with **Amplify Curse** whenever it is ready (3-minute cooldown): it makes that fight's **Bane of Agony** 50% stronger.
+- **Corruption** and **Bane of Agony** do about half your damage at 60, and **Siphon Life** (from level 30) another tenth while it heals you. Skip **Corruption** on a mob below about a third of its health: it dies before the spell pays for its mana (the fight lab measured that about 1% faster).
+- **Immolate** comes last, only on a mob above about half its health and while you have more than half your mana: it is your weakest dot for its cost, about 5% of your damage at 60.
+- Your wand is the filler, not **Shadow Bolt**: the fight lab measured kills about 7% faster with no **Shadow Bolt** at all. The wand costs no mana, so you spend less time getting mana back while the dots do the killing.
+- **Drain Life** is for when you are hurt, not for damage. Between fights, **Life Tap** back to about 70% mana while your health stays above 60%, and eat only below a third of your health: **Siphon Life** and **Drain Life** win the health back during the next fight.
+
+**Caveats**
+
+- This build has no **Wrack**, so skip that line: the fight lab also measured kills about 6.5% faster when a build that has it never casts it, since its 6-second channel holds you in place for little damage.
+- When a mob reaches you, cast **Death Coil** if you are below about 60% health (it heals you for its damage); otherwise let the Voidwalker's **Torment** take it back. The fight lab measured never casting **Fear** about 1.5% faster.
+- **Curse of the Elements** does not pay while leveling: the fight lab measured kills up to 3% slower at levels 50-60 with it, because the mob dies before the curse repays its global cooldown and mana.
+- Pulls of several mobs with **Rain of Fire** were slower than single pulls at level 40 in the fight lab and only about 10% faster at 60, with about one death per ten kills: pull one mob at a time.
+
+**When to change it**
+
+- Finish a nearly dead mob with the wand; start no new spell on it.
+- Below about a third of your health with a mob on you, use a Healthstone (**Create Healthstone** between fights).
+- If the Voidwalker dies, summon a new one before the next pull rather than fight without your tank, and heal a hurt one between fights with **Consume Shadows** (not usable in combat) or **Health Funnel**.
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

@@ -73,13 +73,14 @@ def main():
                "incoming damage the build survives in 90% of runs; comparable across classes only under the lab's shared assumptions (same group, boss and gear level). "
                "Simulations of stated assumptions, not measurements. Do not hand-edit.", "",
                "| Class | Spec model | Best build | Capacity | Effective HPS | Overheal | Healing split | Top talents (capacity lost when removed) |", "|---|---|---|---|---|---|---|---|"]
-    for cls in classes:
+    for cls in sorted(CLASSES):   # the summary covers every healer class, the sections only the classes asked for (2026-10-09)
         reports = load(cls)
         if not reports:
             continue
-        text = render(cls, reports)
-        rs.splice_ordered(paths.scenario_readme(cls, "raid"), "raid", "## Healer lab", text)
-        rs.drop(ROOT / cls / "README.md", "## Healer lab")   # moved to raid/README.md (2026-09-27 layout)
+        if cls in classes:
+            text = render(cls, reports)
+            rs.splice_ordered(paths.scenario_readme(cls, "raid"), "raid", "## Healer lab", text)
+            rs.drop(ROOT / cls / "README.md", "## Healer lab")   # moved to raid/README.md (2026-09-27 layout)
         for r in reports:
             bid, x = max(r["results"].items(), key=lambda kv: kv[1]["capacity"])
             sm = x["summary"]
@@ -87,7 +88,8 @@ def main():
             top = sorted([y for y in rows if y["simulated"]], key=lambda y: -y["sim_delta"])[:5]
             summary.append(f"| {cls} | `{r['spec']}` | `{bid}` ({x['split']}) | {x['capacity']:.3f} | {sm['hps']:.0f} | {sm['overheal_share'] * 100:.0f}% | "
                            + ", ".join(f"{k} {v * 100:.0f}%" for k, v in list(sm["shares"].items())[:4]) + " | " + ", ".join(f"{y['talent']} {y['sim_delta'] * 100:+.0f}%" for y in top) + " |")
-        print(f"{cls}: healer lab section written ({len(reports)} specs)")
+        if cls in classes:
+            print(f"{cls}: healer lab section written ({len(reports)} specs)")
     summary.append("")
     SUMMARY.write_text("\n".join(summary) + "\n", encoding="utf-8")
     print(f"wrote {SUMMARY.relative_to(ROOT)}")

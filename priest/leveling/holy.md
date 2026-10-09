@@ -22,6 +22,28 @@
 
 **Between fights:** Drink only below 15% mana; **Renew** yourself instead of eating.
 
+## Why this rotation
+
+You level with your raid talents, Discipline first: **Penance** at 31 is the big step, and the Holy talents from 32 on mostly heal. The fight is a Smite priest's: an instant pull with **Shadow Word: Pain**, **Penance** and **Mind Blast** on cooldown, **Smite** in between, your wand to finish.
+
+**Why it works**
+
+- **Shadow Word: Pain** pulls because it is instant and ticks for the whole fight. **Penance** (from 31) and **Mind Blast** hit harder for their cast time than **Smite**, so they go out whenever ready.
+- **Smite** only while the mob has more than about a third of its health and you have more than 30% mana: below that your wand finishes without spending mana. The fight lab measured these limits about 4% and 3.5% faster.
+- Skip **Holy Fire**: a slow cast whose damage Forever cut about in half, and the fight lab measured leveling about 4% faster without it. Your **Power in Light** points do nothing while leveling: they need **Holy Fire** burning and are there for the raid build.
+- **Inner Focus** (from 20) at the start of a pull: press it right before **Mind Blast** or **Smite** to make that cast free with 25% more crit chance.
+- Mana: **Meditation** (from 21) keeps half your regeneration going while you cast, so drink only below 15% mana. After a fight, **Renew** heals you while you loot and walk on; eat if you are still under 80% health (the fight lab measured eating that early slightly faster).
+
+**Caveats**
+
+- Most of your Holy points are for healing (**Spiritual Healing**, **Improved Renew**, **Binding Heal**, **Litany of Light**), so Holy is the slowest way to level: 45 seconds per kill in the fight lab, against 26 for Shadow.
+- The pre-pull **Power Word: Shield** is part of this rotation: while it holds, damage does not push your **Smite** back. In melee, shield again once Weakened Soul is gone and you are below 80% health.
+- **Holy Nova** (from 42) is for pulls of several mobs: the fight lab casts it only when two or more are in reach.
+
+**When to change it**
+
+- Hurt in a fight: shield again below half your health, **Flash Heal** below about a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%.
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

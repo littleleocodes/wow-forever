@@ -34,6 +34,32 @@
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
+## Why this rotation
+
+The Shadow Bolt hybrid is the classic DS/Ruin warlock (**Demonic Sacrifice** plus **Ruin**): the Imp sacrificed for 15% more Shadow damage, Affliction's instant **Corruption** and crit talents, and Destruction's **Bane**, **Improved Shadow Bolt** and **Ruin**. You keep **Curse of the Elements** and three dots up and cast **Shadow Bolt** the rest of the time, about half your damage.
+
+**Why it works**
+
+- Before the pull: summon the Imp, use **Demonic Sacrifice** (+15% Shadow damage for 2 hours; summoning any demon ends it), then **Life Tap** once so you start full. This build has no **Amplify Curse**; the simulator measured about 11% less damage without the sacrifice.
+- **Curse of the Elements** goes up first: one cast lasts 5 minutes and makes the boss take 10% more damage from every magic school (Curse of Shadow is gone in Forever). As a Curse it sits beside your **Bane of Agony**, and the simulator measured it 0.3% better at the top of the list.
+- **Life Tap** waits until you are below 5% mana: every tap is a global cooldown with no damage, and the simulator measured tapping at 5% about 0.4% better than at 10%. **Improved Life Tap** adds 20% to each tap, and the list uses a mana potion below 75% mana and a Demonic Rune below 80%, never in the last 15 seconds.
+- **Bane of Agony** grows over its 24 seconds, so recast it only once it has run out. **Corruption** is instant with 5 points in **Improved Corruption** and goes back up the moment it drops, except in the last 10 seconds.
+- Start a new **Immolate** when less time is left on the old one than its cast (1.5 seconds with the **Bane** talent), so it lands as the old one ends, but start none in the last 20 seconds: it would not run long enough to beat a **Shadow Bolt**. Both end-of-fight cut-offs measured small gains.
+- **Shadow Bolt** is the filler: its crits trigger **Improved Shadow Bolt** (20% more Shadow damage from you for 12 seconds, your dots included), **Malevolence** makes them more frequent and **Ruin** doubles their bonus. **Pandemic** does the same for your dots' crits.
+
+**Caveats**
+
+- **Searing Pain** has no cooldown: the rotation casts it only in the last 3.5 seconds, when its 1.5-second cast lands before the boss dies and a **Shadow Bolt** might not. Never use it as a filler: it does less damage per second of casting and causes a high amount of threat.
+- With the Imp sacrificed you play without a demon: any summon ends the buff, so if you die, summon the Imp and sacrifice it again before the next pull.
+- Put a Spellstone (**Create Spellstone**) on your weapon on top of your wizard oil: Forever lets them stack, and the simulator measured about 3% more damage.
+- On the move, use the instants: **Corruption**, **Bane of Agony**, **Curse of the Elements** and **Life Tap**.
+
+**When to change it**
+
+- In the last 20 seconds start no new **Immolate**, and in the last 10 no **Corruption**: cast **Shadow Bolt**, then **Searing Pain** in the last 3.5 seconds.
+- A boss needs only one **Curse of the Elements** (in Classic two never stacked): if another warlock keeps it up, take the curse your raid gives you, such as **Curse of Recklessness** for the physical fighters.
+- When healing is tight, each **Life Tap** costs health someone must heal: use your mana potion and Demonic Rune before you tap.
+
 ## The numbers
 
 | Setting | DPS |

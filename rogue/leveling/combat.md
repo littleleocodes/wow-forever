@@ -23,6 +23,32 @@
 
 **Between fights:** Bandage below 60% health, eat below half.
 
+## Why this rotation
+
+Combat levels on short fights: open with **Garrote** from stealth, build 5 points with **Sinister Strike**, finish with **Eviscerate**, and let **Riposte**, your poisons and two swords do the rest. A fight lasts about 10 to 18 seconds in the fight lab, too short for **Slice and Dice**, **Cheap Shot** or **Kidney Shot** to pay.
+
+**Why it works**
+
+- Open with **Garrote** from stealth behind the mob: a combo point and an 18-second bleed, about a tenth of your damage at 60. The fight lab measured a **Cheap Shot** opener about 9% slower per kill: it gives 2 points and a stun but no damage, for 60 energy.
+- **Sinister Strike** builds to 5 points and **Eviscerate** finishes; **Improved Sinister Strike** and **Flawless Execution** cut them to 40 and 25 energy. Cast **Eviscerate** earlier when it would kill the mob, because points left on a dead mob are lost.
+- **Riposte** lights up after you parry: 10 energy for 150% weapon damage and a 6-second disarm. It is your cheapest hit, so press it as soon as it lights up.
+- **Blade Flurry** (20% attack speed) and **Adrenaline Rush** (double energy) last 15 seconds, about one fight: use them at the start of a fight whenever they are ready. **Cold Blood** goes right before an **Eviscerate** at 5 points; otherwise your next **Sinister Strike** uses it up.
+- Skip **Slice and Dice**: in fights this short it does not pay back its 25 energy and the points it takes from **Eviscerate**. The fight lab measured leveling without it 1 to 1.5% faster per kill.
+- Pull the next mob within 20 seconds of a kill: **Remorseless Attacks** gives your next **Sinister Strike** 40% more crit chance.
+
+**Caveats**
+
+- **Kidney Shot** at 5 points when you are hurt measured about 1% slower than **Eviscerate**: on a single mob, ending the fight sooner saves more health than the stun. Keep it for an add or a pull that goes wrong.
+- With swords, kicking every caster measured slightly slower (under 1% per kill): **Kick** only the spells that would hurt.
+- On a pull of two, **Blade Flurry** hits both mobs: in the fight lab's two-mob pulls it was worth about 9% per kill.
+- Eat only below 40% health and bandage below 60%: the fight lab measured eating that late about 4% faster than eating at 65%.
+
+**When to change it**
+
+- Below half health while the mob still has more than 30% of its health, press **Evasion** (50% more dodge for 15 seconds).
+- In long fights such as dungeon bosses, **Slice and Dice** pays again: the raid list keeps it up from the first point.
+- If a pull goes wrong, **Gouge**, **Kidney Shot**, **Vanish** and **Sprint** get you out; the fight lab does not model adds or escapes.
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

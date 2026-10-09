@@ -21,6 +21,30 @@
 
 **Between fights:** Bandage below 60% health, eat below half.
 
+## Why this rotation
+
+Assassination levels with two daggers but plays like Combat: **Garrote** from stealth, **Sinister Strike** to 5 points, **Eviscerate**. **Seal Fate** and the poison talents are what set it apart.
+
+**Why it works**
+
+- A mob you fight alone turns to face you after the opener, and **Backstab** needs you behind it, so **Sinister Strike** is your builder even with daggers.
+- Open with **Garrote** from stealth: a combo point and an 18-second bleed. The fight lab measured a **Cheap Shot** opener about 10% slower per kill: it gives 2 points and a stun but no damage, for 60 energy.
+- **Seal Fate** turns every **Sinister Strike** crit into 2 points, and **Malice**, **Lethality** and **Remorseless Attacks** make those crits frequent and big. Pull the next mob within 20 seconds of a kill so the 40% crit chance from **Remorseless Attacks** is not wasted.
+- **Eviscerate** at 5 points, or earlier when it would kill the mob: points left on a dead mob are lost. Press **Cold Blood** right before an **Eviscerate** at 5 points; otherwise your next **Sinister Strike** uses it up.
+- Keep **Instant Poison** on the main hand and **Deadly Poison** on the off hand: every weapon strike can apply them, and this build maxes **Improved Poisons** and **Vile Poisons**.
+- Skip **Slice and Dice**: fights end before it pays back, and the fight lab measured leveling without it about 3% faster per kill with daggers.
+
+**Caveats**
+
+- **Kidney Shot** at 5 points when you are hurt measured about 1% slower than **Eviscerate**: on a single mob, ending the fight sooner saves more health than the stun. Keep it for an add or a pull that goes wrong.
+- This build has no **Blade Flurry** or **Adrenaline Rush**: **Evasion** is your only cooldown when a pull goes wrong.
+- Eat only below 40% health and bandage below 60%: the fight lab measured eating that late about 4% faster than eating at 65%.
+
+**When to change it**
+
+- Below half health while the mob still has more than 30% of its health, press **Evasion** (50% more dodge for 15 seconds).
+- In a dungeon, where the tank holds the mob, stand behind it and build with **Backstab** as the raid list does; the fight lab only plays solo.
+
 ## Talents while leveling
 
 One point per level from 10, in this order:
