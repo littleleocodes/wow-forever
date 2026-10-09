@@ -249,8 +249,16 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a):
     e = R.SPECS[cls][entry_name]
     cur = json.load(open(R.sim_path(e["gear"]) if pathlib.Path(R.sim_path(e["gear"])).is_absolute() else repo / e["gear"], encoding="utf-8"))["items"]
     pool = pool_of(tier, zones)
-    r = optimize_set(cls, [(entry_name, e, "dummy", talents, label)], cur, pool, repo, db, a, f"{cls}-{SM.slug(spec)}-{tier}", keep_current=(tier == "bis"))
     p = set_path(cls, spec, tier)
+    # 2026-10-09: empty enchant slots are filled from the role's template before and after the search (fill_enchants.py: a set grown
+    # from a preset without enchants kept none, the Balance, feral, Retribution, Arms and Fury sets)
+    import fill_enchants as FE
+    tmpl = FE.role(p.name)
+    if tmpl:
+        FE.fill(cur, tmpl)
+    r = optimize_set(cls, [(entry_name, e, "dummy", talents, label)], cur, pool, repo, db, a, f"{cls}-{SM.slug(spec)}-{tier}", keep_current=(tier == "bis"))
+    if tmpl:
+        FE.fill(r["items"], tmpl)
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps({"items": r["items"]}, indent=1) + "\n", encoding="utf-8")
     return dict(r, entry=entry_name, gear=p.relative_to(ROOT).as_posix(), date=TODAY)

@@ -90,6 +90,7 @@ type config struct {
 	NoExecute          bool            `json:"noExecute"`   // no execute phases (a dummy never dies)
 	MobType            string          `json:"mobType"`     // the target's creature type (a proto MobType name without its prefix); "" = Elemental, see below
 	NumTargets         int             `json:"numTargets"`  // targets in the encounter (2026-10-08, the fight-variety check); 0 or 1 = one
+	Atiesh             bool            `json:"atiesh"`      // 2026-10-09: the full raid's four Atiesh auras (off by default: a Naxxramas item)
 	Seed               int64           `json:"seed"`
 	IsTank             bool            `json:"isTank"`
 	// "statweights": true prints, per build, the simulator's stat weights (DPS per point of each stat, weapon DPS as pseudo-stats)
@@ -359,6 +360,12 @@ func main() {
 			raid = core.SinglePlayerRaidProto(player, party, raidBuffs, debuffs)
 		} else {
 			party, raidBuffs, indiv := gproto.Clone(core.FullPartyBuffs).(*proto.PartyBuffs), gproto.Clone(core.FullRaidBuffs).(*proto.RaidBuffs), gproto.Clone(core.FullIndividualBuffs).(*proto.IndividualBuffs)
+			// 2026-10-09: the fork's full party (core.FullPartyBuffs) carries all four Atiesh auras (+33 spell damage, +2% spell
+			// crit, +62 healing, +11 mp5 for the party). Atiesh is Naxxramas's legendary, in no announced Forever phase, so the
+			// full raid leaves it out unless the config says "atiesh": true (comparisons with older runs).
+			if !cfg.Atiesh {
+				party.AtieshDruid, party.AtieshMage, party.AtieshPriest, party.AtieshWarlock = 0, 0, 0, 0
+			}
 			for _, n := range cfg.BuffsOff {
 				if !clearField(raidBuffs, n) && !clearField(party, n) && !clearField(indiv, n) {
 					die("buffs_off: no raid, party or individual buff field %q", n)

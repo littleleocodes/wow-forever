@@ -235,7 +235,8 @@
         "alcoholId": 21151,
         "foodId": 18254,
         "potId": 13444,
-        "conjuredId": 12662
+        "conjuredId": 12662,
+        "mhImbueId": 25122
       },
       "builds": ["affliction-dot-raid", "opt-affliction-raid-raid-dps"]
     },
@@ -267,7 +268,8 @@
         "alcoholId": 21151,
         "foodId": 18254,
         "potId": 13444,
-        "conjuredId": 12662
+        "conjuredId": 12662,
+        "mhImbueId": 25122
       },
       "builds": ["destruction-fire-raid", "opt-fire-destro-raid-raid-dps"]
     },
@@ -299,7 +301,8 @@
         "alcoholId": 21151,
         "foodId": 18254,
         "potId": 13444,
-        "conjuredId": 12662
+        "conjuredId": 12662,
+        "mhImbueId": 25122
       },
       "builds": ["ds-ruin-raid", "opt-sb-raid-raid-dps", "destruction-ml-raid"]
     },
@@ -330,7 +333,8 @@
         "alcoholId": 21151,
         "foodId": 18254,
         "potId": 13444,
-        "conjuredId": 12662
+        "conjuredId": 12662,
+        "mhImbueId": 25122
       },
       "builds": ["demonology-pact-raid", "demonology-ml-raid"],
       "rotation_only": true,
@@ -364,7 +368,8 @@
         "alcoholId": 21151,
         "foodId": 18254,
         "potId": 13444,
-        "conjuredId": 12662
+        "conjuredId": 12662,
+        "mhImbueId": 25122
       },
       "builds": ["destruction-incinerate-raid"],
       "rotation_only": true,
@@ -516,7 +521,9 @@
         "alcoholId": 21151,
         "dragonbreathChili": true,
         "foodId": 20452,
-        "potId": 13444
+        "potId": 13444,
+        "mhImbueId": 22756,
+        "ohImbueId": 16138
       },
       "self_debuffs": {"hunters_mark": true},
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
@@ -697,7 +704,9 @@
         "zanzaId": 8410,
         "alcoholId": 21151,
         "dragonbreathChili": true,
-        "foodId": 20452
+        "foodId": 20452,
+        "mhImbueId": 22756,
+        "potId": 13442
       },
       "builds": ["arms-2h-raid", "opt-arms-2h-raid-raid-dps"]
     },
@@ -727,7 +736,10 @@
         "zanzaId": 8410,
         "alcoholId": 21151,
         "dragonbreathChili": true,
-        "foodId": 20452
+        "foodId": 20452,
+        "mhImbueId": 22756,
+        "ohImbueId": 16138,
+        "potId": 13442
       },
       "builds": ["fury-dw-raid", "opt-fury-dw-raid-raid-dps", "fury-open-raid"]
     },
@@ -790,7 +802,9 @@
         "zanzaId": 8410,
         "alcoholId": 21151,
         "dragonbreathChili": true,
-        "foodId": 20452
+        "foodId": 20452,
+        "mhImbueId": 22756,
+        "potId": 13442
       },
       "rotation_only": true,
       "preset_names": ["Arms 39/12/0"],
@@ -828,7 +842,8 @@
         "dragonbreathChili": true,
         "foodId": 13810,
         "potId": 13444,
-        "conjuredId": 12662
+        "conjuredId": 12662,
+        "mhImbueId": 22756
       },
       "builds": ["ret-raid-dps", "ret-full-buffs-raid", "opt-ret-dps-raid-dps", "retribution-ml-raid"],
       "self_buffs": {"greater_blessing_of_might": true},
@@ -898,7 +913,8 @@
         "zanzaId": 8423,
         "foodId": 18254,
         "potId": 13444,
-        "conjuredId": 12662
+        "conjuredId": 12662,
+        "mhImbueId": 25122
       },
       "builds": ["elemental-raid-dps", "opt-elemental-dps-raid-dps", "elemental-raid"],
       "self_buffs": {"mana_spring_totem": "TristateEffectRegular"},
@@ -936,7 +952,9 @@
         "zanzaId": 8410,
         "dragonbreathChili": true,
         "foodId": 13810,
-        "potId": 13444
+        "potId": 13444,
+        "mhImbueId": 22756,
+        "ohImbueId": 16138
       },
       "builds": ["enhancement-raid-dps", "opt-enhancement-dps-raid-dps", "enhancement-ml-raid", "elemental-enhancement-ml-raid"],
       "self_buffs": {"mana_spring_totem": "TristateEffectRegular"},
@@ -970,7 +988,8 @@
         "zanzaId": 8423,
         "foodId": 18254,
         "potId": 13444,
-        "conjuredId": 12662
+        "conjuredId": 12662,
+        "mhImbueId": 25122
       },
       "self_buffs": {"mana_spring_totem": "TristateEffectRegular"},
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
@@ -1043,7 +1062,8 @@
         "foodId": 13928,
         "potId": 13444,
         "conjuredId": 12662,
-        "goblinSapper": true
+        "goblinSapper": true,
+        "mhImbueId": 22756
       },
       "builds": ["feral-cat-dps", "opt-feral-cat-dps-raid-dps"],
       "buffs_off": ["leader_of_the_pack"],

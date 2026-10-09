@@ -34,5 +34,47 @@
   "replace": "\t\t\tBaseDamageMin: 18.17 * attackSpeed,\n\t\t\tBaseDamageMax: 27.66 * attackSpeed,\n",
   "with": "\t\t\tBaseDamageMin: 18.17 * foreverPetHitSpeed(attackSpeed), // wow-forever patch: Forever does not normalize pet damage (patches/forever/sim/hunter/pet_scaling.go)\n\t\t\tBaseDamageMax: 27.66 * foreverPetHitSpeed(attackSpeed),\n",
   "why": "the fork scales a pet's base hit with its attack speed (equal damage at every speed); in Forever a faster pet hits as hard and does more damage"
+ },
+ {
+  "file": "sim/core/target.go",
+  "replace": "table.HitSuppression = UnitLevelFloat64(defender.Level, 0, 0, 0, 0, 0.01)",
+  "with": "table.HitSuppression = UnitLevelFloat64(defender.Level, 0, 0, 0, 0, foreverHitSuppression()) // wow-forever patch: no 1% hit suppression in Forever (patches/forever/sim/core/forever_rules_patch.go)",
+  "why": "the client's hit-cap tooltips: 8% melee, 17% spells, 27% dual wield never miss a raid boss (no 1% suppression, no 1% spell floor)"
+ },
+ {
+  "file": "sim/core/spell_result.go",
+  "replace": "return math.Max(0.01, 1-hitChance)",
+  "with": "return math.Max(foreverSpellMissFloor(), 1-hitChance) // wow-forever patch: no 1% spell-miss floor in Forever (forever_rules_patch.go)",
+  "why": "17% spell hit never misses a raid boss in Forever (client tooltip), so no 1% floor"
+ },
+ {
+  "file": "sim/core/rage.go",
+  "replace": "const CritRageMultiplier = 1.75",
+  "with": "const CritRageMultiplier = 2.0 // wow-forever patch: \"Additional Rage generated from landing Critical Strikes increased to 100% increased Rage (was 75%)\" (warriors 2026-10-02, druids 2026-10-08)",
+  "why": "Blizzard's beta notes: critical strikes generate 100% more rage (was 75%) for warriors and druids"
+ },
+ {
+  "file": "sim/core/rage.go",
+  "replace": "generatedRage := preArmorDamage * DamageTakenRageFactor / unit.MaxHealth() * unit.rageBar.damageTakenRageMultiplier",
+  "with": "generatedRage := preArmorDamage * DamageTakenRageFactor / foreverRageHealth(unit) * unit.rageBar.damageTakenRageMultiplier // wow-forever patch: an expected creature's health, not the player's (forever_rules_patch.go)",
+  "why": "beta notes 2026-10-08: rage from damage taken uses an expected creature's health, not the player's"
+ },
+ {
+  "file": "sim/druid/forms.go",
+  "replace": "const BearFormThreatMultiplier = 1.3",
+  "with": "const BearFormThreatMultiplier = 1.5 // wow-forever patch: \"Bear Form and Dire Bear Form: Threat bonus increased to 50% from 30%\" (beta notes 2026-10-08)",
+  "why": "beta notes 2026-10-08: Bear Form threat bonus 50% (was 30%)"
+ },
+ {
+  "file": "sim/core/spelldata/effect.go",
+  "replace": "func (e *Effect) Coeff() float64 {\n\treturn e.SPCoef\n}",
+  "with": "func (e *Effect) Coeff() float64 {\n\treturn e.SPCoef * DownrankMultiplier(e.SpellID) // wow-forever patch: Forever's downranking penalty (patches/forever/sim/core/spelldata/downrank.go)\n}",
+  "why": "Forever: spell ranks far below your level get less from spell power (TBC's rule as the assumption)"
+ },
+ {
+  "file": "sim/hunter/raptor_strike.go",
+  "replace": "\t\t\thunter.PseudoStats.DisableDWMissPenalty = true\n",
+  "with": "\t\t\thunter.PseudoStats.DisableDWMissPenalty = foreverRaptorQueueHit() // wow-forever patch: no off-hand hit bonus while queued (patches/forever/sim/hunter/raptor_queue.go)\n",
+  "why": "Forever removed the off-hand hit bonus of a queued Heroic Strike; we assume the same for Raptor Strike"
  }
 ]
