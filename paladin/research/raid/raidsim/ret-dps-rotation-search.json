@@ -208,8 +208,8 @@
   "start": "ui\\specs\\paladin\\retribution\\apls\\default.apl.json",
   "builds": [
    {
-    "label": "opt-ret-dps-raid-dps",
-    "talents": "25003002-503-05225131001230321"
+    "label": "retribution-ml-raid",
+    "talents": "25003001-503-05225131001330321"
    },
    {
     "label": "sim preset: P4/P5 Ret",
@@ -226,13 +226,13 @@
     "protect_only": true
    },
    {
-    "label": "retribution-ml-raid",
-    "talents": "25003001-503-05225131001330321",
+    "label": "opt-ret-dps-raid-dps",
+    "talents": "25003002-503-05225131001230321",
     "protect_only": true
    }
   ],
   "tuned_on": [
-   "opt-ret-dps-raid-dps",
+   "retribution-ml-raid",
    "sim preset: P4/P5 Ret"
   ],
   "iterations": 3000,
@@ -331,10 +331,10 @@
   ],
   "final": {
    "raid": {
-    "opt-ret-dps-raid-dps": {
-     "before": 893.8389930049052,
-     "after": 995.1727330714756,
-     "base": 893.8389930049052,
+    "retribution-ml-raid": {
+     "before": 898.7241054078156,
+     "after": 998.025052352749,
+     "base": 898.7241054078156,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -367,10 +367,10 @@
      "oom_before": 0.00039249999975,
      "oom_after": 0.00039249999975
     },
-    "retribution-ml-raid": {
-     "before": 898.7241054078156,
-     "after": 998.025052352749,
-     "base": 898.7241054078156,
+    "opt-ret-dps-raid-dps": {
+     "before": 893.8389930049052,
+     "after": 995.1727330714756,
+     "base": 893.8389930049052,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -379,6 +379,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 9
+  "passes": 10
  }
 }

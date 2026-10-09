@@ -94,7 +94,7 @@ Enhancement is a melee spec that spends mana: your two-hander and **Windfury Wea
 
 ## Other builds of this spec
 
-- [One slow weapon](../research/raid/builds/opt-enhancement-dps-raid-dps.md) (11/31/9, 694 DPS in a full raid) — [open the talent tree](https://talentsforever.com/shaman/60/5000321-055030031005102051-05004-6)
+- [Enhancement (optimized)](../research/raid/builds/opt-enhancement-dps-raid-dps.md) (11/31/9, 694 DPS in a full raid) — [open the talent tree](https://talentsforever.com/shaman/60/5000321-055030031005102051-05004-6)
 - [Enhancement — Stormstrike / Maelstrom Weapon](../research/raid/builds/enhancement-raid-dps.md) (11/31/9, 684 DPS in a full raid) — [open the talent tree](https://talentsforever.com/shaman/60/5200031-055030031005102051-05004-6)
 
 ---

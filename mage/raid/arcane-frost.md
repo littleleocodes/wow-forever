@@ -28,20 +28,20 @@
 
 ## Why this rotation
 
-This hybrid plays exactly like the Frost page: **Frostbolt** as the filler, free **Arcane Missiles** on **Missile Barrage**, **Ice Lance** on **Fingers of Frost**, and **Fire Blast** only at the very end. Its Arcane points add hit and crit to the Missiles, free spells and **Presence of Mind**; it takes no **Arcane Power**.
+This hybrid plays exactly like the Frost page: **Frostbolt** as the filler, free **Arcane Missiles** on **Missile Barrage**, **Ice Lance** on **Fingers of Frost**, and **Fire Blast** only at the very end. Its Arcane points add hit and crit to the Missiles, free spells and **Presence of Mind**; the build on this page takes no **Arcane Power**.
 
 **Why it works**
 
-- **Arcane Missiles** on **Missile Barrage** comes first. Each **Frostbolt** has a 20% chance to make your next Missiles free and twice as fast (the full damage in 2.5 seconds); **Arcane Focus** and **Arcane Impact** add hit and crit to them.
+- **Arcane Missiles** on **Missile Barrage** comes first. Each **Frostbolt** that lands has a 20% chance to make your next Missiles free and twice as fast (the full damage in 2.5 seconds); **Arcane Focus** and **Arcane Impact** add hit and crit to them.
 - **Ice Lance** on **Fingers of Frost** comes next. Each **Frostbolt** chill has a 15% chance to treat your next 2 spells as if the target were frozen; **Ice Lance** deals 300% more damage to a frozen target and **Shatter** adds 50% crit chance, so both charges go to **Ice Lance**. With both procs up, the simulator measured the free Missiles first slightly better (0.2%).
-- **Frostbolt** fills everything else and is the spell that rolls for both procs. **Winter's Chill** is passive: each Frost hit adds a stack of +2% crit to your **Frostbolt** and **Ice Lance**, up to 4 with this build's 4 points.
+- **Frostbolt** fills everything else and is the spell that rolls for both procs. **Winter's Chill**, if your build takes it, is passive: each Frost hit adds a stack of +2% crit to your **Frostbolt** and **Ice Lance**, one stack per talent point.
 - **Fire Blast** waits for the last 3 seconds, when a **Frostbolt** could no longer land before the boss dies; the simulator measured this 0.5% better. The rotation search kept it out of the rest of the fight: no damage talent here improves it, it costs more mana and it rolls for neither proc.
 - **Presence of Mind** at the pull makes one spell instant (3-minute cooldown). **Arcane Concentration** makes about one damage spell in ten free, and **Arcane Meditation** keeps half your mana regeneration going while you cast.
 - Mana: your mana gem (from **Conjure Mana Ruby**) goes at 80% mana and **Evocation** only below 20% mana with more than 25 seconds left; in a full raid the simulator never needed **Evocation**.
 
 **Caveats**
 
-- The Frost page's build is the same plan with this build's **Arcane Mind** point moved into **Winter's Chill**; the simulator puts the two within about 1% of each other, a tie.
+- The Frost page plays the same list with more Frost points; the simulator puts the two pages within 2% of each other, a tie.
 - Several targets: this list is for one boss. For packs, **Blizzard**, **Cone of Cold** and **Arcane Explosion** are your area spells.
 - Moving: **Ice Lance** and **Fire Blast** are instant, and **Presence of Mind** makes one **Frostbolt** instant. Threat is not in the simulator: give the tank a few seconds on a fresh pull.
 
@@ -91,7 +91,7 @@ This hybrid plays exactly like the Frost page: **Frostbolt** as the filler, free
 
 ## Other builds of this spec
 
-- [Raid Frostbolt with Ice Lance on Fingers of Frost charges](../research/raid/builds/opt-frost-raid-raid-dps.md) (22/0/29, 680 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/1502050030003111--055500030100031024-6)
+- [Arcane-Frost (optimized)](../research/raid/builds/opt-frost-raid-raid-dps.md) (22/0/29, 680 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/1502050030003111--055500030100031024-6)
 - [Frost — Arcane Power / Frostbolt](../research/raid/builds/frost-arcane-power-raid.md) (32/0/19, 651 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/055005003000311531--055500031-6)
 
 ---

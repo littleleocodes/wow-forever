@@ -85,7 +85,7 @@ Allocation adopted on 2026-09-27 from `opt-enhancement-dps-raid-dps`, the best b
   3. drop the condition: if mana % ≥ 60%: cast Earth Shock (+3.0%, pass 2)
   4. threshold 5 -> 3.75: if stacks of Maelstrom Weapon ≥ 5: cast Lightning Bolt (+0.8%, pass 4)
   5. insert at the end: if number of targets = 1 and not Searing Totem is on the target: cast Searing Totem (+0.4%, pass 4)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-09, 8 changes to the base rotation; third-seed check: opt-enhancement-dps-raid-dps 676 -> 693 DPS (+2.5%), sim preset: Level 60 675 -> 696 DPS (+3.1%), enhancement-raid-dps 673 -> 683 DPS (+1.5%), enhancement-ml-raid 715 -> 739 DPS (+3.4%), elemental-enhancement-ml-raid 668 -> 690 DPS (+3.3%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-09, 8 changes to the base rotation; third-seed check: enhancement-ml-raid 715 -> 739 DPS (+3.4%), sim preset: Level 60 675 -> 696 DPS (+3.1%), enhancement-raid-dps 673 -> 683 DPS (+1.5%), opt-enhancement-dps-raid-dps 676 -> 693 DPS (+2.5%), elemental-enhancement-ml-raid 668 -> 690 DPS (+3.3%)):
   1. insert in the middle: if not Flame Shock is on the target: cast Flame Shock (+1.0%, pass 1)
   2. threshold 5 -> 3.75: if stacks of Maelstrom Weapon ≥ 5: cast Lightning Bolt (+0.3%, pass 1)
   3. drop 'time left in the fight ≥ 20s' from the condition: if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem (+0.2%, pass 1)

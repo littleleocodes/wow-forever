@@ -93,7 +93,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
   15. drop 'mana % ≥ 15%' from the condition: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness (+0.2%, pass 5)
   16. threshold 70% -> 65%: if mana % ≥ 15% and Seal of Righteousness is up and mana % ≥ 70%: cast Seal of Command (+0.5%, pass 5)
   17. threshold 1s -> 2s: if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 1s: cast Seal of Command (+0.2%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-09, 11 changes to the base rotation; third-seed check: opt-ret-dps-raid-dps 894 -> 995 DPS (+11.3%), sim preset: P4/P5 Ret 873 -> 969 DPS (+11.1%), ret-raid-dps 875 -> 972 DPS (+11.1%), ret-full-buffs-raid 902 -> 998 DPS (+10.5%), retribution-ml-raid 899 -> 998 DPS (+11.0%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 10 passes, the last 2026-10-09, 11 changes to the base rotation; third-seed check: retribution-ml-raid 899 -> 998 DPS (+11.0%), sim preset: P4/P5 Ret 873 -> 969 DPS (+11.1%), ret-raid-dps 875 -> 972 DPS (+11.1%), ret-full-buffs-raid 902 -> 998 DPS (+10.5%), opt-ret-dps-raid-dps 894 -> 995 DPS (+11.3%)):
   1. drop 'time left on Seal of Righteousness ≤ 1s' from the condition: if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 1s: cast Seal of Command (+2.4%, pass 1)
   2. threshold 70% -> 50%: if mana % ≥ 70%: cast Consecration (+1.4%, pass 1)
   3. move to the top: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness (+0.2%, pass 1)
@@ -112,14 +112,15 @@ Before the pull: at -1.5s: cast Seal of Command.
 |---|---|---|
 | 1 | if time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness | 5.0 |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 2s: cast Seal of Command | 5.0 |
-| 4 | if mana % ≥ 15% and Seal of Righteousness is up and mana % ≥ 65%: cast Seal of Command | 5.0 |
-| 5 | cast Hammer of Wrath | 2.0 |
-| 6 | cast Holy Strike | 6.0 |
-| 7 | cast Consecration | 6.2 |
-| 8 | cast Consecration | 0.7 |
+| 3 | if Judgement can be cast: cast Judgement | 7.7 |
+| 4 | if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 2s: cast Seal of Command | 5.0 |
+| 5 | if mana % ≥ 15% and Seal of Righteousness is up and mana % ≥ 65%: cast Seal of Command | 5.0 |
+| 6 | cast Hammer of Wrath | 2.0 |
+| 7 | cast Holy Strike | 6.0 |
+| 8 | cast Consecration | 6.2 |
+| 9 | cast Consecration | 0.7 |
 
-Lines of the simulator's rotation these builds never cast: cast Holy Shock, cast Judgement (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Holy Shock (its condition never held in these fights).
 
 Damage by ability:
 

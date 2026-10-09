@@ -96,7 +96,7 @@ Marksmanship plays without a pet: **Lone Wolf** adds 20% to everything you do wh
 ## Other builds of this spec
 
 - [Marksmanship — With a pet](../research/raid/builds/marksmanship-with-a-pet-open-raid.md) (7/39/5, 881 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/502-0053252501523051-5-6)
-- [Marksmanship without a pet](../research/raid/builds/opt-mm-lonewolf-raid-raid-dps.md) (5/38/8, 858 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5-005355051150305-50003-6)
+- [Marksmanship (optimized, lone wolf)](../research/raid/builds/opt-mm-lonewolf-raid-raid-dps.md) (5/38/8, 858 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5-005355051150305-50003-6)
 - [Marksmanship — Raid](../research/raid/builds/marksmanship-ml-raid.md) (11/40/0, 815 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5501-305355041150305--6)
 - [Marksmanship with Beast Mastery support](../research/raid/builds/bm-mm-full-buffs-raid.md) (21/30/0, 803 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/53200005050001-005155000150305--6)
 

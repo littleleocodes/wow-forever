@@ -5,6 +5,7 @@
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
 | `opt-feral-cat-dps-raid-dps` | 9/31/11 | 368 | 16 | +0.0% | 312 | 0 | +91.1% |
+| `feral-combat-shifting-power-raid` | 9/35/7 | 357 | 15 | -2.9% | 305 | 0 | +85.0% |
 | sim preset: Feral Cat 9/35/7 | - | 357 | 15 | -2.9% | 305 | 0 | - |
 | `feral-cat-dps` | 9/32/10 | 357 | 15 | -3.0% | 304 | 0 | +84.7% |
 | sim preset: Feral | - | 340 | 15 | -7.7% | 289 | 0 | - |
@@ -25,6 +26,7 @@ Mapped onto the spec model's sources: `rip` 39%, `white` 32%, `shred` 28%; 3% of
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
 - opt-feral-cat-dps-raid-dps: `050022-25000332020032012051-055001`
+- feral-combat-shifting-power-raid: `050022-55000032121032212051-052`
 - sim preset: Feral Cat 9/35/7: `050022-55000032121032212051-052`
 - feral-cat-dps: `050022-55000332120032012021-055`
 - sim preset: Feral: `-55210032021132212051-05503`

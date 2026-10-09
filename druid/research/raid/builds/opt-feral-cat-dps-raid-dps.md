@@ -61,14 +61,15 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 
 ## Rank among our builds and the community simulator's
 
-**1 of 4** for `feral-cat-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 5** for `feral-cat-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | **[`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md)** | ours: optimizer | 9/31/11 | 368 | +0.0% | 594 | -14.1% | 0 s |
-| 2 | *Feral Cat 9/35/7* | community simulator | - | 357 | -2.9% | 691 | +0.0% | 0 s |
-| 3 | [`feral-cat-dps`](feral-cat-dps.md) | ours: hand draft | 9/32/10 | 357 | -3.0% | 579 | -16.2% | 0 s |
-| 4 | *Feral* | community simulator | - | 340 | -7.7% | 665 | -3.8% | 0 s |
+| 2 | [`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md) | ours: hand draft | 9/35/7 | 357 | -2.9% | 691 | +0.0% | 0 s |
+| 3 | *Feral Cat 9/35/7* | community simulator | - | 357 | -2.9% | 691 | +0.0% | 0 s |
+| 4 | [`feral-cat-dps`](feral-cat-dps.md) | ours: hand draft | 9/32/10 | 357 | -3.0% | 579 | -16.2% | 0 s |
+| 5 | *Feral* | community simulator | - | 340 | -7.7% | 665 | -3.8% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

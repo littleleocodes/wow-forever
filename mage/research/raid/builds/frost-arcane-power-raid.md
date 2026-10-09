@@ -88,24 +88,27 @@ The Classic 31/0/20 survives: Arcane Power (+30% damage, now +30% mana cost), Pr
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-02, 3 passes, the last 2026-10-08, 4 changes to the base rotation; third-seed check: frost-ml-raid 591 -> 604 DPS (+2.2%), sim preset: Frost DPS 551 -> 561 DPS (+1.7%), frost-arcane-power-raid 567 -> 572 DPS (+0.8%), frost-winters-chill-raid 544 -> 547 DPS (+0.6%), frost-fingers-of-frost-raid 588 -> 601 DPS (+2.3%), opt-frost-raid-raid-dps 580 -> 599 DPS (+3.3%), opt-frost-raid-raid-dps-extwc 545 -> 549 DPS (+0.7%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-02, 4 passes, the last 2026-10-09, 7 changes to the base rotation; third-seed check: open winner 576 -> 605 DPS (+5.1%), frost-ml-raid 591 -> 604 DPS (+2.2%), sim preset: Frost DPS 551 -> 561 DPS (+1.7%), frost-arcane-power-raid 567 -> 572 DPS (+0.8%), frost-winters-chill-raid 544 -> 547 DPS (+0.6%), frost-fingers-of-frost-raid 588 -> 602 DPS (+2.4%), opt-frost-raid-raid-dps 580 -> 600 DPS (+3.4%), opt-frost-raid-raid-dps-extwc 545 -> 549 DPS (+0.8%)):
   1. drop: if mana % < 20% and time left in the fight > 25s: cast Evocation (+0.3%, pass 1)
   2. move down below 'if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles': if Fingers of Frost is up: cast Ice Lance (+0.2%, pass 1)
   3. repair: insert before the filler: if mana % < 5% and time left in the fight > 25s: cast Evocation (every frost-raid build raced, 20,000 fights, seed 3: opt-frost-raid-raid-dps-extwc +6.6%, the others -0.02% to +0.00%) (+6.6%, pass 2)
   4. only with 3s or more of the fight left: cast Frostbolt + insert at the end: if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast (+0.6%, pass 3)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-02, 3 passes, the last 2026-10-09, 2 changes to the base rotation; third-seed check: frost-ml-raid 673 -> 683 DPS (+1.5%), sim preset: Frost DPS 631 -> 635 DPS (+0.7%), frost-arcane-power-raid 646 -> 650 DPS (+0.6%), frost-winters-chill-raid 616 -> 620 DPS (+0.6%), frost-fingers-of-frost-raid 669 -> 680 DPS (+1.7%), opt-frost-raid-raid-dps 669 -> 680 DPS (+1.7%), opt-frost-raid-raid-dps-extwc 645 -> 650 DPS (+0.7%)):
+  5. threshold 80% -> 60%: if mana % ≤ 80%: cast Mana Ruby (mana gem) (+0.2%, pass 4)
+  6. threshold 25s -> 50s: if mana % < 5% and time left in the fight > 25s: cast Evocation (+0.2%, pass 4)
+  7. insert at the end: cast Arcane Blast (+0.2%, pass 4)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-02, 4 passes, the last 2026-10-09, 2 changes to the base rotation; third-seed check: open winner 676 -> 693 DPS (+2.4%), frost-ml-raid 673 -> 683 DPS (+1.5%), sim preset: Frost DPS 631 -> 635 DPS (+0.7%), frost-arcane-power-raid 646 -> 650 DPS (+0.6%), frost-winters-chill-raid 616 -> 620 DPS (+0.6%), frost-fingers-of-frost-raid 669 -> 680 DPS (+1.7%), opt-frost-raid-raid-dps 669 -> 680 DPS (+1.7%), opt-frost-raid-raid-dps-extwc 645 -> 650 DPS (+0.7%)):
   1. move down below 'if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles': if Fingers of Frost is up: cast Ice Lance (+0.2%, pass 1)
   2. only with 3s or more of the fight left: cast Frostbolt + insert at the end: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.5%, pass 1)
 
 | # | Priority (the first line whose condition holds is cast) | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) casts/min |
 |---|---|---|
-| 1 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
+| 1 | if mana % ≤ 60%: cast Mana Ruby (mana gem) | as ready |
 | 2 | use every other cooldown when ready | as ready |
 | 3 | if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles | 3.7 |
 | 4 | if time left in the fight ≥ 3s: cast Frostbolt | 20.4 |
 | 5 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.3 |
 
-Lines of the simulator's rotation these builds never cast: cast Ice Lance (needs the Ice Lance talent); cast Evocation (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Ice Lance (needs the Ice Lance talent); cast Evocation (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent).
 
 Damage by ability:
 

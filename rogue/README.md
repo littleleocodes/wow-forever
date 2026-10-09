@@ -36,7 +36,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
 | 1 | [Combat-Subtlety](leveling/combat-subtlety.md) — Combat-Subtlety — Leveling 🔬 | 26 | fastest |
-| 2 | [Combat](leveling/combat.md) — Combat — Leveling ⚗ | 26 | +1% |
+| 2 | [Combat](leveling/combat.md) — Combat — Leveling ⚗ | 26 | +0.5% |
 | 3 | [Subtlety](leveling/subtlety.md) — Subtlety — Leveling 🔬 | 27 | +4% |
 | 4 | [Daggers (split)](leveling/daggers-split.md) — Daggers — Leveling 🔬 | 27 | +4% |
 | 5 | [Assassination](leveling/assassination.md) — Assassination (optimized) | 27 | +5% |

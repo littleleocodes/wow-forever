@@ -117,34 +117,34 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`opt-feral-cat-dps-raid-dps`](builds/opt-feral-cat-dps-raid-dps.md) (ours: optimizer, 368 DPS), *Feral Cat 9/35/7* (community simulator, 357 DPS), [`feral-cat-dps`](builds/feral-cat-dps.md) (ours: hand draft, 357 DPS), *Feral* (community simulator, 340 DPS)
+### [`opt-feral-cat-dps-raid-dps`](builds/opt-feral-cat-dps-raid-dps.md) (ours: optimizer, 368 DPS), [`feral-combat-shifting-power-raid`](builds/feral-combat-shifting-power-raid.md) (ours: hand draft, 357 DPS), *Feral Cat 9/35/7* (community simulator, 357 DPS), [`feral-cat-dps`](builds/feral-cat-dps.md) (ours: hand draft, 357 DPS), *Feral* (community simulator, 340 DPS)
 
 Before the pull: at -1.0s: cast Faerie Fire; at -3.5s: cast Tiger's Fury.
 
-| # | Priority (the first line whose condition holds is cast) | [`opt-feral-cat-dps-raid-dps`](builds/opt-feral-cat-dps-raid-dps.md) casts/min | *Feral Cat 9/35/7* casts/min | [`feral-cat-dps`](builds/feral-cat-dps.md) casts/min | *Feral* casts/min |
-|---|---|---|---|---|---|
-| 1 | cast Tiger's Fury | 2.3 | 2.3 | 2.3 | 2.3 |
-| 2 | if Faerie Fire should be refreshed: cast Faerie Fire | 39.7 | 39.7 | 39.7 | 39.2 |
-| 3 | if Cat Form is up: use every other cooldown when ready | as ready | as ready | as ready | as ready |
-| 4 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 4.7 | 4.7 | 4.7 | 4.8 |
-| 5 | cast Shred | 14.8 | 14.8 | 14.8 | 15.2 |
-| 6 | if time left in the fight ≥ 6s: cast Faerie Fire | 39.7 | 39.7 | 39.7 | 39.2 |
-| 7 | cast Goblin Sapper Charge | as ready | as ready | as ready | as ready |
-| 8 | if not Cat Form is up and (mana + 1500.0) ≤ (mana ÷ mana %): cast Demonic Rune | as ready | as ready | as ready | as ready |
-| 9 | if not Cat Form is up and (mana + 2250.0) ≤ (mana ÷ mana %): cast Potion | as ready | as ready | as ready | as ready |
-| 10 | if not Cat Form is up: cast Cat Form | 0.3 | 0.3 | 0.3 | 0.3 |
+| # | Priority (the first line whose condition holds is cast) | [`opt-feral-cat-dps-raid-dps`](builds/opt-feral-cat-dps-raid-dps.md) casts/min | [`feral-combat-shifting-power-raid`](builds/feral-combat-shifting-power-raid.md) casts/min | *Feral Cat 9/35/7* casts/min | [`feral-cat-dps`](builds/feral-cat-dps.md) casts/min | *Feral* casts/min |
+|---|---|---|---|---|---|---|
+| 1 | cast Tiger's Fury | 2.3 | 2.3 | 2.3 | 2.3 | 2.3 |
+| 2 | if Faerie Fire should be refreshed: cast Faerie Fire | 39.7 | 39.7 | 39.7 | 39.7 | 39.2 |
+| 3 | if Cat Form is up: use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready |
+| 4 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 4.7 | 4.7 | 4.7 | 4.7 | 4.8 |
+| 5 | cast Shred | 14.8 | 14.8 | 14.8 | 14.8 | 15.2 |
+| 6 | if time left in the fight ≥ 6s: cast Faerie Fire | 39.7 | 39.7 | 39.7 | 39.7 | 39.2 |
+| 7 | cast Goblin Sapper Charge | as ready | as ready | as ready | as ready | as ready |
+| 8 | if not Cat Form is up and (mana + 1500.0) ≤ (mana ÷ mana %): cast Demonic Rune | as ready | as ready | as ready | as ready | as ready |
+| 9 | if not Cat Form is up and (mana + 2250.0) ≤ (mana ÷ mana %): cast Potion | as ready | as ready | as ready | as ready | as ready |
+| 10 | if not Cat Form is up: cast Cat Form | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Haste, cast Metamorphosis Rune, cast Innervate (its condition never held in these fights).
 
 Damage by ability:
 
-| Ability | [`opt-feral-cat-dps-raid-dps`](builds/opt-feral-cat-dps-raid-dps.md) | *Feral Cat 9/35/7* | [`feral-cat-dps`](builds/feral-cat-dps.md) | *Feral* |
-|---|---|---|---|---|
-| Rip | 38% | 38% | 38% | 37% |
-| Auto Attack | 32% | 32% | 33% | 32% |
-| Shred | 27% | 27% | 27% | 28% |
-| Goblin Sapper Charge | 2% | 2% | 2% | 2% |
-| Dragonbreath Chili | 1% | 1% | 1% | 1% |
+| Ability | [`opt-feral-cat-dps-raid-dps`](builds/opt-feral-cat-dps-raid-dps.md) | [`feral-combat-shifting-power-raid`](builds/feral-combat-shifting-power-raid.md) | *Feral Cat 9/35/7* | [`feral-cat-dps`](builds/feral-cat-dps.md) | *Feral* |
+|---|---|---|---|---|---|
+| Rip | 38% | 38% | 38% | 38% | 37% |
+| Auto Attack | 32% | 32% | 32% | 33% | 32% |
+| Shred | 27% | 27% | 27% | 27% | 28% |
+| Goblin Sapper Charge | 2% | 2% | 2% | 2% | 2% |
+| Dragonbreath Chili | 1% | 1% | 1% | 1% | 1% |
 
 ## feral-bear-tank (tank)
 

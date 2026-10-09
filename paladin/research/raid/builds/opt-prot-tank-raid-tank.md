@@ -87,13 +87,12 @@ Before the pull: at -30s: cast Righteous Fury; at -3.5s: cast Seal of Righteousn
 | 1 | cast Templar's Bulwark | 0.3 |
 | 2 | cast Holy Shield | 6.0 |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | if time left on Seal of Righteousness ≤ 1s: cast Seal of Righteousness | 2.3 |
-| 5 | cast Consecration | 6.8 |
-| 6 | cast Holy Strike | 6.0 |
-| 7 | if health % < 10%: cast Lay on Hands | 0.3 |
-| 8 | if Redoubt is up: cast Holy Shield | 6.0 |
-
-Lines of the simulator's rotation these builds never cast: cast Judgement (its condition never held in these fights).
+| 4 | cast Judgement | 6.8 |
+| 5 | if time left on Seal of Righteousness ≤ 1s: cast Seal of Righteousness | 2.3 |
+| 6 | cast Consecration | 6.8 |
+| 7 | cast Holy Strike | 6.0 |
+| 8 | if health % < 10%: cast Lay on Hands | 0.3 |
+| 9 | if Redoubt is up: cast Holy Shield | 6.0 |
 
 Damage by ability (threat for tanks):
 

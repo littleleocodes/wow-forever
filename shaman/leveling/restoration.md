@@ -30,7 +30,7 @@ You level with the raid healer's talents in the fastest order and play a simple 
 
 **Why it works**
 
-- This build has neither **Stormstrike** nor **Maelstrom Weapon**, so line 2 is just **Earth Shock** and line 4 never comes up. In the fight lab it casts no **Lightning Bolt** at all: the opening bolt of line 1 is skipped by the mana rule below.
+- This build has no **Stormstrike**, **Maelstrom Weapon** or **Rage of the Farseer**: skip what uses them, but keep **Earth Shock** as your finisher. In the fight lab it casts no **Lightning Bolt** at all: there is no opening bolt, and without Maelstrom Weapon no instant one.
 - The fight lab plays this list with two mana rules: **Lightning Bolt** only once the mob is under 35% health and **Earth Shock** only under 20%. Spells cost drinking time; for Enhancement the two rules measured about 9% faster per kill.
 - Your damage is your weapon: **Rockbiter Weapon** until 30, then **Windfury Weapon**, on a slow two-hander, and **Lightning Shield** strikes back each time a mob hits you. From 28 you also have **Water Shield**: when your shield is gone and you are under 60% mana, the fight lab puts up Water Shield instead (only one shield can be up).
 - Drop **Searing Totem** at each pull while you have more than half your mana; **Totemic Focus**, your first five points, makes it a quarter cheaper.

@@ -38,13 +38,13 @@
 
 ## DPS by environment: dummy, raid, maximum
 
-The best of our builds per spec model on the boss-level training dummy with your own buffs (Forever: the setting the raid DPS calibrations and races use), on a level-60 dummy (Forever: own buffs; Classic: no buffs), in a full raid (phase-1 gear, full buffs minus the one the spec brings) and at the theoretical maximum (best gear preset, every buff and debuff on, consumables, 120 s and 60 s); the parse build (`opt-<spec>-parse`: personal DPS only) and the best simulator preset at the maximum for comparison. Reports: `<class>/research/raid/raidsim/<spec>-environments.md` (Forever), `<class>/research/talents/classic-baseline/raidsim/` (Classic).
+The best of our builds per spec model on the boss-level training dummy with your own buffs (Forever: the setting the raid DPS calibrations and races use), on a level-60 dummy (Forever: own buffs; Classic: no buffs), in a full raid (phase-1 gear, full buffs minus the one the spec brings) and at the theoretical maximum (best gear preset, every buff and debuff on, consumables, 180 s and 60 s); the parse build (`opt-<spec>-parse`: personal DPS only) and the best simulator preset at the maximum for comparison. Reports: `<class>/research/raid/raidsim/<spec>-environments.md` (Forever), `<class>/research/talents/classic-baseline/raidsim/` (Classic).
 
 | Class | Game | Spec model | Best build | Dummy | Dummy 60 | Raid | Maximum | Max 60 s | Parse build (max) | Best preset (max) |
 |---|---|---|---|---|---|---|---|---|---|---|
 | druid | Forever | `balance-dps` | `balance-moonkin-raid` (33/5/13) | 513 | 593 | 592 | 592 | 587 | `opt-balance-dps-parse` 592 | Moonkin 38/0/13 584 |
 | druid | Forever | `feral-bear-tank` | `feral-bear-tank` (7/35/9) | 235 | 257 | 542 | 542 | 530 | - | Bear Tank 0/31/20 505 |
-| druid | Forever | `feral-cat-dps` | `opt-feral-cat-dps-raid-dps` (9/31/11) | 368 | 401 | 594 | 594 | 620 | `opt-feral-cat-dps-parse` 594 | Feral Cat 9/35/7 691 |
+| druid | Forever | `feral-cat-dps` | `feral-combat-shifting-power-raid` (9/35/7) | 357 | 389 | 691 | 691 | 711 | `opt-feral-cat-dps-parse` 594 | Feral Cat 9/35/7 691 |
 | druid | Classic | `balance-dps` | `balance-moonkin-raid` (35/0/16) | 224 | - | 567 | 740 | 746 | - | Balance 741 |
 | druid | Classic | `feral-cat-dps` | `feral-cat-dps` (14/32/5) | 239 | - | 671 | 1563 | 1666 | - | Feral 1597 |
 | hunter | Forever | `bm-raid` | `beast-marks-open-raid` (27/21/3) | 474 | 525 | 855 | 855 | 886 | `beast-mastery-ml-parse` 843 | Beast Mastery 35/16/0 789 |

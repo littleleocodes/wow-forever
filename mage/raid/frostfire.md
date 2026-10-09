@@ -31,22 +31,20 @@ Frostfire is a Fire mage whose main spell is **Frostfire Bolt**: it counts as bo
 - **Pyroblast** at 3 stacks of **Heating Up**: crits from **Frostfire Bolt**, **Fire Blast** and **Scorch** each take 25% off its 6-second cast, so 3 stacks make it 1.5 seconds. Unlike the Fire list, this one never casts it at 2 stacks; the simulator measured dropping that line 0.3% better.
 - **Fire Blast** on cooldown (every 8 seconds: this build has no **Wake of Fire**): instant, and its crits feed **Heating Up** and **Ignite**. Using it without a mana condition was the biggest gain of the rotation search, about 5%.
 - **Scorch** keeps Fire Vulnerability (from **Improved Scorch**) at 5 stacks, +15% to your Fire damage, and **Frostfire Bolt** counts as Fire. This list refreshes it once 15 seconds or less of its 30 are left, a wider margin than the Fire list's 7.5; the line above shows only the stack count.
-- **Frostfire Bolt** is the real filler whenever you have 10% mana or more: 2.5 seconds with **Improved Fireball**, and one cast rolls for **Fingers of Frost**, **Heating Up** and **Ignite** at once.
-- The **Fireball** at the bottom is the simulator's low-mana fallback: below 10% mana it casts Rank 2 (45 mana) instead of **Frostfire Bolt** while mana comes back. Forever gives a rank that low only a small part of your spell power and fewer talent procs, so treat it as a stopgap, not a filler.
+- **Frostfire Bolt** is the filler: 2.5 seconds with **Improved Fireball**, and one cast rolls for **Fingers of Frost**, **Heating Up** and **Ignite** at once. Below 30% mana the list casts Rank 2 instead (285 mana against 370): it is learned at level 50, close enough to 60 that the low-rank penalty the simulator assumes leaves its spell power alone, and the simulator measured this about 2% better than the old rule of stopping at 10% mana.
+- The Rank 2 **Fireball** at the bottom of the list only matters when you cannot afford even a Rank 2 **Frostfire Bolt**. Forever gives ranks that far below your level only a small part of your spell power and fewer talent procs; with that penalty in, the simulator measured dropping the old Fireball fallback 1.0% better, so keep your mana up with gems and a potion instead.
 
 **Caveats**
 
 - **Fingers of Frost** charges go to the next 2 spells you cast, whatever they are: do not let a **Frostfire Bolt** use one up.
-- Mana: **Frostfire Bolt** costs 370 at top rank. The list uses both of your mana gems (from **Conjure Mana Ruby** and **Conjure Mana Citrine**) and **Master of Elements** refunds part of every crit, but the simulator still dips below 10% mana several times a fight.
+- Mana: **Frostfire Bolt** costs 370 at top rank. The list uses both of your mana gems (from **Conjure Mana Ruby** and **Conjure Mana Citrine**), **Master of Elements** refunds part of every crit, and below 30% mana the cheaper Rank 2 stretches what is left.
 - Moving: **Ice Lance** and **Fire Blast** are instant. For packs, **Flamestrike** and **Blizzard** are your area spells.
 - **Frostfire Bolt** is new in Forever: its numbers here are the simulator's model of the beta tooltip, not yet checked in game.
 
 **When to change it**
 
-- Below 10% mana the list stops **Frostfire Bolt**. Use a mana gem or potion before you get there: Forever's low-rank rule makes the Rank 2 **Fireball** a weak stopgap.
+- Below 30% mana, switch to Rank 2 **Frostfire Bolt** rather than stop casting it; a Rank 2 **Fireball** is a weak stopgap only for when even that is out of reach.
 - Against a target that resists Fire, **Frostfire Bolt** keeps working (it is checked against the lower of the target's Fire and Frost resistance), while **Fire Blast**, **Scorch** and **Pyroblast** lose damage.
-
-*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## The numbers
 

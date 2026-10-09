@@ -77,7 +77,7 @@ The Frostfire build the machine-learning talent search found in a full raid (eve
   14. only above 25% mana: if mana % ≥ 10% and time left in the fight ≥ 6s: cast Frostfire Bolt (+0.7%, pass 5)
   15. move to the top: cast Fire Blast (+3.8%, pass 5)
   16. insert at the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+0.5%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 11 passes, the last 2026-10-09, 20 changes to the base rotation; third-seed check: frostfire-open-raid 671 -> 637 DPS (-5.1%), frostfire-raid 613 -> 629 DPS (+2.5%), frostfire-ml-raid 623 -> 593 DPS (-4.8%), frostfire-fingers-of-frost-raid 678 -> 664 DPS (-2.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 12 passes, the last 2026-10-09, 22 changes to the base rotation; third-seed check: frostfire-fingers-of-frost-raid 678 -> 679 DPS (+0.1%), frostfire-raid 613 -> 633 DPS (+3.2%), frostfire-ml-raid 623 -> 609 DPS (-2.3%)):
   1. insert at the top: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   2. threshold 110 -> 82.5: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   3. insert at the top: cast Berserking (+0.3%, pass 3)
@@ -98,6 +98,8 @@ The Frostfire build the machine-learning talent search found in a full raid (eve
   18. threshold 7.5s -> 15s: if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 7.5s): cast Scorch + insert before the filler: cast Fireball (+0.2%, pass 8)
   19. drop: if mana % < 20% and time left in the fight > 50s: cast Evocation (+0.4%, pass 8)
   20. insert in the middle: cast Mana Citrine (+0.2%, pass 8)
+  21. rank 2 below 30% mana, above: if mana % ≥ 10%: cast Frostfire Bolt (+1.4%, pass 12)
+  22. drop 'mana % ≥ 10%' from the condition: if mana % ≥ 10% and mana % < 30%: cast Frostfire Bolt (+0.9%, pass 12)
 
 | # | Priority (the first line whose condition holds is cast) | [`frostfire-ml-raid`](frostfire-ml-raid.md) casts/min |
 |---|---|---|

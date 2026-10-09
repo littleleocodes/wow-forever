@@ -11,7 +11,7 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 | Spec | Leveling (solo) | Raid (group: full raid DPS) |
 |---|---|---|
 | **Arcane** | [Arcane — Leveling](leveling/arcane.md) 🔬<br>33 s/kill | **✅ Recommended**<br>[Arcane — Arcane Blast](raid/arcane.md)<br>694 DPS (raid) |
-| **Fire** | [Single-target Fireball leveling](leveling/fire.md)<br>32 s/kill | **✅ Recommended**<br>[Fire — Ignite / Hot Streak](raid/fire.md)<br>688 DPS (raid) |
+| **Fire** | [Fire (optimized)](leveling/fire.md)<br>32 s/kill | **✅ Recommended**<br>[Fire — Ignite / Hot Streak](raid/fire.md)<br>688 DPS (raid) |
 | **Frost** | **✅ Recommended**<br>[Frost — Leveling](leveling/frost.md) 🔬<br>26 s/kill | **✅ Recommended**<br>[Frost — Raid](raid/frost.md) 🔬<br>684 DPS (raid) |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
@@ -37,7 +37,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 |---|---|---|---|
 | 1 | [Frost](leveling/frost.md) — Frost — Leveling 🔬 | 26 | fastest |
 | 2 | [Arcane-Frost](leveling/arcane-frost.md) — Arcane-Frost — Leveling 🔬 | 31 | +19% |
-| 3 | [Fire](leveling/fire.md) — Single-target Fireball leveling | 32 | +26% |
+| 3 | [Fire](leveling/fire.md) — Fire (optimized) | 32 | +26% |
 | 4 | [Arcane](leveling/arcane.md) — Arcane — Leveling 🔬 | 33 | +27% |
 
 ### Raid (group)
@@ -47,7 +47,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
 | 1 | [Arcane](raid/arcane.md) — Arcane — Arcane Blast | 694 | best |
-| 2 | [Fire](raid/fire.md) — Fire — Ignite / Hot Streak | 688 | -1% |
+| 2 | [Fire](raid/fire.md) — Fire — Ignite / Hot Streak | 688 | -1.0% |
 | 3 | [Frost](raid/frost.md) — Frost — Raid 🔬 | 684 | -1% |
 | 4 | [Arcane-Frost](raid/arcane-frost.md) — Frost — Fingers of Frost / Ice Lance / Shatter | 680 | -2% |
 | 5 | [Frostfire](raid/frostfire.md) — Frostfire — Fingers of Frost / Ice Lance | 665 | -4% |

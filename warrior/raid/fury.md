@@ -8,7 +8,7 @@
 
 **Other setups of this spec.** This build is the Dual-wield setup. The spec's best build for each other setup, in a full raid:
 
-- Two-handed: [Two-handed Arms/raid or leveling](../research/raid/builds/opt-arms-2h-raid-raid-dps.md) (20/31/0), 898 DPS in a full raid — [open the talent tree](https://talentsforever.com/warrior/60/03305013032-05250030052210501--6)
+- Two-handed: [Fury (optimized, two-handed)](../research/raid/builds/opt-arms-2h-raid-raid-dps.md) (20/31/0), 898 DPS in a full raid — [open the talent tree](https://talentsforever.com/warrior/60/03305013032-05250030052210501--6)
 
 ## How to play
 
@@ -99,9 +99,9 @@ Fury in a raid fights in **Berserker Stance** with a weapon in each hand: **Bloo
 
 ## Other builds of this spec
 
-- [Two-handed Arms/raid or leveling](../research/raid/builds/opt-arms-2h-raid-raid-dps.md) (20/31/0, 898 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warrior/60/03305013032-05250030052210501--6)
+- [Fury (optimized, two-handed)](../research/raid/builds/opt-arms-2h-raid-raid-dps.md) (20/31/0, 898 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warrior/60/03305013032-05250030052210501--6)
 - [Fury — Two-Handed](../research/raid/builds/arms-2h-raid.md) (19/32/0, 887 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warrior/60/03305013031-55350000052010501--6)
-- [Raid dual-wield Fury](../research/raid/builds/opt-fury-dw-raid-raid-dps.md) (19/32/0, 885 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warrior/60/04305013102-25050035102210501--6)
+- [Fury (optimized, dual-wield)](../research/raid/builds/opt-fury-dw-raid-raid-dps.md) (19/32/0, 885 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warrior/60/04305013102-25050035102210501--6)
 - [Fury — Dual Wield](../research/raid/builds/fury-dw-raid.md) (13/38/0, 884 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warrior/60/20305012-55053005152010501--6)
 
 ---

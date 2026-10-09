@@ -1,14 +1,25 @@
 """Rogue module for the fight lab (Combat swords leveling).
 
-Spell ranks are read from `_reference/data/forever-spells/rogue.json` (beta client build 1.60.1.70009); talent numbers from
+Spell ranks are read from `_reference/data/forever-spells/rogue.json` (beta client build 1.60.1.70291); talent numbers from
 each rank's tooltip in `_reference/data/forever-talents/rogue.json`. Weapons: a quest-green sword in each hand by level
-(`tables.weapon_dps`, 2.6 speed), attack power from the client's base stats (1 per Strength and Agility), poisons from the
-spellbook (Instant Poison main hand, Deadly Poison off hand).
+(`tables.weapon_dps`, 2.6 speed; "dagger" in the spec string: two daggers, 1.8 speed), attack power from the client's base stats
+(1 per Strength and Agility), poisons from the spellbook (Instant Poison main hand, Deadly Poison off hand).
 
 Playstyle `combat-swords-raid` (the scorer's model id, used for leveling): open from stealth behind the mob with Cheap Shot
 (Garrote before 26), Slice and Dice at 1-2 points when it is down, Sinister Strike to 5 points, Eviscerate (or Kidney
-Shot when hurt), Riposte after a parry, Blade Flurry and Adrenaline Rush on the pull when ready, Evasion when low, Gouge
-to bandage in an emergency. Between fights: a bandage below 60% health (First Aid, 60 s cooldown), food below 50%.
+Shot when hurt), Riposte after a parry, Blade Flurry and Adrenaline Rush on the pull when ready, Cold Blood right before a
+5-point Eviscerate, Evasion when low. Between fights: a bandage below 60% health (First Aid, 60 s cooldown), food below 65%
+(the tuned rules in `rotations/rogue-<spec>.json` veto spells and move the thresholds on top of this list).
+
+2026-10-09 fixes against the 70291 tooltips: Cold Blood is spent by the next Sinister Strike, Backstab, Ambush, Eviscerate or
+Mutilate (it had made every Sinister Strike crit until the next Eviscerate, and was pressed at the pull); Remorseless Attacks
+covers Sinister Strike, Backstab, Ambush, Mutilate and Ghostly Strike (it was Sinister Strike only); Opportunity and Serrated
+Blades' armor share apply in every playstyle (they were Subtlety only, while the tuned Combat lists open with Garrote); Hack and
+Slash gives daggers crit and swords an extra attack on any landed melee attack (every weapon got the sword proc, white swings
+only); Kidney Shot stuns for the tooltip's seconds per combo point (its text has no "for N sec", so it stunned for 0 s);
+Slice and Dice counts as a finishing move for Ruthlessness and Relentless Strikes; a finisher that misses or is dodged or parried
+keeps its combo points (on_miss; engine.spend takes them before the roll, the raid simulator only on a landed finisher). The tuned
+rules' Kidney Shot veto was measured while Kidney Shot stunned for 0 s: re-tune (rotation_opt.py) before trusting it.
 
 Playstyle `subtlety-leveling` (any spec string starting with "subtlety"; 2026-09-30): a dagger in the main hand (Ambush needs
 one; Hemorrhage 145% and Ghostly Strike 180% weapon damage with a dagger make up for its 1.8 s speed, so the builders lose
@@ -24,6 +35,7 @@ import json
 import pathlib
 import re
 
+import tables
 from engine import parse_interrupt, BaseModule, Player, Spell, Weapon
 from tables import (GCD, MELEE_RANGE, WEAPON_SPEED, armor_mitigation, bandage_heal, class_attack_power, class_base_health, class_base_stats, class_dodge,
                     class_health_regen_tick, class_melee_crit, gear_stats, weapon_dps)
@@ -44,9 +56,14 @@ RUPTURE = re.compile(r"4 points: (\d[\d,]*) damage over (\d+) sec")
 SND = re.compile(r"attack speed by (\d+)%")
 POISON = re.compile(r"(\d+)% chance of poisoning the enemy(?: which instantly inflicts (\d[\d,]*) to (\d[\d,]*) Nature damage| for (\d[\d,]*) Nature damage over (\d+) sec)")
 INCAP = re.compile(r"incapacitates the target for (\d+) sec")
+PER_POINT_SECONDS = re.compile(r"(\d) points?\s*:\s*(\d+) seconds?")   # Kidney Shot: "1 point : 2 seconds  2 points: 3 seconds ..."
 
 TALENT_SPELLS = {"Riposte": "Riposte", "Blade Flurry": "Blade Flurry", "Adrenaline Rush": "Adrenaline Rush", "Cold Blood": "Cold Blood", "Mutilate": "Mutilate",
                  "Ghostly Strike": "Ghostly Strike", "Hemorrhage": "Hemorrhage", "Premeditation": "Premeditation", "Preparation": "Preparation", "Venom": "Venom"}
+# the abilities a talent names in its 70291 tooltip
+COLD_BLOOD_SPELLS = ("Sinister Strike", "Backstab", "Ambush", "Eviscerate", "Mutilate")             # "your next ... by 100%": the first one spends it
+REMORSELESS_SPELLS = ("Sinister Strike", "Backstab", "Ambush", "Mutilate", "Ghostly Strike")        # "your next ...": the first one spends it
+OPPORTUNITY_SPELLS = ("Backstab", "Garrote", "Ambush", "Mutilate")                                    # Garrote's bleed through periodic_multiplier
 
 
 def _num(s):
@@ -99,6 +116,8 @@ def load_spellbook():
                     s.combo = -1
                 if name in ("Kidney Shot", "Slice and Dice", "Expose Armor"):
                     s.combo = -1
+                if name == "Kidney Shot":   # stun seconds by combo points spent, applied in on_swing (spell.stun stays 0: the engine's stun is fixed)
+                    s.stun_by_points = {int(a): float(b) for a, b in PER_POINT_SECONDS.findall(txt)}
                 if st:
                     s.stun = float(st.group(1))
                 if ic:
@@ -140,7 +159,7 @@ TNUM = talent_numbers()
 
 MECHANICS = {
     "Improved Gouge": "+0.5s/rank Gouge",
-    "Remorseless Attacks": "+20%/rank crit on the first Sinister Strike after a kill",
+    "Remorseless Attacks": "+20%/rank crit on the next Sinister Strike, Backstab, Ambush, Mutilate or Ghostly Strike within 20 s of a kill",
     "Malice": "+1%/rank crit",
     "Ruthlessness": "20%/rank chance for a combo point after a finisher",
     "Murder": "+2%/rank damage vs Humanoids and Giants (half the mobs assumed: +1%/rank)",
@@ -149,7 +168,7 @@ MECHANICS = {
     "Improved Expose Armor": "not used",
     "Lethality": "+4%/rank crit damage bonus on Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, Hemorrhage",
     "Vile Poisons": "+4%/rank poison damage",
-    "Cold Blood": "a guaranteed crit every 3 min (on Eviscerate)",
+    "Cold Blood": "a guaranteed crit every 3 min: cast right before a 5-point Eviscerate, spent by the next Sinister Strike, Backstab, Ambush, Eviscerate or Mutilate",
     "Improved Poisons": "+2%/rank poison application chance",
     "Vigor": "+5 max energy/rank",
     "Seal Fate": "20%/rank: a crit from a combo-point ability adds a point",
@@ -167,18 +186,18 @@ MECHANICS = {
     "Flawless Execution": "-10 energy Eviscerate",
     "Dual Wield Specialization": "+5%/rank off-hand damage",
     "Blade Flurry": "+20% attack speed for 15 s every 2 min",
-    "Hack and Slash": "swords: 1%/rank chance per hit of an extra attack",
+    "Hack and Slash": "swords: 1%/rank chance per landed melee attack of an extra attack; daggers: +1%/rank crit with melee attacks (no maces in the lab)",
     "Weapon Expertise": "-1%/rank chance to be dodged or parried",
     "Aggression": "+2%/rank Sinister Strike, Backstab, Eviscerate",
     "Adrenaline Rush": "double energy regen for 15 s every 5 min",
     "Camouflage": "-2s/rank Stealth cooldown, stealth speed",
     "Master of Deception": "stealth only",
-    "Opportunity": "daggers / openers (+5%/rank Garrote, Ambush)",
+    "Opportunity": "+5%/rank Backstab, Garrote (the opener's bleed), Ambush, Mutilate",
     "Setup": "33%/rank: a combo point after a dodge",
     "Elusiveness": "not used",
     "Dirty Tricks": "not used",
-    "Improved Ambush": "daggers",
-    "Initiative": "33%/rank: an extra combo point on Cheap Shot / Garrote",
+    "Improved Ambush": "+15%/rank crit on Ambush (only the Subtlety playstyle casts Ambush)",
+    "Initiative": "33%/rank: an extra combo point on Cheap Shot / Garrote / Ambush",
     "Ghostly Strike": "not used",
     "Improved Distract": "not used",
     "Heightened Senses": "not used",
@@ -191,14 +210,15 @@ MECHANICS = {
     "Cutthroat": "daggers",
     "Thousand Cuts": "daggers / Hemorrhage",
 }
-# Talent effects the Subtlety playstyle adds (spec strings starting with "subtlety"); the Combat playstyles keep MECHANICS as it is.
+# Talent effects as the Subtlety playstyle plays them (spec strings starting with "subtlety"; documentation: MECHANICS is what the calibration
+# reads). Since 2026-10-09 Opportunity, Improved Ambush and Serrated Blades' armor share apply in every playstyle.
 SUBTLETY_MECHANICS = {
     "Hemorrhage": "the builder: 100% weapon damage, 145% with a dagger main hand (the Rupture bonus is unused: no Rupture)",
     "Ghostly Strike": "on cooldown (20 s): 125% weapon damage, 180% with a dagger main hand, +15% dodge for 7 s",
     "Premeditation": "2 combo points as the pull starts (2 min cooldown, off the global cooldown during the approach)",
     "Preparation": "resets Evasion (and Premeditation, Ghostly Strike) when Evasion is wanted but on cooldown (10 min)",
     "Improved Ambush": "+15%/rank crit on Ambush",
-    "Opportunity": "+5%/rank Backstab, Garrote, Ambush",
+    "Opportunity": "+5%/rank Backstab, Garrote, Ambush, Mutilate",
     "Initiative": "33%/rank: an extra combo point on Ambush, Cheap Shot, Garrote",
     "Serrated Blades": "attacks ignore 3%/rank of the mob's armor (Rupture bonus unused)",
     "Quietus": "+2%/rank Sinister Strike, Ghostly Strike, Hemorrhage below 35%",
@@ -218,12 +238,16 @@ SHARE_SOURCE = {"Melee": "white_mh", "Melee (off-hand)": "white_oh", "Sinister S
 NEW_SOURCES = {"garrote": {"id": "garrote", "share": 0.0, "min_level": 14, "tags": ["type:melee", "dot", "school:physical", "ability:Garrote", "opener", "weapon:sword"]},
                "riposte": {"id": "riposte", "share": 0.0, "min_level": 20, "tags": ["type:melee", "yellow", "school:physical", "ability:Riposte", "weapon:sword"], "cooldown": 6}}
 KEY_TALENTS = ["Dual Wield Specialization", "Malice", "Improved Eviscerate"]
-DESCRIPTION = ("Single-target leveling fights against normal mobs of your level with two swords: open from stealth behind the mob with Cheap Shot (Garrote before 26; the "
-               "mob turns to face you after the opener, so it can parry from then on), Slice and Dice at 1-2 points when it is down, Sinister Strike to 5 points, "
-               "Eviscerate (Kidney Shot instead when below 50% health), Riposte after a parry, Blade Flurry and Adrenaline Rush on the pull, Evasion when low; white "
-               "swings with both hands (19% extra miss on white dual-wield hits), Instant Poison on the main hand and Deadly Poison on the off hand. Between fights: "
-               "2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below 50%; a death costs 90 s.")
-NOT_MODELLED = "runners, adds, the stealth approach time, Expose Armor, Rupture (Eviscerate is used), Gouge-and-bandage, Vanish, Sprint, weapon skill, gear upgrades within a level bracket."
+DESCRIPTION = ("Single-target leveling fights against normal mobs of your level with two swords (the daggers models: two daggers, still Sinister Strike: the mob faces you "
+               "after the opener, so no Backstab): open from stealth behind the mob with Cheap Shot (Garrote before 26; the mob turns to face you after the opener, "
+               "so it can parry from then on), Slice and Dice at 1-2 points when it is down, Sinister Strike to 5 points, Eviscerate (Kidney Shot instead when below "
+               "60% health, stunning for the tooltip's seconds per point), Eviscerate at fewer points when it would kill the mob, Cold Blood right before a 5-point "
+               "Eviscerate, Riposte after a parry, Blade Flurry and Adrenaline Rush on the pull, Evasion when low; white swings with both hands (19% extra miss on "
+               "white dual-wield hits), Instant Poison on the main hand and Deadly Poison on the off hand. Between fights: 2 s loot, 6 s travel, a bandage below 60% "
+               "health (First Aid, 60 s cooldown), food below 65%; a death costs 90 s. The tuned rules (rotations/rogue-<spec>.json) veto spells and move the "
+               "thresholds on top of this list.")
+NOT_MODELLED = ("runners, adds, the stealth approach time, Expose Armor, Rupture (Eviscerate is used), Garrote's attack power bonus (its tooltip gives no number), "
+                "Gouge-and-bandage, Vanish, Sprint, weapon skill, maces (Hack and Slash's armor share), gear upgrades within a level bracket.")
 # rebuild.py: which scorer model, hand draft and optimizer build the pipeline calibrates, races and reports for this class
 PIPELINE = {"variants": [{'spec': 'combat-swords-raid', 'opt': 'opt-combat-swords-raid-leveling-aoe', 'tag': 'aoe', 'profile': 'leveling-aoe', 'lookahead': 16, 'sets': ['MOBS_PER_PULL=2'], 'levels': '30,40,50,60', 'calibrate_levels': '40,60', 'label': 'Two-mob pulls with Blade Flurry'}], "spec": "combat-swords-raid", "hand": "leveling-combat-swords", "opt": "opt-combat-swords-raid-leveling-st", "tag": "combat", "lookahead": 16,
             "levels": "20,30,40,50,60", "calibrate_levels": "30,60",
@@ -263,6 +287,9 @@ class RogueModule(BaseModule):
                 if sname in self.spells:   # copies: BOOK's Spell objects are shared by every module instance
                     self.spells[sname] = dataclasses.replace(self.spells[sname], weapon_pct=pct)
                     self.spells[sname].text = self.book[sname].text
+        else:
+            self.mh_dagger = "dagger" in spec   # daggers builds carry two daggers (1.8 s); the priority list is the same (no Backstab from the front)
+        self.weapon_kind = "dagger" if self.mh_dagger else "1h"   # the same kind in both hands; "1h" is a sword (Hack and Slash: an extra attack)
         self._fight = None
         self.opened = False
         self.armor_spell_used = "Instant Poison / Deadly Poison" if "Instant Poison" in self.spells else "none"
@@ -303,10 +330,7 @@ class RogueModule(BaseModule):
         p.melee_crit = class_melee_crit("rogue", level, agility) + self.tv("Malice", 0) / 100
         p.hit_bonus = self.tv("Precision", 0) / 100
         p.parry = 0.05 + self.tv("Deflection", 0) / 100
-        if self.sub:
-            kind = "dagger" if self.mh_dagger else "1h"
-        else:
-            kind = "dagger" if "dagger" in self.spec else "1h"   # daggers builds carry two daggers (1.8 s); the priority list is the same (no Backstab from the front)
+        kind = self.weapon_kind
         dps = weapon_dps(level, kind)
         p.mh = Weapon(dmg_min=dps * WEAPON_SPEED[kind] * 0.8, dmg_max=dps * WEAPON_SPEED[kind] * 1.2, speed=WEAPON_SPEED[kind], kind=kind)
         p.oh = Weapon(dmg_min=dps * WEAPON_SPEED[kind] * 0.8, dmg_max=dps * WEAPON_SPEED[kind] * 1.2, speed=WEAPON_SPEED[kind], kind=kind)
@@ -323,8 +347,8 @@ class RogueModule(BaseModule):
         cost = spell.cost
         if spell.name == "Sinister Strike":
             cost = max(0.0, cost - self.tv("Improved Sinister Strike", 0))
-        if spell.name == "Eviscerate" and self.rank("Flawless Execution"):
-            cost = max(0.0, cost - 10.0)
+        if spell.name == "Eviscerate":
+            cost = max(0.0, cost - self.tv("Flawless Execution", 0))   # "Reduces the Energy cost of your Eviscerate ability by 10."
         if spell.name in ("Cheap Shot", "Garrote"):
             cost = max(0.0, cost - self.tv("Dirty Deeds", 0))
         return cost
@@ -335,12 +359,14 @@ class RogueModule(BaseModule):
     def crit_bonus(self, spell, frozen):
         c = 0.0
         f = self._fight
-        if f and spell.name in ("Sinister Strike", "Eviscerate") and f.p.buff("Cold Blood", f.t):
-            c += 1.0
-        if f and spell.name == "Sinister Strike" and f.p.buff("Remorseless", f.t):
+        if f and spell.name in COLD_BLOOD_SPELLS and f.p.buff("Cold Blood", f.t):   # spent in on_swing by the first of these
+            c += self.tv("Cold Blood", 0) / 100
+        if f and spell.name in REMORSELESS_SPELLS and f.p.buff("Remorseless", f.t):   # likewise
             c += self.tv("Remorseless Attacks", 0) / 100
-        if self.sub and spell.name == "Ambush":
+        if spell.name == "Ambush":
             c += self.tv("Improved Ambush", 0) / 100
+        if self.weapon_kind == "dagger" and spell.kind == "melee" and spell.dot <= 0:   # Hack and Slash, Dagger/Fist: crit with weapon attacks
+            c += self.tv("Hack and Slash", 1) / 100                                       # (not the poisons, not a bleed's ticks)
         return c
 
     def crit_damage_bonus(self, spell):
@@ -367,8 +393,8 @@ class RogueModule(BaseModule):
         if self.sub:
             if spell.name in ("Ghostly Strike", "Hemorrhage") and f and f.m.hp < 0.35 * f.m.hp_max:
                 m *= 1 + self.tv("Quietus", 0) / 100
-            if spell.name in ("Ambush", "Garrote", "Backstab"):
-                m *= 1 + self.tv("Opportunity", 0) / 100
+        if spell.name in OPPORTUNITY_SPELLS:   # every playstyle: the Combat lists open with Garrote too (its bleed goes through here)
+            m *= 1 + self.tv("Opportunity", 0) / 100
         if spell.school == "nature":
             m *= 1 + self.tv("Vile Poisons", 0) / 100
         if spell.name == "Rupture":
@@ -392,7 +418,7 @@ class RogueModule(BaseModule):
         if snd:
             factor /= 1 + snd.get("speed", 0.2)
         if f.p.buff("Blade Flurry", f.t):
-            factor /= 1.2
+            factor /= 1 + (self.tv("Blade Flurry", 0) or 20.0) / 100   # "Increases your melee attack speed by 20% ..."
         return factor
 
     def dodge_parry_reduction(self):
@@ -417,21 +443,18 @@ class RogueModule(BaseModule):
         bf = self.spells.get("Blade Flurry")
         if bf is not None and p.ready("Blade Flurry", t) and p.energy >= bf.cost:
             p.energy -= bf.cost
-            p.buffs["Blade Flurry"] = {"until": t + 15.0}
+            p.buffs["Blade Flurry"] = {"until": t + (self.tv("Blade Flurry", 1) or 15.0)}   # "... Lasts 15 sec."
             p.cooldowns["Blade Flurry"] = t + bf.cooldown
         ar = self.spells.get("Adrenaline Rush")
         if ar is not None and p.ready("Adrenaline Rush", t):
-            p.buffs["Adrenaline Rush"] = {"until": t + 15.0}
+            p.buffs["Adrenaline Rush"] = {"until": t + (self.tv("Adrenaline Rush", 1) or 15.0)}   # "... by 100% for 15 sec."
             p.cooldowns["Adrenaline Rush"] = t + ar.cooldown
-        cb = self.spells.get("Cold Blood")
-        if cb is not None and p.ready("Cold Blood", t):
-            p.buffs["Cold Blood"] = {"until": t + 60.0}
-            p.cooldowns["Cold Blood"] = t + cb.cooldown
+        # Cold Blood is no longer pressed at the pull: decide() casts it right before a 5-point Eviscerate (cold_blood)
+        ignore = self.tv("Serrated Blades", 0) / 100   # every playstyle: "Causes your attacks to ignore 3% of your target's Armor"
+        if ignore:
+            for mob in [m] + list(fight.others()):
+                mob.armor_debuff = max(mob.armor_debuff, mob.armor * ignore)
         if self.sub:
-            ignore = self.tv("Serrated Blades", 0) / 100
-            if ignore:
-                for mob in [m] + list(fight.others()):
-                    mob.armor_debuff = max(mob.armor_debuff, mob.armor * ignore)
             pm = self.spells.get("Premeditation")
             if pm is not None and p.ready("Premeditation", t):   # cast on the approach (20 yd), before the opener
                 p.combo = min(5, p.combo + 2)
@@ -439,8 +462,8 @@ class RogueModule(BaseModule):
                 fight.casts["Premeditation"] = fight.casts.get("Premeditation", 0) + 1
 
     def on_regen_tick(self, fight, p, t):
-        if p.buff("Adrenaline Rush", t):
-            p.energy = min(p.energy_max, p.energy + 20.0)   # a second energy tick
+        if p.buff("Adrenaline Rush", t):   # "Increases your Energy regeneration rate by 100%": one more tick's worth
+            p.energy = min(p.energy_max, p.energy + tables.ENERGY_PER_TICK * (self.tv("Adrenaline Rush", 0) or 100.0) / 100)
 
     def interrupt_bonus(self, fight, spell):
         if spell.name == "Kick" and self.rank("Improved Kick") and fight.rng.random() < self.tv("Improved Kick", 0) / 100:
@@ -458,12 +481,22 @@ class RogueModule(BaseModule):
         p, m, t = fight.p, fight.m, fight.t
         if spell.name in ("Cheap Shot", "Garrote", "Kidney Shot", "Ambush"):
             self.opened = True
+        # one-use boosts: the first ability the tooltip names spends them, landed or not (its attack-table roll already had the crit)
+        if spell.name in COLD_BLOOD_SPELLS:
+            p.buffs.pop("Cold Blood", None)
+        if spell.name in REMORSELESS_SPELLS:
+            p.buffs.pop("Remorseless", None)
         if outcome == "parry" and "Riposte" in self.spells:
             p.buffs["Riposte"] = {"until": t + 5.0}
         if outcome in ("miss", "dodge", "parry"):
             return
-        if spell.name == "Kidney Shot":
-            m.debuffs["Kidney Shot"] = {"until": t + spell.stun, "stacks": 1}
+        if spell.name == "Kidney Shot":   # "Lasts longer per combo point: 1 point : 2 seconds ... 5 points: 6 seconds"
+            dur = getattr(spell, "stun_by_points", {}).get(max(1, min(5, fight.last_combo)), spell.stun)
+            m.debuffs["Kidney Shot"] = {"until": t + dur, "stacks": 1}
+            if dur > 0:
+                m.stun_until = max(m.stun_until, t + dur)
+                if m.casting(t):
+                    m.cast_end = -1.0   # a stun breaks the mob's cast, as engine.apply_control does for a fixed stun
         # poisons: Instant Poison on main-hand hits, Deadly Poison on off-hand hits
         chance_bonus = self.tv("Improved Poisons", 0) / 100
         ip, dp = self.spells.get("Instant Poison"), self.spells.get("Deadly Poison")
@@ -474,8 +507,10 @@ class RogueModule(BaseModule):
             stacks = min(5, (b["stacks"] if b and b["until"] > t else 0) + 1)
             m.debuffs["Deadly Poison"] = {"until": t + dp.dot_dur, "stacks": stacks}
             fight.refresh_dot("Deadly Poison", dp.dot * stacks * self.damage_multiplier(dp, False), dp.dot_ticks, dp.dot_dur / dp.dot_ticks, p.melee_crit, 2.0)
-        # extra attacks (Hack and Slash), combo points from crits (Seal Fate)
-        if spell.name in ("Melee", "Melee (off-hand)") and self.rank("Hack and Slash") and fight.rng.random() < self.tv("Hack and Slash", 0) / 100 and not getattr(fight, "_extra", False):
+        # extra attacks (Hack and Slash, Axe/Sword: "Your successful melee attacks have a 1% chance to trigger an extra attack": white and
+        # yellow hits; daggers get crit instead, crit_bonus), combo points from crits (Seal Fate)
+        if (self.weapon_kind == "1h" and spell.kind == "melee" and spell.name != "Hack and Slash" and self.rank("Hack and Slash")
+                and not getattr(fight, "_extra", False) and fight.rng.random() < self.tv("Hack and Slash", 0) / 100):
             fight._extra = True
             fight.resolve_attack(Spell("Hack and Slash", "physical", kind="melee", resource="none"), white=True, hand="mh")
             fight._extra = False
@@ -510,15 +545,13 @@ class RogueModule(BaseModule):
             base, dur = spell.rupture4
             total = base * (0.6 + 0.1 * cp) + 0.02 * cp * p.attack_power * 4
             fight.refresh_dot("Rupture", total * self.damage_multiplier(spell, False), max(1, int((dur - 2 + 2 * cp) / 2)), 2.0, p.melee_crit, 2.0)
-        if spell.combo < 0 and spell.name != "Slice and Dice":
+        if spell.combo < 0:   # "Your finishing moves ...": every finisher, Slice and Dice included
             if self.rank("Ruthlessness") and fight.rng.random() < self.tv("Ruthlessness", 0) / 100:
                 p.combo = min(5, p.combo + 1)
-            if self.rank("Relentless Strikes") and fight.rng.random() < 0.2 * max(1, fight.last_combo):
-                p.energy = min(p.energy_max, p.energy + 25.0)
-        if spell.name == "Eviscerate" and p.buff("Cold Blood", t):
-            p.buffs.pop("Cold Blood", None)
-        if spell.name == "Sinister Strike":
-            p.buffs.pop("Remorseless", None)
+            # "Your finishing moves have a 20% chance per Combo Point to restore 25 Energy."
+            if self.rank("Relentless Strikes") and fight.rng.random() < self.tv("Relentless Strikes", 0) / 100 * max(1, fight.last_combo):
+                p.energy = min(p.energy_max, p.energy + self.tv("Relentless Strikes", 1))
+        # (Cold Blood and Remorseless Attacks are spent in on_swing)
         if self.sub:
             if spell.name == "Ghostly Strike":
                 p.buffs["Ghostly Strike"] = {"until": t + 7.0}
@@ -526,6 +559,12 @@ class RogueModule(BaseModule):
                 for n in ("Evasion", "Premeditation", "Ghostly Strike", "Vanish", "Sprint", "Cold Blood", "Kick", "Gouge", "Kidney Shot", "Riposte", "Blind"):
                     p.cooldowns.pop(n, None)
                 fight.note("Preparation: cooldowns reset")
+
+    def on_miss(self, fight, spell):
+        # a finisher that misses or is dodged or parried keeps its combo points (engine.spend took them before the roll; the raid
+        # simulator spends them only on a landed finisher); its energy stays spent
+        if spell.combo < 0 and fight.last_combo > 0:
+            fight.p.combo = max(fight.p.combo, fight.last_combo)
 
     def on_dodge(self, fight):
         if self.rank("Setup") and fight.rng.random() < self.tv("Setup", 0) / 100:
@@ -599,10 +638,23 @@ class RogueModule(BaseModule):
             if ks and can(ks) and p.hp < 0.6 * p.hp_max and not m.stunned(t) and hp > 0.25 * m.hp_max:
                 return ks
             if evis and can(evis):
+                self.cold_blood(fight, can)
                 return evis
         if ss and can(ss):
             return ss
         return None
+
+    def cold_blood(self, fight, can):
+        """Cold Blood (no global cooldown) right before a 5-point Eviscerate, so its sure crit lands on the biggest hit: the next Sinister
+        Strike, Backstab, Ambush, Eviscerate or Mutilate spends it (on_swing). Not before an Eviscerate that kills anyway (the
+        kill-shot line above returns first)."""
+        cb = self.spells.get("Cold Blood")
+        p, t = fight.p, fight.t
+        if cb is not None and can(cb) and not p.buff("Cold Blood", t):
+            p.buffs["Cold Blood"] = {"until": t + 60.0}
+            p.cooldowns["Cold Blood"] = t + cb.cooldown
+            fight.casts["Cold Blood"] = fight.casts.get("Cold Blood", 0) + 1
+            fight.note("Cold Blood")
 
     def opener_order(self, fight, amb, gar, builder):
         """Ambush or Garrote first, whichever is worth more: its expected damage minus the energy it costs (valued at the damage
@@ -624,7 +676,8 @@ class RogueModule(BaseModule):
             cyc_cost += self.mana_cost(evis)
         dpe = cyc_dmg / cyc_cost
         opp = 1 + self.tv("Opportunity", 0) / 100
-        v_amb = (amb.weapon_pct * w + (amb.dmg_min + amb.dmg_max) / 2) * (1 + min(1.0, crit + self.tv("Improved Ambush", 0) / 100)) * armor * opp - dpe * self.mana_cost(amb)
+        # crit_bonus: Improved Ambush, plus Remorseless Attacks right after a kill and Hack and Slash with a dagger
+        v_amb = (amb.weapon_pct * w + (amb.dmg_min + amb.dmg_max) / 2) * (1 + min(1.0, crit + self.crit_bonus(amb, False))) * armor * opp - dpe * self.mana_cost(amb)
         # expected fight length: white swings (both hands, ~25% missed or avoided), 10 energy a second at the cycle's rate, the bleed
         white = w / p.mh.speed * (1 + (0.5 if p.oh is not None else 0.0)) * (1 + crit) * armor * 0.75
         fight_len = m.hp / max(1.0, white + dpe * 10.0 + gar.dot / max(1.0, gar.dot_dur))
@@ -670,6 +723,7 @@ class RogueModule(BaseModule):
             if ks and can(ks) and p.hp < 0.6 * p.hp_max and not m.stunned(t) and hp > 0.25 * m.hp_max:
                 return ks
             if evis and can(evis):
+                self.cold_blood(fight, can)
                 return evis
             return None   # pool energy for the finisher rather than waste a builder's point
         if gs and can(gs):

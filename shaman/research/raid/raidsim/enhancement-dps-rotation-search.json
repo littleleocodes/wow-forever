@@ -153,8 +153,8 @@
   "start": "ui\\specs\\shaman\\enhancement\\apls\\forever.apl.json",
   "builds": [
    {
-    "label": "opt-enhancement-dps-raid-dps",
-    "talents": "5000321-055030031005102051-05004"
+    "label": "enhancement-ml-raid",
+    "talents": "500533102-055030021005102251"
    },
    {
     "label": "sim preset: Level 60",
@@ -166,8 +166,8 @@
     "protect_only": true
    },
    {
-    "label": "enhancement-ml-raid",
-    "talents": "500533102-055030021005102251",
+    "label": "opt-enhancement-dps-raid-dps",
+    "talents": "5000321-055030031005102051-05004",
     "protect_only": true
    },
    {
@@ -177,7 +177,7 @@
    }
   ],
   "tuned_on": [
-   "opt-enhancement-dps-raid-dps",
+   "enhancement-ml-raid",
    "sim preset: Level 60"
   ],
   "iterations": 3000,
@@ -250,14 +250,14 @@
   ],
   "final": {
    "raid": {
-    "opt-enhancement-dps-raid-dps": {
-     "before": 675.6711135157722,
-     "after": 692.884408863866,
-     "base": 675.6711135157722,
+    "enhancement-ml-raid": {
+     "before": 714.919694036486,
+     "after": 739.3868704261314,
+     "base": 714.919694036486,
      "before_value": null,
      "after_value": null,
-     "oom_before": 3.94180492204255,
-     "oom_after": 1.0188021669433005
+     "oom_before": 27.178302876821252,
+     "oom_after": 27.178302876821252
     },
     "sim preset: Level 60": {
      "before": 675.3871661252306,
@@ -265,7 +265,7 @@
      "base": 675.3871661252306,
      "before_value": null,
      "after_value": null,
-     "oom_before": 2.6172360711152987,
+     "oom_before": 0.4821236276194,
      "oom_after": 0.4821236276194
     },
     "enhancement-raid-dps": {
@@ -274,17 +274,17 @@
      "base": 672.9867644834435,
      "before_value": null,
      "after_value": null,
-     "oom_before": 3.928806446985001,
+     "oom_before": 1.0150974814345,
      "oom_after": 1.0150974814345
     },
-    "enhancement-ml-raid": {
-     "before": 714.919694036486,
-     "after": 739.3868704261314,
-     "base": 714.919694036486,
+    "opt-enhancement-dps-raid-dps": {
+     "before": 675.6711135157722,
+     "after": 692.884408863866,
+     "base": 675.6711135157722,
      "before_value": null,
      "after_value": null,
-     "oom_before": 32.705248297424845,
-     "oom_after": 27.178302876821252
+     "oom_before": 1.0188021669433005,
+     "oom_after": 1.0188021669433005
     },
     "elemental-enhancement-ml-raid": {
      "before": 668.0701651821672,
@@ -292,12 +292,12 @@
      "base": 668.0701651821672,
      "before_value": null,
      "after_value": null,
-     "oom_before": 41.44455220999156,
+     "oom_before": 34.48790546134587,
      "oom_after": 34.48790546134587
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 8
+  "passes": 9
  }
 }

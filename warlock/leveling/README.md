@@ -7,7 +7,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
 | 1 | [Affliction-Demonology](affliction-demonology.md) — Leveling — Affliction DoTs with a Voidwalker | 36 | fastest |
-| 2 | [Demonology](demonology.md) — Demonology — Leveling 🔬 | 36 | +0% |
+| 2 | [Demonology](demonology.md) — Demonology — Leveling 🔬 | 36 | +0.4% |
 | 3 | [Affliction](affliction.md) — Affliction — Leveling 🔬 | 38 | +5% |
 | 4 | [Destruction](destruction.md) — Destruction — Leveling 🔬 | 39 | +9% |
 

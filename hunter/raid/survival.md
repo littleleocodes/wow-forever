@@ -98,7 +98,7 @@ Melee Survival fights at the boss with two one-handers and no pet. **Raptor Stri
 ## Other builds of this spec
 
 - [Survival — Raid](../research/raid/builds/survival-raid.md) (5/16/30, 1028 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5-005055001-50023023005022213-6)
-- [Melee hunter](../research/raid/builds/opt-melee-dps-raid-dps.md) (5/15/31, 1016 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5-005045001-500250030050220151-6)
+- [Survival (optimized)](../research/raid/builds/opt-melee-dps-raid-dps.md) (5/15/31, 1016 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5-005045001-500250030050220151-6)
 - [Survival — Melee](../research/raid/builds/survival-melee.md) (9/11/31) — [open the talent tree](https://talentsforever.com/hunter/60/522-005015-500230131050220151-6)
 
 ---

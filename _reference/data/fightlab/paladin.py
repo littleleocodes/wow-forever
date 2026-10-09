@@ -162,6 +162,8 @@ def _add_extras():
                 elif sp["name"] == "Holy Shield":
                     hm = HSHIELD.search(txt)
                     s.hs_dmg = _num(hm.group(1)) if hm else 0.0
+                    bm = re.search(r"chance to block by (\d+)%", txt)   # 70291: 30% (the module had 20% written in until 2026-10-09)
+                    s.hs_block = float(bm.group(1)) / 100 if bm else 0.30
                 elif sp["name"] == "Holy Shock":
                     hm = SHOCK_HEAL.search(txt)
                     s.shock_heal = (_num(hm.group(1)), _num(hm.group(2))) if hm else (0.0, 0.0)
@@ -288,7 +290,7 @@ MECHANICS_ALT = dict(MECHANICS, **{
     "Templar's Bulwark": "emergency absorb of 100% max health for 8 s (Forbearance 1 min)",
     "Reckoning": "8%/rank extra attack after a block, 20%/rank after a crit taken",
     "Iron Creed": "Holy Strike: -2%/rank damage taken for 6 s (Righteous Fury assumed up)",
-    "Holy Shield": "+20% block for 10 s or 4 blocks, Holy damage per block, recast when down",
+    "Holy Shield": "+30% block (the 70291 tooltip) for 10 s or 4 blocks, Holy damage per block, recast when down",
     "Two-Handed Weapon Specialization": "+2%/rank two-hander damage (weapon, seals, Judgement)",
 })
 
@@ -775,7 +777,7 @@ class PaladinModule(BaseModule):
         b = 0.0
         hs = p.buff("Holy Shield", t)
         if hs and hs["charges"] > 0:
-            b += 0.20
+            b += getattr(self.spells.get("Holy Shield"), "hs_block", 0.30)
         rd = p.buff("Redoubt", t)
         if rd and rd["charges"] > 0:
             b += self.tv("Redoubt", 1) / 100

@@ -28,7 +28,7 @@
     "written": "2026-10-09"
    },
    "leveling": {
-    "plan": "Combat levels on short fights: open with **Garrote** from stealth, build 5 points with **Sinister Strike**, finish with **Eviscerate**, and let **Riposte**, your poisons and two swords do the rest. A fight lasts about 10 to 18 seconds in the fight lab, too short for **Slice and Dice**, **Cheap Shot** or **Kidney Shot** to pay.",
+    "plan": "Combat levels on short fights: open with **Garrote** from stealth, build 5 points with **Sinister Strike**, finish with **Eviscerate**, and let **Riposte**, your poisons and two swords do the rest. A fight lasts about 10 to 18 seconds in the fight lab, too short for **Slice and Dice** or **Cheap Shot** to pay.",
     "why": [
      "Open with **Garrote** from stealth behind the mob: a combo point and an 18-second bleed, about a tenth of your damage at 60. The fight lab measured a **Cheap Shot** opener about 9% slower per kill: it gives 2 points and a stun but no damage, for 60 energy.",
      "**Sinister Strike** builds to 5 points and **Eviscerate** finishes; **Improved Sinister Strike** and **Flawless Execution** cut them to 40 and 25 energy. Cast **Eviscerate** earlier when it would kill the mob, because points left on a dead mob are lost.",
@@ -38,7 +38,7 @@
      "Pull the next mob within 20 seconds of a kill: **Remorseless Attacks** gives your next **Sinister Strike** 40% more crit chance."
     ],
     "caveats": [
-     "**Kidney Shot** at 5 points when you are hurt measured about 1% slower than **Eviscerate**: on a single mob, ending the fight sooner saves more health than the stun. Keep it for an add or a pull that goes wrong.",
+     "The list leaves out **Kidney Shot**, but the fight lab has not measured it fairly yet: keep it for an add or a pull that goes wrong.",
      "With swords, kicking every caster measured slightly slower (under 1% per kill): **Kick** only the spells that would hurt.",
      "On a pull of two, **Blade Flurry** hits both mobs: in the fight lab's two-mob pulls it was worth about 9% per kill.",
      "Eat only below 40% health and bandage below 60%: the fight lab measured eating that late about 4% faster than eating at 65%."
@@ -92,7 +92,7 @@
      "Skip **Slice and Dice**: fights end before it pays back, and the fight lab measured leveling without it about 3% faster per kill with daggers."
     ],
     "caveats": [
-     "**Kidney Shot** at 5 points when you are hurt measured about 1% slower than **Eviscerate**: on a single mob, ending the fight sooner saves more health than the stun. Keep it for an add or a pull that goes wrong.",
+     "The list leaves out **Kidney Shot**, but the fight lab has not measured it fairly yet: keep it for an add or a pull that goes wrong.",
      "This build has no **Blade Flurry** or **Adrenaline Rush**: **Evasion** is your only cooldown when a pull goes wrong.",
      "Eat only below 40% health and bandage below 60%: the fight lab measured eating that late about 4% faster than eating at 65%."
     ],
@@ -139,11 +139,11 @@
     "plan": "Subtlety levels on its openers and on dodges: **Premeditation** and a stealth opener put up to 4 points on the mob, one builder makes 5, and **Eviscerate** ends most fights. **Ghostly Strike** and **Setup** turn the mob's dodged swings into combo points.",
     "why": [
      "From stealth, **Premeditation** adds 2 points (a 2-minute cooldown, so about every fifth pull) and **Initiative** makes your opener add a second one: up to 4 points before your first builder.",
-     "Open with **Ambush** at low levels, where fights are short and its burst wins. From about level 30 **Garrote** is worth more, because its 18-second bleed ignores armor and the mob lives through it; **Dirty Deeds** later makes it 30 energy and usable from the front.",
+     "Open with **Ambush** at low levels, where fights are short and its burst wins (right after a kill, **Remorseless Attacks** makes it crit more). From around level 40 with this build **Garrote** is worth more, because its 18-second bleed ignores armor and the mob lives through it; **Dirty Deeds** then makes it 30 energy and usable from the front.",
      "This build has no **Hemorrhage**, so **Sinister Strike** builds your points all the way (40 energy with **Improved Sinister Strike**). **Ghostly Strike** goes in on its 20-second cooldown once you have it: 180% weapon damage with a dagger and 15% more dodge for 7 seconds.",
      "With **Setup**, every dodge adds a combo point, so **Ghostly Strike**, **Lightning Reflexes** and **Evasion** also build points.",
      "At 5 points, wait for the energy for **Eviscerate** rather than press a builder whose point would be lost. Cast **Eviscerate** earlier when it would kill the mob: points left on a dead mob are lost.",
-     "Skip **Slice and Dice** and **Kidney Shot**: the fight lab measured leveling without them about 3% and 1% faster per kill."
+     "Skip **Slice and Dice**: the fight lab measured leveling without it about 3% faster per kill. **Kidney Shot** is not measured fairly yet: keep it for a pull that goes wrong."
     ],
     "caveats": [
      "**Ambush** needs a dagger in your main hand and you behind the mob, and **Ghostly Strike** hits much harder with a dagger: keep daggers in both hands.",
@@ -171,7 +171,7 @@
      "Open with **Garrote** from stealth: with **Initiative** it gives 2 points, plus an 18-second bleed. The fight lab measured a **Cheap Shot** opener about 10% slower per kill: a stun deals no damage.",
      "**Setup** adds a combo point every time you dodge; the fight lab measured it the most valuable talent of this build, about 1.8 seconds per kill at 60. **Riposte** after a parry is your cheapest hit (10 energy for 150% weapon damage).",
      "**Eviscerate** at 5 points, or earlier when it would kill the mob. At 5 points **Relentless Strikes** always refunds 25 energy and **Ruthlessness** often adds a point back; press **Cold Blood** right before an **Eviscerate**, since your next **Sinister Strike** would use it up otherwise.",
-     "Skip **Slice and Dice** and **Kidney Shot**: the fight lab measured leveling without them about 3% and 1% faster per kill.",
+     "Skip **Slice and Dice**: the fight lab measured leveling without it about 3% faster per kill. **Kidney Shot** is not measured fairly yet: keep it for a pull that goes wrong.",
      "Pull the next mob within 20 seconds of a kill: **Remorseless Attacks** gives your next **Sinister Strike** 40% more crit chance."
     ],
     "caveats": [
@@ -203,7 +203,7 @@
      "**Riposte** after a parry is your cheapest hit: 10 energy for 150% weapon damage and a 6-second disarm."
     ],
     "caveats": [
-     "Skip **Slice and Dice** and **Kidney Shot**: the fight lab measured leveling without them about 3% and 1% faster per kill.",
+     "Skip **Slice and Dice**: the fight lab measured leveling without it about 3% faster per kill. **Kidney Shot** is not measured fairly yet: keep it for a pull that goes wrong.",
      "Keep a dagger in your main hand: **Ambush** needs one, and **Hemorrhage** and **Ghostly Strike** hit much harder with it.",
      "This build has no **Preparation**: when **Evasion** is on cooldown, there is no second one.",
      "Eat below 50% health and bandage below 60%: the fight lab measured eating that late about 4% faster than eating at 65%."

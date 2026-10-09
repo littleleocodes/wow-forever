@@ -6,7 +6,7 @@ The best talents and the best way to play every class in **World of Warcraft: Fo
 
 | Class | Roles | Fastest leveling (solo) | Most raid damage (DPS in a full raid) |
 |---|---|---|---|
-| [**Druid**](druid/README.md) | damage, tank, healer | [Feral Combat](druid/leveling/feral-combat.md) (27 s/kill) | [Feral Combat](druid/raid/feral-combat.md) (594 DPS), [Balance](druid/raid/balance.md) (592 DPS) |
+| [**Druid**](druid/README.md) | damage, tank, healer | [Feral Combat](druid/leveling/feral-combat.md) (27 s/kill) | [Feral Combat](druid/raid/feral-combat.md) (691 DPS) |
 | [**Hunter**](hunter/README.md) | damage | [Beast-Survival](hunter/leveling/beast-survival.md) (24 s/kill), [Survival](hunter/leveling/survival.md) (24 s/kill) | [Beast-Survival](hunter/raid/beast-survival.md) (1049 DPS), [Survival](hunter/raid/survival.md) (1048 DPS) |
 | [**Mage**](mage/README.md) | damage | [Frost](mage/leveling/frost.md) (26 s/kill) | [Arcane](mage/raid/arcane.md) (694 DPS), [Fire](mage/raid/fire.md) (688 DPS), [Frost](mage/raid/frost.md) (684 DPS), [Arcane-Frost](mage/raid/arcane-frost.md) (680 DPS) |
 | [**Paladin**](paladin/README.md) | damage, tank, healer | [Retribution](paladin/leveling/retribution.md) (28 s/kill) | [Retribution](paladin/raid/retribution.md) (996 DPS) |

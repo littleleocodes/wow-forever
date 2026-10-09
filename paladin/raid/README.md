@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 1 | [Retribution](retribution.md) — Retribution — Seal of Command / Twist of Light | 996 | best |
 
-**Tanking**: [Protection](protection.md) — Shield tank.
+**Tanking**: [Protection](protection.md) — Protection (optimized).
 
 **Healing**: [Holy](holy.md) — Holy — Raid Healer.
 

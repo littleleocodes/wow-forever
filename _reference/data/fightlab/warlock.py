@@ -1,19 +1,23 @@
 """Warlock module for the fight lab (Affliction leveling with a Voidwalker).
 
-Spell ranks are read from `_reference/data/forever-spells/warlock.json` (beta client build 1.60.1.70009); talent numbers from
+Spell ranks are read from `_reference/data/forever-spells/warlock.json` (the current beta snapshot); talent numbers from
 each rank's tooltip in `_reference/data/forever-talents/warlock.json`. Pet stats: level-60 demons from the ElliotWood/Forever
-simulator (`sim/warlock/pets.go`: Forever demons inherit nothing from the warlock), scaled down by level here.
+simulator (`sim/warlock/pets.go`), scaled down by level here, plus what the demon inherits from the warlock since 2026-10-08
+(`tables.PET_SCALING`, `make_pet`).
 
 Playstyle `affliction-leveling` (the scorer's model id): the Voidwalker runs in and holds the mob with Torment; the warlock
 puts Corruption, Bane of Agony, Siphon Life (talent) and Immolate on it, channels Wrack (talent) once the DoTs are up, fills
 with Shadow Bolt while mana is plentiful and the wand otherwise, Drain Lifes when hurt, Life Taps when low on mana, Fears or
 Death Coils a mob that reaches him. Between fights: Life Tap back to 70% mana, Consume Shadows / Health Funnel for the
-Voidwalker, food only below 35% health (Drain Life on the next mob does the rest).
+Voidwalker, food only below 55% health after the Life Taps (`eat_below`; Drain Life on the next mob does the rest).
 
 Playstyles `demonology-leveling` and `destruction-leveling` (2026-09-30; `decide_demonology`, `decide_destruction`): the same
 Voidwalker (Forever has no Felguard; the Voidwalker is the only demon that tanks), with their own priority lists and the
 talent effects those trees add (NEW_MECHANICS). Every effect added for them is gated on those two spec strings, so every
-other spec string (the Affliction rotation) plays exactly as before.
+other spec string (the Affliction rotation) plays exactly as before. Exception (2026-10-09): Molten Skin and Master
+Demonologist (Voidwalker) reduce damage taken under every spec string. MECHANICS had listed both as simulated for the Affliction
+rotation since 2026-09-28, but they only took effect in the two new ones, so the Affliction rotation measured them at zero and
+the calibration fitted them to zero.
 """
 import json
 import pathlib
@@ -167,7 +171,7 @@ MECHANICS = {
     "Suppression": "+1%/rank spell hit",
     "Improved Corruption": "-0.4s/rank Corruption cast (instant at 5/5), +2%/rank damage",
     "Malediction": "+1%/rank periodic damage",
-    "Soul Harvesting": "not used (Drain Soul kills are not part of the loop)",
+    "Soul Harvest": "not used (Drain Soul kills are not part of the loop)",
     "Improved Drains": "+7/13/20% Drain Life, Drain Soul, Wrack",
     "Improved Bane of Agony": "+5%/rank Bane of Agony",
     "Fel Concentration": "23%/rank chance to ignore pushback on drains and Wrack",
@@ -193,13 +197,13 @@ MECHANICS = {
     "Demonic Sacrifice": "not used while leveling (the Voidwalker tanks)",
     "Soul Link": "30% of damage you take goes to the pet; both deal +3%",
     "Demonic Knowledge": "+33%/rank of your level as spell power with a pet out",
-    "Master Demonologist": "Voidwalker: -2%/rank physical damage taken",
+    "Master Demonologist": "Voidwalker: -2%/rank physical damage taken for you and the pet (as extra armor: exact below the 75% cap)",
     "Improved Sayaad": "not used (Voidwalker)",
     "Improved Felhunter": "not used (Voidwalker)",
     "Destructive Reach": "+10%/rank range (longer pulls)",
     "Improved Shadow Bolt": "Shadow Bolt crits: +4%/rank Shadow damage taken for 12s",
     "Bane": "-0.1s/rank Shadow Bolt / Immolate cast",
-    "Molten Skin": "-2%/rank damage taken",
+    "Molten Skin": "-2%/rank all damage taken (melee and bolts, before Soul Link's split)",
     "Cataclysm": "-3.3%/rank Destruction mana cost",
     "Aftermath": "+10%/rank Immolate direct damage",
     "Ruin": "+20%/rank Destruction crit damage bonus",
@@ -207,10 +211,9 @@ MECHANICS = {
     "Intensity": "23%/rank chance to ignore pushback on Destruction spells",
     "Agonizing Flames": "+3.3%/rank Destruction damage",
 }
-# talent effects simulated only under the demonology-leveling / destruction-leveling spec strings (2026-09-30)
+# talent effects simulated only under the demonology-leveling / destruction-leveling spec strings (2026-09-30; Master Demonologist and
+# Molten Skin moved to MECHANICS on 2026-10-09: they apply to every spec string)
 NEW_MECHANICS = {
-    "Master Demonologist": "Voidwalker: -2%/rank physical damage taken for you and the pet (as extra armor: exact below the 75% cap)",
-    "Molten Skin": "-2%/rank all damage taken (melee and bolts, before Soul Link's split)",
     "Demonic Brand": "Searing Pain: -17/33/50% threat; brands the target 10 s: the pet's next 2/4/6 hits deal +65-68 Shadow (level-60 text, "
                      "scaled by level/60) with extra threat equal to the damage",
     "Decimation": "Shadow Bolt / Searing Pain on a target below 35%: +3/6% damage, then 10 s of Soul Fire at -20/40% cast time, no shard; "
@@ -238,7 +241,7 @@ FIT = {
     "Demonic Energies": "scale", "Improved Voidwalker": "scale", "Improved Health Funnel": "scale", "Master Summoner": "scale", "Soul Link": "scale",
     "Demonic Knowledge": "scale", "Master Demonologist": "scale", "Demonic Aegis": "scale", "Improved Shadow Bolt": "scale", "Bane": "scale", "Ruin": "scale",
     "Cataclysm": "scale", "Destructive Reach": "scale", "Improved Imp": "scale", "Molten Skin": "scale", "Aftermath": "scale", "Agonizing Flames": "scale",
-    "Shadowburn": "scale", "Intensity": "scale", "Soul Harvesting": "scale",
+    "Shadowburn": "scale", "Intensity": "scale", "Soul Harvest": "scale",
 }
 SHARE_SOURCE = {'Rain of Fire': 'rain_of_fire', "Corruption": "corruption", "Bane of Agony": "agony", "Drain Life": "drain_life", "Shadow Bolt": "shadow_bolt", "Immolate": "immolate",
                 "Wand": "wand", "Voidwalker melee": "voidwalker", "Siphon Life": "siphon_life", "Wrack": "wrack", "Death Coil": "death_coil"}
@@ -250,7 +253,7 @@ DESCRIPTION = ("Single-target leveling fights against normal mobs of your level 
                "and holds it until your threat passes 130% of its own (it takes the mob back once its threat passes yours by 10%). You cast Corruption, Bane of Agony, "
                "Siphon Life and Immolate, channel Wrack once the DoTs are up, fill with Shadow Bolt while mana is plentiful and the wand otherwise, Drain Life when "
                "hurt, Life Tap when low on mana, Fear or Death Coil a mob that reaches you. Between fights: 2 s loot, 6 s travel, Life Tap back to 70% mana, Consume "
-               "Shadows or Health Funnel for the pet, food only below 35% health, a 10-12 s re-summon after a pet death; a death costs 90 s.")
+               "Shadows or Health Funnel for the pet, food only below 55% health, a 10-12 s re-summon after a pet death; a death costs 90 s.")
 NOT_MODELLED = "runners, adds, soul shard economy (Drain Soul, Shadowburn shards), Curse of Exhaustion kiting, Sacrifice, Demonic Sacrifice, Succubus/Felhunter pets, gear upgrades within a level bracket."
 # rebuild.py: which scorer model, hand draft and optimizer build the pipeline calibrates, races and reports for this class
 PIPELINE = {"variants": [{'spec': 'affliction-leveling', 'opt': 'opt-affliction-leveling-leveling-aoe', 'tag': 'aoe', 'profile': 'leveling-aoe', 'lookahead': 16, 'sets': ['MOBS_PER_PULL=3'], 'levels': '30,40,50,60', 'calibrate_levels': '40,60', 'label': 'AoE grinding, 3 mobs per pull'}], "spec": "affliction-leveling", "hand": "leveling-affliction", "opt": "opt-affliction-leveling-leveling-st", "tag": "affliction", "lookahead": 16,
@@ -479,8 +482,9 @@ class WarlockModule(BaseModule):
         return True
 
     def armor_bonus(self):
-        """Master Demonologist (Voidwalker out): -2%/rank physical damage taken, as the armor that gives exactly that cut."""
-        if not (self.new_rot and self.rank("Master Demonologist") and self._fight):
+        """Master Demonologist (Voidwalker out): -2%/rank physical damage taken, as the armor that gives exactly that cut (every spec
+        string since 2026-10-09)."""
+        if not (self.rank("Master Demonologist") and self._fight):
             return 0.0
         p = self._fight.p
         if p.pet is None or not p.pet.alive or p.pet.name != "Voidwalker":
@@ -511,7 +515,7 @@ class WarlockModule(BaseModule):
         return False
 
     def split_damage_taken(self, fight, dmg):
-        if self.new_rot and self.rank("Molten Skin"):
+        if self.rank("Molten Skin"):   # every spec string since 2026-10-09 (was Demonology / Destruction only)
             dmg *= 1 - self.tv("Molten Skin", 0) / 100
         pet = fight.p.pet
         if self.rank("Soul Link") and pet is not None and pet.alive:
@@ -556,7 +560,7 @@ class WarlockModule(BaseModule):
         self._fight = fight
         self._base_mana = fight.p.base_mana
         p, t = fight.p, fight.t
-        if self.new_rot and p.pet is not None and p.pet.name == "Voidwalker" and self.rank("Master Demonologist"):
+        if p.pet is not None and p.pet.name == "Voidwalker" and self.rank("Master Demonologist"):   # every spec string since 2026-10-09
             p.pet.armor = self._pet_armor + self._md_armor(self._pet_armor, fight.m.level)
         if self.rank("Amplify Curse") and p.ready("Amplify Curse", t):
             p.buffs["Amplify Curse"] = {"until": t + 30.0}
@@ -745,33 +749,6 @@ class WarlockModule(BaseModule):
         if bolt and can(bolt) and hp > avg(bolt) * 0.9 and not (on_me and in_melee) and not near_aggro and p.mana - bolt_cost > reserve:
             return bolt
         if drain and can(drain) and p.hp < 0.85 * p.hp_max and hp > wand_hit * 4 and m.dist <= drain.range and not near_aggro:
-            return drain
-        return "wand"
-        # health and mana: Drain Life when hurt, Life Tap when the next bolt is unaffordable and health can pay for it
-        if drain and can(drain) and p.hp < 0.60 * p.hp_max and hp > wand_hit * 4 and m.dist <= drain.range:
-            return drain
-        bolt_cost = self.mana_cost(bolt) if bolt else 0.0
-        if tap and bolt and p.mana < bolt_cost + 50 and p.hp - tap.cost > 0.50 * p.hp_max and not (on_me and in_melee) and hp > avg(bolt):
-            return tap
-        # DoTs once each, when the mob will live long enough (Curse of the Elements first: it raises every spell after it)
-        if coe and can(coe) and not (m.debuffs.get("Curse of the Elements") or {}).get("until", 0) > t and hp > 0.5 * m.hp_max:
-            return coe
-        if corr and can(corr) and not fight.dot_active("Corruption") and hp > 0.25 * m.hp_max:
-            return corr
-        if agony and can(agony) and not fight.dot_active("Bane of Agony") and hp > 0.35 * m.hp_max:
-            return agony
-        if siphon and can(siphon) and not fight.dot_active("Siphon Life") and hp > 0.35 * m.hp_max:
-            return siphon
-        if immo and can(immo) and not fight.dot_active("Immolate") and hp > 0.45 * m.hp_max and p.mana > 0.5 * p.mana_max and not (on_me and in_melee):
-            return immo
-        if wrack and can(wrack) and not (m.debuffs.get("Wrack", {}).get("until", 0) > t) and fight.dot_active("Corruption") and hp > 0.25 * m.hp_max:
-            return wrack
-        # filler: Shadow Bolt while mana lasts (a Shadow Trance bolt is free time), Drain Life to repair Life Taps, wand when out of both
-        if bolt and can(bolt) and p.buff("Shadow Trance", t) and hp > avg(bolt) * 0.5:
-            return bolt
-        if bolt and can(bolt) and hp > avg(bolt) * 0.9 and hp > dots_left * 0.7 and not (on_me and in_melee):
-            return bolt
-        if drain and can(drain) and p.hp < 0.85 * p.hp_max and hp > wand_hit * 4 and m.dist <= drain.range:
             return drain
         return "wand"
 

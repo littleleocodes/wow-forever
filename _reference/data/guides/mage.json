@@ -6,7 +6,7 @@
    "raid": {
     "plan": "Frost in a raid is a **Frostbolt** caster that cashes in two procs: free **Arcane Missiles** from **Missile Barrage** and instant **Ice Lance** casts on **Fingers of Frost**. One **Fire Blast** in the last seconds of the fight uses time no **Frostbolt** can fill.",
     "why": [
-     "**Arcane Missiles** on **Missile Barrage** comes first. Each **Frostbolt** has a 20% chance to make your next Missiles free and twice as fast (the full damage in 2.5 seconds), and they are about a fifth of your damage in the simulator.",
+     "**Arcane Missiles** on **Missile Barrage** comes first. Each **Frostbolt** that lands has a 20% chance to make your next Missiles free and twice as fast (the full damage in 2.5 seconds), and they are about a fifth of your damage in the simulator.",
      "**Ice Lance** on **Fingers of Frost** comes next. Each **Frostbolt** chill has a 15% chance to treat your next 2 spells as if the target were frozen; a frozen target takes 300% more damage from **Ice Lance** and **Shatter** adds 50% crit chance, so spend both charges on **Ice Lance**. With both procs up, the simulator measured the free Missiles first slightly better (0.2%).",
      "**Frostbolt** fills everything else: 2.5 seconds with **Improved Frostbolt**, and the spell that rolls for both procs. **Winter's Chill** needs no button: in Forever it is your own debuff, each Frost hit adds a stack (+2% crit to your **Frostbolt** and **Ice Lance**, up to 5), and steady casting keeps it full.",
      "**Fire Blast** waits for the last 3 seconds. A **Frostbolt** started then would still be casting or in flight when the boss dies, while **Fire Blast** is instant; the simulator measured this 0.5% better. The rotation search kept it out of the rest of the fight: no Frost talent improves it, it costs more mana than a **Frostbolt** (340 against 290) and it rolls for neither proc.",
@@ -60,17 +60,17 @@
   },
   "Hybrid Arcane/Frost": {
    "raid": {
-    "plan": "This hybrid plays exactly like the Frost page: **Frostbolt** as the filler, free **Arcane Missiles** on **Missile Barrage**, **Ice Lance** on **Fingers of Frost**, and **Fire Blast** only at the very end. Its Arcane points add hit and crit to the Missiles, free spells and **Presence of Mind**; it takes no **Arcane Power**.",
+    "plan": "This hybrid plays exactly like the Frost page: **Frostbolt** as the filler, free **Arcane Missiles** on **Missile Barrage**, **Ice Lance** on **Fingers of Frost**, and **Fire Blast** only at the very end. Its Arcane points add hit and crit to the Missiles, free spells and **Presence of Mind**; the build on this page takes no **Arcane Power**.",
     "why": [
-     "**Arcane Missiles** on **Missile Barrage** comes first. Each **Frostbolt** has a 20% chance to make your next Missiles free and twice as fast (the full damage in 2.5 seconds); **Arcane Focus** and **Arcane Impact** add hit and crit to them.",
+     "**Arcane Missiles** on **Missile Barrage** comes first. Each **Frostbolt** that lands has a 20% chance to make your next Missiles free and twice as fast (the full damage in 2.5 seconds); **Arcane Focus** and **Arcane Impact** add hit and crit to them.",
      "**Ice Lance** on **Fingers of Frost** comes next. Each **Frostbolt** chill has a 15% chance to treat your next 2 spells as if the target were frozen; **Ice Lance** deals 300% more damage to a frozen target and **Shatter** adds 50% crit chance, so both charges go to **Ice Lance**. With both procs up, the simulator measured the free Missiles first slightly better (0.2%).",
-     "**Frostbolt** fills everything else and is the spell that rolls for both procs. **Winter's Chill** is passive: each Frost hit adds a stack of +2% crit to your **Frostbolt** and **Ice Lance**, up to 4 with this build's 4 points.",
+     "**Frostbolt** fills everything else and is the spell that rolls for both procs. **Winter's Chill**, if your build takes it, is passive: each Frost hit adds a stack of +2% crit to your **Frostbolt** and **Ice Lance**, one stack per talent point.",
      "**Fire Blast** waits for the last 3 seconds, when a **Frostbolt** could no longer land before the boss dies; the simulator measured this 0.5% better. The rotation search kept it out of the rest of the fight: no damage talent here improves it, it costs more mana and it rolls for neither proc.",
      "**Presence of Mind** at the pull makes one spell instant (3-minute cooldown). **Arcane Concentration** makes about one damage spell in ten free, and **Arcane Meditation** keeps half your mana regeneration going while you cast.",
      "Mana: your mana gem (from **Conjure Mana Ruby**) goes at 80% mana and **Evocation** only below 20% mana with more than 25 seconds left; in a full raid the simulator never needed **Evocation**."
     ],
     "caveats": [
-     "The Frost page's build is the same plan with this build's **Arcane Mind** point moved into **Winter's Chill**; the simulator puts the two within about 1% of each other, a tie.",
+     "The Frost page plays the same list with more Frost points; the simulator puts the two pages within 2% of each other, a tie.",
      "Several targets: this list is for one boss. For packs, **Blizzard**, **Cone of Cold** and **Arcane Explosion** are your area spells.",
      "Moving: **Ice Lance** and **Fire Blast** are instant, and **Presence of Mind** makes one **Frostbolt** instant. Threat is not in the simulator: give the tank a few seconds on a fresh pull."
     ],
@@ -89,8 +89,8 @@
     "why": [
      "Levels 10-31 go into Frost for **Ice Lance** (20), **Shatter** (25-29) and **Fingers of Frost** (30-31). In the fight lab **Ice Lance** and **Shatter** are this build's two most valuable talents at level 60: a frozen mob takes 300% more damage from **Ice Lance**, with 50% more crit chance.",
      "**Arcane Missiles** is the main spell at range, but only while the mob has more than 35% health: a full 5-second channel would overkill. Below that, **Frostbolt**; below 20%, **Fire Blast**, **Ice Lance** or the wand.",
-     "From level 49, **Arcane Blast** twice while the mob walks in. Each cast makes your next other spell 10% stronger and the next **Arcane Blast** 175% more expensive, so the fight lab stops at two, and starts one only while it costs at most a quarter of your mana and will finish before the mob reaches you. **Arcane Missiles** then spends the stacks.",
-     "From level 50, **Missile Barrage** (40% per **Arcane Blast**, 20% per **Frostbolt**) makes your next Missiles free and twice as fast: cast them once your two stacks are up or the mob is on you. The fight lab rates it the build's third most valuable talent.",
+     "From level 49, **Arcane Blast** twice while the mob walks in. Each cast makes your next other spell 10% stronger (**Arcane Missiles** 15%, by beta logs) and the next **Arcane Blast** 175% more expensive, so the fight lab stops at two, and starts one only while it costs at most a quarter of your mana and will finish before the mob reaches you. **Arcane Missiles** then spends the stacks.",
+     "From level 50, **Missile Barrage** (40% per **Arcane Blast**, 20% per **Frostbolt**, counting only spells that land) makes your next Missiles free and twice as fast: cast them once your two stacks are up or the mob is on you. The fight lab rates it the build's third most valuable talent.",
      "**Frost Nova** and a step back when the mob arrives: **Arcane Blast** and **Arcane Missiles** both need you to stand, and 2 points of **Improved Channeling** only partly protect the channel from hits."
     ],
     "caveats": [
@@ -116,8 +116,8 @@
    "raid": {
     "plan": "Arcane in a raid builds **Arcane Blast** stacks and spends them. Each **Arcane Blast** makes your next other spell stronger and the next **Arcane Blast** much dearer, so free **Arcane Missiles** from **Missile Barrage** and a **Fire Blast** every 6 seconds spend the stacks before the cost runs away.",
     "why": [
-     "**Arcane Blast** is the filler: a 2.5-second cast that adds a stack each time (up to 4, for 8 seconds). Each stack adds 10% to the damage of your other spells and 175% to the next **Arcane Blast**'s mana cost, and casting any other damage spell spends them all.",
-     "**Arcane Missiles** on **Missile Barrage** comes first. Each **Arcane Blast** has a 40% chance to make your next Missiles free and twice as fast, and the Missiles carry your stacks: about a third of your damage in the simulator.",
+     "**Arcane Blast** is the filler: a 2.5-second cast that adds a stack each time (up to 4, for 8 seconds). Each stack adds 10% to the damage of your other spells (15% to **Arcane Missiles**, fitted to beta logs) and 175% to the next **Arcane Blast**'s mana cost; casting any other damage spell spends them all.",
+     "**Arcane Missiles** on **Missile Barrage** comes first. Each **Arcane Blast** that lands has a 40% chance to make your next Missiles free and twice as fast, and the Missiles spend your stacks at 15% each: about a third of your damage in the simulator.",
      "**Fire Blast** whenever it is ready is why this Arcane build spends 11 points in Fire: **Wake of Fire** brings it back every 6 seconds and **Incineration** adds crit. It is instant, it takes your stacks' bonus, and it puts **Arcane Blast** back to its base cost. Adding it was the biggest gain of the rotation search, about 8% over three steps.",
      "**Arcane Power** and **Presence of Mind** go at the pull: 30% more damage for 15 seconds (at 30% more mana cost) and one instant spell. Both have 3-minute cooldowns, so a 3-minute fight gets one of each.",
      "Mana: **Evocation** only below 15% mana with more than 20 seconds left. With a raid's mana buffs, your mana gems and a mana potion, the simulator almost never needed it."
@@ -144,7 +144,7 @@
      "Your first 21 points (levels 10-30) go into Frost for **Ice Lance**, **Shatter**, **Frostbite** and **Ice Shards**. **Ice Lance** is not in the list above, but the Arcane rotation casts it whenever the mob is frozen: 300% more damage to a frozen target, plus **Shatter**'s crit.",
      "**Arcane Missiles** is your main spell at range, a 5-second channel. The fight lab casts it only while the mob has more than 35% health (measured faster): below that a full channel overkills, so switch to **Frostbolt**, and below 20% finish with **Fire Blast**, **Ice Lance** or the wand.",
      "**Frost Nova** when the mob reaches you, then step back: **Arcane Missiles** is a channel, and without **Improved Channeling** every hit you take cuts it short.",
-     "With **Arcane Blast** (a talent this build skips), cast it twice while the mob walks in: each cast makes your next other spell 10% stronger and the next **Arcane Blast** 175% more expensive, so stop at two and let **Arcane Missiles** spend the stacks.",
+     "With **Arcane Blast** (a talent this build skips), cast it twice while the mob walks in: each cast makes your next other spell 10% stronger (**Arcane Missiles** 15%, by beta logs) and the next **Arcane Blast** 175% more expensive, so stop at two and let **Arcane Missiles** spend the stacks.",
      "**Presence of Mind** at the pull makes your next spell with a cast time instant. Low on mana, cast **Frostbolt** instead of **Arcane Missiles**: 290 mana at top rank against 655."
     ],
     "caveats": [
@@ -174,7 +174,7 @@
      "**Scorch** keeps Fire Vulnerability at 5 stacks. In Forever **Improved Scorch** is your own debuff: +3% to your Fire damage per stack, for 30 seconds. Build 5 stacks, then refresh it once 7.5 seconds or less are left so a long cast cannot let it drop; the list shows only the stack count, but the early refresh is part of the rule (the simulator measured 7.5 seconds 0.4% better than 5).",
      "**Pyroblast** waits for 3 stacks of **Heating Up**. Each crit from **Fireball**, **Fire Blast** or **Scorch** takes 25% off your next **Pyroblast**'s 6-second cast, so 3 stacks make it 1.5 seconds: your biggest hit for its cast time. The list's 2-stack line is a last-chance rule: cast a 3-second **Pyroblast** at 2 stacks only if **Heating Up** has under 3.5 seconds left or the boss dies within 6 seconds.",
      "**Fireball** fills everything else: 3 seconds with **Improved Fireball**, about half your damage, and each crit also starts **Ignite**. The list stops starting it with under 3 seconds left, when it would land too late.",
-     "**Combustion** at the pull and whenever it is back (3 minutes): each Fire hit adds 10% crit until you land 3 crits, which fills **Heating Up** fast."
+     "**Combustion** at the pull and whenever it is back (3 minutes): each Fire hit adds 10% crit until you land 3 crits, which fills **Heating Up** fast. It shares its cooldown with **Presence of Mind** (client data), so a build with both gets only one of the two every 3 minutes."
     ],
     "caveats": [
      "Mana: Fire runs short even in a full raid. The simulator uses your mana gem (from **Conjure Mana Ruby**) at 80% mana and a mana potion whenever it is ready, and still runs dry now and then; **Master of Elements** refunds 30% of a spell's base cost on each crit.",
@@ -229,23 +229,23 @@
      "**Pyroblast** at 3 stacks of **Heating Up**: crits from **Frostfire Bolt**, **Fire Blast** and **Scorch** each take 25% off its 6-second cast, so 3 stacks make it 1.5 seconds. Unlike the Fire list, this one never casts it at 2 stacks; the simulator measured dropping that line 0.3% better.",
      "**Fire Blast** on cooldown (every 8 seconds: this build has no **Wake of Fire**): instant, and its crits feed **Heating Up** and **Ignite**. Using it without a mana condition was the biggest gain of the rotation search, about 5%.",
      "**Scorch** keeps Fire Vulnerability (from **Improved Scorch**) at 5 stacks, +15% to your Fire damage, and **Frostfire Bolt** counts as Fire. This list refreshes it once 15 seconds or less of its 30 are left, a wider margin than the Fire list's 7.5; the line above shows only the stack count.",
-     "**Frostfire Bolt** is the real filler whenever you have 10% mana or more: 2.5 seconds with **Improved Fireball**, and one cast rolls for **Fingers of Frost**, **Heating Up** and **Ignite** at once.",
-     "The **Fireball** at the bottom is the simulator's low-mana fallback: below 10% mana it casts Rank 2 (45 mana) instead of **Frostfire Bolt** while mana comes back. Forever gives a rank that low only a small part of your spell power and fewer talent procs, so treat it as a stopgap, not a filler."
+     "**Frostfire Bolt** is the filler: 2.5 seconds with **Improved Fireball**, and one cast rolls for **Fingers of Frost**, **Heating Up** and **Ignite** at once. Below 30% mana the list casts Rank 2 instead (285 mana against 370): it is learned at level 50, close enough to 60 that the low-rank penalty the simulator assumes leaves its spell power alone, and the simulator measured this about 2% better than the old rule of stopping at 10% mana.",
+     "The Rank 2 **Fireball** at the bottom of the list only matters when you cannot afford even a Rank 2 **Frostfire Bolt**. Forever gives ranks that far below your level only a small part of your spell power and fewer talent procs; with that penalty in, the simulator measured dropping the old Fireball fallback 1.0% better, so keep your mana up with gems and a potion instead."
     ],
     "caveats": [
      "**Fingers of Frost** charges go to the next 2 spells you cast, whatever they are: do not let a **Frostfire Bolt** use one up.",
-     "Mana: **Frostfire Bolt** costs 370 at top rank. The list uses both of your mana gems (from **Conjure Mana Ruby** and **Conjure Mana Citrine**) and **Master of Elements** refunds part of every crit, but the simulator still dips below 10% mana several times a fight.",
+     "Mana: **Frostfire Bolt** costs 370 at top rank. The list uses both of your mana gems (from **Conjure Mana Ruby** and **Conjure Mana Citrine**), **Master of Elements** refunds part of every crit, and below 30% mana the cheaper Rank 2 stretches what is left.",
      "Moving: **Ice Lance** and **Fire Blast** are instant. For packs, **Flamestrike** and **Blizzard** are your area spells.",
      "**Frostfire Bolt** is new in Forever: its numbers here are the simulator's model of the beta tooltip, not yet checked in game."
     ],
     "diverge": [
-     "Below 10% mana the list stops **Frostfire Bolt**. Use a mana gem or potion before you get there: Forever's low-rank rule makes the Rank 2 **Fireball** a weak stopgap.",
+     "Below 30% mana, switch to Rank 2 **Frostfire Bolt** rather than stop casting it; a Rank 2 **Fireball** is a weak stopgap only for when even that is out of reach.",
      "Against a target that resists Fire, **Frostfire Bolt** keeps working (it is checked against the lower of the target's Fire and Frost resistance), while **Fire Blast**, **Scorch** and **Pyroblast** lose damage."
     ],
     "rotations": {
      "frost-raid": "ceaa8ac62133",
      "fire-raid": "7334e0e47452",
-     "frostfire-raid": "c81c88887792"
+     "frostfire-raid": "f7b2e420befd"
     },
     "written": "2026-10-09"
    }

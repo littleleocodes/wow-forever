@@ -31,8 +31,8 @@ Arcane in a raid builds **Arcane Blast** stacks and spends them. Each **Arcane B
 
 **Why it works**
 
-- **Arcane Blast** is the filler: a 2.5-second cast that adds a stack each time (up to 4, for 8 seconds). Each stack adds 10% to the damage of your other spells and 175% to the next **Arcane Blast**'s mana cost, and casting any other damage spell spends them all.
-- **Arcane Missiles** on **Missile Barrage** comes first. Each **Arcane Blast** has a 40% chance to make your next Missiles free and twice as fast, and the Missiles carry your stacks: about a third of your damage in the simulator.
+- **Arcane Blast** is the filler: a 2.5-second cast that adds a stack each time (up to 4, for 8 seconds). Each stack adds 10% to the damage of your other spells (15% to **Arcane Missiles**, fitted to beta logs) and 175% to the next **Arcane Blast**'s mana cost; casting any other damage spell spends them all.
+- **Arcane Missiles** on **Missile Barrage** comes first. Each **Arcane Blast** that lands has a 40% chance to make your next Missiles free and twice as fast, and the Missiles spend your stacks at 15% each: about a third of your damage in the simulator.
 - **Fire Blast** whenever it is ready is why this Arcane build spends 11 points in Fire: **Wake of Fire** brings it back every 6 seconds and **Incineration** adds crit. It is instant, it takes your stacks' bonus, and it puts **Arcane Blast** back to its base cost. Adding it was the biggest gain of the rotation search, about 8% over three steps.
 - **Arcane Power** and **Presence of Mind** go at the pull: 30% more damage for 15 seconds (at 30% more mana cost) and one instant spell. Both have 3-minute cooldowns, so a 3-minute fight gets one of each.
 - Mana: **Evocation** only below 15% mana with more than 20 seconds left. With a raid's mana buffs, your mana gems and a mana potion, the simulator almost never needed it.

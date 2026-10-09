@@ -6,10 +6,10 @@
 
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
-| 1 | [Shadow](shadow.md) — Shadow leveling/raid | 698 | best |
+| 1 | [Shadow](shadow.md) — Shadow (optimized) | 698 | best |
 | 2 | [Smite](smite.md) — Discipline/Holy — Smite | 584 | -16% |
 
-**Healing** (ranked by the healer lab's capacity: the raid damage the healer keeps up with): [Holy](holy.md) — Holy — Raid Healer (0.62), [Discipline](discipline.md) — Discipline — Penance / Divine Aegis / Power Infusion (0.56).
+**Healing** (ranked by the healer lab's capacity: the multiple of the lab's standard raid damage the healer keeps up with): [Holy](holy.md) — Holy — Raid Healer (capacity 0.62), [Discipline](discipline.md) — Discipline — Penance / Divine Aegis / Power Infusion (capacity 0.56).
 
 **By gear tier**: each damage spec with its best talents for each tier, in its own gear (DPS in a full raid; [every class](../../_reference/dps-rankings.md)):
 

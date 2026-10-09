@@ -8,7 +8,7 @@
 
 **Other setups of this spec.** This build is the Shadow Bolt setup. The spec's best build for each other setup, in a full raid:
 
-- Fire: [Destruction (optimized)](../research/raid/builds/opt-fire-destro-raid-raid-dps.md) (10/11/30), 692 DPS in a full raid — [open the talent tree](https://talentsforever.com/warlock/60/253-0050203001-055030510310025-6)
+- Fire: [Destruction (optimized, fire)](../research/raid/builds/opt-fire-destro-raid-raid-dps.md) (10/11/30), 692 DPS in a full raid — [open the talent tree](https://talentsforever.com/warlock/60/253-0050203001-055030510310025-6)
 - Incinerate: [Destruction — Incinerate](../research/raid/builds/destruction-incinerate-raid.md) (9/11/31), 672 DPS in a full raid — [open the talent tree](https://talentsforever.com/warlock/60/153-0050203001-0050245103101351-6)
 
 ## How to play
@@ -102,7 +102,7 @@ Destruction in a raid is still a **Shadow Bolt** spec: you sacrifice the Imp for
 
 ## Other builds of this spec
 
-- [Destruction (optimized)](../research/raid/builds/opt-fire-destro-raid-raid-dps.md) (10/11/30, 692 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/253-0050203001-055030510310025-6)
+- [Destruction (optimized, fire)](../research/raid/builds/opt-fire-destro-raid-raid-dps.md) (10/11/30, 692 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/253-0050203001-055030510310025-6)
 - [Destruction — Incinerate](../research/raid/builds/destruction-incinerate-raid.md) (9/11/31, 672 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/153-0050203001-0050245103101351-6)
 
 ---

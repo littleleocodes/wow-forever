@@ -6,8 +6,10 @@
 
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
-| 1 | [Feral Combat](feral-combat.md) — Feral Combat (optimized) | 594 | best |
-| 2 | [Balance](balance.md) — Balance — Moonkin / Eclipse | 592 | -0% |
+| 1 | [Feral Combat](feral-combat.md) — Feral Combat — Shifting Power 🔬 | 691 | best |
+| 2 | [Balance](balance.md) — Balance — Moonkin / Eclipse | 592 | -14% |
+
+**Tanking**: [Feral Combat](feral-combat.md) — Feral — Bear Tank.
 
 **Healing**: [Restoration](restoration.md) — Restoration — Raid Healer.
 

@@ -1078,7 +1078,7 @@
         "goblinSapper": true,
         "mhImbueId": 22756
       },
-      "builds": ["feral-cat-dps", "opt-feral-cat-dps-raid-dps"],
+      "builds": ["feral-cat-dps", "opt-feral-cat-dps-raid-dps", "feral-combat-shifting-power-raid"],
       "buffs_off": ["leader_of_the_pack"],
       "gear_note": "2026-09-27: was p0.bis.gear.json, which fills only the armor slots (no weapon, rings, trinkets, neck or back); now the simulator's complete launch preset (its DEFAULT_GEAR p0.bis is the incomplete one).",
       "self_buffs": {"gift_of_the_wild": true},

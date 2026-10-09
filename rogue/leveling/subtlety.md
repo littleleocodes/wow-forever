@@ -29,11 +29,11 @@ Subtlety levels on its openers and on dodges: **Premeditation** and a stealth op
 **Why it works**
 
 - From stealth, **Premeditation** adds 2 points (a 2-minute cooldown, so about every fifth pull) and **Initiative** makes your opener add a second one: up to 4 points before your first builder.
-- Open with **Ambush** at low levels, where fights are short and its burst wins. From about level 30 **Garrote** is worth more, because its 18-second bleed ignores armor and the mob lives through it; **Dirty Deeds** later makes it 30 energy and usable from the front.
+- Open with **Ambush** at low levels, where fights are short and its burst wins (right after a kill, **Remorseless Attacks** makes it crit more). From around level 40 with this build **Garrote** is worth more, because its 18-second bleed ignores armor and the mob lives through it; **Dirty Deeds** then makes it 30 energy and usable from the front.
 - This build has no **Hemorrhage**, so **Sinister Strike** builds your points all the way (40 energy with **Improved Sinister Strike**). **Ghostly Strike** goes in on its 20-second cooldown once you have it: 180% weapon damage with a dagger and 15% more dodge for 7 seconds.
 - With **Setup**, every dodge adds a combo point, so **Ghostly Strike**, **Lightning Reflexes** and **Evasion** also build points.
 - At 5 points, wait for the energy for **Eviscerate** rather than press a builder whose point would be lost. Cast **Eviscerate** earlier when it would kill the mob: points left on a dead mob are lost.
-- Skip **Slice and Dice** and **Kidney Shot**: the fight lab measured leveling without them about 3% and 1% faster per kill.
+- Skip **Slice and Dice**: the fight lab measured leveling without it about 3% faster per kill. **Kidney Shot** is not measured fairly yet: keep it for a pull that goes wrong.
 
 **Caveats**
 

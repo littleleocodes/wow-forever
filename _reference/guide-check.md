@@ -33,7 +33,7 @@
 | mage | Arcane | leveling | 2026-10-09 | leveling:arcane-leveling 3c2a03ea6dd5, leveling:fire-leveling aa63ef73fbf7, leveling:frost-aoe 7bdb86a60980, leveling:frost-leveling 8102d1408365, leveling:frostfire-leveling 83227d1ddc62 |
 | mage | Fire | raid | 2026-10-09 | fire-raid 7334e0e47452 |
 | mage | Fire | leveling | 2026-10-09 | leveling:arcane-leveling 3c2a03ea6dd5, leveling:fire-leveling aa63ef73fbf7, leveling:frost-aoe 7bdb86a60980, leveling:frost-leveling 8102d1408365, leveling:frostfire-leveling 83227d1ddc62 |
-| mage | Hybrid Fire/Frost | raid | 2026-10-09 | fire-raid 7334e0e47452, frost-raid ceaa8ac62133, frostfire-raid c81c88887792 |
+| mage | Hybrid Fire/Frost | raid | 2026-10-09 | fire-raid 7334e0e47452, frost-raid ceaa8ac62133, frostfire-raid f7b2e420befd |
 | paladin | Retribution | raid | 2026-10-09 | ret-dps 48fd030db318 |
 | paladin | Retribution | leveling | 2026-10-09 | leveling:holy-leveling 5bac4b82517c, leveling:prot-leveling 28659499a02c, leveling:ret-dps e0815f2d36ff |
 | paladin | Protection | raid | 2026-10-09 | prot-tank 00c0ea7a0575 |

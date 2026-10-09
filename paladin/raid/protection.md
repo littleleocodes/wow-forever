@@ -2,7 +2,7 @@
 
 [Paladin](../README.md) > [Raid (group)](README.md) > Protection
 
-**[Shield tank](../research/raid/builds/opt-prot-tank-raid-tank.md)** (0/32/19) — [open the talent tree](https://talentsforever.com/paladin/60/-0530513301311051-50025330001-6)
+**[Protection (optimized)](../research/raid/builds/opt-prot-tank-raid-tank.md)** (0/32/19) — [open the talent tree](https://talentsforever.com/paladin/60/-0530513301311051-50025330001-6)
 
 ## How to play
 

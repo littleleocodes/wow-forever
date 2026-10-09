@@ -6,6 +6,7 @@
 |---|---|---|---|---|---|---|
 | `opt-feral-cat-dps-raid-dps` | 9/31/11 | 368 | 401 | 594 | 594 | 620 |
 | `opt-feral-cat-dps-parse` | 9/31/11 | 368 | 401 | 594 | 594 | 620 |
+| `feral-combat-shifting-power-raid` | 9/35/7 | 357 | 389 | 691 | 691 | 711 |
 | sim preset: Feral Cat 9/35/7 | - | 357 | 389 | 691 | 691 | 711 |
 | `feral-cat-dps` | 9/32/10 | 357 | 389 | 579 | 579 | 605 |
 | sim preset: Feral | - | 340 | 379 | 665 | 665 | 687 |
@@ -24,6 +25,7 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 |---|---|---|---|---|---|---|---|
 | `opt-feral-cat-dps-raid-dps` | 368 | -0% | +21% | +37% | +0% | +4% | 594 |
 | `opt-feral-cat-dps-parse` | 368 | -0% | +21% | +37% | +0% | +4% | 594 |
+| `feral-combat-shifting-power-raid` | 357 | -0% | +21% | +37% | +0% | +36% | 691 |
 | sim preset: Feral Cat 9/35/7 | 357 | -0% | +21% | +37% | +0% | +36% | 691 |
 | `feral-cat-dps` | 357 | -0% | +21% | +37% | +0% | +4% | 579 |
 | sim preset: Feral | 340 | -0% | +21% | +37% | +0% | +38% | 665 |
@@ -38,6 +40,7 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 |---|---|---|---|---|---|
 | `opt-feral-cat-dps-raid-dps` | 388 | 374 | 368 | 369 | 365 |
 | `opt-feral-cat-dps-parse` | 388 | 374 | 368 | 369 | 365 |
+| `feral-combat-shifting-power-raid` | 377 | 363 | 357 | 358 | 354 |
 | sim preset: Feral Cat 9/35/7 | 377 | 363 | 357 | 358 | 354 |
 | `feral-cat-dps` | 377 | 363 | 357 | 358 | 353 |
 | sim preset: Feral | 362 | 346 | 340 | 341 | 337 |

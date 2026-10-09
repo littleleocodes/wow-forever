@@ -10,7 +10,7 @@
 
 **Other setups of this spec.** This build is the Daggers setup. The spec's best build for each other setup, in a full raid:
 
-- Swords: [Raid Combat swords](../research/raid/builds/opt-combat-swords-raid-raid-dps.md) (20/31/0), 704 DPS in a full raid — [open the talent tree](https://talentsforever.com/rogue/60/005323101005-32502300000514231--6)
+- Swords: [Combat (optimized, swords)](../research/raid/builds/opt-combat-swords-raid-raid-dps.md) (20/31/0), 704 DPS in a full raid — [open the talent tree](https://talentsforever.com/rogue/60/005323101005-32502300000514231--6)
 
 ## How to play
 
@@ -97,8 +97,8 @@ Combat in a raid is an energy rhythm: build combo points with **Backstab**, keep
 ## Other builds of this spec
 
 - [Combat Daggers](../research/raid/builds/combat-daggers-raid.md) (16/33/2, 728 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005323102-30531300001515231-002-6)
-- [Raid daggers](../research/raid/builds/opt-combat-daggers-raid-raid-dps.md) (17/32/2, 713 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005323121-30531300000515231-002-6)
-- [Raid Combat swords](../research/raid/builds/opt-combat-swords-raid-raid-dps.md) (20/31/0, 704 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005323101005-32502300000514231--6)
+- [Combat (optimized, daggers)](../research/raid/builds/opt-combat-daggers-raid-raid-dps.md) (17/32/2, 713 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005323121-30531300000515231-002-6)
+- [Combat (optimized, swords)](../research/raid/builds/opt-combat-swords-raid-raid-dps.md) (20/31/0, 704 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005323101005-32502300000514231--6)
 - [Combat Swords](../research/raid/builds/combat-swords-raid.md) (19/32/0, 703 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005303125-32403300001515131--6)
 
 ---

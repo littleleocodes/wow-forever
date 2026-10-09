@@ -10,8 +10,8 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling (solo) | Raid (group: full raid DPS) |
 |---|---|---|
-| **Balance** | [Balance — Leveling](leveling/balance.md) 🔬<br>52 s/kill | **✅ Recommended**<br>[Balance — Moonkin / Eclipse](raid/balance.md)<br>592 DPS (raid) |
-| **Feral Combat** | **✅ Recommended**<br>[Leveling — Feral cat](leveling/feral-combat.md)<br>27 s/kill | **✅ Recommended**<br>[Feral Combat (optimized)](raid/feral-combat.md)<br>594 DPS (raid) |
+| **Balance** | [Balance — Leveling](leveling/balance.md) 🔬<br>52 s/kill | [Balance — Moonkin / Eclipse](raid/balance.md)<br>592 DPS (raid) |
+| **Feral Combat** | **✅ Recommended**<br>[Leveling — Feral cat](leveling/feral-combat.md)<br>27 s/kill | **✅ Recommended**<br>[Feral Combat — Shifting Power](raid/feral-combat.md) 🔬<br>691 DPS (raid) |
 | **Restoration** | [Restoration — Leveling into the raid build](leveling/restoration.md) 🔬<br>33 s/kill | [Restoration — Raid Healer](raid/restoration.md)<br>healer |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
@@ -36,8 +36,10 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
-| 1 | [Feral Combat](raid/feral-combat.md) — Feral Combat (optimized) | 594 | best |
-| 2 | [Balance](raid/balance.md) — Balance — Moonkin / Eclipse | 592 | -0% |
+| 1 | [Feral Combat](raid/feral-combat.md) — Feral Combat — Shifting Power 🔬 | 691 | best |
+| 2 | [Balance](raid/balance.md) — Balance — Moonkin / Eclipse | 592 | -14% |
+
+**Tanking**: [Feral Combat](raid/feral-combat.md) — Feral — Bear Tank.
 
 **Healing**: [Restoration](raid/restoration.md) — Restoration — Raid Healer.
 
@@ -70,7 +72,7 @@ The research behind the pages above: every build, report and simulation.
 | Folder | What is in it | Hand drafts |
 |---|---|---|
 | [research/leveling/](research/leveling/README.md) | Leveling and solo builds, the leveling guide, rotation and respec plan, fight-lab reports (6 builds) | [leveling-feral](research/leveling/builds/leveling-feral.md), [restoration-leveling](research/leveling/builds/restoration-leveling.md), [balance-open-leveling](research/leveling/builds/balance-open-leveling.md) |
-| [research/raid/](research/raid/README.md) | Raid DPS, tank and healer builds, training-dummy and raid-sim rankings, rotation, gear, consumables (11 builds) | [resto-raid-healer](research/raid/builds/resto-raid-healer.md), [resto-regrowth-natures-grace](research/raid/builds/resto-regrowth-natures-grace.md), [feral-cat-dps](research/raid/builds/feral-cat-dps.md), [feral-bear-tank](research/raid/builds/feral-bear-tank.md), [balance-moonkin-raid](research/raid/builds/balance-moonkin-raid.md) |
+| [research/raid/](research/raid/README.md) | Raid DPS, tank and healer builds, training-dummy and raid-sim rankings, rotation, gear, consumables (12 builds) | [resto-raid-healer](research/raid/builds/resto-raid-healer.md), [resto-regrowth-natures-grace](research/raid/builds/resto-regrowth-natures-grace.md), [feral-cat-dps](research/raid/builds/feral-cat-dps.md), [feral-bear-tank](research/raid/builds/feral-bear-tank.md), [balance-moonkin-raid](research/raid/builds/balance-moonkin-raid.md), [feral-combat-shifting-power-raid](research/raid/builds/feral-combat-shifting-power-raid.md) |
 | [research/pvp/](research/pvp/README.md) | PvP builds (no rotation: PvP play depends on the fight) (4 builds) | [pvp-resto](research/pvp/builds/pvp-resto.md), [balance-pvp](research/pvp/builds/balance-pvp.md), [feral-combat-pvp](research/pvp/builds/feral-combat-pvp.md), [restoration-pvp](research/pvp/builds/restoration-pvp.md) |
 | [research/spells/](research/spells/README.md) | Spell ranks and numbers from the beta client | |
 | [research/talents/forever/](research/talents/forever/talent-trees.md) | Talent trees, the baseline audit, [adaptation notes](research/talents/forever/README.md) and `proposed-builds.json` (the source of truth for every build above) | |

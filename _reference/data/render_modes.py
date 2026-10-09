@@ -379,6 +379,9 @@ def rank_builds(cls, mode, builds, nums):
 
 def derived_text(mode, top):
     """Where a derived build comes from, for the page's note."""
+    if top.get("preset"):   # the community simulator's own preset talents, raced ahead of our builds (2026-10-09: Feral Cat 9/35/7)
+        return (f"the community simulator's own preset talents ({top['preset']}), raced against this project's builds in a full raid, where "
+                "they came out ahead")
     if top["id"].endswith("-open-raid"):
         return ("found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, "
                 "raced against the rotation's builds)")
@@ -408,6 +411,7 @@ def bname(cls, b):
         # Ice Lance on Fingers of Frost charges" had read as other specs); the weapon variant and the scenario keep two apart
         prof = rest[len(model) + 1:] if model else ""
         parts = [SM.RAID_ENTRY_VARIANT.get((cls, model), "").lower()] if model and SM.mode_of(b) != "leveling" else []
+        parts = [x for x in parts if x and x not in SM.spec_name(cls, spec).lower()]   # "Shadow Bolt hybrid", not "... (optimized, shadow bolt)"
         parts.append(OPT_PROFILE.get(prof, "") or ("tank" if prof == "raid-tank" and "Protection" not in spec else ""))   # the bear beside the cat
         parts = [x for x in parts if x]
         return f"{SM.spec_name(cls, spec)} (optimized{', ' + ', '.join(parts) if parts else ''})"

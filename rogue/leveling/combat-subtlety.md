@@ -41,7 +41,7 @@ Combat-Subtlety levels on Subtlety's openers and Combat's defenses: **Premeditat
 
 **Caveats**
 
-- Skip **Slice and Dice** and **Kidney Shot**: the fight lab measured leveling without them about 3% and 1% faster per kill.
+- Skip **Slice and Dice**: the fight lab measured leveling without it about 3% faster per kill. **Kidney Shot** is not measured fairly yet: keep it for a pull that goes wrong.
 - Keep a dagger in your main hand: **Ambush** needs one, and **Hemorrhage** and **Ghostly Strike** hit much harder with it.
 - This build has no **Preparation**: when **Evasion** is on cooldown, there is no second one.
 - Eat below 50% health and bandage below 60%: the fight lab measured eating that late about 4% faster than eating at 65%.

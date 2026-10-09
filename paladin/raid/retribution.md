@@ -96,7 +96,7 @@ Retribution in a raid twists seals: you swap between **Seal of Righteousness** a
 ## Other builds of this spec
 
 - [Retribution — Raid](../research/raid/builds/retribution-ml-raid.md) (11/8/32, 999 DPS in a full raid) — [open the talent tree](https://talentsforever.com/paladin/60/25003001-503-05225131001330321-6)
-- [Two-handed Retribution](../research/raid/builds/opt-ret-dps-raid-dps.md) (12/8/31, 995 DPS in a full raid) — [open the talent tree](https://talentsforever.com/paladin/60/25003002-503-05225131001230321-6)
+- [Retribution (optimized)](../research/raid/builds/opt-ret-dps-raid-dps.md) (12/8/31, 995 DPS in a full raid) — [open the talent tree](https://talentsforever.com/paladin/60/25003002-503-05225131001230321-6)
 - [Retribution — Seal of Command / Twist of Light](../research/raid/builds/ret-raid-dps.md) (17/0/34, 970 DPS in a full raid) — [open the talent tree](https://talentsforever.com/paladin/60/550030030001--05225331001330321-6)
 
 ---

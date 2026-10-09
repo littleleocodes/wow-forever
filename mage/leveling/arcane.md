@@ -31,7 +31,7 @@ Arcane levels on **Arcane Missiles** from range and the Frost tree's freeze up c
 - Your first 21 points (levels 10-30) go into Frost for **Ice Lance**, **Shatter**, **Frostbite** and **Ice Shards**. **Ice Lance** is not in the list above, but the Arcane rotation casts it whenever the mob is frozen: 300% more damage to a frozen target, plus **Shatter**'s crit.
 - **Arcane Missiles** is your main spell at range, a 5-second channel. The fight lab casts it only while the mob has more than 35% health (measured faster): below that a full channel overkills, so switch to **Frostbolt**, and below 20% finish with **Fire Blast**, **Ice Lance** or the wand.
 - **Frost Nova** when the mob reaches you, then step back: **Arcane Missiles** is a channel, and without **Improved Channeling** every hit you take cuts it short.
-- With **Arcane Blast** (a talent this build skips), cast it twice while the mob walks in: each cast makes your next other spell 10% stronger and the next **Arcane Blast** 175% more expensive, so stop at two and let **Arcane Missiles** spend the stacks.
+- With **Arcane Blast** (a talent this build skips), cast it twice while the mob walks in: each cast makes your next other spell 10% stronger (**Arcane Missiles** 15%, by beta logs) and the next **Arcane Blast** 175% more expensive, so stop at two and let **Arcane Missiles** spend the stacks.
 - **Presence of Mind** at the pull makes your next spell with a cast time instant. Low on mana, cast **Frostbolt** instead of **Arcane Missiles**: 290 mana at top rank against 655.
 
 **Caveats**

@@ -10,9 +10,9 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling (solo) | Raid (group: full raid DPS) |
 |---|---|---|
-| **Arms** | **✅ Recommended**<br>[Two-handed Arms/raid or leveling](leveling/arms.md)<br>25 s/kill | **✅ Recommended**<br>[Arms — Full raid](raid/arms.md) 🔬<br>984 DPS (raid) |
+| **Arms** | **✅ Recommended**<br>[Arms (optimized)](leveling/arms.md)<br>25 s/kill | **✅ Recommended**<br>[Arms — Full raid](raid/arms.md) 🔬<br>984 DPS (raid) |
 | **Fury** | [Fury — Leveling](leveling/fury.md) 🔬<br>26 s/kill | [Fury — Raid](raid/fury.md) 🔬<br>925 DPS (raid) |
-| **Protection** | [Protection — Leveling](leveling/protection.md) 🔬<br>31 s/kill | [Raid tank in Defensive Stance with a shield](raid/protection.md)<br>tank |
+| **Protection** | [Protection — Leveling](leveling/protection.md) 🔬<br>31 s/kill | [Protection (optimized)](raid/protection.md)<br>tank |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
 
@@ -26,7 +26,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
-| 1 | [Arms](leveling/arms.md) — Two-handed Arms/raid or leveling | 25 | fastest |
+| 1 | [Arms](leveling/arms.md) — Arms (optimized) | 25 | fastest |
 | 2 | [Fury](leveling/fury.md) — Fury — Leveling 🔬 | 26 | +5% |
 | 3 | [Protection](leveling/protection.md) — Protection — Leveling 🔬 | 31 | +24% |
 
@@ -39,7 +39,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | 1 | [Arms](raid/arms.md) — Arms — Full raid 🔬 | 984 | best |
 | 2 | [Fury](raid/fury.md) — Fury — Raid 🔬 | 925 | -6% |
 
-**Tanking**: [Protection](raid/protection.md) — Raid tank in Defensive Stance with a shield.
+**Tanking**: [Protection](raid/protection.md) — Protection (optimized).
 
 Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie. Everything is a simulation of the beta, not a measurement in the game.
 

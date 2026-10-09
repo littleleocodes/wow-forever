@@ -32,7 +32,7 @@ Frost in a raid is a **Frostbolt** caster that cashes in two procs: free **Arcan
 
 **Why it works**
 
-- **Arcane Missiles** on **Missile Barrage** comes first. Each **Frostbolt** has a 20% chance to make your next Missiles free and twice as fast (the full damage in 2.5 seconds), and they are about a fifth of your damage in the simulator.
+- **Arcane Missiles** on **Missile Barrage** comes first. Each **Frostbolt** that lands has a 20% chance to make your next Missiles free and twice as fast (the full damage in 2.5 seconds), and they are about a fifth of your damage in the simulator.
 - **Ice Lance** on **Fingers of Frost** comes next. Each **Frostbolt** chill has a 15% chance to treat your next 2 spells as if the target were frozen; a frozen target takes 300% more damage from **Ice Lance** and **Shatter** adds 50% crit chance, so spend both charges on **Ice Lance**. With both procs up, the simulator measured the free Missiles first slightly better (0.2%).
 - **Frostbolt** fills everything else: 2.5 seconds with **Improved Frostbolt**, and the spell that rolls for both procs. **Winter's Chill** needs no button: in Forever it is your own debuff, each Frost hit adds a stack (+2% crit to your **Frostbolt** and **Ice Lance**, up to 5), and steady casting keeps it full.
 - **Fire Blast** waits for the last 3 seconds. A **Frostbolt** started then would still be casting or in flight when the boss dies, while **Fire Blast** is instant; the simulator measured this 0.5% better. The rotation search kept it out of the rest of the fight: no Frost talent improves it, it costs more mana than a **Frostbolt** (340 against 290) and it rolls for neither proc.
@@ -92,7 +92,7 @@ Frost in a raid is a **Frostbolt** caster that cashes in two procs: free **Arcan
 
 ## Other builds of this spec
 
-- [Raid Frostbolt with Ice Lance on Fingers of Frost charges](../research/raid/builds/opt-frost-raid-raid-dps-extwc.md) (1/13/37, 650 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/1-2330203-0555000331021301251-6)
+- [Frost (optimized, another mage's Winter's Chill)](../research/raid/builds/opt-frost-raid-raid-dps-extwc.md) (1/13/37, 650 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/1-2330203-0555000331021301251-6)
 - [Frost — Winter's Chill](../research/raid/builds/frost-winters-chill-raid.md) (21/0/30, 619 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/054005003000211--055500033002100105-6)
 
 ---

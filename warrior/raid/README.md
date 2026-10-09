@@ -9,7 +9,7 @@
 | 1 | [Arms](arms.md) — Arms — Full raid 🔬 | 984 | best |
 | 2 | [Fury](fury.md) — Fury — Raid 🔬 | 925 | -6% |
 
-**Tanking**: [Protection](protection.md) — Raid tank in Defensive Stance with a shield.
+**Tanking**: [Protection](protection.md) — Protection (optimized).
 
 **By gear tier**: each damage spec with its best talents for each tier, in its own gear (DPS in a full raid; [every class](../../_reference/dps-rankings.md)):
 

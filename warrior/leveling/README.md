@@ -6,7 +6,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
-| 1 | [Arms](arms.md) — Two-handed Arms/raid or leveling | 25 | fastest |
+| 1 | [Arms](arms.md) — Arms (optimized) | 25 | fastest |
 | 2 | [Fury](fury.md) — Fury — Leveling 🔬 | 26 | +5% |
 | 3 | [Protection](protection.md) — Protection — Leveling 🔬 | 31 | +24% |
 

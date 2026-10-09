@@ -32,8 +32,8 @@ This hybrid levels on the Arcane list: **Arcane Missiles** from range, **Frost N
 
 - Levels 10-31 go into Frost for **Ice Lance** (20), **Shatter** (25-29) and **Fingers of Frost** (30-31). In the fight lab **Ice Lance** and **Shatter** are this build's two most valuable talents at level 60: a frozen mob takes 300% more damage from **Ice Lance**, with 50% more crit chance.
 - **Arcane Missiles** is the main spell at range, but only while the mob has more than 35% health: a full 5-second channel would overkill. Below that, **Frostbolt**; below 20%, **Fire Blast**, **Ice Lance** or the wand.
-- From level 49, **Arcane Blast** twice while the mob walks in. Each cast makes your next other spell 10% stronger and the next **Arcane Blast** 175% more expensive, so the fight lab stops at two, and starts one only while it costs at most a quarter of your mana and will finish before the mob reaches you. **Arcane Missiles** then spends the stacks.
-- From level 50, **Missile Barrage** (40% per **Arcane Blast**, 20% per **Frostbolt**) makes your next Missiles free and twice as fast: cast them once your two stacks are up or the mob is on you. The fight lab rates it the build's third most valuable talent.
+- From level 49, **Arcane Blast** twice while the mob walks in. Each cast makes your next other spell 10% stronger (**Arcane Missiles** 15%, by beta logs) and the next **Arcane Blast** 175% more expensive, so the fight lab stops at two, and starts one only while it costs at most a quarter of your mana and will finish before the mob reaches you. **Arcane Missiles** then spends the stacks.
+- From level 50, **Missile Barrage** (40% per **Arcane Blast**, 20% per **Frostbolt**, counting only spells that land) makes your next Missiles free and twice as fast: cast them once your two stacks are up or the mob is on you. The fight lab rates it the build's third most valuable talent.
 - **Frost Nova** and a step back when the mob arrives: **Arcane Blast** and **Arcane Missiles** both need you to stand, and 2 points of **Improved Channeling** only partly protect the channel from hits.
 
 **Caveats**

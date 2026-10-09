@@ -33,11 +33,11 @@ Destruction levels with the same Voidwalker and Affliction dots as the other spe
 - **Immolate** only while you have more than half your mana: the fight lab measured that about 2.5% faster per kill than casting it every time. **Aftermath** makes its first hit 50% stronger, and the fight lab holds it back while it would pull the mob off the Voidwalker.
 - **Conflagrate** (level 59 in this order) eats your **Immolate** in this build, so cast it when **Immolate** has about 3 seconds left, or to finish a burning mob it would kill. **Fire and Brimstone** (level 60) adds to its crit chance and **Ruin** doubles its crit bonus.
 - Your filler is **Shadow Bolt** above about 80% mana and the wand below it. When a mob has too little health left for a **Shadow Bolt**, the fight lab casts **Searing Pain** instead, also only with nearly full mana.
-- **Life Tap** when your mana runs short and your health is above 60%; between fights, **Life Tap** back up and heal the Voidwalker with **Health Funnel**. Eat below 40% health: the fight lab measured that a little faster than waiting longer.
+- **Life Tap** when your mana runs short and your health is above 60%; between fights, **Life Tap** back up and heal the Voidwalker with **Health Funnel**. Eat only below 40% health: the fight lab measured that a little faster than eating at 55%, its default.
 
 **Caveats**
 
-- The steps' **Incinerate** and **Shadowburn** lines are for builds that take those talents: this one casts **Shadow Bolt** where they name **Incinerate** and finishes with **Conflagrate** or the wand. The talent search traded **Shadowburn** for a point of **Fire and Brimstone** and measured about 1% faster kills.
+- This build has neither **Incinerate** nor **Shadowburn**: where the steps name **Incinerate**, cast **Shadow Bolt** (the fight lab does), and finish mobs with **Conflagrate** or the wand. The talent search traded **Shadowburn** for a point of **Fire and Brimstone** and measured about 1% faster kills.
 - Until level 59 you have no **Conflagrate**: you play **Corruption**, **Bane of Agony**, **Siphon Life**, **Immolate**, then **Shadow Bolt** or the wand.
 - When a mob reaches you, cast **Death Coil** if you are hurt and let the Voidwalker take it back with **Torment**: the fight lab measured never casting **Fear** or **Drain Life** about 1% faster each. **Molten Skin** (10% less damage taken) and **Intensity** (casts that resist pushback) make those moments cheaper.
 

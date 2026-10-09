@@ -107,8 +107,8 @@
   "start": "ui\\specs\\rogue\\dps\\apls\\combat_backstab.apl.json",
   "builds": [
    {
-    "label": "opt-combat-daggers-raid-raid-dps",
-    "talents": "005323121-30531300000515231-002"
+    "label": "combat-ml-raid",
+    "talents": "00530310301-30531300001515231-002"
    },
    {
     "label": "sim preset: Combat Dual-Wield 15/33/3",
@@ -120,13 +120,13 @@
     "protect_only": true
    },
    {
-    "label": "combat-ml-raid",
-    "talents": "00530310301-30531300001515231-002",
+    "label": "opt-combat-daggers-raid-raid-dps",
+    "talents": "005323121-30531300000515231-002",
     "protect_only": true
    }
   ],
   "tuned_on": [
-   "opt-combat-daggers-raid-raid-dps",
+   "combat-ml-raid",
    "sim preset: Combat Dual-Wield 15/33/3"
   ],
   "iterations": 3000,
@@ -167,37 +167,37 @@
   ],
   "final": {
    "raid": {
-    "opt-combat-daggers-raid-raid-dps": {
-     "before": 687.0096008876493,
-     "after": 698.731371375616,
-     "base": 687.0096008876493,
+    "combat-ml-raid": {
+     "before": 717.7407702100434,
+     "after": 735.5975825177209,
+     "base": 717.7407702100434,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Combat Dual-Wield 15/33/3": {
-     "before": 689.8032709355738,
-     "after": 703.8916421409788,
-     "base": 689.8032709355738,
+     "before": 704.3373663475162,
+     "after": 718.6531274469718,
+     "base": 704.3373663475162,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "combat-daggers-raid": {
-     "before": 698.5962617529806,
-     "after": 713.6716824306201,
-     "base": 698.5962617529806,
+     "before": 713.3670300421952,
+     "after": 728.6839702815172,
+     "base": 713.3670300421952,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
-    "combat-ml-raid": {
-     "before": 702.9233828728169,
-     "after": 720.6049129497635,
-     "base": 702.9233828728169,
+    "opt-combat-daggers-raid-raid-dps": {
+     "before": 701.6522237560724,
+     "after": 713.4119087274448,
+     "base": 701.6522237560724,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -206,6 +206,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 6
+  "passes": 7
  }
 }
