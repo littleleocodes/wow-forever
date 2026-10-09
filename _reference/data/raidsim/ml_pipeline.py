@@ -117,6 +117,10 @@ def targets(cls):
             continue
         best = max(rows, key=lambda b: nums[b["id"]]["dps"])
         ents = (held.get(spec, set()) | {nums[best["id"]]["entry"]} | set(EXTRA.get((cls, spec), []))) - {e for c, e in EXCLUDE if c == cls}
+        # each spec only in entries built for it (2026-10-08, user decision: no spec takes another spec's rotation)
+        ents = {e for e in ents if not SM.RAID_ENTRY_TREES.get((cls, e)) or SM.rotation_allows(spec, SM.RAID_ENTRY_TREES[(cls, e)])}
+        if nums[best["id"]]["entry"] not in ents:
+            continue
         ents = [nums[best["id"]]["entry"]] + sorted(ents - {nums[best["id"]]["entry"]})
         out.append({"class": cls, "spec": spec, "slug": SM.slug(spec), "entries": ents, "best": best["id"], "best_entry": nums[best["id"]]["entry"],
                     "best_dps": round(nums[best["id"]]["dps"], 2), "any_split": (best.get("spec") or "").startswith("Hybrid")})

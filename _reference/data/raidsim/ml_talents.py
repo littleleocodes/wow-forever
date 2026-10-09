@@ -1051,6 +1051,9 @@ def run_target(cls, spec, entries, setting, gear_path, a, log, extra_starts=(), 
     starts = own_starts(cls, spec, entries, repo, extra_starts)
     gear = json.load(open(ROOT / gear_path if not pathlib.Path(gear_path).is_absolute() else gear_path, encoding="utf-8"))["items"] if gear_path else None
     space = Space(cls, spec, any_split=any_split)
+    if any_split:   # a hybrid named by a spec field (Frostfire): only splits its entries may file under it (2026-10-08, own-rotation rule)
+        trees_ = set().union(*[SM.RAID_ENTRY_TREES.get((cls, e)) or set() for e in entries]) if entries else set()
+        space.allow_trees = trees_ or None
     own = [st for st in starts if space.valid(st)]
     space.protect = set(protect) if protect is not None else protected(cls, entries, repo, setting, own)
     space.start_splits = [space.split(st) for st in own]
