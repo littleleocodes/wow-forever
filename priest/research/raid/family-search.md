@@ -84,6 +84,8 @@ The search model's most important talents (random-forest importance): Mind Flay 
 
 **Synergy certificate** (2026-10-08, raidsim/synergy.py): 40 relevant talents, 23 the winner lacks; 660 pairs measured around 20/0/31 on 1500 fights. Largest interactions (DPS of both against the two alone): Power Infusion + Shadowform +16.9% (build -14.6%), Power Infusion + Mind Flay +8.2% (build -50.8%), Power Infusion + Shadow Weaving +1.4% (build -22.4%), Power Infusion + Darkness +1.4% (build -22.9%), Power Infusion + Improved Mind Blast +1.4% (build -16.5%), Power Infusion + Improved Mind Flay +1.3% (build -21.8%). No pair build within 1% of the winner. The certificate confirms the winner.
 
+Build (2026-10-08, open_builds.py): confirms opt-shadow-dps-raid-dps (+0.41% in a full raid, raced together).
+
 ## smite-dps
 
 **Best family per pair of keystones** (each polished by a short hill climb that keeps the pair; DPS on 800 fights, before the main search):
@@ -156,4 +158,6 @@ Sibling rotations (the entry's best build under each, 10,000 fights): shadow-dps
 The search model's most important talents (random-forest importance): Penance 0.33, Divine Fury 0.23, Holy Precision 0.15, Searing Light 0.11, Discipline points 0.03, Shadow points 0.03, Holy Specialization 0.02, Holy points 0.02, Power in Light 0.01, Mind Flay 0.01.
 
 **Synergy certificate** (2026-10-08, raidsim/synergy.py): 40 relevant talents, 27 the winner lacks; 678 pairs measured around 21/23/7 on 1500 fights. Largest interactions (DPS of both against the two alone): Shadow Weaving + Mental Agility +0.2% (build +1.0%), Shadow Weaving + Darkness +0.1% (build +4.3%), Power Infusion + Darkness +0.1% (build +5.2%), Improved Mind Blast + Shadow Weaving +0.1% (build +1.3%), Improved Mind Blast + Inner Focus +0.1% (build -1.1%), Darkness + Mental Agility +0.1% (build +2.7%). No pair build within 1% of the winner. The certificate confirms the winner.
+
+Build (2026-10-08, open_builds.py): `smite-open-raid`.
 

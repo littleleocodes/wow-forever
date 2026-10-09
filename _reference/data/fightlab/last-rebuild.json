@@ -7506,7 +7506,7 @@
   }
  },
  "last_run": {
-  "date": "2026-10-08T16:57:24",
+  "date": "2026-10-08T22:42:14",
   "classes": [
    "priest"
   ],
@@ -7519,13 +7519,13 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 82,
+  "seconds": 93,
   "refresh": null,
   "regen_log": [
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py priest",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
      "formatted F:\\wow-forever\\priest\\research\\talents\\forever\\proposed-builds.json",
      "priest: README section + leveling-shadow note written"
@@ -7573,7 +7573,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py priest",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
      "priest: raid and leveling rotations, DPS ranking written"
     ],
@@ -7602,12 +7602,12 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_builds.py",
     "rc": 0,
-    "seconds": 2,
+    "seconds": 3,
     "tail": [
      "rogue/classic-baseline: 5 build pages + README.md",
      "rogue: 24 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "priest/classic-baseline: 4 build pages + README.md",
-     "priest: 16 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
+     "priest: 18 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "shaman/classic-baseline: 5 build pages + README.md",
      "shaman: 23 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "mage/classic-baseline: 7 build pages + README.md",
@@ -7650,7 +7650,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py priest --write",
     "rc": 0,
-    "seconds": 73,
+    "seconds": 81,
     "tail": [
      "| shadow-dps -> level-20 build (0/0/11) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +56.1% | +71.6% | +72.3% | +72.4% | +72.4% | +72.9% |",
      "| shadow-dps -> level-30 build (2/0/19) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +55.8% | +57.7% | +72.3% | +72.4% | +72.4% | +72.9% |",
@@ -7704,7 +7704,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\loop_audit.py",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 2,
     "tail": [
      "druid    flagged 30/98  open 2",
      "hunter   flagged 30/55  open 5",
@@ -7724,7 +7724,7 @@
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote _reference\\launch-checklist.md (282 per-build questions)"
+     "wrote _reference\\launch-checklist.md (284 per-build questions)"
     ],
     "stderr": []
    },

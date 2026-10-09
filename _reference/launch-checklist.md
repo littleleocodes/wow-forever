@@ -441,6 +441,12 @@
 **Smite — Raid (open talent search)** (`priest/research/raid/builds/smite-open-raid.md`)
 - [ ] An open-search Smite build: check it against the community's Smite builds at launch.
 
+**Smite — Leveling (open talent search)** (`priest/research/leveling/builds/smite-open-leveling.md`)
+- [ ] An open-search Smite leveling build: check it while leveling at launch.
+
+**Shadow — Leveling (open talent search)** (`priest/research/leveling/builds/shadow-open-leveling.md`)
+- [ ] An open-search Shadow leveling build: check it while leveling at launch.
+
 ### Rogue
 
 **Combat Swords (simulator winner adopted 2026-09-28)** (`rogue/research/raid/builds/combat-swords-raid.md`)

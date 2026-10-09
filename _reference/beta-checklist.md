@@ -236,6 +236,8 @@ Models: holy-heal, shadow-dps. Same mob, same gear, ~10 kills each, note kill ti
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 - Check the Discipline leveling pace at launch; the raid build's talents may cost speed early.
 - Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
+- An open-search Smite leveling build: check it while leveling at launch.
+- An open-search Shadow leveling build: check it while leveling at launch.
 
 ## Rogue
 
