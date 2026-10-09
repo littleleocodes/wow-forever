@@ -1,4 +1,4 @@
-# Handoff — continuing this project in a Claude Code cloud session (updated 2026-10-02)
+# Handoff — continuing this project in a Claude Code cloud session (updated 2026-10-09)
 
 This knowledge base was built in local Claude Code sessions on Windows (project in `F:\wow-forever`, simulator tools in
 `%USERPROFILE%\.wow-forever-tools`) and moved to GitHub on 2026-09-28 so the work can continue in Claude Code cloud sessions.
@@ -9,7 +9,7 @@ index), then this page.
 
 1. **Only if the task needs the raid simulator** (`raidsim/run.py`, `apl_opt.py`, `talent_opt.py`, `calibrate.py`, `rebuild.py`
    with the raid step): `python _reference/data/cloud_setup.py` (add `--classic` for the Classic-era checks). It pip-installs
-   `requirements.txt` (numpy), builds the ElliotWood/Forever simulator at the pinned commit **b0f0df3** (`raidsim/setup.py` GAMES) with our patches and the
+   `requirements.txt` (numpy, scikit-learn), builds the ElliotWood/Forever simulator at the pinned commit **2ce8265** (beta 70291) (`raidsim/setup.py` GAMES) with our patches and the
    `foreverbench` tool under `~/.wow-forever-tools`, and runs the checks. It takes several minutes: run it in the background (or
    with the 10-minute timeout) and read its output. The container is thrown away after the session, so the tools are rebuilt
    each session that needs them.
@@ -370,6 +370,30 @@ Each class folder now opens with player pages and keeps the research below:
   and Retribution (+4.8%) standard sets re-picked by gear_opt (optimize, then `--apply` in a separate call: combined with `--fresh` in one
   call it applies the old record, which once wrote a removed item into three sets; the apply path now refuses such records). The affected
   entries' numbers are stale until the next page pass re-races them.
+
+## Where things stand (2026-10-09)
+
+- **Data and simulator**: beta client 1.60.1.70291 (talents, spellbooks, the client tables in `raw/2026-10-08-beta-70291/`), simulator
+  ElliotWood/Forever 2ce8265 with this project's patches (`raidsim/patches/README.md`: pet and demon scaling, the pet hit rule, the
+  2026-10-09 audit's mechanics and configuration fixes, Atiesh out of the full raid). Every raid entry raced again on it (05:33).
+- **The 70291 sweep** (`_reference/data/deep-runs/sweep_70291.sh`, git-ignored; resume with the same command, each phase skips what its
+  records mark done): P2 open searches class by class (done: hunter raid, mage, paladin raid; then paladin leveling, shaman, rogue, druid,
+  warrior, priest, warlock, hunter leveling last), P3 healer and tank deep searches, P4 the ML pipeline on the new simulator (refreshes
+  the gear-tier tables, dated on the pages until then), P5 the race-neutral re-race (`WOW_FOREVER_NO_RACIALS=1`), P6 checks.
+- **2026-10-09 day** (user request: "a full sweep of the entire project ... so that the pages make sense"): rotation guides on every
+  spec page (`_reference/data/guides/`, `guides.py`); the rotation text simplifier rewritten from the class reviews; fight-lab and
+  healer-lab bugs fixed in every class module by one agent per class (smoke-tested; `fightlab/module_lint.py` catches the mechanical
+  kinds); raid rotations re-tuned on the right build (Frostfire +2.3%); the simulator's Feral Cat 9/35/7 preset adopted as the Feral
+  raid pick (691 against 594 in a full raid); leveling steps and README sections rewritten for 70291 (every class but druid and hunter
+  when this was written: their agents' drafts were still coming); research generators name the current build and commit.
+- **Mage ranking** (user question 2026-10-09: why Arcane leads, not Frostfire): the simulator's 70291 update gave Arcane Missiles +15%
+  per Arcane Blast stack (beta logs) and cut Ice Lance's coefficient (0.143 -> 0.10); Atiesh left the full raid (-4% to -6% for every
+  mage, Frostfire most); the assumed downranking penalty weakened Frostfire's rank-2 fallback. With the re-tuned rotation Frostfire is
+  2.5% behind Arcane (a tie on the pages); the open search confirmed the user's 0/29/22 as the best Frostfire build.
+- **Open next**: re-tune each class's leveling rules from scratch after its module fixes, before its leveling half (`deep-runs/
+  retune_leveling_rules.sh <class>`: rogue and shaman done or running, warrior, druid, priest, hunter to do); merge the druid and
+  hunter drafts (steps, README sections); re-run fight-lab races and reports per class after its fixes (`rebuild.py <class> --steps
+  race,report,regen`); the warrior's Revenge attack-power share (fitted at level 20) is the least certain fight-lab number.
 
 ## Where things stand (2026-09-28)
 

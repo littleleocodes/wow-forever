@@ -194,6 +194,13 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   land in `<class>/research/leveling/fightlab/<spec>.md` (generated). Never write a buff into the player's stats (read it from
   `p.buffs` in a hook); after any engine change the mage regression (500 fights, seed 1, levels 30/60, opt vs
   `leveling-frost`) must stay bit-identical unless a table or mechanic was meant to change.
+- **Module lint** (2026-10-09, `fightlab/module_lint.py [classes] --write` -> `_reference/fightlab-lint.md`): talent and spell names a class
+  module asks for (`self.rank`, `self.tv`, MECHANICS, FIT) that the current data lacks, and spells whose tooltip carries a damage number
+  but parse to none. Run it after every data refresh: the mage had asked for "Hot Streak" (Heating Up since 70170: never simulated), the
+  warrior for Boundless Rage, Precision and Toughness; Fire Nova, Magma Totem and Summon Hawk had parsed to 0 damage. A talent that
+  "increases the critical strike damage bonus by X%" adds X% of the base bonus: 50% for spells (x2.0 at +100%), 100% for melee and ranged.
+  After a mechanics fix, re-tune the class's leveling rules from scratch (`rotation_opt.py <class> --fresh --write`) and re-run its races
+  and reports (`rebuild.py <class> --steps race,report,regen`) so the pages do not mix numbers from before and after.
 - **Leveling rotations are tuned** (2026-09-27): `fightlab/rotation_opt.py` adds rules on top of each class module's hand-written
   priority: spell vetoes in `engine.Fight.can_afford` (never cast X; X only above a mana share; X only while the mob has more / less
   than a health share), the drink / eat thresholds and the module's `ROTATION_KNOBS` (the priest's wand-below and shield-below);
@@ -328,7 +335,12 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   run on the tuning builds only and are scored there; the protected builds run only in the seed-2 confirmation of the few candidates
   ahead, where a change may cost none of them 0.1% against the current rotation or against the pass's start (`protect_only`,
   `tuned_on` in the record). Before, every candidate ran on every build and the score averaged over all of them, so a gain on the
-  tuned build alone was diluted by the number of protected builds (+0.6% on the winner read +0.1% with 6 builds). Two rotations per DPS spec: `apl_opt` for the training dummies (own buffs, short of mana) and
+  tuned build alone was diluted by the number of protected builds (+0.6% on the winner read +0.1% with 6 builds).
+  **Which build a rotation is tuned on** (2026-10-09): `apl_opt.main_builds` takes the entry's best build of ours *in a full raid* (the
+  environments run's raid column) for the raid rotation, and only among the builds the entry still lists. The 70291 re-baseline had taken
+  the training dummy's best from the previous race report: the Frostfire raid rotation was tuned on a build removed days before and kept a
+  fallback the downranking penalty made weak (re-tuned on the 0/29/22 page build: +2.3%); nine other entries re-tuned on the right build
+  moved 0-0.6%. Two rotations per DPS spec: `apl_opt` for the training dummies (own buffs, short of mana) and
   `apl_opt_raid` for the raid settings (full buffs); tanks one (`apl_opt_raid`). `run.py apl_path(entry, repo, where)` picks the
   rotation for a setting (environments included), falling back to the simulator's; a search that finds nothing keeps the
   simulator's rotation (no copy). Records: `<class>/research/raid/raidsim/<spec>-rotation-search.json`; rotations:
@@ -420,8 +432,26 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   keep-up lists print once. Leveling pages print the hand-kept steps in `leveling-steps.json` (per class
   and fight-lab spec model, written from the module's priority and checked against its casts per kill; every bold name must be a
   spell or talent of the class). Edit that file when a fight-lab priority changes.
+  **Rotation guides** (2026-10-09, user request: "a mini guide on why the rotation is how it is ... the caveats and when you should diverge
+  from the rotation itself"): every spec page carries "## Why this rotation" (healers: "How to heal") from the hand-kept
+  `_reference/data/guides/<class>.json` (plan, why, caveats, when to change it; bold names checked against the class's spells and talents);
+  `guides.py --stamp <class> [--mode raid|leveling]` records the fingerprints of the rotations a guide was written for (raid: the entry's raid
+  APL; leveling: the steps and tuned rules; healers: the heal-choice policy), and a page says when its rotation was re-tuned after its guide;
+  `guides.py --check --write` validates every guide (`_reference/guide-check.md`). Re-stamp a class after rewriting its guide.
+  The simplifier (2026-10-09, from the class reviews): the filler is the last line only when it has no condition and no cooldown (else the
+  page says Auto Shot or white swings fill the gaps); thresholds are rounded the way they work (Maelstrom Weapon 4.218 -> 5 stacks); mana,
+  rage, energy, combo-point ceilings, "until the last N seconds" and either-or groups are kept; a fight-time window that opens after the
+  180 s fight reads "save it for the last N seconds" (Death Wish); lines cast only in the last seconds are end-of-fight extras; seal
+  twisting is explained, not shown as two seals kept up; Cold Blood reads "right before your finisher"; Judgement's casts count under the
+  judged seal's ids (`render_rotations.CAST_ALIASES`).
 - **Player pages**: `render_modes.py` (regen step; see Structure rules) writes the top-level README, the class README's two player
   sections and `<class>/leveling|raid|pvp/`; `render_start_here.py` is its helper library (`tf_link`, `display_name`, `rotation_lines`).
+  The beta build every page and report names comes from `data_build.py` (the forever-talents snapshot; 70009 had been written into the
+  code); talentsforever.com links end in the site's current code version (`render_start_here.TF_CODE_VERSION`, "6" since 2026-10-09: the
+  "-4" links opened other talents for the trees that changed). Optimizer builds read "<Spec> (optimized[, variant][, scenario])"; a derived
+  build taken from a simulator preset carries `preset` and says so (the Feral Cat 9/35/7 preset, 691 against our 594 in a full raid,
+  2026-10-09); a hybrid with a build in one mode only gets a page pointing to that mode and its trees; gear-tier tables from searches
+  before the current simulator say so (`render_modes.SIM_SINCE`).
   `_reference/organization-plan.md` records the reorganization (done 2026-09-29).
 - **Derived builds** (2026-09-30, user request "each spec to have a leveling, raid and PvP spec that we can best derive from
   everything"; the replacement bar: a derived build replaces a hand draft only when it is better by the bar (2% from 2026-09-30, a rule
@@ -505,7 +535,10 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
 - **Open-search winners as builds** (2026-10-06, `_reference/data/open_builds.py [classes] --write [--race] [--regen] [--no-tidy]
   [--partial]`; `--race --regen` re-races the entries that got a build and regenerates the pages): per done entry
   of `raidsim/families/<class>.json` the winner becomes `<spec slug>-open-raid` (🔬 derived) when 0.5%+ ahead of every build of ours of its
-  spec (the entry's race, plus the spec's other builds at the pages' full-raid numbers), `replaces` the spec's best hand draft at 2%+; per
+  spec (the entry's race, plus the spec's other builds at the pages' full-raid numbers), `replaces` the spec's best hand draft at 2%+ (since 2026-10-09 only the spec's own builds count: other specs' builds
+  and the simulator's presets raced in the entry had counted, and the Beast-Survival raid page went empty; a search that confirms the spec's
+  open build rewrites it while it still clears the bar; a weapon or stance variant's winner is the spec's main open build only when it also
+  leads the spec's builds at their page numbers, else the variant's build); per
   done rotation of `fightlab/open/<class>.json` likewise `<spec slug>-open-leveling` (the record's order; the pages take its numbers from
   the record, `render_modes.leveling_numbers`). One build per spec; raid builds join their entry in specs.json and go through the filler
   audit; re-race the entries and regen afterwards. A new hybrid family needs a name in `spec_modes.HYBRID_NAMES` (the hunter's
