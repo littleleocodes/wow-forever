@@ -32,7 +32,7 @@
         "conjuredId": 12662,
         "mhImbueId": 25122
       },
-      "builds": ["frost-arcane-power-raid", "frost-winters-chill-raid", "frost-fingers-of-frost-raid", "opt-frost-raid-raid-dps", "opt-frost-raid-raid-dps-extwc", "frost-ml-raid"],
+      "builds": ["frost-arcane-power-raid", "frost-winters-chill-raid", "frost-fingers-of-frost-raid", "opt-frost-raid-raid-dps", "opt-frost-raid-raid-dps-extwc", "frost-ml-raid", "arcane-frost-open-raid"],
       "tune_builds": ["frost-arcane-power-raid"],
       "rotation_note": "Base rotation (2026-09-28): the simulator's `frost.apl.json` plus Arcane Missiles on a Missile Barrage proc, guarded by `auraIsKnown` so only builds with Missile Barrage cast it. The simulator's Frost rotation never casts Arcane Missiles, which cost the Arcane Power Frost draft (the one Frost build with Missile Barrage) 13% on the training dummy (484.8 -> 548.0 DPS) and 10% in the raid setting; the Fingers of Frost and Winter's Chill builds are unchanged. The rotation search also tunes on that draft (`tune_builds`)."
     },

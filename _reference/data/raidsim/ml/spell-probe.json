@@ -5738,8 +5738,8 @@
   "spec": "any",
   "entry": "fire-raid",
   "setting": "raid",
-  "date": "2026-10-06",
-  "base_dps": 700.27,
+  "date": "2026-10-09",
+  "base_dps": 687.72,
   "abilities": [
    {
     "ability": "Combustion",
@@ -5764,8 +5764,8 @@
   "spec": "any",
   "entry": "arcane-dps",
   "setting": "raid",
-  "date": "2026-10-06",
-  "base_dps": 660.22,
+  "date": "2026-10-09",
+  "base_dps": 697.31,
   "abilities": [
    {
     "ability": "Arcane Power",
@@ -5776,10 +5776,26 @@
     "lines_tried": 4,
     "best": {
      "line": "plain",
-     "spot": "at the top",
-     "gain_seed1": 0.0,
-     "split": "31/10/10",
-     "vs_spec_build": 0.0
+     "spot": "in the middle",
+     "gain_seed1": -0.0001,
+     "split": "32/12/7",
+     "vs_spec_build": -0.0001
+    },
+    "kept": false
+   },
+   {
+    "ability": "Pyroblast",
+    "talent": "Pyroblast",
+    "spell": 18809,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 8,
+    "best": {
+     "line": "dot not ticking",
+     "spot": "at the end",
+     "gain_seed1": -0.0001,
+     "split": "32/12/7",
+     "vs_spec_build": -0.0001
     },
     "kept": false
    }
@@ -6241,6 +6257,32 @@
      "spot": "at the end",
      "gain_seed1": 0.0,
      "split": "20/0/31",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   }
+  ]
+ },
+ "mage/frost-raid/raid/any": {
+  "class": "mage",
+  "spec": "any",
+  "entry": "frost-raid",
+  "setting": "raid",
+  "date": "2026-10-09",
+  "base_dps": 692.32,
+  "abilities": [
+   {
+    "ability": "Arcane Blast",
+    "talent": "Arcane Blast",
+    "spell": 1239700,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "28/0/23",
      "vs_spec_build": 0.0
     },
     "kept": false

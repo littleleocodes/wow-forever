@@ -11,7 +11,7 @@
       },
       "rhs": {
        "const": {
-        "val": "80%"
+        "val": "60%"
        }
       }
      }
@@ -21,7 +21,8 @@
       "itemId": 8008
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see frost-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -100,7 +101,7 @@
          },
          "rhs": {
           "const": {
-           "val": "25s"
+           "val": "50s"
           }
          }
         }
@@ -114,7 +115,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see frost-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see frost-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -174,6 +175,16 @@
     }
    },
    "notes": "apl_opt 2026-10-08: changed or added by the rotation search (see frost-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 1239700
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see frost-raid-rotation-search.json)"
   }
  ]
 }

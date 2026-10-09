@@ -91,27 +91,27 @@
     "max60": 919.622715335101
    },
    "raid_spell_casts": {
+    "1310786": 8.829666666666666,
+    "3045": 1.0,
     "25296": 1.0,
     "25295": 11.967666666666666,
-    "14287": 32.86533333333333,
     "20904": 23.56833333333333,
-    "1310786": 8.829666666666666,
     "2643": 0.216,
-    "3045": 1.0,
-    "20554": 1.0
+    "20554": 1.0,
+    "14287": 32.86533333333333
    },
    "raid_casts": {
-    "Major Mana Potion": 2.0,
+    "Sniper Shot": 8.829666666666666,
+    "Rapid Fire": 1.0,
+    "Auto Shot": 83.646,
     "Aspect of the Hawk": 1.0,
     "Serpent Sting": 11.967666666666666,
-    "Arcane Shot": 32.86533333333333,
+    "Major Mana Potion": 2.0,
     "Aimed Shot": 23.56833333333333,
-    "Sniper Shot": 8.829666666666666,
-    "Auto Shot": 83.646,
     "Multi-Shot": 0.216,
-    "Rapid Fire": 1.0,
     "OtherActionManaGain": 82.502,
-    "Berserking": 1.0
+    "Berserking": 1.0,
+    "Arcane Shot": 32.86533333333333
    }
   },
   {
@@ -135,25 +135,25 @@
     "max60": 885.3661737317711
    },
    "raid_spell_casts": {
-    "20904": 24.159333333333333,
-    "20554": 1.0,
     "2643": 0.0013333333333333333,
-    "25295": 12.133333333333333,
     "3045": 1.0,
+    "20904": 24.159333333333333,
+    "25296": 1.0,
     "14287": 35.982,
-    "25296": 1.0
+    "25295": 12.133333333333333,
+    "20554": 1.0
    },
    "raid_casts": {
     "Major Mana Potion": 1.3676666666666666,
-    "Aimed Shot": 24.159333333333333,
-    "OtherActionManaGain": 79.23133333333334,
-    "Berserking": 1.0,
     "Multi-Shot": 0.0013333333333333333,
-    "Serpent Sting": 12.133333333333333,
     "Rapid Fire": 1.0,
-    "Arcane Shot": 35.982,
+    "Aimed Shot": 24.159333333333333,
     "Auto Shot": 83.78033333333333,
-    "Aspect of the Hawk": 1.0
+    "Aspect of the Hawk": 1.0,
+    "Arcane Shot": 35.982,
+    "Serpent Sting": 12.133333333333333,
+    "OtherActionManaGain": 79.23133333333334,
+    "Berserking": 1.0
    }
   },
   {
@@ -177,27 +177,27 @@
     "max60": 875.8360994222871
    },
    "raid_spell_casts": {
-    "20554": 1.0,
     "25296": 1.0,
-    "1310786": 8.855333333333334,
-    "25295": 12.009,
-    "20904": 23.833,
     "14287": 32.93,
     "3045": 1.0,
-    "2643": 0.0006666666666666666
+    "20904": 23.833,
+    "2643": 0.0006666666666666666,
+    "20554": 1.0,
+    "1310786": 8.855333333333334,
+    "25295": 12.009
    },
    "raid_casts": {
-    "Berserking": 1.0,
-    "Aspect of the Hawk": 1.0,
-    "Sniper Shot": 8.855333333333334,
-    "Serpent Sting": 12.009,
-    "Auto Shot": 83.58066666666667,
     "OtherActionManaGain": 82.54833333333333,
-    "Aimed Shot": 23.833,
-    "Major Mana Potion": 1.9973333333333334,
+    "Aspect of the Hawk": 1.0,
     "Arcane Shot": 32.93,
     "Rapid Fire": 1.0,
-    "Multi-Shot": 0.0006666666666666666
+    "Major Mana Potion": 1.9973333333333334,
+    "Aimed Shot": 23.833,
+    "Multi-Shot": 0.0006666666666666666,
+    "Berserking": 1.0,
+    "Sniper Shot": 8.855333333333334,
+    "Serpent Sting": 12.009,
+    "Auto Shot": 83.58066666666667
    }
   },
   {
@@ -221,22 +221,22 @@
     "max60": 832.6315586519643
    },
    "raid_spell_casts": {
+    "20904": 24.0,
+    "20554": 1.0,
     "25296": 1.0,
     "25295": 12.0,
-    "3045": 1.0,
-    "20904": 24.0,
     "14287": 35.056333333333335,
-    "20554": 1.0
+    "3045": 1.0
    },
    "raid_casts": {
-    "Aspect of the Hawk": 1.0,
-    "Serpent Sting": 12.0,
-    "Rapid Fire": 1.0,
     "Aimed Shot": 24.0,
     "OtherActionManaGain": 78.783,
-    "Major Mana Potion": 1.405,
-    "Arcane Shot": 35.056333333333335,
     "Berserking": 1.0,
+    "Major Mana Potion": 1.405,
+    "Aspect of the Hawk": 1.0,
+    "Serpent Sting": 12.0,
+    "Arcane Shot": 35.056333333333335,
+    "Rapid Fire": 1.0,
     "Auto Shot": 83.73266666666666
    }
   },
@@ -261,24 +261,24 @@
     "max60": 885.3661737317711
    },
    "raid_spell_casts": {
-    "20554": 1.0,
-    "14287": 35.982,
-    "20904": 24.159333333333333,
-    "2643": 0.0013333333333333333,
     "3045": 1.0,
+    "20554": 1.0,
     "25296": 1.0,
+    "2643": 0.0013333333333333333,
+    "20904": 24.159333333333333,
+    "14287": 35.982,
     "25295": 12.133333333333333
    },
    "raid_casts": {
-    "Auto Shot": 83.78033333333333,
-    "Berserking": 1.0,
-    "Major Mana Potion": 1.3676666666666666,
-    "Arcane Shot": 35.982,
-    "Aimed Shot": 24.159333333333333,
-    "Multi-Shot": 0.0013333333333333333,
     "Rapid Fire": 1.0,
     "OtherActionManaGain": 79.23133333333334,
+    "Major Mana Potion": 1.3676666666666666,
+    "Berserking": 1.0,
     "Aspect of the Hawk": 1.0,
+    "Multi-Shot": 0.0013333333333333333,
+    "Aimed Shot": 24.159333333333333,
+    "Auto Shot": 83.78033333333333,
+    "Arcane Shot": 35.982,
     "Serpent Sting": 12.133333333333333
    }
   },
@@ -303,27 +303,27 @@
     "max60": 714.4921695944063
    },
    "raid_spell_casts": {
+    "25295": 11.829,
+    "20554": 1.0,
+    "25296": 1.0,
+    "3045": 1.0,
     "14287": 32.69,
     "20904": 23.124,
-    "3045": 1.0,
     "2643": 0.526,
-    "20554": 1.0,
-    "1310786": 8.750333333333334,
-    "25295": 11.829,
-    "25296": 1.0
+    "1310786": 8.750333333333334
    },
    "raid_casts": {
-    "Arcane Shot": 32.69,
-    "Aimed Shot": 23.124,
-    "Rapid Fire": 1.0,
-    "Major Mana Potion": 2.0,
-    "Multi-Shot": 0.526,
-    "Berserking": 1.0,
-    "Sniper Shot": 8.750333333333334,
     "Serpent Sting": 11.829,
     "Auto Shot": 83.637,
+    "Berserking": 1.0,
     "Aspect of the Hawk": 1.0,
-    "OtherActionManaGain": 82.19733333333333
+    "Rapid Fire": 1.0,
+    "OtherActionManaGain": 82.19733333333333,
+    "Major Mana Potion": 2.0,
+    "Arcane Shot": 32.69,
+    "Aimed Shot": 23.124,
+    "Multi-Shot": 0.526,
+    "Sniper Shot": 8.750333333333334
    }
   },
   {
@@ -347,25 +347,25 @@
     "max60": 578.5976608019055
    },
    "raid_spell_casts": {
-    "14287": 10.235666666666667,
-    "20554": 1.0,
-    "1293527": 17.277333333333335,
     "20904": 23.916333333333334,
-    "25295": 12.000666666666667,
+    "1293527": 17.277333333333335,
+    "20554": 1.0,
+    "14287": 10.235666666666667,
     "3045": 1.0,
-    "25296": 1.0
+    "25296": 1.0,
+    "25295": 12.000666666666667
    },
    "raid_casts": {
-    "Arcane Shot": 10.235666666666667,
-    "OtherActionManaGain": 65.88366666666667,
-    "Berserking": 1.0,
-    "Summon Hawk": 17.277333333333335,
-    "Major Mana Potion": 1.0,
     "Aimed Shot": 23.916333333333334,
-    "Serpent Sting": 12.000666666666667,
+    "Summon Hawk": 17.277333333333335,
+    "Berserking": 1.0,
+    "Major Mana Potion": 1.0,
+    "Arcane Shot": 10.235666666666667,
     "Auto Shot": 83.786,
+    "OtherActionManaGain": 65.88366666666667,
     "Rapid Fire": 1.0,
-    "Aspect of the Hawk": 1.0
+    "Aspect of the Hawk": 1.0,
+    "Serpent Sting": 12.000666666666667
    }
   },
   {
@@ -389,27 +389,27 @@
     "max60": 703.4617492861458
    },
    "raid_spell_casts": {
+    "1310786": 8.982333333333333,
     "20554": 1.0,
-    "2643": 0.18766666666666668,
+    "3045": 1.0,
+    "20904": 21.926,
     "25296": 1.0,
     "14287": 29.123333333333335,
-    "20904": 21.926,
-    "25295": 11.984333333333334,
-    "1310786": 8.982333333333333,
-    "3045": 1.0
+    "2643": 0.18766666666666668,
+    "25295": 11.984333333333334
    },
    "raid_casts": {
-    "Berserking": 1.0,
-    "Multi-Shot": 0.18766666666666668,
-    "Aspect of the Hawk": 1.0,
-    "Arcane Shot": 29.123333333333335,
-    "Aimed Shot": 21.926,
-    "Major Mana Potion": 1.999,
-    "Serpent Sting": 11.984333333333334,
     "Sniper Shot": 8.982333333333333,
+    "OtherActionManaGain": 75.48,
+    "Berserking": 1.0,
+    "Major Mana Potion": 1.999,
     "Rapid Fire": 1.0,
     "Auto Shot": 75.0,
-    "OtherActionManaGain": 75.48
+    "Aimed Shot": 21.926,
+    "Aspect of the Hawk": 1.0,
+    "Arcane Shot": 29.123333333333335,
+    "Multi-Shot": 0.18766666666666668,
+    "Serpent Sting": 11.984333333333334
    }
   },
   {
@@ -433,23 +433,23 @@
     "max60": 602.5834980034213
    },
    "raid_spell_casts": {
-    "25295": 12.0,
-    "14287": 24.0,
     "20904": 24.0,
     "20554": 1.0,
+    "25295": 12.0,
+    "3045": 1.0,
     "25296": 1.0,
-    "3045": 1.0
+    "14287": 24.0
    },
    "raid_casts": {
-    "Major Mana Potion": 0.9916666666666667,
-    "OtherActionManaGain": 68.305,
-    "Serpent Sting": 12.0,
     "Auto Shot": 75.0,
-    "Arcane Shot": 24.0,
     "Aimed Shot": 24.0,
     "Berserking": 1.0,
+    "Serpent Sting": 12.0,
+    "Rapid Fire": 1.0,
+    "OtherActionManaGain": 68.305,
+    "Major Mana Potion": 0.9916666666666667,
     "Aspect of the Hawk": 1.0,
-    "Rapid Fire": 1.0
+    "Arcane Shot": 24.0
    }
   }
  ]

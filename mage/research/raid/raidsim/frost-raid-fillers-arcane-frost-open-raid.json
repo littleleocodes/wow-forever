@@ -1,0 +1,250 @@
+{
+ "class": "mage",
+ "spec": "frost-raid",
+ "build": "arcane-frost-open-raid",
+ "setting": "raid",
+ "date": "2026-10-09",
+ "tank": false,
+ "removal": {
+  "Arcane Blast": -0.0,
+  "Arcane Concentration": -0.0003012269383475541,
+  "Arcane Focus": 0.012404964897455906,
+  "Arcane Geometry": -0.0,
+  "Arcane Impact": 0.008923877273986247,
+  "Arcane Instability": 0.049720397198047106,
+  "Arcane Meditation": 0.00042960479488218795,
+  "Arcane Mind": 0.034712999101035646,
+  "Arcane Subtlety": -0.0,
+  "Elemental Precision": 0.04075582067478878,
+  "Fingers of Frost": 0.10204780605359343,
+  "Ice Lance": 0.014269033266166575,
+  "Ice Shards": 0.09055224665286188,
+  "Improved Channeling": -0.0,
+  "Improved Frostbolt": 0.13069374448661253,
+  "Missile Barrage": 0.09236300390430063,
+  "Piercing Ice": 0.042866792684228106,
+  "Shatter": 0.07480283417366584
+ },
+ "free": [
+  "Arcane Concentration",
+  "Arcane Geometry",
+  "Arcane Meditation",
+  "Arcane Subtlety",
+  "Improved Channeling"
+ ],
+ "kept_for_rotation": [
+  "Fingers of Frost",
+  "Missile Barrage"
+ ],
+ "active_never_worth": [
+  "Arcane Blast"
+ ],
+ "abilities_never_cast": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Arcane Geometry",
+   "to": "Improved Channeling",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "interrupt"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Arcane Subtlety",
+   "to": "Improved Channeling",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "interrupt"
+  },
+  {
+   "round": 3,
+   "kind": "utility",
+   "from": "Arcane Subtlety",
+   "to": "Improved Channeling",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "interrupt"
+  },
+  {
+   "round": 4,
+   "kind": "utility",
+   "from": "Arcane Meditation",
+   "to": "Improved Channeling",
+   "seed1": -0.00042960479488218795,
+   "seed2": 3.058442683001594e-05,
+   "utility": "interrupt"
+  },
+  {
+   "round": 5,
+   "kind": "utility",
+   "from": "Arcane Concentration",
+   "to": "Arcane Subtlety",
+   "seed1": 0.0001305758309686489,
+   "seed2": -0.00032403002430647643,
+   "utility": "threat"
+  },
+  {
+   "round": 6,
+   "kind": "utility",
+   "from": "Arcane Concentration",
+   "to": "Arcane Subtlety",
+   "seed1": 6.184142903409295e-05,
+   "seed2": -4.130975566218886e-05,
+   "utility": "threat"
+  }
+ ],
+ "final_seed3": 0.00042781885688603083,
+ "start": {
+  "Arcane": [
+   [
+    "Arcane Focus",
+    5
+   ],
+   [
+    "Improved Channeling",
+    1
+   ],
+   [
+    "Arcane Subtlety",
+    2
+   ],
+   [
+    "Arcane Concentration",
+    5
+   ],
+   [
+    "Arcane Geometry",
+    1
+   ],
+   [
+    "Arcane Impact",
+    3
+   ],
+   [
+    "Arcane Blast",
+    1
+   ],
+   [
+    "Arcane Meditation",
+    1
+   ],
+   [
+    "Missile Barrage",
+    1
+   ],
+   [
+    "Arcane Mind",
+    5
+   ],
+   [
+    "Arcane Instability",
+    3
+   ]
+  ],
+  "Fire": [],
+  "Frost": [
+   [
+    "Improved Frostbolt",
+    5
+   ],
+   [
+    "Elemental Precision",
+    4
+   ],
+   [
+    "Ice Shards",
+    5
+   ],
+   [
+    "Piercing Ice",
+    3
+   ],
+   [
+    "Ice Lance",
+    1
+   ],
+   [
+    "Shatter",
+    3
+   ],
+   [
+    "Fingers of Frost",
+    2
+   ]
+  ]
+ },
+ "allocation": {
+  "Arcane": [
+   [
+    "Arcane Focus",
+    5
+   ],
+   [
+    "Improved Channeling",
+    5
+   ],
+   [
+    "Arcane Concentration",
+    3
+   ],
+   [
+    "Arcane Impact",
+    3
+   ],
+   [
+    "Arcane Blast",
+    1
+   ],
+   [
+    "Missile Barrage",
+    1
+   ],
+   [
+    "Arcane Mind",
+    5
+   ],
+   [
+    "Arcane Instability",
+    3
+   ],
+   [
+    "Arcane Subtlety",
+    2
+   ]
+  ],
+  "Fire": [],
+  "Frost": [
+   [
+    "Improved Frostbolt",
+    5
+   ],
+   [
+    "Elemental Precision",
+    4
+   ],
+   [
+    "Ice Shards",
+    5
+   ],
+   [
+    "Piercing Ice",
+    3
+   ],
+   [
+    "Ice Lance",
+    1
+   ],
+   [
+    "Shatter",
+    3
+   ],
+   [
+    "Fingers of Frost",
+    2
+   ]
+  ]
+ }
+}

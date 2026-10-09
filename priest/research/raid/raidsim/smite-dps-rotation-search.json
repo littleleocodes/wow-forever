@@ -204,21 +204,21 @@
   "start": "ui\\specs\\priest\\dps\\apls\\smite.apl.json",
   "builds": [
    {
-    "label": "smite-open-raid",
-    "talents": "505020021302001-305151000320003-50002"
+    "label": "smite-discipline-raid",
+    "talents": "505230231305001001-30505101002-3"
    },
    {
     "label": "sim preset: Smite",
     "talents": "515330031305001001-30505113002"
    },
    {
-    "label": "smite-discipline-raid",
-    "talents": "505230231305001001-30505101002-3",
+    "label": "smite-open-raid",
+    "talents": "505020021302001-305151000320003-50002",
     "protect_only": true
    }
   ],
   "tuned_on": [
-   "smite-open-raid",
+   "smite-discipline-raid",
    "sim preset: Smite"
   ],
   "iterations": 3000,
@@ -435,14 +435,14 @@
   ],
   "final": {
    "raid": {
-    "smite-open-raid": {
-     "before": 562.2202248239579,
-     "after": 583.1941074727021,
-     "base": 562.2202248239579,
+    "smite-discipline-raid": {
+     "before": 560.8873030488282,
+     "after": 584.2471131890661,
+     "base": 560.8873030488282,
      "before_value": null,
      "after_value": null,
-     "oom_before": 2.4205037499887707,
-     "oom_after": 5.49743739999771
+     "oom_before": 4.589873749981542,
+     "oom_after": 4.589873749981542
     },
     "sim preset: Smite": {
      "before": 558.6040606439518,
@@ -450,21 +450,21 @@
      "base": 558.6040606439518,
      "before_value": null,
      "after_value": null,
-     "oom_before": 6.592752849994217,
+     "oom_before": 5.137796399972488,
      "oom_after": 5.137796399972488
     },
-    "smite-discipline-raid": {
-     "before": 560.8873030488282,
-     "after": 584.2471131890661,
-     "base": 560.8873030488282,
+    "smite-open-raid": {
+     "before": 562.2202248239579,
+     "after": 583.1941074727021,
+     "base": 562.2202248239579,
      "before_value": null,
      "after_value": null,
-     "oom_before": 5.4675970499952005,
-     "oom_after": 4.589873749981542
+     "oom_before": 5.49743739999771,
+     "oom_after": 5.49743739999771
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 9
+  "passes": 10
  }
 }

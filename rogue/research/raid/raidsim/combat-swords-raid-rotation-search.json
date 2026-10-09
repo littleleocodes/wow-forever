@@ -162,22 +162,22 @@
   "start": "ui\\specs\\rogue\\dps\\apls\\combat_sinister_strike.apl.json",
   "builds": [
    {
-    "label": "combat-swords-raid",
-    "talents": "005303125-32403300001515131"
-   },
-   {
-    "label": "sim preset: Improved Expose Armor (SS)",
-    "talents": "005303125-32003311201515131"
-   },
-   {
     "label": "opt-combat-swords-raid-raid-dps",
-    "talents": "005323101005-32502300000514231",
+    "talents": "005323101005-32502300000514231"
+   },
+   {
+    "label": "sim preset: Sinister Strike",
+    "talents": "00530310501-32003311201515231"
+   },
+   {
+    "label": "combat-swords-raid",
+    "talents": "005303125-32403300001515131",
     "protect_only": true
    }
   ],
   "tuned_on": [
-   "combat-swords-raid",
-   "sim preset: Improved Expose Armor (SS)"
+   "opt-combat-swords-raid-raid-dps",
+   "sim preset: Sinister Strike"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -225,28 +225,28 @@
   ],
   "final": {
    "raid": {
-    "combat-swords-raid": {
-     "before": 687.3734065781227,
-     "after": 688.4325984669271,
-     "base": 687.3734065781227,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "sim preset: Improved Expose Armor (SS)": {
-     "before": 687.3734065781227,
-     "after": 688.4325984669271,
-     "base": 687.3734065781227,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
     "opt-combat-swords-raid-raid-dps": {
-     "before": 691.7604433818324,
-     "after": 689.9478705625534,
-     "base": 691.7604433818324,
+     "before": 705.6232269888802,
+     "after": 703.7674753701898,
+     "base": 705.6232269888802,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Sinister Strike": {
+     "before": 709.9959328113082,
+     "after": 710.9764929762764,
+     "base": 709.9959328113082,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "combat-swords-raid": {
+     "before": 701.7894196855564,
+     "after": 702.7798693233102,
+     "base": 701.7894196855564,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -255,6 +255,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 6
+  "passes": 7
  }
 }

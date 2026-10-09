@@ -156,8 +156,8 @@
   "start": "_reference/data/raidsim/apls/hunter/melee-dps-raid.apl.json",
   "builds": [
    {
-    "label": "survival-raid",
-    "talents": "5-005055001-50023023005022213"
+    "label": "beast-survival-open-raid",
+    "talents": "52030005001-005005001-5002302300500211"
    },
    {
     "label": "melee-survival-raid",
@@ -170,18 +170,18 @@
     "protect_only": true
    },
    {
-    "label": "survival-ml-parse",
-    "talents": "5-005035001-050230230150022151",
+    "label": "survival-raid",
+    "talents": "5-005055001-50023023005022213",
     "protect_only": true
    },
    {
-    "label": "beast-survival-open-raid",
-    "talents": "52030005001-005005001-5002302300500211",
+    "label": "survival-ml-parse",
+    "talents": "5-005035001-050230230150022151",
     "protect_only": true
    }
   ],
   "tuned_on": [
-   "survival-raid"
+   "beast-survival-open-raid"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -201,22 +201,38 @@
     "gain_seed2": 0.1502,
     "candidates": 36,
     "pass": 2
+   },
+   {
+    "round": 3,
+    "change": "move down below 'cast Strider Kick': if auraIsInactive: cast Summon Hawk",
+    "gain_seed1": 0.0044426729485642635,
+    "gain_seed2": 0.0028395108705900896,
+    "candidates": 294,
+    "pass": 10
+   },
+   {
+    "round": 4,
+    "change": "move to the top: cast Raptor Strike",
+    "gain_seed1": 0.0019076179115793401,
+    "gain_seed2": 0.002651723143618945,
+    "candidates": 294,
+    "pass": 10
    }
   ],
   "final": {
    "raid": {
-    "survival-raid": {
-     "before": 749.0234226940044,
-     "after": 1027.273743175376,
-     "base": 749.0234226940044,
+    "beast-survival-open-raid": {
+     "before": 736.3958146440292,
+     "after": 1057.2488076464879,
+     "base": 736.3958146440292,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
+     "oom_before": 0.00017154135885,
      "oom_after": 0
     },
     "melee-survival-raid": {
      "before": 764.2538027247907,
-     "after": 1047.176952532417,
+     "after": 1048.0314309006965,
      "base": 764.2538027247907,
      "before_value": null,
      "after_value": null,
@@ -225,8 +241,17 @@
     },
     "opt-melee-dps-raid-dps": {
      "before": 764.2538027247907,
-     "after": 1016.5720578962369,
+     "after": 1017.2163051305389,
      "base": 764.2538027247907,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "survival-raid": {
+     "before": 749.0234226940044,
+     "after": 1028.3796732702476,
+     "base": 749.0234226940044,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -234,25 +259,16 @@
     },
     "survival-ml-parse": {
      "before": 728.5236157959941,
-     "after": 998.2660836742937,
+     "after": 999.0872636055295,
      "base": 728.5236157959941,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
-    },
-    "beast-survival-open-raid": {
-     "before": 736.3958146440292,
-     "after": 1050.9600612341305,
-     "base": 736.3958146440292,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.00017154135885,
-     "oom_after": 0.00017154135885
     }
    }
   },
   "first_date": "2026-09-29",
-  "passes": 9
+  "passes": 10
  }
 }

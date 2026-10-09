@@ -2,7 +2,7 @@
  "dummy": {
   "class": "mage",
   "spec": "frost-raid",
-  "date": "2026-10-08",
+  "date": "2026-10-09",
   "commit": "2ce8265",
   "setting": "dummy",
   "tank": false,
@@ -10,12 +10,18 @@
   "start": "_reference\\data\\raidsim\\apls\\mage\\frost-raid.apl.json",
   "builds": [
    {
+    "label": "open winner",
+    "talents": "05120501310011053--05450003010003002"
+   },
+   {
     "label": "frost-ml-raid",
-    "talents": "053005003000311--055500031100030025"
+    "talents": "053005003000311--055500031100030025",
+    "protect_only": true
    },
    {
     "label": "sim preset: Frost DPS",
-    "talents": "0502050030003--055500033100030024"
+    "talents": "0502050030003--055500033100030024",
+    "protect_only": true
    },
    {
     "label": "frost-arcane-power-raid",
@@ -44,8 +50,7 @@
    }
   ],
   "tuned_on": [
-   "frost-ml-raid",
-   "sim preset: Frost DPS"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -81,77 +86,110 @@
     "gain_seed2": 0.005600156676023538,
     "candidates": 298,
     "pass": 3
+   },
+   {
+    "round": 5,
+    "change": "threshold 80% -> 60%: if mana % \u2264 80%: cast Mana Ruby (mana gem)",
+    "gain_seed1": 0.0016535458810389425,
+    "gain_seed2": 0.0016263518862822401,
+    "candidates": 330,
+    "pass": 4
+   },
+   {
+    "round": 6,
+    "change": "threshold 25s -> 50s: if mana % < 5% and time left in the fight > 25s: cast Evocation",
+    "gain_seed1": 0.0021110913615176585,
+    "gain_seed2": 0.002058613779947427,
+    "candidates": 334,
+    "pass": 4
+   },
+   {
+    "round": 7,
+    "change": "insert at the end: cast Arcane Blast",
+    "gain_seed1": 0.0024474856739833406,
+    "gain_seed2": 0.0024623371573211372,
+    "candidates": 334,
+    "pass": 4
    }
   ],
   "final": {
    "dummy": {
+    "open winner": {
+     "before": 575.6635906014023,
+     "after": 605.1076954345235,
+     "base": 575.6635906014023,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 2.9362224500000185,
+     "oom_after": 1.9868458000000038
+    },
     "frost-ml-raid": {
      "before": 591.485251934373,
-     "after": 604.3054485769932,
+     "after": 604.4841033536337,
      "base": 591.485251934373,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.12024970000000003,
-     "oom_after": 0.10684635000000002
+     "oom_before": 0.10684635000000002,
+     "oom_after": 0.14916055000000006
     },
     "sim preset: Frost DPS": {
      "before": 551.4446197535692,
-     "after": 560.7980917917599,
+     "after": 560.7780346153099,
      "base": 551.4446197535692,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.05177270000000001,
-     "oom_after": 0.03588135
+     "oom_before": 0.03588135,
+     "oom_after": 0.05491119999999998
     },
     "frost-arcane-power-raid": {
      "before": 566.7667579389595,
-     "after": 571.5093135611954,
+     "after": 571.5788929315819,
      "base": 566.7667579389595,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.01965115,
-     "oom_after": 0.0172828
+     "oom_before": 0.0172828,
+     "oom_after": 0.007787749999999999
     },
     "frost-winters-chill-raid": {
      "before": 543.9160394977301,
-     "after": 547.2707563114428,
+     "after": 546.9836646163475,
      "base": 543.9160394977301,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.00025249999999999996,
-     "oom_after": 0.0003497
+     "oom_before": 0.0003497,
+     "oom_after": 0.0010249999999999999
     },
     "frost-fingers-of-frost-raid": {
      "before": 587.5829561718159,
-     "after": 601.1575490419517,
+     "after": 601.6494080491815,
      "base": 587.5829561718159,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.08366225,
-     "oom_after": 0.0763929
+     "oom_before": 0.0763929,
+     "oom_after": 0.09847710000000001
     },
     "opt-frost-raid-raid-dps": {
      "before": 579.9620280955328,
-     "after": 599.2631324212119,
+     "after": 599.7647079010993,
      "base": 579.9620280955328,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.8984597999999987,
-     "oom_after": 0.8510928499999985
+     "oom_before": 0.8510928499999985,
+     "oom_after": 0.8582783499999996
     },
     "opt-frost-raid-raid-dps-extwc": {
      "before": 545.0999617201594,
-     "after": 548.9525682469,
+     "after": 549.1980489694149,
      "base": 545.0999617201594,
      "before_value": null,
      "after_value": null,
      "oom_before": 7.252082499999876,
-     "oom_after": 7.252082499999876
+     "oom_after": 7.253502499999875
     }
    }
   },
   "first_date": "2026-10-02",
-  "passes": 3
+  "passes": 4
  },
  "raid": {
   "class": "mage",
@@ -164,12 +202,18 @@
   "start": "_reference\\data\\raidsim\\apls\\mage\\frost-raid-raid.apl.json",
   "builds": [
    {
+    "label": "open winner",
+    "talents": "05120501310011053--05450003010003002"
+   },
+   {
     "label": "frost-ml-raid",
-    "talents": "053005003000311--055500031100030025"
+    "talents": "053005003000311--055500031100030025",
+    "protect_only": true
    },
    {
     "label": "sim preset: Frost DPS",
-    "talents": "0502050030003--055500033100030024"
+    "talents": "0502050030003--055500033100030024",
+    "protect_only": true
    },
    {
     "label": "frost-arcane-power-raid",
@@ -198,8 +242,7 @@
    }
   ],
   "tuned_on": [
-   "frost-ml-raid",
-   "sim preset: Frost DPS"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -223,6 +266,15 @@
   ],
   "final": {
    "raid": {
+    "open winner": {
+     "before": 676.2501792377617,
+     "after": 692.7560866673109,
+     "base": 676.2501792377617,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
     "frost-ml-raid": {
      "before": 673.1081191923093,
      "after": 682.8990117216208,
@@ -289,6 +341,6 @@
    }
   },
   "first_date": "2026-10-02",
-  "passes": 3
+  "passes": 4
  }
 }

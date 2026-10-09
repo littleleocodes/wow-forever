@@ -176,8 +176,8 @@
   "start": "ui\\specs\\rogue\\dps\\apls\\forever_mutilate.apl.json",
   "builds": [
    {
-    "label": "assassination-seal-fate-raid",
-    "talents": "0053031232150005-305313000013-002"
+    "label": "assassination-ml-raid",
+    "talents": "0053031052150005-305313000013-002"
    },
    {
     "label": "sim preset: Mutilate",
@@ -189,13 +189,13 @@
     "protect_only": true
    },
    {
-    "label": "assassination-ml-raid",
-    "talents": "0053031052150005-305313000013-002",
+    "label": "assassination-seal-fate-raid",
+    "talents": "0053031232150005-305313000013-002",
     "protect_only": true
    }
   ],
   "tuned_on": [
-   "assassination-seal-fate-raid",
+   "assassination-ml-raid",
    "sim preset: Mutilate"
   ],
   "iterations": 3000,
@@ -224,41 +224,49 @@
     "gain_seed2": 0.0175,
     "candidates": 36,
     "pass": 5
+   },
+   {
+    "round": 4,
+    "change": "move down below 'cast Mutilate': cast Backstab",
+    "gain_seed1": 0.0022762803133065113,
+    "gain_seed2": 0.002006649565002183,
+    "candidates": 336,
+    "pass": 9
    }
   ],
   "final": {
    "raid": {
-    "assassination-seal-fate-raid": {
-     "before": 304.14378145167433,
-     "after": 686.883178144914,
-     "base": 304.14378145167433,
+    "assassination-ml-raid": {
+     "before": 311.9326932834489,
+     "after": 707.8155788126683,
+     "base": 311.9326932834489,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Mutilate": {
-     "before": 657.6771135975811,
-     "after": 653.9828522680286,
-     "base": 657.6771135975811,
+     "before": 673.5602809775609,
+     "after": 671.8984380620847,
+     "base": 673.5602809775609,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "assassination-mutilate-raid": {
-     "before": 300.1451910589939,
-     "after": 672.3567558329357,
-     "base": 300.1451910589939,
+     "before": 308.2725017991535,
+     "after": 688.3938208226427,
+     "base": 308.2725017991535,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
-    "assassination-ml-raid": {
-     "before": 304.14378145167433,
-     "after": 692.0190512706861,
-     "base": 304.14378145167433,
+    "assassination-seal-fate-raid": {
+     "before": 311.9326932834489,
+     "after": 702.4957103701706,
+     "base": 311.9326932834489,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -267,6 +275,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 8
+  "passes": 9
  }
 }

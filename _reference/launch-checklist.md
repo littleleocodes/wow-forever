@@ -98,6 +98,9 @@
 **Balance — Leveling (open talent search)** (`druid/research/leveling/builds/balance-open-leveling.md`)
 - [ ] An open-search Balance leveling build: check it while leveling at launch.
 
+**Feral Combat — Shifting Power (the simulator's Feral Cat 9/35/7)** (`druid/research/raid/builds/feral-combat-shifting-power-raid.md`)
+- [ ] Does powershifting work in Forever as the simulator plays it (Furor's energy on every Cat Form)? Check at launch.
+
 ### Hunter
 
 **Beast Mastery / Marksmanship (simulator winner adopted 2026-10-02)** (`hunter/research/raid/builds/bm-mm-raid.md`)
@@ -311,8 +314,14 @@
 **Frostfire — Fingers of Frost / Ice Lance (user build)** (`mage/research/raid/builds/frostfire-fingers-of-frost-raid.md`)
 - [ ] Does Frostfire Bolt's chill proc Fingers of Frost in the live game as the simulator assumes?
 
+**Arcane-Frost — Raid (open talent search)** (`mage/research/raid/builds/arcane-frost-open-raid.md`)
+- [ ] An open-search Arcane-Frost build: check it against the community's Arcane-Frost builds at launch.
+
 **Arcane-Frost — Leveling (open talent search)** (`mage/research/leveling/builds/arcane-frost-open-leveling.md`)
 - [ ] An open-search Arcane-Frost leveling build: check it while leveling at launch.
+
+**Frostfire — Leveling (open talent search)** (`mage/research/leveling/builds/frostfire-open-leveling.md`)
+- [ ] An open-search Frostfire leveling build: check it while leveling at launch.
 
 **Frost — Leveling (open talent search)** (`mage/research/leveling/builds/frost-open-leveling.md`)
 - [ ] An open-search Frost leveling build: check it while leveling at launch.

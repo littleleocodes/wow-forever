@@ -40,22 +40,22 @@
    "measured": true,
    "spell_casts": {
     "25296": 1.0,
-    "20904": 10.178333333333333,
-    "20554": 1.0,
-    "3045": 1.0,
     "14287": 27.66433333333333,
-    "25295": 6.821666666666666
+    "20904": 10.178333333333333,
+    "25295": 6.821666666666666,
+    "20554": 1.0,
+    "3045": 1.0
    },
    "casts": {
-    "Aspect of the Hawk": 1.0,
-    "Aimed Shot": 10.178333333333333,
     "Auto Shot": 83.70066666666666,
-    "Berserking": 1.0,
-    "Rapid Fire": 1.0,
+    "Aspect of the Hawk": 1.0,
     "OtherActionManaGain": 2.0,
-    "Major Mana Potion": 2.0,
     "Arcane Shot": 27.66433333333333,
-    "Serpent Sting": 6.821666666666666
+    "Major Mana Potion": 2.0,
+    "Aimed Shot": 10.178333333333333,
+    "Serpent Sting": 6.821666666666666,
+    "Berserking": 1.0,
+    "Rapid Fire": 1.0
    },
    "dps": 457.37681129217333,
    "dps_stdev": 18.250194182374187,
@@ -87,23 +87,23 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "14287": 28.43,
-    "3045": 1.0,
     "20554": 1.0,
+    "3045": 1.0,
     "25296": 1.0,
+    "14287": 28.43,
     "20904": 10.285,
     "25295": 7.0
    },
    "casts": {
-    "Arcane Shot": 28.43,
-    "Rapid Fire": 1.0,
     "Berserking": 1.0,
-    "Aspect of the Hawk": 1.0,
-    "Auto Shot": 83.66433333333333,
+    "Rapid Fire": 1.0,
     "Major Mana Potion": 2.0,
+    "Aspect of the Hawk": 1.0,
+    "Arcane Shot": 28.43,
+    "OtherActionManaGain": 2.0,
     "Aimed Shot": 10.285,
     "Serpent Sting": 7.0,
-    "OtherActionManaGain": 2.0
+    "Auto Shot": 83.66433333333333
    },
    "dps": 463.0047907785904,
    "dps_stdev": 18.21011015823557,
@@ -135,23 +135,23 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "3045": 1.0,
+    "14287": 28.478,
     "25296": 1.0,
     "20904": 10.261,
     "25295": 7.0,
-    "20554": 1.0,
-    "14287": 28.478
+    "3045": 1.0,
+    "20554": 1.0
    },
    "casts": {
-    "Rapid Fire": 1.0,
     "Major Mana Potion": 2.0,
+    "Arcane Shot": 28.478,
     "Aspect of the Hawk": 1.0,
     "Aimed Shot": 10.261,
     "Serpent Sting": 7.0,
+    "OtherActionManaGain": 2.0,
+    "Rapid Fire": 1.0,
     "Berserking": 1.0,
-    "Arcane Shot": 28.478,
-    "Auto Shot": 83.672,
-    "OtherActionManaGain": 2.0
+    "Auto Shot": 83.672
    },
    "dps": 441.1591011080959,
    "dps_stdev": 17.371645908622163,
@@ -184,22 +184,22 @@
    "measured": true,
    "spell_casts": {
     "25296": 1.0,
-    "20904": 11.847,
-    "20554": 1.0,
     "14287": 26.153,
-    "25295": 7.0,
-    "3045": 1.0
+    "3045": 1.0,
+    "20554": 1.0,
+    "20904": 11.847,
+    "25295": 7.0
    },
    "casts": {
+    "Aspect of the Hawk": 1.0,
+    "Arcane Shot": 26.153,
+    "Rapid Fire": 1.0,
+    "Berserking": 1.0,
     "Auto Shot": 83.66866666666667,
     "OtherActionManaGain": 2.0,
-    "Aspect of the Hawk": 1.0,
-    "Aimed Shot": 11.847,
     "Major Mana Potion": 2.0,
-    "Berserking": 1.0,
-    "Arcane Shot": 26.153,
-    "Serpent Sting": 7.0,
-    "Rapid Fire": 1.0
+    "Aimed Shot": 11.847,
+    "Serpent Sting": 7.0
    },
    "dps": 444.27934282573176,
    "dps_stdev": 17.513970715280525,
@@ -230,23 +230,23 @@
    "split": "",
    "ours": false,
    "spell_casts": {
+    "25296": 1.0,
+    "25295": 7.0,
+    "3045": 1.0,
     "20554": 1.0,
     "14287": 28.43,
-    "20904": 10.285,
-    "25296": 1.0,
-    "3045": 1.0,
-    "25295": 7.0
+    "20904": 10.285
    },
    "casts": {
-    "Berserking": 1.0,
-    "Major Mana Potion": 2.0,
-    "Arcane Shot": 28.43,
-    "Aimed Shot": 10.285,
-    "Aspect of the Hawk": 1.0,
-    "Rapid Fire": 1.0,
     "Auto Shot": 83.66433333333333,
+    "Major Mana Potion": 2.0,
+    "Aspect of the Hawk": 1.0,
+    "Serpent Sting": 7.0,
+    "Rapid Fire": 1.0,
+    "Berserking": 1.0,
+    "Arcane Shot": 28.43,
     "OtherActionManaGain": 2.0,
-    "Serpent Sting": 7.0
+    "Aimed Shot": 10.285
    },
    "dps": 358.9220686530479,
    "dps_stdev": 14.274083789529536,
@@ -277,25 +277,25 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "14287": 1.6236666666666666,
     "20554": 1.0,
     "25296": 1.0,
-    "3045": 1.0,
+    "14287": 1.6236666666666666,
+    "25295": 8.004666666666667,
     "20904": 14.032,
-    "1293527": 25.401666666666667,
-    "25295": 8.004666666666667
+    "3045": 1.0,
+    "1293527": 25.401666666666667
    },
    "casts": {
-    "Arcane Shot": 1.6236666666666666,
+    "OtherActionManaGain": 2.0,
     "Berserking": 1.0,
     "Major Mana Potion": 2.0,
     "Aspect of the Hawk": 1.0,
-    "Rapid Fire": 1.0,
     "Auto Shot": 83.715,
-    "OtherActionManaGain": 2.0,
+    "Arcane Shot": 1.6236666666666666,
+    "Serpent Sting": 8.004666666666667,
     "Aimed Shot": 14.032,
-    "Summon Hawk": 25.401666666666667,
-    "Serpent Sting": 8.004666666666667
+    "Rapid Fire": 1.0,
+    "Summon Hawk": 25.401666666666667
    },
    "dps": 314.900625025604,
    "dps_stdev": 9.762610001468735,
@@ -327,23 +327,23 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "3045": 1.0,
-    "25295": 7.0,
     "25296": 1.0,
     "20904": 12.0,
+    "25295": 7.0,
     "20554": 1.0,
-    "14287": 26.0
+    "14287": 26.0,
+    "3045": 1.0
    },
    "casts": {
-    "Rapid Fire": 1.0,
-    "Serpent Sting": 7.0,
     "Auto Shot": 75.0,
     "OtherActionManaGain": 2.0,
     "Aspect of the Hawk": 1.0,
     "Aimed Shot": 12.0,
+    "Serpent Sting": 7.0,
     "Berserking": 1.0,
+    "Arcane Shot": 26.0,
     "Major Mana Potion": 2.0,
-    "Arcane Shot": 26.0
+    "Rapid Fire": 1.0
    },
    "dps": 358.83417728512256,
    "dps_stdev": 13.444144278129206,
@@ -374,23 +374,23 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "20554": 1.0,
     "25296": 1.0,
-    "20904": 13.0,
     "14287": 24.0,
+    "25295": 7.0,
     "3045": 1.0,
-    "25295": 7.0
+    "20554": 1.0,
+    "20904": 13.0
    },
    "casts": {
+    "Auto Shot": 75.0,
+    "Aspect of the Hawk": 1.0,
+    "Arcane Shot": 24.0,
+    "Serpent Sting": 7.0,
+    "Rapid Fire": 1.0,
     "OtherActionManaGain": 2.0,
     "Berserking": 1.0,
-    "Aspect of the Hawk": 1.0,
-    "Aimed Shot": 13.0,
     "Major Mana Potion": 2.0,
-    "Arcane Shot": 24.0,
-    "Rapid Fire": 1.0,
-    "Auto Shot": 75.0,
-    "Serpent Sting": 7.0
+    "Aimed Shot": 13.0
    },
    "dps": 322.9940129167263,
    "dps_stdev": 9.789742501685177,

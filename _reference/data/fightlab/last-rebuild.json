@@ -5,9 +5,11 @@
    "spec": "frost-leveling",
    "hand": "leveling-frost",
    "opt": "opt-frost-leveling-leveling-st",
-   "started": "2026-10-09T05:20:28",
+   "started": "2026-10-09T16:48:21",
    "steps": [
-    "report"
+    "race",
+    "report",
+    "regen"
    ],
    "raid": {
     "frost-raid": {
@@ -442,24 +444,44 @@
      }
     }
    },
-   "seconds": 157,
+   "seconds": 455,
    "log": [
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py mage --spec frost-leveling --build leveling-frost --compare F:\\wow-forever\\mage\\research\\leveling\\fightlab\\candidates\\cand-frost-0-5-46.json F:\\wow-forever\\mage\\research\\leveling\\fightlab\\candidates\\cand-frost-23-0-28.json F:\\wow-forever\\mage\\research\\leveling\\fightlab\\candidates\\cand-frost-28-0-23.json F:\\wow-forever\\mage\\research\\leveling\\fightlab\\candidates\\cand-frost-r1.json F:\\wow-forever\\mage\\research\\leveling\\fightlab\\candidates\\cand-frost-r2.json F:\\wow-forever\\mage\\research\\leveling\\fightlab\\candidates\\cand-frost-r3.json F:\\wow-forever\\mage\\research\\leveling\\fightlab\\candidates\\cand-frost-r5.json F:\\wow-forever\\mage\\research\\leveling\\fightlab\\candidates\\cand-frost-r6.json --levels 20,30,40,50,60 --fights 1000",
+     "rc": 0,
+     "seconds": 78,
+     "tail": [
+      "   vs cand-frost-r5: time/kill 26.5s (-0.9%), fight 12.2s, deaths/100 0.0",
+      "   vs cand-frost-r6: time/kill 26.5s (-0.9%), fight 12.2s, deaths/100 0.0",
+      "L60: fight 12.0s (median 11.8, p90 16.3), downtime 5.3s, deaths/100 0.0, time/kill 25.3s, 142 kills/h, mana/kill 1004, shares Ice Lance 67%, Frostbolt 31%, Frost Nova 1%, Wand 1%",
+      "   vs cand-frost-0-5-46: time/kill 25.9s (+2.5%), fight 11.6s, deaths/100 0.0",
+      "   vs cand-frost-23-0-28: time/kill 26.2s (+3.5%), fight 13.2s, deaths/100 0.0",
+      "   vs cand-frost-28-0-23: time/kill 26.1s (+3.2%), fight 12.7s, deaths/100 0.0",
+      "   vs cand-frost-r1: time/kill 25.6s (+1.2%), fight 13.0s, deaths/100 0.0",
+      "   vs cand-frost-r2: time/kill 24.5s (-3.0%), fight 12.7s, deaths/100 0.0",
+      "   vs cand-frost-r3: time/kill 24.9s (-1.4%), fight 11.7s, deaths/100 0.0",
+      "   vs cand-frost-r5: time/kill 25.1s (-0.8%), fight 11.8s, deaths/100 0.0",
+      "   vs cand-frost-r6: time/kill 25.1s (-0.8%), fight 11.8s, deaths/100 0.0",
+      "done in 76s"
+     ],
+     "stderr": []
+    },
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py mage --spec frost-leveling --build opt-frost-leveling-leveling-st --compare leveling-frost opt-fire-leveling-leveling-st --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --gear-tiers --write",
      "rc": 0,
-     "seconds": 63,
+     "seconds": 150,
      "tail": [
-      "   Ice Barrier              1  sim   +1.8% (fight   +4.8% +-0.6)  EV   +3.9%",
+      "   Ice Barrier              1  sim   +1.6% (fight   +4.0% +-0.6)  EV   +3.9%",
       "   Ice Block                1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +3.2%",
-      "   Ice Lance                1  sim  +39.7% (fight  +66.2% +-1.2)  EV  +40.2%",
-      "   Ice Shards               5  sim  +17.7% (fight  +25.6% +-0.7)  EV  +15.6%",
-      "   Improved Frostbolt       5  sim   +2.2% (fight   +5.4% +-0.9)  EV   +5.5%",
-      "   Incineration             3  sim   +2.3% (fight   +3.4% +-0.6)  EV   +1.4%",
-      "   Piercing Ice             3  sim   +3.0% (fight   +4.1% +-0.6)  EV   +3.6%",
-      "   Shatter                  3  sim  +21.7% (fight  +30.9% +-0.9)  EV  +28.2%",
-      "   Wand Specialization      2  sim   +0.4% (fight   +0.3% +-0.6)  EV   +0.0%",
-      "   Winter's Chill           3  sim   +1.0% (fight   +1.5% +-1.0)  EV   +0.7%",
-      "done in 63s",
+      "   Ice Lance                1  sim  +39.9% (fight  +65.6% +-1.0)  EV  +40.2%",
+      "   Ice Shards               5  sim   +9.9% (fight  +13.6% +-0.6)  EV  +15.6%",
+      "   Improved Frostbolt       5  sim   +2.9% (fight   +6.5% +-0.7)  EV   +5.5%",
+      "   Incineration             3  sim   +1.4% (fight   +1.9% +-0.5)  EV   +1.4%",
+      "   Piercing Ice             3  sim   +3.1% (fight   +4.1% +-0.6)  EV   +3.6%",
+      "   Shatter                  3  sim  +17.2% (fight  +24.2% +-0.7)  EV  +28.2%",
+      "   Wand Specialization      2  sim   +0.2% (fight   +0.3% +-0.4)  EV   +0.0%",
+      "   Winter's Chill           3  sim   +0.8% (fight   +1.6% +-0.8)  EV   +0.7%",
+      "done in 149s",
       "wrote F:\\wow-forever\\mage\\research\\leveling\\fightlab\\frost-leveling.md"
      ],
      "stderr": []
@@ -467,19 +489,19 @@
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py mage --spec fire-leveling --build opt-fire-leveling-leveling-st --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --write",
      "rc": 0,
-     "seconds": 52,
+     "seconds": 127,
      "tail": [
       "   Ice Block                1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +3.0%",
-      "   Ice Lance                1  sim  +25.7% (fight  +41.6% +-1.0)  EV  +68.6%",
-      "   Ice Shards               5  sim   +5.0% (fight   +6.6% +-0.6)  EV   +1.5%",
-      "   Ignite                   5  sim   +4.4% (fight   +5.5% +-0.6)  EV  +19.0%",
-      "   Impact                   3  sim   -0.6% (fight   -1.7% +-0.8)  EV   +1.8%",
-      "   Improved Fireball        5  sim   +0.9% (fight   +3.7% +-0.7)  EV   +1.5%",
-      "   Improved Scorch          3  sim   +0.5% (fight   +0.3% +-0.5)  EV   +1.3%",
-      "   Permafrost               1  sim   +0.5% (fight   -0.1% +-0.5)  EV   +0.2%",
-      "   Pyroblast                1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.3%",
-      "   Shatter                  2  sim   +7.5% (fight  +10.8% +-0.6)  EV   +1.9%",
-      "done in 52s",
+      "   Ice Lance                1  sim  +22.9% (fight  +35.6% +-0.9)  EV  +68.6%",
+      "   Ice Shards               5  sim   +3.1% (fight   +4.4% +-0.5)  EV   +1.5%",
+      "   Ignite                   5  sim   +4.0% (fight   +5.4% +-0.5)  EV  +19.0%",
+      "   Impact                   3  sim   -0.4% (fight   -0.6% +-0.7)  EV   +1.8%",
+      "   Improved Fireball        5  sim   +0.6% (fight   +4.0% +-0.6)  EV   +1.5%",
+      "   Improved Scorch          3  sim   +0.1% (fight   +0.2% +-0.5)  EV   +1.3%",
+      "   Permafrost               1  sim   +0.3% (fight   +0.2% +-0.5)  EV   +0.2%",
+      "   Pyroblast                1  sim   +0.1% (fight   +1.4% +-0.5)  EV   +0.3%",
+      "   Shatter                  2  sim   +6.1% (fight   +9.1% +-0.6)  EV   +1.9%",
+      "done in 126s",
       "wrote F:\\wow-forever\\mage\\research\\leveling\\fightlab\\fire-leveling.md"
      ],
      "stderr": []
@@ -487,19 +509,19 @@
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py mage --spec frostfire-leveling --build opt-frost-leveling-leveling-st --compare opt-frost-leveling-leveling-st --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --write",
      "rc": 0,
-     "seconds": 42,
+     "seconds": 100,
      "tail": [
-      "   Ice Barrier              1  sim   +1.1% (fight   +3.1% +-0.5)  EV     n/a",
+      "   Ice Barrier              1  sim   +0.9% (fight   +2.7% +-0.5)  EV     n/a",
       "   Ice Block                1  sim   +0.0% (fight   +0.0% +-0.0)  EV     n/a",
-      "   Ice Lance                1  sim  +68.4% (fight  +98.0% +-1.2)  EV     n/a",
-      "   Ice Shards               5  sim  +16.4% (fight  +21.2% +-0.7)  EV     n/a",
+      "   Ice Lance                1  sim  +64.7% (fight  +93.1% +-1.0)  EV     n/a",
+      "   Ice Shards               5  sim   +8.6% (fight  +11.1% +-0.5)  EV     n/a",
       "   Improved Frostbolt       5  sim   +0.0% (fight   +0.0% +-0.0)  EV     n/a",
-      "   Incineration             3  sim   +2.1% (fight   +2.2% +-0.5)  EV     n/a",
-      "   Piercing Ice             3  sim   +3.0% (fight   +3.5% +-0.5)  EV     n/a",
-      "   Shatter                  3  sim  +20.8% (fight  +27.5% +-0.8)  EV     n/a",
+      "   Incineration             3  sim   +1.8% (fight   +2.2% +-0.4)  EV     n/a",
+      "   Piercing Ice             3  sim   +3.4% (fight   +4.1% +-0.5)  EV     n/a",
+      "   Shatter                  3  sim  +15.9% (fight  +20.2% +-0.7)  EV     n/a",
       "   Wand Specialization      2  sim   +0.0% (fight   +0.0% +-0.0)  EV     n/a",
-      "   Winter's Chill           3  sim   +1.0% (fight   +1.2% +-0.9)  EV     n/a",
-      "done in 42s",
+      "   Winter's Chill           3  sim   +0.9% (fight   +1.3% +-0.8)  EV     n/a",
+      "done in 98s",
       "wrote F:\\wow-forever\\mage\\research\\leveling\\fightlab\\frostfire-leveling.md"
      ],
      "stderr": []
@@ -510,81 +532,81 @@
     "time_per_kill": {
      "leveling-frost": {
       "20": 26.9,
-      "30": 29.2,
-      "40": 29.9,
-      "50": 24.6,
-      "60": 23.1
+      "30": 31.8,
+      "40": 32.8,
+      "50": 26.8,
+      "60": 25.3
      },
      "cand-frost-0-5-46": {
       "20": 26.2,
-      "30": 33.5,
-      "40": 29.5,
-      "50": 24.6,
-      "60": 23.9
+      "30": 35.3,
+      "40": 32.6,
+      "50": 26.6,
+      "60": 25.9
      },
      "cand-frost-23-0-28": {
       "20": 26.9,
-      "30": 29.3,
-      "40": 31.4,
-      "50": 25.8,
-      "60": 24.2
+      "30": 31.6,
+      "40": 34.4,
+      "50": 28.2,
+      "60": 26.2
      },
      "cand-frost-28-0-23": {
       "20": 26.9,
-      "30": 29.2,
-      "40": 32.6,
-      "50": 26.8,
-      "60": 23.9
+      "30": 31.8,
+      "40": 35.9,
+      "50": 29.0,
+      "60": 26.1
      },
      "cand-frost-r1": {
       "20": 26.9,
-      "30": 32.5,
-      "40": 30.4,
-      "50": 25.6,
-      "60": 23.5
+      "30": 34.1,
+      "40": 34.1,
+      "50": 27.9,
+      "60": 25.6
      },
      "cand-frost-r2": {
       "20": 26.9,
-      "30": 32.5,
-      "40": 30.3,
-      "50": 24.6,
-      "60": 22.8
+      "30": 34.1,
+      "40": 34.0,
+      "50": 26.6,
+      "60": 24.5
      },
      "cand-frost-r3": {
       "20": 25.3,
-      "30": 31.8,
-      "40": 29.2,
-      "50": 24.6,
-      "60": 23.0
+      "30": 32.9,
+      "40": 32.2,
+      "50": 26.7,
+      "60": 24.9
      },
      "cand-frost-r5": {
       "20": 25.3,
-      "30": 32.2,
-      "40": 29.2,
-      "50": 24.2,
-      "60": 23.3
+      "30": 33.5,
+      "40": 32.2,
+      "50": 26.5,
+      "60": 25.1
      },
      "cand-frost-r6": {
       "20": 25.3,
-      "30": 30.8,
-      "40": 29.2,
-      "50": 24.2,
-      "60": 23.3
+      "30": 31.8,
+      "40": 32.2,
+      "50": 26.5,
+      "60": 25.1
      }
     },
     "mean": {
-     "leveling-frost": 26.130000000000003,
-     "cand-frost-0-5-46": 26.865,
-     "cand-frost-23-0-28": 27.075,
-     "cand-frost-28-0-23": 27.46,
-     "cand-frost-r1": 27.095,
-     "cand-frost-r2": 26.615,
-     "cand-frost-r3": 26.189999999999998,
-     "cand-frost-r5": 26.240000000000002,
-     "cand-frost-r6": 26.03
+     "leveling-frost": 28.310000000000002,
+     "cand-frost-0-5-46": 28.855,
+     "cand-frost-23-0-28": 29.22,
+     "cand-frost-28-0-23": 29.72,
+     "cand-frost-r1": 29.28,
+     "cand-frost-r2": 28.605,
+     "cand-frost-r3": 28.05,
+     "cand-frost-r5": 28.15,
+     "cand-frost-r6": 27.895
     },
     "winner": "cand-frost-r6",
-    "gain_vs_hand": 0.0038,
+    "gain_vs_hand": 0.0147,
     "recommended": "leveling-frost",
     "margin": 0.02,
     "candidate_files": {
@@ -699,17 +721,17 @@
    "converged": true,
    "time_per_kill": {
     "20": 25.2,
-    "30": 31.5,
-    "40": 29.2,
-    "50": 24.5,
-    "60": 23.1
+    "30": 32.4,
+    "40": 32.0,
+    "50": 26.7,
+    "60": 25.0
    },
    "hand_time_per_kill": {
-    "20": 26.6,
-    "30": 29.0,
-    "40": 30.1,
-    "50": 24.7,
-    "60": 23.4
+    "20": 26.7,
+    "30": 31.5,
+    "40": 33.0,
+    "50": 26.7,
+    "60": 25.4
    },
    "variants": {
     "frost-aoe": {
@@ -5845,11 +5867,13 @@
   }
  },
  "last_run": {
-  "date": "2026-10-09T10:30:27",
+  "date": "2026-10-09T17:02:10",
   "classes": [
-   "hunter"
+   "mage"
   ],
   "steps": [
+   "race",
+   "report",
    "regen"
   ],
   "fights": {
@@ -5858,31 +5882,31 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 43,
+  "seconds": 830,
   "refresh": null,
   "regen_log": [
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py hunter",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py mage",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
-     "formatted F:\\wow-forever\\hunter\\research\\talents\\forever\\proposed-builds.json",
-     "hunter: README section + leveling-beast-mastery note written"
+     "formatted F:\\wow-forever\\mage\\research\\talents\\forever\\proposed-builds.json",
+     "mage: README section + leveling-frost note written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py hunter",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py mage",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
-     "hunter: raid sim section written (4 specs)",
+     "mage: raid sim section written (4 specs)",
      "wrote _reference\\raidsim-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py hunter",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py mage",
     "rc": 0,
     "seconds": 0,
     "tail": [
@@ -5891,38 +5915,37 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py hunter",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py mage",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
-     "hunter: leveling/guide.md written"
+     "mage: leveling/guide.md written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py hunter",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py mage",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
-     "hunter: raid gear and consumables written"
+     "mage: raid gear and consumables written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py hunter",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py mage",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
-     "hunter: raid and leveling rotations, DPS ranking written"
+     "mage: raid and leveling rotations, DPS ranking written"
     ],
     "stderr": []
    },
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\validate_builds.py",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
-     "  ok   feral-combat-pvp (0/32/19)",
      "  ok   restoration-pvp (0/11/40)",
      "  ok   opt-resto-heal-raid-heal (11/5/35)",
      "  ok   restoration-leveling (11/5/35)",
@@ -5932,6 +5955,7 @@
      "  ok   opt-feral-cat-dps-parse (9/31/11)",
      "  ok   opt-feral-bear-tank-raid-tank (7/35/9)",
      "  ok   balance-open-leveling (36/2/13)",
+     "  ok   feral-combat-shifting-power-raid (9/35/7)",
      "",
      "all builds valid"
     ],
@@ -5940,7 +5964,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_builds.py",
     "rc": 0,
-    "seconds": 2,
+    "seconds": 4,
     "tail": [
      "rogue/classic-baseline: 5 build pages + README.md",
      "rogue: 24 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
@@ -5949,18 +5973,18 @@
      "shaman/classic-baseline: 5 build pages + README.md",
      "shaman: 23 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "mage/classic-baseline: 7 build pages + README.md",
-     "mage: 26 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
+     "mage: 28 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "warlock/classic-baseline: 4 build pages + README.md",
      "warlock: 24 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "druid/classic-baseline: 7 build pages + README.md",
-     "druid: 21 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs"
+     "druid: 22 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py hunter",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py mage",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
      "wrote _reference\\new-builds-survey.md",
      "wrote the New spells and builds section of 1 raid READMEs"
@@ -5970,7 +5994,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_modes.py",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 3,
     "tail": [
      "druid: README.md sections and 3 mode folders written",
      "hunter: README.md sections and 3 mode folders written",
@@ -5986,15 +6010,15 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py hunter --write",
+    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py mage --write",
     "rc": 0,
-    "seconds": 36,
+    "seconds": 357,
     "tail": [
-     "| bm-leveling -> level-20 build (0/11/0) | +0.2% | +1.9% | +6.0% | +8.3% | +11.0% | +14.2% | +16.1% | +19.3% | +20.7% | +22.4% | +27.6% |",
-     "| bm-leveling -> level-30 build (21/0/0) | +0.4% | +2.2% | +3.6% | +10.7% | +12.2% | +12.9% | +17.4% | +19.4% | +20.5% | +24.7% | +26.2% |",
-     "| bm-leveling -> level-40 build (16/15/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.5% | +16.0% | +18.0% | +19.2% | +23.4% | +24.7% | +27.6% |",
-     "| bm-leveling -> level-50 build (16/25/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.5% | +16.0% | +18.0% | +19.2% | +23.4% | +24.7% | +27.6% |",
-     "| bm-leveling -> level-60 build (19/32/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.9% | +14.4% | +17.7% | +19.6% | +23.0% | +24.8% | +27.6% |",
+     "| fire-leveling -> level-20 build (0/0/11) | +0.7% | +3.6% | +42.8% | +44.0% | +52.7% | +54.5% | +55.5% | +56.5% | +60.1% | +63.0% | +64.2% |",
+     "| fire-leveling -> level-30 build (0/10/11) | +0.7% | +3.6% | +14.9% | +20.7% | +52.7% | +54.5% | +55.5% | +56.5% | +60.1% | +63.0% | +64.2% |",
+     "| fire-leveling -> level-40 build (0/15/16) | +0.7% | +3.6% | +14.9% | +21.7% | +24.0% | +54.5% | +55.8% | +56.8% | +57.8% | +61.4% | +64.2% |",
+     "| fire-leveling -> level-50 build (0/30/11) | +0.5% | +6.7% | +19.6% | +21.6% | +23.8% | +26.3% | +32.0% | +34.0% | +60.1% | +63.0% | +64.2% |",
+     "| fire-leveling -> level-60 build (0/32/19) | +0.5% | +6.7% | +19.6% | +21.6% | +23.8% | +26.3% | +36.0% | +38.0% | +38.6% | +62.7% | +64.6% |",
      "",
      "## Reading it",
      "",
@@ -6025,7 +6049,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\compare_effects.py",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
      "druid    buff=8 nerf=20 reworked=0 new=18 removed=13 same=6 unscored=0",
      "hunter   buff=5 nerf=17 reworked=0 new=18 removed=14 same=10 unscored=0",
@@ -6042,7 +6066,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\loop_audit.py",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 2,
     "tail": [
      "druid    flagged 30/98  open 2",
      "hunter   flagged 30/55  open 5",
@@ -6062,7 +6086,7 @@
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote _reference\\launch-checklist.md (285 per-build questions)"
+     "wrote _reference\\launch-checklist.md (288 per-build questions)"
     ],
     "stderr": []
    },

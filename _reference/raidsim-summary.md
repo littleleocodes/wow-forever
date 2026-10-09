@@ -13,7 +13,7 @@
 | hunter | `mm-raid` | `bm-mm-full-buffs-raid` | 472 | Marksmanship | 454 | `opt-mm-raid-raid-dps` | 461 |
 | mage | `arcane-dps` | `arcane-blast-raid` | 569 | - | - | - | - |
 | mage | `fire-raid` | `fire-raid` | 519 | Fire DPS | 525 | `opt-fire-raid-raid-dps` | 519 |
-| mage | `frost-raid` | `frost-ml-raid` | 605 | Frost DPS | 561 | `opt-frost-raid-raid-dps` | 599 |
+| mage | `frost-raid` | `frost-ml-raid` | 604 | Frost DPS | 561 | `opt-frost-raid-raid-dps` | 600 |
 | mage | `frostfire-raid` | `frostfire-raid` | 476 | - | - | - | - |
 | paladin | `prot-tank` | `prot-tank` | 455 | P4 Prot | 395 | `opt-prot-tank-raid-tank` | 406 |
 | paladin | `ret-dps` | `opt-ret-dps-raid-dps` | 542 | P4/P5 Ret | 519 | `opt-ret-dps-raid-dps` | 542 |
@@ -48,14 +48,14 @@ The best of our builds per spec model on the boss-level training dummy with your
 | druid | Classic | `balance-dps` | `balance-moonkin-raid` (35/0/16) | 224 | - | 567 | 740 | 746 | - | Balance 741 |
 | druid | Classic | `feral-cat-dps` | `feral-cat-dps` (14/32/5) | 239 | - | 671 | 1563 | 1666 | - | Feral 1597 |
 | hunter | Forever | `bm-raid` | `beast-marks-open-raid` (27/21/3) | 474 | 525 | 855 | 855 | 886 | `beast-mastery-ml-parse` 843 | Beast Mastery 35/16/0 789 |
-| hunter | Forever | `melee-dps` | `beast-survival-open-raid` (16/11/24) | 360 | 427 | 1049 | 1049 | 1083 | `survival-ml-parse` 999 | - |
+| hunter | Forever | `melee-dps` | `beast-survival-open-raid` (16/11/24) | 360 | 427 | 1056 | 1056 | 1088 | `survival-ml-parse` 998 | - |
 | hunter | Forever | `mm-lonewolf-raid` | `mm-lone-wolf-raid` (5/41/5) | 457 | 492 | 897 | 897 | 920 | `marksmanship-ml-parse` 855 | Marksmanship 692 |
 | hunter | Forever | `mm-raid` | `marksmanship-with-a-pet-open-raid` (7/39/5) | 451 | 495 | 881 | 881 | 914 | `opt-mm-raid-parse` 836 | Marksmanship 845 |
 | hunter | Classic | `mm-raid` | `bm-mm-raid` (20/31/0) | 405 | - | 1049 | 1085 | 1146 | - | Marksmanship 1087 |
 | mage | Forever | `arcane-dps` | `arcane-blast-raid` (35/11/5) | 569 | 672 | 694 | 694 | 756 | - | Arcane DPS 687 |
 | mage | Forever | `fire-raid` | `fire-raid` (12/34/5) | 519 | 607 | 688 | 688 | 739 | `opt-fire-raid-parse` 638 | Fire DPS 664 |
-| mage | Forever | `frost-raid` | `frost-ml-raid` (21/0/30) | 605 | 673 | 684 | 684 | 694 | `opt-frost-raid-parse` 648 | Frost 14/0/37 646 |
-| mage | Forever | `frostfire-raid` | `frostfire-fingers-of-frost-raid` (0/29/22) | 476 | 576 | 665 | 665 | 680 | - | - |
+| mage | Forever | `frost-raid` | `arcane-frost-open-raid` (28/0/23) | 592 | 673 | 692 | 692 | 698 | `opt-frost-raid-parse` 648 | Frost 14/0/37 646 |
+| mage | Forever | `frostfire-raid` | `frostfire-fingers-of-frost-raid` (0/29/22) | 476 | 576 | 680 | 680 | 680 | - | - |
 | mage | Classic | `fire-raid` | `fire-raid` (17/31/3) | 495 | - | 1003 | 1014 | 1025 | - | Frost DPS 752 |
 | mage | Classic | `frost-raid` | `frost-arcane-power-raid` (31/0/20) | 461 | - | 781 | 836 | 866 | - | Frost DPS 752 |
 | paladin | Forever | `prot-tank` | `prot-tank` (0/23/28) | 173 | 204 | 455 | 455 | 453 | - | P4 Prot 395 |
