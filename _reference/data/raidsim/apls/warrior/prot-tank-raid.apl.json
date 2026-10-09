@@ -63,15 +63,6 @@
   },
   {
    "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 11581
-     }
-    }
-   }
-  },
-  {
-   "action": {
     "condition": {
      "cmp": {
       "op": "OpLt",
@@ -145,6 +136,16 @@
     }
    },
    "notes": "apl_opt 2026-09-29: changed or added by the rotation search (see prot-tank-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 1672
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see prot-tank-rotation-search.json)"
   },
   {
    "action": {

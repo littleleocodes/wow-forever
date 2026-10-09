@@ -145,27 +145,16 @@
  "raid": {
   "class": "shaman",
   "spec": "enhancement-dps",
-  "date": "2026-10-03",
-  "commit": "40be98e",
+  "date": "2026-10-09",
+  "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/shaman/enhancement/apls/forever.apl.json",
   "start": "ui\\specs\\shaman\\enhancement\\apls\\forever.apl.json",
   "builds": [
    {
-    "label": "deep: Enhancement (dummy)",
-    "talents": "5404331-055030031005102051",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-enhancement-bis.gear.json"
-   },
-   {
-    "label": "deep: Enhancement (raid)",
-    "talents": "500533102-055030021005102251",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-enhancement-bis.gear.json"
-   },
-   {
-    "label": "deep: Hybrid Elemental/Enhancement (raid)",
-    "talents": "530533102-05503001100510224",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-hybrid-elemental-enhancement-bis.gear.json"
+    "label": "opt-enhancement-dps-raid-dps",
+    "talents": "5000321-055030031005102051-05004"
    },
    {
     "label": "sim preset: Level 60",
@@ -173,16 +162,23 @@
    },
    {
     "label": "enhancement-raid-dps",
-    "talents": "5200031-055030031005102051-05004"
+    "talents": "5200031-055030031005102051-05004",
+    "protect_only": true
    },
    {
-    "label": "opt-enhancement-dps-raid-dps",
-    "talents": "5000321-055030031005102051-05004"
+    "label": "enhancement-ml-raid",
+    "talents": "500533102-055030021005102251",
+    "protect_only": true
    },
    {
-    "label": "enhancement-ml-parse",
-    "talents": "520033122-055030031005102251"
+    "label": "elemental-enhancement-ml-raid",
+    "talents": "530533102-05503001100510224",
+    "protect_only": true
    }
+  ],
+  "tuned_on": [
+   "opt-enhancement-dps-raid-dps",
+   "sim preset: Level 60"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -242,76 +238,66 @@
     "gain_seed2": 0.0032403239083069746,
     "candidates": 323,
     "pass": 4
+   },
+   {
+    "round": 8,
+    "change": "threshold 2.812 -> 4.218: if stacks of Maelstrom Weapon \u2265 2.812: cast Lightning Bolt",
+    "gain_seed1": 0.05310071862783827,
+    "gain_seed2": 0.05050108358187044,
+    "candidates": 327,
+    "pass": 8
    }
   ],
   "final": {
    "raid": {
-    "deep: Enhancement (dummy)": {
-     "before": 685.4405560082741,
-     "after": 772.897988306688,
-     "base": 685.4405560082741,
+    "opt-enhancement-dps-raid-dps": {
+     "before": 675.6711135157722,
+     "after": 692.884408863866,
+     "base": 675.6711135157722,
      "before_value": null,
      "after_value": null,
-     "oom_before": 3.8985611333917984,
-     "oom_after": 3.8985611333917984
-    },
-    "deep: Enhancement (raid)": {
-     "before": 679.3483788946911,
-     "after": 801.5374862470562,
-     "base": 679.3483788946911,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 20.320382058872745,
-     "oom_after": 20.320382058872745
-    },
-    "deep: Hybrid Elemental/Enhancement (raid)": {
-     "before": 542.4240620807383,
-     "after": 679.063468580652,
-     "base": 542.4240620807383,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 12.295978434514657,
-     "oom_after": 12.295978434514657
+     "oom_before": 3.94180492204255,
+     "oom_after": 1.0188021669433005
     },
     "sim preset: Level 60": {
-     "before": 668.9482696650705,
-     "after": 755.7507871905883,
-     "base": 668.9482696650705,
+     "before": 675.3871661252306,
+     "after": 696.2688196649796,
+     "base": 675.3871661252306,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.7584282206507503,
-     "oom_after": 0.7584282206507503
+     "oom_before": 2.6172360711152987,
+     "oom_after": 0.4821236276194
     },
     "enhancement-raid-dps": {
-     "before": 666.4995700934867,
-     "after": 744.6771493218064,
-     "base": 666.4995700934867,
+     "before": 672.9867644834435,
+     "after": 683.0465570857633,
+     "base": 672.9867644834435,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.6199848760876998,
-     "oom_after": 1.6199848760876998
+     "oom_before": 3.928806446985001,
+     "oom_after": 1.0150974814345
     },
-    "opt-enhancement-dps-raid-dps": {
-     "before": 661.8503810315564,
-     "after": 754.9064599120742,
-     "base": 661.8503810315564,
+    "enhancement-ml-raid": {
+     "before": 714.919694036486,
+     "after": 739.3868704261314,
+     "base": 714.919694036486,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.6510288974361997,
-     "oom_after": 1.6510288974361997
+     "oom_before": 32.705248297424845,
+     "oom_after": 27.178302876821252
     },
-    "enhancement-ml-parse": {
-     "before": 662.7723246759715,
-     "after": 796.8495039410772,
-     "base": 662.7723246759715,
+    "elemental-enhancement-ml-raid": {
+     "before": 668.0701651821672,
+     "after": 690.4455150780248,
+     "base": 668.0701651821672,
      "before_value": null,
      "after_value": null,
-     "oom_before": 21.133907836846188,
-     "oom_after": 21.133907836846188
+     "oom_before": 41.44455220999156,
+     "oom_after": 34.48790546134587
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 7
+  "passes": 8
  }
 }

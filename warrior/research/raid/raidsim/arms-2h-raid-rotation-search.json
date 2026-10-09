@@ -226,26 +226,20 @@
  "raid": {
   "class": "warrior",
   "spec": "arms-2h-raid",
-  "date": "2026-10-08",
-  "commit": "b0f0df3",
+  "date": "2026-10-09",
+  "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/warrior/dps/apls/dps_no_reck.apl.json",
   "start": "ui\\specs\\warrior\\dps\\apls\\dps_no_reck.apl.json",
   "builds": [
    {
-    "label": "open winner",
-    "talents": "12305013032-55152000132010501"
-   },
-   {
     "label": "opt-arms-2h-raid-raid-dps",
-    "talents": "03305013032-05250030052210501",
-    "protect_only": true
+    "talents": "03305013032-05250030052210501"
    },
    {
     "label": "sim preset: DPS",
-    "talents": "30305013-05553005150010501",
-    "protect_only": true
+    "talents": "30305013-05553005150010501"
    },
    {
     "label": "arms-2h-raid",
@@ -254,7 +248,8 @@
    }
   ],
   "tuned_on": [
-   "open winner"
+   "opt-arms-2h-raid-raid-dps",
+   "sim preset: DPS"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -330,41 +325,56 @@
     "gain_seed2": 0.002547468785535578,
     "candidates": 662,
     "pass": 5
+   },
+   {
+    "round": 10,
+    "change": "insert before the filler: cast Mighty Rage Potion",
+    "gain_seed1": 0.004020981018347358,
+    "gain_seed2": 0.004722840523378791,
+    "candidates": 678,
+    "pass": 7
+   },
+   {
+    "round": 11,
+    "change": "insert at the top: if time until Bloodthirst is ready > 1.5s: cast Whirlwind",
+    "gain_seed1": 0.0018217828680935355,
+    "gain_seed2": 0.0016875339125457245,
+    "candidates": 685,
+    "pass": 7
+   },
+   {
+    "round": 12,
+    "change": "threshold 45s -> 33.75s: if time left in the fight \u2264 45s: use every other cooldown when ready",
+    "gain_seed1": 0.002191234984741275,
+    "gain_seed2": 0.0017500400214169876,
+    "candidates": 702,
+    "pass": 7
    }
   ],
   "final": {
    "raid": {
-    "open winner": {
-     "before": 666.541408257461,
-     "after": 803.830573476443,
-     "base": 666.541408257461,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
     "opt-arms-2h-raid-raid-dps": {
-     "before": 659.4273478142934,
-     "after": 798.984526462155,
-     "base": 659.4273478142934,
+     "before": 725.2396653079478,
+     "after": 898.6192154993064,
+     "base": 725.2396653079478,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: DPS": {
-     "before": 617.9746867975151,
-     "after": 749.9021189239774,
-     "base": 617.9746867975151,
+     "before": 683.0796550188809,
+     "after": 843.4605450507884,
+     "base": 683.0796550188809,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "arms-2h-raid": {
-     "before": 653.0343801305181,
-     "after": 789.5468975517196,
-     "base": 653.0343801305181,
+     "before": 716.5066428748856,
+     "after": 887.039343968704,
+     "base": 716.5066428748856,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -373,6 +383,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 6
+  "passes": 7
  }
 }

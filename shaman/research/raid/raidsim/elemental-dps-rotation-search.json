@@ -137,40 +137,30 @@
  "raid": {
   "class": "shaman",
   "spec": "elemental-dps",
-  "date": "2026-10-03",
-  "commit": "40be98e",
+  "date": "2026-10-09",
+  "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/shaman/elemental/apls/forever.apl.json",
   "start": "ui\\specs\\shaman\\elemental\\apls\\forever.apl.json",
   "builds": [
    {
-    "label": "deep: Elemental (dummy)",
-    "talents": "5500301303113051-052-23305",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-bis.gear.json"
-   },
-   {
-    "label": "deep: Elemental (raid)",
-    "talents": "5500301302113151-052-32305",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-bis.gear.json"
-   },
-   {
-    "label": "deep: Hybrid Elemental/Enhancement (dummy)",
-    "talents": "550330131010304-055032201101002",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-hybrid-elemental-enhancement-bis.gear.json"
-   },
-   {
-    "label": "opt-elemental-dps-raid-dps",
-    "talents": "5500301303113051-052-05305"
+    "label": "elemental-raid-dps",
+    "talents": "550230130210304-255000001340002"
    },
    {
     "label": "sim preset: Elemental 31/6/14",
     "talents": "2505301300123051-0500001-053050001"
    },
    {
-    "label": "elemental-raid-dps",
-    "talents": "550230130210304-255000001340002"
+    "label": "opt-elemental-dps-raid-dps",
+    "talents": "5500301303113051-052-05305",
+    "protect_only": true
    }
+  ],
+  "tuned_on": [
+   "elemental-raid-dps",
+   "sim preset: Elemental 31/6/14"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -198,67 +188,48 @@
     "gain_seed2": 0.0017305263475695387,
     "candidates": 225,
     "pass": 2
+   },
+   {
+    "round": 4,
+    "change": "drop the condition: if mana \u2265 (time left in the fight \u00d7 35): cast Lightning Bolt",
+    "gain_seed1": 0.013075226432435638,
+    "gain_seed2": 0.014332926217863973,
+    "candidates": 346,
+    "pass": 8
    }
   ],
   "final": {
    "raid": {
-    "deep: Elemental (dummy)": {
-     "before": 553.8824232487998,
-     "after": 555.5623400904874,
-     "base": 553.8824232487998,
+    "elemental-raid-dps": {
+     "before": 517.2891141939169,
+     "after": 517.6519212560079,
+     "base": 517.2891141939169,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.00633719999975,
-     "oom_after": 0.00633719999975
-    },
-    "deep: Elemental (raid)": {
-     "before": 553.9456069424149,
-     "after": 555.5056586467806,
-     "base": 553.9456069424149,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.0066457999998,
-     "oom_after": 0.0066457999998
-    },
-    "deep: Hybrid Elemental/Enhancement (dummy)": {
-     "before": 554.6998444921827,
-     "after": 554.9423559203495,
-     "base": 554.6998444921827,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.0003996,
-     "oom_after": 0.0003996
-    },
-    "opt-elemental-dps-raid-dps": {
-     "before": 553.0329712963513,
-     "after": 553.8381255690363,
-     "base": 553.0329712963513,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.00564619999995,
-     "oom_after": 0.00564619999995
+     "oom_before": 0.0020136999980999992,
+     "oom_after": 0.0022586999980999996
     },
     "sim preset: Elemental 31/6/14": {
-     "before": 547.1472976452293,
-     "after": 548.897210309391,
-     "base": 547.1472976452293,
+     "before": 492.9450425597234,
+     "after": 503.32517615754125,
+     "base": 492.9450425597234,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.04253949999995,
-     "oom_after": 0.04253949999995
+     "oom_before": 0.05545640000000001,
+     "oom_after": 0.06865469999999999
     },
-    "elemental-raid-dps": {
-     "before": 554.917111747437,
-     "after": 555.0558608740997,
-     "base": 554.917111747437,
+    "opt-elemental-dps-raid-dps": {
+     "before": 508.6544558114406,
+     "after": 509.9553707758059,
+     "base": 508.6544558114406,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0002118999997,
-     "oom_after": 0.0002118999997
+     "oom_before": 0.009557999999999999,
+     "oom_after": 0.007951799999999998
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 7
+  "passes": 8
  }
 }

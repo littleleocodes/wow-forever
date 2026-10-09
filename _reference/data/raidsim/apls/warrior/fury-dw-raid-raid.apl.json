@@ -159,7 +159,7 @@
          },
          "rhs": {
           "const": {
-           "val": "20s"
+           "val": "30s"
           }
          }
         }
@@ -185,7 +185,8 @@
       "otherId": "OtherActionPotion"
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see fury-dw-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -435,26 +436,14 @@
   },
   {
    "action": {
-    "condition": {
-     "cmp": {
-      "op": "OpGt",
-      "lhs": {
-       "numberTargets": {}
-      },
-      "rhs": {
-       "const": {
-        "val": "1"
-       }
-      }
-     }
-    },
     "castSpell": {
      "spellId": {
       "spellId": 1680,
       "tag": 1
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see fury-dw-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -699,6 +688,50 @@
      }
     }
    }
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpEq",
+         "lhs": {
+          "numberTargets": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "1"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentRage": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "67.5"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 25286,
+      "tag": 1,
+      "rank": 8
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see fury-dw-raid-rotation-search.json)"
   },
   {
    "action": {

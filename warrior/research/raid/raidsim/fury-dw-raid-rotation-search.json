@@ -250,35 +250,35 @@
  "raid": {
   "class": "warrior",
   "spec": "fury-dw-raid",
-  "date": "2026-10-08",
-  "commit": "b0f0df3",
+  "date": "2026-10-09",
+  "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/warrior/dps/apls/dps_no_reck.apl.json",
   "start": "ui\\specs\\warrior\\dps\\apls\\dps_no_reck.apl.json",
   "builds": [
    {
-    "label": "open winner",
-    "talents": "30305013002-45053005102010501-2"
-   },
-   {
-    "label": "opt-fury-dw-raid-raid-dps",
-    "talents": "04305013102-25050035102210501",
-    "protect_only": true
+    "label": "fury-open-raid",
+    "talents": "04305013002-05053035102010501-2"
    },
    {
     "label": "sim preset: DPS",
-    "talents": "30305013-05553005150010501",
-    "protect_only": true
+    "talents": "30305013-05553005150010501"
    },
    {
     "label": "fury-dw-raid",
     "talents": "20305012-55053005152010501",
     "protect_only": true
+   },
+   {
+    "label": "opt-fury-dw-raid-raid-dps",
+    "talents": "04305013102-25050035102210501",
+    "protect_only": true
    }
   ],
   "tuned_on": [
-   "open winner"
+   "fury-open-raid",
+   "sim preset: DPS"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -378,41 +378,73 @@
     "gain_seed2": 0.0016554697843764732,
     "candidates": 686,
     "pass": 6
+   },
+   {
+    "round": 13,
+    "change": "insert before the filler: if number of targets = 1 and rage \u2265 45: cast Heroic Strike",
+    "gain_seed1": 0.012462621857962652,
+    "gain_seed2": 0.012608303342890315,
+    "candidates": 702,
+    "pass": 7
+   },
+   {
+    "round": 14,
+    "change": "threshold 45 -> 67.5: if number of targets = 1 and rage \u2265 45: cast Heroic Strike",
+    "gain_seed1": 0.009094284436773403,
+    "gain_seed2": 0.009343693331754555,
+    "candidates": 738,
+    "pass": 7
+   },
+   {
+    "round": 15,
+    "change": "threshold 20s -> 30s: if (time left in the fight \u2264 20s or time left in the fight \u2265 140s): cast Potion",
+    "gain_seed1": 0.003854758306649053,
+    "gain_seed2": 0.0036488014486497633,
+    "candidates": 738,
+    "pass": 7
+   },
+   {
+    "round": 16,
+    "change": "drop the condition: if number of targets > 1: cast Whirlwind",
+    "gain_seed1": 0.0031166381152509803,
+    "gain_seed2": 0.0031036690923431642,
+    "candidates": 742,
+    "pass": 7
    }
   ],
   "final": {
    "raid": {
-    "open winner": {
-     "before": 786.3923027034391,
-     "after": 841.846727165196,
-     "base": 786.3923027034391,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "opt-fury-dw-raid-raid-dps": {
-     "before": 748.3466401185815,
-     "after": 809.9141038333412,
-     "base": 748.3466401185815,
+    "fury-open-raid": {
+     "before": 843.8850200193172,
+     "after": 925.0897865710722,
+     "base": 843.8850200193172,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: DPS": {
-     "before": 741.9861391112053,
-     "after": 797.5091738220549,
-     "base": 741.9861391112053,
+     "before": 813.9292903099656,
+     "after": 885.4589673109614,
+     "base": 813.9292903099656,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "fury-dw-raid": {
-     "before": 749.0937658278784,
-     "after": 803.5083241359871,
-     "base": 749.0937658278784,
+     "before": 812.8547863613248,
+     "after": 884.9467119228199,
+     "base": 812.8547863613248,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "opt-fury-dw-raid-raid-dps": {
+     "before": 809.2958500640993,
+     "after": 885.9986044189441,
+     "base": 809.2958500640993,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -421,6 +453,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 6
+  "passes": 7
  }
 }

@@ -138,6 +138,16 @@
    "action": {
     "castSpell": {
      "spellId": {
+      "spellId": 20554
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see stormcaller-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
       "spellId": 1238300
      }
     }
@@ -146,45 +156,64 @@
   {
    "action": {
     "condition": {
-     "or": {
+     "and": {
       "vals": [
        {
-        "auraIsActive": {
-         "auraId": {
-          "spellId": 16246
-         }
+        "or": {
+         "vals": [
+          {
+           "auraIsActive": {
+            "auraId": {
+             "spellId": 16246
+            }
+           }
+          },
+          {
+           "cmp": {
+            "op": "OpGe",
+            "lhs": {
+             "numberTargets": {}
+            },
+            "rhs": {
+             "const": {
+              "val": "2"
+             }
+            }
+           }
+          },
+          {
+           "cmp": {
+            "op": "OpGe",
+            "lhs": {
+             "currentMana": {}
+            },
+            "rhs": {
+             "math": {
+              "op": "OpMul",
+              "lhs": {
+               "remainingTime": {}
+              },
+              "rhs": {
+               "const": {
+                "val": "100"
+               }
+              }
+             }
+            }
+           }
+          }
+         ]
         }
        },
        {
         "cmp": {
          "op": "OpGe",
          "lhs": {
-          "numberTargets": {}
+          "currentManaPercent": {}
          },
          "rhs": {
           "const": {
-           "val": "2"
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "currentMana": {}
-         },
-         "rhs": {
-          "math": {
-           "op": "OpMul",
-           "lhs": {
-            "remainingTime": {}
-           },
-           "rhs": {
-            "const": {
-             "val": "100"
-            }
-           }
+           "val": "60%"
           }
          }
         }
@@ -197,17 +226,19 @@
       "spellId": 10605
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see stormcaller-dps-rotation-search.json)"
   },
   {
    "action": {
     "castSpell": {
      "spellId": {
-      "spellId": 15208
+      "spellId": 15207,
+      "rank": 9
      }
     }
    },
-   "notes": "apl_opt 2026-10-07: changed or added by the rotation search (see stormcaller-dps-rotation-search.json)"
+   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see stormcaller-dps-rotation-search.json)"
   },
   {
    "action": {
