@@ -10,17 +10,17 @@
 
 ## How to play
 
-**Before the fight:** **Power Word: Fortitude** and **Inner Fire** up. **Power Word: Shield** on yourself before the pull.
+**Before the fight:** **Power Word: Fortitude** and **Inner Fire** up. **Power Word: Shield** on yourself before every pull: while it holds, damage does not push your **Smite** back. **Inner Focus** when it is ready, right before **Mind Blast** or **Smite** (that cast is free).
 
 **In the fight**, top to bottom:
 
 1. **Shadow Word: Pain** to pull.
-2. **Penance** and **Mind Blast** whenever ready.
+2. **Penance** and **Mind Blast** whenever they are ready.
 3. **Smite** in between while the mob has more than a third of its health and you have more than 30% mana; your wand otherwise.
 4. Skip **Holy Fire**: its long cast costs more than it deals while leveling.
-5. Hurt: **Renew**, **Flash Heal** below a third of your health; **Psychic Scream** if a mob is on you and you are low.
+5. Hurt: **Power Word: Shield** again below half your health, **Flash Heal** below a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%.
 
-**Between fights:** Drink only below 15% mana; **Renew** yourself instead of eating.
+**Between fights:** Drink only below 15% mana; **Renew** yourself after the fight and eat only if you are still below 80% health.
 
 ## Why this rotation
 

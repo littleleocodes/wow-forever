@@ -6,27 +6,27 @@
 
 ## How to heal
 
-The healer lab's Holy priest keeps the tank up with **Greater Heal** downranked to the damage he has taken, uses **Prayer of Healing** when two or more of the group are hurt, and keeps **Power Word: Shield**, **Penance** and **Flash Heal** for emergencies. Mana is the limit: in the lab's five-minute fight this build spends 41 seconds out of mana.
+The healer lab's Holy priest heals the tank with **Penance** every time it is ready and with **Greater Heal** downranked to the damage he has taken, uses **Prayer of Healing** when two or more of the group are hurt, and keeps **Power Word: Shield** and **Flash Heal** for emergencies. Mana is the limit: even so, the lab's Holy priest spends part of its five-minute fight out of mana.
 
 **Why it works**
 
-- **Greater Heal** is two thirds of your healing. Start it on the tank when he is missing about half of what it heals and a boss swing is coming, at the lowest rank that covers what he is missing: the rest of a bigger rank would be overheal.
+- **Penance** goes on the tank whenever it comes off cooldown and he is missing most of what it heals. Since 2026-10-08 it heals more per mana than **Heal** and **Greater Heal**, and the healer lab measured about 6% more capacity than keeping it for emergencies.
+- **Greater Heal** is still your biggest heal. Start it on the tank when he is missing about half of what it heals and a boss swing is coming, at the lowest rank that covers what he is missing: the rest of a bigger rank would be overheal.
 - **Prayer of Healing** when two or more of your group are below 70% health; the lab measured that about 3% better than waiting for three. In Forever it heals the target and the target's party, so aim it at the group that is hurt.
 - **Renew** goes on the tank once he is missing a fifth of his health (measured about 2% better than at a tenth), and on a hurt raid member before a direct heal. It can crit since the beta's 2026-10-08 build.
 - **Inner Focus** goes on a full-rank **Greater Heal** when the tank is missing more than half of one: the heal is free and 25% more likely to crit, and a critical heal gives the tank 25% more armor for 15 seconds through **Inspiration**.
-- In an emergency (anyone below 35% health): **Power Word: Shield** on the tank if Weakened Soul is gone (**Soul Warding** removes the shield's 4-second cooldown), then **Penance**, then a full-rank **Flash Heal**.
-- **Meditation** is your most valuable talent in the lab, worth 24% of your healing capacity: it keeps half your regeneration going while you cast. Take a mana potion once you are below about two thirds of your mana.
+- In an emergency (anyone below 35% health): **Power Word: Shield** on the tank if Weakened Soul is gone (**Soul Warding** removes the shield's 4-second cooldown), then **Penance** if it is ready, then a full-rank **Flash Heal**.
 
 **Caveats**
 
-- This build has no **Prayer of Mending**: it needs 31 points in Holy, and the lab measured the draft that took it (20/31/0) 4% below this one.
-- **Penance** changed on 2026-10-08: Blizzard made it cost less mana per point healed than **Heal** and **Greater Heal**. The lab's numbers predate that and use it only in emergencies (3% of your healing); casting it on cooldown on the tank may now be better, but that is not measured.
+- Mana runs out before healing power does: **Meditation** keeps half your regeneration going while you cast and was your most valuable talent in the lab's 2026-10-03 run. Take a mana potion once you are below about two thirds of your mana.
+- This build has no **Prayer of Mending**: it needs 31 points in Holy, and the lab measured the draft that took it (20/31/0) 4% below this one in its 2026-10-03 run.
 - Ranks far below your level now get less from your healing power (a beta change; the formula is our assumption). In our model **Greater Heal** ranks 3 to 5 lose nothing and rank 1 about 15%, so downranking within **Greater Heal** still pays.
-- The lab is one healer keeping a tank and four players alive for five minutes. It does not model movement, dispels, other healers or **Litany of Light**.
+- The lab is one healer keeping a tank and four players alive for five minutes. It does not model movement, dispels or other healers.
 
 **When to change it**
 
-- When you and another player are both hurt, **Binding Heal** heals both with one cast; the lab only uses it as a **Flash Heal**.
+- When you and another player are both hurt, **Binding Heal** heals both with one cast; the lab never casts it.
 - **Litany of Light** gives back 10% of a heal's base cost when it differs from your previous heal, so when two heals fit equally well, alternate them.
 
 ## The numbers

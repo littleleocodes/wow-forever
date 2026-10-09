@@ -10,18 +10,18 @@
 
 ## How to play
 
-**Before the fight:** **Power Word: Fortitude** and **Inner Fire** up; **Shadowform** once you have it. **Power Word: Shield** on yourself before the pull.
+**Before the fight:** **Power Word: Fortitude** and **Inner Fire** up; **Shadowform** once you have it. **Power Word: Shield** only when you start a pull below half health; **Inner Focus** when it is ready, right before a **Mind Blast** (that cast is free).
 
 **In the fight**, top to bottom:
 
-1. **Mind Blast** to pull.
-2. **Shadow Word: Pain**.
-3. **Vampiric Embrace** and **Devouring Plague** (they heal you).
-4. **Mind Blast** whenever ready, **Mind Flay** in between (it slows the mob).
-5. **Shadow Word: Death** when the mob is below 20% health.
-6. Finish a nearly dead mob with your wand; **Psychic Scream** if your health gets low.
+1. Pull with the instants: **Vampiric Embrace** when it is ready, then **Shadow Word: Pain**.
+2. **Mind Blast** whenever it is ready, **Mind Flay** in between (it slows the mob while you channel).
+3. **Devouring Plague** when you are below 80% health and the mob above half: it heals you for its damage.
+4. **Shadow Word: Death** when one cast will kill the mob, and below 20% health once you have **Early Demise**.
+5. Finish a mob with a hit or two left with your wand; **Psychic Scream** if a mob is on you and you are below 40% health.
+6. Below a third of your health outside **Shadowform**: **Flash Heal**.
 
-**Between fights:** Drink below a third of your mana, eat below two thirds of your health (**Renew** outside Shadowform).
+**Between fights:** Drink only below 15% mana, eat below two thirds of your health (**Renew** yourself instead outside **Shadowform**).
 
 ## Why this rotation
 
@@ -29,7 +29,7 @@ Shadow levels on a short loop: your opening spells land while the mob runs in, *
 
 **Why it works**
 
-- Pull from as far away as you can (**Shadow Reach** adds 20% range): **Mind Blast** is your biggest hit and **Shadow Word: Pain** ticks for the whole fight. The fight lab casts the instants first (**Vampiric Embrace** when it is ready, then **Shadow Word: Pain**) and **Mind Blast** right after: the same spells in another order.
+- Open from as far away as you can (**Shadow Reach** adds 20% range, **Mind Flay**'s included): the fight lab casts the instants first (**Vampiric Embrace** when it is ready, then **Shadow Word: Pain**) and **Mind Blast**, your biggest hit, right after, so all three land while the mob walks in.
 - **Vampiric Embrace** and **Devouring Plague** are your heals once **Shadowform** stops real heals. The fight lab casts **Vampiric Embrace** whenever it is ready (once a minute) and **Devouring Plague** only when you are below 80% health and the mob above half, so the plague is a heal here, not damage.
 - **Mind Flay** is your filler and your biggest damage share: it slows the mob by 50% while you channel (20% once you take **Improved Mind Flay**), so a mob walking in reaches you later. **Mind Blast** goes out whenever it is ready.
 - From 32, **Shadow Word: Death** finishes. The fight lab casts it when one cast will kill the mob, so its backlash (10% of your health when the target survives) never lands, and below 20% health once you have **Early Demise**. From 40 it does about a fifth of your damage and the wand is rarely needed.
@@ -38,7 +38,7 @@ Shadow levels on a short loop: your opening spells land while the mob runs in, *
 
 **Caveats**
 
-- **Shadowform** blocks your heals: from 40 your only healing in a fight is **Vampiric Embrace** and **Devouring Plague**, and between fights you eat (below about two thirds of your health) instead of casting **Renew**.
+- **Shadowform** blocks your heals but cuts the physical damage you take by 15%: from 40 your only healing in a fight is **Vampiric Embrace** and **Devouring Plague**, and between fights you eat (below about two thirds of your health) instead of casting **Renew**.
 - Before 20 there is no **Mind Flay**: you use **Mind Blast**, **Shadow Word: Pain** and the wand. The fight lab never casts **Smite** as Shadow; it measured leveling slightly faster without it.
 - Two or three mobs at once: put **Shadow Word: Pain** on each and use **Psychic Scream** (below 40% of your health with a mob on you) to buy time. The no-shield rule was tuned on single pulls.
 

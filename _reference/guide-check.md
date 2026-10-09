@@ -42,13 +42,13 @@
 | paladin | Holy | leveling | 2026-10-09 | leveling:holy-leveling fba5fddbb6f8, leveling:prot-leveling b67ce1361aef, leveling:ret-dps 505122d96860 |
 | paladin | Hybrid Protection/Retribution | leveling | 2026-10-09 | leveling:holy-leveling fba5fddbb6f8, leveling:prot-leveling b67ce1361aef, leveling:ret-dps 505122d96860 |
 | priest | Shadow | raid | 2026-10-09 | shadow-dps d5c2e2e6d230 |
-| priest | Shadow | leveling | 2026-10-09 | leveling:discipline-leveling d9289bf11351, leveling:holy-leveling c0c15e5f7363, leveling:shadow-dps 76f010c04460 |
+| priest | Shadow | leveling | 2026-10-09 | leveling:discipline-leveling 437734494b34, leveling:holy-leveling 107ea9aee865, leveling:shadow-dps 17e91dc95a88 |
 | priest | Hybrid Discipline/Holy | raid | 2026-10-09 | smite-dps 718af06ee397 |
-| priest | Hybrid Discipline/Holy | leveling | 2026-10-09 | leveling:discipline-leveling d9289bf11351, leveling:holy-leveling c0c15e5f7363, leveling:shadow-dps 76f010c04460 |
-| priest | Holy | raid | 2026-10-09 | healer-policy f69d2fdba8f8 |
-| priest | Holy | leveling | 2026-10-09 | leveling:discipline-leveling d9289bf11351, leveling:holy-leveling c0c15e5f7363, leveling:shadow-dps 76f010c04460 |
-| priest | Discipline | raid | 2026-10-09 | healer-policy f69d2fdba8f8 |
-| priest | Discipline | leveling | 2026-10-09 | leveling:discipline-leveling d9289bf11351, leveling:holy-leveling c0c15e5f7363, leveling:shadow-dps 76f010c04460 |
+| priest | Hybrid Discipline/Holy | leveling | 2026-10-09 | leveling:discipline-leveling 437734494b34, leveling:holy-leveling 107ea9aee865, leveling:shadow-dps 17e91dc95a88 |
+| priest | Holy | raid | - | - |
+| priest | Holy | leveling | 2026-10-09 | leveling:discipline-leveling 437734494b34, leveling:holy-leveling 107ea9aee865, leveling:shadow-dps 17e91dc95a88 |
+| priest | Discipline | raid | - | - |
+| priest | Discipline | leveling | 2026-10-09 | leveling:discipline-leveling 437734494b34, leveling:holy-leveling 107ea9aee865, leveling:shadow-dps 17e91dc95a88 |
 | rogue | Combat | raid | 2026-10-09 | combat-daggers-raid 99ffbf54f283, combat-swords-raid 0f13285f52c7 |
 | rogue | Combat | leveling | 2026-10-09 | leveling:combat-daggers-raid e9b7f8dbecaf, leveling:combat-swords-raid a47d41b0bf59, leveling:subtlety-leveling 6745eb765e3c |
 | rogue | Assassination | raid | 2026-10-09 | assassination-raid d157d5eb17a2 |

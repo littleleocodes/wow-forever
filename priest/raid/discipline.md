@@ -6,21 +6,21 @@
 
 ## How to heal
 
-The healer lab plays Discipline with the same heal choices as Holy, plus **Power Infusion** on cooldown: downranked **Greater Heal** on the tank, **Prayer of Healing** for the group, and **Power Word: Shield**, **Penance** and **Flash Heal** for emergencies. Your shield engine, **Renewed Hope** and **Divine Aegis**, is not in the lab, so play it on top.
+The healer lab plays Discipline with Holy's heal choices plus **Power Infusion** on cooldown: **Penance** on the tank whenever it is ready, downranked **Greater Heal** on the tank, **Prayer of Healing** for the group, and **Power Word: Shield** and **Flash Heal** for emergencies. Since 2026-10-09 it also counts **Renewed Hope** and **Divine Aegis**.
 
 **Why it works**
 
-- **Greater Heal** on the tank is two thirds of your healing (2.5 seconds with **Divine Fury**). Start it when he is missing about half of what it heals and a boss swing is coming, at the lowest rank that covers the damage.
-- In an emergency (anyone below 35% health): **Power Word: Shield** on the tank if Weakened Soul is gone, then **Penance**, then a full-rank **Flash Heal**. **Soul Warding** removes the shield's 4-second cooldown and cuts its cost by 15%.
+- **Penance** goes on the tank whenever it comes off cooldown and he is missing most of what it heals. Since 2026-10-08 it heals more per mana than **Heal** and **Greater Heal**, and the healer lab measured about 4% more capacity than keeping it for emergencies.
+- **Greater Heal** on the tank is your biggest heal (2.5 seconds with **Divine Fury**). Start it when he is missing about half of what it heals and a boss swing is coming, at the lowest rank that covers the damage.
+- In an emergency (anyone below 35% health): **Power Word: Shield** on the tank if Weakened Soul is gone, then **Penance** if it is ready, then a full-rank **Flash Heal**. **Soul Warding** removes the shield's 4-second cooldown and cuts its cost by 15%.
 - After a shield, heal the tank directly: with **Renewed Hope** your **Flash Heal**, **Greater Heal**, **Binding Heal** and **Penance** crit 10% more often on a target with Weakened Soul, and each cuts 5 seconds off it, so the next shield comes sooner. Each crit also leaves an absorb of 15% of the heal (**Divine Aegis**) and 25% more armor for 15 seconds (**Inspiration**).
-- **Power Infusion**: the lab casts it on yourself whenever it is ready and you have more than 20% mana, for 20% more healing over 15 seconds every 3 minutes. If you know when the boss hits hardest, saving it for that is your call; not measured.
+- **Power Infusion**: the lab casts it on yourself whenever it is ready and you have more than 20% mana: 20% more healing for 15 seconds every 3 minutes, for 20% of your base mana and a global cooldown. If you know when the boss hits hardest, saving it for that is your call; not measured.
 - **Inner Focus** on a full-rank **Greater Heal** when the tank is missing more than half of one; **Prayer of Healing** when two or more of the group drop below 70% (measured about 3% better than waiting for three); **Renew** on the tank once he is missing a fifth of his health.
-- Mana runs out first: in the lab's five-minute fight you spend 46 seconds dry. **Meditation** keeps half your regeneration going while you cast; take a mana potion below about two thirds of your mana.
 
 **Caveats**
 
-- The lab does not model **Divine Aegis** or **Renewed Hope**, so Discipline's lower capacity (0.56 against Holy's 0.62) leaves out part of what the spec does.
-- **Penance** changed on 2026-10-08: Blizzard made it cost less mana per point healed than **Heal** and **Greater Heal**. The lab's numbers predate that and use it only in emergencies; casting it on cooldown on the tank may now be better, but that is not measured.
+- Mana runs out first: the lab's Discipline priest spends about 45 seconds of its five-minute fight dry. **Meditation** keeps half your regeneration going while you cast; take a mana potion below about two thirds of your mana.
+- The lab shields only in emergencies: shielding the tank every time Weakened Soul ends measured slightly worse there, because the shields cost mana the fight runs short of. With mana to spare, extra shields feed **Renewed Hope**; the lab did not find that.
 - Ranks far below your level now get less from your healing power (a beta change; the formula is our assumption). In our model **Greater Heal** ranks 3 to 5 lose nothing, so downranking within **Greater Heal** still pays.
 - This build gives up **Spiritual Guidance**, **Spiritual Healing** and **Prayer of Mending** for the Discipline talents.
 

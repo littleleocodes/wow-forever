@@ -1,13 +1,14 @@
 """Priest module for the fight lab (Shadow leveling).
 
 Spell ranks (damage, periodic damage, heals, absorbs, cost, cast, cooldown, coefficients) are read from
-`_reference/data/forever-spells/priest.json` (beta client build 1.60.1.70009); talent numbers from each rank's tooltip in
+`_reference/data/forever-spells/priest.json` (the beta client build named in that file); talent numbers from each rank's tooltip in
 `_reference/data/forever-talents/priest.json`. What a talent *does* is coded here per talent; the numbers are the client's.
 
 Playstyle `shadow-dps` (the scorer's model id): Power Word: Shield and Inner Fire before the pull, Mind Blast at range,
 Shadow Word: Pain, Mind Flay channels (slowing the mob) and Mind Blast on cooldown, Vampiric Embrace and Devouring Plague
-for self-healing, Shadow Word: Death as an execute, wand to finish without overkill; Psychic Scream and Desperate Prayer
-when health runs low; Renew between fights until Shadowform (which forbids heals) replaces it with eating.
+for self-healing, Shadow Word: Death as an execute, wand to finish without overkill; Psychic Scream when health runs low;
+Renew between fights until Shadowform (which forbids heals) replaces it with eating. Forever's racial priest spells (Desperate
+Prayer is a Dwarf's) are cast only for their race (RACIAL_SPELLS, PriestModule.RACE; 2026-10-09: none, the pages are race-neutral).
 
 Playstyles `holy-leveling` and `discipline-leveling` (any spec string starting with "holy" or "discipline"; 2026-09-30): the
 healing trees leveling on Smite. One priority list for both (`decide_holy`); the talents make the difference: shield before the
@@ -15,6 +16,7 @@ pull, Holy Fire as the opener, Shadow Word: Pain, Penance on cooldown (Forever's
 Smite as the filler, wand to finish; Power Word: Shield again, Renew and Flash Heal when hurt. Talent effects only these playstyles
 apply: see HOLY_MECHANICS (the Shadow playstyle keeps MECHANICS and its behaviour as it was).
 """
+import copy
 import json
 import pathlib
 import re
@@ -46,6 +48,11 @@ CHANNEL_TICKS = {"Mind Flay": 3, "Starshards": 6, "Penance": 3}
 DOT_TICKS = {"Holy Fire": 5}   # Holy Fire's burn ticks every 2 s for 10 s (the tooltip gives only the total and the duration)
 PENANCE = re.compile(r"causing (\d[\d,]*) Holy damage to an enemy")
 SELF_ONLY = {"Renew", "Flash Heal", "Lesser Heal", "Heal", "Greater Heal", "Power Word: Shield", "Desperate Prayer", "Binding Heal"}
+# Forever's racial priest spells (talentsforever.com's 70291 export, class_racials; Blizzard's 2026-10-08 notes list Dark Sacrifice under
+# Undead). The player pages are race-neutral, so a racial spell is cast only when PriestModule.RACE names its race (default: none).
+RACIAL_SPELLS = {"Divine Grace": "Human", "Feedback": "Human", "Chastise": "Dwarf", "Desperate Prayer": "Dwarf", "Elune's Grace": "Night Elf",
+                 "Starshards": "Night Elf", "Confounding Flash": "Gnome", "Contingency Plan": "Gnome", "Dark Sacrifice": "Undead",
+                 "Touch of Weakness": "Undead", "Hex of Weakness": "Troll", "Shadowguard": "Troll"}
 
 
 def _num(s):
@@ -120,6 +127,10 @@ def load_spellbook():
 
 
 BOOK = load_spellbook()
+# Shadowform's "reducing Physical damage taken by you by 15%" (the spell's own tooltip; applied through armor_bonus below)
+_SF = (BOOK.get("Shadowform") or [None])[0]
+_SF_PHYS = re.search(r"[Pp]hysical damage taken by you by (\d+)%", getattr(_SF, "text", "") or "")
+SHADOWFORM_PHYSICAL_CUT = float(_SF_PHYS.group(1)) / 100 if _SF_PHYS else 0.0
 
 
 def talent_numbers():
@@ -136,12 +147,12 @@ MECHANICS = {
     "Shadow Focus": "+1% Shadow hit per rank",
     "Blackout": "2% per rank: a Shadow damage hit or tick stuns the mob 3s",
     "Spirit Tap": "20%/rank chance on a kill: +100% Spirit for 15s and 50% regen while casting",
-    "Improved Shadow Word: Pain": "+3s (one tick) per rank on Shadow Word: Pain",
-    "Shadow Reach": "+10%/rank Shadow range: longer pulls",
+    "Improved Shadow Word: Pain": "+3s (one tick) per rank on Shadow Word: Pain (the tooltip's seconds)",
+    "Shadow Reach": "+10%/rank Shadow range: longer pulls and a longer Mind Flay reach",
     "Improved Mind Blast": "-0.5s/rank Mind Blast cooldown",
     "Improved Psychic Scream": "-2s/rank Psychic Scream cooldown",
     "Mind Flay": "unlocks Mind Flay (3s channel, 3 ticks, 50% slow)",
-    "Improved Mind Flay": "+10%/rank Mind Flay damage and +5 yd range; the slow weakens to 35/20%",
+    "Improved Mind Flay": "+10%/rank Mind Flay damage and +5 yd range; the slow weakens to 35/20% (tooltip numbers)",
     "Vampiric Embrace": "20% of Shadow damage dealt heals you for 30s (1 min cooldown, 40 mana)",
     "Shadow Weaving": "33%/rank chance per Shadow hit: +2% Shadow damage per stack (5 stacks, 15s)",
     "Devouring Contagion": "-25%/rank Devouring Plague mana cost",
@@ -172,12 +183,12 @@ MECHANICS = {
     "Spiritual Healing": "+3.3%/rank healing",
     "Improved Healing": "-5%/rank mana on Heal / Greater Heal",
     "Searing Light": "+2.5%/rank Holy damage",
-    "Spell Warding": "-2%/rank spell damage taken (no caster mobs here)",
+    "Spell Warding": "-2%/rank spell damage taken: not modelled (caster bolts and melee share the engine's one damage-taken hook)",
 }
 # Talent effects the Holy / Discipline playstyles add (spec strings starting with "holy" or "discipline"); shadow-dps keeps MECHANICS.
 HOLY_MECHANICS = {
-    "Penance": "unlocks Penance: 3 Holy hits over a 2 s channel (tooltip: N Holy damage instantly and every 1 sec for 2 sec, 28.5% of spell "
-               "power per hit), 12 s cooldown; the strongest rank learned is cast (the beta's rank 4 hits for less than rank 3)",
+    "Penance": "unlocks Penance: 3 Holy hits over a 2 s channel (tooltip: N Holy damage instantly and every 1 sec for 2 sec, the tooltip's "
+               "spell power per hit), 12 s cooldown; the learned rank with the most damage is cast",
     "Power in Light": "+2%/rank Smite and Penance damage while your Holy Fire burns on the mob",
     "Power Infusion": "+20% spell damage and healing for 15 s, cast on yourself as a pull starts (3 min cooldown, 20% of base mana)",
     "Holy Reach": "+10%/rank Smite and Holy Fire range: longer pulls",
@@ -197,7 +208,7 @@ RENEWED_HOPE_HEALS = ("Flash Heal", "Binding Heal", "Lesser Heal", "Heal", "Grea
 HOLY_DESCRIPTION = ("Holy / Discipline leveling (spec strings holy-leveling, discipline-leveling): Power Word: Shield, Inner Fire and Power "
                     "Infusion before the pull, Holy Fire as the opener at 30 yd, Shadow Word: Pain, Penance and Mind Blast on cooldown, Smite as the "
                     "filler (in melee too: the shield stops pushback while it holds), wand to finish without overkill; Power Word: Shield again, "
-                    "Renew and Flash Heal when hurt, Psychic Scream and Desperate Prayer when health runs low. Between fights: Renew, conjured "
+                    "Renew and Flash Heal when hurt, Psychic Scream when health runs low. Between fights: Renew, conjured "
                     "water below 35% mana, food below 65% health.")
 FIT = {
     "Mind Flay": ("replace", [{"channel": "dmg", "scope": ["type:spell"], "values": [0.15]}]),
@@ -219,9 +230,10 @@ KEY_TALENTS = ["Mind Flay", "Shadowform", "Vampiric Embrace"]
 DESCRIPTION = ("Single-target leveling fights against normal mobs of your level: Power Word: Shield and Inner Fire before the pull, Mind Blast at 30 yd, "
                "Shadow Word: Pain, Mind Flay channels (50% slow) and Mind Blast on cooldown while the mob walks in and once it is on you (the shield "
                "stops pushback while it holds), Vampiric Embrace and Devouring Plague heal, Shadow Word: Death below 20%, wand to finish without overkill; "
-               "Psychic Scream and Desperate Prayer when health runs low. Between fights: 2 s loot, 6 s travel, Renew (not in Shadowform), conjured water "
+               "Psychic Scream when health runs low. Between fights: 2 s loot, 6 s travel, Renew (not in Shadowform), conjured water "
                "below 35% mana, food below 65% health; a death costs 90 s.")
-NOT_MODELLED = "runners, adds, Mind Soothe, Fade, Holy Nova, Penance, Prayer of Mending, Power Infusion, gear upgrades within a level bracket."
+NOT_MODELLED = ("runners, adds, Mind Soothe, Fade, Holy Nova, Penance, Prayer of Mending, Power Infusion, gear upgrades within a level bracket; "
+                "racial priest spells (Desperate Prayer is a Dwarf's: off on the race-neutral pages).")
 # rebuild.py: which scorer model, hand draft and optimizer build the pipeline calibrates, races and reports for this class
 PIPELINE = {"variants": [{'spec': 'shadow-dps', 'opt': 'opt-shadow-dps-leveling-aoe', 'tag': 'aoe', 'profile': 'leveling-aoe', 'lookahead': 16, 'sets': ['MOBS_PER_PULL=3'], 'levels': '30,40,50,60', 'calibrate_levels': '40,60', 'label': 'AoE grinding, 3 mobs per pull'}], "spec": "shadow-dps", "hand": "leveling-shadow", "opt": "opt-shadow-dps-leveling-st", "tag": "shadow", "lookahead": 16,
             "levels": "20,30,40,50,60", "calibrate_levels": "30,60"}
@@ -233,6 +245,7 @@ class PriestModule(BaseModule):
     WAND_BELOW = 0.0      # wand instead of Mind Flay when mana is below this fraction (APL knob, tested in the sim)
     SHIELD_BELOW = 0.0    # Power Word: Shield before the pull only when health is below this fraction (0 = always)
     ROTATION_KNOBS = {"WAND_BELOW": [0.0, 0.1, 0.2, 0.3], "SHIELD_BELOW": [0.0, 0.5, 0.8]}   # tuned by rotation_opt.py
+    RACE = None           # racial priest spells (RACIAL_SPELLS) only for this race; None = race-neutral (the player pages)
 
     AOE = {'direct': ['Holy Nova'], 'dots': ['Shadow Word: Pain'], 'min_near': 2}
 
@@ -243,12 +256,22 @@ class PriestModule(BaseModule):
         self.gear = gear
         self.holy = spec.startswith(("holy", "discipline"))
         self.book = {name: self.rank_at(name) for name in BOOK}
-        if self.holy and self.book.get("Penance") is not None:   # the strongest learned rank (beta: rank 4 hits for less than rank 3)
+        if self.holy and self.book.get("Penance") is not None:   # the learned rank with the most damage (an earlier beta's rank 4 hit for less)
             self.book["Penance"] = max((s for s in BOOK["Penance"] if s.level <= level), key=lambda s: (s.dot, s.level))
         self.spells = {n: s for n, s in self.book.items() if s is not None}
         for tname, sname in TALENT_SPELLS.items():
             if not self.t.get(tname):
                 self.spells.pop(sname, None)
+        for sname, race in RACIAL_SPELLS.items():   # race-neutral by default: Desperate Prayer and the other racial spells only for their race
+            if race != self.RACE:
+                self.spells.pop(sname, None)
+        swp, extra = self.spells.get("Shadow Word: Pain"), self.tv("Improved Shadow Word: Pain", 0)
+        if swp is not None and extra > 0 and swp.dot_ticks:   # Improved Shadow Word: Pain: the tooltip's seconds, one more tick per 3 s
+            every = swp.dot_dur / swp.dot_ticks
+            add = int(round(extra / every))
+            s = copy.copy(swp)   # a copy: the shared BOOK spell stays as the client lists it
+            s.dot, s.dot_dur, s.dot_ticks = swp.dot * (swp.dot_ticks + add) / swp.dot_ticks, swp.dot_dur + add * every, swp.dot_ticks + add
+            self.spells["Shadow Word: Pain"] = s
         self._fight = None
         self._base_mana = 0.0
         self.armor_spell_used = "Inner Fire" if "Inner Fire" in self.spells else "none"
@@ -415,12 +438,30 @@ class PriestModule(BaseModule):
     def chill_duration_bonus(self):
         return 0.0
 
+    def chill_extra_slow(self):
+        """Improved Mind Flay trades Mind Flay's 50% slow for the tooltip's 35% / 20%; Mind Flay is the priest's only slow."""
+        flay = self.spells.get("Mind Flay")
+        if self.rank("Improved Mind Flay") and flay is not None and flay.chill > 0:
+            return self.tv("Improved Mind Flay", 2) / 100 - flay.chill
+        return 0.0
+
+    def flay_range(self, flay):
+        """Mind Flay's reach: the spell's 20 yd, Shadow Reach's percentage (offensive Shadow spells), Improved Mind Flay's yards."""
+        return flay.range * (1 + self.tv("Shadow Reach", 0) / 100) + self.tv("Improved Mind Flay", 1)
+
     def armor_bonus(self):
         f = self._fight
         if f is None:
             return 0.0
         b = f.p.buffs.get("Inner Fire")
-        return self.inner_fire_armor if b and b.get("charges", 0) > 0 else 0.0
+        bonus = self.inner_fire_armor if b and b.get("charges", 0) > 0 else 0.0
+        if SHADOWFORM_PHYSICAL_CUT > 0 and self.in_shadowform():
+            # Shadowform: Physical damage taken -15%. The engine's only physical-only hook is armor (tables.armor_mitigation: A / (A + K),
+            # K = 400 + 85 x the attacker's level), so the cut becomes the extra armor B that lowers every melee hit by exactly that share:
+            # K / (A + B + K) = (1 - r) K / (A + K)  =>  B = (A + K) r / (1 - r). Caster bolts (spell damage) are not touched.
+            r = SHADOWFORM_PHYSICAL_CUT
+            bonus += (f.p.armor + bonus + 400 + 85 * f.m.level) * r / (1 - r)
+        return bonus
 
     def wand_damage(self):
         return wand_dps(self.level) * WAND_SPEED * (1 + self.tv("Wand Specialization", 0) / 100)
@@ -611,7 +652,7 @@ class PriestModule(BaseModule):
             return swd
         if blast and can(blast):
             return blast
-        if flay and can(flay) and hp > wand_hit * 3 and m.dist <= flay.range + 5.0 * self.rank("Improved Mind Flay") and p.mana >= self.WAND_BELOW * p.mana_max:
+        if flay and can(flay) and hp > wand_hit * 3 and m.dist <= self.flay_range(flay) and p.mana >= self.WAND_BELOW * p.mana_max:
             return flay
         if smite and can(smite) and not in_melee and hp > avg(smite):
             return smite
