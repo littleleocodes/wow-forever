@@ -324,7 +324,15 @@ Each class folder now opens with player pages and keeps the research below:
   `deep-runs/sweep.log`). **Resume after any stop:** run `bash _reference/data/deep-runs/sweep_70291.sh` again: each open-search half
   starts fresh only once (marker `deep-runs/fresh-70291-<class>-<half>.started`), each phase is skipped once `deep-runs/sweep-p<N>.done`
   exists. Also new: weapon and stance variant builds (`spec_modes.RAID_ENTRY_VARIANT`), the fight-variety check
-  (`raidsim/fight_variety.py`, bench `numTargets`, `foreverbench-variety.exe` until the next bench rebuild), the runner's `--write`.
+  (`raidsim/fight_variety.py`, bench `numTargets`), the runner's `--write`.
+  **Pet data patched (2026-10-08 23:2x-23:3x):** a research pass found the demon percentages in the client's own UI (build 70291:
+  Camelot/PaperDollFrame.lua WARLOCK_PET_BONUS, GlobalStrings) and confirmed the hunter pet shares there; forum logs and the Faster
+  Attack passives show Forever does not normalize pet damage by attack speed. Patched (`patches/README.md`): `demon_scaling.go`
+  (demon-keeping warlocks +3.6-4.2%, full raid) and `foreverPetHitSpeed` (hunters with a pet +3.0-3.9%); the simulator rebuilt
+  (`setup.py --rebuild`; the main bench has `numTargets` now, `foreverbench-variety.exe` deleted). The re-baseline was stopped at
+  the mage's Arcane rotation and restarted at 23:31 with `apl_opt --skip-commit 2ce8265` (Frost and Fire kept). The sweep's P4 now
+  runs ml_pipeline's targets,gear,spells,talents,final (the final step needs the talents step's winner; it had listed
+  targets,gear,final only). Raid spec pages got the weapon and stance line (`render_modes.variant_lines`).
   **Racials (2026-10-08 05:2x):** the simulator applies more racials in Forever than Classic (Tauren +1% hit, Night Elf's Elune's Light
   +10% crit, Berserking, Blood Fury, weapon specializations), and the generic cooldown line casts the on-use ones, so stripping rotation
   lines would not remove them. Patch `patches/forever/sim/core/no_racials.go` (+ an edits.json insertion in racials.go) switches all of them
