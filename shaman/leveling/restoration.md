@@ -48,6 +48,8 @@ You level with the raid healer's talents in the fastest order and play a simple 
 - A caster mob that stays back: **Earth Shock** interrupts it and locks that school for 2 seconds, which brings it to you.
 - A mob that flees at low health: **Earth Shock** finishes it, or **Frost Shock** slows it by 50% (both share the shock cooldown).
 
+*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

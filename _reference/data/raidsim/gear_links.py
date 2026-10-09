@@ -61,6 +61,18 @@ def professions(repo):
     return {int(n): split(name) for name, n in re.findall(r"([A-Za-z]+) = ([0-9]+);", m.group(1) if m else "")}
 
 
+
+def clean(name):
+    """A database name cut at leaked source markup (2026-10-09: an NPC read 'Lord Valthalak"].." - "..format(AL["Tier %s Sets', an
+    AtlasLoot Lua fragment in the simulator's database)."""
+    if not name:
+        return name
+    for mark in ('"', "..", "[", "%s", "|c"):
+        k = name.find(mark)
+        if k > 0:
+            name = name[:k]
+    return name.strip(" -,")
+
 class DB:
     """The simulator's item database (assets/database/db.json): items, enchants, zones and bosses."""
 
@@ -81,11 +93,11 @@ class DB:
                 x = s["drop"]
                 npc = self.npcs.get(x.get("npcId")) or {}
                 zone = self.zones.get(x.get("zoneId") or npc.get("zoneId"))
-                return ", ".join(v for v in (npc.get("name"), zone) if v) or "world drop"
+                return ", ".join(v for v in (clean(npc.get("name")), clean(zone)) if v) or "world drop"
             if "crafted" in s:
                 return self.prof.get(s["crafted"].get("profession"), "crafted")
             if "quest" in s:
-                return "quest: " + s["quest"].get("name", "?")
+                return "quest: " + (clean(s["quest"].get("name")) or "?")
             if "soldBy" in s:
                 return "sold by " + s["soldBy"].get("npcName", "a vendor")
         return ""
@@ -137,7 +149,12 @@ def sim_links(r, repo, apiv):
         if not (w and g):
             continue
         e = R.SPECS[cls][s["entry"]]
-        b = {"label": k, "talents": R.talents_string(trees, MB.flat_of(w["allocation"])), "gear_json": json.load(open(resolve(g), encoding="utf-8"))}
+        try:
+            tal = R.talents_string(trees, MB.flat_of(w["allocation"]))
+        except SystemExit as err:   # a record searched on older trees (2026-10-09: King of the Jungle, removed in 70170): no link until it reruns
+            print(f"  {cls} {r['spec']} {k}: no link ({err})", flush=True)
+            continue
+        b = {"label": k, "talents": tal, "gear_json": json.load(open(resolve(g), encoding="utf-8"))}
         row = A.bench(e, repo, [b], 3000, 1, setting, f"link-{cls}", extra={"link": True, "api_version": apiv}).get(k) or {}
         if row.get("link"):
             out[k] = f"{SITE}/{e['sim_spec']}/#{row['link']}"

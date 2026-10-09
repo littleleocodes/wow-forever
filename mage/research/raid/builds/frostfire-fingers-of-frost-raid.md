@@ -60,9 +60,9 @@ A Frostfire Bolt build the user brought on 2026-10-06 (talentsforever.com link):
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 4/31/16 | 476 | +0.0% | 628 | -5.4% | 0 s |
-| 2 | **[`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md)** | ours: hand draft | 0/29/22 | 476 | -0.0% | 665 | +0.0% | 0 s |
-| 3 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: hand draft | 4/31/16 | 439 | -7.7% | 592 | -10.9% | 1 s |
+| 1 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 4/31/16 | 476 | +0.0% | 632 | -6.9% | 0 s |
+| 2 | **[`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md)** | ours: hand draft | 0/29/22 | 476 | -0.0% | 680 | +0.0% | 0 s |
+| 3 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: hand draft | 4/31/16 | 439 | -7.7% | 608 | -10.6% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 

@@ -40,21 +40,21 @@ Classic Era reference builds: [aoe-grinding-frost](../talents/classic-baseline/a
 
 | Build | L20 | L30 | L40 | L50 | L60 | Deaths/100 at 60 | Downtime/kill at 60 |
 |---|---|---|---|---|---|---|---|
-| `opt-frost-leveling-leveling-st` (optimizer) | 25.2s | 31.5s | 29.2s | 24.5s | 23.1s | 0.0 | 4.5s |
-| `leveling-frost` (hand draft) | 26.6s (+5%) | 29.0s (-8%) | 30.1s (+3%) | 24.7s (+1%) | 23.4s (+1%) | 0.0 | 4.6s |
-| `opt-fire-leveling-leveling-st` | 24.6s (-3%) | 31.2s (-1%) | 36.7s (+26%) | 33.3s (+36%) | 31.8s (+38%) | 0.0 | 11.2s |
-| `opt-frost-leveling-leveling-st` in blues (dungeon blues from the item database) | 24.2s (-4%) | 27.3s (-13%) | 24.7s (-15%) | 22.7s (-7%) | 22.3s (-3%) | 0.0 | 4.2s |
+| `opt-frost-leveling-leveling-st` (optimizer) | 25.2s | 32.4s | 32.0s | 26.7s | 25.0s | 0.0 | 5.2s |
+| `leveling-frost` (hand draft) | 26.7s (+6%) | 31.5s (-3%) | 33.0s (+3%) | 26.7s (+0%) | 25.4s (+2%) | 0.0 | 5.3s |
+| `opt-fire-leveling-leveling-st` | 25.0s (-1%) | 32.1s (-1%) | 38.1s (+19%) | 34.3s (+29%) | 32.9s (+32%) | 0.0 | 11.8s |
+| `opt-frost-leveling-leveling-st` in blues (dungeon blues from the item database) | 24.2s (-4%) | 28.6s (-12%) | 27.4s (-15%) | 24.9s (-6%) | 24.2s (-3%) | 0.0 | 4.9s |
 
 Time per kill = fight + loot, travel, eating, drinking, healing and deaths; a build's cell shows its time and the difference to the optimizer build on the same mobs and seeds.
 
-- **Talents that matter** (time per kill lost when the talent is removed from `opt-frost-leveling-leveling-st` at level 60): Ice Lance +40% (L30 +47%), Shatter +22% (L30 +18%), Ice Shards +18% (L30 +6%), Fingers of Frost +9% (L30 +4%), Frostbite +6% (L30 +10%), Frost Channeling +6% (L30 +5%).
-- **Measure about zero** single-target at 60 (kept for other reasons or not simulated): Arcane Focus, Ice Block, Wand Specialization.
+- **Talents that matter** (time per kill lost when the talent is removed from `opt-frost-leveling-leveling-st` at level 60): Ice Lance +40% (L30 +47%), Shatter +17% (L30 +15%), Ice Shards +10% (L30 +3%), Fingers of Frost +8% (L30 +4%), Frost Channeling +6% (L30 +4%), Frostbite +5% (L30 +9%).
+- **Measure about zero** single-target at 60 (kept for other reasons or not simulated): Arcane Focus, Arcane Subtlety, Cold Snap, Ice Block, Wand Specialization.
 - **Caster mobs:** 16% of pulls at level 30 are casters (creature-database share); 0.08 interrupts per kill at 60.
 - **Race** (hand draft vs every optimizer candidate, 2026-10-09, mean time per kill over levels 20/30/40/50/60): cand-frost-r6 26.0s, leveling-frost 26.1s, cand-frost-r3 26.2s, cand-frost-r5 26.2s, cand-frost-r2 26.6s, cand-frost-0-5-46 26.9s, cand-frost-23-0-28 27.1s, cand-frost-r1 27.1s, cand-frost-28-0-23 27.5s — fastest: **cand-frost-r6**.
 - **Calibration:** the scorer's `frost-leveling` leveling values were fitted jointly to the hand draft and every candidate in [`fightlab/candidates/`](fightlab/candidates/) (1 round, converged: the optimizer build repeats).
-- **Other spec, same module:** `fire-leveling` with `opt-fire-leveling-leveling-st` ([report](fightlab/fire-leveling.md)): L30 31.2s, L60 31.8s. Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
-- **Other spec, same module:** `frostfire-leveling` with `opt-frost-leveling-leveling-st` ([report](fightlab/frostfire-leveling.md)): L30 32.2s (+2% vs `opt-frost-leveling-leveling-st`), L60 27.4s (+19% vs `opt-frost-leveling-leveling-st`). Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
-- **AoE grinding, 4 mobs per pull:** `frost-aoe` with `opt-frost-aoe-leveling-aoe` ([report](fightlab/frost-aoe.md)): L40 35.8s per mob in pulls of 3 (single-target build 29.2s), 16.9 deaths/100; L60 28.6s per mob in pulls of 4 (single-target build 23.1s), 11.2 deaths/100.
+- **Other spec, same module:** `fire-leveling` with `opt-fire-leveling-leveling-st` ([report](fightlab/fire-leveling.md)): L30 32.1s, L60 32.9s. Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
+- **Other spec, same module:** `frostfire-leveling` with `opt-frost-leveling-leveling-st` ([report](fightlab/frostfire-leveling.md)): L30 33.0s (+2% vs `opt-frost-leveling-leveling-st`), L60 29.6s (+19% vs `opt-frost-leveling-leveling-st`). Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
+- **AoE grinding, 4 mobs per pull:** `frost-aoe` with `opt-frost-aoe-leveling-aoe` ([report](fightlab/frost-aoe.md)): L40 35.8s per mob in pulls of 3 (single-target build 32.0s), 16.9 deaths/100; L60 28.6s per mob in pulls of 4 (single-target build 25.0s), 11.2 deaths/100.
 - **Not simulated:** runners, Ice Block, Mana Shield, Arcane Missiles (outside the arcane-leveling rotation), gear upgrades within a level bracket (adds and Blizzard only in the AoE variant, tables.MOBS_PER_PULL). Talents in the build the sim ignores: Ice Block.
 - **Recommended:** the hand draft `leveling-frost` (no candidate beats it by more than the 2% margin).
 

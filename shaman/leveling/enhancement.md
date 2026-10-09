@@ -48,6 +48,8 @@ Melee with a slow two-hander and **Windfury Weapon**, and use your spells to fin
 - Do not spend a 5-stack **Lightning Bolt** on a mob your next swing will kill: the stacks last 30 seconds and may carry over to the next pull.
 - A mob that flees at low health: **Earth Shock** finishes it, or **Frost Shock** slows it by 50%.
 
+*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

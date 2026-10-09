@@ -48,6 +48,8 @@ Kill as much as you can with **Lightning Bolt** before the mob reaches you, then
 - A bad pull (you under 30% health): **Stoneclaw Totem** taunts the mob onto itself, then heal with **Lesser Healing Wave**; the fight lab does this for every shaman.
 - A mob that flees: **Frost Shock** slows it by 50% for 8 seconds (it shares the shock cooldown).
 
+*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

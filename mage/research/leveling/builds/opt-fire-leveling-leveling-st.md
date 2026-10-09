@@ -69,14 +69,15 @@ What this build casts per kill ([report](../fightlab/fire-leveling.md), all leve
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Ice Lance | 1.1 | 1.6 | 2.3 | 2.0 | 2.0 | 42% |
-| Fireball | 2.3 | 1.8 | 1.9 | 1.8 | 1.8 | 28% |
-| Fire Blast | 1.0 | 1.1 | 1.4 | 1.2 | 1.2 | 16% |
-| Frost Nova | 0.4 | 0.6 | 0.7 | 0.7 | 0.7 | 1% |
-| Wand | 0.6 | 0.2 | 0.4 | 0.3 | 0.3 | 0% |
+| Ice Lance | 1.2 | 1.7 | 2.6 | 2.2 | 2.2 | 40% |
+| Fireball | 2.3 | 1.7 | 1.8 | 1.8 | 1.7 | 28% |
+| Fire Blast | 1.0 | 1.2 | 1.4 | 1.2 | 1.2 | 17% |
+| Frost Nova | 0.4 | 0.6 | 0.8 | 0.7 | 0.7 | 1% |
+| Wand | 0.6 | 0.2 | 0.5 | 0.4 | 0.4 | 0% |
 | Blast Wave | 0.0 | 0.2 | 0.3 | 0.3 | 0.3 | 4% |
-| Scorch | 0.0 | 0.2 | 0.3 | 0.2 | 0.2 | 1% |
+| Scorch | 0.0 | 0.2 | 0.3 | 0.3 | 0.2 | 1% |
 | Counterspell | 0.0 | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
+| Pyroblast | 0.0 | 0.1 | 0.1 | 0.1 | 0.1 | 1% |
 
 ## Notes
 

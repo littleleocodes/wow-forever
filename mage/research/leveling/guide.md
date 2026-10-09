@@ -37,16 +37,16 @@ Respec plan: **35.7 h** (60.3% faster than talentless), 0 respec(s).
 | Level | Bracket | Fight | Time per kill | Kills/hour | Deaths/100 | Downtime/kill | In dungeon blues |
 |---|---|---|---|---|---|---|---|
 | 20 | levels 15-25 | 12s | 25s | 143 | 0.0 | 5s | 24s (-4%) |
-| 30 | levels 25-35 | 16s | 31s | 114 | 0.0 | 7s | 27s (-13%) |
-| 40 | levels 35-45 | 14s | 29s | 123 | 0.0 | 7s | 25s (-15%) |
-| 50 | levels 45-55 | 11s | 25s | 147 | 0.0 | 5s | 23s (-7%) |
-| 60 | level 55-60 | 11s | 23s | 156 | 0.0 | 5s | 22s (-3%) |
+| 30 | levels 25-35 | 17s | 32s | 111 | 0.0 | 7s | 29s (-12%) |
+| 40 | levels 35-45 | 16s | 32s | 112 | 0.0 | 8s | 27s (-15%) |
+| 50 | levels 45-55 | 12s | 27s | 135 | 0.0 | 6s | 25s (-6%) |
+| 60 | level 55-60 | 12s | 25s | 144 | 0.0 | 5s | 24s (-3%) |
 
 - **Level 20:** deaths are rare; 21% downtime; 19% of pulls are casters.
-- **Level 30:** deaths are rare; 22% downtime; 16% of pulls are casters.
-- **Level 40:** deaths are rare; 23% downtime.
-- **Level 50:** deaths are rare; 22% downtime.
-- **Level 60:** deaths are rare; 20% downtime.
+- **Level 30:** deaths are rare; 23% downtime; 16% of pulls are casters.
+- **Level 40:** deaths are rare; 24% downtime.
+- **Level 50:** deaths are rare; 23% downtime.
+- **Level 60:** deaths are rare; 21% downtime.
 
 ## How the fights go
 
@@ -54,9 +54,9 @@ Single-target leveling fights against normal mobs of your level: pull at max ran
 
 ## Talents that carry the build
 
-- **Level 30:** Ice Lance (+47% time per kill without it), Shatter (+18% time per kill without it), Frostbite (+10% time per kill without it), Ice Shards (+6% time per kill without it), Improved Frostbolt (+6% time per kill without it), Frost Channeling (+5% time per kill without it).
-- **Level 60:** Ice Lance (+40% time per kill without it), Shatter (+22% time per kill without it), Ice Shards (+18% time per kill without it), Fingers of Frost (+9% time per kill without it), Frostbite (+6% time per kill without it), Frost Channeling (+6% time per kill without it).
-- **Free to move** (no measurable effect single-target): Arcane Focus, Ice Block, Wand Specialization.
+- **Level 30:** Ice Lance (+47% time per kill without it), Shatter (+15% time per kill without it), Frostbite (+9% time per kill without it), Improved Frostbolt (+5% time per kill without it), Frost Channeling (+4% time per kill without it), Fingers of Frost (+4% time per kill without it).
+- **Level 60:** Ice Lance (+40% time per kill without it), Shatter (+17% time per kill without it), Ice Shards (+10% time per kill without it), Fingers of Frost (+8% time per kill without it), Frost Channeling (+6% time per kill without it), Frostbite (+5% time per kill without it).
+- **Free to move** (no measurable effect single-target): Arcane Focus, Arcane Subtlety, Cold Snap, Ice Block, Wand Specialization.
 
 ## Other specs while leveling
 
