@@ -527,16 +527,18 @@ def main_builds(cls, spec, entry, repo, trees, where=None):
             out.append({"label": bid, "talents": R.talents_string(trees, R.alloc_of(data[bid]))})
         for pr in R.sim_presets(repo, entry)[:1] if "preset_names" in entry else []:   # a rotation-only tree before its first race
             out.append({"label": pr["label"], "talents": pr["talents"]})
+    # the builds below are protected, not tuned on (2026-10-08: an --all pass scored every candidate on every listed build, 40 minutes
+    # for the first round of one entry; only our best build and the simulator's best preset above are the tuning builds)
     for bid in entry.get("tune_builds", []):   # builds of another rotation family sharing the entry (2026-09-28: the Arcane Power Frost draft)
         t = R.talents_string(trees, R.alloc_of(data[bid]))
         if t not in {b["talents"] for b in out}:
-            out.append({"label": bid, "talents": t})
+            out.append({"label": bid, "talents": t, "protect_only": True})
     raid = (where or R.setting(entry)) == "raid"
     for bid in entry.get("builds", []):   # every alternative the pages show is protected too
         if bid in data and (raid or not bid.endswith("-parse")):
             t = R.talents_string(trees, R.alloc_of(data[bid]))
             if t not in {b["talents"] for b in out}:
-                out.append({"label": bid, "talents": t})
+                out.append({"label": bid, "talents": t, "protect_only": True})
     return out
 
 
@@ -551,6 +553,7 @@ def search(cls, spec, a, repo, N, where=None):
     if getattr(a, "tune", None):   # the given builds first; the entry's main builds stay protected (no change may cost them 0.1% either)
         extra = tune_builds(a.tune, cls, trees)
         builds = extra + [dict(b, protect_only=True) for b in builds if b["talents"] not in {x["talents"] for x in extra}]
+    builds = [{k: v for k, v in b.items() if k != "protect_only"} if not b.get("protect_only") else b for b in builds]
     # Tuning builds and protected builds (2026-10-07): candidates are scored on the tuning builds only (the --tune builds, else our best
     # build, the simulator's best preset and the entry's tune_builds) and run on them alone on seed 1; the protected builds (every
     # other build the entry lists) are run only for the confirmed few on seed 2, where no change may cost any build --max-loss against
