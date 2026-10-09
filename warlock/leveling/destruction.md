@@ -10,18 +10,19 @@
 
 **Not in this build:** **Incinerate**, **Shadowburn** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
 
-**Before the fight:** **Demon Armor** up, **Summon Voidwalker**. Send the Voidwalker in first and let it hold the mob.
+**Before the fight:** **Demon Skin** (**Demon Armor** from level 20) up, **Summon Voidwalker**. Send the Voidwalker in first and let it hold the mob with **Torment**. Open with **Amplify Curse** whenever it is ready: it makes that fight's **Bane of Agony** 50% stronger.
 
 **In the fight**, top to bottom:
 
-1. **Corruption** (not on a mob that is nearly dead) and **Bane of Agony** while the Voidwalker grabs the mob.
-2. **Immolate** while you have more than half your mana, then **Conflagrate** when Immolate is about to run out.
-3. **Incinerate** on a burning mob while your mana is nearly full; your wand otherwise.
-4. **Shadowburn** or **Conflagrate** to finish a mob they would kill.
-5. **Life Tap** when you are low on mana.
-6. If a mob reaches you: **Death Coil** (skip Fear and Drain Life: the Voidwalker takes the mob back).
+1. **Corruption** and **Bane of Agony** first while the Voidwalker builds threat, none of them on a mob below about a third of its health.
+2. **Immolate** while you have more than half your mana and it will not pull the mob off the Voidwalker.
+3. **Conflagrate** when **Immolate** has about 3 seconds left (at once with 5 points in **Shadow and Flame**, which keeps **Immolate** burning), or to finish a burning mob it would kill; then **Siphon Life**.
+4. Above 80% mana, **Shadow Bolt** (**Searing Pain** when the mob has too little health left for it); below that, your wand.
+5. With **Incinerate**: cast it instead of **Shadow Bolt** on a burning mob. With **Shadowburn**: finish any mob it would kill.
+6. **Life Tap** in a fight only when you are short of mana and above 60% health.
+7. If a mob reaches you: **Death Coil** below 60% health and let **Torment** take it back (no **Fear** and no **Drain Life**: both measured slower). Your Healthstone below 35% health.
 
-**Between fights:** **Life Tap** back up, heal the Voidwalker with **Health Funnel**, eat below 40% health.
+**Between fights:** **Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, and eat only below 40% health.
 
 ## Why this rotation
 

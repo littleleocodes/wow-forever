@@ -10,17 +10,17 @@
 
 ## How to play
 
-**Before the fight:** **Frost Armor** (later **Ice Armor** or **Mage Armor**) and **Arcane Intellect** up. Pull from as far away as you can.
+**Before the fight:** **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up; **Ice Barrier** before each pull once you have it. Pull from as far away as you can.
 
 **In the fight**, top to bottom:
 
-1. **Frostbolt** while the mob walks in (it slows it).
-2. **Frost Nova** when it reaches you, then step back.
-3. **Ice Lance** (or **Frostbolt**) while it is frozen.
-4. Finish a nearly dead mob with **Fire Blast** or your wand.
+1. **Frostbolt** while the mob walks in (it slows it); if it would reach you before the cast ends and **Frost Nova** is ready, wand it until it arrives.
+2. **Frost Nova** when it reaches you, then step back out of melee; **Cold Snap** resets **Frost Nova** if it is still on cooldown.
+3. **Ice Lance** again and again while the mob is frozen (**Frost Nova**, **Frostbite** or **Fingers of Frost**); **Frostbolt** otherwise.
+4. Finish with an **Ice Lance** that will kill, or your wand: no **Frostbolt** below a tenth of its health, and no **Fire Blast** or **Cone of Cold** at all.
 5. **Counterspell** a mob that casts spells.
 
-**Between fights:** Drink your conjured water below a third of your mana, **Evocation** when you are out, eat below two thirds of your health.
+**Between fights:** Drink your conjured water below a quarter of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.
 
 ## Why this rotation
 

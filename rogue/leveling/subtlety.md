@@ -10,15 +10,19 @@
 
 **Not in this build:** **Hemorrhage** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
 
-**Before the fight:** Daggers in both hands, poisons on. Stealth up behind the mob; **Premeditation** for two free combo points.
+**Before the fight:** Daggers in both hands: **Instant Poison** on your main hand, **Deadly Poison** on your off hand. Stealth up behind the mob. **Premeditation** for two free combo points.
 
 **In the fight**, top to bottom:
 
-1. Open with **Ambush** at low level, **Garrote** once you have it at 30 (it bleeds through armor).
-2. **Ghostly Strike** whenever ready (it also makes you dodge more).
-3. **Hemorrhage** (or **Sinister Strike** before you have it) to build combo points.
-4. At 5 points: **Eviscerate** (or earlier if it would kill the mob).
-5. **Riposte** after you parry; **Evasion** when your health gets low (**Preparation** resets it).
+1. Open with **Ambush** while fights are short; from the 30s on, **Garrote** (its bleed ignores armor and the mob lives through it).
+2. **Ghostly Strike** whenever it is ready (it also makes you dodge more).
+3. **Sinister Strike** to build combo points.
+4. Once you have **Hemorrhage**, it replaces **Sinister Strike** as the builder.
+5. At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder; earlier when it would kill the mob.
+6. **Riposte** after you parry.
+7. **Kick** a caster mob's spell.
+8. **Evasion** when your health gets low.
+9. If **Evasion** is on cooldown when you need it, **Preparation** resets it.
 
 **Between fights:** Bandage below 60% health, eat below half.
 

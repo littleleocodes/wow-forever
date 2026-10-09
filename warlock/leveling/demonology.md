@@ -10,18 +10,19 @@
 
 ## How to play
 
-**Before the fight:** **Demon Armor** up, **Summon Voidwalker**. Send the Voidwalker in first and let it hold the mob.
+**Before the fight:** **Demon Skin** (**Demon Armor** from level 20) up, **Summon Voidwalker**. Send the Voidwalker in first and let it hold the mob with **Torment**. Open with **Amplify Curse** whenever it is ready: it makes that fight's **Bane of Agony** 50% stronger. With **Soul Link**: turn it on once the Voidwalker is out.
 
 **In the fight**, top to bottom:
 
-1. **Corruption** (not on a mob that is nearly dead), **Bane of Agony** and **Siphon Life** on the mob.
-2. **Searing Pain** to keep Demonic Brand up once you have it.
-3. **Soul Fire** when Decimation lights up (mob below 35% health).
-4. **Shadow Bolt** only when your mana is nearly full; your wand otherwise.
-5. **Drain Life** when you are hurt, **Life Tap** when you are low on mana.
-6. If a mob reaches you: **Death Coil** or **Fear**.
+1. With **Demonic Brand**: **Searing Pain** whenever the brand is gone and the Voidwalker is hitting the mob.
+2. **Corruption**, **Bane of Agony** and **Siphon Life** on the mob, and **Immolate** while you have more than half your mana; none of them on a mob below about a third of its health.
+3. With **Decimation**: **Soul Fire** while its buff lasts (a **Shadow Bolt** or **Searing Pain** on a mob below 35% health starts it).
+4. Above 80% mana, **Shadow Bolt** (**Searing Pain** when the mob has too little health left for it); below that, your wand.
+5. **Drain Life** whenever you drop below 60% health, and in place of the wand while you are below 85%; **Life Tap** in a fight only when you are short of mana and above 60% health.
+6. With **Improved Health Funnel**: **Health Funnel** a Voidwalker below 30% health while the mob still has more than a third of its health and you have more than 65% of yours.
+7. If a mob reaches you: **Death Coil** below 60% health, otherwise **Fear** it, then **Drain Life** while it runs. Your Healthstone below 35% health.
 
-**Between fights:** **Life Tap** back up, heal the Voidwalker with **Health Funnel**, eat only below a third of your health.
+**Between fights:** **Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, and eat only below 55% health.
 
 ## Why this rotation
 

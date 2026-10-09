@@ -33,7 +33,7 @@
    "leveling": {
     "plan": "Shadow levels on a short loop: your opening spells land while the mob runs in, **Mind Flay** slows and kills it, and **Shadow Word: Death** or your wand finishes it. **Shadowform** at 40 is the big step: the fight lab's time per kill drops from 37 to 22 seconds between levels 30 and 40.",
     "why": [
-     "Pull from as far away as you can (**Shadow Reach** adds 20% range): **Mind Blast** is your biggest hit and **Shadow Word: Pain** ticks for the whole fight. The fight lab casts the instants first (**Vampiric Embrace** when it is ready, then **Shadow Word: Pain**) and **Mind Blast** right after: the same spells in another order.",
+     "Open from as far away as you can (**Shadow Reach** adds 20% range, **Mind Flay**'s included): the fight lab casts the instants first (**Vampiric Embrace** when it is ready, then **Shadow Word: Pain**) and **Mind Blast**, your biggest hit, right after, so all three land while the mob walks in.",
      "**Vampiric Embrace** and **Devouring Plague** are your heals once **Shadowform** stops real heals. The fight lab casts **Vampiric Embrace** whenever it is ready (once a minute) and **Devouring Plague** only when you are below 80% health and the mob above half, so the plague is a heal here, not damage.",
      "**Mind Flay** is your filler and your biggest damage share: it slows the mob by 50% while you channel (20% once you take **Improved Mind Flay**), so a mob walking in reaches you later. **Mind Blast** goes out whenever it is ready.",
      "From 32, **Shadow Word: Death** finishes. The fight lab casts it when one cast will kill the mob, so its backlash (10% of your health when the target survives) never lands, and below 20% health once you have **Early Demise**. From 40 it does about a fifth of your damage and the wand is rarely needed.",
@@ -41,7 +41,7 @@
      "Mana: **Spirit Tap** doubles your Spirit for 15 seconds after kills and **Shadowform** halves your Shadow costs, so the tuned rules drink only below 15% mana, not at a third. They also skip the pre-pull **Power Word: Shield** unless you start a pull below half health: the fight lab measured that about 12% faster, since the shield is not a Shadow spell and costs full mana."
     ],
     "caveats": [
-     "**Shadowform** blocks your heals: from 40 your only healing in a fight is **Vampiric Embrace** and **Devouring Plague**, and between fights you eat (below about two thirds of your health) instead of casting **Renew**.",
+     "**Shadowform** blocks your heals but cuts the physical damage you take by 15%: from 40 your only healing in a fight is **Vampiric Embrace** and **Devouring Plague**, and between fights you eat (below about two thirds of your health) instead of casting **Renew**.",
      "Before 20 there is no **Mind Flay**: you use **Mind Blast**, **Shadow Word: Pain** and the wand. The fight lab never casts **Smite** as Shadow; it measured leveling slightly faster without it.",
      "Two or three mobs at once: put **Shadow Word: Pain** on each and use **Psychic Scream** (below 40% of your health with a mob on you) to buy time. The no-shield rule was tuned on single pulls."
     ],
@@ -112,29 +112,25 @@
   },
   "Holy": {
    "raid": {
-    "plan": "The healer lab's Holy priest keeps the tank up with **Greater Heal** downranked to the damage he has taken, uses **Prayer of Healing** when two or more of the group are hurt, and keeps **Power Word: Shield**, **Penance** and **Flash Heal** for emergencies. Mana is the limit: in the lab's five-minute fight this build spends 41 seconds out of mana.",
+    "plan": "The healer lab's Holy priest heals the tank with **Penance** every time it is ready and with **Greater Heal** downranked to the damage he has taken, uses **Prayer of Healing** when two or more of the group are hurt, and keeps **Power Word: Shield** and **Flash Heal** for emergencies. Mana is the limit: even so, the lab's Holy priest spends part of its five-minute fight out of mana.",
     "why": [
-     "**Greater Heal** is two thirds of your healing. Start it on the tank when he is missing about half of what it heals and a boss swing is coming, at the lowest rank that covers what he is missing: the rest of a bigger rank would be overheal.",
+     "**Penance** goes on the tank whenever it comes off cooldown and he is missing most of what it heals. Since 2026-10-08 it heals more per mana than **Heal** and **Greater Heal**, and the healer lab measured about 6% more capacity than keeping it for emergencies.",
+     "**Greater Heal** is still your biggest heal. Start it on the tank when he is missing about half of what it heals and a boss swing is coming, at the lowest rank that covers what he is missing: the rest of a bigger rank would be overheal.",
      "**Prayer of Healing** when two or more of your group are below 70% health; the lab measured that about 3% better than waiting for three. In Forever it heals the target and the target's party, so aim it at the group that is hurt.",
      "**Renew** goes on the tank once he is missing a fifth of his health (measured about 2% better than at a tenth), and on a hurt raid member before a direct heal. It can crit since the beta's 2026-10-08 build.",
      "**Inner Focus** goes on a full-rank **Greater Heal** when the tank is missing more than half of one: the heal is free and 25% more likely to crit, and a critical heal gives the tank 25% more armor for 15 seconds through **Inspiration**.",
-     "In an emergency (anyone below 35% health): **Power Word: Shield** on the tank if Weakened Soul is gone (**Soul Warding** removes the shield's 4-second cooldown), then **Penance**, then a full-rank **Flash Heal**.",
-     "**Meditation** is your most valuable talent in the lab, worth 24% of your healing capacity: it keeps half your regeneration going while you cast. Take a mana potion once you are below about two thirds of your mana."
+     "In an emergency (anyone below 35% health): **Power Word: Shield** on the tank if Weakened Soul is gone (**Soul Warding** removes the shield's 4-second cooldown), then **Penance** if it is ready, then a full-rank **Flash Heal**."
     ],
     "caveats": [
-     "This build has no **Prayer of Mending**: it needs 31 points in Holy, and the lab measured the draft that took it (20/31/0) 4% below this one.",
-     "**Penance** changed on 2026-10-08: Blizzard made it cost less mana per point healed than **Heal** and **Greater Heal**. The lab's numbers predate that and use it only in emergencies (3% of your healing); casting it on cooldown on the tank may now be better, but that is not measured.",
+     "Mana runs out before healing power does: **Meditation** keeps half your regeneration going while you cast and was your most valuable talent in the lab's 2026-10-03 run. Take a mana potion once you are below about two thirds of your mana.",
+     "This build has no **Prayer of Mending**: it needs 31 points in Holy, and the lab measured the draft that took it (20/31/0) 4% below this one in its 2026-10-03 run.",
      "Ranks far below your level now get less from your healing power (a beta change; the formula is our assumption). In our model **Greater Heal** ranks 3 to 5 lose nothing and rank 1 about 15%, so downranking within **Greater Heal** still pays.",
-     "The lab is one healer keeping a tank and four players alive for five minutes. It does not model movement, dispels, other healers or **Litany of Light**."
+     "The lab is one healer keeping a tank and four players alive for five minutes. It does not model movement, dispels or other healers."
     ],
     "diverge": [
-     "When you and another player are both hurt, **Binding Heal** heals both with one cast; the lab only uses it as a **Flash Heal**.",
+     "When you and another player are both hurt, **Binding Heal** heals both with one cast; the lab never casts it.",
      "**Litany of Light** gives back 10% of a heal's base cost when it differs from your previous heal, so when two heals fit equally well, alternate them."
-    ],
-    "rotations": {
-     "healer-policy": "f69d2fdba8f8"
-    },
-    "written": "2026-10-09"
+    ]
    },
    "leveling": {
     "plan": "You level with your raid talents, Discipline first: **Penance** at 31 is the big step, and the Holy talents from 32 on mostly heal. The fight is a Smite priest's: an instant pull with **Shadow Word: Pain**, **Penance** and **Mind Blast** on cooldown, **Smite** in between, your wand to finish.",
@@ -163,29 +159,25 @@
   },
   "Discipline": {
    "raid": {
-    "plan": "The healer lab plays Discipline with the same heal choices as Holy, plus **Power Infusion** on cooldown: downranked **Greater Heal** on the tank, **Prayer of Healing** for the group, and **Power Word: Shield**, **Penance** and **Flash Heal** for emergencies. Your shield engine, **Renewed Hope** and **Divine Aegis**, is not in the lab, so play it on top.",
+    "plan": "The healer lab plays Discipline with Holy's heal choices plus **Power Infusion** on cooldown: **Penance** on the tank whenever it is ready, downranked **Greater Heal** on the tank, **Prayer of Healing** for the group, and **Power Word: Shield** and **Flash Heal** for emergencies. Since 2026-10-09 it also counts **Renewed Hope** and **Divine Aegis**.",
     "why": [
-     "**Greater Heal** on the tank is two thirds of your healing (2.5 seconds with **Divine Fury**). Start it when he is missing about half of what it heals and a boss swing is coming, at the lowest rank that covers the damage.",
-     "In an emergency (anyone below 35% health): **Power Word: Shield** on the tank if Weakened Soul is gone, then **Penance**, then a full-rank **Flash Heal**. **Soul Warding** removes the shield's 4-second cooldown and cuts its cost by 15%.",
+     "**Penance** goes on the tank whenever it comes off cooldown and he is missing most of what it heals. Since 2026-10-08 it heals more per mana than **Heal** and **Greater Heal**, and the healer lab measured about 4% more capacity than keeping it for emergencies.",
+     "**Greater Heal** on the tank is your biggest heal (2.5 seconds with **Divine Fury**). Start it when he is missing about half of what it heals and a boss swing is coming, at the lowest rank that covers the damage.",
+     "In an emergency (anyone below 35% health): **Power Word: Shield** on the tank if Weakened Soul is gone, then **Penance** if it is ready, then a full-rank **Flash Heal**. **Soul Warding** removes the shield's 4-second cooldown and cuts its cost by 15%.",
      "After a shield, heal the tank directly: with **Renewed Hope** your **Flash Heal**, **Greater Heal**, **Binding Heal** and **Penance** crit 10% more often on a target with Weakened Soul, and each cuts 5 seconds off it, so the next shield comes sooner. Each crit also leaves an absorb of 15% of the heal (**Divine Aegis**) and 25% more armor for 15 seconds (**Inspiration**).",
-     "**Power Infusion**: the lab casts it on yourself whenever it is ready and you have more than 20% mana, for 20% more healing over 15 seconds every 3 minutes. If you know when the boss hits hardest, saving it for that is your call; not measured.",
-     "**Inner Focus** on a full-rank **Greater Heal** when the tank is missing more than half of one; **Prayer of Healing** when two or more of the group drop below 70% (measured about 3% better than waiting for three); **Renew** on the tank once he is missing a fifth of his health.",
-     "Mana runs out first: in the lab's five-minute fight you spend 46 seconds dry. **Meditation** keeps half your regeneration going while you cast; take a mana potion below about two thirds of your mana."
+     "**Power Infusion**: the lab casts it on yourself whenever it is ready and you have more than 20% mana: 20% more healing for 15 seconds every 3 minutes, for 20% of your base mana and a global cooldown. If you know when the boss hits hardest, saving it for that is your call; not measured.",
+     "**Inner Focus** on a full-rank **Greater Heal** when the tank is missing more than half of one; **Prayer of Healing** when two or more of the group drop below 70% (measured about 3% better than waiting for three); **Renew** on the tank once he is missing a fifth of his health."
     ],
     "caveats": [
-     "The lab does not model **Divine Aegis** or **Renewed Hope**, so Discipline's lower capacity (0.56 against Holy's 0.62) leaves out part of what the spec does.",
-     "**Penance** changed on 2026-10-08: Blizzard made it cost less mana per point healed than **Heal** and **Greater Heal**. The lab's numbers predate that and use it only in emergencies; casting it on cooldown on the tank may now be better, but that is not measured.",
+     "Mana runs out first: the lab's Discipline priest spends about 45 seconds of its five-minute fight dry. **Meditation** keeps half your regeneration going while you cast; take a mana potion below about two thirds of your mana.",
+     "The lab shields only in emergencies: shielding the tank every time Weakened Soul ends measured slightly worse there, because the shields cost mana the fight runs short of. With mana to spare, extra shields feed **Renewed Hope**; the lab did not find that.",
      "Ranks far below your level now get less from your healing power (a beta change; the formula is our assumption). In our model **Greater Heal** ranks 3 to 5 lose nothing, so downranking within **Greater Heal** still pays.",
      "This build gives up **Spiritual Guidance**, **Spiritual Healing** and **Prayer of Mending** for the Discipline talents."
     ],
     "diverge": [
      "When the tank takes a big hit while Weakened Soul is still on him, cast **Penance** or **Flash Heal** at once: each also takes 5 seconds off Weakened Soul (**Renewed Hope**), so you can shield again sooner.",
      "When you and another player are both hurt, **Binding Heal** heals both with one cast."
-    ],
-    "rotations": {
-     "healer-policy": "f69d2fdba8f8"
-    },
-    "written": "2026-10-09"
+    ]
    },
    "leveling": {
     "plan": "You level with your raid talents, all Discipline first: **Penance** at 31 and **Power Infusion** at 40 carry the damage. The fight is a Smite priest's: an instant pull with **Shadow Word: Pain**, **Penance** and **Mind Blast** on cooldown, **Smite** in between, your wand to finish.",

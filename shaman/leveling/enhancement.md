@@ -10,17 +10,18 @@
 
 ## How to play
 
-**Before the fight:** **Lightning Shield** up, **Rockbiter Weapon** on your weapon (**Windfury Weapon** from 30), a slow two-handed weapon. Drop **Searing Totem** as you pull.
+**Before the fight:** **Lightning Shield** up, **Rockbiter Weapon** on your weapon (**Windfury Weapon** from 30), a slow two-handed weapon. Walk in without an opening **Lightning Bolt** (its mana costs more drinking than it saves) and drop **Searing Totem** as you pull while you have more than half your mana.
 
 **In the fight**, top to bottom:
 
-1. **Lightning Bolt** while the mob walks in.
-2. **Stormstrike** whenever ready, then **Earth Shock**.
-3. **Flame Shock** while your mana allows.
-4. **Lightning Bolt** when Maelstrom Weapon reaches 5 stacks (it is instant).
-5. Low on health: **Stoneclaw Totem** and **Lesser Healing Wave**.
+1. **Rage of the Farseer** at the start of a fight whenever it is ready.
+2. With 5 stacks of **Maelstrom Weapon**: an instant **Lightning Bolt**, once the mob is under 35% health (not on a mob one swing from dying).
+3. **Stormstrike** whenever it is ready.
+4. **Earth Shock** to finish the mob once it is under 20% health.
+5. **Flame Shock** while it is not on the mob, you have more than half your mana and the mob more than 40% health.
+6. Low on health at any point: under 30% drop **Stoneclaw Totem**, under 40% cast **Lesser Healing Wave**.
 
-**Between fights:** Heal back to 80% health, drink below a third of your mana.
+**Between fights:** Heal back to 80% health with **Lesser Healing Wave** (**Healing Wave** for a big gap), drink below a third of your mana.
 
 ## Why this rotation
 

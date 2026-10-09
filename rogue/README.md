@@ -57,20 +57,24 @@ Differences under 2-3% are within the simulations' noise and assumptions: treat 
 
 ## Roles and specs
 
-| Spec | Raid role | Classic standing | Forever outlook |
+| Spec | Raid role | Classic standing | Forever outlook (beta client 1.60.1.70291, simulations of 2026-10-09) |
 |---|---|---|---|
-| Assassination | DPS | Only a dip tree (Malice/Lethality/Seal Fate for PvP) | Mutilate + Venom + 100% Seal Fate: a complete dagger spec |
-| Combat | Raid DPS | The raid spec (swords or daggers) | Still the sword spec; Restless Blades and Hack and Slash keep it strong |
-| Subtlety | PvP | Hemo/Prep opener builds | Premeditation at 16, Thousand Cuts capstone, Quietus/Cutthroat |
+| Assassination | Raid DPS | A dip tree: Malice, Lethality and Seal Fate for Combat and PvP builds | A Seal Fate dagger spec: Backstab with Puncturing Wounds builds two points at a time, Cold Blood and Eviscerate at 4 or more points spend them. Blizzard built the tree around Mutilate and Venom, but neither made the simulator's best build (Backstab out-damaged Mutilate there): a launch question. A few percent behind Combat in the ranking above. |
+| Combat | Raid DPS (the pick) | The raid spec, swords or daggers | Still the raid spec, with either weapon: Hack and Slash gives swords and axes an extra attack and daggers crit, Aggression now covers Backstab, Flawless Execution makes Eviscerate cheaper. The daggers (Backstab) build leads the simulator's full raid, the swords (Sinister Strike) build a few percent behind. Combat also levels among the fastest in the fight lab. |
+| Subtlety | Raid DPS | PvP: Hemorrhage and Preparation builds | A bleed spec now: Hemorrhage makes the target take 15% more of your Rupture, Serrated Blades adds 30%, Thousand Cuts turns Rupture ticks into cheaper Hemorrhages, and Vanish buys a second Premeditation and Garrote opener. Last of the three in the simulator's full raid, about 8% behind Combat. |
+| Daggers (split) | Leveling only | - | Assassination and Combat with Setup and Initiative from Subtlety, found by the open leveling search in the fight lab. |
+| Combat-Subtlety | Leveling only | - | Subtlety's openers (Premeditation, Initiative), Ghostly Strike and Hemorrhage with Combat's defenses; the fastest rogue leveling build in the fight lab. |
 
-## Forever headline changes (beta client build 1.60.1.70009, 2026-09-25)
+## Forever headline changes (beta client build 1.60.1.70291, 2026-10-08)
 
-- **Removed:** Improved Backstab, Dagger/Mace/Sword/Fist Weapon Specialization, Sleight of Hand, Improved Sap, Deadliness.
-- **New:** Mutilate, Venom (Assassination); Puncturing Wounds, Flawless Execution (Eviscerate -10 Energy; replaced Restless Blades in beta build 69893), Hack and Slash (Combat); Dirty Tricks,
-  Improved Distract, Quietus, Cutthroat, Thousand Cuts (Subtlety).
-- **Moved/reworked:** Improved Eviscerate → Combat, Improved Gouge → Assassination, Vigor → T5 (2 ranks), Opportunity 2 ranks,
-  Master of Deception 3 ranks, Precision 3 ranks, Weapon Expertise = dodge/parry reduction, Lethality 6%/rank.
-- **Beta client (build 70009):** Precision 1%/rank, Hack and Slash dagger/fist crit 1-5% and mace 15% armor, Serrated Blades 3/6/9% armor; Rupture, Instant Poison and Deadly Poison are ~30% below Classic, Expose Armor is 450 armor per point with no talent multiplier, Mutilate ranks at 30/40/50/60, Hemorrhage is one rank.
+- **Removed:** Improved Backstab (now Puncturing Wounds), Dagger, Mace, Sword and Fist Weapon Specialization (merged into Hack and Slash), Improved Sap (now Dirty Tricks), Sleight of Hand, Deadliness.
+- **New:** Mutilate (the 21-point talent: both weapons strike, +20% against poisoned targets, 2 combo points; Blizzard says both weapons must be daggers) and Venom (the 31-point finisher: poisons deal 30% more and apply 10% more often) in Assassination; Puncturing Wounds (Backstab +30% crit and a 45% chance of an extra combo point, Mutilate +15% crit), Flawless Execution (the 16-point talent: Eviscerate costs 10 less) and Hack and Slash (swords and axes 5% extra attacks, daggers and fists 5% crit, maces 15% armor ignored) in Combat; Dirty Tricks (Sap and Blind 50% cheaper), Improved Distract, Quietus (Sinister Strike, Ghostly Strike and Hemorrhage +10% below 35% health), Cutthroat (Backstab can let the next Ambush skip Stealth) and Thousand Cuts (the 31-point talent: Rupture ticks take 3 energy off the next Hemorrhage or Backstab, up to 5 times) in Subtlety.
+- **Moved:** Improved Eviscerate to Combat row 1, Improved Gouge to Assassination row 1; Cold Blood and Premeditation are the 16-point talents (were 21 and 31); Vigor moves up from row 7 to row 5, with 2 ranks; Seal Fate no longer needs Cold Blood; Setup, Improved Ambush and Camouflage move up to rows 1-2, Heightened Senses to row 4.
+- **Rank caps:** Deflection, Precision and Master of Deception 3 ranks (were 5), Opportunity 2 (was 5), Improved Kidney Shot 2 (was 3), Vigor 2 (was 1).
+- **Reworked:** Malice and Precision now cover poisons too; Lethality is 4% a rank (20% at 5, was 30%) and, like Cold Blood and Remorseless Attacks, also covers Mutilate; Improved Expose Armor makes Expose Armor 10 energy cheaper and hands back 2 combo points at 5 (was +50% armor); Improved Poisons adds a 50% chance not to use a charge; Weapon Expertise takes 2% off your chance to be dodged or parried (was weapon skill); Aggression adds Backstab; Dual Wield Specialization is 25% (was 50%); Endurance is 60% off the cooldowns (was 2 minutes); Setup and Initiative reach 100% (were 45% and 75%); Dirty Deeds lets Garrote be used from the front; Serrated Blades ignores 9% of the target's armor; Murder is 4% against Humanoids and Giants only; Opportunity is 10% and covers Mutilate.
+- **Spells (70291 against Classic):** Hemorrhage deals 100% weapon damage (145% with a dagger) and makes the target take 15% more of your Rupture (was a stacking physical debuff for the raid); Ghostly Strike deals 180% with a dagger in the main hand; Premeditation's points last 20 seconds (were 10); Rupture is about 41% below Classic (469 over 16 seconds at 5 points, was 800); Instant Poison and Deadly Poison about 32% below (76-100 and 92 over 12 seconds) but with more charges (175 and 180, were 115 and 105); Expose Armor removes 450 armor a point (2,250 at 5, was 1,700); Mutilate has ranks at 30, 40, 50 and 60, Hemorrhage one rank; Sap no longer breaks Stealth and Distract also lowers the enemies' stealth detection for 10 seconds (Blizzard's rogue deep dive, 2026-10-07).
+- **Gear (deep dive, 2026-10-07):** poisons now go on a weapon together with a sharpening stone or weightstone, and rogues can use one-handed axes.
+- **Since build 69893:** Mutilate rank 1 adds 13 damage per weapon (was 17); Riposte's disarm lasts 6 seconds.
 
 ## Research files
 

@@ -12,18 +12,19 @@
 
 **Not in this build:** **Holy Shield** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
 
-**Before the fight:** **Blessing of Might** and **Devotion Aura** up, a one-handed weapon and a shield. **Seal of Fury** before each pull (it also shields you).
+**Before the fight:** **Blessing of Might** and **Devotion Aura** up, a one-handed weapon and a shield; **Righteous Fury** too if you have **Improved Righteous Fury** (less damage taken while it is on). **Seal of Fury** before each pull: with a shield it also gives you an absorb.
 
 **In the fight**, top to bottom:
 
-1. **Holy Shield** whenever it is down.
-2. **Judgement** and **Holy Strike** whenever ready (**Swift Judgement** to reset Judgement).
-3. Keep **Seal of Fury** up.
-4. **Consecration** while your mana is above 60%.
-5. **Hammer of Wrath** when the mob is below 20% health.
-6. Low on health: **Templar's Bulwark**, **Divine Protection**, **Hammer of Justice**, then **Holy Light**; **Lay on Hands** in an emergency.
+1. **Hammer of Justice** a mob that casts spells.
+2. Keep **Seal of Fury** up.
+3. **Hammer of Wrath** when the mob is below 20% health.
+4. **Holy Shield** whenever it is down.
+5. **Judgement** and **Holy Strike** whenever ready; **Swift Judgement** right after a **Judgement** for a free second one.
+6. **Consecration** while your mana is above 60% and the mob has more than 30% health left.
+7. Low on health (below about a third, with the mob above a fifth): **Templar's Bulwark**, then **Holy Light** behind its absorb; otherwise **Divine Protection** (below 30%) or **Hammer of Justice**, and **Holy Light** while the mob cannot hit you; **Flash of Light** below a quarter; **Lay on Hands** below 15%.
 
-**Between fights:** Drink below a sixth of your mana; you rarely need to eat.
+**Between fights:** Drink below 15% of your mana; you rarely need to eat.
 
 ## Why this rotation
 

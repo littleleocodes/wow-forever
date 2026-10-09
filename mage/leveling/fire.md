@@ -6,17 +6,18 @@
 
 ## How to play
 
-**Before the fight:** **Frost Armor** (later **Mage Armor**) and **Arcane Intellect** up. Pull from as far away as you can.
+**Before the fight:** **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up; **Combustion** at the pull when it is ready. Pull from as far away as you can.
 
 **In the fight**, top to bottom:
 
-1. **Fireball** while the mob has more than a fifth of its health.
-2. **Frost Nova** when it reaches you, then step back.
-3. **Fire Blast** whenever ready; **Scorch** only when you have plenty of mana.
-4. Finish a nearly dead mob with your wand.
-5. **Counterspell** a mob that casts spells.
+1. **Fireball** while the mob walks in and while it has more than a fifth of its health.
+2. **Fire Blast** when the mob would reach you before a **Fireball** lands, or once it is on you (not below a tenth of its health).
+3. **Frost Nova** when it reaches you, then step back; **Blast Wave** if **Frost Nova** is on cooldown.
+4. **Ice Lance** while the mob is frozen; **Pyroblast** only at 3 stacks of **Heating Up**.
+5. Mob on you and no control left: **Scorch**, only above half your mana. Finish a nearly dead mob with your wand.
+6. **Counterspell** a mob that casts spells.
 
-**Between fights:** Drink your conjured water below a third of your mana, **Evocation** when you are out, eat below two thirds of your health.
+**Between fights:** Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.
 
 ## Why this rotation
 

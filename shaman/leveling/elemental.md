@@ -8,15 +8,19 @@
 
 ## How to play
 
-**Before the fight:** **Lightning Shield** up. Pull from range with **Lightning Bolt**.
+**Before the fight:** **Lightning Shield** up, **Rockbiter Weapon** on your weapon (**Windfury Weapon** from 30): you swing it whenever nothing else is ready. Drop **Searing Totem** as you pull while you have more than half your mana, and pull from range with **Lightning Bolt**.
 
 **In the fight**, top to bottom:
 
-1. **Lightning Bolt** while the mob walks in.
-2. **Flame Shock**, **Earth Shock** and **Lava Burst** whenever ready.
-3. **Lightning Bolt** in between while your mana lasts.
+1. **Lightning Bolt** while the mob walks in, as long as the cast ends before it reaches you.
+2. **Earth Shock** when it would kill the mob, or to interrupt a caster.
+3. **Flame Shock** while it is not on the mob and the mob has more than 30% health.
+4. **Lava Burst** whenever it is ready (20% more damage with **Flame Shock** on the mob).
+5. **Earth Shock** whenever the shock cooldown is free.
+6. **Lightning Bolt** in between while you keep the mana for the next **Earth Shock** and **Flame Shock**; otherwise let your weapon swing.
+7. Low on health at any point: under 30% drop **Stoneclaw Totem**, under 40% cast **Lesser Healing Wave**.
 
-**Between fights:** Heal back to 80% health, drink below a third of your mana.
+**Between fights:** Heal back to 80% health (eat if you cannot), drink below a third of your mana.
 
 ## Why this rotation
 

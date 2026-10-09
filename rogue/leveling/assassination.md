@@ -6,20 +6,19 @@
 
 ## How to play
 
-**Not in this build:** **Adrenaline Rush** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
-
-**Before the fight:** **Instant Poison** on your main hand, **Deadly Poison** on your off hand. Stealth up behind the mob.
+**Before the fight:** Daggers in both hands: **Instant Poison** on your main hand, **Deadly Poison** on your off hand. Stealth up behind the mob.
 
 **In the fight**, top to bottom:
 
-1. Open with **Cheap Shot** (**Garrote** before level 26).
-2. **Slice and Dice** at 1-2 combo points when it is not up.
-3. **Sinister Strike** until you have 5 combo points.
-4. At 5 points: **Eviscerate** (**Kidney Shot** instead if you are below half health).
+1. Open with **Garrote**.
+2. **Sinister Strike** until you have 5 combo points: the mob faces you after the opener, so **Backstab** is out.
+3. At 5 points: **Eviscerate**; earlier when it would kill the mob.
+4. **Cold Blood** right before an **Eviscerate** at 5 points.
 5. **Riposte** after you parry.
-6. **Adrenaline Rush** at the start of a fight; **Evasion** when your health gets low.
+6. **Kick** a caster mob's spell.
+7. **Evasion** when your health gets low.
 
-**Between fights:** Bandage below 60% health, eat below half.
+**Between fights:** Bandage below 60% health, eat below 40%.
 
 ## Why this rotation
 

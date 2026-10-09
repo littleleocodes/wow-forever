@@ -14,13 +14,14 @@
 
 **In the fight**, top to bottom:
 
-1. **Judgement** and **Holy Strike** whenever ready.
-2. **Consecration** while your mana lasts.
-3. **Hammer of Justice** when you are hurt (or to set up a big Judgement).
-4. **Hammer of Wrath** when the mob is below 20% health.
-5. Low on health: **Divine Protection** and **Holy Light**; **Lay on Hands** in an emergency.
+1. **Hammer of Justice** a mob that casts spells: it stands back and casts until you stop it.
+2. Keep your seal up: put it back if it runs out.
+3. **Hammer of Wrath** when the mob is below 20% health.
+4. **Hammer of Justice**, then **Judgement**, when both are ready and the mob has more than 30% health left: **Seal of Command**'s judgement hits a stunned mob twice as hard.
+5. **Judgement** and **Holy Strike** whenever ready.
+6. Low on health (below a third, with the mob above a quarter): **Divine Protection** and **Holy Light** inside it, or **Hammer of Justice** and heal during the stun; **Flash of Light** below a quarter; **Lay on Hands** below 15%.
 
-**Between fights:** Heal yourself back to 80% with **Holy Light** or **Flash of Light**, drink below a third of your mana.
+**Between fights:** Heal yourself back to 80% with **Holy Light** or **Flash of Light**, drink below 15% of your mana.
 
 ## Why this rotation
 

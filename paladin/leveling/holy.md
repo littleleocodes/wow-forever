@@ -14,13 +14,13 @@
 
 **In the fight**, top to bottom:
 
-1. **Holy Shock** the mob as it walks in (while your mana is high).
-2. **Judgement** and **Holy Strike** whenever ready.
+1. **Hammer of Justice** a mob that casts spells.
+2. Once you have **Holy Shock**: cast it at the mob as it walks in while your mana is above 70%, after **Divine Favor** for a sure critical hit while you are healthy.
 3. Keep **Seal of Righteousness** up.
-4. Low on health: **Holy Shock** on yourself, **Divine Protection**, **Hammer of Justice**, then **Holy Light**; **Lay on Hands** in an emergency.
-5. **Hammer of Justice** a mob that casts spells.
+4. **Judgement** and **Holy Strike** whenever ready.
+5. Low on health (below 40%, with the mob above a fifth): **Holy Shock** on yourself (after **Divine Favor** if it is ready), **Divine Protection** below 30%, **Hammer of Justice**, then **Holy Light**; **Flash of Light** below a quarter; **Lay on Hands** below 15%.
 
-**Between fights:** Heal yourself back up with **Holy Light**, drink below a quarter of your mana.
+**Between fights:** Heal yourself back to 80% with **Holy Light** or **Flash of Light**, drink below a quarter of your mana.
 
 ## Why this rotation
 

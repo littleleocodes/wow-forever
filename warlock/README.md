@@ -57,22 +57,46 @@ Differences under 2-3% are within the simulations' noise and assumptions: treat 
 
 ## Roles and specs
 
-| Spec | Raid role | Classic standing | Forever outlook |
+| Spec | Raid role | Classic standing | Forever outlook (beta build 70291) |
 |---|---|---|---|
-| Affliction | DPS | Dip for Suppression/Improved Life Tap; SM/Ruin for pet-keepers | Full DoT spec: Malediction, Pandemic, Malevolence, Shadow Mastery, Drain Hope |
-| Demonology | Support / PvP | Demonic Sacrifice dip; Soul Link for PvP | DS at tier 3, Soul Link at tier 5, Demonic Pact capstone keeps a pet with DS |
-| Destruction | Raid DPS | Ruin + Improved Shadow Bolt for Shadow Bolt spam | Still the Shadow Bolt tree, plus an Immolate/Conflagrate/Incinerate fire path |
+| Affliction | DPS | A dip for Suppression and Improved Life Tap; SM/Ruin for warlocks who keep a pet | A damage-over-time tree: Malediction, Pandemic, Malevolence, Shadow Mastery and Improved Bane of Agony, with Siphon Life and the Wrack capstone at the bottom. In a raid it still fills with Shadow Bolt (the simulator's pick is 30/0/21 with a Succubus out); while leveling, its dots, a Voidwalker and the wand. |
+| Demonology | DPS | A Demonic Sacrifice dip; Soul Link for PvP | The simulator's best warlock raid spec (2026-10-09). Demonic Pact keeps the Imp's sacrifice (+15% Shadow damage) while the Succubus fights, and Master Demonologist, Soul Link and Demonic Knowledge add their bonuses on top. Demons now scale from your gear. About tied with Affliction-Demonology as the fastest leveling build, with Demonic Brand. |
+| Destruction | DPS | Ruin + Improved Shadow Bolt for Shadow Bolt spam | Still a Shadow Bolt tree in a raid: the Imp sacrificed, Conflagrate on cooldown with Shadow and Flame (+10% Shadow damage, Immolate kept). The Incinerate capstone loses to Shadow Bolt in the simulator, even in its own build. Behind the other specs both in a raid and while leveling (2026-10-09). |
 
-## Forever headline changes (beta client build 1.60.1.70009, 2026-09-25)
+## Forever headline changes (beta client build 1.60.1.70291, 2026-10-08)
 
-- **Removed:** Grim Reach, Dark Pact, Improved Curse of Agony/Weakness/Exhaustion, Improved Drain Life/Soul/Mana (Affliction);
-  Fel Intellect, Fel Stamina, Improved Healthstone/Firestone/Spellstone, Improved Subjugate Demon (Demonology);
+Forever's warlock has 52 talents (17 Affliction, 19 Demonology, 16 Destruction): 21 are new, 2 are Classic talents under a new name, and 19 Classic talents are gone.
+
+- **Removed:** Grim Reach, Dark Pact, Improved Curse of Weakness, Improved Curse of Exhaustion, Improved Drain Life, Improved Drain Soul, Improved Drain Mana (Affliction);
+  Fel Intellect, Fel Stamina, Improved Healthstone, Improved Firestone, Improved Spellstone, Improved Enslave Demon (Demonology);
   Devastation, Improved Immolate, Emberstorm, Improved Searing Pain, Improved Firebolt, Improved Lash of Pain (Destruction).
-- **New:** Malediction, Soul Harvesting, Improved Drains, Improved Bane of Agony, Pandemic, Malevolence, Soul Siphon, Wrack (a 6s Shadow channel that buffs your other Shadow DoTs; replaced Drain Hope in beta build 69893);
-  Demonic Aegis, Fel Vitality, Demonic Energies, Decimation, Demonic Brand, Improved Felhunter, Demonic Knowledge, Demonic Pact;
-  Molten Skin, Agonizing Flames, Bane of Havoc, Fire and Brimstone, Shadow and Flame, Incinerate.
-- **Moved/reworked:** Demonic Sacrifice → T3, Soul Link → T5, Ruin → 5-rank T3, Suppression = all-spell hit + threat, Improved Life Tap → T1, Unholy Power → T1.
-- **Beta client (build 70009):** Improved Drains is a flat 7/13/20% and Soul Siphon 4/8/12% per other Affliction effect (both cover Wrack); Demonic Sacrifice pairs the Imp with +15% Shadow and the Succubus with +15% Fire (the reverse of Classic); Improved Shadow Bolt's debuff lasts 12s; Incinerate has ranks at 40/50/60 (2.5s cast) and Conflagrate six ranks from 25; Shadow Bolt, Corruption, Agony and Immolate deal about half their Classic damage at 60; Curse of the Elements covers every school; Curse of Shadow and Dark Pact are gone.
+- **Renamed:** Improved Curse of Agony is Improved Bane of Agony (2 ranks, +10%); Improved Succubus is Improved Sayaad.
+- **New:** Malediction, Soul Harvest, Improved Drains, Pandemic, Malevolence, Soul Siphon, Wrack (Affliction; Wrack, a 6 s Shadow channel that
+  raises your other Shadow dots by 10%, replaced Drain Hope in build 69893);
+  Demonic Aegis, Fel Vitality, Demonic Energies, Decimation, Demonic Brand, Improved Felhunter, Demonic Knowledge, Demonic Pact (Demonology);
+  Molten Skin, Agonizing Flames, Bane of Havoc, Fire and Brimstone, Shadow and Flame, Incinerate (Destruction).
+- **Moved and reworked:** Improved Life Tap, Unholy Power (+10% pet damage), Improved Health Funnel (threat-free) and Bane (now also
+  Incinerate) sit at tier 1; Demonic Sacrifice at tier 3; Soul Link at tier 5 (30% of your damage taken goes to the demon, +3% damage for
+  both); Ruin has 5 ranks at tier 3; Conflagrate sits at tier 4. Suppression is +5% hit with every spell and 20% less threat; Improved
+  Corruption makes Corruption instant and adds 10% damage; Improved Shadow Bolt gives 20% more Shadow damage from you for 12 s after a
+  Shadow Bolt crit; Shadow Mastery is +5% (was 10%); Nightfall procs from Corruption, the drains and Wrack (4%); Master Demonologist gives you
+  and the demon Imp +10% Fire damage, Voidwalker -10% physical damage taken, Succubus +10% Shadow damage, Felhunter -10% magic damage taken.
+- **Demonic Sacrifice** pairs the Imp with +15% Shadow damage and the Succubus with +15% Fire damage (the reverse of Classic), the
+  Voidwalker with 2% mana and the Felhunter with 3% health every 4 s; the **Demonic Pact** capstone keeps the buff while a different demon is out.
+- **Spellbook:** Curse of Agony and Curse of Doom are Banes now (Bane of Agony, Bane of Doom): a warlock keeps one Bane and one Curse on a
+  target, so Curse of the Elements and Bane of Agony stay up together. Curse of the Elements covers every magic school (75 resistance, +10%
+  damage taken); Curse of Shadow is gone. At level 60, Shadow Bolt, Corruption, Bane of Agony, Immolate, Searing Pain, Shadowburn,
+  Conflagrate and Soul Fire deal about half their Classic base damage (Shadow Bolt 253-283 against 482-538). Incinerate has ranks at 40, 50
+  and 60 (2.5 s cast), and Conflagrate six ranks from level 25. Spellstone and Firestone are weapon enchants (Major Spellstone: +2% spell
+  haste and +21 Shadow damage; Major Firestone: +2% spell crit and +21 Fire damage) that stack with weapon oils (rogue and warlock deep
+  dive, 2026-10-07).
+- **Demons scale from your stats** (deep dive, 2026-10-07; the numbers are the 70291 client's): 17% of your spell damage as attack power,
+  10% as spell damage, 35% of your armor, 7.5 health per point of your Stamina, and your spell crit chance. This project's simulator patch
+  and fight lab use them; a beta tester's pet pane would confirm them.
+- **Beta notes since 2026-10-02:** Soul Harvesting renamed Soul Harvest (it now grants its 50/100% mana regeneration); Drain Soul stops when
+  you start another cast; Hellfire can crit; Demonic Brand reworked in 70291 (6 empowered pet attacks of 65-68 damage, high threat only when
+  Shadow); Life Tap scales with Spirit (tooltip fixed 2026-10-08); the Voidwalker's Sacrifice scales with 10% of your spell healing; your
+  current demon is stunned while you summon a new one.
 
 ## Research files
 

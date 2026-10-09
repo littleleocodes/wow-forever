@@ -88,80 +88,83 @@
  "mage": {
   "frost-leveling": {
    "before": [
-    "**Frost Armor** (later **Ice Armor** or **Mage Armor**) and **Arcane Intellect** up.",
+    "**Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up; **Ice Barrier** before each pull once you have it.",
     "Pull from as far away as you can."
    ],
    "steps": [
-    "**Frostbolt** while the mob walks in (it slows it).",
-    "**Frost Nova** when it reaches you, then step back.",
-    "**Ice Lance** (or **Frostbolt**) while it is frozen.",
-    "Finish a nearly dead mob with **Fire Blast** or your wand.",
+    "**Frostbolt** while the mob walks in (it slows it); if it would reach you before the cast ends and **Frost Nova** is ready, wand it until it arrives.",
+    "**Frost Nova** when it reaches you, then step back out of melee; **Cold Snap** resets **Frost Nova** if it is still on cooldown.",
+    "**Ice Lance** again and again while the mob is frozen (**Frost Nova**, **Frostbite** or **Fingers of Frost**); **Frostbolt** otherwise.",
+    "Finish with an **Ice Lance** that will kill, or your wand: no **Frostbolt** below a tenth of its health, and no **Fire Blast** or **Cone of Cold** at all.",
     "**Counterspell** a mob that casts spells."
    ],
    "between": [
-    "Drink your conjured water below a third of your mana, **Evocation** when you are out, eat below two thirds of your health."
+    "Drink your conjured water below a quarter of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health."
    ]
   },
   "fire-leveling": {
    "before": [
-    "**Frost Armor** (later **Mage Armor**) and **Arcane Intellect** up.",
+    "**Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up; **Combustion** at the pull when it is ready.",
     "Pull from as far away as you can."
    ],
    "steps": [
-    "**Fireball** while the mob has more than a fifth of its health.",
-    "**Frost Nova** when it reaches you, then step back.",
-    "**Fire Blast** whenever ready; **Scorch** only when you have plenty of mana.",
-    "Finish a nearly dead mob with your wand.",
+    "**Fireball** while the mob walks in and while it has more than a fifth of its health.",
+    "**Fire Blast** when the mob would reach you before a **Fireball** lands, or once it is on you (not below a tenth of its health).",
+    "**Frost Nova** when it reaches you, then step back; **Blast Wave** if **Frost Nova** is on cooldown.",
+    "**Ice Lance** while the mob is frozen; **Pyroblast** only at 3 stacks of **Heating Up**.",
+    "Mob on you and no control left: **Scorch**, only above half your mana. Finish a nearly dead mob with your wand.",
     "**Counterspell** a mob that casts spells."
    ],
    "between": [
-    "Drink your conjured water below a third of your mana, **Evocation** when you are out, eat below two thirds of your health."
+    "Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health."
    ]
   },
   "frostfire-leveling": {
    "before": [
-    "**Frost Armor** (later **Mage Armor**) and **Arcane Intellect** up.",
+    "**Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up.",
     "Pull from as far away as you can."
    ],
    "steps": [
-    "**Frostfire Bolt** while the mob walks in.",
-    "**Frost Nova** when it reaches you, then step back.",
-    "**Ice Lance** while it is frozen, **Fire Blast** whenever ready.",
-    "Finish a nearly dead mob with your wand."
+    "**Frostbolt** (from level 40 **Frostfire Bolt**) while the mob walks in; if it would reach you before the cast ends, **Fire Blast** it.",
+    "**Frost Nova** when it reaches you, then step back; **Cone of Cold** if **Frost Nova** is on cooldown.",
+    "**Ice Lance** while the mob is frozen; **Pyroblast** at 3 stacks of **Heating Up**.",
+    "**Fire Blast** when the mob is on you; finish with a **Fire Blast** or **Ice Lance** that will kill, or your wand.",
+    "**Counterspell** a mob that casts spells."
    ],
    "between": [
-    "Drink your conjured water below a third of your mana, eat below two thirds of your health."
+    "Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health."
    ]
   },
   "frost-aoe": {
    "before": [
-    "**Ice Armor** and **Arcane Intellect** up.",
+    "**Ice Armor** and **Arcane Intellect** up; **Ice Barrier** before the pull once you have it.",
     "Gather several mobs (about four) before you fight."
    ],
    "steps": [
-    "**Frost Nova** when they reach you, then step back out of melee.",
-    "**Blizzard** on the group; **Cone of Cold** when they close in again.",
-    "**Arcane Explosion** if they are on top of you.",
-    "Single leftovers: **Ice Lance** / **Frostbolt**, wand to finish."
+    "**Frostbolt** the first mob while the pack walks in.",
+    "**Frost Nova** when two or more reach you, then walk out of the freeze.",
+    "**Blizzard** while three or more are frozen, slowed or still walking back to you.",
+    "**Cone of Cold** (or **Blast Wave**) when two or more close in again; **Arcane Explosion** if they are on you and your mana allows.",
+    "Single leftovers: **Ice Lance** while frozen, **Frostbolt** otherwise, **Fire Blast** or your wand to finish."
    ],
    "between": [
-    "Drink your conjured water below a third of your mana, **Evocation** when you are out."
+    "Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health."
    ]
   },
   "arcane-leveling": {
    "before": [
-    "**Frost Armor** (later **Mage Armor**) and **Arcane Intellect** up.",
-    "Pull from as far away as you can; **Arcane Power** and **Presence of Mind** at the pull when they are ready."
+    "**Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up.",
+    "Pull from as far away as you can; **Presence of Mind** at the pull, and **Arcane Power** too while you have more than half your mana."
    ],
    "steps": [
-    "**Arcane Blast** twice while the mob walks in (each cast makes the next one cost more; stop at two).",
-    "**Arcane Missiles** after the Arcane Blasts, and at once when Missile Barrage lights up (not on a mob that is nearly dead).",
-    "**Frost Nova** when the mob reaches you, then step back.",
-    "Finish a nearly dead mob with **Fire Blast** or your wand.",
-    "Low on mana: **Frostbolt** instead of Arcane Blast."
+    "**Arcane Blast** while the mob walks in: at most two in a row, only if the cast ends before the mob reaches you and costs no more than a quarter of your mana.",
+    "**Arcane Missiles** to spend the stacks, and at once when **Missile Barrage** lights up (after your two stacks, or when the mob is on you); none below about a third of the mob's health.",
+    "**Frost Nova** when the mob reaches you (**Cone of Cold** if it is on cooldown), then step back; **Ice Lance** while it is frozen.",
+    "**Frostbolt** when **Arcane Missiles** is out (low mana, or the mob under a third of its health); below a fifth, finish with **Fire Blast**, **Ice Lance** or your wand.",
+    "**Counterspell** a mob that casts spells."
    ],
    "between": [
-    "Drink your conjured water below a third of your mana, **Evocation** when you are out, eat below two thirds of your health."
+    "Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health."
    ]
   }
  },
@@ -172,14 +175,15 @@
     "Before each pull: **Seal of Command** (**Seal of Righteousness** before you have it)."
    ],
    "steps": [
-    "**Judgement** and **Holy Strike** whenever ready.",
-    "**Consecration** while your mana lasts.",
-    "**Hammer of Justice** when you are hurt (or to set up a big Judgement).",
+    "**Hammer of Justice** a mob that casts spells: it stands back and casts until you stop it.",
+    "Keep your seal up: put it back if it runs out.",
     "**Hammer of Wrath** when the mob is below 20% health.",
-    "Low on health: **Divine Protection** and **Holy Light**; **Lay on Hands** in an emergency."
+    "**Hammer of Justice**, then **Judgement**, when both are ready and the mob has more than 30% health left: **Seal of Command**'s judgement hits a stunned mob twice as hard.",
+    "**Judgement** and **Holy Strike** whenever ready.",
+    "Low on health (below a third, with the mob above a quarter): **Divine Protection** and **Holy Light** inside it, or **Hammer of Justice** and heal during the stun; **Flash of Light** below a quarter; **Lay on Hands** below 15%."
    ],
    "between": [
-    "Heal yourself back to 80% with **Holy Light** or **Flash of Light**, drink below a third of your mana."
+    "Heal yourself back to 80% with **Holy Light** or **Flash of Light**, drink below 15% of your mana."
    ]
   },
   "holy-leveling": {
@@ -188,31 +192,32 @@
     "**Seal of Righteousness** before each pull."
    ],
    "steps": [
-    "**Holy Shock** the mob as it walks in (while your mana is high).",
-    "**Judgement** and **Holy Strike** whenever ready.",
+    "**Hammer of Justice** a mob that casts spells.",
+    "Once you have **Holy Shock**: cast it at the mob as it walks in while your mana is above 70%, after **Divine Favor** for a sure critical hit while you are healthy.",
     "Keep **Seal of Righteousness** up.",
-    "Low on health: **Holy Shock** on yourself, **Divine Protection**, **Hammer of Justice**, then **Holy Light**; **Lay on Hands** in an emergency.",
-    "**Hammer of Justice** a mob that casts spells."
+    "**Judgement** and **Holy Strike** whenever ready.",
+    "Low on health (below 40%, with the mob above a fifth): **Holy Shock** on yourself (after **Divine Favor** if it is ready), **Divine Protection** below 30%, **Hammer of Justice**, then **Holy Light**; **Flash of Light** below a quarter; **Lay on Hands** below 15%."
    ],
    "between": [
-    "Heal yourself back up with **Holy Light**, drink below a quarter of your mana."
+    "Heal yourself back to 80% with **Holy Light** or **Flash of Light**, drink below a quarter of your mana."
    ]
   },
   "prot-leveling": {
    "before": [
-    "**Blessing of Might** and **Devotion Aura** up, a one-handed weapon and a shield.",
-    "**Seal of Fury** before each pull (it also shields you)."
+    "**Blessing of Might** and **Devotion Aura** up, a one-handed weapon and a shield; **Righteous Fury** too if you have **Improved Righteous Fury** (less damage taken while it is on).",
+    "**Seal of Fury** before each pull: with a shield it also gives you an absorb."
    ],
    "steps": [
-    "**Holy Shield** whenever it is down.",
-    "**Judgement** and **Holy Strike** whenever ready (**Swift Judgement** to reset Judgement).",
+    "**Hammer of Justice** a mob that casts spells.",
     "Keep **Seal of Fury** up.",
-    "**Consecration** while your mana is above 60%.",
     "**Hammer of Wrath** when the mob is below 20% health.",
-    "Low on health: **Templar's Bulwark**, **Divine Protection**, **Hammer of Justice**, then **Holy Light**; **Lay on Hands** in an emergency."
+    "**Holy Shield** whenever it is down.",
+    "**Judgement** and **Holy Strike** whenever ready; **Swift Judgement** right after a **Judgement** for a free second one.",
+    "**Consecration** while your mana is above 60% and the mob has more than 30% health left.",
+    "Low on health (below about a third, with the mob above a fifth): **Templar's Bulwark**, then **Holy Light** behind its absorb; otherwise **Divine Protection** (below 30%) or **Hammer of Justice**, and **Holy Light** while the mob cannot hit you; **Flash of Light** below a quarter; **Lay on Hands** below 15%."
    ],
    "between": [
-    "Drink below a sixth of your mana; you rarely need to eat."
+    "Drink below 15% of your mana; you rarely need to eat."
    ]
   }
  },
@@ -274,45 +279,52 @@
     "Stealth up behind the mob."
    ],
    "steps": [
-    "Open with **Cheap Shot** (**Garrote** before level 26).",
-    "**Slice and Dice** at 1-2 combo points when it is not up.",
+    "Open with **Garrote**.",
     "**Sinister Strike** until you have 5 combo points.",
-    "At 5 points: **Eviscerate** (**Kidney Shot** instead if you are below half health).",
+    "At 5 points: **Eviscerate**; earlier when it would kill the mob.",
+    "**Cold Blood** right before an **Eviscerate** at 5 points.",
     "**Riposte** after you parry.",
-    "**Blade Flurry** and **Adrenaline Rush** at the start of a fight; **Evasion** when your health gets low."
+    "**Blade Flurry** and **Adrenaline Rush** at the start of a fight.",
+    "**Evasion** when your health gets low."
    ],
    "between": [
-    "Bandage below 60% health, eat below half."
+    "Bandage below 60% health, eat below 40%."
    ]
   },
   "combat-daggers-raid": {
    "before": [
-    "**Instant Poison** on your main hand, **Deadly Poison** on your off hand.",
+    "Daggers in both hands: **Instant Poison** on your main hand, **Deadly Poison** on your off hand.",
     "Stealth up behind the mob."
    ],
    "steps": [
-    "Open with **Cheap Shot** (**Garrote** before level 26).",
-    "**Slice and Dice** at 1-2 combo points when it is not up.",
-    "**Sinister Strike** until you have 5 combo points.",
-    "At 5 points: **Eviscerate** (**Kidney Shot** instead if you are below half health).",
+    "Open with **Garrote**.",
+    "**Sinister Strike** until you have 5 combo points: the mob faces you after the opener, so **Backstab** is out.",
+    "At 5 points: **Eviscerate**; earlier when it would kill the mob.",
+    "**Cold Blood** right before an **Eviscerate** at 5 points.",
     "**Riposte** after you parry.",
-    "**Adrenaline Rush** at the start of a fight; **Evasion** when your health gets low."
+    "**Kick** a caster mob's spell.",
+    "**Evasion** when your health gets low."
    ],
    "between": [
-    "Bandage below 60% health, eat below half."
+    "Bandage below 60% health, eat below 40%."
    ]
   },
   "subtlety-leveling": {
    "before": [
-    "Daggers in both hands, poisons on.",
-    "Stealth up behind the mob; **Premeditation** for two free combo points."
+    "Daggers in both hands: **Instant Poison** on your main hand, **Deadly Poison** on your off hand.",
+    "Stealth up behind the mob.",
+    "**Premeditation** for two free combo points."
    ],
    "steps": [
-    "Open with **Ambush** at low level, **Garrote** once you have it at 30 (it bleeds through armor).",
-    "**Ghostly Strike** whenever ready (it also makes you dodge more).",
-    "**Hemorrhage** (or **Sinister Strike** before you have it) to build combo points.",
-    "At 5 points: **Eviscerate** (or earlier if it would kill the mob).",
-    "**Riposte** after you parry; **Evasion** when your health gets low (**Preparation** resets it)."
+    "Open with **Ambush** while fights are short; from the 30s on, **Garrote** (its bleed ignores armor and the mob lives through it).",
+    "**Ghostly Strike** whenever it is ready (it also makes you dodge more).",
+    "**Sinister Strike** to build combo points.",
+    "Once you have **Hemorrhage**, it replaces **Sinister Strike** as the builder.",
+    "At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder; earlier when it would kill the mob.",
+    "**Riposte** after you parry.",
+    "**Kick** a caster mob's spell.",
+    "**Evasion** when your health gets low.",
+    "If **Evasion** is on cooldown when you need it, **Preparation** resets it."
    ],
    "between": [
     "Bandage below 60% health, eat below half."
@@ -323,83 +335,96 @@
   "enhancement-dps": {
    "before": [
     "**Lightning Shield** up, **Rockbiter Weapon** on your weapon (**Windfury Weapon** from 30), a slow two-handed weapon.",
-    "Drop **Searing Totem** as you pull."
+    "Walk in without an opening **Lightning Bolt** (its mana costs more drinking than it saves) and drop **Searing Totem** as you pull while you have more than half your mana."
    ],
    "steps": [
-    "**Lightning Bolt** while the mob walks in.",
-    "**Stormstrike** whenever ready, then **Earth Shock**.",
-    "**Flame Shock** while your mana allows.",
-    "**Lightning Bolt** when Maelstrom Weapon reaches 5 stacks (it is instant).",
-    "Low on health: **Stoneclaw Totem** and **Lesser Healing Wave**."
+    "**Rage of the Farseer** at the start of a fight whenever it is ready.",
+    "With 5 stacks of **Maelstrom Weapon**: an instant **Lightning Bolt**, once the mob is under 35% health (not on a mob one swing from dying).",
+    "**Stormstrike** whenever it is ready.",
+    "**Earth Shock** to finish the mob once it is under 20% health.",
+    "**Flame Shock** while it is not on the mob, you have more than half your mana and the mob more than 40% health.",
+    "Low on health at any point: under 30% drop **Stoneclaw Totem**, under 40% cast **Lesser Healing Wave**."
    ],
    "between": [
-    "Heal back to 80% health, drink below a third of your mana."
+    "Heal back to 80% health with **Lesser Healing Wave** (**Healing Wave** for a big gap), drink below a third of your mana."
    ]
   },
   "elemental-dps": {
    "before": [
-    "**Lightning Shield** up.",
-    "Pull from range with **Lightning Bolt**."
+    "**Lightning Shield** up, **Rockbiter Weapon** on your weapon (**Windfury Weapon** from 30): you swing it whenever nothing else is ready.",
+    "Drop **Searing Totem** as you pull while you have more than half your mana, and pull from range with **Lightning Bolt**."
    ],
    "steps": [
-    "**Lightning Bolt** while the mob walks in.",
-    "**Flame Shock**, **Earth Shock** and **Lava Burst** whenever ready.",
-    "**Lightning Bolt** in between while your mana lasts."
+    "**Lightning Bolt** while the mob walks in, as long as the cast ends before it reaches you.",
+    "**Earth Shock** when it would kill the mob, or to interrupt a caster.",
+    "**Flame Shock** while it is not on the mob and the mob has more than 30% health.",
+    "**Lava Burst** whenever it is ready (20% more damage with **Flame Shock** on the mob).",
+    "**Earth Shock** whenever the shock cooldown is free.",
+    "**Lightning Bolt** in between while you keep the mana for the next **Earth Shock** and **Flame Shock**; otherwise let your weapon swing.",
+    "Low on health at any point: under 30% drop **Stoneclaw Totem**, under 40% cast **Lesser Healing Wave**."
    ],
    "between": [
-    "Heal back to 80% health, drink below a third of your mana."
+    "Heal back to 80% health (eat if you cannot), drink below a third of your mana."
    ]
   }
  },
  "warlock": {
   "affliction-leveling": {
    "before": [
-    "**Demon Skin** (later **Demon Armor**) up, **Summon Voidwalker**.",
-    "Send the Voidwalker in first and let it hold the mob."
+    "**Demon Skin** (**Demon Armor** from level 20) up, **Summon Voidwalker**.",
+    "Send the Voidwalker in first and let it hold the mob with **Torment**.",
+    "Open with **Amplify Curse** whenever it is ready: it makes that fight's **Bane of Agony** 50% stronger.",
+    "With **Soul Link**: turn it on once the Voidwalker is out."
    ],
    "steps": [
-    "**Corruption**, **Bane of Agony**, **Siphon Life** and **Immolate** on the mob.",
-    "**Wrack** once the damage-over-time spells are up.",
-    "**Shadow Bolt** while you have plenty of mana, your wand otherwise.",
-    "**Drain Life** when you are hurt, **Life Tap** when you are low on mana.",
-    "If a mob reaches you: **Fear** it or **Death Coil**."
+    "**Corruption**, **Bane of Agony** and **Siphon Life** on the mob, none of them on a mob below about a third of its health.",
+    "**Immolate** only on a mob above half its health and while you have more than half your mana.",
+    "Then your wand, not **Shadow Bolt**: the dots do the killing and the wand costs no mana.",
+    "**Drain Life** whenever you drop below 60% health, and in place of the wand while you are below 85%.",
+    "**Life Tap** in a fight only when you are short of mana and above 60% health.",
+    "If a mob reaches you: **Death Coil** below 60% health, then **Drain Life** while it runs; otherwise let **Torment** take it back. Your Healthstone below 35% health."
    ],
    "between": [
-    "**Life Tap** back to 70% mana, heal the Voidwalker with **Consume Shadows** or **Health Funnel**, eat only below a third of your health."
+    "**Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, and eat only below 55% health."
    ]
   },
   "demonology-leveling": {
    "before": [
-    "**Demon Armor** up, **Summon Voidwalker**.",
-    "Send the Voidwalker in first and let it hold the mob."
+    "**Demon Skin** (**Demon Armor** from level 20) up, **Summon Voidwalker**.",
+    "Send the Voidwalker in first and let it hold the mob with **Torment**.",
+    "Open with **Amplify Curse** whenever it is ready: it makes that fight's **Bane of Agony** 50% stronger.",
+    "With **Soul Link**: turn it on once the Voidwalker is out."
    ],
    "steps": [
-    "**Corruption** (not on a mob that is nearly dead), **Bane of Agony** and **Siphon Life** on the mob.",
-    "**Searing Pain** to keep Demonic Brand up once you have it.",
-    "**Soul Fire** when Decimation lights up (mob below 35% health).",
-    "**Shadow Bolt** only when your mana is nearly full; your wand otherwise.",
-    "**Drain Life** when you are hurt, **Life Tap** when you are low on mana.",
-    "If a mob reaches you: **Death Coil** or **Fear**."
+    "With **Demonic Brand**: **Searing Pain** whenever the brand is gone and the Voidwalker is hitting the mob.",
+    "**Corruption**, **Bane of Agony** and **Siphon Life** on the mob, and **Immolate** while you have more than half your mana; none of them on a mob below about a third of its health.",
+    "With **Decimation**: **Soul Fire** while its buff lasts (a **Shadow Bolt** or **Searing Pain** on a mob below 35% health starts it).",
+    "Above 80% mana, **Shadow Bolt** (**Searing Pain** when the mob has too little health left for it); below that, your wand.",
+    "**Drain Life** whenever you drop below 60% health, and in place of the wand while you are below 85%; **Life Tap** in a fight only when you are short of mana and above 60% health.",
+    "With **Improved Health Funnel**: **Health Funnel** a Voidwalker below 30% health while the mob still has more than a third of its health and you have more than 65% of yours.",
+    "If a mob reaches you: **Death Coil** below 60% health, otherwise **Fear** it, then **Drain Life** while it runs. Your Healthstone below 35% health."
    ],
    "between": [
-    "**Life Tap** back up, heal the Voidwalker with **Health Funnel**, eat only below a third of your health."
+    "**Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, and eat only below 55% health."
    ]
   },
   "destruction-leveling": {
    "before": [
-    "**Demon Armor** up, **Summon Voidwalker**.",
-    "Send the Voidwalker in first and let it hold the mob."
+    "**Demon Skin** (**Demon Armor** from level 20) up, **Summon Voidwalker**.",
+    "Send the Voidwalker in first and let it hold the mob with **Torment**.",
+    "Open with **Amplify Curse** whenever it is ready: it makes that fight's **Bane of Agony** 50% stronger."
    ],
    "steps": [
-    "**Corruption** (not on a mob that is nearly dead) and **Bane of Agony** while the Voidwalker grabs the mob.",
-    "**Immolate** while you have more than half your mana, then **Conflagrate** when Immolate is about to run out.",
-    "**Incinerate** on a burning mob while your mana is nearly full; your wand otherwise.",
-    "**Shadowburn** or **Conflagrate** to finish a mob they would kill.",
-    "**Life Tap** when you are low on mana.",
-    "If a mob reaches you: **Death Coil** (skip Fear and Drain Life: the Voidwalker takes the mob back)."
+    "**Corruption** and **Bane of Agony** first while the Voidwalker builds threat, none of them on a mob below about a third of its health.",
+    "**Immolate** while you have more than half your mana and it will not pull the mob off the Voidwalker.",
+    "**Conflagrate** when **Immolate** has about 3 seconds left (at once with 5 points in **Shadow and Flame**, which keeps **Immolate** burning), or to finish a burning mob it would kill; then **Siphon Life**.",
+    "Above 80% mana, **Shadow Bolt** (**Searing Pain** when the mob has too little health left for it); below that, your wand.",
+    "With **Incinerate**: cast it instead of **Shadow Bolt** on a burning mob. With **Shadowburn**: finish any mob it would kill.",
+    "**Life Tap** in a fight only when you are short of mana and above 60% health.",
+    "If a mob reaches you: **Death Coil** below 60% health and let **Torment** take it back (no **Fear** and no **Drain Life**: both measured slower). Your Healthstone below 35% health."
    ],
    "between": [
-    "**Life Tap** back up, heal the Voidwalker with **Health Funnel**, eat below 40% health."
+    "**Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, and eat only below 40% health."
    ]
   }
  },

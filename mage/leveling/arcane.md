@@ -10,17 +10,17 @@
 
 **Not in this build:** **Arcane Blast**, **Arcane Power** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
 
-**Before the fight:** **Frost Armor** (later **Mage Armor**) and **Arcane Intellect** up. Pull from as far away as you can; **Arcane Power** and **Presence of Mind** at the pull when they are ready.
+**Before the fight:** **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up. Pull from as far away as you can; **Presence of Mind** at the pull, and **Arcane Power** too while you have more than half your mana.
 
 **In the fight**, top to bottom:
 
-1. **Arcane Blast** twice while the mob walks in (each cast makes the next one cost more; stop at two).
-2. **Arcane Missiles** after the Arcane Blasts, and at once when Missile Barrage lights up (not on a mob that is nearly dead).
-3. **Frost Nova** when the mob reaches you, then step back.
-4. Finish a nearly dead mob with **Fire Blast** or your wand.
-5. Low on mana: **Frostbolt** instead of Arcane Blast.
+1. **Arcane Blast** while the mob walks in: at most two in a row, only if the cast ends before the mob reaches you and costs no more than a quarter of your mana.
+2. **Arcane Missiles** to spend the stacks, and at once when **Missile Barrage** lights up (after your two stacks, or when the mob is on you); none below about a third of the mob's health.
+3. **Frost Nova** when the mob reaches you (**Cone of Cold** if it is on cooldown), then step back; **Ice Lance** while it is frozen.
+4. **Frostbolt** when **Arcane Missiles** is out (low mana, or the mob under a third of its health); below a fifth, finish with **Fire Blast**, **Ice Lance** or your wand.
+5. **Counterspell** a mob that casts spells.
 
-**Between fights:** Drink your conjured water below a third of your mana, **Evocation** when you are out, eat below two thirds of your health.
+**Between fights:** Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.
 
 ## Why this rotation
 

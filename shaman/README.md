@@ -59,19 +59,56 @@ Differences under 2-3% are within the simulations' noise and assumptions: treat 
 
 | Spec | Raid role | Classic standing | Forever outlook |
 |---|---|---|---|
-| Elemental Combat | Raid DPS (late) | Viable with AQ40/Naxx gear | Lava Burst rotation; Mana Tide reachable at 16 Restoration |
-| Enhancement | Melee / support | Windfury/Strength of Earth support build | Standalone melee DPS: Stormstrike at 16, Maelstrom Weapon, Rage of the Farseer |
-| Restoration | Raid healer | The shaman raid role | Same, plus Riptide, Water Shield, Mindfulness |
+| Elemental | Ranged caster DPS | Viable only with AQ40/Naxxramas gear | Lightning Bolt around Flame Shock, Lava Burst (31-point) and Lightning Overload; no Elemental Mastery, so no burst window. Behind Enhancement in this project's full-raid simulations (see the ranking above). Spells need 17% hit to never miss a raid boss (client tooltip, build 70291); Tidal Focus gives 5% |
+| Enhancement | Melee DPS | Windfury/Strength of Earth support build | A real melee spec: a slow two-hander with Windfury Weapon, Stormstrike (16-point, 8-second cooldown), instant free Lightning Bolts from 5 Maelstrom Weapon stacks, Fire Nova from your Fire totem, Rage of the Farseer (31-point). This project's top shaman for raid damage and leveling (simulations); it runs short of mana even with raid buffs |
+| Restoration | Raid healer | The shaman raid role | The same role with Riptide (31-point), Water Shield (11-point, free mana globes), Mana Tide Totem at 16 points and Mindfulness (half your mana regeneration while casting). In the healer lab Healing Wave with Healing Way does most of the healing |
+| Elemental-Enhancement (hybrid) | Melee DPS | - | 22/29/0: Enhancement's melee list with Elemental's shock and Fire Nova talents (Reverberation, Call of Flame, Improved Fire Nova, Elemental Devastation); behind pure Enhancement in the simulator |
 
-## Forever headline changes (beta client build 1.60.1.70009, 2026-09-25)
+## Forever headline changes (beta client build 1.60.1.70291, 2026-10-08)
 
-- **Removed:** Improved Fire Totems, Storm Reach, Lightning Mastery, Elemental Mastery (Elemental); Shield Specialization, Enhancing Totems,
-  Two-Handed Axes and Maces, Improved Weapon Totems, Parry, Weapon Mastery (Enhancement); Nature's Guidance, Totemic Mastery, Healing Grace (Restoration).
-- **New:** Improved Fire Nova, Elemental Reach, Lightning Overload, Earthbound, Elemental Alacrity, Lava Burst (Elemental);
-  Mental Dexterity, Shamanistic Focus, Spirit Weapons, Mental Quickness, Improved Stormstrike, Maelstrom Weapon, Rage of the Farseer (Enhancement);
-  Mindfulness, Natural Grace, Water Shield, Riptide (Restoration).
-- **Moved/reworked:** Stormstrike → tier 4, Mana Tide → tier 4, Tidal Mastery heals only (tier 4 in the beta; Totemic Focus holds the tier-1 slot), Tidal Focus gains hit, Call of Thunder 1 rank (requires Elemental Alacrity 3 since build 70009), Elemental Fury 5 ranks at tier 6 (swapped with Elemental Alacrity, now tier 3, in build 70009).
-- **Beta client (build 70009):** the first tree is called Elemental; Lightning Bolt casts in 2.5s (189-211 at 60, 71.4% coefficient), Chain Lightning in 2s, Lava Burst has ranks at 40/50/60 (buffed in 70009), Fire Nova is a spell on a 10s cooldown, Stormstrike buffs the next Lightning Bolt/Chain Lightning/Earth Shock by 20%, Rage of the Farseer is attack speed only, Mental Dexterity gives 100% of Intellect as attack power at 3/3, Water Shield is free, Windfury Totem gives 246 AP at 60, air totems from different shamans no longer stack.
+- **Baseline (Blizzard's class deep dive, 2026-10-07):** totems cost a 1-second global cooldown; buff totems last 5 minutes and reach
+  30 yards (the 70291 tooltips); a tracking bar shows your totems and unsummons one with a right click; resistance totems cover the raid.
+  Call of the Elements (level 20) drops a saved set of four totems in one 3-second cast, with two more sets at 30 and 40 (Call of the
+  Ancestors, Call of the Spirits); Totemic Recall (20) returns 25% of their mana; Totemic Projection (22) moves all your totems up to 30
+  yards (1-minute cooldown, 25% of base mana). Weapon imbues last 60 minutes and stack with sharpening stones, weightstones and wizard
+  oils. Fire Nova Totem is gone: Fire Nova is a spell (10-second cooldown) that erupts within 10 yards of your active Fire totem.
+  Windfury Totem and Flametongue Totem are party buffs: a shaman with Windfury Weapon (Flametongue Weapon) gets nothing from the matching
+  totem, and Windfury Totem does not stack with Grace of Air Totem or Flametongue Totem, even from different shamans. Tranquil Air Totem
+  is gone. Lightning Bolt (ranks 4 and up) casts in 2.5 seconds and Chain Lightning in 2, with smaller spell power coefficients.
+- **Removed talents:** Elemental Mastery (Blizzard: Elemental's PvE damage could not rise with it in the game without making it too strong
+  in PvP), Shield Specialization, Nature's Guidance, Totemic Mastery (buff totems reach 30 yards anyway). Moved to baseline: Enhancing
+  Totems, Two-Handed Axes and Maces, Weapon Mastery, Improved Weapon Totems.
+- **Renamed or reworked:** Elemental Alacrity (was Lightning Mastery: tier 3, 3 ranks, 0.5 seconds off Lightning Bolt, Chain Lightning
+  and Lava Burst), Improved Fire Nova (was Improved Fire Totems: Fire Nova +20% damage and a 4-second shorter cooldown), Elemental Reach
+  (Storm Reach's range talent, now also Fire Nova, Lava Burst and up to 15 yards on Flame Shock), Spirit Weapons (was Parry: parry
+  chance, 30% less threat without Rockbiter Weapon, 30% more with it), Natural Grace (was Healing Grace: 15% less threat from all
+  spells). Stormstrike is the 16-point Enhancement talent: 8-second cooldown, weapon damage, and 20% more on your next Lightning Bolt,
+  Chain Lightning or Earth Shock. Call of Thunder is the 16-point Elemental talent (1 rank, 3% crit, needs Elemental Alacrity) and Mana
+  Tide Totem the 16-point Restoration one. Elemental Fury (tier 6, needs Call of Thunder) and Elemental Alacrity (tier 3) swapped places
+  during the beta. Thundering Strikes adds crit to spells too, Ancestral Knowledge gives Intellect, Toughness Stamina, Tidal Focus hit
+  for all spells and attacks; Tidal Mastery is heals only; Healing Way is +25% Healing Wave; Flurry is 25% at 5/5 and needs Mental
+  Dexterity; Earth's Grasp moved to Enhancement and Elemental Devastation to tier 2; Concussion no longer covers Flame Shock or Frost
+  Shock; Call of Flame now covers Flame Shock, Fire Nova and Lava Burst, and Convection covers Lava Burst.
+- **New talents:** Elemental: Lightning Overload (a 10% chance of a free half-damage copy of Lightning Bolt or Chain Lightning),
+  Earthbound (21-point: Earthbind Totem roots nearby enemies for 5 seconds), Lava Burst (31-point: 2.5-second cast, 10-second cooldown,
+  20% more damage while your Flame Shock is on the target). Enhancement: Mental Dexterity (attack power equal to 100% of Intellect),
+  Shamanistic Focus (11-point: shocks and Lightning Shield 45% cheaper), Mental Quickness (spell power equal to 30% of Intellect),
+  Improved Stormstrike (each Stormstrike keeps half your mana regeneration going while casting for 15 seconds; Stormstrike resets when
+  you dodge or parry), Maelstrom Weapon (melee hits stack up to 5 charges, each 20% off the cast time and mana of your next Lightning
+  Bolt at 5/5: instant and free at 5), Rage of the Farseer (31-point: 30% attack speed for 25 seconds, 3-minute cooldown; its spell haste
+  was removed). Restoration: Mindfulness (50% of your mana regeneration continues while casting), Water Shield (11-point: 3 globes, each
+  2% of maximum mana when you are hit or a heal crits; no mana cost, no cooldown), Riptide (31-point: an instant heal plus 15 seconds
+  of healing, 6-second cooldown; Chain Heal on that target heals it 25% more).
+- **Spell numbers at 60 (70291 tooltips):** Lightning Bolt 189-211 (2.5 s), Chain Lightning 119-133 (2 s, 6-second cooldown), Lava
+  Burst 192-248, Earth Shock 293-309, Flame Shock 166 plus 176 over 12 s, Fire Nova 413-459, Searing Totem 40-54 a shot for 55 s,
+  Windfury Weapon a 20% chance of two extra attacks with 333 attack power, Windfury Totem 246 attack power, Strength of Earth Totem +53
+  Strength, Grace of Air Totem +89 Agility, Mana Tide Totem 290 mana every 3 s for 12 s (5-minute cooldown), Healing Wave 1,508-1,722,
+  Lesser Healing Wave 775-865, Chain Heal 474-538, Riptide 799-883 plus 805 over 15 s. The damage spells' base numbers are far below
+  Classic's (Lightning Bolt 428-476, Chain Lightning 505-563 in Classic Era).
+- **Beta notes (Blizzard's forum thread, through 2026-10-08):** Flametongue Totem no longer stacks with Flametongue Weapon or Windfury
+  Totem; Fire Nova no longer triggers Elemental Focus and spends it at once; Riptide can crit; Water Shield's tooltip lost a 15-second
+  cooldown it never had; Lightning Bolt ranks 1-5 and Lava Burst ranks 1-2 were retuned so every new rank is an upgrade; spell ranks far
+  below your level get less from spell power and a lower chance to trigger talents such as Elemental Focus (2026-10-01).
 
 ## Research files
 
