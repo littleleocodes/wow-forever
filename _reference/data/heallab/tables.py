@@ -59,6 +59,7 @@ POTION_FIRST = 45.0       # first potion once mana is under POTION_BELOW and thi
 POTION_BELOW = 0.65       # fraction of maximum mana
 POTIONS = True
 DOWNRANK = True           # cast the lowest rank that covers the deficit (Classic healing practice); False = max rank always
+DOWNRANK_PENALTY = True   # Forever: ranks far below your level get less from healing power (2026-10-09; engine.downrank_multiplier); False = the old full coefficients
 HOT_REFRESH_DEFICIT = 0.10   # keep a HoT on the tank while it is missing more than this fraction of its health
 EMERGENCY = 0.35          # a target under this fraction of health gets the fastest big heal available
 RAID_HEAL_AT = 0.70       # a raid member under this fraction gets healed

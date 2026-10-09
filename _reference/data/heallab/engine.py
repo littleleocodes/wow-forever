@@ -128,7 +128,37 @@ def load_book(cls):
                     book.setdefault(sp["name"], []).append(h)
     for n in book:
         book[n].sort(key=lambda x: (x.level, x.rank))
+    if T.DOWNRANK_PENALTY:
+        for n, ranks in book.items():
+            for i, h in enumerate(ranks):
+                nxt = next((r.level for r in ranks[i + 1:] if r.level > h.level), None)
+                if nxt is None and DOWNRANK_FAMILY.get(n) in book:
+                    nxt = book[DOWNRANK_FAMILY[n]][0].level
+                m = downrank_multiplier(h.level, nxt)
+                h.coef *= m
+                h.hot_coef *= m
     return book
+
+
+# Forever's downranking penalty (2026-10-09), the raid simulator's rule (raidsim/patches/forever/sim/core/spelldata/downrank.go): Blizzard's
+# beta notes (2026-10-01): "spells cast using spell ranks vastly below your current level receive less benefit from your Spell Damage
+# and Spell Healing"; no formula published, so TBC's rule for the same wording: a rank keeps (L + 6) / 60 of its coefficient at level
+# 60, L being the level before the next rank is taught, when L + 5 is below 60; Classic Era's below-20 rule on top (1 - (20 - taught
+# level) x 0.0375) for ranks below a higher one. The priest's Lesser Heal, Heal and Greater Heal are one ladder in Classic, so the
+# next rank of Lesser Heal's top is Heal's first and of Heal's top Greater Heal's first (Heal rank 4, taught at 34, keeps 75%).
+DOWNRANK_FAMILY = {"Lesser Heal": "Heal", "Heal": "Greater Heal"}
+
+
+def downrank_multiplier(level, next_level, player_level=60):
+    if not next_level or next_level <= level:
+        return 1.0
+    m = 1.0
+    last = next_level - 1
+    if last + 5 < player_level:
+        m *= (last + 6) / player_level
+    if 0 < level < 20:
+        m *= 1 - (20 - level) * 0.0375
+    return m
 
 
 def load_parsed(cls):
