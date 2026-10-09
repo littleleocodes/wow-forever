@@ -148,33 +148,40 @@
  "raid": {
   "class": "hunter",
   "spec": "melee-dps",
-  "date": "2026-10-06",
-  "commit": "b0f0df3",
+  "date": "2026-10-09",
+  "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/apls/hunter/melee-dps.base.apl.json",
   "start": "_reference/data/raidsim/apls/hunter/melee-dps-raid.apl.json",
   "builds": [
    {
-    "label": "open winner",
-    "talents": "50230005001-005005001-5002302300500211"
-   },
-   {
     "label": "survival-raid",
     "talents": "5-005055001-50023023005022213"
    },
    {
     "label": "melee-survival-raid",
-    "talents": "5-005005001-050230230250222151"
+    "talents": "5-005005001-500230230250222151",
+    "protect_only": true
    },
    {
     "label": "opt-melee-dps-raid-dps",
-    "talents": "5-005045001-500250030050220151"
+    "talents": "5-005045001-500250030050220151",
+    "protect_only": true
    },
    {
     "label": "survival-ml-parse",
-    "talents": "5-005035001-050230230150022151"
+    "talents": "5-005035001-050230230150022151",
+    "protect_only": true
+   },
+   {
+    "label": "beast-survival-open-raid",
+    "talents": "52030005001-005005001-5002302300500211",
+    "protect_only": true
    }
+  ],
+  "tuned_on": [
+   "survival-raid"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -198,54 +205,54 @@
   ],
   "final": {
    "raid": {
-    "open winner": {
-     "before": 738.525752237135,
-     "after": 1117.7847921505634,
-     "base": 738.525752237135,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
     "survival-raid": {
-     "before": 751.7426719762512,
-     "after": 1021.7234206934663,
-     "base": 751.7426719762512,
+     "before": 749.0234226940044,
+     "after": 1027.273743175376,
+     "base": 749.0234226940044,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "melee-survival-raid": {
-     "before": 766.8389876078072,
-     "after": 1040.021760738336,
-     "base": 766.8389876078072,
+     "before": 764.2538027247907,
+     "after": 1047.176952532417,
+     "base": 764.2538027247907,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "opt-melee-dps-raid-dps": {
-     "before": 766.8389876078072,
-     "after": 1014.9927656781907,
-     "base": 766.8389876078072,
+     "before": 764.2538027247907,
+     "after": 1016.5720578962369,
+     "base": 764.2538027247907,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "survival-ml-parse": {
-     "before": 766.8389876078072,
-     "after": 1040.0192238804168,
-     "base": 766.8389876078072,
+     "before": 728.5236157959941,
+     "after": 998.2660836742937,
+     "base": 728.5236157959941,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
+    },
+    "beast-survival-open-raid": {
+     "before": 736.3958146440292,
+     "after": 1050.9600612341305,
+     "base": 736.3958146440292,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.00017154135885,
+     "oom_after": 0.00017154135885
     }
    }
   },
   "first_date": "2026-09-29",
-  "passes": 8
+  "passes": 9
  }
 }

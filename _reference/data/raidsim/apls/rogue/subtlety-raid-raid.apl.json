@@ -439,6 +439,117 @@
   },
   {
    "action": {
+    "condition": {
+     "or": {
+      "vals": [
+       {
+        "and": {
+         "vals": [
+          {
+           "cmp": {
+            "op": "OpGe",
+            "lhs": {
+             "currentComboPoints": {}
+            },
+            "rhs": {
+             "const": {
+              "val": "1"
+             }
+            }
+           }
+          },
+          {
+           "not": {
+            "val": {
+             "auraIsActive": {
+              "auraId": {
+               "spellId": 6774,
+               "rank": 2
+              }
+             }
+            }
+           }
+          },
+          {
+           "cmp": {
+            "op": "OpGe",
+            "lhs": {
+             "remainingTime": {}
+            },
+            "rhs": {
+             "const": {
+              "val": "6"
+             }
+            }
+           }
+          }
+         ]
+        }
+       },
+       {
+        "and": {
+         "vals": [
+          {
+           "cmp": {
+            "op": "OpGe",
+            "lhs": {
+             "currentComboPoints": {}
+            },
+            "rhs": {
+             "const": {
+              "val": "5"
+             }
+            }
+           }
+          },
+          {
+           "cmp": {
+            "op": "OpLt",
+            "lhs": {
+             "auraRemainingTime": {
+              "auraId": {
+               "spellId": 6774,
+               "rank": 2
+              }
+             }
+            },
+            "rhs": {
+             "const": {
+              "val": "2"
+             }
+            }
+           }
+          },
+          {
+           "cmp": {
+            "op": "OpGt",
+            "lhs": {
+             "remainingTime": {}
+            },
+            "rhs": {
+             "const": {
+              "val": "9"
+             }
+            }
+           }
+          }
+         ]
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 6774,
+      "rank": 2
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see subtlety-raid-rotation-search.json)"
+  },
+  {
+   "action": {
     "castSpell": {
      "spellId": {
       "spellId": 16511

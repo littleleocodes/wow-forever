@@ -33,6 +33,15 @@
  "priorityList": [
   {
    "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 14287
+     }
+    }
+   }
+  },
+  {
+   "action": {
     "condition": {
      "and": {
       "vals": [
@@ -228,15 +237,6 @@
     }
    },
    "notes": "apl_opt 2026-10-05: changed or added by the rotation search (see mm-raid-rotation-search.json)"
-  },
-  {
-   "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 14287
-     }
-    }
-   }
   },
   {
    "action": {

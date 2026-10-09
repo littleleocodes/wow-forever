@@ -34,13 +34,37 @@
   {
    "action": {
     "condition": {
-     "auraIsInactive": {
-      "sourceUnit": {
-       "type": "Self"
-      },
-      "auraId": {
-       "spellId": 1293527
-      }
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpGt",
+         "lhs": {
+          "autoTimeToNext": {
+           "autoType": "RangedAuto"
+          }
+         },
+         "rhs": {
+          "const": {
+           "val": "1s"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "20s"
+          }
+         }
+        }
+       }
+      ]
      }
     },
     "castSpell": {
@@ -49,7 +73,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-10-01: changed or added by the rotation search (see mm-lonewolf-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see mm-lonewolf-raid-rotation-search.json)"
   },
   {
    "action": {

@@ -99,22 +99,35 @@
  "raid": {
   "class": "rogue",
   "spec": "combat-daggers-raid",
-  "date": "2026-10-02",
-  "commit": "40be98e",
+  "date": "2026-10-09",
+  "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/rogue/dps/apls/combat_backstab.apl.json",
   "start": "ui\\specs\\rogue\\dps\\apls\\combat_backstab.apl.json",
   "builds": [
    {
-    "label": "ml: Combat",
-    "talents": "005303121001-32330310001515231-002",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-combat-bis.gear.json"
+    "label": "opt-combat-daggers-raid-raid-dps",
+    "talents": "005323121-30531300000515231-002"
    },
    {
     "label": "sim preset: Combat Dual-Wield 15/33/3",
     "talents": "1053231-22530300001515231-012"
+   },
+   {
+    "label": "combat-daggers-raid",
+    "talents": "005323102-30531300001515231-002",
+    "protect_only": true
+   },
+   {
+    "label": "combat-ml-raid",
+    "talents": "00530310301-30531300001515231-002",
+    "protect_only": true
    }
+  ],
+  "tuned_on": [
+   "opt-combat-daggers-raid-raid-dps",
+   "sim preset: Combat Dual-Wield 15/33/3"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -142,23 +155,49 @@
     "gain_seed2": 0.0987,
     "candidates": 12,
     "pass": 4
+   },
+   {
+    "round": 4,
+    "change": "drop the condition: if energy < 59 and timeToNextEnergyTick < 1: cast Adrenaline Rush",
+    "gain_seed1": 0.014961831397859893,
+    "gain_seed2": 0.01523108775709936,
+    "candidates": 387,
+    "pass": 6
    }
   ],
   "final": {
    "raid": {
-    "ml: Combat": {
-     "before": 706.6717723538363,
-     "after": 712.5289439949958,
-     "base": 706.6717723538363,
+    "opt-combat-daggers-raid-raid-dps": {
+     "before": 687.0096008876493,
+     "after": 698.731371375616,
+     "base": 687.0096008876493,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Combat Dual-Wield 15/33/3": {
-     "before": 696.925272309925,
-     "after": 702.183327988566,
-     "base": 696.925272309925,
+     "before": 689.8032709355738,
+     "after": 703.8916421409788,
+     "base": 689.8032709355738,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "combat-daggers-raid": {
+     "before": 698.5962617529806,
+     "after": 713.6716824306201,
+     "base": 698.5962617529806,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "combat-ml-raid": {
+     "before": 702.9233828728169,
+     "after": 720.6049129497635,
+     "base": 702.9233828728169,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -167,6 +206,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 5
+  "passes": 6
  }
 }

@@ -161,17 +161,13 @@
  "raid": {
   "class": "hunter",
   "spec": "mm-lonewolf-raid",
-  "date": "2026-10-07",
-  "commit": "b0f0df3",
+  "date": "2026-10-09",
+  "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/hunter/dps/apls/mm.apl.json",
   "start": "ui\\specs\\hunter\\dps\\apls\\mm.apl.json",
   "builds": [
-   {
-    "label": "open winner",
-    "talents": "5-0053252511523051-5001"
-   },
    {
     "label": "opt-mm-lonewolf-raid-raid-dps",
     "talents": "5-005355051150305-50003"
@@ -182,16 +178,23 @@
    },
    {
     "label": "mm-lone-wolf-raid",
-    "talents": "5-0053452511513051-5"
+    "talents": "5-0053452511513051-5",
+    "protect_only": true
    },
    {
     "label": "marksmanship-ml-parse",
-    "talents": "510001-1053552511523051"
+    "talents": "510001-1053552511523051",
+    "protect_only": true
    },
    {
     "label": "marksmanship-ml-raid",
-    "talents": "5501-305355041150305"
+    "talents": "5501-305355041150305",
+    "protect_only": true
    }
+  ],
+  "tuned_on": [
+   "opt-mm-lonewolf-raid-raid-dps",
+   "sim preset: Beast Mastery 35/16/0"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -267,67 +270,82 @@
     "gain_seed2": 0.0031419619759711637,
     "candidates": 365,
     "pass": 6
+   },
+   {
+    "round": 10,
+    "change": "drop: if auraIsInactive: cast Summon Hawk",
+    "gain_seed1": 0.007481381141851262,
+    "gain_seed2": 0.00742308615505638,
+    "candidates": 341,
+    "pass": 10
+   },
+   {
+    "round": 11,
+    "change": "insert at the top: if time to the next auto attack > 1s: cast Summon Hawk",
+    "gain_seed1": 0.0023493082498187157,
+    "gain_seed2": 0.0030532702736296713,
+    "candidates": 327,
+    "pass": 10
+   },
+   {
+    "round": 12,
+    "change": "only with 20s or more of the fight left: if time to the next auto attack > 1s: cast Summon Hawk",
+    "gain_seed1": 0.0017432173377809335,
+    "gain_seed2": 0.0018912305191745027,
+    "candidates": 342,
+    "pass": 10
    }
   ],
   "final": {
    "raid": {
-    "open winner": {
-     "before": 911.1799784314755,
-     "after": 955.9185491908723,
-     "base": 911.1799784314755,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 3.252458205847148,
-     "oom_after": 3.252458205847148
-    },
     "opt-mm-lonewolf-raid-raid-dps": {
-     "before": 895.6582967948024,
-     "after": 913.527517875344,
-     "base": 895.6582967948024,
+     "before": 793.3463793676232,
+     "after": 858.6878014177853,
+     "base": 793.3463793676232,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0015556851827499998,
-     "oom_after": 0.0015556851827499998
+     "oom_before": 0.0283234743352,
+     "oom_after": 0.0283234743352
     },
     "sim preset: Beast Mastery 35/16/0": {
-     "before": 569.7690901027834,
-     "after": 638.2319645151131,
-     "base": 569.7690901027834,
+     "before": 534.0701725816233,
+     "after": 544.1057954835417,
+     "base": 534.0701725816233,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "mm-lone-wolf-raid": {
-     "before": 907.1851265624159,
-     "after": 956.2390945744412,
-     "base": 907.1851265624159,
+     "before": 819.2064676038274,
+     "after": 895.9100015320939,
+     "base": 819.2064676038274,
      "before_value": null,
      "after_value": null,
-     "oom_before": 2.3588863996707494,
-     "oom_after": 2.3588863996707494
+     "oom_before": 5.349693025398049,
+     "oom_after": 5.349693025398049
     },
     "marksmanship-ml-parse": {
-     "before": 878.694618675394,
-     "after": 911.3162126756367,
-     "base": 878.694618675394,
+     "before": 788.9137365769429,
+     "after": 855.2248707482753,
+     "base": 788.9137365769429,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0183502362337,
-     "oom_after": 0.0183502362337
+     "oom_before": 0.057204923375550006,
+     "oom_after": 0.057204923375550006
     },
     "marksmanship-ml-raid": {
-     "before": 847.820395144847,
-     "after": 866.8603294171897,
-     "base": 847.820395144847,
+     "before": 755.8694110987295,
+     "after": 814.8852725761079,
+     "base": 755.8694110987295,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0004163043482,
-     "oom_after": 0.0004163043482
+     "oom_before": 0.009100753581,
+     "oom_after": 0.009100753581
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 9
+  "passes": 10
  }
 }

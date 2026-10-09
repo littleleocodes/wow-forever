@@ -228,20 +228,16 @@
  "raid": {
   "class": "hunter",
   "spec": "bm-raid",
-  "date": "2026-10-07",
-  "commit": "b0f0df3",
+  "date": "2026-10-09",
+  "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/hunter/dps/apls/bm.apl.json",
   "start": "ui\\specs\\hunter\\dps\\apls\\bm.apl.json",
   "builds": [
    {
-    "label": "open winner",
-    "talents": "532000150510122-00532500004-5"
-   },
-   {
-    "label": "beast-mastery-raid",
-    "talents": "522002150510025-00534500013"
+    "label": "beast-marks-open-raid",
+    "talents": "542100050510022-00532500004-5"
    },
    {
     "label": "sim preset: Beast Mastery 35/16/0",
@@ -249,16 +245,28 @@
    },
    {
     "label": "mm-hawk-raid",
-    "talents": "53200005051001-105355000150004"
+    "talents": "53200005051001-105355000150004",
+    "protect_only": true
+   },
+   {
+    "label": "beast-mastery-raid",
+    "talents": "522002150510025-00534500013",
+    "protect_only": true
    },
    {
     "label": "beast-mastery-ml-parse",
-    "talents": "5320001505101251-00532500005"
+    "talents": "5320001505101251-00532500005",
+    "protect_only": true
    },
    {
     "label": "beast-marks-ml-raid",
-    "talents": "532000150510123-0053250000503"
+    "talents": "532000150510123-0053250000503",
+    "protect_only": true
    }
+  ],
+  "tuned_on": [
+   "beast-marks-open-raid",
+   "sim preset: Beast Mastery 35/16/0"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -342,59 +350,67 @@
     "gain_seed2": 0.0016321678481172608,
     "candidates": 350,
     "pass": 6
+   },
+   {
+    "round": 11,
+    "change": "drop: if time to the next auto attack > 1s and time left in the fight \u2265 10s: cast Summon Hawk",
+    "gain_seed1": 0.012245137841468745,
+    "gain_seed2": 0.011479660835911787,
+    "candidates": 349,
+    "pass": 10
    }
   ],
   "final": {
    "raid": {
-    "open winner": {
-     "before": 870.5734187412463,
-     "after": 903.8254013566973,
-     "base": 870.5734187412463,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "beast-mastery-raid": {
-     "before": 839.2103942032799,
-     "after": 867.1836270832517,
-     "base": 839.2103942032799,
+    "beast-marks-open-raid": {
+     "before": 805.0979841492504,
+     "after": 842.4569650415717,
+     "base": 805.0979841492504,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Beast Mastery 35/16/0": {
-     "before": 816.2264627987086,
-     "after": 844.1593378732567,
-     "base": 816.2264627987086,
+     "before": 760.6376754380983,
+     "after": 789.5949489911476,
+     "base": 760.6376754380983,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "mm-hawk-raid": {
-     "before": 838.4181657646914,
-     "after": 867.9767825432258,
-     "base": 838.4181657646914,
+     "before": 765.8736378064525,
+     "after": 805.1547725759602,
+     "base": 765.8736378064525,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "beast-mastery-raid": {
+     "before": 775.5713498854601,
+     "after": 809.7108772877955,
+     "base": 775.5713498854601,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "beast-mastery-ml-parse": {
-     "before": 863.4591352544875,
-     "after": 894.9322640578744,
-     "base": 863.4591352544875,
+     "before": 805.3702607369806,
+     "after": 841.4950938609791,
+     "base": 805.3702607369806,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "beast-marks-ml-raid": {
-     "before": 858.114010324301,
-     "after": 889.8190432472124,
-     "base": 858.114010324301,
+     "before": 796.0518555339842,
+     "after": 831.9268229270258,
+     "base": 796.0518555339842,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -403,6 +419,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 9
+  "passes": 10
  }
 }

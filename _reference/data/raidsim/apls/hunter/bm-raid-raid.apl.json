@@ -38,50 +38,6 @@
       "vals": [
        {
         "cmp": {
-         "op": "OpGt",
-         "lhs": {
-          "autoTimeToNext": {
-           "autoType": "RangedAuto"
-          }
-         },
-         "rhs": {
-          "const": {
-           "val": "1s"
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "remainingTime": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "10s"
-          }
-         }
-        }
-       }
-      ]
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 1293527
-     }
-    }
-   },
-   "notes": "apl_opt 2026-10-04: changed or added by the rotation search (see bm-raid-rotation-search.json)"
-  },
-  {
-   "action": {
-    "condition": {
-     "and": {
-      "vals": [
-       {
-        "cmp": {
          "op": "OpLt",
          "lhs": {
           "dotRemainingTime": {

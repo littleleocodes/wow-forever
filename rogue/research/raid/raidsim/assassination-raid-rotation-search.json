@@ -168,26 +168,20 @@
  "raid": {
   "class": "rogue",
   "spec": "assassination-raid",
-  "date": "2026-10-07",
-  "commit": "b0f0df3",
+  "date": "2026-10-09",
+  "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/rogue/dps/apls/forever_mutilate.apl.json",
   "start": "ui\\specs\\rogue\\dps\\apls\\forever_mutilate.apl.json",
   "builds": [
    {
-    "label": "open winner",
-    "talents": "00530310301-30531300001515231-002"
-   },
-   {
     "label": "assassination-seal-fate-raid",
-    "talents": "0053031232150005-305313000013-002",
-    "protect_only": true
+    "talents": "0053031232150005-305313000013-002"
    },
    {
     "label": "sim preset: Mutilate",
-    "talents": "00530310551021051-302303202004",
-    "protect_only": true
+    "talents": "00530310551021051-302303202004"
    },
    {
     "label": "assassination-mutilate-raid",
@@ -201,7 +195,8 @@
    }
   ],
   "tuned_on": [
-   "open winner"
+   "assassination-seal-fate-raid",
+   "sim preset: Mutilate"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -233,46 +228,37 @@
   ],
   "final": {
    "raid": {
-    "open winner": {
-     "before": 336.8080502038769,
-     "after": 770.7873494308664,
-     "base": 336.8080502038769,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
     "assassination-seal-fate-raid": {
-     "before": 321.71317478681215,
-     "after": 728.2166871587498,
-     "base": 321.71317478681215,
+     "before": 304.14378145167433,
+     "after": 686.883178144914,
+     "base": 304.14378145167433,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Mutilate": {
-     "before": 700.8374718214079,
-     "after": 692.6816308968264,
-     "base": 700.8374718214079,
+     "before": 657.6771135975811,
+     "after": 653.9828522680286,
+     "base": 657.6771135975811,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "assassination-mutilate-raid": {
-     "before": 317.9636295650043,
-     "after": 713.0569861219288,
-     "base": 317.9636295650043,
+     "before": 300.1451910589939,
+     "after": 672.3567558329357,
+     "base": 300.1451910589939,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "assassination-ml-raid": {
-     "before": 321.71317478681215,
-     "after": 733.6952901672645,
-     "base": 321.71317478681215,
+     "before": 304.14378145167433,
+     "after": 692.0190512706861,
+     "base": 304.14378145167433,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -281,6 +267,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 7
+  "passes": 8
  }
 }

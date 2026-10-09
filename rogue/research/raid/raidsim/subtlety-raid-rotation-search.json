@@ -171,22 +171,25 @@
  "raid": {
   "class": "rogue",
   "spec": "subtlety-raid",
-  "date": "2026-10-02",
-  "commit": "40be98e",
+  "date": "2026-10-09",
+  "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/rogue/dps/apls/forever_hemorrhage.apl.json",
   "start": "ui\\specs\\rogue\\dps\\apls\\forever_hemorrhage.apl.json",
   "builds": [
    {
-    "label": "ml: Subtlety",
-    "talents": "005303121014--5320003310013211501",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-subtlety-bis.gear.json"
+    "label": "subtlety-hemo-raid",
+    "talents": "005303121014--5320003310013211501"
    },
    {
     "label": "sim preset: Subtlety Hemo 15/0/36",
     "talents": "125320101--5320003310013211551"
    }
+  ],
+  "tuned_on": [
+   "subtlety-hemo-raid",
+   "sim preset: Subtlety Hemo 15/0/36"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -270,23 +273,31 @@
     "gain_seed2": 0.0018751263186833622,
     "candidates": 449,
     "pass": 6
+   },
+   {
+    "round": 11,
+    "change": "insert before the filler: if (combo points \u2265 1 and not Slice and Dice is up and time left in the fight \u2265 6 or combo points \u2265 5 and time left on Slice and Dice < 2 and time left in the fight > 9): cast Slice and Dice",
+    "gain_seed1": 0.0020369121149164116,
+    "gain_seed2": 0.0018855276330052018,
+    "candidates": 461,
+    "pass": 7
    }
   ],
   "final": {
    "raid": {
-    "ml: Subtlety": {
-     "before": 649.502055194924,
-     "after": 657.2727489422765,
-     "base": 649.502055194924,
+    "subtlety-hemo-raid": {
+     "before": 649.2248483729157,
+     "after": 659.718968637469,
+     "base": 649.2248483729157,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Subtlety Hemo 15/0/36": {
-     "before": 598.5934132325159,
-     "after": 616.3193819349663,
-     "base": 598.5934132325159,
+     "before": 609.7591215319635,
+     "after": 619.5375702941243,
+     "base": 609.7591215319635,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -295,6 +306,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 6
+  "passes": 7
  }
 }
