@@ -129,7 +129,10 @@ def ev_scores(cls, spec, level, alloc):
     except Exception as e:  # pragma: no cover
         print("scorer unavailable:", e)
         return None
-    opt = Optimizer("forever", cls, spec, PROFILE_FOR_SPEC.get(spec, "leveling-st"))
+    try:
+        opt = Optimizer("forever", cls, spec, PROFILE_FOR_SPEC.get(spec, "leveling-st"))
+    except KeyError:   # a fight-lab rotation with no stats model of its own (the mage's frostfire-leveling check, 2026-10-09)
+        return None
     base = opt.score(alloc, level)
     out = {"base": base, "removals": {}}
     for name in alloc:
