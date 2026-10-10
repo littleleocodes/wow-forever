@@ -69,19 +69,20 @@ Seal Fate daggers with Vigor and Lethality: an Assassination Backstab build. It 
 
 ## Rank among our builds and the community simulator's
 
-**2 of 5** for `assassination-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 6** for `assassination-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) | ours: hand draft | 30/19/2 | 410 | +0.0% | 702 | -0.7% | 0 s |
-| 2 | **[`assassination-mutilate-raid`](assassination-mutilate-raid.md)** | ours: hand draft | 30/21/0 | 398 | -2.8% | 690 | -2.4% | 0 s |
-| 3 | [`assassination-ml-raid`](assassination-ml-raid.md) | ours: hand draft | 30/19/2 | 398 | -2.8% | 707 | +0.0% | 0 s |
-| 4 | *Mutilate* | community simulator | - | 376 | -8.2% | 669 | -5.4% | 0 s |
-| 5 | *Assassination Mutilate 31/20/0* | community simulator | - | 365 | -10.9% | 651 | -7.9% | 0 s |
+| 1 | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) | ours: hand draft | 30/19/2 | 422 | +0.0% | 702 | -2.3% | 0 s |
+| 2 | [`assassination-ml-raid`](assassination-ml-raid.md) | ours: hand draft | 30/19/2 | 410 | -2.7% | 707 | -1.6% | 0 s |
+| 3 | **[`assassination-mutilate-raid`](assassination-mutilate-raid.md)** | ours: hand draft | 30/21/0 | 410 | -2.8% | 690 | -4.0% | 0 s |
+| 4 | [`daggers-split-open-raid`](daggers-split-open-raid.md) | ours: hand draft | 21/28/2 | 396 | -6.2% | 718 | +0.0% | 0 s |
+| 5 | *Mutilate* | community simulator | - | 386 | -8.5% | 672 | -6.5% | 0 s |
+| 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 374 | -11.3% | 654 | -8.9% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 7 passes, the last 2026-10-07, 9 changes to the base rotation; third-seed check: open winner 149 -> 401 DPS (+169.4%), assassination-seal-fate-raid 148 -> 406 DPS (+173.7%), sim preset: Mutilate 335 -> 371 DPS (+10.8%), assassination-mutilate-raid 143 -> 394 DPS (+175.2%), assassination-ml-raid 148 -> 394 DPS (+165.5%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-10, 10 changes to the base rotation; third-seed check: open winner 366 -> 396 DPS (+8.2%), assassination-seal-fate-raid 154 -> 422 DPS (+173.4%), sim preset: Mutilate 345 -> 386 DPS (+11.9%), assassination-mutilate-raid 149 -> 409 DPS (+174.3%), assassination-ml-raid 154 -> 410 DPS (+166.2%)):
   1. insert at the top: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3: cast Expose Armor (+8.6%, pass 1)
   2. threshold 5 -> 3.75: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3: cast Expose Armor (+0.8%, pass 1)
   3. insert at the top: cast Backstab (+1.6%, pass 1)
@@ -91,7 +92,8 @@ Seal Fate daggers with Vigor and Lethality: an Assassination Backstab build. It 
   7. insert at the top: if energy ≤ 29 and timeToNextEnergyTick > 1 and combo points < 5 and not Adrenaline Rush is up: cast Thistle Tea + threshold 29 -> 43.5: if energy ≤ 29 and timeToNextEnergyTick > 1 and combo points < 5 and not Adrenaline Rush is up: cast Thistle Tea (+0.3%, pass 3)
   8. spell probe: insert at the end: cast Hemorrhage (+8.4%, pass 5)
   9. spell probe: insert at the top: if auraIsInactive: cast Ghostly Strike (+2.0%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-09, 4 changes to the base rotation; third-seed check: assassination-ml-raid 312 -> 708 DPS (+126.9%), sim preset: Mutilate 674 -> 672 DPS (-0.2%), assassination-mutilate-raid 308 -> 688 DPS (+123.3%), assassination-seal-fate-raid 312 -> 702 DPS (+125.2%)):
+  10. drop: if energy ≤ 43.5 and timeToNextEnergyTick > 1 and combo points < 5 and not Adrenaline Rush is up: cast Thistle Tea (+2.8%, pass 8)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 10 passes, the last 2026-10-10, 4 changes to the base rotation; third-seed check: open winner 721 -> 718 DPS (-0.4%), assassination-ml-raid 312 -> 708 DPS (+126.9%), sim preset: Mutilate 674 -> 672 DPS (-0.2%), assassination-mutilate-raid 308 -> 688 DPS (+123.3%), assassination-seal-fate-raid 312 -> 702 DPS (+125.2%)):
   1. insert before the filler: cast Backstab (+0.8%, pass 1)
   2. spell probe: insert at the end: cast Hemorrhage (+9.9%, pass 5)
   3. spell probe: insert in the middle: if auraIsInactive: cast Ghostly Strike (+1.8%, pass 5)
@@ -99,13 +101,12 @@ Seal Fate daggers with Vigor and Lethality: an Assassination Backstab build. It 
 
 | # | Priority (the first line whose condition holds is cast) | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) casts/min |
 |---|---|---|
-| 1 | if energy ≤ 43.5 and timeToNextEnergyTick > 1 and combo points < 5 and not Adrenaline Rush is up: cast Thistle Tea | as ready |
-| 2 | cast Backstab | 11.2 |
-| 3 | if time left on Expose Armor < 3 and combo points ≥ 3.75 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.8 |
-| 4 | if combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 12: cast Slice and Dice | 2.8 |
-| 5 | if Slice and Dice is up: use every other cooldown when ready | as ready |
-| 6 | if combo points ≥ 5 and Slice and Dice is up: cast Cold Blood | 0.3 |
-| 7 | if combo points ≥ 4 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 2.6 |
+| 1 | cast Backstab | 11.8 |
+| 2 | if time left on Expose Armor < 3 and combo points ≥ 3.75 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.8 |
+| 3 | if combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 12: cast Slice and Dice | 2.8 |
+| 4 | if Slice and Dice is up: use every other cooldown when ready | as ready |
+| 5 | if combo points ≥ 5 and Slice and Dice is up: cast Cold Blood | 0.3 |
+| 6 | if combo points ≥ 4 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 2.8 |
 
 Lines of the simulator's rotation these builds never cast: cast Ghostly Strike (needs the Ghostly Strike talent); cast Mutilate (needs the Mutilate talent); cast Hemorrhage (needs the Hemorrhage talent).
 
@@ -113,9 +114,9 @@ Damage by ability:
 
 | Ability | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) |
 |---|---|
-| Auto Attack | 44% |
+| Auto Attack | 43% |
 | Backstab | 30% |
-| Eviscerate | 12% |
+| Eviscerate | 13% |
 | Deadly Poison | 7% |
 | Dense Sharpening Stone | 4% |
 | Dragonbreath Chili | 2% |

@@ -1,0 +1,250 @@
+{
+ "class": "rogue",
+ "spec": "subtlety-raid",
+ "build": "subtlety-open-raid",
+ "setting": "raid",
+ "date": "2026-10-10",
+ "tank": false,
+ "removal": {
+  "Camouflage": -0.0,
+  "Cold Blood": 0.00843722152939641,
+  "Dirty Deeds": 0.006751810590033713,
+  "Dirty Tricks": -0.0,
+  "Heightened Senses": -0.0,
+  "Hemorrhage": 0.5706634431579838,
+  "Improved Ambush": -0.0,
+  "Improved Distract": -0.0,
+  "Improved Poisons": 0.018183260531246415,
+  "Improved Slice and Dice": 0.03861808682618817,
+  "Initiative": 0.004118084646804299,
+  "Lethality": 0.00665410435572289,
+  "Malice": 0.04354178974627243,
+  "Opportunity": 0.0008868683172044145,
+  "Premeditation": 0.015627557225905586,
+  "Preparation": 0.017154889691875508,
+  "Quietus": 0.00701505080868825,
+  "Relentless Strikes": 0.07568981315602374,
+  "Ruthlessness": 0.06865709701317246,
+  "Serrated Blades": 0.036855587776392196,
+  "Setup": -0.0,
+  "Thousand Cuts": 0.058829399823477235
+ },
+ "free": [
+  "Camouflage",
+  "Dirty Tricks",
+  "Heightened Senses",
+  "Improved Ambush",
+  "Improved Distract",
+  "Opportunity",
+  "Setup"
+ ],
+ "kept_for_rotation": [],
+ "active_never_worth": [],
+ "abilities_never_cast": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Camouflage",
+   "to": "Ghostly Strike",
+   "seed1": -9.318043753658856e-05,
+   "seed2": -0.0009475820593241036,
+   "utility": "survival"
+  }
+ ],
+ "final_seed3": -0.0014683348327046986,
+ "start": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Lethality",
+    3
+   ],
+   [
+    "Cold Blood",
+    1
+   ],
+   [
+    "Improved Poisons",
+    4
+   ]
+  ],
+  "Combat": [],
+  "Subtlety": [
+   [
+    "Camouflage",
+    4
+   ],
+   [
+    "Opportunity",
+    2
+   ],
+   [
+    "Setup",
+    1
+   ],
+   [
+    "Dirty Tricks",
+    1
+   ],
+   [
+    "Improved Ambush",
+    3
+   ],
+   [
+    "Initiative",
+    3
+   ],
+   [
+    "Improved Distract",
+    2
+   ],
+   [
+    "Heightened Senses",
+    1
+   ],
+   [
+    "Premeditation",
+    1
+   ],
+   [
+    "Serrated Blades",
+    3
+   ],
+   [
+    "Dirty Deeds",
+    2
+   ],
+   [
+    "Preparation",
+    1
+   ],
+   [
+    "Hemorrhage",
+    1
+   ],
+   [
+    "Quietus",
+    5
+   ],
+   [
+    "Thousand Cuts",
+    1
+   ]
+  ]
+ },
+ "allocation": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Lethality",
+    3
+   ],
+   [
+    "Cold Blood",
+    1
+   ],
+   [
+    "Improved Poisons",
+    4
+   ]
+  ],
+  "Combat": [],
+  "Subtlety": [
+   [
+    "Camouflage",
+    3
+   ],
+   [
+    "Opportunity",
+    2
+   ],
+   [
+    "Setup",
+    1
+   ],
+   [
+    "Dirty Tricks",
+    1
+   ],
+   [
+    "Improved Ambush",
+    3
+   ],
+   [
+    "Initiative",
+    3
+   ],
+   [
+    "Improved Distract",
+    2
+   ],
+   [
+    "Heightened Senses",
+    1
+   ],
+   [
+    "Premeditation",
+    1
+   ],
+   [
+    "Serrated Blades",
+    3
+   ],
+   [
+    "Dirty Deeds",
+    2
+   ],
+   [
+    "Preparation",
+    1
+   ],
+   [
+    "Hemorrhage",
+    1
+   ],
+   [
+    "Quietus",
+    5
+   ],
+   [
+    "Thousand Cuts",
+    1
+   ],
+   [
+    "Ghostly Strike",
+    1
+   ]
+  ]
+ }
+}

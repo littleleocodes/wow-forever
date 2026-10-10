@@ -1,0 +1,248 @@
+{
+ "class": "rogue",
+ "spec": "assassination-raid",
+ "build": "daggers-split-open-raid",
+ "setting": "raid",
+ "date": "2026-10-10",
+ "tank": false,
+ "removal": {
+  "Blade Flurry": 0.010341896950201712,
+  "Cold Blood": 0.006206718240823417,
+  "Deflection": -0.0,
+  "Dual Wield Specialization": 0.048530239535877095,
+  "Flawless Execution": 0.023837318961503873,
+  "Hack and Slash": 0.03189364556915586,
+  "Improved Eviscerate": 0.021014722301408773,
+  "Improved Poisons": 0.014646594358817877,
+  "Improved Sinister Strike": -0.0,
+  "Improved Slice and Dice": 0.032522400515282435,
+  "Lethality": 0.007735688471870783,
+  "Lightning Reflexes": -0.0,
+  "Malice": 0.042363036544402655,
+  "Mutilate": 0.015011523258255721,
+  "Opportunity": 0.016438817673400274,
+  "Precision": 0.028248014334847582,
+  "Puncturing Wounds": 0.021792683677893,
+  "Relentless Strikes": 0.06803258887035357,
+  "Riposte": -0.0,
+  "Ruthlessness": 0.03778813248215074,
+  "Vile Poisons": 0.0034715391606972013,
+  "Weapon Expertise": 0.018920672513152326
+ },
+ "free": [
+  "Deflection",
+  "Improved Sinister Strike",
+  "Lightning Reflexes",
+  "Riposte"
+ ],
+ "kept_for_rotation": [],
+ "active_never_worth": [],
+ "abilities_never_cast": [
+  "Riposte"
+ ],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Improved Sinister Strike",
+   "to": "Lightning Reflexes",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Riposte",
+   "to": "Lightning Reflexes",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  }
+ ],
+ "final_seed3": 0.0,
+ "start": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Lethality",
+    3
+   ],
+   [
+    "Vile Poisons",
+    1
+   ],
+   [
+    "Cold Blood",
+    1
+   ],
+   [
+    "Improved Poisons",
+    3
+   ],
+   [
+    "Mutilate",
+    1
+   ]
+  ],
+  "Combat": [
+   [
+    "Improved Eviscerate",
+    3
+   ],
+   [
+    "Improved Sinister Strike",
+    1
+   ],
+   [
+    "Lightning Reflexes",
+    1
+   ],
+   [
+    "Puncturing Wounds",
+    3
+   ],
+   [
+    "Deflection",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Riposte",
+    1
+   ],
+   [
+    "Flawless Execution",
+    1
+   ],
+   [
+    "Dual Wield Specialization",
+    5
+   ],
+   [
+    "Blade Flurry",
+    1
+   ],
+   [
+    "Hack and Slash",
+    4
+   ],
+   [
+    "Weapon Expertise",
+    2
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Opportunity",
+    2
+   ]
+  ]
+ },
+ "allocation": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Lethality",
+    3
+   ],
+   [
+    "Vile Poisons",
+    1
+   ],
+   [
+    "Cold Blood",
+    1
+   ],
+   [
+    "Improved Poisons",
+    3
+   ],
+   [
+    "Mutilate",
+    1
+   ]
+  ],
+  "Combat": [
+   [
+    "Improved Eviscerate",
+    3
+   ],
+   [
+    "Lightning Reflexes",
+    3
+   ],
+   [
+    "Puncturing Wounds",
+    3
+   ],
+   [
+    "Deflection",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Flawless Execution",
+    1
+   ],
+   [
+    "Dual Wield Specialization",
+    5
+   ],
+   [
+    "Blade Flurry",
+    1
+   ],
+   [
+    "Hack and Slash",
+    4
+   ],
+   [
+    "Weapon Expertise",
+    2
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Opportunity",
+    2
+   ]
+  ]
+ }
+}

@@ -5,9 +5,6 @@
   },
   "Arcane Shot": {
    "off": true
-  },
-  "Feign Death": {
-   "off": true
   }
  },
  "drink_below": 0.15,
@@ -21,7 +18,7 @@
   50,
   60
  ],
- "date": "2026-09-28",
+ "date": "2026-10-09",
  "fights": 600,
  "confirm": 3000,
  "changes": [
@@ -33,8 +30,8 @@
     "Multi-Shot",
     true
    ],
-   "gain_seed1": 0.025549971894465617,
-   "gain_seed2": 0.02545221940264264
+   "gain_seed1": 0.031601778836169214,
+   "gain_seed2": 0.02655836020309832
   },
   {
    "round": 2,
@@ -44,8 +41,8 @@
     "Arcane Shot",
     true
    ],
-   "gain_seed1": 0.01961142983393771,
-   "gain_seed2": 0.019000002922843873
+   "gain_seed1": 0.023745488389563696,
+   "gain_seed2": 0.023109821886278414
   },
   {
    "round": 3,
@@ -55,51 +52,40 @@
     null,
     0.15
    ],
-   "gain_seed1": 0.006292113919203035,
-   "gain_seed2": 0.008070083957910978
-  },
-  {
-   "round": 4,
-   "change": "never cast Feign Death",
-   "rule": [
-    "off",
-    "Feign Death",
-    true
-   ],
-   "gain_seed1": 0.007268323189918435,
-   "gain_seed2": 0.00514476695907673
+   "gain_seed1": 0.00556812613932256,
+   "gain_seed2": 0.009057262769929242
   }
  ],
- "weighted_before": 28.824407648024334,
- "weighted_after": 27.102647926679214,
+ "weighted_before": 27.970051144616043,
+ "weighted_after": 26.34830959681106,
  "per_level": {
   "20": {
-   "before": 19.572078929084146,
-   "after": 17.791244173962447,
+   "before": 18.6618256082824,
+   "after": 17.029960701681116,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 25.478726037718534,
-   "after": 23.554844764906747,
+   "before": 23.783096538028623,
+   "after": 22.456477971263066,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 30.267553377446994,
-   "after": 28.100774235565968,
+   "before": 29.017773953199534,
+   "after": 26.74504575184301,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 30.21974445095622,
-   "after": 28.42998384820375,
+   "before": 29.644841607709257,
+   "after": 27.82932643766705,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 31.45648020409896,
-   "after": 30.208819951276094,
+   "before": 31.072129701720957,
+   "after": 29.90167023722708,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

@@ -82,6 +82,8 @@ The search model's most important talents (random-forest importance): Fingers of
 
 **Synergy certificate** (2026-10-09, raidsim/synergy.py): 51 relevant talents, 33 the winner lacks; 1139 pairs measured around 28/0/23 on 1500 fights. Largest interactions (DPS of both against the two alone): Winter's Chill + Missile Barrage +0.8% (build -2.9%), Presence of Mind + Ice Lance +0.8% (build -0.6%), Presence of Mind + Fingers of Frost +0.5% (build -9.7%), Master of Elements + Arcane Concentration +0.3% (build +0.3%), Presence of Mind + Improved Frostbolt +0.3% (build -12.5%), Arcane Power + Master of Elements +0.3% (build +2.7%). No pair build within 1% of the winner. The certificate confirms the winner.
 
+Build (2026-10-09, open_builds.py): `arcane-frost-open-raid`.
+
 ## fire-raid
 
 **Best family per pair of keystones** (each polished by a short hill climb that keeps the pair; DPS on 800 fights, before the main search):
@@ -150,6 +152,8 @@ Sibling rotations (the entry's best build under each, 10,000 fights): frost-raid
 The search model's most important talents (random-forest importance): Fire Power 0.33, Critical Mass 0.16, Improved Scorch 0.14, Combustion 0.09, Arcane Concentration 0.07, Fire points 0.04, Impact 0.03, Heating Up 0.03, Arcane points 0.02, Ignite 0.01.
 
 **Synergy certificate** (2026-10-09, raidsim/synergy.py): 51 relevant talents, 35 the winner lacks; 1157 pairs measured around 12/34/5 on 1500 fights. Largest interactions (DPS of both against the two alone): Presence of Mind + Combustion +3.0% (build -2.4%), Arcane Meditation + Master of Elements +2.8% (build +1.5%), Presence of Mind + Improved Scorch +1.8% (build -27.7%), Arcane Meditation + Arcane Power +1.4% (build +5.9%), Presence of Mind + Ignite +1.2% (build -13.5%), Presence of Mind + Pyroblast +0.5% (build -8.8%). No pair build within 1% of the winner. The certificate confirms the winner.
+
+Build (2026-10-09, open_builds.py): confirms fire-raid (+0.00% in a full raid, raced together).
 
 ## arcane-dps
 
@@ -226,6 +230,8 @@ The search model's most important talents (random-forest importance): Arcane Bla
 
 **Synergy certificate** (2026-10-09, raidsim/synergy.py): 51 relevant talents, 31 the winner lacks; 1113 pairs measured around 32/12/7 on 1500 fights. Largest interactions (DPS of both against the two alone): Combustion + Presence of Mind +1.3% (build +0.4%), Fire Power + Arcane Blast +0.8% (build -77.5%), Critical Mass + Arcane Blast +0.3% (build -78.4%), Critical Mass + Missile Barrage +0.3% (build -28.6%), Fire Power + Missile Barrage +0.2% (build -28.1%), Master of Elements + Arcane Meditation +0.2% (build -0.7%). No pair build within 1% of the winner. The certificate confirms the winner.
 
+Build (2026-10-09, open_builds.py): confirms arcane-blast-raid (+0.33% in a full raid, raced together).
+
 ## frostfire-raid
 
 **Best family per pair of keystones** (each polished by a short hill climb that keeps the pair; DPS on 800 fights, before the main search):
@@ -296,4 +302,6 @@ Sibling rotations (the entry's best build under each, 10,000 fights): frost-raid
 The search model's most important talents (random-forest importance): Critical Mass 0.28, Fire Power 0.18, Fire points 0.10, Improved Scorch 0.09, Frost Channeling 0.04, Improved Frostbolt 0.04, Ignite 0.03, Heating Up 0.03, Fingers of Frost 0.03, Master of Elements 0.03.
 
 **Synergy certificate** (2026-10-09, raidsim/synergy.py): 51 relevant talents, 34 the winner lacks; 1135 pairs measured around 0/29/22 on 1500 fights. Largest interactions (DPS of both against the two alone): Arcane Meditation + Master of Elements +5.0% (build +1.3%), Arcane Meditation + Frost Channeling +4.9% (build +0.7%), Arcane Concentration + Frost Channeling +3.6% (build -0.9%), Arcane Concentration + Master of Elements +3.5% (build -0.5%), Missile Barrage + Frost Channeling +2.9% (build -3.1%), Missile Barrage + Master of Elements +2.8% (build -2.8%). No pair build within 1% of the winner. The certificate confirms the winner.
+
+Build (2026-10-09, open_builds.py): confirms frostfire-fingers-of-frost-raid (+0.00% in a full raid, raced together).
 

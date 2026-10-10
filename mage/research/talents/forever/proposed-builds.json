@@ -1432,55 +1432,6 @@
       "sources": ["https://talentsforever.com/mage/60/-0355100013013304-00550003310003002-TUV4WaVbdeflmqrswzh-6"]
     },
     {
-      "id": "arcane-frost-open-raid",
-      "name": "Arcane-Frost — Raid (open talent search)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Hybrid Arcane/Frost",
-      "generated": "2026-10-09",
-      "derived": "raid",
-      "summary": "The Arcane-Frost (a Arcane/Frost hybrid) raid build the open talent search found on 2026-10-09: every legal 51-point build with no tree rule, searched in the community simulator's frost-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.4% over frost-ml-raid, the best of our builds in that rotation.",
-      "allocation": {
-        "Arcane": [
-          ["Arcane Focus", 5],
-          ["Improved Channeling", 5],
-          ["Arcane Concentration", 3],
-          ["Arcane Impact", 3],
-          ["Arcane Blast", 1],
-          ["Missile Barrage", 1],
-          ["Arcane Mind", 5],
-          ["Arcane Instability", 3],
-          ["Arcane Subtlety", 2]
-        ],
-        "Fire": [],
-        "Frost": [
-          ["Improved Frostbolt", 5],
-          ["Elemental Precision", 4],
-          ["Ice Shards", 5],
-          ["Piercing Ice", 3],
-          ["Ice Lance", 1],
-          ["Shatter", 3],
-          ["Fingers of Frost", 2]
-        ]
-      },
-      "core": [
-        {"talent": "Improved Frostbolt", "why": "91 DPS lost without it (13% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Fingers of Frost", "why": "72 DPS lost without it (10% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Missile Barrage", "why": "66 DPS lost without it (10% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Ice Shards", "why": "63 DPS lost without it (9% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Shatter", "why": "52 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Arcane Instability", "why": "35 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Piercing Ice", "why": "30 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
-        {"talent": "Elemental Precision", "why": "29 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."}
-      ],
-      "flex": [],
-      "notes": ["+1.9% over the best hand draft of the spec, frost-fingers-of-frost-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (frost-raid, full raid): 28/0/23 (Arcane-Frost (a Arcane/Frost hybrid)) at 692.9 DPS; frost-ml-raid 683.3, opt-frost-raid-raid-dps 679.9, frost-fingers-of-frost-raid 679.8, opt-frost-raid-raid-dps-extwc 650.1, frost-arcane-power-raid 649.5, frost-winters-chill-raid 619.1 in the same fights; 4,617 builds simulated, 2 independent runs reached the top.", "The frost-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): fire-raid -46.4%, arcane-dps -6.9%, frostfire-raid -36.5%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Channeling, Arcane Subtlety, Arcane Geometry, Arcane Blast.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements.", "2026-10-09 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Geometry -> Improved Channeling (interrupt); Arcane Subtlety -> Improved Channeling (interrupt); Arcane Subtlety -> Improved Channeling (interrupt); Arcane Meditation -> Improved Channeling (interrupt); Arcane Concentration -> Arcane Subtlety (threat); Arcane Concentration -> Arcane Subtlety (threat). Net +0.04% on a third seed."],
-      "open_questions": ["An open-search Arcane-Frost build: check it against the community's Arcane-Frost builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/mage/60/05120501310011053--05450003010003002-6"],
-      "replaces": "frost-fingers-of-frost-raid"
-    },
-    {
       "id": "arcane-frost-open-leveling",
       "name": "Arcane-Frost — Leveling (open talent search)",
       "role": "dps",
@@ -1715,6 +1666,55 @@
       "open_questions": ["An open-search Frost leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/mage/60/2412150000003-02-1535003331000301201-6"],
       "replaces": "leveling-frost"
+    },
+    {
+      "id": "arcane-frost-open-raid",
+      "name": "Arcane-Frost — Raid (open talent search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Hybrid Arcane/Frost",
+      "generated": "2026-10-09",
+      "derived": "raid",
+      "summary": "The Arcane-Frost (a Arcane/Frost hybrid) raid build the open talent search found on 2026-10-09: every legal 51-point build with no tree rule, searched in the community simulator's frost-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.4% over frost-ml-raid, the best of our builds in that rotation.",
+      "allocation": {
+        "Arcane": [
+          ["Arcane Focus", 5],
+          ["Improved Channeling", 5],
+          ["Arcane Concentration", 3],
+          ["Arcane Impact", 3],
+          ["Arcane Blast", 1],
+          ["Missile Barrage", 1],
+          ["Arcane Mind", 5],
+          ["Arcane Instability", 3],
+          ["Arcane Subtlety", 2]
+        ],
+        "Fire": [],
+        "Frost": [
+          ["Improved Frostbolt", 5],
+          ["Elemental Precision", 4],
+          ["Ice Shards", 5],
+          ["Piercing Ice", 3],
+          ["Ice Lance", 1],
+          ["Shatter", 3],
+          ["Fingers of Frost", 2]
+        ]
+      },
+      "core": [
+        {"talent": "Improved Frostbolt", "why": "91 DPS lost without it (13% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Fingers of Frost", "why": "72 DPS lost without it (10% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Missile Barrage", "why": "66 DPS lost without it (10% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Ice Shards", "why": "63 DPS lost without it (9% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Shatter", "why": "52 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Arcane Instability", "why": "35 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Piercing Ice", "why": "30 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Elemental Precision", "why": "29 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."}
+      ],
+      "flex": [],
+      "notes": ["+1.9% over the best hand draft of the spec, frost-fingers-of-frost-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (frost-raid, full raid): 28/0/23 (Arcane-Frost (a Arcane/Frost hybrid)) at 692.9 DPS; frost-ml-raid 683.3, opt-frost-raid-raid-dps 679.9, frost-fingers-of-frost-raid 679.8, opt-frost-raid-raid-dps-extwc 650.1, frost-arcane-power-raid 649.5, frost-winters-chill-raid 619.1 in the same fights; 4,617 builds simulated, 2 independent runs reached the top.", "The frost-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): fire-raid -46.4%, arcane-dps -6.9%, frostfire-raid -36.5%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Channeling, Arcane Subtlety, Arcane Geometry, Arcane Blast.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements.", "2026-10-09 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Geometry -> Improved Channeling (interrupt); Arcane Subtlety -> Improved Channeling (interrupt); Arcane Subtlety -> Improved Channeling (interrupt); Arcane Meditation -> Improved Channeling (interrupt); Arcane Concentration -> Arcane Subtlety (threat); Arcane Concentration -> Arcane Subtlety (threat). Net +0.04% on a third seed."],
+      "open_questions": ["An open-search Arcane-Frost build: check it against the community's Arcane-Frost builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/mage/60/05120501310011053--05450003010003002-6"],
+      "replaces": "frost-fingers-of-frost-raid"
     }
   ]
 }

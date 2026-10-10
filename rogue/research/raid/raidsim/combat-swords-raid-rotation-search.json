@@ -2,8 +2,8 @@
  "dummy": {
   "class": "rogue",
   "spec": "combat-swords-raid",
-  "date": "2026-10-07",
-  "commit": "b0f0df3",
+  "date": "2026-10-10",
+  "commit": "2ce8265",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "ui/specs/rogue/dps/apls/combat_sinister_strike.apl.json",
@@ -111,36 +111,36 @@
   "final": {
    "dummy": {
     "open winner": {
-     "before": 340.71769649067147,
-     "after": 376.5015664407848,
-     "base": 340.71769649067147,
+     "before": 352.5006910798815,
+     "after": 391.5875198025483,
+     "base": 352.5006910798815,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "combat-swords-raid": {
-     "before": 331.2573962156081,
-     "after": 393.6283448144612,
-     "base": 331.2573962156081,
+     "before": 343.00288333902034,
+     "after": 409.1536076186849,
+     "base": 343.00288333902034,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Improved Expose Armor (SS)": {
-     "before": 331.2573962156081,
-     "after": 393.6283448144612,
-     "base": 331.2573962156081,
+     "before": 343.00288333902034,
+     "after": 409.1536076186849,
+     "base": 343.00288333902034,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "opt-combat-swords-raid-raid-dps": {
-     "before": 337.66191586839284,
-     "after": 375.63284196121543,
-     "base": 337.66191586839284,
+     "before": 349.0562589124658,
+     "after": 390.81549497581085,
+     "base": 349.0562589124658,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -149,12 +149,12 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 5
+  "passes": 6
  },
  "raid": {
   "class": "rogue",
   "spec": "combat-swords-raid",
-  "date": "2026-10-09",
+  "date": "2026-10-10",
   "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
@@ -162,12 +162,18 @@
   "start": "ui\\specs\\rogue\\dps\\apls\\combat_sinister_strike.apl.json",
   "builds": [
    {
+    "label": "open winner",
+    "talents": "005303103003-32403300001515231"
+   },
+   {
     "label": "opt-combat-swords-raid-raid-dps",
-    "talents": "005323101005-32502300000514231"
+    "talents": "005323101005-32502300000514231",
+    "protect_only": true
    },
    {
     "label": "sim preset: Sinister Strike",
-    "talents": "00530310501-32003311201515231"
+    "talents": "00530310501-32003311201515231",
+    "protect_only": true
    },
    {
     "label": "combat-swords-raid",
@@ -176,8 +182,7 @@
    }
   ],
   "tuned_on": [
-   "opt-combat-swords-raid-raid-dps",
-   "sim preset: Sinister Strike"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -225,6 +230,15 @@
   ],
   "final": {
    "raid": {
+    "open winner": {
+     "before": 715.2119964412224,
+     "after": 716.6103294686462,
+     "base": 715.2119964412224,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
     "opt-combat-swords-raid-raid-dps": {
      "before": 705.6232269888802,
      "after": 703.7674753701898,
@@ -255,6 +269,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 7
+  "passes": 8
  }
 }

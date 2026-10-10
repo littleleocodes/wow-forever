@@ -314,9 +314,6 @@
 **Frostfire — Fingers of Frost / Ice Lance (user build)** (`mage/research/raid/builds/frostfire-fingers-of-frost-raid.md`)
 - [ ] Does Frostfire Bolt's chill proc Fingers of Frost in the live game as the simulator assumes?
 
-**Arcane-Frost — Raid (open talent search)** (`mage/research/raid/builds/arcane-frost-open-raid.md`)
-- [ ] An open-search Arcane-Frost build: check it against the community's Arcane-Frost builds at launch.
-
 **Arcane-Frost — Leveling (open talent search)** (`mage/research/leveling/builds/arcane-frost-open-leveling.md`)
 - [ ] An open-search Arcane-Frost leveling build: check it while leveling at launch.
 
@@ -325,6 +322,9 @@
 
 **Frost — Leveling (open talent search)** (`mage/research/leveling/builds/frost-open-leveling.md`)
 - [ ] An open-search Frost leveling build: check it while leveling at launch.
+
+**Arcane-Frost — Raid (open talent search)** (`mage/research/raid/builds/arcane-frost-open-raid.md`)
+- [ ] An open-search Arcane-Frost build: check it against the community's Arcane-Frost builds at launch.
 
 ### Paladin
 
@@ -394,8 +394,11 @@
 **Optimizer — Shield tank: Consecration 25%, Holy Strike 20% (Forever; Classic uses Seal/Judgement of Righteousness instead), seal+judgement 15%, Retribution Aura 10%, white 20%, Holy Shield blocks via talent (raid-tank)** (`paladin/research/raid/builds/opt-prot-tank-raid-tank.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Prot-Ret — Leveling (open talent search)** (`paladin/research/leveling/builds/prot-ret-open-leveling.md`)
-- [ ] An open-search Prot-Ret leveling build: check it while leveling at launch.
+**Shockadin — Leveling (open talent search)** (`paladin/research/leveling/builds/shockadin-open-leveling.md`)
+- [ ] An open-search Shockadin leveling build: check it while leveling at launch.
+
+**Protection — Leveling (open talent search)** (`paladin/research/leveling/builds/protection-open-leveling.md`)
+- [ ] An open-search Protection leveling build: check it while leveling at launch.
 
 **Retribution — Leveling (open talent search)** (`paladin/research/leveling/builds/retribution-open-leveling.md`)
 - [ ] An open-search Retribution leveling build: check it while leveling at launch.
@@ -538,6 +541,15 @@
 **Combat-Subtlety — Leveling (open talent search)** (`rogue/research/leveling/builds/combat-subtlety-open-leveling.md`)
 - [ ] An open-search Combat-Subtlety leveling build: check it while leveling at launch.
 
+**Combat — Swords (open talent search)** (`rogue/research/raid/builds/combat-swords-open-raid.md`)
+- [ ] An open-search Combat build: check it against the community's Combat builds at launch.
+
+**Daggers (split) — Raid (open talent search)** (`rogue/research/raid/builds/daggers-split-open-raid.md`)
+- [ ] An open-search Daggers (split) build: check it against the community's Daggers (split) builds at launch.
+
+**Subtlety — Raid (open talent search)** (`rogue/research/raid/builds/subtlety-open-raid.md`)
+- [ ] An open-search Subtlety build: check it against the community's Subtlety builds at launch.
+
 ### Shaman
 
 **Restoration — Raid Healer (healer lab winner adopted 2026-09-26)** (`shaman/research/raid/builds/resto-raid-healer.md`)
@@ -608,8 +620,8 @@
 **Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (parse)** (`shaman/research/raid/builds/opt-enhancement-dps-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Elemental — Leveling (open talent search)** (`shaman/research/leveling/builds/elemental-open-leveling.md`)
-- [ ] An open-search Elemental leveling build: check it while leveling at launch.
+**Elemental-Enhancement — Leveling (open talent search)** (`shaman/research/leveling/builds/elemental-enhancement-open-leveling.md`)
+- [ ] An open-search Elemental-Enhancement leveling build: check it while leveling at launch.
 
 **Enhancement — Leveling (open talent search)** (`shaman/research/leveling/builds/enhancement-open-leveling.md`)
 - [ ] An open-search Enhancement leveling build: check it while leveling at launch.

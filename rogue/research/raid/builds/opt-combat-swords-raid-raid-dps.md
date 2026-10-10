@@ -60,23 +60,24 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-s
 
 ## Rank among our builds and the community simulator's
 
-**3 of 9** for `combat-swords-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 10** for `combat-swords-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`combat-swords-raid`](combat-swords-raid.md) | ours: hand draft | 19/32/0 | 409 | +0.0% | 703 | -1.2% | 0 s |
-| 2 | *Improved Expose Armor (SS)* | community simulator | - | 409 | +0.0% | 703 | -1.2% | 0 s |
-| 3 | **[`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md)** | ours: optimizer | 20/31/0 | 391 | -4.4% | 704 | -1.1% | 0 s |
-| 4 | *Sinister Strike* | community simulator | - | 387 | -5.4% | 711 | +0.0% | 0 s |
-| 5 | *Combat Dual-Wield 15/33/3* | community simulator | - | 380 | -7.1% | 698 | -1.9% | 0 s |
-| 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 356 | -13.1% | 645 | -9.4% | 0 s |
-| 7 | *Mutilate* | community simulator | - | 344 | -15.8% | 630 | -11.4% | 0 s |
-| 8 | *Backstab* | community simulator | - | 331 | -18.9% | 640 | -10.1% | 0 s |
-| 9 | *Subtlety Hemo 15/0/36* | community simulator | - | 315 | -22.9% | 559 | -21.4% | 0 s |
+| 1 | [`combat-swords-raid`](combat-swords-raid.md) | ours: hand draft | 19/32/0 | 409 | +0.0% | 703 | -2.1% | 0 s |
+| 2 | *Improved Expose Armor (SS)* | community simulator | - | 409 | +0.0% | 703 | -2.1% | 0 s |
+| 3 | [`combat-swords-open-raid`](combat-swords-open-raid.md) | ours: hand draft | 18/33/0 | 392 | -4.2% | 718 | +0.0% | 0 s |
+| 4 | **[`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md)** | ours: optimizer | 20/31/0 | 391 | -4.4% | 704 | -2.0% | 0 s |
+| 5 | *Sinister Strike* | community simulator | - | 387 | -5.4% | 711 | -0.9% | 0 s |
+| 6 | *Combat Dual-Wield 15/33/3* | community simulator | - | 380 | -7.1% | 698 | -2.8% | 0 s |
+| 7 | *Assassination Mutilate 31/20/0* | community simulator | - | 356 | -13.1% | 645 | -10.2% | 0 s |
+| 8 | *Mutilate* | community simulator | - | 344 | -15.8% | 630 | -12.2% | 0 s |
+| 9 | *Backstab* | community simulator | - | 331 | -18.9% | 640 | -10.9% | 0 s |
+| 10 | *Subtlety Hemo 15/0/36* | community simulator | - | 315 | -22.9% | 559 | -22.1% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 5 passes, the last 2026-10-07, 9 changes to the base rotation; third-seed check: open winner 341 -> 377 DPS (+10.5%), combat-swords-raid 331 -> 394 DPS (+18.8%), sim preset: Improved Expose Armor (SS) 331 -> 394 DPS (+18.8%), opt-combat-swords-raid-raid-dps 338 -> 376 DPS (+11.2%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-10, 9 changes to the base rotation; third-seed check: open winner 353 -> 392 DPS (+11.1%), combat-swords-raid 343 -> 409 DPS (+19.3%), sim preset: Improved Expose Armor (SS) 343 -> 409 DPS (+19.3%), opt-combat-swords-raid-raid-dps 349 -> 391 DPS (+12.0%)):
   1. insert at the top: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3: cast Expose Armor (+9.7%, pass 1)
   2. only with 10s or more of the fight left: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3: cast Expose Armor (+0.3%, pass 1)
   3. only with 20s or more of the fight left: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9): cast Slice and Dice (+0.4%, pass 1)
@@ -86,7 +87,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-s
   7. spell probe: insert in the middle: cast Mutilate (+1.2%, pass 4)
   8. spell probe: insert at the top: if auraIsInactive: cast Ghostly Strike (+2.2%, pass 4)
   9. move to the top: if Slice and Dice is up: use every other cooldown when ready (+0.2%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 7 passes, the last 2026-10-09, 5 changes to the base rotation; third-seed check: opt-combat-swords-raid-raid-dps 706 -> 704 DPS (-0.3%), sim preset: Sinister Strike 710 -> 711 DPS (+0.1%), combat-swords-raid 702 -> 703 DPS (+0.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-10, 5 changes to the base rotation; third-seed check: open winner 715 -> 717 DPS (+0.2%), opt-combat-swords-raid-raid-dps 706 -> 704 DPS (-0.3%), sim preset: Sinister Strike 710 -> 711 DPS (+0.1%), combat-swords-raid 702 -> 703 DPS (+0.1%)):
   1. threshold 5 -> 2.5: if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate (+0.5%, pass 1)
   2. spell probe: insert before the filler: cast Mutilate (+0.6%, pass 4)
   3. spell probe: insert at the top: if auraIsInactive: cast Ghostly Strike (+1.8%, pass 4)

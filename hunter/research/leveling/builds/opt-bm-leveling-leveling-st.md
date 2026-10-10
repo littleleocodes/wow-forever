@@ -86,24 +86,25 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-level
 
 Single-target leveling fights against normal mobs of your level with a cat: the pet runs in and meets the mob halfway, Growls every 5 s and holds it until your threat passes 130% of its own. You shoot from 35 yd: Hunter's Mark, Serpent Sting, Summon Hawk or Arcane Shot, Multi-Shot / Aimed Shot on their shared cooldown, Auto Shot in between (the bow cannot fire inside 8 yd); Bestial Wrath, Intimidation and Rapid Fire on the pull when ready; Mend Pet when the pet drops below 35%; Feign Death, Wing Clip and Raptor Strike when a mob reaches you. Between fights: 2 s loot, 6 s travel, Mend Pet below 70% pet health, water below 35% mana, food below 65% health, a 10 s Revive Pet after a pet death; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): never cast Multi-Shot; never cast Arcane Shot; drink below 15% mana; never cast Feign Death. Together +6.0% time per kill saved for `leveling-beast-mastery` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): never cast Multi-Shot; never cast Arcane Shot; drink below 15% mana. Together +5.8% time per kill saved for `leveling-beast-mastery` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/bm-leveling.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Auto Shot | 3.1 | 4.3 | 5.5 | 6.5 | 7.3 | 36% |
-| Claw | 3.1 | 3.8 | 4.6 | 4.8 | 5.3 | 7% |
-| Growl | 1.5 | 2.2 | 3.0 | 3.2 | 3.7 | 0% |
-| Summon Hawk | 0.0 | 0.0 | 0.0 | 0.0 | 1.9 | 0% |
-| Aimed Shot | 1.0 | 1.0 | 1.4 | 1.6 | 1.4 | 12% |
-| Serpent Sting | 1.0 | 1.1 | 1.1 | 1.0 | 1.0 | 17% |
-| Bite | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2% |
+| Auto Shot | 3.1 | 4.4 | 5.7 | 6.8 | 6.6 | 32% |
+| Claw | 3.1 | 3.8 | 4.6 | 4.8 | 4.9 | 7% |
+| Growl | 1.5 | 2.2 | 3.0 | 3.2 | 3.2 | 0% |
+| Summon Hawk | 0.0 | 0.0 | 0.0 | 0.0 | 1.8 | 11% |
+| Aimed Shot | 1.0 | 1.0 | 1.5 | 1.7 | 1.2 | 10% |
+| Serpent Sting | 1.0 | 1.0 | 1.1 | 1.0 | 1.0 | 16% |
 | Hunter's Mark | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
-| Melee | 0.0 | 0.1 | 0.1 | 0.2 | 0.0 | 0% |
-| Raptor Strike | 0.0 | 0.0 | 0.1 | 0.1 | 0.0 | 0% |
-| Wing Clip | 0.0 | 0.0 | 0.1 | 0.2 | 0.0 | 0% |
-| Mongoose Bite | 0.0 | 0.0 | 0.0 | 0.1 | 0.0 | 0% |
+| Bite | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2% |
+| Feign Death | 0.0 | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
+| Melee | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Raptor Strike | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Wing Clip | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Mongoose Bite | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes
 

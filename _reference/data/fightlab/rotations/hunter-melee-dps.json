@@ -1,10 +1,7 @@
 {
  "veto": {
-  "Hunter's Mark": {
+  "Serpent Sting": {
    "off": true
-  },
-  "Immolation Trap": {
-   "min_hp": 0.7
   }
  },
  "class": "hunter",
@@ -17,57 +14,52 @@
   50,
   60
  ],
- "date": "2026-09-28",
+ "date": "2026-10-09",
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "never cast Hunter's Mark",
+   "change": "never cast Serpent Sting",
    "rule": [
     "off",
-    "Hunter's Mark",
+    "Serpent Sting",
     true
    ],
-   "gain_seed1": 0.03161045711113575,
-   "gain_seed2": 0.03479522770519261
-  },
-  {
-   "change": "Immolation Trap only while the mob has more than 70% health",
-   "date": "2026-09-29",
-   "note": "traps added to the fight lab's melee hunter (2026-09-29): cast always -4.6..-6.9% time per kill at 40-60 but +1.5..1.8% at 20-30 (the 15 s burn outlives short fights); the 70% rule keeps the gain at 40-60 (-4.6/-4.9/-6.3%) and loses 0.7% at 20; 3000 fights, seed 1, leveling-melee"
+   "gain_seed1": 0.015625735201848956,
+   "gain_seed2": 0.015452057728468915
   }
  ],
- "weighted_before": 28.164024961380523,
- "weighted_after": 27.203678096268682,
+ "weighted_before": 24.590607910666993,
+ "weighted_after": 24.17788368521325,
  "per_level": {
   "20": {
-   "before": 17.962324590655427,
-   "after": 17.08223101928227,
+   "before": 16.909718674950458,
+   "after": 16.66439999992183,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 23.783418903102362,
-   "after": 23.083598993213343,
+   "before": 22.43288977979685,
+   "after": 20.882066310943518,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 27.045158224841195,
-   "after": 26.6575931473117,
+   "before": 24.224800033730087,
+   "after": 23.135034827493115,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 29.46591842549811,
-   "after": 28.646019068965437,
+   "before": 25.592873278004753,
+   "after": 25.2348957445268,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 33.415894718356185,
-   "after": 31.799639162182498,
+   "before": 27.63841416651737,
+   "after": 28.144676123164047,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

@@ -2,8 +2,8 @@
  "dummy": {
   "class": "rogue",
   "spec": "assassination-raid",
-  "date": "2026-10-07",
-  "commit": "b0f0df3",
+  "date": "2026-10-10",
+  "commit": "2ce8265",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "ui/specs/rogue/dps/apls/forever_mutilate.apl.json",
@@ -11,7 +11,7 @@
   "builds": [
    {
     "label": "open winner",
-    "talents": "00530310301-30531300001515231-002"
+    "talents": "00530310311301-311333010015142-002"
    },
    {
     "label": "assassination-seal-fate-raid",
@@ -111,50 +111,58 @@
     "gain_seed2": 0.0198,
     "candidates": 36,
     "pass": 5
+   },
+   {
+    "round": 10,
+    "change": "drop: if energy \u2264 43.5 and timeToNextEnergyTick > 1 and combo points < 5 and not Adrenaline Rush is up: cast Thistle Tea",
+    "gain_seed1": 0.027351792028592836,
+    "gain_seed2": 0.027516560637847354,
+    "candidates": 407,
+    "pass": 8
    }
   ],
   "final": {
    "dummy": {
     "open winner": {
-     "before": 148.7832279080657,
-     "after": 400.83524257667625,
-     "base": 148.7832279080657,
+     "before": 365.88907177719926,
+     "after": 395.9246371294967,
+     "base": 365.88907177719926,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "assassination-seal-fate-raid": {
-     "before": 148.43345623985505,
-     "after": 406.33178425868886,
-     "base": 148.43345623985505,
+     "before": 154.16804845070493,
+     "after": 421.5031481621357,
+     "base": 154.16804845070493,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Mutilate": {
-     "before": 334.8657991601011,
-     "after": 371.0316117782276,
-     "base": 334.8657991601011,
+     "before": 345.25050894578925,
+     "after": 386.317330122219,
+     "base": 345.25050894578925,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "assassination-mutilate-raid": {
-     "before": 143.31207640407567,
-     "after": 394.3585831925683,
-     "base": 143.31207640407567,
+     "before": 149.30174466994282,
+     "after": 409.4715462337547,
+     "base": 149.30174466994282,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "assassination-ml-raid": {
-     "before": 148.43345623985505,
-     "after": 394.1037256074423,
-     "base": 148.43345623985505,
+     "before": 154.16804845070493,
+     "after": 410.3972055737526,
+     "base": 154.16804845070493,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -163,12 +171,12 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 7
+  "passes": 8
  },
  "raid": {
   "class": "rogue",
   "spec": "assassination-raid",
-  "date": "2026-10-09",
+  "date": "2026-10-10",
   "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
@@ -176,12 +184,18 @@
   "start": "ui\\specs\\rogue\\dps\\apls\\forever_mutilate.apl.json",
   "builds": [
    {
+    "label": "open winner",
+    "talents": "00530310311301-311333010015142-002"
+   },
+   {
     "label": "assassination-ml-raid",
-    "talents": "0053031052150005-305313000013-002"
+    "talents": "0053031052150005-305313000013-002",
+    "protect_only": true
    },
    {
     "label": "sim preset: Mutilate",
-    "talents": "00530310551021051-302303202004"
+    "talents": "00530310551021051-302303202004",
+    "protect_only": true
    },
    {
     "label": "assassination-mutilate-raid",
@@ -195,8 +209,7 @@
    }
   ],
   "tuned_on": [
-   "assassination-ml-raid",
-   "sim preset: Mutilate"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -236,6 +249,15 @@
   ],
   "final": {
    "raid": {
+    "open winner": {
+     "before": 720.8750868040286,
+     "after": 717.8581618010642,
+     "base": 720.8750868040286,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
     "assassination-ml-raid": {
      "before": 311.9326932834489,
      "after": 707.8155788126683,
@@ -275,6 +297,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 9
+  "passes": 10
  }
 }

@@ -2,22 +2,30 @@
  "dummy": {
   "class": "rogue",
   "spec": "subtlety-raid",
-  "date": "2026-10-02",
-  "commit": "40be98e",
+  "date": "2026-10-10",
+  "commit": "2ce8265",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "ui/specs/rogue/dps/apls/forever_hemorrhage.apl.json",
   "start": "ui\\specs\\rogue\\dps\\apls\\forever_hemorrhage.apl.json",
   "builds": [
    {
-    "label": "ml: Subtlety",
+    "label": "open winner",
+    "talents": "005303103014--4021013302113211501"
+   },
+   {
+    "label": "subtlety-hemo-raid",
     "talents": "005303121014--5320003310013211501",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-subtlety-bis.gear.json"
+    "protect_only": true
    },
    {
     "label": "sim preset: Subtlety Hemo 15/0/36",
-    "talents": "125320101--5320003310013211551"
+    "talents": "125320101--5320003310013211551",
+    "protect_only": true
    }
+  ],
+  "tuned_on": [
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -141,23 +149,48 @@
     "gain_seed2": 0.005197913681468602,
     "candidates": 511,
     "pass": 6
+   },
+   {
+    "round": 16,
+    "change": "drop: if energy \u2264 29 and combo points < 5 and time left on Expose Armor \u2264 6 and timeToNextEnergyTick > 1 and not Adrenaline Rush is up: cast Thistle Tea",
+    "gain_seed1": 0.031496304347655046,
+    "gain_seed2": 0.029908243228285336,
+    "candidates": 515,
+    "pass": 7
+   },
+   {
+    "round": 17,
+    "change": "insert at the end: cast Preparation",
+    "gain_seed1": 0.0038245367042504252,
+    "gain_seed2": 0.0034841668466372155,
+    "candidates": 472,
+    "pass": 7
    }
   ],
   "final": {
    "dummy": {
-    "ml: Subtlety": {
-     "before": 343.98038568130556,
-     "after": 391.75178272290174,
-     "base": 343.98038568130556,
+    "open winner": {
+     "before": 348.84743746497,
+     "after": 373.8038680462805,
+     "base": 348.84743746497,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "subtlety-hemo-raid": {
+     "before": 347.33463046275443,
+     "after": 399.0284596904412,
+     "base": 347.33463046275443,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Subtlety Hemo 15/0/36": {
-     "before": 304.8855178799845,
-     "after": 344.90062749586605,
-     "base": 304.8855178799845,
+     "before": 319.43900409387703,
+     "after": 356.2984700315844,
+     "base": 319.43900409387703,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -166,12 +199,12 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 6
+  "passes": 7
  },
  "raid": {
   "class": "rogue",
   "spec": "subtlety-raid",
-  "date": "2026-10-09",
+  "date": "2026-10-10",
   "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
@@ -179,17 +212,22 @@
   "start": "ui\\specs\\rogue\\dps\\apls\\forever_hemorrhage.apl.json",
   "builds": [
    {
+    "label": "open winner",
+    "talents": "005303103014--4021013302113211501"
+   },
+   {
     "label": "subtlety-hemo-raid",
-    "talents": "005303121014--5320003310013211501"
+    "talents": "005303121014--5320003310013211501",
+    "protect_only": true
    },
    {
     "label": "sim preset: Subtlety Hemo 15/0/36",
-    "talents": "125320101--5320003310013211551"
+    "talents": "125320101--5320003310013211551",
+    "protect_only": true
    }
   ],
   "tuned_on": [
-   "subtlety-hemo-raid",
-   "sim preset: Subtlety Hemo 15/0/36"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -285,19 +323,28 @@
   ],
   "final": {
    "raid": {
+    "open winner": {
+     "before": 664.9430001369551,
+     "after": 676.4086060784629,
+     "base": 664.9430001369551,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
     "subtlety-hemo-raid": {
-     "before": 649.2248483729157,
-     "after": 659.718968637469,
-     "base": 649.2248483729157,
+     "before": 661.815303868669,
+     "after": 672.3995662172454,
+     "base": 661.815303868669,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Subtlety Hemo 15/0/36": {
-     "before": 609.7591215319635,
-     "after": 619.5375702941243,
-     "base": 609.7591215319635,
+     "before": 622.0938892967611,
+     "after": 631.995701560825,
+     "base": 622.0938892967611,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -306,6 +353,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 7
+  "passes": 8
  }
 }

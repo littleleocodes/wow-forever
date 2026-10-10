@@ -1,13 +1,10 @@
 {
  "veto": {
-  "Multi-Shot": {
+  "Arcane Shot": {
    "off": true
   },
-  "Arcane Shot": {
-   "min_hp": 0.35
-  },
-  "Feign Death": {
-   "min_hp": 0.35
+  "Multi-Shot": {
+   "off": true
   }
  },
  "class": "hunter",
@@ -20,74 +17,63 @@
   50,
   60
  ],
- "date": "2026-09-28",
+ "date": "2026-10-09",
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
+   "change": "never cast Arcane Shot",
+   "rule": [
+    "off",
+    "Arcane Shot",
+    true
+   ],
+   "gain_seed1": 0.031211625430989653,
+   "gain_seed2": 0.03266809773131851
+  },
+  {
+   "round": 2,
    "change": "never cast Multi-Shot",
    "rule": [
     "off",
     "Multi-Shot",
     true
    ],
-   "gain_seed1": 0.018703676801177793,
-   "gain_seed2": 0.022671195115942067
-  },
-  {
-   "round": 2,
-   "change": "Arcane Shot only while the mob has more than 35% health",
-   "rule": [
-    "min_hp",
-    "Arcane Shot",
-    0.35
-   ],
-   "gain_seed1": 0.008137113879433167,
-   "gain_seed2": 0.006810348173014069
-  },
-  {
-   "round": 3,
-   "change": "Feign Death only while the mob has more than 35% health",
-   "rule": [
-    "min_hp",
-    "Feign Death",
-    0.35
-   ],
-   "gain_seed1": 0.007451842584431878,
-   "gain_seed2": 0.0072889352496862125
+   "gain_seed1": 0.022541258874719805,
+   "gain_seed2": 0.01758132885386887
   }
  ],
- "weighted_before": 30.217910091666823,
- "weighted_after": 29.139607048447612,
+ "weighted_before": 28.145148922470884,
+ "weighted_after": 26.783639975218485,
  "per_level": {
   "20": {
-   "before": 19.28555603471464,
-   "after": 18.79937008175177,
+   "before": 18.465502709409044,
+   "after": 16.920067083823515,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 25.500725595586545,
-   "after": 23.66368818476985,
+   "before": 24.030415256619314,
+   "after": 21.433019249568122,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 30.85770977179016,
-   "after": 29.138790971386218,
+   "before": 28.549562505647895,
+   "after": 26.050723563197355,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 32.36294032412605,
-   "after": 31.228380134459506,
+   "before": 29.983925313957197,
+   "after": 28.782418764955185,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 34.00656204489277,
-   "after": 33.58421194888278,
+   "before": 31.62714177806069,
+   "after": 31.569769918408817,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

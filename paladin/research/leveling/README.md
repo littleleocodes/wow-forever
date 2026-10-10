@@ -18,8 +18,9 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 |---|---|---|
 | [Holy — Leveling into the raid build](builds/holy-leveling.md) 🔬 | 33/0/18 | DPS |
 | [Protection — Leveling into the raid build](builds/protection-leveling.md) 🔬 | 0/23/28 | DPS |
-| [Prot-Ret — Leveling (open talent search)](builds/prot-ret-open-leveling.md) 🔬 | 0/22/29 | DPS |
-| [Retribution — Leveling (open talent search)](builds/retribution-open-leveling.md) 🔬 | 11/8/32 | DPS |
+| [Shockadin — Leveling (open talent search)](builds/shockadin-open-leveling.md) 🔬 | 14/8/29 | DPS |
+| [Protection — Leveling (open talent search)](builds/protection-open-leveling.md) 🔬 | 2/31/18 | DPS |
+| [Retribution — Leveling (open talent search)](builds/retribution-open-leveling.md) 🔬 | 12/8/31 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

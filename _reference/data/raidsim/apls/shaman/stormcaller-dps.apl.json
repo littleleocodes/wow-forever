@@ -161,14 +161,33 @@
   {
    "action": {
     "condition": {
-     "not": {
-      "val": {
-       "dotIsActive": {
-        "spellId": {
-         "spellId": 29228
+     "and": {
+      "vals": [
+       {
+        "not": {
+         "val": {
+          "dotIsActive": {
+           "spellId": {
+            "spellId": 29228
+           }
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "60%"
+          }
+         }
         }
        }
-      }
+      ]
      }
     },
     "castSpell": {
@@ -176,7 +195,8 @@
       "spellId": 29228
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-10: changed or added by the rotation search (see stormcaller-dps-rotation-search.json)"
   },
   {
    "action": {
@@ -190,43 +210,16 @@
   {
    "action": {
     "condition": {
-     "and": {
-      "vals": [
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "currentMana": {}
-         },
-         "rhs": {
-          "math": {
-           "op": "OpMul",
-           "lhs": {
-            "remainingTime": {}
-           },
-           "rhs": {
-            "const": {
-             "val": "26.25"
-            }
-           }
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "remainingTime": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "3s"
-          }
-         }
-        }
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "remainingTime": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "3s"
        }
-      ]
+      }
      }
     },
     "castSpell": {
@@ -236,7 +229,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-10-07: changed or added by the rotation search (see stormcaller-dps-rotation-search.json)"
+   "notes": "apl_opt 2026-10-10: changed or added by the rotation search (see stormcaller-dps-rotation-search.json)"
   },
   {
    "action": {
@@ -298,12 +291,21 @@
    "action": {
     "castSpell": {
      "spellId": {
-      "spellId": 529,
-      "rank": 2
+      "spellId": 10414
      }
     }
    },
-   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see stormcaller-dps-rotation-search.json)"
+   "notes": "apl_opt 2026-10-10: changed or added by the rotation search (see stormcaller-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 915
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-10: changed or added by the rotation search (see stormcaller-dps-rotation-search.json)"
   }
  ]
 }

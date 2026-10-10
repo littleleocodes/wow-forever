@@ -6,7 +6,7 @@
 
 Pulls of several mobs: area attacks when enough mobs stand in reach, then damage over time spread over the pull, else the single-target priority below. Single-target leveling fights against normal mobs of your level with a cat: the pet runs in and meets the mob halfway, Growls every 5 s and holds it until your threat passes 130% of its own. You shoot from 35 yd: Hunter's Mark, Serpent Sting, Summon Hawk or Arcane Shot, Multi-Shot / Aimed Shot on their shared cooldown, Auto Shot in between (the bow cannot fire inside 8 yd); Bestial Wrath, Intimidation and Rapid Fire on the pull when ready; Mend Pet when the pet drops below 35%; Feign Death, Wing Clip and Raptor Strike when a mob reaches you. Between fights: 2 s loot, 6 s travel, Mend Pet below 70% pet health, water below 35% mana, food below 65% health, a 10 s Revive Pet after a pet death; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): never cast Multi-Shot; never cast Arcane Shot; drink below 15% mana; never cast Feign Death. Together +6.0% time per kill saved for `leveling-beast-mastery` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): never cast Multi-Shot; never cast Arcane Shot; drink below 15% mana. Together +5.8% time per kill saved for `leveling-beast-mastery` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/bm-leveling-aoe.md](fightlab/bm-leveling-aoe.md).
 
@@ -68,7 +68,7 @@ Report: [fightlab/bm-leveling-aoe.md](fightlab/bm-leveling-aoe.md).
 
 Single-target leveling fights against normal mobs of your level with a cat: the pet runs in and meets the mob halfway, Growls every 5 s and holds it until your threat passes 130% of its own. You shoot from 35 yd: Hunter's Mark, Serpent Sting, Summon Hawk or Arcane Shot, Multi-Shot / Aimed Shot on their shared cooldown, Auto Shot in between (the bow cannot fire inside 8 yd); Bestial Wrath, Intimidation and Rapid Fire on the pull when ready; Mend Pet when the pet drops below 35%; Feign Death, Wing Clip and Raptor Strike when a mob reaches you. Between fights: 2 s loot, 6 s travel, Mend Pet below 70% pet health, water below 35% mana, food below 65% health, a 10 s Revive Pet after a pet death; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): never cast Multi-Shot; never cast Arcane Shot; drink below 15% mana; never cast Feign Death. Together +6.0% time per kill saved for `leveling-beast-mastery` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): never cast Multi-Shot; never cast Arcane Shot; drink below 15% mana. Together +5.8% time per kill saved for `leveling-beast-mastery` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/bm-leveling.md](fightlab/bm-leveling.md).
 
@@ -76,41 +76,43 @@ Report: [fightlab/bm-leveling.md](fightlab/bm-leveling.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Auto Shot | 3.1 | 4.3 | 5.5 | 6.5 | 7.3 | 36% |
-| Claw | 3.1 | 3.8 | 4.6 | 4.8 | 5.3 | 7% |
-| Growl | 1.5 | 2.2 | 3.0 | 3.2 | 3.7 | 0% |
-| Summon Hawk | 0.0 | 0.0 | 0.0 | 0.0 | 1.9 | 0% |
-| Aimed Shot | 1.0 | 1.0 | 1.4 | 1.6 | 1.4 | 12% |
-| Serpent Sting | 1.0 | 1.1 | 1.1 | 1.0 | 1.0 | 17% |
-| Bite | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2% |
+| Auto Shot | 3.1 | 4.4 | 5.7 | 6.8 | 6.6 | 32% |
+| Claw | 3.1 | 3.8 | 4.6 | 4.8 | 4.9 | 7% |
+| Growl | 1.5 | 2.2 | 3.0 | 3.2 | 3.2 | 0% |
+| Summon Hawk | 0.0 | 0.0 | 0.0 | 0.0 | 1.8 | 11% |
+| Aimed Shot | 1.0 | 1.0 | 1.5 | 1.7 | 1.2 | 10% |
+| Serpent Sting | 1.0 | 1.0 | 1.1 | 1.0 | 1.0 | 16% |
 | Hunter's Mark | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
-| Melee | 0.0 | 0.1 | 0.1 | 0.2 | 0.0 | 0% |
-| Raptor Strike | 0.0 | 0.0 | 0.1 | 0.1 | 0.0 | 0% |
-| Wing Clip | 0.0 | 0.0 | 0.1 | 0.2 | 0.0 | 0% |
-| Mongoose Bite | 0.0 | 0.0 | 0.0 | 0.1 | 0.0 | 0% |
+| Bite | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2% |
+| Feign Death | 0.0 | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
+| Melee | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Raptor Strike | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Wing Clip | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Mongoose Bite | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ### [`leveling-beast-mastery`](builds/leveling-beast-mastery.md)
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Auto Shot | 3.2 | 4.2 | 5.9 | 6.8 | 7.4 | 35% |
-| Claw | 3.1 | 3.9 | 4.8 | 5.2 | 5.5 | 7% |
-| Growl | 1.5 | 2.2 | 3.1 | 3.4 | 3.7 | 0% |
-| Summon Hawk | 0.0 | 1.1 | 1.6 | 1.8 | 1.9 | 0% |
-| Aimed Shot | 1.0 | 1.0 | 1.1 | 1.4 | 1.5 | 12% |
-| Serpent Sting | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 17% |
+| Auto Shot | 3.2 | 3.9 | 5.5 | 6.2 | 6.6 | 31% |
+| Claw | 3.1 | 3.7 | 4.5 | 4.7 | 5.0 | 7% |
+| Growl | 1.5 | 2.0 | 2.8 | 3.0 | 3.2 | 0% |
+| Summon Hawk | 0.0 | 1.0 | 1.4 | 1.7 | 1.8 | 11% |
+| Aimed Shot | 1.0 | 1.0 | 1.0 | 1.1 | 1.2 | 10% |
+| Serpent Sting | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 16% |
 | Bite | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2% |
 | Hunter's Mark | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
+| Feign Death | 0.0 | 0.0 | 0.0 | 0.0 | 0.1 | 0% |
 | Melee | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Raptor Strike | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Mongoose Bite | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Wing Clip | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Mongoose Bite | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Raptor Strike | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## melee-dps
 
-The melee hunter: Serpent Sting from range, then stand and fight beside the pet: Raptor Strike queued on the next swing whenever it is ready, Deterrence when low, Counterattack after a parry, Mongoose Bite when a dodge or Expose Prey activates it, Strider Kick on cooldown, Immolation Trap at your feet, then Summon Hawk and (with Expose Prey) Hunter's Mark in the free global cooldowns; Mend Pet for the pet.
+The melee hunter: Serpent Sting from range, then stand and fight beside the pet: Raptor Strike queued on the next swing whenever it is ready, Deterrence when low, Counterattack after a parry, Mongoose Bite when a dodge or Expose Prey activates it, Strider Kick on cooldown, Immolation Trap at your feet, then (with Expose Prey) Hunter's Mark in a free global cooldown; Mend Pet for the pet.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): never cast Hunter's Mark; Immolation Trap only while the mob has more than 70% health. Together +3.4% time per kill saved for `leveling-melee` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): never cast Serpent Sting. Together +1.7% time per kill saved for `leveling-melee` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/melee-dps-opt.md](fightlab/melee-dps-opt.md).
 
@@ -169,9 +171,9 @@ Report: [fightlab/melee-dps-opt.md](fightlab/melee-dps-opt.md).
 
 ## melee-dps
 
-The melee hunter: Serpent Sting from range, then stand and fight beside the pet: Raptor Strike queued on the next swing whenever it is ready, Deterrence when low, Counterattack after a parry, Mongoose Bite when a dodge or Expose Prey activates it, Strider Kick on cooldown, Immolation Trap at your feet, then Summon Hawk and (with Expose Prey) Hunter's Mark in the free global cooldowns; Mend Pet for the pet.
+The melee hunter: Serpent Sting from range, then stand and fight beside the pet: Raptor Strike queued on the next swing whenever it is ready, Deterrence when low, Counterattack after a parry, Mongoose Bite when a dodge or Expose Prey activates it, Strider Kick on cooldown, Immolation Trap at your feet, then (with Expose Prey) Hunter's Mark in a free global cooldown; Mend Pet for the pet.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): never cast Hunter's Mark; Immolation Trap only while the mob has more than 70% health. Together +3.4% time per kill saved for `leveling-melee` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): never cast Serpent Sting. Together +1.7% time per kill saved for `leveling-melee` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/melee-dps.md](fightlab/melee-dps.md).
 
@@ -179,58 +181,60 @@ Report: [fightlab/melee-dps.md](fightlab/melee-dps.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee (off-hand) | 2.8 | 3.8 | 5.2 | 5.8 | 6.6 | 12% |
-| Claw | 3.3 | 4.0 | 4.7 | 4.9 | 5.2 | 6% |
-| Melee | 1.7 | 2.7 | 3.6 | 4.1 | 4.8 | 13% |
-| Growl | 1.7 | 2.3 | 3.0 | 3.2 | 3.5 | 0% |
-| Strider Kick | 0.0 | 1.6 | 2.0 | 2.2 | 2.4 | 9% |
-| Raptor Strike | 1.1 | 1.2 | 1.6 | 1.8 | 2.0 | 10% |
-| Auto Shot | 1.2 | 1.2 | 1.2 | 1.2 | 1.1 | 6% |
-| Serpent Sting | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 14% |
+| Melee (off-hand) | 3.2 | 4.2 | 5.5 | 6.4 | 7.6 | 12% |
+| Claw | 3.6 | 4.1 | 4.7 | 5.0 | 5.5 | 6% |
+| Melee | 1.8 | 2.4 | 3.4 | 3.9 | 4.8 | 13% |
+| Growl | 1.9 | 2.4 | 3.1 | 3.4 | 3.9 | 0% |
+| Raptor Strike | 1.4 | 1.8 | 2.2 | 2.4 | 2.8 | 14% |
+| Strider Kick | 0.0 | 1.7 | 2.0 | 2.3 | 2.5 | 9% |
+| Mongoose Bite | 0.0 | 0.0 | 0.9 | 1.1 | 1.4 | 6% |
+| Auto Shot | 1.2 | 1.2 | 1.2 | 1.2 | 1.1 | 5% |
 | Bite | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2% |
-| Immolation Trap | 0.4 | 0.1 | 0.3 | 0.4 | 0.5 | 7% |
-| Mongoose Bite | 0.0 | 0.0 | 0.1 | 0.1 | 0.2 | 1% |
-| Counterattack | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 0% |
+| Hunter's Mark | 0.0 | 0.0 | 1.0 | 1.0 | 1.0 | 0% |
+| Immolation Trap | 0.5 | 0.5 | 0.5 | 0.6 | 0.7 | 9% |
+| Counterattack | 0.0 | 0.0 | 0.0 | 0.0 | 0.1 | 0% |
+| Mend Pet | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ### [`opt-bm-leveling-leveling-st`](builds/opt-bm-leveling-leveling-st.md)
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Auto Shot | 3.1 | 4.3 | 5.5 | 6.5 | 7.3 | 36% |
-| Claw | 3.1 | 3.8 | 4.6 | 4.8 | 5.3 | 7% |
-| Growl | 1.5 | 2.2 | 3.0 | 3.2 | 3.7 | 0% |
-| Summon Hawk | 0.0 | 0.0 | 0.0 | 0.0 | 1.9 | 0% |
-| Aimed Shot | 1.0 | 1.0 | 1.4 | 1.6 | 1.4 | 12% |
-| Serpent Sting | 1.0 | 1.1 | 1.1 | 1.0 | 1.0 | 17% |
-| Bite | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2% |
+| Auto Shot | 3.1 | 4.4 | 5.7 | 6.8 | 6.6 | 32% |
+| Claw | 3.1 | 3.8 | 4.6 | 4.8 | 4.9 | 7% |
+| Growl | 1.5 | 2.2 | 3.0 | 3.2 | 3.2 | 0% |
+| Summon Hawk | 0.0 | 0.0 | 0.0 | 0.0 | 1.8 | 11% |
+| Aimed Shot | 1.0 | 1.0 | 1.5 | 1.7 | 1.2 | 10% |
+| Serpent Sting | 1.0 | 1.0 | 1.1 | 1.0 | 1.0 | 16% |
 | Hunter's Mark | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
-| Melee | 0.0 | 0.1 | 0.1 | 0.2 | 0.0 | 0% |
-| Raptor Strike | 0.0 | 0.0 | 0.1 | 0.1 | 0.0 | 0% |
-| Wing Clip | 0.0 | 0.0 | 0.1 | 0.2 | 0.0 | 0% |
-| Mongoose Bite | 0.0 | 0.0 | 0.0 | 0.1 | 0.0 | 0% |
+| Bite | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2% |
+| Feign Death | 0.0 | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
+| Melee | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Raptor Strike | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Wing Clip | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Mongoose Bite | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ### [`opt-melee-dps-leveling-st`](builds/opt-melee-dps-leveling-st.md)
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee (off-hand) | 2.8 | 3.8 | 5.2 | 5.4 | 6.1 | 11% |
-| Claw | 3.3 | 4.0 | 4.7 | 4.8 | 5.0 | 6% |
-| Melee | 1.7 | 2.7 | 3.6 | 3.8 | 4.5 | 12% |
-| Growl | 1.7 | 2.3 | 3.0 | 3.1 | 3.3 | 0% |
-| Strider Kick | 0.0 | 1.7 | 2.0 | 2.1 | 2.2 | 8% |
-| Raptor Strike | 1.1 | 1.2 | 1.6 | 1.6 | 1.8 | 8% |
+| Melee (off-hand) | 3.2 | 4.2 | 5.6 | 5.9 | 7.3 | 12% |
+| Claw | 3.6 | 4.1 | 4.7 | 4.9 | 5.3 | 6% |
+| Melee | 1.8 | 2.4 | 3.4 | 3.7 | 4.6 | 12% |
+| Growl | 1.9 | 2.4 | 3.1 | 3.3 | 3.7 | 0% |
+| Raptor Strike | 1.4 | 1.8 | 2.2 | 2.3 | 2.7 | 13% |
+| Strider Kick | 0.0 | 1.7 | 2.1 | 2.2 | 2.4 | 9% |
+| Mongoose Bite | 0.0 | 0.0 | 0.9 | 0.9 | 1.2 | 6% |
 | Auto Shot | 1.2 | 1.2 | 1.2 | 1.2 | 1.1 | 5% |
-| Serpent Sting | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 16% |
 | Bite | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2% |
-| Immolation Trap | 0.4 | 0.1 | 0.3 | 0.6 | 0.8 | 11% |
-| Mongoose Bite | 0.0 | 0.0 | 0.1 | 0.1 | 0.3 | 1% |
-| Counterattack | 0.0 | 0.0 | 0.0 | 0.1 | 0.2 | 1% |
+| Immolation Trap | 0.5 | 0.5 | 0.5 | 1.0 | 1.0 | 15% |
+| Hunter's Mark | 0.0 | 0.0 | 1.0 | 1.0 | 1.0 | 0% |
+| Counterattack | 0.0 | 0.0 | 0.0 | 0.1 | 0.1 | 0% |
 
 ## mm-raid
 
 Single-target leveling fights against normal mobs of your level with a cat: the pet runs in and meets the mob halfway, Growls every 5 s and holds it until your threat passes 130% of its own. You shoot from 35 yd: Hunter's Mark, Serpent Sting, Summon Hawk or Arcane Shot, Multi-Shot / Aimed Shot on their shared cooldown, Auto Shot in between (the bow cannot fire inside 8 yd); Bestial Wrath, Intimidation and Rapid Fire on the pull when ready; Mend Pet when the pet drops below 35%; Feign Death, Wing Clip and Raptor Strike when a mob reaches you. Between fights: 2 s loot, 6 s travel, Mend Pet below 70% pet health, water below 35% mana, food below 65% health, a 10 s Revive Pet after a pet death; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): never cast Multi-Shot; Arcane Shot only while the mob has more than 35% health; Feign Death only while the mob has more than 35% health. Together +3.6% time per kill saved for `opt-mm-raid-leveling-st` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): never cast Arcane Shot; never cast Multi-Shot. Together +4.8% time per kill saved for `opt-mm-raid-leveling-st` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/mm-raid.md](fightlab/mm-raid.md).
 
@@ -238,33 +242,33 @@ Report: [fightlab/mm-raid.md](fightlab/mm-raid.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Auto Shot | 2.9 | 4.1 | 5.7 | 6.3 | 6.1 | 31% |
-| Claw | 3.0 | 3.7 | 4.5 | 4.6 | 4.9 | 6% |
-| Growl | 1.6 | 2.1 | 2.8 | 3.0 | 3.3 | 0% |
-| Arcane Shot | 0.9 | 1.0 | 1.3 | 1.5 | 1.7 | 11% |
-| Aimed Shot | 0.7 | 1.0 | 1.0 | 1.1 | 1.2 | 11% |
-| Serpent Sting | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 17% |
+| Auto Shot | 3.1 | 4.5 | 5.9 | 6.7 | 7.2 | 37% |
+| Claw | 3.0 | 3.7 | 4.5 | 4.7 | 5.3 | 6% |
+| Growl | 1.4 | 2.2 | 2.9 | 3.2 | 3.6 | 0% |
+| Aimed Shot | 1.0 | 1.0 | 1.5 | 1.7 | 1.8 | 16% |
+| Serpent Sting | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 18% |
 | Hunter's Mark | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
 | Bite | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2% |
-| Melee | 0.0 | 0.0 | 0.0 | 0.1 | 0.5 | 2% |
-| Raptor Strike | 0.0 | 0.0 | 0.0 | 0.1 | 0.3 | 2% |
-| Wing Clip | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 0% |
-| Feign Death | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 0% |
-| Mongoose Bite | 0.0 | 0.0 | 0.0 | 0.0 | 0.1 | 1% |
+| Feign Death | 0.0 | 0.1 | 0.1 | 0.2 | 0.3 | 0% |
+| Melee | 0.0 | 0.0 | 0.0 | 0.0 | 0.1 | 0% |
+| Wing Clip | 0.0 | 0.0 | 0.0 | 0.0 | 0.1 | 0% |
+| Raptor Strike | 0.0 | 0.0 | 0.0 | 0.0 | 0.1 | 0% |
+| Mongoose Bite | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ### [`opt-bm-leveling-leveling-st`](builds/opt-bm-leveling-leveling-st.md)
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Auto Shot | 3.1 | 4.3 | 5.5 | 6.5 | 7.3 | 36% |
-| Claw | 3.1 | 3.8 | 4.6 | 4.8 | 5.3 | 7% |
-| Growl | 1.5 | 2.2 | 3.0 | 3.2 | 3.7 | 0% |
-| Summon Hawk | 0.0 | 0.0 | 0.0 | 0.0 | 1.9 | 0% |
-| Aimed Shot | 1.0 | 1.0 | 1.4 | 1.6 | 1.4 | 12% |
-| Serpent Sting | 1.0 | 1.1 | 1.1 | 1.0 | 1.0 | 17% |
-| Bite | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2% |
+| Auto Shot | 3.1 | 4.4 | 5.7 | 6.8 | 6.6 | 32% |
+| Claw | 3.1 | 3.8 | 4.6 | 4.8 | 4.9 | 7% |
+| Growl | 1.5 | 2.2 | 3.0 | 3.2 | 3.2 | 0% |
+| Summon Hawk | 0.0 | 0.0 | 0.0 | 0.0 | 1.8 | 11% |
+| Aimed Shot | 1.0 | 1.0 | 1.5 | 1.7 | 1.2 | 10% |
+| Serpent Sting | 1.0 | 1.0 | 1.1 | 1.0 | 1.0 | 16% |
 | Hunter's Mark | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
-| Melee | 0.0 | 0.1 | 0.1 | 0.2 | 0.0 | 0% |
-| Raptor Strike | 0.0 | 0.0 | 0.1 | 0.1 | 0.0 | 0% |
-| Wing Clip | 0.0 | 0.0 | 0.1 | 0.2 | 0.0 | 0% |
-| Mongoose Bite | 0.0 | 0.0 | 0.0 | 0.1 | 0.0 | 0% |
+| Bite | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2% |
+| Feign Death | 0.0 | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
+| Melee | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Raptor Strike | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Wing Clip | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Mongoose Bite | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |

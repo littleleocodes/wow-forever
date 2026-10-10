@@ -2,8 +2,8 @@
  "dummy": {
   "class": "shaman",
   "spec": "stormcaller-dps",
-  "date": "2026-10-07",
-  "commit": "b0f0df3",
+  "date": "2026-10-10",
+  "commit": "2ce8265",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "ui/specs/shaman/elemental/apls/forever.apl.json",
@@ -11,12 +11,16 @@
   "builds": [
    {
     "label": "open winner",
-    "talents": "550031130210314-055211201200102"
+    "talents": "050433130011314-255200001140002"
    },
    {
     "label": "sim preset: Stormcaller 28/23/0",
-    "talents": "150533130010303-055030030004102"
+    "talents": "150533130010303-055030030004102",
+    "protect_only": true
    }
+  ],
+  "tuned_on": [
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -76,37 +80,77 @@
     "gain_seed2": 0.0026089452814210823,
     "candidates": 372,
     "pass": 3
+   },
+   {
+    "round": 8,
+    "change": "drop 'mana \u2265 (time left in the fight \u00d7 26.25)' from the condition: if mana \u2265 (time left in the fight \u00d7 26.25) and time left in the fight \u2265 3s: cast Lightning Bolt",
+    "gain_seed1": 0.049862428871100484,
+    "gain_seed2": 0.04834176437330284,
+    "candidates": 383,
+    "pass": 4
+   },
+   {
+    "round": 9,
+    "change": "only above 60% mana: if not Flame Shock is on the target: cast Flame Shock",
+    "gain_seed1": 0.005007270834585631,
+    "gain_seed2": 0.004359342579196568,
+    "candidates": 377,
+    "pass": 4
+   },
+   {
+    "round": 10,
+    "change": "insert before the filler: cast Earth Shock",
+    "gain_seed1": 0.004767860739200769,
+    "gain_seed2": 0.004696959369000053,
+    "candidates": 389,
+    "pass": 4
+   },
+   {
+    "round": 11,
+    "change": "drop: cast Lightning Bolt",
+    "gain_seed1": 0.002076321817032545,
+    "gain_seed2": 0.0023027214376103444,
+    "candidates": 399,
+    "pass": 4
+   },
+   {
+    "round": 12,
+    "change": "insert at the end: cast Lightning Bolt",
+    "gain_seed1": 0.006119824210151004,
+    "gain_seed2": 0.005609637316606797,
+    "candidates": 384,
+    "pass": 4
    }
   ],
   "final": {
    "dummy": {
     "open winner": {
-     "before": 399.1958379089459,
-     "after": 414.0637183197794,
-     "base": 399.1958379089459,
+     "before": 330.2644053047493,
+     "after": 377.013234281387,
+     "base": 330.2644053047493,
      "before_value": null,
      "after_value": null,
-     "oom_before": 8.38e-05,
-     "oom_after": 0.00248
+     "oom_before": 0.0050466,
+     "oom_after": 6.553660800000101
     },
     "sim preset: Stormcaller 28/23/0": {
-     "before": 376.9831824403074,
-     "after": 393.8428754829216,
-     "base": 376.9831824403074,
+     "before": 304.32161157623483,
+     "after": 360.0610463878537,
+     "base": 304.32161157623483,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.1311817999992997,
-     "oom_after": 0.6760811999996048
+     "oom_before": 0.6348197999999045,
+     "oom_after": 9.356198300000159
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 3
+  "passes": 4
  },
  "raid": {
   "class": "shaman",
   "spec": "stormcaller-dps",
-  "date": "2026-10-09",
+  "date": "2026-10-10",
   "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
@@ -114,12 +158,17 @@
   "start": "ui\\specs\\shaman\\elemental\\apls\\forever.apl.json",
   "builds": [
    {
+    "label": "open winner",
+    "talents": "050433130011314-255200001140002"
+   },
+   {
     "label": "sim preset: Stormcaller 28/23/0",
-    "talents": "150533130010303-055030030004102"
+    "talents": "150533130010303-055030030004102",
+    "protect_only": true
    }
   ],
   "tuned_on": [
-   "sim preset: Stormcaller 28/23/0"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -175,18 +224,27 @@
   ],
   "final": {
    "raid": {
+    "open winner": {
+     "before": 506.74802914581403,
+     "after": 509.70420021781274,
+     "base": 506.74802914581403,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.00144209999995,
+     "oom_after": 0.00144209999995
+    },
     "sim preset: Stormcaller 28/23/0": {
      "before": 471.1783698726417,
      "after": 495.62832534631326,
      "base": 471.1783698726417,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.20211919999999983,
+     "oom_before": 0.060195999999899996,
      "oom_after": 0.060195999999899996
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 4
+  "passes": 5
  }
 }

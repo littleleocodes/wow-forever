@@ -8,93 +8,6 @@
       "vals": [
        {
         "cmp": {
-         "op": "OpLe",
-         "lhs": {
-          "currentEnergy": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "29"
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpLt",
-         "lhs": {
-          "currentComboPoints": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "5"
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpLe",
-         "lhs": {
-          "auraRemainingTime": {
-           "sourceUnit": {
-            "type": "CurrentTarget"
-           },
-           "auraId": {
-            "spellId": 11198,
-            "rank": 5
-           }
-          }
-         },
-         "rhs": {
-          "const": {
-           "val": "6"
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpGt",
-         "lhs": {
-          "timeToNextEnergyTick": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "1"
-          }
-         }
-        }
-       },
-       {
-        "not": {
-         "val": {
-          "auraIsActive": {
-           "auraId": {
-            "spellId": 13750
-           }
-          }
-         }
-        }
-       }
-      ]
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "itemId": 7676
-     }
-    }
-   },
-   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see subtlety-raid-rotation-search.json)"
-  },
-  {
-   "action": {
-    "condition": {
-     "and": {
-      "vals": [
-       {
-        "cmp": {
          "op": "OpLt",
          "lhs": {
           "auraRemainingTime": {
@@ -526,6 +439,16 @@
      }
     }
    }
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 14185
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-10: changed or added by the rotation search (see subtlety-raid-rotation-search.json)"
   }
  ]
 }

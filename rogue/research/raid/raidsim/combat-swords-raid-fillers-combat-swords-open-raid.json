@@ -1,0 +1,195 @@
+{
+ "class": "rogue",
+ "spec": "combat-swords-raid",
+ "build": "combat-swords-open-raid",
+ "setting": "raid",
+ "date": "2026-10-10",
+ "tank": false,
+ "removal": {
+  "Adrenaline Rush": 0.03591503318060263,
+  "Aggression": 0.01670705912689463,
+  "Blade Flurry": 0.01158450350678486,
+  "Deflection": -0.0,
+  "Dual Wield Specialization": 0.03434601177643137,
+  "Flawless Execution": 0.01822217951932159,
+  "Hack and Slash": 0.028482024628754488,
+  "Improved Eviscerate": 0.01466386190770741,
+  "Improved Poisons": 0.016377987575827313,
+  "Improved Sinister Strike": 0.04693678686955882,
+  "Improved Slice and Dice": 0.03474474311202125,
+  "Lethality": 0.006668261688734023,
+  "Lightning Reflexes": -0.0,
+  "Malice": 0.04401770285427198,
+  "Precision": 0.02885318985262275,
+  "Relentless Strikes": 0.05480121951601513,
+  "Ruthlessness": 0.02987356412657305,
+  "Weapon Expertise": 0.019816249696194554
+ },
+ "free": [
+  "Deflection",
+  "Lightning Reflexes"
+ ],
+ "kept_for_rotation": [],
+ "active_never_worth": [],
+ "abilities_never_cast": [],
+ "moves": [],
+ "final_seed3": 0.0,
+ "start": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Lethality",
+    3
+   ],
+   [
+    "Improved Poisons",
+    3
+   ]
+  ],
+  "Combat": [
+   [
+    "Improved Eviscerate",
+    3
+   ],
+   [
+    "Improved Sinister Strike",
+    2
+   ],
+   [
+    "Lightning Reflexes",
+    4
+   ],
+   [
+    "Deflection",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Flawless Execution",
+    1
+   ],
+   [
+    "Dual Wield Specialization",
+    5
+   ],
+   [
+    "Blade Flurry",
+    1
+   ],
+   [
+    "Hack and Slash",
+    5
+   ],
+   [
+    "Weapon Expertise",
+    2
+   ],
+   [
+    "Aggression",
+    3
+   ],
+   [
+    "Adrenaline Rush",
+    1
+   ]
+  ],
+  "Subtlety": []
+ },
+ "allocation": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Lethality",
+    3
+   ],
+   [
+    "Improved Poisons",
+    3
+   ]
+  ],
+  "Combat": [
+   [
+    "Improved Eviscerate",
+    3
+   ],
+   [
+    "Improved Sinister Strike",
+    2
+   ],
+   [
+    "Lightning Reflexes",
+    4
+   ],
+   [
+    "Deflection",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Flawless Execution",
+    1
+   ],
+   [
+    "Dual Wield Specialization",
+    5
+   ],
+   [
+    "Blade Flurry",
+    1
+   ],
+   [
+    "Hack and Slash",
+    5
+   ],
+   [
+    "Weapon Expertise",
+    2
+   ],
+   [
+    "Aggression",
+    3
+   ],
+   [
+    "Adrenaline Rush",
+    1
+   ]
+  ],
+  "Subtlety": []
+ }
+}

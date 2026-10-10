@@ -37,16 +37,16 @@ Respec plan: **46.4 h** (48.4% faster than talentless), 0 respec(s).
 | Level | Bracket | Fight | Time per kill | Kills/hour | Deaths/100 | Downtime/kill | In dungeon blues |
 |---|---|---|---|---|---|---|---|
 | 20 | levels 15-25 | 7s | 16s | 222 | 0.0 | 1s | 16s (-3%) |
-| 30 | levels 25-35 | 11s | 19s | 185 | 0.0 | 1s | 19s (-3%) |
+| 30 | levels 25-35 | 11s | 20s | 184 | 0.0 | 1s | 19s (-3%) |
 | 40 | levels 35-45 | 15s | 26s | 138 | 0.0 | 3s | 25s (-5%) |
-| 50 | levels 45-55 | 17s | 29s | 125 | 0.0 | 4s | 28s (-4%) |
-| 60 | level 55-60 | 18s | 33s | 110 | 0.0 | 7s | 31s (-6%) |
+| 50 | levels 45-55 | 17s | 29s | 124 | 0.0 | 4s | 28s (-4%) |
+| 60 | level 55-60 | 16s | 30s | 121 | 0.0 | 6s | 28s (-4%) |
 
 - **Level 20:** deaths are rare; almost no downtime; 19% of pulls are casters.
 - **Level 30:** deaths are rare; almost no downtime; 16% of pulls are casters.
 - **Level 40:** deaths are rare; almost no downtime.
 - **Level 50:** deaths are rare; almost no downtime.
-- **Level 60:** deaths are rare; 20% downtime.
+- **Level 60:** deaths are rare; 19% downtime.
 
 ## How the fights go
 
@@ -54,13 +54,13 @@ Single-target leveling fights against normal mobs of your level with a cat: the 
 
 ## Talents that carry the build
 
-- **Level 30:** Rapid Recuperation (+7% time per kill without it), Efficiency (+4% time per kill without it), Lethal Attacks (+2% time per kill without it), Careful Aim (+2% time per kill without it), Improved Stings (+1% time per kill without it), Rapid Killing (-0% time per kill without it).
-- **Level 60:** Unleashed Fury (+5% time per kill without it), Lethal Attacks (+3% time per kill without it), Efficiency (+3% time per kill without it), Ranged Weapon Specialization (+3% time per kill without it), Improved Stings (+3% time per kill without it), Rapid Recuperation (+2% time per kill without it).
-- **Free to move** (no measurable effect single-target): Barrage, Endurance Training, Pathfinding, Rapid Killing, Scatter Shot, Sniper Shot, Trueshot Aura.
+- **Level 30:** Rapid Recuperation (+7% time per kill without it), Efficiency (+4% time per kill without it), Lethal Attacks (+2% time per kill without it), Careful Aim (+2% time per kill without it), Improved Stings (+0% time per kill without it), Rapid Killing (-0% time per kill without it).
+- **Level 60:** Unleashed Fury (+5% time per kill without it), Efficiency (+4% time per kill without it), Summon Hawk (+3% time per kill without it), Rapid Recuperation (+3% time per kill without it), Lethal Attacks (+3% time per kill without it), Ranged Weapon Specialization (+2% time per kill without it).
+- **Free to move** (no measurable effect single-target): Barrage, Endurance Training, Improved Stings, Pathfinding, Rapid Killing, Scatter Shot, Sniper Shot, Trueshot Aura.
 
 ## Other specs while leveling
 
-Time per kill relative to the main spec's optimizer build on the same mobs (positive = slower): `mm-raid` (opt-mm-raid-leveling-st): L30 +15%, L60 -5% vs the main build; `melee-dps` (leveling-melee): L30 +10%, L60 -15% vs the main build.
+Time per kill relative to the main spec's optimizer build on the same mobs (positive = slower): `mm-raid` (opt-mm-raid-leveling-st): L30 +9%, L60 +7% vs the main build; `melee-dps` (leveling-melee): L30 +7%, L60 -5% vs the main build.
 
 ## Not simulated
 
