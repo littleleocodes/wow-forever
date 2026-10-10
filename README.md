@@ -11,7 +11,7 @@ The best talents and the best way to play every class in **World of Warcraft: Fo
 | [**Mage**](mage/README.md) | damage | [Frost](mage/leveling/frost.md) (27 s/kill) | [Arcane](mage/raid/arcane.md) (694 DPS), [Arcane-Frost](mage/raid/arcane-frost.md) (692 DPS), [Fire](mage/raid/fire.md) (688 DPS), [Frost](mage/raid/frost.md) (684 DPS), [Frostfire](mage/raid/frostfire.md) (680 DPS) |
 | [**Paladin**](paladin/README.md) | damage, tank, healer | [Shockadin](paladin/leveling/shockadin.md) (28 s/kill), [Retribution](paladin/leveling/retribution.md) (28 s/kill) | [Retribution](paladin/raid/retribution.md) (996 DPS) |
 | [**Priest**](priest/README.md) | damage, healer | [Shadow](priest/leveling/shadow.md) (26 s/kill) | [Shadow](priest/raid/shadow.md) (698 DPS) |
-| [**Rogue**](rogue/README.md) | damage | [Combat-Subtlety](rogue/leveling/combat-subtlety.md) (26 s/kill), [Combat](rogue/leveling/combat.md) (26 s/kill) | [Combat](rogue/raid/combat.md) (735 DPS), [Daggers (split)](rogue/raid/daggers-split.md) (718 DPS) |
+| [**Rogue**](rogue/README.md) | damage | [Combat-Subtlety](rogue/leveling/combat-subtlety.md) (24 s/kill) | [Combat](rogue/raid/combat.md) (735 DPS), [Daggers (split)](rogue/raid/daggers-split.md) (718 DPS) |
 | [**Shaman**](shaman/README.md) | damage, healer | [Enhancement](shaman/leveling/enhancement.md) (32 s/kill) | [Enhancement](shaman/raid/enhancement.md) (739 DPS) |
 | [**Warlock**](warlock/README.md) | damage | [Demonology](warlock/leveling/demonology.md) (36 s/kill) | [Demonology](warlock/raid/demonology.md) (832 DPS) |
 | [**Warrior**](warrior/README.md) | damage, tank | [Fury](warrior/leveling/fury.md) (25 s/kill), [Arms](warrior/leveling/arms.md) (25 s/kill) | [Arms](warrior/raid/arms.md) (984 DPS) |

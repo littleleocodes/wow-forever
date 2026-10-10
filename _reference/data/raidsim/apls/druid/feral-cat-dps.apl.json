@@ -180,6 +180,42 @@
   },
   {
    "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "spellIsKnown": {
+         "spellId": {
+          "spellId": 1322605
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpLe",
+         "lhs": {
+          "currentEnergy": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "60"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 1322605
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-10: changed or added by the rotation search (see feral-cat-dps-rotation-search.json)"
+  },
+  {
+   "action": {
     "castSpell": {
      "spellId": {
       "spellId": 9907

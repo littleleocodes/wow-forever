@@ -6,14 +6,14 @@ The fastest leveling build found with no tree rule in each leveling rotation (fi
 
 | Class | Rotation | Open winner | Family | Seconds per kill | vs ours |
 |---|---|---|---|---|---|
+| [rogue](../rogue/research/leveling/open-search.md) | subtlety-leveling | [13/17/21](https://talentsforever.com/rogue/60/0253201-305033010011-3023003311013001-6) | Hybrid Combat/Subtlety | 23.70 | +8.9% |
 | [hunter](../hunter/research/leveling/open-search.md) | melee-dps | [22/5/24](https://talentsforever.com/hunter/60/35200005041002-005-530200230140202-6) | Hybrid Beast Mastery/Survival | 24.02 | +9.2% |
-| [rogue](../rogue/research/leveling/open-search.md) | combat-swords-raid | [22/16/13](https://talentsforever.com/rogue/60/0252201030151-32303301001-13132003-6) | Hybrid Assassination/Combat | 25.13 | +1.7% |
-| [rogue](../rogue/research/leveling/open-search.md) | subtlety-leveling | [11/17/23](https://talentsforever.com/rogue/60/2033201-305033010011-0323200311113201-6) | Hybrid Combat/Subtlety | 25.52 | +3.9% |
+| [rogue](../rogue/research/leveling/open-search.md) | combat-swords-raid | [21/17/13](https://talentsforever.com/rogue/60/0253201020051-32403301001-03230203-6) | Hybrid Assassination/Combat | 24.59 | +1.5% |
 | [priest](../priest/research/leveling/open-search.md) | shadow-dps | [18/0/33](https://talentsforever.com/priest/60/01501303131--345002401201202151-6) | Shadow | 25.57 | +1.0% |
+| [rogue](../rogue/research/leveling/open-search.md) | combat-daggers-raid | [22/16/13](https://talentsforever.com/rogue/60/0253201020151-32303301001-30230023-6) | Hybrid Assassination/Combat | 25.85 | +3.1% |
 | [warrior](../warrior/research/leveling/open-search.md) | fury-dw-raid | [20/31/0](https://talentsforever.com/warrior/60/1132521302-05250030052210501--6) | Fury | 26.01 | +3.4% |
 | [hunter](../hunter/research/leveling/open-search.md) | bm-leveling | [29/18/4](https://talentsforever.com/hunter/60/512021050511024-005355-4-6) | Hybrid Beast Mastery/Marksmanship | 26.09 | +1.9% |
 | [hunter](../hunter/research/leveling/open-search.md) | mm-raid | [33/13/5](https://talentsforever.com/hunter/60/522322050511023-005053-5-6) | Beast Mastery | 26.54 | +3.5% |
-| [rogue](../rogue/research/leveling/open-search.md) | combat-daggers-raid | [22/16/13](https://talentsforever.com/rogue/60/0253201020151-32303301001-32030023-6) | Hybrid Assassination/Combat | 26.54 | +1.4% |
 | [mage](../mage/research/leveling/open-search.md) | frost-leveling | [18/2/31](https://talentsforever.com/mage/60/2412150000003-02-1535003331000301201-6) | Frost | 27.24 | +0.1% |
 | [paladin](../paladin/research/leveling/open-search.md) | holy-leveling | [14/8/29](https://talentsforever.com/paladin/60/53003003-233-252051310013303-6) | Hybrid Holy/Retribution | 27.55 | +28.8% |
 | [paladin](../paladin/research/leveling/open-search.md) | ret-dps | [12/8/31](https://talentsforever.com/paladin/60/51103101-503-0522513100133032-6) | Retribution | 27.82 | +0.1% |

@@ -2,22 +2,35 @@
  "dummy": {
   "class": "druid",
   "spec": "feral-cat-dps",
-  "date": "2026-10-02",
-  "commit": "40be98e",
+  "date": "2026-10-10",
+  "commit": "2ce8265",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "ui/specs/druid/feralcat/apls/default.apl.json",
   "start": "ui\\specs\\druid\\feralcat\\apls\\default.apl.json",
   "builds": [
    {
-    "label": "ml: Feral Combat",
-    "talents": "050022-2500032123032213051-052",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-bis.gear.json"
+    "label": "open winner",
+    "talents": "050022-45100032021031212051-144"
+   },
+   {
+    "label": "opt-feral-cat-dps-raid-dps",
+    "talents": "050022-25000332020032012051-055001",
+    "protect_only": true
    },
    {
     "label": "sim preset: Feral Cat 9/35/7",
-    "talents": "050022-5500002123032213051-052"
+    "talents": "050022-55000032121032212051-052",
+    "protect_only": true
+   },
+   {
+    "label": "feral-cat-dps",
+    "talents": "050022-55000332120032012021-055",
+    "protect_only": true
    }
+  ],
+  "tuned_on": [
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -93,23 +106,49 @@
     "gain_seed2": 0.008238845493417246,
     "candidates": 459,
     "pass": 4
+   },
+   {
+    "round": 10,
+    "change": "insert in the middle: if Shifting Power is known and energy \u2264 60: cast Shifting Power",
+    "gain_seed1": 0.11787301291053476,
+    "gain_seed2": 0.11813749122588013,
+    "candidates": 481,
+    "pass": 5
    }
   ],
   "final": {
    "dummy": {
-    "ml: Feral Combat": {
-     "before": 345.71291133175134,
-     "after": 370.533611848079,
-     "base": 345.71291133175134,
+    "open winner": {
+     "before": 368.46640080542613,
+     "after": 390.38847384916147,
+     "base": 368.46640080542613,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 119.33035
+    },
+    "opt-feral-cat-dps-raid-dps": {
+     "before": 345.65112733197395,
+     "after": 367.6358561221565,
+     "base": 345.65112733197395,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Feral Cat 9/35/7": {
-     "before": 345.71291133175134,
-     "after": 370.533611848079,
-     "base": 345.71291133175134,
+     "before": 367.94299654176064,
+     "after": 394.46056600029874,
+     "base": 367.94299654176064,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 118.8507
+    },
+    "feral-cat-dps": {
+     "before": 336.676677674401,
+     "after": 356.57529685756526,
+     "base": 336.676677674401,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -118,12 +157,12 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 4
+  "passes": 5
  },
  "raid": {
   "class": "druid",
   "spec": "feral-cat-dps",
-  "date": "2026-10-09",
+  "date": "2026-10-10",
   "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
@@ -131,22 +170,27 @@
   "start": "ui\\specs\\druid\\feralcat\\apls\\default.apl.json",
   "builds": [
    {
-    "label": "opt-feral-cat-dps-raid-dps",
-    "talents": "050022-25000332020032012051-055001"
+    "label": "open winner",
+    "talents": "050022-45100032021031212051-144"
    },
    {
-    "label": "sim preset: Feral Cat 9/35/7",
-    "talents": "050022-55000032121032212051-052"
+    "label": "feral-combat-shifting-power-raid",
+    "talents": "050022-55000032121032212051-052",
+    "protect_only": true
    },
    {
     "label": "feral-cat-dps",
     "talents": "050022-55000332120032012021-055",
     "protect_only": true
+   },
+   {
+    "label": "opt-feral-cat-dps-raid-dps",
+    "talents": "050022-25000332020032012051-055001",
+    "protect_only": true
    }
   ],
   "tuned_on": [
-   "opt-feral-cat-dps-raid-dps",
-   "sim preset: Feral Cat 9/35/7"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -202,22 +246,22 @@
   ],
   "final": {
    "raid": {
-    "opt-feral-cat-dps-raid-dps": {
-     "before": 582.4813573834896,
-     "after": 593.2943848688002,
-     "base": 582.4813573834896,
+    "open winner": {
+     "before": 686.7390360396412,
+     "after": 698.3311627544499,
+     "base": 686.7390360396412,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
+     "oom_before": 0.0008186999987000001,
+     "oom_after": 0.0008186999987000001
     },
-    "sim preset: Feral Cat 9/35/7": {
+    "feral-combat-shifting-power-raid": {
      "before": 680.2510229797779,
      "after": 691.0445080795116,
      "base": 680.2510229797779,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
+     "oom_before": 0.00120994999865,
      "oom_after": 0.00120994999865
     },
     "feral-cat-dps": {
@@ -228,10 +272,19 @@
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
+    },
+    "opt-feral-cat-dps-raid-dps": {
+     "before": 582.4813573834896,
+     "after": 593.2943848688002,
+     "base": 582.4813573834896,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 5
+  "passes": 6
  }
 }

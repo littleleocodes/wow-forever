@@ -4,7 +4,7 @@
 
 *Daggers with points split between Assassination and Combat.* (a hybrid: Assassination/Combat).
 
-**[Daggers — Leveling](../research/leveling/builds/daggers-split-open-leveling.md)** (22/16/13) — [open the talent tree](https://talentsforever.com/rogue/60/0253201020151-32303301001-32030023-6)
+**[Daggers — Leveling](../research/leveling/builds/daggers-split-open-leveling.md)** (22/16/13) — [open the talent tree](https://talentsforever.com/rogue/60/0253201020151-32303301001-30230023-6)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
@@ -56,16 +56,16 @@ One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
-| 10-12 | Lightning Reflexes (Combat) | 3 |
-| 13-14 | Improved Eviscerate (Combat) | 2 |
-| 15-17 | Precision (Combat) | 3 |
-| 18-20 | Deflection (Combat) | 3 |
-| 21 | Riposte (Combat) | 1 |
-| 22 | Improved Eviscerate (Combat) | 1 |
-| 23-24 | Improved Sinister Strike (Combat) | 2 |
-| 25 | Flawless Execution (Combat) | 1 |
-| 26-28 | Camouflage (Subtlety) | 3 |
-| 29-30 | Master of Deception (Subtlety) | 2 |
+| 10-11 | Opportunity (Subtlety) | 2 |
+| 12-14 | Lightning Reflexes (Combat) | 3 |
+| 15-16 | Improved Eviscerate (Combat) | 2 |
+| 17-19 | Precision (Combat) | 3 |
+| 20-22 | Deflection (Combat) | 3 |
+| 23 | Riposte (Combat) | 1 |
+| 24 | Improved Eviscerate (Combat) | 1 |
+| 25-26 | Improved Sinister Strike (Combat) | 2 |
+| 27 | Flawless Execution (Combat) | 1 |
+| 28-30 | Camouflage (Subtlety) | 3 |
 | 31-32 | Improved Ambush (Subtlety) | 2 |
 | 33-35 | Setup (Subtlety) | 3 |
 | 36-38 | Initiative (Subtlety) | 3 |
@@ -86,7 +86,7 @@ One point per level from 10, in this order:
 | 20 | 21 |
 | 30 | 24 |
 | 40 | 27 |
-| 50 | 28 |
+| 50 | 27 |
 | 60 | 27 |
 
 ## Other builds of this spec

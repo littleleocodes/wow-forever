@@ -19,7 +19,7 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 | [Combat — Leveling (generated)](builds/combat-leveling.md) ⚗ | 18/31/2 | DPS |
 | [Subtlety — Leveling (derived)](builds/subtlety-leveling.md) 🔬 | 5/16/30 | DPS |
 | [Daggers (split) — Leveling (open talent search)](builds/daggers-split-open-leveling.md) 🔬 | 22/16/13 | DPS |
-| [Combat-Subtlety — Leveling (open talent search)](builds/combat-subtlety-open-leveling.md) 🔬 | 11/17/23 | DPS |
+| [Combat-Subtlety — Leveling (open talent search)](builds/combat-subtlety-open-leveling.md) 🔬 | 13/17/21 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

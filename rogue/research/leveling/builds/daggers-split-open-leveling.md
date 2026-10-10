@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Daggers (split) (a Assassination/Combat hybrid) leveling build the open leveling search found on 2026-10-08: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the combat-daggers-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-daggers-raid). +1.4% faster per kill than opt-combat-swords-raid-leveling-st, the fastest of our leveling builds in that race.
+The Daggers (split) (a Assassination/Combat hybrid) leveling build the open leveling search found on 2026-10-10: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the combat-daggers-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-daggers-raid). +3.1% faster per kill than opt-combat-swords-raid-leveling-st, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -46,7 +46,7 @@ The Daggers (split) (a Assassination/Combat hybrid) leveling build the open leve
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Camouflage** | 3/5 | changed | Reduces your speed penalty from your Stealth ability by 9% and reduces its cooldown by 4 sec. |
-| **Master of Deception** | 2/3 | changed | Reduces the chance enemies have to detect you while in Stealth mode as if you were 2 levels higher. |
+| **Opportunity** | 2/2 | changed | Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 10%. |
 | **Setup** | 3/3 | changed | Gives you a 100% chance to add a Combo Point to your target after Dodging one of their attacks or fully resisting one of their spells. |
 | **Improved Ambush** | 2/3 | moved | Increases the critical strike chance of your Ambush ability by 30%. |
 | **Initiative** | 3/3 | changed | Gives you a 100% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability. |
@@ -55,16 +55,16 @@ The Daggers (split) (a Assassination/Combat hybrid) leveling build the open leve
 
 | Levels | Tree | Talent | Pts | Running total |
 |---|---|---|---|---|
-| 10-12 | Combat | Lightning Reflexes | 3 | 0/3/0 |
-| 13-14 | Combat | Improved Eviscerate | 2 | 0/5/0 |
-| 15-17 | Combat | Precision | 3 | 0/8/0 |
-| 18-20 | Combat | Deflection | 3 | 0/11/0 |
-| 21 | Combat | Riposte | 1 | 0/12/0 |
-| 22 | Combat | Improved Eviscerate | 1 | 0/13/0 |
-| 23-24 | Combat | Improved Sinister Strike | 2 | 0/15/0 |
-| 25 | Combat | Flawless Execution | 1 | 0/16/0 |
-| 26-28 | Subtlety | Camouflage | 3 | 0/16/3 |
-| 29-30 | Subtlety | Master of Deception | 2 | 0/16/5 |
+| 10-11 | Subtlety | Opportunity | 2 | 0/0/2 |
+| 12-14 | Combat | Lightning Reflexes | 3 | 0/3/2 |
+| 15-16 | Combat | Improved Eviscerate | 2 | 0/5/2 |
+| 17-19 | Combat | Precision | 3 | 0/8/2 |
+| 20-22 | Combat | Deflection | 3 | 0/11/2 |
+| 23 | Combat | Riposte | 1 | 0/12/2 |
+| 24 | Combat | Improved Eviscerate | 1 | 0/13/2 |
+| 25-26 | Combat | Improved Sinister Strike | 2 | 0/15/2 |
+| 27 | Combat | Flawless Execution | 1 | 0/16/2 |
+| 28-30 | Subtlety | Camouflage | 3 | 0/16/5 |
 | 31-32 | Subtlety | Improved Ambush | 2 | 0/16/7 |
 | 33-35 | Subtlety | Setup | 3 | 0/16/10 |
 | 36-38 | Subtlety | Initiative | 3 | 0/16/13 |
@@ -82,12 +82,12 @@ The Daggers (split) (a Assassination/Combat hybrid) leveling build the open leve
 
 1. **Setup** — +1.8 s per kill at level 60 without it (removal, 3,000 fights).
 2. **Improved Eviscerate** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Relentless Strikes** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Flawless Execution** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Precision** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Flawless Execution** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Relentless Strikes** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Initiative** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
 6. **Improved Sinister Strike** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Initiative** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Improved Poisons** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Precision** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Improved Poisons** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -95,8 +95,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 26.54; opt-combat-swords-raid-leveling-st 26.91, opt-combat-swords-raid-solo-60 26.91, leveling-combat-swords 27.14. The search simulated 83,801 builds.
-- The spec's other leveling builds on the pages: opt-combat-daggers-raid-leveling-st 29.55 s.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 25.85; opt-combat-swords-raid-leveling-st 26.65, opt-combat-swords-raid-solo-60 26.65, leveling-combat-swords 27.10. The search simulated 90,763 builds.
+- The spec's other leveling builds on the pages: opt-combat-daggers-raid-leveling-st 28.90 s.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -106,7 +106,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/rogue>
-- <https://talentsforever.com/rogue/60/0253201020151-32303301001-32030023-6>
+- <https://talentsforever.com/rogue/60/0253201020151-32303301001-30230023-6>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

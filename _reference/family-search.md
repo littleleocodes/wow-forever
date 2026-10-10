@@ -18,14 +18,14 @@ The best build found with no tree rule in each damage rotation, in a full raid, 
 | [rogue](../rogue/research/raid/family-search.md) | combat-daggers-raid | [16/33/2](https://talentsforever.com/rogue/60/00530310301-30531300001515231-002-6) | Combat | 735.4 | +0.0% |
 | [rogue](../rogue/research/raid/family-search.md) | assassination-raid | [21/28/2](https://talentsforever.com/rogue/60/00530310311301-311333010015142-002-6) | Hybrid Assassination/Combat | 717.9 | +1.5% |
 | [rogue](../rogue/research/raid/family-search.md) | combat-swords-raid | [18/33/0](https://talentsforever.com/rogue/60/005303103003-32403300001515231--6) | Combat | 716.1 | +1.8% |
+| [druid](../druid/research/raid/family-search.md) | feral-cat-dps | [9/33/9](https://talentsforever.com/druid/60/050022-45100032021031212051-144-6) | Feral Combat | 698.2 | +1.0% |
 | [mage](../mage/research/raid/family-search.md) | arcane-dps | [32/12/7](https://talentsforever.com/mage/60/150005123100311531-132500001-1051-6) | Arcane | 696.4 | +0.3% |
 | [mage](../mage/research/raid/family-search.md) | frost-raid | [28/0/23](https://talentsforever.com/mage/60/05120501310011053--05450003010003002-6) | Hybrid Arcane/Frost | 692.9 | +1.4% |
 | [mage](../mage/research/raid/family-search.md) | fire-raid | [12/34/5](https://talentsforever.com/mage/60/005205-23550020130133051-005-6) | Fire | 688.2 | +0.0% |
 | [priest](../priest/research/raid/family-search.md) | shadow-dps | [20/0/31](https://talentsforever.com/priest/60/005300211305--504020501201302051-6) | Shadow | 681.2 | +0.4% |
 | [mage](../mage/research/raid/family-search.md) | frostfire-raid | [0/29/22](https://talentsforever.com/mage/60/-0355100013013304-00550003310003002-6) | Hybrid Fire/Frost | 678.9 | +0.0% |
 | [rogue](../rogue/research/raid/family-search.md) | subtlety-raid | [20/0/31](https://talentsforever.com/rogue/60/005303103014--4021013302113211501-6) | Subtlety | 676.1 | +0.5% |
-| [druid](../druid/research/raid/family-search.md) | balance-dps | [33/5/13](https://talentsforever.com/druid/60/0532220115501051-05-505003-6) | Balance | 577.2 | +0.0% |
+| [druid](../druid/research/raid/family-search.md) | balance-dps | [33/5/13](https://talentsforever.com/druid/60/0532220115501051-05-505003-6) | Balance | 591.7 | +0.0% |
 | [priest](../priest/research/raid/family-search.md) | smite-dps | [21/23/7](https://talentsforever.com/priest/60/505020021302001-025150020320003-50002-6) | Hybrid Discipline/Holy | 571.2 | +1.6% |
-| [druid](../druid/research/raid/family-search.md) | feral-cat-dps | [9/31/11](https://talentsforever.com/druid/60/050022-25000332020032012051-055001-6) | Feral Combat | 538.3 | +0.0% |
 | [shaman](../shaman/research/raid/family-search.md) | elemental-dps | [29/22/0](https://talentsforever.com/shaman/60/550430130010304-255200311000102--6) | Hybrid Elemental/Enhancement | 518.0 | +0.1% |
 | [shaman](../shaman/research/raid/family-search.md) | stormcaller-dps | [29/22/0](https://talentsforever.com/shaman/60/050433130011314-255200001140002--6) | Hybrid Elemental/Enhancement | 509.8 | - |

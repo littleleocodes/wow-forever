@@ -535,12 +535,6 @@
 **Optimizer — Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (parse)** (`rogue/research/raid/builds/opt-combat-daggers-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Daggers (split) — Leveling (open talent search)** (`rogue/research/leveling/builds/daggers-split-open-leveling.md`)
-- [ ] An open-search Daggers (split) leveling build: check it while leveling at launch.
-
-**Combat-Subtlety — Leveling (open talent search)** (`rogue/research/leveling/builds/combat-subtlety-open-leveling.md`)
-- [ ] An open-search Combat-Subtlety leveling build: check it while leveling at launch.
-
 **Combat — Swords (open talent search)** (`rogue/research/raid/builds/combat-swords-open-raid.md`)
 - [ ] An open-search Combat build: check it against the community's Combat builds at launch.
 
@@ -549,6 +543,12 @@
 
 **Subtlety — Raid (open talent search)** (`rogue/research/raid/builds/subtlety-open-raid.md`)
 - [ ] An open-search Subtlety build: check it against the community's Subtlety builds at launch.
+
+**Daggers (split) — Leveling (open talent search)** (`rogue/research/leveling/builds/daggers-split-open-leveling.md`)
+- [ ] An open-search Daggers (split) leveling build: check it while leveling at launch.
+
+**Combat-Subtlety — Leveling (open talent search)** (`rogue/research/leveling/builds/combat-subtlety-open-leveling.md`)
+- [ ] An open-search Combat-Subtlety leveling build: check it while leveling at launch.
 
 ### Shaman
 

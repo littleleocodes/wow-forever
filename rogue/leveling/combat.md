@@ -2,8 +2,6 @@
 
 [Rogue](../README.md) > [Leveling (solo)](README.md) > Combat
 
-**✅ Recommended** for leveling (the best rogue spec here, or within 3% of it).
-
 **[Combat — Leveling](../research/leveling/builds/combat-leveling.md)** (18/31/2) — [open the talent tree](https://talentsforever.com/rogue/60/125020104012-32503301001511231-002-6)
 
 > ⚗ Generated build: no hand-made Combat build exists for this mode yet, so this is the stats model's best Combat build. A starting point, not a proven build.
