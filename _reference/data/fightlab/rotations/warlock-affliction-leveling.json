@@ -1,19 +1,16 @@
 {
  "veto": {
   "Shadow Bolt": {
-   "off": true
-  },
-  "Wrack": {
-   "off": true
-  },
-  "Fear": {
-   "off": true
+   "min_hp": 0.35
   },
   "Corruption": {
    "min_hp": 0.35
   },
+  "Life Tap": {
+   "max_hp": 0.35
+  },
   "Curse of the Elements": {
-   "off": true
+   "min_mana": 0.3
   }
  },
  "class": "warlock",
@@ -26,90 +23,85 @@
   50,
   60
  ],
- "date": "2026-09-27",
+ "date": "2026-10-09",
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "never cast Shadow Bolt",
+   "change": "Shadow Bolt only while the mob has more than 35% health",
    "rule": [
-    "off",
+    "min_hp",
     "Shadow Bolt",
-    true
+    0.35
    ],
-   "gain_seed1": 0.07645763402609873,
-   "gain_seed2": 0.07447146119606485
+   "gain_seed1": 0.0587752653985707,
+   "gain_seed2": 0.05950026413616871
   },
   {
    "round": 2,
-   "change": "never cast Wrack",
-   "rule": [
-    "off",
-    "Wrack",
-    true
-   ],
-   "gain_seed1": 0.06626552370477423,
-   "gain_seed2": 0.06651293797502544
-  },
-  {
-   "round": 3,
-   "change": "never cast Fear",
-   "rule": [
-    "off",
-    "Fear",
-    true
-   ],
-   "gain_seed1": 0.0158096138546705,
-   "gain_seed2": 0.016248521993752263
-  },
-  {
-   "round": 4,
    "change": "Corruption only while the mob has more than 35% health",
    "rule": [
     "min_hp",
     "Corruption",
     0.35
    ],
-   "gain_seed1": 0.008952727535178395,
-   "gain_seed2": 0.008991095037684915
+   "gain_seed1": 0.028231721544614174,
+   "gain_seed2": 0.025602370789354678
   },
   {
-   "change": "Curse of the Elements off",
-   "date": "2026-09-29",
-   "note": "the curse (+10% magic damage taken, a Curse beside the Bane) was added to the fight lab's warlock on 2026-09-29; leveling-affliction, 3000 fights, two seeds: +3.3% time per kill at 50, +2.4% at 55, +1.7% at 60 (the mob dies before it repays the GCD and mana), so it stays off; the raid rotations already cast it"
+   "round": 3,
+   "change": "Life Tap only when the mob is below 35% health",
+   "rule": [
+    "max_hp",
+    "Life Tap",
+    0.35
+   ],
+   "gain_seed1": 0.01799680562446948,
+   "gain_seed2": 0.01747015092814652
+  },
+  {
+   "round": 4,
+   "change": "Curse of the Elements only above 30% mana",
+   "rule": [
+    "min_mana",
+    "Curse of the Elements",
+    0.3
+   ],
+   "gain_seed1": 0.007330057634627463,
+   "gain_seed2": 0.006455168033768555
   }
  ],
- "weighted_before": 44.607005040095785,
- "weighted_after": 37.51406556755437,
+ "weighted_before": 45.191612467627465,
+ "weighted_after": 40.30437739965737,
  "per_level": {
   "20": {
-   "before": 34.450096866166945,
-   "after": 25.64846666665981,
+   "before": 34.185344054639536,
+   "after": 31.179251395246766,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 44.494841904549396,
-   "after": 31.95930863003192,
+   "before": 44.16824203502952,
+   "after": 36.18293000104024,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 43.934738064058834,
-   "after": 37.783692480462015,
+   "before": 50.00529852996618,
+   "after": 42.17018550488904,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 46.19008505065534,
-   "after": 40.28961902664453,
+   "before": 48.55456835159439,
+   "after": 44.128251203184064,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 47.17766730773693,
-   "after": 41.75393117876687,
+   "before": 43.360466543390835,
+   "after": 40.97637619400943,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

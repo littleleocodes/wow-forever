@@ -12,7 +12,7 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 |---|---|---|
 | **Discipline** | [Discipline — Leveling into the raid build](leveling/discipline.md) 🔬<br>45 s/kill | [Discipline — Penance / Divine Aegis / Power Infusion](raid/discipline.md)<br>healer |
 | **Holy** | [Holy — Leveling into the raid build](leveling/holy.md) 🔬<br>45 s/kill | [Holy — Raid Healer](raid/holy.md)<br>healer |
-| **Shadow** | **✅ Recommended**<br>[Shadow — Leveling](leveling/shadow.md) 🔬<br>26 s/kill | **✅ Recommended**<br>[Shadow (optimized)](raid/shadow.md)<br>698 DPS (raid) |
+| **Shadow** | **✅ Recommended**<br>[Leveling — Shadow](leveling/shadow.md)<br>26 s/kill | **✅ Recommended**<br>[Shadow (optimized)](raid/shadow.md)<br>698 DPS (raid) |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
 
@@ -34,7 +34,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
-| 1 | [Shadow](leveling/shadow.md) — Shadow — Leveling 🔬 | 26 | fastest |
+| 1 | [Shadow](leveling/shadow.md) — Leveling — Shadow | 26 | fastest |
 | 2 | [Smite](leveling/smite.md) — Smite — Leveling 🔬 | 40 | +57% |
 | 3 | [Discipline](leveling/discipline.md) — Discipline — Leveling into the raid build 🔬 | 45 | +74% |
 | 4 | [Holy](leveling/holy.md) — Holy — Leveling into the raid build 🔬 | 45 | +76% |

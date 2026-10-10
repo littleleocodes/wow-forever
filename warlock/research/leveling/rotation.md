@@ -4,9 +4,9 @@
 
 ## affliction-leveling in pulls of several mobs
 
-Pulls of several mobs: area attacks when enough mobs stand in reach, then damage over time spread over the pull, else the single-target priority below. Single-target leveling fights against normal mobs of your level with a Voidwalker: the pet runs in and meets the mob halfway, Torments it every 5 s, and holds it until your threat passes 130% of its own (it takes the mob back once its threat passes yours by 10%). You cast Corruption, Bane of Agony, Siphon Life and Immolate, channel Wrack once the DoTs are up, fill with Shadow Bolt while mana is plentiful and the wand otherwise, Drain Life when hurt, Life Tap when low on mana, Fear or Death Coil a mob that reaches you. Between fights: 2 s loot, 6 s travel, Life Tap back to 70% mana, Consume Shadows or Health Funnel for the pet, food only below 35% health, a 10-12 s re-summon after a pet death; a death costs 90 s.
+Pulls of several mobs: area attacks when enough mobs stand in reach, then damage over time spread over the pull, else the single-target priority below. Single-target leveling fights against normal mobs of your level with a Voidwalker: the pet runs in and meets the mob halfway, Torments it every 5 s, and holds it until your threat passes 130% of its own (it takes the mob back once its threat passes yours by 10%). You cast Corruption, Bane of Agony, Siphon Life and Immolate, channel Wrack once the DoTs are up, fill with Shadow Bolt while mana is plentiful and the wand otherwise, Drain Life when hurt, Life Tap when low on mana, Fear or Death Coil a mob that reaches you. Between fights: 2 s loot, 6 s travel, Life Tap back to 70% mana, Consume Shadows or Health Funnel for the pet, food only below 55% health, a 10-12 s re-summon after a pet death; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-27, on top of the priority below): never cast Shadow Bolt; never cast Wrack; never cast Fear; Corruption only while the mob has more than 35% health; Curse of the Elements off. Together +15.9% time per kill saved for `leveling-affliction` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): Shadow Bolt only while the mob has more than 35% health; Corruption only while the mob has more than 35% health; Life Tap only when the mob is below 35% health; Curse of the Elements only above 30% mana. Together +10.8% time per kill saved for `leveling-affliction` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/affliction-leveling-aoe.md](fightlab/affliction-leveling-aoe.md).
 
@@ -57,9 +57,9 @@ Report: [fightlab/affliction-leveling-aoe.md](fightlab/affliction-leveling-aoe.m
 
 ## affliction-leveling
 
-Single-target leveling fights against normal mobs of your level with a Voidwalker: the pet runs in and meets the mob halfway, Torments it every 5 s, and holds it until your threat passes 130% of its own (it takes the mob back once its threat passes yours by 10%). You cast Corruption, Bane of Agony, Siphon Life and Immolate, channel Wrack once the DoTs are up, fill with Shadow Bolt while mana is plentiful and the wand otherwise, Drain Life when hurt, Life Tap when low on mana, Fear or Death Coil a mob that reaches you. Between fights: 2 s loot, 6 s travel, Life Tap back to 70% mana, Consume Shadows or Health Funnel for the pet, food only below 35% health, a 10-12 s re-summon after a pet death; a death costs 90 s.
+Single-target leveling fights against normal mobs of your level with a Voidwalker: the pet runs in and meets the mob halfway, Torments it every 5 s, and holds it until your threat passes 130% of its own (it takes the mob back once its threat passes yours by 10%). You cast Corruption, Bane of Agony, Siphon Life and Immolate, channel Wrack once the DoTs are up, fill with Shadow Bolt while mana is plentiful and the wand otherwise, Drain Life when hurt, Life Tap when low on mana, Fear or Death Coil a mob that reaches you. Between fights: 2 s loot, 6 s travel, Life Tap back to 70% mana, Consume Shadows or Health Funnel for the pet, food only below 55% health, a 10-12 s re-summon after a pet death; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-27, on top of the priority below): never cast Shadow Bolt; never cast Wrack; never cast Fear; Corruption only while the mob has more than 35% health; Curse of the Elements off. Together +15.9% time per kill saved for `leveling-affliction` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): Shadow Bolt only while the mob has more than 35% health; Corruption only while the mob has more than 35% health; Life Tap only when the mob is below 35% health; Curse of the Elements only above 30% mana. Together +10.8% time per kill saved for `leveling-affliction` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/affliction-leveling.md](fightlab/affliction-leveling.md).
 
@@ -67,28 +67,34 @@ Report: [fightlab/affliction-leveling.md](fightlab/affliction-leveling.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Wand | 6.7 | 9.5 | 12.4 | 14.0 | 13.0 | 17% |
-| Torment | 3.2 | 4.3 | 5.1 | 5.4 | 5.2 | 0% |
-| Corruption | 1.0 | 1.0 | 1.3 | 1.6 | 1.4 | 25% |
+| Wand | 2.5 | 5.6 | 8.2 | 9.1 | 8.0 | 10% |
+| Torment | 3.3 | 5.0 | 6.1 | 6.3 | 5.4 | 0% |
+| Corruption | 1.1 | 1.1 | 1.2 | 1.3 | 1.2 | 24% |
 | Bane of Agony | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 25% |
-| Siphon Life | 0.0 | 1.0 | 1.0 | 1.0 | 1.0 | 11% |
-| Immolate | 1.0 | 0.8 | 0.8 | 0.5 | 0.3 | 5% |
-| Drain Life | 0.0 | 0.0 | 0.0 | 0.1 | 0.2 | 2% |
+| Siphon Life | 0.0 | 1.0 | 1.0 | 1.0 | 1.0 | 12% |
+| Shadow Bolt | 1.7 | 1.0 | 1.1 | 1.0 | 0.8 | 9% |
+| Life Tap | 0.2 | 0.8 | 0.9 | 0.9 | 0.8 | 0% |
+| Curse of the Elements | 0.7 | 0.4 | 0.5 | 0.7 | 0.7 | 0% |
+| Drain Life | 0.0 | 0.0 | 0.0 | 0.1 | 0.3 | 2% |
+| Fear | 0.0 | 0.0 | 0.0 | 0.1 | 0.2 | 0% |
+| Immolate | 0.5 | 0.1 | 0.0 | 0.0 | 0.1 | 1% |
 | Death Coil | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Life Tap | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Create Healthstone | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ### [`leveling-affliction`](builds/leveling-affliction.md)
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Wand | 6.8 | 9.2 | 12.4 | 13.9 | 13.1 | 17% |
-| Torment | 3.2 | 4.3 | 5.3 | 5.7 | 5.2 | 0% |
-| Corruption | 1.0 | 1.1 | 1.4 | 1.6 | 1.4 | 25% |
-| Bane of Agony | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 24% |
+| Wand | 2.6 | 5.5 | 8.2 | 9.7 | 8.9 | 11% |
+| Torment | 3.3 | 5.0 | 6.3 | 6.8 | 5.7 | 0% |
+| Corruption | 1.1 | 1.1 | 1.3 | 1.3 | 1.2 | 24% |
+| Bane of Agony | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 25% |
 | Siphon Life | 0.0 | 1.0 | 1.0 | 1.0 | 1.0 | 11% |
-| Immolate | 1.0 | 0.8 | 0.8 | 0.7 | 0.4 | 5% |
+| Life Tap | 0.3 | 0.8 | 0.9 | 0.9 | 0.8 | 0% |
+| Curse of the Elements | 0.7 | 0.5 | 0.6 | 0.7 | 0.8 | 0% |
+| Shadow Bolt | 1.7 | 1.0 | 1.1 | 1.0 | 0.7 | 8% |
 | Drain Life | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 2% |
-| Life Tap | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Fear | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 0% |
+| Immolate | 0.4 | 0.1 | 0.0 | 0.0 | 0.0 | 1% |
 | Death Coil | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Create Healthstone | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |

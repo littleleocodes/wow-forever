@@ -7,8 +7,8 @@
 | Class | Spec model | Build | L15 | L20 | L30 | L40 | L50 | L60 | Kills/hour at 60 |
 |---|---|---|---|---|---|---|---|---|---|
 | mage | `frost-leveling` | `opt-frost-leveling-leveling-st` | - | 25.2 | 32.4 | 32.0 | 26.7 | 25.0 | 144 |
-| priest | `shadow-dps` | `opt-shadow-dps-leveling-st` | - | 37.1 | 40.3 | 27.4 | 26.5 | 25.7 | 140 |
-| warlock | `affliction-leveling` | `opt-affliction-leveling-leveling-st` | - | 24.6 | 31.4 | 37.8 | 40.6 | 38.2 | 94 |
+| priest | `shadow-dps` | `opt-shadow-dps-leveling-st` | - | 37.1 | 40.5 | 27.4 | 26.6 | 25.6 | 140 |
+| warlock | `affliction-leveling` | `opt-affliction-leveling-leveling-st` | - | 31.6 | 36.5 | 42.8 | 45.6 | 42.2 | 85 |
 | hunter | `bm-leveling` | `opt-bm-leveling-leveling-st` | - | 16.2 | 19.5 | 26.1 | 28.9 | 32.7 | 110 |
 | warrior | `arms-2h-raid` | `opt-arms-2h-raid-leveling-st` | - | 19.1 | 21.9 | 23.7 | 26.2 | 30.0 | 120 |
 | rogue | `combat-swords-raid` | `opt-combat-swords-raid-leveling-st` | - | 18.8 | 21.8 | 26.0 | 27.2 | 27.3 | 132 |
@@ -21,8 +21,8 @@
 | Class | Hand draft | L15 | L20 | L30 | L40 | L50 | L60 | Race winner (sim) |
 |---|---|---|---|---|---|---|---|---|
 | mage | `leveling-frost` | - | 26.7 (+6%) | 31.5 (-3%) | 33.0 (+3%) | 26.7 (+0%) | 25.4 (+2%) | cand-frost-r6 |
-| priest | `leveling-shadow` | - | 34.7 (-6%) | 37.1 (-8%) | 23.1 (-15%) | 22.7 (-14%) | 21.2 (-18%) | cand-shadow-r6 |
-| warlock | `leveling-affliction` | - | 24.6 (-0%) | 31.3 (-0%) | 37.3 (-1%) | 39.2 (-3%) | 37.3 (-2%) | cand-affliction-r3 |
+| priest | `leveling-shadow` | - | 34.7 (-6%) | 37.1 (-8%) | 23.0 (-16%) | 22.6 (-15%) | 21.2 (-17%) | cand-shadow-r6 |
+| warlock | `leveling-affliction` | - | 31.0 (-2%) | 36.1 (-1%) | 42.5 (-1%) | 44.2 (-3%) | 41.4 (-2%) | cand-affliction-r3 |
 | hunter | `leveling-beast-mastery` | - | 17.0 (+5%) | 23.3 (+20%) | 28.7 (+10%) | 30.7 (+6%) | 33.3 (+2%) | cand-bm-r6 |
 | warrior | `leveling-arms` | - | 19.2 (+0%) | 21.9 (+0%) | 24.0 (+1%) | 26.7 (+2%) | 30.1 (+0%) | leveling-arms |
 | rogue | `leveling-combat-swords` | - | 18.6 (-1%) | 22.4 (+3%) | 27.0 (+4%) | 27.5 (+1%) | 27.8 (+2%) | cand-combat-r9 |
@@ -37,8 +37,8 @@ Positive = the hand draft is slower. The race winner is the fastest build over a
 | Class | Deaths/100 kills L30 | L60 | Downtime/kill L30 | L60 | Fight L30 | L60 | Caster pulls L30 | Interrupts/kill L60 |
 |---|---|---|---|---|---|---|---|---|
 | mage | 0.0 | 0.0 | 7.5s | 5.2s | 16.9s | 11.8s | 16% | 0.08 |
-| priest | 0.0 | 0.0 | 14.2s | 5.1s | 18.1s | 12.6s | 16% | 0.00 |
-| warlock | 0.0 | 0.0 | 2.4s | 3.2s | 21.0s | 27.0s | 16% | 0.00 |
+| priest | 0.0 | 0.0 | 14.4s | 5.1s | 18.1s | 12.6s | 16% | 0.00 |
+| warlock | 0.0 | 0.0 | 4.0s | 4.9s | 24.6s | 29.3s | 16% | 0.00 |
 | hunter | 0.0 | 0.0 | 0.9s | 6.6s | 10.6s | 18.1s | 16% | 0.00 |
 | warrior | 0.0 | 0.0 | 0.0s | 1.0s | 13.8s | 21.0s | 16% | 0.00 |
 | rogue | 0.0 | 0.0 | 0.6s | 2.0s | 13.1s | 17.3s | 16% | 0.00 |
@@ -51,8 +51,8 @@ Positive = the hand draft is slower. The race winner is the fastest build over a
 | Class | L30 greens | L30 blues | L60 greens | L60 blues |
 |---|---|---|---|---|
 | mage | 32.4s | 28.6s (-12%) | 25.0s | 24.2s (-3%) |
-| priest | 40.3s | 35.4s (-12%) | 25.7s | 24.4s (-5%) |
-| warlock | 31.4s | 28.2s (-10%) | 38.2s | 35.8s (-6%) |
+| priest | 40.5s | 35.5s (-12%) | 25.6s | 24.5s (-4%) |
+| warlock | 36.5s | 32.4s (-11%) | 42.2s | 39.9s (-6%) |
 | hunter | 19.5s | 18.9s (-3%) | 32.7s | 30.9s (-6%) |
 | warrior | 21.9s | 20.1s (-8%) | 30.0s | 27.9s (-7%) |
 | rogue | 21.8s | 20.0s (-8%) | 27.3s | 26.3s (-4%) |
@@ -65,8 +65,8 @@ Positive = the hand draft is slower. The race winner is the fastest build over a
 | Class | Level 30 | Level 60 | Measures ~0 at 60 |
 |---|---|---|---|
 | mage | Ice Lance +47%, Shatter +15%, Frostbite +9% | Ice Lance +40%, Shatter +17%, Ice Shards +10% | Arcane Focus, Arcane Subtlety, Cold Snap, Ice Block, Wand Specialization |
-| priest | Mind Flay +13%, Shadow Weaving +8%, Improved Mind Flay +8% | Shadowform +47%, Mind Flay +23%, Darkness +7% | Holy Nova, Improved Power Word: Shield, Improved Renew, Spell Warding, Twilight Focus |
-| warlock | Improved Corruption +2%, Malediction +1%, Improved Bane of Agony +1% | Siphon Life +7%, Demonic Knowledge +5%, Improved Voidwalker +3% | Demonic Aegis, Demonic Embrace, Demonic Sacrifice, Fel Vitality, Improved Imp |
+| priest | Mind Flay +13%, Shadow Weaving +8%, Improved Mind Flay +7% | Shadowform +49%, Mind Flay +20%, Darkness +7% | Holy Nova, Improved Power Word: Shield, Improved Renew, Shadow Reach, Spell Warding |
+| warlock | Siphon Life +8%, Improved Corruption +2%, Malediction +2% | Siphon Life +7%, Demonic Knowledge +6%, Improved Voidwalker +5% | Demonic Aegis, Demonic Embrace, Demonic Sacrifice, Fel Vitality, Improved Imp |
 | hunter | Rapid Recuperation +7%, Efficiency +4%, Lethal Attacks +2% | Unleashed Fury +5%, Lethal Attacks +3%, Efficiency +3% | Barrage, Endurance Training, Pathfinding, Rapid Killing, Scatter Shot, Sniper Shot, Trueshot Aura |
 | warrior | Bloodthrill +7%, Improved Overpower +4%, Enrage +4% | Mortal Strike +16%, Bloodthrill +4%, Cruelty +4% | Blood Craze, Deflection, Improved Tactical Mastery, Sweeping Strikes |
 | rogue | Precision +3%, Improved Sinister Strike +3%, Flawless Execution +3% | Seal Fate +5%, Malice +4%, Improved Sinister Strike +3% | Improved Gouge, Lethality |
@@ -76,13 +76,13 @@ Positive = the hand draft is slower. The race winner is the fastest build over a
 
 ## Last rebuild
 
-`rebuild.py` ran on 2026-10-09 for druid (steps race, report, regen; 14 min). Per class:
+`rebuild.py` ran on 2026-10-09 for priest (steps race, report, regen; 5 min). Per class:
 
 - **mage**: 1 calibration round(s), converged; race cand-frost-r6 27.9s, cand-frost-r3 28.1s, cand-frost-r5 28.1s, leveling-frost 28.3s, cand-frost-r2 28.6s, cand-frost-0-5-46 28.9s, cand-frost-23-0-28 29.2s, cand-frost-r1 29.3s, cand-frost-28-0-23 29.7s
-- **priest**: 1 calibration round(s), converged; race cand-shadow-r6 25.6s, leveling-shadow 25.7s, cand-shadow-r5 25.7s, cand-shadow-r4 25.8s, cand-shadow-hand-2026-09-26 26.5s, cand-shadow-r3 27.4s, cand-shadow-r2 28.3s, cand-shadow-r7 29.5s, cand-shadow-r1 31.5s
+- **priest**: 1 calibration round(s), converged; race cand-shadow-r6 25.6s, leveling-shadow 25.6s, cand-shadow-r5 25.6s, cand-shadow-r4 25.7s, cand-shadow-hand-2026-09-26 26.4s, cand-shadow-r3 27.3s, cand-shadow-r2 28.3s, cand-shadow-r7 29.6s, cand-shadow-r1 31.6s
 - **warlock**: 1 calibration round(s), converged; race cand-affliction-r3 35.5s, leveling-affliction 35.6s, cand-affliction-r4 35.6s, cand-affliction-r2 35.7s, cand-affliction-r9 35.8s, cand-affliction-r6 35.9s, cand-affliction-r10 36.1s, cand-affliction-r11 36.4s, cand-affliction-r5 36.7s, cand-affliction-hand-2026-09-28 37.4s, cand-affliction-r7 39.4s, cand-affliction-r1 39.6s, cand-affliction-r8 41.1s
 - **hunter**: 1 calibration round(s), converged; race cand-bm-r6 26.6s, cand-bm-r5 26.8s, cand-bm-r3 27.3s, cand-bm-r4 27.4s, leveling-beast-mastery 28.4s, cand-bm-hand-2026-09-26 28.5s, cand-bm-r2 28.7s, cand-bm-r1 28.9s
-- **warrior**: 1 calibration round(s), converged; race leveling-arms 25.0s, cand-arms-r4 26.5s, cand-arms-r2-ms40 26.6s, cand-arms-r3 26.6s, cand-arms-r7 26.9s, cand-arms-r2 27.1s, cand-arms-r1 27.4s, cand-arms-r6 27.9s
+- **warrior**: 1 calibration round(s), converged; race leveling-arms 25.7s, cand-arms-r3 27.3s, cand-arms-r4 27.3s, cand-arms-r2-ms40 27.4s, cand-arms-r7 27.8s, cand-arms-r2 27.8s, cand-arms-r1 28.2s, cand-arms-r6 28.8s
 - **rogue**: 1 calibration round(s), converged; race cand-combat-r9 25.5s, cand-combat-r2 25.6s, cand-combat-r8 25.6s, cand-combat-hand-2026-09-26 25.8s, leveling-combat-swords 26.0s, cand-combat-r6 26.1s, cand-combat-r7 26.1s, cand-combat-r4 26.2s, cand-combat-r5 26.2s, cand-combat-r3 26.4s, cand-combat-r1 26.5s
 - **paladin**: 1 calibration round(s), converged; race leveling-retribution 28.4s, cand-ret-r5 28.5s, cand-ret-r6 28.6s, cand-ret-r7 28.6s, cand-ret-hand-2026-09-26 28.8s, cand-ret-r4 28.9s, cand-ret-r3 29.3s, cand-ret-r2 29.3s, cand-ret-r1 29.4s
 - **shaman**: 1 calibration round(s), converged; race leveling-enhancement 32.2s, cand-enh-r2 33.4s, cand-enh-r6 33.7s, cand-enh-r5 33.7s, cand-enh-r1 34.6s, cand-enh-r4 34.8s, cand-enh-r3 35.0s

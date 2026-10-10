@@ -13,7 +13,7 @@ The best talents and the best way to play every class in **World of Warcraft: Fo
 | [**Priest**](priest/README.md) | damage, healer | [Shadow](priest/leveling/shadow.md) (26 s/kill) | [Shadow](priest/raid/shadow.md) (698 DPS) |
 | [**Rogue**](rogue/README.md) | damage | [Combat-Subtlety](rogue/leveling/combat-subtlety.md) (26 s/kill), [Combat](rogue/leveling/combat.md) (26 s/kill) | [Combat](rogue/raid/combat.md) (735 DPS) |
 | [**Shaman**](shaman/README.md) | damage, healer | [Enhancement](shaman/leveling/enhancement.md) (32 s/kill) | [Enhancement](shaman/raid/enhancement.md) (739 DPS) |
-| [**Warlock**](warlock/README.md) | damage | [Affliction-Demonology](warlock/leveling/affliction-demonology.md) (36 s/kill), [Demonology](warlock/leveling/demonology.md) (36 s/kill) | [Demonology](warlock/raid/demonology.md) (832 DPS) |
+| [**Warlock**](warlock/README.md) | damage | [Demonology](warlock/leveling/demonology.md) (36 s/kill) | [Demonology](warlock/raid/demonology.md) (832 DPS) |
 | [**Warrior**](warrior/README.md) | damage, tank | [Fury](warrior/leveling/fury.md) (25 s/kill), [Arms](warrior/leveling/arms.md) (25 s/kill) | [Arms](warrior/raid/arms.md) (984 DPS) |
 
 Two specs in one cell are a tie (within 3% of each other; the best spec of the class by DPS in a full raid). Leveling times compare across classes: every class runs in the same fight simulator, solo against same-level mobs. Raid numbers assume a group: every raid buff and debuff is up, which is where classes that live on raid buffs (warriors' rage, hunters' and shamans' mana) do their real damage.

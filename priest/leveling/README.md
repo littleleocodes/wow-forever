@@ -6,7 +6,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
-| 1 | [Shadow](shadow.md) — Shadow — Leveling 🔬 | 26 | fastest |
+| 1 | [Shadow](shadow.md) — Leveling — Shadow | 26 | fastest |
 | 2 | [Smite](smite.md) — Smite — Leveling 🔬 | 40 | +57% |
 | 3 | [Discipline](discipline.md) — Discipline — Leveling into the raid build 🔬 | 45 | +74% |
 | 4 | [Holy](holy.md) — Holy — Leveling into the raid build 🔬 | 45 | +76% |

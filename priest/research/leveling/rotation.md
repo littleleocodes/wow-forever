@@ -4,9 +4,9 @@
 
 ## shadow-dps in pulls of several mobs
 
-Pulls of several mobs: area attacks when enough mobs stand in reach, then damage over time spread over the pull, else the single-target priority below. Single-target leveling fights against normal mobs of your level: Power Word: Shield and Inner Fire before the pull, Mind Blast at 30 yd, Shadow Word: Pain, Mind Flay channels (50% slow) and Mind Blast on cooldown while the mob walks in and once it is on you (the shield stops pushback while it holds), Vampiric Embrace and Devouring Plague heal, Shadow Word: Death below 20%, wand to finish without overkill; Psychic Scream and Desperate Prayer when health runs low. Between fights: 2 s loot, 6 s travel, Renew (not in Shadowform), conjured water below 35% mana, food below 65% health; a death costs 90 s.
+Pulls of several mobs: area attacks when enough mobs stand in reach, then damage over time spread over the pull, else the single-target priority below. Single-target leveling fights against normal mobs of your level: Power Word: Shield and Inner Fire before the pull, Mind Blast at 30 yd, Shadow Word: Pain, Mind Flay channels (50% slow) and Mind Blast on cooldown while the mob walks in and once it is on you (the shield stops pushback while it holds), Vampiric Embrace and Devouring Plague heal, Shadow Word: Death below 20%, wand to finish without overkill; Psychic Scream when health runs low. Between fights: 2 s loot, 6 s travel, Renew (not in Shadowform), conjured water below 35% mana, food below 65% health; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-27, on top of the priority below): SHIELD_BELOW = 0.5; never cast Smite; drink below 15% mana. Together +13.3% time per kill saved for `leveling-shadow` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): SHIELD_BELOW = 0.5; never cast Smite; drink below 15% mana. Together +13.6% time per kill saved for `leveling-shadow` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/shadow-dps-aoe.md](fightlab/shadow-dps-aoe.md).
 
@@ -59,9 +59,9 @@ Report: [fightlab/shadow-dps-aoe.md](fightlab/shadow-dps-aoe.md).
 
 ## shadow-dps
 
-Single-target leveling fights against normal mobs of your level: Power Word: Shield and Inner Fire before the pull, Mind Blast at 30 yd, Shadow Word: Pain, Mind Flay channels (50% slow) and Mind Blast on cooldown while the mob walks in and once it is on you (the shield stops pushback while it holds), Vampiric Embrace and Devouring Plague heal, Shadow Word: Death below 20%, wand to finish without overkill; Psychic Scream and Desperate Prayer when health runs low. Between fights: 2 s loot, 6 s travel, Renew (not in Shadowform), conjured water below 35% mana, food below 65% health; a death costs 90 s.
+Single-target leveling fights against normal mobs of your level: Power Word: Shield and Inner Fire before the pull, Mind Blast at 30 yd, Shadow Word: Pain, Mind Flay channels (50% slow) and Mind Blast on cooldown while the mob walks in and once it is on you (the shield stops pushback while it holds), Vampiric Embrace and Devouring Plague heal, Shadow Word: Death below 20%, wand to finish without overkill; Psychic Scream when health runs low. Between fights: 2 s loot, 6 s travel, Renew (not in Shadowform), conjured water below 35% mana, food below 65% health; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-27, on top of the priority below): SHIELD_BELOW = 0.5; never cast Smite; drink below 15% mana. Together +13.3% time per kill saved for `leveling-shadow` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): SHIELD_BELOW = 0.5; never cast Smite; drink below 15% mana. Together +13.6% time per kill saved for `leveling-shadow` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/shadow-dps.md](fightlab/shadow-dps.md).
 
@@ -69,13 +69,13 @@ Report: [fightlab/shadow-dps.md](fightlab/shadow-dps.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Mind Flay | 2.9 | 3.7 | 2.6 | 2.4 | 2.3 | 37% |
-| Mind Blast | 2.0 | 2.0 | 1.9 | 1.9 | 1.8 | 29% |
+| Mind Flay | 2.9 | 3.7 | 2.6 | 2.5 | 2.3 | 37% |
+| Mind Blast | 2.0 | 1.9 | 1.9 | 1.9 | 1.8 | 29% |
 | Shadow Word: Pain | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 17% |
-| Shadow Word: Death | 0.0 | 0.0 | 1.0 | 0.9 | 0.9 | 17% |
+| Shadow Word: Death | 0.0 | 0.0 | 0.9 | 0.9 | 0.9 | 17% |
 | Vampiric Embrace | 0.0 | 0.5 | 0.4 | 0.4 | 0.4 | 0% |
-| Wand | 2.2 | 0.6 | 0.0 | 0.0 | 0.0 | 0% |
 | Devouring Plague | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Wand | 2.2 | 0.6 | 0.0 | 0.0 | 0.0 | 0% |
 
 ### [`leveling-shadow`](builds/leveling-shadow.md)
 
@@ -86,5 +86,5 @@ Report: [fightlab/shadow-dps.md](fightlab/shadow-dps.md).
 | Shadow Word: Pain | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 19% |
 | Shadow Word: Death | 0.0 | 0.0 | 0.9 | 0.9 | 0.8 | 16% |
 | Vampiric Embrace | 0.0 | 0.5 | 0.3 | 0.3 | 0.3 | 0% |
-| Devouring Plague | 0.1 | 0.0 | 0.1 | 0.1 | 0.1 | 1% |
+| Devouring Plague | 0.1 | 0.0 | 0.0 | 0.0 | 0.1 | 1% |
 | Wand | 2.2 | 0.5 | 0.0 | 0.0 | 0.0 | 0% |

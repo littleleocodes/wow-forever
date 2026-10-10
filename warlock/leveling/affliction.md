@@ -48,6 +48,8 @@ Affliction levels by letting its damage-over-time spells do the killing while th
 - Below about a third of your health with a mob on you, use a Healthstone (**Create Healthstone** between fights).
 - If the Voidwalker dies, summon a new one before the next pull rather than fight without your tank, and heal a hurt one between fights with **Consume Shadows** (not usable in combat) or **Health Funnel**.
 
+*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

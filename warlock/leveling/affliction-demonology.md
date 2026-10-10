@@ -4,8 +4,6 @@
 
 *Dots with a Voidwalker tanking: the classic warlock leveling split.* (a hybrid: Affliction/Demonology).
 
-**✅ Recommended** for leveling (the best warlock spec here, or within 3% of it).
-
 **[Leveling — Affliction DoTs with a Voidwalker](../research/leveling/builds/leveling-affliction.md)** (23/26/2) — [open the talent tree](https://talentsforever.com/warlock/60/20530020135011-20050302312110213-2-6)
 
 ## How to play
@@ -48,6 +46,8 @@ The classic warlock leveling split: Affliction's dots do the killing while a Voi
 - Below about a third of your health with a mob on you, use a Healthstone (**Create Healthstone** between fights).
 - Finish a nearly dead mob with the wand; start no new spell on it.
 
+*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents while leveling
 
 One point per level from 10, in this order:
@@ -88,15 +88,15 @@ One point per level from 10, in this order:
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
-| 20 | 25 |
-| 30 | 31 |
-| 40 | 37 |
-| 50 | 39 |
-| 60 | 37 |
+| 20 | 31 |
+| 30 | 36 |
+| 40 | 43 |
+| 50 | 44 |
+| 60 | 41 |
 
 ## Other builds of this spec
 
-- [Affliction-Demonology (optimized)](../research/leveling/builds/opt-affliction-leveling-leveling-st.md) (27/24/0, 36 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/warlock/60/0555002013300102-03552310010000013--6)
+- [Affliction-Demonology (optimized)](../research/leveling/builds/opt-affliction-leveling-leveling-st.md) (27/24/0, 41 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/warlock/60/0555002013300102-03552310010000013--6)
 - [Affliction-Demonology (optimized, AoE pulls)](../research/leveling/builds/opt-affliction-leveling-leveling-aoe.md) (27/24/0) — [open the talent tree](https://talentsforever.com/warlock/60/2555002013200002-00542302012010013--6)
 
 ---
