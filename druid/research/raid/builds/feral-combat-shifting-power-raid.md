@@ -51,19 +51,20 @@ The community simulator's own Feral Cat preset (9/35/7), raced against our Feral
 
 ## Rank among our builds and the community simulator's
 
-**2 of 5** for `feral-cat-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 6** for `feral-cat-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/31/11 | 368 | +0.0% | 594 | -14.1% | 0 s |
-| 2 | **[`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md)** | ours: hand draft | 9/35/7 | 357 | -2.9% | 691 | +0.0% | 0 s |
-| 3 | *Feral Cat 9/35/7* | community simulator | - | 357 | -2.9% | 691 | +0.0% | 0 s |
-| 4 | [`feral-cat-dps`](feral-cat-dps.md) | ours: hand draft | 9/32/10 | 357 | -3.0% | 579 | -16.2% | 0 s |
-| 5 | *Feral* | community simulator | - | 340 | -7.7% | 665 | -3.8% | 0 s |
+| 1 | **[`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md)** | ours: hand draft | 9/35/7 | 395 | +0.0% | 691 | -1.0% | 119 s |
+| 2 | *Feral Cat 9/35/7* | community simulator | - | 395 | +0.0% | 691 | -1.0% | 119 s |
+| 3 | [`feral-combat-open-raid`](feral-combat-open-raid.md) | ours: hand draft | 9/33/9 | 390 | -1.1% | 698 | +0.0% | 119 s |
+| 4 | *Feral* | community simulator | - | 389 | -1.3% | 665 | -4.8% | 86 s |
+| 5 | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/31/11 | 368 | -6.8% | 594 | -15.0% | 0 s |
+| 6 | [`feral-cat-dps`](feral-cat-dps.md) | ours: hand draft | 9/32/10 | 357 | -9.6% | 579 | -17.1% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-10-02, 9 changes to the base rotation; third-seed check: ml: Feral Combat 346 -> 371 DPS (+7.2%), sim preset: Feral Cat 9/35/7 346 -> 371 DPS (+7.2%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 5 passes, the last 2026-10-10, 10 changes to the base rotation; third-seed check: open winner 368 -> 390 DPS (+5.9%), opt-feral-cat-dps-raid-dps 346 -> 368 DPS (+6.4%), sim preset: Feral Cat 9/35/7 368 -> 394 DPS (+7.2%), feral-cat-dps 337 -> 357 DPS (+5.9%)):
   1. drop: if combo points = 5.0 and not Clearcasting is up and (energy + 20.2) < (current cost + current cost): cast Ferocious Bite (+2.2%, pass 1)
   2. threshold 5 -> 3.75: if combo points ≥ 5 and not Rip is on the target: cast Rip (+1.6%, pass 1)
   3. drop: if Furor is known and mana ≥ current cost and the global cooldown is ready and (combo points < 5.0 and (energy + 20.2) < current cost or combo points = 5.0 and (energy + 20.2) < current cost or Clearcasting is known and Clearcasting is up and energy < 27.8): cancel Cat Form (+1.1%, pass 1)
@@ -73,7 +74,8 @@ The community simulator's own Feral Cat preset (9/35/7), raced against our Feral
   7. threshold 14.0s -> 28s: if Faerie Fire should be refreshed: cast Faerie Fire (+0.2%, pass 1)
   8. drop the condition: if Faerie Fire should be refreshed: cast Faerie Fire (+0.6%, pass 4)
   9. only with 6s or more of the fight left: cast Faerie Fire (+0.8%, pass 4)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 5 passes, the last 2026-10-09, 6 changes to the base rotation; third-seed check: opt-feral-cat-dps-raid-dps 582 -> 593 DPS (+1.9%), sim preset: Feral Cat 9/35/7 680 -> 691 DPS (+1.6%), feral-cat-dps 570 -> 579 DPS (+1.5%)):
+  10. insert in the middle: if Shifting Power is known and energy ≤ 60: cast Shifting Power (+11.8%, pass 5)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-10, 6 changes to the base rotation; third-seed check: open winner 687 -> 698 DPS (+1.7%), feral-combat-shifting-power-raid 680 -> 691 DPS (+1.6%), feral-cat-dps 570 -> 579 DPS (+1.5%), opt-feral-cat-dps-raid-dps 582 -> 593 DPS (+1.9%)):
   1. drop: if combo points = 5.0 and not Clearcasting is up and (energy + 20.2) < (current cost + current cost): cast Ferocious Bite (+1.0%, pass 1)
   2. threshold 5 -> 3.75: if combo points ≥ 5 and not Rip is on the target: cast Rip (+1.3%, pass 1)
   3. drop: if not Cat Form is up and mana % ≤ 40% and time left in the fight ≥ 20.0 and not (Demonic Rune is known and Demonic Rune is ready or Potion is known and Potion is ready): cast Innervate (+0.5%, pass 1)
@@ -86,15 +88,16 @@ Before the pull: at -1.0s: cast Faerie Fire; at -3.5s: cast Tiger's Fury.
 | # | Priority (the first line whose condition holds is cast) | [`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md) casts/min |
 |---|---|---|
 | 1 | cast Tiger's Fury | 2.3 |
-| 2 | if Faerie Fire should be refreshed: cast Faerie Fire | 39.7 |
+| 2 | if Faerie Fire should be refreshed: cast Faerie Fire | 33.0 |
 | 3 | if Cat Form is up: use every other cooldown when ready | as ready |
-| 4 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 4.7 |
-| 5 | cast Shred | 14.8 |
-| 6 | if time left in the fight ≥ 6s: cast Faerie Fire | 39.7 |
-| 7 | cast Goblin Sapper Charge | as ready |
-| 8 | if not Cat Form is up and (mana + 1500.0) ≤ (mana ÷ mana %): cast Demonic Rune | as ready |
-| 9 | if not Cat Form is up and (mana + 2250.0) ≤ (mana ÷ mana %): cast Potion | as ready |
-| 10 | if not Cat Form is up: cast Cat Form | 0.3 |
+| 4 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 5.0 |
+| 5 | cast Shred | 18.2 |
+| 6 | if Shifting Power is known and energy ≤ 60: cast Shifting Power | 3.7 |
+| 7 | if time left in the fight ≥ 6s: cast Faerie Fire | 33.0 |
+| 8 | cast Goblin Sapper Charge | as ready |
+| 9 | if not Cat Form is up and (mana + 1500.0) ≤ (mana ÷ mana %): cast Demonic Rune | as ready |
+| 10 | if not Cat Form is up and (mana + 2250.0) ≤ (mana ÷ mana %): cast Potion | as ready |
+| 11 | if not Cat Form is up: cast Cat Form | 0.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Haste, cast Metamorphosis Rune, cast Innervate (its condition never held in these fights).
 
@@ -103,8 +106,8 @@ Damage by ability:
 | Ability | [`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md) |
 |---|---|
 | Rip | 38% |
-| Auto Attack | 32% |
-| Shred | 27% |
+| Shred | 31% |
+| Auto Attack | 29% |
 | Goblin Sapper Charge | 2% |
 | Dragonbreath Chili | 1% |
 

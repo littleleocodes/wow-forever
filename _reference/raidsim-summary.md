@@ -6,7 +6,7 @@
 |---|---|---|---|---|---|---|---|
 | druid | `balance-dps` | `balance-moonkin-raid` | 513 | Balance | 468 | `opt-balance-dps-raid-dps` | 513 |
 | druid | `feral-bear-tank` | `feral-bear-tank` | 542 | Bear Tank 0/31/20 | 505 | `opt-feral-bear-tank-raid-tank` | 542 |
-| druid | `feral-cat-dps` | `opt-feral-cat-dps-raid-dps` | 368 | Feral Cat 9/35/7 | 357 | `opt-feral-cat-dps-raid-dps` | 368 |
+| druid | `feral-cat-dps` | `feral-combat-open-raid` | 390 | feral-combat-shifting-power-raid | 395 | `opt-feral-cat-dps-raid-dps` | 368 |
 | hunter | `bm-raid` | `beast-mastery-ml-parse` | 489 | - | - | - | - |
 | hunter | `melee-dps` | `survival-raid` | 486 | - | - | - | - |
 | hunter | `mm-lonewolf-raid` | `opt-mm-lonewolf-raid-raid-dps` | 463 | Marksmanship | 359 | `opt-mm-lonewolf-raid-raid-dps` | 463 |
@@ -44,7 +44,7 @@ The best of our builds per spec model on the boss-level training dummy with your
 |---|---|---|---|---|---|---|---|---|---|---|
 | druid | Forever | `balance-dps` | `balance-moonkin-raid` (33/5/13) | 513 | 593 | 592 | 592 | 587 | `opt-balance-dps-parse` 592 | Moonkin 38/0/13 584 |
 | druid | Forever | `feral-bear-tank` | `feral-bear-tank` (7/35/9) | 235 | 257 | 542 | 542 | 530 | - | Bear Tank 0/31/20 505 |
-| druid | Forever | `feral-cat-dps` | `feral-combat-shifting-power-raid` (9/35/7) | 357 | 389 | 691 | 691 | 711 | `opt-feral-cat-dps-parse` 594 | Feral Cat 9/35/7 691 |
+| druid | Forever | `feral-cat-dps` | `feral-combat-open-raid` (9/33/9) | 390 | 423 | 698 | 698 | 718 | `opt-feral-cat-dps-parse` 594 | Feral Cat 9/35/7 691 |
 | druid | Classic | `balance-dps` | `balance-moonkin-raid` (35/0/16) | 224 | - | 567 | 740 | 746 | - | Balance 741 |
 | druid | Classic | `feral-cat-dps` | `feral-cat-dps` (14/32/5) | 239 | - | 671 | 1563 | 1666 | - | Feral 1597 |
 | hunter | Forever | `bm-raid` | `beast-marks-open-raid` (27/21/3) | 474 | 525 | 855 | 855 | 886 | `beast-mastery-ml-parse` 843 | Beast Mastery 35/16/0 789 |

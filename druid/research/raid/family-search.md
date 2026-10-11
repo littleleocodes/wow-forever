@@ -78,6 +78,8 @@ The search model's most important talents (random-forest importance): Moonfury 0
 
 **Synergy certificate** (2026-10-10, raidsim/synergy.py): 43 relevant talents, 28 the winner lacks; 843 pairs measured around 33/5/13 on 1500 fights. Largest interactions (DPS of both against the two alone): Improved Wrath + Improved Entangling Roots +0.0% (build +0.0%), Improved Wrath + Eclipse +0.0% (build +0.0%), Improved Wrath + Ferocity +0.0% (build +0.0%), Improved Wrath + Feral Instinct +0.0% (build +0.0%), Improved Wrath + Brutal Impact +0.0% (build +0.0%), Improved Wrath + Shredding Attacks +0.0% (build +0.0%). No pair build within 1% of the winner. The certificate confirms the winner.
 
+Build (2026-10-10, open_builds.py): confirms balance-moonkin-raid (+0.00% in a full raid, raced together).
+
 ## feral-cat-dps
 
 **Best family per pair of keystones** (each polished by a short hill climb that keeps the pair; DPS on 800 fights, before the main search):
@@ -153,4 +155,6 @@ Sibling rotations (the entry's best build under each, 10,000 fights): balance-dp
 The search model's most important talents (random-forest importance): Improved Shifting Power 0.38, Shifting Power 0.23, Shredding Attacks 0.12, Rend and Tear 0.08, Berserk 0.04, Feral Combat points 0.02, Blood Frenzy 0.02, Feral Charge 0.01, Ferocity 0.01, Naturalist 0.01.
 
 **Synergy certificate** (2026-10-10, raidsim/synergy.py): 43 relevant talents, 25 the winner lacks; 783 pairs measured around 9/33/9 on 1500 fights. Largest interactions (DPS of both against the two alone): Natural Shapeshifter + Blood Frenzy +0.0% (build -2.0%), Natural Shapeshifter + Sharpened Claws +0.0% (build -4.7%), Natural Shapeshifter + Berserk +0.0% (build -1.7%), Reflection + Savage Fury +0.0% (build -3.0%), Improved Wrath + Moonglow +0.0% (build +0.0%), Improved Wrath + Improved Moonfire +0.0% (build +0.0%). No pair build within 1% of the winner. The certificate confirms the winner.
+
+Build (2026-10-10, open_builds.py): `feral-combat-open-raid`.
 

@@ -6,8 +6,8 @@
 
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
-| 1 | [Feral Combat](feral-combat.md) — Feral Combat — Shifting Power 🔬 | 691 | best |
-| 2 | [Balance](balance.md) — Balance — Moonkin / Eclipse | 592 | -14% |
+| 1 | [Feral Combat](feral-combat.md) — Feral Combat — Raid 🔬 | 698 | best |
+| 2 | [Balance](balance.md) — Balance — Moonkin / Eclipse | 592 | -15% |
 
 **Tanking**: [Feral Combat](feral-combat.md) — Feral — Bear Tank.
 

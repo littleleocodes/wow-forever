@@ -29,7 +29,7 @@ Every spell the Forever beta spellbook (build 1.60.1.70291) marks new against Cl
 | Berserk | Feral Combat | 40 | 3 min | Causes your Primal Bite ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generat… | no damage of its own, 0.3 casts/min: *Bear Tank 0/31/20* (feral-bear-tank) | - | not cast | Feral capstone (3 min): Primal Bite hits up to 3 targets without a cooldown, and combo-point builders get +100% crit for 15 s; the Cat drafts take it for the crit. |
 | Lacerate | Feral Combat | 58 | - | Lacerates the enemy target, making them bleed for 75 damage over 15 sec plus 10% weapon damage per existing application of Lacerate on the target. | 58% of the damage, 39.0 casts/min: [`feral-bear-tank`](../druid/research/raid/builds/feral-bear-tank.md) (feral-bear-tank) | - | not cast | Bear bleed; the simulator's Bear rotation casts it. |
 | Primal Bite | Feral Combat | 60 | 6 sec | Bite the target, dealing 100% normal damage plus 77 and generating a high amount of threat. | 14% of the damage, 10.5 casts/min: *Bear Tank 0/31/20* (feral-bear-tank) | feral-bear-tank (raid): move down below 'if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerat (+0.6%) | not cast | Forever's Mangle, a Feral talent. Bear and Dire Bear only (the client's shapeshift mask, which the simulator follows), so no Cat build can use it; the simulator's Bear rotation casts it. |
-| Shifting Power | Feral Combat | 25 | 16 sec | Instantly convert 55% of base Mana into 40 Energy. | not cast by any raced build | feral-cat-dps (raid): insert in the middle: if Shifting Power is known and energy ≤ 60: cast Shifting Power (+9.9%) | not cast |  |
+| Shifting Power | Feral Combat | 25 | 16 sec | Instantly convert 55% of base Mana into 40 Energy. | no damage of its own, 3.7 casts/min: [`feral-combat-shifting-power-raid`](../druid/research/raid/builds/feral-combat-shifting-power-raid.md) (feral-cat-dps) | feral-cat-dps (training dummy): insert in the middle: if Shifting Power is known and energy ≤ 60: cast Shifting Power (+11.8%); feral-cat-dps (raid): insert in the middle: if Shifting Power is known and energy ≤ 60: cast Shifting Power (+9.9%) | not cast |  |
 | Revive | Restoration | 60 | - | Brings a dead player back to life with 750 health and 1000 mana. | not cast by any raced build | - | not cast | Out-of-combat resurrection. |
 | Wild Growth | Restoration | 60 | 6 sec | Heals the target and their party for 679 over 7 sec. | not cast by any raced build | - | not cast | A party heal (the healer lab's druid heals with it). |
 
@@ -37,7 +37,7 @@ Every spell the Forever beta spellbook (build 1.60.1.70291) marks new against Cl
 
 No new spell of this class opened a build of its own: the new spells go into the existing builds' rotations (above).
 
-The class's best raid DPS build on the training dummy: [`balance-moonkin-raid`](../druid/research/raid/builds/balance-moonkin-raid.md) (balance-dps), 513 DPS; in a raid: [`feral-combat-shifting-power-raid`](../druid/research/raid/builds/feral-combat-shifting-power-raid.md) (feral-cat-dps), 691 DPS.
+The class's best raid DPS build on the training dummy: [`balance-moonkin-raid`](../druid/research/raid/builds/balance-moonkin-raid.md) (balance-dps), 513 DPS; in a raid: [`feral-combat-open-raid`](../druid/research/raid/builds/feral-combat-open-raid.md) (feral-cat-dps), 698 DPS.
 
 ## Hunter
 

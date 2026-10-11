@@ -4,9 +4,9 @@
 
 **✅ Recommended** for raid (the best druid spec here, or within 3% of it).
 
-**[Feral Combat — Shifting Power](../research/raid/builds/feral-combat-shifting-power-raid.md)** (9/35/7) — [open the talent tree](https://talentsforever.com/druid/60/050022-55000032121032212051-052-6)
+**[Feral Combat — Raid](../research/raid/builds/feral-combat-open-raid.md)** (9/33/9) — [open the talent tree](https://talentsforever.com/druid/60/050022-25000332021031212051-144-6)
 
-> 🔬 Derived build: the community simulator's own preset talents (Feral Cat 9/35/7), raced against this project's builds in a full raid, where they came out ahead. A model of the beta, to check at launch.
+> 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (feral-cat-dps), which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to play
 
@@ -60,7 +60,7 @@ A raid cat keeps **Rip** bleeding on the boss, turns mana into energy with **Shi
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 691 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 698 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
@@ -94,6 +94,7 @@ A raid cat keeps **Rip** bleeding on the boss, turns mana into energy with **Shi
 
 ## Other builds of this spec
 
+- [Feral Combat — Shifting Power](../research/raid/builds/feral-combat-shifting-power-raid.md) (9/35/7, 691 DPS in a full raid) — [open the talent tree](https://talentsforever.com/druid/60/050022-55000032121032212051-052-6)
 - [Feral Combat (optimized)](../research/raid/builds/opt-feral-cat-dps-raid-dps.md) (9/31/11, 594 DPS in a full raid) — [open the talent tree](https://talentsforever.com/druid/60/050022-25000332020032012051-055001-6)
 - [Feral — Cat DPS](../research/raid/builds/feral-cat-dps.md) (9/32/10, 579 DPS in a full raid) — [open the talent tree](https://talentsforever.com/druid/60/050022-55000332120032012021-055-6)
 - [Feral — Bear Tank](../research/raid/builds/feral-bear-tank.md) (7/35/9) — [open the talent tree](https://talentsforever.com/druid/60/05002-5020033212003200255-054-6)

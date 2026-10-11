@@ -101,6 +101,9 @@
 **Feral Combat — Shifting Power (the simulator's Feral Cat 9/35/7)** (`druid/research/raid/builds/feral-combat-shifting-power-raid.md`)
 - [ ] Does powershifting work in Forever as the simulator plays it (Furor's energy on every Cat Form)? Check at launch.
 
+**Feral Combat — Raid (open talent search)** (`druid/research/raid/builds/feral-combat-open-raid.md`)
+- [ ] An open-search Feral Combat build: check it against the community's Feral Combat builds at launch.
+
 ### Hunter
 
 **Beast Mastery / Marksmanship (simulator winner adopted 2026-10-02)** (`hunter/research/raid/builds/bm-mm-raid.md`)
