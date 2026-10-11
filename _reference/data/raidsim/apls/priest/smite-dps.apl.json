@@ -205,12 +205,12 @@
     },
     "castSpell": {
      "spellId": {
-      "spellId": 1309636,
-      "rank": 4
+      "spellId": 1309635,
+      "rank": 3
      }
     }
    },
-   "notes": "apl_opt 2026-10-08: changed or added by the rotation search (see smite-dps-rotation-search.json)"
+   "notes": "apl_opt 2026-10-11: changed or added by the rotation search (see smite-dps-rotation-search.json)"
   },
   {
    "action": {
@@ -258,12 +258,12 @@
    "action": {
     "castSpell": {
      "spellId": {
-      "spellId": 1316995,
-      "rank": 4
+      "spellId": 1240721,
+      "rank": 3
      }
     }
    },
-   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see smite-dps-rotation-search.json)"
+   "notes": "apl_opt 2026-10-11: changed or added by the rotation search (see smite-dps-rotation-search.json)"
   },
   {
    "action": {
@@ -313,9 +313,46 @@
       "spellId": 591,
       "rank": 2
      }
+    },
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "currentManaPercent": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "60%"
+       }
+      }
+     }
     }
    },
-   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see smite-dps-rotation-search.json)"
+   "notes": "apl_opt 2026-10-11: changed or added by the rotation search (see smite-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 1004,
+      "rank": 5
+     }
+    },
+    "condition": {
+     "cmp": {
+      "op": "OpLt",
+      "lhs": {
+       "currentManaPercent": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "15%"
+       }
+      }
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-11: changed or added by the rotation search (see smite-dps-rotation-search.json)"
   },
   {
    "action": {

@@ -6242,8 +6242,8 @@
   "spec": "any",
   "entry": "shadow-dps",
   "setting": "raid",
-  "date": "2026-10-08",
-  "base_dps": 681.23,
+  "date": "2026-10-11",
+  "base_dps": 697.61,
   "abilities": [
    {
     "ability": "Vampiric Embrace",
@@ -6256,7 +6256,7 @@
      "line": "aura not on you",
      "spot": "at the end",
      "gain_seed1": 0.0,
-     "split": "20/0/31",
+     "split": "18/0/33",
      "vs_spec_build": 0.0
     },
     "kept": false
@@ -6284,6 +6284,32 @@
      "gain_seed1": 0.0,
      "split": "28/0/23",
      "vs_spec_build": 0.0
+    },
+    "kept": false
+   }
+  ]
+ },
+ "priest/smite-dps/raid/any": {
+  "class": "priest",
+  "spec": "any",
+  "entry": "smite-dps",
+  "setting": "raid",
+  "date": "2026-10-11",
+  "base_dps": 587.53,
+  "abilities": [
+   {
+    "ability": "Holy Nova",
+    "talent": "Holy Nova",
+    "spell": 27801,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0008,
+     "split": "21/23/7",
+     "vs_spec_build": 0.0008
     },
     "kept": false
    }

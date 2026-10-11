@@ -95,14 +95,17 @@
 **Optimizer — Maul 40%, white 30%, Swipe 15%, Faerie Fire/Demoralizing Roar 5%, Thorns 10%; Mangle arrives as a talent effect (raid-tank)** (`druid/research/raid/builds/opt-feral-bear-tank-raid-tank.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Balance — Leveling (open talent search)** (`druid/research/leveling/builds/balance-open-leveling.md`)
-- [ ] An open-search Balance leveling build: check it while leveling at launch.
-
 **Feral Combat — Shifting Power (the simulator's Feral Cat 9/35/7)** (`druid/research/raid/builds/feral-combat-shifting-power-raid.md`)
 - [ ] Does powershifting work in Forever as the simulator plays it (Furor's energy on every Cat Form)? Check at launch.
 
 **Feral Combat — Raid (open talent search)** (`druid/research/raid/builds/feral-combat-open-raid.md`)
 - [ ] An open-search Feral Combat build: check it against the community's Feral Combat builds at launch.
+
+**Balance — Leveling (open talent search)** (`druid/research/leveling/builds/balance-open-leveling.md`)
+- [ ] An open-search Balance leveling build: check it while leveling at launch.
+
+**Feral Combat — Leveling (open talent search)** (`druid/research/leveling/builds/feral-combat-open-leveling.md`)
+- [ ] An open-search Feral Combat leveling build: check it while leveling at launch.
 
 ### Hunter
 
@@ -456,14 +459,14 @@
 **Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (parse)** (`priest/research/raid/builds/opt-shadow-dps-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Smite — Raid (open talent search)** (`priest/research/raid/builds/smite-open-raid.md`)
-- [ ] An open-search Smite build: check it against the community's Smite builds at launch.
-
 **Smite — Leveling (open talent search)** (`priest/research/leveling/builds/smite-open-leveling.md`)
 - [ ] An open-search Smite leveling build: check it while leveling at launch.
 
 **Shadow — Leveling (open talent search)** (`priest/research/leveling/builds/shadow-open-leveling.md`)
 - [ ] An open-search Shadow leveling build: check it while leveling at launch.
+
+**Smite — Raid (open talent search)** (`priest/research/raid/builds/smite-open-raid.md`)
+- [ ] An open-search Smite build: check it against the community's Smite builds at launch.
 
 ### Rogue
 
@@ -781,6 +784,9 @@
 
 **Fury — Raid (open talent search)** (`warrior/research/raid/builds/fury-open-raid.md`)
 - [ ] An open-search Fury build: check it against the community's Fury builds at launch.
+
+**Arms — Leveling (open talent search)** (`warrior/research/leveling/builds/arms-open-leveling.md`)
+- [ ] An open-search Arms leveling build: check it while leveling at launch.
 
 **Fury — Leveling (open talent search)** (`warrior/research/leveling/builds/fury-open-leveling.md`)
 - [ ] An open-search Fury leveling build: check it while leveling at launch.

@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Fury raid build the open talent search found on 2026-10-08: every legal 51-point build with no tree rule, searched in the community simulator's fury-dw-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +3.9% over opt-fury-dw-raid-raid-dps, the best of our builds in that rotation.
+The Fury raid build the open talent search found on 2026-10-11: every legal 51-point build with no tree rule, searched in the community simulator's fury-dw-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). 
 
 ## Point allocation
 
@@ -19,12 +19,13 @@ The Fury raid build the open talent search found on 2026-10-08: every legal 51-p
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
+| **Improved Heroic Strike** | 3/3 | changed | Reduces the cost of your Heroic Strike ability by 3 Rage. |
 | **Improved Rend** | 3/3 | changed | Increases the Bleed damage done by your Rend ability by 35%. |
 | **Improved Tactical Mastery** | 5/5 | **NEW** | Tactical Mastery lets you retain up to an additional 15 Rage when you change stances. |
 | **Anger Management** | 1/1 | changed | Generates 1 Rage every 3 sec while in combat, and reduces Rage loss while out of combat by 30%. |
 | **Deep Wounds** | 3/3 | changed | Your critical strikes cause your opponent to Bleed, dealing 60% of your melee weapon's average damage over 12 sec. |
 | **Impale** | 2/2 | changed | Increases the critical strike damage bonus of your abilities by 20%. |
-| **Deflection** | 4/5 | unchanged | Increases your Parry chance by 4%. |
+| **Deflection** | 1/5 | unchanged | Increases your Parry chance by 1%. |
 
 ### Fury (31)
 
@@ -49,14 +50,14 @@ The Fury raid build the open talent search found on 2026-10-08: every legal 51-p
 
 ## Core talents (priority order)
 
-1. **Flurry** — 115 DPS lost without it (14% of the build in a full raid; removal, 12,000 fights).
-2. **Bloodthirst** — 108 DPS lost without it (13% of the build in a full raid; removal, 12,000 fights).
-3. **Dual Wield Specialization** — 54 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights).
-4. **Cruelty** — 41 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights).
-5. **Deep Wounds** — 41 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights).
-6. **Death Wish** — 37 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
-7. **Furious Precision** — 28 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights).
-8. **Impale** — 21 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights).
+1. **Flurry** — 131 DPS lost without it (14% of the build in a full raid; removal, 12,000 fights).
+2. **Bloodthirst** — 86 DPS lost without it (9% of the build in a full raid; removal, 12,000 fights).
+3. **Dual Wield Specialization** — 64 DPS lost without it (7% of the build in a full raid; removal, 12,000 fights).
+4. **Deep Wounds** — 42 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights).
+5. **Death Wish** — 39 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
+6. **Cruelty** — 37 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
+7. **Furious Precision** — 35 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights).
+8. **Impale** — 27 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights).
 
 ## Rank among our builds and the community simulator's
 
@@ -64,12 +65,12 @@ The Fury raid build the open talent search found on 2026-10-08: every legal 51-p
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`fury-open-raid`](fury-open-raid.md)** | ours: hand draft | 18/31/2 | 528 | +0.0% | 925 | +0.0% | 0 s |
-| 2 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 19/32/0 | 508 | -3.8% | 885 | -4.3% | 0 s |
-| 3 | [`fury-dw-raid`](fury-dw-raid.md) | ours: hand draft | 13/38/0 | 501 | -5.1% | 884 | -4.4% | 0 s |
-| 4 | *DPS* | community simulator | - | 496 | -6.1% | 884 | -4.4% | 0 s |
-| 5 | *Fury 17/34/0* | community simulator | - | 482 | -8.8% | 861 | -6.9% | 0 s |
-| 6 | *Arms 39/12/0* | community simulator | - | 352 | -33.4% | 649 | -29.8% | 0 s |
+| 1 | **[`fury-open-raid`](fury-open-raid.md)** | ours: hand draft | 18/31/2 | 528 | +0.0% | 929 | +0.0% | 0 s |
+| 2 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 19/32/0 | 508 | -3.8% | 885 | -4.7% | 0 s |
+| 3 | [`fury-dw-raid`](fury-dw-raid.md) | ours: hand draft | 13/38/0 | 501 | -5.1% | 884 | -4.8% | 0 s |
+| 4 | *DPS* | community simulator | - | 496 | -6.1% | 884 | -4.8% | 0 s |
+| 5 | *Fury 17/34/0* | community simulator | - | 482 | -8.8% | 861 | -7.4% | 0 s |
+| 6 | *Arms 39/12/0* | community simulator | - | 352 | -33.4% | 649 | -30.1% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -147,14 +148,13 @@ Damage by ability:
 
 ## Notes
 
-- +4.8% over the best hand draft of the spec, fury-dw-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.
-- Open search result (fury-dw-raid, full raid): 17/32/2 (Fury) at 842.2 DPS; opt-fury-dw-raid-raid-dps 810.3, fury-dw-raid 803.6 in the same fights; 4,486 builds simulated, 2 independent runs reached the top.
-- The spec's other builds on the pages (their best entry, full raid): opt-arms-2h-raid-raid-dps 733.2, arms-2h-raid 725.2.
-- The fury-dw-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.
-- Sibling rotations tried on it (10,000 fights): arms-2h-raid -0.5%, arms-battle-raid -14.4%; none adopted.
-- Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Heroic Strike, Improved Rend, Improved Tactical Mastery, Booming Voice.
-- Simulator numbers are the community's model of the beta (ElliotWood/Forever b0f0df3 with this project's patches), not in-game measurements.
-- 2026-10-08 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Booming Voice -> Deflection (survival); Booming Voice -> Blood Craze (survival); Booming Voice -> Blood Craze (survival); Booming Voice -> Blood Craze (survival); Improved Heroic Strike -> Deflection (survival); Improved Heroic Strike -> Deflection (survival); Improved Heroic Strike -> Deflection (survival). Net +0.00% on a third seed.
+- +4.8% over the best hand draft of the spec, arms-2h-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.
+- Open search result (fury-dw-raid, full raid): 17/32/2 (Fury) at 929.2 DPS; opt-fury-dw-raid-raid-dps 885.5, fury-dw-raid 883.7 in the same fights; 9,040 builds simulated, 3 independent runs reached the top.
+- The spec's other builds on the pages (their best entry, full raid): opt-arms-2h-raid-raid-dps 898.1, arms-2h-raid 886.5.
+- Sibling rotations tried on it (10,000 fights): arms-2h-raid -2.8%, arms-battle-raid -15.1%; none adopted.
+- Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Rend, Improved Tactical Mastery, Booming Voice.
+- Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements.
+- 2026-10-11 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Booming Voice -> Deflection (survival); Booming Voice -> Blood Craze (survival); Booming Voice -> Blood Craze (survival); Booming Voice -> Blood Craze (survival). Net +0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 
@@ -163,7 +163,7 @@ Damage by ability:
 ## Sources
 
 - <https://github.com/ElliotWood/Forever>
-- <https://talentsforever.com/warrior/60/30305013002-45053005102010501-2-4>
+- <https://talentsforever.com/warrior/60/30305013002-45053005102010501-2-6>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

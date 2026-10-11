@@ -3,71 +3,49 @@
  "spec": "smite-dps",
  "build": "smite-open-raid",
  "setting": "raid",
- "date": "2026-10-08",
+ "date": "2026-10-11",
  "tank": false,
  "removal": {
-  "Divine Fury": 0.10651623832219625,
-  "Holy Precision": 0.08631219232270237,
-  "Holy Specialization": 0.0157704179979139,
-  "Improved Healing": 0.0030481748766406636,
+  "Divine Fury": 0.10088154434975716,
+  "Holy Nova": -0.0,
+  "Holy Precision": 0.09498954483548594,
+  "Holy Specialization": 0.016778983853269924,
+  "Improved Healing": 0.002052152375409455,
   "Improved Renew": -0.0,
-  "Improved Shadow Word: Pain": 0.023718816092982542,
-  "Inner Focus": 0.012355141906877365,
-  "Inspiration": -0.0,
-  "Meditation": 0.02626524060614288,
-  "Mental Agility": 0.004413910328471382,
-  "Mental Strength": 0.0029017680491288944,
-  "Penance": 0.06044343888720982,
-  "Power in Light": 0.04656071753490987,
-  "Searing Light": 0.03338937342645576,
-  "Shadow Focus": 0.011247914636590584,
+  "Improved Shadow Word: Pain": 0.0248843195545857,
+  "Inner Focus": 0.007656881454577991,
+  "Meditation": 0.09389824606262165,
+  "Mental Agility": 0.02725745766507126,
+  "Mental Strength": 0.0011421926474348698,
+  "Penance": 0.08124046937366614,
+  "Power in Light": 0.050034069635628065,
+  "Searing Light": 0.034994783573428445,
+  "Shadow Focus": 0.007913283816608274,
   "Spell Warding": -0.0,
-  "Spiritual Guidance": 0.009669725805762197,
-  "Twin Disciplines": 0.00914176241365161
+  "Spiritual Guidance": 0.009287098345467149,
+  "Twilight Focus": -0.0,
+  "Twin Disciplines": 0.008813157266216787
  },
  "free": [
+  "Holy Nova",
   "Improved Renew",
-  "Inspiration",
-  "Spell Warding"
+  "Mental Strength",
+  "Spell Warding",
+  "Twilight Focus"
  ],
  "kept_for_rotation": [
   "Inner Focus"
  ],
  "active_never_worth": [],
- "abilities_never_cast": [],
+ "abilities_never_cast": [
+  "Holy Nova"
+ ],
  "moves": [
   {
    "round": 1,
    "kind": "utility",
    "from": "Improved Renew",
-   "to": "Twilight Focus",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "interrupt"
-  },
-  {
-   "round": 2,
-   "kind": "utility",
-   "from": "Improved Renew",
-   "to": "Twilight Focus",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "interrupt"
-  },
-  {
-   "round": 3,
-   "kind": "utility",
-   "from": "Inspiration",
-   "to": "Twilight Focus",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "interrupt"
-  },
-  {
-   "round": 4,
-   "kind": "utility",
-   "from": "Inspiration",
-   "to": "Holy Nova",
+   "to": "Binding Heal",
    "seed1": 0.0,
    "seed2": 0.0,
    "utility": "threat"
@@ -86,7 +64,7 @@
    ],
    [
     "Holy Precision",
-    2
+    3
    ],
    [
     "Mental Agility",
@@ -102,7 +80,7 @@
    ],
    [
     "Mental Strength",
-    2
+    1
    ],
    [
     "Penance",
@@ -111,8 +89,12 @@
   ],
   "Holy": [
    [
+    "Twilight Focus",
+    3
+   ],
+   [
     "Improved Renew",
-    2
+    1
    ],
    [
     "Holy Specialization",
@@ -127,12 +109,12 @@
     5
    ],
    [
-    "Inspiration",
-    2
+    "Holy Nova",
+    1
    ],
    [
     "Improved Healing",
-    3
+    2
    ],
    [
     "Searing Light",
@@ -166,7 +148,7 @@
    ],
    [
     "Holy Precision",
-    2
+    3
    ],
    [
     "Mental Agility",
@@ -182,7 +164,7 @@
    ],
    [
     "Mental Strength",
-    2
+    1
    ],
    [
     "Penance",
@@ -190,6 +172,10 @@
    ]
   ],
   "Holy": [
+   [
+    "Twilight Focus",
+    3
+   ],
    [
     "Holy Specialization",
     5
@@ -203,8 +189,12 @@
     5
    ],
    [
+    "Holy Nova",
+    1
+   ],
+   [
     "Improved Healing",
-    3
+    2
    ],
    [
     "Searing Light",
@@ -215,11 +205,7 @@
     3
    ],
    [
-    "Twilight Focus",
-    3
-   ],
-   [
-    "Holy Nova",
+    "Binding Heal",
     1
    ]
   ],

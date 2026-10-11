@@ -5874,9 +5874,9 @@
   }
  },
  "last_run": {
-  "date": "2026-10-10T23:21:22",
+  "date": "2026-10-11T08:04:22",
   "classes": [
-   "druid"
+   "priest"
   ],
   "steps": [
    "regen"
@@ -5887,63 +5887,63 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 180,
+  "seconds": 47,
   "refresh": null,
   "regen_log": [
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py druid",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py priest",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "formatted F:\\wow-forever\\druid\\research\\talents\\forever\\proposed-builds.json",
-     "druid: README section + leveling-feral note written"
+     "formatted F:\\wow-forever\\priest\\research\\talents\\forever\\proposed-builds.json",
+     "priest: README section + leveling-shadow note written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py druid",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py priest",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
-     "druid: raid sim section written (3 specs)",
+     "priest: raid sim section written (2 specs)",
      "wrote _reference\\raidsim-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py druid",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py priest",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "druid: healer lab section written (1 specs)",
+     "priest: healer lab section written (1 specs)",
      "wrote _reference\\heallab-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py druid",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py priest",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "druid: leveling/guide.md written"
+     "priest: leveling/guide.md written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py druid",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py priest",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "druid: raid gear and consumables written"
+     "priest: raid gear and consumables written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py druid",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py priest",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "druid: raid and leveling rotations, DPS ranking written"
+     "priest: raid and leveling rotations, DPS ranking written"
     ],
     "stderr": []
    },
@@ -5952,16 +5952,16 @@
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "  ok   opt-resto-heal-raid-heal (11/5/35)",
      "  ok   restoration-leveling (11/5/35)",
      "  ok   opt-balance-dps-raid-dps (33/5/13)",
      "  ok   opt-balance-dps-parse (33/5/13)",
      "  ok   opt-feral-cat-dps-raid-dps (9/31/11)",
      "  ok   opt-feral-cat-dps-parse (9/31/11)",
      "  ok   opt-feral-bear-tank-raid-tank (7/35/9)",
-     "  ok   balance-open-leveling (36/2/13)",
      "  ok   feral-combat-shifting-power-raid (9/35/7)",
      "  ok   feral-combat-open-raid (9/33/9)",
+     "  ok   balance-open-leveling (38/0/13)",
+     "  ok   feral-combat-open-leveling (11/31/9)",
      "",
      "all builds valid"
     ],
@@ -5970,7 +5970,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_builds.py",
     "rc": 0,
-    "seconds": 4,
+    "seconds": 2,
     "tail": [
      "rogue/classic-baseline: 5 build pages + README.md",
      "rogue: 27 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
@@ -5983,12 +5983,12 @@
      "warlock/classic-baseline: 4 build pages + README.md",
      "warlock: 24 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "druid/classic-baseline: 7 build pages + README.md",
-     "druid: 23 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs"
+     "druid: 24 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py druid",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py priest",
     "rc": 0,
     "seconds": 0,
     "tail": [
@@ -6000,7 +6000,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_modes.py",
     "rc": 0,
-    "seconds": 2,
+    "seconds": 1,
     "tail": [
      "druid: README.md sections and 3 mode folders written",
      "hunter: README.md sections and 3 mode folders written",
@@ -6016,15 +6016,15 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py druid --write",
+    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py priest --write",
     "rc": 0,
-    "seconds": 169,
+    "seconds": 40,
     "tail": [
-     "| balance-dps -> level-20 build (11/0/0) | +2.0% | +13.3% | +23.6% | +27.8% | +36.0% | +45.4% | +51.5% | +55.7% | +56.1% | +57.0% | +59.5% |",
-     "| balance-dps -> level-30 build (21/0/0) | +2.0% | +13.3% | +20.9% | +27.1% | +37.2% | +46.7% | +53.1% | +56.9% | +57.0% | +57.9% | +60.4% |",
-     "| balance-dps -> level-40 build (31/0/0) | +2.0% | +13.3% | +20.9% | +27.1% | +37.2% | +46.7% | +53.2% | +56.9% | +57.0% | +57.9% | +60.4% |",
-     "| balance-dps -> level-50 build (35/6/0) | +2.0% | +13.3% | +20.9% | +27.1% | +37.2% | +46.7% | +53.1% | +56.7% | +57.5% | +58.5% | +59.4% |",
-     "| balance-dps -> level-60 build (36/2/13) | +2.0% | +13.3% | +20.9% | +27.1% | +37.2% | +46.7% | +53.1% | +56.9% | +57.0% | +57.9% | +60.4% |",
+     "| shadow-dps -> level-20 build (0/0/11) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +56.1% | +71.6% | +72.3% | +72.4% | +72.4% | +72.9% |",
+     "| shadow-dps -> level-30 build (2/0/19) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +55.8% | +57.7% | +72.3% | +72.4% | +72.4% | +72.9% |",
+     "| shadow-dps -> level-40 build (0/0/31) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +56.1% | +71.6% | +72.3% | +72.4% | +72.4% | +72.9% |",
+     "| shadow-dps -> level-50 build (8/0/33) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +56.1% | +71.6% | +72.3% | +72.4% | +72.5% | +72.6% |",
+     "| shadow-dps -> level-60 build (7/11/33) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +56.1% | +71.6% | +72.3% | +72.4% | +72.4% | +72.9% |",
      "",
      "## Reading it",
      "",
@@ -6055,7 +6055,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\compare_effects.py",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
      "druid    buff=8 nerf=20 reworked=0 new=18 removed=13 same=6 unscored=0",
      "hunter   buff=5 nerf=17 reworked=0 new=18 removed=14 same=10 unscored=0",
@@ -6092,7 +6092,7 @@
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote _reference\\launch-checklist.md (293 per-build questions)"
+     "wrote _reference\\launch-checklist.md (295 per-build questions)"
     ],
     "stderr": []
    },

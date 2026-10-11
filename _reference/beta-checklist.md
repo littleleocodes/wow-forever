@@ -44,6 +44,7 @@ Models: resto-heal, balance-dps, feral-cat-dps, feral-bear-tank. Same mob, same 
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 - Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
 - An open-search Balance leveling build: check it while leveling at launch.
+- An open-search Feral Combat leveling build: check it while leveling at launch.
 
 ## Hunter
 
@@ -420,6 +421,7 @@ Models: fury-dw-raid, arms-2h-raid, prot-tank. Same mob, same gear, ~10 kills ea
 - Whether Improved Slam's swing-timer change is real at rank 1; if not, the two Slam points move to Improved Hamstring.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 - Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
+- An open-search Arms leveling build: check it while leveling at launch.
 - An open-search Fury leveling build: check it while leveling at launch.
 - An open-search Protection leveling build: check it while leveling at launch.
 

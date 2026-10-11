@@ -72,18 +72,18 @@ A Smite damage build: Discipline to Penance and Power Infusion (Power in Light: 
 
 ## Rank among our builds and the community simulator's
 
-**2 of 4** for `smite-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 4** for `smite-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`smite-open-raid`](smite-open-raid.md) | ours: hand draft | 21/23/7 | 306 | +0.0% | 583 | -0.2% | 0 s |
-| 2 | **[`smite-discipline-raid`](smite-discipline-raid.md)** | ours: hand draft | 31/17/3 | 303 | -0.9% | 584 | +0.0% | 4 s |
-| 3 | *Smite* | community simulator | - | 300 | -2.1% | 580 | -0.7% | 6 s |
-| 4 | *Smite 31/17/3* | community simulator | - | 300 | -2.1% | 580 | -0.7% | 6 s |
+| 1 | **[`smite-discipline-raid`](smite-discipline-raid.md)** | ours: hand draft | 31/17/3 | 350 | +0.0% | 584 | -0.6% | 7 s |
+| 2 | [`smite-open-raid`](smite-open-raid.md) | ours: hand draft | 21/23/7 | 350 | -0.0% | 588 | +0.0% | 6 s |
+| 3 | *Smite* | community simulator | - | 346 | -1.0% | 580 | -1.3% | 8 s |
+| 4 | *Smite 31/17/3* | community simulator | - | 346 | -1.0% | 580 | -1.3% | 8 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 7 passes, the last 2026-10-08, 16 changes to the base rotation; third-seed check: open winner 311 -> 419 DPS (+34.8%), smite-discipline-raid 302 -> 414 DPS (+37.0%), sim preset: Smite 302 -> 411 DPS (+36.2%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-11, 20 changes to the base rotation; third-seed check: open winner 315 -> 350 DPS (+11.1%), smite-open-raid 320 -> 338 DPS (+5.9%), sim preset: Smite 329 -> 346 DPS (+5.2%), smite-discipline-raid 331 -> 350 DPS (+5.8%)):
   1. insert before the filler: cast Smite (+42.9%, pass 1)
   2. drop: if mana % ≥ 20%: cast Smite (+6.8%, pass 1)
   3. insert at the top: strict sequence: cast Inner Focus; cast Devouring Plague (+1.9%, pass 1)
@@ -100,7 +100,11 @@ A Smite damage build: Discipline to Penance and Power Infusion (Power in Light: 
   14. rank 4 below 15% mana, above: if not Shadow Word: Pain is on the target and time left in the fight ≥ 5: cast Shadow Word: Pain (+0.2%, pass 6)
   15. insert in the middle: if execute phase (E20): cast Shadow Word: Death (+1.0%, pass 7)
   16. threshold 1.25s -> 1.875s: if time left on Holy Fire < 1.25s: cast Holy Fire (+0.6%, pass 7)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 10 passes, the last 2026-10-09, 26 changes to the base rotation; third-seed check: smite-discipline-raid 561 -> 584 DPS (+4.2%), sim preset: Smite 559 -> 580 DPS (+3.9%), smite-open-raid 562 -> 583 DPS (+3.7%)):
+  17. always rank 3 instead of rank 4: cast Penance (+4.8%, pass 8)
+  18. only above 60% mana: cast Smite (+7.3%, pass 8)
+  19. always rank 3 instead of rank 4: if execute phase (E20): cast Shadow Word: Death (+0.6%, pass 8)
+  20. rank 5 below 15% mana, above: cast Smite (+0.2%, pass 8)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 11 passes, the last 2026-10-11, 26 changes to the base rotation; third-seed check: open winner 561 -> 588 DPS (+4.8%), smite-discipline-raid 561 -> 584 DPS (+4.2%), sim preset: Smite 559 -> 580 DPS (+3.9%), smite-open-raid 562 -> 583 DPS (+3.7%)):
   1. rank 4 below 50% mana, above: if mana % ≥ 20%: cast Smite (+8.7%, pass 1)
   2. insert at the top: if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain (+2.1%, pass 1)
   3. always rank 2 instead of rank 4: if mana % ≥ 20% and mana % < 50%: cast Smite (+1.2%, pass 1)
@@ -135,27 +139,29 @@ Before the pull: at -3s: cast Holy Fire.
 | 1 | use every other cooldown when ready | as ready |
 | 2 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain | 3.6 |
 | 3 | strict sequence: cast Inner Focus; cast Devouring Plague | 0.7 |
-| 4 | if time left on Holy Fire < 1.875s: cast Holy Fire | 4.9 |
+| 4 | if time left on Holy Fire < 1.875s: cast Holy Fire | 5.0 |
 | 5 | strict sequence: cast Inner Focus; cast Smite | 0.3 |
 | 6 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5 and mana % < 15%: cast Shadow Word: Pain | 0.1 |
-| 7 | if execute phase (E20): cast Shadow Word: Death | 0.9 |
+| 7 | if execute phase (E20): cast Shadow Word: Death | 0.7 |
 | 8 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5: cast Shadow Word: Pain | 3.6 |
-| 9 | cast Penance | 4.8 |
+| 9 | cast Penance | 4.7 |
 | 10 | if not Shadow Word: Pain is on the target and mana % ≥ 30%: cast Shadow Word: Pain | 3.6 |
-| 11 | cast Smite | 19.5 |
+| 11 | if mana % ≥ 60%: cast Smite | 12.4 |
+| 12 | if mana % < 15%: cast Smite | 1.5 |
+| 13 | cast Smite | 3.2 |
 
-Lines of the simulator's rotation these builds never cast: cast Smite (its condition never held in these fights); cast Shadowform (needs the Shadowform talent).
+Lines of the simulator's rotation these builds never cast: cast Shadowform (needs the Shadowform talent).
 
 Damage by ability:
 
 | Ability | [`smite-discipline-raid`](smite-discipline-raid.md) |
 |---|---|
-| Shadow Word: Pain | 30% |
 | Penance | 28% |
-| Holy Fire | 25% |
-| Smite | 10% |
-| Shadow Word: Death | 3% |
-| Devouring Plague | 3% |
+| Shadow Word: Pain | 26% |
+| Holy Fire | 22% |
+| Smite | 19% |
+| Devouring Plague | 2% |
+| Shadow Word: Death | 2% |
 
 ## Notes
 

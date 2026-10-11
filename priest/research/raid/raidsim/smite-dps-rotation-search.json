@@ -2,8 +2,8 @@
  "dummy": {
   "class": "priest",
   "spec": "smite-dps",
-  "date": "2026-10-08",
-  "commit": "b0f0df3",
+  "date": "2026-10-11",
+  "commit": "2ce8265",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "ui/specs/priest/dps/apls/smite.apl.json",
@@ -11,16 +11,21 @@
   "builds": [
    {
     "label": "open winner",
-    "talents": "505020021302001-025150020320003-50002"
+    "talents": "505030021301001-315151000220003-50002"
    },
    {
-    "label": "smite-discipline-raid",
-    "talents": "505230231305001001-30505101002-3",
+    "label": "smite-open-raid",
+    "talents": "505020021302001-305151000320003-50002",
     "protect_only": true
    },
    {
     "label": "sim preset: Smite",
     "talents": "515330031305001001-30505113002",
+    "protect_only": true
+   },
+   {
+    "label": "smite-discipline-raid",
+    "talents": "505230231305001001-30505101002-3",
     "protect_only": true
    }
   ],
@@ -157,46 +162,87 @@
     "gain_seed2": 0.005723757839163124,
     "candidates": 399,
     "pass": 7
+   },
+   {
+    "round": 17,
+    "change": "always rank 3 instead of rank 4: cast Penance",
+    "gain_seed1": 0.048447390045344596,
+    "gain_seed2": 0.04846112408492642,
+    "candidates": 403,
+    "pass": 8
+   },
+   {
+    "round": 18,
+    "change": "only above 60% mana: cast Smite",
+    "gain_seed1": 0.0730006970801984,
+    "gain_seed2": 0.07306117212309848,
+    "candidates": 399,
+    "pass": 8
+   },
+   {
+    "round": 19,
+    "change": "always rank 3 instead of rank 4: if execute phase (E20): cast Shadow Word: Death",
+    "gain_seed1": 0.005955185643018668,
+    "gain_seed2": 0.005758658044189291,
+    "candidates": 410,
+    "pass": 8
+   },
+   {
+    "round": 20,
+    "change": "rank 5 below 15% mana, above: cast Smite",
+    "gain_seed1": 0.0022641463183552535,
+    "gain_seed2": 0.00226977421024821,
+    "candidates": 414,
+    "pass": 8
    }
   ],
   "final": {
    "dummy": {
     "open winner": {
-     "before": 310.86530564622245,
-     "after": 419.06955713165894,
-     "base": 310.86530564622245,
+     "before": 314.90204985620323,
+     "after": 349.8426860898755,
+     "base": 314.90204985620323,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0176059999996,
-     "oom_after": 0.23630564999245002
+     "oom_before": 0.15287724999990002,
+     "oom_after": 5.955582749992775
     },
-    "smite-discipline-raid": {
-     "before": 302.38418764632553,
-     "after": 414.195851031828,
-     "base": 302.38418764632553,
+    "smite-open-raid": {
+     "before": 319.6210868968953,
+     "after": 338.45699484327355,
+     "base": 319.6210868968953,
      "before_value": null,
      "after_value": null,
-     "oom_before": 2.8862222499149013,
-     "oom_after": 4.300646749538891
+     "oom_before": 0.23630564999245002,
+     "oom_after": 5.117920899618879
     },
     "sim preset: Smite": {
-     "before": 301.7100536370775,
-     "after": 410.9360139140448,
-     "base": 301.7100536370775,
+     "before": 329.1355477965759,
+     "after": 346.23542834876406,
+     "base": 329.1355477965759,
      "before_value": null,
      "after_value": null,
-     "oom_before": 4.000284149894257,
-     "oom_after": 6.03675024948724
+     "oom_before": 6.060241699427482,
+     "oom_after": 8.210418799424634
+    },
+    "smite-discipline-raid": {
+     "before": 330.5554622802307,
+     "after": 349.651422118314,
+     "base": 330.5554622802307,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 4.3010418494783815,
+     "oom_after": 6.844531199351969
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 7
+  "passes": 8
  },
  "raid": {
   "class": "priest",
   "spec": "smite-dps",
-  "date": "2026-10-09",
+  "date": "2026-10-11",
   "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
@@ -204,12 +250,18 @@
   "start": "ui\\specs\\priest\\dps\\apls\\smite.apl.json",
   "builds": [
    {
+    "label": "open winner",
+    "talents": "505030021301001-315151000220003-50002"
+   },
+   {
     "label": "smite-discipline-raid",
-    "talents": "505230231305001001-30505101002-3"
+    "talents": "505230231305001001-30505101002-3",
+    "protect_only": true
    },
    {
     "label": "sim preset: Smite",
-    "talents": "515330031305001001-30505113002"
+    "talents": "515330031305001001-30505113002",
+    "protect_only": true
    },
    {
     "label": "smite-open-raid",
@@ -218,8 +270,7 @@
    }
   ],
   "tuned_on": [
-   "smite-discipline-raid",
-   "sim preset: Smite"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -435,6 +486,15 @@
   ],
   "final": {
    "raid": {
+    "open winner": {
+     "before": 561.1058420197941,
+     "after": 587.892945938558,
+     "base": 561.1058420197941,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 5.382737099990076,
+     "oom_after": 5.382737099990076
+    },
     "smite-discipline-raid": {
      "before": 560.8873030488282,
      "after": 584.2471131890661,
@@ -465,6 +525,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 10
+  "passes": 11
  }
 }
