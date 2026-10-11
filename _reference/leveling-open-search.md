@@ -10,7 +10,7 @@ The fastest leveling build found with no tree rule in each leveling rotation (fi
 | [hunter](../hunter/research/leveling/open-search.md) | melee-dps | [22/5/24](https://talentsforever.com/hunter/60/35200005041002-005-530200230140202-6) | Hybrid Beast Mastery/Survival | 24.02 | +9.2% |
 | [rogue](../rogue/research/leveling/open-search.md) | combat-swords-raid | [21/17/13](https://talentsforever.com/rogue/60/0253201020051-32403301001-03230203-6) | Hybrid Assassination/Combat | 24.59 | +1.5% |
 | [warrior](../warrior/research/leveling/open-search.md) | fury-dw-raid | [17/34/0](https://talentsforever.com/warrior/60/20315213-25053005051010511--6) | Fury | 25.34 | +5.4% |
-| [priest](../priest/research/leveling/open-search.md) | shadow-dps | [18/0/33](https://talentsforever.com/priest/60/01501303131--345002401201202151-6) | Shadow | 25.57 | +1.0% |
+| [priest](../priest/research/leveling/open-search.md) | shadow-dps | [17/2/32](https://talentsforever.com/priest/60/0150112313-2-345001401201202151-6) | Shadow | 25.45 | +0.6% |
 | [rogue](../rogue/research/leveling/open-search.md) | combat-daggers-raid | [22/16/13](https://talentsforever.com/rogue/60/0253201020151-32303301001-30230023-6) | Hybrid Assassination/Combat | 25.85 | +3.1% |
 | [hunter](../hunter/research/leveling/open-search.md) | bm-leveling | [29/18/4](https://talentsforever.com/hunter/60/512021050511024-005355-4-6) | Hybrid Beast Mastery/Marksmanship | 26.09 | +1.9% |
 | [warrior](../warrior/research/leveling/open-search.md) | prot-leveling | [0/20/31](https://talentsforever.com/warrior/60/-3505200005-050331022021111351-6) | Protection | 26.19 | +0.6% |
@@ -24,7 +24,7 @@ The fastest leveling build found with no tree rule in each leveling rotation (fi
 | [shaman](../shaman/research/leveling/open-search.md) | enhancement-dps | [8/33/10](https://talentsforever.com/shaman/60/510101-052030321005112251-05005-6) | Enhancement | 31.69 | -0.7% |
 | [mage](../mage/research/leveling/open-search.md) | arcane-leveling | [28/0/23](https://talentsforever.com/mage/60/23000502310031053--20350031310003002-6) | Hybrid Arcane/Frost | 31.77 | +6.5% |
 | [mage](../mage/research/leveling/open-search.md) | fire-leveling | [1/24/26](https://talentsforever.com/mage/60/1-035500201010331-005502313100030021-6) | Hybrid Fire/Frost | 32.36 | +12.5% |
-| [priest](../priest/research/leveling/open-search.md) | discipline-leveling | [20/0/31](https://talentsforever.com/priest/60/0240130313201--345021401011300051-6) | Shadow | 34.17 | +30.4% |
 | [shaman](../shaman/research/leveling/open-search.md) | elemental-dps | [22/22/7](https://talentsforever.com/shaman/60/5502311300101-055030301021002-052-6) | Hybrid Elemental/Enhancement | 38.16 | -0.3% |
-| [priest](../priest/research/leveling/open-search.md) | holy-leveling | [21/23/7](https://talentsforever.com/priest/60/024013031311101-135050010320003-005002-6) | Hybrid Discipline/Holy | 40.28 | +12.0% |
+| [priest](../priest/research/leveling/open-search.md) | discipline-leveling | [22/0/29](https://talentsforever.com/priest/60/0240130313131--41502050001131204-6) | Hybrid Discipline/Shadow | 42.92 | +19.1% |
+| [priest](../priest/research/leveling/open-search.md) | holy-leveling | [16/17/18](https://talentsforever.com/priest/60/0250030113001-33405000002-3050204010003-6) | Hybrid Holy/Shadow | 43.13 | +20.5% |
 | [druid](../druid/research/leveling/open-search.md) | balance-dps | [38/0/13](https://talentsforever.com/druid/60/5432200115501351--505003-6) | Balance | 46.39 | +2.1% |

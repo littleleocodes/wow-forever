@@ -6,7 +6,7 @@
 
 > 🔬 These are your **raid talents** ([disc-penance-healer](../raid/discipline.md)), taken in the order that levels fastest: the fight lab raced three orders to them (stats model's order: 45 s per kill; own tree first: 45 s per kill; own tree last: 51 s per kill). A model of the beta, to check at launch.
 
-**Leveling as Discipline or as Shadow?** This build takes 45 s per kill (level-weighted, 20-60), [Shadow](../leveling/shadow.md) 26 s: Discipline is about 1.7 times as slow. Your first Discipline point comes at level 10. Level this way if you want to heal dungeons later on the way; otherwise level as Shadow and switch at 60 (a respec at a class trainer).
+**Leveling as Discipline or as Shadow?** This build takes 45 s per kill (level-weighted, 20-60), [Shadow](../leveling/shadow.md) 25 s: Discipline is about 1.8 times as slow. Your first Discipline point comes at level 10. Level this way if you want to heal dungeons later on the way; otherwise level as Shadow and switch at 60 (a respec at a class trainer).
 
 ## How to play
 

@@ -459,14 +459,17 @@
 **Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (parse)** (`priest/research/raid/builds/opt-shadow-dps-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Smite — Leveling (open talent search)** (`priest/research/leveling/builds/smite-open-leveling.md`)
-- [ ] An open-search Smite leveling build: check it while leveling at launch.
+**Smite — Raid (open talent search)** (`priest/research/raid/builds/smite-open-raid.md`)
+- [ ] An open-search Smite build: check it against the community's Smite builds at launch.
+
+**Discipline/Shadow hybrid — Leveling (open talent search)** (`priest/research/leveling/builds/hybrid-discipline-shadow-open-leveling.md`)
+- [ ] An open-search Discipline/Shadow hybrid leveling build: check it while leveling at launch.
+
+**Holy/Shadow hybrid — Leveling (open talent search)** (`priest/research/leveling/builds/hybrid-holy-shadow-open-leveling.md`)
+- [ ] An open-search Holy/Shadow hybrid leveling build: check it while leveling at launch.
 
 **Shadow — Leveling (open talent search)** (`priest/research/leveling/builds/shadow-open-leveling.md`)
 - [ ] An open-search Shadow leveling build: check it while leveling at launch.
-
-**Smite — Raid (open talent search)** (`priest/research/raid/builds/smite-open-raid.md`)
-- [ ] An open-search Smite build: check it against the community's Smite builds at launch.
 
 ### Rogue
 

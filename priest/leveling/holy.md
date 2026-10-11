@@ -6,7 +6,7 @@
 
 > 🔬 These are your **raid talents** ([holy-raid-healer](../raid/holy.md)), taken in the order that levels fastest: the fight lab raced three orders to them (own tree last: 45 s per kill; stats model's order: 47 s per kill; own tree first: 52 s per kill). A model of the beta, to check at launch.
 
-**Leveling as Holy or as Shadow?** This build takes 45 s per kill (level-weighted, 20-60), [Shadow](../leveling/shadow.md) 26 s: Holy is about 1.8 times as slow. The fastest order puts its first point into Holy at level 32: the damage talents come first. Level this way if you want to heal dungeons later on the way; otherwise level as Shadow and switch at 60 (a respec at a class trainer).
+**Leveling as Holy or as Shadow?** This build takes 45 s per kill (level-weighted, 20-60), [Shadow](../leveling/shadow.md) 25 s: Holy is about 1.8 times as slow. The fastest order puts its first point into Holy at level 32: the damage talents come first. Level this way if you want to heal dungeons later on the way; otherwise level as Shadow and switch at 60 (a respec at a class trainer).
 
 ## How to play
 
