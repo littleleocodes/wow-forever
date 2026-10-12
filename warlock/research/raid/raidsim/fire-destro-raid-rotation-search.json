@@ -2,13 +2,36 @@
  "dummy": {
   "class": "warlock",
   "spec": "fire-destro-raid",
-  "date": "2026-10-01",
-  "commit": "40be98e",
+  "date": "2026-10-11",
+  "commit": "2ce8265",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "ui/specs/warlock/dps/apls/destruction.apl.json",
   "start": "ui\\specs\\warlock\\dps\\apls\\destruction.apl.json",
-  "builds": [],
+  "builds": [
+   {
+    "label": "open winner",
+    "talents": "15220020035-2103103001-0550205003"
+   },
+   {
+    "label": "destruction-fire-raid",
+    "talents": "25500010135-0050203001-0550004103",
+    "protect_only": true
+   },
+   {
+    "label": "sim preset: DS/Ruin Pandemic 24/11/16",
+    "talents": "25220010135201-0025003001-05500051",
+    "protect_only": true
+   },
+   {
+    "label": "opt-fire-destro-raid-raid-dps",
+    "talents": "253-0050203001-055030510310025",
+    "protect_only": true
+   }
+  ],
+  "tuned_on": [
+   "open winner"
+  ],
   "iterations": 3000,
   "confirm": 20000,
   "changes": [
@@ -67,18 +90,119 @@
     "gain_seed2": 0.0835,
     "candidates": 4,
     "pass": 4
+   },
+   {
+    "round": 8,
+    "change": "move to the top: if time left on Corruption \u2264 cast time of Corruption: cast Corruption",
+    "gain_seed1": 0.007097252183931202,
+    "gain_seed2": 0.008564611462166916,
+    "candidates": 501,
+    "pass": 5
+   },
+   {
+    "round": 9,
+    "change": "insert before the filler: cast Talisman of Ephemeral Power",
+    "gain_seed1": 0.003363531997114144,
+    "gain_seed2": 0.003061557523187597,
+    "candidates": 501,
+    "pass": 5
+   },
+   {
+    "round": 10,
+    "change": "only above 25% mana: cast Talisman of Ephemeral Power",
+    "gain_seed1": 0.0027557324616966916,
+    "gain_seed2": 0.003032033631469755,
+    "candidates": 508,
+    "pass": 5
+   },
+   {
+    "round": 11,
+    "change": "drop 'mana % \u2265 10%' from the condition: if time left in the fight \u2264 3.5 and mana % \u2265 10%: cast Searing Pain",
+    "gain_seed1": 0.0027370077353743305,
+    "gain_seed2": 0.002737614074526329,
+    "candidates": 519,
+    "pass": 5
+   },
+   {
+    "round": 12,
+    "change": "insert before the filler: cast Eureka!",
+    "gain_seed1": 0.0016396484724763294,
+    "gain_seed2": 0.0015260225926791993,
+    "candidates": 508,
+    "pass": 5
+   },
+   {
+    "round": 13,
+    "change": "drop: if time left in the fight \u2265 15s and mana % \u2264 75%: cast Potion",
+    "gain_seed1": 0.001157184809512657,
+    "gain_seed2": 0.001985429366014202,
+    "candidates": 515,
+    "pass": 5
+   },
+   {
+    "round": 14,
+    "change": "only with 20s or more of the fight left: if time left on Corruption \u2264 cast time of Corruption: cast Corruption",
+    "gain_seed1": 0.0015765895051123024,
+    "gain_seed2": 0.0016603193552542361,
+    "candidates": 490,
+    "pass": 5
+   },
+   {
+    "round": 15,
+    "change": "only with 10s or more of the fight left: if time left on Bane of Agony \u2264 cast time of Bane of Agony: cast Bane of Agony",
+    "gain_seed1": 0.0016777898779050116,
+    "gain_seed2": 0.0017078873175211395,
+    "candidates": 505,
+    "pass": 5
    }
   ],
   "final": {
-   "dummy": {}
+   "dummy": {
+    "open winner": {
+     "before": 624.2000357040013,
+     "after": 627.461573114487,
+     "base": 624.2000357040013,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 1.8518421500000044,
+     "oom_after": 2.5533164999999878
+    },
+    "destruction-fire-raid": {
+     "before": 615.1304499095755,
+     "after": 620.3421075388858,
+     "base": 615.1304499095755,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 2.830135649999974,
+     "oom_after": 5.816577599999926
+    },
+    "sim preset: DS/Ruin Pandemic 24/11/16": {
+     "before": 587.0328145773589,
+     "after": 592.8750056955022,
+     "base": 587.0328145773589,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 2.5327304999999845,
+     "oom_after": 3.0205907499999722
+    },
+    "opt-fire-destro-raid-raid-dps": {
+     "before": 592.1126212751102,
+     "after": 618.6747660606786,
+     "base": 592.1126212751102,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 2.170875349977905,
+     "oom_after": 2.36790249980489
+    }
+   }
   },
   "first_date": "2026-09-27",
-  "passes": 4
+  "passes": 5
  },
  "raid": {
   "class": "warlock",
   "spec": "fire-destro-raid",
-  "date": "2026-10-09",
+  "date": "2026-10-11",
   "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
@@ -86,12 +210,18 @@
   "start": "ui\\specs\\warlock\\dps\\apls\\destruction.apl.json",
   "builds": [
    {
+    "label": "open winner",
+    "talents": "15220020035-2103103001-0550205003"
+   },
+   {
     "label": "destruction-fire-raid",
-    "talents": "25500010135-0050203001-0550004103"
+    "talents": "25500010135-0050203001-0550004103",
+    "protect_only": true
    },
    {
     "label": "sim preset: DS/Ruin Pandemic 24/11/16",
-    "talents": "25220010135201-0025003001-05500051"
+    "talents": "25220010135201-0025003001-05500051",
+    "protect_only": true
    },
    {
     "label": "opt-fire-destro-raid-raid-dps",
@@ -100,8 +230,7 @@
    }
   ],
   "tuned_on": [
-   "destruction-fire-raid",
-   "sim preset: DS/Ruin Pandemic 24/11/16"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -153,40 +282,81 @@
     "gain_seed2": 0.0016232716643505007,
     "candidates": 481,
     "pass": 5
+   },
+   {
+    "round": 7,
+    "change": "only with 10s or more of the fight left: if time left on Immolate \u2264 cast time of Immolate: cast Immolate",
+    "gain_seed1": 0.0018889917134474743,
+    "gain_seed2": 0.001555522420290778,
+    "candidates": 488,
+    "pass": 7
+   },
+   {
+    "round": 8,
+    "change": "threshold 3.5 -> 5.25: if time left in the fight \u2264 3.5: cast Searing Pain",
+    "gain_seed1": 0.0013928915289933563,
+    "gain_seed2": 0.0015001169063983966,
+    "candidates": 503,
+    "pass": 7
+   },
+   {
+    "round": 9,
+    "change": "only above 10% mana: cast Talisman of Ephemeral Power + threshold 10% -> 15%: if mana % \u2265 10%: cast Talisman of Ephemeral Power",
+    "gain_seed1": 0.0026847758017372048,
+    "gain_seed2": 0.0029373399353995744,
+    "candidates": 507,
+    "pass": 7
+   },
+   {
+    "round": 10,
+    "change": "only with 10s or more of the fight left: if time left on Corruption \u2264 cast time of Corruption: cast Corruption + move down below 'if time left on Corruption \u2264 cast time of Corruption and time left in the fight \u2265 10s: cast Corruption': if not Curse of the Elements is up: cast Curse of the Elements",
+    "gain_seed1": 0.0016294083634882384,
+    "gain_seed2": 0.002235931533640212,
+    "candidates": 513,
+    "pass": 7
    }
   ],
   "final": {
    "raid": {
-    "destruction-fire-raid": {
-     "before": 669.3993097124232,
-     "after": 670.8787085571474,
-     "base": 669.3993097124232,
+    "open winner": {
+     "before": 706.9415556492836,
+     "after": 708.6678381071597,
+     "base": 706.9415556492836,
      "before_value": null,
      "after_value": null,
-     "oom_before": 4.054525,
-     "oom_after": 4.054525
+     "oom_before": 1.6983795500000087,
+     "oom_after": 2.1776464000000164
+    },
+    "destruction-fire-raid": {
+     "before": 691.4921534407653,
+     "after": 697.170655606262,
+     "base": 691.4921534407653,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 3.894865049999963,
+     "oom_after": 3.8460373999999775
     },
     "sim preset: DS/Ruin Pandemic 24/11/16": {
-     "before": 640.3177700240482,
-     "after": 641.4100261489316,
-     "base": 640.3177700240482,
+     "before": 660.6089826504103,
+     "after": 666.5537069584543,
+     "base": 660.6089826504103,
      "before_value": null,
      "after_value": null,
-     "oom_before": 2.8396,
-     "oom_after": 2.8396
+     "oom_before": 2.4360820000000336,
+     "oom_after": 2.8747678000000123
     },
     "opt-fire-destro-raid-raid-dps": {
-     "before": 643.6434988280931,
-     "after": 670.776850991637,
-     "base": 643.6434988280931,
+     "before": 663.147155086332,
+     "after": 693.2854657348681,
+     "base": 663.147155086332,
      "before_value": null,
      "after_value": null,
-     "oom_before": 5.052075,
-     "oom_after": 5.052075
+     "oom_before": 4.504600499364362,
+     "oom_after": 4.635618699291368
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 6
+  "passes": 7
  }
 }

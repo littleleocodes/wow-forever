@@ -1,0 +1,260 @@
+{
+ "class": "warlock",
+ "spec": "sb-raid",
+ "build": "shadow-bolt-hybrid-open-raid",
+ "setting": "raid",
+ "date": "2026-10-12",
+ "tank": false,
+ "removal": {
+  "Agonizing Flames": 0.061846876585867516,
+  "Bane": 0.10817930871226444,
+  "Cataclysm": 0.006226870606410362,
+  "Demonic Sacrifice": 0.11630765848218283,
+  "Fel Vitality": 0.011835601781724048,
+  "Improved Bane of Agony": 0.01524249393529764,
+  "Improved Corruption": 0.027300720439498605,
+  "Improved Imp": -0.0,
+  "Improved Life Tap": 0.012222934659004259,
+  "Improved Shadow Bolt": 0.08260628368915979,
+  "Improved Voidwalker": -0.0,
+  "Malediction": 0.003930841412888131,
+  "Malevolence": 0.05010848553684211,
+  "Pandemic": 0.029825518439455023,
+  "Ruin": 0.060651457991738544,
+  "Shadowburn": 0.006049511784630424,
+  "Suppression": 0.04982558307219531,
+  "Unholy Power": -0.0
+ },
+ "free": [
+  "Improved Imp",
+  "Improved Voidwalker",
+  "Unholy Power"
+ ],
+ "kept_for_rotation": [],
+ "active_never_worth": [],
+ "abilities_never_cast": [
+  "Demonic Sacrifice"
+ ],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Improved Imp",
+   "to": "Demonic Embrace",
+   "seed1": 0.00017660771284755405,
+   "seed2": -0.0001978264227190385,
+   "utility": "survival"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Improved Imp",
+   "to": "Demonic Embrace",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 3,
+   "kind": "utility",
+   "from": "Improved Voidwalker",
+   "to": "Demonic Embrace",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 4,
+   "kind": "utility",
+   "from": "Unholy Power",
+   "to": "Demonic Embrace",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 5,
+   "kind": "utility",
+   "from": "Unholy Power",
+   "to": "Demonic Embrace",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 6,
+   "kind": "utility",
+   "from": "Unholy Power",
+   "to": "Demonic Aegis",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 7,
+   "kind": "utility",
+   "from": "Unholy Power",
+   "to": "Demonic Aegis",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  }
+ ],
+ "final_seed3": -0.0003930896275740059,
+ "start": {
+  "Affliction": [
+   [
+    "Improved Life Tap",
+    2
+   ],
+   [
+    "Suppression",
+    5
+   ],
+   [
+    "Improved Corruption",
+    2
+   ],
+   [
+    "Malediction",
+    1
+   ],
+   [
+    "Improved Bane of Agony",
+    2
+   ],
+   [
+    "Pandemic",
+    3
+   ],
+   [
+    "Malevolence",
+    5
+   ]
+  ],
+  "Demonology": [
+   [
+    "Improved Imp",
+    2
+   ],
+   [
+    "Unholy Power",
+    4
+   ],
+   [
+    "Improved Voidwalker",
+    1
+   ],
+   [
+    "Fel Vitality",
+    3
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ]
+  ],
+  "Destruction": [
+   [
+    "Improved Shadow Bolt",
+    5
+   ],
+   [
+    "Bane",
+    5
+   ],
+   [
+    "Cataclysm",
+    1
+   ],
+   [
+    "Ruin",
+    5
+   ],
+   [
+    "Shadowburn",
+    1
+   ],
+   [
+    "Agonizing Flames",
+    3
+   ]
+  ]
+ },
+ "allocation": {
+  "Affliction": [
+   [
+    "Improved Life Tap",
+    2
+   ],
+   [
+    "Suppression",
+    5
+   ],
+   [
+    "Improved Corruption",
+    2
+   ],
+   [
+    "Malediction",
+    1
+   ],
+   [
+    "Improved Bane of Agony",
+    2
+   ],
+   [
+    "Pandemic",
+    3
+   ],
+   [
+    "Malevolence",
+    5
+   ]
+  ],
+  "Demonology": [
+   [
+    "Fel Vitality",
+    3
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ],
+   [
+    "Demonic Embrace",
+    5
+   ],
+   [
+    "Demonic Aegis",
+    2
+   ]
+  ],
+  "Destruction": [
+   [
+    "Improved Shadow Bolt",
+    5
+   ],
+   [
+    "Bane",
+    5
+   ],
+   [
+    "Cataclysm",
+    1
+   ],
+   [
+    "Ruin",
+    5
+   ],
+   [
+    "Shadowburn",
+    1
+   ],
+   [
+    "Agonizing Flames",
+    3
+   ]
+  ]
+ }
+}

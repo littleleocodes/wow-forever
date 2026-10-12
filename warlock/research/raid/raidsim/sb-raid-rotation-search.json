@@ -2,31 +2,40 @@
  "dummy": {
   "class": "warlock",
   "spec": "sb-raid",
-  "date": "2026-10-02",
-  "commit": "40be98e",
+  "date": "2026-10-11",
+  "commit": "2ce8265",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "ui/specs/warlock/dps/apls/ds_ruin.apl.json",
   "start": "ui\\specs\\warlock\\dps\\apls\\ds_ruin.apl.json",
   "builds": [
    {
-    "label": "ml: Destruction",
-    "talents": "252-0050003201-055030510310035",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-bis.gear.json"
-   },
-   {
-    "label": "ml: Hybrid Affliction/Destruction",
-    "talents": "25210020035-1050103001-0550205003",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-hybrid-affliction-destruction-bis.gear.json"
+    "label": "open winner",
+    "talents": "25210020035-0204013001-0550105103"
    },
    {
     "label": "opt-sb-raid-raid-dps",
-    "talents": "25500020035-0050203001-0550005003"
+    "talents": "25500020035-0050203001-0550005003",
+    "protect_only": true
    },
    {
     "label": "sim preset: DS/Ruin Pandemic 24/11/16",
-    "talents": "25220010135201-0025003001-05500051"
+    "talents": "25220010135201-0025003001-05500051",
+    "protect_only": true
+   },
+   {
+    "label": "ds-ruin-raid",
+    "talents": "15500020135-0050203001-0550005003",
+    "protect_only": true
+   },
+   {
+    "label": "destruction-ml-raid",
+    "talents": "253-0050203001-055020510310035",
+    "protect_only": true
    }
+  ],
+  "tuned_on": [
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -54,55 +63,88 @@
     "gain_seed2": 0.08,
     "candidates": 4,
     "pass": 4
+   },
+   {
+    "round": 4,
+    "change": "insert before the filler: cast Talisman of Ephemeral Power",
+    "gain_seed1": 0.006151446360814328,
+    "gain_seed2": 0.005775622962657767,
+    "candidates": 493,
+    "pass": 6
+   },
+   {
+    "round": 5,
+    "change": "only above 25% mana: cast Talisman of Ephemeral Power",
+    "gain_seed1": 0.004130087942337601,
+    "gain_seed2": 0.004441212944615636,
+    "candidates": 500,
+    "pass": 6
+   },
+   {
+    "round": 6,
+    "change": "insert before the filler: cast Eureka!",
+    "gain_seed1": 0.0017565198667701676,
+    "gain_seed2": 0.0021751145850079645,
+    "candidates": 511,
+    "pass": 6
    }
   ],
   "final": {
    "dummy": {
-    "ml: Destruction": {
-     "before": 581.3868103737855,
-     "after": 622.4072108275218,
-     "base": 581.3868103737855,
+    "open winner": {
+     "before": 649.15219327944,
+     "after": 649.132891896779,
+     "base": 649.15219327944,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.32975000000000004,
-     "oom_after": 0.32975000000000004
-    },
-    "ml: Hybrid Affliction/Destruction": {
-     "before": 640.8284272916195,
-     "after": 641.9350062585985,
-     "base": 640.8284272916195,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.50565,
-     "oom_after": 0.50565
+     "oom_before": 0.39513820000000194,
+     "oom_after": 0.33650570000000063
     },
     "opt-sb-raid-raid-dps": {
-     "before": 637.2526138614625,
-     "after": 638.7465533730315,
-     "base": 637.2526138614625,
+     "before": 646.4340710268236,
+     "after": 644.6579353036881,
+     "base": 646.4340710268236,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.300425,
-     "oom_after": 1.300425
+     "oom_before": 0.6505176000000026,
+     "oom_after": 0.9105684999999997
     },
     "sim preset: DS/Ruin Pandemic 24/11/16": {
-     "before": 603.0872005704387,
-     "after": 605.1682905239463,
-     "base": 603.0872005704387,
+     "before": 613.6312018133635,
+     "after": 611.5440689078225,
+     "base": 613.6312018133635,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.10745,
-     "oom_after": 1.10745
+     "oom_before": 0.8102680500000043,
+     "oom_after": 0.6353157500000023
+    },
+    "ds-ruin-raid": {
+     "before": 641.926695311111,
+     "after": 642.5523952804579,
+     "base": 641.926695311111,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.9684719500000032,
+     "oom_after": 1.5225756500000027
+    },
+    "destruction-ml-raid": {
+     "before": 603.3236676562885,
+     "after": 633.89305119934,
+     "base": 603.3236676562885,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.7007174992102007,
+     "oom_after": 0.4431940496365017
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 5
+  "passes": 6
  },
  "raid": {
   "class": "warlock",
   "spec": "sb-raid",
-  "date": "2026-10-09",
+  "date": "2026-10-11",
   "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
@@ -110,12 +152,18 @@
   "start": "ui\\specs\\warlock\\dps\\apls\\ds_ruin.apl.json",
   "builds": [
    {
+    "label": "open winner",
+    "talents": "25210020035-0204013001-0550105103"
+   },
+   {
     "label": "opt-sb-raid-raid-dps",
-    "talents": "25500020035-0050203001-0550005003"
+    "talents": "25500020035-0050203001-0550005003",
+    "protect_only": true
    },
    {
     "label": "sim preset: DS/Ruin Pandemic 24/11/16",
-    "talents": "25220010135201-0025003001-05500051"
+    "talents": "25220010135201-0025003001-05500051",
+    "protect_only": true
    },
    {
     "label": "ds-ruin-raid",
@@ -129,8 +177,7 @@
    }
   ],
   "tuned_on": [
-   "opt-sb-raid-raid-dps",
-   "sim preset: DS/Ruin Pandemic 24/11/16"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -194,45 +241,54 @@
   ],
   "final": {
    "raid": {
-    "opt-sb-raid-raid-dps": {
-     "before": 703.4609137394419,
-     "after": 701.9360084520481,
-     "base": 703.4609137394419,
+    "open winner": {
+     "before": 732.0508884225814,
+     "after": 730.6982470347313,
+     "base": 732.0508884225814,
      "before_value": null,
      "after_value": null,
-     "oom_before": 2.765,
-     "oom_after": 2.765
+     "oom_before": 1.2498996999999958,
+     "oom_after": 1.2498996999999958
+    },
+    "opt-sb-raid-raid-dps": {
+     "before": 727.365348671443,
+     "after": 726.3293545670708,
+     "base": 727.365348671443,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 3.1536873999999746,
+     "oom_after": 3.1536873999999746
     },
     "sim preset: DS/Ruin Pandemic 24/11/16": {
-     "before": 666.9899776966608,
-     "after": 663.5696355205441,
-     "base": 666.9899776966608,
+     "before": 690.0485805577605,
+     "after": 686.2356084352843,
+     "base": 690.0485805577605,
      "before_value": null,
      "after_value": null,
-     "oom_before": 2.27035,
-     "oom_after": 2.27035
+     "oom_before": 2.108304100000027,
+     "oom_after": 2.108304100000027
     },
     "ds-ruin-raid": {
-     "before": 700.6499514359751,
-     "after": 700.7420846858078,
-     "base": 700.6499514359751,
+     "before": 723.6987940319702,
+     "after": 724.6269785025289,
+     "base": 723.6987940319702,
      "before_value": null,
      "after_value": null,
-     "oom_before": 2.9817750000000003,
-     "oom_after": 2.9817750000000003
+     "oom_before": 3.172124649999974,
+     "oom_after": 3.172124649999974
     },
     "destruction-ml-raid": {
-     "before": 655.8568623193418,
-     "after": 691.1335665867695,
-     "base": 655.8568623193418,
+     "before": 679.2361548156731,
+     "after": 711.7208631683964,
+     "base": 679.2361548156731,
      "before_value": null,
      "after_value": null,
-     "oom_before": 3.38955,
-     "oom_after": 3.38955
+     "oom_before": 3.1124045997396204,
+     "oom_after": 3.1124045997396204
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 7
+  "passes": 8
  }
 }

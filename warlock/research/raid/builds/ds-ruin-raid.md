@@ -67,28 +67,32 @@ Allocation adopted on 2026-09-26 from `opt-sb-raid-raid-dps`, the best build in 
 
 ## Rank among our builds and the community simulator's
 
-**2 of 10** for `sb-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 11** for `sb-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 638 | +0.0% | 726 | +0.0% | 1 s |
-| 2 | **[`ds-ruin-raid`](ds-ruin-raid.md)** | ours: hand draft | 22/11/18 | 635 | -0.5% | 725 | -0.2% | 1 s |
-| 3 | [`destruction-ml-raid`](destruction-ml-raid.md) | ours: hand draft | 10/11/30 | 626 | -1.8% | 710 | -2.2% | 1 s |
-| 4 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 605 | -5.1% | 686 | -5.5% | 1 s |
-| 5 | *DS/Ruin* | community simulator | - | 595 | -6.6% | 676 | -6.9% | 1 s |
-| 6 | *Shadow and Flame 13/11/27* | community simulator | - | 552 | -13.4% | 623 | -14.3% | 1 s |
-| 7 | *Deep Affliction 35/0/16* | community simulator | - | 528 | -17.3% | 589 | -18.8% | 1 s |
-| 8 | *Demonic Pact 2/31/18* | community simulator | - | 523 | -18.0% | 595 | -18.1% | 0 s |
-| 9 | *Affliction* | community simulator | - | 520 | -18.4% | 581 | -20.0% | 1 s |
-| 10 | *Demonic Pact* | community simulator | - | 517 | -19.0% | 586 | -19.3% | 0 s |
+| 1 | [`shadow-bolt-hybrid-open-raid`](shadow-bolt-hybrid-open-raid.md) | ours: hand draft | 20/11/20 | 649 | +0.0% | 731 | +0.0% | 0 s |
+| 2 | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 646 | -0.6% | 726 | -0.7% | 1 s |
+| 3 | **[`ds-ruin-raid`](ds-ruin-raid.md)** | ours: hand draft | 22/11/18 | 642 | -1.1% | 725 | -0.9% | 2 s |
+| 4 | [`destruction-ml-raid`](destruction-ml-raid.md) | ours: hand draft | 10/11/30 | 634 | -2.3% | 710 | -2.9% | 0 s |
+| 5 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 612 | -5.7% | 686 | -6.2% | 1 s |
+| 6 | *DS/Ruin* | community simulator | - | 602 | -7.3% | 676 | -7.5% | 1 s |
+| 7 | *Shadow and Flame 13/11/27* | community simulator | - | 557 | -14.3% | 623 | -14.8% | 1 s |
+| 8 | *Deep Affliction 35/0/16* | community simulator | - | 534 | -17.7% | 589 | -19.4% | 1 s |
+| 9 | *Demonic Pact 2/31/18* | community simulator | - | 530 | -18.4% | 595 | -18.7% | 0 s |
+| 10 | *Affliction* | community simulator | - | 526 | -19.0% | 581 | -20.5% | 1 s |
+| 11 | *Demonic Pact* | community simulator | - | 523 | -19.5% | 586 | -19.8% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 5 passes, the last 2026-10-02, 3 changes to the base rotation; third-seed check: ml: Destruction 581 -> 622 DPS (+7.1%), ml: Hybrid Affliction/Destruction 641 -> 642 DPS (+0.2%), opt-sb-raid-raid-dps 637 -> 639 DPS (+0.2%), sim preset: DS/Ruin Pandemic 24/11/16 603 -> 605 DPS (+0.3%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 6 passes, the last 2026-10-11, 6 changes to the base rotation; third-seed check: open winner 649 -> 649 DPS (-0.0%), opt-sb-raid-raid-dps 646 -> 645 DPS (-0.3%), sim preset: DS/Ruin Pandemic 24/11/16 614 -> 612 DPS (-0.3%), ds-ruin-raid 642 -> 643 DPS (+0.1%), destruction-ml-raid 603 -> 634 DPS (+5.1%)):
   1. move to the top: if not Curse of the Elements is up: cast Curse of the Elements (+0.3%, pass 1)
   2. only with 20s or more of the fight left: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.3%, pass 1)
   3. spell probe: insert before the filler: cast Conflagrate (+8.0%, pass 4)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 7 passes, the last 2026-10-09, 7 changes to the base rotation; third-seed check: opt-sb-raid-raid-dps 703 -> 702 DPS (-0.2%), sim preset: DS/Ruin Pandemic 24/11/16 667 -> 664 DPS (-0.5%), ds-ruin-raid 701 -> 701 DPS (+0.0%), destruction-ml-raid 656 -> 691 DPS (+5.4%)):
+  4. insert before the filler: cast Talisman of Ephemeral Power (+0.6%, pass 6)
+  5. only above 25% mana: cast Talisman of Ephemeral Power (+0.4%, pass 6)
+  6. insert before the filler: cast Eureka! (+0.2%, pass 6)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 8 passes, the last 2026-10-11, 7 changes to the base rotation; third-seed check: open winner 732 -> 731 DPS (-0.2%), opt-sb-raid-raid-dps 727 -> 726 DPS (-0.1%), sim preset: DS/Ruin Pandemic 24/11/16 690 -> 686 DPS (-0.6%), ds-ruin-raid 724 -> 725 DPS (+0.1%), destruction-ml-raid 679 -> 712 DPS (+4.8%)):
   1. threshold 10% -> 5%: if mana % < 10%: cast Life Tap (+0.4%, pass 1)
   2. move to the top: if not Curse of the Elements is up: cast Curse of the Elements (+0.3%, pass 1)
   3. only with 20s or more of the fight left: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.2%, pass 1)
@@ -111,7 +115,9 @@ Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 | 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
 | 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.3 |
 | 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
-| 11 | cast Shadow Bolt | 14.3 |
+| 11 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready |
+| 12 | cast Eureka! | 0.7 |
+| 13 | cast Shadow Bolt | 14.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Conflagrate (needs the Conflagrate talent).
 
@@ -123,7 +129,7 @@ Damage by ability:
 | Bane of Agony | 18% |
 | Corruption | 17% |
 | Immolate | 11% |
-| Searing Pain | 0% |
+| Searing Pain | 1% |
 
 ## Notes
 

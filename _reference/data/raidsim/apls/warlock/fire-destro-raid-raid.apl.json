@@ -136,7 +136,7 @@
       },
       "rhs": {
        "const": {
-        "val": "3.5"
+        "val": "5.25"
        }
       }
      }
@@ -146,7 +146,8 @@
       "spellId": 17923
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-11: changed or added by the rotation search (see fire-destro-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -212,6 +213,54 @@
   {
    "action": {
     "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpLe",
+         "lhs": {
+          "dotRemainingTime": {
+           "spellId": {
+            "spellId": 25311
+           }
+          }
+         },
+         "rhs": {
+          "spellCastTime": {
+           "spellId": {
+            "spellId": 25311
+           }
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "10s"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 25311
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-11: changed or added by the rotation search (see fire-destro-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
      "not": {
       "val": {
        "auraIsActive": {
@@ -235,50 +284,41 @@
   {
    "action": {
     "condition": {
-     "cmp": {
-      "op": "OpLe",
-      "lhs": {
-       "dotRemainingTime": {
-        "spellId": {
-         "spellId": 25311
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpLe",
+         "lhs": {
+          "dotRemainingTime": {
+           "spellId": {
+            "spellId": 25309
+           }
+          }
+         },
+         "rhs": {
+          "spellCastTime": {
+           "spellId": {
+            "spellId": 25309
+           }
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "10s"
+          }
+         }
         }
        }
-      },
-      "rhs": {
-       "spellCastTime": {
-        "spellId": {
-         "spellId": 25311
-        }
-       }
-      }
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 25311
-     }
-    }
-   }
-  },
-  {
-   "action": {
-    "condition": {
-     "cmp": {
-      "op": "OpLe",
-      "lhs": {
-       "dotRemainingTime": {
-        "spellId": {
-         "spellId": 25309
-        }
-       }
-      },
-      "rhs": {
-       "spellCastTime": {
-        "spellId": {
-         "spellId": 25309
-        }
-       }
-      }
+      ]
      }
     },
     "castSpell": {
@@ -286,7 +326,8 @@
       "spellId": 25309
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-11: changed or added by the rotation search (see fire-destro-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -294,9 +335,22 @@
      "spellId": {
       "itemId": 18820
      }
+    },
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "currentManaPercent": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "15%"
+       }
+      }
+     }
     }
    },
-   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see fire-destro-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-10-11: changed or added by the rotation search (see fire-destro-raid-rotation-search.json)"
   },
   {
    "action": {

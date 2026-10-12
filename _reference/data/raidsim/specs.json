@@ -273,7 +273,7 @@
         "mhImbueId": 25122,
         "extraMhImbueId": 13603
       },
-      "builds": ["destruction-fire-raid", "opt-fire-destro-raid-raid-dps"]
+      "builds": ["destruction-fire-raid", "opt-fire-destro-raid-raid-dps", "shadow-bolt-hybrid-fire-open-raid"]
     },
     "sb-raid": {
       "apl_opt_raid": "_reference/data/raidsim/apls/warlock/sb-raid-raid.apl.json",
@@ -307,7 +307,7 @@
         "mhImbueId": 25122,
         "extraMhImbueId": 13603
       },
-      "builds": ["ds-ruin-raid", "opt-sb-raid-raid-dps", "destruction-ml-raid"]
+      "builds": ["ds-ruin-raid", "opt-sb-raid-raid-dps", "destruction-ml-raid", "shadow-bolt-hybrid-open-raid"]
     },
     "demonology-raid": {
       "apl_opt_raid": "_reference/data/raidsim/apls/warlock/demonology-raid-raid.apl.json",

@@ -14,10 +14,15 @@ The best build found with no tree rule in each damage rotation, in a full raid, 
 | [hunter](../hunter/research/raid/family-search.md) | mm-lonewolf-raid | [5/41/5](https://talentsforever.com/hunter/60/5-0053352511523051-5-6) | Marksmanship | 897.7 | +0.1% |
 | [hunter](../hunter/research/raid/family-search.md) | mm-raid | [7/39/5](https://talentsforever.com/hunter/60/502-0053252501523051-5-6) | Marksmanship | 880.9 | +9.3% |
 | [hunter](../hunter/research/raid/family-search.md) | bm-raid | [27/21/3](https://talentsforever.com/hunter/60/522102051500022-00530503005-3-6) | Hybrid Beast Mastery/Marksmanship | 855.0 | +1.4% |
+| [warlock](../warlock/research/raid/family-search.md) | demonology-raid | [2/31/18](https://talentsforever.com/warlock/60/011-0025003031220301351-0550005003-6) | Demonology | 832.1 | +0.0% |
+| [warlock](../warlock/research/raid/family-search.md) | affliction-raid | [30/0/21](https://talentsforever.com/warlock/60/2525002013500005--0550305003-6) | Affliction | 763.0 | +0.3% |
 | [shaman](../shaman/research/raid/family-search.md) | enhancement-dps | [19/32/0](https://talentsforever.com/shaman/60/500533102-055030021005102251--6) | Enhancement | 739.2 | +0.0% |
 | [rogue](../rogue/research/raid/family-search.md) | combat-daggers-raid | [16/33/2](https://talentsforever.com/rogue/60/00530310301-30531300001515231-002-6) | Combat | 735.4 | +0.0% |
+| [warlock](../warlock/research/raid/family-search.md) | sb-raid | [20/11/20](https://talentsforever.com/warlock/60/25210020035-0204013001-0550105103-6) | Hybrid Affliction/Destruction | 731.1 | +0.6% |
 | [rogue](../rogue/research/raid/family-search.md) | assassination-raid | [21/28/2](https://talentsforever.com/rogue/60/00530310311301-311333010015142-002-6) | Hybrid Assassination/Combat | 717.9 | +1.5% |
 | [rogue](../rogue/research/raid/family-search.md) | combat-swords-raid | [18/33/0](https://talentsforever.com/rogue/60/005303103003-32403300001515231--6) | Combat | 716.1 | +1.8% |
+| [warlock](../warlock/research/raid/family-search.md) | fire-destro-raid | [20/11/20](https://talentsforever.com/warlock/60/15220020035-2103103001-0550205003-6) | Hybrid Affliction/Destruction | 709.6 | +1.8% |
+| [warlock](../warlock/research/raid/family-search.md) | incinerate-raid | [20/11/20](https://talentsforever.com/warlock/60/25300020035-0105103001-0550205003-6) | Hybrid Affliction/Destruction | 703.3 | +4.7% |
 | [druid](../druid/research/raid/family-search.md) | feral-cat-dps | [9/33/9](https://talentsforever.com/druid/60/050022-45100032021031212051-144-6) | Feral Combat | 698.2 | +1.0% |
 | [priest](../priest/research/raid/family-search.md) | shadow-dps | [18/0/33](https://talentsforever.com/priest/60/005301221103--540021501201301251-6) | Shadow | 697.5 | -0.0% |
 | [mage](../mage/research/raid/family-search.md) | arcane-dps | [32/12/7](https://talentsforever.com/mage/60/150005123100311531-132500001-1051-6) | Arcane | 696.4 | +0.3% |
