@@ -379,6 +379,8 @@ Models: sb-raid, affliction-raid, fire-destro-raid, affliction-leveling. Same mo
 - A derived Affliction leveling build: check it while leveling at launch.
 - A derived Demonology leveling build: check it while leveling at launch.
 - A derived Destruction leveling build: check it while leveling at launch.
+- An open-search Affliction-Demonology leveling build: check it while leveling at launch.
+- An open-search Shadow Bolt hybrid leveling build: check it while leveling at launch.
 
 ## Warrior
 

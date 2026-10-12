@@ -4,7 +4,9 @@
 
 *Dots with a Voidwalker tanking: the classic warlock leveling split.* (a hybrid: Affliction/Demonology).
 
-**[Leveling — Affliction DoTs with a Voidwalker](../research/leveling/builds/leveling-affliction.md)** (23/26/2) — [open the talent tree](https://talentsforever.com/warlock/60/20530020135011-20050302312110213-2-6)
+**[Affliction-Demonology — Leveling](../research/leveling/builds/affliction-demonology-open-leveling.md)** (27/24/0) — [open the talent tree](https://talentsforever.com/warlock/60/2345002013400102-00152312012102013--6)
+
+> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (leveling-affliction), which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to play
 
@@ -54,48 +56,46 @@ One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
-| 10-11 | Improved Life Tap (Affliction) | 2 |
-| 12-16 | Improved Corruption (Affliction) | 5 |
-| 17-19 | Malediction (Affliction) | 3 |
+| 10-13 | Improved Corruption (Affliction) | 4 |
+| 14 | Suppression (Affliction) | 1 |
+| 15-19 | Malediction (Affliction) | 5 |
 | 20 | Amplify Curse (Affliction) | 1 |
 | 21-22 | Improved Bane of Agony (Affliction) | 2 |
-| 23-24 | Pandemic (Affliction) | 2 |
-| 25-26 | Malevolence (Affliction) | 2 |
-| 27 | Pandemic (Affliction) | 1 |
-| 28-29 | Malevolence (Affliction) | 2 |
+| 23-25 | Pandemic (Affliction) | 3 |
+| 26 | Suppression (Affliction) | 1 |
+| 27 | Malevolence (Affliction) | 1 |
+| 28 | Suppression (Affliction) | 1 |
+| 29 | Malevolence (Affliction) | 1 |
 | 30 | Siphon Life (Affliction) | 1 |
-| 31 | Malevolence (Affliction) | 1 |
-| 32-33 | Improved Health Funnel (Demonology) | 2 |
-| 34-36 | Unholy Power (Demonology) | 3 |
-| 37 | Demonic Energies (Demonology) | 1 |
-| 38-40 | Improved Voidwalker (Demonology) | 3 |
-| 41 | Unholy Power (Demonology) | 1 |
-| 42-43 | Master Summoner (Demonology) | 2 |
-| 44 | Unholy Power (Demonology) | 1 |
-| 45-46 | Improved Sayaad (Demonology) | 2 |
-| 47 | Fel Domination (Demonology) | 1 |
-| 48 | Improved Sayaad (Demonology) | 1 |
-| 49 | Demonic Energies (Demonology) | 1 |
-| 50 | Decimation (Demonology) | 1 |
+| 31-32 | Malevolence (Affliction) | 2 |
+| 33-37 | Unholy Power (Demonology) | 5 |
+| 38-39 | Improved Life Tap (Affliction) | 2 |
+| 40-41 | Shadow Mastery (Affliction) | 2 |
+| 42 | Demonic Embrace (Demonology) | 1 |
+| 43-44 | Demonic Aegis (Demonology) | 2 |
+| 45-47 | Improved Voidwalker (Demonology) | 3 |
+| 48 | Fel Vitality (Demonology) | 1 |
+| 49-50 | Demonic Energies (Demonology) | 2 |
 | 51 | Demonic Sacrifice (Demonology) | 1 |
-| 52 | Soul Link (Demonology) | 1 |
-| 53-55 | Demonic Knowledge (Demonology) | 3 |
-| 56 | Curse of Exhaustion (Affliction) | 1 |
-| 57-58 | Destructive Reach (Destruction) | 2 |
-| 59-60 | Improved Felhunter (Demonology) | 2 |
+| 52 | Decimation (Demonology) | 1 |
+| 53-54 | Demonic Brand (Demonology) | 2 |
+| 55-56 | Master Summoner (Demonology) | 2 |
+| 57 | Soul Link (Demonology) | 1 |
+| 58-60 | Demonic Knowledge (Demonology) | 3 |
 
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
-| 20 | 31 |
+| 20 | 32 |
 | 30 | 36 |
-| 40 | 43 |
-| 50 | 44 |
-| 60 | 41 |
+| 40 | 42 |
+| 50 | 43 |
+| 60 | 40 |
 
 ## Other builds of this spec
 
+- [Leveling — Affliction DoTs with a Voidwalker](../research/leveling/builds/leveling-affliction.md) (23/26/2, 40 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/warlock/60/20530020135011-20050302312110213-2-6)
 - [Affliction-Demonology (optimized)](../research/leveling/builds/opt-affliction-leveling-leveling-st.md) (27/24/0, 41 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/warlock/60/0555002013300102-03552310010000013--6)
 - [Affliction-Demonology (optimized, AoE pulls)](../research/leveling/builds/opt-affliction-leveling-leveling-aoe.md) (27/24/0) — [open the talent tree](https://talentsforever.com/warlock/60/2555002013200002-00542302012010013--6)
 

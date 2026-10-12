@@ -5874,7 +5874,7 @@
   }
  },
  "last_run": {
-  "date": "2026-10-12T00:55:00",
+  "date": "2026-10-12T12:28:30",
   "classes": [
    "warlock"
   ],
@@ -5887,7 +5887,7 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 99,
+  "seconds": 94,
   "refresh": null,
   "regen_log": [
    {
@@ -5980,7 +5980,7 @@
      "mage/classic-baseline: 7 build pages + README.md",
      "mage: 28 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "warlock/classic-baseline: 4 build pages + README.md",
-     "warlock: 26 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
+     "warlock: 28 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "druid/classic-baseline: 7 build pages + README.md",
      "druid: 24 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs"
     ],
@@ -6017,7 +6017,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py warlock --write",
     "rc": 0,
-    "seconds": 88,
+    "seconds": 84,
     "tail": [
      "| affliction-leveling -> level-20 build (11/0/0) | +0.3% | +2.3% | +4.6% | +6.9% | +16.6% | +18.0% | +19.9% | +21.0% | +21.7% | +22.1% | +23.2% |",
      "| affliction-leveling -> level-30 build (21/0/0) | +0.3% | +2.3% | +4.6% | +6.9% | +16.6% | +18.0% | +19.9% | +21.0% | +21.7% | +22.1% | +23.2% |",
@@ -6091,7 +6091,7 @@
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote _reference\\launch-checklist.md (298 per-build questions)"
+     "wrote _reference\\launch-checklist.md (300 per-build questions)"
     ],
     "stderr": []
    },

@@ -19,6 +19,8 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 | [Affliction — Leveling (derived)](builds/affliction-leveling.md) 🔬 | 35/6/10 | DPS |
 | [Demonology — Leveling (derived)](builds/demonology-leveling.md) 🔬 | 21/30/0 | DPS |
 | [Destruction — Leveling (derived)](builds/destruction-leveling.md) 🔬 | 21/0/30 | DPS |
+| [Affliction-Demonology — Leveling (open talent search)](builds/affliction-demonology-open-leveling.md) 🔬 | 27/24/0 | DPS |
+| [Shadow Bolt hybrid — Leveling (open talent search)](builds/shadow-bolt-hybrid-open-leveling.md) 🔬 | 29/10/12 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

@@ -723,6 +723,12 @@
 **Shadow Bolt hybrid — Raid (open talent search)** (`warlock/research/raid/builds/shadow-bolt-hybrid-open-raid.md`)
 - [ ] An open-search Shadow Bolt hybrid build: check it against the community's Shadow Bolt hybrid builds at launch.
 
+**Affliction-Demonology — Leveling (open talent search)** (`warlock/research/leveling/builds/affliction-demonology-open-leveling.md`)
+- [ ] An open-search Affliction-Demonology leveling build: check it while leveling at launch.
+
+**Shadow Bolt hybrid — Leveling (open talent search)** (`warlock/research/leveling/builds/shadow-bolt-hybrid-open-leveling.md`)
+- [ ] An open-search Shadow Bolt hybrid leveling build: check it while leveling at launch.
+
 ### Warrior
 
 **Fury — Dual Wield (simulator winner adopted 2026-09-26)** (`warrior/research/raid/builds/fury-dw-raid.md`)
