@@ -2,12 +2,19 @@
  "class": "priest",
  "spec": "holy-heal",
  "build": "holy-raid-healer",
- "date": "2026-09-27",
+ "builds": [
+  "holy-raid-healer",
+  "priest-holy-winner-1",
+  "disc-penance-healer"
+ ],
+ "date": "2026-10-12",
  "runs": 60,
  "confirm": 200,
  "tables": {
   "HOT_REFRESH_DEFICIT": 0.2,
-  "GROUP_HEAL_MIN": 2
+  "EMERGENCY": 0.2,
+  "GROUP_HEAL_MIN": 2,
+  "POTION_BELOW": 0.4
  },
  "defaults": {
   "DOWNRANK": true,
@@ -21,17 +28,33 @@
  "changes": [
   {
    "round": 1,
-   "change": "GROUP_HEAL_MIN 3 -> 2",
-   "gain_seeds1": 0.022531259026946637,
-   "gain_seeds2": 0.032958647850344525
+   "change": "POTION_BELOW 0.65 -> 0.4",
+   "gain_seeds1": 0.02095283293098804,
+   "gain_seeds2": 0.020237733441981653,
+   "worst_build_seeds2": 0.013351591920575112
   },
   {
    "round": 2,
-   "change": "HOT_REFRESH_DEFICIT 0.1 -> 0.2",
-   "gain_seeds1": 0.02937971669558892,
-   "gain_seeds2": 0.01858662239767428
+   "change": "EMERGENCY 0.35 -> 0.2",
+   "gain_seeds1": 0.010595384784333861,
+   "gain_seeds2": 0.009802051096394315,
+   "worst_build_seeds2": 0.005252889701560681
   }
  ],
- "capacity_before": 0.5934033203125001,
- "capacity_after": 0.6150170898437499
+ "capacity_before": 0.67328857421875,
+ "capacity_after": 0.6829052734375001,
+ "capacity_by_build": {
+  "holy-raid-healer": [
+   0.67328857421875,
+   0.6829052734375001
+  ],
+  "priest-holy-winner-1": [
+   0.67424072265625,
+   0.68909423828125
+  ],
+  "disc-penance-healer": [
+   0.57959716796875,
+   0.59787841796875
+  ]
+ }
 }

@@ -1,0 +1,340 @@
+{
+ "class": "priest",
+ "spec": "Holy",
+ "date": "2026-10-12",
+ "cycles": [
+  {
+   "cycle": 1,
+   "winner": {
+    "allocation": {
+     "Discipline": [
+      [
+       "Power in Light",
+       1
+      ],
+      [
+       "Twin Disciplines",
+       5
+      ],
+      [
+       "Silent Resolve",
+       1
+      ],
+      [
+       "Improved Power Word: Shield",
+       3
+      ],
+      [
+       "Mental Agility",
+       2
+      ],
+      [
+       "Inner Focus",
+       1
+      ],
+      [
+       "Meditation",
+       3
+      ],
+      [
+       "Mental Strength",
+       4
+      ],
+      [
+       "Penance",
+       1
+      ]
+     ],
+     "Holy": [
+      [
+       "Improved Renew",
+       1
+      ],
+      [
+       "Holy Specialization",
+       4
+      ],
+      [
+       "Divine Fury",
+       5
+      ],
+      [
+       "Holy Nova",
+       1
+      ],
+      [
+       "Blessed Recovery",
+       2
+      ],
+      [
+       "Inspiration",
+       3
+      ],
+      [
+       "Improved Healing",
+       3
+      ],
+      [
+       "Searing Light",
+       1
+      ],
+      [
+       "Litany of Light",
+       2
+      ],
+      [
+       "Spiritual Guidance",
+       5
+      ],
+      [
+       "Spiritual Healing",
+       3
+      ]
+     ],
+     "Shadow": []
+    },
+    "split": "21/30/0",
+    "dps": 0.6722,
+    "se": 0.002,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "21/30/0",
+    "dps": 0.6681,
+    "se": 0.0019,
+    "differs": [
+     [
+      "Blessed Recovery",
+      1
+     ],
+     [
+      "Blessed Recovery",
+      2
+     ],
+     [
+      "Holy Nova",
+      1
+     ],
+     [
+      "Holy Precision",
+      1
+     ],
+     [
+      "Holy Reach",
+      1
+     ],
+     [
+      "Holy Specialization",
+      4
+     ],
+     [
+      "Holy Specialization",
+      5
+     ],
+     [
+      "Mental Agility",
+      2
+     ],
+     [
+      "Mental Agility",
+      3
+     ],
+     [
+      "Mental Strength",
+      2
+     ],
+     [
+      "Mental Strength",
+      4
+     ],
+     [
+      "Power in Light",
+      1
+     ],
+     [
+      "Searing Light",
+      1
+     ],
+     [
+      "Soul Warding",
+      1
+     ],
+     [
+      "Spell Warding",
+      1
+     ],
+     [
+      "Spirit of Redemption",
+      1
+     ],
+     [
+      "Spiritual Guidance",
+      4
+     ],
+     [
+      "Spiritual Guidance",
+      5
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0062,
+   "runs": [
+    {
+     "entry": "heal",
+     "run": 1,
+     "simulated": 2613,
+     "best_screen": 0.6957,
+     "best_split": "21/30/0",
+     "best_stage1_gap": -0.0038,
+     "agrees_with_winner": false
+    },
+    {
+     "entry": "heal",
+     "run": 2,
+     "simulated": 2615,
+     "best_screen": 0.6896,
+     "best_split": "21/30/0",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "heal",
+     "run": 3,
+     "simulated": 2614,
+     "best_screen": 0.6957,
+     "best_split": "21/30/0",
+     "best_stage1_gap": -0.0076,
+     "agrees_with_winner": false
+    },
+    {
+     "entry": "heal",
+     "run": 4,
+     "simulated": 2608,
+     "best_screen": 0.6896,
+     "best_split": "21/30/0",
+     "best_stage1_gap": -0.0227,
+     "agrees_with_winner": false
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 60,
+     "seed": 2,
+     "dps": [
+      0.6713,
+      0.6713,
+      0.6713,
+      0.6688,
+      0.6675,
+      0.6662,
+      0.6662,
+      0.6662,
+      0.6662,
+      0.6662,
+      0.6662,
+      0.6662,
+      0.6662,
+      0.6662,
+      0.6662,
+      0.6637,
+      0.6624,
+      0.6624,
+      0.6561,
+      0.6561,
+      0.6561,
+      0.6561,
+      0.6561,
+      0.6561
+     ]
+    },
+    {
+     "iterations": 120,
+     "seed": 3,
+     "dps": [
+      0.6757,
+      0.6681,
+      0.6675,
+      0.6675,
+      0.6675
+     ]
+    },
+    {
+     "iterations": 240,
+     "seed": 4,
+     "dps": [
+      0.6722,
+      0.6681
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 224,
+     "best_gap": 0.0056,
+     "best_move": "2 Holy Specialization -> Improved Renew",
+     "raced": [
+      "2 Holy Specialization -> Improved Renew",
+      "1 Blessed Recovery -> Holy Specialization",
+      "1 Searing Light -> Holy Specialization",
+      "1 Holy Nova -> Holy Specialization"
+     ],
+     "confirmed_gap": -0.0014
+    }
+   ],
+   "important_features": [
+    {
+     "feature": "Meditation",
+     "importance": 0.3539
+    },
+    {
+     "feature": "Discipline points",
+     "importance": 0.2132
+    },
+    {
+     "feature": "Mental Strength",
+     "importance": 0.1258
+    },
+    {
+     "feature": "Shadow points",
+     "importance": 0.0986
+    },
+    {
+     "feature": "Penance",
+     "importance": 0.0414
+    },
+    {
+     "feature": "Twilight Focus",
+     "importance": 0.0409
+    },
+    {
+     "feature": "Inner Focus",
+     "importance": 0.0388
+    },
+    {
+     "feature": "Spirit Tap",
+     "importance": 0.0147
+    },
+    {
+     "feature": "Improved Healing",
+     "importance": 0.011
+    },
+    {
+     "feature": "Holy points",
+     "importance": 0.0101
+    },
+    {
+     "feature": "Litany of Light",
+     "importance": 0.0097
+    },
+    {
+     "feature": "Spiritual Healing",
+     "importance": 0.008
+    }
+   ],
+   "simulated_builds": 10711,
+   "minutes": 67.0,
+   "policy_changed": true
+  }
+ ]
+}
