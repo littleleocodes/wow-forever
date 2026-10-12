@@ -1,21 +1,21 @@
-# Beast-Marks — Leveling (open talent search) — 29/18/4
+# Beast-Marks — Leveling (open talent search) — 28/18/5
 
 *[Hunter](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 29/18/4 (Beast Mastery / Marksmanship / Survival) |
+| **Build** | 28/18/5 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70291 (2026-10-08 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Beast-Marks (a Beast Mastery/Marksmanship hybrid) leveling build the open leveling search found on 2026-10-07: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the bm-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (bm-leveling). +1.9% faster per kill than beast-mastery-leveling, the fastest of our leveling builds in that race.
+The Beast-Marks (a Beast Mastery/Marksmanship hybrid) leveling build the open leveling search found on 2026-10-12: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the bm-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (bm-leveling). +1.8% faster per kill than beast-mastery-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
-### Beast Mastery (29)
+### Beast Mastery (28)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -29,7 +29,7 @@ The Beast-Marks (a Beast Mastery/Marksmanship hybrid) leveling build the open le
 | **Summon Hawk** | 1/1 | **NEW** | Command a hawk to dive-bomb your targeted enemy, dealing 32 plus 5% of your Ranged Attack Power Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot. |
 | **Spirit Bond** | 1/2 | unchanged | While your pet is active, you and your pet will regenerate 1% of total health every 10 sec. |
 | **Bestial Discipline** | 2/2 | changed | Increases the Focus regeneration of your pets by 20% and allows 50% of your Mana regeneration to continue while casting. |
-| **Frenzy** | 4/5 | unchanged | Gives your pet a 80% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike. |
+| **Frenzy** | 3/5 | unchanged | Gives your pet a 60% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike. |
 
 ### Marksmanship (18)
 
@@ -40,11 +40,11 @@ The Beast-Marks (a Beast Mastery/Marksmanship hybrid) leveling build the open le
 | **Efficiency** | 5/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
 
-### Survival (4)
+### Survival (5)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Tracking** | 4/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 4%. |
+| **Improved Tracking** | 5/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 5%. |
 
 ## Leveling order
 
@@ -62,23 +62,23 @@ The Beast-Marks (a Beast Mastery/Marksmanship hybrid) leveling build the open le
 | 32 | Beast Mastery | Bestial Discipline | 1 | 23/0/0 |
 | 33 | Beast Mastery | Spirit Bond | 1 | 24/0/0 |
 | 34 | Beast Mastery | Improved Revive Pet | 1 | 25/0/0 |
-| 35-38 | Beast Mastery | Frenzy | 4 | 29/0/0 |
-| 39-43 | Marksmanship | Lethal Attacks | 5 | 29/5/0 |
-| 44-48 | Marksmanship | Efficiency | 5 | 29/10/0 |
-| 49-53 | Marksmanship | Careful Aim | 5 | 29/15/0 |
-| 54-56 | Marksmanship | Improved Stings | 3 | 29/18/0 |
-| 57-60 | Survival | Improved Tracking | 4 | 29/18/4 |
+| 35-37 | Beast Mastery | Frenzy | 3 | 28/0/0 |
+| 38-42 | Marksmanship | Lethal Attacks | 5 | 28/5/0 |
+| 43-47 | Marksmanship | Efficiency | 5 | 28/10/0 |
+| 48-52 | Marksmanship | Careful Aim | 5 | 28/15/0 |
+| 53-55 | Marksmanship | Improved Stings | 3 | 28/18/0 |
+| 56-60 | Survival | Improved Tracking | 5 | 28/18/5 |
 
 ## Core talents (priority order)
 
-1. **Summon Hawk** — +2.5 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Efficiency** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Unleashed Fury** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Bestial Discipline** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Ferocity** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Improved Stings** — +0.4 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Careful Aim** — +0.4 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Improved Tracking** — +0.3 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Unleashed Fury** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Bestial Discipline** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Efficiency** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Ferocity** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Lethal Attacks** — +0.7 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Improved Tracking** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Improved Stings** — +0.4 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Frenzy** — +0.4 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -86,7 +86,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 26.09; beast-mastery-leveling 26.59. The search simulated 41,813 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 25.28; beast-mastery-leveling 25.73, bm-solo-farm 26.20. The search simulated 47,278 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -96,7 +96,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/hunter>
-- <https://talentsforever.com/hunter/60/512021050511024-005355-4-6>
+- <https://talentsforever.com/hunter/60/512021050511023-005355-5-6>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

@@ -5874,9 +5874,9 @@
   }
  },
  "last_run": {
-  "date": "2026-10-12T12:28:30",
+  "date": "2026-10-12T16:20:31",
   "classes": [
-   "warlock"
+   "hunter"
   ],
   "steps": [
    "regen"
@@ -5887,31 +5887,31 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 94,
+  "seconds": 41,
   "refresh": null,
   "regen_log": [
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py warlock",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py hunter",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "formatted F:\\wow-forever\\warlock\\research\\talents\\forever\\proposed-builds.json",
-     "warlock: README section + leveling-affliction note written"
+     "formatted F:\\wow-forever\\hunter\\research\\talents\\forever\\proposed-builds.json",
+     "hunter: README section + leveling-beast-mastery note written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py warlock",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py hunter",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
-     "warlock: raid sim section written (5 specs)",
+     "hunter: raid sim section written (4 specs)",
      "wrote _reference\\raidsim-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py warlock",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py hunter",
     "rc": 0,
     "seconds": 0,
     "tail": [
@@ -5920,29 +5920,29 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py warlock",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py hunter",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "warlock: leveling/guide.md written"
+     "hunter: leveling/guide.md written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py warlock",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py hunter",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "warlock: raid gear and consumables written"
+     "hunter: raid gear and consumables written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py warlock",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py hunter",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "warlock: raid and leveling rotations, DPS ranking written"
+     "hunter: raid and leveling rotations, DPS ranking written"
     ],
     "stderr": []
    },
@@ -5969,7 +5969,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_builds.py",
     "rc": 0,
-    "seconds": 4,
+    "seconds": 2,
     "tail": [
      "rogue/classic-baseline: 5 build pages + README.md",
      "rogue: 27 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
@@ -5987,7 +5987,7 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py warlock",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py hunter",
     "rc": 0,
     "seconds": 0,
     "tail": [
@@ -5999,7 +5999,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_modes.py",
     "rc": 0,
-    "seconds": 2,
+    "seconds": 1,
     "tail": [
      "druid: README.md sections and 3 mode folders written",
      "hunter: README.md sections and 3 mode folders written",
@@ -6015,15 +6015,15 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py warlock --write",
+    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py hunter --write",
     "rc": 0,
-    "seconds": 84,
+    "seconds": 34,
     "tail": [
-     "| affliction-leveling -> level-20 build (11/0/0) | +0.3% | +2.3% | +4.6% | +6.9% | +16.6% | +18.0% | +19.9% | +21.0% | +21.7% | +22.1% | +23.2% |",
-     "| affliction-leveling -> level-30 build (21/0/0) | +0.3% | +2.3% | +4.6% | +6.9% | +16.6% | +18.0% | +19.9% | +21.0% | +21.7% | +22.1% | +23.2% |",
-     "| affliction-leveling -> level-40 build (31/0/0) | +0.3% | +2.3% | +4.6% | +6.9% | +16.6% | +18.0% | +19.9% | +21.0% | +21.7% | +22.1% | +23.2% |",
-     "| affliction-leveling -> level-50 build (36/5/0) | +0.3% | +2.3% | +4.6% | +6.9% | +16.6% | +18.0% | +19.9% | +21.0% | +21.8% | +21.8% | +23.3% |",
-     "| affliction-leveling -> level-60 build (27/24/0) | +0.3% | +2.3% | +4.6% | +6.9% | +16.6% | +18.0% | +19.3% | +19.5% | +19.5% | +19.5% | +24.7% |",
+     "| bm-leveling -> level-20 build (0/11/0) | +0.2% | +1.9% | +6.0% | +8.3% | +11.0% | +14.2% | +16.1% | +19.3% | +20.7% | +22.4% | +27.6% |",
+     "| bm-leveling -> level-30 build (21/0/0) | +0.4% | +2.2% | +3.6% | +10.7% | +12.2% | +12.9% | +17.4% | +19.4% | +20.5% | +24.7% | +26.2% |",
+     "| bm-leveling -> level-40 build (16/15/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.5% | +16.0% | +18.0% | +19.2% | +23.4% | +24.7% | +27.6% |",
+     "| bm-leveling -> level-50 build (16/25/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.5% | +16.0% | +18.0% | +19.2% | +23.4% | +24.7% | +27.6% |",
+     "| bm-leveling -> level-60 build (19/32/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.9% | +14.4% | +17.7% | +19.6% | +23.0% | +24.8% | +27.6% |",
      "",
      "## Reading it",
      "",
@@ -6054,7 +6054,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\compare_effects.py",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
      "druid    buff=8 nerf=20 reworked=0 new=18 removed=13 same=6 unscored=0",
      "hunter   buff=5 nerf=17 reworked=0 new=18 removed=14 same=10 unscored=0",

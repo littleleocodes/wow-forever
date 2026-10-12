@@ -6,12 +6,12 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
-| 1 | [Beast-Survival](beast-survival.md) — Beast-Survival — Leveling 🔬 | 24 | fastest |
-| 2 | [Survival](survival.md) — Melee Survival leveling | 24 | +0.8% |
-| 3 | [Melee (split)](melee-split.md) — Melee (split) (optimized) | 26 | +7% |
-| 4 | [Beast-Marks](beast-marks.md) — Beast-Marks — Leveling 🔬 | 26 | +9% |
-| 5 | [Beast Mastery](beast-mastery.md) — Beast Mastery — Leveling ⚗ | 27 | +11% |
-| 6 | [Marksmanship](marksmanship.md) — Marksmanship (optimized) | 27 | +12% |
+| 1 | [Beast-Survival](beast-survival.md) — Beast-Survival — Leveling 🔬 | 22 | fastest |
+| 2 | [Survival](survival.md) — Melee Survival leveling | 24 | +8% |
+| 3 | [Beast-Marks](beast-marks.md) — Beast-Marks — Leveling 🔬 | 25 | +13% |
+| 4 | [Melee (split)](melee-split.md) — Melee (split) (optimized) | 26 | +15% |
+| 5 | [Beast Mastery](beast-mastery.md) — Beast Mastery — Leveling ⚗ | 27 | +19% |
+| 6 | [Marksmanship](marksmanship.md) — Marksmanship (optimized) | 27 | +20% |
 
 🔬 = a derived build (searched in a simulator). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 

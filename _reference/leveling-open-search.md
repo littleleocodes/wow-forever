@@ -6,15 +6,15 @@ The fastest leveling build found with no tree rule in each leveling rotation (fi
 
 | Class | Rotation | Open winner | Family | Seconds per kill | vs ours |
 |---|---|---|---|---|---|
+| [hunter](../hunter/research/leveling/open-search.md) | melee-dps | [23/3/25](https://talentsforever.com/hunter/60/25210005050102-003-5202102301402021-6) | Hybrid Beast Mastery/Survival | 22.43 | +7.8% |
 | [rogue](../rogue/research/leveling/open-search.md) | subtlety-leveling | [13/17/21](https://talentsforever.com/rogue/60/0253201-305033010011-3023003311013001-6) | Hybrid Combat/Subtlety | 23.70 | +8.9% |
-| [hunter](../hunter/research/leveling/open-search.md) | melee-dps | [22/5/24](https://talentsforever.com/hunter/60/35200005041002-005-530200230140202-6) | Hybrid Beast Mastery/Survival | 24.02 | +9.2% |
 | [rogue](../rogue/research/leveling/open-search.md) | combat-swords-raid | [21/17/13](https://talentsforever.com/rogue/60/0253201020051-32403301001-03230203-6) | Hybrid Assassination/Combat | 24.59 | +1.5% |
+| [hunter](../hunter/research/leveling/open-search.md) | bm-leveling | [28/18/5](https://talentsforever.com/hunter/60/512021050511023-005355-5-6) | Hybrid Beast Mastery/Marksmanship | 25.28 | +1.8% |
 | [warrior](../warrior/research/leveling/open-search.md) | fury-dw-raid | [17/34/0](https://talentsforever.com/warrior/60/20315213-25053005051010511--6) | Fury | 25.34 | +5.4% |
 | [priest](../priest/research/leveling/open-search.md) | shadow-dps | [17/2/32](https://talentsforever.com/priest/60/0150112313-2-345001401201202151-6) | Shadow | 25.45 | +0.6% |
+| [hunter](../hunter/research/leveling/open-search.md) | mm-raid | [28/18/5](https://talentsforever.com/hunter/60/512021050511023-005355-5-6) | Hybrid Beast Mastery/Marksmanship | 25.63 | +1.3% |
 | [rogue](../rogue/research/leveling/open-search.md) | combat-daggers-raid | [22/16/13](https://talentsforever.com/rogue/60/0253201020151-32303301001-30230023-6) | Hybrid Assassination/Combat | 25.85 | +3.1% |
-| [hunter](../hunter/research/leveling/open-search.md) | bm-leveling | [29/18/4](https://talentsforever.com/hunter/60/512021050511024-005355-4-6) | Hybrid Beast Mastery/Marksmanship | 26.09 | +1.9% |
 | [warrior](../warrior/research/leveling/open-search.md) | prot-leveling | [0/20/31](https://talentsforever.com/warrior/60/-3505200005-050331022021111351-6) | Protection | 26.19 | +0.6% |
-| [hunter](../hunter/research/leveling/open-search.md) | mm-raid | [33/13/5](https://talentsforever.com/hunter/60/522322050511023-005053-5-6) | Beast Mastery | 26.54 | +3.5% |
 | [mage](../mage/research/leveling/open-search.md) | frost-leveling | [18/2/31](https://talentsforever.com/mage/60/2412150000003-02-1535003331000301201-6) | Frost | 27.24 | +0.1% |
 | [warrior](../warrior/research/leveling/open-search.md) | arms-2h-raid | [31/20/0](https://talentsforever.com/warrior/60/05321103032514001-1505013005--6) | Arms | 27.42 | +0.7% |
 | [paladin](../paladin/research/leveling/open-search.md) | holy-leveling | [14/8/29](https://talentsforever.com/paladin/60/53003003-233-252051310013303-6) | Hybrid Holy/Retribution | 27.55 | +28.8% |

@@ -2,8 +2,6 @@
 
 [Hunter](../README.md) > [Leveling (solo)](README.md) > Survival
 
-**✅ Recommended** for leveling (the best hunter spec here, or within 3% of it).
-
 **[Melee Survival leveling](../research/leveling/builds/leveling-melee.md)** (9/10/32) — [open the talent tree](https://talentsforever.com/hunter/60/50202-005005-540200031051220151-6)
 
 ## How to play

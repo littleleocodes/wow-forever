@@ -222,12 +222,6 @@
 **Beast-Marks — Raid (machine-learning search)** (`hunter/research/raid/builds/beast-marks-ml-raid.md`)
 - [ ] A machine-searched Beast-Marks build: check it against the community's Beast-Marks builds at launch.
 
-**Beast-Marks — Leveling (open talent search)** (`hunter/research/leveling/builds/beast-marks-open-leveling.md`)
-- [ ] An open-search Beast-Marks leveling build: check it while leveling at launch.
-
-**Beast-Survival — Leveling (open talent search)** (`hunter/research/leveling/builds/beast-survival-open-leveling.md`)
-- [ ] An open-search Beast-Survival leveling build: check it while leveling at launch.
-
 **Marksmanship — With a pet (open talent search)** (`hunter/research/raid/builds/marksmanship-with-a-pet-open-raid.md`)
 - [ ] An open-search Marksmanship build: check it against the community's Marksmanship builds at launch.
 
@@ -236,6 +230,12 @@
 
 **Beast-Survival — Raid (open talent search)** (`hunter/research/raid/builds/beast-survival-open-raid.md`)
 - [ ] An open-search Beast-Survival build: check it against the community's Beast-Survival builds at launch.
+
+**Beast-Marks — Leveling (open talent search)** (`hunter/research/leveling/builds/beast-marks-open-leveling.md`)
+- [ ] An open-search Beast-Marks leveling build: check it while leveling at launch.
+
+**Beast-Survival — Leveling (open talent search)** (`hunter/research/leveling/builds/beast-survival-open-leveling.md`)
+- [ ] An open-search Beast-Survival leveling build: check it while leveling at launch.
 
 ### Mage
 
