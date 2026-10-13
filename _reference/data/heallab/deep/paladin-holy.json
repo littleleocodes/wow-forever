@@ -1,0 +1,761 @@
+{
+ "class": "paladin",
+ "spec": "Holy",
+ "date": "2026-10-13",
+ "cycles": [
+  {
+   "cycle": 1,
+   "winner": {
+    "allocation": {
+     "Holy": [
+      [
+       "Divine Strength",
+       5
+      ],
+      [
+       "Divine Intellect",
+       4
+      ],
+      [
+       "Healing Light",
+       3
+      ],
+      [
+       "Spiritual Focus",
+       2
+      ],
+      [
+       "Improved Seals",
+       2
+      ],
+      [
+       "Unyielding Faith",
+       2
+      ],
+      [
+       "Reverence",
+       3
+      ],
+      [
+       "Purifying Power",
+       2
+      ],
+      [
+       "Infusion of Light",
+       2
+      ],
+      [
+       "Illumination",
+       5
+      ],
+      [
+       "Divine Favor",
+       1
+      ],
+      [
+       "Consecrated Ground",
+       1
+      ],
+      [
+       "Holy Power",
+       5
+      ]
+     ],
+     "Protection": [
+      [
+       "Redoubt",
+       5
+      ],
+      [
+       "Guardian's Favor",
+       1
+      ],
+      [
+       "Anticipation",
+       2
+      ]
+     ],
+     "Retribution": [
+      [
+       "Deflection",
+       5
+      ],
+      [
+       "Holy Conduit",
+       1
+      ]
+     ]
+    },
+    "split": "37/8/6",
+    "dps": 0.5716,
+    "se": 0.0016,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "39/11/1",
+    "dps": 0.5716,
+    "se": 0.0016,
+    "differs": [
+     [
+      "Anticipation",
+      2
+     ],
+     [
+      "Anticipation",
+      3
+     ],
+     [
+      "Consecrated Ground",
+      1
+     ],
+     [
+      "Consecrated Ground",
+      2
+     ],
+     [
+      "Deflection",
+      1
+     ],
+     [
+      "Deflection",
+      5
+     ],
+     [
+      "Guardian's Favor",
+      1
+     ],
+     [
+      "Guardian's Favor",
+      2
+     ],
+     [
+      "Holy Conduit",
+      1
+     ],
+     [
+      "Improved Seals",
+      2
+     ],
+     [
+      "Improved Seals",
+      3
+     ],
+     [
+      "Sacred Duty",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "heal",
+     "run": 1,
+     "simulated": 1641,
+     "best_screen": 0.5799,
+     "best_split": "37/8/6",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "heal",
+     "run": 2,
+     "simulated": 1638,
+     "best_screen": 0.5799,
+     "best_split": "37/13/1",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "heal",
+     "run": 3,
+     "simulated": 1436,
+     "best_screen": 0.5768,
+     "best_split": "30/7/14",
+     "best_stage1_gap": -0.0022,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "heal",
+     "run": 4,
+     "simulated": 1642,
+     "best_screen": 0.5799,
+     "best_split": "40/9/2",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 4,
+   "race": [
+    {
+     "iterations": 60,
+     "seed": 2,
+     "dps": [
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5723,
+      0.5646,
+      0.5646,
+      0.5646,
+      0.5646,
+      0.5634
+     ]
+    },
+    {
+     "iterations": 120,
+     "seed": 3,
+     "dps": [
+      0.5659,
+      0.5659,
+      0.5659,
+      0.5659,
+      0.5659
+     ]
+    },
+    {
+     "iterations": 240,
+     "seed": 4,
+     "dps": [
+      0.5716,
+      0.5716
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 200,
+     "best_gap": 0.0,
+     "best_move": "2 Spiritual Focus + 2 Infusion of Light + 1 Guardian's Favor -> 4 Conviction + 1 Seal of Command (tier chain)"
+    }
+   ],
+   "important_features": [
+    {
+     "feature": "Illumination",
+     "importance": 0.3841
+    },
+    {
+     "feature": "Holy Shock",
+     "importance": 0.198
+    },
+    {
+     "feature": "Holy Power",
+     "importance": 0.091
+    },
+    {
+     "feature": "Reverence",
+     "importance": 0.0778
+    },
+    {
+     "feature": "Healing Light",
+     "importance": 0.0469
+    },
+    {
+     "feature": "Light's Vigil",
+     "importance": 0.0421
+    },
+    {
+     "feature": "Divine Precision",
+     "importance": 0.0402
+    },
+    {
+     "feature": "Divine Intellect",
+     "importance": 0.0174
+    },
+    {
+     "feature": "Divine Strength",
+     "importance": 0.0111
+    },
+    {
+     "feature": "Infusion of Light",
+     "importance": 0.0109
+    },
+    {
+     "feature": "Divine Favor",
+     "importance": 0.0099
+    },
+    {
+     "feature": "Holy points",
+     "importance": 0.0075
+    }
+   ],
+   "simulated_builds": 8496,
+   "minutes": 254.8,
+   "policy_changed": true
+  },
+  {
+   "cycle": 2,
+   "winner": {
+    "allocation": {
+     "Holy": [
+      [
+       "Divine Strength",
+       5
+      ],
+      [
+       "Divine Intellect",
+       4
+      ],
+      [
+       "Healing Light",
+       3
+      ],
+      [
+       "Spiritual Focus",
+       2
+      ],
+      [
+       "Improved Seals",
+       2
+      ],
+      [
+       "Unyielding Faith",
+       2
+      ],
+      [
+       "Reverence",
+       3
+      ],
+      [
+       "Purifying Power",
+       2
+      ],
+      [
+       "Infusion of Light",
+       2
+      ],
+      [
+       "Illumination",
+       5
+      ],
+      [
+       "Divine Favor",
+       1
+      ],
+      [
+       "Consecrated Ground",
+       1
+      ],
+      [
+       "Holy Power",
+       5
+      ]
+     ],
+     "Protection": [
+      [
+       "Redoubt",
+       5
+      ],
+      [
+       "Guardian's Favor",
+       1
+      ],
+      [
+       "Anticipation",
+       2
+      ]
+     ],
+     "Retribution": [
+      [
+       "Deflection",
+       5
+      ],
+      [
+       "Holy Conduit",
+       1
+      ]
+     ]
+    },
+    "split": "37/8/6",
+    "dps": 0.5716,
+    "se": 0.0016,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "37/8/6",
+    "dps": 0.5716,
+    "se": 0.0016,
+    "differs": [
+     [
+      "Anticipation",
+      2
+     ],
+     [
+      "Anticipation",
+      3
+     ],
+     [
+      "Guardian's Favor",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "heal",
+     "run": 1,
+     "simulated": 1292,
+     "best_screen": 0.5799,
+     "best_split": "37/8/6",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "heal",
+     "run": 2,
+     "simulated": 1299,
+     "best_screen": 0.5799,
+     "best_split": "37/8/6",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 2,
+   "race": [
+    {
+     "iterations": 60,
+     "seed": 2,
+     "dps": [
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735
+     ]
+    },
+    {
+     "iterations": 120,
+     "seed": 3,
+     "dps": [
+      0.5659,
+      0.5659,
+      0.5659,
+      0.5659,
+      0.5659
+     ]
+    },
+    {
+     "iterations": 240,
+     "seed": 4,
+     "dps": [
+      0.5716,
+      0.5716
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 200,
+     "best_gap": 0.0,
+     "best_move": "2 Purifying Power + 2 Infusion of Light + 1 Anticipation -> 4 Conviction + 1 Seal of Command (tier chain)"
+    }
+   ],
+   "important_features": [
+    {
+     "feature": "Illumination",
+     "importance": 0.3929
+    },
+    {
+     "feature": "Holy Shock",
+     "importance": 0.1984
+    },
+    {
+     "feature": "Reverence",
+     "importance": 0.0933
+    },
+    {
+     "feature": "Holy Power",
+     "importance": 0.09
+    },
+    {
+     "feature": "Healing Light",
+     "importance": 0.0614
+    },
+    {
+     "feature": "Divine Intellect",
+     "importance": 0.047
+    },
+    {
+     "feature": "Divine Precision",
+     "importance": 0.016
+    },
+    {
+     "feature": "Improved Seals",
+     "importance": 0.0158
+    },
+    {
+     "feature": "Divine Favor",
+     "importance": 0.0112
+    },
+    {
+     "feature": "Infusion of Light",
+     "importance": 0.0069
+    },
+    {
+     "feature": "Holy points",
+     "importance": 0.0062
+    },
+    {
+     "feature": "Protection points",
+     "importance": 0.0058
+    }
+   ],
+   "simulated_builds": 4705,
+   "minutes": 227.1,
+   "policy_changed": true
+  },
+  {
+   "cycle": 3,
+   "winner": {
+    "allocation": {
+     "Holy": [
+      [
+       "Divine Strength",
+       5
+      ],
+      [
+       "Divine Intellect",
+       4
+      ],
+      [
+       "Healing Light",
+       3
+      ],
+      [
+       "Spiritual Focus",
+       2
+      ],
+      [
+       "Improved Seals",
+       2
+      ],
+      [
+       "Unyielding Faith",
+       2
+      ],
+      [
+       "Reverence",
+       3
+      ],
+      [
+       "Purifying Power",
+       2
+      ],
+      [
+       "Infusion of Light",
+       2
+      ],
+      [
+       "Illumination",
+       5
+      ],
+      [
+       "Divine Favor",
+       1
+      ],
+      [
+       "Consecrated Ground",
+       1
+      ],
+      [
+       "Holy Power",
+       5
+      ]
+     ],
+     "Protection": [
+      [
+       "Redoubt",
+       5
+      ],
+      [
+       "Guardian's Favor",
+       1
+      ],
+      [
+       "Anticipation",
+       2
+      ]
+     ],
+     "Retribution": [
+      [
+       "Deflection",
+       5
+      ],
+      [
+       "Holy Conduit",
+       1
+      ]
+     ]
+    },
+    "split": "37/8/6",
+    "dps": 0.5716,
+    "se": 0.0016,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "36/9/6",
+    "dps": 0.5716,
+    "se": 0.0016,
+    "differs": [
+     [
+      "Anticipation",
+      2
+     ],
+     [
+      "Anticipation",
+      3
+     ],
+     [
+      "Spiritual Focus",
+      1
+     ],
+     [
+      "Spiritual Focus",
+      2
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "heal",
+     "run": 1,
+     "simulated": 1299,
+     "best_screen": 0.5799,
+     "best_split": "37/8/6",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "heal",
+     "run": 2,
+     "simulated": 1298,
+     "best_screen": 0.5799,
+     "best_split": "37/8/6",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 2,
+   "race": [
+    {
+     "iterations": 60,
+     "seed": 2,
+     "dps": [
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735,
+      0.5735
+     ]
+    },
+    {
+     "iterations": 120,
+     "seed": 3,
+     "dps": [
+      0.5659,
+      0.5659,
+      0.5659,
+      0.5659,
+      0.5659
+     ]
+    },
+    {
+     "iterations": 240,
+     "seed": 4,
+     "dps": [
+      0.5716,
+      0.5716
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 200,
+     "best_gap": 0.0,
+     "best_move": "2 Purifying Power + 2 Infusion of Light + 1 Anticipation -> 4 Conviction + 1 Seal of Command (tier chain)"
+    }
+   ],
+   "important_features": [
+    {
+     "feature": "Illumination",
+     "importance": 0.4343
+    },
+    {
+     "feature": "Holy Shock",
+     "importance": 0.1645
+    },
+    {
+     "feature": "Holy Power",
+     "importance": 0.0904
+    },
+    {
+     "feature": "Healing Light",
+     "importance": 0.0755
+    },
+    {
+     "feature": "Divine Intellect",
+     "importance": 0.0689
+    },
+    {
+     "feature": "Reverence",
+     "importance": 0.0476
+    },
+    {
+     "feature": "Divine Precision",
+     "importance": 0.0161
+    },
+    {
+     "feature": "Divine Favor",
+     "importance": 0.0114
+    },
+    {
+     "feature": "Benediction",
+     "importance": 0.0104
+    },
+    {
+     "feature": "Improved Seals",
+     "importance": 0.0096
+    },
+    {
+     "feature": "Infusion of Light",
+     "importance": 0.0076
+    },
+    {
+     "feature": "Holy points",
+     "importance": 0.0073
+    }
+   ],
+   "simulated_builds": 4710,
+   "minutes": 228.0,
+   "policy_changed": true
+  }
+ ]
+}

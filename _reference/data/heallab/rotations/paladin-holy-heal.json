@@ -2,12 +2,17 @@
  "class": "paladin",
  "spec": "holy-heal",
  "build": "holy-raid-healer",
- "date": "2026-09-27",
+ "builds": [
+  "holy-raid-healer",
+  "paladin-holy-winner-3"
+ ],
+ "date": "2026-10-13",
  "runs": 60,
  "confirm": 200,
  "tables": {
   "EMERGENCY": 0.25,
   "RAID_HEAL_AT": 0.5,
+  "GROUP_HEAL_MIN": 5,
   "POTION_BELOW": 0.8
  },
  "defaults": {
@@ -19,26 +24,17 @@
   "POTION_BELOW": 0.65,
   "POTION_FIRST": 45.0
  },
- "changes": [
-  {
-   "round": 1,
-   "change": "POTION_BELOW 0.65 -> 0.8",
-   "gain_seeds1": 0.008308583029437155,
-   "gain_seeds2": 0.0051175153994098554
-  },
-  {
-   "round": 2,
-   "change": "EMERGENCY 0.35 -> 0.25",
-   "gain_seeds1": 0.006301267710663749,
-   "gain_seeds2": 0.006546162568632274
-  },
-  {
-   "round": 3,
-   "change": "RAID_HEAL_AT 0.7 -> 0.5",
-   "gain_seeds1": 0.013968653896031746,
-   "gain_seeds2": 0.010694790829012923
-  }
- ],
- "capacity_before": 0.63824951171875,
- "capacity_after": 0.6601489257812501
+ "changes": [],
+ "capacity_before": 0.5648388671875,
+ "capacity_after": 0.5648388671875,
+ "capacity_by_build": {
+  "holy-raid-healer": [
+   0.5648388671875,
+   0.5648388671875
+  ],
+  "paladin-holy-winner-3": [
+   0.57236083984375,
+   0.57236083984375
+  ]
+ }
 }
