@@ -4,10 +4,11 @@
  "build": "holy-raid-healer",
  "builds": [
   "holy-raid-healer",
-  "priest-holy-winner-1",
-  "disc-penance-healer"
+  "priest-discipline-winner-3",
+  "disc-penance-healer",
+  "priest-holy-winner-3"
  ],
- "date": "2026-10-12",
+ "date": "2026-10-13",
  "runs": 60,
  "confirm": 200,
  "tables": {
@@ -25,36 +26,25 @@
   "POTION_BELOW": 0.65,
   "POTION_FIRST": 45.0
  },
- "changes": [
-  {
-   "round": 1,
-   "change": "POTION_BELOW 0.65 -> 0.4",
-   "gain_seeds1": 0.02095283293098804,
-   "gain_seeds2": 0.020237733441981653,
-   "worst_build_seeds2": 0.013351591920575112
-  },
-  {
-   "round": 2,
-   "change": "EMERGENCY 0.35 -> 0.2",
-   "gain_seeds1": 0.010595384784333861,
-   "gain_seeds2": 0.009802051096394315,
-   "worst_build_seeds2": 0.005252889701560681
-  }
- ],
- "capacity_before": 0.67328857421875,
+ "changes": [],
+ "capacity_before": 0.6829052734375001,
  "capacity_after": 0.6829052734375001,
  "capacity_by_build": {
   "holy-raid-healer": [
-   0.67328857421875,
+   0.6829052734375001,
    0.6829052734375001
   ],
-  "priest-holy-winner-1": [
-   0.67424072265625,
-   0.68909423828125
+  "priest-discipline-winner-3": [
+   0.62434814453125,
+   0.62434814453125
   ],
   "disc-penance-healer": [
-   0.57959716796875,
+   0.59787841796875,
    0.59787841796875
+  ],
+  "priest-holy-winner-3": [
+   0.6912841796875001,
+   0.6912841796875001
   ]
  }
 }

@@ -1325,6 +1325,94 @@
       "open_questions": ["An open-search Shadow leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/priest", "https://talentsforever.com/priest/60/0150112313-2-345001401201202151-6"],
       "replaces": "leveling-shadow"
+    },
+    {
+      "id": "holy-ml-heal",
+      "name": "Holy — Raid healing (machine-learning search)",
+      "role": "healer",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Holy",
+      "generated": "2026-10-12",
+      "derived": "raid",
+      "summary": "The Holy build the machine-learning talent search found in the healer lab on 2026-10-12 (heallab/deep_heal.py: a random forest guiding a genetic search over every legal build of the spec, the heal-choice policy tuned with it, races on fresh seeds, every build one or two moves from the winner checked). Capacity is the healer lab's model of stated assumptions.",
+      "allocation": {
+        "Discipline": [
+          ["Power in Light", 1],
+          ["Wand Specialization", 1],
+          ["Twin Disciplines", 3],
+          ["Silent Resolve", 1],
+          ["Holy Precision", 1],
+          ["Improved Power Word: Shield", 3],
+          ["Mental Agility", 3],
+          ["Inner Focus", 1],
+          ["Meditation", 3],
+          ["Mental Strength", 3],
+          ["Penance", 1]
+        ],
+        "Holy": [
+          ["Improved Renew", 3],
+          ["Holy Specialization", 5],
+          ["Divine Fury", 5],
+          ["Holy Nova", 1],
+          ["Inspiration", 3],
+          ["Improved Healing", 3],
+          ["Litany of Light", 2],
+          ["Spiritual Guidance", 5],
+          ["Spiritual Healing", 3]
+        ],
+        "Shadow": []
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["Final race over 400 fresh seeds: capacity 0.694 ± 0.001; holy-raid-healer 0.689, opt-holy-heal-raid-heal 0.689.", "Independent runs agreeing in the last cycle: 2/2; two-move check: 245 one-move and 5,307 two-move builds, none better.", "The healer lab models one healer keeping a five-member group alive (heallab/tables.py); not an in-game measurement."],
+      "open_questions": ["A machine-searched Holy build: check it against the community's healing builds at launch."],
+      "sources": []
+    },
+    {
+      "id": "discipline-ml-heal",
+      "name": "Discipline — Raid healing (machine-learning search)",
+      "role": "healer",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Discipline",
+      "generated": "2026-10-12",
+      "derived": "raid",
+      "summary": "The Discipline build the machine-learning talent search found in the healer lab on 2026-10-12 (heallab/deep_heal.py: a random forest guiding a genetic search over every legal build of the spec, the heal-choice policy tuned with it, races on fresh seeds, every build one or two moves from the winner checked). Capacity is the healer lab's model of stated assumptions.",
+      "allocation": {
+        "Discipline": [
+          ["Twin Disciplines", 5],
+          ["Silent Resolve", 2],
+          ["Holy Precision", 1],
+          ["Improved Power Word: Shield", 3],
+          ["Mental Agility", 3],
+          ["Inner Focus", 1],
+          ["Meditation", 3],
+          ["Improved Inner Fire", 1],
+          ["Mental Strength", 5],
+          ["Soul Warding", 1],
+          ["Penance", 1],
+          ["Renewed Hope", 1],
+          ["Divine Aegis", 3]
+        ],
+        "Holy": [
+          ["Twilight Focus", 2],
+          ["Improved Renew", 2],
+          ["Holy Specialization", 5],
+          ["Divine Fury", 3],
+          ["Inspiration", 3],
+          ["Holy Reach", 2],
+          ["Improved Healing", 3],
+          ["Litany of Light", 1]
+        ],
+        "Shadow": []
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["+5.9% capacity over the hand draft disc-penance-healer (over the 2% bar: the spec's healing pick; the hand draft stays as the alternative).", "Final race over 400 fresh seeds: capacity 0.630 ± 0.002; disc-penance-healer 0.595.", "Independent runs agreeing in the last cycle: 1/2; two-move check: 233 one-move and 4,738 two-move builds, none better.", "The healer lab models one healer keeping a five-member group alive (heallab/tables.py); not an in-game measurement."],
+      "open_questions": ["A machine-searched Discipline build: check it against the community's healing builds at launch."],
+      "sources": [],
+      "replaces": "disc-penance-healer"
     }
   ]
 }
