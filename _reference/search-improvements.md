@@ -17,10 +17,45 @@
   until it wins); three-talent packages that pay nothing in any pair; leveling builds strong early but weaker at 60 (the main search
   scores level 60); one fight type (single target, 180 s, full raid, an Elemental target).
 
+## Patterns from the 70291 sweep (self-audit of 2026-10-13)
+
+Read from the records of the sweep's open searches (`raidsim/families/*.json`: 28 raid entries; `fightlab/open/*.json`: 26 leveling
+rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the three finished healer deep searches
+(`heallab/deep/priest-holy.json`, `priest-discipline.json`, `paladin-holy.json`).
+
+- **The raid talent search has converged.** Synergy certificate and structural ranking: 0 leads in 28 entries. The re-search after a
+  rotation re-tune (`again`): 12 entries, 11 identical winners, one moved a point (Beast Mastery 27/20/4 -> 27/21/3). Cross-rotation
+  races: none adopted. What is left for raid is rotations and model fidelity, not talent search.
+- **Hybrids win often**: 11 of 28 raid winners and 15 of 26 leveling winners are hybrids. The same shallow picks recur: Bane and Demonic
+  Sacrifice (warlock), Relentless Strikes and Malice (rogue), Careful Aim and Lethal Attacks (hunter), Arcane's mana talents and Missile
+  Barrage in Frost. Deep capstones rarely pay for their row. A player-facing note for the class pages.
+- **Leveling rotations are weaker than the raid ones.** The cross-rotation race (`cross` in the leveling records) runs several winners
+  faster under a sibling rotation: Affliction 39.7 -> 35.0 s per kill under Demonology's (12%), Arcane 31.8 -> 29.0 and Fire 32.4 -> 29.4
+  under Frost's (9%), Discipline 42.9 -> 39.1 and Holy 43.1 -> 40.7 under Shadow's (6-9%), Combat daggers 25.9 -> 24.6 under swords'
+  (5%). The own-rotation rule keeps those off the pages, but the gaps say our own rotations leave time on the table. Cause:
+  `fightlab/rotation_opt.py` can only veto spells and move drink/eat thresholds and knobs; it cannot reorder the priority or add a line
+  (the raid's `apl_opt` can). 23 of the learned rules are "never cast X" (Holy Fire for Holy and Discipline priests, Hammer of Wrath for
+  Holy paladins, Slice and Dice and Kidney Shot for rogues, Arcane Shot and Multi-Shot for hunters, Cone of Cold and Fire Blast for
+  Frost): a veto is the only repair available for a spell in the wrong place.
+- **Level 60 is the wrong target for leveling.** The 20-60 polish changed the level-60 winner in 10 of 26 rotations and the order
+  polish changed the talent order in 8.
+- **Healer cycles repeat**: in all three healer searches every cycle returned the same winner, but the heal-choice policy moved every
+  cycle, so the loop never stopped before `--cycles` (3). Paladin Holy cycles took 255, 227 and 228 min against 21-67 min for the
+  priests (unexplained: profile it). The two-move check still found +0.37% (Discipline) and +0.50% then +0.47% (paladin Holy): the
+  healer landscape is flat (runs agreeing 1 of 4, 1 of 2) and the genetic search ends short of the local optimum.
+- **Entries that always find the same build**: the warlock's Fire Destruction, Shadow Bolt and Incinerate entries all end on 20/11/20
+  (the Shadow Bolt hybrid); Stormcaller ends on Elemental's 29/22/0. Their own rotations never win, yet each is a full search per sweep.
+- **Zero-value points**: raid winners carry 0-23 points under 0.1% each (warrior two-hander 23, Stormcaller 18, Shadow 16, Subtlety
+  14), mostly tier fillers the filler audit turns into utility. Surprise: Improved Heroic Strike reads 0 in the 20/31/0 two-hander
+  (check the simulator's rank handling, as with Lightning Reflexes).
+- **Spell probe**: kept no line this sweep (Berserk, Arcane Power, Combustion, Vampiric Embrace, Holy Nova, Blade Flurry, Riposte,
+  Stormstrike in the caster hybrid, Rage of the Farseer); the rotation searches' pools already cover these spells.
+
 ## Changes made (with evidence)
 
 | Date | Change | Why (evidence) | Effect |
 |---|---|---|---|
+| 2026-10-13 | `heallab/deep_heal.py`: the cycles stop when the winner repeats (the policy re-tune still runs every cycle) | Every cycle after the first returned the same winner in priest Holy, Discipline and paladin Holy, but the policy moved a little each cycle, so the old rule (winner and policy both unchanged) never fired | One cycle saved per healer spec whose winner repeats: about 4 h for the paladin, 0.5-1 h for a priest; applies from the druid on (the paladin's three cycles were already done) |
 | 2026-10-09 day | `apl_opt.main_builds`: a full-raid rotation is tuned on the entry's best build in a full raid among the builds the entry still lists | The 70291 re-baseline picked the training dummy's best from the previous race report: the Frostfire raid rotation was tuned on frostfire-open-raid, removed days before, and kept a rank-2 Fireball fallback the downranking penalty had made weak; 13 entries were tuned on a build other than their full-raid best | Frostfire's 0/29/22 page build 663.8 -> 678.9 (+2.3%, Frostfire Bolt rank 2 below 30% mana); the nine other entries re-tuned: Beast-Survival +0.6%, the rest unchanged |
 | 2026-10-09 day | Simulator presets against our builds in a full raid, every entry | The druid's review: our Feral builds, optimized on the training dummy, skipped Shifting Power, which the raid rotation's powershifting pays for | The simulator's Feral Cat 9/35/7 preset 691 against our 594 (+16.4%), written as a derived build (`preset` field on the page); Combat swords +1.1% (a variant entry), nothing else ahead |
 | 2026-10-09 day | Fight-lab class modules reviewed against the 70291 tooltips (one agent per class) | Rotation-guide review: the mage asked for "Hot Streak" (Heating Up since 70170: never simulated); crit damage talents added to a spell crit's 50% bonus as if it were 100% (mage Ice Shards / Arcane Mind, shaman Elemental Fury: x2.5); Fire Nova, Magma Totem and Summon Hawk parsed to 0 damage; Kidney Shot stunned for 0 s; Lava Burst had Wrath's guaranteed crit; Holy Shield 20% block written in (30%); Cold Blood buffed every Sinister Strike; healer-lab Illumination returned full cost | Mage Frost leveling 25.4 -> 27.2 s per kill at 60 (crits, Ice Lance 0.10); every class module edited with smoke runs; paladin Holy capacity 0.645 -> 0.570; the leveling rules re-tuned where the mechanics moved (rogue: same rules) |
@@ -59,38 +94,55 @@
 
 ## Open ideas, ranked by what they could still find
 
-1. **Rotations for new playstyles.** A build that needs a rotation nobody wrote is invisible. The spell probe only tries never-cast
+1. **Leveling rotation moves (2026-10-13, the sweep's largest gap).** Give `fightlab/rotation_opt.py` the raid `apl_opt` move set:
+   move a priority line up or down, insert a line from the class's other leveling rotations, and conditional rules ("only as the
+   opener", "only below 20% mob health", "only above N% mana") where it now has only vetoes. Each spec still plays only its own
+   rotation; the sibling lines are search material. Evidence: the cross-rotation gaps of 5-12% and the 23 "never cast" rules above.
+   Measure each new rule as now (common random numbers, seed-2 confirmation, level-weighted time per kill), then re-run the class's
+   leveling half: the winners were searched under the weaker rotations.
+2. **Rotations for new playstyles.** A build that needs a rotation nobody wrote is invisible. The spell probe only tries never-cast
    abilities of the winner. Idea: probe the abilities of the top 3-5 families too, and write a base rotation for any family whose
    keystone is an ability the entry never casts. Cost: a probe is minutes per ability.
-2. **Leveling early levels.** The main leveling search scores level 60; the 20-60 polish is local. Idea: score the main search's
-   finalists, or the top families, on levels 40-60 and polish the best three, not only the race's pick. Cost: about 3x per scored build.
-3. **Certificate around the runners-up.** Certificates check pairs around the winner only. A runner-up family within 1% may hide a
+3. **Leveling early levels.** The main leveling search scores level 60; the 20-60 polish is local. 2026-10-13: the polish changed the
+   winner in 10 of 26 rotations and the order in 8. Idea: score the main search on levels 40, 50 and 60 from the start (fewer fights
+   per level), or at least score its finalists and top families there and polish the best three. Cost: about 3x per scored build.
+4. **Certificate around the runners-up.** Certificates check pairs around the winner only. A runner-up family within 1% may hide a
    package. Idea: a light certificate (singles only) around the second and third families. Cost: 1-2 min each.
-4. **Triples.** The checks are complete for pairs. Idea: combine the pairs with the largest positive interactions that share a talent
+5. **Triples.** The checks are complete for pairs. Idea: combine the pairs with the largest positive interactions that share a talent
    into triples and measure them unpaid. Cost: small (tens of builds).
-5. **Gear coupling.** A new family is searched in another spec's gear until it wins. Idea: give the top three families of each entry a
+6. **Gear coupling.** A new family is searched in another spec's gear until it wins. Idea: give the top three families of each entry a
    quick phase-1 set (`gear_tiers.make`) and race them in it. Cost: about 10 min per family.
-6. **Fight variety.** Done 2026-10-08: `raidsim/fight_variety.py` races each spec's pick and next builds in five full-raid fights
+7. **Fight variety.** Done 2026-10-08: `raidsim/fight_variety.py` races each spec's pick and next builds in five full-raid fights
    (standard, three targets, Undead, 90 s, 300 s) and flags a pick 2% behind; the sweep's last phase runs it for every class.
-7. **Model fidelity** (biggest real-game gap, not search): demon scaling and the pet hit rule are patched from the client's text and
+8. **Model fidelity** (biggest real-game gap, not search): demon scaling and the pet hit rule are patched from the client's text and
    forum logs (2026-10-08) but unmeasured at level 60; the final beta build refresh; comparison with beta logs and real leveling times.
    Open after the 2026-10-09 audit, roughly by size (stacked enchants and the warlock's stones were added the same night): the lower
    proc chance of low ranks; leveling mob health from the client's ExpectedStat table (+7-35% over the lab's Classic medians; unknown
    whether the server uses it: a `MOB_HP_MULT` sensitivity); glancing and crit suppression against bosses (a beta tester's Skills
    panel shows them); negative resistance from debuffs (testable at level 30 with Curse of the Elements rank 2); Forever's Spirit regen;
    leveling gear from Forever's item database. (Crit per stat point by level now follows the client's table, 2026-10-09.)
-8. **Weapon variants on the pages.** The rogue's swords entry found 18/33/0 at 746.6 DPS, +1.9% over our swords builds, but the Combat
+9. **Weapon variants on the pages.** The rogue's swords entry found 18/33/0 at 746.6 DPS, +1.9% over our swords builds, but the Combat
    page shows one build per spec (the daggers build at 770), so a swords player never sees it. Idea: a weapon line on the page when a
    spec's entries differ in weapon type (swords, daggers, maces), each with its entry's best build. A page change, not a search change.
-9. **Skip a sibling's checks when an entry's winner equals a finished entry's.** The rogue's Assassination entry ended on the daggers
+10. **Skip a sibling's checks when an entry's winner equals a finished entry's.** The rogue's Assassination entry ended on the daggers
    entry's 16/33/2 at the same DPS, and the two rotations are interchangeable for it (cross-rotation race +0.0%), yet both ran the
    certificate and the structural ranking. Saving: about 4 min per such entry; low priority.
-10. **Mana-conditional spell ranks.** Retribution's lower Seal of Command rank pays only for mana-hungry builds: a rank line guarded by
+11. **Mana-conditional spell ranks.** Retribution's lower Seal of Command rank pays only for mana-hungry builds: a rank line guarded by
    mana would let one rotation serve both.
-11. **Spells the models leave out (audit 2026-10-08).** The fork ships five Forever abilities as stubs (Revive, Enchanted Flare,
+12. **Spells the models leave out (audit 2026-10-08).** The fork ships five Forever abilities as stubs (Revive, Enchanted Flare,
    Confounding Flash, Contingency Plan, Divine Grace): none deals damage, so no raid number misses them. The healer lab casts neither
    Divine Grace nor Contingency Plan (priest baseline heals on 10-minute cooldowns): every priest build would gain about the same, so
    no talent choice moves. Low priority.
+13. **Skip the re-search after a rotation re-tune (2026-10-13).** `family_search`'s `again` search changed no winner in 11 of 12
+   entries (one point in the 12th). Idea: replace it with a polish of the winner (and the top two families) under the new rotation,
+   keeping the full re-search only when the polish moves. Saving: 20-40 min per re-tuned entry.
+14. **Search converged showcase entries once (2026-10-13).** The warlock's Fire Destruction, Shadow Bolt and Incinerate entries end on
+   the same 20/11/20, Stormcaller on Elemental's 29/22/0. Idea: after a sweep confirms an entry's winner equals a sibling's and its
+   rotation never wins, mark it `confirmed_by` and skip its search until its rotation or the data changes. Saving: 1-3 h per sweep.
+15. **Improved Heroic Strike reads 0** in the warrior's 20/31/0 two-hander (and Enrage 5/5, expected without boss melee on the warrior).
+   Check the simulator's rank values and whether the rotation's Heroic Strike line is rage-capped; add to the sim value audit if wrong.
+16. **Why paladin healer-lab cycles take 4 h** (priest 21-67 min, 2026-10-13). Profile `heal_worker` for the paladin module (Holy
+   Light's cast time, Illumination, the bisection steps) before the next healer sweep.
 
 ## Efficiency (measured)
 

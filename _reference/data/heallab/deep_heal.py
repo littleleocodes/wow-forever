@@ -10,7 +10,7 @@ engine.capacity) is a model of stated assumptions (heallab/tables.py), not a mea
 (random forest + genetic search, races, the one-move and chain-move check, the two-move check) on a healer-lab adapter: builds are
 measured in parallel processes (heal_worker.py) with common random numbers, and a search's "iterations" are seeds (runs) here.
 Per healer spec of the class (HEAL_SPECS; the class module's healer plays every one of them):
-1. cycles until the winner and the policy repeat (at most --cycles): the talent search (cycle 1: 4 independent runs of up to 2,500
+1. cycles until the winner repeats (at most --cycles; until 2026-10-13 also the policy, which never settled): the talent search (cycle 1: 4 independent runs of up to 2,500
    builds screened on 24 seeds with 8 bisection steps; later cycles 2 runs of 1,500 seeded with the winners; races on 60, 120 and 240
    fresh seeds; the one-move check on 40 and 160 seeds), then the heal-choice policy re-tuned (rotation_opt.py --build) on the winner,
    the hand drafts of every healer spec of the class and the other specs' deep winners (the policy file is the class's: a Holy priest's
@@ -168,7 +168,9 @@ def run_spec(cls, spec, a):
         c["policy_changed"] = before != after
         st["cycles"].append(c)
         save()
-        if prev and flat(prev["winner"]["allocation"]) == flat(rec["winner"]["allocation"]) and not c["policy_changed"]:
+        # converged when the winner repeats (2026-10-13): the policy re-tune moves a little every cycle, and in the 70291 sweep's priest
+        # Holy, Discipline and paladin Holy searches every cycle after the first returned the same winner (paladin cycles ~4 h each)
+        if prev and flat(prev["winner"]["allocation"]) == flat(rec["winner"]["allocation"]):
             st["converged"] = cyc
             save()
             break
