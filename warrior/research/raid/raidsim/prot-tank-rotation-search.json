@@ -2,7 +2,7 @@
  "raid": {
   "class": "warrior",
   "spec": "prot-tank",
-  "date": "2026-10-09",
+  "date": "2026-10-14",
   "commit": "2ce8265",
   "setting": "raid",
   "tank": true,
@@ -10,12 +10,18 @@
   "start": "ui\\specs\\warrior\\protection\\apls\\protection.apl.json",
   "builds": [
    {
+    "label": "deep: tank",
+    "talents": "35300103002-03-250530120300001351"
+   },
+   {
     "label": "opt-prot-tank-raid-tank",
-    "talents": "35300003-05-050533020301001351"
+    "talents": "35300003-05-050533020301001351",
+    "protect_only": true
    },
    {
     "label": "sim preset: Protection",
-    "talents": "31--255533123330201351"
+    "talents": "31--255533123330201351",
+    "protect_only": true
    },
    {
     "label": "prot-raid-tank",
@@ -24,8 +30,7 @@
    }
   ],
   "tuned_on": [
-   "opt-prot-tank-raid-tank",
-   "sim preset: Protection"
+   "deep: tank"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -73,12 +78,21 @@
   ],
   "final": {
    "raid": {
+    "deep: tank": {
+     "before": 500.35271736629255,
+     "after": 539.6576450293081,
+     "base": 500.35271736629255,
+     "before_value": 1.0,
+     "after_value": 1.0,
+     "oom_before": 0,
+     "oom_after": 0
+    },
     "opt-prot-tank-raid-tank": {
      "before": 508.28960167106146,
      "after": 535.7312857756598,
      "base": 508.28960167106146,
      "before_value": 1.0,
-     "after_value": 1.0115927375904592,
+     "after_value": 1.0,
      "oom_before": 0,
      "oom_after": 0
     },
@@ -87,7 +101,7 @@
      "after": 487.35403593891283,
      "base": 469.62635840413606,
      "before_value": 1.0,
-     "after_value": 1.011321225480084,
+     "after_value": 1.0,
      "oom_before": 0,
      "oom_after": 0
     },
@@ -96,13 +110,13 @@
      "after": 520.6766426551399,
      "base": 500.90012565500206,
      "before_value": 1.0,
-     "after_value": 1.0103537653388344,
+     "after_value": 1.0,
      "oom_before": 0,
      "oom_after": 0
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 4
+  "passes": 6
  }
 }

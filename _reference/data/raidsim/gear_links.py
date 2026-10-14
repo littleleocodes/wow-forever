@@ -144,7 +144,7 @@ def sim_links(r, repo, apiv):
     for k in KEYS:
         s = (r.get("search") or {}).get(k) or {}
         tier, setting = k.split("-")
-        g = ((r.get("gear") or {}).get(tier) or {}).get("gear")
+        g = ((MB.page_gear(r, tier) if setting == "raid" else (r.get("gear") or {}).get(tier)) or {}).get("gear")
         w = MB.shown(r, k) if s.get("winner") else None
         if not (w and g):
             continue
@@ -177,7 +177,7 @@ def main():
     for r in MB.records(a.classes or None):
         if not MB.complete(r):
             continue
-        sets = {t: ((r.get("gear") or {}).get(t) or {}) for t in ("prebis", "bis")}
+        sets = {t: (MB.page_gear(r, t) or {}) for t in ("prebis", "bis")}   # the pages' sets (full raid)
         gear = {t: db.rows(v["gear"]) for t, v in sets.items() if v.get("gear")}
         key = f"{r['class']}|{r['spec']}"
         specs[key] = {"class": r["class"], "spec": r["spec"], "gear": gear, "ilvl": {t: sets[t].get("ilvl") for t in gear},

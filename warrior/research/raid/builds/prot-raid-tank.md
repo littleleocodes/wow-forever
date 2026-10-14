@@ -81,7 +81,7 @@ Allocation adopted on 2026-09-27 from `opt-prot-tank-raid-tank`, the best build 
 
 ## Rotation (community simulator, raid setting)
 
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-10-09, 5 changes to the base rotation; third-seed check: opt-prot-tank-raid-tank 508 -> 536 DPS (+5.4%), sim preset: Protection 470 -> 487 DPS (+3.8%), prot-raid-tank 501 -> 521 DPS (+3.9%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-14, 5 changes to the base rotation; third-seed check: deep: tank 500 -> 540 DPS (+7.9%), opt-prot-tank-raid-tank 508 -> 536 DPS (+5.4%), sim preset: Protection 470 -> 487 DPS (+3.8%), prot-raid-tank 501 -> 521 DPS (+3.9%)):
   1. move down below 'cast Revenge': cast Shield Slam (+0.2%, pass 1)
   2. insert at the top: cast Shield Wall (+3.2%, pass 3)
   3. insert before the filler: if not Rend is on the target: cast Rend (+0.5%, pass 3)

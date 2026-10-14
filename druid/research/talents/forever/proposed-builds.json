@@ -1400,6 +1400,48 @@
       "open_questions": ["An open-search Feral Combat leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/druid", "https://talentsforever.com/druid/60/15002201-55200102020032012051-50103-6"],
       "replaces": "leveling-feral"
+    },
+    {
+      "id": "restoration-ml-heal",
+      "name": "Restoration — Raid healing (machine-learning search)",
+      "role": "healer",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Restoration",
+      "generated": "2026-10-14",
+      "derived": "raid",
+      "summary": "The Restoration build the machine-learning talent search found in the healer lab on 2026-10-14 (heallab/deep_heal.py: a random forest guiding a genetic search over every legal build of the spec, the heal-choice policy tuned with it, races on fresh seeds, every build one or two moves from the winner checked). Capacity is the healer lab's model of stated assumptions.",
+      "allocation": {
+        "Balance": [
+          ["Genesis", 5],
+          ["Moonglow", 1],
+          ["Improved Moonfire", 2],
+          ["Nature's Majesty", 2],
+          ["Nature's Splendor", 1]
+        ],
+        "Feral Combat": [
+          ["Heart of the Wild", 5]
+        ],
+        "Restoration": [
+          ["Nature's Focus", 2],
+          ["Furor", 3],
+          ["Naturalist", 2],
+          ["Natural Shapeshifter", 3],
+          ["Reflection", 3],
+          ["Gift of Nature", 5],
+          ["Tranquil Spirit", 5],
+          ["Improved Rejuvenation", 3],
+          ["Swiftmend", 1],
+          ["Living Spirit", 3],
+          ["Improved Regrowth", 5]
+        ]
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["+2.4% capacity over the hand draft resto-raid-healer (over the 2% bar: the spec's healing pick; the hand draft stays as the alternative).", "Final race over 400 fresh seeds: capacity 0.604 ± 0.002; resto-raid-healer 0.589, opt-resto-heal-raid-heal 0.589, resto-regrowth-natures-grace 0.555.", "Independent runs agreeing in the last cycle: 2/2; two-move check: 337 one-move and 7,262 two-move builds, none better.", "The healer lab models one healer keeping a five-member group alive (heallab/tables.py); not an in-game measurement."],
+      "open_questions": ["A machine-searched Restoration build: check it against the community's healing builds at launch."],
+      "sources": [],
+      "replaces": "resto-raid-healer"
     }
   ]
 }

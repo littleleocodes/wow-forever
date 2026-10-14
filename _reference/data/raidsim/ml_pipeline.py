@@ -132,9 +132,10 @@ def targets(cls):
     return out
 
 
-def gear(rec, tier, alloc, label, entry, repo, db, zones):
+def gear(rec, tier, alloc, label, entry, repo, db, zones, raid=False):
     trees = R.load_trees(repo, rec["class"])
-    g = GT.make(rec["class"], rec["spec"], tier, entry, R.talents_string(trees, alloc), label, repo, db, zones, GT.args_ns())
+    path = GT.SETS / f"{rec['class']}-{rec['slug']}-{tier}-raid.gear.json" if raid else None
+    g = GT.make(rec["class"], rec["spec"], tier, entry, R.talents_string(trees, alloc), label, repo, db, zones, GT.args_ns(), path=path)
     keep = ("entry", "gear", "date", "chosen", "ilvl", "trinkets", "names", "race_seed1", "confirm_seed2", "weights", "evaluated_on")
     return {k: g[k] for k in keep if k in g}
 
@@ -191,7 +192,9 @@ def compare(rec, repo, setting="dummy"):
     mine = [b for b in data.values() if SM.mode_of(b) == "raid" and SM.spec_of(cls, b) == rec["spec"] and b.get("role") not in ("healer", "tank")
             and nums.get(b["id"], {}).get(key) and not nums[b["id"]].get("tank")]
     hands = [b for b in mine if not b.get("generated") and not b["id"].startswith("opt-") and (setting == "raid" or not b["id"].endswith("-parse"))]
-    gear_items = json.load(open(ROOT / rec["gear"]["bis"]["gear"], encoding="utf-8"))["items"]
+    g_bis, g_raid = rec["gear"]["bis"], (rec["gear"].get("bis-raid") if setting == "raid" else None)
+    # builds in the full-raid winner's entry race in its own set when it has one (final(), 2026-10-14), the others in the BiS set
+    items_of = lambda entry: json.load(open(ROOT / (g_raid if g_raid and entry == g_raid.get("entry") else g_bis)["gear"], encoding="utf-8"))["items"]  # noqa: E731
     w = rec["search"]["bis-dummy" if setting == "dummy" else "bis-raid"]
     rows = {"winner": (w["entry"], flat_of(w["winner"]["allocation"]))}
     for b in sorted(hands, key=lambda b: -nums[b["id"]][key])[:2]:
@@ -203,7 +206,7 @@ def compare(rec, repo, setting="dummy"):
         rows.setdefault(rec["best"], (rec["best_entry"], R.alloc_of(data[rec["best"]])))
     out = {}
     for label, (entry, al) in rows.items():
-        sim = MLT.Sim(cls, entry, setting, gear_items, repo, f"ml-cmp-{cls}")
+        sim = MLT.Sim(cls, entry, setting, items_of(entry), repo, f"ml-cmp-{cls}")
         d, sd = sim.run([al], 100000, 7)[0]
         out[label] = {"entry": entry, "dps": round(d, 2), "se": round(sd / 316.23, 3)}
     hand_ids = {b["id"] for b in hands}
@@ -227,16 +230,35 @@ def final(rec, repo, db, zones):
     if "bis-raid" not in s:
         s["bis-raid"], _ = talents(rec, "raid", "bis", bis, [w, first], runs=1, budget=1500)
         save(rec)
+    # the pages show the full-raid winner (2026-10-02). When it plays another entry than the one the set was chosen for (a hybrid on its
+    # other tree's rotation, a weapon variant), it gets its own set in that entry ("<tier>-raid": the pages' gear) and its search again
+    # there (2026-10-14 page audit: the melee Elemental-Enhancement shaman's page listed the caster set of its dummy winner)
+    rg = rec["gear"].get("bis-raid")
+    if s["bis-raid"]["entry"] != rec["gear"]["bis"].get("entry") and not (rg or {}).get("searched"):
+        rw, re_ = flat_of(s["bis-raid"]["winner"]["allocation"]), s["bis-raid"]["entry"]
+        if not rg:
+            rec["gear"]["bis-raid"] = rg = gear(rec, "bis", rw, "ml winner (full raid)", re_, repo, db, zones, raid=True)
+            save(rec)
+        s["bis-raid"], _ = talents(rec, "raid", "bis", rg["gear"], [rw, w], runs=1, budget=1500, entries=[re_])
+        rg["searched"] = True
+        save(rec)
     if "prebis" not in rec["gear"]:
         rec["gear"]["prebis"] = gear(rec, "prebis", w, "ml winner (bis)", s["bis-dummy"]["entry"], repo, db, zones)
         save(rec)
     pre = rec["gear"]["prebis"]["gear"]
+    pre_raid, ent_raid = pre, None
+    if s["bis-raid"]["entry"] != rec["gear"]["prebis"].get("entry"):   # as above: the full-raid winner's own pre-BiS set
+        if "prebis-raid" not in rec["gear"]:
+            rec["gear"]["prebis-raid"] = gear(rec, "prebis", flat_of(s["bis-raid"]["winner"]["allocation"]), "ml winner (full raid)",
+                                              s["bis-raid"]["entry"], repo, db, zones, raid=True)
+            save(rec)
+        pre_raid, ent_raid = rec["gear"]["prebis-raid"]["gear"], [s["bis-raid"]["entry"]]
     if "prebis-dummy" not in s:
         s["prebis-dummy"], _ = talents(rec, "dummy", "prebis", pre, [w], runs=1, budget=1200)
         save(rec)
     if "prebis-raid" not in s:
-        s["prebis-raid"], _ = talents(rec, "raid", "prebis", pre, [flat_of(s["prebis-dummy"]["winner"]["allocation"]), flat_of(s["bis-raid"]["winner"]["allocation"])],
-                                      runs=1, budget=1200)
+        s["prebis-raid"], _ = talents(rec, "raid", "prebis", pre_raid, [flat_of(s["prebis-dummy"]["winner"]["allocation"]), flat_of(s["bis-raid"]["winner"]["allocation"])],
+                                      runs=1, budget=1200, entries=ent_raid)
         save(rec)
     if "compare" not in rec:
         rec["compare"] = compare(rec, repo)

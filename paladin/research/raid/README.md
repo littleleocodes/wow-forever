@@ -20,6 +20,7 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 | Build | Split | Role |
 |---|---|---|
 | [Retribution — Raid (machine-learning search)](builds/retribution-ml-raid.md) 🔬 | 11/8/32 | DPS |
+| [Holy — Raid healing (machine-learning search)](builds/holy-ml-heal.md) 🔬 | 34/11/6 | HEALER |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

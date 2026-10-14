@@ -537,7 +537,7 @@
       ],
       [
        "Divine Intellect",
-       4
+       5
       ],
       [
        "Healing Light",
@@ -545,10 +545,6 @@
       ],
       [
        "Spiritual Focus",
-       2
-      ],
-      [
-       "Improved Seals",
        2
       ],
       [
@@ -561,10 +557,6 @@
       ],
       [
        "Purifying Power",
-       2
-      ],
-      [
-       "Infusion of Light",
        2
       ],
       [
@@ -586,6 +578,10 @@
      ],
      "Protection": [
       [
+       "Toughness",
+       1
+      ],
+      [
        "Redoubt",
        5
       ],
@@ -595,12 +591,16 @@
       ],
       [
        "Anticipation",
-       2
+       3
+      ],
+      [
+       "Improved Righteous Fury",
+       1
       ]
      ],
      "Retribution": [
       [
-       "Deflection",
+       "Benediction",
        5
       ],
       [
@@ -609,7 +609,7 @@
       ]
      ]
     },
-    "split": "37/8/6",
+    "split": "34/11/6",
     "dps": 0.5716,
     "se": 0.0016,
     "iterations": 100000
@@ -757,5 +757,185 @@
    "minutes": 228.0,
    "policy_changed": true
   }
- ]
+ ],
+ "two_move": {
+  "steps": [
+   {
+    "one_move": 1894,
+    "two_move": 12908,
+    "expanded": 25,
+    "screen": 24,
+    "screen_best": [
+     [
+      "2 Improved Seals + 1 Infusion of Light -> 2 Toughness + 1 Improved Righteous Fury (tier chain); then 1 Illumination + 1 Holy Conduit -> 1 Holy Shock + 1 Light's Vigil",
+      0.0106
+     ],
+     [
+      "2 Improved Seals + 1 Infusion of Light -> 2 Toughness + 1 Improved Righteous Fury (tier chain); then 1 Illumination + 1 Consecrated Ground -> 1 Holy Shock + 1 Light's Vigil",
+      0.0106
+     ],
+     [
+      "2 Improved Seals + 1 Infusion of Light -> 2 Toughness + 1 Improved Righteous Fury (tier chain); then 1 Purifying Power + 1 Illumination -> 1 Holy Shock + 1 Light's Vigil",
+      0.0106
+     ],
+     [
+      "2 Improved Seals + 1 Infusion of Light -> 2 Toughness + 1 Improved Righteous Fury (tier chain); then 1 Unyielding Faith + 1 Illumination -> 1 Holy Shock + 1 Light's Vigil",
+      0.0106
+     ],
+     [
+      "2 Improved Seals + 1 Infusion of Light -> 2 Toughness + 1 Improved Righteous Fury (tier chain); then 1 Spiritual Focus + 1 Illumination -> 1 Holy Shock + 1 Light's Vigil",
+      0.0106
+     ]
+    ],
+    "raced": 30,
+    "confirmed": [
+     [
+      "2 Improved Seals + 1 Infusion of Light -> 2 Toughness + 1 Improved Righteous Fury (tier chain); then 1 Toughness -> Anticipation",
+      0.005
+     ],
+     [
+      "2 Improved Seals + 1 Infusion of Light -> 2 Toughness + 1 Improved Righteous Fury (tier chain); then 1 Toughness -> Guardian's Favor",
+      0.005
+     ],
+     [
+      "2 Improved Seals + 1 Infusion of Light -> 2 Toughness + 1 Improved Righteous Fury (tier chain); then 1 Toughness -> Precision",
+      0.005
+     ],
+     [
+      "2 Improved Seals + 1 Infusion of Light -> 2 Toughness + 1 Improved Righteous Fury (tier chain); then 1 Holy Conduit -> Conviction",
+      0.005
+     ],
+     [
+      "2 Improved Seals + 1 Infusion of Light -> 2 Toughness + 1 Improved Righteous Fury (tier chain); then 1 Holy Conduit -> Improved Judgement",
+      0.005
+     ]
+    ],
+    "minutes": 89.4
+   },
+   {
+    "one_move": 633,
+    "two_move": 11163,
+    "expanded": 25,
+    "screen": 24,
+    "screen_best": [
+     [
+      "1 Infusion of Light -> Divine Intellect; then 2 Holy Power -> Conviction",
+      0.0215
+     ],
+     [
+      "1 Infusion of Light -> Divine Intellect; then 2 Holy Power -> Improved Judgement",
+      0.0215
+     ],
+     [
+      "1 Infusion of Light -> Divine Intellect; then 2 Holy Power -> Benediction",
+      0.0215
+     ],
+     [
+      "1 Infusion of Light -> Divine Intellect; then 2 Holy Power -> Sacred Duty",
+      0.0215
+     ],
+     [
+      "1 Infusion of Light -> Divine Intellect; then 2 Holy Power -> Shield Specialization",
+      0.0215
+     ]
+    ],
+    "raced": 30,
+    "confirmed": [
+     [
+      "1 Holy Power -> Divine Intellect; then 3 Deflection -> Benediction",
+      0.0047
+     ],
+     [
+      "1 Holy Power -> Divine Intellect; then 3 Divine Strength -> Benediction",
+      0.0047
+     ],
+     [
+      "1 Holy Power -> Divine Intellect; then 5 Deflection -> Benediction",
+      0.004
+     ],
+     [
+      "1 Infusion of Light -> Holy Conduit; then 1 Improved Righteous Fury -> Conviction",
+      -0.0027
+     ],
+     [
+      "1 Infusion of Light -> Holy Conduit; then 2 Holy Conduit -> Conviction",
+      -0.0027
+     ]
+    ],
+    "minutes": 64.1
+   },
+   {
+    "one_move": 651,
+    "two_move": 14469,
+    "expanded": 25,
+    "screen": 24,
+    "screen_best": [
+     [
+      "1 Infusion of Light -> Holy Power; then 1 Improved Righteous Fury -> Benediction",
+      0.0214
+     ],
+     [
+      "1 Infusion of Light -> Holy Power; then 1 Holy Conduit -> Benediction",
+      0.0214
+     ],
+     [
+      "1 Infusion of Light -> Holy Power; then 2 Deflection -> Benediction",
+      0.0214
+     ],
+     [
+      "1 Infusion of Light -> Holy Power; then 1 Deflection -> Benediction",
+      0.0214
+     ],
+     [
+      "1 Infusion of Light -> Holy Power; then 1 Consecrated Ground -> Benediction",
+      0.0214
+     ]
+    ],
+    "raced": 30,
+    "confirmed": [
+     [
+      "1 Infusion of Light -> Holy Power; then 2 Deflection -> Benediction",
+      0.0047
+     ],
+     [
+      "1 Infusion of Light -> Holy Power; then 1 Improved Righteous Fury -> Benediction",
+      0.0043
+     ],
+     [
+      "1 Infusion of Light -> Holy Power; then 1 Holy Conduit -> Benediction",
+      0.0043
+     ],
+     [
+      "1 Infusion of Light -> Holy Power; then 1 Deflection -> Benediction",
+      0.0043
+     ],
+     [
+      "1 Infusion of Light -> Holy Power; then 1 Consecrated Ground -> Benediction",
+      0.0043
+     ]
+    ],
+    "minutes": 81.8
+   }
+  ],
+  "moved": true
+ },
+ "final": {
+  "deep winner": {
+   "capacity": 0.5753,
+   "se": 0.001
+  },
+  "holy-raid-healer": {
+   "capacity": 0.5666,
+   "se": 0.0015
+  },
+  "opt-holy-heal-raid-heal": {
+   "capacity": 0.5563,
+   "se": 0.0013
+  }
+ },
+ "minutes": 255.5,
+ "build": {
+  "written": "holy-ml-heal",
+  "gain_vs_hand": 0.01535474761736677
+ }
 }

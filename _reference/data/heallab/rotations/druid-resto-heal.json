@@ -2,13 +2,18 @@
  "class": "druid",
  "spec": "resto-heal",
  "build": "resto-raid-healer",
- "date": "2026-09-27",
+ "builds": [
+  "resto-raid-healer",
+  "druid-restoration-winner-3"
+ ],
+ "date": "2026-10-14",
  "runs": 60,
  "confirm": 200,
  "tables": {
-  "EMERGENCY": 0.55,
+  "HOT_REFRESH_DEFICIT": 0.05,
   "RAID_HEAL_AT": 0.5,
-  "POTION_BELOW": 0.8
+  "POTION_BELOW": 0.8,
+  "POTION_FIRST": 0.0
  },
  "defaults": {
   "DOWNRANK": true,
@@ -19,26 +24,17 @@
   "POTION_BELOW": 0.65,
   "POTION_FIRST": 45.0
  },
- "changes": [
-  {
-   "round": 1,
-   "change": "RAID_HEAL_AT 0.7 -> 0.5",
-   "gain_seeds1": 0.02111954794278681,
-   "gain_seeds2": 0.021690306491151112
-  },
-  {
-   "round": 2,
-   "change": "EMERGENCY 0.35 -> 0.55",
-   "gain_seeds1": 0.012139867879500388,
-   "gain_seeds2": 0.025016035920461643
-  },
-  {
-   "round": 3,
-   "change": "POTION_BELOW 0.65 -> 0.8",
-   "gain_seeds1": 0.0168808091853474,
-   "gain_seeds2": 0.013456009200690122
-  }
- ],
- "capacity_before": 0.689951171875,
- "capacity_after": 0.7227050781250001
+ "changes": [],
+ "capacity_before": 0.59235595703125,
+ "capacity_after": 0.59235595703125,
+ "capacity_by_build": {
+  "resto-raid-healer": [
+   0.59235595703125,
+   0.59235595703125
+  ],
+  "druid-restoration-winner-3": [
+   0.60435302734375,
+   0.60435302734375
+  ]
+ }
 }

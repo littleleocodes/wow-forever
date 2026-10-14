@@ -1,0 +1,96 @@
+# Page audit of 2026-10-14
+
+Hand-kept. User request (2026-10-14): "Some classes are missing the links and table for their BiS and Pre-BiS sets and instead just have a list.
+I want to create a tier list for the DPS as well Healers and Tanks after the testing is done. I need you to do a full complete audit of the
+entire GitHub repo to make sure everything is streamlined between each of the classes and uniform. Double checking each and every single page."
+
+Method: a structural pass over all 842 tracked .md files (files present per class, `## ` sections per page type), then ten read-only reviews
+(one per class, one for the top-level and `_reference` pages): every player page read in full, every research page checked by script (relative
+links, table columns, talentsforever links, build and simulator numbers, dates) and the READMEs, guides and build pages read. 272 findings.
+Done while the 70291 sweep ran P3; the sweep's P4 (ML records, fresh) and P5 (re-race and regen) rewrite most generated pages, so each item
+says whether the sweep fixes it, a code or data change is needed, or the text is hand-kept. Status column: open / fixed (date) / sweep.
+
+## A. Fixed by the sweep (verify after P5)
+
+| # | Finding | Why the sweep fixes it |
+|---|---|---|
+| A1 | Hunter raid pages show the gear as a plain list (no linked table, no simulator link); `gear-links.json` has no hunter key; Beast-Survival has no gear and no tier row | the hunter ML records were reset 2026-10-07 (bench target fix) and never finished; `gear_links.py` keeps only complete records. P4 runs them fresh, P5's `--rank` rewrites gear-links |
+| A2 | No "Open in the simulator" links for Fire, Frostfire, Feral, Fury (Arms dummy only); tier-table talent links with 45-50 points (Fire, Frostfire, Feral 9/35/7 -> 9/32/7, Arms, Fury) | ML records searched on pre-70170 trees (Hot Streak, King of the Jungle, Boundless Rage, Precision); `tf_link` drops the removed talents silently. P4 fresh |
+| A3 | "The searches are queued to run again", gear-tier numbers of 2026-10-01/04 (Feral 17% low, others 3-7% high), `-ml-raid` build notes "under the 2% bar" and simulator 40be98e | stale ML records; P4/P5 |
+| A4 | Elemental's pre-BiS full-raid winner searched in the Enhancement entry (simulator link opens the Enhancement sim; 30/8/13 without Lava Burst) | record of 2026-10-03, before the own-rotation filter in `ml_pipeline.targets` (2026-10-08); P4 fresh applies it |
+| A5 | `_reference/dps-rankings.md` from 2026-10-04 (-4 links, 40be98e, numbers off the pages by up to 20%) | P5 `ml_builds --rank` |
+| A6 | Healer pages show the pre-P3 capacities; `holy-ml-heal`, `discipline-ml-heal`, `restoration-ml-heal` (druid) not on the pages; `heallab-summary.md` shows `cand-resto-r2` | P5 regen (check the candidate id after) |
+| A7 | `deep-optimization*.md` with `-4` links, 40be98e | regenerated when their tools run; the shaman and hunter damage reports are not rerun by the sweep: B-list |
+| A8 | Generated `_reference` reports from before 70291 (race-sweep, raid-buff-values, setting-audit, scenario-audit, unused-abilities, sim-gaps, pvp-check, search-check with 2 of 4 positives) | unused-abilities and search-check in P5/P6; the others: B-list |
+
+## B. Code and renderer fixes (before P5's regen)
+
+| # | Finding | Where | Status |
+|---|---|---|---|
+| B1 | A hybrid's gear sets are chosen in the training-dummy winner's entry, while the page shows the full-raid winner: the melee Elemental-Enhancement page lists caster gear | `ml_pipeline.final` (bis from `bis-dummy-1`, prebis from `bis-dummy`) | fixed 2026-10-14: a full-raid winner in another entry gets `<tier>-raid` sets (`gear_tiers.make(path=)`, files `tiers/<class>-<slug>-<tier>-raid.gear.json`) and its raid searches again in that entry; pages, gear links, the alignment and the comparison race read them (`page_gear`); tested on the shaman hybrid record with stubbed sims |
+| B2 | Gear lists fall back to `raidsim/ml/prev/` in `render_modes.ml_tiers` but `gear_links.py` has no such fallback; the `_prev` note prints the record date and drops the stale caveat | render_modes 144-145, gear_links | open |
+| B3 | Recommended raid builds outside every ML record get no gear (rogue Daggers split, hunter Beast-Survival, the open hybrids) | ml_pipeline targets / gear_links | open (check after P4's targets) |
+| B4 | Healer and tank raid pages have no gear section at all (7 pages) | render_modes; no healer or tank gear sets exist | needs a decision (F2) |
+| B5 | Research leveling README, `guide.md` and `rotation.md` recommend and describe the PIPELINE hand draft, not the page pick (every class); rotation.md lacks the page builds' own rotations (arcane-, subtlety-, demonology-, destruction-leveling...) and repeats headings | render_fightlab_sections, render_leveling_guides, render_rotations | open |
+| B6 | "Model findings" / "Beta hypotheses" text hard-coded with builds and talents of September (Vitality, King of the Jungle, Restless Blades, Drain Hope, old splits) in both research READMEs of every class | render_optimizer_sections.py FINDINGS | open |
+| B7 | Derived builds (ml, open) labelled "ours: hand draft" in the DPS rankings and rotation pages | render_rotations.py:86 | open |
+| B8 | Raw build ids in player prose ("beat the hand-made build (arms-2h-raid)", "[resto-raid-healer]") | render_modes ~513-523 | open |
+| B9 | Builds listed twice ("Other setups" and "Other builds"); "Then press the first one that is ready" with nothing before it; doubled parentheses "Daggers (split) (optimized)"; "-1.0%" next to "-1%"; mage AoE build labelled like the single-target one | render_modes, render_start_here | open |
+| B10 | `priest/leveling/smite.md` "No leveling build for this spec yet" (the hybrid pointer branch never reached) | render_modes 490-498 | open |
+| B11 | "Not in this build" misses talents whose lines stay (Renewed Hope, Maelstrom Weapon, Berserk lines kept) | render_modes / simple_rotation | open |
+| B12 | Smite page "Advanced: Dark Sacrifice" (an Undead racial) | simple_rotation.advanced: filter racials | open |
+| B13 | Leveling numbers taken from stale `*-opt.json` variant reports (`setdefault` over sorted files): Elemental leveling 38 s from a 70009 report | render_modes.leveling_numbers | open |
+| B14 | Fight-lab variant (AoE, -opt) and sensitivity reports on 70009 in every class, quoted by the research READMEs | rebuild.py --steps variants,sensitivity after the sweep | open |
+| B15 | Enchant links: "Enchant Boots - Greater Agility" links to Enchant Gloves - Agility (shared effect spell 13823) | gear_links.enchant: prefer the item id | open |
+| B16 | Spell README prints a raw dict ("{'beta': 234, 'demo': 0, 'classic': 0}") in all 9 classes; baseline-audit prints the split twice | build_forever_spells.py, validate_builds.py | open |
+| B17 | Small artifacts: "0 respec(s).)." ; "rotations changed in cycle ."; "a Affliction/Destruction"; `spell 439440` unnamed (shaman Windfury); open-search rows comparing a winner with its own written copy; open-search text "plays it faster ... the page shows it with that rotation" (against the own-rotation rule) | several renderers | open |
+| B18 | Index: no healer or tank picks on the top-level README; "Two specs in one cell are a tie" with five in the mage cell | render_modes | open (with the tier list) |
+| B19 | Healer (and tank) derived builds said "searched in the community's raid simulator" | render_modes.derived_text | fixed 2026-10-14 (healer lab / tank value wording) |
+
+## C. Data fixes (after the sweep: P3 tanks and P4 rewrite proposed-builds.json, an edit now could be overwritten)
+
+| # | Finding | Status |
+|---|---|---|
+| C1 | **Leveling builds without an order** (lost in the 2026-10-03 70170 repair): warrior `opt-arms-2h-raid-leveling-st`, `opt-fury-dw-raid-leveling-st`, `leveling-arms`; druid `opt-feral-cat-dps-leveling-st` (the page pick), `leveling-feral`; paladin `protection-leveling` (note garbled "out;  in;"); mage `opt-fire-leveling-leveling-st`, `fire-leveling`. The fight lab then gives them all 51 points from level 10, so they beat the open builds raced with orders (warrior pages: Arms opt 25 s vs open 27 s, the open search says the reverse): the recommended warrior and druid leveling builds are wrong until re-raced | open |
+| C2 | Paladin Protection leveling numbers from 2026-09-30 (raid_path_leveling, before 70170): 31 s against the open winner's 31.5 s measured now and ~35.7 s for the same build; rerun raid_path_leveling for every healer and tank | open |
+| C3 | Removed talents in `core[]` (Precision in 5 warrior builds, King of the Jungle in 4 druid builds) and in build names (Hot Streak, Drain Hope); wrong tooltip numbers in core text (Vengeance 5 stacks, Sanctified Judgement 20%, Improved Mind Flay) | open |
+| C4 | Build names that contradict the build: "Holy (31/0/20)" for 33/0/18; "Destruction — Incinerate" under the Shadow Bolt hybrid; "Leveling — Assassination with swords"; Elemental hand draft 29/22/0 filed under the melee hybrid (no `spec` field) while it plays and beats the caster pick (518 vs 510) | open |
+| C5 | `HYBRID_NAMES`: no priest hybrid names (fallback "Discipline/Shadow hybrid"); one description for both modes (shaman hybrid "a Lightning Bolt caster" on the melee raid page; mage Arcane-Frost "Arcane Power, Presence of Mind" which the build lacks; warlock Shadow Bolt hybrid "DS/Ruin"; paladin "Shockadin" leveling build without Holy Shock) | open |
+| C6 | Warlock and other gear sets without head/leg arcanums and with a fire-resistance cloak enchant | open: check fill_enchants templates |
+| C7 | `new-builds.json` note: Aspect of the Beast "not in the simulator" (patched 2026-09-29) | open |
+
+## D. Hand-kept text that contradicts the pages
+
+| # | Finding | Status |
+|---|---|---|
+| D1 | **Player-facing rotation advice against the tuned rules**: hunter Marksmanship leveling casts Arcane Shot, the melee pages open with Serpent Sting; both rules say never cast (`leveling-steps.json`, `guides/hunter.json`) | open, high |
+| D2 | Guides written for other builds or orders: shaman Elemental leveling (talent levels 30/40/46/51/60 vs the table), Enhancement (36/41 vs 37/42), warrior Fury and Protection leveling (talents the builds lack), druid Balance (Eclipse 1 point vs 3), warlock Demonology raid ("Corruption is not in this build"), priest Holy/Discipline leveling ("Shadow 26" vs 25), mage leveling Frost/Fire ("drink below a third", "leaves Ice Lance out"), druid Feral raid (Tiger's Fury) | open |
+| D3 | Guides not stamped since the rotations were re-tuned (warlock, rogue, shaman leveling pages say so) and hybrids without a guide (mage Frostfire, warlock Shadow Bolt hybrid, shaman Elemental-Enhancement, priest hybrids, paladin Shockadin leveling; rogue Daggers split raid) | open |
+| D4 | Class README hand sections: warlock "about tied with Affliction-Demonology" (it is last), "22 new talents, 20 removed"; mage "Hot Streak", "Arcane the slowest leveler"; rogue "Restless Blades", "Daggers (split) leveling only"; paladin "Shockadin only a PvP draft"; header wording differs per class | open |
+| D5 | `research/talents/forever/README.md` (adaptation notes, all 9 classes): build 70009, decisions and numbers of September, a link to a nonexistent `builds-README.md` | open |
+| D6 | Repo docs: CLAUDE.md (70009 at line 84, pin b0f0df3, training-dummy column and `pvp/` player pages in the structure rules), HANDOFF.md (2026-10-09, "P2 in progress", old layout), `_reference/README.md` (pvp folders, 70009, old paths, missing scripts and pages), `_templates/` (old sections, paths, schema without spec/generated/derived/replaces/raid_path/preset), sources.md, overview, methodology, talent-system, `_reference/data/*/README.md` paths | open |
+| D7 | Orphan pages: raid hybrid stubs (priest hybrid-*-shadow, hunter melee-split), family-search.md, open-search.md, 35 `_reference` pages | open |
+
+## E. Tier list (requested for after the sweep)
+
+| Role | Comparable number | Caveats |
+|---|---|---|
+| DPS | full-raid DPS (the pages' ranking; P5 race-neutral) | community simulator plus our patches; under 2-3% is a tie; every spec needs its own gear tiers (A1, B3) |
+| Healers | healer-lab capacity (same group, damage and fight for every class) | our model, not a community simulator; per-class gear stats are assumed (`heallab/tables.py`); Discipline has no heal model |
+| Tanks | none yet: "tank value" is relative to each class's own hand draft; raw threat/s and damage taken/s exist per tank but each in its own gear set, bear threat on our +50% patch | needs a common reference and equal-tier tank gear (decision F1) |
+
+## F. Decisions (user, 2026-10-14)
+
+- F1, tanks: **no tank tiers** ("No tank tiers"): the tier list lists the three tanks with their numbers and says they are not comparable
+  across classes (tank value is relative to each class's own hand draft; raw threat and damage taken come from different gear sets).
+- F2, healer and tank gear: **real sets for both** ("Real sets for both"): tanks get pre-BiS and BiS sets chosen in the simulator like the
+  damage specs; healers get sets chosen from healing stat weights measured in the healer lab (new work: healers are in no community
+  simulator); both pages get the same linked gear table as the damage pages.
+- F3, tier cut-offs: **S/A/B/C by % of the best spec of the role**: S within 3% (a tie, the pages' TIE), A within 10%, B within 20%, C below.
+
+## G. Order of work
+
+1. While the sweep runs (code and hand-kept text only; the sweep's P5 regen picks them up): B2-B18 renderers, D1-D7 text, the tier-list
+   renderer, the healer stat-weight and gear tools. B1 was needed before P4 (done).
+2. After the sweep (P3 tanks and P4 rewrite proposed-builds.json, so data edits wait): C1-C7 data, the leveling re-races C1/C2 need, the
+   tank and healer gear runs, the variant and sensitivity reports (B14), then regen and the tier list; a last check of every page.

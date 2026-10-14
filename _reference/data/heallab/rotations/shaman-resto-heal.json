@@ -4,9 +4,9 @@
  "build": "resto-raid-healer",
  "builds": [
   "resto-raid-healer",
-  "shaman-winner-3"
+  "shaman-restoration-winner-3"
  ],
- "date": "2026-10-03",
+ "date": "2026-10-14",
  "runs": 60,
  "confirm": 200,
  "tables": {
@@ -24,16 +24,16 @@
   "POTION_FIRST": 45.0
  },
  "changes": [],
- "capacity_before": 0.7027099609375,
- "capacity_after": 0.7027099609375,
+ "capacity_before": 0.6985205078125001,
+ "capacity_after": 0.6985205078125001,
  "capacity_by_build": {
   "resto-raid-healer": [
-   0.7027099609375,
-   0.7027099609375
+   0.6985205078125001,
+   0.6985205078125001
   ],
-  "shaman-winner-3": [
-   0.6981396484375001,
-   0.6981396484375001
+  "shaman-restoration-winner-3": [
+   0.6936645507812501,
+   0.6936645507812501
   ]
  }
 }

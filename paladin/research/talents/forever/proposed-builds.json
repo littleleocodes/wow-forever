@@ -1443,6 +1443,48 @@
       "open_questions": ["An open-search Retribution leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/paladin", "https://talentsforever.com/paladin/60/51103101-503-0522513100133032-6"],
       "replaces": "leveling-retribution"
+    },
+    {
+      "id": "holy-ml-heal",
+      "name": "Holy — Raid healing (machine-learning search)",
+      "role": "healer",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Holy",
+      "generated": "2026-10-13",
+      "derived": "raid",
+      "summary": "The Holy build the machine-learning talent search found in the healer lab on 2026-10-13 (heallab/deep_heal.py: a random forest guiding a genetic search over every legal build of the spec, the heal-choice policy tuned with it, races on fresh seeds, every build one or two moves from the winner checked). Capacity is the healer lab's model of stated assumptions.",
+      "allocation": {
+        "Holy": [
+          ["Divine Strength", 5],
+          ["Divine Intellect", 5],
+          ["Healing Light", 3],
+          ["Spiritual Focus", 2],
+          ["Unyielding Faith", 2],
+          ["Reverence", 3],
+          ["Purifying Power", 2],
+          ["Illumination", 5],
+          ["Divine Favor", 1],
+          ["Consecrated Ground", 1],
+          ["Holy Power", 5]
+        ],
+        "Protection": [
+          ["Toughness", 1],
+          ["Redoubt", 5],
+          ["Guardian's Favor", 1],
+          ["Anticipation", 3],
+          ["Improved Righteous Fury", 1]
+        ],
+        "Retribution": [
+          ["Benediction", 5],
+          ["Holy Conduit", 1]
+        ]
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["Final race over 400 fresh seeds: capacity 0.575 ± 0.001; holy-raid-healer 0.567, opt-holy-heal-raid-heal 0.556.", "Independent runs agreeing in the last cycle: 2/2; two-move check: 651 one-move and 14,469 two-move builds, none better.", "The healer lab models one healer keeping a five-member group alive (heallab/tables.py); not an in-game measurement."],
+      "open_questions": ["A machine-searched Holy build: check it against the community's healing builds at launch."],
+      "sources": []
     }
   ]
 }

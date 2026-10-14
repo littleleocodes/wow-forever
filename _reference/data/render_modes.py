@@ -118,6 +118,12 @@ def tier_dps(r, k):
     return f"{w['dps']:.0f}" if w else "-"
 
 
+def page_gear(r, tier):
+    """The set a page shows for a tier (as raidsim/ml_builds.page_gear): the full-raid winner's own set when it plays another entry."""
+    g = r.get("gear") or {}
+    return g.get(f"{tier}-raid") or g.get(tier)
+
+
 def tier_lines(cls, spec, src, top):
     """A spec raid page's DPS by gear tier: the best talents per tier and setting in the spec's own gear, and that gear."""
     r = TIERS.get((cls, spec))
@@ -147,14 +153,14 @@ def tier_lines(cls, spec, src, top):
         o += tier_stale_note([tier_date(r)])
     gt = gear_tables.table(cls, spec)   # every item and enchant linked to Wowhead, where it drops (raidsim/gear_links.py)
     if gt:
-        il = "; ".join(f"{name} {((r.get('gear') or {}).get(t) or {}).get('ilvl', '-')}" for t, name in TIER_KEYS if (r.get("gear") or {}).get(t))
+        il = "; ".join(f"{name} {(page_gear(r, t) or {}).get('ilvl', '-')}" for t, name in TIER_KEYS if page_gear(r, t))
         o += [f"**The gear** (average item level: {il}; each item opens its Wowhead page, with where it drops and its enchant):", ""] + gt + [""]
         sl = gear_tables.sim_line(cls, spec)
         if sl:
             o += [sl, ""]
         return o
     for t, name in TIER_KEYS:
-        g = (r.get("gear") or {}).get(t) or {}
+        g = page_gear(r, t) or {}
         if g.get("names"):
             o.append(f"- **{name} gear** (average item level {g.get('ilvl', '-')}): "
                      + "; ".join(f"{SLOTS[i] if i < len(SLOTS) else '?'}: {n}" for i, n in enumerate(g["names"]) if n))
@@ -388,6 +394,12 @@ def derived_text(mode, top):
     if top["id"].endswith("-open-leveling"):
         return ("found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling "
                 "simulator; the winner picked by a race at levels 20-60)")
+    if top["id"].endswith("-ml-heal"):   # 2026-10-14 page audit: healer builds read "community's raid simulator"
+        return ("found by this project's deep search over every legal build of the spec in the healer lab (this project's healing "
+                "model; healers are not in the community simulator), then raced against the spec's builds")
+    if top["id"].endswith("-ml-tank"):
+        return ("found by this project's deep search over every legal build of the spec in the community's raid simulator, on tank value "
+                "(threat and damage taken), then raced against the spec's builds")
     return {"leveling": "searched in the fight lab (this project's leveling simulator) from the spec's builds and the stats model's best one",
             "raid": ("found by this project's machine-learning search over every legal build of the spec in the community's raid "
                      "simulator (phase-1 BiS gear, then raced against the spec's builds)" if top["id"].endswith("-ml-raid")

@@ -22,6 +22,7 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 |---|---|---|
 | [Feral Combat — Shifting Power (the simulator's Feral Cat 9/35/7)](builds/feral-combat-shifting-power-raid.md) 🔬 | 9/35/7 | DPS |
 | [Feral Combat — Raid (open talent search)](builds/feral-combat-open-raid.md) 🔬 | 9/33/9 | DPS |
+| [Restoration — Raid healing (machine-learning search)](builds/restoration-ml-heal.md) 🔬 | 11/5/35 | HEALER |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

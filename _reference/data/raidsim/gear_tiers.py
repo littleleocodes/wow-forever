@@ -244,12 +244,13 @@ def set_path(cls, spec, tier):
     return SETS / f"{cls}-{SM.slug(spec)}-{tier}.gear.json"
 
 
-def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a):
-    """The tier's set for one spec: written to its gear file, returned as the record."""
+def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=None):
+    """The tier's set for one spec: written to its gear file (`path`: another file, e.g. the full-raid winner's set of a spec whose
+    full-raid winner plays another entry; ml_pipeline.final), returned as the record."""
     e = R.SPECS[cls][entry_name]
     cur = json.load(open(R.sim_path(e["gear"]) if pathlib.Path(R.sim_path(e["gear"])).is_absolute() else repo / e["gear"], encoding="utf-8"))["items"]
     pool = pool_of(tier, zones)
-    p = set_path(cls, spec, tier)
+    p = path or set_path(cls, spec, tier)
     # 2026-10-09: empty enchant slots are filled from the role's template before and after the search (fill_enchants.py: a set grown
     # from a preset without enchants kept none, the Balance, feral, Retribution, Arms and Fury sets)
     import fill_enchants as FE

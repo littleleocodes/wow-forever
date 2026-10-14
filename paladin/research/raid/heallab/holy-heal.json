@@ -1,10 +1,10 @@
 {
  "class": "paladin",
  "spec": "holy-heal",
- "date": "2026-09-30",
+ "date": "2026-10-14",
  "runs": 60,
  "steps": 10,
- "seconds": 185,
+ "seconds": 156,
  "assumptions": {
   "DURATION": 300.0,
   "TANK_HP": 9000.0,
@@ -32,20 +32,20 @@
  "results": {
   "holy-raid-healer": {
    "split": "33/0/18",
-   "capacity": 0.668115234375,
+   "capacity": 0.565283203125,
    "summary": {
-    "multiplier": 0.668115234375,
+    "multiplier": 0.565283203125,
     "shares": {
-     "Holy Light": 0.5229191947260762,
-     "Flash of Light": 0.43876123983444976,
-     "Lay on Hands": 0.03338872740992421,
-     "Holy Shock": 0.004930838029549842
+     "Flash of Light": 0.5769779787671958,
+     "Holy Light": 0.3881873198141562,
+     "Lay on Hands": 0.028328030863878306,
+     "Holy Shock": 0.006506670554769713
     },
-    "hps": 379.9199138051489,
-    "overheal_share": 0.0706504648306846,
-    "oom_time": 23.745000000000132,
-    "mana_left": 631.975833333354,
-    "survival": 0.85
+    "hps": 317.70651632112197,
+    "overheal_share": 0.07042566758441304,
+    "oom_time": 34.341666666666896,
+    "mana_left": 579.7726000000165,
+    "survival": 0.95
    },
    "stats": {
     "intellect": 451,
@@ -58,19 +58,19 @@
   },
   "opt-holy-heal-raid-heal": {
    "split": "23/0/28",
-   "capacity": 0.64208984375,
+   "capacity": 0.5611572265625,
    "summary": {
-    "multiplier": 0.64208984375,
+    "multiplier": 0.5611572265625,
     "shares": {
-     "Holy Light": 0.49844871976160215,
-     "Flash of Light": 0.45469313703514785,
-     "Lay on Hands": 0.046858143203250005
+     "Flash of Light": 0.5865703604737067,
+     "Holy Light": 0.38028101357411165,
+     "Lay on Hands": 0.033148625952181716
     },
-    "hps": 361.31534554792967,
-    "overheal_share": 0.06893783264291126,
-    "oom_time": 32.82833333333354,
-    "mana_left": 500.25123333334625,
-    "survival": 0.9166666666666666
+    "hps": 309.21342003092536,
+    "overheal_share": 0.0626342278334102,
+    "oom_time": 36.27166666666692,
+    "mana_left": 463.83873333334725,
+    "survival": 0.85
    },
    "stats": {
     "intellect": 451,
@@ -83,20 +83,20 @@
   },
   "cand-holy-r1": {
    "split": "23/0/28",
-   "capacity": 0.6259033203124998,
+   "capacity": 0.55576171875,
    "summary": {
-    "multiplier": 0.6259033203124998,
+    "multiplier": 0.55576171875,
     "shares": {
-     "Flash of Light": 0.48593471369558194,
-     "Holy Light": 0.46320824200102123,
-     "Lay on Hands": 0.043262104367895404,
-     "Holy Shock": 0.007594939935501512
+     "Flash of Light": 0.574946145567278,
+     "Holy Light": 0.3929874202352742,
+     "Lay on Hands": 0.02678019392313407,
+     "Holy Shock": 0.005286240274313749
     },
-    "hps": 351.8141049430003,
-    "overheal_share": 0.05988361327975469,
-    "oom_time": 29.76666666666686,
-    "mana_left": 536.0862666666833,
-    "survival": 0.8666666666666667
+    "hps": 308.0634898940458,
+    "overheal_share": 0.05372229285867994,
+    "oom_time": 33.27500000000022,
+    "mana_left": 479.12280000002005,
+    "survival": 0.9333333333333333
    },
    "stats": {
     "intellect": 451,
@@ -109,19 +109,44 @@
   },
   "cand-holy-r2": {
    "split": "23/0/28",
-   "capacity": 0.64208984375,
+   "capacity": 0.5611572265625,
    "summary": {
-    "multiplier": 0.64208984375,
+    "multiplier": 0.5611572265625,
     "shares": {
-     "Holy Light": 0.49844871976160215,
-     "Flash of Light": 0.45469313703514785,
-     "Lay on Hands": 0.046858143203250005
+     "Flash of Light": 0.5865703604737067,
+     "Holy Light": 0.38028101357411165,
+     "Lay on Hands": 0.033148625952181716
     },
-    "hps": 361.31534554792967,
-    "overheal_share": 0.06893783264291126,
-    "oom_time": 32.82833333333354,
-    "mana_left": 500.25123333334625,
-    "survival": 0.9166666666666666
+    "hps": 309.21342003092536,
+    "overheal_share": 0.0626342278334102,
+    "oom_time": 36.27166666666692,
+    "mana_left": 463.83873333334725,
+    "survival": 0.85
+   },
+   "stats": {
+    "intellect": 451,
+    "spirit": 283,
+    "healing": 360,
+    "mp5": 57,
+    "mana": 8282,
+    "crit": 0.1287
+   }
+  },
+  "holy-ml-heal": {
+   "split": "34/11/6",
+   "capacity": 0.5846435546875001,
+   "summary": {
+    "multiplier": 0.5846435546875001,
+    "shares": {
+     "Flash of Light": 0.5456245695852207,
+     "Holy Light": 0.4227028297986638,
+     "Lay on Hands": 0.03167260061611544
+    },
+    "hps": 323.6235673929682,
+    "overheal_share": 0.053967757448541355,
+    "oom_time": 35.00500000000023,
+    "mana_left": 481.5048666666798,
+    "survival": 0.85
    },
    "stats": {
     "intellect": 451,
@@ -138,18 +163,18 @@
    {
     "talent": "Benediction",
     "ranks": 5,
-    "sim_delta": 0.0,
-    "cap_with": 0.668115234375,
-    "cap_without": 0.668115234375,
+    "sim_delta": -0.013295832267962082,
+    "cap_with": 0.565283203125,
+    "cap_without": 0.572900390625,
     "ev_delta": 0.005191423641474102,
-    "simulated": false
+    "simulated": true
    },
    {
     "talent": "Conviction",
     "ranks": 3,
     "sim_delta": 0.0,
-    "cap_with": 0.668115234375,
-    "cap_without": 0.668115234375,
+    "cap_with": 0.565283203125,
+    "cap_without": 0.565283203125,
     "ev_delta": 0.0,
     "simulated": false
    },
@@ -157,62 +182,62 @@
     "talent": "Deflection",
     "ranks": 3,
     "sim_delta": 0.0,
-    "cap_with": 0.668115234375,
-    "cap_without": 0.668115234375,
+    "cap_with": 0.565283203125,
+    "cap_without": 0.565283203125,
     "ev_delta": 0.0,
     "simulated": false
    },
    {
     "talent": "Divine Favor",
     "ranks": 1,
-    "sim_delta": 0.033888699988665914,
-    "cap_with": 0.668115234375,
-    "cap_without": 0.6462158203125,
+    "sim_delta": 0.005078786300299439,
+    "cap_with": 0.565283203125,
+    "cap_without": 0.5624267578125001,
     "ev_delta": 0.041076259579611064,
     "simulated": true
    },
    {
     "talent": "Divine Intellect",
     "ranks": 5,
-    "sim_delta": 0.0425937214263941,
-    "cap_with": 0.668115234375,
-    "cap_without": 0.6408203125000002,
+    "sim_delta": 0.030669931003783495,
+    "cap_with": 0.565283203125,
+    "cap_without": 0.5484619140625001,
     "ev_delta": 0.04292746666211393,
     "simulated": true
    },
    {
     "talent": "Healing Light",
     "ranks": 3,
-    "sim_delta": 0.0669005847953216,
-    "cap_with": 0.668115234375,
-    "cap_without": 0.626220703125,
+    "sim_delta": 0.06011629504143592,
+    "cap_with": 0.565283203125,
+    "cap_without": 0.5332275390625,
     "ev_delta": 0.06402891674846263,
     "simulated": true
    },
    {
     "talent": "Holy Power",
     "ranks": 5,
-    "sim_delta": 0.06366604477611948,
-    "cap_with": 0.668115234375,
-    "cap_without": 0.6281249999999999,
+    "sim_delta": 0.021214660609535325,
+    "cap_with": 0.565283203125,
+    "cap_without": 0.5535400390625002,
     "ev_delta": 0.03363403178489572,
     "simulated": true
    },
    {
     "talent": "Holy Shock",
     "ranks": 1,
-    "sim_delta": -0.012200404273750985,
-    "cap_with": 0.668115234375,
-    "cap_without": 0.6763671874999999,
+    "sim_delta": -0.0187319884726224,
+    "cap_with": 0.565283203125,
+    "cap_without": 0.57607421875,
     "ev_delta": 0.00045629339240566236,
     "simulated": true
    },
    {
     "talent": "Illumination",
     "ranks": 5,
-    "sim_delta": 0.1700872242175471,
-    "cap_with": 0.668115234375,
-    "cap_without": 0.5709960937500002,
+    "sim_delta": 0.08135624883243031,
+    "cap_with": 0.565283203125,
+    "cap_without": 0.5227539062500001,
     "ev_delta": 0.14138126453696626,
     "simulated": true
    },
@@ -220,17 +245,17 @@
     "talent": "Improved Judgement",
     "ranks": 2,
     "sim_delta": 0.0,
-    "cap_with": 0.668115234375,
-    "cap_without": 0.668115234375,
+    "cap_with": 0.565283203125,
+    "cap_without": 0.565283203125,
     "ev_delta": 0.0,
     "simulated": false
    },
    {
     "talent": "Infusion of Light",
     "ranks": 2,
-    "sim_delta": 0.04259372142639446,
-    "cap_with": 0.668115234375,
-    "cap_without": 0.6408203124999999,
+    "sim_delta": -0.014387876723991222,
+    "cap_with": 0.565283203125,
+    "cap_without": 0.5735351562500001,
     "ev_delta": 0.030905591514020704,
     "simulated": true
    },
@@ -238,17 +263,17 @@
     "talent": "Light's Vigil",
     "ranks": 1,
     "sim_delta": 0.0,
-    "cap_with": 0.668115234375,
-    "cap_without": 0.668115234375,
+    "cap_with": 0.565283203125,
+    "cap_without": 0.565283203125,
     "ev_delta": 0.03285295089402785,
-    "simulated": false
+    "simulated": true
    },
    {
     "talent": "Purifying Power",
     "ranks": 2,
     "sim_delta": 0.0,
-    "cap_with": 0.668115234375,
-    "cap_without": 0.668115234375,
+    "cap_with": 0.565283203125,
+    "cap_without": 0.565283203125,
     "ev_delta": 0.0025889915447804184,
     "simulated": false
    },
@@ -256,17 +281,17 @@
     "talent": "Pursuit of Justice",
     "ranks": 2,
     "sim_delta": 0.0,
-    "cap_with": 0.668115234375,
-    "cap_without": 0.668115234375,
+    "cap_with": 0.565283203125,
+    "cap_without": 0.565283203125,
     "ev_delta": 0.0,
     "simulated": false
    },
    {
     "talent": "Reverence",
     "ranks": 3,
-    "sim_delta": 0.12807617791335166,
-    "cap_with": 0.668115234375,
-    "cap_without": 0.5922607421875,
+    "sim_delta": 0.0946482602118002,
+    "cap_with": 0.565283203125,
+    "cap_without": 0.5164062500000001,
     "ev_delta": 0.11709368308704379,
     "simulated": true
    },
@@ -274,8 +299,8 @@
     "talent": "Sanctified Judgement",
     "ranks": 3,
     "sim_delta": 0.0,
-    "cap_with": 0.668115234375,
-    "cap_without": 0.668115234375,
+    "cap_with": 0.565283203125,
+    "cap_without": 0.565283203125,
     "ev_delta": 0.03197861452620936,
     "simulated": false
    },
@@ -283,8 +308,8 @@
     "talent": "Spiritual Focus",
     "ranks": 2,
     "sim_delta": 0.0,
-    "cap_with": 0.668115234375,
-    "cap_without": 0.668115234375,
+    "cap_with": 0.565283203125,
+    "cap_without": 0.565283203125,
     "ev_delta": 0.009315372202896641,
     "simulated": false
    },
@@ -292,8 +317,8 @@
     "talent": "Unyielding Faith",
     "ranks": 2,
     "sim_delta": 0.0,
-    "cap_with": 0.668115234375,
-    "cap_without": 0.668115234375,
+    "cap_with": 0.565283203125,
+    "cap_without": 0.565283203125,
     "ev_delta": 0.0,
     "simulated": false
    },
@@ -301,32 +326,33 @@
     "talent": "Voice of Truth",
     "ranks": 1,
     "sim_delta": 0.0,
-    "cap_with": 0.668115234375,
-    "cap_without": 0.668115234375,
+    "cap_with": 0.565283203125,
+    "cap_without": 0.565283203125,
     "ev_delta": 0.0,
     "simulated": false
    }
   ]
  },
  "mechanics": {
-  "Illumination": "a critical heal refunds its base mana cost (20%/rank chance)",
-  "Divine Favor": "guaranteed critical Holy Light on the tank every 2 min",
-  "Holy Shock": "instant 307-333 heal on a 10 s cooldown: the emergency heal",
-  "Holy Power": "+1%/rank critical chance with holy spells",
-  "Improved Blessing of Wisdom": "+10%/rank Blessing of Wisdom (33 mp5)",
-  "Infusion of Light": "+6%/rank Holy Light",
-  "Benediction": "instant holy damage costs only: nothing for heals",
-  "Lay on Hands": "once, when the tank is under 20% (a 20 min cooldown)"
+  "Illumination": "a critical Holy Light, Flash of Light, Holy Shock or Light's Vigil heal returns 50% of that spell's base mana cost (20%/rank chance; once per spell per cast)",
+  "Divine Favor": "a sure critical top-rank Holy Light on the tank every 2 min (its mana paid)",
+  "Holy Shock": "instant 307-333 heal on a 10 s cooldown: the emergency heal, and the trigger of Light's Vigil",
+  "Holy Power": "+3%/rank critical chance with Holy Shock, +1%/rank with every other heal",
+  "Infusion of Light": "a critical Holy Shock or Flash of Light makes the next Holy Light within 15 s 0.5 s/rank faster",
+  "Benediction": "-2%/rank mana cost of the instants (Holy Shock, Divine Favor)",
+  "Light's Vigil": "the group heal: Light's Vigil (1.5 s, 1,340 mana) on the lowest raid member when enough of the group is hurt (tables.GROUP_HEAL_MIN below RAID_HEAL_AT), then a Holy Shock on them that triggers no cooldown: their party (the whole group here) heals for 684-724 + 14.3% of healing each",
+  "Lay on Hands": "once, when the tank is under 20% (a 20 min cooldown): heals for the paladin's maximum health (tables.RAID_HP, a raid member's; the lab gives the healer no health of its own) and drains all mana"
  },
  "simulated": [
+  "Benediction",
   "Divine Favor",
   "Divine Intellect",
   "Healing Light",
   "Holy Power",
   "Holy Shock",
   "Illumination",
-  "Improved Blessing of Wisdom",
   "Infusion of Light",
+  "Light's Vigil",
   "Reverence"
  ]
 }
