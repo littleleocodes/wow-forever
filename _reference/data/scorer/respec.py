@@ -169,7 +169,9 @@ def main():
             if runs:
                 lines.append("  - order: " + ", ".join(f"{a}{'-' + str(b) if b != a else ''} {n}" + (f" x{k}" if k > 1 else "") for a, n, b, k in runs))
         lines.append("")
-        lines.append(f"Total: **{cost:.1f} h** ({(1 - cost / base_hours) * 100:.1f}% faster than talentless), {len(hist) - 1} respec(s).")
+        n = len(hist) - 1   # 2026-10-15 page audit B17: "0 respec(s)."
+        lines.append(f"Total: **{cost:.1f} h** ({(1 - cost / base_hours) * 100:.1f}% faster than talentless), "
+                     + ("no respec" if n == 0 else "1 respec" if n == 1 else f"{n} respecs") + ".")
         return lines
 
     out = [f"# {a.cls.capitalize()} / {a.game}: respec plan for `{a.profile}`", "",

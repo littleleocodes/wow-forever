@@ -36,6 +36,8 @@ def _load(name, path):
 A = _load("apl_opt_links", HERE / "apl_opt.py")
 R = A.R
 MB = _load("ml_builds_links", HERE / "ml_builds.py")
+import paths  # noqa: E402
+import spec_modes as SM  # noqa: E402
 OUT = HERE / "gear-links.json"
 SITE = "https://elliotwood.github.io/Forever/forever"
 WOWHEAD = "https://www.wowhead.com/forever"
@@ -80,8 +82,11 @@ class DB:
         d = json.load(open(repo / "assets" / "database" / "db.json", encoding="utf-8"))
         self.items = {i["id"]: i for i in d["items"]}
         self.enchants = {}   # effect id -> every enchant with it (one effect serves a bracer and a glove enchant, a 1H and a 2H one)
+        self.spell_names = {}   # spell id -> the enchant names that carry it (13823 is Bracer, Gloves and Boots Greater Agility)
         for e in d["enchants"]:
             self.enchants.setdefault(e.get("effectId"), []).append(e)
+            if e.get("spellId"):
+                self.spell_names.setdefault(e["spellId"], set()).add(e.get("name"))
         self.zones = {z["id"]: z["name"] for z in d.get("zones", [])}
         self.npcs = {n["id"]: n for n in d.get("npcs", [])}
         self.prof = professions(repo)
@@ -112,7 +117,11 @@ class DB:
         e = fit[0] if fit else None
         if not e:
             return None
-        if e.get("spellId") and (e.get("name", "").startswith("Enchant ") or not e.get("itemId")):
+        # 2026-10-15 page audit B15: the database gives one spell id to enchants of several slots (13823: Enchant Bracer - Greater
+        # Agility, Enchant Gloves - Agility, Enchant Boots - Greater Agility), and Wowhead's spell page is only one of them; such an
+        # enchant links its own formula or scroll item, which is slot-specific
+        shared = len(self.spell_names.get(e.get("spellId"), ())) > 1
+        if e.get("spellId") and (not e.get("itemId") or (e.get("name", "").startswith("Enchant ") and not shared)):
             url = f"{WOWHEAD}/spell={e['spellId']}"
         else:
             url = f"{WOWHEAD}/item={e['itemId']}" if e.get("itemId") else None
@@ -163,6 +172,72 @@ def sim_links(r, repo, apiv):
     return out
 
 
+def page_records(classes=None):
+    """The finished machine-learning records the pages show: the current one, else the finished one ml_pipeline --fresh kept in ml/prev/
+    while it re-runs (flagged `_prev`). 2026-10-15 page audit B2: render_modes.ml_tiers makes the same choice; before, the pages fell back
+    to ml/prev/ for their tier numbers while this file dropped the spec, so a re-running spec showed numbers without its gear."""
+    cur = {(r["class"], r["spec"]): r for r in MB.records(classes) if MB.complete(r)}
+    prev_dir = MB.OUT / "prev"
+    for p in sorted(prev_dir.glob("*.json")) if prev_dir.exists() else []:
+        try:
+            r = json.load(open(p, encoding="utf-8"))
+        except ValueError:
+            continue
+        k = (r.get("class"), r.get("spec"))
+        if r.get("class") and (not classes or r["class"] in classes) and k not in cur and MB.complete(r):
+            cur[k] = dict(r, _prev=True)
+    return list(cur.values())
+
+
+def support_sets(classes, db, repo, apiv):
+    """{"<class>|<spec>|tank" or "|heal": {gear, ilvl, sim, ...}}: the tanks' and healers' pre-BiS and BiS sets (2026-10-15, user decision
+    of 2026-10-14: real sets for both, the same linked table as the damage pages). Tanks: raidsim/tank_gear.py, the sets chosen with
+    Classic base armor filled in (`classic_armor`: the fork's item database lists armor for one armor item in five, so a set chosen
+    without it favours the items that list it), with share links for the tank's page build in the raid setting. Healers:
+    heallab/heal_gear.py (healer-lab stat weights; no simulator link: healers are not in the simulator). The druid's bear shares the
+    Feral Combat page with the cat, hence the role in the key."""
+    out = {}
+    TG = _load("tank_gear", HERE / "tank_gear.py")
+    rec = json.load(open(HERE / "tank-gear.json", encoding="utf-8")) if (HERE / "tank-gear.json").exists() else {}
+    for cls, spec in sorted(SM.TANK_TREE.items()):
+        if classes and cls not in classes:
+            continue
+        sets = {t: TG.tier_gear(cls, spec, t, armor=True) for t in ("prebis", "bis")}
+        sets = {t: p for t, p in sets.items() if p}
+        if not sets:
+            continue
+        gear = {t: db.rows(p) for t, p in sets.items()}
+        ilvl = {t: round(sum(x["ilvl"] or 0 for x in rows) / max(1, sum(1 for x in rows if x["ilvl"])), 1) for t, rows in gear.items()}
+        r = (rec.get(cls) or {}).get("classic_armor") or rec.get(cls) or {}
+        sim = {}
+        e = R.SPECS[cls].get(r.get("entry")) if r.get("entry") else None
+        if e and r.get("build"):
+            B = {b["id"]: b for b in json.load(open(paths.builds_json("forever", cls), encoding="utf-8"))["builds"]}
+            if r["build"] in B:
+                tal = R.talents_string(R.load_trees(repo, cls), MB.flat_of(B[r["build"]]["allocation"]))
+                for t, p in sets.items():
+                    b = {"label": t, "talents": tal, "gear_json": json.load(open(p, encoding="utf-8"))}
+                    row = A.bench(e, repo, [b], 3000, 1, "raid", f"link-{cls}-tank", extra={"link": True, "api_version": apiv}).get(t) or {}
+                    if row.get("link"):
+                        sim[f"{t}-raid"] = f"{SITE}/{e['sim_spec']}/#{row['link']}"
+        out[f"{cls}|{spec}|tank"] = {"class": cls, "spec": spec, "role": "tank", "gear": gear, "ilvl": ilvl, "sim": sim,
+                                     "build": r.get("build"), "armor": "classic"}
+    hg = ROOT / "_reference/data/heallab/heal_gear.py"
+    if hg.exists():
+        HG = _load("heal_gear", hg)
+        for cls, trees in sorted(SM.HEAL_TREES.items()):
+            if classes and cls not in classes:
+                continue
+            for spec in trees:
+                sets = HG.tier_gear(cls, spec) if hasattr(HG, "tier_gear") else {}   # {tier: {"gear": path, "ilvl", ...}}
+                if not sets:
+                    continue
+                gear = {t: db.rows(v["gear"]) for t, v in sets.items()}
+                ilvl = {t: v.get("ilvl") for t, v in sets.items()}
+                out[f"{cls}|{spec}|heal"] = {"class": cls, "spec": spec, "role": "heal", "gear": gear, "ilvl": ilvl, "sim": {}}
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("classes", nargs="*")
@@ -174,15 +249,18 @@ def main():
     db = DB(repo)
     old = json.load(open(OUT, encoding="utf-8")) if OUT.exists() else {}
     specs = dict(old.get("specs", {})) if a.classes else {}
-    for r in MB.records(a.classes or None):
-        if not MB.complete(r):
-            continue
+    for r in page_records(a.classes or None):
         sets = {t: (MB.page_gear(r, t) or {}) for t in ("prebis", "bis")}   # the pages' sets (full raid)
         gear = {t: db.rows(v["gear"]) for t, v in sets.items() if v.get("gear")}
         key = f"{r['class']}|{r['spec']}"
         specs[key] = {"class": r["class"], "spec": r["spec"], "gear": gear, "ilvl": {t: sets[t].get("ilvl") for t in gear},
                       "sim": sim_links(r, repo, apiv)}
+        if r.get("_prev"):
+            specs[key]["prev"] = r.get("date")
         print(f"{key}: {sum(len(v) for v in gear.values())} items, {len(specs[key]['sim'])} simulator links", flush=True)
+    for key, v in support_sets(a.classes or None, db, repo, apiv).items():
+        specs[key] = v
+        print(f"{key}: {sum(len(x) for x in v['gear'].values())} items, {len(v['sim'])} simulator links", flush=True)
     rec = {"date": TODAY, "site": SITE, "wowhead": WOWHEAD, "api_version": apiv, "commit": R.git_commit(repo), "specs": specs}
     if a.write:
         OUT.write_text(json.dumps(rec, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")

@@ -14,20 +14,16 @@
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Penance**
+1. **Penance** (rank 3)
 2. **Shadow Word: Pain**: keep it on the target, until the last 10 seconds of the fight
 3. **Inner Focus**, then straight away **Devouring Plague**
 4. **Holy Fire**: keep it on the target
 5. **Inner Focus**, then straight away **Smite**
-6. **Shadow Word: Death**
+6. **Shadow Word: Death** (rank 3)
 7. **Power Infusion**
 8. **Smite**
 
 **Smite** is your filler: cast it whenever nothing above is ready.
-
-**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
-
-- **Dark Sacrifice**: when you run low on mana (about 1 time a fight)
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
@@ -40,23 +36,21 @@ Smite in a raid keeps two burns up, **Shadow Word: Pain** and **Holy Fire**, fir
 - **Holy Fire** starts 3 seconds before the pull (a 3-second cast with **Divine Fury**), so it lands as the fight begins. Recast it when its burn has about 1.5 seconds left, roughly every 12 seconds: the new one lands just after the old burn ends, and the simulator measured that 0.5% ahead of starting 3 seconds early.
 - **Penance** is on top: three Holy bolts in 2 seconds on a 12-second cooldown, about a quarter of your damage, and the simulator measured 3.1% more damage with it first. The full list casts rank 3 (from the community simulator's rotation): a little less damage than rank 4 for 30% less mana, and high enough that our downranking model leaves it its full spell power.
 - **Shadow Word: Pain** is about 30% of this build's damage for one global cooldown every 18 seconds. Recast it when it falls off, but not in the last 10 seconds of the fight.
-- **Inner Focus** goes into **Devouring Plague** once a fight to make it free; the simulator measured about 1% more damage with that pair. Paid for, the plague costs this build about 890 mana (no **Shadowform** or **Devouring Contagion** to cut it), and the simulator measured 2.0% more damage after dropping the plain **Devouring Plague** line.
+- **Inner Focus** goes into **Devouring Plague** to make it free (its 3-minute cooldown allows one in a 3-minute fight; the list's second **Inner Focus** line, into **Smite**, only comes up in longer fights); the simulator measured about 1% more damage with that pair. Paid for, the plague costs this build about 890 mana (no **Shadowform** or **Devouring Contagion** to cut it), and the simulator measured 2.0% more damage after dropping the plain **Devouring Plague** line.
 - **Shadow Word: Death** and **Power Infusion** go out on cooldown, then **Smite** fills everything else. **Mind Blast** is left out: none of your Holy talents help it and it costs more mana than **Smite**, and the simulator measured about 5% more damage casting **Smite** in its place.
 
 **Caveats**
 
-- **Dark Sacrifice** at the bottom of the list is not your filler, and only Undead priests have it. It turns 1,600 health into mana over 15 seconds, once every 10 minutes; the simulator casts it once a fight when it is nearly out of mana. Your filler is **Smite**.
 - This build runs short of mana even in a full raid: the simulator's priest also uses two mana potions and two Demonic Runes a fight. **Meditation** keeps half your regeneration going while you cast, and the cheaper ranks the full list picks (rank 3 **Penance**, rank 3 **Shadow Word: Death**, the latter measured 0.5% better than rank 4) are part of the mana plan; neither is far enough below your level to lose spell power in our downranking model.
 - The full list still holds a rank 2 **Smite** for 20-50% mana, measured before 2026-10-09; it now sits under the top-rank **Smite** and never fires. Ranks far below your level get much less from your spell power (a beta change; our model leaves rank 2 a small fraction of it), so do not downrank **Smite**.
 - **Shadow Word: Death** hits you for 10% of your maximum health each time the boss survives it, about 10 times a fight: your healers pay for that.
+- The full list also holds **Mind Blast**, **Shadowform** and **Mind Flay** lines below the unconditional **Smite**: they never fire for this build.
 
 **When to change it**
 
 - When the boss has under 3 seconds to live, cast **Smite** (2 seconds) rather than a new **Holy Fire** (3 seconds): only a spell that finishes casting does damage.
 - If healing is tight, cast **Shadow Word: Death** only in the last 20% of the boss's health, as the simulator's rotation for fighting alone does. You give up a little damage.
 - When you must move, use the instants: **Shadow Word: Death**, and **Shadow Word: Pain** if it fell off. **Holy Fire**, **Smite** and **Penance** all need you to stand still.
-
-*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## The numbers
 
@@ -84,7 +78,7 @@ Smite in a raid keeps two burns up, **Shadow Word: Pain** and **Holy Fire**, fir
 | Hands | [Sandworm Skin Gloves](https://www.wowhead.com/forever/item=20716) | [Sandworm Skin Gloves](https://www.wowhead.com/forever/item=20716) |
 | Waist | [Knowledge of the Timbermaw](https://www.wowhead.com/forever/item=228190) | [Mana Igniting Cord](https://www.wowhead.com/forever/item=19136) · *Molten Core* |
 | Legs | [Skyshroud Leggings](https://www.wowhead.com/forever/item=13170) · *Highlord Omokk, Blackrock Spire*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11648) | [Flarecore Leggings](https://www.wowhead.com/forever/item=19165) · *Tailoring*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11648) |
-| Feet | [Omnicast Boots](https://www.wowhead.com/forever/item=11822) · *Golem Lord Argelmach, Blackrock Depths*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/spell=13368) | [Earthen Silk Slippers](https://www.wowhead.com/forever/item=254013) · *Tailoring*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/spell=13368) |
+| Feet | [Omnicast Boots](https://www.wowhead.com/forever/item=11822) · *Golem Lord Argelmach, Blackrock Depths*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/item=16220) | [Earthen Silk Slippers](https://www.wowhead.com/forever/item=254013) · *Tailoring*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/item=16220) |
 | Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=234439) | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
 | Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21207) | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=234439) |
 | Trinket | [Briarwood Reed](https://www.wowhead.com/forever/item=12930) · *Jed Runewatcher, Blackrock Spire* | [Briarwood Reed](https://www.wowhead.com/forever/item=12930) · *Jed Runewatcher, Blackrock Spire* |

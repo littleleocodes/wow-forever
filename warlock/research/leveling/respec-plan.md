@@ -11,7 +11,7 @@ Talentless baseline: 90 h for levels 10-60 under these assumptions.
   - at level 60: **Affliction**: Improved Corruption 5, Malediction 5, Amplify Curse 1, Improved Bane of Agony 2, Pandemic 3, Suppression 5, Siphon Life 1, Malevolence 5, Shadow Mastery 5, Soul Siphon 3; **Demonology**: Unholy Power 5; **Destruction**: Bane 5, Molten Skin 5, Ruin 1
   - order: 10-14 Improved Corruption x5, 15-19 Malediction x5, 20 Amplify Curse, 21-22 Improved Bane of Agony x2, 23-25 Pandemic x3, 26-29 Suppression x4, 30 Siphon Life, 31 Suppression, 32-34 Malevolence x3, 35-39 Shadow Mastery x5, 40-41 Malevolence x2, 42-46 Unholy Power x5, 47-49 Soul Siphon x3, 50-54 Bane x5, 55-59 Molten Skin x5, 60 Ruin
 
-Total: **74.3 h** (17.5% faster than talentless), 0 respec(s).
+Total: **74.3 h** (17.5% faster than talentless), no respec.
 
 ## Never respec: best single plan
 

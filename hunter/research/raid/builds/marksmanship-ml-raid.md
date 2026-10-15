@@ -51,8 +51,8 @@ The Marksmanship build the machine-learning talent search found on the training 
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) | ours: optimizer | 5/38/8 | 462 | +0.0% | 855 | -4.2% | 92 s |
 | 2 | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) | ours: hand draft | 5/41/5 | 456 | -1.3% | 893 | +0.0% | 97 s |
-| 3 | **[`marksmanship-ml-raid`](marksmanship-ml-raid.md)** | ours: hand draft | 11/40/0 | 442 | -4.2% | 813 | -8.9% | 90 s |
-| 4 | [`marksmanship-ml-parse`](marksmanship-ml-parse.md) | ours: parse build | 7/44/0 | 440 | -4.7% | 852 | -4.6% | 92 s |
+| 3 | **[`marksmanship-ml-raid`](marksmanship-ml-raid.md)** | ours: derived (ML search) | 11/40/0 | 442 | -4.2% | 813 | -8.9% | 90 s |
+| 4 | [`marksmanship-ml-parse`](marksmanship-ml-parse.md) | ours: derived (ML search) | 7/44/0 | 440 | -4.7% | 852 | -4.6% | 92 s |
 | 5 | *Marksmanship* | community simulator | - | 358 | -22.5% | 689 | -22.8% | 92 s |
 | 6 | *Marksmanship 0/39/12* | community simulator | - | 356 | -22.9% | 668 | -25.1% | 87 s |
 | 7 | *Survival 0/15/36* | community simulator | - | 318 | -31.1% | 552 | -38.2% | 85 s |

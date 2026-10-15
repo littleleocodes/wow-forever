@@ -1,6 +1,8 @@
-# Holy/Shadow hybrid Priest — Leveling (solo)
+# Holy-Shadow Priest — Leveling (solo)
 
-[Priest](../README.md) > [Leveling (solo)](README.md) > Holy/Shadow hybrid
+[Priest](../README.md) > [Leveling (solo)](README.md) > Holy-Shadow
+
+*Points in all three trees: Discipline's Soul Warding, Holy's Searing Light and Shadow's Shadow Weaving.* (a hybrid: Holy/Shadow).
 
 **[Holy/Shadow hybrid — Leveling](../research/leveling/builds/hybrid-holy-shadow-open-leveling.md)** (16/17/18) — [open the talent tree](https://talentsforever.com/priest/60/0250030113001-33405000002-3050204010003-6)
 
@@ -21,6 +23,27 @@
 5. Hurt: **Power Word: Shield** again below half your health, **Flash Heal** below a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%.
 
 **Between fights:** Drink only below 15% mana; **Renew** yourself after the fight and eat only if you are still below 80% health.
+
+## Why this rotation
+
+The Holy-Shadow build plays the Holy leveling list (a Smite priest's) with points in all three trees: an instant pull with **Shadow Word: Pain**, **Mind Blast** on cooldown, **Smite** in between, your wand to finish, a **Power Word: Shield** before every pull. The order takes Shadow first (levels 10-28), then Discipline (29-43), then Holy (44-60).
+
+**Why it works**
+
+- The early Shadow points make your two Shadow spells hit harder and your mana last: **Spirit Tap** (levels 13-17: double Spirit for 15 seconds after a kill), **Improved Shadow Word: Pain** (18-19), **Improved Mind Blast** (21-24) and **Shadow Weaving** (26-28). In the fight lab **Meditation** (38-40), **Improved Shadow Word: Pain** and **Spirit Tap** are the build's most valuable talents at 60.
+- **Smite** only while the mob has more than about a third of its health and you have more than 30% mana; below that your wand finishes (**Wand Specialization**). Skip **Holy Fire**: the tuned rules never cast it. **Divine Fury** (54-58) cuts **Smite** by half a second and **Searing Light** (59-60) adds 5% Holy damage.
+- **Inner Focus** (level 41) right before **Mind Blast** or **Smite** makes that cast free with 25% more crit chance.
+- Mana: drink below 15% of your mana; after a fight **Renew** heals you while you loot and walk, and you eat only below 80% health (the tuned rules).
+
+**Caveats**
+
+- This build takes no **Penance**: skip its line.
+- **Mind Flay** (level 20) is in the build but the Holy list never casts it, so its point only counts toward the Shadow tiers. The fight lab measured this build at about 43 seconds per kill (level-weighted), against 25 for the Shadow page.
+
+**When to change it**
+
+- Hurt in a fight: shield again below half your health, **Flash Heal** below about a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%.
+- For speed, the Shadow page levels about 40% faster per kill.
 
 ## Talents while leveling
 

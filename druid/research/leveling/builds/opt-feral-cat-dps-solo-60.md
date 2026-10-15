@@ -49,14 +49,13 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 
 ## Core talents (priority order)
 
-1. **King of the Jungle** — Removing it costs 5.0 points of score in this model.
-2. **Naturalist** — Removing it costs 2.9 points of score in this model.
-3. **Sharpened Claws** — Removing it costs 2.3 points of score in this model.
-4. **Predatory Strikes** — Removing it costs 2.2 points of score in this model.
-5. **Nature's Reach** — Removing it costs 2.0 points of score in this model.
-6. **Natural Instinct** — Removing it costs 2.0 points of score in this model.
-7. **Savage Fury** — Removing it costs 1.9 points of score in this model.
-8. **Berserk** — Removing it costs 1.9 points of score in this model.
+1. **Naturalist** — Removing it costs 2.9 points of score in this model.
+2. **Sharpened Claws** — Removing it costs 2.3 points of score in this model.
+3. **Predatory Strikes** — Removing it costs 2.2 points of score in this model.
+4. **Nature's Reach** — Removing it costs 2.0 points of score in this model.
+5. **Natural Instinct** — Removing it costs 2.0 points of score in this model.
+6. **Savage Fury** — Removing it costs 1.9 points of score in this model.
+7. **Berserk** — Removing it costs 1.9 points of score in this model.
 
 ## Leveling rotation
 

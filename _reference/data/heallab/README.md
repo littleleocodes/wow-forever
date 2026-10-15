@@ -22,10 +22,13 @@ python _reference/data/heallab/run.py shaman --build resto-raid-healer --set POT
 | `tables.py` | Every assumption with a knob: the group, the boss, the raid damage, the healer's phase-1 raid stats per class, buffs, potions, downranking, the emergency and raid-heal thresholds |
 | `engine.py` | Spell parsing, the generic talent layer, targets, the encounter, the healer loop, `capacity()` |
 | `priest.py`, `paladin.py`, `shaman.py`, `druid.py` | One module per healer: spell roles, talent-taught spells, hand-coded mechanics (`MECHANICS`), which talents the lab measures (`SIMULATED`), spell → scorer source map, `PIPELINE` |
-| `run.py` | Capacity, healing split and talent removal values of builds; `<class>/raid/heallab/<spec>.md` + `.json` |
+| `run.py` | Capacity, healing split and talent removal values of builds; `<class>/research/raid/heallab/<spec>.md` + `.json` |
 | `calibrate.py` | The lab's healing split into the healer model's shares, the removal values fitted into the heal-mode effects (`modes: ["heal"]`, `specs: [<model>]`) of the simulated talents only |
 | `rebuild.py --steps heal[,adopt]` | Calibrate ↔ optimize (the export seeded with the hand draft) ↔ race, promotion of the best round, opt-in adoption over 2% |
 | `render_heallab_sections.py` | Class README "Healer lab" sections + `_reference/heallab-summary.md` |
+| `deep_heal.py` | Deep search of a class's healer specs: talents and heal-choice policy tuned in turns, a two-move check, a 400-seed final race; writes `<spec>-ml-heal` at 0.5%; records `deep/<class>-<spec>.json`, reports `<class>/research/raid/heallab/deep-optimization-<spec>.md` (2026-10-02/03; `../deep_class.py --steps heal`) |
+| `heal_worker.py` | Worker processes that measure one build's capacity for `deep_heal.py` |
+| `rotation_opt.py` | The heal-choice policy search (rules in `rotations/<class>-<spec>.json`, see below) |
 
 ## What the numbers mean
 

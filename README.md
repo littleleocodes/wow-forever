@@ -4,19 +4,19 @@ The best talents and the best way to play every class in **World of Warcraft: Fo
 
 **How to use it:** pick your class below. Its page has a grid of every spec against the two modes (leveling, raid), the recommended picks marked, and a ranking of the specs for each mode. Every link in the grid opens a build page: the talents (with a talent calculator link), the order to take them while leveling, and what to press.
 
-| Class | Roles | Fastest leveling (solo) | Most raid damage (DPS in a full raid) |
-|---|---|---|---|
-| [**Druid**](druid/README.md) | damage, tank, healer | [Feral Combat](druid/leveling/feral-combat.md) (28 s/kill) | [Feral Combat](druid/raid/feral-combat.md) (694 DPS) |
-| [**Hunter**](hunter/README.md) | damage | [Beast-Survival](hunter/leveling/beast-survival.md) (22 s/kill) | [Beast-Survival](hunter/raid/beast-survival.md) (1051 DPS), [Survival](hunter/raid/survival.md) (1042 DPS) |
-| [**Mage**](mage/README.md) | damage | [Frost](mage/leveling/frost.md) (27 s/kill) | [Arcane](mage/raid/arcane.md) (689 DPS), [Arcane-Frost](mage/raid/arcane-frost.md) (687 DPS), [Fire](mage/raid/fire.md) (685 DPS), [Frost](mage/raid/frost.md) (680 DPS), [Frostfire](mage/raid/frostfire.md) (675 DPS) |
-| [**Paladin**](paladin/README.md) | damage, tank, healer | [Shockadin](paladin/leveling/shockadin.md) (28 s/kill), [Retribution](paladin/leveling/retribution.md) (28 s/kill) | [Retribution](paladin/raid/retribution.md) (979 DPS) |
-| [**Priest**](priest/README.md) | damage, healer | [Shadow](priest/leveling/shadow.md) (25 s/kill) | [Shadow](priest/raid/shadow.md) (696 DPS) |
-| [**Rogue**](rogue/README.md) | damage | [Combat-Subtlety](rogue/leveling/combat-subtlety.md) (24 s/kill) | [Combat](rogue/raid/combat.md) (735 DPS) |
-| [**Shaman**](shaman/README.md) | damage, healer | [Enhancement](shaman/leveling/enhancement.md) (32 s/kill) | [Enhancement](shaman/raid/enhancement.md) (727 DPS) |
-| [**Warlock**](warlock/README.md) | damage | [Shadow Bolt hybrid](warlock/leveling/shadow-bolt-hybrid.md) (35 s/kill), [Demonology](warlock/leveling/demonology.md) (36 s/kill) | [Demonology](warlock/raid/demonology.md) (822 DPS) |
-| [**Warrior**](warrior/README.md) | damage, tank | [Fury](warrior/leveling/fury.md) (25 s/kill), [Arms](warrior/leveling/arms.md) (25 s/kill) | [Arms](warrior/raid/arms.md) (964 DPS) |
+| Class | Roles | Fastest leveling (solo) | Most raid damage (DPS in a full raid) | Raid healing | Raid tanking |
+|---|---|---|---|---|---|
+| [**Druid**](druid/README.md) | damage, tank, healer | [Feral Combat](druid/leveling/feral-combat.md) (29 s/kill) | [Feral Combat](druid/raid/feral-combat.md) (694 DPS) | [Restoration](druid/raid/restoration.md) | [Feral Combat](druid/raid/feral-combat.md) (Feral — Bear Tank) |
+| [**Hunter**](hunter/README.md) | damage | [Beast-Survival](hunter/leveling/beast-survival.md) (22 s/kill) | [Beast-Survival](hunter/raid/beast-survival.md) (1051 DPS), [Survival](hunter/raid/survival.md) (1042 DPS) | - | - |
+| [**Mage**](mage/README.md) | damage | [Frost](mage/leveling/frost.md) (27 s/kill) | [Arcane](mage/raid/arcane.md) (689 DPS), [Arcane-Frost](mage/raid/arcane-frost.md) (687 DPS), [Fire](mage/raid/fire.md) (685 DPS), [Frost](mage/raid/frost.md) (680 DPS), [Frostfire](mage/raid/frostfire.md) (675 DPS) | - | - |
+| [**Paladin**](paladin/README.md) | damage, tank, healer | [Shockadin](paladin/leveling/shockadin.md) (28 s/kill), [Retribution](paladin/leveling/retribution.md) (28 s/kill) | [Retribution](paladin/raid/retribution.md) (979 DPS) | [Holy](paladin/raid/holy.md) | [Protection](paladin/raid/protection.md) |
+| [**Priest**](priest/README.md) | damage, healer | [Shadow](priest/leveling/shadow.md) (25 s/kill) | [Shadow](priest/raid/shadow.md) (696 DPS) | [Holy](priest/raid/holy.md) (capacity 0.69), [Discipline](priest/raid/discipline.md) (capacity 0.61) | - |
+| [**Rogue**](rogue/README.md) | damage | [Combat-Subtlety](rogue/leveling/combat-subtlety.md) (24 s/kill) | [Combat](rogue/raid/combat.md) (735 DPS), [Daggers (split)](rogue/raid/daggers-split.md) (718 DPS) | - | - |
+| [**Shaman**](shaman/README.md) | damage, healer | [Enhancement](shaman/leveling/enhancement.md) (32 s/kill) | [Enhancement](shaman/raid/enhancement.md) (727 DPS) | [Restoration](shaman/raid/restoration.md) | - |
+| [**Warlock**](warlock/README.md) | damage | [Shadow Bolt hybrid](warlock/leveling/shadow-bolt-hybrid.md) (35 s/kill), [Demonology](warlock/leveling/demonology.md) (36 s/kill) | [Demonology](warlock/raid/demonology.md) (822 DPS) | - | - |
+| [**Warrior**](warrior/README.md) | damage, tank | [Fury](warrior/leveling/fury.md) (25 s/kill) | [Arms](warrior/raid/arms.md) (964 DPS) | - | [Protection](warrior/raid/protection.md) |
 
-Two specs in one cell are a tie (within 3% of each other; the best spec of the class by DPS in a full raid). Leveling times compare across classes: every class runs in the same fight simulator, solo against same-level mobs. Raid numbers assume a group: every raid buff and debuff is up, which is where classes that live on raid buffs (warriors' rage, hunters' and shamans' mana) do their real damage.
+Several specs in one damage or leveling cell share the recommendation: each is within 3% of the class's best spec in that column, a tie in the simulations. Leveling times compare across classes: every class runs in the same fight simulator, solo against same-level mobs. Raid numbers assume a group: every raid buff and debuff is up, which is where classes that live on raid buffs (warriors' rage, hunters' and shamans' mana) do their real damage. Healers are ranked within their class by the healer lab's capacity (this project's healing model; healers are not in the community simulator); tanks are listed, not ranked.
 
 ## How to read the numbers
 
@@ -27,6 +27,7 @@ Two specs in one cell are a tie (within 3% of each other; the best spec of the c
 
 ## Everything else
 
+- [Tier list](tier-list.md): every spec of every class in S/A/B/C tiers for raid damage and healing (the tanks listed), from the same picks and numbers as the class pages.
 - [Raid DPS rankings by gear tier](_reference/dps-rankings.md): every raid damage spec in pre-BiS and phase-1 BiS gear, in a full raid, with its best talents and gear for each.
 - [_reference/README.md](_reference/README.md): how the project works, its tools and its rules.
 - [_reference/](_reference/): cross-class reports (simulator summaries, the talentsforever.com comparison, launch checklists).

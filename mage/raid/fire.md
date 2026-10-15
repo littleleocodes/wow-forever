@@ -4,11 +4,11 @@
 
 **✅ Recommended** for raid (the best mage spec here, or within 3% of it).
 
-**[Fire — Ignite / Hot Streak](../research/raid/builds/fire-raid.md)** (12/34/5) — [open the talent tree](https://talentsforever.com/mage/60/005205-23550020130133051-005-6)
+**[Fire — Ignite / Heating Up](../research/raid/builds/fire-raid.md)** (12/34/5) — [open the talent tree](https://talentsforever.com/mage/60/005205-23550020130133051-005-6)
 
 ## How to play
 
-**Then press the first one that is ready**, top to bottom:
+**Press the first one that is ready**, top to bottom:
 
 1. **Fire Blast**
 2. **Scorch** when the target has fewer than 5 stacks of Fire Vulnerability or Fire Vulnerability has under 7.5 seconds left

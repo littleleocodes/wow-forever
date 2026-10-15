@@ -17,7 +17,7 @@ python _reference/data/rebuild.py --jobs 4                # every class: calibra
 python _reference/data/fightlab/summary.py --write        # the cross-class page _reference/fightlab-summary.md
 ```
 
-Outputs: `<class>/leveling/fightlab/<spec>.md` (+ `.json`), the "Fight lab" section of each class's `leveling/README.md`
+Outputs: `<class>/research/leveling/fightlab/<spec>.md` (+ `.json`), the "Fight lab" section of each class's `research/leveling/README.md`
 (`render_fightlab_sections.py`), `_reference/fightlab-summary.md` and `last-rebuild.json` (what the last `rebuild.py` run found).
 
 ## Files
@@ -43,6 +43,13 @@ Outputs: `<class>/leveling/fightlab/<spec>.md` (+ `.json`), the "Fight lab" sect
 | `gear_stats.py` / `gear_stats.json` | Gear by level from the Classic 1.12 item database: per class and tier (greens = fixed-stat green items, mostly quest rewards; blues) the typical good pick per slot 2-7 levels below the character, summed, spell power and healing from the items' on-equip spells (`spell_template` auras 13 / 135), weapon and wand dps by kind |
 | `summary.py` | The cross-class page `_reference/fightlab-summary.md` from every class's report JSON |
 | `../rebuild.py`, `../render_fightlab_sections.py` | The one-command pipeline (calibrate ↔ optimize to convergence, race, report, sensitivity, regenerate pages; `last-rebuild.json`) and the generator of each class README's "Fight lab" section and hand-draft note |
+| `fl_talent_opt.py` | Leveling talents searched in the fight lab itself (local search at level 60 with 30+ points in a tree, a leveling order, a 20-60 race); used by `../derive_leveling.py` (2026-09-30) |
+| `fl_open_search.py` | Open leveling search: every legal build (any split) in every leveling rotation of a class, machine-learning guided, raced at 20-60; records `open/<class>.json`, reports `<class>/research/leveling/open-search.md` and `_reference/leveling-open-search.md` (2026-10-04) |
+| `fl_levels.py` | The 20-60 polish of an open-search winner and the choice and polish of its talent order (`order_label`) (2026-10-07) |
+| `fl_synergy.py` | Synergy certificate for a leveling winner: singles and pairs of talents around it, a lead re-searches (2026-10-07) |
+| `own_rotation_race.py` | Races leveling page builds with their own spec's rotation (record `own-rotation.json`, 2026-10-08) |
+| `module_lint.py` | Talent and spell names the class modules ask for that the current data lacks, and damage spells that parse to 0 -> `_reference/fightlab-lint.md`; run after every data refresh (2026-10-09) |
+| `regression.py` | The mage regression (500 fights, seed 1, levels 30/60): must print IDENTICAL after an engine change |
 
 ## Tuned rotations (2026-09-27)
 
@@ -108,11 +115,11 @@ python _reference/data/fightlab/calibrate.py mage --spec frost-leveling --profil
    Frost damage inside the Frozen loop) until the scorer's value of the same removal, on the same relative-to-the-build
    scale ((score_with − score_without) / (1 − score_with)), matches the sim. Fitted effects carry `specs:
    ["frost-leveling"]` so the Fire model keeps its own numbers; effects for raid / AoE modes are not touched.
-4. Writes notes into the manual file naming the fit, and `<class>/leveling/fightlab/<spec>-calibration.json`.
+4. Writes notes into the manual file naming the fit, and `<class>/research/leveling/fightlab/<spec>-calibration.json`.
 
 Values are in-build marginals, so **fit against several builds at once**: the hand draft, the optimizer's current build
 and its earlier candidates (a build id ending in `.json` is read from that file; keep them under
-`<class>/leveling/fightlab/candidates/`). Fitted to one build at a time, the mage optimizer swung between an
+`<class>/research/leveling/fightlab/candidates/`). Fitted to one build at a time, the mage optimizer swung between an
 Arcane-heavy 28/0/23 and a deep-Frost 0/5/46 from round to round; the joint fit over five builds converged in one
 round (12/3/36). After a run, race the new build against the candidates with `run.py --compare <files>`: the sim, not
 the scorer, decides which build is recommended. The optimizer's leveling order needs a horizon long enough to see
@@ -122,7 +129,7 @@ multi-tier paths (`run.py --lookahead 12` for mage: Ice Lance sits 11 points dee
 
 | Input | Source | Status |
 |---|---|---|
-| Spell ranks, costs, cast times, cooldowns, coefficients | beta client 1.60.1.70009 (`forever-spells/`) | data |
+| Spell ranks, costs, cast times, cooldowns, coefficients | beta client spellbook (`forever-spells/`; the build `data_build.py` names, 1.60.1.70291 since 2026-10-08) | data |
 | Talent numbers | beta client tooltips (`forever-talents/`) | data |
 | Conjured water and food per rank | Wowhead Forever item tooltips (raw pull archived) | data |
 | Mage base stats at 60 (Int 125, Spirit 120, Stamina 45, health 1,370, mana 1,213), base spell crit 0.91%, 0.0168% crit per Intellect | Forever client PlayerExpectedStat / base stats, via the ElliotWood/Forever simulator | data (level 1-59 interpolated) |
@@ -135,7 +142,7 @@ multi-tier paths (`run.py --lookahead 12` for mage: Ice Lance sits 11 points dee
 | Root-break chance per hit (20%), partial resists (2.5%), travel/loot times, eat/drink thresholds | assumptions in `tables.py` | assumption, see `sensitivity.md` |
 
 `sensitivity.py` re-runs the builds with each unverified constant moved (root break 10/40%, mob health ±20%, mob damage +30%,
-pushback 1 s, blue weapons, dungeon blues, gear stats +20%, no caster mobs, 30% caster mobs, 20% runners) and writes `<class>/leveling/fightlab/sensitivity.md`;
+pushback 1 s, blue weapons, dungeon blues, gear stats +20%, no caster mobs, 30% caster mobs, 20% runners) and writes `<class>/research/leveling/fightlab/sensitivity.md`;
 `run.py --set KEY=VALUE` does the same by hand and `run.py --gear blues` runs a whole report in the second gear tier.
 
 ## Limits

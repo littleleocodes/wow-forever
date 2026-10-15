@@ -128,7 +128,7 @@
       "fight_coupling": {"leveling-st": 1.0, "solo-60": 1.0}
     },
     "frost-aoe": {
-      "note": "AoE grinding: Frost Nova -> Blizzard -> Cone of Cold / Arcane Explosion on 5-10 mobs. Blizzard is a channel (cast-time talents do not apply). Fight lab calibration (2026-09-28, beta client 1.60.1.70009, build opt-frost-aoe-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Blizzard 49%, Cone of Cold 14%, Ice Lance 14%, Arcane Explosion 8%, Frostbolt 7%, Frost Nova 3%, Wand 3%, Fire Blast 2%) and the leveling time split is fight 70% / drink 6% / eat 4% / other 0% / death 20% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Ice Lance is a source so Frost crit/damage talents scale with the Frozen-target loop.",
+      "note": "AoE grinding: Frost Nova -> Blizzard -> Cone of Cold / Arcane Explosion on 5-10 mobs. Blizzard is a channel (cast-time talents do not apply). Fight lab calibration (2026-10-15, beta client 1.60.1.70291, build opt-frost-aoe-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Blizzard 56%, Cone of Cold 14%, Ice Lance 10%, Frostbolt 7%, Arcane Explosion 7%, Frost Nova 3%, Fire Blast 2%, Wand 2%) and the leveling time split is fight 70% / drink 7% / eat 4% / other 0% / death 19% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Ice Lance is a source so Frost crit/damage talents scale with the Frozen-target loop.",
       "sources": [
         {
           "id": "blizzard",
@@ -136,7 +136,7 @@
           "min_level": 20,
           "tags": ["type:spell", "school:frost", "ability:Blizzard", "aoe"],
           "profile_overrides": {
-            "leveling-aoe": {"share": 0.468}
+            "leveling-aoe": {"share": 0.492}
           }
         },
         {
@@ -146,7 +146,7 @@
           "tags": ["type:spell", "school:frost", "ability:Cone of Cold", "aoe"],
           "cooldown": 10,
           "profile_overrides": {
-            "leveling-aoe": {"share": 0.142}
+            "leveling-aoe": {"share": 0.143}
           }
         },
         {
@@ -156,7 +156,7 @@
           "tags": ["type:spell", "school:frost", "ability:Frost Nova", "aoe"],
           "cooldown": 25,
           "profile_overrides": {
-            "leveling-aoe": {"share": 0.031}
+            "leveling-aoe": {"share": 0.029}
           }
         },
         {
@@ -165,7 +165,7 @@
           "min_level": 14,
           "tags": ["type:spell", "school:arcane", "ability:Arcane Explosion", "aoe"],
           "profile_overrides": {
-            "leveling-aoe": {"share": 0.154}
+            "leveling-aoe": {"share": 0.162}
           }
         },
         {
@@ -176,7 +176,7 @@
           "min_cast": 1.5,
           "min_level": 4,
           "profile_overrides": {
-            "leveling-aoe": {"share": 0.069}
+            "leveling-aoe": {"share": 0.073}
           },
           "game_overrides": {
             "classic-era": {
@@ -193,7 +193,7 @@
           "min_level": 20,
           "tags": ["type:spell", "school:frost", "instant", "frozen", "ability:Ice Lance"],
           "profile_overrides": {
-            "leveling-aoe": {"share": 0.136}
+            "leveling-aoe": {"share": 0.101}
           },
           "enabled_by": "Ice Lance",
           "displaces": ["frostbolt"],
@@ -229,7 +229,7 @@
       "regen_share": 0.3,
       "abs_dps_factor": 1.0,
       "time": {
-        "leveling-aoe": {"fight": 0.703, "drink": 0.058, "eat": 0.038, "other": 0.0, "death": 0.201}
+        "leveling-aoe": {"fight": 0.697, "drink": 0.071, "eat": 0.043, "other": 0.0, "death": 0.189}
       },
       "fight_coupling": {"leveling-aoe": 1.0}
     },

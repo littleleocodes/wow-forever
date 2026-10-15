@@ -6,11 +6,11 @@
 
 **[Frost — Raid](../research/raid/builds/frost-ml-raid.md)** (21/0/30) — [open the talent tree](https://talentsforever.com/mage/60/053005003000311--055500031100030025-6)
 
-> 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds); it beat the hand-made build (frost-winters-chill-raid), which stays below as the alternative. A model of the beta, to check at launch.
+> 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds); it beat the hand-made build (Frost — Winter's Chill), which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to play
 
-**Then press the first one that is ready**, top to bottom:
+**Press the first one that is ready**, top to bottom:
 
 1. **Arcane Missiles** when Missile Barrage is active
 2. **Ice Lance** when Fingers of Frost is active

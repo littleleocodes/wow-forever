@@ -1,8 +1,9 @@
 # Druid
 
-> Classic's hybrid: Restoration raid healer, Feral off-tank/powershifting cat, one Moonkin per raid for the crit aura. Forever
-> makes Omen of Clarity and Faerie Fire (Feral) baseline, moves Heart of the Wild to Feral tier 1, adds Mangle/Berserk/Rend and Tear,
-> Eclipse, Wild Growth and Swiftmend at 16 points, and gives Balance tier 2 crit/hit talents every spec wants. Skyborne druids on both factions.
+> Classic's hybrid: Restoration raid healer, Feral off-tank and powershifting cat, one Moonkin per raid for the crit aura.
+> Forever makes Omen of Clarity and Faerie Fire in forms baseline, gives the cat Shifting Power, Rend and Tear and Berserk,
+> gives Balance Eclipse and Genesis, and moves Swiftmend to Restoration tier 4 under a Wild Growth capstone. Skyborne druids
+> on both factions.
 
 ## Pick your spec
 
@@ -10,9 +11,9 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling (solo) | Raid (group: full raid DPS) |
 |---|---|---|
-| **Balance** | [Balance — Leveling](leveling/balance.md) 🔬<br>46 s/kill | [Balance — Moonkin / Eclipse](raid/balance.md)<br>586 DPS (raid) |
-| **Feral Combat** | **✅ Recommended**<br>[Feral Combat (optimized)](leveling/feral-combat.md)<br>28 s/kill | **✅ Recommended**<br>[Feral Combat — Raid](raid/feral-combat.md) 🔬<br>694 DPS (raid) |
-| **Restoration** | [Restoration — Leveling into the raid build](leveling/restoration.md) 🔬<br>33 s/kill | [Restoration — Raid healing](raid/restoration.md) 🔬<br>healer |
+| **Balance** | [Balance — Leveling](leveling/balance.md) 🔬<br>46 s/kill | [Balance — Moonkin / Nature's Grace](raid/balance.md)<br>586 DPS (raid) |
+| **Feral Combat** | **✅ Recommended**<br>[Feral Combat — Leveling](leveling/feral-combat.md) 🔬<br>29 s/kill | **✅ Recommended**<br>[Feral Combat — Raid](raid/feral-combat.md) 🔬<br>694 DPS (raid) |
+| **Restoration** | [Restoration — Leveling into the raid build](leveling/restoration.md) 🔬<br>36 s/kill | [Restoration — Raid healing](raid/restoration.md) 🔬<br>healer |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
 
@@ -26,9 +27,9 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
-| 1 | [Feral Combat](leveling/feral-combat.md) — Feral Combat (optimized) | 28 | fastest |
-| 2 | [Restoration](leveling/restoration.md) — Restoration — Leveling into the raid build 🔬 | 33 | +18% |
-| 3 | [Balance](leveling/balance.md) — Balance — Leveling 🔬 | 46 | +68% |
+| 1 | [Feral Combat](leveling/feral-combat.md) 🔬 | 29 | fastest |
+| 2 | [Restoration](leveling/restoration.md) — Leveling into the raid build 🔬 | 36 | +25% |
+| 3 | [Balance](leveling/balance.md) 🔬 | 46 | +62% |
 
 ### Raid (group)
 
@@ -36,12 +37,12 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
-| 1 | [Feral Combat](raid/feral-combat.md) — Feral Combat — Raid 🔬 | 694 | best |
-| 2 | [Balance](raid/balance.md) — Balance — Moonkin / Eclipse | 586 | -16% |
+| 1 | [Feral Combat](raid/feral-combat.md) 🔬 | 694 | best |
+| 2 | [Balance](raid/balance.md) — Moonkin / Nature's Grace | 586 | -16% |
 
 **Tanking**: [Feral Combat](raid/feral-combat.md) — Feral — Bear Tank.
 
-**Healing**: [Restoration](raid/restoration.md) — Restoration — Raid healing 🔬.
+**Healing**: [Restoration](raid/restoration.md) — Raid healing 🔬.
 
 Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie. Everything is a simulation of the beta, not a measurement in the game.
 
@@ -51,17 +52,20 @@ Differences under 2-3% are within the simulations' noise and assumptions: treat 
 
 | Spec | Raid role | Classic standing | Forever outlook (beta client build 1.60.1.70291) |
 |---|---|---|---|
-| Balance | DPS (one per raid for the crit aura) | Mana-starved crit-aura bot | A real caster: Starfire as the filler with Insect Swarm and Moonfire kept up, Vengeance and Moonfury behind it, Moonkin Form doubling Omen of Clarity. Eclipse (each Wrath speeds up the next two Starfires) is not in the raid pick, and the raid rotation never weaves Wrath. |
-| Feral Combat | Melee DPS / tank | Off-tank and powershift cat with the right gear | Powershifting is gone: Furor carries your energy through a shift instead of granting 40. Shifting Power (mana into energy) is the cat's raid tool and leads in the simulator; Rip with Rend and Tear, Berserk. Bear: Lacerate, Primal Bite, a 50% threat bonus. |
-| Restoration | Raid healer | Swiftmend early, Regrowth/Nature's Grace late | Wild Growth capstone; Swiftmend at tier 4 and its tooltip no longer says it uses up the heal over time; Gift of the Earthmother, Living Spirit, Naturalist. Moonglow now cheapens damaging spells only, not heals. |
+| Balance | Raid DPS (one per raid for the crit aura) | Mana-starved crit-aura bot | A real caster: Starfire as the filler with Insect Swarm and Moonfire kept up, Vengeance and Moonfury behind it. The raid pick takes no Eclipse and never weaves Wrath; the leveling pick weaves Wrath into Eclipse-shortened Starfires. Behind the Feral cat in a full raid and the slowest druid leveler (2026-10-15). |
+| Feral Combat | Melee DPS / tank | Off-tank and powershift cat with the right gear | The druid's best raid DPS and its fastest leveler (2026-10-15). Powershifting is gone: Furor carries your energy through a shift, and Shifting Power (mana into energy) is the cat's raid tool, with Rip, Rend and Tear and Berserk. Bear: Lacerate, Primal Bite, a 50% threat bonus. |
+| Restoration | Raid healer | Swiftmend early, Regrowth/Nature's Grace late | Wild Growth capstone, Swiftmend at tier 4 (its tooltip no longer says it uses up the heal over time), Living Spirit and Naturalist. The healer lab's pick is built around mana (Reflection, Living Spirit, Tranquil Spirit) and skips Wild Growth. Levels as a cat with the Feral Combat steps. |
 
 ## Forever headline changes (beta client build 1.60.1.70291, 2026-10-08)
 
-- **Baseline now:** Omen of Clarity (a passive trained at 20; it procs from spells and attacks, and Wrath does not use it), Nature's Grasp (trained at 10, one charge, castable in forms), Faerie Fire in Cat, Bear and Dire Bear Form (free, 6 sec cooldown; Faerie Fire (Feral) is gone), Lacerate (42), Revive (an out-of-combat resurrection). Tiger's Fury is no longer in the trainer list: the community simulator reads it from the client as granted since build 70170 (15% more physical damage for 6 sec, 30 sec cooldown).
-- **Removed talents:** Nature's Grasp, Improved Nature's Grasp, Natural Weapons, Improved Thorns, Omen of Clarity (now baseline) (Balance); Feral Aggression, Feline Swiftness, Improved Shred, Faerie Fire (Feral) (Feral); Improved Mark of the Wild, Improved Healing Touch, Improved Enrage (Restoration). King of the Jungle came in build 70009 and went in 70170.
-- **New talents:** Genesis, Nature's Majesty, Nature's Splendor, Overgrowth, Eclipse (Balance); Feral Swiftness, Shredding Attacks, Shifting Power and Improved Shifting Power (build 70170), Primal Bite (bear only), Natural Instinct (named Predatory Instincts until 70291; it also adds a share of your Intellect to spell healing), Natural Reaction, Rend and Tear, Berserk (Feral); Gift of the Earthmother, Living Spirit, Wild Growth (Restoration). Blood Frenzy now does what Classic's Blood Frenzy and Primal Fury did between them: rage from bear critical strikes, an extra combo point from cat critical strikes.
-- **Moved or reworked:** Heart of the Wild to Feral tier 1 (Intellect, plus Strength in Cat Form and Stamina in Bear Form); Insect Swarm to Balance tier 4; Natural Shapeshifter to Restoration; Swiftmend from Classic's capstone to Restoration tier 4; Nature's Swiftness needs 5 points in Naturalist; Furor restores the Cat Form energy you left with (up to 100%) plus 10 a second out of form, instead of a chance at 40; Nature's Grace is 10% faster casts and global cooldown for 3 sec after a critical hit; Nature's Focus covers every Arcane and Nature spell; Moonglow cheapens damaging spells only (25%); Moonkin Form doubles Omen of Clarity's chance, gives a 45-yard 3% critical strike aura that does not stack with Leader of the Pack, and blocks healing spells.
-- **Spells:** Shred is 155% weapon damage (Classic 225%) and Claw 110% weapon damage plus a bonus; in forms your equipped weapon's DPS sets your damage at a 1.0 sec (cat) or 2.5 sec (bear) swing (Blizzard's druid deep dive, 2026-09-30), weapon enchants work in forms and you can use items and potions without shifting out; Wrath, Starfire, Moonfire, Insect Swarm and Rip show lower base damage on their tooltips; Barkskin no longer slows casts or attacks; Entangling Roots works indoors, on one target at a time; Mark of the Wild and Gift of the Wild give 385 armor, 16 to all attributes and 27 resistances for an hour, Gift of the Wild to the whole raid; Enrage gives 10 rage at once; Frenzied Regeneration turns each point of rage into 1% health; the Bear and Dire Bear Form threat bonus is 50% (from 30%, beta notes of 2026-10-08).
+Forever's druid has 52 talents (16 Balance, 20 Feral Combat, 16 Restoration): 18 are new, none is a Classic talent under a new name, and 13 Classic talents are gone.
+
+- **Baseline now:** Omen of Clarity (a passive trained at 20; it procs from spells and attacks, and Wrath does not use it), Nature's Grasp (trained at 10, one charge, castable in forms), Faerie Fire in Cat, Bear and Dire Bear Form (free, 6 sec cooldown), Lacerate, Revive (an out-of-combat resurrection). Tiger's Fury is no longer in the trainer list: the community simulator reads it from the client as granted (15% more physical damage for 6 sec, 30 sec cooldown).
+- **Removed talents:** Nature's Grasp, Improved Nature's Grasp, Natural Weapons, Improved Thorns, Omen of Clarity (Balance); Feral Aggression, Feline Swiftness, Improved Shred, Primal Fury, Faerie Fire (Feral) (Feral Combat); Improved Mark of the Wild, Improved Healing Touch, Improved Enrage (Restoration).
+- **New talents:** Genesis, Nature's Majesty, Nature's Splendor, Overgrowth, Eclipse (Balance); Feral Swiftness, Shredding Attacks, Shifting Power, Improved Shifting Power, Primal Bite (bear only), Natural Instinct (named Predatory Instincts until 70291; it also adds a share of your Intellect to spell healing), Natural Reaction, Rend and Tear, Berserk (Feral Combat); Naturalist, Gift of the Earthmother, Living Spirit, Wild Growth (Restoration).
+- **Moved or reworked:** Heart of the Wild to Feral tier 1 (Intellect, plus Strength in Cat Form and Stamina in Bear Form); Insect Swarm to Balance tier 4; Natural Shapeshifter to Restoration; Swiftmend from Classic's capstone to Restoration tier 4; Nature's Swiftness needs 5 points in Naturalist. Feral Swiftness and Shredding Attacks (18 energy off Shred, 3 rage off Lacerate) take the places of Feline Swiftness and Improved Shred; Blood Frenzy does what Classic's Blood Frenzy and Primal Fury did between them. Furor restores the Cat Form energy you left with (up to 100%) plus 10 a second out of form, instead of a chance at 40; Nature's Grace is 10% faster casts and global cooldown for 3 sec after a critical hit; Nature's Focus covers every Arcane and Nature spell; Moonglow cheapens damaging spells only (25%); Moonkin Form doubles Omen of Clarity's chance and gives a 45-yard 3% critical strike aura that does not stack with Leader of the Pack.
+- **Spells:** Shred is 155% weapon damage (Classic 225%) and Claw 110% weapon damage plus a bonus; in forms your equipped weapon's DPS sets your damage at a 1.0 sec (cat) or 2.5 sec (bear) swing (Blizzard's druid deep dive, 2026-09-30), weapon enchants work in forms and you can use items and potions without shifting out; Barkskin no longer slows casts or attacks; Entangling Roots works indoors, on one target at a time; Mark of the Wild and Gift of the Wild give 385 armor, 16 to all attributes and 27 resistances for an hour; Enrage gives 10 rage at once; Frenzied Regeneration turns each point of rage into 1% health.
+- **Beta notes (to 2026-10-08):** the Bear and Dire Bear Form threat bonus is 50% (from 30%, notes of 2026-10-08).
 
 ## Research files
 

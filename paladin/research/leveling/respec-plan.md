@@ -11,7 +11,7 @@ Talentless baseline: 90 h for levels 10-60 under these assumptions.
   - at level 60: **Retribution**: Benediction 1, Deflection 4, Holy Conduit 2, Improved Judgement 2, Conviction 5, Seal of Command 1, Sanctified Judgement 3, Pursuit of Justice 2, Sacred Arbiter 1, Two-Handed Weapon Specialization 3, Vengeance 3, Instrument of Law 2, Champion of the Light 3, Repentance 1, Vindication 3; **Holy**: Divine Strength 5, Improved Seals 3, Divine Intellect 2, Reverence 3, Purifying Power 2
   - order: 10 Benediction, 11-14 Deflection x4, 15-16 Holy Conduit x2, 17-18 Improved Judgement x2, 19 Conviction, 20 Seal of Command, 21-22 Sanctified Judgement x2, 23 Pursuit of Justice, 24 Sanctified Judgement, 25 Sacred Arbiter, 26 Pursuit of Justice, 27-29 Conviction x3, 30-32 Two-Handed Weapon Specialization x3, 33 Conviction, 34 Vengeance, 35-36 Instrument of Law x2, 37-38 Champion of the Light x2, 39 Repentance, 40-41 Vengeance x2, 42 Champion of the Light, 43-47 Divine Strength x5, 48-50 Improved Seals x3, 51-53 Vindication x3, 54-55 Divine Intellect x2, 56-58 Reverence x3, 59-60 Purifying Power x2
 
-Total: **61.3 h** (31.9% faster than talentless), 0 respec(s).
+Total: **61.3 h** (31.9% faster than talentless), no respec.
 
 ## Never respec: best single plan
 

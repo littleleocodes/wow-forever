@@ -56,7 +56,7 @@ Damage by ability:
 | Chain Lightning | 6% | 8% |
 | Attack | 6% | 8% |
 
-### [`opt-elemental-dps-raid-dps`](builds/opt-elemental-dps-raid-dps.md) (ours: optimizer, 357 DPS), [`elemental-raid`](builds/elemental-raid.md) (ours: hand draft, 357 DPS), *Elemental 31/6/14* (community simulator, 334 DPS), *Level 60* (community simulator, 332 DPS)
+### [`opt-elemental-dps-raid-dps`](builds/opt-elemental-dps-raid-dps.md) (ours: optimizer, 357 DPS), [`elemental-raid`](builds/elemental-raid.md) (ours: generated, 357 DPS), *Elemental 31/6/14* (community simulator, 334 DPS), *Level 60* (community simulator, 332 DPS)
 
 Before the pull: at -2s: cast Lightning Bolt.
 
@@ -118,7 +118,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) (ours: optimizer, 385 DPS), [`enhancement-ml-raid`](builds/enhancement-ml-raid.md) (ours: hand draft, 383 DPS), [`enhancement-raid-dps`](builds/enhancement-raid-dps.md) (ours: hand draft, 380 DPS), *Level 60* (community simulator, 379 DPS), *Enhancement 16/35/0* (community simulator, 345 DPS)
+### [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) (ours: optimizer, 385 DPS), [`enhancement-ml-raid`](builds/enhancement-ml-raid.md) (ours: derived (ML search), 383 DPS), [`enhancement-raid-dps`](builds/enhancement-raid-dps.md) (ours: hand draft, 380 DPS), *Level 60* (community simulator, 379 DPS), *Enhancement 16/35/0* (community simulator, 345 DPS)
 
 Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of Air Totem; at -1.5s: cast Searing Totem.
 
@@ -139,7 +139,7 @@ Damage by ability:
 | Ability | [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) | [`enhancement-ml-raid`](builds/enhancement-ml-raid.md) | [`enhancement-raid-dps`](builds/enhancement-raid-dps.md) | *Level 60* | *Enhancement 16/35/0* |
 |---|---|---|---|---|---|
 | Auto Attack | 28% | 29% | 29% | 28% | 32% |
-| spell 439440 | 18% | 19% | 19% | 19% | 21% |
+| Windfury Weapon | 18% | 19% | 19% | 19% | 21% |
 | Earth Shock | 11% | 13% | 12% | 13% | 7% |
 | Stormstrike | 11% | 11% | 11% | 11% | 12% |
 | Lightning Bolt | 10% | 10% | 11% | 11% | 12% |
@@ -147,7 +147,7 @@ Damage by ability:
 | Attack | 7% | 6% | 6% | 6% | 6% |
 | Dragonbreath Chili | 3% | 3% | 3% | 3% | 3% |
 
-### [`elemental-enhancement-ml-raid`](builds/elemental-enhancement-ml-raid.md) (ours: hand draft, 365 DPS)
+### [`elemental-enhancement-ml-raid`](builds/elemental-enhancement-ml-raid.md) (ours: derived (ML search), 365 DPS)
 
 Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of Air Totem; at -1.5s: cast Searing Totem.
 
@@ -169,7 +169,7 @@ Damage by ability:
 | Ability | [`elemental-enhancement-ml-raid`](builds/elemental-enhancement-ml-raid.md) |
 |---|---|
 | Auto Attack | 31% |
-| spell 439440 | 20% |
+| Windfury Weapon | 20% |
 | Earth Shock | 17% |
 | Stormstrike | 12% |
 | Flame Shock | 11% |

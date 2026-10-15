@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `leveling-aoe`: score +76.0% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `leveling-aoe`: score +47.1% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -87,14 +87,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-d
 
 ## Core talents (priority order)
 
-1. **Shadowform** — Removing it costs 19.6 points of score in this model.
-2. **Twilight Focus** — Removing it costs 9.0 points of score in this model.
-3. **Mind Flay** — Removing it costs 8.4 points of score in this model.
-4. **Shadow Reach** — Removing it costs 5.7 points of score in this model.
-5. **Improved Mind Flay** — Removing it costs 3.1 points of score in this model.
-6. **Shadow Focus** — Removing it costs 1.7 points of score in this model.
-7. **Shadow Weaving** — Removing it costs 1.1 points of score in this model.
-8. **Darkness** — Removing it costs 0.7 points of score in this model.
+1. **Shadowform** — Removing it costs 13.4 points of score in this model.
+2. **Mind Flay** — Removing it costs 10.8 points of score in this model.
+3. **Twilight Focus** — Removing it costs 9.6 points of score in this model.
+4. **Improved Shadow Word: Pain** — Removing it costs 2.4 points of score in this model.
+5. **Darkness** — Removing it costs 1.8 points of score in this model.
+6. **Improved Mind Flay** — Removing it costs 1.8 points of score in this model.
+7. **Shadow Weaving** — Removing it costs 1.5 points of score in this model.
+8. **Spell Warding** — Removing it costs 0.7 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
@@ -106,21 +106,20 @@ What this build casts per kill ([report](../fightlab/shadow-dps-aoe.md), all lev
 
 | Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|
-| Wand | 11.1 | 5.1 | 7.2 | 5.0 | 6% |
-| Mind Flay | 3.1 | 2.9 | 2.5 | 2.3 | 30% |
-| Shadow Word: Pain | 2.7 | 2.4 | 2.0 | 1.9 | 32% |
-| Mind Blast | 1.2 | 1.1 | 1.1 | 1.1 | 15% |
-| Shadow Word: Death | 0.0 | 0.9 | 1.0 | 1.0 | 15% |
+| Wand | 13.9 | 5.8 | 6.5 | 4.2 | 5% |
+| Mind Flay | 3.6 | 3.0 | 2.5 | 2.3 | 29% |
+| Shadow Word: Pain | 1.9 | 1.9 | 1.9 | 1.9 | 35% |
+| Mind Blast | 1.4 | 1.2 | 1.1 | 1.1 | 15% |
+| Shadow Word: Death | 0.0 | 1.1 | 1.1 | 1.0 | 15% |
 | Vampiric Embrace | 0.4 | 0.4 | 0.4 | 0.4 | 0% |
-| Devouring Plague | 0.4 | 0.3 | 0.3 | 0.3 | 2% |
-| Psychic Scream | 0.2 | 0.2 | 0.1 | 0.1 | 0% |
-| Desperate Prayer | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
-| Flash Heal | 0.9 | 0.0 | 0.0 | 0.0 | 0% |
+| Devouring Plague | 0.4 | 0.3 | 0.2 | 0.3 | 2% |
+| Psychic Scream | 0.2 | 0.1 | 0.1 | 0.1 | 0% |
+| Flash Heal | 1.2 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes
 
-- Allocation and order taken from cand-aoe-r1 on 2026-09-28: an earlier optimizer round beat the last export in the fight lab (52.8s vs 116.4s per kill, level-weighted).
-- Report: priest/talents/forever/optimizer/shadow-dps-leveling-aoe.md
+- Allocation and order taken from cand-aoe-r1 on 2026-10-15: an earlier optimizer round beat the last export in the fight lab (50.1s vs 63.6s per kill, level-weighted).
+- Report: priest/research/talents/forever/optimizer/shadow-dps-leveling-aoe.md
 
 ## Open questions (verify in the live game)
 

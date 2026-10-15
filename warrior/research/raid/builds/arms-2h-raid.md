@@ -53,9 +53,8 @@ Allocation adopted on 2026-09-26 from `opt-arms-2h-raid-raid-dps`, the best buil
 3. **Bloodthirst** — Raid sim (2026-09-26): removing it costs +9% DPS.
 4. **Death Wish** — Raid sim (2026-09-26): removing it costs +6% DPS.
 5. **Deep Wounds** — Bleed on crit; two-handers make it hit hard. Raid sim (2026-09-26): removing it costs +5% DPS.
-6. **Precision** — Raid sim (2026-09-26): removing it costs +4% DPS.
-7. **Improved Execute** — Raid sim (2026-09-26): removing it costs +3% DPS.
-8. **Two-Handed Weapon Specialization** — Now 3 ranks (+3% est.). Raid sim (2026-09-26): removing it costs +3% DPS.
+6. **Improved Execute** — Raid sim (2026-09-26): removing it costs +3% DPS.
+7. **Two-Handed Weapon Specialization** — Now 3 ranks (+3% est.). Raid sim (2026-09-26): removing it costs +3% DPS.
 
 ## Flex points
 

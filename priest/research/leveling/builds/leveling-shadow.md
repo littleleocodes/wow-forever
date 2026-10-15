@@ -85,7 +85,7 @@ Allocation and order adopted on 2026-09-26 from `cand-shadow-r5`, the fastest bu
 1. **Mind Flay** — Channelled snare + damage at 20. Fight lab (2026-09-26): removing it costs +53% time per kill at 60, +37% at 30.
 2. **Shadowform** — Level-40 milestone: +10% damage, -50% Shadow mana cost (demo). Fight lab (2026-09-26): removing it costs +42% time per kill at 60.
 3. **Spirit Tap** — Reworked wording, same effect at 5/5 (100% Spirit for 15s after a kill, est.): no drinking between pulls. Fight lab (2026-09-26): removing it costs +12% time per kill at 60, +11% at 30.
-4. **Improved Mind Flay** — New: +10% damage and +5 yards for 2 points, right after Mind Flay. Fight lab (2026-09-26): removing it costs +9% time per kill at 60, +10% at 30.
+4. **Improved Mind Flay** — New: +20% damage and +10 yards at 2/2 (70291 tooltip; slows the target by 20%), right after Mind Flay. Fight lab (2026-09-26): removing it costs +9% time per kill at 60, +10% at 30.
 5. **Darkness** — +10% Shadow damage. Fight lab (2026-09-26): removing it costs +6% time per kill at 60.
 6. **Shadow Weaving** — Self-buff now (est. +10% Shadow damage at 5 stacks) — no debuff slot, always up while leveling. Fight lab (2026-09-26): removing it costs +6% time per kill at 60, +6% at 30.
 7. **Meditation** — Fight lab (2026-09-26): removing it costs +5% time per kill at 60.

@@ -217,7 +217,8 @@ def write_audit(cls: str, builds: dict, classic_trees: dict, forever_trees: dict
              "and `proposed-builds.json` for the resulting Forever builds.\n"]
     for b in builds["builds"]:
         split = split_string(classic_trees, b)
-        lines.append(f"## {b['name']} ({split})\n")
+        # 2026-10-15 page audit B16: Classic build names that already end in their split printed it twice
+        lines.append(f"## {b['name']}" + ("" if b["name"].rstrip().endswith(f"({split})") else f" ({split})") + "\n")
         lines.append("| Tree | Talent | Pts | Forever status | Detail |")
         lines.append("|---|---|---|---|---|")
         orphaned = 0

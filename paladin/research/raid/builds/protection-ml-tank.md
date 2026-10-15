@@ -55,7 +55,7 @@ The Protection tank build the machine-learning talent search found in the commun
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | **[`protection-ml-tank`](protection-ml-tank.md)** | ours: hand draft | 0/32/19 | 1.042 | +0.0% | 504 | 912 |
+| 1 | **[`protection-ml-tank`](protection-ml-tank.md)** | ours: derived (ML search) | 0/32/19 | 1.042 | +0.0% | 504 | 912 |
 | 2 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 0/32/19 | 1.024 | -1.7% | 489 | 917 |
 | 3 | [`prot-tank`](prot-tank.md) | ours: hand draft | 0/23/28 | 1.000 | -4.0% | 506 | 993 |
 | 4 | *Protection 0/45/6* | community simulator | - | 0.924 | -11.3% | 443 | 1020 |

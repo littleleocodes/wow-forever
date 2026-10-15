@@ -38,7 +38,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`combat-swords-raid`](builds/combat-swords-raid.md) (ours: hand draft, 409 DPS), *Improved Expose Armor (SS)* (community simulator, 409 DPS), [`combat-swords-open-raid`](builds/combat-swords-open-raid.md) (ours: hand draft, 392 DPS), [`opt-combat-swords-raid-raid-dps`](builds/opt-combat-swords-raid-raid-dps.md) (ours: optimizer, 391 DPS), *Sinister Strike* (community simulator, 387 DPS), *Combat Dual-Wield 15/33/3* (community simulator, 380 DPS), *Backstab* (community simulator, 331 DPS)
+### [`combat-swords-raid`](builds/combat-swords-raid.md) (ours: hand draft, 409 DPS), *Improved Expose Armor (SS)* (community simulator, 409 DPS), [`combat-swords-open-raid`](builds/combat-swords-open-raid.md) (ours: derived (open search), 392 DPS), [`opt-combat-swords-raid-raid-dps`](builds/opt-combat-swords-raid-raid-dps.md) (ours: optimizer, 391 DPS), *Sinister Strike* (community simulator, 387 DPS), *Combat Dual-Wield 15/33/3* (community simulator, 380 DPS), *Backstab* (community simulator, 331 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | [`combat-swords-raid`](builds/combat-swords-raid.md) casts/min | *Improved Expose Armor (SS)* casts/min | [`combat-swords-open-raid`](builds/combat-swords-open-raid.md) casts/min | [`opt-combat-swords-raid-raid-dps`](builds/opt-combat-swords-raid-raid-dps.md) casts/min | *Sinister Strike* casts/min | *Combat Dual-Wield 15/33/3* casts/min | *Backstab* casts/min |
 |---|---|---|---|---|---|---|---|---|
@@ -145,7 +145,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`opt-combat-daggers-raid-raid-dps`](builds/opt-combat-daggers-raid-raid-dps.md) (ours: optimizer, 424 DPS), [`combat-ml-raid`](builds/combat-ml-raid.md) (ours: hand draft, 406 DPS), [`combat-daggers-raid`](builds/combat-daggers-raid.md) (ours: hand draft, 404 DPS), *Combat Dual-Wield 15/33/3* (community simulator, 399 DPS), *Backstab* (community simulator, 375 DPS), *Improved Expose Armor (SS)* (community simulator, 355 DPS), *Sinister Strike* (community simulator, 340 DPS)
+### [`opt-combat-daggers-raid-raid-dps`](builds/opt-combat-daggers-raid-raid-dps.md) (ours: optimizer, 424 DPS), [`combat-ml-raid`](builds/combat-ml-raid.md) (ours: derived (ML search), 406 DPS), [`combat-daggers-raid`](builds/combat-daggers-raid.md) (ours: hand draft, 404 DPS), *Combat Dual-Wield 15/33/3* (community simulator, 399 DPS), *Backstab* (community simulator, 375 DPS), *Improved Expose Armor (SS)* (community simulator, 355 DPS), *Sinister Strike* (community simulator, 340 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-combat-daggers-raid-raid-dps`](builds/opt-combat-daggers-raid-raid-dps.md) casts/min | [`combat-ml-raid`](builds/combat-ml-raid.md) casts/min | [`combat-daggers-raid`](builds/combat-daggers-raid.md) casts/min | *Combat Dual-Wield 15/33/3* casts/min | *Backstab* casts/min | *Improved Expose Armor (SS)* casts/min | *Sinister Strike* casts/min |
 |---|---|---|---|---|---|---|---|---|
@@ -259,9 +259,9 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) (ours: hand draft, 422 DPS), [`assassination-ml-raid`](builds/assassination-ml-raid.md) (ours: hand draft, 410 DPS), [`daggers-split-ml-raid`](builds/daggers-split-ml-raid.md) (ours: hand draft, 410 DPS), [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) (ours: hand draft, 410 DPS), *Mutilate* (community simulator, 386 DPS), *Assassination Mutilate 31/20/0* (community simulator, 374 DPS)
+### [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) (ours: hand draft, 422 DPS), [`assassination-ml-raid`](builds/assassination-ml-raid.md) (ours: derived (ML search), 410 DPS), `daggers-split-ml-raid` (ours, 410 DPS), [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) (ours: hand draft, 410 DPS), *Mutilate* (community simulator, 386 DPS), *Assassination Mutilate 31/20/0* (community simulator, 374 DPS)
 
-| # | Priority (the first line whose condition holds is cast) | [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) casts/min | [`assassination-ml-raid`](builds/assassination-ml-raid.md) casts/min | [`daggers-split-ml-raid`](builds/daggers-split-ml-raid.md) casts/min | [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) casts/min | *Mutilate* casts/min | *Assassination Mutilate 31/20/0* casts/min |
+| # | Priority (the first line whose condition holds is cast) | [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) casts/min | [`assassination-ml-raid`](builds/assassination-ml-raid.md) casts/min | `daggers-split-ml-raid` casts/min | [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) casts/min | *Mutilate* casts/min | *Assassination Mutilate 31/20/0* casts/min |
 |---|---|---|---|---|---|---|---|
 | 1 | cast Backstab | 11.6 | 11.3 | 11.3 | 11.8 | 11.1 | 10.9 |
 | 2 | if time left on Expose Armor < 3 and combo points ≥ 3.75 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.8 | 1.8 | 1.8 | 1.8 | 1.8 | 1.7 |
@@ -274,7 +274,7 @@ Lines of the simulator's rotation these builds never cast: cast Adrenaline Rush 
 
 Damage by ability:
 
-| Ability | [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) | [`assassination-ml-raid`](builds/assassination-ml-raid.md) | [`daggers-split-ml-raid`](builds/daggers-split-ml-raid.md) | [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) | *Mutilate* | *Assassination Mutilate 31/20/0* |
+| Ability | [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) | [`assassination-ml-raid`](builds/assassination-ml-raid.md) | `daggers-split-ml-raid` | [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) | *Mutilate* | *Assassination Mutilate 31/20/0* |
 |---|---|---|---|---|---|---|
 | Auto Attack | 40% | 41% | 41% | 43% | 45% | 46% |
 | Backstab | 31% | 32% | 32% | 30% | 30% | 30% |
@@ -343,7 +343,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`subtlety-hemo-raid`](builds/subtlety-hemo-raid.md) (ours: hand draft, 399 DPS), [`subtlety-open-raid`](builds/subtlety-open-raid.md) (ours: hand draft, 374 DPS), *Subtlety Hemo 15/0/36* (community simulator, 356 DPS)
+### [`subtlety-hemo-raid`](builds/subtlety-hemo-raid.md) (ours: hand draft, 399 DPS), [`subtlety-open-raid`](builds/subtlety-open-raid.md) (ours: derived (open search), 374 DPS), *Subtlety Hemo 15/0/36* (community simulator, 356 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | [`subtlety-hemo-raid`](builds/subtlety-hemo-raid.md) casts/min | [`subtlety-open-raid`](builds/subtlety-open-raid.md) casts/min | *Subtlety Hemo 15/0/36* casts/min |
 |---|---|---|---|---|

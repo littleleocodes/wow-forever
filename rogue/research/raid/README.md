@@ -24,7 +24,7 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 | [Combat — Raid (machine-learning search)](builds/combat-ml-raid.md) 🔬 | 16/33/2 | DPS |
 | [Combat — Swords (open talent search)](builds/combat-swords-open-raid.md) 🔬 | 18/33/0 | DPS |
 | [Subtlety — Raid (open talent search)](builds/subtlety-open-raid.md) 🔬 | 20/0/31 | DPS |
-| [Daggers (split) — Raid (machine-learning search)](builds/daggers-split-ml-raid.md) 🔬 | 30/19/2 | DPS |
+| [Daggers (split) — Raid (open talent search)](builds/daggers-split-open-raid.md) 🔬 | 21/28/2 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
@@ -47,7 +47,7 @@ Our builds and the community simulator's own builds, run through the same simula
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`combat-swords-raid`](builds/combat-swords-raid.md) | ours: hand draft | 19/32/0 | 409 | +0.0% | 703 | -2.1% | 0 s |
 | 2 | *Improved Expose Armor (SS)* | community simulator | - | 409 | +0.0% | 703 | -2.1% | 0 s |
-| 3 | [`combat-swords-open-raid`](builds/combat-swords-open-raid.md) | ours: hand draft | 18/33/0 | 392 | -4.2% | 718 | +0.0% | 0 s |
+| 3 | [`combat-swords-open-raid`](builds/combat-swords-open-raid.md) | ours: derived (open search) | 18/33/0 | 392 | -4.2% | 718 | +0.0% | 0 s |
 | 4 | [`opt-combat-swords-raid-raid-dps`](builds/opt-combat-swords-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 391 | -4.4% | 704 | -2.0% | 0 s |
 | 5 | *Sinister Strike* | community simulator | - | 387 | -5.4% | 711 | -0.9% | 0 s |
 | 6 | *Combat Dual-Wield 15/33/3* | community simulator | - | 380 | -7.1% | 698 | -2.8% | 0 s |
@@ -61,7 +61,7 @@ Our builds and the community simulator's own builds, run through the same simula
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`opt-combat-daggers-raid-raid-dps`](builds/opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 17/32/2 | 424 | +0.0% | 713 | -3.0% | 0 s |
-| 2 | [`combat-ml-raid`](builds/combat-ml-raid.md) | ours: hand draft | 16/33/2 | 406 | -4.1% | 735 | +0.0% | 0 s |
+| 2 | [`combat-ml-raid`](builds/combat-ml-raid.md) | ours: derived (ML search) | 16/33/2 | 406 | -4.1% | 735 | +0.0% | 0 s |
 | 3 | [`combat-daggers-raid`](builds/combat-daggers-raid.md) | ours: hand draft | 16/33/2 | 404 | -4.8% | 728 | -0.9% | 0 s |
 | 4 | *Combat Dual-Wield 15/33/3* | community simulator | - | 399 | -5.9% | 718 | -2.3% | 0 s |
 | 5 | *Mutilate* | community simulator | - | 383 | -9.6% | 672 | -8.6% | 0 s |
@@ -76,8 +76,8 @@ Our builds and the community simulator's own builds, run through the same simula
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) | ours: hand draft | 30/19/2 | 422 | +0.0% | 702 | -0.7% | 0 s |
-| 2 | [`assassination-ml-raid`](builds/assassination-ml-raid.md) | ours: hand draft | 30/19/2 | 410 | -2.7% | 707 | +0.0% | 0 s |
-| 3 | [`daggers-split-ml-raid`](builds/daggers-split-ml-raid.md) | ours: hand draft | 30/19/2 | 410 | -2.7% | 707 | +0.0% | 0 s |
+| 2 | [`assassination-ml-raid`](builds/assassination-ml-raid.md) | ours: derived (ML search) | 30/19/2 | 410 | -2.7% | 707 | +0.0% | 0 s |
+| 3 | `daggers-split-ml-raid` | ours | 30/19/2 | 410 | -2.7% | 707 | +0.0% | 0 s |
 | 4 | [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) | ours: hand draft | 30/21/0 | 410 | -2.8% | 690 | -2.4% | 0 s |
 | 5 | *Mutilate* | community simulator | - | 386 | -8.5% | 672 | -4.9% | 0 s |
 | 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 374 | -11.3% | 654 | -7.4% | 0 s |
@@ -87,7 +87,7 @@ Our builds and the community simulator's own builds, run through the same simula
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`subtlety-hemo-raid`](builds/subtlety-hemo-raid.md) | ours: hand draft | 20/0/31 | 399 | +0.0% | 673 | -0.4% | 0 s |
-| 2 | [`subtlety-open-raid`](builds/subtlety-open-raid.md) | ours: hand draft | 20/0/31 | 374 | -6.3% | 676 | +0.0% | 0 s |
+| 2 | [`subtlety-open-raid`](builds/subtlety-open-raid.md) | ours: derived (open search) | 20/0/31 | 374 | -6.3% | 676 | +0.0% | 0 s |
 | 3 | *Subtlety Hemo 15/0/36* | community simulator | - | 356 | -10.6% | 632 | -6.5% | 0 s |
 
 ## DPS by gear tier
@@ -232,6 +232,9 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 | Raid DPS, swords | combat-swords-raid | [20/31/0](builds/opt-combat-swords-raid-raid-dps.md) (+68.5%) | [combat-swords-raid](builds/combat-swords-raid.md) |
 | Raid DPS, daggers | combat-daggers-raid | [17/32/2](builds/opt-combat-daggers-raid-raid-dps.md) (+85.3%) | [combat-daggers-raid](builds/combat-daggers-raid.md) |
 
-Model findings: Mutilate daggers 33/16/2 (+92%) beat Combat swords 19/32/0 (+57%) by a wide margin: Seal Fate, Lethality, Improved Poisons and Cold Blood all feed Mutilate. Dagger leveling is 21/28/2 (Combat's Hack and Slash, Restless Blades and Riposte); Adrenaline Rush stays core for swords.
+Model findings (generated from the optimizer builds; scores are within each spec model, never across models):
 
-Beta hypotheses (model claims without community precedent, unverified): The Mutilate-over-swords margin (+92% vs +57%) and Restless Blades' cooldown maths; daggers vs swords leveling assumes equal talentless baselines. Level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).
+- **Raid DPS, swords:** 20/31/0; biggest talents by score lost when removed: Relentless Strikes (12.2), Improved Sinister Strike (9.5), Improved Slice and Dice (9.0), Ruthlessness (7.7), Malice (7.6); the hand draft `combat-swords-raid` is 19/32/0.
+- **Raid DPS, daggers:** 17/32/2; biggest talents by score lost when removed: Puncturing Wounds (24.9), Relentless Strikes (12.7), Improved Expose Armor (9.4), Improved Slice and Dice (8.9), Adrenaline Rush (8.3); the hand draft `combat-daggers-raid` is 16/33/2.
+
+Beta hypotheses: every build's unverified claims are its `open_questions`, collected in [`_reference/launch-checklist.md`](../../../_reference/launch-checklist.md); level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).

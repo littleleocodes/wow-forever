@@ -46,7 +46,7 @@
 
 **Orphaned points to re-spend: 10.** Points in changed/moved talents to re-evaluate: 41.
 
-## Protection — Raid Tank (11/5/35) (11/5/35)
+## Protection — Raid Tank (11/5/35)
 
 | Tree | Talent | Pts | Forever status | Detail |
 |---|---|---|---|---|

@@ -6,11 +6,11 @@
 
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
-| 1 | [Retribution](retribution.md) — Retribution — Seal of Command / Twist of Light | 979 | best |
+| 1 | [Retribution](retribution.md) — Seal of Command / Twist of Light | 979 | best |
 
-**Tanking**: [Protection](protection.md) — Protection — Raid tank 🔬.
+**Tanking**: [Protection](protection.md) — Raid tank 🔬.
 
-**Healing**: [Holy](holy.md) — Holy — Raid healing 🔬.
+**Healing**: [Holy](holy.md) — Raid healing 🔬.
 
 **By gear tier**: each damage spec with its best talents for each tier, in its own gear (DPS in a full raid; [every class](../../_reference/dps-rankings.md)):
 

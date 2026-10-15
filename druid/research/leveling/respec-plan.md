@@ -15,7 +15,7 @@ Talentless baseline: 90 h for levels 10-60 under these assumptions.
   - at level 60: **Balance**: Improved Wrath 5, Moonglow 3, Improved Moonfire 2, Nature's Majesty 2, Nature's Splendor 1, Improved Entangling Roots 3, Improved Starfire 5, Eclipse 3, Nature's Grace 1, Vengeance 5, Moonfury 5, Moonkin Form 1; **Feral Combat**: Heart of the Wild 5, Feral Swiftness 2; **Restoration**: Nature's Focus 5, Naturalist 3
   - order: 42-43 Vengeance x2, 44 Moonfury, 45-49 Heart of the Wild x5, 50-51 Feral Swiftness x2, 52 Improved Entangling Roots, 53-57 Nature's Focus x5, 58-60 Naturalist x3
 
-Total: **70.4 h** (21.8% faster than talentless), 1 respec(s).
+Total: **70.4 h** (21.8% faster than talentless), 1 respec.
 
 ## Best schedule if you stay in one spec model
 
@@ -26,7 +26,7 @@ Total: **70.4 h** (21.8% faster than talentless), 1 respec(s).
   - at level 60: **Feral Combat**: Ferocity 5, Thick Hide 3, Feral Swiftness 2, Savage Fury 2, Sharpened Claws 2, Heart of the Wild 5, Predatory Strikes 3, Leader of the Pack 1, Natural Instinct 2, Rend and Tear 5, Berserk 1; **Balance**: Genesis 5, Nature's Reach 2, Nature's Majesty 2; **Restoration**: Nature's Focus 5, Naturalist 5, Natural Shapeshifter 1
   - order: 10-14 Ferocity x5, 15-17 Thick Hide x3, 18-19 Feral Swiftness x2, 20-21 Savage Fury x2, 22-23 Sharpened Claws x2, 24 Heart of the Wild, 25-27 Predatory Strikes x3, 28-29 Heart of the Wild x2, 30 Leader of the Pack, 31-32 Natural Instinct x2, 33-34 Heart of the Wild x2, 35-39 Rend and Tear x5, 40 Berserk, 41-45 Genesis x5, 46-47 Nature's Reach x2, 48-49 Nature's Majesty x2, 50-54 Nature's Focus x5, 55-59 Naturalist x5, 60 Natural Shapeshifter
 
-Total: **71.4 h** (20.6% faster than talentless), 0 respec(s).
+Total: **71.4 h** (20.6% faster than talentless), no respec.
 
 ### balance-dps
 
@@ -35,7 +35,7 @@ Total: **71.4 h** (20.6% faster than talentless), 0 respec(s).
   - at level 60: **Balance**: Improved Wrath 5, Moonglow 3, Improved Moonfire 2, Nature's Majesty 2, Nature's Splendor 1, Improved Entangling Roots 3, Improved Starfire 5, Eclipse 3, Nature's Grace 1, Vengeance 5, Moonfury 5, Moonkin Form 1; **Feral Combat**: Heart of the Wild 5, Feral Swiftness 2; **Restoration**: Nature's Focus 5, Naturalist 3
   - order: 10-14 Improved Wrath x5, 15-17 Moonglow x3, 18 Improved Moonfire, 19-20 Nature's Majesty x2, 21 Nature's Splendor, 22 Improved Moonfire, 23-24 Improved Entangling Roots x2, 25-29 Improved Starfire x5, 30-32 Eclipse x3, 33 Nature's Grace, 34 Vengeance, 35-38 Moonfury x4, 39 Vengeance, 40 Moonkin Form, 41-43 Vengeance x3, 44 Moonfury, 45-49 Heart of the Wild x5, 50-51 Feral Swiftness x2, 52 Improved Entangling Roots, 53-57 Nature's Focus x5, 58-60 Naturalist x3
 
-Total: **79.7 h** (11.5% faster than talentless), 0 respec(s).
+Total: **79.7 h** (11.5% faster than talentless), no respec.
 
 ## Never respec: best single plan
 

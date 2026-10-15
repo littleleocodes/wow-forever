@@ -6,7 +6,7 @@
 
 **Other setups of this spec.** This build is the Lone Wolf setup. The spec's best build for each other setup, in a full raid:
 
-- With a pet: [Marksmanship — With a pet](../research/raid/builds/marksmanship-with-a-pet-open-raid.md) (7/39/5), 879 DPS in a full raid — [open the talent tree](https://talentsforever.com/hunter/60/502-0053252501523051-5-6)
+- With a pet: [Marksmanship — With a pet](../research/raid/builds/marksmanship-with-a-pet-open-raid.md) (7/39/5, 879 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/502-0053252501523051-5-6)
 
 ## How to play
 
@@ -77,11 +77,11 @@ Marksmanship plays without a pet: **Lone Wolf** adds 20% to everything you do wh
 | Shoulders | [Theramore Pauldrons](https://www.wowhead.com/forever/item=271955) | [Giantstalker's Epaulets](https://www.wowhead.com/forever/item=16848) · *Sulfuron Harbinger, Molten Core* |
 | Back | [Earthweave Cloak](https://www.wowhead.com/forever/item=21187)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) | [Arcanoweave Cloak](https://www.wowhead.com/forever/item=272411)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) |
 | Chest | [Dawn Armor](https://www.wowhead.com/forever/item=252483) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Giantstalker's Breastplate](https://www.wowhead.com/forever/item=16845) · *Golemagg the Incinerator, Molten Core*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
-| Wrist | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Minor Agility](https://www.wowhead.com/forever/spell=7778) | [Giantstalker's Bracers](https://www.wowhead.com/forever/item=16850) · *Molten Core*<br>+ [Enchant Bracer - Minor Agility](https://www.wowhead.com/forever/spell=7778) |
-| Hands | [Gauntlets of Elements](https://www.wowhead.com/forever/item=16672) · *Pyroguard Emberseer, Blackrock Spire*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/spell=13823) | [Giantstalker's Gloves](https://www.wowhead.com/forever/item=16852) · *Shazzrah, Molten Core*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/spell=13823) |
+| Wrist | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Minor Agility](https://www.wowhead.com/forever/item=273470) | [Giantstalker's Bracers](https://www.wowhead.com/forever/item=16850) · *Molten Core*<br>+ [Enchant Bracer - Minor Agility](https://www.wowhead.com/forever/item=273470) |
+| Hands | [Gauntlets of Elements](https://www.wowhead.com/forever/item=16672) · *Pyroguard Emberseer, Blackrock Spire*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) | [Giantstalker's Gloves](https://www.wowhead.com/forever/item=16852) · *Shazzrah, Molten Core*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) |
 | Waist | [Knowledge of the Timbermaw](https://www.wowhead.com/forever/item=228190) | [Giantstalker's Belt](https://www.wowhead.com/forever/item=16851) · *Molten Core* |
 | Legs | [Outrider's Chain Leggings](https://www.wowhead.com/forever/item=22673)<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) | [Dragonstalker's Legguards](https://www.wowhead.com/forever/item=16938) · *Ragnaros, Molten Core*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) |
-| Feet | [Sorcerer's Boots](https://www.wowhead.com/forever/item=22064)<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) | [Giantstalker's Boots](https://www.wowhead.com/forever/item=16849) · *Gehennas, Molten Core*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) |
+| Feet | [Sorcerer's Boots](https://www.wowhead.com/forever/item=22064)<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) | [Giantstalker's Boots](https://www.wowhead.com/forever/item=16849) · *Gehennas, Molten Core*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) |
 | Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21202) | [Band of Accuria](https://www.wowhead.com/forever/item=17063) · *Ragnaros, Molten Core* |
 | Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=234020) | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21202) |
 | Trinket | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) |
@@ -93,7 +93,6 @@ Marksmanship plays without a pet: **Lone Wolf** adds 20% to everything you do wh
 
 ## Other builds of this spec
 
-- [Marksmanship — With a pet](../research/raid/builds/marksmanship-with-a-pet-open-raid.md) (7/39/5, 879 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/502-0053252501523051-5-6)
 - [Marksmanship (optimized, lone wolf)](../research/raid/builds/opt-mm-lonewolf-raid-raid-dps.md) (5/38/8, 855 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5-005355051150305-50003-6)
 - [Marksmanship — Raid](../research/raid/builds/marksmanship-ml-raid.md) (11/40/0, 813 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5501-305355041150305--6)
 - [Marksmanship with Beast Mastery support](../research/raid/builds/bm-mm-full-buffs-raid.md) (21/30/0, 801 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/53200005050001-005155000150305--6)

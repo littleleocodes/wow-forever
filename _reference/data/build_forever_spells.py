@@ -120,8 +120,11 @@ def render_class(cls, obj):
            f"(captured {obj['captured']}). Do not hand-edit. Tooltips are the beta client's level-{obj['tooltip_level']} values with no gear; "
            f"'vs Classic' quotes Classic Era where the beta text differs. Beta numbers change between builds.", ""]
     sc = obj["classic_status_counts"]
+    # 2026-10-15 page audit B16: the tooltip sources were printed as a raw dict ("{'beta': 234, 'demo': 0, 'classic': 0}")
+    src_words = {"beta": "the beta client", "demo": "the demo client", "classic": "Classic Era"}
+    reads = ", ".join(f"{v} from {src_words.get(k, k)}" for k, v in obj["tooltip_sources"].items() if v)
     out.append("Rank entries: " + ", ".join(f"{v} {STATUS_WORDS.get(k, k)}" for k, v in sorted(sc.items())) +
-               f"; tooltip reads: {obj['tooltip_sources']}.")
+               (f"; tooltips read: {reads}." if reads else "."))
     out.append("")
     for tab in obj["tabs"]:
         out.append(f"## {tab['name']}")
@@ -165,7 +168,15 @@ def main():
     ap.add_argument("classes", nargs="*")
     ap.add_argument("--raw", default="2026-10-03-beta-70170")
     ap.add_argument("--captured", default=dt.date.today().isoformat())
+    ap.add_argument("--render-only", action="store_true",
+                    help="re-render the READMEs from the existing forever-spells/<class>.json (no raw export read; 2026-10-15)")
     a = ap.parse_args()
+    if a.render_only:   # 2026-10-15 page audit B16: the default --raw is an older pull, so a plain run would rebuild the JSON from it
+        for cls in [c for c in CLASSES if not a.classes or c in a.classes]:
+            obj = json.load(open(OUT / f"{cls}.json", encoding="utf-8"))
+            (ROOT / cls / "research" / "spells" / "README.md").write_text(render_class(cls, obj), encoding="utf-8")
+            print(f"{cls}: research/spells/README.md re-rendered from forever-spells/{cls}.json (build {obj['build']})")
+        return
     data = json.load(open(find_raw(RAW / a.raw, "talentsforever-com", "data.json"), encoding="utf-8"))
     OUT.mkdir(exist_ok=True)
     for cls in [c for c in CLASSES if not a.classes or c in a.classes]:

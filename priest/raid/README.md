@@ -6,16 +6,16 @@
 
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
-| 1 | [Shadow](shadow.md) — Shadow (optimized) | 696 | best |
+| 1 | [Shadow](shadow.md) (optimized) | 696 | best |
 | 2 | [Smite](smite.md) — Discipline/Holy — Smite | 579 | -17% |
 
-**Healing** (ranked by the healer lab's capacity: the multiple of the lab's standard raid damage the healer keeps up with): [Holy](holy.md) — Holy — Raid healing 🔬 (capacity 0.69), [Discipline](discipline.md) — Discipline — Raid healing 🔬 (capacity 0.61).
+**Healing** (ranked by the healer lab's capacity: the multiple of the lab's standard raid damage the healer keeps up with): [Holy](holy.md) — Raid healing 🔬 (capacity 0.69), [Discipline](discipline.md) — Raid healing 🔬 (capacity 0.61).
 
 **By gear tier**: each damage spec with its best talents for each tier, in its own gear (DPS in a full raid; [every class](../../_reference/dps-rankings.md)):
 
 | Spec | Pre-BiS | Phase 1 BiS |
 |---|---|---|
-| [Shadow](shadow.md) | 685 | 702 |
+| [Shadow](shadow.md) | 681 | 702 |
 | [Smite](smite.md) | 603 | 632 |
 
 🔬 = a derived build (searched in a simulator). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.

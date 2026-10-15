@@ -11,8 +11,8 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
 | [DS/Ruin — Demonic Sacrifice + Ruin (simulator winner adopted 2026-09-26)](builds/ds-ruin-raid.md) | 22/11/18 | DPS | [ds-ruin-raid](../talents/classic-baseline/ds-ruin-raid.md) |
-| [Affliction — DoT / Drain Hope (simulator winner adopted 2026-09-27)](builds/affliction-dot-raid.md) | 30/0/21 | DPS | [sm-ruin-raid](../talents/classic-baseline/sm-ruin-raid.md) |
-| [Destruction — Immolate / Conflagrate / Incinerate (simulator winner adopted 2026-09-28)](builds/destruction-fire-raid.md) | 22/11/18 | DPS | — |
+| [Affliction — DoT / Malevolence / Nightfall (simulator winner adopted 2026-09-27)](builds/affliction-dot-raid.md) | 30/0/21 | DPS | [sm-ruin-raid](../talents/classic-baseline/sm-ruin-raid.md) |
+| [Affliction/Destruction — Shadow Bolt / Ruin / Shadowburn (simulator winner adopted 2026-09-28)](builds/destruction-fire-raid.md) | 22/11/18 | DPS | — |
 | [Demonology — Demonic Pact (raid)](builds/demonology-pact-raid.md) | 2/31/18 | DPS | — |
 | [Destruction — Incinerate (raid)](builds/destruction-incinerate-raid.md) | 9/11/31 | DPS | — |
 
@@ -60,7 +60,7 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`shadow-bolt-hybrid-fire-open-raid`](builds/shadow-bolt-hybrid-fire-open-raid.md) | ours: hand draft | 20/11/20 | 618 | +0.0% | 700 | +0.0% | 3 s |
+| 1 | [`shadow-bolt-hybrid-fire-open-raid`](builds/shadow-bolt-hybrid-fire-open-raid.md) | ours: derived (open search) | 20/11/20 | 618 | +0.0% | 700 | +0.0% | 3 s |
 | 2 | [`destruction-fire-raid`](builds/destruction-fire-raid.md) | ours: hand draft | 22/11/18 | 613 | -0.8% | 689 | -1.5% | 8 s |
 | 3 | [`opt-fire-destro-raid-raid-dps`](builds/opt-fire-destro-raid-raid-dps.md) | ours: optimizer | 10/11/30 | 613 | -0.8% | 685 | -2.1% | 2 s |
 | 4 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 586 | -5.1% | 657 | -6.1% | 5 s |
@@ -75,10 +75,10 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`shadow-bolt-hybrid-open-raid`](builds/shadow-bolt-hybrid-open-raid.md) | ours: hand draft | 20/11/20 | 641 | +0.0% | 723 | +0.0% | 1 s |
+| 1 | [`shadow-bolt-hybrid-open-raid`](builds/shadow-bolt-hybrid-open-raid.md) | ours: derived (open search) | 20/11/20 | 641 | +0.0% | 723 | +0.0% | 1 s |
 | 2 | [`opt-sb-raid-raid-dps`](builds/opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 637 | -0.6% | 718 | -0.6% | 1 s |
 | 3 | [`ds-ruin-raid`](builds/ds-ruin-raid.md) | ours: hand draft | 22/11/18 | 633 | -1.1% | 716 | -0.8% | 2 s |
-| 4 | [`destruction-ml-raid`](builds/destruction-ml-raid.md) | ours: hand draft | 10/11/30 | 627 | -2.1% | 705 | -2.4% | 0 s |
+| 4 | [`destruction-ml-raid`](builds/destruction-ml-raid.md) | ours: derived (ML search) | 10/11/30 | 627 | -2.1% | 705 | -2.4% | 0 s |
 | 5 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 604 | -5.7% | 679 | -6.0% | 1 s |
 | 6 | *DS/Ruin* | community simulator | - | 595 | -7.1% | 668 | -7.5% | 1 s |
 | 7 | *Shadow and Flame 13/11/27* | community simulator | - | 549 | -14.3% | 618 | -14.5% | 1 s |
@@ -92,7 +92,7 @@ Our builds and the community simulator's own builds, run through the same simula
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`demonology-pact-raid`](builds/demonology-pact-raid.md) | ours: hand draft | 2/31/18 | 702 | +0.0% | 816 | -0.8% | 2 s |
-| 2 | [`demonology-ml-raid`](builds/demonology-ml-raid.md) | ours: hand draft | 2/31/18 | 700 | -0.2% | 822 | +0.0% | 2 s |
+| 2 | [`demonology-ml-raid`](builds/demonology-ml-raid.md) | ours: derived (ML search) | 2/31/18 | 700 | -0.2% | 822 | +0.0% | 2 s |
 | 3 | *Demonic Pact 2/31/18* | community simulator | - | 678 | -3.4% | 788 | -4.1% | 2 s |
 | 4 | *Demonic Pact* | community simulator | - | 670 | -4.6% | 778 | -5.3% | 1 s |
 
@@ -256,6 +256,10 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 | Raid DPS, Affliction DoTs | affliction-raid | [30/0/21](builds/opt-affliction-raid-raid-dps.md) (+60.2%) | [affliction-dot-raid](builds/affliction-dot-raid.md) |
 | Raid DPS, Fire Destruction | fire-destro-raid | [10/11/30](builds/opt-fire-destro-raid-raid-dps.md) (+96.9%) | [destruction-fire-raid](builds/destruction-fire-raid.md) |
 
-Model findings: The Shadow Bolt raid build is 10/11/30: Demonic Sacrifice plus 30 Destruction for Conflagrate → Shadow and Flame (+10% Shadow), so DS/Ruin survives in a new shape. Affliction 31/11/9 is a real DoT spec (Malevolence, Pandemic, Soul Siphon, Drain Hope) with Demonic Sacrifice. Fire Destruction 9/11/31 (Aftermath, Conflagrate, Fire and Brimstone, Incinerate) scores +164% against its own baseline; leveling stays Affliction with a Voidwalker (31/16/4).
+Model findings (generated from the optimizer builds; scores are within each spec model, never across models):
 
-Beta hypotheses (model claims without community precedent, unverified): Fire Destruction's +164% is against its own baseline, not comparable to Shadow; Drain Hope and Soul Siphon numbers; Demonic Pact keeping Demonic Sacrifice. Level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).
+- **Raid DPS, Shadow Bolt:** 22/11/18; biggest talents by score lost when removed: Demonic Sacrifice (27.0), Bane (21.2), Agonizing Flames (13.9), Suppression (11.6), Improved Shadow Bolt (11.0); the hand draft `ds-ruin-raid` is 22/11/18.
+- **Raid DPS, Affliction DoTs:** 30/0/21; biggest talents by score lost when removed: Bane (14.1), Agonizing Flames (9.4), Improved Shadow Bolt (8.0), Suppression (7.0), Malevolence (6.7); the hand draft `affliction-dot-raid` is 30/0/21.
+- **Raid DPS, Fire Destruction:** 10/11/30; biggest talents by score lost when removed: Demonic Sacrifice (27.2), Shadow and Flame (20.5), Bane (20.1), Shadowburn (13.4), Conflagrate (12.7); the hand draft `destruction-fire-raid` is 22/11/18.
+
+Beta hypotheses: every build's unverified claims are its `open_questions`, collected in [`_reference/launch-checklist.md`](../../../_reference/launch-checklist.md); level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).

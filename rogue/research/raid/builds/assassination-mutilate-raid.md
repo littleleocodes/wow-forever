@@ -50,15 +50,14 @@ Seal Fate daggers with Vigor and Lethality: an Assassination Backstab build. It 
 ## Core talents (priority order)
 
 1. **Seal Fate** — Every crit from a combo-point builder adds a combo point: with Backstab's crit talents, frequent 5-point finishers.
-2. **Venom** — Capstone finisher: +30% poison damage and +10% poison application for up to 21s.
-3. **Puncturing Wounds** — +30% Backstab crit and a 45% chance for Backstab to add a combo point (beta tooltip).
-4. **Lethality** — +20% crit damage bonus on Backstab (beta tooltip).
-5. **Malice** — +5% crit with attacks and poisons.
-6. **Dual Wield Specialization** — +25% off-hand damage (beta tooltip).
-7. **Precision** — +3% hit with attacks and poisons.
-8. **Vigor** — +10 maximum energy (pools energy for Backstab and finishers).
-9. **Cold Blood** — A guaranteed Backstab or Eviscerate crit once per cooldown.
-10. **Improved Slice and Dice** — Slice and Dice uptime.
+2. **Puncturing Wounds** — +30% Backstab crit and a 45% chance for Backstab to add a combo point (beta tooltip).
+3. **Lethality** — +20% crit damage bonus on Backstab (beta tooltip).
+4. **Malice** — +5% crit with attacks and poisons.
+5. **Dual Wield Specialization** — +25% off-hand damage (beta tooltip).
+6. **Precision** — +3% hit with attacks and poisons.
+7. **Vigor** — +10 maximum energy (pools energy for Backstab and finishers).
+8. **Cold Blood** — A guaranteed Backstab or Eviscerate crit once per cooldown.
+9. **Improved Slice and Dice** — Slice and Dice uptime.
 
 ## Flex points
 
@@ -69,16 +68,16 @@ Seal Fate daggers with Vigor and Lethality: an Assassination Backstab build. It 
 
 ## Rank among our builds and the community simulator's
 
-**4 of 6** for `assassination-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 6** for `assassination-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) | ours: hand draft | 30/19/2 | 422 | +0.0% | 702 | -0.7% | 0 s |
-| 2 | [`assassination-ml-raid`](assassination-ml-raid.md) | ours: hand draft | 30/19/2 | 410 | -2.7% | 707 | +0.0% | 0 s |
-| 3 | [`daggers-split-ml-raid`](daggers-split-ml-raid.md) | ours: hand draft | 30/19/2 | 410 | -2.7% | 707 | +0.0% | 0 s |
-| 4 | **[`assassination-mutilate-raid`](assassination-mutilate-raid.md)** | ours: hand draft | 30/21/0 | 410 | -2.8% | 690 | -2.4% | 0 s |
-| 5 | *Mutilate* | community simulator | - | 386 | -8.5% | 672 | -4.9% | 0 s |
-| 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 374 | -11.3% | 654 | -7.4% | 0 s |
+| 1 | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) | ours: hand draft | 30/19/2 | 422 | +0.0% | 702 | -2.3% | 0 s |
+| 2 | [`assassination-ml-raid`](assassination-ml-raid.md) | ours: derived (ML search) | 30/19/2 | 410 | -2.7% | 707 | -1.6% | 0 s |
+| 3 | **[`assassination-mutilate-raid`](assassination-mutilate-raid.md)** | ours: hand draft | 30/21/0 | 410 | -2.8% | 690 | -4.0% | 0 s |
+| 4 | [`daggers-split-open-raid`](daggers-split-open-raid.md) | ours: derived (open search) | 21/28/2 | 396 | -6.2% | 718 | +0.0% | 0 s |
+| 5 | *Mutilate* | community simulator | - | 386 | -8.5% | 672 | -6.5% | 0 s |
+| 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 374 | -11.3% | 654 | -8.9% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

@@ -30,8 +30,6 @@ Heal the tank with **Healing Wave** at the rank that covers what it is missing, 
 - When three or more of your group take damage together, switch from **Healing Wave** to **Chain Heal**, starting on a target with your **Riptide**.
 - If your group needs mana more than healing (several casters), **Mana Spring Totem** is the other water totem; the lab only models **Healing Stream Totem**.
 
-*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
-
 ## The numbers
 
 Healing capacity 0.69 (the raid damage it heals through in this project's healer lab), 396 healing per second. Healers are not in the community simulator.

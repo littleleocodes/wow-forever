@@ -1,0 +1,222 @@
+{
+ "id": "cand-aoe-r5",
+ "allocation": {
+  "Discipline": [
+   [
+    "Power in Light",
+    5
+   ],
+   [
+    "Silent Resolve",
+    1
+   ]
+  ],
+  "Holy": [
+   [
+    "Twilight Focus",
+    3
+   ],
+   [
+    "Improved Renew",
+    2
+   ],
+   [
+    "Spell Warding",
+    5
+   ],
+   [
+    "Holy Nova",
+    1
+   ],
+   [
+    "Blessed Recovery",
+    3
+   ]
+  ],
+  "Shadow": [
+   [
+    "Shadow Focus",
+    5
+   ],
+   [
+    "Blackout",
+    5
+   ],
+   [
+    "Spirit Tap",
+    2
+   ],
+   [
+    "Improved Shadow Word: Pain",
+    2
+   ],
+   [
+    "Shadow Reach",
+    2
+   ],
+   [
+    "Mind Flay",
+    1
+   ],
+   [
+    "Improved Mind Flay",
+    2
+   ],
+   [
+    "Vampiric Embrace",
+    1
+   ],
+   [
+    "Shadow Weaving",
+    3
+   ],
+   [
+    "Devouring Contagion",
+    2
+   ],
+   [
+    "Darkness",
+    5
+   ],
+   [
+    "Shadowform",
+    1
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-12",
+   "tree": "Holy",
+   "talent": "Twilight Focus",
+   "points": 3
+  },
+  {
+   "levels": "13-17",
+   "tree": "Shadow",
+   "talent": "Shadow Focus",
+   "points": 5
+  },
+  {
+   "levels": "18-19",
+   "tree": "Shadow",
+   "talent": "Improved Shadow Word: Pain",
+   "points": 2
+  },
+  {
+   "levels": "20-21",
+   "tree": "Shadow",
+   "talent": "Shadow Reach",
+   "points": 2
+  },
+  {
+   "levels": "22",
+   "tree": "Shadow",
+   "talent": "Blackout",
+   "points": 1
+  },
+  {
+   "levels": "23",
+   "tree": "Shadow",
+   "talent": "Mind Flay",
+   "points": 1
+  },
+  {
+   "levels": "24-25",
+   "tree": "Shadow",
+   "talent": "Improved Mind Flay",
+   "points": 2
+  },
+  {
+   "levels": "26-27",
+   "tree": "Shadow",
+   "talent": "Blackout",
+   "points": 2
+  },
+  {
+   "levels": "28-30",
+   "tree": "Shadow",
+   "talent": "Shadow Weaving",
+   "points": 3
+  },
+  {
+   "levels": "31",
+   "tree": "Shadow",
+   "talent": "Blackout",
+   "points": 1
+  },
+  {
+   "levels": "32",
+   "tree": "Shadow",
+   "talent": "Vampiric Embrace",
+   "points": 1
+  },
+  {
+   "levels": "33-34",
+   "tree": "Shadow",
+   "talent": "Devouring Contagion",
+   "points": 2
+  },
+  {
+   "levels": "35",
+   "tree": "Shadow",
+   "talent": "Blackout",
+   "points": 1
+  },
+  {
+   "levels": "36-37",
+   "tree": "Shadow",
+   "talent": "Spirit Tap",
+   "points": 2
+  },
+  {
+   "levels": "38-42",
+   "tree": "Shadow",
+   "talent": "Darkness",
+   "points": 5
+  },
+  {
+   "levels": "43",
+   "tree": "Shadow",
+   "talent": "Shadowform",
+   "points": 1
+  },
+  {
+   "levels": "44-45",
+   "tree": "Holy",
+   "talent": "Improved Renew",
+   "points": 2
+  },
+  {
+   "levels": "46-50",
+   "tree": "Holy",
+   "talent": "Spell Warding",
+   "points": 5
+  },
+  {
+   "levels": "51",
+   "tree": "Holy",
+   "talent": "Holy Nova",
+   "points": 1
+  },
+  {
+   "levels": "52-54",
+   "tree": "Holy",
+   "talent": "Blessed Recovery",
+   "points": 3
+  },
+  {
+   "levels": "55-59",
+   "tree": "Discipline",
+   "talent": "Power in Light",
+   "points": 5
+  },
+  {
+   "levels": "60",
+   "tree": "Discipline",
+   "talent": "Silent Resolve",
+   "points": 1
+  }
+ ],
+ "note": "Optimizer build saved by rebuild.py on 2026-10-15 (calibration round 5)"
+}

@@ -1,4 +1,4 @@
-# Leveling — Assassination with swords (31/20/0) — 31/20/0
+# Leveling — Assassination with Combat's weapon talents (31/20/0) — 31/20/0
 
 *[Rogue](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 

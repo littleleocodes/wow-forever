@@ -172,7 +172,7 @@ Damage by ability:
 | Shadow Word: Death | 2% | 2% | 2% |
 | Devouring Plague | 2% | 2% | 2% |
 
-### [`smite-open-raid`](builds/smite-open-raid.md) (ours: hand draft, 335 DPS)
+### [`smite-open-raid`](builds/smite-open-raid.md) (ours: derived (open search), 335 DPS)
 
 Before the pull: at -3s: cast Holy Fire.
 

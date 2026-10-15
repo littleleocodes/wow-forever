@@ -48,16 +48,39 @@ Allocation and order adopted on 2026-09-27 from `cand-cat-r4`, the fastest build
 | **Naturalist** | 4/5 | **NEW** | Reduces the cast time of your Healing Touch spell by 0.4 sec and increases all damage you deal by 4%. |
 | **Natural Shapeshifter** | 2/3 | moved | Reduces the mana cost of all shapeshifting by 20%. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Feral Combat | Ferocity | 5 | 0/5/0 |
+| 15-17 | Feral Combat | Thick Hide | 3 | 0/8/0 |
+| 18-19 | Feral Combat | Feral Swiftness | 2 | 0/10/0 |
+| 20-21 | Feral Combat | Savage Fury | 2 | 0/12/0 |
+| 22-23 | Feral Combat | Sharpened Claws | 2 | 0/14/0 |
+| 24 | Feral Combat | Heart of the Wild | 1 | 0/15/0 |
+| 25-27 | Feral Combat | Predatory Strikes | 3 | 0/18/0 |
+| 28-29 | Feral Combat | Heart of the Wild | 2 | 0/20/0 |
+| 30 | Feral Combat | Leader of the Pack | 1 | 0/21/0 |
+| 31-32 | Feral Combat | Natural Instinct | 2 | 0/23/0 |
+| 33-34 | Feral Combat | Heart of the Wild | 2 | 0/25/0 |
+| 35-39 | Feral Combat | Rend and Tear | 5 | 0/30/0 |
+| 40 | Feral Combat | Berserk | 1 | 0/31/0 |
+| 41-45 | Balance | Genesis | 5 | 5/31/0 |
+| 46-47 | Balance | Nature's Reach | 2 | 7/31/0 |
+| 48-49 | Balance | Nature's Majesty | 2 | 9/31/0 |
+| 50-54 | Restoration | Nature's Focus | 5 | 9/31/5 |
+| 55-58 | Restoration | Naturalist | 4 | 9/31/9 |
+| 59-60 | Restoration | Natural Shapeshifter | 2 | 9/31/11 |
+
 ## Core talents (priority order)
 
-1. **King of the Jungle** — Fight lab (2026-09-26): removing it costs +8% time per kill at 60. Fight lab (2026-09-27): removing it costs +8% time per kill at 60, +2% at 30.
-2. **Ferocity** — Fight lab (2026-09-27): removing it costs +4% time per kill at 60, +3% at 30.
-3. **Nature's Reach** — Fight lab (2026-09-26): removing it costs +4% time per kill at 60, +4% at 30. Fight lab (2026-09-27): removing it costs +4% time per kill at 60.
-4. **Sharpened Claws** — +6% crit in forms for 2 points, the moment Cat Form arrives at 20. Fight lab (2026-09-26): removing it costs +4% time per kill at 60, +5% at 30. Fight lab (2026-09-27): removing it costs +4% time per kill at 60, +4% at 30.
-5. **Natural Shapeshifter** — Fight lab (2026-09-26): removing it costs +5% time per kill at 60. Fight lab (2026-09-27): removing it costs +4% time per kill at 60.
-6. **Berserk** — Capstone at 40: 15s of 100% crit on Claw/Rake/Shred (Mangle is bear-only in the demo). Fight lab (2026-09-26): removing it costs +4% time per kill at 60. Fight lab (2026-09-27): removing it costs +3% time per kill at 60.
-7. **Savage Fury** — +10% Claw/Rake/Shred/Maul/Swipe (est.). Fight lab (2026-09-26): removing it costs +4% time per kill at 60. Fight lab (2026-09-27): removing it costs +3% time per kill at 60, +4% at 30.
-8. **Naturalist** — Fight lab (2026-09-27): removing it costs +2% time per kill at 60.
+1. **Ferocity** — Fight lab (2026-09-27): removing it costs +4% time per kill at 60, +3% at 30.
+2. **Nature's Reach** — Fight lab (2026-09-26): removing it costs +4% time per kill at 60, +4% at 30. Fight lab (2026-09-27): removing it costs +4% time per kill at 60.
+3. **Sharpened Claws** — +6% crit in forms for 2 points, the moment Cat Form arrives at 20. Fight lab (2026-09-26): removing it costs +4% time per kill at 60, +5% at 30. Fight lab (2026-09-27): removing it costs +4% time per kill at 60, +4% at 30.
+4. **Natural Shapeshifter** — Fight lab (2026-09-26): removing it costs +5% time per kill at 60. Fight lab (2026-09-27): removing it costs +4% time per kill at 60.
+5. **Berserk** — Capstone at 40: 15s of 100% crit on Claw/Rake/Shred (Mangle is bear-only in the demo). Fight lab (2026-09-26): removing it costs +4% time per kill at 60. Fight lab (2026-09-27): removing it costs +3% time per kill at 60.
+6. **Savage Fury** — +10% Claw/Rake/Shred/Maul/Swipe (est.). Fight lab (2026-09-26): removing it costs +4% time per kill at 60. Fight lab (2026-09-27): removing it costs +3% time per kill at 60, +4% at 30.
+7. **Naturalist** — Fight lab (2026-09-27): removing it costs +2% time per kill at 60.
 
 ## Flex points
 
@@ -76,18 +99,18 @@ What this build casts per kill ([report](../fightlab/feral-cat-dps.md), all leve
 
 | Ability | L15 casts/kill | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|---|
-| Melee | 4.0 | 8.9 | 12.8 | 15.9 | 17.2 | 20.1 | 34% |
-| Claw | 0.0 | 3.9 | 2.3 | 3.1 | 3.3 | 3.9 | 22% |
-| Rake | 0.0 | 0.0 | 1.3 | 1.5 | 1.6 | 1.8 | 8% |
-| Ferocious Bite | 0.0 | 0.0 | 0.0 | 0.9 | 1.0 | 1.1 | 18% |
+| Melee | 5.7 | 12.7 | 15.2 | 18.1 | 17.9 | 20.1 | 34% |
+| Claw | 0.0 | 4.9 | 2.8 | 3.5 | 3.4 | 3.9 | 22% |
+| Rake | 0.0 | 0.0 | 1.6 | 1.7 | 1.7 | 1.8 | 8% |
+| Ferocious Bite | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.1 | 18% |
 | Ravage | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.0 | 14% |
-| Tiger's Fury | 0.0 | 0.0 | 0.6 | 0.8 | 0.8 | 1.0 | 0% |
-| Rip | 0.0 | 0.8 | 1.0 | 0.0 | 0.0 | 0.1 | 3% |
+| Tiger's Fury | 0.0 | 0.0 | 0.7 | 0.9 | 0.9 | 1.0 | 0% |
+| Rip | 0.0 | 1.0 | 1.0 | 0.0 | 0.0 | 0.1 | 3% |
 | Regrowth | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Cat Form | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Enrage | 0.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Enrage | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Demoralizing Roar | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Maul | 3.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Maul | 4.6 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Bash | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Shred | 0.0 | 0.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0% |
 
@@ -99,6 +122,7 @@ What this build casts per kill ([report](../fightlab/feral-cat-dps.md), all leve
 - Omen of Clarity and Faerie Fire (Feral) are baseline in Forever — no points needed.
 - 2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): King of the Jungle 3 out; Thick Hide 3, Rend and Tear 5 in; to be re-optimized.
 - Fight lab (leveling/fightlab/feral-cat-dps.md, 2026-10-15, generated by render_fightlab_sections.py): time per kill at L15/20/30/40/50/60 = 27/18/23/27/29/33 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-feral-cat-dps-leveling-st is -0% at 60 and -1% at 30 (negative = faster); race winner over the leveling: leveling-feral; top talents at 60: Ferocity +6%, Nature's Reach +5%, Naturalist +5%, Predatory Strikes +4%; about zero: Nature's Focus. See the Fight lab section of leveling/README.md.
+- 2026-10-15 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the feral-cat-dps rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 29.6 s per kill; own tree first 29.6 s; own tree last 30.4 s.
 
 ## Open questions (verify in the live game)
 

@@ -62,7 +62,7 @@ A Frostfire Bolt build the user brought on 2026-10-06 (talentsforever.com link):
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 4/31/16 | 472 | +0.0% | 630 | -6.7% | 0 s |
 | 2 | **[`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md)** | ours: hand draft | 0/29/22 | 470 | -0.4% | 675 | +0.0% | 0 s |
-| 3 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: hand draft | 4/31/16 | 437 | -7.4% | 597 | -11.5% | 1 s |
+| 3 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: derived (ML search) | 4/31/16 | 437 | -7.4% | 597 | -11.5% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -122,9 +122,9 @@ A Frostfire Bolt build the user brought on 2026-10-06 (talentsforever.com link):
 | 8 | if stacks of Heating Up = 3: cast Pyroblast | 2.6 |
 | 9 | cast Mana Citrine | as ready |
 | 10 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 8.3 |
-| 11 | if time left in the fight ≥ 3s: cast Fireball | 8.8 |
+| 11 | if time left in the fight ≥ 3s: cast Fireball (rank 2) | 8.8 |
 | 12 | cast Robe of the Archmage | as ready |
-| 13 | cast Scorch | 0.2 |
+| 13 | cast Scorch (rank 1) | 0.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Arcane Power (needs the Arcane Power talent); cast Berserking, cast Arcane Missiles (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent); cast Combustion (needs the Combustion talent).
 

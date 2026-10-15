@@ -43,6 +43,15 @@ HEALER_GEAR = {
     "shaman": {"intellect": 250, "spirit": 150, "healing": 360, "mp5": 20, "crit_gear": 0.02},
     "druid": {"intellect": 230, "spirit": 190, "healing": 370, "mp5": 12, "crit_gear": 0.02},
 }
+GEAR_KEYS = ("intellect", "spirit", "healing", "mp5", "crit_gear")
+
+
+def use_gear(cls, stats):
+    """Replace the class's assumed gear above with a real set's summed item and enchant stats (heallab/heal_gear.py `gear_stats`;
+    run.py --gear-json; 2026-10-15). Without a call the defaults above stand, bit-identical."""
+    HEALER_GEAR[cls] = {k: stats[k] for k in GEAR_KEYS}
+
+
 RAID_BUFF_INT = 31        # Arcane Intellect
 RAID_BUFF_STATS = 12      # Mark of the Wild (all stats)
 RAID_BUFF_SPIRIT = 40     # Divine Spirit (a priest in the raid)

@@ -53,9 +53,8 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
 3. **Cruelty** — +5% crit. Raid sim (2026-09-26): removing it costs +8% DPS.
 4. **Death Wish** — +20% damage cooldown; now increases damage taken by 5% instead of dropping armor. Raid sim (2026-09-26): removing it costs +6% DPS.
 5. **Improved Execute** — Raid sim (2026-09-26): removing it costs +4% DPS.
-6. **Precision** — Raid sim (2026-09-26): removing it costs +4% DPS.
-7. **Bloodthirst** — Still the capstone; demo text: 35% AP + flat damage and a movement-speed buff. Raid sim (2026-09-26): removing it costs +3% DPS.
-8. **Unbridled Wrath** — Reworked to 12% per rank (est. 60% at max) chance for extra rage — better than Classic. Raid sim (2026-09-26): removing it costs +3% DPS.
+6. **Bloodthirst** — Still the capstone; demo text: 35% AP + flat damage and a movement-speed buff. Raid sim (2026-09-26): removing it costs +3% DPS.
+7. **Unbridled Wrath** — Reworked to 12% per rank (est. 60% at max) chance for extra rage — better than Classic. Raid sim (2026-09-26): removing it costs +3% DPS.
 
 ## Flex points
 
@@ -74,7 +73,7 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`fury-open-raid`](fury-open-raid.md) | ours: hand draft | 18/31/2 | 516 | +0.0% | 917 | +0.0% | 0 s |
+| 1 | [`fury-open-raid`](fury-open-raid.md) | ours: derived (open search) | 18/31/2 | 516 | +0.0% | 917 | +0.0% | 0 s |
 | 2 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 19/32/0 | 496 | -4.0% | 879 | -4.1% | 0 s |
 | 3 | **[`fury-dw-raid`](fury-dw-raid.md)** | ours: hand draft | 13/38/0 | 489 | -5.2% | 875 | -4.6% | 0 s |
 | 4 | *DPS* | community simulator | - | 483 | -6.4% | 874 | -4.7% | 0 s |

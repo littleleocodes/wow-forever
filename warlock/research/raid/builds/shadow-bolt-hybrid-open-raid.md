@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Shadow Bolt hybrid (a Affliction/Destruction hybrid) raid build the open talent search found on 2026-10-12: every legal 51-point build with no tree rule, searched in the community simulator's sb-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +0.6% over opt-sb-raid-raid-dps, the best of our builds in that rotation.
+The Shadow Bolt hybrid (an Affliction/Destruction hybrid) raid build the open talent search found on 2026-10-12: every legal 51-point build with no tree rule, searched in the community simulator's sb-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +0.6% over opt-sb-raid-raid-dps, the best of our builds in that rotation.
 
 ## Point allocation
 
@@ -64,10 +64,10 @@ The Shadow Bolt hybrid (a Affliction/Destruction hybrid) raid build the open tal
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`shadow-bolt-hybrid-open-raid`](shadow-bolt-hybrid-open-raid.md)** | ours: hand draft | 20/11/20 | 641 | +0.0% | 723 | +0.0% | 1 s |
+| 1 | **[`shadow-bolt-hybrid-open-raid`](shadow-bolt-hybrid-open-raid.md)** | ours: derived (open search) | 20/11/20 | 641 | +0.0% | 723 | +0.0% | 1 s |
 | 2 | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 637 | -0.6% | 718 | -0.6% | 1 s |
 | 3 | [`ds-ruin-raid`](ds-ruin-raid.md) | ours: hand draft | 22/11/18 | 633 | -1.1% | 716 | -0.8% | 2 s |
-| 4 | [`destruction-ml-raid`](destruction-ml-raid.md) | ours: hand draft | 10/11/30 | 627 | -2.1% | 705 | -2.4% | 0 s |
+| 4 | [`destruction-ml-raid`](destruction-ml-raid.md) | ours: derived (ML search) | 10/11/30 | 627 | -2.1% | 705 | -2.4% | 0 s |
 | 5 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 604 | -5.7% | 679 | -6.0% | 1 s |
 | 6 | *DS/Ruin* | community simulator | - | 595 | -7.1% | 668 | -7.5% | 1 s |
 | 7 | *Shadow and Flame 13/11/27* | community simulator | - | 549 | -14.3% | 618 | -14.5% | 1 s |
@@ -127,7 +127,7 @@ Damage by ability:
 ## Notes
 
 - +0.9% over the best hand draft of the spec, ds-ruin-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.
-- Open search result (sb-raid, full raid): 20/11/20 (Shadow Bolt hybrid (a Affliction/Destruction hybrid)) at 731.1 DPS; opt-sb-raid-raid-dps 726.6, ds-ruin-raid 724.5, destruction-ml-raid 711.9 in the same fights; 4,633 builds simulated, 2 independent runs reached the top.
+- Open search result (sb-raid, full raid): 20/11/20 (Shadow Bolt hybrid (an Affliction/Destruction hybrid)) at 731.1 DPS; opt-sb-raid-raid-dps 726.6, ds-ruin-raid 724.5, destruction-ml-raid 711.9 in the same fights; 4,633 builds simulated, 2 independent runs reached the top.
 - The spec's other builds on the pages (their best entry, full raid): destruction-fire-raid 692.5.
 - The sb-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.
 - Sibling rotations tried on it (10,000 fights): affliction-raid -0.4%, fire-destro-raid +0.2%, demonology-raid -0.7%, incinerate-raid -1.6%; none adopted.

@@ -216,7 +216,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`fury-open-raid`](builds/fury-open-raid.md) (ours: hand draft, 516 DPS), [`opt-fury-dw-raid-raid-dps`](builds/opt-fury-dw-raid-raid-dps.md) (ours: optimizer, 496 DPS), [`fury-dw-raid`](builds/fury-dw-raid.md) (ours: hand draft, 489 DPS), *DPS* (community simulator, 483 DPS), *Fury 17/34/0* (community simulator, 470 DPS)
+### [`fury-open-raid`](builds/fury-open-raid.md) (ours: derived (open search), 516 DPS), [`opt-fury-dw-raid-raid-dps`](builds/opt-fury-dw-raid-raid-dps.md) (ours: optimizer, 496 DPS), [`fury-dw-raid`](builds/fury-dw-raid.md) (ours: hand draft, 489 DPS), *DPS* (community simulator, 483 DPS), *Fury 17/34/0* (community simulator, 470 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | [`fury-open-raid`](builds/fury-open-raid.md) casts/min | [`opt-fury-dw-raid-raid-dps`](builds/opt-fury-dw-raid-raid-dps.md) casts/min | [`fury-dw-raid`](builds/fury-dw-raid.md) casts/min | *DPS* casts/min | *Fury 17/34/0* casts/min |
 |---|---|---|---|---|---|---|
@@ -393,7 +393,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`arms-community-parse`](builds/arms-community-parse.md) (ours: parse build, 481 DPS), *Arms 39/12/0* (community simulator, 478 DPS)
+### [`arms-community-parse`](builds/arms-community-parse.md) (ours: derived (simulator search), 481 DPS), *Arms 39/12/0* (community simulator, 478 DPS)
 
 Before the pull: at -1s: cast Battle Stance.
 

@@ -2,17 +2,17 @@
 
 [Mage](../README.md) > [Raid (group)](README.md) > Arcane-Frost
 
-*A Frostbolt caster with Arcane's mana and cooldown talents (Arcane Power, Presence of Mind).* (a hybrid: Arcane/Frost).
+*Arcane's Missile Barrage, Arcane Mind and Arcane Instability with Frost's Shatter and Fingers of Frost.* (a hybrid: Arcane/Frost).
 
 **✅ Recommended** for raid (the best mage spec here, or within 3% of it).
 
 **[Arcane-Frost — Raid](../research/raid/builds/arcane-frost-open-raid.md)** (28/0/23) — [open the talent tree](https://talentsforever.com/mage/60/05520300310001053--05450003010003002-6)
 
-> 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (frost-fingers-of-frost-raid), which stays below as the alternative. A model of the beta, to check at launch.
+> 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (Frost — Fingers of Frost / Ice Lance / Shatter), which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to play
 
-**Then press the first one that is ready**, top to bottom:
+**Press the first one that is ready**, top to bottom:
 
 1. **Arcane Missiles** when Missile Barrage is active
 2. **Ice Lance** when Fingers of Frost is active
@@ -28,7 +28,7 @@
 
 ## Why this rotation
 
-This hybrid plays exactly like the Frost page: **Frostbolt** as the filler, free **Arcane Missiles** on **Missile Barrage**, **Ice Lance** on **Fingers of Frost**, and **Fire Blast** only at the very end. Its Arcane points add hit and crit to the Missiles, free spells and **Presence of Mind**; the build on this page takes no **Arcane Power**.
+This hybrid plays exactly like the Frost page: **Frostbolt** as the filler, free **Arcane Missiles** on **Missile Barrage**, **Ice Lance** on **Fingers of Frost**, and **Fire Blast** only at the very end. Its Arcane points add hit and crit to the Missiles, free spells, Intellect and damage; the build on this page takes neither **Arcane Power** nor **Presence of Mind**.
 
 **Why it works**
 
@@ -36,14 +36,14 @@ This hybrid plays exactly like the Frost page: **Frostbolt** as the filler, free
 - **Ice Lance** on **Fingers of Frost** comes next. Each **Frostbolt** chill has a 15% chance to treat your next 2 spells as if the target were frozen; **Ice Lance** deals 300% more damage to a frozen target and **Shatter** adds 50% crit chance, so both charges go to **Ice Lance**. With both procs up, the simulator measured the free Missiles first slightly better (0.2%).
 - **Frostbolt** fills everything else and is the spell that rolls for both procs. **Winter's Chill**, if your build takes it, is passive: each Frost hit adds a stack of +2% crit to your **Frostbolt** and **Ice Lance**, one stack per talent point.
 - **Fire Blast** waits for the last 3 seconds, when a **Frostbolt** could no longer land before the boss dies; the simulator measured this 0.5% better. The rotation search kept it out of the rest of the fight: no damage talent here improves it, it costs more mana and it rolls for neither proc.
-- **Presence of Mind** at the pull makes one spell instant (3-minute cooldown). **Arcane Concentration** makes about one damage spell in ten free, and **Arcane Meditation** keeps half your mana regeneration going while you cast.
+- **Arcane Concentration** (3 points) gives each damage spell a 6% chance to make the next one free. **Arcane Mind** adds 10% Intellect and doubles the crit bonus of your Arcane spells (the Missiles), and **Arcane Instability** adds 3% damage and 3% crit to every spell. There is no cooldown to press at the pull besides trinkets and a potion.
 - Mana: your mana gem (from **Conjure Mana Ruby**) goes at 80% mana and **Evocation** only below 20% mana with more than 25 seconds left; in a full raid the simulator never needed **Evocation**.
 
 **Caveats**
 
 - The Frost page plays the same list with more Frost points; the simulator puts the two pages within 2% of each other, a tie.
 - Several targets: this list is for one boss. For packs, **Blizzard**, **Cone of Cold** and **Arcane Explosion** are your area spells.
-- Moving: **Ice Lance** and **Fire Blast** are instant, and **Presence of Mind** makes one **Frostbolt** instant. Threat is not in the simulator: give the tank a few seconds on a fresh pull.
+- Moving: **Ice Lance** and **Fire Blast** are instant. Threat is not in the simulator: give the tank a few seconds on a fresh pull.
 
 **When to change it**
 

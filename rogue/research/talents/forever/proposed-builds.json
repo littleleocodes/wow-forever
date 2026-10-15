@@ -180,7 +180,6 @@
       },
       "core": [
         {"talent": "Seal Fate", "why": "Every crit from a combo-point builder adds a combo point: with Backstab's crit talents, frequent 5-point finishers."},
-        {"talent": "Venom", "why": "Capstone finisher: +30% poison damage and +10% poison application for up to 21s."},
         {"talent": "Puncturing Wounds", "why": "+30% Backstab crit and a 45% chance for Backstab to add a combo point (beta tooltip)."},
         {"talent": "Lethality", "why": "+20% crit damage bonus on Backstab (beta tooltip)."},
         {"talent": "Malice", "why": "+5% crit with attacks and poisons."},
@@ -516,7 +515,7 @@
     },
     {
       "id": "leveling-combat-swords",
-      "name": "Leveling — Assassination with swords (31/20/0)",
+      "name": "Leveling — Assassination with Combat's weapon talents (31/20/0)",
       "role": "dps",
       "content": "leveling",
       "tier": "draft",
@@ -855,88 +854,6 @@
         {"levels": "51-55", "tree": "Assassination", "talent": "Seal Fate", "points": 5},
         {"levels": "56-57", "tree": "Subtlety", "talent": "Opportunity", "points": 2},
         {"levels": "58-60", "tree": "Assassination", "talent": "Vile Poisons", "points": 3}
-      ]
-    },
-    {
-      "id": "opt-combat-swords-raid-leveling-aoe",
-      "name": "Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (leveling-aoe)",
-      "role": "dps",
-      "content": "leveling",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-swords-raid` and profile `leveling-aoe`: score +58.1% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Assassination": [
-          ["Remorseless Attacks", 2],
-          ["Malice", 5],
-          ["Improved Gouge", 1],
-          ["Murder", 2],
-          ["Relentless Strikes", 1]
-        ],
-        "Combat": [
-          ["Improved Sinister Strike", 2],
-          ["Lightning Reflexes", 1],
-          ["Improved Eviscerate", 3],
-          ["Deflection", 3],
-          ["Precision", 3],
-          ["Riposte", 1],
-          ["Endurance", 2],
-          ["Flawless Execution", 1],
-          ["Dual Wield Specialization", 4],
-          ["Blade Flurry", 1],
-          ["Hack and Slash", 5],
-          ["Weapon Expertise", 2],
-          ["Aggression", 3],
-          ["Adrenaline Rush", 1]
-        ],
-        "Subtlety": [
-          ["Master of Deception", 3],
-          ["Opportunity", 2],
-          ["Setup", 3]
-        ]
-      },
-      "core": [
-        {"talent": "Setup", "why": "Removing it costs 10.2 points of score in this model."},
-        {"talent": "Improved Sinister Strike", "why": "Removing it costs 3.0 points of score in this model."},
-        {"talent": "Blade Flurry", "why": "Removing it costs 2.7 points of score in this model."},
-        {"talent": "Relentless Strikes", "why": "Removing it costs 2.3 points of score in this model."},
-        {"talent": "Deflection", "why": "Removing it costs 2.0 points of score in this model."},
-        {"talent": "Improved Eviscerate", "why": "Removing it costs 1.9 points of score in this model."},
-        {"talent": "Flawless Execution", "why": "Removing it costs 1.8 points of score in this model."},
-        {"talent": "Weapon Expertise", "why": "Removing it costs 1.8 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: rogue/talents/forever/optimizer/combat-swords-raid-leveling-aoe.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/rogue"],
-      "order": [
-        {"levels": "10-11", "tree": "Subtlety", "talent": "Opportunity", "points": 2},
-        {"levels": "12-14", "tree": "Subtlety", "talent": "Master of Deception", "points": 3},
-        {"levels": "15-17", "tree": "Subtlety", "talent": "Setup", "points": 3},
-        {"levels": "18-19", "tree": "Combat", "talent": "Improved Sinister Strike", "points": 2},
-        {"levels": "20", "tree": "Combat", "talent": "Lightning Reflexes", "points": 1},
-        {"levels": "21-22", "tree": "Combat", "talent": "Improved Eviscerate", "points": 2},
-        {"levels": "23", "tree": "Combat", "talent": "Deflection", "points": 1},
-        {"levels": "24", "tree": "Combat", "talent": "Improved Eviscerate", "points": 1},
-        {"levels": "25", "tree": "Combat", "talent": "Deflection", "points": 1},
-        {"levels": "26", "tree": "Combat", "talent": "Precision", "points": 1},
-        {"levels": "27", "tree": "Combat", "talent": "Deflection", "points": 1},
-        {"levels": "28", "tree": "Combat", "talent": "Riposte", "points": 1},
-        {"levels": "29-30", "tree": "Combat", "talent": "Endurance", "points": 2},
-        {"levels": "31-32", "tree": "Combat", "talent": "Precision", "points": 2},
-        {"levels": "33", "tree": "Combat", "talent": "Flawless Execution", "points": 1},
-        {"levels": "34-37", "tree": "Combat", "talent": "Dual Wield Specialization", "points": 4},
-        {"levels": "38", "tree": "Combat", "talent": "Blade Flurry", "points": 1},
-        {"levels": "39-42", "tree": "Combat", "talent": "Hack and Slash", "points": 4},
-        {"levels": "43-44", "tree": "Combat", "talent": "Weapon Expertise", "points": 2},
-        {"levels": "45-47", "tree": "Combat", "talent": "Aggression", "points": 3},
-        {"levels": "48", "tree": "Combat", "talent": "Adrenaline Rush", "points": 1},
-        {"levels": "49-50", "tree": "Assassination", "talent": "Remorseless Attacks", "points": 2},
-        {"levels": "51-53", "tree": "Assassination", "talent": "Malice", "points": 3},
-        {"levels": "54-55", "tree": "Assassination", "talent": "Murder", "points": 2},
-        {"levels": "56-57", "tree": "Assassination", "talent": "Malice", "points": 2},
-        {"levels": "58", "tree": "Assassination", "talent": "Improved Gouge", "points": 1},
-        {"levels": "59", "tree": "Assassination", "talent": "Relentless Strikes", "points": 1},
-        {"levels": "60", "tree": "Combat", "talent": "Hack and Slash", "points": 1}
       ]
     },
     {
@@ -1600,7 +1517,7 @@
       "spec": "Hybrid Assassination/Combat",
       "generated": "2026-10-10",
       "derived": "leveling",
-      "summary": "The Daggers (split) (a Assassination/Combat hybrid) leveling build the open leveling search found on 2026-10-10: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the combat-daggers-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-daggers-raid). +3.1% faster per kill than opt-combat-swords-raid-leveling-st, the fastest of our leveling builds in that race.",
+      "summary": "The Daggers (split) (an Assassination/Combat hybrid) leveling build the open leveling search found on 2026-10-10: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the combat-daggers-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-daggers-raid). +3.1% faster per kill than opt-combat-swords-raid-leveling-st, the fastest of our leveling builds in that race.",
       "allocation": {
         "Assassination": [
           ["Remorseless Attacks", 2],
@@ -1754,26 +1671,26 @@
       "sources": ["https://talentsforever.com/rogue", "https://talentsforever.com/rogue/60/0253201-305033010011-3023003311013001-6"]
     },
     {
-      "id": "daggers-split-ml-raid",
-      "name": "Daggers (split) — Raid (machine-learning search)",
+      "id": "daggers-split-open-raid",
+      "name": "Daggers (split) — Raid (open talent search)",
       "role": "dps",
       "content": "raid",
       "tier": "draft",
       "spec": "Hybrid Assassination/Combat",
-      "generated": "2026-10-15",
+      "generated": "2026-10-10",
       "derived": "raid",
-      "summary": "The Daggers (split) build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-15 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry assassination-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
+      "summary": "The Daggers (split) (an Assassination/Combat hybrid) raid build the open talent search found on 2026-10-10: every legal 51-point build with no tree rule, searched in the community simulator's assassination-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.5% over assassination-ml-raid, the best of our builds in that rotation.",
       "allocation": {
         "Assassination": [
           ["Malice", 5],
           ["Ruthlessness", 3],
           ["Improved Slice and Dice", 3],
           ["Relentless Strikes", 1],
-          ["Lethality", 5],
-          ["Vile Poisons", 2],
+          ["Lethality", 3],
+          ["Vile Poisons", 1],
           ["Cold Blood", 1],
-          ["Improved Poisons", 5],
-          ["Seal Fate", 5]
+          ["Improved Poisons", 3],
+          ["Mutilate", 1]
         ],
         "Combat": [
           ["Improved Eviscerate", 3],
@@ -1782,17 +1699,110 @@
           ["Deflection", 3],
           ["Precision", 3],
           ["Flawless Execution", 1],
-          ["Dual Wield Specialization", 3]
+          ["Dual Wield Specialization", 5],
+          ["Blade Flurry", 1],
+          ["Hack and Slash", 4],
+          ["Weapon Expertise", 2]
         ],
         "Subtlety": [
           ["Opportunity", 2]
         ]
       },
-      "core": [],
+      "core": [
+        {"talent": "Relentless Strikes", "why": "49 DPS lost without it (7% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Dual Wield Specialization", "why": "35 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Malice", "why": "31 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Ruthlessness", "why": "27 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Improved Slice and Dice", "why": "24 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Hack and Slash", "why": "23 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Precision", "why": "22 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."},
+        {"talent": "Flawless Execution", "why": "16 DPS lost without it (2% of the build in a full raid; removal, 12,000 fights)."}
+      ],
       "flex": [],
-      "notes": ["Search result (full raid): 30/19/2 at 710.4 ± 0.10 DPS over 100,000 fights; runner-up 30/19/2 (+0.00%; the winner takes Deflection 3, Improved Sinister Strike 2, Riposte 1; the runner-up Deflection 2, Improved Sinister Strike 1, Lightning Reflexes 3); 1,695 builds simulated; certificate: none of its 274 one-move and chain-move neighbours was 0.1% ahead.", "Where the simulator measured no difference, the points follow daggers-split-open-raid: Improved Sinister Strike → Lightning Reflexes (2 points), Riposte → Lightning Reflexes (the same DPS as the search winner 30/19/2 on one seed, 30,000 fights).", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 30/19/2 at 651.7 DPS in a full raid (the same talents).", "Alone on the training dummy (only your own buffs) the search's best is 30/19/2 at 424.5 DPS."],
-      "open_questions": ["A machine-searched Daggers (split) build: check it against the community's Daggers (split) builds at launch."],
-      "sources": ["https://github.com/ElliotWood/Forever"]
+      "notes": ["Open search result (assassination-raid, full raid): 21/28/2 (Daggers (split) (an Assassination/Combat hybrid)) at 717.9 DPS; assassination-ml-raid 707.6, assassination-seal-fate-raid 702.3, assassination-mutilate-raid 688.5 in the same fights; 4,405 builds simulated, 2 independent runs reached the top.", "The assassination-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): combat-swords-raid -11.0%, combat-daggers-raid -0.1%, subtlety-raid -53.8%; none adopted.", "A phase-1 BiS set picked for this family (_reference/data/raidsim/gear_sets/forever/tiers/rogue-hybrid-assassination-combat-bis.gear.json, item level 64.7): 717.9 DPS against 717.9 in the rotation's standard set: the standard set stays.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Sinister Strike, Lightning Reflexes, Deflection, Riposte.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements.", "2026-10-10 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Riposte was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Sinister Strike -> Lightning Reflexes (survival); Riposte -> Lightning Reflexes (survival). Net +0.00% on a third seed.", "2026-10-15 (page audit): restored. The 2026-10-15 ML search for the hybrid wrote daggers-split-ml-raid (30/19/2) in its place, which is the Assassination ML build with two free points moved (30 Assassination points: not a split); that build was removed."],
+      "open_questions": ["An open-search Daggers (split) build: check it against the community's Daggers (split) builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/rogue/60/00530310311301-311333010015142-002-6"]
+    },
+    {
+      "id": "opt-combat-swords-raid-leveling-aoe",
+      "name": "Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (leveling-aoe)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-swords-raid` and profile `leveling-aoe`: score +52.2% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Assassination": [
+          ["Malice", 5],
+          ["Remorseless Attacks", 2],
+          ["Improved Gouge", 1],
+          ["Murder", 2],
+          ["Relentless Strikes", 1]
+        ],
+        "Combat": [
+          ["Lightning Reflexes", 2],
+          ["Improved Sinister Strike", 2],
+          ["Improved Eviscerate", 3],
+          ["Precision", 3],
+          ["Deflection", 3],
+          ["Endurance", 2],
+          ["Riposte", 1],
+          ["Flawless Execution", 1],
+          ["Dual Wield Specialization", 5],
+          ["Blade Flurry", 1],
+          ["Hack and Slash", 3],
+          ["Weapon Expertise", 2],
+          ["Aggression", 3],
+          ["Adrenaline Rush", 1]
+        ],
+        "Subtlety": [
+          ["Master of Deception", 3],
+          ["Opportunity", 2],
+          ["Setup", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Setup", "why": "Removing it costs 6.0 points of score in this model."},
+        {"talent": "Blade Flurry", "why": "Removing it costs 3.5 points of score in this model."},
+        {"talent": "Relentless Strikes", "why": "Removing it costs 2.5 points of score in this model."},
+        {"talent": "Precision", "why": "Removing it costs 2.2 points of score in this model."},
+        {"talent": "Improved Sinister Strike", "why": "Removing it costs 2.1 points of score in this model."},
+        {"talent": "Improved Eviscerate", "why": "Removing it costs 2.0 points of score in this model."},
+        {"talent": "Weapon Expertise", "why": "Removing it costs 2.0 points of score in this model."},
+        {"talent": "Flawless Execution", "why": "Removing it costs 2.0 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: rogue/research/talents/forever/optimizer/combat-swords-raid-leveling-aoe.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/rogue"],
+      "order": [
+        {"levels": "10", "tree": "Combat", "talent": "Lightning Reflexes", "points": 1},
+        {"levels": "11-12", "tree": "Combat", "talent": "Improved Sinister Strike", "points": 2},
+        {"levels": "13", "tree": "Combat", "talent": "Lightning Reflexes", "points": 1},
+        {"levels": "14", "tree": "Combat", "talent": "Improved Eviscerate", "points": 1},
+        {"levels": "15-17", "tree": "Combat", "talent": "Precision", "points": 3},
+        {"levels": "18", "tree": "Combat", "talent": "Deflection", "points": 1},
+        {"levels": "19-20", "tree": "Combat", "talent": "Improved Eviscerate", "points": 2},
+        {"levels": "21-22", "tree": "Combat", "talent": "Endurance", "points": 2},
+        {"levels": "23-24", "tree": "Combat", "talent": "Deflection", "points": 2},
+        {"levels": "25", "tree": "Combat", "talent": "Flawless Execution", "points": 1},
+        {"levels": "26", "tree": "Combat", "talent": "Riposte", "points": 1},
+        {"levels": "27-29", "tree": "Combat", "talent": "Dual Wield Specialization", "points": 3},
+        {"levels": "30", "tree": "Combat", "talent": "Blade Flurry", "points": 1},
+        {"levels": "31-33", "tree": "Subtlety", "talent": "Master of Deception", "points": 3},
+        {"levels": "34-35", "tree": "Subtlety", "talent": "Opportunity", "points": 2},
+        {"levels": "36-38", "tree": "Subtlety", "talent": "Setup", "points": 3},
+        {"levels": "39-40", "tree": "Combat", "talent": "Dual Wield Specialization", "points": 2},
+        {"levels": "41-42", "tree": "Combat", "talent": "Hack and Slash", "points": 2},
+        {"levels": "43-44", "tree": "Combat", "talent": "Weapon Expertise", "points": 2},
+        {"levels": "45-49", "tree": "Assassination", "talent": "Malice", "points": 5},
+        {"levels": "50-51", "tree": "Assassination", "talent": "Murder", "points": 2},
+        {"levels": "52-53", "tree": "Assassination", "talent": "Remorseless Attacks", "points": 2},
+        {"levels": "54", "tree": "Assassination", "talent": "Improved Gouge", "points": 1},
+        {"levels": "55", "tree": "Assassination", "talent": "Relentless Strikes", "points": 1},
+        {"levels": "56-58", "tree": "Combat", "talent": "Aggression", "points": 3},
+        {"levels": "59", "tree": "Combat", "talent": "Adrenaline Rush", "points": 1},
+        {"levels": "60", "tree": "Combat", "talent": "Hack and Slash", "points": 1}
+      ]
     }
   ]
 }

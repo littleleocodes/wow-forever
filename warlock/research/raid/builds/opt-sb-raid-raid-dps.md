@@ -46,14 +46,12 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid`
 
 ## Core talents (priority order)
 
-1. **Conflagrate** — Removing it costs 27.2 points of score in this model.
-2. **Demonic Sacrifice** — Removing it costs 27.0 points of score in this model.
-3. **Shadow and Flame** — Removing it costs 26.3 points of score in this model.
-4. **Bane** — Removing it costs 21.2 points of score in this model.
-5. **Agonizing Flames** — Removing it costs 13.9 points of score in this model.
-6. **Suppression** — Removing it costs 11.6 points of score in this model.
-7. **Improved Shadow Bolt** — Removing it costs 11.0 points of score in this model.
-8. **Fel Vitality** — Removing it costs 8.5 points of score in this model.
+1. **Demonic Sacrifice** — Removing it costs 27.0 points of score in this model.
+2. **Bane** — Removing it costs 21.2 points of score in this model.
+3. **Agonizing Flames** — Removing it costs 13.9 points of score in this model.
+4. **Suppression** — Removing it costs 11.6 points of score in this model.
+5. **Improved Shadow Bolt** — Removing it costs 11.0 points of score in this model.
+6. **Fel Vitality** — Removing it costs 8.5 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
@@ -61,10 +59,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid`
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`shadow-bolt-hybrid-open-raid`](shadow-bolt-hybrid-open-raid.md) | ours: hand draft | 20/11/20 | 641 | +0.0% | 723 | +0.0% | 1 s |
+| 1 | [`shadow-bolt-hybrid-open-raid`](shadow-bolt-hybrid-open-raid.md) | ours: derived (open search) | 20/11/20 | 641 | +0.0% | 723 | +0.0% | 1 s |
 | 2 | **[`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md)** | ours: optimizer | 22/11/18 | 637 | -0.6% | 718 | -0.6% | 1 s |
 | 3 | [`ds-ruin-raid`](ds-ruin-raid.md) | ours: hand draft | 22/11/18 | 633 | -1.1% | 716 | -0.8% | 2 s |
-| 4 | [`destruction-ml-raid`](destruction-ml-raid.md) | ours: hand draft | 10/11/30 | 627 | -2.1% | 705 | -2.4% | 0 s |
+| 4 | [`destruction-ml-raid`](destruction-ml-raid.md) | ours: derived (ML search) | 10/11/30 | 627 | -2.1% | 705 | -2.4% | 0 s |
 | 5 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 604 | -5.7% | 679 | -6.0% | 1 s |
 | 6 | *DS/Ruin* | community simulator | - | 595 | -7.1% | 668 | -7.5% | 1 s |
 | 7 | *Shadow and Flame 13/11/27* | community simulator | - | 549 | -14.3% | 618 | -14.5% | 1 s |

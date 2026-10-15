@@ -6,11 +6,11 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
-| 1 | [Shadow](shadow.md) — Shadow — Leveling 🔬 | 25 | fastest |
-| 2 | [Discipline/Shadow hybrid](hybrid-discipline-shadow.md) — Discipline/Shadow hybrid — Leveling 🔬 | 43 | +69% |
-| 3 | [Holy/Shadow hybrid](hybrid-holy-shadow.md) — Holy/Shadow hybrid — Leveling 🔬 | 43 | +69% |
-| 4 | [Discipline](discipline.md) — Discipline — Leveling into the raid build 🔬 | 45 | +75% |
-| 5 | [Holy](holy.md) — Holy — Leveling into the raid build 🔬 | 45 | +77% |
+| 1 | [Shadow](shadow.md) 🔬 | 25 | fastest |
+| 2 | [Discipline-Shadow](hybrid-discipline-shadow.md) — Discipline/Shadow hybrid — Leveling 🔬 | 43 | +69% |
+| 3 | [Holy-Shadow](hybrid-holy-shadow.md) — Holy/Shadow hybrid — Leveling 🔬 | 43 | +69% |
+| 4 | [Holy](holy.md) — Leveling into the raid build 🔬 | 50 | +98% |
+| 5 | [Discipline](discipline.md) — Leveling into the raid build 🔬 | 52 | +105% |
 
 🔬 = a derived build (searched in a simulator). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 

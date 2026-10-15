@@ -114,7 +114,6 @@
         {"talent": "Improved Frostbolt", "why": "Cast time."},
         {"talent": "Piercing Ice", "why": "Frost damage."},
         {"talent": "Ice Block", "why": "Now the 16-point Frost talent — cheap immunity."},
-        {"talent": "Shatter", "why": "3 ranks, est. +51% crit vs. Frozen — AoE/dungeon value and Fingers of Frost synergy later."},
         {"talent": "Frost Channeling", "why": "Mana and threat."},
         {"talent": "Arcane Meditation", "why": "Regen while casting (2/3)."}
       ],
@@ -227,7 +226,7 @@
     },
     {
       "id": "fire-raid",
-      "name": "Fire — Ignite / Hot Streak (simulator winner adopted 2026-09-28)",
+      "name": "Fire — Ignite / Heating Up (simulator winner adopted 2026-09-28)",
       "role": "dps",
       "content": "raid",
       "tier": "draft",
@@ -259,7 +258,7 @@
       },
       "core": [
         {"talent": "Improved Scorch", "why": "5 stacks of +3% Fire damage taken; 100% application at max rank (est.). Raid sim (2026-09-28): removing it costs +54% DPS."},
-        {"talent": "Hot Streak", "why": "New: Fireball/Scorch/Fire Blast crits stack -25% Pyroblast cast time (3 stacks) — a 1.5s Pyroblast after three crits. Raid sim (2026-09-28): the simulator's rotation reads this talent's own proc, so its removal run breaks the rotation and is not its value."},
+        {"talent": "Heating Up", "why": "New: Fireball/Scorch/Fire Blast crits stack -25% Pyroblast cast time (3 stacks) — a 1.5s Pyroblast after three crits. Raid sim (2026-09-28): the simulator's rotation reads this talent's own proc, so its removal run breaks the rotation and is not its value. (Hot Streak was renamed Heating Up in build 70170.)"},
         {"talent": "Ignite", "why": "40% of crit damage as a burn (unchanged) — still the fire engine. Raid sim (2026-09-28): removing it costs +14% DPS."},
         {"talent": "Fire Power", "why": "+10% Fire damage. Raid sim (2026-09-28): removing it costs +10% DPS."},
         {"talent": "Combustion", "why": "Reworked: each Fire hit +10% crit until 4 crits. Raid sim (2026-09-28): removing it costs +9% DPS."},
@@ -299,7 +298,7 @@
     },
     {
       "id": "frostfire-raid",
-      "name": "Frostfire — Frostfire Bolt / Hot Streak (Fire/Frost hybrid, raid)",
+      "name": "Frostfire — Frostfire Bolt / Heating Up (Fire/Frost hybrid, raid)",
       "role": "dps",
       "content": "raid",
       "tier": "draft",
@@ -332,7 +331,7 @@
       },
       "core": [
         {"talent": "Improved Fireball", "why": "-0.1 s per rank on Fireball and Frostfire Bolt: a 2.5 s bolt at 5/5."},
-        {"talent": "Hot Streak", "why": "Frostfire Bolt crits build Hot Streak: a 1.5 s Pyroblast at three stacks."},
+        {"talent": "Heating Up", "why": "Frostfire Bolt crits build Heating Up: a 1.5 s Pyroblast at three stacks. (Hot Streak was renamed Heating Up in build 70170.)"},
         {"talent": "Ignite", "why": "Frostfire Bolt counts as Fire: its crits ignite for 40% more."},
         {"talent": "Critical Mass", "why": "+Fire crit, and Frostfire Bolt is Fire."},
         {"talent": "Fire Power", "why": "+Fire damage on Frostfire Bolt."},
@@ -633,9 +632,33 @@
         {"talent": "Shatter", "why": "Removing it costs 0.7 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: mage/talents/forever/optimizer/fire-leveling-leveling-st.md", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized."],
+      "notes": ["Report: mage/talents/forever/optimizer/fire-leveling-leveling-st.md", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized.", "2026-10-15 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fire-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 36.1 s per kill; stats model 37.4 s; own tree first 40.8 s."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/mage"]
+      "sources": ["https://warcraftforever.games/talents/mage"],
+      "order": [
+        {"levels": "10-14", "tree": "Frost", "talent": "Elemental Precision", "points": 5},
+        {"levels": "15", "tree": "Frost", "talent": "Permafrost", "points": 1},
+        {"levels": "16-18", "tree": "Frost", "talent": "Frostbite", "points": 3},
+        {"levels": "19", "tree": "Frost", "talent": "Ice Shards", "points": 1},
+        {"levels": "20", "tree": "Frost", "talent": "Ice Lance", "points": 1},
+        {"levels": "21-24", "tree": "Frost", "talent": "Ice Shards", "points": 4},
+        {"levels": "25", "tree": "Frost", "talent": "Ice Block", "points": 1},
+        {"levels": "26-27", "tree": "Frost", "talent": "Shatter", "points": 2},
+        {"levels": "28-32", "tree": "Fire", "talent": "Improved Fireball", "points": 5},
+        {"levels": "33-37", "tree": "Fire", "talent": "Ignite", "points": 5},
+        {"levels": "38-40", "tree": "Fire", "talent": "Burning Soul", "points": 3},
+        {"levels": "41-43", "tree": "Fire", "talent": "Impact", "points": 3},
+        {"levels": "44-45", "tree": "Fire", "talent": "Flame Throwing", "points": 2},
+        {"levels": "46-47", "tree": "Fire", "talent": "Improved Scorch", "points": 2},
+        {"levels": "48", "tree": "Fire", "talent": "Blast Wave", "points": 1},
+        {"levels": "49", "tree": "Fire", "talent": "Improved Scorch", "points": 1},
+        {"levels": "50-52", "tree": "Fire", "talent": "Critical Mass", "points": 3},
+        {"levels": "53-57", "tree": "Fire", "talent": "Fire Power", "points": 5},
+        {"levels": "58", "tree": "Fire", "talent": "Combustion", "points": 1},
+        {"levels": "59", "tree": "Fire", "talent": "Pyroblast", "points": 1},
+        {"levels": "60", "tree": "Fire", "talent": "Heating Up", "points": 1}
+      ],
+      "order_label": "own tree last"
     },
     {
       "id": "opt-frost-leveling-leveling-st",
@@ -759,83 +782,6 @@
       "notes": ["Report: mage/talents/forever/optimizer/frost-raid-raid-dps-extwc.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/mage"]
-    },
-    {
-      "id": "opt-frost-aoe-leveling-aoe",
-      "name": "Optimizer — AoE grinding: Frost Nova -> Blizzard -> Cone of Cold / Arcane Explosion on 5-10 mobs (leveling-aoe)",
-      "role": "dps",
-      "content": "leveling",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-aoe` and profile `leveling-aoe`: score +77.1% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Arcane": [
-          ["Arcane Focus", 2]
-        ],
-        "Fire": [
-          ["Incineration", 3]
-        ],
-        "Frost": [
-          ["Elemental Precision", 5],
-          ["Improved Frostbolt", 5],
-          ["Permafrost", 3],
-          ["Ice Shards", 5],
-          ["Improved Frost Nova", 2],
-          ["Ice Lance", 1],
-          ["Improved Blizzard", 3],
-          ["Piercing Ice", 3],
-          ["Frost Channeling", 3],
-          ["Ice Block", 1],
-          ["Arctic Reach", 2],
-          ["Shatter", 3],
-          ["Fingers of Frost", 2],
-          ["Cold Snap", 1],
-          ["Improved Cone of Cold", 3],
-          ["Winter's Chill", 3],
-          ["Ice Barrier", 1]
-        ]
-      },
-      "core": [
-        {"talent": "Shatter", "why": "Removing it costs 9.2 points of score in this model."},
-        {"talent": "Fingers of Frost", "why": "Removing it costs 6.9 points of score in this model."},
-        {"talent": "Improved Blizzard", "why": "Removing it costs 6.5 points of score in this model."},
-        {"talent": "Ice Lance", "why": "Removing it costs 5.3 points of score in this model."},
-        {"talent": "Ice Barrier", "why": "Removing it costs 3.7 points of score in this model."},
-        {"talent": "Ice Block", "why": "Removing it costs 3.1 points of score in this model."},
-        {"talent": "Piercing Ice", "why": "Removing it costs 2.7 points of score in this model."},
-        {"talent": "Ice Shards", "why": "Removing it costs 2.6 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Allocation and order taken from cand-aoe-r3 on 2026-09-28: an earlier optimizer round beat the last export in the fight lab (30.7s vs 32.1s per kill, level-weighted).", "Report: mage/talents/forever/optimizer/frost-aoe-leveling-aoe.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/mage"],
-      "order": [
-        {"levels": "10-14", "tree": "Frost", "talent": "Improved Frostbolt", "points": 5},
-        {"levels": "15-17", "tree": "Frost", "talent": "Permafrost", "points": 3},
-        {"levels": "18-19", "tree": "Frost", "talent": "Elemental Precision", "points": 2},
-        {"levels": "20", "tree": "Frost", "talent": "Ice Lance", "points": 1},
-        {"levels": "21-23", "tree": "Frost", "talent": "Improved Blizzard", "points": 3},
-        {"levels": "24", "tree": "Frost", "talent": "Piercing Ice", "points": 1},
-        {"levels": "25", "tree": "Frost", "talent": "Ice Block", "points": 1},
-        {"levels": "26", "tree": "Frost", "talent": "Piercing Ice", "points": 1},
-        {"levels": "27-29", "tree": "Frost", "talent": "Shatter", "points": 3},
-        {"levels": "30-31", "tree": "Frost", "talent": "Fingers of Frost", "points": 2},
-        {"levels": "32-33", "tree": "Frost", "talent": "Arctic Reach", "points": 2},
-        {"levels": "34", "tree": "Frost", "talent": "Piercing Ice", "points": 1},
-        {"levels": "35", "tree": "Frost", "talent": "Frost Channeling", "points": 1},
-        {"levels": "36-38", "tree": "Frost", "talent": "Ice Shards", "points": 3},
-        {"levels": "39", "tree": "Frost", "talent": "Cold Snap", "points": 1},
-        {"levels": "40", "tree": "Frost", "talent": "Ice Barrier", "points": 1},
-        {"levels": "41", "tree": "Frost", "talent": "Elemental Precision", "points": 1},
-        {"levels": "42-43", "tree": "Frost", "talent": "Ice Shards", "points": 2},
-        {"levels": "44-46", "tree": "Frost", "talent": "Improved Cone of Cold", "points": 3},
-        {"levels": "47-48", "tree": "Frost", "talent": "Elemental Precision", "points": 2},
-        {"levels": "49-50", "tree": "Frost", "talent": "Frost Channeling", "points": 2},
-        {"levels": "51", "tree": "Frost", "talent": "Winter's Chill", "points": 1},
-        {"levels": "52-54", "tree": "Fire", "talent": "Incineration", "points": 3},
-        {"levels": "55-56", "tree": "Frost", "talent": "Improved Frost Nova", "points": 2},
-        {"levels": "57-58", "tree": "Frost", "talent": "Winter's Chill", "points": 2},
-        {"levels": "59-60", "tree": "Arcane", "talent": "Arcane Focus", "points": 2}
-      ]
     },
     {
       "id": "arcane-pvp",
@@ -1116,10 +1062,34 @@
         {"talent": "Ice Block", "why": "The scorer's value in this build: +1.7% of its score (model fire-leveling)."}
       ],
       "flex": [],
-      "notes": ["+2.9% faster than the hand draft opt-fire-leveling-leveling-st, over the 2% replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Fight-lab talent search (fightlab/fl_talent_opt.py): start opt-fire-leveling-leveling-st, moves: 1 point Flame Throwing -> Shatter; 3 points Impact -> Master of Elements; 1 point Flame Throwing -> Impact. Race against opt-fire-leveling-leveling-st over levels 20-60 (seed 3, 3000 fights per level): +2.9% faster per kill.", "Fight-lab numbers are a model of the beta, not in-game measurements.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized."],
+      "notes": ["+2.9% faster than the hand draft opt-fire-leveling-leveling-st, over the 2% replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Fight-lab talent search (fightlab/fl_talent_opt.py): start opt-fire-leveling-leveling-st, moves: 1 point Flame Throwing -> Shatter; 3 points Impact -> Master of Elements; 1 point Flame Throwing -> Impact. Race against opt-fire-leveling-leveling-st over levels 20-60 (seed 3, 3000 fights per level): +2.9% faster per kill.", "Fight-lab numbers are a model of the beta, not in-game measurements.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized.", "2026-10-15 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fire-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 34.4 s per kill; stats model 36.4 s; own tree first 39.7 s."],
       "open_questions": ["A derived Fire leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/mage"],
-      "replaces": "opt-fire-leveling-leveling-st"
+      "replaces": "opt-fire-leveling-leveling-st",
+      "order": [
+        {"levels": "10-14", "tree": "Frost", "talent": "Elemental Precision", "points": 5},
+        {"levels": "15", "tree": "Frost", "talent": "Permafrost", "points": 1},
+        {"levels": "16-18", "tree": "Frost", "talent": "Frostbite", "points": 3},
+        {"levels": "19", "tree": "Frost", "talent": "Ice Shards", "points": 1},
+        {"levels": "20", "tree": "Frost", "talent": "Ice Lance", "points": 1},
+        {"levels": "21-24", "tree": "Frost", "talent": "Ice Shards", "points": 4},
+        {"levels": "25", "tree": "Frost", "talent": "Ice Block", "points": 1},
+        {"levels": "26-28", "tree": "Frost", "talent": "Shatter", "points": 3},
+        {"levels": "29-33", "tree": "Fire", "talent": "Improved Fireball", "points": 5},
+        {"levels": "34-38", "tree": "Fire", "talent": "Ignite", "points": 5},
+        {"levels": "39-41", "tree": "Fire", "talent": "Burning Soul", "points": 3},
+        {"levels": "42", "tree": "Fire", "talent": "Impact", "points": 1},
+        {"levels": "43", "tree": "Fire", "talent": "Pyroblast", "points": 1},
+        {"levels": "44-46", "tree": "Fire", "talent": "Improved Scorch", "points": 3},
+        {"levels": "47-48", "tree": "Fire", "talent": "Master of Elements", "points": 2},
+        {"levels": "49", "tree": "Fire", "talent": "Blast Wave", "points": 1},
+        {"levels": "50", "tree": "Fire", "talent": "Master of Elements", "points": 1},
+        {"levels": "51-53", "tree": "Fire", "talent": "Critical Mass", "points": 3},
+        {"levels": "54-58", "tree": "Fire", "talent": "Fire Power", "points": 5},
+        {"levels": "59", "tree": "Fire", "talent": "Combustion", "points": 1},
+        {"levels": "60", "tree": "Fire", "talent": "Heating Up", "points": 1}
+      ],
+      "order_label": "own tree last"
     },
     {
       "id": "frost-ml-raid",
@@ -1440,7 +1410,7 @@
       "spec": "Hybrid Arcane/Frost",
       "generated": "2026-10-09",
       "derived": "leveling",
-      "summary": "The Arcane-Frost (a Arcane/Frost hybrid) leveling build the open leveling search found on 2026-10-09: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the arcane-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). +6.5% faster per kill than arcane-leveling, the fastest of our leveling builds in that race.",
+      "summary": "The Arcane-Frost (an Arcane/Frost hybrid) leveling build the open leveling search found on 2026-10-09: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the arcane-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). +6.5% faster per kill than arcane-leveling, the fastest of our leveling builds in that race.",
       "allocation": {
         "Arcane": [
           ["Wand Specialization", 2],
@@ -1676,7 +1646,7 @@
       "spec": "Hybrid Arcane/Frost",
       "generated": "2026-10-09",
       "derived": "raid",
-      "summary": "The Arcane-Frost (a Arcane/Frost hybrid) raid build the open talent search found on 2026-10-09: every legal 51-point build with no tree rule, searched in the community simulator's frost-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.4% over frost-ml-raid, the best of our builds in that rotation.",
+      "summary": "The Arcane-Frost (an Arcane/Frost hybrid) raid build the open talent search found on 2026-10-09: every legal 51-point build with no tree rule, searched in the community simulator's frost-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.4% over frost-ml-raid, the best of our builds in that rotation.",
       "allocation": {
         "Arcane": [
           ["Arcane Focus", 5],
@@ -1711,10 +1681,87 @@
         {"talent": "Elemental Precision", "why": "29 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."}
       ],
       "flex": [],
-      "notes": ["+1.9% over the best hand draft of the spec, frost-fingers-of-frost-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (frost-raid, full raid): 28/0/23 (Arcane-Frost (a Arcane/Frost hybrid)) at 692.9 DPS; frost-ml-raid 683.3, opt-frost-raid-raid-dps 679.9, frost-fingers-of-frost-raid 679.8, opt-frost-raid-raid-dps-extwc 650.1, frost-arcane-power-raid 649.5, frost-winters-chill-raid 619.1 in the same fights; 4,617 builds simulated, 2 independent runs reached the top.", "The frost-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): fire-raid -46.4%, arcane-dps -6.9%, frostfire-raid -36.5%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Channeling, Arcane Subtlety, Arcane Geometry, Arcane Blast.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements.", "2026-10-09 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Geometry -> Improved Channeling (interrupt); Arcane Subtlety -> Improved Channeling (interrupt); Arcane Subtlety -> Improved Channeling (interrupt); Arcane Meditation -> Improved Channeling (interrupt); Arcane Concentration -> Arcane Subtlety (threat); Arcane Concentration -> Arcane Subtlety (threat). Net +0.04% on a third seed."],
+      "notes": ["+1.9% over the best hand draft of the spec, frost-fingers-of-frost-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (frost-raid, full raid): 28/0/23 (Arcane-Frost (an Arcane/Frost hybrid)) at 692.9 DPS; frost-ml-raid 683.3, opt-frost-raid-raid-dps 679.9, frost-fingers-of-frost-raid 679.8, opt-frost-raid-raid-dps-extwc 650.1, frost-arcane-power-raid 649.5, frost-winters-chill-raid 619.1 in the same fights; 4,617 builds simulated, 2 independent runs reached the top.", "The frost-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): fire-raid -46.4%, arcane-dps -6.9%, frostfire-raid -36.5%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Channeling, Arcane Subtlety, Arcane Geometry, Arcane Blast.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements.", "2026-10-09 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Geometry -> Improved Channeling (interrupt); Arcane Subtlety -> Improved Channeling (interrupt); Arcane Subtlety -> Improved Channeling (interrupt); Arcane Meditation -> Improved Channeling (interrupt); Arcane Concentration -> Arcane Subtlety (threat); Arcane Concentration -> Arcane Subtlety (threat). Net +0.04% on a third seed."],
       "open_questions": ["An open-search Arcane-Frost build: check it against the community's Arcane-Frost builds at launch."],
       "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/mage/60/05120501310011053--05450003010003002-6"],
       "replaces": "frost-fingers-of-frost-raid"
+    },
+    {
+      "id": "opt-frost-aoe-leveling-aoe",
+      "name": "Optimizer — AoE grinding: Frost Nova -> Blizzard -> Cone of Cold / Arcane Explosion on 5-10 mobs (leveling-aoe)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-aoe` and profile `leveling-aoe`: score +74.6% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Arcane": [
+          ["Arcane Focus", 2]
+        ],
+        "Fire": [
+          ["Incineration", 3]
+        ],
+        "Frost": [
+          ["Elemental Precision", 5],
+          ["Improved Frostbolt", 5],
+          ["Permafrost", 3],
+          ["Ice Shards", 5],
+          ["Improved Frost Nova", 2],
+          ["Ice Lance", 1],
+          ["Improved Blizzard", 3],
+          ["Piercing Ice", 3],
+          ["Frost Channeling", 3],
+          ["Ice Block", 1],
+          ["Arctic Reach", 2],
+          ["Shatter", 3],
+          ["Fingers of Frost", 2],
+          ["Cold Snap", 1],
+          ["Improved Cone of Cold", 3],
+          ["Winter's Chill", 3],
+          ["Ice Barrier", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Improved Blizzard", "why": "Removing it costs 7.4 points of score in this model."},
+        {"talent": "Shatter", "why": "Removing it costs 6.6 points of score in this model."},
+        {"talent": "Fingers of Frost", "why": "Removing it costs 5.2 points of score in this model."},
+        {"talent": "Ice Lance", "why": "Removing it costs 4.2 points of score in this model."},
+        {"talent": "Ice Barrier", "why": "Removing it costs 4.1 points of score in this model."},
+        {"talent": "Ice Block", "why": "Removing it costs 3.1 points of score in this model."},
+        {"talent": "Piercing Ice", "why": "Removing it costs 3.0 points of score in this model."},
+        {"talent": "Elemental Precision", "why": "Removing it costs 2.2 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Allocation and order taken from cand-aoe-r3 on 2026-10-15: an earlier optimizer round beat the last export in the fight lab (31.8s vs 32.6s per kill, level-weighted).", "Report: mage/research/talents/forever/optimizer/frost-aoe-leveling-aoe.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/mage"],
+      "order": [
+        {"levels": "10-14", "tree": "Frost", "talent": "Improved Frostbolt", "points": 5},
+        {"levels": "15-17", "tree": "Frost", "talent": "Permafrost", "points": 3},
+        {"levels": "18-19", "tree": "Frost", "talent": "Elemental Precision", "points": 2},
+        {"levels": "20", "tree": "Frost", "talent": "Ice Lance", "points": 1},
+        {"levels": "21-23", "tree": "Frost", "talent": "Improved Blizzard", "points": 3},
+        {"levels": "24", "tree": "Frost", "talent": "Piercing Ice", "points": 1},
+        {"levels": "25", "tree": "Frost", "talent": "Ice Block", "points": 1},
+        {"levels": "26", "tree": "Frost", "talent": "Piercing Ice", "points": 1},
+        {"levels": "27-29", "tree": "Frost", "talent": "Shatter", "points": 3},
+        {"levels": "30-31", "tree": "Frost", "talent": "Fingers of Frost", "points": 2},
+        {"levels": "32-33", "tree": "Frost", "talent": "Arctic Reach", "points": 2},
+        {"levels": "34", "tree": "Frost", "talent": "Piercing Ice", "points": 1},
+        {"levels": "35", "tree": "Frost", "talent": "Frost Channeling", "points": 1},
+        {"levels": "36-38", "tree": "Frost", "talent": "Ice Shards", "points": 3},
+        {"levels": "39", "tree": "Frost", "talent": "Cold Snap", "points": 1},
+        {"levels": "40", "tree": "Frost", "talent": "Ice Barrier", "points": 1},
+        {"levels": "41", "tree": "Frost", "talent": "Elemental Precision", "points": 1},
+        {"levels": "42-43", "tree": "Frost", "talent": "Ice Shards", "points": 2},
+        {"levels": "44-46", "tree": "Frost", "talent": "Improved Cone of Cold", "points": 3},
+        {"levels": "47-48", "tree": "Frost", "talent": "Elemental Precision", "points": 2},
+        {"levels": "49-50", "tree": "Frost", "talent": "Frost Channeling", "points": 2},
+        {"levels": "51", "tree": "Frost", "talent": "Winter's Chill", "points": 1},
+        {"levels": "52-54", "tree": "Fire", "talent": "Incineration", "points": 3},
+        {"levels": "55-56", "tree": "Frost", "talent": "Improved Frost Nova", "points": 2},
+        {"levels": "57-58", "tree": "Frost", "talent": "Winter's Chill", "points": 2},
+        {"levels": "59-60", "tree": "Arcane", "talent": "Arcane Focus", "points": 2}
+      ]
     }
   ]
 }

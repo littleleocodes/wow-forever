@@ -53,10 +53,10 @@ The Enhancement build the machine-learning talent search found in a full raid (e
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) | ours: optimizer | 11/31/9 | 385 | +0.0% | 681 | -6.3% | 14 s |
-| 2 | **[`enhancement-ml-raid`](enhancement-ml-raid.md)** | ours: hand draft | 19/32/0 | 383 | -0.4% | 727 | +0.0% | 30 s |
+| 2 | **[`enhancement-ml-raid`](enhancement-ml-raid.md)** | ours: derived (ML search) | 19/32/0 | 383 | -0.4% | 727 | +0.0% | 30 s |
 | 3 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 380 | -1.3% | 671 | -7.7% | 14 s |
 | 4 | *Level 60* | community simulator | - | 379 | -1.6% | 684 | -5.8% | 32 s |
-| 5 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: hand draft | 17/26/8 | 365 | -5.1% | 690 | -5.0% | 12 s |
+| 5 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: derived (ML search) | 17/26/8 | 365 | -5.1% | 690 | -5.0% | 12 s |
 | 6 | *Enhancement 16/35/0* | community simulator | - | 345 | -10.4% | 663 | -8.8% | 84 s |
 
 ## Rotation (community simulator, training dummy)
@@ -96,7 +96,7 @@ Damage by ability:
 | Ability | [`enhancement-ml-raid`](enhancement-ml-raid.md) |
 |---|---|
 | Auto Attack | 29% |
-| spell 439440 | 19% |
+| Windfury Weapon | 19% |
 | Earth Shock | 13% |
 | Stormstrike | 11% |
 | Lightning Bolt | 10% |

@@ -1,4 +1,4 @@
-# Frostfire — Frostfire Bolt / Hot Streak (Fire/Frost hybrid, raid) — 4/31/16
+# Frostfire — Frostfire Bolt / Heating Up (Fire/Frost hybrid, raid) — 4/31/16
 
 *[Mage](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
@@ -51,7 +51,7 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 ## Core talents (priority order)
 
 1. **Improved Fireball** — -0.1 s per rank on Fireball and Frostfire Bolt: a 2.5 s bolt at 5/5.
-2. **Hot Streak** — Frostfire Bolt crits build Hot Streak: a 1.5 s Pyroblast at three stacks.
+2. **Heating Up** — Frostfire Bolt crits build Heating Up: a 1.5 s Pyroblast at three stacks. (Hot Streak was renamed Heating Up in build 70170.)
 3. **Ignite** — Frostfire Bolt counts as Fire: its crits ignite for 40% more.
 4. **Critical Mass** — +Fire crit, and Frostfire Bolt is Fire.
 5. **Fire Power** — +Fire damage on Frostfire Bolt.
@@ -74,7 +74,7 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 |---|---|---|---|---|---|---|---|---|
 | 1 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 4/31/16 | 472 | +0.0% | 630 | -6.7% | 0 s |
 | 2 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 470 | -0.4% | 675 | +0.0% | 0 s |
-| 3 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: hand draft | 4/31/16 | 437 | -7.4% | 597 | -11.5% | 1 s |
+| 3 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: derived (ML search) | 4/31/16 | 437 | -7.4% | 597 | -11.5% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -135,9 +135,9 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 | 9 | cast Combustion | 0.3 |
 | 10 | cast Mana Citrine | as ready |
 | 11 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 9.2 |
-| 12 | if time left in the fight ≥ 3s: cast Fireball | 5.3 |
+| 12 | if time left in the fight ≥ 3s: cast Fireball (rank 2) | 5.3 |
 | 13 | cast Robe of the Archmage | as ready |
-| 14 | cast Scorch | 0.2 |
+| 14 | cast Scorch (rank 1) | 0.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Arcane Power (needs the Arcane Power talent); cast Berserking, cast Arcane Missiles (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent).
 

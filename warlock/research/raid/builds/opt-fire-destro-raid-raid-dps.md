@@ -63,7 +63,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-des
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`shadow-bolt-hybrid-fire-open-raid`](shadow-bolt-hybrid-fire-open-raid.md) | ours: hand draft | 20/11/20 | 618 | +0.0% | 700 | +0.0% | 3 s |
+| 1 | [`shadow-bolt-hybrid-fire-open-raid`](shadow-bolt-hybrid-fire-open-raid.md) | ours: derived (open search) | 20/11/20 | 618 | +0.0% | 700 | +0.0% | 3 s |
 | 2 | [`destruction-fire-raid`](destruction-fire-raid.md) | ours: hand draft | 22/11/18 | 613 | -0.8% | 689 | -1.5% | 8 s |
 | 3 | **[`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md)** | ours: optimizer | 10/11/30 | 613 | -0.8% | 685 | -2.1% | 2 s |
 | 4 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 586 | -5.1% | 657 | -6.1% | 5 s |

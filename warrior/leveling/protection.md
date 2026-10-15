@@ -6,7 +6,7 @@
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-**Leveling as Protection or as Arms?** This build takes 26 s per kill (level-weighted, 20-60), [Arms](../leveling/arms.md) 25 s: Protection is 3% slower. Your first Protection point comes at level 10. Level this way if you want to tank dungeons later on the way; otherwise level as Arms and switch at 60 (a respec at a class trainer).
+**Leveling as Protection or as Arms?** This build takes 26 s per kill (level-weighted, 20-60), [Arms](../leveling/arms.md) 27 s: Protection is 4% faster. Your first Protection point comes at level 10. Level this way if you want to tank dungeons later on the way; otherwise level as Arms and switch at 60 (a respec at a class trainer).
 
 ## How to play
 
@@ -27,21 +27,22 @@
 
 ## Why this rotation
 
-Protection levels sword and board in **Defensive Stance**, with almost no time spent eating or bandaging. **Charge** in from **Battle Stance**, switch back, keep **Shield Block** up while the mob hits you, and spend rage on **Revenge**, **Shield Slam** and **Heroic Strike**.
+Protection levels sword and board in **Defensive Stance**, with almost no time spent eating or bandaging. **Charge** in, keep **Shield Block** up while the mob hits you, and spend rage on **Revenge**, **Shield Slam** and **Heroic Strike**.
 
 **Why it works**
 
-- **Charge** needs **Battle Stance** (this build has no **Vanguard**), so you swap for it and come back. **Tactical Mastery** with your 5 points in **Improved Tactical Mastery** keeps up to 25 rage through the swap, and the fight lab spends anything above that on **Shield Slam** or **Rend** before it switches.
-- **Shield Block** goes up whenever the mob is hitting you (10 rage, 5-second cooldown, off the global cooldown): 75% more block chance for 7 seconds or 2 blocks. Each block gives 5 rage with **Shield Specialization** and opens **Revenge**, so it pays for itself; **Shield Specialization** is the build's second most valuable talent in the fight lab.
-- **Revenge** (2 rage with **Focused Rage**) whenever it lights up and **Shield Slam** (from 40) on cooldown are your damage. **Shield Slam** is by far the build's most valuable talent in the fight lab.
+- **Charge** needs **Battle Stance** until level 27: swap for it and come back. **Tactical Mastery** (trained at 14) keeps 10 rage through the swap, and the fight lab spends anything above that on **Shield Slam** or **Rend** before it switches. From 27, **Vanguard** lets you **Charge** straight from **Defensive Stance**, so there is no swap at all.
+- **Shield Block** goes up whenever the mob is hitting you (10 rage, 5-second cooldown, off the global cooldown): 75% more block chance for 7 seconds or 2 blocks. Each block gives 5 rage with **Shield Specialization** and opens **Revenge**, so it pays for itself; the fight lab measured 2.1 seconds per kill lost at 60 without **Shield Specialization**.
+- **Revenge** (2 rage with **Focused Rage**) whenever it lights up and **Shield Slam** (from 40) on cooldown are your damage. **Shield Slam** is the build's most valuable talent in the fight lab (5.3 seconds per kill at 60 without it), then **Improved Revenge** (2.5) and **Shield Specialization**; **Bastion** adds 10% to everything you deal while a shield is equipped.
 - **Heroic Strike** takes the spare rage after the fight lab keeps enough for **Shield Slam** (when it is 2 seconds or less from ready) and for **Revenge**. **Rend** goes on once while the mob has more than half its health.
+- From 41 the points go to Fury: **Cruelty** for crit, **Unbridled Wrath** for rage and **Enrage** (10% more physical damage after you are hit, which a tank is all the time).
 - **Thunder Clap**, **Demoralizing Shout** and **Sunder Armor** stay off on a single mob: the fight lab measured **Thunder Clap** at +1.2 seconds and **Demoralizing Shout** at +1.0 second per kill with no fewer deaths (a 2026-09-30 test), and **Sunder Armor** never beat **Heroic Strike** for the rage.
-- **Concussion Blow** (a 5-second stun, 45-second cooldown) is your emergency button below half health, and **Victory Rush** heals 10% at the start of the next fight. **Shield Bash** is for casters: it interrupts and locks that school for 6 seconds.
+- **Concussion Blow** (a 5-second stun, 45-second cooldown) is your emergency button below half health, and **Victory Rush** heals 10% at the start of the next fight. **Shield Bash** is for casters: it interrupts and locks that school for 6 seconds, and **Improved Shield Bash** adds a 3-second silence.
 
 **Caveats**
 
-- The comparison with Arms above shows what the shield costs or saves in time per kill; your damage jumps at 40 with **Shield Slam**.
-- Several of the build's points (**Iron Will**, **Defiance**, **Improved Sunder Armor**, **Improved Thunder Clap**) measure zero on a single mob: they fill tiers on the way to **Shield Slam** and **Bastion**.
+- The comparison with Arms above shows what the shield costs in time per kill; your damage jumps at 40 with **Shield Slam**.
+- **Improved Sunder Armor**, **Improved Thunder Clap**, **Improved Disarm** and **Improved Shield Wall** do nothing on a single mob in the fight lab: they fill tiers on the way to **Bastion** and **Shield Slam**.
 
 **When to change it**
 
@@ -87,7 +88,7 @@ One point per level from 10, in this order:
 
 ## Other builds of this spec
 
-- [Protection — Leveling into the raid build](../research/leveling/builds/protection-leveling.md) (14/5/32, 31 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/warrior/60/3500501-05-150533020300001351-6)
+- [Protection — Leveling into the raid build](../research/leveling/builds/protection-leveling.md) (14/5/32, 28 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/warrior/60/35300003-05-050533020301001351-6)
 
 ---
 *Generated by `_reference/data/render_modes.py` on 2026-10-15 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*

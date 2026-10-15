@@ -6,7 +6,7 @@
 
 **[Shadow — Leveling](../research/leveling/builds/shadow-open-leveling.md)** (17/2/32) — [open the talent tree](https://talentsforever.com/priest/60/0150112313-2-345001401201202151-6)
 
-> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (leveling-shadow), which stays below as the alternative. A model of the beta, to check at launch.
+> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Shadow), which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to play
 
@@ -25,14 +25,14 @@
 
 ## Why this rotation
 
-Shadow levels on a short loop: your opening spells land while the mob runs in, **Mind Flay** slows and kills it, and **Shadow Word: Death** or your wand finishes it. **Shadowform** at 40 is the big step: the fight lab's time per kill drops from 37 to 22 seconds between levels 30 and 40.
+Shadow levels on a short loop: your opening spells land while the mob runs in, **Mind Flay** slows and kills it, and **Shadow Word: Death** or your wand finishes it. **Shadowform** at 40 is the big step: the fight lab's time per kill drops from 36 to 22 seconds between levels 30 and 40.
 
 **Why it works**
 
-- Open from as far away as you can (**Shadow Reach** adds 20% range, **Mind Flay**'s included): the fight lab casts the instants first (**Vampiric Embrace** when it is ready, then **Shadow Word: Pain**) and **Mind Blast**, your biggest hit, right after, so all three land while the mob walks in.
+- Open from as far away as you can (the build's one point in **Shadow Reach** adds 10% range, **Mind Flay**'s included): the fight lab casts the instants first (**Vampiric Embrace** when it is ready, then **Shadow Word: Pain**) and **Mind Blast**, your biggest hit, right after, so all three land while the mob walks in.
 - **Vampiric Embrace** and **Devouring Plague** are your heals once **Shadowform** stops real heals. The fight lab casts **Vampiric Embrace** whenever it is ready (once a minute) and **Devouring Plague** only when you are below 80% health and the mob above half, so the plague is a heal here, not damage.
 - **Mind Flay** is your filler and your biggest damage share: it slows the mob by 50% while you channel (20% once you take **Improved Mind Flay**), so a mob walking in reaches you later. **Mind Blast** goes out whenever it is ready.
-- From 32, **Shadow Word: Death** finishes. The fight lab casts it when one cast will kill the mob, so its backlash (10% of your health when the target survives) never lands, and below 20% health once you have **Early Demise**. From 40 it does about a fifth of your damage and the wand is rarely needed.
+- From 32, **Shadow Word: Death** finishes. The fight lab casts it when one cast will kill the mob, so its backlash (10% of your health when the target survives) never lands, and below 20% health once you have **Early Demise** (level 35). From 40 it does about a sixth of a Shadow leveler's damage and the wand is rarely needed.
 - Before 32 your wand finishes: when a mob has a hit or two of wand damage left, a new spell would be wasted mana. **Mind Blast** also finishes a mob when one cast kills it.
 - Mana: **Spirit Tap** doubles your Spirit for 15 seconds after kills and **Shadowform** halves your Shadow costs, so the tuned rules drink only below 15% mana, not at a third. They also skip the pre-pull **Power Word: Shield** unless you start a pull below half health: the fight lab measured that about 12% faster, since the shield is not a Shadow spell and costs full mana.
 
@@ -46,8 +46,6 @@ Shadow levels on a short loop: your opening spells land while the mob runs in, *
 
 - When a pull goes wrong (an add, a caster pack), shield yourself: **Power Word: Shield** absorbs damage and stops pushback on your casts while it holds.
 - Below 40% health with the mob on you: **Psychic Scream**, then **Flash Heal** if you are not in **Shadowform** yet.
-
-*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 
@@ -94,8 +92,8 @@ One point per level from 10, in this order:
 
 ## Other builds of this spec
 
-- [Leveling — Shadow](../research/leveling/builds/leveling-shadow.md) (18/0/33, 26 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/priest/60/005003231301--535022001201310251-6)
-- [Shadow (optimized)](../research/leveling/builds/opt-shadow-dps-leveling-st.md) (7/11/33, 30 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/priest/60/005002-320501-551002501201300251-6)
+- [Leveling — Shadow](../research/leveling/builds/leveling-shadow.md) (18/0/33, 26 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/priest/60/005003231301--535022001201310251-6)
+- [Shadow (optimized)](../research/leveling/builds/opt-shadow-dps-leveling-st.md) (7/11/33, 30 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/priest/60/005002-320501-551002501201300251-6)
 - [Shadow (optimized, AoE pulls)](../research/leveling/builds/opt-shadow-dps-leveling-aoe.md) (17/3/31) — [open the talent tree](https://talentsforever.com/priest/60/024003201302-3-452022021211210231-6)
 
 ---

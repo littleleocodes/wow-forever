@@ -9,159 +9,99 @@
  "fights": 1500,
  "builds": [
   "opt-arms-2h-raid-leveling-aoe",
-  "F:\\wow-forever\\warrior\\leveling\\fightlab\\candidates\\cand-aoe-r1.json",
-  "F:\\wow-forever\\warrior\\leveling\\fightlab\\candidates\\cand-aoe-r2.json",
-  "F:\\wow-forever\\warrior\\leveling\\fightlab\\candidates\\cand-aoe-r3.json",
-  "F:\\wow-forever\\warrior\\leveling\\fightlab\\candidates\\cand-aoe-r4.json"
+  "F:\\wow-forever\\warrior\\research\\leveling\\fightlab\\candidates\\cand-aoe-r1.json",
+  "F:\\wow-forever\\warrior\\research\\leveling\\fightlab\\candidates\\cand-aoe-r2.json",
+  "F:\\wow-forever\\warrior\\research\\leveling\\fightlab\\candidates\\cand-aoe-r3.json",
+  "F:\\wow-forever\\warrior\\research\\leveling\\fightlab\\candidates\\cand-aoe-r4.json",
+  "F:\\wow-forever\\warrior\\research\\leveling\\fightlab\\candidates\\cand-aoe-r5.json"
  ],
  "shares": {
-  "Melee": 0.4281835657629291,
-  "Whirlwind": 0.14249231954572483,
-  "Execute": 0.13434647660045815,
-  "Rend": 0.07817407844467339,
-  "Thunder Clap": 0.061367691617814295,
-  "Overpower": 0.05497235826871599,
-  "Cleave": 0.04651913693011895,
-  "Deep Wounds": 0.029021498072028327,
-  "Bloodthirst": 0.019490039382563627,
-  "Victory Rush": 0.0044716882469435565,
-  "Heroic Strike": 0.0009611471280297521
+  "Melee": 0.4448726175110907,
+  "Cleave": 0.15082233684166868,
+  "Thunder Clap": 0.1170446672164231,
+  "Execute": 0.1104313948975889,
+  "Rend": 0.07213552264453453,
+  "Overpower": 0.05348705199446767,
+  "Bloodthirst": 0.03044039985932643,
+  "Deep Wounds": 0.01569000592047209,
+  "Victory Rush": 0.002807135045516364,
+  "Heroic Strike": 0.0022688680689115686
  },
  "time_split": {
-  "fight": 0.831,
+  "fight": 0.743,
   "drink": 0.0,
-  "eat": 0.023,
+  "eat": 0.012,
   "other": 0.0,
-  "death": 0.146
+  "death": 0.245
  },
  "talents": [
   {
-   "talent": "Cruelty",
-   "sim": 0.12209850238236089,
-   "ev_before": 0.11844688415525712,
-   "ev_after": 0.11840392294615157,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.1240892101549112,
-     "ev": 0.1250017609679101
-    },
-    {
-     "level": 60,
-     "sim": 0.1201077946098106,
-     "ev": 0.11180608492439302
-    }
-   ]
-  },
-  {
    "talent": "Enrage",
-   "sim": 0.10298598337097319,
-   "ev_before": 0.11767365427351462,
-   "ev_after": 0.1176071899208104,
+   "sim": 0.11589754068225984,
+   "ev_before": 0.11759401180563142,
+   "ev_after": 0.11763145358656187,
    "scale": 1.0,
    "how": "kept",
    "per_level": [
     {
      "level": 40,
-     "sim": 0.1087515045791001,
-     "ev": 0.11750478313987647
+     "sim": 0.11048520945583237,
+     "ev": 0.11748850257098487
     },
     {
      "level": 60,
-     "sim": 0.09722046216284627,
-     "ev": 0.11770959670174433
+     "sim": 0.1213098719086873,
+     "ev": 0.11777440460213887
     }
    ]
   },
   {
    "talent": "Flurry",
-   "sim": 0.09223127822272315,
-   "ev_before": 0.09552988109164254,
-   "ev_after": 0.0956885862908293,
+   "sim": 0.11488926198454678,
+   "ev_before": 0.09936543170278933,
+   "ev_after": 0.09752902241099559,
    "scale": 1.0,
    "how": "kept",
    "per_level": [
     {
      "level": 40,
-     "sim": 0.10153379207266185,
-     "ev": 0.09957743206927096
+     "sim": 0.10729061860381886,
+     "ev": 0.10089528605863103
     },
     {
      "level": 60,
-     "sim": 0.08292876437278443,
-     "ev": 0.09179974051238765
+     "sim": 0.12248790536527471,
+     "ev": 0.09416275876336015
     }
    ]
   },
   {
-   "talent": "Blood Craze",
-   "sim": 0.06970303125191749,
-   "ev_before": 0.05185989464178373,
-   "ev_after": 0.0645122068201851,
-   "scale": 1.0,
-   "how": "capped",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.06213235652172031,
-     "ev": 0.07897379199539695
-    },
-    {
-     "level": 60,
-     "sim": 0.07727370598211465,
-     "ev": 0.050050621644973266
-    }
-   ]
-  },
-  {
-   "talent": "Precision",
-   "sim": 0.04369314535876439,
-   "ev_before": 0.046889004480209905,
-   "ev_after": 0.04686010044466307,
+   "talent": "Cruelty",
+   "sim": 0.1096736111614308,
+   "ev_before": 0.11918868754961137,
+   "ev_after": 0.12310031958400766,
    "scale": 1.0,
    "how": "kept",
    "per_level": [
     {
      "level": 40,
-     "sim": 0.03625978358773113,
-     "ev": 0.04039614676971307
+     "sim": 0.09787059894070838,
+     "ev": 0.12498444167480041
     },
     {
      "level": 60,
-     "sim": 0.051126507129797646,
-     "ev": 0.053324054119613065
-    }
-   ]
-  },
-  {
-   "talent": "Death Wish",
-   "sim": 0.042268730346678274,
-   "ev_before": 0.059665842948489534,
-   "ev_after": 0.04225440753371415,
-   "scale": 0.7085759392939508,
-   "how": "fitted",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.03622096672077683,
-     "ev": 0.04221761439327152
-    },
-    {
-     "level": 60,
-     "sim": 0.04831649397257973,
-     "ev": 0.04229120067415677
+     "sim": 0.12147662338215323,
+     "ev": 0.12121619749321491
     }
    ]
   },
   {
    "talent": "Improved Overpower",
-   "sim": 0.029223334122836238,
-   "ev_before": 0.03157155709681954,
-   "ev_after": 0.03137395785289212,
-   "scale": 1.0,
-   "how": "kept",
+   "sim": 0.07955651546886988,
+   "ev_before": 0.0302677437446087,
+   "ev_after": 0.018710649391304426,
+   "scale": 0.3333333333333333,
+   "how": "capped",
    "per_level": [
     {
      "level": 40,
@@ -170,117 +110,37 @@
     },
     {
      "level": 60,
-     "sim": 0.029223334122836238,
-     "ev": 0.03137395785289212
+     "sim": 0.07955651546886988,
+     "ev": 0.018710649391304426
     }
    ]
   },
   {
-   "talent": "Deep Wounds",
-   "sim": 0.02784991500878666,
-   "ev_before": 0.05474097399647196,
-   "ev_after": 0.02792952488021822,
-   "scale": 0.21033507632091641,
+   "talent": "Death Wish",
+   "sim": 0.06348990230934358,
+   "ev_before": 0.04224967284487685,
+   "ev_after": 0.06349897352523065,
+   "scale": 1.5024795169010758,
    "how": "fitted",
    "per_level": [
     {
      "level": 40,
-     "sim": null,
-     "ev": null
+     "sim": 0.0490162558502597,
+     "ev": 0.06342180672607274
     },
     {
      "level": 60,
-     "sim": 0.02784991500878666,
-     "ev": 0.02792952488021822
-    }
-   ]
-  },
-  {
-   "talent": "Improved Rend",
-   "sim": 0.025566551247058113,
-   "ev_before": 0.023724479814357897,
-   "ev_after": 0.02380492410049683,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": null,
-     "ev": null
-    },
-    {
-     "level": 60,
-     "sim": 0.025566551247058113,
-     "ev": 0.02380492410049683
-    }
-   ]
-  },
-  {
-   "talent": "Improved Execute",
-   "sim": 0.02424802326320609,
-   "ev_before": 0.030692823700781656,
-   "ev_after": 0.030597315799698425,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.032314693794733285,
-     "ev": 0.03176631101625604
-    },
-    {
-     "level": 60,
-     "sim": 0.016181352731678898,
-     "ev": 0.02942832058314081
-    }
-   ]
-  },
-  {
-   "talent": "Unbridled Wrath",
-   "sim": 0.0237749581452262,
-   "ev_before": 0.024735765612860602,
-   "ev_after": 0.024721794374691297,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.01750999264312225,
-     "ev": 0.024700267804907992
-    },
-    {
-     "level": 60,
-     "sim": 0.030039923647330154,
-     "ev": 0.0247433209444746
-    }
-   ]
-  },
-  {
-   "talent": "Two-Handed Weapon Specialization",
-   "sim": 0.019238433260620958,
-   "ev_before": 0.027701462616836293,
-   "ev_after": 0.02767539738429532,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": null,
-     "ev": null
-    },
-    {
-     "level": 60,
-     "sim": 0.019238433260620958,
-     "ev": 0.02767539738429532
+     "sim": 0.07796354876842745,
+     "ev": 0.06357614032438857
     }
    ]
   },
   {
    "talent": "Deflection",
-   "sim": 0.017629617071526327,
-   "ev_before": 0.04168911895523602,
-   "ev_after": 0.017628636348967323,
-   "scale": 0.32169859344139695,
+   "sim": 0.06296630628349871,
+   "ev_before": 0.028226041188506742,
+   "ev_after": 0.06296633964726406,
+   "scale": 1.9370684576343664,
    "how": "fitted",
    "per_level": [
     {
@@ -290,14 +150,214 @@
     },
     {
      "level": 60,
-     "sim": 0.017629617071526327,
-     "ev": 0.017628636348967323
+     "sim": 0.06296630628349871,
+     "ev": 0.06296633964726406
+    }
+   ]
+  },
+  {
+   "talent": "Blood Craze",
+   "sim": 0.061907555141663226,
+   "ev_before": 0.10266079063047873,
+   "ev_after": 0.06681708180735342,
+   "scale": 0.6473499997518957,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.055697973102959535,
+     "ev": 0.09272987232330007
+    },
+    {
+     "level": 60,
+     "sim": 0.06811713718036692,
+     "ev": 0.04090429129140677
+    }
+   ]
+  },
+  {
+   "talent": "Two-Handed Weapon Specialization",
+   "sim": 0.04469198416803937,
+   "ev_before": 0.027669870908025935,
+   "ev_after": 0.044697728734665106,
+   "scale": 1.6142004681751132,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.04469198416803937,
+     "ev": 0.044697728734665106
+    }
+   ]
+  },
+  {
+   "talent": "Improved Execute",
+   "sim": 0.042337475681757185,
+   "ev_before": 0.02485177261463129,
+   "ev_after": 0.04207424472972132,
+   "scale": 1.3756782999262214,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.03570516641581711,
+     "ev": 0.043385876132847036
+    },
+    {
+     "level": 60,
+     "sim": 0.048969784947697256,
+     "ev": 0.040762613326595615
+    }
+   ]
+  },
+  {
+   "talent": "Deep Wounds",
+   "sim": 0.03592184264561802,
+   "ev_before": 0.018458300549637433,
+   "ev_after": 0.035769340258789015,
+   "scale": 3.4684834461659193,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.03592184264561802,
+     "ev": 0.035769340258789015
+    }
+   ]
+  },
+  {
+   "talent": "Improved Rend",
+   "sim": 0.034420817682289245,
+   "ev_before": 0.02196118033998866,
+   "ev_after": 0.03440409927178637,
+   "scale": 1.5742814289405942,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.034420817682289245,
+     "ev": 0.03440409927178637
+    }
+   ]
+  },
+  {
+   "talent": "Anger Management",
+   "sim": 0.01898373463941392,
+   "ev_before": 0.0,
+   "ev_after": 0.013064036047791041,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.01898373463941392,
+     "ev": 0.013064036047791041
     }
    ]
   },
   {
    "talent": "Impale",
-   "sim": 0.0018314040508204989,
+   "sim": 0.013062079551020222,
+   "ev_before": 0.0,
+   "ev_after": 0.009408629050649863,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.013062079551020222,
+     "ev": 0.009408629050649863
+    }
+   ]
+  },
+  {
+   "talent": "Unbridled Wrath",
+   "sim": 0.006151481177202009,
+   "ev_before": 0.02471902424937914,
+   "ev_after": 0.0061498304291129355,
+   "scale": 0.24873065249994397,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.011653905632727923,
+     "ev": 0.006142356879491056
+    },
+    {
+     "level": 60,
+     "sim": 0.000649056721676095,
+     "ev": 0.006157303978734815
+    }
+   ]
+  },
+  {
+   "talent": "Piercing Howl",
+   "sim": 0.0,
+   "ev_before": 0.012162159093406472,
+   "ev_after": 0.01248443021287188,
+   "scale": 1.0,
+   "how": "noise",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.0,
+     "ev": 0.011254013745661278
+    },
+    {
+     "level": 60,
+     "sim": 0.0,
+     "ev": 0.013714846680082481
+    }
+   ]
+  },
+  {
+   "talent": "Spearing Strike",
+   "sim": 0.0,
+   "ev_before": 0.003038864135454599,
+   "ev_after": 0.0030411445400404516,
+   "scale": 1.0,
+   "how": "noise",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.0,
+     "ev": 0.0030411445400404516
+    }
+   ]
+  },
+  {
+   "talent": "Improved Charge",
+   "sim": -0.015689289200807394,
    "ev_before": 0.0,
    "ev_after": 0.0,
    "scale": 1.0,
@@ -310,107 +370,7 @@
     },
     {
      "level": 60,
-     "sim": 0.0018314040508204989,
-     "ev": 0.0
-    }
-   ]
-  },
-  {
-   "talent": "Boundless Rage",
-   "sim": 0.0,
-   "ev_before": 0.0009126142149204202,
-   "ev_after": 0.0009097418897774667,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.0,
-     "ev": 0.0009119357337145688
-    },
-    {
-     "level": 60,
-     "sim": 0.0,
-     "ev": 0.0009075480458403645
-    }
-   ]
-  },
-  {
-   "talent": "Piercing Howl",
-   "sim": 0.0,
-   "ev_before": 0.01284766247075272,
-   "ev_after": 0.012275586548662839,
-   "scale": 1.0,
-   "how": "noise",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.0,
-     "ev": 0.01139414482468083
-    },
-    {
-     "level": 60,
-     "sim": 0.0,
-     "ev": 0.013157028272644847
-    }
-   ]
-  },
-  {
-   "talent": "Spearing Strike",
-   "sim": 0.0,
-   "ev_before": 0.00304233371835238,
-   "ev_after": 0.003039471084817822,
-   "scale": 1.0,
-   "how": "noise",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": null,
-     "ev": null
-    },
-    {
-     "level": 60,
-     "sim": 0.0,
-     "ev": 0.003039471084817822
-    }
-   ]
-  },
-  {
-   "talent": "Anger Management",
-   "sim": -0.006146422414481826,
-   "ev_before": 0.022791386013029574,
-   "ev_after": 0.0,
-   "scale": 4.656612873077393e-10,
-   "how": "fitted",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": null,
-     "ev": null
-    },
-    {
-     "level": 60,
-     "sim": -0.006146422414481826,
-     "ev": 0.0
-    }
-   ]
-  },
-  {
-   "talent": "Improved Charge",
-   "sim": -0.011776539125512105,
-   "ev_before": 0.004296029159200586,
-   "ev_after": 0.0,
-   "scale": 4.656612873077393e-10,
-   "how": "fitted",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": null,
-     "ev": null
-    },
-    {
-     "level": 60,
-     "sim": -0.011776539125512105,
+     "sim": -0.015689289200807394,
      "ev": 0.0
     }
    ]

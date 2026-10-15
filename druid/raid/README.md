@@ -6,12 +6,12 @@
 
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
-| 1 | [Feral Combat](feral-combat.md) — Feral Combat — Raid 🔬 | 694 | best |
-| 2 | [Balance](balance.md) — Balance — Moonkin / Eclipse | 586 | -16% |
+| 1 | [Feral Combat](feral-combat.md) 🔬 | 694 | best |
+| 2 | [Balance](balance.md) — Moonkin / Nature's Grace | 586 | -16% |
 
 **Tanking**: [Feral Combat](feral-combat.md) — Feral — Bear Tank.
 
-**Healing**: [Restoration](restoration.md) — Restoration — Raid healing 🔬.
+**Healing**: [Restoration](restoration.md) — Raid healing 🔬.
 
 **By gear tier**: each damage spec with its best talents for each tier, in its own gear (DPS in a full raid; [every class](../../_reference/dps-rankings.md)):
 

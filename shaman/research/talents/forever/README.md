@@ -1,43 +1,42 @@
 # Shaman — adapting the Classic builds to WoW: Forever
 
-Data: WoW: Forever beta client build 1.60.1.70009, merged 2026-09-25 (`talent-trees.md`; the 2026-09-13 demo snapshot is archived under `_reference/data/raw/`). Spellbook numbers: `../../spells/README.md`. Point-by-point audit of every
-Classic build: `baseline-audit.md`. Proposed builds: `proposed-builds.json` → `builds-README.md`.
+Data: WoW: Forever beta client build 1.60.1.70291, captured 2026-10-08 (`_reference/data/data_build.py`; the trees in
+[talent-trees.md](talent-trees.md)). Spellbook numbers: [../../spells/README.md](../../spells/README.md). Point-by-point audit of
+every Classic build: [baseline-audit.md](baseline-audit.md). Builds: [proposed-builds.json](proposed-builds.json), one page each under
+[../../leveling/builds/](../../leveling/builds/), [../../raid/builds/](../../raid/builds/) and [../../pvp/builds/](../../pvp/builds/).
 
 ## What broke
 
 | Classic talent | Forever | Impact on baselines |
 |---|---|---|
-| Lightning Mastery (Ele T6, -1.0s) | **Removed** → *Elemental Alacrity* (3, -0.17/0.33/0.5s; tier 3 since build 70009) | Lightning Bolt is 2.5s baseline in the beta, so 2.0s with Alacrity: as fast as Classic Elemental |
-| Elemental Mastery (Ele capstone) | **Removed** → *Lava Burst* capstone | Burst cooldown replaced by a rotational Fire nuke |
-| Storm Reach, Improved Fire Totems | **Removed** → Elemental Reach / Improved Fire Nova | |
-| Call of Thunder | 5 ranks (+6%) → **1 rank (+3%)**, requires Elemental Alacrity 3 (build 70009) | 4 points freed |
-| Elemental Fury | 1 rank → **5 ranks** (20%/rank) at tier 6 (build 70009), requires Call of Thunder | 4 points more expensive — nets out with Call of Thunder |
-| Improved Weapon Totems, Enhancing Totems | **Removed** | The Windfury-support Enhancement build no longer exists |
-| Weapon Mastery, Shield Specialization, Parry, Two-Handed Axes and Maces | **Removed** | Enhancement rebuilt around Stormstrike (16-pt), Maelstrom Weapon, Rage of the Farseer |
+| Lightning Mastery (Elemental, -1.0 s) | **Renamed** *Elemental Alacrity* (3 ranks, tier 3, -0.5 s on Lightning Bolt, Chain Lightning and Lava Burst) | Lightning Bolt is a 2.5-second cast at high ranks, so 2.0 seconds with Alacrity |
+| Elemental Mastery (Elemental capstone) | **Removed**; *Lava Burst* is the capstone | No burst cooldown: a rotational Fire nuke instead |
+| Storm Reach, Improved Fire Totems | **Renamed** *Elemental Reach* (also Fire Nova, Lava Burst and +15 yards on Flame Shock) and *Improved Fire Nova* | |
+| Call of Thunder | 5 ranks → **1 rank (+3% crit)**, requires Elemental Alacrity 3 | 4 points freed |
+| Elemental Fury | 1 rank → **5 ranks** at tier 6, requires Call of Thunder | 4 points dearer; nets out with Call of Thunder |
+| Improved Weapon Totems, Enhancing Totems, Weapon Mastery, Two-Handed Axes and Maces | **Removed** (baseline now) | The Windfury-support Enhancement build no longer exists |
+| Shield Specialization, Parry | **Removed**; Parry's place is *Spirit Weapons* | Enhancement is rebuilt around Stormstrike, Maelstrom Weapon and Rage of the Farseer |
 | Stormstrike | Capstone → **16-point talent** | |
-| Flurry | Requires **Mental Dexterity 3** (new AP-from-Intellect talent) | |
-| Nature's Guidance | **Removed** → hit is now on *Tidal Focus* (1%/rank) | Every caster/melee build takes Tidal Focus |
-| Totemic Mastery, Healing Grace | **Removed** | Natural Grace (threat) replaces Healing Grace; totem range unknown |
-| Mana Tide Totem | Capstone → **16-point talent** | Elemental can reach it |
-| Tidal Mastery | Now heal crit only; tier 4 in the beta (Totemic Focus took the tier-1 slot) | No longer buffs lightning crit, and no longer a cheap filler |
+| Flurry | Requires **Mental Dexterity 3** (attack power from Intellect) | |
+| Nature's Guidance | **Removed**; hit is on *Tidal Focus* (5% at 5 ranks, tier 2) | Casters and melee alike take Tidal Focus |
+| Totemic Mastery, Healing Grace | **Removed**; Healing Grace's place is *Natural Grace* (15% less spell threat) | Buff totems reach 30 yards without it |
+| Mana Tide Totem | Capstone → **16-point talent** | |
+| Tidal Mastery | Heal crit only, tier 4 | No longer buffs lightning crit |
 
 ## What's new and matters
 
-- **Lava Burst**, **Lightning Overload**, **Elemental Alacrity**, **Elemental Reach**, **Earthbound**, **Improved Fire Nova** (Elemental).
-- **Maelstrom Weapon**, **Rage of the Farseer**, **Mental Dexterity**, **Mental Quickness**, **Spirit Weapons**, **Improved Stormstrike**, **Shamanistic Focus** (Enhancement).
-- **Riptide** (capstone), **Water Shield**, **Mindfulness**, **Natural Grace** (Restoration).
-- **Thundering Strikes** is now crit with all spells and attacks — interesting for healers and Elemental too.
+- **Lava Burst**, **Lightning Overload**, **Earthbound** (Elemental); **Maelstrom Weapon**, **Rage of the Farseer**, **Mental Dexterity**,
+  **Mental Quickness**, **Improved Stormstrike**, **Shamanistic Focus** (Enhancement); **Riptide**, **Water Shield**, **Mindfulness**
+  (Restoration).
+- **Thundering Strikes** is crit with all spells and attacks: Elemental's raid pick takes it, and healers can.
 
-## Decisions made in the proposed builds
+## Builds
 
-1. **Resto 0/5/46** keeps its shape; Riptide capstone, Mana Tide at 16.
-2. **Elemental 31/0/20**: Lava Burst + Lightning Overload + Alacrity, Mana Tide from Restoration.
-3. **Enhancement 7/34/10**: rebuilt as a melee DPS (the support build is obsolete).
-4. **PvP Elemental 30/0/21**: Reverberation + Earthbound + Nature's Swiftness.
+The current picks per spec and mode are on the player pages: [leveling](../../../leveling/README.md) and
+[raid](../../../raid/README.md); the research behind them is under [../../leveling/](../../leveling/) and [../../raid/](../../raid/).
 
 ## To verify at launch
 
-- Two-handers / dual wield for shamans (Two-Handed Axes and Maces is gone).
-- Totem radius without Totemic Mastery.
-- Lava Burst 192-248 at 60 (buffed in 70009), Riptide 485-533 plus 445, Maelstrom Weapon 4%/point confirmed; Elemental Alacrity 0.5s.
-- Windfury Totem was lowered (95/179/246 AP vs Classic 122/229/315).
+- Lava Burst 192-248 and Riptide 799-883 plus 805 over 15 seconds at 60 (70291 spellbook).
+- Maelstrom Weapon's proc rate (not in the tooltip).
+- Windfury Totem's 246 attack power at 60 (Classic 315).

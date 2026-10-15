@@ -6,8 +6,8 @@
 |---|---|---|---|---|---|---|---|
 | `assassination-seal-fate-raid` | 30/19/2 | 422 | 23 | +0.0% | 300 | 0 | - |
 | `assassination-ml-raid` | 30/19/2 | 410 | 21 | -2.7% | 291 | 0 | - |
-| `daggers-split-ml-raid` | 30/19/2 | 410 | 21 | -2.7% | 291 | 0 | - |
 | `assassination-mutilate-raid` | 30/21/0 | 410 | 23 | -2.8% | 291 | 0 | - |
+| `daggers-split-open-raid` | 21/28/2 | 396 | 18 | -6.2% | 281 | 0 | - |
 | sim preset: Mutilate | - | 386 | 21 | -8.5% | 274 | 0 | - |
 | sim preset: Assassination Mutilate 31/20/0 | - | 374 | 20 | -11.3% | 266 | 0 | - |
 
@@ -30,8 +30,8 @@ Scorer = the expected-value stats model's score of the same allocation for its r
 
 - assassination-seal-fate-raid: `0053031232150005-305313000013-002`
 - assassination-ml-raid: `0053031052150005-305313000013-002`
-- daggers-split-ml-raid: `0053031052150005-303333000013-002`
 - assassination-mutilate-raid: `0053031252112005-305313000015`
+- daggers-split-open-raid: `00530310311301-303333000015142-002`
 - sim preset: Mutilate: `00530310551021051-302303202004`
 - sim preset: Assassination Mutilate 31/20/0: `02532010531201051-225303000005`
 

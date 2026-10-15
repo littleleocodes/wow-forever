@@ -44,15 +44,15 @@ Spec model (`_reference/data/scorer/specs`) assumes: starfire 65%, wrath 0%, moo
 | Level | Build | Time/kill | vs. main | Fight mean | Deaths/100 | Downtime/kill |
 |---|---|---|---|---|---|---|
 | 15 | opt-balance-dps-leveling-st | 39.7s | - | 19.1s | 0.0 | 12.6s |
-| 15 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 26.6s | -33.0% | 17.6s | 0.0 | 1.0s |
+| 15 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 35.1s | -11.5% | 25.1s | 0.0 | 2.0s |
 | 20 | opt-balance-dps-leveling-st | 44.2s | - | 23.1s | 0.0 | 13.1s |
-| 20 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 17.8s | -59.8% | 9.2s | 0.0 | 0.6s |
+| 20 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 22.5s | -49.2% | 13.4s | 0.0 | 1.0s |
 | 30 | opt-balance-dps-leveling-st | 53.1s | - | 24.7s | 0.0 | 20.4s |
-| 30 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 22.7s | -57.2% | 13.5s | 0.0 | 1.2s |
+| 30 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 25.7s | -51.6% | 16.2s | 0.0 | 1.5s |
 | 40 | opt-balance-dps-leveling-st | 53.3s | - | 26.4s | 0.0 | 19.0s |
-| 40 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 26.6s | -50.1% | 16.8s | 0.0 | 1.8s |
+| 40 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 29.5s | -44.7% | 19.4s | 0.0 | 2.1s |
 | 50 | opt-balance-dps-leveling-st | 46.0s | - | 21.8s | 0.0 | 16.3s |
-| 50 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 29.2s | -36.5% | 18.3s | 0.0 | 2.9s |
+| 50 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 30.5s | -33.7% | 19.2s | 0.0 | 3.3s |
 | 60 | opt-balance-dps-leveling-st | 43.0s | - | 21.8s | 0.0 | 13.1s |
 | 60 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 33.1s | -22.9% | 21.2s | 0.0 | 3.9s |
 

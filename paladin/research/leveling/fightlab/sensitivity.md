@@ -4,30 +4,30 @@
 
 | Assumption | Level | opt-ret-dps-leveling-st time/kill | leveling-retribution time/kill | Best build | opt-ret-dps-leveling-st: −Seal of Command | opt-ret-dps-leveling-st: −Conviction | opt-ret-dps-leveling-st: −Improved Seals |
 |---|---|---|---|---|---|---|---|
-| baseline | 30 | 25.9s (deaths 0.0/100) | 25.4s (deaths 0.0/100) | leveling-retribution | +14% | +2% | - |
-| baseline | 60 | 33.9s (deaths 0.0/100) | 33.7s (deaths 0.0/100) | leveling-retribution | +1% | +3% | +3% |
-| root breaks on 10% of hits | 30 | 25.9s (deaths 0.0/100) | 25.4s (deaths 0.0/100) | leveling-retribution | +14% | +2% | - |
-| root breaks on 10% of hits | 60 | 33.9s (deaths 0.0/100) | 33.7s (deaths 0.0/100) | leveling-retribution | +1% | +3% | +3% |
-| root breaks on 40% of hits | 30 | 25.9s (deaths 0.0/100) | 25.4s (deaths 0.0/100) | leveling-retribution | +14% | +2% | - |
-| root breaks on 40% of hits | 60 | 33.9s (deaths 0.0/100) | 33.7s (deaths 0.0/100) | leveling-retribution | +1% | +3% | +3% |
-| mobs have 20% less health | 30 | 22.0s (deaths 0.0/100) | 21.7s (deaths 0.0/100) | leveling-retribution | +13% | +2% | - |
-| mobs have 20% less health | 60 | 28.8s (deaths 0.0/100) | 28.7s (deaths 0.0/100) | leveling-retribution | +1% | +2% | +4% |
-| mobs have 20% more health | 30 | 29.9s (deaths 0.0/100) | 29.1s (deaths 0.0/100) | leveling-retribution | +14% | +2% | - |
-| mobs have 20% more health | 60 | 38.9s (deaths 0.0/100) | 38.9s (deaths 0.0/100) | leveling-retribution | +2% | +3% | +3% |
-| mobs hit 30% harder | 30 | 27.0s (deaths 0.0/100) | 26.3s (deaths 0.0/100) | leveling-retribution | +13% | +2% | - |
-| mobs hit 30% harder | 60 | 34.5s (deaths 0.0/100) | 34.7s (deaths 0.0/100) | opt-ret-dps-leveling-st | +2% | +3% | +4% |
-| pushback 1.0 s per hit | 30 | 25.9s (deaths 0.0/100) | 25.4s (deaths 0.0/100) | leveling-retribution | +14% | +2% | - |
-| pushback 1.0 s per hit | 60 | 33.9s (deaths 0.0/100) | 33.7s (deaths 0.0/100) | leveling-retribution | +1% | +3% | +3% |
-| weapons 20% better (blues) | 30 | 24.5s (deaths 0.0/100) | 24.2s (deaths 0.0/100) | leveling-retribution | +15% | +3% | - |
-| weapons 20% better (blues) | 60 | 32.5s (deaths 0.0/100) | 32.5s (deaths 0.0/100) | opt-ret-dps-leveling-st | +2% | +3% | +4% |
-| dungeon blues (item database) | 30 | 23.3s (deaths 0.0/100) | 22.8s (deaths 0.0/100) | leveling-retribution | +16% | +1% | - |
-| dungeon blues (item database) | 60 | 31.3s (deaths 0.0/100) | 31.4s (deaths 0.0/100) | opt-ret-dps-leveling-st | +0% | +3% | +4% |
-| gear stats 20% better | 30 | 25.1s (deaths 0.0/100) | 24.7s (deaths 0.0/100) | leveling-retribution | +14% | +1% | - |
-| gear stats 20% better | 60 | 32.8s (deaths 0.0/100) | 33.0s (deaths 0.0/100) | opt-ret-dps-leveling-st | +1% | +4% | +3% |
-| no caster mobs | 30 | 26.2s (deaths 0.0/100) | 25.7s (deaths 0.0/100) | leveling-retribution | +13% | +2% | - |
-| no caster mobs | 60 | 34.2s (deaths 0.0/100) | 34.2s (deaths 0.0/100) | leveling-retribution | +1% | +3% | +4% |
-| 30% caster mobs | 30 | 25.4s (deaths 0.0/100) | 25.2s (deaths 0.0/100) | leveling-retribution | +14% | +3% | - |
-| 30% caster mobs | 60 | 32.5s (deaths 0.0/100) | 32.5s (deaths 0.0/100) | opt-ret-dps-leveling-st | +2% | +3% | +4% |
-| 20% of mobs run at 20% health | 30 | 26.0s (deaths 0.0/100) | 25.6s (deaths 0.0/100) | leveling-retribution | +15% | +3% | - |
-| 20% of mobs run at 20% health | 60 | 34.2s (deaths 0.0/100) | 34.3s (deaths 0.0/100) | opt-ret-dps-leveling-st | +2% | +3% | +5% |
+| baseline | 30 | 23.9s (deaths 0.0/100) | 23.7s (deaths 0.0/100) | leveling-retribution | +16% | +2% | - |
+| baseline | 60 | 32.4s (deaths 0.0/100) | 32.4s (deaths 0.0/100) | leveling-retribution | +4% | +4% | +5% |
+| root breaks on 10% of hits | 30 | 23.9s (deaths 0.0/100) | 23.7s (deaths 0.0/100) | leveling-retribution | +16% | +2% | - |
+| root breaks on 10% of hits | 60 | 32.4s (deaths 0.0/100) | 32.4s (deaths 0.0/100) | leveling-retribution | +4% | +4% | +5% |
+| root breaks on 40% of hits | 30 | 23.9s (deaths 0.0/100) | 23.7s (deaths 0.0/100) | leveling-retribution | +16% | +2% | - |
+| root breaks on 40% of hits | 60 | 32.4s (deaths 0.0/100) | 32.4s (deaths 0.0/100) | leveling-retribution | +4% | +4% | +5% |
+| mobs have 20% less health | 30 | 20.4s (deaths 0.0/100) | 20.1s (deaths 0.0/100) | leveling-retribution | +14% | +2% | - |
+| mobs have 20% less health | 60 | 27.5s (deaths 0.0/100) | 27.6s (deaths 0.0/100) | opt-ret-dps-leveling-st | +4% | +4% | +4% |
+| mobs have 20% more health | 30 | 27.7s (deaths 0.0/100) | 27.2s (deaths 0.0/100) | leveling-retribution | +15% | +2% | - |
+| mobs have 20% more health | 60 | 37.5s (deaths 0.0/100) | 37.1s (deaths 0.0/100) | leveling-retribution | +4% | +5% | +5% |
+| mobs hit 30% harder | 30 | 24.9s (deaths 0.0/100) | 24.6s (deaths 0.0/100) | leveling-retribution | +16% | +2% | - |
+| mobs hit 30% harder | 60 | 33.4s (deaths 0.0/100) | 33.1s (deaths 0.0/100) | leveling-retribution | +3% | +3% | +4% |
+| pushback 1.0 s per hit | 30 | 23.9s (deaths 0.0/100) | 23.7s (deaths 0.0/100) | leveling-retribution | +16% | +2% | - |
+| pushback 1.0 s per hit | 60 | 32.4s (deaths 0.0/100) | 32.4s (deaths 0.0/100) | leveling-retribution | +4% | +4% | +5% |
+| weapons 20% better (blues) | 30 | 22.9s (deaths 0.0/100) | 22.6s (deaths 0.0/100) | leveling-retribution | +15% | +2% | - |
+| weapons 20% better (blues) | 60 | 31.3s (deaths 0.0/100) | 31.0s (deaths 0.0/100) | leveling-retribution | +4% | +4% | +3% |
+| dungeon blues (item database) | 30 | 21.3s (deaths 0.0/100) | 20.8s (deaths 0.0/100) | leveling-retribution | +17% | +2% | - |
+| dungeon blues (item database) | 60 | 30.4s (deaths 0.0/100) | 30.2s (deaths 0.0/100) | leveling-retribution | +3% | +3% | +4% |
+| gear stats 20% better | 30 | 23.2s (deaths 0.0/100) | 22.9s (deaths 0.0/100) | leveling-retribution | +15% | +3% | - |
+| gear stats 20% better | 60 | 31.6s (deaths 0.0/100) | 31.5s (deaths 0.0/100) | leveling-retribution | +3% | +4% | +4% |
+| no caster mobs | 30 | 24.2s (deaths 0.0/100) | 23.8s (deaths 0.0/100) | leveling-retribution | +15% | +2% | - |
+| no caster mobs | 60 | 33.2s (deaths 0.0/100) | 32.9s (deaths 0.0/100) | leveling-retribution | +2% | +4% | +4% |
+| 30% caster mobs | 30 | 23.9s (deaths 0.0/100) | 23.5s (deaths 0.0/100) | leveling-retribution | +15% | +2% | - |
+| 30% caster mobs | 60 | 31.4s (deaths 0.0/100) | 31.3s (deaths 0.0/100) | leveling-retribution | +3% | +4% | +4% |
+| 20% of mobs run at 20% health | 30 | 24.2s (deaths 0.0/100) | 24.0s (deaths 0.0/100) | leveling-retribution | +15% | +2% | - |
+| 20% of mobs run at 20% health | 60 | 33.0s (deaths 0.0/100) | 33.1s (deaths 0.0/100) | opt-ret-dps-leveling-st | +4% | +4% | +5% |
 

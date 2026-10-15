@@ -55,7 +55,6 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-
 5. **Cruelty** — Removing it costs 1.5 points of score in this model.
 6. **Flurry** — Removing it costs 1.5 points of score in this model.
 7. **Raging Blows** — Removing it costs 1.4 points of score in this model.
-8. **Precision** — Removing it costs 1.4 points of score in this model.
 
 ## Leveling rotation
 

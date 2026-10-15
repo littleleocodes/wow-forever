@@ -53,8 +53,10 @@ def talent_names(cls):
 SELF = ("Seal of ", " Aura", " Shout", " Form", " Stance", "Shadowform", "Slice and Dice", "Inner Fire", "Demon Armor", "Demon Skin", "Mage Armor",
         "Ice Armor", "Frost Armor", "Molten Armor", "Lightning Shield", "Water Shield", "Aspect of", "Blessing of", "Righteous Fury",
         "Bone Shield", "Trueshot", "Moonkin", "Omen", "Nature's Grasp", "Thorns", "Mark of the Wild", "Arcane Intellect", "Power Word: Fortitude")
-# race-only spells in the priest's spellbook (Classic 1.12's racial priest spells): the pages are race-neutral
-RACIAL = {"Desperate Prayer", "Touch of Weakness", "Hex of Weakness", "Elune's Grace", "Starshards", "Feedback", "Shadowguard"}
+# race-only spells in the priest's spellbook: the pages are race-neutral. Forever gives each race two (priest/README.md, "Racial priest
+# spells"); 2026-10-15 page audit B12: the Forever-only ones were missing, and the Smite page listed the Undead's Dark Sacrifice
+RACIAL = {"Desperate Prayer", "Touch of Weakness", "Hex of Weakness", "Elune's Grace", "Starshards", "Feedback", "Shadowguard",
+          "Divine Grace", "Chastise", "Confounding Flash", "Contingency Plan", "Dark Sacrifice"}
 
 
 @functools.lru_cache(maxsize=None)
@@ -331,6 +333,9 @@ def _parse(cls, t):
     if not cm:
         return None
     sp = cm.group(1).strip()
+    rk = re.search(r" \(rank (\d+)\)$", sp)   # a lower rank (render_sim_presets, 2026-10-15): named on the line
+    if rk:
+        sp = sp[:rk.start()]
     if sp not in ok or sp in RACIAL:
         return None
     if sp in MANA_TOOLS and sp != "Life Tap":   # Evocation, Innervate, Dark Sacrifice...: the Advanced list says when (advanced())
@@ -377,6 +382,8 @@ def _parse(cls, t):
         txt = f"**{sp}**: " + ("keep it down" if sp.endswith("Totem") else "keep it up" if is_self(sp) or sp in KEEP_UP else "keep it on the target")
     else:
         txt = f"**{sp}**"
+    if rk and txt == f"**{sp}**":
+        txt += f" (rank {rk.group(1)})"
     if PREP.get(sp):   # its condition times it for the next ability: say that alone
         return ([sp], f"**{sp}** {PREP[sp]}", swing)
     if not whens and REACTIVE.get(sp):
@@ -387,7 +394,7 @@ def _parse(cls, t):
         if len(whens) > 1:   # an either-or group next to other conditions: "and either A or B" (Eviscerate's Slice and Dice or 79 energy)
             whens = [("either " + w[1:]) if w.startswith(EITHER) else w for w in whens]
         whens = [w.replace(EITHER, "") for w in whens]
-        txt += (" when " if txt == f"**{sp}**" else ", when ") + " and ".join(whens).replace(" and you have ", " and ")
+        txt += (" when " if txt in (f"**{sp}**", f"**{sp}** (rank {rk.group(1) if rk else ''})") else ", when ") + " and ".join(whens).replace(" and you have ", " and ")
     if until:
         txt += f"{',' if txt != f'**{sp}**' else ''} until the last {_n(until)} seconds of the fight"
     return ([sp], txt, swing)
@@ -469,7 +476,7 @@ def filler(cls, prio):
     if not prio:
         return None
     names = re.findall(r"\*\*(.+?)\*\*", prio[-1])
-    if len(names) != 1 or prio[-1] != f"**{names[0]}**":
+    if len(names) != 1 or not re.fullmatch(re.escape(f"**{names[0]}**") + r"(?: \(rank \d+\))?", prio[-1]):
         return None
     return names[0] if cooldowns(cls).get(names[0]) is False else None
 

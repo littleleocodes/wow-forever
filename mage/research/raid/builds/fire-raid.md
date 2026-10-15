@@ -1,4 +1,4 @@
-# Fire — Ignite / Hot Streak (simulator winner adopted 2026-09-28) — 12/34/5
+# Fire — Ignite / Heating Up (simulator winner adopted 2026-09-28) — 12/34/5
 
 *[Mage](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
@@ -50,7 +50,7 @@ Allocation adopted on 2026-09-28 from `cand-fire-raid-r5`, the best build in the
 ## Core talents (priority order)
 
 1. **Improved Scorch** — 5 stacks of +3% Fire damage taken; 100% application at max rank (est.). Raid sim (2026-09-28): removing it costs +54% DPS.
-2. **Hot Streak** — New: Fireball/Scorch/Fire Blast crits stack -25% Pyroblast cast time (3 stacks) — a 1.5s Pyroblast after three crits. Raid sim (2026-09-28): the simulator's rotation reads this talent's own proc, so its removal run breaks the rotation and is not its value.
+2. **Heating Up** — New: Fireball/Scorch/Fire Blast crits stack -25% Pyroblast cast time (3 stacks) — a 1.5s Pyroblast after three crits. Raid sim (2026-09-28): the simulator's rotation reads this talent's own proc, so its removal run breaks the rotation and is not its value. (Hot Streak was renamed Heating Up in build 70170.)
 3. **Ignite** — 40% of crit damage as a burn (unchanged) — still the fire engine. Raid sim (2026-09-28): removing it costs +14% DPS.
 4. **Fire Power** — +10% Fire damage. Raid sim (2026-09-28): removing it costs +10% DPS.
 5. **Combustion** — Reworked: each Fire hit +10% crit until 4 crits. Raid sim (2026-09-28): removing it costs +9% DPS.
@@ -117,8 +117,8 @@ Allocation adopted on 2026-09-28 from `cand-fire-raid-r5`, the best build in the
 | 5 | if stacks of Heating Up = 3: cast Pyroblast | 1.5 |
 | 6 | cast Fire Blast | 7.0 |
 | 7 | if mana % ≥ 10%: cast Fireball | 9.5 |
-| 8 | if time left in the fight ≥ 3s: cast Fireball | 5.4 |
-| 9 | cast Scorch | 0.2 |
+| 8 | if time left in the fight ≥ 3s: cast Fireball (rank 2) | 5.4 |
+| 9 | cast Scorch (rank 1) | 0.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Arcane Missiles (its condition never held in these fights).
 

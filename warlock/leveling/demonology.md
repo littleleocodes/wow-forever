@@ -10,6 +10,8 @@
 
 ## How to play
 
+**Not in this build:** **Decimation**, **Improved Health Funnel** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+
 **Before the fight:** **Demon Skin** (**Demon Armor** from level 20) up, **Summon Voidwalker**. Send the Voidwalker in first and let it hold the mob with **Torment**. Open with **Amplify Curse** whenever it is ready: it makes that fight's **Bane of Agony** 50% stronger. With **Soul Link**: turn it on once the Voidwalker is out.
 
 **In the fight**, top to bottom:

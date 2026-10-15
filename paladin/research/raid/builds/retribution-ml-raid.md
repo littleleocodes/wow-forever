@@ -56,7 +56,7 @@ The Retribution build the machine-learning talent search found on the training d
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 12/8/31 | 533 | +0.0% | 979 | -0.3% | 1 s |
-| 2 | **[`retribution-ml-raid`](retribution-ml-raid.md)** | ours: hand draft | 11/8/32 | 523 | -1.8% | 982 | +0.0% | 6 s |
+| 2 | **[`retribution-ml-raid`](retribution-ml-raid.md)** | ours: derived (ML search) | 11/8/32 | 523 | -1.8% | 982 | +0.0% | 6 s |
 | 3 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/0/34 | 522 | -1.9% | 954 | -2.8% | 2 s |
 | 4 | *P4/P5 Ret* | community simulator | - | 514 | -3.6% | 952 | -3.1% | 7 s |
 | 5 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 10/8/33 | 509 | -4.5% | 979 | -0.3% | 20 s |
@@ -109,7 +109,7 @@ Before the pull: at -1.5s: cast Seal of Command.
 | 6 | cast Hammer of Wrath | 1.8 |
 | 7 | cast Holy Strike | 6.0 |
 | 8 | cast Consecration | 5.9 |
-| 9 | cast Consecration | 0.8 |
+| 9 | cast Consecration (rank 1) | 0.8 |
 
 Lines of the simulator's rotation these builds never cast: cast Holy Shock (its condition never held in these fights); cast Divine Favor (needs the Divine Favor talent).
 

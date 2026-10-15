@@ -46,6 +46,33 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-
 
 *No points.*
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Fury | Cruelty | 5 | 0/5/0 |
+| 15-19 | Fury | Unbridled Wrath | 5 | 0/10/0 |
+| 20-22 | Fury | Blood Craze | 3 | 0/13/0 |
+| 23-24 | Fury | Booming Voice | 2 | 0/15/0 |
+| 25-26 | Fury | Improved Execute | 2 | 0/17/0 |
+| 27-28 | Fury | Enrage | 2 | 0/19/0 |
+| 29 | Fury | Dual Wield Specialization | 1 | 0/20/0 |
+| 30 | Fury | Death Wish | 1 | 0/21/0 |
+| 31-33 | Fury | Dual Wield Specialization | 3 | 0/24/0 |
+| 34-35 | Fury | Enrage | 2 | 0/26/0 |
+| 36 | Fury | Raging Blows | 1 | 0/27/0 |
+| 37 | Fury | Enrage | 1 | 0/28/0 |
+| 38 | Fury | Dual Wield Specialization | 1 | 0/29/0 |
+| 39 | Fury | Flurry | 1 | 0/30/0 |
+| 40 | Fury | Bloodthirst | 1 | 0/31/0 |
+| 41-44 | Fury | Flurry | 4 | 0/35/0 |
+| 45-47 | Fury | Furious Precision | 3 | 0/38/0 |
+| 48-49 | Arms | Deflection | 2 | 2/38/0 |
+| 50-52 | Arms | Improved Heroic Strike | 3 | 5/38/0 |
+| 53-54 | Arms | Improved Charge | 2 | 7/38/0 |
+| 55-59 | Arms | Improved Tactical Mastery | 5 | 12/38/0 |
+| 60 | Arms | Anger Management | 1 | 13/38/0 |
+
 ## Core talents (priority order)
 
 1. **Enrage** — Removing it costs 3.5 points of score in this model.
@@ -55,7 +82,6 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-
 5. **Cruelty** — Removing it costs 1.8 points of score in this model.
 6. **Flurry** — Removing it costs 1.4 points of score in this model.
 7. **Raging Blows** — Removing it costs 1.3 points of score in this model.
-8. **Precision** — Removing it costs 1.3 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
@@ -67,15 +93,15 @@ What this build casts per kill ([report](../fightlab/fury-dw-raid.md), all level
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee (off-hand) | 4.9 | 5.8 | 7.0 | 8.0 | 9.4 | 20% |
-| Melee | 2.2 | 3.1 | 5.9 | 6.5 | 7.7 | 23% |
+| Melee (off-hand) | 5.6 | 6.8 | 7.5 | 8.2 | 9.4 | 20% |
+| Melee | 3.1 | 4.7 | 6.9 | 7.2 | 7.7 | 23% |
 | Bloodthirst | 0.0 | 0.0 | 2.0 | 2.3 | 2.7 | 17% |
-| Heroic Strike | 2.7 | 2.7 | 1.1 | 1.5 | 1.7 | 11% |
-| Execute | 0.0 | 1.2 | 1.1 | 1.3 | 1.4 | 17% |
-| Rend | 1.1 | 1.2 | 1.2 | 1.2 | 1.2 | 5% |
-| Overpower | 0.5 | 0.6 | 0.8 | 0.9 | 1.0 | 4% |
+| Heroic Strike | 2.5 | 2.0 | 0.5 | 0.9 | 1.7 | 11% |
+| Execute | 0.0 | 1.3 | 1.1 | 1.2 | 1.4 | 17% |
+| Rend | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 5% |
+| Overpower | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 | 4% |
 | Charge | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
-| Victory Rush | 0.2 | 0.4 | 0.6 | 0.7 | 0.8 | 1% |
+| Victory Rush | 0.3 | 0.6 | 0.6 | 0.7 | 0.8 | 1% |
 | Bloodrage | 0.3 | 0.3 | 0.3 | 0.4 | 0.4 | 0% |
 | Battle Shout | 0.1 | 0.1 | 0.1 | 0.1 | 0.2 | 0% |
 | Death Wish | 0.0 | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
@@ -84,6 +110,7 @@ What this build casts per kill ([report](../fightlab/fury-dw-raid.md), all level
 
 - Report: warrior/talents/forever/optimizer/fury-dw-raid-leveling-st.md
 - 2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Boundless Rage 2, Precision 3 out; Furious Precision 3, Booming Voice 2 in; to be re-optimized.
+- 2026-10-15 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fury-dw-raid rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree first 26.5 s per kill; stats model 26.7 s; own tree last 28.3 s.
 
 ## Open questions (verify in the live game)
 

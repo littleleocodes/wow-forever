@@ -57,7 +57,7 @@ Shadowform (+10% damage, -50% Shadow mana cost), Silence, Vampiric Embrace, Blac
 4. **Vampiric Embrace** — Party healing from Shadow damage (now on a 1-minute cooldown).
 5. **Shadow Weaving** — Reworked into a self-buff: 33% chance per Shadow spell for +2% Shadow damage, 5 stacks.
 6. **Darkness** — +10% Shadow damage.
-7. **Improved Mind Flay** — +10% damage and +5 yards; slows less.
+7. **Improved Mind Flay** — +20% damage and +10 yards at 2/2, and a 20% slow (70291 tooltip).
 8. **Early Demise** — +15%/rank Shadow Word: Death crit below 20% — the execute.
 9. **Improved Mind Blast** — Shorter Mind Blast cooldown.
 10. **Shadow Focus** — 5% Shadow hit.

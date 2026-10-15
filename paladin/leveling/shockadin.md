@@ -2,7 +2,7 @@
 
 [Paladin](../README.md) > [Leveling (solo)](README.md) > Shockadin
 
-*Holy Shock burst and heals with Retribution's melee talents.* (a hybrid: Holy/Retribution).
+*Retribution's two-handed melee (Vengeance, Two-Handed Weapon Specialization) with Holy's Sacred Arbiter; despite the name, the open leveling search's winner takes no Holy Shock.* (a hybrid: Holy/Retribution).
 
 **✅ Recommended** for leveling (the best paladin spec here, or within 3% of it).
 
@@ -14,17 +14,39 @@
 
 **Not in this build:** **Divine Favor**, **Holy Shock** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
 
-**Before the fight:** **Blessing of Wisdom** and **Devotion Aura** up, a two-handed weapon. **Seal of Righteousness** before each pull.
+**Before the fight:** **Blessing of Wisdom** and **Devotion Aura** up, a two-handed weapon. **Seal of Righteousness** before each pull (**Seal of Command** instead if your build takes it).
 
 **In the fight**, top to bottom:
 
 1. **Hammer of Justice** a mob that casts spells.
 2. Once you have **Holy Shock**: cast it at the mob as it walks in while your mana is above 70%, after **Divine Favor** for a sure critical hit while you are healthy.
-3. Keep **Seal of Righteousness** up.
+3. Keep your seal up.
 4. **Judgement** and **Holy Strike** whenever ready.
 5. Low on health (below 40%, with the mob above a fifth): **Holy Shock** on yourself (after **Divine Favor** if it is ready), **Divine Protection** below 30%, **Hammer of Justice**, then **Holy Light**; **Flash of Light** below a quarter; **Lay on Hands** below 15%.
 
 **Between fights:** Heal yourself back to 80% with **Holy Light** or **Flash of Light**, drink below a quarter of your mana.
+
+## Why this rotation
+
+The Shockadin leveling build is a two-handed Retribution paladin with Holy's **Improved Seals** and **Divine Strength**; despite the name it takes no **Holy Shock**. It plays the Holy leveling list, so **Blessing of Wisdom**, no **Consecration**, and from level 20 **Seal of Command** as your seal.
+
+**Why it works**
+
+- The fight lab's Holy list uses **Seal of Command** once you have it (level 20; **Seal of Righteousness** before): it adds a Holy hit of 70% of your weapon damage on some swings, so a slow two-hander suits it, and its judgement hits a stunned mob twice as hard. When **Hammer of Justice** and **Judgement** are both ready and the mob has more than 30% health, stun first, then judge.
+- **Judgement** and **Holy Strike** whenever ready: **Improved Judgement** (levels 15-16) brings **Judgement** back every 8 seconds, and **Sanctified Judgement** (21-23) returns 60% of your seal's mana cost each time. In the open search it is the build's most valuable talent at 60 (about 3 seconds per kill), ahead of **Improved Seals** (38-40) and **Two-Handed Weapon Specialization** (30-32).
+- No **Consecration** and no **Hammer of Wrath**: the Holy list never casts **Consecration**, and its tuned rules skip **Hammer of Wrath** (about 1% faster kills).
+- Heal in the fight once you drop below 40% health and the mob has more than a fifth left: **Divine Protection** below 30%, **Hammer of Justice**, then **Holy Light**; **Flash of Light** below a quarter, **Lay on Hands** below 15%.
+
+**Caveats**
+
+- This build takes neither **Holy Shock** nor **Divine Favor**: skip those lines.
+- Drink below a quarter of your mana (the Holy list's rule); between fights heal back to 80% with **Holy Light** or **Flash of Light**.
+- Undead and Demons: **Exorcism** hits them hard; the fight lab has no such mobs, so it was not measured.
+
+**When to change it**
+
+- A mob that casts spells: **Hammer of Justice** stops the cast.
+- Two or more mobs: **Consecration** hits them all; the Holy list was not measured on several mobs with this build.
 
 ## Talents while leveling
 

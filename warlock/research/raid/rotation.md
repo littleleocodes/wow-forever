@@ -258,7 +258,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`shadow-bolt-hybrid-fire-open-raid`](builds/shadow-bolt-hybrid-fire-open-raid.md) (ours: hand draft, 618 DPS), *DS/Ruin* (community simulator, 578 DPS), *Demonic Pact 2/31/18* (community simulator, 509 DPS), *Affliction* (community simulator, 507 DPS), *Demonic Pact* (community simulator, 503 DPS)
+### [`shadow-bolt-hybrid-fire-open-raid`](builds/shadow-bolt-hybrid-fire-open-raid.md) (ours: derived (open search), 618 DPS), *DS/Ruin* (community simulator, 578 DPS), *Demonic Pact 2/31/18* (community simulator, 509 DPS), *Affliction* (community simulator, 507 DPS), *Demonic Pact* (community simulator, 503 DPS)
 
 Before the pull: at -1.5s: cast Life Tap.
 
@@ -392,7 +392,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`shadow-bolt-hybrid-open-raid`](builds/shadow-bolt-hybrid-open-raid.md) (ours: hand draft, 641 DPS)
+### [`shadow-bolt-hybrid-open-raid`](builds/shadow-bolt-hybrid-open-raid.md) (ours: derived (open search), 641 DPS)
 
 Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 
@@ -485,7 +485,7 @@ Damage by ability:
 | Immolate | 11% | 11% | 14% |
 | Searing Pain | 0% | 0% | 0% |
 
-### [`destruction-ml-raid`](builds/destruction-ml-raid.md) (ours: hand draft, 627 DPS), *Shadow and Flame 13/11/27* (community simulator, 549 DPS)
+### [`destruction-ml-raid`](builds/destruction-ml-raid.md) (ours: derived (ML search), 627 DPS), *Shadow and Flame 13/11/27* (community simulator, 549 DPS)
 
 Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 
@@ -597,7 +597,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`demonology-pact-raid`](builds/demonology-pact-raid.md) (ours: hand draft, 702 DPS), [`demonology-ml-raid`](builds/demonology-ml-raid.md) (ours: hand draft, 700 DPS), *Demonic Pact 2/31/18* (community simulator, 678 DPS), *Demonic Pact* (community simulator, 670 DPS)
+### [`demonology-pact-raid`](builds/demonology-pact-raid.md) (ours: hand draft, 702 DPS), [`demonology-ml-raid`](builds/demonology-ml-raid.md) (ours: derived (ML search), 700 DPS), *Demonic Pact 2/31/18* (community simulator, 678 DPS), *Demonic Pact* (community simulator, 670 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | [`demonology-pact-raid`](builds/demonology-pact-raid.md) casts/min | [`demonology-ml-raid`](builds/demonology-ml-raid.md) casts/min | *Demonic Pact 2/31/18* casts/min | *Demonic Pact* casts/min |
 |---|---|---|---|---|---|

@@ -2,11 +2,12 @@
 
 Reads `<class>/research/talents/forever/proposed-builds.json` (the `opt-*` builds) and the optimizer reports, and writes the
 `## Optimizer (stats model)` section of each scenario README: the leveling and solo rows into `<class>/research/leveling/README.md`, the
-raid, tank and healer rows into `<class>/research/raid/README.md` (2026-09-27 layout, paths.py). The use-case rows and the findings
-prose live in this file (they are editorial); the splits and scores are read from the data.
+raid, tank and healer rows into `<class>/research/raid/README.md` (2026-09-27 layout, paths.py). The use-case rows live in this file
+(they are editorial); the splits, scores and findings are read from the data (findings generated since 2026-10-15).
 
     python _reference/data/render_optimizer_sections.py [class ...]
 """
+import functools
 import json
 import re
 import sys
@@ -86,30 +87,41 @@ ROWS = {
     ],
 }
 
-# Model claims with no community precedent - to be tested in the beta (level cap 30) or at launch.
-HYPOTHESES = {
-    "hunter": "Lone Wolf's +20% (the raid comparison rests on it); Deadly Aspects' proc rate; pet threat scaling (pet_dmg_to_surv 0.3).",
-    "mage": "The AoE build keeping Shatter 3 + Fingers of Frost 2 and dropping Improved Cone of Cold; the ~9 h Frost-over-Fire leveling gap assumes equal talentless baselines; Arcane Meditation at 17%/rank.",
-    "warrior": "Values of the new talents (Bloodthrill, Spearing Strike, Weaponmaster, Bastion, Vitality); dual-wield vs two-hander leveling assumes equal talentless baselines; Unbridled Wrath at 60%.",
-    "rogue": "The Mutilate-over-swords margin (+92% vs +57%) and Restless Blades' cooldown maths; daggers vs swords leveling assumes equal talentless baselines.",
-    "priest": "Penance, Renewed Hope and Devouring Contagion numbers; Blackout's stun value while leveling; Meditation at its Forever value.",
-    "paladin": "Twist of Light's seal-twisting proc (valued at +6% pending mechanics); Holy Strike and Seal of Fury numbers; whether Forever paladins get a taunt; Champion of the Light's Intellect scaling.",
-    "shaman": "Water Shield's globe rate (encoded as ~+18% healer mana); Maelstrom Weapon's stack chance; Enhancement vs Elemental leveling assumes equal talentless baselines.",
-    "warlock": "Fire Destruction's +164% is against its own baseline, not comparable to Shadow; Drain Hope and Soul Siphon numbers; Demonic Pact keeping Demonic Sacrifice.",
-    "druid": "Balance vs Cat leveling assumes equal talentless baselines (Classic favours Cat); King of the Jungle, Berserk and Rend and Tear values; Wild Growth and Gift of the Earthmother throughput.",
-}
+# 2026-10-15 page audit B6: the "Model findings" and "Beta hypotheses" prose was hand-written in September (HYPOTHESES, FINDINGS) and
+# named builds, splits and talents the trees no longer have (Vitality, King of the Jungle, Restless Blades, Drain Hope). The findings
+# are now generated from each optimizer build (its split and the talents whose removal costs the most score, as written into its `core`
+# by scorer/run.py --export) and the hand draft's split; the hypotheses point to the builds' open questions (launch checklist).
 
-FINDINGS = {
-    "hunter": "Improved Tracking beats Ferocity per point everywhere; Endurance Training is worth ~0.2%/rank of leveling time; with the raid mana weight raised for hunters (they run dry on long fights), Efficiency is back in the raid build (12/34/5); Lone Wolf edges the pet build in raids (absolute DPS index 1.96 vs 1.88) if its +20% is real.",
-    "mage": "Arcane Meditation (17%/rank) pulls every build 15+ points into Arcane; raid Frost is Shatter + Fingers of Frost with no Winter's Chill; Frost still out-levels Fire (+43% vs +31% time saved). The AoE build now follows the Classic AoE loop (Improved Frost Nova 15-16, Permafrost, Improved Blizzard 20-22, Arctic Reach, Cold Snap, Ice Block, Ice Barrier at 40, no Frostbite) and keeps Shatter/Fingers of Frost because Forever's versions are stronger.",
-    "warrior": "Dual-wield Fury 18/33/0 and two-hander Fury 19/32/0 score within 2% of each other and both beat the Arms draft; Bloodthirst, Flurry, Enrage, Unbridled Wrath and Anger Management are the raid core in every DPS build. Protection 6/5/40 takes the deep Protection rows (Vitality, Focused Rage, Bastion, Shield Slam) plus Anticipation/Improved Shield Wall now that defense and armor are priced from their arithmetic.",
-    "rogue": "Mutilate daggers 33/16/2 (+92%) beat Combat swords 19/32/0 (+57%) by a wide margin: Seal Fate, Lethality, Improved Poisons and Cold Blood all feed Mutilate. Dagger leveling is 21/28/2 (Combat's Hack and Slash, Restless Blades and Riposte); Adrenaline Rush stays core for swords.",
-    "priest": "Healer 22/29/0: Discipline's Twin Disciplines, Mental Strength and Penance pair with Holy's Divine Fury, Inspiration, Holy Specialization and Spiritual Healing. Shadow raid 20/0/31 leans on Shadow Weaving, Darkness and Devouring Contagion; leveling Shadow 14/0/37 keeps Spirit Tap and Blackout (now priced as a leveling stun).",
-    "paladin": "Retribution raid 10/8/33 matches the hand draft's split (Seal of Command, Vengeance, Champion of the Light, Twist of Light, Two-Handed Weapon Specialization). The healer 23/0/28 spends its second half in Retribution (Champion of the Light, Conviction, Benediction, Sanctified Judgement) rather than Protection. Protection 2/31/18 is Holy Shield, Iron Creed and Templar's Bulwark plus Retribution threat (Conviction, Deflection, Crusade).",
-    "shaman": "Restoration 0/10/41: Water Shield and Riptide are the new core and Enhancement's Thundering Strikes crits heals. Elemental 31/6/14 adds Lava Burst, Lightning Overload and Elemental Alacrity with Tidal Focus/Water Shield for mana. Enhancement 19/32/0 (Stormstrike, Maelstrom Weapon, Flurry, Elemental Weapons) takes Elemental's shock talents; leveling Enhancement goes 0/34/17 for Water Shield.",
-    "warlock": "The Shadow Bolt raid build is 10/11/30: Demonic Sacrifice plus 30 Destruction for Conflagrate → Shadow and Flame (+10% Shadow), so DS/Ruin survives in a new shape. Affliction 31/11/9 is a real DoT spec (Malevolence, Pandemic, Soul Siphon, Drain Hope) with Demonic Sacrifice. Fire Destruction 9/11/31 (Aftermath, Conflagrate, Fire and Brimstone, Incinerate) scores +164% against its own baseline; leveling stays Affliction with a Voidwalker (31/16/4).",
-    "druid": "Restoration 11/5/35 keeps Swiftmend and adds Wild Growth, Gift of the Earthmother and Genesis. Cat 9/35/7 (Rend and Tear, King of the Jungle, Berserk, Natural Instinct) and Bear 9/40/2 (Mangle, Natural Reaction) share Heart of the Wild, Predatory Strikes and Leader of the Pack. Balance 38/0/13 gets Eclipse, Nature's Grace and Vengeance; Cat leveling goes 0/35/16.",
-}
+
+@functools.lru_cache(maxsize=None)
+def current_talents(cls):
+    """Every talent name of the class's current Forever trees (forever-talents/<class>.json)."""
+    d = json.load(open(paths.ROOT / "_reference/data/forever-talents" / f"{cls}.json", encoding="utf-8"))
+    return {t["name"] for tr in d["trees"] for t in tr["talents"]}
+
+
+def split_of(b, trees):
+    return "/".join(str(sum(p for t, p in b["allocation"].get(t, []))) for t in trees)
+
+
+def findings(cls, rows, fb, trees):
+    """One generated line per use-case row: the optimizer build's split, its biggest talents by score lost when removed, the hand draft."""
+    out = []
+    have = current_talents(cls)
+    for label, spec, prof, draft in rows:
+        b = fb.get(f"opt-{spec}-{prof}")
+        if not b:
+            continue
+        top = []
+        for c in b.get("core") or []:
+            name = c.get("talent") if isinstance(c, dict) else None
+            m = re.search(r"costs ([\d.]+) points", (c.get("why") or "") if isinstance(c, dict) else "")
+            if name in have and m:
+                top.append(f"{name} ({m.group(1)})")
+        d = fb.get(draft)
+        out.append(f"- **{label}:** {split_of(b, trees)}" + (f"; biggest talents by score lost when removed: {', '.join(top[:5])}" if top else "")
+                   + (f"; the hand draft `{draft}` is {split_of(d, trees)}" if d else "") + ".")
+    return out
 
 
 def section(cls, scenario):
@@ -140,9 +152,11 @@ def section(cls, scenario):
         order = " with order" if b.get("order") else ""
         draft_cell = f"[{draft}]({paths.rel(readme, paths.build_page('forever', cls, fb[draft]))})" if draft in fb else "—"
         lines.append(f"| {label} | {spec} | [{split}{order}]({paths.rel(readme, paths.build_page('forever', cls, b))}) ({score}) | {draft_cell} |")
-    lines += ["", "Model findings: " + FINDINGS[cls], "",
-              "Beta hypotheses (model claims without community precedent, unverified): " + HYPOTHESES[cls]
-              + f" Level-30 checks: [`_reference/beta-checklist.md`]({paths.rel(readme, paths.ROOT / '_reference/beta-checklist.md')}).", ""]
+    lines += ["", "Model findings (generated from the optimizer builds; scores are within each spec model, never across models):", ""]
+    lines += findings(cls, rows, fb, trees)
+    lines += ["", "Beta hypotheses: every build's unverified claims are its `open_questions`, collected in "
+              f"[`_reference/launch-checklist.md`]({paths.rel(readme, paths.ROOT / '_reference/launch-checklist.md')}); level-30 checks: "
+              f"[`_reference/beta-checklist.md`]({paths.rel(readme, paths.ROOT / '_reference/beta-checklist.md')}).", ""]
     return "\n".join(lines)
 
 

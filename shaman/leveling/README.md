@@ -6,10 +6,10 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
-| 1 | [Enhancement](enhancement.md) — Enhancement — Leveling 🔬 | 32 | fastest |
-| 2 | [Elemental-Enhancement](elemental-enhancement.md) — Elemental-Enhancement — Leveling 🔬 | 38 | +20% |
-| 3 | [Elemental](elemental.md) — Elemental (optimized) | 38 | +21% |
-| 4 | [Restoration](restoration.md) — Restoration — Leveling into the raid build 🔬 | 43 | +36% |
+| 1 | [Enhancement](enhancement.md) 🔬 | 32 | fastest |
+| 2 | [Elemental-Enhancement](elemental-enhancement.md) 🔬 | 38 | +20% |
+| 3 | [Elemental](elemental.md) (optimized) | 39 | +24% |
+| 4 | [Restoration](restoration.md) — Leveling into the raid build 🔬 | 45 | +42% |
 
 🔬 = a derived build (searched in a simulator). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 

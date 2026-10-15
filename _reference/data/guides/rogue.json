@@ -25,23 +25,23 @@
      "combat-swords-raid": "0f13285f52c7",
      "combat-daggers-raid": "99ffbf54f283"
     },
-    "written": "2026-10-09"
+    "written": "2026-10-15"
    },
    "leveling": {
     "plan": "Combat levels on short fights: open with **Garrote** from stealth, build 5 points with **Sinister Strike**, finish with **Eviscerate**, and let **Riposte**, your poisons and two swords do the rest. A fight lasts about 10 to 18 seconds in the fight lab, too short for **Slice and Dice** or **Cheap Shot** to pay.",
     "why": [
-     "Open with **Garrote** from stealth behind the mob: a combo point and an 18-second bleed, about a tenth of your damage at 60. The fight lab measured a **Cheap Shot** opener about 9% slower per kill: it gives 2 points and a stun but no damage, for 60 energy.",
+     "Open with **Garrote** from stealth behind the mob: a combo point and an 18-second bleed, about a tenth of your damage at 60. The fight lab measured a **Cheap Shot** opener about 8.5% slower per kill: it gives 2 points and a stun but no damage, for 60 energy.",
      "**Sinister Strike** builds to 5 points and **Eviscerate** finishes; **Improved Sinister Strike** and **Flawless Execution** cut them to 40 and 25 energy. Cast **Eviscerate** earlier when it would kill the mob, because points left on a dead mob are lost.",
      "**Riposte** lights up after you parry: 10 energy for 150% weapon damage and a 6-second disarm. It is your cheapest hit, so press it as soon as it lights up.",
-     "**Blade Flurry** (20% attack speed) and **Adrenaline Rush** (double energy) last 15 seconds, about one fight: use them at the start of a fight whenever they are ready. **Cold Blood** goes right before an **Eviscerate** at 5 points; otherwise your next **Sinister Strike** uses it up.",
-     "Skip **Slice and Dice**: in fights this short it does not pay back its 25 energy and the points it takes from **Eviscerate**. The fight lab measured leveling without it 1 to 1.5% faster per kill.",
+     "**Blade Flurry** (level 50; 20% attack speed) and **Adrenaline Rush** (level 56; double energy) last 15 seconds, about one fight: use them at the start of a fight whenever they are ready. **Cold Blood** (level 41) goes right before an **Eviscerate** at 5 points; otherwise your next **Sinister Strike** uses it up.",
+     "Skip **Slice and Dice**: in fights this short it does not pay back its 25 energy and the points it takes from **Eviscerate**. The fight lab measured leveling without it about 1% faster per kill.",
      "Pull the next mob within 20 seconds of a kill: **Remorseless Attacks** gives your next **Sinister Strike** 40% more crit chance."
     ],
     "caveats": [
-     "The list leaves out **Kidney Shot**, but the fight lab has not measured it fairly yet: keep it for an add or a pull that goes wrong.",
-     "With swords, kicking every caster measured slightly slower (under 1% per kill): **Kick** only the spells that would hurt.",
-     "On a pull of two, **Blade Flurry** hits both mobs: in the fight lab's two-mob pulls it was worth about 9% per kill.",
-     "Eat only below 40% health and bandage below 60%: the fight lab measured eating that late about 4% faster than eating at 65%."
+     "**Kidney Shot** is not in the list: the tuned rules never cast it (about 1.3% faster per kill). Keep it for an add or a pull that goes wrong.",
+     "With swords the tuned rules never **Kick** (about 0.5 to 0.9% faster per kill): a caster mob that stays back walks in once it has cast.",
+     "On a pull of two, **Blade Flurry** hits both mobs.",
+     "Eat only below 40% health and bandage below 60%: the fight lab measured eating that late about 4.5% faster than eating at 65%."
     ],
     "diverge": [
      "Below half health while the mob still has more than 30% of its health, press **Evasion** (50% more dodge for 15 seconds).",
@@ -49,11 +49,11 @@
      "If a pull goes wrong, **Gouge**, **Kidney Shot**, **Vanish** and **Sprint** get you out; the fight lab does not model adds or escapes."
     ],
     "rotations": {
-     "leveling:combat-swords-raid": "a47d41b0bf59",
-     "leveling:combat-daggers-raid": "e9b7f8dbecaf",
+     "leveling:combat-swords-raid": "22338ce5f5c1",
+     "leveling:combat-daggers-raid": "2fa9057d0bed",
      "leveling:subtlety-leveling": "6745eb765e3c"
     },
-    "written": "2026-10-09"
+    "written": "2026-10-15"
    }
   },
   "Assassination": {
@@ -77,9 +77,9 @@
      "If no warrior keeps Sunder Armor on the target (a small group or a dungeon), keep **Expose Armor** up with 4 or more points, refreshing it before it runs out. On the training dummy, where nothing else lowers armor, the simulator measured that about 9% better."
     ],
     "rotations": {
-     "assassination-raid": "d157d5eb17a2"
+     "assassination-raid": "f681c6caf5d3"
     },
-    "written": "2026-10-09"
+    "written": "2026-10-15"
    },
    "leveling": {
     "plan": "Assassination levels with two daggers but plays like Combat: **Garrote** from stealth, **Sinister Strike** to 5 points, **Eviscerate**. **Seal Fate** and the poison talents are what set it apart.",
@@ -89,10 +89,10 @@
      "**Seal Fate** turns every **Sinister Strike** crit into 2 points, and **Malice**, **Lethality** and **Remorseless Attacks** make those crits frequent and big. Pull the next mob within 20 seconds of a kill so the 40% crit chance from **Remorseless Attacks** is not wasted.",
      "**Eviscerate** at 5 points, or earlier when it would kill the mob: points left on a dead mob are lost. Press **Cold Blood** right before an **Eviscerate** at 5 points; otherwise your next **Sinister Strike** uses it up.",
      "Keep **Instant Poison** on the main hand and **Deadly Poison** on the off hand: every weapon strike can apply them, and this build maxes **Improved Poisons** and **Vile Poisons**.",
-     "Skip **Slice and Dice**: fights end before it pays back, and the fight lab measured leveling without it about 3% faster per kill with daggers."
+     "Skip **Slice and Dice**: fights end before it pays back, and the fight lab measured leveling without it about 1% faster per kill with daggers."
     ],
     "caveats": [
-     "The list leaves out **Kidney Shot**, but the fight lab has not measured it fairly yet: keep it for an add or a pull that goes wrong.",
+     "**Kidney Shot** is not in the list: the tuned rules never cast it (about 1.3% faster per kill). Keep it for an add or a pull that goes wrong.",
      "This build has no **Blade Flurry** or **Adrenaline Rush**: **Evasion** is your only cooldown when a pull goes wrong.",
      "Eat only below 40% health and bandage below 60%: the fight lab measured eating that late about 4% faster than eating at 65%."
     ],
@@ -101,11 +101,11 @@
      "In a dungeon, where the tank holds the mob, stand behind it and build with **Backstab** as the raid list does; the fight lab only plays solo."
     ],
     "rotations": {
-     "leveling:combat-swords-raid": "a47d41b0bf59",
-     "leveling:combat-daggers-raid": "e9b7f8dbecaf",
+     "leveling:combat-swords-raid": "22338ce5f5c1",
+     "leveling:combat-daggers-raid": "2fa9057d0bed",
      "leveling:subtlety-leveling": "6745eb765e3c"
     },
-    "written": "2026-10-09"
+    "written": "2026-10-15"
    }
   },
   "Subtlety": {
@@ -131,9 +131,9 @@
      "The simulator starts every fight out of stealth. In the game you can start in **Stealth** and open with **Premeditation** and **Garrote** at the pull; that opener was not simulated."
     ],
     "rotations": {
-     "subtlety-raid": "b49bd7646ba2"
+     "subtlety-raid": "7d764d235cf7"
     },
-    "written": "2026-10-09"
+    "written": "2026-10-15"
    },
    "leveling": {
     "plan": "Subtlety levels on its openers and on dodges: **Premeditation** and a stealth opener put up to 4 points on the mob, one builder makes 5, and **Eviscerate** ends most fights. **Ghostly Strike** and **Setup** turn the mob's dodged swings into combo points.",
@@ -143,7 +143,7 @@
      "This build has no **Hemorrhage**, so **Sinister Strike** builds your points all the way (40 energy with **Improved Sinister Strike**). **Ghostly Strike** goes in on its 20-second cooldown once you have it: 180% weapon damage with a dagger and 15% more dodge for 7 seconds.",
      "With **Setup**, every dodge adds a combo point, so **Ghostly Strike**, **Lightning Reflexes** and **Evasion** also build points.",
      "At 5 points, wait for the energy for **Eviscerate** rather than press a builder whose point would be lost. Cast **Eviscerate** earlier when it would kill the mob: points left on a dead mob are lost.",
-     "Skip **Slice and Dice**: the fight lab measured leveling without it about 3% faster per kill. **Kidney Shot** is not measured fairly yet: keep it for a pull that goes wrong."
+     "Skip **Slice and Dice**: the fight lab measured leveling without it about 3% faster per kill. **Kidney Shot** is not in the list: the tuned rules never cast it (about 1.3% faster per kill). Keep it for an add or a pull that goes wrong."
     ],
     "caveats": [
      "**Ambush** needs a dagger in your main hand and you behind the mob, and **Ghostly Strike** hits much harder with a dagger: keep daggers in both hands.",
@@ -156,11 +156,11 @@
      "If a pull goes wrong, **Vanish** (90 seconds shorter with **Elusiveness**) gets you out; the fight lab does not model adds or escapes."
     ],
     "rotations": {
-     "leveling:combat-swords-raid": "a47d41b0bf59",
-     "leveling:combat-daggers-raid": "e9b7f8dbecaf",
+     "leveling:combat-swords-raid": "22338ce5f5c1",
+     "leveling:combat-daggers-raid": "2fa9057d0bed",
      "leveling:subtlety-leveling": "6745eb765e3c"
     },
-    "written": "2026-10-09"
+    "written": "2026-10-15"
    }
   },
   "Hybrid Assassination/Combat": {
@@ -171,11 +171,11 @@
      "Open with **Garrote** from stealth: with **Initiative** it gives 2 points, plus an 18-second bleed. The fight lab measured a **Cheap Shot** opener about 10% slower per kill: a stun deals no damage.",
      "**Setup** adds a combo point every time you dodge; the fight lab measured it the most valuable talent of this build, about 1.8 seconds per kill at 60. **Riposte** after a parry is your cheapest hit (10 energy for 150% weapon damage).",
      "**Eviscerate** at 5 points, or earlier when it would kill the mob. At 5 points **Relentless Strikes** always refunds 25 energy and **Ruthlessness** often adds a point back; press **Cold Blood** right before an **Eviscerate**, since your next **Sinister Strike** would use it up otherwise.",
-     "Skip **Slice and Dice**: the fight lab measured leveling without it about 3% faster per kill. **Kidney Shot** is not measured fairly yet: keep it for a pull that goes wrong.",
+     "Skip **Slice and Dice**: the fight lab measured leveling without it about 1% faster per kill with daggers. **Kidney Shot** is not in the list: the tuned rules never cast it (about 1.3% faster per kill). Keep it for an add or a pull that goes wrong.",
      "Pull the next mob within 20 seconds of a kill: **Remorseless Attacks** gives your next **Sinister Strike** 40% more crit chance."
     ],
     "caveats": [
-     "**Improved Ambush**, **Camouflage** and **Master of Deception** are only there to reach **Initiative**: this list never opens with **Ambush**, and the fight lab measured all three at zero.",
+     "**Improved Ambush** and **Camouflage** are only there to reach **Initiative**: this list never opens with **Ambush**.",
      "This build has no **Blade Flurry** or **Adrenaline Rush**: **Evasion** is your only cooldown for a bad pull.",
      "Eat only below 40% health and bandage below 60%: the fight lab measured eating that late about 4% faster than eating at 65%."
     ],
@@ -184,11 +184,36 @@
      "In a dungeon, where the tank holds the mob, stand behind it and build with **Backstab**; the fight lab only plays solo."
     ],
     "rotations": {
-     "leveling:combat-swords-raid": "a47d41b0bf59",
-     "leveling:combat-daggers-raid": "e9b7f8dbecaf",
+     "leveling:combat-swords-raid": "22338ce5f5c1",
+     "leveling:combat-daggers-raid": "2fa9057d0bed",
      "leveling:subtlety-leveling": "6745eb765e3c"
     },
-    "written": "2026-10-09"
+    "written": "2026-10-15"
+   },
+   "raid": {
+    "plan": "Daggers (split) plays the Assassination raid list with Combat's dagger talents: keep **Slice and Dice** up, spend 4 or more combo points on **Eviscerate**, and build with **Mutilate**. **Cold Blood** and **Blade Flurry** are your cooldowns. It has no **Seal Fate**: your points come from **Mutilate**, **Ruthlessness** and **Puncturing Wounds**.",
+    "why": [
+     "**Slice and Dice** stays up all fight: 30% more attack speed, 45% longer with **Improved Slice and Dice**. Put it back up the moment it drops, even with 1 combo point.",
+     "**Eviscerate** at 4 or more points while **Slice and Dice** is up (or with 79 or more energy, or in the last 6 seconds): **Mutilate** gives 2 points at once, so waiting for 5 often wastes one. **Relentless Strikes** returns 25 energy for 20% of each finisher's points and **Ruthlessness** adds a point after 60% of them; in a full raid the simulator measured **Relentless Strikes** as this build's most valuable talent (about 7% of its damage).",
+     "**Cold Blood** right before an **Eviscerate** at 4 or more points with **Slice and Dice** up: a sure critical strike on your biggest hit.",
+     "**Mutilate** is your builder and filler: both weapons, 2 combo points, 20% more damage against a poisoned target. **Backstab** costs the same 60 energy and sits below it in the list, so it comes up only when **Mutilate** cannot be cast.",
+     "**Blade Flurry** (20% attack speed for 15 seconds, 2-minute cooldown) with your trinkets while **Slice and Dice** is up. **Hack and Slash** gives you 4% crit with daggers and **Dual Wield Specialization** 25% more off-hand damage.",
+     "Poisons: **Instant Poison** on the main hand, **Deadly Poison** on the off hand, with a sharpening stone on top (Forever lets them stack); **Improved Poisons** raises their chance to land."
+    ],
+    "caveats": [
+     "There is no **Expose Armor** in the list: in a full raid a warrior keeps Sunder Armor on the boss, and the two do not stack.",
+     "**Mutilate** works from the front, **Backstab** only from behind: when the boss turns, keep building with **Mutilate**."
+    ],
+    "diverge": [
+     "In the last 6 seconds, start no **Slice and Dice**: put 4 or more points into **Eviscerate** even with it down; with 1 to 3 points and the boss about to die, an **Eviscerate** still beats keeping them.",
+     "Adds: **Blade Flurry** copies your hits to a second target for its 15 seconds."
+    ],
+    "written": "2026-10-15",
+    "rotations": {
+     "combat-swords-raid": "0f13285f52c7",
+     "combat-daggers-raid": "99ffbf54f283",
+     "assassination-raid": "f681c6caf5d3"
+    }
    }
   },
   "Hybrid Combat/Subtlety": {
@@ -196,28 +221,28 @@
     "plan": "Combat-Subtlety levels on Subtlety's openers and Combat's defenses: **Premeditation** and **Garrote** start the fight at up to 4 points, **Hemorrhage** builds, **Eviscerate** finishes, and **Setup**, **Ghostly Strike** and **Riposte** turn the mob's swings into combo points and free hits.",
     "why": [
      "From stealth, **Premeditation** adds 2 points (a 2-minute cooldown, so about every fifth pull) and **Initiative** makes your opener add a second one: up to 4 points before your first builder.",
-     "Open with **Ambush** at low levels, where fights are short and its burst wins; from about level 30 **Garrote** is worth more, because its bleed ignores armor. **Dirty Deeds**, from level 31, makes **Garrote** 30 energy and usable from the front.",
-     "**Hemorrhage** is your builder from level 30: 35 energy for 145% weapon damage with a dagger in your main hand (**Sinister Strike** before that). The fight lab measured it worth about 1.3 seconds per kill at 60.",
-     "**Ghostly Strike** goes in on its 20-second cooldown: 180% weapon damage with a dagger and 15% more dodge for 7 seconds. With **Setup** every dodge adds a combo point; the fight lab measured **Setup** the most valuable talent of this build, about 2 seconds per kill.",
+     "Open with **Ambush** at low levels, where fights are short and its burst wins (**Improved Ambush** makes it crit more); once fights last longer, **Garrote** is worth more, because its bleed ignores armor.",
+     "**Hemorrhage** is your builder from level 32: 35 energy for 145% weapon damage with a dagger in your main hand (**Sinister Strike** before that).",
+     "**Ghostly Strike** (level 20) goes in on its 20-second cooldown: 180% weapon damage with a dagger and 15% more dodge for 7 seconds. With **Setup** (levels 15-17) every dodge adds a combo point; the fight lab measured **Setup** the most valuable talent of this build, about 2 seconds per kill at 60.",
      "At 5 points, wait for the energy for **Eviscerate** rather than press a builder whose point would be lost, and cast it earlier when it would kill the mob. At 5 points **Relentless Strikes** always refunds 25 energy and **Ruthlessness** often adds a point back.",
      "**Riposte** after a parry is your cheapest hit: 10 energy for 150% weapon damage and a 6-second disarm."
     ],
     "caveats": [
-     "Skip **Slice and Dice**: the fight lab measured leveling without it about 3% faster per kill. **Kidney Shot** is not measured fairly yet: keep it for a pull that goes wrong.",
+     "Skip **Slice and Dice**: the fight lab measured leveling without it about 3% faster per kill. **Kidney Shot** is not in the list: the tuned rules never cast it (about 1.3% faster per kill). Keep it for an add or a pull that goes wrong.",
      "Keep a dagger in your main hand: **Ambush** needs one, and **Hemorrhage** and **Ghostly Strike** hit much harder with it.",
      "This build has no **Preparation**: when **Evasion** is on cooldown, there is no second one.",
      "Eat below 50% health and bandage below 60%: the fight lab measured eating that late about 4% faster than eating at 65%."
     ],
     "diverge": [
      "Below half health while the mob still has more than 30% of its health, press **Evasion** (50% more dodge for 15 seconds, and with **Setup** more combo points).",
-     "If a pull goes wrong, **Vanish** (90 seconds shorter with **Elusiveness**) gets you out; the fight lab does not model adds or escapes."
+     "If a pull goes wrong, **Vanish** gets you out; the fight lab does not model adds or escapes."
     ],
     "rotations": {
-     "leveling:combat-swords-raid": "a47d41b0bf59",
-     "leveling:combat-daggers-raid": "e9b7f8dbecaf",
+     "leveling:combat-swords-raid": "22338ce5f5c1",
+     "leveling:combat-daggers-raid": "2fa9057d0bed",
      "leveling:subtlety-leveling": "6745eb765e3c"
     },
-    "written": "2026-10-09"
+    "written": "2026-10-15"
    }
   }
  }

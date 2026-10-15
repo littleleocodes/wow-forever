@@ -56,7 +56,7 @@ The Frostfire build the machine-learning talent search found in a full raid (eve
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 4/31/16 | 472 | +0.0% | 630 | -6.7% | 0 s |
 | 2 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 470 | -0.4% | 675 | +0.0% | 0 s |
-| 3 | **[`frostfire-ml-raid`](frostfire-ml-raid.md)** | ours: hand draft | 4/31/16 | 437 | -7.4% | 597 | -11.5% | 1 s |
+| 3 | **[`frostfire-ml-raid`](frostfire-ml-raid.md)** | ours: derived (ML search) | 4/31/16 | 437 | -7.4% | 597 | -11.5% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -117,9 +117,9 @@ The Frostfire build the machine-learning talent search found in a full raid (eve
 | 9 | cast Combustion | 0.3 |
 | 10 | cast Mana Citrine | as ready |
 | 11 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 6.6 |
-| 12 | if time left in the fight ≥ 3s: cast Fireball | 9.7 |
+| 12 | if time left in the fight ≥ 3s: cast Fireball (rank 2) | 9.7 |
 | 13 | cast Robe of the Archmage | as ready |
-| 14 | cast Scorch | 0.2 |
+| 14 | cast Scorch (rank 1) | 0.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Arcane Power (needs the Arcane Power talent); cast Berserking, cast Arcane Missiles (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent).
 

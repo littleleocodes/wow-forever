@@ -46,6 +46,29 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-
 
 *No points.*
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-12 | Arms | Improved Rend | 3 | 3/0/0 |
+| 13-14 | Arms | Deflection | 2 | 5/0/0 |
+| 15-16 | Arms | Improved Overpower | 2 | 7/0/0 |
+| 17-18 | Arms | Improved Charge | 2 | 9/0/0 |
+| 19 | Arms | Improved Tactical Mastery | 1 | 10/0/0 |
+| 20-22 | Arms | Deep Wounds | 3 | 13/0/0 |
+| 23-24 | Arms | Improved Tactical Mastery | 2 | 15/0/0 |
+| 25-27 | Arms | Two-Handed Weapon Specialization | 3 | 18/0/0 |
+| 28-29 | Arms | Impale | 2 | 20/0/0 |
+| 30-34 | Arms | Weaponmaster | 5 | 25/0/0 |
+| 35-38 | Arms | Bloodthrill | 4 | 29/0/0 |
+| 39 | Arms | Sweeping Strikes | 1 | 30/0/0 |
+| 40 | Arms | Mortal Strike | 1 | 31/0/0 |
+| 41-45 | Fury | Cruelty | 5 | 31/5/0 |
+| 46-50 | Fury | Unbridled Wrath | 5 | 31/10/0 |
+| 51-53 | Fury | Blood Craze | 3 | 31/13/0 |
+| 54-55 | Fury | Booming Voice | 2 | 31/15/0 |
+| 56-60 | Fury | Enrage | 5 | 31/20/0 |
+
 ## Core talents (priority order)
 
 1. **Mortal Strike** — Removing it costs 7.2 points of score in this model.
@@ -67,21 +90,22 @@ What this build casts per kill ([report](../fightlab/arms-2h-raid.md), all level
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 2.1 | 3.1 | 5.2 | 5.7 | 6.6 | 38% |
-| Mortal Strike | 0.0 | 0.0 | 2.0 | 2.3 | 2.6 | 22% |
-| Execute | 0.0 | 1.1 | 1.0 | 1.1 | 1.3 | 17% |
-| Rend | 1.1 | 1.2 | 1.1 | 1.1 | 1.1 | 6% |
-| Overpower | 0.6 | 0.7 | 0.8 | 0.9 | 1.1 | 11% |
+| Melee | 2.7 | 4.0 | 5.9 | 5.9 | 6.6 | 38% |
+| Mortal Strike | 0.0 | 0.0 | 2.1 | 2.4 | 2.6 | 22% |
+| Execute | 0.0 | 1.3 | 1.1 | 1.2 | 1.3 | 17% |
+| Rend | 1.2 | 1.2 | 1.1 | 1.1 | 1.1 | 6% |
+| Overpower | 0.3 | 0.4 | 0.9 | 1.0 | 1.1 | 11% |
 | Charge | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
-| Victory Rush | 0.2 | 0.5 | 0.5 | 0.7 | 0.7 | 1% |
-| Bloodrage | 0.3 | 0.3 | 0.3 | 0.3 | 0.4 | 0% |
-| Heroic Strike | 2.0 | 1.6 | 0.1 | 0.2 | 0.2 | 2% |
+| Victory Rush | 0.4 | 0.7 | 0.7 | 0.7 | 0.7 | 1% |
+| Bloodrage | 0.3 | 0.3 | 0.3 | 0.4 | 0.4 | 0% |
+| Heroic Strike | 2.4 | 2.0 | 0.0 | 0.2 | 0.2 | 2% |
 | Battle Shout | 0.1 | 0.1 | 0.1 | 0.1 | 0.2 | 0% |
 
 ## Notes
 
 - Report: warrior/talents/forever/optimizer/arms-2h-raid-leveling-st.md
 - 2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Boundless Rage 2 out; Booming Voice 2 in; to be re-optimized.
+- 2026-10-15 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the arms-2h-raid rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree first 27.0 s per kill; stats model 27.6 s; own tree last 29.8 s.
 
 ## Open questions (verify in the live game)
 

@@ -46,12 +46,18 @@ class Names:
         for i in db.get("itemIcons", []):
             self.consumables.setdefault(i["id"], i["name"])
         self.spells = {s["id"]: s["name"] for s in db.get("spellIcons", [])}
+        self.low_rank = {}
         for book in (ROOT / "_reference/data/forever-spells").glob("*.json"):
             for tab in json.load(open(book, encoding="utf-8")).get("tabs", []):
                 for sp in tab.get("spells", []):
                     for r in sp.get("ranks", []):
                         if r.get("id"):
                             self.spells.setdefault(int(r["id"]), sp["name"])
+                    # 2026-10-15 page audit: a rotation line casting a lower rank (Frostfire Bolt rank 2 below 30% mana) read like the
+                    # top-rank line next to it; cast lines now say "(rank N)" for any rank below the spellbook's highest
+                    rks = [r for r in sp.get("ranks", []) if r.get("id")]
+                    for i, r in enumerate(rks[:-1]):
+                        self.low_rank.setdefault(int(r["id"]), i + 1)
         for tree in (repo / "ui/sim/talents/trees").glob("*.json"):
             for tr in json.load(open(tree, encoding="utf-8")):
                 for t in tr["talents"]:
@@ -182,7 +188,9 @@ def action(a, N, depth=0):
         return "(empty)"
     k, x = next(iter(body.items()))
     if k == "castSpell":
-        txt = f"cast {spell_ref(x.get('spellId'), N)}" + (f" on {x['target'].get('type', '').lower()}" if x.get("target") and x["target"].get("type") not in (None, "Target", "Unknown") else "")
+        sid = (x.get("spellId") or {}).get("spellId")
+        low = getattr(N, "low_rank", {}).get(int(sid)) if sid else None
+        txt = f"cast {spell_ref(x.get('spellId'), N)}" + (f" (rank {low})" if low else "") + (f" on {x['target'].get('type', '').lower()}" if x.get("target") and x["target"].get("type") not in (None, "Target", "Unknown") else "")
     elif k == "channelSpell":   # a channel (Mind Flay, Drain Soul): named like a cast (it printed as "channelSpell" until 2026-09-29)
         txt = f"channel {spell_ref(x.get('spellId'), N)}" + (" (interrupt it when a higher line is ready)" if x.get("interruptIf") else "")
     elif k == "castFriendlySpell":

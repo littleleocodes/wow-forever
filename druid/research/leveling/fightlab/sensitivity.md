@@ -4,30 +4,30 @@
 
 | Assumption | Level | opt-balance-dps-leveling-st time/kill | Best build | opt-balance-dps-leveling-st: −Predatory Strikes | opt-balance-dps-leveling-st: −Savage Fury | opt-balance-dps-leveling-st: −Sharpened Claws |
 |---|---|---|---|---|---|---|
-| baseline | 30 | 51.3s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
-| baseline | 60 | 51.4s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
-| root breaks on 10% of hits | 30 | 51.3s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
-| root breaks on 10% of hits | 60 | 51.4s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
-| root breaks on 40% of hits | 30 | 51.3s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
-| root breaks on 40% of hits | 60 | 51.4s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
-| mobs have 20% less health | 30 | 43.0s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
-| mobs have 20% less health | 60 | 42.2s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
-| mobs have 20% more health | 30 | 60.0s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
-| mobs have 20% more health | 60 | 58.7s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
-| mobs hit 30% harder | 30 | 52.2s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
-| mobs hit 30% harder | 60 | 52.0s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
-| pushback 1.0 s per hit | 30 | 55.3s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
-| pushback 1.0 s per hit | 60 | 55.7s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
-| weapons 20% better (blues) | 30 | 51.3s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
-| weapons 20% better (blues) | 60 | 51.4s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
-| dungeon blues (item database) | 30 | 50.1s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
-| dungeon blues (item database) | 60 | 48.7s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
-| gear stats 20% better | 30 | 50.2s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
-| gear stats 20% better | 60 | 50.1s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
-| no caster mobs | 30 | 53.1s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
-| no caster mobs | 60 | 52.5s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
-| 30% caster mobs | 30 | 49.6s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
-| 30% caster mobs | 60 | 48.6s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
-| 20% of mobs run at 20% health | 30 | 51.1s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
-| 20% of mobs run at 20% health | 60 | 51.2s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| baseline | 30 | 52.9s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| baseline | 60 | 43.0s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| root breaks on 10% of hits | 30 | 52.9s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| root breaks on 10% of hits | 60 | 43.0s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| root breaks on 40% of hits | 30 | 52.9s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| root breaks on 40% of hits | 60 | 43.0s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| mobs have 20% less health | 30 | 43.9s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| mobs have 20% less health | 60 | 36.5s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| mobs have 20% more health | 30 | 60.9s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| mobs have 20% more health | 60 | 49.2s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| mobs hit 30% harder | 30 | 53.7s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| mobs hit 30% harder | 60 | 43.2s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| pushback 1.0 s per hit | 30 | 56.5s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| pushback 1.0 s per hit | 60 | 44.1s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| weapons 20% better (blues) | 30 | 52.9s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| weapons 20% better (blues) | 60 | 43.0s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| dungeon blues (item database) | 30 | 51.7s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| dungeon blues (item database) | 60 | 41.8s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| gear stats 20% better | 30 | 52.2s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| gear stats 20% better | 60 | 42.3s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| no caster mobs | 30 | 55.1s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| no caster mobs | 60 | 43.8s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| 30% caster mobs | 30 | 51.0s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| 30% caster mobs | 60 | 41.3s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| 20% of mobs run at 20% health | 30 | 52.8s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
+| 20% of mobs run at 20% health | 60 | 42.9s (deaths 0.0/100) | opt-balance-dps-leveling-st | - | - | - |
 

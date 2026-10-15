@@ -34,7 +34,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`frost-ml-raid`](builds/frost-ml-raid.md) (ours: hand draft, 602 DPS), [`frost-fingers-of-frost-raid`](builds/frost-fingers-of-frost-raid.md) (ours: hand draft, 598 DPS), [`opt-frost-raid-raid-dps`](builds/opt-frost-raid-raid-dps.md) (ours: optimizer, 597 DPS)
+### [`frost-ml-raid`](builds/frost-ml-raid.md) (ours: derived (ML search), 602 DPS), [`frost-fingers-of-frost-raid`](builds/frost-fingers-of-frost-raid.md) (ours: hand draft, 598 DPS), [`opt-frost-raid-raid-dps`](builds/opt-frost-raid-raid-dps.md) (ours: optimizer, 597 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | [`frost-ml-raid`](builds/frost-ml-raid.md) casts/min | [`frost-fingers-of-frost-raid`](builds/frost-fingers-of-frost-raid.md) casts/min | [`opt-frost-raid-raid-dps`](builds/opt-frost-raid-raid-dps.md) casts/min |
 |---|---|---|---|---|
@@ -56,7 +56,7 @@ Damage by ability:
 | Ice Lance | 19% | 19% | 19% |
 | Fire Blast | 0% | 0% | 0% |
 
-### [`arcane-frost-open-raid`](builds/arcane-frost-open-raid.md) (ours: hand draft, 589 DPS)
+### [`arcane-frost-open-raid`](builds/arcane-frost-open-raid.md) (ours: derived (open search), 589 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | [`arcane-frost-open-raid`](builds/arcane-frost-open-raid.md) casts/min |
 |---|---|---|
@@ -443,7 +443,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`frostfire-raid`](builds/frostfire-raid.md) (ours: hand draft, 472 DPS), [`frostfire-ml-raid`](builds/frostfire-ml-raid.md) (ours: hand draft, 437 DPS)
+### [`frostfire-raid`](builds/frostfire-raid.md) (ours: hand draft, 472 DPS), [`frostfire-ml-raid`](builds/frostfire-ml-raid.md) (ours: derived (ML search), 437 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | [`frostfire-raid`](builds/frostfire-raid.md) casts/min | [`frostfire-ml-raid`](builds/frostfire-ml-raid.md) casts/min |
 |---|---|---|---|

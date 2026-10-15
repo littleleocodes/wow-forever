@@ -1,46 +1,41 @@
 # Paladin — adapting the Classic builds to WoW: Forever
 
-Data: WoW: Forever beta client build 1.60.1.70009, merged 2026-09-25 (`talent-trees.md`; the 2026-09-13 demo snapshot is archived under `_reference/data/raw/`). Spellbook numbers: `../../spells/README.md`. Point-by-point audit of every
-Classic build: `baseline-audit.md`. Proposed builds: `proposed-builds.json` → `builds-README.md`.
+Data: WoW: Forever beta client build 1.60.1.70291, captured 2026-10-08 (`_reference/data/data_build.py`; the trees in
+[talent-trees.md](talent-trees.md)). Spellbook numbers: [spells](../../spells/README.md). Point-by-point audit of every Classic build:
+[baseline-audit.md](baseline-audit.md). Builds: [proposed-builds.json](proposed-builds.json), one page each under
+[leveling/builds](../../leveling/builds/), [raid/builds](../../raid/builds/) and [pvp/builds](../../pvp/builds/). What to play: the
+[leveling](../../../leveling/README.md) and [raid](../../../raid/README.md) player pages.
 
-Paladin has 21 new talents and 13 removals; more importantly the *reasons* behind Classic splits changed:
-Blessing of Kings and Consecration are baseline, blessings last an hour, and Holy Strike / Seal of Fury are new
-baseline abilities the trees are built around. Undead paladins exist.
+The reasons behind Classic's splits changed: Blessing of Kings and Consecration are baseline, blessings last an hour, and Holy Strike
+and Seal of Fury are baseline abilities the trees are built around.
 
 ## What broke
 
-| Classic talent | Forever | Impact on baselines |
+| Classic talent | Forever (build 70291) | Impact on Classic builds |
 |---|---|---|
-| Blessing of Kings (Prot T3), Blessing of Sanctuary (Prot T5) | **Removed** — Kings baseline | The 11-point Protection dip of the Classic healer is pointless |
-| Improved Blessing of Might, Improved Blessing of Wisdom | **Removed** | The 9-point Retribution dip and Holy's Improved Wisdom are gone |
-| Consecration (Holy T3) | **Removed** — baseline | Ret/Prot no longer dip Holy for it |
-| Improved Seal of Righteousness, Improved Lay on Hands, Lasting Judgement | **Removed** | Holy fillers replaced by Improved Seals, Reverence, Voice of Truth, Purifying Power |
-| Improved Seal of the Crusader, Sanctity Aura, Improved Retribution Aura | **Removed** | Ret loses its raid-debuff/aura role; Improved Seals (+15% seals/judgements) and Crusade replace the damage |
+| Blessing of Kings, Blessing of Sanctuary | **Removed**; Kings is baseline | The 11-point Protection dip of the Classic healer is pointless |
+| Improved Blessing of Might, Improved Blessing of Wisdom | **Removed** | The Retribution dip and Holy's Improved Wisdom are gone |
+| Consecration | **Removed**; baseline | Retribution and Protection no longer dip Holy for it |
+| Improved Seal of Righteousness, Improved Lay on Hands, Lasting Judgement | **Removed** | Holy's fillers are now Improved Seals, Reverence, Voice of Truth, Purifying Power |
+| Improved Seal of the Crusader, Sanctity Aura, Improved Retribution Aura | **Removed** | Retribution loses its raid debuff and aura role; Improved Seals (+15% seals and judgements) takes the damage part |
 | Improved Devotion Aura, Improved Concentration Aura | **Removed** | Nothing core lost |
-| Holy Shock | Tier 7 → **tier 5** (1 point); Light's Vigil is the new capstone and requires it | Deep Holy is now about Light's Vigil |
-| Illumination | Requires **Reverence 3** (new regen talent) | 3 extra points on the way |
-| Holy Shield | Requires **Templar's Bulwark** (new 100%-health absorb) | Tank capstone chain |
-| Vengeance | +15% after crit → stacking +1%/rank per non-periodic crit (3 stacks since build 70009); requires Sanctified Judgement 3 | Weaker than the demo's 5 stacks |
-| Reckoning | 5 ranks reworked (8% on block / 20% on crit per rank read) | |
-| Precision | Now hit with **all spells and attacks** (1%/rank) | Ret takes a Protection dip for it |
+| Holy Shock | **Tier 5** (1 point); Light's Vigil and Divine Precision require it | Deep Holy is built around it, but the healer lab's raid pick skips it |
+| Illumination | Requires **Reverence 3** | 3 extra points on the way |
+| Holy Shield | Tier 7; requires **Templar's Bulwark** | The tank capstone chain |
+| Vengeance | Up to 3 stacks of 3% after non-periodic crits; requires Sanctified Judgement 3 | A Retribution chain |
+| Reckoning | 5 ranks: 40% on a block, 100% after a non-periodic crit, once every 1.5 s | |
+| Precision | 3 ranks, 3% hit | Retribution builds take a Protection dip for it |
 
 ## What's new and matters
 
-- **Light's Vigil** (Holy capstone): cooldown-free Holy Shock with a party heal. **Infusion of Light**, **Reverence**, **Divine Precision**, **Voice of Truth**.
-- **Templar's Bulwark**, **Sacred Duty**, **Iron Creed**, **Swift Judgement**, **Improved Seal of Fury** — a real tank tree.
-- **Twist of Light** (Ret capstone, seal twisting, -20% Seal mana), **Sacred Arbiter** (16-pt, +20% Holy Strike), **Champion of the Light**, **Sanctified Judgement**, **Holy Conduit**, **Instrument of Law**; Crusade and Improved Holy Strike were cut in build 70009.
-- **Improved Seals** (Holy T2) — the Improved Seal of the Crusader replacement, and better.
-
-## Decisions made in the proposed builds
-
-1. **Holy healer 31/0/20**: the Protection dip is replaced by a Retribution dip for Benediction / Improved Judgement / Sanctified Judgement.
-2. **Ret DPS 10/8/33**: Improved Seals + Divine Strength from Holy, Precision from Protection, everything else in Retribution including Champion of the Light and Twist of Light.
-3. **Prot tank 13/38/0**: the new Templar's Bulwark → Holy Shield chain with Iron Creed, Sacred Duty, Improved Righteous Fury (Improved Holy Strike's 2 Holy points moved to Divine Strength).
-4. **Shockadin 31/0/20**: same Holy core as the healer with Conviction/Seal of Command from Retribution.
+- **Twist of Light** (Retribution capstone): seals 20% cheaper, and a replaced seal's Echo rides your next swing: seal twisting.
+- **Templar's Bulwark**, **Iron Creed**, **Swift Judgement**, **Improved Seal of Fury**, **Sacred Duty**: a real tank tree.
+- **Sanctified Judgement**, **Holy Conduit**, **Sacred Arbiter**, **Champion of the Light**, **Instrument of Law** (Retribution).
+- **Light's Vigil** (Holy capstone): a cooldown-free Holy Shock that heals a whole party; **Infusion of Light**, **Reverence**,
+  **Divine Precision**, **Voice of Truth**.
 
 ## To verify at launch
 
-- Holy Strike (baseline from 6, 8 ranks, 10s cooldown) and Seal of Fury (7 ranks from 10, absorb with a shield): threat values in play.
-- Judgement of Fury taunts within 10 yards (dev notes); confirm it holds raid bosses.
-- Twist of Light Echo mechanics with Seal of Command.
-- Champion of the Light for healers (21/0/30 variant) vs. deep Holy.
+- Seal twisting: whether every Echo fires on the next swing (the simulator's reading) or only one.
+- Judgement of Fury's taunt on raid bosses.
+- Holy Strike and Seal of Fury threat values in play.

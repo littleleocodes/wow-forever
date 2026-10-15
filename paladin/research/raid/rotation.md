@@ -59,7 +59,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) (ours: optimizer, 533 DPS), [`retribution-ml-raid`](builds/retribution-ml-raid.md) (ours: hand draft, 523 DPS), [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) (ours: hand draft, 509 DPS), *Retribution 9/0/42* (community simulator, 489 DPS)
+### [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) (ours: optimizer, 533 DPS), [`retribution-ml-raid`](builds/retribution-ml-raid.md) (ours: derived (ML search), 523 DPS), [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) (ours: hand draft, 509 DPS), *Retribution 9/0/42* (community simulator, 489 DPS)
 
 Before the pull: at -1.5s: cast Seal of Command.
 
@@ -139,7 +139,7 @@ Our tuned rotation `prot-tank-raid.apl.json` (the simulator's `default.apl.json`
   6. drop: cast Retribution Aura (+1.4%, pass 4)
   7. drop the condition: if health % < 10%: cast Lay on Hands (+0.4%, pass 5)
 
-### [`protection-ml-tank`](builds/protection-ml-tank.md) (ours: hand draft, 419 DPS), [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) (ours: optimizer, 408 DPS), *Protection 0/45/6* (community simulator, 375 DPS), *P4 Prot* (community simulator, 395 DPS), *P5 Prot* (community simulator, 389 DPS)
+### [`protection-ml-tank`](builds/protection-ml-tank.md) (ours: derived (ML search), 419 DPS), [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) (ours: optimizer, 408 DPS), *Protection 0/45/6* (community simulator, 375 DPS), *P4 Prot* (community simulator, 395 DPS), *P5 Prot* (community simulator, 389 DPS)
 
 Before the pull: at -30s: cast Righteous Fury; at -3.5s: cast Seal of Righteousness; at -2s: cast Holy Shield.
 

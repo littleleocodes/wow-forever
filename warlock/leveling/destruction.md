@@ -8,7 +8,7 @@
 
 ## How to play
 
-**Not in this build:** **Incinerate**, **Shadowburn** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+**Not in this build:** **Incinerate**, **Shadow and Flame**, **Shadowburn** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
 
 **Before the fight:** **Demon Skin** (**Demon Armor** from level 20) up, **Summon Voidwalker**. Send the Voidwalker in first and let it hold the mob with **Torment**. Open with **Amplify Curse** whenever it is ready: it makes that fight's **Bane of Agony** 50% stronger.
 
@@ -38,7 +38,7 @@ Destruction levels with the same Voidwalker and Affliction dots as the other spe
 
 **Caveats**
 
-- This build has neither **Incinerate** nor **Shadowburn**: where the steps name **Incinerate**, cast **Shadow Bolt** (the fight lab does), and finish mobs with **Conflagrate** or the wand. The talent search traded **Shadowburn** for a point of **Fire and Brimstone** and measured about 1% faster kills.
+- This build has neither **Incinerate** nor **Shadowburn**: where the steps name **Incinerate**, cast **Shadow Bolt** (the fight lab does), and finish mobs with **Conflagrate** or the wand.
 - Until level 59 you have no **Conflagrate**: you play **Corruption**, **Bane of Agony**, **Siphon Life**, **Immolate**, then **Shadow Bolt** or the wand.
 - When a mob reaches you, cast **Death Coil** if you are hurt and let the Voidwalker take it back with **Torment**: the fight lab measured never casting **Fear** or **Drain Life** about 1% faster each. **Molten Skin** (10% less damage taken) and **Intensity** (casts that resist pushback) make those moments cheaper.
 

@@ -11,7 +11,7 @@ Talentless baseline: 90 h for levels 10-60 under these assumptions.
   - at level 60: **Enhancement**: Thundering Strikes 5, Improved Ghost Wolf 2, Mental Dexterity 3, Shamanistic Focus 1, Improved Lightning Shield 3, Guardian Totems 2, Stormstrike 1, Flurry 5, Mental Quickness 2, Spirit Weapons 1, Anticipation 3, Toughness 5, Rage of the Farseer 1, Ancestral Knowledge 1; **Restoration**: Totemic Focus 5, Tidal Focus 5, Mindfulness 3, Ancestral Healing 1, Improved Healing Wave 1, Mana Tide Totem 1
   - order: 10-14 Thundering Strikes x5, 15-16 Improved Ghost Wolf x2, 17-19 Mental Dexterity x3, 20 Shamanistic Focus, 21-22 Improved Lightning Shield x2, 23-24 Guardian Totems x2, 25 Stormstrike, 26-29 Flurry x4, 30-31 Mental Quickness x2, 32 Flurry, 33 Spirit Weapons, 34 Improved Lightning Shield, 35-37 Anticipation x3, 38-39 Toughness x2, 40 Rage of the Farseer, 41-45 Totemic Focus x5, 46-50 Tidal Focus x5, 51 Ancestral Knowledge, 52-54 Toughness x3, 55-57 Mindfulness x3, 58 Ancestral Healing, 59 Improved Healing Wave, 60 Mana Tide Totem
 
-Total: **62.3 h** (30.8% faster than talentless), 0 respec(s).
+Total: **62.3 h** (30.8% faster than talentless), no respec.
 
 ## Best schedule if you stay in one spec model
 
@@ -22,7 +22,7 @@ Total: **62.3 h** (30.8% faster than talentless), 0 respec(s).
   - at level 60: **Enhancement**: Thundering Strikes 5, Improved Ghost Wolf 2, Mental Dexterity 3, Shamanistic Focus 1, Improved Lightning Shield 3, Guardian Totems 2, Stormstrike 1, Flurry 5, Mental Quickness 2, Spirit Weapons 1, Anticipation 3, Toughness 5, Rage of the Farseer 1, Ancestral Knowledge 1; **Restoration**: Totemic Focus 5, Tidal Focus 5, Mindfulness 3, Ancestral Healing 1, Improved Healing Wave 1, Mana Tide Totem 1
   - order: 10-14 Thundering Strikes x5, 15-16 Improved Ghost Wolf x2, 17-19 Mental Dexterity x3, 20 Shamanistic Focus, 21-22 Improved Lightning Shield x2, 23-24 Guardian Totems x2, 25 Stormstrike, 26-29 Flurry x4, 30-31 Mental Quickness x2, 32 Flurry, 33 Spirit Weapons, 34 Improved Lightning Shield, 35-37 Anticipation x3, 38-39 Toughness x2, 40 Rage of the Farseer, 41-45 Totemic Focus x5, 46-50 Tidal Focus x5, 51 Ancestral Knowledge, 52-54 Toughness x3, 55-57 Mindfulness x3, 58 Ancestral Healing, 59 Improved Healing Wave, 60 Mana Tide Totem
 
-Total: **62.3 h** (30.8% faster than talentless), 0 respec(s).
+Total: **62.3 h** (30.8% faster than talentless), no respec.
 
 ### elemental-dps
 
@@ -31,7 +31,7 @@ Total: **62.3 h** (30.8% faster than talentless), 0 respec(s).
   - at level 60: **Elemental**: Convection 5, Call of Flame 3, Concussion 5, Elemental Focus 1, Elemental Alacrity 3, Call of Thunder 1, Elemental Warding 2, Eye of the Storm 1, Lightning Overload 3, Earthbound 1, Elemental Fury 5, Lava Burst 1; **Enhancement**: Thundering Strikes 5, Improved Ghost Wolf 2, Guardian Totems 2, Earth's Grasp 1, Shamanistic Focus 1, Anticipation 3; **Restoration**: Totemic Focus 5, Mindfulness 1
   - order: 10-14 Convection x5, 15-17 Call of Flame x3, 18-19 Concussion x2, 20 Elemental Focus, 21-23 Elemental Alacrity x3, 24-26 Concussion x3, 27-31 Thundering Strikes x5, 32-33 Improved Ghost Wolf x2, 34-35 Guardian Totems x2, 36 Earth's Grasp, 37 Shamanistic Focus, 38 Call of Thunder, 39 Elemental Warding, 40 Eye of the Storm, 41-43 Lightning Overload x3, 44 Earthbound, 45 Elemental Warding, 46-50 Elemental Fury x5, 51 Lava Burst, 52-54 Anticipation x3, 55-59 Totemic Focus x5, 60 Mindfulness
 
-Total: **78.0 h** (13.3% faster than talentless), 0 respec(s).
+Total: **78.0 h** (13.3% faster than talentless), no respec.
 
 ## Never respec: best single plan
 

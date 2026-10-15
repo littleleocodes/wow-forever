@@ -6,11 +6,11 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
-| 1 | [Shadow Bolt hybrid](shadow-bolt-hybrid.md) — Shadow Bolt hybrid — Leveling 🔬 | 35 | fastest |
-| 2 | [Demonology](demonology.md) — Demonology — Leveling 🔬 | 36 | +1.0% |
-| 3 | [Affliction](affliction.md) — Affliction — Leveling 🔬 | 38 | +6% |
-| 4 | [Destruction](destruction.md) — Destruction — Leveling 🔬 | 39 | +10% |
-| 5 | [Affliction-Demonology](affliction-demonology.md) — Affliction-Demonology — Leveling 🔬 | 40 | +12% |
+| 1 | [Shadow Bolt hybrid](shadow-bolt-hybrid.md) 🔬 | 35 | fastest |
+| 2 | [Demonology](demonology.md) 🔬 | 36 | +1% |
+| 3 | [Affliction](affliction.md) 🔬 | 38 | +6% |
+| 4 | [Destruction](destruction.md) 🔬 | 39 | +10% |
+| 5 | [Affliction-Demonology](affliction-demonology.md) 🔬 | 40 | +12% |
 
 🔬 = a derived build (searched in a simulator). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 

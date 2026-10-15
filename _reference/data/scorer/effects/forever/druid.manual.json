@@ -176,7 +176,7 @@
     ]
   },
   "Improved Wrath": {
-    "note": "-0.1s/rank Wrath cast (parsed) and -10%/rank Wrath mana. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, balance-dps, training dummy): removing it costs 0.6% DPS in the simulator (scorer said 0.2% on the same scale); already within tolerance, raid effects split off unchanged (0.2%). Other modes unchanged.",
+    "note": "-0.1s/rank Wrath cast (parsed) and -10%/rank Wrath mana. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, balance-dps, training dummy): removing it costs 0.6% DPS in the simulator (scorer said 0.2% on the same scale); already within tolerance, raid effects split off unchanged (0.2%). Other modes unchanged. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 5.9% time per kill in the simulator (scorer said 2.2% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (2.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "cast_time",
@@ -227,22 +227,6 @@
       {
         "channel": "cast_time",
         "scope": ["ability:Wrath"],
-        "per_rank": 0.3,
-        "values": [0.3, 0.6, 0.9, 1.2, 1.5],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["balance-dps"]
-      },
-      {
-        "channel": "mana_cost",
-        "scope": ["ability:Wrath"],
-        "per_rank": 0.3,
-        "values": [0.3, 0.6, 0.9, 1.2, 1.5],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["balance-dps"]
-      },
-      {
-        "channel": "cast_time",
-        "scope": ["ability:Wrath"],
         "per_rank": 0.006898,
         "values": [0.006898, 0.013795, 0.020693, 0.027591, 0.034488],
         "modes": ["raid"],
@@ -254,6 +238,22 @@
         "per_rank": 0.003449,
         "values": [0.003449, 0.006897, 0.010346, 0.013796, 0.017244],
         "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Wrath"],
+        "per_rank": 0.3,
+        "values": [0.3, 0.6, 0.9, 1.2, 1.5],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Wrath"],
+        "per_rank": 0.3,
+        "values": [0.3, 0.6, 0.9, 1.2, 1.5],
+        "modes": ["leveling-st", "solo-60"],
         "specs": ["balance-dps"]
       }
     ]
@@ -2423,7 +2423,7 @@
     ]
   },
   "Heart of the Wild": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.1% time per kill in the simulator (scorer said 0.3% on the same scale); leveling-st/solo-60 values scaled x0.38 to match (0.1%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-bear-tank): removing it costs -0.6% DPS in the simulator (scorer said 0.0% on the same scale); already within tolerance, raid effects split off unchanged (0.0%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 0.1% time per kill in the simulator (scorer said 0.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.1%). Other modes unchanged.",
     "effects": [
       {
         "channel": "stat",
@@ -2576,30 +2576,6 @@
       {
         "channel": "stat",
         "scope": ["stat:intellect"],
-        "values": [0.007545, 0.01509, 0.022636, 0.030181, 0.037726],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["balance-dps"]
-      },
-      {
-        "channel": "stat",
-        "scope": ["stat:stamina", "form:bear"],
-        "values": [0.01509, 0.030181, 0.045271, 0.060362, 0.075452],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["balance-dps"]
-      },
-      {
-        "channel": "stat",
-        "scope": ["stat:strength", "form:cat"],
-        "values": [0.007545, 0.01509, 0.022636, 0.030181, 0.037726],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["balance-dps"]
-      },
-      {
-        "channel": "stat",
-        "scope": ["stat:intellect"],
         "values": [0.073188, 0.146377, 0.219565, 0.292753, 0.365941],
         "source": "parsed",
         "modes": ["heal"],
@@ -2692,6 +2668,30 @@
         "source": "parsed",
         "modes": ["tank"],
         "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.007545, 0.01509, 0.022636, 0.030181, 0.037726],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina", "form:bear"],
+        "values": [0.01509, 0.030181, 0.045271, 0.060362, 0.075452],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:strength", "form:cat"],
+        "values": [0.007545, 0.01509, 0.022636, 0.030181, 0.037726],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
       }
     ]
   },
@@ -2816,7 +2816,7 @@
     ]
   },
   "Nature's Majesty": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 2.3% time per kill in the simulator (scorer said 2.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.0%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-bear-tank): removing it costs 2.7% DPS in the simulator (scorer said 1.9% on the same scale); already within tolerance, raid effects split off unchanged (1.9%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 2.2% time per kill in the simulator (scorer said 1.9% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.8%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -2860,14 +2860,6 @@
       {
         "channel": "crit",
         "scope": ["type:melee", "type:spell"],
-        "values": [0.011061, 0.022121],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["balance-dps"]
-      },
-      {
-        "channel": "crit",
-        "scope": ["type:melee", "type:spell"],
         "values": [0.06, 0.12],
         "source": "parsed",
         "modes": ["heal"],
@@ -2896,11 +2888,19 @@
         "source": "parsed",
         "modes": ["tank"],
         "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee", "type:spell"],
+        "values": [0.011061, 0.022121],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
       }
     ]
   },
   "Naturalist": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 4.1% time per kill in the simulator (scorer said 3.7% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.7%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-bear-tank): removing it costs 2.0% DPS in the simulator (scorer said 1.6% on the same scale); already within tolerance, raid effects split off unchanged (1.6%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 3.8% time per kill in the simulator (scorer said 3.4% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -2983,22 +2983,6 @@
       {
         "channel": "dmg",
         "scope": ["all"],
-        "values": [0.007274, 0.014547, 0.021821, 0.029095, 0.036368],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["balance-dps"]
-      },
-      {
-        "channel": "cast_time",
-        "scope": ["ability:Healing Touch"],
-        "values": [0.072737, 0.145474, 0.218211, 0.290948, 0.363685],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["balance-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["all"],
         "values": [0.001458, 0.002919, 0.00438, 0.005844, 0.007308],
         "source": "parsed",
         "modes": ["heal"],
@@ -3059,11 +3043,27 @@
         "source": "parsed",
         "modes": ["tank"],
         "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.007274, 0.014547, 0.021821, 0.029095, 0.036368],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Healing Touch"],
+        "values": [0.072737, 0.145474, 0.218211, 0.290948, 0.363685],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
       }
     ]
   },
   "Moonglow": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 11.0% time per kill in the simulator (scorer said 14.3% on the same scale); leveling-st/solo-60 values scaled x0.67 to match (11.1%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, balance-dps, training dummy): removing it costs 21.3% DPS in the simulator (scorer said 22.1% on the same scale); already within tolerance, raid effects split off unchanged (21.5%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 10.1% time per kill in the simulator (scorer said 9.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (9.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "mana_cost",
@@ -3116,14 +3116,6 @@
       {
         "channel": "mana_cost",
         "scope": ["type:spell"],
-        "values": [0.291743, 0.619955, 0.911698],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["balance-dps"]
-      },
-      {
-        "channel": "mana_cost",
-        "scope": ["type:spell"],
         "values": [0.402662, 0.855657, 1.25832],
         "source": "parsed",
         "modes": ["heal"],
@@ -3135,6 +3127,14 @@
         "values": [0.177989, 0.378226, 0.556216],
         "source": "parsed",
         "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell"],
+        "values": [0.291743, 0.619955, 0.911698],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
         "specs": ["balance-dps"]
       }
     ]
@@ -3271,7 +3271,7 @@
     ]
   },
   "Improved Moonfire": {
-    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, balance-dps, training dummy): removing it costs 3.1% DPS in the simulator (scorer said 3.5% on the same scale); already within tolerance, raid effects split off unchanged (3.5%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, balance-dps, training dummy): removing it costs 3.1% DPS in the simulator (scorer said 3.5% on the same scale); already within tolerance, raid effects split off unchanged (3.5%). Other modes unchanged. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 2.7% time per kill in the simulator (scorer said 1.5% on the same scale); leveling-st/solo-60 values scaled x1.78 to match (2.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -3322,33 +3322,33 @@
       {
         "channel": "dmg",
         "scope": ["ability:Moonfire"],
-        "values": [0.023797, 0.047594],
+        "values": [0.05, 0.1],
         "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
+        "modes": ["raid"],
         "specs": ["balance-dps"]
       },
       {
         "channel": "crit",
         "scope": ["ability:Moonfire"],
-        "values": [0.023797, 0.047594],
+        "values": [0.05, 0.1],
         "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
+        "modes": ["raid"],
         "specs": ["balance-dps"]
       },
       {
         "channel": "dmg",
         "scope": ["ability:Moonfire"],
-        "values": [0.05, 0.1],
+        "values": [0.042255, 0.084509],
         "source": "parsed",
-        "modes": ["raid"],
+        "modes": ["leveling-st", "solo-60"],
         "specs": ["balance-dps"]
       },
       {
         "channel": "crit",
         "scope": ["ability:Moonfire"],
-        "values": [0.05, 0.1],
+        "values": [0.042255, 0.084509],
         "source": "parsed",
-        "modes": ["raid"],
+        "modes": ["leveling-st", "solo-60"],
         "specs": ["balance-dps"]
       }
     ]
@@ -3382,7 +3382,7 @@
     ]
   },
   "Reflection": {
-    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, balance-dps, training dummy): removing it costs 8.7% DPS in the simulator (scorer said 7.6% on the same scale); already within tolerance, raid effects split off unchanged (7.7%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, balance-dps, training dummy): removing it costs 8.7% DPS in the simulator (scorer said 7.6% on the same scale); already within tolerance, raid effects split off unchanged (7.7%). Other modes unchanged. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 3.4% time per kill in the simulator (scorer said 4.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (4.1%). Other modes unchanged.",
     "effects": [
       {
         "channel": "regen",
@@ -3468,14 +3468,6 @@
         "scope": ["all"],
         "values": [0.51, 0.99, 1.5],
         "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["balance-dps"]
-      },
-      {
-        "channel": "regen",
-        "scope": ["all"],
-        "values": [0.51, 0.99, 1.5],
-        "source": "parsed",
         "modes": ["heal"],
         "specs": ["resto-heal"]
       },
@@ -3485,6 +3477,14 @@
         "values": [0.069828, 0.135548, 0.205377],
         "source": "parsed",
         "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.51, 0.99, 1.5],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
         "specs": ["balance-dps"]
       }
     ]

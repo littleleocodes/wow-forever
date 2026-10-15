@@ -2,7 +2,7 @@
 
 [Shaman](../README.md) > [Leveling (solo)](README.md) > Elemental-Enhancement
 
-*A Lightning Bolt caster that dips Enhancement for its passive bonuses.* (a hybrid: Elemental/Enhancement).
+*A Lightning Bolt caster (Call of Thunder, Lightning Overload) that dips Enhancement for its passive bonuses.* (a hybrid: Elemental/Enhancement).
 
 **[Elemental-Enhancement — Leveling](../research/leveling/builds/elemental-enhancement-open-leveling.md)** (22/22/7) — [open the talent tree](https://talentsforever.com/shaman/60/5502311300101-055030301021002-052-6)
 
@@ -25,6 +25,31 @@
 7. Low on health at any point: under 30% drop **Stoneclaw Totem**, under 40% cast **Lesser Healing Wave**.
 
 **Between fights:** Heal back to 80% health (eat if you cannot), drink below a third of your mana.
+
+## Why this rotation
+
+Elemental-Enhancement levels with the Elemental list: **Lightning Bolt** while the mob walks in, then the shocks on cooldown and bolts between them while your mana holds. The Enhancement half turns your Intellect into spell damage and attack power (**Mental Quickness**, **Mental Dexterity**), so your spells and your weapon both hit harder. It has no **Lava Burst** and no **Eye of the Storm**.
+
+**Why it works**
+
+- **Shamanistic Focus** (level 35) makes your shocks and **Lightning Shield** 45% cheaper: at 60 the fight lab measured 5.2 seconds per kill without it, the build's most valuable talent.
+- **Lightning Bolt** while the mob walks in, as long as the cast ends before it reaches you; **Elemental Alacrity** (levels 21-23) cuts its cast by half a second. Once the mob hits you each hit pushes a cast back, and this build has no **Eye of the Storm**: bolt in melee only while you keep the mana for the next shocks.
+- The shocks share one cooldown: **Flame Shock** while it is not ticking and the mob is above 30% health, **Earth Shock** on every other free shock and first whenever it would kill. **Reverberation** (levels 57-58) shortens the shared cooldown by 0.4 seconds.
+- **Mental Quickness** (levels 48-49) adds 30% of your Intellect as spell damage and **Mental Dexterity** (39-41) all of it as attack power; without Mental Quickness the fight lab measured 2.0 seconds more per kill at 60.
+- Before every pull: **Lightning Shield** (**Improved Lightning Shield** from 42), **Rockbiter Weapon** (**Windfury Weapon** from 30), and **Searing Totem** while you have more than half your mana.
+
+**Caveats**
+
+- No **Lava Burst**: skip the step that names it.
+- In the fight lab it takes 38 seconds per kill (levels 20-60): about a fifth slower than Enhancement (32) and level with Elemental (39).
+- This list is for one mob at a time; the fight lab does not model area pulls for this rotation.
+
+**When to change it**
+
+- A nearly dead mob: an instant **Earth Shock** finishes it before another bolt could land.
+- A caster mob that stays back: **Earth Shock** interrupts it and locks that school for 2 seconds, which brings it to you.
+- A bad pull (you under 30% health): **Stoneclaw Totem** taunts the mob onto itself, then heal with **Lesser Healing Wave**.
+- A mob that flees: **Frost Shock** slows it by 50% for 8 seconds (it shares the shock cooldown).
 
 ## Talents while leveling
 

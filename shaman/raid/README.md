@@ -6,11 +6,11 @@
 
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
-| 1 | [Enhancement](enhancement.md) — Enhancement — Raid 🔬 | 727 | best |
-| 2 | [Elemental-Enhancement](elemental-enhancement.md) — Elemental-Enhancement — Raid 🔬 | 690 | -5% |
-| 3 | [Elemental](elemental.md) — Elemental (optimized) | 508 | -30% |
+| 1 | [Enhancement](enhancement.md) 🔬 | 727 | best |
+| 2 | [Elemental-Enhancement](elemental-enhancement.md) 🔬 | 690 | -5% |
+| 3 | [Elemental](elemental.md) — Lightning Overload / Elemental Fury | 515 | -29% |
 
-**Healing**: [Restoration](restoration.md) — Restoration — Raid Healer.
+**Healing**: [Restoration](restoration.md) — Raid Healer.
 
 **By gear tier**: each damage spec with its best talents for each tier, in its own gear (DPS in a full raid; [every class](../../_reference/dps-rankings.md)):
 

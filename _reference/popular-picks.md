@@ -282,10 +282,32 @@ Not tested (the tree could not hold the talent without a larger respec): druid `
 - Consensus we skip: Leader of the Pack (99%, value if added +0.0%, +0.00% per point); Heart of the Wild (96%, value if added +0.0%, +0.01% per point); Berserk (95%, value if added +0.0%, +0.00% per point); Furor (77%, value if added +0.0%, +0.00% per point); Primal Bite (72%, value if added +0.9%, +0.91% per point)
 - Ours, rarely taken: Nature's Focus 5 (3%, value +0.0%)
 
-**`balance-open-leveling`** (leveling, leads Balance; 9,473 site builds lead there; scored as `balance-dps` / `leveling-st`; weakest: Insect Swarm -0.16% per point)
+**`feral-combat-shifting-power-raid`** (raid, leads Feral Combat; 13,774 site builds lead there; scored as `feral-cat-dps` / `raid-dps`; weakest: Improved Shifting Power +0.00% per point)
 
-- Consensus we skip: Nature's Splendor (96%, value if added +3.5%, +3.50% per point); Nature's Reach (94%, value if added +0.0%, +0.00% per point)
-- Ours, rarely taken: Furor 2 (16%, value +0.0%)
+- Consensus we skip: Feral Swiftness (84%, value if added +0.0%, +0.00% per point); Primal Bite (72%, value if added +0.0%, +0.00% per point)
+- Ours, rarely taken: Improved Shifting Power 2 (10%, value +0.0%); Shifting Power 1 (12%, value +0.0%)
+
+**`feral-combat-open-raid`** (raid, leads Feral Combat; 13,774 site builds lead there; scored as `feral-cat-dps` / `raid-dps`; weakest: Improved Shifting Power +0.00% per point)
+
+- Consensus we skip: Feral Charge (92%, value if added +0.0%, +0.01% per point); Feral Swiftness (84%, value if added +0.0%, +0.00% per point); Primal Bite (72%, value if added +0.0%, +0.00% per point)
+- Ours, rarely taken: Nature's Focus 1 (3%, value +0.0%); Improved Shifting Power 2 (10%, value +0.0%); Shifting Power 1 (12%, value +0.0%)
+
+**`balance-open-leveling`** (leveling, leads Balance; 9,473 site builds lead there; scored as `balance-dps` / `leveling-st`; weakest: Insect Swarm -1.14% per point)
+
+- Consensus we skip: Nature's Reach (94%, value if added +0.0%, +0.00% per point)
+
+**`feral-combat-open-leveling`** (leveling, leads Feral Combat; 13,774 site builds lead there; scored as `feral-cat-dps` / `leveling-st`; weakest: Nature's Splendor +0.19% per point)
+
+- Consensus we skip: Feral Charge (92%, value if added +0.0%, +0.00% per point); Furor (77%, value if added +0.0%, +0.00% per point); Primal Bite (72%, value if added +0.0%, +0.00% per point); Shredding Attacks (71%, value if added +0.0%, +0.00% per point)
+- Ours, rarely taken: Improved Wrath 1 (1%, value +0.0%); Nature's Splendor 1 (3%, value +0.2%); Nature's Focus 5 (3%, value +0.0%)
+
+**`restoration-ml-heal`** (raid, leads Restoration; 8,813 site builds lead there; scored as `resto-heal` / `raid-heal`; weakest: Improved Regrowth +0.42% per point)
+
+- Consensus we skip: Gift of the Earthmother (95%, value if added +1.3%, +1.35% per point); Nature's Swiftness (93%, value if added +2.1%, +2.07% per point); Wild Growth (73%, value if added +1.4%, +1.42% per point)
+
+**`restoration-leveling`** (leveling, leads Restoration; 8,813 site builds lead there; scored as no scorer model)
+
+- Consensus we skip: Gift of the Earthmother (95%, value if added -, - per point); Nature's Swiftness (93%, value if added -, - per point); Wild Growth (73%, value if added -, - per point)
 
 ### Hunter
 
@@ -387,10 +409,6 @@ Not tested (the tree could not hold the talent without a larger respec): druid `
 - Consensus we skip: Lacerating Strikes (80%, value if added -, - per point); Deadly Aspects (78%, value if added -, - per point); Survivalist's Discipline (74%, value if added -, - per point)
 - Ours, rarely taken: Trueshot Aura 1 (7%, value -); Improved Stings 3 (8%, value -); Scatter Shot 1 (8%, value -); Improved Concussive Shot 5 (9%, value -)
 
-**`beast-mastery-raid`** (raid, leads Beast Mastery; 10,393 site builds lead there; scored as no scorer model)
-
-- Consensus we skip: Intimidation (97%, value if added -, - per point); Bestial Wrath (88%, value if added -, - per point)
-
 **`survival-raid`** (raid, leads Survival; 19,307 site builds lead there; scored as no scorer model)
 
 - Consensus we skip: Lacerating Strikes (80%, value if added -, - per point)
@@ -423,34 +441,33 @@ Not tested (the tree could not hold the talent without a larger respec): druid `
 
 - Consensus we skip: Trueshot Aura (97%, value if added +0.0%, +0.00% per point); Sniper Shot (81%, value if added +0.0%, +0.00% per point); Hawk Eye (78%, value if added +0.0%, +0.00% per point); Rapid Killing (77%, value if added +0.0%, +0.00% per point)
 
-**`beast-marks-ml-raid`** (raid, leads Beast Mastery; 10,393 site builds lead there; scored as no scorer model)
-
-- Consensus we skip: Bestial Wrath (88%, value if added -, - per point)
-- Ours, rarely taken: Barrage 3 (0%, value -)
-
-**`beast-marks-open-leveling`** (leveling, leads Beast Mastery; 10,393 site builds lead there; scored as `bm-leveling` / `leveling-st`; weakest: Frenzy +0.73% per point)
-
-- Consensus we skip: Bestial Swiftness (99%, value if added +0.0%, +0.00% per point); Intimidation (97%, value if added +0.0%, +0.00% per point); Bestial Wrath (88%, value if added +1.6%, +1.57% per point)
-
-**`beast-survival-open-leveling`** (leveling, leads Survival; 19,307 site builds lead there; scored as `bm-leveling` / `leveling-st`; weakest: Lethal Attacks +0.89% per point)
-
-- Consensus we skip: Strider Kick (94%, value if added +6.9%, +6.94% per point); Expose Prey (89%, value if added +1.7%, +0.83% per point); Lightning Reflexes (87%, value if added +20.2%, +4.05% per point); Lacerating Strikes (80%, value if added +1.5%, +1.55% per point)
-- Ours, rarely taken: Bestial Discipline 2 (2%, value +2.3%); Ferocity 4 (6%, value +6.5%); Endurance Training 5 (13%, value +4.7%); Summon Hawk 1 (17%, value +27.6%); Unleashed Fury 5 (20%, value +17.5%)
-
 **`marksmanship-with-a-pet-open-raid`** (raid, leads Marksmanship; 10,763 site builds lead there; scored as `mm-raid` / `raid-dps`; weakest: Improved Arcane Shot +0.00% per point)
 
 - Consensus we skip: Hawk Eye (78%, value if added +0.0%, +0.01% per point); Lone Wolf (71%, value if added +0.0%, +0.00% per point)
 - Ours, rarely taken: Focused Fire 2 (16%, value +6.6%)
 
-**`beast-marks-open-raid`** (raid, leads Beast Mastery; 10,393 site builds lead there; scored as no scorer model)
-
-- Consensus we skip: Bestial Swiftness (99%, value if added -, - per point); Intimidation (97%, value if added -, - per point); Summon Hawk (92%, value if added -, - per point); Bestial Wrath (88%, value if added -, - per point)
-- Ours, rarely taken: Improved Arcane Shot 3 (7%, value -)
-
 **`beast-survival-open-raid`** (raid, leads Survival; 19,307 site builds lead there; scored as no scorer model)
 
 - Consensus we skip: Lightning Reflexes (87%, value if added -, - per point); Resourcefulness (85%, value if added -, - per point); Lacerating Strikes (80%, value if added -, - per point)
 - Ours, rarely taken: Endurance Training 2 (13%, value -); Improved Aspect of the Monkey 3 (13%, value -); Summon Hawk 1 (17%, value -); Unleashed Fury 5 (20%, value -)
+
+**`beast-marks-open-leveling`** (leveling, leads Beast Mastery; 10,393 site builds lead there; scored as `bm-leveling` / `leveling-st`; weakest: Frenzy +0.74% per point)
+
+- Consensus we skip: Bestial Swiftness (99%, value if added +0.0%, +0.00% per point); Intimidation (97%, value if added +0.0%, +0.00% per point); Bestial Wrath (88%, value if added +1.6%, +1.55% per point)
+
+**`beast-survival-open-leveling`** (leveling, leads Survival; 19,307 site builds lead there; scored as `bm-leveling` / `leveling-st`; weakest: Spirit Bond +0.78% per point)
+
+- Consensus we skip: Expose Prey (89%, value if added +3.5%, +1.73% per point); Lightning Reflexes (87%, value if added +27.6%, +5.52% per point); Lacerating Strikes (80%, value if added +3.2%, +3.25% per point)
+- Ours, rarely taken: Spirit Bond 1 (1%, value +0.8%); Bestial Discipline 2 (2%, value +3.0%); Ferocity 5 (6%, value +9.5%); Endurance Training 5 (13%, value +6.0%); Improved Aspect of the Monkey 1 (13%, value +0.0%); Unleashed Fury 5 (20%, value +21.0%)
+
+**`beast-mastery-ml-raid`** (raid, leads Beast Mastery; 10,393 site builds lead there; scored as no scorer model)
+
+- Ours, rarely taken: Improved Arcane Shot 2 (7%, value -)
+
+**`beast-marks-open-raid`** (raid, leads Beast Mastery; 10,393 site builds lead there; scored as no scorer model)
+
+- Consensus we skip: Bestial Swiftness (99%, value if added -, - per point); Intimidation (97%, value if added -, - per point); Summon Hawk (92%, value if added -, - per point); Bestial Wrath (88%, value if added -, - per point)
+- Ours, rarely taken: Improved Arcane Shot 3 (7%, value -)
 
 ### Mage
 
@@ -569,15 +586,25 @@ Not tested (the tree could not hold the talent without a larger respec): druid `
 
 - Consensus we skip: Burning Soul (81%, value if added -, - per point)
 
-**`arcane-frost-open-leveling`** (leveling, leads Arcane; 2,148 site builds lead there; scored as `frost-leveling` / `leveling-st`; weakest: Incineration +0.27% per point)
+**`arcane-frost-open-leveling`** (leveling, leads Arcane; 2,148 site builds lead there; scored as `frost-leveling` / `leveling-st`; weakest: Arcane Instability +0.59% per point)
 
-- Consensus we skip: Presence of Mind (92%, value if added +0.8%, +0.75% per point); Arcane Power (80%, value if added +1.3%, +1.33% per point)
-- Ours, rarely taken: Fingers of Frost 2 (7%, value +5.6%); Frost Channeling 3 (10%, value +1.9%); Frost Warding 2 (11%, value +0.1%); Frostbite 3 (15%, value +6.6%); Shatter 3 (15%, value +16.1%); Ice Lance 1 (20%, value +32.5%)
+- Consensus we skip: Presence of Mind (92%, value if added +0.7%, +0.74% per point); Arcane Power (80%, value if added +1.3%, +1.30% per point); Arcane Subtlety (78%, value if added +0.5%, +0.26% per point); Incineration (72%, value if added +0.8%, +0.26% per point)
+- Ours, rarely taken: Fingers of Frost 2 (7%, value +5.4%); Frost Channeling 3 (10%, value +1.4%); Frost Warding 2 (11%, value +0.1%); Piercing Ice 1 (11%, value +0.7%); Frostbite 3 (15%, value +6.4%); Shatter 3 (15%, value +15.8%); Ice Lance 1 (20%, value +31.4%)
+
+**`frostfire-open-leveling`** (leveling, leads Frost; 3,636 site builds lead there; scored as `frost-leveling` / `leveling-st`; weakest: Blast Wave +0.00% per point)
+
+- Consensus we skip: Ice Block (91%, value if added +1.7%, +1.74% per point); Cold Snap (89%, value if added +0.0%, +0.00% per point); Ice Barrier (75%, value if added +2.5%, +2.53% per point); Improved Frostbolt (70%, value if added +3.2%, +0.63% per point); Arctic Reach (70%, value if added +0.2%, +0.08% per point)
+- Ours, rarely taken: Improved Fire Ward 1 (1%, value +0.0%); Critical Mass 3 (7%, value +0.0%); Blast Wave 1 (7%, value +0.0%); Master of Elements 3 (12%, value +0.1%); Burning Soul 2 (13%, value +0.0%); Wand Specialization 1 (18%, value +0.0%)
 
 **`frost-open-leveling`** (leveling, leads Frost; 3,636 site builds lead there; scored as `frost-leveling` / `leveling-st`; weakest: Incineration +0.22% per point)
 
-- Consensus we skip: Ice Block (91%, value if added +1.6%, +1.56% per point); Arctic Reach (70%, value if added +0.2%, +0.08% per point)
-- Ours, rarely taken: Wand Specialization 2 (18%, value +0.0%); Improved Channeling 2 (18%, value +0.0%); Arcane Meditation 3 (19%, value +0.9%); Frost Warding 1 (19%, value +0.0%)
+- Consensus we skip: Ice Block (91%, value if added +1.6%, +1.56% per point); Arctic Reach (70%, value if added +0.1%, +0.07% per point)
+- Ours, rarely taken: Wand Specialization 2 (18%, value +0.0%); Improved Channeling 1 (18%, value +0.0%); Arcane Meditation 3 (19%, value +0.9%); Frost Warding 1 (19%, value +0.0%)
+
+**`arcane-frost-open-raid`** (raid, leads Arcane; 2,148 site builds lead there; scored as `frost-raid` / `raid-dps`; weakest: Arcane Instability +4.25% per point)
+
+- Consensus we skip: Presence of Mind (92%, value if added +2.5%, +2.48% per point); Arcane Meditation (88%, value if added +7.7%, +2.57% per point); Arcane Power (80%, value if added +6.0%, +5.97% per point); Arcane Geometry (72%, value if added +0.0%, +0.00% per point); Incineration (72%, value if added +2.5%, +0.84% per point)
+- Ours, rarely taken: Fingers of Frost 2 (7%, value +27.0%); Piercing Ice 3 (11%, value +12.0%); Shatter 3 (15%, value +15.9%); Ice Lance 1 (20%, value +16.7%)
 
 ### Paladin
 
@@ -631,16 +658,6 @@ Not tested (the tree could not hold the talent without a larger respec): druid `
 - Consensus we skip: Sacred Arbiter (98%, value if added +0.0%, +0.00% per point); Vengeance (96%, value if added +0.0%, +0.00% per point); Improved Judgement (95%, value if added +0.0%, +0.00% per point); Improved Seals (80%, value if added +0.0%, +0.00% per point); Two-Handed Weapon Specialization (76%, value if added +0.0%, +0.00% per point); Divine Strength (71%, value if added +0.0%, +0.00% per point)
 - Ours, rarely taken: Illumination 5 (13%, value +23.5%); Infusion of Light 2 (16%, value +6.3%)
 
-**`holy-leveling`** (leveling, leads Holy; 6,783 site builds lead there; scored as `holy-heal` / `leveling-st`; weakest: Conviction +0.00% per point)
-
-- Consensus we skip: Divine Precision (71%, value if added +6.7%, +2.23% per point)
-- Ours, rarely taken: Deflection 3 (18%, value +2.4%)
-
-**`protection-leveling`** (leveling, leads Retribution; 11,423 site builds lead there; scored as no scorer model)
-
-- Consensus we skip: Benediction (89%, value if added -, - per point); Pursuit of Justice (84%, value if added -, - per point); Seal of Command (81%, value if added -, - per point); Improved Seals (80%, value if added -, - per point); Two-Handed Weapon Specialization (76%, value if added -, - per point); Divine Strength (71%, value if added -, - per point)
-- Ours, rarely taken: One-Handed Weapon Specialization 3 (4%, value -); Templar's Bulwark 1 (4%, value -); Anticipation 5 (6%, value -); Shield Specialization 1 (6%, value -); Redoubt 5 (9%, value -); Swift Judgement 1 (9%, value -); Improved Righteous Fury 3 (11%, value -); Improved Seal of Fury 1 (12%, value -)
-
 **`retribution-ml-raid`** (raid, leads Retribution; 11,423 site builds lead there; scored as no scorer model)
 
 - Consensus we skip: Pursuit of Justice (84%, value if added -, - per point)
@@ -658,14 +675,39 @@ Not tested (the tree could not hold the talent without a larger respec): druid `
 - Consensus we skip: Reckoning (91%, value if added +1.9%, +0.37% per point); Sacred Duty (83%, value if added +0.0%, +0.01% per point); Improved Judgement (72%, value if added +0.0%, +0.00% per point)
 - Ours, rarely taken: Improved Hammer of Justice 1 (13%, value +0.4%)
 
-**`prot-ret-open-leveling`** (leveling, leads Retribution; 11,423 site builds lead there; scored as `ret-dps` / `leveling-st`; weakest: Reckoning +0.00% per point)
+**`shockadin-open-leveling`** (leveling, leads Retribution; 11,423 site builds lead there; scored as no scorer model)
 
-- Consensus we skip: Seal of Command (81%, value if added +24.4%, +24.36% per point); Improved Seals (80%, value if added +12.4%, +4.14% per point); Two-Handed Weapon Specialization (76%, value if added +15.9%, +5.28% per point); Divine Strength (71%, value if added +3.6%, +0.71% per point)
-- Ours, rarely taken: One-Handed Weapon Specialization 3 (4%, value +0.0%); Reckoning 2 (4%, value +0.0%); Anticipation 3 (6%, value +0.3%); Shield Specialization 3 (6%, value +0.9%); Redoubt 5 (9%, value +0.0%); Swift Judgement 1 (9%, value +9.2%); Improved Seal of Fury 1 (12%, value +0.0%)
+- Consensus we skip: Pursuit of Justice (84%, value if added -, - per point)
+- Ours, rarely taken: Redoubt 3 (9%, value -)
+
+**`protection-open-leveling`** (leveling, leads Protection; 8,803 site builds lead there; scored as no scorer model)
+
+- Consensus we skip: Sacred Duty (83%, value if added -, - per point); Deflection (76%, value if added -, - per point)
+- Ours, rarely taken: Eye for an Eye 1 (8%, value -)
 
 **`retribution-open-leveling`** (leveling, leads Retribution; 11,423 site builds lead there; scored as no scorer model)
 
 - Consensus we skip: Pursuit of Justice (84%, value if added -, - per point)
+
+**`holy-ml-heal`** (raid, leads Holy; 6,783 site builds lead there; scored as `holy-heal` / `raid-heal`; weakest: Consecrated Ground +0.00% per point)
+
+- Consensus we skip: Holy Shock (99%, value if added +0.1%, +0.11% per point); Light's Vigil (77%, value if added +7.6%, +7.62% per point); Voice of Truth (74%, value if added +0.0%, +0.00% per point); Infusion of Light (73%, value if added +7.2%, +3.58% per point); Divine Precision (71%, value if added +0.0%, +0.00% per point)
+- Ours, rarely taken: Anticipation 3 (10%, value +0.0%); Improved Righteous Fury 1 (18%, value +0.0%)
+
+**`protection-ml-tank`** (raid, leads Protection; 8,803 site builds lead there; scored as `prot-tank` / `raid-tank`; weakest: Eye for an Eye +0.01% per point)
+
+- Consensus we skip: Sacred Duty (83%, value if added +0.0%, +0.01% per point)
+- Ours, rarely taken: Eye for an Eye 2 (8%, value +0.0%)
+
+**`holy-leveling`** (leveling, leads Holy; 6,783 site builds lead there; scored as `holy-heal` / `leveling-st`; weakest: Consecrated Ground +0.00% per point)
+
+- Consensus we skip: Holy Shock (99%, value if added +9.6%, +9.61% per point); Light's Vigil (77%, value if added +20.1%, +20.07% per point); Voice of Truth (74%, value if added +0.4%, +0.45% per point); Infusion of Light (73%, value if added +19.4%, +9.68% per point); Divine Precision (71%, value if added +13.0%, +4.35% per point)
+- Ours, rarely taken: Anticipation 3 (10%, value +0.7%); Improved Righteous Fury 1 (18%, value +0.0%)
+
+**`protection-leveling`** (leveling, leads Protection; 8,803 site builds lead there; scored as no scorer model)
+
+- Consensus we skip: Sacred Duty (83%, value if added -, - per point)
+- Ours, rarely taken: Eye for an Eye 2 (8%, value -)
 
 ### Priest
 
@@ -723,15 +765,30 @@ Not tested (the tree could not hold the talent without a larger respec): druid `
 - Consensus we skip: Improved Power Word: Shield (80%, value if added -, - per point); Spiritual Healing (77%, value if added -, - per point); Inspiration (75%, value if added -, - per point); Improved Renew (73%, value if added -, - per point)
 - Ours, rarely taken: Shadow Focus 5 (2%, value -); Improved Shadow Word: Pain 2 (2%, value -); Spell Warding 1 (15%, value -)
 
-**`smite-open-leveling`** (leveling, leads Holy; 8,152 site builds lead there; scored as no scorer model)
+**`hybrid-discipline-shadow-open-leveling`** (leveling, leads Shadow; 17,013 site builds lead there; scored as `shadow-dps` / `leveling-st`; weakest: Soul Warding +0.00% per point)
 
-- Consensus we skip: Spiritual Healing (77%, value if added -, - per point)
-- Ours, rarely taken: Shadow Reach 2 (1%, value -); Improved Inner Fire 1 (5%, value -); Spirit Tap 5 (12%, value -)
+- Consensus we skip: Mind Flay (99%, value if added +189.0%, +189.01% per point); Shadowform (97%, value if added +147.4%, +147.37% per point); Shadow Reach (91%, value if added +10.3%, +5.13% per point); Improved Mind Flay (88%, value if added +0.0%, +0.00% per point); Early Demise (72%, value if added +10.1%, +5.07% per point)
+- Ours, rarely taken: Holy Precision 1 (5%, value +0.0%); Improved Fade 1 (6%, value +0.0%); Improved Inner Fire 1 (9%, value +0.1%); Mental Strength 3 (14%, value +2.0%); Soul Warding 1 (18%, value +0.0%)
 
-**`shadow-open-leveling`** (leveling, leads Shadow; 17,013 site builds lead there; scored as `shadow-dps` / `leveling-st`; weakest: Improved Inner Fire +0.01% per point)
+**`hybrid-holy-shadow-open-leveling`** (leveling, leads Shadow; 17,013 site builds lead there; scored as `holy-heal` / `leveling-st`; weakest: Searing Light +0.00% per point)
+
+- Consensus we skip: Vampiric Embrace (100%, value if added +4.2%, +4.18% per point); Darkness (98%, value if added +0.0%, +0.00% per point); Shadowform (97%, value if added +12.3%, +12.25% per point); Shadow Reach (91%, value if added +0.0%, +0.00% per point); Improved Mind Flay (88%, value if added +0.0%, +0.00% per point); Devouring Contagion (88%, value if added +0.4%, +0.19% per point); Silence (72%, value if added +0.9%, +0.90% per point); Early Demise (72%, value if added +0.0%, +0.00% per point)
+- Ours, rarely taken: Searing Light 2 (0%, value +0.0%); Divine Fury 5 (1%, value +32.4%); Holy Specialization 4 (2%, value +4.4%); Improved Renew 3 (5%, value +0.7%); Soul Warding 1 (18%, value +3.4%)
+
+**`shadow-open-leveling`** (leveling, leads Shadow; 17,013 site builds lead there; scored as `shadow-dps` / `leveling-st`; weakest: Meditation +0.00% per point)
 
 - Consensus we skip: Improved Shadow Word: Pain (94%, value if added +0.0%, +0.00% per point); Silence (72%, value if added +0.0%, +0.00% per point)
-- Ours, rarely taken: Holy Precision 1 (5%, value +0.0%); Improved Inner Fire 1 (9%, value +0.0%)
+- Ours, rarely taken: Holy Precision 1 (5%, value +0.0%)
+
+**`discipline-ml-heal`** (raid, leads Discipline; 17,854 site builds lead there; scored as `holy-heal` / `raid-heal`; weakest: Holy Precision +0.00% per point)
+
+- Consensus we skip: Power Infusion (75%, value if added +4.1%, +4.10% per point)
+- Ours, rarely taken: Litany of Light 1 (2%, value +1.2%)
+
+**`discipline-leveling`** (leveling, leads Discipline; 17,854 site builds lead there; scored as no scorer model)
+
+- Consensus we skip: Power Infusion (75%, value if added -, - per point)
+- Ours, rarely taken: Litany of Light 1 (2%, value -)
 
 ### Rogue
 
@@ -843,15 +900,30 @@ Not tested (the tree could not hold the talent without a larger respec): druid `
 - Consensus we skip: Endurance (89%, value if added +0.0%, +0.00% per point); Improved Sinister Strike (86%, value if added +0.0%, +0.00% per point); Improved Sprint (77%, value if added +0.0%, +0.00% per point)
 - Ours, rarely taken: Improved Expose Armor 2 (9%, value +11.0%)
 
-**`daggers-split-open-leveling`** (leveling, leads Assassination; 10,071 site builds lead there; scored as `combat-daggers-raid` / `leveling-st`; weakest: Initiative +1.31% per point)
+**`combat-swords-open-raid`** (raid, leads Combat; 8,742 site builds lead there; scored as `combat-swords-raid` / `raid-dps`; weakest: Flawless Execution +1.21% per point)
 
-- Consensus we skip: Mutilate (92%, value if added +23.0%, +22.95% per point); Opportunity (79%, value if added +12.0%, +6.01% per point); Seal Fate (78%, value if added +2.6%, +0.53% per point); Puncturing Wounds (73%, value if added +38.1%, +12.71% per point); Vile Poisons (72%, value if added +4.2%, +0.85% per point)
-- Ours, rarely taken: Riposte 1 (7%, value +6.9%); Flawless Execution 1 (9%, value +9.0%); Setup 3 (9%, value +2.0%); Deflection 3 (10%, value +3.1%); Remorseless Attacks 2 (13%, value +1.8%); Improved Ambush 2 (16%, value +2.5%)
+- Consensus we skip: Endurance (89%, value if added +0.0%, +0.00% per point); Improved Sprint (77%, value if added +0.0%, +0.00% per point)
+- Ours, rarely taken: Improved Poisons 3 (8%, value +5.7%)
+
+**`subtlety-open-raid`** (raid, leads Subtlety; 16,054 site builds lead there; scored as no scorer model)
+
+- Consensus we skip: Master of Deception (79%, value if added -, - per point); Improved Eviscerate (75%, value if added -, - per point); Elusiveness (74%, value if added -, - per point)
+- Ours, rarely taken: Improved Poisons 4 (4%, value -); Improved Distract 2 (13%, value -); Quietus 5 (16%, value -); Improved Slice and Dice 3 (18%, value -)
+
+**`daggers-split-open-leveling`** (leveling, leads Assassination; 10,071 site builds lead there; scored as `combat-daggers-raid` / `leveling-st`; weakest: Initiative +1.19% per point)
+
+- Consensus we skip: Mutilate (92%, value if added +20.7%, +20.73% per point); Seal Fate (78%, value if added +2.4%, +0.48% per point); Puncturing Wounds (73%, value if added +34.3%, +11.44% per point); Vile Poisons (72%, value if added +3.5%, +0.70% per point)
+- Ours, rarely taken: Riposte 1 (7%, value +6.0%); Flawless Execution 1 (9%, value +8.2%); Setup 3 (9%, value +1.8%); Deflection 3 (10%, value +2.8%); Remorseless Attacks 2 (13%, value +1.6%); Improved Ambush 2 (16%, value +2.3%)
 
 **`combat-subtlety-open-leveling`** (leveling, leads Subtlety; 16,054 site builds lead there; scored as `combat-swords-raid` / `leveling-st`; weakest: Hemorrhage +0.00% per point)
 
-- Consensus we skip: Preparation (98%, value if added +1.9%, +1.93% per point); Camouflage (92%, value if added +0.0%, +0.00% per point); Improved Ambush (73%, value if added +0.0%, +0.00% per point)
-- Ours, rarely taken: Dual Wield Specialization 1 (2%, value +1.1%); Flawless Execution 1 (4%, value +7.9%); Riposte 1 (12%, value +13.6%); Improved Distract 1 (13%, value +0.0%); Deflection 3 (16%, value +2.8%)
+- Consensus we skip: Preparation (98%, value if added +1.9%, +1.87% per point); Master of Deception (79%, value if added +2.6%, +0.85% per point); Dirty Deeds (78%, value if added +2.6%, +1.28% per point); Elusiveness (74%, value if added +0.1%, +0.05% per point)
+- Ours, rarely taken: Dual Wield Specialization 1 (2%, value +1.0%); Flawless Execution 1 (4%, value +7.4%); Remorseless Attacks 2 (8%, value +6.5%); Riposte 1 (12%, value +12.2%); Improved Distract 1 (13%, value +0.0%); Deflection 3 (16%, value +2.7%)
+
+**`daggers-split-open-raid`** (raid, leads Combat; 8,742 site builds lead there; scored as no scorer model)
+
+- Consensus we skip: Endurance (89%, value if added -, - per point); Improved Sinister Strike (86%, value if added -, - per point); Aggression (82%, value if added -, - per point); Adrenaline Rush (80%, value if added -, - per point); Improved Sprint (77%, value if added -, - per point)
+- Ours, rarely taken: Vile Poisons 1 (5%, value -); Improved Poisons 3 (8%, value -); Mutilate 1 (8%, value -)
 
 ### Shaman
 
@@ -917,19 +989,10 @@ Not tested (the tree could not hold the talent without a larger respec): druid `
 
 - Consensus we skip: Improved Healing Wave (83%, value if added +0.0%, +0.00% per point)
 
-**`restoration-leveling`** (leveling, leads Restoration; 4,823 site builds lead there; scored as no scorer model)
-
-- Consensus we skip: Improved Healing Wave (83%, value if added -, - per point)
-
 **`enhancement-ml-raid`** (raid, leads Enhancement; 14,808 site builds lead there; scored as `enhancement-dps` / `raid-dps`; weakest: Improved Fire Nova +0.00% per point)
 
 - Consensus we skip: Spirit Weapons (82%, value if added +0.0%, +0.00% per point); Improved Ghost Wolf (79%, value if added +0.0%, +0.00% per point); Concussion (76%, value if added +1.4%, +0.28% per point)
 - Ours, rarely taken: Convection 5 (20%, value +7.6%)
-
-**`elemental-enhancement-ml-raid`** (raid, leads Enhancement; 14,808 site builds lead there; scored as `elemental-dps` / `raid-dps`; weakest: Elemental Devastation +0.00% per point)
-
-- Consensus we skip: Rage of the Farseer (86%, value if added +0.0%, +0.00% per point); Spirit Weapons (82%, value if added +0.0%, +0.02% per point); Improved Ghost Wolf (79%, value if added +0.0%, +0.00% per point)
-- Ours, rarely taken: Convection 5 (20%, value +3.8%)
 
 **`opt-enhancement-dps-raid-dps`** (raid, leads Enhancement; 14,808 site builds lead there; scored as `enhancement-dps` / `raid-dps`; weakest: Tidal Focus +0.69% per point)
 
@@ -941,15 +1004,24 @@ Not tested (the tree could not hold the talent without a larger respec): druid `
 - Consensus we skip: Improved Stormstrike (96%, value if added +0.0%, +0.00% per point); Elemental Weapons (92%, value if added +0.0%, +0.00% per point); Improved Ghost Wolf (79%, value if added +0.0%, +0.00% per point)
 - Ours, rarely taken: Earth's Grasp 1 (6%, value +0.0%); Call of Thunder 1 (12%, value +0.6%); Elemental Alacrity 3 (14%, value +1.2%)
 
-**`elemental-open-leveling`** (leveling, leads Elemental; 7,256 site builds lead there; scored as `elemental-dps` / `leveling-st`; weakest: Tidal Focus +0.23% per point)
+**`elemental-enhancement-open-leveling`** (leveling, leads Elemental; 7,256 site builds lead there; scored as `elemental-dps` / `leveling-st`; weakest: Elemental Devastation +0.00% per point)
 
-- Consensus we skip: Elemental Reach (86%, value if added +0.0%, +0.00% per point)
-- Ours, rarely taken: Improved Lightning Shield 3 (7%, value +0.0%); Elemental Devastation 1 (12%, value +0.0%)
+- Consensus we skip: Elemental Fury (95%, value if added +23.1%, +4.61% per point); Elemental Reach (86%, value if added +0.0%, +0.00% per point); Lava Burst (82%, value if added +8.3%, +8.32% per point); Eye of the Storm (73%, value if added +1.0%, +0.32% per point)
+- Ours, rarely taken: Flurry 1 (4%, value +0.0%); Toughness 2 (6%, value +0.1%); Improved Lightning Shield 3 (7%, value +0.0%); Mental Quickness 2 (7%, value +13.2%); Elemental Devastation 1 (12%, value +0.0%); Mental Dexterity 3 (14%, value +0.0%)
 
-**`enhancement-open-leveling`** (leveling, leads Enhancement; 14,808 site builds lead there; scored as `enhancement-dps` / `leveling-st`; weakest: Elemental Devastation +0.03% per point)
+**`enhancement-open-leveling`** (leveling, leads Enhancement; 14,808 site builds lead there; scored as `enhancement-dps` / `leveling-st`; weakest: Improved Stormstrike +0.00% per point)
 
-- Consensus we skip: Improved Ghost Wolf (79%, value if added +9.4%, +4.72% per point); Ancestral Knowledge (75%, value if added +1.9%, +0.38% per point)
+- Consensus we skip: Improved Ghost Wolf (79%, value if added +9.5%, +4.75% per point)
 - Ours, rarely taken: Improved Lightning Shield 3 (14%, value +2.0%); Convection 5 (20%, value +0.0%)
+
+**`elemental-enhancement-ml-raid`** (raid, leads Enhancement; 14,808 site builds lead there; scored as `elemental-dps` / `raid-dps`; weakest: Improved Fire Nova +0.00% per point)
+
+- Consensus we skip: Rage of the Farseer (86%, value if added +0.0%, +0.00% per point); Spirit Weapons (82%, value if added +0.0%, +0.02% per point); Improved Ghost Wolf (79%, value if added +0.0%, +0.00% per point); Maelstrom Weapon (77%, value if added +0.1%, +0.01% per point); Concussion (76%, value if added +20.1%, +4.01% per point)
+- Ours, rarely taken: Mindfulness 2 (18%, value +7.0%); Convection 5 (20%, value +0.1%)
+
+**`restoration-leveling`** (leveling, leads Restoration; 4,823 site builds lead there; scored as no scorer model)
+
+- Consensus we skip: Improved Healing Wave (83%, value if added -, - per point)
 
 ### Warlock
 
@@ -1070,6 +1142,26 @@ Not tested (the tree could not hold the talent without a larger respec): druid `
 
 - Consensus we skip: Bane of Havoc (77%, value if added +0.0%, +0.00% per point); Destructive Reach (74%, value if added +0.0%, +0.00% per point)
 
+**`shadow-bolt-hybrid-fire-open-raid`** (raid, leads Affliction; 5,621 site builds lead there; scored as `fire-destro-raid` / `raid-dps`; weakest: Cataclysm +1.19% per point)
+
+- Consensus we skip: Siphon Life (95%, value if added +0.0%, +0.00% per point); Nightfall (84%, value if added +1.0%, +0.51% per point); Improved Drains (76%, value if added +0.0%, +0.00% per point); Soul Siphon (75%, value if added +0.0%, +0.00% per point); Shadow Mastery (70%, value if added +3.5%, +0.71% per point)
+- Ours, rarely taken: Cataclysm 2 (2%, value +2.4%); Agonizing Flames 3 (4%, value +11.3%); Ruin 5 (10%, value +6.6%); Bane 5 (18%, value +20.3%)
+
+**`shadow-bolt-hybrid-open-raid`** (raid, leads Affliction; 5,621 site builds lead there; scored as `sb-raid` / `raid-dps`; weakest: Shadowburn +0.00% per point)
+
+- Consensus we skip: Siphon Life (95%, value if added +0.0%, +0.00% per point); Nightfall (84%, value if added +0.6%, +0.28% per point); Improved Drains (76%, value if added +0.0%, +0.00% per point); Soul Siphon (75%, value if added +0.0%, +0.00% per point); Shadow Mastery (70%, value if added +9.6%, +1.92% per point)
+- Ours, rarely taken: Cataclysm 1 (2%, value +1.0%); Agonizing Flames 3 (4%, value +13.4%); Shadowburn 1 (8%, value +0.0%); Ruin 5 (10%, value +8.8%); Bane 5 (18%, value +20.0%)
+
+**`affliction-demonology-open-leveling`** (leveling, leads Affliction; 5,621 site builds lead there; scored as `affliction-leveling` / `leveling-st`; weakest: Shadow Mastery +1.57% per point)
+
+- Consensus we skip: Nightfall (84%, value if added +0.0%, +0.00% per point); Improved Drains (76%, value if added +0.5%, +0.17% per point); Soul Siphon (75%, value if added +2.1%, +0.71% per point)
+- Ours, rarely taken: Demonic Knowledge 3 (7%, value +14.8%); Decimation 1 (10%, value +0.0%); Demonic Brand 2 (11%, value +0.0%); Improved Voidwalker 3 (14%, value +0.0%)
+
+**`shadow-bolt-hybrid-open-leveling`** (leveling, leads Affliction; 5,621 site builds lead there; scored as `affliction-leveling` / `leveling-st`; weakest: Cataclysm +0.00% per point)
+
+- Consensus we skip: Nightfall (84%, value if added +0.0%, +0.00% per point); Demonic Embrace (82%, value if added +0.0%, +0.00% per point); Improved Drains (76%, value if added +0.6%, +0.21% per point); Soul Siphon (75%, value if added +2.6%, +0.87% per point); Fel Vitality (72%, value if added +0.0%, +0.00% per point); Demonic Sacrifice (72%, value if added +0.0%, +0.00% per point); Demonic Aegis (71%, value if added +0.0%, +0.00% per point)
+- Ours, rarely taken: Cataclysm 3 (2%, value +0.0%); Aftermath 2 (2%, value +1.1%); Improved Voidwalker 3 (14%, value +0.0%); Molten Skin 2 (16%, value +3.0%); Bane 4 (18%, value +0.2%)
+
 ### Warrior
 
 **`arms-2h-raid`** (raid, leads Fury; 5,051 site builds lead there; scored as `arms-2h-raid` / `raid-dps`; weakest: Impale +1.00% per point)
@@ -1113,11 +1205,6 @@ Not tested (the tree could not hold the talent without a larger respec): druid `
 
 - Ours, rarely taken: Two-Handed Weapon Specialization 3 (6%, value +2.6%); Spearing Strike 1 (8%, value +0.3%)
 
-**`protection-leveling`** (leveling, leads Protection; 11,345 site builds lead there; scored as no scorer model)
-
-- Consensus we skip: Vanguard (94%, value if added -, - per point); Last Stand (92%, value if added -, - per point); Improved Shield Wall (80%, value if added -, - per point)
-- Ours, rarely taken: Anger Management 1 (15%, value -); Improved Tactical Mastery 5 (20%, value -)
-
 **`arms-community-parse`** (raid, leads Arms; 4,949 site builds lead there; scored as no scorer model)
 
 - Ours, rarely taken: Booming Voice 3 (12%, value -)
@@ -1158,12 +1245,22 @@ Not tested (the tree could not hold the talent without a larger respec): druid `
 
 - Consensus we skip: Enrage (86%, value if added +0.0%, +0.00% per point)
 
-**`fury-open-leveling`** (leveling, leads Fury; 5,051 site builds lead there; scored as `fury-dw-raid` / `leveling-st`; weakest: Improved Overpower +0.00% per point)
+**`arms-open-leveling`** (leveling, leads Arms; 4,949 site builds lead there; scored as `arms-2h-raid` / `leveling-st`; weakest: Enrage +1.54% per point)
 
-- Ours, rarely taken: Two-Handed Weapon Specialization 2 (6%, value +0.0%); Improved Charge 2 (14%, value +1.2%)
+- Consensus we skip: Anger Management (87%, value if added +1.9%, +1.91% per point)
+- Ours, rarely taken: Enrage 5 (6%, value +7.7%); Booming Voice 1 (12%, value +0.0%); Blood Craze 3 (20%, value +5.6%)
+
+**`fury-open-leveling`** (leveling, leads Fury; 5,051 site builds lead there; scored as `fury-dw-raid` / `leveling-st`; weakest: Gore Drinker +0.00% per point)
+
+- Ours, rarely taken: Improved Charge 1 (14%, value +0.5%)
 
 **`protection-open-leveling`** (leveling, leads Protection; 11,345 site builds lead there; scored as no scorer model)
 
-- Consensus we skip: Vanguard (94%, value if added -, - per point); Last Stand (92%, value if added -, - per point); Improved Shield Wall (80%, value if added -, - per point); Anticipation (73%, value if added -, - per point)
-- Ours, rarely taken: Iron Will 2 (6%, value -); Anger Management 1 (15%, value -); Deep Wounds 3 (18%, value -); Improved Tactical Mastery 5 (20%, value -)
+- Consensus we skip: Last Stand (92%, value if added -, - per point); Deflection (88%, value if added -, - per point); Defiance (88%, value if added -, - per point); Improved Bloodrage (85%, value if added -, - per point)
+- Ours, rarely taken: Furious Precision 2 (0%, value -); Enrage 5 (3%, value -); Booming Voice 3 (5%, value -); Improved Disarm 2 (8%, value -); Unbridled Wrath 5 (20%, value -)
+
+**`protection-leveling`** (leveling, leads Protection; 11,345 site builds lead there; scored as no scorer model)
+
+- Consensus we skip: Last Stand (92%, value if added -, - per point); Improved Bloodrage (85%, value if added -, - per point); Improved Shield Wall (80%, value if added -, - per point)
+- Ours, rarely taken: Deep Wounds 3 (18%, value -)
 

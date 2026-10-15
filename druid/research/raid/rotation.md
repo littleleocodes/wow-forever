@@ -118,7 +118,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`feral-combat-shifting-power-raid`](builds/feral-combat-shifting-power-raid.md) (ours: hand draft, 392 DPS), *Feral Cat 9/35/7* (community simulator, 392 DPS), [`feral-combat-open-raid`](builds/feral-combat-open-raid.md) (ours: hand draft, 388 DPS), *Feral* (community simulator, 387 DPS)
+### [`feral-combat-shifting-power-raid`](builds/feral-combat-shifting-power-raid.md) (ours: derived (simulator preset), 392 DPS), *Feral Cat 9/35/7* (community simulator, 392 DPS), [`feral-combat-open-raid`](builds/feral-combat-open-raid.md) (ours: derived (open search), 388 DPS), *Feral* (community simulator, 387 DPS)
 
 Before the pull: at -1.0s: cast Faerie Fire; at -3.5s: cast Tiger's Fury.
 

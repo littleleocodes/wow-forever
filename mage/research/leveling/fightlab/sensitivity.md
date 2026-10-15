@@ -4,30 +4,30 @@
 
 | Assumption | Level | opt-frost-aoe-leveling-aoe time/kill | Best build | opt-frost-aoe-leveling-aoe: −Ice Lance | opt-frost-aoe-leveling-aoe: −Shatter |
 |---|---|---|---|---|---|
-| baseline | 40 | 35.7s (deaths 16.9/100) | opt-frost-aoe-leveling-aoe | +12% | +13% |
-| baseline | 60 | 28.9s (deaths 12.2/100) | opt-frost-aoe-leveling-aoe | +20% | +17% |
-| root breaks on 10% of hits | 40 | 35.5s (deaths 16.5/100) | opt-frost-aoe-leveling-aoe | +12% | +14% |
-| root breaks on 10% of hits | 60 | 28.4s (deaths 11.6/100) | opt-frost-aoe-leveling-aoe | +21% | +19% |
-| root breaks on 40% of hits | 40 | 35.7s (deaths 16.8/100) | opt-frost-aoe-leveling-aoe | +12% | +13% |
-| root breaks on 40% of hits | 60 | 28.9s (deaths 12.3/100) | opt-frost-aoe-leveling-aoe | +21% | +18% |
-| mobs have 20% less health | 40 | 25.0s (deaths 5.6/100) | opt-frost-aoe-leveling-aoe | +6% | +6% |
-| mobs have 20% less health | 60 | 20.1s (deaths 4.3/100) | opt-frost-aoe-leveling-aoe | +8% | +7% |
-| mobs have 20% more health | 40 | 59.6s (deaths 42.2/100) | opt-frost-aoe-leveling-aoe | +23% | +31% |
-| mobs have 20% more health | 60 | 43.8s (deaths 29.7/100) | opt-frost-aoe-leveling-aoe | +50% | +31% |
-| mobs hit 30% harder | 40 | 55.7s (deaths 39.5/100) | opt-frost-aoe-leveling-aoe | +7% | +20% |
-| mobs hit 30% harder | 60 | 39.6s (deaths 27.3/100) | opt-frost-aoe-leveling-aoe | +18% | +21% |
-| pushback 1.0 s per hit | 40 | 38.8s (deaths 21.0/100) | opt-frost-aoe-leveling-aoe | +16% | +16% |
-| pushback 1.0 s per hit | 60 | 30.6s (deaths 13.7/100) | opt-frost-aoe-leveling-aoe | +32% | +26% |
-| weapons 20% better (blues) | 40 | 35.5s (deaths 16.7/100) | opt-frost-aoe-leveling-aoe | +11% | +12% |
-| weapons 20% better (blues) | 60 | 28.5s (deaths 11.8/100) | opt-frost-aoe-leveling-aoe | +19% | +17% |
-| dungeon blues (item database) | 40 | 27.3s (deaths 4.0/100) | opt-frost-aoe-leveling-aoe | +10% | +9% |
-| dungeon blues (item database) | 60 | 24.5s (deaths 5.2/100) | opt-frost-aoe-leveling-aoe | +17% | +11% |
-| gear stats 20% better | 40 | 32.9s (deaths 11.6/100) | opt-frost-aoe-leveling-aoe | +9% | +12% |
-| gear stats 20% better | 60 | 26.9s (deaths 9.2/100) | opt-frost-aoe-leveling-aoe | +13% | +12% |
-| no caster mobs | 40 | 31.4s (deaths 14.6/100) | opt-frost-aoe-leveling-aoe | +11% | +11% |
-| no caster mobs | 60 | 24.9s (deaths 8.1/100) | opt-frost-aoe-leveling-aoe | +21% | +20% |
-| 30% caster mobs | 40 | 39.7s (deaths 17.0/100) | opt-frost-aoe-leveling-aoe | +11% | +12% |
-| 30% caster mobs | 60 | 34.0s (deaths 14.7/100) | opt-frost-aoe-leveling-aoe | +22% | +17% |
-| 20% of mobs run at 20% health | 40 | 36.6s (deaths 17.4/100) | opt-frost-aoe-leveling-aoe | +12% | +12% |
-| 20% of mobs run at 20% health | 60 | 28.7s (deaths 11.0/100) | opt-frost-aoe-leveling-aoe | +19% | +18% |
+| baseline | 40 | 36.3s (deaths 17.1/100) | opt-frost-aoe-leveling-aoe | +12% | +11% |
+| baseline | 60 | 30.3s (deaths 13.5/100) | opt-frost-aoe-leveling-aoe | +21% | +15% |
+| root breaks on 10% of hits | 40 | 36.1s (deaths 16.9/100) | opt-frost-aoe-leveling-aoe | +12% | +12% |
+| root breaks on 10% of hits | 60 | 30.0s (deaths 12.9/100) | opt-frost-aoe-leveling-aoe | +22% | +15% |
+| root breaks on 40% of hits | 40 | 36.3s (deaths 17.1/100) | opt-frost-aoe-leveling-aoe | +12% | +12% |
+| root breaks on 40% of hits | 60 | 30.7s (deaths 14.0/100) | opt-frost-aoe-leveling-aoe | +20% | +14% |
+| mobs have 20% less health | 40 | 25.5s (deaths 6.0/100) | opt-frost-aoe-leveling-aoe | +6% | +4% |
+| mobs have 20% less health | 60 | 20.5s (deaths 4.8/100) | opt-frost-aoe-leveling-aoe | +8% | +7% |
+| mobs have 20% more health | 40 | 61.3s (deaths 44.2/100) | opt-frost-aoe-leveling-aoe | +27% | +28% |
+| mobs have 20% more health | 60 | 48.1s (deaths 34.0/100) | opt-frost-aoe-leveling-aoe | +52% | +27% |
+| mobs hit 30% harder | 40 | 58.4s (deaths 42.0/100) | opt-frost-aoe-leveling-aoe | +8% | +16% |
+| mobs hit 30% harder | 60 | 42.9s (deaths 30.5/100) | opt-frost-aoe-leveling-aoe | +17% | +15% |
+| pushback 1.0 s per hit | 40 | 40.0s (deaths 22.6/100) | opt-frost-aoe-leveling-aoe | +16% | +14% |
+| pushback 1.0 s per hit | 60 | 33.1s (deaths 16.5/100) | opt-frost-aoe-leveling-aoe | +27% | +19% |
+| weapons 20% better (blues) | 40 | 35.8s (deaths 16.8/100) | opt-frost-aoe-leveling-aoe | +12% | +12% |
+| weapons 20% better (blues) | 60 | 30.0s (deaths 13.4/100) | opt-frost-aoe-leveling-aoe | +20% | +13% |
+| dungeon blues (item database) | 40 | 27.7s (deaths 4.7/100) | opt-frost-aoe-leveling-aoe | +9% | +8% |
+| dungeon blues (item database) | 60 | 25.3s (deaths 6.3/100) | opt-frost-aoe-leveling-aoe | +19% | +9% |
+| gear stats 20% better | 40 | 33.1s (deaths 11.8/100) | opt-frost-aoe-leveling-aoe | +9% | +11% |
+| gear stats 20% better | 60 | 27.8s (deaths 10.3/100) | opt-frost-aoe-leveling-aoe | +14% | +10% |
+| no caster mobs | 40 | 31.9s (deaths 15.1/100) | opt-frost-aoe-leveling-aoe | +11% | +10% |
+| no caster mobs | 60 | 25.7s (deaths 8.9/100) | opt-frost-aoe-leveling-aoe | +23% | +17% |
+| 30% caster mobs | 40 | 40.6s (deaths 18.3/100) | opt-frost-aoe-leveling-aoe | +11% | +10% |
+| 30% caster mobs | 60 | 36.1s (deaths 16.0/100) | opt-frost-aoe-leveling-aoe | +21% | +14% |
+| 20% of mobs run at 20% health | 40 | 36.9s (deaths 18.2/100) | opt-frost-aoe-leveling-aoe | +11% | +11% |
+| 20% of mobs run at 20% health | 60 | 30.5s (deaths 13.0/100) | opt-frost-aoe-leveling-aoe | +19% | +13% |
 

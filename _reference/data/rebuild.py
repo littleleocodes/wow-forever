@@ -33,7 +33,7 @@ Per class (its module's PIPELINE dict names the scorer model, the hand draft, th
               presets; needs raidsim/setup.py --game classic once): the Classic damage split and raid-mode effect fits go into the
               scorer's classic-era game, reports under <class>/research/talents/classic-baseline/raidsim/, then (once) scorer/classic_check.py
               --write asks whether the Classic models still reproduce the community builds
-  regen       (once) render_fightlab_sections, render_raidsim_sections, validate_builds, render_builds, render_new_builds, respec, render_optimizer_sections,
+  regen       (once) render_fightlab_sections, render_raidsim_sections, validate_builds, render_builds, render_new_builds, render_modes, render_tier_list, respec, render_optimizer_sections,
               compare_effects, loop_audit, the launch / beta checklists and fightlab/summary.py (the cross-class page)
 
 The race metric is the mean time per kill over the report levels weighted by level (a level-60 bracket counts three
@@ -733,7 +733,7 @@ def classic_step(cls, a, log, result):
 
 
 def regen(a, classes, log):
-    for args in ([HERE / "render_fightlab_sections.py", *classes], [HERE / "render_raidsim_sections.py", *classes], [HERE / "render_heallab_sections.py", *classes], [HERE / "render_leveling_guides.py", *classes], [HERE / "render_sim_presets.py", *classes], [HERE / "render_rotations.py", *classes], [HERE / "validate_builds.py"], [HERE / "render_builds.py"], [HERE / "render_new_builds.py", *classes], [HERE / "render_modes.py"], *[[HERE / "scorer/respec.py", c, "--write"] for c in classes],
+    for args in ([HERE / "render_fightlab_sections.py", *classes], [HERE / "render_raidsim_sections.py", *classes], [HERE / "render_heallab_sections.py", *classes], [HERE / "render_leveling_guides.py", *classes], [HERE / "render_sim_presets.py", *classes], [HERE / "render_rotations.py", *classes], [HERE / "validate_builds.py"], [HERE / "render_builds.py"], [HERE / "render_new_builds.py", *classes], [HERE / "render_modes.py"], [HERE / "render_tier_list.py"], *[[HERE / "scorer/respec.py", c, "--write"] for c in classes],
                  [HERE / "render_optimizer_sections.py"], [HERE / "scorer/compare_effects.py"], [HERE / "scorer/loop_audit.py"],
                  [HERE / "build_launch_checklist.py"], [HERE / "build_beta_checklist.py"], [FL / "summary.py", "--write"]):
         sh(args, a.dry_run, log)

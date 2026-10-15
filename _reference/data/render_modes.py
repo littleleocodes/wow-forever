@@ -44,10 +44,16 @@ DERIVED = {m: json.load(open(HERE / f"derived-{m}.json", encoding="utf-8")) if (
            for m in ("leveling", "raid", "pvp")}
 
 
-def ml_tiers():
-    """{(class, spec): record} of the machine-learning pipeline (raidsim/ml_pipeline.py) with a pre-BiS or BiS result."""
+ML_KEYS = ("bis-dummy", "bis-raid", "prebis-dummy", "prebis-raid")   # raidsim/ml_builds.KEYS
+
+
+def ml_complete(r):
+    """A finished record (as raidsim/ml_builds.complete: every tier x setting searched and the comparison race run)."""
+    return all(k in (r.get("search") or {}) for k in ML_KEYS) and "compare" in r
+
+
+def _ml_records(d):
     out = {}
-    d = HERE / "raidsim" / "ml"
     for p in sorted(d.glob("*.json")) if d.exists() else []:
         if p.name in ("spell-probe.json", "rotations.json"):
             continue
@@ -57,16 +63,25 @@ def ml_tiers():
             continue
         if r.get("class") and any(((r.get("search") or {}).get(k) or {}).get("winner") for k in ("bis-dummy", "prebis-dummy")):
             out[(r["class"], r["spec"])] = r
-    # a spec whose record is being re-run (ml_pipeline --fresh keeps the finished one in ml/prev/, 2026-10-08) shows the previous run's
-    # tiers, flagged, instead of losing its gear tables until the new run ends
-    for p in sorted((d / "prev").glob("*.json")) if (d / "prev").exists() else []:
-        try:
-            r = json.load(open(p, encoding="utf-8"))
-        except ValueError:
-            continue
-        if r.get("class") and (r["class"], r["spec"]) not in out and any(((r.get("search") or {}).get(k) or {}).get("winner")
-                                                                       for k in ("bis-dummy", "prebis-dummy")):
-            out[(r["class"], r["spec"])] = dict(r, _prev=True)
+    return out
+
+
+def ml_tiers():
+    """{(class, spec): record} of the machine-learning pipeline (raidsim/ml_pipeline.py) with a pre-BiS or BiS result.
+    2026-10-15 page audit B2: the same choice as raidsim/gear_links.py, so a page's tier numbers and its gear table come from one record:
+    the current record when it is finished, else the finished one ml_pipeline --fresh kept in ml/prev/ (flagged `_prev`), else a
+    current record still being searched (numbers without a gear table)."""
+    d = HERE / "raidsim" / "ml"
+    cur, prev = _ml_records(d), _ml_records(d / "prev")
+    out = {}
+    for k in set(cur) | set(prev):
+        c, p = cur.get(k), prev.get(k)
+        if c and ml_complete(c):
+            out[k] = c
+        elif p and ml_complete(p):
+            out[k] = dict(p, _prev=True)
+        else:
+            out[k] = c or dict(p, _prev=True)
     return out
 
 
@@ -147,10 +162,10 @@ def tier_lines(cls, spec, src, top):
             tl += " (ties this build)"
         o.append(f"| {name} | {tier_dps(r, f'{t}-raid')} | {tl} |")
     o.append("")
-    if r.get("_prev"):
-        o += [f"*From the search run of {r.get('date', 'an earlier date')}; a new run is queued and will replace these numbers.*", ""]
-    else:
-        o += tier_stale_note([tier_date(r)])
+    if r.get("_prev"):   # 2026-10-15 page audit B2: the previous run keeps the stale caveat when it predates the current simulator
+        o += [f"*From the previous search run (searched {tier_date(r) or 'on an earlier date'}); a new run is under way and will replace "
+              "these numbers and the gear.*", ""]
+    o += tier_stale_note([tier_date(r)])
     gt = gear_tables.table(cls, spec)   # every item and enchant linked to Wowhead, where it drops (raidsim/gear_links.py)
     if gt:
         il = "; ".join(f"{name} {(page_gear(r, t) or {}).get('ilvl', '-')}" for t, name in TIER_KEYS if page_gear(r, t))
@@ -165,6 +180,25 @@ def tier_lines(cls, spec, src, top):
             o.append(f"- **{name} gear** (average item level {g.get('ilvl', '-')}): "
                      + "; ".join(f"{SLOTS[i] if i < len(SLOTS) else '?'}: {n}" for i, n in enumerate(g["names"]) if n))
     return o + [""]
+
+
+def support_gear(cls, spec, role):
+    """A healer or tank raid page's pre-BiS and BiS sets (2026-10-15, user decision of 2026-10-14: real sets for both, the same linked
+    table as the damage pages). Tanks: chosen in the community simulator on tank value (raidsim/tank_gear.py); healers: chosen by stat
+    weights measured in this project's healer lab (heallab/heal_gear.py)."""
+    gt = gear_tables.table(cls, spec, role)
+    if not gt:
+        return []
+    s = gear_tables.spec(cls, spec, role) or {}
+    il = "; ".join(f"{name} {s['ilvl'][t]}" for t, name in TIER_KEYS if (s.get("ilvl") or {}).get(t))
+    how = ("chosen in the community simulator on tank value, threat and damage taken, for this build in a full raid. The simulator's item "
+           "database lists base armor for only about one armor item in five, so these sets were chosen with Classic's armor values filled "
+           "in for the rest, our assumption: Forever may have changed some" if role == "tank" else
+           "chosen by the stat weights this project's healer lab measures for this build, the healing capacity each stat adds; "
+           "healers are in no community simulator, so this is our model")
+    o = [f"**The gear** (average item level: {il}; {how}; each item opens its Wowhead page, with where it drops and its enchant):", ""] + gt + [""]
+    sl = gear_tables.sim_line(cls, spec, role=role)
+    return o + ([sl, ""] if sl else [])
 
 
 def tier_table(cls, specs, src):
@@ -218,23 +252,37 @@ def leveling_numbers(cls):
     """{build id: {level: seconds per kill}} from the fight lab reports (main build and the compared ones) and spec-builds.json."""
     out = {}
     d = paths.fightlab_dir(cls)
-    for f in sorted(d.glob("*.json")) if d.exists() else []:
+    # 2026-10-15 page audit B13: the newest report first, and none older than the data the fight lab now runs on. Before, setdefault over
+    # the sorted file names let a stale variant report win (Elemental leveling 38 s from elemental-dps-opt.json, a 70009 run of
+    # 2026-09-29, ahead of elemental-dps.json of 2026-10-09). The reports carry no date or data build of their own (their .md said
+    # "70009" whatever the data until 2026-10-09), so a report's date is its last commit (its file time while uncommitted), and it
+    # counts only from the day the current talent and spell data were captured (data_build.CAPTURED).
+    cands = {}   # build id -> [(sort key, levels, the rotation it played)]
+    for f in (d.glob("*.json") if d.exists() else []):
+        if f.stem.endswith(("-aoe", "sensitivity", "-calibration")):
+            continue
+        fd = report_date(f)
+        if DATA_CAPTURED and fd < DATA_CAPTURED:
+            continue
         try:
             rep = json.load(open(f, encoding="utf-8"))
         except ValueError:
             continue
         if not isinstance(rep, dict) or "levels" not in rep or "build" not in rep or rep.get("mob_level_offset") or rep.get("gear", "greens") != "greens":
             continue
-        if f.stem.endswith(("-aoe", "sensitivity", "-calibration")):
-            continue
-        per = {int(L): r["time_per_kill"] for L, r in rep["levels"].items() if isinstance(r, dict) and "time_per_kill" in r}
-        out.setdefault(rep["build"], per)
-        LEVEL_MODEL.setdefault((cls, rep["build"]), rep.get("spec"))
-        for bid, lv in (rep.get("compare") or {}).items():
-            out.setdefault(bid, {int(L): r["time_per_kill"] for L, r in lv.items() if isinstance(r, dict) and "time_per_kill" in r})
+        rows = [(rep["build"], rep["levels"], True)] + [(bid, lv, False) for bid, lv in (rep.get("compare") or {}).items()]
+        for bid, lv, main in rows:
             # an optimizer build plays under its own model (fightlab/run.py spec_of_build): opt-<model>-<profile>
             own = next((m for m in STEPS.get(cls, {}) if bid.startswith(f"opt-{m}-")), None)
-            LEVEL_MODEL.setdefault((cls, bid), own or rep.get("spec"))
+            per = {int(L): r["time_per_kill"] for L, r in lv.items() if isinstance(r, dict) and "time_per_kill" in r}
+            # the newest report; on one date the report of the build's own rotation (mage: frostfire-leveling.json also runs
+            # opt-frost-leveling-leveling-st), then the one it is the main build of, then the file name
+            key = (fd, own is None or own == rep.get("spec"), main, [-ord(c) for c in f.name])
+            cands.setdefault(bid, []).append((key, per, (own if not main else None) or rep.get("spec")))
+    for bid, cs in cands.items():
+        _, per, model = max(cs, key=lambda x: x[0])
+        out[bid] = per
+        LEVEL_MODEL.setdefault((cls, bid), model)
     for tree, rec in (DERIVED["leveling"].get(cls) or {}).items():   # derived builds: the race's numbers (seed 3)
         if rec.get("verdict") in ("replaces", "new") and rec.get("levels"):
             bid = f"{SM.slug(tree)}-leveling"
@@ -259,6 +307,29 @@ def leveling_numbers(cls):
             out[bid] = {int(L): v for L, v in rec["levels"].items()}
             LEVEL_MODEL[(cls, bid)] = rec["rotation"]
     return out
+
+
+_DIRTY = []
+
+
+def report_date(f):
+    """A report's date (YYYY-MM-DD): its last commit, or its file time when it is new or changed since (a regenerated report)."""
+    import subprocess
+    if not _DIRTY:   # files changed or untracked in the working tree, read once
+        try:
+            st = subprocess.run(["git", "status", "--porcelain", "--untracked-files=all"], cwd=ROOT, capture_output=True, text=True,
+                                encoding="utf-8").stdout
+        except OSError:
+            st = ""
+        _DIRTY.append({(ROOT / ln[3:].strip().strip('"')).resolve() for ln in st.splitlines() if len(ln) > 3})
+    mtime = datetime.date.fromtimestamp(f.stat().st_mtime).isoformat()
+    if f.resolve() in _DIRTY[0]:
+        return mtime
+    try:
+        cd = subprocess.run(["git", "log", "-1", "--format=%cs", "--", str(f)], cwd=ROOT, capture_output=True, text=True).stdout.strip()
+    except OSError:
+        cd = ""
+    return cd or mtime
 
 
 def open_leveling(cls, whole=False):
@@ -422,11 +493,19 @@ def bname(cls, b):
         # 2026-10-09 (the class reviews): always the spec's name, never the scorer model's ("Two-handed Retribution", "Raid Frostbolt with
         # Ice Lance on Fingers of Frost charges" had read as other specs); the weapon variant and the scenario keep two apart
         prof = rest[len(model) + 1:] if model else ""
+        if not model:   # a model no rotation map names (the mage's frost-aoe): its profile from the id's end (2026-10-15 page audit B9: the
+                        # AoE grinding build read "Frost (optimized)" like the single-target one)
+            prof = max((p for p in OPT_PROFILE if rest.endswith("-" + p)), key=len, default="")
         parts = [SM.RAID_ENTRY_VARIANT.get((cls, model), "").lower()] if model and SM.mode_of(b) != "leveling" else []
         parts = [x for x in parts if x and x not in SM.spec_name(cls, spec).lower()]   # "Shadow Bolt hybrid", not "... (optimized, shadow bolt)"
         parts.append(OPT_PROFILE.get(prof, "") or ("tank" if prof == "raid-tank" and "Protection" not in spec else ""))   # the bear beside the cat
         parts = [x for x in parts if x]
-        return f"{SM.spec_name(cls, spec)} (optimized{', ' + ', '.join(parts) if parts else ''})"
+        sn = SM.spec_name(cls, spec)
+        m = re.fullmatch(r"(.+) \((.+)\)", sn)
+        if m:   # "Melee (split, optimized)", not "Melee (split) (optimized)" (2026-10-15 page audit B9)
+            sn, parts = m.group(1), [m.group(2) + ", optimized"] + parts
+            return f"{sn} ({', '.join(parts)})"
+        return f"{sn} (optimized{', ' + ', '.join(parts) if parts else ''})"
     return n
 
 
@@ -465,7 +544,7 @@ def recommended(cls, g, specs, mode, nums):
 
 
 # ------------------------------------------------------------------------------------------------ pages
-def variant_lines(cls, top, builds, nums, src):
+def variant_best(cls, top, builds, nums):
     """Weapon and stance setups of a spec's raid play (2026-10-08, the improvement log's "weapon variants on the pages"; user: "Do all of
     them"): for each setup of the spec (spec_modes.RAID_ENTRY_VARIANT) other than the pick's, the spec's best build raced in that setup's
     entries, by full-raid DPS (own-rotation rule kept), so a player with swords, a two-hander or no pet sees the build for it."""
@@ -484,15 +563,28 @@ def variant_lines(cls, top, builds, nums, src):
         g = x["row"].get("raid")
         if g and (v not in best or g > best[v][1]):
             best[v] = (lab, g)
+    return own_var, best, ids
+
+
+def variant_lines(cls, top, builds, nums, src):
+    """The "Other setups" lines of variant_best."""
+    own_var, best, ids = variant_best(cls, top, builds, nums)
     if not best:
         return []
     o = ["**Other setups of this spec.** " + (f"This build is the {own_var} setup. " if own_var else "")
          + "The spec's best build for each other setup, in a full raid:", ""]
     for v, (lab, g) in sorted(best.items(), key=lambda kv: -kv[1][1]):
         b = ids[lab]
-        o.append(f"- {v}: " + ("this build too" if lab == top["id"] else f"{link(cls, b, src)} ({rs.split_of(cls, rs.flat(b))})")
-                 + f", {g:.0f} DPS in a full raid — {tree_link(cls, b)}")
+        # the same form as "Other builds" (2026-10-15 page audit B9), where these builds are no longer listed a second time
+        o.append(f"- {v}: " + (f"this build too ({g:.0f} DPS in a full raid)" if lab == top["id"]
+                               else f"{link(cls, b, src)} ({rs.split_of(cls, rs.flat(b))}, {g:.0f} DPS in a full raid)")
+                 + f" — {tree_link(cls, b)}")
     return o + [""]
+
+
+def variant_ids(cls, top, builds, nums):
+    """The builds the "Other setups" lines list (kept out of "Other builds", 2026-10-15 page audit B9)."""
+    return {lab for lab, _ in variant_best(cls, top, builds, nums)[1].values()}
 
 
 def mode_section(cls, spec, mode, builds, nums, src):
@@ -500,7 +592,9 @@ def mode_section(cls, spec, mode, builds, nums, src):
     R, L, H = nums
     o = []
     ranked = rank_builds(cls, mode, builds, nums)
-    if mode == "leveling" and not ranked:
+    # 2026-10-15 page audit B10: a hybrid without a leveling build takes the hybrid branch below (the Smite priest's leveling page had
+    # read "No leveling build for this spec yet")
+    if mode == "leveling" and not ranked and not spec.startswith("Hybrid "):
         other = SM.LEVEL_AS.get((cls, spec))
         if other:
             o += [f"{spec} is a {'healing' if cls in SM.HEAL_TREES and spec in SM.HEAL_TREES[cls] else 'tanking'} spec: level as **{other}** "
@@ -520,16 +614,26 @@ def mode_section(cls, spec, mode, builds, nums, src):
         return ["No build for this spec in this mode yet.", ""]
     top = ranked[0]
     o += [f"**{link(cls, top, src)}** ({rs.split_of(cls, rs.flat(top))}) — {tree_link(cls, top)}", ""]
+    B = rr.builds(cls)
     if top.get("raid_path"):   # a healer or tank spec levels straight into its raid build (user decision, 2026-09-30)
         dv = (DERIVED["leveling"].get(cls) or {}).get(spec) or {}
         ords = dv.get("orders") or {}
-        o += [f"> {DER_MARK} These are your **raid talents** ([{top['raid_path']}](../raid/{SM.spec_slug(cls, spec)}.md)), taken in the order "
+        rp = B.get(top["raid_path"])
+        # 2026-10-15 page audit B8: the raid build's player name, not its id; and say so when the raid page now recommends another build
+        rtop = rank_builds(cls, "raid", SM.grid(cls, list(B.values())).get(spec, {}).get("raid", []), nums)
+        rtop = rtop[0] if rtop else None
+        same = rp is not None and (rtop is None or rs.flat(rtop) == rs.flat(rp))
+        o += [f"> {DER_MARK} These are " + ("your **raid talents**" if same else "the talents of a **raid build**")
+              + f" ([{bname(cls, rtop if same and rtop else rp) if rp else top['raid_path']}](../raid/{SM.spec_slug(cls, spec)}.md)"
+              + ("" if same else f"; the raid page now recommends {bname(cls, rtop)}") + "), taken in the order "
               f"that levels fastest: the fight lab raced three orders to them"
               + (" (" + "; ".join(f"{k}: {v['weighted']:.0f} s per kill" for k, v in sorted(ords.items(), key=lambda kv: kv[1]['weighted'])) + ")"
                  if ords else "") + ". A model of the beta, to check at launch.", ""]
     elif top.get("derived"):
         o += [f"> {DER_MARK} Derived build: " + derived_text(mode, top)
-              + (f"; it beat the hand-made build ({top['replaces']}), which stays below as the alternative" if top.get("replaces") else "")
+              + (f"; it beat the hand-made build ({bname(cls, B[top['replaces']]) if top['replaces'] in B else 'no longer listed'})"
+                 + (", which stays below as the alternative" if top["replaces"] in {b["id"] for b in ranked[1:]} else "")
+                 if top.get("replaces") else "")   # 2026-10-15 page audit B8: its player name, not its id
               + ". A model of the beta, to check at launch.", ""]
     elif top.get("generated"):
         o += [f"> {GEN_MARK} Generated build: no hand-made {spec} build exists for this mode yet, so this is the stats model's best {spec} build"
@@ -550,7 +654,9 @@ def mode_section(cls, spec, mode, builds, nums, src):
             # leveling split came out of the Holy rotation's search without Holy Shock (2026-10-07)
             held = {n for items in top["allocation"].values() for n, r in items if r}
             named = {m for x in (st.get("before") or []) + list(st.get("steps") or []) + (st.get("between") or []) for m in re.findall(r"\*\*(.+?)\*\*", x)}
-            lacking = sorted(n for n in named if n in talent_spells(cls) and n not in held)
+            # 2026-10-15 page audit B11: every talent the steps name, passive ones too (Maelstrom Weapon, Renewed Hope, Missile Barrage
+            # had stayed in the steps of builds without them); before, only talents that grant an active spell counted
+            lacking = sorted(n for n in named if (n in talent_spells(cls) or n in simple_rotation.talent_names(cls)) and n not in held)
             if lacking:
                 play += ["**Not in this build:** " + ", ".join(f"**{n}**" for n in lacking) + (" is a talent this build does not take" if len(lacking) == 1 else " are talents this build does not take")
                          + ": skip the lines that use " + ("it" if len(lacking) == 1 else "them") + ". The fight lab played the build without "
@@ -595,8 +701,10 @@ def mode_section(cls, spec, mode, builds, nums, src):
             if h:
                 numbers += ["## The numbers", "", f"Healing capacity {h['capacity']:.2f} (the raid damage it heals through in this project's healer lab), "
                             f"{h['hps']:.0f} healing per second. Healers are not in the community simulator.", ""]
+            numbers += support_gear(cls, spec, "heal")
         elif r and r.get("tank"):
             numbers += ["## The numbers", "", f"Tank value {r['value']:.3f} (threat and damage taken under a boss, relative to our reference tank build).", ""]
+            numbers += support_gear(cls, spec, "tank")
         elif r:
             numbers += ["## The numbers", "", "| Setting | DPS |", "|---|---|"]
             nn = (json.load(open(HERE / "raidsim" / "specs.json", encoding="utf-8")).get(cls, {}).get(r["entry"]) or {}).get("numbers_note")
@@ -640,8 +748,9 @@ def mode_section(cls, spec, mode, builds, nums, src):
             quiet = [u for u in UNUSED.get((cls, top["id"]), []) if u["kind"] != "wasted"]
             if quiet:   # talents the build takes whose ability has no line in the rotation (2026-10-02, user report on unused abilities)
                 play += ["**Talents with no line below:** " + "; ".join(f"**{u['talent']}**: {u['advice']}" for u in quiet) + ".", ""]
-            if prio:
-                play += ["**Then press the first one that is ready**, top to bottom:", ""] + [f"{i}. {x}" for i, x in enumerate(prio, 1)]
+            if prio:   # "Then" only after a pre-pull, keep-up or talent line (2026-10-15 page audit B9)
+                then = play[-2:] != ["## How to play", ""]
+                play += [("**Then press" if then else "**Press") + " the first one that is ready**, top to bottom:", ""] + [f"{i}. {x}" for i, x in enumerate(prio, 1)]
                 # the filler: the last line when it has no condition and no cooldown (2026-10-09: Bloodrage, Aimed Shot, Fire Nova had been
                 # called fillers); else what fills the gaps on its own (Auto Shot, white swings)
                 fill = simple_rotation.filler(cls, prio)
@@ -697,11 +806,25 @@ def mode_section(cls, spec, mode, builds, nums, src):
         mdl = LEVEL_MODEL.get((cls, top["id"])) or (GEN.get(cls, {}).get(top["id"], {}) or {}).get("model") or rs.leveling_pick(cls)[1]
         gl = guides.render(cls, spec, mode, f"leveling:{mdl}", guides.leveling_fingerprint(cls, mdl))
     o += play + gl + talents + numbers
+    if mode == "raid" and not (R.get(top["id"]) or {}).get("tank"):
+        # a damage spec that also holds the class's tank builds (the druid's bear in Feral Combat, 2026-10-15): the best tank build with
+        # its numbers and gear, as on the Protection pages
+        tb = [b for b in builds if (R.get(b["id"]) or {}).get("tank")]
+        if tb:
+            bt = max(tb, key=lambda b: R[b["id"]].get("value") or 0)
+            rt = R[bt["id"]]
+            o += ["## Tanking", "", f"**{link(cls, bt, src)}** ({rs.split_of(cls, rs.flat(bt))}) — {tree_link(cls, bt)}", "",
+                  f"Tank value {rt['value']:.3f} (threat and damage taken under a boss, relative to our reference tank build)"
+                  + (f": {rt['row']['threat']:.0f} threat and {rt['row']['dtps']:.0f} damage taken per second in a full raid." if rt["row"].get("threat") else "."), ""]
+            o += support_gear(cls, spec, "tank")
     alts = [b for b in ranked[1:] if not b["id"].endswith("-parse")]
     # one entry per talent set (2026-10-09: an optimizer that reproduced a hand draft, or its raid and solo exports, listed twice)
     same = {json.dumps(sorted(rs.flat(top).items()))}
     uniq = []
+    shown_setups = variant_ids(cls, top, builds, nums) if mode == "raid" else set()
     for b in alts:
+        if b["id"] in shown_setups:   # already under "Other setups of this spec" (2026-10-15 page audit B9)
+            continue
         k = json.dumps(sorted(rs.flat(b).items()))
         if k not in same:
             same.add(k)
@@ -714,15 +837,54 @@ def mode_section(cls, spec, mode, builds, nums, src):
             if mode == "raid" and (R.get(b["id"]) or {}).get("group") and not (R.get(b["id"]) or {}).get("tank"):
                 extra = f", {R[b['id']]['group']:.0f} DPS in a full raid"   # no dummy number on the pages (user decision, 2026-10-04)
             if mode == "leveling" and weighted(L.get(b["id"]) or {}):
-                extra = f", {weighted(L[b['id']]):.0f} s per kill (level-weighted)"
+                extra = f", {weighted(L[b['id']]):.0f} s per kill, level-weighted"   # no nested parentheses (2026-10-15 page audit B17)
             o.append(f"- {link(cls, b, src)} ({rs.split_of(cls, rs.flat(b))}{extra}) — {tree_link(cls, b)}")
         o.append("")
     return o
 
 
+def build_suffix(cls, spec, b, mode):
+    """The build's name after its spec's link in a ranking, without repeating the spec (2026-10-15 page audit B17: "Frost — Frost —
+    Leveling", "Feral Combat — Feral Combat (optimized)"): " — Arcane Blast", " (optimized)", "" for "<spec> — Leveling"."""
+    n, sn = bname(cls, b), SM.spec_name(cls, spec)
+    if n == sn:
+        return ""
+    if n.startswith(sn + " — "):
+        rest = n[len(sn) + 3:]
+        return "" if rest.lower() in (mode, SM.MODE_TITLE[mode].split(" (")[0].lower()) else f" — {rest}"
+    if n.startswith(sn + " ("):
+        return n[len(sn):]
+    return f" — {n}"
+
+
 def gap_text(x):
     """A gap behind the best: one decimal under 1% (a 0.3% gap had printed as "-0%")."""
-    return f"{x:+.1%}" if abs(x) < 0.01 else f"{x:+.0%}"
+    # rounded before the test (2026-10-15 page audit B9: 0.997% printed "+1.0%" next to "+1%")
+    return f"{x:+.1%}" if round(abs(x) * 100, 1) < 1 else f"{x:+.0%}"
+
+
+def support_picks(cls, g, specs, nums):
+    """(tanks [(spec, build)], healers [(-capacity, spec, build)] best first) of a class's raid pages: each spec's raid pick when it is a
+    tank or healer build, and a damage spec's tank build (the druid's bear in Feral Combat)."""
+    R, L, H = nums
+    tanks, heals = [], []
+    for spec in specs:
+        ranked = rank_builds(cls, "raid", g[spec]["raid"], nums)
+        if not ranked:
+            continue
+        b = ranked[0]
+        if b.get("role") == "healer":
+            heals.append((-(H.get(b["id"], {}).get("capacity") or 0), spec, b))
+        elif (R.get(b["id"]) or {}).get("tank"):
+            tanks.append((spec, b))
+    for spec in specs:   # a spec whose pick is a damage build can hold the class's tank build too (the druid's bear in Feral Combat)
+        if any(s2 == spec for s2, _ in tanks):
+            continue
+        tb = [b for b in (g.get(spec) or {}).get("raid", []) if (R.get(b["id"]) or {}).get("tank")]
+        if tb:
+            tanks.append((spec, max(tb, key=lambda b: R[b["id"]].get("value") or 0)))
+    heals.sort(key=lambda x: x[0])
+    return tanks, heals
 
 
 def ranking(cls, g, specs, mode, nums, prefix=""):
@@ -736,7 +898,7 @@ def ranking(cls, g, specs, mode, nums, prefix=""):
         if ranked:
             rows.append((spec, ranked[0]))
     page = lambda spec: f"{prefix}{SM.spec_slug(cls, spec)}.md"   # noqa: E731
-    name = lambda spec, b: f"[{SM.spec_name(cls, spec)}]({page(spec)}) — {bname(cls, b)}" + mark(b)   # noqa: E731
+    name = lambda spec, b: f"[{SM.spec_name(cls, spec)}]({page(spec)}){build_suffix(cls, spec, b, mode)}" + mark(b)   # noqa: E731
     o = []
     if mode == "leveling":
         scored = sorted(((weighted(L.get(b["id"]) or {}), spec, b) for spec, b in rows if weighted(L.get(b["id"]) or {})), key=lambda x: x[0])
@@ -752,14 +914,11 @@ def ranking(cls, g, specs, mode, nums, prefix=""):
                   + ", ".join(f"{spec} levels as {SM.LEVEL_AS[(cls, spec)]}" for spec in lv) + "."]
         o.append("")
     elif mode == "raid":
-        dps, tanks, heals = [], [], []
+        dps = []
         for spec, b in rows:
-            if b.get("role") == "healer":
-                heals.append((-(H.get(b["id"], {}).get("capacity") or 0), spec, b))
-            elif (R.get(b["id"]) or {}).get("tank"):
-                tanks.append((spec, b))
-            elif (R.get(b["id"]) or {}).get("group"):
+            if b.get("role") != "healer" and not (R.get(b["id"]) or {}).get("tank") and (R.get(b["id"]) or {}).get("group"):
                 dps.append((-R[b["id"]]["group"], spec, b))
+        tanks, heals = support_picks(cls, g, specs, nums)
         if dps:
             dps.sort(key=lambda x: x[0])
             best = -dps[0][0]
@@ -768,16 +927,9 @@ def ranking(cls, g, specs, mode, nums, prefix=""):
             for i, (d, spec, b) in enumerate(dps, 1):
                 o.append(f"| {i} | {name(spec, b)} | {-d:.0f} | {'best' if i == 1 else gap_text(-d / best - 1)} |")
             o.append("")
-        for spec in specs:   # a spec whose pick is a damage build can hold the class's tank build too (the druid's bear in Feral Combat)
-            if any(s2 == spec for s2, _ in tanks):
-                continue
-            tb = [b for b in (g.get(spec) or {}).get(mode, []) if (R.get(b["id"]) or {}).get("tank")]
-            if tb:
-                tanks.append((spec, max(tb, key=lambda b: R[b["id"]].get("value") or 0)))
         if tanks:
             o += ["**Tanking**: " + ", ".join(name(spec, b) for spec, b in tanks) + ".", ""]
         if heals:
-            heals.sort(key=lambda x: x[0])
             o += ["**Healing**" + (" (ranked by the healer lab's capacity: the multiple of the lab's standard raid damage the healer keeps "
                                    "up with)" if len(heals) > 1 else "") + ": "
                   + ", ".join(name(spec, b) + (f" (capacity {-c:.2f})" if len(heals) > 1 and c else "") for c, spec, b in heals) + ".", ""]
@@ -844,11 +996,13 @@ def class_pages(cls):
         for old in d.glob("*.md"):
             old.unlink()   # generated folder: pages of specs that no longer have builds go away
         for spec in specs:
+            if spec.startswith("Hybrid") and not g[spec][mode]:
+                continue   # 2026-10-15 page audit D7: a hybrid's page in a mode it has no build for was a stub no page linked to
             src = d / f"{SM.spec_slug(cls, spec)}.md"
             o = [f"# {spec_title(cls, spec)} — {SM.MODE_TITLE[mode]}", "",
                  f"[{cls.capitalize()}](../README.md) > [{SM.MODE_TITLE[mode]}](README.md) > {SM.spec_name(cls, spec)}", ""]
             if (cls, spec) in SM.HYBRID_NAMES:
-                o += [f"*{SM.HYBRID_NAMES[(cls, spec)][2]}* (a hybrid: {spec.split(' ', 1)[1]}).", ""]
+                o += [f"*{SM.hybrid_line(cls, spec, mode)}* (a hybrid: {spec.split(' ', 1)[1]}).", ""]   # a line per mode (2026-10-15, audit C5)
             if spec in rec[mode]:
                 o += [f"**{BADGE}** for {SM.MODE_TITLE[mode].split(' (')[0].lower()} (the best {cls} spec here, or within {TIE:.0%} of it).", ""]
             o += mode_section(cls, spec, mode, g[spec][mode], nums, src)
@@ -879,7 +1033,11 @@ def class_pages(cls):
         o += ["### Hybrid builds", "", "Builds that spend their points across two trees, each made for a particular job. They are listed only for the "
               "modes they are built for.", "", "| Hybrid | What it is | Builds |", "|---|---|---|"]
         for h in hyb:
-            what = SM.HYBRID_NAMES[(cls, h)][2] if (cls, h) in SM.HYBRID_NAMES else f"points split between {h.split(' ', 1)[1]}"
+            # the line of each mode it is built for, once when they agree (2026-10-15, audit C5: a hybrid's line may differ by mode)
+            lines = {m: SM.hybrid_line(cls, h, m) for m in PAGE_MODES if g[h][m]} if (cls, h) in SM.HYBRID_NAMES else {}
+            what = (next(iter(lines.values())) if len(set(lines.values())) == 1
+                    else "<br>".join(f"{SM.MODE_TITLE[m].split(' (')[0]}: {x}" for m, x in lines.items()) if lines
+                    else f"points split between {h.split(' ', 1)[1]}")
             cells = [f"{SM.MODE_TITLE[m].split(' (')[0]}: " + cell(cls, h, m, g[h][m], nums, readme, rec=h in rec[m]).replace("<br>", " · ")
                      for m in PAGE_MODES if g[h][m]]
             o.append(f"| **{SM.spec_name(cls, h)}** | {what} | " + "<br>".join(cells) + " |")
@@ -901,7 +1059,11 @@ def class_pages(cls):
     raid = best("raid", lambda b: -((R.get(b["id"]) or {}).get("group") or 0))
     roles = ["damage"] + (["tank"] if cls in SM.TANK_TREE else []) + (["healer"] if cls in SM.HEAL_TREES else [])
     solo = lambda sp: (R.get(rank_builds(cls, "raid", g[sp]["raid"], nums)[0]["id"]) or {}).get("dps")   # noqa: E731
-    return {"cls": cls, "lvl": [(sp, v) for v, sp in lvl], "raid": [(sp, -v, solo(sp)) for v, sp in raid], "roles": roles}
+    tanks, heals = support_picks(cls, g, specs, nums)
+    # the tank and healer picks for the index (2026-10-15 page audit B18): (spec, the build's name when it is not the spec page's pick)
+    tank_rows = [(sp, None if rank_builds(cls, "raid", g[sp]["raid"], nums)[0]["id"] == b["id"] else bname(cls, b)) for sp, b in tanks]
+    return {"cls": cls, "lvl": [(sp, v) for v, sp in lvl], "raid": [(sp, -v, solo(sp)) for v, sp in raid], "roles": roles,
+            "tank": tank_rows, "heal": [(sp, -c) for c, sp, _ in heals]}
 
 
 def root_page(infos):
@@ -912,17 +1074,24 @@ def root_page(infos):
          "**How to use it:** pick your class below. Its page has a grid of every spec against the two modes (leveling, raid), the "
          "recommended picks marked, and a ranking of the specs for each mode. Every link in the grid opens a build page: the talents (with a "
          "talent calculator link), the order to take them while leveling, and what to press.", "",
-         "| Class | Roles | Fastest leveling (solo) | Most raid damage (DPS in a full raid) |", "|---|---|---|---|"]
+         "| Class | Roles | Fastest leveling (solo) | Most raid damage (DPS in a full raid) | Raid healing | Raid tanking |",
+         "|---|---|---|---|---|---|"]
     for i in infos:
         cls = i["cls"]
         lvl = ", ".join(f"[{SM.spec_name(cls, sp)}]({cls}/leveling/{SM.spec_slug(cls, sp)}.md) ({v:.0f} s/kill)" for sp, v in i["lvl"]) or "-"
         raid = ", ".join(f"[{SM.spec_name(cls, sp)}]({cls}/raid/{SM.spec_slug(cls, sp)}.md) ({v:.0f} DPS)"
                          for sp, v, pv in i["raid"]) or "-"
-        o.append(f"| [**{cls.capitalize()}**]({cls}/README.md) | {', '.join(i['roles'])} | {lvl} | {raid} |")
-    o += ["", "Two specs in one cell are a tie (within 3% of each other; the best spec of the class by DPS in a full raid). Leveling times "
-          "compare across classes: every class runs in the same fight simulator, solo against same-level mobs. Raid numbers assume a group: "
-          "every raid buff and debuff is up, which is where classes that live on raid buffs (warriors' rage, hunters' and shamans' mana) "
-          "do their real damage.", "",
+        # healer and tank picks, as on the class pages (2026-10-15 page audit B18): healers by the healer lab's capacity, tanks listed
+        heal = ", ".join(f"[{SM.spec_name(cls, sp)}]({cls}/raid/{SM.spec_slug(cls, sp)}.md)" + (f" (capacity {c:.2f})" if len(i["heal"]) > 1 and c else "")
+                         for sp, c in i["heal"]) or "-"
+        tank = ", ".join(f"[{SM.spec_name(cls, sp)}]({cls}/raid/{SM.spec_slug(cls, sp)}.md)" + (f" ({n})" if n else "")
+                         for sp, n in i["tank"]) or "-"
+        o.append(f"| [**{cls.capitalize()}**]({cls}/README.md) | {', '.join(i['roles'])} | {lvl} | {raid} | {heal} | {tank} |")
+    o += ["", "Several specs in one damage or leveling cell share the recommendation: each is within 3% of the class's best spec in that "
+          "column, a tie in the simulations. Leveling times compare across classes: every class runs in the same fight simulator, solo "
+          "against same-level mobs. Raid numbers assume a group: every raid buff and debuff is up, which is where classes that live on raid "
+          "buffs (warriors' rage, hunters' and shamans' mana) do their real damage. Healers are ranked within their class by the healer "
+          "lab's capacity (this project's healing model; healers are not in the community simulator); tanks are listed, not ranked.", "",
           "## How to read the numbers", "",
           "- **Full raid DPS** (what raid pages rank and recommend on): your personal damage against a raid boss over a 3-minute fight with "
           "every raid buff and debuff up, as in a real raid group. Each spec's raid page shows where its raid gain comes from (mana, armor "
@@ -931,6 +1100,8 @@ def root_page(infos):
           f"- **{BADGE}**: the best spec for that mode in its class, or within 3% of it. **{GEN_MARK}**: a generated build (a starting point).",
           "- Everything is a simulation of the beta, not a measurement in the game. Treat differences under 2-3% as a tie.", "",
           "## Everything else", "",
+          "- [Tier list](tier-list.md): every spec of every class in S/A/B/C tiers for raid damage and healing (the tanks listed), from "
+          "the same picks and numbers as the class pages.",
           "- [Raid DPS rankings by gear tier](_reference/dps-rankings.md): every raid damage spec in pre-BiS and phase-1 BiS gear, in a "
           "full raid, with its best talents and gear for each.",
           "- [_reference/README.md](_reference/README.md): how the project works, its tools and its rules.",

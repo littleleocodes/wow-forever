@@ -1,37 +1,38 @@
-# Optimizer — Melee hunter (Forever): dual-wield white swings under Aspect of the Beast, Raptor Strike on the next swing, Mongoose Bite after dodges and Expose Prey procs, Strider Kick on cooldown, Counterattack after parries, the Lacerating Strikes bleed, one Serpent Sting from the pull (the 8 yd minimum range stops every other shot in melee), and the pet unless Lone Wolf (leveling-st) — 9/13/29
+# Optimizer — Melee hunter (Forever): dual-wield white swings under Aspect of the Beast, Raptor Strike on the next swing, Mongoose Bite after dodges and Expose Prey procs, Strider Kick on cooldown, Counterattack after parries, the Lacerating Strikes bleed, one Serpent Sting from the pull (the 8 yd minimum range stops every other shot in melee), and the pet unless Lone Wolf (leveling-st) — 15/10/26
 
 *[Hunter](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 9/13/29 (Beast Mastery / Marksmanship / Survival) |
+| **Build** | 15/10/26 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70291 (2026-10-08 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dps` and profile `leveling-st`: score +40.7% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dps` and profile `leveling-st`: score +41.2% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
-### Beast Mastery (9)
+### Beast Mastery (15)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Deadly Aspects** | 5/5 | **NEW** | While Aspect of the Hawk is active, Auto Shot has a 10% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by 30% for 12 sec. |
 | **Focused Fire** | 2/2 | **NEW** | Increases all damage you and your pet deal by 2% while your pet is active. |
 | **Pathfinding** | 2/2 | moved | Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 6%. |
+| **Improved Revive Pet** | 1/2 | unchanged | Revive Pet's casting time is reduced by 3 sec, mana cost is reduced by 20%, and increases the health your pet returns with by an additional 15%. |
+| **Unleashed Fury** | 5/5 | changed | Increases the damage done by your pets and hawks by 15%. |
 
-### Marksmanship (13)
+### Marksmanship (10)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
-| **Improved Stings** | 3/3 | **NEW** | Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
 
-### Survival (29)
+### Survival (26)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -40,13 +41,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dp
 | **Savage Strikes** | 2/2 | changed | Increases the critical strike chance of all your melee abilities by 4%. |
 | **Surefooted** | 3/3 | changed | Increases your hit chance by 3% and reduces the duration of movement impairing effects on you by 30%. |
 | **Deterrence** | 1/1 | unchanged | When activated, increases your Dodge and Parry chance by 25% for 10 sec. |
-| **Counterattack** | 1/1 | changed | A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 13 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried. |
 | **Predator's Edge** | 5/5 | **NEW** | Increases your melee critical strike damage by 30% and your Off Hand weapon damage by 50%. |
 | **Strider Kick** | 1/1 | **NEW** | A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec. |
 | **Resourcefulness** | 2/2 | **NEW** | Reduces the mana cost of your Trap abilities and melee abilities by 60%. In addition, your critical strikes have a 60% chance to allow 50% of your Mana regeneration to continue while casting for 30 sec. |
 | **Expose Prey** | 2/2 | **NEW** | Your attacks against targets with Hunter's Mark have a 10% chance to activate your Mongoose Bite for 10 sec. |
-| **Survivalist's Discipline** | 2/2 | **NEW** | Reduces the cooldown of your Trap and Deterrence abilities by 40%. |
-| **Lightning Reflexes** | 1/5 | changed | Increases your Agility by 2%. |
+| **Survivalist's Discipline** | 1/2 | **NEW** | Reduces the cooldown of your Trap and Deterrence abilities by 20%. |
 
 ## Leveling order
 
@@ -58,30 +57,29 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dp
 | 20-22 | Survival | Surefooted | 3 | 0/0/13 |
 | 23 | Survival | Deterrence | 1 | 0/0/14 |
 | 24 | Survival | Deflection | 1 | 0/0/15 |
-| 25 | Survival | Counterattack | 1 | 0/0/16 |
-| 26-29 | Survival | Predator's Edge | 4 | 0/0/20 |
+| 25-29 | Survival | Predator's Edge | 5 | 0/0/20 |
 | 30 | Survival | Strider Kick | 1 | 0/0/21 |
-| 31-32 | Survival | Resourcefulness | 2 | 0/0/23 |
-| 33-34 | Survival | Expose Prey | 2 | 0/0/25 |
-| 35 | Survival | Predator's Edge | 1 | 0/0/26 |
-| 36-40 | Marksmanship | Lethal Attacks | 5 | 0/5/26 |
-| 41-43 | Marksmanship | Improved Stings | 3 | 0/8/26 |
-| 44-48 | Marksmanship | Careful Aim | 5 | 0/13/26 |
-| 49-50 | Survival | Survivalist's Discipline | 2 | 0/13/28 |
-| 51-55 | Beast Mastery | Deadly Aspects | 5 | 5/13/28 |
-| 56-57 | Beast Mastery | Focused Fire | 2 | 7/13/28 |
-| 58-59 | Beast Mastery | Pathfinding | 2 | 9/13/28 |
-| 60 | Survival | Lightning Reflexes | 1 | 9/13/29 |
+| 31 | Survival | Resourcefulness | 1 | 0/0/22 |
+| 32-33 | Survival | Expose Prey | 2 | 0/0/24 |
+| 34 | Survival | Resourcefulness | 1 | 0/0/25 |
+| 35-39 | Marksmanship | Lethal Attacks | 5 | 0/5/25 |
+| 40-44 | Marksmanship | Careful Aim | 5 | 0/10/25 |
+| 45-49 | Beast Mastery | Deadly Aspects | 5 | 5/10/25 |
+| 50-51 | Beast Mastery | Focused Fire | 2 | 7/10/25 |
+| 52-53 | Beast Mastery | Pathfinding | 2 | 9/10/25 |
+| 54 | Beast Mastery | Improved Revive Pet | 1 | 10/10/25 |
+| 55-59 | Beast Mastery | Unleashed Fury | 5 | 15/10/25 |
+| 60 | Survival | Survivalist's Discipline | 1 | 15/10/26 |
 
 ## Core talents (priority order)
 
-1. **Resourcefulness** — Removing it costs 7.1 points of score in this model.
-2. **Strider Kick** — Removing it costs 6.0 points of score in this model.
-3. **Predator's Edge** — Removing it costs 3.4 points of score in this model.
-4. **Lethal Attacks** — Removing it costs 2.9 points of score in this model.
-5. **Savage Strikes** — Removing it costs 1.7 points of score in this model.
-6. **Careful Aim** — Removing it costs 1.7 points of score in this model.
-7. **Expose Prey** — Removing it costs 1.5 points of score in this model.
+1. **Strider Kick** — Removing it costs 5.9 points of score in this model.
+2. **Resourcefulness** — Removing it costs 4.4 points of score in this model.
+3. **Expose Prey** — Removing it costs 4.2 points of score in this model.
+4. **Predator's Edge** — Removing it costs 3.6 points of score in this model.
+5. **Lethal Attacks** — Removing it costs 3.6 points of score in this model.
+6. **Unleashed Fury** — Removing it costs 2.0 points of score in this model.
+7. **Careful Aim** — Removing it costs 1.8 points of score in this model.
 8. **Improved Tracking** — Removing it costs 1.4 points of score in this model.
 
 ## Leveling rotation (fight lab)
@@ -94,23 +92,22 @@ What this build casts per kill ([report](../fightlab/melee-dps-opt.md), all leve
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee (off-hand) | 3.1 | 4.2 | 5.8 | 5.8 | 6.5 | 11% |
-| Claw | 3.5 | 4.3 | 4.9 | 5.0 | 5.2 | 5% |
-| Melee | 1.9 | 3.0 | 4.0 | 4.2 | 4.8 | 13% |
-| Growl | 1.9 | 2.5 | 3.2 | 3.3 | 3.5 | 0% |
-| Strider Kick | 0.0 | 1.8 | 2.2 | 2.2 | 2.3 | 8% |
-| Raptor Strike | 1.2 | 1.3 | 1.8 | 1.7 | 1.9 | 9% |
-| Auto Shot | 1.2 | 1.2 | 1.2 | 1.2 | 1.1 | 5% |
-| Serpent Sting | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 17% |
+| Melee (off-hand) | 3.2 | 4.2 | 5.5 | 6.5 | 7.2 | 11% |
+| Claw | 3.6 | 4.1 | 4.7 | 5.0 | 5.3 | 7% |
+| Melee | 1.8 | 2.4 | 3.4 | 4.1 | 4.5 | 12% |
+| Growl | 1.9 | 2.4 | 3.1 | 3.4 | 3.6 | 0% |
+| Raptor Strike | 1.4 | 1.8 | 2.2 | 2.5 | 2.6 | 12% |
+| Strider Kick | 0.0 | 1.7 | 2.0 | 2.2 | 2.4 | 8% |
+| Mongoose Bite | 0.0 | 0.0 | 0.9 | 1.1 | 1.2 | 6% |
+| Auto Shot | 1.2 | 1.2 | 1.2 | 1.1 | 1.1 | 5% |
 | Bite | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2% |
-| Immolation Trap | 0.4 | 0.1 | 0.4 | 0.7 | 0.8 | 12% |
-| Counterattack | 0.0 | 0.0 | 0.1 | 0.3 | 0.5 | 1% |
-| Mongoose Bite | 0.0 | 0.0 | 0.1 | 0.3 | 0.5 | 2% |
+| Hunter's Mark | 0.0 | 0.0 | 1.0 | 1.0 | 1.0 | 0% |
+| Immolation Trap | 0.5 | 0.5 | 0.5 | 0.6 | 1.0 | 13% |
 | Mend Pet | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes
 
-- Report: hunter/talents/forever/optimizer/melee-dps-leveling-st.md
+- Report: hunter/research/talents/forever/optimizer/melee-dps-leveling-st.md
 
 ## Open questions (verify in the live game)
 

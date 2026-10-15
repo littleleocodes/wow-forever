@@ -45,6 +45,7 @@ HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
 sys.path[:0] = [str(ROOT / "_reference/data"), str(HERE)]
 import paths  # noqa: E402
+import fill_enchants as FE  # noqa: E402
 
 _s = importlib.util.spec_from_file_location("aplopt", HERE / "apl_opt.py")
 A = importlib.util.module_from_spec(_s)
@@ -88,8 +89,15 @@ def later_craft(it):
     return bool(srcs) and all(s.get("crafted") for s in srcs) and it.get("name", "").startswith(LATER_PREFIXES)
 
 
+# Items whose database values look like errors (2026-10-15 page audit): kept out of every gear pool.
+SUSPECT_ITEMS = {
+    2816: "Death Speaker Scepter (item level 33): +68 healing and +28 Shadow damage in the fork's database (2ce8265), against +11 and +7 in "
+          "Classic 1.12 (cmangos spells 7679, 7708); the only item level 33 item with that much; every healer set and the Shadow priest's took it",
+}
+
+
 def in_pool(it, zones):
-    if it.get("quality", 0) >= 5 or it.get("quality", 0) < 2 or later_craft(it):
+    if it.get("quality", 0) >= 5 or it.get("quality", 0) < 2 or later_craft(it) or it.get("id") in SUSPECT_ITEMS:
         return False
     so = it.get("scalingOptions", {}).get("0", {})
     zs = {zones.get(s.get("drop", {}).get("zoneId")) for s in it.get("sources", []) if s.get("drop")}
@@ -356,6 +364,8 @@ def main():
         if r["chosen"] == "current" or f'"gear": "{gear}"' not in text:   # kept, or a record of a set no entry uses any more
             continue
         cls = r["members"][0].split("/")[0]
+        if a.classes and cls not in a.classes:   # 2026-10-15: `--apply priest` had rewritten every class's set from the record
+            continue
         gone = [x["id"] for x in r["items"] if x.get("id") and x["id"] not in db]
         if gone:   # 2026-10-06: a record of 2026-10-01 still held the removed Leafre ring (276765) and --apply wrote it into three sets
             print(f"{gear}: NOT applied, its record holds items the simulator no longer has ({gone}); run --write --fresh for it first")
@@ -363,7 +373,11 @@ def main():
         gp = pathlib.Path(gear)   # ui/specs/<class>/<spec>/gear_sets/<name>: the spec folder keeps sets of one class apart
         spec_dir = gp.parent.parent.name if gp.parent.name == "gear_sets" else "project"
         name = gp.name if gp.name.endswith(".p1opt.gear.json") else f"{cls}-{spec_dir}-{gp.name.split('.')[0]}.p1opt.gear.json"   # re-runs: in place
-        (SETS / name).write_text(json.dumps({"items": r["items"]}, indent=1) + "\n", encoding="utf-8")
+        items = [dict(x) for x in r["items"]]
+        tmpl = FE.TEMPLATES.get(FE.role(name) or "")
+        if tmpl:   # 2026-10-15: a record from before fill_enchants (2026-10-09) wrote sets without enchants (Retribution lost all of them)
+            FE.fill(items, tmpl)
+        (SETS / name).write_text(json.dumps({"items": items}, indent=1) + "\n", encoding="utf-8")
         new = f"_reference/data/raidsim/gear_sets/forever/{name}"
         text = text.replace(f'"gear": "{gear}"', f'"gear": "{new}"')
         print(f"{gear} -> {new} ({r['gain']:+.2%}, item level {r['ilvl_before']} -> {r['ilvl_after']})")

@@ -1,12 +1,15 @@
 """Healer lab driver: capacity, healing split and talent values of a healer build.
 
     python _reference/data/heallab/run.py <class> --build <id> [--compare <ids or .json files>] [--deltas] [--runs 60] [--write]
-                                          [--set KEY=VALUE ...]
+                                          [--set KEY=VALUE ...] [--gear-json <gear set file>]
 
 Capacity = the multiplier on the encounter's damage at which the build keeps the group alive in 90% of runs (bisection with
 common random numbers, `tables.DEATH_RUNS_OK`); the healing split, overheal and mana are reported at that multiplier.
 `--deltas` removes every talent of the build in turn and re-measures the capacity (the value of the talent, on the scale
 `scorer/run.py` uses for its raid-heal score); `--write` saves `<class>/research/raid/heallab/<spec>.md` and `.json`.
+`--gear-json` (2026-10-15) replaces the class's assumed gear stats (tables.HEALER_GEAR) with a gear set's summed item and enchant stats
+(heal_gear.py's pre-BiS and BiS sets, raidsim/gear_sets/forever/tiers/); such runs are never written (the pages compare builds in the
+lab's standard gear).
 """
 import argparse
 import datetime
@@ -92,9 +95,16 @@ def main():
     ap.add_argument("--steps", type=int, default=10)
     ap.add_argument("--set", nargs="*", default=[])
     ap.add_argument("--write", action="store_true")
+    ap.add_argument("--gear-json", help="a gear set file whose summed stats replace the class's assumed gear (not written)")
     a = ap.parse_args()
     T.apply_rotation(a.cls)   # the class's tuned heal-choice settings (rotation_opt.py); --set still overrides
     apply_overrides(a.set)
+    if a.gear_json:
+        import heal_gear
+        if a.write:
+            raise SystemExit("--gear-json runs are not written: the healer lab's reports compare builds in the lab's standard gear")
+        T.use_gear(a.cls, heal_gear.gear_stats(a.gear_json))
+        print(f"  gear from {a.gear_json}: " + ", ".join(f"{k} {v:g}" for k, v in T.HEALER_GEAR[a.cls].items()))
     mod = importlib.import_module(CLASSES[a.cls])
     spec = mod.PIPELINE["spec"]
     seeds = list(range(a.runs))

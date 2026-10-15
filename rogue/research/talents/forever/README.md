@@ -1,42 +1,40 @@
 # Rogue — adapting the Classic builds to WoW: Forever
 
-Data: WoW: Forever beta client build 1.60.1.70009, merged 2026-09-25 (`talent-trees.md`; the 2026-09-13 demo snapshot is archived under `_reference/data/raw/`). Spellbook numbers: `../../spells/README.md`. Point-by-point audit of every
-Classic build: `baseline-audit.md`. Proposed builds: `proposed-builds.json` → `builds-README.md`.
+Data: WoW: Forever beta client build 1.60.1.70291, captured 2026-10-08 (`_reference/data/data_build.py`; the trees in
+[talent-trees.md](talent-trees.md)). Spellbook numbers: [../../spells/README.md](../../spells/README.md). Point-by-point audit of
+every Classic build: [baseline-audit.md](baseline-audit.md). Builds: [proposed-builds.json](proposed-builds.json), one page each under
+[../../leveling/builds/](../../leveling/builds/), [../../raid/builds/](../../raid/builds/) and [../../pvp/builds/](../../pvp/builds/).
 
 ## What broke
 
 | Classic talent | Forever | Impact on baselines |
 |---|---|---|
-| Sword/Dagger/Mace/Fist Weapon Specialization (Combat T5) | **Removed** → *Hack and Slash* (5): sword/axe 5% extra attacks, dagger/fist crit, mace armor ignore | Same slot, same role; dagger/fist crit is 1%/rank (5% at 5/5), mace 15% armor |
-| Improved Backstab (Combat T2) | **Removed** → *Puncturing Wounds* (3): +30% Backstab crit, +15% Mutilate crit, 45% extra combo point on Backstab | Better than what it replaces |
-| Improved Eviscerate | Moved Assassination T1 → Combat T1 | Assassination dip shrinks by 3; Combat tier 1 is now all useful |
-| Improved Gouge | Moved Combat T1 → Assassination T1 | Tier-1 Assassination filler |
-| Opportunity | 5 ranks → 2 ranks (+10% total instead of +20%) | Dagger builds lose 10% Backstab damage but save 3 points |
-| Master of Deception | 5 → 3 ranks | Cheaper stealth |
-| Weapon Expertise | +5 weapon skill → -1% dodge/parry per rank | No longer solves glancing blows — biggest unknown for raid rogues |
-| Vigor | Capstone (T7) → T5, 2 ranks (+10 energy) | Now cheap for any deep-Assassination build |
-| Precision | 5 ranks → 3 ranks (1%/rank, 3% total) | 2 points cheaper |
+| Sword/Dagger/Mace/Fist Weapon Specialization (Combat) | **Removed** → *Hack and Slash* (5 ranks, Combat tier 5): swords and axes 5% extra attacks, daggers and fists 5% crit, maces armor ignored | Same slot, same role |
+| Improved Backstab | **Removed** → *Puncturing Wounds* (3 ranks, Combat tier 2): Backstab +30% crit and a 45% chance of an extra combo point, Mutilate +15% crit | Better than what it replaces |
+| Improved Eviscerate | Moved Assassination tier 1 → Combat tier 1 | The Assassination dip shrinks by 3 points |
+| Improved Gouge | Moved Combat tier 1 → Assassination tier 1 | A tier-1 Assassination filler |
+| Opportunity | 5 ranks → 2 ranks (+10%, now also Mutilate) | Dagger builds save 3 points for 10% less Backstab damage |
+| Master of Deception, Precision, Deflection | 5 ranks → 3 ranks | Cheaper |
+| Weapon Expertise | +weapon skill → 1% less chance to be dodged or parried per rank (2 ranks) | No longer fixes glancing blows |
+| Vigor | Assassination tier 7 → tier 5, 2 ranks (+10 energy) | Cheap for any deep Assassination build |
+| Lethality | 6% → 4% crit damage a rank (20% at 5); now also Mutilate, Ghostly Strike and Hemorrhage | Weaker, wider |
 | Sleight of Hand, Improved Sap, Deadliness | **Removed** | No baseline used them |
 
 ## What's new and matters
 
-- **Mutilate** (Assassination T5) + **Venom** (capstone) + Seal Fate at 100% — a complete dagger raid spec that never
-  existed in Classic. `assassination-mutilate-raid` is the draft.
-- **Flawless Execution** (Combat 16-pt): Eviscerate costs 10 less Energy. It replaced Restless Blades (cooldown reduction on finishers) in beta build 69893.
-- **Puncturing Wounds**, **Hack and Slash** — the replacements above.
-- **Premeditation** is now the Subtlety 16-point talent; **Thousand Cuts** is the Subtlety capstone; **Quietus** / **Cutthroat** fill tier 6.
-- **Lethality** buffed to 6% per rank and now covers Mutilate, Hemorrhage and Ghostly Strike.
+- **Mutilate** (Assassination tier 5) and **Venom** (the capstone) with **Seal Fate** at 100%: the dagger spec Blizzard built
+  Assassination around. Neither is in the simulator's best Assassination raid build (2026-10-15): a launch question.
+- **Flawless Execution** (Combat 16-point): Eviscerate costs 10 less energy; it replaced Restless Blades in beta build 69893.
+- **Premeditation** is the Subtlety 16-point talent, **Thousand Cuts** the capstone (Rupture ticks cheapen Hemorrhage and
+  Backstab), **Quietus** and **Cutthroat** fill tier 6.
 
-## Decisions made in the proposed builds
+## Builds
 
-1. **Combat Swords 18/33/0**: Combat needs 33 to hold everything (Improved Eviscerate, Precision, Flawless Execution, Hack and Slash, Weapon Expertise, Aggression, Adrenaline Rush); Assassination drops Murder to 1.
-2. **Combat Daggers 16/33/2**: conservative dagger adaptation (Puncturing Wounds + Hack and Slash + Opportunity 2).
-3. **Assassination Mutilate 31/20/0**: the speculative new dagger spec — compare against Combat daggers at launch.
-4. **PvP Seal Fate 30/8/13** maps one-to-one; **PvP Hemo/Prep 20/0/31** goes deeper for Thousand Cuts.
+The current picks per spec and mode are on the player pages: [leveling](../../../leveling/README.md) and
+[raid](../../../raid/README.md); the research behind them is under [../../leveling/](../../leveling/) and [../../raid/](../../raid/).
 
 ## To verify at launch
 
-- Glancing blows / weapon skill: with Weapon Expertise reworked, does anything replace +5 weapon skill? (Edgemaster's Handguards-style gear may become mandatory.)
-- Hack and Slash dagger/fist crit 1-5% (confirmed by the client curve).
-- Mutilate and Venom damage at 60; poison charge mechanics.
-- Adrenaline Rush stays at 5 minutes (Restless Blades is gone).
+- Glancing blows and weapon skill: with Weapon Expertise reworked, nothing in the trees replaces +weapon skill.
+- Mutilate and Venom damage at 60, and whether Mutilate needs a dagger in each hand (Blizzard says so; the tooltip does not).
+- Poison charges and proc rates with Improved Poisons.

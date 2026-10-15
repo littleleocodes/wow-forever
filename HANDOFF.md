@@ -1,9 +1,9 @@
-# Handoff — continuing this project in a Claude Code cloud session (updated 2026-10-09)
+# Handoff — continuing this project in a Claude Code cloud session (updated 2026-10-15)
 
 This knowledge base was built in local Claude Code sessions on Windows (project in `F:\wow-forever`, simulator tools in
 `%USERPROFILE%\.wow-forever-tools`) and moved to GitHub on 2026-09-28 so the work can continue in Claude Code cloud sessions.
 Read `CLAUDE.md` (the conventions, loaded automatically) and `_reference/README.md` (the top-level `README.md` is the player
-index), then this page.
+index), then this page; the current work list is `_reference/page-audit.md`.
 
 ## Start of every cloud session
 
@@ -33,18 +33,59 @@ Cloud notes:
   a rotation pass over every entry about 2 hours, a talent search 1 to 5 minutes, regen about 15 minutes.
 - The repository stores LF line endings (`.gitattributes`). The local sessions' notes are in `_reference/notes/` (below).
 
-## Layout since 2026-09-29 (user request: organized for new players)
+## Where things stand (2026-10-15)
 
-Each class folder now opens with player pages and keeps the research below:
+- **Data and simulator**: beta client 1.60.1.70291 (talents, spellbooks and client tables of 2026-10-08, `raw/2026-10-08-beta-70291/`;
+  `_reference/data/data_build.py` names it everywhere), simulator ElliotWood/Forever **2ce8265** with this project's patches
+  (`raidsim/patches/README.md`). The final races ran race-neutral (`WOW_FOREVER_NO_RACIALS=1`; `_reference/race-sweep.md` for players
+  who want their race's share). The beta runs to 2026-10-21; launch is 2026-11-04.
+- **The 70291 sweep is done** (2026-10-09 to 2026-10-15 05:21, committed in 665a942; driver `_reference/data/deep-runs/sweep_70291.sh`,
+  git-ignored):
+  - P2: the open raid and leveling talent searches for every class, their winners written as `-open-raid` / `-open-leveling` builds
+    (`open_builds.py`); leveling rules re-tuned from scratch after the 2026-10-09 module fixes (shaman, rogue, druid, warrior, priest,
+    warlock, hunter), with races and reports.
+  - P3: healer deep searches (priest `holy-ml-heal` +0.8%, `discipline-ml-heal` +5.9% over the hand drafts; paladin `holy-ml-heal`
+    34/11/6; druid `restoration-ml-heal` 11/5/35; shaman Restoration confirms its pick) and tank deep searches (paladin
+    `protection-ml-tank` +4.1%; warrior and druid confirm theirs).
+  - P4: the machine-learning pipeline fresh for every damage spec on the new simulator: new hunter `beast-mastery-ml-raid` (31/20/0)
+    and `beast-marks-ml-raid` (7/39/5, replaces `mm-hawk-raid`), rogue `daggers-split-ml-raid` (30/19/2), shaman
+    `elemental-enhancement-ml-raid` (17/26/8, replaces `elemental-raid-dps`); every other spec's search confirms its pick. A hybrid's
+    full-raid winner gets its own `<tier>-raid` gear sets (page audit B1).
+  - P5: every entry re-raced (dummy and environments), winners tidied, rankings (`_reference/dps-rankings.md`), gear links, unused
+    abilities, the own-rotation race, all pages regenerated.
+  - P6: known positives 4 of 4 PASS (`_reference/search-check.md`); fight variety: every pick best or within 2% in every fight
+    (`_reference/fight-variety.md`); link check clean.
+- **What's next: the page audit** (`_reference/page-audit.md`, hand-kept, 272 findings of 2026-10-14 with a status each). Its order of
+  work after the sweep: the data fixes C1-C7 (leveling builds that lost their orders in the 70170 repair, so the recommended warrior and
+  druid leveling builds are wrong until re-raced; stale paladin Protection leveling numbers; removed talents in `core[]`; build names;
+  hybrid names), the leveling re-races C1/C2 need, the renderer fixes B2-B18, the hand-kept text D1-D7 (guides that contradict the tuned
+  rules or the builds, class overviews, adaptation notes, repo docs, orphan pages), the variant and sensitivity reports still on 70009
+  (B14), then regen, and a last check of every page.
+- **Tier list** (user request 2026-10-14, decisions F1-F3 in the audit): DPS by full-raid DPS, healers by healer-lab capacity, S/A/B/C at
+  3/10/20% of the role's best; **no tank tiers** (tank value is relative to each class's own hand draft): the three tanks are listed with
+  their numbers and a note that they are not comparable. A tier-list renderer does not exist yet.
+- **Healer and tank gear** (decision F2, "real sets for both"): tanks get pre-BiS and BiS sets chosen in the simulator like the damage
+  specs; healers get sets from healing stat weights measured in the healer lab (new tool needed: healers are in no community simulator);
+  both pages then get the linked gear table the damage pages have (audit B4).
+- **Still open from earlier**: the scorer's fight-lab and raid calibrations predate 70291 and the pet patches (they feed the stats
+  model's orders, screening, respec plans and audits, not the page picks: `rebuild.py <classes> --steps calibrate,raid`); several
+  generated audits were last run before 70291 (audit A8: race sweep, raid buff values, setting audit, scenario audit, PvP check); at the
+  end of the beta: refresh to the final build, move the simulator pin, then `deep_class.py` per class (CLAUDE.md "Deep optimisation").
+
+## Layout (since 2026-09-29; leveling and raid player pages only since 2026-10-04)
 
 - `README.md` (top level): the player index, every class with its best leveling and raid spec (generated by `render_modes.py`).
-- `<class>/README.md`: "Pick your spec" (a grid of specs x leveling / raid / PvP, ✅ recommended picks, ⚗ generated builds) and "Which
-  spec is best?" (leveling ranked by fight-lab time per kill, raid damage by dummy DPS with parse DPS, PvP listed, not ranked), then
-  the hand-written overview, then "Research files".
-- `<class>/leveling|raid|pvp/<spec>.md`: one spec in one mode: build, talent-calculator link, talent order, what to press, numbers.
-  Specs are the three trees plus named hybrids (`spec_modes.py`: 30+ points in a tree = that spec, else a hybrid; a build's `spec`
-  field overrides; `HYBRID_NAMES`).
-- `<class>/research/`: everything that used to sit in the class folder (leveling/, raid/, pvp/, spells/, talents/), unchanged inside.
+- `<class>/README.md`: "Pick your spec" (a grid of specs x leveling / raid, ✅ recommended picks, 🔬 derived and ⚗ generated builds,
+  "Hybrid builds") and "Which spec is best?" (leveling ranked by fight-lab time per kill, raid damage by full-raid DPS, healers and
+  tanks listed), then the hand-written overview, then "Research files".
+- `<class>/leveling|raid/<spec>.md`: one spec in one mode: build, talent-calculator link, talent order, what to press, why the rotation,
+  gear (raid), numbers. Specs are the three trees plus named hybrids (`spec_modes.py`: 30+ points in a tree = that spec, else a hybrid;
+  a build's `spec` field overrides; `HYBRID_NAMES`). No PvP player pages and no training-dummy numbers since 2026-10-04 (user decision);
+  the PvP builds stay under `research/pvp/`.
+- `<class>/research/`: everything behind the player pages (leveling/, raid/, pvp/, spells/, talents/).
+
+## Work log, 2026-09-29 to 2026-10-09 (history: check against the code and CLAUDE.md before acting)
+
 - `spec_builds.py` filled the 25 empty spec x mode slots with generated builds (tier draft, `generated`, ⚗ on the pages): PvP builds for
   every spec, Arcane / Subtlety / Affliction / Demonology / Destruction leveling, Beast Mastery raid (30/21/0, 469 dummy DPS, ties the
   22/29/0 Hawk build) and Elemental raid (31/7/13, 398, ties the 29/22/0 hybrid). Numbers in `_reference/data/spec-builds.json`.
@@ -371,7 +412,7 @@ Each class folder now opens with player pages and keeps the research below:
   call it applies the old record, which once wrote a removed item into three sets; the apply path now refuses such records). The affected
   entries' numbers are stale until the next page pass re-races them.
 
-## Where things stand (2026-10-09)
+## State on 2026-10-09 (history)
 
 - **Data and simulator**: beta client 1.60.1.70291 (talents, spellbooks, the client tables in `raw/2026-10-08-beta-70291/`), simulator
   ElliotWood/Forever 2ce8265 with this project's patches (`raidsim/patches/README.md`: pet and demon scaling, the pet hit rule, the
@@ -395,7 +436,7 @@ Each class folder now opens with player pages and keeps the research below:
   hunter drafts (steps, README sections); re-run fight-lab races and reports per class after its fixes (`rebuild.py <class> --steps
   race,report,regen`); the warrior's Revenge attack-power share (fitted at level 20) is the least certain fight-lab number.
 
-## Where things stand (2026-09-28)
+## State on 2026-09-28 (history)
 
 Everything below is generated and current as of this date; the pages are the source, not this summary.
 
@@ -438,7 +479,7 @@ Best raid DPS build per class (training dummy / fully buffed raid, community sim
   `arcane-blast-raid`, `assassination-seal-fate-raid`, `subtlety-hemo-raid`, `smite-discipline-raid`,
   `destruction-incinerate-raid`, plus `frostfire-raid`); `raidsim/add_survey_builds.py` writes such builds from a config.
 
-## Open items
+## Older open items (2026-09-28 to 2026-10-01; many done since: check before acting)
 
 1. **Done 2026-09-28 (cloud session): popular builds on talentsforever.com vs ours.** The site exposes its popularity list as a
    static script, `https://talentsforever.com/popular.js` (top 5 level-60 builds per class; mage #1 is the user's 0/29/22).
@@ -527,4 +568,6 @@ python _reference/data/scorer/classic_check.py            # Classic calibration 
 python _reference/data/scorer/scenario_audit.py --write
 python _reference/data/scorer/pvp_check.py --write
 python _reference/data/linkcheck.py
+python -u _reference/data/deep_class.py <class>               # a class's deep searches, builds, races and pages
+bash _reference/data/run_open_searches.sh [classes]           # the open searches (resume with the same command)
 ```

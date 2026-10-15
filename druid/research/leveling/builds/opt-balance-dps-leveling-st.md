@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-dps` and profile `leveling-st`: score +60.4% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-dps` and profile `leveling-st`: score +57.4% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -52,20 +52,21 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
 |---|---|---|---|---|
 | 10-14 | Balance | Improved Wrath | 5 | 5/0/0 |
 | 15-17 | Balance | Moonglow | 3 | 8/0/0 |
-| 18 | Balance | Improved Moonfire | 1 | 9/0/0 |
-| 19-20 | Balance | Nature's Majesty | 2 | 11/0/0 |
-| 21 | Balance | Nature's Splendor | 1 | 12/0/0 |
-| 22 | Balance | Improved Moonfire | 1 | 13/0/0 |
+| 18-19 | Balance | Improved Moonfire | 2 | 10/0/0 |
+| 20-21 | Balance | Nature's Majesty | 2 | 12/0/0 |
+| 22 | Balance | Nature's Splendor | 1 | 13/0/0 |
 | 23-24 | Balance | Improved Entangling Roots | 2 | 15/0/0 |
 | 25-29 | Balance | Improved Starfire | 5 | 20/0/0 |
 | 30-32 | Balance | Eclipse | 3 | 23/0/0 |
 | 33 | Balance | Nature's Grace | 1 | 24/0/0 |
 | 34 | Balance | Vengeance | 1 | 25/0/0 |
-| 35-38 | Balance | Moonfury | 4 | 29/0/0 |
+| 35-36 | Balance | Moonfury | 2 | 27/0/0 |
+| 37 | Balance | Vengeance | 1 | 28/0/0 |
+| 38 | Balance | Moonfury | 1 | 29/0/0 |
 | 39 | Balance | Vengeance | 1 | 30/0/0 |
 | 40 | Balance | Moonkin Form | 1 | 31/0/0 |
-| 41-43 | Balance | Vengeance | 3 | 34/0/0 |
-| 44 | Balance | Moonfury | 1 | 35/0/0 |
+| 41-42 | Balance | Vengeance | 2 | 33/0/0 |
+| 43-44 | Balance | Moonfury | 2 | 35/0/0 |
 | 45 | Balance | Improved Entangling Roots | 1 | 36/0/0 |
 | 46-50 | Restoration | Nature's Focus | 5 | 36/0/5 |
 | 51-55 | Restoration | Naturalist | 5 | 36/0/10 |
@@ -74,14 +75,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
 
 ## Core talents (priority order)
 
-1. **Improved Starfire** — Removing it costs 7.4 points of score in this model.
-2. **Eclipse** — Removing it costs 6.4 points of score in this model.
-3. **Vengeance** — Removing it costs 4.3 points of score in this model.
-4. **Moonfury** — Removing it costs 4.1 points of score in this model.
-5. **Moonglow** — Removing it costs 3.2 points of score in this model.
-6. **Moonkin Form** — Removing it costs 2.2 points of score in this model.
-7. **Reflection** — Removing it costs 1.8 points of score in this model.
-8. **Naturalist** — Removing it costs 1.5 points of score in this model.
+1. **Improved Starfire** — Removing it costs 7.1 points of score in this model.
+2. **Eclipse** — Removing it costs 6.1 points of score in this model.
+3. **Vengeance** — Removing it costs 4.4 points of score in this model.
+4. **Moonfury** — Removing it costs 4.0 points of score in this model.
+5. **Moonglow** — Removing it costs 3.1 points of score in this model.
+6. **Moonkin Form** — Removing it costs 2.7 points of score in this model.
+7. **Reflection** — Removing it costs 1.7 points of score in this model.
+8. **Nature's Splendor** — Removing it costs 1.5 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
@@ -93,14 +94,13 @@ What this build casts per kill ([report](../fightlab/balance-dps-opt.md), all le
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Starfire | 0.0 | 4.8 | 5.6 | 5.1 | 5.0 | 63% |
-| Wrath | 10.2 | 2.6 | 3.1 | 2.9 | 3.3 | 12% |
-| Moonfire | 2.4 | 2.2 | 2.4 | 2.3 | 2.2 | 25% |
-| Wand | 0.0 | 0.0 | 0.3 | 0.3 | 0.2 | 0% |
+| Starfire | 0.0 | 4.7 | 5.8 | 5.3 | 5.3 | 67% |
+| Wrath | 10.2 | 2.7 | 3.0 | 2.9 | 2.9 | 11% |
+| Moonfire | 2.5 | 1.9 | 2.1 | 1.7 | 1.7 | 22% |
 
 ## Notes
 
-- Report: druid/talents/forever/optimizer/balance-dps-leveling-st.md
+- Report: druid/research/talents/forever/optimizer/balance-dps-leveling-st.md
 
 ## Open questions (verify in the live game)
 

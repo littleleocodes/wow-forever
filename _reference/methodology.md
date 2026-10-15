@@ -20,7 +20,7 @@ Community guides       ─┘                                                   
 Forever beta tree data ──────────────────────────────────────► proposed-builds.json (Forever, validated)
 ```
 
-1. **Capture the Classic baseline** for every spec/role in `<class>/talents/classic-baseline/builds.json`,
+1. **Capture the Classic baseline** for every spec/role in `<class>/research/talents/classic-baseline/builds.json`,
    with a priority-ordered `core` list (why each talent is there) and explicit `flex` entries.
    Allocations are validated against the real Classic tree data (`validate_builds.py`).
 2. **Audit each baseline against Forever** (`baseline-audit.md`, generated): for every point, is the talent
@@ -37,9 +37,29 @@ Forever beta tree data ───────────────────
 
 - **Is:** a legal 51-point allocation on the beta-client trees that preserves the Classic spec's logic and uses the
   new talents that obviously fit. A good day-one starting point.
-- **Is not:** simulated, play-tested or tuned. Tooltip numbers are the beta client's level-60 values (build 1.60.1.70009); before 2026-09-25 they were level-38 demo values and higher ranks were partly
-  extrapolated, and Blizzard will retune before launch. Treat every proposed build as a hypothesis with a
-  list of things to verify.
+- **Is not:** play-tested. Tooltip numbers are the beta client's level-60 values (the current build is named by
+  `_reference/data/data_build.py`: 1.60.1.70291 since 2026-10-08, 70170 from 2026-10-03, 70009 from 2026-09-25; before that level-38 demo values with
+  partly extrapolated higher ranks), and Blizzard will retune before launch. Since 2026-09-26 the drafts are also raced in the
+  fight lab, the community raid simulator and the healer lab (next section); every number there is a model, not a measurement.
+  Treat every build as a hypothesis with a list of things to verify.
+
+## From hand drafts to the builds on the player pages (2026-10-15)
+
+The hand drafts above are the starting answer; the builds the player pages show are decided by simulation. In order:
+
+1. **Stats model** (`scorer/`): tooltip numbers to effects, spec models and profiles; finds legal builds and leveling orders
+   (section "Stats model" below). Calibrated to the simulators, never the last word.
+2. **Fight lab** (`fightlab/`, leveling, solo): time per kill at levels 20-60; leveling pages rank on it.
+3. **Raid simulator** (the ElliotWood/Forever wowsims fork, `raidsim/`, level 60): races, talent values and rotation searches on a
+   training dummy; raid pages rank on **full-raid DPS** (user decision 2026-10-02).
+4. **Healer lab** (`heallab/`): capacity of a healer keeping a five-member group alive; tanks by tank value in the simulator.
+5. **Searches** that write derived builds (🔬 on the pages): derived builds per spec (2026-09-30), the machine-learning raid
+   pipeline (2026-10-01), the open talent searches across every split with synergy certificates (2026-10-04 to 10-07), the deep
+   searches per class (2026-10-03) and the 70291 sweep (2026-10-09 to 10-15). A derived build replaces a hand draft only when it is
+   0.5% better (since 2026-10-07); the hand draft stays as the alternative.
+6. **Each spec plays its own rotation** (user rule 2026-10-08): no build is ranked on another spec's rotation because it is faster.
+
+Rules and commands: `CLAUDE.md`; tool overview: `_reference/README.md`; open items: `HANDOFF.md`.
 
 ## Priorities when trees conflict
 
@@ -51,13 +71,12 @@ Forever beta tree data ───────────────────
 
 ## Refresh procedure (when new data lands)
 
-1. Replace `_reference/data/forever-talents/<class>.json` (re-run `extract_forever_talents.py`, or import a
-   newer datamine into the same schema).
-2. `python _reference/data/render_trees.py` → regenerates `talent-trees.md`.
-3. `python _reference/data/validate_builds.py` → regenerates the audits and reports any proposed build that
-   became illegal.
-4. Fix `proposed-builds.json` files, re-validate, `render_builds.py`, and note the data date in each class's
-   `talents/forever/README.md`.
+1. `python _reference/data/check_beta_build.py` says whether a newer beta client exists and prints the command.
+2. `python _reference/data/refresh_forever_talents.py --fetch --raw <date>-beta-<build>`, then `build_forever_spells.py`,
+   `scorer/effects.py`, `render_trees.py`, `validate_builds.py` (lists every proposed build the new trees broke) and
+   `render_builds.py`; `forever-talents/README.md` (generated) lists what moved.
+3. Repair the broken builds in `proposed-builds.json`, then the simulator audits, races and searches listed under
+   "Forever-specific rules" in `CLAUDE.md`.
 
 ## Leveling orders — how "what to take at what level" is decided
 
@@ -164,7 +183,7 @@ A build that is best at 60 is not always best at 25. `scorer/respec.py` builds a
 20/30/40/50/60) — the best build for that level, bought in optimizer order, then extended greedily — and a dynamic
 programme picks the switching levels that minimise total leveling hours after paying the respec fee (1g, then
 +5g each, cap 50g, converted to hours through a gold-per-hour table). The result is
-`<class>/leveling/respec-plan.md` (and a Classic version for calibration).
+`<class>/research/leveling/respec-plan.md` (and a Classic version for calibration).
 
 Results (2026-09-16 encodings): for every class the Forever answer is "never respec" — the level-20/30/40
 optimal build, extended greedily, is within an hour of any schedule and usually *beats* playing toward the

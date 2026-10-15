@@ -10,7 +10,7 @@
 
 **Other setups of this spec.** This build is the Daggers setup. The spec's best build for each other setup, in a full raid:
 
-- Swords: [Combat — Swords](../research/raid/builds/combat-swords-open-raid.md) (18/33/0), 718 DPS in a full raid — [open the talent tree](https://talentsforever.com/rogue/60/005303103003-32403300001515231--6)
+- Swords: [Combat — Swords](../research/raid/builds/combat-swords-open-raid.md) (18/33/0, 718 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005303103003-32403300001515231--6)
 
 ## How to play
 
@@ -78,10 +78,10 @@ Combat in a raid is an energy rhythm: build combo points with **Backstab**, keep
 | Back | [Cape of the Black Baron](https://www.wowhead.com/forever/item=13340) · *Baron Rivendare, Stratholme*<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) | [Cape of the Black Baron](https://www.wowhead.com/forever/item=13340) · *Baron Rivendare, Stratholme*<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) |
 | Chest | [Dawn Armor](https://www.wowhead.com/forever/item=252483) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Shadowcraft Tunic](https://www.wowhead.com/forever/item=16721) · *General Drakkisath, Blackrock Spire*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
 | Wrist | [Forest Stalker's Bracers](https://www.wowhead.com/forever/item=19587)<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) | [Shadowcraft Bracers](https://www.wowhead.com/forever/item=16710) · *Instructor Malicia, Scholomance*<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) |
-| Hands | [Theramore Gloves](https://www.wowhead.com/forever/item=271948)<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/spell=13823) | [Aged Core Leather Gloves](https://www.wowhead.com/forever/item=18823) · *Molten Core*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/spell=13823) |
+| Hands | [Theramore Gloves](https://www.wowhead.com/forever/item=271948)<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) | [Aged Core Leather Gloves](https://www.wowhead.com/forever/item=18823) · *Molten Core*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) |
 | Waist | [Assassin's Waistguard](https://www.wowhead.com/forever/item=272395) | [Shadowcraft Belt](https://www.wowhead.com/forever/item=16713) · *Blackrock Spire* |
 | Legs | [Plaguehound Leggings](https://www.wowhead.com/forever/item=18736) · *Stratholme*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) | [Shadowcraft Pants](https://www.wowhead.com/forever/item=16709) · *Baron Rivendare, Stratholme*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) |
-| Feet | [Darkmantle Footpads](https://www.wowhead.com/forever/item=226831)<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) | [Shadowcraft Boots](https://www.wowhead.com/forever/item=16711) · *Rattlegore, Scholomance*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) |
+| Feet | [Darkmantle Footpads](https://www.wowhead.com/forever/item=226831)<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) | [Shadowcraft Boots](https://www.wowhead.com/forever/item=16711) · *Rattlegore, Scholomance*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) |
 | Finger | [Don Julio's Band](https://www.wowhead.com/forever/item=19325) | [Band of Accuria](https://www.wowhead.com/forever/item=17063) · *Ragnaros, Molten Core* |
 | Finger | [Ferocious Watcher's Signet](https://www.wowhead.com/forever/item=275981) | [Blackstone Ring](https://www.wowhead.com/forever/item=17713) · *Princess Theradras, Maraudon* |
 | Trinket | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) |
@@ -95,7 +95,6 @@ Combat in a raid is an energy rhythm: build combo points with **Backstab**, keep
 ## Other builds of this spec
 
 - [Combat Daggers](../research/raid/builds/combat-daggers-raid.md) (16/33/2, 728 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005323102-30531300001515231-002-6)
-- [Combat — Swords](../research/raid/builds/combat-swords-open-raid.md) (18/33/0, 718 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005303103003-32403300001515231--6)
 - [Combat (optimized, daggers)](../research/raid/builds/opt-combat-daggers-raid-raid-dps.md) (17/32/2, 713 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005323121-30531300000515231-002-6)
 - [Combat (optimized, swords)](../research/raid/builds/opt-combat-swords-raid-raid-dps.md) (20/31/0, 704 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005323101005-32502300000514231--6)
 - [Combat Swords](../research/raid/builds/combat-swords-raid.md) (19/32/0, 703 DPS in a full raid) — [open the talent tree](https://talentsforever.com/rogue/60/005303125-32403300001515131--6)

@@ -10,44 +10,44 @@ Single-target leveling fights against normal mobs of your level. Arms (a two-han
 
 | Level | Talents | Fight mean | median | p90 | Downtime/kill | Deaths/100 kills | Time/kill | Kills/hour | Rage/kill | Pushbacks/kill |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 20 | 51 | 10.2s | 10.1s | 13.7s | 0.0s | 0.0 | 18.2s | 198 | 2 | 0.00 |
-| 30 | 51 | 12.4s | 11.9s | 16.4s | 0.0s | 0.0 | 20.4s | 177 | 1 | 0.00 |
-| 40 | 51 | 15.4s | 15.2s | 21.0s | 0.1s | 0.0 | 23.5s | 153 | 1 | 0.00 |
-| 50 | 51 | 17.6s | 17.3s | 23.6s | 0.6s | 0.0 | 26.2s | 137 | 1 | 0.00 |
+| 20 | 11 | 12.7s | 13.2s | 16.4s | 0.0s | 0.0 | 20.7s | 174 | 2 | 0.00 |
+| 30 | 21 | 15.8s | 15.8s | 21.8s | 0.1s | 0.0 | 23.9s | 151 | 0 | 0.00 |
+| 40 | 31 | 17.5s | 17.1s | 23.7s | 0.2s | 0.0 | 25.7s | 140 | 1 | 0.00 |
+| 50 | 41 | 18.1s | 17.6s | 24.5s | 0.6s | 0.0 | 26.7s | 135 | 0 | 0.00 |
 | 60 | 51 | 21.4s | 21.0s | 28.4s | 1.0s | 0.0 | 30.3s | 119 | 0 | 0.00 |
 
 ## Measured damage shares (vs. the spec model's assumed shares)
 
 | Level | Bloodthirst | Execute | Heroic Strike | Melee | Melee (off-hand) | Overpower | Rend | Victory Rush |
 |---|---|---|---|---|---|---|---|---|
-| 20 | 0% | 0% | 41% | 18% | 29% | 6% | 6% | 1% |
-| 30 | 0% | 16% | 29% | 19% | 25% | 5% | 5% | 2% |
-| 40 | 17% | 18% | 9% | 24% | 21% | 4% | 4% | 1% |
-| 50 | 17% | 17% | 11% | 24% | 21% | 4% | 5% | 1% |
+| 20 | 0% | 0% | 36% | 25% | 23% | 6% | 8% | 2% |
+| 30 | 0% | 16% | 21% | 28% | 21% | 5% | 7% | 2% |
+| 40 | 18% | 18% | 4% | 29% | 20% | 5% | 5% | 2% |
+| 50 | 17% | 17% | 7% | 26% | 21% | 5% | 5% | 1% |
 | 60 | 17% | 17% | 11% | 23% | 20% | 4% | 5% | 1% |
 
 Spec model (`_reference/data/scorer/specs`) assumes: white_mh 32%, white_oh 17%, heroic_strike 0%, whirlwind 9%, execute 23%, bloodthirst 15%, deep_wounds 4%, overpower 0%, rend 0%.
 
 ## Realized crit rates and player at each level
 
-- **Level 20**: 1449 health, 0 mana, 23 Int, 32 Spirit, 83 Str, 45 Agi, 206 AP, melee crit 11.9%, 0 spell power, base spell crit 0.0%, armor 960 (Battle Stance); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Bloodrage 0%, Charge 0%, Melee 12%, Melee (off-hand) 12%, Battle Shout 0%, Rend 0%, Heroic Strike 12%, Overpower 11%, Victory Rush 12%. Health after a fight 95%, mana 100%.
-- **Level 30**: 2023 health, 0 mana, 25 Int, 34 Spirit, 130 Str, 58 Agi, 330 AP, melee crit 11.8%, 0 spell power, base spell crit 0.0%, armor 1190 (Battle Stance); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Bloodrage 0%, Death Wish 0%, Charge 0%, Melee 12%, Melee (off-hand) 12%, Battle Shout 0%, Rend 0%, Heroic Strike 12%, Execute 12%, Victory Rush 13%, Overpower 13%. Health after a fight 90%, mana 100%.
-- **Level 40**: 2677 health, 0 mana, 27 Int, 41 Spirit, 168 Str, 78 Agi, 436 AP, melee crit 12.0%, 0 spell power, base spell crit 0.0%, armor 2369 (Battle Stance); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Bloodrage 0%, Death Wish 0%, Charge 0%, Melee 12%, Melee (off-hand) 12%, Battle Shout 0%, Bloodthirst 11%, Rend 0%, Heroic Strike 12%, Execute 13%, Victory Rush 13%, Overpower 12%. Health after a fight 86%, mana 100%.
-- **Level 50**: 3355 health, 0 mana, 28 Int, 42 Spirit, 226 Str, 104 Agi, 581 AP, melee crit 12.5%, 0 spell power, base spell crit 0.0%, armor 2839 (Battle Stance); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Bloodrage 0%, Death Wish 0%, Charge 0%, Melee 12%, Melee (off-hand) 13%, Battle Shout 0%, Bloodthirst 12%, Rend 0%, Heroic Strike 13%, Execute 11%, Victory Rush 12%, Overpower 13%. Health after a fight 78%, mana 100%.
+- **Level 20**: 1449 health, 0 mana, 23 Int, 32 Spirit, 83 Str, 45 Agi, 206 AP, melee crit 11.9%, 0 spell power, base spell crit 0.0%, armor 960 (Battle Stance); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Bloodrage 0%, Charge 0%, Melee 12%, Melee (off-hand) 12%, Battle Shout 0%, Rend 0%, Heroic Strike 13%, Victory Rush 13%, Overpower 12%. Health after a fight 93%, mana 100%.
+- **Level 30**: 2023 health, 0 mana, 25 Int, 34 Spirit, 130 Str, 58 Agi, 330 AP, melee crit 11.8%, 0 spell power, base spell crit 0.0%, armor 1190 (Battle Stance); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Bloodrage 0%, Death Wish 0%, Charge 0%, Melee 12%, Melee (off-hand) 12%, Battle Shout 0%, Rend 0%, Heroic Strike 12%, Overpower 12%, Execute 13%, Victory Rush 11%. Health after a fight 84%, mana 100%.
+- **Level 40**: 2677 health, 0 mana, 27 Int, 41 Spirit, 168 Str, 78 Agi, 436 AP, melee crit 12.0%, 0 spell power, base spell crit 0.0%, armor 2369 (Battle Stance); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Bloodrage 0%, Death Wish 0%, Charge 0%, Melee 12%, Melee (off-hand) 12%, Battle Shout 0%, Bloodthirst 12%, Rend 0%, Execute 11%, Victory Rush 14%, Heroic Strike 12%, Overpower 11%. Health after a fight 82%, mana 100%.
+- **Level 50**: 3355 health, 0 mana, 28 Int, 42 Spirit, 226 Str, 104 Agi, 581 AP, melee crit 12.5%, 0 spell power, base spell crit 0.0%, armor 2839 (Battle Stance); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Bloodrage 0%, Death Wish 0%, Charge 0%, Melee 12%, Melee (off-hand) 13%, Battle Shout 0%, Bloodthirst 13%, Rend 0%, Heroic Strike 13%, Execute 13%, Victory Rush 11%, Overpower 13%. Health after a fight 77%, mana 100%.
 - **Level 60**: 4339 health, 0 mana, 30 Int, 45 Spirit, 263 Str, 90 Agi, 686 AP, melee crit 10.6%, 0 spell power, base spell crit 0.0%, armor 3428 (Battle Stance); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Bloodrage 0%, Death Wish 0%, Charge 0%, Melee 11%, Melee (off-hand) 11%, Battle Shout 0%, Bloodthirst 10%, Rend 0%, Heroic Strike 11%, Execute 11%, Victory Rush 11%, Overpower 9%. Health after a fight 74%, mana 100%.
 
 ## Other builds (same mobs, same seeds)
 
 | Level | Build | Time/kill | vs. main | Fight mean | Deaths/100 | Downtime/kill |
 |---|---|---|---|---|---|---|
-| 20 | opt-fury-dw-raid-leveling-st | 18.2s | - | 10.2s | 0.0 | 0.0s |
-| 20 | opt-arms-2h-raid-leveling-st (played as `arms-2h-raid`) | 19.1s | +5.4% | 11.1s | 0.0 | 0.0s |
-| 30 | opt-fury-dw-raid-leveling-st | 20.4s | - | 12.4s | 0.0 | 0.0s |
-| 30 | opt-arms-2h-raid-leveling-st (played as `arms-2h-raid`) | 21.9s | +7.2% | 13.8s | 0.0 | 0.0s |
-| 40 | opt-fury-dw-raid-leveling-st | 23.5s | - | 15.4s | 0.0 | 0.1s |
-| 40 | opt-arms-2h-raid-leveling-st (played as `arms-2h-raid`) | 23.7s | +0.8% | 15.6s | 0.0 | 0.1s |
-| 50 | opt-fury-dw-raid-leveling-st | 26.2s | - | 17.6s | 0.0 | 0.6s |
-| 50 | opt-arms-2h-raid-leveling-st (played as `arms-2h-raid`) | 26.2s | +0.2% | 17.7s | 0.0 | 0.5s |
+| 20 | opt-fury-dw-raid-leveling-st | 20.7s | - | 12.7s | 0.0 | 0.0s |
+| 20 | opt-arms-2h-raid-leveling-st (played as `arms-2h-raid`) | 22.6s | +9.3% | 14.6s | 0.0 | 0.0s |
+| 30 | opt-fury-dw-raid-leveling-st | 23.9s | - | 15.8s | 0.0 | 0.1s |
+| 30 | opt-arms-2h-raid-leveling-st (played as `arms-2h-raid`) | 26.0s | +8.9% | 17.7s | 0.0 | 0.3s |
+| 40 | opt-fury-dw-raid-leveling-st | 25.7s | - | 17.5s | 0.0 | 0.2s |
+| 40 | opt-arms-2h-raid-leveling-st (played as `arms-2h-raid`) | 26.0s | +1.3% | 17.7s | 0.0 | 0.3s |
+| 50 | opt-fury-dw-raid-leveling-st | 26.7s | - | 18.1s | 0.0 | 0.6s |
+| 50 | opt-arms-2h-raid-leveling-st (played as `arms-2h-raid`) | 27.2s | +2.0% | 18.5s | 0.0 | 0.8s |
 | 60 | opt-fury-dw-raid-leveling-st | 30.3s | - | 21.4s | 0.0 | 1.0s |
 | 60 | opt-arms-2h-raid-leveling-st (played as `arms-2h-raid`) | 30.0s | -1.2% | 21.0s | 0.0 | 1.0s |
 
@@ -57,23 +57,14 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Dual Wield Specialization | 5 | +5.4% | +8.7% ± 0.6 | +1.1% | +4.2% | 0.0 |
-| Cruelty | 5 | +5.2% | +8.5% ± 0.6 | +1.0% | +2.5% | 0.0 |
-| Flurry | 5 | +4.6% | +7.5% ± 0.6 | +0.9% | +2.4% | 0.0 |
-| Enrage | 5 | +2.4% | +3.9% ± 0.7 | +0.5% | +4.8% | 0.0 |
-| Furious Precision | 3 | +2.2% | +3.8% ± 0.6 | +0.7% | +0.0% | 0.0 |
-| Death Wish | 1 | +1.9% | +3.1% ± 0.5 | +1.9% | +1.8% | 0.0 |
-| Improved Heroic Strike | 3 | +0.9% | +1.5% ± 0.5 | +0.3% | +0.0% | 0.0 |
-| Unbridled Wrath | 5 | +0.9% | +1.5% ± 0.7 | +0.2% | +2.0% | 0.0 |
-| Improved Charge | 2 | +0.8% | +1.3% ± 0.5 | +0.4% | +0.6% | 0.0 |
-| Improved Execute | 2 | +0.7% | +1.2% ± 0.5 | +0.4% | +3.6% | 0.0 |
-| Anger Management | 1 | +0.6% | +1.0% ± 0.5 | +0.6% | +1.3% | 0.0 |
-| Blood Craze | 3 | +0.2% | +0.2% ± 0.5 | +0.1% | +1.2% | 0.0 |
-| Deflection | 2 | +0.1% | +0.2% ± 0.5 | +0.1% | +0.4% | 0.0 |
-| Booming Voice | 2 | +0.0% | +0.1% ± 0.4 | +0.0% | +0.0% | 0.0 |
-| Bloodthirst | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +16.8% | 0.0 |
-| Improved Tactical Mastery | 5 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.2% | 0.0 |
-| Raging Blows | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.0% | 0.0 |
+| Cruelty | 5 | +5.1% | +7.5% ± 0.6 | +1.0% | +3.0% | 0.0 |
+| Death Wish | 1 | +2.4% | +3.6% ± 0.5 | +2.4% | +2.1% | 0.0 |
+| Enrage | 2 | +1.8% | +2.7% ± 0.6 | +0.9% | +2.3% | 0.0 |
+| Unbridled Wrath | 5 | +1.7% | +2.5% ± 0.7 | +0.3% | +2.8% | 0.0 |
+| Dual Wield Specialization | 1 | +1.6% | +2.3% ± 0.5 | +1.6% | +1.1% | 0.0 |
+| Improved Execute | 2 | +1.1% | +1.5% ± 0.5 | +0.5% | +5.7% | 0.0 |
+| Blood Craze | 3 | +0.7% | +0.3% ± 0.5 | +0.2% | +0.9% | 0.0 |
+| Booming Voice | 2 | +0.2% | +0.3% ± 0.5 | +0.1% | +0.0% | 0.0 |
 
 ## Talent values at level 60
 

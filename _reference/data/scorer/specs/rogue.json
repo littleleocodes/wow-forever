@@ -2,7 +2,7 @@
   "_doc": "Rogue spec models. Always dual-wield: white swings carry the +19% miss penalty. Energy talents are resource_cost on the builder. Weapon-type talents use weapon:sword / weapon:dagger tags. The builder source is tagged 'builder' (+ 'builder-dagger' for Backstab/Mutilate builds) so Mutilate/Puncturing Wounds/Opportunity apply to the right one. Poisons are a separate source (school:nature, ability:Poisons). min_level/max_level are Classic learn levels (Forever unlock levels are a beta check).",
   "models": {
     "combat-swords-raid": {
-      "note": "Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5%. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Rupture rank 4 ticks for 16 plus 2.96 per combo point (Classic 27 plus 5), Instant Poison VI 45-57 (Classic 67-85), Deadly Poison V 18 a tick (Classic 27), Eviscerate unchanged: Rupture 5 -> 3%, poisons 10 -> 8%, white and Eviscerate up. Expose Armor is 450 armor per point with no talent multiplier. Fight lab calibration (2026-09-28, beta client 1.60.1.70009, build opt-combat-swords-raid-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Eviscerate 28%, Sinister Strike 25%, Melee 19%, Melee (off-hand) 11%, Garrote 6%, Instant Poison 6%, Riposte 3%, Deadly Poison 2%) and the leveling time split is fight 89% / drink 0% / eat 6% / other 0% / death 5% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Raid sim shares (2026-10-03, combat-swords-raid in the ElliotWood/Forever simulator b0f0df3): white_mh 37%, sinister 32%, white_oh 20%, eviscerate 6%, poisons 5%; 7% of the damage matched no source.",
+      "note": "Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5%. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Rupture rank 4 ticks for 16 plus 2.96 per combo point (Classic 27 plus 5), Instant Poison VI 45-57 (Classic 67-85), Deadly Poison V 18 a tick (Classic 27), Eviscerate unchanged: Rupture 5 -> 3%, poisons 10 -> 8%, white and Eviscerate up. Expose Armor is 450 armor per point with no talent multiplier. Fight lab calibration (2026-10-15, beta client 1.60.1.70291, build opt-combat-swords-raid-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Eviscerate 35%, Sinister Strike 22%, Melee 17%, Melee (off-hand) 10%, Garrote 6%, Instant Poison 5%, Riposte 3%, Hack and Slash 2%, Deadly Poison 2%) and the leveling time split is fight 88% / drink 0% / eat 7% / other 0% / death 5% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length).",
       "sources": [
         {
           "id": "white_mh",
@@ -12,7 +12,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.169},
             "solo-60": {"share": 0.169},
-            "leveling-aoe": {"share": 0.197}
+            "leveling-aoe": {"share": 0.173}
           },
           "game_overrides": {
             "classic-era": {"share": 0.4178}
@@ -26,7 +26,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.101},
             "solo-60": {"share": 0.101},
-            "leveling-aoe": {"share": 0.114}
+            "leveling-aoe": {"share": 0.103}
           },
           "game_overrides": {
             "classic-era": {"share": 0.225}
@@ -40,7 +40,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.226},
             "solo-60": {"share": 0.226},
-            "leveling-aoe": {"share": 0.258}
+            "leveling-aoe": {"share": 0.226}
           },
           "game_overrides": {
             "classic-era": {"share": 0.2446}
@@ -54,7 +54,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.259},
             "solo-60": {"share": 0.259},
-            "leveling-aoe": {"share": 0.287}
+            "leveling-aoe": {"share": 0.359}
           },
           "game_overrides": {
             "classic-era": {"share": 0.0675}
@@ -73,7 +73,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.095},
             "solo-60": {"share": 0.095},
-            "leveling-aoe": {"share": 0.057}
+            "leveling-aoe": {"share": 0.056}
           }
         },
         {
@@ -101,7 +101,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.04},
             "solo-60": {"share": 0.04},
-            "leveling-aoe": {"share": 0.029}
+            "leveling-aoe": {"share": 0.026}
           },
           "game_overrides": {
             "classic-era": {"share": 0.0}
@@ -116,7 +116,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.109},
             "solo-60": {"share": 0.109},
-            "leveling-aoe": {"share": 0.058}
+            "leveling-aoe": {"share": 0.057}
           }
         }
       ],
@@ -137,7 +137,7 @@
       "time": {
         "leveling-st": {"fight": 0.851, "drink": 0.0, "eat": 0.102, "other": 0.0, "death": 0.048},
         "solo-60": {"fight": 0.851, "drink": 0.0, "eat": 0.102, "other": 0.0, "death": 0.048},
-        "leveling-aoe": {"fight": 0.889, "drink": 0.0, "eat": 0.062, "other": 0.0, "death": 0.05}
+        "leveling-aoe": {"fight": 0.88, "drink": 0.0, "eat": 0.066, "other": 0.0, "death": 0.054}
       },
       "fight_coupling": {"leveling-aoe": 1.0},
       "kind_weights": {"kite": 0, "range": 0},

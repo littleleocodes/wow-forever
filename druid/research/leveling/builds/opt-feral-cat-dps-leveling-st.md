@@ -47,16 +47,39 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 | **Naturalist** | 5/5 | **NEW** | Reduces the cast time of your Healing Touch spell by 0.5 sec and increases all damage you deal by 5%. |
 | **Natural Shapeshifter** | 1/3 | moved | Reduces the mana cost of all shapeshifting by 10%. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Feral Combat | Ferocity | 5 | 0/5/0 |
+| 15-17 | Feral Combat | Thick Hide | 3 | 0/8/0 |
+| 18-19 | Feral Combat | Feral Swiftness | 2 | 0/10/0 |
+| 20-21 | Feral Combat | Savage Fury | 2 | 0/12/0 |
+| 22-23 | Feral Combat | Sharpened Claws | 2 | 0/14/0 |
+| 24 | Feral Combat | Heart of the Wild | 1 | 0/15/0 |
+| 25-27 | Feral Combat | Predatory Strikes | 3 | 0/18/0 |
+| 28-29 | Feral Combat | Heart of the Wild | 2 | 0/20/0 |
+| 30 | Feral Combat | Leader of the Pack | 1 | 0/21/0 |
+| 31-32 | Feral Combat | Natural Instinct | 2 | 0/23/0 |
+| 33-34 | Feral Combat | Heart of the Wild | 2 | 0/25/0 |
+| 35-39 | Feral Combat | Rend and Tear | 5 | 0/30/0 |
+| 40 | Feral Combat | Berserk | 1 | 0/31/0 |
+| 41-45 | Balance | Genesis | 5 | 5/31/0 |
+| 46-47 | Balance | Nature's Reach | 2 | 7/31/0 |
+| 48-49 | Balance | Nature's Majesty | 2 | 9/31/0 |
+| 50-54 | Restoration | Nature's Focus | 5 | 9/31/5 |
+| 55-59 | Restoration | Naturalist | 5 | 9/31/10 |
+| 60 | Restoration | Natural Shapeshifter | 1 | 9/31/11 |
+
 ## Core talents (priority order)
 
-1. **King of the Jungle** — Removing it costs 5.0 points of score in this model.
-2. **Naturalist** — Removing it costs 2.9 points of score in this model.
-3. **Sharpened Claws** — Removing it costs 2.6 points of score in this model.
-4. **Predatory Strikes** — Removing it costs 2.2 points of score in this model.
-5. **Nature's Reach** — Removing it costs 2.0 points of score in this model.
-6. **Savage Fury** — Removing it costs 1.9 points of score in this model.
-7. **Berserk** — Removing it costs 1.9 points of score in this model.
-8. **Nature's Majesty** — Removing it costs 1.7 points of score in this model.
+1. **Naturalist** — Removing it costs 2.9 points of score in this model.
+2. **Sharpened Claws** — Removing it costs 2.6 points of score in this model.
+3. **Predatory Strikes** — Removing it costs 2.2 points of score in this model.
+4. **Nature's Reach** — Removing it costs 2.0 points of score in this model.
+5. **Savage Fury** — Removing it costs 1.9 points of score in this model.
+6. **Berserk** — Removing it costs 1.9 points of score in this model.
+7. **Nature's Majesty** — Removing it costs 1.7 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
@@ -68,25 +91,24 @@ What this build casts per kill ([report](../fightlab/balance-dps.md), all leveli
 
 | Ability | L15 casts/kill | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|---|
-| Melee | 4.0 | 8.8 | 12.7 | 15.8 | 17.1 | 19.8 | 34% |
-| Claw | 0.0 | 3.9 | 2.2 | 3.1 | 3.3 | 3.8 | 22% |
-| Rake | 0.0 | 0.0 | 1.3 | 1.5 | 1.6 | 1.8 | 8% |
-| Ferocious Bite | 0.0 | 0.0 | 0.0 | 0.9 | 1.0 | 1.1 | 18% |
+| Melee | 5.7 | 12.7 | 15.2 | 18.1 | 17.9 | 19.8 | 34% |
+| Claw | 0.0 | 4.9 | 2.8 | 3.5 | 3.4 | 3.8 | 22% |
+| Rake | 0.0 | 0.0 | 1.6 | 1.7 | 1.7 | 1.8 | 8% |
+| Ferocious Bite | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.1 | 18% |
 | Ravage | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.0 | 15% |
-| Tiger's Fury | 0.0 | 0.0 | 0.6 | 0.8 | 0.8 | 1.0 | 0% |
-| Rip | 0.0 | 0.8 | 1.0 | 0.0 | 0.0 | 0.1 | 3% |
-| Enrage | 0.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Tiger's Fury | 0.0 | 0.0 | 0.7 | 0.9 | 0.9 | 1.0 | 0% |
+| Rip | 0.0 | 1.0 | 1.0 | 0.0 | 0.0 | 0.1 | 3% |
+| Enrage | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Demoralizing Roar | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Maul | 3.3 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Maul | 4.6 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Bash | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Shred | 0.0 | 0.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Regrowth | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Cat Form | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes
 
 - Report: druid/talents/forever/optimizer/feral-cat-dps-leveling-st.md
 - 2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): King of the Jungle 3 out; Heart of the Wild 5, Rend and Tear 5 in; to be re-optimized.
+- 2026-10-15 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the feral-cat-dps rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 29.7 s per kill; own tree first 29.7 s; own tree last 30.5 s.
 
 ## Open questions (verify in the live game)
 

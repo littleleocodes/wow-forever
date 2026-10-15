@@ -7,7 +7,6 @@
 | `bm-mm-full-buffs-raid` | 21/30/0 | 471 | 15 | +0.0% | 385 | 70 | +49.1% |
 | `bm-mm-raid` | 22/29/0 | 459 | 14 | -2.5% | 372 | 53 | +66.2% |
 | `opt-mm-raid-raid-dps` | 22/29/0 | 459 | 14 | -2.5% | 372 | 53 | +66.2% |
-| `beast-marks-ml-raid` | 7/39/5 | 455 | 16 | -3.2% | 391 | 96 | +39.1% |
 | sim preset: Marksmanship | - | 453 | 16 | -3.8% | 376 | 89 | - |
 | `marksmanship-with-a-pet-open-raid` | 7/39/5 | 451 | 16 | -4.2% | 387 | 98 | +37.5% |
 | sim preset: Beast Mastery 35/16/0 | - | 444 | 11 | -5.7% | 325 | 75 | - |
@@ -35,7 +34,6 @@ Scorer = the expected-value stats model's score of the same allocation for its r
 - bm-mm-full-buffs-raid: `53200005050001-005155000150305`
 - bm-mm-raid: `53200005041002-005355010150004`
 - opt-mm-raid-raid-dps: `53200005041002-005355010150004`
-- beast-marks-ml-raid: `502-0053352501522051-5`
 - sim preset: Marksmanship: `5023000501-0050550501503051`
 - marksmanship-with-a-pet-open-raid: `502-0053252501523051-5`
 - sim preset: Beast Mastery 35/16/0: `5520001505121251-0050551`

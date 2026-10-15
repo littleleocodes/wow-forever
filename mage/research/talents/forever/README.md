@@ -1,42 +1,38 @@
 # Mage — adapting the Classic builds to WoW: Forever
 
-Data: WoW: Forever beta client build 1.60.1.70009, merged 2026-09-25 (`talent-trees.md`; the 2026-09-13 demo snapshot is archived under `_reference/data/raw/`). Spellbook numbers: `../../spells/README.md`. Point-by-point audit of every
-Classic build: `baseline-audit.md`. Proposed builds: `proposed-builds.json` → `builds-README.md`.
+Data: WoW: Forever beta client build 1.60.1.70291, captured 2026-10-08 (`_reference/data/data_build.py`; the trees in
+[talent-trees.md](talent-trees.md)). Spellbook numbers: [spells](../../spells/README.md). Point-by-point audit of every Classic build:
+[baseline-audit.md](baseline-audit.md). Builds: [proposed-builds.json](proposed-builds.json), one page each under
+[leveling/builds](../../leveling/builds/), [raid/builds](../../raid/builds/) and [pvp/builds](../../pvp/builds/). What to play: the
+[leveling](../../../leveling/README.md) and [raid](../../../raid/README.md) player pages.
 
 ## What broke
 
-| Classic talent | Forever | Impact on baselines |
+| Classic talent | Forever (build 70291) | Impact on Classic builds |
 |---|---|---|
-| Improved Arcane Explosion, Magic Attunement, Improved Arcane Missiles, Improved Mana Shield | **Removed** | The Arcane fillers every build used to reach Arcane Meditation are gone; tier 3 now offers Arcane Geometry / Arcane Impact / Arcane Blast |
-| Incinerate, Improved Fire Blast | **Removed** | Fire tier 2–3 fillers change (Flame Throwing, Impact, Burning Soul 3 ranks) |
-| Elemental Precision | 3 ranks (6%) → **5 ranks (1%/rank)** | Hit costs 2 more points; every raid build pays it |
-| Arcane Meditation | 5%/rank → **17/33/50%** and now requires Arcane Concentration 5 | Much stronger regen for the same 3 points |
-| Ice Block / Cold Snap | Ice Block moved to tier 4 (the 16-pt talent), Cold Snap to tier 5 and is now the Ice Barrier prerequisite | Deep Frost gets Ice Block cheaper |
-| Shatter | 5 ranks (+50%) → 3 ranks (+17/33/50%); no longer requires Improved Frost Nova | 2 points cheaper |
-| Winter's Chill | Now only buffs Frostbolt/Ice Lance crit (+2% per stack, 5 stacks in the beta client) | A 10% crit self-buff for Frost |
-| Improved Counterspell | 4s silence (the demo transcription read 2s) | Unchanged |
-| Arcane Power | +30% damage / +30% mana cost, requires Presence of Mind | Same burst, more mana |
-| Arcane Focus | Arcane-only hit (1%/rank), moved to tier 1 | Pure filler for Frost/Fire |
+| Improved Arcane Explosion, Magic Attunement, Improved Mana Shield | **Removed** | The Arcane fillers on the way to Arcane Meditation are gone; tier 3 now offers Arcane Geometry, Arcane Impact and Arcane Blast |
+| Improved Arcane Missiles | Renamed **Improved Channeling** (5 ranks; also 70% protection for Arcane Blast) | Same role |
+| Incinerate, Improved Fire Blast | Incinerate is **Incineration** (crit for Fire Blast, Scorch, Ice Lance, Arcane Blast); Improved Fire Blast removed (Wake of Fire takes 2 s off Fire Blast's cooldown) | Fire's tier 1 changes |
+| Elemental Precision | **5 ranks, 1% hit each** | Hit costs 2 more points |
+| Arcane Meditation | **3 ranks, up to 50%**; requires Arcane Concentration 5 | More regen for 3 points |
+| Ice Block, Cold Snap | Ice Block at tier 4; Cold Snap at tier 5, the Ice Barrier prerequisite | Deep Frost reaches Ice Block cheaper |
+| Shatter | **3 ranks, up to +50%** crit against frozen targets; no prerequisite | 2 points cheaper |
+| Winter's Chill | Raises only your own Frostbolt and Ice Lance crit (+2% a stack, 5 stacks) | A crit self-buff, not a raid debuff |
+| Improved Scorch | Your own Fire damage +3% a stack, 5 stacks | A personal debuff |
+| Improved Counterspell | 2 ranks, 4 s silence | Unchanged role |
+| Arcane Power | +30% damage, +30% mana cost; requires Presence of Mind | Same burst |
 
 ## What's new and matters
 
-- **Ice Lance** (Frost T3) + **Fingers of Frost** (T5): a Shatter-crit rotation against unfreezable bosses — `frost-fingers-of-frost-raid`.
-- **Hot Streak** (Fire 16-pt): three crits → a 1.5s Pyroblast; possibly a rotation change for Fire.
-- **Arcane Blast** (T3) + **Missile Barrage** (Arcane 16-pt): the seed of an Arcane DPS spec (AB stacks +10% to *other* spells per cast until another spell is cast). Not drafted yet — needs numbers.
-- **Incineration** (Fire T1): crit for Scorch/Fire Blast/Ice Lance/Arcane Blast.
-- **Arcane Mind** now also +100% Arcane crit damage; **Arcane Instability** unchanged shape.
-
-## Decisions made in the proposed builds
-
-1. **Frost AP 31/0/20** and **Winter's Chill 17/0/34** keep their Classic shapes; fillers re-routed through the new tier-3 Arcane talents; Elemental Precision 5/5 in both.
-2. **Fingers of Frost 12/0/39** added as the speculative deep-Frost alternative.
-3. **Fire 15/31/5**: Hot Streak replaces Incinerate; Elemental Precision 5/5 instead of Arcane Meditation (flex noted).
-4. **PvP Frost 20/0/31**: Ice Lance + Fingers of Frost added; Frostbite recommended over Piercing Ice.
+- **Ice Lance** (Frost tier 3) and **Fingers of Frost** (tier 5): Shatter crits without a freeze; every Frost build takes them.
+- **Heating Up** (Fire tier 4; Hot Streak until build 70170): each crit takes 25% off the next Pyroblast's cast, 3 stacks.
+- **Arcane Blast** (tier 3) and **Missile Barrage** (tier 4): the Arcane spec, and free Arcane Missiles for Frost builds too.
+- **Frostfire Bolt** (trained at 40, 50, 60): Fire and Frost at once; the Frostfire hybrid is built on it.
+- **Arcane Mind** adds +100% Arcane crit damage.
 
 ## To verify at launch
 
-- Whether Winter's Chill (5 stacks confirmed) still affects other mages' Frostbolts.
-- Fingers of Frost on bosses (15% chance, 2 spells at rank 2); Ice Lance rank 6 is 136-161 at 60.
-- Hot Streak Pyroblast (1.5s) vs. Fireball.
-- Arcane Blast numbers — an Arcane raid build may exist.
-- Fire immunity in The Barrow Deeps / Hyjal Summit.
+- Fingers of Frost on bosses (15% per chill, 2 spells); Ice Lance's spell-power coefficient (the client row has none; the simulator uses 0.10).
+- Arcane Missiles' bonus per Arcane Blast stack (tooltip 10%, beta logs 15%).
+- Whether Presence of Mind shares Combustion's cooldown in play (client data says so).
+- Fire immunity in The Barrow Deeps and Hyjal Summit.

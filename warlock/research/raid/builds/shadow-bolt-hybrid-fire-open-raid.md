@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Shadow Bolt hybrid (a Affliction/Destruction hybrid) raid build the open talent search found on 2026-10-12: every legal 51-point build with no tree rule, searched in the community simulator's fire-destro-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.8% over destruction-fire-raid, the best of our builds in that rotation.
+The Shadow Bolt hybrid (an Affliction/Destruction hybrid) raid build the open talent search found on 2026-10-12: every legal 51-point build with no tree rule, searched in the community simulator's fire-destro-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.8% over destruction-fire-raid, the best of our builds in that rotation.
 
 ## Point allocation
 
@@ -63,7 +63,7 @@ The Shadow Bolt hybrid (a Affliction/Destruction hybrid) raid build the open tal
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`shadow-bolt-hybrid-fire-open-raid`](shadow-bolt-hybrid-fire-open-raid.md)** | ours: hand draft | 20/11/20 | 618 | +0.0% | 700 | +0.0% | 3 s |
+| 1 | **[`shadow-bolt-hybrid-fire-open-raid`](shadow-bolt-hybrid-fire-open-raid.md)** | ours: derived (open search) | 20/11/20 | 618 | +0.0% | 700 | +0.0% | 3 s |
 | 2 | [`destruction-fire-raid`](destruction-fire-raid.md) | ours: hand draft | 22/11/18 | 613 | -0.8% | 689 | -1.5% | 8 s |
 | 3 | [`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md) | ours: optimizer | 10/11/30 | 613 | -0.8% | 685 | -2.1% | 2 s |
 | 4 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 586 | -5.1% | 657 | -6.1% | 5 s |
@@ -134,7 +134,7 @@ Damage by ability:
 ## Notes
 
 - The best fire build: +1.8% over destruction-fire-raid, the best of our builds in fire-destro-raid. The spec's raid pick may be another variant; the page lists this one among the spec's other builds.
-- Open search result (fire-destro-raid, full raid): 20/11/20 (Shadow Bolt hybrid (a Affliction/Destruction hybrid)) at 709.6 DPS; destruction-fire-raid 697.1 in the same fights; 4,669 builds simulated, 2 independent runs reached the top.
+- Open search result (fire-destro-raid, full raid): 20/11/20 (Shadow Bolt hybrid (an Affliction/Destruction hybrid)) at 709.6 DPS; destruction-fire-raid 697.1 in the same fights; 4,669 builds simulated, 2 independent runs reached the top.
 - The fire-destro-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.
 - Sibling rotations tried on it (10,000 fights): affliction-raid -0.6%, sb-raid -0.5%, demonology-raid -0.5%, incinerate-raid -0.9%; none adopted.
 - Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Health Funnel, Improved Imp, Unholy Power, Demonic Aegis.

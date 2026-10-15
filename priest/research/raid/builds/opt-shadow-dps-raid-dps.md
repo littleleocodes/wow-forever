@@ -94,7 +94,7 @@ Before the pull: at -1s: cast Shadowform.
 | 5 | cast Mind Blast | 7.0 |
 | 6 | channel Mind Flay | as ready |
 
-Lines of the simulator's rotation these builds never cast: Death (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: Death (rank 2) (its condition never held in these fights).
 
 Damage by ability:
 

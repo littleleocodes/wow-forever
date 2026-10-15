@@ -71,10 +71,10 @@ Allocation adopted on 2026-09-26 from `opt-sb-raid-raid-dps`, the best build in 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`shadow-bolt-hybrid-open-raid`](shadow-bolt-hybrid-open-raid.md) | ours: hand draft | 20/11/20 | 641 | +0.0% | 723 | +0.0% | 1 s |
+| 1 | [`shadow-bolt-hybrid-open-raid`](shadow-bolt-hybrid-open-raid.md) | ours: derived (open search) | 20/11/20 | 641 | +0.0% | 723 | +0.0% | 1 s |
 | 2 | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 637 | -0.6% | 718 | -0.6% | 1 s |
 | 3 | **[`ds-ruin-raid`](ds-ruin-raid.md)** | ours: hand draft | 22/11/18 | 633 | -1.1% | 716 | -0.8% | 2 s |
-| 4 | [`destruction-ml-raid`](destruction-ml-raid.md) | ours: hand draft | 10/11/30 | 627 | -2.1% | 705 | -2.4% | 0 s |
+| 4 | [`destruction-ml-raid`](destruction-ml-raid.md) | ours: derived (ML search) | 10/11/30 | 627 | -2.1% | 705 | -2.4% | 0 s |
 | 5 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 604 | -5.7% | 679 | -6.0% | 1 s |
 | 6 | *DS/Ruin* | community simulator | - | 595 | -7.1% | 668 | -7.5% | 1 s |
 | 7 | *Shadow and Flame 13/11/27* | community simulator | - | 549 | -14.3% | 618 | -14.5% | 1 s |

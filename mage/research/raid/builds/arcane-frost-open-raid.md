@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Arcane-Frost (a Arcane/Frost hybrid) raid build the open talent search found on 2026-10-09: every legal 51-point build with no tree rule, searched in the community simulator's frost-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.4% over frost-ml-raid, the best of our builds in that rotation.
+The Arcane-Frost (an Arcane/Frost hybrid) raid build the open talent search found on 2026-10-09: every legal 51-point build with no tree rule, searched in the community simulator's frost-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.4% over frost-ml-raid, the best of our builds in that rotation.
 
 ## Point allocation
 
@@ -62,10 +62,10 @@ The Arcane-Frost (a Arcane/Frost hybrid) raid build the open talent search found
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`frost-ml-raid`](frost-ml-raid.md) | ours: hand draft | 21/0/30 | 602 | +0.0% | 680 | -1.0% | 0 s |
+| 1 | [`frost-ml-raid`](frost-ml-raid.md) | ours: derived (ML search) | 21/0/30 | 602 | +0.0% | 680 | -1.0% | 0 s |
 | 2 | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 598 | -0.5% | 676 | -1.6% | 0 s |
 | 3 | [`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md) | ours: optimizer | 22/0/29 | 597 | -0.8% | 676 | -1.6% | 1 s |
-| 4 | **[`arcane-frost-open-raid`](arcane-frost-open-raid.md)** | ours: hand draft | 28/0/23 | 589 | -2.1% | 687 | +0.0% | 5 s |
+| 4 | **[`arcane-frost-open-raid`](arcane-frost-open-raid.md)** | ours: derived (open search) | 28/0/23 | 589 | -2.1% | 687 | +0.0% | 5 s |
 | 5 | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) | ours: hand draft | 32/0/19 | 566 | -5.9% | 643 | -6.4% | 0 s |
 | 6 | *Frost DPS* | community simulator | - | 557 | -7.5% | 632 | -8.0% | 0 s |
 | 7 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 1/13/37 | 546 | -9.3% | 646 | -6.0% | 7 s |
@@ -114,7 +114,7 @@ Damage by ability:
 ## Notes
 
 - +1.9% over the best hand draft of the spec, frost-fingers-of-frost-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.
-- Open search result (frost-raid, full raid): 28/0/23 (Arcane-Frost (a Arcane/Frost hybrid)) at 692.9 DPS; frost-ml-raid 683.3, opt-frost-raid-raid-dps 679.9, frost-fingers-of-frost-raid 679.8, opt-frost-raid-raid-dps-extwc 650.1, frost-arcane-power-raid 649.5, frost-winters-chill-raid 619.1 in the same fights; 4,617 builds simulated, 2 independent runs reached the top.
+- Open search result (frost-raid, full raid): 28/0/23 (Arcane-Frost (an Arcane/Frost hybrid)) at 692.9 DPS; frost-ml-raid 683.3, opt-frost-raid-raid-dps 679.9, frost-fingers-of-frost-raid 679.8, opt-frost-raid-raid-dps-extwc 650.1, frost-arcane-power-raid 649.5, frost-winters-chill-raid 619.1 in the same fights; 4,617 builds simulated, 2 independent runs reached the top.
 - The frost-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.
 - Sibling rotations tried on it (10,000 fights): fire-raid -46.4%, arcane-dps -6.9%, frostfire-raid -36.5%; none adopted.
 - Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Channeling, Arcane Subtlety, Arcane Geometry, Arcane Blast.

@@ -14,9 +14,9 @@
   "bis": {
    "entry": "shadow-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-shadow-bis.gear.json",
-   "date": "2026-10-14",
-   "chosen": "all-slots",
-   "ilvl": 62.9,
+   "date": "2026-10-15",
+   "chosen": "keep-sets-and-effects",
+   "ilvl": 65.2,
    "trinkets": [
     "Briarwood Reed",
     "Eye of the Beast"
@@ -36,27 +36,26 @@
     "Ring of Spell Power",
     "Briarwood Reed",
     "Eye of the Beast",
-    "Death Speaker Scepter",
-    "Scepter of Interminable Focus",
+    "Aurastone Hammer",
+    "Tome of Shadow Force",
     "Skul's Ghastly Touch"
    ],
    "race_seed1": {
-    "current": 1.0,
-    "all-slots": 1.0077051486575892,
-    "keep-sets-and-effects": 1.0077051486575892
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 1.0
    },
    "confirm_seed2": {
-    "current": 1.0,
-    "all-slots": 1.0069445391945997
+    "keep-sets-and-effects": 1.0,
+    "all-slots": 1.0
    },
    "weights": {
-    "StatIntellect": 0.0982,
-    "StatShadowDamage": 0.3687,
-    "StatSpellCritRating": 0.3641,
-    "StatSpellDamage": 0.3687,
-    "StatSpellHasteRating": 0.1889,
-    "StatSpellHitRating": 0.4145,
-    "StatSpirit": 0.0203
+    "StatIntellect": 0.0985,
+    "StatShadowDamage": 0.3693,
+    "StatSpellCritRating": 0.3632,
+    "StatSpellDamage": 0.3693,
+    "StatSpellHasteRating": 0.1902,
+    "StatSpellHitRating": 0.4138,
+    "StatSpirit": 0.0177
    },
    "evaluated_on": [
     "shadow-dps: ml winner"
@@ -66,9 +65,9 @@
   "prebis": {
    "entry": "shadow-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-shadow-prebis.gear.json",
-   "date": "2026-10-14",
+   "date": "2026-10-15",
    "chosen": "keep-sets-and-effects",
-   "ilvl": 60.8,
+   "ilvl": 62.5,
    "trinkets": [
     "Briarwood Reed",
     "Eye of the Beast"
@@ -88,7 +87,7 @@
     "Rune Band of Wizardry",
     "Briarwood Reed",
     "Eye of the Beast",
-    "Death Speaker Scepter",
+    "Scepter of the Unholy",
     "Tome of Shadow Force",
     "Skul's Ghastly Touch"
    ],
@@ -101,13 +100,13 @@
     "all-slots": 1.0
    },
    "weights": {
-    "StatIntellect": 0.0991,
-    "StatShadowDamage": 0.3648,
-    "StatSpellCritRating": 0.3823,
-    "StatSpellDamage": 0.3648,
-    "StatSpellHasteRating": 0.1859,
-    "StatSpellHitRating": 0.3664,
-    "StatSpirit": 0.0321
+    "StatIntellect": 0.0983,
+    "StatShadowDamage": 0.3647,
+    "StatSpellCritRating": 0.3803,
+    "StatSpellDamage": 0.3647,
+    "StatSpellHasteRating": 0.17,
+    "StatSpellHitRating": 0.3658,
+    "StatSpirit": 0.002
    },
    "evaluated_on": [
     "shadow-dps: ml winner (bis)"
@@ -646,7 +645,7 @@
    "spec": "Shadow",
    "setting": "dummy",
    "entry": "shadow-dps",
-   "date": "2026-10-14",
+   "date": "2026-10-15",
    "constraint": "Shadow 30+",
    "protected": [
     "Inner Focus"
@@ -659,10 +658,6 @@
     "allocation": {
      "Discipline": [
       [
-       "Power in Light",
-       2
-      ],
-      [
        "Twin Disciplines",
        5
       ],
@@ -671,12 +666,16 @@
        3
       ],
       [
+       "Improved Power Word: Shield",
+       1
+      ],
+      [
        "Martyrdom",
        2
       ],
       [
        "Mental Agility",
-       1
+       2
       ],
       [
        "Inner Focus",
@@ -748,26 +747,30 @@
      ]
     },
     "split": "18/0/33",
-    "dps": 596.52,
-    "se": 0.0623,
+    "dps": 596.58,
+    "se": 0.0631,
     "iterations": 100000
    },
    "runner_up": {
     "split": "18/0/33",
-    "dps": 596.52,
-    "se": 0.0623,
+    "dps": 596.58,
+    "se": 0.0631,
     "differs": [
      [
-      "Shadow Affinity",
+      "Improved Power Word: Shield",
+      1
+     ],
+     [
+      "Martyrdom",
+      1
+     ],
+     [
+      "Martyrdom",
       2
      ],
      [
-      "Shadow Affinity",
-      3
-     ],
-     [
-      "Spirit Tap",
-      1
+      "Power in Light",
+      2
      ]
     ]
    },
@@ -777,10 +780,6 @@
      "allocation": {
       "Discipline": [
        [
-        "Power in Light",
-        2
-       ],
-       [
         "Twin Disciplines",
         5
        ],
@@ -789,12 +788,16 @@
         3
        ],
        [
+        "Improved Power Word: Shield",
+        1
+       ],
+       [
         "Martyrdom",
         2
        ],
        [
         "Mental Agility",
-        1
+        2
        ],
        [
         "Inner Focus",
@@ -866,8 +869,8 @@
       ]
      },
      "split": "18/0/33",
-     "dps": 596.52,
-     "se": 0.0623
+     "dps": 596.58,
+     "se": 0.0631
     },
     {
      "allocation": {
@@ -886,11 +889,11 @@
        ],
        [
         "Martyrdom",
-        2
+        1
        ],
        [
         "Mental Agility",
-        1
+        2
        ],
        [
         "Inner Focus",
@@ -912,12 +915,8 @@
         5
        ],
        [
-        "Spirit Tap",
-        1
-       ],
-       [
         "Shadow Affinity",
-        2
+        3
        ],
        [
         "Improved Shadow Word: Pain",
@@ -966,8 +965,8 @@
       ]
      },
      "split": "18/0/33",
-     "dps": 596.52,
-     "se": 0.0623
+     "dps": 596.58,
+     "se": 0.0631
     }
    ],
    "runs": [
@@ -975,37 +974,37 @@
      "entry": "shadow-dps",
      "run": 1,
      "simulated": 1194,
-     "best_screen": 596.98,
+     "best_screen": 596.8,
      "best_split": "18/0/33",
      "trace": [
       {
        "round": 0,
        "simulated": 394,
-       "best": 596.98
+       "best": 596.8
       },
       {
        "round": 1,
        "simulated": 594,
-       "best": 596.98,
-       "predicted_top": 595.95
+       "best": 596.8,
+       "predicted_top": 595.75
       },
       {
        "round": 2,
        "simulated": 794,
-       "best": 596.98,
-       "predicted_top": 596.88
+       "best": 596.8,
+       "predicted_top": 596.63
       },
       {
        "round": 3,
        "simulated": 994,
-       "best": 596.98,
-       "predicted_top": 596.96
+       "best": 596.8,
+       "predicted_top": 596.75
       },
       {
        "round": 4,
        "simulated": 1194,
-       "best": 596.98,
-       "predicted_top": 596.98
+       "best": 596.8,
+       "predicted_top": 596.8
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1018,95 +1017,95 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      596.26,
-      596.26,
-      596.26,
-      596.26,
-      596.26,
-      596.26
+      596.34,
+      596.34,
+      596.34,
+      596.34,
+      596.34,
+      596.34
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      596.61,
-      596.61,
-      596.61,
-      596.61,
-      596.61
+      596.58,
+      596.58,
+      596.58,
+      596.58,
+      596.58
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      596.52,
-      596.52
+      596.58,
+      596.58
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 324,
-     "best_gap": 0.0006,
-     "best_move": "1 Mental Agility -> Improved Power Word: Shield"
+     "neighbours": 313,
+     "best_gap": 0.0001,
+     "best_move": "2 Mental Agility -> Meditation"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Shadowform",
-     "importance": 0.5972
+     "importance": 0.5778
     },
     {
      "feature": "Darkness",
-     "importance": 0.1679
+     "importance": 0.1538
+    },
+    {
+     "feature": "Mental Agility",
+     "importance": 0.0408
     },
     {
      "feature": "Blackout",
-     "importance": 0.0423
-    },
-    {
-     "feature": "Holy points",
-     "importance": 0.0284
-    },
-    {
-     "feature": "Mind Flay",
-     "importance": 0.0278
+     "importance": 0.0308
     },
     {
      "feature": "Mental Strength",
-     "importance": 0.0261
-    },
-    {
-     "feature": "Spirit Tap",
-     "importance": 0.0249
-    },
-    {
-     "feature": "Improved Mind Flay",
-     "importance": 0.0188
+     "importance": 0.0278
     },
     {
      "feature": "Shadow Reach",
-     "importance": 0.0125
+     "importance": 0.0274
     },
     {
-     "feature": "Vampiric Embrace",
-     "importance": 0.0089
+     "feature": "Holy points",
+     "importance": 0.0236
     },
     {
-     "feature": "Discipline points",
-     "importance": 0.0088
+     "feature": "Mind Flay",
+     "importance": 0.0233
+    },
+    {
+     "feature": "Improved Mind Flay",
+     "importance": 0.021
     },
     {
      "feature": "Meditation",
-     "importance": 0.0079
+     "importance": 0.0178
+    },
+    {
+     "feature": "Spirit Tap",
+     "importance": 0.0143
+    },
+    {
+     "feature": "Vampiric Embrace",
+     "importance": 0.0117
     }
    ],
-   "simulated_builds": 1532,
-   "simulated_fights": 2579000,
-   "minutes": 1.1,
+   "simulated_builds": 1521,
+   "simulated_fights": 2546000,
+   "minutes": 2.7,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-shadow-bis.gear.json"
   },
   "bis-raid": {
@@ -1114,7 +1113,7 @@
    "spec": "Shadow",
    "setting": "raid",
    "entry": "shadow-dps",
-   "date": "2026-10-14",
+   "date": "2026-10-15",
    "constraint": "Shadow 30+",
    "protected": [
     "Inner Focus"
@@ -1135,16 +1134,12 @@
        3
       ],
       [
-       "Holy Precision",
-       1
-      ],
-      [
        "Improved Power Word: Shield",
        2
       ],
       [
        "Martyrdom",
-       2
+       1
       ],
       [
        "Inner Focus",
@@ -1152,7 +1147,7 @@
       ],
       [
        "Meditation",
-       1
+       3
       ],
       [
        "Mental Strength",
@@ -1216,26 +1211,18 @@
      ]
     },
     "split": "18/0/33",
-    "dps": 701.98,
-    "se": 0.0765,
+    "dps": 702.21,
+    "se": 0.0781,
     "iterations": 100000
    },
    "runner_up": {
     "split": "18/0/33",
-    "dps": 701.98,
-    "se": 0.0765,
+    "dps": 702.21,
+    "se": 0.0781,
     "differs": [
      [
-      "Holy Precision",
+      "Martyrdom",
       1
-     ],
-     [
-      "Improved Power Word: Shield",
-      2
-     ],
-     [
-      "Power in Light",
-      2
      ],
      [
       "Wand Specialization",
@@ -1257,16 +1244,12 @@
         3
        ],
        [
-        "Holy Precision",
-        1
-       ],
-       [
         "Improved Power Word: Shield",
         2
        ],
        [
         "Martyrdom",
-        2
+        1
        ],
        [
         "Inner Focus",
@@ -1274,7 +1257,7 @@
        ],
        [
         "Meditation",
-        1
+        3
        ],
        [
         "Mental Strength",
@@ -1338,16 +1321,12 @@
       ]
      },
      "split": "18/0/33",
-     "dps": 701.98,
-     "se": 0.0765
+     "dps": 702.21,
+     "se": 0.0781
     },
     {
      "allocation": {
       "Discipline": [
-       [
-        "Power in Light",
-        2
-       ],
        [
         "Wand Specialization",
         1
@@ -1361,7 +1340,7 @@
         3
        ],
        [
-        "Martyrdom",
+        "Improved Power Word: Shield",
         2
        ],
        [
@@ -1370,7 +1349,7 @@
        ],
        [
         "Meditation",
-        1
+        3
        ],
        [
         "Mental Strength",
@@ -1434,46 +1413,46 @@
       ]
      },
      "split": "18/0/33",
-     "dps": 701.98,
-     "se": 0.0765
+     "dps": 702.21,
+     "se": 0.0781
     }
    ],
    "runs": [
     {
      "entry": "shadow-dps",
      "run": 1,
-     "simulated": 1197,
-     "best_screen": 703.22,
+     "simulated": 1195,
+     "best_screen": 702.8,
      "best_split": "18/0/33",
      "trace": [
       {
        "round": 0,
-       "simulated": 397,
-       "best": 703.22
+       "simulated": 395,
+       "best": 702.51
       },
       {
        "round": 1,
-       "simulated": 597,
-       "best": 703.22,
-       "predicted_top": 702.16
+       "simulated": 595,
+       "best": 702.8,
+       "predicted_top": 701.69
       },
       {
        "round": 2,
-       "simulated": 797,
-       "best": 703.22,
-       "predicted_top": 703.11
+       "simulated": 795,
+       "best": 702.8,
+       "predicted_top": 702.41
       },
       {
        "round": 3,
-       "simulated": 997,
-       "best": 703.22,
-       "predicted_top": 703.19
+       "simulated": 995,
+       "best": 702.8,
+       "predicted_top": 702.7
       },
       {
        "round": 4,
-       "simulated": 1197,
-       "best": 703.22,
-       "predicted_top": 703.22
+       "simulated": 1195,
+       "best": 702.8,
+       "predicted_top": 702.77
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1486,95 +1465,95 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      702.13,
-      702.13,
-      702.13,
-      702.13,
-      702.13,
-      702.13
+      702.64,
+      702.64,
+      702.64,
+      702.64,
+      702.64,
+      702.64
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      701.88,
-      701.88,
-      701.88,
-      701.88,
-      701.88
+      702.12,
+      702.12,
+      702.12,
+      702.12,
+      702.12
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      701.98,
-      701.98
+      702.21,
+      702.21
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 320,
-     "best_gap": 0.0006,
-     "best_move": "2 Improved Power Word: Shield -> Mental Agility"
+     "neighbours": 306,
+     "best_gap": 0.0002,
+     "best_move": "2 Meditation -> Mental Agility"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Shadowform",
-     "importance": 0.4791
+     "importance": 0.5224
     },
     {
      "feature": "Darkness",
-     "importance": 0.1504
-    },
-    {
-     "feature": "Spirit Tap",
-     "importance": 0.0934
+     "importance": 0.1658
     },
     {
      "feature": "Mind Flay",
-     "importance": 0.0847
+     "importance": 0.0712
+    },
+    {
+     "feature": "Spirit Tap",
+     "importance": 0.049
     },
     {
      "feature": "Improved Mind Flay",
-     "importance": 0.0403
+     "importance": 0.0483
     },
     {
      "feature": "Blackout",
-     "importance": 0.039
+     "importance": 0.0381
     },
     {
-     "feature": "Shadow Reach",
-     "importance": 0.0379
-    },
-    {
-     "feature": "Mental Strength",
-     "importance": 0.0145
-    },
-    {
-     "feature": "Holy points",
-     "importance": 0.011
-    },
-    {
-     "feature": "Shadow Weaving",
-     "importance": 0.0064
-    },
-    {
-     "feature": "Shadow points",
-     "importance": 0.0053
+     "feature": "Meditation",
+     "importance": 0.0279
     },
     {
      "feature": "Discipline points",
-     "importance": 0.0052
+     "importance": 0.0133
+    },
+    {
+     "feature": "Holy points",
+     "importance": 0.0132
+    },
+    {
+     "feature": "Mental Strength",
+     "importance": 0.0096
+    },
+    {
+     "feature": "Shadow Weaving",
+     "importance": 0.0079
+    },
+    {
+     "feature": "Shadow Reach",
+     "importance": 0.006
     }
    ],
-   "simulated_builds": 1531,
-   "simulated_fights": 2570000,
-   "minutes": 1.4,
+   "simulated_builds": 1515,
+   "simulated_fights": 2526000,
+   "minutes": 3.3,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-shadow-bis.gear.json"
   },
   "prebis-dummy": {
@@ -1582,7 +1561,7 @@
    "spec": "Shadow",
    "setting": "dummy",
    "entry": "shadow-dps",
-   "date": "2026-10-14",
+   "date": "2026-10-15",
    "constraint": "Shadow 30+",
    "protected": [
     "Inner Focus"
@@ -1595,8 +1574,8 @@
     "allocation": {
      "Discipline": [
       [
-       "Power in Light",
-       2
+       "Wand Specialization",
+       1
       ],
       [
        "Twin Disciplines",
@@ -1605,6 +1584,10 @@
       [
        "Silent Resolve",
        3
+      ],
+      [
+       "Improved Power Word: Shield",
+       1
       ],
       [
        "Martyrdom",
@@ -1684,30 +1667,22 @@
      ]
     },
     "split": "18/0/33",
-    "dps": 581.15,
-    "se": 0.0565,
+    "dps": 577.81,
+    "se": 0.0561,
     "iterations": 100000
    },
    "runner_up": {
     "split": "18/0/33",
-    "dps": 581.15,
-    "se": 0.0565,
+    "dps": 577.81,
+    "se": 0.0561,
     "differs": [
      [
-      "Power in Light",
-      2
+      "Holy Precision",
+      1
      ],
      [
-      "Power in Light",
-      3
-     ],
-     [
-      "Silent Resolve",
-      2
-     ],
-     [
-      "Silent Resolve",
-      3
+      "Wand Specialization",
+      1
      ]
     ]
    },
@@ -1717,8 +1692,8 @@
      "allocation": {
       "Discipline": [
        [
-        "Power in Light",
-        2
+        "Wand Specialization",
+        1
        ],
        [
         "Twin Disciplines",
@@ -1727,6 +1702,10 @@
        [
         "Silent Resolve",
         3
+       ],
+       [
+        "Improved Power Word: Shield",
+        1
        ],
        [
         "Martyrdom",
@@ -1806,23 +1785,27 @@
       ]
      },
      "split": "18/0/33",
-     "dps": 581.15,
-     "se": 0.0565
+     "dps": 577.81,
+     "se": 0.0561
     },
     {
      "allocation": {
       "Discipline": [
        [
-        "Power in Light",
-        3
-       ],
-       [
         "Twin Disciplines",
         5
        ],
        [
         "Silent Resolve",
-        2
+        3
+       ],
+       [
+        "Holy Precision",
+        1
+       ],
+       [
+        "Improved Power Word: Shield",
+        1
        ],
        [
         "Martyrdom",
@@ -1902,46 +1885,46 @@
       ]
      },
      "split": "18/0/33",
-     "dps": 581.15,
-     "se": 0.0565
+     "dps": 577.81,
+     "se": 0.0561
     }
    ],
    "runs": [
     {
      "entry": "shadow-dps",
      "run": 1,
-     "simulated": 1190,
-     "best_screen": 581.58,
+     "simulated": 1196,
+     "best_screen": 578.24,
      "best_split": "18/0/33",
      "trace": [
       {
        "round": 0,
-       "simulated": 390,
-       "best": 581.58
+       "simulated": 396,
+       "best": 577.99
       },
       {
        "round": 1,
-       "simulated": 590,
-       "best": 581.58,
-       "predicted_top": 580.74
+       "simulated": 596,
+       "best": 578.24,
+       "predicted_top": 577.18
       },
       {
        "round": 2,
-       "simulated": 790,
-       "best": 581.58,
-       "predicted_top": 581.48
+       "simulated": 796,
+       "best": 578.24,
+       "predicted_top": 577.98
       },
       {
        "round": 3,
-       "simulated": 990,
-       "best": 581.58,
-       "predicted_top": 581.58
+       "simulated": 996,
+       "best": 578.24,
+       "predicted_top": 578.2
       },
       {
        "round": 4,
-       "simulated": 1190,
-       "best": 581.58,
-       "predicted_top": 581.58
+       "simulated": 1196,
+       "best": 578.24,
+       "predicted_top": 578.23
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1954,37 +1937,37 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      581.0,
-      581.0,
-      581.0,
-      581.0,
-      581.0,
-      581.0
+      577.66,
+      577.66,
+      577.66,
+      577.66,
+      577.66,
+      577.66
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      581.36,
-      581.36,
-      581.36,
-      581.36,
-      581.36
+      578.02,
+      578.02,
+      578.02,
+      578.02,
+      578.02
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      581.15,
-      581.15
+      577.81,
+      577.81
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 324,
+     "neighbours": 320,
      "best_gap": 0.0006,
      "best_move": "1 Meditation -> Improved Power Word: Shield"
     }
@@ -1993,56 +1976,56 @@
    "important_features": [
     {
      "feature": "Shadowform",
-     "importance": 0.6088
+     "importance": 0.5758
     },
     {
      "feature": "Darkness",
-     "importance": 0.1127
-    },
-    {
-     "feature": "Blackout",
-     "importance": 0.0692
+     "importance": 0.1148
     },
     {
      "feature": "Spirit Tap",
-     "importance": 0.051
-    },
-    {
-     "feature": "Mental Strength",
-     "importance": 0.0265
-    },
-    {
-     "feature": "Mind Flay",
-     "importance": 0.0239
+     "importance": 0.0896
     },
     {
      "feature": "Improved Mind Flay",
-     "importance": 0.0211
+     "importance": 0.0408
     },
     {
-     "feature": "Holy points",
-     "importance": 0.0184
+     "feature": "Mind Flay",
+     "importance": 0.0298
     },
     {
-     "feature": "Meditation",
-     "importance": 0.0168
-    },
-    {
-     "feature": "Mental Agility",
-     "importance": 0.0075
-    },
-    {
-     "feature": "Shadow points",
-     "importance": 0.0074
+     "feature": "Mental Strength",
+     "importance": 0.0296
     },
     {
      "feature": "Shadow Reach",
-     "importance": 0.0057
+     "importance": 0.0246
+    },
+    {
+     "feature": "Blackout",
+     "importance": 0.0235
+    },
+    {
+     "feature": "Mental Agility",
+     "importance": 0.0154
+    },
+    {
+     "feature": "Power in Light",
+     "importance": 0.0089
+    },
+    {
+     "feature": "Meditation",
+     "importance": 0.0077
+    },
+    {
+     "feature": "Discipline points",
+     "importance": 0.0063
     }
    ],
-   "simulated_builds": 1528,
-   "simulated_fights": 2575000,
-   "minutes": 1.1,
+   "simulated_builds": 1530,
+   "simulated_fights": 2569000,
+   "minutes": 2.6,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-shadow-prebis.gear.json"
   },
   "prebis-raid": {
@@ -2050,7 +2033,7 @@
    "spec": "Shadow",
    "setting": "raid",
    "entry": "shadow-dps",
-   "date": "2026-10-14",
+   "date": "2026-10-15",
    "constraint": "Shadow 30+",
    "protected": [
     "Inner Focus"
@@ -2063,28 +2046,24 @@
     "allocation": {
      "Discipline": [
       [
-       "Power in Light",
-       2
-      ],
-      [
-       "Wand Specialization",
-       1
-      ],
-      [
        "Twin Disciplines",
        5
       ],
       [
        "Silent Resolve",
+       2
+      ],
+      [
+       "Holy Precision",
+       2
+      ],
+      [
+       "Improved Power Word: Shield",
        1
       ],
       [
        "Martyrdom",
-       2
-      ],
-      [
-       "Mental Agility",
-       2
+       1
       ],
       [
        "Inner Focus",
@@ -2092,7 +2071,7 @@
       ],
       [
        "Meditation",
-       1
+       3
       ],
       [
        "Mental Strength",
@@ -2106,15 +2085,15 @@
        5
       ],
       [
-       "Spirit Tap",
-       2
-      ],
-      [
        "Shadow Affinity",
-       3
+       1
       ],
       [
        "Improved Shadow Word: Pain",
+       2
+      ],
+      [
+       "Shadow Reach",
        2
       ],
       [
@@ -2142,6 +2121,10 @@
        1
       ],
       [
+       "Devouring Contagion",
+       2
+      ],
+      [
        "Darkness",
        5
       ],
@@ -2152,25 +2135,25 @@
      ]
     },
     "split": "20/0/31",
-    "dps": 685.24,
-    "se": 0.0705,
+    "dps": 681.19,
+    "se": 0.0702,
     "iterations": 100000
    },
    "runner_up": {
     "split": "20/0/31",
-    "dps": 685.24,
-    "se": 0.0705,
+    "dps": 681.19,
+    "se": 0.0702,
     "differs": [
      [
-      "Improved Fade",
-      2
-     ],
-     [
-      "Shadow Affinity",
+      "Improved Power Word: Shield",
       1
      ],
      [
-      "Shadow Affinity",
+      "Silent Resolve",
+      2
+     ],
+     [
+      "Silent Resolve",
       3
      ]
     ]
@@ -2181,28 +2164,24 @@
      "allocation": {
       "Discipline": [
        [
-        "Power in Light",
-        2
-       ],
-       [
-        "Wand Specialization",
-        1
-       ],
-       [
         "Twin Disciplines",
         5
        ],
        [
         "Silent Resolve",
+        2
+       ],
+       [
+        "Holy Precision",
+        2
+       ],
+       [
+        "Improved Power Word: Shield",
         1
        ],
        [
         "Martyrdom",
-        2
-       ],
-       [
-        "Mental Agility",
-        2
+        1
        ],
        [
         "Inner Focus",
@@ -2210,7 +2189,7 @@
        ],
        [
         "Meditation",
-        1
+        3
        ],
        [
         "Mental Strength",
@@ -2224,15 +2203,15 @@
         5
        ],
        [
-        "Spirit Tap",
-        2
-       ],
-       [
         "Shadow Affinity",
-        3
+        1
        ],
        [
         "Improved Shadow Word: Pain",
+        2
+       ],
+       [
+        "Shadow Reach",
         2
        ],
        [
@@ -2260,6 +2239,10 @@
         1
        ],
        [
+        "Devouring Contagion",
+        2
+       ],
+       [
         "Darkness",
         5
        ],
@@ -2270,35 +2253,27 @@
       ]
      },
      "split": "20/0/31",
-     "dps": 685.24,
-     "se": 0.0705
+     "dps": 681.19,
+     "se": 0.0702
     },
     {
      "allocation": {
       "Discipline": [
        [
-        "Power in Light",
-        2
-       ],
-       [
-        "Wand Specialization",
-        1
-       ],
-       [
         "Twin Disciplines",
         5
        ],
        [
         "Silent Resolve",
-        1
+        3
+       ],
+       [
+        "Holy Precision",
+        2
        ],
        [
         "Martyrdom",
-        2
-       ],
-       [
-        "Mental Agility",
-        2
+        1
        ],
        [
         "Inner Focus",
@@ -2306,7 +2281,7 @@
        ],
        [
         "Meditation",
-        1
+        3
        ],
        [
         "Mental Strength",
@@ -2320,15 +2295,15 @@
         5
        ],
        [
-        "Spirit Tap",
-        2
-       ],
-       [
         "Shadow Affinity",
         1
        ],
        [
         "Improved Shadow Word: Pain",
+        2
+       ],
+       [
+        "Shadow Reach",
         2
        ],
        [
@@ -2344,10 +2319,6 @@
         2
        ],
        [
-        "Improved Fade",
-        2
-       ],
-       [
         "Vampiric Embrace",
         1
        ],
@@ -2360,6 +2331,10 @@
         1
        ],
        [
+        "Devouring Contagion",
+        2
+       ],
+       [
         "Darkness",
         5
        ],
@@ -2370,46 +2345,46 @@
       ]
      },
      "split": "20/0/31",
-     "dps": 685.24,
-     "se": 0.0705
+     "dps": 681.19,
+     "se": 0.0702
     }
    ],
    "runs": [
     {
      "entry": "shadow-dps",
      "run": 1,
-     "simulated": 1188,
-     "best_screen": 685.5,
+     "simulated": 1191,
+     "best_screen": 681.68,
      "best_split": "20/0/31",
      "trace": [
       {
        "round": 0,
-       "simulated": 388,
-       "best": 685.19
+       "simulated": 391,
+       "best": 681.46
       },
       {
        "round": 1,
-       "simulated": 588,
-       "best": 685.32,
-       "predicted_top": 684.76
+       "simulated": 591,
+       "best": 681.46,
+       "predicted_top": 680.65
       },
       {
        "round": 2,
-       "simulated": 788,
-       "best": 685.32,
-       "predicted_top": 685.17
+       "simulated": 791,
+       "best": 681.46,
+       "predicted_top": 681.32
       },
       {
        "round": 3,
-       "simulated": 988,
-       "best": 685.32,
-       "predicted_top": 685.22
+       "simulated": 991,
+       "best": 681.68,
+       "predicted_top": 681.43
       },
       {
        "round": 4,
-       "simulated": 1188,
-       "best": 685.5,
-       "predicted_top": 685.23
+       "simulated": 1191,
+       "best": 681.68,
+       "predicted_top": 681.45
       }
      ],
      "best_stage1_gap": 0.0,
@@ -2422,95 +2397,95 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      685.46,
-      685.43,
-      685.37,
-      685.37,
-      685.37,
-      685.34
+      681.61,
+      681.61,
+      681.51,
+      681.51,
+      681.51,
+      681.38
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      685.12,
-      685.12,
-      685.12,
-      685.08,
-      685.05
+      681.16,
+      681.16,
+      681.06,
+      681.06,
+      681.06
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      685.24,
-      685.24
+      681.19,
+      681.19
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 300,
-     "best_gap": 0.0004,
-     "best_move": "1 Meditation -> Improved Power Word: Shield"
+     "neighbours": 259,
+     "best_gap": 0.0005,
+     "best_move": "2 Meditation -> Mental Agility"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Shadowform",
-     "importance": 0.4354
-    },
-    {
-     "feature": "Darkness",
-     "importance": 0.1517
-    },
-    {
-     "feature": "Mind Flay",
-     "importance": 0.1131
-    },
-    {
-     "feature": "Improved Mind Flay",
-     "importance": 0.103
+     "importance": 0.4819
     },
     {
      "feature": "Spirit Tap",
-     "importance": 0.0607
+     "importance": 0.1264
+    },
+    {
+     "feature": "Darkness",
+     "importance": 0.0951
+    },
+    {
+     "feature": "Mind Flay",
+     "importance": 0.0844
     },
     {
      "feature": "Blackout",
-     "importance": 0.0378
+     "importance": 0.0673
+    },
+    {
+     "feature": "Improved Mind Flay",
+     "importance": 0.0497
     },
     {
      "feature": "Mental Strength",
-     "importance": 0.0229
-    },
-    {
-     "feature": "Shadow Weaving",
-     "importance": 0.0153
-    },
-    {
-     "feature": "Holy points",
-     "importance": 0.0101
-    },
-    {
-     "feature": "Improved Psychic Scream",
-     "importance": 0.0076
-    },
-    {
-     "feature": "Shadow Reach",
-     "importance": 0.0064
+     "importance": 0.0253
     },
     {
      "feature": "Meditation",
-     "importance": 0.004
+     "importance": 0.0132
+    },
+    {
+     "feature": "Shadow Weaving",
+     "importance": 0.0081
+    },
+    {
+     "feature": "Discipline points",
+     "importance": 0.0076
+    },
+    {
+     "feature": "Holy points",
+     "importance": 0.0056
+    },
+    {
+     "feature": "Power in Light",
+     "importance": 0.0046
     }
    ],
-   "simulated_builds": 1502,
-   "simulated_fights": 2501000,
-   "minutes": 1.4,
+   "simulated_builds": 1464,
+   "simulated_fights": 2381000,
+   "minutes": 2.8,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-shadow-prebis.gear.json"
   }
  },
@@ -2519,535 +2494,24 @@
   "date": "2026-10-14",
   "lines_kept": 0
  },
+ "notes": [
+  "2026-10-15: gear and final searches cleared and re-run: Death Speaker Scepter (2816, suspected database error) left the pools"
+ ],
  "compare": {
   "setting": "dummy",
   "dps": {
    "winner": {
     "entry": "shadow-dps",
-    "dps": 596.5,
-    "se": 0.062
+    "dps": 596.49,
+    "se": 0.063
    },
    "opt-shadow-dps-raid-dps": {
     "entry": "shadow-dps",
-    "dps": 596.25,
-    "se": 0.062
+    "dps": 596.46,
+    "se": 0.063
    }
   },
   "best_hand": null,
   "gain_vs_hand": null
- },
- "compare_raid": {
-  "setting": "raid",
-  "dps": {
-   "winner": {
-    "entry": "shadow-dps",
-    "dps": 701.87,
-    "se": 0.076
-   },
-   "opt-shadow-dps-raid-dps": {
-    "entry": "shadow-dps",
-    "dps": 701.88,
-    "se": 0.076
-   }
-  },
-  "best_hand": null,
-  "gain_vs_hand": null
- },
- "builds": {
-  "written": [],
-  "superseded": [],
-  "date": "2026-10-15",
-  "setting": "raid",
-  "why": "confirms opt-shadow-dps-raid-dps (-0.00% in a full raid)"
- },
- "tidied": {
-  "bis-dummy": {
-   "allocation": {
-    "Discipline": [
-     [
-      "Twin Disciplines",
-      5
-     ],
-     [
-      "Silent Resolve",
-      3
-     ],
-     [
-      "Martyrdom",
-      2
-     ],
-     [
-      "Mental Agility",
-      2
-     ],
-     [
-      "Inner Focus",
-      1
-     ],
-     [
-      "Meditation",
-      2
-     ],
-     [
-      "Mental Strength",
-      3
-     ]
-    ],
-    "Holy": [],
-    "Shadow": [
-     [
-      "Shadow Focus",
-      5
-     ],
-     [
-      "Shadow Affinity",
-      3
-     ],
-     [
-      "Improved Shadow Word: Pain",
-      2
-     ],
-     [
-      "Improved Mind Blast",
-      5
-     ],
-     [
-      "Mind Flay",
-      1
-     ],
-     [
-      "Improved Mind Flay",
-      2
-     ],
-     [
-      "Vampiric Embrace",
-      1
-     ],
-     [
-      "Shadow Weaving",
-      3
-     ],
-     [
-      "Silence",
-      1
-     ],
-     [
-      "Devouring Contagion",
-      2
-     ],
-     [
-      "Early Demise",
-      2
-     ],
-     [
-      "Darkness",
-      5
-     ],
-     [
-      "Shadowform",
-      1
-     ]
-    ]
-   },
-   "split": "18/0/33",
-   "moves": [
-    {
-     "round": 1,
-     "kind": "utility",
-     "from": "Power in Light",
-     "to": "Meditation",
-     "seed1": 0.0007303876616717719,
-     "seed2": -2.1365021469543777e-05,
-     "utility": "mana"
-    },
-    {
-     "round": 2,
-     "kind": "utility",
-     "from": "Power in Light",
-     "to": "Mental Agility",
-     "seed1": -0.0007014602090923416,
-     "seed2": -0.0006616955008067471,
-     "utility": "mana"
-    }
-   ],
-   "abilities_never_cast": [
-    "Vampiric Embrace"
-   ],
-   "final_seed3": -0.0009961520220161946
-  },
-  "bis-raid": {
-   "allocation": {
-    "Discipline": [
-     [
-      "Twin Disciplines",
-      5
-     ],
-     [
-      "Silent Resolve",
-      3
-     ],
-     [
-      "Martyrdom",
-      2
-     ],
-     [
-      "Inner Focus",
-      1
-     ],
-     [
-      "Meditation",
-      2
-     ],
-     [
-      "Mental Strength",
-      3
-     ],
-     [
-      "Mental Agility",
-      2
-     ]
-    ],
-    "Holy": [],
-    "Shadow": [
-     [
-      "Shadow Focus",
-      5
-     ],
-     [
-      "Shadow Affinity",
-      3
-     ],
-     [
-      "Improved Shadow Word: Pain",
-      2
-     ],
-     [
-      "Improved Mind Blast",
-      5
-     ],
-     [
-      "Mind Flay",
-      1
-     ],
-     [
-      "Improved Mind Flay",
-      2
-     ],
-     [
-      "Vampiric Embrace",
-      1
-     ],
-     [
-      "Shadow Weaving",
-      3
-     ],
-     [
-      "Silence",
-      1
-     ],
-     [
-      "Devouring Contagion",
-      2
-     ],
-     [
-      "Early Demise",
-      2
-     ],
-     [
-      "Darkness",
-      5
-     ],
-     [
-      "Shadowform",
-      1
-     ]
-    ]
-   },
-   "split": "18/0/33",
-   "moves": [
-    {
-     "round": 1,
-     "kind": "utility",
-     "from": "Holy Precision",
-     "to": "Meditation",
-     "seed1": -0.0002630379177572806,
-     "seed2": 1.4700219838736928e-05,
-     "utility": "mana"
-    },
-    {
-     "round": 2,
-     "kind": "utility",
-     "from": "Improved Power Word: Shield",
-     "to": "Mental Agility",
-     "seed1": 2.5348574797190437e-05,
-     "seed2": 9.234179675843279e-05,
-     "utility": "mana"
-    },
-    {
-     "round": 3,
-     "kind": "utility",
-     "from": "Improved Power Word: Shield",
-     "to": "Mental Agility",
-     "seed1": -0.00022896360320423526,
-     "seed2": 4.0108518555070916e-05,
-     "utility": "mana"
-    }
-   ],
-   "abilities_never_cast": [
-    "Vampiric Embrace"
-   ],
-   "final_seed3": -1.6228655956407323e-05
-  },
-  "prebis-dummy": {
-   "allocation": {
-    "Discipline": [
-     [
-      "Twin Disciplines",
-      5
-     ],
-     [
-      "Silent Resolve",
-      3
-     ],
-     [
-      "Martyrdom",
-      2
-     ],
-     [
-      "Mental Agility",
-      2
-     ],
-     [
-      "Inner Focus",
-      1
-     ],
-     [
-      "Meditation",
-      2
-     ],
-     [
-      "Mental Strength",
-      3
-     ]
-    ],
-    "Holy": [],
-    "Shadow": [
-     [
-      "Shadow Focus",
-      5
-     ],
-     [
-      "Shadow Affinity",
-      3
-     ],
-     [
-      "Improved Shadow Word: Pain",
-      2
-     ],
-     [
-      "Improved Mind Blast",
-      5
-     ],
-     [
-      "Mind Flay",
-      1
-     ],
-     [
-      "Improved Mind Flay",
-      2
-     ],
-     [
-      "Vampiric Embrace",
-      1
-     ],
-     [
-      "Shadow Weaving",
-      3
-     ],
-     [
-      "Silence",
-      1
-     ],
-     [
-      "Devouring Contagion",
-      2
-     ],
-     [
-      "Early Demise",
-      2
-     ],
-     [
-      "Darkness",
-      5
-     ],
-     [
-      "Shadowform",
-      1
-     ]
-    ]
-   },
-   "split": "18/0/33",
-   "moves": [
-    {
-     "round": 1,
-     "kind": "utility",
-     "from": "Power in Light",
-     "to": "Meditation",
-     "seed1": 0.0007303876616717719,
-     "seed2": -2.1365021469543777e-05,
-     "utility": "mana"
-    },
-    {
-     "round": 2,
-     "kind": "utility",
-     "from": "Power in Light",
-     "to": "Mental Agility",
-     "seed1": -0.0007014602090923416,
-     "seed2": -0.0006616955008067471,
-     "utility": "mana"
-    }
-   ],
-   "abilities_never_cast": [
-    "Vampiric Embrace"
-   ],
-   "final_seed3": -0.0009961520220161946
-  },
-  "prebis-raid": {
-   "allocation": {
-    "Discipline": [
-     [
-      "Twin Disciplines",
-      5
-     ],
-     [
-      "Silent Resolve",
-      3
-     ],
-     [
-      "Martyrdom",
-      2
-     ],
-     [
-      "Mental Agility",
-      2
-     ],
-     [
-      "Inner Focus",
-      1
-     ],
-     [
-      "Mental Strength",
-      5
-     ],
-     [
-      "Meditation",
-      2
-     ]
-    ],
-    "Holy": [],
-    "Shadow": [
-     [
-      "Shadow Focus",
-      5
-     ],
-     [
-      "Spirit Tap",
-      2
-     ],
-     [
-      "Shadow Affinity",
-      3
-     ],
-     [
-      "Improved Shadow Word: Pain",
-      2
-     ],
-     [
-      "Improved Mind Blast",
-      5
-     ],
-     [
-      "Mind Flay",
-      1
-     ],
-     [
-      "Improved Mind Flay",
-      2
-     ],
-     [
-      "Vampiric Embrace",
-      1
-     ],
-     [
-      "Shadow Weaving",
-      3
-     ],
-     [
-      "Silence",
-      1
-     ],
-     [
-      "Darkness",
-      5
-     ],
-     [
-      "Shadowform",
-      1
-     ]
-    ]
-   },
-   "split": "20/0/31",
-   "moves": [
-    {
-     "round": 1,
-     "kind": "utility",
-     "from": "Mental Agility",
-     "to": "Silent Resolve",
-     "seed1": 2.4641928073165786e-05,
-     "seed2": 0.00022115572083181156,
-     "utility": "threat"
-    },
-    {
-     "round": 2,
-     "kind": "utility",
-     "from": "Meditation",
-     "to": "Silent Resolve",
-     "seed1": 0.00015332589049066314,
-     "seed2": -0.00024017176946444785,
-     "utility": "threat"
-    },
-    {
-     "round": 3,
-     "kind": "utility",
-     "from": "Power in Light",
-     "to": "Meditation",
-     "seed1": -0.0001533023852660076,
-     "seed2": 0.00024022946580037896,
-     "utility": "mana"
-    },
-    {
-     "round": 4,
-     "kind": "utility",
-     "from": "Power in Light",
-     "to": "Meditation",
-     "seed1": 0.0002839746004024146,
-     "seed2": -0.000269957275656707,
-     "utility": "mana"
-    },
-    {
-     "round": 5,
-     "kind": "utility",
-     "from": "Wand Specialization",
-     "to": "Mental Agility",
-     "seed1": -0.0001914899673218784,
-     "seed2": 0.00034888774819297197,
-     "utility": "mana"
-    }
-   ],
-   "abilities_never_cast": [
-    "Vampiric Embrace"
-   ],
-   "final_seed3": 0.0002013270981016113
-  }
  }
 }

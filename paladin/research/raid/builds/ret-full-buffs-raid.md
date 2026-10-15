@@ -55,15 +55,14 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `ret-raid-d
 2. **Twist of Light** — New capstone: swapping seals grants an Echo that applies the replaced seal on the next hit — seal twisting.
 3. **Improved Seals** — New: +5%/rank Seal and Judgement damage (est. 15%).
 4. **Conviction** — +5% melee crit.
-5. **Vengeance** — Reworked: +1%/rank Physical and Holy damage per crit, 5 stacks (est. 15% at 3/3); requires Sanctified Judgement 3.
+5. **Vengeance** — Reworked: after a non-periodic crit, +1%/rank Physical and Holy damage for 30 s, stacking 3 times (+9% at 3/3, 70291 tooltip); requires Sanctified Judgement 3.
 6. **Precision** — +3% hit with all attacks and spells.
 7. **Divine Strength** — +10% Strength.
 8. **Champion of the Light** — New: spell damage from Intellect (est. 33%) — Judgements, Consecration, Exorcism scale.
 9. **Sacred Arbiter** — New 16-point talent: Holy Strike +10% and refreshes Judgements — no more re-judging.
 10. **Two-Handed Weapon Specialization** — +3% (est.) two-hander damage.
-11. **Crusade** — +2% damage, +4% vs. Demons/Undead (est.).
-12. **Sanctified Judgement** — Mana on Judgements; prerequisite for Vengeance.
-13. **Instrument of Law** — Faster Hammer of Wrath and -10% threat.
+11. **Sanctified Judgement** — Mana on Judgements; prerequisite for Vengeance.
+12. **Instrument of Law** — Faster Hammer of Wrath and -10% threat.
 
 ## Flex points
 
@@ -79,7 +78,7 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `ret-raid-d
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 12/8/31 | 533 | +0.0% | 979 | -0.3% | 1 s |
-| 2 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: hand draft | 11/8/32 | 523 | -1.8% | 982 | +0.0% | 6 s |
+| 2 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: derived (ML search) | 11/8/32 | 523 | -1.8% | 982 | +0.0% | 6 s |
 | 3 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/0/34 | 522 | -1.9% | 954 | -2.8% | 2 s |
 | 4 | *P4/P5 Ret* | community simulator | - | 514 | -3.6% | 952 | -3.1% | 7 s |
 | 5 | **[`ret-full-buffs-raid`](ret-full-buffs-raid.md)** | ours: hand draft | 10/8/33 | 509 | -4.5% | 979 | -0.3% | 20 s |
@@ -132,7 +131,7 @@ Before the pull: at -1.5s: cast Seal of Command.
 | 6 | cast Hammer of Wrath | 1.7 |
 | 7 | cast Holy Strike | 5.7 |
 | 8 | cast Consecration | 5.7 |
-| 9 | cast Consecration | 0.8 |
+| 9 | cast Consecration (rank 1) | 0.8 |
 
 Lines of the simulator's rotation these builds never cast: cast Holy Shock (its condition never held in these fights); cast Divine Favor (needs the Divine Favor talent).
 

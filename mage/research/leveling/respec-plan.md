@@ -13,7 +13,7 @@ Talentless baseline: 90 h for levels 10-60 under these assumptions.
   - at level 60: **Frost**: Improved Frostbolt 5, Frostbite 3, Ice Shards 5, Ice Lance 1, Frost Channeling 3, Shatter 3, Ice Block 1, Fingers of Frost 2, Piercing Ice 3, Elemental Precision 5, Cold Snap 1, Ice Barrier 1, Winter's Chill 5, Arctic Reach 2; **Fire**: Incineration 3; **Arcane**: Wand Specialization 2, Arcane Focus 3, Arcane Concentration 3
   - order: 10-14 Improved Frostbolt x5, 15-17 Frostbite x3, 18-19 Ice Shards x2, 20 Ice Lance, 21-22 Frost Channeling x2, 23-24 Ice Shards x2, 25 Shatter, 26 Ice Shards, 27 Ice Block, 28-29 Shatter x2, 30-31 Fingers of Frost x2, 32 Frost Channeling, 33-35 Piercing Ice x3, 36-38 Elemental Precision x3, 39 Cold Snap, 40 Ice Barrier, 41-42 Elemental Precision x2, 43-45 Incineration x3, 46-50 Winter's Chill x5, 51-52 Arctic Reach x2, 53-54 Wand Specialization x2, 55-57 Arcane Focus x3, 58-60 Arcane Concentration x3
 
-Total: **35.7 h** (60.3% faster than talentless), 0 respec(s).
+Total: **35.7 h** (60.3% faster than talentless), no respec.
 
 ## Best schedule if you stay in one spec model
 
@@ -24,7 +24,7 @@ Total: **35.7 h** (60.3% faster than talentless), 0 respec(s).
   - at level 60: **Frost**: Improved Frostbolt 5, Frostbite 3, Ice Shards 5, Ice Lance 1, Frost Channeling 3, Shatter 3, Ice Block 1, Fingers of Frost 2, Piercing Ice 3, Elemental Precision 5, Cold Snap 1, Ice Barrier 1, Winter's Chill 5, Arctic Reach 2; **Fire**: Incineration 3; **Arcane**: Wand Specialization 2, Arcane Focus 3, Arcane Concentration 3
   - order: 10-14 Improved Frostbolt x5, 15-17 Frostbite x3, 18-19 Ice Shards x2, 20 Ice Lance, 21-22 Frost Channeling x2, 23-24 Ice Shards x2, 25 Shatter, 26 Ice Shards, 27 Ice Block, 28-29 Shatter x2, 30-31 Fingers of Frost x2, 32 Frost Channeling, 33-35 Piercing Ice x3, 36-38 Elemental Precision x3, 39 Cold Snap, 40 Ice Barrier, 41-42 Elemental Precision x2, 43-45 Incineration x3, 46-50 Winter's Chill x5, 51-52 Arctic Reach x2, 53-54 Wand Specialization x2, 55-57 Arcane Focus x3, 58-60 Arcane Concentration x3
 
-Total: **35.7 h** (60.3% faster than talentless), 0 respec(s).
+Total: **35.7 h** (60.3% faster than talentless), no respec.
 
 ### fire-leveling
 
@@ -33,7 +33,7 @@ Total: **35.7 h** (60.3% faster than talentless), 0 respec(s).
   - at level 60: **Frost**: Elemental Precision 5, Permafrost 3, Frostbite 3, Ice Lance 1, Piercing Ice 3, Ice Block 1; **Fire**: Improved Fireball 5, Ignite 5, Burning Soul 3, Impact 3, Flame Throwing 2, Improved Scorch 3, Critical Mass 3, Blast Wave 1, Fire Power 5, Combustion 1, Master of Elements 3, Pyroblast 1
   - order: 10-14 Elemental Precision x5, 15-16 Permafrost x2, 17-19 Frostbite x3, 20 Ice Lance, 21-25 Improved Fireball x5, 26-30 Ignite x5, 31-33 Burning Soul x3, 34-36 Impact x3, 37-38 Flame Throwing x2, 39-40 Improved Scorch x2, 41 Critical Mass, 42 Blast Wave, 43 Improved Scorch, 44-45 Critical Mass x2, 46-50 Fire Power x5, 51 Combustion, 52-54 Master of Elements x3, 55 Pyroblast, 56 Permafrost, 57-59 Piercing Ice x3, 60 Ice Block
 
-Total: **42.4 h** (52.9% faster than talentless), 0 respec(s).
+Total: **42.4 h** (52.9% faster than talentless), no respec.
 
 ## Never respec: best single plan
 

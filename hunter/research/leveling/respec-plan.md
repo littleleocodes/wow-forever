@@ -11,7 +11,7 @@ Talentless baseline: 90 h for levels 10-60 under these assumptions.
   - at level 60: **Beast Mastery**: Deadly Aspects 5, Focused Fire 2, Pathfinding 2, Endurance Training 1, Unleashed Fury 5, Summon Hawk 1, Ferocity 3; **Marksmanship**: Lethal Attacks 5, Efficiency 5, Careful Aim 5, Improved Stings 3, Rapid Killing 2, Rapid Recuperation 2, Scatter Shot 1, Barrage 2, Ranged Weapon Specialization 5, Trueshot Aura 1, Sniper Shot 1
   - order: 10-14 Deadly Aspects x5, 15-16 Focused Fire x2, 17-18 Pathfinding x2, 19 Endurance Training, 20-24 Unleashed Fury x5, 25 Summon Hawk, 26-30 Lethal Attacks x5, 31-35 Efficiency x5, 36-40 Careful Aim x5, 41-43 Improved Stings x3, 44-45 Rapid Killing x2, 46-47 Rapid Recuperation x2, 48 Scatter Shot, 49-50 Barrage x2, 51-54 Ranged Weapon Specialization x4, 55 Trueshot Aura, 56 Sniper Shot, 57 Ranged Weapon Specialization, 58-60 Ferocity x3
 
-Total: **46.4 h** (48.4% faster than talentless), 0 respec(s).
+Total: **46.4 h** (48.4% faster than talentless), no respec.
 
 ## Never respec: best single plan
 

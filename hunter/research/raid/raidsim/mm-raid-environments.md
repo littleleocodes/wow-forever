@@ -7,7 +7,6 @@
 | `bm-mm-full-buffs-raid` | 21/30/0 | 471 | 515 | 801 | 801 | 824 |
 | `bm-mm-raid` | 22/29/0 | 459 | 498 | 803 | 803 | 828 |
 | `opt-mm-raid-raid-dps` | 22/29/0 | 459 | 498 | 803 | 803 | 828 |
-| `beast-marks-ml-raid` | 7/39/5 | 455 | 498 | 878 | 878 | 903 |
 | sim preset: Marksmanship | - | 453 | 496 | 843 | 843 | 872 |
 | `opt-mm-raid-parse` | 31/20/0 | 453 | 495 | 819 | 833 | 862 |
 | `marksmanship-with-a-pet-open-raid` | 7/39/5 | 451 | 493 | 879 | 879 | 906 |
@@ -30,7 +29,6 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 | `bm-mm-full-buffs-raid` | 471 | +14% | +33% | +9% | +5% | +10% | 801 |
 | `bm-mm-raid` | 459 | +12% | +35% | +10% | +3% | +15% | 803 |
 | `opt-mm-raid-raid-dps` | 459 | +12% | +35% | +10% | +3% | +15% | 803 |
-| `beast-marks-ml-raid` | 455 | +25% | +32% | +9% | +7% | +20% | 878 |
 | sim preset: Marksmanship | 453 | +20% | +32% | +9% | +6% | +19% | 843 |
 | `opt-mm-raid-parse` | 453 | +16% | +37% | +11% | +4% | +13% | 819 |
 | `marksmanship-with-a-pet-open-raid` | 451 | +26% | +33% | +9% | +7% | +20% | 879 |
@@ -49,7 +47,6 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 | `bm-mm-full-buffs-raid` | 552 | 489 | 471 | 437 | 423 |
 | `bm-mm-raid` | 531 | 476 | 459 | 425 | 412 |
 | `opt-mm-raid-raid-dps` | 531 | 476 | 459 | 425 | 412 |
-| `beast-marks-ml-raid` | 590 | 473 | 455 | 425 | 407 |
 | sim preset: Marksmanship | 566 | 470 | 453 | 421 | 406 |
 | `opt-mm-raid-parse` | 551 | 465 | 453 | 424 | 412 |
 | `marksmanship-with-a-pet-open-raid` | 592 | 469 | 451 | 422 | 404 |

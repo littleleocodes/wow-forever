@@ -6,9 +6,9 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
-| 1 | [Fury](fury.md) — Fury (optimized) | 25 | fastest |
-| 2 | [Arms](arms.md) — Arms (optimized) | 25 | +1% |
-| 3 | [Protection](protection.md) — Protection — Leveling 🔬 | 26 | +4% |
+| 1 | [Fury](fury.md) 🔬 | 25 | fastest |
+| 2 | [Protection](protection.md) 🔬 | 26 | +3% |
+| 3 | [Arms](arms.md) (optimized) | 27 | +7% |
 
 🔬 = a derived build (searched in a simulator). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 

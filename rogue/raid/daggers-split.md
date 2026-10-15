@@ -4,9 +4,11 @@
 
 *Daggers with points split between Assassination and Combat.* (a hybrid: Assassination/Combat).
 
-**[Daggers — Raid](../research/raid/builds/daggers-split-ml-raid.md)** (30/19/2) — [open the talent tree](https://talentsforever.com/rogue/60/0053031052150005-303333000013-002-6)
+**✅ Recommended** for raid (the best rogue spec here, or within 3% of it).
 
-> 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds). A model of the beta, to check at launch.
+**[Daggers — Raid](../research/raid/builds/daggers-split-open-raid.md)** (21/28/2) — [open the talent tree](https://talentsforever.com/rogue/60/00530310311301-303333000015142-002-6)
+
+> 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds). A model of the beta, to check at launch.
 
 ## How to play
 
@@ -16,24 +18,52 @@
 
 1. **Cold Blood** right before your finisher
 2. **Eviscerate** when you have 4 or more combo points and either Slice and Dice is active or you have 79+ energy
-3. **Backstab**
+3. **Mutilate**
 
-**Backstab** is your filler: cast it whenever nothing above is ready.
+**Mutilate** is your filler: cast it whenever nothing above is ready.
+
+**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
+
+- **Blade Flurry**: a cooldown, use it at the start of the fight and again whenever it is ready (about 2 times a fight)
+- Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
+
+## Why this rotation
+
+Daggers (split) plays the Assassination raid list with Combat's dagger talents: keep **Slice and Dice** up, spend 4 or more combo points on **Eviscerate**, and build with **Mutilate**. **Cold Blood** and **Blade Flurry** are your cooldowns. It has no **Seal Fate**: your points come from **Mutilate**, **Ruthlessness** and **Puncturing Wounds**.
+
+**Why it works**
+
+- **Slice and Dice** stays up all fight: 30% more attack speed, 45% longer with **Improved Slice and Dice**. Put it back up the moment it drops, even with 1 combo point.
+- **Eviscerate** at 4 or more points while **Slice and Dice** is up (or with 79 or more energy, or in the last 6 seconds): **Mutilate** gives 2 points at once, so waiting for 5 often wastes one. **Relentless Strikes** returns 25 energy for 20% of each finisher's points and **Ruthlessness** adds a point after 60% of them; in a full raid the simulator measured **Relentless Strikes** as this build's most valuable talent (about 7% of its damage).
+- **Cold Blood** right before an **Eviscerate** at 4 or more points with **Slice and Dice** up: a sure critical strike on your biggest hit.
+- **Mutilate** is your builder and filler: both weapons, 2 combo points, 20% more damage against a poisoned target. **Backstab** costs the same 60 energy and sits below it in the list, so it comes up only when **Mutilate** cannot be cast.
+- **Blade Flurry** (20% attack speed for 15 seconds, 2-minute cooldown) with your trinkets while **Slice and Dice** is up. **Hack and Slash** gives you 4% crit with daggers and **Dual Wield Specialization** 25% more off-hand damage.
+- Poisons: **Instant Poison** on the main hand, **Deadly Poison** on the off hand, with a sharpening stone on top (Forever lets them stack); **Improved Poisons** raises their chance to land.
+
+**Caveats**
+
+- There is no **Expose Armor** in the list: in a full raid a warrior keeps Sunder Armor on the boss, and the two do not stack.
+- **Mutilate** works from the front, **Backstab** only from behind: when the boss turns, keep building with **Mutilate**.
+
+**When to change it**
+
+- In the last 6 seconds, start no **Slice and Dice**: put 4 or more points into **Eviscerate** even with it down; with 1 to 3 points and the boss about to die, an **Eviscerate** still beats keeping them.
+- Adds: **Blade Flurry** copies your hits to a second target for its 15 seconds.
 
 ## The numbers
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 707 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 718 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 652 | this build |
-| Phase 1 BiS | 710 | this build |
+| Pre-BiS | 652 | [30/19/2](https://talentsforever.com/rogue/60/0053031052150005-303333000013-002-6) |
+| Phase 1 BiS | 710 | [30/19/2](https://talentsforever.com/rogue/60/0053031052150005-303333000013-002-6) |
 
 **The gear** (average item level: Pre-BiS 63.2; Phase 1 BiS 67.2; each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -45,10 +75,10 @@
 | Back | [Cape of the Black Baron](https://www.wowhead.com/forever/item=13340) · *Baron Rivendare, Stratholme*<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) | [Cape of the Black Baron](https://www.wowhead.com/forever/item=13340) · *Baron Rivendare, Stratholme*<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) |
 | Chest | [Dawn Armor](https://www.wowhead.com/forever/item=252483) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Dawn Armor](https://www.wowhead.com/forever/item=252483) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
 | Wrist | [Forest Stalker's Bracers](https://www.wowhead.com/forever/item=19587)<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) | [Forest Stalker's Bracers](https://www.wowhead.com/forever/item=19587)<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) |
-| Hands | [Theramore Gloves](https://www.wowhead.com/forever/item=271948)<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/spell=13823) | [Nightslayer Gloves](https://www.wowhead.com/forever/item=16826) · *Gehennas, Molten Core*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/spell=13823) |
+| Hands | [Theramore Gloves](https://www.wowhead.com/forever/item=271948)<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) | [Nightslayer Gloves](https://www.wowhead.com/forever/item=16826) · *Gehennas, Molten Core*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) |
 | Waist | [Assassin's Waistguard](https://www.wowhead.com/forever/item=272395) | [Assassin's Waistguard](https://www.wowhead.com/forever/item=272395) |
 | Legs | [Plaguehound Leggings](https://www.wowhead.com/forever/item=18736) · *Stratholme*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) | [Bloodfang Pants](https://www.wowhead.com/forever/item=16909) · *Ragnaros, Molten Core*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) |
-| Feet | [Darkmantle Footpads](https://www.wowhead.com/forever/item=226831)<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) | [Darkmantle Footpads](https://www.wowhead.com/forever/item=226831)<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) |
+| Feet | [Darkmantle Footpads](https://www.wowhead.com/forever/item=226831)<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) | [Darkmantle Footpads](https://www.wowhead.com/forever/item=226831)<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) |
 | Finger | [Don Julio's Band](https://www.wowhead.com/forever/item=19325) | [Band of Accuria](https://www.wowhead.com/forever/item=17063) · *Ragnaros, Molten Core* |
 | Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21202) | [Quick Strike Ring](https://www.wowhead.com/forever/item=18821) · *Magmadar, Molten Core* |
 | Trinket | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) |

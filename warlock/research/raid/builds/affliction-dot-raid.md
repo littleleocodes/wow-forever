@@ -1,4 +1,4 @@
-# Affliction — DoT / Drain Hope (simulator winner adopted 2026-09-27) — 30/0/21
+# Affliction — DoT / Malevolence / Nightfall (simulator winner adopted 2026-09-27) — 30/0/21
 
 *[Warlock](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 

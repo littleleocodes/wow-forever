@@ -52,11 +52,11 @@ The Survival raid damage build derived on 2026-09-30 (derive_raid.py): the commu
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`survival-raid`](survival-raid.md)** | ours: hand draft | 5/16/30 | 483 | +0.0% | 1025 | -2.5% | 9 s |
+| 1 | **[`survival-raid`](survival-raid.md)** | ours: derived (simulator search) | 5/16/30 | 483 | +0.0% | 1025 | -2.5% | 9 s |
 | 2 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 461 | -4.6% | 1042 | -0.9% | 44 s |
 | 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 461 | -4.7% | 1012 | -3.7% | 8 s |
-| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: parse build | 5/14/32 | 357 | -26.1% | 993 | -5.5% | 117 s |
-| 5 | [`beast-survival-open-raid`](beast-survival-open-raid.md) | ours: hand draft | 16/11/24 | 357 | -26.2% | 1051 | +0.0% | 127 s |
+| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 357 | -26.1% | 993 | -5.5% | 117 s |
+| 5 | [`beast-survival-open-raid`](beast-survival-open-raid.md) | ours: derived (open search) | 16/11/24 | 357 | -26.2% | 1051 | +0.0% | 127 s |
 
 ## Rotation (community simulator, training dummy)
 

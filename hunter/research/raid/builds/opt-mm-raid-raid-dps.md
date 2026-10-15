@@ -52,24 +52,22 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 4. **Deadly Aspects** — Removing it costs 7.5 points of score in this model.
 5. **Unleashed Fury** — Removing it costs 7.4 points of score in this model.
 6. **Careful Aim** — Removing it costs 6.2 points of score in this model.
-7. **Frenzy** — Removing it costs 6.1 points of score in this model.
-8. **Lethal Attacks** — Removing it costs 5.8 points of score in this model.
+7. **Lethal Attacks** — Removing it costs 5.8 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
-**3 of 9** for `mm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 8** for `mm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 471 | +0.0% | 801 | -8.9% | 70 s |
 | 2 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 459 | -2.5% | 803 | -8.7% | 53 s |
 | 3 | **[`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md)** | ours: optimizer | 22/29/0 | 459 | -2.5% | 803 | -8.7% | 53 s |
-| 4 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: hand draft | 7/39/5 | 455 | -3.2% | 878 | -0.2% | 96 s |
-| 5 | *Marksmanship* | community simulator | - | 453 | -3.8% | 843 | -4.1% | 89 s |
-| 6 | [`marksmanship-with-a-pet-open-raid`](marksmanship-with-a-pet-open-raid.md) | ours: hand draft | 7/39/5 | 451 | -4.2% | 879 | +0.0% | 98 s |
-| 7 | *Beast Mastery 35/16/0* | community simulator | - | 444 | -5.7% | 768 | -12.7% | 75 s |
-| 8 | *Marksmanship 0/39/12* | community simulator | - | 428 | -9.0% | 776 | -11.7% | 83 s |
-| 9 | *Survival 0/15/36* | community simulator | - | 394 | -16.3% | 678 | -22.8% | 76 s |
+| 4 | *Marksmanship* | community simulator | - | 453 | -3.8% | 843 | -4.1% | 89 s |
+| 5 | [`marksmanship-with-a-pet-open-raid`](marksmanship-with-a-pet-open-raid.md) | ours: derived (open search) | 7/39/5 | 451 | -4.2% | 879 | +0.0% | 98 s |
+| 6 | *Beast Mastery 35/16/0* | community simulator | - | 444 | -5.7% | 768 | -12.7% | 75 s |
+| 7 | *Marksmanship 0/39/12* | community simulator | - | 428 | -9.0% | 776 | -11.7% | 83 s |
+| 8 | *Survival 0/15/36* | community simulator | - | 394 | -16.3% | 678 | -22.8% | 76 s |
 
 ## Rotation (community simulator, training dummy)
 

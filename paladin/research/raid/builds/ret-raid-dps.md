@@ -56,7 +56,7 @@ Allocation adopted on 2026-09-27 from `cand-ret-dps-r1`, the best build in the c
 4. **Sanctified Judgement** — Mana on Judgements; prerequisite for Vengeance. Raid sim (2026-09-27): removing it costs +8% DPS.
 5. **Conviction** — +5% melee crit. Raid sim (2026-09-27): removing it costs +7% DPS.
 6. **Improved Seals** — New: +5%/rank Seal and Judgement damage (est. 15%). Raid sim (2026-09-27): removing it costs +7% DPS.
-7. **Vengeance** — Reworked: +1%/rank Physical and Holy damage per crit, 5 stacks (est. 15% at 3/3); requires Sanctified Judgement 3. Raid sim (2026-09-27): removing it costs +6% DPS.
+7. **Vengeance** — Reworked: after a non-periodic crit, +1%/rank Physical and Holy damage for 30 s, stacking 3 times (+9% at 3/3, 70291 tooltip); requires Sanctified Judgement 3. Raid sim (2026-09-27): removing it costs +6% DPS.
 8. **Reverence** — Raid sim (2026-09-27): removing it costs +4% DPS.
 
 ## Flex points
@@ -73,7 +73,7 @@ Allocation adopted on 2026-09-27 from `cand-ret-dps-r1`, the best build in the c
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 12/8/31 | 533 | +0.0% | 979 | -0.3% | 1 s |
-| 2 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: hand draft | 11/8/32 | 523 | -1.8% | 982 | +0.0% | 6 s |
+| 2 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: derived (ML search) | 11/8/32 | 523 | -1.8% | 982 | +0.0% | 6 s |
 | 3 | **[`ret-raid-dps`](ret-raid-dps.md)** | ours: hand draft | 17/0/34 | 522 | -1.9% | 954 | -2.8% | 2 s |
 | 4 | *P4/P5 Ret* | community simulator | - | 514 | -3.6% | 952 | -3.1% | 7 s |
 | 5 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 10/8/33 | 509 | -4.5% | 979 | -0.3% | 20 s |
@@ -126,7 +126,7 @@ Before the pull: at -1.5s: cast Seal of Command.
 | 6 | cast Hammer of Wrath | 2.0 |
 | 7 | cast Holy Strike | 6.0 |
 | 8 | cast Consecration | 6.3 |
-| 9 | cast Consecration | 0.6 |
+| 9 | cast Consecration (rank 1) | 0.6 |
 | 10 | cast Divine Favor | 0.7 |
 
 Lines of the simulator's rotation these builds never cast: cast Holy Shock (its condition never held in these fights).

@@ -2,7 +2,7 @@
   "_doc": "Warrior spec models. Damage shares from Classic Fury/Arms parses. Dual-wield white swings carry a +19% miss penalty (miss_extra) in Classic-style combat; yellow abilities do not. Rage is modelled through resource_cost (cheaper abilities = more uses, at 50% efficiency) and sustain effects. Tank sources carry the tags tank/shield/threat so threat and shield talents apply only there. Bloodthirst/Mortal Strike/Shield Slam are talents, so they are encoded as damage effects on the abilities they replace. min_level/max_level are Classic learn levels (Forever unlock levels are a beta check). enabled_by / displaces / enabled_ranks: see mage.json.",
   "models": {
     "fury-dw-raid": {
-      "note": "Raid dual-wield Fury: white ~50% (MH 35 / OH 15), Heroic Strike dump, Whirlwind, Execute, Overpower; Bloodthirst and Deep Wounds arrive as talent effects. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Bloodthirst rank 4 is 35% attack power plus 48 on a 6s cooldown (Classic 45% attack power); Battle Shout rank 7 gives 139 attack power; Whirlwind, Execute, Heroic Strike and Cleave are unchanged. Raid sim shares (2026-10-03, fury-dw-raid in the ElliotWood/Forever simulator b0f0df3): white_mh 32%, execute 23%, white_oh 17%, bloodthirst 15%, whirlwind 9%, deep_wounds 4%; 1% of the damage matched no source. Fight lab speed (2026-10-09): its leveling build kills 1.01x as fast as arms-2h-raid's optimizer build (level-weighted time per kill 25.2s vs 25.5s), written as abs_dps_factor so respec.py compares the models on that.",
+      "note": "Raid dual-wield Fury: white ~50% (MH 35 / OH 15), Heroic Strike dump, Whirlwind, Execute, Overpower; Bloodthirst and Deep Wounds arrive as talent effects. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Bloodthirst rank 4 is 35% attack power plus 48 on a 6s cooldown (Classic 45% attack power); Battle Shout rank 7 gives 139 attack power; Whirlwind, Execute, Heroic Strike and Cleave are unchanged. Raid sim shares (2026-10-03, fury-dw-raid in the ElliotWood/Forever simulator b0f0df3): white_mh 32%, execute 23%, white_oh 17%, bloodthirst 15%, whirlwind 9%, deep_wounds 4%; 1% of the damage matched no source. Fight lab speed (2026-10-15): its leveling build kills 1.02x as fast as arms-2h-raid's optimizer build (level-weighted time per kill 26.6s vs 27.2s), written as abs_dps_factor so respec.py compares the models on that.",
       "sources": [
         {
           "id": "white_mh",
@@ -111,7 +111,7 @@
       "stat_to_surv": {"stamina": 1.0},
       "mana_share": {},
       "regen_share": 0.0,
-      "abs_dps_factor": 1.01,
+      "abs_dps_factor": 1.023,
       "time": {
         "leveling-st": {"fight": 0.7, "downtime": 0.2, "death": 0.1},
         "solo-60": {"fight": 0.72, "downtime": 0.18, "death": 0.1}
@@ -124,7 +124,7 @@
       }
     },
     "arms-2h-raid": {
-      "note": "Two-handed Arms/raid or leveling: white ~45%, Heroic Strike, Overpower, Execute, Rend; Mortal Strike/Slam arrive as talent effects. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Slam has an 18s cooldown (rank 1 learned at 20) and Mortal Strike rank 4 is weapon plus 160; Battle Shout rank 7 gives 139 attack power (Classic 232) for 3 min; Bloodthrill procs only from main-hand attacks. Fight lab calibration (2026-09-28, beta client 1.60.1.70009, build opt-arms-2h-raid-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Melee 43%, Whirlwind 14%, Execute 13%, Rend 8%, Thunder Clap 6%, Overpower 5%, Cleave 5%, Deep Wounds 3%, Bloodthirst 2%, Victory Rush 0%, Heroic Strike 0%) and the leveling time split is fight 83% / drink 0% / eat 2% / other 0% / death 15% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Raid sim shares (2026-10-03, arms-2h-raid in the ElliotWood/Forever simulator b0f0df3): white 51%, bloodthirst 17%, execute 15%, whirlwind 11%, deep_wounds 7%; 0% of the damage matched no source.",
+      "note": "Two-handed Arms/raid or leveling: white ~45%, Heroic Strike, Overpower, Execute, Rend; Mortal Strike/Slam arrive as talent effects. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Slam has an 18s cooldown (rank 1 learned at 20) and Mortal Strike rank 4 is weapon plus 160; Battle Shout rank 7 gives 139 attack power (Classic 232) for 3 min; Bloodthrill procs only from main-hand attacks. Fight lab calibration (2026-10-15, beta client 1.60.1.70291, build opt-arms-2h-raid-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Melee 44%, Cleave 15%, Thunder Clap 12%, Execute 11%, Rend 7%, Overpower 5%, Bloodthirst 3%, Deep Wounds 2%, Victory Rush 0%, Heroic Strike 0%) and the leveling time split is fight 74% / drink 0% / eat 1% / other 0% / death 24% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length).",
       "sources": [
         {
           "id": "white",
@@ -133,7 +133,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.467},
             "solo-60": {"share": 0.467},
-            "leveling-aoe": {"share": 0.428}
+            "leveling-aoe": {"share": 0.445}
           }
         },
         {
@@ -144,7 +144,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.054},
             "solo-60": {"share": 0.054},
-            "leveling-aoe": {"share": 0.001}
+            "leveling-aoe": {"share": 0.002}
           }
         },
         {
@@ -157,7 +157,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.063},
             "solo-60": {"share": 0.063},
-            "leveling-aoe": {"share": 0.055}
+            "leveling-aoe": {"share": 0.053}
           }
         },
         {
@@ -169,7 +169,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.165},
             "solo-60": {"share": 0.165},
-            "leveling-aoe": {"share": 0.134}
+            "leveling-aoe": {"share": 0.11}
           }
         },
         {
@@ -182,7 +182,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.116},
             "solo-60": {"share": 0.116},
-            "leveling-aoe": {"share": 0.019}
+            "leveling-aoe": {"share": 0.03}
           }
         },
         {
@@ -195,7 +195,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.0},
             "solo-60": {"share": 0.0},
-            "leveling-aoe": {"share": 0.142}
+            "leveling-aoe": {"share": 0.0}
           }
         },
         {
@@ -210,7 +210,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.082},
             "solo-60": {"share": 0.082},
-            "leveling-aoe": {"share": 0.078}
+            "leveling-aoe": {"share": 0.072}
           }
         },
         {
@@ -237,7 +237,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.036},
             "solo-60": {"share": 0.036},
-            "leveling-aoe": {"share": 0.029}
+            "leveling-aoe": {"share": 0.016}
           },
           "enabled_by": "Deep Wounds",
           "enabled_ranks": 3
@@ -251,7 +251,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.016},
             "solo-60": {"share": 0.016},
-            "leveling-aoe": {"share": 0.004}
+            "leveling-aoe": {"share": 0.003}
           }
         },
         {
@@ -261,7 +261,7 @@
           "tags": ["type:melee", "yellow", "school:physical", "ability:Cleave", "aoe", "weapon:2h"],
           "cost": 20,
           "profile_overrides": {
-            "leveling-aoe": {"share": 0.047},
+            "leveling-aoe": {"share": 0.151},
             "leveling-st": {"share": 0.0},
             "solo-60": {"share": 0.0}
           }
@@ -273,7 +273,7 @@
           "tags": ["type:melee", "yellow", "school:physical", "ability:Thunder Clap", "aoe", "weapon:2h"],
           "cost": 20,
           "profile_overrides": {
-            "leveling-aoe": {"share": 0.061},
+            "leveling-aoe": {"share": 0.117},
             "leveling-st": {"share": 0.0},
             "solo-60": {"share": 0.0}
           }
@@ -296,7 +296,7 @@
       "time": {
         "leveling-st": {"fight": 0.937, "drink": 0.0, "eat": 0.016, "other": 0.0, "death": 0.048},
         "solo-60": {"fight": 0.937, "drink": 0.0, "eat": 0.016, "other": 0.0, "death": 0.048},
-        "leveling-aoe": {"fight": 0.831, "drink": 0.0, "eat": 0.023, "other": 0.0, "death": 0.146}
+        "leveling-aoe": {"fight": 0.743, "drink": 0.0, "eat": 0.012, "other": 0.0, "death": 0.245}
       },
       "fight_coupling": {"leveling-aoe": 1.0},
       "kind_weights": {"kite": 0, "range": 0},

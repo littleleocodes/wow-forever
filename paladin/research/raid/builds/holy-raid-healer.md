@@ -1,4 +1,4 @@
-# Holy — Raid Healer (31/0/20) — 33/0/18
+# Holy — Raid Healer (33/0/18) — 33/0/18
 
 *[Paladin](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
@@ -61,7 +61,7 @@ Illumination (now requiring Reverence, the new regen-while-casting talent), Divi
 8. **Reverence** — New: 10%/rank mana regen while casting (est. 30%).
 9. **Divine Intellect** — Intellect.
 10. **Benediction** — Now -2%/rank mana on all instant spells (est. 10%): Holy Shock, Judgements, blessings.
-11. **Sanctified Judgement** — New: 33%/rank chance (est. 99%) to refund 20% of the judged seal's cost — Judgement of Light/Wisdom for free.
+11. **Sanctified Judgement** — New: Judgement returns 60% of the judged seal's mana cost at 3/3 (70291 tooltip: a 100% chance) — Judgement of Light/Wisdom for free.
 12. **Improved Judgement** — -2s Judgement cooldown (est.).
 13. **Purifying Power** — -20% mana on Cleanse (and Purify): a raid healer dispels in most boss fights.
 

@@ -10,7 +10,7 @@
 
 ## How to play
 
-**Not in this build:** **Combustion** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
+**Not in this build:** **Combustion**, **Heating Up** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
 
 **Before the fight:** **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up; **Combustion** at the pull when it is ready. Pull from as far away as you can.
 
@@ -24,6 +24,28 @@
 6. **Counterspell** a mob that casts spells.
 
 **Between fights:** Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.
+
+## Why this rotation
+
+The Frostfire leveling build plays the Fire leveling list: **Fireball** at range, **Frost Nova** and a step back when the mob arrives, **Ice Lance** into the frozen mob. Its first 25 points (levels 10-34) go into Frost, so the freeze carries the build before the Fire talents arrive.
+
+**Why it works**
+
+- **Ice Lance** (level 20) and **Shatter** (25-27) are the build's two most valuable talents in the fight lab at level 60 (without them a kill takes about 12.5 and 4 seconds longer): a frozen mob takes 300% more damage from **Ice Lance**, with 50% more crit chance and **Ice Shards**' bigger crits.
+- **Frostbite** (levels 15-19) and **Fingers of Frost** (30-31) work on chills, and **Fireball** does not chill: here they come from **Frost Armor** (**Ice Armor** from 30) chilling a mob that hits you, which is why they are worth little in this build. **Improved Frost Nova** (17-18) brings **Frost Nova** back 4 seconds sooner.
+- **Fireball** from as far away as you can while the mob has more than a fifth of its health; **Improved Fireball** (35-39) cuts it to 3 seconds. Below that, **Fire Blast** (not below a tenth) and the wand finish without overkill.
+- **Frost Nova** when the mob reaches you, then step back; **Blast Wave** (level 56) dazes it when **Frost Nova** is on cooldown. **Master of Elements** (51-53) refunds 30% of a spell's base cost on each Fire or Frost crit, which **Shatter** makes common.
+
+**Caveats**
+
+- This build takes neither **Combustion** nor **Heating Up**: skip those lines. Its point in **Pyroblast** (level 48) only opens the next tier; the fight lab never needs it here.
+- **Frostfire Bolt** (trained at level 40) is not in this list: the fight lab played this build with **Fireball**, so whether **Frostfire Bolt** levels it faster is unmeasured.
+- Mana: **Fireball** costs 410 at top rank. Drink below a third of your mana and use **Evocation** between fights when it is ready and you are under 40% mana.
+
+**When to change it**
+
+- On a nearly dead mob, let the wand finish it rather than start a **Fireball** (below 20% health) or spend a **Fire Blast** (below 10%).
+- Mob on you with **Frost Nova** and **Blast Wave** down: **Scorch**, only above half your mana; its 1.5-second cast is pushed back less than a **Fireball**.
 
 ## Talents while leveling
 

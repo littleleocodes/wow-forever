@@ -4,30 +4,30 @@
 
 | Assumption | Level | opt-shadow-dps-leveling-st time/kill | leveling-shadow time/kill | Best build | opt-shadow-dps-leveling-st: −Mind Flay | opt-shadow-dps-leveling-st: −Shadowform | opt-shadow-dps-leveling-st: −Vampiric Embrace |
 |---|---|---|---|---|---|---|---|
-| baseline | 30 | 39.1s (deaths 0.0/100) | 40.4s (deaths 0.0/100) | opt-shadow-dps-leveling-st | +44% | - | - |
-| baseline | 60 | 25.0s (deaths 0.0/100) | 25.1s (deaths 0.0/100) | opt-shadow-dps-leveling-st | +54% | +42% | -2% |
-| root breaks on 10% of hits | 30 | 39.1s (deaths 0.0/100) | 40.4s (deaths 0.0/100) | opt-shadow-dps-leveling-st | +44% | - | - |
-| root breaks on 10% of hits | 60 | 25.0s (deaths 0.0/100) | 25.1s (deaths 0.0/100) | opt-shadow-dps-leveling-st | +54% | +42% | -2% |
-| root breaks on 40% of hits | 30 | 39.1s (deaths 0.0/100) | 40.4s (deaths 0.0/100) | opt-shadow-dps-leveling-st | +44% | - | - |
-| root breaks on 40% of hits | 60 | 25.0s (deaths 0.0/100) | 25.1s (deaths 0.0/100) | opt-shadow-dps-leveling-st | +54% | +42% | -2% |
-| mobs have 20% less health | 30 | 33.2s (deaths 0.0/100) | 34.6s (deaths 0.0/100) | opt-shadow-dps-leveling-st | +40% | - | - |
-| mobs have 20% less health | 60 | 22.0s (deaths 0.0/100) | 22.1s (deaths 0.0/100) | opt-shadow-dps-leveling-st | +46% | +40% | -2% |
-| mobs have 20% more health | 30 | 45.7s (deaths 0.0/100) | 47.4s (deaths 0.0/100) | opt-shadow-dps-leveling-st | +48% | - | - |
-| mobs have 20% more health | 60 | 28.0s (deaths 0.0/100) | 28.1s (deaths 0.0/100) | opt-shadow-dps-leveling-st | +63% | +45% | -2% |
-| mobs hit 30% harder | 30 | 39.2s (deaths 0.0/100) | 40.5s (deaths 0.0/100) | opt-shadow-dps-leveling-st | +45% | - | - |
-| mobs hit 30% harder | 60 | 25.0s (deaths 0.0/100) | 25.1s (deaths 0.0/100) | opt-shadow-dps-leveling-st | +54% | +42% | -2% |
-| pushback 1.0 s per hit | 30 | 39.1s (deaths 0.0/100) | 40.5s (deaths 0.0/100) | opt-shadow-dps-leveling-st | +45% | - | - |
-| pushback 1.0 s per hit | 60 | 25.0s (deaths 0.0/100) | 25.1s (deaths 0.0/100) | opt-shadow-dps-leveling-st | +54% | +42% | -2% |
-| weapons 20% better (blues) | 30 | 38.9s (deaths 0.0/100) | 40.3s (deaths 0.0/100) | opt-shadow-dps-leveling-st | +44% | - | - |
-| weapons 20% better (blues) | 60 | 25.0s (deaths 0.0/100) | 25.0s (deaths 0.0/100) | leveling-shadow | +53% | +42% | -3% |
-| dungeon blues (item database) | 30 | 34.8s (deaths 0.0/100) | 36.2s (deaths 0.0/100) | opt-shadow-dps-leveling-st | +36% | - | - |
-| dungeon blues (item database) | 60 | 24.0s (deaths 0.0/100) | 24.0s (deaths 0.0/100) | opt-shadow-dps-leveling-st | +45% | +40% | -3% |
-| gear stats 20% better | 30 | 38.1s (deaths 0.0/100) | 39.7s (deaths 0.0/100) | opt-shadow-dps-leveling-st | +46% | - | - |
-| gear stats 20% better | 60 | 24.1s (deaths 0.0/100) | 24.2s (deaths 0.0/100) | opt-shadow-dps-leveling-st | +51% | +42% | -2% |
-| no caster mobs | 30 | 39.8s (deaths 0.0/100) | 41.1s (deaths 0.0/100) | opt-shadow-dps-leveling-st | +45% | - | - |
-| no caster mobs | 60 | 25.3s (deaths 0.0/100) | 25.3s (deaths 0.0/100) | opt-shadow-dps-leveling-st | +54% | +43% | -2% |
-| 30% caster mobs | 30 | 38.5s (deaths 0.0/100) | 39.8s (deaths 0.0/100) | opt-shadow-dps-leveling-st | +43% | - | - |
-| 30% caster mobs | 60 | 24.2s (deaths 0.0/100) | 24.2s (deaths 0.0/100) | opt-shadow-dps-leveling-st | +51% | +42% | -2% |
-| 20% of mobs run at 20% health | 30 | 39.1s (deaths 0.0/100) | 40.5s (deaths 0.0/100) | opt-shadow-dps-leveling-st | +44% | - | - |
-| 20% of mobs run at 20% health | 60 | 25.0s (deaths 0.0/100) | 25.1s (deaths 0.0/100) | opt-shadow-dps-leveling-st | +54% | +42% | -2% |
+| baseline | 30 | 40.5s (deaths 0.0/100) | 37.4s (deaths 0.0/100) | leveling-shadow | +13% | - | +2% |
+| baseline | 60 | 25.5s (deaths 0.0/100) | 21.0s (deaths 0.0/100) | leveling-shadow | +19% | +49% | +1% |
+| root breaks on 10% of hits | 30 | 40.5s (deaths 0.0/100) | 37.4s (deaths 0.0/100) | leveling-shadow | +13% | - | +2% |
+| root breaks on 10% of hits | 60 | 25.5s (deaths 0.0/100) | 21.0s (deaths 0.0/100) | leveling-shadow | +19% | +49% | +1% |
+| root breaks on 40% of hits | 30 | 40.5s (deaths 0.0/100) | 37.4s (deaths 0.0/100) | leveling-shadow | +13% | - | +2% |
+| root breaks on 40% of hits | 60 | 25.5s (deaths 0.0/100) | 21.0s (deaths 0.0/100) | leveling-shadow | +19% | +49% | +1% |
+| mobs have 20% less health | 30 | 34.5s (deaths 0.0/100) | 30.5s (deaths 0.0/100) | leveling-shadow | +8% | - | +0% |
+| mobs have 20% less health | 60 | 22.2s (deaths 0.0/100) | 18.7s (deaths 0.0/100) | leveling-shadow | +14% | +44% | +0% |
+| mobs have 20% more health | 30 | 47.6s (deaths 0.0/100) | 44.1s (deaths 0.0/100) | leveling-shadow | +12% | - | +1% |
+| mobs have 20% more health | 60 | 29.2s (deaths 0.0/100) | 24.4s (deaths 0.0/100) | leveling-shadow | +23% | +50% | +2% |
+| mobs hit 30% harder | 30 | 42.1s (deaths 0.0/100) | 39.8s (deaths 0.0/100) | leveling-shadow | +13% | - | +1% |
+| mobs hit 30% harder | 60 | 25.8s (deaths 0.0/100) | 21.8s (deaths 0.0/100) | leveling-shadow | +24% | +51% | +3% |
+| pushback 1.0 s per hit | 30 | 43.0s (deaths 0.0/100) | 40.3s (deaths 0.0/100) | leveling-shadow | +9% | - | +0% |
+| pushback 1.0 s per hit | 60 | 25.8s (deaths 0.0/100) | 22.1s (deaths 0.0/100) | leveling-shadow | +20% | +49% | +2% |
+| weapons 20% better (blues) | 30 | 40.4s (deaths 0.0/100) | 37.2s (deaths 0.0/100) | leveling-shadow | +9% | - | +1% |
+| weapons 20% better (blues) | 60 | 25.5s (deaths 0.0/100) | 21.0s (deaths 0.0/100) | leveling-shadow | +18% | +49% | +1% |
+| dungeon blues (item database) | 30 | 35.6s (deaths 0.0/100) | 31.5s (deaths 0.0/100) | leveling-shadow | +8% | - | +0% |
+| dungeon blues (item database) | 60 | 24.3s (deaths 0.0/100) | 20.3s (deaths 0.0/100) | leveling-shadow | +17% | +47% | +1% |
+| gear stats 20% better | 30 | 40.0s (deaths 0.0/100) | 36.4s (deaths 0.0/100) | leveling-shadow | +13% | - | +2% |
+| gear stats 20% better | 60 | 24.9s (deaths 0.0/100) | 20.9s (deaths 0.0/100) | leveling-shadow | +20% | +49% | +1% |
+| no caster mobs | 30 | 41.6s (deaths 0.0/100) | 38.6s (deaths 0.0/100) | leveling-shadow | +14% | - | +2% |
+| no caster mobs | 60 | 25.9s (deaths 0.0/100) | 21.2s (deaths 0.0/100) | leveling-shadow | +21% | +50% | +2% |
+| 30% caster mobs | 30 | 39.6s (deaths 0.0/100) | 36.3s (deaths 0.0/100) | leveling-shadow | +12% | - | +1% |
+| 30% caster mobs | 60 | 24.7s (deaths 0.0/100) | 20.5s (deaths 0.0/100) | leveling-shadow | +19% | +48% | +1% |
+| 20% of mobs run at 20% health | 30 | 40.3s (deaths 0.0/100) | 36.9s (deaths 0.0/100) | leveling-shadow | +13% | - | +1% |
+| 20% of mobs run at 20% health | 60 | 25.5s (deaths 0.0/100) | 21.0s (deaths 0.0/100) | leveling-shadow | +20% | +50% | +1% |
 

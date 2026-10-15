@@ -26,7 +26,7 @@
     "rotations": {
      "frost-raid": "ceaa8ac62133"
     },
-    "written": "2026-10-09"
+    "written": "2026-10-15"
    },
    "leveling": {
     "plan": "Frost levels by slowing, freezing and shattering: **Frostbolt** slows the mob as it walks in, **Frost Nova** freezes it when it arrives, and you step back and **Ice Lance** the frozen target. In the fight lab, **Ice Lance** into frozen mobs is about two thirds of a Frost leveler's damage at level 60.",
@@ -39,7 +39,7 @@
      "**Counterspell** a mob that casts spells: it stops the cast and locks that school for 10 seconds."
     ],
     "caveats": [
-     "The list says drink below a third of your mana; the tuned rotation waits until a quarter. **Evocation** (8-minute cooldown) is for between fights, whenever it is ready and you are low.",
+     "Drink below a quarter of your mana, not a third: the tuned rotation measured that faster. **Evocation** (8-minute cooldown) is for between fights, whenever it is ready and you are under 40% mana.",
      "**Cone of Cold** stays out of single pulls: the fight lab measured kills about 1% faster without it.",
      "**Frost Armor** and **Ice Armor** can chill a mob that hits you, another roll for **Frostbite** to freeze it.",
      "Pulls of several mobs are a different game: the AoE grinding build under Other builds gathers about four mobs, freezes them with **Frost Nova** and uses **Blizzard** and **Cone of Cold**."
@@ -55,24 +55,24 @@
      "leveling:frost-aoe": "2943a8d95023",
      "leveling:arcane-leveling": "ca255cff8f0d"
     },
-    "written": "2026-10-09"
+    "written": "2026-10-15"
    }
   },
   "Hybrid Arcane/Frost": {
    "raid": {
-    "plan": "This hybrid plays exactly like the Frost page: **Frostbolt** as the filler, free **Arcane Missiles** on **Missile Barrage**, **Ice Lance** on **Fingers of Frost**, and **Fire Blast** only at the very end. Its Arcane points add hit and crit to the Missiles, free spells and **Presence of Mind**; the build on this page takes no **Arcane Power**.",
+    "plan": "This hybrid plays exactly like the Frost page: **Frostbolt** as the filler, free **Arcane Missiles** on **Missile Barrage**, **Ice Lance** on **Fingers of Frost**, and **Fire Blast** only at the very end. Its Arcane points add hit and crit to the Missiles, free spells, Intellect and damage; the build on this page takes neither **Arcane Power** nor **Presence of Mind**.",
     "why": [
      "**Arcane Missiles** on **Missile Barrage** comes first. Each **Frostbolt** that lands has a 20% chance to make your next Missiles free and twice as fast (the full damage in 2.5 seconds); **Arcane Focus** and **Arcane Impact** add hit and crit to them.",
      "**Ice Lance** on **Fingers of Frost** comes next. Each **Frostbolt** chill has a 15% chance to treat your next 2 spells as if the target were frozen; **Ice Lance** deals 300% more damage to a frozen target and **Shatter** adds 50% crit chance, so both charges go to **Ice Lance**. With both procs up, the simulator measured the free Missiles first slightly better (0.2%).",
      "**Frostbolt** fills everything else and is the spell that rolls for both procs. **Winter's Chill**, if your build takes it, is passive: each Frost hit adds a stack of +2% crit to your **Frostbolt** and **Ice Lance**, one stack per talent point.",
      "**Fire Blast** waits for the last 3 seconds, when a **Frostbolt** could no longer land before the boss dies; the simulator measured this 0.5% better. The rotation search kept it out of the rest of the fight: no damage talent here improves it, it costs more mana and it rolls for neither proc.",
-     "**Presence of Mind** at the pull makes one spell instant (3-minute cooldown). **Arcane Concentration** makes about one damage spell in ten free, and **Arcane Meditation** keeps half your mana regeneration going while you cast.",
+     "**Arcane Concentration** (3 points) gives each damage spell a 6% chance to make the next one free. **Arcane Mind** adds 10% Intellect and doubles the crit bonus of your Arcane spells (the Missiles), and **Arcane Instability** adds 3% damage and 3% crit to every spell. There is no cooldown to press at the pull besides trinkets and a potion.",
      "Mana: your mana gem (from **Conjure Mana Ruby**) goes at 80% mana and **Evocation** only below 20% mana with more than 25 seconds left; in a full raid the simulator never needed **Evocation**."
     ],
     "caveats": [
      "The Frost page plays the same list with more Frost points; the simulator puts the two pages within 2% of each other, a tie.",
      "Several targets: this list is for one boss. For packs, **Blizzard**, **Cone of Cold** and **Arcane Explosion** are your area spells.",
-     "Moving: **Ice Lance** and **Fire Blast** are instant, and **Presence of Mind** makes one **Frostbolt** instant. Threat is not in the simulator: give the tank a few seconds on a fresh pull."
+     "Moving: **Ice Lance** and **Fire Blast** are instant. Threat is not in the simulator: give the tank a few seconds on a fresh pull."
     ],
     "diverge": [
      "In the last 3 seconds, cast **Fire Blast** instead of starting a **Frostbolt**.",
@@ -82,16 +82,16 @@
      "frost-raid": "ceaa8ac62133",
      "arcane-dps": "7bae7936e6c9"
     },
-    "written": "2026-10-09"
+    "written": "2026-10-15"
    },
    "leveling": {
     "plan": "This hybrid levels on the Arcane list: **Arcane Missiles** from range, **Frost Nova** and a step back when the mob arrives, **Ice Lance** into the frozen mob. **Arcane Blast** comes at level 49 and **Missile Barrage** at 50; until then, skip the **Arcane Blast** line.",
     "why": [
-     "Levels 10-31 go into Frost for **Ice Lance** (20), **Shatter** (25-29) and **Fingers of Frost** (30-31). In the fight lab **Ice Lance** and **Shatter** are this build's two most valuable talents at level 60: a frozen mob takes 300% more damage from **Ice Lance**, with 50% more crit chance.",
+     "Levels 10-31 go into Frost for **Ice Lance** (20), **Shatter** (25-29) and **Fingers of Frost** (30-31). In the fight lab **Ice Lance**, **Missile Barrage** and **Shatter** are this build's three most valuable talents at level 60: a frozen mob takes 300% more damage from **Ice Lance**, with 50% more crit chance from **Shatter**.",
      "**Arcane Missiles** is the main spell at range, but only while the mob has more than 35% health: a full 5-second channel would overkill. Below that, **Frostbolt**; below 20%, **Fire Blast**, **Ice Lance** or the wand.",
      "From level 49, **Arcane Blast** twice while the mob walks in. Each cast makes your next other spell 10% stronger (**Arcane Missiles** 15%, by beta logs) and the next **Arcane Blast** 175% more expensive, so the fight lab stops at two, and starts one only while it costs at most a quarter of your mana and will finish before the mob reaches you. **Arcane Missiles** then spends the stacks.",
-     "From level 50, **Missile Barrage** (40% per **Arcane Blast**, 20% per **Frostbolt**, counting only spells that land) makes your next Missiles free and twice as fast: cast them once your two stacks are up or the mob is on you. The fight lab rates it the build's third most valuable talent.",
-     "**Frost Nova** and a step back when the mob arrives: **Arcane Blast** and **Arcane Missiles** both need you to stand, and 2 points of **Improved Channeling** only partly protect the channel from hits."
+     "From level 50, **Missile Barrage** (40% per **Arcane Blast**, 20% per **Frostbolt**, counting only spells that land) makes your next Missiles free and twice as fast: cast them once your two stacks are up or the mob is on you. The fight lab rates it the build's second most valuable talent.",
+     "**Frost Nova** and a step back when the mob arrives: **Arcane Blast** and **Arcane Missiles** both need you to stand, and this build has no **Improved Channeling**: every hit you take cuts the channel short."
     ],
     "caveats": [
      "This build has no **Arcane Power** or **Presence of Mind**: skip the pull cooldowns in the list.",
@@ -109,7 +109,7 @@
      "leveling:frost-aoe": "2943a8d95023",
      "leveling:arcane-leveling": "ca255cff8f0d"
     },
-    "written": "2026-10-09"
+    "written": "2026-10-15"
    }
   },
   "Arcane": {
@@ -136,7 +136,7 @@
     "rotations": {
      "arcane-dps": "7bae7936e6c9"
     },
-    "written": "2026-10-09"
+    "written": "2026-10-15"
    },
    "leveling": {
     "plan": "Arcane levels on **Arcane Missiles** from range and the Frost tree's freeze up close: **Frost Nova**, step back, **Ice Lance** the frozen mob. A build with **Arcane Blast** stacks it twice before the Missiles; the build on this page skips **Arcane Blast**, **Missile Barrage** and **Arcane Power**, so it opens with the Missiles.",
@@ -148,7 +148,7 @@
      "**Presence of Mind** at the pull makes your next spell with a cast time instant. Low on mana, cast **Frostbolt** instead of **Arcane Missiles**: 290 mana at top rank against 655."
     ],
     "caveats": [
-     "The fight lab's search for this spec also started from an **Arcane Blast** build and kept the build without it (about 29 against 31 seconds per kill at level 60). Skip the list's **Arcane Blast**, **Missile Barrage** and **Arcane Power** parts unless you take those talents.",
+     "The fight lab's search for this spec also started from an **Arcane Blast** build and kept the build without it. Skip the list's **Arcane Blast**, **Missile Barrage** and **Arcane Power** parts unless you take those talents.",
      "**Arcane Missiles** is expensive: drink below a third of your mana and use **Evocation** between fights when it is ready.",
      "Pulls of several mobs: **Arcane Explosion** hits everything within 10 yards."
     ],
@@ -163,7 +163,7 @@
      "leveling:frost-aoe": "2943a8d95023",
      "leveling:arcane-leveling": "ca255cff8f0d"
     },
-    "written": "2026-10-09"
+    "written": "2026-10-15"
    }
   },
   "Fire": {
@@ -190,10 +190,10 @@
     "rotations": {
      "fire-raid": "7334e0e47452"
     },
-    "written": "2026-10-09"
+    "written": "2026-10-15"
    },
    "leveling": {
-    "plan": "Fire levels with **Fireball** at range and **Fire Blast** up close, and borrows the Frost tree's freeze: **Frost Nova**, step back, and **Ice Lance** the frozen mob. The list above leaves **Ice Lance** out, but in the fight lab it is this build's biggest damage source at level 60, ahead of **Fireball**.",
+    "plan": "Fire levels with **Fireball** at range and **Fire Blast** up close, and borrows the Frost tree's freeze: **Frost Nova**, step back, and **Ice Lance** the frozen mob. **Ice Lance** into the freeze is this build's biggest damage source at level 60 in the fight lab (about 40%), ahead of **Fireball**.",
     "why": [
      "**Fireball** from as far away as you can (**Flame Throwing** adds 6 yards): 3 seconds with **Improved Fireball**. Stop starting it below a fifth of the mob's health, where it overkills; the fight lab measured that faster.",
      "**Fire Blast** is your instant for when the mob would reach you before a **Fireball** lands, or is already on you; at range, **Fireball** comes first. Leave the last 10% of the mob's health to the wand.",
@@ -218,7 +218,7 @@
      "leveling:frost-aoe": "2943a8d95023",
      "leveling:arcane-leveling": "ca255cff8f0d"
     },
-    "written": "2026-10-09"
+    "written": "2026-10-15"
    }
   },
   "Hybrid Fire/Frost": {
@@ -227,27 +227,54 @@
     "why": [
      "**Ice Lance** on **Fingers of Frost** comes first. Each **Frostfire Bolt** chill has a 15% chance to treat your next 2 spells as if the target were frozen; a frozen target takes 300% more damage from **Ice Lance** and **Shatter** adds 50% crit, so spend both charges on **Ice Lance**.",
      "**Pyroblast** at 3 stacks of **Heating Up**: crits from **Frostfire Bolt**, **Fire Blast** and **Scorch** each take 25% off its 6-second cast, so 3 stacks make it 1.5 seconds. Unlike the Fire list, this one never casts it at 2 stacks; the simulator measured dropping that line 0.3% better.",
-     "**Fire Blast** on cooldown (every 8 seconds: this build has no **Wake of Fire**): instant, and its crits feed **Heating Up** and **Ignite**. Using it without a mana condition was the biggest gain of the rotation search, about 5%.",
-     "**Scorch** keeps Fire Vulnerability (from **Improved Scorch**) at 5 stacks, +15% to your Fire damage, and **Frostfire Bolt** counts as Fire. This list refreshes it once 15 seconds or less of its 30 are left, a wider margin than the Fire list's 7.5; the line above shows only the stack count.",
-     "**Frostfire Bolt** is the filler: 2.5 seconds with **Improved Fireball**, and one cast rolls for **Fingers of Frost**, **Heating Up** and **Ignite** at once. Below 30% mana the list casts Rank 2 instead (285 mana against 370): it is learned at level 50, close enough to 60 that the low-rank penalty the simulator assumes leaves its spell power alone, and the simulator measured this about 2% better than the old rule of stopping at 10% mana.",
-     "The Rank 2 **Fireball** at the bottom of the list only matters when you cannot afford even a Rank 2 **Frostfire Bolt**. Forever gives ranks that far below your level only a small part of your spell power and fewer talent procs; with that penalty in, the simulator measured dropping the old Fireball fallback 1.0% better, so keep your mana up with gems and a potion instead."
+     "**Fire Blast** on cooldown (every 8 seconds: this build has no **Wake of Fire**): instant, and its crits feed **Heating Up** and **Ignite**. Using it without a mana condition was the biggest single gain of the full-raid rotation search, about 5%.",
+     "**Scorch** keeps Fire Vulnerability (from **Improved Scorch**) at 5 stacks, +15% to your Fire damage, and **Frostfire Bolt** counts as Fire. This list refreshes it once 15 seconds or less of its 30 are left, a wider margin than the Fire list's 7.5.",
+     "**Frostfire Bolt** is the main spell: 2.5 seconds with **Improved Fireball**, and one cast rolls for **Fingers of Frost**, **Heating Up** and **Ignite** at once. Below 30% mana the full rotation casts Rank 2 (285 mana against 370): the page's line \"when your mana is below 30%\". The simulator measured this about 2% better than the old rule of stopping at 10% mana.",
+     "**Fireball** (Rank 2 in the full rotation) is last: a stopgap for when you cannot afford even a Rank 2 **Frostfire Bolt**. Forever gives ranks that far below your level only part of your spell power; keep your mana up with gems and a potion so it rarely comes up."
     ],
     "caveats": [
      "**Fingers of Frost** charges go to the next 2 spells you cast, whatever they are: do not let a **Frostfire Bolt** use one up.",
-     "Mana: **Frostfire Bolt** costs 370 at top rank. The list uses both of your mana gems (from **Conjure Mana Ruby** and **Conjure Mana Citrine**), **Master of Elements** refunds part of every crit, and below 30% mana the cheaper Rank 2 stretches what is left.",
+     "Mana: **Frostfire Bolt** costs 370 at top rank. The list uses both of your mana gems (from **Conjure Mana Ruby** and **Conjure Mana Citrine**), **Master of Elements** refunds 30% of the base cost on each Fire or Frost crit, and below 30% mana the cheaper Rank 2 stretches what is left.",
      "Moving: **Ice Lance** and **Fire Blast** are instant. For packs, **Flamestrike** and **Blizzard** are your area spells.",
-     "**Frostfire Bolt** is new in Forever: its numbers here are the simulator's model of the beta tooltip, not yet checked in game."
+     "**Frostfire Bolt** is new in Forever: its numbers here are the simulator's model of the beta tooltip, not yet checked in game.",
+     "The full rotation also opens with **Arcane Power** for builds that take it; this build does not, so skip it."
     ],
     "diverge": [
-     "Below 30% mana, switch to Rank 2 **Frostfire Bolt** rather than stop casting it; a Rank 2 **Fireball** is a weak stopgap only for when even that is out of reach.",
+     "Below 30% mana, switch to Rank 2 **Frostfire Bolt** rather than stop casting it; a **Fireball** is a weak stopgap only for when even that is out of reach.",
      "Against a target that resists Fire, **Frostfire Bolt** keeps working (it is checked against the lower of the target's Fire and Frost resistance), while **Fire Blast**, **Scorch** and **Pyroblast** lose damage."
     ],
     "rotations": {
      "frost-raid": "ceaa8ac62133",
      "fire-raid": "7334e0e47452",
-     "frostfire-raid": "f7b2e420befd"
+     "frostfire-raid": "6846a04e8427"
     },
-    "written": "2026-10-09"
+    "written": "2026-10-15"
+   },
+   "leveling": {
+    "plan": "The Frostfire leveling build plays the Fire leveling list: **Fireball** at range, **Frost Nova** and a step back when the mob arrives, **Ice Lance** into the frozen mob. Its first 25 points (levels 10-34) go into Frost, so the freeze carries the build before the Fire talents arrive.",
+    "why": [
+     "**Ice Lance** (level 20) and **Shatter** (25-27) are the build's two most valuable talents in the fight lab at level 60 (without them a kill takes about 12.5 and 4 seconds longer): a frozen mob takes 300% more damage from **Ice Lance**, with 50% more crit chance and **Ice Shards**' bigger crits.",
+     "**Frostbite** (levels 15-19) and **Fingers of Frost** (30-31) work on chills, and **Fireball** does not chill: here they come from **Frost Armor** (**Ice Armor** from 30) chilling a mob that hits you, which is why they are worth little in this build. **Improved Frost Nova** (17-18) brings **Frost Nova** back 4 seconds sooner.",
+     "**Fireball** from as far away as you can while the mob has more than a fifth of its health; **Improved Fireball** (35-39) cuts it to 3 seconds. Below that, **Fire Blast** (not below a tenth) and the wand finish without overkill.",
+     "**Frost Nova** when the mob reaches you, then step back; **Blast Wave** (level 56) dazes it when **Frost Nova** is on cooldown. **Master of Elements** (51-53) refunds 30% of a spell's base cost on each Fire or Frost crit, which **Shatter** makes common."
+    ],
+    "caveats": [
+     "This build takes neither **Combustion** nor **Heating Up**: skip those lines. Its point in **Pyroblast** (level 48) only opens the next tier; the fight lab never needs it here.",
+     "**Frostfire Bolt** (trained at level 40) is not in this list: the fight lab played this build with **Fireball**, so whether **Frostfire Bolt** levels it faster is unmeasured.",
+     "Mana: **Fireball** costs 410 at top rank. Drink below a third of your mana and use **Evocation** between fights when it is ready and you are under 40% mana."
+    ],
+    "diverge": [
+     "On a nearly dead mob, let the wand finish it rather than start a **Fireball** (below 20% health) or spend a **Fire Blast** (below 10%).",
+     "Mob on you with **Frost Nova** and **Blast Wave** down: **Scorch**, only above half your mana; its 1.5-second cast is pushed back less than a **Fireball**."
+    ],
+    "written": "2026-10-15",
+    "rotations": {
+     "leveling:frost-leveling": "5854b75cdb27",
+     "leveling:fire-leveling": "57da8af441b1",
+     "leveling:frostfire-leveling": "b1bfa6483c74",
+     "leveling:frost-aoe": "2943a8d95023",
+     "leveling:arcane-leveling": "ca255cff8f0d"
+    }
    }
   }
  }

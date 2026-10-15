@@ -1,42 +1,37 @@
 # Priest — adapting the Classic builds to WoW: Forever
 
-Data: WoW: Forever beta client build 1.60.1.70009, merged 2026-09-25 (`talent-trees.md`; the 2026-09-13 demo snapshot is archived under `_reference/data/raw/`). Spellbook numbers: `../../spells/README.md`. Point-by-point audit of every
-Classic build: `baseline-audit.md`. Proposed builds: `proposed-builds.json` → `builds-README.md`.
+Data: WoW: Forever beta client build 1.60.1.70291, captured 2026-10-08 (`_reference/data/data_build.py`; the trees in
+[talent-trees.md](talent-trees.md)). Spellbook numbers: [spells](../../spells/README.md). Point-by-point audit of every Classic build:
+[baseline-audit.md](baseline-audit.md). Builds: [proposed-builds.json](proposed-builds.json), one page each under
+[leveling/builds](../../leveling/builds/), [raid/builds](../../raid/builds/) and [pvp/builds](../../pvp/builds/). What to play: the
+[leveling](../../../leveling/README.md) and [raid](../../../raid/README.md) player pages.
 
 ## What broke
 
-| Classic talent | Forever | Impact on baselines |
+| Classic talent | Forever (build 70291) | Impact on Classic builds |
 |---|---|---|
-| Divine Spirit (Discipline T5) | **Removed** — trained from 30 in the beta (ranks 30/40/50/60, Prayer of Spirit at 60) | The reason every Classic healer put 21 points in Discipline is gone |
-| Unbreakable Will, Improved Power Word: Fortitude, Force of Will | **Removed** | Discipline tier 1–2 fillers replaced by Twin Disciplines / Power in Light / Holy Precision |
-| Healing Focus (Holy T1) | **Removed** → *Twilight Focus* (3, 23%/rank pushback resistance) | Same job, one more point for full effect |
-| Improved Prayer of Healing, Lightwell | **Removed** | Nothing core lost |
-| Spiritual Healing | 5 ranks (10%) → **3 ranks (3/7/10%)** | Cheaper, same total |
-| Spiritual Guidance | 25% of Spirit → 5/10/15/20/25%, plus 1/3/5/6/8% of Spirit as spell damage | Same |
-| Meditation | 5%/rank → **17/33/50%** | Much stronger |
-| Inspiration | 25% armor → 8/17/25% | Same |
-| Improved Healing | Now also covers Penance and Prayer of Mending | |
+| Divine Spirit | **Removed**; trained at 30/40/50/60 | The reason every Classic healer put 21 points in Discipline is gone |
+| Unbreakable Will, Improved Power Word: Fortitude, Force of Will | **Removed** | Discipline's tier 1-2 fillers are now Twin Disciplines, Power in Light, Holy Precision |
+| Healing Focus | **Removed**; Twilight Focus (3 ranks, 70% pushback protection for every spell) takes its place | Same job, one more point |
+| Improved Prayer of Healing, Lightwell, Improved Vampiric Embrace | **Removed** | Nothing core lost |
+| Spiritual Healing | **3 ranks**, 10% | Cheaper, same total |
+| Spiritual Guidance | Up to 25% of Spirit as healing and 8% as spell damage | Also a damage talent |
+| Meditation | **3 ranks, up to 50%** | Much stronger |
+| Inspiration | 3 ranks, 25% armor | Same |
+| Improved Healing | Also covers Penance and Prayer of Mending | |
 | Power Infusion | Requires **Penance** | Power Infusion builds are Penance builds |
-| Shadow Weaving | Raid debuff → **self-buff** (33%/rank chance, +2% per stack, 5 stacks) | No debuff slot needed — Shadow raid DPS becomes plausible |
+| Shadow Weaving | A **self-buff**: +2% Shadow damage a stack, 5 stacks, 15 s | No debuff slot needed |
 | Improved Psychic Scream | Requires Blackout 5 | Shadow PvP takes Blackout 5/5 |
-| Improved Vampiric Embrace | **Removed** | |
 
 ## What's new and matters
 
-- **Prayer of Mending** (Holy capstone), **Binding Heal** (Holy 16-pt), **Litany of Light** — raid-healing throughput and mana.
-- **Penance** (Disc T5), **Divine Aegis** (T6), **Renewed Hope** (T5), **Soul Warding** (Disc 16-pt) — a shield/crit Discipline healer.
-- **Twin Disciplines** (instants +5% est.) — the new tier-1 Discipline pick.
-- **Improved Mind Flay**, **Devouring Contagion**, **Early Demise** (Shadow Word: Death is trained at 32/40/48/56) — Shadow gets a kit.
-- **Holy Precision** (hit with Holy spells) — only matters if Forever lets heals miss (Classic: no) or for Smite/Holy Fire.
-
-## Decisions made in the proposed builds
-
-1. **Holy 20/31/0**: with Divine Spirit gone, Discipline stops at 20 (Soul Warding) and Holy takes the capstone.
-2. **Discipline Penance 31/20/0** replaces the Classic Power Infusion build.
-3. **Shadow 7/0/44** for PvP; the same build with Shadow Affinity is the candidate raid Shadow spec.
+- **Penance** (Discipline tier 5): since 2026-10-08 more mana-efficient than Heal and Greater Heal; both priest raid healers take it.
+- **Renewed Hope** (tier 5), **Divine Aegis** (tier 6), **Soul Warding** (tier 4): a shield and crit Discipline healer.
+- **Prayer of Mending** (Holy capstone, requires Spirit of Redemption), **Binding Heal** (tier 4), **Litany of Light**: Holy throughput and mana.
+- **Improved Mind Flay**, **Devouring Contagion**, **Early Demise**: with Shadow Word: Death and Devouring Plague trained by every priest, Shadow has a full damage kit.
 
 ## To verify at launch
 
-- Divine Spirit is trained (confirmed in the beta spellbook).
-- Prayer of Mending / Penance / Binding Heal numbers at 60.
-- Whether Shadowform's mana reduction plus self-buff Shadow Weaving makes a raid Shadow priest worth a slot.
+- Penance, Prayer of Mending and Binding Heal numbers at 60.
+- Shadow Word: Death's backlash in a raid (10% of your health each time the target survives).
+- The low-rank penalty on healing ranks (no formula published; this project assumes TBC's).

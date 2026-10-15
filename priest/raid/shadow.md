@@ -34,7 +34,7 @@ Shadow in a raid keeps **Shadow Word: Pain** on the boss, casts **Devouring Plag
 - **Shadowform** is what makes the spec work: 10% more Shadow damage, half the mana cost on every Shadow spell and a doubled critical strike bonus. You cannot cast heals while in it.
 - **Shadow Word: Pain** is first because it does about a fifth of your damage for one global cooldown every 24 seconds (18, plus 6 from **Improved Shadow Word: Pain**). Recast it only after it falls off, and not in the last 10 seconds of the fight, when a new one gets only a few ticks.
 - **Inner Focus** makes your next spell free, and the list spends it on **Devouring Plague** at the pull (it comes back every 3 minutes, so once in a 3-minute fight). Its 25% crit bonus does not apply to a damage-over-time spell (beta notes of 2026-10-01), so the pair only saves mana; it comes from the community simulator's own rotation.
-- After that, **Devouring Plague** goes out each time its 1-minute cooldown ends, as soon as **Shadow Word: Death** and **Mind Blast** are both cooling down: three casts a fight, counting the free one. The list above shows it only after **Inner Focus**, but the simulator measured 2.5% more damage casting it on cooldown. **Devouring Contagion** halves its cost, and it heals you for the damage it deals.
+- After that, **Devouring Plague** goes out each time its 1-minute cooldown ends, as soon as **Shadow Word: Death** and **Mind Blast** are both cooling down: three casts a fight, counting the free one; the simulator measured 2.5% more damage casting it on cooldown. **Devouring Contagion** halves its cost, and it heals you for the damage it deals.
 - **Shadow Word: Death** comes before **Mind Blast** because its cooldown is longer (15 seconds against 5.5 with **Improved Mind Blast**), so waiting costs it more; the simulator measured 0.4% more damage in this order. Below 20% of the boss's health, **Early Demise** adds 30% to its crit chance.
 - **Mind Flay** fills every gap and does almost half your damage: a 3-second channel that **Improved Mind Flay** makes 20% stronger. Every Shadow spell also stacks **Shadow Weaving** on you (2% Shadow damage a stack, up to 5, for 15 seconds), so while you keep casting it stays at 5 by itself.
 
@@ -43,7 +43,7 @@ Shadow in a raid keeps **Shadow Word: Pain** on the boss, casts **Devouring Plag
 - **Shadow Word: Death** hits you for 10% of your maximum health every time the target survives it, about 11 times in a 3-minute fight. The damage numbers ignore that; your healers do not. **Devouring Plague** heals some of it back.
 - **Mind Blast** causes a lot of threat (its tooltip says so). In the first seconds of a fight or after a tank swap, hold it until the tank is ahead; **Shadow Affinity** in this build cuts the threat of your Shadow spells by 30%.
 - When you must move, **Mind Flay** and **Mind Blast** stop: use your instants, **Shadow Word: Death**, **Devouring Plague** and **Shadow Word: Pain** if it fell off. **Shadow Weaving** drops after 15 seconds without a Shadow spell.
-- Mana is not your problem in a full raid: the simulator's priest never runs dry, with one mana potion and two Demonic Runes a fight. The full list ends with **Dark Sacrifice** for an empty mana bar, but only Undead priests have it and it never fires there.
+- Mana is not your problem in a full raid: the simulator's priest never runs dry, with one mana potion and two Demonic Runes a fight.
 
 **When to change it**
 
@@ -62,10 +62,10 @@ Shadow in a raid keeps **Shadow Word: Pain** on the boss, casts **Devouring Plag
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 685 | [20/0/31](https://talentsforever.com/priest/60/005300221205--502320501201310051-6) |
-| Phase 1 BiS | 702 | [18/0/33](https://talentsforever.com/priest/60/005300221203--500320501201312251-6) (ties this build) |
+| Pre-BiS | 681 | [20/0/31](https://talentsforever.com/priest/60/005221101305--500122501201312051-6) |
+| Phase 1 BiS | 702 | [18/0/33](https://talentsforever.com/priest/60/005302101303--500320501201312251-6) |
 
-**The gear** (average item level: Pre-BiS 60.8; Phase 1 BiS 62.9; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 62.5; Phase 1 BiS 65.2; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
@@ -78,7 +78,7 @@ Shadow in a raid keeps **Shadow Word: Pain** on the boss, casts **Devouring Plag
 | Hands | [Felcloth Gloves](https://www.wowhead.com/forever/item=18407) · *Tailoring* | [Felcloth Gloves](https://www.wowhead.com/forever/item=18407) · *Tailoring* |
 | Waist | [Knowledge of the Timbermaw](https://www.wowhead.com/forever/item=228190) | [Mana Igniting Cord](https://www.wowhead.com/forever/item=19136) · *Molten Core* |
 | Legs | [Leggings of Torment](https://www.wowhead.com/forever/item=22342) · *Lord Valthalak, Blackrock Spire*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11648) | [Flarecore Leggings](https://www.wowhead.com/forever/item=19165) · *Tailoring*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11648) |
-| Feet | [Maleki's Footwraps](https://www.wowhead.com/forever/item=18735) · *Maleki the Pallid, Stratholme*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/spell=13368) | [Maleki's Footwraps](https://www.wowhead.com/forever/item=18735) · *Maleki the Pallid, Stratholme*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/spell=13368) |
+| Feet | [Maleki's Footwraps](https://www.wowhead.com/forever/item=18735) · *Maleki the Pallid, Stratholme*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/item=16220) | [Maleki's Footwraps](https://www.wowhead.com/forever/item=18735) · *Maleki the Pallid, Stratholme*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/item=16220) |
 | Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=234439) | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
 | Finger | [Rune Band of Wizardry](https://www.wowhead.com/forever/item=22339) · *Lord Valthalak, Blackrock Spire* | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
 | Trinket | [Briarwood Reed](https://www.wowhead.com/forever/item=12930) · *Jed Runewatcher, Blackrock Spire* | [Briarwood Reed](https://www.wowhead.com/forever/item=12930) · *Jed Runewatcher, Blackrock Spire* |

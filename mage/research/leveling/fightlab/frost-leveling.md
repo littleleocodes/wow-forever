@@ -42,16 +42,16 @@ Spec model (`_reference/data/scorer/specs`) assumes: frostbolt 19%, frost_nova 1
 |---|---|---|---|---|---|---|
 | 20 | opt-frost-leveling-leveling-st | 25.2s | - | 11.8s | 0.0 | 5.4s |
 | 20 | leveling-frost | 26.7s | +5.7% | 13.0s | 0.0 | 5.7s |
-| 20 | opt-fire-leveling-leveling-st (played as `fire-leveling`) | 25.0s | -1.1% | 10.1s | 0.0 | 6.9s |
+| 20 | opt-fire-leveling-leveling-st (played as `fire-leveling`) | 30.5s | +21.1% | 13.2s | 0.0 | 9.4s |
 | 30 | opt-frost-leveling-leveling-st | 32.4s | - | 16.9s | 0.0 | 7.5s |
 | 30 | leveling-frost | 31.5s | -2.7% | 15.9s | 0.0 | 7.6s |
-| 30 | opt-fire-leveling-leveling-st (played as `fire-leveling`) | 32.1s | -0.8% | 11.8s | 0.0 | 12.3s |
+| 30 | opt-fire-leveling-leveling-st (played as `fire-leveling`) | 36.3s | +12.0% | 14.9s | 0.0 | 13.4s |
 | 40 | opt-frost-leveling-leveling-st | 32.0s | - | 16.2s | 0.0 | 7.8s |
 | 40 | leveling-frost | 33.0s | +2.9% | 17.4s | 0.0 | 7.6s |
-| 40 | opt-fire-leveling-leveling-st (played as `fire-leveling`) | 38.1s | +19.0% | 15.2s | 0.0 | 15.0s |
+| 40 | opt-fire-leveling-leveling-st (played as `fire-leveling`) | 42.1s | +31.4% | 17.8s | 0.0 | 16.3s |
 | 50 | opt-frost-leveling-leveling-st | 26.7s | - | 12.4s | 0.0 | 6.2s |
 | 50 | leveling-frost | 26.7s | +0.2% | 12.4s | 0.0 | 6.3s |
-| 50 | opt-fire-leveling-leveling-st (played as `fire-leveling`) | 34.3s | +28.9% | 13.5s | 0.0 | 12.8s |
+| 50 | opt-fire-leveling-leveling-st (played as `fire-leveling`) | 37.3s | +40.1% | 15.1s | 0.0 | 14.2s |
 | 60 | opt-frost-leveling-leveling-st | 25.0s | - | 11.8s | 0.0 | 5.2s |
 | 60 | leveling-frost | 25.4s | +1.5% | 12.1s | 0.0 | 5.3s |
 | 60 | opt-fire-leveling-leveling-st (played as `fire-leveling`) | 32.9s | +31.6% | 13.1s | 0.0 | 11.8s |

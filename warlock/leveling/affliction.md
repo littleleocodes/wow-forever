@@ -8,47 +8,47 @@
 
 ## How to play
 
-**Not in this build:** **Soul Link** is a talent this build does not take: skip the lines that use it. The fight lab played the build without it.
+**Not in this build:** **Soul Link**, **Wrack** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
 
 **Before the fight:** **Demon Skin** (**Demon Armor** from level 20) up, **Summon Voidwalker**. Send the Voidwalker in first and let it hold the mob with **Torment**. Open with **Amplify Curse** whenever it is ready: it makes that fight's **Bane of Agony** 50% stronger. With **Soul Link**: turn it on once the Voidwalker is out.
 
 **In the fight**, top to bottom:
 
-1. **Corruption**, **Bane of Agony** and **Siphon Life** on the mob, none of them on a mob below about a third of its health.
-2. **Immolate** only on a mob above half its health and while you have more than half your mana.
-3. Then your wand, not **Shadow Bolt**: the dots do the killing and the wand costs no mana.
-4. **Drain Life** whenever you drop below 60% health, and in place of the wand while you are below 85%.
-5. **Life Tap** in a fight only when you are short of mana and above 60% health.
-6. If a mob reaches you: **Death Coil** below 60% health, then **Drain Life** while it runs; otherwise let **Torment** take it back. Your Healthstone below 35% health.
+1. **Curse of the Elements** first on a mob above half its health, while you have more than 30% mana.
+2. **Corruption**, **Bane of Agony** and **Siphon Life** on the mob, none of them on a mob below about a third of its health.
+3. **Immolate** only on a mob above half its health and while you have more than half your mana.
+4. With **Wrack**: channel it once **Corruption** is up.
+5. **Shadow Bolt** while the mob has more than about a third of its health and you have mana to spare; your wand otherwise.
+6. **Drain Life** whenever you drop below 60% health, and in place of the wand while you are below 85%.
+7. **Life Tap** in a fight only when you are short of mana, above 60% health and the mob is below about a third of its health.
+8. If a mob reaches you: **Death Coil** below 60% health, otherwise **Fear** it, then **Drain Life** while it runs. Your Healthstone below 35% health.
 
 **Between fights:** **Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, and eat only below 55% health.
 
 ## Why this rotation
 
-Affliction levels by letting its damage-over-time spells do the killing while the Voidwalker holds the mob: you put **Corruption**, **Bane of Agony** and **Siphon Life** on it, add **Immolate** when mana allows, and shoot your wand while they tick.
+Affliction levels by letting its damage-over-time spells do the killing while the Voidwalker holds the mob: **Curse of the Elements**, **Corruption**, **Bane of Agony** and **Siphon Life** on a healthy mob, **Shadow Bolt** while the mob has more than about a third of its health, then the wand while the dots finish it.
 
 **Why it works**
 
-- Send the Voidwalker in first: its **Torment** holds the mob while you stand at range, and your dots build threat slowly enough that it keeps the mob. Open with **Amplify Curse** whenever it is ready (3-minute cooldown): it makes that fight's **Bane of Agony** 50% stronger.
-- **Corruption** and **Bane of Agony** do about half your damage at 60, and **Siphon Life** (from level 30) another tenth while it heals you. Skip **Corruption** on a mob below about a third of its health: it dies before the spell pays for its mana (the fight lab measured that about 1% faster).
-- **Immolate** comes last, only on a mob above about half its health and while you have more than half your mana: it costs the most mana of your dots and brings about 5% of your damage at 60.
-- Your wand is the filler, not **Shadow Bolt**: the fight lab measured kills about 7% faster with no **Shadow Bolt** at all. The wand costs no mana, so you spend less time getting mana back while the dots do the killing.
-- **Drain Life** is for when you are hurt, not for damage: the fight lab casts it below 60% health, and in place of the wand below 85%. Between fights, **Life Tap** back to about 70% mana while your health stays above 60%, and eat only when a fight leaves you below about 55%: **Siphon Life** and **Drain Life** win the rest back in the next fight.
+- Send the Voidwalker in first: its **Torment** holds the mob while you stand at range, and your dots build threat slowly enough that it keeps the mob. **Amplify Curse** (level 20) goes on whenever it is ready (3-minute cooldown): it makes that fight's **Bane of Agony** 50% stronger.
+- **Curse of the Elements** goes first on a mob above half its health while you have more than 30% mana: every spell after it hits 10% harder (the tuned mana rule measured about 0.7% faster per kill).
+- **Corruption** and **Bane of Agony** do about half your damage at 60, and **Siphon Life** (level 30) about a tenth while it heals you. None of them on a mob below about a third of its health: it dies before the spell pays for its mana (the tuned rule measured about 2.8% faster for **Corruption**).
+- **Shadow Bolt** fills while the mob has more than 35% of its health and you keep the mana for **Fear** and **Drain Life**; below that, your wand while the dots finish the mob. The tuned rule (no **Shadow Bolt** on a mob below 35%) measured about 6% faster per kill (2026-10-09).
+- **Immolate** only on a mob above about half its health and while you have more than half your mana: it costs the most of your dots, and in the fight lab it is about 1% of your damage at 60.
+- **Drain Life** below 60% health, and in place of the wand below 85%. **Life Tap** in a fight only once the mob is below 35% of its health (a tuned rule, about 1.8% faster per kill) and while you stay above 60% health; between fights tap back to about 70% mana and eat only below 55% health.
 
 **Caveats**
 
-- This build has no **Wrack**, and the fight lab measured kills about 6.5% faster when a build that has it never casts it: its 6-second channel holds you in place for little damage.
-- When a mob reaches you, cast **Death Coil** if you are below about 60% health (it heals you for its damage); otherwise let the Voidwalker's **Torment** take it back. The fight lab measured never casting **Fear** about 1.5% faster.
-- **Curse of the Elements** does not pay while leveling: the fight lab measured kills up to 3% slower at levels 50-60 with it, because the mob dies before the curse repays its global cooldown and mana.
-- Pulls of several mobs with **Rain of Fire** were slower than single pulls at level 40 in the fight lab and only about 10% faster at 60, with about one death per ten kills: pull one mob at a time.
+- This build has no **Wrack** and no **Nightfall**. With **Wrack**, the fight lab channels it once **Corruption** is up.
+- When a mob reaches you: **Death Coil** if you are below about 60% health (it heals you for its damage), otherwise **Fear** it and **Drain Life** while it runs, until the Voidwalker's **Torment** takes it back.
+- The fight lab's area version (pulls of several mobs) was last run on an older beta build: pull one mob at a time.
 
 **When to change it**
 
 - Finish a nearly dead mob with the wand; start no new spell on it.
 - Below about a third of your health with a mob on you, use a Healthstone (**Create Healthstone** between fights).
 - If the Voidwalker dies, summon a new one before the next pull rather than fight without your tank, and heal a hurt one between fights with **Consume Shadows** (not usable in combat) or **Health Funnel**.
-
-*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 

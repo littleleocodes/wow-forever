@@ -6,10 +6,10 @@
 
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
-| 1 | [Demonology](demonology.md) — Demonology — Raid 🔬 | 822 | best |
-| 2 | [Affliction](affliction.md) — Affliction (optimized) | 752 | -8% |
-| 3 | [Shadow Bolt hybrid](shadow-bolt-hybrid.md) — Shadow Bolt hybrid — Raid 🔬 | 723 | -12% |
-| 4 | [Destruction](destruction.md) — Destruction — Raid 🔬 | 705 | -14% |
+| 1 | [Demonology](demonology.md) 🔬 | 822 | best |
+| 2 | [Affliction](affliction.md) (optimized) | 752 | -8% |
+| 3 | [Shadow Bolt hybrid](shadow-bolt-hybrid.md) 🔬 | 723 | -12% |
+| 4 | [Destruction](destruction.md) 🔬 | 705 | -14% |
 
 **By gear tier**: each damage spec with its best talents for each tier, in its own gear (DPS in a full raid; [every class](../../_reference/dps-rankings.md)):
 

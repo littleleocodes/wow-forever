@@ -21,8 +21,9 @@ def data():
         return {}
 
 
-def spec(cls, spec_name):
-    return (data().get("specs") or {}).get(f"{cls}|{spec_name}")
+def spec(cls, spec_name, role=None):
+    """A spec's sets; `role` "tank" or "heal" for the support sets (2026-10-15: the druid's bear shares the Feral Combat page)."""
+    return (data().get("specs") or {}).get(f"{cls}|{spec_name}" + (f"|{role}" if role else ""))
 
 
 def sim_link(cls, spec_name, key):
@@ -41,9 +42,9 @@ def cell(row):
     return out
 
 
-def table(cls, spec_name):
+def table(cls, spec_name, role=None):
     """Markdown lines: a Slot | Pre-BiS | Phase 1 BiS table of the spec's two sets, every item linked; [] without links."""
-    s = spec(cls, spec_name)
+    s = spec(cls, spec_name, role)
     if not s or not s.get("gear"):
         return []
     tiers = [t for t in ("prebis", "bis") if t in s["gear"]]
@@ -65,9 +66,9 @@ def table(cls, spec_name):
     return o
 
 
-def sim_line(cls, spec_name, raid_first=True):
+def sim_line(cls, spec_name, raid_first=True, role=None):
     """'Open in the simulator' links for both tiers and settings, or ''."""
-    s = spec(cls, spec_name)
+    s = spec(cls, spec_name, role)
     if not s or not s.get("sim"):
         return ""
     parts = []

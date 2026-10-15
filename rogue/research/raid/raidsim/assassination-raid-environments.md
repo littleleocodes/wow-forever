@@ -6,8 +6,8 @@
 |---|---|---|---|---|---|---|
 | `assassination-seal-fate-raid` | 30/19/2 | 422 | 489 | 702 | 712 | 757 |
 | `assassination-ml-raid` | 30/19/2 | 410 | 476 | 707 | 717 | 763 |
-| `daggers-split-ml-raid` | 30/19/2 | 410 | 476 | 707 | 717 | 763 |
 | `assassination-mutilate-raid` | 30/21/0 | 410 | 477 | 690 | 698 | 751 |
+| `daggers-split-open-raid` | 21/28/2 | 396 | 459 | 718 | 729 | 774 |
 | sim preset: Mutilate | - | 386 | 452 | 672 | 682 | 732 |
 | sim preset: Assassination Mutilate 31/20/0 | - | 374 | 439 | 654 | 664 | 706 |
 
@@ -25,8 +25,8 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 |---|---|---|---|---|---|---|---|
 | `assassination-seal-fate-raid` | 422 | -0% | +12% | +38% | +2% | +15% | 702 |
 | `assassination-ml-raid` | 410 | -0% | +12% | +38% | +2% | +21% | 707 |
-| `daggers-split-ml-raid` | 410 | -0% | +12% | +38% | +2% | +21% | 707 |
 | `assassination-mutilate-raid` | 410 | -0% | +12% | +38% | +1% | +17% | 690 |
+| `daggers-split-open-raid` | 396 | +0% | +20% | +43% | +2% | +17% | 718 |
 | sim preset: Mutilate | 386 | +0% | +11% | +39% | +2% | +22% | 672 |
 | sim preset: Assassination Mutilate 31/20/0 | 374 | -0% | +14% | +41% | +2% | +19% | 654 |
 
@@ -40,8 +40,8 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 |---|---|---|---|---|---|
 | `assassination-seal-fate-raid` | 450 | 429 | 422 | 419 | 421 |
 | `assassination-ml-raid` | 436 | 418 | 410 | 408 | 409 |
-| `daggers-split-ml-raid` | 436 | 418 | 410 | 408 | 409 |
 | `assassination-mutilate-raid` | 443 | 418 | 410 | 407 | 409 |
+| `daggers-split-open-raid` | 418 | 401 | 396 | 392 | 395 |
 | sim preset: Mutilate | 416 | 393 | 386 | 384 | 385 |
 | sim preset: Assassination Mutilate 31/20/0 | 397 | 381 | 374 | 371 | 373 |
 

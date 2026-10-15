@@ -11,7 +11,7 @@ Talentless baseline: 90 h for levels 10-60 under these assumptions.
   - at level 60: **Shadow**: Blackout 5, Shadow Reach 2, Shadow Focus 5, Mind Flay 1, Improved Mind Flay 2, Vampiric Embrace 1, Shadow Weaving 3, Improved Mind Blast 5, Spirit Tap 1, Early Demise 2, Darkness 5, Shadowform 1; **Discipline**: Twin Disciplines 5, Improved Power Word: Shield 3, Silent Resolve 3, Inner Focus 1, Power in Light 3, Mental Strength 3
   - order: 10-14 Blackout x5, 15-16 Shadow Reach x2, 17-19 Shadow Focus x3, 20 Mind Flay, 21-22 Improved Mind Flay x2, 23-24 Shadow Focus x2, 25 Vampiric Embrace, 26-28 Shadow Weaving x3, 29-33 Improved Mind Blast x5, 34 Spirit Tap, 35-36 Early Demise x2, 37-39 Darkness x3, 40 Shadowform, 41-42 Darkness x2, 43-47 Twin Disciplines x5, 48-50 Improved Power Word: Shield x3, 51-52 Silent Resolve x2, 53 Inner Focus, 54 Silent Resolve, 55-57 Power in Light x3, 58-60 Mental Strength x3
 
-Total: **33.7 h** (62.5% faster than talentless), 0 respec(s).
+Total: **33.7 h** (62.5% faster than talentless), no respec.
 
 ## Never respec: best single plan
 

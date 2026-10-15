@@ -2,11 +2,15 @@
 
 [Hunter](../README.md) > [Raid (group)](README.md) > Beast-Marks
 
-*Marksmanship's shots with Beast Mastery's pet talents: the classic raid hunter split.* (a hybrid: Beast Mastery/Marksmanship).
+*Marksmanship's shots (Trueshot Aura, Barrage, Sniper Shot) with a few Beast Mastery points: the classic raid hunter split.* (a hybrid: Beast Mastery/Marksmanship).
 
-**[Beast-Marks — Raid](../research/raid/builds/beast-marks-ml-raid.md)** (7/39/5) — [open the talent tree](https://talentsforever.com/hunter/60/502-0053352501522051-5-6)
+**[Beast-Marks — Raid](../research/raid/builds/beast-marks-open-raid.md)** (27/21/3) — [open the talent tree](https://talentsforever.com/hunter/60/552100050500022-00530503005-3-6)
 
-> 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds); it beat the hand-made build (mm-hawk-raid), which stays below as the alternative. A model of the beta, to check at launch.
+> 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (Marksmanship — Summon Hawk), which stays below as the alternative. A model of the beta, to check at launch.
+
+**Other setups of this spec.** The spec's best build for each other setup, in a full raid:
+
+- With a pet: [Beast Mastery / Marksmanship](../research/raid/builds/bm-mm-raid.md) (22/29/0, 803 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/53200005041002-005355010150004--6)
 
 ## How to play
 
@@ -14,21 +18,14 @@
 
 **Keep up all fight:** **Aspect of the Hawk**.
 
-**Talents with no line below:** **Trueshot Aura**: turn it on before the pull; **Trueshot Aura**: turn it on before the pull.
-
 **Then press the first one that is ready**, top to bottom:
 
-1. **Arcane Shot**
-2. **Rapid Fire**
-3. **Aimed Shot**
-4. **Serpent Sting**: keep it on the target
-5. **Sniper Shot**
+1. **Serpent Sting**: keep it on the target, when you have at least 30% mana
+2. **Arcane Shot**
+3. **Rapid Fire**
+4. **Aimed Shot**
 
 Between these, **Auto Shot** keeps firing on its own.
-
-**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
-
-- **Multi-Shot**: now and then (in about 1 of 10 fights)
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
@@ -42,7 +39,7 @@ Beast-Marks puts Beast Mastery's pet talents on a Marksmanship shot core and pla
 - **Arcane Shot** every time it is ready: 3 points in **Improved Arcane Shot** bring its cooldown to 5.1 seconds, about 34 casts in a 3-minute fight. **Summon Hawk** would share that timer, and in a full raid the simulator measured **Arcane Shot** as the better use of it, so this build skips the hawk.
 - **Rapid Fire** (40% faster attacks for 15 seconds, 5-minute cooldown) once a fight, at the pull. The full rotation presses it just before an **Auto Shot** with **Aimed Shot** about to come off cooldown.
 - **Aimed Shot** is listed last but goes out almost every time it can: a 2-second cast, then its 6-second cooldown. The simulator measured it slightly better below the instants; **Multi-Shot** shares its cooldown and never comes up on one target.
-- The pet half: **Unleashed Fury** (+15% pet damage), **Ferocity** (+10% pet crit on top of your own crit, which Forever pets inherit), **Frenzy** and **Focused Fire** (+2% to you and the pet while it is out). There is no **Bestial Wrath** here, so there is nothing to time but **Rapid Fire**, trinkets and a potion.
+- The pet half: **Unleashed Fury** (+15% pet damage), **Ferocity** (+10% pet crit on top of your own crit, which Forever pets inherit), **Frenzy** (2 points) and **Focused Fire** (+2% to you and the pet while it is out). There is no **Bestial Wrath** here, so there is nothing to time but **Rapid Fire**, trinkets and a potion.
 
 **Caveats**
 
@@ -61,14 +58,14 @@ Beast-Marks puts Beast Mastery's pet talents on a Marksmanship shot core and pla
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 878 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 852 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
 | Pre-BiS | 817 | [7/39/5](https://talentsforever.com/hunter/60/502-0053252501523051-5-6) |
-| Phase 1 BiS | 875 | this build |
+| Phase 1 BiS | 875 | [7/39/5](https://talentsforever.com/hunter/60/502-0053352501522051-5-6) |
 
 **The gear** (average item level: Pre-BiS 63.5; Phase 1 BiS 66.3; each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -79,11 +76,11 @@ Beast-Marks puts Beast Mastery's pet talents on a Marksmanship shot core and pla
 | Shoulders | [Rugged Mantle of the Timbermaw](https://www.wowhead.com/forever/item=227808) | [Giantstalker's Epaulets](https://www.wowhead.com/forever/item=16848) · *Sulfuron Harbinger, Molten Core* |
 | Back | [Arcanoweave Cloak](https://www.wowhead.com/forever/item=272411)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) | [Earthweave Cloak](https://www.wowhead.com/forever/item=21187)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) |
 | Chest | [Dawn Armor](https://www.wowhead.com/forever/item=252483) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Dawn Armor](https://www.wowhead.com/forever/item=252483) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
-| Wrist | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Minor Agility](https://www.wowhead.com/forever/spell=7778) | [Giantstalker's Bracers](https://www.wowhead.com/forever/item=16850) · *Molten Core*<br>+ [Enchant Bracer - Minor Agility](https://www.wowhead.com/forever/spell=7778) |
-| Hands | [Theramore Gloves](https://www.wowhead.com/forever/item=271948)<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/spell=13823) | [Giantstalker's Gloves](https://www.wowhead.com/forever/item=16852) · *Shazzrah, Molten Core*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/spell=13823) |
+| Wrist | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Minor Agility](https://www.wowhead.com/forever/item=273470) | [Giantstalker's Bracers](https://www.wowhead.com/forever/item=16850) · *Molten Core*<br>+ [Enchant Bracer - Minor Agility](https://www.wowhead.com/forever/item=273470) |
+| Hands | [Theramore Gloves](https://www.wowhead.com/forever/item=271948)<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) | [Giantstalker's Gloves](https://www.wowhead.com/forever/item=16852) · *Shazzrah, Molten Core*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) |
 | Waist | [Knowledge of the Timbermaw](https://www.wowhead.com/forever/item=228190) | [Giantstalker's Belt](https://www.wowhead.com/forever/item=16851) · *Molten Core* |
 | Legs | [Outrider's Chain Leggings](https://www.wowhead.com/forever/item=22673)<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) | [Dragonstalker's Legguards](https://www.wowhead.com/forever/item=16938) · *Ragnaros, Molten Core*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) |
-| Feet | [Windreaver Greaves](https://www.wowhead.com/forever/item=13967) · *Kirtonos the Herald, Scholomance*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) | [Giantstalker's Boots](https://www.wowhead.com/forever/item=16849) · *Gehennas, Molten Core*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) |
+| Feet | [Windreaver Greaves](https://www.wowhead.com/forever/item=13967) · *Kirtonos the Herald, Scholomance*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) | [Giantstalker's Boots](https://www.wowhead.com/forever/item=16849) · *Gehennas, Molten Core*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) |
 | Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21202) | [Band of Accuria](https://www.wowhead.com/forever/item=17063) · *Ragnaros, Molten Core* |
 | Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=234020) | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21202) |
 | Trinket | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) |
@@ -96,7 +93,7 @@ Beast-Marks puts Beast Mastery's pet talents on a Marksmanship shot core and pla
 ## Other builds of this spec
 
 - [Marksmanship — Summon Hawk](../research/raid/builds/mm-hawk-raid.md) (22/29/0, 806 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/53200005051001-105355000150004--6)
-- [Beast Mastery / Marksmanship](../research/raid/builds/bm-mm-raid.md) (22/29/0, 803 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/53200005041002-005355010150004--6)
+- [Beast-Marks (optimized, with a pet)](../research/raid/builds/opt-mm-raid-raid-dps.md) (22/29/0, 803 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/53200005041002-005355010150004--6)
 
 ---
 *Generated by `_reference/data/render_modes.py` on 2026-10-15 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*

@@ -55,9 +55,9 @@ The community simulator's own Feral Cat preset (9/35/7), raced against our Feral
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md)** | ours: hand draft | 9/35/7 | 392 | +0.0% | 688 | -0.8% | 119 s |
+| 1 | **[`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md)** | ours: derived (simulator preset) | 9/35/7 | 392 | +0.0% | 688 | -0.8% | 119 s |
 | 2 | *Feral Cat 9/35/7* | community simulator | - | 392 | +0.0% | 688 | -0.8% | 119 s |
-| 3 | [`feral-combat-open-raid`](feral-combat-open-raid.md) | ours: hand draft | 9/33/9 | 388 | -1.1% | 694 | +0.0% | 119 s |
+| 3 | [`feral-combat-open-raid`](feral-combat-open-raid.md) | ours: derived (open search) | 9/33/9 | 388 | -1.1% | 694 | +0.0% | 119 s |
 | 4 | *Feral* | community simulator | - | 387 | -1.3% | 661 | -4.7% | 86 s |
 | 5 | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/31/11 | 366 | -6.7% | 590 | -15.0% | 0 s |
 | 6 | [`feral-cat-dps`](feral-cat-dps.md) | ours: hand draft | 9/32/10 | 355 | -9.5% | 575 | -17.1% | 0 s |

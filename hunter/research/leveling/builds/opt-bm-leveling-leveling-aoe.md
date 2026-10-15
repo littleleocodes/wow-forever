@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-leveling` and profile `leveling-aoe`: score +55.0% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-leveling` and profile `leveling-aoe`: score +44.8% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -77,14 +77,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-level
 
 ## Core talents (priority order)
 
-1. **Summon Hawk** — Removing it costs 8.2 points of score in this model.
-2. **Strider Kick** — Removing it costs 6.6 points of score in this model.
-3. **Unleashed Fury** — Removing it costs 4.3 points of score in this model.
-4. **Improved Tracking** — Removing it costs 3.4 points of score in this model.
-5. **Expose Prey** — Removing it costs 2.4 points of score in this model.
-6. **Lacerating Strikes** — Removing it costs 2.3 points of score in this model.
-7. **Lightning Reflexes** — Removing it costs 2.2 points of score in this model.
-8. **Ferocity** — Removing it costs 2.0 points of score in this model.
+1. **Strider Kick** — Removing it costs 6.3 points of score in this model.
+2. **Summon Hawk** — Removing it costs 5.2 points of score in this model.
+3. **Unleashed Fury** — Removing it costs 4.0 points of score in this model.
+4. **Deadly Aspects** — Removing it costs 2.4 points of score in this model.
+5. **Expose Prey** — Removing it costs 2.3 points of score in this model.
+6. **Improved Tracking** — Removing it costs 2.3 points of score in this model.
+7. **Surefooted** — Removing it costs 2.3 points of score in this model.
+8. **Lacerating Strikes** — Removing it costs 2.2 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
@@ -96,24 +96,25 @@ What this build casts per kill ([report](../fightlab/bm-leveling-aoe.md), all le
 
 | Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|
-| Claw | 5.0 | 5.2 | 5.2 | 6.3 | 6% |
-| Melee | 3.5 | 4.2 | 4.2 | 5.6 | 18% |
-| Growl | 3.7 | 4.0 | 4.1 | 5.2 | 0% |
-| Auto Shot | 3.3 | 3.9 | 5.3 | 4.7 | 17% |
-| Volley | 0.0 | 1.3 | 1.4 | 1.6 | 11% |
-| Serpent Sting | 1.9 | 1.7 | 1.7 | 1.6 | 16% |
-| Mongoose Bite | 0.7 | 0.9 | 0.9 | 1.2 | 5% |
-| Wing Clip | 0.4 | 0.5 | 0.7 | 0.8 | 0% |
-| Bite | 0.4 | 0.5 | 0.5 | 0.5 | 1% |
-| Raptor Strike | 1.1 | 0.5 | 0.3 | 0.3 | 1% |
-| Hunter's Mark | 0.4 | 0.3 | 0.3 | 0.3 | 0% |
-| Summon Hawk | 0.6 | 0.3 | 0.3 | 0.2 | 0% |
+| Auto Shot | 3.2 | 4.0 | 5.5 | 6.1 | 22% |
+| Claw | 3.6 | 4.2 | 4.2 | 5.2 | 5% |
+| Melee | 3.9 | 4.1 | 3.7 | 5.1 | 16% |
+| Growl | 2.2 | 2.9 | 3.1 | 4.1 | 0% |
+| Serpent Sting | 1.9 | 1.7 | 1.8 | 1.8 | 17% |
+| Volley | 0.0 | 1.2 | 1.4 | 1.6 | 10% |
+| Feign Death | 0.3 | 0.3 | 0.4 | 0.6 | 0% |
+| Bite | 0.4 | 0.4 | 0.5 | 0.5 | 1% |
+| Mongoose Bite | 0.2 | 0.4 | 0.4 | 0.4 | 2% |
+| Hunter's Mark | 0.4 | 0.3 | 0.3 | 0.4 | 0% |
+| Wing Clip | 0.1 | 0.2 | 0.3 | 0.3 | 0% |
+| Summon Hawk | 0.7 | 0.3 | 0.3 | 0.2 | 1% |
 | Aimed Shot | 0.5 | 0.2 | 0.1 | 0.1 | 1% |
+| Raptor Strike | 0.3 | 0.1 | 0.1 | 0.1 | 0% |
 
 ## Notes
 
-- Allocation and order taken from cand-aoe-r7 on 2026-09-29: an earlier optimizer round beat the last export in the fight lab (56.3s vs 58.6s per kill, level-weighted).
-- Report: hunter/talents/forever/optimizer/bm-leveling-leveling-aoe.md
+- Allocation and order taken from cand-aoe-r7 on 2026-10-15: an earlier optimizer round beat the last export in the fight lab (53.3s vs 54.7s per kill, level-weighted).
+- Report: hunter/research/talents/forever/optimizer/bm-leveling-leveling-aoe.md
 
 ## Open questions (verify in the live game)
 

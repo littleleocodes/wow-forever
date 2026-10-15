@@ -13,8 +13,8 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | [Frost — Arcane Power / Frostbolt (raid DPS)](builds/frost-arcane-power-raid.md) | 32/0/19 | DPS | [frost-arcane-power-raid](../talents/classic-baseline/frost-arcane-power-raid.md) |
 | [Frost — Winter's Chill (raid support)](builds/frost-winters-chill-raid.md) | 21/0/30 | DPS | [frost-winters-chill-raid](../talents/classic-baseline/frost-winters-chill-raid.md) |
 | [Frost — Fingers of Frost / Ice Lance / Shatter (simulator winner adopted 2026-09-28)](builds/frost-fingers-of-frost-raid.md) | 22/0/29 | DPS | — |
-| [Fire — Ignite / Hot Streak (simulator winner adopted 2026-09-28)](builds/fire-raid.md) | 12/34/5 | DPS | [fire-raid](../talents/classic-baseline/fire-raid.md) |
-| [Frostfire — Frostfire Bolt / Hot Streak (Fire/Frost hybrid, raid)](builds/frostfire-raid.md) | 4/31/16 | DPS | [fire-raid](../talents/classic-baseline/fire-raid.md) |
+| [Fire — Ignite / Heating Up (simulator winner adopted 2026-09-28)](builds/fire-raid.md) | 12/34/5 | DPS | [fire-raid](../talents/classic-baseline/fire-raid.md) |
+| [Frostfire — Frostfire Bolt / Heating Up (Fire/Frost hybrid, raid)](builds/frostfire-raid.md) | 4/31/16 | DPS | [fire-raid](../talents/classic-baseline/fire-raid.md) |
 | [Arcane — Arcane Blast (raid)](builds/arcane-blast-raid.md) | 35/11/5 | DPS | — |
 | [Frostfire — Fingers of Frost / Ice Lance (user build)](builds/frostfire-fingers-of-frost-raid.md) | 0/29/22 | DPS | — |
 
@@ -46,10 +46,10 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`frost-ml-raid`](builds/frost-ml-raid.md) | ours: hand draft | 21/0/30 | 602 | +0.0% | 680 | -1.0% | 0 s |
+| 1 | [`frost-ml-raid`](builds/frost-ml-raid.md) | ours: derived (ML search) | 21/0/30 | 602 | +0.0% | 680 | -1.0% | 0 s |
 | 2 | [`frost-fingers-of-frost-raid`](builds/frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 598 | -0.5% | 676 | -1.6% | 0 s |
 | 3 | [`opt-frost-raid-raid-dps`](builds/opt-frost-raid-raid-dps.md) | ours: optimizer | 22/0/29 | 597 | -0.8% | 676 | -1.6% | 1 s |
-| 4 | [`arcane-frost-open-raid`](builds/arcane-frost-open-raid.md) | ours: hand draft | 28/0/23 | 589 | -2.1% | 687 | +0.0% | 5 s |
+| 4 | [`arcane-frost-open-raid`](builds/arcane-frost-open-raid.md) | ours: derived (open search) | 28/0/23 | 589 | -2.1% | 687 | +0.0% | 5 s |
 | 5 | [`frost-arcane-power-raid`](builds/frost-arcane-power-raid.md) | ours: hand draft | 32/0/19 | 566 | -5.9% | 643 | -6.4% | 0 s |
 | 6 | *Frost DPS* | community simulator | - | 557 | -7.5% | 632 | -8.0% | 0 s |
 | 7 | [`opt-frost-raid-raid-dps-extwc`](builds/opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 1/13/37 | 546 | -9.3% | 646 | -6.0% | 7 s |
@@ -87,7 +87,7 @@ Our builds and the community simulator's own builds, run through the same simula
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`frostfire-raid`](builds/frostfire-raid.md) | ours: hand draft | 4/31/16 | 472 | +0.0% | 630 | -6.7% | 0 s |
 | 2 | [`frostfire-fingers-of-frost-raid`](builds/frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 470 | -0.4% | 675 | +0.0% | 0 s |
-| 3 | [`frostfire-ml-raid`](builds/frostfire-ml-raid.md) | ours: hand draft | 4/31/16 | 437 | -7.4% | 597 | -11.5% | 1 s |
+| 3 | [`frostfire-ml-raid`](builds/frostfire-ml-raid.md) | ours: derived (ML search) | 4/31/16 | 437 | -7.4% | 597 | -11.5% | 1 s |
 
 ## DPS by gear tier
 
@@ -229,6 +229,10 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 | Raid DPS, Frost (another mage keeps Winter's Chill) | frost-raid | [1/13/37](builds/opt-frost-raid-raid-dps-extwc.md) (+73.2%) | [frost-arcane-power-raid](builds/frost-arcane-power-raid.md) |
 | Raid DPS, Fire | fire-raid | [14/32/5](builds/opt-fire-raid-raid-dps.md) (+183.0%) | [fire-raid](builds/fire-raid.md) |
 
-Model findings: Arcane Meditation (17%/rank) pulls every build 15+ points into Arcane; raid Frost is Shatter + Fingers of Frost with no Winter's Chill; Frost still out-levels Fire (+43% vs +31% time saved). The AoE build now follows the Classic AoE loop (Improved Frost Nova 15-16, Permafrost, Improved Blizzard 20-22, Arctic Reach, Cold Snap, Ice Block, Ice Barrier at 40, no Frostbite) and keeps Shatter/Fingers of Frost because Forever's versions are stronger.
+Model findings (generated from the optimizer builds; scores are within each spec model, never across models):
 
-Beta hypotheses (model claims without community precedent, unverified): The AoE build keeping Shatter 3 + Fingers of Frost 2 and dropping Improved Cone of Cold; the ~9 h Frost-over-Fire leveling gap assumes equal talentless baselines; Arcane Meditation at 17%/rank. Level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).
+- **Raid DPS, Frost (lone frost mage):** 22/0/29; biggest talents by score lost when removed: Improved Frostbolt (22.4), Ice Shards (20.2), Fingers of Frost (19.2), Ice Lance (12.6), Winter's Chill (11.4); the hand draft `frost-winters-chill-raid` is 21/0/30.
+- **Raid DPS, Frost (another mage keeps Winter's Chill):** 1/13/37; biggest talents by score lost when removed: Ice Shards (23.0), Fingers of Frost (22.5), Ice Lance (18.8), Improved Frostbolt (15.9), Shatter (12.6); the hand draft `frost-arcane-power-raid` is 32/0/19.
+- **Raid DPS, Fire:** 14/32/5; biggest talents by score lost when removed: Improved Scorch (96.8), Fire Power (25.7), Ignite (24.5), Improved Fireball (22.5), Critical Mass (16.8); the hand draft `fire-raid` is 12/34/5.
+
+Beta hypotheses: every build's unverified claims are its `open_questions`, collected in [`_reference/launch-checklist.md`](../../../_reference/launch-checklist.md); level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).

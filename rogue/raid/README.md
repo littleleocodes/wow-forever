@@ -6,10 +6,10 @@
 
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
-| 1 | [Combat](combat.md) — Combat — Raid 🔬 | 735 | best |
-| 2 | [Assassination](assassination.md) — Assassination — Raid 🔬 | 707 | -4% |
-| 3 | [Daggers (split)](daggers-split.md) — Daggers — Raid 🔬 | 707 | -4% |
-| 4 | [Subtlety](subtlety.md) — Subtlety — Hemorrhage | 673 | -8% |
+| 1 | [Combat](combat.md) 🔬 | 735 | best |
+| 2 | [Daggers (split)](daggers-split.md) — Daggers — Raid 🔬 | 718 | -2% |
+| 3 | [Assassination](assassination.md) 🔬 | 707 | -4% |
+| 4 | [Subtlety](subtlety.md) — Hemorrhage | 673 | -8% |
 
 **By gear tier**: each damage spec with its best talents for each tier, in its own gear (DPS in a full raid; [every class](../../_reference/dps-rankings.md)):
 

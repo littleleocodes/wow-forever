@@ -2,7 +2,7 @@
 
 [Hunter](../README.md) > [Leveling (solo)](README.md) > Beast-Marks
 
-*Marksmanship's shots with Beast Mastery's pet talents: the classic raid hunter split.* (a hybrid: Beast Mastery/Marksmanship).
+*Beast Mastery's pet talents (Ferocity, Frenzy, Spirit Bond) with Marksmanship's shot talents.* (a hybrid: Beast Mastery/Marksmanship).
 
 **[Beast-Marks — Leveling](../research/leveling/builds/beast-marks-open-leveling.md)** (28/18/5) — [open the talent tree](https://talentsforever.com/hunter/60/512021050511023-005355-5-6)
 
@@ -21,7 +21,7 @@
 3. **Summon Hawk** whenever it is ready (from level 25) while the mob has a third of its health or more; skip **Arcane Shot**, which shares its timer.
 4. **Aimed Shot** whenever it is ready while the mob has more than a quarter of its health; on a single mob never **Multi-Shot** (they share a cooldown).
 5. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards. **Mend Pet** when the pet drops below a third of its health.
-6. If a mob reaches you: **Wing Clip** and **Raptor Strike** until the pet takes it back.
+6. If a mob reaches you: **Feign Death** to send it back to the pet; when that is on cooldown, **Wing Clip** and **Raptor Strike** until the pet takes it back.
 
 **Between fights:** Mend the pet, drink below 15% mana, eat below two thirds of your health.
 
@@ -40,15 +40,13 @@ Beast-Marks levels exactly like Beast Mastery: the cat tanks and you shoot from 
 **Caveats**
 
 - This build takes neither **Bestial Wrath** nor **Intimidation**: skip the step that names them.
-- From level 57, **Improved Tracking** adds damage only against the creature type you are tracking: switch tracking to what you are killing.
-- The fight lab drinks only below 15% mana, which measured slightly faster than drinking at a third, and never uses **Feign Death** to shed a mob: **Wing Clip** and **Raptor Strike** hold it until the pet's Growl takes it back.
+- From level 56, **Improved Tracking** adds damage only against the creature type you are tracking: switch tracking to what you are killing.
+- The fight lab drinks only below 15% mana, which measured slightly faster than drinking at a third. A mob that turns on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Wing Clip** and **Raptor Strike** hold it until the pet's Growl takes it back.
 
 **When to change it**
 
 - Several mobs: **Multi-Shot** and **Volley** (no cooldown in Forever) instead of single-target shots.
 - If the pet dies, finish the mob in melee or **Feign Death**, and revive it before the next pull. When a mob is nearly dead, stop spending mana and let **Auto Shot** and the pet finish it.
-
-*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 

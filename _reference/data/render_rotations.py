@@ -19,6 +19,7 @@ import functools
 import importlib.util
 import json
 import pathlib
+import re
 import sys
 
 HERE = pathlib.Path(__file__).resolve().parent
@@ -77,13 +78,56 @@ def builds(cls):
 
 
 def made_by(cls, label):
+    # 2026-10-15 page audit B7: derived builds (ML and open searches) read "ours: hand draft"; label every build by how it was made
     if label.startswith("sim preset: "):
         return "community simulator"
-    if label.endswith("-parse"):
-        return "ours: parse build"
     if label.startswith("opt-"):
         return "ours: optimizer"
-    return "ours: hand draft" if label in builds(cls) else "ours"
+    b = builds(cls).get(label)
+    if b is None:
+        return "ours"
+    if "-ml-" in label:
+        return "ours: derived (ML search)"
+    if "-open-" in label:
+        return "ours: derived (open search)"
+    if b.get("preset"):
+        return "ours: derived (simulator preset)"
+    if b.get("derived"):
+        return {"leveling": "ours: derived (fight-lab search)", "pvp": "ours: derived (stats model)"}.get(b["derived"], "ours: derived (simulator search)")
+    if b.get("generated"):
+        return "ours: generated"
+    if label.endswith("-parse"):
+        return "ours: parse build"
+    return "ours: hand draft"
+
+
+@functools.lru_cache(maxsize=None)
+def page_picks(cls, mode):
+    """2026-10-15 page audit B5/A6: the build each spec's player page shows first, as render_modes.py picks it (read, never re-decided
+    here): [{"spec", "build", "rotation" (leveling: the fight-lab spec model it plays), "levels" ({level: seconds per kill}),
+    "weighted", "recommended"}], leveling fastest first, raid in the pages' spec order. Imported late: render_modes imports this module."""
+    import render_modes as M
+    import spec_modes as SM
+    B = builds(cls)
+    g = SM.grid(cls, list(B.values()))
+    nums = (M.raid_numbers(cls), M.leveling_numbers(cls), M.healer_numbers(cls))
+    g = M.own_rotation_only(cls, g, nums)
+    specs = SM.trees(cls) + sorted(s for s in g if s.startswith("Hybrid") and any(g[s].get(m) for m in M.PAGE_MODES))
+    rec = M.recommended(cls, g, specs, mode, nums)
+    out = []
+    for spec in specs:
+        ranked = M.rank_builds(cls, mode, g[spec][mode], nums)
+        if not ranked:
+            continue
+        b = ranked[0]
+        lv = nums[1].get(b["id"]) or {}
+        out.append({"spec": spec, "name": SM.spec_name(cls, spec), "slug": SM.spec_slug(cls, spec), "build": b,
+                    "rotation": M.LEVEL_MODEL.get((cls, b["id"])) if mode == "leveling" else None,
+                    "levels": {int(L): v for L, v in lv.items()}, "weighted": M.weighted(lv) if lv else None,
+                    "raid": nums[0].get(b["id"]), "heal": nums[2].get(b["id"]), "recommended": spec in rec})
+    if mode == "leveling":
+        out.sort(key=lambda x: (x["weighted"] is None, x["weighted"] or 0))
+    return out
 
 
 def label_md(cls, label, src=None):
@@ -161,6 +205,19 @@ def cast_ids(ids):
     return out
 
 
+def named_shares(shares):
+    """2026-10-15 page audit B17: a race report written before raidsim/id-names.json knew an id keeps "spell N" as an ability name (the
+    shaman's Windfury Weapon, spell 439440); name it now (raidsim/id_names.py), summing shares that end up under one name."""
+    sys.path.insert(0, str(HERE / "raidsim"))
+    import id_names
+    out = {}
+    for k, v in (shares or {}).items():
+        m = re.fullmatch(r"spell (\d+)", k)
+        k = id_names.spell(int(m.group(1))) if m else k
+        out[k] = out.get(k, 0) + v
+    return out
+
+
 @functools.lru_cache(maxsize=None)
 def spec_data(cls, spec, setting="dummy"):
     """Everything the raid pages need for one spec model: the rotation lines and, per build, its lines, casts and damage.
@@ -200,7 +257,7 @@ def spec_data(cls, spec, setting="dummy"):
             need = [grant[i] for i in ln["ids"] if i in grant and grant[i] not in alloc]
             per_line.append({"used": cpm >= MIN_CPM, "cpm": cpm, "why": f"needs the {need[0]} talent" if need else "its condition never held in these fights"})
         rows.append({"label": x["label"], "by": made_by(cls, x["label"]), "split": x.get("split") or "", "dps": x["dps"], "value": x.get("value"),
-                     "threat": x.get("threat"), "dtps": x.get("dtps"), "oom": x.get("oom_seconds"), "shares": x.get("shares") or {},
+                     "threat": x.get("threat"), "dtps": x.get("dtps"), "oom": x.get("oom_seconds"), "shares": named_shares(x.get("shares")),
                      "raid": (env_by.get(x["label"]) or {}).get("raid"), "lines": per_line})
     key = (lambda r: -(r["value"] or 0)) if tank else ((lambda r: -(r["raid"] or r["dps"] or 0)) if raid_view else (lambda r: -(r["dps"] or 0)))
     rows.sort(key=key)
@@ -465,23 +522,105 @@ def fl_build_table(r, bid, per):
     return o
 
 
+@functools.lru_cache(maxsize=None)
+def fl_runner():
+    sys.path.insert(0, str(HERE / "fightlab"))
+    return _load("fightlab_run_for_rotations", HERE / "fightlab" / "run.py")
+
+
+@functools.lru_cache(maxsize=None)
+def leveling_steps():
+    return {k: v for k, v in json.load(open(HERE / "leveling-steps.json", encoding="utf-8")).items() if not k.startswith("_")}
+
+
 def leveling_rotation_page(cls):
+    """2026-10-15 page audit B5: the page opens with the build each player leveling page picks and the rotation it plays; every such
+    rotation gets a section (the arcane-, subtlety-, demonology-, destruction-leveling rotations have no fight-lab report: their section
+    gives the priority in the player page's words, the tuned rules and the page builds' times per kill); the remaining fight-lab reports
+    follow as research. A compared build that plays another rotation than the report's says so in its heading (the frostfire report
+    compares its build with itself under the Frost rotation: two identical headings before)."""
     page = paths.rotation_page(cls, "leveling")
     o = [f"# {cls.title()} — leveling rotations (generated)", "",
          f"> Generated by `_reference/data/render_rotations.py` on {datetime.date.today().isoformat()} from the fight lab (`_reference/data/fightlab/`): "
          "the priority each class module plays against same-level mobs, and what every simulated leveling build casts per kill at each level "
          "bracket (talent abilities appear from the level the build takes them). A model of the beta, not a measurement. Do not hand-edit.", ""]
-    for p, r in fl_reports(cls):
+    picks = page_picks(cls, "leveling")
+    reports = fl_reports(cls)
+    by_spec = {}
+    for p, r in reports:
+        if not p.stem.endswith("-aoe"):
+            by_spec.setdefault(r["spec"], (p, r))
+    levels = sorted({L for x in picks for L in x["levels"]})
+    if picks:
+        o += ["## The player pages' builds", "",
+              "The build each spec's [leveling page](../../leveling/README.md) shows first, the fight-lab rotation it plays and its time per kill "
+              "(seconds; the level-weighted mean counts higher levels more). Each spec plays a rotation built for its own tree.", "",
+              "| Spec | Page build | Rotation | " + " | ".join(f"L{L}" for L in levels) + " | Weighted |", "|---|---|---|" + "---|" * (len(levels) + 1)]
+        for x in picks:
+            rot = x["rotation"]
+            o.append(f"| [{x['name']}](../../leveling/{x['slug']}.md){' ✅' if x['recommended'] else ''} | {label_md(cls, x['build']['id'], page)} | "
+                     + (f"[{rot}](#{rot})" if rot else "-") + " | " + " | ".join(f"{x['levels'][L]:.1f}" if L in x["levels"] else "-" for L in levels)
+                     + (f" | {x['weighted']:.1f} |" if x["weighted"] else " | - |"))
+        o += ["", "✅ = a recommended spec for leveling (the fastest, or within 3% of it).", ""]
+    fr = fl_runner()
+    steps = leveling_steps().get(cls, {})
+
+    def report_section(p, r, aoe):
         spec = r["spec"]
-        aoe = p.stem.endswith("-aoe")
-        o += [f"## {spec}" + (" in pulls of several mobs" if aoe else ""), "", fl_description(cls, spec, aoe), ""]
-        if fl_tuning_text(cls, spec):
-            o += [fl_tuning_text(cls, spec), ""]
-        o += [f"Report: [fightlab/{p.stem}.md](fightlab/{p.stem}.md).", ""]
-        for bid, per in [(r["build"], r["levels"])] + list(r.get("compare", {}).items()):
+        out = [f"Report: [fightlab/{p.stem}.md](fightlab/{p.stem}.md).", ""]
+        for i, (bid, per) in enumerate([(r["build"], r["levels"])] + list(r.get("compare", {}).items())):
             if not per:
                 continue
-            o += [f"### {label_md(cls, bid, page)}", ""] + fl_build_table(r, bid, per) + [""]
+            played = fr.spec_of_build(cls, bid, spec) if i else spec
+            own = fr.spec_of_build(cls, bid, None)
+            head = label_md(cls, bid, page) + (f" (played with the `{played}` rotation, for comparison)" if played != spec
+                                               else f" (played with the `{played}` rotation)" if own and own != played else "")
+            if head in seen:   # the same build and rotation in two reports (an AoE variant, an extra report): name the report
+                head += f" ({p.stem} report)"
+            if head in seen:
+                continue
+            seen.add(head)
+            out += [f"### {head}", ""] + fl_build_table(r, bid, per) + [""]
+        return out
+
+    done, seen = set(), set()   # seen: the page's build headings, unique across sections
+    for rot in dict.fromkeys(x["rotation"] for x in picks if x["rotation"]):
+        users = [x for x in picks if x["rotation"] == rot]
+        o += [f"## {rot}", "", "Played by the page build" + ("s" if len(users) > 1 else "") + " of "
+              + ", ".join(f"[{x['name']}](../../leveling/{x['slug']}.md) ({label_md(cls, x['build']['id'], page)})" for x in users) + ".", ""]
+        if rot in by_spec:
+            o += [fl_description(cls, rot), ""]
+        st = steps.get(rot)
+        if st:
+            o += ["The priority in the player page's words:", ""] + (["Before the fight: " + " ".join(st["before"]), ""] if st.get("before") else [])
+            o += [f"{i}. {t}" for i, t in enumerate(st.get("steps") or [], 1)] + [""]
+            if st.get("between"):
+                o += ["Between fights: " + " ".join(st["between"]), ""]
+        if fl_tuning_text(cls, rot):
+            o += [fl_tuning_text(cls, rot), ""]
+        if rot in by_spec:
+            p, r = by_spec[rot]
+            o += report_section(p, r, False)
+            done.add(p)
+            in_rep = {r["build"]} | {b for b in (r.get("compare") or {}) if fr.spec_of_build(cls, b, rot) == rot}   # played with this rotation
+            missing = [x for x in users if x["build"]["id"] not in in_rep]
+        else:
+            missing = users
+        if missing:
+            o += ["Casts per kill of " + ", ".join(label_md(cls, x["build"]["id"], page) for x in missing)
+                  + ": not recorded (" + ("its times per kill come from the race records of the search that found it"
+                                          if len(missing) == 1 else "their times per kill come from the race records of the searches that found them")
+                  + ", which keep times only; the table above has them).", ""]
+    for p, r in reports:
+        if p in done:
+            continue
+        spec = r["spec"]
+        aoe = p.stem.endswith("-aoe")
+        o += [f"## {spec}" + (" in pulls of several mobs" if aoe else "") + (" (research)" if f"## {spec}" in o else ""), "",
+              fl_description(cls, spec, aoe), ""]
+        if fl_tuning_text(cls, spec):
+            o += [fl_tuning_text(cls, spec), ""]
+        o += report_section(p, r, aoe)
     return "\n".join(o).rstrip("\n") + "\n"
 
 

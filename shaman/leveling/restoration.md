@@ -4,38 +4,37 @@
 
 **[Restoration — Leveling into the raid build](../research/leveling/builds/restoration-leveling.md)** (0/10/41) — [open the talent tree](https://talentsforever.com/shaman/60/-055-0530503315513151-6)
 
-> 🔬 These are your **raid talents** ([resto-raid-healer](../raid/restoration.md)), taken in the order that levels fastest: the fight lab raced three orders to them (stats model's order: 43 s per kill; own tree last: 44 s per kill; own tree first: 44 s per kill). A model of the beta, to check at launch.
+> 🔬 These are your **raid talents** ([Restoration — Raid Healer](../raid/restoration.md)), taken in the order that levels fastest: the fight lab raced three orders to them (stats model's order: 45 s per kill; own tree last: 45 s per kill; own tree first: 46 s per kill). A model of the beta, to check at launch.
 
-**Leveling as Restoration or as Enhancement?** This build takes 43 s per kill (level-weighted, 20-60), [Enhancement](../leveling/enhancement.md) 32 s: Restoration is 36% slower. Your first Restoration point comes at level 10. Level this way if you want to heal dungeons later on the way; otherwise level as Enhancement and switch at 60 (a respec at a class trainer).
+**Leveling as Restoration or as Enhancement?** This build takes 45 s per kill (level-weighted, 20-60), [Enhancement](../leveling/enhancement.md) 32 s: Restoration is 42% slower. Your first Restoration point comes at level 10. Level this way if you want to heal dungeons later on the way; otherwise level as Enhancement and switch at 60 (a respec at a class trainer).
 
 ## How to play
 
-**Not in this build:** **Rage of the Farseer**, **Stormstrike** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+**Not in this build:** **Maelstrom Weapon**, **Rage of the Farseer**, **Stormstrike** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
 
 **Before the fight:** **Lightning Shield** up, **Rockbiter Weapon** on your weapon (**Windfury Weapon** from 30), a slow two-handed weapon. Walk in without an opening **Lightning Bolt** (its mana costs more drinking than it saves) and drop **Searing Totem** as you pull while you have more than half your mana.
 
 **In the fight**, top to bottom:
 
 1. **Rage of the Farseer** at the start of a fight whenever it is ready.
-2. With 5 stacks of **Maelstrom Weapon**: an instant **Lightning Bolt**, once the mob is under 35% health (not on a mob one swing from dying).
-3. **Stormstrike** whenever it is ready.
-4. **Earth Shock** to finish the mob once it is under 20% health.
-5. **Flame Shock** while it is not on the mob, you have more than half your mana and the mob more than 40% health.
-6. Low on health at any point: under 30% drop **Stoneclaw Totem**, under 40% cast **Lesser Healing Wave**.
+2. **Earth Shock** a caster mob's spell: it interrupts and brings the mob to you.
+3. With 5 stacks of **Maelstrom Weapon**: an instant **Lightning Bolt**, once the mob is under 35% health (not on a mob one bolt would overkill).
+4. **Stormstrike** whenever it is ready.
+5. **Earth Shock** whenever the shock cooldown is free: it takes **Stormstrike**'s 20%. It shares that cooldown with **Flame Shock**, which the fight lab therefore never casts on one mob.
+6. Low on health at any point: under 30% drop **Stoneclaw Totem** (or **Nature's Swiftness** and **Healing Wave** if you have it), under 40% cast **Lesser Healing Wave**.
 
-**Between fights:** Heal back to 80% health with **Lesser Healing Wave** (**Healing Wave** for a big gap), drink below a third of your mana.
+**Between fights:** Heal back to 80% health with **Lesser Healing Wave** (**Healing Wave** for a big gap), drink below 15% of your mana.
 
 ## Why this rotation
 
-You level with the raid healer's talents in the fastest order and play a simple melee shaman: a weapon imbue, a shield, **Searing Totem** at each pull, **Flame Shock** while mana allows and **Earth Shock** to finish. It is about a third slower than leveling as Enhancement (43 against 33 seconds per kill in the fight lab): the price of arriving at 60 ready to heal.
+You level with the raid healer's talents in the fastest order and play a simple melee shaman: a weapon imbue, a shield, **Searing Totem** at each pull and **Earth Shock** whenever the shock cooldown is free. It is about a third slower than leveling as Enhancement (43 against 32 seconds per kill in the fight lab): the price of arriving at 60 ready to heal.
 
 **Why it works**
 
-- This build has no **Stormstrike**, **Maelstrom Weapon** or **Rage of the Farseer**: skip what uses them, but keep **Earth Shock** as your finisher. In the fight lab it casts no **Lightning Bolt** at all: there is no opening bolt, and without Maelstrom Weapon no instant one.
-- The fight lab plays this list with two mana rules: **Lightning Bolt** only once the mob is under 35% health and **Earth Shock** only under 20%. Spells cost drinking time; for Enhancement the two rules measured about 9% faster per kill.
+- This build has no **Stormstrike**, **Maelstrom Weapon** or **Rage of the Farseer**: skip what uses them. In the fight lab it casts no **Lightning Bolt** at all: the tuned rule allows a bolt only once the mob is under 35% health, and without Maelstrom Weapon there is no instant one.
+- **Earth Shock** takes every free shock (it shares the cooldown with **Flame Shock**, which the list therefore never reaches on one mob), and it interrupts a caster mob.
 - Your damage is your weapon: **Rockbiter Weapon** until 30, then **Windfury Weapon**, on a slow two-hander, and **Lightning Shield** strikes back each time a mob hits you. From 28 you also have **Water Shield**: when your shield is gone and you are under 60% mana, the fight lab puts up Water Shield instead (only one shield can be up).
 - Drop **Searing Totem** at each pull while you have more than half your mana; **Totemic Focus**, your first five points, makes it a quarter cheaper.
-- **Flame Shock** only while you are above about half mana and the mob above 40% health: a burn on a dying mob is wasted.
 - Low on health: **Stoneclaw Totem** taunts the mob onto itself for a few hits, then **Lesser Healing Wave**. From 40, **Nature's Swiftness** makes a **Healing Wave** instant when you drop under 30%.
 
 **Caveats**
@@ -47,8 +46,6 @@ You level with the raid healer's talents in the fastest order and play a simple 
 
 - A caster mob that stays back: **Earth Shock** interrupts it and locks that school for 2 seconds, which brings it to you.
 - A mob that flees at low health: **Earth Shock** finishes it, or **Frost Shock** slows it by 50% (both share the shock cooldown).
-
-*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 
@@ -78,11 +75,11 @@ One point per level from 10, in this order:
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
-| 20 | 25 |
-| 30 | 33 |
-| 40 | 42 |
-| 50 | 47 |
-| 60 | 52 |
+| 20 | 27 |
+| 30 | 36 |
+| 40 | 44 |
+| 50 | 48 |
+| 60 | 54 |
 
 ---
 *Generated by `_reference/data/render_modes.py` on 2026-10-15 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*

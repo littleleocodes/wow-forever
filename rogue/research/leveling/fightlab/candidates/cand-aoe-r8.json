@@ -1,0 +1,264 @@
+{
+ "id": "cand-aoe-r8",
+ "allocation": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Remorseless Attacks",
+    2
+   ],
+   [
+    "Improved Gouge",
+    1
+   ],
+   [
+    "Murder",
+    2
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ]
+  ],
+  "Combat": [
+   [
+    "Lightning Reflexes",
+    2
+   ],
+   [
+    "Improved Sinister Strike",
+    2
+   ],
+   [
+    "Improved Eviscerate",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Deflection",
+    3
+   ],
+   [
+    "Endurance",
+    2
+   ],
+   [
+    "Riposte",
+    1
+   ],
+   [
+    "Flawless Execution",
+    1
+   ],
+   [
+    "Dual Wield Specialization",
+    5
+   ],
+   [
+    "Blade Flurry",
+    1
+   ],
+   [
+    "Hack and Slash",
+    3
+   ],
+   [
+    "Weapon Expertise",
+    2
+   ],
+   [
+    "Aggression",
+    3
+   ],
+   [
+    "Adrenaline Rush",
+    1
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Master of Deception",
+    3
+   ],
+   [
+    "Opportunity",
+    2
+   ],
+   [
+    "Setup",
+    3
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10",
+   "tree": "Combat",
+   "talent": "Lightning Reflexes",
+   "points": 1
+  },
+  {
+   "levels": "11-12",
+   "tree": "Combat",
+   "talent": "Improved Sinister Strike",
+   "points": 2
+  },
+  {
+   "levels": "13",
+   "tree": "Combat",
+   "talent": "Lightning Reflexes",
+   "points": 1
+  },
+  {
+   "levels": "14",
+   "tree": "Combat",
+   "talent": "Improved Eviscerate",
+   "points": 1
+  },
+  {
+   "levels": "15-17",
+   "tree": "Combat",
+   "talent": "Precision",
+   "points": 3
+  },
+  {
+   "levels": "18",
+   "tree": "Combat",
+   "talent": "Deflection",
+   "points": 1
+  },
+  {
+   "levels": "19-20",
+   "tree": "Combat",
+   "talent": "Improved Eviscerate",
+   "points": 2
+  },
+  {
+   "levels": "21-22",
+   "tree": "Combat",
+   "talent": "Endurance",
+   "points": 2
+  },
+  {
+   "levels": "23-24",
+   "tree": "Combat",
+   "talent": "Deflection",
+   "points": 2
+  },
+  {
+   "levels": "25",
+   "tree": "Combat",
+   "talent": "Flawless Execution",
+   "points": 1
+  },
+  {
+   "levels": "26",
+   "tree": "Combat",
+   "talent": "Riposte",
+   "points": 1
+  },
+  {
+   "levels": "27-29",
+   "tree": "Combat",
+   "talent": "Dual Wield Specialization",
+   "points": 3
+  },
+  {
+   "levels": "30",
+   "tree": "Combat",
+   "talent": "Blade Flurry",
+   "points": 1
+  },
+  {
+   "levels": "31-33",
+   "tree": "Subtlety",
+   "talent": "Master of Deception",
+   "points": 3
+  },
+  {
+   "levels": "34-35",
+   "tree": "Subtlety",
+   "talent": "Opportunity",
+   "points": 2
+  },
+  {
+   "levels": "36-38",
+   "tree": "Subtlety",
+   "talent": "Setup",
+   "points": 3
+  },
+  {
+   "levels": "39-40",
+   "tree": "Combat",
+   "talent": "Dual Wield Specialization",
+   "points": 2
+  },
+  {
+   "levels": "41-42",
+   "tree": "Combat",
+   "talent": "Hack and Slash",
+   "points": 2
+  },
+  {
+   "levels": "43-44",
+   "tree": "Combat",
+   "talent": "Weapon Expertise",
+   "points": 2
+  },
+  {
+   "levels": "45-49",
+   "tree": "Assassination",
+   "talent": "Malice",
+   "points": 5
+  },
+  {
+   "levels": "50-51",
+   "tree": "Assassination",
+   "talent": "Murder",
+   "points": 2
+  },
+  {
+   "levels": "52-53",
+   "tree": "Assassination",
+   "talent": "Remorseless Attacks",
+   "points": 2
+  },
+  {
+   "levels": "54",
+   "tree": "Assassination",
+   "talent": "Improved Gouge",
+   "points": 1
+  },
+  {
+   "levels": "55",
+   "tree": "Assassination",
+   "talent": "Relentless Strikes",
+   "points": 1
+  },
+  {
+   "levels": "56-58",
+   "tree": "Combat",
+   "talent": "Aggression",
+   "points": 3
+  },
+  {
+   "levels": "59",
+   "tree": "Combat",
+   "talent": "Adrenaline Rush",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Combat",
+   "talent": "Hack and Slash",
+   "points": 1
+  }
+ ],
+ "note": "Optimizer build saved by rebuild.py on 2026-10-15 (calibration round 8)"
+}

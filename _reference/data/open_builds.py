@@ -117,7 +117,10 @@ def raid_spec(cls, entry, alloc, data):
 def family_text(cls, spec):
     """'Beast-Survival (a Beast Mastery/Survival hybrid)' or the tree name."""
     name = SM.spec_name(cls, spec)
-    return f"{name} (a {spec.split(' ', 1)[1]} hybrid)" if spec.startswith("Hybrid") else name
+    if not spec.startswith("Hybrid"):
+        return name
+    pair = spec.split(' ', 1)[1]
+    return f"{name} ({'an' if pair[0] in 'AEIOU' else 'a'} {pair} hybrid)"   # 2026-10-15 page audit B17: "a Affliction/Destruction"
 
 
 # ------------------------------------------------------------------------------------------------ raid

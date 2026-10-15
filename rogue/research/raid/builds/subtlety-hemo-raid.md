@@ -83,7 +83,7 @@ Subtlety to Hemorrhage and the Forever talents Quietus (+10% on targets under 35
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | **[`subtlety-hemo-raid`](subtlety-hemo-raid.md)** | ours: hand draft | 20/0/31 | 399 | +0.0% | 673 | -0.4% | 0 s |
-| 2 | [`subtlety-open-raid`](subtlety-open-raid.md) | ours: hand draft | 20/0/31 | 374 | -6.3% | 676 | +0.0% | 0 s |
+| 2 | [`subtlety-open-raid`](subtlety-open-raid.md) | ours: derived (open search) | 20/0/31 | 374 | -6.3% | 676 | +0.0% | 0 s |
 | 3 | *Subtlety Hemo 15/0/36* | community simulator | - | 356 | -10.6% | 632 | -6.5% | 0 s |
 
 ## Rotation (community simulator, training dummy)
@@ -124,7 +124,7 @@ Subtlety to Hemorrhage and the Forever talents Quietus (+10% on targets under 35
 |---|---|---|
 | 1 | if time left on Expose Armor < 5 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 2.0 |
 | 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 160s: cast Slice and Dice | 0.7 |
-| 3 | if energy ≥ 30 and combo points ≤ 1 and Slice and Dice is up and time left in the fight > 10: cast Vanish | 0.7 |
+| 3 | if energy ≥ 30 and combo points ≤ 1 and Slice and Dice is up and time left in the fight > 10: cast Vanish (rank 1) | 0.7 |
 | 4 | cast Premeditation | 0.7 |
 | 5 | cast Garrote | 0.7 |
 | 6 | if not Rupture is on the target and time left in the fight > 12: cast Rupture | 4.1 |

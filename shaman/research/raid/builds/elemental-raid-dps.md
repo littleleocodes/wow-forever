@@ -1,4 +1,4 @@
-# Elemental — Lava Burst / Lightning Overload (simulator winner adopted 2026-09-26) — 29/22/0
+# Elemental — Lightning Overload / Elemental Fury (simulator winner adopted 2026-09-26) — 29/22/0
 
 *[Shaman](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
@@ -77,7 +77,7 @@ Allocation adopted on 2026-09-26 from `cand-elemental-dps-r1`, the best build in
 |---|---|---|---|---|---|---|---|---|
 | 1 | **[`elemental-raid-dps`](elemental-raid-dps.md)** | ours: hand draft | 29/22/0 | 375 | +0.0% | 515 | +0.0% | 0 s |
 | 2 | [`opt-elemental-dps-raid-dps`](opt-elemental-dps-raid-dps.md) | ours: optimizer | 31/7/13 | 357 | -4.8% | 508 | -1.4% | 0 s |
-| 3 | [`elemental-raid`](elemental-raid.md) | ours: hand draft | 31/7/13 | 357 | -4.8% | 508 | -1.4% | 0 s |
+| 3 | [`elemental-raid`](elemental-raid.md) | ours: generated | 31/7/13 | 357 | -4.8% | 508 | -1.4% | 0 s |
 | 4 | *Elemental 31/6/14* | community simulator | - | 334 | -11.0% | 500 | -2.9% | 0 s |
 | 5 | *Level 60* | community simulator | - | 332 | -11.5% | 485 | -5.8% | 0 s |
 | 6 | *Stormcaller 28/23/0* | community simulator | - | 304 | -19.1% | 477 | -7.5% | 0 s |
@@ -103,8 +103,8 @@ Before the pull: at -2s: cast Lightning Bolt.
 | 2 | use every other cooldown when ready | as ready |
 | 3 | if not Flame Shock is on the target: cast Flame Shock | 5.1 |
 | 4 | if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning | 2.4 |
-| 5 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt | 23.3 |
-| 6 | cast Lightning Bolt | 0.6 |
+| 5 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt (rank 7) | 23.3 |
+| 6 | cast Lightning Bolt (rank 2) | 0.6 |
 
 Lines of the simulator's rotation these builds never cast: cast Magma Totem (its condition never held in these fights); cast Lava Burst (needs the Lava Burst talent).
 
@@ -125,6 +125,7 @@ Damage by ability:
 - Beta client: Tidal Mastery moved to Restoration tier 4 and Totemic Focus to tier 1, so the 20 Restoration points are now Totemic Focus 5, Mindfulness 3, Tidal Focus 5, Natural Grace 1, Water Shield 1, Restorative Totems 4, Mana Tide Totem 1 (Restorative Totems replaces Tidal Mastery as the filler).
 - 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Elemental Weapons -> Anticipation (survival); Guardian Totems -> Anticipation (survival); Guardian Totems -> Anticipation (survival); Improved Lightning Shield -> Toughness (survival); Improved Lightning Shield -> Toughness (survival); Improved Lightning Shield -> Toughness (survival). Net +0.00% on a third seed.
 - 2026-10-02 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Stormstrike was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Reverberation -> Eye of the Storm (interrupt); Reverberation -> Eye of the Storm (interrupt); Stormstrike -> Toughness (survival). Net -0.13% on a third seed.
+- 2026-10-15 (page audit C4): `spec: Elemental`: 29 Elemental points make it a hybrid by the point rule, but it is a Lightning Bolt caster played with Elemental's rotation (the elemental-dps entry), and in a full raid it is ahead of the 31/7/13 Elemental builds (515 against 508 DPS, the 2026-10-15 race-neutral environments run, commit 2ce8265).
 
 ## Open questions (verify in the live game)
 

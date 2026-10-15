@@ -8,7 +8,7 @@
 
 ## How to play
 
-**Then press the first one that is ready**, top to bottom:
+**Press the first one that is ready**, top to bottom:
 
 1. **Arcane Missiles** when Missile Barrage is active
 2. **Fire Blast** until the last 40 seconds of the fight

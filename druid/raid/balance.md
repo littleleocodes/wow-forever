@@ -2,7 +2,7 @@
 
 [Druid](../README.md) > [Raid (group)](README.md) > Balance
 
-**[Balance — Moonkin / Eclipse](../research/raid/builds/balance-moonkin-raid.md)** (33/5/13) — [open the talent tree](https://talentsforever.com/druid/60/0532220115501051-05-505003-6)
+**[Balance — Moonkin / Nature's Grace](../research/raid/builds/balance-moonkin-raid.md)** (33/5/13) — [open the talent tree](https://talentsforever.com/druid/60/0532220115501051-05-505003-6)
 
 ## How to play
 

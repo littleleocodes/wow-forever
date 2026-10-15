@@ -287,6 +287,18 @@ def moves_text(al):
 
 def verdict(r):
     """(write, why): the full-raid winner is written only GAIN_NEW or more ahead of every other build of its full-raid comparison race."""
+    if r["spec"].startswith("Hybrid"):
+        # 2026-10-15 page audit: the Assassination/Combat hybrid's search reached 30/19/2, the Assassination ML build with two free points
+        # moved, and replaced the genuine split. A hybrid's winner with 30 points in one tree belongs to that tree's search.
+        # The same day the BM/MM hybrid's 7/39/5 replaced the 27/21/3 split. A hybrid's winner with 30 points in the tree its entry's
+        # rotation is built for is that tree's build in that tree's rotation: that tree's search covers it.
+        s = r["search"]["bis-raid"]
+        alloc = s["winner"]["allocation"]
+        own = SM.RAID_ENTRY_TREES.get((r["class"], s.get("entry")), set())
+        deep = [t for t, v in alloc.items() if sum(r_ for _, r_ in v) >= 30 and t in own]
+        if deep:
+            return False, (f"the winner ({'/'.join(str(sum(r_ for _, r_ in v)) for v in alloc.values())}) has 30 points in {deep[0]}, "
+                           f"the tree of its rotation ({s.get('entry')}): not a split")
     c = r["compare_raid"]["dps"]
     w = c["winner"]["dps"]
     others = {k: v["dps"] for k, v in c.items() if k != "winner" and v.get("dps")}

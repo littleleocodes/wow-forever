@@ -108,8 +108,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
 | 5 | if stacks of Heating Up = 3: cast Pyroblast | 1.5 |
 | 6 | cast Fire Blast | 7.0 |
 | 7 | if mana % ≥ 10%: cast Fireball | 9.5 |
-| 8 | if time left in the fight ≥ 3s: cast Fireball | 5.4 |
-| 9 | cast Scorch | 0.2 |
+| 8 | if time left in the fight ≥ 3s: cast Fireball (rank 2) | 5.4 |
+| 9 | cast Scorch (rank 1) | 0.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Arcane Missiles (its condition never held in these fights).
 

@@ -1,4 +1,4 @@
-# WoW: Forever — what we know (as of 2026-09-25)
+# WoW: Forever — what we know (as of 2026-09-25; beta builds and talent counts updated 2026-10-15)
 
 > Sources: the BlizzCon 2026 reveal and demo, Blizzard's beta announcement and beta development notes
 > (2026-09-17 and 2026-09-24), and beta-client datamines (warcraftforever.games, talentsforever.com, thewowdb.com,
@@ -12,12 +12,12 @@
 | **What** | World of Warcraft: Forever — Blizzard's "Classic+" evolution of vanilla WoW |
 | **Launch** | November 4, 2026 |
 | **Beta** | Opened 2026-09-17, last full day 2026-10-21. Level cap **20** at the start, raised to **30** "after a couple of weeks" (not yet announced as of 2026-09-25); no level 31-60 or raid testing in the beta. A "Server Slam" with broader access is planned. Beta characters are wiped at launch. |
-| **Beta builds** | 1.60.1.69876 and 69893 (2026-09-17), 69913 (2026-09-18), 69977 (2026-09-22), **70009 (2026-09-24, first class tuning)** |
+| **Beta builds** | 1.60.1.69876 and 69893 (2026-09-17), 69913 (2026-09-18), 69977 (2026-09-22), 70009 (2026-09-24, first class tuning), 70170 (read 2026-10-03, with the warrior hotfixes of 1-2 October), 70205 (the simulator's build of 2026-10-03), **70291 (2026-10-08; the project's data since then, `_reference/data/data_build.py`)** |
 | **Level cap (launch)** | 60 (dungeons scale 13–60; 51 talent points, i.e. level 10–60) |
 | **Classes** | The 9 Classic classes: Druid, Hunter, Mage, Paladin, Priest, Rogue, Shaman, Warlock, Warrior — no new class |
 | **New race** | Skyborne (both factions): Warrior, Hunter, Rogue, Druid, Shaman (Horde), Mage (Alliance) |
 | **New race/class combos** | Dwarf Shaman, Human Hunter, Undead Paladin, Gnome Priest, Orc Mage, Troll Warlock (16 new combos in total per the datamine) |
-| **Talents** | Classic-style 3 trees × 7 tiers, 51 points; gold-medal 1-point talents at 11/21/31 **plus a new one at 16**; **467 talents** in build 70009 (469 at BlizzCon): the beta client stores them in retail-style Trait tables, the talent panel has Primary and Secondary tabs (unexplained; likely dual spec), and no talent has four ranks any more |
+| **Talents** | Classic-style 3 trees × 7 tiers, 51 points; gold-medal 1-point talents at 11/21/31 **plus a new one at 16**; **466 talents** in build 70291 (467 in 70009, 469 at BlizzCon): the beta client stores them in retail-style Trait tables, the talent panel has Primary and Secondary tabs (unexplained; likely dual spec), and no talent has four ranks any more |
 | **Legacy system** | Account-wide Legacy Points from challenges (65 earnable at launch, 16 spendable per character, each character spends its own copy) in three perk trees — Adventures, Professions, Resourcefulness (rested-XP, stealth detection, profession perks; no combat talents) — plus a cosmetic progress track |
 | **Raids** | The Barrow Deeps (10-man), Hyjal Summit (20-man) |
 | **Zones** | Mount Hyjal, Zephras Isle, Riverglades |
@@ -85,7 +85,21 @@
   Chain Lightning in 2s; Aimed Shot is baseline with a 2s cast and +166 at 60; Multi-Shot is a single rank; Holy Strike
   has 8 ranks from level 6; Seal of Fury 7 ranks; Lava Burst, Incinerate, Penance, Riptide, Mutilate and Primal Bite have
   level-40/50/60 ranks; Divine Spirit and Shadow Word: Death are trained; Blessing of Sanctuary, Curse of Shadow, Dark
-  Pact, Fire Nova Totem and cat Mangle are gone. Per class: `<class>/spells/README.md`.
+  Pact, Fire Nova Totem and cat Mangle are gone. Per class: `<class>/research/spells/README.md`.
+
+## Changes after build 70009 (2026-10-01 to 2026-10-08)
+
+Collected from the refreshes and the 2026-10-09 audit (details and sources: `_reference/data/forever-talents/README.md`,
+`_reference/data/raidsim/patches/README.md`, CLAUDE.md "Beta build 70170/70205" and "Audit of 2026-10-09").
+
+- **70170** (2026-10-03): warrior Fury rework (the 1-2 October hotfixes); Hot Streak became **Heating Up**; King of the Jungle and
+  Toughness removed. **70205**: Lightning Reflexes 2% Agility a rank.
+- **70291** (2026-10-08): Impale needs 3 points in Deep Wounds; Predatory Instincts became Natural Instinct (Intellect to healing);
+  Penance much weaker; Water Shield has no cooldown; Reckoning a 1.5 s limit; Expose Prey 10 s; spell ranks rescaled.
+- **Beta notes**: critical strikes give 100% more rage (warriors 2026-10-02, druids 2026-10-08); Bear Form threat bonus 50% (was 30%);
+  rage from damage taken uses an expected creature's health (2026-10-08); low spell ranks get less from spell power (2026-10-01, no
+  formula published); queued Heroic Strike no longer raises off-hand hit (2026-10-01).
+- **Pets** scale from their summoner's stats (Rogue and Warlock deep dive, 2026-10-07); the client's UI gives the shares (build 70291).
 
 ## Class-level changes called out at the reveal (still true in the beta)
 
@@ -104,17 +118,17 @@
 - **Warrior:** Bloodthrill, Weaponmaster (replaces the four weapon specializations), Vanguard (Charge in Defensive Stance),
   Master of Defense, Bastion, Boundless Rage, Raging Blows, Precision; Tactical Mastery is a baseline passive (Improved Tactical Mastery talent instead).
 
-Per-class detail, tier by tier: `<class>/talents/forever/talent-trees.md`; what each beta build changed:
+Per-class detail, tier by tier: `<class>/research/talents/forever/talent-trees.md`; what each beta build changed:
 `_reference/data/forever-talents/README.md`.
 
-## New-talent count per class (beta client 1.60.1.70009 vs Classic Era)
+## New-talent count per class (beta client 1.60.1.70291 vs Classic Era)
 
 | Class | New | Removed | Class | New | Removed |
 |---|---|---|---|---|---|
-| Warlock | 23 | 21 | Priest | 14 | 8 |
+| Warlock | 22 | 20 | Priest | 14 | 8 |
 | Paladin | 19 | 13 | Warrior | 11 | 10 |
 | Hunter | 18 | 14 | Mage | 11 | 6 |
-| Druid | 17 | 13 | Rogue | 10 | 8 |
+| Druid | 18 | 13 | Rogue | 10 | 8 |
 | Shaman | 17 | 13 | | | |
 
 Warlock, Paladin, Hunter, Druid and Shaman change the most — their Classic baselines need the heaviest rework.

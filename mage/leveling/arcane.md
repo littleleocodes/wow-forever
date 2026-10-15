@@ -8,7 +8,7 @@
 
 ## How to play
 
-**Not in this build:** **Arcane Blast**, **Arcane Power** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+**Not in this build:** **Arcane Blast**, **Arcane Power**, **Missile Barrage** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
 
 **Before the fight:** **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up. Pull from as far away as you can; **Presence of Mind** at the pull, and **Arcane Power** too while you have more than half your mana.
 
@@ -36,7 +36,7 @@ Arcane levels on **Arcane Missiles** from range and the Frost tree's freeze up c
 
 **Caveats**
 
-- The fight lab's search for this spec also started from an **Arcane Blast** build and kept the build without it (about 29 against 31 seconds per kill at level 60). Skip the list's **Arcane Blast**, **Missile Barrage** and **Arcane Power** parts unless you take those talents.
+- The fight lab's search for this spec also started from an **Arcane Blast** build and kept the build without it. Skip the list's **Arcane Blast**, **Missile Barrage** and **Arcane Power** parts unless you take those talents.
 - **Arcane Missiles** is expensive: drink below a third of your mana and use **Evocation** between fights when it is ready.
 - Pulls of several mobs: **Arcane Explosion** hits everything within 10 yards.
 

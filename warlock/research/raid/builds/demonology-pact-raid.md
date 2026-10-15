@@ -79,7 +79,7 @@ Demonology to Demonic Pact, a Forever talent that keeps Demonic Sacrifice's effe
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | **[`demonology-pact-raid`](demonology-pact-raid.md)** | ours: hand draft | 2/31/18 | 702 | +0.0% | 816 | -0.8% | 2 s |
-| 2 | [`demonology-ml-raid`](demonology-ml-raid.md) | ours: hand draft | 2/31/18 | 700 | -0.2% | 822 | +0.0% | 2 s |
+| 2 | [`demonology-ml-raid`](demonology-ml-raid.md) | ours: derived (ML search) | 2/31/18 | 700 | -0.2% | 822 | +0.0% | 2 s |
 | 3 | *Demonic Pact 2/31/18* | community simulator | - | 678 | -3.4% | 788 | -4.1% | 2 s |
 | 4 | *Demonic Pact* | community simulator | - | 670 | -4.6% | 778 | -5.3% | 1 s |
 

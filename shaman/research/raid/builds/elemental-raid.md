@@ -63,7 +63,7 @@ The best Elemental raid build with at least 30 points in Elemental, generated on
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`elemental-raid-dps`](elemental-raid-dps.md) | ours: hand draft | 29/22/0 | 375 | +0.0% | 515 | +0.0% | 0 s |
 | 2 | [`opt-elemental-dps-raid-dps`](opt-elemental-dps-raid-dps.md) | ours: optimizer | 31/7/13 | 357 | -4.8% | 508 | -1.4% | 0 s |
-| 3 | **[`elemental-raid`](elemental-raid.md)** | ours: hand draft | 31/7/13 | 357 | -4.8% | 508 | -1.4% | 0 s |
+| 3 | **[`elemental-raid`](elemental-raid.md)** | ours: generated | 31/7/13 | 357 | -4.8% | 508 | -1.4% | 0 s |
 | 4 | *Elemental 31/6/14* | community simulator | - | 334 | -11.0% | 500 | -2.9% | 0 s |
 | 5 | *Level 60* | community simulator | - | 332 | -11.5% | 485 | -5.8% | 0 s |
 | 6 | *Stormcaller 28/23/0* | community simulator | - | 304 | -19.1% | 477 | -7.5% | 0 s |
@@ -90,8 +90,8 @@ Before the pull: at -2s: cast Lightning Bolt.
 | 3 | if not Flame Shock is on the target: cast Flame Shock | 4.9 |
 | 4 | cast Lava Burst | 4.7 |
 | 5 | if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning | 2.3 |
-| 6 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt | 14.6 |
-| 7 | cast Lightning Bolt | 6.4 |
+| 6 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt (rank 7) | 14.6 |
+| 7 | cast Lightning Bolt (rank 2) | 6.4 |
 
 Lines of the simulator's rotation these builds never cast: cast Magma Totem (its condition never held in these fights).
 

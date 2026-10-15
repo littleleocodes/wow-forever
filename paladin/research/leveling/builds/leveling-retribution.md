@@ -81,7 +81,7 @@ Allocation and order adopted on 2026-09-26 from `cand-ret-r5`, the fastest build
 ## Core talents (priority order)
 
 1. **Holy Conduit** — Fight lab (2026-09-26): removing it costs +8% time per kill at 60, +9% at 30.
-2. **Sanctified Judgement** — Mana back on Judgements (est. 99% chance for 20%); Vengeance prerequisite. Fight lab (2026-09-26): removing it costs +6% time per kill at 60, +12% at 30.
+2. **Sanctified Judgement** — Mana back on Judgements (60% of the seal's cost at 3/3, 70291 tooltip); Vengeance prerequisite. Fight lab (2026-09-26): removing it costs +6% time per kill at 60, +12% at 30.
 3. **Improved Seals** — New Holy tier-2 talent: +5%/rank (est. 15%) Seal and Judgement damage — the biggest multiplier available in the 20s, which is why Holy is dipped early. Fight lab (2026-09-26): removing it costs +4% time per kill at 60.
 4. **Conviction** — +5% melee crit. Fight lab (2026-09-26): removing it costs +3% time per kill at 60, +3% at 30.
 5. **Champion of the Light** — Fight lab (2026-09-26): removing it costs +3% time per kill at 60.

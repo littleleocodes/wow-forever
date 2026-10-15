@@ -37,7 +37,7 @@ Subtlety levels on its openers and on dodges: **Premeditation** and a stealth op
 - This build has no **Hemorrhage**, so **Sinister Strike** builds your points all the way (40 energy with **Improved Sinister Strike**). **Ghostly Strike** goes in on its 20-second cooldown once you have it: 180% weapon damage with a dagger and 15% more dodge for 7 seconds.
 - With **Setup**, every dodge adds a combo point, so **Ghostly Strike**, **Lightning Reflexes** and **Evasion** also build points.
 - At 5 points, wait for the energy for **Eviscerate** rather than press a builder whose point would be lost. Cast **Eviscerate** earlier when it would kill the mob: points left on a dead mob are lost.
-- Skip **Slice and Dice**: the fight lab measured leveling without it about 3% faster per kill. **Kidney Shot** is not measured fairly yet: keep it for a pull that goes wrong.
+- Skip **Slice and Dice**: the fight lab measured leveling without it about 3% faster per kill. **Kidney Shot** is not in the list: the tuned rules never cast it (about 1.3% faster per kill). Keep it for an add or a pull that goes wrong.
 
 **Caveats**
 

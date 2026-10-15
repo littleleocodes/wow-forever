@@ -2,11 +2,11 @@
 
 [Druid](../README.md) > [Leveling (solo)](README.md) > Restoration
 
-**[Restoration — Leveling into the raid build](../research/leveling/builds/restoration-leveling.md)** (11/5/35) — [open the talent tree](https://talentsforever.com/druid/60/05302001-05-5050035153113021-6)
+**[Restoration — Leveling into the raid build](../research/leveling/builds/restoration-leveling.md)** (11/5/35) — [open the talent tree](https://talentsforever.com/druid/60/05122001-05-232033505310305-6)
 
-> 🔬 These are your **raid talents** ([resto-raid-healer](../raid/restoration.md)), taken in the order that levels fastest: the fight lab raced three orders to them (stats model's order: 33 s per kill; own tree last: 33 s per kill; own tree first: 33 s per kill). A model of the beta, to check at launch.
+> 🔬 These are your **raid talents** ([Restoration — Raid healing](../raid/restoration.md)), taken in the order that levels fastest: the fight lab raced three orders to them (stats model's order: 36 s per kill; own tree last: 36 s per kill; own tree first: 37 s per kill). A model of the beta, to check at launch.
 
-**Leveling as Restoration or as Feral Combat?** This build takes 33 s per kill (level-weighted, 20-60), [Feral Combat](../leveling/feral-combat.md) 28 s: Restoration is 18% slower. Your first Restoration point comes at level 10. Level this way if you want to heal dungeons later on the way; otherwise level as Feral Combat and switch at 60 (a respec at a class trainer).
+**Leveling as Restoration or as Feral Combat?** This build takes 36 s per kill (level-weighted, 20-60), [Feral Combat](../leveling/feral-combat.md) 29 s: Restoration is 25% slower. Your first Restoration point comes at level 18. Level this way if you want to heal dungeons later on the way; otherwise level as Feral Combat and switch at 60 (a respec at a class trainer).
 
 ## How to play
 
@@ -29,28 +29,26 @@
 
 ## Why this rotation
 
-You level as a cat with your healer's talents: the Feral Combat steps, about a fifth slower per kill. Your Restoration points make your heals stronger, not your claws.
+You level as a cat with your healer's talents: the Feral Combat steps, slower per kill than the Feral Combat build (the comparison above). Your points make your heals and shifts cheaper and stronger more than your claws.
 
 **Why it works**
 
-- Levels 10-19 are the bear steps (**Enrage**, **Demoralizing Roar**, **Maul**). Your first points, **Nature's Focus** and **Naturalist**, do little there beyond **Naturalist**'s 5% more damage.
-- From 20 the cat steps follow the Feral Combat page: open from **Prowl** (**Ravage** from 32, **Shred** from 22, **Claw** before), then **Rake**, **Claw** to 5 points, **Ferocious Bite** when it will kill and **Rip** on a mob above half health (before 32, **Rip** at 2 points while the mob has more than 40% of its health: 6-7% faster per kill for this build in the fight lab). The mob faces you, so **Shred** is for the opener only.
-- Few of your points add damage: **Naturalist** (+5%), **Genesis** (+5% to **Rake** and **Rip** ticks), **Nature's Majesty** (+4% critical strike chance) and **Heart of the Wild** (+10% Strength in **Cat Form**), all in by 31. Without **Ferocity**, **Claw** and **Rake** cost their full 45 and 40 energy.
-- The rest makes healing strong and cheap: **Reflection** keeps half your mana regeneration going while you cast, **Gift of Nature** and **Improved Rejuvenation** make the between-fight **Rejuvenation** and **Regrowth** heal more, and **Nature's Swiftness** (57) makes one **Healing Touch** instant when a fight goes wrong.
+- Levels 10-19 are the bear steps (**Enrage**, **Demoralizing Roar**, **Maul**). Your first points go to **Genesis** (10-14) and **Improved Moonfire**, which do almost nothing for a bear or a cat beyond **Genesis**'s 5% more periodic damage on **Rake** and **Rip**.
+- From 20 the cat steps follow the Feral Combat page: open from **Prowl** (**Ravage** from 32, **Shred** from 22, **Claw** before), then **Rake**, **Claw** to 5 points, **Ferocious Bite** when it will kill and **Rip** on a mob above half health (before 32, **Rip** at 2 points while the mob has more than 40% of its health). The mob faces you, so **Shred** is for the opener only. This build has no **Berserk**: skip that step.
+- The points that add damage: **Nature's Majesty** (+4% critical strike chance, by 19), **Naturalist** (+2% damage at 24-25) and **Heart of the Wild** (+10% Strength in **Cat Form**, 29-33). Without **Ferocity**, **Claw** and **Rake** cost their full energy.
+- **Furor** (21-23, 3 points) gives back 60% of your energy when you shift back into **Cat Form**, plus 6 a second spent out of form, and **Natural Shapeshifter** (26-28) makes each shift 30% cheaper: a **Regrowth** in the middle of a fight costs you less.
+- The rest is the raid healer: **Reflection** keeps half your mana regeneration going while you cast, **Gift of Nature** and **Improved Rejuvenation** make the between-fight **Rejuvenation** and **Regrowth** heal more, and **Swiftmend** comes at 41.
 
 **Caveats**
 
-- Without **Furor** your energy starts from zero each time you go back into **Cat Form**, and each shift costs 55% of your base mana: heal between fights rather than during them when you can.
-- The fight lab does not cast **Swiftmend** (37) while leveling: it heals with **Rejuvenation** and **Regrowth** between fights and with **Nature's Swiftness** and **Healing Touch** in an emergency.
-- The fight lab raced three talent orders and all three came out at 33 seconds per kill: if you heal dungeons on the way, take the healing talents earlier at almost no cost.
+- Each shift into **Cat Form** costs 55% of your base mana before **Natural Shapeshifter**: heal between fights rather than during them when you can.
+- The fight lab does not cast **Swiftmend** while leveling: it heals with **Rejuvenation** and **Regrowth** between fights and with **Regrowth** in an emergency.
 - Drink late: mana only pays for shifts and heals, and the tuned cat rotation drinks below 15% mana.
 
 **When to change it**
 
-- Under 30% health with the mob still above a quarter of its health: shift out and cast **Regrowth**, or from 57 **Nature's Swiftness** and an instant **Healing Touch**, then back into **Cat Form**.
+- Under 30% health with the mob still above a quarter of its health: shift out and cast **Regrowth**, then back into **Cat Form**.
 - In a dungeon group, heal instead: that is the reason to level with these talents, and the times on this page are solo kills.
-
-*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 
@@ -58,34 +56,36 @@ One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
-| 10-14 | Nature's Focus (Restoration) | 5 |
-| 15-19 | Naturalist (Restoration) | 5 |
-| 20-24 | Genesis (Balance) | 5 |
-| 25-26 | Nature's Majesty (Balance) | 2 |
-| 27-31 | Heart of the Wild (Feral Combat) | 5 |
-| 32-34 | Reflection (Restoration) | 3 |
-| 35-36 | Gift of Nature (Restoration) | 2 |
-| 37 | Swiftmend (Restoration) | 1 |
-| 38-40 | Moonglow (Balance) | 3 |
-| 41 | Nature's Splendor (Balance) | 1 |
+| 10-14 | Genesis (Balance) | 5 |
+| 15-16 | Improved Moonfire (Balance) | 2 |
+| 17 | Nature's Majesty (Balance) | 1 |
+| 18 | Nature's Focus (Restoration) | 1 |
+| 19 | Nature's Majesty (Balance) | 1 |
+| 20 | Nature's Focus (Restoration) | 1 |
+| 21-23 | Furor (Restoration) | 3 |
+| 24-25 | Naturalist (Restoration) | 2 |
+| 26-28 | Natural Shapeshifter (Restoration) | 3 |
+| 29-33 | Heart of the Wild (Feral Combat) | 5 |
+| 34 | Moonglow (Balance) | 1 |
+| 35 | Nature's Splendor (Balance) | 1 |
+| 36-38 | Reflection (Restoration) | 3 |
+| 39-40 | Gift of Nature (Restoration) | 2 |
+| 41 | Swiftmend (Restoration) | 1 |
 | 42-46 | Tranquil Spirit (Restoration) | 5 |
 | 47-49 | Living Spirit (Restoration) | 3 |
 | 50-52 | Gift of Nature (Restoration) | 3 |
-| 53 | Gift of the Earthmother (Restoration) | 1 |
-| 54-56 | Improved Rejuvenation (Restoration) | 3 |
-| 57 | Nature's Swiftness (Restoration) | 1 |
-| 58-59 | Improved Regrowth (Restoration) | 2 |
-| 60 | Wild Growth (Restoration) | 1 |
+| 53-55 | Improved Rejuvenation (Restoration) | 3 |
+| 56-60 | Improved Regrowth (Restoration) | 5 |
 
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
-| 20 | 20 |
-| 30 | 26 |
-| 40 | 31 |
-| 50 | 35 |
-| 60 | 40 |
+| 20 | 23 |
+| 30 | 29 |
+| 40 | 35 |
+| 50 | 39 |
+| 60 | 42 |
 
 ---
 *Generated by `_reference/data/render_modes.py` on 2026-10-15 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*

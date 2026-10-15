@@ -52,13 +52,12 @@ Allocation adopted on 2026-09-26 from `opt-feral-cat-dps-raid-dps`, the best bui
 ## Core talents (priority order)
 
 1. **Shredding Attacks** — -18 energy on Shred (est.) — the Improved Shred replacement. Raid sim (2026-09-26): removing it costs +21% DPS.
-2. **King of the Jungle** — Raid sim (2026-09-26): removing it costs +9% DPS.
-3. **Sharpened Claws** — +6% crit in forms (2 ranks now). Raid sim (2026-09-26): removing it costs +6% DPS.
-4. **Berserk** — Capstone: 15s of cooldown-free multi-target Mangle and 100% crit on combo-point builders, fear immunity. Raid sim (2026-09-26): removing it costs +5% DPS.
-5. **Naturalist** — +5% all damage (est.) from Restoration tier 2. Raid sim (2026-09-26): removing it costs +5% DPS.
-6. **Nature's Majesty** — +4% crit with attacks (est.). Raid sim (2026-09-26): removing it costs +4% DPS.
-7. **Savage Fury** — Claw/Rake/Shred/Maul/Swipe damage; Mangle prerequisite. Raid sim (2026-09-26): removing it costs +4% DPS.
-8. **Predatory Strikes** — AP from level. Raid sim (2026-09-26): removing it costs +3% DPS.
+2. **Sharpened Claws** — +6% crit in forms (2 ranks now). Raid sim (2026-09-26): removing it costs +6% DPS.
+3. **Berserk** — Capstone: 15s of cooldown-free multi-target Mangle and 100% crit on combo-point builders, fear immunity. Raid sim (2026-09-26): removing it costs +5% DPS.
+4. **Naturalist** — +5% all damage (est.) from Restoration tier 2. Raid sim (2026-09-26): removing it costs +5% DPS.
+5. **Nature's Majesty** — +4% crit with attacks (est.). Raid sim (2026-09-26): removing it costs +4% DPS.
+6. **Savage Fury** — Claw/Rake/Shred/Maul/Swipe damage; Mangle prerequisite. Raid sim (2026-09-26): removing it costs +4% DPS.
+7. **Predatory Strikes** — AP from level. Raid sim (2026-09-26): removing it costs +3% DPS.
 
 ## Flex points
 
@@ -75,9 +74,9 @@ Allocation adopted on 2026-09-26 from `opt-feral-cat-dps-raid-dps`, the best bui
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md) | ours: hand draft | 9/35/7 | 392 | +0.0% | 688 | -0.8% | 119 s |
+| 1 | [`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md) | ours: derived (simulator preset) | 9/35/7 | 392 | +0.0% | 688 | -0.8% | 119 s |
 | 2 | *Feral Cat 9/35/7* | community simulator | - | 392 | +0.0% | 688 | -0.8% | 119 s |
-| 3 | [`feral-combat-open-raid`](feral-combat-open-raid.md) | ours: hand draft | 9/33/9 | 388 | -1.1% | 694 | +0.0% | 119 s |
+| 3 | [`feral-combat-open-raid`](feral-combat-open-raid.md) | ours: derived (open search) | 9/33/9 | 388 | -1.1% | 694 | +0.0% | 119 s |
 | 4 | *Feral* | community simulator | - | 387 | -1.3% | 661 | -4.7% | 86 s |
 | 5 | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/31/11 | 366 | -6.7% | 590 | -15.0% | 0 s |
 | 6 | **[`feral-cat-dps`](feral-cat-dps.md)** | ours: hand draft | 9/32/10 | 355 | -9.5% | 575 | -17.1% | 0 s |

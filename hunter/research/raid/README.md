@@ -28,7 +28,7 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 | [Marksmanship — With a pet (open talent search)](builds/marksmanship-with-a-pet-open-raid.md) 🔬 | 7/39/5 | DPS |
 | [Beast-Survival — Raid (open talent search)](builds/beast-survival-open-raid.md) 🔬 | 16/11/24 | DPS |
 | [Beast Mastery — Raid (machine-learning search)](builds/beast-mastery-ml-raid.md) 🔬 | 31/20/0 | DPS |
-| [Beast-Marks — Raid (machine-learning search)](builds/beast-marks-ml-raid.md) 🔬 | 7/39/5 | DPS |
+| [Beast-Marks — Raid (open talent search)](builds/beast-marks-open-raid.md) 🔬 | 27/21/3 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
@@ -53,12 +53,11 @@ Our builds and the community simulator's own builds, run through the same simula
 | 1 | [`bm-mm-full-buffs-raid`](builds/bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 471 | +0.0% | 801 | -8.9% | 70 s |
 | 2 | [`bm-mm-raid`](builds/bm-mm-raid.md) | ours: hand draft | 22/29/0 | 459 | -2.5% | 803 | -8.7% | 53 s |
 | 3 | [`opt-mm-raid-raid-dps`](builds/opt-mm-raid-raid-dps.md) | ours: optimizer | 22/29/0 | 459 | -2.5% | 803 | -8.7% | 53 s |
-| 4 | [`beast-marks-ml-raid`](builds/beast-marks-ml-raid.md) | ours: hand draft | 7/39/5 | 455 | -3.2% | 878 | -0.2% | 96 s |
-| 5 | *Marksmanship* | community simulator | - | 453 | -3.8% | 843 | -4.1% | 89 s |
-| 6 | [`marksmanship-with-a-pet-open-raid`](builds/marksmanship-with-a-pet-open-raid.md) | ours: hand draft | 7/39/5 | 451 | -4.2% | 879 | +0.0% | 98 s |
-| 7 | *Beast Mastery 35/16/0* | community simulator | - | 444 | -5.7% | 768 | -12.7% | 75 s |
-| 8 | *Marksmanship 0/39/12* | community simulator | - | 428 | -9.0% | 776 | -11.7% | 83 s |
-| 9 | *Survival 0/15/36* | community simulator | - | 394 | -16.3% | 678 | -22.8% | 76 s |
+| 4 | *Marksmanship* | community simulator | - | 453 | -3.8% | 843 | -4.1% | 89 s |
+| 5 | [`marksmanship-with-a-pet-open-raid`](builds/marksmanship-with-a-pet-open-raid.md) | ours: derived (open search) | 7/39/5 | 451 | -4.2% | 879 | +0.0% | 98 s |
+| 6 | *Beast Mastery 35/16/0* | community simulator | - | 444 | -5.7% | 768 | -12.7% | 75 s |
+| 7 | *Marksmanship 0/39/12* | community simulator | - | 428 | -9.0% | 776 | -11.7% | 83 s |
+| 8 | *Survival 0/15/36* | community simulator | - | 394 | -16.3% | 678 | -22.8% | 76 s |
 
 **mm-lonewolf-raid**
 
@@ -66,8 +65,8 @@ Our builds and the community simulator's own builds, run through the same simula
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`opt-mm-lonewolf-raid-raid-dps`](builds/opt-mm-lonewolf-raid-raid-dps.md) | ours: optimizer | 5/38/8 | 462 | +0.0% | 855 | -4.2% | 92 s |
 | 2 | [`mm-lone-wolf-raid`](builds/mm-lone-wolf-raid.md) | ours: hand draft | 5/41/5 | 456 | -1.3% | 893 | +0.0% | 97 s |
-| 3 | [`marksmanship-ml-raid`](builds/marksmanship-ml-raid.md) | ours: hand draft | 11/40/0 | 442 | -4.2% | 813 | -8.9% | 90 s |
-| 4 | [`marksmanship-ml-parse`](builds/marksmanship-ml-parse.md) | ours: parse build | 7/44/0 | 440 | -4.7% | 852 | -4.6% | 92 s |
+| 3 | [`marksmanship-ml-raid`](builds/marksmanship-ml-raid.md) | ours: derived (ML search) | 11/40/0 | 442 | -4.2% | 813 | -8.9% | 90 s |
+| 4 | [`marksmanship-ml-parse`](builds/marksmanship-ml-parse.md) | ours: derived (ML search) | 7/44/0 | 440 | -4.7% | 852 | -4.6% | 92 s |
 | 5 | *Marksmanship* | community simulator | - | 358 | -22.5% | 689 | -22.8% | 92 s |
 | 6 | *Marksmanship 0/39/12* | community simulator | - | 356 | -22.9% | 668 | -25.1% | 87 s |
 | 7 | *Survival 0/15/36* | community simulator | - | 318 | -31.1% | 552 | -38.2% | 85 s |
@@ -77,20 +76,20 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`mm-hawk-raid`](builds/mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 474 | +0.0% | 806 | -7.7% | 13 s |
-| 2 | [`beast-mastery-ml-raid`](builds/beast-mastery-ml-raid.md) | ours: hand draft | 31/20/0 | 465 | -1.9% | 847 | -3.1% | 44 s |
-| 3 | *Beast Mastery 35/16/0* | community simulator | - | 461 | -2.7% | 787 | -9.9% | 14 s |
-| 4 | [`beast-marks-ml-raid`](builds/beast-marks-ml-raid.md) | ours: hand draft | 7/39/5 | 460 | -3.0% | 874 | +0.0% | 40 s |
+| 1 | [`mm-hawk-raid`](builds/mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 474 | +0.0% | 806 | -5.4% | 13 s |
+| 2 | [`beast-marks-open-raid`](builds/beast-marks-open-raid.md) | ours: derived (open search) | 27/21/3 | 473 | -0.2% | 852 | +0.0% | 24 s |
+| 3 | [`beast-mastery-ml-raid`](builds/beast-mastery-ml-raid.md) | ours: derived (ML search) | 31/20/0 | 465 | -1.9% | 847 | -0.7% | 44 s |
+| 4 | *Beast Mastery 35/16/0* | community simulator | - | 461 | -2.7% | 787 | -7.6% | 14 s |
 
 **melee-dps**
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`survival-raid`](builds/survival-raid.md) | ours: hand draft | 5/16/30 | 483 | +0.0% | 1025 | -2.5% | 9 s |
+| 1 | [`survival-raid`](builds/survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 483 | +0.0% | 1025 | -2.5% | 9 s |
 | 2 | [`melee-survival-raid`](builds/melee-survival-raid.md) | ours: hand draft | 5/11/35 | 461 | -4.6% | 1042 | -0.9% | 44 s |
 | 3 | [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 461 | -4.7% | 1012 | -3.7% | 8 s |
-| 4 | [`survival-ml-parse`](builds/survival-ml-parse.md) | ours: parse build | 5/14/32 | 357 | -26.1% | 993 | -5.5% | 117 s |
-| 5 | [`beast-survival-open-raid`](builds/beast-survival-open-raid.md) | ours: hand draft | 16/11/24 | 357 | -26.2% | 1051 | +0.0% | 127 s |
+| 4 | [`survival-ml-parse`](builds/survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 357 | -26.1% | 993 | -5.5% | 117 s |
+| 5 | [`beast-survival-open-raid`](builds/beast-survival-open-raid.md) | ours: derived (open search) | 16/11/24 | 357 | -26.2% | 1051 | +0.0% | 127 s |
 
 ## DPS by gear tier
 
@@ -231,6 +230,9 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 | Raid DPS with pet | mm-raid | [22/29/0](builds/opt-mm-raid-raid-dps.md) (+67.6%) | [bm-mm-raid](builds/bm-mm-raid.md) |
 | Raid DPS, Lone Wolf | mm-lonewolf-raid | [5/38/8](builds/opt-mm-lonewolf-raid-raid-dps.md) (+77.8%) | [mm-lone-wolf-raid](builds/mm-lone-wolf-raid.md) |
 
-Model findings: Improved Tracking beats Ferocity per point everywhere; Endurance Training is worth ~0.2%/rank of leveling time; with the raid mana weight raised for hunters (they run dry on long fights), Efficiency is back in the raid build (12/34/5); Lone Wolf edges the pet build in raids (absolute DPS index 1.96 vs 1.88) if its +20% is real.
+Model findings (generated from the optimizer builds; scores are within each spec model, never across models):
 
-Beta hypotheses (model claims without community precedent, unverified): Lone Wolf's +20% (the raid comparison rests on it); Deadly Aspects' proc rate; pet threat scaling (pet_dmg_to_surv 0.3). Level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).
+- **Raid DPS with pet:** 22/29/0; biggest talents by score lost when removed: Summon Hawk (17.9), Bestial Discipline (9.5), Efficiency (7.8), Deadly Aspects (7.5), Unleashed Fury (7.4); the hand draft `bm-mm-raid` is 22/29/0.
+- **Raid DPS, Lone Wolf:** 5/38/8; biggest talents by score lost when removed: Lone Wolf (29.5), Efficiency (12.0), Lethal Attacks (9.6), Mortal Shots (9.5), Deadly Aspects (9.3); the hand draft `mm-lone-wolf-raid` is 5/41/5.
+
+Beta hypotheses: every build's unverified claims are its `open_questions`, collected in [`_reference/launch-checklist.md`](../../../_reference/launch-checklist.md); level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).

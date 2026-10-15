@@ -12,45 +12,43 @@
 
 ## How to play
 
-**Not in this build:** **Counterattack**, **Deterrence**, **Summon Hawk** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+**Not in this build:** **Counterattack**, **Deterrence**, **Expose Prey** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
 
-**Before the fight:** Pet out, **Aspect of the Monkey** (**Aspect of the Beast** from level 30). **Serpent Sting** from range, then walk in while the pet holds the mob.
+**Before the fight:** Pet out, **Aspect of the Monkey** (**Aspect of the Beast** from level 30). Walk in while the pet holds the mob. No **Serpent Sting** from range: the fight lab levels faster without it.
 
 **In the fight**, top to bottom:
 
 1. **Raptor Strike** every time it is ready: it replaces your next swing and costs no global cooldown.
-2. **Mongoose Bite** when it lights up (after you dodge), **Counterattack** after you parry.
-3. **Strider Kick** on cooldown.
-4. **Immolation Trap** at your feet while the mob has more than 70% of its health.
-5. Low on health: **Deterrence**; **Mend Pet** for the pet.
-6. Skip **Hunter's Mark** and **Summon Hawk** while leveling: the fight lab measured both slower per kill.
+2. Below 40% health while the mob has more than 30% of its health: **Deterrence**.
+3. **Counterattack** after you parry, **Mongoose Bite** when it lights up (after you dodge, or from **Expose Prey**).
+4. **Strider Kick** on cooldown.
+5. **Immolation Trap** at your feet while the mob has more than 40% of its health.
+6. With **Expose Prey**: **Hunter's Mark** in a free global cooldown, so your hits can light up **Mongoose Bite**.
+7. **Mend Pet** when the pet drops below a third of its health.
 
 **Between fights:** Mend the pet, drink below a third of your mana, eat below two thirds of your health.
 
 ## Why this rotation
 
-Beast-Survival levels on **Immolation Trap** and a strong pet: the cat tanks and hits hard, you sting from range, drop a trap at your feet and fight beside the pet with **Raptor Strike** and your white swings.
+Beast-Survival levels on **Immolation Trap** and a strong pet: the cat tanks and hits hard, you walk in behind it, drop a trap at your feet and fight beside it with **Raptor Strike**, **Strider Kick** and your white swings.
 
 **Why it works**
 
-- **Immolation Trap** is the heart of the build: **Clever Traps** (levels 23-24) adds 30%, **Survival Tactics** helps it hit, and **Survivalist's Discipline** (37-38) brings it back every 18 seconds. In the fight lab's search, **Survivalist's Discipline**, **Resourcefulness** (it pays for traps and strikes) and **Clever Traps** were the build's most valuable talents at 60.
-- Set the trap at your feet as you reach the mob (traps work in combat in Forever but land where you stand), and only while the mob has more than 70% of its health: the burn lasts 15 seconds.
-- From level 42 the Beast Mastery points go into the pet: **Endurance Training** for a sturdier tank, **Unleashed Fury**, **Ferocity** and **Focused Fire** for damage. Send it first and let it hold the mob.
-- **Serpent Sting** from range opens each fight. This build has no **Expose Prey**, so **Hunter's Mark** adds nothing to your melee, and the fight lab never casts it.
-- **Raptor Strike** on every swing it is ready: it replaces your next main-hand swing and costs no global cooldown. **Mongoose Bite** after you dodge; **Aspect of the Monkey** until 30, then **Aspect of the Beast** for melee attack power.
+- **Immolation Trap** is the heart of the build: **Clever Traps** (levels 23-24) adds 30%, **Survival Tactics** (32) helps it hit, and **Survivalist's Discipline** (36-37) brings it back every 18 seconds. In the fight lab's removal runs at 60, **Resourcefulness** (it pays for traps and strikes), **Survivalist's Discipline** and **Strider Kick** were the build's most valuable talents.
+- Set the trap at your feet beside the mob (traps work in combat in Forever but land where you stand), and only while the mob has more than 40% of its health: the burn lasts 15 seconds.
+- **Raptor Strike** on every swing it is ready (it replaces your next main-hand swing and costs no global cooldown) and **Strider Kick** (level 33) on its 8-second cooldown. **Mongoose Bite** after you dodge.
+- From level 38 the points go into Beast Mastery: **Deadly Aspects** for your swings, then the pet: **Endurance Training** for a sturdier tank, **Focused Fire**, **Unleashed Fury** and **Ferocity** for damage. Send it first and let it hold the mob.
+- No **Serpent Sting** and no **Hunter's Mark**: the tuned rules never cast the sting, and without **Expose Prey** the mark adds nothing to your melee. **Aspect of the Monkey** until 30, then **Aspect of the Beast** for melee attack power.
 
 **Caveats**
 
-- This build takes none of **Counterattack**, **Strider Kick** or **Deterrence**: skip those steps. Between traps your global cooldown is mostly free.
-- **Summon Hawk** (level 58) is the 20th Beast Mastery point, which opens **Bestial Discipline**. Do not cast it while leveling: as a melee hunter the fight lab measured it about 5% slower per kill at 60, its 190 mana a cast outweighing its damage.
+- This build takes none of **Counterattack**, **Deterrence** or **Summon Hawk**: skip those steps. Between traps and kicks your global cooldown is mostly free.
 - **Improved Tracking** (levels 10-14) adds damage only against the creature type you are tracking: keep tracking set to what you are killing.
 
 **When to change it**
 
 - Two or more mobs: **Explosive Trap** instead of **Immolation Trap**; it hits everything within 10 yards and shares the fire-trap cooldown.
 - Low on health with no **Deterrence**: **Mend Pet** keeps your tank up, and **Feign Death** drops the mob back on the pet if it turns on you.
-
-*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 
@@ -89,6 +87,10 @@ One point per level from 10, in this order:
 | 40 | 22 |
 | 50 | 23 |
 | 60 | 25 |
+
+## Other builds of this spec
+
+- [Beast-Survival (optimized)](../research/leveling/builds/opt-melee-dps-leveling-st.md) (15/10/26, 24 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/hunter/60/50202105-005005-5402000310502211-6)
 
 ---
 *Generated by `_reference/data/render_modes.py` on 2026-10-15 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*

@@ -48,6 +48,32 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-lev
 | **Ice Block** | 1/1 | moved | You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move, or cast spells. |
 | **Shatter** | 2/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 33%. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Frost | Elemental Precision | 5 | 0/0/5 |
+| 15 | Frost | Permafrost | 1 | 0/0/6 |
+| 16-18 | Frost | Frostbite | 3 | 0/0/9 |
+| 19 | Frost | Ice Shards | 1 | 0/0/10 |
+| 20 | Frost | Ice Lance | 1 | 0/0/11 |
+| 21-24 | Frost | Ice Shards | 4 | 0/0/15 |
+| 25 | Frost | Ice Block | 1 | 0/0/16 |
+| 26-27 | Frost | Shatter | 2 | 0/0/18 |
+| 28-32 | Fire | Improved Fireball | 5 | 0/5/18 |
+| 33-37 | Fire | Ignite | 5 | 0/10/18 |
+| 38-40 | Fire | Burning Soul | 3 | 0/13/18 |
+| 41-43 | Fire | Impact | 3 | 0/16/18 |
+| 44-45 | Fire | Flame Throwing | 2 | 0/18/18 |
+| 46-47 | Fire | Improved Scorch | 2 | 0/20/18 |
+| 48 | Fire | Blast Wave | 1 | 0/21/18 |
+| 49 | Fire | Improved Scorch | 1 | 0/22/18 |
+| 50-52 | Fire | Critical Mass | 3 | 0/25/18 |
+| 53-57 | Fire | Fire Power | 5 | 0/30/18 |
+| 58 | Fire | Combustion | 1 | 0/31/18 |
+| 59 | Fire | Pyroblast | 1 | 0/32/18 |
+| 60 | Fire | Heating Up | 1 | 0/33/18 |
+
 ## Core talents (priority order)
 
 1. **Ice Lance** — Removing it costs 24.3 points of score in this model.
@@ -69,20 +95,21 @@ What this build casts per kill ([report](../fightlab/fire-leveling.md), all leve
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Ice Lance | 1.2 | 1.7 | 2.6 | 2.2 | 2.2 | 40% |
-| Fireball | 2.3 | 1.7 | 1.8 | 1.8 | 1.7 | 28% |
-| Fire Blast | 1.0 | 1.2 | 1.4 | 1.2 | 1.2 | 17% |
-| Frost Nova | 0.4 | 0.6 | 0.8 | 0.7 | 0.7 | 1% |
-| Wand | 0.6 | 0.2 | 0.5 | 0.4 | 0.4 | 0% |
-| Blast Wave | 0.0 | 0.2 | 0.3 | 0.3 | 0.3 | 4% |
-| Scorch | 0.0 | 0.2 | 0.3 | 0.3 | 0.2 | 1% |
-| Counterspell | 0.0 | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
-| Pyroblast | 0.0 | 0.1 | 0.1 | 0.1 | 0.1 | 1% |
+| Ice Lance | 1.9 | 2.4 | 3.3 | 2.5 | 2.2 | 40% |
+| Fireball | 2.3 | 1.6 | 1.7 | 1.9 | 1.7 | 28% |
+| Fire Blast | 1.1 | 1.4 | 1.7 | 1.3 | 1.2 | 17% |
+| Frost Nova | 0.6 | 0.8 | 0.9 | 0.8 | 0.7 | 1% |
+| Wand | 0.3 | 0.3 | 0.9 | 0.5 | 0.4 | 0% |
+| Blast Wave | 0.0 | 0.0 | 0.0 | 0.3 | 0.3 | 4% |
+| Scorch | 0.0 | 0.8 | 1.0 | 0.3 | 0.2 | 1% |
+| Counterspell | 0.0 | 0.2 | 0.1 | 0.1 | 0.1 | 0% |
+| Pyroblast | 0.0 | 0.0 | 0.0 | 0.0 | 0.1 | 1% |
 
 ## Notes
 
 - Report: mage/talents/forever/optimizer/fire-leveling-leveling-st.md
 - 2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized.
+- 2026-10-15 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fire-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 36.1 s per kill; stats model 37.4 s; own tree first 40.8 s.
 
 ## Open questions (verify in the live game)
 

@@ -10,15 +10,15 @@
 
 ## How to play
 
-**Then press the first one that is ready**, top to bottom:
+**Press the first one that is ready**, top to bottom:
 
 1. **Ice Lance** when Fingers of Frost is active
 2. **Pyroblast** when Heating Up has 3 stacks
 3. **Fire Blast**
 4. **Scorch** when the target has fewer than 5 stacks of Fire Vulnerability or Fire Vulnerability has under 15 seconds left
-5. **Frostfire Bolt** when your mana is below 30%
+5. **Frostfire Bolt** (rank 2) when your mana is below 30%
 6. **Frostfire Bolt** when you have at least 10% mana
-7. **Fireball**
+7. **Fireball** (rank 2)
 
 **Fireball** is your filler: cast it whenever nothing above is ready.
 
@@ -32,24 +32,23 @@ Frostfire is a Fire mage whose main spell is **Frostfire Bolt**: it counts as bo
 
 - **Ice Lance** on **Fingers of Frost** comes first. Each **Frostfire Bolt** chill has a 15% chance to treat your next 2 spells as if the target were frozen; a frozen target takes 300% more damage from **Ice Lance** and **Shatter** adds 50% crit, so spend both charges on **Ice Lance**.
 - **Pyroblast** at 3 stacks of **Heating Up**: crits from **Frostfire Bolt**, **Fire Blast** and **Scorch** each take 25% off its 6-second cast, so 3 stacks make it 1.5 seconds. Unlike the Fire list, this one never casts it at 2 stacks; the simulator measured dropping that line 0.3% better.
-- **Fire Blast** on cooldown (every 8 seconds: this build has no **Wake of Fire**): instant, and its crits feed **Heating Up** and **Ignite**. Using it without a mana condition was the biggest gain of the rotation search, about 5%.
-- **Scorch** keeps Fire Vulnerability (from **Improved Scorch**) at 5 stacks, +15% to your Fire damage, and **Frostfire Bolt** counts as Fire. This list refreshes it once 15 seconds or less of its 30 are left, a wider margin than the Fire list's 7.5; the line above shows only the stack count.
-- **Frostfire Bolt** is the filler: 2.5 seconds with **Improved Fireball**, and one cast rolls for **Fingers of Frost**, **Heating Up** and **Ignite** at once. Below 30% mana the list casts Rank 2 instead (285 mana against 370): it is learned at level 50, close enough to 60 that the low-rank penalty the simulator assumes leaves its spell power alone, and the simulator measured this about 2% better than the old rule of stopping at 10% mana.
-- The Rank 2 **Fireball** at the bottom of the list only matters when you cannot afford even a Rank 2 **Frostfire Bolt**. Forever gives ranks that far below your level only a small part of your spell power and fewer talent procs; with that penalty in, the simulator measured dropping the old Fireball fallback 1.0% better, so keep your mana up with gems and a potion instead.
+- **Fire Blast** on cooldown (every 8 seconds: this build has no **Wake of Fire**): instant, and its crits feed **Heating Up** and **Ignite**. Using it without a mana condition was the biggest single gain of the full-raid rotation search, about 5%.
+- **Scorch** keeps Fire Vulnerability (from **Improved Scorch**) at 5 stacks, +15% to your Fire damage, and **Frostfire Bolt** counts as Fire. This list refreshes it once 15 seconds or less of its 30 are left, a wider margin than the Fire list's 7.5.
+- **Frostfire Bolt** is the main spell: 2.5 seconds with **Improved Fireball**, and one cast rolls for **Fingers of Frost**, **Heating Up** and **Ignite** at once. Below 30% mana the full rotation casts Rank 2 (285 mana against 370): the page's line "when your mana is below 30%". The simulator measured this about 2% better than the old rule of stopping at 10% mana.
+- **Fireball** (Rank 2 in the full rotation) is last: a stopgap for when you cannot afford even a Rank 2 **Frostfire Bolt**. Forever gives ranks that far below your level only part of your spell power; keep your mana up with gems and a potion so it rarely comes up.
 
 **Caveats**
 
 - **Fingers of Frost** charges go to the next 2 spells you cast, whatever they are: do not let a **Frostfire Bolt** use one up.
-- Mana: **Frostfire Bolt** costs 370 at top rank. The list uses both of your mana gems (from **Conjure Mana Ruby** and **Conjure Mana Citrine**), **Master of Elements** refunds part of every crit, and below 30% mana the cheaper Rank 2 stretches what is left.
+- Mana: **Frostfire Bolt** costs 370 at top rank. The list uses both of your mana gems (from **Conjure Mana Ruby** and **Conjure Mana Citrine**), **Master of Elements** refunds 30% of the base cost on each Fire or Frost crit, and below 30% mana the cheaper Rank 2 stretches what is left.
 - Moving: **Ice Lance** and **Fire Blast** are instant. For packs, **Flamestrike** and **Blizzard** are your area spells.
 - **Frostfire Bolt** is new in Forever: its numbers here are the simulator's model of the beta tooltip, not yet checked in game.
+- The full rotation also opens with **Arcane Power** for builds that take it; this build does not, so skip it.
 
 **When to change it**
 
-- Below 30% mana, switch to Rank 2 **Frostfire Bolt** rather than stop casting it; a Rank 2 **Fireball** is a weak stopgap only for when even that is out of reach.
+- Below 30% mana, switch to Rank 2 **Frostfire Bolt** rather than stop casting it; a **Fireball** is a weak stopgap only for when even that is out of reach.
 - Against a target that resists Fire, **Frostfire Bolt** keeps working (it is checked against the lower of the target's Fire and Frost resistance), while **Fire Blast**, **Scorch** and **Pyroblast** lose damage.
-
-*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## The numbers
 
@@ -90,7 +89,7 @@ Frostfire is a Fire mage whose main spell is **Frostfire Bolt**: it counts as bo
 
 ## Other builds of this spec
 
-- [Frostfire — Frostfire Bolt / Hot Streak](../research/raid/builds/frostfire-raid.md) (4/31/16, 630 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/004-03251030130133051-005500033-6)
+- [Frostfire — Frostfire Bolt / Heating Up](../research/raid/builds/frostfire-raid.md) (4/31/16, 630 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/004-03251030130133051-005500033-6)
 - [Frostfire — Raid](../research/raid/builds/frostfire-ml-raid.md) (4/31/16, 597 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/004-10452131130103051-005500033-6)
 
 ---

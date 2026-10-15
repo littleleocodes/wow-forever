@@ -66,10 +66,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ra
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`frost-ml-raid`](frost-ml-raid.md) | ours: hand draft | 21/0/30 | 602 | +0.0% | 680 | -1.0% | 0 s |
+| 1 | [`frost-ml-raid`](frost-ml-raid.md) | ours: derived (ML search) | 21/0/30 | 602 | +0.0% | 680 | -1.0% | 0 s |
 | 2 | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 598 | -0.5% | 676 | -1.6% | 0 s |
 | 3 | [`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md) | ours: optimizer | 22/0/29 | 597 | -0.8% | 676 | -1.6% | 1 s |
-| 4 | [`arcane-frost-open-raid`](arcane-frost-open-raid.md) | ours: hand draft | 28/0/23 | 589 | -2.1% | 687 | +0.0% | 5 s |
+| 4 | [`arcane-frost-open-raid`](arcane-frost-open-raid.md) | ours: derived (open search) | 28/0/23 | 589 | -2.1% | 687 | +0.0% | 5 s |
 | 5 | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) | ours: hand draft | 32/0/19 | 566 | -5.9% | 643 | -6.4% | 0 s |
 | 6 | *Frost DPS* | community simulator | - | 557 | -7.5% | 632 | -8.0% | 0 s |
 | 7 | **[`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md)** | ours: optimizer | 1/13/37 | 546 | -9.3% | 646 | -6.0% | 7 s |

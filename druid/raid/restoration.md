@@ -4,36 +4,34 @@
 
 **[Restoration — Raid healing](../research/raid/builds/restoration-ml-heal.md)** (11/5/35) — [open the talent tree](https://talentsforever.com/druid/60/05122001-05-232033505310305-6)
 
-> 🔬 Derived build: found by this project's deep search over every legal build of the spec in the healer lab (this project's healing model; healers are not in the community simulator), then raced against the spec's builds; it beat the hand-made build (resto-raid-healer), which stays below as the alternative. A model of the beta, to check at launch.
+> 🔬 Derived build: found by this project's deep search over every legal build of the spec in the healer lab (this project's healing model; healers are not in the community simulator), then raced against the spec's builds; it beat the hand-made build (Restoration — Raid Healer), which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to heal
 
-Keep **Rejuvenation** on the tank and heal it with **Healing Touch** at the rank that covers the health it is missing. **Regrowth** is for raid members who drop under half health, **Swiftmend** and **Nature's Swiftness** are your emergency buttons, and mana is what runs out first.
+Keep **Rejuvenation** on the tank and heal it with **Healing Touch** at the rank that covers the health it is missing. **Regrowth** is for raid members who drop under half health, **Swiftmend** is your emergency button, **Tranquility** your group heal, and mana is what runs out first.
 
 **Why it works**
 
-- **Healing Touch** is about two thirds of your healing in the healer lab. Start it on the tank when it is missing at least half of what your top rank heals and the next boss hit is on its way: **Naturalist** cuts the cast to 3 seconds, and a rank sized to the missing health saves mana over the top rank (840 mana, 10% less with **Tranquil Spirit**).
-- **Rejuvenation** stays on the tank whenever it is missing more than a tenth of its health, always at the top rank: it is instant and costs 360 mana, **Improved Rejuvenation**, **Gift of Nature** and **Genesis** add to it, and **Nature's Splendor** stretches it to 15 seconds. **Gift of the Earthmother** cuts its global cooldown to 1 second.
-- **Regrowth** is the fast heal: a 2-second cast with a big direct heal and a heal over 21 seconds (27 with **Nature's Splendor**). The lab gives a raid member under half health a **Rejuvenation** first and a **Regrowth** if they still need it, and casts **Regrowth** on the tank when it is missing about a full one; **Improved Regrowth** raises its critical chance.
-- **Swiftmend** heals at once for the full amount of your **Rejuvenation** or **Regrowth** on the target, every 15 seconds: your instant answer when a raid member falls under 55% health. It only works on a target with your heal over time, one more reason to keep **Rejuvenation** on the tank.
-- **Nature's Swiftness** makes your next **Healing Touch** instant: use it as soon as the tank falls under 55%. With a 3-minute cooldown, holding it for a worse moment wastes it.
-- **Wild Growth** heals the target's whole party, up to five people, for 679 over 7 seconds (1,050 mana, 6-second cooldown): cast it when three or more people in one party are under half health. The lab's test fight rarely had that, so it measured no value there; in fights with heavy raid damage it is the heal that covers it.
+- **Healing Touch** is about half your healing in the healer lab (55%). Start it on the tank when it is missing at least about half of what your top rank heals and the next boss hit is on its way: a 3.5-second cast (3.3 with this build's 2 points in **Naturalist**), and a rank sized to the missing health saves mana over the top rank (840 mana, 10% less with **Tranquil Spirit**).
+- **Rejuvenation** is about a third of your healing. Keep it on the tank whenever it is missing more than 5% of its health, always at the top rank: it is instant and costs 360 mana, **Improved Rejuvenation**, **Gift of Nature** and **Genesis** add to it, and **Nature's Splendor** stretches it by 3 seconds.
+- **Regrowth** is the fast heal: a 2-second cast with a direct heal and a heal over time (6 seconds longer with **Nature's Splendor**), and **Improved Regrowth** adds 50% to its critical chance. The lab gives a raid member under half health a **Rejuvenation** first and a **Regrowth** if they still need it, and casts **Regrowth** on the tank when it is missing about a full one.
+- **Swiftmend** heals at once for the full amount of your **Rejuvenation** or **Regrowth** on the target, every 15 seconds: the lab presses it when anyone falls under 35% health, then **Regrowth** if it is on cooldown. It only works on a target with your heal over time, one more reason to keep **Rejuvenation** on the tank.
+- This build has no **Wild Growth** and no **Nature's Swiftness**: when three or more raid members are under half health, the lab channels **Tranquility** (5-minute cooldown), about 5% of your healing.
+- **Reflection** (half your mana regeneration keeps going while you cast) is the talent the lab values most by far, and **Living Spirit** (+15% Spirit) and **Tranquil Spirit** are mana talents too: this build is shaped by mana, not cast time.
 
 **Caveats**
 
-- Mana runs out before cast time does: in the lab's five-minute fight the build spends about 30 seconds out of mana, and **Reflection** (half your mana regeneration keeps going while you cast) is worth more than any other talent there. Drink a mana potion once you are 20% down after the first 45 seconds, and **Innervate** yourself under 40% mana: the lab measured early potions as 1 to 2% more healing capacity.
-- Leave raid members above half health to their own regeneration and the other healers: the lab measured healing them only under 50%, instead of 70%, as 2% more healing capacity, the mana going to the tank.
+- Mana runs out before cast time does: in the lab's five-minute fight this build spends about 32 seconds out of mana. The lab drinks a mana potion as soon as you are 20% down, from the start of the fight, and casts **Innervate** on itself under 40% mana.
+- Leave raid members above half health to their own regeneration and the other healers: the lab heals them only under 50%, the mana going to the tank.
 - Forever gives low ranks less of your healing power (Blizzard's beta notes; the exact rule is not published). The lab assumes TBC's rule: **Healing Touch** ranks 9 to 11 keep their full bonus, rank 8 about 92% and rank 7 about 82%, so downrank only that far.
-- The beta's **Swiftmend** tooltip no longer says it uses up the heal over time, as Classic's did, and the lab now leaves it ticking (worth about 3% healing capacity there). If it does use it up at launch, save **Swiftmend** for emergencies and keep a **Rejuvenation** ready to put back.
+- The beta's **Swiftmend** tooltip no longer says it uses up the heal over time, as Classic's did, and the lab leaves it ticking. If it does use it up at launch, save **Swiftmend** for emergencies and keep a **Rejuvenation** ready to put back.
 
 **When to change it**
 
-- The tank under 55%: **Nature's Swiftness** and **Healing Touch** if it is ready, else **Swiftmend** if your heal over time is on the tank, else **Regrowth**. The lab measured reacting at 55% rather than 35% as 1 to 2.5% more healing capacity.
-- A whole party hurt at once: **Wild Growth** on one of them; if the damage keeps coming and they stand together, **Tranquility** (5-minute cooldown, a 10-second channel on your party within 20 yards).
+- A whole party hurt at once and standing together: **Tranquility** (a 10-second channel on your party within 20 yards).
 - A tank or healer dies: **Rebirth** (30-minute cooldown) brings them back during the fight.
 - Curses and poisons: **Remove Curse** and **Abolish Poison** are yours to cast. The lab does not model them, so dispel when the debuff would cost more health than your next heal restores.
-
-*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
+- If your raid's damage comes in bursts on whole parties, the hand-made build under Other builds takes **Wild Growth** and **Nature's Swiftness**; in the lab's steady damage this build heals slightly more (capacity 0.60 against 0.59).
 
 ## The numbers
 

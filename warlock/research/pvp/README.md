@@ -28,5 +28,5 @@ The stats model's PvP profile (burst 0.4, survival 0.5, mana 0.05, utility 1.5; 
 
 | Game | Build | Model | Build split | Optimum | Overlap | Build lacks | Optimum lacks |
 |---|---|---|---|---|---|---|---|
-| Forever | pvp-soul-link | affliction-leveling | 30/21/0 | 21/28/2 | 61% | Demonic Knowledge +3, Destructive Reach +2, Fel Concentration +3, Improved Corruption +5, Master Demonologist +3, Unholy Power +4 | Improved Bane of Agony +2, Improved Life Tap +2, Improved Voidwalker +3, Malediction +5, Malevolence +3, Shadow Mastery +5 |
+| Forever | pvp-soul-link | affliction-leveling | 30/21/0 | 21/28/2 | 57% | Demonic Knowledge +3, Destructive Reach +2, Fel Concentration +3, Improved Corruption +5, Improved Health Funnel +2, Master Demonologist +3, Unholy Power +4 | Demonic Embrace +5, Improved Bane of Agony +2, Improved Life Tap +2, Malediction +5, Malevolence +3, Shadow Mastery +5 |
 | Classic Era | pvp-soul-link | affliction-leveling | 20/31/0 | 19/32/0 | 80% | Fel Concentration +4, Improved Health Funnel +2, Improved Spellstone +1, Improved Voidwalker +2, Master Summoner +1 | Fel Intellect +5, Improved Curse of Agony +3, Improved Life Tap +2 |

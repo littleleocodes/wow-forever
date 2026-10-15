@@ -19,7 +19,7 @@
 3. **Summon Hawk** whenever it is ready (from level 25) while the mob has a third of its health or more; skip **Arcane Shot**, which shares its timer.
 4. **Aimed Shot** whenever it is ready while the mob has more than a quarter of its health; on a single mob never **Multi-Shot** (they share a cooldown).
 5. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards. **Mend Pet** when the pet drops below a third of its health.
-6. If a mob reaches you: **Wing Clip** and **Raptor Strike** until the pet takes it back.
+6. If a mob reaches you: **Feign Death** to send it back to the pet; when that is on cooldown, **Wing Clip** and **Raptor Strike** until the pet takes it back.
 
 **Between fights:** Mend the pet, drink below 15% mana, eat below two thirds of your health.
 
@@ -40,15 +40,13 @@ Beast Mastery levels with the cat as the tank: it holds the mob while **Auto Sho
 
 - This build takes neither **Bestial Wrath** nor **Intimidation**: skip the step that names them.
 - The fight lab's tuned play drinks only below 15% mana, not at a third, which measured slightly faster: less time sitting between pulls.
-- **Feign Death**: the fight lab levels slightly faster never using it to send a mob back to the pet. A mob that reaches you gets **Wing Clip** and **Raptor Strike** until the pet's Growl takes it back.
+- A mob that turns on you: **Feign Death** sends it back to the pet (the fight lab needs it about once in ten kills at 60); while it is on cooldown, **Wing Clip** and **Raptor Strike** until the pet's Growl takes the mob back.
 - Several mobs at once: **Multi-Shot** and **Volley** (a 6-second channel with no cooldown in Forever) are your area damage. In the fight lab's three-mob pulls **Volley** is about a tenth of the damage at 60.
 
 **When to change it**
 
 - When the mob is nearly dead, stop spending mana: **Auto Shot** and the pet finish it, and you start the next pull fuller.
 - If the pet dies mid-fight, finish the mob with **Raptor Strike** and **Wing Clip** (or **Feign Death** if it is going badly), and revive the pet before the next pull.
-
-*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 

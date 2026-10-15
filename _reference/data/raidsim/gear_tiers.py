@@ -91,7 +91,7 @@ def pool_of(tier, zones):
         return G.in_pool(it, zones) and crafted_ok(it, "bis")
 
     def prebis(it):
-        if it.get("quality", 0) >= 5 or it.get("quality", 0) < 2 or it.get("name") in RAID_QUEST or not crafted_ok(it, "prebis"):
+        if it.get("quality", 0) >= 5 or it.get("quality", 0) < 2 or it.get("name") in RAID_QUEST or not crafted_ok(it, "prebis")                 or it.get("id") in G.SUSPECT_ITEMS:
             return False
         srcs = it.get("sources") or []
         drops = [s["drop"] for s in srcs if s.get("drop")]
@@ -108,14 +108,19 @@ def pool_of(tier, zones):
     return bis if tier == "bis" else prebis
 
 
-def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current):
+def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, weights_fn=None, score=None):
     """The best set for the evaluations [(entry name, entry, setting, talents, label)] from `pool`: the same steps as gear_opt.optimize
     (weights, greedy per slot in two variants, weights again, trinket pairs raced, variants raced, seed-2 confirmation), except that the
-    current item of a slot competes only when `keep_current` or the pool admits it (a pre-raid set must not keep raid items)."""
+    current item of a slot competes only when `keep_current` or the pool admits it (a pre-raid set must not keep raid items).
+    `weights_fn(items)` -> {stat name: value per point} and `score(bench row)` -> float replace the simulator's DPS weights and DPS (both
+    None for damage specs, unchanged; tank_gear.py passes tank value, 2026-10-15)."""
     main = evals[0]
     cur_items = [dict(x) if x else {} for x in cur_items] + [{}] * (17 - len(cur_items))
+    sc = score or (lambda row: row.get("dps") or 0)
 
     def weights(items):
+        if weights_fn:
+            return weights_fn(items)
         cfg = G.bench_cfg(main[1], repo, [{"label": "w", "talents": main[3], "gear_json": {"items": items}}], a.weight_iterations, 1, main[2], statweights=True)
         row = G.run_bench(repo, cfg, f"w-{tag}")["w"]
         if row.get("error"):
@@ -199,7 +204,7 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current):
             rows = G.run_bench(repo, G.bench_cfg(e, repo, [{"label": k, "talents": tal, "gear_json": {"items": v}} for k, v in sets.items()], its, seed, where), f"r-{tag}")
             ref = rows[next(iter(sets))]
             for k in sets:
-                out[k].append((rows[k].get("dps") or 0) / (ref.get("dps") or 1))
+                out[k].append(sc(rows[k]) / (sc(ref) or 1))
         return {k: sum(v) / len(v) for k, v in out.items()}
 
     w = weights(cur_items)

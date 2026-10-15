@@ -40,15 +40,14 @@ Beast-Survival plays the melee Survival list with **Summon Hawk** added: no pet,
 
 **Why it works**
 
-- **Summon Hawk** goes out every 6 seconds: a dive bomb for 108 plus 5% of your ranged attack power, then a hawk that attacks for 18 seconds. Two can be out at once and a new one replaces the one closest to leaving, so casting on cooldown keeps two up; **Unleashed Fury** makes them hit 15% harder.
-- The hawk sits high on the list: the simulator measured about 15% more damage for a hawk build once the hawk joined the melee rotation. It counts the hawks as guardians, not pets, so **Lone Wolf** (about 16% of this build's damage) stays on while they fly.
-- **Hunter's Mark** before the pull is for **Expose Prey**: each hit on a marked target has a 10% chance to light up **Mongoose Bite** for 10 seconds, and in a raid you never dodge, which is the bite's only other trigger. In the simulator **Expose Prey** is about 9% of this build's damage; recast the mark when its 2 minutes run out.
-- **Mongoose Bite** when it lights up, **Strider Kick** on its 8-second cooldown, and **Raptor Strike** whenever it is ready: it replaces your next main-hand swing and costs no global cooldown.
+- **Raptor Strike** first whenever it is ready: it replaces your next main-hand swing and costs no global cooldown. Then **Mongoose Bite** when it lights up and **Strider Kick** on its 8-second cooldown.
+- **Summon Hawk** next, about 27 times in a 3-minute fight: a dive bomb plus 5% of your ranged attack power, then a hawk that attacks for 18 seconds. Two can be out at once and a new one replaces the one closest to leaving; **Unleashed Fury** makes them hit 15% harder. The simulator measured about 15% more damage in a full raid once the hawk joined the melee rotation, and it counts hawks as guardians, not pets, so **Lone Wolf** stays on while they fly.
+- **Hunter's Mark** before the pull is for **Expose Prey**: each hit on a marked target has a 10% chance to light up **Mongoose Bite** for 10 seconds, and in a raid you rarely dodge, the bite's only other trigger. Recast the mark when its 2 minutes run out.
 - **Immolation Trap** at your feet under the boss every 24 seconds (one point in **Survivalist's Discipline**), 30% stronger with **Clever Traps**. **Wing Clip** fills the global cooldowns left over, for its small hit and another chance at **Mongoose Bite**.
 
 **Caveats**
 
-- Mana: this build has no **Resourcefulness**, and each hawk costs 190 mana. In a full raid the simulator needs one mana potion a fight; with only your own buffs it ran out of mana for more than two thirds of the fight and fell about a quarter behind the Survival builds. Without Blessing of Wisdom or Mana Spring, play Survival.
+- Mana: this build has no **Resourcefulness**, and each hawk costs 190 mana. In a full raid the simulator needs one mana potion a fight; with only your own buffs it ran out of mana and fell about a quarter behind the Survival builds on the training dummy. Without Blessing of Wisdom or Mana Spring, play Survival.
 - The build rests on the simulator's reading that a hawk is not a pet: if the game counts hawks as pets, **Lone Wolf** turns off while they are out. Check it at launch.
 - No pet: **Dismiss Pet** before the pull. Track the boss's creature type: **Improved Tracking** adds 5% only against the tracked type.
 
@@ -57,8 +56,6 @@ Beast-Survival plays the melee Survival list with **Summon Hawk** added: no pet,
 - Adds around you: **Explosive Trap** instead of **Immolation Trap**; they share the fire-trap cooldown.
 - Pulled off the boss by a mechanic: **Summon Hawk** reaches 35 yards, so keep the hawks coming, and make **Strider Kick** your last hit before you run (30% movement speed for 3 seconds).
 - Short on mana: let **Wing Clip** go first; its own hit is your least damage per point of mana.
-
-*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## The numbers
 
@@ -82,11 +79,11 @@ Beast-Survival plays the melee Survival list with **Summon Hawk** added: no pet,
 | Shoulders | [Theramore Pauldrons](https://www.wowhead.com/forever/item=271955) | [Giantstalker's Epaulets](https://www.wowhead.com/forever/item=16848) · *Sulfuron Harbinger, Molten Core* |
 | Back | [Howler's Furs](https://www.wowhead.com/forever/item=272414)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) | [Howler's Furs](https://www.wowhead.com/forever/item=272414)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) |
 | Chest | [Dawn Armor](https://www.wowhead.com/forever/item=252483) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Giantstalker's Breastplate](https://www.wowhead.com/forever/item=16845) · *Golemagg the Incinerator, Molten Core*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
-| Wrist | [Wildheart Bracers](https://www.wowhead.com/forever/item=16714) · *Scholomance*<br>+ [Enchant Bracer - Minor Agility](https://www.wowhead.com/forever/spell=7778) | [Giantstalker's Bracers](https://www.wowhead.com/forever/item=16850) · *Molten Core*<br>+ [Enchant Bracer - Minor Agility](https://www.wowhead.com/forever/spell=7778) |
-| Hands | [Theramore Gloves](https://www.wowhead.com/forever/item=271948)<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/spell=13823) | [Giantstalker's Gloves](https://www.wowhead.com/forever/item=16852) · *Shazzrah, Molten Core*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/spell=13823) |
+| Wrist | [Wildheart Bracers](https://www.wowhead.com/forever/item=16714) · *Scholomance*<br>+ [Enchant Bracer - Minor Agility](https://www.wowhead.com/forever/item=273470) | [Giantstalker's Bracers](https://www.wowhead.com/forever/item=16850) · *Molten Core*<br>+ [Enchant Bracer - Minor Agility](https://www.wowhead.com/forever/item=273470) |
+| Hands | [Theramore Gloves](https://www.wowhead.com/forever/item=271948)<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) | [Giantstalker's Gloves](https://www.wowhead.com/forever/item=16852) · *Shazzrah, Molten Core*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) |
 | Waist | [Warpwood Binding](https://www.wowhead.com/forever/item=18393) · *Tendris Warpwood, Dire Maul* | [Giantstalker's Belt](https://www.wowhead.com/forever/item=16851) · *Molten Core* |
 | Legs | [Outrider's Chain Leggings](https://www.wowhead.com/forever/item=22673)<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) | [Giantstalker's Leggings](https://www.wowhead.com/forever/item=16847) · *Magmadar, Molten Core*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) |
-| Feet | [Bloodmail Boots](https://www.wowhead.com/forever/item=14616) · *Scholomance*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) | [Giantstalker's Boots](https://www.wowhead.com/forever/item=16849) · *Gehennas, Molten Core*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) |
+| Feet | [Bloodmail Boots](https://www.wowhead.com/forever/item=14616) · *Scholomance*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) | [Giantstalker's Boots](https://www.wowhead.com/forever/item=16849) · *Gehennas, Molten Core*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) |
 | Finger | [Don Julio's Band](https://www.wowhead.com/forever/item=19325) | [Band of Accuria](https://www.wowhead.com/forever/item=17063) · *Ragnaros, Molten Core* |
 | Finger | [Ferocious Watcher's Signet](https://www.wowhead.com/forever/item=275981) | [Don Julio's Band](https://www.wowhead.com/forever/item=19325) |
 | Trinket | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) |

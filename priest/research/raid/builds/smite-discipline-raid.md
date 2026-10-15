@@ -79,7 +79,7 @@ A Smite damage build: Discipline to Penance and Power Infusion (Power in Light: 
 | 1 | **[`smite-discipline-raid`](smite-discipline-raid.md)** | ours: hand draft | 31/17/3 | 350 | +0.0% | 579 | +0.0% | 6 s |
 | 2 | *Smite* | community simulator | - | 346 | -1.1% | 575 | -0.6% | 8 s |
 | 3 | *Smite 31/17/3* | community simulator | - | 346 | -1.1% | 575 | -0.6% | 8 s |
-| 4 | [`smite-open-raid`](smite-open-raid.md) | ours: hand draft | 21/23/7 | 335 | -4.4% | 578 | -0.2% | 12 s |
+| 4 | [`smite-open-raid`](smite-open-raid.md) | ours: derived (open search) | 21/23/7 | 335 | -4.4% | 578 | -0.2% | 12 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -144,15 +144,15 @@ Before the pull: at -3s: cast Holy Fire.
 | 3 | strict sequence: cast Inner Focus; cast Devouring Plague | 0.7 |
 | 4 | if time left on Holy Fire < 1.875s: cast Holy Fire | 4.9 |
 | 5 | strict sequence: cast Inner Focus; cast Smite | 0.3 |
-| 6 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5 and mana % < 15%: cast Shadow Word: Pain | 0.1 |
-| 7 | if execute phase (E20): cast Shadow Word: Death | 0.8 |
+| 6 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5 and mana % < 15%: cast Shadow Word: Pain (rank 4) | 0.1 |
+| 7 | if execute phase (E20): cast Shadow Word: Death (rank 3) | 0.8 |
 | 8 | if auraIsInactive: cast Power Infusion | 0.3 |
 | 9 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5: cast Shadow Word: Pain | 3.6 |
-| 10 | cast Penance | 4.6 |
+| 10 | cast Penance (rank 3) | 4.6 |
 | 11 | if not Shadow Word: Pain is on the target and mana % ≥ 30%: cast Shadow Word: Pain | 3.6 |
-| 12 | if mana % ≥ 60%: cast Smite | 12.2 |
-| 13 | if mana % < 15%: cast Smite | 1.5 |
-| 14 | cast Smite | 3.4 |
+| 12 | if mana % ≥ 60%: cast Smite (rank 2) | 12.2 |
+| 13 | if mana % < 15%: cast Smite (rank 5) | 1.5 |
+| 14 | cast Smite (rank 7) | 3.4 |
 
 Lines of the simulator's rotation these builds never cast: cast Mind Flay (needs the Mind Flay talent); cast Shadowform (needs the Shadowform talent).
 

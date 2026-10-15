@@ -36,7 +36,7 @@
     }
    ],
    "notes": {
-    "Aspect of the Beast": "Melee attack power, and melee haste with Deadly Aspects: not in the simulator (it models only Aspect of the Hawk), so the melee hunter plays without it.",
+    "Aspect of the Beast": "Melee attack power, and melee haste with Deadly Aspects: the fork models only Aspect of the Hawk; our patch (2026-09-29, raidsim/patches/forever/sim/hunter/aspect_of_the_beast.go) adds it and the melee half of Deadly Aspects, so the melee hunter plays with it (our model).",
     "Sniper Shot": "A new Marksmanship shot (15 s cooldown); the rotation search offers it.",
     "Enchanted Flare": "Reveals stealth: utility.",
     "Pet family abilities": "Swipe, Pinch, Dismember, Tendon Rip, Mine!, Savage Rend, Web, Dust Cloud, Thunderstomp, Trickster's Dance: taught to pets; the simulator's pets use Claw, Bite and their family's classic ability."

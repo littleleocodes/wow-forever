@@ -13,6 +13,7 @@ import engine as E  # noqa: E402
 import tables as T  # noqa: E402
 
 CLASSES = {"priest": "priest", "paladin": "paladin", "shaman": "shaman", "druid": "druid"}
+_DEFAULT_GEAR = {k: dict(v) for k, v in T.HEALER_GEAR.items()}   # the lab's assumed gear, restored for jobs without a gear override
 
 
 def init(cls):
@@ -31,3 +32,13 @@ def capacity(job):
     mean = sum(tail) / k
     var = sum((x - mean) ** 2 for x in tail) / max(1, k - 1)
     return mean, math.sqrt(var) * math.sqrt(len(seeds) / k)
+
+
+def seed_caps(job):
+    """Per-seed capacities in seed order (unsorted, so two gear sets can be paired seed by seed) with a gear override: (cls, alloc,
+    gear stats or None for the lab's assumed gear, seeds, steps). heal_gear.py's stat weights and set checks (2026-10-15)."""
+    cls, alloc, gear, seeds, steps = job
+    T.HEALER_GEAR[cls] = dict(gear) if gear else dict(_DEFAULT_GEAR[cls])
+    mod = importlib.import_module(CLASSES[cls])
+    h = mod.Healer(alloc)
+    return [E.seed_capacity(h, s, steps=steps) for s in seeds]

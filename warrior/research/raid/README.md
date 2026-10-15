@@ -52,7 +52,7 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`fury-open-raid`](builds/fury-open-raid.md) | ours: hand draft | 18/31/2 | 516 | +0.0% | 917 | +0.0% | 0 s |
+| 1 | [`fury-open-raid`](builds/fury-open-raid.md) | ours: derived (open search) | 18/31/2 | 516 | +0.0% | 917 | +0.0% | 0 s |
 | 2 | [`opt-fury-dw-raid-raid-dps`](builds/opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 19/32/0 | 496 | -4.0% | 879 | -4.1% | 0 s |
 | 3 | [`fury-dw-raid`](builds/fury-dw-raid.md) | ours: hand draft | 13/38/0 | 489 | -5.2% | 875 | -4.6% | 0 s |
 | 4 | *DPS* | community simulator | - | 483 | -6.4% | 874 | -4.7% | 0 s |
@@ -72,7 +72,7 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`arms-community-parse`](builds/arms-community-parse.md) | ours: parse build | 37/14/0 | 481 | +0.0% | 964 | +0.0% | 0 s |
+| 1 | [`arms-community-parse`](builds/arms-community-parse.md) | ours: derived (simulator search) | 37/14/0 | 481 | +0.0% | 964 | +0.0% | 0 s |
 | 2 | [`arms-battle-raid`](builds/arms-battle-raid.md) | ours: hand draft | 34/17/0 | 480 | -0.3% | 866 | -10.1% | 0 s |
 | 3 | *Arms 39/12/0* | community simulator | - | 478 | -0.8% | 962 | -0.2% | 0 s |
 
@@ -188,6 +188,10 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 | Raid DPS, two-hander | arms-2h-raid | [20/31/0](builds/opt-arms-2h-raid-raid-dps.md) (+102.0%) | [arms-2h-raid](builds/arms-2h-raid.md) |
 | Raid main tank | prot-tank | [14/5/32](builds/opt-prot-tank-raid-tank.md) (+58.4%) | [prot-raid-tank](builds/prot-raid-tank.md) |
 
-Model findings: Dual-wield Fury 18/33/0 and two-hander Fury 19/32/0 score within 2% of each other and both beat the Arms draft; Bloodthirst, Flurry, Enrage, Unbridled Wrath and Anger Management are the raid core in every DPS build. Protection 6/5/40 takes the deep Protection rows (Vitality, Focused Rage, Bastion, Shield Slam) plus Anticipation/Improved Shield Wall now that defense and armor are priced from their arithmetic.
+Model findings (generated from the optimizer builds; scores are within each spec model, never across models):
 
-Beta hypotheses (model claims without community precedent, unverified): Values of the new talents (Bloodthrill, Spearing Strike, Weaponmaster, Bastion, Vitality); dual-wield vs two-hander leveling assumes equal talentless baselines; Unbridled Wrath at 60%. Level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).
+- **Raid DPS, dual wield Fury:** 19/32/0; biggest talents by score lost when removed: Flurry (28.6), Bloodthirst (28.1), Dual Wield Specialization (21.8), Cruelty (14.1), Deep Wounds (14.0); the hand draft `fury-dw-raid` is 13/38/0.
+- **Raid DPS, two-hander:** 20/31/0; biggest talents by score lost when removed: Flurry (35.7), Bloodthirst (29.3), Cruelty (15.2), Deep Wounds (11.7), Unbridled Wrath (7.2); the hand draft `arms-2h-raid` is 19/32/0.
+- **Raid main tank:** 14/5/32; biggest talents by score lost when removed: Shield Slam (22.7), Defiance (10.9), Deflection (5.9), Bastion (5.4), Improved Revenge (4.8); the hand draft `prot-raid-tank` is 14/5/32.
+
+Beta hypotheses: every build's unverified claims are its `open_questions`, collected in [`_reference/launch-checklist.md`](../../../_reference/launch-checklist.md); level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).

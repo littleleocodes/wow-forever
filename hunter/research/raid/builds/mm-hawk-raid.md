@@ -70,10 +70,10 @@ Our Marksmanship raid draft's tree split with Summon Hawk, a Forever Beast Maste
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`mm-hawk-raid`](mm-hawk-raid.md)** | ours: hand draft | 22/29/0 | 474 | +0.0% | 806 | -7.7% | 13 s |
-| 2 | [`beast-mastery-ml-raid`](beast-mastery-ml-raid.md) | ours: hand draft | 31/20/0 | 465 | -1.9% | 847 | -3.1% | 44 s |
-| 3 | *Beast Mastery 35/16/0* | community simulator | - | 461 | -2.7% | 787 | -9.9% | 14 s |
-| 4 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: hand draft | 7/39/5 | 460 | -3.0% | 874 | +0.0% | 40 s |
+| 1 | **[`mm-hawk-raid`](mm-hawk-raid.md)** | ours: hand draft | 22/29/0 | 474 | +0.0% | 806 | -5.4% | 13 s |
+| 2 | [`beast-marks-open-raid`](beast-marks-open-raid.md) | ours: derived (open search) | 27/21/3 | 473 | -0.2% | 852 | +0.0% | 24 s |
+| 3 | [`beast-mastery-ml-raid`](beast-mastery-ml-raid.md) | ours: derived (ML search) | 31/20/0 | 465 | -1.9% | 847 | -0.7% | 44 s |
+| 4 | *Beast Mastery 35/16/0* | community simulator | - | 461 | -2.7% | 787 | -7.6% | 14 s |
 
 ## Rotation (community simulator, training dummy)
 

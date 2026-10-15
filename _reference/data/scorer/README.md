@@ -14,8 +14,8 @@ python _reference/data/scorer/respec.py mage --write                     # when 
 python _reference/data/scorer/compare_effects.py                          # buff/nerf report per class -> changes/
 ```
 
-`--write` saves a report to `<class>/<leveling|raid|pvp>/optimizer/<spec>-<profile>.md` (the profile's scenario) (or `classic-baseline/optimizer/`
-for `--game classic-era`). `--export` (Forever only) inserts the optimized build as `opt-<spec>-<profile>` into the
+`--write` saves a report to `<class>/research/<leveling|raid|pvp>/optimizer/<spec>-<profile>.md` (the profile's scenario; `paths.optimizer_report`)
+(or `<class>/research/talents/classic-baseline/optimizer/` for `--game classic-era`). `--export` (Forever only) inserts the optimized build as `opt-<spec>-<profile>` into the
 class's `proposed-builds.json`, where `validate_builds.py` and `render_builds.py` treat it like any other build.
 Classic `builds.json` files are never written by the optimizer: they are the calibration reference.
 
@@ -157,7 +157,7 @@ at the maximum. The raid-dps profile remains the "bring the buff" profile with t
 the optimizer's best build for that level, bought in optimizer order, then extended greedily to 60. A dynamic
 programme then chooses at which levels to respec between plans, charging the Classic respec price (1g, then +5g
 per respec, cap 50g) converted to hours through a gold-per-hour table, and minimising total hours
-(hours-per-level × (1 − leveling score)). Output: `<class>/talents/<forever|classic-baseline>/respec-plan.md` with
+(hours-per-level × (1 − leveling score)). Output: `<class>/research/leveling/respec-plan.md` (Classic: `<class>/research/talents/classic-baseline/respec-plan.md`) with
 the recommended schedule (with its point-by-point path), the best never-respec plan, per-model schedules when a
 class has several leveling models, and every plan's score curve. The hours/gold tables at the top of `respec.py`
 are assumptions — change them and re-run. Finding: in most classes the level-30/40 plan extended greedily beats
@@ -222,7 +222,7 @@ moved away. The Classic pages carry the new results; the verdicts above still ho
 
 Re-check of 2026-09-26 (evening), after the Classic-era models got their own measured inputs: the raid damage split and the
 raid-mode talent values now come from the upstream wowsims/classic simulator (`rebuild.py --steps classic`, reports under
-`<class>/talents/classic-baseline/raidsim/`, shares in each source's `game_overrides["classic-era"]`, fits in
+`<class>/research/talents/classic-baseline/raidsim/`, shares in each source's `game_overrides["classic-era"]`, fits in
 `effects/classic-era/`), and the optimizer's search is seeded with the compared build. Six cases changed against the morning
 check: moonkin raid (35/0/16, the community build exactly) and the warlock raid (30/0/21 SM/Ruin exactly) moved onto the
 community builds; MM raid (22/29/0, no more Survival points) moved toward it; the lone frost mage moved to Arcane Power
@@ -251,11 +251,11 @@ Table updated.
 Loop audit (2026-09-26 night): every flagged talent without a documented reason (40 across the nine classes) now has a role, a reason
 and a source in `loops/<class>.json`; the raid-buff talents carry measured raid values (`_reference/raid-buff-values.md`).
 
-Calibration reports for every row: `<class>/talents/classic-baseline/optimizer/<spec>-<profile>.md`. `classic_check.py` re-runs every
+Calibration reports for every row: `<class>/research/talents/classic-baseline/optimizer/<spec>-<profile>.md`. `classic_check.py` re-runs every
 row and reports whether the optimized build moved (the spec models' shares, time splits and fight coupling are shared by both games and
 are fitted to the Forever simulators since 2026-09-26, so the scores move with them; the builds are what the table judges).
 
-## Results for WoW: Forever — see `<class>/<scenario>/optimizer/`, the `opt-*` builds and `changes/`
+## Results for WoW: Forever — see `<class>/research/<scenario>/optimizer/`, the `opt-*` builds and `changes/`
 
 Headlines after the 2026-09-25 refresh (beta client build 1.60.1.70009; all subject to the encodings; scores are vs. a
 talentless character of the same model, so compare builds *within* a model, and across models only through
@@ -288,7 +288,7 @@ talentless character of the same model, so compare builds *within* a model, and 
   Balance 36/2/13 (+157%: Eclipse, Nature's Grace, Vengeance); Cat leveling 12/31/8, Balance leveling 40/11/0.
 
 Which Classic talents each Forever build drops and which new ones it adds: `changes/<class>.md` ("Builds that
-changed"). When to respec while leveling: `<class>/leveling/respec-plan.md`.
+changed"). When to respec while leveling: `<class>/research/leveling/respec-plan.md`.
 
 ## Calibration to the fight lab (first pass 2026-09-26; re-run by `rebuild.py`)
 
@@ -328,9 +328,9 @@ drinking, deaths) and `fightlab/calibrate.py` fits this scorer to it. What the F
   talents large, and Wrack, Improved Judgement, Maelstrom Weapon and Vampiric Embrace zero or negative) and are re-calibrated
   by `_reference/data/rebuild.py` whenever the sim changes — on 2026-09-26 the mob tables moved to the Classic 1.12 creature
   database (mobs hit about half as hard as the rule of thumb assumed), caster mobs and Bear Form were added and the leveling
-  order gained the deep-talent rush rule. The current fitted values, kill times and talent rankings are in each class's `leveling/README.md`
-  "Fight lab" section (generated), `<class>/leveling/fightlab/<spec>-calibration.json` and `_reference/fightlab-summary.md`.
-- Full tables: `<class>/leveling/fightlab/<spec>.md`, `sensitivity.md` (the ranking under moved mob health, mob damage,
+  order gained the deep-talent rush rule. The current fitted values, kill times and talent rankings are in each class's `research/leveling/README.md`
+  "Fight lab" section (generated), `<class>/research/leveling/fightlab/<spec>-calibration.json` and `_reference/fightlab-summary.md`.
+- Full tables: `<class>/research/leveling/fightlab/<spec>.md`, `sensitivity.md` (the ranking under moved mob health, mob damage,
   root breaks, pushback, gear tier and caster share), `*-calibration.json`; the candidate builds raced in the sim are in
   `fightlab/candidates/` (`run.py --compare <file.json ...>`); `fightlab/last-rebuild.json` says which build won the last race.
 
@@ -342,10 +342,16 @@ drinking, deaths) and `fightlab/calibrate.py` fits this scorer to it. What the F
   (`abs_dps_factor`); raw scores are relative to each model's own talent-less baseline. Only Hunter's factors
   have been estimated so far; the ElliotWood/Forever simulator's per-spec results (beta pass) are listed in
   `_reference/beta-refresh-2026-09-25.md` as candidates but not adopted.
-- Hand-entered values are the weakest inputs; every talent rank's text is now the beta client's (build 1.60.1.70009,
-  level-60 tooltips), so the second-weakest inputs are the spec models' shares and the proc/uptime arithmetic in the
-  manual files. The `notes` say which each entry is; `<class>/spells/README.md` holds the beta spellbook numbers.
+- Hand-entered values are the weakest inputs; every talent rank's text is now the beta client's (the build `data_build.py` names, 1.60.1.70291 since
+  2026-10-08; level-60 tooltips), so the second-weakest inputs are the spec models' shares and the proc/uptime arithmetic in the
+  manual files. The `notes` say which each entry is; `<class>/research/spells/README.md` holds the beta spellbook numbers.
 - Mana-cost effects use the *largest* mana share among the abilities in their scope (not the sum); lists that
   cover a whole spec are encoded as `type:spell` or a group tag (`dmgspell`, `ability:Destruction`) instead.
 - Rotations are fixed shares: the model cannot tell that a DS/Ruin warlock skips Corruption or that an
   Enhancement shaman's Lightning Bolt share grows with Maelstrom Weapon (the latter is encoded as a damage bump).
+
+## Helper modules
+
+- `splitfx.py`: splits a talent's effect entries for a calibration (fight lab, raid sim, healer lab) so the fitted model's modes change
+  and every other model and mode keeps its values; `reseed_zero` re-seeds a talent every earlier fit had zeroed.
+- `kinds_io.py`: reads and writes `kinds.json` in its compact layout for scripts that edit it.

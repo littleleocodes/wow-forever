@@ -35,17 +35,17 @@ Melee Survival fights at the boss with two one-handers and no pet. **Raptor Stri
 
 **Why it works**
 
-- **Hunter's Mark** before the pull is for **Expose Prey**: each of your hits on a marked target has a 10% chance to light up **Mongoose Bite** for 10 seconds. Otherwise **Mongoose Bite** lights up only after you dodge (not the boss), and in a raid the boss hits your tank, so nearly all your bites come from **Expose Prey**. The mark lasts 2 minutes: put it back when it drops.
+- **Hunter's Mark** before the pull is for **Expose Prey**: each of your hits on a marked target has a 10% chance to light up **Mongoose Bite** for 10 seconds. Otherwise **Mongoose Bite** lights up only after you dodge (not the boss), and in a raid the boss hits your tank, so nearly all your bites, about 39 a fight, come from **Expose Prey**. The mark lasts 2 minutes: put it back when it drops.
 - **Aspect of the Beast** adds 110 melee attack power, and with **Deadly Aspects** each melee auto attack has a 10% chance to speed your swings by 30% for 12 seconds. **Rapid Fire** speeds up melee too in Forever (40% for 15 seconds): press it at the pull.
-- **Mongoose Bite** comes first when it lights up: weapon damage plus 57, and **Lacerating Strikes** adds a bleed worth 40% of the bite over 21 seconds. Using it at once frees its 5-second cooldown for the next one.
+- **Raptor Strike** is first and never waits: it replaces your next main-hand swing and costs no global cooldown, so queue it every time its 6-second cooldown ends.
+- **Mongoose Bite** next, as soon as it lights up: weapon damage plus 57, and **Lacerating Strikes** adds a bleed worth 40% of the bite over 21 seconds. Using it at once frees its 5-second cooldown for the next one.
 - **Strider Kick** (full weapon damage, 8-second cooldown) and **Immolation Trap** go on cooldown. Traps work in combat in Forever but land at your own feet, so standing at the boss puts the trap under it: 690 Fire damage over 15 seconds, 30% more with **Clever Traps**, every 18 seconds with **Survivalist's Discipline**.
-- **Raptor Strike** never waits its turn: it replaces your next main-hand swing and costs no global cooldown, so queue it every time its 6-second cooldown ends.
 - **Wing Clip** is the filler. Its own hit is small (50 damage), but every hit on your marked target is another chance at **Mongoose Bite**, and the simulator measured about 10% more damage in a full raid with **Wing Clip** in every empty global cooldown.
 
 **Caveats**
 
 - No pet: **Lone Wolf**'s 20% needs no active pet, so **Dismiss Pet** before the pull. Track the boss's creature type too: **Improved Tracking** adds 5% only against the type you are tracking.
-- Mana: **Resourcefulness** cuts the cost of traps and melee abilities by 60%, and in a full raid that is enough. With only your own buffs the simulator's hunter ran dry for about 45 seconds of a 3-minute fight; when short, spend the mana on **Mongoose Bite**, **Strider Kick** and the trap before **Wing Clip**.
+- Mana: **Resourcefulness** cuts the cost of traps and melee abilities by 60%, and in a full raid that is enough. With only your own buffs the hunter runs short; then spend the mana on **Mongoose Bite**, **Strider Kick** and the trap before **Wing Clip**.
 - Blizzard's notes say **Expose Prey** works on the target of your own **Hunter's Mark**. With several hunters in the raid, make sure the mark on the boss is yours (the simulator accepts any).
 - **Explosive Trap** shares the fire-trap cooldown with **Immolation Trap**, so on one target it never comes up.
 
@@ -55,8 +55,6 @@ Melee Survival fights at the boss with two one-handers and no pet. **Raptor Stri
 - When you must leave the boss, make **Strider Kick** your last hit: it adds 30% movement speed for 3 seconds.
 - If you pull threat, **Feign Death** (30-second cooldown; **Survival Tactics** makes it more likely to land).
 - In the last few seconds, skip a fresh **Immolation Trap**: its damage comes over 15 seconds.
-
-*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## The numbers
 
@@ -80,11 +78,11 @@ Melee Survival fights at the boss with two one-handers and no pet. **Raptor Stri
 | Shoulders | [Theramore Pauldrons](https://www.wowhead.com/forever/item=271955) | [Giantstalker's Epaulets](https://www.wowhead.com/forever/item=16848) · *Sulfuron Harbinger, Molten Core* |
 | Back | [Howler's Furs](https://www.wowhead.com/forever/item=272414)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) | [Howler's Furs](https://www.wowhead.com/forever/item=272414)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) |
 | Chest | [Dawn Armor](https://www.wowhead.com/forever/item=252483) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Giantstalker's Breastplate](https://www.wowhead.com/forever/item=16845) · *Golemagg the Incinerator, Molten Core*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
-| Wrist | [Wildheart Bracers](https://www.wowhead.com/forever/item=16714) · *Scholomance*<br>+ [Enchant Bracer - Minor Agility](https://www.wowhead.com/forever/spell=7778) | [Giantstalker's Bracers](https://www.wowhead.com/forever/item=16850) · *Molten Core*<br>+ [Enchant Bracer - Minor Agility](https://www.wowhead.com/forever/spell=7778) |
-| Hands | [Theramore Gloves](https://www.wowhead.com/forever/item=271948)<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/spell=13823) | [Giantstalker's Gloves](https://www.wowhead.com/forever/item=16852) · *Shazzrah, Molten Core*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/spell=13823) |
+| Wrist | [Wildheart Bracers](https://www.wowhead.com/forever/item=16714) · *Scholomance*<br>+ [Enchant Bracer - Minor Agility](https://www.wowhead.com/forever/item=273470) | [Giantstalker's Bracers](https://www.wowhead.com/forever/item=16850) · *Molten Core*<br>+ [Enchant Bracer - Minor Agility](https://www.wowhead.com/forever/item=273470) |
+| Hands | [Theramore Gloves](https://www.wowhead.com/forever/item=271948)<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) | [Giantstalker's Gloves](https://www.wowhead.com/forever/item=16852) · *Shazzrah, Molten Core*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) |
 | Waist | [Warpwood Binding](https://www.wowhead.com/forever/item=18393) · *Tendris Warpwood, Dire Maul* | [Giantstalker's Belt](https://www.wowhead.com/forever/item=16851) · *Molten Core* |
 | Legs | [Outrider's Chain Leggings](https://www.wowhead.com/forever/item=22673)<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) | [Giantstalker's Leggings](https://www.wowhead.com/forever/item=16847) · *Magmadar, Molten Core*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) |
-| Feet | [Bloodmail Boots](https://www.wowhead.com/forever/item=14616) · *Scholomance*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) | [Giantstalker's Boots](https://www.wowhead.com/forever/item=16849) · *Gehennas, Molten Core*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) |
+| Feet | [Bloodmail Boots](https://www.wowhead.com/forever/item=14616) · *Scholomance*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) | [Giantstalker's Boots](https://www.wowhead.com/forever/item=16849) · *Gehennas, Molten Core*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) |
 | Finger | [Don Julio's Band](https://www.wowhead.com/forever/item=19325) | [Band of Accuria](https://www.wowhead.com/forever/item=17063) · *Ragnaros, Molten Core* |
 | Finger | [Ferocious Watcher's Signet](https://www.wowhead.com/forever/item=275981) | [Don Julio's Band](https://www.wowhead.com/forever/item=19325) |
 | Trinket | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) |

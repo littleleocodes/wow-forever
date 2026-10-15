@@ -24,18 +24,19 @@
 - Respeccing costs gold (1g the first time, +5g per respec up to 50g in Classic). Leveling builds in this
   project are therefore chosen to end in a usable 60 build where possible.
 
-## What Forever changes (beta client build 1.60.1.70009, 2026-09-25)
+## What Forever changes (beta client build 1.60.1.70291, 2026-10-08)
 
 - **Same skeleton**: 3 trees, 7 tiers, 51 points, 5-per-tier gating (assumed — fan calculators and the demo
   behave this way; not yet confirmed by Blizzard).
 - **A fourth 1-point talent per tree at the 16-point mark** (tier 4), in addition to the Classic 11/21/31
   gold-medal talents — e.g. Warrior Arms *Spearing Strike*, Fury *Raging Blows*, Protection *Vanguard*.
-- **~145 new talents** (mostly later-expansion abilities: Mutilate, Lava Burst, Penance, Hot Streak, Mangle,
-  Lone Wolf, Soul Link-style hybrids) and **~108 Classic talents removed** — notably the weapon specializations
+- **466 talents in build 70291: 140 new** (mostly later-expansion abilities: Mutilate, Lava Burst, Penance, Heating Up (Hot Streak
+  until 70170), Lone Wolf, Soul Link-style hybrids) and **105 Classic talents removed** — notably the weapon specializations
   (Warrior, Rogue, Shaman), Tactical Mastery, Aimed Shot/Lethal Shots as talents, Improved Backstab,
   Blessing of Kings (now baseline), Consecration (now baseline), Omen of Clarity (now baseline).
-- **~127 talents reworded/retuned** and **~81 moved** to a different tier. The per-class `talent-trees.md` shows
-  every talent with its Classic tooltip next to the Forever one.
+- **244 talents changed** (reworded or retuned), **28 moved** to a different position and 54 the same as Classic (the `status` field of
+  `_reference/data/forever-talents/<class>.json`; counts of 2026-10-15). The per-class `research/talents/forever/talent-trees.md`
+  shows every talent with its Classic tooltip next to the Forever one; what each beta build changed: `forever-talents/README.md`.
 - Tooltip numbers in the data are the **beta client's level-60 values with no gear** (the demo's level-38 numbers are gone).
 - The beta client stores the trees in retail-style Trait tables (TraitTree/TraitNode/TraitEdge), one tree per class; the talent panel has **Primary** and **Secondary** tabs (not yet explained; likely dual spec). No talent has four ranks any more (ranks are 1, 2, 3 or 5).
 - Respecs in the beta cost 1 silver if you have not changed talents recently (temporary, beta only); after a reset the next one is much dearer but drops back to 1 silver after an hour (dev notes 2026-09-24).
@@ -43,7 +44,7 @@
 ## How this affects "optimal talents"
 
 1. Any Classic build whose points sit in removed talents has **orphaned points** — see each class's
-   `talents/forever/baseline-audit.md` for the exact count.
+   `research/talents/forever/baseline-audit.md` for the exact count.
 2. Tier requirements shift when talents move; a Classic build can become illegal in Forever even if every
    talent still exists. The validator re-checks proposed Forever builds against the Forever trees.
 3. New capstones and 16-point talents can change *which tree* a spec wants to go deep in

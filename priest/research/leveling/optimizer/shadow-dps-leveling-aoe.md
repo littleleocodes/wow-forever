@@ -9,89 +9,89 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Shadowform | Shadow | 7 | +39.36% | manual |
-| Twilight Focus | Holy | 1 | +8.79% | manual |
-| Shadow Reach | Shadow | 2 | +6.11% | manual |
-| Power Infusion | Discipline | 7 | +1.27% | manual |
-| Shadow Focus | Shadow | 1 | +1.17% | manual |
-| Shadow Weaving | Shadow | 4 | +1.15% | manual |
-| Vampiric Embrace | Shadow | 4 | +1.12% | manual |
-| Spell Warding | Holy | 2 | +0.93% | manual |
-| Blackout | Shadow | 1 | +0.73% | manual |
-| Searing Light | Holy | 4 | +0.65% | manual |
-| Improved Inner Fire | Discipline | 4 | +0.62% | manual |
-| Blessed Recovery | Holy | 3 | +0.62% | manual |
-| Mind Flay | Shadow | 3 | +0.41% | manual |
+| Shadowform | Shadow | 7 | +17.10% | manual |
+| Mind Flay | Shadow | 3 | +5.07% | manual |
+| Twilight Focus | Holy | 1 | +3.98% | manual |
+| Improved Shadow Word: Pain | Shadow | 2 | +2.25% | manual |
+| Power Infusion | Discipline | 7 | +1.12% | manual |
+| Devouring Contagion | Shadow | 5 | +1.09% | manual |
+| Shadow Weaving | Shadow | 4 | +0.99% | manual |
+| Meditation | Discipline | 3 | +0.60% | manual |
+| Darkness | Shadow | 6 | +0.47% | manual |
+| Spell Warding | Holy | 2 | +0.40% | manual |
 | Holy Nova | Holy | 3 | +0.40% | manual |
-| Darkness | Shadow | 6 | +0.30% | manual |
 | Inner Focus | Discipline | 3 | +0.28% | manual |
-| Improved Power Word: Shield | Discipline | 2 | +0.22% | manual |
-| Holy Specialization | Holy | 1 | +0.16% | manual |
-| Devouring Contagion | Shadow | 5 | +0.07% | manual |
-| Silent Resolve | Discipline | 2 | +0.06% | manual |
-| Improved Mind Blast | Shadow | 3 | +0.06% | manual |
-| Meditation | Discipline | 3 | +0.04% | manual |
-| Spirit Tap | Shadow | 1 | +0.03% | manual |
-| Penance | Discipline | 5 | +0.01% | manual |
-| Prayer of Mending | Holy | 7 | +0.01% | manual |
-| Litany of Light | Holy | 5 | +0.01% | manual |
-| Mental Agility | Discipline | 3 | +0.01% | manual |
+| Improved Inner Fire | Discipline | 4 | +0.27% | manual |
+| Blessed Recovery | Holy | 3 | +0.27% | manual |
+| Penance | Discipline | 5 | +0.13% | manual |
+| Prayer of Mending | Holy | 7 | +0.13% | manual |
+| Litany of Light | Holy | 5 | +0.09% | manual |
+| Mental Agility | Discipline | 3 | +0.08% | manual |
+| Shadow Focus | Shadow | 1 | +0.08% | manual |
+| Silent Resolve | Discipline | 2 | +0.03% | manual |
+| Shadow Reach | Shadow | 2 | +0.02% | manual |
 | Power in Light | Discipline | 1 | +0.00% | manual |
 | Wand Specialization | Discipline | 1 | +0.00% | manual |
 | Twin Disciplines | Discipline | 1 | +0.00% | manual |
+| Holy Precision | Discipline | 2 | +0.00% | manual |
+| Improved Power Word: Shield | Discipline | 2 | +0.00% | manual |
+| Martyrdom | Discipline | 2 | +0.00% | manual |
+| Mental Strength | Discipline | 4 | +0.00% | manual |
+| Soul Warding | Discipline | 4 | +0.00% | manual |
+| Improved Mana Burn | Discipline | 4 | +0.00% | manual |
 
-## Optimized build: 0/17/34  score +75.98%  (dps x2.963, sustain x3.387, surv x1.773, utility +0.40%)
+## Optimized build: 6/14/31  score +47.13%  (dps x1.712, sustain x2.145, surv x1.306, utility +0.40%)
 
 ```
-  Holy: Twilight Focus 3, Holy Specialization 5, Spell Warding 5, Holy Nova 1, Blessed Recovery 3
-  Shadow: Shadow Focus 5, Blackout 5, Spirit Tap 2, Shadow Reach 2, Mind Flay 1, Improved Mind Flay 2, Improved Mind Blast 5, Vampiric Embrace 1, Shadow Weaving 3, Devouring Contagion 2, Darkness 5, Shadowform 1
+  Discipline: Power in Light 5, Silent Resolve 1
+  Holy: Twilight Focus 3, Improved Renew 2, Spell Warding 5, Holy Nova 1, Blessed Recovery 3
+  Shadow: Shadow Focus 5, Blackout 5, Spirit Tap 2, Improved Shadow Word: Pain 2, Shadow Reach 2, Mind Flay 1, Improved Mind Flay 2, Vampiric Embrace 1, Shadow Weaving 3, Devouring Contagion 2, Darkness 5, Shadowform 1
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Power Infusion | Discipline 7 | 1/1 | +0.40% | no |
-| Inner Focus | Discipline 3 | 1/1 | +0.09% | no |
-| Searing Light | Holy 4 | 1/2 | +0.08% | no |
-| Improved Inner Fire | Discipline 4 | 1/3 | +0.07% | no |
-| Improved Power Word: Shield | Discipline 2 | 1/3 | +0.02% | no |
-| Silent Resolve | Discipline 2 | 1/3 | +0.01% | no |
-| Meditation | Discipline 3 | 1/3 | +0.00% | no |
-| Spirit Tap | Shadow 1 | 3/5 | +0.00% | yes |
-| Penance | Discipline 5 | 1/1 | +0.00% | no |
-| Prayer of Mending | Holy 7 | 1/1 | +0.00% | no |
-| Litany of Light | Holy 5 | 1/2 | +0.00% | no |
-| Mental Agility | Discipline 3 | 1/3 | +0.00% | no |
-| Power in Light | Discipline 1 | 1/5 | +0.00% | yes |
+| Power Infusion | Discipline 7 | 1/1 | +0.86% | no |
+| Inner Focus | Discipline 3 | 1/1 | +0.19% | no |
+| Improved Inner Fire | Discipline 4 | 1/3 | +0.09% | no |
+| Meditation | Discipline 3 | 1/3 | +0.08% | no |
+| Penance | Discipline 5 | 1/1 | +0.02% | no |
+| Prayer of Mending | Holy 7 | 1/1 | +0.02% | no |
+| Litany of Light | Holy 5 | 1/2 | +0.01% | no |
+| Mental Agility | Discipline 3 | 1/3 | +0.01% | no |
+| Silent Resolve | Discipline 2 | 2/3 | +0.01% | yes |
 | Wand Specialization | Discipline 1 | 1/2 | +0.00% | yes |
 | Twin Disciplines | Discipline 1 | 1/5 | +0.00% | yes |
+| Holy Precision | Discipline 2 | 1/3 | +0.00% | yes |
+| Improved Power Word: Shield | Discipline 2 | 1/3 | +0.00% | yes |
+| Martyrdom | Discipline 2 | 1/2 | +0.00% | yes |
+| Mental Strength | Discipline 4 | 1/5 | +0.00% | no |
 
 ## Leveling order (lookahead 16; receding horizon)
 
 | Levels | Tree | Talent | Pts | Score at end |
 |---|---|---|---|---|
-| 10-12 | Holy | Twilight Focus | 3 | +24.6% |
-| 13-15 | Shadow | Shadow Focus | 3 | +28.5% |
-| 16-17 | Shadow | Blackout | 2 | +29.7% |
-| 18-19 | Shadow | Shadow Reach | 2 | +43.5% |
-| 20-22 | Shadow | Blackout | 3 | +36.3% |
-| 23 | Shadow | Mind Flay | 1 | +42.7% |
-| 24-25 | Shadow | Improved Mind Flay | 2 | +48.6% |
-| 26-27 | Holy | Holy Specialization | 2 | +48.7% |
-| 28-32 | Holy | Spell Warding | 5 | +50.8% |
-| 33 | Holy | Holy Nova | 1 | +51.2% |
-| 34-35 | Shadow | Shadow Focus | 2 | +51.8% |
-| 36-37 | Shadow | Shadow Weaving | 2 | +53.3% |
-| 38 | Shadow | Vampiric Embrace | 1 | +53.8% |
-| 39 | Shadow | Shadow Weaving | 1 | +54.1% |
-| 40 | Shadow | Improved Mind Blast | 1 | +54.1% |
-| 41 | Shadow | Devouring Contagion | 1 | +54.2% |
-| 42-45 | Shadow | Improved Mind Blast | 4 | +54.3% |
-| 46-50 | Shadow | Darkness | 5 | +55.5% |
-| 51 | Shadow | Shadowform | 1 | +75.7% |
-| 52-54 | Holy | Blessed Recovery | 3 | +75.9% |
-| 55-57 | Holy | Holy Specialization | 3 | +76.0% |
-| 58 | Shadow | Devouring Contagion | 1 | +76.0% |
-| 59-60 | Shadow | Spirit Tap | 2 | +76.0% |
+| 10-12 | Holy | Twilight Focus | 3 | +14.6% |
+| 13-17 | Shadow | Shadow Focus | 5 | +15.0% |
+| 18-19 | Shadow | Improved Shadow Word: Pain | 2 | +21.1% |
+| 20-21 | Shadow | Shadow Reach | 2 | +15.4% |
+| 22 | Shadow | Blackout | 1 | +15.4% |
+| 23 | Shadow | Mind Flay | 1 | +24.0% |
+| 24-25 | Shadow | Improved Mind Flay | 2 | +26.8% |
+| 26-27 | Shadow | Blackout | 2 | +26.8% |
+| 28-30 | Shadow | Shadow Weaving | 3 | +28.8% |
+| 31 | Shadow | Blackout | 1 | +28.8% |
+| 32 | Shadow | Vampiric Embrace | 1 | +27.9% |
+| 33-34 | Shadow | Devouring Contagion | 2 | +29.2% |
+| 35 | Shadow | Blackout | 1 | +29.2% |
+| 36-37 | Shadow | Spirit Tap | 2 | +29.2% |
+| 38-42 | Shadow | Darkness | 5 | +31.5% |
+| 43 | Shadow | Shadowform | 1 | +45.6% |
+| 44-45 | Holy | Improved Renew | 2 | +45.6% |
+| 46-50 | Holy | Spell Warding | 5 | +46.4% |
+| 51 | Holy | Holy Nova | 1 | +46.8% |
+| 52-54 | Holy | Blessed Recovery | 3 | +47.1% |
+| 55-59 | Discipline | Power in Light | 5 | +47.1% |
+| 60 | Discipline | Silent Resolve | 1 | +47.1% |
 

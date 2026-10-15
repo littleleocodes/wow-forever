@@ -5,9 +5,9 @@
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
 | `mm-hawk-raid` | 22/29/0 | 474 | 15 | +0.0% | 388 | 13 | - |
+| `beast-marks-open-raid` | 27/21/3 | 473 | 15 | -0.2% | 369 | 24 | - |
 | `beast-mastery-ml-raid` | 31/20/0 | 465 | 14 | -1.9% | 345 | 44 | - |
 | sim preset: Beast Mastery 35/16/0 | - | 461 | 12 | -2.7% | 341 | 14 | - |
-| `beast-marks-ml-raid` | 7/39/5 | 460 | 16 | -3.0% | 396 | 40 | - |
 
 ## Damage shares (`mm-hawk-raid`, simulator actions)
 
@@ -27,7 +27,7 @@ Mapped onto the spec model's sources: ; 100% of the damage matched no source (ra
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
 - mm-hawk-raid: `53200005051001-105355000150004`
+- beast-marks-open-raid: `552100050500022-00530503005-3`
 - beast-mastery-ml-raid: `5320001505101251-00530502005`
 - sim preset: Beast Mastery 35/16/0: `5520001505121251-0050551`
-- beast-marks-ml-raid: `502-0053352501522051-5`
 

@@ -29,22 +29,41 @@ LEVEL_AS = {("druid", "Restoration"): "Feral Combat", ("paladin", "Holy"): "Retr
             ("warrior", "Protection"): "Arms"}
 
 
-# player names for the hybrids (hand-kept, 2026-09-29: "name the hybrids the way players do"): (name, page slug, one line on what it is)
+# player names for the hybrids (hand-kept, 2026-09-29: "name the hybrids the way players do"): (name, page slug, one line on what it is).
+# The line is a string, or {mode: line} when the hybrid's leveling and raid builds differ (2026-10-15 page audit C5: one line had served
+# both modes, so the melee Elemental-Enhancement raid page read "a Lightning Bolt caster"); `hybrid_line` picks it. Lines name only
+# talents the page's build holds (checked 2026-10-15 against the page picks).
 HYBRID_NAMES = {
-    ("hunter", "Hybrid Beast Mastery/Marksmanship"): ("Beast-Marks", "beast-marks", "Marksmanship's shots with Beast Mastery's pet talents: the classic raid hunter split."),
+    ("hunter", "Hybrid Beast Mastery/Marksmanship"): ("Beast-Marks", "beast-marks", {
+        "raid": "Marksmanship's shots (Trueshot Aura, Barrage, Sniper Shot) with a few Beast Mastery points: the classic raid hunter split.",
+        "leveling": "Beast Mastery's pet talents (Ferocity, Frenzy, Spirit Bond) with Marksmanship's shot talents."}),
     ("hunter", "Hybrid Marksmanship/Survival"): ("Melee (split)", "melee-split", "Dual-wield melee with Marksmanship support, short of 30 Survival points."),
     ("hunter", "Hybrid Beast Mastery/Survival"): ("Beast-Survival", "beast-survival", "Dual-wield melee with Beast Mastery's aspect and pet talents (Summon Hawk and Lone Wolf in a raid, a pet while leveling), short of 30 Survival points."),
-    ("mage", "Hybrid Arcane/Frost"): ("Arcane-Frost", "arcane-frost", "A Frostbolt caster with Arcane's mana and cooldown talents (Arcane Power, Presence of Mind)."),
+    ("mage", "Hybrid Arcane/Frost"): ("Arcane-Frost", "arcane-frost", "Arcane's Missile Barrage, Arcane Mind and Arcane Instability with Frost's Shatter and Fingers of Frost."),
     ("mage", "Hybrid Fire/Frost"): ("Frostfire", "frostfire", "Built around Frostfire Bolt, a new Forever spell that uses both trees."),
-    ("paladin", "Hybrid Holy/Retribution"): ("Shockadin", "shockadin", "Holy Shock burst and heals with Retribution's melee talents."),
+    ("paladin", "Hybrid Holy/Retribution"): ("Shockadin", "shockadin", {
+        "leveling": "Retribution's two-handed melee (Vengeance, Two-Handed Weapon Specialization) with Holy's Sacred Arbiter; despite the name, the open leveling search's winner takes no Holy Shock.",
+        "raid": "Holy Shock burst and heals with Retribution's melee talents."}),
     ("paladin", "Hybrid Protection/Retribution"): ("Prot-Ret", "prot-ret", "Retribution's melee talents with Protection's Seal of Fury, Swift Judgement and Toughness: a melee split short of 30 Retribution points."),
     ("priest", "Hybrid Discipline/Holy"): ("Smite", "smite", "Damage from Smite and Holy Fire, carried by Discipline talents."),
+    ("priest", "Hybrid Discipline/Shadow"): ("Discipline-Shadow", "hybrid-discipline-shadow", "Shadow's dots and Shadow Weaving, Vampiric Embrace and Darkness with Discipline's Mental Strength and Soul Warding."),
+    ("priest", "Hybrid Holy/Shadow"): ("Holy-Shadow", "hybrid-holy-shadow", "Points in all three trees: Discipline's Soul Warding, Holy's Searing Light and Shadow's Shadow Weaving."),
     ("rogue", "Hybrid Assassination/Combat"): ("Daggers (split)", "daggers-split", "Daggers with points split between Assassination and Combat."),
     ("rogue", "Hybrid Combat/Subtlety"): ("Combat-Subtlety", "combat-subtlety", "Subtlety's openers, Ghostly Strike and Hemorrhage with Combat's weapon talents (2026-10-08, the open leveling search)."),
-    ("shaman", "Hybrid Elemental/Enhancement"): ("Elemental-Enhancement", "elemental-enhancement", "A Lightning Bolt caster that dips Enhancement for its passive bonuses."),
-    ("warlock", "Hybrid Affliction/Destruction"): ("Shadow Bolt hybrid", "shadow-bolt-hybrid", "Shadow Bolt and fire casters mixing Affliction's curses with Destruction's Ruin (DS/Ruin)."),
-    ("warlock", "Hybrid Affliction/Demonology"): ("Affliction-Demonology", "affliction-demonology", "Dots with a Voidwalker tanking: the classic warlock leveling split."),
+    ("shaman", "Hybrid Elemental/Enhancement"): ("Elemental-Enhancement", "elemental-enhancement", {
+        "leveling": "A Lightning Bolt caster (Call of Thunder, Lightning Overload) that dips Enhancement for its passive bonuses.",
+        "raid": "A melee shaman: Enhancement's Stormstrike and Flurry with Elemental's shock and Fire Nova talents."}),
+    ("warlock", "Hybrid Affliction/Destruction"): ("Shadow Bolt hybrid", "shadow-bolt-hybrid", {
+        "raid": "Shadow Bolt with Affliction's Malevolence and Destruction's Agonizing Flames, points in all three trees.",
+        "leveling": "Shadow Bolt and dots with Affliction's Malevolence, Siphon Life and Shadow Mastery, a few Demonology and Destruction points."}),
+    ("warlock", "Hybrid Affliction/Demonology"): ("Affliction-Demonology", "affliction-demonology", "Dots and Siphon Life with a demon tanking (Soul Link, Demonic Knowledge): the classic warlock leveling split."),
 }
+
+
+def hybrid_line(cls, spec, mode=None):
+    """The one line on what a hybrid is, for a mode's page (the raid line when no mode is given)."""
+    line = HYBRID_NAMES[(cls, spec)][2]
+    return line if isinstance(line, str) else line.get(mode or "raid") or next(iter(line.values()))
 
 
 def spec_name(cls, spec):
