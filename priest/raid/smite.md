@@ -4,13 +4,13 @@
 
 *Damage from Smite and Holy Fire, carried by Discipline talents.* (a hybrid: Discipline/Holy).
 
-**[Smite — Raid](../research/raid/builds/smite-open-raid.md)** (21/23/7) — [open the talent tree](https://talentsforever.com/priest/60/505030021301001-305151000221003-50002-6)
-
-> 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (smite-discipline-raid), which stays below as the alternative. A model of the beta, to check at launch.
+**[Discipline/Holy — Smite](../research/raid/builds/smite-discipline-raid.md)** (31/17/3) — [open the talent tree](https://talentsforever.com/priest/60/505230231305001001-30505101002-3-6)
 
 ## How to play
 
 **Before the pull:** **Holy Fire**.
+
+**Talents with no line below:** **Holy Nova**: a defensive or healing spell: cast it when you need it, it is not part of the damage rotation.
 
 **Then press the first one that is ready**, top to bottom:
 
@@ -20,7 +20,8 @@
 4. **Holy Fire**: keep it on the target
 5. **Inner Focus**, then straight away **Smite**
 6. **Shadow Word: Death**
-7. **Smite**
+7. **Power Infusion**
+8. **Smite**
 
 **Smite** is your filler: cast it whenever nothing above is ready.
 
@@ -55,22 +56,22 @@ Smite in a raid keeps two burns up, **Shadow Word: Pain** and **Holy Fire**, fir
 - If healing is tight, cast **Shadow Word: Death** only in the last 20% of the boss's health, as the simulator's rotation for fighting alone does. You give up a little damage.
 - When you must move, use the instants: **Shadow Word: Death**, and **Shadow Word: Pain** if it fell off. **Holy Fire**, **Smite** and **Penance** all need you to stand still.
 
+*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## The numbers
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 588 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 579 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 622 | [31/17/3](https://talentsforever.com/priest/60/505230231305001001-30505101002-3-6) |
-| Phase 1 BiS | 643 | [31/17/3](https://talentsforever.com/priest/60/505230231305001001-30505101002-3-6) |
+| Pre-BiS | 603 | [21/23/7](https://talentsforever.com/priest/60/505030021301001-305151001121003-50002-6) |
+| Phase 1 BiS | 632 | [21/23/7](https://talentsforever.com/priest/60/505030021301001-305151001121003-50002-6) |
 
-*Gear-tier numbers searched on 2026-10-02, on an older simulator build than the rest of this page (before beta 70291 and the 2026-10-09 audit that took Atiesh out of the full raid): they run 3-7% high and can order the specs differently than the full-raid ranking. The searches are queued to run again.*
-
-**The gear** (average item level: Pre-BiS 63.0; Phase 1 BiS 65.4; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 63.1; Phase 1 BiS 64.1; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
@@ -78,26 +79,26 @@ Smite in a raid keeps two burns up, **Shadow Word: Pain** and **Holy Fire**, fir
 | Neck | [Orb of the Darkmoon](https://www.wowhead.com/forever/item=19426) | [Choker of the Fire Lord](https://www.wowhead.com/forever/item=18814) · *Ragnaros, Molten Core* |
 | Shoulders | [Rugged Mantle of the Timbermaw](https://www.wowhead.com/forever/item=227808) | [Rugged Mantle of the Timbermaw](https://www.wowhead.com/forever/item=227808) |
 | Back | [Crystalline Threaded Cape](https://www.wowhead.com/forever/item=20697) · *world drop* | [Crystalline Threaded Cape](https://www.wowhead.com/forever/item=20697) · *world drop* |
-| Chest | [Virtuous Gown](https://www.wowhead.com/forever/item=226960)<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Robe of Volatile Power](https://www.wowhead.com/forever/item=19145) · *Molten Core*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
+| Chest | [Wizardweave Robe](https://www.wowhead.com/forever/item=14128) · *Tailoring*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Robe of Volatile Power](https://www.wowhead.com/forever/item=19145) · *Molten Core*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
 | Wrist | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) |
-| Hands | [Hands of Power](https://www.wowhead.com/forever/item=13253) · *Quartermaster Zigris, Blackrock Spire* | [Hands of Power](https://www.wowhead.com/forever/item=13253) · *Quartermaster Zigris, Blackrock Spire* |
+| Hands | [Sandworm Skin Gloves](https://www.wowhead.com/forever/item=20716) | [Sandworm Skin Gloves](https://www.wowhead.com/forever/item=20716) |
 | Waist | [Knowledge of the Timbermaw](https://www.wowhead.com/forever/item=228190) | [Mana Igniting Cord](https://www.wowhead.com/forever/item=19136) · *Molten Core* |
 | Legs | [Skyshroud Leggings](https://www.wowhead.com/forever/item=13170) · *Highlord Omokk, Blackrock Spire*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11648) | [Flarecore Leggings](https://www.wowhead.com/forever/item=19165) · *Tailoring*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11648) |
-| Feet | [Virtuous Slippers](https://www.wowhead.com/forever/item=226959)<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/spell=13368) | [Virtuous Slippers](https://www.wowhead.com/forever/item=226959)<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/spell=13368) |
-| Finger | [Rune Band of Wizardry](https://www.wowhead.com/forever/item=22339) · *Lord Valthalak, Blackrock Spire* | [Rune Band of Wizardry](https://www.wowhead.com/forever/item=22339) · *Lord Valthalak, Blackrock Spire* |
+| Feet | [Omnicast Boots](https://www.wowhead.com/forever/item=11822) · *Golem Lord Argelmach, Blackrock Depths*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/spell=13368) | [Earthen Silk Slippers](https://www.wowhead.com/forever/item=254013) · *Tailoring*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/spell=13368) |
 | Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=234439) | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
+| Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21207) | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=234439) |
 | Trinket | [Briarwood Reed](https://www.wowhead.com/forever/item=12930) · *Jed Runewatcher, Blackrock Spire* | [Briarwood Reed](https://www.wowhead.com/forever/item=12930) · *Jed Runewatcher, Blackrock Spire* |
 | Trinket | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) |
 | Main hand | [Dark Whisper Blade](https://www.wowhead.com/forever/item=20720) · *world drop*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) | [Aurastone Hammer](https://www.wowhead.com/forever/item=17105) · *Garr, Molten Core*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) |
 | Off hand | [Therazane's Touch](https://www.wowhead.com/forever/item=19315) | [Therazane's Touch](https://www.wowhead.com/forever/item=19315) |
-| Ranged/relic | [Bonecreeper Stylus](https://www.wowhead.com/forever/item=13938) · *Darkmaster Gandling, Scholomance* | [Bonecreeper Stylus](https://www.wowhead.com/forever/item=13938) · *Darkmaster Gandling, Scholomance* |
+| Ranged/relic | [Ritssyn's Wand of Bad Mojo](https://www.wowhead.com/forever/item=22408) · *Baron Rivendare, Stratholme* | [Ritssyn's Wand of Bad Mojo](https://www.wowhead.com/forever/item=22408) · *Baron Rivendare, Stratholme* |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://elliotwood.github.io/Forever/forever/priest/dps/#eJzMll9oI1UUxufcmWROTpoar6udDovMxl2Jkal3JkY260PSfZBFUSsY8M0mm+kma5uETsCKL6uusAjGdR9WVhRZQVaFlfXBpfjYIqYQNSAK4h+kIvpgJbYQH/oik0kaKX2MwfN0cu65nO9++c3MpQmEKGhgQBwE8Om9X0zAccjCHDwFNTgHoP8ZQYwG9DqpuHsdtF/DpODmG0AK/rwTIQW/uwqk4sWtiPbLJKm49h5o30+SjJ+dIQV/6kYoiNsL3jYVX9uKaF8HScH1j7z9n1/z+l50SMGb7Sip2LkKWvM2UnDnMpCM24uxe/F8OdosG9fegviXDRDdwtyr78IrwM6XLwHrFt6H32ZX4capNjTKJ2l4pE+ZkRIpOynspJUUKSEsISzTy1KWl9tmssmgzcKbrBumQxTSVQrEEd9+NqZSgGQz6fIKn8/XFp+u1uqGLewHTEuY4vgJ43QpXznjFI3qspEvFp2iUXjOqJccY7laz9fL1YrhOvnl0yUj7jqO4S6V645ZrLnmYNn0l2fOutXKPTrpSMG4jK//+AhXdHZC4pdg31iRNu1Rj52hu/gRisTCFLL9gzdyFE1MYpCzhyU9SAoxS/Q9aeT482PQNGXfTqoeIBnfccn3JYjty8AvjMORozSdmEKZh84OQPAUkGLNpNw9Nrim32EfGqocUHMzxyf6f6WCL308xytjUDxAZ/3vx/kzY0DVP3XrMb50wLD0iIf9y1lLv4+O8th+Wm9N3OLRWpC8TpKT4lh/SyPHPxwHMQ/Rgzy9X4YtjvVK8rCU6pf8R6sv1meK4VcKXxqDVt/OEK7n+J364QNED+0O95tV/CTHF8fAFXqvG7y4++iBFFsjnuZT/NeKJv/OmtBh9guy1Iv7s2ug6Iyk2AdyyCtI5xay029e8WIjc2ShF99m7A7TFCOTaDLpfxX17CD7T+Pu6yOfk/6i1WpNzN/IzvYL2Xm4AHAFytXOyxtPfpNJ96pSOzPrdbZaf2Se8JMfMgkZV6dOHh5+9/3Ly6ne9aUENViBFf7PAEGfI9w=); Phase 1 BiS: [full raid](https://elliotwood.github.io/Forever/forever/priest/dps/#eJzMll1oI1UUx+fcmWROTpoar6udDovMxl2Jkal3JkY260PSfZBFUSsY8M0mm9lN1jYJnYgVX1bdhUUwaiELK4ooiB9QqQ+W4pO0CClGjYiCaEEU0QfFaqE+FEQmkzRS+hiD5+nMOffO+Z8zv5m5NIYQBQ0MiIMAPrl/xQSchCzMwCNQg4sA+u8RxGhAf5xU3FsG7acwKfj3EpCC3+9ESMFvXgdScbMJ2o/jpOL6m6B9O04yfnyeFPyo6SW3mt19Kr7wW0T7MkgKbrzn3eCTJpCMzzik4GonSip+cRm01g2k4M5VL/PnXOx2vFSOtsrGW69A/LMGiN3CzPNvwHPALpWXgO0W3oafp9dg5UwHGuXTNOjpQ2akRMpOCjtpJUVKCEsIy/S8lOX5tplsMeiw8A9sN0xHKKSrFIgjvvpETKUAyWbS5RU+m6/NPVqt1Q1b2HeZljDFyVPG2VK+ct4pGtUFI18sOkWj8KRRLznGQrWer5erFcN18gtnS0bcdRzDnS/XHbNYc81+2vTTUxfcauU2nXSkYFzGl7bu44rOTkl8CQ6UFWnTHnbZKbqFH6NILEwh22+8kaNoYhyDnN0r6UFSiFmiN5NGjj81Ak0T9o2k6gGS8TWX/LkEsXMV+JVRTOQ4TSYmUOahC30QPAWkWFMpd58Nruk32UcGKvvUrOb4WO9RKvjs+zO8MgLFfXQ2/nqQPzYCVP2u2w/w+UOKpYdc7F+TtfQ76DiPHaT1+sR1Hq0FyVtJclKc6G1p5Pi7oyDmHrqbpw/KsMWJbkgehFK9kP9q9cT6TDH8XOHzI9DqjzOEGzl+s370ENGDcYd7i1X8IMfnRsAVep8bfHHv/kMptoZczaf4j0VN/oW1YJvZT8tS1+7MroOiM5Ji78ghLyBdPJedfPmaZ5uZY+e69nXG3maaYmQSLSb9r6ye7Xv/qd26PPQ66U/b7fbY7Ep2uhfIzsIVgGtQrm5f3nz4q0y6G5U6mWlvZbv9a+Yh3/kuk5BxbeL00cF/3z+9nOmeX0pQg0VY5P8MAD9bIwU=).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://elliotwood.github.io/Forever/forever/priest/dps/#eJzMll+IG1UUxufcmUxOTrIxXmt3digyjV2JkVnvTBpp6kOyfZCiqCsY8EFwk2bWpHaTsBNw1ZeqFRbBoPtQqSiyQqkK1fXBUnxsH0whakBUxD9IRfShYGxh+9AXmcykkXUfY/C85Obcc/m+c+Y3w6UYQgI0MCAFAvjMzX9MwAEowAI8AU04DqD/GUdMhPQWhfHGWdB+i5KCl98EUvCXa1Ok4PcbQCpu1rVf4xTGC6dB+yFOCl7Z8Ep+3poiFa8uecdU/OhJ7WuVFPz8jFfx3WkgGV9ySMFzvQSFsb8BWuc2UvDaSe/s2seQvAdP1BKdmnHmbUh92QaxVV547T14FdiJ2jqwrfL78Pv8edg83IN27RCNWvqMzWZFVmSEsK2MsISwzIzIWllvZdmWEBkzK4SwOwx6LHqZXY3RLoroYQqlEN95NhmmEMlmxuV1vlhqHnuq0WwZtrDvMy1higMHjSPVUv1pp2I0VoxSpeJUjPJzRqvqGCuNVqlVa9QN1ymtHKkaKddxDHe51nLMStM1h9umvz131G3U79ZJR1JTMr7x00Nc0dlBia/DNlmRM+1xy87RnXwvTSWjFLH9xttFSqTjqHL2oKSrpBCzRDCTdpG/MAFP0/btFNZDJOO7LvlzUbF3EvjaJCayj2bS0yjzyNEhCJ4DUqy5rHuTDa7pu+1dI5dDas4VeSx4lAq+/MkCr0/A8RCdi9cf5c9MAFW/6+4jfHkHsdyYxf4xWUu/l/bx5HZab03f4tFalrxKkjNiNjjSLvIPJ0HMA3Q/z223YYvZQUoepbJByn+1ArM+Uwy/UvjyBLz644zgxSK/Q9+zg+nRuKNBcRg/LfJjE+AKvc8Nvn7j4R0ptsas5lP81yp//t9i1v4xi+2mWJIIba/B6+ugB7+a/AfrQJ/ZL8rSIPYXLoCiM5KSH8gRLyEdXyrMvHXKi0v5vUuD+DZv95mmGPl0h0n/q2gVhqv/NO46O3ad3Bfdbje2uFmYDxKFRVgDOAW1Rv+VS49/k88NslIvP+9VdrtX8o/5ix/zaRnPTx/aM7p4+Lenw4P7UxWasAqr/O8BAFukSoQ=); Phase 1 BiS: [full raid](https://elliotwood.github.io/Forever/forever/priest/dps/#eJzMVkGIG2UUnvfPbOblJU3jb+3ODkWmsSsxMus/k0aaeki2BymKuoIBb27STE1qNwk7ga56qdrCIhg0kEJFkQpSFYr1YCmCUNqDWYwaEQXRgiiihx7WFtpDQWQyk42se4zBd8mf997P971vvhkeRRHioIEBSRDAZzb+MQH7IA8L8DQ04DiAfj2GGJ/Sj5GKt8+B9luEFPyrDaTgzze2kYI/nAFSca0D2q8xUvHye6D9GCMFr53xei51vOrVzuCiip9d2q59GyIFv+h41c/PxkjGlx1S8EI/Tip+cxK07p2k4I1TXn31I0jcjyeq8W7VOPsWJL9qgbhZWnjtXXgV2IlqG9jN0vvw+/xFOH+wD63qARpN9SmbzYiMSAthW2lhCWGZaZGxMt7Jsi0h0mZGCGF3GfRZ5Bd2PUo7KKyrNJVEfPtYQqUpks20y2t8sdg4+ky90TRsYT9oWsIU+/YbhyrF2rNO2agvG8Vy2SkbpeeNZsUxluvNYrNarxmuU1w+VDGSruMY7lK16ZjlhmsOy6Zfnjvi1mv36aQjhZIyvnH1Ua7obL/E27AJVmRNe9ywc3QP303bEhEK2/7grQLFUzEMcfaIpIdIIWaJQJNWgb84AU7T9l2k6lMk4zsu+bqEsH8K+OokFNlDM6lplHn4yNAIHgNSrLmMu+ENruk77R0jlkPXXCjwaPAoFXzl4wVemwDjoXWu3HqCPzcBq/pT9x7nS1uAZccM9g9lLf0B2sMTm916R2q759aS5HWSnBazwZVWgX84Ccc8TA/x7GYatpgdpORRKhOk/FcrIOt7iuHXCl+aAFdfzjBeKfC79V1bkB7JHQmaVfykwI9OwFfofW7w9duPbelia8xovov/XOEv/BvM2jtmsJ0UTRCh7Q14qw168KvJf7AurDP7JVkaxN78ZVB0RlLiAznsJaTjh/Mzb572Yi23+/Agvs/Z60xTjFyqy6T/VTTzw9N/GveeGztO9sterxddPJ+fDxL5RVgFOA3V+vrJtae+y2UHWamfm/c6e71ruSf9w0+5lIwXpw/sGi0e/gJ1cLBCVaABK7DC/x4Ap+FKoA==).
 
 ## Other builds of this spec
 
-- [Discipline/Holy — Smite](../research/raid/builds/smite-discipline-raid.md) (31/17/3, 584 DPS in a full raid) — [open the talent tree](https://talentsforever.com/priest/60/505230231305001001-30505101002-3-6)
+- [Smite — Raid](../research/raid/builds/smite-open-raid.md) (21/23/7, 578 DPS in a full raid) — [open the talent tree](https://talentsforever.com/priest/60/505030021301001-305151000221003-50002-6)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-14 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-15 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
 

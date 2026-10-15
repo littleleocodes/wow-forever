@@ -49,15 +49,15 @@ The Survival build the machine-learning talent search found in a full raid (ever
 
 ## Rank among our builds and the community simulator's
 
-**5 of 5** for `melee-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 5** for `melee-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`survival-raid`](survival-raid.md) | ours: hand draft | 5/16/30 | 486 | +0.0% | 1027 | -2.7% | 9 s |
-| 2 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 464 | -4.6% | 1047 | -0.9% | 44 s |
-| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 463 | -4.7% | 1016 | -3.8% | 8 s |
-| 4 | [`beast-survival-open-raid`](beast-survival-open-raid.md) | ours: hand draft | 16/11/24 | 360 | -25.8% | 1056 | +0.0% | 126 s |
-| 5 | **[`survival-ml-parse`](survival-ml-parse.md)** | ours: parse build | 5/14/32 | 359 | -26.2% | 998 | -5.5% | 117 s |
+| 1 | [`survival-raid`](survival-raid.md) | ours: hand draft | 5/16/30 | 483 | +0.0% | 1025 | -2.5% | 9 s |
+| 2 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 461 | -4.6% | 1042 | -0.9% | 44 s |
+| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 461 | -4.7% | 1012 | -3.7% | 8 s |
+| 4 | **[`survival-ml-parse`](survival-ml-parse.md)** | ours: parse build | 5/14/32 | 357 | -26.1% | 993 | -5.5% | 117 s |
+| 5 | [`beast-survival-open-raid`](beast-survival-open-raid.md) | ours: hand draft | 16/11/24 | 357 | -26.2% | 1051 | +0.0% | 127 s |
 
 ## Rotation (community simulator, training dummy)
 

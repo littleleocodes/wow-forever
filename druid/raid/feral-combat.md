@@ -60,18 +60,16 @@ A raid cat keeps **Rip** bleeding on the boss, turns mana into energy with **Shi
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 698 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 694 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 570 | [9/35/7](https://talentsforever.com/druid/60/050022-35000232120032012051-142-6) |
-| Phase 1 BiS | 576 | [9/35/7](https://talentsforever.com/druid/60/050022-25000332120032012051-052-6) |
+| Pre-BiS | 692 | [9/34/8](https://talentsforever.com/druid/60/050022-55000032021032212051-053-6) |
+| Phase 1 BiS | 714 | [9/33/9](https://talentsforever.com/druid/60/050022-55000032021031212051-054-6) (ties this build) |
 
-*Gear-tier numbers searched on 2026-10-02, on an older simulator build than the rest of this page (before beta 70291 and the 2026-10-09 audit that took Atiesh out of the full raid): they run 3-7% high and can order the specs differently than the full-raid ranking. The searches are queued to run again.*
-
-**The gear** (average item level: Pre-BiS 63.0; Phase 1 BiS 64.1; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 63.0; Phase 1 BiS 64.8; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
@@ -85,21 +83,23 @@ A raid cat keeps **Rip** bleeding on the boss, turns mana into energy with **Shi
 | Waist | [Ferocity of the Timbermaw](https://www.wowhead.com/forever/item=227805) | [Ferocity of the Timbermaw](https://www.wowhead.com/forever/item=227805) |
 | Legs | [Warbear Woolies](https://www.wowhead.com/forever/item=15065) · *Leatherworking*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) | [Warbear Woolies](https://www.wowhead.com/forever/item=15065) · *Leatherworking*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) |
 | Feet | [Blood Guard's Dragonhide Treads](https://www.wowhead.com/forever/item=227181)<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) | [Blood Guard's Dragonhide Treads](https://www.wowhead.com/forever/item=227181)<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) |
-| Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21202) | [Quick Strike Ring](https://www.wowhead.com/forever/item=18821) · *Magmadar, Molten Core* |
-| Finger | [Don Julio's Band](https://www.wowhead.com/forever/item=19325) | [Band of Accuria](https://www.wowhead.com/forever/item=17063) · *Ragnaros, Molten Core* |
+| Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21202) | [Band of Accuria](https://www.wowhead.com/forever/item=17063) · *Ragnaros, Molten Core* |
+| Finger | [Don Julio's Band](https://www.wowhead.com/forever/item=19325) | [Quick Strike Ring](https://www.wowhead.com/forever/item=18821) · *Magmadar, Molten Core* |
 | Trinket | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) |
 | Trinket | [Eye of the Beast](https://www.wowhead.com/forever/item=13968) | [Eye of the Beast](https://www.wowhead.com/forever/item=13968) |
-| Main hand | [Premier High Warlord's Razor](https://www.wowhead.com/forever/item=272596)<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) | [Premier High Warlord's Razor](https://www.wowhead.com/forever/item=272596)<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) |
+| Main hand | [Premier High Warlord's Razor](https://www.wowhead.com/forever/item=272596)<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) | [Perdition's Blade](https://www.wowhead.com/forever/item=18816) · *Ragnaros, Molten Core*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) |
 | Ranged/relic | [Idol of Ferocity](https://www.wowhead.com/forever/item=22397) · *Lord Roccor, Blackrock Depths* | [Idol of Ferocity](https://www.wowhead.com/forever/item=22397) · *Lord Roccor, Blackrock Depths* |
+
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://elliotwood.github.io/Forever/forever/druid/feralcat/#eJzMVV1oHFUUnnNnMnP3JNlObtNmvCiZLirbxVnuznZiNgi7qb8PBmItqAWxs9mNOyXNLtktxD4ttgUpCipYjPhQKkLEKholqM+KqazQxh+wpIhaSh9SCYp5U+TOzjax9MEHIz1P3373nG/POfcbLvZQMMECG5IggA20fyWJgGEowDg8CTVoAvDVGDXMbn4EDfrHu2Bd7kaVfjSLGv2mZaJO36xYF3Q06Ocfb7N+iaNBj82BdUmCVsu0foyjRi/93os6/eGIrDXotV972/Ty24Aa/fMUoEpfOowqffkwGvTbC6a1GkdFHr0PiTQ9HphfBtaLQfLqlFgvFmD88odwEsjx4FUg68XX4S3/NJz152FldAlgL24M9RkZFJ4Qrut4nhBCZF3hZkTWdTOu8DKO8LJLRDtP6M/kLwP70eBdcrKxRAwN7HIyaVG/zv6UjNhs2quzGO+wbBcfxJ0XyfawkhGzi1PUUZPFkRy7n4/iMBtCugCSaepIlzWJFgPsSWCHXwyQpUyqMjKitEVyIi1CkcWAxXnPhsCIwr4AVvJrU89Uaw3bFe6QI3KOOzxiT1T86WfLJbs6Y/ulUrlkF5+zG5WyPVNt+I2gOm3Xy/7MRMVO1stle7I84085E37DKdXqTifFaaekD9Wr07v507if7cPYV5qOGj19AsImdUYOKJz+pkYDqSdBwXtYqpN35RhgbAE6MJrraDRXJpvO7WtXstf+rzkcvJMlcHuqj+pMfR6iVrLpez3slnfryobmx8J9z4+xV27sKyMckduCvnbjILsDY8vhfq+tjKOZilONkaMK11FDMiR4dHLddlceZQlu48BF0r9hu9CemT2bfDfAd2z2V1OXxeapx9nD/EG8j4388xBTqSTV2I4FwiiE14tIUc94Qrqwd4Gg7OqAwklRCYXWi+wh/sC/FnJd7yZCGhKrj5X5BD7FnrhBpy+1TWYWFW5gF6rD4i7ck3BR8DTuZP3RR2SuF5GegQj1M4bGshaqonEGQhDu7+yncPOF0KZuqVfJEqwR9xDhSuIdNabIaE4WbntjTsa5/K7JML7Pu2vE0ux8aokot1Q0Ch20pXH3e//5/+S+brVaPQc/KIxGROEgvAAwB0F17cS5/d/lcyGrnM+PysxWazX/WBus5FMq/WRg7+2bnzH5dD0SPl4VqMEszLK/BwDLyUE2); Phase 1 BiS: [full raid](https://elliotwood.github.io/Forever/forever/druid/feralcat/#eJzMVV9oHNUXnnNnMnP3JNlObtNmfpefZLqobAdnuTObidkg7Kb+fTAQa0EtiJ3NbtwpaXbJrlL7tNgGpCj+KYoRH0p9MGIVjRLUZ8VUVqgRBUuKqKH0oZGgmDdFZna2iaUPPljxPH373XO+Pefcb7jYQ0EHA0xIgwA20P6VJgJGoAAT8DDUoAnA1xNU07v5k6jR394GY60bFbr2PKBCv27pqNLXK8ZXKmr00w93GD8lUaPH58G4GIJWSze+T6JCL/7aiyr97omwWKPrP/e26TfnQpW5U4Ayfe4IyvSFI6jR5ikwriRRQoX+/i6kMvREoH8eGM8G6cvTYrNYgIm19+EkkBPBS0A2i6/CG/5pOOsvwOrYMsA+3JrqEzIoPCFc1/Y8IYTIusJ1RNZxHVd4ji28oWWinCf0R/KHhv2o8S6U6QfjqQRq2GU7GVG/yv6QjtlsxquzBO+wbA8fxN0XyM6okhG9i1NUUQmLYzl2Jx/DETaMdBFCpqkiXVFCtBRgTwo7/FKAzNKpzMio1BbJiYyIRJYCluQ9WwKjEvsMWMmvTT9WrTVMV7jDtsjZ7sioOVnxZx4vl8zqrOmXSuWSWXzKbFTK5my14TeC6oxZL/uzkxUzXS+XzanyrD9tT/oNu1Sr250Uu52SOVyvzuzlj+IBth8TXygqKvT0HERNqowclDj9RY4Hkk+ChLcxq5N36ThgYhE6MJ7rWDyXk83k9rcr2cv/1hw23sxSuNPqoyqTn4a4lWzmdg+7w7t1w4YWxqN9L4yzF6/tyxG2yN2AvvbiILsJEyvRftdXJ1C3klRh5JjEVVSQDAsen1y13aX7WYqbOHCB9G/ZLrKnM7TNdwN813Z/NdWwWH/lQXYvvxvvYKN/PUTLSlOF7VokjEJ0vYgUVccToQt7FwmGXR2UOClKkdBmkd3D7/rbQq7rXUdIQWL0sTKfxEfYQ9fo9Fk7wsyixDXsQnlE3IJDKRcFz+Bu1h9/RPpmEekZiFE/Y6itKJEqamcgAtH+zn4M118IbaqGfJkswwZxDxMupd6SE1IYzanC/16bD+Ncfs9UFN/m3Q1iKGbeWibSfyoahQ66oXHrO//4/+S+bLVaPYfeK4zFROEQPAMwD0F1Y+7cgW/yuYiVzufHwsxW60r+gTZYzVsy/Whg3/+3v2Ph23Vf9HpVoAZH4Sj7cwDn+UAb).
 
 ## Other builds of this spec
 
-- [Feral Combat — Shifting Power](../research/raid/builds/feral-combat-shifting-power-raid.md) (9/35/7, 691 DPS in a full raid) — [open the talent tree](https://talentsforever.com/druid/60/050022-55000032121032212051-052-6)
-- [Feral Combat (optimized)](../research/raid/builds/opt-feral-cat-dps-raid-dps.md) (9/31/11, 594 DPS in a full raid) — [open the talent tree](https://talentsforever.com/druid/60/050022-25000332020032012051-055001-6)
-- [Feral — Cat DPS](../research/raid/builds/feral-cat-dps.md) (9/32/10, 579 DPS in a full raid) — [open the talent tree](https://talentsforever.com/druid/60/050022-55000332120032012021-055-6)
+- [Feral Combat — Shifting Power](../research/raid/builds/feral-combat-shifting-power-raid.md) (9/35/7, 688 DPS in a full raid) — [open the talent tree](https://talentsforever.com/druid/60/050022-55000032121032212051-052-6)
+- [Feral Combat (optimized)](../research/raid/builds/opt-feral-cat-dps-raid-dps.md) (9/31/11, 590 DPS in a full raid) — [open the talent tree](https://talentsforever.com/druid/60/050022-25000332020032012051-055001-6)
+- [Feral — Cat DPS](../research/raid/builds/feral-cat-dps.md) (9/32/10, 575 DPS in a full raid) — [open the talent tree](https://talentsforever.com/druid/60/050022-55000332120032012021-055-6)
 - [Feral — Bear Tank](../research/raid/builds/feral-bear-tank.md) (7/35/9) — [open the talent tree](https://talentsforever.com/druid/60/05002-5020033212003200255-054-6)
 - [Feral Combat (optimized, tank)](../research/raid/builds/opt-feral-bear-tank-raid-tank.md) (7/35/9) — [open the talent tree](https://talentsforever.com/druid/60/05002-5020033212003200255-504-6)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-14 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-15 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
 

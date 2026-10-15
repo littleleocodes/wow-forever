@@ -32,7 +32,7 @@
   "seed": 1,
   "duration": 180.0
  },
- "date": "2026-10-10",
+ "date": "2026-10-15",
  "results": [
   {
    "label": "combat-swords-raid",
@@ -41,23 +41,23 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "11198": 6.572333333333333,
-    "6774": 7.197666666666666,
     "13877": 2.0,
-    "11294": 54.59766666666667,
+    "13750": 1.0,
+    "6774": 7.197666666666666,
+    "11198": 6.572333333333333,
     "31016": 3.3463333333333334,
-    "13750": 1.0
+    "11294": 54.59766666666667
    },
    "casts": {
-    "Goblin Sapper Charge": 1.0,
-    "Expose Armor": 6.572333333333333,
-    "Slice and Dice": 7.197666666666666,
     "Blade Flurry": 2.0,
-    "Auto Attack": 193.615,
-    "Sinister Strike": 54.59766666666667,
     "Thistle Tea": 1.0,
+    "Adrenaline Rush": 1.0,
+    "Slice and Dice": 7.197666666666666,
+    "Expose Armor": 6.572333333333333,
+    "Auto Attack": 193.615,
     "Eviscerate": 3.3463333333333334,
-    "Adrenaline Rush": 1.0
+    "Goblin Sapper Charge": 1.0,
+    "Sinister Strike": 54.59766666666667
    },
    "dps": 408.91590189950284,
    "dps_stdev": 18.567543021638297,
@@ -93,23 +93,23 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "31016": 1.626,
     "6774": 8.418333333333333,
-    "13750": 1.0,
+    "11294": 50.80833333333333,
     "11198": 5.696,
-    "13877": 2.0,
-    "11294": 50.80833333333333
+    "13750": 1.0,
+    "31016": 1.626,
+    "13877": 2.0
    },
    "casts": {
-    "Goblin Sapper Charge": 1.0,
-    "Eviscerate": 1.626,
     "Slice and Dice": 8.418333333333333,
-    "Auto Attack": 190.5486666666667,
-    "Adrenaline Rush": 1.0,
+    "Goblin Sapper Charge": 1.0,
+    "Sinister Strike": 50.80833333333333,
     "Expose Armor": 5.696,
-    "Thistle Tea": 1.0,
+    "Adrenaline Rush": 1.0,
+    "Eviscerate": 1.626,
+    "Auto Attack": 190.5486666666667,
     "Blade Flurry": 2.0,
-    "Sinister Strike": 50.80833333333333
+    "Thistle Tea": 1.0
    },
    "dps": 390.8028655331318,
    "dps_stdev": 17.597695927928797,
@@ -145,23 +145,23 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "6774": 8.45,
-    "13877": 2.0,
-    "11198": 5.718,
+    "31016": 1.7163333333333333,
     "11294": 51.181666666666665,
-    "13750": 1.0,
-    "31016": 1.7163333333333333
+    "13877": 2.0,
+    "6774": 8.45,
+    "11198": 5.718,
+    "13750": 1.0
    },
    "casts": {
-    "Thistle Tea": 1.0,
-    "Slice and Dice": 8.45,
-    "Blade Flurry": 2.0,
     "Auto Attack": 192.01,
-    "Expose Armor": 5.718,
+    "Eviscerate": 1.7163333333333333,
     "Sinister Strike": 51.181666666666665,
-    "Adrenaline Rush": 1.0,
+    "Blade Flurry": 2.0,
+    "Slice and Dice": 8.45,
     "Goblin Sapper Charge": 1.0,
-    "Eviscerate": 1.7163333333333333
+    "Expose Armor": 5.718,
+    "Adrenaline Rush": 1.0,
+    "Thistle Tea": 1.0
    },
    "dps": 391.77014754550805,
    "dps_stdev": 18.379095938462633,
@@ -196,23 +196,23 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "13877": 2.0,
+    "31016": 0.812,
     "11198": 3.957,
-    "13750": 1.0,
-    "11294": 40.06933333333333,
     "6774": 9.328,
-    "31016": 0.812
+    "13750": 1.0,
+    "13877": 2.0,
+    "11294": 40.06933333333333
    },
    "casts": {
-    "Blade Flurry": 2.0,
-    "Expose Armor": 3.957,
+    "Eviscerate": 0.812,
     "Auto Attack": 190.55966666666666,
-    "Adrenaline Rush": 1.0,
-    "Thistle Tea": 1.0,
-    "Sinister Strike": 40.06933333333333,
+    "Expose Armor": 3.957,
     "Slice and Dice": 9.328,
+    "Thistle Tea": 1.0,
     "Goblin Sapper Charge": 1.0,
-    "Eviscerate": 0.812
+    "Adrenaline Rush": 1.0,
+    "Blade Flurry": 2.0,
+    "Sinister Strike": 40.06933333333333
    },
    "dps": 331.46838613216113,
    "dps_stdev": 16.72137411269965,
@@ -247,25 +247,25 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "11198": 5.712,
-    "13877": 2.0,
-    "13750": 1.0,
+    "6774": 8.467,
     "31016": 1.6856666666666666,
-    "6774": 8.466999999999999,
     "11294": 51.175333333333334,
-    "14177": 1.0
+    "13877": 2.0,
+    "14177": 1.0,
+    "13750": 1.0,
+    "11198": 5.712
    },
    "casts": {
-    "Expose Armor": 5.712,
-    "Blade Flurry": 2.0,
-    "Adrenaline Rush": 1.0,
     "Goblin Sapper Charge": 1.0,
+    "Slice and Dice": 8.467,
     "Eviscerate": 1.6856666666666666,
-    "Slice and Dice": 8.466999999999999,
-    "Auto Attack": 192.09766666666667,
     "Sinister Strike": 51.175333333333334,
+    "Thistle Tea": 1.0,
+    "Auto Attack": 192.09766666666667,
+    "Blade Flurry": 2.0,
     "Cold Blood": 1.0,
-    "Thistle Tea": 1.0
+    "Adrenaline Rush": 1.0,
+    "Expose Armor": 5.712
    },
    "dps": 386.8043863956818,
    "dps_stdev": 18.222754937083238,
@@ -300,23 +300,23 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "6774": 7.197666666666667,
-    "11294": 54.59766666666667,
+    "6774": 7.197666666666666,
     "13750": 1.0,
-    "11198": 6.572333333333333,
+    "31016": 3.3463333333333334,
     "13877": 2.0,
-    "31016": 3.3463333333333334
+    "11198": 6.572333333333333,
+    "11294": 54.59766666666667
    },
    "casts": {
-    "Slice and Dice": 7.197666666666667,
-    "Goblin Sapper Charge": 1.0,
-    "Thistle Tea": 1.0,
-    "Sinister Strike": 54.59766666666667,
-    "Auto Attack": 193.615,
+    "Slice and Dice": 7.197666666666666,
     "Adrenaline Rush": 1.0,
-    "Expose Armor": 6.572333333333333,
+    "Eviscerate": 3.3463333333333334,
     "Blade Flurry": 2.0,
-    "Eviscerate": 3.3463333333333334
+    "Thistle Tea": 1.0,
+    "Goblin Sapper Charge": 1.0,
+    "Expose Armor": 6.572333333333333,
+    "Sinister Strike": 54.59766666666667,
+    "Auto Attack": 193.615
    },
    "dps": 408.91590189950284,
    "dps_stdev": 18.567543021638297,
@@ -351,21 +351,21 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "14177": 1.0,
-    "11294": 44.693333333333335,
     "6774": 7.612666666666667,
     "11198": 6.726666666666667,
-    "31016": 0.994
+    "11294": 44.693333333333335,
+    "31016": 0.994,
+    "14177": 1.0
    },
    "casts": {
-    "Cold Blood": 1.0,
-    "Sinister Strike": 44.693333333333335,
-    "Auto Attack": 179.98833333333334,
+    "Thistle Tea": 1.0,
     "Goblin Sapper Charge": 1.0,
     "Slice and Dice": 7.612666666666667,
+    "Auto Attack": 179.98833333333334,
     "Expose Armor": 6.726666666666667,
-    "Thistle Tea": 1.0,
-    "Eviscerate": 0.994
+    "Sinister Strike": 44.693333333333335,
+    "Eviscerate": 0.994,
+    "Cold Blood": 1.0
    },
    "dps": 344.2623006659412,
    "dps_stdev": 18.449191698897852,
@@ -400,22 +400,22 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "31016": 1.6856666666666666,
-    "11294": 51.194,
     "13877": 2.0,
-    "13750": 1.0,
+    "31016": 1.6856666666666666,
     "6774": 8.461,
+    "11294": 51.194,
+    "13750": 1.0,
     "11198": 5.724666666666667
    },
    "casts": {
+    "Blade Flurry": 2.0,
     "Eviscerate": 1.6856666666666666,
+    "Slice and Dice": 8.461,
     "Auto Attack": 191.99099999999999,
     "Sinister Strike": 51.194,
-    "Blade Flurry": 2.0,
-    "Adrenaline Rush": 1.0,
-    "Thistle Tea": 1.0,
-    "Slice and Dice": 8.461,
     "Goblin Sapper Charge": 1.0,
+    "Thistle Tea": 1.0,
+    "Adrenaline Rush": 1.0,
     "Expose Armor": 5.724666666666667
    },
    "dps": 380.00033154175503,
@@ -451,21 +451,21 @@
    "split": "",
    "ours": false,
    "spell_casts": {
+    "6774": 11.118000000000002,
+    "11198": 6.66,
     "31016": 1.0076666666666667,
     "14177": 1.0,
-    "11198": 6.66,
-    "11294": 48.632,
-    "6774": 11.118
+    "11294": 48.632
    },
    "casts": {
-    "Eviscerate": 1.0076666666666667,
     "Auto Attack": 178.128,
-    "Thistle Tea": 1.0,
-    "Goblin Sapper Charge": 1.0,
-    "Cold Blood": 1.0,
+    "Slice and Dice": 11.118000000000002,
     "Expose Armor": 6.66,
+    "Eviscerate": 1.0076666666666667,
+    "Cold Blood": 1.0,
     "Sinister Strike": 48.632,
-    "Slice and Dice": 11.118
+    "Thistle Tea": 1.0,
+    "Goblin Sapper Charge": 1.0
    },
    "dps": 355.5160834931833,
    "dps_stdev": 18.97248425110194,
@@ -501,20 +501,20 @@
    "ours": false,
    "spell_casts": {
     "6774": 11.717333333333334,
+    "14278": 2.550666666666667,
     "16511": 51.995333333333335,
-    "31016": 0.6936666666666667,
     "11198": 5.941333333333334,
-    "14278": 2.550666666666667
+    "31016": 0.6936666666666667
    },
    "casts": {
-    "Thistle Tea": 1.0,
-    "Goblin Sapper Charge": 1.0,
     "Slice and Dice": 11.717333333333334,
-    "Hemorrhage": 51.995333333333335,
-    "Eviscerate": 0.6936666666666667,
     "Auto Attack": 177.81900000000002,
+    "Goblin Sapper Charge": 1.0,
+    "Ghostly Strike": 2.550666666666667,
+    "Hemorrhage": 51.995333333333335,
     "Expose Armor": 5.941333333333334,
-    "Ghostly Strike": 2.550666666666667
+    "Thistle Tea": 1.0,
+    "Eviscerate": 0.6936666666666667
    },
    "dps": 315.3501644226995,
    "dps_stdev": 16.300323486419185,

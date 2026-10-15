@@ -19,8 +19,8 @@
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
 - **Fire Blast**: in the last 3 seconds of the fight, when there is no time left for another **Arcane Blast**
-- **Presence of Mind**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
 - **Arcane Power**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
+- **Presence of Mind**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
 - Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
@@ -54,41 +54,39 @@ Arcane in a raid builds **Arcane Blast** stacks and spends them. Each **Arcane B
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 694 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 689 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 672 | [31/10/10](https://talentsforever.com/mage/60/052023203111011531-2305-0352-6) |
-| Phase 1 BiS | 692 | [31/10/10](https://talentsforever.com/mage/60/050025203111011531-2305-0253-6) (ties this build) |
+| Pre-BiS | 673 | [31/10/10](https://talentsforever.com/mage/60/250005003110311531-1315-055-6) |
+| Phase 1 BiS | 696 | [31/10/10](https://talentsforever.com/mage/60/250005003110311531-1315-055-6) (ties this build) |
 
-*Gear-tier numbers searched on 2026-10-02, on an older simulator build than the rest of this page (before beta 70291 and the 2026-10-09 audit that took Atiesh out of the full raid): they run 3-7% high and can order the specs differently than the full-raid ranking. The searches are queued to run again.*
-
-**The gear** (average item level: Pre-BiS 62.2; Phase 1 BiS 66.1; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 62.2; Phase 1 BiS 65.6; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
 | Head | [Spellweaver's Turban](https://www.wowhead.com/forever/item=22267) · *General Drakkisath, Blackrock Spire*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11648) | [Spellweaver's Turban](https://www.wowhead.com/forever/item=22267) · *General Drakkisath, Blackrock Spire*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11648) |
 | Neck | [Nacreous Shell Necklace](https://www.wowhead.com/forever/item=22403) · *Cannon Master Willey, Stratholme* | [Choker of the Fire Lord](https://www.wowhead.com/forever/item=18814) · *Ragnaros, Molten Core* |
 | Shoulders | [Rugged Mantle of the Timbermaw](https://www.wowhead.com/forever/item=227808) | [Rugged Mantle of the Timbermaw](https://www.wowhead.com/forever/item=227808) |
-| Back | [Crystalline Threaded Cape](https://www.wowhead.com/forever/item=20697) · *world drop* | [Crystalline Threaded Cape](https://www.wowhead.com/forever/item=20697) · *world drop* |
+| Back | [Shroud of Arcane Mastery](https://www.wowhead.com/forever/item=22330) · *Blackrock Depths* | [Crystalline Threaded Cape](https://www.wowhead.com/forever/item=20697) · *world drop* |
 | Chest | [Robe of the Archmage](https://www.wowhead.com/forever/item=14152) · *Tailoring*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Robe of Volatile Power](https://www.wowhead.com/forever/item=19145) · *Molten Core*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
 | Wrist | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) |
 | Hands | [Hands of Power](https://www.wowhead.com/forever/item=13253) · *Quartermaster Zigris, Blackrock Spire* | [Hands of Power](https://www.wowhead.com/forever/item=13253) · *Quartermaster Zigris, Blackrock Spire* |
 | Waist | [Knowledge of the Timbermaw](https://www.wowhead.com/forever/item=228190) | [Mana Igniting Cord](https://www.wowhead.com/forever/item=19136) · *Molten Core* |
 | Legs | [Skyshroud Leggings](https://www.wowhead.com/forever/item=13170) · *Highlord Omokk, Blackrock Spire*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11648) | [Netherwind Pants](https://www.wowhead.com/forever/item=16915) · *Ragnaros, Molten Core*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11648) |
-| Feet | [Sorcerer's Boots](https://www.wowhead.com/forever/item=22064)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) | [Arcanist Boots](https://www.wowhead.com/forever/item=16800) · *Lucifron, Molten Core*<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) |
-| Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=234439) | [Rune Band of Wizardry](https://www.wowhead.com/forever/item=22339) · *Lord Valthalak, Blackrock Spire* |
+| Feet | [Sorcerer's Boots](https://www.wowhead.com/forever/item=22064)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) | [Sorcerer's Boots](https://www.wowhead.com/forever/item=22064)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) |
 | Finger | [Rune Band of Wizardry](https://www.wowhead.com/forever/item=22339) · *Lord Valthalak, Blackrock Spire* | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
+| Finger | [Elemental Focus Band](https://www.wowhead.com/forever/item=20682) | [Rune Band of Wizardry](https://www.wowhead.com/forever/item=22339) · *Lord Valthalak, Blackrock Spire* |
 | Trinket | [Briarwood Reed](https://www.wowhead.com/forever/item=12930) · *Jed Runewatcher, Blackrock Spire* | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) · *Magmadar, Molten Core* |
 | Trinket | [Eye of the Beast](https://www.wowhead.com/forever/item=13968) | [Briarwood Reed](https://www.wowhead.com/forever/item=12930) · *Jed Runewatcher, Blackrock Spire* |
 | Main hand | [Elemental Attuned Blade](https://www.wowhead.com/forever/item=20698) · *world drop*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) | [Azuresong Mageblade](https://www.wowhead.com/forever/item=17103) · *Golemagg the Incinerator, Molten Core*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) |
 | Off hand | [Scepter of Interminable Focus](https://www.wowhead.com/forever/item=22329) · *Stratholme* | [Scepter of Interminable Focus](https://www.wowhead.com/forever/item=22329) · *Stratholme* |
-| Ranged/relic | [Wand of Arcane Potency](https://www.wowhead.com/forever/item=18338) · *Dire Maul* | [Bonecreeper Stylus](https://www.wowhead.com/forever/item=13938) · *Darkmaster Gandling, Scholomance* |
+| Ranged/relic | [Bonecreeper Stylus](https://www.wowhead.com/forever/item=13938) · *Darkmaster Gandling, Scholomance* | [Bonecreeper Stylus](https://www.wowhead.com/forever/item=13938) · *Darkmaster Gandling, Scholomance* |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://elliotwood.github.io/Forever/forever/mage/dps/#eJzMlMtPE1EUxnvuDJ3DAWodYhwmLEYSSW0cc2eGGmAzhZXRhZi4cKVM6UBrtG06XeBKUEwMCzDqBuMGEoMmgMQVuvRZkmrYIBGN8RGjCxdEDRs3ZoZi/wE1fpt77nfu43dPcg81IkRBAQ1iwEFu+T1jHDohCX1wAgowAqCuiYhRVD2S8Oc8KJ8aSMSLd4FEfPe9iUR8NQ0UxnJO+RghCR/eAuV1hAR8MkQivt1sojB+G/R3Sbg4B8qkRCI+m42QiI8WgAS84JKAV86ShOvToJSbScT7C/7pM5PQth/HstFyVpu9CbEXE8A3U30zj2Ec2Fj2KrDN1G343LMEc+OwAhPZXqo96QFr5QmTm5bJLcMwuGEkLEM3LZ7QuZUwywxWWMMH9p7Josq6Q7KlGhST22lnfAcKMkuFVInqSDASewOrTmaHq5bJPbWOBLx2Ut6lNlP9PQiTiD/WmeqPo09BPi87TuHMqXyhpJncPKgbXOed3dpAxskNuWktX9ScdNpNa6lzWinjasV8ySll8znNc53iQEaLea6rOcUBJ+fq6YKnb+f1rfyB014+t09VA65wjaujyrV29F8BROORKkCYRGKWF1Tg+uoRuV6VqiyK8IWVYYOZo0IoUEdyxi8YMYS2O0K9b4VGBpMtN6Z8Ldt7BgO9tM0NpoiaHS+z0H+lUnI7+qtqn//j93Q9r1Qqjf2LyZ6qkeyHywBTkM1vXFo+vmp3BW5oxe7xV1YqX+1jW8EbOy7g0u7e1toH2+oSh4I+kYECDMOw/GsAsg/KNg==); Phase 1 BiS: [full raid](https://elliotwood.github.io/Forever/forever/mage/dps/#eJzMlM9LFGEYx/d5Z3ReH822kWgcPLwJybY08c6sE+plRk9Rhww6dCpn3dGdkJ1lZwM7pbVCeDDQPBgdSogKUqKTdYp+sdJWXiysDv0g6tBBKrwEETOu+Q9U9D3MPO/3eX983gfeBxsoxEEBBgngIDf/HhEOHWBDLxyFPIwAqCsipXGqnkSJ/pgD5WM9ivTnJKBI337bgiJduQIo0cVpUD40okTvXwXldSMK9NEgivTedJicKkXrJHr5LCjnJRTpg/lwgyfT4bc0BSjQMy5K9PkYKOUmFOmd+dD7OtS6h5a8eNlj1y5B4tkE8LV07+xDGAdS8iaBrKWvw6fuBbg5Dksw4fXg5qXukhZucm6YBk/pus513UzpmpHipsYNM1UmsETq35N3RBZV0hWTU6qOCbkNtyW3UkEm6ZgqYQ0KurkrsmpkcqBqGTxQa1CgU8fk7WoT1t2GWhTp91dEDf+jj0E+LTtOfui4ny8ygxv7NJ1rvKOL9Wed3KCbYX6BOZmMm2HpU6yYdVnBLzpFz8+xwHUK/VmWCFyXOYV+J+dqmXygbeS19fzeE4Gf262qEVftJld7levloX8FEE82VgFqUUSSCqIKXFg+KNepUpVFET6TMqwSY1SIRWq3Z8OCIaHQekOoC63YyIDdfHEm1KK1cyDSC8tYJYrIrGSZxP4rFe2N6K+qbe6Pn9P5tFKpNPTdsrurht0H5wBmwPNXxxaPLFudkRtbsrrDmZXKF+vwevDGSgp0YUdPy+YDW+8T+6NOkYU8DMOw/GsAJXjJxA==).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://elliotwood.github.io/Forever/forever/mage/dps/#eJzMlM1PE10UxnvuDJ3D4ePtO8Q4jC6uJJLaOOZOyxhgM4WV0YWYuHClTOlAa7Bt2i5wJSgmhgUadYNxA4lRE0DiCln6lcFUwwZN0Bg/YnThgqBh48bMUOw/oMYnmcy5z7kn93dPcg81IkRAAw5REKC2/loxAZ2QhD44AQUYBdBXZcQI6kVS8MccaJ8aSMYL94BkfPetiWRcmgcKo5fTPjaTgg9vgfa6mSR8MkQyvt1sojBuDPpVCi7MgnZZIRkfzfvlz6aBJDzvkoRXzpCCa9OgeS0k44N5P7Ex3LYfx7MRL8tv34Toi0kQm6m+mccwAWw8exXYZuoOfO5ZhNkJWIHJbC/VbrTEdsUtIYQlRMI0/c9KmIaZMC1DWJbHYIU1fGDvmSrrrDukJnSTomo7/R/7DyWVpUK6QnUkmdbewKpT2eGqFRclvY4kvHZS3aG3UP19CJOM39eY7v/HnoJ6TnWcwvCpfKHM4yJ+0DCFITq7+UDGyQ25aZ4vcieddtM8dZaXMy4v5stOOZvP8ZLrFAcyPFpyXe4UB5yca6QLJWM7b2zlD5wu5XP7dD3gCte4Oqpcr47+LYBIrLkKECaZWKIUdOD66hG1XleqLJr0hXmwzuJjUihQR3LGbxgxhLa7Ur1vhUYHk603pnwt23sGA7204+tMk7kd81jon1I5uR39UbXP/fZzup5XKpXG/oVkT9VI9sMlgCnI5tcvLh9ftbsCN7Ri9/g7K5Wv9rGt4I0dk3BxZ+/u2vvamhGHgimRgQKMwIj6cwC6GsoL); Phase 1 BiS: [full raid](https://elliotwood.github.io/Forever/forever/mage/dps/#eJzMVM9LFFEc3++b0Xl+NdtGonHq8BKSbWnizawT6mVGT1GHDDp0Kmfd0Z2QnWVnAzulsUJ4MNA8GF0SogIV6WSdol+stJUX+33oB1GHDlLhJYiYcc1/oKIPvPe+7/N5Pz7vC++LDRTioACDBHCQm3/PCId2sKEHjkMehgHUFyKlcaqeRon+mAPlYz2K9OcEoEjfftuCIn15BVCiS1OgfGhEid69CsrrRhTogwEU6Z2pUJwsRfskujALygUJRfpoKjzg3nzYlyYBBXrORYk+HQWl3IQivTUfcl8HW/bRkhcve+zaZUg8GQe+lu6ZuQ9jQEreBJC19HX41LUIs2OwDONeN24+6jbZaZicc5PzlK6HzUzpmp7STY2bZpnAMql/T94RWVRJZ0xOqTom5FbcltxKBZmkY6qENSjo5p6IqpHJoSpl8ECtQYFOnpC3q01YdxNqUaTfXxE1HEcegnxWdpz84Ek/X2QGNw5oOtd4eyfryzq5ATfD/AJzMhk3w9JnWDHrsoJfdIqen2OB6xT6siwRuC5zCn1OztUy+UDb0LV1ff+pwM/tVdXIV+2mr7aqr+dH/pWBeLKxaqAWRSSpIMrAxZXDcp0qVb0owmdShlVijAixCG32TJgwJBRabgh1IRUb7rebL02HWLJ290d4ZhmrRBGZlSyT2H+For0R/VW0zv3xezoeVyqVht4Fu6tK2L1wHmAaPH91dOnYitURsbFlqytcWal8sY6uB2+spEAXd3Tv2vxf62XiYFQospCHIRiSfw0AHX3Jyw==).
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-14 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-15 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
 

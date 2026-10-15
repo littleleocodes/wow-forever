@@ -63,11 +63,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-arms-2h-raid-raid-dps`](opt-arms-2h-raid-raid-dps.md)** | ours: optimizer | 20/31/0 | 444 | +0.0% | 898 | +0.0% | 0 s |
-| 2 | [`arms-2h-raid`](arms-2h-raid.md) | ours: hand draft | 19/32/0 | 432 | -2.8% | 887 | -1.3% | 0 s |
-| 3 | *DPS* | community simulator | - | 411 | -7.5% | 842 | -6.2% | 0 s |
-| 4 | *Fury 17/34/0* | community simulator | - | 406 | -8.6% | 838 | -6.7% | 0 s |
-| 5 | *Arms 39/12/0* | community simulator | - | 377 | -15.1% | 790 | -12.0% | 0 s |
+| 1 | **[`opt-arms-2h-raid-raid-dps`](opt-arms-2h-raid-raid-dps.md)** | ours: optimizer | 20/31/0 | 432 | +0.0% | 881 | +0.0% | 0 s |
+| 2 | [`arms-2h-raid`](arms-2h-raid.md) | ours: hand draft | 19/32/0 | 420 | -2.9% | 870 | -1.3% | 0 s |
+| 3 | *DPS* | community simulator | - | 399 | -7.7% | 827 | -6.2% | 0 s |
+| 4 | *Fury 17/34/0* | community simulator | - | 395 | -8.8% | 822 | -6.6% | 0 s |
+| 5 | *Arms 39/12/0* | community simulator | - | 367 | -15.1% | 775 | -12.0% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -108,7 +108,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-
 |---|---|---|
 | 1 | cast Berserker Rage | 2.0 |
 | 2 | if not Battle Shout is up: cast Battle Shout | 0.3 |
-| 3 | if execute phase (E20): cast Execute | 5.1 |
+| 3 | if execute phase (E20): cast Execute | 5.0 |
 | 4 | cast Goblin Sapper Charge | as ready |
 | 5 | cast Dense Dynamite | as ready |
 | 6 | if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish | 0.3 |
@@ -118,11 +118,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-
 | 10 | if stacks of Sunder Armor < 4 and not Expose Armor is up: cast Sunder Armor | 7.4 |
 | 11 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 12 | if (time left in the fight ≤ 25.5s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready |
-| 13 | cast Whirlwind | 4.2 |
-| 14 | cast Bloodthirst | 5.7 |
+| 13 | cast Whirlwind | 4.1 |
+| 14 | cast Bloodthirst | 5.6 |
 | 15 | cast Death Wish | 0.3 |
-| 16 | cast Whirlwind | 4.2 |
-| 17 | if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring | 1.3 |
+| 16 | cast Whirlwind | 4.1 |
+| 17 | if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring | 1.2 |
 | 18 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.4 |
 
 Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
@@ -134,8 +134,8 @@ Damage by ability:
 | Auto Attack | 47% |
 | Bloodthirst | 18% |
 | Execute | 16% |
-| Whirlwind | 11% |
-| Deep Wound | 7% |
+| Whirlwind | 12% |
+| Deep Wound | 6% |
 | Dragonbreath Chili | 0% |
 | Hamstring | 0% |
 

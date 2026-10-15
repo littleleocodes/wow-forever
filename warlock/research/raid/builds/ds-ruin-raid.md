@@ -71,17 +71,17 @@ Allocation adopted on 2026-09-26 from `opt-sb-raid-raid-dps`, the best build in 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`shadow-bolt-hybrid-open-raid`](shadow-bolt-hybrid-open-raid.md) | ours: hand draft | 20/11/20 | 649 | +0.0% | 731 | +0.0% | 0 s |
-| 2 | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 646 | -0.6% | 726 | -0.7% | 1 s |
-| 3 | **[`ds-ruin-raid`](ds-ruin-raid.md)** | ours: hand draft | 22/11/18 | 642 | -1.1% | 725 | -0.9% | 2 s |
-| 4 | [`destruction-ml-raid`](destruction-ml-raid.md) | ours: hand draft | 10/11/30 | 634 | -2.3% | 710 | -2.9% | 0 s |
-| 5 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 612 | -5.7% | 686 | -6.2% | 1 s |
-| 6 | *DS/Ruin* | community simulator | - | 602 | -7.3% | 676 | -7.5% | 1 s |
-| 7 | *Shadow and Flame 13/11/27* | community simulator | - | 557 | -14.3% | 623 | -14.8% | 1 s |
-| 8 | *Deep Affliction 35/0/16* | community simulator | - | 534 | -17.7% | 589 | -19.4% | 1 s |
-| 9 | *Demonic Pact 2/31/18* | community simulator | - | 530 | -18.4% | 595 | -18.7% | 0 s |
-| 10 | *Affliction* | community simulator | - | 526 | -19.0% | 581 | -20.5% | 1 s |
-| 11 | *Demonic Pact* | community simulator | - | 523 | -19.5% | 586 | -19.8% | 0 s |
+| 1 | [`shadow-bolt-hybrid-open-raid`](shadow-bolt-hybrid-open-raid.md) | ours: hand draft | 20/11/20 | 641 | +0.0% | 723 | +0.0% | 1 s |
+| 2 | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 637 | -0.6% | 718 | -0.6% | 1 s |
+| 3 | **[`ds-ruin-raid`](ds-ruin-raid.md)** | ours: hand draft | 22/11/18 | 633 | -1.1% | 716 | -0.8% | 2 s |
+| 4 | [`destruction-ml-raid`](destruction-ml-raid.md) | ours: hand draft | 10/11/30 | 627 | -2.1% | 705 | -2.4% | 0 s |
+| 5 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 604 | -5.7% | 679 | -6.0% | 1 s |
+| 6 | *DS/Ruin* | community simulator | - | 595 | -7.1% | 668 | -7.5% | 1 s |
+| 7 | *Shadow and Flame 13/11/27* | community simulator | - | 549 | -14.3% | 618 | -14.5% | 1 s |
+| 8 | *Deep Affliction 35/0/16* | community simulator | - | 527 | -17.7% | 581 | -19.6% | 1 s |
+| 9 | *Demonic Pact 2/31/18* | community simulator | - | 522 | -18.4% | 587 | -18.7% | 1 s |
+| 10 | *Affliction* | community simulator | - | 520 | -18.8% | 573 | -20.7% | 1 s |
+| 11 | *Demonic Pact* | community simulator | - | 517 | -19.3% | 580 | -19.8% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -109,27 +109,26 @@ Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready |
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 4 | use every other cooldown when ready | as ready |
-| 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
-| 6 | if mana % < 10%: cast Life Tap | 7.3 |
-| 7 | cast Amplify Curse | 0.5 |
-| 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
+| 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.3 |
+| 6 | if mana % < 10%: cast Life Tap | 7.5 |
+| 7 | cast Amplify Curse | 0.6 |
+| 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 |
 | 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.3 |
 | 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
 | 11 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready |
-| 12 | cast Eureka! | 0.7 |
-| 13 | cast Shadow Bolt | 14.3 |
+| 12 | cast Shadow Bolt | 14.1 |
 
-Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Conflagrate (needs the Conflagrate talent).
+Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Conflagrate (needs the Conflagrate talent); cast Eureka! (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`ds-ruin-raid`](ds-ruin-raid.md) |
 |---|---|
-| Shadow Bolt | 53% |
-| Bane of Agony | 18% |
+| Shadow Bolt | 52% |
+| Bane of Agony | 19% |
 | Corruption | 17% |
 | Immolate | 11% |
-| Searing Pain | 1% |
+| Searing Pain | 0% |
 
 ## Notes
 

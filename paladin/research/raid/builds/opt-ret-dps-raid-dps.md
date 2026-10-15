@@ -66,16 +66,16 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md)** | ours: optimizer | 12/8/31 | 542 | +0.0% | 995 | -0.4% | 2 s |
-| 2 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: hand draft | 11/8/32 | 534 | -1.5% | 999 | +0.0% | 7 s |
-| 3 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/0/34 | 532 | -1.9% | 970 | -2.8% | 2 s |
-| 4 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 10/8/33 | 524 | -3.4% | 996 | -0.3% | 21 s |
-| 5 | *P4/P5 Ret* | community simulator | - | 519 | -4.2% | 969 | -3.0% | 10 s |
-| 6 | *Retribution 9/0/42* | community simulator | - | 498 | -8.3% | 956 | -4.3% | 16 s |
+| 1 | **[`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md)** | ours: optimizer | 12/8/31 | 533 | +0.0% | 979 | -0.3% | 1 s |
+| 2 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: hand draft | 11/8/32 | 523 | -1.8% | 982 | +0.0% | 6 s |
+| 3 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/0/34 | 522 | -1.9% | 954 | -2.8% | 2 s |
+| 4 | *P4/P5 Ret* | community simulator | - | 514 | -3.6% | 952 | -3.1% | 7 s |
+| 5 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 10/8/33 | 509 | -4.5% | 979 | -0.3% | 20 s |
+| 6 | *Retribution 9/0/42* | community simulator | - | 489 | -8.3% | 940 | -4.2% | 16 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 5 passes, the last 2026-10-02, 17 changes to the base rotation; third-seed check: ml: Retribution 489 -> 533 DPS (+9.0%), opt-ret-dps-raid-dps 477 -> 528 DPS (+10.6%), sim preset: P4/P5 Ret 478 -> 529 DPS (+10.5%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-14, 18 changes to the base rotation; third-seed check: ):
   1. only above 40% mana: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Righteousness is up: cast Seal of Command (+2.5%, pass 1)
   2. threshold 0.4s -> 0.9s: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness (+1.1%, pass 1)
   3. threshold 70% -> 60%: if mana % ≥ 70%: cast Consecration + threshold 0.4s -> 0.2s: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Righteousness is up and mana % ≥ 40%: cast Seal of Command (+0.3%, pass 1)
@@ -93,7 +93,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
   15. drop 'mana % ≥ 15%' from the condition: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness (+0.2%, pass 5)
   16. threshold 70% -> 65%: if mana % ≥ 15% and Seal of Righteousness is up and mana % ≥ 70%: cast Seal of Command (+0.5%, pass 5)
   17. threshold 1s -> 2s: if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 1s: cast Seal of Command (+0.2%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 10 passes, the last 2026-10-09, 11 changes to the base rotation; third-seed check: retribution-ml-raid 899 -> 998 DPS (+11.0%), sim preset: P4/P5 Ret 873 -> 969 DPS (+11.1%), ret-raid-dps 875 -> 972 DPS (+11.1%), ret-full-buffs-raid 902 -> 998 DPS (+10.5%), opt-ret-dps-raid-dps 894 -> 995 DPS (+11.3%)):
+  18. spell probe: insert at the end: cast Divine Favor (+3.9%, pass 6)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 11 passes, the last 2026-10-14, 12 changes to the base rotation; third-seed check: ):
   1. drop 'time left on Seal of Righteousness ≤ 1s' from the condition: if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 1s: cast Seal of Command (+2.4%, pass 1)
   2. threshold 70% -> 50%: if mana % ≥ 70%: cast Consecration (+1.4%, pass 1)
   3. move to the top: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness (+0.2%, pass 1)
@@ -105,6 +106,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
   9. insert in the middle: cast Demonic Rune (+0.2%, pass 5)
   10. rotation replaced by seal-of-fury-raid's raid rotation (keeps Seal of Righteousness up and judges it, Holy Strike, almost no seal twisting), which the open search's re-tune on a Retribution build produced (+2.0% on one seed, pass 6)
   11. always rank 4 instead of rank 5: if mana % ≥ 15% and Seal of Righteousness is up: cast Seal of Command (+0.3%, pass 8)
+  12. spell probe: insert in the middle: cast Holy Shock (+9.3%, pass 11)
 
 Before the pull: at -1.5s: cast Seal of Command.
 
@@ -117,22 +119,22 @@ Before the pull: at -1.5s: cast Seal of Command.
 | 5 | if mana % ≥ 15% and Seal of Righteousness is up and mana % ≥ 65%: cast Seal of Command | 5.0 |
 | 6 | cast Hammer of Wrath | 2.0 |
 | 7 | cast Holy Strike | 6.0 |
-| 8 | cast Consecration | 6.2 |
-| 9 | cast Consecration | 0.7 |
+| 8 | cast Consecration | 6.1 |
+| 9 | cast Consecration | 0.8 |
 
-Lines of the simulator's rotation these builds never cast: cast Holy Shock (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Holy Shock (its condition never held in these fights); cast Divine Favor (needs the Divine Favor talent).
 
 Damage by ability:
 
 | Ability | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) |
 |---|---|
 | Seal of Righteousness | 19% |
-| Auto Attack | 19% |
+| Auto Attack | 18% |
 | Consecration | 16% |
 | Holy Strike | 14% |
 | Judgement of Righteousness | 14% |
 | Hammer of Wrath | 6% |
-| Seal of Command | 5% |
+| Seal of Command | 6% |
 | Judgement of Command | 4% |
 | Dragonbreath Chili | 3% |
 

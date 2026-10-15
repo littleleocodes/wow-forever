@@ -1,0 +1,963 @@
+{
+ "druid": {
+  "Balance": {
+   "date": "2026-10-15",
+   "builds": [
+    "balance-moonkin-raid",
+    "opt-balance-dps-raid-dps"
+   ],
+   "entries": [
+    "balance-dps",
+    "balance-dps"
+   ],
+   "dps": {
+    "standard": {
+     "balance-moonkin-raid": 585.5,
+     "opt-balance-dps-raid-dps": 585.5
+    },
+    "three targets": {
+     "balance-moonkin-raid": 585.9,
+     "opt-balance-dps-raid-dps": 585.9
+    },
+    "Undead target": {
+     "balance-moonkin-raid": 585.5,
+     "opt-balance-dps-raid-dps": 585.5
+    },
+    "90 s": {
+     "balance-moonkin-raid": 580.1,
+     "opt-balance-dps-raid-dps": 580.1
+    },
+    "300 s": {
+     "balance-moonkin-raid": 589.0,
+     "opt-balance-dps-raid-dps": 589.0
+    }
+   },
+   "flags": []
+  },
+  "Feral Combat": {
+   "date": "2026-10-15",
+   "builds": [
+    "feral-combat-open-raid",
+    "feral-combat-shifting-power-raid",
+    "opt-feral-cat-dps-raid-dps",
+    "feral-cat-dps"
+   ],
+   "entries": [
+    "feral-cat-dps",
+    "feral-cat-dps",
+    "feral-cat-dps",
+    "feral-cat-dps"
+   ],
+   "dps": {
+    "standard": {
+     "feral-combat-open-raid": 694.1,
+     "feral-combat-shifting-power-raid": 687.6,
+     "opt-feral-cat-dps-raid-dps": 589.5,
+     "feral-cat-dps": 575.1
+    },
+    "three targets": {
+     "feral-combat-open-raid": 706.9,
+     "feral-combat-shifting-power-raid": 700.2,
+     "opt-feral-cat-dps-raid-dps": 602.8,
+     "feral-cat-dps": 588.5
+    },
+    "Undead target": {
+     "feral-combat-open-raid": 694.1,
+     "feral-combat-shifting-power-raid": 687.6,
+     "opt-feral-cat-dps-raid-dps": 589.5,
+     "feral-cat-dps": 575.1
+    },
+    "90 s": {
+     "feral-combat-open-raid": 707.3,
+     "feral-combat-shifting-power-raid": 701.4,
+     "opt-feral-cat-dps-raid-dps": 603.4,
+     "feral-cat-dps": 588.8
+    },
+    "300 s": {
+     "feral-combat-open-raid": 694.0,
+     "feral-combat-shifting-power-raid": 687.7,
+     "opt-feral-cat-dps-raid-dps": 587.6,
+     "feral-cat-dps": 573.0
+    }
+   },
+   "flags": []
+  }
+ },
+ "hunter": {
+  "Marksmanship": {
+   "date": "2026-10-15",
+   "builds": [
+    "mm-lone-wolf-raid",
+    "marksmanship-with-a-pet-open-raid",
+    "opt-mm-lonewolf-raid-raid-dps",
+    "marksmanship-ml-parse"
+   ],
+   "entries": [
+    "mm-lonewolf-raid",
+    "mm-raid",
+    "mm-lonewolf-raid",
+    "mm-lonewolf-raid"
+   ],
+   "dps": {
+    "standard": {
+     "mm-lone-wolf-raid": 892.1,
+     "marksmanship-with-a-pet-open-raid": 878.8,
+     "opt-mm-lonewolf-raid-raid-dps": 855.5,
+     "marksmanship-ml-parse": 851.5
+    },
+    "three targets": {
+     "mm-lone-wolf-raid": 894.9,
+     "marksmanship-with-a-pet-open-raid": 880.7,
+     "opt-mm-lonewolf-raid-raid-dps": 855.1,
+     "marksmanship-ml-parse": 852.2
+    },
+    "Undead target": {
+     "mm-lone-wolf-raid": 892.1,
+     "marksmanship-with-a-pet-open-raid": 878.8,
+     "opt-mm-lonewolf-raid-raid-dps": 855.5,
+     "marksmanship-ml-parse": 851.5
+    },
+    "90 s": {
+     "mm-lone-wolf-raid": 909.7,
+     "marksmanship-with-a-pet-open-raid": 891.8,
+     "opt-mm-lonewolf-raid-raid-dps": 863.8,
+     "marksmanship-ml-parse": 866.6
+    },
+    "300 s": {
+     "mm-lone-wolf-raid": 826.0,
+     "marksmanship-with-a-pet-open-raid": 826.0,
+     "opt-mm-lonewolf-raid-raid-dps": 811.9,
+     "marksmanship-ml-parse": 821.4
+    }
+   },
+   "flags": []
+  },
+  "Survival": {
+   "date": "2026-10-15",
+   "builds": [
+    "melee-survival-raid",
+    "survival-raid",
+    "opt-melee-dps-raid-dps",
+    "survival-ml-parse"
+   ],
+   "entries": [
+    "melee-dps",
+    "melee-dps",
+    "melee-dps",
+    "melee-dps"
+   ],
+   "dps": {
+    "standard": {
+     "melee-survival-raid": 1043.3,
+     "survival-raid": 1024.9,
+     "opt-melee-dps-raid-dps": 1012.7,
+     "survival-ml-parse": 994.6
+    },
+    "three targets": {
+     "melee-survival-raid": 1077.1,
+     "survival-raid": 1056.8,
+     "opt-melee-dps-raid-dps": 1045.4,
+     "survival-ml-parse": 1026.8
+    },
+    "Undead target": {
+     "melee-survival-raid": 1043.3,
+     "survival-raid": 1024.9,
+     "opt-melee-dps-raid-dps": 1012.7,
+     "survival-ml-parse": 994.6
+    },
+    "90 s": {
+     "melee-survival-raid": 1056.8,
+     "survival-raid": 1037.1,
+     "opt-melee-dps-raid-dps": 1028.2,
+     "survival-ml-parse": 1007.4
+    },
+    "300 s": {
+     "melee-survival-raid": 1037.5,
+     "survival-raid": 1019.3,
+     "opt-melee-dps-raid-dps": 1006.3,
+     "survival-ml-parse": 989.0
+    }
+   },
+   "flags": []
+  },
+  "Hybrid Beast Mastery/Marksmanship": {
+   "date": "2026-10-15",
+   "builds": [
+    "beast-marks-ml-raid",
+    "mm-hawk-raid",
+    "bm-mm-raid",
+    "opt-mm-raid-raid-dps"
+   ],
+   "entries": [
+    "mm-raid",
+    "bm-raid",
+    "mm-raid",
+    "mm-raid"
+   ],
+   "dps": {
+    "standard": {
+     "beast-marks-ml-raid": 877.4,
+     "mm-hawk-raid": 805.6,
+     "bm-mm-raid": 802.8,
+     "opt-mm-raid-raid-dps": 802.8
+    },
+    "three targets": {
+     "beast-marks-ml-raid": 877.9,
+     "mm-hawk-raid": 805.0,
+     "bm-mm-raid": 803.2,
+     "opt-mm-raid-raid-dps": 803.2
+    },
+    "Undead target": {
+     "beast-marks-ml-raid": 877.4,
+     "mm-hawk-raid": 805.6,
+     "bm-mm-raid": 802.8,
+     "opt-mm-raid-raid-dps": 802.8
+    },
+    "90 s": {
+     "beast-marks-ml-raid": 888.9,
+     "mm-hawk-raid": 817.8,
+     "bm-mm-raid": 817.4,
+     "opt-mm-raid-raid-dps": 817.4
+    },
+    "300 s": {
+     "beast-marks-ml-raid": 832.6,
+     "mm-hawk-raid": 801.0,
+     "bm-mm-raid": 798.4,
+     "opt-mm-raid-raid-dps": 798.4
+    }
+   },
+   "flags": []
+  }
+ },
+ "mage": {
+  "Fire": {
+   "date": "2026-10-15",
+   "builds": [
+    "fire-raid",
+    "opt-fire-raid-raid-dps"
+   ],
+   "entries": [
+    "fire-raid",
+    "fire-raid"
+   ],
+   "dps": {
+    "standard": {
+     "fire-raid": 685.5,
+     "opt-fire-raid-raid-dps": 685.5
+    },
+    "three targets": {
+     "fire-raid": 685.0,
+     "opt-fire-raid-raid-dps": 685.0
+    },
+    "Undead target": {
+     "fire-raid": 685.5,
+     "opt-fire-raid-raid-dps": 685.5
+    },
+    "90 s": {
+     "fire-raid": 713.8,
+     "opt-fire-raid-raid-dps": 713.8
+    },
+    "300 s": {
+     "fire-raid": 627.1,
+     "opt-fire-raid-raid-dps": 627.1
+    }
+   },
+   "flags": []
+  },
+  "Frost": {
+   "date": "2026-10-15",
+   "builds": [
+    "frost-ml-raid",
+    "opt-frost-raid-raid-dps-extwc",
+    "frost-winters-chill-raid"
+   ],
+   "entries": [
+    "frost-raid",
+    "frost-raid",
+    "frost-raid"
+   ],
+   "dps": {
+    "standard": {
+     "frost-ml-raid": 679.8,
+     "opt-frost-raid-raid-dps-extwc": 645.2,
+     "frost-winters-chill-raid": 611.9
+    },
+    "three targets": {
+     "frost-ml-raid": 679.3,
+     "opt-frost-raid-raid-dps-extwc": 644.4,
+     "frost-winters-chill-raid": 611.2
+    },
+    "Undead target": {
+     "frost-ml-raid": 679.8,
+     "opt-frost-raid-raid-dps-extwc": 645.2,
+     "frost-winters-chill-raid": 611.9
+    },
+    "90 s": {
+     "frost-ml-raid": 678.4,
+     "opt-frost-raid-raid-dps-extwc": 640.0,
+     "frost-winters-chill-raid": 613.7
+    },
+    "300 s": {
+     "frost-ml-raid": 685.7,
+     "opt-frost-raid-raid-dps-extwc": 649.4,
+     "frost-winters-chill-raid": 621.1
+    }
+   },
+   "flags": []
+  },
+  "Hybrid Arcane/Frost": {
+   "date": "2026-10-15",
+   "builds": [
+    "arcane-frost-open-raid",
+    "frost-fingers-of-frost-raid",
+    "opt-frost-raid-raid-dps",
+    "frost-arcane-power-raid"
+   ],
+   "entries": [
+    "frost-raid",
+    "frost-raid",
+    "frost-raid",
+    "frost-raid"
+   ],
+   "dps": {
+    "standard": {
+     "arcane-frost-open-raid": 687.3,
+     "frost-fingers-of-frost-raid": 676.0,
+     "opt-frost-raid-raid-dps": 675.5,
+     "frost-arcane-power-raid": 642.4
+    },
+    "three targets": {
+     "arcane-frost-open-raid": 688.2,
+     "frost-fingers-of-frost-raid": 676.3,
+     "opt-frost-raid-raid-dps": 676.8,
+     "frost-arcane-power-raid": 641.8
+    },
+    "Undead target": {
+     "arcane-frost-open-raid": 687.3,
+     "frost-fingers-of-frost-raid": 676.0,
+     "opt-frost-raid-raid-dps": 675.5,
+     "frost-arcane-power-raid": 642.4
+    },
+    "90 s": {
+     "arcane-frost-open-raid": 683.1,
+     "frost-fingers-of-frost-raid": 673.6,
+     "opt-frost-raid-raid-dps": 673.6,
+     "frost-arcane-power-raid": 661.9
+    },
+    "300 s": {
+     "arcane-frost-open-raid": 691.7,
+     "frost-fingers-of-frost-raid": 681.8,
+     "opt-frost-raid-raid-dps": 681.6,
+     "frost-arcane-power-raid": 654.1
+    }
+   },
+   "flags": []
+  },
+  "Hybrid Fire/Frost": {
+   "date": "2026-10-15",
+   "builds": [
+    "frostfire-fingers-of-frost-raid",
+    "frostfire-raid",
+    "frostfire-ml-raid"
+   ],
+   "entries": [
+    "frostfire-raid",
+    "frostfire-raid",
+    "frostfire-raid"
+   ],
+   "dps": {
+    "standard": {
+     "frostfire-fingers-of-frost-raid": 674.3,
+     "frostfire-raid": 629.2,
+     "frostfire-ml-raid": 596.6
+    },
+    "three targets": {
+     "frostfire-fingers-of-frost-raid": 673.3,
+     "frostfire-raid": 628.8,
+     "frostfire-ml-raid": 597.7
+    },
+    "Undead target": {
+     "frostfire-fingers-of-frost-raid": 674.3,
+     "frostfire-raid": 629.2,
+     "frostfire-ml-raid": 596.6
+    },
+    "90 s": {
+     "frostfire-fingers-of-frost-raid": 674.6,
+     "frostfire-raid": 650.6,
+     "frostfire-ml-raid": 662.1
+    },
+    "300 s": {
+     "frostfire-fingers-of-frost-raid": 585.6,
+     "frostfire-raid": 557.0,
+     "frostfire-ml-raid": 506.1
+    }
+   },
+   "flags": []
+  }
+ },
+ "paladin": {
+  "Retribution": {
+   "date": "2026-10-15",
+   "builds": [
+    "ret-full-buffs-raid",
+    "retribution-ml-raid",
+    "opt-ret-dps-raid-dps",
+    "ret-raid-dps"
+   ],
+   "entries": [
+    "ret-dps",
+    "ret-dps",
+    "ret-dps",
+    "ret-dps"
+   ],
+   "dps": {
+    "standard": {
+     "ret-full-buffs-raid": 979.8,
+     "retribution-ml-raid": 981.5,
+     "opt-ret-dps-raid-dps": 978.6,
+     "ret-raid-dps": 955.6
+    },
+    "three targets": {
+     "ret-full-buffs-raid": 1251.4,
+     "retribution-ml-raid": 1259.9,
+     "opt-ret-dps-raid-dps": 1259.6,
+     "ret-raid-dps": 1228.0
+    },
+    "Undead target": {
+     "ret-full-buffs-raid": 979.8,
+     "retribution-ml-raid": 981.5,
+     "opt-ret-dps-raid-dps": 978.6,
+     "ret-raid-dps": 955.6
+    },
+    "90 s": {
+     "ret-full-buffs-raid": 974.8,
+     "retribution-ml-raid": 971.6,
+     "opt-ret-dps-raid-dps": 966.6,
+     "ret-raid-dps": 943.2
+    },
+    "300 s": {
+     "ret-full-buffs-raid": 944.1,
+     "retribution-ml-raid": 948.7,
+     "opt-ret-dps-raid-dps": 948.9,
+     "ret-raid-dps": 930.2
+    }
+   },
+   "flags": []
+  }
+ },
+ "priest": {
+  "Hybrid Discipline/Holy": {
+   "date": "2026-10-15",
+   "builds": [
+    "smite-discipline-raid",
+    "smite-open-raid"
+   ],
+   "entries": [
+    "smite-dps",
+    "smite-dps"
+   ],
+   "dps": {
+    "standard": {
+     "smite-discipline-raid": 578.6,
+     "smite-open-raid": 577.6
+    },
+    "three targets": {
+     "smite-discipline-raid": 578.5,
+     "smite-open-raid": 577.4
+    },
+    "Undead target": {
+     "smite-discipline-raid": 578.6,
+     "smite-open-raid": 577.6
+    },
+    "90 s": {
+     "smite-discipline-raid": 605.6,
+     "smite-open-raid": 600.8
+    },
+    "300 s": {
+     "smite-discipline-raid": 483.5,
+     "smite-open-raid": 486.8
+    }
+   },
+   "flags": []
+  }
+ },
+ "rogue": {
+  "Assassination": {
+   "date": "2026-10-15",
+   "builds": [
+    "assassination-ml-raid",
+    "assassination-seal-fate-raid",
+    "assassination-mutilate-raid"
+   ],
+   "entries": [
+    "assassination-raid",
+    "assassination-raid",
+    "assassination-raid"
+   ],
+   "dps": {
+    "standard": {
+     "assassination-ml-raid": 707.5,
+     "assassination-seal-fate-raid": 702.2,
+     "assassination-mutilate-raid": 689.1
+    },
+    "three targets": {
+     "assassination-ml-raid": 734.8,
+     "assassination-seal-fate-raid": 729.5,
+     "assassination-mutilate-raid": 715.3
+    },
+    "Undead target": {
+     "assassination-ml-raid": 707.5,
+     "assassination-seal-fate-raid": 702.2,
+     "assassination-mutilate-raid": 689.1
+    },
+    "90 s": {
+     "assassination-ml-raid": 732.8,
+     "assassination-seal-fate-raid": 727.1,
+     "assassination-mutilate-raid": 715.9
+    },
+    "300 s": {
+     "assassination-ml-raid": 699.5,
+     "assassination-seal-fate-raid": 694.3,
+     "assassination-mutilate-raid": 680.2
+    }
+   },
+   "flags": []
+  },
+  "Combat": {
+   "date": "2026-10-15",
+   "builds": [
+    "combat-ml-raid",
+    "combat-daggers-raid",
+    "combat-swords-open-raid",
+    "opt-combat-daggers-raid-raid-dps"
+   ],
+   "entries": [
+    "combat-daggers-raid",
+    "combat-daggers-raid",
+    "combat-swords-raid",
+    "combat-daggers-raid"
+   ],
+   "dps": {
+    "standard": {
+     "combat-ml-raid": 735.6,
+     "combat-daggers-raid": 728.6,
+     "combat-swords-open-raid": 717.4,
+     "opt-combat-daggers-raid-raid-dps": 713.3
+    },
+    "three targets": {
+     "combat-ml-raid": 906.6,
+     "combat-daggers-raid": 895.2,
+     "combat-swords-open-raid": 880.8,
+     "opt-combat-daggers-raid-raid-dps": 876.2
+    },
+    "Undead target": {
+     "combat-ml-raid": 735.6,
+     "combat-daggers-raid": 728.6,
+     "combat-swords-open-raid": 717.4,
+     "opt-combat-daggers-raid-raid-dps": 713.3
+    },
+    "90 s": {
+     "combat-ml-raid": 779.8,
+     "combat-daggers-raid": 768.6,
+     "combat-swords-open-raid": 765.5,
+     "opt-combat-daggers-raid-raid-dps": 750.5
+    },
+    "300 s": {
+     "combat-ml-raid": 718.6,
+     "combat-daggers-raid": 711.2,
+     "combat-swords-open-raid": 697.1,
+     "opt-combat-daggers-raid-raid-dps": 696.6
+    }
+   },
+   "flags": []
+  },
+  "Subtlety": {
+   "date": "2026-10-15",
+   "builds": [
+    "subtlety-hemo-raid",
+    "subtlety-open-raid"
+   ],
+   "entries": [
+    "subtlety-raid",
+    "subtlety-raid"
+   ],
+   "dps": {
+    "standard": {
+     "subtlety-hemo-raid": 672.3,
+     "subtlety-open-raid": 675.3
+    },
+    "three targets": {
+     "subtlety-hemo-raid": 697.8,
+     "subtlety-open-raid": 700.8
+    },
+    "Undead target": {
+     "subtlety-hemo-raid": 672.3,
+     "subtlety-open-raid": 675.3
+    },
+    "90 s": {
+     "subtlety-hemo-raid": 707.8,
+     "subtlety-open-raid": 711.0
+    },
+    "300 s": {
+     "subtlety-hemo-raid": 658.8,
+     "subtlety-open-raid": 661.7
+    }
+   },
+   "flags": []
+  }
+ },
+ "shaman": {
+  "Elemental": {
+   "date": "2026-10-15",
+   "builds": [
+    "opt-elemental-dps-raid-dps",
+    "elemental-raid"
+   ],
+   "entries": [
+    "elemental-dps",
+    "elemental-dps"
+   ],
+   "dps": {
+    "standard": {
+     "opt-elemental-dps-raid-dps": 508.2,
+     "elemental-raid": 508.2
+    },
+    "three targets": {
+     "opt-elemental-dps-raid-dps": 633.0,
+     "elemental-raid": 633.0
+    },
+    "Undead target": {
+     "opt-elemental-dps-raid-dps": 508.2,
+     "elemental-raid": 508.2
+    },
+    "90 s": {
+     "opt-elemental-dps-raid-dps": 510.4,
+     "elemental-raid": 510.4
+    },
+    "300 s": {
+     "opt-elemental-dps-raid-dps": 468.7,
+     "elemental-raid": 468.7
+    }
+   },
+   "flags": []
+  },
+  "Enhancement": {
+   "date": "2026-10-15",
+   "builds": [
+    "enhancement-ml-raid",
+    "opt-enhancement-dps-raid-dps",
+    "enhancement-raid-dps"
+   ],
+   "entries": [
+    "enhancement-dps",
+    "enhancement-dps",
+    "enhancement-dps"
+   ],
+   "dps": {
+    "standard": {
+     "enhancement-ml-raid": 726.2,
+     "opt-enhancement-dps-raid-dps": 681.3,
+     "enhancement-raid-dps": 670.9
+    },
+    "three targets": {
+     "enhancement-ml-raid": 970.4,
+     "opt-enhancement-dps-raid-dps": 832.4,
+     "enhancement-raid-dps": 808.7
+    },
+    "Undead target": {
+     "enhancement-ml-raid": 726.2,
+     "opt-enhancement-dps-raid-dps": 681.3,
+     "enhancement-raid-dps": 670.9
+    },
+    "90 s": {
+     "enhancement-ml-raid": 756.9,
+     "opt-enhancement-dps-raid-dps": 699.3,
+     "enhancement-raid-dps": 688.5
+    },
+    "300 s": {
+     "enhancement-ml-raid": 706.4,
+     "opt-enhancement-dps-raid-dps": 671.8,
+     "enhancement-raid-dps": 662.4
+    }
+   },
+   "flags": []
+  },
+  "Hybrid Elemental/Enhancement": {
+   "date": "2026-10-15",
+   "builds": [
+    "elemental-enhancement-ml-raid",
+    "elemental-raid-dps"
+   ],
+   "entries": [
+    "enhancement-dps",
+    "elemental-dps"
+   ],
+   "dps": {
+    "standard": {
+     "elemental-enhancement-ml-raid": 689.8,
+     "elemental-raid-dps": 515.2
+    },
+    "three targets": {
+     "elemental-enhancement-ml-raid": 952.9,
+     "elemental-raid-dps": 613.5
+    },
+    "Undead target": {
+     "elemental-enhancement-ml-raid": 689.8,
+     "elemental-raid-dps": 515.2
+    },
+    "90 s": {
+     "elemental-enhancement-ml-raid": 704.8,
+     "elemental-raid-dps": 515.4
+    },
+    "300 s": {
+     "elemental-enhancement-ml-raid": 664.4,
+     "elemental-raid-dps": 466.1
+    }
+   },
+   "flags": []
+  }
+ },
+ "warlock": {
+  "Affliction": {
+   "date": "2026-10-15",
+   "builds": [
+    "opt-affliction-raid-raid-dps",
+    "affliction-dot-raid"
+   ],
+   "entries": [
+    "affliction-raid",
+    "affliction-raid"
+   ],
+   "dps": {
+    "standard": {
+     "opt-affliction-raid-raid-dps": 752.9,
+     "affliction-dot-raid": 747.9
+    },
+    "three targets": {
+     "opt-affliction-raid-raid-dps": 753.1,
+     "affliction-dot-raid": 747.8
+    },
+    "Undead target": {
+     "opt-affliction-raid-raid-dps": 752.9,
+     "affliction-dot-raid": 747.9
+    },
+    "90 s": {
+     "opt-affliction-raid-raid-dps": 773.2,
+     "affliction-dot-raid": 768.3
+    },
+    "300 s": {
+     "opt-affliction-raid-raid-dps": 739.8,
+     "affliction-dot-raid": 735.6
+    }
+   },
+   "flags": []
+  },
+  "Demonology": {
+   "date": "2026-10-15",
+   "builds": [
+    "demonology-ml-raid",
+    "demonology-pact-raid"
+   ],
+   "entries": [
+    "demonology-raid",
+    "demonology-raid"
+   ],
+   "dps": {
+    "standard": {
+     "demonology-ml-raid": 822.2,
+     "demonology-pact-raid": 816.1
+    },
+    "three targets": {
+     "demonology-ml-raid": 821.7,
+     "demonology-pact-raid": 816.0
+    },
+    "Undead target": {
+     "demonology-ml-raid": 822.2,
+     "demonology-pact-raid": 816.1
+    },
+    "90 s": {
+     "demonology-ml-raid": 864.0,
+     "demonology-pact-raid": 853.3
+    },
+    "300 s": {
+     "demonology-ml-raid": 803.5,
+     "demonology-pact-raid": 799.8
+    }
+   },
+   "flags": []
+  },
+  "Destruction": {
+   "date": "2026-10-15",
+   "builds": [
+    "destruction-ml-raid",
+    "opt-fire-destro-raid-raid-dps",
+    "destruction-incinerate-raid"
+   ],
+   "entries": [
+    "sb-raid",
+    "fire-destro-raid",
+    "incinerate-raid"
+   ],
+   "dps": {
+    "standard": {
+     "destruction-ml-raid": 704.2,
+     "opt-fire-destro-raid-raid-dps": 685.3,
+     "destruction-incinerate-raid": 664.6
+    },
+    "three targets": {
+     "destruction-ml-raid": 704.2,
+     "opt-fire-destro-raid-raid-dps": 685.9,
+     "destruction-incinerate-raid": 664.8
+    },
+    "Undead target": {
+     "destruction-ml-raid": 704.2,
+     "opt-fire-destro-raid-raid-dps": 685.3,
+     "destruction-incinerate-raid": 664.6
+    },
+    "90 s": {
+     "destruction-ml-raid": 732.5,
+     "opt-fire-destro-raid-raid-dps": 713.5,
+     "destruction-incinerate-raid": 675.6
+    },
+    "300 s": {
+     "destruction-ml-raid": 688.5,
+     "opt-fire-destro-raid-raid-dps": 664.8,
+     "destruction-incinerate-raid": 652.7
+    }
+   },
+   "flags": []
+  },
+  "Hybrid Affliction/Destruction": {
+   "date": "2026-10-15",
+   "builds": [
+    "shadow-bolt-hybrid-open-raid",
+    "opt-sb-raid-raid-dps",
+    "ds-ruin-raid",
+    "shadow-bolt-hybrid-fire-open-raid"
+   ],
+   "entries": [
+    "sb-raid",
+    "sb-raid",
+    "sb-raid",
+    "fire-destro-raid"
+   ],
+   "dps": {
+    "standard": {
+     "shadow-bolt-hybrid-open-raid": 722.6,
+     "opt-sb-raid-raid-dps": 717.6,
+     "ds-ruin-raid": 716.2,
+     "shadow-bolt-hybrid-fire-open-raid": 700.2
+    },
+    "three targets": {
+     "shadow-bolt-hybrid-open-raid": 723.2,
+     "opt-sb-raid-raid-dps": 717.2,
+     "ds-ruin-raid": 715.3,
+     "shadow-bolt-hybrid-fire-open-raid": 700.6
+    },
+    "Undead target": {
+     "shadow-bolt-hybrid-open-raid": 722.6,
+     "opt-sb-raid-raid-dps": 717.6,
+     "ds-ruin-raid": 716.2,
+     "shadow-bolt-hybrid-fire-open-raid": 700.2
+    },
+    "90 s": {
+     "shadow-bolt-hybrid-open-raid": 752.5,
+     "opt-sb-raid-raid-dps": 745.0,
+     "ds-ruin-raid": 749.9,
+     "shadow-bolt-hybrid-fire-open-raid": 726.1
+    },
+    "300 s": {
+     "shadow-bolt-hybrid-open-raid": 707.5,
+     "opt-sb-raid-raid-dps": 703.8,
+     "ds-ruin-raid": 701.2,
+     "shadow-bolt-hybrid-fire-open-raid": 680.3
+    }
+   },
+   "flags": []
+  }
+ },
+ "warrior": {
+  "Arms": {
+   "date": "2026-10-15",
+   "builds": [
+    "arms-community-parse",
+    "arms-battle-raid"
+   ],
+   "entries": [
+    "arms-battle-raid",
+    "arms-battle-raid"
+   ],
+   "dps": {
+    "standard": {
+     "arms-community-parse": 965.2,
+     "arms-battle-raid": 865.0
+    },
+    "three targets": {
+     "arms-community-parse": 1010.1,
+     "arms-battle-raid": 995.3
+    },
+    "Undead target": {
+     "arms-community-parse": 965.2,
+     "arms-battle-raid": 865.0
+    },
+    "90 s": {
+     "arms-community-parse": 965.5,
+     "arms-battle-raid": 870.5
+    },
+    "300 s": {
+     "arms-community-parse": 957.6,
+     "arms-battle-raid": 854.2
+    }
+   },
+   "flags": []
+  },
+  "Fury": {
+   "date": "2026-10-15",
+   "builds": [
+    "fury-open-raid",
+    "opt-arms-2h-raid-raid-dps",
+    "opt-fury-dw-raid-raid-dps",
+    "fury-dw-raid"
+   ],
+   "entries": [
+    "fury-dw-raid",
+    "arms-2h-raid",
+    "fury-dw-raid",
+    "fury-dw-raid"
+   ],
+   "dps": {
+    "standard": {
+     "fury-open-raid": 917.7,
+     "opt-arms-2h-raid-raid-dps": 880.0,
+     "opt-fury-dw-raid-raid-dps": 879.8,
+     "fury-dw-raid": 874.4
+    },
+    "three targets": {
+     "fury-open-raid": 1205.2,
+     "opt-arms-2h-raid-raid-dps": 1073.4,
+     "opt-fury-dw-raid-raid-dps": 1155.5,
+     "fury-dw-raid": 1137.8
+    },
+    "Undead target": {
+     "fury-open-raid": 917.7,
+     "opt-arms-2h-raid-raid-dps": 880.0,
+     "opt-fury-dw-raid-raid-dps": 879.8,
+     "fury-dw-raid": 874.4
+    },
+    "90 s": {
+     "fury-open-raid": 946.8,
+     "opt-arms-2h-raid-raid-dps": 903.8,
+     "opt-fury-dw-raid-raid-dps": 900.7,
+     "fury-dw-raid": 900.3
+    },
+    "300 s": {
+     "fury-open-raid": 899.8,
+     "opt-arms-2h-raid-raid-dps": 849.6,
+     "opt-fury-dw-raid-raid-dps": 864.8,
+     "fury-dw-raid": 858.7
+    }
+   },
+   "flags": []
+  }
+ }
+}

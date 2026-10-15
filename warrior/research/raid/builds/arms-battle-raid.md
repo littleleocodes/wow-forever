@@ -71,9 +71,9 @@ Deep Arms played in Battle Stance (2026-09-29): Rend kept up so Bloodthrill open
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`arms-community-parse`](arms-community-parse.md) | ours: parse build | 37/14/0 | 491 | +0.0% | 984 | +0.0% | 0 s |
-| 2 | **[`arms-battle-raid`](arms-battle-raid.md)** | ours: hand draft | 34/17/0 | 489 | -0.5% | 883 | -10.3% | 0 s |
-| 3 | *Arms 39/12/0* | community simulator | - | 488 | -0.8% | 982 | -0.2% | 0 s |
+| 1 | [`arms-community-parse`](arms-community-parse.md) | ours: parse build | 37/14/0 | 481 | +0.0% | 964 | +0.0% | 0 s |
+| 2 | **[`arms-battle-raid`](arms-battle-raid.md)** | ours: hand draft | 34/17/0 | 480 | -0.3% | 866 | -10.1% | 0 s |
+| 3 | *Arms 39/12/0* | community simulator | - | 478 | -0.8% | 962 | -0.2% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -109,7 +109,7 @@ Before the pull: at -1s: cast Battle Stance.
 | # | Priority (the first line whose condition holds is cast) | [`arms-battle-raid`](arms-battle-raid.md) casts/min |
 |---|---|---|
 | 1 | if not Battle Stance is up: cast Battle Stance | 25.5 |
-| 2 | cast Overpower | 6.6 |
+| 2 | cast Overpower | 6.5 |
 | 3 | if execute phase (E20): cast Execute | 3.8 |
 | 4 | cast Goblin Sapper Charge | as ready |
 | 5 | cast Dense Dynamite | as ready |

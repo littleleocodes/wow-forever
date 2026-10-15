@@ -215,6 +215,47 @@
   {
    "action": {
     "condition": {
+     "not": {
+      "val": {
+       "dotIsActive": {
+        "spellId": {
+         "spellId": 18807
+        }
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 18807
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-14: changed or added by the rotation search (see smite-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "auraIsInactive": {
+      "sourceUnit": {
+       "type": "Self"
+      },
+      "auraId": {
+       "spellId": 10060
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 10060
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-14: changed or added by the rotation search (see smite-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
      "and": {
       "vals": [
        {

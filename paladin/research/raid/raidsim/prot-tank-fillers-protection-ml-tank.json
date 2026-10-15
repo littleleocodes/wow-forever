@@ -1,0 +1,214 @@
+{
+ "class": "paladin",
+ "spec": "prot-tank",
+ "build": "protection-ml-tank",
+ "setting": "raid",
+ "date": "2026-10-14",
+ "tank": true,
+ "removal": {
+  "Anticipation": 0.021509343813355897,
+  "Conviction": 0.0055213464489780595,
+  "Deflection": 0.03809786963510242,
+  "Eye for an Eye": 0.006667317974111242,
+  "Holy Conduit": 0.019412250611968607,
+  "Holy Shield": 0.07282271721745315,
+  "Improved Judgement": 0.01615351556227984,
+  "Improved Righteous Fury": 0.03075882065263369,
+  "Improved Seal of Fury": -0.0,
+  "Iron Creed": 0.03829946208462098,
+  "One-Handed Weapon Specialization": 0.009912837737661606,
+  "Precision": 0.015899226807302935,
+  "Reckoning": 0.004083645274625569,
+  "Redoubt": 0.016311589513276825,
+  "Sacred Arbiter": 0.009194294584897955,
+  "Sanctified Judgement": 0.030263864243348038,
+  "Shield Specialization": 0.05364092187466318,
+  "Swift Judgement": 0.006888996505695522,
+  "Templar's Bulwark": 0.017913313896129157,
+  "Vindication": 0.026864837269669373
+ },
+ "free": [
+  "Improved Seal of Fury"
+ ],
+ "kept_for_rotation": [
+  "Redoubt"
+ ],
+ "active_never_worth": [],
+ "abilities_never_cast": [],
+ "moves": [],
+ "final_seed3": 0.0,
+ "start": {
+  "Holy": [],
+  "Protection": [
+   [
+    "Redoubt",
+    5
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Anticipation",
+    5
+   ],
+   [
+    "Improved Seal of Fury",
+    1
+   ],
+   [
+    "Improved Righteous Fury",
+    3
+   ],
+   [
+    "Shield Specialization",
+    3
+   ],
+   [
+    "Swift Judgement",
+    1
+   ],
+   [
+    "One-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Templar's Bulwark",
+    1
+   ],
+   [
+    "Reckoning",
+    1
+   ],
+   [
+    "Iron Creed",
+    5
+   ],
+   [
+    "Holy Shield",
+    1
+   ]
+  ],
+  "Retribution": [
+   [
+    "Deflection",
+    5
+   ],
+   [
+    "Improved Judgement",
+    2
+   ],
+   [
+    "Holy Conduit",
+    2
+   ],
+   [
+    "Conviction",
+    2
+   ],
+   [
+    "Vindication",
+    2
+   ],
+   [
+    "Sanctified Judgement",
+    3
+   ],
+   [
+    "Eye for an Eye",
+    2
+   ],
+   [
+    "Sacred Arbiter",
+    1
+   ]
+  ]
+ },
+ "allocation": {
+  "Holy": [],
+  "Protection": [
+   [
+    "Redoubt",
+    5
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Anticipation",
+    5
+   ],
+   [
+    "Improved Seal of Fury",
+    1
+   ],
+   [
+    "Improved Righteous Fury",
+    3
+   ],
+   [
+    "Shield Specialization",
+    3
+   ],
+   [
+    "Swift Judgement",
+    1
+   ],
+   [
+    "One-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Templar's Bulwark",
+    1
+   ],
+   [
+    "Reckoning",
+    1
+   ],
+   [
+    "Iron Creed",
+    5
+   ],
+   [
+    "Holy Shield",
+    1
+   ]
+  ],
+  "Retribution": [
+   [
+    "Deflection",
+    5
+   ],
+   [
+    "Improved Judgement",
+    2
+   ],
+   [
+    "Holy Conduit",
+    2
+   ],
+   [
+    "Conviction",
+    2
+   ],
+   [
+    "Vindication",
+    2
+   ],
+   [
+    "Sanctified Judgement",
+    3
+   ],
+   [
+    "Eye for an Eye",
+    2
+   ],
+   [
+    "Sacred Arbiter",
+    1
+   ]
+  ]
+ }
+}

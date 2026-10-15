@@ -73,16 +73,16 @@ Allocation adopted on 2026-09-28 from `opt-fire-destro-raid-raid-dps`, the best 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`shadow-bolt-hybrid-fire-open-raid`](shadow-bolt-hybrid-fire-open-raid.md) | ours: hand draft | 20/11/20 | 628 | +0.0% | 709 | +0.0% | 3 s |
-| 2 | **[`destruction-fire-raid`](destruction-fire-raid.md)** | ours: hand draft | 22/11/18 | 620 | -1.3% | 697 | -1.7% | 6 s |
-| 3 | [`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md) | ours: optimizer | 10/11/30 | 619 | -1.5% | 692 | -2.4% | 2 s |
-| 4 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 594 | -5.5% | 666 | -6.2% | 3 s |
-| 5 | *DS/Ruin* | community simulator | - | 585 | -6.8% | 656 | -7.5% | 3 s |
-| 6 | *Shadow and Flame 13/11/27* | community simulator | - | 543 | -13.5% | 604 | -14.9% | 5 s |
-| 7 | *Deep Affliction 35/0/16* | community simulator | - | 519 | -17.3% | 575 | -19.0% | 3 s |
-| 8 | *Demonic Pact 2/31/18* | community simulator | - | 514 | -18.2% | 579 | -18.4% | 2 s |
-| 9 | *Affliction* | community simulator | - | 512 | -18.5% | 566 | -20.2% | 3 s |
-| 10 | *Demonic Pact* | community simulator | - | 509 | -18.9% | 570 | -19.7% | 3 s |
+| 1 | [`shadow-bolt-hybrid-fire-open-raid`](shadow-bolt-hybrid-fire-open-raid.md) | ours: hand draft | 20/11/20 | 618 | +0.0% | 700 | +0.0% | 3 s |
+| 2 | **[`destruction-fire-raid`](destruction-fire-raid.md)** | ours: hand draft | 22/11/18 | 613 | -0.8% | 689 | -1.5% | 8 s |
+| 3 | [`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md) | ours: optimizer | 10/11/30 | 613 | -0.8% | 685 | -2.1% | 2 s |
+| 4 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 586 | -5.1% | 657 | -6.1% | 5 s |
+| 5 | *DS/Ruin* | community simulator | - | 578 | -6.4% | 650 | -7.2% | 3 s |
+| 6 | *Shadow and Flame 13/11/27* | community simulator | - | 536 | -13.2% | 596 | -14.9% | 5 s |
+| 7 | *Deep Affliction 35/0/16* | community simulator | - | 513 | -17.0% | 567 | -19.0% | 4 s |
+| 8 | *Demonic Pact 2/31/18* | community simulator | - | 509 | -17.6% | 572 | -18.3% | 4 s |
+| 9 | *Affliction* | community simulator | - | 507 | -18.0% | 559 | -20.2% | 4 s |
+| 10 | *Demonic Pact* | community simulator | - | 503 | -18.6% | 562 | -19.7% | 4 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -121,28 +121,27 @@ Before the pull: at -1.5s: cast Life Tap.
 | 1 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 20s: cast Corruption | 3.3 |
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | if time left in the fight ≤ 1.125: cast Shadowburn | 0.1 |
+| 4 | if time left in the fight ≤ 1.125: cast Shadowburn | 0.2 |
 | 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.3 |
 | 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony and time left in the fight ≥ 10s: cast Bane of Agony | 2.5 |
-| 7 | if mana % < 10%: cast Life Tap | 6.8 |
+| 7 | if mana % < 10%: cast Life Tap | 7.0 |
 | 8 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
 | 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 |
 | 10 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready |
-| 11 | cast Eureka! | 0.7 |
-| 12 | cast Shadow Bolt | 14.5 |
+| 11 | cast Shadow Bolt | 14.4 |
 
-Lines of the simulator's rotation these builds never cast: cast Conflagrate (needs the Conflagrate talent).
+Lines of the simulator's rotation these builds never cast: cast Conflagrate (needs the Conflagrate talent); cast Eureka! (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`destruction-fire-raid`](destruction-fire-raid.md) |
 |---|---|
-| Shadow Bolt | 53% |
-| Corruption | 17% |
-| Bane of Agony | 17% |
+| Shadow Bolt | 52% |
+| Corruption | 18% |
+| Bane of Agony | 18% |
 | Immolate | 12% |
+| Shadowburn | 1% |
 | Searing Pain | 0% |
-| Shadowburn | 0% |
 
 ## Notes
 

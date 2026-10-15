@@ -1,0 +1,188 @@
+{
+ "class": "rogue",
+ "spec": "assassination-raid",
+ "build": "daggers-split-ml-raid",
+ "setting": "raid",
+ "date": "2026-10-15",
+ "tank": false,
+ "removal": {
+  "Cold Blood": 0.005615248004057216,
+  "Deflection": -0.0,
+  "Dual Wield Specialization": 0.018154131886281122,
+  "Flawless Execution": 0.02316920966433822,
+  "Improved Eviscerate": 0.021147271300225756,
+  "Improved Poisons": 0.022596110190613694,
+  "Improved Slice and Dice": 0.03405333661858723,
+  "Lethality": 0.018727474941362288,
+  "Lightning Reflexes": -0.0,
+  "Malice": 0.04651711753149046,
+  "Opportunity": 0.02413346900862723,
+  "Precision": 0.028203488371277396,
+  "Puncturing Wounds": 0.11940005899448236,
+  "Relentless Strikes": 0.0742888391105967,
+  "Ruthlessness": 0.026639705352058174,
+  "Seal Fate": 0.051137038805546764,
+  "Vile Poisons": 0.006935785386810389
+ },
+ "free": [
+  "Deflection",
+  "Lightning Reflexes"
+ ],
+ "kept_for_rotation": [],
+ "active_never_worth": [],
+ "abilities_never_cast": [],
+ "moves": [],
+ "final_seed3": 0.0,
+ "start": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Lethality",
+    5
+   ],
+   [
+    "Vile Poisons",
+    2
+   ],
+   [
+    "Cold Blood",
+    1
+   ],
+   [
+    "Improved Poisons",
+    5
+   ],
+   [
+    "Seal Fate",
+    5
+   ]
+  ],
+  "Combat": [
+   [
+    "Improved Eviscerate",
+    3
+   ],
+   [
+    "Lightning Reflexes",
+    3
+   ],
+   [
+    "Puncturing Wounds",
+    3
+   ],
+   [
+    "Deflection",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Flawless Execution",
+    1
+   ],
+   [
+    "Dual Wield Specialization",
+    3
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Opportunity",
+    2
+   ]
+  ]
+ },
+ "allocation": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Lethality",
+    5
+   ],
+   [
+    "Vile Poisons",
+    2
+   ],
+   [
+    "Cold Blood",
+    1
+   ],
+   [
+    "Improved Poisons",
+    5
+   ],
+   [
+    "Seal Fate",
+    5
+   ]
+  ],
+  "Combat": [
+   [
+    "Improved Eviscerate",
+    3
+   ],
+   [
+    "Lightning Reflexes",
+    3
+   ],
+   [
+    "Puncturing Wounds",
+    3
+   ],
+   [
+    "Deflection",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Flawless Execution",
+    1
+   ],
+   [
+    "Dual Wield Specialization",
+    3
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Opportunity",
+    2
+   ]
+  ]
+ }
+}

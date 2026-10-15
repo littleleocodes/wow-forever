@@ -1,0 +1,1564 @@
+{
+ "class": "druid",
+ "spec": "Feral Combat",
+ "slug": "feral-combat",
+ "entries": [
+  "feral-cat-dps"
+ ],
+ "best": "opt-feral-cat-dps-raid-dps",
+ "best_entry": "feral-cat-dps",
+ "best_dps": 365.66,
+ "any_split": false,
+ "date": "2026-10-01",
+ "gear": {
+  "bis": {
+   "entry": "feral-cat-dps",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-bis.gear.json",
+   "date": "2026-10-02",
+   "chosen": "current",
+   "ilvl": 64.1,
+   "trinkets": [
+    "Blackhand's Breadth",
+    "Eye of the Beast"
+   ],
+   "names": [
+    "Darkmantle Cap",
+    "Onyxia Tooth Pendant",
+    "Theramore Pauldrons",
+    "Cape of the Black Baron",
+    "Timbermaw Tunic",
+    "Forest Stalker's Bracers",
+    "Theramore Gloves",
+    "Ferocity of the Timbermaw",
+    "Warbear Woolies",
+    "Blood Guard's Dragonhide Treads",
+    "Quick Strike Ring",
+    "Band of Accuria",
+    "Blackhand's Breadth",
+    "Eye of the Beast",
+    "Idol of Ferocity",
+    "Premier High Warlord's Razor",
+    null
+   ],
+   "race_seed1": {
+    "current": 1.0,
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 1.0
+   },
+   "confirm_seed2": {
+    "current": 1.0
+   },
+   "weights": {
+    "StatAgility": 0.2801,
+    "StatArmorPenetration": 0.0258,
+    "StatAttackPower": 0.1248,
+    "StatFeralAttackPower": 0.1248,
+    "StatFireDamage": 0.0402,
+    "StatIntellect": 0.0006,
+    "StatMeleeCritRating": 0.2245,
+    "StatMeleeHasteRating": 0.1122,
+    "StatMeleeHitRating": 0.1692,
+    "StatSpellCritRating": 0.0021,
+    "StatSpellDamage": 0.0402,
+    "StatSpellHitRating": 0.0083,
+    "StatStrength": 0.2745
+   },
+   "evaluated_on": [
+    "feral-cat-dps: ml winner"
+   ]
+  },
+  "bis2": true,
+  "prebis": {
+   "entry": "feral-cat-dps",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-prebis.gear.json",
+   "date": "2026-10-02",
+   "chosen": "all-slots",
+   "ilvl": 63.0,
+   "trinkets": [
+    "Blackhand's Breadth",
+    "Eye of the Beast"
+   ],
+   "names": [
+    "Darkmantle Cap",
+    "Mark of Fordring",
+    "Theramore Pauldrons",
+    "Cape of the Black Baron",
+    "Timbermaw Tunic",
+    "Forest Stalker's Bracers",
+    "Theramore Gloves",
+    "Ferocity of the Timbermaw",
+    "Warbear Woolies",
+    "Blood Guard's Dragonhide Treads",
+    "Signet Ring of the Bronze Dragonflight",
+    "Don Julio's Band",
+    "Blackhand's Breadth",
+    "Eye of the Beast",
+    "Idol of Ferocity",
+    "Premier High Warlord's Razor",
+    null
+   ],
+   "race_seed1": {
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 0.9996253188440949
+   },
+   "confirm_seed2": {
+    "keep-sets-and-effects": 1.0,
+    "all-slots": 1.0001564709146553
+   },
+   "weights": {
+    "StatAgility": 0.2813,
+    "StatArmorPenetration": 0.0254,
+    "StatAttackPower": 0.1225,
+    "StatFeralAttackPower": 0.1225,
+    "StatFireDamage": 0.0384,
+    "StatIntellect": 0.0006,
+    "StatMeleeCritRating": 0.2268,
+    "StatMeleeHasteRating": 0.1247,
+    "StatMeleeHitRating": 0.1813,
+    "StatSpellCritRating": 0.0021,
+    "StatSpellDamage": 0.0384,
+    "StatSpellHitRating": 0.0053,
+    "StatStrength": 0.2695
+   },
+   "evaluated_on": [
+    "feral-cat-dps: ml winner (bis)"
+   ]
+  }
+ },
+ "search": {
+  "bis-dummy-1": {
+   "class": "druid",
+   "spec": "Feral Combat",
+   "setting": "dummy",
+   "entry": "feral-cat-dps",
+   "date": "2026-10-01",
+   "constraint": "Feral Combat 30+",
+   "protected": [],
+   "entries_screened": {},
+   "entries_searched": [
+    "feral-cat-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Balance": [
+      [
+       "Genesis",
+       5
+      ],
+      [
+       "Nature's Majesty",
+       2
+      ],
+      [
+       "Nature's Reach",
+       2
+      ]
+     ],
+     "Feral Combat": [
+      [
+       "Ferocity",
+       2
+      ],
+      [
+       "Heart of the Wild",
+       5
+      ],
+      [
+       "Thick Hide",
+       3
+      ],
+      [
+       "Savage Fury",
+       2
+      ],
+      [
+       "Feral Charge",
+       1
+      ],
+      [
+       "Sharpened Claws",
+       2
+      ],
+      [
+       "Shredding Attacks",
+       3
+      ],
+      [
+       "Predatory Strikes",
+       3
+      ],
+      [
+       "Blood Frenzy",
+       2
+      ],
+      [
+       "Natural Instinct",
+       2
+      ],
+      [
+       "Leader of the Pack",
+       1
+      ],
+      [
+       "King of the Jungle",
+       3
+      ],
+      [
+       "Rend and Tear",
+       5
+      ],
+      [
+       "Berserk",
+       1
+      ]
+     ],
+     "Restoration": [
+      [
+       "Furor",
+       5
+      ],
+      [
+       "Naturalist",
+       2
+      ]
+     ]
+    },
+    "split": "9/35/7",
+    "dps": 365.41,
+    "se": 0.042,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "9/35/7",
+    "dps": 365.41,
+    "se": 0.042,
+    "differs": [
+     [
+      "Ferocity",
+      2
+     ],
+     [
+      "Ferocity",
+      5
+     ],
+     [
+      "Thick Hide",
+      3
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "feral-cat-dps",
+     "run": 1,
+     "simulated": 1191,
+     "best_screen": 365.69,
+     "best_split": "9/35/7",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 391,
+       "best": 365.69
+      },
+      {
+       "round": 1,
+       "simulated": 591,
+       "best": 365.69,
+       "predicted_top": 362.15
+      },
+      {
+       "round": 2,
+       "simulated": 791,
+       "best": 365.69,
+       "predicted_top": 364.47
+      },
+      {
+       "round": 3,
+       "simulated": 991,
+       "best": 365.69,
+       "predicted_top": 365.57
+      },
+      {
+       "round": 4,
+       "simulated": 1191,
+       "best": 365.69,
+       "predicted_top": 365.65
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "feral-cat-dps",
+     "run": 2,
+     "simulated": 1194,
+     "best_screen": 365.69,
+     "best_split": "9/35/7",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 394,
+       "best": 365.69
+      },
+      {
+       "round": 1,
+       "simulated": 594,
+       "best": 365.69,
+       "predicted_top": 360.51
+      },
+      {
+       "round": 2,
+       "simulated": 794,
+       "best": 365.69,
+       "predicted_top": 364.47
+      },
+      {
+       "round": 3,
+       "simulated": 994,
+       "best": 365.69,
+       "predicted_top": 365.57
+      },
+      {
+       "round": 4,
+       "simulated": 1194,
+       "best": 365.69,
+       "predicted_top": 365.64
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 2,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      365.12,
+      365.12,
+      365.12,
+      365.12,
+      365.12,
+      365.12,
+      365.12,
+      365.12,
+      365.12
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      365.42,
+      365.42,
+      365.42,
+      365.42,
+      365.42
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      365.41,
+      365.41
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 284,
+     "best_gap": 0.0,
+     "best_move": "1 Feral Charge -> Brutal Impact"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Rend and Tear",
+     "importance": 0.2659
+    },
+    {
+     "feature": "Shredding Attacks",
+     "importance": 0.2265
+    },
+    {
+     "feature": "Berserk",
+     "importance": 0.068
+    },
+    {
+     "feature": "King of the Jungle",
+     "importance": 0.0498
+    },
+    {
+     "feature": "Nature's Majesty",
+     "importance": 0.0476
+    },
+    {
+     "feature": "Blood Frenzy",
+     "importance": 0.04
+    },
+    {
+     "feature": "Ferocity",
+     "importance": 0.0399
+    },
+    {
+     "feature": "Naturalist",
+     "importance": 0.0313
+    },
+    {
+     "feature": "Feral Instinct",
+     "importance": 0.0243
+    },
+    {
+     "feature": "Brutal Impact",
+     "importance": 0.024
+    },
+    {
+     "feature": "Nature's Reach",
+     "importance": 0.023
+    },
+    {
+     "feature": "Feral Combat points",
+     "importance": 0.0226
+    }
+   ],
+   "simulated_builds": 2686,
+   "simulated_fights": 3680000,
+   "minutes": 2.7,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-bis.gear.json"
+  },
+  "bis-dummy": {
+   "class": "druid",
+   "spec": "Feral Combat",
+   "setting": "dummy",
+   "entry": "feral-cat-dps",
+   "date": "2026-10-02",
+   "constraint": "Feral Combat 30+",
+   "protected": [],
+   "entries_screened": {},
+   "entries_searched": [
+    "feral-cat-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Balance": [
+      [
+       "Genesis",
+       5
+      ],
+      [
+       "Nature's Majesty",
+       2
+      ],
+      [
+       "Nature's Reach",
+       1
+      ]
+     ],
+     "Feral Combat": [
+      [
+       "Ferocity",
+       2
+      ],
+      [
+       "Heart of the Wild",
+       5
+      ],
+      [
+       "Thick Hide",
+       3
+      ],
+      [
+       "Savage Fury",
+       2
+      ],
+      [
+       "Feral Charge",
+       1
+      ],
+      [
+       "Sharpened Claws",
+       2
+      ],
+      [
+       "Shredding Attacks",
+       3
+      ],
+      [
+       "Predatory Strikes",
+       3
+      ],
+      [
+       "Blood Frenzy",
+       2
+      ],
+      [
+       "Natural Instinct",
+       2
+      ],
+      [
+       "Leader of the Pack",
+       1
+      ],
+      [
+       "King of the Jungle",
+       3
+      ],
+      [
+       "Rend and Tear",
+       5
+      ],
+      [
+       "Berserk",
+       1
+      ]
+     ],
+     "Restoration": [
+      [
+       "Furor",
+       5
+      ],
+      [
+       "Naturalist",
+       3
+      ]
+     ]
+    },
+    "split": "8/35/8",
+    "dps": 370.18,
+    "se": 0.044,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "8/35/8",
+    "dps": 370.18,
+    "se": 0.044,
+    "differs": [
+     [
+      "Brutal Impact",
+      1
+     ],
+     [
+      "Thick Hide",
+      2
+     ],
+     [
+      "Thick Hide",
+      3
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "feral-cat-dps",
+     "run": 1,
+     "simulated": 1179,
+     "best_screen": 370.37,
+     "best_split": "8/35/8",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 379,
+       "best": 370.27
+      },
+      {
+       "round": 1,
+       "simulated": 579,
+       "best": 370.37,
+       "predicted_top": 365.03
+      },
+      {
+       "round": 2,
+       "simulated": 779,
+       "best": 370.37,
+       "predicted_top": 369.03
+      },
+      {
+       "round": 3,
+       "simulated": 979,
+       "best": 370.37,
+       "predicted_top": 370.11
+      },
+      {
+       "round": 4,
+       "simulated": 1179,
+       "best": 370.37,
+       "predicted_top": 370.35
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      370.12,
+      370.12,
+      370.12,
+      370.12,
+      370.12,
+      370.12
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      370.24,
+      370.24,
+      370.24,
+      370.24,
+      370.24
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      370.18,
+      370.18
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 285,
+     "best_gap": 0.0004,
+     "best_move": "1 Naturalist -> Nature's Reach"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Feral Instinct",
+     "importance": 0.3266
+    },
+    {
+     "feature": "Shredding Attacks",
+     "importance": 0.1524
+    },
+    {
+     "feature": "Rend and Tear",
+     "importance": 0.1124
+    },
+    {
+     "feature": "Ferocity",
+     "importance": 0.071
+    },
+    {
+     "feature": "Blood Frenzy",
+     "importance": 0.0538
+    },
+    {
+     "feature": "King of the Jungle",
+     "importance": 0.0453
+    },
+    {
+     "feature": "Berserk",
+     "importance": 0.0402
+    },
+    {
+     "feature": "Nature's Majesty",
+     "importance": 0.0323
+    },
+    {
+     "feature": "Feral Swiftness",
+     "importance": 0.0254
+    },
+    {
+     "feature": "Natural Reaction",
+     "importance": 0.0233
+    },
+    {
+     "feature": "Feral Combat points",
+     "importance": 0.0226
+    },
+    {
+     "feature": "Brutal Impact",
+     "importance": 0.0123
+    }
+   ],
+   "simulated_builds": 1478,
+   "simulated_fights": 2447000,
+   "minutes": 1.7,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-bis.gear.json"
+  },
+  "bis-raid": {
+   "class": "druid",
+   "spec": "Feral Combat",
+   "setting": "raid",
+   "entry": "feral-cat-dps",
+   "date": "2026-10-02",
+   "constraint": "Feral Combat 30+",
+   "protected": [],
+   "entries_screened": {},
+   "entries_searched": [
+    "feral-cat-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Balance": [
+      [
+       "Genesis",
+       5
+      ],
+      [
+       "Nature's Majesty",
+       2
+      ],
+      [
+       "Nature's Reach",
+       2
+      ]
+     ],
+     "Feral Combat": [
+      [
+       "Ferocity",
+       2
+      ],
+      [
+       "Heart of the Wild",
+       5
+      ],
+      [
+       "Thick Hide",
+       3
+      ],
+      [
+       "Savage Fury",
+       2
+      ],
+      [
+       "Feral Charge",
+       1
+      ],
+      [
+       "Sharpened Claws",
+       2
+      ],
+      [
+       "Shredding Attacks",
+       3
+      ],
+      [
+       "Predatory Strikes",
+       3
+      ],
+      [
+       "Blood Frenzy",
+       2
+      ],
+      [
+       "Natural Instinct",
+       2
+      ],
+      [
+       "Leader of the Pack",
+       1
+      ],
+      [
+       "King of the Jungle",
+       3
+      ],
+      [
+       "Rend and Tear",
+       5
+      ],
+      [
+       "Berserk",
+       1
+      ]
+     ],
+     "Restoration": [
+      [
+       "Furor",
+       5
+      ],
+      [
+       "Naturalist",
+       2
+      ]
+     ]
+    },
+    "split": "9/35/7",
+    "dps": 575.79,
+    "se": 0.064,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "9/35/7",
+    "dps": 575.79,
+    "se": 0.064,
+    "differs": [
+     [
+      "Ferocity",
+      2
+     ],
+     [
+      "Ferocity",
+      5
+     ],
+     [
+      "Thick Hide",
+      3
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "feral-cat-dps",
+     "run": 1,
+     "simulated": 1196,
+     "best_screen": 575.26,
+     "best_split": "9/35/7",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 396,
+       "best": 575.26
+      },
+      {
+       "round": 1,
+       "simulated": 596,
+       "best": 575.26,
+       "predicted_top": 569.65
+      },
+      {
+       "round": 2,
+       "simulated": 796,
+       "best": 575.26,
+       "predicted_top": 573.9
+      },
+      {
+       "round": 3,
+       "simulated": 996,
+       "best": 575.26,
+       "predicted_top": 575.15
+      },
+      {
+       "round": 4,
+       "simulated": 1196,
+       "best": 575.26,
+       "predicted_top": 575.24
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      575.67,
+      575.67,
+      575.67,
+      575.67,
+      575.67,
+      575.67
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      575.76,
+      575.76,
+      575.76,
+      575.76,
+      575.76
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      575.79,
+      575.79
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 284,
+     "best_gap": 0.0,
+     "best_move": "1 Feral Charge -> Brutal Impact"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Feral Instinct",
+     "importance": 0.3554
+    },
+    {
+     "feature": "Shredding Attacks",
+     "importance": 0.1529
+    },
+    {
+     "feature": "Feral Swiftness",
+     "importance": 0.0799
+    },
+    {
+     "feature": "Rend and Tear",
+     "importance": 0.0792
+    },
+    {
+     "feature": "King of the Jungle",
+     "importance": 0.07
+    },
+    {
+     "feature": "Brutal Impact",
+     "importance": 0.0561
+    },
+    {
+     "feature": "Nature's Majesty",
+     "importance": 0.044
+    },
+    {
+     "feature": "Berserk",
+     "importance": 0.0282
+    },
+    {
+     "feature": "Feral Combat points",
+     "importance": 0.0153
+    },
+    {
+     "feature": "Natural Reaction",
+     "importance": 0.0141
+    },
+    {
+     "feature": "Blood Frenzy",
+     "importance": 0.0137
+    },
+    {
+     "feature": "Nature's Focus",
+     "importance": 0.0129
+    }
+   ],
+   "simulated_builds": 1494,
+   "simulated_fights": 2461000,
+   "minutes": 2.8,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-bis.gear.json"
+  },
+  "prebis-dummy": {
+   "class": "druid",
+   "spec": "Feral Combat",
+   "setting": "dummy",
+   "entry": "feral-cat-dps",
+   "date": "2026-10-02",
+   "constraint": "Feral Combat 30+",
+   "protected": [],
+   "entries_screened": {},
+   "entries_searched": [
+    "feral-cat-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Balance": [
+      [
+       "Genesis",
+       5
+      ],
+      [
+       "Nature's Majesty",
+       2
+      ],
+      [
+       "Nature's Reach",
+       2
+      ]
+     ],
+     "Feral Combat": [
+      [
+       "Ferocity",
+       2
+      ],
+      [
+       "Heart of the Wild",
+       5
+      ],
+      [
+       "Thick Hide",
+       3
+      ],
+      [
+       "Savage Fury",
+       2
+      ],
+      [
+       "Feral Charge",
+       1
+      ],
+      [
+       "Sharpened Claws",
+       2
+      ],
+      [
+       "Shredding Attacks",
+       3
+      ],
+      [
+       "Predatory Strikes",
+       3
+      ],
+      [
+       "Blood Frenzy",
+       2
+      ],
+      [
+       "Natural Instinct",
+       2
+      ],
+      [
+       "Leader of the Pack",
+       1
+      ],
+      [
+       "King of the Jungle",
+       3
+      ],
+      [
+       "Rend and Tear",
+       5
+      ],
+      [
+       "Berserk",
+       1
+      ]
+     ],
+     "Restoration": [
+      [
+       "Furor",
+       5
+      ],
+      [
+       "Naturalist",
+       2
+      ]
+     ]
+    },
+    "split": "9/35/7",
+    "dps": 367.46,
+    "se": 0.043,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "9/35/7",
+    "dps": 367.46,
+    "se": 0.043,
+    "differs": [
+     [
+      "Ferocity",
+      2
+     ],
+     [
+      "Ferocity",
+      5
+     ],
+     [
+      "Thick Hide",
+      3
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "feral-cat-dps",
+     "run": 1,
+     "simulated": 1187,
+     "best_screen": 367.49,
+     "best_split": "9/35/7",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 387,
+       "best": 367.49
+      },
+      {
+       "round": 1,
+       "simulated": 587,
+       "best": 367.49,
+       "predicted_top": 363.35
+      },
+      {
+       "round": 2,
+       "simulated": 787,
+       "best": 367.49,
+       "predicted_top": 365.86
+      },
+      {
+       "round": 3,
+       "simulated": 987,
+       "best": 367.49,
+       "predicted_top": 366.92
+      },
+      {
+       "round": 4,
+       "simulated": 1187,
+       "best": 367.49,
+       "predicted_top": 367.38
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      367.38,
+      367.38,
+      367.38,
+      367.38,
+      367.38,
+      367.38
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      367.51,
+      367.51,
+      367.51,
+      367.51,
+      367.51
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      367.46,
+      367.46
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 284,
+     "best_gap": 0.0,
+     "best_move": "1 Feral Charge -> Brutal Impact"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Ferocity",
+     "importance": 0.1523
+    },
+    {
+     "feature": "Shredding Attacks",
+     "importance": 0.1509
+    },
+    {
+     "feature": "Nature's Majesty",
+     "importance": 0.1187
+    },
+    {
+     "feature": "Feral Instinct",
+     "importance": 0.1113
+    },
+    {
+     "feature": "Berserk",
+     "importance": 0.1006
+    },
+    {
+     "feature": "Rend and Tear",
+     "importance": 0.0989
+    },
+    {
+     "feature": "Feral Swiftness",
+     "importance": 0.0407
+    },
+    {
+     "feature": "Blood Frenzy",
+     "importance": 0.0357
+    },
+    {
+     "feature": "King of the Jungle",
+     "importance": 0.0336
+    },
+    {
+     "feature": "Feral Combat points",
+     "importance": 0.0201
+    },
+    {
+     "feature": "Brutal Impact",
+     "importance": 0.0179
+    },
+    {
+     "feature": "Naturalist",
+     "importance": 0.0138
+    }
+   ],
+   "simulated_builds": 1485,
+   "simulated_fights": 2452000,
+   "minutes": 1.7,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-prebis.gear.json"
+  },
+  "prebis-raid": {
+   "class": "druid",
+   "spec": "Feral Combat",
+   "setting": "raid",
+   "entry": "feral-cat-dps",
+   "date": "2026-10-02",
+   "constraint": "Feral Combat 30+",
+   "protected": [],
+   "entries_screened": {},
+   "entries_searched": [
+    "feral-cat-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Balance": [
+      [
+       "Genesis",
+       5
+      ],
+      [
+       "Nature's Majesty",
+       2
+      ],
+      [
+       "Nature's Reach",
+       2
+      ]
+     ],
+     "Feral Combat": [
+      [
+       "Ferocity",
+       3
+      ],
+      [
+       "Heart of the Wild",
+       5
+      ],
+      [
+       "Thick Hide",
+       2
+      ],
+      [
+       "Savage Fury",
+       2
+      ],
+      [
+       "Feral Charge",
+       1
+      ],
+      [
+       "Sharpened Claws",
+       2
+      ],
+      [
+       "Shredding Attacks",
+       3
+      ],
+      [
+       "Predatory Strikes",
+       3
+      ],
+      [
+       "Blood Frenzy",
+       2
+      ],
+      [
+       "Natural Instinct",
+       2
+      ],
+      [
+       "Leader of the Pack",
+       1
+      ],
+      [
+       "King of the Jungle",
+       3
+      ],
+      [
+       "Rend and Tear",
+       5
+      ],
+      [
+       "Berserk",
+       1
+      ]
+     ],
+     "Restoration": [
+      [
+       "Nature's Focus",
+       1
+      ],
+      [
+       "Furor",
+       4
+      ],
+      [
+       "Naturalist",
+       2
+      ]
+     ]
+    },
+    "split": "9/35/7",
+    "dps": 570.12,
+    "se": 0.064,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "9/35/7",
+    "dps": 570.12,
+    "se": 0.064,
+    "differs": [
+     [
+      "Feral Instinct",
+      1
+     ],
+     [
+      "Ferocity",
+      3
+     ],
+     [
+      "Ferocity",
+      4
+     ],
+     [
+      "Thick Hide",
+      2
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "feral-cat-dps",
+     "run": 1,
+     "simulated": 1185,
+     "best_screen": 569.89,
+     "best_split": "9/35/7",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 385,
+       "best": 569.59
+      },
+      {
+       "round": 1,
+       "simulated": 585,
+       "best": 569.89,
+       "predicted_top": 565.86
+      },
+      {
+       "round": 2,
+       "simulated": 785,
+       "best": 569.89,
+       "predicted_top": 568.76
+      },
+      {
+       "round": 3,
+       "simulated": 985,
+       "best": 569.89,
+       "predicted_top": 569.72
+      },
+      {
+       "round": 4,
+       "simulated": 1185,
+       "best": 569.89,
+       "predicted_top": 569.79
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      569.97,
+      569.97,
+      569.97,
+      569.97,
+      569.97,
+      569.97
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      570.41,
+      570.41,
+      570.41,
+      570.41,
+      570.41
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      570.12,
+      570.12
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 302,
+     "best_gap": 0.0014,
+     "best_move": "1 Nature's Focus -> Furor",
+     "raced": [
+      "1 Nature's Focus -> Furor"
+     ],
+     "confirmed_gap": 0.0008
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Shredding Attacks",
+     "importance": 0.2391
+    },
+    {
+     "feature": "King of the Jungle",
+     "importance": 0.1202
+    },
+    {
+     "feature": "Feral Swiftness",
+     "importance": 0.1178
+    },
+    {
+     "feature": "Rend and Tear",
+     "importance": 0.1121
+    },
+    {
+     "feature": "Feral Instinct",
+     "importance": 0.0921
+    },
+    {
+     "feature": "Berserk",
+     "importance": 0.0551
+    },
+    {
+     "feature": "Nature's Majesty",
+     "importance": 0.0455
+    },
+    {
+     "feature": "Brutal Impact",
+     "importance": 0.0264
+    },
+    {
+     "feature": "Naturalist",
+     "importance": 0.0249
+    },
+    {
+     "feature": "Blood Frenzy",
+     "importance": 0.022
+    },
+    {
+     "feature": "Feral Combat points",
+     "importance": 0.0201
+    },
+    {
+     "feature": "Ferocity",
+     "importance": 0.0191
+    }
+   ],
+   "simulated_builds": 1503,
+   "simulated_fights": 2564000,
+   "minutes": 2.9,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-prebis.gear.json"
+  }
+ },
+ "spells_done": {
+  "date": "2026-10-01",
+  "lines_kept": 0
+ },
+ "compare": {
+  "dps": {
+   "winner": {
+    "entry": "feral-cat-dps",
+    "dps": 370.21,
+    "se": 0.044
+   },
+   "feral-cat-dps": {
+    "entry": "feral-cat-dps",
+    "dps": 369.04,
+    "se": 0.042
+   },
+   "opt-feral-cat-dps-raid-dps": {
+    "entry": "feral-cat-dps",
+    "dps": 370.52,
+    "se": 0.043
+   }
+  },
+  "best_hand": "feral-cat-dps",
+  "gain_vs_hand": 0.0032
+ },
+ "parse": {
+  "bis-dummy": {
+   "entry": "feral-cat-dps",
+   "dps": 574.87,
+   "se": 0.065
+  },
+  "bis-raid": {
+   "entry": "feral-cat-dps",
+   "dps": 575.67,
+   "se": 0.064
+  },
+  "gain": 0.0014,
+  "vs_parse": null
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-10-03",
+  "setting": "raid",
+  "why": "confirms opt-feral-cat-dps-raid-dps (+0.00% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": null,
+  "prebis-dummy": null,
+  "prebis-raid": null
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "feral-cat-dps",
+    "dps": 575.66,
+    "se": 0.064
+   },
+   "feral-cat-dps": {
+    "entry": "feral-cat-dps",
+    "dps": 574.75,
+    "se": 0.063
+   },
+   "opt-feral-cat-dps-raid-dps": {
+    "entry": "feral-cat-dps",
+    "dps": 575.66,
+    "se": 0.064
+   }
+  },
+  "best_hand": "feral-cat-dps",
+  "gain_vs_hand": 0.0016
+ }
+}

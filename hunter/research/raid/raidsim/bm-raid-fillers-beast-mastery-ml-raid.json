@@ -1,0 +1,180 @@
+{
+ "class": "hunter",
+ "spec": "bm-raid",
+ "build": "beast-mastery-ml-raid",
+ "setting": "raid",
+ "date": "2026-10-15",
+ "tank": false,
+ "removal": {
+  "Bestial Discipline": 0.02509820885259295,
+  "Bestial Swiftness": -0.0,
+  "Bestial Wrath": 0.01835946274770317,
+  "Careful Aim": 0.05593888981944206,
+  "Deadly Aspects": 0.03702487949469102,
+  "Endurance Training": -0.0,
+  "Ferocity": 0.02105268564334417,
+  "Focused Fire": 0.01913358454090519,
+  "Frenzy": 0.04122251756709994,
+  "Improved Arcane Shot": 0.006474626165432151,
+  "Improved Stings": 0.020814806871793712,
+  "Intimidation": -0.0,
+  "Lethal Attacks": 0.04759157162842609,
+  "Mortal Shots": 0.04245389321151538,
+  "Summon Hawk": -0.0,
+  "Unleashed Fury": 0.03034604198238733
+ },
+ "free": [
+  "Bestial Swiftness",
+  "Endurance Training"
+ ],
+ "kept_for_rotation": [],
+ "active_never_worth": [
+  "Intimidation",
+  "Summon Hawk"
+ ],
+ "abilities_never_cast": [],
+ "moves": [],
+ "final_seed3": 0.0,
+ "start": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    3
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Bestial Swiftness",
+    1
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Summon Hawk",
+    1
+   ],
+   [
+    "Intimidation",
+    1
+   ],
+   [
+    "Bestial Discipline",
+    2
+   ],
+   [
+    "Frenzy",
+    5
+   ],
+   [
+    "Bestial Wrath",
+    1
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Improved Arcane Shot",
+    2
+   ],
+   [
+    "Mortal Shots",
+    5
+   ]
+  ],
+  "Survival": []
+ },
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    3
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Bestial Swiftness",
+    1
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Summon Hawk",
+    1
+   ],
+   [
+    "Intimidation",
+    1
+   ],
+   [
+    "Bestial Discipline",
+    2
+   ],
+   [
+    "Frenzy",
+    5
+   ],
+   [
+    "Bestial Wrath",
+    1
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Improved Arcane Shot",
+    2
+   ],
+   [
+    "Mortal Shots",
+    5
+   ]
+  ],
+  "Survival": []
+ }
+}

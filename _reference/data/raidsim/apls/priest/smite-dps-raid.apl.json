@@ -354,6 +354,27 @@
     }
    },
    "notes": "apl_opt 2026-10-01: changed or added by the rotation search (see smite-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "not": {
+      "val": {
+       "dotIsActive": {
+        "spellId": {
+         "spellId": 18807
+        }
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 18807
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-14: changed or added by the rotation search (see smite-dps-rotation-search.json)"
   }
  ]
 }

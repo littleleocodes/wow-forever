@@ -1,0 +1,611 @@
+{
+ "class": "paladin",
+ "spec": "Protection",
+ "entry": "prot-tank",
+ "date": "2026-10-14",
+ "cycles": [
+  {
+   "cycle": 1,
+   "winner": {
+    "allocation": {
+     "Holy": [],
+     "Protection": [
+      [
+       "Redoubt",
+       5
+      ],
+      [
+       "Precision",
+       3
+      ],
+      [
+       "Anticipation",
+       5
+      ],
+      [
+       "Improved Seal of Fury",
+       1
+      ],
+      [
+       "Improved Righteous Fury",
+       3
+      ],
+      [
+       "Shield Specialization",
+       3
+      ],
+      [
+       "Swift Judgement",
+       1
+      ],
+      [
+       "One-Handed Weapon Specialization",
+       3
+      ],
+      [
+       "Templar's Bulwark",
+       1
+      ],
+      [
+       "Reckoning",
+       1
+      ],
+      [
+       "Iron Creed",
+       5
+      ],
+      [
+       "Holy Shield",
+       1
+      ]
+     ],
+     "Retribution": [
+      [
+       "Deflection",
+       5
+      ],
+      [
+       "Improved Judgement",
+       2
+      ],
+      [
+       "Holy Conduit",
+       2
+      ],
+      [
+       "Conviction",
+       2
+      ],
+      [
+       "Vindication",
+       2
+      ],
+      [
+       "Sanctified Judgement",
+       3
+      ],
+      [
+       "Eye for an Eye",
+       2
+      ],
+      [
+       "Sacred Arbiter",
+       1
+      ]
+     ]
+    },
+    "split": "0/32/19",
+    "dps": 1.0394,
+    "se": 0.0002,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "0/31/20",
+    "dps": 1.0389,
+    "se": 0.0002,
+    "differs": [
+     [
+      "Conviction",
+      2
+     ],
+     [
+      "Conviction",
+      3
+     ],
+     [
+      "Reckoning",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0005,
+   "runs": [
+    {
+     "entry": "prot-tank",
+     "run": 1,
+     "simulated": 2848,
+     "best_screen": 1.0392,
+     "best_split": "0/32/19",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "prot-tank",
+     "run": 2,
+     "simulated": 2846,
+     "best_screen": 1.0391,
+     "best_split": "0/31/20",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "prot-tank",
+     "run": 3,
+     "simulated": 2647,
+     "best_screen": 1.0392,
+     "best_split": "0/32/19",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "prot-tank",
+     "run": 4,
+     "simulated": 2846,
+     "best_screen": 1.0392,
+     "best_split": "0/32/19",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "prot-tank",
+     "run": 5,
+     "simulated": 2847,
+     "best_screen": 1.0392,
+     "best_split": "0/32/19",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "prot-tank",
+     "run": 6,
+     "simulated": 2845,
+     "best_screen": 1.0392,
+     "best_split": "0/32/19",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 6,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      1.0395,
+      1.0392,
+      1.039,
+      1.0389,
+      1.0386,
+      1.0381,
+      1.0379,
+      1.0376,
+      1.0374,
+      1.0374,
+      1.037,
+      1.0368,
+      1.0365,
+      1.0363
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      1.0392,
+      1.0392,
+      1.0389,
+      1.0387,
+      1.0381
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      1.0394,
+      1.0389
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 311,
+     "best_gap": -0.0003,
+     "best_move": "1 One-Handed Weapon Specialization -> Conviction"
+    }
+   ],
+   "important_features": [
+    {
+     "feature": "Vindication",
+     "importance": 0.2356
+    },
+    {
+     "feature": "Sanctified Judgement",
+     "importance": 0.2261
+    },
+    {
+     "feature": "Holy Shield",
+     "importance": 0.1969
+    },
+    {
+     "feature": "Retribution points",
+     "importance": 0.1437
+    },
+    {
+     "feature": "Holy points",
+     "importance": 0.0497
+    },
+    {
+     "feature": "Toughness",
+     "importance": 0.0455
+    },
+    {
+     "feature": "Sacred Arbiter",
+     "importance": 0.0179
+    },
+    {
+     "feature": "Iron Creed",
+     "importance": 0.0141
+    },
+    {
+     "feature": "Benediction",
+     "importance": 0.0095
+    },
+    {
+     "feature": "Guardian's Favor",
+     "importance": 0.0079
+    },
+    {
+     "feature": "Holy Conduit",
+     "importance": 0.0078
+    },
+    {
+     "feature": "Deflection",
+     "importance": 0.0061
+    }
+   ],
+   "simulated_builds": 17212,
+   "minutes": 42.2,
+   "rotation_changed": true
+  },
+  {
+   "cycle": 2,
+   "winner": {
+    "allocation": {
+     "Holy": [],
+     "Protection": [
+      [
+       "Redoubt",
+       5
+      ],
+      [
+       "Precision",
+       3
+      ],
+      [
+       "Anticipation",
+       5
+      ],
+      [
+       "Improved Seal of Fury",
+       1
+      ],
+      [
+       "Improved Righteous Fury",
+       3
+      ],
+      [
+       "Shield Specialization",
+       3
+      ],
+      [
+       "Swift Judgement",
+       1
+      ],
+      [
+       "One-Handed Weapon Specialization",
+       3
+      ],
+      [
+       "Templar's Bulwark",
+       1
+      ],
+      [
+       "Reckoning",
+       1
+      ],
+      [
+       "Iron Creed",
+       5
+      ],
+      [
+       "Holy Shield",
+       1
+      ]
+     ],
+     "Retribution": [
+      [
+       "Deflection",
+       5
+      ],
+      [
+       "Improved Judgement",
+       2
+      ],
+      [
+       "Holy Conduit",
+       2
+      ],
+      [
+       "Conviction",
+       2
+      ],
+      [
+       "Vindication",
+       2
+      ],
+      [
+       "Sanctified Judgement",
+       3
+      ],
+      [
+       "Eye for an Eye",
+       2
+      ],
+      [
+       "Sacred Arbiter",
+       1
+      ]
+     ]
+    },
+    "split": "0/32/19",
+    "dps": 1.0423,
+    "se": 0.0002,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "0/31/20",
+    "dps": 1.042,
+    "se": 0.0002,
+    "differs": [
+     [
+      "Conviction",
+      2
+     ],
+     [
+      "Conviction",
+      3
+     ],
+     [
+      "One-Handed Weapon Specialization",
+      2
+     ],
+     [
+      "One-Handed Weapon Specialization",
+      3
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0002,
+   "runs": [
+    {
+     "entry": "prot-tank",
+     "run": 1,
+     "simulated": 1447,
+     "best_screen": 1.0429,
+     "best_split": "0/32/19",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "prot-tank",
+     "run": 2,
+     "simulated": 1452,
+     "best_screen": 1.0432,
+     "best_split": "0/33/18",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "prot-tank",
+     "run": 3,
+     "simulated": 1447,
+     "best_screen": 1.0429,
+     "best_split": "0/32/19",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 3,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      1.0427,
+      1.0424,
+      1.0423,
+      1.042,
+      1.042,
+      1.0418,
+      1.0417,
+      1.0411,
+      1.0408
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      1.0428,
+      1.0425,
+      1.0421,
+      1.0419,
+      1.0411
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      1.0423,
+      1.042
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 311,
+     "best_gap": -0.0002,
+     "best_move": "1 One-Handed Weapon Specialization -> Conviction"
+    }
+   ],
+   "important_features": [
+    {
+     "feature": "Retribution points",
+     "importance": 0.294
+    },
+    {
+     "feature": "Sanctified Judgement",
+     "importance": 0.2183
+    },
+    {
+     "feature": "Holy Shield",
+     "importance": 0.1118
+    },
+    {
+     "feature": "Vindication",
+     "importance": 0.1072
+    },
+    {
+     "feature": "Toughness",
+     "importance": 0.0942
+    },
+    {
+     "feature": "Holy points",
+     "importance": 0.0688
+    },
+    {
+     "feature": "Sacred Arbiter",
+     "importance": 0.0188
+    },
+    {
+     "feature": "Iron Creed",
+     "importance": 0.0104
+    },
+    {
+     "feature": "Benediction",
+     "importance": 0.0095
+    },
+    {
+     "feature": "Holy Conduit",
+     "importance": 0.0077
+    },
+    {
+     "feature": "Protection points",
+     "importance": 0.0075
+    },
+    {
+     "feature": "Deflection",
+     "importance": 0.0062
+    }
+   ],
+   "simulated_builds": 4674,
+   "minutes": 11.6,
+   "rotation_changed": false
+  }
+ ],
+ "ref": {
+  "build": "prot-tank",
+  "threat": 505.22239333952086,
+  "dtps": 992.954488691491,
+  "fights": 20000
+ },
+ "converged": 2,
+ "two_move": {
+  "steps": [
+   {
+    "one_move": 311,
+    "two_move": 31680,
+    "expanded": null,
+    "screen": 1000,
+    "screen_best": [
+     [
+      "1 One-Handed Weapon Specialization -> Conviction",
+      -0.0003
+     ],
+     [
+      "1 Eye for an Eye -> Conviction",
+      -0.0006
+     ],
+     [
+      "1 One-Handed Weapon Specialization -> Conviction; then 1 Eye for an Eye -> Conviction",
+      -0.001
+     ],
+     [
+      "2 Eye for an Eye -> Conviction",
+      -0.0013
+     ],
+     [
+      "1 One-Handed Weapon Specialization -> Conviction; then 2 Eye for an Eye -> Conviction",
+      -0.0016
+     ]
+    ],
+    "raced": 60,
+    "confirmed": [
+     [
+      "1 One-Handed Weapon Specialization -> Conviction",
+      -0.0002
+     ],
+     [
+      "1 Conviction -> Reckoning",
+      -0.0004
+     ],
+     [
+      "1 One-Handed Weapon Specialization -> Reckoning",
+      -0.0006
+     ],
+     [
+      "1 Eye for an Eye -> Reckoning",
+      -0.0009
+     ],
+     [
+      "1 One-Handed Weapon Specialization -> Reckoning; then 1 Eye for an Eye -> Conviction",
+      -0.0011
+     ]
+    ],
+    "minutes": 47.9
+   }
+  ],
+  "moved": false
+ },
+ "final": {
+  "deep winner": {
+   "value": 1.0423,
+   "se": 0.0002
+  },
+  "prot-tank": {
+   "value": 1.0008,
+   "se": 0.0002
+  },
+  "opt-prot-tank-raid-tank": {
+   "value": 1.0267,
+   "se": 0.0002
+  }
+ },
+ "minutes": 108.4,
+ "build": {
+  "written": "protection-ml-tank",
+  "gain_vs_hand": 0.041466826538768986
+ }
+}

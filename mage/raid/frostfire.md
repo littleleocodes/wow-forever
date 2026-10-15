@@ -49,48 +49,50 @@ Frostfire is a Fire mage whose main spell is **Frostfire Bolt**: it counts as bo
 - Below 30% mana, switch to Rank 2 **Frostfire Bolt** rather than stop casting it; a Rank 2 **Fireball** is a weak stopgap only for when even that is out of reach.
 - Against a target that resists Fire, **Frostfire Bolt** keeps working (it is checked against the lower of the target's Fire and Frost resistance), while **Fire Blast**, **Scorch** and **Pyroblast** lose damage.
 
+*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## The numbers
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 680 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 675 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 722 | [5/31/15](https://talentsforever.com/mage/60/005-20452030130013051-005500032-6) |
-| Phase 1 BiS | 740 | [4/31/16](https://talentsforever.com/mage/60/004-10451231130003051-005500033-6) |
+| Pre-BiS | 622 | this build |
+| Phase 1 BiS | 689 | [0/29/22](https://talentsforever.com/mage/60/-1355000013013304-00550003310003002-6) (ties this build) |
 
-*Gear-tier numbers searched on 2026-10-02, on an older simulator build than the rest of this page (before beta 70291 and the 2026-10-09 audit that took Atiesh out of the full raid): they run 3-7% high and can order the specs differently than the full-raid ranking. The searches are queued to run again.*
-
-**The gear** (average item level: Pre-BiS 61.1; Phase 1 BiS 66.4; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 60.4; Phase 1 BiS 67.4; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
-| Head | [Spellweaver's Turban](https://www.wowhead.com/forever/item=22267) · *General Drakkisath, Blackrock Spire*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11648) | [Spellweaver's Turban](https://www.wowhead.com/forever/item=22267) · *General Drakkisath, Blackrock Spire*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11648) |
-| Neck | [Nacreous Shell Necklace](https://www.wowhead.com/forever/item=22403) · *Cannon Master Willey, Stratholme* | [Choker of the Fire Lord](https://www.wowhead.com/forever/item=18814) · *Ragnaros, Molten Core* |
+| Head | [Spellweaver's Turban](https://www.wowhead.com/forever/item=22267) · *General Drakkisath, Blackrock Spire*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11648) | [Arcanist Crown](https://www.wowhead.com/forever/item=16795) · *Garr, Molten Core*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11648) |
+| Neck | [Orb of the Darkmoon](https://www.wowhead.com/forever/item=19426) | [Choker of the Fire Lord](https://www.wowhead.com/forever/item=18814) · *Ragnaros, Molten Core* |
 | Shoulders | [Rugged Mantle of the Timbermaw](https://www.wowhead.com/forever/item=227808) | [Rugged Mantle of the Timbermaw](https://www.wowhead.com/forever/item=227808) |
-| Back | [Crystalline Threaded Cape](https://www.wowhead.com/forever/item=20697) · *world drop* | [Crystalline Threaded Cape](https://www.wowhead.com/forever/item=20697) · *world drop* |
-| Chest | [Robe of the Archmage](https://www.wowhead.com/forever/item=14152) · *Tailoring*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Robe of Volatile Power](https://www.wowhead.com/forever/item=19145) · *Molten Core*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
+| Back | [Spritecaster Cape](https://www.wowhead.com/forever/item=11623) · *Houndmaster Grebmar, Blackrock Depths* | [Sapphiron Drape](https://www.wowhead.com/forever/item=17078) · *Onyxia, Onyxia's Lair* |
+| Chest | [Alanna's Embrace](https://www.wowhead.com/forever/item=13314) · *Ras Frostwhisper, Scholomance*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Robe of Volatile Power](https://www.wowhead.com/forever/item=19145) · *Molten Core*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
 | Wrist | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) |
 | Hands | [Inferno Gloves](https://www.wowhead.com/forever/item=18408) · *Tailoring* | [Gloves of the Hypnotic Flame](https://www.wowhead.com/forever/item=18808) · *Molten Core* |
 | Waist | [Knowledge of the Timbermaw](https://www.wowhead.com/forever/item=228190) | [Mana Igniting Cord](https://www.wowhead.com/forever/item=19136) · *Molten Core* |
-| Legs | [Skyshroud Leggings](https://www.wowhead.com/forever/item=13170) · *Highlord Omokk, Blackrock Spire*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11648) | [Netherwind Pants](https://www.wowhead.com/forever/item=16915) · *Ragnaros, Molten Core*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11648) |
-| Feet | [Sorcerer's Boots](https://www.wowhead.com/forever/item=22064)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) | [Sorcerer's Boots](https://www.wowhead.com/forever/item=22064)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) |
-| Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=234439) | [Rune Band of Wizardry](https://www.wowhead.com/forever/item=22339) · *Lord Valthalak, Blackrock Spire* |
-| Finger | [Rune Band of Wizardry](https://www.wowhead.com/forever/item=22339) · *Lord Valthalak, Blackrock Spire* | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
-| Trinket | [Briarwood Reed](https://www.wowhead.com/forever/item=12930) · *Jed Runewatcher, Blackrock Spire* | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) · *Magmadar, Molten Core* |
-| Trinket | [Eye of the Beast](https://www.wowhead.com/forever/item=13968) | [Briarwood Reed](https://www.wowhead.com/forever/item=12930) · *Jed Runewatcher, Blackrock Spire* |
+| Legs | [Ghostweave Pants](https://www.wowhead.com/forever/item=14144) · *Tailoring*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11648) | [Netherwind Pants](https://www.wowhead.com/forever/item=16915) · *Ragnaros, Molten Core*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11648) |
+| Feet | [Sorcerer's Boots](https://www.wowhead.com/forever/item=22064)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) | [Arcanist Boots](https://www.wowhead.com/forever/item=16800) · *Lucifron, Molten Core*<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) |
+| Finger | [Elemental Focus Band](https://www.wowhead.com/forever/item=20682) | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
+| Finger | [Maiden's Circle](https://www.wowhead.com/forever/item=13001) | [Rune Band of Wizardry](https://www.wowhead.com/forever/item=22339) · *Lord Valthalak, Blackrock Spire* |
+| Trinket | [Briarwood Reed](https://www.wowhead.com/forever/item=12930) · *Jed Runewatcher, Blackrock Spire* | [Eye of the Beast](https://www.wowhead.com/forever/item=13968) |
+| Trinket | [Eye of the Beast](https://www.wowhead.com/forever/item=13968) | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) · *Magmadar, Molten Core* |
 | Main hand | [Searing Golden Blade](https://www.wowhead.com/forever/item=12260) · *Blacksmithing*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) | [Azuresong Mageblade](https://www.wowhead.com/forever/item=17103) · *Golemagg the Incinerator, Molten Core*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) |
 | Off hand | [Scepter of Interminable Focus](https://www.wowhead.com/forever/item=22329) · *Stratholme* | [Scepter of Interminable Focus](https://www.wowhead.com/forever/item=22329) · *Stratholme* |
 | Ranged/relic | [Bonecreeper Stylus](https://www.wowhead.com/forever/item=13938) · *Darkmaster Gandling, Scholomance* | [Bonecreeper Stylus](https://www.wowhead.com/forever/item=13938) · *Darkmaster Gandling, Scholomance* |
 
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://elliotwood.github.io/Forever/forever/mage/dps/#eJzMVV1IW2cYzvudY/Lm82fZ56bHM4UzhyMLy/iSk4h6YRJ3M3Cgg12MXUwTc7Kc4ZKQ5MLBLlTcGF7okMGwtBcVSm2pVSoF9cqG0kZJizet0Ja22Ba9KNT+IJTelHOi5qJeNtLnIvnO8z6H93ue88JLqxAcIIECTuDAGg6fCIc2CEIv/AQpGAaQJyiiA+UUteGbOZCeVFIRt/4HKuLDl9VUwO2fqRVH49KjGmrD3BmQ7tZQEXcmDcX9vWpqxdWE8ZYNFy6ANGmjIq6fBirgmkYFHDV+/v2dWvFxn5SvpSIuXzSKLwabv8Yx3ZHXlbMnwXlzAvhepHfmKowDGdOngOxFZmE7tATnZ2EDJvQuWvKzQr5wc9Xv93DOPSr3qCr3uTn3+znnqmqwKufePIENUrlF/kOWYlo4NdiXTGUVL/e2uj3c7fF1KAPxcOJXLaok00o4GtWiSuQPJRvXlHQyG87qyYSS0cLpgbjizGiaEksnM9mYntbc6bAedR9o3EXNN79lkomvZJtcQQUc/4X9+W5H3lqOjrXUfgmsVMRTK5Js/D/b7GbNskLrXJ8gMHvOLD5floybUVBNzespOCoT7i9fJps97DIcVyjf029ZiNrXRcPs/CJQn+w1AxEOAplfhGIgfiq56lBk9pVD3kYrqODxZwwBPuhhjbJMP3Z9hCIjEUux2sZbjKoj38lSx2XKzNFxvZOJMumwsL+PSrO9HI2bTPdCyb3KW2SkVifB1Vw3a5I/MwXWksDDW8w5u5LrZp+WRvTVHWLSI9eApY8rNrtxJSfBSWD2/Vkcq5eEHZKHXeIdESwmfMEZ4/tTgtB8TrAblGU4Fmw4MW1gLfB5zMTtgHeXSKIScOWJ5YNCNnhwKiu+nHvvfdpvFAqFqv6FYGifCPbDPwDToCd3/1r78Vag3WQtG4GQoSwUngZ+KB7uBVwCLtV3NZZWQ3G5fWeutzikYAiG2NsBAGfqnfI=); Phase 1 BiS: [full raid](https://elliotwood.github.io/Forever/forever/mage/dps/#eJzMVU9ME1kY7/dmoK8Plu0+dmGYhWSWDZtus9286bQEONCWvWzCJrDJHvaktHRqxyBt2sZg4gFCMYYDGP4c8E9iSIxoohiJBjhhNVq0KhclURONxujBRPwTohdj5hXoQY6W+B3aN7/fb/K932++5CPlGOwggQIOYEBrtp4QgybwQyf8D3HoB5AnCMZ2LO8nVnxsEKTnZUTEn8aAiPjJu++IiC8PAbHi5UmQnlUQK86cAulhBRHxB65ZmjTZ8TR/0YpPDoI0aiUivjVpslfPAxHwkX1ExOlxU3h3CKRsJRHxAmfe9tT/gdOGPWsop4+D484IsPVQ5/Q1GAaUNsYArYdm4EVgHs7OwAqMGG2k4GoR/epSNa+XMcZUjamaxjwuxjigaar5y5g7i2AFlT1FE5jGqR6M9+yOxVOKm7kbXSpzqZ4WpTsa7N2jh5VYQgmGw3pYCR1QUlFdScRSwZQR61WSejDRHVUcSV1XIolYMhUxErorETTCrk2NK6/5c28y1vu7bJVLiICHd9GDX3ZkjcXoWElsF6GUiPjEoiSb/69X22m9rJAq548YqC3DyTcLknkzAhrXfByD7TJh3uJlstpBL8FOhfIP+YsGiO2maJqdnQPikd08EGEzkNk5yAfiJZKzCovUtriFW0kJEVRv0hTgxx20VpbJD87vsUhRyJJnm1iDydqzrTS+U6Z4jvYbrVSUUYuFHtouzeZiNK7j7oWCe401yJiUOhBeyrTTOvlnLigtCFTWwOfsSqad/lQY0fcPEIcHrgNN7FRsNvNKDoRHgdo2ZjFdLQkvURbWkHtAsPDy+KfN708Qhvozgs2ELP0Rf83RKbOWfb9EeN33udeQJCo+ZxZZvqlK+TdPRa3fzn31Ps23c7lcedcFf2AD8HfBYYApMGJrQ8v/3fM1c9Sy4guYylzule/f/OGRzyng+eq22sJqyK+4v/mSi0Ic+qCPfh4ASgSdtg==).
+
 ## Other builds of this spec
 
-- [Frostfire — Frostfire Bolt / Hot Streak](../research/raid/builds/frostfire-raid.md) (4/31/16, 632 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/004-03251030130133051-005500033-6)
-- [Frostfire — Raid](../research/raid/builds/frostfire-ml-raid.md) (4/31/16, 608 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/004-10452131130103051-005500033-6)
+- [Frostfire — Frostfire Bolt / Hot Streak](../research/raid/builds/frostfire-raid.md) (4/31/16, 630 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/004-03251030130133051-005500033-6)
+- [Frostfire — Raid](../research/raid/builds/frostfire-ml-raid.md) (4/31/16, 597 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/004-10452131130103051-005500033-6)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-14 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-15 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
 

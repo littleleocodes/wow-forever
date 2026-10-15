@@ -75,9 +75,9 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`arcane-blast-raid`](arcane-blast-raid.md)** | ours: hand draft | 35/11/5 | 569 | +0.0% | 694 | +0.0% | 0 s |
-| 2 | *Arcane DPS* | community simulator | - | 566 | -0.6% | 687 | -1.0% | 0 s |
-| 3 | *Arcane 35/0/16* | community simulator | - | 557 | -2.2% | 669 | -3.7% | 0 s |
+| 1 | **[`arcane-blast-raid`](arcane-blast-raid.md)** | ours: hand draft | 35/11/5 | 566 | +0.0% | 689 | +0.0% | 0 s |
+| 2 | *Arcane DPS* | community simulator | - | 562 | -0.6% | 682 | -1.0% | 0 s |
+| 3 | *Arcane 35/0/16* | community simulator | - | 553 | -2.2% | 665 | -3.5% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -107,7 +107,7 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 | 2 | cast Fire Blast | 8.8 |
 | 3 | if Missile Barrage is up: cast Arcane Missiles | 4.9 |
 | 4 | if stacks of Arcane Blast ≥ 1.5: cast Frostbolt | 0.2 |
-| 5 | cast Arcane Blast | 12.8 |
+| 5 | cast Arcane Blast | 12.7 |
 | 6 | cast Fireball | 1.2 |
 
 Damage by ability:

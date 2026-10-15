@@ -66,16 +66,14 @@ Our Marksmanship raid draft's tree split with Summon Hawk, a Forever Beast Maste
 
 ## Rank among our builds and the community simulator's
 
-**4 of 6** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 4** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`beast-mastery-ml-parse`](beast-mastery-ml-parse.md) | ours: parse build | 31/20/0 | 489 | +0.0% | 843 | -1.4% | 25 s |
-| 2 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 487 | -0.4% | 810 | -5.3% | 6 s |
-| 3 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: hand draft | 28/23/0 | 479 | -2.0% | 833 | -2.6% | 18 s |
-| 4 | **[`mm-hawk-raid`](mm-hawk-raid.md)** | ours: hand draft | 22/29/0 | 475 | -2.9% | 807 | -5.6% | 13 s |
-| 5 | [`beast-marks-open-raid`](beast-marks-open-raid.md) | ours: hand draft | 27/21/3 | 474 | -3.1% | 855 | +0.0% | 23 s |
-| 6 | *Beast Mastery 35/16/0* | community simulator | - | 462 | -5.5% | 789 | -7.8% | 14 s |
+| 1 | **[`mm-hawk-raid`](mm-hawk-raid.md)** | ours: hand draft | 22/29/0 | 474 | +0.0% | 806 | -7.7% | 13 s |
+| 2 | [`beast-mastery-ml-raid`](beast-mastery-ml-raid.md) | ours: hand draft | 31/20/0 | 465 | -1.9% | 847 | -3.1% | 44 s |
+| 3 | *Beast Mastery 35/16/0* | community simulator | - | 461 | -2.7% | 787 | -9.9% | 14 s |
+| 4 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: hand draft | 7/39/5 | 460 | -3.0% | 874 | +0.0% | 40 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -95,7 +93,7 @@ Our Marksmanship raid draft's tree split with Summon Hawk, a Forever Beast Maste
   13. insert at the top: if time to the next auto attack > 0.5s and mana % ≥ 30%: cast Arcane Shot (+19.8%, pass 10)
   14. threshold 30% -> 10%: if time to the next auto attack > 0.5s and mana % ≥ 30%: cast Arcane Shot (+2.9%, pass 10)
   15. only with 3s or more of the fight left: if time left on Serpent Sting < 4s: cast Serpent Sting (+0.4%, pass 10)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 11 passes, the last 2026-10-09, 12 changes to the base rotation; third-seed check: open winner 718 -> 854 DPS (+18.9%), beast-marks-open-raid 805 -> 843 DPS (+4.7%), sim preset: Beast Mastery 35/16/0 761 -> 789 DPS (+3.7%), mm-hawk-raid 766 -> 807 DPS (+5.4%), beast-mastery-raid 776 -> 810 DPS (+4.5%), beast-mastery-ml-parse 805 -> 843 DPS (+4.6%), beast-marks-ml-raid 796 -> 833 DPS (+4.6%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 12 passes, the last 2026-10-14, 13 changes to the base rotation; third-seed check: ):
   1. move to the top: if time to the next auto attack > 0.5s: cast Multi-Shot (+1.9%, pass 1)
   2. drop the condition: if time to the next auto attack > 1s: cast Summon Hawk (+0.4%, pass 1)
   3. threshold 1s -> 0.75s: if time left on Serpent Sting < 1s and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 2)
@@ -108,14 +106,15 @@ Our Marksmanship raid draft's tree split with Summon Hawk, a Forever Beast Maste
   10. only with 10s or more of the fight left: if time to the next auto attack > 1s: cast Summon Hawk (+0.2%, pass 6)
   11. drop: if time to the next auto attack > 1s and time left in the fight ≥ 10s: cast Summon Hawk (+1.1%, pass 10)
   12. drop the condition: if time to the next auto attack > 0.5s and mana % ≥ 30%: cast Arcane Shot (+0.3%, pass 11)
+  13. spell probe: insert in the middle: if auraIsInactive: cast Sniper Shot (+1.3%, pass 12)
 
 Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`mm-hawk-raid`](mm-hawk-raid.md) casts/min |
 |---|---|---|
-| 1 | if time to the next auto attack > 0.5s and mana % ≥ 10%: cast Arcane Shot | 6.6 |
+| 1 | if time to the next auto attack > 0.5s and mana % ≥ 10%: cast Arcane Shot | 6.9 |
 | 2 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.3 |
-| 3 | cast Summon Hawk | 3.4 |
+| 3 | cast Summon Hawk | 3.1 |
 | 4 | use every other cooldown when ready | as ready |
 | 5 | if time left on Serpent Sting < 4s and time left in the fight ≥ 3s: cast Serpent Sting | 4.7 |
 
@@ -128,8 +127,8 @@ Damage by ability:
 | Auto Shot | 41% |
 | Serpent Sting | 19% |
 | Pet: Auto Attack | 15% |
-| Arcane Shot | 14% |
-| Summon Hawk | 6% |
+| Arcane Shot | 15% |
+| Summon Hawk | 5% |
 | Pet: Claw | 5% |
 | Pet: Bite | 0% |
 

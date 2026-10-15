@@ -75,12 +75,12 @@ Allocation adopted on 2026-09-26 from `cand-elemental-dps-r1`, the best build in
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`elemental-raid-dps`](elemental-raid-dps.md)** | ours: hand draft | 29/22/0 | 377 | +0.0% | 518 | +0.0% | 0 s |
-| 2 | [`opt-elemental-dps-raid-dps`](opt-elemental-dps-raid-dps.md) | ours: optimizer | 31/7/13 | 357 | -5.3% | 510 | -1.5% | 0 s |
-| 3 | [`elemental-raid`](elemental-raid.md) | ours: hand draft | 31/7/13 | 357 | -5.3% | 510 | -1.5% | 0 s |
-| 4 | *Elemental 31/6/14* | community simulator | - | 334 | -11.4% | 504 | -2.7% | 0 s |
-| 5 | *Level 60* | community simulator | - | 333 | -11.6% | 488 | -5.8% | 0 s |
-| 6 | *Stormcaller 28/23/0* | community simulator | - | 304 | -19.3% | 479 | -7.6% | 0 s |
+| 1 | **[`elemental-raid-dps`](elemental-raid-dps.md)** | ours: hand draft | 29/22/0 | 375 | +0.0% | 515 | +0.0% | 0 s |
+| 2 | [`opt-elemental-dps-raid-dps`](opt-elemental-dps-raid-dps.md) | ours: optimizer | 31/7/13 | 357 | -4.8% | 508 | -1.4% | 0 s |
+| 3 | [`elemental-raid`](elemental-raid.md) | ours: hand draft | 31/7/13 | 357 | -4.8% | 508 | -1.4% | 0 s |
+| 4 | *Elemental 31/6/14* | community simulator | - | 334 | -11.0% | 500 | -2.9% | 0 s |
+| 5 | *Level 60* | community simulator | - | 332 | -11.5% | 485 | -5.8% | 0 s |
+| 6 | *Stormcaller 28/23/0* | community simulator | - | 304 | -19.1% | 477 | -7.5% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -104,7 +104,7 @@ Before the pull: at -2s: cast Lightning Bolt.
 | 3 | if not Flame Shock is on the target: cast Flame Shock | 5.1 |
 | 4 | if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning | 2.4 |
 | 5 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt | 23.3 |
-| 6 | cast Lightning Bolt | 0.7 |
+| 6 | cast Lightning Bolt | 0.6 |
 
 Lines of the simulator's rotation these builds never cast: cast Magma Totem (its condition never held in these fights); cast Lava Burst (needs the Lava Burst talent).
 
@@ -114,8 +114,8 @@ Damage by ability:
 |---|---|
 | Lightning Bolt | 68% |
 | Flame Shock | 19% |
-| Chain Lightning | 6% |
 | Attack | 6% |
+| Chain Lightning | 6% |
 
 ## Notes
 

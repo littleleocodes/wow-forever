@@ -2,36 +2,13 @@
  "dummy": {
   "class": "priest",
   "spec": "smite-dps",
-  "date": "2026-10-11",
+  "date": "2026-10-14",
   "commit": "2ce8265",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "ui/specs/priest/dps/apls/smite.apl.json",
   "start": "ui\\specs\\priest\\dps\\apls\\smite.apl.json",
-  "builds": [
-   {
-    "label": "open winner",
-    "talents": "505030021301001-315151000220003-50002"
-   },
-   {
-    "label": "smite-open-raid",
-    "talents": "505020021302001-305151000320003-50002",
-    "protect_only": true
-   },
-   {
-    "label": "sim preset: Smite",
-    "talents": "515330031305001001-30505113002",
-    "protect_only": true
-   },
-   {
-    "label": "smite-discipline-raid",
-    "talents": "505230231305001001-30505101002-3",
-    "protect_only": true
-   }
-  ],
-  "tuned_on": [
-   "open winner"
-  ],
+  "builds": [],
   "iterations": 3000,
   "confirm": 20000,
   "changes": [
@@ -194,84 +171,40 @@
     "gain_seed2": 0.00226977421024821,
     "candidates": 414,
     "pass": 8
+   },
+   {
+    "round": 21,
+    "change": "spell probe: insert in the middle: if auraIsInactive: cast Power Infusion",
+    "gain_seed1": 0.0059,
+    "gain_seed2": 0.0058,
+    "candidates": 12,
+    "pass": 9
+   },
+   {
+    "round": 22,
+    "change": "spell probe: insert in the middle: if not Mind Flay is on the target: cast Mind Flay",
+    "gain_seed1": 0.1437,
+    "gain_seed2": 0.1446,
+    "candidates": 24,
+    "pass": 9
    }
   ],
   "final": {
-   "dummy": {
-    "open winner": {
-     "before": 314.90204985620323,
-     "after": 349.8426860898755,
-     "base": 314.90204985620323,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.15287724999990002,
-     "oom_after": 5.955582749992775
-    },
-    "smite-open-raid": {
-     "before": 319.6210868968953,
-     "after": 338.45699484327355,
-     "base": 319.6210868968953,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.23630564999245002,
-     "oom_after": 5.117920899618879
-    },
-    "sim preset: Smite": {
-     "before": 329.1355477965759,
-     "after": 346.23542834876406,
-     "base": 329.1355477965759,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 6.060241699427482,
-     "oom_after": 8.210418799424634
-    },
-    "smite-discipline-raid": {
-     "before": 330.5554622802307,
-     "after": 349.651422118314,
-     "base": 330.5554622802307,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 4.3010418494783815,
-     "oom_after": 6.844531199351969
-    }
-   }
+   "dummy": {}
   },
   "first_date": "2026-09-28",
-  "passes": 8
+  "passes": 9
  },
  "raid": {
   "class": "priest",
   "spec": "smite-dps",
-  "date": "2026-10-11",
+  "date": "2026-10-14",
   "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/priest/dps/apls/smite.apl.json",
   "start": "ui\\specs\\priest\\dps\\apls\\smite.apl.json",
-  "builds": [
-   {
-    "label": "open winner",
-    "talents": "505030021301001-315151000220003-50002"
-   },
-   {
-    "label": "smite-discipline-raid",
-    "talents": "505230231305001001-30505101002-3",
-    "protect_only": true
-   },
-   {
-    "label": "sim preset: Smite",
-    "talents": "515330031305001001-30505113002",
-    "protect_only": true
-   },
-   {
-    "label": "smite-open-raid",
-    "talents": "505020021302001-305151000320003-50002",
-    "protect_only": true
-   }
-  ],
-  "tuned_on": [
-   "open winner"
-  ],
+  "builds": [],
   "iterations": 3000,
   "confirm": 20000,
   "changes": [
@@ -482,49 +415,20 @@
     "gain_seed2": 0.0202751059633417,
     "candidates": 460,
     "pass": 9
+   },
+   {
+    "round": 27,
+    "change": "spell probe: insert at the end: if not Mind Flay is on the target: cast Mind Flay",
+    "gain_seed1": 0.0021,
+    "gain_seed2": 0.0022,
+    "candidates": 24,
+    "pass": 12
    }
   ],
   "final": {
-   "raid": {
-    "open winner": {
-     "before": 561.1058420197941,
-     "after": 587.892945938558,
-     "base": 561.1058420197941,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 5.382737099990076,
-     "oom_after": 5.382737099990076
-    },
-    "smite-discipline-raid": {
-     "before": 560.8873030488282,
-     "after": 584.2471131890661,
-     "base": 560.8873030488282,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 4.589873749981542,
-     "oom_after": 4.589873749981542
-    },
-    "sim preset: Smite": {
-     "before": 558.6040606439518,
-     "after": 580.2752948502815,
-     "base": 558.6040606439518,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 5.137796399972488,
-     "oom_after": 5.137796399972488
-    },
-    "smite-open-raid": {
-     "before": 562.2202248239579,
-     "after": 583.1941074727021,
-     "base": 562.2202248239579,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 5.49743739999771,
-     "oom_after": 5.49743739999771
-    }
-   }
+   "raid": {}
   },
   "first_date": "2026-09-28",
-  "passes": 11
+  "passes": 12
  }
 }

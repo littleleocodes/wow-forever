@@ -53,9 +53,9 @@ Arms for a full raid: talentsforever.com's #2 most popular Arms build (37/14/0, 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`arms-community-parse`](arms-community-parse.md)** | ours: parse build | 37/14/0 | 491 | +0.0% | 984 | +0.0% | 0 s |
-| 2 | [`arms-battle-raid`](arms-battle-raid.md) | ours: hand draft | 34/17/0 | 489 | -0.5% | 883 | -10.3% | 0 s |
-| 3 | *Arms 39/12/0* | community simulator | - | 488 | -0.8% | 982 | -0.2% | 0 s |
+| 1 | **[`arms-community-parse`](arms-community-parse.md)** | ours: parse build | 37/14/0 | 481 | +0.0% | 964 | +0.0% | 0 s |
+| 2 | [`arms-battle-raid`](arms-battle-raid.md) | ours: hand draft | 34/17/0 | 480 | -0.3% | 866 | -10.1% | 0 s |
+| 3 | *Arms 39/12/0* | community simulator | - | 478 | -0.8% | 962 | -0.2% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -102,15 +102,15 @@ Before the pull: at -1s: cast Battle Stance.
 | 10 | if time left in the fight ≤ 36.75s: use every other cooldown when ready | as ready |
 | 11 | if rage < 90: cast Bloodrage | 1.0 |
 | 12 | if number of targets > 1: cast Whirlwind | 1.0 |
-| 13 | cast Mortal Strike | 2.6 |
+| 13 | cast Mortal Strike | 2.5 |
 | 14 | if not Rend is on the target: cast Rend | 2.6 |
 | 15 | cast Slam | 2.7 |
 | 16 | if not Battle Shout is up: cast Battle Shout | 0.3 |
-| 17 | if stacks of Sunder Armor < 5: cast Sunder Armor | 6.6 |
+| 17 | if stacks of Sunder Armor < 5: cast Sunder Armor | 6.7 |
 | 18 | if not Berserker Stance is up: cast Berserker Stance | 25.5 |
 | 19 | cast Spearing Strike | 1.3 |
 | 20 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 1.0 |
-| 21 | cast Sunder Armor | 6.6 |
+| 21 | cast Sunder Armor | 6.7 |
 
 Lines of the simulator's rotation these builds never cast: cast Death Wish (needs the Death Wish talent); cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Cleave, cast Hamstring (its condition never held in these fights); cast Bloodthirst (needs the Bloodthirst talent).
 
@@ -122,7 +122,7 @@ Damage by ability:
 | Overpower | 22% |
 | Execute | 12% |
 | Deep Wound | 7% |
-| Mortal Strike | 7% |
+| Mortal Strike | 6% |
 | Slam | 6% |
 | Rend | 5% |
 | Whirlwind | 2% |

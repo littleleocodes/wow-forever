@@ -2,7 +2,7 @@
  "raid": {
   "class": "druid",
   "spec": "feral-bear-tank",
-  "date": "2026-10-09",
+  "date": "2026-10-14",
   "commit": "2ce8265",
   "setting": "raid",
   "tank": true,
@@ -10,12 +10,18 @@
   "start": "ui\\specs\\druid\\feralbear\\apls\\default.apl.json",
   "builds": [
    {
+    "label": "deep: tank",
+    "talents": "05002-5120033202003200255-054"
+   },
+   {
     "label": "feral-bear-tank",
-    "talents": "05002-5020033212003200255-054"
+    "talents": "05002-5020033212003200255-054",
+    "protect_only": true
    },
    {
     "label": "sim preset: Bear Tank 0/31/20",
-    "talents": "-50032302120132010501-0550325"
+    "talents": "-50032302120132010501-0550325",
+    "protect_only": true
    },
    {
     "label": "opt-feral-bear-tank-raid-tank",
@@ -24,8 +30,7 @@
    }
   ],
   "tuned_on": [
-   "feral-bear-tank",
-   "sim preset: Bear Tank 0/31/20"
+   "deep: tank"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -57,6 +62,15 @@
   ],
   "final": {
    "raid": {
+    "deep: tank": {
+     "before": 543.6517730718929,
+     "after": 541.4877611370073,
+     "base": 543.6517730718929,
+     "before_value": 1.0,
+     "after_value": 1.0,
+     "oom_before": 0,
+     "oom_after": 0
+    },
     "feral-bear-tank": {
      "before": 543.651174748567,
      "after": 541.4871364473066,
@@ -87,6 +101,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 4
+  "passes": 6
  }
 }

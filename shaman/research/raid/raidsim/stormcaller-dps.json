@@ -30,7 +30,7 @@
   "seed": 1,
   "duration": 180.0
  },
- "date": "2026-10-09",
+ "date": "2026-10-15",
  "results": [
   {
    "label": "sim preset: Stormcaller 28/23/0",
@@ -38,39 +38,40 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "29228": 15.203333333333333,
-    "20554": 1.0,
-    "10392": 42.982,
-    "529": 42.00533333333333,
-    "10605": 3.5126666666666666,
-    "15208": 1.0,
-    "10438": 3.0
+    "10438": 3.0,
+    "915": 5.239333333333334,
+    "10414": 0.146,
+    "29228": 5.391666666666667,
+    "10605": 0.335,
+    "10392": 74.218,
+    "15208": 1.0
    },
    "casts": {
-    "Flame Shock": 15.203333333333333,
-    "Berserking": 1.0,
-    "Lightning Bolt": 85.98733333333334,
-    "OtherActionManaGain": 4.0,
-    "Demonic Rune": 2.0,
-    "Talisman of Ephemeral Power": 2.0,
+    "Searing Totem": 3.0,
+    "Lightning Bolt": 80.45733333333334,
+    "Earth Shock": 0.146,
+    "Flame Shock": 5.391666666666667,
     "Major Mana Potion": 2.0,
-    "Chain Lightning": 3.5126666666666666,
-    "Searing Totem": 3.0
+    "Demonic Rune": 2.0,
+    "Chain Lightning": 0.335,
+    "OtherActionManaGain": 4.0,
+    "Talisman of Ephemeral Power": 2.0
    },
-   "dps": 306.2984937948372,
-   "dps_stdev": 22.033200968005627,
-   "threat": 314.6313234785601,
+   "dps": 358.30329701796074,
+   "dps_stdev": 21.908675940724574,
+   "threat": 362.2786559383332,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.6791273333333333,
+   "oom_seconds": 9.116699999999984,
    "error": null,
    "scorer": null,
    "shares": {
-    "Lightning Bolt": 0.652562820619749,
-    "Flame Shock": 0.2337067115685667,
-    "Attack": 0.07667266889432083,
-    "Chain Lightning": 0.037057798917363445
+    "Lightning Bolt": 0.858294200847066,
+    "Flame Shock": 0.07261732563236674,
+    "Attack": 0.06482716963224355,
+    "Chain Lightning": 0.0029190785140809734,
+    "Earth Shock": 0.0013422253742426877
    },
    "source_shares": {},
    "unmatched_share": 1.0

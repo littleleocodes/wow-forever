@@ -74,10 +74,10 @@ Allocation adopted on 2026-09-26 from `opt-balance-dps-raid-dps`, the best build
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`balance-moonkin-raid`](balance-moonkin-raid.md)** | ours: hand draft | 33/5/13 | 513 | +0.0% | 592 | +0.0% | 4 s |
-| 2 | [`opt-balance-dps-raid-dps`](opt-balance-dps-raid-dps.md) | ours: optimizer | 33/5/13 | 513 | +0.0% | 592 | +0.0% | 4 s |
-| 3 | *Balance* | community simulator | - | 468 | -8.6% | 526 | -11.2% | 0 s |
-| 4 | *Moonkin 38/0/13* | community simulator | - | 411 | -19.9% | 584 | -1.3% | 36 s |
+| 1 | **[`balance-moonkin-raid`](balance-moonkin-raid.md)** | ours: hand draft | 33/5/13 | 508 | +0.0% | 586 | +0.0% | 4 s |
+| 2 | [`opt-balance-dps-raid-dps`](opt-balance-dps-raid-dps.md) | ours: optimizer | 33/5/13 | 508 | +0.0% | 586 | +0.0% | 4 s |
+| 3 | *Balance* | community simulator | - | 464 | -8.6% | 521 | -11.2% | 0 s |
+| 4 | *Moonkin 38/0/13* | community simulator | - | 406 | -20.1% | 579 | -1.2% | 37 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -99,7 +99,7 @@ Before the pull: at -10s: activate Moonkin Form.
 | 2 | if mana % ≤ 30%: cast Innervate | 0.3 |
 | 3 | if time left in the fight ≥ 10s: keep Insect Swarm on up to 1 targets (refresh under 0ms) | 4.3 |
 | 4 | keep Moonfire on up to 1 targets (refresh under 0ms) | 3.9 |
-| 5 | cast Starfire | 15.1 |
+| 5 | cast Starfire | 15.0 |
 | 6 | if mana % < 15%: cast Starfire | 1.0 |
 
 Lines of the simulator's rotation these builds never cast: cast Wrath (its condition never held in these fights).

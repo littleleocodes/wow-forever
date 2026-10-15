@@ -26,7 +26,7 @@
   "seed": 1,
   "duration": 180.0
  },
- "date": "2026-10-09",
+ "date": "2026-10-15",
  "results": [
   {
    "label": "balance-moonkin-raid",
@@ -36,38 +36,38 @@
    "measured": true,
    "spell_casts": {
     "29166": 1.0,
-    "24977": 12.887333333333334,
-    "2912": 2.9303333333333335,
-    "25298": 45.40566666666667,
-    "9835": 11.7
+    "2912": 3.066333333333333,
+    "24977": 12.997,
+    "9835": 11.797666666666666,
+    "25298": 45.13166666666667
    },
    "casts": {
     "Innervate": 1.0,
-    "Insect Swarm": 12.887333333333334,
-    "Starfire": 48.336,
-    "Talisman of Ephemeral Power": 2.0,
+    "Starfire": 48.198,
+    "Insect Swarm": 12.997,
+    "Moonfire": 11.797666666666666,
+    "OtherActionManaGain": 2.0,
     "Major Mana Potion": 2.0,
-    "Moonfire": 11.7,
-    "OtherActionManaGain": 2.0
+    "Talisman of Ephemeral Power": 2.0
    },
-   "dps": 512.6531376057371,
-   "dps_stdev": 29.26632017889328,
-   "threat": 522.6531376057371,
+   "dps": 507.6720318648854,
+   "dps_stdev": 29.783864627021256,
+   "threat": 517.6720318648854,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 3.783555333333333,
+   "oom_seconds": 4.077036333333333,
    "error": null,
    "scorer": 1.3006118693557513,
    "shares": {
-    "Starfire": 0.6397236864206883,
-    "Moonfire": 0.18060414892036575,
-    "Insect Swarm": 0.17967216465894598
+    "Starfire": 0.6372779604770603,
+    "Moonfire": 0.1818660697535561,
+    "Insect Swarm": 0.18085596976938356
    },
    "source_shares": {
-    "starfire": 0.6397,
-    "moonfire_direct": 0.1806,
-    "insect_swarm": 0.1797
+    "starfire": 0.6373,
+    "moonfire_direct": 0.1819,
+    "insect_swarm": 0.1809
    },
    "unmatched_share": 0.0
   },
@@ -78,39 +78,39 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
+    "9835": 11.797666666666666,
+    "24977": 12.997,
+    "2912": 3.066333333333333,
     "29166": 1.0,
-    "2912": 2.9303333333333335,
-    "9835": 11.7,
-    "24977": 12.887333333333334,
-    "25298": 45.40566666666667
+    "25298": 45.13166666666667
    },
    "casts": {
-    "Major Mana Potion": 2.0,
-    "OtherActionManaGain": 2.0,
-    "Innervate": 1.0,
-    "Starfire": 48.336,
-    "Moonfire": 11.7,
+    "Moonfire": 11.797666666666666,
+    "Insect Swarm": 12.997,
     "Talisman of Ephemeral Power": 2.0,
-    "Insect Swarm": 12.887333333333334
+    "Starfire": 48.198,
+    "Major Mana Potion": 2.0,
+    "Innervate": 1.0,
+    "OtherActionManaGain": 2.0
    },
-   "dps": 512.6531376057371,
-   "dps_stdev": 29.26632017889328,
-   "threat": 522.6531376057371,
+   "dps": 507.6720318648854,
+   "dps_stdev": 29.783864627021256,
+   "threat": 517.6720318648854,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 3.783555333333333,
+   "oom_seconds": 4.077036333333333,
    "error": null,
    "scorer": 1.3006118693557513,
    "shares": {
-    "Starfire": 0.6397236864206883,
-    "Moonfire": 0.18060414892036575,
-    "Insect Swarm": 0.17967216465894598
+    "Starfire": 0.6372779604770603,
+    "Moonfire": 0.1818660697535561,
+    "Insect Swarm": 0.18085596976938356
    },
    "source_shares": {
-    "starfire": 0.6397,
-    "moonfire_direct": 0.1806,
-    "insect_swarm": 0.1797
+    "starfire": 0.6373,
+    "moonfire_direct": 0.1819,
+    "insect_swarm": 0.1809
    },
    "unmatched_share": 0.0
   },
@@ -120,43 +120,43 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "2912": 0.58,
-    "24977": 12.001666666666667,
-    "9912": 0.36033333333333334,
-    "9835": 12.012333333333334,
+    "9835": 12.126,
+    "9912": 0.398,
+    "24977": 12.115333333333334,
+    "2912": 0.621,
     "29166": 1.0,
-    "25298": 40.809666666666665
+    "25298": 40.645
    },
    "casts": {
-    "Major Mana Potion": 2.0,
+    "Moonfire": 12.126,
     "OtherActionManaGain": 2.0,
-    "Starfire": 41.38966666666666,
-    "Insect Swarm": 12.001666666666667,
-    "Wrath": 0.36033333333333334,
-    "Talisman of Ephemeral Power": 2.0003333333333333,
-    "Moonfire": 12.012333333333334,
+    "Talisman of Ephemeral Power": 2.0006666666666666,
+    "Major Mana Potion": 2.0,
+    "Wrath": 0.398,
+    "Insect Swarm": 12.115333333333334,
+    "Starfire": 41.266000000000005,
     "Innervate": 1.0
    },
-   "dps": 468.3698852194645,
-   "dps_stdev": 26.496360216624943,
-   "threat": 337.8589196536251,
+   "dps": 463.8758212201116,
+   "dps_stdev": 27.03003825169252,
+   "threat": 334.7130748540781,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.25240566666666664,
+   "oom_seconds": 0.28508333333333336,
    "error": null,
    "scorer": null,
    "shares": {
-    "Starfire": 0.6139690089165031,
-    "Moonfire": 0.20024111980650067,
-    "Insect Swarm": 0.18361109988426735,
-    "Wrath": 0.0021787713927289764
+    "Starfire": 0.6106690463255252,
+    "Moonfire": 0.20164386515679586,
+    "Insect Swarm": 0.1852733985627041,
+    "Wrath": 0.002413689954974721
    },
    "source_shares": {
-    "starfire": 0.614,
-    "moonfire_direct": 0.2002,
-    "insect_swarm": 0.1836,
-    "wrath": 0.0022
+    "starfire": 0.6107,
+    "moonfire_direct": 0.2016,
+    "insect_swarm": 0.1853,
+    "wrath": 0.0024
    },
    "unmatched_share": 0.0
   },
@@ -166,43 +166,43 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "24977": 10.172333333333333,
-    "9835": 8.522,
-    "2912": 3.341,
+    "9912": 14.566333333333333,
+    "2912": 3.366,
+    "24977": 10.249666666666666,
+    "9835": 8.568,
     "29166": 1.0,
-    "25298": 30.474666666666668,
-    "9912": 14.514
+    "25298": 30.298
    },
    "casts": {
-    "Insect Swarm": 10.172333333333333,
-    "Moonfire": 8.522,
-    "Starfire": 33.815666666666665,
-    "Major Mana Potion": 2.0,
-    "Innervate": 1.0,
+    "Wrath": 14.566333333333333,
     "Talisman of Ephemeral Power": 2.0,
+    "Major Mana Potion": 2.0,
+    "Starfire": 33.664,
     "OtherActionManaGain": 2.0,
-    "Wrath": 14.514
+    "Insect Swarm": 10.249666666666666,
+    "Moonfire": 8.568,
+    "Innervate": 1.0
    },
-   "dps": 410.50414184533923,
-   "dps_stdev": 28.98425644807813,
-   "threat": 420.5041418453393,
+   "dps": 405.59375089366216,
+   "dps_stdev": 29.447824961479604,
+   "threat": 415.5937508936621,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 36.386162333333324,
+   "oom_seconds": 36.53781433333333,
    "error": null,
    "scorer": null,
    "shares": {
-    "Starfire": 0.547703373907697,
-    "Insect Swarm": 0.17892853857138322,
-    "Moonfire": 0.1655222606102284,
-    "Wrath": 0.10784582691069144
+    "Starfire": 0.5451054433590958,
+    "Insect Swarm": 0.18025134979225807,
+    "Moonfire": 0.16651305141871436,
+    "Wrath": 0.10813015542993183
    },
    "source_shares": {
-    "starfire": 0.5477,
-    "insect_swarm": 0.1789,
-    "moonfire_direct": 0.1655,
-    "wrath": 0.1078
+    "starfire": 0.5451,
+    "insect_swarm": 0.1803,
+    "moonfire_direct": 0.1665,
+    "wrath": 0.1081
    },
    "unmatched_share": 0.0
   }

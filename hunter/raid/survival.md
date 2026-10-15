@@ -62,26 +62,45 @@ Melee Survival fights at the boss with two one-handers and no pet. **Raptor Stri
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 1047 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 1042 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 832 | [5/11/35](https://talentsforever.com/hunter/60/5-005005001-503201230250122151-6) |
-| Phase 1 BiS | 1040 | [5/13/33](https://talentsforever.com/hunter/60/5-005025001-050230230250022151-6) (ties this build) |
+| Pre-BiS | 840 | [5/12/34](https://talentsforever.com/hunter/60/5-005015001-500240230250022151-6) |
+| Phase 1 BiS | 1048 | [5/12/34](https://talentsforever.com/hunter/60/5-005105001-500230230250122151-6) (ties this build) |
 
-*From the search run of 2026-10-01; a new run is queued and will replace these numbers.*
+**The gear** (average item level: Pre-BiS 62.9; Phase 1 BiS 66.8; each item opens its Wowhead page, with where it drops and its enchant):
 
-- **Pre-BiS gear** (average item level 63.0): Head: Black Dragonscale Helm; Neck: Mark of Fordring; Shoulders: Theramore Pauldrons; Back: Howler's Furs; Chest: Dawn Armor; Wrist: Forest Stalker's Bracers; Hands: Devilsaur Gauntlets; Waist: Warpwood Binding; Legs: Outrider's Chain Leggings; Feet: Bloodmail Boots; Finger: Don Julio's Band; Finger: Ferocious Watcher's Signet; Trinket: Blackhand's Breadth; Trinket: Hand of Justice; Main hand: Premier High Warlord's Razor; Off hand: Premier High Warlord's Blade; Ranged/relic: Premier High Warlord's Recurve
-- **Phase 1 BiS gear** (average item level 67.6): Head: Giantstalker's Helmet; Neck: Onyxia Tooth Pendant; Shoulders: Giantstalker's Epaulets; Back: Howler's Furs; Chest: Giantstalker's Breastplate; Wrist: Giantstalker's Bracers; Hands: Giantstalker's Gloves; Waist: Giantstalker's Belt; Legs: Giantstalker's Leggings; Feet: Giantstalker's Boots; Finger: Band of Accuria; Finger: Band of Accuria; Trinket: Blackhand's Breadth; Trinket: Hand of Justice; Main hand: Deathbringer; Off hand: Brutality Blade; Ranged/relic: Striker's Mark
+| Slot | Pre-BiS | Phase 1 BiS |
+|---|---|---|
+| Head | [Black Dragonscale Helm](https://www.wowhead.com/forever/item=252605) · *Leatherworking*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) | [Giantstalker's Helmet](https://www.wowhead.com/forever/item=16846) · *Garr, Molten Core*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) |
+| Neck | [Mark of Fordring](https://www.wowhead.com/forever/item=15411) · *quest: In Dreams* | [Onyxia Tooth Pendant](https://www.wowhead.com/forever/item=18404) |
+| Shoulders | [Theramore Pauldrons](https://www.wowhead.com/forever/item=271955) | [Giantstalker's Epaulets](https://www.wowhead.com/forever/item=16848) · *Sulfuron Harbinger, Molten Core* |
+| Back | [Howler's Furs](https://www.wowhead.com/forever/item=272414)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) | [Howler's Furs](https://www.wowhead.com/forever/item=272414)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) |
+| Chest | [Dawn Armor](https://www.wowhead.com/forever/item=252483) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Giantstalker's Breastplate](https://www.wowhead.com/forever/item=16845) · *Golemagg the Incinerator, Molten Core*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
+| Wrist | [Wildheart Bracers](https://www.wowhead.com/forever/item=16714) · *Scholomance*<br>+ [Enchant Bracer - Minor Agility](https://www.wowhead.com/forever/spell=7778) | [Giantstalker's Bracers](https://www.wowhead.com/forever/item=16850) · *Molten Core*<br>+ [Enchant Bracer - Minor Agility](https://www.wowhead.com/forever/spell=7778) |
+| Hands | [Theramore Gloves](https://www.wowhead.com/forever/item=271948)<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/spell=13823) | [Giantstalker's Gloves](https://www.wowhead.com/forever/item=16852) · *Shazzrah, Molten Core*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/spell=13823) |
+| Waist | [Warpwood Binding](https://www.wowhead.com/forever/item=18393) · *Tendris Warpwood, Dire Maul* | [Giantstalker's Belt](https://www.wowhead.com/forever/item=16851) · *Molten Core* |
+| Legs | [Outrider's Chain Leggings](https://www.wowhead.com/forever/item=22673)<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) | [Giantstalker's Leggings](https://www.wowhead.com/forever/item=16847) · *Magmadar, Molten Core*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) |
+| Feet | [Bloodmail Boots](https://www.wowhead.com/forever/item=14616) · *Scholomance*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) | [Giantstalker's Boots](https://www.wowhead.com/forever/item=16849) · *Gehennas, Molten Core*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) |
+| Finger | [Don Julio's Band](https://www.wowhead.com/forever/item=19325) | [Band of Accuria](https://www.wowhead.com/forever/item=17063) · *Ragnaros, Molten Core* |
+| Finger | [Ferocious Watcher's Signet](https://www.wowhead.com/forever/item=275981) | [Don Julio's Band](https://www.wowhead.com/forever/item=19325) |
+| Trinket | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) |
+| Trinket | [Hand of Justice](https://www.wowhead.com/forever/item=11815) · *Emperor Dagran Thaurissan, Blackrock Depths* | [Hand of Justice](https://www.wowhead.com/forever/item=11815) · *Emperor Dagran Thaurissan, Blackrock Depths* |
+| Main hand | [Premier High Warlord's Razor](https://www.wowhead.com/forever/item=272596)<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) | [Deathbringer](https://www.wowhead.com/forever/item=17068) · *Onyxia, Onyxia's Lair*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) |
+| Off hand | [Premier High Warlord's Blade](https://www.wowhead.com/forever/item=272452)<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) | [Brutality Blade](https://www.wowhead.com/forever/item=18832) · *Garr, Molten Core*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) |
+| Ranged/relic | [Premier High Warlord's Recurve](https://www.wowhead.com/forever/item=272594)<br>+ [Biznicks 247x128 Accurascope](https://www.wowhead.com/forever/item=18283) | [Striker's Mark](https://www.wowhead.com/forever/item=17069) · *Magmadar, Molten Core*<br>+ [Biznicks 247x128 Accurascope](https://www.wowhead.com/forever/item=18283) |
+
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVE9IFG8Y3vebcefz/fnTYQoch4gvD2HCxLdjE62XGT11KoMOHoKc3LGdUmfZ3YMRhIVBSRZdQiMykLCgQrEgpOhQhzUmWPtjVEJUQh0MvIR0CGJ2dBc6G/Scnvd5n+97n+/wvVhDQQYVGDQBB6WhXBEOe8CGDuiEDAwCaF9FSmVBGwSU6OMHderSfyjQmQEU6atARoleL8rqfBwl+vR+nfqlFiX6/Ayoq6E9CGT1Yy2K9N2lsLw8DeHpOB3NRvKvK4AiHVmWUaAjfSjQyUMo0dfzsroc3vOsuEZezsvqh02NJh3y5IKnXvDY5DVoWhqHjqVp6Bw+NQxkyBuFCecG3HFuwWLbFIzfhAJAES567Vh56SzZauqcmzxhcp7QTc6NXdxo4UbIjISZKBCxSOhnskBQQUmrQoH+8BslrEJBb8kp1VqkzfoKalSLo0hXJ/crokZaY2Xl3gSUjU8qxvMzHcpJpcvJ9B72M3lmcGO3nuA6T7Sy7rTTf9RNMT/LnFTKTbEjJ1g+7bKsn3fynt/Pcq6T7U6zppzrsj6313X1VCanr7f1qL3zWM7v36HV4//v44gifftzn0JksZQp5OuZPvnK8T9y8KRuJDc4RzTskV+e+91XhW+kACvEOC3ESthsDwPFMGBcpo23hepQjA322A1Xx0LMWdt6SliwjBWiisxqLpDYP4W8vc7+Krbf3fA5yRdBENR0Tdlta4LdBecAxsDzV87OHXxjJUtqrGi1hc4gWLYORGTRahbow/r2LZWfFW2NvaW9kYYMDMCA8nsAq3jWzw==); Phase 1 BiS: [full raid](https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVE9o01AY7/eSNW/POUIUlgWR5w4yB5GXjIjdJdlOnnSChx0EF9fMRremtD1MBJl2BS3+A0GciBOGVGGTiRcZgtcOOu38M0EHovagMKEXGR4ESbK24HmCP3L45ff93vf93uF9pA2DCDJQ6AYGUmfjDzE4CBYMwhCkYBJA+c5jLHLKRSACfpkDubqN8Lh6HQiPKzlfvFcR5ZUoEfByDuSv7UTAr3Mgb/iltzmQP7UTHr8JnK/C4wJeqevFvN/n9y0gHL46TjhcPE4EPJcHed1vdOPmJpnPg/xxR5eBp1yx5MpXXFq8C93VGRisPoGhwvkCoCn3Nsza92HOfghr/Qsw8wBKABW45g6Q5l0X0W5DZczQmMGYphqM6b3BZzBN1zVDKyG+gvAXtIqIRASlhXD4p9clkBbCqb0ZqVUJtUVPIgpWooTHG8UjEq+gvkhDeTwLDeOLpvHy00HpnDRsp8ZOeKks1Zl+QNWYyrQ+OpKwk6ecOPXS1I7HnTg9eZZmEw5Ne1k763pJmnHs9EiCdmcch447Y46jxlMZtV5Ww/L+0xkvuU/pINs/RAnh8ftfhyUk8kEmn9czffakM3/lYDFVj21xjnDYc68x94cnc99QCWpIv8BFAuy0CoCJHzAq4q5HXKsvRiZHrc470z6WzD2jAVZNvYZknpo9JRT5r5C16uyfYu/8ls+JLZfL5bbhBat/U7CG4RLANLheLb907J0ZC9RIxez3neXyunk0JGtmD4efdQzsar6scG8cCjZHAlIwARPSnwEA9wTUgg==).
 
 ## Other builds of this spec
 
-- [Survival — Raid](../research/raid/builds/survival-raid.md) (5/16/30, 1027 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5-005055001-50023023005022213-6)
-- [Survival (optimized)](../research/raid/builds/opt-melee-dps-raid-dps.md) (5/15/31, 1016 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5-005045001-500250030050220151-6)
+- [Survival — Raid](../research/raid/builds/survival-raid.md) (5/16/30, 1025 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5-005055001-50023023005022213-6)
+- [Survival (optimized)](../research/raid/builds/opt-melee-dps-raid-dps.md) (5/15/31, 1012 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5-005045001-500250030050220151-6)
 - [Survival — Melee](../research/raid/builds/survival-melee.md) (9/11/31) — [open the talent tree](https://talentsforever.com/hunter/60/522-005015-500230131050220151-6)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-14 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-15 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
 

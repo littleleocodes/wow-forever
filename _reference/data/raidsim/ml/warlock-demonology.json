@@ -5,18 +5,18 @@
  "entries": [
   "demonology-raid"
  ],
- "best": "demonology-pact-raid",
+ "best": "demonology-ml-raid",
  "best_entry": "demonology-raid",
- "best_dps": 679.49,
+ "best_dps": 706.86,
  "any_split": false,
- "date": "2026-10-01",
+ "date": "2026-10-14",
  "gear": {
   "bis": {
    "entry": "demonology-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-demonology-bis.gear.json",
-   "date": "2026-10-02",
-   "chosen": "current",
-   "ilvl": 65.8,
+   "date": "2026-10-14",
+   "chosen": "all-slots",
+   "ilvl": 66.6,
    "trinkets": [
     "Talisman of Ephemeral Power",
     "Briarwood Reed"
@@ -25,14 +25,14 @@
     "Spellweaver's Turban",
     "Choker of the Fire Lord",
     "Rugged Mantle of the Timbermaw",
-    "Crystalline Threaded Cape",
+    "Sapphiron Drape",
     "Robe of Volatile Power",
     "Rockfury Bracers",
-    "Hands of Power",
+    "Felheart Gloves",
     "Mana Igniting Cord",
     "Nemesis Leggings",
     "Sorcerer's Boots",
-    "Leafre's Ring of Precise Spell Power",
+    "Ring of Spell Power",
     "Ring of Spell Power",
     "Talisman of Ephemeral Power",
     "Briarwood Reed",
@@ -42,21 +42,22 @@
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.0,
-    "keep-sets-and-effects": 1.0
+    "all-slots": 1.0030567206284715,
+    "keep-sets-and-effects": 1.0030567206284715
    },
    "confirm_seed2": {
-    "current": 1.0
+    "current": 1.0,
+    "all-slots": 1.0041460661087804
    },
    "weights": {
-    "StatFireDamage": 0.0658,
-    "StatIntellect": 0.2294,
-    "StatShadowDamage": 0.4715,
-    "StatSpellCritRating": 0.4622,
-    "StatSpellDamage": 0.5373,
-    "StatSpellHasteRating": 0.3292,
-    "StatSpellHitRating": 0.6595,
-    "StatSpirit": 0.2107
+    "StatFireDamage": 0.0659,
+    "StatIntellect": 0.2704,
+    "StatShadowDamage": 0.5105,
+    "StatSpellCritRating": 0.5128,
+    "StatSpellDamage": 0.5765,
+    "StatSpellHasteRating": 0.5527,
+    "StatSpellHitRating": 0.8198,
+    "StatSpirit": 0.1271
    },
    "evaluated_on": [
     "demonology-raid: ml winner"
@@ -66,16 +67,16 @@
   "prebis": {
    "entry": "demonology-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-demonology-prebis.gear.json",
-   "date": "2026-10-02",
+   "date": "2026-10-14",
    "chosen": "keep-sets-and-effects",
-   "ilvl": 62.8,
+   "ilvl": 62.4,
    "trinkets": [
     "Briarwood Reed",
     "Eye of the Beast"
    ],
    "names": [
     "Spellweaver's Turban",
-    "Orb of the Darkmoon",
+    "Nacreous Shell Necklace",
     "Rugged Mantle of the Timbermaw",
     "Crystalline Threaded Cape",
     "Robe of the Void",
@@ -84,8 +85,8 @@
     "Knowledge of the Timbermaw",
     "Skyshroud Leggings",
     "Sorcerer's Boots",
-    "Leafre's Ring of Precise Spell Power",
     "Signet Ring of the Bronze Dragonflight",
+    "Rune Band of Wizardry",
     "Briarwood Reed",
     "Eye of the Beast",
     "Elemental Attuned Blade",
@@ -101,14 +102,14 @@
     "all-slots": 1.0
    },
    "weights": {
-    "StatFireDamage": 0.0646,
-    "StatIntellect": 0.2324,
-    "StatShadowDamage": 0.4612,
-    "StatSpellCritRating": 0.4971,
-    "StatSpellDamage": 0.5258,
-    "StatSpellHasteRating": 0.4284,
-    "StatSpellHitRating": 0.5795,
-    "StatSpirit": 0.156
+    "StatFireDamage": 0.0635,
+    "StatIntellect": 0.2317,
+    "StatShadowDamage": 0.4935,
+    "StatSpellCritRating": 0.5078,
+    "StatSpellDamage": 0.557,
+    "StatSpellHasteRating": 0.5822,
+    "StatSpellHitRating": 0.687,
+    "StatSpirit": 0.125
    },
    "evaluated_on": [
     "demonology-raid: ml winner (bis)"
@@ -121,7 +122,7 @@
    "spec": "Demonology",
    "setting": "dummy",
    "entry": "demonology-raid",
-   "date": "2026-10-01",
+   "date": "2026-10-14",
    "constraint": "Demonology 30+",
    "protected": [],
    "entries_screened": {},
@@ -132,7 +133,7 @@
     "allocation": {
      "Affliction": [
       [
-       "Improved Life Tap",
+       "Suppression",
        1
       ],
       [
@@ -142,20 +143,16 @@
      ],
      "Demonology": [
       [
-       "Improved Imp",
-       1
-      ],
-      [
-       "Demonic Embrace",
-       1
-      ],
-      [
        "Unholy Power",
        5
       ],
       [
        "Fel Vitality",
        3
+      ],
+      [
+       "Demonic Energies",
+       2
       ],
       [
        "Improved Sayaad",
@@ -214,112 +211,286 @@
      ]
     },
     "split": "2/31/18",
-    "dps": 681.94,
-    "se": 0.14,
+    "dps": 713.28,
+    "se": 0.1308,
     "iterations": 100000
    },
    "runner_up": {
     "split": "2/31/18",
-    "dps": 681.94,
-    "se": 0.14,
+    "dps": 713.28,
+    "se": 0.1308,
     "differs": [
      [
-      "Demonic Brand",
+      "Improved Voidwalker",
       2
      ],
      [
-      "Demonic Brand",
-      3
-     ],
-     [
-      "Improved Felhunter",
-      1
+      "Master Summoner",
+      2
      ]
     ]
    },
    "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Affliction": [
+       [
+        "Suppression",
+        1
+       ],
+       [
+        "Improved Corruption",
+        1
+       ]
+      ],
+      "Demonology": [
+       [
+        "Unholy Power",
+        5
+       ],
+       [
+        "Fel Vitality",
+        3
+       ],
+       [
+        "Demonic Energies",
+        2
+       ],
+       [
+        "Improved Sayaad",
+        3
+       ],
+       [
+        "Demonic Sacrifice",
+        1
+       ],
+       [
+        "Master Summoner",
+        2
+       ],
+       [
+        "Decimation",
+        2
+       ],
+       [
+        "Demonic Brand",
+        3
+       ],
+       [
+        "Soul Link",
+        1
+       ],
+       [
+        "Demonic Knowledge",
+        3
+       ],
+       [
+        "Master Demonologist",
+        5
+       ],
+       [
+        "Demonic Pact",
+        1
+       ]
+      ],
+      "Destruction": [
+       [
+        "Improved Shadow Bolt",
+        5
+       ],
+       [
+        "Bane",
+        5
+       ],
+       [
+        "Ruin",
+        5
+       ],
+       [
+        "Agonizing Flames",
+        3
+       ]
+      ]
+     },
+     "split": "2/31/18",
+     "dps": 713.28,
+     "se": 0.1308
+    },
+    {
+     "allocation": {
+      "Affliction": [
+       [
+        "Suppression",
+        1
+       ],
+       [
+        "Improved Corruption",
+        1
+       ]
+      ],
+      "Demonology": [
+       [
+        "Unholy Power",
+        5
+       ],
+       [
+        "Improved Voidwalker",
+        2
+       ],
+       [
+        "Fel Vitality",
+        3
+       ],
+       [
+        "Demonic Energies",
+        2
+       ],
+       [
+        "Improved Sayaad",
+        3
+       ],
+       [
+        "Demonic Sacrifice",
+        1
+       ],
+       [
+        "Decimation",
+        2
+       ],
+       [
+        "Demonic Brand",
+        3
+       ],
+       [
+        "Soul Link",
+        1
+       ],
+       [
+        "Demonic Knowledge",
+        3
+       ],
+       [
+        "Master Demonologist",
+        5
+       ],
+       [
+        "Demonic Pact",
+        1
+       ]
+      ],
+      "Destruction": [
+       [
+        "Improved Shadow Bolt",
+        5
+       ],
+       [
+        "Bane",
+        5
+       ],
+       [
+        "Ruin",
+        5
+       ],
+       [
+        "Agonizing Flames",
+        3
+       ]
+      ]
+     },
+     "split": "2/31/18",
+     "dps": 713.28,
+     "se": 0.1308
+    }
+   ],
    "runs": [
     {
      "entry": "demonology-raid",
      "run": 1,
-     "simulated": 1397,
-     "best_screen": 681.71,
+     "simulated": 1399,
+     "best_screen": 714.39,
      "best_split": "2/31/18",
      "trace": [
       {
        "round": 0,
-       "simulated": 397,
-       "best": 680.31
+       "simulated": 399,
+       "best": 713.3
       },
       {
        "round": 1,
-       "simulated": 597,
-       "best": 681.03,
-       "predicted_top": 675.28
+       "simulated": 599,
+       "best": 714.39,
+       "predicted_top": 709.22
       },
       {
        "round": 2,
-       "simulated": 797,
-       "best": 681.71,
-       "predicted_top": 680.17
+       "simulated": 799,
+       "best": 714.39,
+       "predicted_top": 712.05
       },
       {
        "round": 3,
-       "simulated": 997,
-       "best": 681.71,
-       "predicted_top": 681.27
+       "simulated": 999,
+       "best": 714.39,
+       "predicted_top": 714.07
       },
       {
        "round": 4,
-       "simulated": 1197,
-       "best": 681.71,
-       "predicted_top": 681.51
+       "simulated": 1199,
+       "best": 714.39,
+       "predicted_top": 714.36
       },
       {
        "round": 5,
-       "simulated": 1397,
-       "best": 681.71,
-       "predicted_top": 681.54
+       "simulated": 1399,
+       "best": 714.39,
+       "predicted_top": 714.38
       }
      ],
-     "best_stage1_gap": -0.0023,
+     "best_stage1_gap": 0.0,
      "agrees_with_winner": true
     },
     {
      "entry": "demonology-raid",
      "run": 2,
-     "simulated": 1197,
-     "best_screen": 681.54,
+     "simulated": 1403,
+     "best_screen": 714.39,
      "best_split": "2/31/18",
      "trace": [
       {
        "round": 0,
-       "simulated": 397,
-       "best": 680.31
+       "simulated": 403,
+       "best": 713.01
       },
       {
        "round": 1,
-       "simulated": 597,
-       "best": 680.99,
-       "predicted_top": 675.04
+       "simulated": 603,
+       "best": 714.39,
+       "predicted_top": 710.59
       },
       {
        "round": 2,
-       "simulated": 797,
-       "best": 680.99,
-       "predicted_top": 679.45
+       "simulated": 803,
+       "best": 714.39,
+       "predicted_top": 712.5
       },
       {
        "round": 3,
-       "simulated": 997,
-       "best": 681.54,
-       "predicted_top": 680.77
+       "simulated": 1003,
+       "best": 714.39,
+       "predicted_top": 713.59
       },
       {
        "round": 4,
-       "simulated": 1197,
-       "best": 681.54,
-       "predicted_top": 680.97
+       "simulated": 1203,
+       "best": 714.39,
+       "predicted_top": 714.22
+      },
+      {
+       "round": 5,
+       "simulated": 1403,
+       "best": 714.39,
+       "predicted_top": 714.37
       }
      ],
      "best_stage1_gap": 0.0,
@@ -332,101 +503,106 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      681.85,
-      681.85,
-      681.85,
-      680.27,
-      680.27,
-      680.27,
-      680.27,
-      680.27,
-      680.24,
-      680.03,
-      680.03,
-      680.03
+      714.29,
+      714.29,
+      714.29,
+      714.29,
+      714.29,
+      714.29,
+      714.29,
+      714.29,
+      714.29,
+      714.29,
+      714.29,
+      714.29
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      682.67,
-      682.67,
-      682.67,
-      680.99,
-      680.99
+      713.64,
+      713.64,
+      713.64,
+      713.64,
+      713.64
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      681.94,
-      681.94
+      713.28,
+      713.28
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 265,
-     "best_gap": 0.0,
-     "best_move": "1 Improved Imp -> Demonic Energies"
+     "neighbours": 255,
+     "best_gap": 0.0019,
+     "best_move": "1 Suppression -> Improved Life Tap",
+     "raced": [
+      "1 Suppression -> Improved Life Tap",
+      "1 Ruin -> Cataclysm"
+     ],
+     "confirmed_gap": -0.0001
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Demonic Pact",
-     "importance": 0.4048
-    },
-    {
-     "feature": "Agonizing Flames",
-     "importance": 0.1878
-    },
-    {
-     "feature": "Destruction points",
-     "importance": 0.1331
-    },
-    {
-     "feature": "Master Demonologist",
-     "importance": 0.0778
+     "importance": 0.3225
     },
     {
      "feature": "Ruin",
-     "importance": 0.0634
+     "importance": 0.2342
     },
     {
-     "feature": "Improved Imp",
-     "importance": 0.0226
+     "feature": "Agonizing Flames",
+     "importance": 0.141
+    },
+    {
+     "feature": "Destruction points",
+     "importance": 0.1329
+    },
+    {
+     "feature": "Master Demonologist",
+     "importance": 0.0392
     },
     {
      "feature": "Bane",
-     "importance": 0.0137
+     "importance": 0.0311
     },
     {
      "feature": "Demonology points",
-     "importance": 0.0135
+     "importance": 0.0172
     },
     {
      "feature": "Soul Link",
-     "importance": 0.0133
+     "importance": 0.0129
+    },
+    {
+     "feature": "Demonic Knowledge",
+     "importance": 0.0104
     },
     {
      "feature": "Affliction points",
-     "importance": 0.0122
-    },
-    {
-     "feature": "Improved Voidwalker",
-     "importance": 0.0113
+     "importance": 0.0099
     },
     {
      "feature": "Improved Health Funnel",
-     "importance": 0.0097
+     "importance": 0.0069
+    },
+    {
+     "feature": "Demonic Embrace",
+     "importance": 0.0063
     }
    ],
-   "simulated_builds": 2879,
-   "simulated_fights": 3862000,
-   "minutes": 3.0,
+   "simulated_builds": 3008,
+   "simulated_fights": 4058000,
+   "minutes": 3.7,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-demonology-bis.gear.json"
   },
   "bis-dummy": {
@@ -434,280 +610,7 @@
    "spec": "Demonology",
    "setting": "dummy",
    "entry": "demonology-raid",
-   "date": "2026-10-02",
-   "constraint": "Demonology 30+",
-   "protected": [],
-   "entries_screened": {},
-   "entries_searched": [
-    "demonology-raid"
-   ],
-   "winner": {
-    "allocation": {
-     "Affliction": [
-      [
-       "Improved Life Tap",
-       1
-      ],
-      [
-       "Improved Corruption",
-       1
-      ]
-     ],
-     "Demonology": [
-      [
-       "Improved Imp",
-       1
-      ],
-      [
-       "Demonic Embrace",
-       1
-      ],
-      [
-       "Unholy Power",
-       5
-      ],
-      [
-       "Fel Vitality",
-       3
-      ],
-      [
-       "Improved Sayaad",
-       3
-      ],
-      [
-       "Demonic Sacrifice",
-       1
-      ],
-      [
-       "Master Summoner",
-       2
-      ],
-      [
-       "Decimation",
-       2
-      ],
-      [
-       "Demonic Brand",
-       3
-      ],
-      [
-       "Soul Link",
-       1
-      ],
-      [
-       "Demonic Knowledge",
-       3
-      ],
-      [
-       "Master Demonologist",
-       5
-      ],
-      [
-       "Demonic Pact",
-       1
-      ]
-     ],
-     "Destruction": [
-      [
-       "Improved Shadow Bolt",
-       5
-      ],
-      [
-       "Bane",
-       5
-      ],
-      [
-       "Ruin",
-       5
-      ],
-      [
-       "Agonizing Flames",
-       3
-      ]
-     ]
-    },
-    "split": "2/31/18",
-    "dps": 688.7,
-    "se": 0.128,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "2/31/18",
-    "dps": 688.7,
-    "se": 0.128,
-    "differs": [
-     [
-      "Demonic Embrace",
-      1
-     ],
-     [
-      "Improved Imp",
-      1
-     ],
-     [
-      "Improved Imp",
-      2
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "runs": [
-    {
-     "entry": "demonology-raid",
-     "run": 1,
-     "simulated": 1599,
-     "best_screen": 686.37,
-     "best_split": "2/31/18",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 399,
-       "best": 685.67
-      },
-      {
-       "round": 1,
-       "simulated": 599,
-       "best": 685.67,
-       "predicted_top": 683.57
-      },
-      {
-       "round": 2,
-       "simulated": 799,
-       "best": 685.67,
-       "predicted_top": 685.52
-      },
-      {
-       "round": 3,
-       "simulated": 999,
-       "best": 685.67,
-       "predicted_top": 685.64
-      },
-      {
-       "round": 4,
-       "simulated": 1199,
-       "best": 686.37,
-       "predicted_top": 685.66
-      },
-      {
-       "round": 5,
-       "simulated": 1399,
-       "best": 686.37,
-       "predicted_top": 685.67
-      },
-      {
-       "round": 6,
-       "simulated": 1599,
-       "best": 686.37,
-       "predicted_top": 685.69
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      688.54,
-      688.54,
-      687.81,
-      687.81,
-      687.81,
-      687.81
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      688.38,
-      688.38,
-      687.45,
-      687.45,
-      687.45
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      688.7,
-      688.7
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 265,
-     "best_gap": 0.0,
-     "best_move": "1 Demonic Brand -> Improved Felhunter"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Demonic Pact",
-     "importance": 0.3673
-    },
-    {
-     "feature": "Ruin",
-     "importance": 0.1687
-    },
-    {
-     "feature": "Agonizing Flames",
-     "importance": 0.1679
-    },
-    {
-     "feature": "Destruction points",
-     "importance": 0.09
-    },
-    {
-     "feature": "Master Demonologist",
-     "importance": 0.0511
-    },
-    {
-     "feature": "Bane",
-     "importance": 0.0315
-    },
-    {
-     "feature": "Demonology points",
-     "importance": 0.023
-    },
-    {
-     "feature": "Soul Link",
-     "importance": 0.0188
-    },
-    {
-     "feature": "Improved Imp",
-     "importance": 0.0167
-    },
-    {
-     "feature": "Improved Health Funnel",
-     "importance": 0.0151
-    },
-    {
-     "feature": "Demonic Knowledge",
-     "importance": 0.009
-    },
-    {
-     "feature": "Affliction points",
-     "importance": 0.0088
-    }
-   ],
-   "simulated_builds": 1878,
-   "simulated_fights": 2807000,
-   "minutes": 2.2,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-demonology-bis.gear.json"
-  },
-  "bis-raid": {
-   "class": "warlock",
-   "spec": "Demonology",
-   "setting": "raid",
-   "entry": "demonology-raid",
-   "date": "2026-10-02",
+   "date": "2026-10-14",
    "constraint": "Demonology 30+",
    "protected": [],
    "entries_screened": {},
@@ -728,20 +631,16 @@
      ],
      "Demonology": [
       [
-       "Improved Imp",
-       1
-      ],
-      [
-       "Demonic Embrace",
-       1
-      ],
-      [
        "Unholy Power",
        5
       ],
       [
        "Fel Vitality",
        3
+      ],
+      [
+       "Demonic Energies",
+       2
       ],
       [
        "Improved Sayaad",
@@ -800,66 +699,242 @@
      ]
     },
     "split": "2/31/18",
-    "dps": 836.24,
-    "se": 0.16,
+    "dps": 713.28,
+    "se": 0.1308,
     "iterations": 100000
    },
    "runner_up": {
     "split": "2/31/18",
-    "dps": 833.85,
-    "se": 0.162,
+    "dps": 713.28,
+    "se": 0.1308,
     "differs": [
      [
-      "Improved Corruption",
-      1
-     ],
-     [
-      "Improved Corruption",
+      "Demonic Brand",
       2
      ],
      [
-      "Suppression",
+      "Demonic Brand",
+      3
+     ],
+     [
+      "Fel Domination",
       1
      ]
     ]
    },
-   "gap_to_runner_up": 0.0029,
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Affliction": [
+       [
+        "Suppression",
+        1
+       ],
+       [
+        "Improved Corruption",
+        1
+       ]
+      ],
+      "Demonology": [
+       [
+        "Unholy Power",
+        5
+       ],
+       [
+        "Fel Vitality",
+        3
+       ],
+       [
+        "Demonic Energies",
+        2
+       ],
+       [
+        "Improved Sayaad",
+        3
+       ],
+       [
+        "Demonic Sacrifice",
+        1
+       ],
+       [
+        "Master Summoner",
+        2
+       ],
+       [
+        "Decimation",
+        2
+       ],
+       [
+        "Demonic Brand",
+        3
+       ],
+       [
+        "Soul Link",
+        1
+       ],
+       [
+        "Demonic Knowledge",
+        3
+       ],
+       [
+        "Master Demonologist",
+        5
+       ],
+       [
+        "Demonic Pact",
+        1
+       ]
+      ],
+      "Destruction": [
+       [
+        "Improved Shadow Bolt",
+        5
+       ],
+       [
+        "Bane",
+        5
+       ],
+       [
+        "Ruin",
+        5
+       ],
+       [
+        "Agonizing Flames",
+        3
+       ]
+      ]
+     },
+     "split": "2/31/18",
+     "dps": 713.28,
+     "se": 0.1308
+    },
+    {
+     "allocation": {
+      "Affliction": [
+       [
+        "Suppression",
+        1
+       ],
+       [
+        "Improved Corruption",
+        1
+       ]
+      ],
+      "Demonology": [
+       [
+        "Unholy Power",
+        5
+       ],
+       [
+        "Fel Vitality",
+        3
+       ],
+       [
+        "Demonic Energies",
+        2
+       ],
+       [
+        "Improved Sayaad",
+        3
+       ],
+       [
+        "Demonic Sacrifice",
+        1
+       ],
+       [
+        "Master Summoner",
+        2
+       ],
+       [
+        "Decimation",
+        2
+       ],
+       [
+        "Fel Domination",
+        1
+       ],
+       [
+        "Demonic Brand",
+        2
+       ],
+       [
+        "Soul Link",
+        1
+       ],
+       [
+        "Demonic Knowledge",
+        3
+       ],
+       [
+        "Master Demonologist",
+        5
+       ],
+       [
+        "Demonic Pact",
+        1
+       ]
+      ],
+      "Destruction": [
+       [
+        "Improved Shadow Bolt",
+        5
+       ],
+       [
+        "Bane",
+        5
+       ],
+       [
+        "Ruin",
+        5
+       ],
+       [
+        "Agonizing Flames",
+        3
+       ]
+      ]
+     },
+     "split": "2/31/18",
+     "dps": 713.28,
+     "se": 0.1308
+    }
+   ],
    "runs": [
     {
      "entry": "demonology-raid",
      "run": 1,
-     "simulated": 1191,
-     "best_screen": 836.46,
+     "simulated": 1205,
+     "best_screen": 714.39,
      "best_split": "2/31/18",
      "trace": [
       {
        "round": 0,
-       "simulated": 391,
-       "best": 836.46
+       "simulated": 405,
+       "best": 714.39
       },
       {
        "round": 1,
-       "simulated": 591,
-       "best": 836.46,
-       "predicted_top": 828.88
+       "simulated": 605,
+       "best": 714.39,
+       "predicted_top": 710.35
       },
       {
        "round": 2,
-       "simulated": 791,
-       "best": 836.46,
-       "predicted_top": 835.71
+       "simulated": 805,
+       "best": 714.39,
+       "predicted_top": 713.35
       },
       {
        "round": 3,
-       "simulated": 991,
-       "best": 836.46,
-       "predicted_top": 836.37
+       "simulated": 1005,
+       "best": 714.39,
+       "predicted_top": 714.27
       },
       {
        "round": 4,
-       "simulated": 1191,
-       "best": 836.46,
-       "predicted_top": 836.45
+       "simulated": 1205,
+       "best": 714.39,
+       "predicted_top": 714.36
       }
      ],
      "best_stage1_gap": 0.0,
@@ -872,120 +947,108 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      834.32,
-      834.32,
-      834.32,
-      834.32,
-      834.32,
-      834.32
+      714.29,
+      714.29,
+      714.29,
+      714.29,
+      714.29,
+      714.29
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      833.77,
-      833.77,
-      833.77,
-      833.77,
-      833.77
+      713.64,
+      713.64,
+      713.64,
+      713.64,
+      713.64
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      833.85,
-      833.85
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      836.24,
-      833.85
+      713.28,
+      713.28
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 263,
-     "best_gap": 0.0032,
-     "best_move": "1 Improved Corruption -> Suppression",
+     "neighbours": 255,
+     "best_gap": 0.0019,
+     "best_move": "1 Suppression -> Improved Life Tap",
      "raced": [
-      "1 Improved Corruption -> Suppression"
+      "1 Suppression -> Improved Life Tap",
+      "1 Ruin -> Cataclysm"
      ],
-     "confirmed_gap": 0.0035
-    },
-    {
-     "neighbours": 266,
-     "best_gap": 0.0,
-     "best_move": "1 Demonic Brand -> Improved Felhunter"
+     "confirmed_gap": -0.0001
     }
    ],
    "other_entries": [],
    "important_features": [
     {
-     "feature": "Ruin",
-     "importance": 0.2616
+     "feature": "Demonic Pact",
+     "importance": 0.3279
     },
     {
-     "feature": "Demonic Pact",
-     "importance": 0.2472
+     "feature": "Ruin",
+     "importance": 0.2828
     },
     {
      "feature": "Agonizing Flames",
-     "importance": 0.216
+     "importance": 0.1249
     },
     {
      "feature": "Destruction points",
-     "importance": 0.0982
+     "importance": 0.091
     },
     {
      "feature": "Master Demonologist",
-     "importance": 0.0522
+     "importance": 0.0456
     },
     {
      "feature": "Bane",
-     "importance": 0.0177
+     "importance": 0.0238
+    },
+    {
+     "feature": "Improved Imp",
+     "importance": 0.0237
     },
     {
      "feature": "Improved Health Funnel",
-     "importance": 0.0162
-    },
-    {
-     "feature": "Affliction points",
-     "importance": 0.0154
+     "importance": 0.0136
     },
     {
      "feature": "Demonology points",
-     "importance": 0.0099
+     "importance": 0.0135
     },
     {
-     "feature": "Soul Link",
-     "importance": 0.0099
+     "feature": "Affliction points",
+     "importance": 0.0111
     },
     {
-     "feature": "Improved Voidwalker",
+     "feature": "Demonic Knowledge",
      "importance": 0.0095
     },
     {
-     "feature": "Demonic Energies",
-     "importance": 0.008
+     "feature": "Soul Link",
+     "importance": 0.005
     }
    ],
-   "simulated_builds": 1739,
-   "simulated_fights": 3454000,
-   "minutes": 3.5,
+   "simulated_builds": 1477,
+   "simulated_fights": 2473000,
+   "minutes": 2.1,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-demonology-bis.gear.json"
   },
-  "prebis-dummy": {
+  "bis-raid": {
    "class": "warlock",
    "spec": "Demonology",
-   "setting": "dummy",
+   "setting": "raid",
    "entry": "demonology-raid",
-   "date": "2026-10-02",
+   "date": "2026-10-14",
    "constraint": "Demonology 30+",
    "protected": [],
    "entries_screened": {},
@@ -996,7 +1059,7 @@
     "allocation": {
      "Affliction": [
       [
-       "Improved Life Tap",
+       "Suppression",
        1
       ],
       [
@@ -1006,20 +1069,16 @@
      ],
      "Demonology": [
       [
-       "Improved Imp",
-       1
-      ],
-      [
-       "Demonic Embrace",
-       1
-      ],
-      [
        "Unholy Power",
        5
       ],
       [
        "Fel Vitality",
        3
+      ],
+      [
+       "Demonic Energies",
+       2
       ],
       [
        "Improved Sayaad",
@@ -1078,66 +1137,242 @@
      ]
     },
     "split": "2/31/18",
-    "dps": 656.07,
-    "se": 0.116,
+    "dps": 838.73,
+    "se": 0.1572,
     "iterations": 100000
    },
    "runner_up": {
     "split": "2/31/18",
-    "dps": 656.07,
-    "se": 0.116,
+    "dps": 838.73,
+    "se": 0.1572,
     "differs": [
      [
-      "Demonic Embrace",
+      "Improved Felhunter",
       1
      ],
      [
-      "Demonic Embrace",
+      "Master Summoner",
+      1
+     ],
+     [
+      "Master Summoner",
       2
-     ],
-     [
-      "Improved Imp",
-      1
      ]
     ]
    },
    "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Affliction": [
+       [
+        "Suppression",
+        1
+       ],
+       [
+        "Improved Corruption",
+        1
+       ]
+      ],
+      "Demonology": [
+       [
+        "Unholy Power",
+        5
+       ],
+       [
+        "Fel Vitality",
+        3
+       ],
+       [
+        "Demonic Energies",
+        2
+       ],
+       [
+        "Improved Sayaad",
+        3
+       ],
+       [
+        "Demonic Sacrifice",
+        1
+       ],
+       [
+        "Master Summoner",
+        2
+       ],
+       [
+        "Decimation",
+        2
+       ],
+       [
+        "Demonic Brand",
+        3
+       ],
+       [
+        "Soul Link",
+        1
+       ],
+       [
+        "Demonic Knowledge",
+        3
+       ],
+       [
+        "Master Demonologist",
+        5
+       ],
+       [
+        "Demonic Pact",
+        1
+       ]
+      ],
+      "Destruction": [
+       [
+        "Improved Shadow Bolt",
+        5
+       ],
+       [
+        "Bane",
+        5
+       ],
+       [
+        "Ruin",
+        5
+       ],
+       [
+        "Agonizing Flames",
+        3
+       ]
+      ]
+     },
+     "split": "2/31/18",
+     "dps": 838.73,
+     "se": 0.1572
+    },
+    {
+     "allocation": {
+      "Affliction": [
+       [
+        "Suppression",
+        1
+       ],
+       [
+        "Improved Corruption",
+        1
+       ]
+      ],
+      "Demonology": [
+       [
+        "Unholy Power",
+        5
+       ],
+       [
+        "Fel Vitality",
+        3
+       ],
+       [
+        "Demonic Energies",
+        2
+       ],
+       [
+        "Improved Sayaad",
+        3
+       ],
+       [
+        "Demonic Sacrifice",
+        1
+       ],
+       [
+        "Master Summoner",
+        1
+       ],
+       [
+        "Decimation",
+        2
+       ],
+       [
+        "Demonic Brand",
+        3
+       ],
+       [
+        "Improved Felhunter",
+        1
+       ],
+       [
+        "Soul Link",
+        1
+       ],
+       [
+        "Demonic Knowledge",
+        3
+       ],
+       [
+        "Master Demonologist",
+        5
+       ],
+       [
+        "Demonic Pact",
+        1
+       ]
+      ],
+      "Destruction": [
+       [
+        "Improved Shadow Bolt",
+        5
+       ],
+       [
+        "Bane",
+        5
+       ],
+       [
+        "Ruin",
+        5
+       ],
+       [
+        "Agonizing Flames",
+        3
+       ]
+      ]
+     },
+     "split": "2/31/18",
+     "dps": 838.73,
+     "se": 0.1572
+    }
+   ],
    "runs": [
     {
      "entry": "demonology-raid",
      "run": 1,
-     "simulated": 1191,
-     "best_screen": 655.92,
+     "simulated": 1195,
+     "best_screen": 837.76,
      "best_split": "2/31/18",
      "trace": [
       {
        "round": 0,
-       "simulated": 391,
-       "best": 655.92
+       "simulated": 395,
+       "best": 837.76
       },
       {
        "round": 1,
-       "simulated": 591,
-       "best": 655.92,
-       "predicted_top": 653.68
+       "simulated": 595,
+       "best": 837.76,
+       "predicted_top": 835.16
       },
       {
        "round": 2,
-       "simulated": 791,
-       "best": 655.92,
-       "predicted_top": 655.16
+       "simulated": 795,
+       "best": 837.76,
+       "predicted_top": 837.51
       },
       {
        "round": 3,
-       "simulated": 991,
-       "best": 655.92,
-       "predicted_top": 655.76
+       "simulated": 995,
+       "best": 837.76,
+       "predicted_top": 837.68
       },
       {
        "round": 4,
-       "simulated": 1191,
-       "best": 655.92,
-       "predicted_top": 655.91
+       "simulated": 1195,
+       "best": 837.76,
+       "predicted_top": 837.73
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1150,50 +1385,479 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      656.22,
-      656.22,
-      656.22,
-      656.22,
-      656.22,
-      656.22
+      838.89,
+      838.89,
+      838.89,
+      838.89,
+      838.89,
+      838.89
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      656.09,
-      656.09,
-      656.09,
-      656.09,
-      656.09
+      838.87,
+      838.87,
+      838.87,
+      838.87,
+      838.87
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      656.07,
-      656.07
+      838.73,
+      838.73
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 265,
-     "best_gap": 0.0021,
-     "best_move": "3 Ruin -> Cataclysm",
-     "raced": [
-      "3 Ruin -> Cataclysm"
+     "neighbours": 255,
+     "best_gap": 0.0,
+     "best_move": "2 Demonic Brand -> Demonic Embrace"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Ruin",
+     "importance": 0.3509
+    },
+    {
+     "feature": "Agonizing Flames",
+     "importance": 0.2167
+    },
+    {
+     "feature": "Demonic Pact",
+     "importance": 0.1889
+    },
+    {
+     "feature": "Destruction points",
+     "importance": 0.0653
+    },
+    {
+     "feature": "Master Demonologist",
+     "importance": 0.0499
+    },
+    {
+     "feature": "Bane",
+     "importance": 0.0262
+    },
+    {
+     "feature": "Improved Imp",
+     "importance": 0.0224
+    },
+    {
+     "feature": "Soul Link",
+     "importance": 0.0208
+    },
+    {
+     "feature": "Affliction points",
+     "importance": 0.0119
+    },
+    {
+     "feature": "Demonology points",
+     "importance": 0.0085
+    },
+    {
+     "feature": "Improved Shadow Bolt",
+     "importance": 0.0054
+    },
+    {
+     "feature": "Improved Health Funnel",
+     "importance": 0.0054
+    }
+   ],
+   "simulated_builds": 1464,
+   "simulated_fights": 2373000,
+   "minutes": 2.6,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-demonology-bis.gear.json"
+  },
+  "prebis-dummy": {
+   "class": "warlock",
+   "spec": "Demonology",
+   "setting": "dummy",
+   "entry": "demonology-raid",
+   "date": "2026-10-14",
+   "constraint": "Demonology 30+",
+   "protected": [],
+   "entries_screened": {},
+   "entries_searched": [
+    "demonology-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Affliction": [
+      [
+       "Suppression",
+       1
+      ],
+      [
+       "Improved Corruption",
+       1
+      ]
      ],
-     "confirmed_gap": 0.0003
+     "Demonology": [
+      [
+       "Unholy Power",
+       5
+      ],
+      [
+       "Fel Vitality",
+       3
+      ],
+      [
+       "Demonic Energies",
+       2
+      ],
+      [
+       "Improved Sayaad",
+       3
+      ],
+      [
+       "Demonic Sacrifice",
+       1
+      ],
+      [
+       "Master Summoner",
+       2
+      ],
+      [
+       "Decimation",
+       2
+      ],
+      [
+       "Demonic Brand",
+       3
+      ],
+      [
+       "Soul Link",
+       1
+      ],
+      [
+       "Demonic Knowledge",
+       3
+      ],
+      [
+       "Master Demonologist",
+       5
+      ],
+      [
+       "Demonic Pact",
+       1
+      ]
+     ],
+     "Destruction": [
+      [
+       "Improved Shadow Bolt",
+       5
+      ],
+      [
+       "Bane",
+       5
+      ],
+      [
+       "Ruin",
+       5
+      ],
+      [
+       "Agonizing Flames",
+       3
+      ]
+     ]
+    },
+    "split": "2/31/18",
+    "dps": 680.57,
+    "se": 0.1128,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "2/31/18",
+    "dps": 680.57,
+    "se": 0.1128,
+    "differs": [
+     [
+      "Demonic Aegis",
+      1
+     ],
+     [
+      "Demonic Brand",
+      2
+     ],
+     [
+      "Demonic Brand",
+      3
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Affliction": [
+       [
+        "Suppression",
+        1
+       ],
+       [
+        "Improved Corruption",
+        1
+       ]
+      ],
+      "Demonology": [
+       [
+        "Unholy Power",
+        5
+       ],
+       [
+        "Fel Vitality",
+        3
+       ],
+       [
+        "Demonic Energies",
+        2
+       ],
+       [
+        "Improved Sayaad",
+        3
+       ],
+       [
+        "Demonic Sacrifice",
+        1
+       ],
+       [
+        "Master Summoner",
+        2
+       ],
+       [
+        "Decimation",
+        2
+       ],
+       [
+        "Demonic Brand",
+        3
+       ],
+       [
+        "Soul Link",
+        1
+       ],
+       [
+        "Demonic Knowledge",
+        3
+       ],
+       [
+        "Master Demonologist",
+        5
+       ],
+       [
+        "Demonic Pact",
+        1
+       ]
+      ],
+      "Destruction": [
+       [
+        "Improved Shadow Bolt",
+        5
+       ],
+       [
+        "Bane",
+        5
+       ],
+       [
+        "Ruin",
+        5
+       ],
+       [
+        "Agonizing Flames",
+        3
+       ]
+      ]
+     },
+     "split": "2/31/18",
+     "dps": 680.57,
+     "se": 0.1128
+    },
+    {
+     "allocation": {
+      "Affliction": [
+       [
+        "Suppression",
+        1
+       ],
+       [
+        "Improved Corruption",
+        1
+       ]
+      ],
+      "Demonology": [
+       [
+        "Unholy Power",
+        5
+       ],
+       [
+        "Demonic Aegis",
+        1
+       ],
+       [
+        "Fel Vitality",
+        3
+       ],
+       [
+        "Demonic Energies",
+        2
+       ],
+       [
+        "Improved Sayaad",
+        3
+       ],
+       [
+        "Demonic Sacrifice",
+        1
+       ],
+       [
+        "Master Summoner",
+        2
+       ],
+       [
+        "Decimation",
+        2
+       ],
+       [
+        "Demonic Brand",
+        2
+       ],
+       [
+        "Soul Link",
+        1
+       ],
+       [
+        "Demonic Knowledge",
+        3
+       ],
+       [
+        "Master Demonologist",
+        5
+       ],
+       [
+        "Demonic Pact",
+        1
+       ]
+      ],
+      "Destruction": [
+       [
+        "Improved Shadow Bolt",
+        5
+       ],
+       [
+        "Bane",
+        5
+       ],
+       [
+        "Ruin",
+        5
+       ],
+       [
+        "Agonizing Flames",
+        3
+       ]
+      ]
+     },
+     "split": "2/31/18",
+     "dps": 680.57,
+     "se": 0.1128
+    }
+   ],
+   "runs": [
+    {
+     "entry": "demonology-raid",
+     "run": 1,
+     "simulated": 1200,
+     "best_screen": 681.85,
+     "best_split": "2/31/18",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 400,
+       "best": 681.85
+      },
+      {
+       "round": 1,
+       "simulated": 600,
+       "best": 681.85,
+       "predicted_top": 679.59
+      },
+      {
+       "round": 2,
+       "simulated": 800,
+       "best": 681.85,
+       "predicted_top": 681.14
+      },
+      {
+       "round": 3,
+       "simulated": 1000,
+       "best": 681.85,
+       "predicted_top": 681.64
+      },
+      {
+       "round": 4,
+       "simulated": 1200,
+       "best": 681.85,
+       "predicted_top": 681.8
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      681.18,
+      681.18,
+      681.18,
+      681.18,
+      681.18,
+      681.18
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      680.8,
+      680.8,
+      680.8,
+      680.8,
+      680.8
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      680.57,
+      680.57
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 255,
+     "best_gap": 0.0,
+     "best_move": "1 Demonic Brand -> Improved Felhunter"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Demonic Pact",
-     "importance": 0.3815
+     "importance": 0.3251
     },
     {
      "feature": "Ruin",
@@ -1201,47 +1865,47 @@
     },
     {
      "feature": "Agonizing Flames",
-     "importance": 0.129
+     "importance": 0.2137
     },
     {
      "feature": "Destruction points",
-     "importance": 0.092
+     "importance": 0.0755
     },
     {
      "feature": "Master Demonologist",
-     "importance": 0.0506
-    },
-    {
-     "feature": "Improved Imp",
-     "importance": 0.0308
+     "importance": 0.0405
     },
     {
      "feature": "Bane",
-     "importance": 0.0231
+     "importance": 0.0242
     },
     {
-     "feature": "Soul Link",
-     "importance": 0.0211
+     "feature": "Affliction points",
+     "importance": 0.0201
     },
     {
      "feature": "Demonology points",
-     "importance": 0.0083
+     "importance": 0.0153
+    },
+    {
+     "feature": "Improved Imp",
+     "importance": 0.0128
     },
     {
      "feature": "Demonic Knowledge",
-     "importance": 0.0073
+     "importance": 0.011
     },
     {
-     "feature": "Improved Health Funnel",
-     "importance": 0.0056
+     "feature": "Demonic Embrace",
+     "importance": 0.0092
     },
     {
-     "feature": "Improved Voidwalker",
-     "importance": 0.0045
+     "feature": "Soul Link",
+     "importance": 0.0082
     }
    ],
-   "simulated_builds": 1472,
-   "simulated_fights": 2459000,
+   "simulated_builds": 1469,
+   "simulated_fights": 2378000,
    "minutes": 2.0,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-demonology-prebis.gear.json"
   },
@@ -1250,7 +1914,7 @@
    "spec": "Demonology",
    "setting": "raid",
    "entry": "demonology-raid",
-   "date": "2026-10-02",
+   "date": "2026-10-14",
    "constraint": "Demonology 30+",
    "protected": [],
    "entries_screened": {},
@@ -1271,20 +1935,16 @@
      ],
      "Demonology": [
       [
-       "Improved Imp",
-       1
-      ],
-      [
-       "Demonic Embrace",
-       1
-      ],
-      [
        "Unholy Power",
        5
       ],
       [
        "Fel Vitality",
        3
+      ],
+      [
+       "Demonic Energies",
+       2
       ],
       [
        "Improved Sayaad",
@@ -1343,66 +2003,242 @@
      ]
     },
     "split": "2/31/18",
-    "dps": 800.64,
-    "se": 0.149,
+    "dps": 800.87,
+    "se": 0.1384,
     "iterations": 100000
    },
    "runner_up": {
     "split": "2/31/18",
-    "dps": 798.64,
-    "se": 0.15,
+    "dps": 800.87,
+    "se": 0.1384,
     "differs": [
      [
-      "Improved Corruption",
+      "Demonic Aegis",
       1
      ],
      [
-      "Improved Corruption",
+      "Demonic Energies",
+      1
+     ],
+     [
+      "Demonic Energies",
       2
-     ],
-     [
-      "Suppression",
-      1
      ]
     ]
    },
-   "gap_to_runner_up": 0.0025,
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Affliction": [
+       [
+        "Suppression",
+        1
+       ],
+       [
+        "Improved Corruption",
+        1
+       ]
+      ],
+      "Demonology": [
+       [
+        "Unholy Power",
+        5
+       ],
+       [
+        "Fel Vitality",
+        3
+       ],
+       [
+        "Demonic Energies",
+        2
+       ],
+       [
+        "Improved Sayaad",
+        3
+       ],
+       [
+        "Demonic Sacrifice",
+        1
+       ],
+       [
+        "Master Summoner",
+        2
+       ],
+       [
+        "Decimation",
+        2
+       ],
+       [
+        "Demonic Brand",
+        3
+       ],
+       [
+        "Soul Link",
+        1
+       ],
+       [
+        "Demonic Knowledge",
+        3
+       ],
+       [
+        "Master Demonologist",
+        5
+       ],
+       [
+        "Demonic Pact",
+        1
+       ]
+      ],
+      "Destruction": [
+       [
+        "Improved Shadow Bolt",
+        5
+       ],
+       [
+        "Bane",
+        5
+       ],
+       [
+        "Ruin",
+        5
+       ],
+       [
+        "Agonizing Flames",
+        3
+       ]
+      ]
+     },
+     "split": "2/31/18",
+     "dps": 800.87,
+     "se": 0.1384
+    },
+    {
+     "allocation": {
+      "Affliction": [
+       [
+        "Suppression",
+        1
+       ],
+       [
+        "Improved Corruption",
+        1
+       ]
+      ],
+      "Demonology": [
+       [
+        "Unholy Power",
+        5
+       ],
+       [
+        "Demonic Aegis",
+        1
+       ],
+       [
+        "Fel Vitality",
+        3
+       ],
+       [
+        "Demonic Energies",
+        1
+       ],
+       [
+        "Improved Sayaad",
+        3
+       ],
+       [
+        "Demonic Sacrifice",
+        1
+       ],
+       [
+        "Master Summoner",
+        2
+       ],
+       [
+        "Decimation",
+        2
+       ],
+       [
+        "Demonic Brand",
+        3
+       ],
+       [
+        "Soul Link",
+        1
+       ],
+       [
+        "Demonic Knowledge",
+        3
+       ],
+       [
+        "Master Demonologist",
+        5
+       ],
+       [
+        "Demonic Pact",
+        1
+       ]
+      ],
+      "Destruction": [
+       [
+        "Improved Shadow Bolt",
+        5
+       ],
+       [
+        "Bane",
+        5
+       ],
+       [
+        "Ruin",
+        5
+       ],
+       [
+        "Agonizing Flames",
+        3
+       ]
+      ]
+     },
+     "split": "2/31/18",
+     "dps": 800.87,
+     "se": 0.1384
+    }
+   ],
    "runs": [
     {
      "entry": "demonology-raid",
      "run": 1,
-     "simulated": 1200,
-     "best_screen": 799.75,
+     "simulated": 1203,
+     "best_screen": 800.17,
      "best_split": "2/31/18",
      "trace": [
       {
        "round": 0,
-       "simulated": 400,
-       "best": 799.38
+       "simulated": 403,
+       "best": 800.17
       },
       {
        "round": 1,
-       "simulated": 600,
-       "best": 799.75,
-       "predicted_top": 795.13
+       "simulated": 603,
+       "best": 800.17,
+       "predicted_top": 798.03
       },
       {
        "round": 2,
-       "simulated": 800,
-       "best": 799.75,
-       "predicted_top": 799.47
-      },
-      {
-       "round": 3,
-       "simulated": 1000,
-       "best": 799.75,
+       "simulated": 803,
+       "best": 800.17,
        "predicted_top": 799.71
       },
       {
+       "round": 3,
+       "simulated": 1003,
+       "best": 800.17,
+       "predicted_top": 800.1
+      },
+      {
        "round": 4,
-       "simulated": 1200,
-       "best": 799.75,
-       "predicted_top": 799.75
+       "simulated": 1203,
+       "best": 800.17,
+       "predicted_top": 800.15
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1415,55 +2251,37 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      797.96,
-      797.96,
-      797.96,
-      797.96,
-      797.96,
-      797.96
+      801.24,
+      801.24,
+      801.24,
+      801.24,
+      801.24,
+      801.24
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      798.4,
-      798.4,
-      798.4,
-      798.4,
-      798.4
+      801.01,
+      801.01,
+      801.01,
+      801.01,
+      801.01
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      798.64,
-      798.64
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      800.64,
-      798.64
+      800.87,
+      800.87
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 263,
-     "best_gap": 0.0055,
-     "best_move": "1 Improved Corruption -> Suppression",
-     "raced": [
-      "1 Improved Corruption -> Suppression",
-      "1 Improved Corruption -> Cataclysm"
-     ],
-     "confirmed_gap": 0.003
-    },
-    {
-     "neighbours": 266,
+     "neighbours": 255,
      "best_gap": 0.0,
      "best_move": "1 Demonic Brand -> Improved Felhunter"
     }
@@ -1471,108 +2289,122 @@
    "other_entries": [],
    "important_features": [
     {
-     "feature": "Ruin",
-     "importance": 0.2614
+     "feature": "Agonizing Flames",
+     "importance": 0.2966
     },
     {
-     "feature": "Agonizing Flames",
-     "importance": 0.2532
+     "feature": "Ruin",
+     "importance": 0.267
     },
     {
      "feature": "Demonic Pact",
-     "importance": 0.1956
+     "importance": 0.1537
     },
     {
      "feature": "Destruction points",
-     "importance": 0.1004
+     "importance": 0.1082
     },
     {
      "feature": "Master Demonologist",
-     "importance": 0.0412
+     "importance": 0.0432
     },
     {
      "feature": "Bane",
-     "importance": 0.0325
-    },
-    {
-     "feature": "Soul Link",
-     "importance": 0.0206
+     "importance": 0.0279
     },
     {
      "feature": "Affliction points",
-     "importance": 0.0201
-    },
-    {
-     "feature": "Improved Health Funnel",
-     "importance": 0.0125
-    },
-    {
-     "feature": "Improved Imp",
-     "importance": 0.0121
-    },
-    {
-     "feature": "Demonic Aegis",
-     "importance": 0.0114
+     "importance": 0.0216
     },
     {
      "feature": "Demonology points",
-     "importance": 0.0093
+     "importance": 0.0134
+    },
+    {
+     "feature": "Demonic Aegis",
+     "importance": 0.0126
+    },
+    {
+     "feature": "Soul Link",
+     "importance": 0.0095
+    },
+    {
+     "feature": "Improved Voidwalker",
+     "importance": 0.0067
+    },
+    {
+     "feature": "Demonic Knowledge",
+     "importance": 0.0058
     }
    ],
-   "simulated_builds": 1749,
-   "simulated_fights": 3493000,
-   "minutes": 3.3,
+   "simulated_builds": 1472,
+   "simulated_fights": 2381000,
+   "minutes": 2.6,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-demonology-prebis.gear.json"
   }
  },
+ "commit": "2ce8265",
  "spells_done": {
-  "date": "2026-10-01",
+  "date": "2026-10-14",
   "lines_kept": 0
  },
  "compare": {
+  "setting": "dummy",
   "dps": {
    "winner": {
     "entry": "demonology-raid",
-    "dps": 688.45,
-    "se": 0.128
+    "dps": 713.44,
+    "se": 0.132
    },
    "demonology-pact-raid": {
     "entry": "demonology-raid",
-    "dps": 687.78,
-    "se": 0.128
+    "dps": 712.31,
+    "se": 0.133
+   },
+   "demonology-ml-raid": {
+    "entry": "demonology-raid",
+    "dps": 713.34,
+    "se": 0.132
    }
   },
   "best_hand": "demonology-pact-raid",
-  "gain_vs_hand": 0.001
+  "gain_vs_hand": 0.0016
  },
- "parse": {
-  "bis-dummy": {
-   "entry": "demonology-raid",
-   "dps": 832.39,
-   "se": 0.162
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "demonology-raid",
+    "dps": 838.72,
+    "se": 0.157
+   },
+   "demonology-pact-raid": {
+    "entry": "demonology-raid",
+    "dps": 832.47,
+    "se": 0.158
+   },
+   "demonology-ml-raid": {
+    "entry": "demonology-raid",
+    "dps": 838.65,
+    "se": 0.157
+   }
   },
-  "bis-raid": {
-   "entry": "demonology-raid",
-   "dps": 836.48,
-   "se": 0.161
-  },
-  "gain": 0.0049,
-  "vs_parse": null
+  "best_hand": "demonology-pact-raid",
+  "gain_vs_hand": 0.0075
  },
  "builds": {
-  "written": [
-   "demonology-ml-raid"
-  ],
+  "written": [],
   "superseded": [],
-  "date": "2026-10-03",
-  "setting": "raid"
+  "date": "2026-10-15",
+  "setting": "raid",
+  "why": "confirms demonology-ml-raid (+0.01% in a full raid)"
  },
  "tidied": {
   "bis-dummy": {
    "allocation": {
     "Affliction": [
      [
-      "Improved Life Tap",
+      "Suppression",
       1
      ],
      [
@@ -1581,10 +2413,6 @@
      ]
     ],
     "Demonology": [
-     [
-      "Demonic Embrace",
-      2
-     ],
      [
       "Unholy Power",
       5
@@ -1628,6 +2456,10 @@
      [
       "Demonic Pact",
       1
+     ],
+     [
+      "Demonic Embrace",
+      2
      ]
     ],
     "Destruction": [
@@ -1654,8 +2486,125 @@
     {
      "round": 1,
      "kind": "utility",
-     "from": "Improved Imp",
+     "from": "Demonic Energies",
      "to": "Demonic Embrace",
+     "seed1": 0.00011646160302491992,
+     "seed2": 1.7999121387113348e-05,
+     "utility": "survival"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Demonic Energies",
+     "to": "Demonic Embrace",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    }
+   ],
+   "abilities_never_cast": [
+    "Demonic Sacrifice",
+    "Soul Link"
+   ],
+   "final_seed3": -0.00024910739021111183
+  },
+  "bis-raid": {
+   "allocation": {
+    "Affliction": [
+     [
+      "Suppression",
+      1
+     ],
+     [
+      "Improved Corruption",
+      1
+     ]
+    ],
+    "Demonology": [
+     [
+      "Unholy Power",
+      5
+     ],
+     [
+      "Fel Vitality",
+      3
+     ],
+     [
+      "Improved Sayaad",
+      3
+     ],
+     [
+      "Demonic Sacrifice",
+      1
+     ],
+     [
+      "Master Summoner",
+      2
+     ],
+     [
+      "Decimation",
+      2
+     ],
+     [
+      "Demonic Brand",
+      3
+     ],
+     [
+      "Soul Link",
+      1
+     ],
+     [
+      "Demonic Knowledge",
+      3
+     ],
+     [
+      "Master Demonologist",
+      5
+     ],
+     [
+      "Demonic Pact",
+      1
+     ],
+     [
+      "Demonic Aegis",
+      2
+     ]
+    ],
+    "Destruction": [
+     [
+      "Improved Shadow Bolt",
+      5
+     ],
+     [
+      "Bane",
+      5
+     ],
+     [
+      "Ruin",
+      5
+     ],
+     [
+      "Agonizing Flames",
+      3
+     ]
+    ]
+   },
+   "split": "2/31/18",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Demonic Energies",
+     "to": "Demonic Aegis",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Demonic Energies",
+     "to": "Demonic Aegis",
      "seed1": 0.0,
      "seed2": 0.0,
      "utility": "survival"
@@ -1671,7 +2620,7 @@
    "allocation": {
     "Affliction": [
      [
-      "Improved Life Tap",
+      "Suppression",
       1
      ],
      [
@@ -1680,10 +2629,6 @@
      ]
     ],
     "Demonology": [
-     [
-      "Demonic Embrace",
-      2
-     ],
      [
       "Unholy Power",
       5
@@ -1727,6 +2672,10 @@
      [
       "Demonic Pact",
       1
+     ],
+     [
+      "Demonic Embrace",
+      2
      ]
     ],
     "Destruction": [
@@ -1753,7 +2702,16 @@
     {
      "round": 1,
      "kind": "utility",
-     "from": "Improved Imp",
+     "from": "Demonic Energies",
+     "to": "Demonic Embrace",
+     "seed1": 0.00011646160302491992,
+     "seed2": 1.7999121387113348e-05,
+     "utility": "survival"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Demonic Energies",
      "to": "Demonic Embrace",
      "seed1": 0.0,
      "seed2": 0.0,
@@ -1764,7 +2722,7 @@
     "Demonic Sacrifice",
     "Soul Link"
    ],
-   "final_seed3": 0.0
+   "final_seed3": -0.00024910739021111183
   },
   "prebis-raid": {
    "allocation": {
@@ -1780,10 +2738,6 @@
     ],
     "Demonology": [
      [
-      "Demonic Embrace",
-      2
-     ],
-     [
       "Unholy Power",
       5
      ],
@@ -1826,6 +2780,10 @@
      [
       "Demonic Pact",
       1
+     ],
+     [
+      "Demonic Aegis",
+      2
      ]
     ],
     "Destruction": [
@@ -1852,8 +2810,17 @@
     {
      "round": 1,
      "kind": "utility",
-     "from": "Improved Imp",
-     "to": "Demonic Embrace",
+     "from": "Demonic Energies",
+     "to": "Demonic Aegis",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Demonic Energies",
+     "to": "Demonic Aegis",
      "seed1": 0.0,
      "seed2": 0.0,
      "utility": "survival"
@@ -1864,116 +2831,6 @@
     "Soul Link"
    ],
    "final_seed3": 0.0
-  },
-  "bis-raid": null
- },
- "compare_raid": {
-  "setting": "raid",
-  "dps": {
-   "winner": {
-    "entry": "demonology-raid",
-    "dps": 836.27,
-    "se": 0.16
-   },
-   "demonology-pact-raid": {
-    "entry": "demonology-raid",
-    "dps": 831.96,
-    "se": 0.162
-   }
-  },
-  "best_hand": "demonology-pact-raid",
-  "gain_vs_hand": 0.0052
- },
- "aligned_raid": {
-  "target": "demonology-pact-raid",
-  "moves": [
-   {
-    "from": "Improved Imp",
-    "to": "Demonic Embrace",
-    "ratio": 1.0
-   }
-  ],
-  "allocation": {
-   "Affliction": [
-    [
-     "Suppression",
-     1
-    ],
-    [
-     "Improved Corruption",
-     1
-    ]
-   ],
-   "Demonology": [
-    [
-     "Demonic Embrace",
-     2
-    ],
-    [
-     "Unholy Power",
-     5
-    ],
-    [
-     "Fel Vitality",
-     3
-    ],
-    [
-     "Improved Sayaad",
-     3
-    ],
-    [
-     "Demonic Sacrifice",
-     1
-    ],
-    [
-     "Master Summoner",
-     2
-    ],
-    [
-     "Decimation",
-     2
-    ],
-    [
-     "Demonic Brand",
-     3
-    ],
-    [
-     "Soul Link",
-     1
-    ],
-    [
-     "Demonic Knowledge",
-     3
-    ],
-    [
-     "Master Demonologist",
-     5
-    ],
-    [
-     "Demonic Pact",
-     1
-    ]
-   ],
-   "Destruction": [
-    [
-     "Improved Shadow Bolt",
-     5
-    ],
-    [
-     "Bane",
-     5
-    ],
-    [
-     "Ruin",
-     5
-    ],
-    [
-     "Agonizing Flames",
-     3
-    ]
-   ]
-  },
-  "split": "2/31/18",
-  "ratio": 1.0
+  }
  }
 }

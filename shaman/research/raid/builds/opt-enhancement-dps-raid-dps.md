@@ -63,12 +63,12 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md)** | ours: optimizer | 11/31/9 | 391 | +0.0% | 694 | -6.1% | 14 s |
-| 2 | [`enhancement-ml-raid`](enhancement-ml-raid.md) | ours: hand draft | 19/32/0 | 390 | -0.4% | 739 | +0.0% | 30 s |
-| 3 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 386 | -1.3% | 684 | -7.5% | 14 s |
-| 4 | *Level 60* | community simulator | - | 386 | -1.4% | 696 | -5.8% | 32 s |
-| 5 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: hand draft | 22/29/0 | 366 | -6.4% | 690 | -6.7% | 35 s |
-| 6 | *Enhancement 16/35/0* | community simulator | - | 351 | -10.3% | 675 | -8.7% | 84 s |
+| 1 | **[`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md)** | ours: optimizer | 11/31/9 | 385 | +0.0% | 681 | -6.3% | 14 s |
+| 2 | [`enhancement-ml-raid`](enhancement-ml-raid.md) | ours: hand draft | 19/32/0 | 383 | -0.4% | 727 | +0.0% | 30 s |
+| 3 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 380 | -1.3% | 671 | -7.7% | 14 s |
+| 4 | *Level 60* | community simulator | - | 379 | -1.6% | 684 | -5.8% | 32 s |
+| 5 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: hand draft | 17/26/8 | 365 | -5.1% | 690 | -5.0% | 12 s |
+| 6 | *Enhancement 16/35/0* | community simulator | - | 345 | -10.4% | 663 | -8.8% | 84 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -112,7 +112,7 @@ Damage by ability:
 | Flame Shock | 11% |
 | Stormstrike | 11% |
 | Lightning Bolt | 10% |
-| Attack | 6% |
+| Attack | 7% |
 | Dragonbreath Chili | 3% |
 
 ## Notes

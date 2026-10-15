@@ -133,19 +133,6 @@
   },
   {
    "action": {
-    "condition": {
-     "cmp": {
-      "op": "OpLt",
-      "lhs": {
-       "currentHealthPercent": {}
-      },
-      "rhs": {
-       "const": {
-        "val": "10%"
-       }
-      }
-     }
-    },
     "castSpell": {
      "spellId": {
       "spellId": 10310,
@@ -153,7 +140,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see prot-tank-rotation-search.json)"
+   "notes": "apl_opt 2026-10-14: changed or added by the rotation search (see prot-tank-rotation-search.json)"
   },
   {
    "action": {

@@ -1,0 +1,1074 @@
+{
+ "class": "shaman",
+ "spec": "Elemental",
+ "slug": "elemental",
+ "entries": [
+  "elemental-dps"
+ ],
+ "best": "elemental-raid",
+ "best_entry": "elemental-dps",
+ "best_dps": 439.83,
+ "any_split": false,
+ "date": "2026-10-01",
+ "gear": {
+  "bis": {
+   "entry": "elemental-dps",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-bis.gear.json",
+   "date": "2026-10-02",
+   "chosen": "all-slots",
+   "ilvl": 64.5,
+   "trinkets": [
+    "Talisman of Ephemeral Power",
+    "Briarwood Reed"
+   ],
+   "names": [
+    "Spellweaver's Turban",
+    "Choker of the Fire Lord",
+    "Rugged Mantle of the Timbermaw",
+    "Crystalline Threaded Cape",
+    "Robe of Volatile Power",
+    "Rockfury Bracers",
+    "Gloves of the Greatfather",
+    "Mana Igniting Cord",
+    "Legplates of Ten Storms",
+    "Waterspout Boots",
+    "Leafre's Ring of Precise Spell Power",
+    "Ring of Spell Power",
+    "Talisman of Ephemeral Power",
+    "Briarwood Reed",
+    "Staff of Dominance",
+    null,
+    null
+   ],
+   "race_seed1": {
+    "current": 1.0,
+    "all-slots": 1.004124915609895,
+    "keep-sets-and-effects": 1.0032707013064954
+   },
+   "confirm_seed2": {
+    "current": 1.0,
+    "all-slots": 1.0035059689813268
+   },
+   "weights": {
+    "StatFireDamage": 0.1413,
+    "StatIntellect": 0.1504,
+    "StatNatureDamage": 0.2926,
+    "StatSpellCritRating": 0.2613,
+    "StatSpellDamage": 0.4338,
+    "StatSpellHasteRating": 0.3531,
+    "StatSpellHitRating": 0.476,
+    "StatSpirit": 0.0404
+   },
+   "evaluated_on": [
+    "elemental-dps: deep winner"
+   ]
+  },
+  "bis2": true,
+  "prebis": {
+   "entry": "elemental-dps",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-prebis.gear.json",
+   "date": "2026-10-02",
+   "chosen": "keep-sets-and-effects",
+   "ilvl": 62.9,
+   "trinkets": [
+    "Briarwood Reed",
+    "Weakness Analyzer"
+   ],
+   "names": [
+    "Spellweaver's Turban",
+    "Nacreous Shell Necklace",
+    "Rugged Mantle of the Timbermaw",
+    "Crystalline Threaded Cape",
+    "Zandalar Augur's Hauberk",
+    "Rockfury Bracers",
+    "Gloves of Earthen Power",
+    "Knowledge of the Timbermaw",
+    "Ironfeather Leggings",
+    "Sorcerer's Boots",
+    "Leafre's Ring of Precise Spell Power",
+    "Rune Band of Wizardry",
+    "Briarwood Reed",
+    "Weakness Analyzer",
+    "Lord Valthalak's Staff of Command",
+    null,
+    null
+   ],
+   "race_seed1": {
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 1.0
+   },
+   "confirm_seed2": {
+    "keep-sets-and-effects": 1.0,
+    "all-slots": 1.0
+   },
+   "weights": {
+    "StatFireDamage": 0.1413,
+    "StatIntellect": 0.2417,
+    "StatNatureDamage": 0.3007,
+    "StatSpellCritRating": 0.2603,
+    "StatSpellDamage": 0.442,
+    "StatSpellHasteRating": 0.3547,
+    "StatSpellHitRating": 0.5251,
+    "StatSpirit": 0.0389
+   },
+   "evaluated_on": [
+    "elemental-dps: deep winner (bis)"
+   ]
+  }
+ },
+ "search": {
+  "bis-dummy-1": {
+   "class": "shaman",
+   "spec": "Elemental",
+   "setting": "dummy",
+   "entry": "elemental-dps",
+   "date": "2026-10-01",
+   "constraint": "Elemental 30+",
+   "protected": [
+    "Elemental Focus"
+   ],
+   "entries_screened": {},
+   "entries_searched": [
+    "elemental-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Elemental": [
+      [
+       "Convection",
+       5
+      ],
+      [
+       "Concussion",
+       5
+      ],
+      [
+       "Call of Flame",
+       3
+      ],
+      [
+       "Elemental Focus",
+       1
+      ],
+      [
+       "Elemental Alacrity",
+       3
+      ],
+      [
+       "Eye of the Storm",
+       2
+      ],
+      [
+       "Call of Thunder",
+       1
+      ],
+      [
+       "Elemental Reach",
+       1
+      ],
+      [
+       "Lightning Overload",
+       3
+      ],
+      [
+       "Earthbound",
+       1
+      ],
+      [
+       "Elemental Fury",
+       5
+      ],
+      [
+       "Lava Burst",
+       1
+      ]
+     ],
+     "Enhancement": [
+      [
+       "Thundering Strikes",
+       5
+      ],
+      [
+       "Ancestral Knowledge",
+       2
+      ]
+     ],
+     "Restoration": [
+      [
+       "Improved Healing Wave",
+       3
+      ],
+      [
+       "Totemic Focus",
+       2
+      ],
+      [
+       "Mindfulness",
+       3
+      ],
+      [
+       "Tidal Focus",
+       5
+      ]
+     ]
+    },
+    "split": "31/7/13",
+    "dps": 441.14,
+    "se": 0.067,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "31/7/13",
+    "dps": 441.14,
+    "se": 0.067,
+    "differs": [
+     [
+      "Earthbound",
+      1
+     ],
+     [
+      "Elemental Devastation",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "elemental-dps",
+     "run": 1,
+     "simulated": 1193,
+     "best_screen": 441.13,
+     "best_split": "31/7/13",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 393,
+       "best": 440.95
+      },
+      {
+       "round": 1,
+       "simulated": 593,
+       "best": 440.95,
+       "predicted_top": 439.1
+      },
+      {
+       "round": 2,
+       "simulated": 793,
+       "best": 440.95,
+       "predicted_top": 439.8
+      },
+      {
+       "round": 3,
+       "simulated": 993,
+       "best": 441.13,
+       "predicted_top": 440.39
+      },
+      {
+       "round": 4,
+       "simulated": 1193,
+       "best": 441.13,
+       "predicted_top": 440.77
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "elemental-dps",
+     "run": 2,
+     "simulated": 1191,
+     "best_screen": 441.13,
+     "best_split": "31/7/13",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 391,
+       "best": 440.95
+      },
+      {
+       "round": 1,
+       "simulated": 591,
+       "best": 440.95,
+       "predicted_top": 439.23
+      },
+      {
+       "round": 2,
+       "simulated": 791,
+       "best": 441.13,
+       "predicted_top": 440.72
+      },
+      {
+       "round": 3,
+       "simulated": 991,
+       "best": 441.13,
+       "predicted_top": 440.88
+      },
+      {
+       "round": 4,
+       "simulated": 1191,
+       "best": 441.13,
+       "predicted_top": 441.12
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 2,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      440.91,
+      440.91,
+      440.91,
+      440.91,
+      440.91,
+      440.91,
+      440.91,
+      440.91,
+      440.91,
+      440.91,
+      440.91,
+      440.91
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      441.01,
+      441.01,
+      441.01,
+      441.01,
+      441.01
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      441.14,
+      441.14
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 263,
+     "best_gap": 0.0012,
+     "best_move": "1 Improved Healing Wave -> Totemic Focus",
+     "raced": [
+      "1 Improved Healing Wave -> Totemic Focus",
+      "2 Improved Healing Wave -> Totemic Focus"
+     ],
+     "confirmed_gap": 0.0006
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Elemental Fury",
+     "importance": 0.3676
+    },
+    {
+     "feature": "Tidal Focus",
+     "importance": 0.22
+    },
+    {
+     "feature": "Lava Burst",
+     "importance": 0.1131
+    },
+    {
+     "feature": "Call of Thunder",
+     "importance": 0.0931
+    },
+    {
+     "feature": "Reverberation",
+     "importance": 0.0376
+    },
+    {
+     "feature": "Elemental Alacrity",
+     "importance": 0.0348
+    },
+    {
+     "feature": "Elemental Devastation",
+     "importance": 0.0274
+    },
+    {
+     "feature": "Elemental Warding",
+     "importance": 0.0192
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0142
+    },
+    {
+     "feature": "Elemental points",
+     "importance": 0.0129
+    },
+    {
+     "feature": "Thundering Strikes",
+     "importance": 0.012
+    },
+    {
+     "feature": "Lightning Overload",
+     "importance": 0.0113
+    }
+   ],
+   "simulated_builds": 2670,
+   "simulated_fights": 3736000,
+   "minutes": 2.1,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-bis.gear.json"
+  },
+  "bis-dummy": {
+   "entry": "elemental-dps",
+   "setting": "dummy",
+   "date": "2026-10-03",
+   "deep": true,
+   "winner": {
+    "allocation": {
+     "Elemental": [
+      [
+       "Convection",
+       5
+      ],
+      [
+       "Concussion",
+       5
+      ],
+      [
+       "Call of Flame",
+       3
+      ],
+      [
+       "Elemental Focus",
+       1
+      ],
+      [
+       "Elemental Alacrity",
+       3
+      ],
+      [
+       "Eye of the Storm",
+       3
+      ],
+      [
+       "Call of Thunder",
+       1
+      ],
+      [
+       "Elemental Reach",
+       1
+      ],
+      [
+       "Lightning Overload",
+       3
+      ],
+      [
+       "Elemental Fury",
+       5
+      ],
+      [
+       "Lava Burst",
+       1
+      ]
+     ],
+     "Enhancement": [
+      [
+       "Thundering Strikes",
+       5
+      ],
+      [
+       "Ancestral Knowledge",
+       2
+      ]
+     ],
+     "Restoration": [
+      [
+       "Improved Healing Wave",
+       2
+      ],
+      [
+       "Totemic Focus",
+       3
+      ],
+      [
+       "Mindfulness",
+       3
+      ],
+      [
+       "Tidal Focus",
+       5
+      ]
+     ]
+    },
+    "split": "31/7/13",
+    "dps": 441.22,
+    "se": 0.048,
+    "iterations": 200000
+   },
+   "runner_up": {
+    "split": "31/7/13",
+    "dps": 441.26,
+    "se": 0.067,
+    "differs": [
+     [
+      "Elemental Warding",
+      1
+     ],
+     [
+      "Eye of the Storm",
+      2
+     ],
+     [
+      "Eye of the Storm",
+      3
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "run": 1
+    },
+    {
+     "run": 2
+    },
+    {
+     "run": 3
+    },
+    {
+     "run": 4
+    },
+    {
+     "run": 5
+    },
+    {
+     "run": 6
+    }
+   ],
+   "runs_agree": 3,
+   "certificate": [
+    {
+     "neighbours": 271,
+     "best_gap": 0.0,
+     "best_move": "1 Elemental Reach -> Earthbound"
+    }
+   ],
+   "simulated_builds": 11684,
+   "protected": []
+  },
+  "bis-raid": {
+   "entry": "elemental-dps",
+   "setting": "raid",
+   "date": "2026-10-03",
+   "deep": true,
+   "winner": {
+    "allocation": {
+     "Elemental": [
+      [
+       "Convection",
+       5
+      ],
+      [
+       "Concussion",
+       5
+      ],
+      [
+       "Call of Flame",
+       3
+      ],
+      [
+       "Elemental Focus",
+       1
+      ],
+      [
+       "Elemental Alacrity",
+       3
+      ],
+      [
+       "Eye of the Storm",
+       2
+      ],
+      [
+       "Call of Thunder",
+       1
+      ],
+      [
+       "Elemental Reach",
+       1
+      ],
+      [
+       "Lightning Overload",
+       3
+      ],
+      [
+       "Earthbound",
+       1
+      ],
+      [
+       "Elemental Fury",
+       5
+      ],
+      [
+       "Lava Burst",
+       1
+      ]
+     ],
+     "Enhancement": [
+      [
+       "Thundering Strikes",
+       5
+      ],
+      [
+       "Ancestral Knowledge",
+       2
+      ]
+     ],
+     "Restoration": [
+      [
+       "Improved Healing Wave",
+       3
+      ],
+      [
+       "Totemic Focus",
+       2
+      ],
+      [
+       "Mindfulness",
+       3
+      ],
+      [
+       "Tidal Focus",
+       5
+      ]
+     ]
+    },
+    "split": "31/7/13",
+    "dps": 555.51,
+    "se": 0.062,
+    "iterations": 200000
+   },
+   "runner_up": {
+    "split": "31/7/13",
+    "dps": 555.49,
+    "se": 0.088,
+    "differs": [
+     [
+      "Elemental Devastation",
+      1
+     ],
+     [
+      "Elemental Reach",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "run": 1
+    },
+    {
+     "run": 2
+    },
+    {
+     "run": 3
+    },
+    {
+     "run": 4
+    },
+    {
+     "run": 5
+    },
+    {
+     "run": 6
+    },
+    {
+     "run": 7
+    },
+    {
+     "run": 8
+    },
+    {
+     "run": 9
+    }
+   ],
+   "runs_agree": 3,
+   "certificate": [
+    {
+     "neighbours": 268,
+     "best_gap": 0.0002,
+     "best_move": "1 Mindfulness -> Ancestral Knowledge"
+    }
+   ],
+   "simulated_builds": 19945,
+   "protected": []
+  },
+  "prebis-dummy": {
+   "entry": "elemental-dps",
+   "setting": "dummy",
+   "date": "2026-10-03",
+   "deep": true,
+   "winner": {
+    "allocation": {
+     "Elemental": [
+      [
+       "Convection",
+       5
+      ],
+      [
+       "Concussion",
+       5
+      ],
+      [
+       "Call of Flame",
+       3
+      ],
+      [
+       "Elemental Devastation",
+       1
+      ],
+      [
+       "Elemental Focus",
+       1
+      ],
+      [
+       "Elemental Alacrity",
+       3
+      ],
+      [
+       "Eye of the Storm",
+       1
+      ],
+      [
+       "Call of Thunder",
+       1
+      ],
+      [
+       "Elemental Reach",
+       1
+      ],
+      [
+       "Lightning Overload",
+       3
+      ],
+      [
+       "Earthbound",
+       1
+      ],
+      [
+       "Elemental Fury",
+       5
+      ],
+      [
+       "Lava Burst",
+       1
+      ]
+     ],
+     "Enhancement": [
+      [
+       "Thundering Strikes",
+       5
+      ],
+      [
+       "Ancestral Knowledge",
+       2
+      ]
+     ],
+     "Restoration": [
+      [
+       "Improved Healing Wave",
+       3
+      ],
+      [
+       "Totemic Focus",
+       2
+      ],
+      [
+       "Mindfulness",
+       3
+      ],
+      [
+       "Tidal Focus",
+       5
+      ]
+     ]
+    },
+    "split": "31/7/13",
+    "dps": 427.09,
+    "se": 0.04,
+    "iterations": 200000
+   },
+   "runner_up": {
+    "split": "32/6/13",
+    "dps": 426.23,
+    "se": 0.057,
+    "differs": [
+     [
+      "Ancestral Knowledge",
+      1
+     ],
+     [
+      "Ancestral Knowledge",
+      2
+     ],
+     [
+      "Eye of the Storm",
+      1
+     ],
+     [
+      "Eye of the Storm",
+      2
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.002,
+   "runs": [
+    {
+     "run": 1
+    },
+    {
+     "run": 2
+    },
+    {
+     "run": 3
+    },
+    {
+     "run": 4
+    },
+    {
+     "run": 5
+    },
+    {
+     "run": 6
+    }
+   ],
+   "runs_agree": 3,
+   "certificate": [
+    {
+     "neighbours": 369,
+     "best_gap": 0.0032,
+     "best_move": "1 Elemental Devastation -> Ancestral Knowledge",
+     "raced": [
+      "1 Elemental Devastation -> Ancestral Knowledge",
+      "1 Earthbound -> Ancestral Knowledge",
+      "1 Elemental Reach -> Ancestral Knowledge",
+      "1 Eye of the Storm -> Ancestral Knowledge"
+     ],
+     "confirmed_gap": 0.0022
+    },
+    {
+     "neighbours": 269,
+     "best_gap": 0.0009,
+     "best_move": "2 Improved Healing Wave -> Totemic Focus"
+    }
+   ],
+   "simulated_builds": 11642,
+   "protected": []
+  },
+  "prebis-raid": {
+   "entry": "enhancement-dps",
+   "setting": "raid",
+   "date": "2026-10-03",
+   "deep": true,
+   "winner": {
+    "allocation": {
+     "Elemental": [
+      [
+       "Convection",
+       5
+      ],
+      [
+       "Concussion",
+       5
+      ],
+      [
+       "Reverberation",
+       1
+      ],
+      [
+       "Call of Flame",
+       3
+      ],
+      [
+       "Elemental Devastation",
+       3
+      ],
+      [
+       "Elemental Focus",
+       1
+      ],
+      [
+       "Elemental Alacrity",
+       3
+      ],
+      [
+       "Call of Thunder",
+       1
+      ],
+      [
+       "Lightning Overload",
+       3
+      ],
+      [
+       "Elemental Fury",
+       5
+      ]
+     ],
+     "Enhancement": [
+      [
+       "Thundering Strikes",
+       5
+      ],
+      [
+       "Mental Dexterity",
+       3
+      ]
+     ],
+     "Restoration": [
+      [
+       "Totemic Focus",
+       5
+      ],
+      [
+       "Mindfulness",
+       3
+      ],
+      [
+       "Tidal Focus",
+       5
+      ]
+     ]
+    },
+    "split": "30/8/13",
+    "dps": 543.42,
+    "se": 0.058,
+    "iterations": 200000
+   },
+   "runner_up": {
+    "split": "30/8/13",
+    "dps": 543.33,
+    "se": 0.082,
+    "differs": [
+     [
+      "Improved Healing Wave",
+      1
+     ],
+     [
+      "Totemic Focus",
+      4
+     ],
+     [
+      "Totemic Focus",
+      5
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0002,
+   "runs": [
+    {
+     "run": 1
+    },
+    {
+     "run": 2
+    },
+    {
+     "run": 3
+    },
+    {
+     "run": 4
+    },
+    {
+     "run": 5
+    },
+    {
+     "run": 6
+    },
+    {
+     "run": 7
+    },
+    {
+     "run": 8
+    },
+    {
+     "run": 9
+    }
+   ],
+   "runs_agree": 3,
+   "certificate": [
+    {
+     "neighbours": 233,
+     "best_gap": -0.0008,
+     "best_move": "1 Elemental Devastation -> Reverberation"
+    }
+   ],
+   "simulated_builds": 18276,
+   "protected": []
+  }
+ },
+ "spells_done": {
+  "date": "2026-10-01",
+  "lines_kept": 0
+ },
+ "deep": {
+  "date": "2026-10-03",
+  "cycles": 3,
+  "converged": 3
+ },
+ "compare": {
+  "setting": "dummy",
+  "dps": {
+   "winner": {
+    "entry": "elemental-dps",
+    "dps": 441.19,
+    "se": 0.067
+   },
+   "elemental-raid": {
+    "entry": "elemental-dps",
+    "dps": 441.38,
+    "se": 0.067
+   }
+  },
+  "best_hand": null,
+  "gain_vs_hand": null
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "elemental-dps",
+    "dps": 555.59,
+    "se": 0.088
+   },
+   "elemental-raid": {
+    "entry": "elemental-dps",
+    "dps": 555.63,
+    "se": 0.088
+   },
+   "opt-elemental-dps-raid-dps": {
+    "entry": "elemental-dps",
+    "dps": 555.63,
+    "se": 0.088
+   }
+  },
+  "best_hand": null,
+  "gain_vs_hand": null
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-10-03",
+  "setting": "raid",
+  "why": "confirms elemental-raid (-0.01% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": null,
+  "prebis-dummy": null,
+  "prebis-raid": null
+ }
+}

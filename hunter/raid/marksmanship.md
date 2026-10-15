@@ -6,7 +6,7 @@
 
 **Other setups of this spec.** This build is the Lone Wolf setup. The spec's best build for each other setup, in a full raid:
 
-- With a pet: [Marksmanship — With a pet](../research/raid/builds/marksmanship-with-a-pet-open-raid.md) (7/39/5), 881 DPS in a full raid — [open the talent tree](https://talentsforever.com/hunter/60/502-0053252501523051-5-6)
+- With a pet: [Marksmanship — With a pet](../research/raid/builds/marksmanship-with-a-pet-open-raid.md) (7/39/5), 879 DPS in a full raid — [open the talent tree](https://talentsforever.com/hunter/60/502-0053252501523051-5-6)
 
 ## How to play
 
@@ -59,27 +59,45 @@ Marksmanship plays without a pet: **Lone Wolf** adds 20% to everything you do wh
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 897 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 893 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 854 | [5/46/0](https://talentsforever.com/hunter/60/5-3053552511523051--6) |
-| Phase 1 BiS | 911 | [5/46/0](https://talentsforever.com/hunter/60/5-3053552511523051--6) |
+| Pre-BiS | 819 | [5/41/5](https://talentsforever.com/hunter/60/5-0053352511523051-5-6) |
+| Phase 1 BiS | 887 | [5/41/5](https://talentsforever.com/hunter/60/5-0053352511523051-5-6) (ties this build) |
 
-*From the search run of 2026-10-01; a new run is queued and will replace these numbers.*
+**The gear** (average item level: Pre-BiS 62.9; Phase 1 BiS 66.8; each item opens its Wowhead page, with where it drops and its enchant):
 
-- **Pre-BiS gear** (average item level 62.9): Head: Black Dragonscale Helm; Neck: Pendant of Celerity; Shoulders: Theramore Pauldrons; Back: Earthweave Cloak; Chest: Dawn Armor; Wrist: Forest Stalker's Bracers; Hands: Beaststalker's Gloves; Waist: Knowledge of the Timbermaw; Legs: Outrider's Chain Leggings; Feet: Windreaver Greaves; Finger: Signet Ring of the Bronze Dragonflight; Finger: Tarnished Elven Ring; Trinket: Blackhand's Breadth; Trinket: Royal Seal of Eldre'Thalas; Main hand: Barbarous Blade; Ranged/relic: Premier High Warlord's Recurve
-- **Phase 1 BiS gear** (average item level 66.3): Head: Black Dragonscale Helm; Neck: Onyxia Tooth Pendant; Shoulders: Giantstalker's Epaulets; Back: Earthweave Cloak; Chest: Dawn Armor; Wrist: Giantstalker's Bracers; Hands: Giantstalker's Gloves; Waist: Giantstalker's Belt; Legs: Dragonstalker's Legguards; Feet: Giantstalker's Boots; Finger: Band of Accuria; Finger: Signet Ring of the Bronze Dragonflight; Trinket: Blackhand's Breadth; Trinket: Royal Seal of Eldre'Thalas; Main hand: Barbarous Blade; Ranged/relic: Rhok'delar, Longbow of the Ancient Keepers
+| Slot | Pre-BiS | Phase 1 BiS |
+|---|---|---|
+| Head | [Black Dragonscale Helm](https://www.wowhead.com/forever/item=252605) · *Leatherworking*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) | [Black Dragonscale Helm](https://www.wowhead.com/forever/item=252605) · *Leatherworking*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) |
+| Neck | [Pendant of Celerity](https://www.wowhead.com/forever/item=22340) · *Lord Valthalak, Blackrock Spire* | [Onyxia Tooth Pendant](https://www.wowhead.com/forever/item=18404) |
+| Shoulders | [Theramore Pauldrons](https://www.wowhead.com/forever/item=271955) | [Giantstalker's Epaulets](https://www.wowhead.com/forever/item=16848) · *Sulfuron Harbinger, Molten Core* |
+| Back | [Earthweave Cloak](https://www.wowhead.com/forever/item=21187)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) | [Arcanoweave Cloak](https://www.wowhead.com/forever/item=272411)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) |
+| Chest | [Dawn Armor](https://www.wowhead.com/forever/item=252483) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Giantstalker's Breastplate](https://www.wowhead.com/forever/item=16845) · *Golemagg the Incinerator, Molten Core*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
+| Wrist | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Minor Agility](https://www.wowhead.com/forever/spell=7778) | [Giantstalker's Bracers](https://www.wowhead.com/forever/item=16850) · *Molten Core*<br>+ [Enchant Bracer - Minor Agility](https://www.wowhead.com/forever/spell=7778) |
+| Hands | [Gauntlets of Elements](https://www.wowhead.com/forever/item=16672) · *Pyroguard Emberseer, Blackrock Spire*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/spell=13823) | [Giantstalker's Gloves](https://www.wowhead.com/forever/item=16852) · *Shazzrah, Molten Core*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/spell=13823) |
+| Waist | [Knowledge of the Timbermaw](https://www.wowhead.com/forever/item=228190) | [Giantstalker's Belt](https://www.wowhead.com/forever/item=16851) · *Molten Core* |
+| Legs | [Outrider's Chain Leggings](https://www.wowhead.com/forever/item=22673)<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) | [Dragonstalker's Legguards](https://www.wowhead.com/forever/item=16938) · *Ragnaros, Molten Core*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) |
+| Feet | [Sorcerer's Boots](https://www.wowhead.com/forever/item=22064)<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) | [Giantstalker's Boots](https://www.wowhead.com/forever/item=16849) · *Gehennas, Molten Core*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) |
+| Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21202) | [Band of Accuria](https://www.wowhead.com/forever/item=17063) · *Ragnaros, Molten Core* |
+| Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=234020) | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21202) |
+| Trinket | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) |
+| Trinket | [Royal Seal of Eldre'Thalas](https://www.wowhead.com/forever/item=18473) · *quest: The Greatest Race of Hunters* | [Royal Seal of Eldre'Thalas](https://www.wowhead.com/forever/item=18473) · *quest: The Greatest Race of Hunters* |
+| Main hand | [Barbarous Blade](https://www.wowhead.com/forever/item=18520) · *King Gordok, Dire Maul*<br>+ [Enchant 2H Weapon - Superior Impact](https://www.wowhead.com/forever/spell=20030) | [Barbarous Blade](https://www.wowhead.com/forever/item=18520) · *King Gordok, Dire Maul*<br>+ [Enchant 2H Weapon - Superior Impact](https://www.wowhead.com/forever/spell=20030) |
+| Ranged/relic | [Premier High Warlord's Recurve](https://www.wowhead.com/forever/item=272594)<br>+ [Biznicks 247x128 Accurascope](https://www.wowhead.com/forever/item=18283) | [Rhok'delar, Longbow of the Ancient Keepers](https://www.wowhead.com/forever/item=18713)<br>+ [Biznicks 247x128 Accurascope](https://www.wowhead.com/forever/item=18283) |
+
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVV1o82QU7knS5vT42fV7132NQSH2QmogNcmM2s+Ldt+VKMoEQe9cXLs1Y2tKU3CCF1MmjKEy75wIG2zVbUyZoCCCCHWDDirrNvwBh4JO2IUXu1K8k6Q/Y+KlGz5XJ8973vc85zlJXrqBEAcJFEiDDizZf+J0eAzyMAoVmAOQv4oixnn5VRLxy88GpNO7SMDdj4EEPG7FScSv6yAdRvzg0wHp1xiJ2KiD9CeQiKuvg/RzjAT86Y+7ScR3PgF/u4g7213+qO6fs74eIx7fmiEBN5f8fT8sgXQWoxCJeHQYl34cTGVw3ok3HelNR/nwfUifrsAicPPOu7Bmr8K2vQEnIzuwUocmQBvedu7QRW9fcAlL03VreNgyLcOwzGHdMjSryQltDn/hdkVKEMoRErC9BymkCAmaoXs01GU31iAVJZHCmpmxPLYCbNKuTL/oVmqKqZuPaIau6dnbynjJLk8WC4pbVexCoVhQXnpFqZWKStWt2TXHLSte0a6Ol5S0VywqMzPatFsuvuxOT2hV2ylovSytk5WZ8tzyg/LDpLI0Dao3MczCDY7DsK+IOMOjm+oARhj3ZEgWKUy8qXv+En7/1zPM+xeB5tUI7DvEBJm7HWIL/zRHz2rmo1dT+z5KqAz5njGBDXrGkMPE429JVr0+JWJQ8zjBGnB91j9PT7On6JaaQJ7hlD+Ggz3ovx6SegsjLLoF3fn07LEoqQ5hhOEWdDT3F+TuESza7efAZR9c4zgfJ4M9FPRzSXeYeAKDhtTBS6o7dKC5MTcq8WdcE8458zU+FCCdX4TgS8ZIHFObfNQnQ3MT+XveW/axn7t/IsB3OfOckwQlpza50P8KtXwvulI88NF/Xif7TavVujG2kx/pEvkxWABYBsc9f2P/uW9z2YANtXMjfmar9Xvu2U5wklN5/Dx5596Lv3fnLnoCRuEFKEEFZmGW/T0ASct7/A==); Phase 1 BiS: [full raid](https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVU1IPHUY3ndmdufdN9H15+pOQ8G0h9gGZpsZm2rtsKunKAqDoG45uas7ojvLzkIGHYxVEOlDOmUFBmJ+UOAliCACSVhhxVX7goSgDDx08BbdYmY/xPgf/8r/Of3m+T3ze5/3eeeDehBiIIECKdCBJbpXnA7PQg7GoQwLAPL3UcQYL79DIn73dZ908RAJePEhkIDNGpCInzZj0kmERDyqgfRnL4l4WgPpH3/rxxpIv/eSgGeBcncR/NtFPOnwW0v+OaebQDy+P0cC7qz6wl9XQbrspRCJuPYRSL8NJNO46MTqjvSeo2x9BqmLdVgBbtH5GDbsz+FLexvOR/dgfRPqAE34wBmj696+5eKWpuvW8LBlWoZhmcO6ZWhWnROaHP7B/SBSnFCO+P0cQBIpQoJm6B4NttntDUhGSaSwZqYtj60Dm7bLs2+45api6ubTmqFremZEmSzapelCXnErip3PF/LKm28r1WJBqbhVu+q4JcUr2JXJopLyCgVlbk6bdUuFt9zZKa1iO3mto9JaqvSM55aekJ8ilaVoQO3HMAvvcxyGfUfEGR71q30YYdwLIVmkMPGm7vlb+Mu/LzPvHgbN2zHYTYgJMjcSYsv/D0fPaOYzt1P7UYqrDPlOMEEMetqQw8TjXwlWuTsnYlDzLM724e6if41eYi/SkBpHnuGMP4bjA+g+HpI6hBEW3YX2fDrxWJRQBzHCcBdanrsbcvsIFm33c+yyL+5wnM+RwZ4M+rnhO0w8gUGD6sAN1y068Ly/MC7xl1wdrjjzXT4UIJVbgeBNxkgMkzt81CdDC1O5hz9Z83GYfWwqwM9Z84qTBCWr1rnQA4VqrrO6VTz+1X2vkzlqNBo9E3u50TaRm4BlgDVw3Kulw1d/ymYCNtTMjvrKRuPv7CutxXlW5fGbxNgj11/v1r/oeRiH16EIZZiHefbfALkGekw=).
 
 ## Other builds of this spec
 
-- [Marksmanship — With a pet](../research/raid/builds/marksmanship-with-a-pet-open-raid.md) (7/39/5, 881 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/502-0053252501523051-5-6)
-- [Marksmanship (optimized, lone wolf)](../research/raid/builds/opt-mm-lonewolf-raid-raid-dps.md) (5/38/8, 858 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5-005355051150305-50003-6)
-- [Marksmanship — Raid](../research/raid/builds/marksmanship-ml-raid.md) (11/40/0, 815 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5501-305355041150305--6)
-- [Marksmanship with Beast Mastery support](../research/raid/builds/bm-mm-full-buffs-raid.md) (21/30/0, 803 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/53200005050001-005155000150305--6)
+- [Marksmanship — With a pet](../research/raid/builds/marksmanship-with-a-pet-open-raid.md) (7/39/5, 879 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/502-0053252501523051-5-6)
+- [Marksmanship (optimized, lone wolf)](../research/raid/builds/opt-mm-lonewolf-raid-raid-dps.md) (5/38/8, 855 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5-005355051150305-50003-6)
+- [Marksmanship — Raid](../research/raid/builds/marksmanship-ml-raid.md) (11/40/0, 813 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5501-305355041150305--6)
+- [Marksmanship with Beast Mastery support](../research/raid/builds/bm-mm-full-buffs-raid.md) (21/30/0, 801 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/53200005050001-005155000150305--6)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-14 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-15 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
 

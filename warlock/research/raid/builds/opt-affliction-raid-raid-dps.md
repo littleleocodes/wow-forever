@@ -60,15 +60,15 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `afflicti
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-affliction-raid-raid-dps`](opt-affliction-raid-raid-dps.md)** | ours: optimizer | 30/0/21 | 655 | +0.0% | 760 | +0.0% | 1 s |
-| 2 | [`affliction-dot-raid`](affliction-dot-raid.md) | ours: hand draft | 30/0/21 | 651 | -0.6% | 756 | -0.6% | 3 s |
-| 3 | *Demonic Pact 2/31/18* | community simulator | - | 612 | -6.6% | 715 | -5.9% | 0 s |
-| 4 | *Demonic Pact* | community simulator | - | 606 | -7.5% | 704 | -7.3% | 0 s |
-| 5 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 589 | -10.1% | 690 | -9.2% | 1 s |
-| 6 | *Deep Affliction 35/0/16* | community simulator | - | 583 | -11.0% | 673 | -11.4% | 2 s |
-| 7 | *DS/Ruin* | community simulator | - | 580 | -11.4% | 676 | -11.0% | 0 s |
-| 8 | *Affliction* | community simulator | - | 575 | -12.3% | 666 | -12.4% | 2 s |
-| 9 | *Shadow and Flame 13/11/27* | community simulator | - | 567 | -13.4% | 658 | -13.5% | 1 s |
+| 1 | **[`opt-affliction-raid-raid-dps`](opt-affliction-raid-raid-dps.md)** | ours: optimizer | 30/0/21 | 651 | +0.0% | 752 | +0.0% | 3 s |
+| 2 | [`affliction-dot-raid`](affliction-dot-raid.md) | ours: hand draft | 30/0/21 | 645 | -0.8% | 748 | -0.5% | 4 s |
+| 3 | *Demonic Pact 2/31/18* | community simulator | - | 605 | -6.9% | 707 | -6.0% | 1 s |
+| 4 | *Demonic Pact* | community simulator | - | 600 | -7.8% | 698 | -7.3% | 0 s |
+| 5 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 584 | -10.2% | 683 | -9.2% | 2 s |
+| 6 | *Deep Affliction 35/0/16* | community simulator | - | 578 | -11.1% | 668 | -11.2% | 3 s |
+| 7 | *DS/Ruin* | community simulator | - | 575 | -11.7% | 669 | -11.0% | 1 s |
+| 8 | *Affliction* | community simulator | - | 571 | -12.2% | 660 | -12.2% | 3 s |
+| 9 | *Shadow and Flame 13/11/27* | community simulator | - | 559 | -14.1% | 652 | -13.3% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -92,13 +92,13 @@ Before the pull: at -5s: cast Amplify Curse.
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 55%: cast Potion | as ready |
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 4 | use every other cooldown when ready | as ready |
-| 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
-| 6 | if mana % < 10%: cast Life Tap | 6.0 |
+| 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.5 |
+| 6 | if mana % < 10%: cast Life Tap | 6.2 |
 | 7 | cast Amplify Curse | 0.5 |
 | 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 |
 | 9 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption | 3.3 |
-| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.3 |
-| 11 | cast Shadow Bolt | 14.7 |
+| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
+| 11 | cast Shadow Bolt | 14.6 |
 
 Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Siphon Life (needs the Siphon Life talent).
 

@@ -7,16 +7,16 @@
  ],
  "best": "smite-discipline-raid",
  "best_entry": "smite-dps",
- "best_dps": 439.99,
+ "best_dps": 349.72,
  "any_split": true,
- "date": "2026-10-01",
+ "date": "2026-10-14",
  "gear": {
   "bis": {
    "entry": "smite-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-hybrid-discipline-holy-bis.gear.json",
-   "date": "2026-10-02",
+   "date": "2026-10-14",
    "chosen": "all-slots",
-   "ilvl": 65.4,
+   "ilvl": 64.1,
    "trinkets": [
     "Briarwood Reed",
     "Weakness Analyzer"
@@ -28,36 +28,36 @@
     "Crystalline Threaded Cape",
     "Robe of Volatile Power",
     "Rockfury Bracers",
-    "Hands of Power",
+    "Sandworm Skin Gloves",
     "Mana Igniting Cord",
     "Flarecore Leggings",
-    "Virtuous Slippers",
-    "Leafre's Ring of Precise Spell Power",
+    "Earthen Silk Slippers",
     "Ring of Spell Power",
+    "Signet Ring of the Bronze Dragonflight",
     "Briarwood Reed",
     "Weakness Analyzer",
     "Aurastone Hammer",
     "Therazane's Touch",
-    "Bonecreeper Stylus"
+    "Ritssyn's Wand of Bad Mojo"
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.1037232451253922,
-    "keep-sets-and-effects": 1.1037232451253922
+    "all-slots": 1.0963841742521026,
+    "keep-sets-and-effects": 0.9961485074300134
    },
    "confirm_seed2": {
     "current": 1.0,
-    "all-slots": 1.1034026554655152
+    "all-slots": 1.0971808252615691
    },
    "weights": {
-    "StatHolyDamage": 0.3945,
-    "StatIntellect": 0.0799,
-    "StatShadowDamage": 0.0716,
-    "StatSpellCritRating": 0.1585,
-    "StatSpellDamage": 0.4661,
-    "StatSpellHasteRating": 0.1794,
-    "StatSpellHitRating": 0.0819,
-    "StatSpirit": 0.0189
+    "StatHolyDamage": 0.2066,
+    "StatIntellect": -0.0652,
+    "StatShadowDamage": 0.0763,
+    "StatSpellCritRating": 0.0955,
+    "StatSpellDamage": 0.2829,
+    "StatSpellHasteRating": 0.1663,
+    "StatSpellHitRating": 0.0297,
+    "StatSpirit": -0.1
    },
    "evaluated_on": [
     "smite-dps: ml winner"
@@ -67,9 +67,9 @@
   "prebis": {
    "entry": "smite-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-hybrid-discipline-holy-prebis.gear.json",
-   "date": "2026-10-02",
-   "chosen": "keep-sets-and-effects",
-   "ilvl": 63.0,
+   "date": "2026-10-14",
+   "chosen": "all-slots",
+   "ilvl": 63.1,
    "trinkets": [
     "Briarwood Reed",
     "Weakness Analyzer"
@@ -79,37 +79,37 @@
     "Orb of the Darkmoon",
     "Rugged Mantle of the Timbermaw",
     "Crystalline Threaded Cape",
-    "Virtuous Gown",
+    "Wizardweave Robe",
     "Rockfury Bracers",
-    "Hands of Power",
+    "Sandworm Skin Gloves",
     "Knowledge of the Timbermaw",
     "Skyshroud Leggings",
-    "Virtuous Slippers",
-    "Leafre's Ring of Precise Spell Power",
+    "Omnicast Boots",
+    "Signet Ring of the Bronze Dragonflight",
     "Signet Ring of the Bronze Dragonflight",
     "Briarwood Reed",
     "Weakness Analyzer",
     "Dark Whisper Blade",
     "Therazane's Touch",
-    "Bonecreeper Stylus"
+    "Ritssyn's Wand of Bad Mojo"
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 1.0
+    "keep-sets-and-effects": 0.9010128609230478
    },
    "confirm_seed2": {
     "keep-sets-and-effects": 1.0,
-    "all-slots": 1.0
+    "all-slots": 1.1086446497122535
    },
    "weights": {
-    "StatHolyDamage": 0.3889,
-    "StatIntellect": 0.0665,
-    "StatShadowDamage": 0.0708,
-    "StatSpellCritRating": 0.1569,
-    "StatSpellDamage": 0.4597,
-    "StatSpellHasteRating": 0.165,
-    "StatSpellHitRating": 0.065,
-    "StatSpirit": 0.0331
+    "StatHolyDamage": 0.2157,
+    "StatIntellect": -0.0948,
+    "StatShadowDamage": 0.0767,
+    "StatSpellCritRating": 0.0997,
+    "StatSpellDamage": 0.2924,
+    "StatSpellHasteRating": 0.2651,
+    "StatSpellHitRating": 0.0117,
+    "StatSpirit": -0.4369
    },
    "evaluated_on": [
     "smite-dps: ml winner (bis)"
@@ -122,7 +122,7 @@
    "spec": "Hybrid Discipline/Holy",
    "setting": "dummy",
    "entry": "smite-dps",
-   "date": "2026-10-01",
+   "date": "2026-10-14",
    "constraint": "spec field (entry rotation)",
    "protected": [
     "Inner Focus"
@@ -143,16 +143,16 @@
        5
       ],
       [
+       "Silent Resolve",
+       2
+      ],
+      [
        "Holy Precision",
        3
       ],
       [
-       "Improved Power Word: Shield",
-       1
-      ],
-      [
        "Martyrdom",
-       1
+       2
       ],
       [
        "Mental Agility",
@@ -169,10 +169,6 @@
       [
        "Mental Strength",
        5
-      ],
-      [
-       "Improved Mana Burn",
-       2
       ],
       [
        "Penance",
@@ -205,73 +201,246 @@
        1
       ],
       [
-       "Improved Healing",
-       3
-      ],
-      [
        "Searing Light",
        2
       ]
      ],
-     "Shadow": []
+     "Shadow": [
+      [
+       "Shadow Focus",
+       3
+      ]
+     ]
     },
-    "split": "31/20/0",
-    "dps": 487.87,
-    "se": 0.044,
+    "split": "31/17/3",
+    "dps": 385.6,
+    "se": 0.0446,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "31/20/0",
-    "dps": 487.87,
-    "se": 0.044,
+    "split": "31/17/3",
+    "dps": 385.6,
+    "se": 0.0446,
     "differs": [
      [
-      "Divine Aegis",
-      1
+      "Improved Mana Burn",
+      2
      ],
      [
       "Martyrdom",
-      1
+      2
      ]
     ]
    },
    "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Discipline": [
+       [
+        "Power in Light",
+        5
+       ],
+       [
+        "Twin Disciplines",
+        5
+       ],
+       [
+        "Silent Resolve",
+        2
+       ],
+       [
+        "Holy Precision",
+        3
+       ],
+       [
+        "Martyrdom",
+        2
+       ],
+       [
+        "Mental Agility",
+        3
+       ],
+       [
+        "Inner Focus",
+        1
+       ],
+       [
+        "Meditation",
+        3
+       ],
+       [
+        "Mental Strength",
+        5
+       ],
+       [
+        "Penance",
+        1
+       ],
+       [
+        "Power Infusion",
+        1
+       ]
+      ],
+      "Holy": [
+       [
+        "Twilight Focus",
+        3
+       ],
+       [
+        "Holy Specialization",
+        5
+       ],
+       [
+        "Divine Fury",
+        5
+       ],
+       [
+        "Holy Nova",
+        1
+       ],
+       [
+        "Inspiration",
+        1
+       ],
+       [
+        "Searing Light",
+        2
+       ]
+      ],
+      "Shadow": [
+       [
+        "Shadow Focus",
+        3
+       ]
+      ]
+     },
+     "split": "31/17/3",
+     "dps": 385.6,
+     "se": 0.0446
+    },
+    {
+     "allocation": {
+      "Discipline": [
+       [
+        "Power in Light",
+        5
+       ],
+       [
+        "Twin Disciplines",
+        5
+       ],
+       [
+        "Silent Resolve",
+        2
+       ],
+       [
+        "Holy Precision",
+        3
+       ],
+       [
+        "Mental Agility",
+        3
+       ],
+       [
+        "Inner Focus",
+        1
+       ],
+       [
+        "Meditation",
+        3
+       ],
+       [
+        "Mental Strength",
+        5
+       ],
+       [
+        "Improved Mana Burn",
+        2
+       ],
+       [
+        "Penance",
+        1
+       ],
+       [
+        "Power Infusion",
+        1
+       ]
+      ],
+      "Holy": [
+       [
+        "Twilight Focus",
+        3
+       ],
+       [
+        "Holy Specialization",
+        5
+       ],
+       [
+        "Divine Fury",
+        5
+       ],
+       [
+        "Holy Nova",
+        1
+       ],
+       [
+        "Inspiration",
+        1
+       ],
+       [
+        "Searing Light",
+        2
+       ]
+      ],
+      "Shadow": [
+       [
+        "Shadow Focus",
+        3
+       ]
+      ]
+     },
+     "split": "31/17/3",
+     "dps": 385.6,
+     "se": 0.0446
+    }
+   ],
    "runs": [
     {
      "entry": "smite-dps",
      "run": 1,
-     "simulated": 1212,
-     "best_screen": 487.65,
-     "best_split": "31/20/0",
+     "simulated": 1217,
+     "best_screen": 385.06,
+     "best_split": "31/17/3",
      "trace": [
       {
        "round": 0,
-       "simulated": 412,
-       "best": 487.64
+       "simulated": 417,
+       "best": 385.06
       },
       {
        "round": 1,
-       "simulated": 612,
-       "best": 487.64,
-       "predicted_top": 485.78
+       "simulated": 617,
+       "best": 385.06,
+       "predicted_top": 383.13
       },
       {
        "round": 2,
-       "simulated": 812,
-       "best": 487.65,
-       "predicted_top": 487.63
+       "simulated": 817,
+       "best": 385.06,
+       "predicted_top": 384.87
       },
       {
        "round": 3,
-       "simulated": 1012,
-       "best": 487.65,
-       "predicted_top": 487.64
+       "simulated": 1017,
+       "best": 385.06,
+       "predicted_top": 385.06
       },
       {
        "round": 4,
-       "simulated": 1212,
-       "best": 487.65,
-       "predicted_top": 487.64
+       "simulated": 1217,
+       "best": 385.06,
+       "predicted_top": 385.06
       }
      ],
      "best_stage1_gap": 0.0,
@@ -280,38 +449,38 @@
     {
      "entry": "smite-dps",
      "run": 2,
-     "simulated": 1213,
-     "best_screen": 487.65,
-     "best_split": "31/20/0",
+     "simulated": 1208,
+     "best_screen": 385.06,
+     "best_split": "31/17/3",
      "trace": [
       {
        "round": 0,
-       "simulated": 413,
-       "best": 487.64
+       "simulated": 408,
+       "best": 385.06
       },
       {
        "round": 1,
-       "simulated": 613,
-       "best": 487.64,
-       "predicted_top": 485.81
+       "simulated": 608,
+       "best": 385.06,
+       "predicted_top": 382.89
       },
       {
        "round": 2,
-       "simulated": 813,
-       "best": 487.65,
-       "predicted_top": 487.48
+       "simulated": 808,
+       "best": 385.06,
+       "predicted_top": 384.74
       },
       {
        "round": 3,
-       "simulated": 1013,
-       "best": 487.65,
-       "predicted_top": 487.63
+       "simulated": 1008,
+       "best": 385.06,
+       "predicted_top": 385.03
       },
       {
        "round": 4,
-       "simulated": 1213,
-       "best": 487.65,
-       "predicted_top": 487.63
+       "simulated": 1208,
+       "best": 385.06,
+       "predicted_top": 385.06
       }
      ],
      "best_stage1_gap": 0.0,
@@ -324,101 +493,100 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      487.81,
-      487.81,
-      487.81,
-      487.81,
-      487.81,
-      487.81,
-      487.81,
-      487.81,
-      487.81,
-      487.81,
-      487.66,
-      487.66
+      385.55,
+      385.55,
+      385.55,
+      385.55,
+      385.55,
+      385.55,
+      385.55,
+      385.55,
+      385.55,
+      385.55,
+      385.55
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      487.86,
-      487.86,
-      487.86,
-      487.86,
-      487.86
+      385.65,
+      385.65,
+      385.65,
+      385.65,
+      385.65
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      487.87,
-      487.87
+      385.6,
+      385.6
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 278,
+     "neighbours": 448,
      "best_gap": 0.0,
-     "best_move": "2 Improved Mana Burn + 1 Martyrdom -> 2 Improved Power Word: Shield + 1 Soul Warding"
+     "best_move": "2 Martyrdom + 2 Silent Resolve -> 3 Improved Power Word: Shield + 1 Soul Warding"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
-     "feature": "Divine Fury",
-     "importance": 0.2875
-    },
-    {
-     "feature": "Searing Light",
-     "importance": 0.2767
+     "feature": "Penance",
+     "importance": 0.4632
     },
     {
      "feature": "Power Infusion",
-     "importance": 0.1121
+     "importance": 0.1617
     },
     {
-     "feature": "Penance",
-     "importance": 0.0918
-    },
-    {
-     "feature": "Holy Precision",
-     "importance": 0.0642
+     "feature": "Searing Light",
+     "importance": 0.1293
     },
     {
      "feature": "Discipline points",
-     "importance": 0.0458
+     "importance": 0.062
     },
     {
-     "feature": "Shadow points",
-     "importance": 0.0243
+     "feature": "Divine Fury",
+     "importance": 0.0353
     },
     {
-     "feature": "Holy points",
-     "importance": 0.0207
+     "feature": "Holy Precision",
+     "importance": 0.026
     },
     {
-     "feature": "Improved Mind Blast",
-     "importance": 0.0111
+     "feature": "Mental Agility",
+     "importance": 0.0179
     },
     {
      "feature": "Improved Renew",
-     "importance": 0.0084
+     "importance": 0.0157
     },
     {
      "feature": "Mental Strength",
-     "importance": 0.0082
+     "importance": 0.0155
     },
     {
      "feature": "Meditation",
-     "importance": 0.0068
+     "importance": 0.0108
+    },
+    {
+     "feature": "Holy points",
+     "importance": 0.0106
+    },
+    {
+     "feature": "Spell Warding",
+     "importance": 0.0063
     }
    ],
-   "simulated_builds": 2723,
-   "simulated_fights": 3732000,
-   "minutes": 1.7,
+   "simulated_builds": 2852,
+   "simulated_fights": 4192000,
+   "minutes": 2.2,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-hybrid-discipline-holy-bis.gear.json"
   },
   "bis-dummy": {
@@ -426,7 +594,7 @@
    "spec": "Hybrid Discipline/Holy",
    "setting": "dummy",
    "entry": "smite-dps",
-   "date": "2026-10-02",
+   "date": "2026-10-14",
    "constraint": "spec field (entry rotation)",
    "protected": [
     "Inner Focus"
@@ -447,16 +615,16 @@
        5
       ],
       [
+       "Silent Resolve",
+       2
+      ],
+      [
        "Holy Precision",
        3
       ],
       [
-       "Improved Power Word: Shield",
-       1
-      ],
-      [
        "Martyrdom",
-       1
+       2
       ],
       [
        "Mental Agility",
@@ -473,10 +641,6 @@
       [
        "Mental Strength",
        5
-      ],
-      [
-       "Improved Mana Burn",
-       2
       ],
       [
        "Penance",
@@ -509,34 +673,901 @@
        1
       ],
       [
-       "Improved Healing",
+       "Searing Light",
+       2
+      ]
+     ],
+     "Shadow": [
+      [
+       "Shadow Focus",
        3
+      ]
+     ]
+    },
+    "split": "31/17/3",
+    "dps": 385.6,
+    "se": 0.0446,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "31/17/3",
+    "dps": 385.6,
+    "se": 0.0446,
+    "differs": [
+     [
+      "Holy Nova",
+      1
+     ],
+     [
+      "Spell Warding",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Discipline": [
+       [
+        "Power in Light",
+        5
+       ],
+       [
+        "Twin Disciplines",
+        5
+       ],
+       [
+        "Silent Resolve",
+        2
+       ],
+       [
+        "Holy Precision",
+        3
+       ],
+       [
+        "Martyrdom",
+        2
+       ],
+       [
+        "Mental Agility",
+        3
+       ],
+       [
+        "Inner Focus",
+        1
+       ],
+       [
+        "Meditation",
+        3
+       ],
+       [
+        "Mental Strength",
+        5
+       ],
+       [
+        "Penance",
+        1
+       ],
+       [
+        "Power Infusion",
+        1
+       ]
+      ],
+      "Holy": [
+       [
+        "Twilight Focus",
+        3
+       ],
+       [
+        "Holy Specialization",
+        5
+       ],
+       [
+        "Divine Fury",
+        5
+       ],
+       [
+        "Holy Nova",
+        1
+       ],
+       [
+        "Inspiration",
+        1
+       ],
+       [
+        "Searing Light",
+        2
+       ]
+      ],
+      "Shadow": [
+       [
+        "Shadow Focus",
+        3
+       ]
+      ]
+     },
+     "split": "31/17/3",
+     "dps": 385.6,
+     "se": 0.0446
+    },
+    {
+     "allocation": {
+      "Discipline": [
+       [
+        "Power in Light",
+        5
+       ],
+       [
+        "Twin Disciplines",
+        5
+       ],
+       [
+        "Silent Resolve",
+        2
+       ],
+       [
+        "Holy Precision",
+        3
+       ],
+       [
+        "Martyrdom",
+        2
+       ],
+       [
+        "Mental Agility",
+        3
+       ],
+       [
+        "Inner Focus",
+        1
+       ],
+       [
+        "Meditation",
+        3
+       ],
+       [
+        "Mental Strength",
+        5
+       ],
+       [
+        "Penance",
+        1
+       ],
+       [
+        "Power Infusion",
+        1
+       ]
+      ],
+      "Holy": [
+       [
+        "Twilight Focus",
+        3
+       ],
+       [
+        "Holy Specialization",
+        5
+       ],
+       [
+        "Spell Warding",
+        1
+       ],
+       [
+        "Divine Fury",
+        5
+       ],
+       [
+        "Inspiration",
+        1
+       ],
+       [
+        "Searing Light",
+        2
+       ]
+      ],
+      "Shadow": [
+       [
+        "Shadow Focus",
+        3
+       ]
+      ]
+     },
+     "split": "31/17/3",
+     "dps": 385.6,
+     "se": 0.0446
+    }
+   ],
+   "runs": [
+    {
+     "entry": "smite-dps",
+     "run": 1,
+     "simulated": 1202,
+     "best_screen": 385.06,
+     "best_split": "31/17/3",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 402,
+       "best": 385.06
+      },
+      {
+       "round": 1,
+       "simulated": 602,
+       "best": 385.06,
+       "predicted_top": 382.5
+      },
+      {
+       "round": 2,
+       "simulated": 802,
+       "best": 385.06,
+       "predicted_top": 384.97
+      },
+      {
+       "round": 3,
+       "simulated": 1002,
+       "best": 385.06,
+       "predicted_top": 385.05
+      },
+      {
+       "round": 4,
+       "simulated": 1202,
+       "best": 385.06,
+       "predicted_top": 385.06
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      385.55,
+      385.55,
+      385.55,
+      385.55,
+      385.55,
+      385.55
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      385.65,
+      385.65,
+      385.65,
+      385.65,
+      385.65
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      385.6,
+      385.6
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 448,
+     "best_gap": 0.0,
+     "best_move": "2 Martyrdom + 2 Silent Resolve -> 3 Improved Power Word: Shield + 1 Soul Warding"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Penance",
+     "importance": 0.4299
+    },
+    {
+     "feature": "Power Infusion",
+     "importance": 0.2057
+    },
+    {
+     "feature": "Searing Light",
+     "importance": 0.14
+    },
+    {
+     "feature": "Discipline points",
+     "importance": 0.0572
+    },
+    {
+     "feature": "Divine Fury",
+     "importance": 0.0297
+    },
+    {
+     "feature": "Mental Agility",
+     "importance": 0.028
+    },
+    {
+     "feature": "Improved Renew",
+     "importance": 0.0279
+    },
+    {
+     "feature": "Holy Precision",
+     "importance": 0.0179
+    },
+    {
+     "feature": "Meditation",
+     "importance": 0.0137
+    },
+    {
+     "feature": "Improved Power Word: Shield",
+     "importance": 0.0064
+    },
+    {
+     "feature": "Holy points",
+     "importance": 0.0063
+    },
+    {
+     "feature": "Mental Strength",
+     "importance": 0.005
+    }
+   ],
+   "simulated_builds": 1664,
+   "simulated_fights": 2959000,
+   "minutes": 1.4,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-hybrid-discipline-holy-bis.gear.json"
+  },
+  "bis-raid": {
+   "class": "priest",
+   "spec": "Hybrid Discipline/Holy",
+   "setting": "raid",
+   "entry": "smite-dps",
+   "date": "2026-10-14",
+   "constraint": "spec field (entry rotation)",
+   "protected": [
+    "Inner Focus"
+   ],
+   "entries_screened": {},
+   "entries_searched": [
+    "smite-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Discipline": [
+      [
+       "Power in Light",
+       5
+      ],
+      [
+       "Twin Disciplines",
+       5
+      ],
+      [
+       "Holy Precision",
+       3
+      ],
+      [
+       "Mental Agility",
+       2
+      ],
+      [
+       "Inner Focus",
+       1
+      ],
+      [
+       "Meditation",
+       3
+      ],
+      [
+       "Mental Strength",
+       1
+      ],
+      [
+       "Penance",
+       1
+      ]
+     ],
+     "Holy": [
+      [
+       "Twilight Focus",
+       1
+      ],
+      [
+       "Holy Specialization",
+       5
+      ],
+      [
+       "Spell Warding",
+       2
+      ],
+      [
+       "Divine Fury",
+       5
+      ],
+      [
+       "Holy Nova",
+       1
+      ],
+      [
+       "Blessed Recovery",
+       3
+      ],
+      [
+       "Searing Light",
+       2
+      ],
+      [
+       "Binding Heal",
+       1
+      ],
+      [
+       "Spiritual Guidance",
+       3
+      ]
+     ],
+     "Shadow": [
+      [
+       "Shadow Focus",
+       5
+      ],
+      [
+       "Improved Shadow Word: Pain",
+       2
+      ]
+     ]
+    },
+    "split": "21/23/7",
+    "dps": 632.48,
+    "se": 0.047,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "21/23/7",
+    "dps": 632.48,
+    "se": 0.047,
+    "differs": [
+     [
+      "Blessed Recovery",
+      3
+     ],
+     [
+      "Improved Renew",
+      2
+     ],
+     [
+      "Twilight Focus",
+      1
+     ],
+     [
+      "Twilight Focus",
+      2
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Discipline": [
+       [
+        "Power in Light",
+        5
+       ],
+       [
+        "Twin Disciplines",
+        5
+       ],
+       [
+        "Holy Precision",
+        3
+       ],
+       [
+        "Mental Agility",
+        2
+       ],
+       [
+        "Inner Focus",
+        1
+       ],
+       [
+        "Meditation",
+        3
+       ],
+       [
+        "Mental Strength",
+        1
+       ],
+       [
+        "Penance",
+        1
+       ]
+      ],
+      "Holy": [
+       [
+        "Twilight Focus",
+        1
+       ],
+       [
+        "Holy Specialization",
+        5
+       ],
+       [
+        "Spell Warding",
+        2
+       ],
+       [
+        "Divine Fury",
+        5
+       ],
+       [
+        "Holy Nova",
+        1
+       ],
+       [
+        "Blessed Recovery",
+        3
+       ],
+       [
+        "Searing Light",
+        2
+       ],
+       [
+        "Binding Heal",
+        1
+       ],
+       [
+        "Spiritual Guidance",
+        3
+       ]
+      ],
+      "Shadow": [
+       [
+        "Shadow Focus",
+        5
+       ],
+       [
+        "Improved Shadow Word: Pain",
+        2
+       ]
+      ]
+     },
+     "split": "21/23/7",
+     "dps": 632.48,
+     "se": 0.047
+    },
+    {
+     "allocation": {
+      "Discipline": [
+       [
+        "Power in Light",
+        5
+       ],
+       [
+        "Twin Disciplines",
+        5
+       ],
+       [
+        "Holy Precision",
+        3
+       ],
+       [
+        "Mental Agility",
+        2
+       ],
+       [
+        "Inner Focus",
+        1
+       ],
+       [
+        "Meditation",
+        3
+       ],
+       [
+        "Mental Strength",
+        1
+       ],
+       [
+        "Penance",
+        1
+       ]
+      ],
+      "Holy": [
+       [
+        "Twilight Focus",
+        2
+       ],
+       [
+        "Improved Renew",
+        2
+       ],
+       [
+        "Holy Specialization",
+        5
+       ],
+       [
+        "Spell Warding",
+        2
+       ],
+       [
+        "Divine Fury",
+        5
+       ],
+       [
+        "Holy Nova",
+        1
+       ],
+       [
+        "Searing Light",
+        2
+       ],
+       [
+        "Binding Heal",
+        1
+       ],
+       [
+        "Spiritual Guidance",
+        3
+       ]
+      ],
+      "Shadow": [
+       [
+        "Shadow Focus",
+        5
+       ],
+       [
+        "Improved Shadow Word: Pain",
+        2
+       ]
+      ]
+     },
+     "split": "21/23/7",
+     "dps": 632.48,
+     "se": 0.047
+    }
+   ],
+   "runs": [
+    {
+     "entry": "smite-dps",
+     "run": 1,
+     "simulated": 1211,
+     "best_screen": 632.94,
+     "best_split": "21/23/7",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 411,
+       "best": 632.42
+      },
+      {
+       "round": 1,
+       "simulated": 611,
+       "best": 632.42,
+       "predicted_top": 627.59
+      },
+      {
+       "round": 2,
+       "simulated": 811,
+       "best": 632.42,
+       "predicted_top": 631.56
+      },
+      {
+       "round": 3,
+       "simulated": 1011,
+       "best": 632.94,
+       "predicted_top": 632.04
+      },
+      {
+       "round": 4,
+       "simulated": 1211,
+       "best": 632.94,
+       "predicted_top": 632.35
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      632.44,
+      632.44,
+      632.44,
+      632.44,
+      631.68,
+      631.68
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      632.45,
+      632.45,
+      632.45,
+      632.45,
+      632.13
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      632.48,
+      632.48
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 353,
+     "best_gap": 0.0,
+     "best_move": "2 Blessed Recovery -> Holy Reach"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Penance",
+     "importance": 0.2973
+    },
+    {
+     "feature": "Searing Light",
+     "importance": 0.2306
+    },
+    {
+     "feature": "Holy Precision",
+     "importance": 0.1072
+    },
+    {
+     "feature": "Divine Fury",
+     "importance": 0.1065
+    },
+    {
+     "feature": "Meditation",
+     "importance": 0.0428
+    },
+    {
+     "feature": "Improved Renew",
+     "importance": 0.0403
+    },
+    {
+     "feature": "Wand Specialization",
+     "importance": 0.034
+    },
+    {
+     "feature": "Improved Power Word: Shield",
+     "importance": 0.0254
+    },
+    {
+     "feature": "Discipline points",
+     "importance": 0.0156
+    },
+    {
+     "feature": "Shadow Focus",
+     "importance": 0.0138
+    },
+    {
+     "feature": "Improved Shadow Word: Pain",
+     "importance": 0.013
+    },
+    {
+     "feature": "Holy points",
+     "importance": 0.0101
+    }
+   ],
+   "simulated_builds": 1578,
+   "simulated_fights": 2683000,
+   "minutes": 1.6,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-hybrid-discipline-holy-bis.gear.json"
+  },
+  "prebis-dummy": {
+   "class": "priest",
+   "spec": "Hybrid Discipline/Holy",
+   "setting": "dummy",
+   "entry": "smite-dps",
+   "date": "2026-10-14",
+   "constraint": "spec field (entry rotation)",
+   "protected": [
+    "Inner Focus"
+   ],
+   "entries_screened": {},
+   "entries_searched": [
+    "smite-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Discipline": [
+      [
+       "Power in Light",
+       5
+      ],
+      [
+       "Twin Disciplines",
+       5
+      ],
+      [
+       "Silent Resolve",
+       2
+      ],
+      [
+       "Holy Precision",
+       3
+      ],
+      [
+       "Martyrdom",
+       2
+      ],
+      [
+       "Mental Agility",
+       3
+      ],
+      [
+       "Inner Focus",
+       1
+      ],
+      [
+       "Meditation",
+       3
+      ],
+      [
+       "Mental Strength",
+       5
+      ],
+      [
+       "Penance",
+       1
+      ],
+      [
+       "Power Infusion",
+       1
+      ]
+     ],
+     "Holy": [
+      [
+       "Twilight Focus",
+       3
+      ],
+      [
+       "Holy Specialization",
+       5
+      ],
+      [
+       "Divine Fury",
+       5
+      ],
+      [
+       "Holy Nova",
+       1
+      ],
+      [
+       "Inspiration",
+       1
       ],
       [
        "Searing Light",
        2
       ]
      ],
-     "Shadow": []
+     "Shadow": [
+      [
+       "Shadow Focus",
+       3
+      ]
+     ]
     },
-    "split": "31/20/0",
-    "dps": 489.25,
-    "se": 0.042,
+    "split": "31/17/3",
+    "dps": 367.87,
+    "se": 0.0389,
     "iterations": 100000
    },
    "runner_up": {
     "split": "31/17/3",
-    "dps": 489.04,
-    "se": 0.039,
+    "dps": 367.87,
+    "se": 0.0389,
     "differs": [
-     [
-      "Improved Healing",
-      3
-     ],
-     [
-      "Improved Mana Burn",
-      2
-     ],
      [
       "Improved Power Word: Shield",
       1
@@ -548,313 +1579,222 @@
      [
       "Martyrdom",
       2
-     ],
-     [
-      "Shadow Focus",
-      3
-     ],
-     [
-      "Silent Resolve",
-      2
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0004,
-   "runs": [
-    {
-     "entry": "smite-dps",
-     "run": 1,
-     "simulated": 1212,
-     "best_screen": 488.86,
-     "best_split": "31/17/3",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 412,
-       "best": 488.86
-      },
-      {
-       "round": 1,
-       "simulated": 612,
-       "best": 488.86,
-       "predicted_top": 486.94
-      },
-      {
-       "round": 2,
-       "simulated": 812,
-       "best": 488.86,
-       "predicted_top": 488.43
-      },
-      {
-       "round": 3,
-       "simulated": 1012,
-       "best": 488.86,
-       "predicted_top": 488.69
-      },
-      {
-       "round": 4,
-       "simulated": 1212,
-       "best": 488.86,
-       "predicted_top": 488.7
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      489.15,
-      488.97,
-      488.97,
-      488.97,
-      488.97,
-      488.97
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      489.18,
-      489.02,
-      489.02,
-      489.02,
-      489.02
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      489.25,
-      489.04
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 278,
-     "best_gap": 0.0,
-     "best_move": "1 Martyrdom + 2 Improved Mana Burn -> 2 Improved Power Word: Shield + 1 Soul Warding"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Searing Light",
-     "importance": 0.3597
-    },
-    {
-     "feature": "Divine Fury",
-     "importance": 0.2379
-    },
-    {
-     "feature": "Penance",
-     "importance": 0.1348
-    },
-    {
-     "feature": "Discipline points",
-     "importance": 0.0695
-    },
-    {
-     "feature": "Holy Precision",
-     "importance": 0.0566
-    },
-    {
-     "feature": "Power Infusion",
-     "importance": 0.0364
-    },
-    {
-     "feature": "Shadow points",
-     "importance": 0.0228
-    },
-    {
-     "feature": "Holy points",
-     "importance": 0.0163
-    },
-    {
-     "feature": "Meditation",
-     "importance": 0.015
-    },
-    {
-     "feature": "Improved Renew",
-     "importance": 0.0086
-    },
-    {
-     "feature": "Power in Light",
-     "importance": 0.0061
-    },
-    {
-     "feature": "Spell Warding",
-     "importance": 0.0042
-    }
-   ],
-   "simulated_builds": 1504,
-   "simulated_fights": 2459000,
-   "minutes": 1.1,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-hybrid-discipline-holy-bis.gear.json"
-  },
-  "bis-raid": {
-   "class": "priest",
-   "spec": "Hybrid Discipline/Holy",
-   "setting": "raid",
-   "entry": "smite-dps",
-   "date": "2026-10-02",
-   "constraint": "spec field (entry rotation)",
-   "protected": [
-    "Inner Focus"
-   ],
-   "entries_screened": {},
-   "entries_searched": [
-    "smite-dps"
-   ],
-   "winner": {
-    "allocation": {
-     "Discipline": [
-      [
-       "Power in Light",
-       5
-      ],
-      [
-       "Twin Disciplines",
-       5
-      ],
-      [
-       "Silent Resolve",
-       2
-      ],
-      [
-       "Holy Precision",
-       3
-      ],
-      [
-       "Martyrdom",
-       2
-      ],
-      [
-       "Mental Agility",
-       3
-      ],
-      [
-       "Inner Focus",
-       1
-      ],
-      [
-       "Meditation",
-       3
-      ],
-      [
-       "Mental Strength",
-       5
-      ],
-      [
-       "Penance",
-       1
-      ],
-      [
-       "Power Infusion",
-       1
-      ]
-     ],
-     "Holy": [
-      [
-       "Twilight Focus",
-       3
-      ],
-      [
-       "Holy Specialization",
-       5
-      ],
-      [
-       "Divine Fury",
-       5
-      ],
-      [
-       "Holy Nova",
-       1
-      ],
-      [
-       "Inspiration",
-       1
-      ],
-      [
-       "Searing Light",
-       2
-      ]
-     ],
-     "Shadow": [
-      [
-       "Shadow Focus",
-       3
-      ]
-     ]
-    },
-    "split": "31/17/3",
-    "dps": 642.78,
-    "se": 0.056,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "31/17/3",
-    "dps": 642.78,
-    "se": 0.056,
-    "differs": [
-     [
-      "Improved Inner Fire",
-      1
-     ],
-     [
-      "Silent Resolve",
-      2
-     ],
-     [
-      "Wand Specialization",
-      1
      ]
     ]
    },
    "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Discipline": [
+       [
+        "Power in Light",
+        5
+       ],
+       [
+        "Twin Disciplines",
+        5
+       ],
+       [
+        "Silent Resolve",
+        2
+       ],
+       [
+        "Holy Precision",
+        3
+       ],
+       [
+        "Martyrdom",
+        2
+       ],
+       [
+        "Mental Agility",
+        3
+       ],
+       [
+        "Inner Focus",
+        1
+       ],
+       [
+        "Meditation",
+        3
+       ],
+       [
+        "Mental Strength",
+        5
+       ],
+       [
+        "Penance",
+        1
+       ],
+       [
+        "Power Infusion",
+        1
+       ]
+      ],
+      "Holy": [
+       [
+        "Twilight Focus",
+        3
+       ],
+       [
+        "Holy Specialization",
+        5
+       ],
+       [
+        "Divine Fury",
+        5
+       ],
+       [
+        "Holy Nova",
+        1
+       ],
+       [
+        "Inspiration",
+        1
+       ],
+       [
+        "Searing Light",
+        2
+       ]
+      ],
+      "Shadow": [
+       [
+        "Shadow Focus",
+        3
+       ]
+      ]
+     },
+     "split": "31/17/3",
+     "dps": 367.87,
+     "se": 0.0389
+    },
+    {
+     "allocation": {
+      "Discipline": [
+       [
+        "Power in Light",
+        5
+       ],
+       [
+        "Twin Disciplines",
+        5
+       ],
+       [
+        "Silent Resolve",
+        2
+       ],
+       [
+        "Holy Precision",
+        3
+       ],
+       [
+        "Improved Power Word: Shield",
+        1
+       ],
+       [
+        "Martyrdom",
+        1
+       ],
+       [
+        "Mental Agility",
+        3
+       ],
+       [
+        "Inner Focus",
+        1
+       ],
+       [
+        "Meditation",
+        3
+       ],
+       [
+        "Mental Strength",
+        5
+       ],
+       [
+        "Penance",
+        1
+       ],
+       [
+        "Power Infusion",
+        1
+       ]
+      ],
+      "Holy": [
+       [
+        "Twilight Focus",
+        3
+       ],
+       [
+        "Holy Specialization",
+        5
+       ],
+       [
+        "Divine Fury",
+        5
+       ],
+       [
+        "Holy Nova",
+        1
+       ],
+       [
+        "Inspiration",
+        1
+       ],
+       [
+        "Searing Light",
+        2
+       ]
+      ],
+      "Shadow": [
+       [
+        "Shadow Focus",
+        3
+       ]
+      ]
+     },
+     "split": "31/17/3",
+     "dps": 367.87,
+     "se": 0.0389
+    }
+   ],
    "runs": [
     {
      "entry": "smite-dps",
      "run": 1,
-     "simulated": 1217,
-     "best_screen": 643.58,
+     "simulated": 1204,
+     "best_screen": 367.52,
      "best_split": "31/17/3",
      "trace": [
       {
        "round": 0,
-       "simulated": 417,
-       "best": 643.58
+       "simulated": 404,
+       "best": 367.52
       },
       {
        "round": 1,
-       "simulated": 617,
-       "best": 643.58,
-       "predicted_top": 641.63
+       "simulated": 604,
+       "best": 367.52,
+       "predicted_top": 365.25
       },
       {
        "round": 2,
-       "simulated": 817,
-       "best": 643.58,
-       "predicted_top": 643.52
+       "simulated": 804,
+       "best": 367.52,
+       "predicted_top": 367.39
       },
       {
        "round": 3,
-       "simulated": 1017,
-       "best": 643.58,
-       "predicted_top": 643.58
+       "simulated": 1004,
+       "best": 367.52,
+       "predicted_top": 367.49
       },
       {
        "round": 4,
-       "simulated": 1217,
-       "best": 643.58,
-       "predicted_top": 643.58
+       "simulated": 1204,
+       "best": 367.52,
+       "predicted_top": 367.51
       }
      ],
      "best_stage1_gap": 0.0,
@@ -867,37 +1807,37 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      642.89,
-      642.89,
-      642.89,
-      642.89,
-      642.89,
-      642.89
+      367.83,
+      367.83,
+      367.83,
+      367.83,
+      367.83,
+      367.83
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      642.7,
-      642.7,
-      642.7,
-      642.7,
-      642.7
+      367.9,
+      367.9,
+      367.9,
+      367.9,
+      367.9
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      642.78,
-      642.78
+      367.87,
+      367.87
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 273,
+     "neighbours": 448,
      "best_gap": 0.0,
      "best_move": "2 Martyrdom + 2 Silent Resolve -> 3 Improved Power Word: Shield + 1 Soul Warding"
     }
@@ -905,320 +1845,57 @@
    "other_entries": [],
    "important_features": [
     {
-     "feature": "Searing Light",
-     "importance": 0.3559
-    },
-    {
-     "feature": "Divine Fury",
-     "importance": 0.2231
-    },
-    {
      "feature": "Penance",
-     "importance": 0.1044
+     "importance": 0.4153
     },
     {
      "feature": "Power Infusion",
-     "importance": 0.0838
+     "importance": 0.2377
     },
     {
-     "feature": "Holy Precision",
-     "importance": 0.0713
+     "feature": "Searing Light",
+     "importance": 0.119
     },
     {
      "feature": "Discipline points",
-     "importance": 0.0585
+     "importance": 0.0524
     },
     {
-     "feature": "Mental Strength",
-     "importance": 0.0224
-    },
-    {
-     "feature": "Holy points",
-     "importance": 0.0176
-    },
-    {
-     "feature": "Shadow points",
-     "importance": 0.0102
-    },
-    {
-     "feature": "Power in Light",
-     "importance": 0.0084
+     "feature": "Divine Fury",
+     "importance": 0.039
     },
     {
      "feature": "Improved Renew",
-     "importance": 0.0066
+     "importance": 0.028
     },
     {
-     "feature": "Improved Power Word: Shield",
-     "importance": 0.0053
+     "feature": "Holy Precision",
+     "importance": 0.0209
+    },
+    {
+     "feature": "Holy points",
+     "importance": 0.0177
+    },
+    {
+     "feature": "Mental Agility",
+     "importance": 0.0141
+    },
+    {
+     "feature": "Mental Strength",
+     "importance": 0.0097
+    },
+    {
+     "feature": "Meditation",
+     "importance": 0.0089
+    },
+    {
+     "feature": "Power in Light",
+     "importance": 0.004
     }
    ],
-   "simulated_builds": 1504,
-   "simulated_fights": 2449000,
+   "simulated_builds": 1666,
+   "simulated_fights": 2961000,
    "minutes": 1.4,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-hybrid-discipline-holy-bis.gear.json"
-  },
-  "prebis-dummy": {
-   "class": "priest",
-   "spec": "Hybrid Discipline/Holy",
-   "setting": "dummy",
-   "entry": "smite-dps",
-   "date": "2026-10-02",
-   "constraint": "spec field (entry rotation)",
-   "protected": [
-    "Inner Focus"
-   ],
-   "entries_screened": {},
-   "entries_searched": [
-    "smite-dps"
-   ],
-   "winner": {
-    "allocation": {
-     "Discipline": [
-      [
-       "Power in Light",
-       5
-      ],
-      [
-       "Twin Disciplines",
-       5
-      ],
-      [
-       "Silent Resolve",
-       2
-      ],
-      [
-       "Holy Precision",
-       3
-      ],
-      [
-       "Martyrdom",
-       2
-      ],
-      [
-       "Mental Agility",
-       3
-      ],
-      [
-       "Inner Focus",
-       1
-      ],
-      [
-       "Meditation",
-       3
-      ],
-      [
-       "Mental Strength",
-       5
-      ],
-      [
-       "Penance",
-       1
-      ],
-      [
-       "Power Infusion",
-       1
-      ]
-     ],
-     "Holy": [
-      [
-       "Twilight Focus",
-       3
-      ],
-      [
-       "Holy Specialization",
-       5
-      ],
-      [
-       "Divine Fury",
-       5
-      ],
-      [
-       "Holy Nova",
-       1
-      ],
-      [
-       "Inspiration",
-       1
-      ],
-      [
-       "Searing Light",
-       2
-      ]
-     ],
-     "Shadow": [
-      [
-       "Shadow Focus",
-       3
-      ]
-     ]
-    },
-    "split": "31/17/3",
-    "dps": 471.12,
-    "se": 0.037,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "31/17/3",
-    "dps": 471.12,
-    "se": 0.037,
-    "differs": [
-     [
-      "Inspiration",
-      1
-     ],
-     [
-      "Inspiration",
-      3
-     ],
-     [
-      "Twilight Focus",
-      1
-     ],
-     [
-      "Twilight Focus",
-      3
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "runs": [
-    {
-     "entry": "smite-dps",
-     "run": 1,
-     "simulated": 1211,
-     "best_screen": 471.19,
-     "best_split": "31/17/3",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 411,
-       "best": 471.19
-      },
-      {
-       "round": 1,
-       "simulated": 611,
-       "best": 471.19,
-       "predicted_top": 469.66
-      },
-      {
-       "round": 2,
-       "simulated": 811,
-       "best": 471.19,
-       "predicted_top": 471.13
-      },
-      {
-       "round": 3,
-       "simulated": 1011,
-       "best": 471.19,
-       "predicted_top": 471.18
-      },
-      {
-       "round": 4,
-       "simulated": 1211,
-       "best": 471.19,
-       "predicted_top": 471.19
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      471.15,
-      471.15,
-      471.15,
-      471.15,
-      471.15,
-      471.15
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      471.15,
-      471.15,
-      471.15,
-      471.15,
-      471.15
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      471.12,
-      471.12
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 273,
-     "best_gap": 0.0,
-     "best_move": "2 Martyrdom + 2 Silent Resolve -> 3 Improved Power Word: Shield + 1 Soul Warding"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Divine Fury",
-     "importance": 0.3103
-    },
-    {
-     "feature": "Searing Light",
-     "importance": 0.2877
-    },
-    {
-     "feature": "Penance",
-     "importance": 0.1135
-    },
-    {
-     "feature": "Power Infusion",
-     "importance": 0.0609
-    },
-    {
-     "feature": "Holy Precision",
-     "importance": 0.0501
-    },
-    {
-     "feature": "Discipline points",
-     "importance": 0.0398
-    },
-    {
-     "feature": "Holy points",
-     "importance": 0.0249
-    },
-    {
-     "feature": "Mental Strength",
-     "importance": 0.0245
-    },
-    {
-     "feature": "Shadow points",
-     "importance": 0.0204
-    },
-    {
-     "feature": "Meditation",
-     "importance": 0.0105
-    },
-    {
-     "feature": "Spell Warding",
-     "importance": 0.0078
-    },
-    {
-     "feature": "Power in Light",
-     "importance": 0.0066
-    }
-   ],
-   "simulated_builds": 1498,
-   "simulated_fights": 2443000,
-   "minutes": 1.1,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-hybrid-discipline-holy-prebis.gear.json"
   },
   "prebis-raid": {
@@ -1226,7 +1903,7 @@
    "spec": "Hybrid Discipline/Holy",
    "setting": "raid",
    "entry": "smite-dps",
-   "date": "2026-10-02",
+   "date": "2026-10-14",
    "constraint": "spec field (entry rotation)",
    "protected": [
     "Inner Focus"
@@ -1247,20 +1924,12 @@
        5
       ],
       [
-       "Silent Resolve",
-       2
-      ],
-      [
        "Holy Precision",
        3
       ],
       [
-       "Martyrdom",
-       2
-      ],
-      [
        "Mental Agility",
-       3
+       2
       ],
       [
        "Inner Focus",
@@ -1272,25 +1941,25 @@
       ],
       [
        "Mental Strength",
-       5
-      ],
-      [
-       "Penance",
        1
       ],
       [
-       "Power Infusion",
+       "Penance",
        1
       ]
      ],
      "Holy": [
       [
        "Twilight Focus",
-       3
+       1
       ],
       [
        "Holy Specialization",
        5
+      ],
+      [
+       "Spell Warding",
+       2
       ],
       [
        "Divine Fury",
@@ -1301,82 +1970,306 @@
        1
       ],
       [
-       "Inspiration",
+       "Blessed Recovery",
+       2
+      ],
+      [
+       "Improved Healing",
        1
       ],
       [
        "Searing Light",
        2
+      ],
+      [
+       "Binding Heal",
+       1
+      ],
+      [
+       "Spiritual Guidance",
+       3
       ]
      ],
      "Shadow": [
       [
        "Shadow Focus",
-       3
+       5
+      ],
+      [
+       "Improved Shadow Word: Pain",
+       2
       ]
      ]
     },
-    "split": "31/17/3",
-    "dps": 621.94,
-    "se": 0.053,
+    "split": "21/23/7",
+    "dps": 602.65,
+    "se": 0.042,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "31/17/3",
-    "dps": 621.94,
-    "se": 0.053,
+    "split": "21/23/7",
+    "dps": 602.65,
+    "se": 0.042,
     "differs": [
+     [
+      "Blessed Recovery",
+      1
+     ],
+     [
+      "Blessed Recovery",
+      2
+     ],
      [
       "Inspiration",
       1
      ],
      [
       "Spell Warding",
-      4
+      1
+     ],
+     [
+      "Spell Warding",
+      2
      ],
      [
       "Twilight Focus",
-      3
+      1
+     ],
+     [
+      "Twilight Focus",
+      2
      ]
     ]
    },
    "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Discipline": [
+       [
+        "Power in Light",
+        5
+       ],
+       [
+        "Twin Disciplines",
+        5
+       ],
+       [
+        "Holy Precision",
+        3
+       ],
+       [
+        "Mental Agility",
+        2
+       ],
+       [
+        "Inner Focus",
+        1
+       ],
+       [
+        "Meditation",
+        3
+       ],
+       [
+        "Mental Strength",
+        1
+       ],
+       [
+        "Penance",
+        1
+       ]
+      ],
+      "Holy": [
+       [
+        "Twilight Focus",
+        1
+       ],
+       [
+        "Holy Specialization",
+        5
+       ],
+       [
+        "Spell Warding",
+        2
+       ],
+       [
+        "Divine Fury",
+        5
+       ],
+       [
+        "Holy Nova",
+        1
+       ],
+       [
+        "Blessed Recovery",
+        2
+       ],
+       [
+        "Improved Healing",
+        1
+       ],
+       [
+        "Searing Light",
+        2
+       ],
+       [
+        "Binding Heal",
+        1
+       ],
+       [
+        "Spiritual Guidance",
+        3
+       ]
+      ],
+      "Shadow": [
+       [
+        "Shadow Focus",
+        5
+       ],
+       [
+        "Improved Shadow Word: Pain",
+        2
+       ]
+      ]
+     },
+     "split": "21/23/7",
+     "dps": 602.65,
+     "se": 0.042
+    },
+    {
+     "allocation": {
+      "Discipline": [
+       [
+        "Power in Light",
+        5
+       ],
+       [
+        "Twin Disciplines",
+        5
+       ],
+       [
+        "Holy Precision",
+        3
+       ],
+       [
+        "Mental Agility",
+        2
+       ],
+       [
+        "Inner Focus",
+        1
+       ],
+       [
+        "Meditation",
+        3
+       ],
+       [
+        "Mental Strength",
+        1
+       ],
+       [
+        "Penance",
+        1
+       ]
+      ],
+      "Holy": [
+       [
+        "Twilight Focus",
+        2
+       ],
+       [
+        "Holy Specialization",
+        5
+       ],
+       [
+        "Spell Warding",
+        1
+       ],
+       [
+        "Divine Fury",
+        5
+       ],
+       [
+        "Holy Nova",
+        1
+       ],
+       [
+        "Blessed Recovery",
+        1
+       ],
+       [
+        "Inspiration",
+        1
+       ],
+       [
+        "Improved Healing",
+        1
+       ],
+       [
+        "Searing Light",
+        2
+       ],
+       [
+        "Binding Heal",
+        1
+       ],
+       [
+        "Spiritual Guidance",
+        3
+       ]
+      ],
+      "Shadow": [
+       [
+        "Shadow Focus",
+        5
+       ],
+       [
+        "Improved Shadow Word: Pain",
+        2
+       ]
+      ]
+     },
+     "split": "21/23/7",
+     "dps": 602.65,
+     "se": 0.042
+    }
+   ],
    "runs": [
     {
      "entry": "smite-dps",
      "run": 1,
-     "simulated": 1209,
-     "best_screen": 623.46,
-     "best_split": "31/17/3",
+     "simulated": 1210,
+     "best_screen": 602.84,
+     "best_split": "21/23/7",
      "trace": [
       {
        "round": 0,
-       "simulated": 409,
-       "best": 623.46
+       "simulated": 410,
+       "best": 602.71
       },
       {
        "round": 1,
-       "simulated": 609,
-       "best": 623.46,
-       "predicted_top": 622.77
+       "simulated": 610,
+       "best": 602.84,
+       "predicted_top": 600.19
       },
       {
        "round": 2,
-       "simulated": 809,
-       "best": 623.46,
-       "predicted_top": 623.39
+       "simulated": 810,
+       "best": 602.84,
+       "predicted_top": 602.53
       },
       {
        "round": 3,
-       "simulated": 1009,
-       "best": 623.46,
-       "predicted_top": 623.46
+       "simulated": 1010,
+       "best": 602.84,
+       "predicted_top": 602.75
       },
       {
        "round": 4,
-       "simulated": 1209,
-       "best": 623.46,
-       "predicted_top": 623.46
+       "simulated": 1210,
+       "best": 602.84,
+       "predicted_top": 602.82
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1389,141 +2282,152 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      621.85,
-      621.85,
-      621.85,
-      621.85,
-      621.85,
-      621.85
+      602.34,
+      602.34,
+      602.34,
+      602.34,
+      602.34,
+      602.34
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      621.76,
-      621.76,
-      621.76,
-      621.76,
-      621.76
+      602.73,
+      602.73,
+      602.73,
+      602.73,
+      602.73
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      621.94,
-      621.94
+      602.65,
+      602.65
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 273,
+     "neighbours": 360,
      "best_gap": 0.0,
-     "best_move": "2 Martyrdom + 2 Silent Resolve -> 3 Improved Power Word: Shield + 1 Soul Warding"
+     "best_move": "1 Binding Heal -> Holy Reach"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
+     "feature": "Penance",
+     "importance": 0.3134
+    },
+    {
      "feature": "Searing Light",
-     "importance": 0.3445
+     "importance": 0.2319
+    },
+    {
+     "feature": "Improved Renew",
+     "importance": 0.1307
     },
     {
      "feature": "Divine Fury",
-     "importance": 0.243
-    },
-    {
-     "feature": "Penance",
-     "importance": 0.1638
-    },
-    {
-     "feature": "Power Infusion",
-     "importance": 0.0749
+     "importance": 0.0875
     },
     {
      "feature": "Holy Precision",
-     "importance": 0.0633
+     "importance": 0.0595
+    },
+    {
+     "feature": "Improved Shadow Word: Pain",
+     "importance": 0.0309
     },
     {
      "feature": "Discipline points",
-     "importance": 0.0393
-    },
-    {
-     "feature": "Holy points",
-     "importance": 0.0168
-    },
-    {
-     "feature": "Shadow points",
-     "importance": 0.0125
-    },
-    {
-     "feature": "Mental Strength",
-     "importance": 0.0055
-    },
-    {
-     "feature": "Power in Light",
-     "importance": 0.0053
-    },
-    {
-     "feature": "Wand Specialization",
-     "importance": 0.0037
+     "importance": 0.0215
     },
     {
      "feature": "Meditation",
-     "importance": 0.0025
+     "importance": 0.0176
+    },
+    {
+     "feature": "Shadow Focus",
+     "importance": 0.0164
+    },
+    {
+     "feature": "Wand Specialization",
+     "importance": 0.0153
+    },
+    {
+     "feature": "Improved Power Word: Shield",
+     "importance": 0.0132
+    },
+    {
+     "feature": "Holy points",
+     "importance": 0.012
     }
    ],
-   "simulated_builds": 1496,
-   "simulated_fights": 2441000,
-   "minutes": 1.4,
+   "simulated_builds": 1584,
+   "simulated_fights": 2703000,
+   "minutes": 1.6,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-hybrid-discipline-holy-prebis.gear.json"
   }
  },
+ "commit": "2ce8265",
  "spells_done": {
-  "date": "2026-10-01",
-  "lines_kept": 2
+  "date": "2026-10-14",
+  "lines_kept": 3
  },
  "compare": {
+  "setting": "dummy",
   "dps": {
    "winner": {
     "entry": "smite-dps",
-    "dps": 489.2,
-    "se": 0.043
+    "dps": 385.64,
+    "se": 0.045
    },
    "smite-discipline-raid": {
     "entry": "smite-dps",
-    "dps": 488.97,
-    "se": 0.039
+    "dps": 385.64,
+    "se": 0.045
    }
   },
   "best_hand": "smite-discipline-raid",
-  "gain_vs_hand": 0.0005
+  "gain_vs_hand": 0.0
  },
- "parse": {
-  "bis-dummy": {
-   "entry": "smite-dps",
-   "dps": 639.55,
-   "se": 0.058
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "smite-dps",
+    "dps": 632.49,
+    "se": 0.047
+   },
+   "smite-discipline-raid": {
+    "entry": "smite-dps",
+    "dps": 629.15,
+    "se": 0.05
+   },
+   "smite-open-raid": {
+    "entry": "smite-dps",
+    "dps": 632.1,
+    "se": 0.046
+   }
   },
-  "bis-raid": {
-   "entry": "smite-dps",
-   "dps": 642.74,
-   "se": 0.056
-  },
-  "gain": 0.005,
-  "vs_parse": null
+  "best_hand": "smite-discipline-raid",
+  "gain_vs_hand": 0.0053
  },
  "builds": {
   "written": [],
   "superseded": [],
-  "date": "2026-10-03",
+  "date": "2026-10-15",
   "setting": "raid",
-  "why": "confirms smite-discipline-raid (+0.00% in a full raid)"
+  "why": "confirms smite-open-raid (+0.06% in a full raid)"
  },
  "tidied": {
-  "bis-dummy": {
+  "bis-dummy": null,
+  "bis-raid": {
    "allocation": {
     "Discipline": [
      [
@@ -1539,12 +2443,8 @@
       3
      ],
      [
-      "Martyrdom",
-      2
-     ],
-     [
       "Mental Agility",
-      3
+      2
      ],
      [
       "Inner Focus",
@@ -1556,19 +2456,11 @@
      ],
      [
       "Mental Strength",
-      5
+      1
      ],
      [
       "Penance",
       1
-     ],
-     [
-      "Power Infusion",
-      1
-     ],
-     [
-      "Silent Resolve",
-      2
      ]
     ],
     "Holy": [
@@ -1581,6 +2473,10 @@
       5
      ],
      [
+      "Spell Warding",
+      1
+     ],
+     [
       "Divine Fury",
       5
      ],
@@ -1589,27 +2485,178 @@
       1
      ],
      [
-      "Inspiration",
+      "Searing Light",
+      2
+     ],
+     [
+      "Binding Heal",
+      1
+     ],
+     [
+      "Spiritual Guidance",
+      3
+     ],
+     [
+      "Improved Healing",
+      1
+     ],
+     [
+      "Holy Reach",
+      1
+     ]
+    ],
+    "Shadow": [
+     [
+      "Shadow Focus",
+      5
+     ],
+     [
+      "Improved Shadow Word: Pain",
+      2
+     ]
+    ]
+   },
+   "split": "21/23/7",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "gain",
+     "from": "Blessed Recovery",
+     "to": "Improved Healing",
+     "seed1": 0.003016076632315734,
+     "seed2": 0.002900397466958138,
+     "utility": "mana"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Blessed Recovery",
+     "to": "Twilight Focus",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 3,
+     "kind": "utility",
+     "from": "Blessed Recovery",
+     "to": "Twilight Focus",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 4,
+     "kind": "utility",
+     "from": "Spell Warding",
+     "to": "Holy Reach",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "range"
+    }
+   ],
+   "abilities_never_cast": [
+    "Holy Nova"
+   ],
+   "final_seed3": 0.0027684653036923468
+  },
+  "prebis-dummy": null,
+  "prebis-raid": {
+   "allocation": {
+    "Discipline": [
+     [
+      "Power in Light",
+      5
+     ],
+     [
+      "Twin Disciplines",
+      5
+     ],
+     [
+      "Holy Precision",
+      3
+     ],
+     [
+      "Mental Agility",
+      2
+     ],
+     [
+      "Inner Focus",
+      1
+     ],
+     [
+      "Meditation",
+      3
+     ],
+     [
+      "Mental Strength",
+      1
+     ],
+     [
+      "Penance",
+      1
+     ]
+    ],
+    "Holy": [
+     [
+      "Twilight Focus",
+      3
+     ],
+     [
+      "Holy Specialization",
+      5
+     ],
+     [
+      "Spell Warding",
+      1
+     ],
+     [
+      "Divine Fury",
+      5
+     ],
+     [
+      "Holy Nova",
       1
      ],
      [
       "Improved Healing",
-      3
+      1
      ],
      [
       "Searing Light",
       2
+     ],
+     [
+      "Binding Heal",
+      1
+     ],
+     [
+      "Spiritual Guidance",
+      3
+     ],
+     [
+      "Holy Reach",
+      1
      ]
     ],
-    "Shadow": []
+    "Shadow": [
+     [
+      "Shadow Focus",
+      5
+     ],
+     [
+      "Improved Shadow Word: Pain",
+      2
+     ]
+    ]
    },
-   "split": "31/20/0",
+   "split": "21/23/7",
    "moves": [
     {
      "round": 1,
      "kind": "utility",
-     "from": "Improved Mana Burn",
-     "to": "Martyrdom",
+     "from": "Blessed Recovery",
+     "to": "Twilight Focus",
      "seed1": 0.0,
      "seed2": 0.0,
      "utility": "interrupt"
@@ -1617,46 +2664,26 @@
     {
      "round": 2,
      "kind": "utility",
-     "from": "Improved Mana Burn",
-     "to": "Silent Resolve",
+     "from": "Blessed Recovery",
+     "to": "Twilight Focus",
      "seed1": 0.0,
      "seed2": 0.0,
-     "utility": "threat"
+     "utility": "interrupt"
     },
     {
      "round": 3,
      "kind": "utility",
-     "from": "Improved Power Word: Shield",
-     "to": "Silent Resolve",
+     "from": "Spell Warding",
+     "to": "Holy Reach",
      "seed1": 0.0,
      "seed2": 0.0,
-     "utility": "threat"
+     "utility": "range"
     }
    ],
    "abilities_never_cast": [
     "Holy Nova"
    ],
    "final_seed3": 0.0
-  },
-  "bis-raid": null,
-  "prebis-dummy": null,
-  "prebis-raid": null
- },
- "compare_raid": {
-  "setting": "raid",
-  "dps": {
-   "winner": {
-    "entry": "smite-dps",
-    "dps": 642.76,
-    "se": 0.056
-   },
-   "smite-discipline-raid": {
-    "entry": "smite-dps",
-    "dps": 642.76,
-    "se": 0.056
-   }
-  },
-  "best_hand": "smite-discipline-raid",
-  "gain_vs_hand": 0.0
+  }
  }
 }

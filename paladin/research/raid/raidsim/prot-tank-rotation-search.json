@@ -2,7 +2,7 @@
  "raid": {
   "class": "paladin",
   "spec": "prot-tank",
-  "date": "2026-10-09",
+  "date": "2026-10-14",
   "commit": "2ce8265",
   "setting": "raid",
   "tank": true,
@@ -10,12 +10,18 @@
   "start": "ui\\specs\\paladin\\protection\\apls\\default.apl.json",
   "builds": [
    {
+    "label": "deep: tank",
+    "talents": "-0530513301301151-50222230021"
+   },
+   {
     "label": "opt-prot-tank-raid-tank",
-    "talents": "-0530513301311051-50025330001"
+    "talents": "-0530513301311051-50025330001",
+    "protect_only": true
    },
    {
     "label": "sim preset: Protection 0/45/6",
-    "talents": "-5532513321301551-15"
+    "talents": "-5532513321301551-15",
+    "protect_only": true
    },
    {
     "label": "prot-tank",
@@ -24,8 +30,7 @@
    }
   ],
   "tuned_on": [
-   "opt-prot-tank-raid-tank",
-   "sim preset: Protection 0/45/6"
+   "deep: tank"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -77,40 +82,57 @@
     "gain_seed2": 0.014266631454059375,
     "candidates": 296,
     "pass": 4
+   },
+   {
+    "round": 7,
+    "change": "drop the condition: if health % < 10%: cast Lay on Hands",
+    "gain_seed1": 0.004749424466395258,
+    "gain_seed2": 0.0035065143273462773,
+    "candidates": 277,
+    "pass": 5
    }
   ],
   "final": {
    "raid": {
+    "deep: tank": {
+     "before": 398.745698597575,
+     "after": 418.8255803824941,
+     "base": 398.745698597575,
+     "before_value": 1.0,
+     "after_value": 1.0,
+     "oom_before": 5.0788350219712,
+     "oom_after": 5.0788350219712
+    },
     "opt-prot-tank-raid-tank": {
      "before": 389.5900063832318,
-     "after": 406.22918096586943,
+     "after": 408.0988384818098,
      "base": 389.5900063832318,
      "before_value": 1.0,
-     "after_value": 1.0211547489044703,
-     "oom_before": 5.147405899872857,
-     "oom_after": 6.705007989536851
+     "after_value": 1.0,
+     "oom_before": 5.856926731564694,
+     "oom_after": 5.856926731564694
     },
     "sim preset: Protection 0/45/6": {
      "before": 368.35577592839803,
-     "after": 375.7885318986898,
+     "after": 374.4911630386328,
      "base": 368.35577592839803,
      "before_value": 1.0,
-     "after_value": 1.008473479930149,
-     "oom_before": 17.127376257625656,
-     "oom_after": 20.169654986655054
+     "after_value": 1.0,
+     "oom_before": 20.3281280623171,
+     "oom_after": 20.3281280623171
     },
     "prot-tank": {
      "before": 458.95438169634383,
-     "after": 455.07847016603944,
+     "after": 455.80504112058827,
      "base": 458.95438169634383,
      "before_value": 1.0,
-     "after_value": 1.0097927894868743,
-     "oom_before": 2.201544671794702,
-     "oom_after": 2.5873573005069037
+     "after_value": 1.0,
+     "oom_before": 2.99268198102185,
+     "oom_after": 2.99268198102185
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 4
+  "passes": 6
  }
 }

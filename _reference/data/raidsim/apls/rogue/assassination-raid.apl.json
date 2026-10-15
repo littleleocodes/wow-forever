@@ -9,6 +9,26 @@
        "type": "Self"
       },
       "auraId": {
+       "spellId": 13750
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 13750
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-14: changed or added by the rotation search (see assassination-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "auraIsInactive": {
+      "sourceUnit": {
+       "type": "Self"
+      },
+      "auraId": {
        "spellId": 14278
       }
      }

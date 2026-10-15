@@ -64,14 +64,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Fire DPS* | community simulator | - | 525 | +0.0% | 664 | -3.4% | 1 s |
-| 2 | [`fire-raid`](fire-raid.md) | ours: hand draft | 12/34/5 | 519 | -1.1% | 688 | +0.0% | 3 s |
-| 3 | **[`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md)** | ours: optimizer | 14/32/5 | 519 | -1.1% | 688 | +0.0% | 3 s |
-| 4 | *Fire 0/35/16* | community simulator | - | 474 | -9.6% | 639 | -7.1% | 5 s |
-| 5 | *Arcane DPS* | community simulator | - | 423 | -19.5% | 510 | -25.9% | 0 s |
-| 6 | *Arcane 35/0/16* | community simulator | - | 292 | -44.3% | 373 | -45.8% | 2 s |
-| 7 | *Frost 14/0/37* | community simulator | - | 277 | -47.2% | 357 | -48.1% | 0 s |
-| 8 | *Frost DPS* | community simulator | - | 273 | -48.0% | 356 | -48.2% | 0 s |
+| 1 | *Fire DPS* | community simulator | - | 518 | +0.0% | 661 | -3.4% | 1 s |
+| 2 | [`fire-raid`](fire-raid.md) | ours: hand draft | 12/34/5 | 515 | -0.5% | 685 | +0.0% | 3 s |
+| 3 | **[`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md)** | ours: optimizer | 14/32/5 | 515 | -0.5% | 685 | +0.0% | 3 s |
+| 4 | *Fire 0/35/16* | community simulator | - | 472 | -8.8% | 638 | -6.8% | 6 s |
+| 5 | *Arcane DPS* | community simulator | - | 415 | -19.8% | 506 | -26.1% | 0 s |
+| 6 | *Arcane 35/0/16* | community simulator | - | 292 | -43.7% | 373 | -45.6% | 2 s |
+| 7 | *Frost 14/0/37* | community simulator | - | 274 | -47.1% | 357 | -47.9% | 1 s |
+| 8 | *Frost DPS* | community simulator | - | 271 | -47.7% | 356 | -48.0% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -106,10 +106,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
 | 5 | if stacks of Heating Up = 3: cast Pyroblast | 1.5 |
-| 6 | cast Fire Blast | 7.1 |
-| 7 | if mana % ≥ 10%: cast Fireball | 9.7 |
-| 8 | if time left in the fight ≥ 3s: cast Fireball | 5.5 |
-| 9 | cast Scorch | 0.3 |
+| 6 | cast Fire Blast | 7.0 |
+| 7 | if mana % ≥ 10%: cast Fireball | 9.5 |
+| 8 | if time left in the fight ≥ 3s: cast Fireball | 5.4 |
+| 9 | cast Scorch | 0.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Arcane Missiles (its condition never held in these fights).
 

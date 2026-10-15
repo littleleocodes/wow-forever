@@ -57,42 +57,42 @@ Arms in a raid stays in **Battle Stance** and lives off **Overpower**. Keep **Re
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 984 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 964 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 682 | [34/17/0](https://talentsforever.com/warrior/60/02305213032514201-15050010002-001-6) |
-| Phase 1 BiS | 816 | [37/14/0](https://talentsforever.com/warrior/60/30305213132515201-050501--6) (ties this build) |
+| Pre-BiS | 824 | [38/11/2](https://talentsforever.com/warrior/60/30315213132515201-05051-2-6) |
+| Phase 1 BiS | 1000 | [38/11/2](https://talentsforever.com/warrior/60/30315213132515201-05051-2-6) (ties this build) |
 
-*Gear-tier numbers searched on 2026-10-02, on an older simulator build than the rest of this page (before beta 70291 and the 2026-10-09 audit that took Atiesh out of the full raid): they run 3-7% high and can order the specs differently than the full-raid ranking. The searches are queued to run again.*
-
-**The gear** (average item level: Pre-BiS 62.9; Phase 1 BiS 65.1; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 62.6; Phase 1 BiS 65.4; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
 | Head | [Lionheart Helm](https://www.wowhead.com/forever/item=12640) · *Blacksmithing*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11645) | [Crown of Destruction](https://www.wowhead.com/forever/item=18817) · *Ragnaros, Molten Core*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11645) |
 | Neck | [Mark of Fordring](https://www.wowhead.com/forever/item=15411) · *quest: In Dreams* | [Mark of Fordring](https://www.wowhead.com/forever/item=15411) · *quest: In Dreams* |
 | Shoulders | [Theramore Pauldrons](https://www.wowhead.com/forever/item=271955) | [Theramore Pauldrons](https://www.wowhead.com/forever/item=271955) |
-| Back | [Deathguard's Cloak](https://www.wowhead.com/forever/item=20068)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) | [Deathguard's Cloak](https://www.wowhead.com/forever/item=20068)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) |
-| Chest | [Timbermaw Tunic](https://www.wowhead.com/forever/item=252484) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Darkmantle Tunic](https://www.wowhead.com/forever/item=22009)<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
-| Wrist | [Deeprock Bracers](https://www.wowhead.com/forever/item=21184)<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) | [Wristguards of Stability](https://www.wowhead.com/forever/item=19146) · *Molten Core*<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) |
-| Hands | [Theramore Gauntlets](https://www.wowhead.com/forever/item=271940)<br>+ [Enchant Gloves - Strength](https://www.wowhead.com/forever/spell=13828) | [Gauntlets of Might](https://www.wowhead.com/forever/item=16863) · *Lucifron, Molten Core*<br>+ [Enchant Gloves - Strength](https://www.wowhead.com/forever/spell=13828) |
+| Back | [Deathguard's Cloak](https://www.wowhead.com/forever/item=20068)<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) | [Cape of the Black Baron](https://www.wowhead.com/forever/item=13340) · *Baron Rivendare, Stratholme*<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) |
+| Chest | [Darkmantle Tunic](https://www.wowhead.com/forever/item=22009)<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Darkmantle Tunic](https://www.wowhead.com/forever/item=22009)<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
+| Wrist | [Deeprock Bracers](https://www.wowhead.com/forever/item=21184)<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) | [Deeprock Bracers](https://www.wowhead.com/forever/item=21184)<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) |
+| Hands | [Stormshroud Gloves](https://www.wowhead.com/forever/item=21278) · *Leatherworking*<br>+ [Enchant Gloves - Strength](https://www.wowhead.com/forever/spell=13828) | [Gauntlets of Might](https://www.wowhead.com/forever/item=16863) · *Lucifron, Molten Core*<br>+ [Enchant Gloves - Strength](https://www.wowhead.com/forever/spell=13828) |
 | Waist | [Radiant Girdle of the Dawn](https://www.wowhead.com/forever/item=227814) | [Onslaught Girdle](https://www.wowhead.com/forever/item=19137) · *Ragnaros, Molten Core* |
 | Legs | [Titanic Leggings](https://www.wowhead.com/forever/item=22385) · *Blacksmithing*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11645) | [Titanic Leggings](https://www.wowhead.com/forever/item=22385) · *Blacksmithing*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11645) |
-| Feet | [Scalegut Treaders](https://www.wowhead.com/forever/item=275618) · *Leatherworking*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) | [Boots of Heroism](https://www.wowhead.com/forever/item=21995)<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) |
-| Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=234021) | [Quick Strike Ring](https://www.wowhead.com/forever/item=18821) · *Magmadar, Molten Core* |
-| Finger | [Ferocious Watcher's Signet](https://www.wowhead.com/forever/item=275981) | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=234021) |
+| Feet | [Boots of Heroism](https://www.wowhead.com/forever/item=21995)<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) | [Boots of Heroism](https://www.wowhead.com/forever/item=21995)<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/spell=13823) |
+| Finger | [Painweaver Band](https://www.wowhead.com/forever/item=13098) · *General Drakkisath, Blackrock Spire* | [Quick Strike Ring](https://www.wowhead.com/forever/item=18821) · *Magmadar, Molten Core* |
+| Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=234021) | [Painweaver Band](https://www.wowhead.com/forever/item=13098) · *General Drakkisath, Blackrock Spire* |
 | Trinket | [Hand of Justice](https://www.wowhead.com/forever/item=11815) · *Emperor Dagran Thaurissan, Blackrock Depths* | [Hand of Justice](https://www.wowhead.com/forever/item=11815) · *Emperor Dagran Thaurissan, Blackrock Depths* |
-| Trinket | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) | [Rune of the Guard Captain](https://www.wowhead.com/forever/item=19120) |
+| Trinket | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) |
 | Main hand | [The Unstoppable Force](https://www.wowhead.com/forever/item=19323)<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) | [Bonereaver's Edge](https://www.wowhead.com/forever/item=17076) · *Ragnaros, Molten Core*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) |
 | Ranged/relic | [Premier High Warlord's Recurve](https://www.wowhead.com/forever/item=272594) | [Premier High Warlord's Recurve](https://www.wowhead.com/forever/item=272594) |
 
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://elliotwood.github.io/Forever/forever/warrior/dps/#eJzMVl1oW3UUz7kfuacnWbz9t7qbf1WuedA0cuv9aGqjYNKBoL44UVCCYG+bdIlsTciNUN+2giCiMl+GFbH1o1o7lW1KlSFDJ0gnKazKBspEqUWF7aHikx+g3Jukwa4gFAuep5Nzfud/fr9zbv73UhRBBQ10SIIJLL75SzBhGHKwHx6BKhwG4GejKKnAn6Awfj+mrUVIxPenSMKvGiopuP4yaKthUvC346D9ECMFP5kH7VvfeeVN0GYVkvDHX/eQgr+8B361gpePg/ZdjERcnCAJ59/w3bceJRGfO0QK/nEMtCsxCpGEX66qiRROl9XPy9qz5eT6LOxfPwnPgDBdfhFed+fgHXcBvhk5AbPzsAywjzqSTgtxx3SstG05lmOnrbRtWoaZNtOWYS8L0pqwQsRI4TKJONOTUEgm0bA81sWbsU/zm+6FPMvxu8hhFvWl4iiy2FmIkJyUcSXPBFX2QQQWsYRKsVOt1JmHg5TSxrUOU489yIgjD5Okrr4AbIgP0q28n7pT16DEhPtCPGDimB71phiGgxARUti2rIG05/fChVF2IwLnW6usVv7DPczhFvXzW7YibNMjllJb5yKFSbIGTY9LJGjd7Hae3o6MfTUZazAgEyYJL80Bu4H3bS0aMj1fJF4+AyzNne3IONuQcZpl6sfzOynD137aUbcjH+y4zJeupmIoM3ENQq1HwdenAx7dw67jvRRJdJFi+4tbyvsAXMq3nwE8uQCsh3eT/IUgIPjnJ2VcehU2Ac//eT+LcgoyEl48DazKxt3qwccq1bpum/aQYWYMe/gOfbzkTh4oFvRKTXcLhWJBH3tSr5eKeq1Sd+vlyqTuFd3aeElPesWi7tYOeYZdMmpuuWC0EUYTMfC4V5ns510dESM8Sxa77Wqd1MfjQTTMhFrI50vCoNkWQ4Q6JGX8eg5YnR34B2nLNEx7J6TH3Hr9YPFfiSdFXMmwNj2xQy9jBiv4q5fdi8DvpjtZJvhXyyyyCJtDbi16IO0RT2koM1qE9jg6Of9E/OwoMG+LOn8lmd1RF1wdeH4OWG2bke5S0+bVNV1me/m1FE0Q4SnwpzjT07o/NfFnYRk2BPuIGAqsN7coRKiLFFU0Yfh3SLwtdvnx0OGJXPylGd/OZW+aCOxi1t4QNEnPppaF0P/K6rm2t6t287v/eZ/MSqPRiI6eyI20ArlReBpgBsqVjafOPXQhmwmiofPZER/ZaFzJPtB0LmVTIn60d9/1nXdp84PgnuCToARVmIIp9vcAYQt2ZA==); Phase 1 BiS: [full raid](https://elliotwood.github.io/Forever/forever/warrior/dps/#eJzMVl9oW2UUz7l/ck9Psnj7tbqbryrXPGgaufX+aWqjYNKBoL44UVCCYO+adIlsTciNUN/WSkFEZTIUK0KrUqydyjZHlSHDTZBOUliVDZTJoA4Utof6qAjKvUka7ApCseB5+nLO75zz+51z891LUQQVNNAhCSaw+OYvwYRhyMF+eAaqcASAn4+ipAJ/gRScOgbaeoRE/GySJPy+oVIY3y1pa2FS8PfjoP0cIwW/WgDtJ/9w9SXQ5hSS8NybQAr+9mmQrOD146BdjZGEM8eARFwaJxE/fJZEfO0wKXh6BrQbMQqRhN+tqYkUTpfVb8raq+XktTnYf+0kvALCdPlt+MCdh4/dRfhx5ATMLcAKwD7qSDojxB3TsdK25ViOnbbStmkZZtpMW4a9IkjrwioRI4XLJOJsT0IhmUTD8lgXb/rO5TePl/Isxx8ih1nUl4qjyGLnIUJyUsbVPBNU2QcRWMQSKsVOtUJnnw5CShvXKqa+9SQjjjxMkrr2BrAhPkj38n7qTt2CEhMeC/GAiWN61JtiGA5cREhh27IG0p7fCxdH2Z0InG/Nslrxz/cwh1vUz+/ZirBNj1hKbdVFCpNkDZoel0jQutn9PL0dGftmMtZgQCZMEl6ZB3YH79uaNGR6vki8fhZYmjvbkXG2IeM009QvF3aShu//sqNuU6d3nOZLV1MxlJm4DqHWo+Dr0wGP7mG38V6KJLpIsf3FLed9AC7n288AnlwE1sO7Sf5WEBD8+kkZl9+DTcDrfz7OopyCiISXzwCrsjG3eui5SrWu26Y9ZJgZwx5+QB8ruRMHiwW9UtPdQqFY0A+8qNdLRb1Wqbv1cmVC94pubaykJ71iUXdrhz3DLhk1t1ww2gijiRh43qtM9POujogRniWL3XezTurj8cAbZkIt5PMlYdBsiyFCHZIy/jAPrM4O/oO0ZRqmvRPSB9x6/VDxX4knRVzNsDY9sUMvYwYr+KuXPYrAH6YHWSb4V8sssgSbQ24teiDtEU9pKDNagvY4OjG/In59FJi3RZ2/kszuqAuuDrw4D6y2zUh3qWnz6pous738VoomiPAU+FOc7Wndn5r4q7ACG4I9JYYC680tCRHqIkUVTRj+AxIfiV2+P3RkPBd/Z9a3C9m7xgO7nLU3BE3Ss6kVIfS/snqufdpVu/uT/7xPZrXRaERHT+RGWo7cKLwMMAvlysbMhacuZTOBN3QxO+IjG40b2SeahyvZlIhf7N13e+dd2vwgeCT4JChBFSZhkv09ABuEdLM=).
+
 ## Other builds of this spec
 
-- [Arms — Battle Stance](../research/raid/builds/arms-battle-raid.md) (34/17/0, 883 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warrior/60/023052131325052-55050000002--6)
+- [Arms — Battle Stance](../research/raid/builds/arms-battle-raid.md) (34/17/0, 866 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warrior/60/023052131325052-55050000002--6)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-14 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-15 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
 

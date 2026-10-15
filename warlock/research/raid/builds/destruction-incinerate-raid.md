@@ -76,7 +76,7 @@ Destruction to Incinerate, the Forever capstone (Fire damage, +25% on a target w
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`destruction-incinerate-raid`](destruction-incinerate-raid.md)** | ours: hand draft | 9/11/31 | 550 | +0.0% | 672 | +0.0% | 2 s |
+| 1 | **[`destruction-incinerate-raid`](destruction-incinerate-raid.md)** | ours: hand draft | 9/11/31 | 586 | +0.0% | 665 | +0.0% | 3 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -99,32 +99,32 @@ Before the pull: at -1.5s: cast Life Tap.
 
 | # | Priority (the first line whose condition holds is cast) | [`destruction-incinerate-raid`](destruction-incinerate-raid.md) casts/min |
 |---|---|---|
-| 1 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption | 3.3 |
+| 1 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption | 3.4 |
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready |
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 4 | use every other cooldown when ready | as ready |
-| 5 | if time left in the fight ≤ 1.5: cast Shadowburn | 0.2 |
+| 5 | if time left in the fight ≤ 1.5: cast Shadowburn | 0.1 |
 | 6 | if time left in the fight ≤ 3.938: cast Searing Pain | 0.5 |
-| 7 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.9 |
-| 8 | if mana % < 10%: cast Life Tap | 7.3 |
+| 7 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
+| 8 | if mana % < 10%: cast Life Tap | 7.1 |
 | 9 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
-| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
-| 11 | if Immolate is on the target: cast Conflagrate | 4.7 |
-| 12 | cast Incinerate | 13.8 |
+| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 |
+| 11 | if Immolate is on the target: cast Conflagrate | 4.5 |
+| 12 | cast Shadow Bolt | 11.4 |
 
-Lines of the simulator's rotation these builds never cast: cast Shadow Bolt (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Incinerate (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`destruction-incinerate-raid`](destruction-incinerate-raid.md) |
 |---|---|
-| Incinerate | 38% |
+| Shadow Bolt | 43% |
 | Corruption | 17% |
-| Bane of Agony | 17% |
-| Immolate | 14% |
-| Conflagrate | 12% |
+| Bane of Agony | 16% |
+| Immolate | 13% |
+| Conflagrate | 11% |
 | Searing Pain | 1% |
-| Shadowburn | 1% |
+| Shadowburn | 0% |
 
 ## Notes
 

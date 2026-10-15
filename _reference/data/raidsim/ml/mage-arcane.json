@@ -7,16 +7,16 @@
  ],
  "best": "arcane-blast-raid",
  "best_entry": "arcane-dps",
- "best_dps": 592.03,
+ "best_dps": 569.23,
  "any_split": false,
- "date": "2026-10-01",
+ "date": "2026-10-14",
  "gear": {
   "bis": {
    "entry": "arcane-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-arcane-bis.gear.json",
-   "date": "2026-10-02",
-   "chosen": "all-slots",
-   "ilvl": 66.1,
+   "date": "2026-10-14",
+   "chosen": "current",
+   "ilvl": 65.6,
    "trinkets": [
     "Talisman of Ephemeral Power",
     "Briarwood Reed"
@@ -31,9 +31,9 @@
     "Hands of Power",
     "Mana Igniting Cord",
     "Netherwind Pants",
-    "Arcanist Boots",
-    "Leafre's Ring of Precise Spell Power",
+    "Sorcerer's Boots",
     "Ring of Spell Power",
+    "Rune Band of Wizardry",
     "Talisman of Ephemeral Power",
     "Briarwood Reed",
     "Azuresong Mageblade",
@@ -42,23 +42,22 @@
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.0004667272864625,
-    "keep-sets-and-effects": 0.9998903875560652
+    "all-slots": 0.9999539669492136,
+    "keep-sets-and-effects": 0.998040840624255
    },
    "confirm_seed2": {
-    "current": 1.0,
-    "all-slots": 1.001267101588963
+    "current": 1.0
    },
    "weights": {
-    "StatArcaneDamage": 0.3187,
-    "StatFireDamage": 0.0872,
-    "StatFrostDamage": 0.0024,
-    "StatIntellect": 0.16,
-    "StatSpellCritRating": 0.3369,
-    "StatSpellDamage": 0.4083,
-    "StatSpellHasteRating": 0.3728,
-    "StatSpellHitRating": 0.634,
-    "StatSpirit": 0.0687
+    "StatArcaneDamage": 0.3388,
+    "StatFireDamage": 0.0607,
+    "StatFrostDamage": 0.0337,
+    "StatIntellect": 0.2059,
+    "StatSpellCritRating": 0.3147,
+    "StatSpellDamage": 0.4332,
+    "StatSpellHasteRating": 0.4675,
+    "StatSpellHitRating": 0.7813,
+    "StatSpirit": 0.1345
    },
    "evaluated_on": [
     "arcane-dps: ml winner"
@@ -68,7 +67,7 @@
   "prebis": {
    "entry": "arcane-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-arcane-prebis.gear.json",
-   "date": "2026-10-02",
+   "date": "2026-10-14",
    "chosen": "keep-sets-and-effects",
    "ilvl": 62.2,
    "trinkets": [
@@ -79,20 +78,20 @@
     "Spellweaver's Turban",
     "Nacreous Shell Necklace",
     "Rugged Mantle of the Timbermaw",
-    "Crystalline Threaded Cape",
+    "Shroud of Arcane Mastery",
     "Robe of the Archmage",
     "Rockfury Bracers",
     "Hands of Power",
     "Knowledge of the Timbermaw",
     "Skyshroud Leggings",
     "Sorcerer's Boots",
-    "Leafre's Ring of Precise Spell Power",
     "Rune Band of Wizardry",
+    "Elemental Focus Band",
     "Briarwood Reed",
     "Eye of the Beast",
     "Elemental Attuned Blade",
     "Scepter of Interminable Focus",
-    "Wand of Arcane Potency"
+    "Bonecreeper Stylus"
    ],
    "race_seed1": {
     "all-slots": 1.0,
@@ -103,15 +102,15 @@
     "all-slots": 1.0
    },
    "weights": {
-    "StatArcaneDamage": 0.3144,
-    "StatFireDamage": 0.0888,
-    "StatFrostDamage": 0.0024,
-    "StatIntellect": 0.1408,
-    "StatSpellCritRating": 0.3509,
-    "StatSpellDamage": 0.4057,
-    "StatSpellHasteRating": 0.3458,
-    "StatSpellHitRating": 0.6031,
-    "StatSpirit": 0.062
+    "StatArcaneDamage": 0.3333,
+    "StatFireDamage": 0.0592,
+    "StatFrostDamage": 0.0312,
+    "StatIntellect": 0.2548,
+    "StatSpellCritRating": 0.3215,
+    "StatSpellDamage": 0.4238,
+    "StatSpellHasteRating": 0.4124,
+    "StatSpellHitRating": 0.7202,
+    "StatSpirit": 0.1947
    },
    "evaluated_on": [
     "arcane-dps: ml winner (bis)"
@@ -124,7 +123,7 @@
    "spec": "Arcane",
    "setting": "dummy",
    "entry": "arcane-dps",
-   "date": "2026-10-01",
+   "date": "2026-10-14",
    "constraint": "Arcane 30+",
    "protected": [
     "Arcane Blast",
@@ -138,16 +137,16 @@
     "allocation": {
      "Arcane": [
       [
+       "Wand Specialization",
+       2
+      ],
+      [
        "Arcane Focus",
        5
       ],
       [
        "Arcane Concentration",
        5
-      ],
-      [
-       "Arcane Geometry",
-       2
       ],
       [
        "Arcane Impact",
@@ -189,11 +188,15 @@
      "Fire": [
       [
        "Wake of Fire",
-       2
+       1
       ],
       [
        "Incineration",
        3
+      ],
+      [
+       "Improved Fireball",
+       1
       ],
       [
        "Ignite",
@@ -203,145 +206,369 @@
      "Frost": [
       [
        "Improved Frostbolt",
-       4
+       5
       ],
       [
        "Elemental Precision",
        5
-      ],
-      [
-       "Ice Shards",
-       1
       ]
      ]
     },
     "split": "31/10/10",
-    "dps": 594.4,
-    "se": 0.111,
+    "dps": 582.81,
+    "se": 0.1308,
     "iterations": 100000
    },
    "runner_up": {
     "split": "31/10/10",
-    "dps": 594.4,
-    "se": 0.111,
+    "dps": 582.81,
+    "se": 0.1308,
     "differs": [
      [
-      "Arcane Geometry",
+      "Improved Counterspell",
       1
      ],
      [
-      "Arcane Geometry",
+      "Wand Specialization",
+      1
+     ],
+     [
+      "Wand Specialization",
       2
-     ],
-     [
-      "Arcane Resilience",
-      1
-     ],
-     [
-      "Arcane Shielding",
-      1
-     ],
-     [
-      "Arcane Subtlety",
-      1
      ]
     ]
    },
    "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Wand Specialization",
+        2
+       ],
+       [
+        "Arcane Focus",
+        5
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Arcane Impact",
+        3
+       ],
+       [
+        "Arcane Blast",
+        1
+       ],
+       [
+        "Arcane Shielding",
+        1
+       ],
+       [
+        "Arcane Meditation",
+        3
+       ],
+       [
+        "Missile Barrage",
+        1
+       ],
+       [
+        "Presence of Mind",
+        1
+       ],
+       [
+        "Arcane Mind",
+        5
+       ],
+       [
+        "Arcane Instability",
+        3
+       ],
+       [
+        "Arcane Power",
+        1
+       ]
+      ],
+      "Fire": [
+       [
+        "Wake of Fire",
+        1
+       ],
+       [
+        "Incineration",
+        3
+       ],
+       [
+        "Improved Fireball",
+        1
+       ],
+       [
+        "Ignite",
+        5
+       ]
+      ],
+      "Frost": [
+       [
+        "Improved Frostbolt",
+        5
+       ],
+       [
+        "Elemental Precision",
+        5
+       ]
+      ]
+     },
+     "split": "31/10/10",
+     "dps": 582.81,
+     "se": 0.1308
+    },
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Wand Specialization",
+        1
+       ],
+       [
+        "Arcane Focus",
+        5
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Arcane Impact",
+        3
+       ],
+       [
+        "Arcane Blast",
+        1
+       ],
+       [
+        "Arcane Shielding",
+        1
+       ],
+       [
+        "Improved Counterspell",
+        1
+       ],
+       [
+        "Arcane Meditation",
+        3
+       ],
+       [
+        "Missile Barrage",
+        1
+       ],
+       [
+        "Presence of Mind",
+        1
+       ],
+       [
+        "Arcane Mind",
+        5
+       ],
+       [
+        "Arcane Instability",
+        3
+       ],
+       [
+        "Arcane Power",
+        1
+       ]
+      ],
+      "Fire": [
+       [
+        "Wake of Fire",
+        1
+       ],
+       [
+        "Incineration",
+        3
+       ],
+       [
+        "Improved Fireball",
+        1
+       ],
+       [
+        "Ignite",
+        5
+       ]
+      ],
+      "Frost": [
+       [
+        "Improved Frostbolt",
+        5
+       ],
+       [
+        "Elemental Precision",
+        5
+       ]
+      ]
+     },
+     "split": "31/10/10",
+     "dps": 582.81,
+     "se": 0.1308
+    }
+   ],
    "runs": [
     {
      "entry": "arcane-dps",
      "run": 1,
-     "simulated": 1397,
-     "best_screen": 593.3,
-     "best_split": "32/10/9",
+     "simulated": 2401,
+     "best_screen": 584.77,
+     "best_split": "31/10/10",
      "trace": [
       {
        "round": 0,
-       "simulated": 397,
-       "best": 591.78
+       "simulated": 401,
+       "best": 574.66
       },
       {
        "round": 1,
-       "simulated": 597,
-       "best": 592.54,
-       "predicted_top": 589.98
+       "simulated": 601,
+       "best": 574.74,
+       "predicted_top": 569.19
       },
       {
        "round": 2,
-       "simulated": 797,
-       "best": 593.06,
-       "predicted_top": 591.78
+       "simulated": 801,
+       "best": 576.71,
+       "predicted_top": 573.62
       },
       {
        "round": 3,
-       "simulated": 997,
-       "best": 593.06,
-       "predicted_top": 592.54
+       "simulated": 1001,
+       "best": 577.38,
+       "predicted_top": 575.81
       },
       {
        "round": 4,
-       "simulated": 1197,
-       "best": 593.3,
-       "predicted_top": 592.61
+       "simulated": 1201,
+       "best": 581.98,
+       "predicted_top": 576.84
       },
       {
        "round": 5,
-       "simulated": 1397,
-       "best": 593.3,
-       "predicted_top": 593.01
+       "simulated": 1401,
+       "best": 582.64,
+       "predicted_top": 577.91
+      },
+      {
+       "round": 6,
+       "simulated": 1601,
+       "best": 584.77,
+       "predicted_top": 581.68
+      },
+      {
+       "round": 7,
+       "simulated": 1801,
+       "best": 584.77,
+       "predicted_top": 583.37
+      },
+      {
+       "round": 8,
+       "simulated": 2001,
+       "best": 584.77,
+       "predicted_top": 584.57
+      },
+      {
+       "round": 9,
+       "simulated": 2201,
+       "best": 584.77,
+       "predicted_top": 584.74
+      },
+      {
+       "round": 10,
+       "simulated": 2401,
+       "best": 584.77,
+       "predicted_top": 584.74
       }
      ],
-     "best_stage1_gap": -0.0002,
+     "best_stage1_gap": 0.0,
      "agrees_with_winner": true
     },
     {
      "entry": "arcane-dps",
      "run": 2,
-     "simulated": 1596,
-     "best_screen": 593.93,
+     "simulated": 2596,
+     "best_screen": 584.77,
      "best_split": "31/10/10",
      "trace": [
       {
        "round": 0,
        "simulated": 396,
-       "best": 591.94
+       "best": 570.46
       },
       {
        "round": 1,
        "simulated": 596,
-       "best": 592.54,
-       "predicted_top": 590.66
+       "best": 573.88,
+       "predicted_top": 567.67
       },
       {
        "round": 2,
        "simulated": 796,
-       "best": 593.15,
-       "predicted_top": 592.34
+       "best": 573.88,
+       "predicted_top": 570.51
       },
       {
        "round": 3,
        "simulated": 996,
-       "best": 593.15,
-       "predicted_top": 592.6
+       "best": 579.25,
+       "predicted_top": 572.14
       },
       {
        "round": 4,
        "simulated": 1196,
-       "best": 593.38,
-       "predicted_top": 592.83
+       "best": 582.79,
+       "predicted_top": 576.91
       },
       {
        "round": 5,
        "simulated": 1396,
-       "best": 593.38,
-       "predicted_top": 593.2
+       "best": 583.27,
+       "predicted_top": 580.28
       },
       {
        "round": 6,
        "simulated": 1596,
-       "best": 593.93,
-       "predicted_top": 593.38
+       "best": 583.27,
+       "predicted_top": 582.44
+      },
+      {
+       "round": 7,
+       "simulated": 1796,
+       "best": 584.77,
+       "predicted_top": 583.24
+      },
+      {
+       "round": 8,
+       "simulated": 1996,
+       "best": 584.77,
+       "predicted_top": 583.89
+      },
+      {
+       "round": 9,
+       "simulated": 2196,
+       "best": 584.77,
+       "predicted_top": 584.77
+      },
+      {
+       "round": 10,
+       "simulated": 2396,
+       "best": 584.77,
+       "predicted_top": 584.76
+      },
+      {
+       "round": 11,
+       "simulated": 2596,
+       "best": 584.77,
+       "predicted_top": 584.77
       }
      ],
      "best_stage1_gap": 0.0,
@@ -354,43 +581,42 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      594.9,
-      594.84,
-      594.84,
-      594.84,
-      594.84,
-      594.84,
-      594.77,
-      594.77,
-      594.77,
-      594.66,
-      594.66,
-      594.66
+      582.94,
+      582.94,
+      582.94,
+      582.94,
+      582.94,
+      582.94,
+      582.94,
+      582.94,
+      582.94,
+      582.94,
+      582.94
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      594.52,
-      594.52,
-      594.52,
-      594.52,
-      594.47
+      582.64,
+      582.64,
+      582.64,
+      582.64,
+      582.64
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      594.4,
-      594.4
+      582.81,
+      582.81
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 259,
+     "neighbours": 255,
      "best_gap": 0.0,
      "best_move": "1 Arcane Shielding -> Improved Counterspell"
     }
@@ -398,57 +624,57 @@
    "other_entries": [],
    "important_features": [
     {
-     "feature": "Arcane Power",
-     "importance": 0.2995
+     "feature": "Arcane Meditation",
+     "importance": 0.3041
     },
     {
      "feature": "Arcane Mind",
-     "importance": 0.1812
+     "importance": 0.2239
     },
     {
      "feature": "Ignite",
-     "importance": 0.1758
+     "importance": 0.1253
+    },
+    {
+     "feature": "Arcane Power",
+     "importance": 0.0882
+    },
+    {
+     "feature": "Improved Channeling",
+     "importance": 0.0749
     },
     {
      "feature": "Arcane Instability",
-     "importance": 0.1441
+     "importance": 0.0547
     },
     {
-     "feature": "Wand Specialization",
-     "importance": 0.0495
-    },
-    {
-     "feature": "Arcane Meditation",
-     "importance": 0.0203
-    },
-    {
-     "feature": "Improved Fireball",
-     "importance": 0.0172
-    },
-    {
-     "feature": "Fire points",
-     "importance": 0.014
+     "feature": "Wake of Fire",
+     "importance": 0.0173
     },
     {
      "feature": "Arcane points",
+     "importance": 0.013
+    },
+    {
+     "feature": "Arcane Concentration",
      "importance": 0.0118
     },
     {
-     "feature": "Frost Warding",
-     "importance": 0.0112
+     "feature": "Magic Absorption",
+     "importance": 0.0102
     },
     {
-     "feature": "Improved Counterspell",
-     "importance": 0.009
+     "feature": "Wand Specialization",
+     "importance": 0.0089
     },
     {
-     "feature": "Incineration",
-     "importance": 0.0088
+     "feature": "Improved Frostbolt",
+     "importance": 0.007
     }
    ],
-   "simulated_builds": 3272,
-   "simulated_fights": 4243000,
-   "minutes": 2.0,
+   "simulated_builds": 5130,
+   "simulated_fights": 6084000,
+   "minutes": 3.6,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-arcane-bis.gear.json"
   },
   "bis-dummy": {
@@ -456,7 +682,7 @@
    "spec": "Arcane",
    "setting": "dummy",
    "entry": "arcane-dps",
-   "date": "2026-10-02",
+   "date": "2026-10-14",
    "constraint": "Arcane 30+",
    "protected": [
     "Arcane Blast",
@@ -470,16 +696,16 @@
     "allocation": {
      "Arcane": [
       [
+       "Wand Specialization",
+       2
+      ],
+      [
        "Arcane Focus",
        5
       ],
       [
        "Arcane Concentration",
        5
-      ],
-      [
-       "Arcane Geometry",
-       2
       ],
       [
        "Arcane Impact",
@@ -521,7 +747,7 @@
      "Fire": [
       [
        "Wake of Fire",
-       2
+       1
       ],
       [
        "Incineration",
@@ -529,271 +755,7 @@
       ],
       [
        "Improved Fireball",
-       5
-      ],
-      [
-       "Ignite",
-       5
-      ]
-     ],
-     "Frost": [
-      [
-       "Elemental Precision",
-       5
-      ]
-     ]
-    },
-    "split": "31/15/5",
-    "dps": 604.51,
-    "se": 0.103,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "31/15/5",
-    "dps": 604.51,
-    "se": 0.103,
-    "differs": [
-     [
-      "Arcane Geometry",
-      2
-     ],
-     [
-      "Magic Absorption",
-      2
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "runs": [
-    {
-     "entry": "arcane-dps",
-     "run": 1,
-     "simulated": 1592,
-     "best_screen": 603.03,
-     "best_split": "31/15/5",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 392,
-       "best": 601.25
-      },
-      {
-       "round": 1,
-       "simulated": 592,
-       "best": 602.18,
-       "predicted_top": 600.39
-      },
-      {
-       "round": 2,
-       "simulated": 792,
-       "best": 603.03,
-       "predicted_top": 601.22
-      },
-      {
-       "round": 3,
-       "simulated": 992,
-       "best": 603.03,
-       "predicted_top": 601.34
-      },
-      {
-       "round": 4,
-       "simulated": 1192,
-       "best": 603.03,
-       "predicted_top": 601.4
-      },
-      {
-       "round": 5,
-       "simulated": 1392,
-       "best": 603.03,
-       "predicted_top": 602.81
-      },
-      {
-       "round": 6,
-       "simulated": 1592,
-       "best": 603.03,
-       "predicted_top": 603.02
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      604.69,
-      604.69,
-      604.69,
-      604.69,
-      604.69,
-      604.69
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      604.7,
-      604.7,
-      604.7,
-      604.7,
-      604.7
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      604.51,
-      604.51
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 318,
-     "best_gap": 0.0,
-     "best_move": "1 Arcane Shielding -> Improved Counterspell"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Arcane Mind",
-     "importance": 0.2751
-    },
-    {
-     "feature": "Ignite",
-     "importance": 0.2437
-    },
-    {
-     "feature": "Arcane Power",
-     "importance": 0.1259
-    },
-    {
-     "feature": "Improved Channeling",
-     "importance": 0.0956
-    },
-    {
-     "feature": "Arcane Instability",
-     "importance": 0.0845
-    },
-    {
-     "feature": "Wand Specialization",
-     "importance": 0.0349
-    },
-    {
-     "feature": "Arcane Meditation",
-     "importance": 0.0341
-    },
-    {
-     "feature": "Arcane points",
-     "importance": 0.0154
-    },
-    {
-     "feature": "Arcane Resilience",
-     "importance": 0.0148
-    },
-    {
-     "feature": "Fire points",
-     "importance": 0.0142
-    },
-    {
-     "feature": "Arcane Concentration",
-     "importance": 0.0094
-    },
-    {
-     "feature": "Elemental Precision",
-     "importance": 0.0053
-    }
-   ],
-   "simulated_builds": 1924,
-   "simulated_fights": 2959000,
-   "minutes": 1.4,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-arcane-bis.gear.json"
-  },
-  "bis-raid": {
-   "class": "mage",
-   "spec": "Arcane",
-   "setting": "raid",
-   "entry": "arcane-dps",
-   "date": "2026-10-02",
-   "constraint": "Arcane 30+",
-   "protected": [
-    "Arcane Blast",
-    "Missile Barrage"
-   ],
-   "entries_screened": {},
-   "entries_searched": [
-    "arcane-dps"
-   ],
-   "winner": {
-    "allocation": {
-     "Arcane": [
-      [
-       "Arcane Focus",
-       5
-      ],
-      [
-       "Magic Absorption",
-       2
-      ],
-      [
-       "Arcane Concentration",
-       5
-      ],
-      [
-       "Arcane Resilience",
-       2
-      ],
-      [
-       "Arcane Impact",
-       3
-      ],
-      [
-       "Arcane Blast",
        1
-      ],
-      [
-       "Arcane Shielding",
-       1
-      ],
-      [
-       "Improved Counterspell",
-       1
-      ],
-      [
-       "Missile Barrage",
-       1
-      ],
-      [
-       "Presence of Mind",
-       1
-      ],
-      [
-       "Arcane Mind",
-       5
-      ],
-      [
-       "Arcane Instability",
-       3
-      ],
-      [
-       "Arcane Power",
-       1
-      ]
-     ],
-     "Fire": [
-      [
-       "Wake of Fire",
-       2
-      ],
-      [
-       "Incineration",
-       3
       ],
       [
        "Ignite",
@@ -803,85 +765,251 @@
      "Frost": [
       [
        "Improved Frostbolt",
-       2
+       5
       ],
       [
        "Elemental Precision",
        5
-      ],
-      [
-       "Ice Shards",
-       3
       ]
      ]
     },
     "split": "31/10/10",
-    "dps": 692.23,
-    "se": 0.114,
+    "dps": 582.81,
+    "se": 0.1308,
     "iterations": 100000
    },
    "runner_up": {
     "split": "31/10/10",
-    "dps": 692.23,
-    "se": 0.114,
+    "dps": 582.81,
+    "se": 0.1308,
     "differs": [
      [
       "Arcane Geometry",
       1
      ],
      [
-      "Arcane Resilience",
+      "Wand Specialization",
       1
      ],
      [
-      "Arcane Resilience",
+      "Wand Specialization",
       2
      ]
     ]
    },
    "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Wand Specialization",
+        2
+       ],
+       [
+        "Arcane Focus",
+        5
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Arcane Impact",
+        3
+       ],
+       [
+        "Arcane Blast",
+        1
+       ],
+       [
+        "Arcane Shielding",
+        1
+       ],
+       [
+        "Arcane Meditation",
+        3
+       ],
+       [
+        "Missile Barrage",
+        1
+       ],
+       [
+        "Presence of Mind",
+        1
+       ],
+       [
+        "Arcane Mind",
+        5
+       ],
+       [
+        "Arcane Instability",
+        3
+       ],
+       [
+        "Arcane Power",
+        1
+       ]
+      ],
+      "Fire": [
+       [
+        "Wake of Fire",
+        1
+       ],
+       [
+        "Incineration",
+        3
+       ],
+       [
+        "Improved Fireball",
+        1
+       ],
+       [
+        "Ignite",
+        5
+       ]
+      ],
+      "Frost": [
+       [
+        "Improved Frostbolt",
+        5
+       ],
+       [
+        "Elemental Precision",
+        5
+       ]
+      ]
+     },
+     "split": "31/10/10",
+     "dps": 582.81,
+     "se": 0.1308
+    },
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Wand Specialization",
+        1
+       ],
+       [
+        "Arcane Focus",
+        5
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Arcane Geometry",
+        1
+       ],
+       [
+        "Arcane Impact",
+        3
+       ],
+       [
+        "Arcane Blast",
+        1
+       ],
+       [
+        "Arcane Shielding",
+        1
+       ],
+       [
+        "Arcane Meditation",
+        3
+       ],
+       [
+        "Missile Barrage",
+        1
+       ],
+       [
+        "Presence of Mind",
+        1
+       ],
+       [
+        "Arcane Mind",
+        5
+       ],
+       [
+        "Arcane Instability",
+        3
+       ],
+       [
+        "Arcane Power",
+        1
+       ]
+      ],
+      "Fire": [
+       [
+        "Wake of Fire",
+        1
+       ],
+       [
+        "Incineration",
+        3
+       ],
+       [
+        "Improved Fireball",
+        1
+       ],
+       [
+        "Ignite",
+        5
+       ]
+      ],
+      "Frost": [
+       [
+        "Improved Frostbolt",
+        5
+       ],
+       [
+        "Elemental Precision",
+        5
+       ]
+      ]
+     },
+     "split": "31/10/10",
+     "dps": 582.81,
+     "se": 0.1308
+    }
+   ],
    "runs": [
     {
      "entry": "arcane-dps",
      "run": 1,
-     "simulated": 1413,
-     "best_screen": 692.76,
+     "simulated": 1193,
+     "best_screen": 584.77,
      "best_split": "31/10/10",
      "trace": [
       {
        "round": 0,
-       "simulated": 413,
-       "best": 691.28
+       "simulated": 393,
+       "best": 584.77
       },
       {
        "round": 1,
-       "simulated": 613,
-       "best": 692.47,
-       "predicted_top": 689.16
+       "simulated": 593,
+       "best": 584.77,
+       "predicted_top": 578.3
       },
       {
        "round": 2,
-       "simulated": 813,
-       "best": 692.67,
-       "predicted_top": 691.17
+       "simulated": 793,
+       "best": 584.77,
+       "predicted_top": 582.63
       },
       {
        "round": 3,
-       "simulated": 1013,
-       "best": 692.67,
-       "predicted_top": 691.95
+       "simulated": 993,
+       "best": 584.77,
+       "predicted_top": 582.66
       },
       {
        "round": 4,
-       "simulated": 1213,
-       "best": 692.67,
-       "predicted_top": 692.55
-      },
-      {
-       "round": 5,
-       "simulated": 1413,
-       "best": 692.76,
-       "predicted_top": 692.66
+       "simulated": 1193,
+       "best": 584.77,
+       "predicted_top": 583.66
       }
      ],
      "best_stage1_gap": 0.0,
@@ -894,106 +1022,105 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      692.2,
-      692.18,
-      692.18,
-      692.18,
-      692.18,
-      692.18
+      582.94,
+      582.94,
+      582.94,
+      582.94,
+      582.94,
+      582.94
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      692.51,
-      692.51,
-      692.51,
-      692.51,
-      692.51
+      582.64,
+      582.64,
+      582.64,
+      582.64,
+      582.64
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      692.23,
-      692.23
+      582.81,
+      582.81
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 285,
-     "best_gap": 0.0002,
-     "best_move": "3 Arcane Concentration -> Improved Channeling"
+     "neighbours": 255,
+     "best_gap": 0.0,
+     "best_move": "1 Arcane Shielding -> Improved Counterspell"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
-     "feature": "Arcane Mind",
-     "importance": 0.3327
-    },
-    {
-     "feature": "Ignite",
-     "importance": 0.2455
-    },
-    {
-     "feature": "Arcane Power",
-     "importance": 0.1432
-    },
-    {
-     "feature": "Arcane Instability",
-     "importance": 0.0973
-    },
-    {
-     "feature": "Fire points",
-     "importance": 0.0359
+     "feature": "Arcane Meditation",
+     "importance": 0.3288
     },
     {
      "feature": "Improved Channeling",
-     "importance": 0.0348
+     "importance": 0.2009
     },
     {
-     "feature": "Wand Specialization",
-     "importance": 0.0237
+     "feature": "Arcane Mind",
+     "importance": 0.1755
+    },
+    {
+     "feature": "Arcane Subtlety",
+     "importance": 0.0509
+    },
+    {
+     "feature": "Arcane Power",
+     "importance": 0.0353
+    },
+    {
+     "feature": "Arcane Instability",
+     "importance": 0.0319
+    },
+    {
+     "feature": "Ignite",
+     "importance": 0.0315
     },
     {
      "feature": "Arcane points",
-     "importance": 0.0115
+     "importance": 0.0189
     },
     {
-     "feature": "Incineration",
-     "importance": 0.0103
+     "feature": "Arcane Resilience",
+     "importance": 0.0176
     },
     {
-     "feature": "Arcane Shielding",
-     "importance": 0.0077
+     "feature": "Arcane Concentration",
+     "importance": 0.0166
+    },
+    {
+     "feature": "Arcane Geometry",
+     "importance": 0.0148
     },
     {
      "feature": "Wake of Fire",
-     "importance": 0.0075
-    },
-    {
-     "feature": "Arcane Impact",
-     "importance": 0.0064
+     "importance": 0.0131
     }
    ],
-   "simulated_builds": 1712,
-   "simulated_fights": 2681000,
-   "minutes": 1.6,
+   "simulated_builds": 1462,
+   "simulated_fights": 2371000,
+   "minutes": 1.2,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-arcane-bis.gear.json"
   },
-  "prebis-dummy": {
+  "bis-raid": {
    "class": "mage",
    "spec": "Arcane",
-   "setting": "dummy",
+   "setting": "raid",
    "entry": "arcane-dps",
-   "date": "2026-10-02",
+   "date": "2026-10-14",
    "constraint": "Arcane 30+",
    "protected": [
-    "Arcane Blast",
     "Missile Barrage"
    ],
    "entries_screened": {},
@@ -1004,16 +1131,16 @@
     "allocation": {
      "Arcane": [
       [
+       "Wand Specialization",
+       2
+      ],
+      [
        "Arcane Focus",
        5
       ],
       [
        "Arcane Concentration",
        5
-      ],
-      [
-       "Arcane Geometry",
-       2
       ],
       [
        "Arcane Impact",
@@ -1055,7 +1182,7 @@
      "Fire": [
       [
        "Wake of Fire",
-       2
+       1
       ],
       [
        "Incineration",
@@ -1063,7 +1190,7 @@
       ],
       [
        "Improved Fireball",
-       5
+       1
       ],
       [
        "Ignite",
@@ -1072,68 +1199,252 @@
      ],
      "Frost": [
       [
+       "Improved Frostbolt",
+       5
+      ],
+      [
        "Elemental Precision",
        5
       ]
      ]
     },
-    "split": "31/15/5",
-    "dps": 585.33,
-    "se": 0.095,
+    "split": "31/10/10",
+    "dps": 696.35,
+    "se": 0.1347,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "31/15/5",
-    "dps": 585.33,
-    "se": 0.095,
+    "split": "31/11/9",
+    "dps": 696.35,
+    "se": 0.1347,
     "differs": [
      [
-      "Arcane Geometry",
-      2
+      "Improved Frostbolt",
+      4
      ],
      [
-      "Arcane Subtlety",
-      2
+      "Improved Frostbolt",
+      5
+     ],
+     [
+      "Pyroblast",
+      1
      ]
     ]
    },
    "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Wand Specialization",
+        2
+       ],
+       [
+        "Arcane Focus",
+        5
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Arcane Impact",
+        3
+       ],
+       [
+        "Arcane Blast",
+        1
+       ],
+       [
+        "Arcane Shielding",
+        1
+       ],
+       [
+        "Arcane Meditation",
+        3
+       ],
+       [
+        "Missile Barrage",
+        1
+       ],
+       [
+        "Presence of Mind",
+        1
+       ],
+       [
+        "Arcane Mind",
+        5
+       ],
+       [
+        "Arcane Instability",
+        3
+       ],
+       [
+        "Arcane Power",
+        1
+       ]
+      ],
+      "Fire": [
+       [
+        "Wake of Fire",
+        1
+       ],
+       [
+        "Incineration",
+        3
+       ],
+       [
+        "Improved Fireball",
+        1
+       ],
+       [
+        "Ignite",
+        5
+       ]
+      ],
+      "Frost": [
+       [
+        "Improved Frostbolt",
+        5
+       ],
+       [
+        "Elemental Precision",
+        5
+       ]
+      ]
+     },
+     "split": "31/10/10",
+     "dps": 696.35,
+     "se": 0.1347
+    },
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Wand Specialization",
+        2
+       ],
+       [
+        "Arcane Focus",
+        5
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Arcane Impact",
+        3
+       ],
+       [
+        "Arcane Blast",
+        1
+       ],
+       [
+        "Arcane Shielding",
+        1
+       ],
+       [
+        "Arcane Meditation",
+        3
+       ],
+       [
+        "Missile Barrage",
+        1
+       ],
+       [
+        "Presence of Mind",
+        1
+       ],
+       [
+        "Arcane Mind",
+        5
+       ],
+       [
+        "Arcane Instability",
+        3
+       ],
+       [
+        "Arcane Power",
+        1
+       ]
+      ],
+      "Fire": [
+       [
+        "Wake of Fire",
+        1
+       ],
+       [
+        "Incineration",
+        3
+       ],
+       [
+        "Improved Fireball",
+        1
+       ],
+       [
+        "Ignite",
+        5
+       ],
+       [
+        "Pyroblast",
+        1
+       ]
+      ],
+      "Frost": [
+       [
+        "Improved Frostbolt",
+        4
+       ],
+       [
+        "Elemental Precision",
+        5
+       ]
+      ]
+     },
+     "split": "31/11/9",
+     "dps": 696.35,
+     "se": 0.1347
+    }
+   ],
    "runs": [
     {
      "entry": "arcane-dps",
      "run": 1,
-     "simulated": 1195,
-     "best_screen": 586.7,
-     "best_split": "31/15/5",
+     "simulated": 1198,
+     "best_screen": 696.84,
+     "best_split": "31/10/10",
      "trace": [
       {
        "round": 0,
-       "simulated": 395,
-       "best": 586.7
+       "simulated": 398,
+       "best": 696.84
       },
       {
        "round": 1,
-       "simulated": 595,
-       "best": 586.7,
-       "predicted_top": 583.45
+       "simulated": 598,
+       "best": 696.84,
+       "predicted_top": 695.54
       },
       {
        "round": 2,
-       "simulated": 795,
-       "best": 586.7,
-       "predicted_top": 586.01
+       "simulated": 798,
+       "best": 696.84,
+       "predicted_top": 696.83
       },
       {
        "round": 3,
-       "simulated": 995,
-       "best": 586.7,
-       "predicted_top": 586.51
+       "simulated": 998,
+       "best": 696.84,
+       "predicted_top": 696.84
       },
       {
        "round": 4,
-       "simulated": 1195,
-       "best": 586.7,
-       "predicted_top": 586.65
+       "simulated": 1198,
+       "best": 696.84,
+       "predicted_top": 696.84
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1146,37 +1457,473 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      585.26,
-      585.26,
-      585.26,
-      585.26,
-      585.26,
-      585.26
+      696.46,
+      696.46,
+      696.46,
+      696.46,
+      696.46,
+      696.46
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      585.02,
-      585.02,
-      585.02,
-      585.02,
-      585.02
+      696.61,
+      696.61,
+      696.61,
+      696.61,
+      696.61
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      585.33,
-      585.33
+      696.35,
+      696.35
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 318,
+     "neighbours": 262,
+     "best_gap": 0.0,
+     "best_move": "3 Improved Frostbolt -> Frostbite"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Arcane Blast",
+     "importance": 0.7488
+    },
+    {
+     "feature": "Arcane Mind",
+     "importance": 0.0433
+    },
+    {
+     "feature": "Arcane Resilience",
+     "importance": 0.0334
+    },
+    {
+     "feature": "Arcane Power",
+     "importance": 0.0328
+    },
+    {
+     "feature": "Ignite",
+     "importance": 0.0289
+    },
+    {
+     "feature": "Arcane Instability",
+     "importance": 0.023
+    },
+    {
+     "feature": "Improved Channeling",
+     "importance": 0.009
+    },
+    {
+     "feature": "Arcane Geometry",
+     "importance": 0.0074
+    },
+    {
+     "feature": "Magic Absorption",
+     "importance": 0.0064
+    },
+    {
+     "feature": "Arcane points",
+     "importance": 0.0056
+    },
+    {
+     "feature": "Frost points",
+     "importance": 0.0056
+    },
+    {
+     "feature": "Fire points",
+     "importance": 0.0054
+    }
+   ],
+   "simulated_builds": 1474,
+   "simulated_fights": 2397000,
+   "minutes": 1.4,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-arcane-bis.gear.json"
+  },
+  "prebis-dummy": {
+   "class": "mage",
+   "spec": "Arcane",
+   "setting": "dummy",
+   "entry": "arcane-dps",
+   "date": "2026-10-14",
+   "constraint": "Arcane 30+",
+   "protected": [
+    "Arcane Blast",
+    "Missile Barrage"
+   ],
+   "entries_screened": {},
+   "entries_searched": [
+    "arcane-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Arcane": [
+      [
+       "Wand Specialization",
+       2
+      ],
+      [
+       "Arcane Focus",
+       5
+      ],
+      [
+       "Arcane Concentration",
+       5
+      ],
+      [
+       "Arcane Impact",
+       3
+      ],
+      [
+       "Arcane Blast",
+       1
+      ],
+      [
+       "Arcane Shielding",
+       1
+      ],
+      [
+       "Arcane Meditation",
+       3
+      ],
+      [
+       "Missile Barrage",
+       1
+      ],
+      [
+       "Presence of Mind",
+       1
+      ],
+      [
+       "Arcane Mind",
+       5
+      ],
+      [
+       "Arcane Instability",
+       3
+      ],
+      [
+       "Arcane Power",
+       1
+      ]
+     ],
+     "Fire": [
+      [
+       "Wake of Fire",
+       1
+      ],
+      [
+       "Incineration",
+       3
+      ],
+      [
+       "Improved Fireball",
+       1
+      ],
+      [
+       "Ignite",
+       5
+      ]
+     ],
+     "Frost": [
+      [
+       "Improved Frostbolt",
+       5
+      ],
+      [
+       "Elemental Precision",
+       5
+      ]
+     ]
+    },
+    "split": "31/10/10",
+    "dps": 561.76,
+    "se": 0.1208,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "31/10/10",
+    "dps": 561.76,
+    "se": 0.1208,
+    "differs": [
+     [
+      "Arcane Shielding",
+      1
+     ],
+     [
+      "Arcane Shielding",
+      2
+     ],
+     [
+      "Wand Specialization",
+      1
+     ],
+     [
+      "Wand Specialization",
+      2
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Wand Specialization",
+        2
+       ],
+       [
+        "Arcane Focus",
+        5
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Arcane Impact",
+        3
+       ],
+       [
+        "Arcane Blast",
+        1
+       ],
+       [
+        "Arcane Shielding",
+        1
+       ],
+       [
+        "Arcane Meditation",
+        3
+       ],
+       [
+        "Missile Barrage",
+        1
+       ],
+       [
+        "Presence of Mind",
+        1
+       ],
+       [
+        "Arcane Mind",
+        5
+       ],
+       [
+        "Arcane Instability",
+        3
+       ],
+       [
+        "Arcane Power",
+        1
+       ]
+      ],
+      "Fire": [
+       [
+        "Wake of Fire",
+        1
+       ],
+       [
+        "Incineration",
+        3
+       ],
+       [
+        "Improved Fireball",
+        1
+       ],
+       [
+        "Ignite",
+        5
+       ]
+      ],
+      "Frost": [
+       [
+        "Improved Frostbolt",
+        5
+       ],
+       [
+        "Elemental Precision",
+        5
+       ]
+      ]
+     },
+     "split": "31/10/10",
+     "dps": 561.76,
+     "se": 0.1208
+    },
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Wand Specialization",
+        1
+       ],
+       [
+        "Arcane Focus",
+        5
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Arcane Impact",
+        3
+       ],
+       [
+        "Arcane Blast",
+        1
+       ],
+       [
+        "Arcane Shielding",
+        2
+       ],
+       [
+        "Arcane Meditation",
+        3
+       ],
+       [
+        "Missile Barrage",
+        1
+       ],
+       [
+        "Presence of Mind",
+        1
+       ],
+       [
+        "Arcane Mind",
+        5
+       ],
+       [
+        "Arcane Instability",
+        3
+       ],
+       [
+        "Arcane Power",
+        1
+       ]
+      ],
+      "Fire": [
+       [
+        "Wake of Fire",
+        1
+       ],
+       [
+        "Incineration",
+        3
+       ],
+       [
+        "Improved Fireball",
+        1
+       ],
+       [
+        "Ignite",
+        5
+       ]
+      ],
+      "Frost": [
+       [
+        "Improved Frostbolt",
+        5
+       ],
+       [
+        "Elemental Precision",
+        5
+       ]
+      ]
+     },
+     "split": "31/10/10",
+     "dps": 561.76,
+     "se": 0.1208
+    }
+   ],
+   "runs": [
+    {
+     "entry": "arcane-dps",
+     "run": 1,
+     "simulated": 1197,
+     "best_screen": 561.66,
+     "best_split": "31/10/10",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 397,
+       "best": 561.66
+      },
+      {
+       "round": 1,
+       "simulated": 597,
+       "best": 561.66,
+       "predicted_top": 557.8
+      },
+      {
+       "round": 2,
+       "simulated": 797,
+       "best": 561.66,
+       "predicted_top": 560.58
+      },
+      {
+       "round": 3,
+       "simulated": 997,
+       "best": 561.66,
+       "predicted_top": 560.82
+      },
+      {
+       "round": 4,
+       "simulated": 1197,
+       "best": 561.66,
+       "predicted_top": 561.56
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      562.13,
+      562.13,
+      562.13,
+      562.13,
+      562.13,
+      562.13
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      561.7,
+      561.7,
+      561.7,
+      561.7,
+      561.7
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      561.76,
+      561.76
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 255,
      "best_gap": 0.0,
      "best_move": "1 Arcane Shielding -> Improved Counterspell"
     }
@@ -1184,56 +1931,56 @@
    "other_entries": [],
    "important_features": [
     {
-     "feature": "Arcane Power",
-     "importance": 0.2736
+     "feature": "Arcane Meditation",
+     "importance": 0.2763
     },
     {
      "feature": "Arcane Mind",
-     "importance": 0.1902
-    },
-    {
-     "feature": "Ignite",
-     "importance": 0.1474
-    },
-    {
-     "feature": "Arcane Instability",
-     "importance": 0.1
-    },
-    {
-     "feature": "Wand Specialization",
-     "importance": 0.0717
+     "importance": 0.187
     },
     {
      "feature": "Improved Channeling",
-     "importance": 0.0474
+     "importance": 0.1648
     },
     {
-     "feature": "Fire points",
-     "importance": 0.0266
+     "feature": "Arcane Resilience",
+     "importance": 0.1038
     },
     {
-     "feature": "Magic Absorption",
-     "importance": 0.0201
+     "feature": "Arcane Geometry",
+     "importance": 0.0504
     },
     {
-     "feature": "Arcane Meditation",
-     "importance": 0.0197
+     "feature": "Arcane Instability",
+     "importance": 0.0414
+    },
+    {
+     "feature": "Arcane Power",
+     "importance": 0.0331
+    },
+    {
+     "feature": "Ignite",
+     "importance": 0.0203
     },
     {
      "feature": "Arcane points",
-     "importance": 0.0195
+     "importance": 0.0167
     },
     {
-     "feature": "Arcane Concentration",
-     "importance": 0.0092
+     "feature": "Wake of Fire",
+     "importance": 0.0162
     },
     {
-     "feature": "Elemental Precision",
-     "importance": 0.0071
+     "feature": "Arcane Subtlety",
+     "importance": 0.0118
+    },
+    {
+     "feature": "Improved Counterspell",
+     "importance": 0.0103
     }
    ],
-   "simulated_builds": 1527,
-   "simulated_fights": 2562000,
+   "simulated_builds": 1466,
+   "simulated_fights": 2375000,
    "minutes": 1.1,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-arcane-prebis.gear.json"
   },
@@ -1242,10 +1989,9 @@
    "spec": "Arcane",
    "setting": "raid",
    "entry": "arcane-dps",
-   "date": "2026-10-02",
+   "date": "2026-10-14",
    "constraint": "Arcane 30+",
    "protected": [
-    "Arcane Blast",
     "Missile Barrage"
    ],
    "entries_screened": {},
@@ -1256,24 +2002,16 @@
     "allocation": {
      "Arcane": [
       [
+       "Wand Specialization",
+       2
+      ],
+      [
        "Arcane Focus",
        5
       ],
       [
-       "Improved Channeling",
-       2
-      ],
-      [
-       "Magic Absorption",
-       2
-      ],
-      [
        "Arcane Concentration",
-       3
-      ],
-      [
-       "Arcane Resilience",
-       2
+       5
       ],
       [
        "Arcane Impact",
@@ -1288,8 +2026,8 @@
        1
       ],
       [
-       "Improved Counterspell",
-       1
+       "Arcane Meditation",
+       3
       ],
       [
        "Missile Barrage",
@@ -1315,11 +2053,15 @@
      "Fire": [
       [
        "Wake of Fire",
-       2
+       1
       ],
       [
        "Incineration",
        3
+      ],
+      [
+       "Improved Fireball",
+       1
       ],
       [
        "Ignite",
@@ -1329,75 +2071,251 @@
      "Frost": [
       [
        "Improved Frostbolt",
-       3
+       5
       ],
       [
        "Elemental Precision",
        5
-      ],
-      [
-       "Ice Shards",
-       2
       ]
      ]
     },
     "split": "31/10/10",
-    "dps": 671.67,
-    "se": 0.104,
+    "dps": 672.98,
+    "se": 0.1198,
     "iterations": 100000
    },
    "runner_up": {
     "split": "31/10/10",
-    "dps": 671.67,
-    "se": 0.104,
+    "dps": 672.98,
+    "se": 0.1198,
     "differs": [
      [
-      "Arcane Geometry",
-      2
+      "Improved Counterspell",
+      1
      ],
      [
-      "Improved Channeling",
+      "Wand Specialization",
+      1
+     ],
+     [
+      "Wand Specialization",
       2
      ]
     ]
    },
    "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Wand Specialization",
+        2
+       ],
+       [
+        "Arcane Focus",
+        5
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Arcane Impact",
+        3
+       ],
+       [
+        "Arcane Blast",
+        1
+       ],
+       [
+        "Arcane Shielding",
+        1
+       ],
+       [
+        "Arcane Meditation",
+        3
+       ],
+       [
+        "Missile Barrage",
+        1
+       ],
+       [
+        "Presence of Mind",
+        1
+       ],
+       [
+        "Arcane Mind",
+        5
+       ],
+       [
+        "Arcane Instability",
+        3
+       ],
+       [
+        "Arcane Power",
+        1
+       ]
+      ],
+      "Fire": [
+       [
+        "Wake of Fire",
+        1
+       ],
+       [
+        "Incineration",
+        3
+       ],
+       [
+        "Improved Fireball",
+        1
+       ],
+       [
+        "Ignite",
+        5
+       ]
+      ],
+      "Frost": [
+       [
+        "Improved Frostbolt",
+        5
+       ],
+       [
+        "Elemental Precision",
+        5
+       ]
+      ]
+     },
+     "split": "31/10/10",
+     "dps": 672.98,
+     "se": 0.1198
+    },
+    {
+     "allocation": {
+      "Arcane": [
+       [
+        "Wand Specialization",
+        1
+       ],
+       [
+        "Arcane Focus",
+        5
+       ],
+       [
+        "Arcane Concentration",
+        5
+       ],
+       [
+        "Arcane Impact",
+        3
+       ],
+       [
+        "Arcane Blast",
+        1
+       ],
+       [
+        "Arcane Shielding",
+        1
+       ],
+       [
+        "Improved Counterspell",
+        1
+       ],
+       [
+        "Arcane Meditation",
+        3
+       ],
+       [
+        "Missile Barrage",
+        1
+       ],
+       [
+        "Presence of Mind",
+        1
+       ],
+       [
+        "Arcane Mind",
+        5
+       ],
+       [
+        "Arcane Instability",
+        3
+       ],
+       [
+        "Arcane Power",
+        1
+       ]
+      ],
+      "Fire": [
+       [
+        "Wake of Fire",
+        1
+       ],
+       [
+        "Incineration",
+        3
+       ],
+       [
+        "Improved Fireball",
+        1
+       ],
+       [
+        "Ignite",
+        5
+       ]
+      ],
+      "Frost": [
+       [
+        "Improved Frostbolt",
+        5
+       ],
+       [
+        "Elemental Precision",
+        5
+       ]
+      ]
+     },
+     "split": "31/10/10",
+     "dps": 672.98,
+     "se": 0.1198
+    }
+   ],
    "runs": [
     {
      "entry": "arcane-dps",
      "run": 1,
-     "simulated": 1204,
-     "best_screen": 672.42,
+     "simulated": 1197,
+     "best_screen": 674.79,
      "best_split": "31/10/10",
      "trace": [
       {
        "round": 0,
-       "simulated": 404,
-       "best": 672.17
+       "simulated": 397,
+       "best": 674.79
       },
       {
        "round": 1,
-       "simulated": 604,
-       "best": 672.42,
-       "predicted_top": 671.25
+       "simulated": 597,
+       "best": 674.79,
+       "predicted_top": 674.15
       },
       {
        "round": 2,
-       "simulated": 804,
-       "best": 672.42,
-       "predicted_top": 671.77
+       "simulated": 797,
+       "best": 674.79,
+       "predicted_top": 674.79
       },
       {
        "round": 3,
-       "simulated": 1004,
-       "best": 672.42,
-       "predicted_top": 672.26
+       "simulated": 997,
+       "best": 674.79,
+       "predicted_top": 674.79
       },
       {
        "round": 4,
-       "simulated": 1204,
-       "best": 672.42,
-       "predicted_top": 672.35
+       "simulated": 1197,
+       "best": 674.79,
+       "predicted_top": 674.79
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1410,160 +2328,148 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      670.97,
-      670.97,
-      670.97,
-      670.97,
-      670.97,
-      670.97
+      672.68,
+      672.68,
+      672.68,
+      672.68,
+      672.68,
+      672.68
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      671.71,
-      671.71,
-      671.71,
-      671.71,
-      671.71
+      672.95,
+      672.95,
+      672.95,
+      672.95,
+      672.95
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      671.67,
-      671.67
+      672.98,
+      672.98
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 438,
-     "best_gap": 0.0006,
-     "best_move": "1 Improved Channeling -> Arcane Concentration"
+     "neighbours": 262,
+     "best_gap": 0.0007,
+     "best_move": "1 Wake of Fire -> Improved Fireball"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
-     "feature": "Arcane Mind",
-     "importance": 0.2944
-    },
-    {
-     "feature": "Arcane Power",
-     "importance": 0.2204
-    },
-    {
-     "feature": "Ignite",
-     "importance": 0.1524
-    },
-    {
-     "feature": "Arcane Instability",
-     "importance": 0.0745
+     "feature": "Arcane Blast",
+     "importance": 0.7391
     },
     {
      "feature": "Improved Channeling",
-     "importance": 0.0712
+     "importance": 0.0498
     },
     {
-     "feature": "Wand Specialization",
-     "importance": 0.0542
+     "feature": "Arcane Mind",
+     "importance": 0.0432
     },
     {
-     "feature": "Improved Fireball",
-     "importance": 0.0209
+     "feature": "Ignite",
+     "importance": 0.0379
     },
     {
-     "feature": "Fire points",
+     "feature": "Arcane Instability",
      "importance": 0.0202
     },
     {
-     "feature": "Incineration",
-     "importance": 0.0103
+     "feature": "Arcane Power",
+     "importance": 0.0175
     },
     {
-     "feature": "Wake of Fire",
-     "importance": 0.0102
+     "feature": "Magic Absorption",
+     "importance": 0.0118
+    },
+    {
+     "feature": "Arcane Geometry",
+     "importance": 0.0116
+    },
+    {
+     "feature": "Fire points",
+     "importance": 0.0053
+    },
+    {
+     "feature": "Frost points",
+     "importance": 0.0049
+    },
+    {
+     "feature": "Incineration",
+     "importance": 0.0048
     },
     {
      "feature": "Arcane points",
-     "importance": 0.0089
-    },
-    {
-     "feature": "Arcane Impact",
-     "importance": 0.0089
+     "importance": 0.0046
     }
    ],
-   "simulated_builds": 1656,
-   "simulated_fights": 2931000,
-   "minutes": 1.6,
+   "simulated_builds": 1473,
+   "simulated_fights": 2396000,
+   "minutes": 1.5,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-arcane-prebis.gear.json"
   }
  },
+ "commit": "2ce8265",
  "spells_done": {
-  "date": "2026-10-01",
+  "date": "2026-10-14",
   "lines_kept": 0
  },
  "compare": {
+  "setting": "dummy",
   "dps": {
    "winner": {
     "entry": "arcane-dps",
-    "dps": 604.71,
-    "se": 0.102
+    "dps": 582.64,
+    "se": 0.131
    },
    "arcane-blast-raid": {
     "entry": "arcane-dps",
-    "dps": 602.88,
-    "se": 0.106
+    "dps": 569.02,
+    "se": 0.13
    }
   },
   "best_hand": "arcane-blast-raid",
-  "gain_vs_hand": 0.003
- },
- "parse": {
-  "bis-dummy": {
-   "entry": "arcane-dps",
-   "dps": 691.7,
-   "se": 0.115
-  },
-  "bis-raid": {
-   "entry": "arcane-dps",
-   "dps": 692.19,
-   "se": 0.115
-  },
-  "gain": 0.0007,
-  "vs_parse": null
- },
- "builds": {
-  "written": [],
-  "superseded": [],
-  "date": "2026-10-03",
-  "setting": "raid",
-  "why": "confirms arcane-blast-raid (+0.06% in a full raid)"
- },
- "tidied": {
-  "bis-dummy": null,
-  "bis-raid": null,
-  "prebis-dummy": null,
-  "prebis-raid": null
+  "gain_vs_hand": 0.0239
  },
  "compare_raid": {
   "setting": "raid",
   "dps": {
    "winner": {
     "entry": "arcane-dps",
-    "dps": 691.95,
-    "se": 0.114
+    "dps": 696.52,
+    "se": 0.134
    },
    "arcane-blast-raid": {
     "entry": "arcane-dps",
-    "dps": 691.54,
-    "se": 0.113
+    "dps": 694.01,
+    "se": 0.127
    }
   },
   "best_hand": "arcane-blast-raid",
-  "gain_vs_hand": 0.0006
+  "gain_vs_hand": 0.0036
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-10-15",
+  "setting": "raid",
+  "why": "confirms arcane-blast-raid (+0.36% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": null,
+  "prebis-dummy": null,
+  "prebis-raid": null
  }
 }

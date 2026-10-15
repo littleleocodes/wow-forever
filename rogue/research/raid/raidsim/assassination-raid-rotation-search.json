@@ -2,41 +2,13 @@
  "dummy": {
   "class": "rogue",
   "spec": "assassination-raid",
-  "date": "2026-10-10",
+  "date": "2026-10-14",
   "commit": "2ce8265",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "ui/specs/rogue/dps/apls/forever_mutilate.apl.json",
   "start": "ui\\specs\\rogue\\dps\\apls\\forever_mutilate.apl.json",
-  "builds": [
-   {
-    "label": "open winner",
-    "talents": "00530310311301-311333010015142-002"
-   },
-   {
-    "label": "assassination-seal-fate-raid",
-    "talents": "0053031232150005-305313000013-002",
-    "protect_only": true
-   },
-   {
-    "label": "sim preset: Mutilate",
-    "talents": "00530310551021051-302303202004",
-    "protect_only": true
-   },
-   {
-    "label": "assassination-mutilate-raid",
-    "talents": "0053031252112005-305313000015",
-    "protect_only": true
-   },
-   {
-    "label": "assassination-ml-raid",
-    "talents": "0053031052150005-305313000013-002",
-    "protect_only": true
-   }
-  ],
-  "tuned_on": [
-   "open winner"
-  ],
+  "builds": [],
   "iterations": 3000,
   "confirm": 20000,
   "changes": [
@@ -119,98 +91,32 @@
     "gain_seed2": 0.027516560637847354,
     "candidates": 407,
     "pass": 8
+   },
+   {
+    "round": 11,
+    "change": "spell probe: insert at the top: if auraIsInactive: cast Adrenaline Rush",
+    "gain_seed1": 0.0193,
+    "gain_seed2": 0.018,
+    "candidates": 36,
+    "pass": 9
    }
   ],
   "final": {
-   "dummy": {
-    "open winner": {
-     "before": 365.88907177719926,
-     "after": 395.9246371294967,
-     "base": 365.88907177719926,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "assassination-seal-fate-raid": {
-     "before": 154.16804845070493,
-     "after": 421.5031481621357,
-     "base": 154.16804845070493,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "sim preset: Mutilate": {
-     "before": 345.25050894578925,
-     "after": 386.317330122219,
-     "base": 345.25050894578925,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "assassination-mutilate-raid": {
-     "before": 149.30174466994282,
-     "after": 409.4715462337547,
-     "base": 149.30174466994282,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "assassination-ml-raid": {
-     "before": 154.16804845070493,
-     "after": 410.3972055737526,
-     "base": 154.16804845070493,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    }
-   }
+   "dummy": {}
   },
   "first_date": "2026-09-28",
-  "passes": 8
+  "passes": 9
  },
  "raid": {
   "class": "rogue",
   "spec": "assassination-raid",
-  "date": "2026-10-10",
+  "date": "2026-10-14",
   "commit": "2ce8265",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/rogue/dps/apls/forever_mutilate.apl.json",
   "start": "ui\\specs\\rogue\\dps\\apls\\forever_mutilate.apl.json",
-  "builds": [
-   {
-    "label": "open winner",
-    "talents": "00530310311301-311333010015142-002"
-   },
-   {
-    "label": "assassination-ml-raid",
-    "talents": "0053031052150005-305313000013-002",
-    "protect_only": true
-   },
-   {
-    "label": "sim preset: Mutilate",
-    "talents": "00530310551021051-302303202004",
-    "protect_only": true
-   },
-   {
-    "label": "assassination-mutilate-raid",
-    "talents": "0053031252112005-305313000015",
-    "protect_only": true
-   },
-   {
-    "label": "assassination-seal-fate-raid",
-    "talents": "0053031232150005-305313000013-002",
-    "protect_only": true
-   }
-  ],
-  "tuned_on": [
-   "open winner"
-  ],
+  "builds": [],
   "iterations": 3000,
   "confirm": 20000,
   "changes": [
@@ -245,58 +151,20 @@
     "gain_seed2": 0.002006649565002183,
     "candidates": 336,
     "pass": 9
+   },
+   {
+    "round": 5,
+    "change": "spell probe: insert in the middle: if auraIsInactive: cast Adrenaline Rush",
+    "gain_seed1": 0.0146,
+    "gain_seed2": 0.0141,
+    "candidates": 36,
+    "pass": 11
    }
   ],
   "final": {
-   "raid": {
-    "open winner": {
-     "before": 720.8750868040286,
-     "after": 717.8581618010642,
-     "base": 720.8750868040286,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "assassination-ml-raid": {
-     "before": 311.9326932834489,
-     "after": 707.8155788126683,
-     "base": 311.9326932834489,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "sim preset: Mutilate": {
-     "before": 673.5602809775609,
-     "after": 671.8984380620847,
-     "base": 673.5602809775609,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "assassination-mutilate-raid": {
-     "before": 308.2725017991535,
-     "after": 688.3938208226427,
-     "base": 308.2725017991535,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "assassination-seal-fate-raid": {
-     "before": 311.9326932834489,
-     "after": 702.4957103701706,
-     "base": 311.9326932834489,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    }
-   }
+   "raid": {}
   },
   "first_date": "2026-09-28",
-  "passes": 10
+  "passes": 11
  }
 }

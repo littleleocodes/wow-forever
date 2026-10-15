@@ -69,7 +69,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-be
 
 ## Rotation (community simulator, raid setting)
 
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-10-09, 3 changes to the base rotation; third-seed check: feral-bear-tank 544 -> 541 DPS (-0.4%), sim preset: Bear Tank 0/31/20 501 -> 506 DPS (+0.9%), opt-feral-bear-tank-raid-tank 544 -> 541 DPS (-0.4%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-14, 3 changes to the base rotation; third-seed check: deep: tank 544 -> 541 DPS (-0.4%), feral-bear-tank 544 -> 541 DPS (-0.4%), sim preset: Bear Tank 0/31/20 501 -> 506 DPS (+0.9%), opt-feral-bear-tank-raid-tank 544 -> 541 DPS (-0.4%)):
   1. threshold 25 -> 50: if rage ≥ 25: cast Maul (+0.9%, pass 1)
   2. move down below 'if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate': cast Primal Bite (+0.6%, pass 1)
   3. insert before the filler: cast Barkskin (+2.2%, pass 3)
@@ -88,7 +88,7 @@ Damage by ability (threat for tanks):
 
 | Ability | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) |
 |---|---|
-| Lacerate | 58% |
+| Lacerate | 57% |
 | Maul | 28% |
 | Auto Attack | 11% |
 | Retribution Aura | 1% |

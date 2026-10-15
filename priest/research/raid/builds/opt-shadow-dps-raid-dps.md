@@ -66,11 +66,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-d
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md)** | ours: optimizer | 18/0/33 | 592 | +0.0% | 698 | +0.0% | 0 s |
-| 2 | *Shadow* | community simulator | - | 591 | -0.2% | 695 | -0.4% | 0 s |
-| 3 | *Shadow 15/0/36* | community simulator | - | 590 | -0.3% | 695 | -0.4% | 0 s |
-| 4 | *Smite* | community simulator | - | 217 | -63.4% | 261 | -62.6% | 3 s |
-| 5 | *Smite 31/17/3* | community simulator | - | 217 | -63.4% | 261 | -62.6% | 3 s |
+| 1 | **[`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md)** | ours: optimizer | 18/0/33 | 591 | +0.0% | 696 | +0.0% | 0 s |
+| 2 | *Shadow* | community simulator | - | 589 | -0.3% | 693 | -0.4% | 0 s |
+| 3 | *Shadow 15/0/36* | community simulator | - | 589 | -0.3% | 693 | -0.4% | 0 s |
+| 4 | *Smite* | community simulator | - | 217 | -63.3% | 260 | -62.7% | 1 s |
+| 5 | *Smite 31/17/3* | community simulator | - | 217 | -63.3% | 260 | -62.7% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -90,7 +90,7 @@ Before the pull: at -1s: cast Shadowform.
 | 1 | use every other cooldown when ready | as ready |
 | 2 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain | 2.5 |
 | 3 | strict sequence: cast Inner Focus; cast Devouring Plague | 0.7 |
-| 4 | cast Shadow Word: Death | 3.8 |
+| 4 | cast Shadow Word: Death | 3.7 |
 | 5 | cast Mind Blast | 7.0 |
 | 6 | channel Mind Flay | as ready |
 
@@ -100,7 +100,7 @@ Damage by ability:
 
 | Ability | [`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md) |
 |---|---|
-| Mind Flay | 47% |
+| Mind Flay | 46% |
 | Shadow Word: Pain | 21% |
 | Mind Blast | 20% |
 | Shadow Word: Death | 10% |

@@ -8,8 +8,8 @@
 
 **Other setups of this spec.** This build is the Shadow Bolt setup. The spec's best build for each other setup, in a full raid:
 
-- Fire: [Destruction (optimized, fire)](../research/raid/builds/opt-fire-destro-raid-raid-dps.md) (10/11/30), 692 DPS in a full raid — [open the talent tree](https://talentsforever.com/warlock/60/253-0050203001-055030510310025-6)
-- Incinerate: [Destruction — Incinerate](../research/raid/builds/destruction-incinerate-raid.md) (9/11/31), 672 DPS in a full raid — [open the talent tree](https://talentsforever.com/warlock/60/153-0050203001-0050245103101351-6)
+- Fire: [Destruction (optimized, fire)](../research/raid/builds/opt-fire-destro-raid-raid-dps.md) (10/11/30), 685 DPS in a full raid — [open the talent tree](https://talentsforever.com/warlock/60/253-0050203001-055030510310025-6)
+- Incinerate: [Destruction — Incinerate](../research/raid/builds/destruction-incinerate-raid.md) (9/11/31), 665 DPS in a full raid — [open the talent tree](https://talentsforever.com/warlock/60/153-0050203001-0050245103101351-6)
 
 ## How to play
 
@@ -65,22 +65,20 @@ Destruction in a raid is still a **Shadow Bolt** spec: you sacrifice the Imp for
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 710 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 705 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 712 | [9/11/31](https://talentsforever.com/warlock/60/252-0050203001-055030510310035-6) |
-| Phase 1 BiS | 744 | [9/11/31](https://talentsforever.com/warlock/60/252-0050203001-055030510310035-6) (ties this build) |
+| Pre-BiS | 683 | [9/11/31](https://talentsforever.com/warlock/60/252-0050203001-055030510310035-6) |
+| Phase 1 BiS | 722 | [9/11/31](https://talentsforever.com/warlock/60/252-0050203001-055030510310035-6) (ties this build) |
 
-*Gear-tier numbers searched on 2026-10-02, on an older simulator build than the rest of this page (before beta 70291 and the 2026-10-09 audit that took Atiesh out of the full raid): they run 3-7% high and can order the specs differently than the full-raid ranking. The searches are queued to run again.*
-
-**The gear** (average item level: Pre-BiS 62.5; Phase 1 BiS 65.8; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 62.4; Phase 1 BiS 65.8; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
-| Head | [Spellweaver's Turban](https://www.wowhead.com/forever/item=22267) · *General Drakkisath, Blackrock Spire* | [Spellweaver's Turban](https://www.wowhead.com/forever/item=22267) · *General Drakkisath, Blackrock Spire* |
+| Head | [Spellweaver's Turban](https://www.wowhead.com/forever/item=22267) · *General Drakkisath, Blackrock Spire*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11648) | [Spellweaver's Turban](https://www.wowhead.com/forever/item=22267) · *General Drakkisath, Blackrock Spire*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11648) |
 | Neck | [Nacreous Shell Necklace](https://www.wowhead.com/forever/item=22403) · *Cannon Master Willey, Stratholme* | [Choker of the Fire Lord](https://www.wowhead.com/forever/item=18814) · *Ragnaros, Molten Core* |
 | Shoulders | [Rugged Mantle of the Timbermaw](https://www.wowhead.com/forever/item=227808) | [Rugged Mantle of the Timbermaw](https://www.wowhead.com/forever/item=227808) |
 | Back | [Crystalline Threaded Cape](https://www.wowhead.com/forever/item=20697) · *world drop*<br>+ [Enchant Cloak - Lesser Fire Resistance](https://www.wowhead.com/forever/spell=1248239) | [Crystalline Threaded Cape](https://www.wowhead.com/forever/item=20697) · *world drop*<br>+ [Enchant Cloak - Lesser Fire Resistance](https://www.wowhead.com/forever/spell=1248239) |
@@ -88,23 +86,23 @@ Destruction in a raid is still a **Shadow Bolt** spec: you sacrifice the Imp for
 | Wrist | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186)<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) |
 | Hands | [Hands of Power](https://www.wowhead.com/forever/item=13253) · *Quartermaster Zigris, Blackrock Spire* | [Hands of Power](https://www.wowhead.com/forever/item=13253) · *Quartermaster Zigris, Blackrock Spire* |
 | Waist | [Knowledge of the Timbermaw](https://www.wowhead.com/forever/item=228190) | [Mana Igniting Cord](https://www.wowhead.com/forever/item=19136) · *Molten Core* |
-| Legs | [Skyshroud Leggings](https://www.wowhead.com/forever/item=13170) · *Highlord Omokk, Blackrock Spire* | [Nemesis Leggings](https://www.wowhead.com/forever/item=16930) · *Ragnaros, Molten Core* |
+| Legs | [Skyshroud Leggings](https://www.wowhead.com/forever/item=13170) · *Highlord Omokk, Blackrock Spire*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11648) | [Nemesis Leggings](https://www.wowhead.com/forever/item=16930) · *Ragnaros, Molten Core*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11648) |
 | Feet | [Sorcerer's Boots](https://www.wowhead.com/forever/item=22064)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) | [Sorcerer's Boots](https://www.wowhead.com/forever/item=22064)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) |
-| Finger | [Rune Band of Wizardry](https://www.wowhead.com/forever/item=22339) · *Lord Valthalak, Blackrock Spire* | [Rune Band of Wizardry](https://www.wowhead.com/forever/item=22339) · *Lord Valthalak, Blackrock Spire* |
 | Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=234439) | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
+| Finger | [Elemental Focus Band](https://www.wowhead.com/forever/item=20682) | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
 | Trinket | [Briarwood Reed](https://www.wowhead.com/forever/item=12930) · *Jed Runewatcher, Blackrock Spire* | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) · *Magmadar, Molten Core* |
 | Trinket | [Royal Seal of Eldre'Thalas](https://www.wowhead.com/forever/item=18467) · *quest: Harnessing Shadows* | [Briarwood Reed](https://www.wowhead.com/forever/item=12930) · *Jed Runewatcher, Blackrock Spire* |
 | Main hand | [Elemental Attuned Blade](https://www.wowhead.com/forever/item=20698) · *world drop*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) | [Azuresong Mageblade](https://www.wowhead.com/forever/item=17103) · *Golemagg the Incinerator, Molten Core*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) |
 | Off hand | [Scepter of Interminable Focus](https://www.wowhead.com/forever/item=22329) · *Stratholme* | [Scepter of Interminable Focus](https://www.wowhead.com/forever/item=22329) · *Stratholme* |
 | Ranged/relic | [Bonecreeper Stylus](https://www.wowhead.com/forever/item=13938) · *Darkmaster Gandling, Scholomance* | [Bonecreeper Stylus](https://www.wowhead.com/forever/item=13938) · *Darkmaster Gandling, Scholomance* |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://elliotwood.github.io/Forever/forever/warlock/dps/#eJzMlU1oK1UUx3PuTDI3x/a99D6lk/GDMdBHDEy4M2Fs0k3StyquKrgQCtqkSZuEkoRMFhU31VYUkSpm1VDQKqUt2BrcWF35FUwhSjcKWqviRhcugko2bmQm0xTaLlyk8M4iOXP+98z9/edcuDhCIQAyqBAGDiw4eCIc4pCCWXgWKrAKoOwhFQJ+pYIi/fcAUKRrH9q/v/49ihL9YRvkVYI+elyS35VQol/sgHx6CwXaWkKR/twbRYH+tYgSbX4A8psSivTLQ7v961170cs5FOn7bwFK9MdtkNt3UKSfHILdsxzidL0QaBfU3S0If7sBvJeZfe8reB3IeuFtIL3MHvw+3YR3duAImjMnsFG4hxeePiWPGaahcW5yg8c41zVumjzGTZ3HdM5jZpsIJ+SB38g+xTtIFR+KtLsBIQm9KGimhQ+ipHhRoPtzIT9K6NX0qGmxR5WHcSx0G0c/AkSRfvbqLCMBr9Nt54bCMczu4ljkNvUx8pRHcd6nm5ZTEhnJuKVJc0IRkchjrA7suXRl+flypaYa3HhS07nGjSl1IZ8uLeWyarmqprPZXFbNvKDW8jm1Wq6la4VySbVy6epCXg1buZxqZbRqupDVzkWtL0aLVrn0hKL/T6g4n7A9B3oZJipkytO32wcftEVNx+7HdbhOjrny2hvAXrxkjCc0Y3KoxoIYiNyigvNZfSgiMSfcoTFUBkNlIUXF8chDVGRS0ZY/n1Nog7hZ/49tXR6DTRsfKu0UchbFYGSciowWbbhfWqD4G8RNr0yIW4orXY83ecN4Zxd4Z1fxDBfvrAWseInOPsP6UOn60/ynfv1eieHvFVivw+AUnbZAFv4gbegS4yXB40Qi1SAjiEgpqCQMcRLaF/y24FldTAUbm3YcJx9fdOL7pNElsqgmI23iua+iljrPbjTuHgx9n8Q3nU5nZL6ZmnYLqXl4DWATCuXuK8fPfJdMOFXPSXLaXtnp/Jl8up/8lIwI9Gj83iMXF0b/2ptxLr48VGAFVth/AwCvh3sA); Phase 1 BiS: [full raid](https://elliotwood.github.io/Forever/forever/warlock/dps/#eJzMlU1oK1UUx3PuTDo3x7730vuUTsYPxkAfMTDhzoSxSTdJuyquIrgQCtqkSZuE0oRMFhU3VVMqIhUaumgoqIWiFVuCG6ur+hFIMWo3ClKL4kYXLoJKN4LITKYptF24SMGzSM6c/71zf/85Fw4OU/CDDCqEgAML9J8IhxgkIQXPQxlWAJQPkAp+n1JBkf69DyjSfzbs35//vIMS/eFdkFcISvR4E+R3JJTo57sgn95FgbYWUKRHm/banRqgRJsfgvyWhCL94sAufuVItTqgQF/NoUS/XQW5fR9F+smBXftjMchpreBvF9T3tiH0zTrw80xq50t4A0itsAHkPPM+/DrZhLd34RCa0yewXpjCS1efkicM09A4N7nBo5zrGjdNHuWmzqM651GzTYQT8tAvZI/ifaTKEIq0uw5BCb0oaKaFD6OkeFGgezNBH0ro1fSIabHHlUdxJHgP73wEaBtcSzHi9zq7j9ZSzFA4htgDHAnfo0OMPONRnPfppuWUREYybmncHFNEJPIIqwN7IV1efLFUrqoGN57WdK5xY0Kdy6eXFnJZtVRR09lsLqtmXlKr+ZxaKVXT1UJpSbVy6cpcXg1ZuZxqZbRKupDVLkStJ0aKVmnpKUX/j1AxPmZ79p9nmKiQCU/Pbg+8vy1iOnY/rsNNctSVX3sT2MtXjPG4ZowP1FgA/eG7VHA+6xCKSMwxt2kMlX5TWVBRcTT8CBWZVLTlz2YU2iBu1vtj21fbYNPGBko7gZxFMBAepSKjRRvupxYovgZx02sd4pbiSjfjjd8y3tkl3tl1PMPFO2sBK16hs++wPlC6Xjf/qt98VnzwZ/lrdejfotMWyMJvpA1dYrwieJyIJxtkGBEpBZWEIEaCe4LPFjwr88lAY8uO48ST8058nzC6RBbVRLhNPP+rqCYvsluNB/sDPyf+dafTGZ5tJifdQnIWXgfYgkKpu3r83HeJuFP1nCQm7ZWdzu+JZ3vJj4mwQA9Hpx67HBi9wTftjL48lGEZltm/AwA4PHpy).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://elliotwood.github.io/Forever/forever/warlock/dps/#eJzMlU+IG3UUx/N+89vM29fdbfZXZWfHP4yBLTEw4TcTxk32kmxPxdMKHoSCNmmyTUJJQiZIxctqVxSRVcypoaCrlLpga/Bi9aRiMCtR9qKgdVUE0YOHUCUXLzKTaRa2e/CQgu+Sl/ed37zPd94PHs0gREADA2IgQSyO/zEJKcjCGjwFddgA0G8QKpFp/VlS8Z/roP12jDhe+gCI4y9/zZKK32+DtsEojLtV7W2VVPz8Kmi35kjB7nni+NNwlsJ4e907qGLnfdBeV4njl9fmiONX20AKvlgkju++AaTiD9ug9U4Qx49veMrtC1GJm+VIr2xcuwKxb7ZADvNr73wBrwLbLL8JbJh/D35f7cBbV+EmdE7vwVb5FB04+4Q9bDu2KaUjbZmU0jKl48ikdCyZtKRMOj2m7LFjv7IdpBOEepg4DrYgqtIUKabj0n2k6lOk4M6Z6DSpNGVaCccVD+kP0Hz0OM1+CEQcP315TbDIlH/ay21dUkycpPn4cQwL9nhI999nOa5f4oLlg9Kys6RzYtq8aIF4Ole/8Eyt3jRsaT9mWtKU9opxrpSrni8WjFrDyBUKxYKRf85olopGo9bMNcu1quEWc41zJSPmFouGmzcbuXLBvCOaIzFRcWvVR3XrP0Kl5JLnOTLMC66zldDI7gh8fCzh+HY/asFRcjKQL70G4vlDxmTatJcnamyRIvE5VPzPGiZOzFkKhiZIHw9VRHWDFuL3IxdqxZM/O6NjmwXZ6EdcOTwGjzY1UdoVkiJBi/EF5AIrHtzPXdCn2yxI75qQdPVAOhpv+R7j7R/g7d+NZwd4+10QlUN03h22Jko3mubfraN7pSffK7LZgvEtutUFTfmD9WDA7BeUkB/pbJvNEBEiGCwGKRbdUaY9IbSxnl1sX/ZiN/PIuh/fZewB07iRifdY6H8Vzeyd7J7GyesT75P+ut/vz5ztZFeDQvYsvAJwGcq1wUu7T36bSfvV0F5m1Xuy3/8z88Qo+TETV/DmwqkHDxbGaPmd9tdfCepwES6KfwcAc8l9HA==); Phase 1 BiS: [full raid](https://elliotwood.github.io/Forever/forever/warlock/dps/#eJzMlU9oK1UUxnPuTDo35/W9l96ndDL+YQy0xMCEOxPGJt0k7aq4iuBCKGiTJm0SShMyWVTcVE2piFRo6KKhoBaKFqwEN1ZXVQykGLUbBalFEUQXLoJKN4LITKYptF24SOGdxcyZ882d+/vmXDg4TMEPMqgQAg4s0H8iHGKQhBS8AGVYBVCaSAW/T1lBif5zAPKvd1Ck/24CivTnv+6iRH94D+RVghI93gL5XQkl+sUeyKf3UKCtRRTp0RagRHdrzlKJNj8E+W0JRfrVFvSvtTqgQF/LoUS/XQO5/QBF+ulHdu3PpSCntYK/XVDf34HQNxvAzzOp3S/hTSC1wiaQ88wH8NtUE97Zg0NozpzARmEaL719Rp40TEPj3OQGj3Kua9w0eZSbOo/qnEfNNhFOyJ1fyD7FB0iVIRRpdwOCEnpR0EwLH0FJ8aJA92eDPpTQq+kR02JPKI/hSPA+3v0Y0Pa4nmLE73VWH62nmKFwDLFxHAnfp0OMPOtRnO/ppuWUREYybmnCHFNEJPIIqwN7MV1eeqlUrqoGN57RdK5xY1Kdz6eXF3NZtVRR09lsLqtmXlar+ZxaKVXT1UJpWbVy6cp8Xg1ZuZxqZbRKupDVLkStJ0aKVmn5aUX/n1AxPmZ79p9nmKiQSU/Pbg+8vyxiOnY/qcNNctSVX38L2CtXjPG4ZkwM1FgA/eF7VHB+6xCKSMwxt2kMlX5TWVBRcTT8KBWZVLTlz2cV2iBu1ruxnattsGljA6WdRM4iGAiPUpHRog33UwsUX4O46bUOcUtxpZvxJm4Z7+wS7+w6nuHinbWAFa/Q2WdYHyhdr5t/12/eKz74vfy1OvRP0WkLZOF30oYuMV4VPE7Ekw0yjIiUgkpCECPBfcFnC57VhWSgsW3HceKpBSe+TxhdIotqItwmnocqqsmL7FZj/GDg+8S/7nQ6w3PN5JRbSM7BGwDbUCh1146f/y4Rd6qek8SU/Wan80fiuV7yYyIs0MPR6ccvB0Zv/M04AzAPZViBFfbfALRvfIM=).
 
 ## Other builds of this spec
 
-- [Destruction (optimized, fire)](../research/raid/builds/opt-fire-destro-raid-raid-dps.md) (10/11/30, 692 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/253-0050203001-055030510310025-6)
-- [Destruction — Incinerate](../research/raid/builds/destruction-incinerate-raid.md) (9/11/31, 672 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/153-0050203001-0050245103101351-6)
+- [Destruction (optimized, fire)](../research/raid/builds/opt-fire-destro-raid-raid-dps.md) (10/11/30, 685 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/253-0050203001-055030510310025-6)
+- [Destruction — Incinerate](../research/raid/builds/destruction-incinerate-raid.md) (9/11/31, 665 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/153-0050203001-0050245103101351-6)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-14 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-15 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
 

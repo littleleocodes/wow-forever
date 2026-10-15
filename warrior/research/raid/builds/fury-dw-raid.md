@@ -74,12 +74,12 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`fury-open-raid`](fury-open-raid.md) | ours: hand draft | 18/31/2 | 528 | +0.0% | 929 | +0.0% | 0 s |
-| 2 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 19/32/0 | 508 | -3.8% | 885 | -4.7% | 0 s |
-| 3 | **[`fury-dw-raid`](fury-dw-raid.md)** | ours: hand draft | 13/38/0 | 501 | -5.1% | 884 | -4.8% | 0 s |
-| 4 | *DPS* | community simulator | - | 496 | -6.1% | 884 | -4.8% | 0 s |
-| 5 | *Fury 17/34/0* | community simulator | - | 482 | -8.8% | 861 | -7.4% | 0 s |
-| 6 | *Arms 39/12/0* | community simulator | - | 352 | -33.4% | 649 | -30.1% | 0 s |
+| 1 | [`fury-open-raid`](fury-open-raid.md) | ours: hand draft | 18/31/2 | 516 | +0.0% | 917 | +0.0% | 0 s |
+| 2 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 19/32/0 | 496 | -4.0% | 879 | -4.1% | 0 s |
+| 3 | **[`fury-dw-raid`](fury-dw-raid.md)** | ours: hand draft | 13/38/0 | 489 | -5.2% | 875 | -4.6% | 0 s |
+| 4 | *DPS* | community simulator | - | 483 | -6.4% | 874 | -4.7% | 0 s |
+| 5 | *Fury 17/34/0* | community simulator | - | 470 | -9.0% | 850 | -7.3% | 0 s |
+| 6 | *Arms 39/12/0* | community simulator | - | 344 | -33.5% | 645 | -29.6% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -126,8 +126,8 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
 | # | Priority (the first line whose condition holds is cast) | [`fury-dw-raid`](fury-dw-raid.md) casts/min |
 |---|---|---|
 | 1 | if (time left in the fight ≤ 45s or time left in the fight ≥ 211.5s): cast Death Wish | 0.3 |
-| 2 | if execute phase (E20): cast Execute | 6.7 |
-| 3 | cast Bloodthirst | 7.6 |
+| 2 | if execute phase (E20): cast Execute | 6.6 |
+| 3 | cast Bloodthirst | 7.5 |
 | 4 | if time left in the fight ≤ 33.75s: cast Recklessness | 0.3 |
 | 5 | cast Goblin Sapper Charge | as ready |
 | 6 | cast Dense Dynamite | as ready |
@@ -140,7 +140,7 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
 | 13 | cast Whirlwind | 4.6 |
 | 14 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 4.6 |
 | 15 | if not Battle Shout is up: cast Battle Shout | 0.3 |
-| 16 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.1 |
+| 16 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.0 |
 
 Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Heroic Strike, cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
 

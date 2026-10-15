@@ -1,0 +1,1513 @@
+{
+ "class": "warlock",
+ "spec": "Affliction",
+ "slug": "affliction",
+ "entries": [
+  "affliction-raid"
+ ],
+ "best": "opt-affliction-raid-raid-dps",
+ "best_entry": "affliction-raid",
+ "best_dps": 639.29,
+ "any_split": false,
+ "date": "2026-10-01",
+ "gear": {
+  "bis": {
+   "entry": "affliction-raid",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-affliction-bis.gear.json",
+   "date": "2026-10-02",
+   "chosen": "current",
+   "ilvl": 65.8,
+   "trinkets": [
+    "Talisman of Ephemeral Power",
+    "Briarwood Reed"
+   ],
+   "names": [
+    "Spellweaver's Turban",
+    "Choker of the Fire Lord",
+    "Rugged Mantle of the Timbermaw",
+    "Crystalline Threaded Cape",
+    "Robe of Volatile Power",
+    "Rockfury Bracers",
+    "Hands of Power",
+    "Mana Igniting Cord",
+    "Nemesis Leggings",
+    "Sorcerer's Boots",
+    "Leafre's Ring of Precise Spell Power",
+    "Ring of Spell Power",
+    "Talisman of Ephemeral Power",
+    "Briarwood Reed",
+    "Azuresong Mageblade",
+    "Scepter of Interminable Focus",
+    "Bonecreeper Stylus"
+   ],
+   "race_seed1": {
+    "current": 1.0,
+    "all-slots": 0.9957651051236369,
+    "keep-sets-and-effects": 1.000051916855026
+   },
+   "confirm_seed2": {
+    "current": 1.0,
+    "keep-sets-and-effects": 0.9996371390505033
+   },
+   "weights": {
+    "StatFireDamage": 0.0661,
+    "StatIntellect": 0.1149,
+    "StatShadowDamage": 0.4767,
+    "StatSpellCritRating": 0.4863,
+    "StatSpellDamage": 0.5428,
+    "StatSpellHasteRating": 0.4902,
+    "StatSpellHitRating": 0.5809,
+    "StatSpirit": 0.0383
+   },
+   "evaluated_on": [
+    "affliction-raid: ml winner"
+   ]
+  },
+  "bis2": true,
+  "prebis": {
+   "entry": "affliction-raid",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-affliction-prebis.gear.json",
+   "date": "2026-10-02",
+   "chosen": "keep-sets-and-effects",
+   "ilvl": 62.7,
+   "trinkets": [
+    "Briarwood Reed",
+    "Eye of the Beast"
+   ],
+   "names": [
+    "Spellweaver's Turban",
+    "Nacreous Shell Necklace",
+    "Rugged Mantle of the Timbermaw",
+    "Crystalline Threaded Cape",
+    "Robe of the Void",
+    "Rockfury Bracers",
+    "Hands of Power",
+    "Knowledge of the Timbermaw",
+    "Leggings of Torment",
+    "Sorcerer's Boots",
+    "Leafre's Ring of Precise Spell Power",
+    "Signet Ring of the Bronze Dragonflight",
+    "Briarwood Reed",
+    "Eye of the Beast",
+    "Elemental Attuned Blade",
+    "Scepter of Interminable Focus",
+    "Bonecreeper Stylus"
+   ],
+   "race_seed1": {
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 1.0
+   },
+   "confirm_seed2": {
+    "keep-sets-and-effects": 1.0,
+    "all-slots": 1.0
+   },
+   "weights": {
+    "StatFireDamage": 0.0623,
+    "StatIntellect": 0.3197,
+    "StatShadowDamage": 0.4483,
+    "StatSpellCritRating": 0.4975,
+    "StatSpellDamage": 0.5106,
+    "StatSpellHasteRating": 0.3327,
+    "StatSpellHitRating": 0.5893,
+    "StatSpirit": 0.2147
+   },
+   "evaluated_on": [
+    "affliction-raid: ml winner (bis)"
+   ]
+  }
+ },
+ "search": {
+  "bis-dummy-1": {
+   "class": "warlock",
+   "spec": "Affliction",
+   "setting": "dummy",
+   "entry": "affliction-raid",
+   "date": "2026-10-01",
+   "constraint": "Affliction 30+",
+   "protected": [],
+   "entries_screened": {},
+   "entries_searched": [
+    "affliction-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Affliction": [
+      [
+       "Improved Life Tap",
+       2
+      ],
+      [
+       "Suppression",
+       5
+      ],
+      [
+       "Improved Corruption",
+       2
+      ],
+      [
+       "Malediction",
+       5
+      ],
+      [
+       "Improved Bane of Agony",
+       2
+      ],
+      [
+       "Amplify Curse",
+       1
+      ],
+      [
+       "Pandemic",
+       3
+      ],
+      [
+       "Malevolence",
+       5
+      ],
+      [
+       "Shadow Mastery",
+       5
+      ]
+     ],
+     "Demonology": [],
+     "Destruction": [
+      [
+       "Improved Shadow Bolt",
+       5
+      ],
+      [
+       "Bane",
+       5
+      ],
+      [
+       "Cataclysm",
+       3
+      ],
+      [
+       "Ruin",
+       5
+      ],
+      [
+       "Agonizing Flames",
+       3
+      ]
+     ]
+    },
+    "split": "30/0/21",
+    "dps": 640.81,
+    "se": 0.109,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "30/0/21",
+    "dps": 639.21,
+    "se": 0.109,
+    "differs": [
+     [
+      "Improved Corruption",
+      2
+     ],
+     [
+      "Improved Corruption",
+      5
+     ],
+     [
+      "Malediction",
+      2
+     ],
+     [
+      "Malediction",
+      5
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0025,
+   "runs": [
+    {
+     "entry": "affliction-raid",
+     "run": 1,
+     "simulated": 1199,
+     "best_screen": 640.94,
+     "best_split": "30/0/21",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 399,
+       "best": 640.33
+      },
+      {
+       "round": 1,
+       "simulated": 599,
+       "best": 640.33,
+       "predicted_top": 633.19
+      },
+      {
+       "round": 2,
+       "simulated": 799,
+       "best": 640.33,
+       "predicted_top": 636.42
+      },
+      {
+       "round": 3,
+       "simulated": 999,
+       "best": 640.41,
+       "predicted_top": 637.04
+      },
+      {
+       "round": 4,
+       "simulated": 1199,
+       "best": 640.94,
+       "predicted_top": 637.52
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "affliction-raid",
+     "run": 2,
+     "simulated": 1194,
+     "best_screen": 640.94,
+     "best_split": "30/0/21",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 394,
+       "best": 640.33
+      },
+      {
+       "round": 1,
+       "simulated": 594,
+       "best": 640.94,
+       "predicted_top": 634.95
+      },
+      {
+       "round": 2,
+       "simulated": 794,
+       "best": 640.94,
+       "predicted_top": 637.9
+      },
+      {
+       "round": 3,
+       "simulated": 994,
+       "best": 640.94,
+       "predicted_top": 638.39
+      },
+      {
+       "round": 4,
+       "simulated": 1194,
+       "best": 640.94,
+       "predicted_top": 638.44
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 2,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      640.55,
+      639.42,
+      638.99,
+      638.68,
+      638.22,
+      637.88
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      640.75,
+      639.68,
+      639.54,
+      639.46,
+      639.37
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      640.81,
+      639.21
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 437,
+     "best_gap": 0.0001,
+     "best_move": "2 Malediction -> Improved Corruption"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Agonizing Flames",
+     "importance": 0.3869
+    },
+    {
+     "feature": "Destruction points",
+     "importance": 0.2152
+    },
+    {
+     "feature": "Ruin",
+     "importance": 0.1385
+    },
+    {
+     "feature": "Demonology points",
+     "importance": 0.1062
+    },
+    {
+     "feature": "Bane",
+     "importance": 0.0455
+    },
+    {
+     "feature": "Improved Drains",
+     "importance": 0.0238
+    },
+    {
+     "feature": "Affliction points",
+     "importance": 0.0161
+    },
+    {
+     "feature": "Soul Harvesting",
+     "importance": 0.0114
+    },
+    {
+     "feature": "Improved Shadow Bolt",
+     "importance": 0.0101
+    },
+    {
+     "feature": "Fel Concentration",
+     "importance": 0.0085
+    },
+    {
+     "feature": "Cataclysm",
+     "importance": 0.0077
+    },
+    {
+     "feature": "Shadow Mastery",
+     "importance": 0.0059
+    }
+   ],
+   "simulated_builds": 2844,
+   "simulated_fights": 4117000,
+   "minutes": 3.1,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-affliction-bis.gear.json"
+  },
+  "bis-dummy": {
+   "class": "warlock",
+   "spec": "Affliction",
+   "setting": "dummy",
+   "entry": "affliction-raid",
+   "date": "2026-10-02",
+   "constraint": "Affliction 30+",
+   "protected": [],
+   "entries_screened": {},
+   "entries_searched": [
+    "affliction-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Affliction": [
+      [
+       "Improved Life Tap",
+       2
+      ],
+      [
+       "Suppression",
+       5
+      ],
+      [
+       "Improved Corruption",
+       2
+      ],
+      [
+       "Malediction",
+       5
+      ],
+      [
+       "Improved Bane of Agony",
+       2
+      ],
+      [
+       "Amplify Curse",
+       1
+      ],
+      [
+       "Pandemic",
+       3
+      ],
+      [
+       "Malevolence",
+       5
+      ],
+      [
+       "Shadow Mastery",
+       5
+      ]
+     ],
+     "Demonology": [],
+     "Destruction": [
+      [
+       "Improved Shadow Bolt",
+       5
+      ],
+      [
+       "Bane",
+       5
+      ],
+      [
+       "Cataclysm",
+       3
+      ],
+      [
+       "Ruin",
+       5
+      ],
+      [
+       "Agonizing Flames",
+       3
+      ]
+     ]
+    },
+    "split": "30/0/21",
+    "dps": 642.01,
+    "se": 0.11,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "30/0/21",
+    "dps": 640.16,
+    "se": 0.11,
+    "differs": [
+     [
+      "Improved Corruption",
+      2
+     ],
+     [
+      "Improved Corruption",
+      5
+     ],
+     [
+      "Malediction",
+      2
+     ],
+     [
+      "Malediction",
+      5
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0029,
+   "runs": [
+    {
+     "entry": "affliction-raid",
+     "run": 1,
+     "simulated": 1199,
+     "best_screen": 642.29,
+     "best_split": "30/0/21",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 399,
+       "best": 642.29
+      },
+      {
+       "round": 1,
+       "simulated": 599,
+       "best": 642.29,
+       "predicted_top": 634.82
+      },
+      {
+       "round": 2,
+       "simulated": 799,
+       "best": 642.29,
+       "predicted_top": 638.04
+      },
+      {
+       "round": 3,
+       "simulated": 999,
+       "best": 642.29,
+       "predicted_top": 638.11
+      },
+      {
+       "round": 4,
+       "simulated": 1199,
+       "best": 642.29,
+       "predicted_top": 638.77
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      641.74,
+      640.36,
+      639.96,
+      639.67,
+      639.03,
+      638.73
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      641.92,
+      640.62,
+      640.47,
+      640.43,
+      640.2
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      642.01,
+      640.16
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 437,
+     "best_gap": -0.0002,
+     "best_move": "2 Malediction -> Improved Corruption"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Agonizing Flames",
+     "importance": 0.3706
+    },
+    {
+     "feature": "Destruction points",
+     "importance": 0.2688
+    },
+    {
+     "feature": "Ruin",
+     "importance": 0.1276
+    },
+    {
+     "feature": "Demonology points",
+     "importance": 0.086
+    },
+    {
+     "feature": "Bane",
+     "importance": 0.0479
+    },
+    {
+     "feature": "Shadow Mastery",
+     "importance": 0.017
+    },
+    {
+     "feature": "Affliction points",
+     "importance": 0.0166
+    },
+    {
+     "feature": "Improved Shadow Bolt",
+     "importance": 0.013
+    },
+    {
+     "feature": "Improved Drains",
+     "importance": 0.0127
+    },
+    {
+     "feature": "Malevolence",
+     "importance": 0.0038
+    },
+    {
+     "feature": "Aftermath",
+     "importance": 0.0036
+    },
+    {
+     "feature": "Soul Siphon",
+     "importance": 0.0036
+    }
+   ],
+   "simulated_builds": 1650,
+   "simulated_fights": 2923000,
+   "minutes": 2.1,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-affliction-bis.gear.json"
+  },
+  "bis-raid": {
+   "class": "warlock",
+   "spec": "Affliction",
+   "setting": "raid",
+   "entry": "affliction-raid",
+   "date": "2026-10-02",
+   "constraint": "Affliction 30+",
+   "protected": [],
+   "entries_screened": {},
+   "entries_searched": [
+    "affliction-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Affliction": [
+      [
+       "Improved Life Tap",
+       2
+      ],
+      [
+       "Suppression",
+       5
+      ],
+      [
+       "Improved Corruption",
+       3
+      ],
+      [
+       "Malediction",
+       3
+      ],
+      [
+       "Improved Bane of Agony",
+       2
+      ],
+      [
+       "Pandemic",
+       3
+      ],
+      [
+       "Malevolence",
+       5
+      ],
+      [
+       "Nightfall",
+       2
+      ],
+      [
+       "Shadow Mastery",
+       5
+      ]
+     ],
+     "Demonology": [],
+     "Destruction": [
+      [
+       "Improved Shadow Bolt",
+       5
+      ],
+      [
+       "Bane",
+       5
+      ],
+      [
+       "Cataclysm",
+       3
+      ],
+      [
+       "Ruin",
+       5
+      ],
+      [
+       "Agonizing Flames",
+       3
+      ]
+     ]
+    },
+    "split": "30/0/21",
+    "dps": 769.73,
+    "se": 0.129,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "30/0/21",
+    "dps": 769.45,
+    "se": 0.129,
+    "differs": [
+     [
+      "Amplify Curse",
+      1
+     ],
+     [
+      "Improved Life Tap",
+      1
+     ],
+     [
+      "Improved Life Tap",
+      2
+     ],
+     [
+      "Malediction",
+      3
+     ],
+     [
+      "Malediction",
+      5
+     ],
+     [
+      "Nightfall",
+      2
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0004,
+   "runs": [
+    {
+     "entry": "affliction-raid",
+     "run": 1,
+     "simulated": 1389,
+     "best_screen": 771.16,
+     "best_split": "30/0/21",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 389,
+       "best": 769.44
+      },
+      {
+       "round": 1,
+       "simulated": 589,
+       "best": 771.16,
+       "predicted_top": 763.56
+      },
+      {
+       "round": 2,
+       "simulated": 789,
+       "best": 771.16,
+       "predicted_top": 768.22
+      },
+      {
+       "round": 3,
+       "simulated": 989,
+       "best": 771.16,
+       "predicted_top": 768.76
+      },
+      {
+       "round": 4,
+       "simulated": 1189,
+       "best": 771.16,
+       "predicted_top": 767.95
+      },
+      {
+       "round": 5,
+       "simulated": 1389,
+       "best": 771.16,
+       "predicted_top": 768.34
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      770.29,
+      770.26,
+      770.07,
+      769.93,
+      769.77,
+      769.53
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      769.79,
+      769.7,
+      769.65,
+      769.65,
+      769.36
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      769.73,
+      769.45
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 540,
+     "best_gap": 0.0016,
+     "best_move": "2 Nightfall -> Malediction",
+     "raced": [
+      "2 Nightfall -> Malediction"
+     ],
+     "confirmed_gap": 0.0003
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Agonizing Flames",
+     "importance": 0.4185
+    },
+    {
+     "feature": "Destruction points",
+     "importance": 0.21
+    },
+    {
+     "feature": "Ruin",
+     "importance": 0.1412
+    },
+    {
+     "feature": "Demonology points",
+     "importance": 0.0671
+    },
+    {
+     "feature": "Bane",
+     "importance": 0.0618
+    },
+    {
+     "feature": "Improved Drains",
+     "importance": 0.024
+    },
+    {
+     "feature": "Soul Harvesting",
+     "importance": 0.0159
+    },
+    {
+     "feature": "Improved Shadow Bolt",
+     "importance": 0.0155
+    },
+    {
+     "feature": "Shadow Mastery",
+     "importance": 0.0109
+    },
+    {
+     "feature": "Affliction points",
+     "importance": 0.0046
+    },
+    {
+     "feature": "Aftermath",
+     "importance": 0.0039
+    },
+    {
+     "feature": "Molten Skin",
+     "importance": 0.0034
+    }
+   ],
+   "simulated_builds": 1945,
+   "simulated_fights": 3482000,
+   "minutes": 3.3,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-affliction-bis.gear.json"
+  },
+  "prebis-dummy": {
+   "class": "warlock",
+   "spec": "Affliction",
+   "setting": "dummy",
+   "entry": "affliction-raid",
+   "date": "2026-10-02",
+   "constraint": "Affliction 30+",
+   "protected": [],
+   "entries_screened": {},
+   "entries_searched": [
+    "affliction-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Affliction": [
+      [
+       "Improved Life Tap",
+       2
+      ],
+      [
+       "Suppression",
+       5
+      ],
+      [
+       "Improved Corruption",
+       3
+      ],
+      [
+       "Malediction",
+       4
+      ],
+      [
+       "Improved Bane of Agony",
+       2
+      ],
+      [
+       "Amplify Curse",
+       1
+      ],
+      [
+       "Pandemic",
+       3
+      ],
+      [
+       "Malevolence",
+       5
+      ],
+      [
+       "Shadow Mastery",
+       5
+      ]
+     ],
+     "Demonology": [],
+     "Destruction": [
+      [
+       "Improved Shadow Bolt",
+       5
+      ],
+      [
+       "Bane",
+       5
+      ],
+      [
+       "Cataclysm",
+       3
+      ],
+      [
+       "Ruin",
+       5
+      ],
+      [
+       "Agonizing Flames",
+       3
+      ]
+     ]
+    },
+    "split": "30/0/21",
+    "dps": 605.37,
+    "se": 0.098,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "30/0/21",
+    "dps": 605.29,
+    "se": 0.099,
+    "differs": [
+     [
+      "Amplify Curse",
+      1
+     ],
+     [
+      "Cataclysm",
+      2
+     ],
+     [
+      "Cataclysm",
+      3
+     ],
+     [
+      "Improved Corruption",
+      2
+     ],
+     [
+      "Improved Corruption",
+      3
+     ],
+     [
+      "Nightfall",
+      2
+     ],
+     [
+      "Shadowburn",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0001,
+   "runs": [
+    {
+     "entry": "affliction-raid",
+     "run": 1,
+     "simulated": 1192,
+     "best_screen": 606.17,
+     "best_split": "30/0/21",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 392,
+       "best": 605.59
+      },
+      {
+       "round": 1,
+       "simulated": 592,
+       "best": 605.99,
+       "predicted_top": 601.62
+      },
+      {
+       "round": 2,
+       "simulated": 792,
+       "best": 606.08,
+       "predicted_top": 604.03
+      },
+      {
+       "round": 3,
+       "simulated": 992,
+       "best": 606.17,
+       "predicted_top": 603.87
+      },
+      {
+       "round": 4,
+       "simulated": 1192,
+       "best": 606.17,
+       "predicted_top": 604.48
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      605.81,
+      605.6,
+      605.35,
+      605.32,
+      605.21,
+      605.2
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      605.45,
+      605.34,
+      605.32,
+      605.14,
+      604.66
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      605.37,
+      605.29
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 443,
+     "best_gap": 0.0032,
+     "best_move": "2 Malediction -> Nightfall",
+     "raced": [
+      "2 Malediction -> Nightfall",
+      "1 Malediction -> Nightfall",
+      "1 Amplify Curse -> Nightfall",
+      "1 Improved Corruption -> Malediction"
+     ],
+     "confirmed_gap": 0.0009
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Agonizing Flames",
+     "importance": 0.3822
+    },
+    {
+     "feature": "Destruction points",
+     "importance": 0.235
+    },
+    {
+     "feature": "Ruin",
+     "importance": 0.1517
+    },
+    {
+     "feature": "Demonology points",
+     "importance": 0.0801
+    },
+    {
+     "feature": "Bane",
+     "importance": 0.0612
+    },
+    {
+     "feature": "Improved Drains",
+     "importance": 0.0215
+    },
+    {
+     "feature": "Improved Shadow Bolt",
+     "importance": 0.0139
+    },
+    {
+     "feature": "Shadow Mastery",
+     "importance": 0.0088
+    },
+    {
+     "feature": "Affliction points",
+     "importance": 0.0068
+    },
+    {
+     "feature": "Cataclysm",
+     "importance": 0.0056
+    },
+    {
+     "feature": "Soul Harvesting",
+     "importance": 0.0052
+    },
+    {
+     "feature": "Aftermath",
+     "importance": 0.0038
+    }
+   ],
+   "simulated_builds": 1654,
+   "simulated_fights": 3084000,
+   "minutes": 2.2,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-affliction-prebis.gear.json"
+  },
+  "prebis-raid": {
+   "class": "warlock",
+   "spec": "Affliction",
+   "setting": "raid",
+   "entry": "affliction-raid",
+   "date": "2026-10-02",
+   "constraint": "Affliction 30+",
+   "protected": [],
+   "entries_screened": {},
+   "entries_searched": [
+    "affliction-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Affliction": [
+      [
+       "Improved Life Tap",
+       2
+      ],
+      [
+       "Suppression",
+       5
+      ],
+      [
+       "Improved Corruption",
+       3
+      ],
+      [
+       "Malediction",
+       3
+      ],
+      [
+       "Improved Bane of Agony",
+       2
+      ],
+      [
+       "Amplify Curse",
+       1
+      ],
+      [
+       "Pandemic",
+       3
+      ],
+      [
+       "Malevolence",
+       5
+      ],
+      [
+       "Nightfall",
+       1
+      ],
+      [
+       "Shadow Mastery",
+       5
+      ]
+     ],
+     "Demonology": [],
+     "Destruction": [
+      [
+       "Improved Shadow Bolt",
+       5
+      ],
+      [
+       "Bane",
+       5
+      ],
+      [
+       "Cataclysm",
+       3
+      ],
+      [
+       "Ruin",
+       5
+      ],
+      [
+       "Agonizing Flames",
+       3
+      ]
+     ]
+    },
+    "split": "30/0/21",
+    "dps": 733.11,
+    "se": 0.119,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "30/0/21",
+    "dps": 732.81,
+    "se": 0.118,
+    "differs": [
+     [
+      "Improved Life Tap",
+      1
+     ],
+     [
+      "Improved Life Tap",
+      2
+     ],
+     [
+      "Malediction",
+      3
+     ],
+     [
+      "Malediction",
+      5
+     ],
+     [
+      "Nightfall",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0004,
+   "runs": [
+    {
+     "entry": "affliction-raid",
+     "run": 1,
+     "simulated": 1398,
+     "best_screen": 734.83,
+     "best_split": "30/0/21",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 398,
+       "best": 733.08
+      },
+      {
+       "round": 1,
+       "simulated": 598,
+       "best": 733.82,
+       "predicted_top": 727.39
+      },
+      {
+       "round": 2,
+       "simulated": 798,
+       "best": 734.83,
+       "predicted_top": 731.7
+      },
+      {
+       "round": 3,
+       "simulated": 998,
+       "best": 734.83,
+       "predicted_top": 732.62
+      },
+      {
+       "round": 4,
+       "simulated": 1198,
+       "best": 734.83,
+       "predicted_top": 731.71
+      },
+      {
+       "round": 5,
+       "simulated": 1398,
+       "best": 734.83,
+       "predicted_top": 731.99
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      733.46,
+      733.46,
+      733.03,
+      732.9,
+      732.89,
+      732.02
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      733.27,
+      733.08,
+      732.97,
+      732.79,
+      732.58
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      733.11,
+      732.81
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 455,
+     "best_gap": 0.0024,
+     "best_move": "1 Nightfall -> Malediction",
+     "raced": [
+      "1 Nightfall -> Malediction",
+      "1 Improved Corruption -> Malediction",
+      "1 Improved Corruption -> Nightfall",
+      "1 Amplify Curse -> Nightfall"
+     ],
+     "confirmed_gap": 0.0004
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Agonizing Flames",
+     "importance": 0.3988
+    },
+    {
+     "feature": "Destruction points",
+     "importance": 0.2471
+    },
+    {
+     "feature": "Ruin",
+     "importance": 0.1312
+    },
+    {
+     "feature": "Demonology points",
+     "importance": 0.0819
+    },
+    {
+     "feature": "Bane",
+     "importance": 0.0446
+    },
+    {
+     "feature": "Improved Drains",
+     "importance": 0.0317
+    },
+    {
+     "feature": "Affliction points",
+     "importance": 0.0148
+    },
+    {
+     "feature": "Improved Shadow Bolt",
+     "importance": 0.0079
+    },
+    {
+     "feature": "Aftermath",
+     "importance": 0.0059
+    },
+    {
+     "feature": "Shadow Mastery",
+     "importance": 0.0055
+    },
+    {
+     "feature": "Cataclysm",
+     "importance": 0.0046
+    },
+    {
+     "feature": "Siphon Life",
+     "importance": 0.003
+    }
+   ],
+   "simulated_builds": 1872,
+   "simulated_fights": 3326000,
+   "minutes": 3.2,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-affliction-prebis.gear.json"
+  }
+ },
+ "spells_done": {
+  "date": "2026-10-01",
+  "lines_kept": 0
+ },
+ "compare": {
+  "dps": {
+   "winner": {
+    "entry": "affliction-raid",
+    "dps": 641.85,
+    "se": 0.11
+   },
+   "affliction-dot-raid": {
+    "entry": "affliction-raid",
+    "dps": 633.66,
+    "se": 0.109
+   },
+   "opt-affliction-raid-raid-dps": {
+    "entry": "affliction-raid",
+    "dps": 640.51,
+    "se": 0.11
+   }
+  },
+  "best_hand": "affliction-dot-raid",
+  "gain_vs_hand": 0.0129
+ },
+ "parse": {
+  "bis-dummy": {
+   "entry": "affliction-raid",
+   "dps": 770.34,
+   "se": 0.13
+  },
+  "bis-raid": {
+   "entry": "affliction-raid",
+   "dps": 769.97,
+   "se": 0.13
+  },
+  "gain": -0.0005,
+  "vs_parse": null
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-10-03",
+  "setting": "raid",
+  "why": "confirms opt-affliction-raid-raid-dps (+0.19% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": null,
+  "prebis-dummy": null,
+  "prebis-raid": null
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "affliction-raid",
+    "dps": 769.76,
+    "se": 0.13
+   },
+   "affliction-dot-raid": {
+    "entry": "affliction-raid",
+    "dps": 763.08,
+    "se": 0.129
+   },
+   "opt-affliction-raid-raid-dps": {
+    "entry": "affliction-raid",
+    "dps": 768.3,
+    "se": 0.13
+   }
+  },
+  "best_hand": "affliction-dot-raid",
+  "gain_vs_hand": 0.0088
+ }
+}

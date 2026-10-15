@@ -1,0 +1,564 @@
+{
+ "class": "druid",
+ "spec": "Feral Combat",
+ "entry": "feral-bear-tank",
+ "date": "2026-10-14",
+ "cycles": [
+  {
+   "cycle": 1,
+   "winner": {
+    "allocation": {
+     "Balance": [
+      [
+       "Genesis",
+       5
+      ],
+      [
+       "Nature's Majesty",
+       2
+      ]
+     ],
+     "Feral Combat": [
+      [
+       "Ferocity",
+       5
+      ],
+      [
+       "Heart of the Wild",
+       1
+      ],
+      [
+       "Feral Swiftness",
+       2
+      ],
+      [
+       "Thick Hide",
+       3
+      ],
+      [
+       "Shredding Attacks",
+       3
+      ],
+      [
+       "Savage Fury",
+       2
+      ],
+      [
+       "Sharpened Claws",
+       2
+      ],
+      [
+       "Predatory Strikes",
+       3
+      ],
+      [
+       "Blood Frenzy",
+       2
+      ],
+      [
+       "Natural Instinct",
+       2
+      ],
+      [
+       "Natural Reaction",
+       5
+      ],
+      [
+       "Rend and Tear",
+       5
+      ]
+     ],
+     "Restoration": [
+      [
+       "Furor",
+       5
+      ],
+      [
+       "Naturalist",
+       4
+      ]
+     ]
+    },
+    "split": "7/35/9",
+    "dps": 1.0001,
+    "se": 0.0002,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "7/35/9",
+    "dps": 1.0001,
+    "se": 0.0002,
+    "differs": [
+     [
+      "Furor",
+      3
+     ],
+     [
+      "Furor",
+      5
+     ],
+     [
+      "Nature's Focus",
+      2
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "feral-bear-tank",
+     "run": 1,
+     "simulated": 2234,
+     "best_screen": 0.9992,
+     "best_split": "7/35/9",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "feral-bear-tank",
+     "run": 2,
+     "simulated": 2226,
+     "best_screen": 0.9992,
+     "best_split": "7/35/9",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "feral-bear-tank",
+     "run": 3,
+     "simulated": 2234,
+     "best_screen": 0.9992,
+     "best_split": "7/35/9",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "feral-bear-tank",
+     "run": 4,
+     "simulated": 2224,
+     "best_screen": 0.9992,
+     "best_split": "7/35/9",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "feral-bear-tank",
+     "run": 5,
+     "simulated": 2233,
+     "best_screen": 0.9992,
+     "best_split": "7/35/9",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "feral-bear-tank",
+     "run": 6,
+     "simulated": 2233,
+     "best_screen": 0.9992,
+     "best_split": "7/35/9",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 6,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      1.0006,
+      1.0006,
+      1.0006,
+      1.0006,
+      1.0006,
+      1.0006,
+      1.0006,
+      1.0006
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      1.0002,
+      1.0002,
+      1.0002,
+      1.0002,
+      1.0002
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      1.0001,
+      1.0001
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 397,
+     "best_gap": 0.0,
+     "best_move": "5 Furor -> Nature's Focus"
+    }
+   ],
+   "important_features": [
+    {
+     "feature": "Rend and Tear",
+     "importance": 0.336
+    },
+    {
+     "feature": "Heart of the Wild",
+     "importance": 0.206
+    },
+    {
+     "feature": "Feral Instinct",
+     "importance": 0.1277
+    },
+    {
+     "feature": "Natural Reaction",
+     "importance": 0.0641
+    },
+    {
+     "feature": "Brutal Impact",
+     "importance": 0.0635
+    },
+    {
+     "feature": "Blood Frenzy",
+     "importance": 0.0481
+    },
+    {
+     "feature": "Nature's Majesty",
+     "importance": 0.0322
+    },
+    {
+     "feature": "Feral Combat points",
+     "importance": 0.0279
+    },
+    {
+     "feature": "Thick Hide",
+     "importance": 0.0241
+    },
+    {
+     "feature": "Naturalist",
+     "importance": 0.0155
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0097
+    },
+    {
+     "feature": "Balance points",
+     "importance": 0.0072
+    }
+   ],
+   "simulated_builds": 13797,
+   "minutes": 32.8,
+   "rotation_changed": false
+  },
+  {
+   "cycle": 2,
+   "winner": {
+    "allocation": {
+     "Balance": [
+      [
+       "Genesis",
+       5
+      ],
+      [
+       "Nature's Majesty",
+       2
+      ]
+     ],
+     "Feral Combat": [
+      [
+       "Ferocity",
+       5
+      ],
+      [
+       "Heart of the Wild",
+       1
+      ],
+      [
+       "Feral Swiftness",
+       2
+      ],
+      [
+       "Thick Hide",
+       3
+      ],
+      [
+       "Shredding Attacks",
+       3
+      ],
+      [
+       "Savage Fury",
+       2
+      ],
+      [
+       "Sharpened Claws",
+       2
+      ],
+      [
+       "Predatory Strikes",
+       3
+      ],
+      [
+       "Blood Frenzy",
+       2
+      ],
+      [
+       "Natural Instinct",
+       2
+      ],
+      [
+       "Natural Reaction",
+       5
+      ],
+      [
+       "Rend and Tear",
+       5
+      ]
+     ],
+     "Restoration": [
+      [
+       "Furor",
+       5
+      ],
+      [
+       "Naturalist",
+       4
+      ]
+     ]
+    },
+    "split": "7/35/9",
+    "dps": 1.0001,
+    "se": 0.0002,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "7/35/9",
+    "dps": 1.0001,
+    "se": 0.0002,
+    "differs": [
+     [
+      "Furor",
+      5
+     ],
+     [
+      "Nature's Focus",
+      5
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "feral-bear-tank",
+     "run": 1,
+     "simulated": 1437,
+     "best_screen": 0.9992,
+     "best_split": "7/35/9",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "feral-bear-tank",
+     "run": 2,
+     "simulated": 1438,
+     "best_screen": 0.9992,
+     "best_split": "7/35/9",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "feral-bear-tank",
+     "run": 3,
+     "simulated": 1431,
+     "best_screen": 0.9992,
+     "best_split": "7/35/9",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 3,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      1.0006,
+      1.0006,
+      1.0006,
+      1.0006,
+      1.0006,
+      1.0006
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      1.0002,
+      1.0002,
+      1.0002,
+      1.0002,
+      1.0002
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      1.0001,
+      1.0001
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 397,
+     "best_gap": 0.0,
+     "best_move": "5 Furor -> Nature's Focus"
+    }
+   ],
+   "important_features": [
+    {
+     "feature": "Heart of the Wild",
+     "importance": 0.3067
+    },
+    {
+     "feature": "Rend and Tear",
+     "importance": 0.2544
+    },
+    {
+     "feature": "Feral Instinct",
+     "importance": 0.1076
+    },
+    {
+     "feature": "Brutal Impact",
+     "importance": 0.0757
+    },
+    {
+     "feature": "Feral Combat points",
+     "importance": 0.0499
+    },
+    {
+     "feature": "Blood Frenzy",
+     "importance": 0.0399
+    },
+    {
+     "feature": "Natural Reaction",
+     "importance": 0.0358
+    },
+    {
+     "feature": "Nature's Majesty",
+     "importance": 0.0291
+    },
+    {
+     "feature": "Thick Hide",
+     "importance": 0.0201
+    },
+    {
+     "feature": "Naturalist",
+     "importance": 0.0188
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0107
+    },
+    {
+     "feature": "Balance points",
+     "importance": 0.0098
+    }
+   ],
+   "simulated_builds": 4717,
+   "minutes": 11.5,
+   "rotation_changed": false
+  }
+ ],
+ "ref": {
+  "build": "feral-bear-tank",
+  "threat": 1221.5826208197107,
+  "dtps": 988.1423459892501,
+  "fights": 20000
+ },
+ "converged": 2,
+ "two_move": {
+  "steps": [
+   {
+    "one_move": 397,
+    "two_move": 57503,
+    "expanded": null,
+    "screen": 1000,
+    "screen_best": [
+     [
+      "1 Furor -> Nature's Focus; then 3 Furor -> Nature's Focus",
+      0.0
+     ],
+     [
+      "5 Furor -> Nature's Focus",
+      0.0
+     ],
+     [
+      "3 Furor -> Nature's Focus",
+      0.0
+     ],
+     [
+      "2 Furor -> Nature's Focus",
+      0.0
+     ],
+     [
+      "1 Furor -> Nature's Focus",
+      0.0
+     ]
+    ],
+    "raced": 60,
+    "confirmed": [
+     [
+      "1 Furor -> Nature's Focus; then 3 Furor -> Nature's Focus",
+      0.0
+     ],
+     [
+      "5 Furor -> Nature's Focus",
+      0.0
+     ],
+     [
+      "3 Furor -> Nature's Focus",
+      0.0
+     ],
+     [
+      "2 Furor -> Nature's Focus",
+      0.0
+     ],
+     [
+      "1 Furor -> Nature's Focus",
+      0.0
+     ]
+    ],
+    "minutes": 88.2
+   }
+  ],
+  "moved": false
+ },
+ "final": {
+  "deep winner": {
+   "value": 1.0,
+   "se": 0.0002
+  },
+  "feral-bear-tank": {
+   "value": 1.0,
+   "se": 0.0002
+  },
+  "opt-feral-bear-tank-raid-tank": {
+   "value": 1.0,
+   "se": 0.0002
+  }
+ },
+ "minutes": 138.3,
+ "build": {
+  "written": null,
+  "why": "confirms feral-bear-tank (+0.00%)"
+ }
+}

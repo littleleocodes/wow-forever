@@ -3,6 +3,16 @@
  "priorityList": [
   {
    "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 12042
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-14: changed or added by the rotation search (see frostfire-raid-rotation-search.json)"
+  },
+  {
+   "action": {
     "condition": {
      "auraIsActive": {
       "auraId": {

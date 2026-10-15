@@ -3,31 +3,30 @@
  "spec": "enhancement-dps",
  "build": "elemental-enhancement-ml-raid",
  "setting": "raid",
- "date": "2026-10-03",
+ "date": "2026-10-15",
  "tank": false,
  "removal": {
-  "Ancestral Knowledge": 0.013140711043513775,
-  "Call of Flame": 0.02831058312542223,
-  "Concussion": 0.005027720484150122,
-  "Convection": 0.020636156186958132,
-  "Elemental Devastation": 0.029111165159096952,
-  "Elemental Focus": 0.026563158300704215,
-  "Elemental Weapons": 0.0026020716694759027,
-  "Flurry": 0.07987331521738705,
-  "Improved Fire Nova": 0.02752170866335002,
-  "Improved Stormstrike": 0.030362039435831933,
-  "Maelstrom Weapon": 0.3123084458132662,
-  "Mental Dexterity": 0.06060338103255636,
-  "Mental Quickness": 0.02722469814254158,
-  "Reverberation": 0.01248922251502993,
-  "Shamanistic Focus": 0.07529423571969063,
-  "Stormstrike": 0.16920228184377895,
-  "Thundering Strikes": 0.04298904106833845
+  "Ancestral Knowledge": 0.01363062931762049,
+  "Call of Flame": 0.03038751115814342,
+  "Convection": 0.014758007835255382,
+  "Elemental Devastation": 0.027564027855950024,
+  "Elemental Focus": 0.022488645645638683,
+  "Elemental Weapons": 0.00579452349524523,
+  "Flurry": 0.08769187094610664,
+  "Improved Fire Nova": 0.058760664892510306,
+  "Improved Stormstrike": 0.02474377639940828,
+  "Mental Dexterity": 0.06478149403345201,
+  "Mental Quickness": 0.02272644443832772,
+  "Mindfulness": 0.0180027706815179,
+  "Reverberation": 0.01236160471525316,
+  "Shamanistic Focus": 0.0800606862934734,
+  "Stormstrike": 0.1722888037967798,
+  "Thundering Strikes": 0.04321975285669266,
+  "Tidal Focus": 0.002895481582283699,
+  "Totemic Focus": 0.0035046662033715315
  },
  "free": [],
- "kept_for_rotation": [
-  "Maelstrom Weapon"
- ],
+ "kept_for_rotation": [],
  "active_never_worth": [],
  "abilities_never_cast": [],
  "moves": [],
@@ -39,12 +38,8 @@
     5
    ],
    [
-    "Concussion",
-    3
-   ],
-   [
     "Reverberation",
-    5
+    3
    ],
    [
     "Call of Flame",
@@ -78,7 +73,7 @@
    ],
    [
     "Elemental Weapons",
-    1
+    2
    ],
    [
     "Shamanistic Focus",
@@ -99,13 +94,22 @@
    [
     "Improved Stormstrike",
     2
-   ],
-   [
-    "Maelstrom Weapon",
-    4
    ]
   ],
-  "Restoration": []
+  "Restoration": [
+   [
+    "Totemic Focus",
+    5
+   ],
+   [
+    "Mindfulness",
+    2
+   ],
+   [
+    "Tidal Focus",
+    1
+   ]
+  ]
  },
  "allocation": {
   "Elemental": [
@@ -114,12 +118,8 @@
     5
    ],
    [
-    "Concussion",
-    3
-   ],
-   [
     "Reverberation",
-    5
+    3
    ],
    [
     "Call of Flame",
@@ -153,7 +153,7 @@
    ],
    [
     "Elemental Weapons",
-    1
+    2
    ],
    [
     "Shamanistic Focus",
@@ -174,12 +174,21 @@
    [
     "Improved Stormstrike",
     2
-   ],
-   [
-    "Maelstrom Weapon",
-    4
    ]
   ],
-  "Restoration": []
+  "Restoration": [
+   [
+    "Totemic Focus",
+    5
+   ],
+   [
+    "Mindfulness",
+    2
+   ],
+   [
+    "Tidal Focus",
+    1
+   ]
+  ]
  }
 }

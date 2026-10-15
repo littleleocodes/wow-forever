@@ -75,12 +75,12 @@ Allocation adopted on 2026-09-26 from `opt-feral-cat-dps-raid-dps`, the best bui
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md) | ours: hand draft | 9/35/7 | 395 | +0.0% | 691 | -1.0% | 119 s |
-| 2 | *Feral Cat 9/35/7* | community simulator | - | 395 | +0.0% | 691 | -1.0% | 119 s |
-| 3 | [`feral-combat-open-raid`](feral-combat-open-raid.md) | ours: hand draft | 9/33/9 | 390 | -1.1% | 698 | +0.0% | 119 s |
-| 4 | *Feral* | community simulator | - | 389 | -1.3% | 665 | -4.8% | 86 s |
-| 5 | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/31/11 | 368 | -6.8% | 594 | -15.0% | 0 s |
-| 6 | **[`feral-cat-dps`](feral-cat-dps.md)** | ours: hand draft | 9/32/10 | 357 | -9.6% | 579 | -17.1% | 0 s |
+| 1 | [`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md) | ours: hand draft | 9/35/7 | 392 | +0.0% | 688 | -0.8% | 119 s |
+| 2 | *Feral Cat 9/35/7* | community simulator | - | 392 | +0.0% | 688 | -0.8% | 119 s |
+| 3 | [`feral-combat-open-raid`](feral-combat-open-raid.md) | ours: hand draft | 9/33/9 | 388 | -1.1% | 694 | +0.0% | 119 s |
+| 4 | *Feral* | community simulator | - | 387 | -1.3% | 661 | -4.7% | 86 s |
+| 5 | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/31/11 | 366 | -6.7% | 590 | -15.0% | 0 s |
+| 6 | **[`feral-cat-dps`](feral-cat-dps.md)** | ours: hand draft | 9/32/10 | 355 | -9.5% | 575 | -17.1% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -108,11 +108,11 @@ Before the pull: at -1.0s: cast Faerie Fire; at -3.5s: cast Tiger's Fury.
 | # | Priority (the first line whose condition holds is cast) | [`feral-cat-dps`](feral-cat-dps.md) casts/min |
 |---|---|---|
 | 1 | cast Tiger's Fury | 2.3 |
-| 2 | if Faerie Fire should be refreshed: cast Faerie Fire | 39.7 |
+| 2 | if Faerie Fire should be refreshed: cast Faerie Fire | 39.6 |
 | 3 | if Cat Form is up: use every other cooldown when ready | as ready |
-| 4 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 4.7 |
-| 5 | cast Shred | 14.8 |
-| 6 | if time left in the fight ≥ 6s: cast Faerie Fire | 39.7 |
+| 4 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 4.8 |
+| 5 | cast Shred | 14.9 |
+| 6 | if time left in the fight ≥ 6s: cast Faerie Fire | 39.6 |
 | 7 | cast Goblin Sapper Charge | as ready |
 | 8 | if not Cat Form is up and (mana + 1500.0) ≤ (mana ÷ mana %): cast Demonic Rune | as ready |
 | 9 | if not Cat Form is up and (mana + 2250.0) ≤ (mana ÷ mana %): cast Potion | as ready |
@@ -125,7 +125,7 @@ Damage by ability:
 | Ability | [`feral-cat-dps`](feral-cat-dps.md) |
 |---|---|
 | Rip | 38% |
-| Auto Attack | 33% |
+| Auto Attack | 32% |
 | Shred | 27% |
 | Goblin Sapper Charge | 2% |
 | Dragonbreath Chili | 1% |

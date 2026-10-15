@@ -107,6 +107,9 @@
 **Feral Combat — Leveling (open talent search)** (`druid/research/leveling/builds/feral-combat-open-leveling.md`)
 - [ ] An open-search Feral Combat leveling build: check it while leveling at launch.
 
+**Restoration — Raid healing (machine-learning search)** (`druid/research/raid/builds/restoration-ml-heal.md`)
+- [ ] A machine-searched Restoration build: check it against the community's healing builds at launch.
+
 ### Hunter
 
 **Beast Mastery / Marksmanship (simulator winner adopted 2026-10-02)** (`hunter/research/raid/builds/bm-mm-raid.md`)
@@ -189,14 +192,8 @@
 **Survival — PvP (derived)** (`hunter/research/pvp/builds/survival-pvp.md`)
 - [ ] A derived Survival PvP build: check it in duels and battlegrounds at launch.
 
-**Beast Mastery — Raid (derived)** (`hunter/research/raid/builds/beast-mastery-raid.md`)
-- [ ] A derived Beast Mastery raid build: check it against the community's Beast Mastery builds at launch.
-
 **Survival — Raid (derived)** (`hunter/research/raid/builds/survival-raid.md`)
 - [ ] A derived Survival raid build: check it against the community's Survival builds at launch.
-
-**Beast Mastery — Full raid (parse) (machine-learning search)** (`hunter/research/raid/builds/beast-mastery-ml-parse.md`)
-- [ ] A machine-searched Beast Mastery build: check it against the community's Beast Mastery builds at launch.
 
 **Marksmanship — Raid (machine-learning search)** (`hunter/research/raid/builds/marksmanship-ml-raid.md`)
 - [ ] A machine-searched Marksmanship build: check it against the community's Marksmanship builds at launch.
@@ -219,14 +216,8 @@
 **Optimizer — Marksmanship without a pet (Forever Lone Wolf) (parse)** (`hunter/research/raid/builds/opt-mm-lonewolf-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Beast-Marks — Raid (machine-learning search)** (`hunter/research/raid/builds/beast-marks-ml-raid.md`)
-- [ ] A machine-searched Beast-Marks build: check it against the community's Beast-Marks builds at launch.
-
 **Marksmanship — With a pet (open talent search)** (`hunter/research/raid/builds/marksmanship-with-a-pet-open-raid.md`)
 - [ ] An open-search Marksmanship build: check it against the community's Marksmanship builds at launch.
-
-**Beast-Marks — Raid (open talent search)** (`hunter/research/raid/builds/beast-marks-open-raid.md`)
-- [ ] An open-search Beast-Marks build: check it against the community's Beast-Marks builds at launch.
 
 **Beast-Survival — Raid (open talent search)** (`hunter/research/raid/builds/beast-survival-open-raid.md`)
 - [ ] An open-search Beast-Survival build: check it against the community's Beast-Survival builds at launch.
@@ -236,6 +227,12 @@
 
 **Beast-Survival — Leveling (open talent search)** (`hunter/research/leveling/builds/beast-survival-open-leveling.md`)
 - [ ] An open-search Beast-Survival leveling build: check it while leveling at launch.
+
+**Beast Mastery — Raid (machine-learning search)** (`hunter/research/raid/builds/beast-mastery-ml-raid.md`)
+- [ ] A machine-searched Beast Mastery build: check it against the community's Beast Mastery builds at launch.
+
+**Beast-Marks — Raid (machine-learning search)** (`hunter/research/raid/builds/beast-marks-ml-raid.md`)
+- [ ] A machine-searched Beast-Marks build: check it against the community's Beast-Marks builds at launch.
 
 ### Mage
 
@@ -409,6 +406,12 @@
 **Retribution — Leveling (open talent search)** (`paladin/research/leveling/builds/retribution-open-leveling.md`)
 - [ ] An open-search Retribution leveling build: check it while leveling at launch.
 
+**Holy — Raid healing (machine-learning search)** (`paladin/research/raid/builds/holy-ml-heal.md`)
+- [ ] A machine-searched Holy build: check it against the community's healing builds at launch.
+
+**Protection — Raid tank (machine-learning search)** (`paladin/research/raid/builds/protection-ml-tank.md`)
+- [ ] A machine-searched Protection tank build: check its threat and survival against the community's tank builds at launch (the simulator models no threat from other players, taunts or tank swaps).
+
 ### Priest
 
 **Holy — Raid Healer (healer lab winner adopted 2026-09-26)** (`priest/research/raid/builds/holy-raid-healer.md`)
@@ -470,6 +473,12 @@
 
 **Shadow — Leveling (open talent search)** (`priest/research/leveling/builds/shadow-open-leveling.md`)
 - [ ] An open-search Shadow leveling build: check it while leveling at launch.
+
+**Holy — Raid healing (machine-learning search)** (`priest/research/raid/builds/holy-ml-heal.md`)
+- [ ] A machine-searched Holy build: check it against the community's healing builds at launch.
+
+**Discipline — Raid healing (machine-learning search)** (`priest/research/raid/builds/discipline-ml-heal.md`)
+- [ ] A machine-searched Discipline build: check it against the community's healing builds at launch.
 
 ### Rogue
 
@@ -547,9 +556,6 @@
 **Combat — Swords (open talent search)** (`rogue/research/raid/builds/combat-swords-open-raid.md`)
 - [ ] An open-search Combat build: check it against the community's Combat builds at launch.
 
-**Daggers (split) — Raid (open talent search)** (`rogue/research/raid/builds/daggers-split-open-raid.md`)
-- [ ] An open-search Daggers (split) build: check it against the community's Daggers (split) builds at launch.
-
 **Subtlety — Raid (open talent search)** (`rogue/research/raid/builds/subtlety-open-raid.md`)
 - [ ] An open-search Subtlety build: check it against the community's Subtlety builds at launch.
 
@@ -558,6 +564,9 @@
 
 **Combat-Subtlety — Leveling (open talent search)** (`rogue/research/leveling/builds/combat-subtlety-open-leveling.md`)
 - [ ] An open-search Combat-Subtlety leveling build: check it while leveling at launch.
+
+**Daggers (split) — Raid (machine-learning search)** (`rogue/research/raid/builds/daggers-split-ml-raid.md`)
+- [ ] A machine-searched Daggers (split) build: check it against the community's Daggers (split) builds at launch.
 
 ### Shaman
 
@@ -614,9 +623,6 @@
 **Enhancement — Raid (machine-learning search)** (`shaman/research/raid/builds/enhancement-ml-raid.md`)
 - [ ] A machine-searched Enhancement build: check it against the community's Enhancement builds at launch.
 
-**Elemental-Enhancement — Raid (machine-learning search)** (`shaman/research/raid/builds/elemental-enhancement-ml-raid.md`)
-- [ ] A machine-searched Elemental-Enhancement build: check it against the community's Elemental-Enhancement builds at launch.
-
 **Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (raid-dps)** (`shaman/research/raid/builds/opt-elemental-dps-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -634,6 +640,9 @@
 
 **Enhancement — Leveling (open talent search)** (`shaman/research/leveling/builds/enhancement-open-leveling.md`)
 - [ ] An open-search Enhancement leveling build: check it while leveling at launch.
+
+**Elemental-Enhancement — Raid (machine-learning search)** (`shaman/research/raid/builds/elemental-enhancement-ml-raid.md`)
+- [ ] A machine-searched Elemental-Enhancement build: check it against the community's Elemental-Enhancement builds at launch.
 
 ### Warlock
 

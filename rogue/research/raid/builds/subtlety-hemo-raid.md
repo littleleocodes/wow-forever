@@ -106,7 +106,7 @@ Subtlety to Hemorrhage and the Forever talents Quietus (+10% on targets under 35
   15. threshold 60 -> 30: if energy ≥ 60 and combo points ≤ 1 and Slice and Dice is up and time left in the fight > 10: cast Vanish (+0.5%, pass 6)
   16. drop: if energy ≤ 29 and combo points < 5 and time left on Expose Armor ≤ 6 and timeToNextEnergyTick > 1 and not Adrenaline Rush is up: cast Thistle Tea (+3.0%, pass 7)
   17. insert at the end: cast Preparation (+0.3%, pass 7)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-10, 11 changes to the base rotation; third-seed check: open winner 665 -> 676 DPS (+1.7%), subtlety-hemo-raid 662 -> 672 DPS (+1.6%), sim preset: Subtlety Hemo 15/0/36 622 -> 632 DPS (+1.6%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-14, 12 changes to the base rotation; third-seed check: ):
   1. drop 'combo points ≥ 4' from the condition: if combo points ≥ 4 and not Rupture is on the target and time left in the fight > 8: cast Rupture (+1.1%, pass 1)
   2. only with 20s or more of the fight left: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9): cast Slice and Dice (+0.3%, pass 1)
   3. insert at the top: if combo points ≥ 4 and not Rupture is on the target and time left in the fight > 8: cast Rupture (+0.2%, pass 2)
@@ -118,6 +118,7 @@ Subtlety to Hemorrhage and the Forever talents Quietus (+10% on targets under 35
   9. threshold 1 -> 3: if energy ≥ 60 and combo points ≤ 1 and Slice and Dice is up and time left in the fight > 10: cast Vanish (+0.2%, pass 6)
   10. move down below 'cast Cold Blood': if auraIsInactive: cast Ghostly Strike (+0.2%, pass 6)
   11. insert before the filler: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 2 and time left in the fight > 9): cast Slice and Dice (+0.2%, pass 7)
+  12. spell probe: insert before the filler: cast Blade Flurry (+0.3%, pass 9)
 
 | # | Priority (the first line whose condition holds is cast) | [`subtlety-hemo-raid`](subtlety-hemo-raid.md) casts/min |
 |---|---|---|
@@ -143,7 +144,7 @@ Damage by ability:
 | Rupture | 17% |
 | Dense Sharpening Stone | 4% |
 | Deadly Poison | 4% |
-| Eviscerate | 3% |
+| Eviscerate | 2% |
 | Garrote | 2% |
 | Dragonbreath Chili | 2% |
 | Goblin Sapper Charge | 2% |

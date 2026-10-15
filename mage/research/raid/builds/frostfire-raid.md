@@ -72,13 +72,13 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 4/31/16 | 476 | +0.0% | 632 | -6.9% | 0 s |
-| 2 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 476 | -0.0% | 680 | +0.0% | 0 s |
-| 3 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: hand draft | 4/31/16 | 439 | -7.7% | 608 | -10.6% | 1 s |
+| 1 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 4/31/16 | 472 | +0.0% | 630 | -6.7% | 0 s |
+| 2 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 470 | -0.4% | 675 | +0.0% | 0 s |
+| 3 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: hand draft | 4/31/16 | 437 | -7.4% | 597 | -11.5% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-06, 16 changes to the base rotation; third-seed check: open winner 533 -> 540 DPS (+1.4%), frostfire-open-raid 527 -> 550 DPS (+4.4%), frostfire-raid 514 -> 514 DPS (+0.0%), frostfire-ml-raid 482 -> 513 DPS (+6.4%), frostfire-fingers-of-frost-raid 535 -> 539 DPS (+0.8%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-14, 18 changes to the base rotation; third-seed check: ):
   1. insert before the filler: cast Fireball (+0.7%, pass 1)
   2. threshold 20% -> 10%: if mana % < 20% and time left in the fight > 25s: cast Evocation (+0.5%, pass 1)
   3. only with 3s or more of the fight left: cast Fireball (+0.3%, pass 1)
@@ -95,7 +95,9 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
   14. only above 25% mana: if mana % ≥ 10% and time left in the fight ≥ 6s: cast Frostfire Bolt (+0.7%, pass 5)
   15. move to the top: cast Fire Blast (+3.8%, pass 5)
   16. insert at the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+0.5%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 12 passes, the last 2026-10-09, 22 changes to the base rotation; third-seed check: frostfire-fingers-of-frost-raid 678 -> 679 DPS (+0.1%), frostfire-raid 613 -> 633 DPS (+3.2%), frostfire-ml-raid 623 -> 609 DPS (-2.3%)):
+  17. spell probe: insert in the middle: cast Arcane Blast (+1.8%, pass 9)
+  18. spell probe: insert at the top: cast Arcane Power (+1.2%, pass 9)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 13 passes, the last 2026-10-14, 23 changes to the base rotation; third-seed check: ):
   1. insert at the top: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   2. threshold 110 -> 82.5: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   3. insert at the top: cast Berserking (+0.3%, pass 3)
@@ -118,26 +120,26 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
   20. insert in the middle: cast Mana Citrine (+0.2%, pass 8)
   21. rank 2 below 30% mana, above: if mana % ≥ 10%: cast Frostfire Bolt (+1.4%, pass 12)
   22. drop 'mana % ≥ 10%' from the condition: if mana % ≥ 10% and mana % < 30%: cast Frostfire Bolt (+0.9%, pass 12)
+  23. spell probe: insert at the top: cast Arcane Power (+0.3%, pass 13)
 
 | # | Priority (the first line whose condition holds is cast) | [`frostfire-raid`](frostfire-raid.md) casts/min |
 |---|---|---|
 | 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 4.0 |
 | 2 | cast Fire Blast | 6.4 |
-| 3 | cast Berserking | 0.3 |
-| 4 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 4.0 |
-| 5 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
-| 6 | use every other cooldown when ready | as ready |
-| 7 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 8 | if stacks of Heating Up = 2: cast Pyroblast | 2.2 |
-| 9 | if stacks of Heating Up = 3: cast Pyroblast | 2.2 |
-| 10 | cast Combustion | 0.3 |
-| 11 | cast Mana Citrine | as ready |
-| 12 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 9.2 |
-| 13 | if time left in the fight ≥ 3s: cast Fireball | 5.4 |
-| 14 | cast Robe of the Archmage | as ready |
-| 15 | cast Scorch | 0.2 |
+| 3 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 4.0 |
+| 4 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
+| 5 | use every other cooldown when ready | as ready |
+| 6 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
+| 7 | if stacks of Heating Up = 2: cast Pyroblast | 2.2 |
+| 8 | if stacks of Heating Up = 3: cast Pyroblast | 2.2 |
+| 9 | cast Combustion | 0.3 |
+| 10 | cast Mana Citrine | as ready |
+| 11 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 9.2 |
+| 12 | if time left in the fight ≥ 3s: cast Fireball | 5.3 |
+| 13 | cast Robe of the Archmage | as ready |
+| 14 | cast Scorch | 0.2 |
 
-Lines of the simulator's rotation these builds never cast: cast Arcane Missiles (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Arcane Power (needs the Arcane Power talent); cast Berserking, cast Arcane Missiles (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent).
 
 Damage by ability:
 

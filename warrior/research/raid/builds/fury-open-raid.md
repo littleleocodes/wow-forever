@@ -65,12 +65,12 @@ The Fury raid build the open talent search found on 2026-10-11: every legal 51-p
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`fury-open-raid`](fury-open-raid.md)** | ours: hand draft | 18/31/2 | 528 | +0.0% | 929 | +0.0% | 0 s |
-| 2 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 19/32/0 | 508 | -3.8% | 885 | -4.7% | 0 s |
-| 3 | [`fury-dw-raid`](fury-dw-raid.md) | ours: hand draft | 13/38/0 | 501 | -5.1% | 884 | -4.8% | 0 s |
-| 4 | *DPS* | community simulator | - | 496 | -6.1% | 884 | -4.8% | 0 s |
-| 5 | *Fury 17/34/0* | community simulator | - | 482 | -8.8% | 861 | -7.4% | 0 s |
-| 6 | *Arms 39/12/0* | community simulator | - | 352 | -33.4% | 649 | -30.1% | 0 s |
+| 1 | **[`fury-open-raid`](fury-open-raid.md)** | ours: hand draft | 18/31/2 | 516 | +0.0% | 917 | +0.0% | 0 s |
+| 2 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 19/32/0 | 496 | -4.0% | 879 | -4.1% | 0 s |
+| 3 | [`fury-dw-raid`](fury-dw-raid.md) | ours: hand draft | 13/38/0 | 489 | -5.2% | 875 | -4.6% | 0 s |
+| 4 | *DPS* | community simulator | - | 483 | -6.4% | 874 | -4.7% | 0 s |
+| 5 | *Fury 17/34/0* | community simulator | - | 470 | -9.0% | 850 | -7.3% | 0 s |
+| 6 | *Arms 39/12/0* | community simulator | - | 344 | -33.5% | 645 | -29.6% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -140,7 +140,7 @@ Damage by ability:
 | Ability | [`fury-open-raid`](fury-open-raid.md) |
 |---|---|
 | Auto Attack | 45% |
-| Execute | 23% |
+| Execute | 24% |
 | Bloodthirst | 17% |
 | Whirlwind | 9% |
 | Deep Wound | 5% |
