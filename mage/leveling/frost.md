@@ -47,6 +47,8 @@ Frost levels by slowing, freezing and shattering: **Frostbolt** slows the mob as
 - If **Frost Nova** is on cooldown when the mob arrives, **Cold Snap** resets it; the fight lab does this when Nova has more than 8 seconds left and the mob still has 40% health or more.
 - Low on mana in a fight: let the wand finish anything under 10% health rather than start a **Frostbolt**.
 
+*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents while leveling
 
 One point per level from 10, in this order:
@@ -84,7 +86,7 @@ One point per level from 10, in this order:
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
-| 20 | 25 |
+| 20 | 26 |
 | 30 | 31 |
 | 40 | 32 |
 | 50 | 26 |

@@ -6,9 +6,9 @@ Every legal 51-point build, no tree rule, searched in each leveling rotation of 
 
 | Rotation | Trees that level with it | Open winner | Family | Seconds per kill (20-60) | vs our fastest there |
 |---|---|---|---|---|---|
-| arcane-leveling | Arcane | [28/0/23](https://talentsforever.com/mage/60/23000502310031053--20350031310003002-6) | Hybrid Arcane/Frost | 31.77 | +6.5% faster than arcane-leveling |
-| fire-leveling | Fire | [1/24/26](https://talentsforever.com/mage/60/1-035500201010331-005502313100030021-6) | Hybrid Fire/Frost | 32.36 | +12.5% faster than fire-leveling |
-| frost-leveling | Frost | [18/2/31](https://talentsforever.com/mage/60/2412150000003-02-1535003331000301201-6) | Frost | 27.24 | +1.9% faster than opt-frost-leveling-leveling-st |
+| arcane-leveling | Arcane | [28/0/23](https://talentsforever.com/mage/60/23000502310031053--20350031310003002-6) | Hybrid Arcane/Frost | 31.39 | +7.8% faster than arcane-leveling |
+| fire-leveling | Fire | [1/24/26](https://talentsforever.com/mage/60/1-035500201010331-005502313100030021-6) | Hybrid Fire/Frost | 32.69 | +11.4% faster than fire-leveling |
+| frost-leveling | Frost | [18/2/31](https://talentsforever.com/mage/60/2412150000003-02-1535003331000301201-6) | Frost | 27.20 | +2.1% faster than opt-frost-leveling-leveling-st |
 
 ## arcane-leveling
 
@@ -36,7 +36,7 @@ Every legal 51-point build, no tree rule, searched in each leveling rotation of 
 | Piercing Ice | 1 | +0.11 | +0.11 |
 | Wand Specialization | 2 | +0.03 | +0.01 |
 
-Race at levels 20-60 (seconds per kill): open winner 31.77, finalist 28/0/23 (own tree last order) 32.13, finalist 28/0/23 (stats model order, before the order polish) 32.13, finalist 28/1/22 32.15, finalist 28/0/23 (own tree first order) 33.26, arcane-leveling 33.84.
+Race at levels 20-60 (seconds per kill): open winner 31.39, finalist 28/0/23 (own tree last order) 31.68, finalist 28/0/23 (stats model order) 31.68, finalist 28/0/23 (stats model order, before the order polish) 32.13, finalist 28/1/22 32.15, finalist 28/0/23 (own tree first order) 32.94, arcane-leveling 33.84.
 
 **Synergy certificate** (2026-10-09, fightlab/fl_synergy.py): 51 relevant talents, 33 the winner lacks; 1133 pairs measured around 28/0/23 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Fire Power + Ice Lance +3.4% (build -13.9%), Presence of Mind + Shatter +3.3% (build -7.5%), Winter's Chill + Arcane Blast +3.2% (build -6.1%), Improved Channeling + Incineration +3.0% (build +3.8%), Improved Channeling + Ice Shards +2.7% (build -2.5%), Improved Channeling + Frost Channeling +2.6% (build -0.7%). No pair build within 1% of the winner. The certificate confirms the winner.
 
@@ -71,7 +71,7 @@ Build (2026-10-09, open_builds.py): `arcane-frost-open-leveling`.
 | Pyroblast | 1 | +0.00 | +0.00 |
 | Improved Fire Ward | 1 | +0.00 | +0.00 |
 
-Race at levels 20-60 (seconds per kill): open winner 32.36, finalist 1/24/26 (own tree first order, before the order polish) 32.43, finalist 0/24/27 (before the 20-60 polish) 32.45, finalist 1/24/26 (stats model order) 32.46, fire-leveling 36.41, opt-fire-leveling-leveling-st 37.39, finalist 1/24/26 (own tree last order) 38.09.
+Race at levels 20-60 (seconds per kill): finalist 1/24/26 (own tree first order, before the order polish) 32.43, finalist 0/24/27 (before the 20-60 polish) 32.45, open winner 32.69, finalist 1/24/26 (stats model order, before the order polish) 32.73, finalist 1/24/26 (polished from the own tree first order order) 32.78, finalist 1/24/26 (own tree first order) 32.84, fire-leveling 36.41, opt-fire-leveling-leveling-st 37.39, finalist 1/24/26 (own tree last order) 38.41.
 
 **Synergy certificate** (2026-10-09, fightlab/fl_synergy.py): 51 relevant talents, 32 the winner lacks; 1115 pairs measured around 1/24/26 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Impact + Shatter +3.4% (build -11.3%), Fire Power + Ice Lance +2.7% (build -23.8%), Ice Barrier + Improved Fireball +2.4% (build -0.2%), Impact + Ice Shards +2.4% (build -5.8%), Flame Throwing + Ice Lance +2.2% (build -30.4%), Wake of Fire + Shatter +2.2% (build -12.0%). Leads polished and raced at 20-60: Fire Power + Combustion -> 0/31/20 -8.7%. The certificate confirms the winner.
 
@@ -106,7 +106,7 @@ Build (2026-10-09, open_builds.py): `frostfire-open-leveling`.
 | Wand Specialization | 2 | -0.05 | -0.02 |
 | Arcane Focus | 4 | -0.08 | -0.02 |
 
-Race at levels 20-60 (seconds per kill): open winner 27.24, finalist 18/2/31 (own tree first order) 27.24, frost-open-leveling (the build this search wrote) 27.26, opt-frost-leveling-leveling-st 27.77, leveling-frost 28.02, opt-frost-aoe-leveling-aoe 31.69, finalist 18/2/31 (own tree last order) 35.30.
+Race at levels 20-60 (seconds per kill): open winner 27.20, finalist 18/2/31 (own tree first order) 27.20, frost-open-leveling (the build this search wrote) 27.26, opt-frost-leveling-leveling-st 27.77, leveling-frost 28.02, opt-frost-aoe-leveling-aoe 31.69, finalist 18/2/31 (own tree last order) 35.54.
 
 **Synergy certificate** (2026-10-09, fightlab/fl_synergy.py): 51 relevant talents, 32 the winner lacks; 1123 pairs measured around 18/2/31 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Presence of Mind + Ice Lance +1.8% (build -26.2%), Presence of Mind + Master of Elements +1.8% (build +4.7%), Presence of Mind + Cold Snap +1.7% (build +1.4%), Presence of Mind + Frost Channeling +1.6% (build -4.1%), Winter's Chill + Wand Specialization +1.5% (build +2.8%), Presence of Mind + Improved Frost Nova +1.4% (build +2.0%). No pair build within 1% of the winner. The certificate confirms the winner.
 

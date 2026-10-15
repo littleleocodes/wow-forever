@@ -48,6 +48,8 @@ The Shockadin leveling build is a two-handed Retribution paladin with Holy's **I
 - A mob that casts spells: **Hammer of Justice** stops the cast.
 - Two or more mobs: **Consecration** hits them all; the Holy list was not measured on several mobs with this build.
 
+*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

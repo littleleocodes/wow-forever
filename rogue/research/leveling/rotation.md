@@ -8,7 +8,7 @@ The build each spec's [leveling page](../../leveling/README.md) shows first, the
 
 | Spec | Page build | Rotation | L20 | L30 | L40 | L50 | L60 | Weighted |
 |---|---|---|---|---|---|---|---|---|
-| [Combat-Subtlety](../../leveling/combat-subtlety.md) ✅ | [`combat-subtlety-open-leveling`](builds/combat-subtlety-open-leveling.md) | [subtlety-leveling](#subtlety-leveling) | 17.4 | 20.9 | 25.4 | 25.4 | 24.7 | 23.7 |
+| [Combat-Subtlety](../../leveling/combat-subtlety.md) ✅ | [`combat-subtlety-open-leveling`](builds/combat-subtlety-open-leveling.md) | [subtlety-leveling](#subtlety-leveling) | 17.3 | 20.8 | 25.3 | 25.2 | 24.6 | 23.6 |
 | [Combat](../../leveling/combat.md) | [`combat-leveling`](builds/combat-leveling.md) | [combat-swords-raid](#combat-swords-raid) | 19.0 | 21.9 | 26.2 | 27.6 | 27.7 | 25.7 |
 | [Daggers (split)](../../leveling/daggers-split.md) | [`daggers-split-open-leveling`](builds/daggers-split-open-leveling.md) | [combat-daggers-raid](#combat-daggers-raid) | 20.7 | 23.6 | 26.7 | 27.5 | 26.8 | 25.9 |
 | [Subtlety](../../leveling/subtlety.md) | [`subtlety-leveling`](builds/subtlety-leveling.md) | [subtlety-leveling](#subtlety-leveling) | 19.2 | 23.3 | 27.2 | 28.1 | 28.7 | 26.5 |
@@ -36,7 +36,7 @@ Before the fight: Daggers in both hands: **Instant Poison** on your main hand, *
 
 Between fights: Bandage below 60% health, eat below half.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-30, on top of the priority below): eat below 50% health; never cast Slice and Dice; never cast Kidney Shot. Together +7.6% time per kill saved for `/home/user/wow-forever/rogue/research/leveling/fightlab/candidates/derived-subtlety-scorer.json` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-15, on top of the priority below): eat below 40% health; never cast Slice and Dice; never cast Kidney Shot; never cast Kick. Together +8.5% time per kill saved for `combat-subtlety-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 Casts per kill of [`combat-subtlety-open-leveling`](builds/combat-subtlety-open-leveling.md), [`subtlety-leveling`](builds/subtlety-leveling.md): not recorded (their times per kill come from the race records of the searches that found them, which keep times only; the table above has them).
 
@@ -157,36 +157,37 @@ Report: [fightlab/combat-swords-raid-aoe.md](fightlab/combat-swords-raid-aoe.md)
 
 | Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|
-| Melee | 5.8 | 6.3 | 6.2 | 6.3 | 17% |
-| Melee (off-hand) | 5.5 | 6.1 | 6.0 | 6.0 | 10% |
-| Sinister Strike | 3.7 | 3.9 | 4.2 | 4.4 | 22% |
-| Eviscerate | 1.2 | 1.5 | 1.5 | 1.6 | 34% |
-| Riposte | 0.7 | 0.8 | 0.5 | 0.5 | 3% |
-| Garrote | 0.5 | 0.5 | 0.5 | 0.5 | 5% |
-| Hack and Slash | 0.0 | 0.2 | 0.3 | 0.4 | 1% |
-| Evasion | 0.1 | 0.1 | 0.2 | 0.1 | 0% |
-
-### `cand-aoe-r5`
-
-| Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
-|---|---|---|---|---|---|
-| Melee | 5.4 | 6.3 | 6.6 | 6.9 | 19% |
-| Melee (off-hand) | 5.2 | 6.1 | 6.4 | 6.7 | 11% |
-| Sinister Strike | 3.7 | 4.5 | 4.7 | 4.9 | 25% |
-| Eviscerate | 0.8 | 1.0 | 1.1 | 1.4 | 28% |
-| Riposte | 0.7 | 0.5 | 0.5 | 0.6 | 3% |
+| Melee | 5.3 | 6.1 | 6.0 | 6.0 | 17% |
+| Melee (off-hand) | 5.0 | 5.9 | 5.9 | 5.8 | 10% |
+| Sinister Strike | 3.6 | 3.7 | 3.8 | 4.2 | 22% |
+| Eviscerate | 0.9 | 1.6 | 1.6 | 1.7 | 36% |
+| Riposte | 0.6 | 0.8 | 0.5 | 0.5 | 3% |
 | Garrote | 0.5 | 0.5 | 0.5 | 0.5 | 6% |
-| Evasion | 0.1 | 0.1 | 0.2 | 0.2 | 0% |
+| Hack and Slash | 0.0 | 0.0 | 0.3 | 0.4 | 1% |
+| Evasion | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
 
-### `cand-aoe-r6`
+### `cand-aoe-r7`
 
 | Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|
-| Melee | 5.8 | 6.3 | 6.2 | 6.3 | 17% |
-| Melee (off-hand) | 5.5 | 6.1 | 6.0 | 6.0 | 10% |
-| Sinister Strike | 3.7 | 3.9 | 4.2 | 4.4 | 22% |
-| Eviscerate | 1.2 | 1.5 | 1.5 | 1.6 | 34% |
-| Riposte | 0.7 | 0.8 | 0.5 | 0.5 | 3% |
-| Garrote | 0.5 | 0.5 | 0.5 | 0.5 | 5% |
-| Hack and Slash | 0.0 | 0.2 | 0.3 | 0.4 | 1% |
-| Evasion | 0.1 | 0.1 | 0.2 | 0.1 | 0% |
+| Melee | 5.2 | 6.1 | 6.0 | 6.1 | 16% |
+| Melee (off-hand) | 5.0 | 5.9 | 5.8 | 5.9 | 10% |
+| Sinister Strike | 3.5 | 3.7 | 3.9 | 4.3 | 22% |
+| Eviscerate | 0.9 | 1.5 | 1.6 | 1.7 | 35% |
+| Hack and Slash | 0.0 | 0.3 | 0.6 | 0.6 | 2% |
+| Riposte | 0.6 | 0.8 | 0.5 | 0.5 | 3% |
+| Garrote | 0.5 | 0.5 | 0.5 | 0.5 | 6% |
+| Evasion | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
+
+### `cand-aoe-r8`
+
+| Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
+|---|---|---|---|---|---|
+| Melee | 5.3 | 6.1 | 6.0 | 6.0 | 17% |
+| Melee (off-hand) | 5.0 | 5.9 | 5.9 | 5.8 | 10% |
+| Sinister Strike | 3.6 | 3.7 | 3.8 | 4.2 | 22% |
+| Eviscerate | 0.9 | 1.6 | 1.6 | 1.7 | 36% |
+| Riposte | 0.6 | 0.8 | 0.5 | 0.5 | 3% |
+| Garrote | 0.5 | 0.5 | 0.5 | 0.5 | 6% |
+| Hack and Slash | 0.0 | 0.0 | 0.3 | 0.4 | 1% |
+| Evasion | 0.1 | 0.1 | 0.1 | 0.1 | 0% |

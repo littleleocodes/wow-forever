@@ -16,11 +16,11 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 
 | Build | Split | Role |
 |---|---|---|
+| [Holy — Leveling into the raid build](builds/holy-leveling.md) 🔬 | 34/11/6 | DPS |
+| [Protection — Leveling into the raid build](builds/protection-leveling.md) 🔬 | 0/32/19 | DPS |
 | [Shockadin — Leveling (open talent search)](builds/shockadin-open-leveling.md) 🔬 | 14/8/29 | DPS |
 | [Protection — Leveling (open talent search)](builds/protection-open-leveling.md) 🔬 | 2/31/18 | DPS |
 | [Retribution — Leveling (open talent search)](builds/retribution-open-leveling.md) 🔬 | 12/8/31 | DPS |
-| [Holy — Leveling into the raid build](builds/holy-leveling.md) 🔬 | 34/11/6 | DPS |
-| [Protection — Leveling into the raid build](builds/protection-leveling.md) 🔬 | 0/32/19 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
@@ -67,9 +67,9 @@ Time per kill = fight + loot, travel, eating, drinking, healing and deaths; a bu
 - **Talents that matter** (time per kill lost when the talent is removed from `opt-ret-dps-leveling-st` at level 60): Sanctified Judgement +9% (L30 +14%), Two-Handed Weapon Specialization +5% (L30 +2%), Improved Seals +5%, Conviction +4% (L30 +2%), Holy Conduit +4% (L30 +0%), Seal of Command +3% (L30 +16%).
 - **Measure about zero** single-target at 60 (kept for other reasons or not simulated): Divine Intellect, Purifying Power, Pursuit of Justice, Repentance.
 - **Caster mobs:** 16% of pulls at level 30 are casters (creature-database share); 0.00 interrupts per kill at 60.
-- **Race** (hand draft vs every optimizer candidate, 2026-10-09, mean time per kill over levels 20/30/40/50/60): leveling-retribution 28.4s, cand-ret-r5 28.5s, cand-ret-r6 28.6s, cand-ret-r7 28.6s, cand-ret-hand-2026-09-26 28.8s, cand-ret-r4 28.9s, cand-ret-r3 29.3s, cand-ret-r2 29.3s, cand-ret-r1 29.4s — fastest: **leveling-retribution**.
+- **Race** (hand draft vs every optimizer candidate, 2026-10-15, mean time per kill over levels 20/30/40/50/60): leveling-retribution 28.4s, cand-ret-r5 28.5s, cand-ret-r6 28.6s, cand-ret-r7 28.6s, cand-ret-hand-2026-09-26 28.8s, cand-ret-r4 28.9s, cand-ret-r3 29.3s, cand-ret-r2 29.3s, cand-ret-r1 29.4s — fastest: **leveling-retribution**.
 - **Calibration:** the scorer's `ret-dps` leveling values were fitted jointly to the hand draft and every candidate in [`fightlab/candidates/`](fightlab/candidates/) (1 round, converged: the optimizer build repeats).
-- **AoE grinding, 3 mobs per pull:** `ret-dps` with `opt-ret-dps-leveling-aoe` ([report](fightlab/ret-dps-aoe.md)): L40 42.3s per mob in pulls of 3 (single-target build 29.5s), 1.4 deaths/100; L60 47.9s per mob in pulls of 3 (single-target build 32.4s), 11.6 deaths/100.
+- **AoE grinding, 3 mobs per pull:** `ret-dps` with `opt-ret-dps-leveling-aoe` ([report](fightlab/ret-dps-aoe.md)): L40 28.7s per mob in pulls of 3 (single-target build 29.5s), 0.1 deaths/100; L60 33.9s per mob in pulls of 3 (single-target build 32.4s), 2.1 deaths/100.
 - **Not simulated:** runners, adds, Exorcism / Holy Wrath (Undead and Demons), Repentance, Seal of Wisdom / Seal of Light twisting, Blessing of Kings, shields, gear upgrades within a level bracket.
 - **Pipeline result:** the hand draft `leveling-retribution` holds (no candidate beats it by more than the 2% margin). The player pages pick by their own races (the table at the top of this section).
 
@@ -89,3 +89,11 @@ Model findings (generated from the optimizer builds; scores are within each spec
 - **Solo / farming at 60:** 15/0/36; biggest talents by score lost when removed: Seal of Command (5.8), Two-Handed Weapon Specialization (3.5), Sanctified Judgement (3.5), Improved Seals (2.5), Pursuit of Justice (2.3); the hand draft `leveling-retribution` is 15/0/36.
 
 Beta hypotheses: every build's unverified claims are its `open_questions`, collected in [`_reference/launch-checklist.md`](../../../_reference/launch-checklist.md); level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).
+
+## Report index
+
+Reports under this folder that no other page links to (generated):
+
+- [optimizer/ret-dps-leveling-aoe.md](optimizer/ret-dps-leveling-aoe.md): paladin / forever / spec ret-dps / profile leveling-aoe
+- [optimizer/ret-dps-leveling-st.md](optimizer/ret-dps-leveling-st.md): paladin / forever / spec ret-dps / profile leveling-st
+- [optimizer/ret-dps-solo-60.md](optimizer/ret-dps-solo-60.md): paladin / forever / spec ret-dps / profile solo-60

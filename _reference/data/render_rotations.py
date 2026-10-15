@@ -633,9 +633,22 @@ def build_index(cls):
         d = spec_data(cls, spec)
         for r in (d or {}).get("rows", []):
             idx.setdefault(("raid", r["label"]), spec)
+    # 2026-10-15 page audit B23: a leveling build's page takes the report of its own rotation (the spec's own, or for a hybrid either of
+    # its trees' rotations: CLAUDE.md "each spec plays its own rotation"), the build's own report first; before, the first report that
+    # listed the build won, whichever rotation played it there
+    import spec_modes as SM
+    B = builds(cls)
+    rots = SM.leveling_rotation_trees(cls)
+    cands = {}
     for p, r in fl_reports(cls):
         for bid in [r["build"]] + list(r.get("compare", {})):
-            idx.setdefault(("leveling", bid), p)
+            cands.setdefault(bid, []).append((p, r))
+    for bid, lst in cands.items():
+        b = B.get(bid)
+        spec = SM.spec_of(cls, b) if b else None
+        lst.sort(key=lambda x: (not (spec and SM.rotation_allows(spec, rots.get(x[1].get("spec"), set()))), x[1].get("build") != bid,
+                                x[0].stem.endswith(("-aoe", "-opt"))))
+        idx[("leveling", bid)] = lst[0][0]
     return idx
 
 

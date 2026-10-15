@@ -4,19 +4,19 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `opt-shadow-dps-raid-dps` | 18/0/33 | 591 | 18 | +0.0% | 427 | 0 | +352.3% |
-| sim preset: Shadow | - | 589 | 18 | -0.3% | 543 | 0 | - |
-| sim preset: Shadow 15/0/36 | - | 589 | 18 | -0.3% | 603 | 0 | - |
-| sim preset: Smite | - | 217 | 11 | -63.3% | 234 | 1 | - |
-| sim preset: Smite 31/17/3 | - | 217 | 11 | -63.3% | 234 | 1 | - |
+| `opt-shadow-dps-raid-dps` | 18/0/33 | 593 | 19 | +0.0% | 429 | 0 | +352.3% |
+| sim preset: Shadow | - | 591 | 19 | -0.3% | 545 | 0 | - |
+| sim preset: Shadow 15/0/36 | - | 591 | 19 | -0.3% | 605 | 0 | - |
+| sim preset: Smite | - | 218 | 11 | -63.3% | 234 | 1 | - |
+| sim preset: Smite 31/17/3 | - | 218 | 11 | -63.3% | 234 | 1 | - |
 
 ## Damage shares (`opt-shadow-dps-raid-dps`, simulator actions)
 
 | Action | Share |
 |---|---|
 | Mind Flay | 46.4% |
-| Shadow Word: Pain | 21.1% |
-| Mind Blast | 20.4% |
+| Shadow Word: Pain | 21.3% |
+| Mind Blast | 20.3% |
 | Shadow Word: Death | 10.2% |
 | Devouring Plague | 1.8% |
 

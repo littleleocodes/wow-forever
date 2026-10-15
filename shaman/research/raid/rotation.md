@@ -28,7 +28,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 5. cast Lava Burst
 6. if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 200)): cast Chain Lightning
 7. cast Lightning Bolt
-8. cast Lightning Bolt
+8. cast Lightning Bolt (rank 2)
 
 The tables below are the training-dummy rotation, filtered per build:
 
@@ -42,8 +42,8 @@ Before the pull: at -2s: cast Lightning Bolt.
 | 2 | use every other cooldown when ready | as ready | as ready |
 | 3 | if not Flame Shock is on the target: cast Flame Shock | 5.1 | 5.1 |
 | 4 | if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning | 2.4 | 2.5 |
-| 5 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt | 23.3 | 15.1 |
-| 6 | cast Lightning Bolt | 0.6 | 11.4 |
+| 5 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt (rank 7) | 23.3 | 15.1 |
+| 6 | cast Lightning Bolt (rank 2) | 0.6 | 11.4 |
 
 Lines of the simulator's rotation these builds never cast: cast Magma Totem (its condition never held in these fights); cast Lava Burst (needs the Lava Burst talent).
 
@@ -67,8 +67,8 @@ Before the pull: at -2s: cast Lightning Bolt.
 | 3 | if not Flame Shock is on the target: cast Flame Shock | 4.9 | 4.9 | 4.9 | 5.0 |
 | 4 | cast Lava Burst | 4.7 | 4.7 | 4.6 | 4.7 |
 | 5 | if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning | 2.3 | 2.3 | 2.2 | 2.3 |
-| 6 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt | 14.6 | 14.6 | 11.9 | 13.4 |
-| 7 | cast Lightning Bolt | 6.4 | 6.4 | 9.9 | 7.8 |
+| 6 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt (rank 7) | 14.6 | 14.6 | 11.9 | 13.4 |
+| 7 | cast Lightning Bolt (rank 2) | 6.4 | 6.4 | 9.9 | 7.8 |
 
 Lines of the simulator's rotation these builds never cast: cast Magma Totem (its condition never held in these fights).
 
@@ -214,8 +214,8 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 5. cast Berserking
 6. cast Lava Burst
 7. if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)) and mana % ≥ 60%: cast Chain Lightning
-8. cast Lightning Bolt
-9. cast Lightning Bolt
+8. cast Lightning Bolt (rank 9)
+9. cast Lightning Bolt (rank 2)
 
 The tables below are the training-dummy rotation, filtered per build:
 
@@ -229,9 +229,9 @@ Before the pull: at -2s: cast Lightning Bolt.
 | 2 | if number of targets = 1 and not Searing Totem is on the target and mana % ≥ 60%: cast Searing Totem | 1.0 |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if not Flame Shock is on the target and mana % ≥ 60%: cast Flame Shock | 1.8 |
-| 5 | if time left in the fight ≥ 3s: cast Lightning Bolt | 24.7 |
+| 5 | if time left in the fight ≥ 3s: cast Lightning Bolt (rank 8) | 24.7 |
 | 6 | if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning | 0.1 |
-| 7 | cast Lightning Bolt | 1.7 |
+| 7 | cast Lightning Bolt (rank 4) | 1.7 |
 
 Lines of the simulator's rotation these builds never cast: cast Magma Totem, cast Earth Shock (its condition never held in these fights); cast Lava Burst (needs the Lava Burst talent).
 

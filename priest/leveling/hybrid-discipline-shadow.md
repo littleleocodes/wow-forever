@@ -4,7 +4,7 @@
 
 *Shadow's dots and Shadow Weaving, Vampiric Embrace and Darkness with Discipline's Mental Strength and Soul Warding.* (a hybrid: Discipline/Shadow).
 
-**[Discipline/Shadow hybrid — Leveling](../research/leveling/builds/hybrid-discipline-shadow-open-leveling.md)** (22/0/29) — [open the talent tree](https://talentsforever.com/priest/60/0240130313131--41502050001131204-6)
+**[Discipline-Shadow — Leveling](../research/leveling/builds/hybrid-discipline-shadow-open-leveling.md)** (22/0/29) — [open the talent tree](https://talentsforever.com/priest/60/0240130313131--41502050001131204-6)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
@@ -46,6 +46,8 @@ The Discipline-Shadow build plays the Discipline leveling list (a Smite priest's
 - Hurt in a fight: shield again below half your health, **Flash Heal** below about a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%.
 - For speed, the Shadow page levels about 40% faster per kill.
 
+*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents while leveling
 
 One point per level from 10, in this order:
@@ -68,9 +70,10 @@ One point per level from 10, in this order:
 | 33-36 | Shadow Focus (Shadow) | 4 |
 | 37 | Improved Shadow Word: Pain (Shadow) | 1 |
 | 38-42 | Spirit Tap (Shadow) | 5 |
-| 43-47 | Improved Mind Blast (Shadow) | 5 |
-| 48-50 | Shadow Weaving (Shadow) | 3 |
-| 51 | Improved Shadow Word: Pain (Shadow) | 1 |
+| 43-46 | Improved Mind Blast (Shadow) | 4 |
+| 47-49 | Shadow Weaving (Shadow) | 3 |
+| 50 | Improved Shadow Word: Pain (Shadow) | 1 |
+| 51 | Improved Mind Blast (Shadow) | 1 |
 | 52 | Improved Fade (Shadow) | 1 |
 | 53 | Vampiric Embrace (Shadow) | 1 |
 | 54 | Silence (Shadow) | 1 |
@@ -84,7 +87,7 @@ One point per level from 10, in this order:
 | 20 | 37 |
 | 30 | 41 |
 | 40 | 48 |
-| 50 | 44 |
+| 50 | 43 |
 | 60 | 42 |
 
 ---

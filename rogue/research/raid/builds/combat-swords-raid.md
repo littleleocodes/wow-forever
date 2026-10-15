@@ -75,16 +75,16 @@ Allocation adopted on 2026-09-28 from the community simulator's own preset 'Impr
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`combat-swords-raid`](combat-swords-raid.md)** | ours: hand draft | 19/32/0 | 409 | +0.0% | 703 | -2.1% | 0 s |
-| 2 | *Improved Expose Armor (SS)* | community simulator | - | 409 | +0.0% | 703 | -2.1% | 0 s |
-| 3 | [`combat-swords-open-raid`](combat-swords-open-raid.md) | ours: derived (open search) | 18/33/0 | 392 | -4.2% | 718 | +0.0% | 0 s |
-| 4 | [`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 391 | -4.4% | 704 | -2.0% | 0 s |
-| 5 | *Sinister Strike* | community simulator | - | 387 | -5.4% | 711 | -0.9% | 0 s |
-| 6 | *Combat Dual-Wield 15/33/3* | community simulator | - | 380 | -7.1% | 698 | -2.8% | 0 s |
-| 7 | *Assassination Mutilate 31/20/0* | community simulator | - | 356 | -13.1% | 645 | -10.2% | 0 s |
-| 8 | *Mutilate* | community simulator | - | 344 | -15.8% | 630 | -12.2% | 0 s |
-| 9 | *Backstab* | community simulator | - | 331 | -18.9% | 640 | -10.9% | 0 s |
-| 10 | *Subtlety Hemo 15/0/36* | community simulator | - | 315 | -22.9% | 559 | -22.1% | 0 s |
+| 1 | **[`combat-swords-raid`](combat-swords-raid.md)** | ours: hand draft | 19/32/0 | 409 | +0.0% | 667 | -1.7% | 0 s |
+| 2 | *Improved Expose Armor (SS)* | community simulator | - | 409 | +0.0% | 667 | -1.7% | 0 s |
+| 3 | [`combat-swords-open-raid`](combat-swords-open-raid.md) | ours: derived (open search) | 18/33/0 | 392 | -4.2% | 679 | +0.0% | 0 s |
+| 4 | [`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 391 | -4.4% | 666 | -2.0% | 0 s |
+| 5 | *Sinister Strike* | community simulator | - | 387 | -5.4% | 675 | -0.5% | 0 s |
+| 6 | *Combat Dual-Wield 15/33/3* | community simulator | - | 380 | -7.1% | 662 | -2.6% | 0 s |
+| 7 | *Assassination Mutilate 31/20/0* | community simulator | - | 356 | -13.1% | 610 | -10.2% | 0 s |
+| 8 | *Mutilate* | community simulator | - | 344 | -15.8% | 597 | -12.1% | 0 s |
+| 9 | *Backstab* | community simulator | - | 331 | -18.9% | 602 | -11.4% | 0 s |
+| 10 | *Subtlety Hemo 15/0/36* | community simulator | - | 315 | -22.9% | 527 | -22.4% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

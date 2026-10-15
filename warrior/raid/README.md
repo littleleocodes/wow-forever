@@ -7,7 +7,7 @@
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
 | 1 | [Arms](arms.md) — Full raid 🔬 | 964 | best |
-| 2 | [Fury](fury.md) 🔬 | 917 | -5% |
+| 2 | [Fury](fury.md) (optimized, two-handed) | 881 | -9% |
 
 **Tanking**: [Protection](protection.md) (optimized).
 

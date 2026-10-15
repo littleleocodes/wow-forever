@@ -296,7 +296,7 @@ Our tuned rotation `prot-tank-raid.apl.json` (the simulator's `protection.apl.js
   4. drop: cast Thunder Clap (+0.8%, pass 4)
   5. insert before the filler: cast Shield Bash (+0.2%, pass 4)
 
-### [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) (ours: optimizer, 535 DPS), [`prot-raid-tank`](builds/prot-raid-tank.md) (ours: hand draft, 521 DPS), *Protection* (community simulator, 487 DPS), *Protection 1/0/50* (community simulator, 479 DPS)
+### [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) (ours: optimizer, 512 DPS), [`prot-raid-tank`](builds/prot-raid-tank.md) (ours: hand draft, 497 DPS), *Protection* (community simulator, 466 DPS), *Protection 1/0/50* (community simulator, 458 DPS)
 
 Before the pull: at -1s: cast Battle Shout.
 
@@ -304,10 +304,10 @@ Before the pull: at -1s: cast Battle Shout.
 |---|---|---|---|---|---|
 | 1 | cast Shield Wall | 0.3 | 0.3 | 0.3 | 0.3 |
 | 2 | use every other cooldown when ready | as ready | as ready | as ready | as ready |
-| 3 | cast Revenge | 6.2 | 6.2 | 5.4 | 5.3 |
+| 3 | cast Revenge | 6.2 | 6.2 | 5.5 | 5.3 |
 | 4 | cast Shield Slam | 9.9 | 9.9 | 9.9 | 9.9 |
-| 5 | if rage ≥ 45: cast Heroic Strike | 19.6 | 20.9 | 20.1 | 18.3 |
-| 6 | if not Rend is on the target: cast Rend | 3.0 | 3.0 | 3.0 | 3.1 |
+| 5 | if rage ≥ 45: cast Heroic Strike | 18.1 | 19.5 | 18.8 | 17.1 |
+| 6 | if not Rend is on the target: cast Rend | 3.0 | 3.0 | 3.1 | 3.1 |
 | 7 | cast Shield Bash | 4.9 | 4.9 | 4.9 | 4.9 |
 
 Lines of the simulator's rotation these builds never cast: cast Defensive Stance, cast Sunder Armor (its condition never held in these fights).
@@ -316,11 +316,11 @@ Damage by ability (threat for tanks):
 
 | Ability | [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) | [`prot-raid-tank`](builds/prot-raid-tank.md) | *Protection* | *Protection 1/0/50* |
 |---|---|---|---|---|
-| Heroic Strike | 34% | 36% | 36% | 33% |
-| Shield Slam | 29% | 29% | 30% | 31% |
-| Revenge | 15% | 15% | 13% | 13% |
-| Auto Attack | 12% | 11% | 12% | 14% |
-| Rend | 4% | 3% | 3% | 3% |
+| Heroic Strike | 32% | 35% | 35% | 32% |
+| Shield Slam | 30% | 30% | 31% | 32% |
+| Revenge | 15% | 15% | 14% | 14% |
+| Auto Attack | 11% | 10% | 11% | 13% |
+| Rend | 4% | 3% | 4% | 4% |
 | Retribution Aura | 2% | 2% | 3% | 3% |
 | Deep Wound | 2% | 0% | 0% | 0% |
 | Thorns | 1% | 1% | 1% | 1% |

@@ -82,5 +82,11 @@
   "after": "\tif consumables.OhImbueId != 0 {\n\t\tregisterStaticImbue(agent, consumables.OhImbueId, character.AutoAttacks.OH())\n\t}\n",
   "insert": "\tforeverExtraImbues(agent) // wow-forever patch: a second temporary enchant per weapon, as Forever allows (patches/forever/sim/core/forever_rules_patch.go)\n",
   "why": "Forever lets stones and oils stack with poisons, shaman imbues and the warlock's Firestone/Spellstone imbues"
+ },
+ {
+  "file": "sim/core/buffs/drivers.go",
+  "after": "\ttrigger.Name = \"Windfury Totem Trigger\"\n",
+  "insert": "\ttrigger.ProcMask &= core.ProcMaskMeleeMH // wow-forever patch: Windfury Totem procs from main-hand hits only (70291 tooltip: \"Each main hand hit\")\n",
+  "why": "the spell's proc flags (0x14: melee autos and specials) decode to both hands; the 70291 tooltip and Classic's main-hand enchant say main hand only"
  }
 ]

@@ -47,6 +47,8 @@ This hybrid levels on the Arcane list: **Arcane Missiles** from range, **Frost N
 - On a nearly dead mob, skip **Arcane Missiles**, even a free one from **Missile Barrage**; finish with **Fire Blast**, **Ice Lance** or the wand.
 - If the mob would reach you before an **Arcane Blast** finishes, do not start it: **Frost Nova**, step back, and cast while it is frozen.
 
+*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents while leveling
 
 One point per level from 10, in this order:
@@ -81,9 +83,9 @@ One point per level from 10, in this order:
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
-| 20 | 30 |
-| 30 | 36 |
-| 40 | 39 |
+| 20 | 29 |
+| 30 | 35 |
+| 40 | 38 |
 | 50 | 30 |
 | 60 | 27 |
 

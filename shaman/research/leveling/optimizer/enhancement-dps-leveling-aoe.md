@@ -9,91 +9,93 @@ Effect coverage: 1 parsed from tooltips, 49 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Stormstrike | Enhancement | 4 | +24.22% | manual |
-| Spirit Weapons | Enhancement | 5 | +5.37% | manual |
-| Rage of the Farseer | Enhancement | 7 | +3.14% | manual |
-| Anticipation | Enhancement | 3 | +2.59% | manual |
-| Mental Dexterity | Enhancement | 2 | +2.09% | manual |
-| Mental Quickness | Enhancement | 5 | +1.56% | manual |
-| Thundering Strikes | Enhancement | 1 | +1.29% | manual |
-| Improved Fire Nova | Elemental | 4 | +1.25% | parsed |
-| Improved Reincarnation | Restoration | 2 | +1.13% | manual |
-| Flurry | Enhancement | 4 | +1.03% | manual |
-| Call of Flame | Elemental | 2 | +0.91% | manual |
-| Tidal Focus | Restoration | 2 | +0.76% | manual |
-| Elemental Weapons | Enhancement | 3 | +0.70% | manual |
-| Elemental Alacrity | Elemental | 3 | +0.60% | manual |
-| Elemental Devastation | Elemental | 2 | +0.59% | manual |
-| Mindfulness | Restoration | 2 | +0.54% | manual |
-| Elemental Fury | Elemental | 6 | +0.48% | manual |
-| Elemental Warding | Elemental | 2 | +0.34% | manual |
-| Improved Lightning Shield | Enhancement | 2 | +0.33% | manual |
-| Toughness | Enhancement | 4 | +0.31% | manual |
+| Stormstrike | Enhancement | 4 | +18.76% | manual |
+| Rage of the Farseer | Enhancement | 7 | +3.78% | manual |
+| Call of Flame | Elemental | 2 | +2.36% | manual |
+| Improved Fire Nova | Elemental | 4 | +1.79% | parsed |
+| Mental Quickness | Enhancement | 5 | +1.75% | manual |
+| Elemental Alacrity | Elemental | 3 | +1.69% | manual |
+| Spirit Weapons | Enhancement | 5 | +1.61% | manual |
+| Mental Dexterity | Enhancement | 2 | +1.52% | manual |
+| Thundering Strikes | Enhancement | 1 | +1.25% | manual |
+| Anticipation | Enhancement | 3 | +1.05% | manual |
+| Flurry | Enhancement | 4 | +0.92% | manual |
+| Elemental Weapons | Enhancement | 3 | +0.60% | manual |
+| Elemental Fury | Elemental | 6 | +0.58% | manual |
+| Mindfulness | Restoration | 2 | +0.47% | manual |
+| Improved Reincarnation | Restoration | 2 | +0.40% | manual |
+| Elemental Warding | Elemental | 2 | +0.35% | manual |
+| Improved Lightning Shield | Enhancement | 2 | +0.31% | manual |
 | Earth's Grasp | Enhancement | 1 | +0.30% | manual |
 | Guardian Totems | Enhancement | 2 | +0.30% | manual |
-| Mana Tide Totem | Restoration | 4 | +0.24% | manual |
-| Nature's Swiftness | Restoration | 5 | +0.23% | manual |
-| Elemental Focus | Elemental | 3 | +0.22% | manual |
+| Nature's Swiftness | Restoration | 5 | +0.26% | manual |
+| Mana Tide Totem | Restoration | 4 | +0.21% | manual |
 | Improved Ghost Wolf | Enhancement | 2 | +0.20% | manual |
-| Lightning Overload | Elemental | 5 | +0.10% | manual |
-| Call of Thunder | Elemental | 4 | +0.10% | manual |
-| Water Shield | Restoration | 3 | +0.09% | manual |
-| Concussion | Elemental | 1 | +0.07% | manual |
+| Tidal Focus | Restoration | 2 | +0.16% | manual |
+| Toughness | Enhancement | 4 | +0.15% | manual |
+| Elemental Devastation | Elemental | 2 | +0.13% | manual |
+| Water Shield | Restoration | 3 | +0.08% | manual |
+| Lightning Overload | Elemental | 5 | +0.08% | manual |
+| Call of Thunder | Elemental | 4 | +0.08% | manual |
+| Convection | Elemental | 1 | +0.03% | manual |
+| Maelstrom Weapon | Enhancement | 6 | +0.02% | manual |
 
-## Optimized build: 20/31/0  score +54.61%  (dps x1.861, sustain x1.075, surv x1.365, utility +2.20%)
+## Optimized build: 17/34/0  score +48.50%  (dps x1.760, sustain x1.050, surv x1.139, utility +2.20%)
 
 ```
-  Elemental: Concussion 5, Elemental Devastation 3, Call of Flame 3, Elemental Warding 3, Elemental Alacrity 3, Elemental Focus 1, Improved Fire Nova 2
-  Enhancement: Thundering Strikes 5, Earth's Grasp 2, Mental Dexterity 3, Guardian Totems 2, Improved Ghost Wolf 2, Improved Lightning Shield 1, Anticipation 3, Elemental Weapons 3, Stormstrike 1, Flurry 5, Spirit Weapons 1, Mental Quickness 2, Rage of the Farseer 1
+  Elemental: Convection 5, Call of Flame 3, Elemental Warding 3, Elemental Devastation 3, Elemental Alacrity 1, Improved Fire Nova 2
+  Enhancement: Thundering Strikes 5, Earth's Grasp 2, Mental Dexterity 3, Guardian Totems 2, Improved Ghost Wolf 2, Improved Lightning Shield 3, Anticipation 3, Elemental Weapons 3, Stormstrike 1, Flurry 5, Toughness 1, Spirit Weapons 1, Mental Quickness 2, Rage of the Farseer 1
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Improved Reincarnation | Restoration 2 | 1/2 | +0.54% | no |
-| Elemental Fury | Elemental 6 | 1/5 | +0.54% | no |
-| Tidal Focus | Restoration 2 | 1/5 | +0.36% | no |
-| Mindfulness | Restoration 2 | 1/3 | +0.26% | no |
+| Elemental Fury | Elemental 6 | 1/5 | +0.83% | no |
+| Mindfulness | Restoration 2 | 1/3 | +0.25% | no |
+| Improved Reincarnation | Restoration 2 | 1/2 | +0.23% | no |
+| Nature's Swiftness | Restoration 5 | 1/1 | +0.12% | no |
 | Mana Tide Totem | Restoration 4 | 1/1 | +0.11% | no |
-| Improved Lightning Shield | Enhancement 2 | 2/3 | +0.10% | yes |
-| Toughness | Enhancement 4 | 1/5 | +0.09% | yes |
-| Nature's Swiftness | Restoration 5 | 1/1 | +0.08% | no |
+| Tidal Focus | Restoration 2 | 1/5 | +0.09% | no |
+| Toughness | Enhancement 4 | 2/5 | +0.06% | yes |
 | Water Shield | Restoration 3 | 1/1 | +0.04% | no |
-| Lightning Overload | Elemental 5 | 1/3 | +0.04% | yes |
-| Call of Thunder | Elemental 4 | 1/1 | +0.04% | yes |
-| Convection | Elemental 1 | 1/5 | +0.01% | yes |
+| Lightning Overload | Elemental 5 | 1/3 | +0.04% | no |
+| Call of Thunder | Elemental 4 | 1/1 | +0.03% | no |
+| Elemental Alacrity | Elemental 3 | 2/3 | +0.02% | yes |
+| Maelstrom Weapon | Enhancement 6 | 1/5 | +0.01% | yes |
 | Restorative Totems | Restoration 4 | 1/5 | +0.01% | no |
-| Reverberation | Elemental 2 | 1/5 | +0.00% | yes |
-| Eye of the Storm | Elemental 4 | 1/3 | +0.00% | yes |
+| Lava Burst | Elemental 7 | 1/1 | +0.00% | no |
+| Concussion | Elemental 1 | 1/5 | +0.00% | yes |
 
 ## Leveling order (lookahead 16; receding horizon)
 
 | Levels | Tree | Talent | Pts | Score at end |
 |---|---|---|---|---|
-| 10-14 | Enhancement | Thundering Strikes | 5 | +5.9% |
-| 15 | Enhancement | Mental Dexterity | 1 | +7.9% |
-| 16 | Enhancement | Improved Ghost Wolf | 1 | +8.1% |
-| 17-18 | Enhancement | Mental Dexterity | 2 | +11.8% |
-| 19 | Enhancement | Improved Ghost Wolf | 1 | +12.6% |
-| 20-21 | Enhancement | Anticipation | 2 | +16.9% |
-| 22 | Enhancement | Earth's Grasp | 1 | +17.2% |
-| 23 | Enhancement | Anticipation | 1 | +19.0% |
-| 24 | Enhancement | Earth's Grasp | 1 | +19.3% |
-| 25 | Enhancement | Stormstrike | 1 | +44.2% |
-| 26-29 | Enhancement | Flurry | 4 | +42.5% |
-| 30 | Enhancement | Spirit Weapons | 1 | +45.8% |
-| 31 | Enhancement | Flurry | 1 | +46.5% |
-| 32-33 | Enhancement | Mental Quickness | 2 | +46.6% |
-| 34-36 | Enhancement | Elemental Weapons | 3 | +47.8% |
-| 37-38 | Enhancement | Guardian Totems | 2 | +48.4% |
-| 39 | Enhancement | Improved Lightning Shield | 1 | +48.5% |
-| 40 | Enhancement | Rage of the Farseer | 1 | +50.5% |
-| 41-45 | Elemental | Concussion | 5 | +50.6% |
-| 46-48 | Elemental | Elemental Devastation | 3 | +51.6% |
-| 49-51 | Elemental | Call of Flame | 3 | +52.5% |
-| 52-54 | Elemental | Elemental Alacrity | 3 | +53.3% |
-| 55 | Elemental | Elemental Focus | 1 | +53.4% |
-| 56-57 | Elemental | Improved Fire Nova | 2 | +54.3% |
-| 58-60 | Elemental | Elemental Warding | 3 | +54.6% |
+| 10-14 | Enhancement | Thundering Strikes | 5 | +5.8% |
+| 15 | Enhancement | Improved Ghost Wolf | 1 | +6.0% |
+| 16-18 | Enhancement | Mental Dexterity | 3 | +10.2% |
+| 19 | Enhancement | Improved Ghost Wolf | 1 | +11.0% |
+| 20 | Enhancement | Anticipation | 1 | +11.9% |
+| 21 | Enhancement | Earth's Grasp | 1 | +12.2% |
+| 22 | Enhancement | Anticipation | 1 | +13.1% |
+| 23 | Enhancement | Earth's Grasp | 1 | +13.4% |
+| 24 | Enhancement | Anticipation | 1 | +14.3% |
+| 25 | Enhancement | Stormstrike | 1 | +34.8% |
+| 26-29 | Enhancement | Flurry | 4 | +33.5% |
+| 30 | Enhancement | Spirit Weapons | 1 | +35.6% |
+| 31-32 | Enhancement | Mental Quickness | 2 | +36.5% |
+| 33 | Enhancement | Flurry | 1 | +37.2% |
+| 34-36 | Enhancement | Elemental Weapons | 3 | +38.4% |
+| 37-38 | Enhancement | Guardian Totems | 2 | +39.0% |
+| 39 | Enhancement | Improved Lightning Shield | 1 | +39.2% |
+| 40 | Enhancement | Rage of the Farseer | 1 | +41.9% |
+| 41-45 | Elemental | Convection | 5 | +42.0% |
+| 46-48 | Elemental | Call of Flame | 3 | +45.1% |
+| 49-50 | Elemental | Elemental Warding | 2 | +45.4% |
+| 51 | Elemental | Elemental Alacrity | 1 | +46.1% |
+| 52 | Elemental | Elemental Warding | 1 | +46.2% |
+| 53-55 | Elemental | Elemental Devastation | 3 | +46.5% |
+| 56-57 | Elemental | Improved Fire Nova | 2 | +48.2% |
+| 58-59 | Enhancement | Improved Lightning Shield | 2 | +48.4% |
+| 60 | Enhancement | Toughness | 1 | +48.5% |
 

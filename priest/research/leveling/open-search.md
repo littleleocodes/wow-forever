@@ -6,8 +6,8 @@ Every legal 51-point build, no tree rule, searched in each leveling rotation of 
 
 | Rotation | Trees that level with it | Open winner | Family | Seconds per kill (20-60) | vs our fastest there |
 |---|---|---|---|---|---|
-| discipline-leveling | Discipline | [22/0/29](https://talentsforever.com/priest/60/0240130313131--41502050001131204-6) | Hybrid Discipline/Shadow | 42.92 | +19.1% faster than discipline-leveling |
-| holy-leveling | Holy | [16/17/18](https://talentsforever.com/priest/60/0250030113001-33405000002-3050204010003-6) | Hybrid Holy/Shadow | 43.13 | +20.5% faster than holy-leveling |
+| discipline-leveling | Discipline | [22/0/29](https://talentsforever.com/priest/60/0240130313131--41502050001131204-6) | Hybrid Discipline/Shadow | 42.66 | +19.8% faster than discipline-leveling |
+| holy-leveling | Holy | [16/17/18](https://talentsforever.com/priest/60/0250030113001-33405000002-3050204010003-6) | Hybrid Holy/Shadow | 43.14 | +20.5% faster than holy-leveling |
 | shadow-dps | Shadow | [17/2/32](https://talentsforever.com/priest/60/0150112313-2-345001401201202151-6) | Shadow | 25.45 | +1.0% faster than leveling-shadow |
 
 ## discipline-leveling
@@ -38,7 +38,7 @@ Every legal 51-point build, no tree rule, searched in each leveling rotation of 
 | Devouring Contagion | 2 | +0.00 | +0.00 |
 | Blackout | 1 | -0.08 | -0.08 |
 
-Race at levels 20-60 (seconds per kill): open winner 42.92, finalist 22/0/29 (own tree last order, before the order polish) 43.47, finalist 22/0/29 (stats model order) 43.81, finalist 22/0/29 (own tree first order) 43.81, discipline-leveling 51.10.
+Race at levels 20-60 (seconds per kill): open winner 42.66, finalist 22/0/29 (polished from the own tree last order order, before the order polish) 42.92, finalist 22/0/29 (own tree last order, before the order polish) 43.47, finalist 22/0/29 (own tree last order) 43.47, finalist 22/0/29 (stats model order) 43.81, finalist 22/0/29 (own tree first order) 43.81, discipline-leveling 51.10.
 
 **Synergy certificate** (2026-10-11, fightlab/fl_synergy.py): 40 relevant talents, 20 the winner lacks; 660 pairs measured around 22/0/29 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Penance + Spirit Tap +1.9% (build -11.6%), Penance + Improved Shadow Word: Pain +1.3% (build -11.0%), Searing Light + Shadow Focus +1.1% (build -0.8%), Power Infusion + Improved Shadow Word: Pain +0.9% (build -2.6%), Penance + Darkness +0.9% (build -12.1%), Searing Light + Improved Inner Fire +0.6% (build +0.2%). No pair build within 1% of the winner. The certificate confirms the winner.
 
@@ -71,7 +71,7 @@ Build (2026-10-11, open_builds.py): `hybrid-discipline-shadow-open-leveling`.
 | Improved Renew | 3 | +0.00 | +0.00 |
 | Mind Flay | 1 | +0.00 | +0.00 |
 
-Race at levels 20-60 (seconds per kill): open winner 43.13, finalist 16/17/18 (own tree first order) 43.46, finalist 16/17/18 (stats model order, before the order polish) 43.46, finalist 16/17/18 (before the 20-60 polish) 44.62, finalist 16/17/18 (own tree last order) 46.10, holy-leveling 51.98.
+Race at levels 20-60 (seconds per kill): open winner 43.14, finalist 16/17/18 (stats model order, before the order polish) 43.46, finalist 16/17/18 (own tree first order) 43.47, finalist 16/17/18 (stats model order) 43.47, finalist 16/17/18 (before the 20-60 polish) 44.62, finalist 16/17/18 (own tree last order) 46.19, holy-leveling 51.98.
 
 **Synergy certificate** (2026-10-11, fightlab/fl_synergy.py): 40 relevant talents, 24 the winner lacks; 643 pairs measured around 16/17/18 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Improved Inner Fire + Shadowform +3.2% (build +42.2%), Darkness + Shadowform +2.8% (build +46.5%), Penance + Spirit Tap +2.1% (build -10.6%), Penance + Shadow Weaving +2.0% (build -10.1%), Penance + Improved Shadow Word: Pain +1.9% (build -11.2%), Darkness + Wand Specialization +1.2% (build +3.9%). No pair build within 1% of the winner. The certificate confirms the winner.
 

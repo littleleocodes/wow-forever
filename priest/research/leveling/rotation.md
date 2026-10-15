@@ -9,8 +9,8 @@ The build each spec's [leveling page](../../leveling/README.md) shows first, the
 | Spec | Page build | Rotation | L20 | L30 | L40 | L50 | L60 | Weighted |
 |---|---|---|---|---|---|---|---|---|
 | [Shadow](../../leveling/shadow.md) ✅ | [`shadow-open-leveling`](builds/shadow-open-leveling.md) | [shadow-dps](#shadow-dps) | 36.5 | 36.1 | 22.4 | 22.6 | 20.9 | 25.5 |
-| [Discipline-Shadow](../../leveling/hybrid-discipline-shadow.md) | [`hybrid-discipline-shadow-open-leveling`](builds/hybrid-discipline-shadow-open-leveling.md) | [discipline-leveling](#discipline-leveling) | 37.0 | 41.2 | 48.2 | 43.6 | 41.7 | 42.9 |
-| [Holy-Shadow](../../leveling/hybrid-holy-shadow.md) | [`hybrid-holy-shadow-open-leveling`](builds/hybrid-holy-shadow-open-leveling.md) | [holy-leveling](#holy-leveling) | 33.5 | 41.3 | 46.5 | 44.3 | 44.0 | 43.1 |
+| [Discipline-Shadow](../../leveling/hybrid-discipline-shadow.md) | [`hybrid-discipline-shadow-open-leveling`](builds/hybrid-discipline-shadow-open-leveling.md) | [discipline-leveling](#discipline-leveling) | 37.0 | 41.2 | 48.2 | 42.5 | 41.7 | 42.7 |
+| [Holy-Shadow](../../leveling/hybrid-holy-shadow.md) | [`hybrid-holy-shadow-open-leveling`](builds/hybrid-holy-shadow-open-leveling.md) | [holy-leveling](#holy-leveling) | 33.5 | 41.3 | 46.5 | 44.4 | 44.0 | 43.1 |
 | [Holy](../../leveling/holy.md) | [`holy-leveling`](builds/holy-leveling.md) | [holy-leveling](#holy-leveling) | 37.7 | 43.5 | 54.9 | 53.3 | 52.5 | 50.3 |
 | [Discipline](../../leveling/discipline.md) | [`discipline-leveling`](builds/discipline-leveling.md) | [discipline-leveling](#discipline-leveling) | 38.7 | 47.2 | 56.2 | 54.8 | 54.0 | 52.1 |
 
@@ -81,7 +81,7 @@ Before the fight: **Power Word: Fortitude** and **Inner Fire** up. **Power Word:
 
 Between fights: Drink only below 15% mana; **Renew** yourself after the fight and eat only if you are still below two thirds of your health.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-30, on top of the priority below): Smite only while the mob has more than 35% health; never cast Holy Fire; WAND_BELOW = 0.3; drink below 15% mana. Together +15.5% time per kill saved for `/home/user/wow-forever/priest/research/leveling/fightlab/candidates/derived-discipline-scorer.json` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-15, on top of the priority below): Smite only while the mob has more than 35% health; WAND_BELOW = 0.3; drink below 25% mana; never cast Holy Fire; drink below 15% mana; Penance only above 30% mana. Together +9.5% time per kill saved for `discipline-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 Casts per kill of [`hybrid-discipline-shadow-open-leveling`](builds/hybrid-discipline-shadow-open-leveling.md), [`discipline-leveling`](builds/discipline-leveling.md): not recorded (their times per kill come from the race records of the searches that found them, which keep times only; the table above has them).
 
@@ -101,7 +101,7 @@ Before the fight: **Power Word: Fortitude** and **Inner Fire** up. **Power Word:
 
 Between fights: Drink only below 15% mana; **Renew** yourself after the fight and eat only if you are still below 80% health.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-30, on top of the priority below): Smite only while the mob has more than 35% health; WAND_BELOW = 0.3; never cast Holy Fire; drink below 15% mana; eat below 80% health. Together +14.8% time per kill saved for `/home/user/wow-forever/priest/research/leveling/fightlab/candidates/derived-holy-scorer.json` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-15, on top of the priority below): Smite only while the mob has more than 35% health; WAND_BELOW = 0.3; drink below 15% mana; never cast Holy Fire; Penance only above 30% mana. Together +9.4% time per kill saved for `holy-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 Casts per kill of [`hybrid-holy-shadow-open-leveling`](builds/hybrid-holy-shadow-open-leveling.md), [`holy-leveling`](builds/holy-leveling.md): not recorded (their times per kill come from the race records of the searches that found them, which keep times only; the table above has them).
 
@@ -117,45 +117,42 @@ Report: [fightlab/shadow-dps-aoe.md](fightlab/shadow-dps-aoe.md).
 
 | Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|
-| Wand | 11.1 | 5.1 | 7.2 | 5.0 | 6% |
-| Mind Flay | 3.1 | 2.9 | 2.5 | 2.3 | 30% |
-| Shadow Word: Pain | 2.7 | 2.4 | 2.0 | 1.9 | 32% |
-| Mind Blast | 1.2 | 1.1 | 1.1 | 1.1 | 15% |
-| Shadow Word: Death | 0.0 | 0.9 | 1.0 | 1.0 | 15% |
+| Wand | 13.9 | 5.8 | 6.5 | 4.2 | 5% |
+| Mind Flay | 3.6 | 3.0 | 2.5 | 2.3 | 29% |
+| Shadow Word: Pain | 1.9 | 1.9 | 1.9 | 1.9 | 35% |
+| Mind Blast | 1.4 | 1.2 | 1.1 | 1.1 | 15% |
+| Shadow Word: Death | 0.0 | 1.1 | 1.1 | 1.0 | 15% |
 | Vampiric Embrace | 0.4 | 0.4 | 0.4 | 0.4 | 0% |
-| Devouring Plague | 0.4 | 0.3 | 0.3 | 0.3 | 2% |
-| Psychic Scream | 0.2 | 0.2 | 0.1 | 0.1 | 0% |
-| Desperate Prayer | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
-| Flash Heal | 0.9 | 0.0 | 0.0 | 0.0 | 0% |
-
-### `cand-aoe-r3`
-
-| Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
-|---|---|---|---|---|---|
-| Wand | 9.7 | 4.5 | 6.5 | 11.9 | 8% |
-| Holy Nova | 0.0 | 0.0 | 0.0 | 4.5 | 33% |
-| Shadow Word: Pain | 2.9 | 2.9 | 2.3 | 3.3 | 31% |
-| Mind Flay | 3.1 | 2.7 | 2.6 | 2.5 | 17% |
-| Mind Blast | 1.7 | 1.6 | 1.5 | 1.2 | 9% |
-| Vampiric Embrace | 0.0 | 0.4 | 0.4 | 1.0 | 0% |
-| Psychic Scream | 0.3 | 0.3 | 0.2 | 0.3 | 0% |
-| Shadow Word: Death | 0.0 | 0.8 | 0.9 | 0.3 | 2% |
-| Desperate Prayer | 0.1 | 0.1 | 0.1 | 0.2 | 0% |
-| Devouring Plague | 0.4 | 0.4 | 0.3 | 0.1 | 0% |
-| Flash Heal | 0.8 | 0.0 | 0.0 | 0.0 | 0% |
+| Devouring Plague | 0.4 | 0.3 | 0.2 | 0.3 | 2% |
+| Psychic Scream | 0.2 | 0.1 | 0.1 | 0.1 | 0% |
+| Flash Heal | 1.2 | 0.0 | 0.0 | 0.0 | 0% |
 
 ### `cand-aoe-r4`
 
 | Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|
-| Wand | 7.6 | 19.8 | 17.7 | 10.2 | 8% |
-| Holy Nova | 0.0 | 5.6 | 4.9 | 3.4 | 30% |
-| Shadow Word: Pain | 2.4 | 3.4 | 3.8 | 2.6 | 32% |
-| Mind Flay | 3.2 | 2.7 | 3.3 | 1.7 | 17% |
-| Mind Blast | 1.3 | 1.2 | 1.5 | 0.9 | 10% |
-| Vampiric Embrace | 0.0 | 1.0 | 1.2 | 0.7 | 0% |
-| Psychic Scream | 0.2 | 0.2 | 0.0 | 0.3 | 0% |
+| Wand | 6.7 | 19.8 | 18.4 | 10.8 | 9% |
+| Holy Nova | 0.0 | 6.1 | 5.7 | 3.1 | 29% |
+| Shadow Word: Pain | 2.4 | 3.6 | 4.4 | 2.5 | 31% |
+| Mind Flay | 3.2 | 2.9 | 3.6 | 1.9 | 18% |
+| Mind Blast | 1.3 | 1.3 | 1.7 | 0.8 | 9% |
+| Vampiric Embrace | 0.0 | 1.1 | 1.3 | 0.7 | 0% |
+| Psychic Scream | 0.2 | 0.2 | 0.0 | 0.4 | 0% |
 | Shadow Word: Death | 0.0 | 0.5 | 0.7 | 0.3 | 3% |
-| Desperate Prayer | 0.1 | 0.2 | 0.2 | 0.1 | 0% |
 | Devouring Plague | 0.4 | 0.1 | 0.1 | 0.0 | 0% |
-| Flash Heal | 0.6 | 0.9 | 0.1 | 0.0 | 0% |
+| Flash Heal | 0.6 | 0.8 | 0.1 | 0.0 | 0% |
+
+### `cand-aoe-r5`
+
+| Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
+|---|---|---|---|---|---|
+| Wand | 12.7 | 7.1 | 5.5 | 9.5 | 8% |
+| Holy Nova | 0.0 | 0.0 | 0.0 | 2.7 | 26% |
+| Shadow Word: Pain | 1.9 | 1.9 | 1.9 | 2.1 | 36% |
+| Mind Flay | 3.1 | 2.9 | 2.5 | 1.7 | 18% |
+| Mind Blast | 1.5 | 1.3 | 1.2 | 0.7 | 8% |
+| Vampiric Embrace | 0.0 | 0.4 | 0.4 | 0.6 | 0% |
+| Psychic Scream | 0.3 | 0.2 | 0.1 | 0.3 | 0% |
+| Shadow Word: Death | 0.0 | 1.0 | 1.0 | 0.3 | 3% |
+| Devouring Plague | 0.4 | 0.4 | 0.3 | 0.0 | 0% |
+| Flash Heal | 1.2 | 0.3 | 0.0 | 0.0 | 0% |

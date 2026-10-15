@@ -61,7 +61,7 @@ Beast-Survival plays the melee Survival list with **Summon Hawk** added: no pet,
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 1051 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 1004 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 

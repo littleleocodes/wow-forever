@@ -1110,7 +1110,7 @@
       },
       "core": [],
       "flex": [],
-      "notes": ["Against the best hand draft destruction-incinerate-raid in the same gear and fights (100,000, one seed): +12.0% (over the 2% bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Where the simulator measured no difference, the points follow destruction-incinerate-raid: Demonic Energies → Demonic Aegis (2 points) (the same DPS as the search winner 10/11/30 on one seed, 30,000 fights).", "Search result: 10/11/30 at 627.7 ± 0.10 DPS over 100,000 fights; runner-up 10/11/30 (+0.00%; the winner takes Demonic Energies 2; the runner-up Demonic Energies 1, Improved Voidwalker 1); 3,993 builds simulated; certificate: the neighbours ahead on the short run (of 392) did not hold on the longer one.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 10/11/30 at 597.9 DPS on the dummy (other talents: _reference/dps-rankings.md)."],
+      "notes": ["Against the best hand draft destruction-incinerate-raid in the same gear and fights (100,000, one seed): +12.0% (over the 2% bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Where the simulator measured no difference, the points follow destruction-incinerate-raid: Demonic Energies → Demonic Aegis (2 points) (the same DPS as the search winner 10/11/30 on one seed, 30,000 fights).", "Search result: 10/11/30 at 627.7 ± 0.10 DPS over 100,000 fights; runner-up 10/11/30 (+0.00%; the winner takes Demonic Energies 2; the runner-up Demonic Energies 1, Improved Voidwalker 1); 3,993 builds simulated; certificate: the neighbours ahead on the short run (of 392) did not hold on the longer one.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 10/11/30 at 597.9 DPS on the dummy (other talents: _reference/dps-rankings.md).", "2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Destruction: its full-raid winner is +0.46% against it, under the 0.5% bar for a new build."],
       "open_questions": ["A machine-searched Destruction build: check it against the community's Destruction builds at launch."],
       "sources": ["https://github.com/ElliotWood/Forever"],
       "replaces": "destruction-incinerate-raid"
@@ -1153,7 +1153,7 @@
       },
       "core": [],
       "flex": [],
-      "notes": ["Against the best hand draft demonology-pact-raid in a full raid, same gear and fights (100,000, one seed): +0.5% (under the 2% bar: the hand draft stays the pick).", "Where the simulator measured no difference, the points follow demonology-pact-raid: Improved Imp → Demonic Embrace (the same DPS as the search winner 2/31/18 on one seed, 30,000 fights).", "Search result (full raid): 2/31/18 at 836.2 ± 0.16 DPS over 100,000 fights; runner-up 2/31/18 (+0.29%; the winner takes Improved Corruption 1, Suppression 1; the runner-up Improved Corruption 2); 1,739 builds simulated; certificate: 1 confirmed move first, then none of its 266 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 2/31/18 at 800.6 DPS in a full raid (the same talents).", "Alone on the training dummy (only your own buffs) the search's best is 2/31/18 at 688.7 DPS."],
+      "notes": ["Against the best hand draft demonology-pact-raid in a full raid, same gear and fights (100,000, one seed): +0.5% (under the 2% bar: the hand draft stays the pick).", "Where the simulator measured no difference, the points follow demonology-pact-raid: Improved Imp → Demonic Embrace (the same DPS as the search winner 2/31/18 on one seed, 30,000 fights).", "Search result (full raid): 2/31/18 at 836.2 ± 0.16 DPS over 100,000 fights; runner-up 2/31/18 (+0.29%; the winner takes Improved Corruption 1, Suppression 1; the runner-up Improved Corruption 2); 1,739 builds simulated; certificate: 1 confirmed move first, then none of its 266 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 2/31/18 at 800.6 DPS in a full raid (the same talents).", "Alone on the training dummy (only your own buffs) the search's best is 2/31/18 at 688.7 DPS.", "2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Demonology: its full-raid winner is +0.01% against it, under the 0.5% bar for a new build."],
       "open_questions": ["A machine-searched Demonology build: check it against the community's Demonology builds at launch."],
       "sources": ["https://github.com/ElliotWood/Forever"]
     },
@@ -1196,7 +1196,7 @@
         {"talent": "Ruin", "why": "Removing it costs 6.2 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: warlock/research/talents/forever/optimizer/affliction-raid-raid-dps.md"],
+      "notes": ["Report: warlock/research/talents/forever/optimizer/affliction-raid-raid-dps.md", "2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Affliction: its full-raid winner is +0.23% against it, under the 0.5% bar for a new build."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/warlock"]
     },
@@ -1516,10 +1516,77 @@
         {"talent": "Pandemic", "why": "22 DPS lost without it (3% of the build in a full raid; removal, 12,000 fights)."}
       ],
       "flex": [],
-      "notes": ["+0.9% over the best hand draft of the spec, ds-ruin-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (sb-raid, full raid): 20/11/20 (Shadow Bolt hybrid (an Affliction/Destruction hybrid)) at 731.1 DPS; opt-sb-raid-raid-dps 726.6, ds-ruin-raid 724.5, destruction-ml-raid 711.9 in the same fights; 4,633 builds simulated, 2 independent runs reached the top.", "The spec's other builds on the pages (their best entry, full raid): destruction-fire-raid 692.5.", "The sb-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): affliction-raid -0.4%, fire-destro-raid +0.2%, demonology-raid -0.7%, incinerate-raid -1.6%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Imp, Unholy Power, Improved Voidwalker.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements.", "2026-10-12 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Imp -> Demonic Embrace (survival); Improved Imp -> Demonic Embrace (survival); Improved Voidwalker -> Demonic Embrace (survival); Unholy Power -> Demonic Embrace (survival); Unholy Power -> Demonic Embrace (survival); Unholy Power -> Demonic Aegis (survival); Unholy Power -> Demonic Aegis (survival). Net -0.04% on a third seed."],
+      "notes": ["+0.9% over the best hand draft of the spec, ds-ruin-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (sb-raid, full raid): 20/11/20 (Shadow Bolt hybrid (an Affliction/Destruction hybrid)) at 731.1 DPS; opt-sb-raid-raid-dps 726.6, ds-ruin-raid 724.5, destruction-ml-raid 711.9 in the same fights; 4,633 builds simulated, 2 independent runs reached the top.", "The spec's other builds on the pages (their best entry, full raid): destruction-fire-raid 692.5.", "The sb-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): affliction-raid -0.4%, fire-destro-raid +0.2%, demonology-raid -0.7%, incinerate-raid -1.6%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Imp, Unholy Power, Improved Voidwalker.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements.", "2026-10-12 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Imp -> Demonic Embrace (survival); Improved Imp -> Demonic Embrace (survival); Improved Voidwalker -> Demonic Embrace (survival); Unholy Power -> Demonic Embrace (survival); Unholy Power -> Demonic Embrace (survival); Unholy Power -> Demonic Aegis (survival); Unholy Power -> Demonic Aegis (survival). Net -0.04% on a third seed.", "2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Hybrid Affliction/Destruction: its full-raid winner is +0.02% against it, under the 0.5% bar for a new build."],
       "open_questions": ["An open-search Shadow Bolt hybrid build: check it against the community's Shadow Bolt hybrid builds at launch."],
       "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/warlock/60/25210020035-0204013001-0550105103-6"],
       "replaces": "ds-ruin-raid"
+    },
+    {
+      "id": "opt-affliction-leveling-leveling-aoe",
+      "name": "Optimizer — Voidwalker tank: Corruption 24%, Agony 14%, Drain Life 16%, Shadow Bolt 14%, Immolate 6%, wand 6%, Voidwalker 20% (leveling-aoe)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `affliction-leveling` and profile `leveling-aoe`: score +54.8% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Affliction": [
+          ["Improved Corruption", 5],
+          ["Suppression", 5],
+          ["Malediction", 5],
+          ["Improved Bane of Agony", 2]
+        ],
+        "Demonology": [
+          ["Demonic Embrace", 5],
+          ["Unholy Power", 5],
+          ["Demonic Aegis", 2],
+          ["Improved Voidwalker", 3],
+          ["Demonic Energies", 1],
+          ["Demonic Sacrifice", 1],
+          ["Master Summoner", 2],
+          ["Fel Domination", 1],
+          ["Soul Link", 1],
+          ["Demonic Knowledge", 3]
+        ],
+        "Destruction": [
+          ["Bane", 2],
+          ["Improved Shadow Bolt", 3],
+          ["Molten Skin", 5]
+        ]
+      },
+      "core": [
+        {"talent": "Soul Link", "why": "Removing it costs 19.4 points of score in this model."},
+        {"talent": "Improved Corruption", "why": "Removing it costs 4.8 points of score in this model."},
+        {"talent": "Demonic Knowledge", "why": "Removing it costs 3.5 points of score in this model."},
+        {"talent": "Malediction", "why": "Removing it costs 1.8 points of score in this model."},
+        {"talent": "Improved Bane of Agony", "why": "Removing it costs 1.7 points of score in this model."},
+        {"talent": "Demonic Embrace", "why": "Removing it costs 1.4 points of score in this model."},
+        {"talent": "Shadow Mastery", "why": "Removing it costs 1.0 points of score in this model."},
+        {"talent": "Suppression", "why": "Removing it costs 0.9 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Allocation and order taken from cand-aoe-r8 on 2026-10-15: an earlier optimizer round beat the last export in the fight lab (44.6s vs 46.4s per kill, level-weighted).", "Report: warlock/research/talents/forever/optimizer/affliction-leveling-leveling-aoe.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/warlock"],
+      "order": [
+        {"levels": "10-14", "tree": "Demonology", "talent": "Demonic Embrace", "points": 5},
+        {"levels": "15-16", "tree": "Demonology", "talent": "Demonic Aegis", "points": 2},
+        {"levels": "17-19", "tree": "Demonology", "talent": "Unholy Power", "points": 3},
+        {"levels": "20", "tree": "Demonology", "talent": "Demonic Sacrifice", "points": 1},
+        {"levels": "21-22", "tree": "Demonology", "talent": "Unholy Power", "points": 2},
+        {"levels": "23", "tree": "Demonology", "talent": "Demonic Energies", "points": 1},
+        {"levels": "24-26", "tree": "Demonology", "talent": "Improved Voidwalker", "points": 3},
+        {"levels": "27-28", "tree": "Demonology", "talent": "Master Summoner", "points": 2},
+        {"levels": "29", "tree": "Demonology", "talent": "Fel Domination", "points": 1},
+        {"levels": "30", "tree": "Demonology", "talent": "Soul Link", "points": 1},
+        {"levels": "31-33", "tree": "Demonology", "talent": "Demonic Knowledge", "points": 3},
+        {"levels": "34-38", "tree": "Affliction", "talent": "Improved Corruption", "points": 5},
+        {"levels": "39-43", "tree": "Affliction", "talent": "Suppression", "points": 5},
+        {"levels": "44-45", "tree": "Affliction", "talent": "Improved Bane of Agony", "points": 2},
+        {"levels": "46-47", "tree": "Destruction", "talent": "Bane", "points": 2},
+        {"levels": "48-52", "tree": "Affliction", "talent": "Malediction", "points": 5},
+        {"levels": "53-55", "tree": "Destruction", "talent": "Improved Shadow Bolt", "points": 3},
+        {"levels": "56-60", "tree": "Destruction", "talent": "Molten Skin", "points": 5}
+      ]
     },
     {
       "id": "affliction-demonology-open-leveling",
@@ -1528,9 +1595,9 @@
       "content": "leveling",
       "tier": "draft",
       "spec": "Hybrid Affliction/Demonology",
-      "generated": "2026-10-12",
+      "generated": "2026-10-15",
       "derived": "leveling",
-      "summary": "The Affliction-Demonology (an Affliction/Demonology hybrid) leveling build the open leveling search found on 2026-10-12: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the affliction-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (affliction-leveling). +6.2% faster per kill than affliction-leveling, the fastest of our leveling builds in that race.",
+      "summary": "The Affliction-Demonology (an Affliction/Demonology hybrid) leveling build the open leveling search found on 2026-10-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the affliction-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (affliction-leveling). +6.2% faster per kill than affliction-leveling, the fastest of our leveling builds in that race.",
       "allocation": {
         "Affliction": [
           ["Improved Life Tap", 2],
@@ -1611,9 +1678,9 @@
       "content": "leveling",
       "tier": "draft",
       "spec": "Hybrid Affliction/Destruction",
-      "generated": "2026-10-12",
+      "generated": "2026-10-15",
       "derived": "leveling",
-      "summary": "The Shadow Bolt hybrid (an Affliction/Destruction hybrid) leveling build the open leveling search found on 2026-10-12: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the destruction-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (affliction-leveling). +6.7% faster per kill than destruction-leveling, the fastest of our leveling builds in that race.",
+      "summary": "The Shadow Bolt hybrid (an Affliction/Destruction hybrid) leveling build the open leveling search found on 2026-10-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the destruction-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (affliction-leveling). +5.2% faster per kill than destruction-leveling, the fastest of our leveling builds in that race.",
       "allocation": {
         "Affliction": [
           ["Improved Life Tap", 2],
@@ -1674,76 +1741,9 @@
         {"talent": "Improved Life Tap", "why": "+0.7 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 35.42; destruction-leveling 37.80. The search simulated 31,035 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 35.93; destruction-leveling 37.80. The search simulated 31,035 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Shadow Bolt hybrid leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/warlock", "https://talentsforever.com/warlock/60/2344002013500104-00050302-014232-6"]
-    },
-    {
-      "id": "opt-affliction-leveling-leveling-aoe",
-      "name": "Optimizer — Voidwalker tank: Corruption 24%, Agony 14%, Drain Life 16%, Shadow Bolt 14%, Immolate 6%, wand 6%, Voidwalker 20% (leveling-aoe)",
-      "role": "dps",
-      "content": "leveling",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `affliction-leveling` and profile `leveling-aoe`: score +54.8% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Affliction": [
-          ["Improved Corruption", 5],
-          ["Suppression", 5],
-          ["Malediction", 5],
-          ["Improved Bane of Agony", 2]
-        ],
-        "Demonology": [
-          ["Demonic Embrace", 5],
-          ["Unholy Power", 5],
-          ["Demonic Aegis", 2],
-          ["Improved Voidwalker", 3],
-          ["Demonic Energies", 1],
-          ["Demonic Sacrifice", 1],
-          ["Master Summoner", 2],
-          ["Fel Domination", 1],
-          ["Soul Link", 1],
-          ["Demonic Knowledge", 3]
-        ],
-        "Destruction": [
-          ["Bane", 2],
-          ["Improved Shadow Bolt", 3],
-          ["Molten Skin", 5]
-        ]
-      },
-      "core": [
-        {"talent": "Soul Link", "why": "Removing it costs 19.4 points of score in this model."},
-        {"talent": "Improved Corruption", "why": "Removing it costs 4.8 points of score in this model."},
-        {"talent": "Demonic Knowledge", "why": "Removing it costs 3.5 points of score in this model."},
-        {"talent": "Malediction", "why": "Removing it costs 1.8 points of score in this model."},
-        {"talent": "Improved Bane of Agony", "why": "Removing it costs 1.7 points of score in this model."},
-        {"talent": "Demonic Embrace", "why": "Removing it costs 1.4 points of score in this model."},
-        {"talent": "Shadow Mastery", "why": "Removing it costs 1.0 points of score in this model."},
-        {"talent": "Suppression", "why": "Removing it costs 0.9 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Allocation and order taken from cand-aoe-r8 on 2026-10-15: an earlier optimizer round beat the last export in the fight lab (44.6s vs 46.4s per kill, level-weighted).", "Report: warlock/research/talents/forever/optimizer/affliction-leveling-leveling-aoe.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/warlock"],
-      "order": [
-        {"levels": "10-14", "tree": "Demonology", "talent": "Demonic Embrace", "points": 5},
-        {"levels": "15-16", "tree": "Demonology", "talent": "Demonic Aegis", "points": 2},
-        {"levels": "17-19", "tree": "Demonology", "talent": "Unholy Power", "points": 3},
-        {"levels": "20", "tree": "Demonology", "talent": "Demonic Sacrifice", "points": 1},
-        {"levels": "21-22", "tree": "Demonology", "talent": "Unholy Power", "points": 2},
-        {"levels": "23", "tree": "Demonology", "talent": "Demonic Energies", "points": 1},
-        {"levels": "24-26", "tree": "Demonology", "talent": "Improved Voidwalker", "points": 3},
-        {"levels": "27-28", "tree": "Demonology", "talent": "Master Summoner", "points": 2},
-        {"levels": "29", "tree": "Demonology", "talent": "Fel Domination", "points": 1},
-        {"levels": "30", "tree": "Demonology", "talent": "Soul Link", "points": 1},
-        {"levels": "31-33", "tree": "Demonology", "talent": "Demonic Knowledge", "points": 3},
-        {"levels": "34-38", "tree": "Affliction", "talent": "Improved Corruption", "points": 5},
-        {"levels": "39-43", "tree": "Affliction", "talent": "Suppression", "points": 5},
-        {"levels": "44-45", "tree": "Affliction", "talent": "Improved Bane of Agony", "points": 2},
-        {"levels": "46-47", "tree": "Destruction", "talent": "Bane", "points": 2},
-        {"levels": "48-52", "tree": "Affliction", "talent": "Malediction", "points": 5},
-        {"levels": "53-55", "tree": "Destruction", "talent": "Improved Shadow Bolt", "points": 3},
-        {"levels": "56-60", "tree": "Destruction", "talent": "Molten Skin", "points": 5}
-      ]
     }
   ]
 }

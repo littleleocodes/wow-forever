@@ -68,9 +68,9 @@ The Subtlety raid build the open talent search found on 2026-10-10: every legal 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`subtlety-hemo-raid`](subtlety-hemo-raid.md) | ours: hand draft | 20/0/31 | 399 | +0.0% | 673 | -0.4% | 0 s |
-| 2 | **[`subtlety-open-raid`](subtlety-open-raid.md)** | ours: derived (open search) | 20/0/31 | 374 | -6.3% | 676 | +0.0% | 0 s |
-| 3 | *Subtlety Hemo 15/0/36* | community simulator | - | 356 | -10.6% | 632 | -6.5% | 0 s |
+| 1 | [`subtlety-hemo-raid`](subtlety-hemo-raid.md) | ours: hand draft | 20/0/31 | 399 | +0.0% | 640 | -0.5% | 0 s |
+| 2 | **[`subtlety-open-raid`](subtlety-open-raid.md)** | ours: derived (open search) | 20/0/31 | 374 | -6.3% | 643 | +0.0% | 0 s |
+| 3 | *Subtlety Hemo 15/0/36* | community simulator | - | 356 | -10.6% | 600 | -6.7% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -144,6 +144,7 @@ Damage by ability:
 - Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Camouflage, Setup, Dirty Tricks, Improved Ambush, Improved Distract, Heightened Senses.
 - Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements.
 - 2026-10-10 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Camouflage -> Ghostly Strike (survival). Net -0.15% on a third seed.
+- 2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Subtlety: its full-raid winner is +0.00% against it, under the 0.5% bar for a new build.
 
 ## Open questions (verify in the live game)
 

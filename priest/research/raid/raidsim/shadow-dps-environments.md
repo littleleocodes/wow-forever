@@ -4,12 +4,12 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `opt-shadow-dps-raid-dps` | 18/0/33 | 591 | 643 | 696 | 696 | 672 |
-| `opt-shadow-dps-parse` | 18/0/33 | 591 | 643 | 696 | 696 | 672 |
-| sim preset: Shadow | - | 589 | 641 | 693 | 693 | 669 |
-| sim preset: Shadow 15/0/36 | - | 589 | 641 | 693 | 693 | 669 |
-| sim preset: Smite | - | 217 | 253 | 260 | 260 | 260 |
-| sim preset: Smite 31/17/3 | - | 217 | 253 | 260 | 260 | 260 |
+| `opt-shadow-dps-raid-dps` | 18/0/33 | 593 | 650 | 699 | 699 | 674 |
+| `opt-shadow-dps-parse` | 18/0/33 | 593 | 650 | 699 | 699 | 674 |
+| sim preset: Shadow | - | 591 | 648 | 696 | 696 | 671 |
+| sim preset: Shadow 15/0/36 | - | 591 | 647 | 696 | 696 | 671 |
+| sim preset: Smite | - | 218 | 254 | 260 | 260 | 261 |
+| sim preset: Smite 31/17/3 | - | 218 | 254 | 260 | 260 | 261 |
 
 - **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
 - **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
@@ -23,12 +23,12 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
-| `opt-shadow-dps-raid-dps` | 591 | +0% | +0% | +3% | +11% | +4% | 696 |
-| `opt-shadow-dps-parse` | 591 | +0% | +0% | +3% | +11% | +4% | 696 |
-| sim preset: Shadow | 589 | +0% | +0% | +2% | +11% | +4% | 693 |
-| sim preset: Shadow 15/0/36 | 589 | +0% | +0% | +3% | +11% | +4% | 693 |
-| sim preset: Smite | 217 | -0% | +0% | +1% | +10% | +8% | 260 |
-| sim preset: Smite 31/17/3 | 217 | -0% | +0% | +1% | +10% | +8% | 260 |
+| `opt-shadow-dps-raid-dps` | 593 | +0% | +0% | +2% | +11% | +4% | 699 |
+| `opt-shadow-dps-parse` | 593 | +0% | +0% | +2% | +11% | +4% | 699 |
+| sim preset: Shadow | 591 | +0% | +0% | +2% | +11% | +4% | 696 |
+| sim preset: Shadow 15/0/36 | 591 | +0% | +0% | +3% | +11% | +4% | 696 |
+| sim preset: Smite | 218 | -0% | +0% | +1% | +10% | +8% | 260 |
+| sim preset: Smite 31/17/3 | 218 | -0% | +0% | +1% | +10% | +8% | 260 |
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
 
@@ -38,12 +38,12 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
-| `opt-shadow-dps-raid-dps` | 581 | 589 | 589 | 572 | 503 |
-| `opt-shadow-dps-parse` | 581 | 589 | 589 | 572 | 503 |
-| sim preset: Shadow | 581 | 588 | 589 | 595 | 556 |
-| sim preset: Shadow 15/0/36 | 579 | 587 | 587 | 561 | 495 |
-| sim preset: Smite | 233 | 219 | 217 | 196 | 170 |
-| sim preset: Smite 31/17/3 | 233 | 219 | 217 | 196 | 170 |
+| `opt-shadow-dps-raid-dps` | 583 | 591 | 592 | 578 | 507 |
+| `opt-shadow-dps-parse` | 583 | 591 | 592 | 578 | 507 |
+| sim preset: Shadow | 583 | 590 | 591 | 598 | 562 |
+| sim preset: Shadow 15/0/36 | 581 | 589 | 590 | 566 | 498 |
+| sim preset: Smite | 234 | 220 | 218 | 198 | 172 |
+| sim preset: Smite 31/17/3 | 234 | 220 | 218 | 198 | 172 |
 
 Gear presets: raid `priest-dps-p0.p1opt.gear.json`, maximum `priest-dps-p0.p1opt.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

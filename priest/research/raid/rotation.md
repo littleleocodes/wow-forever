@@ -30,20 +30,20 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`opt-shadow-dps-raid-dps`](builds/opt-shadow-dps-raid-dps.md) (ours: optimizer, 591 DPS), *Shadow* (community simulator, 589 DPS), *Shadow 15/0/36* (community simulator, 589 DPS), *Smite* (community simulator, 217 DPS), *Smite 31/17/3* (community simulator, 217 DPS)
+### [`opt-shadow-dps-raid-dps`](builds/opt-shadow-dps-raid-dps.md) (ours: optimizer, 593 DPS), *Shadow* (community simulator, 591 DPS), *Shadow 15/0/36* (community simulator, 591 DPS), *Smite* (community simulator, 218 DPS), *Smite 31/17/3* (community simulator, 218 DPS)
 
 Before the pull: at -1s: cast Shadowform.
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-shadow-dps-raid-dps`](builds/opt-shadow-dps-raid-dps.md) casts/min | *Shadow* casts/min | *Shadow 15/0/36* casts/min | *Smite* casts/min | *Smite 31/17/3* casts/min |
 |---|---|---|---|---|---|---|
 | 1 | use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready |
-| 2 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain | 2.5 | 2.5 | 2.5 | 3.8 | 3.8 |
+| 2 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain | 2.6 | 2.6 | 2.6 | 3.8 | 3.8 |
 | 3 | strict sequence: cast Inner Focus; cast Devouring Plague | 0.7 | 0.7 | 0.7 | 0.7 | 0.7 |
-| 4 | cast Shadow Word: Death | 3.7 | 3.8 | 3.7 | 4.0 | 4.0 |
+| 4 | cast Shadow Word: Death | 3.8 | 3.8 | 3.8 | 4.0 | 4.0 |
 | 5 | cast Mind Blast | 7.0 | 6.9 | 7.0 | 6.0 | 6.0 |
 | 6 | channel Mind Flay | as ready | as ready | as ready | as ready | as ready |
 
-Lines of the simulator's rotation these builds never cast: Death (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: Death (rank 2) (its condition never held in these fights).
 
 Damage by ability:
 
@@ -117,28 +117,28 @@ Rotation-only target (2026-09-27): a talent tree none of our scorer spec models 
 
 The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring change what mana is worth), top priority first:
 
-1. cast Penance
+1. cast Penance (rank 3)
 2. use every other cooldown when ready
 3. if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain
 4. strict sequence: cast Inner Focus; cast Devouring Plague
 5. if time left on Holy Fire < 1.5s: cast Holy Fire
 6. strict sequence: cast Inner Focus; cast Smite
 7. cast Penance
-8. cast Shadow Word: Death
+8. cast Shadow Word: Death (rank 3)
 9. cast Power Infusion
 10. cast Smite
 11. if not Shadow Word: Pain is on the target and mana % ≥ 30%: cast Shadow Word: Pain
-12. if mana % ≥ 20% and mana % < 50% and time left in the fight ≥ 30s: cast Smite
+12. if mana % ≥ 20% and mana % < 50% and time left in the fight ≥ 30s: cast Smite (rank 2)
 13. cast Mind Blast
 14. if mana % ≥ 20%: cast Smite
-15. cast Smite
+15. cast Smite (rank 7)
 16. cast Dark Sacrifice
 17. cast Shadowform
 18. if not Mind Flay is on the target: cast Mind Flay
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`smite-discipline-raid`](builds/smite-discipline-raid.md) (ours: hand draft, 350 DPS), *Smite* (community simulator, 346 DPS), *Smite 31/17/3* (community simulator, 346 DPS)
+### [`smite-discipline-raid`](builds/smite-discipline-raid.md) (ours: hand draft, 363 DPS), *Smite* (community simulator, 360 DPS), *Smite 31/17/3* (community simulator, 360 DPS)
 
 Before the pull: at -3s: cast Holy Fire.
 
@@ -147,17 +147,17 @@ Before the pull: at -3s: cast Holy Fire.
 | 1 | use every other cooldown when ready | as ready | as ready | as ready |
 | 2 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain | 3.6 | 3.7 | 3.7 |
 | 3 | strict sequence: cast Inner Focus; cast Devouring Plague | 0.7 | 0.7 | 0.7 |
-| 4 | if time left on Holy Fire < 1.875s: cast Holy Fire | 4.9 | 4.9 | 4.9 |
+| 4 | if time left on Holy Fire < 1.875s: cast Holy Fire | 5.0 | 4.9 | 4.9 |
 | 5 | strict sequence: cast Inner Focus; cast Smite | 0.3 | 0.3 | 0.3 |
-| 6 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5 and mana % < 15%: cast Shadow Word: Pain | 0.1 | 0.2 | 0.2 |
-| 7 | if execute phase (E20): cast Shadow Word: Death | 0.8 | 0.7 | 0.7 |
+| 6 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5 and mana % < 15%: cast Shadow Word: Pain (rank 4) | 0.1 | 0.1 | 0.1 |
+| 7 | if execute phase (E20): cast Shadow Word: Death (rank 3) | 0.8 | 0.8 | 0.8 |
 | 8 | if auraIsInactive: cast Power Infusion | 0.3 | 0.3 | 0.3 |
 | 9 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5: cast Shadow Word: Pain | 3.6 | 3.7 | 3.7 |
-| 10 | cast Penance | 4.6 | 4.6 | 4.6 |
+| 10 | cast Penance (rank 3) | 4.6 | 4.6 | 4.6 |
 | 11 | if not Shadow Word: Pain is on the target and mana % ≥ 30%: cast Shadow Word: Pain | 3.6 | 3.7 | 3.7 |
-| 12 | if mana % ≥ 60%: cast Smite | 12.2 | 12.0 | 12.0 |
-| 13 | if mana % < 15%: cast Smite | 1.5 | 1.6 | 1.6 |
-| 14 | cast Smite | 3.4 | 3.3 | 3.3 |
+| 12 | if mana % ≥ 60%: cast Smite (rank 2) | 12.2 | 12.0 | 12.0 |
+| 13 | if mana % < 15%: cast Smite (rank 5) | 1.5 | 1.6 | 1.6 |
+| 14 | cast Smite (rank 7) | 3.5 | 3.4 | 3.4 |
 
 Lines of the simulator's rotation these builds never cast: cast Mind Flay (needs the Mind Flay talent); cast Shadowform (needs the Shadowform talent).
 
@@ -166,13 +166,13 @@ Damage by ability:
 | Ability | [`smite-discipline-raid`](builds/smite-discipline-raid.md) | *Smite* | *Smite 31/17/3* |
 |---|---|---|---|
 | Penance | 28% | 28% | 28% |
-| Shadow Word: Pain | 26% | 26% | 26% |
-| Holy Fire | 22% | 22% | 22% |
-| Smite | 19% | 19% | 19% |
+| Shadow Word: Pain | 25% | 25% | 25% |
+| Holy Fire | 22% | 23% | 23% |
+| Smite | 20% | 20% | 20% |
 | Shadow Word: Death | 2% | 2% | 2% |
 | Devouring Plague | 2% | 2% | 2% |
 
-### [`smite-open-raid`](builds/smite-open-raid.md) (ours: derived (open search), 335 DPS)
+### [`smite-open-raid`](builds/smite-open-raid.md) (ours: derived (open search), 348 DPS)
 
 Before the pull: at -3s: cast Holy Fire.
 
@@ -183,14 +183,14 @@ Before the pull: at -3s: cast Holy Fire.
 | 3 | strict sequence: cast Inner Focus; cast Devouring Plague | 0.7 |
 | 4 | if time left on Holy Fire < 1.875s: cast Holy Fire | 4.8 |
 | 5 | strict sequence: cast Inner Focus; cast Smite | 0.3 |
-| 6 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5 and mana % < 15%: cast Shadow Word: Pain | 0.1 |
-| 7 | if execute phase (E20): cast Shadow Word: Death | 0.7 |
+| 6 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5 and mana % < 15%: cast Shadow Word: Pain (rank 4) | 0.1 |
+| 7 | if execute phase (E20): cast Shadow Word: Death (rank 3) | 0.7 |
 | 8 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5: cast Shadow Word: Pain | 2.5 |
-| 9 | cast Penance | 4.6 |
+| 9 | cast Penance (rank 3) | 4.6 |
 | 10 | if not Shadow Word: Pain is on the target and mana % ≥ 30%: cast Shadow Word: Pain | 2.5 |
-| 11 | if mana % ≥ 60%: cast Smite | 13.9 |
-| 12 | if mana % < 15%: cast Smite | 1.4 |
-| 13 | cast Smite | 2.8 |
+| 11 | if mana % ≥ 60%: cast Smite (rank 2) | 13.8 |
+| 12 | if mana % < 15%: cast Smite (rank 5) | 1.5 |
+| 13 | cast Smite (rank 7) | 2.8 |
 
 Lines of the simulator's rotation these builds never cast: cast Mind Flay (needs the Mind Flay talent); cast Power Infusion (needs the Power Infusion talent); cast Shadowform (needs the Shadowform talent).
 
@@ -199,8 +199,8 @@ Damage by ability:
 | Ability | [`smite-open-raid`](builds/smite-open-raid.md) |
 |---|---|
 | Penance | 28% |
-| Shadow Word: Pain | 27% |
-| Holy Fire | 22% |
+| Shadow Word: Pain | 26% |
+| Holy Fire | 23% |
 | Smite | 19% |
 | Devouring Plague | 2% |
 | Shadow Word: Death | 2% |

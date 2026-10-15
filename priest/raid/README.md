@@ -6,8 +6,8 @@
 
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
-| 1 | [Shadow](shadow.md) (optimized) | 696 | best |
-| 2 | [Smite](smite.md) — Discipline/Holy — Smite | 579 | -17% |
+| 1 | [Shadow](shadow.md) (optimized) | 699 | best |
+| 2 | [Smite](smite.md) — Discipline/Holy — Smite | 597 | -15% |
 
 **Healing** (ranked by the healer lab's capacity: the multiple of the lab's standard raid damage the healer keeps up with): [Holy](holy.md) — Raid healing 🔬 (capacity 0.69), [Discipline](discipline.md) — Raid healing 🔬 (capacity 0.61).
 

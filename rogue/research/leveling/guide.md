@@ -4,7 +4,7 @@
 
 ## The build and its order
 
-**Combat-Subtlety** ([player page](../../leveling/combat-subtlety.md)) — `combat-subtlety-open-leveling`: The Combat-Subtlety (a Combat/Subtlety hybrid) leveling build the open leveling search found on 2026-10-10: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the subtlety-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-swords-raid). +8.9% faster per kill than subtlety-leveling, the fastest of our leveling builds in that race.
+**Combat-Subtlety** ([player page](../../leveling/combat-subtlety.md)) — `combat-subtlety-open-leveling`: The Combat-Subtlety (a Combat/Subtlety hybrid) leveling build the open leveling search found on 2026-10-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the subtlety-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-swords-raid). +9.4% faster per kill than subtlety-leveling, the fastest of our leveling builds in that race.
 
 | Levels | Tree | Talent | Points |
 |---|---|---|---|
@@ -42,7 +42,7 @@ Level-weighted time per kill (seconds, higher levels count more) of the build ea
 
 | Spec | Page build | Rotation | L20 | L30 | L40 | L50 | L60 | Weighted |
 |---|---|---|---|---|---|---|---|---|
-| [Combat-Subtlety](../../leveling/combat-subtlety.md) ✅ | [`combat-subtlety-open-leveling`](builds/combat-subtlety-open-leveling.md) | subtlety-leveling | 17.4 | 20.9 | 25.4 | 25.4 | 24.7 | 23.7 |
+| [Combat-Subtlety](../../leveling/combat-subtlety.md) ✅ | [`combat-subtlety-open-leveling`](builds/combat-subtlety-open-leveling.md) | subtlety-leveling | 17.3 | 20.8 | 25.3 | 25.2 | 24.6 | 23.6 |
 | [Combat](../../leveling/combat.md) | [`combat-leveling`](builds/combat-leveling.md) | combat-swords-raid | 19.0 | 21.9 | 26.2 | 27.6 | 27.7 | 25.7 |
 | [Daggers (split)](../../leveling/daggers-split.md) | [`daggers-split-open-leveling`](builds/daggers-split-open-leveling.md) | combat-daggers-raid | 20.7 | 23.6 | 26.7 | 27.5 | 26.8 | 25.9 |
 | [Subtlety](../../leveling/subtlety.md) | [`subtlety-leveling`](builds/subtlety-leveling.md) | subtlety-leveling | 19.2 | 23.3 | 27.2 | 28.1 | 28.7 | 26.5 |
@@ -54,10 +54,10 @@ The stats model's respec plan (its own optimizer builds, not the page build): **
 
 | Level | Bracket | Time per kill | Kills/hour |
 |---|---|---|---|
-| 20 | levels 15-25 | 17s | 206 |
-| 30 | levels 25-35 | 21s | 172 |
+| 20 | levels 15-25 | 17s | 208 |
+| 30 | levels 25-35 | 21s | 173 |
 | 40 | levels 35-45 | 25s | 142 |
-| 50 | levels 45-55 | 25s | 142 |
+| 50 | levels 45-55 | 25s | 143 |
 | 60 | level 55-60 | 25s | 146 |
 
 Fight time, deaths and downtime are not recorded for this build: its times come from the race of the search that found it, which keeps times only.
@@ -80,7 +80,7 @@ Before the fight: Daggers in both hands: **Instant Poison** on your main hand, *
 
 Between fights: Bandage below 60% health, eat below half.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-30, on top of the priority below): eat below 50% health; never cast Slice and Dice; never cast Kidney Shot. Together +7.6% time per kill saved for `/home/user/wow-forever/rogue/research/leveling/fightlab/candidates/derived-subtlety-scorer.json` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-15, on top of the priority below): eat below 40% health; never cast Slice and Dice; never cast Kidney Shot; never cast Kick. Together +8.5% time per kill saved for `combat-subtlety-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 ## Talents that carry the build
 

@@ -66,10 +66,10 @@ The Smite (a Discipline/Holy hybrid) raid build the open talent search found on 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`smite-discipline-raid`](smite-discipline-raid.md) | ours: hand draft | 31/17/3 | 350 | +0.0% | 579 | +0.0% | 6 s |
-| 2 | *Smite* | community simulator | - | 346 | -1.1% | 575 | -0.6% | 8 s |
-| 3 | *Smite 31/17/3* | community simulator | - | 346 | -1.1% | 575 | -0.6% | 8 s |
-| 4 | **[`smite-open-raid`](smite-open-raid.md)** | ours: derived (open search) | 21/23/7 | 335 | -4.4% | 578 | -0.2% | 12 s |
+| 1 | [`smite-discipline-raid`](smite-discipline-raid.md) | ours: hand draft | 31/17/3 | 363 | +0.0% | 597 | -0.0% | 5 s |
+| 2 | *Smite* | community simulator | - | 360 | -0.9% | 593 | -0.6% | 7 s |
+| 3 | *Smite 31/17/3* | community simulator | - | 360 | -0.9% | 593 | -0.6% | 7 s |
+| 4 | **[`smite-open-raid`](smite-open-raid.md)** | ours: derived (open search) | 21/23/7 | 348 | -4.3% | 597 | +0.0% | 10 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -139,8 +139,8 @@ Before the pull: at -3s: cast Holy Fire.
 | 8 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5: cast Shadow Word: Pain | 2.5 |
 | 9 | cast Penance (rank 3) | 4.6 |
 | 10 | if not Shadow Word: Pain is on the target and mana % ≥ 30%: cast Shadow Word: Pain | 2.5 |
-| 11 | if mana % ≥ 60%: cast Smite (rank 2) | 13.9 |
-| 12 | if mana % < 15%: cast Smite (rank 5) | 1.4 |
+| 11 | if mana % ≥ 60%: cast Smite (rank 2) | 13.8 |
+| 12 | if mana % < 15%: cast Smite (rank 5) | 1.5 |
 | 13 | cast Smite (rank 7) | 2.8 |
 
 Lines of the simulator's rotation these builds never cast: cast Mind Flay (needs the Mind Flay talent); cast Power Infusion (needs the Power Infusion talent); cast Shadowform (needs the Shadowform talent).
@@ -150,8 +150,8 @@ Damage by ability:
 | Ability | [`smite-open-raid`](smite-open-raid.md) |
 |---|---|
 | Penance | 28% |
-| Shadow Word: Pain | 27% |
-| Holy Fire | 22% |
+| Shadow Word: Pain | 26% |
+| Holy Fire | 23% |
 | Smite | 19% |
 | Devouring Plague | 2% |
 | Shadow Word: Death | 2% |
@@ -165,6 +165,7 @@ Damage by ability:
 - Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Twilight Focus, Improved Renew, Spell Warding, Holy Nova.
 - Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements.
 - 2026-10-11 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Renew -> Binding Heal (threat). Net +0.00% on a third seed.
+- 2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Hybrid Discipline/Holy: its full-raid winner is +0.06% against it, under the 0.5% bar for a new build.
 
 ## Open questions (verify in the live game)
 

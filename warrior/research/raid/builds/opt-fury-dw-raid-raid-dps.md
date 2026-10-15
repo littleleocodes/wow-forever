@@ -64,12 +64,12 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`fury-open-raid`](fury-open-raid.md) | ours: derived (open search) | 18/31/2 | 516 | +0.0% | 917 | +0.0% | 0 s |
-| 2 | **[`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md)** | ours: optimizer | 19/32/0 | 496 | -4.0% | 879 | -4.1% | 0 s |
-| 3 | [`fury-dw-raid`](fury-dw-raid.md) | ours: hand draft | 13/38/0 | 489 | -5.2% | 875 | -4.6% | 0 s |
-| 4 | *DPS* | community simulator | - | 483 | -6.4% | 874 | -4.7% | 0 s |
-| 5 | *Fury 17/34/0* | community simulator | - | 470 | -9.0% | 850 | -7.3% | 0 s |
-| 6 | *Arms 39/12/0* | community simulator | - | 344 | -33.5% | 645 | -29.6% | 0 s |
+| 1 | [`fury-open-raid`](fury-open-raid.md) | ours: derived (open search) | 18/31/2 | 516 | +0.0% | 862 | +0.0% | 0 s |
+| 2 | **[`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md)** | ours: optimizer | 19/32/0 | 496 | -4.0% | 831 | -3.6% | 0 s |
+| 3 | [`fury-dw-raid`](fury-dw-raid.md) | ours: hand draft | 13/38/0 | 489 | -5.2% | 821 | -4.8% | 0 s |
+| 4 | *DPS* | community simulator | - | 483 | -6.4% | 821 | -4.7% | 0 s |
+| 5 | *Fury 17/34/0* | community simulator | - | 470 | -9.0% | 799 | -7.3% | 0 s |
+| 6 | *Arms 39/12/0* | community simulator | - | 344 | -33.5% | 597 | -30.8% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

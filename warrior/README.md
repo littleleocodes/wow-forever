@@ -11,7 +11,7 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 | Spec | Leveling (solo) | Raid (group: full raid DPS) |
 |---|---|---|
 | **Arms** | [Arms (optimized)](leveling/arms.md)<br>27 s/kill | **✅ Recommended**<br>[Arms — Full raid](raid/arms.md) 🔬<br>964 DPS (raid) |
-| **Fury** | **✅ Recommended**<br>[Fury — Leveling](leveling/fury.md) 🔬<br>25 s/kill | [Fury — Raid](raid/fury.md) 🔬<br>917 DPS (raid) |
+| **Fury** | **✅ Recommended**<br>[Fury — Leveling](leveling/fury.md) 🔬<br>25 s/kill | [Fury (optimized, two-handed)](raid/fury.md)<br>881 DPS (raid) |
 | **Protection** | [Protection — Leveling](leveling/protection.md) 🔬<br>26 s/kill | [Protection (optimized)](raid/protection.md)<br>tank |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
@@ -37,7 +37,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
 | 1 | [Arms](raid/arms.md) — Full raid 🔬 | 964 | best |
-| 2 | [Fury](raid/fury.md) 🔬 | 917 | -5% |
+| 2 | [Fury](raid/fury.md) (optimized, two-handed) | 881 | -9% |
 
 **Tanking**: [Protection](raid/protection.md) (optimized).
 

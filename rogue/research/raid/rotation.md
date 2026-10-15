@@ -259,28 +259,28 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) (ours: hand draft, 422 DPS), [`assassination-ml-raid`](builds/assassination-ml-raid.md) (ours: derived (ML search), 410 DPS), `daggers-split-ml-raid` (ours, 410 DPS), [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) (ours: hand draft, 410 DPS), *Mutilate* (community simulator, 386 DPS), *Assassination Mutilate 31/20/0* (community simulator, 374 DPS)
+### [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) (ours: hand draft, 422 DPS), [`assassination-ml-raid`](builds/assassination-ml-raid.md) (ours: derived (ML search), 410 DPS), [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) (ours: hand draft, 410 DPS), [`daggers-split-open-raid`](builds/daggers-split-open-raid.md) (ours: derived (open search), 396 DPS), *Mutilate* (community simulator, 386 DPS), *Assassination Mutilate 31/20/0* (community simulator, 374 DPS)
 
-| # | Priority (the first line whose condition holds is cast) | [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) casts/min | [`assassination-ml-raid`](builds/assassination-ml-raid.md) casts/min | `daggers-split-ml-raid` casts/min | [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) casts/min | *Mutilate* casts/min | *Assassination Mutilate 31/20/0* casts/min |
+| # | Priority (the first line whose condition holds is cast) | [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) casts/min | [`assassination-ml-raid`](builds/assassination-ml-raid.md) casts/min | [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) casts/min | [`daggers-split-open-raid`](builds/daggers-split-open-raid.md) casts/min | *Mutilate* casts/min | *Assassination Mutilate 31/20/0* casts/min |
 |---|---|---|---|---|---|---|---|
-| 1 | cast Backstab | 11.6 | 11.3 | 11.3 | 11.8 | 11.1 | 10.9 |
-| 2 | if time left on Expose Armor < 3 and combo points ≥ 3.75 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.8 | 1.8 | 1.8 | 1.8 | 1.8 | 1.7 |
-| 3 | if combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 12: cast Slice and Dice | 2.9 | 2.9 | 2.9 | 2.8 | 2.8 | 4.0 |
+| 1 | cast Backstab | 11.6 | 11.3 | 11.8 | 10.8 | 11.1 | 10.9 |
+| 2 | if time left on Expose Armor < 3 and combo points ≥ 3.75 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.8 | 1.8 | 1.8 | 1.5 | 1.8 | 1.7 |
+| 3 | if combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 12: cast Slice and Dice | 2.9 | 2.9 | 2.8 | 3.1 | 2.8 | 4.0 |
 | 4 | if Slice and Dice is up: use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready | as ready |
 | 5 | if combo points ≥ 5 and Slice and Dice is up: cast Cold Blood | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 |
-| 6 | if combo points ≥ 4 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 2.8 | 2.3 | 2.3 | 2.8 | 2.1 | 1.5 |
+| 6 | if combo points ≥ 4 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 2.8 | 2.3 | 2.8 | 1.1 | 2.1 | 1.5 |
 
 Lines of the simulator's rotation these builds never cast: cast Adrenaline Rush (needs the Adrenaline Rush talent); cast Ghostly Strike (needs the Ghostly Strike talent); cast Mutilate (needs the Mutilate talent); cast Hemorrhage (needs the Hemorrhage talent).
 
 Damage by ability:
 
-| Ability | [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) | [`assassination-ml-raid`](builds/assassination-ml-raid.md) | `daggers-split-ml-raid` | [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) | *Mutilate* | *Assassination Mutilate 31/20/0* |
+| Ability | [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) | [`assassination-ml-raid`](builds/assassination-ml-raid.md) | [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) | [`daggers-split-open-raid`](builds/daggers-split-open-raid.md) | *Mutilate* | *Assassination Mutilate 31/20/0* |
 |---|---|---|---|---|---|---|
-| Auto Attack | 40% | 41% | 41% | 43% | 45% | 46% |
-| Backstab | 31% | 32% | 32% | 30% | 30% | 30% |
-| Eviscerate | 12% | 10% | 10% | 13% | 10% | 7% |
-| Deadly Poison | 8% | 8% | 8% | 7% | 8% | 8% |
-| Dense Sharpening Stone | 5% | 5% | 5% | 4% | 4% | 4% |
+| Auto Attack | 40% | 41% | 43% | 47% | 45% | 46% |
+| Backstab | 31% | 32% | 30% | 31% | 30% | 30% |
+| Eviscerate | 12% | 10% | 13% | 5% | 10% | 7% |
+| Deadly Poison | 8% | 8% | 7% | 8% | 8% | 8% |
+| Dense Sharpening Stone | 5% | 5% | 4% | 4% | 4% | 4% |
 | Dragonbreath Chili | 2% | 2% | 2% | 2% | 2% | 2% |
 | Goblin Sapper Charge | 2% | 2% | 2% | 2% | 2% | 2% |
 
@@ -328,7 +328,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 1. if combo points ≥ 2 and not Rupture is on the target and time left in the fight > 8: cast Rupture
 2. if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 3.75 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice
-3. if energy ≥ 60 and combo points ≤ 3 and Slice and Dice is up and time left in the fight > 10: cast Vanish
+3. if energy ≥ 60 and combo points ≤ 3 and Slice and Dice is up and time left in the fight > 10: cast Vanish (rank 1)
 4. cast Premeditation
 5. if not Garrote is on the target: cast Garrote
 6. cast Ambush
@@ -349,7 +349,7 @@ The tables below are the training-dummy rotation, filtered per build:
 |---|---|---|---|---|
 | 1 | if time left on Expose Armor < 5 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 2.0 | 1.9 | 1.9 |
 | 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 160s: cast Slice and Dice | 0.7 | 0.7 | 0.7 |
-| 3 | if energy ≥ 30 and combo points ≤ 1 and Slice and Dice is up and time left in the fight > 10: cast Vanish | 0.7 | 0.7 | 0.6 |
+| 3 | if energy ≥ 30 and combo points ≤ 1 and Slice and Dice is up and time left in the fight > 10: cast Vanish (rank 1) | 0.7 | 0.7 | 0.6 |
 | 4 | cast Premeditation | 0.7 | 0.7 | 0.6 |
 | 5 | cast Garrote | 0.7 | 0.7 | 0.6 |
 | 6 | if not Rupture is on the target and time left in the fight > 12: cast Rupture | 4.1 | 4.8 | 4.8 |

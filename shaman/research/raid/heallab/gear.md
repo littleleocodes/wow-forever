@@ -13,7 +13,7 @@ Capacity per point of gear stat x 1000 (± standard error); in brackets the heal
 | Gear | Healing | Intellect | Spirit | mp5 | Crit (per 1%) | Capacity |
 |---|---|---|---|---|---|---|
 | the lab's assumed gear | 0.2573 ± 0.0218 (1.00) | 0.7066 ± 0.0392 (2.75) | 0.3790 ± 0.0441 (1.47) | 1.3628 ± 0.1225 (5.30) | 4.4260 ± 0.5108 (17.20) | 0.698 |
-| the first pre-BiS set | 0.3005 ± 0.0198 (1.00) | 0.7820 ± 0.0388 (2.60) | 0.5352 ± 0.0384 (1.78) | 1.7296 ± 0.1600 (5.76) | 4.0511 ± 0.4821 (13.48) | 0.678 |
+| the first pre-BiS set | 0.3212 ± 0.0207 (1.00) | 0.8202 ± 0.0398 (2.55) | 0.5294 ± 0.0392 (1.65) | 1.8870 ± 0.1842 (5.87) | 3.5096 ± 0.5417 (10.93) | 0.671 |
 | the first BiS set | 0.3585 ± 0.0232 (1.00) | 0.8748 ± 0.0382 (2.44) | 0.5155 ± 0.0406 (1.44) | 1.6399 ± 0.1307 (4.57) | 4.9482 ± 0.5207 (13.80) | 0.716 |
 
 ### Sets
@@ -21,10 +21,10 @@ Capacity per point of gear stat x 1000 (± standard error); in brackets the heal
 | Tier | Capacity | vs the lab's assumed gear | Healing | Intellect | Spirit | mp5 | Crit | Item level |
 |---|---|---|---|---|---|---|---|---|
 | the lab's assumed gear | 0.696 ± 0.001 | x1.000 ± 0.000 | 360 | 250 | 150 | 20 | 2.0% | - |
-| pre-BiS | 0.680 ± 0.002 | x0.977 ± 0.003 | 429 | 244 | 103 | 3 | 5.0% | 60.1 |
+| pre-BiS | 0.675 ± 0.002 | x0.969 ± 0.003 | 383 | 255 | 102 | 3 | 5.0% | 61.9 |
 | BiS (phase 1) | 0.719 ± 0.002 | x1.033 ± 0.003 | 539 | 255 | 91 | 9 | 4.0% | 66.3 |
 
-Capacities on 1000 fresh seeds (common to the three rows); the lab's standard 60 seeds (the pages' convention): default 0.693, prebis 0.667, bis 0.712.
+Capacities on 1000 fresh seeds (common to the three rows); the lab's standard 60 seeds (the pages' convention): default 0.693, prebis 0.662, bis 0.712.
 
 #### Pre-BiS: `_reference/data/raidsim/gear_sets/forever/tiers/shaman-restoration-prebis.gear.json`
 
@@ -44,12 +44,11 @@ Capacities on 1000 fresh seeds (common to the three rows); the lab's standard 60
 | Finger 2 | [Emerald Flame Ring](https://www.wowhead.com/forever/item=18395) | 62 | Prince Tortheldrin, Dire Maul | - |
 | Trinket 1 | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) (effect not valued) | 63 | - | - |
 | Trinket 2 | [Eye of the Beast](https://www.wowhead.com/forever/item=13968) (effect not valued) | 63 | - | - |
-| Main hand | [Death Speaker Scepter](https://www.wowhead.com/forever/item=2816) | 33 | Death Speaker Jargba, Razorfen Kraul | Enchant Weapon - Mighty Intellect |
-| Off hand | [Book of the Dead](https://www.wowhead.com/forever/item=13353) (effect not valued) | 63 | Balnazzar, Stratholme | - |
+| Main hand | [Hammer of the Grand Crusader](https://www.wowhead.com/forever/item=18717) | 63 | Stratholme | Enchant Weapon - Mighty Intellect |
 
-Not valued by the lab: Stamina 39, spell damage without healing 158, haste rating 0. Main hand + off-hand (0.0474) over a two-hander (0.0430); No wand or relic with static healing stats in the pool: ranged slot left empty (relic effects are not modelled).
+Not valued by the lab: Stamina 41, spell damage without healing 158, haste rating 0. Two-hander (0.0430) over main hand + off-hand (0.0393); No wand or relic with static healing stats in the pool: ranged slot left empty (relic effects are not modelled).
 
-Weights refreshed at the first set's stats chose a different set: refreshed / first = 0.9985 ± 0.0029 (the better one is kept).
+Weights refreshed at the first set's stats chose a different set: refreshed / first = 0.9980 ± 0.0030 (the better one is kept).
 
 #### BiS (phase 1): `_reference/data/raidsim/gear_sets/forever/tiers/shaman-restoration-bis.gear.json`
 
@@ -71,7 +70,7 @@ Weights refreshed at the first set's stats chose a different set: refreshed / fi
 | Trinket 2 | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) (effect not valued) | 63 | - | - |
 | Main hand | [Staff of Dominance](https://www.wowhead.com/forever/item=18842) | 70 | Golemagg the Incinerator, Molten Core | Enchant Weapon - Healing Power |
 
-Not valued by the lab: Stamina 81, spell damage without healing 218, haste rating 0. Two-hander (0.0643) over main hand + off-hand (0.0629); No wand or relic with static healing stats in the pool: ranged slot left empty (relic effects are not modelled).
+Not valued by the lab: Stamina 81, spell damage without healing 218, haste rating 0. Two-hander (0.0643) over main hand + off-hand (0.0534); No wand or relic with static healing stats in the pool: ranged slot left empty (relic effects are not modelled).
 
 Weights refreshed at the first set's stats chose a different set: refreshed / first = 1.0010 ± 0.0025 (the better one is kept).
 

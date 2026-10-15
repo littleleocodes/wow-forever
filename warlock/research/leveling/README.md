@@ -34,10 +34,10 @@ Classic Era reference builds: [leveling-affliction-demo](../talents/classic-base
 
 ## Guide, rotation and respec plan
 
-- [Leveling guide](guide.md): the recommended build (Shadow Bolt hybrid, `shadow-bolt-hybrid-open-leveling`) level by level, what each bracket feels like and what the fight lab does not model.
+- [Leveling guide](guide.md): the recommended build (Demonology, `demonology-leveling`) level by level, what each bracket feels like and what the fight lab does not model.
 - [Rotation](rotation.md): the build each leveling page picks, the rotation it plays and what each leveling build casts per kill, level by level.
 - [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**74.3 h** (17.5% faster than talentless), no respec).
-- Recommended build: [shadow-bolt-hybrid-open-leveling](builds/shadow-bolt-hybrid-open-leveling.md) (Shadow Bolt hybrid; player page: [Shadow Bolt hybrid leveling](../../leveling/shadow-bolt-hybrid.md)).
+- Recommended build: [demonology-leveling](builds/demonology-leveling.md) (Demonology; player page: [Demonology leveling](../../leveling/demonology.md)).
 
 ## Fight lab (Monte Carlo fight simulator)
 
@@ -47,8 +47,8 @@ Classic Era reference builds: [leveling-affliction-demo](../talents/classic-base
 
 | Spec | Page build | Rotation | Seconds per kill |
 |---|---|---|---|
-| [Shadow Bolt hybrid](../../leveling/shadow-bolt-hybrid.md) ✅ | `shadow-bolt-hybrid-open-leveling` | destruction-leveling | 35.4 |
 | [Demonology](../../leveling/demonology.md) ✅ | `demonology-leveling` | demonology-leveling | 35.8 |
+| [Shadow Bolt hybrid](../../leveling/shadow-bolt-hybrid.md) ✅ | `shadow-bolt-hybrid-open-leveling` | destruction-leveling | 35.9 |
 | [Affliction](../../leveling/affliction.md) | `affliction-leveling` | affliction-leveling | 37.5 |
 | [Destruction](../../leveling/destruction.md) | `destruction-leveling` | destruction-leveling | 38.8 |
 | [Affliction-Demonology](../../leveling/affliction-demonology.md) | `affliction-demonology-open-leveling` | affliction-leveling | 39.7 |
@@ -68,9 +68,9 @@ Time per kill = fight + loot, travel, eating, drinking, healing and deaths; a bu
 - **Talents that matter** (time per kill lost when the talent is removed from `opt-affliction-leveling-leveling-st` at level 60): Siphon Life +7% (L30 +8%), Demonic Knowledge +6%, Improved Voidwalker +5%, Soul Link +2%, Malediction +2% (L30 +2%), Improved Bane of Agony +2% (L30 +0%).
 - **Measure about zero** single-target at 60 (kept for other reasons or not simulated): Demonic Aegis, Demonic Embrace, Demonic Sacrifice, Fel Vitality, Improved Imp.
 - **Caster mobs:** 16% of pulls at level 30 are casters (creature-database share); 0.00 interrupts per kill at 60.
-- **Race** (hand draft vs every optimizer candidate, 2026-10-09, mean time per kill over levels 20/30/40/50/60): leveling-affliction 40.5s, cand-affliction-r4 40.5s, cand-affliction-r2 40.8s, cand-affliction-r9 40.8s, cand-affliction-r6 41.0s, cand-affliction-r10 41.0s, cand-affliction-r3 41.2s, cand-affliction-r11 41.3s, cand-affliction-r5 41.6s, cand-affliction-r7 45.3s, cand-affliction-r1 46.2s, cand-affliction-hand-2026-09-28 48.2s, cand-affliction-r8 49.2s — fastest: **leveling-affliction**.
+- **Race** (hand draft vs every optimizer candidate, 2026-10-15, mean time per kill over levels 20/30/40/50/60): leveling-affliction 40.5s, cand-affliction-r4 40.5s, cand-affliction-r2 40.8s, cand-affliction-r9 40.8s, cand-affliction-r6 41.0s, cand-affliction-r10 41.0s, cand-affliction-r3 41.2s, cand-affliction-r11 41.3s, cand-affliction-r5 41.6s, cand-affliction-r7 45.3s, cand-affliction-r1 46.2s, cand-affliction-hand-2026-09-28 48.2s, cand-affliction-r8 49.2s — fastest: **leveling-affliction**.
 - **Calibration:** the scorer's `affliction-leveling` leveling values were fitted jointly to the hand draft and every candidate in [`fightlab/candidates/`](fightlab/candidates/) (1 round, converged: the optimizer build repeats).
-- **AoE grinding, 3 mobs per pull:** `affliction-leveling` with `opt-affliction-leveling-leveling-aoe` ([report](fightlab/affliction-leveling-aoe.md)): L40 52.1s per mob in pulls of 2 (single-target build 42.8s), 13.8 deaths/100; L60 34.7s per mob in pulls of 2 (single-target build 42.2s), 9.7 deaths/100.
+- **AoE grinding, 3 mobs per pull:** `affliction-leveling` with `opt-affliction-leveling-leveling-aoe` ([report](fightlab/affliction-leveling-aoe.md)): L40 51.2s per mob in pulls of 2 (single-target build 42.8s), 13.0 deaths/100; L60 30.9s per mob in pulls of 3 (single-target build 42.2s), 5.8 deaths/100.
 - **Not simulated:** runners, adds, soul shard economy (Drain Soul, Shadowburn shards), Curse of Exhaustion kiting, Sacrifice, Demonic Sacrifice, Succubus/Felhunter pets, gear upgrades within a level bracket.
 - **Pipeline result:** the hand draft `leveling-affliction` holds (no candidate beats it by more than the 2% margin). The player pages pick by their own races (the table at the top of this section).
 
@@ -90,3 +90,11 @@ Model findings (generated from the optimizer builds; scores are within each spec
 - **Solo / farming at 60:** 27/24/0; biggest talents by score lost when removed: Siphon Life (7.7), Demonic Knowledge (3.5), Pandemic (2.8), Improved Corruption (1.6), Soul Link (1.6); the hand draft `leveling-affliction` is 23/26/2.
 
 Beta hypotheses: every build's unverified claims are its `open_questions`, collected in [`_reference/launch-checklist.md`](../../../_reference/launch-checklist.md); level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).
+
+## Report index
+
+Reports under this folder that no other page links to (generated):
+
+- [optimizer/affliction-leveling-leveling-aoe.md](optimizer/affliction-leveling-leveling-aoe.md): warlock / forever / spec affliction-leveling / profile leveling-aoe
+- [optimizer/affliction-leveling-leveling-st.md](optimizer/affliction-leveling-leveling-st.md): warlock / forever / spec affliction-leveling / profile leveling-st
+- [optimizer/affliction-leveling-solo-60.md](optimizer/affliction-leveling-solo-60.md): warlock / forever / spec affliction-leveling / profile solo-60

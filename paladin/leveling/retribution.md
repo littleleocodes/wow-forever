@@ -46,6 +46,8 @@ Retribution levels with one seal: **Seal of Command** before each pull, **Judgem
 - A mob that stands back and casts: **Hammer of Justice** (10 yards) stops the cast; the fight lab uses it that way.
 - A mob that runs at low health: **Hammer of Wrath** (30 yards) finishes it, or **Hammer of Justice** holds it.
 
+*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

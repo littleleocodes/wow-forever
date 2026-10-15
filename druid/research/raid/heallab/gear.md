@@ -13,18 +13,18 @@ Capacity per point of gear stat x 1000 (± standard error); in brackets the heal
 | Gear | Healing | Intellect | Spirit | mp5 | Crit (per 1%) | Capacity |
 |---|---|---|---|---|---|---|
 | the lab's assumed gear | 0.2748 ± 0.0195 (1.00) | 0.4066 ± 0.0344 (1.48) | 0.5959 ± 0.0323 (2.17) | 0.9269 ± 0.1071 (3.37) | 0.8450 ± 0.3294 (3.08) | 0.604 |
-| the first pre-BiS set | 0.2186 ± 0.0197 (1.00) | 0.4117 ± 0.0408 (1.88) | 0.5774 ± 0.0360 (2.64) | 1.3576 ± 0.2182 (6.21) | 0.5326 ± 0.4104 (2.44) | 0.607 |
-| the first BiS set | 0.2183 ± 0.0201 (1.00) | 0.3901 ± 0.0372 (1.79) | 0.5700 ± 0.0378 (2.61) | 1.2988 ± 0.1993 (5.95) | 0.2975 ± 0.5719 (1.36) | 0.633 |
+| the first pre-BiS set | 0.2087 ± 0.0187 (1.00) | 0.4107 ± 0.0368 (1.97) | 0.5137 ± 0.0325 (2.46) | 1.1173 ± 0.1975 (5.35) | 0.5921 ± 0.4656 (2.84) | 0.601 |
+| the first BiS set | 0.2079 ± 0.0188 (1.00) | 0.3730 ± 0.0356 (1.79) | 0.5700 ± 0.0347 (2.74) | 0.7930 ± 0.2177 (3.81) | 0.5296 ± 0.4914 (2.55) | 0.627 |
 
 ### Sets
 
 | Tier | Capacity | vs the lab's assumed gear | Healing | Intellect | Spirit | mp5 | Crit | Item level |
 |---|---|---|---|---|---|---|---|---|
 | the lab's assumed gear | 0.605 ± 0.001 | x1.000 ± 0.000 | 370 | 230 | 190 | 12 | 2.0% | - |
-| pre-BiS | 0.607 ± 0.001 | x1.003 ± 0.003 | 454 | 170 | 203 | 10 | 0.0% | 58.5 |
-| BiS (phase 1) | 0.633 ± 0.001 | x1.046 ± 0.003 | 714 | 179 | 154 | 0 | 0.0% | 62.8 |
+| pre-BiS | 0.603 ± 0.001 | x0.997 ± 0.003 | 478 | 180 | 184 | 6 | 0.0% | 60.3 |
+| BiS (phase 1) | 0.627 ± 0.001 | x1.036 ± 0.003 | 512 | 219 | 198 | 0 | 1.0% | 66.0 |
 
-Capacities on 1000 fresh seeds (common to the three rows); the lab's standard 60 seeds (the pages' convention): default 0.600, prebis 0.608, bis 0.639.
+Capacities on 1000 fresh seeds (common to the three rows); the lab's standard 60 seeds (the pages' convention): default 0.600, prebis 0.603, bis 0.623.
 
 #### Pre-BiS: `_reference/data/raidsim/gear_sets/forever/tiers/druid-restoration-prebis.gear.json`
 
@@ -35,7 +35,7 @@ Capacities on 1000 fresh seeds (common to the three rows); the lab's standard 60
 | Shoulder | [Wildheart Spaulders](https://www.wowhead.com/forever/item=16718) (Wildheart Raiment: set bonus not valued) | 60 | Gizrul the Slavener, Blackrock Spire | - |
 | Back | [Hide of the Wild](https://www.wowhead.com/forever/item=18510) | 62 | crafted | - |
 | Chest | [Ironfeather Breastplate](https://www.wowhead.com/forever/item=15066) (Ironfeather Armor: set bonus not valued) | 58 | crafted | Enchant Chest - Major Intellect |
-| Wrist | [Bleak Howler Armguards](https://www.wowhead.com/forever/item=13208) | 61 | Gizrul the Slavener, Blackrock Spire | Enchant Bracer - Mana Regeneration |
+| Wrist | [Bleak Howler Armguards](https://www.wowhead.com/forever/item=13208) | 61 | Gizrul the Slavener, Blackrock Spire | Enchant Bracer - Healing Power |
 | Hands | [Hands of the Exalted Herald](https://www.wowhead.com/forever/item=12554) | 59 | Blackrock Depths | - |
 | Waist | [Wisdom of the Timbermaw](https://www.wowhead.com/forever/item=19047) | 58 | crafted | - |
 | Legs | [Leggings of Arcana](https://www.wowhead.com/forever/item=12756) | 62 | quest: Leggings of Arcana | Lesser Arcanum of Voracity |
@@ -44,37 +44,35 @@ Capacities on 1000 fresh seeds (common to the three rows); the lab's standard 60
 | Finger 2 | [Emerald Flame Ring](https://www.wowhead.com/forever/item=18395) | 62 | Prince Tortheldrin, Dire Maul | - |
 | Trinket 1 | [Royal Seal of Eldre'Thalas](https://www.wowhead.com/forever/item=18470) (effect not valued) | 62 | quest: The Emerald Dream... | - |
 | Trinket 2 | [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) | 57 | - | - |
-| Main hand | [Death Speaker Scepter](https://www.wowhead.com/forever/item=2816) | 33 | Death Speaker Jargba, Razorfen Kraul | Enchant Weapon - Mighty Spirit |
-| Off hand | [Thaurissan's Royal Scepter](https://www.wowhead.com/forever/item=11928) | 60 | Emperor Dagran Thaurissan, Blackrock Depths | - |
+| Main hand | [Staff of Metanoia](https://www.wowhead.com/forever/item=22394) | 62 | Jandice Barov, Scholomance | Enchant Weapon - Healing Power |
 
-Not valued by the lab: Stamina 45, spell damage without healing 104, haste rating 0. Main hand + off-hand (0.0402) over a two-hander (0.0344); No wand or relic with static healing stats in the pool: ranged slot left empty (relic effects are not modelled).
+Not valued by the lab: Stamina 55, spell damage without healing 131, haste rating 0. Two-hander (0.0316) over main hand + off-hand (0.0304); No wand or relic with static healing stats in the pool: ranged slot left empty (relic effects are not modelled).
 
-Weights refreshed at the first set's stats chose a different set: refreshed / first = 1.0024 ± 0.0029 (the better one is kept).
+Weights refreshed at the first set's stats chose a different set: refreshed / first = 1.0069 ± 0.0028 (the better one is kept).
 
 #### BiS (phase 1): `_reference/data/raidsim/gear_sets/forever/tiers/druid-restoration-bis.gear.json`
 
 | Slot | Item | Item level | Source | Enchant |
 |---|---|---|---|---|
 | Head | [Living Crown](https://www.wowhead.com/forever/item=252561) | 61 | crafted | Lesser Arcanum of Voracity |
-| Neck | [Animated Chain Necklace](https://www.wowhead.com/forever/item=18723) | 62 | Ramstein the Gorger, Stratholme | - |
+| Neck | [Amulet of the Redeemed](https://www.wowhead.com/forever/item=22327) | 63 | Stratholme | - |
 | Shoulder | [Wild Growth Spaulders](https://www.wowhead.com/forever/item=18810) | 71 | Molten Core | - |
 | Back | [Hide of the Wild](https://www.wowhead.com/forever/item=18510) | 62 | crafted | - |
-| Chest | [Ironfeather Breastplate](https://www.wowhead.com/forever/item=15066) (Ironfeather Armor: set bonus not valued) | 58 | crafted | Enchant Chest - Major Intellect |
-| Wrist | [Bleak Howler Armguards](https://www.wowhead.com/forever/item=13208) | 61 | Gizrul the Slavener, Blackrock Spire | Enchant Bracer - Healing Power |
-| Hands | [Hands of the Exalted Herald](https://www.wowhead.com/forever/item=12554) | 59 | Blackrock Depths | - |
+| Chest | [Ironfeather Breastplate](https://www.wowhead.com/forever/item=15066) (Ironfeather Armor: set bonus not valued) | 58 | crafted | Enchant Chest - Greater Stats |
+| Wrist | [Bleak Howler Armguards](https://www.wowhead.com/forever/item=13208) | 61 | Gizrul the Slavener, Blackrock Spire | Enchant Bracer - Superior Spirit |
+| Hands | [Cenarion Gloves](https://www.wowhead.com/forever/item=16831) (Cenarion Raiment: set bonus not valued) | 66 | Shazzrah, Molten Core | - |
 | Waist | [Corehound Belt](https://www.wowhead.com/forever/item=19162) | 70 | crafted | - |
 | Legs | [Stormrage Legguards](https://www.wowhead.com/forever/item=16901) (Stormrage Raiment: set bonus not valued) | 76 | Ragnaros, Molten Core | Lesser Arcanum of Voracity |
 | Feet | [Mooncloth Boots](https://www.wowhead.com/forever/item=15802) | 56 | crafted | Enchant Boots - Spirit |
-| Finger 1 | [Cauterizing Band](https://www.wowhead.com/forever/item=19140) | 71 | Majordomo Executus, Molten Core | - |
-| Finger 2 | [Band of Sulfuras](https://www.wowhead.com/forever/item=19138) | 78 | Ragnaros, Molten Core | - |
+| Finger 1 | [Band of Sulfuras](https://www.wowhead.com/forever/item=19138) | 78 | Ragnaros, Molten Core | - |
+| Finger 2 | [Cauterizing Band](https://www.wowhead.com/forever/item=19140) | 71 | Majordomo Executus, Molten Core | - |
 | Trinket 1 | [Royal Seal of Eldre'Thalas](https://www.wowhead.com/forever/item=18470) (effect not valued) | 62 | quest: The Emerald Dream... | - |
 | Trinket 2 | [Serenity Field](https://www.wowhead.com/forever/item=272439) (effect not valued) | 65 | - | - |
-| Main hand | [Death Speaker Scepter](https://www.wowhead.com/forever/item=2816) | 33 | Death Speaker Jargba, Razorfen Kraul | Enchant Weapon - Healing Power |
-| Off hand | [Thaurissan's Royal Scepter](https://www.wowhead.com/forever/item=11928) | 60 | Emperor Dagran Thaurissan, Blackrock Depths | - |
+| Main hand | [Staff of Dominance](https://www.wowhead.com/forever/item=18842) | 70 | Golemagg the Incinerator, Molten Core | Enchant Weapon - Mighty Spirit |
 
-Not valued by the lab: Stamina 70, spell damage without healing 145, haste rating 0. Main hand + off-hand (0.0478) over a two-hander (0.0404); No wand or relic with static healing stats in the pool: ranged slot left empty (relic effects are not modelled).
+Not valued by the lab: Stamina 104, spell damage without healing 158, haste rating 0. Two-hander (0.0349) over main hand + off-hand (0.0318); No wand or relic with static healing stats in the pool: ranged slot left empty (relic effects are not modelled).
 
-Weights refreshed at the first set's stats chose a different set: refreshed / first = 0.9952 ± 0.0029 (the better one is kept).
+Weights refreshed at the first set's stats chose a different set: refreshed / first = 1.0023 ± 0.0030 (the better one is kept).
 
 ## Assumptions
 

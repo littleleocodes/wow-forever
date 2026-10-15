@@ -47,6 +47,8 @@ You level with your raid talents, all Discipline first: **Penance** at 35 carrie
 - Hurt in a fight: shield again below half your health, **Flash Heal** below about a third; **Psychic Scream** if a mob is on you and you are below 40%.
 - If you only want to reach 60, level as Shadow and respec: half the time per kill in the fight lab.
 
+*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

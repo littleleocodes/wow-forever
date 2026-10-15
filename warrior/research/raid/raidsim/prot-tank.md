@@ -4,10 +4,10 @@
 
 | Build | Split | Tank value | Threat/s | Damage taken/s | DPS | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `opt-prot-tank-raid-tank` | 14/5/32 | 1.005 | 714 | 1164 | 535 | 0 | +58.4% |
-| `prot-raid-tank` | 14/5/32 | 1.000 | 705 | 1162 | 521 | 0 | +57.3% |
-| sim preset: Protection | - | 0.947 | 664 | 1220 | 487 | 0 | - |
-| sim preset: Protection 1/0/50 | - | 0.933 | 650 | 1232 | 479 | 0 | - |
+| `opt-prot-tank-raid-tank` | 14/5/32 | 1.007 | 686 | 1162 | 512 | 0 | +58.4% |
+| `prot-raid-tank` | 14/5/32 | 1.000 | 676 | 1161 | 497 | 0 | +57.3% |
+| sim preset: Protection | - | 0.949 | 638 | 1217 | 466 | 0 | - |
+| sim preset: Protection 1/0/50 | - | 0.934 | 625 | 1231 | 458 | 0 | - |
 
 Tank value = 0.5 x threat per second / the hand draft's + 0.5 x the hand draft's damage taken per second / this build's (the raid-tank profile's weights); the shares below are threat shares.
 
@@ -15,20 +15,20 @@ Tank value = 0.5 x threat per second / the hand draft's + 0.5 x the hand draft's
 
 | Action | Share |
 |---|---|
-| Heroic Strike | 33.5% |
-| Shield Slam | 28.6% |
-| Revenge | 14.6% |
-| Auto Attack | 12.3% |
-| Rend | 4.3% |
-| Retribution Aura | 2.2% |
+| Heroic Strike | 32.2% |
+| Shield Slam | 29.7% |
+| Revenge | 15.2% |
+| Auto Attack | 11.5% |
+| Rend | 4.4% |
+| Retribution Aura | 2.3% |
 | Deep Wound | 1.8% |
 | Thorns | 1.0% |
-| Shield Bash | 0.7% |
-| OtherActionRageGain | 0.6% |
+| Shield Bash | 0.8% |
+| OtherActionRageGain | 0.7% |
 | Dragonbreath Chili | 0.3% |
 | Lightning Bolt | 0.1% |
 
-Mapped onto the spec model's sources: `heroic_strike` 52%, `revenge` 23%, `white` 19%, `rend` 7%; 35% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
+Mapped onto the spec model's sources: `heroic_strike` 51%, `revenge` 24%, `white` 18%, `rend` 7%; 37% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:

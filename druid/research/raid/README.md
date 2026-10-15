@@ -202,3 +202,24 @@ Model findings (generated from the optimizer builds; scores are within each spec
 - **Raid DPS, Balance:** 33/5/13; biggest talents by score lost when removed: Moonglow (48.7), Vengeance (24.1), Moonfury (20.9), Insect Swarm (20.1), Reflection (19.6); the hand draft `balance-moonkin-raid` is 33/5/13.
 
 Beta hypotheses: every build's unverified claims are its `open_questions`, collected in [`_reference/launch-checklist.md`](../../../_reference/launch-checklist.md); level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).
+
+## Report index
+
+Reports under this folder that no other page links to (generated):
+
+- [deep-optimization-tank.md](deep-optimization-tank.md): Druid Feral Combat: deep optimisation of the tank (generated)
+- [heallab/deep-optimization-restoration.md](heallab/deep-optimization-restoration.md): Druid Restoration: deep optimisation in the healer lab (generated)
+- [heallab/gear.md](heallab/gear.md): Healer gear — druid
+- [heallab/resto-heal.md](heallab/resto-heal.md): Healer lab — druid resto-heal
+- [optimizer/balance-dps-parse.md](optimizer/balance-dps-parse.md): druid / forever / spec balance-dps / profile parse
+- [optimizer/balance-dps-raid-dps.md](optimizer/balance-dps-raid-dps.md): druid / forever / spec balance-dps / profile raid-dps
+- [optimizer/feral-bear-tank-raid-tank.md](optimizer/feral-bear-tank-raid-tank.md): druid / forever / spec feral-bear-tank / profile raid-tank
+- [optimizer/feral-cat-dps-parse.md](optimizer/feral-cat-dps-parse.md): druid / forever / spec feral-cat-dps / profile parse
+- [optimizer/feral-cat-dps-raid-dps.md](optimizer/feral-cat-dps-raid-dps.md): druid / forever / spec feral-cat-dps / profile raid-dps
+- [optimizer/resto-heal-raid-heal.md](optimizer/resto-heal-raid-heal.md): druid / forever / spec resto-heal / profile raid-heal
+- [raidsim/balance-dps-environments.md](raidsim/balance-dps-environments.md): DPS by environment — druid balance-dps
+- [raidsim/balance-dps.md](raidsim/balance-dps.md): Raid sim — druid balance-dps
+- [raidsim/feral-bear-tank-environments.md](raidsim/feral-bear-tank-environments.md): DPS by environment — druid feral-bear-tank
+- [raidsim/feral-bear-tank.md](raidsim/feral-bear-tank.md): Raid sim — druid feral-bear-tank
+- [raidsim/feral-cat-dps-environments.md](raidsim/feral-cat-dps-environments.md): DPS by environment — druid feral-cat-dps
+- [raidsim/feral-cat-dps.md](raidsim/feral-cat-dps.md): Raid sim — druid feral-cat-dps

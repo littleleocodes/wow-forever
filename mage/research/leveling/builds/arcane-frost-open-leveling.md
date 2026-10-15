@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Arcane-Frost (an Arcane/Frost hybrid) leveling build the open leveling search found on 2026-10-09: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the arcane-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). +6.5% faster per kill than arcane-leveling, the fastest of our leveling builds in that race.
+The Arcane-Frost (an Arcane/Frost hybrid) leveling build the open leveling search found on 2026-10-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the arcane-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). +7.8% faster per kill than arcane-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -93,7 +93,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 31.77; arcane-leveling 33.84. The search simulated 65,338 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 31.39; arcane-leveling 33.84. The search simulated 65,338 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)

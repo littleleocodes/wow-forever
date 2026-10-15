@@ -3,16 +3,19 @@
   "Arcane Missiles": {
    "min_hp": 0.35
   },
-  "Frostbolt": {
-   "min_hp": 0.2
-  },
   "Cone of Cold": {
-   "min_hp": 0.2
+   "min_hp": 0.35
+  },
+  "Frostbolt": {
+   "min_hp": 0.35
+  },
+  "Fire Blast": {
+   "min_hp": 0.1
   }
  },
  "class": "mage",
  "spec": "arcane-leveling",
- "build": "/home/user/wow-forever/mage/research/leveling/fightlab/candidates/derived-arcane-scorer.json",
+ "build": "arcane-leveling",
  "levels": [
   20,
   30,
@@ -20,7 +23,7 @@
   50,
   60
  ],
- "date": "2026-09-30",
+ "date": "2026-10-15",
  "fights": 600,
  "confirm": 3000,
  "changes": [
@@ -32,62 +35,73 @@
     "Arcane Missiles",
     0.35
    ],
-   "gain_seed1": 0.011076291458312681,
-   "gain_seed2": 0.009058631585078025
+   "gain_seed1": 0.006085811515468387,
+   "gain_seed2": 0.012157502312530655
   },
   {
    "round": 2,
-   "change": "Frostbolt only while the mob has more than 20% health",
-   "rule": [
-    "min_hp",
-    "Frostbolt",
-    0.2
-   ],
-   "gain_seed1": 0.008213827309445643,
-   "gain_seed2": 0.0049672887476421845
-  },
-  {
-   "round": 3,
-   "change": "Cone of Cold only while the mob has more than 20% health",
+   "change": "Cone of Cold only while the mob has more than 35% health",
    "rule": [
     "min_hp",
     "Cone of Cold",
-    0.2
+    0.35
    ],
-   "gain_seed1": 0.005326741336032503,
-   "gain_seed2": 0.005214804311748367
+   "gain_seed1": 0.011477122138362494,
+   "gain_seed2": 0.005719953639850561
+  },
+  {
+   "round": 3,
+   "change": "Frostbolt only while the mob has more than 35% health",
+   "rule": [
+    "min_hp",
+    "Frostbolt",
+    0.35
+   ],
+   "gain_seed1": 0.005185957497082283,
+   "gain_seed2": 0.005001231116807725
+  },
+  {
+   "round": 4,
+   "change": "Fire Blast only while the mob has more than 10% health",
+   "rule": [
+    "min_hp",
+    "Fire Blast",
+    0.1
+   ],
+   "gain_seed1": 0.0043728000169005465,
+   "gain_seed2": 0.00553858287198683
   }
  ],
- "weighted_before": 33.26316903204146,
- "weighted_after": 32.75974768029838,
+ "weighted_before": 34.43970468256125,
+ "weighted_after": 33.536421628012526,
  "per_level": {
   "20": {
-   "before": 31.879889405379828,
-   "after": 31.230849458172457,
+   "before": 30.338374351986694,
+   "after": 29.7522426325543,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 36.56144573183917,
-   "after": 35.85315568772914,
+   "before": 37.85063362878252,
+   "after": 36.09270576452927,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 38.64778174461155,
-   "after": 37.95658672056091,
+   "before": 40.651995079070886,
+   "after": 39.40012377236117,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 32.41219948769458,
-   "after": 31.995108240330367,
+   "before": 33.81978139855294,
+   "after": 33.028463925614446,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 29.194523369605484,
-   "after": 28.895316590423306,
+   "before": 30.476426125309303,
+   "after": 30.03383588067287,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

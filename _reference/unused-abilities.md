@@ -7,20 +7,18 @@ A talent that grants an ability is only worth its point when the build uses it. 
 | Class | Entry | Build | Talent | Kind | Removal costs | What the player does |
 |---|---|---|---|---|---|---|
 | warrior | fury-dw-raid | opt-fury-dw-raid-raid-dps | Spearing Strike 1 | wasted | +0.0% | not cast by the rotation |
-| hunter | bm-raid | beast-marks-ml-raid | Trueshot Aura 1 | automatic | +2.0% | turn it on before the pull |
 | hunter | bm-raid | mm-hawk-raid | Trueshot Aura 1 | automatic | +1.9% | turn it on before the pull |
 | hunter | mm-lonewolf-raid | marksmanship-ml-parse | Trueshot Aura 1 | automatic | +2.1% | turn it on before the pull |
 | hunter | mm-lonewolf-raid | marksmanship-ml-raid | Trueshot Aura 1 | automatic | +2.4% | turn it on before the pull |
 | hunter | mm-lonewolf-raid | mm-lone-wolf-raid | Trueshot Aura 1 | automatic | +2.4% | turn it on before the pull |
 | hunter | mm-lonewolf-raid | opt-mm-lonewolf-raid-raid-dps | Trueshot Aura 1 | automatic | +2.4% | turn it on before the pull |
-| hunter | mm-raid | beast-marks-ml-raid | Trueshot Aura 1 | automatic | +2.1% | turn it on before the pull |
 | hunter | mm-raid | bm-mm-full-buffs-raid | Trueshot Aura 1 | automatic | +2.0% | turn it on before the pull |
 | hunter | mm-raid | bm-mm-raid | Trueshot Aura 1 | automatic | +1.9% | turn it on before the pull |
 | hunter | mm-raid | marksmanship-with-a-pet-open-raid | Trueshot Aura 1 | automatic | +2.1% | turn it on before the pull |
 | hunter | mm-raid | opt-mm-raid-raid-dps | Trueshot Aura 1 | automatic | +1.9% | turn it on before the pull |
 | warlock | demonology-raid | demonology-ml-raid | Demonic Sacrifice 1 | automatic | +10.3% | before the pull, summon your Imp and sacrifice it (+15% Shadow damage), then summon your Succubus: Demonic Pact keeps the Imp's buff while another demon is out |
 | warlock | demonology-raid | demonology-ml-raid | Soul Link 1 | automatic | +2.9% | turn it on with your demon out (it lasts while the demon lives) |
-| warlock | demonology-raid | demonology-pact-raid | Demonic Sacrifice 1 | automatic | +10.4% | before the pull, summon your Imp and sacrifice it (+15% Shadow damage), then summon your Succubus: Demonic Pact keeps the Imp's buff while another demon is out |
+| warlock | demonology-raid | demonology-pact-raid | Demonic Sacrifice 1 | automatic | +10.3% | before the pull, summon your Imp and sacrifice it (+15% Shadow damage), then summon your Succubus: Demonic Pact keeps the Imp's buff while another demon is out |
 | warlock | demonology-raid | demonology-pact-raid | Soul Link 1 | automatic | +2.9% | turn it on with your demon out (it lasts while the demon lives) |
 | warlock | fire-destro-raid | destruction-fire-raid | Demonic Sacrifice 1 | automatic | +11.5% | before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it) |
 | warlock | fire-destro-raid | opt-fire-destro-raid-raid-dps | Demonic Sacrifice 1 | automatic | +10.2% | before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it) |
@@ -36,4 +34,4 @@ A talent that grants an ability is only worth its point when the build uses it. 
 | priest | smite-dps | smite-discipline-raid | Holy Nova 1 | situational | +0.0% | a defensive or healing spell: cast it when you need it, it is not part of the damage rotation |
 | priest | smite-dps | smite-open-raid | Holy Nova 1 | situational | +0.0% | a defensive or healing spell: cast it when you need it, it is not part of the damage rotation |
 
-*1 wasted, 23 automatic, 2 prerequisite, 3 situational.*
+*1 wasted, 21 automatic, 2 prerequisite, 3 situational.*

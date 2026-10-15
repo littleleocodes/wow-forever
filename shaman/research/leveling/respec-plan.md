@@ -26,12 +26,12 @@ Total: **62.3 h** (30.8% faster than talentless), no respec.
 
 ### elemental-dps
 
-- **Levels 10-60: elemental-dps -> level-50 build (30/11/0)**
+- **Levels 10-60: elemental-dps -> level-20 build (11/0/0)**
   - at level 10: **Elemental**: Convection 1
-  - at level 60: **Elemental**: Convection 5, Call of Flame 3, Concussion 5, Elemental Focus 1, Elemental Alacrity 3, Call of Thunder 1, Elemental Warding 2, Eye of the Storm 1, Lightning Overload 3, Earthbound 1, Elemental Fury 5, Lava Burst 1; **Enhancement**: Thundering Strikes 5, Improved Ghost Wolf 2, Guardian Totems 2, Earth's Grasp 1, Shamanistic Focus 1, Anticipation 3; **Restoration**: Totemic Focus 5, Mindfulness 1
-  - order: 10-14 Convection x5, 15-17 Call of Flame x3, 18-19 Concussion x2, 20 Elemental Focus, 21-23 Elemental Alacrity x3, 24-26 Concussion x3, 27-31 Thundering Strikes x5, 32-33 Improved Ghost Wolf x2, 34-35 Guardian Totems x2, 36 Earth's Grasp, 37 Shamanistic Focus, 38 Call of Thunder, 39 Elemental Warding, 40 Eye of the Storm, 41-43 Lightning Overload x3, 44 Earthbound, 45 Elemental Warding, 46-50 Elemental Fury x5, 51 Lava Burst, 52-54 Anticipation x3, 55-59 Totemic Focus x5, 60 Mindfulness
+  - at level 60: **Elemental**: Convection 5, Call of Flame 3, Concussion 2, Elemental Focus 1, Elemental Alacrity 3; **Enhancement**: Thundering Strikes 5, Improved Ghost Wolf 2, Guardian Totems 2, Earth's Grasp 2, Shamanistic Focus 1, Anticipation 3, Toughness 5, Mental Quickness 2, Spirit Weapons 1, Ancestral Knowledge 2, Maelstrom Weapon 1; **Restoration**: Totemic Focus 5, Mindfulness 3, Improved Reincarnation 2, Water Shield 1
+  - order: 10-14 Convection x5, 15-17 Call of Flame x3, 18-19 Concussion x2, 20 Elemental Focus, 21-25 Thundering Strikes x5, 26-27 Improved Ghost Wolf x2, 28-29 Guardian Totems x2, 30 Earth's Grasp, 31 Shamanistic Focus, 32-34 Anticipation x3, 35 Earth's Grasp, 36-40 Toughness x5, 41-42 Mental Quickness x2, 43-45 Elemental Alacrity x3, 46 Spirit Weapons, 47-51 Totemic Focus x5, 52-54 Mindfulness x3, 55-56 Improved Reincarnation x2, 57 Water Shield, 58-59 Ancestral Knowledge x2, 60 Maelstrom Weapon
 
-Total: **78.0 h** (13.3% faster than talentless), no respec.
+Total: **80.0 h** (11.1% faster than talentless), no respec.
 
 ## Never respec: best single plan
 
@@ -42,11 +42,11 @@ Total: **78.0 h** (13.3% faster than talentless), no respec.
 | enhancement-dps -> level-40 build (0/31/0) | 62.3 | +0.0 h |
 | enhancement-dps -> level-50 build (0/31/10) | 62.3 | +0.0 h |
 | enhancement-dps -> level-60 build (8/33/10) | 62.4 | +0.0 h |
-| elemental-dps -> level-50 build (30/11/0) | 78.0 | +15.7 h |
-| elemental-dps -> level-20 build (11/0/0) | 78.1 | +15.8 h |
-| elemental-dps -> level-30 build (14/7/0) | 78.2 | +15.9 h |
-| elemental-dps -> level-60 build (31/12/8) | 78.2 | +15.9 h |
-| elemental-dps -> level-40 build (17/14/0) | 78.7 | +16.4 h |
+| elemental-dps -> level-20 build (11/0/0) | 80.0 | +17.7 h |
+| elemental-dps -> level-30 build (14/7/0) | 80.0 | +17.7 h |
+| elemental-dps -> level-40 build (17/14/0) | 80.5 | +18.2 h |
+| elemental-dps -> level-60 build (31/12/8) | 80.5 | +18.2 h |
+| elemental-dps -> level-50 build (18/23/0) | 80.5 | +18.2 h |
 
 ## Leveling score by level (fraction of time per kill saved)
 
@@ -57,11 +57,11 @@ Total: **78.0 h** (13.3% faster than talentless), no respec.
 | enhancement-dps -> level-40 build (0/31/0) | +0.3% | +2.3% | +18.8% | +29.8% | +30.0% | +31.8% | +33.2% | +34.0% | +35.5% | +36.1% | +36.8% |
 | enhancement-dps -> level-50 build (0/31/10) | +0.3% | +2.9% | +18.8% | +29.8% | +30.1% | +31.8% | +33.2% | +34.0% | +35.5% | +36.1% | +36.8% |
 | enhancement-dps -> level-60 build (8/33/10) | +0.3% | +2.9% | +18.8% | +29.8% | +30.1% | +31.8% | +33.2% | +34.0% | +35.5% | +35.9% | +36.8% |
-| elemental-dps -> level-20 build (11/0/0) | +1.5% | +7.0% | +13.2% | +15.8% | +17.0% | +19.2% | +24.9% | +28.4% | +32.2% | +35.9% | +36.8% |
-| elemental-dps -> level-30 build (14/7/0) | +1.5% | +7.0% | +13.2% | +15.4% | +19.2% | +20.8% | +22.4% | +28.0% | +32.2% | +35.9% | +36.8% |
-| elemental-dps -> level-40 build (17/14/0) | +1.5% | +7.0% | +13.2% | +15.8% | +17.2% | +21.1% | +25.3% | +26.5% | +30.0% | +35.9% | +36.9% |
-| elemental-dps -> level-50 build (30/11/0) | +1.5% | +7.0% | +13.2% | +15.8% | +17.2% | +21.1% | +25.0% | +26.6% | +33.1% | +35.9% | +36.8% |
-| elemental-dps -> level-60 build (31/12/8) | +1.5% | +7.0% | +13.2% | +15.8% | +17.2% | +21.1% | +25.1% | +26.7% | +32.1% | +35.6% | +37.9% |
+| elemental-dps -> level-20 build (11/0/0) | +1.3% | +6.7% | +12.5% | +14.0% | +17.7% | +21.9% | +22.0% | +28.0% | +28.6% | +32.0% | +32.4% |
+| elemental-dps -> level-30 build (14/7/0) | +1.3% | +6.7% | +12.5% | +15.0% | +18.9% | +23.1% | +23.8% | +28.0% | +28.6% | +32.0% | +32.4% |
+| elemental-dps -> level-40 build (17/14/0) | +1.3% | +6.7% | +12.5% | +15.0% | +18.9% | +23.1% | +24.2% | +24.4% | +29.2% | +30.8% | +31.2% |
+| elemental-dps -> level-50 build (18/23/0) | +1.3% | +6.7% | +12.5% | +15.0% | +18.9% | +23.1% | +24.2% | +24.6% | +29.2% | +30.8% | +32.1% |
+| elemental-dps -> level-60 build (31/12/8) | +1.3% | +6.7% | +12.5% | +15.0% | +18.9% | +23.1% | +24.1% | +26.0% | +27.3% | +30.4% | +33.5% |
 
 ## Reading it
 

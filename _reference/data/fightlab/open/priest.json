@@ -538,21 +538,27 @@
      "points": 5
     },
     {
-     "levels": "43-47",
+     "levels": "43-46",
      "tree": "Shadow",
      "talent": "Improved Mind Blast",
-     "points": 5
+     "points": 4
     },
     {
-     "levels": "48-50",
+     "levels": "47-49",
      "tree": "Shadow",
      "talent": "Shadow Weaving",
      "points": 3
     },
     {
-     "levels": "51",
+     "levels": "50",
      "tree": "Shadow",
      "talent": "Improved Shadow Word: Pain",
+     "points": 1
+    },
+    {
+     "levels": "51",
+     "tree": "Shadow",
+     "talent": "Improved Mind Blast",
      "points": 1
     },
     {
@@ -598,12 +604,12 @@
      }
     },
     "open winner": {
-     "weighted": 42.92,
+     "weighted": 42.66,
      "levels": {
       "20": 37.05,
       "30": 41.24,
       "40": 48.18,
-      "50": 43.57,
+      "50": 42.54,
       "60": 41.66
      }
     },
@@ -634,6 +640,26 @@
       "30": 41.24,
       "40": 49.0,
       "50": 45.13,
+      "60": 41.66
+     }
+    },
+    "finalist 22/0/29 (own tree last order)": {
+     "weighted": 43.47,
+     "levels": {
+      "20": 37.05,
+      "30": 41.24,
+      "40": 49.0,
+      "50": 45.13,
+      "60": 41.66
+     }
+    },
+    "finalist 22/0/29 (polished from the own tree last order order, before the order polish)": {
+     "weighted": 42.92,
+     "levels": {
+      "20": 37.05,
+      "30": 41.24,
+      "40": 48.18,
+      "50": 43.57,
       "60": 41.66
      }
     }
@@ -801,37 +827,30 @@
    "order_label": "polished from the own tree last order",
    "orders_raced": "22/0/29",
    "order_polish": {
-    "date": "2026-10-11",
+    "date": "2026-10-15",
     "levels": [
      30,
      40,
      50
     ],
-    "from": "own tree last",
+    "from": "polished from the own tree last order",
     "steps": [
      {
       "round": 1,
-      "change": "Shadow Weaving: 47/49-50 -> 47-49; Improved Shadow Word: Pain: 51-52 -> 50-51; Improved Fade: 53 -> 52 (+1 more)",
-      "seed1": -0.0164,
-      "seed2": -0.0127,
-      "seconds_30_50": 44.38
-     },
-     {
-      "round": 2,
-      "change": "Improved Shadow Word: Pain: 50-51 -> 37/51; Spirit Tap: 37-41 -> 38-42; Improved Mind Blast: 42-46 -> 43-47 (+1 more)",
-      "seed1": -0.006,
-      "seed2": -0.0064,
-      "seconds_30_50": 44.09
+      "change": "Improved Shadow Word: Pain: 37/51 -> 37/50; Improved Mind Blast: 43-47 -> 43-46/51; Shadow Weaving: 48-50 -> 47-49",
+      "seed1": -0.0094,
+      "seed2": -0.0104,
+      "seconds_30_50": 43.64
      }
     ],
-    "minutes": 0.3,
+    "minutes": 0.2,
     "changed": true
    },
    "split": "22/0/29",
    "family": "Hybrid Discipline/Shadow",
    "link": "https://talentsforever.com/priest/60/0240130313131--41502050001131204-6",
    "ours_best": "discipline-leveling",
-   "gain_vs_ours": 0.1906,
+   "gain_vs_ours": 0.1978,
    "values": {
     "Meditation": {
      "ranks": 3,
@@ -10175,7 +10194,7 @@
     ],
     "why": null,
     "spec": "Hybrid Discipline/Shadow",
-    "date": "2026-10-11"
+    "date": "2026-10-15"
    }
   },
   "holy-leveling": {
@@ -10725,33 +10744,33 @@
      }
     },
     "finalist 16/17/18 (own tree first order)": {
-     "weighted": 43.46,
+     "weighted": 43.47,
      "levels": {
-      "20": 33.53,
+      "20": 33.54,
       "30": 41.96,
-      "40": 47.68,
-      "50": 44.34,
-      "60": 43.99
+      "40": 47.69,
+      "50": 44.35,
+      "60": 43.98
      }
     },
     "finalist 16/17/18 (own tree last order)": {
-     "weighted": 46.1,
+     "weighted": 46.19,
      "levels": {
       "20": 37.11,
       "30": 41.47,
-      "40": 52.85,
-      "50": 49.62,
-      "60": 43.99
+      "40": 53.06,
+      "50": 49.79,
+      "60": 43.98
      }
     },
     "open winner": {
-     "weighted": 43.13,
+     "weighted": 43.14,
      "levels": {
-      "20": 33.53,
+      "20": 33.54,
       "30": 41.31,
-      "40": 46.49,
-      "50": 44.34,
-      "60": 43.99
+      "40": 46.51,
+      "50": 44.35,
+      "60": 43.98
      }
     },
     "finalist 16/17/18 (stats model order, before the order polish)": {
@@ -10762,6 +10781,16 @@
       "40": 47.68,
       "50": 44.34,
       "60": 43.99
+     }
+    },
+    "finalist 16/17/18 (stats model order)": {
+     "weighted": 43.47,
+     "levels": {
+      "20": 33.54,
+      "30": 41.96,
+      "40": 47.69,
+      "50": 44.35,
+      "60": 43.98
      }
     }
    },
@@ -10900,38 +10929,16 @@
    "order_label": "polished from the stats model order",
    "orders_raced": "16/17/18",
    "order_polish": {
-    "date": "2026-10-11",
+    "date": "2026-10-15",
     "levels": [
      30,
      40,
      50
     ],
-    "from": "stats model",
-    "steps": [
-     {
-      "round": 1,
-      "change": "Wand Specialization: 36-37 -> 25/37; Shadow Weaving: 25-27 -> 26-28; Twin Disciplines: 28-32 -> 29-33 (+1 more)",
-      "seed1": -0.0066,
-      "seed2": -0.0032,
-      "seconds_30_50": 44.11
-     },
-     {
-      "round": 2,
-      "change": "Meditation: 40-42 -> 38-39/42; Inner Focus: 38 -> 40; Mental Agility: 39 -> 41",
-      "seed1": -0.0055,
-      "seed2": -0.0034,
-      "seconds_30_50": 43.96
-     },
-     {
-      "round": 3,
-      "change": "Meditation: 38-39/42 -> 38-40; Inner Focus: 40 -> 41; Mental Agility: 41 -> 42",
-      "seed1": -0.0076,
-      "seed2": -0.0047,
-      "seconds_30_50": 43.75
-     }
-    ],
+    "from": "polished from the stats model order",
+    "steps": [],
     "minutes": 0.6,
-    "changed": true
+    "changed": false
    },
    "values": {
     "Meditation": {
@@ -11030,7 +11037,7 @@
    "family": "Hybrid Holy/Shadow",
    "link": "https://talentsforever.com/priest/60/0250030113001-33405000002-3050204010003-6",
    "ours_best": "holy-leveling",
-   "gain_vs_ours": 0.2052,
+   "gain_vs_ours": 0.2049,
    "synergy": {
     "date": "2026-10-11",
     "winner": "16/17/18",
@@ -19984,7 +19991,7 @@
     ],
     "why": null,
     "spec": "Hybrid Holy/Shadow",
-    "date": "2026-10-11"
+    "date": "2026-10-15"
    }
   },
   "shadow-dps": {
@@ -30208,7 +30215,7 @@
     ],
     "why": null,
     "spec": "Shadow",
-    "date": "2026-10-11"
+    "date": "2026-10-15"
    }
   }
  },

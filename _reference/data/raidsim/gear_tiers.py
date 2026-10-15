@@ -101,6 +101,8 @@ def pool_of(tier, zones):
         npcs = {d.get("npcId") for d in drops}
         if npcs and npcs <= G.WORLD_BOSSES | G.EVENT_NPCS:
             return False
+        if it["id"] in G.VENDOR_ITEMS:
+            return True
         if not srcs:
             so = it.get("scalingOptions", {}).get("0", {})
             return it["id"] in VETTED_PRE and so.get("ilvl", 0) <= G.SOURCELESS_MAX_ILVL
@@ -131,7 +133,7 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, we
     seen = [x.get("id") for p in presets for x in json.load(open(p, encoding="utf-8")).get("items", []) if x and x.get("id")]
     wtypes = {db[i].get("weaponType") for i in seen if i in db and db[i].get("type") == 13}
     rtypes = {db[i].get("rangedWeaponType") for i in seen if i in db and db[i].get("type") == 14}
-    trinkets = sorted({i for i in seen if i in db and db[i].get("type") == 12 and pool(db[i])})
+    trinkets = sorted({i for i in [*seen, *G.VENDOR_ITEMS] if i in db and db[i].get("type") == 12 and pool(db[i])})   # + known vendor trinkets (2026-10-15)
 
     def fits(it, slot, curit):
         if it.get("type") != G.SLOT_TYPE[slot] or not pool(it):

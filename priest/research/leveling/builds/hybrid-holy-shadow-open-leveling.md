@@ -1,4 +1,4 @@
-# Holy/Shadow hybrid — Leveling (open talent search) — 16/17/18
+# Holy-Shadow — Leveling (open talent search) — 16/17/18
 
 *[Priest](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Holy/Shadow hybrid (an Holy/Shadow hybrid) leveling build the open leveling search found on 2026-10-11: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the holy-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). +20.5% faster per kill than holy-leveling, the fastest of our leveling builds in that race.
+The Holy-Shadow (a Holy/Shadow hybrid) leveling build the open leveling search found on 2026-10-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the holy-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). +20.5% faster per kill than holy-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -89,12 +89,12 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 43.13; holy-leveling 51.98. The search simulated 41,544 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 43.14; holy-leveling 51.98. The search simulated 41,544 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
 
-- An open-search Holy/Shadow hybrid leveling build: check it while leveling at launch.
+- An open-search Holy-Shadow leveling build: check it while leveling at launch.
 
 ## Sources
 

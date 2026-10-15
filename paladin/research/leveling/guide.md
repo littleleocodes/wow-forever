@@ -4,7 +4,7 @@
 
 ## The build and its order
 
-**Shockadin** ([player page](../../leveling/shockadin.md)) — `shockadin-open-leveling`: The Shockadin (a Holy/Retribution hybrid) leveling build the open leveling search found on 2026-10-09: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the holy-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (ret-dps). +28.8% faster per kill than holy-leveling, the fastest of our leveling builds in that race.
+**Shockadin** ([player page](../../leveling/shockadin.md)) — `shockadin-open-leveling`: The Shockadin (a Holy/Retribution hybrid) leveling build the open leveling search found on 2026-10-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the holy-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (ret-dps). +28.8% faster per kill than holy-leveling, the fastest of our leveling builds in that race.
 
 | Levels | Tree | Talent | Points |
 |---|---|---|---|
@@ -60,17 +60,17 @@ Fight time, deaths and downtime are not recorded for this build: its times come 
 
 The rotation in the player page's words:
 
-Before the fight: **Blessing of Wisdom** and **Devotion Aura** up, a two-handed weapon. **Seal of Righteousness** before each pull.
+Before the fight: **Blessing of Wisdom** and **Devotion Aura** up, a two-handed weapon. **Seal of Righteousness** before each pull (**Seal of Command** instead if your build takes it).
 
 1. **Hammer of Justice** a mob that casts spells.
 2. Once you have **Holy Shock**: cast it at the mob as it walks in while your mana is above 70%, after **Divine Favor** for a sure critical hit while you are healthy.
-3. Keep **Seal of Righteousness** up.
+3. Keep your seal up.
 4. **Judgement** and **Holy Strike** whenever ready.
 5. Low on health (below 40%, with the mob above a fifth): **Holy Shock** on yourself (after **Divine Favor** if it is ready), **Divine Protection** below 30%, **Hammer of Justice**, then **Holy Light**; **Flash of Light** below a quarter; **Lay on Hands** below 15%.
 
 Between fights: Heal yourself back to 80% with **Holy Light** or **Flash of Light**, drink below a quarter of your mana.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-30, on top of the priority below): never cast Hammer of Wrath. Together +1.3% time per kill saved for `/home/user/wow-forever/paladin/research/leveling/fightlab/candidates/derived-holy-scorer.json` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-15, on top of the priority below): never cast Hammer of Wrath. Together +3.0% time per kill saved for `shockadin-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 ## Talents that carry the build
 

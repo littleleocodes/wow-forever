@@ -13,18 +13,18 @@ Capacity per point of gear stat x 1000 (± standard error); in brackets the heal
 | Gear | Healing | Intellect | Spirit | mp5 | Crit (per 1%) | Capacity |
 |---|---|---|---|---|---|---|
 | the lab's assumed gear | 0.2184 ± 0.0141 (1.00) | 0.4141 ± 0.0287 (1.90) | 0.1767 ± 0.0197 (0.81) | 0.9562 ± 0.0741 (4.38) | 1.8448 ± 0.2843 (8.45) | 0.577 |
-| the first pre-BiS set | 0.1634 ± 0.0149 (1.00) | 0.4617 ± 0.0274 (2.83) | 0.2593 ± 0.0265 (1.59) | 1.0890 ± 0.0830 (6.66) | 2.1364 ± 0.3969 (13.07) | 0.577 |
-| the first BiS set | 0.2032 ± 0.0164 (1.00) | 0.6049 ± 0.0308 (2.98) | 0.3021 ± 0.0315 (1.49) | 1.3237 ± 0.0902 (6.51) | 3.7283 ± 0.7392 (18.35) | 0.594 |
+| the first pre-BiS set | 0.1997 ± 0.0134 (1.00) | 0.4735 ± 0.0282 (2.37) | 0.2322 ± 0.0247 (1.16) | 1.1032 ± 0.0796 (5.53) | 2.3526 ± 0.3652 (11.78) | 0.573 |
+| the first BiS set | 0.1897 ± 0.0160 (1.00) | 0.5094 ± 0.0297 (2.69) | 0.2715 ± 0.0290 (1.43) | 1.3460 ± 0.0860 (7.10) | 3.4456 ± 0.6228 (18.17) | 0.590 |
 
 ### Sets
 
 | Tier | Capacity | vs the lab's assumed gear | Healing | Intellect | Spirit | mp5 | Crit | Item level |
 |---|---|---|---|---|---|---|---|---|
 | the lab's assumed gear | 0.576 ± 0.001 | x1.000 ± 0.000 | 360 | 260 | 130 | 24 | 2.0% | - |
-| pre-BiS | 0.576 ± 0.001 | x1.000 ± 0.002 | 470 | 232 | 130 | 13 | 2.0% | 59.4 |
-| BiS (phase 1) | 0.600 ± 0.001 | x1.041 ± 0.003 | 593 | 234 | 114 | 19 | 0.0% | 64.4 |
+| pre-BiS | 0.575 ± 0.001 | x0.997 ± 0.002 | 535 | 210 | 118 | 9 | 3.0% | 61.5 |
+| BiS (phase 1) | 0.595 ± 0.001 | x1.033 ± 0.003 | 547 | 233 | 104 | 23 | 1.0% | 66.1 |
 
-Capacities on 1000 fresh seeds (common to the three rows); the lab's standard 60 seeds (the pages' convention): default 0.585, prebis 0.579, bis 0.610.
+Capacities on 1000 fresh seeds (common to the three rows); the lab's standard 60 seeds (the pages' convention): default 0.585, prebis 0.572, bis 0.599.
 
 #### Pre-BiS: `_reference/data/raidsim/gear_sets/forever/tiers/paladin-holy-prebis.gear.json`
 
@@ -32,24 +32,23 @@ Capacities on 1000 fresh seeds (common to the three rows); the lab's standard 60
 |---|---|---|---|---|
 | Head | [Living Crown](https://www.wowhead.com/forever/item=252561) | 61 | crafted | Lesser Arcanum of Voracity |
 | Neck | [Amulet of the Redeemed](https://www.wowhead.com/forever/item=22327) | 63 | Stratholme | - |
-| Shoulder | [Devout Mantle](https://www.wowhead.com/forever/item=16695) (Vestments of the Devout: set bonus not valued) | 60 | Solakar Flamewreath, Blackrock Spire | - |
+| Shoulder | [Rugged Mantle of the Timbermaw](https://www.wowhead.com/forever/item=227808) | 65 | - | - |
 | Back | [Hide of the Wild](https://www.wowhead.com/forever/item=18510) | 62 | crafted | - |
 | Chest | [Breastplate of Salvation](https://www.wowhead.com/forever/item=250601) | 61 | crafted | Enchant Chest - Major Intellect |
-| Wrist | [Gallant's Wristguards](https://www.wowhead.com/forever/item=18459) | 60 | Dire Maul | Enchant Bracer - Mana Regeneration |
+| Wrist | [Gallant's Wristguards](https://www.wowhead.com/forever/item=18459) | 60 | Dire Maul | Enchant Bracer - Healing Power |
 | Hands | [Hands of the Exalted Herald](https://www.wowhead.com/forever/item=12554) | 59 | Blackrock Depths | - |
 | Waist | [Knowledge of the Timbermaw](https://www.wowhead.com/forever/item=228190) | 65 | - | - |
 | Legs | [Martyr's Legplates](https://www.wowhead.com/forever/item=250600) | 61 | crafted | Lesser Arcanum of Voracity |
 | Feet | [Mooncloth Boots](https://www.wowhead.com/forever/item=15802) | 56 | crafted | Enchant Boots - Spirit |
 | Finger 1 | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21207) | 65 | - | - |
-| Finger 2 | [Emerald Flame Ring](https://www.wowhead.com/forever/item=18395) | 62 | Prince Tortheldrin, Dire Maul | - |
+| Finger 2 | [Band of Mending](https://www.wowhead.com/forever/item=22334) | 62 | Stratholme | - |
 | Trinket 1 | [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) | 57 | - | - |
 | Trinket 2 | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) (effect not valued) | 63 | - | - |
-| Main hand | [Death Speaker Scepter](https://www.wowhead.com/forever/item=2816) | 33 | Death Speaker Jargba, Razorfen Kraul | Enchant Weapon - Mighty Intellect |
-| Off hand | [Book of the Dead](https://www.wowhead.com/forever/item=13353) (effect not valued) | 63 | Balnazzar, Stratholme | - |
+| Main hand | [Hammer of the Grand Crusader](https://www.wowhead.com/forever/item=18717) | 63 | Stratholme | Enchant Weapon - Healing Power |
 
-Not valued by the lab: Stamina 43, spell damage without healing 137, haste rating 0. Main hand + off-hand (0.0308) over a two-hander (0.0281); No wand or relic with static healing stats in the pool: ranged slot left empty (relic effects are not modelled).
+Not valued by the lab: Stamina 41, spell damage without healing 187, haste rating 0. Two-hander (0.0298) over main hand + off-hand (0.0266); No wand or relic with static healing stats in the pool: ranged slot left empty (relic effects are not modelled).
 
-Weights refreshed at the first set's stats chose a different set: refreshed / first = 1.0005 ± 0.0020 (the better one is kept).
+Weights refreshed at the first set's stats chose a different set: refreshed / first = 1.0023 ± 0.0022 (the better one is kept).
 
 #### BiS (phase 1): `_reference/data/raidsim/gear_sets/forever/tiers/paladin-holy-bis.gear.json`
 
@@ -65,16 +64,16 @@ Weights refreshed at the first set's stats chose a different set: refreshed / fi
 | Waist | [Corehound Belt](https://www.wowhead.com/forever/item=19162) | 70 | crafted | - |
 | Legs | [Martyr's Legplates](https://www.wowhead.com/forever/item=250600) | 61 | crafted | Lesser Arcanum of Voracity |
 | Feet | [Magma Tempered Boots](https://www.wowhead.com/forever/item=18824) | 70 | Molten Core | Enchant Boots - Spirit |
-| Finger 1 | [Band of Sulfuras](https://www.wowhead.com/forever/item=19138) | 78 | Ragnaros, Molten Core | - |
-| Finger 2 | [Cauterizing Band](https://www.wowhead.com/forever/item=19140) | 71 | Majordomo Executus, Molten Core | - |
-| Trinket 1 | [Serenity Field](https://www.wowhead.com/forever/item=272439) (effect not valued) | 65 | - | - |
-| Trinket 2 | [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) | 57 | - | - |
-| Main hand | [Death Speaker Scepter](https://www.wowhead.com/forever/item=2816) | 33 | Death Speaker Jargba, Razorfen Kraul | Enchant Weapon - Mighty Intellect |
+| Finger 1 | [Cauterizing Band](https://www.wowhead.com/forever/item=19140) | 71 | Majordomo Executus, Molten Core | - |
+| Finger 2 | [Band of Piety](https://www.wowhead.com/forever/item=22681) | 66 | - | - |
+| Trinket 1 | [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) | 57 | - | - |
+| Trinket 2 | [Serenity Field](https://www.wowhead.com/forever/item=272439) (effect not valued) | 65 | - | - |
+| Main hand | [Azuresong Mageblade](https://www.wowhead.com/forever/item=17103) | 71 | Golemagg the Incinerator, Molten Core | Enchant Weapon - Mighty Intellect |
 | Off hand | [Fire Runed Grimoire](https://www.wowhead.com/forever/item=19142) | 70 | Molten Core | - |
 
-Not valued by the lab: Stamina 79, spell damage without healing 173, haste rating 0. Main hand + off-hand (0.0398) over a two-hander (0.0362); No wand or relic with static healing stats in the pool: ranged slot left empty (relic effects are not modelled).
+Not valued by the lab: Stamina 83, spell damage without healing 220, haste rating 0. Main hand + off-hand (0.0315) over a two-hander (0.0311); No wand or relic with static healing stats in the pool: ranged slot left empty (relic effects are not modelled).
 
-Weights refreshed at the first set's stats chose a different set: refreshed / first = 1.0072 ± 0.0030 (the better one is kept).
+Weights refreshed at the first set's stats chose a different set: refreshed / first = 1.0046 ± 0.0028 (the better one is kept).
 
 ## Assumptions
 

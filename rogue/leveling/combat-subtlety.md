@@ -55,6 +55,8 @@ Combat-Subtlety levels on Subtlety's openers and Combat's defenses: **Premeditat
 - Below half health while the mob still has more than 30% of its health, press **Evasion** (50% more dodge for 15 seconds, and with **Setup** more combo points).
 - If a pull goes wrong, **Vanish** gets you out; the fight lab does not model adds or escapes.
 
+*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

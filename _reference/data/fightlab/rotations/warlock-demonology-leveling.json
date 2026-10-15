@@ -1,12 +1,13 @@
 {
  "veto": {
   "Corruption": {
+   "min_mana": 0.3,
    "min_hp": 0.35
   }
  },
  "class": "warlock",
  "spec": "demonology-leveling",
- "build": "/home/user/wow-forever/warlock/research/leveling/fightlab/candidates/derived-demonology-scorer.json",
+ "build": "demonology-leveling",
  "levels": [
   20,
   30,
@@ -14,52 +15,63 @@
   50,
   60
  ],
- "date": "2026-09-30",
+ "date": "2026-10-15",
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
+   "change": "Corruption only above 30% mana",
+   "rule": [
+    "min_mana",
+    "Corruption",
+    0.3
+   ],
+   "gain_seed1": 0.019955574205898885,
+   "gain_seed2": 0.018273460058770175
+  },
+  {
+   "round": 2,
    "change": "Corruption only while the mob has more than 35% health",
    "rule": [
     "min_hp",
     "Corruption",
     0.35
    ],
-   "gain_seed1": 0.005547288355595259,
-   "gain_seed2": 0.007590209126851599
+   "gain_seed1": 0.004505507583824064,
+   "gain_seed2": 0.006275340453080314
   }
  ],
- "weighted_before": 38.17449584846952,
- "weighted_after": 37.85109095849925,
+ "weighted_before": 35.52806266491676,
+ "weighted_after": 34.66337709244095,
  "per_level": {
   "20": {
-   "before": 25.678866666660493,
-   "after": 25.66879999999332,
+   "before": 24.847833333296187,
+   "after": 24.84216666662928,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 32.78824918239592,
-   "after": 32.55298440591095,
+   "before": 31.53713532795374,
+   "after": 31.4551623175415,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 39.985149834687675,
-   "after": 39.436577692054435,
+   "before": 38.52975432380949,
+   "after": 37.72775718283292,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 42.434943342629666,
-   "after": 41.904539839319625,
+   "before": 38.44787608921486,
+   "after": 36.922605904346256,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 40.27535333949711,
-   "after": 40.12604266457494,
+   "before": 36.649297151094906,
+   "after": 35.61561055164552,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

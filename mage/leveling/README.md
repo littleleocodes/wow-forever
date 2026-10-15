@@ -7,10 +7,10 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
 | 1 | [Frost](frost.md) 🔬 | 27 | fastest |
-| 2 | [Arcane-Frost](arcane-frost.md) 🔬 | 32 | +17% |
-| 3 | [Frostfire](frostfire.md) 🔬 | 32 | +19% |
-| 4 | [Arcane](arcane.md) 🔬 | 33 | +20% |
-| 5 | [Fire](fire.md) 🔬 | 36 | +31% |
+| 2 | [Arcane-Frost](arcane-frost.md) 🔬 | 31 | +15% |
+| 3 | [Arcane](arcane.md) 🔬 | 33 | +20% |
+| 4 | [Frostfire](frostfire.md) 🔬 | 33 | +20% |
+| 5 | [Fire](fire.md) 🔬 | 36 | +32% |
 
 🔬 = a derived build (searched in a simulator). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 

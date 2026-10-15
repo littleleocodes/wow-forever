@@ -40,20 +40,20 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-shadow-dps-raid-dps`](builds/opt-shadow-dps-raid-dps.md) | ours: optimizer | 18/0/33 | 591 | +0.0% | 696 | +0.0% | 0 s |
-| 2 | *Shadow* | community simulator | - | 589 | -0.3% | 693 | -0.4% | 0 s |
-| 3 | *Shadow 15/0/36* | community simulator | - | 589 | -0.3% | 693 | -0.4% | 0 s |
-| 4 | *Smite* | community simulator | - | 217 | -63.3% | 260 | -62.7% | 1 s |
-| 5 | *Smite 31/17/3* | community simulator | - | 217 | -63.3% | 260 | -62.7% | 1 s |
+| 1 | [`opt-shadow-dps-raid-dps`](builds/opt-shadow-dps-raid-dps.md) | ours: optimizer | 18/0/33 | 593 | +0.0% | 699 | +0.0% | 0 s |
+| 2 | *Shadow* | community simulator | - | 591 | -0.3% | 696 | -0.4% | 0 s |
+| 3 | *Shadow 15/0/36* | community simulator | - | 591 | -0.3% | 696 | -0.4% | 0 s |
+| 4 | *Smite* | community simulator | - | 218 | -63.3% | 260 | -62.8% | 1 s |
+| 5 | *Smite 31/17/3* | community simulator | - | 218 | -63.3% | 260 | -62.8% | 1 s |
 
 **smite-dps**
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`smite-discipline-raid`](builds/smite-discipline-raid.md) | ours: hand draft | 31/17/3 | 350 | +0.0% | 579 | +0.0% | 6 s |
-| 2 | *Smite* | community simulator | - | 346 | -1.1% | 575 | -0.6% | 8 s |
-| 3 | *Smite 31/17/3* | community simulator | - | 346 | -1.1% | 575 | -0.6% | 8 s |
-| 4 | [`smite-open-raid`](builds/smite-open-raid.md) | ours: derived (open search) | 21/23/7 | 335 | -4.4% | 578 | -0.2% | 12 s |
+| 1 | [`smite-discipline-raid`](builds/smite-discipline-raid.md) | ours: hand draft | 31/17/3 | 363 | +0.0% | 597 | -0.0% | 5 s |
+| 2 | *Smite* | community simulator | - | 360 | -0.9% | 593 | -0.6% | 7 s |
+| 3 | *Smite 31/17/3* | community simulator | - | 360 | -0.9% | 593 | -0.6% | 7 s |
+| 4 | [`smite-open-raid`](builds/smite-open-raid.md) | ours: derived (open search) | 21/23/7 | 348 | -4.3% | 597 | +0.0% | 10 s |
 
 ## DPS by gear tier
 
@@ -61,7 +61,7 @@ Pre-BiS and phase-1 BiS DPS of the class's damage specs, each in its own gear, t
 
 | Spec | Pre-BiS raid | Pre-BiS dummy | BiS raid | BiS dummy | Rotation (entry) | Search result |
 |---|---|---|---|---|---|---|
-| Shadow | 685 | 581 | 702 | 597 | shadow-dps | confirms opt-shadow-dps-raid-dps (-0.00% in a full raid) |
+| Shadow | 681 | 578 | 702 | 597 | shadow-dps | confirms opt-shadow-dps-raid-dps (-0.01% in a full raid) |
 | Smite | 603 | 368 | 632 | 386 | smite-dps | confirms smite-open-raid (+0.06% in a full raid) |
 
 ## New spells and builds
@@ -80,15 +80,15 @@ The spells new in Forever, what the simulators measured them doing, and the buil
 | Divine Grace | Holy | 58 | 10 min | Instantly heals a friendly target below 50% Health for 1,285 to 1,513 and removes Weakened Soul from that target. | not cast by any raced build | - | not cast | Healing (Human). |
 | Prayer of Mending | Holy | 60 | 10 sec | Places a spell on the target that heals them for 413 the next time they take damage or receive non-periodic healing. | not cast by any raced build | - | not cast | Healing (the healer lab's priest heals with it). |
 | Dark Sacrifice | Shadow | 60 | 10 min | Cannibalize 1,600 of your own Health over 15 sec to gain 1,600 Mana, plus your Spirit. | no damage of its own, 0.3 casts/min: [`opt-shadow-dps-raid-dps`](builds/opt-shadow-dps-raid-dps.md) (shadow-dps) | shadow-dps (raid): insert at the end: cast Dark Sacrifice (+0.3%); smite-dps (raid): insert before the filler: cast Dark Sacrifice (+0.3%) | not cast | Health for mana (Undead); a stub in the simulator. |
-| Shadow Word: Death | Shadow | 56 | 15 sec | A word of dark binding that inflicts 444 to 472 Shadow damage to the target. | 10% of the damage, 3.7 casts/min: [`opt-shadow-dps-raid-dps`](builds/opt-shadow-dps-raid-dps.md) (shadow-dps) | shadow-dps (training dummy): always rank 2 instead of rank 4: cast Shadow Word: Death (+1.7%); shadow-dps (training dummy): insert in the middle: cast Shadow Word: Death (+1.1%); smite-dps (training dummy): insert in the middle: if execute phase (E20): cast Shadow Word: Death (+1.0%) | 17% of the damage, 0.9 casts a kill: `opt-shadow-dps-leveling-st` at 60 (shadow-dps) | A new Shadow nuke (15 s cooldown); the simulator's Shadow rotation casts it. |
+| Shadow Word: Death | Shadow | 56 | 15 sec | A word of dark binding that inflicts 444 to 472 Shadow damage to the target. | 10% of the damage, 3.8 casts/min: [`opt-shadow-dps-raid-dps`](builds/opt-shadow-dps-raid-dps.md) (shadow-dps) | shadow-dps (training dummy): always rank 2 instead of rank 4: cast Shadow Word: Death (+1.7%); shadow-dps (training dummy): insert in the middle: cast Shadow Word: Death (+1.1%); smite-dps (training dummy): insert in the middle: if execute phase (E20): cast Shadow Word: Death (+1.0%) | 17% of the damage, 0.9 casts a kill: `opt-shadow-dps-leveling-st` at 60 (shadow-dps) | A new Shadow nuke (15 s cooldown); the simulator's Shadow rotation casts it. |
 
 ### Builds searched around them
 
 | Idea | Build | Split | Dummy DPS | Raid DPS | Against the class's best | Talent search | Leveling |
 |---|---|---|---|---|---|---|---|
-| Penance and Smite: a Discipline/Holy damage build from the simulator's Smite preset | [`smite-discipline-raid`](builds/smite-discipline-raid.md) | 31/17/3 | 350 | 579 | -40.7% on the dummy; -16.8% in a raid | from `sim preset: Smite 31/17/3`, 1 move | - |
+| Penance and Smite: a Discipline/Holy damage build from the simulator's Smite preset | [`smite-discipline-raid`](builds/smite-discipline-raid.md) | 31/17/3 | 363 | 597 | -38.8% on the dummy; -14.6% in a raid | from `sim preset: Smite 31/17/3`, 1 move | - |
 
-The class's best raid DPS build on the training dummy: [`opt-shadow-dps-raid-dps`](builds/opt-shadow-dps-raid-dps.md) (shadow-dps), 591 DPS; in a raid: [`opt-shadow-dps-raid-dps`](builds/opt-shadow-dps-raid-dps.md) (shadow-dps), 696 DPS.
+The class's best raid DPS build on the training dummy: [`opt-shadow-dps-raid-dps`](builds/opt-shadow-dps-raid-dps.md) (shadow-dps), 593 DPS; in a raid: [`opt-shadow-dps-raid-dps`](builds/opt-shadow-dps-raid-dps.md) (shadow-dps), 699 DPS.
 
 ## Raid sim (community simulator, level 60)
 
@@ -96,15 +96,15 @@ The class's best raid DPS build on the training dummy: [`opt-shadow-dps-raid-dps
 
 | Spec model | Setting | Build | Split | DPS | vs best | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `shadow-dps` | dummy | `opt-shadow-dps-raid-dps` | 18/0/33 | 591 | +0.0% | 0 | +352% |
-| `shadow-dps` | dummy | sim preset: Shadow | - | 589 | -0.3% | 0 | - |
-| `shadow-dps` | dummy | sim preset: Shadow 15/0/36 | - | 589 | -0.3% | 0 | - |
-| `shadow-dps` | dummy | sim preset: Smite | - | 217 | -63.3% | 1 | - |
-| `shadow-dps` | dummy | sim preset: Smite 31/17/3 | - | 217 | -63.3% | 1 | - |
-| `smite-dps` | dummy | `smite-discipline-raid` | 31/17/3 | 350 | +0.0% | 6 | - |
-| `smite-dps` | dummy | sim preset: Smite | - | 346 | -1.1% | 8 | - |
-| `smite-dps` | dummy | sim preset: Smite 31/17/3 | - | 346 | -1.1% | 8 | - |
-| `smite-dps` | dummy | `smite-open-raid` | 21/23/7 | 335 | -4.4% | 12 | - |
+| `shadow-dps` | dummy | `opt-shadow-dps-raid-dps` | 18/0/33 | 593 | +0.0% | 0 | +352% |
+| `shadow-dps` | dummy | sim preset: Shadow | - | 591 | -0.3% | 0 | - |
+| `shadow-dps` | dummy | sim preset: Shadow 15/0/36 | - | 591 | -0.3% | 0 | - |
+| `shadow-dps` | dummy | sim preset: Smite | - | 218 | -63.3% | 1 | - |
+| `shadow-dps` | dummy | sim preset: Smite 31/17/3 | - | 218 | -63.3% | 1 | - |
+| `smite-dps` | dummy | `smite-discipline-raid` | 31/17/3 | 363 | +0.0% | 5 | - |
+| `smite-dps` | dummy | sim preset: Smite | - | 360 | -0.9% | 7 | - |
+| `smite-dps` | dummy | sim preset: Smite 31/17/3 | - | 360 | -0.9% | 7 | - |
+| `smite-dps` | dummy | `smite-open-raid` | 21/23/7 | 348 | -4.3% | 10 | - |
 
 Scorer = the stats model's own score of the allocation for its raid profile (relative to a talentless character; comparable within a spec model only). Tanks: DPS with the tank flag set (threat and mitigation are in the report JSON). Healers are not simulated (the simulator has no healing rotations for them).
 
@@ -118,16 +118,16 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 
 | Spec model | Build | Split | Dummy | Dummy 60 | Raid | Maximum | Max 60 s |
 |---|---|---|---|---|---|---|---|
-| `shadow-dps` | `opt-shadow-dps-raid-dps` | 18/0/33 | 591 | 643 | 696 | 696 | 672 |
-| `shadow-dps` | `opt-shadow-dps-parse` | 18/0/33 | 591 | 643 | 696 | 696 | 672 |
-| `shadow-dps` | sim preset: Shadow | - | 589 | 641 | 693 | 693 | 669 |
-| `shadow-dps` | sim preset: Shadow 15/0/36 | - | 589 | 641 | 693 | 693 | 669 |
-| `shadow-dps` | sim preset: Smite | - | 217 | 253 | 260 | 260 | 260 |
-| `shadow-dps` | sim preset: Smite 31/17/3 | - | 217 | 253 | 260 | 260 | 260 |
-| `smite-dps` | `smite-discipline-raid` | 31/17/3 | 350 | 382 | 579 | 579 | 619 |
-| `smite-dps` | sim preset: Smite | - | 346 | 382 | 575 | 575 | 615 |
-| `smite-dps` | sim preset: Smite 31/17/3 | - | 346 | 382 | 575 | 575 | 615 |
-| `smite-dps` | `smite-open-raid` | 21/23/7 | 335 | 365 | 578 | 578 | 601 |
+| `shadow-dps` | `opt-shadow-dps-raid-dps` | 18/0/33 | 593 | 650 | 699 | 699 | 674 |
+| `shadow-dps` | `opt-shadow-dps-parse` | 18/0/33 | 593 | 650 | 699 | 699 | 674 |
+| `shadow-dps` | sim preset: Shadow | - | 591 | 648 | 696 | 696 | 671 |
+| `shadow-dps` | sim preset: Shadow 15/0/36 | - | 591 | 647 | 696 | 696 | 671 |
+| `shadow-dps` | sim preset: Smite | - | 218 | 254 | 260 | 260 | 261 |
+| `shadow-dps` | sim preset: Smite 31/17/3 | - | 218 | 254 | 260 | 260 | 261 |
+| `smite-dps` | `smite-discipline-raid` | 31/17/3 | 363 | 395 | 597 | 597 | 637 |
+| `smite-dps` | sim preset: Smite | - | 360 | 394 | 593 | 593 | 633 |
+| `smite-dps` | sim preset: Smite 31/17/3 | - | 360 | 394 | 593 | 593 | 633 |
+| `smite-dps` | `smite-open-raid` | 21/23/7 | 348 | 377 | 597 | 597 | 618 |
 
 ## Healer lab (Monte Carlo raid-healing model)
 
@@ -173,3 +173,19 @@ Model findings (generated from the optimizer builds; scores are within each spec
 - **Raid DPS, Shadow:** 18/0/33; biggest talents by score lost when removed: Mind Flay (188.8), Shadowform (166.6), Shadow Weaving (35.5), Darkness (35.5), Improved Mind Flay (34.8); the hand draft `leveling-shadow` is 18/0/33.
 
 Beta hypotheses: every build's unverified claims are its `open_questions`, collected in [`_reference/launch-checklist.md`](../../../_reference/launch-checklist.md); level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).
+
+## Report index
+
+Reports under this folder that no other page links to (generated):
+
+- [heallab/deep-optimization-discipline.md](heallab/deep-optimization-discipline.md): Priest Discipline: deep optimisation in the healer lab (generated)
+- [heallab/deep-optimization-holy.md](heallab/deep-optimization-holy.md): Priest Holy: deep optimisation in the healer lab (generated)
+- [heallab/gear.md](heallab/gear.md): Healer gear — priest
+- [heallab/holy-heal.md](heallab/holy-heal.md): Healer lab — priest holy-heal
+- [optimizer/holy-heal-raid-heal.md](optimizer/holy-heal-raid-heal.md): priest / forever / spec holy-heal / profile raid-heal
+- [optimizer/shadow-dps-parse.md](optimizer/shadow-dps-parse.md): priest / forever / spec shadow-dps / profile parse
+- [optimizer/shadow-dps-raid-dps.md](optimizer/shadow-dps-raid-dps.md): priest / forever / spec shadow-dps / profile raid-dps
+- [raidsim/shadow-dps-environments.md](raidsim/shadow-dps-environments.md): DPS by environment — priest shadow-dps
+- [raidsim/shadow-dps.md](raidsim/shadow-dps.md): Raid sim — priest shadow-dps
+- [raidsim/smite-dps-environments.md](raidsim/smite-dps-environments.md): DPS by environment — priest smite-dps
+- [raidsim/smite-dps.md](raidsim/smite-dps.md): Raid sim — priest smite-dps

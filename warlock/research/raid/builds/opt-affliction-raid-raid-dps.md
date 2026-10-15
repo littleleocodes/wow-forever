@@ -117,6 +117,7 @@ Damage by ability:
 ## Notes
 
 - Report: warlock/research/talents/forever/optimizer/affliction-raid-raid-dps.md
+- 2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Affliction: its full-raid winner is +0.23% against it, under the 0.5% bar for a new build.
 
 ## Open questions (verify in the live game)
 

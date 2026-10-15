@@ -21,17 +21,17 @@ Played by the page builds of [Shockadin](../../leveling/shockadin.md) ([`shockad
 
 The priority in the player page's words:
 
-Before the fight: **Blessing of Wisdom** and **Devotion Aura** up, a two-handed weapon. **Seal of Righteousness** before each pull.
+Before the fight: **Blessing of Wisdom** and **Devotion Aura** up, a two-handed weapon. **Seal of Righteousness** before each pull (**Seal of Command** instead if your build takes it).
 
 1. **Hammer of Justice** a mob that casts spells.
 2. Once you have **Holy Shock**: cast it at the mob as it walks in while your mana is above 70%, after **Divine Favor** for a sure critical hit while you are healthy.
-3. Keep **Seal of Righteousness** up.
+3. Keep your seal up.
 4. **Judgement** and **Holy Strike** whenever ready.
 5. Low on health (below 40%, with the mob above a fifth): **Holy Shock** on yourself (after **Divine Favor** if it is ready), **Divine Protection** below 30%, **Hammer of Justice**, then **Holy Light**; **Flash of Light** below a quarter; **Lay on Hands** below 15%.
 
 Between fights: Heal yourself back to 80% with **Holy Light** or **Flash of Light**, drink below a quarter of your mana.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-30, on top of the priority below): never cast Hammer of Wrath. Together +1.3% time per kill saved for `/home/user/wow-forever/paladin/research/leveling/fightlab/candidates/derived-holy-scorer.json` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-15, on top of the priority below): never cast Hammer of Wrath. Together +3.0% time per kill saved for `shockadin-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 Casts per kill of [`shockadin-open-leveling`](builds/shockadin-open-leveling.md), [`holy-leveling`](builds/holy-leveling.md): not recorded (their times per kill come from the race records of the searches that found them, which keep times only; the table above has them).
 
@@ -54,7 +54,7 @@ Before the fight: **Blessing of Might** and **Devotion Aura** up, a two-handed w
 
 Between fights: Heal yourself back to 80% with **Holy Light** or **Flash of Light**, drink below 15% of your mana.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): never cast Consecration; drink below 15% mana. Together +5.1% time per kill saved for `leveling-retribution` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-15, on top of the priority below): never cast Consecration; drink below 15% mana. Together +12.4% time per kill saved for `retribution-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/ret-dps.md](fightlab/ret-dps.md).
 
@@ -106,7 +106,7 @@ Casts per kill of [`protection-open-leveling`](builds/protection-open-leveling.m
 
 Pulls of several mobs: area attacks when enough mobs stand in reach, then damage over time spread over the pull, else the single-target priority below. Single-target leveling fights against normal mobs of your level with a two-hander: Blessing of Might and Devotion Aura up, a Seal recast before each pull (Seal of Command once talented, Seal of Righteousness before), the mob walks in (paladins have no charge), Judgement and Holy Strike on cooldown, Consecration while mana allows, Hammer of Justice into a doubled Seal of Command judgement or when hurt, Hammer of Wrath under 20%; Divine Protection and a Holy Light when low, Lay on Hands in an emergency. Between fights: 2 s loot, 6 s travel, Holy Light or Flash of Light back to 80% health, water below 35% mana; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): never cast Consecration; drink below 15% mana. Together +5.1% time per kill saved for `leveling-retribution` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-15, on top of the priority below): never cast Consecration; drink below 15% mana. Together +12.4% time per kill saved for `retribution-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/ret-dps-aoe.md](fightlab/ret-dps-aoe.md).
 
@@ -114,43 +114,43 @@ Report: [fightlab/ret-dps-aoe.md](fightlab/ret-dps-aoe.md).
 
 | Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|
-| Melee | 5.5 | 7.5 | 7.4 | 8.5 | 53% |
-| Seal of Command | 3.2 | 4.3 | 3.9 | 3.9 | 10% |
-| Holy Strike | 1.6 | 2.1 | 2.0 | 2.4 | 18% |
-| Judgement | 1.3 | 1.3 | 1.3 | 1.4 | 12% |
-| Hammer of Justice | 0.4 | 0.5 | 0.5 | 0.6 | 0% |
-| Hammer of Wrath | 0.0 | 0.0 | 0.6 | 0.5 | 7% |
-| Flash of Light | 0.1 | 0.3 | 0.3 | 0.4 | 0% |
+| Melee | 4.6 | 5.7 | 5.5 | 6.6 | 38% |
+| Judgement | 1.9 | 2.3 | 2.1 | 2.4 | 18% |
+| Holy Strike | 1.6 | 1.9 | 1.8 | 2.2 | 16% |
+| Seal of Command | 0.7 | 0.8 | 0.7 | 0.8 | 17% |
+| Hammer of Wrath | 0.0 | 0.0 | 0.8 | 0.8 | 11% |
+| Hammer of Justice | 0.3 | 0.4 | 0.4 | 0.5 | 0% |
+| Flash of Light | 0.1 | 0.2 | 0.2 | 0.4 | 0% |
+| Holy Light | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
 | Divine Protection | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
-| Holy Light | 0.0 | 0.1 | 0.1 | 0.1 | 0% |
-| Lay on Hands | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-
-### `cand-aoe-r3`
-
-| Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
-|---|---|---|---|---|---|
-| Melee | 5.6 | 7.7 | 7.5 | 8.6 | 53% |
-| Seal of Command | 3.2 | 3.6 | 3.0 | 3.8 | 10% |
-| Holy Strike | 1.6 | 2.3 | 2.2 | 2.4 | 18% |
-| Judgement | 1.3 | 1.3 | 1.3 | 1.4 | 12% |
-| Hammer of Justice | 0.4 | 0.5 | 0.5 | 0.6 | 0% |
-| Hammer of Wrath | 0.0 | 0.0 | 0.5 | 0.4 | 7% |
-| Flash of Light | 0.1 | 0.3 | 0.2 | 0.3 | 0% |
-| Divine Protection | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
-| Holy Light | 0.0 | 0.0 | 0.0 | 0.1 | 0% |
 | Lay on Hands | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ### `cand-aoe-r4`
 
 | Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|
-| Melee | 5.5 | 7.5 | 7.4 | 8.5 | 53% |
-| Seal of Command | 3.2 | 4.3 | 3.9 | 3.9 | 10% |
-| Holy Strike | 1.6 | 2.1 | 2.0 | 2.4 | 18% |
-| Judgement | 1.3 | 1.3 | 1.3 | 1.4 | 12% |
-| Hammer of Justice | 0.4 | 0.5 | 0.5 | 0.6 | 0% |
-| Hammer of Wrath | 0.0 | 0.0 | 0.6 | 0.5 | 7% |
-| Flash of Light | 0.1 | 0.3 | 0.3 | 0.4 | 0% |
-| Divine Protection | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
+| Melee | 4.5 | 5.6 | 5.5 | 6.5 | 39% |
+| Judgement | 1.9 | 2.3 | 2.1 | 2.3 | 17% |
+| Holy Strike | 1.5 | 1.9 | 1.8 | 2.2 | 16% |
+| Seal of Command | 0.7 | 0.7 | 0.7 | 0.8 | 17% |
+| Hammer of Wrath | 0.0 | 0.0 | 0.8 | 0.8 | 11% |
+| Hammer of Justice | 0.3 | 0.4 | 0.4 | 0.4 | 0% |
+| Flash of Light | 0.1 | 0.2 | 0.2 | 0.4 | 0% |
 | Holy Light | 0.0 | 0.1 | 0.1 | 0.1 | 0% |
+| Divine Protection | 0.0 | 0.1 | 0.1 | 0.1 | 0% |
+| Lay on Hands | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+
+### `cand-aoe-r5`
+
+| Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
+|---|---|---|---|---|---|
+| Melee | 4.6 | 5.7 | 5.5 | 6.6 | 38% |
+| Judgement | 1.9 | 2.3 | 2.1 | 2.4 | 18% |
+| Holy Strike | 1.6 | 1.9 | 1.8 | 2.2 | 16% |
+| Seal of Command | 0.7 | 0.8 | 0.7 | 0.8 | 17% |
+| Hammer of Wrath | 0.0 | 0.0 | 0.8 | 0.8 | 11% |
+| Hammer of Justice | 0.3 | 0.4 | 0.4 | 0.5 | 0% |
+| Flash of Light | 0.1 | 0.2 | 0.2 | 0.4 | 0% |
+| Holy Light | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
+| Divine Protection | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
 | Lay on Hands | 0.0 | 0.0 | 0.0 | 0.0 | 0% |

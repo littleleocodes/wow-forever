@@ -96,6 +96,14 @@ SUSPECT_ITEMS = {
 }
 
 
+# Items the database lists no source for but that are known to be on sale in phase 1 (2026-10-15, from the MythicSim comparison:
+# _reference/mythicsim-comparison.md): treated as sourced in both tiers, and trinkets among them join every class's trinket candidates.
+VENDOR_ITEMS = {
+    272437: "Adaptive Combat Assistant (trinket, +20 Expertise; new in Forever): \"This item can be purchased in Stranglethorn Vale\" "
+            "(wowhead.com/forever/item=272437, 2026-10-15); its on-use (Damage Sigmoid) is not implemented in the simulator",
+}
+
+
 def in_pool(it, zones):
     if it.get("quality", 0) >= 5 or it.get("quality", 0) < 2 or later_craft(it) or it.get("id") in SUSPECT_ITEMS:
         return False
@@ -107,6 +115,8 @@ def in_pool(it, zones):
     npcs = {s.get("drop", {}).get("npcId") for s in it.get("sources", []) if s.get("drop")}
     if npcs and npcs <= WORLD_BOSSES | EVENT_NPCS:   # Classic phase 2 and later (Azuregos, Kazzak, the Dragons of Nightmare; the Scourge Invasion)
         return False
+    if it["id"] in VENDOR_ITEMS:
+        return True
     if not it.get("sources"):   # no source listed (custom, later-phase quest or PvP rewards): only items a phase-1 community preset uses
         return it["id"] in VETTED and (so.get("ilvl", 0) <= SOURCELESS_MAX_ILVL or it.get("name") in PHASE1_QUEST)
     return True
@@ -201,7 +211,7 @@ def optimize(gear, members, repo, db, zones, a):
     seen = [x.get("id") for p in presets for x in json.load(open(p, encoding="utf-8")).get("items", []) if x and x.get("id")]
     wtypes = {db[i].get("weaponType") for i in seen if i in db and db[i].get("type") == 13}
     rtypes = {db[i].get("rangedWeaponType") for i in seen if i in db and db[i].get("type") == 14}
-    trinkets = sorted({i for i in seen if i in db and db[i].get("type") == 12 and in_pool(db[i], zones)})
+    trinkets = sorted({i for i in [*seen, *VENDOR_ITEMS] if i in db and db[i].get("type") == 12 and in_pool(db[i], zones)})   # + known vendor trinkets (2026-10-15)
 
     def fits(it, slot, curit):
         if it.get("type") != SLOT_TYPE[slot] or not in_pool(it, zones):
@@ -374,8 +384,8 @@ def main():
         spec_dir = gp.parent.parent.name if gp.parent.name == "gear_sets" else "project"
         name = gp.name if gp.name.endswith(".p1opt.gear.json") else f"{cls}-{spec_dir}-{gp.name.split('.')[0]}.p1opt.gear.json"   # re-runs: in place
         items = [dict(x) for x in r["items"]]
-        tmpl = FE.TEMPLATES.get(FE.role(name) or "")
-        if tmpl:   # 2026-10-15: a record from before fill_enchants (2026-10-09) wrote sets without enchants (Retribution lost all of them)
+        tmpl = FE.role(name)
+        if tmpl in FE.TEMPLATES:   # 2026-10-15: a record from before fill_enchants (2026-10-09) wrote sets without enchants (Retribution lost all of them)
             FE.fill(items, tmpl)
         (SETS / name).write_text(json.dumps({"items": items}, indent=1) + "\n", encoding="utf-8")
         new = f"_reference/data/raidsim/gear_sets/forever/{name}"

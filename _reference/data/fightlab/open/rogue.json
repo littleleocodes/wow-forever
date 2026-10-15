@@ -10928,7 +10928,7 @@
     ],
     "why": null,
     "spec": "Hybrid Assassination/Combat",
-    "date": "2026-10-10"
+    "date": "2026-10-15"
    }
   },
   "combat-swords-raid": {
@@ -22154,7 +22154,7 @@
     "written": [],
     "why": "the combat-daggers-raid rotation is Daggers (split)'s own leveling rotation: its winner is the one written",
     "spec": "Hybrid Assassination/Combat",
-    "date": "2026-10-10"
+    "date": "2026-10-15"
    }
   },
   "subtlety-leveling": {
@@ -22782,33 +22782,33 @@
      }
     },
     "open winner": {
-     "weighted": 23.7,
+     "weighted": 23.58,
      "levels": {
-      "20": 17.45,
-      "30": 20.93,
-      "40": 25.39,
-      "50": 25.35,
-      "60": 24.67
+      "20": 17.31,
+      "30": 20.75,
+      "40": 25.28,
+      "50": 25.21,
+      "60": 24.6
      }
     },
     "finalist 13/17/21 (stats model order)": {
-     "weighted": 24.73,
+     "weighted": 24.61,
      "levels": {
-      "20": 18.12,
-      "30": 22.88,
-      "40": 28.26,
-      "50": 25.72,
-      "60": 24.67
+      "20": 18.02,
+      "30": 22.74,
+      "40": 28.09,
+      "50": 25.59,
+      "60": 24.6
      }
     },
     "finalist 13/17/21 (own tree last order)": {
-     "weighted": 24.92,
+     "weighted": 24.79,
      "levels": {
-      "20": 18.12,
-      "30": 22.88,
-      "40": 28.29,
-      "50": 26.44,
-      "60": 24.67
+      "20": 18.02,
+      "30": 22.74,
+      "40": 28.11,
+      "50": 26.31,
+      "60": 24.6
      }
     },
     "finalist 13/17/21 (own tree first order, before the order polish)": {
@@ -22819,6 +22819,16 @@
       "40": 25.39,
       "50": 25.35,
       "60": 24.67
+     }
+    },
+    "finalist 13/17/21 (own tree first order)": {
+     "weighted": 23.69,
+     "levels": {
+      "20": 17.31,
+      "30": 21.45,
+      "40": 25.28,
+      "50": 25.21,
+      "60": 24.6
      }
     }
    },
@@ -23003,30 +23013,22 @@
    "order_label": "polished from the own tree first order",
    "orders_raced": "13/17/21",
    "order_polish": {
-    "date": "2026-10-10",
+    "date": "2026-10-15",
     "levels": [
      30,
      40,
      50
     ],
-    "from": "own tree first",
-    "steps": [
-     {
-      "round": 1,
-      "change": "Remorseless Attacks: 31-32 -> 29-30; Improved Distract: 29 -> 31; Hemorrhage: 30 -> 32",
-      "seed1": -0.0088,
-      "seed2": -0.0089,
-      "seconds_30_50": 24.0
-     }
-    ],
-    "minutes": 0.1,
-    "changed": true
+    "from": "polished from the own tree first order",
+    "steps": [],
+    "minutes": 0.0,
+    "changed": false
    },
    "split": "13/17/21",
    "family": "Hybrid Combat/Subtlety",
    "link": "https://talentsforever.com/rogue/60/0253201-305033010011-3023003311013001-6",
    "ours_best": "subtlety-leveling",
-   "gain_vs_ours": 0.0886,
+   "gain_vs_ours": 0.0941,
    "values": {
     "Setup": {
      "ranks": 3,
@@ -33145,7 +33147,7 @@
     ],
     "why": null,
     "spec": "Hybrid Combat/Subtlety",
-    "date": "2026-10-10"
+    "date": "2026-10-15"
    }
   }
  },

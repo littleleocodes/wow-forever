@@ -115,6 +115,7 @@ Damage by ability:
 - Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.
 - Pre-BiS gear: 2/31/18 at 800.6 DPS in a full raid (the same talents).
 - Alone on the training dummy (only your own buffs) the search's best is 2/31/18 at 688.7 DPS.
+- 2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Demonology: its full-raid winner is +0.01% against it, under the 0.5% bar for a new build.
 
 ## Open questions (verify in the live game)
 

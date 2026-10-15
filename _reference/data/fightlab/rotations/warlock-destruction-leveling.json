@@ -1,22 +1,12 @@
 {
  "veto": {
   "Immolate": {
-   "min_mana": 0.5
-  },
-  "Fear": {
-   "off": true
-  },
-  "Corruption": {
-   "min_hp": 0.35
-  },
-  "Drain Life": {
-   "off": true
+   "min_mana": 0.3
   }
  },
- "eat_below": 0.4,
  "class": "warlock",
  "spec": "destruction-leveling",
- "build": "/home/user/wow-forever/warlock/research/leveling/fightlab/candidates/derived-destruction-scorer.json",
+ "build": "shadow-bolt-hybrid-open-leveling",
  "levels": [
   20,
   30,
@@ -24,96 +14,52 @@
   50,
   60
  ],
- "date": "2026-09-30",
+ "date": "2026-10-15",
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "Immolate only above 50% mana",
+   "change": "Immolate only above 30% mana",
    "rule": [
     "min_mana",
     "Immolate",
-    0.5
+    0.3
    ],
-   "gain_seed1": 0.02694548196188218,
-   "gain_seed2": 0.024104605321096373
-  },
-  {
-   "round": 2,
-   "change": "never cast Fear",
-   "rule": [
-    "off",
-    "Fear",
-    true
-   ],
-   "gain_seed1": 0.010719761391724036,
-   "gain_seed2": 0.012474528052020317
-  },
-  {
-   "round": 3,
-   "change": "Corruption only while the mob has more than 35% health",
-   "rule": [
-    "min_hp",
-    "Corruption",
-    0.35
-   ],
-   "gain_seed1": 0.006430482261183257,
-   "gain_seed2": 0.007004420863451655
-  },
-  {
-   "round": 4,
-   "change": "never cast Drain Life",
-   "rule": [
-    "off",
-    "Drain Life",
-    true
-   ],
-   "gain_seed1": 0.00807904103181023,
-   "gain_seed2": 0.010006443450375602
-  },
-  {
-   "round": 5,
-   "change": "eat below 40% health",
-   "rule": [
-    "eat_below",
-    null,
-    0.4
-   ],
-   "gain_seed1": 0.00796453057684221,
-   "gain_seed2": 0.00663058316965337
+   "gain_seed1": 0.030898459497577746,
+   "gain_seed2": 0.028415143779977226
   }
  ],
- "weighted_before": 41.51234194974319,
- "weighted_after": 39.07140127985348,
+ "weighted_before": 36.922722086715126,
+ "weighted_after": 35.92733789108407,
  "per_level": {
   "20": {
-   "before": 25.7156999999962,
-   "after": 25.680566666661285,
+   "before": 24.569333333289315,
+   "after": 24.569333333289315,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 32.99477543619692,
-   "after": 32.330633333568635,
+   "before": 30.06755102417408,
+   "after": 30.06755102417408,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 41.83299139805128,
-   "after": 39.421755122395886,
+   "before": 39.14876983151073,
+   "after": 37.831757637761555,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 44.77850921047608,
-   "after": 42.24230322934296,
+   "before": 40.38294791588512,
+   "after": 38.96323390532915,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 48.10110017361583,
-   "after": 44.02940927112383,
+   "before": 40.10055051495552,
+   "after": 38.8437063341481,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

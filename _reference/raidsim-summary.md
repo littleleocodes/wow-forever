@@ -17,8 +17,8 @@
 | mage | `frostfire-raid` | `frostfire-raid` | 472 | - | - | - | - |
 | paladin | `prot-tank` | `prot-tank` | 456 | P4 Prot | 395 | `opt-prot-tank-raid-tank` | 408 |
 | paladin | `ret-dps` | `opt-ret-dps-raid-dps` | 533 | P4/P5 Ret | 514 | `opt-ret-dps-raid-dps` | 533 |
-| priest | `shadow-dps` | `opt-shadow-dps-raid-dps` | 591 | Shadow | 589 | `opt-shadow-dps-raid-dps` | 591 |
-| priest | `smite-dps` | `smite-discipline-raid` | 350 | - | - | - | - |
+| priest | `shadow-dps` | `opt-shadow-dps-raid-dps` | 593 | Shadow | 591 | `opt-shadow-dps-raid-dps` | 593 |
+| priest | `smite-dps` | `smite-discipline-raid` | 363 | - | - | - | - |
 | rogue | `assassination-raid` | `assassination-seal-fate-raid` | 422 | - | - | - | - |
 | rogue | `combat-daggers-raid` | `opt-combat-daggers-raid-raid-dps` | 424 | Combat Dual-Wield 15/33/3 | 399 | `opt-combat-daggers-raid-raid-dps` | 424 |
 | rogue | `combat-swords-raid` | `combat-swords-raid` | 409 | Improved Expose Armor (SS) | 409 | `opt-combat-swords-raid-raid-dps` | 391 |
@@ -34,7 +34,7 @@
 | warrior | `arms-2h-raid` | `opt-arms-2h-raid-raid-dps` | 432 | DPS | 399 | `opt-arms-2h-raid-raid-dps` | 432 |
 | warrior | `arms-battle-raid` | `arms-community-parse` | 481 | - | - | - | - |
 | warrior | `fury-dw-raid` | `fury-open-raid` | 516 | DPS | 483 | `opt-fury-dw-raid-raid-dps` | 496 |
-| warrior | `prot-tank` | `opt-prot-tank-raid-tank` | 535 | Protection | 487 | `opt-prot-tank-raid-tank` | 535 |
+| warrior | `prot-tank` | `opt-prot-tank-raid-tank` | 512 | Protection | 466 | `opt-prot-tank-raid-tank` | 512 |
 
 ## DPS by environment: dummy, raid, maximum
 
@@ -47,8 +47,8 @@ The best of our builds per spec model on the boss-level training dummy with your
 | druid | Forever | `feral-cat-dps` | `feral-combat-open-raid` (9/33/9) | 388 | 423 | 694 | 694 | 714 | `opt-feral-cat-dps-parse` 590 | Feral Cat 9/35/7 688 |
 | druid | Classic | `balance-dps` | `balance-moonkin-raid` (35/0/16) | 224 | - | 567 | 740 | 746 | - | Balance 741 |
 | druid | Classic | `feral-cat-dps` | `feral-cat-dps` (14/32/5) | 239 | - | 671 | 1563 | 1666 | - | Feral 1597 |
-| hunter | Forever | `bm-raid` | `beast-marks-ml-raid` (7/39/5) | 460 | 506 | 874 | 874 | 883 | - | Beast Mastery 35/16/0 787 |
-| hunter | Forever | `melee-dps` | `beast-survival-open-raid` (16/11/24) | 357 | 423 | 1051 | 1051 | 1072 | `survival-ml-parse` 993 | - |
+| hunter | Forever | `bm-raid` | `beast-marks-open-raid` (27/21/3) | 473 | 523 | 852 | 852 | 878 | - | Beast Mastery 35/16/0 787 |
+| hunter | Forever | `melee-dps` | `beast-survival-open-raid` (16/11/24) | 357 | 423 | 1004 | 1004 | 1023 | `survival-ml-parse` 949 | - |
 | hunter | Forever | `mm-lonewolf-raid` | `mm-lone-wolf-raid` (5/41/5) | 456 | 490 | 893 | 893 | 915 | `marksmanship-ml-parse` 852 | Marksmanship 689 |
 | hunter | Forever | `mm-raid` | `marksmanship-with-a-pet-open-raid` (7/39/5) | 451 | 493 | 879 | 879 | 906 | `opt-mm-raid-parse` 833 | Marksmanship 843 |
 | hunter | Classic | `mm-raid` | `bm-mm-raid` (20/31/0) | 405 | - | 1049 | 1085 | 1146 | - | Marksmanship 1087 |
@@ -61,12 +61,12 @@ The best of our builds per spec model on the boss-level training dummy with your
 | paladin | Forever | `prot-tank` | `prot-tank` (0/23/28) | 172 | 203 | 456 | 456 | 455 | - | P4 Prot 395 |
 | paladin | Forever | `ret-dps` | `retribution-ml-raid` (11/8/32) | 523 | 583 | 982 | 982 | 996 | `opt-ret-dps-parse` 979 | P4/P5 Ret 952 |
 | paladin | Classic | `ret-dps` | `ret-raid-dps` (11/0/40) | 213 | - | 661 | 661 | 671 | - | P4/P5 Ret 710 |
-| priest | Forever | `shadow-dps` | `opt-shadow-dps-raid-dps` (18/0/33) | 591 | 643 | 696 | 696 | 672 | `opt-shadow-dps-parse` 696 | Shadow 693 |
-| priest | Forever | `smite-dps` | `smite-discipline-raid` (31/17/3) | 350 | 382 | 579 | 579 | 619 | - | Smite 575 |
-| rogue | Forever | `assassination-raid` | `assassination-ml-raid` (30/19/2) | 410 | 476 | 707 | 717 | 763 | - | Mutilate 682 |
-| rogue | Forever | `combat-daggers-raid` | `combat-ml-raid` (16/33/2) | 406 | 471 | 735 | 745 | 832 | `opt-combat-daggers-raid-parse` 722 | Combat Dual-Wield 15/33/3 728 |
-| rogue | Forever | `combat-swords-raid` | `combat-swords-open-raid` (18/33/0) | 392 | 458 | 718 | 718 | 819 | `opt-combat-swords-raid-parse` 704 | Sinister Strike 711 |
-| rogue | Forever | `subtlety-raid` | `subtlety-open-raid` (20/0/31) | 374 | 425 | 676 | 676 | 748 | - | Subtlety Hemo 15/0/36 632 |
+| priest | Forever | `shadow-dps` | `opt-shadow-dps-raid-dps` (18/0/33) | 593 | 650 | 699 | 699 | 674 | `opt-shadow-dps-parse` 699 | Shadow 696 |
+| priest | Forever | `smite-dps` | `smite-open-raid` (21/23/7) | 348 | 377 | 597 | 597 | 618 | - | Smite 593 |
+| rogue | Forever | `assassination-raid` | `assassination-ml-raid` (30/19/2) | 410 | 476 | 672 | 679 | 728 | - | Mutilate 636 |
+| rogue | Forever | `combat-daggers-raid` | `combat-ml-raid` (16/33/2) | 406 | 471 | 695 | 704 | 792 | `opt-combat-daggers-raid-parse` 681 | Combat Dual-Wield 15/33/3 687 |
+| rogue | Forever | `combat-swords-raid` | `combat-swords-open-raid` (18/33/0) | 392 | 458 | 679 | 679 | 779 | `opt-combat-swords-raid-parse` 666 | Sinister Strike 675 |
+| rogue | Forever | `subtlety-raid` | `subtlety-open-raid` (20/0/31) | 374 | 425 | 643 | 643 | 714 | - | Subtlety Hemo 15/0/36 600 |
 | rogue | Classic | `combat-daggers-raid` | `combat-daggers-raid` (15/31/5) | 440 | - | 1259 | 1275 | 1367 | - | Backstab 1297 |
 | rogue | Classic | `combat-swords-raid` | `combat-swords-raid` (19/32/0) | 419 | - | 1267 | 1286 | 1395 | - | Sinister Strike 1292 |
 | shaman | Forever | `elemental-dps` | `elemental-raid-dps` (29/22/0) | 375 | 461 | 515 | 515 | 522 | `opt-elemental-dps-parse` 508 | Elemental 31/6/14 500 |
@@ -81,8 +81,8 @@ The best of our builds per spec model on the boss-level training dummy with your
 | warlock | Classic | `sb-raid` | `sm-ruin-raid` (30/0/21) | 599 | - | 1092 | 1105 | 1153 | - | - |
 | warrior | Forever | `arms-2h-raid` | `opt-arms-2h-raid-raid-dps` (20/31/0) | 432 | 484 | 881 | 881 | 927 | `opt-arms-2h-raid-parse` 881 | DPS 827 |
 | warrior | Forever | `arms-battle-raid` | `arms-community-parse` (37/14/0) | 481 | 561 | 964 | 964 | 960 | `arms-community-parse` 964 | Arms 39/12/0 962 |
-| warrior | Forever | `fury-dw-raid` | `fury-open-raid` (18/31/2) | 516 | 531 | 917 | 917 | 988 | `opt-fury-dw-raid-parse` 879 | DPS 874 |
-| warrior | Forever | `prot-tank` | `opt-prot-tank-raid-tank` (14/5/32) | 294 | 327 | 535 | 404 | 399 | - | Protection 369 |
+| warrior | Forever | `fury-dw-raid` | `fury-open-raid` (18/31/2) | 516 | 531 | 862 | 862 | 923 | `opt-fury-dw-raid-parse` 831 | DPS 821 |
+| warrior | Forever | `prot-tank` | `opt-prot-tank-raid-tank` (14/5/32) | 294 | 327 | 512 | 391 | 385 | - | Protection 357 |
 | warrior | Classic | `fury-dw-raid` | `fury-dw-raid` (17/34/0) | 527 | - | 1843 | 2163 | 2322 | - | DPS 2163 |
 
 ## Classic Era check (upstream wowsims/classic)

@@ -86,9 +86,9 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-level
 
 Single-target leveling fights against normal mobs of your level with a cat: the pet runs in and meets the mob halfway, Growls every 5 s and holds it until your threat passes 130% of its own. You shoot from 35 yd: Hunter's Mark, Serpent Sting, Summon Hawk or Arcane Shot, Multi-Shot / Aimed Shot on their shared cooldown, Auto Shot in between (the bow cannot fire inside 8 yd); Bestial Wrath, Intimidation and Rapid Fire on the pull when ready; Mend Pet when the pet drops below 35%; Feign Death, Wing Clip and Raptor Strike when a mob reaches you. Between fights: 2 s loot, 6 s travel, Mend Pet below 70% pet health, water below 35% mana, food below 65% health, a 10 s Revive Pet after a pet death; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): never cast Multi-Shot; never cast Arcane Shot; drink below 15% mana. Together +5.8% time per kill saved for `leveling-beast-mastery` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): never cast Arcane Shot; never cast Multi-Shot. Together +4.8% time per kill saved for `opt-mm-raid-leveling-st` (level-weighted, a third seed of 3000 fights per level).
 
-What this build casts per kill ([report](../fightlab/bm-leveling.md), all leveling builds: [leveling rotations](../rotation.md)):
+What this build casts per kill ([report](../fightlab/mm-raid.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|

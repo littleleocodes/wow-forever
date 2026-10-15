@@ -14328,7 +14328,7 @@
     ],
     "why": null,
     "spec": "Hybrid Affliction/Demonology",
-    "date": "2026-10-12"
+    "date": "2026-10-15"
    }
   },
   "demonology-leveling": {
@@ -14927,33 +14927,33 @@
      }
     },
     "open winner": {
-     "weighted": 32.94,
+     "weighted": 32.73,
      "levels": {
       "20": 24.81,
       "30": 28.12,
-      "40": 33.47,
-      "50": 35.95,
-      "60": 35.19
+      "40": 32.97,
+      "50": 35.94,
+      "60": 34.84
      }
     },
     "finalist 27/24/0 (stats model order)": {
-     "weighted": 34.81,
+     "weighted": 34.7,
      "levels": {
       "20": 24.83,
       "30": 31.62,
       "40": 37.09,
       "50": 38.43,
-      "60": 35.19
+      "60": 34.84
      }
     },
     "finalist 27/24/0 (own tree first order)": {
-     "weighted": 34.82,
+     "weighted": 34.71,
      "levels": {
       "20": 24.83,
       "30": 31.62,
       "40": 37.13,
       "50": 38.43,
-      "60": 35.19
+      "60": 34.84
      }
     }
    },
@@ -15120,7 +15120,7 @@
    "order_label": "own tree last",
    "orders_raced": "27/24/0",
    "order_polish": {
-    "date": "2026-10-12",
+    "date": "2026-10-15",
     "levels": [
      30,
      40,
@@ -15135,7 +15135,7 @@
    "family": "Hybrid Affliction/Demonology",
    "link": "https://talentsforever.com/warlock/60/2335002013500102-01051332011003013--6",
    "ours_best": "demonology-leveling",
-   "gain_vs_ours": 0.0616,
+   "gain_vs_ours": 0.0684,
    "values": {
     "Demonic Brand": {
      "ranks": 3,
@@ -28041,7 +28041,7 @@
     "written": [],
     "why": "the affliction-leveling rotation is Affliction-Demonology's own leveling rotation: its winner is the one written",
     "spec": "Hybrid Affliction/Demonology",
-    "date": "2026-10-12"
+    "date": "2026-10-15"
    }
   },
   "destruction-leveling": {
@@ -28585,33 +28585,33 @@
      }
     },
     "open winner": {
-     "weighted": 35.42,
+     "weighted": 35.93,
      "levels": {
-      "20": 24.55,
-      "30": 29.98,
-      "40": 37.12,
-      "50": 38.14,
-      "60": 38.35
+      "20": 24.57,
+      "30": 30.07,
+      "40": 37.83,
+      "50": 38.96,
+      "60": 38.84
      }
     },
     "finalist 29/10/12 (own tree first order)": {
-     "weighted": 35.82,
+     "weighted": 36.35,
      "levels": {
-      "20": 24.55,
-      "30": 31.07,
-      "40": 37.12,
-      "50": 39.11,
-      "60": 38.35
+      "20": 24.57,
+      "30": 31.3,
+      "40": 37.83,
+      "50": 39.93,
+      "60": 38.84
      }
     },
     "finalist 29/10/12 (own tree last order)": {
-     "weighted": 36.75,
+     "weighted": 37.21,
      "levels": {
-      "20": 24.76,
-      "30": 30.21,
-      "40": 39.17,
-      "50": 41.61,
-      "60": 38.35
+      "20": 24.75,
+      "30": 30.25,
+      "40": 39.99,
+      "50": 42.18,
+      "60": 38.84
      }
     },
     "finalist 29/10/12 (stats model order, before the order polish)": {
@@ -28622,6 +28622,16 @@
       "40": 37.12,
       "50": 39.11,
       "60": 38.35
+     }
+    },
+    "finalist 29/10/12 (stats model order)": {
+     "weighted": 36.35,
+     "levels": {
+      "20": 24.57,
+      "30": 31.3,
+      "40": 37.83,
+      "50": 39.93,
+      "60": 38.84
      }
     }
    },
@@ -28776,37 +28786,22 @@
    "order_label": "polished from the stats model order",
    "orders_raced": "29/10/12",
    "order_polish": {
-    "date": "2026-10-12",
+    "date": "2026-10-15",
     "levels": [
      30,
      40,
      50
     ],
-    "from": "stats model",
-    "steps": [
-     {
-      "round": 1,
-      "change": "Demonic Energies: 56-57 -> 49-50; Molten Skin: 49-50 -> 51-52; Aftermath: 51-52 -> 53-54 (+1 more)",
-      "seed1": -0.015,
-      "seed2": -0.0123,
-      "seconds_30_50": 35.67
-     },
-     {
-      "round": 2,
-      "change": "Malevolence: 26/28-29/31-32 -> 26/28-31; Improved Life Tap: 33-34 -> 32-33; Siphon Life: 30 -> 34",
-      "seed1": -0.0056,
-      "seed2": -0.0087,
-      "seconds_30_50": 35.36
-     }
-    ],
-    "minutes": 1.2,
-    "changed": true
+    "from": "polished from the stats model order",
+    "steps": [],
+    "minutes": 0.4,
+    "changed": false
    },
    "split": "29/10/12",
    "family": "Hybrid Affliction/Destruction",
    "link": "https://talentsforever.com/warlock/60/2344002013500104-00050302-014232-6",
    "ours_best": "destruction-leveling",
-   "gain_vs_ours": 0.0672,
+   "gain_vs_ours": 0.052,
    "values": {
     "Siphon Life": {
      "ranks": 1,
@@ -41098,7 +41093,7 @@
     ],
     "why": null,
     "spec": "Hybrid Affliction/Destruction",
-    "date": "2026-10-12"
+    "date": "2026-10-15"
    }
   }
  },

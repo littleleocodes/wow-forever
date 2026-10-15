@@ -51,6 +51,8 @@ Subtlety levels on its openers and on dodges: **Premeditation** and a stealth op
 - Below half health while the mob still has more than 30% of its health, press **Evasion**; if it is on cooldown, **Preparation** resets it, along with **Premeditation** and **Ghostly Strike**.
 - If a pull goes wrong, **Vanish** (90 seconds shorter with **Elusiveness**) gets you out; the fight lab does not model adds or escapes.
 
+*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

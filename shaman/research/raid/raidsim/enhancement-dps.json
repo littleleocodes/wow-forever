@@ -41,28 +41,28 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "10438": 4.0,
-    "25361": 1.0,
     "17364": 42.04566666666666,
+    "10438": 4.0,
     "425336": 1.0,
+    "25361": 1.0,
     "25359": 1.0,
-    "29228": 11.911,
     "15208": 13.295666666666667,
-    "10414": 14.729333333333333
+    "10414": 14.729333333333333,
+    "29228": 11.911
    },
    "casts": {
-    "Talisman of Ephemeral Power": 2.0,
-    "Searing Totem": 4.0,
-    "Strength of Earth Totem": 1.0,
     "Stormstrike": 42.04566666666666,
-    "Rage of the Farseer": 1.0,
-    "Grace of Air Totem": 1.0,
-    "Flame Shock": 11.911,
+    "Auto Attack": 61.736,
     "Major Mana Potion": 2.0,
+    "Searing Totem": 4.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "Rage of the Farseer": 1.0,
+    "Strength of Earth Totem": 1.0,
+    "Grace of Air Totem": 1.0,
+    "OtherActionManaGain": 2.0,
     "Lightning Bolt": 13.295666666666667,
     "Earth Shock": 14.729333333333333,
-    "Auto Attack": 61.736,
-    "OtherActionManaGain": 2.0
+    "Flame Shock": 11.911
    },
    "dps": 379.7258649963214,
    "dps_stdev": 25.707047476883922,
@@ -75,7 +75,7 @@
    "scorer": 1.1817025782404798,
    "shares": {
     "Auto Attack": 0.2878258366935218,
-    "spell 439440": 0.18880563479068643,
+    "Windfury Weapon": 0.18880563479068643,
     "Earth Shock": 0.11876474004042298,
     "Stormstrike": 0.11301860439173574,
     "Lightning Bolt": 0.1065330597953464,
@@ -84,13 +84,14 @@
     "Dragonbreath Chili": 0.02746477124678731
    },
    "source_shares": {
-    "white": 0.3965,
-    "earth_shock": 0.1636,
-    "stormstrike": 0.1557,
-    "lightning_bolt": 0.1468,
-    "flame_shock": 0.1375
+    "white": 0.3147,
+    "windfury": 0.2064,
+    "earth_shock": 0.1298,
+    "stormstrike": 0.1236,
+    "lightning_bolt": 0.1165,
+    "flame_shock": 0.1091
    },
-   "unmatched_share": 0.2741
+   "unmatched_share": 0.0853
   },
   {
    "label": "opt-enhancement-dps-raid-dps",
@@ -99,28 +100,28 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "15208": 13.293333333333333,
-    "29228": 11.914666666666667,
-    "10438": 4.0,
     "425336": 1.0,
-    "25361": 1.0,
+    "25359": 1.0,
     "17364": 42.050333333333334,
+    "25361": 1.0,
     "10414": 14.726,
-    "25359": 1.0
+    "10438": 4.0,
+    "29228": 11.914666666666667,
+    "15208": 13.293333333333333
    },
    "casts": {
-    "Lightning Bolt": 13.293333333333333,
-    "Flame Shock": 11.914666666666667,
-    "Searing Totem": 4.0,
-    "Major Mana Potion": 2.0,
     "Rage of the Farseer": 1.0,
-    "Strength of Earth Totem": 1.0,
-    "Talisman of Ephemeral Power": 2.0,
-    "Stormstrike": 42.050333333333334,
+    "Major Mana Potion": 2.0,
+    "Grace of Air Totem": 1.0,
     "Auto Attack": 61.566,
-    "OtherActionManaGain": 2.0,
+    "Stormstrike": 42.050333333333334,
+    "Strength of Earth Totem": 1.0,
     "Earth Shock": 14.726,
-    "Grace of Air Totem": 1.0
+    "Searing Totem": 4.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "Flame Shock": 11.914666666666667,
+    "Lightning Bolt": 13.293333333333333,
+    "OtherActionManaGain": 2.0
    },
    "dps": 384.8815161674151,
    "dps_stdev": 25.282278057620132,
@@ -133,7 +134,7 @@
    "scorer": 1.231354375609621,
    "shares": {
     "Auto Attack": 0.2805686806119396,
-    "spell 439440": 0.18480007689960753,
+    "Windfury Weapon": 0.18480007689960753,
     "Earth Shock": 0.11480017532842329,
     "Flame Shock": 0.11320335644602984,
     "Stormstrike": 0.11086030055411963,
@@ -142,13 +143,14 @@
     "Dragonbreath Chili": 0.027072397890540598
    },
    "source_shares": {
-    "white": 0.3883,
-    "earth_shock": 0.1589,
-    "flame_shock": 0.1567,
-    "stormstrike": 0.1534,
-    "lightning_bolt": 0.1427
+    "white": 0.3092,
+    "windfury": 0.2037,
+    "earth_shock": 0.1265,
+    "flame_shock": 0.1248,
+    "stormstrike": 0.1222,
+    "lightning_bolt": 0.1136
    },
-   "unmatched_share": 0.2775
+   "unmatched_share": 0.0927
   },
   {
    "label": "enhancement-ml-raid",
@@ -157,28 +159,28 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "17364": 42.885333333333335,
-    "29228": 10.724,
-    "425336": 1.0,
     "10438": 3.9553333333333334,
-    "25361": 1.0,
     "25359": 1.0,
     "10414": 16.953333333333333,
-    "15208": 13.359666666666667
+    "25361": 1.0,
+    "29228": 10.724,
+    "15208": 13.359666666666667,
+    "17364": 42.885333333333335,
+    "425336": 1.0
    },
    "casts": {
-    "Stormstrike": 42.885333333333335,
-    "Flame Shock": 10.724,
-    "Auto Attack": 61.778333333333336,
-    "OtherActionManaGain": 2.0,
-    "Rage of the Farseer": 1.0,
+    "Major Mana Potion": 2.0,
     "Searing Totem": 3.9553333333333334,
-    "Talisman of Ephemeral Power": 2.0,
-    "Strength of Earth Totem": 1.0,
     "Grace of Air Totem": 1.0,
     "Earth Shock": 16.953333333333333,
-    "Major Mana Potion": 2.0,
-    "Lightning Bolt": 13.359666666666667
+    "Talisman of Ephemeral Power": 2.0,
+    "Strength of Earth Totem": 1.0,
+    "Flame Shock": 10.724,
+    "OtherActionManaGain": 2.0,
+    "Lightning Bolt": 13.359666666666667,
+    "Stormstrike": 42.885333333333335,
+    "Rage of the Farseer": 1.0,
+    "Auto Attack": 61.778333333333336
    },
    "dps": 383.17411699606083,
    "dps_stdev": 25.644855692362565,
@@ -191,7 +193,7 @@
    "scorer": 1.212871102289292,
    "shares": {
     "Auto Attack": 0.2856400951035407,
-    "spell 439440": 0.1871237963447127,
+    "Windfury Weapon": 0.1871237963447127,
     "Earth Shock": 0.12588141417003082,
     "Stormstrike": 0.11392158997645291,
     "Lightning Bolt": 0.10019118377600655,
@@ -200,13 +202,14 @@
     "Dragonbreath Chili": 0.026046972049974245
    },
    "source_shares": {
-    "white": 0.3946,
-    "earth_shock": 0.1739,
-    "stormstrike": 0.1574,
-    "lightning_bolt": 0.1384,
-    "flame_shock": 0.1357
+    "white": 0.3135,
+    "windfury": 0.2054,
+    "earth_shock": 0.1382,
+    "stormstrike": 0.125,
+    "lightning_bolt": 0.11,
+    "flame_shock": 0.1079
    },
-   "unmatched_share": 0.2761
+   "unmatched_share": 0.089
   },
   {
    "label": "elemental-enhancement-ml-raid",
@@ -215,22 +218,22 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "10438": 4.0,
+    "10414": 20.342666666666666,
     "17364": 42.57533333333333,
     "25361": 1.0,
-    "10414": 20.342666666666666,
+    "10438": 4.0,
     "25359": 1.0,
     "29228": 11.498333333333333
    },
    "casts": {
-    "Major Mana Potion": 1.9993333333333334,
-    "Searing Totem": 4.0,
+    "OtherActionManaGain": 1.9993333333333334,
     "Auto Attack": 63.364666666666665,
+    "Earth Shock": 20.342666666666666,
     "Stormstrike": 42.57533333333333,
+    "Major Mana Potion": 1.9993333333333334,
     "Strength of Earth Totem": 1.0,
     "Talisman of Ephemeral Power": 2.0,
-    "Earth Shock": 20.342666666666666,
-    "OtherActionManaGain": 1.9993333333333334,
+    "Searing Totem": 4.0,
     "Grace of Air Totem": 1.0,
     "Flame Shock": 11.498333333333333
    },
@@ -245,7 +248,7 @@
    "scorer": 0.8861710360582018,
    "shares": {
     "Auto Attack": 0.3062240665555061,
-    "spell 439440": 0.19674506471945222,
+    "Windfury Weapon": 0.19674506471945222,
     "Earth Shock": 0.17180978266980748,
     "Stormstrike": 0.11885288989208172,
     "Flame Shock": 0.1108772450907198,
@@ -253,12 +256,13 @@
     "Dragonbreath Chili": 0.028243319137249562
    },
    "source_shares": {
-    "white": 0.4327,
-    "earth_shock": 0.2428,
-    "stormstrike": 0.1679,
-    "flame_shock": 0.1567
+    "white": 0.3386,
+    "windfury": 0.2175,
+    "earth_shock": 0.1899,
+    "stormstrike": 0.1314,
+    "flame_shock": 0.1226
    },
-   "unmatched_share": 0.2922
+   "unmatched_share": 0.0955
   },
   {
    "label": "sim preset: Level 60",
@@ -266,28 +270,28 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "425336": 1.0,
     "29228": 10.594333333333333,
-    "10438": 3.9603333333333333,
-    "17364": 42.65566666666667,
-    "15208": 13.213666666666667,
     "25359": 1.0,
+    "10414": 16.740666666666666,
     "25361": 1.0,
-    "10414": 16.740666666666666
+    "15208": 13.213666666666667,
+    "10438": 3.9603333333333333,
+    "425336": 1.0,
+    "17364": 42.65566666666667
    },
    "casts": {
-    "Rage of the Farseer": 1.0,
-    "Flame Shock": 10.594333333333333,
-    "Searing Totem": 3.9603333333333333,
-    "OtherActionManaGain": 2.0,
-    "Stormstrike": 42.65566666666667,
-    "Talisman of Ephemeral Power": 2.0,
-    "Lightning Bolt": 13.213666666666667,
-    "Grace of Air Totem": 1.0,
     "Auto Attack": 61.282666666666664,
-    "Strength of Earth Totem": 1.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "Flame Shock": 10.594333333333333,
+    "Grace of Air Totem": 1.0,
+    "Earth Shock": 16.740666666666666,
     "Major Mana Potion": 2.0,
-    "Earth Shock": 16.740666666666666
+    "Strength of Earth Totem": 1.0,
+    "Lightning Bolt": 13.213666666666667,
+    "Searing Totem": 3.9603333333333333,
+    "Rage of the Farseer": 1.0,
+    "OtherActionManaGain": 2.0,
+    "Stormstrike": 42.65566666666667
    },
    "dps": 378.85264359452196,
    "dps_stdev": 25.21226757820627,
@@ -300,7 +304,7 @@
    "scorer": null,
    "shares": {
     "Auto Attack": 0.278399725438057,
-    "spell 439440": 0.1853587833853776,
+    "Windfury Weapon": 0.1853587833853776,
     "Earth Shock": 0.13187309730586766,
     "Stormstrike": 0.11156532644417107,
     "Lightning Bolt": 0.10513741194842943,
@@ -309,13 +313,14 @@
     "Dragonbreath Chili": 0.02612596543688253
    },
    "source_shares": {
-    "white": 0.3841,
-    "earth_shock": 0.1819,
-    "stormstrike": 0.1539,
-    "lightning_bolt": 0.1451,
-    "flame_shock": 0.135
+    "white": 0.3059,
+    "windfury": 0.2036,
+    "earth_shock": 0.1449,
+    "stormstrike": 0.1226,
+    "lightning_bolt": 0.1155,
+    "flame_shock": 0.1075
    },
-   "unmatched_share": 0.2752
+   "unmatched_share": 0.0898
   },
   {
    "label": "sim preset: Enhancement 16/35/0",
@@ -323,28 +328,28 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "15208": 13.297,
-    "10414": 8.531666666666666,
-    "10438": 3.0656666666666665,
+    "29228": 7.082666666666666,
     "25361": 1.0,
     "17364": 41.05766666666666,
-    "29228": 7.082666666666666,
-    "425336": 1.0,
-    "25359": 1.0
+    "10438": 3.0656666666666665,
+    "10414": 8.531666666666666,
+    "15208": 13.297,
+    "25359": 1.0,
+    "425336": 1.0
    },
    "casts": {
-    "Lightning Bolt": 13.297,
-    "Earth Shock": 8.531666666666666,
-    "Auto Attack": 61.75233333333333,
-    "OtherActionManaGain": 2.0,
-    "Major Mana Potion": 2.0,
-    "Searing Totem": 3.0656666666666665,
+    "Flame Shock": 7.082666666666666,
     "Strength of Earth Totem": 1.0,
     "Stormstrike": 41.05766666666666,
-    "Flame Shock": 7.082666666666666,
-    "Rage of the Farseer": 1.0,
+    "Searing Totem": 3.0656666666666665,
+    "Earth Shock": 8.531666666666666,
+    "Lightning Bolt": 13.297,
+    "Auto Attack": 61.75233333333333,
     "Talisman of Ephemeral Power": 2.0,
-    "Grace of Air Totem": 1.0
+    "Major Mana Potion": 2.0,
+    "Grace of Air Totem": 1.0,
+    "OtherActionManaGain": 2.0,
+    "Rage of the Farseer": 1.0
    },
    "dps": 344.74620242886266,
    "dps_stdev": 25.88995133543835,
@@ -357,7 +362,7 @@
    "scorer": null,
    "shares": {
     "Auto Attack": 0.315102641490887,
-    "spell 439440": 0.20782974615373673,
+    "Windfury Weapon": 0.20782974615373673,
     "Stormstrike": 0.12091109455062689,
     "Lightning Bolt": 0.11824618295172488,
     "Earth Shock": 0.07466633785713875,
@@ -366,13 +371,14 @@
     "Dragonbreath Chili": 0.02894631568552911
    },
    "source_shares": {
-    "white": 0.4487,
-    "stormstrike": 0.1722,
-    "lightning_bolt": 0.1684,
-    "earth_shock": 0.1063,
-    "flame_shock": 0.1045
+    "white": 0.3462,
+    "windfury": 0.2284,
+    "stormstrike": 0.1329,
+    "lightning_bolt": 0.1299,
+    "earth_shock": 0.082,
+    "flame_shock": 0.0806
    },
-   "unmatched_share": 0.2977
+   "unmatched_share": 0.0899
   }
  ],
  "deltas": {}

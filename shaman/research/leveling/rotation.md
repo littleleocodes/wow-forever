@@ -10,7 +10,7 @@ The build each spec's [leveling page](../../leveling/README.md) shows first, the
 |---|---|---|---|---|---|---|---|---|
 | [Enhancement](../../leveling/enhancement.md) ✅ | [`enhancement-open-leveling`](builds/enhancement-open-leveling.md) | [enhancement-dps](#enhancement-dps) | 22.6 | 30.3 | 32.5 | 33.0 | 33.8 | 31.7 |
 | [Elemental-Enhancement](../../leveling/elemental-enhancement.md) | [`elemental-enhancement-open-leveling`](builds/elemental-enhancement-open-leveling.md) | [elemental-dps](#elemental-dps) | 28.0 | 37.9 | 38.7 | 40.5 | 39.4 | 38.2 |
-| [Elemental](../../leveling/elemental.md) | [`opt-elemental-dps-leveling-st`](builds/opt-elemental-dps-leveling-st.md) | [elemental-dps](#elemental-dps) | 28.1 | 39.3 | 39.1 | 42.3 | 40.9 | 39.4 |
+| [Elemental](../../leveling/elemental.md) | [`opt-elemental-dps-leveling-st`](builds/opt-elemental-dps-leveling-st.md) | [elemental-dps](#elemental-dps) | 28.1 | 39.3 | 38.4 | 41.7 | 40.9 | 39.1 |
 | [Restoration](../../leveling/restoration.md) | [`restoration-leveling`](builds/restoration-leveling.md) | [enhancement-dps](#enhancement-dps) | 27.0 | 35.8 | 43.9 | 47.9 | 53.5 | 44.9 |
 
 ✅ = a recommended spec for leveling (the fastest, or within 3% of it).
@@ -91,42 +91,43 @@ Report: [fightlab/elemental-dps-opt.md](fightlab/elemental-dps-opt.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Lightning Bolt | 3.1 | 4.1 | 4.5 | 4.9 | 3.9 | 26% |
-| Melee | 1.8 | 2.8 | 2.9 | 3.2 | 3.5 | 13% |
-| Earth Shock | 0.4 | 0.9 | 1.0 | 1.1 | 1.2 | 10% |
-| Windfury | 0.0 | 1.0 | 1.0 | 1.1 | 1.2 | 6% |
-| Lava Burst | 0.0 | 0.0 | 0.0 | 0.0 | 1.1 | 14% |
+| Lightning Bolt | 3.1 | 4.1 | 4.3 | 5.4 | 4.2 | 26% |
+| Melee | 1.8 | 2.8 | 3.1 | 3.4 | 3.9 | 15% |
+| Earth Shock | 0.3 | 0.8 | 1.0 | 1.2 | 1.3 | 11% |
+| Windfury | 0.0 | 0.9 | 1.1 | 1.2 | 1.3 | 7% |
+| Lava Burst | 0.0 | 0.0 | 0.0 | 0.0 | 1.2 | 10% |
 | Flame Shock | 0.8 | 0.9 | 0.9 | 0.9 | 1.0 | 10% |
-| Searing Totem | 0.9 | 0.9 | 0.8 | 0.8 | 0.8 | 8% |
-| Lightning Shield | 0.5 | 0.7 | 0.7 | 0.7 | 0.8 | 13% |
+| Lightning Shield | 0.5 | 0.7 | 0.8 | 0.8 | 0.9 | 13% |
+| Searing Totem | 0.8 | 0.9 | 0.9 | 0.8 | 0.8 | 8% |
 | Stoneclaw Totem | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Lesser Healing Wave | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ### `cand-ele-r3`
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Lightning Bolt | 3.1 | 4.1 | 4.5 | 4.9 | 3.9 | 26% |
-| Melee | 1.8 | 2.8 | 2.9 | 3.2 | 3.5 | 13% |
-| Earth Shock | 0.4 | 0.9 | 1.0 | 1.1 | 1.2 | 10% |
-| Windfury | 0.0 | 1.0 | 1.0 | 1.1 | 1.2 | 6% |
-| Lava Burst | 0.0 | 0.0 | 0.0 | 0.0 | 1.1 | 14% |
+| Lightning Bolt | 3.1 | 4.1 | 4.6 | 5.0 | 4.2 | 26% |
+| Melee | 1.8 | 2.8 | 2.9 | 3.3 | 3.9 | 15% |
+| Earth Shock | 0.3 | 0.8 | 1.0 | 1.2 | 1.4 | 11% |
+| Windfury | 0.0 | 0.9 | 1.0 | 1.1 | 1.3 | 7% |
+| Lava Burst | 0.0 | 0.0 | 0.0 | 0.0 | 1.3 | 10% |
 | Flame Shock | 0.8 | 0.9 | 0.9 | 0.9 | 1.0 | 10% |
-| Lightning Shield | 0.5 | 0.7 | 0.7 | 0.7 | 0.8 | 13% |
-| Searing Totem | 0.9 | 0.9 | 0.8 | 0.8 | 0.8 | 8% |
+| Lightning Shield | 0.5 | 0.7 | 0.7 | 0.8 | 0.9 | 13% |
+| Searing Totem | 0.8 | 0.9 | 0.8 | 0.8 | 0.8 | 8% |
 | Stoneclaw Totem | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ### `cand-ele-r4`
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Lightning Bolt | 3.1 | 4.1 | 4.5 | 4.9 | 3.9 | 26% |
-| Melee | 1.8 | 2.8 | 2.9 | 3.2 | 3.5 | 13% |
-| Earth Shock | 0.4 | 0.9 | 1.0 | 1.1 | 1.2 | 10% |
-| Windfury | 0.0 | 1.0 | 1.0 | 1.1 | 1.2 | 6% |
-| Lava Burst | 0.0 | 0.0 | 0.0 | 0.0 | 1.1 | 14% |
+| Lightning Bolt | 3.1 | 4.1 | 4.6 | 5.0 | 4.2 | 26% |
+| Melee | 1.8 | 2.8 | 2.9 | 3.3 | 3.9 | 15% |
+| Earth Shock | 0.3 | 0.8 | 1.0 | 1.2 | 1.3 | 11% |
+| Windfury | 0.0 | 0.9 | 1.0 | 1.1 | 1.3 | 7% |
+| Lava Burst | 0.0 | 0.0 | 0.0 | 0.0 | 1.2 | 10% |
 | Flame Shock | 0.8 | 0.9 | 0.9 | 0.9 | 1.0 | 10% |
-| Searing Totem | 0.9 | 0.9 | 0.8 | 0.8 | 0.8 | 8% |
-| Lightning Shield | 0.5 | 0.7 | 0.7 | 0.7 | 0.8 | 13% |
+| Lightning Shield | 0.5 | 0.7 | 0.7 | 0.8 | 0.9 | 13% |
+| Searing Totem | 0.8 | 0.9 | 0.8 | 0.8 | 0.8 | 8% |
 | Stoneclaw Totem | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 Casts per kill of [`elemental-enhancement-open-leveling`](builds/elemental-enhancement-open-leveling.md): not recorded (its times per kill come from the race records of the search that found it, which keep times only; the table above has them).
@@ -139,7 +140,7 @@ Elemental: Lightning Bolts from range (the pull and while the mob walks in), the
 
 Report: [fightlab/elemental-dps.md](fightlab/elemental-dps.md).
 
-### [`opt-elemental-dps-leveling-st`](builds/opt-elemental-dps-leveling-st.md)
+### [`opt-elemental-dps-leveling-st`](builds/opt-elemental-dps-leveling-st.md) (elemental-dps report)
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
@@ -176,52 +177,49 @@ Report: [fightlab/enhancement-dps-aoe.md](fightlab/enhancement-dps-aoe.md).
 
 | Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|
-| Melee | 10.9 | 7.4 | 7.1 | 7.7 | 41% |
-| Windfury | 3.7 | 3.1 | 3.2 | 3.5 | 26% |
-| Stormstrike | 0.0 | 1.7 | 1.9 | 2.2 | 12% |
-| Magma Totem | 3.2 | 1.1 | 1.3 | 1.4 | 0% |
-| Chain Lightning | 0.0 | 0.4 | 0.5 | 0.5 | 4% |
-| Searing Totem | 0.6 | 0.4 | 0.4 | 0.5 | 8% |
-| Lightning Shield | 0.6 | 0.4 | 0.4 | 0.5 | 10% |
-| Fire Nova | 0.8 | 0.4 | 0.4 | 0.5 | 0% |
-| Stoneclaw Totem | 0.2 | 0.3 | 0.4 | 0.5 | 0% |
-| Flame Shock | 0.7 | 0.0 | 0.1 | 0.0 | 0% |
-| Lightning Bolt | 1.9 | 0.0 | 0.0 | 0.0 | 0% |
+| Melee | 8.1 | 8.7 | 9.3 | 9.1 | 27% |
+| Windfury | 3.5 | 3.5 | 3.6 | 3.9 | 16% |
+| Stormstrike | 2.2 | 1.9 | 1.6 | 2.4 | 7% |
+| Flame Shock | 1.7 | 0.9 | 1.1 | 1.0 | 6% |
+| Chain Lightning | 0.0 | 1.0 | 1.2 | 0.9 | 5% |
+| Fire Nova | 0.9 | 0.5 | 0.6 | 0.6 | 17% |
+| Lightning Shield | 0.4 | 0.5 | 0.6 | 0.6 | 6% |
+| Magma Totem | 0.5 | 0.5 | 0.6 | 0.6 | 15% |
+| Stoneclaw Totem | 0.0 | 0.1 | 0.3 | 0.1 | 0% |
+| Lightning Bolt | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Lesser Healing Wave | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Earth Shock | 0.1 | 0.0 | 0.0 | 0.0 | 0% |
 
-### `cand-aoe-r4`
+### `cand-aoe-r6`
 
 | Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|
-| Melee | 10.9 | 7.5 | 7.5 | 8.4 | 39% |
-| Windfury | 3.7 | 3.2 | 3.2 | 3.9 | 25% |
-| Stormstrike | 0.0 | 1.7 | 2.0 | 2.7 | 13% |
-| Magma Totem | 3.2 | 1.2 | 1.3 | 1.6 | 0% |
-| Chain Lightning | 0.0 | 0.7 | 0.5 | 0.5 | 5% |
-| Searing Totem | 0.6 | 0.4 | 0.4 | 0.5 | 9% |
-| Fire Nova | 0.8 | 0.4 | 0.4 | 0.5 | 0% |
-| Lightning Shield | 0.6 | 0.4 | 0.4 | 0.5 | 9% |
-| Stoneclaw Totem | 0.2 | 0.3 | 0.4 | 0.5 | 0% |
-| Flame Shock | 0.7 | 0.0 | 0.1 | 0.1 | 1% |
-| Lightning Bolt | 1.9 | 0.1 | 0.0 | 0.0 | 0% |
+| Melee | 8.1 | 8.7 | 9.3 | 9.1 | 27% |
+| Windfury | 3.5 | 3.5 | 3.6 | 3.9 | 16% |
+| Stormstrike | 2.2 | 1.9 | 1.6 | 2.4 | 7% |
+| Flame Shock | 1.7 | 0.9 | 1.1 | 1.0 | 6% |
+| Chain Lightning | 0.0 | 1.0 | 1.2 | 0.9 | 5% |
+| Fire Nova | 0.9 | 0.5 | 0.6 | 0.6 | 17% |
+| Lightning Shield | 0.4 | 0.5 | 0.6 | 0.6 | 6% |
+| Magma Totem | 0.5 | 0.5 | 0.6 | 0.6 | 15% |
+| Stoneclaw Totem | 0.0 | 0.1 | 0.3 | 0.1 | 0% |
+| Lightning Bolt | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Lesser Healing Wave | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Earth Shock | 0.1 | 0.0 | 0.0 | 0.0 | 0% |
 
-### `cand-aoe-r5`
+### `cand-aoe-r7`
 
 | Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|
-| Melee | 10.9 | 7.4 | 7.2 | 20.9 | 36% |
-| Windfury | 3.7 | 3.1 | 3.1 | 9.8 | 23% |
-| Stormstrike | 0.0 | 1.7 | 1.9 | 6.8 | 12% |
-| Magma Totem | 3.2 | 1.1 | 1.3 | 3.7 | 0% |
-| Flame Shock | 0.7 | 0.0 | 0.1 | 1.3 | 2% |
-| Chain Lightning | 0.0 | 0.4 | 0.5 | 1.3 | 4% |
-| Searing Totem | 0.6 | 0.4 | 0.5 | 1.2 | 14% |
-| Fire Nova | 0.8 | 0.4 | 0.5 | 1.2 | 0% |
-| Lightning Shield | 0.6 | 0.4 | 0.5 | 1.2 | 9% |
-| Stoneclaw Totem | 0.2 | 0.3 | 0.4 | 0.4 | 0% |
-| Lightning Bolt | 1.9 | 0.0 | 0.0 | 0.0 | 0% |
-| Lesser Healing Wave | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Melee | 8.1 | 8.7 | 10.2 | 8.8 | 26% |
+| Windfury | 3.5 | 3.5 | 4.1 | 3.6 | 15% |
+| Stormstrike | 2.2 | 1.9 | 2.2 | 1.9 | 6% |
+| Chain Lightning | 0.0 | 1.0 | 1.4 | 1.1 | 6% |
+| Flame Shock | 1.7 | 0.9 | 1.4 | 1.0 | 6% |
+| Lightning Shield | 0.4 | 0.5 | 0.7 | 0.6 | 7% |
+| Magma Totem | 0.5 | 0.5 | 0.7 | 0.6 | 16% |
+| Fire Nova | 0.9 | 0.5 | 0.7 | 0.6 | 17% |
+| Stoneclaw Totem | 0.0 | 0.1 | 0.2 | 0.2 | 0% |
+| Lightning Bolt | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Earth Shock | 0.1 | 0.0 | 0.0 | 0.0 | 0% |
+| Lesser Healing Wave | 0.0 | 0.0 | 0.0 | 0.0 | 0% |

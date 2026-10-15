@@ -4,11 +4,11 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `survival-raid` | 5/16/30 | 483 | 564 | 1025 | 1025 | 1050 |
-| `melee-survival-raid` | 5/11/35 | 461 | 537 | 1042 | 1042 | 1067 |
-| `opt-melee-dps-raid-dps` | 5/15/31 | 461 | 537 | 1012 | 1012 | 1044 |
-| `survival-ml-parse` | 5/14/32 | 357 | 422 | 993 | 993 | 1017 |
-| `beast-survival-open-raid` | 16/11/24 | 357 | 423 | 1051 | 1051 | 1072 |
+| `survival-raid` | 5/16/30 | 483 | 564 | 975 | 975 | 997 |
+| `melee-survival-raid` | 5/11/35 | 461 | 537 | 996 | 996 | 1019 |
+| `opt-melee-dps-raid-dps` | 5/15/31 | 461 | 537 | 964 | 964 | 993 |
+| `survival-ml-parse` | 5/14/32 | 357 | 422 | 949 | 949 | 972 |
+| `beast-survival-open-raid` | 16/11/24 | 357 | 423 | 1004 | 1004 | 1023 |
 
 - **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
 - **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
@@ -22,11 +22,11 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
-| `survival-raid` | 483 | +0% | +36% | +60% | +4% | +12% | 1025 |
-| `melee-survival-raid` | 461 | +7% | +39% | +64% | +4% | +12% | 1042 |
-| `opt-melee-dps-raid-dps` | 461 | -0% | +39% | +65% | +3% | +13% | 1012 |
-| `survival-ml-parse` | 357 | +32% | +47% | +79% | +5% | +15% | 993 |
-| `beast-survival-open-raid` | 357 | +45% | +50% | +78% | +4% | +17% | 1051 |
+| `survival-raid` | 483 | +0% | +36% | +51% | +4% | +11% | 975 |
+| `melee-survival-raid` | 461 | +7% | +39% | +55% | +4% | +12% | 996 |
+| `opt-melee-dps-raid-dps` | 461 | -0% | +39% | +55% | +3% | +13% | 964 |
+| `survival-ml-parse` | 357 | +32% | +47% | +67% | +5% | +14% | 949 |
+| `beast-survival-open-raid` | 357 | +45% | +50% | +65% | +4% | +17% | 1004 |
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
 

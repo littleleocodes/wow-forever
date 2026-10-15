@@ -4,8 +4,6 @@
 
 *Daggers with points split between Assassination and Combat.* (a hybrid: Assassination/Combat).
 
-**✅ Recommended** for raid (the best rogue spec here, or within 3% of it).
-
 **[Daggers — Raid](../research/raid/builds/daggers-split-open-raid.md)** (21/28/2) — [open the talent tree](https://talentsforever.com/rogue/60/00530310311301-303333000015142-002-6)
 
 > 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds). A model of the beta, to check at launch.
@@ -56,7 +54,7 @@ Daggers (split) plays the Assassination raid list with Combat's dagger talents: 
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 718 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 669 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 

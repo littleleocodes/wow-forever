@@ -74,10 +74,10 @@ Allocation adopted on 2026-09-27 from `opt-prot-tank-raid-tank`, the best build 
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 14/5/32 | 1.005 | +0.0% | 714 | 1164 |
-| 2 | **[`prot-raid-tank`](prot-raid-tank.md)** | ours: hand draft | 14/5/32 | 1.000 | -0.5% | 705 | 1162 |
-| 3 | *Protection* | community simulator | - | 0.947 | -5.8% | 664 | 1220 |
-| 4 | *Protection 1/0/50* | community simulator | - | 0.933 | -7.2% | 650 | 1232 |
+| 1 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 14/5/32 | 1.007 | +0.0% | 686 | 1162 |
+| 2 | **[`prot-raid-tank`](prot-raid-tank.md)** | ours: hand draft | 14/5/32 | 1.000 | -0.7% | 676 | 1161 |
+| 3 | *Protection* | community simulator | - | 0.949 | -5.7% | 638 | 1217 |
+| 4 | *Protection 1/0/50* | community simulator | - | 0.934 | -7.3% | 625 | 1231 |
 
 ## Rotation (community simulator, raid setting)
 
@@ -96,7 +96,7 @@ Before the pull: at -1s: cast Battle Shout.
 | 2 | use every other cooldown when ready | as ready |
 | 3 | cast Revenge | 6.2 |
 | 4 | cast Shield Slam | 9.9 |
-| 5 | if rage ≥ 45: cast Heroic Strike | 20.9 |
+| 5 | if rage ≥ 45: cast Heroic Strike | 19.5 |
 | 6 | if not Rend is on the target: cast Rend | 3.0 |
 | 7 | cast Shield Bash | 4.9 |
 
@@ -106,10 +106,10 @@ Damage by ability (threat for tanks):
 
 | Ability | [`prot-raid-tank`](prot-raid-tank.md) |
 |---|---|
-| Heroic Strike | 36% |
-| Shield Slam | 29% |
+| Heroic Strike | 35% |
+| Shield Slam | 30% |
 | Revenge | 15% |
-| Auto Attack | 11% |
+| Auto Attack | 10% |
 | Rend | 3% |
 | Retribution Aura | 2% |
 | Thorns | 1% |

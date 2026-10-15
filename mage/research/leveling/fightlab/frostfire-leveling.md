@@ -39,15 +39,15 @@ Single-target leveling fights against normal mobs of your level: pull at max ran
 | Level | Build | Time/kill | vs. main | Fight mean | Deaths/100 | Downtime/kill |
 |---|---|---|---|---|---|---|
 | 20 | opt-frost-leveling-leveling-st | 26.0s | - | 11.2s | 0.0 | 6.8s |
-| 20 | opt-frost-leveling-leveling-st (played as `frost-leveling`) | 25.2s | -3.0% | 11.8s | 0.0 | 5.4s |
+| 20 | opt-frost-leveling-leveling-st (played as `frost-leveling`) | 25.5s | -2.0% | 11.9s | 0.0 | 5.5s |
 | 30 | opt-frost-leveling-leveling-st | 33.0s | - | 13.5s | 0.0 | 11.5s |
-| 30 | opt-frost-leveling-leveling-st (played as `frost-leveling`) | 32.4s | -1.9% | 16.9s | 0.0 | 7.5s |
+| 30 | opt-frost-leveling-leveling-st (played as `frost-leveling`) | 32.2s | -2.5% | 17.2s | 0.0 | 7.0s |
 | 40 | opt-frost-leveling-leveling-st | 37.8s | - | 15.8s | 0.0 | 14.0s |
-| 40 | opt-frost-leveling-leveling-st (played as `frost-leveling`) | 32.0s | -15.1% | 16.2s | 0.0 | 7.8s |
+| 40 | opt-frost-leveling-leveling-st (played as `frost-leveling`) | 31.9s | -15.6% | 16.3s | 0.0 | 7.6s |
 | 50 | opt-frost-leveling-leveling-st | 31.8s | - | 12.7s | 0.0 | 11.1s |
-| 50 | opt-frost-leveling-leveling-st (played as `frost-leveling`) | 26.7s | -16.2% | 12.4s | 0.0 | 6.2s |
+| 50 | opt-frost-leveling-leveling-st (played as `frost-leveling`) | 26.7s | -16.0% | 12.5s | 0.0 | 6.2s |
 | 60 | opt-frost-leveling-leveling-st | 29.6s | - | 12.4s | 0.0 | 9.2s |
-| 60 | opt-frost-leveling-leveling-st (played as `frost-leveling`) | 25.0s | -15.6% | 11.8s | 0.0 | 5.2s |
+| 60 | opt-frost-leveling-leveling-st (played as `frost-leveling`) | 25.0s | -15.7% | 11.8s | 0.0 | 5.2s |
 
 ## Talent values at level 30
 

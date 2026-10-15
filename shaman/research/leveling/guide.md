@@ -43,7 +43,7 @@ Level-weighted time per kill (seconds, higher levels count more) of the build ea
 |---|---|---|---|---|---|---|---|---|
 | [Enhancement](../../leveling/enhancement.md) ✅ | [`enhancement-open-leveling`](builds/enhancement-open-leveling.md) | enhancement-dps | 22.6 | 30.3 | 32.5 | 33.0 | 33.8 | 31.7 |
 | [Elemental-Enhancement](../../leveling/elemental-enhancement.md) | [`elemental-enhancement-open-leveling`](builds/elemental-enhancement-open-leveling.md) | elemental-dps | 28.0 | 37.9 | 38.7 | 40.5 | 39.4 | 38.2 |
-| [Elemental](../../leveling/elemental.md) | [`opt-elemental-dps-leveling-st`](builds/opt-elemental-dps-leveling-st.md) | elemental-dps | 28.1 | 39.3 | 39.1 | 42.3 | 40.9 | 39.4 |
+| [Elemental](../../leveling/elemental.md) | [`opt-elemental-dps-leveling-st`](builds/opt-elemental-dps-leveling-st.md) | elemental-dps | 28.1 | 39.3 | 38.4 | 41.7 | 40.9 | 39.1 |
 | [Restoration](../../leveling/restoration.md) | [`restoration-leveling`](builds/restoration-leveling.md) | enhancement-dps | 27.0 | 35.8 | 43.9 | 47.9 | 53.5 | 44.9 |
 
 The stats model's respec plan (its own optimizer builds, not the page build): **62.3 h** (30.8% faster than talentless), no respec ([respec plan](respec-plan.md)).

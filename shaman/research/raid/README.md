@@ -87,8 +87,8 @@ The spells new in Forever, what the simulators measured them doing, and the buil
 | Call of the Ancestors | Elemental | 30 | - | Simultaneously places up to 4 totems specified in the Totem Bar. | not cast by any raced build | - | not cast | Drops several totems at once: utility. |
 | Call of the Elements | Elemental | 20 | - | Simultaneously places up to 4 totems specified in the Totem Bar. | not cast by any raced build | - | not cast | Drops several totems at once: utility. |
 | Call of the Spirits | Elemental | 40 | - | Simultaneously places up to 4 totems specified in the Totem Bar. | not cast by any raced build | - | not cast | Drops several totems at once: utility. |
-| Fire Nova | Elemental | 52 | 10 sec | Instantly inflicts 413 to 459 fire damage to enemies within 10 yd of your active Fire totem. | not cast by any raced build | enhancement-dps (raid): insert before the filler: cast Fire Nova (+7.3%); enhancement-dps (raid): move down below 'cast Earth Shock': cast Fire Nova + only with 10s or more of the fight le (+0.2%) | no damage of its own, 0.5 casts a kill: `opt-enhancement-dps-leveling-aoe` at 60 (enhancement-dps-aoe) | Now a spell with a 10 s cooldown instead of a totem: area damage around the fire totem. |
-| Lava Burst | Elemental | 60 | 10 sec | You hurl molten lava at the target, dealing 192 to 248 Fire damage. | 20% of the damage, 4.7 casts/min: [`opt-elemental-dps-raid-dps`](builds/opt-elemental-dps-raid-dps.md) (elemental-dps) | - | 14% of the damage, 1.1 casts a kill: `opt-elemental-dps-leveling-st` at 60 (elemental-dps-opt) | A new Elemental nuke (10 s cooldown, more damage with Flame Shock on the target); the simulator's Elemental rotation casts it. |
+| Fire Nova | Elemental | 52 | 10 sec | Instantly inflicts 413 to 459 fire damage to enemies within 10 yd of your active Fire totem. | not cast by any raced build | enhancement-dps (raid): insert before the filler: cast Fire Nova (+7.3%); enhancement-dps (raid): move down below 'cast Earth Shock': cast Fire Nova + only with 10s or more of the fight le (+0.2%) | 17% of the damage, 0.6 casts a kill: `opt-enhancement-dps-leveling-aoe` at 60 (enhancement-dps-aoe) | Now a spell with a 10 s cooldown instead of a totem: area damage around the fire totem. |
+| Lava Burst | Elemental | 60 | 10 sec | You hurl molten lava at the target, dealing 192 to 248 Fire damage. | 20% of the damage, 4.7 casts/min: [`opt-elemental-dps-raid-dps`](builds/opt-elemental-dps-raid-dps.md) (elemental-dps) | - | 10% of the damage, 1.2 casts a kill: `opt-elemental-dps-leveling-st` at 60 (elemental-dps-opt) | A new Elemental nuke (10 s cooldown, more damage with Flame Shock on the target); the simulator's Elemental rotation casts it. |
 | Totemic Recall | Elemental | 20 | - | Returns your totems to the earth, giving you 25% of the mana required to cast each totem destroyed by Totemic Recall. | not cast by any raced build | - | not cast | Utility. |
 | Rage of the Farseer | Enhancement | 40 | 3 min | Increases your attack speed by 30% for 25 sec. | no damage of its own, 0.3 casts/min: [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) (enhancement-dps) | - | not cast | Enhancement cooldown: 30% attack speed for 25 s. |
 | Totemic Projection | Enhancement | 22 | 1 min | Relocates your active totems to the specified location. | not cast by any raced build | - | not cast | Utility. |
@@ -202,3 +202,23 @@ Model findings (generated from the optimizer builds; scores are within each spec
 - **Raid DPS, Enhancement:** 11/31/9; biggest talents by score lost when removed: Stormstrike (34.0), Maelstrom Weapon (33.1), Shamanistic Focus (23.5), Flurry (16.4), Mental Dexterity (11.8); the hand draft `enhancement-raid-dps` is 11/31/9.
 
 Beta hypotheses: every build's unverified claims are its `open_questions`, collected in [`_reference/launch-checklist.md`](../../../_reference/launch-checklist.md); level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).
+
+## Report index
+
+Reports under this folder that no other page links to (generated):
+
+- [deep-optimization.md](deep-optimization.md): Shaman: deep optimisation of the raid damage specs (generated)
+- [heallab/deep-optimization-restoration.md](heallab/deep-optimization-restoration.md): Shaman Restoration: deep optimisation in the healer lab (generated)
+- [heallab/gear.md](heallab/gear.md): Healer gear — shaman
+- [heallab/resto-heal.md](heallab/resto-heal.md): Healer lab — shaman resto-heal
+- [optimizer/elemental-dps-parse.md](optimizer/elemental-dps-parse.md): shaman / forever / spec elemental-dps / profile parse
+- [optimizer/elemental-dps-raid-dps.md](optimizer/elemental-dps-raid-dps.md): shaman / forever / spec elemental-dps / profile raid-dps
+- [optimizer/enhancement-dps-parse.md](optimizer/enhancement-dps-parse.md): shaman / forever / spec enhancement-dps / profile parse
+- [optimizer/enhancement-dps-raid-dps.md](optimizer/enhancement-dps-raid-dps.md): shaman / forever / spec enhancement-dps / profile raid-dps
+- [optimizer/resto-heal-raid-heal.md](optimizer/resto-heal-raid-heal.md): shaman / forever / spec resto-heal / profile raid-heal
+- [raidsim/elemental-dps-environments.md](raidsim/elemental-dps-environments.md): DPS by environment — shaman elemental-dps
+- [raidsim/elemental-dps.md](raidsim/elemental-dps.md): Raid sim — shaman elemental-dps
+- [raidsim/enhancement-dps-environments.md](raidsim/enhancement-dps-environments.md): DPS by environment — shaman enhancement-dps
+- [raidsim/enhancement-dps.md](raidsim/enhancement-dps.md): Raid sim — shaman enhancement-dps
+- [raidsim/stormcaller-dps-environments.md](raidsim/stormcaller-dps-environments.md): DPS by environment — shaman stormcaller-dps
+- [raidsim/stormcaller-dps.md](raidsim/stormcaller-dps.md): Raid sim — shaman stormcaller-dps

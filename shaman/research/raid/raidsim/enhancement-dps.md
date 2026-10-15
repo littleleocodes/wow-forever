@@ -16,7 +16,7 @@
 | Action | Share |
 |---|---|
 | Auto Attack | 28.1% |
-| spell 439440 | 18.5% |
+| Windfury Weapon | 18.5% |
 | Earth Shock | 11.5% |
 | Flame Shock | 11.3% |
 | Stormstrike | 11.1% |
@@ -24,7 +24,7 @@
 | Attack | 6.6% |
 | Dragonbreath Chili | 2.7% |
 
-Mapped onto the spec model's sources: `white` 39%, `earth_shock` 16%, `flame_shock` 16%, `stormstrike` 15%, `lightning_bolt` 14%; 28% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
+Mapped onto the spec model's sources: `white` 31%, `windfury` 20%, `earth_shock` 13%, `flame_shock` 12%, `stormstrike` 12%, `lightning_bolt` 11%; 9% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:

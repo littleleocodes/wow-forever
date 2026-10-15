@@ -8,15 +8,15 @@ The build each spec's [leveling page](../../leveling/README.md) shows first, the
 
 | Spec | Page build | Rotation | L20 | L30 | L40 | L50 | L60 | Weighted |
 |---|---|---|---|---|---|---|---|---|
-| [Fury](../../leveling/fury.md) ✅ | [`opt-fury-dw-raid-leveling-st`](builds/opt-fury-dw-raid-leveling-st.md) | [fury-dw-raid](#fury-dw-raid) | 18.2 | 20.4 | 23.5 | 26.2 | 30.3 | 25.2 |
-| [Arms](../../leveling/arms.md) ✅ | [`opt-arms-2h-raid-leveling-st`](builds/opt-arms-2h-raid-leveling-st.md) | [arms-2h-raid](#arms-2h-raid) | 19.1 | 21.9 | 23.7 | 26.2 | 30.0 | 25.5 |
+| [Fury](../../leveling/fury.md) ✅ | [`fury-open-leveling`](builds/fury-open-leveling.md) | [fury-dw-raid](#fury-dw-raid) | 20.8 | 22.9 | 24.7 | 25.9 | 28.0 | 25.3 |
 | [Protection](../../leveling/protection.md) | [`protection-open-leveling`](builds/protection-open-leveling.md) | [prot-leveling](#prot-leveling) | 22.4 | 26.3 | 25.2 | 26.7 | 27.6 | 26.2 |
+| [Arms](../../leveling/arms.md) | [`opt-arms-2h-raid-leveling-st`](builds/opt-arms-2h-raid-leveling-st.md) | [arms-2h-raid](#arms-2h-raid) | 22.6 | 26.0 | 26.0 | 27.2 | 30.0 | 27.2 |
 
 ✅ = a recommended spec for leveling (the fastest, or within 3% of it).
 
 ## fury-dw-raid
 
-Played by the page build of [Fury](../../leveling/fury.md) ([`opt-fury-dw-raid-leveling-st`](builds/opt-fury-dw-raid-leveling-st.md)).
+Played by the page build of [Fury](../../leveling/fury.md) ([`fury-open-leveling`](builds/fury-open-leveling.md)).
 
 Single-target leveling fights against normal mobs of your level. Arms (a two-hander) and Fury (a weapon in each hand) fight in Battle Stance: Bloodrage and Charge on the pull (the mob is stunned 1 s; Death Wish too when the build has it), Battle Shout kept up, Victory Rush after a kill, Mortal Strike or Bloodthirst on cooldown, Overpower after a dodge or a Bloodthrill proc, Rend once, Execute under 20% with all the rage, Heroic Strike with spare rage; spells that need Berserker Stance (Whirlwind, Berserker Rage) are never cast. Protection fights sword and board in Defensive Stance: Charge from Battle Stance, then Shield Block while the mob hits, Revenge, Shield Slam, Rend and Heroic Strike. White swings generate rage by Forever's normalized rule (weapon speed, half for the off-hand, double on a crit; tables.RAGE_MODEL) (the mob dodges 5%, parries 5%, 10% of swings glance for 95%). Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below the eating threshold (65%; 40% under the tuned Arms and Fury rules), rage decays; a death costs 90 s.
 
@@ -43,15 +43,15 @@ Report: [fightlab/fury-dw-raid.md](fightlab/fury-dw-raid.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee (off-hand) | 4.9 | 5.8 | 7.0 | 8.0 | 9.4 | 20% |
-| Melee | 2.2 | 3.1 | 5.9 | 6.5 | 7.7 | 23% |
+| Melee (off-hand) | 5.6 | 6.8 | 7.5 | 8.2 | 9.4 | 20% |
+| Melee | 3.1 | 4.7 | 6.9 | 7.2 | 7.7 | 23% |
 | Bloodthirst | 0.0 | 0.0 | 2.0 | 2.3 | 2.7 | 17% |
-| Heroic Strike | 2.7 | 2.7 | 1.1 | 1.5 | 1.7 | 11% |
-| Execute | 0.0 | 1.2 | 1.1 | 1.3 | 1.4 | 17% |
-| Rend | 1.1 | 1.2 | 1.2 | 1.2 | 1.2 | 5% |
-| Overpower | 0.5 | 0.6 | 0.8 | 0.9 | 1.0 | 4% |
+| Heroic Strike | 2.5 | 2.0 | 0.5 | 0.9 | 1.7 | 11% |
+| Execute | 0.0 | 1.3 | 1.1 | 1.2 | 1.4 | 17% |
+| Rend | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 5% |
+| Overpower | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 | 4% |
 | Charge | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
-| Victory Rush | 0.2 | 0.4 | 0.6 | 0.7 | 0.8 | 1% |
+| Victory Rush | 0.3 | 0.6 | 0.6 | 0.7 | 0.8 | 1% |
 | Bloodrage | 0.3 | 0.3 | 0.3 | 0.4 | 0.4 | 0% |
 | Battle Shout | 0.1 | 0.1 | 0.1 | 0.1 | 0.2 | 0% |
 | Death Wish | 0.0 | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
@@ -60,16 +60,39 @@ Report: [fightlab/fury-dw-raid.md](fightlab/fury-dw-raid.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 2.1 | 3.1 | 5.2 | 5.7 | 6.6 | 38% |
-| Mortal Strike | 0.0 | 0.0 | 2.0 | 2.3 | 2.6 | 22% |
-| Execute | 0.0 | 1.1 | 1.0 | 1.1 | 1.3 | 17% |
-| Rend | 1.1 | 1.2 | 1.1 | 1.1 | 1.1 | 6% |
-| Overpower | 0.6 | 0.7 | 0.8 | 0.9 | 1.1 | 11% |
+| Melee | 2.7 | 4.0 | 5.9 | 5.9 | 6.6 | 38% |
+| Mortal Strike | 0.0 | 0.0 | 2.1 | 2.4 | 2.6 | 22% |
+| Execute | 0.0 | 1.3 | 1.1 | 1.2 | 1.3 | 17% |
+| Rend | 1.2 | 1.2 | 1.1 | 1.1 | 1.1 | 6% |
+| Overpower | 0.3 | 0.4 | 0.9 | 1.0 | 1.1 | 11% |
 | Charge | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
-| Victory Rush | 0.2 | 0.5 | 0.5 | 0.7 | 0.7 | 1% |
-| Bloodrage | 0.3 | 0.3 | 0.3 | 0.3 | 0.4 | 0% |
-| Heroic Strike | 2.0 | 1.6 | 0.1 | 0.2 | 0.2 | 2% |
+| Victory Rush | 0.4 | 0.7 | 0.7 | 0.7 | 0.7 | 1% |
+| Bloodrage | 0.3 | 0.3 | 0.3 | 0.4 | 0.4 | 0% |
+| Heroic Strike | 2.4 | 2.0 | 0.0 | 0.2 | 0.2 | 2% |
 | Battle Shout | 0.1 | 0.1 | 0.1 | 0.1 | 0.2 | 0% |
+
+Casts per kill of [`fury-open-leveling`](builds/fury-open-leveling.md): not recorded (its times per kill come from the race records of the search that found it, which keep times only; the table above has them).
+
+## prot-leveling
+
+Played by the page build of [Protection](../../leveling/protection.md) ([`protection-open-leveling`](builds/protection-open-leveling.md)).
+
+The priority in the player page's words:
+
+Before the fight: A one-handed weapon and a shield, **Defensive Stance**.
+
+1. **Battle Stance**, **Charge** in, spend the rage **Tactical Mastery** cannot keep on **Shield Slam** or **Rend**, then back to **Defensive Stance** (with **Vanguard**, **Charge** straight from **Defensive Stance**).
+2. **Shield Bash** a mob that is casting.
+3. **Shield Block** whenever the mob is hitting you.
+4. **Battle Shout**: keep it up (it lasts 3 minutes).
+5. **Concussion Blow** when you drop below half health; **Victory Rush** after a kill when you are below 90%.
+6. **Revenge** whenever it lights up (after a block, dodge or parry), then **Shield Slam** whenever ready.
+7. **Rend** once, while the mob has more than half its health.
+8. **Heroic Strike** with spare rage, keeping enough for **Shield Slam** and **Revenge**; two or more mobs: **Thunder Clap**, **Demoralizing Shout** and **Cleave**.
+
+Between fights: You rarely need to eat or bandage: the shield soaks most of the damage.
+
+Casts per kill of [`protection-open-leveling`](builds/protection-open-leveling.md): not recorded (its times per kill come from the race records of the search that found it, which keep times only; the table above has them).
 
 ## arms-2h-raid
 
@@ -100,52 +123,31 @@ Report: [fightlab/arms-2h-raid.md](fightlab/arms-2h-raid.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 2.1 | 3.1 | 5.2 | 5.7 | 6.6 | 38% |
-| Mortal Strike | 0.0 | 0.0 | 2.0 | 2.3 | 2.6 | 22% |
-| Execute | 0.0 | 1.1 | 1.0 | 1.1 | 1.3 | 17% |
-| Rend | 1.1 | 1.2 | 1.1 | 1.1 | 1.1 | 6% |
-| Overpower | 0.6 | 0.7 | 0.8 | 0.9 | 1.1 | 11% |
+| Melee | 2.7 | 4.0 | 5.9 | 5.9 | 6.6 | 38% |
+| Mortal Strike | 0.0 | 0.0 | 2.1 | 2.4 | 2.6 | 22% |
+| Execute | 0.0 | 1.3 | 1.1 | 1.2 | 1.3 | 17% |
+| Rend | 1.2 | 1.2 | 1.1 | 1.1 | 1.1 | 6% |
+| Overpower | 0.3 | 0.4 | 0.9 | 1.0 | 1.1 | 11% |
 | Charge | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
-| Victory Rush | 0.2 | 0.5 | 0.5 | 0.7 | 0.7 | 1% |
-| Bloodrage | 0.3 | 0.3 | 0.3 | 0.3 | 0.4 | 0% |
-| Heroic Strike | 2.0 | 1.6 | 0.1 | 0.2 | 0.2 | 2% |
+| Victory Rush | 0.4 | 0.7 | 0.7 | 0.7 | 0.7 | 1% |
+| Bloodrage | 0.3 | 0.3 | 0.3 | 0.4 | 0.4 | 0% |
+| Heroic Strike | 2.4 | 2.0 | 0.0 | 0.2 | 0.2 | 2% |
 | Battle Shout | 0.1 | 0.1 | 0.1 | 0.1 | 0.2 | 0% |
 
 ### [`leveling-arms`](builds/leveling-arms.md)
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 2.1 | 3.2 | 5.3 | 5.8 | 6.7 | 38% |
-| Mortal Strike | 0.0 | 0.0 | 2.0 | 2.3 | 2.6 | 22% |
-| Execute | 0.0 | 1.1 | 1.1 | 1.1 | 1.3 | 16% |
-| Overpower | 0.7 | 0.8 | 0.9 | 1.0 | 1.2 | 13% |
-| Rend | 1.1 | 1.2 | 1.1 | 1.1 | 1.1 | 6% |
+| Melee | 2.7 | 4.0 | 5.9 | 6.0 | 6.7 | 38% |
+| Mortal Strike | 0.0 | 0.0 | 2.1 | 2.4 | 2.6 | 22% |
+| Execute | 0.0 | 1.3 | 1.1 | 1.2 | 1.3 | 16% |
+| Overpower | 0.3 | 0.4 | 1.0 | 1.1 | 1.2 | 13% |
+| Rend | 1.2 | 1.2 | 1.1 | 1.1 | 1.1 | 6% |
 | Charge | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
-| Victory Rush | 0.2 | 0.5 | 0.6 | 0.7 | 0.8 | 1% |
+| Victory Rush | 0.4 | 0.7 | 0.6 | 0.7 | 0.8 | 1% |
 | Bloodrage | 0.3 | 0.3 | 0.3 | 0.4 | 0.4 | 0% |
-| Heroic Strike | 1.9 | 1.6 | 0.1 | 0.2 | 0.2 | 2% |
+| Heroic Strike | 2.4 | 2.0 | 0.0 | 0.2 | 0.2 | 2% |
 | Battle Shout | 0.1 | 0.1 | 0.1 | 0.1 | 0.2 | 0% |
-
-## prot-leveling
-
-Played by the page build of [Protection](../../leveling/protection.md) ([`protection-open-leveling`](builds/protection-open-leveling.md)).
-
-The priority in the player page's words:
-
-Before the fight: A one-handed weapon and a shield, **Defensive Stance**.
-
-1. **Battle Stance**, **Charge** in, spend the rage **Tactical Mastery** cannot keep on **Shield Slam** or **Rend**, then back to **Defensive Stance** (with **Vanguard**, **Charge** straight from **Defensive Stance**).
-2. **Shield Bash** a mob that is casting.
-3. **Shield Block** whenever the mob is hitting you.
-4. **Battle Shout**: keep it up (it lasts 3 minutes).
-5. **Concussion Blow** when you drop below half health; **Victory Rush** after a kill when you are below 90%.
-6. **Revenge** whenever it lights up (after a block, dodge or parry), then **Shield Slam** whenever ready.
-7. **Rend** once, while the mob has more than half its health.
-8. **Heroic Strike** with spare rage, keeping enough for **Shield Slam** and **Revenge**; two or more mobs: **Thunder Clap**, **Demoralizing Shout** and **Cleave**.
-
-Between fights: You rarely need to eat or bandage: the shield soaks most of the damage.
-
-Casts per kill of [`protection-open-leveling`](builds/protection-open-leveling.md): not recorded (its times per kill come from the race records of the search that found it, which keep times only; the table above has them).
 
 ## arms-2h-raid in pulls of several mobs (research)
 
@@ -159,52 +161,52 @@ Report: [fightlab/arms-2h-raid-aoe.md](fightlab/arms-2h-raid-aoe.md).
 
 | Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|
-| Melee | 4.7 | 5.9 | 6.3 | 6.8 | 43% |
-| Thunder Clap | 1.3 | 1.1 | 1.2 | 1.5 | 6% |
-| Rend | 1.0 | 1.1 | 1.1 | 1.1 | 8% |
-| Execute | 0.8 | 1.0 | 1.1 | 1.1 | 13% |
-| Whirlwind | 0.0 | 0.7 | 0.8 | 0.9 | 14% |
-| Overpower | 0.4 | 0.4 | 0.5 | 0.5 | 6% |
-| Bloodthirst | 0.0 | 0.4 | 0.4 | 0.4 | 2% |
-| Charge | 0.3 | 0.3 | 0.4 | 0.4 | 0% |
-| Bloodrage | 0.3 | 0.3 | 0.3 | 0.4 | 0% |
-| Cleave | 0.4 | 0.2 | 0.2 | 0.3 | 4% |
-| Victory Rush | 0.2 | 0.2 | 0.2 | 0.2 | 0% |
-| Battle Shout | 0.2 | 0.2 | 0.2 | 0.2 | 0% |
-| Heroic Strike | 0.3 | 0.0 | 0.0 | 0.0 | 0% |
-
-### `cand-aoe-r4`
-
-| Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
-|---|---|---|---|---|---|
-| Melee | 4.7 | 5.9 | 6.3 | 6.7 | 42% |
-| Thunder Clap | 1.3 | 1.1 | 1.2 | 1.6 | 7% |
-| Rend | 1.0 | 1.1 | 1.1 | 1.1 | 8% |
-| Execute | 0.8 | 1.0 | 1.0 | 1.1 | 13% |
-| Whirlwind | 0.0 | 0.7 | 0.8 | 0.9 | 15% |
-| Overpower | 0.4 | 0.4 | 0.5 | 0.5 | 4% |
-| Bloodthirst | 0.0 | 0.4 | 0.4 | 0.4 | 2% |
-| Cleave | 0.4 | 0.2 | 0.3 | 0.4 | 5% |
-| Charge | 0.3 | 0.3 | 0.4 | 0.4 | 0% |
-| Bloodrage | 0.3 | 0.3 | 0.4 | 0.4 | 0% |
-| Battle Shout | 0.2 | 0.2 | 0.2 | 0.2 | 0% |
-| Victory Rush | 0.2 | 0.2 | 0.2 | 0.2 | 0% |
-| Heroic Strike | 0.3 | 0.0 | 0.0 | 0.0 | 0% |
+| Melee | 4.4 | 5.9 | 6.2 | 6.8 | 44% |
+| Thunder Clap | 1.5 | 1.9 | 2.1 | 2.5 | 12% |
+| Rend | 0.9 | 1.0 | 1.0 | 1.1 | 7% |
+| Cleave | 0.5 | 0.8 | 1.0 | 1.1 | 15% |
+| Execute | 0.9 | 0.9 | 0.9 | 0.8 | 11% |
+| Overpower | 0.3 | 0.4 | 0.5 | 0.5 | 6% |
+| Charge | 0.3 | 0.4 | 0.4 | 0.4 | 0% |
+| Bloodrage | 0.3 | 0.4 | 0.4 | 0.4 | 0% |
+| Bloodthirst | 0.0 | 0.5 | 0.5 | 0.4 | 3% |
+| Battle Shout | 0.2 | 0.2 | 0.2 | 0.3 | 0% |
+| Death Wish | 0.1 | 0.2 | 0.2 | 0.2 | 0% |
+| Victory Rush | 0.2 | 0.2 | 0.2 | 0.1 | 0% |
+| Heroic Strike | 0.4 | 0.0 | 0.0 | 0.0 | 0% |
 
 ### `cand-aoe-r5`
 
 | Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|
-| Melee | 4.7 | 5.9 | 6.3 | 6.8 | 43% |
-| Thunder Clap | 1.3 | 1.1 | 1.2 | 1.5 | 6% |
-| Rend | 1.0 | 1.1 | 1.1 | 1.1 | 8% |
-| Execute | 0.8 | 1.0 | 1.1 | 1.1 | 13% |
-| Whirlwind | 0.0 | 0.7 | 0.8 | 0.9 | 14% |
-| Overpower | 0.4 | 0.4 | 0.5 | 0.5 | 6% |
-| Bloodthirst | 0.0 | 0.4 | 0.4 | 0.4 | 2% |
-| Charge | 0.3 | 0.3 | 0.4 | 0.4 | 0% |
-| Bloodrage | 0.3 | 0.3 | 0.3 | 0.4 | 0% |
-| Cleave | 0.4 | 0.2 | 0.2 | 0.3 | 4% |
-| Victory Rush | 0.2 | 0.2 | 0.2 | 0.2 | 0% |
-| Battle Shout | 0.2 | 0.2 | 0.2 | 0.2 | 0% |
-| Heroic Strike | 0.3 | 0.0 | 0.0 | 0.0 | 0% |
+| Melee | 4.4 | 5.9 | 6.3 | 6.9 | 45% |
+| Thunder Clap | 1.4 | 1.8 | 2.1 | 2.6 | 12% |
+| Rend | 0.9 | 1.0 | 1.1 | 1.1 | 7% |
+| Cleave | 0.5 | 0.8 | 1.0 | 1.1 | 15% |
+| Execute | 0.9 | 0.9 | 0.9 | 0.8 | 11% |
+| Overpower | 0.3 | 0.4 | 0.4 | 0.5 | 5% |
+| Charge | 0.3 | 0.4 | 0.4 | 0.4 | 0% |
+| Bloodrage | 0.3 | 0.4 | 0.4 | 0.4 | 0% |
+| Bloodthirst | 0.0 | 0.5 | 0.5 | 0.4 | 3% |
+| Battle Shout | 0.2 | 0.2 | 0.3 | 0.3 | 0% |
+| Death Wish | 0.1 | 0.2 | 0.2 | 0.2 | 0% |
+| Victory Rush | 0.2 | 0.2 | 0.2 | 0.1 | 0% |
+| Heroic Strike | 0.4 | 0.0 | 0.0 | 0.0 | 0% |
+
+### `cand-aoe-r6`
+
+| Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
+|---|---|---|---|---|---|
+| Melee | 4.4 | 5.9 | 6.2 | 6.8 | 44% |
+| Thunder Clap | 1.5 | 1.9 | 2.1 | 2.5 | 12% |
+| Rend | 0.9 | 1.0 | 1.0 | 1.1 | 7% |
+| Cleave | 0.5 | 0.8 | 1.0 | 1.1 | 15% |
+| Execute | 0.9 | 0.9 | 0.9 | 0.8 | 11% |
+| Overpower | 0.3 | 0.4 | 0.5 | 0.5 | 6% |
+| Charge | 0.3 | 0.4 | 0.4 | 0.4 | 0% |
+| Bloodrage | 0.3 | 0.4 | 0.4 | 0.4 | 0% |
+| Bloodthirst | 0.0 | 0.5 | 0.5 | 0.4 | 3% |
+| Battle Shout | 0.2 | 0.2 | 0.2 | 0.3 | 0% |
+| Death Wish | 0.1 | 0.2 | 0.2 | 0.2 | 0% |
+| Victory Rush | 0.2 | 0.2 | 0.2 | 0.1 | 0% |
+| Heroic Strike | 0.4 | 0.0 | 0.0 | 0.0 | 0% |

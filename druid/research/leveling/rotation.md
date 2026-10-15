@@ -6,17 +6,17 @@
 
 The build each spec's [leveling page](../../leveling/README.md) shows first, the fight-lab rotation it plays and its time per kill (seconds; the level-weighted mean counts higher levels more). Each spec plays a rotation built for its own tree.
 
-| Spec | Page build | Rotation | L15 | L20 | L30 | L40 | L50 | L60 | Weighted |
-|---|---|---|---|---|---|---|---|---|---|
-| [Feral Combat](../../leveling/feral-combat.md) ✅ | [`opt-feral-cat-dps-leveling-st`](builds/opt-feral-cat-dps-leveling-st.md) | [feral-cat-dps](#feral-cat-dps) | 26.6 | 17.8 | 22.7 | 26.6 | 29.2 | 33.1 | 27.7 |
-| [Restoration](../../leveling/restoration.md) | [`restoration-leveling`](builds/restoration-leveling.md) | [feral-cat-dps](#feral-cat-dps) | - | 23.0 | 28.8 | 35.2 | 38.7 | 41.5 | 35.8 |
-| [Balance](../../leveling/balance.md) | [`balance-open-leveling`](builds/balance-open-leveling.md) | [balance-dps](#balance-dps) | - | 44.3 | 51.5 | 51.8 | 45.0 | 42.1 | 46.4 |
+| Spec | Page build | Rotation | L20 | L30 | L40 | L50 | L60 | Weighted |
+|---|---|---|---|---|---|---|---|---|
+| [Feral Combat](../../leveling/feral-combat.md) ✅ | [`feral-combat-open-leveling`](builds/feral-combat-open-leveling.md) | [feral-cat-dps](#feral-cat-dps) | 22.2 | 25.6 | 28.8 | 29.9 | 30.9 | 28.6 |
+| [Restoration](../../leveling/restoration.md) | [`restoration-leveling`](builds/restoration-leveling.md) | [feral-cat-dps](#feral-cat-dps) | 23.0 | 28.8 | 35.2 | 38.7 | 41.5 | 35.8 |
+| [Balance](../../leveling/balance.md) | [`balance-open-leveling`](builds/balance-open-leveling.md) | [balance-dps](#balance-dps) | 44.3 | 51.5 | 51.8 | 45.0 | 42.1 | 46.4 |
 
 ✅ = a recommended spec for leveling (the fastest, or within 3% of it).
 
 ## feral-cat-dps
 
-Played by the page builds of [Feral Combat](../../leveling/feral-combat.md) ([`opt-feral-cat-dps-leveling-st`](builds/opt-feral-cat-dps-leveling-st.md)), [Restoration](../../leveling/restoration.md) ([`restoration-leveling`](builds/restoration-leveling.md)).
+Played by the page builds of [Feral Combat](../../leveling/feral-combat.md) ([`feral-combat-open-leveling`](builds/feral-combat-open-leveling.md)), [Restoration](../../leveling/restoration.md) ([`restoration-leveling`](builds/restoration-leveling.md)).
 
 Single-target leveling fights against normal mobs of your level. Levels 10-19 in Bear Form: walk up, Enrage, Demoralizing Roar, Maul on every swing the rage allows, Bash when low or against a casting mob. From 20 in Cat Form: prowl up behind the mob and open with Ravage from 32 (Shred from 22, Claw before; Pounce comes at 36, after Ravage), Tiger's Fury (from 24), Rake once, Claw to five points (the mob faces you, so Shred is only for the opener), Ferocious Bite whenever it kills (from 32), Rip at five points on a mob above half health (before Ferocious Bite: Rip at 2 points on a mob above 40% of its health), Berserk on the pull; when low, shift out for a Regrowth (Nature's Swiftness + Healing Touch in an emergency) and shift back at 55% of base mana, Furor carrying the energy. Between fights: 2 s loot, 6 s travel, Rejuvenation / Regrowth in caster form when hurt (only with the mana to shift back) then Cat Form again, water below 35% mana (the tuned rule drinks lower).
 
@@ -43,41 +43,39 @@ Report: [fightlab/feral-cat-dps.md](fightlab/feral-cat-dps.md).
 
 | Ability | L15 casts/kill | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|---|
-| Melee | 4.0 | 8.8 | 12.7 | 15.8 | 17.1 | 19.8 | 34% |
-| Claw | 0.0 | 3.9 | 2.2 | 3.1 | 3.3 | 3.8 | 22% |
-| Rake | 0.0 | 0.0 | 1.3 | 1.5 | 1.6 | 1.8 | 8% |
-| Ferocious Bite | 0.0 | 0.0 | 0.0 | 0.9 | 1.0 | 1.1 | 18% |
+| Melee | 5.7 | 12.7 | 15.2 | 18.1 | 17.9 | 19.8 | 34% |
+| Claw | 0.0 | 4.9 | 2.8 | 3.5 | 3.4 | 3.8 | 22% |
+| Rake | 0.0 | 0.0 | 1.6 | 1.7 | 1.7 | 1.8 | 8% |
+| Ferocious Bite | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.1 | 18% |
 | Ravage | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.0 | 15% |
-| Tiger's Fury | 0.0 | 0.0 | 0.6 | 0.8 | 0.8 | 1.0 | 0% |
-| Rip | 0.0 | 0.8 | 1.0 | 0.0 | 0.0 | 0.1 | 3% |
-| Enrage | 0.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Tiger's Fury | 0.0 | 0.0 | 0.7 | 0.9 | 0.9 | 1.0 | 0% |
+| Rip | 0.0 | 1.0 | 1.0 | 0.0 | 0.0 | 0.1 | 3% |
+| Enrage | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Demoralizing Roar | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Maul | 3.3 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Maul | 4.6 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Bash | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Shred | 0.0 | 0.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Regrowth | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Cat Form | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ### [`leveling-feral`](builds/leveling-feral.md)
 
 | Ability | L15 casts/kill | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|---|
-| Melee | 4.0 | 8.9 | 12.8 | 15.9 | 17.2 | 20.1 | 34% |
-| Claw | 0.0 | 3.9 | 2.3 | 3.1 | 3.3 | 3.9 | 22% |
-| Rake | 0.0 | 0.0 | 1.3 | 1.5 | 1.6 | 1.8 | 8% |
-| Ferocious Bite | 0.0 | 0.0 | 0.0 | 0.9 | 1.0 | 1.1 | 18% |
+| Melee | 5.7 | 12.7 | 15.2 | 18.1 | 17.9 | 20.1 | 34% |
+| Claw | 0.0 | 4.9 | 2.8 | 3.5 | 3.4 | 3.9 | 22% |
+| Rake | 0.0 | 0.0 | 1.6 | 1.7 | 1.7 | 1.8 | 8% |
+| Ferocious Bite | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.1 | 18% |
 | Ravage | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.0 | 14% |
-| Tiger's Fury | 0.0 | 0.0 | 0.6 | 0.8 | 0.8 | 1.0 | 0% |
-| Rip | 0.0 | 0.8 | 1.0 | 0.0 | 0.0 | 0.1 | 3% |
+| Tiger's Fury | 0.0 | 0.0 | 0.7 | 0.9 | 0.9 | 1.0 | 0% |
+| Rip | 0.0 | 1.0 | 1.0 | 0.0 | 0.0 | 0.1 | 3% |
 | Regrowth | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Cat Form | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Enrage | 0.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Enrage | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Demoralizing Roar | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Maul | 3.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Maul | 4.6 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Bash | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Shred | 0.0 | 0.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0% |
 
-Casts per kill of [`restoration-leveling`](builds/restoration-leveling.md): not recorded (its times per kill come from the race records of the search that found it, which keep times only; the table above has them).
+Casts per kill of [`feral-combat-open-leveling`](builds/feral-combat-open-leveling.md), [`restoration-leveling`](builds/restoration-leveling.md): not recorded (their times per kill come from the race records of the searches that found them, which keep times only; the table above has them).
 
 ## balance-dps
 
@@ -105,19 +103,17 @@ Report: [fightlab/balance-dps-opt.md](fightlab/balance-dps-opt.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Starfire | 0.0 | 4.8 | 5.6 | 5.1 | 5.0 | 63% |
-| Wrath | 10.2 | 2.6 | 3.1 | 2.9 | 3.3 | 12% |
-| Moonfire | 2.4 | 2.2 | 2.4 | 2.3 | 2.2 | 25% |
-| Wand | 0.0 | 0.0 | 0.3 | 0.3 | 0.2 | 0% |
+| Starfire | 0.0 | 4.7 | 5.8 | 5.3 | 5.3 | 67% |
+| Wrath | 10.2 | 2.7 | 3.0 | 2.9 | 2.9 | 11% |
+| Moonfire | 2.5 | 1.9 | 2.1 | 1.7 | 1.7 | 22% |
 
 ### `cand-bal-r1`
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Starfire | 0.0 | 4.8 | 5.6 | 5.1 | 5.0 | 63% |
-| Wrath | 10.2 | 2.6 | 3.1 | 2.9 | 3.3 | 12% |
-| Moonfire | 2.4 | 2.2 | 2.4 | 2.3 | 2.2 | 25% |
-| Wand | 0.0 | 0.0 | 0.3 | 0.3 | 0.2 | 0% |
+| Starfire | 0.0 | 4.7 | 5.7 | 5.3 | 5.3 | 67% |
+| Wrath | 10.3 | 2.7 | 2.9 | 2.9 | 2.9 | 11% |
+| Moonfire | 2.5 | 1.9 | 2.1 | 1.7 | 1.7 | 22% |
 
 Casts per kill of [`balance-open-leveling`](builds/balance-open-leveling.md): not recorded (its times per kill come from the race records of the search that found it, which keep times only; the table above has them).
 
@@ -129,7 +125,7 @@ Balance: Moonfire and Insect Swarm up, Wrath while the mob walks in (Eclipse cha
 
 Report: [fightlab/balance-dps.md](fightlab/balance-dps.md).
 
-### [`opt-balance-dps-leveling-st`](builds/opt-balance-dps-leveling-st.md)
+### [`opt-balance-dps-leveling-st`](builds/opt-balance-dps-leveling-st.md) (balance-dps report)
 
 | Ability | L15 casts/kill | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|---|
@@ -141,17 +137,15 @@ Report: [fightlab/balance-dps.md](fightlab/balance-dps.md).
 
 | Ability | L15 casts/kill | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|---|
-| Melee | 4.0 | 8.8 | 12.7 | 15.8 | 17.1 | 19.8 | 34% |
-| Claw | 0.0 | 3.9 | 2.2 | 3.1 | 3.3 | 3.8 | 22% |
-| Rake | 0.0 | 0.0 | 1.3 | 1.5 | 1.6 | 1.8 | 8% |
-| Ferocious Bite | 0.0 | 0.0 | 0.0 | 0.9 | 1.0 | 1.1 | 18% |
+| Melee | 5.7 | 12.7 | 15.2 | 18.1 | 17.9 | 19.8 | 34% |
+| Claw | 0.0 | 4.9 | 2.8 | 3.5 | 3.4 | 3.8 | 22% |
+| Rake | 0.0 | 0.0 | 1.6 | 1.7 | 1.7 | 1.8 | 8% |
+| Ferocious Bite | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.1 | 18% |
 | Ravage | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.0 | 15% |
-| Tiger's Fury | 0.0 | 0.0 | 0.6 | 0.8 | 0.8 | 1.0 | 0% |
-| Rip | 0.0 | 0.8 | 1.0 | 0.0 | 0.0 | 0.1 | 3% |
-| Enrage | 0.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Tiger's Fury | 0.0 | 0.0 | 0.7 | 0.9 | 0.9 | 1.0 | 0% |
+| Rip | 0.0 | 1.0 | 1.0 | 0.0 | 0.0 | 0.1 | 3% |
+| Enrage | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Demoralizing Roar | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Maul | 3.3 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Maul | 4.6 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Bash | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Shred | 0.0 | 0.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Regrowth | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Cat Form | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |

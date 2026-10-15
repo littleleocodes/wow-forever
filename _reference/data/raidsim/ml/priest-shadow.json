@@ -2513,5 +2513,528 @@
   },
   "best_hand": null,
   "gain_vs_hand": null
+ },
+ "tidied": {
+  "bis-dummy": {
+   "allocation": {
+    "Discipline": [
+     [
+      "Twin Disciplines",
+      5
+     ],
+     [
+      "Silent Resolve",
+      3
+     ],
+     [
+      "Martyrdom",
+      2
+     ],
+     [
+      "Mental Agility",
+      2
+     ],
+     [
+      "Inner Focus",
+      1
+     ],
+     [
+      "Meditation",
+      2
+     ],
+     [
+      "Mental Strength",
+      3
+     ]
+    ],
+    "Holy": [],
+    "Shadow": [
+     [
+      "Shadow Focus",
+      5
+     ],
+     [
+      "Shadow Affinity",
+      3
+     ],
+     [
+      "Improved Shadow Word: Pain",
+      2
+     ],
+     [
+      "Improved Mind Blast",
+      5
+     ],
+     [
+      "Mind Flay",
+      1
+     ],
+     [
+      "Improved Mind Flay",
+      2
+     ],
+     [
+      "Vampiric Embrace",
+      1
+     ],
+     [
+      "Shadow Weaving",
+      3
+     ],
+     [
+      "Silence",
+      1
+     ],
+     [
+      "Devouring Contagion",
+      2
+     ],
+     [
+      "Early Demise",
+      2
+     ],
+     [
+      "Darkness",
+      5
+     ],
+     [
+      "Shadowform",
+      1
+     ]
+    ]
+   },
+   "split": "18/0/33",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Improved Power Word: Shield",
+     "to": "Meditation",
+     "seed1": 0.00034465683937878744,
+     "seed2": -0.0003077651186873531,
+     "utility": "mana"
+    }
+   ],
+   "abilities_never_cast": [
+    "Vampiric Embrace"
+   ],
+   "final_seed3": -0.00039566281764080724
+  },
+  "bis-raid": {
+   "allocation": {
+    "Discipline": [
+     [
+      "Twin Disciplines",
+      5
+     ],
+     [
+      "Silent Resolve",
+      3
+     ],
+     [
+      "Martyrdom",
+      2
+     ],
+     [
+      "Inner Focus",
+      1
+     ],
+     [
+      "Meditation",
+      2
+     ],
+     [
+      "Mental Strength",
+      3
+     ],
+     [
+      "Mental Agility",
+      2
+     ]
+    ],
+    "Holy": [],
+    "Shadow": [
+     [
+      "Shadow Focus",
+      5
+     ],
+     [
+      "Shadow Affinity",
+      3
+     ],
+     [
+      "Improved Shadow Word: Pain",
+      2
+     ],
+     [
+      "Improved Mind Blast",
+      5
+     ],
+     [
+      "Mind Flay",
+      1
+     ],
+     [
+      "Improved Mind Flay",
+      2
+     ],
+     [
+      "Vampiric Embrace",
+      1
+     ],
+     [
+      "Shadow Weaving",
+      3
+     ],
+     [
+      "Silence",
+      1
+     ],
+     [
+      "Devouring Contagion",
+      2
+     ],
+     [
+      "Early Demise",
+      2
+     ],
+     [
+      "Darkness",
+      5
+     ],
+     [
+      "Shadowform",
+      1
+     ]
+    ]
+   },
+   "split": "18/0/33",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Meditation",
+     "to": "Martyrdom",
+     "seed1": 0.0017663966413228316,
+     "seed2": 0.0002181416330044872,
+     "utility": "interrupt"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Improved Power Word: Shield",
+     "to": "Mental Agility",
+     "seed1": 2.5348574797190437e-05,
+     "seed2": 9.234179675843279e-05,
+     "utility": "mana"
+    },
+    {
+     "round": 3,
+     "kind": "utility",
+     "from": "Improved Power Word: Shield",
+     "to": "Mental Agility",
+     "seed1": -0.00022896360320423526,
+     "seed2": 4.0108518555070916e-05,
+     "utility": "mana"
+    }
+   ],
+   "abilities_never_cast": [
+    "Vampiric Embrace"
+   ],
+   "final_seed3": 0.0004418397521939177
+  },
+  "prebis-dummy": {
+   "allocation": {
+    "Discipline": [
+     [
+      "Twin Disciplines",
+      5
+     ],
+     [
+      "Silent Resolve",
+      3
+     ],
+     [
+      "Martyrdom",
+      2
+     ],
+     [
+      "Mental Agility",
+      2
+     ],
+     [
+      "Inner Focus",
+      1
+     ],
+     [
+      "Meditation",
+      2
+     ],
+     [
+      "Mental Strength",
+      3
+     ]
+    ],
+    "Holy": [],
+    "Shadow": [
+     [
+      "Shadow Focus",
+      5
+     ],
+     [
+      "Shadow Affinity",
+      3
+     ],
+     [
+      "Improved Shadow Word: Pain",
+      2
+     ],
+     [
+      "Improved Mind Blast",
+      5
+     ],
+     [
+      "Mind Flay",
+      1
+     ],
+     [
+      "Improved Mind Flay",
+      2
+     ],
+     [
+      "Vampiric Embrace",
+      1
+     ],
+     [
+      "Shadow Weaving",
+      3
+     ],
+     [
+      "Silence",
+      1
+     ],
+     [
+      "Devouring Contagion",
+      2
+     ],
+     [
+      "Early Demise",
+      2
+     ],
+     [
+      "Darkness",
+      5
+     ],
+     [
+      "Shadowform",
+      1
+     ]
+    ]
+   },
+   "split": "18/0/33",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Improved Power Word: Shield",
+     "to": "Meditation",
+     "seed1": 0.0007303876616717719,
+     "seed2": -2.1365021469543777e-05,
+     "utility": "mana"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Wand Specialization",
+     "to": "Mental Agility",
+     "seed1": -0.0007014602090923416,
+     "seed2": -0.0006616955008067471,
+     "utility": "mana"
+    }
+   ],
+   "abilities_never_cast": [
+    "Vampiric Embrace"
+   ],
+   "final_seed3": -0.0009961520220161946
+  },
+  "prebis-raid": {
+   "allocation": {
+    "Discipline": [
+     [
+      "Twin Disciplines",
+      5
+     ],
+     [
+      "Silent Resolve",
+      3
+     ],
+     [
+      "Martyrdom",
+      2
+     ],
+     [
+      "Inner Focus",
+      1
+     ],
+     [
+      "Meditation",
+      2
+     ],
+     [
+      "Mental Strength",
+      5
+     ],
+     [
+      "Mental Agility",
+      2
+     ]
+    ],
+    "Holy": [],
+    "Shadow": [
+     [
+      "Shadow Focus",
+      5
+     ],
+     [
+      "Shadow Affinity",
+      3
+     ],
+     [
+      "Improved Shadow Word: Pain",
+      2
+     ],
+     [
+      "Improved Mind Blast",
+      5
+     ],
+     [
+      "Mind Flay",
+      1
+     ],
+     [
+      "Improved Mind Flay",
+      2
+     ],
+     [
+      "Vampiric Embrace",
+      1
+     ],
+     [
+      "Shadow Weaving",
+      3
+     ],
+     [
+      "Silence",
+      1
+     ],
+     [
+      "Devouring Contagion",
+      2
+     ],
+     [
+      "Darkness",
+      5
+     ],
+     [
+      "Shadowform",
+      1
+     ]
+    ]
+   },
+   "split": "20/0/31",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Meditation",
+     "to": "Martyrdom",
+     "seed1": 0.001734667428214598,
+     "seed2": 0.0002190841802374166,
+     "utility": "interrupt"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Meditation",
+     "to": "Silent Resolve",
+     "seed1": 0.00031331435812465003,
+     "seed2": -2.388823246923799e-05,
+     "utility": "threat"
+    },
+    {
+     "round": 3,
+     "kind": "utility",
+     "from": "Shadow Reach",
+     "to": "Shadow Affinity",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 4,
+     "kind": "utility",
+     "from": "Shadow Reach",
+     "to": "Shadow Affinity",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 5,
+     "kind": "utility",
+     "from": "Holy Precision",
+     "to": "Meditation",
+     "seed1": -0.00031321622298485785,
+     "seed2": 2.3888803130533987e-05,
+     "utility": "mana"
+    },
+    {
+     "round": 6,
+     "kind": "utility",
+     "from": "Holy Precision",
+     "to": "Mental Agility",
+     "seed1": 1.3944992482306517e-05,
+     "seed2": 8.924843187396725e-05,
+     "utility": "mana"
+    },
+    {
+     "round": 7,
+     "kind": "utility",
+     "from": "Improved Power Word: Shield",
+     "to": "Mental Agility",
+     "seed1": -0.00022138364996004967,
+     "seed2": 4.5406051397245406e-05,
+     "utility": "mana"
+    }
+   ],
+   "abilities_never_cast": [
+    "Vampiric Embrace"
+   ],
+   "final_seed3": 0.0004798572887343422
+  }
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "shadow-dps",
+    "dps": 702.07,
+    "se": 0.078
+   },
+   "opt-shadow-dps-raid-dps": {
+    "entry": "shadow-dps",
+    "dps": 702.11,
+    "se": 0.078
+   }
+  },
+  "best_hand": null,
+  "gain_vs_hand": null
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-10-15",
+  "setting": "raid",
+  "why": "confirms opt-shadow-dps-raid-dps (-0.01% in a full raid)"
  }
 }

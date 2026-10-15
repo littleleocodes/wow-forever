@@ -7,8 +7,8 @@ Every legal 51-point build, no tree rule, searched in each leveling rotation of 
 | Rotation | Trees that level with it | Open winner | Family | Seconds per kill (20-60) | vs our fastest there |
 |---|---|---|---|---|---|
 | affliction-leveling | Affliction | [27/24/0](https://talentsforever.com/warlock/60/2345002013400102-00152312012102013--6) | Hybrid Affliction/Demonology | 39.67 | +6.2% faster than affliction-leveling |
-| demonology-leveling | Demonology | [27/24/0](https://talentsforever.com/warlock/60/2335002013500102-01051332011003013--6) | Hybrid Affliction/Demonology | 32.94 | +6.2% faster than demonology-leveling |
-| destruction-leveling | Destruction | [29/10/12](https://talentsforever.com/warlock/60/2344002013500104-00050302-014232-6) | Hybrid Affliction/Destruction | 35.42 | +6.7% faster than destruction-leveling |
+| demonology-leveling | Demonology | [27/24/0](https://talentsforever.com/warlock/60/2335002013500102-01051332011003013--6) | Hybrid Affliction/Demonology | 32.73 | +6.8% faster than demonology-leveling |
+| destruction-leveling | Destruction | [29/10/12](https://talentsforever.com/warlock/60/2344002013500104-00050302-014232-6) | Hybrid Affliction/Destruction | 35.93 | +5.2% faster than destruction-leveling |
 
 ## affliction-leveling
 
@@ -75,7 +75,7 @@ Build (2026-10-12, open_builds.py): `affliction-demonology-open-leveling`.
 | Master Summoner | 1 | +0.00 | +0.00 |
 | Fel Vitality | 3 | -0.08 | -0.03 |
 
-Race at levels 20-60 (seconds per kill): open winner 32.94, finalist 27/24/0 (stats model order) 34.81, finalist 27/24/0 (own tree first order) 34.82, demonology-leveling 34.97.
+Race at levels 20-60 (seconds per kill): open winner 32.73, finalist 27/24/0 (stats model order) 34.70, finalist 27/24/0 (own tree first order) 34.71, demonology-leveling 34.97.
 
 **Synergy certificate** (2026-10-12, fightlab/fl_synergy.py): 46 relevant talents, 27 the winner lacks; 931 pairs measured around 27/24/0 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Shadowburn + Demonic Brand +4.5% (build -6.3%), Shadowburn + Siphon Life +3.0% (build -6.8%), Decimation + Shadowburn +2.5% (build -5.4%), Decimation + Siphon Life +2.0% (build -4.5%), Decimation + Bane +1.4% (build -1.2%), Aftermath + Siphon Life +1.2% (build -3.2%). No pair build within 1% of the winner. The certificate confirms the winner.
 
@@ -108,7 +108,7 @@ Build (2026-10-12, open_builds.py): the affliction-leveling rotation is Afflicti
 | Molten Skin | 2 | +0.02 | +0.01 |
 | Improved Shadow Bolt | 1 | +0.00 | +0.00 |
 
-Race at levels 20-60 (seconds per kill): open winner 35.42, finalist 29/10/12 (own tree first order) 35.82, finalist 29/10/12 (stats model order, before the order polish) 35.82, finalist 29/10/12 (own tree last order) 36.75, destruction-leveling 37.80.
+Race at levels 20-60 (seconds per kill): finalist 29/10/12 (stats model order, before the order polish) 35.82, open winner 35.93, finalist 29/10/12 (own tree first order) 36.35, finalist 29/10/12 (stats model order) 36.35, finalist 29/10/12 (own tree last order) 37.21, destruction-leveling 37.80.
 
 **Synergy certificate** (2026-10-12, fightlab/fl_synergy.py): 46 relevant talents, 29 the winner lacks; 890 pairs measured around 29/10/12 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Shadowburn + Siphon Life +1.7% (build -8.2%), Shadowburn + Demonic Energies +1.1% (build -3.6%), Shadowburn + Conflagrate +0.9% (build -1.0%), Shadowburn + Agonizing Flames +0.9% (build -0.4%), Ruin + Shadow Mastery +0.8% (build -1.8%), Demonic Aegis + Improved Corruption +0.7% (build -1.1%). No pair build within 1% of the winner. The certificate confirms the winner.
 

@@ -64,11 +64,11 @@ The Beast-Survival (a Beast Mastery/Survival hybrid) raid build the open talent 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`survival-raid`](survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 483 | +0.0% | 1025 | -2.5% | 9 s |
-| 2 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 461 | -4.6% | 1042 | -0.9% | 44 s |
-| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 461 | -4.7% | 1012 | -3.7% | 8 s |
-| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 357 | -26.1% | 993 | -5.5% | 117 s |
-| 5 | **[`beast-survival-open-raid`](beast-survival-open-raid.md)** | ours: derived (open search) | 16/11/24 | 357 | -26.2% | 1051 | +0.0% | 127 s |
+| 1 | [`survival-raid`](survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 483 | +0.0% | 975 | -2.9% | 9 s |
+| 2 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 461 | -4.6% | 996 | -0.8% | 44 s |
+| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 461 | -4.7% | 964 | -4.0% | 8 s |
+| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 357 | -26.1% | 949 | -5.5% | 117 s |
+| 5 | **[`beast-survival-open-raid`](beast-survival-open-raid.md)** | ours: derived (open search) | 16/11/24 | 357 | -26.2% | 1004 | +0.0% | 127 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -123,6 +123,7 @@ Damage by ability:
 - Sibling rotations tried on it (10,000 fights): mm-raid -53.6%, mm-lonewolf-raid -54.0%, bm-raid -53.3%; none adopted.
 - Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Endurance Training, Improved Aspect of the Monkey, Survivalist.
 - Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements.
+- 2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Hybrid Beast Mastery/Survival: its full-raid winner is +0.00% against it, under the 0.5% bar for a new build.
 
 ## Open questions (verify in the live game)
 

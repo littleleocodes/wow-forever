@@ -6,16 +6,16 @@ Talentless baseline: 90 h for levels 10-60 under these assumptions.
 
 ## Recommended schedule
 
-- **Levels 10-40: feral-cat-dps -> level-30 build (0/21/0)**
+- **Levels 10-39: feral-cat-dps -> level-30 build (0/21/0)**
   - at level 10: **Feral Combat**: Ferocity 1
-  - at level 40: **Feral Combat**: Ferocity 5, Thick Hide 3, Feral Swiftness 2, Savage Fury 2, Sharpened Claws 2, Heart of the Wild 5, Predatory Strikes 3, Leader of the Pack 1, Natural Instinct 2, Rend and Tear 5, Berserk 1
-  - order: 10-14 Ferocity x5, 15-17 Thick Hide x3, 18-19 Feral Swiftness x2, 20-21 Savage Fury x2, 22-23 Sharpened Claws x2, 24 Heart of the Wild, 25-27 Predatory Strikes x3, 28-29 Heart of the Wild x2, 30 Leader of the Pack, 31-32 Natural Instinct x2, 33-34 Heart of the Wild x2, 35-39 Rend and Tear x5, 40 Berserk
-- **Levels 41-60: balance-dps -> level-50 build (35/6/0)** (respec here)
-  - at level 41: **Balance**: Improved Wrath 5, Moonglow 3, Improved Moonfire 2, Nature's Majesty 2, Nature's Splendor 1, Improved Entangling Roots 2, Improved Starfire 5, Eclipse 3, Nature's Grace 1, Vengeance 3, Moonfury 4, Moonkin Form 1
-  - at level 60: **Balance**: Improved Wrath 5, Moonglow 3, Improved Moonfire 2, Nature's Majesty 2, Nature's Splendor 1, Improved Entangling Roots 3, Improved Starfire 5, Eclipse 3, Nature's Grace 1, Vengeance 5, Moonfury 5, Moonkin Form 1; **Feral Combat**: Heart of the Wild 5, Feral Swiftness 2; **Restoration**: Nature's Focus 5, Naturalist 3
-  - order: 42-43 Vengeance x2, 44 Moonfury, 45-49 Heart of the Wild x5, 50-51 Feral Swiftness x2, 52 Improved Entangling Roots, 53-57 Nature's Focus x5, 58-60 Naturalist x3
+  - at level 39: **Feral Combat**: Ferocity 5, Thick Hide 3, Feral Swiftness 2, Savage Fury 2, Sharpened Claws 2, Heart of the Wild 5, Predatory Strikes 3, Leader of the Pack 1, Natural Instinct 2, Rend and Tear 5
+  - order: 10-14 Ferocity x5, 15-17 Thick Hide x3, 18-19 Feral Swiftness x2, 20-21 Savage Fury x2, 22-23 Sharpened Claws x2, 24 Heart of the Wild, 25-27 Predatory Strikes x3, 28-29 Heart of the Wild x2, 30 Leader of the Pack, 31-32 Natural Instinct x2, 33-34 Heart of the Wild x2, 35-39 Rend and Tear x5
+- **Levels 40-60: balance-dps -> level-50 build (35/6/0)** (respec here)
+  - at level 40: **Balance**: Improved Wrath 5, Improved Moonfire 2, Moonglow 3, Nature's Majesty 2, Nature's Splendor 1, Improved Entangling Roots 2, Improved Starfire 5, Eclipse 3, Nature's Grace 1, Vengeance 3, Moonfury 3, Moonkin Form 1
+  - at level 60: **Balance**: Improved Wrath 5, Improved Moonfire 2, Moonglow 3, Nature's Majesty 2, Nature's Splendor 1, Improved Entangling Roots 3, Improved Starfire 5, Eclipse 3, Nature's Grace 1, Vengeance 5, Moonfury 5, Moonkin Form 1; **Feral Combat**: Heart of the Wild 5, Feral Swiftness 2; **Restoration**: Nature's Focus 5, Naturalist 3
+  - order: 41-42 Vengeance x2, 43-44 Moonfury x2, 45-49 Heart of the Wild x5, 50-51 Feral Swiftness x2, 52 Improved Entangling Roots, 53-57 Nature's Focus x5, 58-60 Naturalist x3
 
-Total: **70.4 h** (21.8% faster than talentless), 1 respec.
+Total: **69.7 h** (22.5% faster than talentless), 1 respec.
 
 ## Best schedule if you stay in one spec model
 
@@ -32,25 +32,25 @@ Total: **71.4 h** (20.6% faster than talentless), no respec.
 
 - **Levels 10-60: balance-dps -> level-50 build (35/6/0)**
   - at level 10: **Balance**: Improved Wrath 1
-  - at level 60: **Balance**: Improved Wrath 5, Moonglow 3, Improved Moonfire 2, Nature's Majesty 2, Nature's Splendor 1, Improved Entangling Roots 3, Improved Starfire 5, Eclipse 3, Nature's Grace 1, Vengeance 5, Moonfury 5, Moonkin Form 1; **Feral Combat**: Heart of the Wild 5, Feral Swiftness 2; **Restoration**: Nature's Focus 5, Naturalist 3
-  - order: 10-14 Improved Wrath x5, 15-17 Moonglow x3, 18 Improved Moonfire, 19-20 Nature's Majesty x2, 21 Nature's Splendor, 22 Improved Moonfire, 23-24 Improved Entangling Roots x2, 25-29 Improved Starfire x5, 30-32 Eclipse x3, 33 Nature's Grace, 34 Vengeance, 35-38 Moonfury x4, 39 Vengeance, 40 Moonkin Form, 41-43 Vengeance x3, 44 Moonfury, 45-49 Heart of the Wild x5, 50-51 Feral Swiftness x2, 52 Improved Entangling Roots, 53-57 Nature's Focus x5, 58-60 Naturalist x3
+  - at level 60: **Balance**: Improved Wrath 5, Improved Moonfire 2, Moonglow 3, Nature's Majesty 2, Nature's Splendor 1, Improved Entangling Roots 3, Improved Starfire 5, Eclipse 3, Nature's Grace 1, Vengeance 5, Moonfury 5, Moonkin Form 1; **Feral Combat**: Heart of the Wild 5, Feral Swiftness 2; **Restoration**: Nature's Focus 5, Naturalist 3
+  - order: 10-14 Improved Wrath x5, 15-16 Improved Moonfire x2, 17-19 Moonglow x3, 20-21 Nature's Majesty x2, 22 Nature's Splendor, 23-24 Improved Entangling Roots x2, 25-29 Improved Starfire x5, 30-32 Eclipse x3, 33 Nature's Grace, 34 Vengeance, 35-37 Moonfury x3, 38-39 Vengeance x2, 40 Moonkin Form, 41-42 Vengeance x2, 43-44 Moonfury x2, 45-49 Heart of the Wild x5, 50-51 Feral Swiftness x2, 52 Improved Entangling Roots, 53-57 Nature's Focus x5, 58-60 Naturalist x3
 
-Total: **79.7 h** (11.5% faster than talentless), no respec.
+Total: **77.5 h** (13.9% faster than talentless), no respec.
 
 ## Never respec: best single plan
 
 | Plan | Hours 10-60 | vs. schedule |
 |---|---|---|
-| feral-cat-dps -> level-60 build (9/31/11) | 71.4 | +1.1 h |
-| feral-cat-dps -> level-30 build (0/21/0) | 71.6 | +1.2 h |
-| feral-cat-dps -> level-40 build (0/31/0) | 71.6 | +1.2 h |
-| feral-cat-dps -> level-50 build (10/31/0) | 71.6 | +1.3 h |
-| feral-cat-dps -> level-20 build (9/2/0) | 72.1 | +1.7 h |
-| balance-dps -> level-50 build (35/6/0) | 79.7 | +9.3 h |
-| balance-dps -> level-30 build (21/0/0) | 79.8 | +9.5 h |
-| balance-dps -> level-60 build (36/2/13) | 79.8 | +9.5 h |
-| balance-dps -> level-40 build (31/0/0) | 79.8 | +9.5 h |
-| balance-dps -> level-20 build (11/0/0) | 81.2 | +10.8 h |
+| feral-cat-dps -> level-60 build (9/31/11) | 71.4 | +1.7 h |
+| feral-cat-dps -> level-30 build (0/21/0) | 71.6 | +1.9 h |
+| feral-cat-dps -> level-40 build (0/31/0) | 71.6 | +1.9 h |
+| feral-cat-dps -> level-50 build (10/31/0) | 71.6 | +1.9 h |
+| feral-cat-dps -> level-20 build (9/2/0) | 72.1 | +2.4 h |
+| balance-dps -> level-50 build (35/6/0) | 77.5 | +7.7 h |
+| balance-dps -> level-60 build (36/2/13) | 77.7 | +7.9 h |
+| balance-dps -> level-40 build (31/0/0) | 77.7 | +8.0 h |
+| balance-dps -> level-30 build (21/0/0) | 77.7 | +8.0 h |
+| balance-dps -> level-20 build (11/0/0) | 79.0 | +9.2 h |
 
 ## Leveling score by level (fraction of time per kill saved)
 
@@ -61,11 +61,11 @@ Total: **79.7 h** (11.5% faster than talentless), no respec.
 | feral-cat-dps -> level-40 build (0/31/0) | +0.9% | +6.2% | +6.7% | +12.9% | +16.7% | +17.4% | +21.3% | +21.7% | +25.9% | +26.1% | +28.6% |
 | feral-cat-dps -> level-50 build (10/31/0) | +0.9% | +6.2% | +6.6% | +12.9% | +16.7% | +17.4% | +21.3% | +21.7% | +25.9% | +26.1% | +28.6% |
 | feral-cat-dps -> level-60 build (9/31/11) | +0.9% | +6.2% | +6.7% | +12.9% | +16.7% | +17.4% | +21.3% | +21.7% | +25.9% | +26.6% | +29.6% |
-| balance-dps -> level-20 build (11/0/0) | +2.0% | +13.3% | +23.6% | +27.8% | +36.0% | +45.4% | +51.5% | +55.7% | +56.1% | +57.0% | +59.5% |
-| balance-dps -> level-30 build (21/0/0) | +2.0% | +13.3% | +20.9% | +27.1% | +37.2% | +46.7% | +53.1% | +56.9% | +57.0% | +57.9% | +60.4% |
-| balance-dps -> level-40 build (31/0/0) | +2.0% | +13.3% | +20.9% | +27.1% | +37.2% | +46.7% | +53.2% | +56.9% | +57.0% | +57.9% | +60.4% |
-| balance-dps -> level-50 build (35/6/0) | +2.0% | +13.3% | +20.9% | +27.1% | +37.2% | +46.7% | +53.1% | +56.7% | +57.5% | +58.5% | +59.4% |
-| balance-dps -> level-60 build (36/2/13) | +2.0% | +13.3% | +20.9% | +27.1% | +37.2% | +46.7% | +53.1% | +56.9% | +57.0% | +57.9% | +60.4% |
+| balance-dps -> level-20 build (11/0/0) | +1.7% | +11.3% | +20.4% | +25.4% | +33.1% | +42.2% | +48.6% | +53.0% | +53.3% | +54.3% | +56.6% |
+| balance-dps -> level-30 build (21/0/0) | +1.7% | +11.3% | +18.8% | +24.6% | +34.2% | +43.5% | +50.4% | +54.1% | +54.2% | +55.1% | +57.4% |
+| balance-dps -> level-40 build (31/0/0) | +1.7% | +11.0% | +18.8% | +24.6% | +34.2% | +43.5% | +50.5% | +54.1% | +54.2% | +55.1% | +57.4% |
+| balance-dps -> level-50 build (35/6/0) | +1.7% | +11.0% | +18.8% | +24.6% | +34.2% | +43.5% | +50.4% | +53.9% | +54.8% | +55.8% | +56.7% |
+| balance-dps -> level-60 build (36/2/13) | +1.7% | +11.0% | +18.8% | +24.6% | +34.2% | +43.5% | +50.4% | +54.1% | +54.2% | +55.1% | +57.4% |
 
 ## Reading it
 

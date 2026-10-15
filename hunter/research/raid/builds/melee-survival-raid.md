@@ -78,11 +78,11 @@ Forever's melee hunter for raids, built around traps: Survival's melee package (
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`survival-raid`](survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 483 | +0.0% | 1025 | -2.5% | 9 s |
-| 2 | **[`melee-survival-raid`](melee-survival-raid.md)** | ours: hand draft | 5/11/35 | 461 | -4.6% | 1042 | -0.9% | 44 s |
-| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 461 | -4.7% | 1012 | -3.7% | 8 s |
-| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 357 | -26.1% | 993 | -5.5% | 117 s |
-| 5 | [`beast-survival-open-raid`](beast-survival-open-raid.md) | ours: derived (open search) | 16/11/24 | 357 | -26.2% | 1051 | +0.0% | 127 s |
+| 1 | [`survival-raid`](survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 483 | +0.0% | 975 | -2.9% | 9 s |
+| 2 | **[`melee-survival-raid`](melee-survival-raid.md)** | ours: hand draft | 5/11/35 | 461 | -4.6% | 996 | -0.8% | 44 s |
+| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 461 | -4.7% | 964 | -4.0% | 8 s |
+| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 357 | -26.1% | 949 | -5.5% | 117 s |
+| 5 | [`beast-survival-open-raid`](beast-survival-open-raid.md) | ours: derived (open search) | 16/11/24 | 357 | -26.2% | 1004 | +0.0% | 127 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -136,6 +136,7 @@ Damage by ability:
 - No pet: Lone Wolf's +20% beats the pet's damage once the hunter melees (the model's raid pet share is 12%, the break-even 16.7%). Beast Mastery's pet talents are absent for that reason.
 - The community simulator plays this build on our own melee rotation (raidsim/specs.json melee-dps); it models only Aspect of the Hawk, so Aspect of the Beast's attack power and Deadly Aspects' haste are missing and the DPS is a lower bound. The fight lab's melee rotation has no traps yet, so the leveling numbers leave the trap talents at zero.
 - 2026-09-29 filler audit, undone 2026-10-06: it had moved Improved Tracking 5 -> Deflection because the simulator measured Improved Tracking at 0, but that was the bench's blind spot: its target had no creature type, and Improved Tracking is +5% damage against every raid creature type but Mechanical (the bench's target is an Elemental since 2026-10-06; it reads +4.9% in a full raid now). The 5 points are back in Improved Tracking.
+- 2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Survival: its full-raid winner is +0.02% against it, under the 0.5% bar for a new build.
 
 ## Open questions (verify in the live game)
 

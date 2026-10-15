@@ -111,6 +111,7 @@ Damage by ability:
 - Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.
 - Pre-BiS gear: 19/32/0 at 781.7 DPS in a full raid (other talents: _reference/dps-rankings.md).
 - Alone on the training dummy (only your own buffs) the search's best is 20/31/0 at 416.9 DPS.
+- 2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Enhancement: its full-raid winner is +0.00% against it, under the 0.5% bar for a new build.
 
 ## Open questions (verify in the live game)
 

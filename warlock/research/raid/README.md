@@ -263,3 +263,24 @@ Model findings (generated from the optimizer builds; scores are within each spec
 - **Raid DPS, Fire Destruction:** 10/11/30; biggest talents by score lost when removed: Demonic Sacrifice (27.2), Shadow and Flame (20.5), Bane (20.1), Shadowburn (13.4), Conflagrate (12.7); the hand draft `destruction-fire-raid` is 22/11/18.
 
 Beta hypotheses: every build's unverified claims are its `open_questions`, collected in [`_reference/launch-checklist.md`](../../../_reference/launch-checklist.md); level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).
+
+## Report index
+
+Reports under this folder that no other page links to (generated):
+
+- [optimizer/affliction-raid-parse.md](optimizer/affliction-raid-parse.md): warlock / forever / spec affliction-raid / profile parse
+- [optimizer/affliction-raid-raid-dps.md](optimizer/affliction-raid-raid-dps.md): warlock / forever / spec affliction-raid / profile raid-dps
+- [optimizer/fire-destro-raid-parse.md](optimizer/fire-destro-raid-parse.md): warlock / forever / spec fire-destro-raid / profile parse
+- [optimizer/fire-destro-raid-raid-dps.md](optimizer/fire-destro-raid-raid-dps.md): warlock / forever / spec fire-destro-raid / profile raid-dps
+- [optimizer/sb-raid-parse.md](optimizer/sb-raid-parse.md): warlock / forever / spec sb-raid / profile parse
+- [optimizer/sb-raid-raid-dps.md](optimizer/sb-raid-raid-dps.md): warlock / forever / spec sb-raid / profile raid-dps
+- [raidsim/affliction-raid-environments.md](raidsim/affliction-raid-environments.md): DPS by environment — warlock affliction-raid
+- [raidsim/affliction-raid.md](raidsim/affliction-raid.md): Raid sim — warlock affliction-raid
+- [raidsim/demonology-raid-environments.md](raidsim/demonology-raid-environments.md): DPS by environment — warlock demonology-raid
+- [raidsim/demonology-raid.md](raidsim/demonology-raid.md): Raid sim — warlock demonology-raid
+- [raidsim/fire-destro-raid-environments.md](raidsim/fire-destro-raid-environments.md): DPS by environment — warlock fire-destro-raid
+- [raidsim/fire-destro-raid.md](raidsim/fire-destro-raid.md): Raid sim — warlock fire-destro-raid
+- [raidsim/incinerate-raid-environments.md](raidsim/incinerate-raid-environments.md): DPS by environment — warlock incinerate-raid
+- [raidsim/incinerate-raid.md](raidsim/incinerate-raid.md): Raid sim — warlock incinerate-raid
+- [raidsim/sb-raid-environments.md](raidsim/sb-raid-environments.md): DPS by environment — warlock sb-raid
+- [raidsim/sb-raid.md](raidsim/sb-raid.md): Raid sim — warlock sb-raid

@@ -9,43 +9,43 @@ Effect coverage: 1 parsed from tooltips, 49 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Shamanistic Focus | Enhancement | 3 | +6.58% | manual |
-| Elemental Focus | Elemental | 3 | +5.55% | manual |
-| Lava Burst | Elemental | 7 | +2.85% | manual |
-| Mana Tide Totem | Restoration | 4 | +2.65% | manual |
-| Mindfulness | Restoration | 2 | +2.51% | manual |
-| Mental Quickness | Enhancement | 5 | +2.26% | manual |
-| Convection | Elemental | 1 | +1.46% | manual |
-| Water Shield | Restoration | 3 | +1.04% | manual |
-| Elemental Fury | Elemental | 6 | +0.94% | manual |
-| Call of Flame | Elemental | 2 | +0.79% | manual |
-| Elemental Alacrity | Elemental | 3 | +0.66% | manual |
-| Concussion | Elemental | 1 | +0.51% | manual |
+| Shamanistic Focus | Enhancement | 3 | +6.26% | manual |
+| Elemental Focus | Elemental | 3 | +5.28% | manual |
+| Mindfulness | Restoration | 2 | +3.45% | manual |
+| Lava Burst | Elemental | 7 | +3.32% | manual |
+| Mental Quickness | Enhancement | 5 | +2.66% | manual |
+| Mana Tide Totem | Restoration | 4 | +2.53% | manual |
+| Convection | Elemental | 1 | +1.39% | manual |
+| Water Shield | Restoration | 3 | +0.99% | manual |
+| Call of Flame | Elemental | 2 | +0.90% | manual |
+| Elemental Alacrity | Elemental | 3 | +0.77% | manual |
+| Spirit Weapons | Enhancement | 5 | +0.55% | manual |
+| Lightning Overload | Elemental | 5 | +0.50% | manual |
 | Improved Ghost Wolf | Enhancement | 2 | +0.50% | manual |
-| Spirit Weapons | Enhancement | 5 | +0.48% | manual |
-| Lightning Overload | Elemental | 5 | +0.43% | manual |
-| Nature's Swiftness | Restoration | 5 | +0.38% | manual |
+| Nature's Swiftness | Restoration | 5 | +0.45% | manual |
+| Thundering Strikes | Enhancement | 1 | +0.35% | manual |
 | Earthbound | Elemental | 5 | +0.30% | manual |
 | Guardian Totems | Enhancement | 2 | +0.30% | manual |
-| Thundering Strikes | Enhancement | 1 | +0.30% | manual |
-| Call of Thunder | Elemental | 4 | +0.25% | manual |
-| Anticipation | Enhancement | 3 | +0.25% | manual |
-| Improved Reincarnation | Restoration | 2 | +0.21% | manual |
-| Restorative Totems | Restoration | 4 | +0.21% | manual |
+| Anticipation | Enhancement | 3 | +0.28% | manual |
+| Concussion | Elemental | 1 | +0.27% | manual |
+| Elemental Fury | Elemental | 6 | +0.25% | manual |
+| Improved Reincarnation | Restoration | 2 | +0.23% | manual |
+| Eye of the Storm | Elemental | 4 | +0.23% | manual |
+| Restorative Totems | Restoration | 4 | +0.20% | manual |
+| Tidal Focus | Restoration | 2 | +0.16% | manual |
 | Earth's Grasp | Enhancement | 1 | +0.15% | manual |
-| Tidal Focus | Restoration | 2 | +0.15% | manual |
-| Eye of the Storm | Elemental | 4 | +0.11% | manual |
-| Elemental Warding | Elemental | 2 | +0.10% | manual |
-| Totemic Focus | Restoration | 1 | +0.09% | manual |
-| Toughness | Enhancement | 4 | +0.01% | manual |
+| Elemental Warding | Elemental | 2 | +0.11% | manual |
+| Totemic Focus | Restoration | 1 | +0.08% | manual |
+| Toughness | Enhancement | 4 | +0.02% | manual |
 | Reverberation | Elemental | 2 | +0.00% | manual |
+| Elemental Devastation | Elemental | 2 | +0.00% | manual |
 
-## Optimized build: 31/12/8  score +37.87%  (dps x1.326, sustain x1.855, surv x1.020, utility +4.05%)
-Absolute DPS index (character alone, no talents = 1.00): 1.151  — use this to compare models with different pet shares.
+## Optimized build: 31/12/8  score +33.48%  (dps x1.191, sustain x1.964, surv x1.020, utility +4.05%)
+Absolute DPS index (character alone, no talents = 1.00): 1.016  — use this to compare models with different pet shares.
 
 ```
-  Elemental: Convection 5, Concussion 5, Call of Flame 3, Elemental Focus 1, Elemental Alacrity 3, Call of Thunder 1, Eye of the Storm 3, Lightning Overload 3, Earthbound 1, Elemental Fury 5, Lava Burst 1
-  Enhancement: Thundering Strikes 5, Earth's Grasp 1, Improved Ghost Wolf 2, Guardian Totems 2, Shamanistic Focus 1, Anticipation 1
+  Elemental: Convection 5, Concussion 5, Call of Flame 3, Elemental Focus 1, Elemental Alacrity 3, Eye of the Storm 3, Call of Thunder 1, Lightning Overload 3, Earthbound 1, Elemental Fury 5, Lava Burst 1
+  Enhancement: Thundering Strikes 5, Earth's Grasp 1, Guardian Totems 2, Improved Ghost Wolf 2, Shamanistic Focus 1, Anticipation 1
   Restoration: Totemic Focus 5, Mindfulness 3
 ```
 
@@ -53,16 +53,16 @@ Absolute DPS index (character alone, no talents = 1.00): 1.151  — use this to 
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Mental Quickness | Enhancement 5 | 1/2 | +1.56% | no |
-| Mana Tide Totem | Restoration 4 | 1/1 | +0.69% | no |
-| Spirit Weapons | Enhancement 5 | 1/1 | +0.40% | no |
-| Nature's Swiftness | Restoration 5 | 1/1 | +0.27% | no |
-| Water Shield | Restoration 3 | 1/1 | +0.26% | no |
-| Anticipation | Enhancement 3 | 2/3 | +0.20% | yes |
-| Improved Reincarnation | Restoration 2 | 1/2 | +0.20% | yes |
+| Mental Quickness | Enhancement 5 | 1/2 | +1.91% | no |
+| Mana Tide Totem | Restoration 4 | 1/1 | +0.59% | no |
+| Spirit Weapons | Enhancement 5 | 1/1 | +0.46% | no |
+| Nature's Swiftness | Restoration 5 | 1/1 | +0.33% | no |
+| Anticipation | Enhancement 3 | 2/3 | +0.23% | yes |
+| Water Shield | Restoration 3 | 1/1 | +0.23% | no |
+| Improved Reincarnation | Restoration 2 | 1/2 | +0.21% | yes |
 | Earth's Grasp | Enhancement 1 | 2/2 | +0.15% | yes |
-| Tidal Focus | Restoration 2 | 1/5 | +0.08% | yes |
-| Elemental Warding | Elemental 2 | 1/3 | +0.08% | yes |
+| Tidal Focus | Restoration 2 | 1/5 | +0.10% | yes |
+| Elemental Warding | Elemental 2 | 1/3 | +0.09% | yes |
 | Restorative Totems | Restoration 4 | 1/5 | +0.05% | no |
 | Toughness | Enhancement 4 | 1/5 | +0.01% | no |
 | Reverberation | Elemental 2 | 1/5 | +0.00% | yes |
@@ -73,25 +73,24 @@ Absolute DPS index (character alone, no talents = 1.00): 1.151  — use this to 
 
 | Levels | Tree | Talent | Pts | Score at end |
 |---|---|---|---|---|
-| 10-14 | Elemental | Convection | 5 | +6.3% |
-| 15-17 | Elemental | Call of Flame | 3 | +8.5% |
-| 18-19 | Elemental | Concussion | 2 | +9.4% |
-| 20 | Elemental | Elemental Focus | 1 | +13.2% |
-| 21-25 | Enhancement | Thundering Strikes | 5 | +14.5% |
-| 26-27 | Enhancement | Improved Ghost Wolf | 2 | +17.5% |
-| 28-29 | Enhancement | Guardian Totems | 2 | +18.1% |
-| 30 | Enhancement | Earth's Grasp | 1 | +18.3% |
-| 31 | Enhancement | Shamanistic Focus | 1 | +21.7% |
-| 32-34 | Elemental | Elemental Alacrity | 3 | +23.4% |
-| 35-37 | Elemental | Concussion | 3 | +24.6% |
-| 38 | Elemental | Call of Thunder | 1 | +24.8% |
-| 39-40 | Elemental | Eye of the Storm | 2 | +25.0% |
-| 41-43 | Elemental | Lightning Overload | 3 | +26.2% |
-| 44 | Elemental | Earthbound | 1 | +26.5% |
-| 45 | Elemental | Eye of the Storm | 1 | +26.6% |
-| 46-50 | Elemental | Elemental Fury | 5 | +33.1% |
-| 51 | Elemental | Lava Burst | 1 | +35.3% |
-| 52-56 | Restoration | Totemic Focus | 5 | +35.4% |
-| 57-59 | Restoration | Mindfulness | 3 | +37.7% |
-| 60 | Enhancement | Anticipation | 1 | +37.9% |
+| 10-14 | Elemental | Convection | 5 | +5.9% |
+| 15-17 | Elemental | Call of Flame | 3 | +8.4% |
+| 18-19 | Elemental | Concussion | 2 | +8.9% |
+| 20 | Elemental | Elemental Focus | 1 | +12.5% |
+| 21-25 | Enhancement | Thundering Strikes | 5 | +14.0% |
+| 26-27 | Enhancement | Improved Ghost Wolf | 2 | +17.0% |
+| 28-29 | Enhancement | Guardian Totems | 2 | +17.6% |
+| 30 | Enhancement | Earth's Grasp | 1 | +17.7% |
+| 31 | Enhancement | Shamanistic Focus | 1 | +21.0% |
+| 32-36 | Restoration | Totemic Focus | 5 | +21.1% |
+| 37-39 | Restoration | Mindfulness | 3 | +24.5% |
+| 40-42 | Elemental | Elemental Alacrity | 3 | +26.3% |
+| 43-45 | Elemental | Concussion | 3 | +26.9% |
+| 46-48 | Elemental | Eye of the Storm | 3 | +27.4% |
+| 49-51 | Elemental | Lightning Overload | 3 | +28.8% |
+| 52 | Elemental | Earthbound | 1 | +29.1% |
+| 53 | Elemental | Call of Thunder | 1 | +29.1% |
+| 54-58 | Elemental | Elemental Fury | 5 | +30.7% |
+| 59 | Elemental | Lava Burst | 1 | +33.2% |
+| 60 | Enhancement | Anticipation | 1 | +33.5% |
 

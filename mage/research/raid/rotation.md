@@ -199,7 +199,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 6. if stacks of Heating Up ≥ 2 and (time left in the fight < 6s or time left on Heating Up < 3.5s): cast Pyroblast
 7. if stacks of Heating Up = 3: cast Pyroblast
 8. if time left in the fight ≥ 3s: cast Fireball
-9. cast Scorch
+9. cast Scorch (rank 1)
 
 The tables below are the training-dummy rotation, filtered per build:
 
@@ -214,8 +214,8 @@ The tables below are the training-dummy rotation, filtered per build:
 | 5 | if stacks of Heating Up = 3: cast Pyroblast | 1.4 | 1.5 | 1.5 | 1.4 |
 | 6 | cast Fire Blast | 7.5 | 7.0 | 7.0 | 4.8 |
 | 7 | if mana % ≥ 10%: cast Fireball | 10.9 | 9.5 | 9.5 | 9.2 |
-| 8 | if time left in the fight ≥ 3s: cast Fireball | 2.8 | 5.4 | 5.4 | 7.2 |
-| 9 | cast Scorch | 0.1 | 0.2 | 0.2 | 0.3 |
+| 8 | if time left in the fight ≥ 3s: cast Fireball (rank 2) | 2.8 | 5.4 | 5.4 | 7.2 |
+| 9 | cast Scorch (rank 1) | 0.1 | 0.2 | 0.2 | 0.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Arcane Missiles (its condition never held in these fights).
 
@@ -240,7 +240,7 @@ Damage by ability:
 | 5 | cast Fire Blast | 6.1 |
 | 6 | if mana % ≥ 10%: cast Fireball | 10.6 |
 
-Lines of the simulator's rotation these builds never cast: cast Pyroblast (needs the Pyroblast talent); cast Arcane Missiles, cast Fireball, cast Scorch (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Pyroblast (needs the Pyroblast talent); cast Arcane Missiles, cast Fireball (rank 2), cast Scorch (rank 1) (its condition never held in these fights).
 
 Damage by ability:
 
@@ -260,8 +260,8 @@ Damage by ability:
 | 2 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if Missile Barrage is up: cast Arcane Missiles | 0.1 |
-| 5 | if time left in the fight ≥ 3s: cast Fireball | 1.3 |
-| 6 | cast Scorch | 0.2 |
+| 5 | if time left in the fight ≥ 3s: cast Fireball (rank 2) | 1.3 |
+| 6 | cast Scorch (rank 1) | 0.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Evocation, cast Fire Blast, cast Fireball (its condition never held in these fights); cast Pyroblast (needs the Pyroblast talent).
 
@@ -281,8 +281,8 @@ Damage by ability:
 | 2 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 5 | if time left in the fight ≥ 3s: cast Fireball | 0.1 |
-| 6 | cast Scorch | 0.1 |
+| 5 | if time left in the fight ≥ 3s: cast Fireball (rank 2) | 0.1 |
+| 6 | cast Scorch (rank 1) | 0.1 |
 
 Lines of the simulator's rotation these builds never cast: cast Pyroblast (needs the Pyroblast talent); cast Fire Blast, cast Fireball, cast Arcane Missiles (its condition never held in these fights).
 
@@ -300,8 +300,8 @@ Damage by ability:
 | 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 37.0 |
 | 2 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | if time left in the fight ≥ 3s: cast Fireball | 1.8 |
-| 5 | cast Scorch | 0.2 |
+| 4 | if time left in the fight ≥ 3s: cast Fireball (rank 2) | 1.8 |
+| 5 | cast Scorch (rank 1) | 0.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Evocation, cast Fire Blast, cast Fireball, cast Arcane Missiles (its condition never held in these fights); cast Pyroblast (needs the Pyroblast talent).
 
@@ -360,7 +360,7 @@ The tables below are the training-dummy rotation, filtered per build:
 | 3 | if Missile Barrage is up: cast Arcane Missiles | 4.9 | 4.9 | 5.0 |
 | 4 | if stacks of Arcane Blast ≥ 1.5: cast Frostbolt | 0.2 | 0.2 | 1.9 |
 | 5 | cast Arcane Blast | 12.7 | 12.9 | 12.4 |
-| 6 | cast Fireball | 1.2 | 0.9 | 0.4 |
+| 6 | cast Fireball (rank 2) | 1.2 | 0.9 | 0.4 |
 
 Damage by ability:
 
@@ -435,11 +435,11 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 6. if mana % ≤ 80%: cast Mana Ruby (mana gem)
 7. cast Mana Citrine
 8. use every other cooldown when ready
-9. if mana % < 30%: cast Frostfire Bolt
+9. if mana % < 30%: cast Frostfire Bolt (rank 2)
 10. if mana % ≥ 10%: cast Frostfire Bolt
 11. if Missile Barrage is up: cast Arcane Missiles
-12. cast Fireball
-13. cast Scorch
+12. cast Fireball (rank 2)
+13. cast Scorch (rank 1)
 
 The tables below are the training-dummy rotation, filtered per build:
 
@@ -458,9 +458,9 @@ The tables below are the training-dummy rotation, filtered per build:
 | 9 | cast Combustion | 0.3 | 0.3 |
 | 10 | cast Mana Citrine | as ready | as ready |
 | 11 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 9.2 | 6.6 |
-| 12 | if time left in the fight ≥ 3s: cast Fireball | 5.3 | 9.7 |
+| 12 | if time left in the fight ≥ 3s: cast Fireball (rank 2) | 5.3 | 9.7 |
 | 13 | cast Robe of the Archmage | as ready | as ready |
-| 14 | cast Scorch | 0.2 | 0.2 |
+| 14 | cast Scorch (rank 1) | 0.2 | 0.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Arcane Power (needs the Arcane Power talent); cast Berserking, cast Arcane Missiles (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent).
 
@@ -489,9 +489,9 @@ Damage by ability:
 | 8 | if stacks of Heating Up = 3: cast Pyroblast | 2.6 |
 | 9 | cast Mana Citrine | as ready |
 | 10 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 8.3 |
-| 11 | if time left in the fight ≥ 3s: cast Fireball | 8.8 |
+| 11 | if time left in the fight ≥ 3s: cast Fireball (rank 2) | 8.8 |
 | 12 | cast Robe of the Archmage | as ready |
-| 13 | cast Scorch | 0.2 |
+| 13 | cast Scorch (rank 1) | 0.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Arcane Power (needs the Arcane Power talent); cast Berserking, cast Arcane Missiles (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent); cast Combustion (needs the Combustion talent).
 

@@ -8,35 +8,13 @@ The build each spec's [leveling page](../../leveling/README.md) shows first, the
 
 | Spec | Page build | Rotation | L20 | L30 | L40 | L50 | L60 | Weighted |
 |---|---|---|---|---|---|---|---|---|
-| [Shadow Bolt hybrid](../../leveling/shadow-bolt-hybrid.md) ✅ | [`shadow-bolt-hybrid-open-leveling`](builds/shadow-bolt-hybrid-open-leveling.md) | [destruction-leveling](#destruction-leveling) | 24.6 | 30.0 | 37.1 | 38.1 | 38.4 | 35.4 |
 | [Demonology](../../leveling/demonology.md) ✅ | [`demonology-leveling`](builds/demonology-leveling.md) | [demonology-leveling](#demonology-leveling) | 26.0 | 32.4 | 38.8 | 38.5 | 36.4 | 35.8 |
+| [Shadow Bolt hybrid](../../leveling/shadow-bolt-hybrid.md) ✅ | [`shadow-bolt-hybrid-open-leveling`](builds/shadow-bolt-hybrid-open-leveling.md) | [destruction-leveling](#destruction-leveling) | 24.6 | 30.1 | 37.8 | 39.0 | 38.8 | 35.9 |
 | [Affliction](../../leveling/affliction.md) | [`affliction-leveling`](builds/affliction-leveling.md) | [affliction-leveling](#affliction-leveling) | 25.6 | 32.5 | 38.7 | 40.5 | 40.7 | 37.5 |
 | [Destruction](../../leveling/destruction.md) | [`destruction-leveling`](builds/destruction-leveling.md) | [destruction-leveling](#destruction-leveling) | 25.7 | 32.3 | 39.3 | 42.1 | 43.5 | 38.8 |
 | [Affliction-Demonology](../../leveling/affliction-demonology.md) | [`affliction-demonology-open-leveling`](builds/affliction-demonology-open-leveling.md) | [affliction-leveling](#affliction-leveling) | 31.5 | 36.0 | 42.3 | 42.8 | 39.9 | 39.7 |
 
 ✅ = a recommended spec for leveling (the fastest, or within 3% of it).
-
-## destruction-leveling
-
-Played by the page builds of [Shadow Bolt hybrid](../../leveling/shadow-bolt-hybrid.md) ([`shadow-bolt-hybrid-open-leveling`](builds/shadow-bolt-hybrid-open-leveling.md)), [Destruction](../../leveling/destruction.md) ([`destruction-leveling`](builds/destruction-leveling.md)).
-
-The priority in the player page's words:
-
-Before the fight: **Demon Skin** (**Demon Armor** from level 20) up, **Summon Voidwalker**. Send the Voidwalker in first and let it hold the mob with **Torment**. Open with **Amplify Curse** whenever it is ready: it makes that fight's **Bane of Agony** 50% stronger.
-
-1. **Corruption** and **Bane of Agony** first while the Voidwalker builds threat, none of them on a mob below about a third of its health.
-2. **Immolate** while you have more than half your mana and it will not pull the mob off the Voidwalker.
-3. **Conflagrate** when **Immolate** has about 3 seconds left (at once with 5 points in **Shadow and Flame**, which keeps **Immolate** burning), or to finish a burning mob it would kill; then **Siphon Life**.
-4. Above 80% mana, **Shadow Bolt** (**Searing Pain** when the mob has too little health left for it); below that, your wand.
-5. With **Incinerate**: cast it instead of **Shadow Bolt** on a burning mob. With **Shadowburn**: finish any mob it would kill.
-6. **Life Tap** in a fight only when you are short of mana and above 60% health.
-7. If a mob reaches you: **Death Coil** below 60% health and let **Torment** take it back (no **Fear** and no **Drain Life**: both measured slower). Your Healthstone below 35% health.
-
-Between fights: **Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, and eat only below 40% health.
-
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-30, on top of the priority below): Immolate only above 50% mana; never cast Fear; Corruption only while the mob has more than 35% health; never cast Drain Life; eat below 40% health. Together +5.9% time per kill saved for `/home/user/wow-forever/warlock/research/leveling/fightlab/candidates/derived-destruction-scorer.json` (level-weighted, a third seed of 3000 fights per level).
-
-Casts per kill of [`shadow-bolt-hybrid-open-leveling`](builds/shadow-bolt-hybrid-open-leveling.md), [`destruction-leveling`](builds/destruction-leveling.md): not recorded (their times per kill come from the race records of the searches that found them, which keep times only; the table above has them).
 
 ## demonology-leveling
 
@@ -56,9 +34,31 @@ Before the fight: **Demon Skin** (**Demon Armor** from level 20) up, **Summon Vo
 
 Between fights: **Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, and eat only below 55% health.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-30, on top of the priority below): Corruption only while the mob has more than 35% health. Together +0.8% time per kill saved for `/home/user/wow-forever/warlock/research/leveling/fightlab/candidates/derived-demonology-scorer.json` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-15, on top of the priority below): Corruption only above 30% mana; Corruption only while the mob has more than 35% health. Together +2.4% time per kill saved for `demonology-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 Casts per kill of [`demonology-leveling`](builds/demonology-leveling.md): not recorded (its times per kill come from the race records of the search that found it, which keep times only; the table above has them).
+
+## destruction-leveling
+
+Played by the page builds of [Shadow Bolt hybrid](../../leveling/shadow-bolt-hybrid.md) ([`shadow-bolt-hybrid-open-leveling`](builds/shadow-bolt-hybrid-open-leveling.md)), [Destruction](../../leveling/destruction.md) ([`destruction-leveling`](builds/destruction-leveling.md)).
+
+The priority in the player page's words:
+
+Before the fight: **Demon Skin** (**Demon Armor** from level 20) up, **Summon Voidwalker**. Send the Voidwalker in first and let it hold the mob with **Torment**. Open with **Amplify Curse** whenever it is ready: it makes that fight's **Bane of Agony** 50% stronger.
+
+1. **Corruption** and **Bane of Agony** first while the Voidwalker builds threat, none of them on a mob below about a third of its health.
+2. **Immolate** while you have more than half your mana and it will not pull the mob off the Voidwalker.
+3. **Conflagrate** when **Immolate** has about 3 seconds left (at once with 5 points in **Shadow and Flame**, which keeps **Immolate** burning), or to finish a burning mob it would kill; then **Siphon Life**.
+4. Above 80% mana, **Shadow Bolt** (**Searing Pain** when the mob has too little health left for it); below that, your wand.
+5. With **Incinerate**: cast it instead of **Shadow Bolt** on a burning mob. With **Shadowburn**: finish any mob it would kill.
+6. **Life Tap** in a fight only when you are short of mana and above 60% health.
+7. If a mob reaches you: **Death Coil** below 60% health and let **Torment** take it back (no **Fear** and no **Drain Life**: both measured slower). Your Healthstone below 35% health.
+
+Between fights: **Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, and eat only below 40% health.
+
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-15, on top of the priority below): Immolate only above 30% mana. Together +2.7% time per kill saved for `shadow-bolt-hybrid-open-leveling` (level-weighted, a third seed of 3000 fights per level).
+
+Casts per kill of [`shadow-bolt-hybrid-open-leveling`](builds/shadow-bolt-hybrid-open-leveling.md), [`destruction-leveling`](builds/destruction-leveling.md): not recorded (their times per kill come from the race records of the searches that found them, which keep times only; the table above has them).
 
 ## affliction-leveling
 
@@ -135,43 +135,52 @@ Report: [fightlab/affliction-leveling-aoe.md](fightlab/affliction-leveling-aoe.m
 
 | Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|
-| Torment | 4.6 | 4.1 | 4.4 | 3.2 | 0% |
-| Rain of Fire | 1.3 | 1.4 | 1.1 | 1.8 | 70% |
-| Wand | 5.0 | 3.8 | 5.4 | 1.7 | 2% |
-| Corruption | 1.1 | 1.1 | 1.5 | 0.7 | 8% |
-| Bane of Agony | 1.3 | 1.4 | 1.6 | 0.6 | 7% |
-| Immolate | 0.7 | 0.7 | 0.7 | 0.4 | 4% |
-| Drain Life | 0.2 | 0.3 | 0.3 | 0.2 | 1% |
+| Torment | 4.4 | 4.0 | 4.3 | 3.1 | 0% |
+| Wand | 4.5 | 3.9 | 5.6 | 1.9 | 2% |
+| Rain of Fire | 1.3 | 1.3 | 1.1 | 1.6 | 70% |
+| Corruption | 1.1 | 1.1 | 1.5 | 0.6 | 8% |
+| Bane of Agony | 1.3 | 1.4 | 1.7 | 0.6 | 6% |
+| Immolate | 0.7 | 0.7 | 0.8 | 0.4 | 4% |
+| Drain Life | 0.1 | 0.2 | 0.2 | 0.1 | 1% |
 | Create Healthstone | 0.2 | 0.3 | 0.3 | 0.1 | 0% |
-| Death Coil | 0.0 | 0.0 | 0.1 | 0.1 | 1% |
+| Death Coil | 0.0 | 0.0 | 0.1 | 0.0 | 1% |
+| Fear | 0.1 | 0.1 | 0.2 | 0.0 | 0% |
 | Life Tap | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Shadow Bolt | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Curse of the Elements | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
-### `cand-aoe-r6`
+### `cand-aoe-r8`
 
 | Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|
-| Torment | 4.8 | 4.1 | 4.4 | 3.3 | 0% |
-| Rain of Fire | 1.8 | 1.4 | 1.1 | 1.8 | 70% |
-| Wand | 3.9 | 4.1 | 6.3 | 1.6 | 2% |
-| Corruption | 1.5 | 1.1 | 1.5 | 0.7 | 8% |
-| Bane of Agony | 1.6 | 1.4 | 1.7 | 0.6 | 6% |
-| Immolate | 0.9 | 0.7 | 0.7 | 0.4 | 4% |
-| Drain Life | 0.2 | 0.3 | 0.3 | 0.2 | 1% |
-| Create Healthstone | 0.3 | 0.3 | 0.3 | 0.2 | 0% |
-| Death Coil | 0.0 | 0.0 | 0.1 | 0.1 | 1% |
-| Life Tap | 0.1 | 0.0 | 0.0 | 0.0 | 0% |
+| Torment | 4.4 | 4.0 | 4.3 | 3.1 | 0% |
+| Wand | 4.5 | 3.9 | 5.6 | 1.9 | 2% |
+| Rain of Fire | 1.3 | 1.3 | 1.1 | 1.6 | 70% |
+| Corruption | 1.1 | 1.1 | 1.5 | 0.6 | 8% |
+| Bane of Agony | 1.3 | 1.4 | 1.7 | 0.6 | 6% |
+| Immolate | 0.7 | 0.7 | 0.8 | 0.4 | 4% |
+| Drain Life | 0.1 | 0.2 | 0.2 | 0.1 | 1% |
+| Create Healthstone | 0.2 | 0.3 | 0.3 | 0.1 | 0% |
+| Death Coil | 0.0 | 0.0 | 0.1 | 0.0 | 1% |
+| Fear | 0.1 | 0.1 | 0.2 | 0.0 | 0% |
+| Life Tap | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Shadow Bolt | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Curse of the Elements | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
-### `cand-aoe-r7`
+### `cand-aoe-r9`
 
 | Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|
-| Torment | 4.6 | 4.1 | 4.4 | 3.2 | 0% |
-| Rain of Fire | 1.3 | 1.4 | 1.1 | 1.8 | 70% |
-| Wand | 5.0 | 3.8 | 5.4 | 1.7 | 2% |
+| Torment | 4.4 | 3.9 | 4.4 | 3.2 | 0% |
+| Wand | 4.5 | 3.8 | 6.1 | 1.9 | 2% |
+| Rain of Fire | 1.3 | 1.4 | 1.1 | 1.7 | 70% |
 | Corruption | 1.1 | 1.1 | 1.5 | 0.7 | 8% |
-| Bane of Agony | 1.3 | 1.4 | 1.6 | 0.6 | 7% |
-| Immolate | 0.7 | 0.7 | 0.7 | 0.4 | 4% |
-| Drain Life | 0.2 | 0.3 | 0.3 | 0.2 | 1% |
+| Bane of Agony | 1.3 | 1.4 | 1.6 | 0.7 | 7% |
+| Immolate | 0.7 | 0.7 | 0.8 | 0.4 | 4% |
 | Create Healthstone | 0.2 | 0.3 | 0.3 | 0.1 | 0% |
+| Drain Life | 0.1 | 0.2 | 0.2 | 0.1 | 1% |
 | Death Coil | 0.0 | 0.0 | 0.1 | 0.1 | 1% |
+| Fear | 0.1 | 0.1 | 0.2 | 0.0 | 0% |
 | Life Tap | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Shadow Bolt | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Curse of the Elements | 0.0 | 0.0 | 0.0 | 0.0 | 0% |

@@ -2626,5 +2626,114 @@
   ],
   "changed": [],
   "date": "2026-10-06"
+ },
+ "_reference/data/raidsim/gear_sets/forever/priest-dps-p0.p1opt.gear.json": {
+  "gear": "_reference/data/raidsim/gear_sets/forever/priest-dps-p0.p1opt.gear.json",
+  "members": [
+   "priest/shadow-dps",
+   "priest/smite-dps"
+  ],
+  "evaluated_on": [
+   "shadow-dps: opt-shadow-dps-raid-dps",
+   "smite-dps: smite-discipline-raid"
+  ],
+  "weights": {
+   "StatIntellect": 0.0981,
+   "StatShadowDamage": 0.3692,
+   "StatSpellCritRating": 0.3625,
+   "StatSpellDamage": 0.3692,
+   "StatSpellHasteRating": 0.1771,
+   "StatSpellHitRating": 0.4177,
+   "StatSpirit": 0.0036
+  },
+  "trinkets": [
+   "Briarwood Reed",
+   "Weakness Analyzer"
+  ],
+  "race_seed1": {
+   "all-slots": 1.0,
+   "keep-sets-and-effects": 1.0
+  },
+  "confirm_seed2": {
+   "keep-sets-and-effects": 1.0,
+   "all-slots": 1.0
+  },
+  "chosen": "keep-sets-and-effects",
+  "gain": 0.0,
+  "current_in_pool": false,
+  "ilvl_before": 62.9,
+  "ilvl_after": 65.2,
+  "items": [
+   {
+    "id": 22267,
+    "enchant": 1509
+   },
+   {
+    "id": 18814
+   },
+   {
+    "id": 227808
+   },
+   {
+    "id": 20697
+   },
+   {
+    "id": 19145,
+    "enchant": 1891
+   },
+   {
+    "id": 21186,
+    "enchant": 1883
+   },
+   {
+    "id": 18407
+   },
+   {
+    "id": 19136
+   },
+   {
+    "id": 19165,
+    "enchant": 1509
+   },
+   {
+    "id": 18735,
+    "enchant": 851
+   },
+   {
+    "id": 19147
+   },
+   {
+    "id": 19147
+   },
+   {
+    "id": 12930
+   },
+   {
+    "id": 272438
+   },
+   {
+    "id": 17105,
+    "enchant": 2504
+   },
+   {
+    "id": 22329
+   },
+   {
+    "id": 13396
+   }
+  ],
+  "changed": [
+   {
+    "slot": 10,
+    "from": "Rune Band of Wizardry",
+    "to": "Ring of Spell Power"
+   },
+   {
+    "slot": 14,
+    "from": "Death Speaker Scepter",
+    "to": "Aurastone Hammer"
+   }
+  ],
+  "date": "2026-10-15"
  }
 }

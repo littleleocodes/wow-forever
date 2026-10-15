@@ -4,21 +4,21 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `smite-discipline-raid` | 31/17/3 | 350 | 12 | +0.0% | 318 | 6 | - |
-| sim preset: Smite | - | 346 | 13 | -1.1% | 291 | 8 | - |
-| sim preset: Smite 31/17/3 | - | 346 | 13 | -1.1% | 363 | 8 | - |
-| `smite-open-raid` | 21/23/7 | 335 | 14 | -4.4% | 348 | 12 | - |
+| `smite-discipline-raid` | 31/17/3 | 363 | 12 | +0.0% | 329 | 5 | - |
+| sim preset: Smite | - | 360 | 13 | -0.9% | 301 | 7 | - |
+| sim preset: Smite 31/17/3 | - | 360 | 13 | -0.9% | 376 | 7 | - |
+| `smite-open-raid` | 21/23/7 | 348 | 14 | -4.3% | 361 | 10 | - |
 
 ## Damage shares (`smite-discipline-raid`, simulator actions)
 
 | Action | Share |
 |---|---|
 | Penance | 27.6% |
-| Shadow Word: Pain | 26.1% |
-| Holy Fire | 22.2% |
-| Smite | 19.3% |
+| Shadow Word: Pain | 25.4% |
+| Holy Fire | 22.5% |
+| Smite | 19.8% |
 | Shadow Word: Death | 2.4% |
-| Devouring Plague | 2.4% |
+| Devouring Plague | 2.3% |
 
 Mapped onto the spec model's sources: ; 100% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 

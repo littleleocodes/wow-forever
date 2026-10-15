@@ -4,17 +4,17 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `combat-swords-raid` | 19/32/0 | 409 | 476 | 703 | 703 | 802 |
-| sim preset: Improved Expose Armor (SS) | - | 409 | 476 | 703 | 703 | 802 |
-| `combat-swords-open-raid` | 18/33/0 | 392 | 458 | 718 | 718 | 819 |
-| `opt-combat-swords-raid-raid-dps` | 20/31/0 | 391 | 456 | 704 | 704 | 799 |
-| `opt-combat-swords-raid-parse` | 20/31/0 | 391 | 456 | 704 | 704 | 799 |
-| sim preset: Sinister Strike | - | 387 | 452 | 711 | 711 | 817 |
-| sim preset: Combat Dual-Wield 15/33/3 | - | 380 | 445 | 698 | 698 | 796 |
-| sim preset: Assassination Mutilate 31/20/0 | - | 356 | 420 | 645 | 645 | 698 |
-| sim preset: Mutilate | - | 344 | 408 | 630 | 630 | 682 |
-| sim preset: Backstab | - | 331 | 392 | 640 | 640 | 723 |
-| sim preset: Subtlety Hemo 15/0/36 | - | 315 | 369 | 559 | 559 | 591 |
+| `combat-swords-raid` | 19/32/0 | 409 | 476 | 667 | 667 | 768 |
+| sim preset: Improved Expose Armor (SS) | - | 409 | 476 | 667 | 667 | 768 |
+| `combat-swords-open-raid` | 18/33/0 | 392 | 458 | 679 | 679 | 779 |
+| `opt-combat-swords-raid-raid-dps` | 20/31/0 | 391 | 456 | 666 | 666 | 761 |
+| `opt-combat-swords-raid-parse` | 20/31/0 | 391 | 456 | 666 | 666 | 761 |
+| sim preset: Sinister Strike | - | 387 | 452 | 675 | 675 | 780 |
+| sim preset: Combat Dual-Wield 15/33/3 | - | 380 | 445 | 662 | 662 | 758 |
+| sim preset: Assassination Mutilate 31/20/0 | - | 356 | 420 | 610 | 610 | 664 |
+| sim preset: Mutilate | - | 344 | 408 | 597 | 597 | 650 |
+| sim preset: Backstab | - | 331 | 392 | 602 | 602 | 686 |
+| sim preset: Subtlety Hemo 15/0/36 | - | 315 | 369 | 527 | 527 | 561 |
 
 - **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
 - **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
@@ -28,17 +28,17 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
-| `combat-swords-raid` | 409 | +0% | +6% | +44% | +1% | +20% | 703 |
-| sim preset: Improved Expose Armor (SS) | 409 | +0% | +6% | +44% | +1% | +20% | 703 |
-| `combat-swords-open-raid` | 392 | +0% | +9% | +46% | +1% | +27% | 718 |
-| `opt-combat-swords-raid-raid-dps` | 391 | -0% | +10% | +45% | +2% | +24% | 704 |
-| `opt-combat-swords-raid-parse` | 391 | -0% | +10% | +45% | +2% | +24% | 704 |
-| sim preset: Sinister Strike | 387 | -0% | +10% | +46% | +1% | +27% | 711 |
-| sim preset: Combat Dual-Wield 15/33/3 | 380 | +0% | +9% | +47% | +1% | +26% | 698 |
-| sim preset: Assassination Mutilate 31/20/0 | 356 | +0% | +9% | +45% | +2% | +26% | 645 |
-| sim preset: Mutilate | 344 | +0% | +8% | +46% | +1% | +28% | 630 |
-| sim preset: Backstab | 331 | +0% | +17% | +51% | +1% | +24% | 640 |
-| sim preset: Subtlety Hemo 15/0/36 | 315 | -0% | +10% | +50% | +1% | +16% | 559 |
+| `combat-swords-raid` | 409 | +0% | +6% | +36% | +1% | +19% | 667 |
+| sim preset: Improved Expose Armor (SS) | 409 | +0% | +6% | +36% | +1% | +19% | 667 |
+| `combat-swords-open-raid` | 392 | +0% | +9% | +37% | +1% | +25% | 679 |
+| `opt-combat-swords-raid-raid-dps` | 391 | -0% | +10% | +37% | +2% | +22% | 666 |
+| `opt-combat-swords-raid-parse` | 391 | -0% | +10% | +37% | +2% | +22% | 666 |
+| sim preset: Sinister Strike | 387 | -0% | +10% | +38% | +1% | +26% | 675 |
+| sim preset: Combat Dual-Wield 15/33/3 | 380 | +0% | +9% | +38% | +1% | +25% | 662 |
+| sim preset: Assassination Mutilate 31/20/0 | 356 | +0% | +9% | +36% | +1% | +25% | 610 |
+| sim preset: Mutilate | 344 | +0% | +8% | +37% | +1% | +28% | 597 |
+| sim preset: Backstab | 331 | +0% | +17% | +41% | +1% | +23% | 602 |
+| sim preset: Subtlety Hemo 15/0/36 | 315 | -0% | +10% | +40% | +1% | +15% | 527 |
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
 

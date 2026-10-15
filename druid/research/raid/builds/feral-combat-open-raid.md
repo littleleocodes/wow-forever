@@ -132,6 +132,7 @@ Damage by ability:
 - Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Ferocity, Feral Swiftness, Leader of the Pack, Nature's Focus.
 - Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements.
 - 2026-10-10 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Feral Swiftness -> Thick Hide (survival); Ferocity -> Thick Hide (survival); Ferocity -> Thick Hide (survival). Net +0.00% on a third seed.
+- 2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Feral Combat: its full-raid winner is +0.06% against it, under the 0.5% bar for a new build.
 
 ## Open questions (verify in the live game)
 

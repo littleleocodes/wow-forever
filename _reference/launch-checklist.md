@@ -46,7 +46,7 @@
 **Feral — Bear Tank (simulator winner adopted 2026-09-27)** (`druid/research/raid/builds/feral-bear-tank.md`)
 - [ ] Mangle threat modifier; whether Dire Bear armor multiplier changed with the reworked Thick Hide.
 
-**Balance — Moonkin / Eclipse (simulator winner adopted 2026-09-26)** (`druid/research/raid/builds/balance-moonkin-raid.md`)
+**Balance — Moonkin / Nature's Grace (simulator winner adopted 2026-09-26)** (`druid/research/raid/builds/balance-moonkin-raid.md`)
 - [ ] Moonfury per-rank value; Eclipse charge behaviour; whether Moonkin's crit aura stacks with Leader of the Pack (demo says exclusive).
 
 **Restoration — PvP healer with a Balance dip (14/0/37)** (`druid/research/pvp/builds/pvp-resto.md`)
@@ -62,9 +62,6 @@
 **Optimizer — White 40%, Shred 30% (60 energy), Ferocious Bite 15%, Rip 10%, Claw/Rake 5% (solo-60)** (`druid/research/leveling/builds/opt-feral-cat-dps-solo-60.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Optimizer — Starfire 55%, Wrath 20%, Moonfire 20% (8% direct, 12% DoT), Insect Swarm arrives as a talent effect (leveling-st)** (`druid/research/leveling/builds/opt-balance-dps-leveling-st.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
 **Balance — PvP (derived)** (`druid/research/pvp/builds/balance-pvp.md`)
 - [ ] A derived Balance PvP build: check it in duels and battlegrounds at launch.
 
@@ -76,9 +73,6 @@
 
 **Optimizer — Healing Touch 35%, Regrowth 30%, Rejuvenation 30%, Tranquility 5% (raid-heal)** (`druid/research/raid/builds/opt-resto-heal-raid-heal.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Restoration — Leveling into the raid build** (`druid/research/leveling/builds/restoration-leveling.md`)
-- [ ] Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
 
 **Optimizer — Starfire 55%, Wrath 20%, Moonfire 20% (8% direct, 12% DoT), Insect Swarm arrives as a talent effect (raid-dps)** (`druid/research/raid/builds/opt-balance-dps-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
@@ -109,6 +103,12 @@
 
 **Restoration — Raid healing (machine-learning search)** (`druid/research/raid/builds/restoration-ml-heal.md`)
 - [ ] A machine-searched Restoration build: check it against the community's healing builds at launch.
+
+**Restoration — Leveling into the raid build** (`druid/research/leveling/builds/restoration-leveling.md`)
+- [ ] Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
+
+**Optimizer — Starfire 55%, Wrath 20%, Moonfire 20% (8% direct, 12% DoT), Insect Swarm arrives as a talent effect (leveling-st)** (`druid/research/leveling/builds/opt-balance-dps-leveling-st.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
 ### Hunter
 
@@ -174,12 +174,6 @@
 **Optimizer — Melee hunter (Forever): dual-wield white swings under Aspect of the Beast, Raptor Strike on the next swing, Mongoose Bite after dodges and Expose Prey procs, Strider Kick on cooldown, Counterattack after parries, the Lacerating Strikes bleed, one Serpent Sting from the pull (the 8 yd minimum range stops every other shot in melee), and the pet unless Lone Wolf (raid-dps)** (`hunter/research/raid/builds/opt-melee-dps-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Optimizer — Pet-first leveling (leveling-aoe)** (`hunter/research/leveling/builds/opt-bm-leveling-leveling-aoe.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Melee hunter (Forever): dual-wield white swings under Aspect of the Beast, Raptor Strike on the next swing, Mongoose Bite after dodges and Expose Prey procs, Strider Kick on cooldown, Counterattack after parries, the Lacerating Strikes bleed, one Serpent Sting from the pull (the 8 yd minimum range stops every other shot in melee), and the pet unless Lone Wolf (leveling-st)** (`hunter/research/leveling/builds/opt-melee-dps-leveling-st.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
 **Beast Mastery — Leveling (generated)** (`hunter/research/leveling/builds/beast-mastery-leveling.md`)
 - [ ] A generated Beast Mastery build: check it against the community's Beast Mastery builds at launch.
 
@@ -231,8 +225,14 @@
 **Beast Mastery — Raid (machine-learning search)** (`hunter/research/raid/builds/beast-mastery-ml-raid.md`)
 - [ ] A machine-searched Beast Mastery build: check it against the community's Beast Mastery builds at launch.
 
-**Beast-Marks — Raid (machine-learning search)** (`hunter/research/raid/builds/beast-marks-ml-raid.md`)
-- [ ] A machine-searched Beast-Marks build: check it against the community's Beast-Marks builds at launch.
+**Beast-Marks — Raid (open talent search)** (`hunter/research/raid/builds/beast-marks-open-raid.md`)
+- [ ] An open-search Beast-Marks build: check it against the community's Beast-Marks builds at launch.
+
+**Optimizer — Pet-first leveling (leveling-aoe)** (`hunter/research/leveling/builds/opt-bm-leveling-leveling-aoe.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Melee hunter (Forever): dual-wield white swings under Aspect of the Beast, Raptor Strike on the next swing, Mongoose Bite after dodges and Expose Prey procs, Strider Kick on cooldown, Counterattack after parries, the Lacerating Strikes bleed, one Serpent Sting from the pull (the 8 yd minimum range stops every other shot in melee), and the pet unless Lone Wolf (leveling-st)** (`hunter/research/leveling/builds/opt-melee-dps-leveling-st.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
 ### Mage
 
@@ -248,12 +248,12 @@
 - [ ] Fingers of Frost rank-2 value (extrapolated) and whether Winter's Chill stacks.
 - [ ] Mana: no Arcane Meditation — is Frost Channeling + Clearcasting enough for a 5-minute fight?
 
-**Fire — Ignite / Hot Streak (simulator winner adopted 2026-09-28)** (`mage/research/raid/builds/fire-raid.md`)
+**Fire — Ignite / Heating Up (simulator winner adopted 2026-09-28)** (`mage/research/raid/builds/fire-raid.md`)
 - [ ] Does a 3-stack Hot Streak Pyroblast (1.5s cast) beat Fireball per cast time? If yes, Pyroblast enters the rotation.
 - [ ] Incineration (Scorch/Fire Blast/Arcane Blast crit) vs. Flame Throwing.
 - [ ] Whether Arcane Meditation 3/3 (est. 51% regen while casting) is worth 5 Arcane filler points and 2 hit.
 
-**Frostfire — Frostfire Bolt / Hot Streak (Fire/Frost hybrid, raid)** (`mage/research/raid/builds/frostfire-raid.md`)
+**Frostfire — Frostfire Bolt / Heating Up (Fire/Frost hybrid, raid)** (`mage/research/raid/builds/frostfire-raid.md`)
 - [ ] Does Frostfire Bolt take both schools' bonuses in the live game (Fire Power and Piercing Ice, Critical Mass and Ice Shards)? The tooltip says it counts as both Frost and Fire damage.
 - [ ] Are the rank-3 numbers (270-314 + 57 over 9 s, 370 mana) final? A stronger Frostfire Bolt would move this build up the ranking.
 - [ ] Frostfire Bolt's slow: the tooltip gives 40% without a duration (9 s assumed in the fight lab).
@@ -276,9 +276,6 @@
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
 **Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (raid-dps-extwc)** (`mage/research/raid/builds/opt-frost-raid-raid-dps-extwc.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — AoE grinding: Frost Nova -> Blizzard -> Cone of Cold / Arcane Explosion on 5-10 mobs (leveling-aoe)** (`mage/research/leveling/builds/opt-frost-aoe-leveling-aoe.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
 **Arcane — PvP (derived)** (`mage/research/pvp/builds/arcane-pvp.md`)
@@ -317,6 +314,12 @@
 **Frostfire — Fingers of Frost / Ice Lance (user build)** (`mage/research/raid/builds/frostfire-fingers-of-frost-raid.md`)
 - [ ] Does Frostfire Bolt's chill proc Fingers of Frost in the live game as the simulator assumes?
 
+**Arcane-Frost — Raid (open talent search)** (`mage/research/raid/builds/arcane-frost-open-raid.md`)
+- [ ] An open-search Arcane-Frost build: check it against the community's Arcane-Frost builds at launch.
+
+**Optimizer — AoE grinding: Frost Nova -> Blizzard -> Cone of Cold / Arcane Explosion on 5-10 mobs (leveling-aoe)** (`mage/research/leveling/builds/opt-frost-aoe-leveling-aoe.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
 **Arcane-Frost — Leveling (open talent search)** (`mage/research/leveling/builds/arcane-frost-open-leveling.md`)
 - [ ] An open-search Arcane-Frost leveling build: check it while leveling at launch.
 
@@ -326,12 +329,9 @@
 **Frost — Leveling (open talent search)** (`mage/research/leveling/builds/frost-open-leveling.md`)
 - [ ] An open-search Frost leveling build: check it while leveling at launch.
 
-**Arcane-Frost — Raid (open talent search)** (`mage/research/raid/builds/arcane-frost-open-raid.md`)
-- [ ] An open-search Arcane-Frost build: check it against the community's Arcane-Frost builds at launch.
-
 ### Paladin
 
-**Holy — Raid Healer (31/0/20)** (`paladin/research/raid/builds/holy-raid-healer.md`)
+**Holy — Raid Healer (33/0/18)** (`paladin/research/raid/builds/holy-raid-healer.md`)
 - [ ] Light's Vigil healing numbers and whether the party heal makes Holy Shock a raid-heal tool.
 - [ ] Champion of the Light (Retribution tier 6, +33% of Intellect as healing) is unreachable with 31 Holy — a 21/0/30 'Champion' healer may be worth testing.
 - [ ] Illumination rank scaling (20% per rank read at rank 1).
@@ -367,9 +367,6 @@
 **Retribution — PvP (derived)** (`paladin/research/pvp/builds/retribution-pvp.md`)
 - [ ] A derived Retribution PvP build: check it in duels and battlegrounds at launch.
 
-**Optimizer — Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic) (leveling-aoe)** (`paladin/research/leveling/builds/opt-ret-dps-leveling-aoe.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
 **Optimizer — Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic) (leveling-st)** (`paladin/research/leveling/builds/opt-ret-dps-leveling-st.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -378,12 +375,6 @@
 
 **Optimizer — Raid healing: Flash of Light 55%, Holy Light 35%, Holy Shock 5% (talent/instant), Lay on Hands 5% (raid-heal)** (`paladin/research/raid/builds/opt-holy-heal-raid-heal.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Holy — Leveling into the raid build** (`paladin/research/leveling/builds/holy-leveling.md`)
-- [ ] Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
-
-**Protection — Leveling into the raid build** (`paladin/research/leveling/builds/protection-leveling.md`)
-- [ ] Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
 
 **Retribution — Raid (machine-learning search)** (`paladin/research/raid/builds/retribution-ml-raid.md`)
 - [ ] A machine-searched Retribution build: check it against the community's Retribution builds at launch.
@@ -397,6 +388,21 @@
 **Optimizer — Shield tank: Consecration 25%, Holy Strike 20% (Forever; Classic uses Seal/Judgement of Righteousness instead), seal+judgement 15%, Retribution Aura 10%, white 20%, Holy Shield blocks via talent (raid-tank)** (`paladin/research/raid/builds/opt-prot-tank-raid-tank.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
+**Holy — Raid healing (machine-learning search)** (`paladin/research/raid/builds/holy-ml-heal.md`)
+- [ ] A machine-searched Holy build: check it against the community's healing builds at launch.
+
+**Protection — Raid tank (machine-learning search)** (`paladin/research/raid/builds/protection-ml-tank.md`)
+- [ ] A machine-searched Protection tank build: check its threat and survival against the community's tank builds at launch (the simulator models no threat from other players, taunts or tank swaps).
+
+**Holy — Leveling into the raid build** (`paladin/research/leveling/builds/holy-leveling.md`)
+- [ ] Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
+
+**Protection — Leveling into the raid build** (`paladin/research/leveling/builds/protection-leveling.md`)
+- [ ] Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
+
+**Optimizer — Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic) (leveling-aoe)** (`paladin/research/leveling/builds/opt-ret-dps-leveling-aoe.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
 **Shockadin — Leveling (open talent search)** (`paladin/research/leveling/builds/shockadin-open-leveling.md`)
 - [ ] An open-search Shockadin leveling build: check it while leveling at launch.
 
@@ -405,12 +411,6 @@
 
 **Retribution — Leveling (open talent search)** (`paladin/research/leveling/builds/retribution-open-leveling.md`)
 - [ ] An open-search Retribution leveling build: check it while leveling at launch.
-
-**Holy — Raid healing (machine-learning search)** (`paladin/research/raid/builds/holy-ml-heal.md`)
-- [ ] A machine-searched Holy build: check it against the community's healing builds at launch.
-
-**Protection — Raid tank (machine-learning search)** (`paladin/research/raid/builds/protection-ml-tank.md`)
-- [ ] A machine-searched Protection tank build: check its threat and survival against the community's tank builds at launch (the simulator models no threat from other players, taunts or tank swaps).
 
 ### Priest
 
@@ -435,9 +435,6 @@
 **Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (solo-60)** (`priest/research/leveling/builds/opt-shadow-dps-solo-60.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (leveling-aoe)** (`priest/research/leveling/builds/opt-shadow-dps-leveling-aoe.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
 **Discipline/Holy — Smite (raid)** (`priest/research/raid/builds/smite-discipline-raid.md`)
 - [ ] Penance's damage rank (131 a bolt at rank 4) and whether Power in Light counts Penance's bolts.
 
@@ -450,12 +447,6 @@
 **Optimizer — Raid healing mix: Greater Heal 35%, Flash Heal 20%, Renew 20%, Prayer of Healing 15%, Power Word: Shield 6%, Heal 4% (raid-heal)** (`priest/research/raid/builds/opt-holy-heal-raid-heal.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Discipline — Leveling into the raid build** (`priest/research/leveling/builds/discipline-leveling.md`)
-- [ ] Check the Discipline leveling pace at launch; the raid build's talents may cost speed early.
-
-**Holy — Leveling into the raid build** (`priest/research/leveling/builds/holy-leveling.md`)
-- [ ] Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
-
 **Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (raid-dps)** (`priest/research/raid/builds/opt-shadow-dps-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -465,20 +456,29 @@
 **Smite — Raid (open talent search)** (`priest/research/raid/builds/smite-open-raid.md`)
 - [ ] An open-search Smite build: check it against the community's Smite builds at launch.
 
-**Discipline/Shadow hybrid — Leveling (open talent search)** (`priest/research/leveling/builds/hybrid-discipline-shadow-open-leveling.md`)
-- [ ] An open-search Discipline/Shadow hybrid leveling build: check it while leveling at launch.
-
-**Holy/Shadow hybrid — Leveling (open talent search)** (`priest/research/leveling/builds/hybrid-holy-shadow-open-leveling.md`)
-- [ ] An open-search Holy/Shadow hybrid leveling build: check it while leveling at launch.
-
-**Shadow — Leveling (open talent search)** (`priest/research/leveling/builds/shadow-open-leveling.md`)
-- [ ] An open-search Shadow leveling build: check it while leveling at launch.
-
 **Holy — Raid healing (machine-learning search)** (`priest/research/raid/builds/holy-ml-heal.md`)
 - [ ] A machine-searched Holy build: check it against the community's healing builds at launch.
 
 **Discipline — Raid healing (machine-learning search)** (`priest/research/raid/builds/discipline-ml-heal.md`)
 - [ ] A machine-searched Discipline build: check it against the community's healing builds at launch.
+
+**Discipline — Leveling into the raid build** (`priest/research/leveling/builds/discipline-leveling.md`)
+- [ ] Check the Discipline leveling pace at launch; the raid build's talents may cost speed early.
+
+**Holy — Leveling into the raid build** (`priest/research/leveling/builds/holy-leveling.md`)
+- [ ] Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
+
+**Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (leveling-aoe)** (`priest/research/leveling/builds/opt-shadow-dps-leveling-aoe.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Discipline-Shadow — Leveling (open talent search)** (`priest/research/leveling/builds/hybrid-discipline-shadow-open-leveling.md`)
+- [ ] An open-search Discipline-Shadow leveling build: check it while leveling at launch.
+
+**Holy-Shadow — Leveling (open talent search)** (`priest/research/leveling/builds/hybrid-holy-shadow-open-leveling.md`)
+- [ ] An open-search Holy-Shadow leveling build: check it while leveling at launch.
+
+**Shadow — Leveling (open talent search)** (`priest/research/leveling/builds/shadow-open-leveling.md`)
+- [ ] An open-search Shadow leveling build: check it while leveling at launch.
 
 ### Rogue
 
@@ -507,7 +507,7 @@
 **Hemorrhage / Preparation / Thousand Cuts (PvP)** (`rogue/research/pvp/builds/pvp-hemo-prep.md`)
 - [ ] Preparation's 10-minute demo cooldown vs. Classic's 10 minutes — confirm; and whether it still resets Cold Blood.
 
-**Leveling — Assassination with swords (31/20/0)** (`rogue/research/leveling/builds/leveling-combat-swords.md`)
+**Leveling — Assassination with Combat's weapon talents (31/20/0)** (`rogue/research/leveling/builds/leveling-combat-swords.md`)
 - [ ] Restless Blades' cooldown reduction per finisher — if it also affects Vanish as written, it changes how often you can reset a bad pull.
 - [ ] Hack and Slash dagger/fist crit scaling (only rank 1 read).
 
@@ -518,9 +518,6 @@
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
 **Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (solo-60)** (`rogue/research/leveling/builds/opt-combat-swords-raid-solo-60.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (leveling-aoe)** (`rogue/research/leveling/builds/opt-combat-swords-raid-leveling-aoe.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
 **Combat — Leveling (generated)** (`rogue/research/leveling/builds/combat-leveling.md`)
@@ -559,21 +556,24 @@
 **Subtlety — Raid (open talent search)** (`rogue/research/raid/builds/subtlety-open-raid.md`)
 - [ ] An open-search Subtlety build: check it against the community's Subtlety builds at launch.
 
+**Daggers (split) — Raid (open talent search)** (`rogue/research/raid/builds/daggers-split-open-raid.md`)
+- [ ] An open-search Daggers (split) build: check it against the community's Daggers (split) builds at launch.
+
+**Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (leveling-aoe)** (`rogue/research/leveling/builds/opt-combat-swords-raid-leveling-aoe.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
 **Daggers (split) — Leveling (open talent search)** (`rogue/research/leveling/builds/daggers-split-open-leveling.md`)
 - [ ] An open-search Daggers (split) leveling build: check it while leveling at launch.
 
 **Combat-Subtlety — Leveling (open talent search)** (`rogue/research/leveling/builds/combat-subtlety-open-leveling.md`)
 - [ ] An open-search Combat-Subtlety leveling build: check it while leveling at launch.
 
-**Daggers (split) — Raid (machine-learning search)** (`rogue/research/raid/builds/daggers-split-ml-raid.md`)
-- [ ] A machine-searched Daggers (split) build: check it against the community's Daggers (split) builds at launch.
-
 ### Shaman
 
 **Restoration — Raid Healer (healer lab winner adopted 2026-09-26)** (`shaman/research/raid/builds/resto-raid-healer.md`)
 - [ ] Riptide numbers at 60; Water Shield mana per globe; Thundering Strikes vs. Ancestral Knowledge for a healer.
 
-**Elemental — Lava Burst / Lightning Overload (simulator winner adopted 2026-09-26)** (`shaman/research/raid/builds/elemental-raid-dps.md`)
+**Elemental — Lightning Overload / Elemental Fury (simulator winner adopted 2026-09-26)** (`shaman/research/raid/builds/elemental-raid-dps.md`)
 - [ ] Elemental Alacrity total (0.5s vs. Classic Lightning Mastery's 1.0s) — Lightning Bolt may be a 2.5s cast.
 - [ ] Lava Burst damage at 60 and whether it can crit for Elemental Fury.
 - [ ] Whether Water Shield procs on spell crits (text says healing crits).
@@ -596,12 +596,6 @@
 **Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (solo-60)** (`shaman/research/leveling/builds/opt-enhancement-dps-solo-60.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (leveling-aoe)** (`shaman/research/leveling/builds/opt-enhancement-dps-leveling-aoe.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (leveling-st)** (`shaman/research/leveling/builds/opt-elemental-dps-leveling-st.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
 **Elemental — Raid (generated)** (`shaman/research/raid/builds/elemental-raid.md`)
 - [ ] A generated Elemental build: check it against the community's Elemental builds at launch.
 
@@ -616,9 +610,6 @@
 
 **Optimizer — Raid healing: Chain Heal 45%, Healing Wave 35%, Lesser Healing Wave 15%, Healing Stream Totem 5% (raid-heal)** (`shaman/research/raid/builds/opt-resto-heal-raid-heal.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Restoration — Leveling into the raid build** (`shaman/research/leveling/builds/restoration-leveling.md`)
-- [ ] Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
 
 **Enhancement — Raid (machine-learning search)** (`shaman/research/raid/builds/enhancement-ml-raid.md`)
 - [ ] A machine-searched Enhancement build: check it against the community's Enhancement builds at launch.
@@ -644,6 +635,15 @@
 **Elemental-Enhancement — Raid (machine-learning search)** (`shaman/research/raid/builds/elemental-enhancement-ml-raid.md`)
 - [ ] A machine-searched Elemental-Enhancement build: check it against the community's Elemental-Enhancement builds at launch.
 
+**Restoration — Leveling into the raid build** (`shaman/research/leveling/builds/restoration-leveling.md`)
+- [ ] Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
+
+**Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (leveling-aoe)** (`shaman/research/leveling/builds/opt-enhancement-dps-leveling-aoe.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (leveling-st)** (`shaman/research/leveling/builds/opt-elemental-dps-leveling-st.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
 ### Warlock
 
 **DS/Ruin — Demonic Sacrifice + Ruin (simulator winner adopted 2026-09-26)** (`warlock/research/raid/builds/ds-ruin-raid.md`)
@@ -651,12 +651,12 @@
 - [ ] Ruin rank scaling (only rank 1 = 20% was read).
 - [ ] Whether Conflagrate uptime for Shadow and Flame is worth the Immolate casts versus more Shadow Bolts.
 
-**Affliction — DoT / Drain Hope (simulator winner adopted 2026-09-27)** (`warlock/research/raid/builds/affliction-dot-raid.md`)
+**Affliction — DoT / Malevolence / Nightfall (simulator winner adopted 2026-09-27)** (`warlock/research/raid/builds/affliction-dot-raid.md`)
 - [ ] Shadow Mastery per-rank value (1% or 2%).
 - [ ] Does Forever keep a raid debuff cap? Four DoTs per warlock would not fit a Classic-style 16-slot limit.
 - [ ] Nightfall (Shadow Trance) at 2%/rank — worth 2 points over the fillers?
 
-**Destruction — Immolate / Conflagrate / Incinerate (simulator winner adopted 2026-09-28)** (`warlock/research/raid/builds/destruction-fire-raid.md`)
+**Affliction/Destruction — Shadow Bolt / Ruin / Shadowburn (simulator winner adopted 2026-09-28)** (`warlock/research/raid/builds/destruction-fire-raid.md`)
 - [ ] Incinerate/Conflagrate damage at level 60 vs. Shadow Bolt with Ruin + Improved Shadow Bolt.
 - [ ] Does Conflagrate still consume Immolate (demo says yes) — that makes Immolate uptime the rotation's pacing problem.
 - [ ] Fire resistance/immunity of the new raid bosses.
@@ -683,9 +683,6 @@
 
 **Destruction — PvP (derived)** (`warlock/research/pvp/builds/destruction-pvp.md`)
 - [ ] A derived Destruction PvP build: check it in duels and battlegrounds at launch.
-
-**Optimizer — Voidwalker tank: Corruption 24%, Agony 14%, Drain Life 16%, Shadow Bolt 14%, Immolate 6%, wand 6%, Voidwalker 20% (leveling-aoe)** (`warlock/research/leveling/builds/opt-affliction-leveling-leveling-aoe.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
 **Optimizer — Voidwalker tank: Corruption 24%, Agony 14%, Drain Life 16%, Shadow Bolt 14%, Immolate 6%, wand 6%, Voidwalker 20% (leveling-st)** (`warlock/research/leveling/builds/opt-affliction-leveling-leveling-st.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
@@ -732,6 +729,9 @@
 **Shadow Bolt hybrid — Raid (open talent search)** (`warlock/research/raid/builds/shadow-bolt-hybrid-open-raid.md`)
 - [ ] An open-search Shadow Bolt hybrid build: check it against the community's Shadow Bolt hybrid builds at launch.
 
+**Optimizer — Voidwalker tank: Corruption 24%, Agony 14%, Drain Life 16%, Shadow Bolt 14%, Immolate 6%, wand 6%, Voidwalker 20% (leveling-aoe)** (`warlock/research/leveling/builds/opt-affliction-leveling-leveling-aoe.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
 **Affliction-Demonology — Leveling (open talent search)** (`warlock/research/leveling/builds/affliction-demonology-open-leveling.md`)
 - [ ] An open-search Affliction-Demonology leveling build: check it while leveling at launch.
 
@@ -776,12 +776,6 @@
 **Optimizer — Raid dual-wield Fury: white ~50% (MH 35 / OH 15), Heroic Strike dump, Whirlwind, Execute, Overpower; Bloodthirst and Deep Wounds arrive as talent effects (solo-60)** (`warrior/research/leveling/builds/opt-fury-dw-raid-solo-60.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Optimizer — Two-handed Arms/raid or leveling: white ~45%, Heroic Strike, Overpower, Execute, Rend; Mortal Strike/Slam arrive as talent effects (leveling-aoe)** (`warrior/research/leveling/builds/opt-arms-2h-raid-leveling-aoe.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Protection — Leveling into the raid build** (`warrior/research/leveling/builds/protection-leveling.md`)
-- [ ] Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
-
 **Arms — Full raid (the community's #2 Arms build)** (`warrior/research/raid/builds/arms-community-parse.md`)
 - [ ] Why does our dummy-picked Arms build lose 14% in a full raid? The talents that pay off on a buffed, debuffed target should be fitted into the raid-mode model.
 
@@ -817,4 +811,10 @@
 
 **Protection — Leveling (open talent search)** (`warrior/research/leveling/builds/protection-open-leveling.md`)
 - [ ] An open-search Protection leveling build: check it while leveling at launch.
+
+**Protection — Leveling into the raid build** (`warrior/research/leveling/builds/protection-leveling.md`)
+- [ ] Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
+
+**Optimizer — Two-handed Arms/raid or leveling: white ~45%, Heroic Strike, Overpower, Execute, Rend; Mortal Strike/Slam arrive as talent effects (leveling-aoe)** (`warrior/research/leveling/builds/opt-arms-2h-raid-leveling-aoe.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 

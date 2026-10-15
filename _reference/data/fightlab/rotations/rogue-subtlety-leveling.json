@@ -1,16 +1,19 @@
 {
- "eat_below": 0.5,
+ "eat_below": 0.4,
  "veto": {
   "Slice and Dice": {
    "off": true
   },
   "Kidney Shot": {
    "off": true
+  },
+  "Kick": {
+   "off": true
   }
  },
  "class": "rogue",
  "spec": "subtlety-leveling",
- "build": "/home/user/wow-forever/rogue/research/leveling/fightlab/candidates/derived-subtlety-scorer.json",
+ "build": "combat-subtlety-open-leveling",
  "levels": [
   20,
   30,
@@ -18,20 +21,20 @@
   50,
   60
  ],
- "date": "2026-09-30",
+ "date": "2026-10-15",
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "eat below 50% health",
+   "change": "eat below 40% health",
    "rule": [
     "eat_below",
     null,
-    0.5
+    0.4
    ],
-   "gain_seed1": 0.04091185235812422,
-   "gain_seed2": 0.03733463990203689
+   "gain_seed1": 0.04423409910818987,
+   "gain_seed2": 0.043461087742102666
   },
   {
    "round": 2,
@@ -41,8 +44,8 @@
     "Slice and Dice",
     true
    ],
-   "gain_seed1": 0.031777977075854724,
-   "gain_seed2": 0.031514219657119646
+   "gain_seed1": 0.025779830482019817,
+   "gain_seed2": 0.027582499601632615
   },
   {
    "round": 3,
@@ -52,40 +55,51 @@
     "Kidney Shot",
     true
    ],
-   "gain_seed1": 0.01407229492535289,
-   "gain_seed2": 0.009428942253508543
+   "gain_seed1": 0.01139726966735588,
+   "gain_seed2": 0.009454117166865172
+  },
+  {
+   "round": 4,
+   "change": "never cast Kick",
+   "rule": [
+    "off",
+    "Kick",
+    true
+   ],
+   "gain_seed1": 0.0037311086220928047,
+   "gain_seed2": 0.006589873072514907
   }
  ],
- "weighted_before": 28.695034845402336,
- "weighted_after": 26.505119700200453,
+ "weighted_before": 25.763664286308153,
+ "weighted_after": 23.584005182043278,
  "per_level": {
   "20": {
-   "before": 19.70163037859535,
-   "after": 19.20283333322665,
+   "before": 17.969945255710837,
+   "after": 17.309166666580882,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 24.554848523801382,
-   "after": 23.275466666576904,
+   "before": 22.741544145889034,
+   "after": 20.75246666654269,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 29.947723459848188,
-   "after": 27.248900000052945,
+   "before": 28.44465962024094,
+   "after": 25.276299999978534,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 30.49809991649405,
-   "after": 28.097066666750763,
+   "before": 27.52394896721115,
+   "after": 25.214794061685126,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 31.425249526264825,
-   "after": 28.7315656673099,
+   "before": 26.61839657667579,
+   "after": 24.604199999956,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

@@ -82,7 +82,7 @@ The spells new in Forever, what the simulators measured them doing, and the buil
 | Seal of Fury | Protection | 58 | - | Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 35 Holy damage. | not cast by any raced build | - | not cast |  |
 | Swift Judgement | Protection | 25 | 1 min | Finishes the remaining cooldown on your Judgement ability and reduces the Mana cost of your next Judgement by 100%. | no damage of its own, 1.0 casts/min: [`prot-tank`](builds/prot-tank.md) (prot-tank) | - | not cast | Ends Judgement's cooldown (1 min); the rotation search offers it. |
 | Templar's Bulwark | Protection | 30 | 5 min | When activated, this ability grants you an absorb shield equal to 100% of your maximum health for 8 sec. | no damage of its own, 0.3 casts/min: [`prot-tank`](builds/prot-tank.md) (prot-tank) | prot-tank (raid): insert at the top: cast Templar's Bulwark (+1.4%) | not cast | A tank absorb cooldown; the Protection rotation search offers it. |
-| Holy Strike | Retribution | 60 | 10 sec | An instant strike that causes 50% weapon damage plus an additional 40 to 53 as Holy damage. | 14% of the damage, 6.0 casts/min: [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) (ret-dps) | ret-dps (raid): move down below 'if mana % ≥ 50%: cast Consecration': cast Holy Strike (+0.6%) | 18% of the damage, 2.4 casts a kill: `opt-ret-dps-leveling-aoe` at 60 (ret-dps-aoe) | The new baseline Retribution strike; every paladin rotation of the simulator casts it. |
+| Holy Strike | Retribution | 60 | 10 sec | An instant strike that causes 50% weapon damage plus an additional 40 to 53 as Holy damage. | 14% of the damage, 6.0 casts/min: [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) (ret-dps) | ret-dps (raid): move down below 'if mana % ≥ 50%: cast Consecration': cast Holy Strike (+0.6%) | 16% of the damage, 2.2 casts a kill: `opt-ret-dps-leveling-aoe` at 60 (ret-dps-aoe) | The new baseline Retribution strike; every paladin rotation of the simulator casts it. |
 
 ### Builds searched around them
 
@@ -183,3 +183,20 @@ Model findings (generated from the optimizer builds; scores are within each spec
 - **Raid main tank:** 0/32/19; biggest talents by score lost when removed: Holy Shield (10.1), Deflection (5.5), Iron Creed (5.5), Improved Righteous Fury (5.0), Shield Specialization (4.1); the hand draft `prot-tank` is 0/23/28.
 
 Beta hypotheses: every build's unverified claims are its `open_questions`, collected in [`_reference/launch-checklist.md`](../../../_reference/launch-checklist.md); level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).
+
+## Report index
+
+Reports under this folder that no other page links to (generated):
+
+- [deep-optimization-tank.md](deep-optimization-tank.md): Paladin Protection: deep optimisation of the tank (generated)
+- [heallab/deep-optimization-holy.md](heallab/deep-optimization-holy.md): Paladin Holy: deep optimisation in the healer lab (generated)
+- [heallab/gear.md](heallab/gear.md): Healer gear — paladin
+- [heallab/holy-heal.md](heallab/holy-heal.md): Healer lab — paladin holy-heal
+- [optimizer/holy-heal-raid-heal.md](optimizer/holy-heal-raid-heal.md): paladin / forever / spec holy-heal / profile raid-heal
+- [optimizer/prot-tank-raid-tank.md](optimizer/prot-tank-raid-tank.md): paladin / forever / spec prot-tank / profile raid-tank
+- [optimizer/ret-dps-parse.md](optimizer/ret-dps-parse.md): paladin / forever / spec ret-dps / profile parse
+- [optimizer/ret-dps-raid-dps.md](optimizer/ret-dps-raid-dps.md): paladin / forever / spec ret-dps / profile raid-dps
+- [raidsim/prot-tank-environments.md](raidsim/prot-tank-environments.md): DPS by environment — paladin prot-tank
+- [raidsim/prot-tank.md](raidsim/prot-tank.md): Raid sim — paladin prot-tank
+- [raidsim/ret-dps-environments.md](raidsim/ret-dps-environments.md): DPS by environment — paladin ret-dps
+- [raidsim/ret-dps.md](raidsim/ret-dps.md): Raid sim — paladin ret-dps

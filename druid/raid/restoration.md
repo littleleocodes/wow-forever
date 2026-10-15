@@ -37,6 +37,26 @@ Keep **Rejuvenation** on the tank and heal it with **Healing Touch** at the rank
 
 Healing capacity 0.60 (the raid damage it heals through in this project's healer lab), 350 healing per second. Healers are not in the community simulator.
 
+**The gear** (average item level: Pre-BiS 60.3; Phase 1 BiS 66.0; chosen by the stat weights this project's healer lab measures for this build, the healing capacity each stat adds; healers are in no community simulator, so this is our model; each item opens its Wowhead page, with where it drops and its enchant):
+
+| Slot | Pre-BiS | Phase 1 BiS |
+|---|---|---|
+| Head | [Living Crown](https://www.wowhead.com/forever/item=252561) · *Leatherworking*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11649) | [Living Crown](https://www.wowhead.com/forever/item=252561) · *Leatherworking*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11649) |
+| Neck | [Amulet of the Redeemed](https://www.wowhead.com/forever/item=22327) · *Stratholme* | [Amulet of the Redeemed](https://www.wowhead.com/forever/item=22327) · *Stratholme* |
+| Shoulders | [Wildheart Spaulders](https://www.wowhead.com/forever/item=16718) · *Gizrul the Slavener, Blackrock Spire* | [Wild Growth Spaulders](https://www.wowhead.com/forever/item=18810) · *Molten Core* |
+| Back | [Hide of the Wild](https://www.wowhead.com/forever/item=18510) · *Leatherworking* | [Hide of the Wild](https://www.wowhead.com/forever/item=18510) · *Leatherworking* |
+| Chest | [Ironfeather Breastplate](https://www.wowhead.com/forever/item=15066) · *Leatherworking*<br>+ [Enchant Chest - Major Intellect](https://www.wowhead.com/forever/spell=19991) | [Ironfeather Breastplate](https://www.wowhead.com/forever/item=15066) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
+| Wrist | [Bleak Howler Armguards](https://www.wowhead.com/forever/item=13208) · *Gizrul the Slavener, Blackrock Spire*<br>+ [Enchant Bracer - Healing Power](https://www.wowhead.com/forever/spell=23796) | [Bleak Howler Armguards](https://www.wowhead.com/forever/item=13208) · *Gizrul the Slavener, Blackrock Spire*<br>+ [Enchant Bracer - Superior Spirit](https://www.wowhead.com/forever/item=16218) |
+| Hands | [Hands of the Exalted Herald](https://www.wowhead.com/forever/item=12554) · *Blackrock Depths* | [Cenarion Gloves](https://www.wowhead.com/forever/item=16831) · *Shazzrah, Molten Core* |
+| Waist | [Wisdom of the Timbermaw](https://www.wowhead.com/forever/item=19047) · *Tailoring* | [Corehound Belt](https://www.wowhead.com/forever/item=19162) · *Leatherworking* |
+| Legs | [Leggings of Arcana](https://www.wowhead.com/forever/item=12756) · *quest: Leggings of Arcana*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11649) | [Stormrage Legguards](https://www.wowhead.com/forever/item=16901) · *Ragnaros, Molten Core*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11649) |
+| Feet | [Mooncloth Boots](https://www.wowhead.com/forever/item=15802) · *Tailoring*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/item=16220) | [Mooncloth Boots](https://www.wowhead.com/forever/item=15802) · *Tailoring*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/item=16220) |
+| Finger | [Band of Mending](https://www.wowhead.com/forever/item=22334) · *Stratholme* | [Band of Sulfuras](https://www.wowhead.com/forever/item=19138) · *Ragnaros, Molten Core* |
+| Finger | [Emerald Flame Ring](https://www.wowhead.com/forever/item=18395) · *Prince Tortheldrin, Dire Maul* | [Cauterizing Band](https://www.wowhead.com/forever/item=19140) · *Majordomo Executus, Molten Core* |
+| Trinket | [Royal Seal of Eldre'Thalas](https://www.wowhead.com/forever/item=18470) · *quest: The Emerald Dream* | [Royal Seal of Eldre'Thalas](https://www.wowhead.com/forever/item=18470) · *quest: The Emerald Dream* |
+| Trinket | [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) | [Serenity Field](https://www.wowhead.com/forever/item=272439) |
+| Main hand | [Staff of Metanoia](https://www.wowhead.com/forever/item=22394) · *Jandice Barov, Scholomance*<br>+ [Enchant Weapon - Healing Power](https://www.wowhead.com/forever/spell=22748) | [Staff of Dominance](https://www.wowhead.com/forever/item=18842) · *Golemagg the Incinerator, Molten Core*<br>+ [Enchant Weapon - Mighty Spirit](https://www.wowhead.com/forever/spell=23797) |
+
 ## Other builds of this spec
 
 - [Restoration — Raid Healer](../research/raid/builds/resto-raid-healer.md) (11/5/35) — [open the talent tree](https://talentsforever.com/druid/60/05302001-05-5050035153113021-6)

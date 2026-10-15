@@ -133,6 +133,7 @@ Damage by ability:
 
 - 2026-09-30: found by the popular-builds race (popular_race.py) and confirmed by a full-raid talent search (raidsim/talent_opt.py --setting raid --min-tree Arms=30) and a head-to-head race. Simulator numbers are the community's model of the beta.
 - 2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Boundless Rage 3 out; Booming Voice 3 in; to be re-optimized.
+- 2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Arms: its full-raid winner is +0.40% against it, under the 0.5% bar for a new build.
 
 ## Open questions (verify in the live game)
 

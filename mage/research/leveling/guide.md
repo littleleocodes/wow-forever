@@ -4,7 +4,7 @@
 
 ## The build and its order
 
-**Frost** ([player page](../../leveling/frost.md)) — `frost-open-leveling`: The Frost leveling build the open leveling search found on 2026-10-09: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the frost-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). 
+**Frost** ([player page](../../leveling/frost.md)) — `frost-open-leveling`: The Frost leveling build the open leveling search found on 2026-10-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the frost-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). 
 
 | Levels | Tree | Talent | Points |
 |---|---|---|---|
@@ -41,11 +41,11 @@ Level-weighted time per kill (seconds, higher levels count more) of the build ea
 
 | Spec | Page build | Rotation | L20 | L30 | L40 | L50 | L60 | Weighted |
 |---|---|---|---|---|---|---|---|---|
-| [Frost](../../leveling/frost.md) ✅ | [`frost-open-leveling`](builds/frost-open-leveling.md) | frost-leveling | 25.4 | 31.5 | 31.8 | 25.9 | 23.8 | 27.2 |
-| [Arcane-Frost](../../leveling/arcane-frost.md) | [`arcane-frost-open-leveling`](builds/arcane-frost-open-leveling.md) | arcane-leveling | 29.5 | 36.0 | 38.6 | 30.3 | 27.1 | 31.8 |
-| [Frostfire](../../leveling/frostfire.md) | [`frostfire-open-leveling`](builds/frostfire-open-leveling.md) | fire-leveling | 29.6 | 33.5 | 37.5 | 32.3 | 29.3 | 32.4 |
+| [Frost](../../leveling/frost.md) ✅ | [`frost-open-leveling`](builds/frost-open-leveling.md) | frost-leveling | 25.9 | 31.4 | 31.5 | 25.9 | 23.8 | 27.2 |
+| [Arcane-Frost](../../leveling/arcane-frost.md) | [`arcane-frost-open-leveling`](builds/arcane-frost-open-leveling.md) | arcane-leveling | 29.3 | 35.2 | 37.8 | 30.2 | 26.9 | 31.4 |
 | [Arcane](../../leveling/arcane.md) | [`arcane-leveling`](builds/arcane-leveling.md) | arcane-leveling | 31.2 | 35.9 | 38.0 | 32.0 | 28.6 | 32.7 |
-| [Fire](../../leveling/fire.md) | [`opt-fire-leveling-leveling-st`](builds/opt-fire-leveling-leveling-st.md) | fire-leveling | 25.0 | 32.1 | 38.1 | 34.3 | 32.9 | 33.4 |
+| [Frostfire](../../leveling/frostfire.md) | [`frostfire-open-leveling`](builds/frostfire-open-leveling.md) | fire-leveling | 30.3 | 33.9 | 38.6 | 32.0 | 29.5 | 32.7 |
+| [Fire](../../leveling/fire.md) | [`fire-leveling`](builds/fire-leveling.md) | fire-leveling | 36.7 | 37.9 | 42.7 | 36.4 | 29.3 | 35.8 |
 
 The stats model's respec plan (its own optimizer builds, not the page build): **35.7 h** (60.3% faster than talentless), no respec ([respec plan](respec-plan.md)).
 
@@ -53,9 +53,9 @@ The stats model's respec plan (its own optimizer builds, not the page build): **
 
 | Level | Bracket | Time per kill | Kills/hour |
 |---|---|---|---|
-| 20 | levels 15-25 | 25s | 142 |
-| 30 | levels 25-35 | 31s | 114 |
-| 40 | levels 35-45 | 32s | 113 |
+| 20 | levels 15-25 | 26s | 139 |
+| 30 | levels 25-35 | 31s | 115 |
+| 40 | levels 35-45 | 32s | 114 |
 | 50 | levels 45-55 | 26s | 139 |
 | 60 | level 55-60 | 24s | 151 |
 
@@ -77,7 +77,7 @@ Before the fight: **Frost Armor** (**Ice Armor** from level 30) and **Arcane Int
 
 Between fights: Drink your conjured water below a quarter of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-27, on top of the priority below): never cast Fire Blast; never cast Cone of Cold; drink below 25% mana; Frostbolt only while the mob has more than 10% health. Together +5.5% time per kill saved for `leveling-frost` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-15, on top of the priority below): never cast Fire Blast; never cast Cone of Cold; drink below 15% mana. Together +5.5% time per kill saved for `frost-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 ## Talents that carry the build
 

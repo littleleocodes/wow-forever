@@ -4,7 +4,7 @@
 
 *Points in all three trees: Discipline's Soul Warding, Holy's Searing Light and Shadow's Shadow Weaving.* (a hybrid: Holy/Shadow).
 
-**[Holy/Shadow hybrid — Leveling](../research/leveling/builds/hybrid-holy-shadow-open-leveling.md)** (16/17/18) — [open the talent tree](https://talentsforever.com/priest/60/0250030113001-33405000002-3050204010003-6)
+**[Holy-Shadow — Leveling](../research/leveling/builds/hybrid-holy-shadow-open-leveling.md)** (16/17/18) — [open the talent tree](https://talentsforever.com/priest/60/0250030113001-33405000002-3050204010003-6)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
@@ -45,6 +45,8 @@ The Holy-Shadow build plays the Holy leveling list (a Smite priest's) with point
 - Hurt in a fight: shield again below half your health, **Flash Heal** below about a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%.
 - For speed, the Shadow page levels about 40% faster per kill.
 
+*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents while leveling
 
 One point per level from 10, in this order:
@@ -77,7 +79,7 @@ One point per level from 10, in this order:
 |---|---|
 | 20 | 34 |
 | 30 | 41 |
-| 40 | 46 |
+| 40 | 47 |
 | 50 | 44 |
 | 60 | 44 |
 

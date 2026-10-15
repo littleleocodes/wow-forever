@@ -37,7 +37,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 |---|---|---|---|
 | 1 | [Enhancement](leveling/enhancement.md) 🔬 | 32 | fastest |
 | 2 | [Elemental-Enhancement](leveling/elemental-enhancement.md) 🔬 | 38 | +20% |
-| 3 | [Elemental](leveling/elemental.md) (optimized) | 39 | +24% |
+| 3 | [Elemental](leveling/elemental.md) (optimized) | 39 | +23% |
 | 4 | [Restoration](leveling/restoration.md) — Leveling into the raid build 🔬 | 45 | +42% |
 
 ### Raid (group)

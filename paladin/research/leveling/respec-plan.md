@@ -8,30 +8,30 @@ Talentless baseline: 90 h for levels 10-60 under these assumptions.
 
 - **Levels 10-60: ret-dps -> level-50 build (8/0/33)**
   - at level 10: **Retribution**: Benediction 1
-  - at level 60: **Retribution**: Benediction 1, Deflection 4, Holy Conduit 2, Improved Judgement 2, Conviction 5, Seal of Command 1, Sanctified Judgement 3, Pursuit of Justice 2, Sacred Arbiter 1, Two-Handed Weapon Specialization 3, Vengeance 3, Instrument of Law 2, Champion of the Light 3, Repentance 1, Vindication 3; **Holy**: Divine Strength 5, Improved Seals 3, Divine Intellect 2, Reverence 3, Purifying Power 2
-  - order: 10 Benediction, 11-14 Deflection x4, 15-16 Holy Conduit x2, 17-18 Improved Judgement x2, 19 Conviction, 20 Seal of Command, 21-22 Sanctified Judgement x2, 23 Pursuit of Justice, 24 Sanctified Judgement, 25 Sacred Arbiter, 26 Pursuit of Justice, 27-29 Conviction x3, 30-32 Two-Handed Weapon Specialization x3, 33 Conviction, 34 Vengeance, 35-36 Instrument of Law x2, 37-38 Champion of the Light x2, 39 Repentance, 40-41 Vengeance x2, 42 Champion of the Light, 43-47 Divine Strength x5, 48-50 Improved Seals x3, 51-53 Vindication x3, 54-55 Divine Intellect x2, 56-58 Reverence x3, 59-60 Purifying Power x2
+  - at level 60: **Retribution**: Benediction 5, Deflection 5, Holy Conduit 2, Improved Judgement 2, Conviction 5, Seal of Command 1, Sanctified Judgement 3, Pursuit of Justice 2, Sacred Arbiter 1, Two-Handed Weapon Specialization 3, Repentance 1, Instrument of Law 2, Champion of the Light 3, Vengeance 3, Vindication 3; **Holy**: Divine Strength 5, Improved Seals 3, Divine Intellect 2
+  - order: 10 Benediction, 11-14 Deflection x4, 15-16 Holy Conduit x2, 17-18 Improved Judgement x2, 19 Conviction, 20 Seal of Command, 21-22 Sanctified Judgement x2, 23 Pursuit of Justice, 24 Sanctified Judgement, 25 Sacred Arbiter, 26 Pursuit of Justice, 27-29 Conviction x3, 30-32 Two-Handed Weapon Specialization x3, 33 Conviction, 34 Repentance, 35-36 Instrument of Law x2, 37-38 Champion of the Light x2, 39-41 Vengeance x3, 42 Champion of the Light, 43-47 Divine Strength x5, 48-50 Improved Seals x3, 51-53 Vindication x3, 54 Benediction, 55 Deflection, 56-58 Benediction x3, 59-60 Divine Intellect x2
 
-Total: **61.3 h** (31.9% faster than talentless), no respec.
+Total: **63.2 h** (29.8% faster than talentless), no respec.
 
 ## Never respec: best single plan
 
 | Plan | Hours 10-60 | vs. schedule |
 |---|---|---|
-| ret-dps -> level-50 build (8/0/33) | 61.3 | +0.0 h |
-| ret-dps -> level-20 build (0/0/11) | 61.4 | +0.1 h |
-| ret-dps -> level-30 build (0/0/21) | 61.4 | +0.1 h |
-| ret-dps -> level-40 build (0/0/31) | 61.4 | +0.1 h |
-| ret-dps -> level-60 build (15/0/36) | 61.5 | +0.2 h |
+| ret-dps -> level-50 build (8/0/33) | 63.2 | -0.0 h |
+| ret-dps -> level-20 build (0/0/11) | 63.3 | +0.0 h |
+| ret-dps -> level-60 build (13/0/38) | 63.3 | +0.1 h |
+| ret-dps -> level-40 build (0/0/31) | 63.3 | +0.1 h |
+| ret-dps -> level-30 build (0/0/21) | 63.3 | +0.1 h |
 
 ## Leveling score by level (fraction of time per kill saved)
 
 | Plan | 10 | 15 | 20 | 25 | 30 | 35 | 40 | 45 | 50 | 55 | 60 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| ret-dps -> level-20 build (0/0/11) | +0.7% | +4.7% | +16.9% | +24.3% | +28.0% | +32.3% | +34.9% | +35.3% | +36.1% | +38.8% | +39.3% |
-| ret-dps -> level-30 build (0/0/21) | +0.7% | +4.1% | +15.7% | +24.4% | +28.3% | +32.4% | +35.0% | +35.3% | +36.1% | +38.8% | +39.3% |
-| ret-dps -> level-40 build (0/0/31) | +0.7% | +3.3% | +16.0% | +24.2% | +28.1% | +32.4% | +35.2% | +35.3% | +36.1% | +38.8% | +39.4% |
-| ret-dps -> level-50 build (8/0/33) | +0.7% | +3.3% | +16.0% | +24.2% | +28.1% | +32.4% | +35.0% | +35.1% | +38.0% | +38.8% | +39.4% |
-| ret-dps -> level-60 build (15/0/36) | +0.0% | +2.8% | +15.7% | +24.2% | +28.1% | +32.4% | +35.0% | +35.3% | +36.1% | +38.8% | +39.4% |
+| ret-dps -> level-20 build (0/0/11) | +0.7% | +4.7% | +15.4% | +22.9% | +26.4% | +30.3% | +32.6% | +33.0% | +33.7% | +36.2% | +36.7% |
+| ret-dps -> level-30 build (0/0/21) | +0.7% | +4.1% | +14.1% | +23.0% | +26.5% | +30.3% | +32.6% | +33.0% | +33.7% | +36.1% | +36.7% |
+| ret-dps -> level-40 build (0/0/31) | +0.7% | +3.3% | +14.4% | +22.9% | +26.5% | +30.3% | +32.8% | +33.0% | +33.7% | +36.1% | +36.7% |
+| ret-dps -> level-50 build (8/0/33) | +0.7% | +3.3% | +14.4% | +22.9% | +26.5% | +30.3% | +32.6% | +32.7% | +35.3% | +36.2% | +36.5% |
+| ret-dps -> level-60 build (13/0/38) | +0.7% | +3.7% | +14.7% | +22.9% | +26.5% | +30.3% | +32.6% | +33.0% | +33.7% | +36.1% | +36.7% |
 
 ## Reading it
 

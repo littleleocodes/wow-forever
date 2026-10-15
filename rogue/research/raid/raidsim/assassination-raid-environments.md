@@ -4,12 +4,12 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `assassination-seal-fate-raid` | 30/19/2 | 422 | 489 | 702 | 712 | 757 |
-| `assassination-ml-raid` | 30/19/2 | 410 | 476 | 707 | 717 | 763 |
-| `assassination-mutilate-raid` | 30/21/0 | 410 | 477 | 690 | 698 | 751 |
-| `daggers-split-open-raid` | 21/28/2 | 396 | 459 | 718 | 729 | 774 |
-| sim preset: Mutilate | - | 386 | 452 | 672 | 682 | 732 |
-| sim preset: Assassination Mutilate 31/20/0 | - | 374 | 439 | 654 | 664 | 706 |
+| `assassination-seal-fate-raid` | 30/19/2 | 422 | 489 | 667 | 674 | 722 |
+| `assassination-ml-raid` | 30/19/2 | 410 | 476 | 672 | 679 | 728 |
+| `assassination-mutilate-raid` | 30/21/0 | 410 | 477 | 653 | 661 | 714 |
+| `daggers-split-open-raid` | 21/28/2 | 396 | 459 | 669 | 677 | 724 |
+| sim preset: Mutilate | - | 386 | 452 | 629 | 636 | 683 |
+| sim preset: Assassination Mutilate 31/20/0 | - | 374 | 439 | 611 | 619 | 662 |
 
 - **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
 - **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
@@ -23,12 +23,12 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
-| `assassination-seal-fate-raid` | 422 | -0% | +12% | +38% | +2% | +15% | 702 |
-| `assassination-ml-raid` | 410 | -0% | +12% | +38% | +2% | +21% | 707 |
-| `assassination-mutilate-raid` | 410 | -0% | +12% | +38% | +1% | +17% | 690 |
-| `daggers-split-open-raid` | 396 | +0% | +20% | +43% | +2% | +17% | 718 |
-| sim preset: Mutilate | 386 | +0% | +11% | +39% | +2% | +22% | 672 |
-| sim preset: Assassination Mutilate 31/20/0 | 374 | -0% | +14% | +41% | +2% | +19% | 654 |
+| `assassination-seal-fate-raid` | 422 | -0% | +12% | +30% | +2% | +15% | 667 |
+| `assassination-ml-raid` | 410 | -0% | +12% | +30% | +2% | +20% | 672 |
+| `assassination-mutilate-raid` | 410 | -0% | +12% | +31% | +1% | +16% | 653 |
+| `daggers-split-open-raid` | 396 | +0% | +20% | +34% | +2% | +14% | 669 |
+| sim preset: Mutilate | 386 | +0% | +11% | +31% | +2% | +19% | 629 |
+| sim preset: Assassination Mutilate 31/20/0 | 374 | -0% | +14% | +32% | +2% | +16% | 611 |
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
 

@@ -63,7 +63,7 @@
       "abs_dps_factor": 1.0
     },
     "elemental-dps": {
-      "note": "Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Lightning Bolt rank 10 189-211 in 2.5s for 220 mana (71.4% coefficient; Classic 428-477 in 3s at 85.7%), Chain Lightning rank 4 119-133 in 2s (57.1%), Earth Shock rank 7 293-309, Flame Shock rank 6 166 plus 176, Lava Burst ranks at 40/50/60 (2.5s, 10s cooldown): the shocks are relatively stronger, so Lightning Bolt 60 -> 52%, Chain Lightning 15 -> 11%, Earth Shock 10 -> 16%, Flame Shock 8 -> 12%. Fire Nova is a spell now (10s cooldown), still counted with the fire totem. Raid sim shares (2026-10-03, elemental-raid-dps in the ElliotWood/Forever simulator b0f0df3, every mana-only buff on: the split before the mana limit): lightning_bolt 73%, flame_shock 18%, chain_lightning 8%; 6% of the damage matched no source. Fight lab speed (2026-10-09): its leveling build kills 0.85x as fast as enhancement-dps's optimizer build (level-weighted time per kill 39.4s vs 33.6s), written as abs_dps_factor so respec.py compares the models on that.",
+      "note": "Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Lightning Bolt rank 10 189-211 in 2.5s for 220 mana (71.4% coefficient; Classic 428-477 in 3s at 85.7%), Chain Lightning rank 4 119-133 in 2s (57.1%), Earth Shock rank 7 293-309, Flame Shock rank 6 166 plus 176, Lava Burst ranks at 40/50/60 (2.5s, 10s cooldown): the shocks are relatively stronger, so Lightning Bolt 60 -> 52%, Chain Lightning 15 -> 11%, Earth Shock 10 -> 16%, Flame Shock 8 -> 12%. Fire Nova is a spell now (10s cooldown), still counted with the fire totem. Raid sim shares (2026-10-03, elemental-raid-dps in the ElliotWood/Forever simulator b0f0df3, every mana-only buff on: the split before the mana limit): lightning_bolt 73%, flame_shock 18%, chain_lightning 8%; 6% of the damage matched no source. Fight lab speed (2026-10-09): its leveling build kills 0.85x as fast as enhancement-dps's optimizer build (level-weighted time per kill 39.4s vs 33.6s), written as abs_dps_factor so respec.py compares the models on that. Fight lab calibration (2026-10-15, beta client 1.60.1.70291, build opt-elemental-dps-leveling-st at level 60, 1500 fights): shares are the measured damage split (Lightning Bolt 26%, Melee 15%, Lightning Shield 13%, Earth Shock 11%, Flame Shock 10%, Lava Burst 10%, Searing Totem 8%, Windfury 7%) and the leveling time split is fight 52% / drink 34% / eat 10% / other 0% / death 4% of talent-affected time with fight_coupling 0.82 (downtime and deaths scale with fight length).",
       "sources": [
         {
           "id": "lightning_bolt",
@@ -75,8 +75,8 @@
             "classic-era": {"share": 0.7226}
           },
           "profile_overrides": {
-            "leveling-st": {"share": 0.476},
-            "solo-60": {"share": 0.476}
+            "leveling-st": {"share": 0.471},
+            "solo-60": {"share": 0.471}
           }
         },
         {
@@ -105,8 +105,8 @@
             "classic-era": {"share": 0.0219}
           },
           "profile_overrides": {
-            "leveling-st": {"share": 0.185},
-            "solo-60": {"share": 0.185}
+            "leveling-st": {"share": 0.202},
+            "solo-60": {"share": 0.202}
           }
         },
         {
@@ -120,8 +120,8 @@
           },
           "min_level": 10,
           "profile_overrides": {
-            "leveling-st": {"share": 0.182},
-            "solo-60": {"share": 0.182}
+            "leveling-st": {"share": 0.187},
+            "solo-60": {"share": 0.187}
           }
         },
         {
@@ -145,8 +145,8 @@
           "tags": ["type:spell", "school:fire", "ability:Searing Totem", "ability:Fire Totems", "totem"],
           "can_crit": true,
           "profile_overrides": {
-            "leveling-st": {"share": 0.156},
-            "solo-60": {"share": 0.156}
+            "leveling-st": {"share": 0.14},
+            "solo-60": {"share": 0.14}
           },
           "game_overrides": {
             "classic-era": {"share": 0.0}
@@ -180,8 +180,8 @@
       "regen_share": 0.3,
       "abs_dps_factor": 0.853,
       "time": {
-        "leveling-st": {"fight": 0.517, "drink": 0.358, "eat": 0.08, "other": 0.0, "death": 0.045},
-        "solo-60": {"fight": 0.517, "drink": 0.358, "eat": 0.08, "other": 0.0, "death": 0.045}
+        "leveling-st": {"fight": 0.517, "drink": 0.341, "eat": 0.099, "other": 0.0, "death": 0.044},
+        "solo-60": {"fight": 0.517, "drink": 0.341, "eat": 0.099, "other": 0.0, "death": 0.044}
       },
       "mana_weight": {"raid-dps": 0.5},
       "kind_weights_by_profile": {
@@ -189,7 +189,7 @@
         "solo-60": {"range": 0, "kite": 0.5}
       },
       "kind_note": "Elemental leveling (2026-09-27 audit): the lab's loop bolts while the mob walks in and then fights in melee range, so a longer pull only lengthens the walk-in (Elemental Reach -1.0% in the lab): range 0. Earthbound's root would let it cast unhit, but the loop never casts Earthbind: kite 0.5 until it does. Stun, avoid and move count.",
-      "fight_coupling": {"leveling-st": 0.53, "solo-60": 0.53},
+      "fight_coupling": {"leveling-st": 0.82, "solo-60": 0.82},
       "mana_limit": {
         "forever": {
           "profiles": ["raid-dps", "raid-dps-extwc"],
@@ -202,7 +202,7 @@
       }
     },
     "enhancement-dps": {
-      "note": "One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Lightning Bolt casts in 2.5s; Stormstrike is 125 mana on an 8s cooldown and buffs the next Lightning Bolt/Chain Lightning/Earth Shock by 20%; Windfury Totem gives 95/179/246 attack power (Classic 122/229/315) and Strength of Earth 53 (Classic 77); totems last 5 min on a 1s global cooldown. Fight lab calibration (2026-10-15, beta client 1.60.1.70291, build opt-enhancement-dps-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Melee 29%, Windfury 19%, Magma Totem 14%, Fire Nova 12%, Stormstrike 9%, Lightning Shield 6%, Chain Lightning 6%, Flame Shock 5%, Lightning Bolt 0%) and the leveling time split is fight 55% / drink 3% / eat 4% / other 0% / death 39% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length).",
+      "note": "One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Lightning Bolt casts in 2.5s; Stormstrike is 125 mana on an 8s cooldown and buffs the next Lightning Bolt/Chain Lightning/Earth Shock by 20%; Windfury Totem gives 95/179/246 attack power (Classic 122/229/315) and Strength of Earth 53 (Classic 77); totems last 5 min on a 1s global cooldown. Fight lab calibration (2026-10-15, beta client 1.60.1.70291, build opt-enhancement-dps-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Melee 27%, Fire Nova 17%, Windfury 16%, Magma Totem 15%, Stormstrike 7%, Flame Shock 6%, Lightning Shield 6%, Chain Lightning 5%, Lightning Bolt 0%) and the leveling time split is fight 53% / drink 3% / eat 3% / other 0% / death 41% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length).",
       "sources": [
         {
           "id": "white",
@@ -211,7 +211,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.269},
             "solo-60": {"share": 0.269},
-            "leveling-aoe": {"share": 0.293}
+            "leveling-aoe": {"share": 0.273}
           },
           "game_overrides": {
             "classic-era": {"share": 0.6717}
@@ -225,7 +225,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.185},
             "solo-60": {"share": 0.185},
-            "leveling-aoe": {"share": 0.188}
+            "leveling-aoe": {"share": 0.161}
           },
           "game_overrides": {
             "classic-era": {"share": 0.3283}
@@ -255,7 +255,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.0},
             "solo-60": {"share": 0.0},
-            "leveling-aoe": {"share": 0.0}
+            "leveling-aoe": {"share": 0.001}
           },
           "game_overrides": {
             "classic-era": {"share": 0.0}
@@ -274,7 +274,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.074},
             "solo-60": {"share": 0.074},
-            "leveling-aoe": {"share": 0.054}
+            "leveling-aoe": {"share": 0.063}
           }
         },
         {
@@ -286,7 +286,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.16},
             "solo-60": {"share": 0.16},
-            "leveling-aoe": {"share": 0.064}
+            "leveling-aoe": {"share": 0.061}
           },
           "game_overrides": {
             "classic-era": {"share": 0.0}
@@ -314,7 +314,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.127},
             "solo-60": {"share": 0.127},
-            "leveling-aoe": {"share": 0.085}
+            "leveling-aoe": {"share": 0.074}
           },
           "game_overrides": {
             "classic-era": {"share": 0.0}
@@ -344,7 +344,7 @@
           "cast": 2.0,
           "min_cast": 1.5,
           "profile_overrides": {
-            "leveling-aoe": {"share": 0.061},
+            "leveling-aoe": {"share": 0.048},
             "leveling-st": {"share": 0.0},
             "solo-60": {"share": 0.0}
           },
@@ -358,7 +358,7 @@
           "min_level": 12,
           "tags": ["type:spell", "school:fire", "instant", "aoe", "ability:Fire Nova", "ability:Fire Nova Totem", "totem"],
           "profile_overrides": {
-            "leveling-aoe": {"share": 0.118}
+            "leveling-aoe": {"share": 0.172}
           }
         },
         {
@@ -367,7 +367,7 @@
           "min_level": 26,
           "tags": ["type:spell", "school:fire", "dot", "aoe", "ability:Magma Totem", "totem"],
           "profile_overrides": {
-            "leveling-aoe": {"share": 0.137}
+            "leveling-aoe": {"share": 0.149}
           }
         }
       ],
@@ -401,7 +401,7 @@
       "time": {
         "leveling-st": {"fight": 0.659, "drink": 0.252, "eat": 0.042, "other": 0.0, "death": 0.048},
         "solo-60": {"fight": 0.659, "drink": 0.252, "eat": 0.042, "other": 0.0, "death": 0.048},
-        "leveling-aoe": {"fight": 0.546, "drink": 0.032, "eat": 0.037, "other": 0.0, "death": 0.386}
+        "leveling-aoe": {"fight": 0.533, "drink": 0.028, "eat": 0.03, "other": 0.0, "death": 0.409}
       },
       "mana_weight": {"raid-dps": 0.3},
       "fight_coupling": {"leveling-aoe": 1.0},

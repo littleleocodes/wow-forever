@@ -42,9 +42,9 @@ Models: resto-heal, balance-dps, feral-cat-dps, feral-bear-tank. Same mob, same 
 - Furor's cat energy retention at max rank (extrapolated from 20%).
 - Whether a cat Mangle rank exists — if so, Mangle at 25 replaces Predatory Strikes' slot and Berserk becomes much stronger.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-- Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
 - An open-search Balance leveling build: check it while leveling at launch.
 - An open-search Feral Combat leveling build: check it while leveling at launch.
+- Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
 
 ## Hunter
 
@@ -159,7 +159,7 @@ Models: frost-leveling, frost-aoe, fire-leveling, frost-raid, fire-raid. Same mo
 
 | Talent | What the model assumes |
 |---|---|
-| Illumination | 20%/rank chance for 50% of base mana back on crit heals (est. 100% chance at 5/5): refund = chance x 0.5 x crit (22%) -> +2.2%/rank mana. Half of Classic's Illumination. Fight lab calibration (2026-09-28, levels 40,60):  |
+| Illumination | 20%/rank chance for 50% of base mana back on crit heals (est. 100% chance at 5/5): refund = chance x 0.5 x crit (22%) -> +2.2%/rank mana. Half of Classic's Illumination. Fight lab calibration (2026-10-15, levels 40,60):  |
 | Purifying Power | Cheaper Cleanse, faster Exorcism/Holy Wrath: small. 2026-09-27 audit: Exorcism and Holy Wrath hit only Undead/Demons and the loop never casts them: 0.002/rank. PvP (2026-09-27): low, dispel: Cleanse and Purify 20% cheape |
 
 ### 3. Confirm level-scaled spell numbers (2 reachable talents quote level-60 client values)
@@ -239,8 +239,8 @@ Models: holy-heal, shadow-dps. Same mob, same gear, ~10 kills each, note kill ti
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 - Check the Discipline leveling pace at launch; the raid build's talents may cost speed early.
 - Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
-- An open-search Discipline/Shadow hybrid leveling build: check it while leveling at launch.
-- An open-search Holy/Shadow hybrid leveling build: check it while leveling at launch.
+- An open-search Discipline-Shadow leveling build: check it while leveling at launch.
+- An open-search Holy-Shadow leveling build: check it while leveling at launch.
 - An open-search Shadow leveling build: check it while leveling at launch.
 
 ## Rogue
@@ -298,8 +298,8 @@ Models: combat-swords-raid, combat-daggers-raid. Same mob, same gear, ~10 kills 
 | Talent | What the model assumes |
 |---|---|
 | Earthbound | Earthbind Totem roots on cast: kiting/AoE control while leveling. PvP (2026-09-27): high, kite: Earthbind Totem roots nearby enemies for 5 s when dropped (15 s cooldown): free casts or distance against melee. Unknown: di |
-| Mental Dexterity | Beta text: attack power equal to 33%/rank of Intellect (100% at 3/3; the demo read 33% at 3/3). ~150 Intellect -> +50 AP per rank on ~700 AP = ~+5%/rank melee damage; encoded as ap_from_int. Fight lab calibration (2026-0 |
-| Mental Quickness | Beta text: spell damage and healing from 15%/rank of Intellect (30% at 2/2; the demo read 15% at 2/2): ~+22 spell power per rank on shocks/Lightning Shield -> ~+3%/rank spell damage. Fight lab calibration (2026-09-28, le |
+| Mental Dexterity | Beta text: attack power equal to 33%/rank of Intellect (100% at 3/3; the demo read 33% at 3/3). ~150 Intellect -> +50 AP per rank on ~700 AP = ~+5%/rank melee damage; encoded as ap_from_int. Fight lab calibration (2026-1 |
+| Mental Quickness | Beta text: spell damage and healing from 15%/rank of Intellect (30% at 2/2; the demo read 15% at 2/2): ~+22 spell power per rank on shocks/Lightning Shield -> ~+3%/rank spell damage. Fight lab calibration (2026-10-15, le |
 | Stormstrike | Beta text: instant weapon strike every 8s (+25% main-hand swings) and +20% on the NEXT Lightning Bolt, Chain Lightning or Earth Shock within 12s (one charge; the demo read +20% Nature for 12s). With Earth Shock every 6-8 |
 
 ### 3. Confirm level-scaled spell numbers (1 reachable talents quote level-60 client values)
@@ -318,7 +318,7 @@ Log per level bracket: kills per hour, deaths, drink/eat time; compare with the 
 
 ### 5. Confirm ability unlock levels the models assume (Classic learn levels)
 
-earth_shock 4 (elemental-dps), earth_shock 4 (enhancement-dps), lightning_shield 8 (enhancement-dps), fire_totem 10 (elemental-dps), flame_shock 10 (elemental-dps), flame_shock 10 (enhancement-dps), searing_totem 10 (elemental-dps), searing_totem 10 (enhancement-dps), healing_stream 20 (resto-heal), lesser_hw 20 (resto-heal), stormstrike 25 (enhancement-dps), windfury 30 (enhancement-dps), chain_lightning 32 (elemental-dps), chain_lightning 32 (enhancement-dps), chain_heal 40 (resto-heal)
+earth_shock 4 (elemental-dps), earth_shock 4 (enhancement-dps), lightning_shield 8 (enhancement-dps), fire_totem 10 (elemental-dps), flame_shock 10 (elemental-dps), flame_shock 10 (enhancement-dps), searing_totem 10 (elemental-dps), searing_totem 10 (enhancement-dps), fire_nova 12 (enhancement-dps), healing_stream 20 (resto-heal), lesser_hw 20 (resto-heal), stormstrike 25 (enhancement-dps), magma 26 (enhancement-dps), windfury 30 (enhancement-dps), chain_lightning 32 (elemental-dps), chain_lightning 32 (enhancement-dps), chain_heal 40 (resto-heal)
 
 ### 6. Time-to-kill of a talentless spec vs spec at 30 (the planner assumes equal)
 
@@ -329,9 +329,9 @@ Models: resto-heal, elemental-dps, enhancement-dps. Same mob, same gear, ~10 kil
 - Two-hander / dual-wield availability for shamans.
 - Mental Dexterity and Mental Quickness scaling at max rank (only rank 1 read).
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-- Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
 - An open-search Elemental-Enhancement leveling build: check it while leveling at launch.
 - An open-search Enhancement leveling build: check it while leveling at launch.
+- Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
 
 ## Warlock
 
@@ -344,8 +344,8 @@ Models: resto-heal, elemental-dps, enhancement-dps. Same mob, same gear, ~10 kil
 
 | Talent | What the model assumes |
 |---|---|
-| Demonic Aegis | +15%/rank Demon Armor: ~+1%/rank effective health. Fight lab calibration (2026-09-30, levels 30,60): removing it costs -0.1% time per kill in the simulator (scorer said 0.3% on the same scale); leveling-st/solo-60 values |
-| Demonic Knowledge | Beta text: your spell damage AND your demon's spell damage by up to 33/67/100% of your level with a pet out (~20 spell power per rank at 60): ~+2%/rank for you and the pet. Fight lab calibration (2026-09-30, levels 30,60 |
+| Demonic Aegis | +15%/rank Demon Armor: ~+1%/rank effective health. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 0.4% time per kill in the simulator (scorer said 1.1% on the same scale); leveling-st/solo-60 values  |
+| Demonic Knowledge | Beta text: your spell damage AND your demon's spell damage by up to 33/67/100% of your level with a pet out (~20 spell power per rank at 60): ~+2%/rank for you and the pet. Fight lab calibration (2026-10-15, levels 40,60 |
 | Improved Drains | Beta text (reworked): flat +7/13/20% to Drain Life, Drain Soul and Wrack (the demo's per-effect scaling moved to Soul Siphon). Raid sim calibration (2026-09-26, ElliotWood/Forever 40be98e, affliction-raid): removing it c |
 | Soul Siphon | Beta text (reworked): +4/8/12% Drain Life/Drain Soul/Wrack damage per other Affliction effect on the target, up to 3 effects (12/24/36%). A DoT build keeps ~2.5 effects up -> +10/20/30% on drains; the demo's healing pena |
 
@@ -423,8 +423,8 @@ Models: fury-dw-raid, arms-2h-raid, prot-tank. Same mob, same gear, ~10 kills ea
 - Bloodthrill proc rate at max rank (only rank 1 = 2% read) — if it is 10%, taking it before Weaponmaster may be better.
 - Whether Improved Slam's swing-timer change is real at rank 1; if not, the two Slam points move to Improved Hamstring.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-- Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
 - An open-search Arms leveling build: check it while leveling at launch.
 - An open-search Fury leveling build: check it while leveling at launch.
 - An open-search Protection leveling build: check it while leveling at launch.
+- Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
 

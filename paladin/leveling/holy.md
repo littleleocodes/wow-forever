@@ -47,6 +47,8 @@ Holy levels with the raid healer build as a two-handed **Seal of Righteousness**
 - A mob that casts spells: **Hammer of Justice** stops the cast.
 - If you only want to reach 60, level as Retribution or Shockadin and respec: their pages kill about a quarter faster per mob.
 
+*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

@@ -52,21 +52,21 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`fury-open-raid`](builds/fury-open-raid.md) | ours: derived (open search) | 18/31/2 | 516 | +0.0% | 917 | +0.0% | 0 s |
-| 2 | [`opt-fury-dw-raid-raid-dps`](builds/opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 19/32/0 | 496 | -4.0% | 879 | -4.1% | 0 s |
-| 3 | [`fury-dw-raid`](builds/fury-dw-raid.md) | ours: hand draft | 13/38/0 | 489 | -5.2% | 875 | -4.6% | 0 s |
-| 4 | *DPS* | community simulator | - | 483 | -6.4% | 874 | -4.7% | 0 s |
-| 5 | *Fury 17/34/0* | community simulator | - | 470 | -9.0% | 850 | -7.3% | 0 s |
-| 6 | *Arms 39/12/0* | community simulator | - | 344 | -33.5% | 645 | -29.6% | 0 s |
+| 1 | [`fury-open-raid`](builds/fury-open-raid.md) | ours: derived (open search) | 18/31/2 | 516 | +0.0% | 862 | +0.0% | 0 s |
+| 2 | [`opt-fury-dw-raid-raid-dps`](builds/opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 19/32/0 | 496 | -4.0% | 831 | -3.6% | 0 s |
+| 3 | [`fury-dw-raid`](builds/fury-dw-raid.md) | ours: hand draft | 13/38/0 | 489 | -5.2% | 821 | -4.8% | 0 s |
+| 4 | *DPS* | community simulator | - | 483 | -6.4% | 821 | -4.7% | 0 s |
+| 5 | *Fury 17/34/0* | community simulator | - | 470 | -9.0% | 799 | -7.3% | 0 s |
+| 6 | *Arms 39/12/0* | community simulator | - | 344 | -33.5% | 597 | -30.8% | 0 s |
 
 **prot-tank** (tank)
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) | ours: optimizer | 14/5/32 | 1.005 | +0.0% | 714 | 1164 |
-| 2 | [`prot-raid-tank`](builds/prot-raid-tank.md) | ours: hand draft | 14/5/32 | 1.000 | -0.5% | 705 | 1162 |
-| 3 | *Protection* | community simulator | - | 0.947 | -5.8% | 664 | 1220 |
-| 4 | *Protection 1/0/50* | community simulator | - | 0.933 | -7.2% | 650 | 1232 |
+| 1 | [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) | ours: optimizer | 14/5/32 | 1.007 | +0.0% | 686 | 1162 |
+| 2 | [`prot-raid-tank`](builds/prot-raid-tank.md) | ours: hand draft | 14/5/32 | 1.000 | -0.7% | 676 | 1161 |
+| 3 | *Protection* | community simulator | - | 0.949 | -5.7% | 638 | 1217 |
+| 4 | *Protection 1/0/50* | community simulator | - | 0.934 | -7.3% | 625 | 1231 |
 
 **arms-battle-raid**
 
@@ -123,10 +123,10 @@ The class's best raid DPS build on the training dummy: [`fury-open-raid`](builds
 | `fury-dw-raid` | dummy | sim preset: DPS | - | 483 | -6.4% | 0 | - |
 | `fury-dw-raid` | dummy | sim preset: Fury 17/34/0 | - | 470 | -9.0% | 0 | - |
 | `fury-dw-raid` | dummy | sim preset: Arms 39/12/0 | - | 344 | -33.5% | 0 | - |
-| `prot-tank` | raid | `opt-prot-tank-raid-tank` | 14/5/32 | 535 | +0.0% | 0 | +58% |
-| `prot-tank` | raid | `prot-raid-tank` | 14/5/32 | 521 | -2.7% | 0 | +57% |
-| `prot-tank` | raid | sim preset: Protection | - | 487 | -9.1% | 0 | - |
-| `prot-tank` | raid | sim preset: Protection 1/0/50 | - | 479 | -10.5% | 0 | - |
+| `prot-tank` | raid | `opt-prot-tank-raid-tank` | 14/5/32 | 512 | +0.0% | 0 | +58% |
+| `prot-tank` | raid | `prot-raid-tank` | 14/5/32 | 497 | -3.0% | 0 | +57% |
+| `prot-tank` | raid | sim preset: Protection | - | 466 | -9.0% | 0 | - |
+| `prot-tank` | raid | sim preset: Protection 1/0/50 | - | 458 | -10.6% | 0 | - |
 
 Scorer = the stats model's own score of the allocation for its raid profile (relative to a talentless character; comparable within a spec model only). Tanks: DPS with the tank flag set (threat and mitigation are in the report JSON). Healers are not simulated (the simulator has no healing rotations for them).
 
@@ -150,17 +150,17 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 | `arms-battle-raid` | `arms-community-parse` | 37/14/0 | 481 | 561 | 964 | 964 | 960 |
 | `arms-battle-raid` | `arms-battle-raid` | 34/17/0 | 480 | 534 | 866 | 866 | 861 |
 | `arms-battle-raid` | sim preset: Arms 39/12/0 | - | 478 | 557 | 962 | 962 | 960 |
-| `fury-dw-raid` | `fury-open-raid` | 18/31/2 | 516 | 531 | 917 | 917 | 988 |
-| `fury-dw-raid` | `opt-fury-dw-raid-raid-dps` | 19/32/0 | 496 | 518 | 879 | 879 | 939 |
-| `fury-dw-raid` | `opt-fury-dw-raid-parse` | 19/32/0 | 496 | 518 | 879 | 879 | 939 |
-| `fury-dw-raid` | `fury-dw-raid` | 13/38/0 | 489 | 509 | 875 | 875 | 936 |
-| `fury-dw-raid` | sim preset: DPS | - | 483 | 519 | 874 | 874 | 938 |
-| `fury-dw-raid` | sim preset: Fury 17/34/0 | - | 470 | 511 | 850 | 850 | 907 |
-| `fury-dw-raid` | sim preset: Arms 39/12/0 | - | 344 | 384 | 645 | 645 | 653 |
-| `prot-tank` | `opt-prot-tank-raid-tank` | 14/5/32 | 294 | 327 | 535 | 404 | 399 |
-| `prot-tank` | `prot-raid-tank` | 14/5/32 | 290 | 321 | 521 | 396 | 391 |
-| `prot-tank` | sim preset: Protection | - | 275 | 305 | 487 | 369 | 363 |
-| `prot-tank` | sim preset: Protection 1/0/50 | - | 272 | 302 | 479 | 361 | 358 |
+| `fury-dw-raid` | `fury-open-raid` | 18/31/2 | 516 | 531 | 862 | 862 | 923 |
+| `fury-dw-raid` | `opt-fury-dw-raid-raid-dps` | 19/32/0 | 496 | 518 | 831 | 831 | 884 |
+| `fury-dw-raid` | `opt-fury-dw-raid-parse` | 19/32/0 | 496 | 518 | 831 | 831 | 884 |
+| `fury-dw-raid` | `fury-dw-raid` | 13/38/0 | 489 | 509 | 821 | 821 | 875 |
+| `fury-dw-raid` | sim preset: DPS | - | 483 | 519 | 821 | 821 | 877 |
+| `fury-dw-raid` | sim preset: Fury 17/34/0 | - | 470 | 511 | 799 | 799 | 850 |
+| `fury-dw-raid` | sim preset: Arms 39/12/0 | - | 344 | 384 | 597 | 597 | 607 |
+| `prot-tank` | `opt-prot-tank-raid-tank` | 14/5/32 | 294 | 327 | 512 | 391 | 385 |
+| `prot-tank` | `prot-raid-tank` | 14/5/32 | 290 | 321 | 497 | 383 | 377 |
+| `prot-tank` | sim preset: Protection | - | 275 | 305 | 466 | 357 | 353 |
+| `prot-tank` | sim preset: Protection 1/0/50 | - | 272 | 302 | 458 | 350 | 346 |
 
 **Classic Era check** — [`../talents/classic-baseline/raidsim/`](../talents/classic-baseline/raidsim/): the same run of our Classic-era community builds through the upstream wowsims/classic simulator (commit 7779ebb, its phase-1 presets), which the scorer's classic-era models are calibrated against. Our builds there are the community's; a preset ahead of them means the simulator's rotation prefers other talents.
 
@@ -195,3 +195,22 @@ Model findings (generated from the optimizer builds; scores are within each spec
 - **Raid main tank:** 14/5/32; biggest talents by score lost when removed: Shield Slam (22.7), Defiance (10.9), Deflection (5.9), Bastion (5.4), Improved Revenge (4.8); the hand draft `prot-raid-tank` is 14/5/32.
 
 Beta hypotheses: every build's unverified claims are its `open_questions`, collected in [`_reference/launch-checklist.md`](../../../_reference/launch-checklist.md); level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).
+
+## Report index
+
+Reports under this folder that no other page links to (generated):
+
+- [deep-optimization-tank.md](deep-optimization-tank.md): Warrior Protection: deep optimisation of the tank (generated)
+- [optimizer/arms-2h-raid-parse.md](optimizer/arms-2h-raid-parse.md): warrior / forever / spec arms-2h-raid / profile parse
+- [optimizer/arms-2h-raid-raid-dps.md](optimizer/arms-2h-raid-raid-dps.md): warrior / forever / spec arms-2h-raid / profile raid-dps
+- [optimizer/fury-dw-raid-parse.md](optimizer/fury-dw-raid-parse.md): warrior / forever / spec fury-dw-raid / profile parse
+- [optimizer/fury-dw-raid-raid-dps.md](optimizer/fury-dw-raid-raid-dps.md): warrior / forever / spec fury-dw-raid / profile raid-dps
+- [optimizer/prot-tank-raid-tank.md](optimizer/prot-tank-raid-tank.md): warrior / forever / spec prot-tank / profile raid-tank
+- [raidsim/arms-2h-raid-environments.md](raidsim/arms-2h-raid-environments.md): DPS by environment — warrior arms-2h-raid
+- [raidsim/arms-2h-raid.md](raidsim/arms-2h-raid.md): Raid sim — warrior arms-2h-raid
+- [raidsim/arms-battle-raid-environments.md](raidsim/arms-battle-raid-environments.md): DPS by environment — warrior arms-battle-raid
+- [raidsim/arms-battle-raid.md](raidsim/arms-battle-raid.md): Raid sim — warrior arms-battle-raid
+- [raidsim/fury-dw-raid-environments.md](raidsim/fury-dw-raid-environments.md): DPS by environment — warrior fury-dw-raid
+- [raidsim/fury-dw-raid.md](raidsim/fury-dw-raid.md): Raid sim — warrior fury-dw-raid
+- [raidsim/prot-tank-environments.md](raidsim/prot-tank-environments.md): DPS by environment — warrior prot-tank
+- [raidsim/prot-tank.md](raidsim/prot-tank.md): Raid sim — warrior prot-tank

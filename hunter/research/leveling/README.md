@@ -71,7 +71,7 @@ Time per kill = fight + loot, travel, eating, drinking, healing and deaths; a bu
 - **Talents that matter** (time per kill lost when the talent is removed from `opt-bm-leveling-leveling-st` at level 60): Unleashed Fury +5%, Efficiency +4% (L30 +4%), Summon Hawk +3%, Rapid Recuperation +3% (L30 +7%), Lethal Attacks +3% (L30 +2%), Ranged Weapon Specialization +2%.
 - **Measure about zero** single-target at 60 (kept for other reasons or not simulated): Barrage, Endurance Training, Pathfinding, Rapid Killing, Scatter Shot, Sniper Shot, Trueshot Aura.
 - **Caster mobs:** 16% of pulls at level 30 are casters (creature-database share); 0.00 interrupts per kill at 60.
-- **Race** (hand draft vs every optimizer candidate, 2026-10-09, mean time per kill over levels 20/30/40/50/60): cand-bm-r6 25.9s, cand-bm-r5 26.1s, leveling-beast-mastery 26.4s, cand-bm-r3 26.5s, cand-bm-r2 26.6s, cand-bm-r4 26.6s, cand-bm-r1 26.8s, cand-bm-hand-2026-09-26 26.9s — fastest: **cand-bm-r6**.
+- **Race** (hand draft vs every optimizer candidate, 2026-10-15, mean time per kill over levels 20/30/40/50/60): cand-bm-r6 25.9s, cand-bm-r5 26.1s, leveling-beast-mastery 26.4s, cand-bm-r3 26.5s, cand-bm-r2 26.6s, cand-bm-r4 26.6s, cand-bm-r1 26.8s, cand-bm-hand-2026-09-26 26.9s — fastest: **cand-bm-r6**.
 - **Calibration:** the scorer's `bm-leveling` leveling values were fitted jointly to the hand draft and every candidate in [`fightlab/candidates/`](fightlab/candidates/) (1 round, converged: the optimizer build repeats).
 - **Other spec, same module:** `mm-raid` with `opt-mm-raid-leveling-st` ([report](fightlab/mm-raid.md)): L30 21.4s (+9% vs `opt-bm-leveling-leveling-st`), L60 31.9s (+7% vs `opt-bm-leveling-leveling-st`). Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
 - **Other spec, same module:** `melee-dps` with `leveling-melee` ([report](fightlab/melee-dps.md)): L30 20.9s (+7% vs `opt-bm-leveling-leveling-st`), L60 28.3s (-5% vs `opt-bm-leveling-leveling-st`). Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
@@ -96,3 +96,14 @@ Model findings (generated from the optimizer builds; scores are within each spec
 - **Solo / farming at 60:** 18/33/0; biggest talents by score lost when removed: Summon Hawk (3.9), Efficiency (3.1), Rapid Recuperation (3.0), Unleashed Fury (2.4), Sniper Shot (1.9); the hand draft `bm-solo-farm` is 31/20/0.
 
 Beta hypotheses: every build's unverified claims are its `open_questions`, collected in [`_reference/launch-checklist.md`](../../../_reference/launch-checklist.md); level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).
+
+## Report index
+
+Reports under this folder that no other page links to (generated):
+
+- [optimizer/bm-leveling-leveling-aoe.md](optimizer/bm-leveling-leveling-aoe.md): hunter / forever / spec bm-leveling / profile leveling-aoe
+- [optimizer/bm-leveling-leveling-st.md](optimizer/bm-leveling-leveling-st.md): hunter / forever / spec bm-leveling / profile leveling-st
+- [optimizer/bm-leveling-solo-60.md](optimizer/bm-leveling-solo-60.md): hunter / forever / spec bm-leveling / profile solo-60
+- [optimizer/melee-dps-leveling-st.md](optimizer/melee-dps-leveling-st.md): hunter / forever / spec melee-dps / profile leveling-st
+- [optimizer/melee-dps-solo-60.md](optimizer/melee-dps-solo-60.md): hunter / forever / spec melee-dps / profile solo-60
+- [optimizer/mm-raid-leveling-st.md](optimizer/mm-raid-leveling-st.md): hunter / forever / spec mm-raid / profile leveling-st

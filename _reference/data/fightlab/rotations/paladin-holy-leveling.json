@@ -6,7 +6,7 @@
  },
  "class": "paladin",
  "spec": "holy-leveling",
- "build": "/home/user/wow-forever/paladin/research/leveling/fightlab/candidates/derived-holy-scorer.json",
+ "build": "shockadin-open-leveling",
  "levels": [
   20,
   30,
@@ -14,7 +14,7 @@
   50,
   60
  ],
- "date": "2026-09-30",
+ "date": "2026-10-15",
  "fights": 600,
  "confirm": 3000,
  "changes": [
@@ -26,40 +26,40 @@
     "Hammer of Wrath",
     true
    ],
-   "gain_seed1": 0.010991567892292387,
-   "gain_seed2": 0.010804103993075631
+   "gain_seed1": 0.028692435671557326,
+   "gain_seed2": 0.030808190238611366
   }
  ],
- "weighted_before": 29.496036864770055,
- "weighted_after": 29.112607112198013,
+ "weighted_before": 28.40202259087808,
+ "weighted_after": 27.553960423275186,
  "per_level": {
   "20": {
-   "before": 19.45473286393821,
-   "after": 19.45473286393821,
+   "before": 19.38886666655796,
+   "after": 19.38886666655796,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 23.22116666657369,
-   "after": 23.22116666657369,
+   "before": 23.138233333238244,
+   "after": 23.138233333238244,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 27.81441356382218,
-   "after": 27.81441356382218,
+   "before": 26.781835283895823,
+   "after": 26.781835283895823,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 30.984766831874317,
-   "after": 30.440827865652096,
+   "before": 29.71402305033319,
+   "after": 28.155091738167272,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 35.86104719219055,
-   "after": 35.036230488802275,
+   "before": 34.02509368291362,
+   "after": 32.497329217708895,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

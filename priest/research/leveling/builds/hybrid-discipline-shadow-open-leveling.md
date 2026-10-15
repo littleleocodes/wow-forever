@@ -1,4 +1,4 @@
-# Discipline/Shadow hybrid — Leveling (open talent search) — 22/0/29
+# Discipline-Shadow — Leveling (open talent search) — 22/0/29
 
 *[Priest](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Discipline/Shadow hybrid (a Discipline/Shadow hybrid) leveling build the open leveling search found on 2026-10-11: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the discipline-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). +19.1% faster per kill than discipline-leveling, the fastest of our leveling builds in that race.
+The Discipline-Shadow (a Discipline/Shadow hybrid) leveling build the open leveling search found on 2026-10-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the discipline-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). +19.8% faster per kill than discipline-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -70,9 +70,10 @@ The Discipline/Shadow hybrid (a Discipline/Shadow hybrid) leveling build the ope
 | 33-36 | Shadow | Shadow Focus | 4 | 22/0/5 |
 | 37 | Shadow | Improved Shadow Word: Pain | 1 | 22/0/6 |
 | 38-42 | Shadow | Spirit Tap | 5 | 22/0/11 |
-| 43-47 | Shadow | Improved Mind Blast | 5 | 22/0/16 |
-| 48-50 | Shadow | Shadow Weaving | 3 | 22/0/19 |
-| 51 | Shadow | Improved Shadow Word: Pain | 1 | 22/0/20 |
+| 43-46 | Shadow | Improved Mind Blast | 4 | 22/0/15 |
+| 47-49 | Shadow | Shadow Weaving | 3 | 22/0/18 |
+| 50 | Shadow | Improved Shadow Word: Pain | 1 | 22/0/19 |
+| 51 | Shadow | Improved Mind Blast | 1 | 22/0/20 |
 | 52 | Shadow | Improved Fade | 1 | 22/0/21 |
 | 53 | Shadow | Vampiric Embrace | 1 | 22/0/22 |
 | 54 | Shadow | Silence | 1 | 22/0/23 |
@@ -96,12 +97,12 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 42.92; discipline-leveling 51.10. The search simulated 51,696 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 42.66; discipline-leveling 51.10. The search simulated 51,696 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
 
-- An open-search Discipline/Shadow hybrid leveling build: check it while leveling at launch.
+- An open-search Discipline-Shadow leveling build: check it while leveling at launch.
 
 ## Sources
 

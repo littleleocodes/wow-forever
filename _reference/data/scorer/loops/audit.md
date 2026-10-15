@@ -77,12 +77,12 @@
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
 | classic | `aoe-grinding-frost` | frost-aoe / leveling-aoe | **Arcane Meditation** | Arcane | 3 | +0.03% | manual | sustain | 'What we are really looking towards': regen while channelling cuts the drink after each pack. |
-| classic | `aoe-grinding-frost` | frost-aoe / leveling-aoe | **Arcane Concentration** | Arcane | 5 | +0.04% | manual | sustain | Clearcasting saves whole Blizzards. |
-| classic | `aoe-grinding-frost` | frost-aoe / leveling-aoe | **Wand Specialization** | Arcane | 2 | +0.04% | manual | filler | Arcane tier-1 filler of the Icy Veins AoE build; wands do nothing while farming packs. |
-| classic | `aoe-grinding-frost` | frost-aoe / leveling-aoe | **Frost Warding** | Frost | 2 | +0.05% | manual | safety | 'Increases your Armor which helps reduce the damage you take when getting mobs in the perfect Frost Nova position.' |
+| classic | `aoe-grinding-frost` | frost-aoe / leveling-aoe | **Frost Warding** | Frost | 2 | +0.04% | manual | safety | 'Increases your Armor which helps reduce the damage you take when getting mobs in the perfect Frost Nova position.' |
+| classic | `aoe-grinding-frost` | frost-aoe / leveling-aoe | **Arcane Concentration** | Arcane | 5 | +0.05% | manual | sustain | Clearcasting saves whole Blizzards. |
 | classic | `aoe-grinding-frost` | frost-aoe / leveling-aoe | **Arcane Focus** | Arcane | 3 | +0.05% | manual | filler | Fewer Arcane Explosion resists on the cleanup; 'since you should be fighting enemies around your level 2 points are enough'. Tier-1 path to  |
-| classic | `aoe-grinding-frost` | frost-aoe / leveling-aoe | **Improved Arcane Explosion** | Arcane | 3 | +0.06% | manual | utility (from frost-leveling) | Multi-mob cleanup and dungeon trash. |
+| classic | `aoe-grinding-frost` | frost-aoe / leveling-aoe | **Wand Specialization** | Arcane | 2 | +0.05% | manual | filler | Arcane tier-1 filler of the Icy Veins AoE build; wands do nothing while farming packs. |
 | classic | `aoe-grinding-frost` | frost-aoe / leveling-aoe | **Arcane Resilience** | Arcane | 1 | +0.07% | manual | safety | 'Further decrease your melee damage taken' while gathering. |
+| classic | `aoe-grinding-frost` | frost-aoe / leveling-aoe | **Improved Arcane Explosion** | Arcane | 3 | +0.07% | manual | utility (from frost-leveling) | Multi-mob cleanup and dungeon trash. |
 | classic | `aoe-grinding-frost` | frost-aoe / leveling-aoe | **Arcane Subtlety** | Arcane | 2 | +0.20% | manual | filler | 'Here to help with any enemies that have frost or arcane resistances' - Arcane tier-1 path point. |
 | classic | `fire-raid` | fire-raid / raid-dps | **Arcane Subtlety** | Arcane | 2 | +0.00% | manual | filler (from frost-aoe) | 'Here to help with any enemies that have frost or arcane resistances' - Arcane tier-1 path point. |
 | classic | `fire-raid` | fire-raid / raid-dps | **Arcane Focus** | Arcane | 3 | +0.00% | manual | filler | Tier-1 path to Arcane Concentration. |
@@ -136,12 +136,12 @@
 | classic | `holy-raid-healer` | holy-heal / raid-heal | **Improved Blessing of Might** | Retribution | 5 | +0.00% | manual | utility | The raid's attack-power blessing. |
 | classic | `holy-raid-healer` | holy-heal / raid-heal | **Benediction** | Retribution | 4 | +0.05% | manual | sustain | Cheaper Seals/Judgements: small for a healer who rarely judges. |
 | classic | `leveling-retribution` | ret-dps / leveling-st | **Improved Retribution Aura** | Retribution | 2 | +0.00% | manual | filler | Tier filler; small aura damage. |
-| classic | `leveling-retribution` | ret-dps / leveling-st | **Deflection** | Retribution | 5 | +0.08% | parsed | filler | Tier-1 Retribution filler (parry) in the raid build; some leveling survivability. |
-| classic | `leveling-retribution` | ret-dps / leveling-st | **Benediction** | Retribution | 5 | +0.10% | manual | sustain | Cheaper Seals and Judgements: re-sealing after every Judgement is the mana sink. |
-| classic | `leveling-retribution` | ret-dps / leveling-st | **Improved Blessing of Might** | Retribution | 5 | +0.17% | manual | utility | Raid attack power; small for you. |
+| classic | `leveling-retribution` | ret-dps / leveling-st | **Deflection** | Retribution | 5 | +0.11% | parsed | filler | Tier-1 Retribution filler (parry) in the raid build; some leveling survivability. |
+| classic | `leveling-retribution` | ret-dps / leveling-st | **Improved Blessing of Might** | Retribution | 5 | +0.13% | manual | utility | Raid attack power; small for you. |
+| classic | `leveling-retribution` | ret-dps / leveling-st | **Benediction** | Retribution | 5 | +0.14% | manual | sustain | Cheaper Seals and Judgements: re-sealing after every Judgement is the mana sink. |
+| classic | `leveling-retribution` | ret-dps / leveling-st | **Conviction** | Retribution | 5 | +0.25% | manual | throughput | 5% crit; low while leveling, core at 60. |
 | classic | `leveling-retribution` | ret-dps / leveling-st | **Repentance** | Retribution | 1 | +0.30% | manual | utility | Humanoid CC while leveling / dungeons. |
-| classic | `leveling-retribution` | ret-dps / leveling-st | **Conviction** | Retribution | 5 | +0.31% | manual | throughput | 5% crit; low while leveling, core at 60. |
-| classic | `leveling-retribution` | ret-dps / leveling-st | **Improved Seal of the Crusader** | Retribution | 3 | +0.37% | manual | throughput | Judgement of the Crusader debuff feeds every Holy hit. |
+| classic | `leveling-retribution` | ret-dps / leveling-st | **Improved Seal of the Crusader** | Retribution | 3 | +0.30% | manual | throughput | Judgement of the Crusader debuff feeds every Holy hit. |
 | classic | `leveling-retribution` | ret-dps / leveling-st | **Divine Intellect** | Holy | 5 | +0.39% | manual | sustain | +10% Intellect: mana for seals and judgements over a five-minute fight; Holy tier-1 path. |
 | classic | `prot-tank` | prot-tank / raid-tank | **Anticipation** | Protection | 5 | +0.30% | manual | safety | '10 Defense skill, which is the main stat tanks desire... less valuable as your gear improves.' |
 | classic | `ret-raid-dps` | ret-dps / raid-dps | **Consecration** | Holy | 1 | +0.00% | manual | utility | One point: an area threat and damage tool for trash and farming; the simulator's raid rotation casts it rarely, so the raid value is small. |
@@ -155,7 +155,7 @@
 | forever-draft | `holy-raid-healer` | holy-heal / raid-heal | **Unyielding Faith** | Holy | 2 | +0.00% | manual | filler | Holy tier-2 filler: fear/disorient resist. |
 | forever-draft | `holy-raid-healer` | holy-heal / raid-heal | **Voice of Truth** | Holy | 1 | +0.00% | manual | utility (from prot-tank) | 6 s immunity to silence and interrupts (beta): spell uptime for a tank under interrupts; one point. |
 | forever-draft | `holy-raid-healer` | holy-heal / raid-heal | **Improved Judgement** | Retribution | 2 | +0.00% | manual | utility | Judgement cooldown -2 s (beta): keeps Judgement of Light / Wisdom up for the raid when the healer judges; Retribution tier-2 path of the For |
-| forever-draft | `leveling-retribution` | ret-dps / leveling-st | **Benediction** | Retribution | 5 | +0.06% | manual | sustain | Cheaper Seals and Judgements: re-sealing after every Judgement is the mana sink. |
+| forever-draft | `leveling-retribution` | ret-dps / leveling-st | **Benediction** | Retribution | 5 | +0.07% | manual | sustain | Cheaper Seals and Judgements: re-sealing after every Judgement is the mana sink. |
 | forever-draft | `ret-raid-dps` | ret-dps / raid-dps | **Divine Favor** | Holy | 1 | +0.00% | manual | OPEN |  |
 
 ## Priest - 22 flagged of 52 taken talents, 3 without a documented reason

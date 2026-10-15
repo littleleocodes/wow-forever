@@ -90,13 +90,13 @@ Balance: Moonfire and Insect Swarm up, Wrath while the mob walks in (Eclipse cha
 
 **Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): drink below 60% mana; eat below 80% health. Together +4.5% time per kill saved for `opt-balance-dps-leveling-st` (level-weighted, a third seed of 3000 fights per level).
 
-What this build casts per kill ([report](../fightlab/balance-dps-opt.md), all leveling builds: [leveling rotations](../rotation.md)):
+What this build casts per kill ([report](../fightlab/balance-dps.md), all leveling builds: [leveling rotations](../rotation.md)):
 
-| Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
-|---|---|---|---|---|---|---|
-| Starfire | 0.0 | 4.7 | 5.8 | 5.3 | 5.3 | 67% |
-| Wrath | 10.2 | 2.7 | 3.0 | 2.9 | 2.9 | 11% |
-| Moonfire | 2.5 | 1.9 | 2.1 | 1.7 | 1.7 | 22% |
+| Ability | L15 casts/kill | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
+|---|---|---|---|---|---|---|---|
+| Starfire | 0.0 | 0.0 | 4.7 | 5.7 | 5.3 | 5.3 | 67% |
+| Wrath | 8.6 | 10.3 | 2.7 | 2.9 | 2.9 | 2.9 | 11% |
+| Moonfire | 1.8 | 2.5 | 1.9 | 2.1 | 1.7 | 1.7 | 22% |
 
 ## Notes
 

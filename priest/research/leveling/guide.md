@@ -4,7 +4,7 @@
 
 ## The build and its order
 
-**Shadow** ([player page](../../leveling/shadow.md)) — `shadow-open-leveling`: The Shadow leveling build the open leveling search found on 2026-10-11: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the shadow-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). +0.6% faster per kill than shadow-open-leveling, the fastest of our leveling builds in that race.
+**Shadow** ([player page](../../leveling/shadow.md)) — `shadow-open-leveling`: The Shadow leveling build the open leveling search found on 2026-10-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the shadow-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). +0.6% faster per kill than shadow-open-leveling, the fastest of our leveling builds in that race.
 
 | Levels | Tree | Talent | Points |
 |---|---|---|---|
@@ -42,8 +42,8 @@ Level-weighted time per kill (seconds, higher levels count more) of the build ea
 | Spec | Page build | Rotation | L20 | L30 | L40 | L50 | L60 | Weighted |
 |---|---|---|---|---|---|---|---|---|
 | [Shadow](../../leveling/shadow.md) ✅ | [`shadow-open-leveling`](builds/shadow-open-leveling.md) | shadow-dps | 36.5 | 36.1 | 22.4 | 22.6 | 20.9 | 25.5 |
-| [Discipline-Shadow](../../leveling/hybrid-discipline-shadow.md) | [`hybrid-discipline-shadow-open-leveling`](builds/hybrid-discipline-shadow-open-leveling.md) | discipline-leveling | 37.0 | 41.2 | 48.2 | 43.6 | 41.7 | 42.9 |
-| [Holy-Shadow](../../leveling/hybrid-holy-shadow.md) | [`hybrid-holy-shadow-open-leveling`](builds/hybrid-holy-shadow-open-leveling.md) | holy-leveling | 33.5 | 41.3 | 46.5 | 44.3 | 44.0 | 43.1 |
+| [Discipline-Shadow](../../leveling/hybrid-discipline-shadow.md) | [`hybrid-discipline-shadow-open-leveling`](builds/hybrid-discipline-shadow-open-leveling.md) | discipline-leveling | 37.0 | 41.2 | 48.2 | 42.5 | 41.7 | 42.7 |
+| [Holy-Shadow](../../leveling/hybrid-holy-shadow.md) | [`hybrid-holy-shadow-open-leveling`](builds/hybrid-holy-shadow-open-leveling.md) | holy-leveling | 33.5 | 41.3 | 46.5 | 44.4 | 44.0 | 43.1 |
 | [Holy](../../leveling/holy.md) | [`holy-leveling`](builds/holy-leveling.md) | holy-leveling | 37.7 | 43.5 | 54.9 | 53.3 | 52.5 | 50.3 |
 | [Discipline](../../leveling/discipline.md) | [`discipline-leveling`](builds/discipline-leveling.md) | discipline-leveling | 38.7 | 47.2 | 56.2 | 54.8 | 54.0 | 52.1 |
 

@@ -55,16 +55,16 @@ The Combat build the machine-learning talent search found in a full raid (every 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 17/32/2 | 424 | +0.0% | 713 | -3.0% | 0 s |
-| 2 | **[`combat-ml-raid`](combat-ml-raid.md)** | ours: derived (ML search) | 16/33/2 | 406 | -4.1% | 735 | +0.0% | 0 s |
-| 3 | [`combat-daggers-raid`](combat-daggers-raid.md) | ours: hand draft | 16/33/2 | 404 | -4.8% | 728 | -0.9% | 0 s |
-| 4 | *Combat Dual-Wield 15/33/3* | community simulator | - | 399 | -5.9% | 718 | -2.3% | 0 s |
-| 5 | *Mutilate* | community simulator | - | 383 | -9.6% | 672 | -8.6% | 0 s |
-| 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 382 | -9.9% | 654 | -11.0% | 0 s |
-| 7 | *Backstab* | community simulator | - | 375 | -11.5% | 690 | -6.2% | 0 s |
-| 8 | *Improved Expose Armor (SS)* | community simulator | - | 355 | -16.4% | 642 | -12.7% | 0 s |
-| 9 | *Sinister Strike* | community simulator | - | 340 | -19.9% | 651 | -11.5% | 0 s |
-| 10 | *Subtlety Hemo 15/0/36* | community simulator | - | 270 | -36.3% | 524 | -28.8% | 0 s |
+| 1 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 17/32/2 | 424 | +0.0% | 672 | -3.4% | 0 s |
+| 2 | **[`combat-ml-raid`](combat-ml-raid.md)** | ours: derived (ML search) | 16/33/2 | 406 | -4.1% | 695 | +0.0% | 0 s |
+| 3 | [`combat-daggers-raid`](combat-daggers-raid.md) | ours: hand draft | 16/33/2 | 404 | -4.8% | 688 | -1.0% | 0 s |
+| 4 | *Combat Dual-Wield 15/33/3* | community simulator | - | 399 | -5.9% | 678 | -2.4% | 0 s |
+| 5 | *Mutilate* | community simulator | - | 383 | -9.6% | 629 | -9.6% | 0 s |
+| 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 382 | -9.9% | 611 | -12.1% | 0 s |
+| 7 | *Backstab* | community simulator | - | 375 | -11.5% | 652 | -6.3% | 0 s |
+| 8 | *Improved Expose Armor (SS)* | community simulator | - | 355 | -16.4% | 603 | -13.3% | 0 s |
+| 9 | *Sinister Strike* | community simulator | - | 340 | -19.9% | 612 | -12.0% | 0 s |
+| 10 | *Subtlety Hemo 15/0/36* | community simulator | - | 270 | -36.3% | 491 | -29.4% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -112,6 +112,7 @@ Damage by ability:
 - Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.
 - Pre-BiS gear: 16/33/2 at 672.3 DPS in a full raid (the same talents).
 - Alone on the training dummy (only your own buffs) the search's best is 16/33/2 at 424.7 DPS.
+- 2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Combat: its full-raid winner is +0.00% against it, under the 0.5% bar for a new build.
 
 ## Open questions (verify in the live game)
 

@@ -587,33 +587,33 @@
      }
     },
     "open winner": {
-     "weighted": 31.77,
+     "weighted": 31.39,
      "levels": {
-      "20": 29.53,
-      "30": 36.0,
-      "40": 38.58,
-      "50": 30.31,
-      "60": 27.09
+      "20": 29.32,
+      "30": 35.19,
+      "40": 37.82,
+      "50": 30.21,
+      "60": 26.89
      }
     },
     "finalist 28/0/23 (own tree first order)": {
-     "weighted": 33.26,
+     "weighted": 32.94,
      "levels": {
-      "20": 34.13,
-      "30": 38.82,
-      "40": 39.07,
-      "50": 32.33,
-      "60": 27.09
+      "20": 34.46,
+      "30": 37.24,
+      "40": 39.14,
+      "50": 32.06,
+      "60": 26.89
      }
     },
     "finalist 28/0/23 (own tree last order)": {
-     "weighted": 32.13,
+     "weighted": 31.68,
      "levels": {
-      "20": 29.53,
-      "30": 36.0,
-      "40": 38.58,
-      "50": 31.75,
-      "60": 27.09
+      "20": 29.32,
+      "30": 35.19,
+      "40": 37.82,
+      "50": 31.34,
+      "60": 26.89
      }
     },
     "finalist 28/0/23 (stats model order, before the order polish)": {
@@ -624,6 +624,16 @@
       "40": 38.58,
       "50": 31.75,
       "60": 27.09
+     }
+    },
+    "finalist 28/0/23 (stats model order)": {
+     "weighted": 31.68,
+     "levels": {
+      "20": 29.32,
+      "30": 35.19,
+      "40": 37.82,
+      "50": 31.34,
+      "60": 26.89
      }
     }
    },
@@ -778,30 +788,22 @@
    "order_label": "polished from the stats model order",
    "orders_raced": "28/0/23",
    "order_polish": {
-    "date": "2026-10-09",
+    "date": "2026-10-15",
     "levels": [
      30,
      40,
      50
     ],
-    "from": "stats model",
-    "steps": [
-     {
-      "round": 1,
-      "change": "Arcane Meditation: 48-50 -> 48/51-52; Arcane Blast: 51 -> 49; Missile Barrage: 52 -> 50",
-      "seed1": -0.0128,
-      "seed2": -0.018,
-      "seconds_30_50": 34.53
-     }
-    ],
-    "minutes": 0.1,
-    "changed": true
+    "from": "polished from the stats model order",
+    "steps": [],
+    "minutes": 0.0,
+    "changed": false
    },
    "split": "28/0/23",
    "family": "Hybrid Arcane/Frost",
    "link": "https://talentsforever.com/mage/60/23000502310031053--20350031310003002-6",
    "ours_best": "arcane-leveling",
-   "gain_vs_ours": 0.0652,
+   "gain_vs_ours": 0.0781,
    "values": {
     "Ice Lance": {
      "ranks": 1,
@@ -16257,7 +16259,7 @@
     ],
     "why": null,
     "spec": "Hybrid Arcane/Frost",
-    "date": "2026-10-09"
+    "date": "2026-10-15"
    }
   },
   "fire-leveling": {
@@ -16731,82 +16733,88 @@
      "points": 2
     },
     {
-     "levels": "30-31",
+     "levels": "30",
      "tree": "Frost",
      "talent": "Fingers of Frost",
-     "points": 2
+     "points": 1
     },
     {
-     "levels": "32-34",
-     "tree": "Frost",
-     "talent": "Frost Channeling",
-     "points": 3
-    },
-    {
-     "levels": "35-39",
+     "levels": "31-35",
      "tree": "Fire",
      "talent": "Improved Fireball",
      "points": 5
     },
     {
-     "levels": "40-44",
+     "levels": "36",
+     "tree": "Frost",
+     "talent": "Fingers of Frost",
+     "points": 1
+    },
+    {
+     "levels": "37-41",
      "tree": "Fire",
      "talent": "Ignite",
      "points": 5
     },
     {
-     "levels": "45",
-     "tree": "Frost",
-     "talent": "Winter's Chill",
-     "points": 1
-    },
-    {
-     "levels": "46-47",
+     "levels": "42-43",
      "tree": "Fire",
      "talent": "Burning Soul",
      "points": 2
     },
     {
-     "levels": "48",
+     "levels": "44",
      "tree": "Fire",
      "talent": "Pyroblast",
      "points": 1
     },
     {
-     "levels": "49-50",
+     "levels": "45-46",
      "tree": "Fire",
      "talent": "Incineration",
      "points": 2
     },
     {
-     "levels": "51-53",
+     "levels": "47-49",
      "tree": "Fire",
      "talent": "Master of Elements",
      "points": 3
     },
     {
-     "levels": "54",
+     "levels": "50",
      "tree": "Fire",
      "talent": "Incineration",
      "points": 1
     },
     {
-     "levels": "55",
+     "levels": "51",
      "tree": "Fire",
      "talent": "Improved Fire Ward",
      "points": 1
     },
     {
-     "levels": "56",
+     "levels": "52",
      "tree": "Fire",
      "talent": "Blast Wave",
      "points": 1
     },
     {
-     "levels": "57-59",
+     "levels": "53-55",
      "tree": "Fire",
      "talent": "Critical Mass",
      "points": 3
+    },
+    {
+     "levels": "56-58",
+     "tree": "Frost",
+     "talent": "Frost Channeling",
+     "points": 3
+    },
+    {
+     "levels": "59",
+     "tree": "Frost",
+     "talent": "Winter's Chill",
+     "points": 1
     },
     {
      "levels": "60",
@@ -16846,34 +16854,24 @@
       "60": 29.11
      }
     },
-    "finalist 1/24/26 (stats model order)": {
-     "weighted": 32.46,
-     "levels": {
-      "20": 29.64,
-      "30": 33.54,
-      "40": 38.42,
-      "50": 32.0,
-      "60": 29.26
-     }
-    },
     "finalist 1/24/26 (own tree last order)": {
-     "weighted": 38.09,
+     "weighted": 38.41,
      "levels": {
-      "20": 36.68,
-      "30": 44.73,
-      "40": 50.98,
-      "50": 34.94,
-      "60": 29.26
+      "20": 37.83,
+      "30": 45.21,
+      "40": 51.2,
+      "50": 34.98,
+      "60": 29.53
      }
     },
     "open winner": {
-     "weighted": 32.36,
+     "weighted": 32.69,
      "levels": {
-      "20": 29.64,
-      "30": 33.54,
-      "40": 37.53,
-      "50": 32.32,
-      "60": 29.26
+      "20": 30.26,
+      "30": 33.9,
+      "40": 38.58,
+      "50": 32.0,
+      "60": 29.53
      }
     },
     "finalist 1/24/26 (own tree first order, before the order polish)": {
@@ -16884,6 +16882,36 @@
       "40": 37.89,
       "50": 32.32,
       "60": 29.26
+     }
+    },
+    "finalist 1/24/26 (polished from the own tree first order order)": {
+     "weighted": 32.78,
+     "levels": {
+      "20": 30.26,
+      "30": 33.9,
+      "40": 38.1,
+      "50": 32.74,
+      "60": 29.53
+     }
+    },
+    "finalist 1/24/26 (own tree first order)": {
+     "weighted": 32.84,
+     "levels": {
+      "20": 30.26,
+      "30": 33.9,
+      "40": 38.42,
+      "50": 32.74,
+      "60": 29.53
+     }
+    },
+    "finalist 1/24/26 (stats model order, before the order polish)": {
+     "weighted": 32.73,
+     "levels": {
+      "20": 30.26,
+      "30": 33.9,
+      "40": 38.81,
+      "50": 32.0,
+      "60": 29.53
      }
     }
    },
@@ -17055,23 +17083,23 @@
     "minutes": 2.6,
     "changed": true
    },
-   "order_label": "polished from the own tree first order",
+   "order_label": "polished from the stats model order",
    "orders_raced": "1/24/26",
    "order_polish": {
-    "date": "2026-10-09",
+    "date": "2026-10-15",
     "levels": [
      30,
      40,
      50
     ],
-    "from": "own tree first",
+    "from": "stats model",
     "steps": [
      {
       "round": 1,
-      "change": "Improved Fireball: 36-40 -> 35-39; Ignite: 41-45 -> 40-44; Winter's Chill: 35 -> 45",
-      "seed1": -0.0078,
-      "seed2": -0.0058,
-      "seconds_30_50": 34.47
+      "change": "Fingers of Frost: 30/43 -> 30/36; Ignite: 36-40 -> 37-41; Burning Soul: 41-42 -> 42-43",
+      "seed1": -0.0085,
+      "seed2": -0.0052,
+      "seconds_30_50": 34.53
      }
     ],
     "minutes": 0.0,
@@ -17184,7 +17212,7 @@
    "family": "Hybrid Fire/Frost",
    "link": "https://talentsforever.com/mage/60/1-035500201010331-005502313100030021-6",
    "ours_best": "fire-leveling",
-   "gain_vs_ours": 0.1252,
+   "gain_vs_ours": 0.1138,
    "synergy": {
     "date": "2026-10-09",
     "winner": "1/24/26",
@@ -32521,7 +32549,7 @@
     ],
     "why": null,
     "spec": "Hybrid Fire/Frost",
-    "date": "2026-10-09"
+    "date": "2026-10-15"
    }
   },
   "frost-leveling": {
@@ -33153,33 +33181,33 @@
      }
     },
     "open winner": {
-     "weighted": 27.24,
+     "weighted": 27.2,
      "levels": {
-      "20": 25.42,
-      "30": 31.46,
-      "40": 31.84,
-      "50": 25.86,
-      "60": 23.83
+      "20": 25.86,
+      "30": 31.38,
+      "40": 31.53,
+      "50": 25.9,
+      "60": 23.77
      }
     },
     "finalist 18/2/31 (own tree first order)": {
-     "weighted": 27.24,
+     "weighted": 27.2,
      "levels": {
-      "20": 25.42,
-      "30": 31.46,
-      "40": 31.84,
-      "50": 25.86,
-      "60": 23.83
+      "20": 25.86,
+      "30": 31.38,
+      "40": 31.53,
+      "50": 25.9,
+      "60": 23.77
      }
     },
     "finalist 18/2/31 (own tree last order)": {
-     "weighted": 35.3,
+     "weighted": 35.54,
      "levels": {
-      "20": 39.58,
-      "30": 55.96,
-      "40": 43.78,
-      "50": 28.16,
-      "60": 23.83
+      "20": 40.22,
+      "30": 56.99,
+      "40": 43.98,
+      "50": 28.17,
+      "60": 23.77
      }
     }
    },
@@ -33358,7 +33386,7 @@
    "order_label": "stats model",
    "orders_raced": "18/2/31",
    "order_polish": {
-    "date": "2026-10-09",
+    "date": "2026-10-15",
     "levels": [
      30,
      40,
@@ -33373,7 +33401,7 @@
    "family": "Frost",
    "link": "https://talentsforever.com/mage/60/2412150000003-02-1535003331000301201-6",
    "ours_best": "frost-open-leveling",
-   "gain_vs_ours": 0.0007,
+   "gain_vs_ours": 0.0022,
    "values": {
     "Ice Lance": {
      "ranks": 1,
@@ -48712,7 +48740,7 @@
     ],
     "why": null,
     "spec": "Frost",
-    "date": "2026-10-09"
+    "date": "2026-10-15"
    }
   }
  },

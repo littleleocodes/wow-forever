@@ -91,27 +91,27 @@
     "max60": 727.9931529484463
    },
    "raid_spell_casts": {
-    "11129": 1.0,
     "25306": 34.95366666666666,
-    "2948": 6.3533333333333335,
     "10199": 26.28933333333333,
-    "10207": 11.272,
+    "2948": 6.3533333333333335,
     "412538": 22.843,
-    "18809": 5.844333333333333
+    "10207": 11.272,
+    "18809": 5.844333333333333,
+    "11129": 1.0
    },
    "raid_casts": {
-    "Major Mana Potion": 2.0,
-    "Combustion": 1.0,
-    "Fireball": 34.95366666666666,
-    "OtherActionManaGain": 66.816,
-    "Scorch": 17.625333333333334,
-    "Fire Blast": 26.28933333333333,
     "Mana Citrine": 0.836,
-    "Ignite": 22.843,
-    "Demonic Rune": 1.9783333333333333,
+    "OtherActionManaGain": 66.816,
     "Mana Ruby": 1.0,
+    "Demonic Rune": 1.9783333333333333,
+    "Fireball": 34.95366666666666,
+    "Fire Blast": 26.28933333333333,
+    "Scorch": 17.625333333333334,
+    "Talisman of Ephemeral Power": 2.0,
+    "Major Mana Potion": 2.0,
+    "Ignite": 22.843,
     "Pyroblast": 5.844333333333333,
-    "Talisman of Ephemeral Power": 2.0
+    "Combustion": 1.0
    }
   },
   {
@@ -136,26 +136,26 @@
    },
    "raid_spell_casts": {
     "10199": 26.28933333333333,
-    "11129": 1.0,
     "10207": 11.272,
-    "25306": 34.95366666666666,
     "412538": 22.843,
+    "11129": 1.0,
     "2948": 6.3533333333333335,
-    "18809": 5.844333333333333
+    "18809": 5.844333333333333,
+    "25306": 34.95366666666666
    },
    "raid_casts": {
-    "Demonic Rune": 1.9783333333333333,
     "Fire Blast": 26.28933333333333,
-    "Talisman of Ephemeral Power": 2.0,
+    "Scorch": 17.625333333333334,
+    "Ignite": 22.843,
     "Combustion": 1.0,
     "OtherActionManaGain": 66.816,
+    "Mana Citrine": 0.836,
     "Mana Ruby": 1.0,
-    "Scorch": 17.625333333333334,
+    "Pyroblast": 5.844333333333333,
     "Major Mana Potion": 2.0,
     "Fireball": 34.95366666666666,
-    "Mana Citrine": 0.836,
-    "Ignite": 22.843,
-    "Pyroblast": 5.844333333333333
+    "Demonic Rune": 1.9783333333333333,
+    "Talisman of Ephemeral Power": 2.0
    }
   },
   {
@@ -181,23 +181,23 @@
    "raid_spell_casts": {
     "2948": 2.9566666666666666,
     "412538": 21.621333333333332,
-    "10199": 25.936333333333334,
     "25306": 39.80866666666667,
+    "11129": 1.0,
     "10207": 11.665666666666667,
-    "11129": 1.0
+    "10199": 25.936333333333334
    },
    "raid_casts": {
-    "Major Mana Potion": 2.0,
-    "OtherActionManaGain": 63.300333333333334,
-    "Talisman of Ephemeral Power": 2.0,
-    "Mana Citrine": 0.63,
-    "Mana Ruby": 1.0,
-    "Demonic Rune": 1.9446666666666668,
     "Scorch": 14.622333333333334,
     "Ignite": 21.621333333333332,
-    "Fire Blast": 25.936333333333334,
+    "Major Mana Potion": 2.0,
     "Fireball": 39.80866666666667,
-    "Combustion": 1.0
+    "Combustion": 1.0,
+    "Demonic Rune": 1.9446666666666668,
+    "Mana Ruby": 1.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "OtherActionManaGain": 63.300333333333334,
+    "Fire Blast": 25.936333333333334,
+    "Mana Citrine": 0.63
    }
   },
   {
@@ -225,8 +225,8 @@
     "10199": 20.672333333333334
    },
    "raid_casts": {
-    "OtherActionManaGain": 55.177,
     "Scorch": 100.01,
+    "OtherActionManaGain": 55.177,
     "Demonic Rune": 0.6303333333333333,
     "Fire Blast": 20.672333333333334,
     "Talisman of Ephemeral Power": 0.6303333333333333
@@ -253,27 +253,27 @@
     "max60": 543.0665058275546
    },
    "raid_spell_casts": {
-    "412538": 17.915666666666667,
-    "12042": 1.0,
     "25306": 29.892333333333333,
-    "10199": 25.022,
+    "12042": 1.0,
     "2948": 0.275,
     "10207": 26.095333333333333,
+    "412538": 17.915666666666667,
+    "10199": 25.022,
     "12043": 1.0
    },
    "raid_casts": {
-    "Talisman of Ephemeral Power": 2.0,
-    "Ignite": 17.915666666666667,
-    "Arcane Power": 1.0,
     "Fireball": 29.892333333333333,
-    "Fire Blast": 25.022,
+    "OtherActionManaGain": 57.76833333333333,
+    "Mana Ruby": 1.0,
+    "Arcane Power": 1.0,
     "Mana Citrine": 0.261,
     "Scorch": 26.37033333333333,
-    "Mana Ruby": 1.0,
+    "Ignite": 17.915666666666667,
     "Major Mana Potion": 1.9986666666666666,
+    "Fire Blast": 25.022,
     "Presence of Mind": 1.0,
     "Demonic Rune": 1.826,
-    "OtherActionManaGain": 57.76833333333333
+    "Talisman of Ephemeral Power": 2.0
    }
   },
   {
@@ -297,27 +297,27 @@
     "max60": 687.4924730270498
    },
    "raid_spell_casts": {
-    "18809": 5.709,
     "25306": 36.79866666666667,
-    "10207": 12.789333333333333,
-    "2948": 0.654,
-    "412538": 21.084333333333333,
+    "18809": 5.709,
     "10199": 26.866,
-    "11129": 1.0
+    "11129": 1.0,
+    "2948": 0.654,
+    "10207": 12.789333333333333,
+    "412538": 21.084333333333333
    },
    "raid_casts": {
-    "Pyroblast": 5.709,
     "Fireball": 36.79866666666667,
-    "Major Mana Potion": 2.0,
-    "Mana Ruby": 1.0,
-    "OtherActionManaGain": 61.74333333333333,
-    "Scorch": 13.443333333333333,
-    "Mana Citrine": 0.578,
-    "Ignite": 21.084333333333333,
-    "Demonic Rune": 1.7546666666666666,
+    "Pyroblast": 5.709,
     "Fire Blast": 26.866,
+    "Combustion": 1.0,
+    "Demonic Rune": 1.7546666666666666,
+    "Scorch": 13.443333333333333,
     "Talisman of Ephemeral Power": 2.0,
-    "Combustion": 1.0
+    "Major Mana Potion": 2.0,
+    "Mana Citrine": 0.578,
+    "OtherActionManaGain": 61.74333333333333,
+    "Mana Ruby": 1.0,
+    "Ignite": 21.084333333333333
    }
   },
   {
@@ -341,27 +341,27 @@
     "max60": 711.5913054506965
    },
    "raid_spell_casts": {
-    "10199": 18.180666666666667,
-    "11129": 1.0,
-    "18809": 5.186,
     "2948": 15.892333333333333,
     "412538": 22.855666666666668,
+    "18809": 5.186,
+    "11129": 1.0,
     "25306": 34.85066666666667,
-    "10207": 10.727
+    "10207": 10.727,
+    "10199": 18.180666666666667
    },
    "raid_casts": {
-    "Major Mana Potion": 2.0,
-    "Fire Blast": 18.180666666666667,
-    "Combustion": 1.0,
-    "Talisman of Ephemeral Power": 2.0,
-    "Demonic Rune": 2.0,
-    "Pyroblast": 5.186,
-    "Mana Citrine": 1.0,
     "Scorch": 26.619333333333334,
-    "Ignite": 22.855666666666668,
+    "Mana Citrine": 1.0,
     "Mana Ruby": 1.0,
+    "Major Mana Potion": 2.0,
+    "Demonic Rune": 2.0,
     "OtherActionManaGain": 67.087,
-    "Fireball": 34.85066666666667
+    "Ignite": 22.855666666666668,
+    "Talisman of Ephemeral Power": 2.0,
+    "Pyroblast": 5.186,
+    "Combustion": 1.0,
+    "Fireball": 34.85066666666667,
+    "Fire Blast": 18.180666666666667
    }
   },
   {
@@ -386,19 +386,19 @@
    },
    "raid_spell_casts": {
     "10199": 20.378333333333334,
-    "10207": 100.01533333333333,
     "2948": 0.003,
+    "10207": 100.01533333333333,
     "12472": 0.869
    },
    "raid_casts": {
-    "Demonic Rune": 1.0,
+    "Talisman of Ephemeral Power": 1.0,
     "Mana Ruby": 0.869,
-    "Major Mana Potion": 0.42866666666666664,
     "Fire Blast": 20.378333333333334,
     "OtherActionManaGain": 56.92166666666667,
+    "Demonic Rune": 1.0,
     "Scorch": 100.01833333333333,
-    "Cold Snap": 0.869,
-    "Talisman of Ephemeral Power": 1.0
+    "Major Mana Potion": 0.42866666666666664,
+    "Cold Snap": 0.869
    }
   },
   {
@@ -427,10 +427,10 @@
    },
    "raid_casts": {
     "Scorch": 100.00633333333333,
-    "OtherActionManaGain": 54.901666666666664,
-    "Talisman of Ephemeral Power": 0.3463333333333333,
     "Demonic Rune": 0.3463333333333333,
-    "Fire Blast": 20.791666666666668
+    "Fire Blast": 20.791666666666668,
+    "OtherActionManaGain": 54.901666666666664,
+    "Talisman of Ephemeral Power": 0.3463333333333333
    }
   }
  ]

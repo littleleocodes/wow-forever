@@ -24,6 +24,7 @@ The fight lab is this project's model of stated assumptions, not an in-game meas
 import argparse
 import datetime
 import json
+import re
 import multiprocessing
 import os
 import pathlib
@@ -327,7 +328,8 @@ def choose_order(cls, spec, r, pool, space, save, before=None, cfg=None, model=N
     if res[0] < table["open winner"]["weighted"]:
         table[f"finalist {split} ({label} order, before the order polish)"] = table["open winner"]
         table["open winner"] = row(res)
-        r["order"], r["order_label"] = o, f"polished from the {label} order"
+        base = re.sub(r"^(?:polished from the )+(.*?)(?: order)+$", r"", label)   # 2026-10-15: a second polish nested the label
+        r["order"], r["order_label"] = o, f"polished from the {base} order"
         log(f"  {cls} {spec}: the polished order is the page's ({res[0]:.2f} s per kill at 20-60, was {table[f'finalist {split} ({label} order, before the order polish)']['weighted']:.2f})")
     else:
         table[f"finalist {split} (polished order)"] = row(res)

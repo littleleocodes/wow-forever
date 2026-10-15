@@ -66,11 +66,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-d
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md)** | ours: optimizer | 18/0/33 | 591 | +0.0% | 696 | +0.0% | 0 s |
-| 2 | *Shadow* | community simulator | - | 589 | -0.3% | 693 | -0.4% | 0 s |
-| 3 | *Shadow 15/0/36* | community simulator | - | 589 | -0.3% | 693 | -0.4% | 0 s |
-| 4 | *Smite* | community simulator | - | 217 | -63.3% | 260 | -62.7% | 1 s |
-| 5 | *Smite 31/17/3* | community simulator | - | 217 | -63.3% | 260 | -62.7% | 1 s |
+| 1 | **[`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md)** | ours: optimizer | 18/0/33 | 593 | +0.0% | 699 | +0.0% | 0 s |
+| 2 | *Shadow* | community simulator | - | 591 | -0.3% | 696 | -0.4% | 0 s |
+| 3 | *Shadow 15/0/36* | community simulator | - | 591 | -0.3% | 696 | -0.4% | 0 s |
+| 4 | *Smite* | community simulator | - | 218 | -63.3% | 260 | -62.8% | 1 s |
+| 5 | *Smite 31/17/3* | community simulator | - | 218 | -63.3% | 260 | -62.8% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -88,9 +88,9 @@ Before the pull: at -1s: cast Shadowform.
 | # | Priority (the first line whose condition holds is cast) | [`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md) casts/min |
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
-| 2 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain | 2.5 |
+| 2 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain | 2.6 |
 | 3 | strict sequence: cast Inner Focus; cast Devouring Plague | 0.7 |
-| 4 | cast Shadow Word: Death | 3.7 |
+| 4 | cast Shadow Word: Death | 3.8 |
 | 5 | cast Mind Blast | 7.0 |
 | 6 | channel Mind Flay | as ready |
 
@@ -109,6 +109,7 @@ Damage by ability:
 ## Notes
 
 - Report: priest/research/talents/forever/optimizer/shadow-dps-raid-dps.md
+- 2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Shadow: its full-raid winner is -0.01% against it, under the 0.5% bar for a new build.
 
 ## Open questions (verify in the live game)
 

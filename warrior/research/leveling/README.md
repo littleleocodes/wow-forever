@@ -34,10 +34,10 @@ Classic Era reference builds: [leveling-arms](../talents/classic-baseline/leveli
 
 ## Guide, rotation and respec plan
 
-- [Leveling guide](guide.md): the recommended build (Fury, `opt-fury-dw-raid-leveling-st`) level by level, what each bracket feels like and what the fight lab does not model.
+- [Leveling guide](guide.md): the recommended build (Fury, `fury-open-leveling`) level by level, what each bracket feels like and what the fight lab does not model.
 - [Rotation](rotation.md): the build each leveling page picks, the rotation it plays and what each leveling build casts per kill, level by level.
 - [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**64.1 h** (28.8% faster than talentless), no respec).
-- Recommended build: [opt-fury-dw-raid-leveling-st](builds/opt-fury-dw-raid-leveling-st.md) (Fury; player page: [Fury leveling](../../leveling/fury.md)).
+- Recommended build: [fury-open-leveling](builds/fury-open-leveling.md) (Fury; player page: [Fury leveling](../../leveling/fury.md)).
 
 ## Fight lab (Monte Carlo fight simulator)
 
@@ -47,9 +47,9 @@ Classic Era reference builds: [leveling-arms](../talents/classic-baseline/leveli
 
 | Spec | Page build | Rotation | Seconds per kill |
 |---|---|---|---|
-| [Fury](../../leveling/fury.md) ✅ | `opt-fury-dw-raid-leveling-st` | fury-dw-raid | 25.2 |
-| [Arms](../../leveling/arms.md) ✅ | `opt-arms-2h-raid-leveling-st` | arms-2h-raid | 25.5 |
+| [Fury](../../leveling/fury.md) ✅ | `fury-open-leveling` | fury-dw-raid | 25.3 |
 | [Protection](../../leveling/protection.md) | `protection-open-leveling` | prot-leveling | 26.2 |
+| [Arms](../../leveling/arms.md) | `opt-arms-2h-raid-leveling-st` | arms-2h-raid | 27.2 |
 
 ✅ = recommended (the fastest spec, or within 3% of it).
 
@@ -57,19 +57,19 @@ The `arms-2h-raid` report below is the fight-lab pipeline's (research): its opti
 
 | Build | L20 | L30 | L40 | L50 | L60 | Deaths/100 at 60 | Downtime/kill at 60 |
 |---|---|---|---|---|---|---|---|
-| `opt-arms-2h-raid-leveling-st` (optimizer) | 19.1s | 21.9s | 23.7s | 26.2s | 30.0s | 0.0 | 1.0s |
-| `leveling-arms` (hand draft) | 19.2s (+0%) | 21.9s (+0%) | 24.0s (+1%) | 26.7s (+2%) | 30.1s (+0%) | 0.0 | 0.9s |
-| `opt-arms-2h-raid-leveling-st` in blues (dungeon blues from the item database) | 17.6s (-8%) | 20.1s (-8%) | 22.0s (-7%) | 24.8s (-5%) | 27.9s (-7%) | 0.0 | 0.5s |
+| `opt-arms-2h-raid-leveling-st` (optimizer) | 22.6s | 26.0s | 26.0s | 27.2s | 30.0s | 0.0 | 1.0s |
+| `leveling-arms` (hand draft) | 22.7s (+0%) | 26.1s (+0%) | 26.1s (+0%) | 27.6s (+1%) | 30.1s (+0%) | 0.0 | 0.9s |
+| `opt-arms-2h-raid-leveling-st` in blues (dungeon blues from the item database) | 20.5s (-9%) | 23.0s (-12%) | 23.9s (-8%) | 25.6s (-6%) | 27.9s (-7%) | 0.0 | 0.5s |
 
 Time per kill = fight + loot, travel, eating, drinking, healing and deaths; a build's cell shows its time and the difference to the optimizer build on the same mobs and seeds.
 
-- **Talents that matter** (time per kill lost when the talent is removed from `opt-arms-2h-raid-leveling-st` at level 60): Mortal Strike +16% (L30 +0%), Bloodthrill +4% (L30 +7%), Cruelty +4% (L30 +3%), Weaponmaster +4% (L30 +3%), Improved Overpower +4% (L30 +4%), Enrage +4% (L30 +4%).
+- **Talents that matter** (time per kill lost when the talent is removed from `opt-arms-2h-raid-leveling-st` at level 60): Mortal Strike +16%, Bloodthrill +4%, Cruelty +4%, Weaponmaster +4% (L30 +1%), Improved Overpower +4% (L30 +3%), Enrage +4%.
 - **Measure about zero** single-target at 60 (kept for other reasons or not simulated): Blood Craze, Deflection, Improved Tactical Mastery, Sweeping Strikes.
 - **Caster mobs:** 16% of pulls at level 30 are casters (creature-database share); 0.00 interrupts per kill at 60.
-- **Race** (hand draft vs every optimizer candidate, 2026-10-09, mean time per kill over levels 20/30/40/50/60): leveling-arms 25.7s, cand-arms-r3 27.3s, cand-arms-r4 27.3s, cand-arms-r2-ms40 27.4s, cand-arms-r7 27.8s, cand-arms-r2 27.8s, cand-arms-r1 28.2s, cand-arms-r6 28.8s — fastest: **leveling-arms**.
+- **Race** (hand draft vs every optimizer candidate, 2026-10-15, mean time per kill over levels 20/30/40/50/60): cand-arms-r3 27.3s, cand-arms-r4 27.3s, leveling-arms 27.4s, cand-arms-r2-ms40 27.4s, cand-arms-r7 27.8s, cand-arms-r2 27.8s, cand-arms-r1 28.2s, cand-arms-r6 28.8s — fastest: **cand-arms-r3**.
 - **Calibration:** the scorer's `arms-2h-raid` leveling values were fitted jointly to the hand draft and every candidate in [`fightlab/candidates/`](fightlab/candidates/) (1 round, converged: the optimizer build repeats).
-- **Other spec, same module:** `fury-dw-raid` with `opt-fury-dw-raid-leveling-st` ([report](fightlab/fury-dw-raid.md)): L30 20.4s (-7% vs `opt-arms-2h-raid-leveling-st`), L60 30.3s (+1% vs `opt-arms-2h-raid-leveling-st`). Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
-- **AoE grinding, 3 mobs per pull:** `arms-2h-raid` with `opt-arms-2h-raid-leveling-aoe` ([report](fightlab/arms-2h-raid-aoe.md)): L40 30.1s per mob in pulls of 3 (single-target build 23.7s), 5.8 deaths/100; L60 37.0s per mob in pulls of 3 (single-target build 30.0s), 12.6 deaths/100.
+- **Other spec, same module:** `fury-dw-raid` with `opt-fury-dw-raid-leveling-st` ([report](fightlab/fury-dw-raid.md)): L30 23.9s (-8% vs `opt-arms-2h-raid-leveling-st`), L60 30.3s (+1% vs `opt-arms-2h-raid-leveling-st`). Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
+- **AoE grinding, 3 mobs per pull:** `arms-2h-raid` with `opt-arms-2h-raid-leveling-aoe` ([report](fightlab/arms-2h-raid-aoe.md)): L40 37.7s per mob in pulls of 3 (single-target build 26.0s), 12.2 deaths/100; L60 51.3s per mob in pulls of 2 (single-target build 30.0s), 27.2 deaths/100.
 - **Not simulated:** runners, stance dancing (Whirlwind, Berserker Rage, Intercept and Pummel need Berserker Stance, which the Battle Stance playstyles never take), Hamstring kiting, Retaliation, weapon skill, Lingering Rage and Anger Management's slower rage loss out of combat (the engine decays rage between fights with no module hook), gear upgrades within a level bracket.
 - **Pipeline result:** the hand draft `leveling-arms` holds (no candidate beats it by more than the 2% margin). The player pages pick by their own races (the table at the top of this section).
 
@@ -89,3 +89,12 @@ Model findings (generated from the optimizer builds; scores are within each spec
 - **Solo / farming at 60, dual wield:** 13/38/0; biggest talents by score lost when removed: Enrage (3.6), Dual Wield Specialization (2.7), Improved Execute (2.6), Bloodthirst (2.6), Cruelty (1.5); the hand draft `leveling-arms` is 31/20/0.
 
 Beta hypotheses: every build's unverified claims are its `open_questions`, collected in [`_reference/launch-checklist.md`](../../../_reference/launch-checklist.md); level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).
+
+## Report index
+
+Reports under this folder that no other page links to (generated):
+
+- [optimizer/arms-2h-raid-leveling-aoe.md](optimizer/arms-2h-raid-leveling-aoe.md): warrior / forever / spec arms-2h-raid / profile leveling-aoe
+- [optimizer/arms-2h-raid-leveling-st.md](optimizer/arms-2h-raid-leveling-st.md): warrior / forever / spec arms-2h-raid / profile leveling-st
+- [optimizer/fury-dw-raid-leveling-st.md](optimizer/fury-dw-raid-leveling-st.md): warrior / forever / spec fury-dw-raid / profile leveling-st
+- [optimizer/fury-dw-raid-solo-60.md](optimizer/fury-dw-raid-solo-60.md): warrior / forever / spec fury-dw-raid / profile solo-60

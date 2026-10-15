@@ -7,7 +7,7 @@
  "drink_below": 0.15,
  "class": "paladin",
  "spec": "ret-dps",
- "build": "leveling-retribution",
+ "build": "retribution-open-leveling",
  "levels": [
   20,
   30,
@@ -15,7 +15,7 @@
   50,
   60
  ],
- "date": "2026-09-28",
+ "date": "2026-10-15",
  "fights": 600,
  "confirm": 3000,
  "changes": [
@@ -27,8 +27,8 @@
     "Consecration",
     true
    ],
-   "gain_seed1": 0.04764665513736399,
-   "gain_seed2": 0.04980838077451755
+   "gain_seed1": 0.10928190179058084,
+   "gain_seed2": 0.11865341977277877
   },
   {
    "round": 2,
@@ -38,40 +38,40 @@
     null,
     0.15
    ],
-   "gain_seed1": 0.006863260490219458,
-   "gain_seed2": 0.008141511935410795
+   "gain_seed1": 0.018974623008731428,
+   "gain_seed2": 0.009116108273995449
   }
  ],
- "weighted_before": 29.348036630687403,
- "weighted_after": 27.841052772813544,
+ "weighted_before": 31.760717506026417,
+ "weighted_after": 27.815830149038288,
  "per_level": {
   "20": {
-   "before": 21.247839639297368,
-   "after": 19.906726918271765,
+   "before": 21.995251622550615,
+   "after": 20.03434949639934,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 25.058413927118576,
-   "after": 23.185538503664997,
+   "before": 26.096124477362302,
+   "after": 23.181848761245046,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 29.70720144025005,
-   "after": 28.154238430961986,
+   "before": 32.042468603518,
+   "after": 28.380579768387268,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 30.208247155331794,
-   "after": 28.49112723375986,
+   "before": 32.90171851556636,
+   "after": 28.619881841117497,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 33.23662833602307,
-   "after": 32.06306603601419,
+   "before": 36.709501075239395,
+   "after": 31.680104904182553,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

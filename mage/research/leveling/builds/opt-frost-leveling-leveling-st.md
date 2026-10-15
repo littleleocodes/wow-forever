@@ -92,17 +92,17 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-le
 
 Single-target leveling fights against normal mobs of your level: pull at max range, the mob walks in at 7 yd/s (slowed by chills), swings every 2 s once in melee (pushing casts back), Frost Nova when it arrives, a 2-second step back, Ice Lance/Frostbolt into the freeze, Fire Blast and wand to finish without overkill. Between fights: 2 s loot, 6 s travel, Evocation when low, conjured water below 35% mana, food below 65% health; a death costs 90 s. Every hit, miss, crit, partial resist, chill, freeze, proc and pushback is rolled.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-27, on top of the priority below): never cast Fire Blast; never cast Cone of Cold; drink below 25% mana; Frostbolt only while the mob has more than 10% health. Together +5.5% time per kill saved for `leveling-frost` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-15, on top of the priority below): never cast Fire Blast; never cast Cone of Cold; drink below 15% mana. Together +5.5% time per kill saved for `frost-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/frost-leveling.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Ice Lance | 2.5 | 3.8 | 4.1 | 3.1 | 2.9 | 68% |
-| Frostbolt | 2.8 | 2.7 | 2.5 | 2.1 | 2.0 | 30% |
-| Wand | 0.4 | 1.0 | 1.1 | 0.8 | 0.7 | 1% |
+| Ice Lance | 2.4 | 3.6 | 3.9 | 2.9 | 2.8 | 67% |
+| Frostbolt | 2.9 | 2.9 | 2.7 | 2.2 | 2.1 | 31% |
+| Wand | 0.4 | 0.7 | 0.7 | 0.6 | 0.6 | 1% |
 | Frost Nova | 0.5 | 0.8 | 0.8 | 0.6 | 0.6 | 1% |
-| Counterspell | 0.0 | 0.2 | 0.1 | 0.1 | 0.1 | 0% |
+| Counterspell | 0.0 | 0.2 | 0.2 | 0.1 | 0.1 | 0% |
 
 ## Notes
 

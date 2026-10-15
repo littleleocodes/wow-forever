@@ -4,10 +4,10 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `smite-discipline-raid` | 31/17/3 | 350 | 382 | 579 | 579 | 619 |
-| sim preset: Smite | - | 346 | 382 | 575 | 575 | 615 |
-| sim preset: Smite 31/17/3 | - | 346 | 382 | 575 | 575 | 615 |
-| `smite-open-raid` | 21/23/7 | 335 | 365 | 578 | 578 | 601 |
+| `smite-discipline-raid` | 31/17/3 | 363 | 395 | 597 | 597 | 637 |
+| sim preset: Smite | - | 360 | 394 | 593 | 593 | 633 |
+| sim preset: Smite 31/17/3 | - | 360 | 394 | 593 | 593 | 633 |
+| `smite-open-raid` | 21/23/7 | 348 | 377 | 597 | 597 | 618 |
 
 - **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
 - **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
@@ -21,10 +21,10 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
-| `smite-discipline-raid` | 350 | -9% | +0% | +1% | +20% | +53% | 579 |
-| sim preset: Smite | 346 | -8% | +0% | +1% | +20% | +53% | 575 |
-| sim preset: Smite 31/17/3 | 346 | -8% | +0% | +1% | +20% | +53% | 575 |
-| `smite-open-raid` | 335 | -6% | +0% | +1% | +21% | +56% | 578 |
+| `smite-discipline-raid` | 363 | -10% | +0% | +1% | +19% | +53% | 597 |
+| sim preset: Smite | 360 | -9% | +0% | +1% | +20% | +53% | 593 |
+| sim preset: Smite 31/17/3 | 360 | -9% | +0% | +1% | +20% | +53% | 593 |
+| `smite-open-raid` | 348 | -6% | +0% | +1% | +20% | +57% | 597 |
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
 
@@ -34,10 +34,10 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
-| `smite-discipline-raid` | 344 | 333 | 350 | 291 | 249 |
-| sim preset: Smite | 343 | 332 | 346 | 288 | 247 |
-| sim preset: Smite 31/17/3 | 343 | 332 | 346 | 288 | 247 |
-| `smite-open-raid` | 327 | 321 | 334 | 309 | 266 |
+| `smite-discipline-raid` | 354 | 342 | 363 | 301 | 259 |
+| sim preset: Smite | 353 | 341 | 360 | 299 | 256 |
+| sim preset: Smite 31/17/3 | 353 | 341 | 360 | 299 | 256 |
+| `smite-open-raid` | 336 | 331 | 347 | 318 | 275 |
 
 Gear presets: raid `priest-dps-p0.p1opt.gear.json`, maximum `priest-dps-p0.p1opt.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

@@ -15,3 +15,18 @@ The community-standard WoW Classic Era builds, used as the *starting point* for 
 Classic Era community-standard builds. Druids raid as Restoration healers (Swiftmend build early, Nature's Grace/Improved Regrowth build late), Feral is a strong off-tank/dungeon tank and a powershifting cat, Balance is a one-per-raid Moonkin. Allocations validated against the Classic tree data.
 
 Source of truth: `builds.json` in this folder. Regenerate with `python _reference/data/validate_builds.py && python _reference/data/render_builds.py`.
+
+## Report index
+
+Reports under this folder that no other page links to (generated):
+
+- [optimizer/balance-dps-raid-dps.md](optimizer/balance-dps-raid-dps.md): druid / classic-era / spec balance-dps / profile raid-dps
+- [optimizer/feral-bear-tank-raid-tank.md](optimizer/feral-bear-tank-raid-tank.md): druid / classic-era / spec feral-bear-tank / profile raid-tank
+- [optimizer/feral-cat-dps-leveling-st.md](optimizer/feral-cat-dps-leveling-st.md): druid / classic-era / spec feral-cat-dps / profile leveling-st
+- [optimizer/feral-cat-dps-raid-dps.md](optimizer/feral-cat-dps-raid-dps.md): druid / classic-era / spec feral-cat-dps / profile raid-dps
+- [optimizer/resto-heal-raid-heal.md](optimizer/resto-heal-raid-heal.md): druid / classic-era / spec resto-heal / profile raid-heal
+- [raidsim/balance-dps-environments.md](raidsim/balance-dps-environments.md): DPS by environment — druid balance-dps (Classic Era)
+- [raidsim/balance-dps.md](raidsim/balance-dps.md): Raid sim — druid balance-dps (Classic Era)
+- [raidsim/feral-cat-dps-environments.md](raidsim/feral-cat-dps-environments.md): DPS by environment — druid feral-cat-dps (Classic Era)
+- [raidsim/feral-cat-dps.md](raidsim/feral-cat-dps.md): Raid sim — druid feral-cat-dps (Classic Era)
+- [respec-plan.md](respec-plan.md): Druid / classic-era: respec plan for `leveling-st`

@@ -67,12 +67,12 @@ The Daggers (split) (an Assassination/Combat hybrid) raid build the open talent 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) | ours: hand draft | 30/19/2 | 422 | +0.0% | 702 | -2.3% | 0 s |
-| 2 | [`assassination-ml-raid`](assassination-ml-raid.md) | ours: derived (ML search) | 30/19/2 | 410 | -2.7% | 707 | -1.6% | 0 s |
-| 3 | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) | ours: hand draft | 30/21/0 | 410 | -2.8% | 690 | -4.0% | 0 s |
-| 4 | **[`daggers-split-open-raid`](daggers-split-open-raid.md)** | ours: derived (open search) | 21/28/2 | 396 | -6.2% | 718 | +0.0% | 0 s |
-| 5 | *Mutilate* | community simulator | - | 386 | -8.5% | 672 | -6.5% | 0 s |
-| 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 374 | -11.3% | 654 | -8.9% | 0 s |
+| 1 | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) | ours: hand draft | 30/19/2 | 422 | +0.0% | 667 | -0.8% | 0 s |
+| 2 | [`assassination-ml-raid`](assassination-ml-raid.md) | ours: derived (ML search) | 30/19/2 | 410 | -2.7% | 672 | +0.0% | 0 s |
+| 3 | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) | ours: hand draft | 30/21/0 | 410 | -2.8% | 653 | -2.9% | 0 s |
+| 4 | **[`daggers-split-open-raid`](daggers-split-open-raid.md)** | ours: derived (open search) | 21/28/2 | 396 | -6.2% | 669 | -0.5% | 0 s |
+| 5 | *Mutilate* | community simulator | - | 386 | -8.5% | 629 | -6.4% | 0 s |
+| 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 374 | -11.3% | 611 | -9.1% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

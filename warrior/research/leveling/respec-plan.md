@@ -11,7 +11,7 @@ Talentless baseline: 90 h for levels 10-60 under these assumptions.
   - at level 60: **Fury**: Cruelty 5, Unbridled Wrath 5, Blood Craze 3, Piercing Howl 1, Booming Voice 1, Improved Execute 2, Enrage 5, Death Wish 1, Dual Wield Specialization 5, Raging Blows 1, Flurry 5, Bloodthirst 1, Improved Intercept 2, Improved Berserker Rage 1; **Arms**: Deflection 5, Improved Charge 2, Improved Rend 3, Deep Wounds 3
   - order: 10-14 Cruelty x5, 15-19 Unbridled Wrath x5, 20-22 Blood Craze x3, 23 Piercing Howl, 24 Booming Voice, 25-26 Improved Execute x2, 27-29 Enrage x3, 30 Death Wish, 31-34 Dual Wield Specialization x4, 35 Enrage, 36 Raging Blows, 37 Enrage, 38 Dual Wield Specialization, 39 Flurry, 40 Bloodthirst, 41-44 Flurry x4, 45-46 Improved Intercept x2, 47-51 Deflection x5, 52-53 Improved Charge x2, 54-56 Improved Rend x3, 57-59 Deep Wounds x3, 60 Improved Berserker Rage
 
-Total: **64.1 h** (28.8% faster than talentless), no respec.
+Total: **63.3 h** (29.7% faster than talentless), no respec.
 
 ## Best schedule if you stay in one spec model
 
@@ -35,22 +35,22 @@ Total: **66.8 h** (25.8% faster than talentless), 1 respec.
   - at level 60: **Fury**: Cruelty 5, Unbridled Wrath 5, Blood Craze 3, Piercing Howl 1, Booming Voice 1, Improved Execute 2, Enrage 5, Death Wish 1, Dual Wield Specialization 5, Raging Blows 1, Flurry 5, Bloodthirst 1, Improved Intercept 2, Improved Berserker Rage 1; **Arms**: Deflection 5, Improved Charge 2, Improved Rend 3, Deep Wounds 3
   - order: 10-14 Cruelty x5, 15-19 Unbridled Wrath x5, 20-22 Blood Craze x3, 23 Piercing Howl, 24 Booming Voice, 25-26 Improved Execute x2, 27-29 Enrage x3, 30 Death Wish, 31-34 Dual Wield Specialization x4, 35 Enrage, 36 Raging Blows, 37 Enrage, 38 Dual Wield Specialization, 39 Flurry, 40 Bloodthirst, 41-44 Flurry x4, 45-46 Improved Intercept x2, 47-51 Deflection x5, 52-53 Improved Charge x2, 54-56 Improved Rend x3, 57-59 Deep Wounds x3, 60 Improved Berserker Rage
 
-Total: **64.1 h** (28.8% faster than talentless), no respec.
+Total: **63.3 h** (29.7% faster than talentless), no respec.
 
 ## Never respec: best single plan
 
 | Plan | Hours 10-60 | vs. schedule |
 |---|---|---|
-| fury-dw-raid -> level-50 build (4/37/0) | 64.1 | +0.0 h |
-| fury-dw-raid -> level-40 build (0/31/0) | 64.1 | +0.0 h |
-| fury-dw-raid -> level-20 build (0/11/0) | 64.1 | +0.0 h |
-| fury-dw-raid -> level-30 build (0/21/0) | 64.1 | +0.0 h |
-| fury-dw-raid -> level-60 build (13/38/0) | 64.1 | +0.0 h |
-| arms-2h-raid -> level-40 build (31/0/0) | 66.8 | +2.7 h |
-| arms-2h-raid -> level-50 build (32/9/0) | 66.9 | +2.9 h |
-| arms-2h-raid -> level-60 build (31/20/0) | 67.0 | +2.9 h |
-| arms-2h-raid -> level-20 build (7/4/0) | 67.2 | +3.1 h |
-| arms-2h-raid -> level-30 build (0/21/0) | 67.4 | +3.3 h |
+| fury-dw-raid -> level-50 build (4/37/0) | 63.3 | +0.0 h |
+| fury-dw-raid -> level-40 build (0/31/0) | 63.3 | +0.0 h |
+| fury-dw-raid -> level-20 build (0/11/0) | 63.3 | +0.0 h |
+| fury-dw-raid -> level-30 build (0/21/0) | 63.3 | +0.0 h |
+| fury-dw-raid -> level-60 build (13/38/0) | 63.3 | +0.0 h |
+| arms-2h-raid -> level-40 build (31/0/0) | 66.8 | +3.6 h |
+| arms-2h-raid -> level-50 build (32/9/0) | 66.9 | +3.7 h |
+| arms-2h-raid -> level-60 build (31/20/0) | 67.0 | +3.7 h |
+| arms-2h-raid -> level-20 build (7/4/0) | 67.2 | +3.9 h |
+| arms-2h-raid -> level-30 build (0/21/0) | 67.4 | +4.2 h |
 
 ## Leveling score by level (fraction of time per kill saved)
 

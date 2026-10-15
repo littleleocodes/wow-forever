@@ -45,6 +45,8 @@ Arcane levels on **Arcane Missiles** from range and the Frost tree's freeze up c
 - Below 35% of the mob's health, stop starting **Arcane Missiles**; below 20%, stop **Frostbolt** too and finish with **Fire Blast**, an **Ice Lance** or the wand.
 - Against a caster mob, **Counterspell** it when it starts a cast, as every mage rotation in the fight lab does.
 
+*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

@@ -61,17 +61,16 @@ One point per level from 10, in this order:
 | 28-29 | Guardian Totems (Enhancement) | 2 |
 | 30 | Earth's Grasp (Enhancement) | 1 |
 | 31 | Shamanistic Focus (Enhancement) | 1 |
-| 32-34 | Elemental Alacrity (Elemental) | 3 |
-| 35-37 | Concussion (Elemental) | 3 |
-| 38 | Call of Thunder (Elemental) | 1 |
-| 39-40 | Eye of the Storm (Elemental) | 2 |
-| 41-43 | Lightning Overload (Elemental) | 3 |
-| 44 | Earthbound (Elemental) | 1 |
-| 45 | Eye of the Storm (Elemental) | 1 |
-| 46-50 | Elemental Fury (Elemental) | 5 |
-| 51 | Lava Burst (Elemental) | 1 |
-| 52-56 | Totemic Focus (Restoration) | 5 |
-| 57-59 | Mindfulness (Restoration) | 3 |
+| 32-36 | Totemic Focus (Restoration) | 5 |
+| 37-39 | Mindfulness (Restoration) | 3 |
+| 40-42 | Elemental Alacrity (Elemental) | 3 |
+| 43-45 | Concussion (Elemental) | 3 |
+| 46-48 | Eye of the Storm (Elemental) | 3 |
+| 49-51 | Lightning Overload (Elemental) | 3 |
+| 52 | Earthbound (Elemental) | 1 |
+| 53 | Call of Thunder (Elemental) | 1 |
+| 54-58 | Elemental Fury (Elemental) | 5 |
+| 59 | Lava Burst (Elemental) | 1 |
 | 60 | Anticipation (Enhancement) | 1 |
 
 ## The numbers
@@ -80,7 +79,7 @@ One point per level from 10, in this order:
 |---|---|
 | 20 | 28 |
 | 30 | 39 |
-| 40 | 39 |
+| 40 | 38 |
 | 50 | 42 |
 | 60 | 41 |
 

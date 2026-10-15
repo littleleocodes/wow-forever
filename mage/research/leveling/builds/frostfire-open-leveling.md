@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Frostfire (a Fire/Frost hybrid) leveling build the open leveling search found on 2026-10-09: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the fire-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (fire-leveling). +12.5% faster per kill than fire-leveling, the fastest of our leveling builds in that race.
+The Frostfire (a Fire/Frost hybrid) leveling build the open leveling search found on 2026-10-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the fire-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (fire-leveling). +11.4% faster per kill than fire-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -63,19 +63,20 @@ The Frostfire (a Fire/Frost hybrid) leveling build the open leveling search foun
 | 22-24 | Frost | Ice Shards | 3 | 0/0/15 |
 | 25-27 | Frost | Shatter | 3 | 0/0/18 |
 | 28-29 | Frost | Ice Shards | 2 | 0/0/20 |
-| 30-31 | Frost | Fingers of Frost | 2 | 0/0/22 |
-| 32-34 | Frost | Frost Channeling | 3 | 0/0/25 |
-| 35-39 | Fire | Improved Fireball | 5 | 0/5/25 |
-| 40-44 | Fire | Ignite | 5 | 0/10/25 |
-| 45 | Frost | Winter's Chill | 1 | 0/10/26 |
-| 46-47 | Fire | Burning Soul | 2 | 0/12/26 |
-| 48 | Fire | Pyroblast | 1 | 0/13/26 |
-| 49-50 | Fire | Incineration | 2 | 0/15/26 |
-| 51-53 | Fire | Master of Elements | 3 | 0/18/26 |
-| 54 | Fire | Incineration | 1 | 0/19/26 |
-| 55 | Fire | Improved Fire Ward | 1 | 0/20/26 |
-| 56 | Fire | Blast Wave | 1 | 0/21/26 |
-| 57-59 | Fire | Critical Mass | 3 | 0/24/26 |
+| 30 | Frost | Fingers of Frost | 1 | 0/0/21 |
+| 31-35 | Fire | Improved Fireball | 5 | 0/5/21 |
+| 36 | Frost | Fingers of Frost | 1 | 0/5/22 |
+| 37-41 | Fire | Ignite | 5 | 0/10/22 |
+| 42-43 | Fire | Burning Soul | 2 | 0/12/22 |
+| 44 | Fire | Pyroblast | 1 | 0/13/22 |
+| 45-46 | Fire | Incineration | 2 | 0/15/22 |
+| 47-49 | Fire | Master of Elements | 3 | 0/18/22 |
+| 50 | Fire | Incineration | 1 | 0/19/22 |
+| 51 | Fire | Improved Fire Ward | 1 | 0/20/22 |
+| 52 | Fire | Blast Wave | 1 | 0/21/22 |
+| 53-55 | Fire | Critical Mass | 3 | 0/24/22 |
+| 56-58 | Frost | Frost Channeling | 3 | 0/24/25 |
+| 59 | Frost | Winter's Chill | 1 | 0/24/26 |
 | 60 | Arcane | Wand Specialization | 1 | 1/24/26 |
 
 ## Core talents (priority order)
@@ -95,7 +96,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 32.36; fire-leveling 36.41, opt-fire-leveling-leveling-st 37.39. The search simulated 76,919 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 32.69; fire-leveling 36.41, opt-fire-leveling-leveling-st 37.39. The search simulated 76,919 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)

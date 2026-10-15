@@ -47,7 +47,7 @@ Classic Era reference builds: [leveling-combat-swords](../talents/classic-baseli
 
 | Spec | Page build | Rotation | Seconds per kill |
 |---|---|---|---|
-| [Combat-Subtlety](../../leveling/combat-subtlety.md) ✅ | `combat-subtlety-open-leveling` | subtlety-leveling | 23.7 |
+| [Combat-Subtlety](../../leveling/combat-subtlety.md) ✅ | `combat-subtlety-open-leveling` | subtlety-leveling | 23.6 |
 | [Combat](../../leveling/combat.md) | `combat-leveling` | combat-swords-raid | 25.7 |
 | [Daggers (split)](../../leveling/daggers-split.md) | `daggers-split-open-leveling` | combat-daggers-raid | 25.9 |
 | [Subtlety](../../leveling/subtlety.md) | `subtlety-leveling` | subtlety-leveling | 26.5 |
@@ -68,10 +68,10 @@ Time per kill = fight + loot, travel, eating, drinking, healing and deaths; a bu
 - **Talents that matter** (time per kill lost when the talent is removed from `opt-combat-swords-raid-leveling-st` at level 60): Seal Fate +5%, Malice +4% (L30 +2%), Improved Sinister Strike +3% (L30 +3%), Improved Eviscerate +3% (L30 +1%), Remorseless Attacks +3% (L30 +2%), Improved Poisons +3%.
 - **Measure about zero** single-target at 60 (kept for other reasons or not simulated): Improved Gouge, Lethality.
 - **Caster mobs:** 16% of pulls at level 30 are casters (creature-database share); 0.00 interrupts per kill at 60.
-- **Race** (hand draft vs every optimizer candidate, 2026-10-09, mean time per kill over levels 20/30/40/50/60): cand-combat-r9 25.5s, cand-combat-r2 25.6s, cand-combat-r8 25.6s, cand-combat-hand-2026-09-26 25.8s, leveling-combat-swords 26.0s, cand-combat-r6 26.1s, cand-combat-r7 26.1s, cand-combat-r4 26.2s, cand-combat-r5 26.2s, cand-combat-r3 26.4s, cand-combat-r1 26.5s — fastest: **cand-combat-r9**.
+- **Race** (hand draft vs every optimizer candidate, 2026-10-15, mean time per kill over levels 20/30/40/50/60): cand-combat-r9 25.5s, cand-combat-r2 25.6s, cand-combat-r8 25.6s, cand-combat-hand-2026-09-26 25.8s, leveling-combat-swords 26.0s, cand-combat-r6 26.1s, cand-combat-r7 26.1s, cand-combat-r4 26.2s, cand-combat-r5 26.2s, cand-combat-r3 26.4s, cand-combat-r1 26.5s — fastest: **cand-combat-r9**.
 - **Calibration:** the scorer's `combat-swords-raid` leveling values were fitted jointly to the hand draft and every candidate in [`fightlab/candidates/`](fightlab/candidates/) (1 round, converged: the optimizer build repeats).
 - **Other spec, same module:** `combat-daggers-raid` with `opt-combat-daggers-raid-leveling-st` ([report](fightlab/combat-daggers-raid.md)): L30 23.8s (+9% vs `opt-combat-swords-raid-leveling-st`), L60 32.0s (+17% vs `opt-combat-swords-raid-leveling-st`). Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
-- **Two-mob pulls with Blade Flurry:** `combat-swords-raid` with `opt-combat-swords-raid-leveling-aoe` ([report](fightlab/combat-swords-raid-aoe.md)): L40 27.8s per mob in pulls of 2 (single-target build 26.0s), 1.2 deaths/100; L60 25.6s per mob in pulls of 2 (single-target build 27.3s), 2.1 deaths/100.
+- **Two-mob pulls with Blade Flurry:** `combat-swords-raid` with `opt-combat-swords-raid-leveling-aoe` ([report](fightlab/combat-swords-raid-aoe.md)): L40 26.8s per mob in pulls of 2 (single-target build 26.0s), 1.2 deaths/100; L60 24.7s per mob in pulls of 2 (single-target build 27.3s), 2.1 deaths/100.
 - **Not simulated:** runners, adds, the stealth approach time, Expose Armor, Rupture (Eviscerate is used), Garrote's attack power bonus (its tooltip gives no number), Gouge-and-bandage, Vanish, Sprint, weapon skill, maces (Hack and Slash's armor share), gear upgrades within a level bracket.
 - **Pipeline result:** the hand draft `leveling-combat-swords` holds (no candidate beats it by more than the 2% margin). The player pages pick by their own races (the table at the top of this section).
 
@@ -93,3 +93,12 @@ Model findings (generated from the optimizer builds; scores are within each spec
 - **Solo / farming at 60:** 33/16/2; biggest talents by score lost when removed: Seal Fate (3.4), Riposte (3.0), Cold Blood (2.4), Malice (2.0), Improved Sinister Strike (1.9); the hand draft `leveling-combat-swords` is 31/20/0.
 
 Beta hypotheses: every build's unverified claims are its `open_questions`, collected in [`_reference/launch-checklist.md`](../../../_reference/launch-checklist.md); level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).
+
+## Report index
+
+Reports under this folder that no other page links to (generated):
+
+- [optimizer/combat-daggers-raid-leveling-st.md](optimizer/combat-daggers-raid-leveling-st.md): rogue / forever / spec combat-daggers-raid / profile leveling-st
+- [optimizer/combat-swords-raid-leveling-aoe.md](optimizer/combat-swords-raid-leveling-aoe.md): rogue / forever / spec combat-swords-raid / profile leveling-aoe
+- [optimizer/combat-swords-raid-leveling-st.md](optimizer/combat-swords-raid-leveling-st.md): rogue / forever / spec combat-swords-raid / profile leveling-st
+- [optimizer/combat-swords-raid-solo-60.md](optimizer/combat-swords-raid-solo-60.md): rogue / forever / spec combat-swords-raid / profile solo-60

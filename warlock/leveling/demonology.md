@@ -49,6 +49,8 @@ Demonology levels like Affliction with a stronger Voidwalker: the same dots from
 - If the Voidwalker dies, finish the mob with dots, **Death Coil** and the wand, and summon a new one before the next pull: without a demon out you also lose **Demonic Knowledge**, **Soul Link** and **Master Demonologist**.
 - Finish a nearly dead mob with the wand or **Searing Pain**; start no new dot on it.
 
+*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents while leveling
 
 One point per level from 10, in this order:

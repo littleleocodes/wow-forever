@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancement-dps` and profile `leveling-aoe`: score +54.6% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancement-dps` and profile `leveling-aoe`: score +48.5% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -81,14 +81,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 
 ## Core talents (priority order)
 
-1. **Stormstrike** — Removing it costs 14.6 points of score in this model.
-2. **Thundering Strikes** — Removing it costs 3.3 points of score in this model.
-3. **Mental Dexterity** — Removing it costs 3.0 points of score in this model.
-4. **Anticipation** — Removing it costs 2.8 points of score in this model.
-5. **Flurry** — Removing it costs 2.5 points of score in this model.
-6. **Spirit Weapons** — Removing it costs 2.0 points of score in this model.
-7. **Rage of the Farseer** — Removing it costs 1.7 points of score in this model.
-8. **Mental Quickness** — Removing it costs 1.1 points of score in this model.
+1. **Stormstrike** — Removing it costs 11.4 points of score in this model.
+2. **Thundering Strikes** — Removing it costs 3.6 points of score in this model.
+3. **Call of Flame** — Removing it costs 3.1 points of score in this model.
+4. **Mental Dexterity** — Removing it costs 2.5 points of score in this model.
+5. **Flurry** — Removing it costs 2.4 points of score in this model.
+6. **Rage of the Farseer** — Removing it costs 2.2 points of score in this model.
+7. **Improved Fire Nova** — Removing it costs 1.7 points of score in this model.
+8. **Mental Quickness** — Removing it costs 1.6 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
@@ -100,22 +100,22 @@ What this build casts per kill ([report](../fightlab/enhancement-dps-aoe.md), al
 
 | Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|
-| Melee | 10.9 | 7.4 | 7.1 | 7.7 | 41% |
-| Windfury | 3.7 | 3.1 | 3.2 | 3.5 | 26% |
-| Stormstrike | 0.0 | 1.7 | 1.9 | 2.2 | 12% |
-| Magma Totem | 3.2 | 1.1 | 1.3 | 1.4 | 0% |
-| Chain Lightning | 0.0 | 0.4 | 0.5 | 0.5 | 4% |
-| Searing Totem | 0.6 | 0.4 | 0.4 | 0.5 | 8% |
-| Lightning Shield | 0.6 | 0.4 | 0.4 | 0.5 | 10% |
-| Fire Nova | 0.8 | 0.4 | 0.4 | 0.5 | 0% |
-| Stoneclaw Totem | 0.2 | 0.3 | 0.4 | 0.5 | 0% |
-| Flame Shock | 0.7 | 0.0 | 0.1 | 0.0 | 0% |
-| Lightning Bolt | 1.9 | 0.0 | 0.0 | 0.0 | 0% |
+| Melee | 8.1 | 8.7 | 9.3 | 9.1 | 27% |
+| Windfury | 3.5 | 3.5 | 3.6 | 3.9 | 16% |
+| Stormstrike | 2.2 | 1.9 | 1.6 | 2.4 | 7% |
+| Flame Shock | 1.7 | 0.9 | 1.1 | 1.0 | 6% |
+| Chain Lightning | 0.0 | 1.0 | 1.2 | 0.9 | 5% |
+| Fire Nova | 0.9 | 0.5 | 0.6 | 0.6 | 17% |
+| Lightning Shield | 0.4 | 0.5 | 0.6 | 0.6 | 6% |
+| Magma Totem | 0.5 | 0.5 | 0.6 | 0.6 | 15% |
+| Stoneclaw Totem | 0.0 | 0.1 | 0.3 | 0.1 | 0% |
+| Lightning Bolt | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Lesser Healing Wave | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Earth Shock | 0.1 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes
 
+- Allocation and order taken from cand-aoe-r6 on 2026-10-15: an earlier optimizer round beat the last export in the fight lab (65.5s vs 69.1s per kill, level-weighted).
 - Report: shaman/research/talents/forever/optimizer/enhancement-dps-leveling-aoe.md
 
 ## Open questions (verify in the live game)

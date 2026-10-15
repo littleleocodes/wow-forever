@@ -8,7 +8,7 @@ Every legal 51-point build, no tree rule, searched in each leveling rotation of 
 |---|---|---|---|---|---|
 | combat-daggers-raid | Assassination | [22/16/13](https://talentsforever.com/rogue/60/0253201020151-32303301001-30230023-6) | Hybrid Assassination/Combat | 25.85 | +3.1% faster than opt-combat-swords-raid-leveling-st |
 | combat-swords-raid | Combat | [21/17/13](https://talentsforever.com/rogue/60/0253201020051-32403301001-03230203-6) | Hybrid Assassination/Combat | 24.59 | +1.5% faster than opt-combat-swords-raid-leveling-aoe |
-| subtlety-leveling | Subtlety | [13/17/21](https://talentsforever.com/rogue/60/0253201-305033010011-3023003311013001-6) | Hybrid Combat/Subtlety | 23.70 | +8.9% faster than subtlety-leveling |
+| subtlety-leveling | Subtlety | [13/17/21](https://talentsforever.com/rogue/60/0253201-305033010011-3023003311013001-6) | Hybrid Combat/Subtlety | 23.58 | +9.4% faster than subtlety-leveling |
 
 ## combat-daggers-raid
 
@@ -110,7 +110,7 @@ Build (2026-10-10, open_builds.py): the combat-daggers-raid rotation is Daggers 
 | Camouflage | 3 | +0.00 | +0.00 |
 | Improved Distract | 1 | +0.00 | +0.00 |
 
-Race at levels 20-60 (seconds per kill): open winner 23.70, finalist 13/17/21 (own tree first order, before the order polish) 23.81, finalist 13/17/21 (stats model order) 24.73, finalist 13/17/21 (own tree last order) 24.92, subtlety-leveling 25.80.
+Race at levels 20-60 (seconds per kill): open winner 23.58, finalist 13/17/21 (own tree first order) 23.69, finalist 13/17/21 (own tree first order, before the order polish) 23.81, finalist 13/17/21 (stats model order) 24.61, finalist 13/17/21 (own tree last order) 24.79, subtlety-leveling 25.80.
 
 **Synergy certificate** (2026-10-10, fightlab/fl_synergy.py): 42 relevant talents, 24 the winner lacks; 722 pairs measured around 13/17/21 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Dirty Deeds + Remorseless Attacks +3.7% (build -2.0%), Hack and Slash + Remorseless Attacks +2.4% (build -0.4%), Cold Blood + Aggression +2.1% (build +3.3%), Adrenaline Rush + Serrated Blades +1.9% (build -0.9%), Cold Blood + Flawless Execution +1.8% (build -3.4%), Vigor + Seal Fate +1.6% (build +8.7%). No pair build within 1% of the winner. The certificate confirms the winner.
 

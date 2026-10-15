@@ -44,17 +44,17 @@ Our tuned rotation `ret-dps.apl.json` (the simulator's `default.apl.json` with t
 The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring change what mana is worth), top priority first:
 
 1. cast Hammer of Wrath
-2. if mana % ≥ 15% and time to the next auto attack < 0.4s and mana % < 50%: cast Seal of Righteousness
+2. if mana % ≥ 15% and time to the next auto attack < 0.4s and mana % < 50%: cast Seal of Righteousness (rank 7)
 3. if mana % ≥ 15% and time to the next auto attack < 0.4s: cast Seal of Righteousness
 4. if Seal of Righteousness is up: cast Judgement
 5. if mana % ≥ 25%: cast Consecration
 6. cast Holy Strike
 7. cast Holy Shock
 8. use every other cooldown when ready
-9. if mana % ≥ 15% and Seal of Righteousness is up and mana % < 30%: cast Seal of Command
-10. if mana % ≥ 15% and Seal of Righteousness is up: cast Seal of Command
+9. if mana % ≥ 15% and Seal of Righteousness is up and mana % < 30%: cast Seal of Command (rank 2)
+10. if mana % ≥ 15% and Seal of Righteousness is up: cast Seal of Command (rank 4)
 11. if Judgement can be cast and time left in the fight ≥ 20s: cast Judgement
-12. cast Consecration
+12. cast Consecration (rank 1)
 13. if time left on Seal of Righteousness ≤ 1s: cast Seal of Righteousness
 
 The tables below are the training-dummy rotation, filtered per build:
@@ -73,7 +73,7 @@ Before the pull: at -1.5s: cast Seal of Command.
 | 6 | cast Hammer of Wrath | 2.0 | 1.8 | 1.7 | 1.3 |
 | 7 | cast Holy Strike | 6.0 | 6.0 | 5.7 | 5.7 |
 | 8 | cast Consecration | 6.1 | 5.9 | 5.7 | 6.0 |
-| 9 | cast Consecration | 0.8 | 0.8 | 0.8 | 1.0 |
+| 9 | cast Consecration (rank 1) | 0.8 | 0.8 | 0.8 | 1.0 |
 
 Lines of the simulator's rotation these builds never cast: cast Holy Shock (its condition never held in these fights); cast Divine Favor (needs the Divine Favor talent).
 
@@ -105,7 +105,7 @@ Before the pull: at -1.5s: cast Seal of Command.
 | 6 | cast Hammer of Wrath | 2.0 | 1.9 |
 | 7 | cast Holy Strike | 6.0 | 6.0 |
 | 8 | cast Consecration | 6.3 | 6.1 |
-| 9 | cast Consecration | 0.6 | 0.6 |
+| 9 | cast Consecration (rank 1) | 0.6 | 0.6 |
 | 10 | cast Divine Favor | 0.7 | 0.7 |
 
 Lines of the simulator's rotation these builds never cast: cast Holy Shock (its condition never held in these fights).

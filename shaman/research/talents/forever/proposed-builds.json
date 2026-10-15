@@ -497,78 +497,6 @@
       ]
     },
     {
-      "id": "opt-elemental-dps-leveling-st",
-      "name": "Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (leveling-st)",
-      "role": "dps",
-      "content": "leveling",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `elemental-dps` and profile `leveling-st`: score +37.9% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Elemental": [
-          ["Convection", 5],
-          ["Concussion", 5],
-          ["Call of Flame", 3],
-          ["Elemental Focus", 1],
-          ["Elemental Alacrity", 3],
-          ["Call of Thunder", 1],
-          ["Eye of the Storm", 3],
-          ["Lightning Overload", 3],
-          ["Earthbound", 1],
-          ["Elemental Fury", 5],
-          ["Lava Burst", 1]
-        ],
-        "Enhancement": [
-          ["Thundering Strikes", 5],
-          ["Earth's Grasp", 1],
-          ["Improved Ghost Wolf", 2],
-          ["Guardian Totems", 2],
-          ["Shamanistic Focus", 1],
-          ["Anticipation", 1]
-        ],
-        "Restoration": [
-          ["Totemic Focus", 5],
-          ["Mindfulness", 3]
-        ]
-      },
-      "core": [
-        {"talent": "Elemental Fury", "why": "Removing it costs 6.2 points of score in this model."},
-        {"talent": "Thundering Strikes", "why": "Removing it costs 3.3 points of score in this model."},
-        {"talent": "Improved Ghost Wolf", "why": "Removing it costs 3.0 points of score in this model."},
-        {"talent": "Shamanistic Focus", "why": "Removing it costs 2.3 points of score in this model."},
-        {"talent": "Mindfulness", "why": "Removing it costs 2.3 points of score in this model."},
-        {"talent": "Convection", "why": "Removing it costs 2.2 points of score in this model."},
-        {"talent": "Lava Burst", "why": "Removing it costs 2.1 points of score in this model."},
-        {"talent": "Elemental Focus", "why": "Removing it costs 1.8 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: shaman/talents/forever/optimizer/elemental-dps-leveling-st.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/shaman"],
-      "order": [
-        {"levels": "10-14", "tree": "Elemental", "talent": "Convection", "points": 5},
-        {"levels": "15-17", "tree": "Elemental", "talent": "Call of Flame", "points": 3},
-        {"levels": "18-19", "tree": "Elemental", "talent": "Concussion", "points": 2},
-        {"levels": "20", "tree": "Elemental", "talent": "Elemental Focus", "points": 1},
-        {"levels": "21-25", "tree": "Enhancement", "talent": "Thundering Strikes", "points": 5},
-        {"levels": "26-27", "tree": "Enhancement", "talent": "Improved Ghost Wolf", "points": 2},
-        {"levels": "28-29", "tree": "Enhancement", "talent": "Guardian Totems", "points": 2},
-        {"levels": "30", "tree": "Enhancement", "talent": "Earth's Grasp", "points": 1},
-        {"levels": "31", "tree": "Enhancement", "talent": "Shamanistic Focus", "points": 1},
-        {"levels": "32-34", "tree": "Elemental", "talent": "Elemental Alacrity", "points": 3},
-        {"levels": "35-37", "tree": "Elemental", "talent": "Concussion", "points": 3},
-        {"levels": "38", "tree": "Elemental", "talent": "Call of Thunder", "points": 1},
-        {"levels": "39-40", "tree": "Elemental", "talent": "Eye of the Storm", "points": 2},
-        {"levels": "41-43", "tree": "Elemental", "talent": "Lightning Overload", "points": 3},
-        {"levels": "44", "tree": "Elemental", "talent": "Earthbound", "points": 1},
-        {"levels": "45", "tree": "Elemental", "talent": "Eye of the Storm", "points": 1},
-        {"levels": "46-50", "tree": "Elemental", "talent": "Elemental Fury", "points": 5},
-        {"levels": "51", "tree": "Elemental", "talent": "Lava Burst", "points": 1},
-        {"levels": "52-56", "tree": "Restoration", "talent": "Totemic Focus", "points": 5},
-        {"levels": "57-59", "tree": "Restoration", "talent": "Mindfulness", "points": 3},
-        {"levels": "60", "tree": "Enhancement", "talent": "Anticipation", "points": 1}
-      ]
-    },
-    {
       "id": "elemental-raid",
       "name": "Elemental — Raid (generated)",
       "role": "dps",
@@ -610,7 +538,7 @@
         {"talent": "Call of Flame", "why": "The scorer's value in this build: +8.2% of its score (model elemental-dps)."}
       ],
       "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a raid build; model elemental-dps, profile raid-dps.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Elemental Devastation -> Eye of the Storm (interrupt); Elemental Warding -> Eye of the Storm (interrupt); Elemental Warding -> Eye of the Storm (interrupt); Elemental Warding -> Elemental Reach (range). Net +0.00% on a third seed."],
+      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a raid build; model elemental-dps, profile raid-dps.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Elemental Devastation -> Eye of the Storm (interrupt); Elemental Warding -> Eye of the Storm (interrupt); Elemental Warding -> Eye of the Storm (interrupt); Elemental Warding -> Elemental Reach (range). Net +0.00% on a third seed.", "2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Elemental: its full-raid winner is +0.02% against it, under the 0.5% bar for a new build."],
       "open_questions": ["A generated Elemental build: check it against the community's Elemental builds at launch."],
       "sources": ["https://talentsforever.com/shaman"]
     },
@@ -845,7 +773,7 @@
       },
       "core": [],
       "flex": [],
-      "notes": ["Against the best hand draft enhancement-raid-dps in a full raid, same gear and fights (100,000, one seed): +7.9% (over the 2% bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Search result (full raid): 19/32/0 at 801.3 ± 0.12 DPS over 200,000 fights; runner-up 19/32/0 (+0.05%; the winner takes Ancestral Knowledge 5, Elemental Weapons 2; the runner-up Ancestral Knowledge 4, Elemental Weapons 3); 7,070 builds simulated; certificate: none of its 322 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 19/32/0 at 781.7 DPS in a full raid (other talents: _reference/dps-rankings.md).", "Alone on the training dummy (only your own buffs) the search's best is 20/31/0 at 416.9 DPS."],
+      "notes": ["Against the best hand draft enhancement-raid-dps in a full raid, same gear and fights (100,000, one seed): +7.9% (over the 2% bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Search result (full raid): 19/32/0 at 801.3 ± 0.12 DPS over 200,000 fights; runner-up 19/32/0 (+0.05%; the winner takes Ancestral Knowledge 5, Elemental Weapons 2; the runner-up Ancestral Knowledge 4, Elemental Weapons 3); 7,070 builds simulated; certificate: none of its 322 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 19/32/0 at 781.7 DPS in a full raid (other talents: _reference/dps-rankings.md).", "Alone on the training dummy (only your own buffs) the search's best is 20/31/0 at 416.9 DPS.", "2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Enhancement: its full-raid winner is +0.00% against it, under the 0.5% bar for a new build."],
       "open_questions": ["A machine-searched Enhancement build: check it against the community's Enhancement builds at launch."],
       "sources": ["https://github.com/ElliotWood/Forever"],
       "replaces": "enhancement-raid-dps"
@@ -1309,7 +1237,7 @@
       "role": "dps",
       "content": "leveling",
       "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancement-dps` and profile `leveling-aoe`: score +54.6% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancement-dps` and profile `leveling-aoe`: score +48.5% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Elemental": [
           ["Concussion", 5],
@@ -1338,17 +1266,17 @@
         "Restoration": []
       },
       "core": [
-        {"talent": "Stormstrike", "why": "Removing it costs 14.6 points of score in this model."},
-        {"talent": "Thundering Strikes", "why": "Removing it costs 3.3 points of score in this model."},
-        {"talent": "Mental Dexterity", "why": "Removing it costs 3.0 points of score in this model."},
-        {"talent": "Anticipation", "why": "Removing it costs 2.8 points of score in this model."},
-        {"talent": "Flurry", "why": "Removing it costs 2.5 points of score in this model."},
-        {"talent": "Spirit Weapons", "why": "Removing it costs 2.0 points of score in this model."},
-        {"talent": "Rage of the Farseer", "why": "Removing it costs 1.7 points of score in this model."},
-        {"talent": "Mental Quickness", "why": "Removing it costs 1.1 points of score in this model."}
+        {"talent": "Stormstrike", "why": "Removing it costs 11.4 points of score in this model."},
+        {"talent": "Thundering Strikes", "why": "Removing it costs 3.6 points of score in this model."},
+        {"talent": "Call of Flame", "why": "Removing it costs 3.1 points of score in this model."},
+        {"talent": "Mental Dexterity", "why": "Removing it costs 2.5 points of score in this model."},
+        {"talent": "Flurry", "why": "Removing it costs 2.4 points of score in this model."},
+        {"talent": "Rage of the Farseer", "why": "Removing it costs 2.2 points of score in this model."},
+        {"talent": "Improved Fire Nova", "why": "Removing it costs 1.7 points of score in this model."},
+        {"talent": "Mental Quickness", "why": "Removing it costs 1.6 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: shaman/research/talents/forever/optimizer/enhancement-dps-leveling-aoe.md"],
+      "notes": ["Allocation and order taken from cand-aoe-r6 on 2026-10-15: an earlier optimizer round beat the last export in the fight lab (65.5s vs 69.1s per kill, level-weighted).", "Report: shaman/research/talents/forever/optimizer/enhancement-dps-leveling-aoe.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/shaman"],
       "order": [
@@ -1377,6 +1305,77 @@
         {"levels": "55", "tree": "Elemental", "talent": "Elemental Focus", "points": 1},
         {"levels": "56-57", "tree": "Elemental", "talent": "Improved Fire Nova", "points": 2},
         {"levels": "58-60", "tree": "Elemental", "talent": "Elemental Warding", "points": 3}
+      ]
+    },
+    {
+      "id": "opt-elemental-dps-leveling-st",
+      "name": "Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (leveling-st)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `elemental-dps` and profile `leveling-st`: score +33.5% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Elemental": [
+          ["Convection", 5],
+          ["Concussion", 5],
+          ["Call of Flame", 3],
+          ["Elemental Focus", 1],
+          ["Elemental Alacrity", 3],
+          ["Eye of the Storm", 3],
+          ["Call of Thunder", 1],
+          ["Lightning Overload", 3],
+          ["Earthbound", 1],
+          ["Elemental Fury", 5],
+          ["Lava Burst", 1]
+        ],
+        "Enhancement": [
+          ["Thundering Strikes", 5],
+          ["Earth's Grasp", 1],
+          ["Guardian Totems", 2],
+          ["Improved Ghost Wolf", 2],
+          ["Shamanistic Focus", 1],
+          ["Anticipation", 1]
+        ],
+        "Restoration": [
+          ["Totemic Focus", 5],
+          ["Mindfulness", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Mindfulness", "why": "Removing it costs 3.0 points of score in this model."},
+        {"talent": "Improved Ghost Wolf", "why": "Removing it costs 3.0 points of score in this model."},
+        {"talent": "Lava Burst", "why": "Removing it costs 2.6 points of score in this model."},
+        {"talent": "Shamanistic Focus", "why": "Removing it costs 1.9 points of score in this model."},
+        {"talent": "Thundering Strikes", "why": "Removing it costs 1.9 points of score in this model."},
+        {"talent": "Convection", "why": "Removing it costs 1.8 points of score in this model."},
+        {"talent": "Elemental Alacrity", "why": "Removing it costs 1.8 points of score in this model."},
+        {"talent": "Call of Flame", "why": "Removing it costs 1.8 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: shaman/research/talents/forever/optimizer/elemental-dps-leveling-st.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/shaman"],
+      "order": [
+        {"levels": "10-14", "tree": "Elemental", "talent": "Convection", "points": 5},
+        {"levels": "15-17", "tree": "Elemental", "talent": "Call of Flame", "points": 3},
+        {"levels": "18-19", "tree": "Elemental", "talent": "Concussion", "points": 2},
+        {"levels": "20", "tree": "Elemental", "talent": "Elemental Focus", "points": 1},
+        {"levels": "21-25", "tree": "Enhancement", "talent": "Thundering Strikes", "points": 5},
+        {"levels": "26-27", "tree": "Enhancement", "talent": "Improved Ghost Wolf", "points": 2},
+        {"levels": "28-29", "tree": "Enhancement", "talent": "Guardian Totems", "points": 2},
+        {"levels": "30", "tree": "Enhancement", "talent": "Earth's Grasp", "points": 1},
+        {"levels": "31", "tree": "Enhancement", "talent": "Shamanistic Focus", "points": 1},
+        {"levels": "32-36", "tree": "Restoration", "talent": "Totemic Focus", "points": 5},
+        {"levels": "37-39", "tree": "Restoration", "talent": "Mindfulness", "points": 3},
+        {"levels": "40-42", "tree": "Elemental", "talent": "Elemental Alacrity", "points": 3},
+        {"levels": "43-45", "tree": "Elemental", "talent": "Concussion", "points": 3},
+        {"levels": "46-48", "tree": "Elemental", "talent": "Eye of the Storm", "points": 3},
+        {"levels": "49-51", "tree": "Elemental", "talent": "Lightning Overload", "points": 3},
+        {"levels": "52", "tree": "Elemental", "talent": "Earthbound", "points": 1},
+        {"levels": "53", "tree": "Elemental", "talent": "Call of Thunder", "points": 1},
+        {"levels": "54-58", "tree": "Elemental", "talent": "Elemental Fury", "points": 5},
+        {"levels": "59", "tree": "Elemental", "talent": "Lava Burst", "points": 1},
+        {"levels": "60", "tree": "Enhancement", "talent": "Anticipation", "points": 1}
       ]
     }
   ]

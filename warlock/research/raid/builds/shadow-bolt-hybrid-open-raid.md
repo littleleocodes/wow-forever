@@ -134,6 +134,7 @@ Damage by ability:
 - Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Imp, Unholy Power, Improved Voidwalker.
 - Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements.
 - 2026-10-12 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Imp -> Demonic Embrace (survival); Improved Imp -> Demonic Embrace (survival); Improved Voidwalker -> Demonic Embrace (survival); Unholy Power -> Demonic Embrace (survival); Unholy Power -> Demonic Embrace (survival); Unholy Power -> Demonic Aegis (survival); Unholy Power -> Demonic Aegis (survival). Net -0.04% on a third seed.
+- 2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Hybrid Affliction/Destruction: its full-raid winner is +0.02% against it, under the 0.5% bar for a new build.
 
 ## Open questions (verify in the live game)
 

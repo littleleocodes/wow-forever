@@ -119,6 +119,7 @@ Damage by ability:
 - Beta client 1.60.1.69893 removed Balance of Nature (5 points): re-spent as Improved Entangling Roots 3 + Overgrowth 2 (control utility; the optimizer build says where the model would put them).
 - 2026-09-27 scenario audit: Swiftmend 1 -> Heart of the Wild 1. Swiftmend is an instant heal that consumes a Rejuvenation or Regrowth: a Moonkin in a raid casts neither. Heart of the Wild's Intellect is mana and spell crit (scorer +0.2 points; the simulator does not separate a single rank).
 - 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Subtlety -> Heart of the Wild (+0.4% DPS); Subtlety -> Heart of the Wild (+0.4% DPS). Net +0.84% on a third seed.
+- 2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Balance: its full-raid winner is +0.00% against it, under the 0.5% bar for a new build.
 
 ## Open questions (verify in the live game)
 

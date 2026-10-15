@@ -89,7 +89,9 @@ def main():
           "tuned rotations: a model of the beta, not a measurement in the game. Patches that move whole classes (from Forever's client and "
           "community numbers, `_reference/data/raidsim/patches/README.md`): hunter pets scale with the hunter's gear (a Beast Mastery build "
           "+8.5%), warlock demons with the warlock's (+3.6-4.2%), pets hit with a 2.0 s base (+3.0-3.9% for hunters with a pet); the boss is "
-          "an Elemental, which hunters' Improved Tracking counts (+5%).", ""]
+          "an Elemental, which hunters' Improved Tracking counts (+5%). Pet scaling is the largest difference from MythicSim's tier list "
+          "(its engine gives pets nothing from the hunter; [our comparison](_reference/mythicsim-comparison.md)), which also ranks in "
+          "dungeon gear without trinkets.", ""]
     o += tiers(dps, "Full raid DPS", lambda v: f"{v:.0f}") + [""]
     o += ["## Healing", "",
           "Healing capacity in this project's healer lab: how much of the lab's standard raid damage the healer keeps one group (a tank and "

@@ -54,7 +54,7 @@ Protection tanks in **Defensive Stance** with a shield, and threat comes from th
 
 ## The numbers
 
-Tank value 1.005 (threat and damage taken under a boss, relative to our reference tank build).
+Tank value 1.007 (threat and damage taken under a boss, relative to our reference tank build).
 
 **The gear** (average item level: Pre-BiS 60.3; Phase 1 BiS 66.2; chosen in the community simulator on tank value, threat and damage taken, for this build in a full raid. The simulator's item database lists base armor for only about one armor item in five, so these sets were chosen with Classic's armor values filled in for the rest, our assumption: Forever may have changed some; each item opens its Wowhead page, with where it drops and its enchant):
 

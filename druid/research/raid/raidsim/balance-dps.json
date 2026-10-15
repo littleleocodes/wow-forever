@@ -36,19 +36,19 @@
    "measured": true,
    "spell_casts": {
     "29166": 1.0,
+    "25298": 45.13166666666667,
     "2912": 3.066333333333333,
-    "24977": 12.997,
     "9835": 11.797666666666666,
-    "25298": 45.13166666666667
+    "24977": 12.997
    },
    "casts": {
-    "Innervate": 1.0,
-    "Starfire": 48.198,
-    "Insect Swarm": 12.997,
-    "Moonfire": 11.797666666666666,
     "OtherActionManaGain": 2.0,
     "Major Mana Potion": 2.0,
-    "Talisman of Ephemeral Power": 2.0
+    "Innervate": 1.0,
+    "Starfire": 48.198,
+    "Talisman of Ephemeral Power": 2.0,
+    "Moonfire": 11.797666666666666,
+    "Insect Swarm": 12.997
    },
    "dps": 507.6720318648854,
    "dps_stdev": 29.783864627021256,
@@ -78,20 +78,20 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
+    "2912": 3.066333333333333,
     "9835": 11.797666666666666,
     "24977": 12.997,
-    "2912": 3.066333333333333,
     "29166": 1.0,
     "25298": 45.13166666666667
    },
    "casts": {
+    "OtherActionManaGain": 2.0,
+    "Starfire": 48.198,
     "Moonfire": 11.797666666666666,
+    "Major Mana Potion": 2.0,
     "Insect Swarm": 12.997,
     "Talisman of Ephemeral Power": 2.0,
-    "Starfire": 48.198,
-    "Major Mana Potion": 2.0,
-    "Innervate": 1.0,
-    "OtherActionManaGain": 2.0
+    "Innervate": 1.0
    },
    "dps": 507.6720318648854,
    "dps_stdev": 29.783864627021256,
@@ -121,21 +121,21 @@
    "ours": false,
    "spell_casts": {
     "9835": 12.126,
-    "9912": 0.398,
     "24977": 12.115333333333334,
-    "2912": 0.621,
     "29166": 1.0,
-    "25298": 40.645
+    "2912": 0.621,
+    "25298": 40.645,
+    "9912": 0.398
    },
    "casts": {
     "Moonfire": 12.126,
-    "OtherActionManaGain": 2.0,
     "Talisman of Ephemeral Power": 2.0006666666666666,
-    "Major Mana Potion": 2.0,
-    "Wrath": 0.398,
     "Insect Swarm": 12.115333333333334,
+    "Innervate": 1.0,
     "Starfire": 41.266000000000005,
-    "Innervate": 1.0
+    "Major Mana Potion": 2.0,
+    "OtherActionManaGain": 2.0,
+    "Wrath": 0.398
    },
    "dps": 463.8758212201116,
    "dps_stdev": 27.03003825169252,
@@ -166,22 +166,22 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "9912": 14.566333333333333,
-    "2912": 3.366,
     "24977": 10.249666666666666,
-    "9835": 8.568,
     "29166": 1.0,
-    "25298": 30.298
+    "9835": 8.568,
+    "9912": 14.566333333333333,
+    "25298": 30.298,
+    "2912": 3.366
    },
    "casts": {
-    "Wrath": 14.566333333333333,
-    "Talisman of Ephemeral Power": 2.0,
-    "Major Mana Potion": 2.0,
-    "Starfire": 33.664,
     "OtherActionManaGain": 2.0,
     "Insect Swarm": 10.249666666666666,
+    "Innervate": 1.0,
     "Moonfire": 8.568,
-    "Innervate": 1.0
+    "Wrath": 14.566333333333333,
+    "Starfire": 33.664,
+    "Major Mana Potion": 2.0,
+    "Talisman of Ephemeral Power": 2.0
    },
    "dps": 405.59375089366216,
    "dps_stdev": 29.447824961479604,

@@ -16,11 +16,11 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 
 | Build | Split | Role |
 |---|---|---|
-| [Discipline/Shadow hybrid — Leveling (open talent search)](builds/hybrid-discipline-shadow-open-leveling.md) 🔬 | 22/0/29 | DPS |
-| [Holy/Shadow hybrid — Leveling (open talent search)](builds/hybrid-holy-shadow-open-leveling.md) 🔬 | 16/17/18 | DPS |
-| [Shadow — Leveling (open talent search)](builds/shadow-open-leveling.md) 🔬 | 17/2/32 | DPS |
 | [Discipline — Leveling into the raid build](builds/discipline-leveling.md) 🔬 | 30/21/0 | DPS |
 | [Holy — Leveling into the raid build](builds/holy-leveling.md) 🔬 | 21/30/0 | DPS |
+| [Discipline-Shadow — Leveling (open talent search)](builds/hybrid-discipline-shadow-open-leveling.md) 🔬 | 22/0/29 | DPS |
+| [Holy-Shadow — Leveling (open talent search)](builds/hybrid-holy-shadow-open-leveling.md) 🔬 | 16/17/18 | DPS |
+| [Shadow — Leveling (open talent search)](builds/shadow-open-leveling.md) 🔬 | 17/2/32 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
@@ -48,7 +48,7 @@ Classic Era reference builds: [leveling-shadow](../talents/classic-baseline/leve
 | Spec | Page build | Rotation | Seconds per kill |
 |---|---|---|---|
 | [Shadow](../../leveling/shadow.md) ✅ | `shadow-open-leveling` | shadow-dps | 25.5 |
-| [Discipline-Shadow](../../leveling/hybrid-discipline-shadow.md) | `hybrid-discipline-shadow-open-leveling` | discipline-leveling | 42.9 |
+| [Discipline-Shadow](../../leveling/hybrid-discipline-shadow.md) | `hybrid-discipline-shadow-open-leveling` | discipline-leveling | 42.7 |
 | [Holy-Shadow](../../leveling/hybrid-holy-shadow.md) | `hybrid-holy-shadow-open-leveling` | holy-leveling | 43.1 |
 | [Holy](../../leveling/holy.md) | `holy-leveling` | holy-leveling | 50.3 |
 | [Discipline](../../leveling/discipline.md) | `discipline-leveling` | discipline-leveling | 52.1 |
@@ -68,9 +68,9 @@ Time per kill = fight + loot, travel, eating, drinking, healing and deaths; a bu
 - **Talents that matter** (time per kill lost when the talent is removed from `opt-shadow-dps-leveling-st` at level 60): Shadowform +49%, Mind Flay +20% (L30 +13%), Darkness +7%, Shadow Weaving +7% (L30 +8%), Improved Mind Flay +6% (L30 +7%), Spirit Tap +3%.
 - **Measure about zero** single-target at 60 (kept for other reasons or not simulated): Holy Nova, Improved Power Word: Shield, Improved Renew, Shadow Reach, Spell Warding.
 - **Caster mobs:** 16% of pulls at level 30 are casters (creature-database share); 0.00 interrupts per kill at 60.
-- **Race** (hand draft vs every optimizer candidate, 2026-10-09, mean time per kill over levels 20/30/40/50/60): cand-shadow-r6 25.6s, leveling-shadow 25.6s, cand-shadow-r5 25.6s, cand-shadow-r4 25.7s, cand-shadow-hand-2026-09-26 26.4s, cand-shadow-r3 27.3s, cand-shadow-r2 28.3s, cand-shadow-r7 29.6s, cand-shadow-r1 31.6s — fastest: **cand-shadow-r6**.
+- **Race** (hand draft vs every optimizer candidate, 2026-10-15, mean time per kill over levels 20/30/40/50/60): cand-shadow-r6 25.6s, leveling-shadow 25.6s, cand-shadow-r5 25.6s, cand-shadow-r4 25.7s, cand-shadow-hand-2026-09-26 26.4s, cand-shadow-r3 27.3s, cand-shadow-r2 28.3s, cand-shadow-r7 29.6s, cand-shadow-r1 31.6s — fastest: **cand-shadow-r6**.
 - **Calibration:** the scorer's `shadow-dps` leveling values were fitted jointly to the hand draft and every candidate in [`fightlab/candidates/`](fightlab/candidates/) (1 round, converged: the optimizer build repeats).
-- **AoE grinding, 3 mobs per pull:** `shadow-dps` with `opt-shadow-dps-leveling-aoe` ([report](fightlab/shadow-dps-aoe.md)): L40 50.4s per mob in pulls of 3 (single-target build 27.4s), 19.0 deaths/100; L60 44.3s per mob in pulls of 3 (single-target build 25.6s), 17.8 deaths/100.
+- **AoE grinding, 3 mobs per pull:** `shadow-dps` with `opt-shadow-dps-leveling-aoe` ([report](fightlab/shadow-dps-aoe.md)): L40 49.4s per mob in pulls of 3 (single-target build 27.4s), 16.6 deaths/100; L60 40.7s per mob in pulls of 3 (single-target build 25.6s), 14.5 deaths/100.
 - **Not simulated:** runners, adds, Mind Soothe, Fade, Holy Nova, Penance, Prayer of Mending, Power Infusion, gear upgrades within a level bracket; racial priest spells (Desperate Prayer is a Dwarf's: off on the race-neutral pages). Talents in the build the sim ignores: Holy Nova.
 - **Pipeline result:** the hand draft `leveling-shadow` holds (no candidate beats it by more than the 2% margin). The player pages pick by their own races (the table at the top of this section).
 
@@ -90,3 +90,11 @@ Model findings (generated from the optimizer builds; scores are within each spec
 - **Solo / farming at 60:** 7/11/33; biggest talents by score lost when removed: Mind Flay (23.7), Shadowform (13.2), Shadow Weaving (2.2), Improved Mind Flay (2.1), Darkness (1.5); the hand draft `leveling-shadow` is 18/0/33.
 
 Beta hypotheses: every build's unverified claims are its `open_questions`, collected in [`_reference/launch-checklist.md`](../../../_reference/launch-checklist.md); level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).
+
+## Report index
+
+Reports under this folder that no other page links to (generated):
+
+- [optimizer/shadow-dps-leveling-aoe.md](optimizer/shadow-dps-leveling-aoe.md): priest / forever / spec shadow-dps / profile leveling-aoe
+- [optimizer/shadow-dps-leveling-st.md](optimizer/shadow-dps-leveling-st.md): priest / forever / spec shadow-dps / profile leveling-st
+- [optimizer/shadow-dps-solo-60.md](optimizer/shadow-dps-solo-60.md): priest / forever / spec shadow-dps / profile solo-60
