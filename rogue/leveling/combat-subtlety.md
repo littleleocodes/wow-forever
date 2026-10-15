@@ -24,11 +24,11 @@
 4. Once you have **Hemorrhage**, it replaces **Sinister Strike** as the builder.
 5. At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder; earlier when it would kill the mob.
 6. **Riposte** after you parry.
-7. **Kick** a caster mob's spell.
+7. Do not **Kick** a caster mob: let it cast and walk in.
 8. **Evasion** when your health gets low.
 9. If **Evasion** is on cooldown when you need it, **Preparation** resets it.
 
-**Between fights:** Bandage below 60% health, eat below half.
+**Between fights:** Bandage below 60% health, eat below 40%.
 
 ## Why this rotation
 
@@ -45,17 +45,16 @@ Combat-Subtlety levels on Subtlety's openers and Combat's defenses: **Premeditat
 
 **Caveats**
 
-- Skip **Slice and Dice**: the fight lab measured leveling without it about 3% faster per kill. **Kidney Shot** is not in the list: the tuned rules never cast it (about 1.3% faster per kill). Keep it for an add or a pull that goes wrong.
+- Skip **Slice and Dice**: the fight lab (re-tuned 2026-10-15) measured leveling without it about 3% faster per kill. **Kidney Shot** is not in the list: the tuned rules never cast it (about 1% faster per kill). Keep it for an add or a pull that goes wrong.
 - Keep a dagger in your main hand: **Ambush** needs one, and **Hemorrhage** and **Ghostly Strike** hit much harder with it.
 - This build has no **Preparation**: when **Evasion** is on cooldown, there is no second one.
-- Eat below 50% health and bandage below 60%: the fight lab measured eating that late about 4% faster than eating at 65%.
+- Eat only below 40% health and bandage below 60%: the fight lab measured eating that late about 4.4% faster than eating at 65%.
+- The tuned rules never **Kick** (about 0.5% faster per kill): a caster mob that stays back walks in once it has cast.
 
 **When to change it**
 
 - Below half health while the mob still has more than 30% of its health, press **Evasion** (50% more dodge for 15 seconds, and with **Setup** more combo points).
 - If a pull goes wrong, **Vanish** gets you out; the fight lab does not model adds or escapes.
-
-*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 

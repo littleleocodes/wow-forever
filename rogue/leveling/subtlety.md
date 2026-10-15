@@ -20,11 +20,11 @@
 4. Once you have **Hemorrhage**, it replaces **Sinister Strike** as the builder.
 5. At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder; earlier when it would kill the mob.
 6. **Riposte** after you parry.
-7. **Kick** a caster mob's spell.
+7. Do not **Kick** a caster mob: let it cast and walk in.
 8. **Evasion** when your health gets low.
 9. If **Evasion** is on cooldown when you need it, **Preparation** resets it.
 
-**Between fights:** Bandage below 60% health, eat below half.
+**Between fights:** Bandage below 60% health, eat below 40%.
 
 ## Why this rotation
 
@@ -32,26 +32,25 @@ Subtlety levels on its openers and on dodges: **Premeditation** and a stealth op
 
 **Why it works**
 
-- From stealth, **Premeditation** adds 2 points (a 2-minute cooldown, so about every fifth pull) and **Initiative** makes your opener add a second one: up to 4 points before your first builder.
-- Open with **Ambush** at low levels, where fights are short and its burst wins (right after a kill, **Remorseless Attacks** makes it crit more). From around level 40 with this build **Garrote** is worth more, because its 18-second bleed ignores armor and the mob lives through it; **Dirty Deeds** then makes it 30 energy and usable from the front.
+- From stealth, **Premeditation** (level 49) adds 2 points (a 2-minute cooldown, so about every fifth pull) and **Initiative** (42-44) makes your opener add a second one: up to 4 points before your first builder.
+- Open with **Ambush** at low levels, where fights are short and its burst wins (right after a kill, **Remorseless Attacks** makes it crit more). From around level 40 with this build **Garrote** is worth more, because its 18-second bleed ignores armor and the mob lives through it; **Dirty Deeds** (52-53) then makes it 30 energy and usable from the front.
 - This build has no **Hemorrhage**, so **Sinister Strike** builds your points all the way (40 energy with **Improved Sinister Strike**). **Ghostly Strike** goes in on its 20-second cooldown once you have it: 180% weapon damage with a dagger and 15% more dodge for 7 seconds.
 - With **Setup**, every dodge adds a combo point, so **Ghostly Strike**, **Lightning Reflexes** and **Evasion** also build points.
 - At 5 points, wait for the energy for **Eviscerate** rather than press a builder whose point would be lost. Cast **Eviscerate** earlier when it would kill the mob: points left on a dead mob are lost.
-- Skip **Slice and Dice**: the fight lab measured leveling without it about 3% faster per kill. **Kidney Shot** is not in the list: the tuned rules never cast it (about 1.3% faster per kill). Keep it for an add or a pull that goes wrong.
+- Skip **Slice and Dice**: the fight lab (re-tuned 2026-10-15) measured leveling without it about 3% faster per kill. **Kidney Shot** is not in the list: the tuned rules never cast it (about 1% faster per kill). Keep it for an add or a pull that goes wrong.
 
 **Caveats**
 
 - **Ambush** needs a dagger in your main hand and you behind the mob, and **Ghostly Strike** hits much harder with a dagger: keep daggers in both hands.
 - Pull the next mob within 20 seconds of a kill: **Remorseless Attacks** gives your next **Sinister Strike**, **Ambush** or **Ghostly Strike** 40% more crit chance.
 - **Rupture** is not in the leveling list: the fight lab plays **Eviscerate**, so **Serrated Blades** counts here only for the armor it ignores.
-- Eat below 50% health and bandage below 60%: the fight lab measured eating that late about 4% faster than eating at 65%.
+- Eat only below 40% health and bandage below 60%: the fight lab measured eating that late about 4.4% faster than eating at 65%.
+- The tuned rules never **Kick** (about 0.5% faster per kill): a caster mob that stays back walks in once it has cast.
 
 **When to change it**
 
 - Below half health while the mob still has more than 30% of its health, press **Evasion**; if it is on cooldown, **Preparation** resets it, along with **Premeditation** and **Ghostly Strike**.
 - If a pull goes wrong, **Vanish** (90 seconds shorter with **Elusiveness**) gets you out; the fight lab does not model adds or escapes.
-
-*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 

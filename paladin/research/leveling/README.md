@@ -36,7 +36,7 @@ Classic Era reference builds: [leveling-retribution](../talents/classic-baseline
 
 - [Leveling guide](guide.md): the recommended build (Shockadin, `shockadin-open-leveling`) level by level, what each bracket feels like and what the fight lab does not model.
 - [Rotation](rotation.md): the build each leveling page picks, the rotation it plays and what each leveling build casts per kill, level by level.
-- [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**61.3 h** (31.9% faster than talentless), no respec).
+- [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**63.2 h** (29.8% faster than talentless), no respec).
 - Recommended build: [shockadin-open-leveling](builds/shockadin-open-leveling.md) (Shockadin; player page: [Shockadin leveling](../../leveling/shockadin.md)).
 
 ## Fight lab (Monte Carlo fight simulator)

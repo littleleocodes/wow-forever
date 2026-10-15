@@ -17,7 +17,7 @@
 **In the fight**, top to bottom:
 
 1. **Shadow Word: Pain** to pull.
-2. **Penance** and **Mind Blast** whenever they are ready.
+2. **Mind Blast** whenever it is ready, **Penance** too while you have more than 30% mana.
 3. **Smite** in between while the mob has more than a third of its health and you have more than 30% mana; your wand otherwise.
 4. Skip **Holy Fire**: its long cast costs more than it deals while leveling.
 5. Hurt: **Power Word: Shield** again below half your health, **Flash Heal** below a third (with **Renewed Hope** it crits more and brings the next shield sooner), **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%.
@@ -30,7 +30,7 @@ The Discipline-Shadow build plays the Discipline leveling list (a Smite priest's
 
 **Why it works**
 
-- **Shadow Word: Pain** and **Mind Blast** are your Shadow spells, and the Shadow points make them hit harder: **Improved Shadow Word: Pain** (levels 37 and 51) makes the pain last 6 seconds longer, **Shadow Weaving** (48-50) and **Darkness** (57-60) add Shadow damage, and **Improved Mind Blast** (43-47) brings **Mind Blast** back 2.5 seconds sooner.
+- **Shadow Word: Pain** and **Mind Blast** are your Shadow spells, and the Shadow points make them hit harder: **Improved Shadow Word: Pain** (levels 37 and 50) makes the pain last 6 seconds longer, **Shadow Weaving** (47-49) and **Darkness** (57-60) add Shadow damage, and **Improved Mind Blast** (43-46 and 51) brings **Mind Blast** back 2.5 seconds sooner.
 - Mana is the limit, and the build pays for it: in the fight lab its most valuable talents at 60 are **Meditation** (half your regeneration while casting) and **Spirit Tap** (double Spirit for 15 seconds after a kill), ahead of **Darkness** and **Shadow Weaving**.
 - **Smite** only while the mob has more than about a third of its health and you have more than 30% mana; below that your wand finishes (**Wand Specialization** adds 25%). Skip **Holy Fire**: the tuned rules never cast it.
 - **Inner Focus** (level 20) right before **Mind Blast** or **Smite** makes that cast free with 25% more crit chance. **Silence** (level 54) stops a caster mob's spell.
@@ -45,8 +45,6 @@ The Discipline-Shadow build plays the Discipline leveling list (a Smite priest's
 
 - Hurt in a fight: shield again below half your health, **Flash Heal** below about a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%.
 - For speed, the Shadow page levels about 40% faster per kill.
-
-*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 

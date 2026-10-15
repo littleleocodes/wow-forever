@@ -74,7 +74,7 @@ The priority in the player page's words:
 Before the fight: **Power Word: Fortitude** and **Inner Fire** up. **Power Word: Shield** on yourself before every pull; **Power Infusion** on yourself when it is ready, and **Inner Focus** right before **Mind Blast** or **Smite** (that cast is free).
 
 1. **Shadow Word: Pain** to pull.
-2. **Penance** and **Mind Blast** whenever they are ready.
+2. **Mind Blast** whenever it is ready, **Penance** too while you have more than 30% mana.
 3. **Smite** in between while the mob has more than a third of its health and you have more than 30% mana; your wand otherwise.
 4. Skip **Holy Fire**: its long cast costs more than it deals while leveling.
 5. Hurt: **Power Word: Shield** again below half your health, **Flash Heal** below a third (with **Renewed Hope** it crits more and brings the next shield sooner), **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%.
@@ -94,12 +94,12 @@ The priority in the player page's words:
 Before the fight: **Power Word: Fortitude** and **Inner Fire** up. **Power Word: Shield** on yourself before every pull: while it holds, damage does not push your **Smite** back. **Inner Focus** when it is ready, right before **Mind Blast** or **Smite** (that cast is free).
 
 1. **Shadow Word: Pain** to pull.
-2. **Penance** and **Mind Blast** whenever they are ready.
+2. **Mind Blast** whenever it is ready, **Penance** too while you have more than 30% mana.
 3. **Smite** in between while the mob has more than a third of its health and you have more than 30% mana; your wand otherwise.
 4. Skip **Holy Fire**: its long cast costs more than it deals while leveling.
 5. Hurt: **Power Word: Shield** again below half your health, **Flash Heal** below a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%.
 
-Between fights: Drink only below 15% mana; **Renew** yourself after the fight and eat only if you are still below 80% health.
+Between fights: Drink only below 15% mana; **Renew** yourself after the fight and eat only if you are still below two thirds of your health.
 
 **Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-15, on top of the priority below): Smite only while the mob has more than 35% health; WAND_BELOW = 0.3; drink below 15% mana; never cast Holy Fire; Penance only above 30% mana. Together +9.4% time per kill saved for `holy-leveling` (level-weighted, a third seed of 3000 fights per level).
 

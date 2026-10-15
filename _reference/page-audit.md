@@ -111,3 +111,5 @@ says whether the sweep fixes it, a code or data change is needed, or the text is
 | H3 | Adaptive Combat Assistant (272437) dropped from the gear pools (no source in db.json; sold by a vendor) | partly 2026-10-15: `gear_opt.VENDOR_ITEMS` admits it (Wowhead: purchased in Stranglethorn Vale) to the pools and the trinket candidates; open: re-choosing the physical specs' sets (gear searches, hours) |
 | H4 | Melee weaving for ranged hunters | open |
 | H5 | Tier list: name pet scaling as the largest disagreement with MythicSim; trinket and race views | partly 2026-10-15: the tier list names it and links the comparison; open: trinket and race views |
+
+2026-10-15 afternoon: the 20 leveling guides whose rules or orders changed today (mage, paladin, priest, rogue, warlock re-tunes; warrior Arms/Fury and druid Feral after C1) re-checked and re-stamped; `guides.py --check`: 77 valid; no page says "re-tuned since".

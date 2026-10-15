@@ -14,15 +14,15 @@
 
 **In the fight**, top to bottom:
 
-1. **Corruption** and **Bane of Agony** first while the Voidwalker builds threat, none of them on a mob below about a third of its health.
-2. **Immolate** while you have more than half your mana and it will not pull the mob off the Voidwalker.
+1. **Corruption** and **Bane of Agony** first while the Voidwalker builds threat: no **Corruption** on a mob below a quarter of its health, no **Bane of Agony** below a third.
+2. **Immolate** while you have more than 30% of your mana, the mob has more than a third of its health and it will not pull the mob off the Voidwalker.
 3. **Conflagrate** when **Immolate** has about 3 seconds left (at once with 5 points in **Shadow and Flame**, which keeps **Immolate** burning), or to finish a burning mob it would kill; then **Siphon Life**.
 4. Above 80% mana, **Shadow Bolt** (**Searing Pain** when the mob has too little health left for it); below that, your wand.
 5. With **Incinerate**: cast it instead of **Shadow Bolt** on a burning mob. With **Shadowburn**: finish any mob it would kill.
-6. **Life Tap** in a fight only when you are short of mana and above 60% health.
-7. If a mob reaches you: **Death Coil** below 60% health and let **Torment** take it back (no **Fear** and no **Drain Life**: both measured slower). Your Healthstone below 35% health.
+6. **Drain Life** whenever you drop below 60% health, and in place of the wand while you are below 85%; **Life Tap** in a fight only when you are short of mana and above 60% health.
+7. If a mob reaches you: **Death Coil** below 60% health, otherwise **Fear** it, then **Drain Life** while it runs, until **Torment** takes it back. Your Healthstone below 35% health.
 
-**Between fights:** **Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, and eat only below 40% health.
+**Between fights:** **Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, and eat only below 55% health.
 
 ## Why this rotation
 
@@ -30,24 +30,22 @@ Destruction levels with the same Voidwalker and Affliction dots as the other spe
 
 **Why it works**
 
-- **Corruption** and **Bane of Agony** go first: both are instant (with 5 points in **Improved Corruption**) and cheap, and they give the Voidwalker time to build threat before your fire spells land. **Amplify Curse** before the pull makes that **Bane of Agony** 50% stronger, and **Siphon Life** joins at level 30. Skip **Corruption** on a mob below about a third of its health.
-- **Immolate** only while you have more than half your mana: the fight lab measured that about 2.5% faster per kill than casting it every time. **Aftermath** makes its first hit 50% stronger, and the fight lab holds it back while it would pull the mob off the Voidwalker.
+- **Corruption** and **Bane of Agony** go first: both are instant (with 5 points in **Improved Corruption**) and cheap, and they give the Voidwalker time to build threat before your fire spells land. **Amplify Curse** before the pull makes that **Bane of Agony** 50% stronger, and **Siphon Life** joins at level 30. Skip **Corruption** on a mob below a quarter of its health and **Bane of Agony** below a third.
+- **Immolate** only while you have more than 30% of your mana: the fight lab's 2026-10-15 re-tune measured that about 3% faster per kill than casting it whenever the mana reserve allows (the earlier rule was half your mana). **Aftermath** makes its first hit 50% stronger, and the fight lab holds it back while it would pull the mob off the Voidwalker.
 - **Conflagrate** (level 59 in this order) eats your **Immolate** in this build, so cast it when **Immolate** has about 3 seconds left, or to finish a burning mob it would kill. **Fire and Brimstone** (level 60) adds to its crit chance and **Ruin** doubles its crit bonus.
 - Your filler is **Shadow Bolt** above about 80% mana and the wand below it. When a mob has too little health left for a **Shadow Bolt**, the fight lab casts **Searing Pain** instead, also only with nearly full mana.
-- **Life Tap** when your mana runs short and your health is above 60%; between fights, **Life Tap** back up and heal the Voidwalker with **Health Funnel**. Eat only below 40% health: the fight lab measured that a little faster than eating at 55%, its default.
+- **Life Tap** when your mana runs short and your health is above 60%; between fights, **Life Tap** back up and heal the Voidwalker with **Health Funnel**. Eat below 55% health, the fight lab's default: the 2026-10-15 re-tune dropped the earlier 40% rule.
 
 **Caveats**
 
 - This build has neither **Incinerate** nor **Shadowburn**: where the steps name **Incinerate**, cast **Shadow Bolt** (the fight lab does), and finish mobs with **Conflagrate** or the wand.
 - Until level 59 you have no **Conflagrate**: you play **Corruption**, **Bane of Agony**, **Siphon Life**, **Immolate**, then **Shadow Bolt** or the wand.
-- When a mob reaches you, cast **Death Coil** if you are hurt and let the Voidwalker take it back with **Torment**: the fight lab measured never casting **Fear** or **Drain Life** about 1% faster each. **Molten Skin** (10% less damage taken) and **Intensity** (casts that resist pushback) make those moments cheaper.
+- When a mob reaches you, cast **Death Coil** if you are below 60% health, otherwise **Fear** it and **Drain Life** while it runs, until the Voidwalker's **Torment** takes it back (the 2026-10-15 re-tune no longer skips **Fear** and **Drain Life**). **Molten Skin** (10% less damage taken) and **Intensity** (casts that resist pushback) make those moments cheaper.
 
 **When to change it**
 
 - If you take **Incinerate** later, the fight lab's rotation casts it in place of **Shadow Bolt** on a burning mob: it deals 25% more damage while **Immolate** is on the target.
 - Finish a nearly dead mob with the wand or **Conflagrate** instead of a new **Immolate**: the fight lab starts no **Immolate** on a mob below about a third of its health.
-
-*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 

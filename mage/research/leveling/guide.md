@@ -72,10 +72,10 @@ Before the fight: **Frost Armor** (**Ice Armor** from level 30) and **Arcane Int
 1. **Frostbolt** while the mob walks in (it slows it); if it would reach you before the cast ends and **Frost Nova** is ready, wand it until it arrives.
 2. **Frost Nova** when it reaches you, then step back out of melee; **Cold Snap** resets **Frost Nova** if it is still on cooldown.
 3. **Ice Lance** again and again while the mob is frozen (**Frost Nova**, **Frostbite** or **Fingers of Frost**); **Frostbolt** otherwise.
-4. Finish with an **Ice Lance** that will kill, or your wand: no **Frostbolt** below a tenth of its health, and no **Fire Blast** or **Cone of Cold** at all.
+4. Finish with an **Ice Lance** that will kill, or your wand; no **Fire Blast** or **Cone of Cold** at all.
 5. **Counterspell** a mob that casts spells.
 
-Between fights: Drink your conjured water below a quarter of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.
+Between fights: Drink your conjured water below 15% of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.
 
 **Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-15, on top of the priority below): never cast Fire Blast; never cast Cone of Cold; drink below 15% mana. Together +5.5% time per kill saved for `frost-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 

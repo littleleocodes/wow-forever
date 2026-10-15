@@ -18,15 +18,15 @@
 
 **In the fight**, top to bottom:
 
-1. **Corruption** and **Bane of Agony** first while the Voidwalker builds threat, none of them on a mob below about a third of its health.
-2. **Immolate** while you have more than half your mana and it will not pull the mob off the Voidwalker.
+1. **Corruption** and **Bane of Agony** first while the Voidwalker builds threat: no **Corruption** on a mob below a quarter of its health, no **Bane of Agony** below a third.
+2. **Immolate** while you have more than 30% of your mana, the mob has more than a third of its health and it will not pull the mob off the Voidwalker.
 3. **Conflagrate** when **Immolate** has about 3 seconds left (at once with 5 points in **Shadow and Flame**, which keeps **Immolate** burning), or to finish a burning mob it would kill; then **Siphon Life**.
 4. Above 80% mana, **Shadow Bolt** (**Searing Pain** when the mob has too little health left for it); below that, your wand.
 5. With **Incinerate**: cast it instead of **Shadow Bolt** on a burning mob. With **Shadowburn**: finish any mob it would kill.
-6. **Life Tap** in a fight only when you are short of mana and above 60% health.
-7. If a mob reaches you: **Death Coil** below 60% health and let **Torment** take it back (no **Fear** and no **Drain Life**: both measured slower). Your Healthstone below 35% health.
+6. **Drain Life** whenever you drop below 60% health, and in place of the wand while you are below 85%; **Life Tap** in a fight only when you are short of mana and above 60% health.
+7. If a mob reaches you: **Death Coil** below 60% health, otherwise **Fear** it, then **Drain Life** while it runs, until **Torment** takes it back. Your Healthstone below 35% health.
 
-**Between fights:** **Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, and eat only below 40% health.
+**Between fights:** **Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, and eat only below 55% health.
 
 ## Why this rotation
 
@@ -34,24 +34,22 @@ The Shadow Bolt hybrid levels with the Destruction list but has no **Conflagrate
 
 **Why it works**
 
-- **Corruption** and **Bane of Agony** go first: cheap, nearly instant (0.4 seconds with 4 points in **Improved Corruption**), and they give the Voidwalker time to build threat before your fire spells land. **Amplify Curse** (level 20) makes that fight's **Bane of Agony** 50% stronger; skip **Corruption** on a mob below about a third of its health.
+- **Corruption** and **Bane of Agony** go first: cheap, nearly instant (0.4 seconds with 4 points in **Improved Corruption**), and they give the Voidwalker time to build threat before your fire spells land. **Amplify Curse** (level 20) makes that fight's **Bane of Agony** 50% stronger; skip **Corruption** on a mob below a quarter of its health and **Bane of Agony** below a third.
 - **Siphon Life** (level 34) is the build's most valuable talent at 60 in the fight lab (3.7 seconds per kill without it): damage and healing for one global cooldown.
-- **Immolate** only while you have more than half your mana and it will not pull the mob off the Voidwalker; **Aftermath** (levels 53-54) adds 20% to its first hit.
+- **Immolate** only while you have more than 30% of your mana (tuned 2026-10-15 on this build, about 3% faster per kill) and it will not pull the mob off the Voidwalker; **Aftermath** (levels 53-54) adds 20% to its first hit.
 - **Shadow Bolt** above about 80% mana, the wand below it; when a mob has too little health left for a bolt, **Searing Pain** with nearly full mana. **Bane** (levels 44-47) cuts **Shadow Bolt** and **Immolate** casts by 0.4 seconds and **Cataclysm** (58-60) makes Destruction spells 10% cheaper.
 - The Demonology points are for the tank: **Improved Voidwalker** (55-57) makes **Torment** and **Consume Shadows** 30% stronger, **Unholy Power** (39-43) adds 10% to its damage, and **Demonic Energies** (49-50) gives it the mana your **Life Tap** gives you and heals it for 15% of your spell damage.
 
 **Caveats**
 
 - No **Conflagrate**, **Incinerate** or **Shadowburn**: skip the steps that name them.
-- When a mob reaches you, **Death Coil** if you are hurt and let the Voidwalker's **Torment** take it back: this list casts neither **Fear** nor **Drain Life** (both measured slower for Destruction).
-- **Life Tap** in a fight only when you are short of mana and above 60% health; eat only below 40% health.
+- When a mob reaches you, **Death Coil** if you are below 60% health, otherwise **Fear** it and **Drain Life** while it runs, until the Voidwalker's **Torment** takes it back.
+- **Drain Life** below 60% health and in place of the wand below 85%; **Life Tap** in a fight only when you are short of mana and above 60% health; eat only below 55% health.
 
 **When to change it**
 
 - Finish a nearly dead mob with the wand or **Searing Pain**; start no new **Immolate** on it.
 - If the Voidwalker dies, summon a new one before the next pull, and heal a hurt one between fights with **Consume Shadows** or **Health Funnel**.
-
-*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 

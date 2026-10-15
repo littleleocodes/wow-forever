@@ -31,7 +31,7 @@ Retribution levels with one seal: **Seal of Command** before each pull, **Judgem
 
 - **Seal of Command** goes up before each pull (from level 20; **Seal of Righteousness** before that) and lasts 30 seconds, longer than most fights. It adds a Holy hit of 70% of your weapon damage about 7 times a minute, so a slow two-hander suits it; this build has no **Twist of Light**, so there is no seal swapping while leveling.
 - **Judgement** and **Holy Strike** whenever ready: **Judgement** is off the global cooldown and comes back every 8 seconds with **Improved Judgement**, and **Sanctified Judgement** (levels 21 to 23) returns 60% of your seal's mana cost each time. The open search found **Sanctified Judgement** the most valuable talent of this build at 60, for the drinking it saves.
-- **Consecration** is for two or more mobs. Against a single mob the fight lab's tuned rotation never casts it and kills about 5% faster that way: its mana costs more drinking than its damage saves.
+- **Consecration** is for two or more mobs. Against a single mob the fight lab's tuned rotation (re-tuned 2026-10-15) never casts it and kills about 11% faster that way: its mana costs more drinking than its damage saves.
 - **Hammer of Justice** doubles **Seal of Command**'s judgement: against a stunned mob it hits for 339 to 373 instead of 169 to 187 at rank 5. When both are ready and the mob has more than 30% health left, stun first, then judge; otherwise keep the stun for a caster or for when you are hurt.
 - **Hammer of Wrath** finishes mobs below 20% health from level 44, and it is instant once you have 2 points in **Instrument of Law** (levels 35 and 36).
 - Below about a third of your health, while the mob still has a quarter of its own: **Divine Protection** (8 seconds immune, but you cannot attack) with **Holy Light** inside it, or **Hammer of Justice** and heal during the stun; **Flash of Light** below a quarter, **Lay on Hands** below 15%. Between fights heal back to 80%; the tuned rotation drinks only below 15% of your mana.
@@ -45,8 +45,6 @@ Retribution levels with one seal: **Seal of Command** before each pull, **Judgem
 
 - A mob that stands back and casts: **Hammer of Justice** (10 yards) stops the cast; the fight lab uses it that way.
 - A mob that runs at low health: **Hammer of Wrath** (30 yards) finishes it, or **Hammer of Justice** holds it.
-
-*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 

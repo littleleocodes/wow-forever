@@ -40,7 +40,7 @@ Level-weighted time per kill (seconds, higher levels count more) of the build ea
 | [Protection](../../leveling/protection.md) | [`protection-open-leveling`](builds/protection-open-leveling.md) | prot-leveling | 22.4 | 26.3 | 25.2 | 26.7 | 27.6 | 26.2 |
 | [Arms](../../leveling/arms.md) | [`opt-arms-2h-raid-leveling-st`](builds/opt-arms-2h-raid-leveling-st.md) | arms-2h-raid | 22.6 | 26.0 | 26.0 | 27.2 | 30.0 | 27.2 |
 
-The stats model's respec plan (its own optimizer builds, not the page build): **64.1 h** (28.8% faster than talentless), no respec ([respec plan](respec-plan.md)).
+The stats model's respec plan (its own optimizer builds, not the page build): **63.3 h** (29.7% faster than talentless), no respec ([respec plan](respec-plan.md)).
 
 ## What each bracket feels like
 

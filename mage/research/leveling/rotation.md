@@ -29,10 +29,10 @@ Before the fight: **Frost Armor** (**Ice Armor** from level 30) and **Arcane Int
 1. **Frostbolt** while the mob walks in (it slows it); if it would reach you before the cast ends and **Frost Nova** is ready, wand it until it arrives.
 2. **Frost Nova** when it reaches you, then step back out of melee; **Cold Snap** resets **Frost Nova** if it is still on cooldown.
 3. **Ice Lance** again and again while the mob is frozen (**Frost Nova**, **Frostbite** or **Fingers of Frost**); **Frostbolt** otherwise.
-4. Finish with an **Ice Lance** that will kill, or your wand: no **Frostbolt** below a tenth of its health, and no **Fire Blast** or **Cone of Cold** at all.
+4. Finish with an **Ice Lance** that will kill, or your wand; no **Fire Blast** or **Cone of Cold** at all.
 5. **Counterspell** a mob that casts spells.
 
-Between fights: Drink your conjured water below a quarter of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.
+Between fights: Drink your conjured water below 15% of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.
 
 **Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-15, on top of the priority below): never cast Fire Blast; never cast Cone of Cold; drink below 15% mana. Together +5.5% time per kill saved for `frost-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
@@ -83,9 +83,9 @@ The priority in the player page's words:
 Before the fight: **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up. Pull from as far away as you can; **Presence of Mind** at the pull, and **Arcane Power** too while you have more than half your mana.
 
 1. **Arcane Blast** while the mob walks in: at most two in a row, only if the cast ends before the mob reaches you and costs no more than a quarter of your mana.
-2. **Arcane Missiles** to spend the stacks, and at once when **Missile Barrage** lights up (after your two stacks, or when the mob is on you); none below about a third of the mob's health.
-3. **Frost Nova** when the mob reaches you (**Cone of Cold** if it is on cooldown), then step back; **Ice Lance** while it is frozen.
-4. **Frostbolt** when **Arcane Missiles** is out (low mana, or the mob under a third of its health); below a fifth, finish with **Fire Blast**, **Ice Lance** or your wand.
+2. **Arcane Missiles** to spend the stacks, and at once when **Missile Barrage** lights up (after your two stacks, or when the mob is on you); none once the mob is below about a third of its health.
+3. **Frost Nova** when the mob reaches you (**Cone of Cold** if it is on cooldown and the mob is above a third of its health), then step back; **Ice Lance** while it is frozen.
+4. **Frostbolt** when **Arcane Missiles** is out of mana, above a third of the mob's health; below a third, finish with **Fire Blast** (not below a tenth), **Ice Lance** or your wand.
 5. **Counterspell** a mob that casts spells.
 
 Between fights: Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.
@@ -104,11 +104,11 @@ The priority in the player page's words:
 
 Before the fight: **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up; **Combustion** at the pull when it is ready. Pull from as far away as you can.
 
-1. **Fireball** while the mob walks in and while it has more than a fifth of its health.
-2. **Fire Blast** when the mob would reach you before a **Fireball** lands, or once it is on you (not below a tenth of its health).
+1. **Fireball** while the mob walks in, and whenever nothing below applies.
+2. **Fire Blast** when the mob would reach you before a **Fireball** lands (**Scorch** if **Fire Blast** is on cooldown and there is time), once it is on you, or when it will kill.
 3. **Frost Nova** when it reaches you, then step back; **Blast Wave** if **Frost Nova** is on cooldown.
 4. **Ice Lance** while the mob is frozen; **Pyroblast** only at 3 stacks of **Heating Up**.
-5. Mob on you and no control left: **Scorch**, only above half your mana. Finish a nearly dead mob with your wand.
+5. Mob on you and no control left: **Scorch** (a short cast, pushed back less). Finish a nearly dead mob with your wand.
 6. **Counterspell** a mob that casts spells.
 
 Between fights: Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.

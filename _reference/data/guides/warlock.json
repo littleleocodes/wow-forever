@@ -51,8 +51,8 @@
     ],
     "rotations": {
      "leveling:affliction-leveling": "d4c13e2b3acd",
-     "leveling:demonology-leveling": "48f980d55b71",
-     "leveling:destruction-leveling": "b70c98d7eaad"
+     "leveling:demonology-leveling": "ffff9f0c2661",
+     "leveling:destruction-leveling": "5ea4c8e212d5"
     },
     "written": "2026-10-15"
    }
@@ -86,7 +86,7 @@
    "leveling": {
     "plan": "Demonology levels like Affliction with a stronger Voidwalker: the same dots from your 21 Affliction points, while **Demonic Knowledge**, **Soul Link**, **Master Demonologist** and **Unholy Power** make you and the Voidwalker hit harder and take less damage. From level 49, **Demonic Brand** turns **Searing Pain** into extra damage from the Voidwalker.",
     "why": [
-     "Until level 30 this order is pure Affliction, and the dots stay the core: Voidwalker in first, **Amplify Curse** before the pull when it is ready, then **Corruption**, **Bane of Agony** and, from 30, **Siphon Life**. Skip **Corruption** on a mob below about a third of its health: it dies before the spell pays for its mana.",
+     "Until level 30 this order is pure Affliction, and the dots stay the core: Voidwalker in first, **Amplify Curse** before the pull when it is ready, then **Corruption**, **Bane of Agony** and, from 30, **Siphon Life**. Skip **Corruption** on a mob below about a third of its health (it dies before the spell pays for its mana) and while you are below 30% mana: the 2026-10-15 re-tune measured the mana rule about 2% faster per kill.",
      "**Searing Pain** with **Demonic Brand** brands the mob for 10 seconds: the Voidwalker's next attacks (6 with all 3 points, from level 55) each deal about 65 extra damage at level 60, and the brand halves **Searing Pain**'s own threat. Recast it whenever the brand is gone and the Voidwalker is hitting the mob; the fight lab measured 3 talent points moved into **Demonic Brand** at about 3% faster kills.",
      "**Immolate** also goes on while you have more than half your mana; the fight lab casts it after the other dots.",
      "**Shadow Bolt** only when your mana is nearly full (above 80% in the fight lab), the wand otherwise: the dots do the killing and the wand costs nothing. When a mob has too little health left for a **Shadow Bolt**, the fight lab casts **Searing Pain** instead.",
@@ -103,8 +103,8 @@
     ],
     "rotations": {
      "leveling:affliction-leveling": "d4c13e2b3acd",
-     "leveling:demonology-leveling": "48f980d55b71",
-     "leveling:destruction-leveling": "b70c98d7eaad"
+     "leveling:demonology-leveling": "ffff9f0c2661",
+     "leveling:destruction-leveling": "5ea4c8e212d5"
     },
     "written": "2026-10-15"
    }
@@ -140,16 +140,16 @@
    "leveling": {
     "plan": "Destruction levels with the same Voidwalker and Affliction dots as the other specs, since its first 21 points are Affliction, and adds a hard-hitting **Immolate** and, from level 59, **Conflagrate**. This build takes neither **Incinerate** nor **Shadowburn**, so your filler is **Shadow Bolt** when your mana is nearly full and the wand otherwise.",
     "why": [
-     "**Corruption** and **Bane of Agony** go first: both are instant (with 5 points in **Improved Corruption**) and cheap, and they give the Voidwalker time to build threat before your fire spells land. **Amplify Curse** before the pull makes that **Bane of Agony** 50% stronger, and **Siphon Life** joins at level 30. Skip **Corruption** on a mob below about a third of its health.",
-     "**Immolate** only while you have more than half your mana: the fight lab measured that about 2.5% faster per kill than casting it every time. **Aftermath** makes its first hit 50% stronger, and the fight lab holds it back while it would pull the mob off the Voidwalker.",
+     "**Corruption** and **Bane of Agony** go first: both are instant (with 5 points in **Improved Corruption**) and cheap, and they give the Voidwalker time to build threat before your fire spells land. **Amplify Curse** before the pull makes that **Bane of Agony** 50% stronger, and **Siphon Life** joins at level 30. Skip **Corruption** on a mob below a quarter of its health and **Bane of Agony** below a third.",
+     "**Immolate** only while you have more than 30% of your mana: the fight lab's 2026-10-15 re-tune measured that about 3% faster per kill than casting it whenever the mana reserve allows (the earlier rule was half your mana). **Aftermath** makes its first hit 50% stronger, and the fight lab holds it back while it would pull the mob off the Voidwalker.",
      "**Conflagrate** (level 59 in this order) eats your **Immolate** in this build, so cast it when **Immolate** has about 3 seconds left, or to finish a burning mob it would kill. **Fire and Brimstone** (level 60) adds to its crit chance and **Ruin** doubles its crit bonus.",
      "Your filler is **Shadow Bolt** above about 80% mana and the wand below it. When a mob has too little health left for a **Shadow Bolt**, the fight lab casts **Searing Pain** instead, also only with nearly full mana.",
-     "**Life Tap** when your mana runs short and your health is above 60%; between fights, **Life Tap** back up and heal the Voidwalker with **Health Funnel**. Eat only below 40% health: the fight lab measured that a little faster than eating at 55%, its default."
+     "**Life Tap** when your mana runs short and your health is above 60%; between fights, **Life Tap** back up and heal the Voidwalker with **Health Funnel**. Eat below 55% health, the fight lab's default: the 2026-10-15 re-tune dropped the earlier 40% rule."
     ],
     "caveats": [
      "This build has neither **Incinerate** nor **Shadowburn**: where the steps name **Incinerate**, cast **Shadow Bolt** (the fight lab does), and finish mobs with **Conflagrate** or the wand.",
      "Until level 59 you have no **Conflagrate**: you play **Corruption**, **Bane of Agony**, **Siphon Life**, **Immolate**, then **Shadow Bolt** or the wand.",
-     "When a mob reaches you, cast **Death Coil** if you are hurt and let the Voidwalker take it back with **Torment**: the fight lab measured never casting **Fear** or **Drain Life** about 1% faster each. **Molten Skin** (10% less damage taken) and **Intensity** (casts that resist pushback) make those moments cheaper."
+     "When a mob reaches you, cast **Death Coil** if you are below 60% health, otherwise **Fear** it and **Drain Life** while it runs, until the Voidwalker's **Torment** takes it back (the 2026-10-15 re-tune no longer skips **Fear** and **Drain Life**). **Molten Skin** (10% less damage taken) and **Intensity** (casts that resist pushback) make those moments cheaper."
     ],
     "diverge": [
      "If you take **Incinerate** later, the fight lab's rotation casts it in place of **Shadow Bolt** on a burning mob: it deals 25% more damage while **Immolate** is on the target.",
@@ -157,8 +157,8 @@
     ],
     "rotations": {
      "leveling:affliction-leveling": "d4c13e2b3acd",
-     "leveling:demonology-leveling": "48f980d55b71",
-     "leveling:destruction-leveling": "b70c98d7eaad"
+     "leveling:demonology-leveling": "ffff9f0c2661",
+     "leveling:destruction-leveling": "5ea4c8e212d5"
     },
     "written": "2026-10-15"
    }
@@ -196,16 +196,16 @@
    "leveling": {
     "plan": "The Shadow Bolt hybrid levels with the Destruction list but has no **Conflagrate**: a Voidwalker holds the mob while you put **Corruption**, **Bane of Agony**, **Immolate** and **Siphon Life** on it, cast **Shadow Bolt** while your mana is nearly full and use the wand otherwise.",
     "why": [
-     "**Corruption** and **Bane of Agony** go first: cheap, nearly instant (0.4 seconds with 4 points in **Improved Corruption**), and they give the Voidwalker time to build threat before your fire spells land. **Amplify Curse** (level 20) makes that fight's **Bane of Agony** 50% stronger; skip **Corruption** on a mob below about a third of its health.",
+     "**Corruption** and **Bane of Agony** go first: cheap, nearly instant (0.4 seconds with 4 points in **Improved Corruption**), and they give the Voidwalker time to build threat before your fire spells land. **Amplify Curse** (level 20) makes that fight's **Bane of Agony** 50% stronger; skip **Corruption** on a mob below a quarter of its health and **Bane of Agony** below a third.",
      "**Siphon Life** (level 34) is the build's most valuable talent at 60 in the fight lab (3.7 seconds per kill without it): damage and healing for one global cooldown.",
-     "**Immolate** only while you have more than half your mana and it will not pull the mob off the Voidwalker; **Aftermath** (levels 53-54) adds 20% to its first hit.",
+     "**Immolate** only while you have more than 30% of your mana (tuned 2026-10-15 on this build, about 3% faster per kill) and it will not pull the mob off the Voidwalker; **Aftermath** (levels 53-54) adds 20% to its first hit.",
      "**Shadow Bolt** above about 80% mana, the wand below it; when a mob has too little health left for a bolt, **Searing Pain** with nearly full mana. **Bane** (levels 44-47) cuts **Shadow Bolt** and **Immolate** casts by 0.4 seconds and **Cataclysm** (58-60) makes Destruction spells 10% cheaper.",
      "The Demonology points are for the tank: **Improved Voidwalker** (55-57) makes **Torment** and **Consume Shadows** 30% stronger, **Unholy Power** (39-43) adds 10% to its damage, and **Demonic Energies** (49-50) gives it the mana your **Life Tap** gives you and heals it for 15% of your spell damage."
     ],
     "caveats": [
      "No **Conflagrate**, **Incinerate** or **Shadowburn**: skip the steps that name them.",
-     "When a mob reaches you, **Death Coil** if you are hurt and let the Voidwalker's **Torment** take it back: this list casts neither **Fear** nor **Drain Life** (both measured slower for Destruction).",
-     "**Life Tap** in a fight only when you are short of mana and above 60% health; eat only below 40% health."
+     "When a mob reaches you, **Death Coil** if you are below 60% health, otherwise **Fear** it and **Drain Life** while it runs, until the Voidwalker's **Torment** takes it back.",
+     "**Drain Life** below 60% health and in place of the wand below 85%; **Life Tap** in a fight only when you are short of mana and above 60% health; eat only below 55% health."
     ],
     "diverge": [
      "Finish a nearly dead mob with the wand or **Searing Pain**; start no new **Immolate** on it.",
@@ -214,8 +214,8 @@
     "written": "2026-10-15",
     "rotations": {
      "leveling:affliction-leveling": "d4c13e2b3acd",
-     "leveling:demonology-leveling": "48f980d55b71",
-     "leveling:destruction-leveling": "b70c98d7eaad"
+     "leveling:demonology-leveling": "ffff9f0c2661",
+     "leveling:destruction-leveling": "5ea4c8e212d5"
     }
    }
   },
@@ -241,8 +241,8 @@
     ],
     "rotations": {
      "leveling:affliction-leveling": "d4c13e2b3acd",
-     "leveling:demonology-leveling": "48f980d55b71",
-     "leveling:destruction-leveling": "b70c98d7eaad"
+     "leveling:demonology-leveling": "ffff9f0c2661",
+     "leveling:destruction-leveling": "5ea4c8e212d5"
     },
     "written": "2026-10-15"
    }

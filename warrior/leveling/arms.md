@@ -29,7 +29,7 @@ Arms levels with a two-hander in **Battle Stance**. Open with **Bloodrage** and 
 
 - **Bloodrage** then **Charge** puts rage in your bar before the first swing: **Bloodrage** gives 10 at once and 10 more over 10 seconds, **Charge** 9 to 15 by rank plus 6 with **Improved Charge**, and the mob is stunned for a second. The fight lab uses **Bloodrage** only above 45% health, on about every third pull (1-minute cooldown).
 - Once the mob is below 20%, **Execute** goes before everything else in the fight lab: it spends all your rage (600 damage plus 15 per extra point at rank 5) and usually ends the fight. It is about a sixth of your damage at 60.
-- **Overpower** comes next whenever it lights up: 5 rage, 50% more crit chance with **Improved Overpower**, and a window of only 5 to 6 seconds. With **Bloodthrill** (16% with your 4 points), main-hand hits on a mob with your **Rend** light it up too, so it is not just a dodge reaction.
+- **Overpower** comes next whenever it lights up: 5 rage, 50% more crit chance with **Improved Overpower**, and a window of only 5 to 6 seconds. With **Bloodthrill** (16% with your 4 points, levels 35-38), main-hand hits on a mob with your **Rend** light it up too, so it is not just a dodge reaction.
 - **Mortal Strike** (from 40) on cooldown is your biggest attack, about a fifth of your damage at 60. **Rend** goes on once per mob, early: the fight lab casts it only while the mob has more than a third of its health and you have 40 rage or **Mortal Strike** is cooling down, so it never delays **Mortal Strike**.
 - **Heroic Strike** only takes rage you will not need: the fight lab keeps 15 for an **Overpower** and, when **Mortal Strike** is 3 seconds or less from ready, 30 more for it. Before 40 it is your main rage dump (about a quarter of your damage at level 30); after **Mortal Strike** it almost disappears.
 - **Battle Shout** lasts 3 minutes in Forever, so one shout covers several pulls. **Victory Rush** is free for 20 seconds after a kill and heals 10% of your health: it opens your next fight whenever you are below 90%.
@@ -38,15 +38,13 @@ Arms levels with a two-hander in **Battle Stance**. Open with **Bloodrage** and 
 
 - The fight lab's numbers are for one same-level mob at a time in quest greens, with an axe or polearm for **Weaponmaster** (+5% crit); it does not model runners, adds or stance swaps.
 - **Sweeping Strikes** is in the build only because **Mortal Strike** requires it: on a single mob it does nothing.
-- Between fights the fight lab bandages below 60% health and eats below 40%, which it measured about 3% faster per kill than eating at 65%.
+- Between fights the fight lab bandages below 60% health and eats below 40%, which it measured about 2% faster per kill than eating at 65%.
 - Casters stand back and cast at you. **Charge** reaches them at the pull; in **Battle Stance** you have no interrupt (**Pummel** needs **Berserker Stance**), so just close in and hit.
 
 **When to change it**
 
 - Two mobs: open with **Sweeping Strikes** (30 rage; your next 5 attacks also hit the second mob), slow both with **Thunder Clap** (20% slower attacks) and use **Cleave** instead of **Heroic Strike**. The single-mob numbers above do not cover this.
 - A mob that runs at low health: **Hamstring** it before it gets away, or finish it with **Execute** (the fight lab does not model runners).
-
-*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 

@@ -101,11 +101,11 @@
     "**Frostbolt** while the mob walks in (it slows it); if it would reach you before the cast ends and **Frost Nova** is ready, wand it until it arrives.",
     "**Frost Nova** when it reaches you, then step back out of melee; **Cold Snap** resets **Frost Nova** if it is still on cooldown.",
     "**Ice Lance** again and again while the mob is frozen (**Frost Nova**, **Frostbite** or **Fingers of Frost**); **Frostbolt** otherwise.",
-    "Finish with an **Ice Lance** that will kill, or your wand: no **Frostbolt** below a tenth of its health, and no **Fire Blast** or **Cone of Cold** at all.",
+    "Finish with an **Ice Lance** that will kill, or your wand; no **Fire Blast** or **Cone of Cold** at all.",
     "**Counterspell** a mob that casts spells."
    ],
    "between": [
-    "Drink your conjured water below a quarter of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health."
+    "Drink your conjured water below 15% of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health."
    ]
   },
   "fire-leveling": {
@@ -114,11 +114,11 @@
     "Pull from as far away as you can."
    ],
    "steps": [
-    "**Fireball** while the mob walks in and while it has more than a fifth of its health.",
-    "**Fire Blast** when the mob would reach you before a **Fireball** lands, or once it is on you (not below a tenth of its health).",
+    "**Fireball** while the mob walks in, and whenever nothing below applies.",
+    "**Fire Blast** when the mob would reach you before a **Fireball** lands (**Scorch** if **Fire Blast** is on cooldown and there is time), once it is on you, or when it will kill.",
     "**Frost Nova** when it reaches you, then step back; **Blast Wave** if **Frost Nova** is on cooldown.",
     "**Ice Lance** while the mob is frozen; **Pyroblast** only at 3 stacks of **Heating Up**.",
-    "Mob on you and no control left: **Scorch**, only above half your mana. Finish a nearly dead mob with your wand.",
+    "Mob on you and no control left: **Scorch** (a short cast, pushed back less). Finish a nearly dead mob with your wand.",
     "**Counterspell** a mob that casts spells."
    ],
    "between": [
@@ -164,9 +164,9 @@
    ],
    "steps": [
     "**Arcane Blast** while the mob walks in: at most two in a row, only if the cast ends before the mob reaches you and costs no more than a quarter of your mana.",
-    "**Arcane Missiles** to spend the stacks, and at once when **Missile Barrage** lights up (after your two stacks, or when the mob is on you); none below about a third of the mob's health.",
-    "**Frost Nova** when the mob reaches you (**Cone of Cold** if it is on cooldown), then step back; **Ice Lance** while it is frozen.",
-    "**Frostbolt** when **Arcane Missiles** is out (low mana, or the mob under a third of its health); below a fifth, finish with **Fire Blast**, **Ice Lance** or your wand.",
+    "**Arcane Missiles** to spend the stacks, and at once when **Missile Barrage** lights up (after your two stacks, or when the mob is on you); none once the mob is below about a third of its health.",
+    "**Frost Nova** when the mob reaches you (**Cone of Cold** if it is on cooldown and the mob is above a third of its health), then step back; **Ice Lance** while it is frozen.",
+    "**Frostbolt** when **Arcane Missiles** is out of mana, above a third of the mob's health; below a third, finish with **Fire Blast** (not below a tenth), **Ice Lance** or your wand.",
     "**Counterspell** a mob that casts spells."
    ],
    "between": [
@@ -252,13 +252,13 @@
    ],
    "steps": [
     "**Shadow Word: Pain** to pull.",
-    "**Penance** and **Mind Blast** whenever they are ready.",
+    "**Mind Blast** whenever it is ready, **Penance** too while you have more than 30% mana.",
     "**Smite** in between while the mob has more than a third of its health and you have more than 30% mana; your wand otherwise.",
     "Skip **Holy Fire**: its long cast costs more than it deals while leveling.",
     "Hurt: **Power Word: Shield** again below half your health, **Flash Heal** below a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%."
    ],
    "between": [
-    "Drink only below 15% mana; **Renew** yourself after the fight and eat only if you are still below 80% health."
+    "Drink only below 15% mana; **Renew** yourself after the fight and eat only if you are still below two thirds of your health."
    ]
   },
   "discipline-leveling": {
@@ -268,7 +268,7 @@
    ],
    "steps": [
     "**Shadow Word: Pain** to pull.",
-    "**Penance** and **Mind Blast** whenever they are ready.",
+    "**Mind Blast** whenever it is ready, **Penance** too while you have more than 30% mana.",
     "**Smite** in between while the mob has more than a third of its health and you have more than 30% mana; your wand otherwise.",
     "Skip **Holy Fire**: its long cast costs more than it deals while leveling.",
     "Hurt: **Power Word: Shield** again below half your health, **Flash Heal** below a third (with **Renewed Hope** it crits more and brings the next shield sooner), **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%."
@@ -328,12 +328,12 @@
     "Once you have **Hemorrhage**, it replaces **Sinister Strike** as the builder.",
     "At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder; earlier when it would kill the mob.",
     "**Riposte** after you parry.",
-    "**Kick** a caster mob's spell.",
+    "Do not **Kick** a caster mob: let it cast and walk in.",
     "**Evasion** when your health gets low.",
     "If **Evasion** is on cooldown when you need it, **Preparation** resets it."
    ],
    "between": [
-    "Bandage below 60% health, eat below half."
+    "Bandage below 60% health, eat below 40%."
    ]
   }
  },
@@ -405,7 +405,7 @@
    ],
    "steps": [
     "With **Demonic Brand**: **Searing Pain** whenever the brand is gone and the Voidwalker is hitting the mob.",
-    "**Corruption**, **Bane of Agony** and **Siphon Life** on the mob, and **Immolate** while you have more than half your mana; none of them on a mob below about a third of its health.",
+    "**Corruption** (only while you have more than 30% mana), **Bane of Agony** and **Siphon Life** on the mob, and **Immolate** while you have more than half your mana; none of them on a mob below about a third of its health.",
     "With **Decimation**: **Soul Fire** while its buff lasts (a **Shadow Bolt** or **Searing Pain** on a mob below 35% health starts it).",
     "Above 80% mana, **Shadow Bolt** (**Searing Pain** when the mob has too little health left for it); below that, your wand.",
     "**Drain Life** whenever you drop below 60% health, and in place of the wand while you are below 85%; **Life Tap** in a fight only when you are short of mana and above 60% health.",
@@ -423,16 +423,16 @@
     "Open with **Amplify Curse** whenever it is ready: it makes that fight's **Bane of Agony** 50% stronger."
    ],
    "steps": [
-    "**Corruption** and **Bane of Agony** first while the Voidwalker builds threat, none of them on a mob below about a third of its health.",
-    "**Immolate** while you have more than half your mana and it will not pull the mob off the Voidwalker.",
+    "**Corruption** and **Bane of Agony** first while the Voidwalker builds threat: no **Corruption** on a mob below a quarter of its health, no **Bane of Agony** below a third.",
+    "**Immolate** while you have more than 30% of your mana, the mob has more than a third of its health and it will not pull the mob off the Voidwalker.",
     "**Conflagrate** when **Immolate** has about 3 seconds left (at once with 5 points in **Shadow and Flame**, which keeps **Immolate** burning), or to finish a burning mob it would kill; then **Siphon Life**.",
     "Above 80% mana, **Shadow Bolt** (**Searing Pain** when the mob has too little health left for it); below that, your wand.",
     "With **Incinerate**: cast it instead of **Shadow Bolt** on a burning mob. With **Shadowburn**: finish any mob it would kill.",
-    "**Life Tap** in a fight only when you are short of mana and above 60% health.",
-    "If a mob reaches you: **Death Coil** below 60% health and let **Torment** take it back (no **Fear** and no **Drain Life**: both measured slower). Your Healthstone below 35% health."
+    "**Drain Life** whenever you drop below 60% health, and in place of the wand while you are below 85%; **Life Tap** in a fight only when you are short of mana and above 60% health.",
+    "If a mob reaches you: **Death Coil** below 60% health, otherwise **Fear** it, then **Drain Life** while it runs, until **Torment** takes it back. Your Healthstone below 35% health."
    ],
    "between": [
-    "**Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, and eat only below 40% health."
+    "**Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, and eat only below 55% health."
    ]
   }
  },

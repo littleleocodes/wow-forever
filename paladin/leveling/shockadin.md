@@ -34,7 +34,7 @@ The Shockadin leveling build is a two-handed Retribution paladin with Holy's **I
 
 - The fight lab's Holy list uses **Seal of Command** once you have it (level 20; **Seal of Righteousness** before): it adds a Holy hit of 70% of your weapon damage on some swings, so a slow two-hander suits it, and its judgement hits a stunned mob twice as hard. When **Hammer of Justice** and **Judgement** are both ready and the mob has more than 30% health, stun first, then judge.
 - **Judgement** and **Holy Strike** whenever ready: **Improved Judgement** (levels 15-16) brings **Judgement** back every 8 seconds, and **Sanctified Judgement** (21-23) returns 60% of your seal's mana cost each time. In the open search it is the build's most valuable talent at 60 (about 3 seconds per kill), ahead of **Improved Seals** (38-40) and **Two-Handed Weapon Specialization** (30-32).
-- No **Consecration** and no **Hammer of Wrath**: the Holy list never casts **Consecration**, and its tuned rules skip **Hammer of Wrath** (about 1% faster kills).
+- No **Consecration** and no **Hammer of Wrath**: the Holy list never casts **Consecration**, and its tuned rules (2026-10-15) skip **Hammer of Wrath** (about 3% faster kills).
 - Heal in the fight once you drop below 40% health and the mob has more than a fifth left: **Divine Protection** below 30%, **Hammer of Justice**, then **Holy Light**; **Flash of Light** below a quarter, **Lay on Hands** below 15%.
 
 **Caveats**
@@ -47,8 +47,6 @@ The Shockadin leveling build is a two-handed Retribution paladin with Holy's **I
 
 - A mob that casts spells: **Hammer of Justice** stops the cast.
 - Two or more mobs: **Consecration** hits them all; the Holy list was not measured on several mobs with this build.
-
-*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 

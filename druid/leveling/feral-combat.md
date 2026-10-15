@@ -34,7 +34,7 @@ Level 10-19 as a bear, then as a cat: open every pull from **Prowl** behind the 
 - Levels 10-19: no **Cat Form** yet, so **Bear Form**'s armor and health carry you. You start each fight with no rage: **Enrage** first (10 rage at once, 20 more over 10 seconds), then **Demoralizing Roar** to cut the mob's attack power, then **Maul** on every swing you can pay for.
 - From 20, **Prowl** up behind the mob and open with your hardest stealth hit: **Ravage** from 32 (350% weapon damage plus a bonus, about 15% of all your damage at 60), **Shred** from 22 to 31, **Claw** at 20 and 21. **Pounce** only arrives at 36, after **Ravage**, so the fight lab never opens with it.
 - Tiger's Fury goes right after the opener (from 24): it costs nothing and adds 15% physical damage for 6 seconds on a 30-second cooldown, about 2% faster per kill at 60 in the fight lab. The beta's trainer list no longer shows it (the client grants it since build 70170), so check at launch that you have it.
-- **Rake** once: a cheap bleed (35 energy with **Ferocity**) that ticks while you claw, and while the mob bleeds **Rend and Tear** adds 10% to your attacks. The fight lab puts it back only while the mob has more than 30% of its health.
+- **Rake** once: a cheap bleed (35 energy with **Ferocity**) that ticks while you claw, and while the mob bleeds **Rend and Tear** (levels 35-39) adds 10% to your attacks. The fight lab puts it back only while the mob has more than 30% of its health.
 - **Claw** builds your combo points because the mob faces you: **Shred** needs you behind it, which only the opener gives. With **Ferocity** it costs 40 energy.
 - **Ferocious Bite** (from 32) ends most fights: the fight lab bites whenever the bite would kill, at any number of points, about once a kill. **Rip** only goes on a mob with more than half its health at 5 points, about one kill in five at 60: on a mob that dies sooner, most of its 12 seconds are wasted.
 
@@ -43,14 +43,12 @@ Level 10-19 as a bear, then as a cat: open every pull from **Prowl** behind the 
 - Before 32 there is no **Ferocious Bite**, so **Rip** is your only finisher: put it on at 2 or more points while the mob has more than 40% of its health. The fight lab measured that 3% faster per kill at 30 than waiting for 5 points on a mob above half health, which almost never came.
 - Leaving **Cat Form** costs you: going back costs 55% of your base mana (20% less with **Natural Shapeshifter**), and without **Furor** your energy starts from zero. Heal between fights rather than in them when you can.
 - Your mana only pays for shifts and heals, so drink late: the tuned fight lab drinks below 15% mana, about 1% faster per kill than drinking at about a third.
-- **Berserk**, once you have it, goes on the pull whenever it is ready: 15 seconds of sure critical strikes on your combo point attacks, every 3 minutes.
+- **Berserk**, once you have it (level 40 in this order), goes on the pull whenever it is ready: 15 seconds of sure critical strikes on your combo point attacks, every 3 minutes.
 
 **When to change it**
 
 - Under 30% health with the mob still above a quarter of its health: shift out, cast **Regrowth**, then **Cat Form** again. If the mob is lower than that, finish it instead.
 - In the bear levels, **Bash** a mob that starts casting, or when you are low: the fight lab does both.
-
-*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 

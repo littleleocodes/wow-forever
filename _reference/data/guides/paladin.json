@@ -35,7 +35,7 @@
     "why": [
      "**Seal of Command** goes up before each pull (from level 20; **Seal of Righteousness** before that) and lasts 30 seconds, longer than most fights. It adds a Holy hit of 70% of your weapon damage about 7 times a minute, so a slow two-hander suits it; this build has no **Twist of Light**, so there is no seal swapping while leveling.",
      "**Judgement** and **Holy Strike** whenever ready: **Judgement** is off the global cooldown and comes back every 8 seconds with **Improved Judgement**, and **Sanctified Judgement** (levels 21 to 23) returns 60% of your seal's mana cost each time. The open search found **Sanctified Judgement** the most valuable talent of this build at 60, for the drinking it saves.",
-     "**Consecration** is for two or more mobs. Against a single mob the fight lab's tuned rotation never casts it and kills about 5% faster that way: its mana costs more drinking than its damage saves.",
+     "**Consecration** is for two or more mobs. Against a single mob the fight lab's tuned rotation (re-tuned 2026-10-15) never casts it and kills about 11% faster that way: its mana costs more drinking than its damage saves.",
      "**Hammer of Justice** doubles **Seal of Command**'s judgement: against a stunned mob it hits for 339 to 373 instead of 169 to 187 at rank 5. When both are ready and the mob has more than 30% health left, stun first, then judge; otherwise keep the stun for a caster or for when you are hurt.",
      "**Hammer of Wrath** finishes mobs below 20% health from level 44, and it is instant once you have 2 points in **Instrument of Law** (levels 35 and 36).",
      "Below about a third of your health, while the mob still has a quarter of its own: **Divine Protection** (8 seconds immune, but you cannot attack) with **Holy Light** inside it, or **Hammer of Justice** and heal during the stun; **Flash of Light** below a quarter, **Lay on Hands** below 15%. Between fights heal back to 80%; the tuned rotation drinks only below 15% of your mana."
@@ -49,8 +49,8 @@
      "A mob that runs at low health: **Hammer of Wrath** (30 yards) finishes it, or **Hammer of Justice** holds it."
     ],
     "rotations": {
-     "leveling:ret-dps": "505122d96860",
-     "leveling:holy-leveling": "fba5fddbb6f8",
+     "leveling:ret-dps": "d2c387bf1a8d",
+     "leveling:holy-leveling": "1f803e2dfeb5",
      "leveling:prot-leveling": "b67ce1361aef"
     },
     "written": "2026-10-15"
@@ -104,8 +104,8 @@
      "Tanking a dungeon on the way: **Seal of Fury**'s judgement taunts for 4 seconds, and **Righteous Fury** makes your Holy damage 60% more threat."
     ],
     "rotations": {
-     "leveling:ret-dps": "505122d96860",
-     "leveling:holy-leveling": "fba5fddbb6f8",
+     "leveling:ret-dps": "d2c387bf1a8d",
+     "leveling:holy-leveling": "1f803e2dfeb5",
      "leveling:prot-leveling": "b67ce1361aef"
     },
     "written": "2026-10-15"
@@ -142,7 +142,7 @@
      "**Blessing of Wisdom** instead of **Blessing of Might**: the fight lab found the blessings within about 2% of each other for Holy, and Wisdom's mana keeps coming while you fight and cast. **Seal of Righteousness** is your only damage seal: this build has no **Seal of Command**.",
      "**Judgement** and **Holy Strike** whenever ready; **Holy Power** (levels 35-39) adds 15% crit to **Holy Strike**. This build takes neither **Improved Judgement** nor **Sanctified Judgement**, so each judgement costs its full price.",
      "Heal in the fight once you drop below 40% health and the mob has more than a fifth left: **Divine Protection** below 30%, **Hammer of Justice**, then **Holy Light**; **Divine Favor** (level 42) makes that heal a sure crit. **Illumination** (25-29) returns half the base cost of each critical heal, and **Spiritual Focus** (40-41) keeps 70% of your heals from being pushed back.",
-     "Not on the list: **Consecration** and **Hammer of Wrath**. The Holy rotation never casts **Consecration** (its mana buys more as heals and less drinking), and its tuned rules skip **Hammer of Wrath** for about 1% faster kills.",
+     "Not on the list: **Consecration** and **Hammer of Wrath**. The Holy rotation never casts **Consecration** (its mana buys more as heals and less drinking), and its tuned rules (2026-10-15) skip **Hammer of Wrath** for about 3% faster kills.",
      "Drink below a quarter of your mana; between fights heal back to 80% with **Holy Light** or **Flash of Light**."
     ],
     "caveats": [
@@ -155,8 +155,8 @@
      "If you only want to reach 60, level as Retribution or Shockadin and respec: their pages kill about a quarter faster per mob."
     ],
     "rotations": {
-     "leveling:ret-dps": "505122d96860",
-     "leveling:holy-leveling": "2c5757cc0d7c",
+     "leveling:ret-dps": "d2c387bf1a8d",
+     "leveling:holy-leveling": "1f803e2dfeb5",
      "leveling:prot-leveling": "b67ce1361aef"
     },
     "written": "2026-10-15"
@@ -182,8 +182,8 @@
      "Two or more mobs: **Consecration** hits them all; the 60% mana rule was set for single mobs."
     ],
     "rotations": {
-     "leveling:ret-dps": "505122d96860",
-     "leveling:holy-leveling": "fba5fddbb6f8",
+     "leveling:ret-dps": "d2c387bf1a8d",
+     "leveling:holy-leveling": "1f803e2dfeb5",
      "leveling:prot-leveling": "b67ce1361aef"
     },
     "written": "2026-10-09"
@@ -195,7 +195,7 @@
     "why": [
      "The fight lab's Holy list uses **Seal of Command** once you have it (level 20; **Seal of Righteousness** before): it adds a Holy hit of 70% of your weapon damage on some swings, so a slow two-hander suits it, and its judgement hits a stunned mob twice as hard. When **Hammer of Justice** and **Judgement** are both ready and the mob has more than 30% health, stun first, then judge.",
      "**Judgement** and **Holy Strike** whenever ready: **Improved Judgement** (levels 15-16) brings **Judgement** back every 8 seconds, and **Sanctified Judgement** (21-23) returns 60% of your seal's mana cost each time. In the open search it is the build's most valuable talent at 60 (about 3 seconds per kill), ahead of **Improved Seals** (38-40) and **Two-Handed Weapon Specialization** (30-32).",
-     "No **Consecration** and no **Hammer of Wrath**: the Holy list never casts **Consecration**, and its tuned rules skip **Hammer of Wrath** (about 1% faster kills).",
+     "No **Consecration** and no **Hammer of Wrath**: the Holy list never casts **Consecration**, and its tuned rules (2026-10-15) skip **Hammer of Wrath** (about 3% faster kills).",
      "Heal in the fight once you drop below 40% health and the mob has more than a fifth left: **Divine Protection** below 30%, **Hammer of Justice**, then **Holy Light**; **Flash of Light** below a quarter, **Lay on Hands** below 15%."
     ],
     "caveats": [
@@ -209,8 +209,8 @@
     ],
     "written": "2026-10-15",
     "rotations": {
-     "leveling:ret-dps": "505122d96860",
-     "leveling:holy-leveling": "2c5757cc0d7c",
+     "leveling:ret-dps": "d2c387bf1a8d",
+     "leveling:holy-leveling": "1f803e2dfeb5",
      "leveling:prot-leveling": "b67ce1361aef"
     }
    }

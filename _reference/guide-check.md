@@ -11,7 +11,7 @@
 | druid | Balance | raid | 2026-10-09 | balance-dps 2b2250394daf |
 | druid | Balance | leveling | 2026-10-15 | leveling:balance-dps 67bb23052b71, leveling:feral-cat-dps 3bea75719fcd |
 | druid | Feral Combat | raid | 2026-10-15 | feral-bear-tank b7a596b37484, feral-cat-dps d0a11d810771 |
-| druid | Feral Combat | leveling | 2026-10-09 | leveling:balance-dps a25cd760d1dd, leveling:feral-cat-dps 16d2cf55e9e2 |
+| druid | Feral Combat | leveling | 2026-10-15 | leveling:balance-dps 67bb23052b71, leveling:feral-cat-dps 3bea75719fcd |
 | druid | Restoration | raid | 2026-10-15 | healer-policy 49df00cd25d8 |
 | druid | Restoration | leveling | 2026-10-15 | leveling:balance-dps 67bb23052b71, leveling:feral-cat-dps 3bea75719fcd |
 | hunter | Beast Mastery | raid | 2026-10-15 | bm-raid 8f87aee79821 |
@@ -26,42 +26,42 @@
 | hunter | Hybrid Beast Mastery/Survival | raid | 2026-10-15 | bm-raid 8f87aee79821, melee-dps 15437c6a63dc |
 | hunter | Hybrid Beast Mastery/Survival | leveling | 2026-10-15 | leveling:bm-leveling c08a583636cb, leveling:melee-dps 7109a3c6ccfa, leveling:mm-raid 6b6e086e912a |
 | mage | Frost | raid | 2026-10-15 | frost-raid ceaa8ac62133 |
-| mage | Frost | leveling | 2026-10-15 | leveling:arcane-leveling ca255cff8f0d, leveling:fire-leveling 57da8af441b1, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 5854b75cdb27, leveling:frostfire-leveling b1bfa6483c74 |
+| mage | Frost | leveling | 2026-10-15 | leveling:arcane-leveling b408d17083e0, leveling:fire-leveling d8e13fe4d0d8, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 8cffa408a042, leveling:frostfire-leveling b1bfa6483c74 |
 | mage | Hybrid Arcane/Frost | raid | 2026-10-15 | arcane-dps 7bae7936e6c9, frost-raid ceaa8ac62133 |
-| mage | Hybrid Arcane/Frost | leveling | 2026-10-15 | leveling:arcane-leveling ca255cff8f0d, leveling:fire-leveling 57da8af441b1, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 5854b75cdb27, leveling:frostfire-leveling b1bfa6483c74 |
+| mage | Hybrid Arcane/Frost | leveling | 2026-10-15 | leveling:arcane-leveling b408d17083e0, leveling:fire-leveling d8e13fe4d0d8, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 8cffa408a042, leveling:frostfire-leveling b1bfa6483c74 |
 | mage | Arcane | raid | 2026-10-15 | arcane-dps 7bae7936e6c9 |
-| mage | Arcane | leveling | 2026-10-15 | leveling:arcane-leveling ca255cff8f0d, leveling:fire-leveling 57da8af441b1, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 5854b75cdb27, leveling:frostfire-leveling b1bfa6483c74 |
+| mage | Arcane | leveling | 2026-10-15 | leveling:arcane-leveling b408d17083e0, leveling:fire-leveling d8e13fe4d0d8, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 8cffa408a042, leveling:frostfire-leveling b1bfa6483c74 |
 | mage | Fire | raid | 2026-10-15 | fire-raid 7334e0e47452 |
-| mage | Fire | leveling | 2026-10-15 | leveling:arcane-leveling ca255cff8f0d, leveling:fire-leveling 57da8af441b1, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 5854b75cdb27, leveling:frostfire-leveling b1bfa6483c74 |
+| mage | Fire | leveling | 2026-10-15 | leveling:arcane-leveling b408d17083e0, leveling:fire-leveling d8e13fe4d0d8, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 8cffa408a042, leveling:frostfire-leveling b1bfa6483c74 |
 | mage | Hybrid Fire/Frost | raid | 2026-10-15 | fire-raid 7334e0e47452, frost-raid ceaa8ac62133, frostfire-raid 6846a04e8427 |
-| mage | Hybrid Fire/Frost | leveling | 2026-10-15 | leveling:arcane-leveling ca255cff8f0d, leveling:fire-leveling 57da8af441b1, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 5854b75cdb27, leveling:frostfire-leveling b1bfa6483c74 |
+| mage | Hybrid Fire/Frost | leveling | 2026-10-15 | leveling:arcane-leveling b408d17083e0, leveling:fire-leveling d8e13fe4d0d8, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 8cffa408a042, leveling:frostfire-leveling b1bfa6483c74 |
 | paladin | Retribution | raid | 2026-10-15 | ret-dps 3cec859f35ba |
-| paladin | Retribution | leveling | 2026-10-15 | leveling:holy-leveling fba5fddbb6f8, leveling:prot-leveling b67ce1361aef, leveling:ret-dps 505122d96860 |
+| paladin | Retribution | leveling | 2026-10-15 | leveling:holy-leveling 1f803e2dfeb5, leveling:prot-leveling b67ce1361aef, leveling:ret-dps d2c387bf1a8d |
 | paladin | Protection | raid | 2026-10-15 | prot-tank 608ab285bedb |
-| paladin | Protection | leveling | 2026-10-15 | leveling:holy-leveling fba5fddbb6f8, leveling:prot-leveling b67ce1361aef, leveling:ret-dps 505122d96860 |
+| paladin | Protection | leveling | 2026-10-15 | leveling:holy-leveling 1f803e2dfeb5, leveling:prot-leveling b67ce1361aef, leveling:ret-dps d2c387bf1a8d |
 | paladin | Holy | raid | 2026-10-15 | healer-policy 0b517166c0ec |
-| paladin | Holy | leveling | 2026-10-15 | leveling:holy-leveling 2c5757cc0d7c, leveling:prot-leveling b67ce1361aef, leveling:ret-dps 505122d96860 |
-| paladin | Hybrid Protection/Retribution | leveling | 2026-10-09 | leveling:holy-leveling fba5fddbb6f8, leveling:prot-leveling b67ce1361aef, leveling:ret-dps 505122d96860 |
-| paladin | Hybrid Holy/Retribution | leveling | 2026-10-15 | leveling:holy-leveling 2c5757cc0d7c, leveling:prot-leveling b67ce1361aef, leveling:ret-dps 505122d96860 |
+| paladin | Holy | leveling | 2026-10-15 | leveling:holy-leveling 1f803e2dfeb5, leveling:prot-leveling b67ce1361aef, leveling:ret-dps d2c387bf1a8d |
+| paladin | Hybrid Protection/Retribution | leveling | 2026-10-09 | leveling:holy-leveling 1f803e2dfeb5, leveling:prot-leveling b67ce1361aef, leveling:ret-dps d2c387bf1a8d |
+| paladin | Hybrid Holy/Retribution | leveling | 2026-10-15 | leveling:holy-leveling 1f803e2dfeb5, leveling:prot-leveling b67ce1361aef, leveling:ret-dps d2c387bf1a8d |
 | priest | Shadow | raid | 2026-10-15 | shadow-dps d5c2e2e6d230 |
-| priest | Shadow | leveling | 2026-10-15 | leveling:discipline-leveling 437734494b34, leveling:holy-leveling 107ea9aee865, leveling:shadow-dps 86c26e0ea6e6 |
+| priest | Shadow | leveling | 2026-10-15 | leveling:discipline-leveling 1001ff22d7b8, leveling:holy-leveling af15864e29f4, leveling:shadow-dps 86c26e0ea6e6 |
 | priest | Hybrid Discipline/Holy | raid | 2026-10-15 | smite-dps 717a571c0573 |
-| priest | Hybrid Discipline/Holy | leveling | 2026-10-09 | leveling:discipline-leveling 437734494b34, leveling:holy-leveling 107ea9aee865, leveling:shadow-dps 17e91dc95a88 |
+| priest | Hybrid Discipline/Holy | leveling | 2026-10-15 | leveling:discipline-leveling 1001ff22d7b8, leveling:holy-leveling af15864e29f4, leveling:shadow-dps 86c26e0ea6e6 |
 | priest | Holy | raid | 2026-10-15 | healer-policy 04654112bc94 |
-| priest | Holy | leveling | 2026-10-15 | leveling:discipline-leveling 437734494b34, leveling:holy-leveling 107ea9aee865, leveling:shadow-dps 86c26e0ea6e6 |
+| priest | Holy | leveling | 2026-10-15 | leveling:discipline-leveling 1001ff22d7b8, leveling:holy-leveling af15864e29f4, leveling:shadow-dps 86c26e0ea6e6 |
 | priest | Discipline | raid | 2026-10-15 | healer-policy 04654112bc94 |
-| priest | Discipline | leveling | 2026-10-15 | leveling:discipline-leveling 437734494b34, leveling:holy-leveling 107ea9aee865, leveling:shadow-dps 86c26e0ea6e6 |
-| priest | Hybrid Discipline/Shadow | leveling | 2026-10-15 | leveling:discipline-leveling 437734494b34, leveling:holy-leveling 107ea9aee865, leveling:shadow-dps 86c26e0ea6e6 |
-| priest | Hybrid Holy/Shadow | leveling | 2026-10-15 | leveling:discipline-leveling 437734494b34, leveling:holy-leveling 107ea9aee865, leveling:shadow-dps 86c26e0ea6e6 |
+| priest | Discipline | leveling | 2026-10-15 | leveling:discipline-leveling 1001ff22d7b8, leveling:holy-leveling af15864e29f4, leveling:shadow-dps 86c26e0ea6e6 |
+| priest | Hybrid Discipline/Shadow | leveling | 2026-10-15 | leveling:discipline-leveling 1001ff22d7b8, leveling:holy-leveling af15864e29f4, leveling:shadow-dps 86c26e0ea6e6 |
+| priest | Hybrid Holy/Shadow | leveling | 2026-10-15 | leveling:discipline-leveling 1001ff22d7b8, leveling:holy-leveling af15864e29f4, leveling:shadow-dps 86c26e0ea6e6 |
 | rogue | Combat | raid | 2026-10-15 | combat-daggers-raid 99ffbf54f283, combat-swords-raid 0f13285f52c7 |
-| rogue | Combat | leveling | 2026-10-15 | leveling:combat-daggers-raid 2fa9057d0bed, leveling:combat-swords-raid 22338ce5f5c1, leveling:subtlety-leveling 6745eb765e3c |
+| rogue | Combat | leveling | 2026-10-15 | leveling:combat-daggers-raid 2fa9057d0bed, leveling:combat-swords-raid 22338ce5f5c1, leveling:subtlety-leveling 33020a503ce0 |
 | rogue | Assassination | raid | 2026-10-15 | assassination-raid f681c6caf5d3 |
-| rogue | Assassination | leveling | 2026-10-15 | leveling:combat-daggers-raid 2fa9057d0bed, leveling:combat-swords-raid 22338ce5f5c1, leveling:subtlety-leveling 6745eb765e3c |
+| rogue | Assassination | leveling | 2026-10-15 | leveling:combat-daggers-raid 2fa9057d0bed, leveling:combat-swords-raid 22338ce5f5c1, leveling:subtlety-leveling 33020a503ce0 |
 | rogue | Subtlety | raid | 2026-10-15 | subtlety-raid 7d764d235cf7 |
-| rogue | Subtlety | leveling | 2026-10-15 | leveling:combat-daggers-raid 2fa9057d0bed, leveling:combat-swords-raid 22338ce5f5c1, leveling:subtlety-leveling 6745eb765e3c |
-| rogue | Hybrid Assassination/Combat | leveling | 2026-10-15 | leveling:combat-daggers-raid 2fa9057d0bed, leveling:combat-swords-raid 22338ce5f5c1, leveling:subtlety-leveling 6745eb765e3c |
+| rogue | Subtlety | leveling | 2026-10-15 | leveling:combat-daggers-raid 2fa9057d0bed, leveling:combat-swords-raid 22338ce5f5c1, leveling:subtlety-leveling 33020a503ce0 |
+| rogue | Hybrid Assassination/Combat | leveling | 2026-10-15 | leveling:combat-daggers-raid 2fa9057d0bed, leveling:combat-swords-raid 22338ce5f5c1, leveling:subtlety-leveling 33020a503ce0 |
 | rogue | Hybrid Assassination/Combat | raid | 2026-10-15 | assassination-raid f681c6caf5d3, combat-daggers-raid 99ffbf54f283, combat-swords-raid 0f13285f52c7 |
-| rogue | Hybrid Combat/Subtlety | leveling | 2026-10-15 | leveling:combat-daggers-raid 2fa9057d0bed, leveling:combat-swords-raid 22338ce5f5c1, leveling:subtlety-leveling 6745eb765e3c |
+| rogue | Hybrid Combat/Subtlety | leveling | 2026-10-15 | leveling:combat-daggers-raid 2fa9057d0bed, leveling:combat-swords-raid 22338ce5f5c1, leveling:subtlety-leveling 33020a503ce0 |
 | shaman | Elemental | raid | 2026-10-15 | elemental-dps 6871f3eacb72, stormcaller-dps 6f1b03f81902 |
 | shaman | Elemental | leveling | 2026-10-15 | leveling:elemental-dps 5245b3f5a39e, leveling:enhancement-dps 205a463c9540 |
 | shaman | Enhancement | raid | 2026-10-15 | enhancement-dps 2091583cf1d6 |
@@ -71,17 +71,17 @@
 | shaman | Hybrid Elemental/Enhancement | raid | 2026-10-15 | elemental-dps 6871f3eacb72, enhancement-dps 2091583cf1d6, stormcaller-dps 6f1b03f81902 |
 | shaman | Hybrid Elemental/Enhancement | leveling | 2026-10-15 | leveling:elemental-dps 5245b3f5a39e, leveling:enhancement-dps 205a463c9540 |
 | warlock | Affliction | raid | 2026-10-15 | affliction-raid 1e87f29537b5 |
-| warlock | Affliction | leveling | 2026-10-15 | leveling:affliction-leveling d4c13e2b3acd, leveling:demonology-leveling 48f980d55b71, leveling:destruction-leveling b70c98d7eaad |
+| warlock | Affliction | leveling | 2026-10-15 | leveling:affliction-leveling d4c13e2b3acd, leveling:demonology-leveling ffff9f0c2661, leveling:destruction-leveling 5ea4c8e212d5 |
 | warlock | Demonology | raid | 2026-10-15 | demonology-raid 0077e0a9b76b |
-| warlock | Demonology | leveling | 2026-10-15 | leveling:affliction-leveling d4c13e2b3acd, leveling:demonology-leveling 48f980d55b71, leveling:destruction-leveling b70c98d7eaad |
+| warlock | Demonology | leveling | 2026-10-15 | leveling:affliction-leveling d4c13e2b3acd, leveling:demonology-leveling ffff9f0c2661, leveling:destruction-leveling 5ea4c8e212d5 |
 | warlock | Destruction | raid | 2026-10-15 | fire-destro-raid e2b37fe11748, incinerate-raid 89f1f9f7a8d6, sb-raid 053cdc613b86 |
-| warlock | Destruction | leveling | 2026-10-15 | leveling:affliction-leveling d4c13e2b3acd, leveling:demonology-leveling 48f980d55b71, leveling:destruction-leveling b70c98d7eaad |
+| warlock | Destruction | leveling | 2026-10-15 | leveling:affliction-leveling d4c13e2b3acd, leveling:demonology-leveling ffff9f0c2661, leveling:destruction-leveling 5ea4c8e212d5 |
 | warlock | Hybrid Affliction/Destruction | raid | 2026-10-15 | affliction-raid 1e87f29537b5, fire-destro-raid e2b37fe11748, incinerate-raid 89f1f9f7a8d6, sb-raid 053cdc613b86 |
-| warlock | Hybrid Affliction/Destruction | leveling | 2026-10-15 | leveling:affliction-leveling d4c13e2b3acd, leveling:demonology-leveling 48f980d55b71, leveling:destruction-leveling b70c98d7eaad |
-| warlock | Hybrid Affliction/Demonology | leveling | 2026-10-15 | leveling:affliction-leveling d4c13e2b3acd, leveling:demonology-leveling 48f980d55b71, leveling:destruction-leveling b70c98d7eaad |
+| warlock | Hybrid Affliction/Destruction | leveling | 2026-10-15 | leveling:affliction-leveling d4c13e2b3acd, leveling:demonology-leveling ffff9f0c2661, leveling:destruction-leveling 5ea4c8e212d5 |
+| warlock | Hybrid Affliction/Demonology | leveling | 2026-10-15 | leveling:affliction-leveling d4c13e2b3acd, leveling:demonology-leveling ffff9f0c2661, leveling:destruction-leveling 5ea4c8e212d5 |
 | warrior | Arms | raid | 2026-10-09 | arms-2h-raid d2f527aed9b3, arms-battle-raid c54c2d9971c5, fury-dw-raid e44982e8703e |
-| warrior | Arms | leveling | 2026-10-09 | leveling:arms-2h-raid 82a1e14b306e, leveling:fury-dw-raid 26eba980d81e, leveling:prot-leveling a1b7ef2b8d8c |
+| warrior | Arms | leveling | 2026-10-15 | leveling:arms-2h-raid 70ce8c73c540, leveling:fury-dw-raid 72874fce5f87, leveling:prot-leveling a1b7ef2b8d8c |
 | warrior | Fury | raid | 2026-10-15 | arms-2h-raid d2f527aed9b3, fury-dw-raid e44982e8703e |
-| warrior | Fury | leveling | 2026-10-09 | leveling:arms-2h-raid 82a1e14b306e, leveling:fury-dw-raid 26eba980d81e, leveling:prot-leveling a1b7ef2b8d8c |
+| warrior | Fury | leveling | 2026-10-15 | leveling:arms-2h-raid 70ce8c73c540, leveling:fury-dw-raid 72874fce5f87, leveling:prot-leveling a1b7ef2b8d8c |
 | warrior | Protection | raid | 2026-10-09 | prot-tank b093b7e893bc |
 | warrior | Protection | leveling | 2026-10-15 | leveling:arms-2h-raid 70ce8c73c540, leveling:fury-dw-raid 72874fce5f87, leveling:prot-leveling a1b7ef2b8d8c |

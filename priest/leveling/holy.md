@@ -15,12 +15,12 @@
 **In the fight**, top to bottom:
 
 1. **Shadow Word: Pain** to pull.
-2. **Penance** and **Mind Blast** whenever they are ready.
+2. **Mind Blast** whenever it is ready, **Penance** too while you have more than 30% mana.
 3. **Smite** in between while the mob has more than a third of its health and you have more than 30% mana; your wand otherwise.
 4. Skip **Holy Fire**: its long cast costs more than it deals while leveling.
 5. Hurt: **Power Word: Shield** again below half your health, **Flash Heal** below a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%.
 
-**Between fights:** Drink only below 15% mana; **Renew** yourself after the fight and eat only if you are still below 80% health.
+**Between fights:** Drink only below 15% mana; **Renew** yourself after the fight and eat only if you are still below two thirds of your health.
 
 ## Why this rotation
 
@@ -28,11 +28,11 @@ You level with your raid talents, Discipline first: **Penance** at 30 is the big
 
 **Why it works**
 
-- **Shadow Word: Pain** pulls because it is instant and ticks for the whole fight. **Penance** (from 30) and **Mind Blast** hit harder for their cast time than **Smite**, so they go out whenever ready.
-- **Smite** only while the mob has more than about a third of its health and you have more than 30% mana: below that your wand finishes without spending mana. The fight lab measured these limits about 4% and 3.5% faster.
-- Skip **Holy Fire**: a slow cast whose damage Forever cut about in half, and the fight lab measured leveling about 4% faster without it. Your **Power in Light** point does nothing while leveling: they need **Holy Fire** burning and are there for the raid build.
+- **Shadow Word: Pain** pulls because it is instant and ticks for the whole fight. **Penance** (from 30) and **Mind Blast** hit harder for their cast time than **Smite**, so they go out whenever ready; **Penance** only while you have more than 30% mana (tuned 2026-10-15, about 2% faster).
+- **Smite** only while the mob has more than about a third of its health and you have more than 30% mana: below that your wand finishes without spending mana. The fight lab (re-tuned 2026-10-15) measured these limits about 3.5% and 2% faster.
+- Skip **Holy Fire**: a slow cast whose damage Forever cut about in half, and the fight lab measured leveling about 2% faster without it. Your **Power in Light** point does nothing while leveling: they need **Holy Fire** burning and are there for the raid build.
 - **Inner Focus** (from 20) at the start of a pull: press it right before **Mind Blast** or **Smite** to make that cast free with 25% more crit chance.
-- Mana: **Meditation** (levels 24 and 28-29) keeps half your regeneration going while you cast, so drink only below 15% mana. After a fight, **Renew** heals you while you loot and walk on; eat if you are still under 80% health (the fight lab measured eating that early slightly faster).
+- Mana: **Meditation** (levels 24 and 28-29) keeps half your regeneration going while you cast, so drink only below 15% mana. After a fight, **Renew** heals you while you loot and walk on; eat only if you are still below two thirds of your health (the 2026-10-15 re-tune dropped the earlier 80% rule).
 
 **Caveats**
 
@@ -43,8 +43,6 @@ You level with your raid talents, Discipline first: **Penance** at 30 is the big
 **When to change it**
 
 - Hurt in a fight: shield again below half your health, **Flash Heal** below about a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%.
-
-*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 

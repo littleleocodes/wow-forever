@@ -33,7 +33,7 @@ Holy levels with the raid healer build as a two-handed **Seal of Righteousness**
 - **Blessing of Wisdom** instead of **Blessing of Might**: the fight lab found the blessings within about 2% of each other for Holy, and Wisdom's mana keeps coming while you fight and cast. **Seal of Righteousness** is your only damage seal: this build has no **Seal of Command**.
 - **Judgement** and **Holy Strike** whenever ready; **Holy Power** (levels 35-39) adds 15% crit to **Holy Strike**. This build takes neither **Improved Judgement** nor **Sanctified Judgement**, so each judgement costs its full price.
 - Heal in the fight once you drop below 40% health and the mob has more than a fifth left: **Divine Protection** below 30%, **Hammer of Justice**, then **Holy Light**; **Divine Favor** (level 42) makes that heal a sure crit. **Illumination** (25-29) returns half the base cost of each critical heal, and **Spiritual Focus** (40-41) keeps 70% of your heals from being pushed back.
-- Not on the list: **Consecration** and **Hammer of Wrath**. The Holy rotation never casts **Consecration** (its mana buys more as heals and less drinking), and its tuned rules skip **Hammer of Wrath** for about 1% faster kills.
+- Not on the list: **Consecration** and **Hammer of Wrath**. The Holy rotation never casts **Consecration** (its mana buys more as heals and less drinking), and its tuned rules (2026-10-15) skip **Hammer of Wrath** for about 3% faster kills.
 - Drink below a quarter of your mana; between fights heal back to 80% with **Holy Light** or **Flash of Light**.
 
 **Caveats**
@@ -46,8 +46,6 @@ Holy levels with the raid healer build as a two-handed **Seal of Righteousness**
 
 - A mob that casts spells: **Hammer of Justice** stops the cast.
 - If you only want to reach 60, level as Retribution or Shockadin and respec: their pages kill about a quarter faster per mob.
-
-*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 

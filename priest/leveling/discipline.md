@@ -17,7 +17,7 @@
 **In the fight**, top to bottom:
 
 1. **Shadow Word: Pain** to pull.
-2. **Penance** and **Mind Blast** whenever they are ready.
+2. **Mind Blast** whenever it is ready, **Penance** too while you have more than 30% mana.
 3. **Smite** in between while the mob has more than a third of its health and you have more than 30% mana; your wand otherwise.
 4. Skip **Holy Fire**: its long cast costs more than it deals while leveling.
 5. Hurt: **Power Word: Shield** again below half your health, **Flash Heal** below a third (with **Renewed Hope** it crits more and brings the next shield sooner), **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%.
@@ -30,11 +30,11 @@ You level with your raid talents, all Discipline first: **Penance** at 35 carrie
 
 **Why it works**
 
-- **Shadow Word: Pain** pulls because it is instant and ticks for the whole fight. **Penance** (from 35) and **Mind Blast** hit harder for their cast time than **Smite**, so they go out whenever ready.
+- **Shadow Word: Pain** pulls because it is instant and ticks for the whole fight. **Penance** (from 35) and **Mind Blast** hit harder for their cast time than **Smite**, so they go out whenever ready; **Penance** only while you have more than 30% mana (tuned 2026-10-15, about 2% faster).
 - **Inner Focus** (from 20) at the start of a pull: press it right before **Mind Blast** or **Smite** to make that cast free with 25% more crit chance.
-- **Smite** only while the mob has more than about a third of its health and you have more than 30% mana; below that your wand finishes. The fight lab measured these limits about 5% and 3.5% faster, and skipping **Holy Fire** (a slow cast whose damage Forever cut about in half) another 5%.
+- **Smite** only while the mob has more than about a third of its health and you have more than 30% mana; below that your wand finishes. The fight lab (re-tuned 2026-10-15) measured these limits about 4% and 1% faster, and skipping **Holy Fire** (a slow cast whose damage Forever cut about in half) another 1%.
 - **Renewed Hope** (level 36) ties your heals to your shield: a **Flash Heal** on yourself while Weakened Soul is on you crits 10% more often and cuts 5 seconds off Weakened Soul, so your next **Power Word: Shield** comes sooner.
-- Mana: **Meditation** (levels 31-33) keeps half your regeneration going while you cast, so drink only below 15% mana (measured about 3% faster than at 35%). After a fight, **Renew** heals you while you loot and walk; eat only if you are still below two thirds of your health.
+- Mana: **Meditation** (levels 31-33) keeps half your regeneration going while you cast, so drink only below 15% mana (measured about 1.5% faster than at 35%). After a fight, **Renew** heals you while you loot and walk; eat only if you are still below two thirds of your health.
 
 **Caveats**
 
@@ -46,8 +46,6 @@ You level with your raid talents, all Discipline first: **Penance** at 35 carrie
 
 - Hurt in a fight: shield again below half your health, **Flash Heal** below about a third; **Psychic Scream** if a mob is on you and you are below 40%.
 - If you only want to reach 60, level as Shadow and respec: half the time per kill in the fight lab.
-
-*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 

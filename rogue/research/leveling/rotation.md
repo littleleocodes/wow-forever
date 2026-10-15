@@ -30,11 +30,11 @@ Before the fight: Daggers in both hands: **Instant Poison** on your main hand, *
 4. Once you have **Hemorrhage**, it replaces **Sinister Strike** as the builder.
 5. At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder; earlier when it would kill the mob.
 6. **Riposte** after you parry.
-7. **Kick** a caster mob's spell.
+7. Do not **Kick** a caster mob: let it cast and walk in.
 8. **Evasion** when your health gets low.
 9. If **Evasion** is on cooldown when you need it, **Preparation** resets it.
 
-Between fights: Bandage below 60% health, eat below half.
+Between fights: Bandage below 60% health, eat below 40%.
 
 **Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-15, on top of the priority below): eat below 40% health; never cast Slice and Dice; never cast Kidney Shot; never cast Kick. Together +8.5% time per kill saved for `combat-subtlety-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 

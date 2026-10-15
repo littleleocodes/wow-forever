@@ -36,7 +36,7 @@ Classic Era reference builds: [leveling-arms](../talents/classic-baseline/leveli
 
 - [Leveling guide](guide.md): the recommended build (Fury, `fury-open-leveling`) level by level, what each bracket feels like and what the fight lab does not model.
 - [Rotation](rotation.md): the build each leveling page picks, the rotation it plays and what each leveling build casts per kill, level by level.
-- [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**64.1 h** (28.8% faster than talentless), no respec).
+- [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**63.3 h** (29.7% faster than talentless), no respec).
 - Recommended build: [fury-open-leveling](builds/fury-open-leveling.md) (Fury; player page: [Fury leveling](../../leveling/fury.md)).
 
 ## Fight lab (Monte Carlo fight simulator)

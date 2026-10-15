@@ -17,7 +17,7 @@
 **In the fight**, top to bottom:
 
 1. With **Demonic Brand**: **Searing Pain** whenever the brand is gone and the Voidwalker is hitting the mob.
-2. **Corruption**, **Bane of Agony** and **Siphon Life** on the mob, and **Immolate** while you have more than half your mana; none of them on a mob below about a third of its health.
+2. **Corruption** (only while you have more than 30% mana), **Bane of Agony** and **Siphon Life** on the mob, and **Immolate** while you have more than half your mana; none of them on a mob below about a third of its health.
 3. With **Decimation**: **Soul Fire** while its buff lasts (a **Shadow Bolt** or **Searing Pain** on a mob below 35% health starts it).
 4. Above 80% mana, **Shadow Bolt** (**Searing Pain** when the mob has too little health left for it); below that, your wand.
 5. **Drain Life** whenever you drop below 60% health, and in place of the wand while you are below 85%; **Life Tap** in a fight only when you are short of mana and above 60% health.
@@ -32,7 +32,7 @@ Demonology levels like Affliction with a stronger Voidwalker: the same dots from
 
 **Why it works**
 
-- Until level 30 this order is pure Affliction, and the dots stay the core: Voidwalker in first, **Amplify Curse** before the pull when it is ready, then **Corruption**, **Bane of Agony** and, from 30, **Siphon Life**. Skip **Corruption** on a mob below about a third of its health: it dies before the spell pays for its mana.
+- Until level 30 this order is pure Affliction, and the dots stay the core: Voidwalker in first, **Amplify Curse** before the pull when it is ready, then **Corruption**, **Bane of Agony** and, from 30, **Siphon Life**. Skip **Corruption** on a mob below about a third of its health (it dies before the spell pays for its mana) and while you are below 30% mana: the 2026-10-15 re-tune measured the mana rule about 2% faster per kill.
 - **Searing Pain** with **Demonic Brand** brands the mob for 10 seconds: the Voidwalker's next attacks (6 with all 3 points, from level 55) each deal about 65 extra damage at level 60, and the brand halves **Searing Pain**'s own threat. Recast it whenever the brand is gone and the Voidwalker is hitting the mob; the fight lab measured 3 talent points moved into **Demonic Brand** at about 3% faster kills.
 - **Immolate** also goes on while you have more than half your mana; the fight lab casts it after the other dots.
 - **Shadow Bolt** only when your mana is nearly full (above 80% in the fight lab), the wand otherwise: the dots do the killing and the wand costs nothing. When a mob has too little health left for a **Shadow Bolt**, the fight lab casts **Searing Pain** instead.
@@ -48,8 +48,6 @@ Demonology levels like Affliction with a stronger Voidwalker: the same dots from
 
 - If the Voidwalker dies, finish the mob with dots, **Death Coil** and the wand, and summon a new one before the next pull: without a demon out you also lose **Demonic Knowledge**, **Soul Link** and **Master Demonologist**.
 - Finish a nearly dead mob with the wand or **Searing Pain**; start no new dot on it.
-
-*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents while leveling
 
