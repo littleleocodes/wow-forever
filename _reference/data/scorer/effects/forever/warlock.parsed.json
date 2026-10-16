@@ -61,23 +61,19 @@
    }
   ]
  },
- "Malediction": {
+ "Grim Reach": {
   "tree": "Affliction",
-  "max": 5,
-  "text": "Increases all periodic damage done by your Warlock spells by 1%.",
+  "max": 2,
+  "text": "Increases the range of your Affliction spells by 10%.",
   "effects": [
    {
-    "channel": "dmg",
+    "channel": "range",
     "scope": [
-     "ability:Warlock",
-     "dot"
+     "ability:Affliction"
     ],
     "values": [
-     0.01,
-     0.02,
-     0.03,
-     0.04,
-     0.05
+     10.0,
+     20.0
     ],
     "source": "parsed"
    }
@@ -135,7 +131,7 @@
  "Amplify Curse": {
   "tree": "Affliction",
   "max": 1,
-  "text": "Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 20%. Lasts 30 sec.",
+  "text": "Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 50%. Lasts 30 sec.",
   "effects": [
    {
     "channel": "heal",
@@ -222,7 +218,7 @@
  "Shadow Mastery": {
   "tree": "Affliction",
   "max": 5,
-  "text": "Increases the damage dealt or life drained by your Shadow spells by 1%.",
+  "text": "Increases the damage dealt or life drained by your Shadow spells by 2%.",
   "effects": [
    {
     "channel": "dmg",
@@ -230,11 +226,11 @@
      "school:shadow"
     ],
     "values": [
-     0.01,
      0.02,
-     0.03,
      0.04,
-     0.05
+     0.06,
+     0.08,
+     0.1
     ],
     "source": "parsed"
    }
@@ -504,12 +500,12 @@
  "Destructive Reach": {
   "tree": "Destruction",
   "max": 2,
-  "text": "Increases the range of your damaging spells by 10%.",
+  "text": "Increases the range of your Destruction spells by 10%.",
   "effects": [
    {
     "channel": "range",
     "scope": [
-     "type:spell"
+     "ability:Destruction"
     ],
     "values": [
      10.0,

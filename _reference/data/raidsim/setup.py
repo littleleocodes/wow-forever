@@ -31,7 +31,7 @@ PROTOC_VERSION = "36.2"
 REPO_URL = "https://github.com/ElliotWood/Forever"
 SPARSE = ["sim", "proto", "cmd", "ui", "assets/database", "tools"]
 GAMES = {"forever": {"url": "https://github.com/ElliotWood/Forever", "dir": "forever-repo", "module": "github.com/wowsims/forever", "bench": "foreverbench",
-                     "commit": "2ce826577c5c42b93397d90461a30fd241fe8f7e"},   # 2ce8265: client build 1.60.1.70291, 2026-10-09 (was b0f0df3, 70205; 40be98e before)
+                     "commit": "b7083fac1ec8cc88bfbba0518dba3e0b5e71f8e1"},   # b7083fa: client build 1.60.1.70425, 2026-10-16 (2ce8265, 70291, from 2026-10-09; b0f0df3, 70205; 40be98e before)
          "classic": {"url": "https://github.com/wowsims/classic", "dir": "classic-repo", "module": "github.com/wowsims/classic", "bench": "classicbench",
                      "commit": "7779ebbf79dc7f1341e6ab939b28a3402c9a730a"}}
 
@@ -166,6 +166,10 @@ def main():
                 sh(["git", "checkout", "--", *tracked], repo)
             for f in set(patched) - set(tracked):   # files the patches add (the fork has none of its own there): removed
                 (repo / f).unlink(missing_ok=True)
+        # files a since-removed edit changed (2026-10-16: the retired Bear Form edit left sim/druid/forms.go modified and the checkout failed)
+        stale = sh(["git", "diff", "--name-only"], repo).stdout.split()
+        if stale:
+            sh(["git", "checkout", "--", *stale], repo)
         sh(["git", "fetch", "--depth", "1", "origin", "HEAD"], repo)
         sh(["git", "-c", "advice.detachedHead=false", "checkout", "FETCH_HEAD"], repo)
         new = sh(["git", "rev-parse", "HEAD"], repo).stdout.strip()

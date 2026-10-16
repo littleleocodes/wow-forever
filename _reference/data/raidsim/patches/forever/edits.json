@@ -49,21 +49,9 @@
  },
  {
   "file": "sim/core/rage.go",
-  "replace": "const CritRageMultiplier = 1.75",
-  "with": "const CritRageMultiplier = 2.0 // wow-forever patch: \"Additional Rage generated from landing Critical Strikes increased to 100% increased Rage (was 75%)\" (warriors 2026-10-02, druids 2026-10-08)",
-  "why": "Blizzard's beta notes: critical strikes generate 100% more rage (was 75%) for warriors and druids"
- },
- {
-  "file": "sim/core/rage.go",
   "replace": "generatedRage := preArmorDamage * DamageTakenRageFactor / unit.MaxHealth() * unit.rageBar.damageTakenRageMultiplier",
   "with": "generatedRage := preArmorDamage * DamageTakenRageFactor / foreverRageHealth(unit) * unit.rageBar.damageTakenRageMultiplier // wow-forever patch: an expected creature's health, not the player's (forever_rules_patch.go)",
   "why": "beta notes 2026-10-08: rage from damage taken uses an expected creature's health, not the player's"
- },
- {
-  "file": "sim/druid/forms.go",
-  "replace": "const BearFormThreatMultiplier = 1.3",
-  "with": "const BearFormThreatMultiplier = 1.5 // wow-forever patch: \"Bear Form and Dire Bear Form: Threat bonus increased to 50% from 30%\" (beta notes 2026-10-08)",
-  "why": "beta notes 2026-10-08: Bear Form threat bonus 50% (was 30%)"
  },
  {
   "file": "sim/core/spelldata/effect.go",
@@ -94,5 +82,17 @@
   "replace": "\tfor i, suffix := range db.RandomSuffixes {\n",
   "with": "\tforeverFillArmor(simDB.Items) // wow-forever patch: armor the database lacks (patches/forever/sim/core/forever_armor.go)\n\n\tfor i, suffix := range db.RandomSuffixes {\n",
   "why": "the fork's database lists base armor for one armor item in five; fill_armor.py generates the rest from Classic 1.12"
+ },
+ {
+  "file": "sim/paladin/talents_retribution.go",
+  "replace": "\tshare := spellData.ChampionOfTheLight.Effect(dbcenums.A_MOD_SPELL_DAMAGE_OF_STAT_PERCENT, 126).FractionAt(paladin.Talents.ChampionOfTheLight)\n",
+  "with": "\tshare := 0.10 * float64(paladin.Talents.ChampionOfTheLight) // wow-forever patch: 10% of Intellect a rank (client 70425's tooltip; the fork's spell 1311084 still reads 20%)\n",
+  "why": "client 70425 halved Champion of the Light to 10/20/30% of Intellect as spell damage; the fork's spell data (b7083fa) still gives 20/40/60%"
+ },
+ {
+  "file": "sim/hunter/talents_survival.go",
+  "replace": "\t\tName:       \"Resourcefulness Trigger\",\n\t\tCallback:   core.CallbackOnSpellHitDealt,\n",
+  "with": "\t\tName:       \"Resourcefulness Trigger\",\n\t\tCallback:   core.CallbackOnSpellHitDealt,\n\t\tProcMask:   core.ProcMaskMeleeSpecial | core.ProcMaskRangedSpecial, // wow-forever patch: ability crits only (client 70425)\n",
+  "why": "client 70425: Resourcefulness procs from 'melee and ranged ability Critical Strikes' (was any crit); the fork procs it from every crit, auto attacks and Auto Shot included"
  }
 ]

@@ -1,15 +1,15 @@
 {
   "slug": "shaman",
   "name": "Shaman",
-  "build": "1.60.1.70291",
-  "captured": "2026-10-08",
+  "build": "1.60.1.70425",
+  "captured": "2026-10-16",
   "tooltip_level": 60,
-  "source": "World of Warcraft: Forever beta client, build 1.60.1.70291: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-08, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo).",
+  "source": "World of Warcraft: Forever beta client, build 1.60.1.70425: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-16, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo).",
   "sources": {
     "talentsforever": {
       "url": "https://talentsforever.com/data.json",
-      "generated": "2026-10-08",
-      "build": "1.60.1.70291",
+      "generated": "2026-10-16",
+      "build": "1.60.1.70425",
       "license": "CC-BY-4.0",
       "attribution": "Data from talentsforever.com (https://talentsforever.com)"
     },
@@ -26,9 +26,29 @@
       "captured": "2026-10-04"
     }
   },
-  "removed_since_demo": [],
-  "renamed_since_demo": [],
-  "merge_notes": [],
+  "removed_since_demo": [
+    {
+      "tree": "Elemental",
+      "name": "Call of Thunder",
+      "build": "1.60.1.70425",
+      "row": 4,
+      "col": 3,
+      "maxRank": 1,
+      "rank1": "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by 3%."
+    }
+  ],
+  "renamed_since_demo": [
+    {
+      "tree": "Elemental",
+      "from": "Improved Fire Nova",
+      "to": "Trial by Fire",
+      "build": "1.60.1.70425"
+    }
+  ],
+  "merge_notes": [
+    "Elemental: the Trait-edge snapshot disagrees with the talentsforever export (only in the snapshot: Call of Thunder, Improved Fire Nova; only in the export: Elemental Mastery, Trial by Fire; moved or re-capped: Call of Flame, Earthbound, Elemental Alacrity, Elemental Devastation, Elemental Focus, Elemental Warding, Lava Burst, Lightning Overload); the export's positions, rank caps and prerequisites used for this tree",
+    "Restoration: the Trait-edge snapshot disagrees with the talentsforever export (only in the snapshot: none; only in the export: none; moved or re-capped: Tidal Focus, Totemic Focus); the export's positions, rank caps and prerequisites used for this tree"
+  ],
   "trees": [
     {
       "id": "elemental",
@@ -91,27 +111,35 @@
           ]
         },
         {
-          "id": "elemental/elemental-warding",
+          "id": "elemental/elemental-devastation",
           "row": 1,
           "col": 0,
-          "name": "Elemental Warding",
-          "icon": "spell_nature_spiritarmor",
+          "name": "Elemental Devastation",
+          "icon": "spell_fire_elementaldevastation",
           "maxRank": 3,
           "ranks": [
-            "Reduces damage taken from Fire, Frost, and Nature effects by 3%.",
-            "Reduces damage taken from Fire, Frost, and Nature effects by 7%.",
-            "Reduces damage taken from Fire, Frost, and Nature effects by 10%."
+            "Your Critical Strikes with direct damage spells increase your chance to get a Critical Strike with melee attacks by 3% for 10 sec.",
+            "Your Critical Strikes with direct damage spells increase your chance to get a Critical Strike with melee attacks by 6% for 10 sec.",
+            "Your Critical Strikes with direct damage spells increase your chance to get a Critical Strike with melee attacks by 9% for 10 sec."
           ],
           "status": "changed",
           "classic": [
-            "Reduces damage taken from Fire, Frost and Nature effects by 4%.",
-            "Reduces damage taken from Fire, Frost and Nature effects by 7%.",
-            "Reduces damage taken from Fire, Frost and Nature effects by 10%."
+            "Your offensive spell crits will increase your chance to get a critical strike with melee attacks by 3% for 10 sec.",
+            "Your offensive spell crits will increase your chance to get a critical strike with melee attacks by 6% for 10 sec.",
+            "Your offensive spell crits will increase your chance to get a critical strike with melee attacks by 9% for 10 sec."
           ],
-          "evidence": "shaman/03-shaman-elemental-elemental-warding.jpg",
+          "evidence": "shaman/06-shaman-elemental-elemental-devastation.jpg",
+          "ranks_prev": [
+            "Your offensive spell critical strikes will increase your chance to get a critical strike with melee attacks by 3% for 10 sec.",
+            "Your offensive spell critical strikes will increase your chance to get a critical strike with melee attacks by 6% for 10 sec.",
+            "Your offensive spell critical strikes will increase your chance to get a critical strike with melee attacks by 9% for 10 sec."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "was Elemental row 2, col 2"
+            "was Elemental row 4, col 4",
+            "moved in build 1.60.1.70425: was row 2, col 4",
+            "tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3)"
           ]
         },
         {
@@ -143,71 +171,8 @@
           ]
         },
         {
-          "id": "elemental/call-of-flame",
-          "row": 1,
-          "col": 2,
-          "name": "Call of Flame",
-          "icon": "spell_fire_immolation",
-          "maxRank": 3,
-          "ranks": [
-            "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 5%.",
-            "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 10%.",
-            "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 15%."
-          ],
-          "status": "changed",
-          "classic": [
-            "Increases the damage done by your Fire Totems by 5%.",
-            "Increases the damage done by your Fire Totems by 10%.",
-            "Increases the damage done by your Fire Totems by 15%."
-          ],
-          "evidence": "shaman/05-shaman-elemental-call-of-flame.jpg",
-          "diff": [
-            "tooltip changed"
-          ]
-        },
-        {
-          "id": "elemental/elemental-devastation",
-          "row": 1,
-          "col": 3,
-          "name": "Elemental Devastation",
-          "icon": "spell_fire_elementaldevastation",
-          "maxRank": 3,
-          "ranks": [
-            "Your offensive spell critical strikes will increase your chance to get a critical strike with melee attacks by 3% for 10 sec.",
-            "Your offensive spell critical strikes will increase your chance to get a critical strike with melee attacks by 6% for 10 sec.",
-            "Your offensive spell critical strikes will increase your chance to get a critical strike with melee attacks by 9% for 10 sec."
-          ],
-          "status": "changed",
-          "classic": [
-            "Your offensive spell crits will increase your chance to get a critical strike with melee attacks by 3% for 10 sec.",
-            "Your offensive spell crits will increase your chance to get a critical strike with melee attacks by 6% for 10 sec.",
-            "Your offensive spell crits will increase your chance to get a critical strike with melee attacks by 9% for 10 sec."
-          ],
-          "evidence": "shaman/06-shaman-elemental-elemental-devastation.jpg",
-          "diff": [
-            "tooltip changed",
-            "was Elemental row 4, col 4"
-          ]
-        },
-        {
-          "id": "elemental/elemental-focus",
-          "row": 2,
-          "col": 1,
-          "name": "Elemental Focus",
-          "icon": "spell_shadow_manaburn",
-          "maxRank": 1,
-          "ranks": [
-            "Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%."
-          ],
-          "status": "moved",
-          "evidence": "shaman/07-shaman-elemental-elemental-focus.jpg",
-          "diff": [
-            "was Elemental row 3, col 1"
-          ]
-        },
-        {
           "id": "elemental/elemental-alacrity",
-          "row": 2,
+          "row": 1,
           "col": 2,
           "name": "Elemental Alacrity",
           "icon": "spell_lightning_lightningbolt01",
@@ -219,22 +184,105 @@
           ],
           "status": "new",
           "evidence": "shaman/15-shaman-elemental-elemental-alacrity.jpg",
-          "diff": []
+          "diff": [
+            "moved in build 1.60.1.70425: was row 3, col 3"
+          ]
         },
         {
-          "id": "elemental/improved-fire-nova",
+          "id": "elemental/call-of-flame",
+          "row": 1,
+          "col": 3,
+          "name": "Call of Flame",
+          "icon": "spell_fire_immolation",
+          "maxRank": 3,
+          "ranks": [
+            "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 5%, as well as increases the duration of your Flame Shock spell by 3 sec.",
+            "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 10%, as well as increases the duration of your Flame Shock spell by 6 sec.",
+            "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 15%, as well as increases the duration of your Flame Shock spell by 9 sec."
+          ],
+          "status": "changed",
+          "classic": [
+            "Increases the damage done by your Fire Totems by 5%.",
+            "Increases the damage done by your Fire Totems by 10%.",
+            "Increases the damage done by your Fire Totems by 15%."
+          ],
+          "evidence": "shaman/05-shaman-elemental-call-of-flame.jpg",
+          "ranks_prev": [
+            "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 5%.",
+            "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 10%.",
+            "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 15%."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
+          "diff": [
+            "tooltip changed",
+            "moved in build 1.60.1.70425: was row 2, col 3",
+            "tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3)"
+          ]
+        },
+        {
+          "id": "elemental/elemental-focus",
+          "row": 2,
+          "col": 0,
+          "name": "Elemental Focus",
+          "icon": "spell_shadow_manaburn",
+          "maxRank": 1,
+          "ranks": [
+            "Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%."
+          ],
+          "status": "moved",
+          "evidence": "shaman/07-shaman-elemental-elemental-focus.jpg",
+          "diff": [
+            "was Elemental row 3, col 1",
+            "moved in build 1.60.1.70425: was row 3, col 2"
+          ]
+        },
+        {
+          "id": "elemental/elemental-warding",
+          "row": 2,
+          "col": 1,
+          "name": "Elemental Warding",
+          "icon": "spell_nature_spiritarmor",
+          "maxRank": 3,
+          "ranks": [
+            "Reduces damage taken from Fire, Frost, and Nature effects by 3%.",
+            "Reduces damage taken from Fire, Frost, and Nature effects by 7%.",
+            "Reduces damage taken from Fire, Frost, and Nature effects by 10%."
+          ],
+          "status": "changed",
+          "classic": [
+            "Reduces damage taken from Fire, Frost and Nature effects by 4%.",
+            "Reduces damage taken from Fire, Frost and Nature effects by 7%.",
+            "Reduces damage taken from Fire, Frost and Nature effects by 10%."
+          ],
+          "evidence": "shaman/03-shaman-elemental-elemental-warding.jpg",
+          "diff": [
+            "tooltip changed",
+            "was Elemental row 2, col 2",
+            "moved in build 1.60.1.70425: was row 2, col 1"
+          ]
+        },
+        {
+          "id": "elemental/trial-by-fire",
           "row": 3,
           "col": 0,
-          "name": "Improved Fire Nova",
+          "name": "Trial by Fire",
           "icon": "spell_fire_sealoffire",
           "maxRank": 2,
           "ranks": [
-            "Increases the damage done by your Fire Nova spell by 10% and reduces its cooldown by 2 sec.",
-            "Increases the damage done by your Fire Nova spell by 20% and reduces its cooldown by 4 sec."
+            "Increases the damage done by your Fire Nova spell by 10% and reduces its cooldown by 2 sec, and increases the duration of your Magma Totem by 10 sec.",
+            "Increases the damage done by your Fire Nova spell by 20% and reduces its cooldown by 4 sec, and increases the duration of your Magma Totem by 20 sec."
           ],
           "status": "new",
           "evidence": "shaman/09-shaman-elemental-improved-fire-nova.jpg",
-          "diff": []
+          "ranks_prev": [
+            "Increases the damage done by your Fire Nova spell by 10% and reduces its cooldown by 2 sec.",
+            "Increases the damage done by your Fire Nova spell by 20% and reduces its cooldown by 4 sec."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
+          "diff": [
+            "renamed from Improved Fire Nova in build 1.60.1.70425",
+            "tooltip changed in build 1.60.1.70425 (ranks 1, 2)"
+          ]
         },
         {
           "id": "elemental/eye-of-the-storm",
@@ -260,33 +308,20 @@
           ]
         },
         {
-          "id": "elemental/call-of-thunder",
+          "id": "elemental/earthbound",
           "row": 3,
-          "col": 2,
-          "name": "Call of Thunder",
-          "icon": "spell_nature_callstorm",
+          "col": 3,
+          "name": "Earthbound",
+          "icon": "spell_nature_stranglevines",
           "maxRank": 1,
           "ranks": [
-            "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by 3%."
+            "Your Earthbind Totem Immobilizes nearby targets for 5 sec when cast."
           ],
-          "status": "changed",
-          "classic": [
-            "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional 1%.",
-            "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional 2%.",
-            "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional 3%.",
-            "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional 4%.",
-            "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional 6%."
-          ],
-          "evidence": "shaman/11-shaman-elemental-call-of-thunder.jpg",
+          "status": "new",
+          "evidence": "shaman/14-shaman-elemental-earthbound.jpg",
           "diff": [
-            "max rank 5 → 1",
-            "tooltip changed",
-            "was Elemental row 3, col 3"
-          ],
-          "prereq": {
-            "id": "elemental/elemental-alacrity",
-            "rank": 3
-          }
+            "moved in build 1.60.1.70425: was row 5, col 4"
+          ]
         },
         {
           "id": "elemental/elemental-reach",
@@ -296,17 +331,46 @@
           "icon": "spell_nature_stormreach",
           "maxRank": 2,
           "ranks": [
-            "Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 3 yards, and increases the range of your Flame Shock spell by 8 yards.",
-            "Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 6 yards, and increases the range of your Flame Shock spell by 15 yards."
+            "Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 3 yards and reduces the cooldown of Totemic Projection by 10 sec.",
+            "Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 6 yards and reduces the cooldown of Totemic Projection by 20 sec."
           ],
           "status": "new",
           "evidence": "shaman/12-shaman-elemental-elemental-reach.jpg",
-          "diff": []
+          "ranks_prev": [
+            "Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 3 yards, and increases the range of your Flame Shock spell by 8 yards.",
+            "Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 6 yards, and increases the range of your Flame Shock spell by 15 yards."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
+          "diff": [
+            "tooltip changed in build 1.60.1.70425 (ranks 1, 2)"
+          ]
+        },
+        {
+          "id": "elemental/lava-burst",
+          "row": 4,
+          "col": 1,
+          "name": "Lava Burst",
+          "icon": "spell_shaman_lavaburst",
+          "maxRank": 1,
+          "ranks": [
+            "You hurl molten lava at the target, dealing 113 to 145 Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage."
+          ],
+          "status": "new",
+          "evidence": "shaman/16-shaman-elemental-lava-burst.jpg",
+          "ranks_prev": [
+            "You hurl molten lava at the target, dealing 150 to 193 Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
+          "diff": [
+            "moved in build 1.60.1.70425: was row 7, col 2",
+            "tooltip changed in build 1.60.1.70425 (ranks 1)",
+            "prerequisite changed in build 1.60.1.70425: was lightning overload"
+          ]
         },
         {
           "id": "elemental/lightning-overload",
           "row": 4,
-          "col": 1,
+          "col": 2,
           "name": "Lightning Overload",
           "icon": "spell_nature_lightningoverload",
           "maxRank": 3,
@@ -317,21 +381,13 @@
           ],
           "status": "new",
           "evidence": "shaman/13-shaman-elemental-lightning-overload.jpg",
-          "diff": []
-        },
-        {
-          "id": "elemental/earthbound",
-          "row": 4,
-          "col": 3,
-          "name": "Earthbound",
-          "icon": "spell_nature_stranglevines",
-          "maxRank": 1,
-          "ranks": [
-            "Your Earthbind Totem Immobilizes nearby targets for 5 sec when cast."
+          "diff": [
+            "moved in build 1.60.1.70425: was row 5, col 2"
           ],
-          "status": "new",
-          "evidence": "shaman/14-shaman-elemental-earthbound.jpg",
-          "diff": []
+          "prereq": {
+            "id": "elemental/elemental-alacrity",
+            "rank": 3
+          }
         },
         {
           "id": "elemental/elemental-fury",
@@ -355,35 +411,31 @@
           "diff": [
             "max rank 1 → 5",
             "tooltip changed",
-            "was Elemental row 5, col 2"
-          ],
-          "prereq": {
-            "id": "elemental/call-of-thunder",
-            "rank": 1
-          }
-        },
-        {
-          "id": "elemental/lava-burst",
-          "row": 6,
-          "col": 1,
-          "name": "Lava Burst",
-          "icon": "spell_shaman_lavaburst",
-          "maxRank": 1,
-          "ranks": [
-            "You hurl molten lava at the target, dealing 150 to 192 Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage."
-          ],
-          "status": "new",
-          "evidence": "shaman/16-shaman-elemental-lava-burst.jpg",
-          "ranks_prev": [
-            "You hurl molten lava at the target, dealing 150 to 193 Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage."
-          ],
-          "ranks_prev_build": "1.60.1.70205",
-          "diff": [
-            "tooltip changed in build 1.60.1.70291 (ranks 1)"
+            "was Elemental row 5, col 2",
+            "prerequisite changed in build 1.60.1.70425: was call of thunder"
           ],
           "prereq": {
             "id": "elemental/lightning-overload",
             "rank": 3
+          }
+        },
+        {
+          "id": "elemental/elemental-mastery",
+          "row": 6,
+          "col": 1,
+          "name": "Elemental Mastery",
+          "icon": "spell_nature_wispheal",
+          "maxRank": 1,
+          "ranks": [
+            "Gain mastery over Fire and Lightning, reducing the cast time of Lightning Bolt and Lava Burst by 0.5 sec, and removing the cooldown from Chain Lightning. Lasts 15 sec."
+          ],
+          "status": "new",
+          "diff": [
+            "added in build 1.60.1.70425"
+          ],
+          "prereq": {
+            "id": "elemental/lava-burst",
+            "rank": 1
           }
         }
       ],
@@ -806,31 +858,32 @@
           ]
         },
         {
-          "id": "restoration/totemic-focus",
+          "id": "restoration/tidal-focus",
           "row": 0,
           "col": 2,
-          "name": "Totemic Focus",
-          "icon": "spell_nature_moonglow",
+          "name": "Tidal Focus",
+          "icon": "spell_frost_manarecharge",
           "maxRank": 5,
           "ranks": [
-            "Reduces the Mana cost of your totems and any spells that summon or move them by 5%.",
-            "Reduces the Mana cost of your totems and any spells that summon or move them by 10%.",
-            "Reduces the Mana cost of your totems and any spells that summon or move them by 15%.",
-            "Reduces the Mana cost of your totems and any spells that summon or move them by 20%.",
-            "Reduces the Mana cost of your totems and any spells that summon or move them by 25%."
+            "Reduces the Mana cost of your healing spells by 1% and improves your chance to hit by 1%.",
+            "Reduces the Mana cost of your healing spells by 2% and improves your chance to hit by 2%.",
+            "Reduces the Mana cost of your healing spells by 3% and improves your chance to hit by 3%.",
+            "Reduces the Mana cost of your healing spells by 4% and improves your chance to hit by 4%.",
+            "Reduces the Mana cost of your healing spells by 5% and improves your chance to hit by 5%."
           ],
           "status": "changed",
           "classic": [
-            "Reduces the Mana cost of your totems by 5%.",
-            "Reduces the Mana cost of your totems by 10%.",
-            "Reduces the Mana cost of your totems by 15%.",
-            "Reduces the Mana cost of your totems by 20%.",
-            "Reduces the Mana cost of your totems by 25%."
+            "Reduces the Mana cost of your healing spells by 1%.",
+            "Reduces the Mana cost of your healing spells by 2%.",
+            "Reduces the Mana cost of your healing spells by 3%.",
+            "Reduces the Mana cost of your healing spells by 4%.",
+            "Reduces the Mana cost of your healing spells by 5%."
           ],
-          "evidence": "shaman/44-shaman-restoration-totemic-focus.jpg",
+          "evidence": "shaman/39-shaman-restoration-tidal-focus.jpg",
           "diff": [
             "tooltip changed",
-            "was Restoration row 2, col 3"
+            "was Restoration row 1, col 3",
+            "moved in build 1.60.1.70425: was row 2, col 3"
           ]
         },
         {
@@ -866,31 +919,32 @@
           "diff": []
         },
         {
-          "id": "restoration/tidal-focus",
+          "id": "restoration/totemic-focus",
           "row": 1,
           "col": 2,
-          "name": "Tidal Focus",
-          "icon": "spell_frost_manarecharge",
+          "name": "Totemic Focus",
+          "icon": "spell_nature_moonglow",
           "maxRank": 5,
           "ranks": [
-            "Reduces the Mana cost of your healing spells by 1% and improves your chance to hit by 1%.",
-            "Reduces the Mana cost of your healing spells by 2% and improves your chance to hit by 2%.",
-            "Reduces the Mana cost of your healing spells by 3% and improves your chance to hit by 3%.",
-            "Reduces the Mana cost of your healing spells by 4% and improves your chance to hit by 4%.",
-            "Reduces the Mana cost of your healing spells by 5% and improves your chance to hit by 5%."
+            "Reduces the Mana cost of your totems and any spells that summon or move them by 5%.",
+            "Reduces the Mana cost of your totems and any spells that summon or move them by 10%.",
+            "Reduces the Mana cost of your totems and any spells that summon or move them by 15%.",
+            "Reduces the Mana cost of your totems and any spells that summon or move them by 20%.",
+            "Reduces the Mana cost of your totems and any spells that summon or move them by 25%."
           ],
           "status": "changed",
           "classic": [
-            "Reduces the Mana cost of your healing spells by 1%.",
-            "Reduces the Mana cost of your healing spells by 2%.",
-            "Reduces the Mana cost of your healing spells by 3%.",
-            "Reduces the Mana cost of your healing spells by 4%.",
-            "Reduces the Mana cost of your healing spells by 5%."
+            "Reduces the Mana cost of your totems by 5%.",
+            "Reduces the Mana cost of your totems by 10%.",
+            "Reduces the Mana cost of your totems by 15%.",
+            "Reduces the Mana cost of your totems by 20%.",
+            "Reduces the Mana cost of your totems by 25%."
           ],
-          "evidence": "shaman/39-shaman-restoration-tidal-focus.jpg",
+          "evidence": "shaman/44-shaman-restoration-totemic-focus.jpg",
           "diff": [
             "tooltip changed",
-            "was Restoration row 1, col 3"
+            "was Restoration row 2, col 3",
+            "moved in build 1.60.1.70425: was row 1, col 3"
           ]
         },
         {
@@ -967,11 +1021,17 @@
           "icon": "ability_shaman_watershield",
           "maxRank": 1,
           "ranks": [
-            "The caster is surrounded by 3 globes of water. When a spell, melee, or ranged attack hits the caster or when one of the caster's healing spells gets a critical result, 2% of maximum mana is restored to the caster, expending one water globe. Only one globe will activate every few seconds. Lasts 10 min.\n\nOnly one Elemental Shield can be active on the Shaman at any one time."
+            "The caster is surrounded by 3 globes of water. When a spell, melee, or ranged attack hits the caster or when one of the caster's spells gets a critical result, 2% of maximum mana is restored to the caster, expending one water globe. Only one globe will activate every few seconds. Lasts 10 min.\n\nOnly one Elemental Shield can be active on the Shaman at any one time."
           ],
           "status": "new",
           "evidence": "shaman/43-shaman-restoration-water-shield.jpg",
-          "diff": []
+          "ranks_prev": [
+            "The caster is surrounded by 3 globes of water. When a spell, melee, or ranged attack hits the caster or when one of the caster's healing spells gets a critical result, 2% of maximum mana is restored to the caster, expending one water globe. Only one globe will activate every few seconds. Lasts 10 min.\n\nOnly one Elemental Shield can be active on the Shaman at any one time."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
+          "diff": [
+            "tooltip changed in build 1.60.1.70425 (ranks 1)"
+          ]
         },
         {
           "id": "restoration/tidal-mastery",
@@ -1050,7 +1110,7 @@
           "diff": [
             "tooltip changed",
             "was Restoration row 7, col 2",
-            "tooltip changed in build 1.60.1.70291 (ranks 1)"
+            "tooltip changed in build 1.60.1.70425 (ranks 1)"
           ]
         },
         {
@@ -1126,7 +1186,7 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70291 (ranks 1)"
+            "tooltip changed in build 1.60.1.70425 (ranks 1)"
           ],
           "prereq": {
             "id": "restoration/healing-way",

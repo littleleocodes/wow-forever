@@ -8,7 +8,9 @@ package hunter
 // "Increased by 100% of Master's Critical Strike Chance", "Every 1 Stamina adds 2 Health", and Camelot/PaperDollFrame.lua
 // HUNTER_PET_BONUS PET_BONUS_ARMOR 0.3 (github.com/Gethe/wow-ui-source, forever branch); the community's Forever Beta Changes page
 // (github.com/classic-hunter/forever-hunter/wiki, 2026-10-01) copies them. The fork (40be98e, and 2ce8265 on 2026-10-09) gives the
-// pet nothing from its owner (makeStatInheritance returns empty stats). WOW_FOREVER_PET_SCALING=0 turns the stats off (comparisons).
+// pet nothing from its owner (makeStatInheritance returns empty stats; since b7083fa only the ranged crit). Client 70425's
+// Camelot/PaperDollFrameStats.lua adds "Pets inherit 100% of the owner's hit chance" and the owner's expertise (2026-10-16).
+// WOW_FOREVER_PET_SCALING=0 turns the stats off (comparisons).
 
 import (
 	"os"
@@ -30,7 +32,11 @@ func foreverPetScaling(owner stats.Stats) stats.Stats {
 	}
 	var s stats.Stats
 	s[stats.AttackPower] = 0.10 * ap
-	s[stats.PhysicalCritPercent] = owner[stats.PhysicalCritPercent]
+	// the hunter's ranged crit and hit: the fork keeps the ranged-only part as an offset on the melee value (upstream a60e356, client
+	// 70425: the pet's crit is its master's ranged crit, forever-bugs #331), and the hunter's expertise
+	s[stats.PhysicalCritPercent] = owner[stats.PhysicalCritPercent] + owner[stats.RangedCritPercent]
+	s[stats.PhysicalHitPercent] = owner[stats.PhysicalHitPercent] + owner[stats.RangedHitPercent]
+	s[stats.ExpertisePercent] = owner[stats.ExpertisePercent]
 	s[stats.Armor] = 0.30 * owner[stats.Armor]
 	s[stats.Health] = 2 * owner[stats.Stamina]
 	return s

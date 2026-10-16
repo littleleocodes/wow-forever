@@ -327,7 +327,7 @@
  "Shield Specialization": {
   "tree": "Protection",
   "max": 3,
-  "text": "Increases the amount of damage absorbed by your shield by 10%, and gives your blocks a 33% chance to restore 6% of your maximum Mana. May only occur once every 3 sec.",
+  "text": "Increases the amount of damage absorbed by your shield by 10%, and gives your blocks a 33% chance to restore 4% of your maximum Mana. May only occur once every 3 sec.",
   "effects": []
  },
  "Sacred Duty": {
@@ -425,7 +425,7 @@
  "Reckoning": {
   "tree": "Protection",
   "max": 5,
-  "text": "Gives you a 8% chance to gain an extra attack after Blocking a melee attack and a 20% chance to gain an extra attack after being the victim of a non-periodic critical strike. Cannot occur more often than once every 1.5 s",
+  "text": "Gives you a 8% chance after Blocking and a 20% chance after receiving a non-periodic critical strike to gain an extra attack. Stores up to 4 extra attacks. Cannot occur from Blocks more than once every 1.5 sec.",
   "effects": []
  },
  "Iron Creed": {
@@ -653,7 +653,7 @@
  "Champion of the Light": {
   "tree": "Retribution",
   "max": 3,
-  "text": "Increases your spell damage by up to 20% of your Intellect.",
+  "text": "Increases your spell damage by up to 10% of your Intellect.",
   "effects": []
  },
  "Instrument of Law": {

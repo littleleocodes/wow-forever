@@ -46,10 +46,10 @@
    }
   ]
  },
- "Elemental Warding": {
+ "Elemental Devastation": {
   "tree": "Elemental",
   "max": 3,
-  "text": "Reduces damage taken from Fire, Frost, and Nature effects by 3%.",
+  "text": "Your Critical Strikes with direct damage spells increase your chance to get a Critical Strike with melee attacks by 3% for 10 sec.",
   "effects": []
  },
  "Reverberation": {
@@ -67,50 +67,6 @@
      0.4,
      0.6,
      0.8,
-     1.0
-    ],
-    "source": "parsed"
-   }
-  ]
- },
- "Call of Flame": {
-  "tree": "Elemental",
-  "max": 3,
-  "text": "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 5%.",
-  "effects": [
-   {
-    "channel": "dmg",
-    "scope": [
-     "ability:Fire Totems",
-     "ability:Fire Nova",
-     "ability:Lava Burst"
-    ],
-    "values": [
-     0.05,
-     0.1,
-     0.15
-    ],
-    "source": "parsed"
-   }
-  ]
- },
- "Elemental Devastation": {
-  "tree": "Elemental",
-  "max": 3,
-  "text": "Your offensive spell critical strikes will increase your chance to get a critical strike with melee attacks by 3% for 10 sec.",
-  "effects": []
- },
- "Elemental Focus": {
-  "tree": "Elemental",
-  "max": 1,
-  "text": "Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%.",
-  "effects": [
-   {
-    "channel": "mana_cost",
-    "scope": [
-     "type:spell"
-    ],
-    "values": [
      1.0
     ],
     "source": "parsed"
@@ -138,10 +94,54 @@
    }
   ]
  },
- "Improved Fire Nova": {
+ "Call of Flame": {
+  "tree": "Elemental",
+  "max": 3,
+  "text": "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 5%, as well as increases the duration of your Flame Shock spell by 3 sec.",
+  "effects": [
+   {
+    "channel": "dmg",
+    "scope": [
+     "ability:Fire Totems",
+     "ability:Fire Nova",
+     "ability:Lava Burst"
+    ],
+    "values": [
+     0.05,
+     0.1,
+     0.15
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Elemental Focus": {
+  "tree": "Elemental",
+  "max": 1,
+  "text": "Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%.",
+  "effects": [
+   {
+    "channel": "mana_cost",
+    "scope": [
+     "type:spell"
+    ],
+    "values": [
+     1.0
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Elemental Warding": {
+  "tree": "Elemental",
+  "max": 3,
+  "text": "Reduces damage taken from Fire, Frost, and Nature effects by 3%.",
+  "effects": []
+ },
+ "Trial by Fire": {
   "tree": "Elemental",
   "max": 2,
-  "text": "Increases the damage done by your Fire Nova spell by 10% and reduces its cooldown by 2 sec.",
+  "text": "Increases the damage done by your Fire Nova spell by 10% and reduces its cooldown by 2 sec, and increases the duration of your Magma Totem by 10 sec.",
   "effects": [
    {
     "channel": "dmg",
@@ -162,29 +162,28 @@
   "text": "Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, and Lava Burst by 23%.",
   "effects": []
  },
- "Call of Thunder": {
+ "Earthbound": {
   "tree": "Elemental",
   "max": 1,
-  "text": "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by 3%.",
-  "effects": [
-   {
-    "channel": "crit",
-    "scope": [
-     "ability:Lightning Bolt",
-     "ability:Chain Lightning"
-    ],
-    "values": [
-     0.03
-    ],
-    "source": "parsed"
-   }
-  ]
+  "text": "Your Earthbind Totem Immobilizes nearby targets for 5 sec when cast.",
+  "effects": []
  },
  "Elemental Reach": {
   "tree": "Elemental",
   "max": 2,
-  "text": "Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 3 yards, and increases the range of your Flame Shock spell by 8 yards.",
+  "text": "Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 3 yards and reduces the cooldown of Totemic Projection by 10 sec.",
   "effects": [
+   {
+    "channel": "cooldown",
+    "scope": [
+     "ability:Totemic Projection"
+    ],
+    "values": [
+     10.0,
+     20.0
+    ],
+    "source": "parsed"
+   },
    {
     "channel": "range",
     "scope": [
@@ -198,30 +197,19 @@
      6.0
     ],
     "source": "parsed"
-   },
-   {
-    "channel": "range",
-    "scope": [
-     "ability:Flame Shock"
-    ],
-    "values": [
-     8.0,
-     15.0
-    ],
-    "source": "parsed"
    }
   ]
+ },
+ "Lava Burst": {
+  "tree": "Elemental",
+  "max": 1,
+  "text": "You hurl molten lava at the target, dealing 113 to 145 Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage.",
+  "effects": []
  },
  "Lightning Overload": {
   "tree": "Elemental",
   "max": 3,
   "text": "Gives your Lightning Bolt and Chain Lightning spells a 3% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat.",
-  "effects": []
- },
- "Earthbound": {
-  "tree": "Elemental",
-  "max": 1,
-  "text": "Your Earthbind Totem Immobilizes nearby targets for 5 sec when cast.",
   "effects": []
  },
  "Elemental Fury": {
@@ -249,10 +237,10 @@
    }
   ]
  },
- "Lava Burst": {
+ "Elemental Mastery": {
   "tree": "Elemental",
   "max": 1,
-  "text": "You hurl molten lava at the target, dealing 150 to 192 Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage.",
+  "text": "Gain mastery over Fire and Lightning, reducing the cast time of Lightning Bolt and Lava Burst by 0.5 sec, and removing the cooldown from Chain Lightning. Lasts 15 sec.",
   "effects": []
  },
  "Earth's Grasp": {
@@ -500,22 +488,37 @@
    }
   ]
  },
- "Totemic Focus": {
+ "Tidal Focus": {
   "tree": "Restoration",
   "max": 5,
-  "text": "Reduces the Mana cost of your totems and any spells that summon or move them by 5%.",
+  "text": "Reduces the Mana cost of your healing spells by 1% and improves your chance to hit by 1%.",
   "effects": [
+   {
+    "channel": "hit",
+    "scope": [
+     "all"
+    ],
+    "values": [
+     0.01,
+     0.02,
+     0.03,
+     0.04,
+     0.05
+    ],
+    "source": "parsed"
+   },
    {
     "channel": "mana_cost",
     "scope": [
-     "type:spell"
+     "type:spell",
+     "heal"
     ],
     "values": [
-     0.05,
-     0.1,
-     0.15,
-     0.2,
-     0.25
+     0.01,
+     0.02,
+     0.03,
+     0.04,
+     0.05
     ],
     "source": "parsed"
    }
@@ -559,37 +562,22 @@
    }
   ]
  },
- "Tidal Focus": {
+ "Totemic Focus": {
   "tree": "Restoration",
   "max": 5,
-  "text": "Reduces the Mana cost of your healing spells by 1% and improves your chance to hit by 1%.",
+  "text": "Reduces the Mana cost of your totems and any spells that summon or move them by 5%.",
   "effects": [
-   {
-    "channel": "hit",
-    "scope": [
-     "all"
-    ],
-    "values": [
-     0.01,
-     0.02,
-     0.03,
-     0.04,
-     0.05
-    ],
-    "source": "parsed"
-   },
    {
     "channel": "mana_cost",
     "scope": [
-     "type:spell",
-     "heal"
+     "type:spell"
     ],
     "values": [
-     0.01,
-     0.02,
-     0.03,
-     0.04,
-     0.05
+     0.05,
+     0.1,
+     0.15,
+     0.2,
+     0.25
     ],
     "source": "parsed"
    }
@@ -641,7 +629,7 @@
  "Water Shield": {
   "tree": "Restoration",
   "max": 1,
-  "text": "The caster is surrounded by 3 globes of water. When a spell, melee, or ranged attack hits the caster or when one of the caster's healing spells gets a critical result, 2% of maximum mana is restored to the caster, expend",
+  "text": "The caster is surrounded by 3 globes of water. When a spell, melee, or ranged attack hits the caster or when one of the caster's spells gets a critical result, 2% of maximum mana is restored to the caster, expending one ",
   "effects": []
  },
  "Tidal Mastery": {

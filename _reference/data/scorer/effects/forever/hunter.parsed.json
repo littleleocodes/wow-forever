@@ -306,7 +306,7 @@
  "Trueshot Aura": {
   "tree": "Marksmanship",
   "max": 1,
-  "text": "Increases the Ranged Attack Power of party members within 45 yds by 30.",
+  "text": "Increases the Ranged Attack Power of party or raid members within 45 yds by 30.",
   "effects": []
  },
  "Mortal Shots": {
@@ -333,8 +333,20 @@
  "Rapid Recuperation": {
   "tree": "Marksmanship",
   "max": 2,
-  "text": "Hitting a target with your Serpent Sting ability grants you 25% and consuming Rapid Killing grants you 50% of your Mana regeneration while casting for the next 15 sec.",
-  "effects": []
+  "text": "Afflicting a target with Serpent Sting allows 25% of your Mana Regeneration to continue while casting for 15 sec, increased to 50% when Rapid Killing is consumed.",
+  "effects": [
+   {
+    "channel": "regen",
+    "scope": [
+     "all"
+    ],
+    "values": [
+     0.25,
+     0.5
+    ],
+    "source": "parsed"
+   }
+  ]
  },
  "Barrage": {
   "tree": "Marksmanship",
@@ -547,23 +559,8 @@
  "Predator's Edge": {
   "tree": "Survival",
   "max": 5,
-  "text": "Increases your melee critical strike damage by 6% and your Off Hand weapon damage by 10%.",
-  "effects": [
-   {
-    "channel": "crit_bonus",
-    "scope": [
-     "type:melee"
-    ],
-    "values": [
-     0.06,
-     0.12,
-     0.18,
-     0.24,
-     0.3
-    ],
-    "source": "parsed"
-   }
-  ]
+  "text": "Increases your melee ability critical strike damage by 6% and your Off Hand weapon damage by 10%.",
+  "effects": []
  },
  "Counterattack": {
   "tree": "Survival",
@@ -574,12 +571,13 @@
  "Resourcefulness": {
   "tree": "Survival",
   "max": 2,
-  "text": "Reduces the mana cost of your Trap abilities and melee abilities by 30%. In addition, your critical strikes have a 30% chance to allow 50% of your Mana regeneration to continue while casting for 30 sec.",
+  "text": "Reduces the Mana cost of your Trap and melee abilities by 30%, and grants your melee and ranged ability Critical Strikes a 50% chance to allow 50% of your Mana Regeneration to continue while casting for 30 sec.",
   "effects": [
    {
     "channel": "mana_cost",
     "scope": [
-     "type:melee"
+     "type:melee",
+     "ability:Trap"
     ],
     "values": [
      0.3,
@@ -592,7 +590,7 @@
  "Expose Prey": {
   "tree": "Survival",
   "max": 2,
-  "text": "Your attacks against targets with Hunter's Mark have a 5% chance to activate your Mongoose Bite for 10 sec.",
+  "text": "Grants your melee and ranged attacks against enemies afflicted by Hunter's Mark a 5% chance to allow an activation of Mongoose Bite. Lasts 10 sec.",
   "effects": []
  },
  "Survivalist's Discipline": {

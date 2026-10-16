@@ -1,15 +1,15 @@
 {
   "slug": "warlock",
   "name": "Warlock",
-  "build": "1.60.1.70291",
-  "captured": "2026-10-08",
+  "build": "1.60.1.70425",
+  "captured": "2026-10-16",
   "tooltip_level": 60,
-  "source": "World of Warcraft: Forever beta client, build 1.60.1.70291: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-08, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo).",
+  "source": "World of Warcraft: Forever beta client, build 1.60.1.70425: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-16, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo).",
   "sources": {
     "talentsforever": {
       "url": "https://talentsforever.com/data.json",
-      "generated": "2026-10-08",
-      "build": "1.60.1.70291",
+      "generated": "2026-10-16",
+      "build": "1.60.1.70425",
       "license": "CC-BY-4.0",
       "attribution": "Data from talentsforever.com (https://talentsforever.com)"
     },
@@ -27,8 +27,17 @@
     }
   },
   "removed_since_demo": [],
-  "renamed_since_demo": [],
-  "merge_notes": [],
+  "renamed_since_demo": [
+    {
+      "tree": "Affliction",
+      "from": "Malediction",
+      "to": "Grim Reach",
+      "build": "1.60.1.70425"
+    }
+  ],
+  "merge_notes": [
+    "Affliction: the Trait-edge snapshot disagrees with the talentsforever export (only in the snapshot: Malediction; only in the export: Grim Reach; moved or re-capped: none); the export's positions, rank caps and prerequisites used for this tree"
+  ],
   "trees": [
     {
       "id": "affliction",
@@ -105,21 +114,30 @@
           ]
         },
         {
-          "id": "affliction/malediction",
+          "id": "affliction/grim-reach",
           "row": 1,
           "col": 0,
-          "name": "Malediction",
+          "name": "Grim Reach",
           "icon": "spell_shadow_curseofachimonde",
-          "maxRank": 5,
+          "maxRank": 2,
           "ranks": [
+            "Increases the range of your Affliction spells by 10%.",
+            "Increases the range of your Affliction spells by 20%."
+          ],
+          "status": "new",
+          "ranks_prev": [
             "Increases all periodic damage done by your Warlock spells by 1%.",
             "Increases all periodic damage done by your Warlock spells by 2%.",
             "Increases all periodic damage done by your Warlock spells by 3%.",
             "Increases all periodic damage done by your Warlock spells by 4%.",
             "Increases all periodic damage done by your Warlock spells by 5%."
           ],
-          "status": "new",
-          "diff": []
+          "ranks_prev_build": "1.60.1.70205",
+          "diff": [
+            "renamed from Malediction in build 1.60.1.70425",
+            "max rank 5 -> 2 in build 1.60.1.70425",
+            "tooltip changed in build 1.60.1.70425 (ranks 1, 2)"
+          ]
         },
         {
           "id": "affliction/soul-harvest",
@@ -197,14 +215,19 @@
           "icon": "spell_shadow_contagion",
           "maxRank": 1,
           "ranks": [
-            "Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 20%. Lasts 30 sec."
+            "Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 50%. Lasts 30 sec."
           ],
           "status": "changed",
           "classic": [
             "Increases the effect of your next Curse of Weakness or Curse of Agony by 50%, or your next Curse of Exhaustion by 20%. Lasts 30 sec."
           ],
+          "ranks_prev": [
+            "Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 20%. Lasts 30 sec."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed"
+            "tooltip changed",
+            "tooltip changed in build 1.60.1.70425 (ranks 1)"
           ]
         },
         {
@@ -323,11 +346,11 @@
           "icon": "spell_shadow_shadetruesight",
           "maxRank": 5,
           "ranks": [
-            "Increases the damage dealt or life drained by your Shadow spells by 1%.",
             "Increases the damage dealt or life drained by your Shadow spells by 2%.",
-            "Increases the damage dealt or life drained by your Shadow spells by 3%.",
             "Increases the damage dealt or life drained by your Shadow spells by 4%.",
-            "Increases the damage dealt or life drained by your Shadow spells by 5%."
+            "Increases the damage dealt or life drained by your Shadow spells by 6%.",
+            "Increases the damage dealt or life drained by your Shadow spells by 8%.",
+            "Increases the damage dealt or life drained by your Shadow spells by 10%."
           ],
           "status": "changed",
           "classic": [
@@ -337,9 +360,18 @@
             "Increases the damage dealt or life drained by your Shadow spells by 8%.",
             "Increases the damage dealt or life drained by your Shadow spells by 10%."
           ],
+          "ranks_prev": [
+            "Increases the damage dealt or life drained by your Shadow spells by 1%.",
+            "Increases the damage dealt or life drained by your Shadow spells by 2%.",
+            "Increases the damage dealt or life drained by your Shadow spells by 3%.",
+            "Increases the damage dealt or life drained by your Shadow spells by 4%.",
+            "Increases the damage dealt or life drained by your Shadow spells by 5%."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "was Affliction row 6, col 2"
+            "was Affliction row 6, col 2",
+            "tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3, 4, 5)"
           ]
         },
         {
@@ -567,7 +599,7 @@
           "diff": [
             "tooltip changed",
             "was Demonology row 5, col 2",
-            "tooltip changed in build 1.60.1.70291 (ranks 1)"
+            "tooltip changed in build 1.60.1.70425 (ranks 1)"
           ]
         },
         {
@@ -643,7 +675,7 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3)"
+            "tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3)"
           ]
         },
         {
@@ -766,17 +798,23 @@
           "icon": "spell_shadow_corpseexplode",
           "maxRank": 2,
           "ranks": [
-            "Increases the range of your damaging spells by 10%.",
-            "Increases the range of your damaging spells by 20%."
+            "Increases the range of your Destruction spells by 10%.",
+            "Increases the range of your Destruction spells by 20%."
           ],
           "status": "changed",
           "classic": [
             "Increases the range of your Destruction spells by 10%.",
             "Increases the range of your Destruction spells by 20%."
           ],
+          "ranks_prev": [
+            "Increases the range of your damaging spells by 10%.",
+            "Increases the range of your damaging spells by 20%."
+          ],
+          "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed",
-            "was Destruction row 4, col 2"
+            "was Destruction row 4, col 2",
+            "tooltip changed in build 1.60.1.70425 (ranks 1, 2)"
           ]
         },
         {
@@ -946,7 +984,7 @@
           "diff": [
             "tooltip changed",
             "was Destruction row 3, col 4",
-            "tooltip changed in build 1.60.1.70291 (ranks 1)"
+            "tooltip changed in build 1.60.1.70425 (ranks 1)"
           ]
         },
         {
@@ -1007,7 +1045,7 @@
           "diff": [
             "tooltip changed",
             "was Destruction row 7, col 2",
-            "tooltip changed in build 1.60.1.70291 (ranks 1)"
+            "tooltip changed in build 1.60.1.70425 (ranks 1)"
           ]
         },
         {
@@ -1099,7 +1137,7 @@
           ],
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
-            "tooltip changed in build 1.60.1.70291 (ranks 1)"
+            "tooltip changed in build 1.60.1.70425 (ranks 1)"
           ],
           "prereq": {
             "id": "destruction/bane-of-havoc",

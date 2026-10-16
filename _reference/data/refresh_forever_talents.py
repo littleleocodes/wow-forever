@@ -74,12 +74,19 @@ def fetch_all(raw_dir):
     (raw_dir / "warcraftforever-games").mkdir(parents=True, exist_ok=True)
     (raw_dir / "talentsforever-com").mkdir(parents=True, exist_ok=True)
     (raw_dir / "thewowdb-com").mkdir(parents=True, exist_ok=True)
+    def get(site, url):   # 2026-10-16: thewowdb answered 503; a site that fails for a class falls back to an earlier pull (find_raw)
+        try:
+            return fetch(url)
+        except Exception as e:
+            print(f"{site}: {url} failed ({e}); the merge uses the newest earlier pull for it")
+            return ""
+
     for cls in CLASSES:
-        obj = extract(cls, fetch(URL_WF.format(cls=cls)))
+        obj = extract(cls, get("warcraftforever", URL_WF.format(cls=cls)))
         if obj:
             (raw_dir / "warcraftforever-games" / f"{cls}.json").write_text(json.dumps(obj, indent=2, ensure_ascii=False), encoding="utf-8")
             print(f"warcraftforever {cls}: build {obj.get('build')} captured {obj.get('captured')}")
-        html = fetch(URL_WD.format(cls=cls))
+        html = get("thewowdb", URL_WD.format(cls=cls))
         m = re.search(r'(\{"schemaVersion":1,"snapshotId":"forever-beta-trait[^<]*)</script>', html)
         if m:
             snap = json.loads(m.group(1).strip())
@@ -130,12 +137,14 @@ def merge_class(cls, wf, tf, wd, build, captured, sources):
         wmap = {t["name"]: t for t in wtr["talents"]}
         tmap = {t["name"]: t for t in ttr["talents"]}
         dmap = {n["name"]: n for n in dtr["nodes"]}
-        if set(tmap) != set(dmap):
+        # 2026-10-16: also when a talent moved or changed its rank cap (thewowdb down, its 70291 read against the 70425 export: Mental Strength)
+        moved = sorted(n for n, x in tmap.items() if n in dmap and (x["row"] - 1, x["col"] - 1, x["max"]) != (dmap[n]["row"], dmap[n]["col"], dmap[n]["maxRanks"]))
+        if set(tmap) != set(dmap) or moved:
             # the Trait-edge snapshot lags (or leads) the export: 2026-10-03, the warrior's Fury tree after the hotfixes of 1-2 Oct, which
             # only the talentsforever export carries. The export's positions, rank caps and prerequisites (`req`, at the required talent's
             # full rank, as the client's arrows ask) stand in for this tree.
             notes.append(f"{tname}: the Trait-edge snapshot disagrees with the talentsforever export (only in the snapshot: "
-                         f"{', '.join(sorted(set(dmap) - set(tmap))) or 'none'}; only in the export: {', '.join(sorted(set(tmap) - set(dmap))) or 'none'}); "
+                         f"{', '.join(sorted(set(dmap) - set(tmap))) or 'none'}; only in the export: {', '.join(sorted(set(tmap) - set(dmap))) or 'none'}; moved or re-capped: {', '.join(moved) or 'none'}); "
                          f"the export's positions, rank caps and prerequisites used for this tree")
             mx = {t["name"]: t["max"] for t in ttr["talents"]}
             dmap = {}
@@ -295,7 +304,8 @@ def main():
             report.append("")
             for tname, name, changed, old, new in tooltip_changes:
                 i = changed[-1]
-                report.append(f"- {tname} / {name} (rank {i + 1}): {old[i][:150]} -> {new[i][:150]}")
+                o = old[i][:150] if i < len(old) else f"(had {len(old)} ranks)"   # a rank cap that changed (70425)
+                report.append(f"- {tname} / {name} (rank {i + 1}): {o} -> {new[i][:150]}")
             report.append("")
         if obj["merge_notes"]:
             report.append("Merge notes:")

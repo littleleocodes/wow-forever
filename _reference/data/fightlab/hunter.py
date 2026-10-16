@@ -220,7 +220,7 @@ MECHANICS = {
     "Improved Wing Clip": "6.7%/rank root 5s on Wing Clip",
     "Deterrence": "+25% dodge and parry for 10 s; the melee rotation presses it below 40% health (5 min cooldown)",
     "Survivalist's Discipline": "-20%/rank Deterrence and trap cooldown (the melee hunter's Immolation Trap)",
-    "Resourcefulness": "-30%/rank mana on melee abilities; a crit has a 30%/rank chance to let 50% of mana regen continue while casting for 30 s",
+    "Resourcefulness": "-30%/rank mana on melee abilities; a melee or ranged ability crit has a 50%/rank chance to let 50% of mana regen continue while casting for 30 s (70425: abilities only)",
     "Counterattack": "not used (needs a parry)",
     "Entrapment": "a root when a trap fires: the melee hunter's mob stands beside it anyway (not used)",
     "Survival Tactics": "+5%/rank chance to hit with traps (the melee hunter's Immolation Trap)",
@@ -564,7 +564,9 @@ class HunterModule(BaseModule):
         p, m, t = fight.p, fight.m, fight.t
         if spell.name == "Deterrence":
             p.buffs["Deterrence"] = {"until": t + 10.0}
-        if crit and self.rank("Resourcefulness") and fight.rng.random() < self.tv("Resourcefulness", 1) / 100:
+        # Resourcefulness: "melee and ranged ability Critical Strikes" since client 70425 (was any crit: the auto attacks and Auto Shot too)
+        if (crit and self.rank("Resourcefulness") and spell.name not in WHITE + ("Auto Shot",)
+                and fight.rng.random() < self.tv("Resourcefulness", 1) / 100):
             p.buffs["Resourcefulness"] = {"until": t + 30.0}
         # Expose Prey on your landed abilities (the auto attacks and Auto Shot roll in on_swing); not the hawk's dive bomb
         if self.is_melee() and amount > 0 and spell.kind in ("melee", "ranged") and spell.name not in WHITE + ("Auto Shot", "Summon Hawk"):

@@ -252,7 +252,7 @@
  "Moonkin Form": {
   "tree": "Balance",
   "max": 1,
-  "text": "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party members within 45 yards have their Critical Strike chance increased by 3%, exclus",
+  "text": "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their spell Critical Strike chance increased",
   "effects": []
  },
  "Ferocity": {
@@ -486,19 +486,8 @@
  "Leader of the Pack": {
   "tree": "Feral Combat",
   "max": 1,
-  "text": "While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the critical strike chance of all party members within 45 yards by 3%, exclusive with Moonkin Aura.",
-  "effects": [
-   {
-    "channel": "crit",
-    "scope": [
-     "unknown:all party members within 45 yards"
-    ],
-    "values": [
-     0.03
-    ],
-    "source": "parsed"
-   }
-  ]
+  "text": "While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the melee and ranged Critical Strike chance of all party or raid members within 45 yards by 3%.",
+  "effects": []
  },
  "Natural Instinct": {
   "tree": "Feral Combat",
@@ -601,7 +590,7 @@
  "Furor": {
   "tree": "Restoration",
   "max": 5,
-  "text": "Gives you a 20% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 20% of the Energy you had when last in Cat Form, plus 2 Energy per sec spent outside Cat Fo",
+  "text": "Gives you a 20% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 20% of the Energy you had when last in Cat Form, plus 2 Energy per second spent outside Bea",
   "effects": []
  },
  "Naturalist": {
