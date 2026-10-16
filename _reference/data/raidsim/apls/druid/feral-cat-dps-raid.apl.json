@@ -33,6 +33,46 @@
  "priorityList": [
   {
    "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "not": {
+         "val": {
+          "dotIsActive": {
+           "spellId": {
+            "spellId": 9904
+           }
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGt",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "6s"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 9904
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-16: changed or added by the rotation search (see feral-cat-dps-rotation-search.json)"
+  },
+  {
+   "action": {
     "castSpell": {
      "spellId": {
       "spellId": 5217

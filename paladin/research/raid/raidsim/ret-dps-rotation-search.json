@@ -166,13 +166,41 @@
  "raid": {
   "class": "paladin",
   "spec": "ret-dps",
-  "date": "2026-10-14",
-  "commit": "2ce8265",
+  "date": "2026-10-16",
+  "commit": "b7083fa",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/paladin/retribution/apls/default.apl.json",
   "start": "ui\\specs\\paladin\\retribution\\apls\\default.apl.json",
-  "builds": [],
+  "builds": [
+   {
+    "label": "retribution-ml-raid",
+    "talents": "25003001-503-05225131001330321"
+   },
+   {
+    "label": "sim preset: P4/P5 Ret",
+    "talents": "550030022001--05225231001330321"
+   },
+   {
+    "label": "ret-raid-dps",
+    "talents": "550030030001--05225331001330321",
+    "protect_only": true
+   },
+   {
+    "label": "ret-full-buffs-raid",
+    "talents": "52003-503-05225231001330321",
+    "protect_only": true
+   },
+   {
+    "label": "opt-ret-dps-raid-dps",
+    "talents": "25003002-503-05225131001230321",
+    "protect_only": true
+   }
+  ],
+  "tuned_on": [
+   "retribution-ml-raid",
+   "sim preset: P4/P5 Ret"
+  ],
   "iterations": 3000,
   "confirm": 20000,
   "changes": [
@@ -276,9 +304,55 @@
    }
   ],
   "final": {
-   "raid": {}
+   "raid": {
+    "retribution-ml-raid": {
+     "before": 857.7328080235214,
+     "after": 950.8835083319234,
+     "base": 857.7328080235214,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: P4/P5 Ret": {
+     "before": 833.3367919482348,
+     "after": 923.8279505197113,
+     "base": 833.3367919482348,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "ret-raid-dps": {
+     "before": 835.6720662407013,
+     "after": 926.6642094387266,
+     "base": 835.6720662407013,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "ret-full-buffs-raid": {
+     "before": 863.8155899737782,
+     "after": 953.3199033318639,
+     "base": 863.8155899737782,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.00039249999975,
+     "oom_after": 0.00039249999975
+    },
+    "opt-ret-dps-raid-dps": {
+     "before": 852.8506391811896,
+     "after": 947.9342900446918,
+     "base": 852.8506391811896,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
   },
   "first_date": "2026-09-28",
-  "passes": 11
+  "passes": 12
  }
 }

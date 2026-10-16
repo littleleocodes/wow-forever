@@ -148,8 +148,8 @@
  "raid": {
   "class": "hunter",
   "spec": "melee-dps",
-  "date": "2026-10-09",
-  "commit": "2ce8265",
+  "date": "2026-10-16",
+  "commit": "b7083fa",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/apls/hunter/melee-dps.base.apl.json",
@@ -222,45 +222,45 @@
   "final": {
    "raid": {
     "beast-survival-open-raid": {
-     "before": 736.3958146440292,
-     "after": 1057.2488076464879,
-     "base": 736.3958146440292,
+     "before": 708.1238556248645,
+     "after": 1026.6895950347737,
+     "base": 708.1238556248645,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.00017154135885,
-     "oom_after": 0
+     "oom_before": 0.0011708853053,
+     "oom_after": 0.0011708853053
     },
     "melee-survival-raid": {
-     "before": 764.2538027247907,
-     "after": 1048.0314309006965,
-     "base": 764.2538027247907,
+     "before": 734.8697124218245,
+     "after": 1017.3977829285182,
+     "base": 734.8697124218245,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "opt-melee-dps-raid-dps": {
-     "before": 764.2538027247907,
-     "after": 1017.2163051305389,
-     "base": 764.2538027247907,
+     "before": 734.8697124218245,
+     "after": 986.5579311205595,
+     "base": 734.8697124218245,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "survival-raid": {
-     "before": 749.0234226940044,
-     "after": 1028.3796732702476,
-     "base": 749.0234226940044,
+     "before": 720.2595585646186,
+     "after": 997.5498621780533,
+     "base": 720.2595585646186,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "survival-ml-parse": {
-     "before": 728.5236157959941,
-     "after": 999.0872636055295,
-     "base": 728.5236157959941,
+     "before": 700.5207384246442,
+     "after": 969.4001145128581,
+     "base": 700.5207384246442,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -269,6 +269,6 @@
    }
   },
   "first_date": "2026-09-29",
-  "passes": 10
+  "passes": 11
  }
 }

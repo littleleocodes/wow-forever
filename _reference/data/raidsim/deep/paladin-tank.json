@@ -2,7 +2,7 @@
  "class": "paladin",
  "spec": "Protection",
  "entry": "prot-tank",
- "date": "2026-10-15",
+ "date": "2026-10-16",
  "cycles": [
   {
    "cycle": 1,
@@ -40,7 +40,7 @@
       ],
       [
        "One-Handed Weapon Specialization",
-       3
+       2
       ],
       [
        "Templar's Bulwark",
@@ -48,7 +48,7 @@
       ],
       [
        "Reckoning",
-       2
+       5
       ],
       [
        "Iron Creed",
@@ -74,7 +74,7 @@
       ],
       [
        "Conviction",
-       3
+       1
       ],
       [
        "Vindication",
@@ -90,88 +90,96 @@
       ]
      ]
     },
-    "split": "0/33/18",
-    "dps": 1.0448,
+    "split": "0/35/16",
+    "dps": 1.076,
     "se": 0.0002,
     "iterations": 100000
    },
    "runner_up": {
     "split": "0/34/17",
-    "dps": 1.0444,
+    "dps": 1.0758,
     "se": 0.0002,
     "differs": [
      [
       "Conviction",
-      2
+      1
      ],
      [
       "Conviction",
-      3
-     ],
-     [
-      "Reckoning",
       2
      ],
      [
-      "Reckoning",
+      "Improved Seal of Fury",
+      1
+     ],
+     [
+      "One-Handed Weapon Specialization",
+      2
+     ],
+     [
+      "One-Handed Weapon Specialization",
       3
+     ],
+     [
+      "Swift Judgement",
+      1
      ]
     ]
    },
-   "gap_to_runner_up": 0.0004,
+   "gap_to_runner_up": 0.0002,
    "runs": [
     {
      "entry": "prot-tank",
      "run": 1,
-     "simulated": 2443,
-     "best_screen": 1.0456,
-     "best_split": "0/33/18",
-     "best_stage1_gap": -0.0003,
+     "simulated": 2842,
+     "best_screen": 1.077,
+     "best_split": "0/35/16",
+     "best_stage1_gap": 0.0,
      "agrees_with_winner": true
     },
     {
      "entry": "prot-tank",
      "run": 2,
-     "simulated": 2646,
-     "best_screen": 1.0456,
-     "best_split": "0/33/18",
-     "best_stage1_gap": -0.0003,
+     "simulated": 2648,
+     "best_screen": 1.077,
+     "best_split": "0/35/16",
+     "best_stage1_gap": 0.0,
      "agrees_with_winner": true
     },
     {
      "entry": "prot-tank",
      "run": 3,
-     "simulated": 2441,
-     "best_screen": 1.0456,
-     "best_split": "0/33/18",
-     "best_stage1_gap": -0.0003,
+     "simulated": 2246,
+     "best_screen": 1.077,
+     "best_split": "0/35/16",
+     "best_stage1_gap": 0.0,
      "agrees_with_winner": true
     },
     {
      "entry": "prot-tank",
      "run": 4,
-     "simulated": 2245,
-     "best_screen": 1.0456,
-     "best_split": "0/33/18",
-     "best_stage1_gap": -0.0003,
+     "simulated": 2853,
+     "best_screen": 1.077,
+     "best_split": "0/35/16",
+     "best_stage1_gap": 0.0,
      "agrees_with_winner": true
     },
     {
      "entry": "prot-tank",
      "run": 5,
-     "simulated": 2652,
-     "best_screen": 1.0456,
-     "best_split": "0/33/18",
+     "simulated": 3048,
+     "best_screen": 1.077,
+     "best_split": "0/35/16",
      "best_stage1_gap": 0.0,
      "agrees_with_winner": true
     },
     {
      "entry": "prot-tank",
      "run": 6,
-     "simulated": 2847,
-     "best_screen": 1.0456,
-     "best_split": "0/33/18",
-     "best_stage1_gap": -0.0003,
+     "simulated": 2850,
+     "best_screen": 1.077,
+     "best_split": "0/35/16",
+     "best_stage1_gap": 0.0,
      "agrees_with_winner": true
     }
    ],
@@ -181,96 +189,96 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      1.0453,
-      1.045,
-      1.0448,
-      1.0445,
-      1.0444,
-      1.0442,
-      1.0439,
-      1.0431,
-      1.0427
+      1.0761,
+      1.0756,
+      1.0755,
+      1.074,
+      1.0738,
+      1.0737,
+      1.0737,
+      1.0731,
+      1.0719
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      1.0448,
-      1.0448,
-      1.0445,
-      1.0443,
-      1.044
+      1.076,
+      1.0755,
+      1.0754,
+      1.0746,
+      1.0737
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      1.0448,
-      1.0444
+      1.076,
+      1.0758
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 384,
-     "best_gap": 0.0001,
-     "best_move": "1 Reckoning -> Conviction"
+     "neighbours": 268,
+     "best_gap": 0.0008,
+     "best_move": "1 Precision -> One-Handed Weapon Specialization"
     }
    ],
    "important_features": [
     {
      "feature": "Sanctified Judgement",
-     "importance": 0.2924
-    },
-    {
-     "feature": "Vindication",
-     "importance": 0.2216
+     "importance": 0.3195
     },
     {
      "feature": "Holy Shield",
-     "importance": 0.2151
+     "importance": 0.2209
+    },
+    {
+     "feature": "Vindication",
+     "importance": 0.1624
     },
     {
      "feature": "Retribution points",
-     "importance": 0.1108
-    },
-    {
-     "feature": "Toughness",
-     "importance": 0.0498
+     "importance": 0.1049
     },
     {
      "feature": "Holy points",
-     "importance": 0.021
+     "importance": 0.0563
+    },
+    {
+     "feature": "Toughness",
+     "importance": 0.0445
     },
     {
      "feature": "Iron Creed",
-     "importance": 0.0186
+     "importance": 0.0162
     },
     {
      "feature": "Sacred Arbiter",
-     "importance": 0.017
+     "importance": 0.0109
     },
     {
      "feature": "Benediction",
-     "importance": 0.0087
-    },
-    {
-     "feature": "Templar's Bulwark",
-     "importance": 0.007
+     "importance": 0.0107
     },
     {
      "feature": "Guardian's Favor",
-     "importance": 0.0056
+     "importance": 0.0107
     },
     {
-     "feature": "Protection points",
-     "importance": 0.0053
+     "feature": "Templar's Bulwark",
+     "importance": 0.0095
+    },
+    {
+     "feature": "Deflection",
+     "importance": 0.0055
     }
    ],
-   "simulated_builds": 15675,
-   "minutes": 59.7,
+   "simulated_builds": 16772,
+   "minutes": 40.5,
    "rotation_changed": false
   },
   {
@@ -309,7 +317,7 @@
       ],
       [
        "One-Handed Weapon Specialization",
-       3
+       2
       ],
       [
        "Templar's Bulwark",
@@ -317,7 +325,7 @@
       ],
       [
        "Reckoning",
-       2
+       5
       ],
       [
        "Iron Creed",
@@ -343,7 +351,7 @@
       ],
       [
        "Conviction",
-       3
+       1
       ],
       [
        "Vindication",
@@ -359,23 +367,27 @@
       ]
      ]
     },
-    "split": "0/33/18",
-    "dps": 1.0448,
+    "split": "0/35/16",
+    "dps": 1.076,
     "se": 0.0002,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "0/32/19",
-    "dps": 1.0444,
+    "split": "0/34/17",
+    "dps": 1.0758,
     "se": 0.0002,
     "differs": [
      [
       "Conviction",
-      3
+      1
      ],
      [
       "Conviction",
-      4
+      2
+     ],
+     [
+      "Improved Seal of Fury",
+      1
      ],
      [
       "One-Handed Weapon Specialization",
@@ -384,35 +396,39 @@
      [
       "One-Handed Weapon Specialization",
       3
+     ],
+     [
+      "Swift Judgement",
+      1
      ]
     ]
    },
-   "gap_to_runner_up": 0.0003,
+   "gap_to_runner_up": 0.0002,
    "runs": [
     {
      "entry": "prot-tank",
      "run": 1,
-     "simulated": 1451,
-     "best_screen": 1.0456,
-     "best_split": "0/33/18",
-     "best_stage1_gap": -0.0003,
+     "simulated": 1452,
+     "best_screen": 1.077,
+     "best_split": "0/35/16",
+     "best_stage1_gap": 0.0,
      "agrees_with_winner": true
     },
     {
      "entry": "prot-tank",
      "run": 2,
      "simulated": 1449,
-     "best_screen": 1.0456,
-     "best_split": "0/33/18",
-     "best_stage1_gap": -0.0003,
+     "best_screen": 1.077,
+     "best_split": "0/35/16",
+     "best_stage1_gap": 0.0,
      "agrees_with_winner": true
     },
     {
      "entry": "prot-tank",
      "run": 3,
-     "simulated": 1450,
-     "best_screen": 1.0456,
-     "best_split": "0/33/18",
+     "simulated": 1452,
+     "best_screen": 1.077,
+     "best_split": "0/35/16",
      "best_stage1_gap": 0.0,
      "agrees_with_winner": true
     }
@@ -423,100 +439,99 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      1.0453,
-      1.045,
-      1.0448,
-      1.0442,
-      1.0439,
-      1.0431,
-      1.0427
+      1.0761,
+      1.0756,
+      1.074,
+      1.0737,
+      1.0737,
+      1.0719
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      1.0448,
-      1.0445,
-      1.0443,
-      1.0439,
-      1.0436
+      1.076,
+      1.0755,
+      1.0746,
+      1.0739,
+      1.0732
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      1.0448,
-      1.0444
+      1.076,
+      1.0758
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 384,
-     "best_gap": 0.0001,
-     "best_move": "1 Reckoning -> Conviction"
+     "neighbours": 268,
+     "best_gap": 0.0008,
+     "best_move": "1 Precision -> One-Handed Weapon Specialization"
     }
    ],
    "important_features": [
     {
-     "feature": "Retribution points",
-     "importance": 0.2457
-    },
-    {
-     "feature": "Vindication",
-     "importance": 0.2061
-    },
-    {
      "feature": "Sanctified Judgement",
-     "importance": 0.1821
+     "importance": 0.2914
     },
     {
      "feature": "Holy Shield",
-     "importance": 0.1776
+     "importance": 0.1699
     },
     {
-     "feature": "Toughness",
-     "importance": 0.0455
+     "feature": "Vindication",
+     "importance": 0.1646
+    },
+    {
+     "feature": "Retribution points",
+     "importance": 0.1545
     },
     {
      "feature": "Holy points",
-     "importance": 0.0406
+     "importance": 0.0796
+    },
+    {
+     "feature": "Toughness",
+     "importance": 0.047
     },
     {
      "feature": "Sacred Arbiter",
-     "importance": 0.0194
-    },
-    {
-     "feature": "Iron Creed",
-     "importance": 0.0157
-    },
-    {
-     "feature": "Templar's Bulwark",
-     "importance": 0.0127
+     "importance": 0.0139
     },
     {
      "feature": "Guardian's Favor",
-     "importance": 0.0078
+     "importance": 0.0117
     },
     {
      "feature": "Protection points",
-     "importance": 0.0078
+     "importance": 0.0106
+    },
+    {
+     "feature": "Templar's Bulwark",
+     "importance": 0.0105
     },
     {
      "feature": "Benediction",
-     "importance": 0.0065
+     "importance": 0.008
+    },
+    {
+     "feature": "Iron Creed",
+     "importance": 0.007
     }
    ],
-   "simulated_builds": 4749,
-   "minutes": 11.6,
+   "simulated_builds": 4635,
+   "minutes": 11.5,
    "rotation_changed": false
   }
  ],
  "ref": {
   "build": "prot-tank",
-  "threat": 504.6416951692843,
+  "threat": 472.0027399085618,
   "dtps": 566.1211591599524,
   "fights": 20000
  },
@@ -524,81 +539,81 @@
  "two_move": {
   "steps": [
    {
-    "one_move": 384,
-    "two_move": 46156,
+    "one_move": 268,
+    "two_move": 28880,
     "expanded": null,
     "screen": 1000,
     "screen_best": [
      [
-      "1 Reckoning -> Conviction",
-      0.0002
+      "1 Shield Specialization -> One-Handed Weapon Specialization",
+      -0.0004
      ],
      [
-      "1 One-Handed Weapon Specialization -> Reckoning; then 2 Reckoning -> Conviction",
-      -0.0001
+      "1 Swift Judgement -> One-Handed Weapon Specialization; then 1 Improved Seal of Fury -> Conviction",
+      -0.0005
      ],
      [
-      "1 One-Handed Weapon Specialization -> Conviction",
-      -0.0003
+      "1 Anticipation -> One-Handed Weapon Specialization",
+      -0.0007
      ],
      [
-      "1 Reckoning -> Eye for an Eye",
-      -0.0006
+      "1 Swift Judgement -> Conviction; then 1 Improved Seal of Fury -> Conviction",
+      -0.0009
      ],
      [
-      "1 One-Handed Weapon Specialization -> Conviction; then 1 Reckoning -> Eye for an Eye",
+      "1 Shield Specialization -> Conviction",
       -0.0009
      ]
     ],
     "raced": 60,
     "confirmed": [
      [
-      "1 Reckoning -> Conviction",
-      0.0002
+      "1 Swift Judgement -> One-Handed Weapon Specialization; then 1 Improved Seal of Fury -> Conviction",
+      0.0006
      ],
      [
-      "1 Conviction -> Reckoning",
-      -0.0001
+      "1 Swift Judgement -> Conviction; then 1 Improved Seal of Fury -> Conviction",
+      0.0001
      ],
      [
-      "1 One-Handed Weapon Specialization -> Reckoning; then 2 Reckoning -> Conviction",
-      -0.0001
+      "1 Swift Judgement -> One-Handed Weapon Specialization; then 1 Improved Seal of Fury -> Eye for an Eye",
+      -0.0005
      ],
      [
-      "1 One-Handed Weapon Specialization -> Conviction",
-      -0.0003
+      "1 Shield Specialization -> One-Handed Weapon Specialization",
+      -0.0006
      ],
      [
-      "1 One-Handed Weapon Specialization -> Reckoning",
-      -0.0004
+      "1 Shield Specialization -> Conviction",
+      -0.0011
      ]
     ],
-    "minutes": 71.6
+    "minutes": 44.6
    }
   ],
   "moved": false
  },
  "final": {
   "deep winner": {
-   "value": 1.0448,
+   "value": 1.0756,
    "se": 0.0002
   },
   "prot-tank": {
-   "value": 1.0,
+   "value": 0.9999,
    "se": 0.0002
   },
   "opt-prot-tank-raid-tank": {
-   "value": 1.0306,
+   "value": 1.0427,
    "se": 0.0002
   },
   "protection-ml-tank": {
-   "value": 1.0432,
+   "value": 1.0654,
    "se": 0.0002
   }
  },
- "minutes": 148.4,
+ "minutes": 101.9,
  "build": {
   "written": "protection-ml-tank",
-  "gain_vs_hand": 0.04479999999999995
+  "gain_vs_hand": 0.07570757075707557
  }
 }

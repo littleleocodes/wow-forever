@@ -2,8 +2,8 @@
  "raid": {
   "class": "paladin",
   "spec": "prot-tank",
-  "date": "2026-10-15",
-  "commit": "2ce8265",
+  "date": "2026-10-16",
+  "commit": "b7083fa",
   "setting": "raid",
   "tank": true,
   "simulator_apl": "ui/specs/paladin/protection/apls/default.apl.json",
@@ -11,11 +11,11 @@
   "builds": [
    {
     "label": "deep: tank",
-    "talents": "-0530513301301251-50223230001"
+    "talents": "-0530513301201551-50221230001"
    },
    {
     "label": "protection-ml-tank",
-    "talents": "-0530513301301151-50222230021",
+    "talents": "-0530513301301251-50223230001",
     "protect_only": true
    },
    {
@@ -100,45 +100,45 @@
   "final": {
    "raid": {
     "deep: tank": {
-     "before": 397.79931819665495,
-     "after": 419.37527998981864,
-     "base": 397.79931819665495,
+     "before": 399.5130228101806,
+     "after": 433.44929726040357,
+     "base": 399.5130228101806,
      "before_value": 1.0,
      "after_value": 1.0,
-     "oom_before": 4.8302013371648,
-     "oom_after": 4.8302013371648
+     "oom_before": 4.3786856773875495,
+     "oom_after": 4.3786856773875495
     },
     "protection-ml-tank": {
-     "before": 396.19798877878674,
-     "after": 416.1070132076477,
-     "base": 396.19798877878674,
+     "before": 397.2572939982505,
+     "after": 422.4575281363528,
+     "base": 397.2572939982505,
      "before_value": 1.0,
      "after_value": 1.0,
-     "oom_before": 4.8931193491344,
-     "oom_after": 4.8931193491344
+     "oom_before": 4.704366857639548,
+     "oom_after": 4.704366857639548
     },
     "sim preset: Protection 0/45/6": {
-     "before": 368.35577592839803,
-     "after": 374.2876211842899,
-     "base": 368.35577592839803,
+     "before": 374.8626052128242,
+     "after": 390.0530177098519,
+     "base": 374.8626052128242,
      "before_value": 1.0,
      "after_value": 1.0,
-     "oom_before": 20.11030979798045,
-     "oom_after": 20.11030979798045
+     "oom_before": 19.365666264812905,
+     "oom_after": 19.365666264812905
     },
     "prot-tank": {
-     "before": 457.5975220389046,
-     "after": 454.58610579885016,
-     "base": 457.5975220389046,
+     "before": 430.5201657809445,
+     "after": 427.65715727675064,
+     "base": 430.5201657809445,
      "before_value": 1.0,
      "after_value": 1.0,
      "oom_before": 3.02505014908185,
      "oom_after": 3.02505014908185
     },
     "opt-prot-tank-raid-tank": {
-     "before": 389.5900063832318,
-     "after": 408.00001612140596,
-     "base": 389.5900063832318,
+     "before": 383.99135465461376,
+     "after": 402.35640826623995,
+     "base": 383.99135465461376,
      "before_value": 1.0,
      "after_value": 1.0,
      "oom_before": 5.7038385434954435,
@@ -147,6 +147,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 8
+  "passes": 10
  }
 }

@@ -3,33 +3,32 @@
  "spec": "feral-cat-dps",
  "build": "feral-combat-open-raid",
  "setting": "raid",
- "date": "2026-10-10",
+ "date": "2026-10-16",
  "tank": false,
  "removal": {
-  "Berserk": 0.017569610082843856,
-  "Blood Frenzy": 0.02111038291787737,
+  "Berserk": 0.01859224531348691,
+  "Blood Frenzy": 0.010500200910635638,
   "Feral Swiftness": -0.0,
-  "Ferocity": -0.0,
-  "Furor": 0.002820413122481158,
-  "Genesis": 0.012023214001484095,
-  "Heart of the Wild": 0.02208936922863891,
-  "Improved Shifting Power": 0.08463548362333806,
+  "Ferocity": 0.011536995867442501,
+  "Furor": 0.0021821279964985285,
+  "Genesis": 0.016040695132111593,
+  "Heart of the Wild": 0.02299778540954489,
+  "Improved Shifting Power": 0.07492785247150435,
   "Leader of the Pack": -0.0,
-  "Natural Instinct": 0.03694277611983743,
-  "Naturalist": 0.037182560484899096,
+  "Natural Instinct": 0.03982835735442358,
+  "Naturalist": 0.037064901567847586,
   "Nature's Focus": -0.0,
-  "Nature's Majesty": 0.031531301764870956,
-  "Nature's Reach": 0.02436448220238585,
-  "Predatory Strikes": 0.025839258179547353,
-  "Rend and Tear": 0.04898314932986192,
-  "Savage Fury": 0.030683172568284123,
-  "Sharpened Claws": 0.04662531289700378,
-  "Shifting Power": 0.18095195776312545,
-  "Shredding Attacks": 0.1485186042904325
+  "Nature's Majesty": 0.031594642740153445,
+  "Nature's Reach": 0.022873072618096457,
+  "Predatory Strikes": 0.026906042894233484,
+  "Rend and Tear": 0.05663800343952419,
+  "Savage Fury": 0.034929932605467284,
+  "Sharpened Claws": 0.04666673283606926,
+  "Shifting Power": 0.16304163925325166,
+  "Shredding Attacks": 0.09123005379628357
  },
  "free": [
   "Feral Swiftness",
-  "Ferocity",
   "Leader of the Pack",
   "Nature's Focus"
  ],
@@ -42,33 +41,15 @@
  "moves": [
   {
    "round": 1,
-   "kind": "utility",
+   "kind": "gain",
    "from": "Feral Swiftness",
-   "to": "Thick Hide",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "survival"
-  },
-  {
-   "round": 2,
-   "kind": "utility",
-   "from": "Ferocity",
-   "to": "Thick Hide",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "survival"
-  },
-  {
-   "round": 3,
-   "kind": "utility",
-   "from": "Ferocity",
-   "to": "Thick Hide",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "survival"
+   "to": "Ferocity",
+   "seed1": 0.0030844134605483298,
+   "seed2": 0.0022700897072782666,
+   "utility": null
   }
  ],
- "final_seed3": 0.0,
+ "final_seed3": 0.0026814470476774765,
  "start": {
   "Balance": [
    [
@@ -175,7 +156,7 @@
   "Feral Combat": [
    [
     "Ferocity",
-    2
+    5
    ],
    [
     "Heart of the Wild",
@@ -224,10 +205,6 @@
    [
     "Berserk",
     1
-   ],
-   [
-    "Thick Hide",
-    3
    ]
   ],
   "Restoration": [

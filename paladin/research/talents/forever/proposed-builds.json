@@ -1351,49 +1351,6 @@
       "replaces": "leveling-retribution"
     },
     {
-      "id": "protection-ml-tank",
-      "name": "Protection — Raid tank (machine-learning search)",
-      "role": "tank",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Protection",
-      "generated": "2026-10-15",
-      "derived": "raid",
-      "summary": "The Protection tank build the machine-learning talent search found in the community simulator on 2026-10-15 (raidsim/deep_tank.py: a random forest guiding a genetic search over every legal build of the spec, scored on tank value: threat per second and damage taken under boss melee; the rotation tuned with it; races on fresh seeds; every build one or two moves from the winner checked). The simulator's model of the beta, not an in-game measurement.",
-      "allocation": {
-        "Holy": [],
-        "Protection": [
-          ["Redoubt", 5],
-          ["Precision", 3],
-          ["Anticipation", 5],
-          ["Improved Seal of Fury", 1],
-          ["Improved Righteous Fury", 3],
-          ["Shield Specialization", 3],
-          ["Swift Judgement", 1],
-          ["One-Handed Weapon Specialization", 3],
-          ["Templar's Bulwark", 1],
-          ["Reckoning", 2],
-          ["Iron Creed", 5],
-          ["Holy Shield", 1]
-        ],
-        "Retribution": [
-          ["Deflection", 5],
-          ["Improved Judgement", 2],
-          ["Holy Conduit", 2],
-          ["Conviction", 3],
-          ["Vindication", 2],
-          ["Sanctified Judgement", 3],
-          ["Sacred Arbiter", 1]
-        ]
-      },
-      "core": [],
-      "flex": [],
-      "notes": ["+4.5% tank value over the hand draft prot-tank (over the 2% bar: the spec's tank pick; the hand draft stays as the alternative).", "Final race over 100,000 fights: tank value 1.045 ± 0.000 (relative to prot-tank over 20,000 fights); protection-ml-tank 1.043, opt-prot-tank-raid-tank 1.031, prot-tank 1.000.", "Independent runs agreeing in the last cycle: 3/3; two-move check: 384 one-move and 46,156 two-move builds, none better."],
-      "open_questions": ["A machine-searched Protection tank build: check its threat and survival against the community's tank builds at launch (the simulator models no threat from other players, taunts or tank swaps)."],
-      "sources": [],
-      "replaces": "prot-tank"
-    },
-    {
       "id": "holy-leveling",
       "name": "Holy — Leveling into the raid build",
       "role": "dps",
@@ -1524,6 +1481,49 @@
       "notes": ["2026-10-15 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): own tree first 34 s; stats model's order 34 s; own tree last 34 s. First Protection point at level 10.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
       "open_questions": ["Check the Protection leveling pace at launch; the raid build's talents may cost speed early."],
       "sources": []
+    },
+    {
+      "id": "protection-ml-tank",
+      "name": "Protection — Raid tank (machine-learning search)",
+      "role": "tank",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Protection",
+      "generated": "2026-10-16",
+      "derived": "raid",
+      "summary": "The Protection tank build the machine-learning talent search found in the community simulator on 2026-10-16 (raidsim/deep_tank.py: a random forest guiding a genetic search over every legal build of the spec, scored on tank value: threat per second and damage taken under boss melee; the rotation tuned with it; races on fresh seeds; every build one or two moves from the winner checked). The simulator's model of the beta, not an in-game measurement.",
+      "allocation": {
+        "Holy": [],
+        "Protection": [
+          ["Redoubt", 5],
+          ["Precision", 3],
+          ["Anticipation", 5],
+          ["Improved Seal of Fury", 1],
+          ["Improved Righteous Fury", 3],
+          ["Shield Specialization", 3],
+          ["Swift Judgement", 1],
+          ["One-Handed Weapon Specialization", 2],
+          ["Templar's Bulwark", 1],
+          ["Reckoning", 5],
+          ["Iron Creed", 5],
+          ["Holy Shield", 1]
+        ],
+        "Retribution": [
+          ["Deflection", 5],
+          ["Improved Judgement", 2],
+          ["Holy Conduit", 2],
+          ["Conviction", 1],
+          ["Vindication", 2],
+          ["Sanctified Judgement", 3],
+          ["Sacred Arbiter", 1]
+        ]
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["+7.6% tank value over the hand draft prot-tank (over the 2% bar: the spec's tank pick; the hand draft stays as the alternative).", "Final race over 100,000 fights: tank value 1.076 ± 0.000 (relative to prot-tank over 20,000 fights); protection-ml-tank 1.065, opt-prot-tank-raid-tank 1.043, prot-tank 1.000.", "Independent runs agreeing in the last cycle: 3/3; two-move check: 268 one-move and 28,880 two-move builds, none better."],
+      "open_questions": ["A machine-searched Protection tank build: check its threat and survival against the community's tank builds at launch (the simulator models no threat from other players, taunts or tank swaps)."],
+      "sources": [],
+      "replaces": "prot-tank"
     }
   ]
 }

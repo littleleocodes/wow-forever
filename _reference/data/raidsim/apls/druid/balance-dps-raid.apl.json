@@ -19,6 +19,21 @@
  "priorityList": [
   {
    "action": {
+    "multidot": {
+     "spellId": {
+      "spellId": 24977
+     },
+     "maxDots": 1,
+     "maxOverlap": {
+      "const": {
+       "val": "0ms"
+      }
+     }
+    }
+   }
+  },
+  {
+   "action": {
     "autocastOtherCooldowns": {}
    }
   },
@@ -40,21 +55,6 @@
     "castSpell": {
      "spellId": {
       "spellId": 29166
-     }
-    }
-   }
-  },
-  {
-   "action": {
-    "multidot": {
-     "spellId": {
-      "spellId": 24977
-     },
-     "maxDots": 1,
-     "maxOverlap": {
-      "const": {
-       "val": "0ms"
-      }
      }
     }
    }

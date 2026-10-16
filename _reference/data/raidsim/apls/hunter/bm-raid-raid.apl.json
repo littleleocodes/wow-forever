@@ -34,39 +34,20 @@
   {
    "action": {
     "condition": {
-     "and": {
-      "vals": [
-       {
-        "cmp": {
-         "op": "OpLt",
-         "lhs": {
-          "dotRemainingTime": {
-           "spellId": {
-            "spellId": 25295
-           }
-          }
-         },
-         "rhs": {
-          "const": {
-           "val": "0.25s"
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "currentManaPercent": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "30%"
-          }
-         }
+     "cmp": {
+      "op": "OpLt",
+      "lhs": {
+       "dotRemainingTime": {
+        "spellId": {
+         "spellId": 25295
         }
        }
-      ]
+      },
+      "rhs": {
+       "const": {
+        "val": "0.25s"
+       }
+      }
      }
     },
     "castSpell": {
@@ -75,7 +56,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see bm-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-10-16: changed or added by the rotation search (see bm-raid-rotation-search.json)"
   },
   {
    "action": {

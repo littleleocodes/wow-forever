@@ -4,7 +4,7 @@
  "game": "forever",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
-  "commit": "2ce8265",
+  "commit": "b7083fa",
   "spec_folder": "druid/feralbear",
   "gear": "ui/specs/druid/feralbear/gear_sets/launch.gear.json",
   "apl": "_reference/data/raidsim/apls/druid/feral-bear-tank-raid.apl.json",
@@ -29,11 +29,58 @@
   "seed": 1,
   "duration": 180.0
  },
- "date": "2026-10-15",
+ "date": "2026-10-16",
  "results": [
   {
    "label": "feral-bear-tank",
    "talents": "05002-5020033212003200255-054",
+   "split": "7/35/9",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "22812": 3.1233333333333335,
+    "9881": 46.51733333333333,
+    "5229": 3.1233333333333335,
+    "1235827": 116.95333333333333
+   },
+   "casts": {
+    "Barkskin": 3.1233333333333335,
+    "Maul": 46.51733333333333,
+    "Auto Attack": 59.33200000000001,
+    "OtherActionRageGain": 114.87133333333334,
+    "Enrage": 3.1233333333333335,
+    "Lacerate": 116.95333333333333
+   },
+   "dps": 537.0979571221928,
+   "dps_stdev": 30.444267522955656,
+   "threat": 1223.5669471519877,
+   "dtps": 635.5037416383149,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 0.5339020080431519,
+   "shares": {
+    "Lacerate": 0.5800281536304033,
+    "Maul": 0.28395399767281476,
+    "Auto Attack": 0.1131312809668207,
+    "OtherActionRageGain": 0.011551037927705137,
+    "Retribution Aura": 0.004744870353720148,
+    "Thorns": 0.004271463210219247,
+    "Dragonbreath Chili": 0.0023191962383167825
+   },
+   "source_shares": {
+    "lacerate": 0.591,
+    "maul": 0.2893,
+    "white": 0.1153,
+    "thorns": 0.0044
+   },
+   "unmatched_share": 0.0186,
+   "value": 1.0
+  },
+  {
+   "label": "opt-feral-bear-tank-raid-tank",
+   "talents": "05002-5020033212003200255-504",
    "split": "7/35/9",
    "ours": true,
    "measured": true,
@@ -45,15 +92,15 @@
    },
    "casts": {
     "Barkskin": 3.1233333333333335,
-    "Enrage": 3.1233333333333335,
     "Auto Attack": 59.33200000000001,
     "OtherActionRageGain": 114.87133333333334,
+    "Enrage": 3.1233333333333335,
     "Lacerate": 116.95333333333333,
     "Maul": 46.51733333333333
    },
-   "dps": 541.3968427778633,
-   "dps_stdev": 29.98068566189301,
-   "threat": 1221.257916960245,
+   "dps": 537.0979571221928,
+   "dps_stdev": 30.444267522955656,
+   "threat": 1223.5669471519877,
    "dtps": 635.5037416383149,
    "tmi": 0,
    "hps": 0,
@@ -61,68 +108,21 @@
    "error": null,
    "scorer": 0.5339020080431519,
    "shares": {
-    "Lacerate": 0.5749882155757543,
-    "Maul": 0.2814739311555955,
-    "Auto Attack": 0.11210124202815178,
-    "Retribution Aura": 0.012324334015479419,
-    "OtherActionRageGain": 0.011572877454762142,
-    "Thorns": 0.005230547982225512,
-    "Dragonbreath Chili": 0.0023088517880314324
+    "Lacerate": 0.5800281536304033,
+    "Maul": 0.28395399767281476,
+    "Auto Attack": 0.1131312809668207,
+    "OtherActionRageGain": 0.011551037927705137,
+    "Retribution Aura": 0.004744870353720148,
+    "Thorns": 0.004271463210219247,
+    "Dragonbreath Chili": 0.0023191962383167825
    },
    "source_shares": {
-    "lacerate": 0.5905,
-    "maul": 0.289,
-    "white": 0.1151,
-    "thorns": 0.0054
+    "lacerate": 0.591,
+    "maul": 0.2893,
+    "white": 0.1153,
+    "thorns": 0.0044
    },
-   "unmatched_share": 0.0262,
-   "value": 1.0
-  },
-  {
-   "label": "opt-feral-bear-tank-raid-tank",
-   "talents": "05002-5020033212003200255-504",
-   "split": "7/35/9",
-   "ours": true,
-   "measured": true,
-   "spell_casts": {
-    "1235827": 116.95333333333333,
-    "22812": 3.1233333333333335,
-    "9881": 46.51733333333333,
-    "5229": 3.1233333333333335
-   },
-   "casts": {
-    "Lacerate": 116.95333333333333,
-    "Auto Attack": 59.33200000000001,
-    "OtherActionRageGain": 114.87133333333334,
-    "Barkskin": 3.1233333333333335,
-    "Maul": 46.51733333333333,
-    "Enrage": 3.1233333333333335
-   },
-   "dps": 541.3968427778633,
-   "dps_stdev": 29.98068566189301,
-   "threat": 1221.257916960245,
-   "dtps": 635.5037416383149,
-   "tmi": 0,
-   "hps": 0,
-   "oom_seconds": 0,
-   "error": null,
-   "scorer": 0.5339020080431519,
-   "shares": {
-    "Lacerate": 0.5749882155757543,
-    "Maul": 0.2814739311555955,
-    "Auto Attack": 0.11210124202815178,
-    "Retribution Aura": 0.012324334015479419,
-    "OtherActionRageGain": 0.011572877454762142,
-    "Thorns": 0.005230547982225512,
-    "Dragonbreath Chili": 0.0023088517880314324
-   },
-   "source_shares": {
-    "lacerate": 0.5905,
-    "maul": 0.289,
-    "white": 0.1151,
-    "thorns": 0.0054
-   },
-   "unmatched_share": 0.0262,
+   "unmatched_share": 0.0186,
    "value": 1.0
   },
   {
@@ -132,25 +132,25 @@
    "ours": false,
    "spell_casts": {
     "5229": 3.0286666666666666,
-    "9881": 29.955,
-    "417141": 1.0296666666666667,
-    "22812": 3.0276666666666667,
     "1235827": 84.38,
-    "1238073": 31.519
+    "417141": 1.0296666666666667,
+    "9881": 29.955,
+    "1238073": 31.519,
+    "22812": 3.0276666666666667
    },
    "casts": {
     "Enrage": 3.0286666666666666,
-    "Maul": 29.955,
-    "Berserk": 1.0296666666666667,
-    "Barkskin": 3.0276666666666667,
     "Lacerate": 84.38,
+    "OtherActionRageGain": 103.325,
+    "Berserk": 1.0296666666666667,
+    "Maul": 29.955,
     "Primal Bite": 31.519,
     "Auto Attack": 75.93533333333333,
-    "OtherActionRageGain": 103.325
+    "Barkskin": 3.0276666666666667
    },
-   "dps": 505.1933590578784,
-   "dps_stdev": 26.37458934839382,
-   "threat": 989.1259908140103,
+   "dps": 498.848822822521,
+   "dps_stdev": 26.706098964555274,
+   "threat": 986.1881362842607,
    "dtps": 669.5490141593278,
    "tmi": 0,
    "hps": 0,
@@ -158,23 +158,23 @@
    "error": null,
    "scorer": null,
    "shares": {
-    "Lacerate": 0.4635135752767049,
-    "Maul": 0.18941626342646942,
-    "Auto Attack": 0.17165108794375242,
-    "Primal Bite": 0.1366774133010108,
-    "Retribution Aura": 0.01631843979317028,
-    "OtherActionRageGain": 0.012657563618818394,
-    "Thorns": 0.006933418953052478,
-    "Dragonbreath Chili": 0.0028322376870213305
+    "Lacerate": 0.46878034065998153,
+    "Maul": 0.1915577942823879,
+    "Auto Attack": 0.1738796857651437,
+    "Primal Bite": 0.138227847035595,
+    "OtherActionRageGain": 0.012695270501759866,
+    "Retribution Aura": 0.006313231408486608,
+    "Thorns": 0.005689696588869383,
+    "Dragonbreath Chili": 0.002856133757776059
    },
    "source_shares": {
-    "lacerate": 0.5574,
-    "maul": 0.2278,
-    "white": 0.2064,
-    "thorns": 0.0083
+    "lacerate": 0.5581,
+    "maul": 0.2281,
+    "white": 0.207,
+    "thorns": 0.0068
    },
-   "unmatched_share": 0.1685,
-   "value": 0.8795379234263383
+   "unmatched_share": 0.1601,
+   "value": 0.8775731787472936
   }
  ],
  "deltas": {}

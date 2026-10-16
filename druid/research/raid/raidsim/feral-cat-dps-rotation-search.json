@@ -162,21 +162,20 @@
  "raid": {
   "class": "druid",
   "spec": "feral-cat-dps",
-  "date": "2026-10-10",
-  "commit": "2ce8265",
+  "date": "2026-10-16",
+  "commit": "b7083fa",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/druid/feralcat/apls/default.apl.json",
   "start": "ui\\specs\\druid\\feralcat\\apls\\default.apl.json",
   "builds": [
    {
-    "label": "open winner",
-    "talents": "050022-45100032021031212051-144"
+    "label": "feral-combat-open-raid",
+    "talents": "050022-25000332021031212051-144"
    },
    {
     "label": "feral-combat-shifting-power-raid",
-    "talents": "050022-55000032121032212051-052",
-    "protect_only": true
+    "talents": "050022-55000032121032212051-052"
    },
    {
     "label": "feral-cat-dps",
@@ -190,7 +189,8 @@
    }
   ],
   "tuned_on": [
-   "open winner"
+   "feral-combat-open-raid",
+   "feral-combat-shifting-power-raid"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -242,41 +242,57 @@
     "gain_seed2": 0.09880388665303785,
     "candidates": 460,
     "pass": 5
+   },
+   {
+    "round": 7,
+    "change": "insert at the top: if combo points < 5 and not Rake is on the target and time left in the fight > 6s: cast Rake",
+    "gain_seed1": 0.07455918771520853,
+    "gain_seed2": 0.07533278201407745,
+    "candidates": 478,
+    "pass": 7
+   },
+   {
+    "round": 8,
+    "change": "drop 'combo points < 5' from the condition: if combo points < 5 and not Rake is on the target and time left in the fight > 6s: cast Rake",
+    "gain_seed1": 0.005003217334220933,
+    "gain_seed2": 0.004930045503237723,
+    "candidates": 514,
+    "pass": 7
    }
   ],
   "final": {
    "raid": {
-    "open winner": {
-     "before": 686.7390360396412,
-     "after": 698.3311627544499,
-     "base": 686.7390360396412,
+    "feral-combat-open-raid": {
+     "before": 750.942523056544,
+     "after": 759.4491707088638,
+     "base": 750.942523056544,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0008186999987000001,
-     "oom_after": 0.0008186999987000001
+     "oom_before": 0.0011052999991499998,
+     "oom_after": 0.0006088499981999999
     },
     "feral-combat-shifting-power-raid": {
-     "before": 680.2510229797779,
-     "after": 691.0445080795116,
-     "base": 680.2510229797779,
+     "before": 748.8922415164728,
+     "after": 754.9028982612386,
+     "base": 748.8922415164728,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.00120994999865,
-     "oom_after": 0.00120994999865
+     "oom_before": 0.0010206999987,
+     "oom_after": 1.9999999849999997e-05
     },
     "feral-cat-dps": {
-     "before": 570.3294840831298,
-     "after": 578.8360928914879,
-     "base": 570.3294840831298,
+     "before": 634.0186793513974,
+     "after": 638.301152926581,
+     "base": 634.0186793513974,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "opt-feral-cat-dps-raid-dps": {
-     "before": 582.4813573834896,
-     "after": 593.2943848688002,
-     "base": 582.4813573834896,
+     "before": 645.2802464901887,
+     "after": 654.2209256692114,
+     "base": 645.2802464901887,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -285,6 +301,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 6
+  "passes": 7
  }
 }

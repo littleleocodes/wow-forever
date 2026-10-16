@@ -99,8 +99,8 @@
  "raid": {
   "class": "druid",
   "spec": "balance-dps",
-  "date": "2026-10-09",
-  "commit": "2ce8265",
+  "date": "2026-10-16",
+  "commit": "b7083fa",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/druid/balance/apls/default.apl.json",
@@ -111,13 +111,13 @@
     "talents": "0532220115501051-05-505003"
    },
    {
-    "label": "sim preset: Balance",
-    "talents": "5532220115001351--505302"
+    "label": "sim preset: Moonkin 38/0/13",
+    "talents": "5502220115501351--055003"
    }
   ],
   "tuned_on": [
    "balance-moonkin-raid",
-   "sim preset: Balance"
+   "sim preset: Moonkin 38/0/13"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -129,31 +129,39 @@
     "gain_seed2": 0.003281910879091132,
     "candidates": 295,
     "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "move to the top: keep Insect Swarm on up to 1 targets (refresh under 0ms)",
+    "gain_seed1": 0.0013479654082684256,
+    "gain_seed2": 0.0017270110013098972,
+    "candidates": 311,
+    "pass": 3
    }
   ],
   "final": {
    "raid": {
     "balance-moonkin-raid": {
-     "before": 590.3673610959788,
-     "after": 591.2665317078148,
-     "base": 590.3673610959788,
+     "before": 591.8182851321291,
+     "after": 593.6679837679064,
+     "base": 591.8182851321291,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
-    "sim preset: Balance": {
-     "before": 527.1233451926104,
-     "after": 525.5959638810357,
-     "base": 527.1233451926104,
+    "sim preset: Moonkin 38/0/13": {
+     "before": 584.0567027596876,
+     "after": 585.9912272171747,
+     "base": 584.0567027596876,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
+     "oom_before": 0.22418674999999993,
+     "oom_after": 0.22682129999999995
     }
    }
   },
   "first_date": "2026-10-01",
-  "passes": 2
+  "passes": 3
  }
 }
