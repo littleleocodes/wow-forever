@@ -70,23 +70,26 @@ Allocation adopted on 2026-09-27 from `opt-prot-tank-raid-tank`, the best build 
 
 ## Rank among our builds and the community simulator's
 
-**2 of 4** for `prot-tank` by tank value in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 5** for `prot-tank` by tank value in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 14/5/32 | 1.007 | +0.0% | 686 | 1162 |
-| 2 | **[`prot-raid-tank`](prot-raid-tank.md)** | ours: hand draft | 14/5/32 | 1.000 | -0.7% | 676 | 1161 |
-| 3 | *Protection* | community simulator | - | 0.949 | -5.7% | 638 | 1217 |
-| 4 | *Protection 1/0/50* | community simulator | - | 0.934 | -7.3% | 625 | 1231 |
+| 1 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 17/3/31 | 1.011 | +0.0% | 700 | 672 |
+| 2 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 14/5/32 | 1.005 | -0.6% | 694 | 675 |
+| 3 | **[`prot-raid-tank`](prot-raid-tank.md)** | ours: hand draft | 14/5/32 | 1.000 | -1.1% | 685 | 673 |
+| 4 | *Protection* | community simulator | - | 0.948 | -6.3% | 646 | 706 |
+| 5 | *Protection 1/0/50* | community simulator | - | 0.931 | -7.9% | 631 | 714 |
 
 ## Rotation (community simulator, raid setting)
 
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-14, 5 changes to the base rotation; third-seed check: deep: tank 500 -> 540 DPS (+7.9%), opt-prot-tank-raid-tank 508 -> 536 DPS (+5.4%), sim preset: Protection 470 -> 487 DPS (+3.8%), prot-raid-tank 501 -> 521 DPS (+3.9%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-15, 7 changes to the base rotation; third-seed check: deep: tank 485 -> 518 DPS (+6.8%), opt-prot-tank-raid-tank 493 -> 514 DPS (+4.1%), sim preset: Protection 455 -> 468 DPS (+2.9%), prot-raid-tank 486 -> 500 DPS (+2.9%)):
   1. move down below 'cast Revenge': cast Shield Slam (+0.2%, pass 1)
   2. insert at the top: cast Shield Wall (+3.2%, pass 3)
   3. insert before the filler: if not Rend is on the target: cast Rend (+0.5%, pass 3)
   4. drop: cast Thunder Clap (+0.8%, pass 4)
   5. insert before the filler: cast Shield Bash (+0.2%, pass 4)
+  6. drop: cast Shield Bash (+0.4%, pass 7)
+  7. insert in the middle: if rage < 90: cast Bloodrage + threshold 45 -> 33.75: if rage ≥ 45: cast Heroic Strike (+0.2%, pass 7)
 
 Before the pull: at -1s: cast Battle Shout.
 
@@ -94,11 +97,11 @@ Before the pull: at -1s: cast Battle Shout.
 |---|---|---|
 | 1 | cast Shield Wall | 0.3 |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | cast Revenge | 6.2 |
-| 4 | cast Shield Slam | 9.9 |
-| 5 | if rage ≥ 45: cast Heroic Strike | 19.5 |
-| 6 | if not Rend is on the target: cast Rend | 3.0 |
-| 7 | cast Shield Bash | 4.9 |
+| 3 | cast Revenge | 6.3 |
+| 4 | if rage < 90: cast Bloodrage | 1.0 |
+| 5 | cast Shield Slam | 9.9 |
+| 6 | if rage ≥ 33.75: cast Heroic Strike | 21.5 |
+| 7 | if not Rend is on the target: cast Rend | 3.1 |
 
 Lines of the simulator's rotation these builds never cast: cast Defensive Stance, cast Sunder Armor (its condition never held in these fights).
 
@@ -106,16 +109,16 @@ Damage by ability (threat for tanks):
 
 | Ability | [`prot-raid-tank`](prot-raid-tank.md) |
 |---|---|
-| Heroic Strike | 35% |
+| Heroic Strike | 38% |
 | Shield Slam | 30% |
 | Revenge | 15% |
-| Auto Attack | 10% |
+| Auto Attack | 9% |
 | Rend | 3% |
 | Retribution Aura | 2% |
 | Thorns | 1% |
 | OtherActionRageGain | 1% |
-| Shield Bash | 1% |
 | Dragonbreath Chili | 0% |
+| Lightning Bolt | 0% |
 
 ## Notes
 

@@ -2,7 +2,7 @@
  "class": "warrior",
  "spec": "Protection",
  "entry": "prot-tank",
- "date": "2026-10-14",
+ "date": "2026-10-15",
  "cycles": [
   {
    "cycle": 1,
@@ -22,7 +22,7 @@
        3
       ],
       [
-       "Improved Overpower",
+       "Improved Charge",
        1
       ],
       [
@@ -58,16 +58,16 @@
        3
       ],
       [
-       "Last Stand",
-       1
-      ],
-      [
        "Master of Defense",
        2
       ],
       [
        "Defiance",
        3
+      ],
+      [
+       "Improved Sunder Armor",
+       1
       ],
       [
        "Concussion Blow",
@@ -88,21 +88,21 @@
      ]
     },
     "split": "17/3/31",
-    "dps": 1.0108,
+    "dps": 1.0109,
     "se": 0.0002,
     "iterations": 100000
    },
    "runner_up": {
     "split": "17/3/31",
-    "dps": 1.0108,
+    "dps": 1.0109,
     "se": 0.0002,
     "differs": [
      [
-      "Iron Will",
+      "Improved Charge",
       1
      ],
      [
-      "Last Stand",
+      "Improved Tactical Mastery",
       1
      ]
     ]
@@ -114,24 +114,24 @@
      "run": 1,
      "simulated": 3054,
      "best_screen": 1.0117,
-     "best_split": "17/3/31",
-     "best_stage1_gap": 0.0,
+     "best_split": "14/5/32",
+     "best_stage1_gap": -0.0018,
      "agrees_with_winner": true
     },
     {
      "entry": "prot-tank",
      "run": 2,
      "simulated": 2453,
-     "best_screen": 1.0111,
-     "best_split": "14/6/31",
-     "best_stage1_gap": -0.0004,
+     "best_screen": 1.0119,
+     "best_split": "16/4/31",
+     "best_stage1_gap": -0.0008,
      "agrees_with_winner": true
     },
     {
      "entry": "prot-tank",
      "run": 3,
-     "simulated": 2646,
-     "best_screen": 1.0117,
+     "simulated": 3046,
+     "best_screen": 1.0123,
      "best_split": "17/3/31",
      "best_stage1_gap": 0.0,
      "agrees_with_winner": true
@@ -139,26 +139,26 @@
     {
      "entry": "prot-tank",
      "run": 4,
-     "simulated": 2854,
-     "best_screen": 1.0111,
-     "best_split": "14/6/31",
-     "best_stage1_gap": -0.0004,
+     "simulated": 3054,
+     "best_screen": 1.0123,
+     "best_split": "17/3/31",
+     "best_stage1_gap": 0.0,
      "agrees_with_winner": true
     },
     {
      "entry": "prot-tank",
      "run": 5,
-     "simulated": 2452,
-     "best_screen": 1.0111,
-     "best_split": "14/6/31",
-     "best_stage1_gap": -0.0004,
+     "simulated": 3052,
+     "best_screen": 1.0123,
+     "best_split": "17/3/31",
+     "best_stage1_gap": 0.0,
      "agrees_with_winner": true
     },
     {
      "entry": "prot-tank",
      "run": 6,
-     "simulated": 2850,
-     "best_screen": 1.0117,
+     "simulated": 2250,
+     "best_screen": 1.0123,
      "best_split": "17/3/31",
      "best_stage1_gap": 0.0,
      "agrees_with_winner": true
@@ -170,126 +170,129 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      1.0102,
-      1.0102,
-      1.0102,
-      1.0102,
-      1.0102,
-      1.0102,
-      1.0102,
-      1.0102,
-      1.0102,
-      1.0102,
-      1.0102,
-      1.0102,
-      1.0102,
-      1.0102,
-      1.0102,
-      1.0102,
-      1.0102,
-      1.0102,
-      1.0098,
-      1.0097,
-      1.0097,
-      1.0097,
-      1.0097,
-      1.0097,
-      1.0097,
-      1.0097,
-      1.0089,
-      1.0089,
-      1.0089,
-      1.0089,
-      1.0089,
-      1.0089,
-      1.0089,
-      1.0089,
-      1.0089,
-      1.0089,
-      1.0089,
-      1.0089
+      1.0112,
+      1.0112,
+      1.0112,
+      1.0112,
+      1.0112,
+      1.0112,
+      1.0112,
+      1.0112,
+      1.0112,
+      1.0112,
+      1.0112,
+      1.0112,
+      1.0112,
+      1.0112,
+      1.0112,
+      1.0112,
+      1.0112,
+      1.0104,
+      1.0104,
+      1.0104,
+      1.0104,
+      1.0104,
+      1.0104,
+      1.0104,
+      1.0104,
+      1.0094,
+      1.0094,
+      1.0094,
+      1.0094,
+      1.0094,
+      1.0094,
+      1.0094,
+      1.0094,
+      1.0094,
+      1.0094,
+      1.0094,
+      1.0094
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      1.0108,
-      1.0108,
-      1.0108,
-      1.0108,
-      1.0108
+      1.0103,
+      1.0103,
+      1.0103,
+      1.0103,
+      1.0103
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      1.0108,
-      1.0108
+      1.0109,
+      1.0109
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 213,
-     "best_gap": 0.0,
-     "best_move": "1 Improved Overpower -> Improved Tactical Mastery"
+     "neighbours": 217,
+     "best_gap": 0.0012,
+     "best_move": "1 Improved Charge + 2 Impale -> 2 Cruelty + 1 Unbridled Wrath (tier chain)",
+     "raced": [
+      "1 Improved Charge + 2 Impale -> 2 Cruelty + 1 Unbridled Wrath (tier chain)"
+     ],
+     "confirmed_gap": -0.0007
     }
    ],
    "important_features": [
     {
      "feature": "Shield Slam",
-     "importance": 0.569
+     "importance": 0.5082
     },
     {
      "feature": "Iron Will",
-     "importance": 0.1202
-    },
-    {
-     "feature": "Deep Wounds",
-     "importance": 0.0963
+     "importance": 0.151
     },
     {
      "feature": "Bastion",
-     "importance": 0.0643
+     "importance": 0.1031
+    },
+    {
+     "feature": "Deep Wounds",
+     "importance": 0.0607
     },
     {
      "feature": "Deflection",
-     "importance": 0.029
+     "importance": 0.0367
     },
     {
      "feature": "Arms points",
-     "importance": 0.0262
-    },
-    {
-     "feature": "Concussion Blow",
-     "importance": 0.0153
+     "importance": 0.0305
     },
     {
      "feature": "Defiance",
-     "importance": 0.015
-    },
-    {
-     "feature": "Protection points",
-     "importance": 0.0111
-    },
-    {
-     "feature": "Fury points",
-     "importance": 0.0111
+     "importance": 0.0188
     },
     {
      "feature": "Booming Voice",
-     "importance": 0.0081
+     "importance": 0.0182
     },
     {
-     "feature": "Focused Rage",
-     "importance": 0.0073
+     "feature": "Concussion Blow",
+     "importance": 0.0135
+    },
+    {
+     "feature": "Protection points",
+     "importance": 0.0112
+    },
+    {
+     "feature": "Improved Disarm",
+     "importance": 0.0095
+    },
+    {
+     "feature": "Fury points",
+     "importance": 0.007
     }
    ],
-   "simulated_builds": 16568,
-   "minutes": 43.3,
-   "rotation_changed": false
+   "simulated_builds": 17173,
+   "minutes": 44.3,
+   "rotation_changed": true
   },
   {
    "cycle": 2,
@@ -309,7 +312,7 @@
        3
       ],
       [
-       "Improved Overpower",
+       "Improved Charge",
        1
       ],
       [
@@ -345,16 +348,16 @@
        3
       ],
       [
-       "Last Stand",
-       1
-      ],
-      [
        "Master of Defense",
        2
       ],
       [
        "Defiance",
        3
+      ],
+      [
+       "Improved Sunder Armor",
+       1
       ],
       [
        "Concussion Blow",
@@ -375,21 +378,21 @@
      ]
     },
     "split": "17/3/31",
-    "dps": 1.0108,
+    "dps": 1.0163,
     "se": 0.0002,
     "iterations": 100000
    },
    "runner_up": {
     "split": "17/3/31",
-    "dps": 1.0108,
+    "dps": 1.0163,
     "se": 0.0002,
     "differs": [
      [
-      "Improved Thunder Clap",
+      "Improved Shield Bash",
       1
      ],
      [
-      "Last Stand",
+      "Improved Sunder Armor",
       1
      ]
     ]
@@ -399,8 +402,8 @@
     {
      "entry": "prot-tank",
      "run": 1,
-     "simulated": 1455,
-     "best_screen": 1.0117,
+     "simulated": 1448,
+     "best_screen": 1.0178,
      "best_split": "17/3/31",
      "best_stage1_gap": 0.0,
      "agrees_with_winner": true
@@ -408,8 +411,8 @@
     {
      "entry": "prot-tank",
      "run": 2,
-     "simulated": 1453,
-     "best_screen": 1.0117,
+     "simulated": 1455,
+     "best_screen": 1.0178,
      "best_split": "17/3/31",
      "best_stage1_gap": 0.0,
      "agrees_with_winner": true
@@ -417,8 +420,8 @@
     {
      "entry": "prot-tank",
      "run": 3,
-     "simulated": 1451,
-     "best_screen": 1.0117,
+     "simulated": 1454,
+     "best_screen": 1.0178,
      "best_split": "17/3/31",
      "best_stage1_gap": 0.0,
      "agrees_with_winner": true
@@ -430,184 +433,182 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      1.0102,
-      1.0102,
-      1.0102,
-      1.0102,
-      1.0102,
-      1.0102,
-      1.0102,
-      1.0102,
-      1.0098,
-      1.0097,
-      1.0097,
-      1.0097,
-      1.0097
+      1.0167,
+      1.0167,
+      1.0167,
+      1.0167,
+      1.0167,
+      1.0167,
+      1.0167,
+      1.0167,
+      1.0167,
+      1.0167,
+      1.0167
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      1.0108,
-      1.0108,
-      1.0108,
-      1.0108,
-      1.0108
+      1.0162,
+      1.0162,
+      1.0162,
+      1.0162,
+      1.0162
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      1.0108,
-      1.0108
+      1.0163,
+      1.0163
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 213,
-     "best_gap": 0.0,
-     "best_move": "1 Last Stand -> Improved Shield Wall"
+     "neighbours": 217,
+     "best_gap": 0.0004,
+     "best_move": "1 Improved Bloodrage -> Improved Shield Wall"
     }
    ],
    "important_features": [
     {
      "feature": "Shield Slam",
-     "importance": 0.5323
-    },
-    {
-     "feature": "Iron Will",
-     "importance": 0.1577
+     "importance": 0.5342
     },
     {
      "feature": "Deep Wounds",
-     "importance": 0.0973
+     "importance": 0.1239
+    },
+    {
+     "feature": "Iron Will",
+     "importance": 0.0856
     },
     {
      "feature": "Bastion",
-     "importance": 0.0624
-    },
-    {
-     "feature": "Booming Voice",
-     "importance": 0.0207
-    },
-    {
-     "feature": "Concussion Blow",
-     "importance": 0.0192
-    },
-    {
-     "feature": "Deflection",
-     "importance": 0.0144
+     "importance": 0.0796
     },
     {
      "feature": "Arms points",
-     "importance": 0.0142
+     "importance": 0.0383
     },
     {
-     "feature": "Defiance",
-     "importance": 0.0137
-    },
-    {
-     "feature": "Protection points",
-     "importance": 0.0125
+     "feature": "Concussion Blow",
+     "importance": 0.0161
     },
     {
      "feature": "Fury points",
-     "importance": 0.0098
+     "importance": 0.016
+    },
+    {
+     "feature": "Impale",
+     "importance": 0.0156
+    },
+    {
+     "feature": "Defiance",
+     "importance": 0.015
+    },
+    {
+     "feature": "Protection points",
+     "importance": 0.013
     },
     {
      "feature": "Improved Disarm",
-     "importance": 0.0098
+     "importance": 0.0116
+    },
+    {
+     "feature": "Deflection",
+     "importance": 0.0112
     }
    ],
    "simulated_builds": 4593,
-   "minutes": 14.0,
+   "minutes": 19.3,
    "rotation_changed": false
   }
  ],
  "ref": {
   "build": "prot-raid-tank",
-  "threat": 704.5659220990901,
-  "dtps": 1161.2244320035538,
+  "threat": 677.5026386012788,
+  "dtps": 672.8775102389011,
   "fights": 20000
  },
  "converged": 2,
  "two_move": {
   "steps": [
    {
-    "one_move": 213,
-    "two_move": 20896,
+    "one_move": 217,
+    "two_move": 21329,
     "expanded": null,
     "screen": 1000,
     "screen_best": [
      [
-      "1 Impale -> Cruelty; then 1 Improved Bloodrage -> Improved Shield Wall",
-      0.0004
+      "1 Improved Charge + 2 Impale -> 2 Cruelty + 1 Unbridled Wrath (tier chain); then 1 Deep Wounds -> Unbridled Wrath",
+      0.0
      ],
      [
-      "1 Impale -> Cruelty; then 1 Improved Bloodrage -> Vanguard",
-      0.0004
+      "1 Improved Charge -> Improved Overpower; then 1 Improved Sunder Armor -> Improved Shield Wall",
+      0.0
      ],
      [
-      "1 Impale -> Cruelty; then 1 Improved Bloodrage -> Improved Sunder Armor",
-      0.0004
+      "1 Improved Charge -> Improved Overpower; then 1 Improved Sunder Armor -> Improved Shield Bash",
+      0.0
      ],
      [
-      "1 Impale -> Cruelty; then 1 Improved Bloodrage -> Improved Disarm",
-      0.0004
+      "1 Improved Charge -> Improved Overpower; then 1 Improved Sunder Armor -> Vanguard",
+      0.0
      ],
      [
-      "1 Impale -> Cruelty; then 1 Improved Bloodrage -> Improved Thunder Clap",
-      0.0004
+      "1 Improved Charge -> Improved Overpower; then 1 Improved Sunder Armor -> Improved Disarm",
+      0.0
      ]
     ],
     "raced": 60,
     "confirmed": [
      [
-      "1 Improved Overpower -> Improved Tactical Mastery; then 1 Last Stand -> Improved Shield Bash",
-      0.0002
+      "1 Improved Charge -> Improved Overpower; then 1 Improved Sunder Armor -> Improved Shield Wall",
+      0.0
      ],
      [
-      "1 Improved Overpower -> Improved Charge; then 1 Last Stand -> Improved Shield Bash",
-      0.0002
+      "1 Improved Charge -> Improved Overpower; then 1 Improved Sunder Armor -> Improved Shield Bash",
+      0.0
      ],
      [
-      "1 Last Stand -> Improved Shield Bash",
-      0.0002
+      "1 Improved Charge -> Improved Overpower; then 1 Improved Sunder Armor -> Vanguard",
+      0.0
      ],
      [
-      "1 Impale -> Cruelty; then 1 Last Stand -> Improved Shield Wall",
-      -0.0003
+      "1 Improved Charge -> Improved Overpower; then 1 Improved Sunder Armor -> Improved Disarm",
+      0.0
      ],
      [
-      "1 Impale -> Cruelty; then 1 Last Stand -> Vanguard",
-      -0.0003
+      "1 Improved Charge -> Improved Overpower; then 1 Improved Sunder Armor -> Last Stand",
+      0.0
      ]
     ],
-    "minutes": 33.2
+    "minutes": 55.3
    }
   ],
   "moved": false
  },
  "final": {
   "deep winner": {
-   "value": 1.0105,
+   "value": 1.0163,
    "se": 0.0002
   },
   "prot-raid-tank": {
-   "value": 0.9994,
+   "value": 1.0053,
    "se": 0.0001
   },
   "opt-prot-tank-raid-tank": {
-   "value": 1.0062,
+   "value": 1.0112,
    "se": 0.0002
   }
  },
- "minutes": 96.7,
+ "minutes": 140.6,
  "build": {
-  "written": null,
-  "why": "confirms opt-prot-tank-raid-tank (+0.43%)"
+  "written": "protection-ml-tank",
+  "gain_vs_hand": 0.010942007360986716
  }
 }

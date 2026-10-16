@@ -2,7 +2,7 @@
  "raid": {
   "class": "warrior",
   "spec": "prot-tank",
-  "date": "2026-10-14",
+  "date": "2026-10-15",
   "commit": "2ce8265",
   "setting": "raid",
   "tank": true,
@@ -11,7 +11,7 @@
   "builds": [
    {
     "label": "deep: tank",
-    "talents": "35300103002-03-250530120300001351"
+    "talents": "35310003002-03-250530020310001351"
    },
    {
     "label": "opt-prot-tank-raid-tank",
@@ -74,41 +74,57 @@
     "gain_seed2": 0.0024300227431668375,
     "candidates": 372,
     "pass": 4
+   },
+   {
+    "round": 6,
+    "change": "drop: cast Shield Bash",
+    "gain_seed1": 0.005915342278593805,
+    "gain_seed2": 0.0044267684162662135,
+    "candidates": 373,
+    "pass": 7
+   },
+   {
+    "round": 7,
+    "change": "insert in the middle: if rage < 90: cast Bloodrage + threshold 45 -> 33.75: if rage \u2265 45: cast Heroic Strike",
+    "gain_seed1": 0.001095903999091874,
+    "gain_seed2": 0.0015779461608658174,
+    "candidates": 360,
+    "pass": 7
    }
   ],
   "final": {
    "raid": {
     "deep: tank": {
-     "before": 500.35271736629255,
-     "after": 539.6576450293081,
-     "base": 500.35271736629255,
+     "before": 485.17411551459395,
+     "after": 518.0361377890216,
+     "base": 485.17411551459395,
      "before_value": 1.0,
      "after_value": 1.0,
      "oom_before": 0,
      "oom_after": 0
     },
     "opt-prot-tank-raid-tank": {
-     "before": 508.28960167106146,
-     "after": 535.7312857756598,
-     "base": 508.28960167106146,
+     "before": 493.46406699483833,
+     "after": 513.5338103186809,
+     "base": 493.46406699483833,
      "before_value": 1.0,
      "after_value": 1.0,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Protection": {
-     "before": 469.62635840413606,
-     "after": 487.35403593891283,
-     "base": 469.62635840413606,
+     "before": 455.19688544989003,
+     "after": 468.18196190852063,
+     "base": 455.19688544989003,
      "before_value": 1.0,
      "after_value": 1.0,
      "oom_before": 0,
      "oom_after": 0
     },
     "prot-raid-tank": {
-     "before": 500.90012565500206,
-     "after": 520.6766426551399,
-     "base": 500.90012565500206,
+     "before": 485.92372022726653,
+     "after": 500.2179122222176,
+     "base": 485.92372022726653,
      "before_value": 1.0,
      "after_value": 1.0,
      "oom_before": 0,
@@ -117,6 +133,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 6
+  "passes": 8
  }
 }

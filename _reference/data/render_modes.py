@@ -128,9 +128,21 @@ def tier_stale_note(dates):
             f"differently than the full-raid ranking. The searches are queued to run again.*", ""]
 
 
+def tier_not_split(r, k):
+    """A hybrid's tier winner with 30 points in the tree its entry's rotation is built for (as raidsim/ml_builds.not_split): that tree's
+    build, not a split, so the hybrid's page and the class index leave its number out (2026-10-16: the Elemental-Enhancement page showed
+    the search's 19/32/0, an Enhancement build)."""
+    s = (r.get("search") or {}).get(k) or {}
+    if not r.get("spec", "").startswith("Hybrid") or not s.get("winner"):
+        return ""
+    own = SM.RAID_ENTRY_TREES.get((r["class"], s.get("entry")), set())
+    deep = [t for t, v in s["winner"]["allocation"].items() if sum(n for _, n in v) >= 30 and t in own]
+    return f"the search ended at {s['winner']['split']}, 30 points in {deep[0]}: that tree's build, not a split" if deep else ""
+
+
 def tier_dps(r, k):
     w = ((r.get("search") or {}).get(k) or {}).get("winner")
-    return f"{w['dps']:.0f}" if w else "-"
+    return f"{w['dps']:.0f}" if w and not tier_not_split(r, k) else "-"
 
 
 def page_gear(r, tier):
@@ -151,6 +163,10 @@ def tier_lines(cls, spec, src, top):
     for t, name in TIER_KEYS:
         w = ((r.get("search") or {}).get(f"{t}-raid") or {}).get("winner")
         if not w:
+            continue
+        ns = tier_not_split(r, f"{t}-raid")
+        if ns:
+            o.append(f"| {name} | - | none as a split ({ns}) |")
             continue
         # the talents ml_builds.shown() gives: moved out of abilities the winner never casts (tidy_winners), else the BiS raid winner
         # with its free points following the hand draft (the written build), else the winner
@@ -192,8 +208,8 @@ def support_gear(cls, spec, role):
     s = gear_tables.spec(cls, spec, role) or {}
     il = "; ".join(f"{name} {s['ilvl'][t]}" for t, name in TIER_KEYS if (s.get("ilvl") or {}).get(t))
     how = ("chosen in the community simulator on tank value, threat and damage taken, for this build in a full raid. The simulator's item "
-           "database lists base armor for only about one armor item in five, so these sets were chosen with Classic's armor values filled "
-           "in for the rest, our assumption: Forever may have changed some" if role == "tank" else
+           "database lists base armor for only about one armor item in five; this project's patch fills in the rest from Classic's values "
+           "(our assumption: Forever may have changed some)" if role == "tank" else
            "chosen by the stat weights this project's healer lab measures for this build, the healing capacity each stat adds; "
            "healers are in no community simulator, so this is our model")
     o = [f"**The gear** (average item level: {il}; {how}; each item opens its Wowhead page, with where it drops and its enchant):", ""] + gt + [""]
@@ -206,7 +222,8 @@ def tier_table(cls, specs, src):
     rows = [(spec, TIERS[(cls, spec)]) for spec in specs if (cls, spec) in TIERS]
     if not rows:
         return []
-    rows.sort(key=lambda x: -((((x[1].get("search") or {}).get("bis-raid") or {}).get("winner") or {}).get("dps") or 0))
+    rows.sort(key=lambda x: 0 if tier_not_split(x[1], "bis-raid") else
+              -((((x[1].get("search") or {}).get("bis-raid") or {}).get("winner") or {}).get("dps") or 0))
     o = ["**By gear tier**: each damage spec with its best talents for each tier, in its own gear (DPS in a full raid; "
          f"[every class]({paths.rel(src, RANKINGS)})):", "", "| Spec | Pre-BiS | Phase 1 BiS |", "|---|---|---|"]
     for spec, r in rows:

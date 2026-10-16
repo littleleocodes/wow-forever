@@ -91,19 +91,19 @@
     "max60": 714.1457202452187
    },
    "raid_spell_casts": {
+    "6774": 8.346333333333334,
     "31016": 11.997,
     "25300": 34.859,
-    "6774": 8.346333333333332,
     "14177": 1.0
    },
    "raid_casts": {
-    "Eviscerate": 11.997,
+    "Slice and Dice": 8.346333333333334,
     "Auto Attack": 303.831,
-    "Backstab": 34.859,
-    "Slice and Dice": 8.346333333333332,
     "Thistle Tea": 1.0,
-    "Cold Blood": 1.0,
-    "Goblin Sapper Charge": 1.0
+    "Eviscerate": 11.997,
+    "Goblin Sapper Charge": 1.0,
+    "Backstab": 34.859,
+    "Cold Blood": 1.0
    }
   },
   {
@@ -128,18 +128,18 @@
    },
    "raid_spell_casts": {
     "25300": 34.590333333333334,
-    "14177": 1.0,
     "6774": 8.319333333333333,
-    "31016": 11.885666666666667
+    "31016": 11.885666666666667,
+    "14177": 1.0
    },
    "raid_casts": {
-    "Thistle Tea": 1.0,
-    "Goblin Sapper Charge": 1.0,
     "Backstab": 34.590333333333334,
-    "Cold Blood": 1.0,
     "Slice and Dice": 8.319333333333333,
     "Eviscerate": 11.885666666666667,
-    "Auto Attack": 303.9376666666667
+    "Auto Attack": 303.9376666666667,
+    "Goblin Sapper Charge": 1.0,
+    "Cold Blood": 1.0,
+    "Thistle Tea": 1.0
    }
   },
   {
@@ -163,19 +163,19 @@
     "max60": 728.3251599626105
    },
    "raid_spell_casts": {
+    "6774": 8.319333333333333,
     "14177": 1.0,
     "31016": 11.885666666666667,
-    "6774": 8.319333333333333,
     "25300": 34.590333333333334
    },
    "raid_casts": {
+    "Slice and Dice": 8.319333333333333,
     "Cold Blood": 1.0,
     "Eviscerate": 11.885666666666667,
-    "Slice and Dice": 8.319333333333333,
     "Auto Attack": 303.9376666666667,
+    "Thistle Tea": 1.0,
     "Goblin Sapper Charge": 1.0,
-    "Backstab": 34.590333333333334,
-    "Thistle Tea": 1.0
+    "Backstab": 34.590333333333334
    }
   },
   {
@@ -199,21 +199,21 @@
     "max60": 724.0517386166687
    },
    "raid_spell_casts": {
-    "1241584": 97.69833333333332,
     "6774": 8.227666666666666,
-    "13877": 2.0,
+    "14177": 1.0,
+    "1241584": 97.69833333333332,
     "31016": 10.946,
-    "14177": 1.0
+    "13877": 2.0
    },
    "raid_casts": {
-    "Mutilate": 97.69833333333332,
-    "Goblin Sapper Charge": 1.0,
     "Slice and Dice": 8.227666666666666,
-    "Blade Flurry": 2.0,
-    "Auto Attack": 314.53633333333335,
+    "Cold Blood": 1.0,
+    "Mutilate": 97.69833333333332,
     "Thistle Tea": 0.999,
+    "Goblin Sapper Charge": 1.0,
     "Eviscerate": 10.946,
-    "Cold Blood": 1.0
+    "Auto Attack": 314.53633333333335,
+    "Blade Flurry": 2.0
    }
   },
   {
@@ -237,19 +237,19 @@
     "max60": 682.6476891688059
    },
    "raid_spell_casts": {
+    "14177": 1.0,
     "31016": 14.814,
-    "1241584": 93.89733333333334,
     "6774": 7.726333333333333,
-    "14177": 1.0
+    "1241584": 93.89733333333334
    },
    "raid_casts": {
-    "Auto Attack": 304.54566666666665,
-    "Goblin Sapper Charge": 1.0,
-    "Eviscerate": 14.814,
-    "Mutilate": 93.89733333333334,
-    "Slice and Dice": 7.726333333333333,
     "Cold Blood": 1.0,
-    "Thistle Tea": 1.0
+    "Eviscerate": 14.814,
+    "Slice and Dice": 7.726333333333333,
+    "Auto Attack": 304.54566666666665,
+    "Mutilate": 93.89733333333334,
+    "Thistle Tea": 1.0,
+    "Goblin Sapper Charge": 1.0
    }
   },
   {
@@ -273,19 +273,19 @@
     "max60": 661.59581525544
    },
    "raid_spell_casts": {
-    "31016": 12.509666666666668,
     "6774": 10.905999999999999,
-    "14177": 1.0,
-    "1241584": 92.975
+    "1241584": 92.975,
+    "31016": 12.509666666666668,
+    "14177": 1.0
    },
    "raid_casts": {
-    "Thistle Tea": 0.9996666666666667,
-    "Eviscerate": 12.509666666666668,
-    "Auto Attack": 302.95666666666665,
-    "Goblin Sapper Charge": 1.0,
     "Slice and Dice": 10.905999999999999,
-    "Cold Blood": 1.0,
-    "Mutilate": 92.975
+    "Auto Attack": 302.95666666666665,
+    "Mutilate": 92.975,
+    "Eviscerate": 12.509666666666668,
+    "Goblin Sapper Charge": 1.0,
+    "Thistle Tea": 0.9996666666666667,
+    "Cold Blood": 1.0
    }
   }
  ]

@@ -77,16 +77,16 @@ Allocation adopted on 2026-09-28 from `opt-prot-tank-raid-tank`, the best build 
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 0/32/19 | 1.042 | +0.0% | 504 | 912 |
-| 2 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 0/32/19 | 1.024 | -1.7% | 489 | 917 |
-| 3 | **[`prot-tank`](prot-tank.md)** | ours: hand draft | 0/23/28 | 1.000 | -4.0% | 506 | 993 |
-| 4 | *Protection 0/45/6* | community simulator | - | 0.924 | -11.3% | 443 | 1020 |
-| 5 | *P4 Prot* | community simulator | - | 0.901 | -13.6% | 454 | 1096 |
-| 6 | *P5 Prot* | community simulator | - | 0.893 | -14.3% | 448 | 1101 |
+| 1 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 0/33/18 | 1.046 | +0.0% | 503 | 516 |
+| 2 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 0/32/19 | 1.030 | -1.5% | 489 | 519 |
+| 3 | **[`prot-tank`](prot-tank.md)** | ours: hand draft | 0/23/28 | 1.000 | -4.4% | 505 | 567 |
+| 4 | *Protection 0/45/6* | community simulator | - | 0.929 | -11.2% | 443 | 577 |
+| 5 | *P4 Prot* | community simulator | - | 0.905 | -13.5% | 454 | 621 |
+| 6 | *P5 Prot* | community simulator | - | 0.899 | -14.1% | 448 | 622 |
 
 ## Rotation (community simulator, raid setting)
 
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-14, 7 changes to the base rotation; third-seed check: deep: tank 399 -> 419 DPS (+5.0%), opt-prot-tank-raid-tank 390 -> 408 DPS (+4.8%), sim preset: Protection 0/45/6 368 -> 374 DPS (+1.7%), prot-tank 459 -> 456 DPS (-0.7%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-15, 7 changes to the base rotation; third-seed check: deep: tank 398 -> 419 DPS (+5.4%), protection-ml-tank 396 -> 416 DPS (+5.0%), sim preset: Protection 0/45/6 368 -> 374 DPS (+1.6%), prot-tank 458 -> 455 DPS (-0.7%), opt-prot-tank-raid-tank 390 -> 408 DPS (+4.7%)):
   1. insert before the filler: if health % < 10%: cast Lay on Hands (+7.8%, pass 1)
   2. drop the condition: if time left on Seal of Righteousness < 2s: cast Judgement (+4.3%, pass 1)
   3. insert at the top: cast Holy Shield (+1.3%, pass 1)
@@ -122,7 +122,7 @@ Damage by ability (threat for tanks):
 | Retribution Aura | 5% |
 | OtherActionManaGain | 5% |
 | Thorns | 1% |
-| Eye for an Eye | 1% |
+| Eye for an Eye | 0% |
 
 ## Notes
 

@@ -2,7 +2,7 @@
  "raid": {
   "class": "paladin",
   "spec": "prot-tank",
-  "date": "2026-10-14",
+  "date": "2026-10-15",
   "commit": "2ce8265",
   "setting": "raid",
   "tank": true,
@@ -11,11 +11,11 @@
   "builds": [
    {
     "label": "deep: tank",
-    "talents": "-0530513301301151-50222230021"
+    "talents": "-0530513301301251-50223230001"
    },
    {
-    "label": "opt-prot-tank-raid-tank",
-    "talents": "-0530513301311051-50025330001",
+    "label": "protection-ml-tank",
+    "talents": "-0530513301301151-50222230021",
     "protect_only": true
    },
    {
@@ -26,6 +26,11 @@
    {
     "label": "prot-tank",
     "talents": "-0530513101301-502253300110303",
+    "protect_only": true
+   },
+   {
+    "label": "opt-prot-tank-raid-tank",
+    "talents": "-0530513301311051-50025330001",
     "protect_only": true
    }
   ],
@@ -95,44 +100,53 @@
   "final": {
    "raid": {
     "deep: tank": {
-     "before": 398.745698597575,
-     "after": 418.8255803824941,
-     "base": 398.745698597575,
+     "before": 397.79931819665495,
+     "after": 419.37527998981864,
+     "base": 397.79931819665495,
      "before_value": 1.0,
      "after_value": 1.0,
-     "oom_before": 5.0788350219712,
-     "oom_after": 5.0788350219712
+     "oom_before": 4.8302013371648,
+     "oom_after": 4.8302013371648
     },
-    "opt-prot-tank-raid-tank": {
-     "before": 389.5900063832318,
-     "after": 408.0988384818098,
-     "base": 389.5900063832318,
+    "protection-ml-tank": {
+     "before": 396.19798877878674,
+     "after": 416.1070132076477,
+     "base": 396.19798877878674,
      "before_value": 1.0,
      "after_value": 1.0,
-     "oom_before": 5.856926731564694,
-     "oom_after": 5.856926731564694
+     "oom_before": 4.8931193491344,
+     "oom_after": 4.8931193491344
     },
     "sim preset: Protection 0/45/6": {
      "before": 368.35577592839803,
-     "after": 374.4911630386328,
+     "after": 374.2876211842899,
      "base": 368.35577592839803,
      "before_value": 1.0,
      "after_value": 1.0,
-     "oom_before": 20.3281280623171,
-     "oom_after": 20.3281280623171
+     "oom_before": 20.11030979798045,
+     "oom_after": 20.11030979798045
     },
     "prot-tank": {
-     "before": 458.95438169634383,
-     "after": 455.80504112058827,
-     "base": 458.95438169634383,
+     "before": 457.5975220389046,
+     "after": 454.58610579885016,
+     "base": 457.5975220389046,
      "before_value": 1.0,
      "after_value": 1.0,
-     "oom_before": 2.99268198102185,
-     "oom_after": 2.99268198102185
+     "oom_before": 3.02505014908185,
+     "oom_after": 3.02505014908185
+    },
+    "opt-prot-tank-raid-tank": {
+     "before": 389.5900063832318,
+     "after": 408.00001612140596,
+     "base": 389.5900063832318,
+     "before_value": 1.0,
+     "after_value": 1.0,
+     "oom_before": 5.7038385434954435,
+     "oom_after": 5.7038385434954435
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 6
+  "passes": 8
  }
 }

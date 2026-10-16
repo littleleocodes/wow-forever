@@ -4,9 +4,9 @@
 
 | Build | Split | Tank value | Threat/s | Damage taken/s | DPS | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `feral-bear-tank` | 7/35/9 | 1.000 | 1221 | 989 | 541 | 0 | +53.4% |
-| `opt-feral-bear-tank-raid-tank` | 7/35/9 | 1.000 | 1221 | 989 | 541 | 0 | +53.4% |
-| sim preset: Bear Tank 0/31/20 | - | 0.880 | 989 | 1042 | 505 | 0 | - |
+| `feral-bear-tank` | 7/35/9 | 1.000 | 1221 | 636 | 541 | 0 | +53.4% |
+| `opt-feral-bear-tank-raid-tank` | 7/35/9 | 1.000 | 1221 | 636 | 541 | 0 | +53.4% |
+| sim preset: Bear Tank 0/31/20 | - | 0.880 | 989 | 670 | 505 | 0 | - |
 
 Tank value = 0.5 x threat per second / the hand draft's + 0.5 x the hand draft's damage taken per second / this build's (the raid-tank profile's weights); the shares below are threat shares.
 

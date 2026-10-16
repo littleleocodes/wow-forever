@@ -1344,70 +1344,6 @@
       "replaces": "resto-raid-healer"
     },
     {
-      "id": "restoration-leveling",
-      "name": "Restoration — Leveling into the raid build",
-      "role": "dps",
-      "content": "leveling",
-      "tier": "draft",
-      "spec": "Restoration",
-      "generated": "2026-10-15",
-      "derived": "leveling",
-      "raid_path": "restoration-ml-heal",
-      "summary": "Level with the talents of the Restoration raid build (restoration-ml-heal) so you arrive at 60 ready to heal; the order is the fastest of three the fight lab raced (stats model's order: 36 s per kill over levels 20-60, the feral-cat-dps rotation).",
-      "allocation": {
-        "Balance": [
-          ["Genesis", 5],
-          ["Moonglow", 1],
-          ["Improved Moonfire", 2],
-          ["Nature's Majesty", 2],
-          ["Nature's Splendor", 1]
-        ],
-        "Feral Combat": [
-          ["Heart of the Wild", 5]
-        ],
-        "Restoration": [
-          ["Nature's Focus", 2],
-          ["Furor", 3],
-          ["Naturalist", 2],
-          ["Natural Shapeshifter", 3],
-          ["Reflection", 3],
-          ["Gift of Nature", 5],
-          ["Tranquil Spirit", 5],
-          ["Improved Rejuvenation", 3],
-          ["Swiftmend", 1],
-          ["Living Spirit", 3],
-          ["Improved Regrowth", 5]
-        ]
-      },
-      "order": [
-        {"levels": "10-14", "tree": "Balance", "talent": "Genesis", "points": 5},
-        {"levels": "15-16", "tree": "Balance", "talent": "Improved Moonfire", "points": 2},
-        {"levels": "17", "tree": "Balance", "talent": "Nature's Majesty", "points": 1},
-        {"levels": "18", "tree": "Restoration", "talent": "Nature's Focus", "points": 1},
-        {"levels": "19", "tree": "Balance", "talent": "Nature's Majesty", "points": 1},
-        {"levels": "20", "tree": "Restoration", "talent": "Nature's Focus", "points": 1},
-        {"levels": "21-23", "tree": "Restoration", "talent": "Furor", "points": 3},
-        {"levels": "24-25", "tree": "Restoration", "talent": "Naturalist", "points": 2},
-        {"levels": "26-28", "tree": "Restoration", "talent": "Natural Shapeshifter", "points": 3},
-        {"levels": "29-33", "tree": "Feral Combat", "talent": "Heart of the Wild", "points": 5},
-        {"levels": "34", "tree": "Balance", "talent": "Moonglow", "points": 1},
-        {"levels": "35", "tree": "Balance", "talent": "Nature's Splendor", "points": 1},
-        {"levels": "36-38", "tree": "Restoration", "talent": "Reflection", "points": 3},
-        {"levels": "39-40", "tree": "Restoration", "talent": "Gift of Nature", "points": 2},
-        {"levels": "41", "tree": "Restoration", "talent": "Swiftmend", "points": 1},
-        {"levels": "42-46", "tree": "Restoration", "talent": "Tranquil Spirit", "points": 5},
-        {"levels": "47-49", "tree": "Restoration", "talent": "Living Spirit", "points": 3},
-        {"levels": "50-52", "tree": "Restoration", "talent": "Gift of Nature", "points": 3},
-        {"levels": "53-55", "tree": "Restoration", "talent": "Improved Rejuvenation", "points": 3},
-        {"levels": "56-60", "tree": "Restoration", "talent": "Improved Regrowth", "points": 5}
-      ],
-      "core": [],
-      "flex": [],
-      "notes": ["2026-10-15 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 36 s; own tree first 37 s; own tree last 36 s. First Restoration point at level 18.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
-      "open_questions": ["Check the Restoration leveling pace at launch; the raid build's talents may cost speed early."],
-      "sources": []
-    },
-    {
       "id": "opt-balance-dps-leveling-st",
       "name": "Optimizer — Starfire 55%, Wrath 20%, Moonfire 20% (8% direct, 12% DoT), Insect Swarm arrives as a talent effect (leveling-st)",
       "role": "dps",
@@ -1476,6 +1412,70 @@
         {"levels": "56-58", "tree": "Restoration", "talent": "Reflection", "points": 3},
         {"levels": "59-60", "tree": "Feral Combat", "talent": "Heart of the Wild", "points": 2}
       ]
+    },
+    {
+      "id": "restoration-leveling",
+      "name": "Restoration — Leveling into the raid build",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "spec": "Restoration",
+      "generated": "2026-10-15",
+      "derived": "leveling",
+      "raid_path": "restoration-ml-heal",
+      "summary": "Level with the talents of the Restoration raid build (restoration-ml-heal) so you arrive at 60 ready to heal; the order is the fastest of three the fight lab raced (stats model's order: 36 s per kill over levels 20-60, the feral-cat-dps rotation).",
+      "allocation": {
+        "Balance": [
+          ["Genesis", 5],
+          ["Moonglow", 1],
+          ["Improved Moonfire", 2],
+          ["Nature's Majesty", 2],
+          ["Nature's Splendor", 1]
+        ],
+        "Feral Combat": [
+          ["Heart of the Wild", 5]
+        ],
+        "Restoration": [
+          ["Nature's Focus", 2],
+          ["Furor", 3],
+          ["Naturalist", 2],
+          ["Natural Shapeshifter", 3],
+          ["Reflection", 3],
+          ["Gift of Nature", 5],
+          ["Tranquil Spirit", 5],
+          ["Improved Rejuvenation", 3],
+          ["Swiftmend", 1],
+          ["Living Spirit", 3],
+          ["Improved Regrowth", 5]
+        ]
+      },
+      "order": [
+        {"levels": "10-14", "tree": "Balance", "talent": "Genesis", "points": 5},
+        {"levels": "15-16", "tree": "Balance", "talent": "Improved Moonfire", "points": 2},
+        {"levels": "17", "tree": "Balance", "talent": "Nature's Majesty", "points": 1},
+        {"levels": "18", "tree": "Restoration", "talent": "Nature's Focus", "points": 1},
+        {"levels": "19", "tree": "Balance", "talent": "Nature's Majesty", "points": 1},
+        {"levels": "20", "tree": "Restoration", "talent": "Nature's Focus", "points": 1},
+        {"levels": "21-23", "tree": "Restoration", "talent": "Furor", "points": 3},
+        {"levels": "24-25", "tree": "Restoration", "talent": "Naturalist", "points": 2},
+        {"levels": "26-28", "tree": "Restoration", "talent": "Natural Shapeshifter", "points": 3},
+        {"levels": "29-33", "tree": "Feral Combat", "talent": "Heart of the Wild", "points": 5},
+        {"levels": "34", "tree": "Balance", "talent": "Moonglow", "points": 1},
+        {"levels": "35", "tree": "Balance", "talent": "Nature's Splendor", "points": 1},
+        {"levels": "36-38", "tree": "Restoration", "talent": "Reflection", "points": 3},
+        {"levels": "39-40", "tree": "Restoration", "talent": "Gift of Nature", "points": 2},
+        {"levels": "41", "tree": "Restoration", "talent": "Swiftmend", "points": 1},
+        {"levels": "42-46", "tree": "Restoration", "talent": "Tranquil Spirit", "points": 5},
+        {"levels": "47-49", "tree": "Restoration", "talent": "Living Spirit", "points": 3},
+        {"levels": "50-52", "tree": "Restoration", "talent": "Gift of Nature", "points": 3},
+        {"levels": "53-55", "tree": "Restoration", "talent": "Improved Rejuvenation", "points": 3},
+        {"levels": "56-60", "tree": "Restoration", "talent": "Improved Regrowth", "points": 5}
+      ],
+      "core": [],
+      "flex": [],
+      "notes": ["2026-10-15 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 36 s; own tree first 37 s; own tree last 36 s. First Restoration point at level 18.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
+      "open_questions": ["Check the Restoration leveling pace at launch; the raid build's talents may cost speed early."],
+      "sources": []
     }
   ]
 }

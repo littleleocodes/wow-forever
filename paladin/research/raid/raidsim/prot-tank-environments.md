@@ -4,11 +4,11 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `prot-tank` | 0/23/28 | 172 | 203 | 456 | 456 | 455 |
-| `protection-ml-tank` | 0/32/19 | 167 | 193 | 419 | 419 | 421 |
-| `opt-prot-tank-raid-tank` | 0/32/19 | 156 | 185 | 408 | 408 | 407 |
-| sim preset: P4 Prot | - | 146 | 173 | 395 | 395 | 406 |
-| sim preset: P5 Prot | - | 139 | 166 | 389 | 389 | 404 |
+| `prot-tank` | 0/23/28 | 170 | 201 | 455 | 455 | 455 |
+| `protection-ml-tank` | 0/33/18 | 160 | 189 | 419 | 419 | 423 |
+| `opt-prot-tank-raid-tank` | 0/32/19 | 156 | 185 | 408 | 408 | 406 |
+| sim preset: P4 Prot | - | 146 | 173 | 395 | 395 | 407 |
+| sim preset: P5 Prot | - | 139 | 166 | 389 | 389 | 403 |
 | sim preset: Protection 0/45/6 | - | 134 | 160 | 375 | 375 | 386 |
 
 - **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)

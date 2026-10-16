@@ -88,5 +88,11 @@
   "after": "\ttrigger.Name = \"Windfury Totem Trigger\"\n",
   "insert": "\ttrigger.ProcMask &= core.ProcMaskMeleeMH // wow-forever patch: Windfury Totem procs from main-hand hits only (70291 tooltip: \"Each main hand hit\")\n",
   "why": "the spell's proc flags (0x14: melee autos and specials) decode to both hands; the 70291 tooltip and Classic's main-hand enchant say main hand only"
+ },
+ {
+  "file": "sim/core/database_load.go",
+  "replace": "\tfor i, suffix := range db.RandomSuffixes {\n",
+  "with": "\tforeverFillArmor(simDB.Items) // wow-forever patch: armor the database lacks (patches/forever/sim/core/forever_armor.go)\n\n\tfor i, suffix := range db.RandomSuffixes {\n",
+  "why": "the fork's database lists base armor for one armor item in five; fill_armor.py generates the rest from Classic 1.12"
  }
 ]

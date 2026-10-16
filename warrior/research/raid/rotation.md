@@ -289,43 +289,45 @@ Our tuned rotation `prot-tank-raid.apl.json` (the simulator's `protection.apl.js
 
 **Rotation search** (every change kept had to win on two random seeds and cost none of the tuning builds more than 0.1%):
 
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-14, 5 changes to the base rotation; third-seed check: deep: tank 500 -> 540 DPS (+7.9%), opt-prot-tank-raid-tank 508 -> 536 DPS (+5.4%), sim preset: Protection 470 -> 487 DPS (+3.8%), prot-raid-tank 501 -> 521 DPS (+3.9%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-15, 7 changes to the base rotation; third-seed check: deep: tank 485 -> 518 DPS (+6.8%), opt-prot-tank-raid-tank 493 -> 514 DPS (+4.1%), sim preset: Protection 455 -> 468 DPS (+2.9%), prot-raid-tank 486 -> 500 DPS (+2.9%)):
   1. move down below 'cast Revenge': cast Shield Slam (+0.2%, pass 1)
   2. insert at the top: cast Shield Wall (+3.2%, pass 3)
   3. insert before the filler: if not Rend is on the target: cast Rend (+0.5%, pass 3)
   4. drop: cast Thunder Clap (+0.8%, pass 4)
   5. insert before the filler: cast Shield Bash (+0.2%, pass 4)
+  6. drop: cast Shield Bash (+0.4%, pass 7)
+  7. insert in the middle: if rage < 90: cast Bloodrage + threshold 45 -> 33.75: if rage ≥ 45: cast Heroic Strike (+0.2%, pass 7)
 
-### [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) (ours: optimizer, 512 DPS), [`prot-raid-tank`](builds/prot-raid-tank.md) (ours: hand draft, 497 DPS), *Protection* (community simulator, 466 DPS), *Protection 1/0/50* (community simulator, 458 DPS)
+### [`protection-ml-tank`](builds/protection-ml-tank.md) (ours: derived (ML search), 518 DPS), [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) (ours: optimizer, 515 DPS), [`prot-raid-tank`](builds/prot-raid-tank.md) (ours: hand draft, 501 DPS), *Protection* (community simulator, 468 DPS), *Protection 1/0/50* (community simulator, 459 DPS)
 
 Before the pull: at -1s: cast Battle Shout.
 
-| # | Priority (the first line whose condition holds is cast) | [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) casts/min | [`prot-raid-tank`](builds/prot-raid-tank.md) casts/min | *Protection* casts/min | *Protection 1/0/50* casts/min |
-|---|---|---|---|---|---|
-| 1 | cast Shield Wall | 0.3 | 0.3 | 0.3 | 0.3 |
-| 2 | use every other cooldown when ready | as ready | as ready | as ready | as ready |
-| 3 | cast Revenge | 6.2 | 6.2 | 5.5 | 5.3 |
-| 4 | cast Shield Slam | 9.9 | 9.9 | 9.9 | 9.9 |
-| 5 | if rage ≥ 45: cast Heroic Strike | 18.1 | 19.5 | 18.8 | 17.1 |
-| 6 | if not Rend is on the target: cast Rend | 3.0 | 3.0 | 3.1 | 3.1 |
-| 7 | cast Shield Bash | 4.9 | 4.9 | 4.9 | 4.9 |
+| # | Priority (the first line whose condition holds is cast) | [`protection-ml-tank`](builds/protection-ml-tank.md) casts/min | [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) casts/min | [`prot-raid-tank`](builds/prot-raid-tank.md) casts/min | *Protection* casts/min | *Protection 1/0/50* casts/min |
+|---|---|---|---|---|---|---|
+| 1 | cast Shield Wall | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 |
+| 2 | use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready |
+| 3 | cast Revenge | 6.3 | 6.3 | 6.3 | 5.5 | 5.3 |
+| 4 | if rage < 90: cast Bloodrage | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| 5 | cast Shield Slam | 9.9 | 9.9 | 9.9 | 9.9 | 9.9 |
+| 6 | if rage ≥ 33.75: cast Heroic Strike | 20.5 | 20.2 | 21.5 | 20.8 | 19.0 |
+| 7 | if not Rend is on the target: cast Rend | 3.1 | 3.1 | 3.1 | 3.1 | 3.1 |
 
 Lines of the simulator's rotation these builds never cast: cast Defensive Stance, cast Sunder Armor (its condition never held in these fights).
 
 Damage by ability (threat for tanks):
 
-| Ability | [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) | [`prot-raid-tank`](builds/prot-raid-tank.md) | *Protection* | *Protection 1/0/50* |
-|---|---|---|---|---|
-| Heroic Strike | 32% | 35% | 35% | 32% |
-| Shield Slam | 30% | 30% | 31% | 32% |
-| Revenge | 15% | 15% | 14% | 14% |
-| Auto Attack | 11% | 10% | 11% | 13% |
-| Rend | 4% | 3% | 4% | 4% |
-| Retribution Aura | 2% | 2% | 3% | 3% |
-| Deep Wound | 2% | 0% | 0% | 0% |
-| Thorns | 1% | 1% | 1% | 1% |
-| OtherActionRageGain | 1% | 1% | 1% | 1% |
-| Shield Bash | 1% | 1% | 1% | 1% |
+| Ability | [`protection-ml-tank`](builds/protection-ml-tank.md) | [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) | [`prot-raid-tank`](builds/prot-raid-tank.md) | *Protection* | *Protection 1/0/50* |
+|---|---|---|---|---|---|
+| Heroic Strike | 36% | 35% | 38% | 38% | 35% |
+| Shield Slam | 29% | 29% | 30% | 31% | 31% |
+| Revenge | 15% | 15% | 15% | 14% | 14% |
+| Auto Attack | 9% | 10% | 9% | 9% | 11% |
+| Rend | 4% | 4% | 3% | 3% | 4% |
+| Retribution Aura | 2% | 2% | 2% | 3% | 3% |
+| Deep Wound | 1% | 2% | 0% | 0% | 0% |
+| Thorns | 1% | 1% | 1% | 1% | 1% |
+| OtherActionRageGain | 1% | 1% | 1% | 1% | 1% |
+| Dragonbreath Chili | 0% | 0% | 0% | 0% | 0% |
 
 ## arms-battle-raid
 

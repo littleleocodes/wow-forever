@@ -1,0 +1,199 @@
+{
+ "class": "warrior",
+ "spec": "prot-tank",
+ "build": "protection-ml-tank",
+ "setting": "raid",
+ "date": "2026-10-15",
+ "tank": true,
+ "removal": {
+  "Anticipation": 0.023645299756387628,
+  "Bastion": 0.0322206940671248,
+  "Concussion Blow": -0.0,
+  "Cruelty": 0.01321976737373709,
+  "Deep Wounds": 0.00746465143083852,
+  "Defiance": 0.06471459364105292,
+  "Deflection": 0.0370007502438765,
+  "Focused Rage": 0.027979169893368905,
+  "Impale": 0.009077199778028344,
+  "Improved Bloodrage": 0.004440724794328776,
+  "Improved Charge": -0.0,
+  "Improved Heroic Strike": 0.01516126027273157,
+  "Improved Rend": 0.005163233570322889,
+  "Improved Revenge": 0.024999036147598797,
+  "Improved Sunder Armor": -0.0,
+  "Master of Defense": 0.007266539243978687,
+  "Shield Slam": 0.10889323779342519,
+  "Shield Specialization": 0.018083142828601906
+ },
+ "free": [
+  "Improved Charge",
+  "Improved Sunder Armor"
+ ],
+ "kept_for_rotation": [],
+ "active_never_worth": [
+  "Concussion Blow"
+ ],
+ "abilities_never_cast": [],
+ "moves": [],
+ "final_seed3": 0.0,
+ "start": {
+  "Arms": [
+   [
+    "Improved Heroic Strike",
+    3
+   ],
+   [
+    "Deflection",
+    5
+   ],
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Improved Charge",
+    1
+   ],
+   [
+    "Deep Wounds",
+    3
+   ],
+   [
+    "Impale",
+    2
+   ]
+  ],
+  "Fury": [
+   [
+    "Cruelty",
+    3
+   ]
+  ],
+  "Protection": [
+   [
+    "Improved Bloodrage",
+    2
+   ],
+   [
+    "Shield Specialization",
+    5
+   ],
+   [
+    "Anticipation",
+    5
+   ],
+   [
+    "Improved Revenge",
+    3
+   ],
+   [
+    "Master of Defense",
+    2
+   ],
+   [
+    "Defiance",
+    3
+   ],
+   [
+    "Improved Sunder Armor",
+    1
+   ],
+   [
+    "Concussion Blow",
+    1
+   ],
+   [
+    "Focused Rage",
+    3
+   ],
+   [
+    "Bastion",
+    5
+   ],
+   [
+    "Shield Slam",
+    1
+   ]
+  ]
+ },
+ "allocation": {
+  "Arms": [
+   [
+    "Improved Heroic Strike",
+    3
+   ],
+   [
+    "Deflection",
+    5
+   ],
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Improved Charge",
+    1
+   ],
+   [
+    "Deep Wounds",
+    3
+   ],
+   [
+    "Impale",
+    2
+   ]
+  ],
+  "Fury": [
+   [
+    "Cruelty",
+    3
+   ]
+  ],
+  "Protection": [
+   [
+    "Improved Bloodrage",
+    2
+   ],
+   [
+    "Shield Specialization",
+    5
+   ],
+   [
+    "Anticipation",
+    5
+   ],
+   [
+    "Improved Revenge",
+    3
+   ],
+   [
+    "Master of Defense",
+    2
+   ],
+   [
+    "Defiance",
+    3
+   ],
+   [
+    "Improved Sunder Armor",
+    1
+   ],
+   [
+    "Concussion Blow",
+    1
+   ],
+   [
+    "Focused Rage",
+    3
+   ],
+   [
+    "Bastion",
+    5
+   ],
+   [
+    "Shield Slam",
+    1
+   ]
+  ]
+ }
+}

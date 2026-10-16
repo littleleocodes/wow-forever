@@ -1,5 +1,5 @@
 {
- "date": "2026-10-15",
+ "date": "2026-10-16",
  "site": "https://elliotwood.github.io/Forever/forever",
  "wowhead": "https://www.wowhead.com/forever",
  "api_version": 18,
@@ -52,12 +52,12 @@
      },
      {
       "slot": "Chest",
-      "id": 21183,
-      "name": "Earthpower Vest",
-      "url": "https://www.wowhead.com/forever/item=21183",
-      "ilvl": 66,
+      "id": 15066,
+      "name": "Ironfeather Breastplate",
+      "url": "https://www.wowhead.com/forever/item=15066",
+      "ilvl": 58,
       "quality": 3,
-      "source": "",
+      "source": "Leatherworking",
       "enchant": {
        "name": "Enchant Chest - Greater Stats",
        "url": "https://www.wowhead.com/forever/spell=19988"
@@ -158,12 +158,12 @@
      },
      {
       "slot": "Main hand",
-      "id": 7757,
-      "name": "Windweaver Staff",
-      "url": "https://www.wowhead.com/forever/item=7757",
-      "ilvl": 37,
+      "id": 22335,
+      "name": "Lord Valthalak's Staff of Command",
+      "url": "https://www.wowhead.com/forever/item=22335",
+      "ilvl": 63,
       "quality": 3,
-      "source": "Scarlet Monastery",
+      "source": "Lord Valthalak, Blackrock Spire",
       "enchant": {
        "name": "Enchant Weapon - Spell Power",
        "url": "https://www.wowhead.com/forever/spell=22747"
@@ -333,13 +333,13 @@
     ]
    },
    "ilvl": {
-    "prebis": 61.6,
+    "prebis": 62.8,
     "bis": 65.1
    },
    "sim": {
-    "prebis-raid": "https://elliotwood.github.io/Forever/forever/druid/balance/#eJzMk81r1EAYxvNMxs3r2680rTSOiuuCUhZWJlkCVoRk9+TBQwUPHkvBYgS1UJEeq1QQDxVP0uKlwlIFCz2ISC9C/UollUWwIIpIiygosiB48SJJ1foHKPg7vfPM72HmMMPtBBsuiuiHhtP3eyU0IgziOEYxAahVQZbdps6wRd/n4b5vY0lr18GS3n3tYEmvZsEWPWjAXe9ki5YacF93sqTFRua8/dbBFj2525UVLVq4A/eqxZKezmXOs1mwSRdPsKR7TZsLtHLITXrYYKO0myZjO4mLczfQ/3wKgzcf4QrEZHwLH2pNTMV13rz+olA6qPq+rz0vCLSnA6+ig0qgA62riUBTtK2J89zLdKrAkmaWUCIusKx4esyRShw0nF1qB3eXu0g6YthQFm9hs6r3qkz/sg5nm+qpd7Okaw9hY2Nbnx5zepVTt9mkT0f+TFlRXnzxGK75USRoCf+CaeTsj4YLSrJgo3Tb3JolxsRItH1mOmM53DOSsxr6LeHKYlhOhPFfcS76Nf1T9s3/9XMGVtI0bR9aiGo/g2gIl4FpxGdbl5aPvQwH8tRohrXMTNPP4dGN4U1YNul+X33n5ovTOIAIh/NvchKjGMe482MAcKJ6GA==",
+    "prebis-raid": "https://elliotwood.github.io/Forever/forever/druid/balance/#eJzMk71rFE8Yx/c7O7/b5/dcXjabSNZR8TxQwsHJ7B4Lxmb3rrKwiGBhGQIGV1ADUUkZJYJYRKwkwSZCiIKRFCKSRohvG1nlEAz4gkiCKChyINjYyG7U+Aco+Kme+c7ny0wxw20EGy5K6IOG0/trJTQiDOAQRjAOqBVBll1Ux9mib/Nw3xVZ0uplsKS3X9pZ0osZcIFennLXOtiipVm4rzpY0uJsprz52s4WPbzVmfUsWrgB96LFkh7NZc7jGbBJZw+zpNtNmy26exNu0s0GG+XtNBHbSVyau4K+p5MYuHofFyAm4mt4X29iMm7wxvUXhdJBzfd97XlBoD0deFUdVAMdaF1LBJqiuCpOcw/T0QJLml5CmbjAsurpUUcqsddwtqkt3FXpJOmIIUNZ/B+bNb1TZfrnNTibVHejiyVdugcb69v62KjTo5yGzSZ93P97yory4rMHcM0PIkFL+GdMI2d3NFRQkgUb5evm/1lijA9Hm6enMpbDHcM5K6HfEq4shZVEGP8UJ6Of019l1/wfP6f/SZqmbYMLUf1HEA3iPDCF+ETr3PLB52F/nhrNsJ6ZafopPLA+vA4rJt3pbWzdeHEaexBhX/5NjmAEYxhzvg8AVRt6Zw==",
     "bis-raid": "https://elliotwood.github.io/Forever/forever/druid/balance/#eJzMk79rFE0Yx/c7O+/t8z4Xk8smknVUPA+UcHAyu8eCsdm9qywsIlhYhoDBFSSBiKSMcoJYRDRckcNGIahgJIWFpJJEZQ9XOQQV0UIMoqDIgaUgshs1/gEKfqpnvj+YKebhHkIBDooYhoY99OskNEKM4iimMAuoF4KsQl5NskVfl+C8y7Okb5fBkt582cKSXl4FW9RuwlnvZYtWF+G86mVJK4tp5l4zdR/e6UuLFi3fgnPRYklrt1P3URNs0tljLKkxnwZb83DiATbYKO2iRlSIo+L1Kxh+MofRa/dxAaIR3cD7WgdzUZ03378ilParnudp1/V97WrfrWi/4mtf62os0BH5t+I0DzKdyLGk1ipKxDmWFVdP21KJA4a9U23n/nIfSVuMG8ri/9is6j0qjX9eh71VDdT7WdKlNRSwYeuT0/agsusFNunjod9VVpQVnz6AY34QMbrCO2MaGfvC8ZySLNgo3TT/TxVjdiLc1lpIaQe7JzKeB15XOLIYlGNh/FOcCn9Of5W9S3/8npHHSZL0jC2HtR9COIbzwAKiye659pFnwUimGp2gliaT5FNweGN4HZRNujtU37H54zT2I8TBbE+OYwozmLG/DwAIU3kz",
-    "prebis-dummy": "https://elliotwood.github.io/Forever/forever/druid/balance/#eJzMkE9IFG8Yx+d553Xn8fGnrvOTmqaiSVBMGHlnbCIlmHWPUVDQPWfdMUdsR5w91K3EICKMTqF0MRALEjxEiB0C+7fGGktQEEWIFgVFCEGXLjGjUnS26Hv68uXz8nx4iWmgSvq9KlTSNXqBFPw+A9r7GuK4cg2I4/LXWuL4ahJIwftToK3WkYILU6C9riOO81Mx8/ZbLSn4+E59/FDB2dugXVGI45PpmHk6CSTjiE8c71bSlMKlQ1rpf5JIatqDo0G6FBjT16H12Rgcu/EQLgEbDW7Ch+4KjAVZaZ7pwumwbVtYluMISziWKRxzv+UI0VFiUGE1K+ydTI2EAyniOLEATUgp4qYlIpXrrEtSd+s7qaGtHrnKcpKuUBXJHaJZj/Evq6BeBjXnDQ2eDIeKhi3sA6boNO2DXUZvv1c45eeNcNjw8nk/b+TOGsV+3xgOi14xCAtG5HvDvf1Ga+T7Rs4b9Aq9vpkfisxNwFwH2geisLBPb0kcUio7vOFgiSjbQByvPoA0rE/idKQ26mo2TTJ+OvLrSjomws8fgTryd4R3JcLyz0+znOa4tAIub1PD3xwsYQpryx2qk4OIc0c1+SMrwRqzz8tSkvZMLqVzYiQ13ZKr40U615fZMTEeZ9Hd25fkpWuvMY0bbluJSf9UipnN9kfTMrPldzqXyuXyfz2zme6NIdMDFwHGIQjXLiyeeOF2JqtUcbtjslz+7B5fL2/cNhnntmelM+qPAQAXO+Jh",
+    "prebis-dummy": "https://elliotwood.github.io/Forever/forever/druid/balance/#eJzMkE9IFGEYxuf95nPn9TV1naSmqWgSFFsY+WZkIr3suscoKOies7tju2I7sjNB3UoMIsLoFEoXA7Egw0OE2CGwf2tssQQF/SFEi4IihKBLl5jVKDpb9Du9PDwfz4+PmAaqpN+pQyXeoBdJwe8zoL1vII7Ll4E4Ln1tJI4vJ4Fi+OqEttJECi5Mgfa6iTjOT0WVt98aScGHt5qjdwrO3gDtokIcH01HnceTQDKOeMTxdjVOCt69CVp5M0kkte3C0UK8XDCmr0Dn0zE4dPU+nAc2WrgGH/qqMFZIS/NMF063bdvCshxHWMKxTOGYjnCE6C4zqLKGZfZOplbCwRhxnFiANqQYcdMSgcp11iupO/Xt1JJoRq6yjKQrVEdyt2jXY8TxywqoF0DNuMNDR/3h0LCFvdcUPaa9r9fI5t3iMS9n+CXDzeW8nJE5ZYR5zyj5oRsW/KIReG4pmzc6A88zMu6QW8x6Zm44MEt+6IYFv2gGnlvK5rsGA7+4R++glkQzxlS2f93BEkG6hTheugdxWNMSxwO1VVfTcZLx04HfU9KxJvzsAagj/0Z4R01Y/vVpltMeCXUCLm1R/T8cLGEKa8Md6muDiHMHNfkjK8Mqs8/IUo2uVCamc2IktV2X66NEOj2Q2jYxHrGY3D1Q40XSXmUaN5KJMpP+K8LUz+uv0jGz4Ts9TyqVyqb+2VTfepDqh3MA41DwV88uHnme7KmlUjXZFzUrlc/Jw2vHm2RCxrmtaemk+mMAYTzisA==",
     "bis-dummy": "https://elliotwood.github.io/Forever/forever/druid/balance/#eJzMkEFIFG0Yx+d553Xn8fH7dJ2kpqnoTVBMGHlnZCK9zLrHKCjonrPumCu2I84e6lZiEBFGiQelS4FUkOGhg0iH0IqVtpCgIOogWRQUIXQMImZWKTpb9D89/J/fy/PjJWaArpj3a1BL15khafhtFoz3dcTx+1Ugjqtf/yeOr64Dabg8CcZaPWm4OAPG63riuDATMw8m4+3jew3xQw3n7oBxWSOOS3fj7ZNJIBVHA+I4NhGD0xNglLeRQkrzXhwrpMsFcfMatD0bh6M3HsJFYGOFW/ChZwXGC1llgZnS7XQcR9q260pburYlXcuVrpSdZQYrrO4te6dSE+FgijhOL0IzUoq4ZctI5ybrVvQ95i5qbG9ArrOcYmpUQ2qnbDFj/Msa6JdAz/nDQyfC4ZJwpHPAkl2Wc7Bb9A34xZNBXoQjws/ng7zInRGlgUCMhCW/VAiLIgr8kb4B0RYFgcj5Q36xL7Dyw5G1CVhVoGMwCov7zdbEIaWzQxsOtoyyjcTxyhKkoVrJU5HeZOrZNKn46fCvLZmYCD9/BPro3xHenQirPz/NdlvioQ1wdbse/uZgS0vaW+5QmxxEnD9iqB9ZGdaZc05VknRkcimTEyOl+bZaGzfK2f7MzumpOMvevv4kLz1nnRlceO1lpvxTKWU2pz+a1tktv9P1tFKp/Nc7l+nZKDK9cAFgCgrh+vnl4y+8rqRVVryemKxUPnvHqsMbr13F+R1Z5bT+YwCFJ+F8"
    }
   },
@@ -2661,8 +2661,8 @@
     "bis": 66.8
    },
    "sim": {
-    "prebis-raid": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVE9IFG8Y3vebcefz/fnTYQoch4gvD2HCxLdjE62XGT11KoMOHoKc3LGdUmfZ3YMRhIVBSRZdQiMykLCgQrEgpOhQhzUmWPtjVEJUQh0MvIR0CGJ2dBc6G/Scnvd5n+97n+/wvVhDQQYVGDQBB6WhXBEOe8CGDuiEDAwCaF9FSmVBGwSU6OMHderSfyjQmQEU6atARoleL8rqfBwl+vR+nfqlFiX6/Ayoq6E9CGT1Yy2K9N2lsLw8DeHpOB3NRvKvK4AiHVmWUaAjfSjQyUMo0dfzsroc3vOsuEZezsvqh02NJh3y5IKnXvDY5DVoWhqHjqVp6Bw+NQxkyBuFCecG3HFuwWLbFIzfhAJAES567Vh56SzZauqcmzxhcp7QTc6NXdxo4UbIjISZKBCxSOhnskBQQUmrQoH+8BslrEJBb8kp1VqkzfoKalSLo0hXJ/crokZaY2Xl3gSUjU8qxvMzHcpJpcvJ9B72M3lmcGO3nuA6T7Sy7rTTf9RNMT/LnFTKTbEjJ1g+7bKsn3fynt/Pcq6T7U6zppzrsj6313X1VCanr7f1qL3zWM7v36HV4//v44gifftzn0JksZQp5OuZPvnK8T9y8KRuJDc4RzTskV+e+91XhW+kACvEOC3ESthsDwPFMGBcpo23hepQjA322A1Xx0LMWdt6SliwjBWiisxqLpDYP4W8vc7+Krbf3fA5yRdBENR0Tdlta4LdBecAxsDzV87OHXxjJUtqrGi1hc4gWLYORGTRahbow/r2LZWfFW2NvaW9kYYMDMCA8nsAq3jWzw==",
-    "bis-raid": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVE9o01AY7/eSNW/POUIUlgWR5w4yB5GXjIjdJdlOnnSChx0EF9fMRremtD1MBJl2BS3+A0GciBOGVGGTiRcZgtcOOu38M0EHovagMKEXGR4ESbK24HmCP3L45ff93vf93uF9pA2DCDJQ6AYGUmfjDzE4CBYMwhCkYBJA+c5jLHLKRSACfpkDubqN8Lh6HQiPKzlfvFcR5ZUoEfByDuSv7UTAr3Mgb/iltzmQP7UTHr8JnK/C4wJeqevFvN/n9y0gHL46TjhcPE4EPJcHed1vdOPmJpnPg/xxR5eBp1yx5MpXXFq8C93VGRisPoGhwvkCoCn3Nsza92HOfghr/Qsw8wBKABW45g6Q5l0X0W5DZczQmMGYphqM6b3BZzBN1zVDKyG+gvAXtIqIRASlhXD4p9clkBbCqb0ZqVUJtUVPIgpWooTHG8UjEq+gvkhDeTwLDeOLpvHy00HpnDRsp8ZOeKks1Zl+QNWYyrQ+OpKwk6ecOPXS1I7HnTg9eZZmEw5Ne1k763pJmnHs9EiCdmcch447Y46jxlMZtV5Ww/L+0xkvuU/pINs/RAnh8ftfhyUk8kEmn9czffakM3/lYDFVj21xjnDYc68x94cnc99QCWpIv8BFAuy0CoCJHzAq4q5HXKsvRiZHrc470z6WzD2jAVZNvYZknpo9JRT5r5C16uyfYu/8ls+JLZfL5bbhBat/U7CG4RLANLheLb907J0ZC9RIxez3neXyunk0JGtmD4efdQzsar6scG8cCjZHAlIwARPSnwEA9wTUgg==",
+    "prebis-raid": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVE9IFFEY3+/NuPP8Mh2mwHGIeHkIEybejmy0Xmb01KkMOngIcnLHdkqdZXcPRhAWBiVZdAmNyEDCggrFgpCiQx3WmGDtj1EJUQl1MPAS0iGImdFd6GzQjzn8vt/3m/f93uF9WENBBhUYNAEHpaFcEQ57wYIO6IQsDAJo30RKZUEbBJTok4d16tImFOjMAIr0tS+jRG+UZHU+jhJ99qBO/VqLEn1xFtTVwO77svqpFkX6/nJQXpmG4O84Hc1F8u+rgCIdWZZRoCN9KNDJwyjRN/Oyuhyc87y0Rl7Ny+rHLY1JOuTKRVe96LLJ69C0NA4dS9PQOXx6GMiQOwoT9k24a9+GxbYpGL8FRYASXHLbsXLTWbI9qXOeDL+EnuQthsGNFm4kOTeMRDJRJGKJ0C9kgaCCklaFAv3pNUpYhYLekleqtUib9RTUqBZHka5OHlBEjbTGysr9CSgbn1aMF2Y6lFNKl53tPeJlC8zgxh49wXWeaGXdGbv/mJNmXo7Z6bSTZkdPskLGYTmvYBdcr5/lHTvXnWFNecdhfU6v4+jpbF5fb+tRe/fxvNe/S6vHzR/iiCJ992u/QmQxzBTw9UyfPeXEXzl4SjdSG5wjGvbYK8/94anCd1KEFWKcEWIhtlrDQDEIGJdp4x2hOhBjgz1Ww7WxAHPmjp4QC6axQlSRmc1FEvuvULDW2T/FznsbPif10vf9mq4pq21NsLrgPMAYuN7KublDb81UqMZKZlvg9P1l82BEFs1mgT6qb99WeVnR1tgX7o0MZGEABpQ/AwCrdNbP",
+    "bis-raid": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMVE1o02AY7vsla759zhGisCyIfO4gcxBJMyJ2l2Q7edIKHnYQbFwzG936lbaHiSDTrqDFPxDEiThhSBU2mXiRIXjtoNPOnwk6ELUHhQm9yPAgSJK1Bc8TfHgPT573yfs+OeQlHRhEkIFCL2ggdTefkAYHwYIYDEMaJgGU7zzGIqdcBCLgl3mQa9sIj2vXgfC4mvfEe1VRXgkTAS/nQf7aSQT8Og/yhtd6mwf5Uyfh8Rvf+Sp4XcArDb1U8Ob8vgWEw1fHCYdLx4mA5wogr3uDbtzcJPMFkD/u6DHwlCuWXfmKS0t3obc2A7HaExguni8CmnJvw6x9H+bsh7A2uAAzD6AMUIVr7hBpfesi2m2ommb4FVENTdP7/TI0XdcjRqSM+CrCX9AqIhIRlDbC4Z+sRyBthFP7s1K7EmiLTCIKVsKExxulIxKvoIFQU3k8C03ji5bx8tOYdE6K2+mxEyydo7qmH1AjmqpFBuhI0k6dchKUZaidSDgJevIszSUdmmE5O+eyFM06dmYkSXuzjkPHnTHHURPprNpoq0F7/+ksS+1Tusj2D2FCePz+12EJibyfyeONTJ+ZdOavHFpU1aNbnCNY9pw19/5gMvcNlaGO9AtcyMdOqwiYeAHDIu55xLV7Ymhy1Oq+M+1hydwz6mPV1OtI5qnZV0ah/wo5q8H+KfbOb/me6HKlUumIL1iDm4IVh0sA0+CyemHp2Dsz6quhqjnoOSuVdfNoQNbMPg4/6xra1fqzgrtxyL8cSUjDBExIfwYA9vHUgg==",
     "prebis-dummy": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMkM9LFGEYx+d5Z9x5fCsdpsBpIHjzECZMvDs2wXqZ1T+gDDp0CHJyx5xSR3b3YARhYVCSRZfQiAwkLKhQLAgpOthhjQl2+0klRLWHDhvsJaRDEDO7roc6KvRlDp/5Ps/zPj+ooAr6Uh2iIuojQGV8+qhRK26iIs4PUwlfBwqV8WZe0QoxKuPiw0btWwOV8cU50FbC9CBQtM8NVMIPV8Lfq3MQVsdwIl2xf18DKuF4SaEijg9QEWeOUBnfFBStFL7zPF+FVwVF+7S12cJRT8l52iWPzdyAluIUdBXn4PDYmTEgo94ETDu34J5zB5Y7ZmHqNuQA8nDZ6xQWyA7L4Nziey3O44bFudkWfRY3TTNu5oiUJ/iVLIpUpbJeR0X86TfLtI6KRltGPa12O0P9R/2hLDO5uc+Ic4PH21lPnzN43E0xP82cVMpNsWOnWLbPZWk/62Q9f5BlXCfd08daMq7LBtx+1zVSQxljNWxUwntOZPzB3XoT3fIxRqmE73/tV4ki6bEqUx0jXpk5oNbrleGe+TVcWMMvvirppF2olTyYhhpfnO9ST/5jD3Od94hGUUa9v5rxhGEmNqIZPlk7wQ9fE7+THJSJeVYUIm1LjgHS8BwxBZvvivWhKYz0Jrdfnwy1ZO/sjfTONstEk5jdmiPCf6VscpU2VLvur3ufxMsgCDZ3zyY7qkayGy4ATILnl88vHXprJyJXyNsdYWYQlOyDFVi2W0V83NRJEIbVPwMAEaDyKg==",
     "bis-dummy": "https://elliotwood.github.io/Forever/forever/hunter/dps/#eJzMkM1rE0EYxved3Wano5ZlFbouCGMPUgsrkykrpJdN+gdoBQ8eBLM2W7PaZkOSgyKImgQ0+AWCWBErFIlCKxUvUgQPXlJMNfUTtCBqDh4q5CLFgyC7+ehBjy34MIcfzzvvJxFUQX/RhbEi6ueByPhlHrT6JiLh+lUgEq7lffNOTdGWQkTGi3nQvvUQGb/Og7bqh97mQfvcQyT8Jvj5qpku46W2Xy76dX7fACLiyxNExOXDRMYzRdBW/ELXrrdgtgjap619Ji64SsXVLrm0fBv661MwUn8Eh0pnSoAK7k2Ytu/CjH0flmNzMHUPKgA1uOIOC/Noh2kwZjLTZCxsmIzxQf+FTcY5D/MKkmoIf0XPRaISWe8iIv7p9cmki4jGYFY9rcbt9PgRL52jnPG9RpgZLDxER5N26piToF6G2omEk6BHT9Fc0qEZL2fnXC9Fs46dGU3S/qzj0Aln3HGMRDprtMNGM7zneNZL7dZ7yZaPIUIk/OHXPhUpkh5qMdFxwKvl/Wq33hzumdfB+TX84qmSjoaETsrDaejwxccj6ol/7MHXeY9gFKXg/tWMRQwe2Yhm+OnaCX54mvgdVaCB+DlRCLQtWgJM/HOEFNz3QOz2TeHsWHT7rUlfC9bOsUDvLd5AmkStgQoS/ivlom3aUO2aXfc+kcVqtbo5PheNtYxoHC4ATILrNYoLB99ZkcAValbM/1mtrlgHmrBsDYj4Se8wwnBS/TMAsB/v3Q=="
    }
@@ -3079,12 +3079,12 @@
      },
      {
       "slot": "Back",
-      "id": 11623,
-      "name": "Spritecaster Cape",
-      "url": "https://www.wowhead.com/forever/item=11623",
-      "ilvl": 52,
+      "id": 22330,
+      "name": "Shroud of Arcane Mastery",
+      "url": "https://www.wowhead.com/forever/item=22330",
+      "ilvl": 61,
       "quality": 3,
-      "source": "Houndmaster Grebmar, Blackrock Depths"
+      "source": "Blackrock Depths"
      },
      {
       "slot": "Chest",
@@ -3194,12 +3194,12 @@
      },
      {
       "slot": "Main hand",
-      "id": 12260,
-      "name": "Searing Golden Blade",
-      "url": "https://www.wowhead.com/forever/item=12260",
-      "ilvl": 39,
-      "quality": 2,
-      "source": "Blacksmithing",
+      "id": 20698,
+      "name": "Elemental Attuned Blade",
+      "url": "https://www.wowhead.com/forever/item=20698",
+      "ilvl": 63,
+      "quality": 4,
+      "source": "world drop",
       "enchant": {
        "name": "Enchant Weapon - Spell Power",
        "url": "https://www.wowhead.com/forever/spell=22747"
@@ -3405,13 +3405,13 @@
     ]
    },
    "ilvl": {
-    "prebis": 60.3,
+    "prebis": 62.2,
     "bis": 67.4
    },
    "sim": {
-    "prebis-raid": "https://elliotwood.github.io/Forever/forever/mage/dps/#eJzMlE1ME2kYx/u8M0zfPnxsd3azDBMOsyS7YZsd9u3MDlAOtHDa1QOYaGK8QEsHO4ptbXvAi0GsifEAhBvGiyRGNPKReAFOBjUpphouaqJGjR+BgwfUhMR4Me+UQiIewfg/vf0//77PM7+8ebCKgh8U0KARGMh1W78Ig1aIQDcchjQMAah5SqmfqifRSz9Pg/K2EkV6dhZQpC8/VqNAV4+gRIcTyusa9NKlK6A8rUGRro3yxPONapTorST/l5fO3QBl1IsivT3Di/cuAwp02EaBjp1Aib7pUQq/oEgXZrj/YaDhb5p3/AVHu3oJGh+MANuIdU/egQtA8s44kI3YFKx2zMP1KViBEacTtz9okdQzZhnM0g3TshgzWNBkQdNkVlBnzCoQWCGVr8iYJB+Xe6PpgZ5UOqcZzGjWWUg3Wtq0vkQ0edSOa6mMFo3H7bgWO6XlEraWSeWiOSeV1LJ2NNOX0Bqztq31Oxlbz0SduF4u66Vy07FsKvmX6lUrUKCPu+RJ+Ea31l3u1o6WauJvgV+pIPuWQEKRzt4EPgKChXWBWirKvsUtn6KEYkuTleUJ+qJLFlXS5pHrVRV/DvxERZnEPKoXK1BoZX/wjL/QvoNakOkstBfU/HlHXviaGu+229QO4X75f5eaVKb2fkEpUTPwH1VHf6CGCjLZ51ElFJE0Z12WQpklT7ssTc6SO5/GQW5QNfdS2HGpuZU5/R1gqu740vb4ZmnGJ3dB9m0+0HytIqyRAqwT44zgcfVvZJI/FCQUGq4JPm55hvojdRcnuJbDv/e7ehQ21okiauFAgXh+KOUi5dOe6s/pXe8Tul8sFqt65yIdm0akF84DTICTWj+3fPBhOOS6npVwB08Wi+/CB0qHZ+GAQOdrO+u392Fppf/nLvUEpGEQBuUvAwBQLENQ",
+    "prebis-raid": "https://elliotwood.github.io/Forever/forever/mage/dps/#eJzMlE1ME1sUx3vuDNPbw8frm/fyGCYs5pG8F17zBm9nHKAsaGHlxwJMNHEnLR3sKLZN2wVuDGI1xgUQdhg3kBjRyEfiBlgZ1KSYatioCRo1GiMLF6gJiXFj7pRCIi7B+F/d/s+/95z55eZgFQU/KKBBIzCQ67Z+EQatEIFuOA5pGARQL1FK/VTNopd+nQblXSWK9MIsoEhff65GkS7OAEp0KKG8rUEvXboOyvMaFOnaCI+83KhGid5N8r956dxtUEa8KNJ7M7z4cAJQoEM2CnT0DHrp6gQohT9QpAszvPCpv+F/mnf8BUe7cQ0aHw8D24h1T96HK0DyzhiQjdgUvO+Yh1tTsALDTiduf9IiqWfMMpilG6ZlMWawoMmCpsmsoM6YVSCwQirfkFFJPi33RNP9J1LpnGYwo1lnId1oadN6E9HkSTuupTJaNB6341rsrJZL2FomlYvmnFRSy9rRTG9Ca8zattbnZGw9E3Xiermsl8pNp7Kp5H+qV61AgT7rkifhB91ad7lbO1qqiX8F/qSC7FsCCUU6ewf4CAgW1gVqqSj7Frd8ihKKLU1Wlifoqy5ZVEmbR65XVfw98BsVZRLzqF6sQKGV/cMz/kL7DmpBprPQXlDz5x154XtqvNtuUzuGh+WDLjWpTO3jglKiZuA+VUd/oIYKMjnkUSUUkTRnXZZCmSVPuyxNzpI7X8ZAblA191LYcam5lTn3E2Cq7vjS9vhmacbVByD7Nh9ovlYR1kgB1olxXvC42h+Z5A8FCYWGm4KPW57Bvkjd1XGu5fDffa6eho11oohaOFAgnl9KuUj5tKf6d3rX+4QeFYvFqp65SMemEemBywDj4KTWLy4ffRIOua5nJdzBk8Xih/CR0uFFOCDQ+drO+u19WFrqB9y1noA0DMCA/G0AuKRDtw==",
     "bis-raid": "https://elliotwood.github.io/Forever/forever/mage/dps/#eJzMlE9IFG8Yx/d5Z9x599Gfv+0tchw8TEJhS2PvzjTqenBXT/05aFDQLXfdsZ0Sd9ldwi5huUJ1sFA8WB1CiCzoDwShnkIKVtrKSwUVFEXUoYMVSF0iZtZdITtq9D0M73zf77zPMx9eHqyi4AcZVGgADqy2/EY4tEAEuuAQpGAQQDlLKfVT5ThK9NIQyB8qUaQ/RwFF+vbbfyjSe8OAEp0fB/l9NUp07irIr6pRpN/dzP1xZ3cs534o0StDIJ+XUKSPxqH8zI0BCvS0hRJ9OgxyfiOKdOaW433tq99Bc7Y/b6vXLkPDkxHgS7GuyQdwDkjOHgWyFJuCj+3TcGMKFmDE7sCVv5oldZybOjc13TBNznUeNHjQMLgZ1Dg38wQWSOU7csHLjrHuaKrvcDKVVXWuN2k8pOnNrWpPItp/xIqrybQajcetuBo7oWYTlppOZqNZO9mvZqxouiehNmQsS+2105aWjtpxrbStFbcbj2aS/dsVSalAgb7oZJPwh2ota1ytDU3FwM2BTVRgvjnwokhv3wWnBQQTawM1VGS+2bJP0Ytic6OZcRL0TScTFdLqYXWKghsC/1ORkZhHkbAChRa+1cn4822rqAW5xkPrQc2fs9nM79ScamtN7SDuY3tcat4StS8zcpGajjsVDf2BaiowstejeFFE0pRxWQollk7aZWk4LB3nxyiwekV1D4VVhxrlzMm/AFNx2/eutG8Ue3z5EJhv+YLmamThE8nDItFPCR5XuyKTzkVBQqH+uuBzLM9gb6T24oSj+fCWXlfPw/oikUU1HMgTzz+lbKS0Wldtu7nmdUKPC4VCVfedSPuyEemGMwATYCcXh+cPPAuHXNezEG53koXC5/D+4uJ1OCDQ6ZqOupV5WJzru93JnoAUDMAA+zUAkVVC7Q==",
-    "prebis-dummy": "https://elliotwood.github.io/Forever/forever/mage/dps/#eJzMkktMFEkcxvtf3fTU/FnY2WJ36W12k16ykNnJ9qa620Egxhk4ekETTx6EGaZxWnEGZyZRTwpiQjyAwWiC8aAkRjTyiF6Ak8FHBjMaLmqCRo2PwMEDPkJivJjuAY3GIxK/U/X3Vef/+6oKBSaofZTSAFX3oY9+GAXlZSlK9Mg4oESfvi1DkS7sQJn2JJXn5eijM+dBeViOEl0ccHc8Xi5DmV5LuX/56MRlUAZ8KNHrY254+xygSHtsFOnxvSjTF61KvgIlOjXm+m86q/+jvU4g72gXzkDwbj/w5fjW4RtwDEivMwhkOT4CC02TcGkE5qDfaRamyT/cMjkPm9zinBuGbljhMHeXFjcsi4cNnXMrT2COlD4jp2R2FlhbrKuzNd2V00xu1ukG17nZqLUnY6lddkJLZ7RYImEntPhBLZe0tUw6F8s56ZSWtWOZ9qQWzNq21uFkbD0TcxL6aqwX4/93Z9Opf9VNaKkG/h76lYrMPwMySnT8KqglKCKEsTL0G5WYf/qTL6OEpC7r5vRJC/tTVfGX0M9UYiQuqD4sQbGe17hpIL+ZSSppFNjJr2vwBt2sX+MaBgZZrYcifkYxeI1nlTCyZcUyw0X2EztZtap5vWG19+sppdjbUt3P94PA9nwDfeMao/vcofRBC/tLrfJw5S8aeCzzN4HtXweWCvRf8e763TzxBnffAnZoHZ5hFQZC5VT2Lsp7Y1bWPYEgoQPA/Ctn1FupiIskD0vE7BYFTxuiwy4vEgrVF0W/awmHO6J/nB5yNRv5u8PT/Yi5RBRJi4TyRPihlIuurr6rakfXfE7DnUKh8FPbRLRpxYi2QR/AEDjppaOz2+9FGjxXmIs0uTsLhVeRbcXFo0hIpJOVzcIB9nEAGp069w==",
+    "prebis-dummy": "https://elliotwood.github.io/Forever/forever/mage/dps/#eJzMkk1ME00cxvc/u7TTPy+8fYf3fVkXTVYipDaumd1aBGJs4egFTTwrLV3sKrakbaKeFMTEcACD0QTjQUiMaOQjegFOBj9STDVc1ASNGo2Rgwf8CInxYmYLGo1HJD6nneeZzf/3zAxKTNJ6KaV+qmXRS7+MgvqmFBV6chxQoS8/lqFCp8cAPbQ7qb4uRy+duQzq03JU6EK/2PJ8qQw99FZK/OalE9dB7feiQm+PifD+EKBMu22U6ZnD6KXzQ6DmK1ChU2Mi+NBRvYX2OP68o1+5CIGHfcCX4ruH70AvkB5nAMhSfATeNk3CtRGYgz6nWZomm3iYczPMzRDn3DINMxQOc87F2gyFeNg0OLfyBOZI6Sty3sMuAWuNdXbsT3fmdItbdYbJDW416m3JWOqAndDTGT2WSNgJPX5MzyVtPZPOxXJOOqVn7VimLakHsrattzsZ28jEnISxEhvFeOvBbDq1WduBIc3E/4P/Upn5ZsCDCh2/CVoJyghhrAz+RxXmm/7me1BBUpcVOX3RwtZrGv4T/JsqjMQlzYslKNfzGpH68zuZopFGiZ37uQZvMKz6Va5hYoDVuijydxST17hWCSO7li0rXGQ/u49Va7rbG1Z6v59Si71Dmlh+HgB26Bfo21cZ3SuG0ictbINW5eJ6fmjgsszfBXZkDVgq0HfDvetP88Qd3HUP2PE1eIZV6A+WU497Ue4bC2XFCQQI7QfmWz6jnkpVXiB5WCRWlyy52hYdFrxIKFRflX3Ckk60R9ddGBSajWxsd/U4Yi0SVdEjwTyR/ijloitfv1W1o6s+p+FBoVD4q3Ui2rRsRFvhNMAgOOnFU7N7H0UaXFeaizSJnYXCu8ie4sezSFCmk5XN0lH2dQByXTte",
     "bis-dummy": "https://elliotwood.github.io/Forever/forever/mage/dps/#eJzMkl1IFF8Yxuc9M+6cPf7/th0rp7FgkpRtaeLMjGMq0axedmNB1+WuO+aUuLK79HFV5goRpKBsYHUhQmRBHxSEehVSsdJW3lRgQVFEXXRhH0jdRMxZNYouTXovhnee5xze33POIQIV1DMY4xBWDxMZn+8F5W0pkfD3QSASfvX5fyLh231AZDydA+VNGZHx1EVQnpcRCX/la+7kfHcoyzfKeKQXlAGZSPhBDpa+2SEgIj7pEhk/7gMlX04kPHHN1z51Vm3FWS+U97RLFyD8qB/YfHz36F04DSjrDQKaj4/Bu6ZxuDIGM9DvNQuTaDOzTcZsxizGGDN0w7Jt3lnMsCxmGzpjtXkEM6j0NToboCNAW2PdnfuT3RnNZGadbjCdmY1aW0es64Cb0JIpLZZIuAktfkzLdLhaKpmJZbxkl5Z2Y6m2Di2cdl2t3Uu5eirmJfRFWy/a2w6mk11b1B3EUg2yLrIGizQ4BQEi4eu3QC0hIgGbVETWYokGJ5f0AJEIqkv7Pn7ZQjeoKlkdWYUliuKCKpMSItazat8N5XdSSUWNAs39HoM16Gb9MscwSJjWcBTxJ4rBqrlUQtGuBcm0i+xD+2iVqvHcsJj744RSzG2p/u+3QaCH/oC+fZnRZX8oftZCN6qVHDfwSwLOMnsP6JEVYCknwZv8rr/MIj645z7Q4yvwDCtJKFKGA/yi+Buz0v4JhBEeABpcOKNshSK+R3mYQ2aPKPCqjY76vARhqLosBn1JONEeXX9u2K9pZ1M7r6eOOYcUSXMieST8U5WJLnZ/tWquLvuchoeFQuG/1hvRpgUh2gqnAIbBS871Te994jRwVZhxmvyVhcIHZ0+xeeFERDxe0SwcpT8GAFMYOpQ="
    }
   },
@@ -4280,20 +4280,20 @@
      },
      {
       "slot": "Finger",
-      "id": 20682,
-      "name": "Elemental Focus Band",
-      "url": "https://www.wowhead.com/forever/item=20682",
-      "ilvl": 65,
-      "quality": 4,
-      "source": ""
-     },
-     {
-      "slot": "Finger",
       "id": 13001,
       "name": "Maiden's Circle",
       "url": "https://www.wowhead.com/forever/item=13001",
       "ilvl": 61,
       "quality": 3,
+      "source": ""
+     },
+     {
+      "slot": "Finger",
+      "id": 20682,
+      "name": "Elemental Focus Band",
+      "url": "https://www.wowhead.com/forever/item=20682",
+      "ilvl": 65,
+      "quality": 4,
       "source": ""
      },
      {
@@ -4316,12 +4316,12 @@
      },
      {
       "slot": "Main hand",
-      "id": 12260,
-      "name": "Searing Golden Blade",
-      "url": "https://www.wowhead.com/forever/item=12260",
-      "ilvl": 39,
-      "quality": 2,
-      "source": "Blacksmithing",
+      "id": 20698,
+      "name": "Elemental Attuned Blade",
+      "url": "https://www.wowhead.com/forever/item=20698",
+      "ilvl": 63,
+      "quality": 4,
+      "source": "world drop",
       "enchant": {
        "name": "Enchant Weapon - Spell Power",
        "url": "https://www.wowhead.com/forever/spell=22747"
@@ -4527,13 +4527,13 @@
     ]
    },
    "ilvl": {
-    "prebis": 60.4,
+    "prebis": 61.8,
     "bis": 67.4
    },
    "sim": {
-    "prebis-raid": "https://elliotwood.github.io/Forever/forever/mage/dps/#eJzMVV1IW2cYzvudY/Lm82fZ56bHM4UzhyMLy/iSk4h6YRJ3M3Cgg12MXUwTc7Kc4ZKQ5MLBLlTcGF7okMGwtBcVSm2pVSoF9cqG0kZJizet0Ja22Ba9KNT+IJTelHOi5qJeNtLnIvnO8z6H93ue88JLqxAcIIECTuDAGg6fCIc2CEIv/AQpGAaQJyiiA+UUteGbOZCeVFIRt/4HKuLDl9VUwO2fqRVH49KjGmrD3BmQ7tZQEXcmDcX9vWpqxdWE8ZYNFy6ANGmjIq6fBirgmkYFHDV+/v2dWvFxn5SvpSIuXzSKLwabv8Yx3ZHXlbMnwXlzAvhepHfmKowDGdOngOxFZmE7tATnZ2EDJvQuWvKzQr5wc9Xv93DOPSr3qCr3uTn3+znnqmqwKufePIENUrlF/kOWYlo4NdiXTGUVL/e2uj3c7fF1KAPxcOJXLaok00o4GtWiSuQPJRvXlHQyG87qyYSS0cLpgbjizGiaEksnM9mYntbc6bAedR9o3EXNN79lkomvZJtcQQUc/4X9+W5H3lqOjrXUfgmsVMRTK5Js/D/b7GbNskLrXJ8gMHvOLD5floybUVBNzespOCoT7i9fJps97DIcVyjf029ZiNrXRcPs/CJQn+w1AxEOAplfhGIgfiq56lBk9pVD3kYrqODxZwwBPuhhjbJMP3Z9hCIjEUux2sZbjKoj38lSx2XKzNFxvZOJMumwsL+PSrO9HI2bTPdCyb3KW2SkVifB1Vw3a5I/MwXWksDDW8w5u5LrZp+WRvTVHWLSI9eApY8rNrtxJSfBSWD2/Vkcq5eEHZKHXeIdESwmfMEZ4/tTgtB8TrAblGU4Fmw4MW1gLfB5zMTtgHeXSKIScOWJ5YNCNnhwKiu+nHvvfdpvFAqFqv6FYGifCPbDPwDToCd3/1r78Vag3WQtG4GQoSwUngZ+KB7uBVwCLtV3NZZWQ3G5fWeutzikYAiG2NsBAGfqnfI=",
+    "prebis-raid": "https://elliotwood.github.io/Forever/forever/mage/dps/#eJzMVV1IW2cYzvudY/Lm82fZ56bHM4UzhyMLy/iSk4h6YRJ3M3Cgg12MXWwm5mQ5wyVZkgsHu1BxY3hhhgyGY7tQGLWlVqkU1CsbShslLd60gi1tsRS9KNT+IJTelHOi5qJeNtLn5nzneZ/D+z3PeeGlNQgOkEABJ3BgTcdvhEMHBKEfvoEUjADIOYroQPlnasOX8yA9rKYi7vwNVMT7z2qpgLvfUiuOxaUHddSG+f9Bul1HRdzLGYq7B7XUimsJ4ysbLp4HKWejAq5rVMSNGaACjmlUwD9/ojbcngGpUE9FXLlgFJ4OtX6K47qjoCtn/gXnjUngB5H+2SswAWRcnwJyEJmD3dAynJuDTZjUe2jZ0Cr5yM1Vv9/DOfeo3KOq3Ofm3O/nnKuqwaqcewsENkn1DvkLWYpp4dTQ98lUVvFyb7vbw90eX5cyGA8nftCiSjKthKNRLapEflGycU1JJ7PhrJ5MKBktnB6MK86MpimxdDKTjelpzZ0O61H3kcZd0nz2YyaZ+ES2yVVUwInv2K+vd+TtlehYT+0XwUpF/G9Vko3n461e1iortMH1HgKz583ikxXJuBkF1dS8mIKTMuH+ymWy1ccuwWmF8iX9nIWofUM0zC4sAfXJXjMQ4SiQhSUoBeKnkqsBRWZfPeZttIoKHn/GEOC9PtYsy/Rd1zsoMhKxlKodvM2oOgrdLHVapswcHde6mSiTLgv7/aQ0OyvRuMV0L5Tdq7xNRmp1ElzL97IW+QNTYC0LPLzNnLPL+V72fnlEn28Tkx69Cix9WrHZjSs5CeaA2Q9ncbxREvZIAfaJd1SwmPAFZ43/TwlC61nBblCWkViw6Z9pA+uBD2MmbgW8+0QSlYCrQCxvFbLBo1NF8fH8G+/Teb1YLNYMLAZDh0RwAP4AmAY9uf/b+tc3A50ma9kMhAxlsfgo8FXpcCfgEnC5sae5vBpK2+0Lc7/FIQXDMMxeDQAMoZ4u",
     "bis-raid": "https://elliotwood.github.io/Forever/forever/mage/dps/#eJzMVU9ME1kY7/dmoK8Plu0+dmGYhWSWDZtus9286bQEONCWvWzCJrDJHvaktHRqxyBt2sZg4gFCMYYDGP4c8E9iSIxoohiJBjhhNVq0KhclURONxujBRPwTohdj5hXoQY6W+B3aN7/fb/K932++5CPlGOwggQIOYEBrtp4QgybwQyf8D3HoB5AnCMZ2LO8nVnxsEKTnZUTEn8aAiPjJu++IiC8PAbHi5UmQnlUQK86cAulhBRHxB65ZmjTZ8TR/0YpPDoI0aiUivjVpslfPAxHwkX1ExOlxU3h3CKRsJRHxAmfe9tT/gdOGPWsop4+D484IsPVQ5/Q1GAaUNsYArYdm4EVgHs7OwAqMGG2k4GoR/epSNa+XMcZUjamaxjwuxjigaar5y5g7i2AFlT1FE5jGqR6M9+yOxVOKm7kbXSpzqZ4WpTsa7N2jh5VYQgmGw3pYCR1QUlFdScRSwZQR61WSejDRHVUcSV1XIolYMhUxErorETTCrk2NK6/5c28y1vu7bJVLiICHd9GDX3ZkjcXoWElsF6GUiPjEoiSb/69X22m9rJAq548YqC3DyTcLknkzAhrXfByD7TJh3uJlstpBL8FOhfIP+YsGiO2maJqdnQPikd08EGEzkNk5yAfiJZKzCovUtriFW0kJEVRv0hTgxx20VpbJD87vsUhRyJJnm1iDydqzrTS+U6Z4jvYbrVSUUYuFHtouzeZiNK7j7oWCe401yJiUOhBeyrTTOvlnLigtCFTWwOfsSqad/lQY0fcPEIcHrgNN7FRsNvNKDoRHgdo2ZjFdLQkvURbWkHtAsPDy+KfN708Qhvozgs2ELP0Rf83RKbOWfb9EeN33udeQJCo+ZxZZvqlK+TdPRa3fzn31Ps23c7lcedcFf2AD8HfBYYApMGJrQ8v/3fM1c9Sy4guYylzule/f/OGRzyng+eq22sJqyK+4v/mSi0Ic+qCPfh4ASgSdtg==",
-    "prebis-dummy": "https://elliotwood.github.io/Forever/forever/mage/dps/#eJzMlEtME10Ux+feGdrbywf0u4iMo4uRCKmNY+bBECCGFuJKFmh8LFwALZ3aMdiWtgvdCamJsgCDJgbiQkmIaESJboCVEiOFVMMGTdSoQQ0sXOAjGOLGzPQhAd0Y23gWzck5pzm/+Z9zLqYIxS2XIGRHXBhb0fcxwH4oxAxavAIwg95+KcI0WjqOLagnwL4rxlY0PQLYl8WYQcv9RsXr1SJsQQ+Cxr+saPw2YPutmEFz1wGm0ayGadRj/Fw8hS3ofRubKMUMmrxjJD93VuxBcd2e0PkbV4HjaR8QV70Hhx+BXgDj+gCAq95RsNQ4AW6NgnnQpzdRU3CXrMiSqMqiYYokyIqqGq6kiJKsiKokiKKUgGAeFi7Cb0UkTDRPuLMtFI7xsijXCJIoSNX1fEfAEzyh+fhQhPf4fJqP957hYwGNj4RinpgeCvJRzRPpCPCOqKbx/kgoGvPrEU2IeHSfkKkRUjV7T0ZDwd2clSvANOptJSNgc0tRzUXLfVjhJLzVuQXRxDYNLJhBd+8DgwMDFZc7yxBDbFPZuAUzGKpRI4/etBBbGvl5C+naQCzWCXJtLogRZ8DMXQNk5lcqybno2YqPksPYNsekdfgD0Wqi+H9nCbIQeIDirLgA07KY1XEHx5lZhkBvOlsrVhpZe6KBMBysp8gQyJfCEnaQKpOH/skjiZVmqGDdB6QX4VIruZC3UfCm7iCj+6dJNqW7bK7F2gAgXfk619QmXl5oJhW/xVKyWOF8KZQ6ybVjee5on2kgY3l7t/bjelKbuaj1O2p3FqePbMPZZYpktdKcycPpZlLGlWLbPXNiX19AM9z9GJB43k5t+0ZeJWpQOiDq37wxOaNIzS8RzL7n8XKWXoYJsALlbpoyrdo9bOiEIQIVN2mbEaLO+t3bhgYNm3Xt9Jv2zCWvQJbhXc4EpP4pi7kzXk6tauyv96l7kkwm/2sfdzemA+52cB6AQaCHVs7NHllw1ZlRat7VaFQmkx9dh1LOK5eTRhPlTdRp8mMA1a1nAA==",
+    "prebis-dummy": "https://elliotwood.github.io/Forever/forever/mage/dps/#eJzMlE1MI2UYx+d9Z2jfPgjUF5Fx9DASIbVxzDszDAFiaCGe5IDGj4MHpKVTOwbb0vagNyE1UQ5g0MRAPAgJEY0o0QtwUmKkkGq4sJuwm90Nmw1ssgf2I2zIXjYz/VgCu5fNttnnNPk/T/P8+n+e5wWOctL1BkK8RBoFN7m3hMRrtSCQve8RCOTK7Trgyf6H4CLjMfFqPbjJ+gISL9SDQA6m7IpLR3XgIn/F7V+5yfKvSJxyA082TRDI1hwCnoybwJNvPgU32Z1DYq4RBLL6m524NdLyGsla3pwl//QD8v0/idhR+O35f9AEwllrGuGj8CLa711BvyyibTRp9XFr+BVmMMYMjemMMV1VNN2wBabqTNV0ZqgKY2oOo21cu4fv1tEkNUPJkY8SyYysMa1DUZmitnfLw7FQ/GMzIidScigSMSNy+HM5EzPlVCITyliJuJw2Q6nhmOxLm6YcTSXSmaiVMpVUyIoopRqlUPP6J+lE/FXJLdUATyYG6QI625IZlWj5BuiSCs/7nyM89awjFwjk9z+RzQHIgGZ/ExGoZ62su0AAbKTtPLk8QD1F5PMDdPQUMetStM5KEBPJhtn6EdGNh7mkVaLnILxP3wXPllD04TFM60jDs/4G4qL4LU5yQw3wGiv7+JIkOVmB4nAx28la7aw310MFCXdzdBZVy2EVfLTN4eEf8Kis1ZFqTvyB4iJ8O0i/rtooZMd3VPL95qpY8F1z1uJ4GtHRap1rYRO/2+mnLY/E0stYyWo5VDjJ4w+q3NG70UOXqvZuvQndtLN0USd31OuvLx7ZqbMrFWlGqzOTv9f7aZPUCJ4/nInd2cWOPPYvotmqndqLp3n1tE3pw2Tq7MZUjKIwv1y8/J5nm0X+AOfQIdbGeM6J9uC87RNgglp+5j22xH0RDb4wO2PHZuDlqBPnAtohFgU54M9h7qmKTLD0VdFoW3rifbr+y+fzzwwtB3uLQnAIfYXQDLISh19uvrcT6HJUbjvQa1fm8zcC7xQ+Lgb8PFlp7uM+o/cHABuuZzw=",
     "bis-dummy": "https://elliotwood.github.io/Forever/forever/mage/dps/#eJzMVE1IHGcYnveb0f32s+r2s9bptNCpoGyXTvlmxhWV4q7SUz3Y0p+jddedrVPs7rq7lPZWcYXWgxatB20PIkhtwSQkENRTYkJczSbxYgJJICEhJIEczA8mXkKY2Z+IJpeQXfKehud5l/fZ532fj3CUk+5WY+zC0s/Egf8eBvFWBRHw0wkgAr7+sJII+PgIEAdenwLxZhVx4NV5EK9UEQE/sXtOTFnsZMr+oQPPDoM47iACPjtlsacOAeHxnz8RAacmrcYLIyCma4iAl23mwUD9JzhlutKm/O8/4D4/Bmwn+OXcaRgFlDInAO0EF+B2xxL8vwCbMGZ2civoQ8aaFFX3ehljTNWZquvMqyqM2YiupxFsooob6HEljVEjEBv4PhpLyhrTmhWVKWpTm9zXH4j8YITkaFwOhEJGSA7+Kif7DTkeTQaSZjQiJ4xAvK9fdicMQw7Ho4lk2IwbSjxghpR8j5Lt+fTHRDTyseSQygiPR3voPBwcybzFGPkZ0SWVvOt5B/PUuQrlRMCHj4Glg4CX1HlqsUCdKwW8nAgEeRMWj691U2dO8qVuOrhPMWtVtJZiKMaSJWZjFujai1zSijGzh3xLvybODSHnwyuY1pwgb3uqcTlFX3CSg5QRXmMFHz+QJJsVKArm2BbWYLGudDsVJNTG0RkolcMqcdNGWw//XI/KGmyobM8fyB3CZA/9o2SrkG3fIe/7/WUx67tmn8XuBNDBUsU1e4l/bXXR+pfK0guyYqVyKBvJ3e9KPNG11k4XS/ZufU7aaEs+UXtv1OWpyoVsX+zyTZq3wd7JydUuWivVEOdRe2OPLiMbHjoDNFWyqL2/X6+esFS6ER4/eDFFU5HdXzpSeM9TdSJ/B6VhG2lDPGdXk3/O8okgDPX/8U4L4n4L+9+bmbZq3fdR2K6LPm0biYLs86QR90ZV0p//Kmo1Lr72Oa3nMpnMW71H/B05wN8LvwNMgxndHln/ZsvXaqPcpq/D6sxk7vm+yn5c9Xl4vFTXyf1Cnw0AQPJlyg=="
    }
   },
@@ -7992,12 +7992,12 @@
      },
      {
       "slot": "Chest",
-      "id": 252484,
-      "name": "Timbermaw Tunic",
-      "url": "https://www.wowhead.com/forever/item=252484",
-      "ilvl": 61,
+      "id": 22009,
+      "name": "Darkmantle Tunic",
+      "url": "https://www.wowhead.com/forever/item=22009",
+      "ilvl": 60,
       "quality": 4,
-      "source": "Leatherworking",
+      "source": "",
       "enchant": {
        "name": "Enchant Chest - Greater Stats",
        "url": "https://www.wowhead.com/forever/spell=19988"
@@ -8005,12 +8005,12 @@
      },
      {
       "slot": "Wrist",
-      "id": 21186,
-      "name": "Rockfury Bracers",
-      "url": "https://www.wowhead.com/forever/item=21186",
-      "ilvl": 62,
-      "quality": 4,
-      "source": "",
+      "id": 16714,
+      "name": "Wildheart Bracers",
+      "url": "https://www.wowhead.com/forever/item=16714",
+      "ilvl": 57,
+      "quality": 3,
+      "source": "Scholomance",
       "enchant": {
        "name": "Enchant Bracer - Superior Strength",
        "url": "https://www.wowhead.com/forever/spell=19984"
@@ -8040,9 +8040,9 @@
      },
      {
       "slot": "Legs",
-      "id": 252606,
-      "name": "Pristine Scorpid Leggings",
-      "url": "https://www.wowhead.com/forever/item=252606",
+      "id": 252486,
+      "name": "Ironfeather Leggings",
+      "url": "https://www.wowhead.com/forever/item=252486",
       "ilvl": 61,
       "quality": 4,
       "source": "Leatherworking",
@@ -8075,21 +8075,12 @@
      },
      {
       "slot": "Finger",
-      "id": 234021,
-      "name": "Signet Ring of the Bronze Dragonflight",
-      "url": "https://www.wowhead.com/forever/item=234021",
+      "id": 19325,
+      "name": "Don Julio's Band",
+      "url": "https://www.wowhead.com/forever/item=19325",
       "ilvl": 65,
       "quality": 4,
       "source": ""
-     },
-     {
-      "slot": "Trinket",
-      "id": 12930,
-      "name": "Briarwood Reed",
-      "url": "https://www.wowhead.com/forever/item=12930",
-      "ilvl": 60,
-      "quality": 3,
-      "source": "Jed Runewatcher, Blackrock Spire"
      },
      {
       "slot": "Trinket",
@@ -8097,6 +8088,15 @@
       "name": "Blackhand's Breadth",
       "url": "https://www.wowhead.com/forever/item=13965",
       "ilvl": 63,
+      "quality": 3,
+      "source": ""
+     },
+     {
+      "slot": "Trinket",
+      "id": 272437,
+      "name": "Adaptive Combat Assistant",
+      "url": "https://www.wowhead.com/forever/item=272437",
+      "ilvl": 65,
       "quality": 3,
       "source": ""
      },
@@ -8130,21 +8130,21 @@
      },
      {
       "slot": "Neck",
-      "id": 18814,
-      "name": "Choker of the Fire Lord",
-      "url": "https://www.wowhead.com/forever/item=18814",
-      "ilvl": 78,
-      "quality": 4,
-      "source": "Ragnaros, Molten Core"
-     },
-     {
-      "slot": "Shoulders",
-      "id": 227808,
-      "name": "Rugged Mantle of the Timbermaw",
-      "url": "https://www.wowhead.com/forever/item=227808",
+      "id": 18404,
+      "name": "Onyxia Tooth Pendant",
+      "url": "https://www.wowhead.com/forever/item=18404",
       "ilvl": 65,
       "quality": 4,
       "source": ""
+     },
+     {
+      "slot": "Shoulders",
+      "id": 12927,
+      "name": "Truestrike Shoulders",
+      "url": "https://www.wowhead.com/forever/item=12927",
+      "ilvl": 61,
+      "quality": 3,
+      "source": "Pyroguard Emberseer, Blackrock Spire"
      },
      {
       "slot": "Back",
@@ -8161,12 +8161,12 @@
      },
      {
       "slot": "Chest",
-      "id": 252484,
-      "name": "Timbermaw Tunic",
-      "url": "https://www.wowhead.com/forever/item=252484",
-      "ilvl": 61,
+      "id": 22009,
+      "name": "Darkmantle Tunic",
+      "url": "https://www.wowhead.com/forever/item=22009",
+      "ilvl": 60,
       "quality": 4,
-      "source": "Leatherworking",
+      "source": "",
       "enchant": {
        "name": "Enchant Chest - Greater Stats",
        "url": "https://www.wowhead.com/forever/spell=19988"
@@ -8174,12 +8174,12 @@
      },
      {
       "slot": "Wrist",
-      "id": 21186,
-      "name": "Rockfury Bracers",
-      "url": "https://www.wowhead.com/forever/item=21186",
-      "ilvl": 62,
+      "id": 16840,
+      "name": "Earthfury Bracers",
+      "url": "https://www.wowhead.com/forever/item=16840",
+      "ilvl": 66,
       "quality": 4,
-      "source": "",
+      "source": "Molten Core",
       "enchant": {
        "name": "Enchant Bracer - Superior Strength",
        "url": "https://www.wowhead.com/forever/spell=19984"
@@ -8253,19 +8253,19 @@
      },
      {
       "slot": "Trinket",
-      "id": 11815,
-      "name": "Hand of Justice",
-      "url": "https://www.wowhead.com/forever/item=11815",
-      "ilvl": 58,
-      "quality": 3,
-      "source": "Emperor Dagran Thaurissan, Blackrock Depths"
-     },
-     {
-      "slot": "Trinket",
       "id": 13965,
       "name": "Blackhand's Breadth",
       "url": "https://www.wowhead.com/forever/item=13965",
       "ilvl": 63,
+      "quality": 3,
+      "source": ""
+     },
+     {
+      "slot": "Trinket",
+      "id": 272437,
+      "name": "Adaptive Combat Assistant",
+      "url": "https://www.wowhead.com/forever/item=272437",
+      "ilvl": 65,
       "quality": 3,
       "source": ""
      },
@@ -8285,12 +8285,12 @@
     ]
    },
    "ilvl": {
-    "prebis": 63.0,
-    "bis": 65.7
+    "prebis": 62.9,
+    "bis": 65.2
    },
    "sim": {
-    "prebis-raid": "https://elliotwood.github.io/Forever/forever/shaman/enhancement/#eJzMVE1oE1sUnnMnydyc15902sebDn04TUFqYMKdSSNNN0m7ElcNuOjOjs3URG0SMkHqRqrWKsVaXNmqoGCLCq0oKFRBF0VCKlEi+AOiLmqFLkSKiwpulEnSVru2xW917sd37/nuOYeDVRQ8IIECrcBAbFw/EQbtEIFu6IE0DAHIzwXq8ghyBgX66H6ttPgPOujILCBPf8RQoJeLHumFCwX65F6t9LEGBTo/DdJ7O3jzpVq6KqCDflitRoE+Lt920YmMNG7TU1M16KDTUzXI05Mm8nRswH5nGqRTDcgh5w3Q4YQnn5DOJZQbV6D16+HupbvQM3p8FMhwYgKuG9dgxrgJbzvn4JOWByjC+UQXbnzsIVGCjAUCAY3pKgu2sQBjusZYUGO6TQSYlidQJPwieerEf5HKLnTQCznwulFAp9rmD1pYX6HHc+AV0Im8GrCwAQXZiTzNRStSzR+0xB3y/1jvq6MO0TnKEwr2PSTMWnt2s4D8JhjPgeiQSQcnolxO+fIMiBdB7DfSR/an0llFZ/pulYVUvb1D6YsbyYNmTEllFCMWM2PKgWNKNm4qmVTWyCZSScUyjUxfXGm1TFMxk3Ej2WcOmMmsGktb6ppILYv8h6xUcpesYovYjFVeRKrb6WeWAOt8tdQlkr2cXPq7VvE6swTi2GZnGlNZaEuctaDsk6hLdM+DbezBN0kulb3Nr2vtpUYsHxVHtq9STb92kV/vom0kFxXdcnk4bkfFzLZZKk/M5Kok8cskDytEP8FzJTREvgPKFAkFDy+B9xbvtmluqD/SeGnSxkK4ub+E12F9hUgOJezLE+6vQjayFm0pds7+8TyhZ4VCoar3TqSzQkR64SzAJCRSK6cX9r0Kh0osVwx32spC4XM4Wg7ehX08nfuvq2ljo5WX857Seo5DGgZhUPw5AIABLl0=",
-    "bis-raid": "https://elliotwood.github.io/Forever/forever/shaman/enhancement/#eJzMVF1oE1kUnnMnydyc7U867bLToctOU1i6gQl3Js3S9CVpn5Z9amAf+rCwnW2mm6w2CZkg9UUqtirFWvTFVgUFK1WoolChCr4UCalEjOAPiIrUCn0QKQoVfBCZSdpqn23xezr347v3fPecw8EaCj6QQIF2YCA2b54Ig06IQS/0QRZGAOT7AvX4BNlCgd6+US8t/4Au+ukkoIu+fF+LAj1T9kkPPCjQO/P10qs6FOjiRZCe28GTt7XSOQFd9MW6rSzMO9c9dConTdr07Jj9zMxMHfJ09m/k6cQQCrQ8BtKhJuSQ84foaMpXTEnHUsrsWWh/t6d35Tr0jR8YBzKamoILxnmYMy7B0+4FeK0VAcpwPNWDWz+7RZQwY6FQSGO6ysJhFmJM1xgLa0y3CZ1pRQJlwi+Tu278EansQRc9UQC/FwV0qx3BsIWNVXqyAH4B3cirIQubUJDdyNNCvCrVgmFL/EX+GRsDDdQlusd5QsG+h4RZG89uF5CvBJMFEF0y6eJElCspHx4B8RSIg0Z27z+ZbF7Rmf67yiKq3tmlDCSN9H9mQsnkFCORMBPKv/uVfNJUcpm8kU9l0oplGrmBpNJumaZippNGesAcMtN5NZG11A2RWhEF/7cy6d9kFdvEVqzxI1LdTj+3AtgQqKcekfzJyc7ftarXuRUQJ7Y705jKIjvirA3lgEQ9oncRbGM3P0iyU/aOoK51Oo1Y3Sce3r1KtXzZRX6zi7aRQlz0ypXhuBoXc7tmqTIx0+uSxK+SIqwR/SDPOWiKfQSUKRIKPl4C/2Xea9PcyGCs+fS0jaVo66CDx1F9jUguJRooEu67Qj62Ee0ofr3yzfNE7pVKpZr+a7HuKhHrh6MA05DKrI0t/fUoGnFYrhzttpWl0ptovBI8iwZ4uvBTT8vWRqts5z+c/ZyELAzDsPh5AMYHLx8=",
+    "prebis-raid": "https://elliotwood.github.io/Forever/forever/shaman/enhancement/#eJzMVE9oE2kUn/fNJPPlbf+k0y47HbrsNIWlG5jwzaRZml6S9rTsqYE99Ladbaab7G6TkAlL97J0d7vdpViLF21VULCiYisKFqrgRSSkNUIE/4Coh1qhB5HioaIgykzSVnu2xd/pfT9+3/d+33uPh3UU/CCDCp3AQGrdPhEG3RCHfhiAHIwBKDdF6vWLio0ivbbYKK9+hgKdWADk6dskivRYxS/f9qJIX50H+UkDinTlb5AfOcH95/XyCREF+nizHkVavOze9tKZvDzt0HNzDSjQN4edt6ZGUKCLFT+K9MZpkP9pQQ65QJiOp/2ltHwgrZ45Dp0vfu1fuwQDk39OAhlPz8Ap8yTMm2fhQe8SPNVLABU4mO7DnZ9dJW0RxiLhsM4MjUW6WJixsM5YRGeGEdFLBCqEXyUrHvwcqeJFgR4qQsCHInq0rlDExuYaPV2EgIge5LWwjS0oKh7kaTFRk+qhiC19pXyJzcEmKkieSZ5QcO4hYfbWs7sF5APBdBEkQSE9nIRKNeWd/0A6AtKwmfvtx2yuoBrM+FZjUc3o7lGHUmbmZyupZvOqmUxaSfWnP9RCylLz2YJZSGczqm2Z+aGU2mlblmplUmZmyBqxMgUtmbO1LZFWFYV+sbOZbxQNO6R2rAsgUsNJP78G2BRspF6JfM8p7t/1mtf5NZCmdjvTmcaie+KsA5WgTL2S7zo4xq68lBW37F0hQ+92G7H+uzSxf5Vqe7+L/HYXHSPFhORTqsNxISHl981SdWJmN2WZXycl2CDGXzznoiX+GlChSCj4eRkC53ifQ3Njw/HWo7MOlmPtwy7uxYwNIgtqLFgi3CeFQnwr2lN8vfDR80RvlcvlusGL8d4aER+E/wFmIZ3d+Hf5h7uxqMtylVivoyyXn8US1eBhLMjTpS/62na2WXUzf+fu5hTkYBRGpXcDAAcnLpA=",
+    "bis-raid": "https://elliotwood.github.io/Forever/forever/shaman/enhancement/#eJzMVE1o22YY1vtJtj6/y4+jZEwRGVMcGJlB5pMcjTgXOzmNnWLYIbdFi5XZ22Iby4zsMjKSbCMsMzst2QYrNJCWpqWFBtJCLz0Yp3XBhf5AaXtIXcihlNBDSntpkewkbc5N6HN69fB8ep/3hxdbKARBBhX6gYHUvf9FGAxCAkZhDPIwA6BcF6k/KCoOivTKeru89QEKtF4C5OmrFIr031pQvulHkb44A/KjNhRpZRbkB25w92mr/L+IAn2424oiLV/0XvvpUkEuufTqPKBAV1bakKeLUyjQ9VoQRVqbB3m2CznkQlE6lwlWMvIfGXX1P+h/9v1o/QKMLfy8AGQuswQnrROwZp2Ce8Mb8FivANTgz8wIHlR2mfSYjJnRqM4MjZkmizJm6IyZOjMMU68QqBF+i1zz4YdIFT8K9K8yhAIook8biJgOdjbpUhlCIvqQ16IOdqGo+JCn5WRTqkdMR/pE+Rg7wx1UkHwLPKHgvkPCnL3fHhaQtwSlMkiCQoY4CZVGylu/gfQ3SJNW/oevc/miajDjc43FNGNwSJ1IW9lv7ZSaK6hWKmWn1G9+UotpWy3kilYxk8uqjm0VJtJqv2Pbqp1NW9kJe8rOFrVU3tH2RFpDFPnOyWU/UzTsk3qxJYRIDTf9Wh2wI9xO/RL5klO82vWm17U6SIuHnelMY7EjcdaHSlimfilwFVxjl57Litf2gYihD3qD2P5R+vX4OtXz5hT5/Sm6RspJKaA0luNcUiocm6XGxizvyjK/TSqwQ4xfeM5DV+IloEKRUAjyMoRO8wGX5mYmE93/LLvYjPdOergTN3aILKjxcIVw7xWKib3oSPHp2XeeJ3ajWq22jJ9PDDeJxDj8DrAMmdzO/OZXt+Mxj+Vq8WFXWa0+iScbwf14mKcbH430HFyzxmX+wrvNacjDNExLrwcA4AMuVA==",
     "prebis-dummy": "https://elliotwood.github.io/Forever/forever/shaman/elemental/#eJzMkE9IHGcYxuf9Znbn21dd16+lnQ5Sxz2UdejKN9+6UqVlV6EU2ktXeuqlju7Y3WJ37O5Q2kvpHwulB4u9tIqH2rK0BU1EQhAvgRBklU3YS/5hCMFE4iEBScJecgkz2RAPOSaS5zIvzzzv+/z4UGIkAfqVMKUxVXdRpQ9XQdtvQ4X+dBJQoTfud6BCry4DqvTBImg3o6jSs1XQdqOo0M2qn7ne7ECVbp3q9BdVurYC2m8qKnRn2f97uQoo0x8dVOjpRgxVeuYEaLVXUEIpnqKzxVitaPy7BIkLc8CbEx//fQ5+BTJb/B1Ic+JP+Mf+C1bs/+D2yAbsWw2YK45Km6QnneY8xa2UEBZP8YGkSKctbnFuWQOcc1EjcoPAHjlQkKGqh1CmB1/HVQyhnBQVVgWWt2emP3NnPENwMZjkQ0nxzrAxWbBLnzt5wy0bdj7v5I2Jbw2v4Bhl17O9olsyKo5dniwYiYrjGM6086VT8uzpZH6mkiy7nu0V3VKy4tjlyUL/FxW31Ke/hwNMYMyMUmDyHkg+CYKFbfEIqiKEMt3KYZfZScOMfCjpAaDgFT9Gt3Lsbd3EXtaDMTNKw0cOiCMHdseC9O4YU3QyLDFNfw3b44hUhFGhK7dAb30Z6jSYl3Y+Yh/o7+O7+jDSdfC3m989o6Pb1H2uTyWdrZNOKj9FtDgPSu+Osfnjeso+fNPsbvG8uk66WjwRVDEkBvtF2kdLqPSPHPvqmJAiQSWh84omH5AaHBLxgywF6s/eA4URlOL/yxHfkL6fyr6xuOBrO9M7FehSRhwSTTEyZo1IL5W87JPpheqt1efeM3S+Xq+3j69lR1pGdhx+AViAonv48/YnFzNDgSs1MiN+sl6/k8k9Hq5lTJluvD4qfcMeDQBp8v/t",
     "bis-dummy": "https://elliotwood.github.io/Forever/forever/shaman/elemental/#eJzMkE9IFG8Yx+d5Z9x591H88/5+/H7TIDnuIdallXfedSWl2FWIoC6tdOqSozu2G7Zju0PUJSoUIshQkVI8RCEVKIhEiKeIkLW28FIEdrIkDwXSwUsQMdNWHjqW9D0878Pz7/vhRYmRMOivA5TWqrqDKv08C9p6JSr0yyigQq+NefHhEKBKl8dBe1uNKn08DdpqNSp0cdrrPhr3uksParxFlc7NgHZdRYU+G4cfcXAMUKaXbVTp5BhoxX9QQikUo4PZ2mLWuDsF4RfDwLd6jt5+AleBDGZHgWz13IQ71i2Yse7B+44FWDdXYDjbKS2Shnic8xg3Y0KYPMZboiIeN7nJuWm2cM5FkcgrBNbIhoIMVb0CZbpxNqRiBcpRUWDTwNLWQP8JZ8A1BBetUd4WFfvajd6MlTtppw0nb1jptJ02es4bbsY28o5ruVknZxRsK9+bMcIF2zbsfvu0nXOt/mh6oBDNO67lZp1ctGBb+d5M86mCk2vSD2ALE1gbqabA5DWQPBIEEytDQVSFh7WUwrpIDQ0wcljSfUDBC94YXUqxvXoEG1mDfyCw7YDYdmC1y59e7WKKTtolpun/YVUIkYoAKnTmHejll6FO/Xzq6RF2SD+I+/V2pPPgbW9d+IVHfUT3uI5LOpsnNVT+iWhy7pt+7GIjO/WVTbg7Ul/m+Xee1JV5gqhihWhtFnEPLazSGyl2ZoeQgr4loSOKJm+QImwScUmWfDUnP4HCCEqh+3LQK0gX+5K7Jic8LSca+3y9SohNoilGIlIk0l8lN/k9+6PaM/vbfdqel0qlqu65ZEe5kOyGKwATkHU2h5aPvUy0+VVpJdHhTZZKHxKpb8mbRESmC/93SufY1wEAobj9rQ=="
    }
@@ -10556,7 +10556,7 @@
    },
    "sim": {
     "prebis-raid": "https://elliotwood.github.io/Forever/forever/warrior/dps/#eJzMVl1oHFUU3jM/uycnyXZyk5LJjdUxSN2MTLwzu5NmW3Q3BaH6YkXB4ovZZjdmRbNhJ2IKKm1AKPWvIpY2ook/gRj/0lpUivTBn5LKBhLEglJRYlGhfYj4Jooys7sJrkEkpMHzdPfc8+39vrvfOXupAUEDHQyIgQDWtvJJEtADadgL+2AYDgLwKQ0VDfjjFMbv9+tL9STj+6Ok4JcljSL4yoKmL4Ypgp+d3qL/EKUwHs7p30b9REnTJyKk4I+/NlIEf3kXfHAEL78F+ndRUvCPY0AKTr0RJRmfeZgUnH0RfNyCpl/xv2BhMVgo+MJz0GHhWF47l9efzscuTcDeSydh35EnjoA0lj8Or2cm4e3MNHzTOwsTUzAHsJtW1Z2RrovbceEKOy6EYwlXuHERd23hCNvPWs6cpCxJE1HWwIkjhWMKXjgDLM1vpTizqd1sQ5lFP4F6UmMqzt/HJE3lKskENrEOjaKnKltn7w22ItW6Oh7x67RjdzPiyMOkaIvPA3sJWH9m+KH7C8MjhiOcbssWlnB2Gv2DmaEHclmjUDQy2Wwua+w/YIwM5oxiYSQzki8MGV4uU+wfNGJeLmcMPFI8YGUftYqZfNaqVljliq4HvcJQJ0/QTbyTmswtqDDpjhCPkEpywvWoxWQYDlJESGHHtrtcz2eK033sWgTOa1F2Zf/DRnZ8LfbJjWdvUye/sZZHXHjETK3CHilMip0QHldI0pvYDu6uJdkR/5BsJwLJYVLw4iSwbby9FtQtPP8Hw8tngbk8/l/JxMsw7eOp9cDwtZ/Wddqh0+uGPbY5XtxayyvhejtDbHhzvFTnn2kAHm1kzbyJ1C8kCcG/jJiKH7wK1e7Ek9Or62d/v5M9tUmdegO1ma2osvoZWJk/PiGShLdKvZenyGY3k2ZGUWXyEoSqU6idtwXZMJOKoTIwIaoyidCAmIpfTwJ7by1BPRsvaA/dwnbRNrO9VlS5+7psx/WImzqqjGagqrBiT78z/Rkq43ySjdUyFknLuQqM24MukYMLDGg4Tpfr3y/+2cJuR+C30S6WDP4MaiStkP5XQb6lPj0K7GXYHMt3U4xtD0wBf7NKZRZUVXbv6HIrDkE89zmwVr6VGjqI8BT44sebgzsYb9bln6U5WJacQ3IoiJb0jFRPdRTRZAE9v0HHm3Kdnw8dHEi3jZ/w43zq+oEgLqScZUlXjJQ5J4X+VzGSrq6uamx/Z8PPSc6XSqWGvtl0byWR7oPDACcgX1h+8vw9X6WSQTa0kOr1K0ulK6m7youLKVPGj1p3X7P6Riq/+fYEr75BGIZRGGV/DQAxbAz6",
-    "bis-raid": "https://elliotwood.github.io/Forever/forever/warrior/dps/#eJzMVm9oW1UUz3l/8k5Pu+z1tqOvt06fRWYaSb3vJa9rNjTpQJh+caLgEMFmTWoj2pS8iBvI2AoFmf8qY2OraKtSrdXpNobKkOGfOTtJoUMcKBOlFhS2D/WrKMp7SVqMRaR0xfPp5Nzzy/39bn7n5lIDgg4GmBAGAax16ZMkoBtSsAt2wxAcAOBv6qjowPdTEH/cY8zXk4ILLwIp+HVJJw1fndONS0HS8PyZjcZPIdLwk0kwvveSL4+AMa6Rgp8eAdLw1/fAg2t49R0wfgiRgiOHve/54yiQjG89TDI+/wRpOHoYjGse/vyc7iUKnhiB9igO5/QLOeO5XHhhHHYtnILdh/YfAmk4dwzeSE/Au+kp+K7nJIxPwgzADlqWd1a6ybZiwrGsmBB21HaEExPCsYQtLNsRVtSakZR5aTzEGjhxpGBYwctngaX4nRRjFrVFWlFmoc+gntSwirMPMUlXuUoygUWsXafQ6crSuQf9Ja3aV8c1r08/ej8jjjxIin7pJWAvA+tLDz3+SH6oaNrC7opaIirsbWbfQHrw0WzGzBfMdCaTzZh79pnFgaxZyBfTxVx+0HSz6ULfgBl2s1mz/8nCvmjmqWghnctEqx3RckfnY25+sIPH6TbeQY2Rjagw6Z4A10glOe641BxhGPRLREhB27I6HddjilO97EYEzmtRVmX9ww3s2ErsE2vP3qIOfmstj5hwiUX0CnukIClWXLhcIcloZFu5s5JkW/xDshX3JQdJwSsTwDbztlpQl3C9HwyvngPm8Nh/JRMrw/SPJ1cDw9d/XtVuB8+sGvb0+nhxUy2vuONuC7Ch9fFSnbenCTi6gTXxRlK/kiQE7zDCKn7wGlSnE09NLecv/H4ve3adJvUWao20oMrqp2Hp/vEIkSTcZeo9PEkWu530SAhVJs9DoHoLtfFWvxpkUiFQBsZFVSYRmhBW8dsJYO+vJKh77QXtpDvYdtocaasVVZ6+Tst2XOIRA1VG01BVWLGnN5neHSrjbIIN1zIWiah9HRi3+VMi+wfo07DtTsc7X/yzmd2NwO+i7Szh/xnUSFoi/a+CPEt9PgrsFVgfy3dRmG3xTQF/s0rlLqiq7Nra6VQcgnjhC2AtfBM1tBPhafDEjzX5ZzDWZMi/SDOwKNkH5YAfzalpqZ7qSNNlAd2/Qfvbcp1XDxzoT7WOHffiYvLmfj8uJ+1FyVDMZGRGCvyvopiqZtc1tpxY830Ss6VSqaH3ZKqnUkj1wjMAxyGXXxy5+MA3yYRfDcwle7zOUula8r5yciUZkfGjlh03LL+Ryo++nf6zbwCGYC/sZX8NAEOKC+8=",
+    "bis-raid": "https://elliotwood.github.io/Forever/forever/warrior/dps/#eJzMVm9oW1UUz3l/8k5Pu+z1tqOvt06fRWYaSb3vJa9rNjTpQJh+caLgEMFmTWoj2pS8iBvI2AoFmf8qY2OraKtSrdXpNobKkOGfOTtJoUMcKBOlFhS2D/WrKMp7SVqMRaR0xfPp5Nzzy/39bn7n5lIDgg4GmBAGAax16ZMkoBtSsAt2wxAcAOBv6qjowPdTEH/cY8zXk4ILLwIp+HVJJw1fndONS0HS8PyZjcZPIdLwk0kwvveSL4+AMa6Rgp8eAdLw1/fAg2t49R0wfgiRgiOHve/54yiQjG89TDI+/wRpOHoYjGse/vyc7iUKnhiB9igO5/QLOeO5XHhhHHYtnILdh/YfAmk4dwzeSE/Au+kp+K7nJIxPwgzADlqWd1a6KWbFhCOsmBB2VDjCiYmYYwlbWF41as9Iyrw0HmINnDhSMKzg5bPAUvxOijGL2iKtKLPQZ1BPaljF2YeYpKtcJZnAItauU+h0Zencg/6SVu2r45rXpx+9nxFHHiRFv/QSsJeB9aWHHn8kP1Q0bWF3RS0RFfY2s28gPfhoNmPmC2Y6k8lmzD37zOJA1izki+liLj9outl0oW/ADLvZrNn/ZGFfNPNUtJDOZaLVjmi5o/MxNz/YweN0G++gxshGVJh0T4BrpJIcd1xqjjAM+iUipKBtWZ2O6zHFqV52IwLntSirsv7hBnZsJfaJtWdvUQe/tZZHTLjEInqFPVKQFCsuXK6QZDSyrdxZSbIt/iHZivuSg6TglQlgm3lbLahLuN4PhlfPAXN47L+SiZVh+seTq4Hh6z+vareDZ1YNe3p9vLipllfccbcF2ND6eKnO29MEHN3AmngjqV9JEoJ3GGEVP3gNqtOJp6aW8xd+v5c9u06Tegu1RlpQZfXTsHT/eIRIEu4y9R6eJIvdTnokhCqT5yFQvYXaeKtfDTKpECgD46IqkwhNCKv47QSw91cS1L32gnbSHWw7bY601YoqT1+nZTsu8YiBKqNpqCqs2NObTO8OlXE2wYZrGYtE1L4OjNv8KZH9A/Rp2Han450v/tnM7kbgd9F2lvD/DGokLZH+V0GepT4fBfYKrI/luyjMtvimgL9ZpXIXVFV2be10Kg5BvPAFsBa+iRraifA0eOLHmvwzGGsy5F+kGViU7INywI/m1LRUT3Wk6bKA7t+g/W25zqsHDvSnWseOe3ExeXO/H5eT9qJkKGYyMiMF/ldRTFWz6xpbTqz5PonZUqnU0Hsy1VMppHrhGYDjkMsvjlx84Jtkwq8G5pI9XmepdC15Xzm5kozI+FHLjhuW30jlR99O/9k3AEOwF/ayvwYAQ4UL7w==",
     "prebis-dummy": "https://elliotwood.github.io/Forever/forever/warrior/dps/#eJzMVF1oHNUX3zs7M3tz0mynN/nTyc2/eg1YN1s3vTObbT76sEmkD/qiUh/EFzPJTLqj6c4yM2L7oNiiUIrVihhsBBM/IjF+kNaiEsQHtSGRLSRIC0pFiUWF9iHimyjInd1Nagw+hBo8T4fDOb97zu/8zoUYidG3NCxriD4BKv5+UF+uhzj+4AjI+KuyBgn86qKmL6mQwF+c367/kAQVn3D0b5MiUNb08QTI+MdfGyCBf3kfieIEvvYO0r9Lgoz/GEUg48k3kxDHpw6DjGdeQqJuUdOvC4DFpciR8YvPo9YMPu5qc67+rJu6Oo7uu3oWPXjyyZNIOu6+jN6wJtC71hT6pm8GjU+ieYT6Y7PSrYaRNXLcyHJuZrI5nstynjO4yQ0RzZjzkrwsTSfJK4gMWaWRh71SyExu7ssYPMPNHjZUsIqHHJt5PrNs27HZ4FEWFhzme6EVul6RBY7lDxVYKnAcNvyYfzRjP57xLdfO1DIylYz2RwKv2EY7YA9tgx3p7Vgm0j0xmgAF4h25AJrSBKtRCACDahpGey6gCsTx1ABppDtA+VKSMKIY1JSCP3wNkUuIzKGoV96dMbt7WP+I59lhwfWDkPlOEHq+Y7OUVWSO5Y+4jl/r1fa9UsmxmRuyaADHDlhYsEIWFCxRctgLQuaGjh9NGDCraDPD5Cxgw+6hQhjsZ4PW0KPMCllYcAMWlDyRztyA7THbs7cLUKvI3KLtlJyi7RTD6A2Rb3RxFtzJTM45v+GFNgrRXDK+PIvI01u0il0R5/Ia59lse2eV848aSB1NCFcbPUiAYqqCrC29gEgTJVAHCVCGrZHAqSXfghGl69dqrIFlqQFt9I71GSYPgKS16uIxqCAbHTygMkj6DtJJcxupxeR/U4vREalFBRlfmUBkF21ZX7SPB2IEfO1TRHI0u1Ez2Q2ayVbKtE8mN1OGX/9pU68dO7/pstEtEs/eaDMbCijiVV3jtZMHPTFSWteXuNmum99XndglQ/h0Q021+OwUWvWf+/1ekqK7oSXdjBVSP41Wz67KpZDRKsLsFpF5EA6Qu0BLJzEi8WUUE1cDyID/V29KJZJfJdMwefUnXE+zuBsAzFAK47kLiPTRPBhkbwSr/AW2hTZH0QqsCjJIHTXUKoSCv55A5G6M6AHYT7r/kS+gaR0rBKZRjbgbuBQ39/npyklub22A+nMR5SpeuBBBVDxyCm2NPCqbj5PkZ6gelJSCLz5EJE2pEJ4TRFZiO+n/YFsrAD6HxA831igy8FijHv9ZmkcrknksHousqXdaqhcfohbnqOs31Pp2vE7EY08N9zaPnRG2kL9tOLLLeXNF0mWWT89Lsf+Uhb0171+13e/d9He6L5bL5W0DM7191UDvADqB0BnkeivPLDxwKd8dRWOL+T6RWS5fz99fca7k03H88c7+2BHy5wDg8QS7",
     "bis-dummy": "https://elliotwood.github.io/Forever/forever/warrior/dps/#eJzMVF9sFNUX3jM7M3t7CmW48AvD5Ye5NhG3i1vuzHaBwsO2GB70RQ0+GGMiQ2fKjpadzcwY5YUIkcQQUQyBCCZSNY21igFC1DTG+Adqa5akxECiwWhqE03gob4aTcyd3W2xNj402HieTk7O+e453/nOxRRNsWGDqAawA6iTH/eYU62okulXAFXyTc3ADHlj0jCv6pghly6uMH9qwwz5bAjM76Xz1Qkwz2RQJZ+fAMyQXz8AWZ4hN98D84c2VMnh4xLnj5OAafLOE5gmR/dhhhw7DuYtWX9p0pCOSs4ehvY8OeQbY775kp+dPgMPT5+Hx44cOALKIf81eNsZhPedYfiu9xycGYJxgB2pUYVbVsEqCqsghJ23i6JYEKJoCVtYMpq3rXFFnVJG2ujrQPuc6sCTQTXmtrA35y2RF/Y23ld2Kns9lwchd1zXc/me/TwuezwMYif2gwqPPCfsK/Ns5Hm8/5lwf959Nh86vptvZuTrGZ1PRUGlg3XhRtaBK3MriEqVB1Msgxqmu4oRrs5RoichRIK6bVmdxYhpmCbDu+kqthK1rxWFACOoZzXy4ZtArwEdg6RX0Z23u7fxHQNB4MZlP4xiHnpRHISey7NOhXtOOOB7YbNXNwyqVc/lfsyTATw34nHZiXlUdmTJviCKuR97YTJhxJ2Kyy1b8Ij3+3vLcbSd73H6nuZOzOOyH/GoGsh07kd8o91ZuEeCOhXuV1yv6lVcrxInb8h8a6vg0X3cFkKI217oYJjMpZLro0BfWKJVrE84V+c4LxQ6tzQ4/2g5bWEZ6Rond1FkhOmoGldfBbqaUWzBDGr9zkDkNZPvIsDY/LVac2AFZmEHu3d+hi0ipDmjsXiCOqpWl4iYioq5km5hxYXUYou/qcXqStSio0puDAJdz9bNL9osIjkCufkp0CIrLNRMYYFmCvUy45OhxZSRt35e1GsHLy667OQSiWdTspkFBZTwqs/xukVE21K0Oq8vebNb73xfLXKXHMix5U3VkvPDMOu//PtDNMs24LrcWqLR1hGYPbsGl1JGswijS0TmLtxJ70cj10aApqcgJa8GwcL/N25Kp0rYINOyReMnnE+zvBtEwiFLyNhloL2shBbdlMBqf4Fdx9Ym0TqsjioqXU3UBoRGvh0E+gABthO30+5/5AtZziQaxRFoEncbl/LmvjxWP8kV7cux9UJCuU4mLicQdY8ehaWRR33zadr2BbSiltXIlcepYmh1wouSyHpsDfsfLmtHJBdA/nCnV8kMcnqVmf5FGYcZxT6YTiW2umdEaZUfopEWsPU3aH833SLjqef7e9aePiVtonR3f2LXS/aMYqq8lBtXUv8pi3ua3r9qG87e8Xe6r9RqtWW7z/X0NgI9u+FFgFPgBzOHJx69VupOoqnJUq/MrNVulR6pOzdKuTT5eM2O1HP0zwEADDgD4g=="
    }
@@ -10569,12 +10569,12 @@
     "prebis": [
      {
       "slot": "Head",
-      "id": 22005,
-      "name": "Darkmantle Cap",
-      "url": "https://www.wowhead.com/forever/item=22005",
-      "ilvl": 60,
-      "quality": 4,
-      "source": "",
+      "id": 13404,
+      "name": "Mask of the Unforgiven",
+      "url": "https://www.wowhead.com/forever/item=13404",
+      "ilvl": 57,
+      "quality": 3,
+      "source": "The Unforgiven, Stratholme",
       "enchant": {
        "name": "Lesser Arcanum of Voracity",
        "url": "https://www.wowhead.com/forever/item=11647"
@@ -10591,12 +10591,12 @@
      },
      {
       "slot": "Shoulders",
-      "id": 227818,
-      "name": "Glowing Mantle of the Dawn",
-      "url": "https://www.wowhead.com/forever/item=227818",
-      "ilvl": 65,
-      "quality": 4,
-      "source": ""
+      "id": 13358,
+      "name": "Wyrmtongue Shoulders",
+      "url": "https://www.wowhead.com/forever/item=13358",
+      "ilvl": 63,
+      "quality": 3,
+      "source": "Stratholme"
      },
      {
       "slot": "Back",
@@ -10613,12 +10613,12 @@
      },
      {
       "slot": "Chest",
-      "id": 252483,
-      "name": "Dawn Armor",
-      "url": "https://www.wowhead.com/forever/item=252483",
-      "ilvl": 61,
+      "id": 12757,
+      "name": "Breastplate of Bloodthirst",
+      "url": "https://www.wowhead.com/forever/item=12757",
+      "ilvl": 62,
       "quality": 4,
-      "source": "Leatherworking",
+      "source": "quest: Breastplate of Bloodthirst",
       "enchant": {
        "name": "Enchant Chest - Greater Stats",
        "url": "https://www.wowhead.com/forever/spell=19988"
@@ -10626,12 +10626,12 @@
      },
      {
       "slot": "Wrist",
-      "id": 19587,
-      "name": "Forest Stalker's Bracers",
-      "url": "https://www.wowhead.com/forever/item=19587",
-      "ilvl": 65,
-      "quality": 4,
-      "source": "",
+      "id": 18375,
+      "name": "Bracers of the Eclipse",
+      "url": "https://www.wowhead.com/forever/item=18375",
+      "ilvl": 62,
+      "quality": 3,
+      "source": "Prince Tortheldrin, Dire Maul",
       "enchant": {
        "name": "Enchant Bracer - Deflection",
        "url": "https://www.wowhead.com/forever/spell=13922"
@@ -10639,12 +10639,12 @@
      },
      {
       "slot": "Hands",
-      "id": 271948,
-      "name": "Theramore Gloves",
-      "url": "https://www.wowhead.com/forever/item=271948",
-      "ilvl": 65,
-      "quality": 4,
-      "source": "",
+      "id": 18377,
+      "name": "Quickdraw Gloves",
+      "url": "https://www.wowhead.com/forever/item=18377",
+      "ilvl": 62,
+      "quality": 3,
+      "source": "Immol'thar, Dire Maul",
       "enchant": {
        "name": "Enchant Gloves - Agility",
        "url": "https://www.wowhead.com/forever/item=273520"
@@ -10674,12 +10674,12 @@
      },
      {
       "slot": "Feet",
-      "id": 227815,
-      "name": "Fine Dawn Treaders",
-      "url": "https://www.wowhead.com/forever/item=227815",
-      "ilvl": 65,
-      "quality": 4,
-      "source": "",
+      "id": 18716,
+      "name": "Ash Covered Boots",
+      "url": "https://www.wowhead.com/forever/item=18716",
+      "ilvl": 61,
+      "quality": 3,
+      "source": "Archivist Galford, Stratholme",
       "enchant": {
        "name": "Enchant Boots - Greater Agility",
        "url": "https://www.wowhead.com/forever/item=16245"
@@ -10747,12 +10747,12 @@
     "bis": [
      {
       "slot": "Head",
-      "id": 22005,
-      "name": "Darkmantle Cap",
-      "url": "https://www.wowhead.com/forever/item=22005",
-      "ilvl": 60,
-      "quality": 4,
-      "source": "",
+      "id": 13404,
+      "name": "Mask of the Unforgiven",
+      "url": "https://www.wowhead.com/forever/item=13404",
+      "ilvl": 57,
+      "quality": 3,
+      "source": "The Unforgiven, Stratholme",
       "enchant": {
        "name": "Lesser Arcanum of Voracity",
        "url": "https://www.wowhead.com/forever/item=11647"
@@ -10760,21 +10760,21 @@
      },
      {
       "slot": "Neck",
-      "id": 17065,
-      "name": "Medallion of Steadfast Might",
-      "url": "https://www.wowhead.com/forever/item=17065",
-      "ilvl": 68,
-      "quality": 4,
-      "source": "Magmadar, Molten Core"
+      "id": 18381,
+      "name": "Evil Eye Pendant",
+      "url": "https://www.wowhead.com/forever/item=18381",
+      "ilvl": 62,
+      "quality": 3,
+      "source": "Immol'thar, Dire Maul"
      },
      {
       "slot": "Shoulders",
-      "id": 227818,
-      "name": "Glowing Mantle of the Dawn",
-      "url": "https://www.wowhead.com/forever/item=227818",
-      "ilvl": 65,
-      "quality": 4,
-      "source": ""
+      "id": 13358,
+      "name": "Wyrmtongue Shoulders",
+      "url": "https://www.wowhead.com/forever/item=13358",
+      "ilvl": 63,
+      "quality": 3,
+      "source": "Stratholme"
      },
      {
       "slot": "Back",
@@ -10791,12 +10791,12 @@
      },
      {
       "slot": "Chest",
-      "id": 252483,
-      "name": "Dawn Armor",
-      "url": "https://www.wowhead.com/forever/item=252483",
-      "ilvl": 61,
+      "id": 12757,
+      "name": "Breastplate of Bloodthirst",
+      "url": "https://www.wowhead.com/forever/item=12757",
+      "ilvl": 62,
       "quality": 4,
-      "source": "Leatherworking",
+      "source": "quest: Breastplate of Bloodthirst",
       "enchant": {
        "name": "Enchant Chest - Greater Stats",
        "url": "https://www.wowhead.com/forever/spell=19988"
@@ -10804,12 +10804,12 @@
      },
      {
       "slot": "Wrist",
-      "id": 19587,
-      "name": "Forest Stalker's Bracers",
-      "url": "https://www.wowhead.com/forever/item=19587",
-      "ilvl": 65,
-      "quality": 4,
-      "source": "",
+      "id": 18375,
+      "name": "Bracers of the Eclipse",
+      "url": "https://www.wowhead.com/forever/item=18375",
+      "ilvl": 62,
+      "quality": 3,
+      "source": "Prince Tortheldrin, Dire Maul",
       "enchant": {
        "name": "Enchant Bracer - Deflection",
        "url": "https://www.wowhead.com/forever/spell=13922"
@@ -10817,12 +10817,12 @@
      },
      {
       "slot": "Hands",
-      "id": 271948,
-      "name": "Theramore Gloves",
-      "url": "https://www.wowhead.com/forever/item=271948",
-      "ilvl": 65,
-      "quality": 4,
-      "source": "",
+      "id": 18377,
+      "name": "Quickdraw Gloves",
+      "url": "https://www.wowhead.com/forever/item=18377",
+      "ilvl": 62,
+      "quality": 3,
+      "source": "Immol'thar, Dire Maul",
       "enchant": {
        "name": "Enchant Gloves - Agility",
        "url": "https://www.wowhead.com/forever/item=273520"
@@ -10852,25 +10852,16 @@
      },
      {
       "slot": "Feet",
-      "id": 227815,
-      "name": "Fine Dawn Treaders",
-      "url": "https://www.wowhead.com/forever/item=227815",
-      "ilvl": 65,
-      "quality": 4,
-      "source": "",
+      "id": 18716,
+      "name": "Ash Covered Boots",
+      "url": "https://www.wowhead.com/forever/item=18716",
+      "ilvl": 61,
+      "quality": 3,
+      "source": "Archivist Galford, Stratholme",
       "enchant": {
        "name": "Enchant Boots - Greater Agility",
        "url": "https://www.wowhead.com/forever/item=16245"
       }
-     },
-     {
-      "slot": "Finger",
-      "id": 18879,
-      "name": "Heavy Dark Iron Ring",
-      "url": "https://www.wowhead.com/forever/item=18879",
-      "ilvl": 66,
-      "quality": 4,
-      "source": "Lucifron, Molten Core"
      },
      {
       "slot": "Finger",
@@ -10880,6 +10871,15 @@
       "ilvl": 60,
       "quality": 3,
       "source": "quest: The Princess Saved?"
+     },
+     {
+      "slot": "Finger",
+      "id": 15855,
+      "name": "Ring of Protection",
+      "url": "https://www.wowhead.com/forever/item=15855",
+      "ilvl": 60,
+      "quality": 3,
+      "source": ""
      },
      {
       "slot": "Trinket",
@@ -10924,15 +10924,14 @@
     ]
    },
    "ilvl": {
-    "prebis": 61.9,
-    "bis": 62.6
+    "prebis": 61.0,
+    "bis": 61.0
    },
    "sim": {
-    "prebis-raid": "https://elliotwood.github.io/Forever/forever/druid/feralbear/#eJzMlE9oE1sUxnPuTDL3nbZ5ecPDjleL14ISA1Ou005puklaXAiloODCnZ02kya1JmESoeKmIIWCSl0aFSpUQesfikpRV6IiKUyhG10UQbQFRSpGgktBJtNqQZcW/DbzzXd/l3POXRxspBABDThEQYDa7P9FiYAuSMIhOAoFGAdgk0GqRBrYSVTo11ugrTagTBenAGX6sdaECv00BdrbMCr02YN/tRXPnCmDdllBhbpuRHsTRok+H8YQnbG9ywp9X2vy0/FBlOjn0yjR8ydQptWzgApduQDaWhgDKNNvd6F1T+RFVjuX5V9aoqvTcBFmrKtw27oByz1zMH0dnsBEtgLQiz9neUxahCmEoZvCEKK93djvfQwhDNPUhdlRIfISoe/INUmVGekOqLtYC/6/TP5Did7vV0kkyEIoIzGKLOhHm4DZX4HZfvUA68Uu1oksplFJbXoKiDKtzffV2SBKCCZqsW1UVulIyD9iFEMod7SZRbaeqMho3T+q9KkToKatwuixfKHEDWF06iKuG13dfChj5YbtFM873Eql7BQfPMVLGZs7+ZJVyuZzvGhbzlCGR4u2zdO2Y43qg7bl6CUrd1zfgHQfahsp5nP72A6MxMI0pBIn4JVHYgqmYJADLferzm/aiG9JG/7sV+7Bj3eozfdp0gdSgSoxZiXCAq03pX8CnsbTye2Xyp4WErvTdb1KGFWiyTwRq5DAX6VScsNtqfbe+eN14ouu6zYOzCV71oPkAEwClCGbr04sHHmZiNfTwFKixyNddy1x2DevEzGJPmzuJhHo3bl5zXir5WB9uWSgAGMwpn4fAAEo1yM=",
-    "bis-raid": "https://elliotwood.github.io/Forever/forever/druid/feralbear/#eJzMlE9oE1sUxnPuTDLnnbZ5ecPjdd7V4lhQYmDKddopTTdJiwuhFBRcuLPTZtKk1iQkQequIAFFRcGNUaFCFWz9Q1Ep6kZRkRRG6EYXRRBtQZEKkeBSkElaLejSgt9mvvnu73LOuYtDzQgh0ECHMAhQWxt/YSagB+KwDw5CDiYB+Ek/KqEmfpQU/HIDtJUmknGmBCTjx1oLKfjpLGhvg6Tg03t/a8ueOV4G7ZJCCrpuSHsTJAmfjVIApx3vsoLvay1eKuOj80ASTg6ThGeOkIzVU0AKLp8DbTVIPpLx621o3xF6ntZOp/XPbeGVKbgA0/YVuGlfh6W+OZi6Bo+hlK4A9NOPYR6yNmEJYRqWMIXo7DR3ex9TCNOyDGF1VZi8yPAduyqpMme9PnUbb6N/l9g/JOHdQZWF/DxAMjGzwP2NaAMw+zMwO6ju4f3Uw7uJRzSU1JYnQCRjbX6gzvpJIrBIi/yHsopjgcYRRwqQ3NVhFfhaohLHun9QGVBLoCbt3PihbK6om8LsNkTUMHt69ZGUnRl1Eno2r9uJhJPQh4/pxZSj57NFu5jOZvSCY+dHUnq44Dh60snb48awY+eNop05bKxDRgPqGCtkM7v4FgpFghhQWd7nlSdmCa6QXwcsD6r5X7QR3ZQ2GrNfvgPf36E2P6BJH1gFqsyclRj3tc9If/k8TSbj/18se1qIbU/W9SpmVpkm67FIhfn+KBXj625TtfPWb68TfeG6bvPQXLxvLYgPwQmAMqSz1dLCgZexaD31Lcb6PNJ1V2P7G+Z1LCLh/dZeFoL+rRv3jLdb9ta3SwpyMAET6rcBAAtN1uE="
+    "prebis-raid": "https://elliotwood.github.io/Forever/forever/druid/feralbear/#eJzMlEFoE08UxvNmN9n3f+0/xEXsOlocC0oMbBm33dL0krR4EEpBwYM3u202TWpNwiaHipdeAoJKxJPVQoUqaNFSFIp6EhFNIYVe6qEURNuDh4qRngVJ0mpBjxb8Lvv2m9/w3pvDR80IITBAQBgk6C2NvzCT0A1xOAPnIQcTALzoRy3UxD0K4FrK2GgiFZdKQArOpUjDLyUwPgYpgCvDxnqQNHxXAuOuRhoulsD4ECQF34xQAGfc2lUNp25tuxNDpODXK6TgjUukYvUakIbrN8HYDJKPVPw+B23HQm/TxvW0+NYa3piG2zDj3IPHzkNY7Z2H6QfwCorpMkAf/VrkJWuVtpSWaUtLyo4O62TtY0lp2bYp7c4yU5cZfmL3FV3lrMenH+GttH+V7SMFnw3oLOTnAVKJWXnub1i7gNnfgdkB/RTvo27eRTxioKL//xqIVNxa6K+zflIIbDIiB1DVcTTQOOJIAVI72+0833Z04livX5T79SLoSSc3diGbKwhLWl2mjJpWd48YTjmZETchsp5wEgk3IYYui0LKFV624BTS2YzIu443nBLhvOuKpOs5Y+aQ63hmwclcNHcgswG1j+azmRP8EIUiQQzozPPV2hOzJdfILwAnB3TvD2NE92SMxu5TT+HnO2wt9BvKZ1aGKrNmFcZ9bY+U/3w1TSTjB+9M1rQYO5qs633MqjJDFbFImfn+KRXiO9We6viTv94nulSpVJoH5+O920Z8EK4CTEI6Wy0unluJReuubznWWyMrlc3Y2UaxFoso+Lylh4Wg7/DujKnlyul6sqQgB+Mwrv8YABqn1M4=",
+    "bis-raid": "https://elliotwood.github.io/Forever/forever/druid/feralbear/#eJzMlEFoE08UxvNmN9n3f+0/xEXsOlocC0oMbBm33dL0krR4EEpBwYM3u202TWpNwiaHipdeAoJKxJPVQoUqaNFSFIp6EhFNIYVe6qEURNuDh4qRngVJ0mpBjxb8Lvv2m9/w3pvDR80IITBAQBgk6C2NvzCT0A1xOAPnIQcTALzoRy3UxD0K4FrK2GgiFZdKQArOpUjDLyUwPgYpgCvDxnqQNHxXAuOuRhoulsD4ECQF34xQAGfc2lUNp25tuxNDpODXK6TgjUukYvUakIbrN8HYDJKPVPw+B23HQm/TxvW0+NYa3piG2zDj3IPHzkNY7Z2H6QfwCorpMkAf/VrkJWuVtpSWaUtLyo4O62TtY0lp2bYp7c4yU5cZfmL3FV3lrMenH+GttH+V7SMFnw3oLOTnAVKJWXnub1i7gNnfgdkB/RTvo27eRTxioKL//xqIVNxa6K+zflIIbDIiB1DVcTTQOOJIAVI72+0833Z04livX5T79SLoSSc3diGbKwhLWl2mjJpWd48YTjmZETchsp5wEgk3IYYui0LKFV624BTS2YzIu443nBLhvOuKpOs5Y+aQ63hmwclcNHcgswG1j+azmRP8EIUiQQzozPPV2hOzJdfILwAnB3TvD2NE92SMxu5TT+HnO2wt9BvKZ1aGKrNmFcZ9bY+U/3w1TSTjB+9M1rQYO5qs633MqjJDFbFImfn+KRXiO9We6viTv94nulSpVJoH5+O920Z8EK4CTEI6Wy0unluJReuubznWWyMrlc3Y2UaxFoso+Lylh4Wg7/DujKnlyul6sqQgB+Mwrv8YABqn1M4="
    },
-   "build": "feral-bear-tank",
-   "armor": "classic"
+   "build": "feral-bear-tank"
   },
   "paladin|Protection|tank": {
    "class": "paladin",
@@ -10999,12 +10998,12 @@
      },
      {
       "slot": "Wrist",
-      "id": 250583,
-      "name": "Warder's Wristguards",
-      "url": "https://www.wowhead.com/forever/item=250583",
-      "ilvl": 50,
-      "quality": 3,
-      "source": "Blacksmithing",
+      "id": 18351,
+      "name": "Magically Sealed Bracers",
+      "url": "https://www.wowhead.com/forever/item=18351",
+      "ilvl": 61,
+      "quality": 2,
+      "source": "Magister Kalendris, Dire Maul",
       "enchant": {
        "name": "Enchant Bracer - Deflection",
        "url": "https://www.wowhead.com/forever/spell=13922"
@@ -11012,12 +11011,12 @@
      },
      {
       "slot": "Hands",
-      "id": 250553,
-      "name": "Warder's Gloves",
-      "url": "https://www.wowhead.com/forever/item=250553",
-      "ilvl": 55,
+      "id": 18383,
+      "name": "Force Imbued Gauntlets",
+      "url": "https://www.wowhead.com/forever/item=18383",
+      "ilvl": 61,
       "quality": 3,
-      "source": "Blacksmithing",
+      "source": "Illyanna Ravenoak, Dire Maul",
       "enchant": {
        "name": "Enchant Gloves - Agility",
        "url": "https://www.wowhead.com/forever/item=273520"
@@ -11025,12 +11024,12 @@
      },
      {
       "slot": "Waist",
-      "id": 250573,
-      "name": "Warder's Waistguard",
-      "url": "https://www.wowhead.com/forever/item=250573",
-      "ilvl": 55,
+      "id": 13502,
+      "name": "Handcrafted Mastersmith Girdle",
+      "url": "https://www.wowhead.com/forever/item=13502",
+      "ilvl": 63,
       "quality": 3,
-      "source": "Blacksmithing"
+      "source": "Goraluk Anvilcrack, Blackrock Spire"
      },
      {
       "slot": "Legs",
@@ -11087,21 +11086,21 @@
      },
      {
       "slot": "Trinket",
-      "id": 19120,
-      "name": "Rune of the Guard Captain",
-      "url": "https://www.wowhead.com/forever/item=19120",
-      "ilvl": 51,
-      "quality": 2,
+      "id": 272437,
+      "name": "Adaptive Combat Assistant",
+      "url": "https://www.wowhead.com/forever/item=272437",
+      "ilvl": 65,
+      "quality": 3,
       "source": ""
      },
      {
       "slot": "Main hand",
-      "id": 18737,
-      "name": "Bone Slicing Hatchet",
-      "url": "https://www.wowhead.com/forever/item=18737",
-      "ilvl": 62,
-      "quality": 3,
-      "source": "Maleki the Pallid, Stratholme",
+      "id": 279261,
+      "name": "Greenhammer",
+      "url": "https://www.wowhead.com/forever/item=279261",
+      "ilvl": 65,
+      "quality": 4,
+      "source": "Blacksmithing",
       "enchant": {
        "name": "Enchant Weapon - Spell Power",
        "url": "https://www.wowhead.com/forever/spell=22747"
@@ -11109,12 +11108,12 @@
      },
      {
       "slot": "Off hand",
-      "id": 279262,
-      "name": "Evergreen Shield",
-      "url": "https://www.wowhead.com/forever/item=279262",
-      "ilvl": 65,
-      "quality": 4,
-      "source": "Blacksmithing",
+      "id": 12602,
+      "name": "Draconian Deflector",
+      "url": "https://www.wowhead.com/forever/item=12602",
+      "ilvl": 63,
+      "quality": 3,
+      "source": "Blackrock Spire",
       "enchant": {
        "name": "Enchant Shield - Greater Stamina",
        "url": "https://www.wowhead.com/forever/item=16217"
@@ -11133,12 +11132,12 @@
     "bis": [
      {
       "slot": "Head",
-      "id": 18313,
-      "name": "Helm of Awareness",
-      "url": "https://www.wowhead.com/forever/item=18313",
-      "ilvl": 58,
-      "quality": 3,
-      "source": "Zevrim Thornhoof, Dire Maul",
+      "id": 16955,
+      "name": "Judgement Crown",
+      "url": "https://www.wowhead.com/forever/item=16955",
+      "ilvl": 76,
+      "quality": 4,
+      "source": "Onyxia, Onyxia's Lair",
       "enchant": {
        "name": "Lesser Arcanum of Voracity",
        "url": "https://www.wowhead.com/forever/item=11647"
@@ -11203,12 +11202,12 @@
      },
      {
       "slot": "Hands",
-      "id": 250553,
-      "name": "Warder's Gloves",
-      "url": "https://www.wowhead.com/forever/item=250553",
-      "ilvl": 55,
+      "id": 18383,
+      "name": "Force Imbued Gauntlets",
+      "url": "https://www.wowhead.com/forever/item=18383",
+      "ilvl": 61,
       "quality": 3,
-      "source": "Blacksmithing",
+      "source": "Illyanna Ravenoak, Dire Maul",
       "enchant": {
        "name": "Enchant Gloves - Agility",
        "url": "https://www.wowhead.com/forever/item=273520"
@@ -11216,12 +11215,12 @@
      },
      {
       "slot": "Waist",
-      "id": 250573,
-      "name": "Warder's Waistguard",
-      "url": "https://www.wowhead.com/forever/item=250573",
-      "ilvl": 55,
+      "id": 13502,
+      "name": "Handcrafted Mastersmith Girdle",
+      "url": "https://www.wowhead.com/forever/item=13502",
+      "ilvl": 63,
       "quality": 3,
-      "source": "Blacksmithing"
+      "source": "Goraluk Anvilcrack, Blackrock Spire"
      },
      {
       "slot": "Legs",
@@ -11251,20 +11250,20 @@
      },
      {
       "slot": "Finger",
-      "id": 21202,
-      "name": "Signet Ring of the Bronze Dragonflight",
-      "url": "https://www.wowhead.com/forever/item=21202",
-      "ilvl": 65,
-      "quality": 4,
-      "source": ""
-     },
-     {
-      "slot": "Finger",
       "id": 272409,
       "name": "Ring of Awareness",
       "url": "https://www.wowhead.com/forever/item=272409",
       "ilvl": 65,
       "quality": 3,
+      "source": ""
+     },
+     {
+      "slot": "Finger",
+      "id": 21202,
+      "name": "Signet Ring of the Bronze Dragonflight",
+      "url": "https://www.wowhead.com/forever/item=21202",
+      "ilvl": 65,
+      "quality": 4,
       "source": ""
      },
      {
@@ -11287,12 +11286,12 @@
      },
      {
       "slot": "Main hand",
-      "id": 19168,
-      "name": "Blackguard",
-      "url": "https://www.wowhead.com/forever/item=19168",
+      "id": 18832,
+      "name": "Brutality Blade",
+      "url": "https://www.wowhead.com/forever/item=18832",
       "ilvl": 70,
       "quality": 4,
-      "source": "Blacksmithing",
+      "source": "Garr, Molten Core",
       "enchant": {
        "name": "Enchant Weapon - Spell Power",
        "url": "https://www.wowhead.com/forever/spell=22747"
@@ -11300,12 +11299,12 @@
      },
      {
       "slot": "Off hand",
-      "id": 17066,
-      "name": "Drillborer Disk",
-      "url": "https://www.wowhead.com/forever/item=17066",
-      "ilvl": 67,
+      "id": 17106,
+      "name": "Malistar's Defender",
+      "url": "https://www.wowhead.com/forever/item=17106",
+      "ilvl": 75,
       "quality": 4,
-      "source": "Garr, Molten Core",
+      "source": "Ragnaros, Molten Core",
       "enchant": {
        "name": "Enchant Shield - Greater Stamina",
        "url": "https://www.wowhead.com/forever/item=16217"
@@ -11323,15 +11322,14 @@
     ]
    },
    "ilvl": {
-    "prebis": 59.5,
-    "bis": 62.2
+    "prebis": 61.8,
+    "bis": 64.6
    },
    "sim": {
-    "prebis-raid": "https://elliotwood.github.io/Forever/forever/paladin/protection/#eJzMVN9LFG0U3jMzu3P2KLrffMqOwyfMt/B9bcbI/GhDvZnVqy436KKLIid3bbd0Z9mZC4MurBCKfihBlEUqyJJFkVkXJl14UbLCShJUEGW/JLrowv6DmF11o2uTnqvzPs953/Oc98ChWoQQiCBDFFQQmjZPjAptEIcEHIAcDAJIHwLIhRjpJPF4bhjE1RricGkYiMUz/cTj8xEQP9ZRACfy4uc64vF1oV68wROPjwv14vs6L7tQTwG8esi7G8DzByvsiwIQh09HvJcu9hOH01eAeHxwGcTi38TjytBf4oqX+HA5FNkVWsiIFzLy9+bo6jhcg0lrAu5aU/CmcxrGCzALd6ZgHoYyy3Ap00XV1uaYZkWNGWpMMwxVM1RNi2lKTNV1XTdUVdeKDPeJ+cJRA6EUIA4fLUIEKUCcYqgOhYkkpEAU8dkYRILEk18xWmMONa4LLM5PQoQnP7GK7gh9QreV6zts51xZV/U9itqu6G0dck/ayh5NJWU7L1vJZCopHzkhu+mUnLddy83YWdlJWfmetBx1Uik5l7ddxbWyx5UNWanIrcccO7tTqvi8dTohZLeh2k9tCpzEdPi2scf7YyDskP6jppYwckLNHGyOwpOJ0ZzqcITadat+fDIJQo0UlHjyRxHfJYT+XxxrqqLt3mLHlXIsLiSEsNRIwRnwpjRxE6r/J7JfmSKsMfop1ldGQ3wGOGLIF7nNBj3CN9gbb7o+6mHR/Le3jFemvsaInGy2FBnfHwU3vhH9Vvx/b8vrtC+VSqXa7ul45zoR74azAKOQsdeGFve/NNvLrG/Z7PQyS6Vv5r5K8NZsYXE23MGEoOuf6paprMy95aWZhhwMwIDwYwD0rRuW",
-    "bis-raid": "https://elliotwood.github.io/Forever/forever/paladin/protection/#eJzMVE9o03AU7kvS5vVtbCVuNAsOYkGtk4wktbLtkm4njxU8eFBcXDtb3ZrS5DAPwlQKiqIiik5xG4ziNhTH9DCHh10cHXRYBD2I/6ZDPHiYdw+SdlvF8xx+p5fve+F97/fgo3qEAIggQxhUEFo2vxgVOiAGcTgKWRgGkFZ8yAUY6RzxePk6iKt1xOFUHojFi4PE46sbIK40kA/Hc+LXBuLx100Q7/PE4/NCo/ipgThcLjSSD+8cd//14ZVjVfZ1AYjDkXKAOCzfcuu5coB4/HwbxOIO4nE6D+JHt/NpORDaH1hMi1fT8s/W8OoY3IUJcxwemZPwrnsGxgowB9OTsAD5dBmupXuotts806qo0Yga1SIRVYuomhbVlKiq67oeUVVdKzLcF+YbR02Eko84fLYEISQfcUpEtSlIJCH5wogvRyHkJ568SqQ9alPzusDiwgSEePISq+i2MCD0mtmBE1bWkXVVP6ionYre0SX3pczMqWRCtnKymUgkE/LJs7KTSso5yzGdtJWR7aSZ60vJYTuZlLM5y1EcM3NG2ZCVqtx+2rYy+6Sqz4cX4kJmG6b9sabASUyXZxt3fDIKwl5pN7W0BZET6uZh8xSuTIxm144j1K9b9eKLCRDqJL/EkzeM+CEuDP7lWFMV7cAWO66OY3ExLgSlZvLPgnul8QdQez+R/c4UYY3Rz7OeCppis8ARQ57QFOt3Cc9wf6zl3oiLJWNXfwVvDX2NETnZaCsynv8KTmyj+qfY83jL53Qul0ql+t6ZWPc6EeuFSwAjkLbW8ktH3hidFdZTNrrdzlLph3G4Wrw32licC3YxAejZWUuZamYeqqRmCrIwBEPC7wEAMkccPg=="
+    "prebis-raid": "https://elliotwood.github.io/Forever/forever/paladin/protection/#eJzMVM9PE20Q7uxud6cDIf32g3TZfCT7NVErZsm7u9YAlxZOHmviwYNGFlpsFdqm3QN6Qg2Jxh/lpmgEEkJEo4GgJoQYw0FJSUpsTPRgBKMS48ED/gdmW6DGMxKf07zPM+87z7yTDNUj+EEBDULAQG7eOXEM2iEKMTgBWRgGUNdFFPyceoEkvFoAZaOOBFwtAPF4eZAkfD0KyqcGEnEyp3xpIAlnC6DclVylAMrHBuLxRYpEvHXKvSritZMuKeCbaSABX466D90YJAGflf0k4drIP0rxXxJxsVdZd/OelP3BQ/7llHI9pf1oCW1MwG2YsifhkT0D77vmYGIaFuDhDCzBSKoMN1PdVGtskWvRWdhiYcOymGExwwwbepiZpmVajDGjyAmfua8CNRKqIgn4dAWCSCIJusXyFCBSkcQQ4qtxCPpIIq9utYXz1LQl8Lg0BUGJvMTrZl4ekHvs7MDpTNbRTGYe0VmHbrZ3an1JO30mEdcyOc2OxxNxrfe85iQTWi7j2E4qk9byCTvXl9RC+URCy+Yyju7Y6XP6tqxX5baz+Uz6oFr1ef9STE7vQbVf2pQFlev07GGPs+MgH1D3UXNrAAW5bhF2RuHKxBn52nDk+i2rXnw+BXKd6lMl8oYQ12Ly4G+ODaYbh3fZcbUcj8sxOaA2kW8e3ClN3oPa/yn8N64Im5x5kfdU0BidB4E48gQf8D6X8Az3R5vvjLlYifzfX8G7iLnJKYIWaS1ynr8KTnQ7+qPY/3jX63Sslkql+p65aNcWEe2BKwBjkMpsjqwcfxvpqLCecqTLzSyVvkeOVYMPkVYeFwKdnB+6/6ttmerCPFpZmUnIwhAMyT8HANiEGwI=",
+    "bis-raid": "https://elliotwood.github.io/Forever/forever/paladin/protection/#eJzMVE1oE1EQzuxuspNpKWFtyXaxsAbUWNnydtdI20vSnjxG8OBBsWuTmmibhOweKnioPwFB0aKCVrEtlGIriqV6KFWkF0sKEUNBD+K/RTx4qHcPsknbiOda/A6Ped83j/nmDQzVIwRABhXCwEBq3rhxDNohBnE4DDkYAlA++VAIcMoZEvHpBZBX6kjA6QIQj+cHSMRXwyB/biAfjuflrw0k4q9rIN8RXeUqyB8biMfnafLhzaPuUx9eOuKSAo6UAyTg8iSQgOUb7jlXDpCIw9dBLm4jEZcLIH9wMx+XA6G9gcW0fDmt/mwJr4zBLZiwxuGBNQVvu2ZgbBLm4P4ULEAhXYYr6W6qtTbPtWgsYrKIbppMN5luRHQtwgzDNEzGmF7khC/cN4EaCRUfCfhkCUJIPhI0k9kUJFKQfGHEF6MQ8pNIXs1si9jUtCbwuDABIZG8xGuGLfVLPVau/1g256gGM/ZrrEMz2jvV3pSVOZFMqNm8aiUSyYR6/LTqpJJqPutYTjqbUe2kle9NqWE7mVRz+ayjOVbmlLYua1W57aSdzexRqj7vnYtLmS2o9kebkqBwnZ4t7PHRKEi7lZ3U3BpEQaqbh41RuDJxul0bjlS/ZtWLzyZAqlP8ikjeMOL7uDTwl2Odafq+TXZcLcfjYlwKKk3knwV3SuN3ofZ/Mv+dK8IqZ5zlPRU0xmZBII48oWne7xKeob5Y8+0RF0vRHX0VvIkaq5wsqNHWIuf5r+DE1qN/il0PN71Ox8tSqVTfMxPrWiNiPXARYATS2dXC0qHX0Y4K6ylHu9zMUulH9GA1eBdt5XEu2MkFoHt7bctUV+aBytJMQQ4GYVD6PQAJzBvQ"
    },
-   "build": "protection-ml-tank",
-   "armor": "classic"
+   "build": "protection-ml-tank"
   },
   "warrior|Protection|tank": {
    "class": "warrior",
@@ -11398,12 +11396,12 @@
      },
      {
       "slot": "Wrist",
-      "id": 250582,
-      "name": "Sentinel's Wristguards",
-      "url": "https://www.wowhead.com/forever/item=250582",
-      "ilvl": 50,
-      "quality": 3,
-      "source": "Blacksmithing",
+      "id": 18351,
+      "name": "Magically Sealed Bracers",
+      "url": "https://www.wowhead.com/forever/item=18351",
+      "ilvl": 61,
+      "quality": 2,
+      "source": "Magister Kalendris, Dire Maul",
       "enchant": {
        "name": "Enchant Bracer - Deflection",
        "url": "https://www.wowhead.com/forever/spell=13922"
@@ -11424,12 +11422,12 @@
      },
      {
       "slot": "Waist",
-      "id": 250572,
-      "name": "Sentinel's Waistguard",
-      "url": "https://www.wowhead.com/forever/item=250572",
-      "ilvl": 55,
+      "id": 13502,
+      "name": "Handcrafted Mastersmith Girdle",
+      "url": "https://www.wowhead.com/forever/item=13502",
+      "ilvl": 63,
       "quality": 3,
-      "source": "Blacksmithing"
+      "source": "Goraluk Anvilcrack, Blackrock Spire"
      },
      {
       "slot": "Legs",
@@ -11477,19 +11475,19 @@
      },
      {
       "slot": "Trinket",
-      "id": 10779,
-      "name": "Demon's Blood",
-      "url": "https://www.wowhead.com/forever/item=10779",
-      "ilvl": 60,
-      "quality": 2,
-      "source": ""
+      "id": 11815,
+      "name": "Hand of Justice",
+      "url": "https://www.wowhead.com/forever/item=11815",
+      "ilvl": 58,
+      "quality": 3,
+      "source": "Emperor Dagran Thaurissan, Blackrock Depths"
      },
      {
       "slot": "Trinket",
-      "id": 13965,
-      "name": "Blackhand's Breadth",
-      "url": "https://www.wowhead.com/forever/item=13965",
-      "ilvl": 63,
+      "id": 272437,
+      "name": "Adaptive Combat Assistant",
+      "url": "https://www.wowhead.com/forever/item=272437",
+      "ilvl": 65,
       "quality": 3,
       "source": ""
      },
@@ -11508,12 +11506,12 @@
      },
      {
       "slot": "Off hand",
-      "id": 279262,
-      "name": "Evergreen Shield",
-      "url": "https://www.wowhead.com/forever/item=279262",
-      "ilvl": 65,
-      "quality": 4,
-      "source": "Blacksmithing",
+      "id": 12602,
+      "name": "Draconian Deflector",
+      "url": "https://www.wowhead.com/forever/item=12602",
+      "ilvl": 63,
+      "quality": 3,
+      "source": "Blackrock Spire",
       "enchant": {
        "name": "Enchant Shield - Greater Stamina",
        "url": "https://www.wowhead.com/forever/item=16217"
@@ -11602,12 +11600,12 @@
      },
      {
       "slot": "Hands",
-      "id": 250552,
-      "name": "Sentinel's Gloves",
-      "url": "https://www.wowhead.com/forever/item=250552",
-      "ilvl": 55,
-      "quality": 3,
-      "source": "Blacksmithing",
+      "id": 16863,
+      "name": "Gauntlets of Might",
+      "url": "https://www.wowhead.com/forever/item=16863",
+      "ilvl": 66,
+      "quality": 4,
+      "source": "Lucifron, Molten Core",
       "enchant": {
        "name": "Enchant Gloves - Agility",
        "url": "https://www.wowhead.com/forever/item=273520"
@@ -11677,21 +11675,21 @@
      },
      {
       "slot": "Trinket",
-      "id": 13965,
-      "name": "Blackhand's Breadth",
-      "url": "https://www.wowhead.com/forever/item=13965",
-      "ilvl": 63,
+      "id": 272437,
+      "name": "Adaptive Combat Assistant",
+      "url": "https://www.wowhead.com/forever/item=272437",
+      "ilvl": 65,
       "quality": 3,
       "source": ""
      },
      {
       "slot": "Main hand",
-      "id": 19168,
-      "name": "Blackguard",
-      "url": "https://www.wowhead.com/forever/item=19168",
+      "id": 18832,
+      "name": "Brutality Blade",
+      "url": "https://www.wowhead.com/forever/item=18832",
       "ilvl": 70,
       "quality": 4,
-      "source": "Blacksmithing",
+      "source": "Garr, Molten Core",
       "enchant": {
        "name": "Enchant Weapon - Crusader",
        "url": "https://www.wowhead.com/forever/spell=20007"
@@ -11722,15 +11720,14 @@
     ]
    },
    "ilvl": {
-    "prebis": 60.3,
-    "bis": 66.2
+    "prebis": 61.3,
+    "bis": 67.0
    },
    "sim": {
-    "prebis-raid": "https://elliotwood.github.io/Forever/forever/warrior/protection/#eJzMVEFoU00Qzux7eW8z6Z+mj/78r/trWQOWGHiySYyYXpL2okeFHqQo9tmkJlaTkLxDxUtFAhWV1pPWHlqQgIJC8VCkJxFbUkhRBHsQragFBXuIB0E8ySamPXi14nea/Wbm25lhd7CNgh9M4BAEAUbX1okIOARJOArHoQDjAOyzmxI/sIuo0yuTYG54UaWrk4AKvXwedfpsCsx3PtToXNH84EOdrlXazRldeibBfOtDldYq7ajRmydlrkavnmiyLyqAKn06JZVmBlCh16Xcm3KHuSll1ssd5rqM+3YDAnv9y1nzWpZ/2R3cmIVbcMeeg/v2XXjVNw+zFXgM5WwVoB+3e1ok3dFYVAghopaIWSImYtGoiIioCAsRjsbCVaK+J3UF/0VkFLWgRleWIKCjGxUrXDJGjSG7cO5UvuDwiIgctETcisR7+XDGzp1Jp3i+yO1UKp3ipy9wJ5PmxbxjO9l8jpfSdnE4w4OldJoXinnHcuzcqNVyW033/rOlfG4f05kbFfpRM1RGel0GZRpTkdDDRhtr1VRdAgMZZRqq9OsiGEHWg/+Huqhi+J6AF91BN10dNIjfLaUQYkxvcZx1oz/ko5pBii6Zj+RAjCFSDkFKl5fAGPsDLXaiN+BBPSIbXRiURdKFwV+GGxaW2JnhTvxjeJlnayqm8olUoU4ilxRXA53Jh8SLHtT98t1/h8A9xSN51/hIsuv2tMRKYs9IA2uJSJ2YKk+EqsT1V8FJtqwdRc+D335PfLVWq7UNzSf7fhLJIZgAmIZsvl5eGXiZiDdY1/NEn4ys1TYTx5rG60RIoY/+6yV+6N+1/e+b2+tIY39loABjMGb8GAAJVvG+",
-    "bis-raid": "https://elliotwood.github.io/Forever/forever/warrior/protection/#eJzMVEFoE10Qzrzd7E4m/fOHpT//9v2/5RmwxMDKS2LE9JK0Fz0q9CBFsGuTmlhNQpJDBQ+VGiiooIJg7aEFKVpQKB5K6UkqLSmkKAU9iGjVgh56iAdBxINsYtqDVyt+p3nfzHxvZnhvqA3BDyYICIIEo2P7xCQchiQcgxNQgFEAvuVG5gd+kXR8chnMTS+pOFsBUnDsPOn49DqYb32k4XTRfO8jHb/dBHNSJx0XZv423/hIxY0xIB2XmskaXjnZpO9VgFRcn3GkJvtIwWuO3sYtMLccnfUKmK+duC83ILDPv5I1r2bFpz3BzSm4DXftaXhg34eXPXMwNQOPoZKtAvTSTlOLrDMai0opZdSSMUvGZCwalREZlWEpw9FYuMrUd6yu0D9EHEkLari6DAGd3KRY4ZIxbAzYhXOn8oWyiMjIIUvGrUi8Wwxm7NyZdErki8JOpdIpcfqCKGfSopgv2+VsPidKabs4mBHBUjotCsV82SrbuWGr5baa7gNnS/ncfq5zNyn4QTNUzrpdBnKNq8TwiNHGWzVVl8EgjlwjFT8vghHkXfRfqAMVw7cEXnIH3bjWbzC/25EiiHG9xQneSf6QDzWDFV1OPrGDMU6EAoKIK8tgjPyGFtvJG/CQHnEane93isT5/p+GG5aW3J3hjv9leLlneyqm8pFVoc4ilxRXA+3JR8xLHtL9zsP/CoFZxePwrtGhZMedCQerib1DDbxIROrMVEUiVGWuPwrlZMvaVXQ9/OX3xNdqtVrbwFyy5weRHIBxgAnI5uuV1b7niXiDdT1L9DiRtdpW4njTeJUIKbjwbzfzQ+//O/++ub6ONhZYBgowAiPG9wEAX2bxyg=="
+    "prebis-raid": "https://elliotwood.github.io/Forever/forever/warrior/protection/#eJzMVE1oE1sUzrkzmTk5KWE6r483mffDNPBKDEy5yTBquknajS4VXEip2GmTmlhNQpJFFYSKBBSF1JVWFy1IUUGxCBbpQkRsSSHFIuhC/MFasIsu6kIQN8qkpgXXtfitzv3Oued+91zuRy0ICmhgQBg4qMHNFeOwF5JwAA5DAUYB9GUJmQL6aZLxQhW0FT+JuFgFEvDcSZLx2Rho7wMk4WRR+xAgGe9VQbsuu5kqaO8CJOCjLEl45Yi7VcKLfS4p4vMpIBGfjrmNbvaRiA+WFJLxTaVVW3PbzQ5ob926L5ch9L8yn9UuZY1P/4ZXJuAq3HAm4Y5zC151T8PEFDyGSrYG0ENbV5pl/1m2xTnnlsltk9vctiwe4xaPch617GiNictsVaQ/iXQkKSzhwhyEZPKSYEZL6rDa7xROHM0XykaMx3abPG7G4l3GYMbJHUunjHzRcFKpdMoYOGWUM2mjmC875Ww+Z5TSTnEwY4RL6bRRKObLZtnJDZvNtLmR7jxeyud26bLuJQE/Sqqosy6Pirqki8Rwn9qiNzXV5kA985OUKDej9jZLCZISCaCgsqJHl0gkFucNcd/aVNLRpfDzLKhhvYP+jgRRUANPwE/esBcXe1WmeN1iAluXm1wFdkB1O/0RaUWpodpHMnktq3OPrROhAWHE+TlQR3bgHdvIH/KRHHMHNtPrjgJnelW/7tschyasshqss9hZwdNAW/I+85OPZMX9bl8hdFvwubxndCgZvDbuYiHRPtTAy0RsnWmikYjUmOe3QjnZjH4pOu5u+znxxXq93tI/nez+QST74TzAOGTz65WFQy8S8QbrWUp0u5X1+lri4EbwOhER8OFfXUyBnn+2/GbDNPc3bDMDBRiBEfX7ACcfFl4=",
+    "bis-raid": "https://elliotwood.github.io/Forever/forever/warrior/protection/#eJzMVE1oE1sUzrkzmTk5KWHevD7eZN4P08AreYEpNxlGTTdJu9GlQhdSBDs2qYnVJCRZ1EWhUgOCLqpurF20IEULCkWwSFdSaUkhxVLQhYj1p2IXXdSFICIok5gWXNfitzr3O+ee+91zuR+1ICiggQFh4KAGd1aMwyFIwlE4DgUYAdDfScgU0IdJxscXQdvwk4gzFSABR8+RjE/GQHsdIAmnitrbAMn45RpoEzLJuD4K2nqARHw1CiTjQmOzhJdPNOjbFSAR16bdVhM9JOKDVYVkHLsO2pbbaK0C2ku38NNVCP2nLGW1K1njwz/hjUm4AbecKbjr3IHnXbMwOQ2PoJKtAnTT7q3m2b+WbXHOuWVy2+Q2ty2Lx7jFo5xHLTtaZeIbtinSH0Q6khSWcHkRQjJ5STCjJXVQ7XMKZ0/mC2UjxmMHTB43Y/FOoz/j5E6nU0a+aDipVDplnDpvlDNpo5gvO+VsPmeU0k6xP2OES+m0USjmy2bZyQ2azbTZSHecKeVz/+uy7iUB30uqqLNOj4q6pIvE8LDaojc1VRdBHf5BSpSbUXuPpQRJiQRQUFnRo0skEovzurivrSrp6FL4cR7UsN5Of0WCKKiBBfCTN+zFlV6VKV63mMDW5SZXgX1Q3Ua/R35Dqa7aRzJ5LavjoK0ToQFhxKVFUIf24R1byR/ykRxzBzbX644C53pVv+7bGYcmbLIqbLPYBcFTR2vyPvOTj2TF/XGfITQj+FzeMzKQDN4cd7GcaBuo41kits000UhEqszzS6GcbEY/Fe339vyc+EqtVmvpm012fSeSfXAJYByy+e3Kcs/TRLzOelYTXW5lrbaVONYIXiQiAj78s5Mp0P33rt80fPNI3TkzUIAhGFK/DQCYlRb9"
    },
-   "build": "opt-prot-tank-raid-tank",
-   "armor": "classic"
+   "build": "opt-prot-tank-raid-tank"
   },
   "druid|Restoration|heal": {
    "class": "druid",

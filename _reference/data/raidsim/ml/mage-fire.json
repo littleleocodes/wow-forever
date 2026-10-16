@@ -67,9 +67,9 @@
   "prebis": {
    "entry": "fire-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-fire-prebis.gear.json",
-   "date": "2026-10-14",
+   "date": "2026-10-15",
    "chosen": "keep-sets-and-effects",
-   "ilvl": 60.3,
+   "ilvl": 62.2,
    "trinkets": [
     "Briarwood Reed",
     "Eye of the Beast"
@@ -78,7 +78,7 @@
     "Spellweaver's Turban",
     "Nacreous Shell Necklace",
     "Rugged Mantle of the Timbermaw",
-    "Spritecaster Cape",
+    "Shroud of Arcane Mastery",
     "Alanna's Embrace",
     "Rockfury Bracers",
     "Inferno Gloves",
@@ -89,7 +89,7 @@
     "Elemental Focus Band",
     "Briarwood Reed",
     "Eye of the Beast",
-    "Searing Golden Blade",
+    "Elemental Attuned Blade",
     "Scepter of Interminable Focus",
     "Bonecreeper Stylus"
    ],
@@ -102,14 +102,14 @@
     "all-slots": 1.0
    },
    "weights": {
-    "StatArcaneDamage": 0.0178,
-    "StatFireDamage": 0.4012,
-    "StatIntellect": 0.2619,
-    "StatSpellCritRating": 0.4272,
-    "StatSpellDamage": 0.419,
-    "StatSpellHasteRating": 0.2934,
-    "StatSpellHitRating": 0.6753,
-    "StatSpirit": 0.378
+    "StatArcaneDamage": 0.0179,
+    "StatFireDamage": 0.401,
+    "StatIntellect": 0.2464,
+    "StatSpellCritRating": 0.4467,
+    "StatSpellDamage": 0.4189,
+    "StatSpellHasteRating": 0.2966,
+    "StatSpellHitRating": 0.6748,
+    "StatSpirit": 0.3462
    },
    "evaluated_on": [
     "fire-raid: ml winner (bis)"
@@ -1479,7 +1479,7 @@
    "spec": "Fire",
    "setting": "dummy",
    "entry": "fire-raid",
-   "date": "2026-10-14",
+   "date": "2026-10-15",
    "constraint": "Fire 30+",
    "protected": [],
    "entries_screened": {},
@@ -1491,19 +1491,19 @@
      "Arcane": [
       [
        "Arcane Focus",
-       3
+       5
       ],
       [
-       "Improved Channeling",
-       2
+       "Magic Absorption",
+       1
       ],
       [
        "Arcane Concentration",
        5
       ],
       [
-       "Arcane Resilience",
-       2
+       "Arcane Geometry",
+       1
       ],
       [
        "Arcane Impact",
@@ -1511,7 +1511,7 @@
       ],
       [
        "Arcane Meditation",
-       1
+       2
       ],
       [
        "Missile Barrage",
@@ -1567,58 +1567,54 @@
      "Frost": [
       [
        "Elemental Precision",
-       3
+       2
       ]
      ]
     },
-    "split": "17/31/3",
-    "dps": 513.13,
-    "se": 0.1217,
+    "split": "18/31/2",
+    "dps": 510.19,
+    "se": 0.1177,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "19/31/1",
-    "dps": 511.13,
-    "se": 0.1195,
+    "split": "18/31/2",
+    "dps": 510.07,
+    "se": 0.1177,
     "differs": [
      [
-      "Arcane Meditation",
-      1
+      "Arcane Impact",
+      2
      ],
      [
-      "Arcane Meditation",
+      "Arcane Impact",
       3
      ],
      [
-      "Elemental Precision",
+      "Arcane Subtlety",
       1
-     ],
-     [
-      "Elemental Precision",
-      3
      ]
     ]
    },
-   "gap_to_runner_up": 0.0039,
+   "gap_to_runner_up": 0.0002,
    "finalists": [
     {
      "allocation": {
       "Arcane": [
        [
         "Arcane Focus",
-        3
+        5
        ],
        [
-        "Improved Channeling",
-        2
+        "Magic Absorption",
+        1
        ],
        [
         "Arcane Concentration",
         5
        ],
        [
-        "Arcane Resilience",
-        2
+        "Arcane Geometry",
+        1
        ],
        [
         "Arcane Impact",
@@ -1626,7 +1622,7 @@
        ],
        [
         "Arcane Meditation",
-        1
+        2
        ],
        [
         "Missile Barrage",
@@ -1682,40 +1678,44 @@
       "Frost": [
        [
         "Elemental Precision",
-        3
+        2
        ]
       ]
      },
-     "split": "17/31/3",
-     "dps": 513.13,
-     "se": 0.1217
+     "split": "18/31/2",
+     "dps": 510.19,
+     "se": 0.1177
     },
     {
      "allocation": {
       "Arcane": [
        [
         "Arcane Focus",
-        3
+        5
        ],
        [
-        "Improved Channeling",
-        2
+        "Arcane Subtlety",
+        1
+       ],
+       [
+        "Magic Absorption",
+        1
        ],
        [
         "Arcane Concentration",
         5
        ],
        [
-        "Arcane Resilience",
-        2
+        "Arcane Geometry",
+        1
        ],
        [
         "Arcane Impact",
-        3
+        2
        ],
        [
         "Arcane Meditation",
-        3
+        2
        ],
        [
         "Missile Barrage",
@@ -1771,13 +1771,13 @@
       "Frost": [
        [
         "Elemental Precision",
-        1
+        2
        ]
       ]
      },
-     "split": "19/31/1",
-     "dps": 511.13,
-     "se": 0.1195
+     "split": "18/31/2",
+     "dps": 510.07,
+     "se": 0.1177
     }
    ],
    "runs": [
@@ -1785,37 +1785,37 @@
      "entry": "fire-raid",
      "run": 1,
      "simulated": 1215,
-     "best_screen": 511.23,
-     "best_split": "19/31/1",
+     "best_screen": 510.8,
+     "best_split": "18/31/2",
      "trace": [
       {
        "round": 0,
        "simulated": 415,
-       "best": 510.35
+       "best": 507.54
       },
       {
        "round": 1,
        "simulated": 615,
-       "best": 510.35,
-       "predicted_top": 507.66
+       "best": 507.54,
+       "predicted_top": 504.89
       },
       {
        "round": 2,
        "simulated": 815,
-       "best": 510.35,
-       "predicted_top": 509.82
+       "best": 507.54,
+       "predicted_top": 507.12
       },
       {
        "round": 3,
        "simulated": 1015,
-       "best": 510.35,
-       "predicted_top": 509.93
+       "best": 510.8,
+       "predicted_top": 507.21
       },
       {
        "round": 4,
        "simulated": 1215,
-       "best": 511.23,
-       "predicted_top": 509.93
+       "best": 510.8,
+       "predicted_top": 507.09
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1828,115 +1828,95 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      510.94,
-      509.45,
-      509.45,
-      509.45,
-      509.45,
-      509.27
+      510.82,
+      510.8,
+      510.67,
+      506.79,
+      506.79,
+      506.79
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      511.18,
-      509.8,
-      509.8,
-      509.8,
-      509.8
+      510.61,
+      510.49,
+      509.78,
+      506.72,
+      506.72
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      511.13,
-      509.65
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      513.13,
-      511.13
+      510.19,
+      510.07
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 243,
-     "best_gap": 0.0057,
-     "best_move": "2 Arcane Meditation -> Elemental Precision",
-     "raced": [
-      "2 Arcane Meditation -> Elemental Precision",
-      "1 Arcane Meditation -> Elemental Precision",
-      "1 Master of Elements -> Wake of Fire",
-      "1 Missile Barrage -> Elemental Precision"
-     ],
-     "confirmed_gap": 0.005
-    },
-    {
-     "neighbours": 254,
-     "best_gap": 0.0004,
-     "best_move": "1 Arcane Resilience -> Arcane Focus"
+     "neighbours": 263,
+     "best_gap": 0.0,
+     "best_move": "1 Arcane Geometry -> Arcane Blast"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Arcane Concentration",
-     "importance": 0.2386
+     "importance": 0.2608
     },
     {
      "feature": "Improved Scorch",
-     "importance": 0.1931
-    },
-    {
-     "feature": "Impact",
-     "importance": 0.1033
+     "importance": 0.1639
     },
     {
      "feature": "Flame Throwing",
-     "importance": 0.0919
-    },
-    {
-     "feature": "Missile Barrage",
-     "importance": 0.0876
+     "importance": 0.1199
     },
     {
      "feature": "Fire Power",
-     "importance": 0.0626
+     "importance": 0.0906
+    },
+    {
+     "feature": "Missile Barrage",
+     "importance": 0.0874
     },
     {
      "feature": "Combustion",
-     "importance": 0.0542
+     "importance": 0.0728
+    },
+    {
+     "feature": "Impact",
+     "importance": 0.064
     },
     {
      "feature": "Wake of Fire",
-     "importance": 0.0274
+     "importance": 0.0292
     },
     {
      "feature": "Improved Flamestrike",
-     "importance": 0.0235
-    },
-    {
-     "feature": "Arcane points",
-     "importance": 0.0199
+     "importance": 0.0147
     },
     {
      "feature": "Burning Soul",
-     "importance": 0.0161
+     "importance": 0.0133
     },
     {
-     "feature": "Improved Fire Ward",
-     "importance": 0.0132
+     "feature": "Arcane points",
+     "importance": 0.0104
+    },
+    {
+     "feature": "Critical Mass",
+     "importance": 0.0104
     }
    ],
-   "simulated_builds": 1733,
-   "simulated_fights": 3372000,
-   "minutes": 1.6,
+   "simulated_builds": 1492,
+   "simulated_fights": 2417000,
+   "minutes": 2.8,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-fire-prebis.gear.json"
   },
   "prebis-raid": {
@@ -1944,7 +1924,7 @@
    "spec": "Fire",
    "setting": "raid",
    "entry": "fire-raid",
-   "date": "2026-10-14",
+   "date": "2026-10-15",
    "constraint": "Fire 30+",
    "protected": [],
    "entries_screened": {},
@@ -2025,14 +2005,14 @@
      ]
     },
     "split": "12/34/5",
-    "dps": 644.87,
-    "se": 0.1429,
+    "dps": 641.92,
+    "se": 0.1393,
     "iterations": 100000
    },
    "runner_up": {
     "split": "14/32/5",
-    "dps": 644.87,
-    "se": 0.1429,
+    "dps": 641.92,
+    "se": 0.1393,
     "differs": [
      [
       "Arcane Focus",
@@ -2132,8 +2112,8 @@
       ]
      },
      "split": "12/34/5",
-     "dps": 644.87,
-     "se": 0.1429
+     "dps": 641.92,
+     "se": 0.1393
     },
     {
      "allocation": {
@@ -2213,8 +2193,8 @@
       ]
      },
      "split": "14/32/5",
-     "dps": 644.87,
-     "se": 0.1429
+     "dps": 641.92,
+     "se": 0.1393
     }
    ],
    "runs": [
@@ -2222,37 +2202,37 @@
      "entry": "fire-raid",
      "run": 1,
      "simulated": 1208,
-     "best_screen": 645.89,
+     "best_screen": 642.19,
      "best_split": "12/34/5",
      "trace": [
       {
        "round": 0,
        "simulated": 408,
-       "best": 645.89
+       "best": 642.19
       },
       {
        "round": 1,
        "simulated": 608,
-       "best": 645.89,
-       "predicted_top": 644.23
+       "best": 642.19,
+       "predicted_top": 639.99
       },
       {
        "round": 2,
        "simulated": 808,
-       "best": 645.89,
-       "predicted_top": 645.89
+       "best": 642.19,
+       "predicted_top": 642.13
       },
       {
        "round": 3,
        "simulated": 1008,
-       "best": 645.89,
-       "predicted_top": 645.89
+       "best": 642.19,
+       "predicted_top": 642.19
       },
       {
        "round": 4,
        "simulated": 1208,
-       "best": 645.89,
-       "predicted_top": 645.89
+       "best": 642.19,
+       "predicted_top": 642.19
       }
      ],
      "best_stage1_gap": 0.0,
@@ -2265,31 +2245,31 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      644.16,
-      644.16,
-      644.16,
-      644.16,
-      644.16,
-      644.16
+      641.79,
+      641.79,
+      641.79,
+      641.79,
+      641.79,
+      641.79
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      644.8,
-      644.8,
-      644.8,
-      644.8,
-      644.8
+      641.67,
+      641.67,
+      641.67,
+      641.67,
+      641.67
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      644.87,
-      644.87
+      641.92,
+      641.92
      ]
     }
    ],
@@ -2304,56 +2284,56 @@
    "important_features": [
     {
      "feature": "Arcane Concentration",
-     "importance": 0.218
-    },
-    {
-     "feature": "Improved Scorch",
-     "importance": 0.1656
-    },
-    {
-     "feature": "Combustion",
-     "importance": 0.1442
-    },
-    {
-     "feature": "Impact",
-     "importance": 0.1086
+     "importance": 0.2545
     },
     {
      "feature": "Fire Power",
-     "importance": 0.107
+     "importance": 0.2229
+    },
+    {
+     "feature": "Improved Scorch",
+     "importance": 0.1073
     },
     {
      "feature": "Flame Throwing",
-     "importance": 0.066
+     "importance": 0.0878
     },
     {
-     "feature": "Burning Soul",
-     "importance": 0.0371
+     "feature": "Combustion",
+     "importance": 0.0687
     },
     {
-     "feature": "Fire points",
-     "importance": 0.0237
-    },
-    {
-     "feature": "Improved Flamestrike",
-     "importance": 0.0209
-    },
-    {
-     "feature": "Elemental Precision",
-     "importance": 0.0151
-    },
-    {
-     "feature": "Heating Up",
-     "importance": 0.0151
+     "feature": "Impact",
+     "importance": 0.0564
     },
     {
      "feature": "Critical Mass",
-     "importance": 0.0144
+     "importance": 0.0472
+    },
+    {
+     "feature": "Improved Flamestrike",
+     "importance": 0.0304
+    },
+    {
+     "feature": "Fire points",
+     "importance": 0.0169
+    },
+    {
+     "feature": "Elemental Precision",
+     "importance": 0.0168
+    },
+    {
+     "feature": "Heating Up",
+     "importance": 0.0152
+    },
+    {
+     "feature": "Burning Soul",
+     "importance": 0.0152
     }
    ],
    "simulated_builds": 1735,
    "simulated_fights": 3160000,
-   "minutes": 1.7,
+   "minutes": 3.6,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-fire-prebis.gear.json"
   }
  },
@@ -2413,5 +2393,8 @@
   "bis-raid": null,
   "prebis-dummy": null,
   "prebis-raid": null
- }
+ },
+ "notes": [
+  "2026-10-15: pre-BiS set and searches cleared and re-run: gear_opt.SUSPECT_ITEMS (Searing Golden Blade, Windweaver Staff) left the pools"
+ ]
 }

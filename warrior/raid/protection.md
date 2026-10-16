@@ -2,7 +2,9 @@
 
 [Warrior](../README.md) > [Raid (group)](README.md) > Protection
 
-**[Protection (optimized)](../research/raid/builds/opt-prot-tank-raid-tank.md)** (14/5/32) — [open the talent tree](https://talentsforever.com/warrior/60/35300003-05-050533020301001351-6)
+**[Protection — Raid tank](../research/raid/builds/protection-ml-tank.md)** (17/3/31) — [open the talent tree](https://talentsforever.com/warrior/60/35310003002-03-250530020310001351-6)
+
+> 🔬 Derived build: found by this project's deep search over every legal build of the spec in the community's raid simulator, on tank value (threat and damage taken), then raced against the spec's builds. A model of the beta, to check at launch.
 
 ## How to play
 
@@ -12,17 +14,12 @@
 
 1. **Shield Wall**
 2. **Revenge** after you block, dodge or parry
-3. **Shield Slam**
-4. **Heroic Strike** when you have 45+ rage
-5. **Rend**: keep it on the target
-6. **Shield Bash**
+3. **Bloodrage** when you have less than 90 rage
+4. **Shield Slam**
+5. **Heroic Strike** when you have 34+ rage
+6. **Rend**: keep it on the target
 
 Between these, your white swings do the rest.
-
-**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
-
-- **Bloodrage**: a cooldown, use it at the start of the fight and again whenever it is ready (about 3 times a fight)
-- Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
@@ -52,11 +49,13 @@ Protection tanks in **Defensive Stance** with a shield, and threat comes from th
 - Press **Shield Block** when the boss hits hard, and **Shield Wall** for the worst moments: an enrage, a healer down, your health low.
 - Adds: **Thunder Clap** hits up to 4 targets, **Challenging Shout** (10-minute cooldown) turns everything within 10 yards onto you for 6 seconds, and **Taunt** (8-second cooldown in Forever) takes back a single target.
 
+*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## The numbers
 
-Tank value 1.007 (threat and damage taken under a boss, relative to our reference tank build).
+Tank value 1.011 (threat and damage taken under a boss, relative to our reference tank build).
 
-**The gear** (average item level: Pre-BiS 60.3; Phase 1 BiS 66.2; chosen in the community simulator on tank value, threat and damage taken, for this build in a full raid. The simulator's item database lists base armor for only about one armor item in five, so these sets were chosen with Classic's armor values filled in for the rest, our assumption: Forever may have changed some; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 61.3; Phase 1 BiS 67.0; chosen in the community simulator on tank value, threat and damage taken, for this build in a full raid. The simulator's item database lists base armor for only about one armor item in five; this project's patch fills in the rest from Classic's values (our assumption: Forever may have changed some); each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
@@ -65,25 +64,26 @@ Tank value 1.007 (threat and damage taken under a boss, relative to our referenc
 | Shoulders | [Stoneform Shoulders](https://www.wowhead.com/forever/item=13955) · *Kirtonos the Herald, Scholomance* | [Stoneform Shoulders](https://www.wowhead.com/forever/item=13955) · *Kirtonos the Herald, Scholomance* |
 | Back | [Shifting Cloak](https://www.wowhead.com/forever/item=18511) · *Leatherworking*<br>+ [Enchant Cloak - Superior Defense](https://www.wowhead.com/forever/spell=20015) | [Shifting Cloak](https://www.wowhead.com/forever/item=18511) · *Leatherworking*<br>+ [Enchant Cloak - Superior Defense](https://www.wowhead.com/forever/spell=20015) |
 | Chest | [Deathbone Chestplate](https://www.wowhead.com/forever/item=14624) · *Scholomance*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Deathbone Chestplate](https://www.wowhead.com/forever/item=14624) · *Scholomance*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
-| Wrist | [Sentinel's Wristguards](https://www.wowhead.com/forever/item=250582) · *Blacksmithing*<br>+ [Enchant Bracer - Deflection](https://www.wowhead.com/forever/spell=13922) | [Wristguards of True Flight](https://www.wowhead.com/forever/item=18812) · *Molten Core*<br>+ [Enchant Bracer - Deflection](https://www.wowhead.com/forever/spell=13922) |
-| Hands | [Force Imbued Gauntlets](https://www.wowhead.com/forever/item=18383) · *Illyanna Ravenoak, Dire Maul*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) | [Sentinel's Gloves](https://www.wowhead.com/forever/item=250552) · *Blacksmithing*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) |
-| Waist | [Sentinel's Waistguard](https://www.wowhead.com/forever/item=250572) · *Blacksmithing* | [Belt of Might](https://www.wowhead.com/forever/item=16864) · *Molten Core* |
+| Wrist | [Magically Sealed Bracers](https://www.wowhead.com/forever/item=18351) · *Magister Kalendris, Dire Maul*<br>+ [Enchant Bracer - Deflection](https://www.wowhead.com/forever/spell=13922) | [Wristguards of True Flight](https://www.wowhead.com/forever/item=18812) · *Molten Core*<br>+ [Enchant Bracer - Deflection](https://www.wowhead.com/forever/spell=13922) |
+| Hands | [Force Imbued Gauntlets](https://www.wowhead.com/forever/item=18383) · *Illyanna Ravenoak, Dire Maul*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) | [Gauntlets of Might](https://www.wowhead.com/forever/item=16863) · *Lucifron, Molten Core*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) |
+| Waist | [Handcrafted Mastersmith Girdle](https://www.wowhead.com/forever/item=13502) · *Goraluk Anvilcrack, Blackrock Spire* | [Belt of Might](https://www.wowhead.com/forever/item=16864) · *Molten Core* |
 | Legs | [Legplates of the Eternal Guardian](https://www.wowhead.com/forever/item=11927) · *Blackrock Depths*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) | [Legplates of Wrath](https://www.wowhead.com/forever/item=16962) · *Ragnaros, Molten Core*<br>+ [Lesser Arcanum of Voracity](https://www.wowhead.com/forever/item=11647) |
 | Feet | [Shalehusk Boots](https://www.wowhead.com/forever/item=11787) · *Panzor the Invincible, Blackrock Depths*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) | [Shalehusk Boots](https://www.wowhead.com/forever/item=11787) · *Panzor the Invincible, Blackrock Depths*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) |
 | Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21202) | [Band of Accuria](https://www.wowhead.com/forever/item=17063) · *Ragnaros, Molten Core* |
 | Finger | [Tarnished Elven Ring](https://www.wowhead.com/forever/item=18500) · *Dire Maul* | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21202) |
-| Trinket | [Demon's Blood](https://www.wowhead.com/forever/item=10779) | [Demon's Blood](https://www.wowhead.com/forever/item=10779) |
-| Trinket | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) |
-| Main hand | [Greenhammer](https://www.wowhead.com/forever/item=279261) · *Blacksmithing*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) | [Blackguard](https://www.wowhead.com/forever/item=19168) · *Blacksmithing*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) |
-| Off hand | [Evergreen Shield](https://www.wowhead.com/forever/item=279262) · *Blacksmithing*<br>+ [Enchant Shield - Greater Stamina](https://www.wowhead.com/forever/item=16217) | [Malistar's Defender](https://www.wowhead.com/forever/item=17106) · *Ragnaros, Molten Core*<br>+ [Enchant Shield - Greater Stamina](https://www.wowhead.com/forever/item=16217) |
+| Trinket | [Hand of Justice](https://www.wowhead.com/forever/item=11815) · *Emperor Dagran Thaurissan, Blackrock Depths* | [Demon's Blood](https://www.wowhead.com/forever/item=10779) |
+| Trinket | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437) | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437) |
+| Main hand | [Greenhammer](https://www.wowhead.com/forever/item=279261) · *Blacksmithing*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) | [Brutality Blade](https://www.wowhead.com/forever/item=18832) · *Garr, Molten Core*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) |
+| Off hand | [Draconian Deflector](https://www.wowhead.com/forever/item=12602) · *Blackrock Spire*<br>+ [Enchant Shield - Greater Stamina](https://www.wowhead.com/forever/item=16217) | [Malistar's Defender](https://www.wowhead.com/forever/item=17106) · *Ragnaros, Molten Core*<br>+ [Enchant Shield - Greater Stamina](https://www.wowhead.com/forever/item=16217) |
 | Ranged/relic | [Ancient Bone Bow](https://www.wowhead.com/forever/item=18680) · *Scholomance* | [Ancient Bone Bow](https://www.wowhead.com/forever/item=18680) · *Scholomance* |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://elliotwood.github.io/Forever/forever/warrior/protection/#eJzMVEFoU00Qzux7eW8z6Z+mj/78r/trWQOWGHiySYyYXpL2okeFHqQo9tmkJlaTkLxDxUtFAhWV1pPWHlqQgIJC8VCkJxFbUkhRBHsQragFBXuIB0E8ySamPXi14nea/Wbm25lhd7CNgh9M4BAEAUbX1okIOARJOArHoQDjAOyzmxI/sIuo0yuTYG54UaWrk4AKvXwedfpsCsx3PtToXNH84EOdrlXazRldeibBfOtDldYq7ajRmydlrkavnmiyLyqAKn06JZVmBlCh16Xcm3KHuSll1ssd5rqM+3YDAnv9y1nzWpZ/2R3cmIVbcMeeg/v2XXjVNw+zFXgM5WwVoB+3e1ok3dFYVAghopaIWSImYtGoiIioCAsRjsbCVaK+J3UF/0VkFLWgRleWIKCjGxUrXDJGjSG7cO5UvuDwiIgctETcisR7+XDGzp1Jp3i+yO1UKp3ipy9wJ5PmxbxjO9l8jpfSdnE4w4OldJoXinnHcuzcqNVyW033/rOlfG4f05kbFfpRM1RGel0GZRpTkdDDRhtr1VRdAgMZZRqq9OsiGEHWg/+Huqhi+J6AF91BN10dNIjfLaUQYkxvcZx1oz/ko5pBii6Zj+RAjCFSDkFKl5fAGPsDLXaiN+BBPSIbXRiURdKFwV+GGxaW2JnhTvxjeJlnayqm8olUoU4ilxRXA53Jh8SLHtT98t1/h8A9xSN51/hIsuv2tMRKYs9IA2uJSJ2YKk+EqsT1V8FJtqwdRc+D335PfLVWq7UNzSf7fhLJIZgAmIZsvl5eGXiZiDdY1/NEn4ys1TYTx5rG60RIoY/+6yV+6N+1/e+b2+tIY39loABjMGb8GAAJVvG+); Phase 1 BiS: [full raid](https://elliotwood.github.io/Forever/forever/warrior/protection/#eJzMVEFoE10Qzrzd7E4m/fOHpT//9v2/5RmwxMDKS2LE9JK0Fz0q9CBFsGuTmlhNQpJDBQ+VGiiooIJg7aEFKVpQKB5K6UkqLSmkKAU9iGjVgh56iAdBxINsYtqDVyt+p3nfzHxvZnhvqA3BDyYICIIEo2P7xCQchiQcgxNQgFEAvuVG5gd+kXR8chnMTS+pOFsBUnDsPOn49DqYb32k4XTRfO8jHb/dBHNSJx0XZv423/hIxY0xIB2XmskaXjnZpO9VgFRcn3GkJvtIwWuO3sYtMLccnfUKmK+duC83ILDPv5I1r2bFpz3BzSm4DXftaXhg34eXPXMwNQOPoZKtAvTSTlOLrDMai0opZdSSMUvGZCwalREZlWEpw9FYuMrUd6yu0D9EHEkLari6DAGd3KRY4ZIxbAzYhXOn8oWyiMjIIUvGrUi8Wwxm7NyZdErki8JOpdIpcfqCKGfSopgv2+VsPidKabs4mBHBUjotCsV82SrbuWGr5baa7gNnS/ncfq5zNyn4QTNUzrpdBnKNq8TwiNHGWzVVl8EgjlwjFT8vghHkXfRfqAMVw7cEXnIH3bjWbzC/25EiiHG9xQneSf6QDzWDFV1OPrGDMU6EAoKIK8tgjPyGFtvJG/CQHnEane93isT5/p+GG5aW3J3hjv9leLlneyqm8pFVoc4ilxRXA+3JR8xLHtL9zsP/CoFZxePwrtGhZMedCQerib1DDbxIROrMVEUiVGWuPwrlZMvaVXQ9/OX3xNdqtVrbwFyy5weRHIBxgAnI5uuV1b7niXiDdT1L9DiRtdpW4njTeJUIKbjwbzfzQ+//O/++ub6ONhZYBgowAiPG9wEAX2bxyg==).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://elliotwood.github.io/Forever/forever/warrior/protection/#eJzMVE1oE1sUzrkzmTk5KWE6r483mffDNPBKDEy5yTBquknajS4VXEip2GmTmlhNQpJFFYSKBBSF1JVWFy1IUUGxCBbpQkRsSSHFIuhC/MFasIsu6kIQN8qkpgXXtfitzv3Oued+91zuRy0ICmhgQBg4qMHNFeOwF5JwAA5DAUYB9GUJmQL6aZLxQhW0FT+JuFgFEvDcSZLx2Rho7wMk4WRR+xAgGe9VQbsuu5kqaO8CJOCjLEl45Yi7VcKLfS4p4vMpIBGfjrmNbvaRiA+WFJLxTaVVW3PbzQ5ob926L5ch9L8yn9UuZY1P/4ZXJuAq3HAm4Y5zC151T8PEFDyGSrYG0ENbV5pl/1m2xTnnlsltk9vctiwe4xaPch617GiNictsVaQ/iXQkKSzhwhyEZPKSYEZL6rDa7xROHM0XykaMx3abPG7G4l3GYMbJHUunjHzRcFKpdMoYOGWUM2mjmC875Ww+Z5TSTnEwY4RL6bRRKObLZtnJDZvNtLmR7jxeyud26bLuJQE/Sqqosy6Pirqki8Rwn9qiNzXV5kA985OUKDej9jZLCZISCaCgsqJHl0gkFucNcd/aVNLRpfDzLKhhvYP+jgRRUANPwE/esBcXe1WmeN1iAluXm1wFdkB1O/0RaUWpodpHMnktq3OPrROhAWHE+TlQR3bgHdvIH/KRHHMHNtPrjgJnelW/7tschyasshqss9hZwdNAW/I+85OPZMX9bl8hdFvwubxndCgZvDbuYiHRPtTAy0RsnWmikYjUmOe3QjnZjH4pOu5u+znxxXq93tI/nez+QST74TzAOGTz65WFQy8S8QbrWUp0u5X1+lri4EbwOhER8OFfXUyBnn+2/GbDNPc3bDMDBRiBEfX7ACcfFl4=); Phase 1 BiS: [full raid](https://elliotwood.github.io/Forever/forever/warrior/protection/#eJzMVE1oE1sUzrkzmTk5KWHevD7eZN4P08AreYEpNxlGTTdJu9GlQhdSBDs2qYnVJCRZ1EWhUgOCLqpurF20IEULCkWwSFdSaUkhxVLQhYj1p2IXXdSFICIok5gWXNfitzr3O+ee+91zuR+1ICiggQFh4KAGd1aMwyFIwlE4DgUYAdDfScgU0IdJxscXQdvwk4gzFSABR8+RjE/GQHsdIAmnitrbAMn45RpoEzLJuD4K2nqARHw1CiTjQmOzhJdPNOjbFSAR16bdVhM9JOKDVYVkHLsO2pbbaK0C2ku38NNVCP2nLGW1K1njwz/hjUm4AbecKbjr3IHnXbMwOQ2PoJKtAnTT7q3m2b+WbXHOuWVy2+Q2ty2Lx7jFo5xHLTtaZeIbtinSH0Q6khSWcHkRQjJ5STCjJXVQ7XMKZ0/mC2UjxmMHTB43Y/FOoz/j5E6nU0a+aDipVDplnDpvlDNpo5gvO+VsPmeU0k6xP2OES+m0USjmy2bZyQ2azbTZSHecKeVz/+uy7iUB30uqqLNOj4q6pIvE8LDaojc1VRdBHf5BSpSbUXuPpQRJiQRQUFnRo0skEovzurivrSrp6FL4cR7UsN5Of0WCKKiBBfCTN+zFlV6VKV63mMDW5SZXgX1Q3Ua/R35Dqa7aRzJ5LavjoK0ToQFhxKVFUIf24R1byR/ykRxzBzbX644C53pVv+7bGYcmbLIqbLPYBcFTR2vyPvOTj2TF/XGfITQj+FzeMzKQDN4cd7GcaBuo41kits000UhEqszzS6GcbEY/Fe339vyc+EqtVmvpm012fSeSfXAJYByy+e3Kcs/TRLzOelYTXW5lrbaVONYIXiQiAj78s5Mp0P33rt80fPNI3TkzUIAhGFK/DQCYlRb9).
 
 ## Other builds of this spec
 
+- [Protection (optimized)](../research/raid/builds/opt-prot-tank-raid-tank.md) (14/5/32) — [open the talent tree](https://talentsforever.com/warrior/60/35300003-05-050533020301001351-6)
 - [Protection — Raid Tank](../research/raid/builds/prot-raid-tank.md) (14/5/32) — [open the talent tree](https://talentsforever.com/warrior/60/3500501-05-150533020300001351-6)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-15 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-16 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
 

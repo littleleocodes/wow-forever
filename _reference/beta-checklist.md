@@ -190,11 +190,11 @@ Models: holy-heal, ret-dps, prot-tank. Same mob, same gear, ~10 kills each, note
 - Holy Strike: level learned, damage and cooldown (Sacred Arbiter and Improved Holy Strike depend on it).
 - Improved Seals rank scaling (5% read at rank 1).
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-- Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
-- Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
 - An open-search Shockadin leveling build: check it while leveling at launch.
 - An open-search Protection leveling build: check it while leveling at launch.
 - An open-search Retribution leveling build: check it while leveling at launch.
+- Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
+- Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
 
 ## Priest
 

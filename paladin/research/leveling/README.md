@@ -16,11 +16,11 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 
 | Build | Split | Role |
 |---|---|---|
-| [Holy — Leveling into the raid build](builds/holy-leveling.md) 🔬 | 34/11/6 | DPS |
-| [Protection — Leveling into the raid build](builds/protection-leveling.md) 🔬 | 0/32/19 | DPS |
 | [Shockadin — Leveling (open talent search)](builds/shockadin-open-leveling.md) 🔬 | 14/8/29 | DPS |
 | [Protection — Leveling (open talent search)](builds/protection-open-leveling.md) 🔬 | 2/31/18 | DPS |
 | [Retribution — Leveling (open talent search)](builds/retribution-open-leveling.md) 🔬 | 12/8/31 | DPS |
+| [Holy — Leveling into the raid build](builds/holy-leveling.md) 🔬 | 34/11/6 | DPS |
+| [Protection — Leveling into the raid build](builds/protection-leveling.md) 🔬 | 0/33/18 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

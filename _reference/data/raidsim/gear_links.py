@@ -202,13 +202,13 @@ def support_sets(classes, db, repo, apiv):
     for cls, spec in sorted(SM.TANK_TREE.items()):
         if classes and cls not in classes:
             continue
-        sets = {t: TG.tier_gear(cls, spec, t, armor=True) for t in ("prebis", "bis")}
+        sets = {t: TG.tier_gear(cls, spec, t) for t in ("prebis", "bis")}   # plain sets: the armor patch (fill_armor.py) is in the simulator since 2026-10-15
         sets = {t: p for t, p in sets.items() if p}
         if not sets:
             continue
         gear = {t: db.rows(p) for t, p in sets.items()}
         ilvl = {t: round(sum(x["ilvl"] or 0 for x in rows) / max(1, sum(1 for x in rows if x["ilvl"])), 1) for t, rows in gear.items()}
-        r = (rec.get(cls) or {}).get("classic_armor") or rec.get(cls) or {}
+        r = rec.get(cls) or {}
         sim = {}
         e = R.SPECS[cls].get(r.get("entry")) if r.get("entry") else None
         if e and r.get("build"):
@@ -221,7 +221,7 @@ def support_sets(classes, db, repo, apiv):
                     if row.get("link"):
                         sim[f"{t}-raid"] = f"{SITE}/{e['sim_spec']}/#{row['link']}"
         out[f"{cls}|{spec}|tank"] = {"class": cls, "spec": spec, "role": "tank", "gear": gear, "ilvl": ilvl, "sim": sim,
-                                     "build": r.get("build"), "armor": "classic"}
+                                     "build": r.get("build")}
     hg = ROOT / "_reference/data/heallab/heal_gear.py"
     if hg.exists():
         HG = _load("heal_gear", hg)

@@ -2,7 +2,7 @@
  "class": "druid",
  "spec": "Feral Combat",
  "entry": "feral-bear-tank",
- "date": "2026-10-14",
+ "date": "2026-10-15",
  "cycles": [
   {
    "cycle": 1,
@@ -91,15 +91,11 @@
     "differs": [
      [
       "Furor",
-      3
-     ],
-     [
-      "Furor",
       5
      ],
      [
       "Nature's Focus",
-      2
+      5
      ]
     ]
    },
@@ -205,56 +201,56 @@
    ],
    "important_features": [
     {
-     "feature": "Rend and Tear",
-     "importance": 0.336
+     "feature": "Heart of the Wild",
+     "importance": 0.3638
     },
     {
-     "feature": "Heart of the Wild",
-     "importance": 0.206
+     "feature": "Rend and Tear",
+     "importance": 0.2035
     },
     {
      "feature": "Feral Instinct",
-     "importance": 0.1277
+     "importance": 0.0966
     },
     {
      "feature": "Natural Reaction",
-     "importance": 0.0641
-    },
-    {
-     "feature": "Brutal Impact",
-     "importance": 0.0635
+     "importance": 0.0646
     },
     {
      "feature": "Blood Frenzy",
-     "importance": 0.0481
+     "importance": 0.0595
     },
     {
-     "feature": "Nature's Majesty",
-     "importance": 0.0322
+     "feature": "Brutal Impact",
+     "importance": 0.0573
     },
     {
      "feature": "Feral Combat points",
-     "importance": 0.0279
+     "importance": 0.0386
     },
     {
-     "feature": "Thick Hide",
-     "importance": 0.0241
+     "feature": "Nature's Majesty",
+     "importance": 0.0359
     },
     {
      "feature": "Naturalist",
-     "importance": 0.0155
+     "importance": 0.0226
     },
     {
      "feature": "Restoration points",
-     "importance": 0.0097
+     "importance": 0.01
     },
     {
      "feature": "Balance points",
-     "importance": 0.0072
+     "importance": 0.0069
+    },
+    {
+     "feature": "Thick Hide",
+     "importance": 0.0057
     }
    ],
    "simulated_builds": 13797,
-   "minutes": 32.8,
+   "minutes": 32.9,
    "rotation_changed": false
   },
   {
@@ -425,52 +421,52 @@
    ],
    "important_features": [
     {
-     "feature": "Heart of the Wild",
-     "importance": 0.3067
+     "feature": "Rend and Tear",
+     "importance": 0.3557
     },
     {
-     "feature": "Rend and Tear",
-     "importance": 0.2544
+     "feature": "Heart of the Wild",
+     "importance": 0.1877
     },
     {
      "feature": "Feral Instinct",
-     "importance": 0.1076
-    },
-    {
-     "feature": "Brutal Impact",
-     "importance": 0.0757
-    },
-    {
-     "feature": "Feral Combat points",
-     "importance": 0.0499
-    },
-    {
-     "feature": "Blood Frenzy",
-     "importance": 0.0399
+     "importance": 0.1234
     },
     {
      "feature": "Natural Reaction",
-     "importance": 0.0358
+     "importance": 0.0598
+    },
+    {
+     "feature": "Brutal Impact",
+     "importance": 0.0542
+    },
+    {
+     "feature": "Blood Frenzy",
+     "importance": 0.0493
+    },
+    {
+     "feature": "Feral Combat points",
+     "importance": 0.0375
     },
     {
      "feature": "Nature's Majesty",
-     "importance": 0.0291
-    },
-    {
-     "feature": "Thick Hide",
-     "importance": 0.0201
+     "importance": 0.035
     },
     {
      "feature": "Naturalist",
-     "importance": 0.0188
-    },
-    {
-     "feature": "Restoration points",
-     "importance": 0.0107
+     "importance": 0.029
     },
     {
      "feature": "Balance points",
-     "importance": 0.0098
+     "importance": 0.0099
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0094
+    },
+    {
+     "feature": "Thick Hide",
+     "importance": 0.0048
     }
    ],
    "simulated_builds": 4717,
@@ -481,7 +477,7 @@
  "ref": {
   "build": "feral-bear-tank",
   "threat": 1221.5826208197107,
-  "dtps": 988.1423459892501,
+  "dtps": 634.8131811309706,
   "fights": 20000
  },
  "converged": 2,
@@ -537,7 +533,7 @@
       0.0
      ]
     ],
-    "minutes": 88.2
+    "minutes": 78.9
    }
   ],
   "moved": false
@@ -556,7 +552,7 @@
    "se": 0.0002
   }
  },
- "minutes": 138.3,
+ "minutes": 128.6,
  "build": {
   "written": null,
   "why": "confirms feral-bear-tank (+0.00%)"

@@ -4,12 +4,12 @@
 
 | Build | Split | Tank value | Threat/s | Damage taken/s | DPS | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `protection-ml-tank` | 0/32/19 | 1.042 | 504 | 912 | 419 | 5 | +50.9% |
-| `opt-prot-tank-raid-tank` | 0/32/19 | 1.024 | 489 | 917 | 408 | 6 | +53.7% |
-| `prot-tank` | 0/23/28 | 1.000 | 506 | 993 | 456 | 3 | +45.7% |
-| sim preset: Protection 0/45/6 | - | 0.924 | 443 | 1020 | 375 | 20 | - |
-| sim preset: P4 Prot | - | 0.901 | 454 | 1096 | 395 | 22 | - |
-| sim preset: P5 Prot | - | 0.893 | 448 | 1101 | 389 | 23 | - |
+| `protection-ml-tank` | 0/33/18 | 1.046 | 503 | 516 | 419 | 5 | +51.7% |
+| `opt-prot-tank-raid-tank` | 0/32/19 | 1.030 | 489 | 519 | 408 | 6 | +53.7% |
+| `prot-tank` | 0/23/28 | 1.000 | 505 | 567 | 455 | 3 | +45.7% |
+| sim preset: Protection 0/45/6 | - | 0.929 | 443 | 577 | 375 | 20 | - |
+| sim preset: P4 Prot | - | 0.905 | 454 | 621 | 395 | 21 | - |
+| sim preset: P5 Prot | - | 0.899 | 448 | 622 | 389 | 23 | - |
 
 Tank value = 0.5 x threat per second / the hand draft's + 0.5 x the hand draft's damage taken per second / this build's (the raid-tank profile's weights); the shares below are threat shares.
 
@@ -17,24 +17,23 @@ Tank value = 0.5 x threat per second / the hand draft's + 0.5 x the hand draft's
 
 | Action | Share |
 |---|---|
-| Auto Attack | 22.3% |
+| Auto Attack | 23.0% |
 | Consecration | 11.8% |
-| Judgement of Righteousness | 11.3% |
-| Holy Strike | 11.0% |
-| Holy Shield | 10.7% |
-| Seal of Righteousness | 10.5% |
-| Lay on Hands | 9.7% |
+| Judgement of Righteousness | 11.4% |
+| Holy Strike | 11.2% |
+| Seal of Righteousness | 10.8% |
+| Holy Shield | 10.6% |
+| Lay on Hands | 9.8% |
 | OtherActionManaGain | 7.0% |
 | Retribution Aura | 3.6% |
-| Eye for an Eye | 1.3% |
 | Thorns | 0.8% |
 
-Mapped onto the spec model's sources: `white` 32%, `seal` 31%, `consecration` 17%, `holy_strike` 16%, `ret_aura` 5%; 29% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
+Mapped onto the spec model's sources: `white` 32%, `seal` 31%, `consecration` 16%, `holy_strike` 16%, `ret_aura` 5%; 28% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
-- protection-ml-tank: `-0530513301301151-50222230021`
+- protection-ml-tank: `-0530513301301251-50223230001`
 - opt-prot-tank-raid-tank: `-0530513301311051-50025330001`
 - prot-tank: `-0530513101301-502253300110303`
 - sim preset: Protection 0/45/6: `-5532513321301551-15`

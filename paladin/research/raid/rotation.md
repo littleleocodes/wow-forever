@@ -130,7 +130,7 @@ Our tuned rotation `prot-tank-raid.apl.json` (the simulator's `default.apl.json`
 
 **Rotation search** (every change kept had to win on two random seeds and cost none of the tuning builds more than 0.1%):
 
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-14, 7 changes to the base rotation; third-seed check: deep: tank 399 -> 419 DPS (+5.0%), opt-prot-tank-raid-tank 390 -> 408 DPS (+4.8%), sim preset: Protection 0/45/6 368 -> 374 DPS (+1.7%), prot-tank 459 -> 456 DPS (-0.7%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-15, 7 changes to the base rotation; third-seed check: deep: tank 398 -> 419 DPS (+5.4%), protection-ml-tank 396 -> 416 DPS (+5.0%), sim preset: Protection 0/45/6 368 -> 374 DPS (+1.6%), prot-tank 458 -> 455 DPS (-0.7%), opt-prot-tank-raid-tank 390 -> 408 DPS (+4.7%)):
   1. insert before the filler: if health % < 10%: cast Lay on Hands (+7.8%, pass 1)
   2. drop the condition: if time left on Seal of Righteousness < 2s: cast Judgement (+4.3%, pass 1)
   3. insert at the top: cast Holy Shield (+1.3%, pass 1)
@@ -159,18 +159,18 @@ Damage by ability (threat for tanks):
 
 | Ability | [`protection-ml-tank`](builds/protection-ml-tank.md) | [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) | *Protection 0/45/6* | *P4 Prot* | *P5 Prot* |
 |---|---|---|---|---|---|
-| Auto Attack | 22% | 23% | 25% | 26% | 26% |
-| Seal of Righteousness | 11% | 11% | 12% | 13% | 13% |
+| Auto Attack | 23% | 23% | 25% | 26% | 26% |
+| Seal of Righteousness | 11% | 11% | 12% | 13% | 14% |
 | Consecration | 12% | 12% | 9% | 8% | 7% |
 | Holy Strike | 11% | 12% | 10% | 8% | 8% |
-| Judgement of Righteousness | 11% | 10% | 10% | 12% | 12% |
+| Judgement of Righteousness | 11% | 10% | 10% | 11% | 12% |
 | Holy Shield | 11% | 11% | 11% | 11% | 11% |
 | Lay on Hands | 10% | 10% | 11% | 11% | 11% |
 | OtherActionManaGain | 7% | 7% | 6% | 6% | 6% |
 | Retribution Aura | 4% | 4% | 4% | 4% | 4% |
-| Eye for an Eye | 1% | 0% | 0% | 0% | 0% |
+| Thorns | 1% | 1% | 1% | 1% | 1% |
 
-### [`prot-tank`](builds/prot-tank.md) (ours: hand draft, 456 DPS)
+### [`prot-tank`](builds/prot-tank.md) (ours: hand draft, 455 DPS)
 
 Before the pull: at -30s: cast Righteous Fury; at -3.5s: cast Seal of Righteousness; at -2s: cast Holy Shield.
 
@@ -199,4 +199,4 @@ Damage by ability (threat for tanks):
 | Retribution Aura | 5% |
 | OtherActionManaGain | 5% |
 | Thorns | 1% |
-| Eye for an Eye | 1% |
+| Eye for an Eye | 0% |

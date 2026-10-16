@@ -54,6 +54,29 @@
   },
   {
    "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpLt",
+      "lhs": {
+       "currentRage": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "90"
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 2687
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-15: changed or added by the rotation search (see prot-tank-rotation-search.json)"
+  },
+  {
+   "action": {
     "castSpell": {
      "spellId": {
       "spellId": 23925
@@ -102,7 +125,7 @@
       },
       "rhs": {
        "const": {
-        "val": "45"
+        "val": "33.75"
        }
       }
      }
@@ -114,7 +137,8 @@
       "rank": 8
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-15: changed or added by the rotation search (see prot-tank-rotation-search.json)"
   },
   {
    "action": {
@@ -136,16 +160,6 @@
     }
    },
    "notes": "apl_opt 2026-09-29: changed or added by the rotation search (see prot-tank-rotation-search.json)"
-  },
-  {
-   "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 1672
-     }
-    }
-   },
-   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see prot-tank-rotation-search.json)"
   },
   {
    "action": {

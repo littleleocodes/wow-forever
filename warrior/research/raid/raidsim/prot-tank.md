@@ -4,35 +4,36 @@
 
 | Build | Split | Tank value | Threat/s | Damage taken/s | DPS | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `opt-prot-tank-raid-tank` | 14/5/32 | 1.007 | 686 | 1162 | 512 | 0 | +58.4% |
-| `prot-raid-tank` | 14/5/32 | 1.000 | 676 | 1161 | 497 | 0 | +57.3% |
-| sim preset: Protection | - | 0.949 | 638 | 1217 | 466 | 0 | - |
-| sim preset: Protection 1/0/50 | - | 0.934 | 625 | 1231 | 458 | 0 | - |
+| `protection-ml-tank` | 17/3/31 | 1.011 | 700 | 672 | 518 | 0 | +56.0% |
+| `opt-prot-tank-raid-tank` | 14/5/32 | 1.005 | 694 | 675 | 515 | 0 | +58.4% |
+| `prot-raid-tank` | 14/5/32 | 1.000 | 685 | 673 | 501 | 0 | +57.3% |
+| sim preset: Protection | - | 0.948 | 646 | 706 | 468 | 0 | - |
+| sim preset: Protection 1/0/50 | - | 0.931 | 631 | 714 | 459 | 0 | - |
 
 Tank value = 0.5 x threat per second / the hand draft's + 0.5 x the hand draft's damage taken per second / this build's (the raid-tank profile's weights); the shares below are threat shares.
 
-## Damage shares (`opt-prot-tank-raid-tank`, simulator actions)
+## Damage shares (`protection-ml-tank`, simulator actions)
 
 | Action | Share |
 |---|---|
-| Heroic Strike | 32.2% |
-| Shield Slam | 29.7% |
+| Heroic Strike | 36.1% |
+| Shield Slam | 29.4% |
 | Revenge | 15.2% |
-| Auto Attack | 11.5% |
+| Auto Attack | 9.0% |
 | Rend | 4.4% |
 | Retribution Aura | 2.3% |
-| Deep Wound | 1.8% |
+| Deep Wound | 1.5% |
 | Thorns | 1.0% |
-| Shield Bash | 0.8% |
-| OtherActionRageGain | 0.7% |
+| OtherActionRageGain | 0.8% |
 | Dragonbreath Chili | 0.3% |
 | Lightning Bolt | 0.1% |
 
-Mapped onto the spec model's sources: `heroic_strike` 51%, `revenge` 24%, `white` 18%, `rend` 7%; 37% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
+Mapped onto the spec model's sources: `heroic_strike` 56%, `revenge` 24%, `white` 14%, `rend` 7%; 35% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
+- protection-ml-tank: `35310003002-03-250530020310001351`
 - opt-prot-tank-raid-tank: `35300003-05-050533020301001351`
 - prot-raid-tank: `3500501-05-150533020300001351`
 - sim preset: Protection: `31--255533123330201351`

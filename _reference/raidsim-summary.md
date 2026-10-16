@@ -15,7 +15,7 @@
 | mage | `fire-raid` | `fire-raid` | 515 | Fire DPS | 518 | `opt-fire-raid-raid-dps` | 515 |
 | mage | `frost-raid` | `frost-ml-raid` | 602 | Frost DPS | 557 | `opt-frost-raid-raid-dps` | 597 |
 | mage | `frostfire-raid` | `frostfire-raid` | 472 | - | - | - | - |
-| paladin | `prot-tank` | `prot-tank` | 456 | P4 Prot | 395 | `opt-prot-tank-raid-tank` | 408 |
+| paladin | `prot-tank` | `prot-tank` | 455 | P4 Prot | 395 | `opt-prot-tank-raid-tank` | 408 |
 | paladin | `ret-dps` | `opt-ret-dps-raid-dps` | 533 | P4/P5 Ret | 514 | `opt-ret-dps-raid-dps` | 533 |
 | priest | `shadow-dps` | `opt-shadow-dps-raid-dps` | 593 | Shadow | 591 | `opt-shadow-dps-raid-dps` | 593 |
 | priest | `smite-dps` | `smite-discipline-raid` | 363 | - | - | - | - |
@@ -34,7 +34,7 @@
 | warrior | `arms-2h-raid` | `opt-arms-2h-raid-raid-dps` | 432 | DPS | 399 | `opt-arms-2h-raid-raid-dps` | 432 |
 | warrior | `arms-battle-raid` | `arms-community-parse` | 481 | - | - | - | - |
 | warrior | `fury-dw-raid` | `fury-open-raid` | 516 | DPS | 483 | `opt-fury-dw-raid-raid-dps` | 496 |
-| warrior | `prot-tank` | `opt-prot-tank-raid-tank` | 512 | Protection | 466 | `opt-prot-tank-raid-tank` | 512 |
+| warrior | `prot-tank` | `protection-ml-tank` | 518 | Protection | 468 | `opt-prot-tank-raid-tank` | 515 |
 
 ## DPS by environment: dummy, raid, maximum
 
@@ -58,7 +58,7 @@ The best of our builds per spec model on the boss-level training dummy with your
 | mage | Forever | `frostfire-raid` | `frostfire-fingers-of-frost-raid` (0/29/22) | 470 | 567 | 675 | 675 | 665 | - | - |
 | mage | Classic | `fire-raid` | `fire-raid` (17/31/3) | 495 | - | 1003 | 1014 | 1025 | - | Frost DPS 752 |
 | mage | Classic | `frost-raid` | `frost-arcane-power-raid` (31/0/20) | 461 | - | 781 | 836 | 866 | - | Frost DPS 752 |
-| paladin | Forever | `prot-tank` | `prot-tank` (0/23/28) | 172 | 203 | 456 | 456 | 455 | - | P4 Prot 395 |
+| paladin | Forever | `prot-tank` | `prot-tank` (0/23/28) | 170 | 201 | 455 | 455 | 455 | - | P4 Prot 395 |
 | paladin | Forever | `ret-dps` | `retribution-ml-raid` (11/8/32) | 523 | 583 | 982 | 982 | 996 | `opt-ret-dps-parse` 979 | P4/P5 Ret 952 |
 | paladin | Classic | `ret-dps` | `ret-raid-dps` (11/0/40) | 213 | - | 661 | 661 | 671 | - | P4/P5 Ret 710 |
 | priest | Forever | `shadow-dps` | `opt-shadow-dps-raid-dps` (18/0/33) | 593 | 650 | 699 | 699 | 674 | `opt-shadow-dps-parse` 699 | Shadow 696 |
@@ -82,7 +82,7 @@ The best of our builds per spec model on the boss-level training dummy with your
 | warrior | Forever | `arms-2h-raid` | `opt-arms-2h-raid-raid-dps` (20/31/0) | 432 | 484 | 881 | 881 | 927 | `opt-arms-2h-raid-parse` 881 | DPS 827 |
 | warrior | Forever | `arms-battle-raid` | `arms-community-parse` (37/14/0) | 481 | 561 | 964 | 964 | 960 | `arms-community-parse` 964 | Arms 39/12/0 962 |
 | warrior | Forever | `fury-dw-raid` | `fury-open-raid` (18/31/2) | 516 | 531 | 862 | 862 | 923 | `opt-fury-dw-raid-parse` 831 | DPS 821 |
-| warrior | Forever | `prot-tank` | `opt-prot-tank-raid-tank` (14/5/32) | 294 | 327 | 512 | 391 | 385 | - | Protection 357 |
+| warrior | Forever | `prot-tank` | `protection-ml-tank` (17/3/31) | 286 | 322 | 518 | 394 | 388 | - | Protection 360 |
 | warrior | Classic | `fury-dw-raid` | `fury-dw-raid` (17/34/0) | 527 | - | 1843 | 2163 | 2322 | - | DPS 2163 |
 
 ## Classic Era check (upstream wowsims/classic)

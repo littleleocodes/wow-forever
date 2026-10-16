@@ -6354,7 +6354,7 @@
   }
  },
  "last_run": {
-  "date": "2026-10-15T12:42:54",
+  "date": "2026-10-16T00:02:36",
   "classes": [
    "mage",
    "priest",
@@ -6375,13 +6375,13 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 882,
+  "seconds": 904,
   "refresh": null,
   "regen_log": [
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py mage priest warlock hunter warrior rogue paladin shaman druid",
     "rc": 0,
-    "seconds": 2,
+    "seconds": 3,
     "tail": [
      "formatted F:\\wow-forever\\paladin\\research\\talents\\forever\\proposed-builds.json",
      "formatted F:\\wow-forever\\shaman\\research\\talents\\forever\\proposed-builds.json",
@@ -6401,7 +6401,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py mage priest warlock hunter warrior rogue paladin shaman druid",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
      "druid: raid sim section written (3 specs)",
      "hunter: raid sim section written (4 specs)",
@@ -6466,7 +6466,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py mage priest warlock hunter warrior rogue paladin shaman druid",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 2,
     "tail": [
      "mage: raid and leveling rotations, DPS ranking written",
      "priest: raid and leveling rotations, DPS ranking written",
@@ -6493,8 +6493,8 @@
      "  ok   balance-open-leveling (38/0/13)",
      "  ok   feral-combat-open-leveling (11/31/9)",
      "  ok   restoration-ml-heal (11/5/35)",
-     "  ok   restoration-leveling (11/5/35)",
      "  ok   opt-balance-dps-leveling-st (36/2/13)",
+     "  ok   restoration-leveling (11/5/35)",
      "",
      "all builds valid"
     ],
@@ -6503,7 +6503,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_builds.py",
     "rc": 0,
-    "seconds": 2,
+    "seconds": 4,
     "tail": [
      "rogue/classic-baseline: 5 build pages + README.md",
      "rogue: 27 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
@@ -6560,7 +6560,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py mage --write",
     "rc": 0,
-    "seconds": 156,
+    "seconds": 163,
     "tail": [
      "| fire-leveling -> level-20 build (0/0/11) | +0.7% | +3.6% | +42.8% | +44.0% | +52.7% | +54.5% | +55.5% | +56.5% | +60.1% | +63.0% | +64.2% |",
      "| fire-leveling -> level-30 build (0/10/11) | +0.7% | +3.6% | +14.9% | +20.7% | +52.7% | +54.5% | +55.5% | +56.5% | +60.1% | +63.0% | +64.2% |",
@@ -6600,7 +6600,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py warlock --write",
     "rc": 0,
-    "seconds": 83,
+    "seconds": 89,
     "tail": [
      "| affliction-leveling -> level-20 build (11/0/0) | +0.3% | +2.3% | +4.6% | +6.9% | +16.6% | +18.0% | +19.9% | +21.0% | +21.7% | +22.1% | +23.2% |",
      "| affliction-leveling -> level-30 build (21/0/0) | +0.3% | +2.3% | +4.6% | +6.9% | +16.6% | +18.0% | +19.9% | +21.0% | +21.7% | +22.1% | +23.2% |",
@@ -6640,7 +6640,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py warrior --write",
     "rc": 0,
-    "seconds": 100,
+    "seconds": 99,
     "tail": [
      "| fury-dw-raid -> level-20 build (0/11/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.9% | +21.4% | +34.9% | +36.1% | +36.8% | +37.4% | +39.2% |",
      "| fury-dw-raid -> level-30 build (0/21/0) | +0.6% | +4.1% | +8.0% | +9.6% | +16.9% | +21.4% | +34.9% | +36.1% | +36.8% | +37.4% | +39.2% |",
@@ -6680,7 +6680,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py paladin --write",
     "rc": 0,
-    "seconds": 63,
+    "seconds": 64,
     "tail": [
      "| ret-dps -> level-20 build (0/0/11) | +0.7% | +4.7% | +15.4% | +22.9% | +26.4% | +30.3% | +32.6% | +33.0% | +33.7% | +36.2% | +36.7% |",
      "| ret-dps -> level-30 build (0/0/21) | +0.7% | +4.1% | +14.1% | +23.0% | +26.5% | +30.3% | +32.6% | +33.0% | +33.7% | +36.1% | +36.7% |",
@@ -6700,7 +6700,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py shaman --write",
     "rc": 0,
-    "seconds": 121,
+    "seconds": 123,
     "tail": [
      "| elemental-dps -> level-20 build (11/0/0) | +1.3% | +6.7% | +12.5% | +14.0% | +17.7% | +21.9% | +22.0% | +28.0% | +28.6% | +32.0% | +32.4% |",
      "| elemental-dps -> level-30 build (14/7/0) | +1.3% | +6.7% | +12.5% | +15.0% | +18.9% | +23.1% | +23.8% | +28.0% | +28.6% | +32.0% | +32.4% |",
@@ -6720,7 +6720,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py druid --write",
     "rc": 0,
-    "seconds": 176,
+    "seconds": 175,
     "tail": [
      "| balance-dps -> level-20 build (11/0/0) | +1.7% | +11.3% | +20.4% | +25.4% | +33.1% | +42.2% | +48.6% | +53.0% | +53.3% | +54.3% | +56.6% |",
      "| balance-dps -> level-30 build (21/0/0) | +1.7% | +11.3% | +18.8% | +24.6% | +34.2% | +43.5% | +50.4% | +54.1% | +54.2% | +55.1% | +57.4% |",
@@ -6757,7 +6757,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\compare_effects.py",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
      "druid    buff=8 nerf=20 reworked=0 new=18 removed=13 same=6 unscored=0",
      "hunter   buff=5 nerf=18 reworked=0 new=18 removed=14 same=9 unscored=0",
@@ -6794,7 +6794,7 @@
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote _reference\\launch-checklist.md (303 per-build questions)"
+     "wrote _reference\\launch-checklist.md (304 per-build questions)"
     ],
     "stderr": []
    },
@@ -6819,7 +6819,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_report_index.py mage priest warlock hunter warrior rogue paladin shaman druid",
     "rc": 0,
-    "seconds": 4,
+    "seconds": 6,
     "tail": [
      "mage: leveling 3, raid 13, classic 10",
      "priest: leveling 3, raid 11, classic 3",

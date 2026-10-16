@@ -93,6 +93,14 @@ def later_craft(it):
 SUSPECT_ITEMS = {
     2816: "Death Speaker Scepter (item level 33): +68 healing and +28 Shadow damage in the fork's database (2ce8265), against +11 and +7 in "
           "Classic 1.12 (cmangos spells 7679, 7708); the only item level 33 item with that much; every healer set and the Shadow priest's took it",
+    # the 2026-10-15 scan of every item with Classic spell stats (975): spell damage or healing at least twice Classic's and 12 more
+    12260: "Searing Golden Blade (item level 39): +39 Fire damage against Classic's +10 (in the Fire and Frostfire pre-BiS sets)",
+    7757: "Windweaver Staff (item level 37): +51 Nature damage against Classic's +14 (in the Balance pre-BiS set)",
+    15109: "Staff of Soran'ruk (item level 25): +68 school damage against Classic's +18",
+    1484: "Witching Stave (item level 22): +27 school damage against Classic's +11",
+    15106: "Staff of Dar'Orahil (item level 40): +39 school damage against Classic's +19",
+    15105: "Staff of Noh'Orahil (item level 40): +39 school damage against Classic's +19",
+    10020: "Stormcloth Vest (item level 45): +58 healing against Classic's +29",
 }
 
 

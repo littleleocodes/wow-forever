@@ -63,13 +63,13 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-be
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`feral-bear-tank`](feral-bear-tank.md) | ours: hand draft | 7/35/9 | 1.000 | +0.0% | 1221 | 989 |
-| 2 | **[`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md)** | ours: optimizer | 7/35/9 | 1.000 | +0.0% | 1221 | 989 |
-| 3 | *Bear Tank 0/31/20* | community simulator | - | 0.880 | -12.0% | 989 | 1042 |
+| 1 | [`feral-bear-tank`](feral-bear-tank.md) | ours: hand draft | 7/35/9 | 1.000 | +0.0% | 1221 | 636 |
+| 2 | **[`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md)** | ours: optimizer | 7/35/9 | 1.000 | +0.0% | 1221 | 636 |
+| 3 | *Bear Tank 0/31/20* | community simulator | - | 0.880 | -12.0% | 989 | 670 |
 
 ## Rotation (community simulator, raid setting)
 
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-14, 3 changes to the base rotation; third-seed check: deep: tank 544 -> 541 DPS (-0.4%), feral-bear-tank 544 -> 541 DPS (-0.4%), sim preset: Bear Tank 0/31/20 501 -> 506 DPS (+0.9%), opt-feral-bear-tank-raid-tank 544 -> 541 DPS (-0.4%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-15, 3 changes to the base rotation; third-seed check: deep: tank 544 -> 541 DPS (-0.4%), feral-bear-tank 544 -> 541 DPS (-0.4%), sim preset: Bear Tank 0/31/20 501 -> 506 DPS (+0.9%), opt-feral-bear-tank-raid-tank 544 -> 541 DPS (-0.4%)):
   1. threshold 25 -> 50: if rage ≥ 25: cast Maul (+0.9%, pass 1)
   2. move down below 'if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate': cast Primal Bite (+0.6%, pass 1)
   3. insert before the filler: cast Barkskin (+2.2%, pass 3)
