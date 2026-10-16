@@ -55,7 +55,7 @@ The Combat build the machine-learning talent search found in a full raid (every 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 17/32/2 | 424 | +0.0% | 672 | -3.4% | 0 s |
+| 1 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 17/32/2 | 424 | +0.0% | 673 | -3.3% | 0 s |
 | 2 | **[`combat-ml-raid`](combat-ml-raid.md)** | ours: derived (ML search) | 16/33/2 | 406 | -4.1% | 695 | +0.0% | 0 s |
 | 3 | [`combat-daggers-raid`](combat-daggers-raid.md) | ours: hand draft | 16/33/2 | 404 | -4.8% | 688 | -1.0% | 0 s |
 | 4 | *Combat Dual-Wield 15/33/3* | community simulator | - | 399 | -5.9% | 678 | -2.4% | 0 s |

@@ -16,7 +16,7 @@
 | Spec | Pre-BiS | Phase 1 BiS |
 |---|---|---|
 | [Arms](arms.md) | 824 | 1000 |
-| [Fury](fury.md) | 872 | 888 |
+| [Fury](fury.md) | 887 | 903 |
 
 🔬 = a derived build (searched in a simulator). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 

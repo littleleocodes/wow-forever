@@ -6,9 +6,9 @@
 
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
-| 1 | [Enhancement](enhancement.md) 🔬 | 727 | best |
-| 2 | [Elemental-Enhancement](elemental-enhancement.md) 🔬 | 690 | -5% |
-| 3 | [Elemental](elemental.md) — Lightning Overload / Elemental Fury | 515 | -29% |
+| 1 | [Enhancement](enhancement.md) 🔬 | 754 | best |
+| 2 | [Elemental-Enhancement](elemental-enhancement.md) 🔬 | 713 | -5% |
+| 3 | [Elemental](elemental.md) — Lightning Overload / Elemental Fury | 515 | -32% |
 
 **Healing**: [Restoration](restoration.md) — Raid Healer.
 
@@ -16,7 +16,7 @@
 
 | Spec | Pre-BiS | Phase 1 BiS |
 |---|---|---|
-| [Enhancement](enhancement.md) | 742 | 743 |
+| [Enhancement](enhancement.md) | 748 | 749 |
 | [Elemental](elemental.md) | 497 | 510 |
 | [Elemental-Enhancement](elemental-enhancement.md) | - | - |
 

@@ -82,9 +82,9 @@ Allocation adopted on 2026-09-28 from the community simulator's own preset 'Impr
 | 5 | *Sinister Strike* | community simulator | - | 387 | -5.4% | 675 | -0.5% | 0 s |
 | 6 | *Combat Dual-Wield 15/33/3* | community simulator | - | 380 | -7.1% | 662 | -2.6% | 0 s |
 | 7 | *Assassination Mutilate 31/20/0* | community simulator | - | 356 | -13.1% | 610 | -10.2% | 0 s |
-| 8 | *Mutilate* | community simulator | - | 344 | -15.8% | 597 | -12.1% | 0 s |
+| 8 | *Mutilate* | community simulator | - | 344 | -15.8% | 598 | -12.0% | 0 s |
 | 9 | *Backstab* | community simulator | - | 331 | -18.9% | 602 | -11.4% | 0 s |
-| 10 | *Subtlety Hemo 15/0/36* | community simulator | - | 315 | -22.9% | 527 | -22.4% | 0 s |
+| 10 | *Subtlety Hemo 15/0/36* | community simulator | - | 315 | -22.9% | 527 | -22.5% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

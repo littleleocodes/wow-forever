@@ -34,100 +34,44 @@
   {
    "action": {
     "condition": {
-     "or": {
+     "and": {
       "vals": [
        {
-        "and": {
-         "vals": [
-          {
-           "cmp": {
-            "op": "OpGe",
-            "lhs": {
-             "currentComboPoints": {}
-            },
-            "rhs": {
-             "const": {
-              "val": "1"
-             }
-            }
-           }
-          },
-          {
-           "not": {
-            "val": {
-             "auraIsActive": {
-              "auraId": {
-               "spellId": 6774,
-               "rank": 2
-              }
-             }
-            }
-           }
-          },
-          {
-           "cmp": {
-            "op": "OpGe",
-            "lhs": {
-             "remainingTime": {}
-            },
-            "rhs": {
-             "const": {
-              "val": "6"
-             }
-            }
-           }
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentComboPoints": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "1"
           }
-         ]
+         }
         }
        },
        {
-        "and": {
-         "vals": [
-          {
-           "cmp": {
-            "op": "OpGe",
-            "lhs": {
-             "currentComboPoints": {}
-            },
-            "rhs": {
-             "const": {
-              "val": "5"
-             }
-            }
-           }
-          },
-          {
-           "cmp": {
-            "op": "OpLt",
-            "lhs": {
-             "auraRemainingTime": {
-              "auraId": {
-               "spellId": 6774,
-               "rank": 2
-              }
-             }
-            },
-            "rhs": {
-             "const": {
-              "val": "3"
-             }
-            }
-           }
-          },
-          {
-           "cmp": {
-            "op": "OpGt",
-            "lhs": {
-             "remainingTime": {}
-            },
-            "rhs": {
-             "const": {
-              "val": "9"
-             }
-            }
+        "not": {
+         "val": {
+          "auraIsActive": {
+           "auraId": {
+            "spellId": 6774,
+            "rank": 2
            }
           }
-         ]
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "6"
+          }
+         }
         }
        }
       ]
@@ -139,7 +83,8 @@
       "rank": 2
      }
     }
-   }
+   },
+   "notes": "2026-10-16 page audit B17: the early refresh (5 combo points, under 3 s left) removed: the Eviscerate lines above take those points first, so it never fired (20,000 fights, seed 1, every build of the entry: identical DPS without it)"
   },
   {
    "action": {

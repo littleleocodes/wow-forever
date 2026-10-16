@@ -52,7 +52,7 @@ This hybrid is a melee shaman: Enhancement's **Stormstrike** and **Flurry** with
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 690 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 713 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 

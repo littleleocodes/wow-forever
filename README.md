@@ -7,12 +7,12 @@ The best talents and the best way to play every class in **World of Warcraft: Fo
 | Class | Roles | Fastest leveling (solo) | Most raid damage (DPS in a full raid) | Raid healing | Raid tanking |
 |---|---|---|---|---|---|
 | [**Druid**](druid/README.md) | damage, tank, healer | [Feral Combat](druid/leveling/feral-combat.md) (29 s/kill) | [Feral Combat](druid/raid/feral-combat.md) (694 DPS) | [Restoration](druid/raid/restoration.md) | [Feral Combat](druid/raid/feral-combat.md) (Feral — Bear Tank) |
-| [**Hunter**](hunter/README.md) | damage | [Beast-Survival](hunter/leveling/beast-survival.md) (22 s/kill) | [Beast-Survival](hunter/raid/beast-survival.md) (1004 DPS), [Survival](hunter/raid/survival.md) (996 DPS) | - | - |
+| [**Hunter**](hunter/README.md) | damage | [Beast-Survival](hunter/leveling/beast-survival.md) (22 s/kill) | [Beast-Survival](hunter/raid/beast-survival.md) (1017 DPS), [Survival](hunter/raid/survival.md) (1007 DPS) | - | - |
 | [**Mage**](mage/README.md) | damage | [Frost](mage/leveling/frost.md) (27 s/kill) | [Arcane](mage/raid/arcane.md) (689 DPS), [Arcane-Frost](mage/raid/arcane-frost.md) (687 DPS), [Fire](mage/raid/fire.md) (685 DPS), [Frost](mage/raid/frost.md) (680 DPS), [Frostfire](mage/raid/frostfire.md) (675 DPS) | - | - |
 | [**Paladin**](paladin/README.md) | damage, tank, healer | [Shockadin](paladin/leveling/shockadin.md) (28 s/kill), [Retribution](paladin/leveling/retribution.md) (28 s/kill) | [Retribution](paladin/raid/retribution.md) (979 DPS) | [Holy](paladin/raid/holy.md) | [Protection](paladin/raid/protection.md) |
 | [**Priest**](priest/README.md) | damage, healer | [Shadow](priest/leveling/shadow.md) (25 s/kill) | [Shadow](priest/raid/shadow.md) (699 DPS) | [Holy](priest/raid/holy.md) (capacity 0.69), [Discipline](priest/raid/discipline.md) (capacity 0.61) | - |
 | [**Rogue**](rogue/README.md) | damage | [Combat-Subtlety](rogue/leveling/combat-subtlety.md) (24 s/kill) | [Combat](rogue/raid/combat.md) (695 DPS) | - | - |
-| [**Shaman**](shaman/README.md) | damage, healer | [Enhancement](shaman/leveling/enhancement.md) (32 s/kill) | [Enhancement](shaman/raid/enhancement.md) (727 DPS) | [Restoration](shaman/raid/restoration.md) | - |
+| [**Shaman**](shaman/README.md) | damage, healer | [Enhancement](shaman/leveling/enhancement.md) (32 s/kill) | [Enhancement](shaman/raid/enhancement.md) (754 DPS) | [Restoration](shaman/raid/restoration.md) | - |
 | [**Warlock**](warlock/README.md) | damage | [Demonology](warlock/leveling/demonology.md) (36 s/kill), [Shadow Bolt hybrid](warlock/leveling/shadow-bolt-hybrid.md) (36 s/kill) | [Demonology](warlock/raid/demonology.md) (822 DPS) | - | - |
 | [**Warrior**](warrior/README.md) | damage, tank | [Fury](warrior/leveling/fury.md) (25 s/kill) | [Arms](warrior/raid/arms.md) (964 DPS) | - | [Protection](warrior/raid/protection.md) |
 

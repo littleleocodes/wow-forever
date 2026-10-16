@@ -30,7 +30,7 @@
   "seed": 1,
   "duration": 180.0
  },
- "date": "2026-10-15",
+ "date": "2026-10-16",
  "results": [
   {
    "label": "sim preset: Stormcaller 28/23/0",
@@ -38,24 +38,24 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "10438": 3.0,
-    "915": 5.239333333333334,
-    "10414": 0.146,
-    "29228": 5.391666666666667,
+    "15208": 1.0,
     "10605": 0.335,
+    "915": 5.239333333333334,
     "10392": 74.218,
-    "15208": 1.0
+    "10438": 3.0,
+    "10414": 0.146,
+    "29228": 5.391666666666667
    },
    "casts": {
-    "Searing Totem": 3.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "Major Mana Potion": 2.0,
     "Lightning Bolt": 80.45733333333334,
+    "Chain Lightning": 0.335,
+    "Searing Totem": 3.0,
     "Earth Shock": 0.146,
     "Flame Shock": 5.391666666666667,
-    "Major Mana Potion": 2.0,
-    "Demonic Rune": 2.0,
-    "Chain Lightning": 0.335,
     "OtherActionManaGain": 4.0,
-    "Talisman of Ephemeral Power": 2.0
+    "Demonic Rune": 2.0
    },
    "dps": 358.30329701796074,
    "dps_stdev": 21.908675940724574,

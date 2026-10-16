@@ -30,7 +30,7 @@
   "seed": 1,
   "duration": 180.0
  },
- "date": "2026-10-15",
+ "date": "2026-10-16",
  "results": [
   {
    "label": "elemental-raid-dps",
@@ -39,22 +39,22 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "10605": 7.212,
     "15208": 1.0,
-    "10438": 3.0,
+    "10605": 7.212,
+    "10391": 69.96733333333333,
     "29228": 15.217333333333332,
-    "529": 1.6596666666666666,
-    "10391": 69.96733333333333
+    "10438": 3.0,
+    "529": 1.6596666666666666
    },
    "casts": {
-    "Chain Lightning": 7.212,
-    "Demonic Rune": 2.0,
+    "Major Mana Potion": 1.9886666666666666,
+    "OtherActionManaGain": 3.9886666666666666,
     "Lightning Bolt": 72.627,
-    "Searing Totem": 3.0,
+    "Chain Lightning": 7.212,
     "Flame Shock": 15.217333333333332,
     "Talisman of Ephemeral Power": 2.0,
-    "OtherActionManaGain": 3.9886666666666666,
-    "Major Mana Potion": 1.9886666666666666
+    "Demonic Rune": 2.0,
+    "Searing Totem": 3.0
    },
    "dps": 375.49503899662386,
    "dps_stdev": 19.876462115534512,
@@ -85,24 +85,24 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "15208": 1.0,
-    "1238300": 13.956333333333333,
+    "10391": 43.684666666666665,
     "10438": 3.0,
+    "29228": 14.710333333333333,
     "10605": 6.941666666666666,
     "529": 19.106666666666666,
-    "10391": 43.684666666666665,
-    "29228": 14.710333333333333
+    "15208": 1.0,
+    "1238300": 13.956333333333333
    },
    "casts": {
     "OtherActionManaGain": 3.998666666666667,
     "Talisman of Ephemeral Power": 2.0,
     "Lightning Bolt": 63.79133333333333,
-    "Lava Burst": 13.956333333333333,
     "Searing Totem": 3.0,
     "Major Mana Potion": 1.9986666666666666,
+    "Flame Shock": 14.710333333333333,
     "Chain Lightning": 6.941666666666666,
     "Demonic Rune": 2.0,
-    "Flame Shock": 14.710333333333333
+    "Lava Burst": 13.956333333333333
    },
    "dps": 357.3363441249146,
    "dps_stdev": 22.35247765524142,
@@ -134,24 +134,24 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "29228": 14.710333333333333,
-    "15208": 1.0,
-    "10605": 6.941666666666666,
-    "1238300": 13.956333333333333,
     "529": 19.106666666666666,
+    "1238300": 13.956333333333333,
+    "29228": 14.710333333333333,
+    "10605": 6.941666666666666,
     "10391": 43.684666666666665,
+    "15208": 1.0,
     "10438": 3.0
    },
    "casts": {
-    "OtherActionManaGain": 3.998666666666667,
-    "Flame Shock": 14.710333333333333,
-    "Lightning Bolt": 63.79133333333333,
-    "Chain Lightning": 6.941666666666666,
+    "Demonic Rune": 2.0,
     "Major Mana Potion": 1.9986666666666666,
-    "Lava Burst": 13.956333333333333,
-    "Searing Totem": 3.0,
+    "Lightning Bolt": 63.79133333333333,
+    "OtherActionManaGain": 3.998666666666667,
     "Talisman of Ephemeral Power": 2.0,
-    "Demonic Rune": 2.0
+    "Lava Burst": 13.956333333333333,
+    "Flame Shock": 14.710333333333333,
+    "Chain Lightning": 6.941666666666666,
+    "Searing Totem": 3.0
    },
    "dps": 357.3363441249146,
    "dps_stdev": 22.35247765524142,
@@ -182,24 +182,24 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "529": 23.495666666666665,
-    "10605": 6.953666666666667,
-    "1238300": 13.955333333333334,
     "10391": 40.211,
+    "1238300": 13.955333333333334,
     "10438": 3.0,
-    "29228": 14.923333333333334,
-    "15208": 1.0
+    "10605": 6.953666666666667,
+    "15208": 1.0,
+    "529": 23.495666666666665,
+    "29228": 14.923333333333334
    },
    "casts": {
     "Lightning Bolt": 64.70666666666666,
-    "Chain Lightning": 6.953666666666667,
-    "Talisman of Ephemeral Power": 2.0,
-    "Demonic Rune": 2.0,
-    "OtherActionManaGain": 3.998666666666667,
     "Lava Burst": 13.955333333333334,
     "Searing Totem": 3.0,
-    "Flame Shock": 14.923333333333334,
-    "Major Mana Potion": 1.9986666666666666
+    "Chain Lightning": 6.953666666666667,
+    "Major Mana Potion": 1.9986666666666666,
+    "OtherActionManaGain": 3.998666666666667,
+    "Talisman of Ephemeral Power": 2.0,
+    "Demonic Rune": 2.0,
+    "Flame Shock": 14.923333333333334
    },
    "dps": 332.4902117421642,
    "dps_stdev": 21.125673997110415,
@@ -230,24 +230,24 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "10438": 3.0,
-    "10391": 35.809666666666665,
-    "29228": 14.757666666666667,
-    "1238300": 13.894,
-    "529": 29.817333333333334,
     "10605": 6.7156666666666665,
-    "15208": 1.0
+    "10391": 35.809666666666665,
+    "10438": 3.0,
+    "1238300": 13.894,
+    "29228": 14.757666666666667,
+    "15208": 1.0,
+    "529": 29.817333333333334
    },
    "casts": {
-    "Searing Totem": 3.0,
-    "Talisman of Ephemeral Power": 2.0,
-    "Lightning Bolt": 66.627,
-    "OtherActionManaGain": 4.0,
-    "Flame Shock": 14.757666666666667,
-    "Lava Burst": 13.894,
-    "Demonic Rune": 2.0,
     "Chain Lightning": 6.7156666666666665,
-    "Major Mana Potion": 2.0
+    "Lightning Bolt": 66.627,
+    "Demonic Rune": 2.0,
+    "Searing Totem": 3.0,
+    "Lava Burst": 13.894,
+    "Major Mana Potion": 2.0,
+    "Flame Shock": 14.757666666666667,
+    "OtherActionManaGain": 4.0,
+    "Talisman of Ephemeral Power": 2.0
    },
    "dps": 334.3495873182142,
    "dps_stdev": 21.242397819154952,
@@ -278,22 +278,22 @@
    "split": "",
    "ours": false,
    "spell_casts": {
+    "10605": 7.374666666666666,
+    "15208": 1.0,
+    "529": 34.297333333333334,
     "10438": 3.0,
     "10391": 45.37466666666667,
-    "529": 34.297333333333334,
-    "29228": 15.300333333333333,
-    "10605": 7.374666666666666,
-    "15208": 1.0
+    "29228": 15.300333333333333
    },
    "casts": {
-    "Searing Totem": 3.0,
-    "Lightning Bolt": 80.672,
     "Demonic Rune": 2.0,
-    "Major Mana Potion": 2.0,
-    "Flame Shock": 15.300333333333333,
     "Chain Lightning": 7.374666666666666,
+    "Lightning Bolt": 80.672,
     "OtherActionManaGain": 4.0,
-    "Talisman of Ephemeral Power": 2.0
+    "Major Mana Potion": 2.0,
+    "Searing Totem": 3.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "Flame Shock": 15.300333333333333
    },
    "dps": 303.68946840172595,
    "dps_stdev": 21.735930727642128,

@@ -110,12 +110,15 @@ def pool_of(tier, zones):
     return bis if tier == "bis" else prebis
 
 
-def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, weights_fn=None, score=None):
+def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, weights_fn=None, score=None, extra=None):
     """The best set for the evaluations [(entry name, entry, setting, talents, label)] from `pool`: the same steps as gear_opt.optimize
     (weights, greedy per slot in two variants, weights again, trinket pairs raced, variants raced, seed-2 confirmation), except that the
     current item of a slot competes only when `keep_current` or the pool admits it (a pre-raid set must not keep raid items).
     `weights_fn(items)` -> {stat name: value per point} and `score(bench row)` -> float replace the simulator's DPS weights and DPS (both
-    None for damage specs, unchanged; tank_gear.py passes tank value, 2026-10-15)."""
+    None for damage specs, unchanged; tank_gear.py passes tank value, 2026-10-15). `extra` {name: items}: sets that compete with the
+    variants, each also with the raced trinket pair, when every item is in the pool; one named "previous" (the tier's last set) is the
+    reference a new set must beat on seed 2 (2026-10-16: the Expertise re-gear's pre-BiS Enhancement set lost 1.6% to the set it
+    replaced, which never raced it)."""
     main = evals[0]
     cur_items = [dict(x) if x else {} for x in cur_items] + [{}] * (17 - len(cur_items))
     sc = score or (lambda row: row.get("dps") or 0)
@@ -234,12 +237,20 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, we
     in_tier = all(pool(db[x["id"]]) for x in cur_items if x.get("id") in db)
     keep_current = keep_current and in_tier   # the current set competes only when every item is in the tier's pool
     sets = ({"current": cur_items} if keep_current else {}) | {"all-slots": v1, "keep-sets-and-effects": v2}
+    for name, its in (extra or {}).items():
+        its = [dict(x) if x else {} for x in its] + [{}] * (17 - len(its))
+        if its == cur_items or not all(pool(db[x["id"]]) for x in its if x.get("id") in db):
+            continue
+        sets[name] = its
+        if all(pair) and (its[12].get("id"), its[13].get("id")) != pair:
+            sets[f"{name}+trinkets"] = with_trinkets(its, pair)
     r1 = race(sets, a.iterations, 1)
     lead = max(r1, key=r1.get)
-    ref = "current" if keep_current else ("keep-sets-and-effects" if lead == "all-slots" else "all-slots")
+    ref = ("current" if keep_current else "previous" if "previous" in sets
+           else ("keep-sets-and-effects" if lead == "all-slots" else "all-slots"))
     r2 = race({ref: sets[ref], lead: sets[lead]}, a.confirm, 2) if lead != ref else {ref: 1.0}
     gain = r2.get(lead, 1.0) - 1
-    chosen = lead if (lead != ref and gain > (a.min_gain if keep_current else 0.0)) else ref
+    chosen = lead if (lead != ref and gain > (a.min_gain if ref == "current" else 0.0)) else ref
     items = sets[chosen]
     ilvl = lambda its: round(sum(db[x["id"]]["scalingOptions"]["0"].get("ilvl", 0) for x in its if x.get("id") in db) / max(1, sum(1 for x in its if x.get("id") in db)), 1)  # noqa: E731
     return {"evaluated_on": [f"{n}: {lab}" for n, _, _, _, lab in evals], "weights": {k: round(v, 4) for k, v in w.items() if abs(v) > 1e-6},
@@ -264,7 +275,11 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=N
     tmpl = FE.role(p.name)
     if tmpl:
         FE.fill(cur, tmpl)
-    r = optimize_set(cls, [(entry_name, e, "dummy", talents, label)], cur, pool, repo, db, a, f"{cls}-{SM.slug(spec)}-{tier}", keep_current=(tier == "bis"))
+    prev = json.load(open(p, encoding="utf-8"))["items"] if p.exists() else None   # the tier's last set competes (optimize_set's `extra`)
+    if prev and tmpl:
+        FE.fill(prev, tmpl)
+    r = optimize_set(cls, [(entry_name, e, "dummy", talents, label)], cur, pool, repo, db, a, f"{cls}-{SM.slug(spec)}-{tier}", keep_current=(tier == "bis"),
+                     extra={"previous": prev} if prev else None)
     if tmpl:
         FE.fill(r["items"], tmpl)
     p.parent.mkdir(parents=True, exist_ok=True)

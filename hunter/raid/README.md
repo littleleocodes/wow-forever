@@ -6,18 +6,18 @@
 
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
-| 1 | [Beast-Survival](beast-survival.md) 🔬 | 1004 | best |
-| 2 | [Survival](survival.md) — Melee Survival — Lone Wolf | 996 | -0.8% |
-| 3 | [Marksmanship](marksmanship.md) — Lone Wolf | 893 | -11% |
-| 4 | [Beast-Marks](beast-marks.md) 🔬 | 852 | -15% |
-| 5 | [Beast Mastery](beast-mastery.md) 🔬 | 847 | -16% |
+| 1 | [Beast-Survival](beast-survival.md) 🔬 | 1017 | best |
+| 2 | [Survival](survival.md) — Melee Survival — Lone Wolf | 1007 | -1% |
+| 3 | [Marksmanship](marksmanship.md) — Lone Wolf | 893 | -12% |
+| 4 | [Beast-Marks](beast-marks.md) 🔬 | 852 | -16% |
+| 5 | [Beast Mastery](beast-mastery.md) 🔬 | 847 | -17% |
 
 **By gear tier**: each damage spec with its best talents for each tier, in its own gear (DPS in a full raid; [every class](../../_reference/dps-rankings.md)):
 
 | Spec | Pre-BiS | Phase 1 BiS |
 |---|---|---|
-| [Beast-Survival](beast-survival.md) | 834 | 1008 |
-| [Survival](survival.md) | 813 | 999 |
+| [Beast-Survival](beast-survival.md) | 848 | 1022 |
+| [Survival](survival.md) | 828 | 1012 |
 | [Marksmanship](marksmanship.md) | 819 | 887 |
 | [Beast Mastery](beast-mastery.md) | 804 | 842 |
 | [Beast-Marks](beast-marks.md) | - | - |

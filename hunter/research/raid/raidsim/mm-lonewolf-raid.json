@@ -30,7 +30,7 @@
   "seed": 1,
   "duration": 180.0
  },
- "date": "2026-10-15",
+ "date": "2026-10-16",
  "results": [
   {
    "label": "mm-lone-wolf-raid",
@@ -39,21 +39,21 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "25296": 1.0,
-    "20904": 10.202666666666667,
-    "25295": 6.7973333333333334,
     "14287": 27.653,
-    "3045": 1.0
+    "20904": 10.202666666666667,
+    "3045": 1.0,
+    "25295": 6.7973333333333334,
+    "25296": 1.0
    },
    "casts": {
-    "Auto Shot": 83.19066666666667,
-    "Major Mana Potion": 2.0,
-    "Aspect of the Hawk": 1.0,
-    "Aimed Shot": 10.202666666666667,
-    "Serpent Sting": 6.7973333333333334,
-    "OtherActionManaGain": 2.0,
     "Arcane Shot": 27.653,
-    "Rapid Fire": 1.0
+    "Major Mana Potion": 2.0,
+    "Aimed Shot": 10.202666666666667,
+    "Rapid Fire": 1.0,
+    "Auto Shot": 83.19066666666667,
+    "OtherActionManaGain": 2.0,
+    "Serpent Sting": 6.7973333333333334,
+    "Aspect of the Hawk": 1.0
    },
    "dps": 455.89559144760153,
    "dps_stdev": 18.251452956947247,
@@ -85,21 +85,21 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "25296": 1.0,
     "20904": 10.234666666666667,
-    "3045": 1.0,
     "14287": 28.530666666666665,
-    "25295": 7.0
+    "25295": 7.0,
+    "3045": 1.0,
+    "25296": 1.0
    },
    "casts": {
-    "OtherActionManaGain": 2.0,
+    "Aimed Shot": 10.234666666666667,
+    "Arcane Shot": 28.530666666666665,
+    "Serpent Sting": 7.0,
+    "Rapid Fire": 1.0,
     "Major Mana Potion": 2.0,
     "Aspect of the Hawk": 1.0,
-    "Aimed Shot": 10.234666666666667,
-    "Rapid Fire": 1.0,
     "Auto Shot": 83.276,
-    "Arcane Shot": 28.530666666666665,
-    "Serpent Sting": 7.0
+    "OtherActionManaGain": 2.0
    },
    "dps": 461.88271192993614,
    "dps_stdev": 18.49102976487294,
@@ -131,20 +131,20 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "25295": 7.0,
-    "3045": 1.0,
     "25296": 1.0,
     "20904": 10.19,
+    "25295": 7.0,
+    "3045": 1.0,
     "14287": 28.62
    },
    "casts": {
-    "Serpent Sting": 7.0,
-    "Rapid Fire": 1.0,
     "Major Mana Potion": 2.0,
     "Aspect of the Hawk": 1.0,
-    "Aimed Shot": 10.19,
-    "Arcane Shot": 28.62,
     "OtherActionManaGain": 2.0,
+    "Aimed Shot": 10.19,
+    "Serpent Sting": 7.0,
+    "Rapid Fire": 1.0,
+    "Arcane Shot": 28.62,
     "Auto Shot": 83.27633333333333
    },
    "dps": 440.0946105954165,
@@ -177,20 +177,20 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "3045": 1.0,
     "14287": 26.162666666666667,
     "20904": 11.837333333333333,
+    "3045": 1.0,
     "25296": 1.0,
     "25295": 7.0
    },
    "casts": {
-    "Rapid Fire": 1.0,
-    "Arcane Shot": 26.162666666666667,
-    "Aimed Shot": 11.837333333333333,
-    "Aspect of the Hawk": 1.0,
-    "Auto Shot": 83.27733333333333,
-    "Major Mana Potion": 2.0,
     "OtherActionManaGain": 2.0,
+    "Arcane Shot": 26.162666666666667,
+    "Major Mana Potion": 2.0,
+    "Aimed Shot": 11.837333333333333,
+    "Rapid Fire": 1.0,
+    "Auto Shot": 83.27733333333333,
+    "Aspect of the Hawk": 1.0,
     "Serpent Sting": 7.0
    },
    "dps": 442.3754844694125,
@@ -222,21 +222,21 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "25295": 7.0,
+    "3045": 1.0,
+    "25296": 1.0,
     "14287": 28.530666666666665,
     "20904": 10.234666666666667,
-    "3045": 1.0,
-    "25296": 1.0
+    "25295": 7.0
    },
    "casts": {
-    "Serpent Sting": 7.0,
     "Major Mana Potion": 2.0,
-    "Arcane Shot": 28.530666666666665,
-    "Aimed Shot": 10.234666666666667,
     "Rapid Fire": 1.0,
     "OtherActionManaGain": 2.0,
+    "Auto Shot": 83.276,
     "Aspect of the Hawk": 1.0,
-    "Auto Shot": 83.276
+    "Arcane Shot": 28.530666666666665,
+    "Aimed Shot": 10.234666666666667,
+    "Serpent Sting": 7.0
    },
    "dps": 358.0756637280248,
    "dps_stdev": 14.484215113818747,
@@ -267,23 +267,23 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "3045": 1.0,
-    "25295": 8.004,
+    "20904": 14.019333333333334,
     "25296": 1.0,
     "14287": 1.454,
-    "20904": 14.019333333333334,
-    "1293527": 25.572
+    "1293527": 25.572,
+    "25295": 8.004,
+    "3045": 1.0
    },
    "casts": {
-    "Rapid Fire": 1.0,
+    "Aimed Shot": 14.019333333333334,
     "OtherActionManaGain": 2.0,
-    "Serpent Sting": 8.004,
     "Auto Shot": 83.17733333333334,
     "Aspect of the Hawk": 1.0,
     "Arcane Shot": 1.454,
-    "Aimed Shot": 14.019333333333334,
     "Summon Hawk": 25.572,
-    "Major Mana Potion": 2.0
+    "Major Mana Potion": 2.0,
+    "Serpent Sting": 8.004,
+    "Rapid Fire": 1.0
    },
    "dps": 313.2267597357392,
    "dps_stdev": 9.763155916574926,
@@ -315,21 +315,21 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "25296": 1.0,
     "20904": 12.0,
-    "14287": 26.0,
     "3045": 1.0,
-    "25295": 7.0
+    "25296": 1.0,
+    "25295": 7.0,
+    "14287": 26.0
    },
    "casts": {
-    "Aspect of the Hawk": 1.0,
     "Aimed Shot": 12.0,
-    "OtherActionManaGain": 2.0,
-    "Major Mana Potion": 2.0,
-    "Arcane Shot": 26.0,
     "Rapid Fire": 1.0,
     "Auto Shot": 74.0,
-    "Serpent Sting": 7.0
+    "Aspect of the Hawk": 1.0,
+    "Major Mana Potion": 2.0,
+    "Serpent Sting": 7.0,
+    "OtherActionManaGain": 2.0,
+    "Arcane Shot": 26.0
    },
    "dps": 356.3420961815574,
    "dps_stdev": 13.325288180143819,
@@ -360,21 +360,21 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "3045": 1.0,
     "25296": 1.0,
-    "20904": 13.0,
+    "14287": 24.0,
     "25295": 7.0,
-    "14287": 24.0
+    "20904": 13.0,
+    "3045": 1.0
    },
    "casts": {
-    "Rapid Fire": 1.0,
-    "Aspect of the Hawk": 1.0,
-    "OtherActionManaGain": 2.0,
     "Major Mana Potion": 2.0,
-    "Aimed Shot": 13.0,
-    "Auto Shot": 74.0,
+    "Aspect of the Hawk": 1.0,
+    "Arcane Shot": 24.0,
     "Serpent Sting": 7.0,
-    "Arcane Shot": 24.0
+    "Auto Shot": 74.0,
+    "Aimed Shot": 13.0,
+    "Rapid Fire": 1.0,
+    "OtherActionManaGain": 2.0
    },
    "dps": 318.23079244585136,
    "dps_stdev": 9.680754806054676,

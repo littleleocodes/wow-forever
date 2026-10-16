@@ -619,7 +619,9 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   level 65+ that no tier preset uses. Each spec gets its own set per tier: the simulator's stat weights for its best build, the best item per
   slot (every slot, or keeping set pieces and items with effects), weights refreshed once, trinket pairs from the class's presets
   raced, the variants raced on seed 1 and confirmed on seed 2; in the BiS tier the spec's specs.json set competes when every item is
-  in the pool, and the best-measured set wins (no 0.5% margin: with it, an item-level-33 mace stayed in the Shadow priest's set).
+  in the pool, and the best-measured set wins (no 0.5% margin: with it, an item-level-33 mace stayed in the Shadow priest's set);
+  since 2026-10-16 the tier's previous set competes too (as is and with the newly raced trinket pair) and is the reference a new set
+  must beat on seed 2 (a pre-BiS Enhancement set had lost 1.6% to the one it replaced, which never raced it).
   Sets `raidsim/gear_sets/forever/tiers/<class>-<spec slug>-<tier>.gear.json`; passed per build (`gear_json`), so specs.json keeps its
   standard sets. Fixed the same day in `gear_opt.py`: a current item outside the pool kept its slot and every current set piece
   stayed, so the standard hunter and Retribution sets carried Zul'Gurub's Bloodvine and Enhancement Sulfuras (re-geared).

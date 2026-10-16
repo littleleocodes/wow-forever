@@ -468,8 +468,9 @@ func main() {
 				EpReferenceStat: proto.Stat_StatAttackPower, Tanks: raid.Tanks,
 			}
 			for i := 0; i < int(proto.Stat_StatPhysicalDamage); i++ {
-				// damage builds: the offensive stats only (Strength .. Armor Penetration, Spirit, Intellect); tanks: everything
-				if cfg.IsTank || i <= int(proto.Stat_StatArmorPenetration) {
+				// damage builds: the offensive stats only (Strength .. Expertise, Spirit, Intellect); tanks: everything. Expertise was left out
+				// until 2026-10-16, so gear picked by these weights scored it at zero (Adaptive Combat Assistant, +20 Expertise)
+				if cfg.IsTank || i <= int(proto.Stat_StatExpertiseRating) {
 					if !cfg.IsTank && (i == int(proto.Stat_StatStamina) || i == int(proto.Stat_StatHealingPower)) {
 						continue
 					}

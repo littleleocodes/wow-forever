@@ -60,15 +60,15 @@ The Beast-Survival (a Beast Mastery/Survival hybrid) raid build the open talent 
 
 ## Rank among our builds and the community simulator's
 
-**5 of 5** for `melee-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 5** for `melee-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`survival-raid`](survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 483 | +0.0% | 975 | -2.9% | 9 s |
-| 2 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 461 | -4.6% | 996 | -0.8% | 44 s |
-| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 461 | -4.7% | 964 | -4.0% | 8 s |
-| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 357 | -26.1% | 949 | -5.5% | 117 s |
-| 5 | **[`beast-survival-open-raid`](beast-survival-open-raid.md)** | ours: derived (open search) | 16/11/24 | 357 | -26.2% | 1004 | +0.0% | 127 s |
+| 1 | [`survival-raid`](survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 488 | +0.0% | 987 | -2.9% | 9 s |
+| 2 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 466 | -4.5% | 1007 | -1.0% | 44 s |
+| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 465 | -4.8% | 975 | -4.1% | 8 s |
+| 4 | **[`beast-survival-open-raid`](beast-survival-open-raid.md)** | ours: derived (open search) | 16/11/24 | 360 | -26.3% | 1017 | +0.0% | 127 s |
+| 5 | [`survival-ml-parse`](survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 360 | -26.3% | 959 | -5.7% | 117 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -108,8 +108,8 @@ Damage by ability:
 
 | Ability | [`beast-survival-open-raid`](beast-survival-open-raid.md) |
 |---|---|
-| Auto Attack | 56% |
-| Raptor Strike | 11% |
+| Auto Attack | 55% |
+| Raptor Strike | 12% |
 | Mongoose Bite | 10% |
 | Summon Hawk | 9% |
 | Immolation Trap | 5% |

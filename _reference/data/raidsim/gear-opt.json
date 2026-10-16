@@ -1047,39 +1047,41 @@
    "rogue/assassination-raid"
   ],
   "evaluated_on": [
-   "combat-daggers-raid: combat-raid",
+   "combat-daggers-raid: opt-combat-daggers-raid-raid-dps",
    "assassination-raid: assassination-seal-fate-raid"
   ],
   "weights": {
-   "PseudoStatMainHandDps": 1.6838,
-   "PseudoStatOffHandDps": 0.5711,
-   "StatAgility": 0.2694,
-   "StatArmorPenetration": 0.05,
-   "StatAttackPower": 0.1613,
-   "StatFireDamage": 0.0376,
-   "StatMeleeCritRating": 0.2225,
-   "StatMeleeHasteRating": 0.2247,
-   "StatMeleeHitRating": 0.2748,
-   "StatSpellCritRating": 0.0157,
-   "StatSpellDamage": 0.0376,
-   "StatSpellHitRating": 0.0496,
-   "StatStrength": 0.1613
+   "PseudoStatMainHandDps": 1.7397,
+   "PseudoStatOffHandDps": 0.6013,
+   "StatAgility": 0.2719,
+   "StatArmorPenetration": 0.0516,
+   "StatAttackPower": 0.1663,
+   "StatExpertiseRating": 0.2989,
+   "StatFireDamage": 0.0379,
+   "StatMeleeCritRating": 0.2201,
+   "StatMeleeHasteRating": 0.2467,
+   "StatMeleeHitRating": 0.2556,
+   "StatSpellCritRating": 0.0153,
+   "StatSpellDamage": 0.0379,
+   "StatSpellHitRating": 0.0441,
+   "StatStrength": 0.1663
   },
   "trinkets": [
    "Blackhand's Breadth",
-   "Royal Seal of Eldre'Thalas"
+   "Adaptive Combat Assistant"
   ],
   "race_seed1": {
    "current": 1.0,
-   "all-slots": 1.0021022082792586,
-   "keep-sets-and-effects": 0.9748593278532127
+   "all-slots": 1.0000193985084143,
+   "keep-sets-and-effects": 0.971769491925423
   },
   "confirm_seed2": {
    "current": 1.0,
-   "all-slots": 1.003782629550777
+   "all-slots": 0.9998291133514328
   },
   "chosen": "current",
   "gain": 0.0,
+  "current_in_pool": true,
   "ilvl_before": 64.7,
   "ilvl_after": 64.7,
   "items": [
@@ -1145,7 +1147,7 @@
    }
   ],
   "changed": [],
-  "date": "2026-09-30"
+  "date": "2026-10-16"
  },
  "ui/specs/rogue/dps/gear_sets/combat_sinister_strike_p1_bis.gear.json": {
   "gear": "ui/specs/rogue/dps/gear_sets/combat_sinister_strike_p1_bis.gear.json",
@@ -2060,23 +2062,23 @@
    "hunter/bm-raid"
   ],
   "evaluated_on": [
-   "mm-raid: bm-mm-raid",
+   "mm-raid: bm-mm-full-buffs-raid",
    "mm-lonewolf-raid: opt-mm-lonewolf-raid-raid-dps",
-   "bm-raid: beast-mastery-raid"
+   "bm-raid: mm-hawk-raid"
   ],
   "weights": {
-   "PseudoStatRangedDps": 1.2234,
-   "StatAgility": 0.3115,
-   "StatArcaneDamage": 0.0029,
-   "StatArmorPenetration": 0.0255,
-   "StatIntellect": 0.3609,
-   "StatMeleeCritRating": 0.3321,
-   "StatMeleeHasteRating": 0.317,
-   "StatMeleeHitRating": 0.2769,
-   "StatNatureDamage": 0.0722,
-   "StatRangedAttackPower": 0.1138,
-   "StatSpellDamage": 0.0751,
-   "StatSpirit": 0.1118
+   "PseudoStatRangedDps": 1.2173,
+   "StatAgility": 0.3368,
+   "StatArcaneDamage": 0.0794,
+   "StatArmorPenetration": 0.0231,
+   "StatIntellect": 0.3374,
+   "StatMeleeCritRating": 0.342,
+   "StatMeleeHasteRating": 0.1805,
+   "StatMeleeHitRating": 0.3358,
+   "StatNatureDamage": 0.0603,
+   "StatRangedAttackPower": 0.1245,
+   "StatSpellDamage": 0.1397,
+   "StatSpirit": 0.1048
   },
   "trinkets": [
    "Blackhand's Breadth",
@@ -2084,17 +2086,16 @@
   ],
   "race_seed1": {
    "current": 1.0,
-   "all-slots": 1.0249510118132275,
-   "keep-sets-and-effects": 1.016471624029803
+   "all-slots": 0.9652722516435398,
+   "keep-sets-and-effects": 0.980675937374878
   },
   "confirm_seed2": {
-   "current": 1.0,
-   "all-slots": 1.0252608813663662
+   "current": 1.0
   },
-  "chosen": "all-slots",
-  "gain": 0.025260881366366172,
+  "chosen": "current",
+  "gain": 0.0,
   "current_in_pool": true,
-  "ilvl_before": 65.6,
+  "ilvl_before": 67.3,
   "ilvl_after": 67.3,
   "items": [
    {
@@ -2156,85 +2157,57 @@
     "enchant": 2523
    }
   ],
-  "changed": [
-   {
-    "slot": 2,
-    "from": "Giantstalker's Epaulets",
-    "to": "Theramore Pauldrons"
-   },
-   {
-    "slot": 5,
-    "from": "Giantstalker's Bracers",
-    "to": "Wristguards of True Flight"
-   },
-   {
-    "slot": 6,
-    "from": "Giantstalker's Gloves",
-    "to": "Mourning Handguards"
-   },
-   {
-    "slot": 10,
-    "from": "Ring of Spell Power",
-    "to": "Band of Accuria"
-   },
-   {
-    "slot": 11,
-    "from": "Ring of Spell Power",
-    "to": "Band of Sulfuras"
-   }
-  ],
-  "date": "2026-10-06"
+  "changed": [],
+  "date": "2026-10-16"
  },
  "_reference/data/raidsim/gear_sets/forever/paladin-retribution-default.p1opt.gear.json": {
   "gear": "_reference/data/raidsim/gear_sets/forever/paladin-retribution-default.p1opt.gear.json",
   "members": [
-   "paladin/ret-dps",
-   "paladin/seal-of-fury-raid",
-   "paladin/shockadin-raid"
+   "paladin/ret-dps"
   ],
   "evaluated_on": [
-   "ret-dps: retribution-ml-raid",
-   "seal-of-fury-raid: ret-raid-dps"
+   "ret-dps: opt-ret-dps-raid-dps"
   ],
   "weights": {
-   "PseudoStatMainHandDps": 1.1114,
-   "StatAgility": 0.1945,
-   "StatArmorPenetration": 0.011,
-   "StatAttackPower": 0.0797,
+   "PseudoStatMainHandDps": 0.9373,
+   "StatAgility": 0.1939,
+   "StatArmorPenetration": 0.0089,
+   "StatAttackPower": 0.0692,
+   "StatExpertiseRating": 0.3168,
    "StatFireDamage": 0.0203,
-   "StatHolyDamage": 0.3566,
-   "StatIntellect": 0.429,
-   "StatMeleeCritRating": 0.269,
-   "StatMeleeHasteRating": -0.0775,
-   "StatMeleeHitRating": 0.4374,
-   "StatSpellCritRating": 0.0329,
-   "StatSpellDamage": 0.3769,
-   "StatSpellHasteRating": 0.3925,
-   "StatSpellHitRating": 0.1088,
-   "StatSpirit": 0.0549,
-   "StatStrength": 0.1594
+   "StatHolyDamage": 0.3472,
+   "StatIntellect": 0.2451,
+   "StatMeleeCritRating": 0.2736,
+   "StatMeleeHasteRating": 0.1813,
+   "StatMeleeHitRating": 0.4314,
+   "StatSpellCritRating": 0.03,
+   "StatSpellDamage": 0.3674,
+   "StatSpellHasteRating": -0.1272,
+   "StatSpellHitRating": 0.0946,
+   "StatStrength": 0.1385
   },
   "trinkets": [
    "Blackhand's Breadth",
-   "Serenity Field"
+   "Adaptive Combat Assistant"
   ],
   "race_seed1": {
    "current": 1.0,
-   "all-slots": 1.0494349402086187,
-   "keep-sets-and-effects": 1.0494349402086187
+   "all-slots": 0.9910869751657928,
+   "keep-sets-and-effects": 1.0006769123739476
   },
   "confirm_seed2": {
    "current": 1.0,
-   "all-slots": 1.0484227308661258
+   "keep-sets-and-effects": 1.0011300222412653
   },
-  "chosen": "all-slots",
-  "gain": 0.04842273086612581,
+  "chosen": "current",
+  "gain": 0.0,
   "current_in_pool": true,
-  "ilvl_before": 66.1,
+  "ilvl_before": 65.4,
   "ilvl_after": 65.4,
   "items": [
    {
-    "id": 250599
+    "id": 250599,
+    "enchant": 1506
    },
    {
     "id": 18814
@@ -2243,25 +2216,31 @@
     "id": 227808
    },
    {
-    "id": 17078
+    "id": 17078,
+    "enchant": 849
    },
    {
-    "id": 226973
+    "id": 226973,
+    "enchant": 1891
    },
    {
-    "id": 21186
+    "id": 21186,
+    "enchant": 1885
    },
    {
-    "id": 21178
+    "id": 21178,
+    "enchant": 927
    },
    {
     "id": 228190
    },
    {
-    "id": 252486
+    "id": 252486,
+    "enchant": 1506
    },
    {
-    "id": 22064
+    "id": 22064,
+    "enchant": 1887
    },
    {
     "id": 20682
@@ -2276,51 +2255,16 @@
     "id": 272439
    },
    {
-    "id": 17076
+    "id": 17076,
+    "enchant": 1900
    },
    {},
    {
     "id": 272435
    }
   ],
-  "changed": [
-   {
-    "slot": 0,
-    "from": "Black Dragonscale Helm",
-    "to": "Stalwart Helm"
-   },
-   {
-    "slot": 5,
-    "from": "Magiskull Cuffs",
-    "to": "Rockfury Bracers"
-   },
-   {
-    "slot": 6,
-    "from": "Gloves of the Hypnotic Flame",
-    "to": "Gloves of Earthen Power"
-   },
-   {
-    "slot": 8,
-    "from": "Red Dragonscale Leggings",
-    "to": "Ironfeather Leggings"
-   },
-   {
-    "slot": 10,
-    "from": "Ring of Spell Power",
-    "to": "Elemental Focus Band"
-   },
-   {
-    "slot": 11,
-    "from": "Band of Sulfuras",
-    "to": "Ring of Spell Power"
-   },
-   {
-    "slot": 13,
-    "from": "Frozen Heart of the Mountain",
-    "to": "Serenity Field"
-   }
-  ],
-  "date": "2026-10-06"
+  "changed": [],
+  "date": "2026-10-16"
  },
  "_reference/data/raidsim/gear_sets/forever/shaman-enhancement-phase_1.p1opt.gear.json": {
   "gear": "_reference/data/raidsim/gear_sets/forever/shaman-enhancement-phase_1.p1opt.gear.json",
@@ -2331,39 +2275,41 @@
    "enhancement-dps: opt-enhancement-dps-raid-dps"
   ],
   "weights": {
-   "PseudoStatMainHandDps": 1.3366,
-   "StatAgility": 0.1145,
-   "StatArmorPenetration": 0.0229,
-   "StatAttackPower": 0.0973,
-   "StatFireDamage": 0.0745,
-   "StatIntellect": 0.1793,
-   "StatMeleeCritRating": 0.1694,
-   "StatMeleeHasteRating": 0.1813,
-   "StatMeleeHitRating": 0.4308,
-   "StatNatureDamage": 0.0886,
-   "StatSpellCritRating": 0.0798,
-   "StatSpellDamage": 0.1659,
-   "StatSpellHasteRating": -0.0016,
-   "StatSpellHitRating": 0.2244,
-   "StatStrength": 0.1945
+   "PseudoStatMainHandDps": 1.3334,
+   "StatAgility": 0.1405,
+   "StatArmorPenetration": 0.023,
+   "StatAttackPower": 0.097,
+   "StatExpertiseRating": 0.3494,
+   "StatFireDamage": 0.0736,
+   "StatIntellect": 0.182,
+   "StatMeleeCritRating": 0.2023,
+   "StatMeleeHasteRating": 0.176,
+   "StatMeleeHitRating": 0.3494,
+   "StatNatureDamage": 0.0879,
+   "StatSpellCritRating": 0.076,
+   "StatSpellDamage": 0.1642,
+   "StatSpellHasteRating": 0.0223,
+   "StatSpellHitRating": 0.1972,
+   "StatStrength": 0.1941
   },
   "trinkets": [
    "Blackhand's Breadth",
-   "Talisman of Ephemeral Power"
+   "Adaptive Combat Assistant"
   ],
   "race_seed1": {
    "current": 1.0,
-   "all-slots": 0.9716510639524947,
-   "keep-sets-and-effects": 0.980893410624911
+   "all-slots": 1.0520139713345187,
+   "keep-sets-and-effects": 1.0318541308684495
   },
   "confirm_seed2": {
-   "current": 1.0
+   "current": 1.0,
+   "all-slots": 1.0498471304763841
   },
-  "chosen": "current",
-  "gain": 0.0,
+  "chosen": "all-slots",
+  "gain": 0.049847130476384116,
   "current_in_pool": true,
-  "ilvl_before": 65.1,
-  "ilvl_after": 65.1,
+  "ilvl_before": 65.0,
+  "ilvl_after": 65.3,
   "items": [
    {
     "id": 252605,
@@ -2373,14 +2319,14 @@
     "id": 18404
    },
    {
-    "id": 12927
+    "id": 227808
    },
    {
-    "id": 272414,
+    "id": 272411,
     "enchant": 849
    },
    {
-    "id": 22009,
+    "id": 252484,
     "enchant": 1891
    },
    {
@@ -2403,16 +2349,16 @@
     "enchant": 911
    },
    {
-    "id": 19147
+    "id": 17063
    },
    {
-    "id": 17063
+    "id": 234020
    },
    {
     "id": 13965
    },
    {
-    "id": 18820
+    "id": 272437
    },
    {
     "id": 17104,
@@ -2421,8 +2367,39 @@
    {},
    {}
   ],
-  "changed": [],
-  "date": "2026-10-06"
+  "changed": [
+   {
+    "slot": 2,
+    "from": "Truestrike Shoulders",
+    "to": "Rugged Mantle of the Timbermaw"
+   },
+   {
+    "slot": 3,
+    "from": "Howler's Furs",
+    "to": "Arcanoweave Cloak"
+   },
+   {
+    "slot": 4,
+    "from": "Darkmantle Tunic",
+    "to": "Timbermaw Tunic"
+   },
+   {
+    "slot": 10,
+    "from": "Don Julio's Band",
+    "to": "Band of Accuria"
+   },
+   {
+    "slot": 11,
+    "from": "Band of Accuria",
+    "to": "Signet Ring of the Bronze Dragonflight"
+   },
+   {
+    "slot": 13,
+    "from": "Talisman of Ephemeral Power",
+    "to": "Adaptive Combat Assistant"
+   }
+  ],
+  "date": "2026-10-16"
  },
  "_reference/data/raidsim/gear_sets/forever/hunter-project-hunter_melee_p1.p1opt.gear.json": {
   "gear": "_reference/data/raidsim/gear_sets/forever/hunter-project-hunter_melee_p1.p1opt.gear.json",
@@ -2433,38 +2410,40 @@
    "melee-dps: survival-raid"
   ],
   "weights": {
-   "PseudoStatMainHandDps": 1.3944,
-   "PseudoStatOffHandDps": 0.5224,
-   "StatAgility": 0.2109,
-   "StatArmorPenetration": 0.0322,
-   "StatAttackPower": 0.1352,
-   "StatFireDamage": 0.0523,
-   "StatIntellect": 0.1364,
-   "StatMeleeCritRating": 0.2457,
-   "StatMeleeHasteRating": 0.1855,
-   "StatMeleeHitRating": 0.2425,
-   "StatSpellCritRating": 0.0051,
-   "StatSpellDamage": 0.0523,
-   "StatSpellHitRating": 0.074,
-   "StatStrength": 0.1352
+   "PseudoStatMainHandDps": 1.5678,
+   "PseudoStatOffHandDps": 0.5993,
+   "StatAgility": 0.2333,
+   "StatArmorPenetration": 0.0364,
+   "StatAttackPower": 0.1529,
+   "StatExpertiseRating": 0.4263,
+   "StatFireDamage": 0.0571,
+   "StatIntellect": 0.1585,
+   "StatMeleeCritRating": 0.2622,
+   "StatMeleeHasteRating": 0.1981,
+   "StatMeleeHitRating": 0.2725,
+   "StatSpellCritRating": 0.0255,
+   "StatSpellDamage": 0.0571,
+   "StatSpellHitRating": 0.0838,
+   "StatStrength": 0.1529
   },
   "trinkets": [
    "Blackhand's Breadth",
-   "Hand of Justice"
+   "Adaptive Combat Assistant"
   ],
   "race_seed1": {
    "current": 1.0,
-   "all-slots": 0.8697578406508824,
-   "keep-sets-and-effects": 0.9985251212142052
+   "all-slots": 0.8796194568058225,
+   "keep-sets-and-effects": 1.0081897770802843
   },
   "confirm_seed2": {
-   "current": 1.0
+   "current": 1.0,
+   "keep-sets-and-effects": 1.0090009578932064
   },
-  "chosen": "current",
-  "gain": 0.0,
+  "chosen": "keep-sets-and-effects",
+  "gain": 0.00900095789320643,
   "current_in_pool": true,
   "ilvl_before": 66.8,
-  "ilvl_after": 66.8,
+  "ilvl_after": 67.4,
   "items": [
    {
     "id": 16846,
@@ -2507,13 +2486,13 @@
     "id": 17063
    },
    {
-    "id": 19325
+    "id": 18821
    },
    {
     "id": 13965
    },
    {
-    "id": 11815
+    "id": 272437
    },
    {
     "id": 17068,
@@ -2528,8 +2507,19 @@
     "enchant": 2523
    }
   ],
-  "changed": [],
-  "date": "2026-10-06"
+  "changed": [
+   {
+    "slot": 11,
+    "from": "Don Julio's Band",
+    "to": "Quick Strike Ring"
+   },
+   {
+    "slot": 13,
+    "from": "Hand of Justice",
+    "to": "Adaptive Combat Assistant"
+   }
+  ],
+  "date": "2026-10-16"
  },
  "_reference/data/raidsim/gear_sets/forever/shaman-elemental-phase_1.p1opt.gear.json": {
   "gear": "_reference/data/raidsim/gear_sets/forever/shaman-elemental-phase_1.p1opt.gear.json",
@@ -2541,14 +2531,14 @@
    "elemental-dps: elemental-raid-dps"
   ],
   "weights": {
-   "StatFireDamage": 0.0625,
-   "StatIntellect": 0.2027,
-   "StatNatureDamage": 0.3221,
-   "StatSpellCritRating": 0.2268,
-   "StatSpellDamage": 0.3845,
-   "StatSpellHasteRating": 0.3775,
-   "StatSpellHitRating": 0.487,
-   "StatSpirit": 0.0006
+   "StatFireDamage": 0.0616,
+   "StatIntellect": 0.1761,
+   "StatNatureDamage": 0.2668,
+   "StatSpellCritRating": 0.2006,
+   "StatSpellDamage": 0.3285,
+   "StatSpellHasteRating": 0.357,
+   "StatSpellHitRating": 0.4853,
+   "StatSpirit": -0.0
   },
   "trinkets": [
    "Talisman of Ephemeral Power",
@@ -2556,12 +2546,12 @@
   ],
   "race_seed1": {
    "current": 1.0,
-   "all-slots": 1.003287980119182,
-   "keep-sets-and-effects": 1.003287980119182
+   "all-slots": 1.0037546369548145,
+   "keep-sets-and-effects": 0.9877096183601948
   },
   "confirm_seed2": {
    "current": 1.0,
-   "all-slots": 1.0043346834441726
+   "all-slots": 1.0038387558747286
   },
   "chosen": "current",
   "gain": 0.0,
@@ -2580,8 +2570,7 @@
     "id": 18829
    },
    {
-    "id": 17078,
-    "enchant": 256
+    "id": 17078
    },
    {
     "id": 19145,
@@ -2625,7 +2614,7 @@
    {}
   ],
   "changed": [],
-  "date": "2026-10-06"
+  "date": "2026-10-16"
  },
  "_reference/data/raidsim/gear_sets/forever/priest-dps-p0.p1opt.gear.json": {
   "gear": "_reference/data/raidsim/gear_sets/forever/priest-dps-p0.p1opt.gear.json",
@@ -2735,5 +2724,347 @@
    }
   ],
   "date": "2026-10-15"
+ },
+ "_reference/data/raidsim/gear_sets/forever/rogue-dps-combat_sinister_strike_p1_bis.p1opt.gear.json": {
+  "gear": "_reference/data/raidsim/gear_sets/forever/rogue-dps-combat_sinister_strike_p1_bis.p1opt.gear.json",
+  "members": [
+   "rogue/combat-swords-raid",
+   "rogue/subtlety-raid"
+  ],
+  "evaluated_on": [
+   "combat-swords-raid: combat-swords-raid",
+   "subtlety-raid: subtlety-hemo-raid"
+  ],
+  "weights": {
+   "PseudoStatMainHandDps": 1.6325,
+   "PseudoStatOffHandDps": 0.6199,
+   "StatAgility": 0.2683,
+   "StatArmorPenetration": 0.0463,
+   "StatAttackPower": 0.1619,
+   "StatExpertiseRating": 0.3184,
+   "StatFireDamage": 0.0414,
+   "StatMeleeCritRating": 0.2206,
+   "StatMeleeHasteRating": 0.2568,
+   "StatMeleeHitRating": 0.2602,
+   "StatSpellCritRating": 0.0165,
+   "StatSpellDamage": 0.0414,
+   "StatSpellHitRating": 0.0525,
+   "StatStrength": 0.1619
+  },
+  "trinkets": [
+   "Blackhand's Breadth",
+   "Adaptive Combat Assistant"
+  ],
+  "race_seed1": {
+   "current": 1.0,
+   "all-slots": 0.9701468544368148,
+   "keep-sets-and-effects": 0.9978060960485443
+  },
+  "confirm_seed2": {
+   "current": 1.0
+  },
+  "chosen": "current",
+  "gain": 0.0,
+  "current_in_pool": true,
+  "ilvl_before": 68.3,
+  "ilvl_after": 68.3,
+  "items": [
+   {
+    "id": 16908,
+    "enchant": 1508
+   },
+   {
+    "id": 18404
+   },
+   {
+    "id": 16823
+   },
+   {
+    "id": 272414,
+    "enchant": 849
+   },
+   {
+    "id": 16820,
+    "enchant": 1891
+   },
+   {
+    "id": 16825,
+    "enchant": 1885
+   },
+   {
+    "id": 16826,
+    "enchant": 1887
+   },
+   {
+    "id": 16827
+   },
+   {
+    "id": 16909,
+    "enchant": 1508
+   },
+   {
+    "id": 16824,
+    "enchant": 1887
+   },
+   {
+    "id": 17063
+   },
+   {
+    "id": 18821
+   },
+   {
+    "id": 13965
+   },
+   {
+    "id": 18465
+   },
+   {
+    "id": 17075,
+    "enchant": 1900
+   },
+   {
+    "id": 18832,
+    "enchant": 1900
+   },
+   {
+    "id": 17069
+   }
+  ],
+  "changed": [],
+  "date": "2026-10-16"
+ },
+ "_reference/data/raidsim/gear_sets/forever/warrior-dps-p1_arms.p1opt.gear.json": {
+  "gear": "_reference/data/raidsim/gear_sets/forever/warrior-dps-p1_arms.p1opt.gear.json",
+  "members": [
+   "warrior/arms-2h-raid",
+   "warrior/arms-battle-raid"
+  ],
+  "evaluated_on": [
+   "arms-2h-raid: opt-arms-2h-raid-raid-dps",
+   "arms-battle-raid: arms-community-parse"
+  ],
+  "weights": {
+   "PseudoStatMainHandDps": 1.9053,
+   "StatAgility": 0.2756,
+   "StatArmorPenetration": 0.0502,
+   "StatAttackPower": 0.1628,
+   "StatExpertiseRating": 0.5635,
+   "StatFireDamage": 0.0273,
+   "StatMeleeCritRating": 0.3881,
+   "StatMeleeHasteRating": 0.4336,
+   "StatSpellCritRating": 0.0004,
+   "StatSpellDamage": 0.0273,
+   "StatSpellHasteRating": 0.1226,
+   "StatSpellHitRating": 0.0019,
+   "StatStrength": 0.3256
+  },
+  "trinkets": [
+   "Hand of Justice",
+   "Blackhand's Breadth"
+  ],
+  "race_seed1": {
+   "current": 1.0,
+   "all-slots": 0.989615128212541,
+   "keep-sets-and-effects": 1.001216344203771
+  },
+  "confirm_seed2": {
+   "current": 1.0,
+   "keep-sets-and-effects": 1.001573434396525
+  },
+  "chosen": "current",
+  "gain": 0.0,
+  "current_in_pool": true,
+  "ilvl_before": 65.8,
+  "ilvl_after": 65.8,
+  "items": [
+   {
+    "id": 18817,
+    "enchant": 1506
+   },
+   {
+    "id": 15411
+   },
+   {
+    "id": 271955
+   },
+   {
+    "id": 20068,
+    "enchant": 849
+   },
+   {
+    "id": 252484,
+    "enchant": 1891
+   },
+   {
+    "id": 21184,
+    "enchant": 1885
+   },
+   {
+    "id": 19143,
+    "enchant": 927
+   },
+   {
+    "id": 19137
+   },
+   {
+    "id": 22385,
+    "enchant": 1506
+   },
+   {
+    "id": 21995,
+    "enchant": 1887
+   },
+   {
+    "id": 18821
+   },
+   {
+    "id": 13098
+   },
+   {
+    "id": 11815
+   },
+   {
+    "id": 13965
+   },
+   {
+    "id": 17076,
+    "enchant": 1900
+   },
+   {},
+   {
+    "id": 272594
+   }
+  ],
+  "changed": [],
+  "date": "2026-10-16"
+ },
+ "_reference/data/raidsim/gear_sets/forever/warrior-dps-p1_fury.p1opt.gear.json": {
+  "gear": "_reference/data/raidsim/gear_sets/forever/warrior-dps-p1_fury.p1opt.gear.json",
+  "members": [
+   "warrior/fury-dw-raid"
+  ],
+  "evaluated_on": [
+   "fury-dw-raid: fury-open-raid"
+  ],
+  "weights": {
+   "PseudoStatMainHandDps": 1.6605,
+   "PseudoStatOffHandDps": 0.7597,
+   "StatAgility": 0.2983,
+   "StatArmorPenetration": 0.068,
+   "StatAttackPower": 0.1886,
+   "StatExpertiseRating": 0.6407,
+   "StatFireDamage": 0.0371,
+   "StatMeleeCritRating": 0.4454,
+   "StatMeleeHasteRating": 0.3707,
+   "StatMeleeHitRating": 0.2934,
+   "StatSpellCritRating": 0.0006,
+   "StatSpellDamage": 0.0371,
+   "StatSpellHasteRating": 0.0549,
+   "StatSpellHitRating": 0.0026,
+   "StatStrength": 0.3771
+  },
+  "trinkets": [
+   "Blackhand's Breadth",
+   "Adaptive Combat Assistant"
+  ],
+  "race_seed1": {
+   "current": 1.0,
+   "all-slots": 1.0157383159904307,
+   "keep-sets-and-effects": 1.0157383159904307
+  },
+  "confirm_seed2": {
+   "current": 1.0,
+   "all-slots": 1.0151054748733013
+  },
+  "chosen": "all-slots",
+  "gain": 0.015105474873301272,
+  "current_in_pool": true,
+  "ilvl_before": 64.8,
+  "ilvl_after": 65.2,
+  "items": [
+   {
+    "id": 12640,
+    "enchant": 1506
+   },
+   {
+    "id": 18404
+   },
+   {
+    "id": 271955
+   },
+   {
+    "id": 13340,
+    "enchant": 849
+   },
+   {
+    "id": 252484,
+    "enchant": 1891
+   },
+   {
+    "id": 21184,
+    "enchant": 1885
+   },
+   {
+    "id": 19143,
+    "enchant": 927
+   },
+   {
+    "id": 19137
+   },
+   {
+    "id": 22385,
+    "enchant": 1506
+   },
+   {
+    "id": 21995,
+    "enchant": 1887
+   },
+   {
+    "id": 18821
+   },
+   {
+    "id": 19325
+   },
+   {
+    "id": 13965
+   },
+   {
+    "id": 272437
+   },
+   {
+    "id": 18832,
+    "enchant": 1900
+   },
+   {
+    "id": 272452,
+    "enchant": 1900
+   },
+   {
+    "id": 17069
+   }
+  ],
+  "changed": [
+   {
+    "slot": 1,
+    "from": "Mark of Fordring",
+    "to": "Onyxia Tooth Pendant"
+   },
+   {
+    "slot": 3,
+    "from": "Deathguard's Cloak",
+    "to": "Cape of the Black Baron"
+   },
+   {
+    "slot": 12,
+    "from": "Hand of Justice",
+    "to": "Blackhand's Breadth"
+   },
+   {
+    "slot": 13,
+    "from": "Blackhand's Breadth",
+    "to": "Adaptive Combat Assistant"
+   }
+  ],
+  "date": "2026-10-16"
  }
 }

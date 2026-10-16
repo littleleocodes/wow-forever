@@ -108,7 +108,11 @@ SUSPECT_ITEMS = {
 # _reference/mythicsim-comparison.md): treated as sourced in both tiers, and trinkets among them join every class's trinket candidates.
 VENDOR_ITEMS = {
     272437: "Adaptive Combat Assistant (trinket, +20 Expertise; new in Forever): \"This item can be purchased in Stranglethorn Vale\" "
-            "(wowhead.com/forever/item=272437, 2026-10-15); its on-use (Damage Sigmoid) is not implemented in the simulator",
+            "(wowhead.com/forever/item=272437, 2026-10-15; vendor Pix Xizzix, Booty Bay, 125 Tarnished Undermine Reals). Tooltip "
+            "(nether.wowhead.com/forever/tooltip/item/272437, 2026-10-16): \"Equip: Reduces chance to be Dodged or Parried by 2.0%.\" \"Use: "
+            "Absorbs 450 damage for 15 sec. If this shield expires before 15 sec, 90 to 110 Nature damage will be dealt to all enemies in "
+            "melee range.\" (1 min 30 s): a shield, nothing for a damage dealer the boss does not hit; neither the fork nor MythicSim "
+            "simulates it",
 }
 
 

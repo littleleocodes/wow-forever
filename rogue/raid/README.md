@@ -15,7 +15,7 @@
 
 | Spec | Pre-BiS | Phase 1 BiS |
 |---|---|---|
-| [Combat](combat.md) | 643 | 696 |
+| [Combat](combat.md) | 644 | 696 |
 | [Assassination](assassination.md) | 630 | 685 |
 | [Subtlety](subtlety.md) | 592 | 642 |
 | [Daggers (split)](daggers-split.md) | - | - |

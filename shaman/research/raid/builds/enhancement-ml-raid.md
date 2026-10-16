@@ -48,16 +48,16 @@ The Enhancement build the machine-learning talent search found in a full raid (e
 
 ## Rank among our builds and the community simulator's
 
-**2 of 6** for `enhancement-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 6** for `enhancement-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) | ours: optimizer | 11/31/9 | 385 | +0.0% | 681 | -6.3% | 14 s |
-| 2 | **[`enhancement-ml-raid`](enhancement-ml-raid.md)** | ours: derived (ML search) | 19/32/0 | 383 | -0.4% | 727 | +0.0% | 30 s |
-| 3 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 380 | -1.3% | 671 | -7.7% | 14 s |
-| 4 | *Level 60* | community simulator | - | 379 | -1.6% | 684 | -5.8% | 32 s |
-| 5 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: derived (ML search) | 17/26/8 | 365 | -5.1% | 690 | -5.0% | 12 s |
-| 6 | *Enhancement 16/35/0* | community simulator | - | 345 | -10.4% | 663 | -8.8% | 84 s |
+| 1 | **[`enhancement-ml-raid`](enhancement-ml-raid.md)** | ours: derived (ML search) | 19/32/0 | 405 | +0.0% | 754 | +0.0% | 18 s |
+| 2 | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) | ours: optimizer | 11/31/9 | 404 | -0.2% | 704 | -6.6% | 4 s |
+| 3 | *Level 60* | community simulator | - | 399 | -1.3% | 704 | -6.6% | 21 s |
+| 4 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 399 | -1.3% | 694 | -7.9% | 4 s |
+| 5 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: derived (ML search) | 17/26/8 | 381 | -6.0% | 713 | -5.4% | 2 s |
+| 6 | *Enhancement 16/35/0* | community simulator | - | 362 | -10.6% | 691 | -8.3% | 79 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -84,23 +84,23 @@ Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of A
 | 1 | if time left on the totem ≤ 0s: cast Strength of Earth Totem | 0.3 |
 | 2 | if time left on the totem ≤ 0s: cast Grace of Air Totem | 0.3 |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | cast Stormstrike | 14.3 |
-| 5 | if stacks of Maelstrom Weapon ≥ 3.75: cast Lightning Bolt | 4.5 |
+| 4 | cast Stormstrike | 14.6 |
+| 5 | if stacks of Maelstrom Weapon ≥ 3.75: cast Lightning Bolt | 4.6 |
 | 6 | if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.3 |
-| 7 | if not Flame Shock is on the target: cast Flame Shock | 3.6 |
-| 8 | cast Earth Shock | 5.7 |
+| 7 | if not Flame Shock is on the target: cast Flame Shock | 3.9 |
+| 8 | cast Earth Shock | 6.0 |
 | 9 | if number of targets = 1 and not Searing Totem is on the target: cast Searing Totem | 1.3 |
 
 Damage by ability:
 
 | Ability | [`enhancement-ml-raid`](enhancement-ml-raid.md) |
 |---|---|
-| Auto Attack | 29% |
+| Auto Attack | 28% |
 | Windfury Weapon | 19% |
 | Earth Shock | 13% |
 | Stormstrike | 11% |
-| Lightning Bolt | 10% |
 | Flame Shock | 10% |
+| Lightning Bolt | 10% |
 | Attack | 6% |
 | Dragonbreath Chili | 3% |
 

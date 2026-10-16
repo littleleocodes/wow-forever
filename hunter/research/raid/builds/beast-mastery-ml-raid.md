@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Beast Mastery build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-15 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry bm-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).
+The Beast Mastery build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-16 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry bm-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).
 
 ## Point allocation
 

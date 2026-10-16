@@ -1,0 +1,287 @@
+{
+ "id": "fl-arcane-arcane-leveling",
+ "allocation": {
+  "Arcane": [
+   [
+    "Improved Channeling",
+    5
+   ],
+   [
+    "Arcane Concentration",
+    5
+   ],
+   [
+    "Arcane Blast",
+    1
+   ],
+   [
+    "Arcane Impact",
+    3
+   ],
+   [
+    "Arcane Geometry",
+    2
+   ],
+   [
+    "Missile Barrage",
+    1
+   ],
+   [
+    "Arcane Meditation",
+    3
+   ],
+   [
+    "Improved Counterspell",
+    1
+   ],
+   [
+    "Presence of Mind",
+    1
+   ],
+   [
+    "Arcane Mind",
+    5
+   ],
+   [
+    "Arcane Instability",
+    3
+   ],
+   [
+    "Arcane Focus",
+    4
+   ],
+   [
+    "Arcane Power",
+    1
+   ]
+  ],
+  "Fire": [
+   [
+    "Incineration",
+    3
+   ]
+  ],
+  "Frost": [
+   [
+    "Frost Warding",
+    2
+   ],
+   [
+    "Elemental Precision",
+    3
+   ],
+   [
+    "Frostbite",
+    3
+   ],
+   [
+    "Improved Frost Nova",
+    2
+   ],
+   [
+    "Ice Lance",
+    1
+   ],
+   [
+    "Frost Channeling",
+    2
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-12",
+   "tree": "Frost",
+   "talent": "Elemental Precision",
+   "points": 3
+  },
+  {
+   "levels": "13-14",
+   "tree": "Frost",
+   "talent": "Frost Warding",
+   "points": 2
+  },
+  {
+   "levels": "15-17",
+   "tree": "Frost",
+   "talent": "Frostbite",
+   "points": 3
+  },
+  {
+   "levels": "18-19",
+   "tree": "Frost",
+   "talent": "Improved Frost Nova",
+   "points": 2
+  },
+  {
+   "levels": "20",
+   "tree": "Frost",
+   "talent": "Ice Lance",
+   "points": 1
+  },
+  {
+   "levels": "21-22",
+   "tree": "Frost",
+   "talent": "Frost Channeling",
+   "points": 2
+  },
+  {
+   "levels": "23-27",
+   "tree": "Arcane",
+   "talent": "Improved Channeling",
+   "points": 5
+  },
+  {
+   "levels": "28-32",
+   "tree": "Arcane",
+   "talent": "Arcane Concentration",
+   "points": 5
+  },
+  {
+   "levels": "33",
+   "tree": "Arcane",
+   "talent": "Arcane Blast",
+   "points": 1
+  },
+  {
+   "levels": "34-36",
+   "tree": "Arcane",
+   "talent": "Arcane Impact",
+   "points": 3
+  },
+  {
+   "levels": "37",
+   "tree": "Arcane",
+   "talent": "Arcane Geometry",
+   "points": 1
+  },
+  {
+   "levels": "38-40",
+   "tree": "Arcane",
+   "talent": "Arcane Meditation",
+   "points": 3
+  },
+  {
+   "levels": "41",
+   "tree": "Arcane",
+   "talent": "Improved Counterspell",
+   "points": 1
+  },
+  {
+   "levels": "42",
+   "tree": "Arcane",
+   "talent": "Arcane Geometry",
+   "points": 1
+  },
+  {
+   "levels": "43",
+   "tree": "Arcane",
+   "talent": "Presence of Mind",
+   "points": 1
+  },
+  {
+   "levels": "44-47",
+   "tree": "Arcane",
+   "talent": "Arcane Mind",
+   "points": 4
+  },
+  {
+   "levels": "48-50",
+   "tree": "Arcane",
+   "talent": "Arcane Instability",
+   "points": 3
+  },
+  {
+   "levels": "51",
+   "tree": "Arcane",
+   "talent": "Arcane Mind",
+   "points": 1
+  },
+  {
+   "levels": "52",
+   "tree": "Arcane",
+   "talent": "Missile Barrage",
+   "points": 1
+  },
+  {
+   "levels": "53",
+   "tree": "Arcane",
+   "talent": "Arcane Power",
+   "points": 1
+  },
+  {
+   "levels": "54-56",
+   "tree": "Fire",
+   "talent": "Incineration",
+   "points": 3
+  },
+  {
+   "levels": "57-60",
+   "tree": "Arcane",
+   "talent": "Arcane Focus",
+   "points": 4
+  }
+ ],
+ "search": {
+  "date": "2026-10-16",
+  "spec": "arcane-leveling",
+  "model": "frost-leveling",
+  "tree": "Arcane",
+  "start": "mage/research/leveling/fightlab/candidates/arcane-blast-leveling-start.json",
+  "starts": {
+   "mage/research/leveling/fightlab/candidates/arcane-blast-leveling-start.json": 36.319175828272755
+  },
+  "moves": [
+   {
+    "round": 1,
+    "move": "1 point Arcane Focus -> Ice Lance",
+    "gain_seed1": 0.18546933659813225,
+    "gain_seed2": 0.19805418666957297
+   },
+   {
+    "round": 2,
+    "move": "2 points Wake of Fire -> Frost Channeling",
+    "gain_seed1": 0.0168780045325978,
+    "gain_seed2": 0.010638196669855993
+   }
+  ],
+  "incumbent": "arcane-leveling",
+  "race": {
+   "incumbent": [
+    33.536421628012526,
+    {
+     "20": 29.7522426325543,
+     "30": 36.09270576452927,
+     "40": 39.40012377236117,
+     "50": 33.028463925614446,
+     "60": 30.03383588067287
+    }
+   ],
+   "search": [
+    33.941914578905866,
+    {
+     "20": 28.681647646787074,
+     "30": 38.58064022072388,
+     "40": 40.27738018288513,
+     "50": 34.17453972707656,
+     "60": 28.95847604257471
+    }
+   ],
+   "gain": -0.012091121568994057,
+   "all": {
+    "arcane-leveling": [
+     33.536421628012526,
+     {
+      "20": 29.7522426325543,
+      "30": 36.09270576452927,
+      "40": 39.40012377236117,
+      "50": 33.028463925614446,
+      "60": 30.03383588067287
+     }
+    ]
+   }
+  },
+  "fights": 800,
+  "confirm": 3000
+ }
+}
