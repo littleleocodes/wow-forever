@@ -49,7 +49,7 @@ class Healer(E.BaseHealer):
         "Mana Tide Totem": "290 mana every 3 s for 12 s when mana is under 50%, every 5 min",
         "Ancestral Healing": "every critical heal: +8/17/25% armor on the target for 15 s (the engine's armor buff is a fixed +25%, so ranks 1-2 "
                              "apply it on 32%/68% of crits: the same average armor)",
-        "Water Shield": "a critical heal restores 2% of maximum mana (one globe every 3 s)",
+        "Water Shield": "a critical heal restores 2% of maximum mana (one globe every 3 s; client 70425: any spell crit, and the lab casts only heals)",
         "Totemic Focus": "totem mana only: nothing for heals",
         "Elemental Focus": "clearcasting from damage spells, for the next damage spell: nothing for heals",
         "Riptide": "instant heal plus a 15 s HoT on a 6 s cooldown: the emergency heal and the tank's HoT; a Chain Heal cast on a target with "

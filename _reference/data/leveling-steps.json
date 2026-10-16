@@ -163,8 +163,9 @@
     "Pull from as far away as you can; **Presence of Mind** at the pull, and **Arcane Power** too while you have more than half your mana."
    ],
    "steps": [
-    "**Arcane Blast** while the mob walks in: at most two in a row, only if the cast ends before the mob reaches you and costs no more than a quarter of your mana.",
-    "**Arcane Missiles** to spend the stacks, and at once when **Missile Barrage** lights up (after your two stacks, or when the mob is on you); none once the mob is below about a third of its health.",
+    "With **Arcane Wrath**: cast it first on the pull if it will land before the mob reaches you, and again whenever it is ready and there is time.",
+    "**Arcane Blast** while the mob walks in: at most two in a row, only if the cast ends before the mob reaches you and costs no more than a quarter of your mana. Each stack adds spell damage to all your spells for 15 seconds.",
+    "**Arcane Missiles** as your channel, and at once when **Missile Barrage** lights up (after your two stacks, or when the mob is on you); none once the mob is below about a third of its health.",
     "**Frost Nova** when the mob reaches you (**Cone of Cold** if it is on cooldown and the mob is above a third of its health), then step back; **Ice Lance** while it is frozen.",
     "**Frostbolt** when **Arcane Missiles** is out of mana, above a third of the mob's health; below a third, finish with **Fire Blast** (not below a tenth), **Ice Lance** or your wand.",
     "**Counterspell** a mob that casts spells."
@@ -361,6 +362,7 @@
     "Drop **Searing Totem** as you pull while you have more than half your mana, and pull from range with **Lightning Bolt**."
    ],
    "steps": [
+    "**Elemental Mastery** when it is ready, at the start of a fight on a fresh mob (if your build has it): **Lightning Bolt** and **Lava Burst** cast 0.5 s faster for 15 s.",
     "**Lightning Bolt** while the mob walks in, as long as the cast ends before it reaches you.",
     "**Earth Shock** when it would kill the mob, or to interrupt a caster.",
     "**Flame Shock** while it is not on the mob and the mob has more than 30% health.",

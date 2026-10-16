@@ -29,9 +29,7 @@
 
 **Names**
 
-- asks for **Wake of Fire** (self.rank / self.tv), which is no talent or spell of the current mage data
-- MECHANICS has **Wake of Fire**, which is no talent or spell of the current mage data
-- FIT has **Wake of Fire**, which is no talent or spell of the current mage data
+- all found
 
 **Damage spells that parse to none**
 
@@ -53,8 +51,7 @@
 
 **Names**
 
-- MECHANICS has **Improved Fade**, which is no talent or spell of the current priest data
-- MECHANICS has **Shadow Affinity**, which is no talent or spell of the current priest data
+- all found
 
 **Damage spells that parse to none**
 
@@ -77,11 +74,7 @@
 
 **Names**
 
-- asks for **Call of Thunder** (self.rank / self.tv), which is no talent or spell of the current shaman data
-- asks for **Improved Fire Nova** (self.rank / self.tv), which is no talent or spell of the current shaman data
-- MECHANICS has **Call of Thunder**, which is no talent or spell of the current shaman data
-- MECHANICS has **Improved Fire Nova**, which is no talent or spell of the current shaman data
-- FIT has **Call of Thunder**, which is no talent or spell of the current shaman data
+- all found
 
 **Damage spells that parse to none**
 
@@ -91,9 +84,7 @@
 
 **Names**
 
-- asks for **Malediction** (self.rank / self.tv), which is no talent or spell of the current warlock data
-- MECHANICS has **Malediction**, which is no talent or spell of the current warlock data
-- FIT has **Malediction**, which is no talent or spell of the current warlock data
+- all found
 
 **Damage spells that parse to none**
 

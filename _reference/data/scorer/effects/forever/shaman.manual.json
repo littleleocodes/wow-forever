@@ -2460,58 +2460,6 @@
       }
     ]
   },
-  "Call of Thunder": {
-    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, elemental-dps, training dummy): removing it costs 1.6% DPS in the simulator (scorer said 1.9% on the same scale); already within tolerance, raid effects split off unchanged (1.9%). Other modes unchanged. Fight lab calibration (2026-10-15, levels 30,60): removing it costs -0.0% time per kill in the simulator (scorer said 1.1% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (0.0%). Other modes unchanged.",
-    "effects": [
-      {
-        "channel": "crit",
-        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
-        "values": [0.03],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["resto-heal", "enhancement-dps"]
-      },
-      {
-        "channel": "crit",
-        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
-        "values": [0.03],
-        "source": "parsed",
-        "modes": ["leveling-aoe", "heal", "tank"]
-      },
-      {
-        "channel": "crit",
-        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
-        "values": [0.03],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["resto-heal"]
-      },
-      {
-        "channel": "crit",
-        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
-        "values": [0.046855],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["enhancement-dps"]
-      },
-      {
-        "channel": "crit",
-        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
-        "values": [0.03],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["elemental-dps"]
-      },
-      {
-        "channel": "crit",
-        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
-        "values": [0.0],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["elemental-dps"]
-      }
-    ]
-  },
   "Convection": {
     "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 3.6% DPS in the simulator (scorer said 4.2% on the same scale); already within tolerance, raid effects split off unchanged (4.3%). Other modes unchanged. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 3.9% time per kill in the simulator (scorer said 4.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.9%). Other modes unchanged.",
     "effects": [

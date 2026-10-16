@@ -152,26 +152,25 @@ MECHANICS = {
     "Improved Mind Blast": "-0.5s/rank Mind Blast cooldown",
     "Improved Psychic Scream": "-2s/rank Psychic Scream cooldown",
     "Mind Flay": "unlocks Mind Flay (3s channel, 3 ticks, 50% slow)",
-    "Improved Mind Flay": "+10%/rank Mind Flay damage and +5 yd range; the slow weakens to 35/20% (tooltip numbers)",
+    "Improved Mind Flay": "each Mind Flay tick deals 10%/rank more than the one before it in the same channel (client 70425; compounding: 1, 1.2, 1.44 at 2/2; was +10%/rank, range and a weaker slow)",
     "Vampiric Embrace": "20% of Shadow damage dealt heals you for 30s (1 min cooldown, 40 mana)",
-    "Shadow Weaving": "33%/rank chance per Shadow hit: +2% Shadow damage per stack (5 stacks, 15s)",
-    "Devouring Contagion": "-25%/rank Devouring Plague mana cost",
+    "Shadow Weaving": "33%/rank chance per Shadow hit: +2% Shadow damage the target takes from you per stack (5 stacks, 15s; a debuff on the mob since client 70425, so the stacks start over on every mob)",
+    "Dark Inspiration": "+3%/rank Spirit (mana regeneration) for 10 s after a Mind Blast hit or a fully channelled Mind Flay (client 70425; its party share does nothing solo)",
+    "Devouring Contagion": "-25%/rank Devouring Plague mana cost (the spread on a kill: not modelled)",
     "Early Demise": "+15%/rank Shadow Word: Death crit below 20% health",
     "Darkness": "+2%/rank Shadow damage",
     "Shadowform": "+10% Shadow damage, -50% Shadow mana cost, Shadow crits x2.0, -15% physical damage taken, no heals",
     "Wand Specialization": "+13/25% wand damage",
-    "Twin Disciplines": "+1%/rank damage and healing of instant casts",
+    "Twin Disciplines": "+1%/rank damage and healing of instant casts, Mind Flay and Penance included (16 Oct beta notes; forever-bugs #322, #328)",
     "Improved Power Word: Shield": "+7/14/20% absorb",
     "Martyrdom": "Focused Casting for 6s after a melee crit: no pushback",
     "Mental Agility": "-3.3%/rank mana cost of instants, Smite and Holy Fire",
     "Inner Focus": "next Mind Blast free with +25% crit, every 3 min",
     "Meditation": "17%/rank of Spirit regen continues while casting",
     "Improved Inner Fire": "+15%/rank Inner Fire armor and +4 charges",
-    "Mental Strength": "+3%/rank Intellect",
+    "Mental Strength": "+2%/rank Intellect (client 70425; was 3%)",
     "Soul Warding": "Power Word: Shield -15% mana",
     "Silent Resolve": "threat only",
-    "Shadow Affinity": "threat only",
-    "Improved Fade": "threat only",
     "Silence": "interrupts a casting mob and locks it out for 5 s (caster mobs: tables.MOB_CASTER_SHARE)",
     "Improved Mana Burn": "casters only (none here)",
     "Holy Precision": "+6%/rank Holy hit (Smite before 20)",
@@ -189,7 +188,7 @@ MECHANICS = {
 HOLY_MECHANICS = {
     "Penance": "unlocks Penance: 3 Holy hits over a 2 s channel (tooltip: N Holy damage instantly and every 1 sec for 2 sec, the tooltip's "
                "spell power per hit), 12 s cooldown; the learned rank with the most damage is cast",
-    "Power in Light": "+2%/rank Smite and Penance damage while your Holy Fire burns on the mob",
+    "Power in Light": "+2%/rank Smite and Penance damage while your Holy Fire or Shadow Word: Pain burns on the mob (Shadow Word: Pain since client 70425)",
     "Power Infusion": "+20% spell damage and healing for 15 s, cast on yourself as a pull starts (3 min cooldown, 20% of base mana)",
     "Holy Reach": "+10%/rank Smite and Holy Fire range: longer pulls",
     "Blessed Recovery": "after a melee crit or a hit above 30% of your health: heal 8/16/25% of that hit over 6 s (the rest carries over)",
@@ -200,7 +199,7 @@ HOLY_MECHANICS = {
     "Holy Nova": "area pulls only (AOE)",
     "Silent Resolve": "threat only",
     "Inspiration": "not modelled (armor after a critical non-periodic heal on yourself; rare in leveling fights)",
-    "Divine Aegis": "not modelled (a 5%/rank absorb after a critical heal; rare in leveling fights)",
+    "Divine Aegis": "not modelled (a 5%/rank absorb after a critical non-periodic heal, at most 1,200; rare in leveling fights)",
     "Litany of Light": "not modelled (mana back when alternating heals; leveling fights cast few heals)",
     "Binding Heal": "not cast (Flash Heal heals more per mana on yourself)",
 }
@@ -218,7 +217,7 @@ FIT = {
     "Spirit Tap": "scale", "Shadowform": "scale", "Improved Mind Flay": "scale", "Shadow Weaving": "scale", "Improved Shadow Word: Pain": "scale",
     "Improved Mind Blast": "scale", "Darkness": "scale", "Twin Disciplines": "scale", "Silence": "scale", "Wand Specialization": "scale", "Meditation": "scale",
     "Improved Power Word: Shield": "scale", "Martyrdom": "scale", "Inner Focus": "scale", "Mental Strength": "scale", "Spiritual Guidance": "scale",
-    "Twilight Focus": "scale", "Improved Psychic Scream": "scale", "Early Demise": "scale", "Devouring Contagion": "scale", "Shadow Reach": "scale",
+    "Twilight Focus": "scale", "Improved Psychic Scream": "scale", "Early Demise": "scale", "Devouring Contagion": "scale", "Shadow Reach": "scale", "Dark Inspiration": "scale",
     "Mental Agility": "scale", "Soul Warding": "scale", "Improved Renew": "scale", "Improved Inner Fire": "scale", "Holy Specialization": "scale",
     "Divine Fury": "scale", "Searing Light": "scale", "Holy Precision": "scale", "Spiritual Healing": "scale",
 }
@@ -273,6 +272,7 @@ class PriestModule(BaseModule):
             s.dot, s.dot_dur, s.dot_ticks = swp.dot * (swp.dot_ticks + add) / swp.dot_ticks, swp.dot_dur + add * every, swp.dot_ticks + add
             self.spells["Shadow Word: Pain"] = s
         self._fight = None
+        self._flay_i, self._flay_t = -1, None   # the current Mind Flay channel's tick count (flay_ramp)
         self._base_mana = 0.0
         self.armor_spell_used = "Inner Fire" if "Inner Fire" in self.spells else "none"
 
@@ -403,18 +403,20 @@ class PriestModule(BaseModule):
             if self.in_shadowform():
                 m *= 1.10
             if self._fight:
-                sw = self._fight.p.buff("Shadow Weaving", self._fight.t)
-                if sw:
+                sw = self._fight.m.debuffs.get("Shadow Weaving")   # a debuff on the mob since client 70425 (was a buff on you)
+                if sw and sw["until"] > self._fight.t:
                     m *= 1 + 0.02 * sw["stacks"]
         if spell.school == "holy":
             m *= 1 + self.tv("Searing Light", 0) / 100
         if spell.name == "Mind Flay":
-            m *= 1 + 0.10 * self.rank("Improved Mind Flay")
-        if spell.cast == 0 and spell.kind != "channel":
+            m *= self.flay_ramp()
+        # Twin Disciplines: instant casts, and since the 16 Oct beta notes Mind Flay and Penance (the devs called their absence a bug:
+        # forever-bugs #322, #328)
+        if (spell.cast == 0 and spell.kind != "channel") or spell.name in ("Mind Flay", "Penance"):
             m *= 1 + self.tv("Twin Disciplines", 0) / 100
         if self.holy and self._fight:
             f = self._fight
-            if spell.name in ("Smite", "Penance") and f.dot_active("Holy Fire"):
+            if spell.name in ("Smite", "Penance") and (f.dot_active("Holy Fire") or f.dot_active("Shadow Word: Pain")):   # SW:P: 70425
                 m *= 1 + self.tv("Power in Light", 0) / 100
             if f.p.buff("Power Infusion", f.t):
                 m *= 1.20
@@ -439,15 +441,27 @@ class PriestModule(BaseModule):
         return 0.0
 
     def chill_extra_slow(self):
-        """Improved Mind Flay trades Mind Flay's 50% slow for the tooltip's 35% / 20%; Mind Flay is the priest's only slow."""
-        flay = self.spells.get("Mind Flay")
-        if self.rank("Improved Mind Flay") and flay is not None and flay.chill > 0:
-            return self.tv("Improved Mind Flay", 2) / 100 - flay.chill
-        return 0.0
+        return 0.0   # client 70425: Improved Mind Flay no longer changes Mind Flay's slow (it had weakened it to 35% / 20%)
 
     def flay_range(self, flay):
-        """Mind Flay's reach: the spell's 20 yd, Shadow Reach's percentage (offensive Shadow spells), Improved Mind Flay's yards."""
-        return flay.range * (1 + self.tv("Shadow Reach", 0) / 100) + self.tv("Improved Mind Flay", 1)
+        """Mind Flay's reach: the spell's 20 yd and Shadow Reach's percentage (offensive Shadow spells); Improved Mind Flay's 10 yards
+        are gone in client 70425."""
+        return flay.range * (1 + self.tv("Shadow Reach", 0) / 100)
+
+    def flay_ramp(self):
+        """Improved Mind Flay (client 70425): "Each instance of damage of Mind Flay deals 20% more damage than its previous instance", read
+        as compounding (1, 1.2, 1.44 at 2/2). The tick's place is counted per channel (pushback drops ticks from the end, so the ticks
+        left do not give it): the first call at a new tick time while a Mind Flay channel is due moves the count on; the extra mobs of an
+        area pull take the same tick's factor. Outside a tick (estimates) the next tick's factor is returned without counting."""
+        r = self.tv("Improved Mind Flay", 0) / 100
+        f = self._fight
+        if not r or f is None:
+            return 1.0
+        ch = f.channel
+        if ch and ch[0].name == "Mind Flay" and f.t >= ch[1] - 1e-9 and f.t != self._flay_t:
+            self._flay_t = f.t
+            self._flay_i += 1
+        return (1 + r) ** max(0, self._flay_i)
 
     def armor_bonus(self):
         f = self._fight
@@ -476,6 +490,8 @@ class PriestModule(BaseModule):
     def mana_regen(self, p, t):
         spirit = p.spirit
         st = p.buff("Spirit Tap", t)
+        if p.buff("Dark Inspiration", t):   # client 70425: +3%/rank Spirit for 10 s
+            spirit *= 1 + self.tv("Dark Inspiration", 0) / 100
         if st:
             spirit *= 2.0
             p.regen_while_casting = max(self.base_regen_while_casting, 0.5)
@@ -489,6 +505,7 @@ class PriestModule(BaseModule):
     # ------------------------------------------------------------ engine hooks: events
     def on_fight_start(self, fight):
         self._fight = fight
+        self._flay_i, self._flay_t = -1, None
         self._base_mana = fight.p.base_mana
         p, t = fight.p, fight.t
         # Inner Fire: re-apply when its charges are used up (10 min otherwise)
@@ -527,6 +544,8 @@ class PriestModule(BaseModule):
             return
         if spell.school == "shadow" and (amount > 0 or spell.dot > 0):
             self.shadow_hit(fight, spell, amount)
+        if spell.name == "Mind Blast" and amount > 0 and self.rank("Dark Inspiration"):   # client 70425
+            p.buffs["Dark Inspiration"] = {"until": t + 10.0}
         if spell.name == "Shadow Word: Death" and m.hp > 0:
             back = 0.10 * p.hp_max
             p.hp -= back
@@ -535,9 +554,9 @@ class PriestModule(BaseModule):
     def shadow_hit(self, fight, spell, amount):
         p, m, t, rng = fight.p, fight.m, fight.t, fight.rng
         if spell.school == "shadow" and self.rank("Shadow Weaving") and rng.random() < self.tv("Shadow Weaving", 0) / 100:
-            b = p.buffs.get("Shadow Weaving")
+            b = m.debuffs.get("Shadow Weaving")   # on the mob since client 70425
             stacks = min(5, (b["stacks"] if b and b["until"] > t else 0) + 1)
-            p.buffs["Shadow Weaving"] = {"until": t + 15.0, "stacks": stacks}
+            m.debuffs["Shadow Weaving"] = {"until": t + 15.0, "stacks": stacks}
         if amount > 0:
             if self.rank("Blackout") and not m.stunned(t) and rng.random() < self.tv("Blackout", 0) / 100:
                 m.stun_until = t + 3.0
@@ -554,6 +573,10 @@ class PriestModule(BaseModule):
 
     def after_cast(self, fight, spell):
         p, t = fight.p, fight.t
+        if spell.name == "Mind Flay":   # the channel ended: Dark Inspiration when every tick landed (fully channelled), the ramp starts over
+            if self.rank("Dark Inspiration") and self._flay_i + 1 >= max(1, spell.dot_ticks):
+                p.buffs["Dark Inspiration"] = {"until": t + 10.0}
+            self._flay_i, self._flay_t = -1, None
         cd = spell.cooldown
         if spell.name == "Mind Blast":
             cd = max(0.0, cd - self.tv("Improved Mind Blast", 0))

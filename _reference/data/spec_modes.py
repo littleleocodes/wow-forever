@@ -51,7 +51,7 @@ HYBRID_NAMES = {
     ("rogue", "Hybrid Assassination/Combat"): ("Daggers (split)", "daggers-split", "Daggers with points split between Assassination and Combat."),
     ("rogue", "Hybrid Combat/Subtlety"): ("Combat-Subtlety", "combat-subtlety", "Subtlety's openers, Ghostly Strike and Hemorrhage with Combat's weapon talents (2026-10-08, the open leveling search)."),
     ("shaman", "Hybrid Elemental/Enhancement"): ("Elemental-Enhancement", "elemental-enhancement", {
-        "leveling": "A Lightning Bolt caster (Call of Thunder, Lightning Overload) that dips Enhancement for its passive bonuses.",
+        "leveling": "A Lightning Bolt caster (Lightning Overload) that dips Enhancement for its passive bonuses.",
         "raid": "A melee shaman: Enhancement's Stormstrike and Flurry with Elemental's shock and Fire Nova talents."}),
     ("warlock", "Hybrid Affliction/Destruction"): ("Shadow Bolt hybrid", "shadow-bolt-hybrid", {
         "raid": "Shadow Bolt with Affliction's Malevolence and Destruction's Agonizing Flames, points in all three trees.",

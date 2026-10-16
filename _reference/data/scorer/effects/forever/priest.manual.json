@@ -1565,21 +1565,6 @@
       }
     ]
   },
-  "Improved Fade": {
-    "note": "Fade cooldown: leveling survivability. 2026-09-27 audit: a solo priest is the only name on the mob's threat list, so Fade does nothing while leveling; it is the raid threat dump: 0.001/rank in raid and heal. PvP (2026-09-27): zero, escape: Fade (-6 s cooldown) only discourages NPCs (tooltip as in Classic); players ignore it, so the shadow-pvp draft's 2 points are wasted.",
-    "effects": [
-      {
-        "channel": "utility",
-        "scope": ["mode:raid"],
-        "per_rank": 0.001
-      },
-      {
-        "channel": "utility",
-        "scope": ["mode:heal"],
-        "per_rank": 0.001
-      }
-    ]
-  },
   "Improved Psychic Scream": {
     "note": "Psychic Scream cooldown: leveling/PvP utility. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
     "effects": [
@@ -2392,16 +2377,6 @@
         "source": "parsed",
         "modes": ["leveling-aoe"],
         "specs": ["shadow-dps"]
-      }
-    ]
-  },
-  "Shadow Affinity": {
-    "note": "2026-09-27 audit: threat reduction on Shadow spells: 0.003/rank raid utility (like Natural Grace and Suppression); the scorer does not read the threat channel. PvP (2026-09-27): zero, defensive: Threat only (-30% Shadow spell threat); players ignore threat.",
-    "effects": [
-      {
-        "channel": "utility",
-        "scope": ["mode:raid"],
-        "per_rank": 0.003
       }
     ]
   }

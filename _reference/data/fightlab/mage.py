@@ -12,7 +12,8 @@ Playstyles:
 - `fire-leveling`: Fireball at range, Scorch and Fire Blast when the mob is close, Frost Nova / Blast Wave for
   distance, Ice Lance into freezes if talented, Pyroblast on a full Heating Up, Combustion on the pull.
 - `arcane-leveling` (2026-09-30, `decide_arcane`): Arcane Power and Presence of Mind on the pull, Arcane Blast stacked while the
-  mana allows (each stack +10% to the next other spell, +175% to the next Arcane Blast's cost), Arcane Missiles as the channel
+  mana allows (client 70425: each stack 15% of Intellect as spell damage for 15 s from the first, +175% to the next Arcane Blast's
+  cost; Arcane Wrath when talented), Arcane Missiles as the channel
   (free and twice as fast on a Missile Barrage proc), Frost Nova / Cone of Cold and a step back when the mob reaches you, Ice Lance
   into freezes if talented, Fire Blast and wand to finish without overkill. Frostbolt only when Arcane Missiles is unaffordable.
 All drink conjured water and use Evocation between fights.
@@ -40,11 +41,15 @@ ABSORB = re.compile(r"absorbing ([\d,]+) damage")
 ARMOR = re.compile(r"Increases Armor by (\d+)")
 COEF = re.compile(r"([\d.]+)% of spell power")
 MISSILES = re.compile(r"causing (\d[\d,]*) Arcane damage each second for (\d+) sec")
-AB_STACK = re.compile(r"other spells is increased by (\d+)% and the mana cost of Arcane Blast is increased by (\d+)%\. "
+# client 70425: "Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is
+# increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application." (70291: +10% to other spells' damage)
+AB_STACK = re.compile(r"gain (\d+)% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by (\d+)%\. "
                       r"Effect stacks up to (\d+) times and lasts (\d+) sec")
+AW_MANA = re.compile(r"Spell Damage equal to (\d+)% of your maximum Mana")   # Arcane Wrath (client 70425)
+LANCE_FROZEN = re.compile(r"Deals (\d+)% increased damage to Frozen targets")   # Ice Lance: 200% since 70425 (300% before)
 
 TALENT_SPELLS = {"Ice Lance": "Ice Lance", "Ice Barrier": "Ice Barrier", "Cold Snap": "Cold Snap", "Ice Block": "Ice Block",
-                 "Pyroblast": "Pyroblast", "Blast Wave": "Blast Wave"}
+                 "Pyroblast": "Pyroblast", "Blast Wave": "Blast Wave", "Arcane Wrath": "Arcane Wrath"}
 DEFAULT_RANGE = {"Frost Nova": 10.0, "Cone of Cold": 10.0, "Arcane Explosion": 10.0, "Blast Wave": 10.0}
 # the client carries none: Pyroblast and Blast Wave Classic-style values; Ice Lance 0.10, the community simulator's fit to beta combat logs
 # (2ce8265: hits of two level 20-26 mages at known spell power; 0.143 until 2026-10-09)
@@ -110,8 +115,12 @@ def load_spellbook():
                     s.kind, s.channel, s.dot, s.dot_ticks, s.dot_dur = "channel", float(n), _num(ms.group(1)) * n, n, float(n)
                     s.dot_coef, s.coef = s.coef, 0.0
                 abs_ = AB_STACK.search(txt)
-                # Arcane Blast: (other spells' damage per stack, own cost per stack, max stacks, duration)
+                # Arcane Blast: (Intellect share gained as spell damage per stack, own cost per stack, max stacks, duration from the first)
                 s.ab_stack = (float(abs_.group(1)) / 100, float(abs_.group(2)) / 100, int(abs_.group(3)), float(abs_.group(4))) if abs_ else None
+                aw = AW_MANA.search(txt)
+                s.mana_sp = float(aw.group(1)) / 100 if aw else 0.0
+                lf = LANCE_FROZEN.search(txt)
+                s.frozen_mult = 1 + float(lf.group(1)) / 100 if lf else 0.0
                 book.setdefault(sp["name"], []).append(s)
     for name in book:
         book[name].sort(key=lambda x: (x.level, x.rank))
@@ -154,7 +163,7 @@ def talent_numbers():
 TNUM = talent_numbers()
 
 MECHANICS = {
-    "Improved Frostbolt": "Frostbolt cast time -0.1s per rank",
+    "Improved Frostbolt": "Frostbolt (and Frost Blast, client 70425) cast time -0.1s per rank",
     "Improved Counterspell": "Counterspell also silences: +2/4 s lockout on a caster mob (tables.MOB_CASTER_SHARE of pulls)",
     "Elemental Precision": "+1% hit per rank with Frost and Fire spells",
     "Ice Shards": "Frost crit damage bonus +20% per rank of the 50% spell bonus (x2.0 at 5/5)",
@@ -163,13 +172,14 @@ MECHANICS = {
     "Frostbite": "each chill (Frostbolt, Cone of Cold, Ice Armor proc) has 5% per rank to freeze 5s",
     "Piercing Ice": "+2% Frost damage per rank",
     "Frost Channeling": "-5% Frost mana cost per rank",
-    "Ice Lance": "unlocks Ice Lance (ranks by level; x4 damage vs Frozen; coefficient 0.10, the simulator's fit to beta logs)",
+    "Ice Lance": "unlocks Ice Lance (ranks by level; x3 damage vs Frozen since client 70425, x4 before; coefficient 0.10, the simulator's fit to beta logs)",
     "Arctic Reach": "+10% Frostbolt range per rank (longer pull)",
     "Shatter": "+17/33/50% crit vs Frozen targets (Frost Nova, Frostbite, Fingers of Frost)",
     "Improved Cone of Cold": "+12/23/35% Cone of Cold damage",
     "Cold Snap": "resets Frost Nova / Cone of Cold / Ice Barrier when the mob is in melee and Nova is down",
     "Fingers of Frost": "15% per chill: the next 1 (rank 1) / 2 (rank 2) spell casts count as Frozen, 15s",
-    "Winter's Chill": "20%/rank per Frost spell hit: +2% Frostbolt/Ice Lance crit per stack, stacks up to the rank, 15s",
+    "Winter's Chill": ("20%/rank per Frost spell hit: +40% Cone of Cold damage per stack, up to 5 stacks, 15s (client 70425; the duration and the "
+                       "per-stack reading are assumptions; until 70291 +2% Frostbolt/Ice Lance crit per stack)"),
     "Ice Barrier": "absorb (447..819 by level) before every pull, 30s cooldown; no pushback while it holds",
     "Frost Warding": "+15/30% armor from Frost/Ice Armor",
     "Wand Specialization": "+13/25% wand damage",
@@ -181,10 +191,10 @@ MECHANICS = {
     "Arcane Instability": "+1% spell damage and +1% spell crit per rank",
     "Arcane Mind": "+2% Intellect per rank (Arcane crit damage unused)",
     "Presence of Mind": "an instant Frostbolt/Fireball opener every 3 min",
-    "Wake of Fire": "Fire Blast cooldown -1s per rank; after a kill the next Fire Blast within 30s has +25%/50% crit",
+    "Improved Fire Blast": "Fire Blast cooldown -1s and range +8/15 yd per rank (client 70425; replaced Wake of Fire and its on-kill crit)",
     "Incineration": "+2% crit per rank on Fire Blast, Ice Lance, Arcane Blast, Scorch",
     "Master of Elements": "Fire/Frost crits refund 10% per rank of the spell's base mana",
-    "Fire Power": "+2% Fire damage per rank",
+    "Fire Power": "+1% Fire damage per rank per Fire effect of yours on the target (burns, Ignite, Improved Scorch), up to 4 effects (client 70425)",
     "Arcane Focus": "+1% hit per rank with Arcane spells (neither loop casts Arcane spells)",
     "Improved Fireball": "Fireball cast time -0.1s per rank",
     "Flame Throwing": "+3 yd Fire range per rank (longer pull for the Fire loop)",
@@ -193,19 +203,22 @@ MECHANICS = {
     "Burning Soul": "23%/rank chance to ignore pushback on Fire spells",
     "Pyroblast": "unlocks Pyroblast (6s cast; ranks synthesised from Fireball); cast on a full Heating Up",
     "Improved Scorch": "Scorch's chance (the rank) to stack +3% Fire damage taken, up to 5 stacks at every rank, 30s",
-    "Heating Up": "Fireball/Fire Blast/Scorch crits stack (3 = Pyroblast cast -75%), 20s",
-    "Critical Mass": "+2% Fire crit per rank",
+    "Heating Up": ("Fireball/Fire Blast/Scorch crits stack, Fire Blast adds one more whenever it hits (3 = Pyroblast cast -75%), 20s; a Presence "
+                   "of Mind Pyroblast keeps them (client 70425 and the beta notes of 16 Oct)"),
+    "Critical Mass": "+2% Fire crit per rank (5 ranks since client 70425)",
     "Blast Wave": "unlocks Blast Wave (instant AoE, daze 50% 6s, 45s cooldown; ranks synthesised): a snare when the mob is on us",
     "Combustion": "on the pull every 3 min (shared with Presence of Mind): +10% Fire crit per Fire hit until 3 crits",
 }
 # Talent effects only the Arcane playstyle (spec strings starting with "arcane", decide_arcane, 2026-09-30) applies; the Frost, Fire
 # and Frostfire playstyles keep MECHANICS as it is (they never cast Arcane Blast or Arcane Missiles, so these are worth nothing there).
 ARCANE_MECHANICS = {
-    "Arcane Blast": "unlocks Arcane Blast (ranks by level, 15% of base mana, 2.5 s): each cast +10% damage to the next other spell and "
-                    "+175% to its own cost per stack, up to 4 stacks, 8 s or until another damage spell is cast",
-    "Missile Barrage": "Arcane Blast 40% / Frostbolt, Fireball, Frostfire Bolt 20% per cast: the next Arcane Missiles is free and fires its "
-                       "missiles every 0.5 s (half the channel), 15 s (duration assumed)",
-    "Improved Channeling": "20%/rank to lose no channel time to a hit during Arcane Missiles, 14%/rank no pushback on Arcane Blast",
+    "Arcane Blast": "unlocks Arcane Blast (ranks by level, 15% of base mana, 1.5 s): each cast 15% of Intellect as spell damage and "
+                    "+175% to its own cost per stack, up to 4 stacks, 15 s from the first (client 70425)",
+    "Arcane Wrath": "unlocks Arcane Wrath (ranks by level, 3.5 s, 6 s cooldown; spell damage +5% of maximum mana): cast after the Arcane "
+                    "Blast stacks while it can finish before the mob reaches you (client 70425)",
+    "Missile Barrage": "Arcane Blast 20%/rank, each Arcane Missile 5%/rank, Arcane Wrath, Frostbolt, Fireball, Frostfire Bolt 10%/rank: the "
+                       "next Arcane Missiles is free and fires its missiles every 0.5 s (half the channel), 15 s (duration assumed; client 70425)",
+    "Improved Channeling": "20%/rank to lose no channel time to a hit during Arcane Missiles, 14%/rank no pushback on Arcane Blast and Arcane Wrath",
     "Arcane Power": "on the pull every 3 min (mana above half): +30% spell damage, +30% mana cost for 15 s",
     "Arcane Impact": "+2% crit per rank with Arcane spells",
     "Arcane Geometry": "+3 yd Arcane range per rank (longer Arcane Blast pull)",
@@ -248,7 +261,7 @@ FIT = {"Improved Counterspell": "scale",
     "Master of Elements": "scale",
     "Impact": "scale",
     "Burning Soul": "scale",
-    "Wake of Fire": "scale",
+    "Improved Fire Blast": "scale",
     "Incineration": "scale",
     "Pyroblast": "scale",
     "Blast Wave": "scale",
@@ -279,6 +292,10 @@ class MageModule(BaseModule):
     AB_MAX_STACKS = 2        # Arcane Blasts in a row before Arcane Missiles spends the stacks
     AB_MANA_SHARE = 0.25     # the next Arcane Blast only while it costs at most this share of the current mana
     AP_MIN_MANA = 0.5        # Arcane Power on the pull only above this share of maximum mana
+    AW_OPENER = 1            # Arcane Wrath (client 70425) as the pull's first cast when its 3.5 s cast fits before the mob arrives
+    # client 70425 rewrote Arcane Blast (stacks are spell damage for every spell, 15 s, no longer spent by other spells): the stack
+    # knobs set by hand for the 70291 rule are searched again by rotation_opt.py, with the Arcane Wrath opener
+    ROTATION_KNOBS = {"AB_MAX_STACKS": [1, 2, 3, 4], "AB_MANA_SHARE": [0.15, 0.25, 0.4], "AW_OPENER": [0, 1]}
 
     def __init__(self, talents, level, spec="frost-leveling", gear="leveling", armor_spell="auto"):
         self.t = {k: v for k, v in talents.items() if v > 0}
@@ -291,7 +308,11 @@ class MageModule(BaseModule):
         for tname, sname in TALENT_SPELLS.items():
             if not self.t.get(tname):
                 self.spells.pop(sname, None)
+        if self.rank("Improved Fire Blast") and "Fire Blast" in self.spells:   # +8/15 yd range (client 70425)
+            self.spells["Fire Blast"] = copy.copy(self.spells["Fire Blast"])
+            self.spells["Fire Blast"].range += self.tv("Improved Fire Blast", 1)
         self._fight = None
+        self._am_first_tick = None
         self._base_mana = 0.0
 
     # ------------------------------------------------------------ talent helpers
@@ -381,7 +402,7 @@ class MageModule(BaseModule):
     # ------------------------------------------------------------ engine hooks: numbers
     def cast_time(self, spell):
         c = spell.cast
-        if spell.name == "Frostbolt":
+        if spell.name in ("Frostbolt", "Frost Blast"):   # Frost Blast: client 70425
             c = max(GCD, c - 0.1 * self.rank("Improved Frostbolt"))
         if spell.name in ("Fireball", "Frostfire Bolt"):
             c = max(GCD, c - 0.1 * self.rank("Improved Fireball"))
@@ -434,12 +455,6 @@ class MageModule(BaseModule):
                 c += 0.10 * f.p.buffs["Combustion"].get("hits", 0)
         if self.is_arcane() and self.sch(spell, "arcane"):
             c += self.tv("Arcane Impact", 0) / 100
-        if spell.name in ("Frostbolt", "Ice Lance") and f:
-            wc = f.m.debuffs.get("Winter's Chill")
-            if wc and wc["until"] > f.t:
-                c += 0.02 * wc["stacks"]
-        if spell.name == "Fire Blast" and f and f.p.buff("Wake of Fire", f.t):
-            c += self.tv("Wake of Fire", 3) / 100
         return c
 
     def crit_damage_bonus(self, spell):
@@ -451,27 +466,84 @@ class MageModule(BaseModule):
             return 0.5 * self.tv("Arcane Mind", 1) / 100
         return 0.0
 
+    def lance_frozen_mult(self):
+        """Ice Lance's damage factor against a Frozen target, from its tooltip (x3 since client 70425, x4 before)."""
+        s = self.spells.get("Ice Lance")
+        return getattr(s, "frozen_mult", 0.0) or 3.0
+
+    def sp_bonus(self, spell):
+        """Spell damage the module adds on top of the player's (client 70425): Arcane Blast's stacks (15% of Intellect each, every
+        spell) and Arcane Wrath's 5% of maximum mana (its own damage). The engine adds coef x spell power itself, so the module turns
+        this into an exact expected-damage factor (sp_factor) instead of writing a buff into the player's stats."""
+        f = self._fight
+        if f is None:
+            return 0.0
+        b = 0.0
+        if self.is_arcane():
+            ab = self.arcane_blast()
+            if ab is not None and ab.ab_stack:
+                b += ab.ab_stack[0] * self.ab_stacks(f) * f.p.intellect
+        if getattr(spell, "mana_sp", 0.0):
+            b += spell.mana_sp * f.p.mana_max
+        return b
+
+    def sp_factor(self, spell, periodic):
+        b = self.sp_bonus(spell)
+        if b <= 0 or self._fight is None:
+            return 1.0
+        sp = self._fight.p.spell_power
+        if periodic:
+            base, coef = spell.dot / max(1, spell.dot_ticks), spell.dot_coef
+        else:
+            base, coef = (spell.dmg_min + spell.dmg_max) / 2, spell.coef
+        mean = base + coef * sp
+        return (mean + coef * b) / mean if coef > 0 and mean > 0 else 1.0
+
     def damage_multiplier(self, spell, frozen):
+        return self.talent_multiplier(spell, frozen) * self.sp_factor(spell, False)
+
+    def periodic_multiplier(self, spell):
+        return self.talent_multiplier(spell, False) * self.sp_factor(spell, True)
+
+    def fire_effects(self):
+        """Fire effects of yours on the target, for Fire Power (client 70425: "per your Fire effects on the target ... Effects which mix
+        multiple schools of magic do not qualify"): the burns and dots of pure Fire spells, Ignite, the Improved Scorch vulnerability."""
+        f = self._fight
+        if f is None:
+            return 0
+        names = set()
+        for d in f.m.dots:
+            if d[2] <= 0:
+                continue
+            n = d[0][:-5] if d[0].endswith(" burn") else d[0]
+            src = BOOK.get(n)
+            if n == "Ignite" or (src and (src[0].school or "") == "fire"):
+                names.add(n)
+        sc = f.m.debuffs.get("Improved Scorch")
+        return len(names) + (1 if sc and sc["until"] > f.t else 0)
+
+    def talent_multiplier(self, spell, frozen):
         m = 1.0 + self.tv("Arcane Instability", 0) / 100
         if self.sch(spell, "frost"):
             m *= 1 + self.tv("Piercing Ice", 0) / 100
         if self.sch(spell, "fire"):
-            m *= 1 + self.tv("Fire Power", 0) / 100
+            if self.rank("Fire Power"):   # per Fire effect, up to the cap (client 70425; a flat 2%/rank before)
+                m *= 1 + min(self.fire_effects() * self.tv("Fire Power", 0), self.tv("Fire Power", 1)) / 100
             if self._fight:
                 sc = self._fight.m.debuffs.get("Improved Scorch")
                 if sc and sc["until"] > self._fight.t:
                     m *= 1 + 0.03 * sc["stacks"]
         if spell.name == "Ice Lance" and frozen:
-            m *= 4.0
+            m *= self.lance_frozen_mult()
         if spell.name == "Cone of Cold":
             m *= 1 + self.tv("Improved Cone of Cold", 0) / 100
+            wc = self._fight.m.debuffs.get("Winter's Chill") if self._fight else None
+            if wc and wc["until"] > self._fight.t:   # client 70425: +40% Cone of Cold damage per stack (was Frostbolt/Ice Lance crit)
+                m *= 1 + self.tv("Winter's Chill", 1) / 100 * wc["stacks"]
         if self.is_arcane() and self._fight is not None:
             f = self._fight
             if f.p.buff("Arcane Power", f.t):
                 m *= 1 + self.tv("Arcane Power", 1) / 100
-            ab = self.arcane_blast()
-            if spell.name != "Arcane Blast" and ab is not None and ab.ab_stack:
-                m *= 1 + ab.ab_stack[0] * self.ab_stacks(f)
         return m
 
     def periodic_can_crit(self, spell):
@@ -500,7 +572,7 @@ class MageModule(BaseModule):
             return True
         if self.sch(spell, "fire") and self.rank("Burning Soul"):
             return fight.rng.random() < self.tv("Burning Soul", 0) / 100
-        if spell.name in ("Arcane Missiles", "Arcane Blast") and self.rank("Improved Channeling"):
+        if spell.name in ("Arcane Missiles", "Arcane Blast", "Arcane Wrath") and self.rank("Improved Channeling"):
             return fight.rng.random() < self.tv("Improved Channeling", 0 if spell.name == "Arcane Missiles" else 1) / 100
         return False
 
@@ -528,7 +600,7 @@ class MageModule(BaseModule):
             p.buffs["Presence of Mind"] = {"until": t + 60.0}
             p.cooldowns["Presence of Mind"] = p.cooldowns["Combustion"] = t + 180.0
         if self.is_arcane():
-            p.buffs.pop("Arcane Blast", None)   # stacks do not outlast the 8 s between fights
+            p.buffs.pop("Arcane Blast", None)   # 15 s from the first stack (70425): spent by the next pull, cleared for simplicity
             if self.rank("Arcane Power") and p.ready("Arcane Power", t) and p.mana >= self.AP_MIN_MANA * p.mana_max:
                 p.buffs["Arcane Power"] = {"until": t + self.tv("Arcane Power", 0)}
                 p.cooldowns["Arcane Power"] = t + 180.0
@@ -554,10 +626,11 @@ class MageModule(BaseModule):
         return False
 
     def on_hit(self, fight, spell, amount, crit, frozen):
-        if amount > 0 and self.is_arcane() and self.rank("Missile Barrage") and spell.name in ("Arcane Blast", "Frostbolt", "Fireball", "Frostfire Bolt"):
-            chance = self.tv("Missile Barrage", 0) if spell.name == "Arcane Blast" else self.tv("Missile Barrage", 1)
+        if amount > 0 and self.is_arcane() and self.rank("Missile Barrage") and spell.name in ("Arcane Blast", "Arcane Wrath", "Frostbolt", "Fireball", "Frostfire Bolt"):
+            # client 70425 numbers: Arcane Blast 20%/rank (index 0), each missile 5%/rank (1, on_tick), the others 10%/rank (2)
+            chance = self.tv("Missile Barrage", 0) if spell.name == "Arcane Blast" else self.tv("Missile Barrage", 2)
             if chance and fight.rng.random() < chance / 100:
-                fight.p.buffs["Missile Barrage"] = {"until": fight.t + 15.0}
+                fight.p.buffs["Missile Barrage"] = {"until": fight.t + 15.0, "since": fight.t}
                 fight.note("Missile Barrage")
         self._on_hit(fight, spell, amount, crit, frozen)
 
@@ -565,11 +638,12 @@ class MageModule(BaseModule):
         p, m, t, rng = fight.p, fight.m, fight.t, fight.rng
         if amount <= 0:
             return
-        if spell.burn > 0:
-            fight.add_dot(spell.name + " burn", spell.burn * self.damage_multiplier(spell, False), max(1, int(spell.burn_dur / 2)), 2.0)
+        if spell.burn > 0:   # a burn has no coefficient: the talents' factor only
+            fight.add_dot(spell.name + " burn", spell.burn * self.talent_multiplier(spell, False), max(1, int(spell.burn_dur / 2)), 2.0)
         if self.rank("Winter's Chill") and self.sch(spell, "frost") and rng.random() < self.tv("Winter's Chill", 0) / 100:
             b = m.debuffs.get("Winter's Chill")
-            stacks = min(max(1, self.rank("Winter's Chill")), (b["stacks"] if b and b["until"] > t else 0) + 1)   # 70009: stacks cap at the rank
+            # client 70425: "stacking up to 5 times" at every rank (70009-70291: up to the rank)
+            stacks = min(int(self.tv("Winter's Chill", 2)) or 5, (b["stacks"] if b and b["until"] > t else 0) + 1)
             m.debuffs["Winter's Chill"] = {"until": t + 15.0, "stacks": stacks}
         if self.rank("Arcane Concentration") and rng.random() < self.tv("Arcane Concentration", 0) / 100:
             p.buffs["Clearcasting"] = {"until": t + 15.0}
@@ -578,9 +652,12 @@ class MageModule(BaseModule):
         if self.sch(spell, "fire"):
             if crit and self.rank("Ignite"):
                 fight.add_dot("Ignite", amount * self.tv("Ignite", 0) / 100, 2, 2.0)
-            if crit and self.rank("Heating Up") and spell.name in ("Fireball", "Frostfire Bolt", "Fire Blast", "Scorch"):   # Hot Streak until 70170
+            # Heating Up (Hot Streak until 70170): a crit of these four adds a stack; client 70425: "Fire Blast grants an additional stack
+            # every time it deals damage" (a Fire Blast crit adds two)
+            add = (1 if crit and spell.name in ("Fireball", "Frostfire Bolt", "Fire Blast", "Scorch") else 0) + (1 if spell.name == "Fire Blast" else 0)
+            if add and self.rank("Heating Up"):
                 b = p.buffs.get("Heating Up")
-                stacks = min(3, (b["stacks"] if b and b["until"] > t else 0) + 1)
+                stacks = min(3, (b["stacks"] if b and b["until"] > t else 0) + add)
                 p.buffs["Heating Up"] = {"until": t + 20.0, "stacks": stacks}
             if self.rank("Impact") and rng.random() < self.tv("Impact", 0) / 100 and not m.frozen(t):
                 m.stun_until = t + 2.0
@@ -599,9 +676,14 @@ class MageModule(BaseModule):
 
     def on_tick(self, fight, spell, amount, crit):
         # Arcane Concentration: one roll per Arcane Missiles cast (on its first missile), like one damage spell hitting
-        if spell.name == "Arcane Missiles" and self.rank("Arcane Concentration") and fight.channel and fight.channel[2] == spell.dot_ticks:
-            if fight.rng.random() < self.tv("Arcane Concentration", 0) / 100:
+        if spell.name == "Arcane Missiles" and fight.channel and fight.channel[2] == spell.dot_ticks:
+            self._am_first_tick = fight.t   # the channel's first missile: a Missile Barrage proc from before it is spent (after_cast)
+            if self.rank("Arcane Concentration") and fight.rng.random() < self.tv("Arcane Concentration", 0) / 100:
                 fight.p.buffs["Clearcasting"] = {"until": fight.t + 15.0}
+        # client 70425: each Arcane Missile hit has 5%/rank to proc Missile Barrage for the next channel
+        if spell.name == "Arcane Missiles" and amount > 0 and self.is_arcane() and self.rank("Missile Barrage") \
+                and fight.rng.random() < self.tv("Missile Barrage", 1) / 100:
+            fight.p.buffs["Missile Barrage"] = {"until": fight.t + 15.0, "since": fight.t}
 
     def on_miss(self, fight, spell):
         ma = self.tv("Magic Absorption", 1)
@@ -612,25 +694,27 @@ class MageModule(BaseModule):
         p, m, t = fight.p, fight.m, fight.t
         cd = spell.cooldown
         if spell.name == "Fire Blast":
-            cd = max(0.0, cd - self.tv("Wake of Fire", 0))
-            if p.buff("Wake of Fire", t):
-                del p.buffs["Wake of Fire"]
+            cd = max(0.0, cd - self.tv("Improved Fire Blast", 0))
         if spell.name == "Frost Nova":
             cd = max(0.0, cd - self.tv("Improved Frost Nova", 0))
         if cd > 0:
             p.cooldowns[spell.name] = t + cd
-        if spell.cast > 0 and p.buff("Presence of Mind", t):
+        pom = spell.cast > 0 and p.buff("Presence of Mind", t)
+        if pom:
             del p.buffs["Presence of Mind"]
-        if spell.name == "Pyroblast" and p.buff("Heating Up", t):
+        if spell.name == "Pyroblast" and p.buff("Heating Up", t) and not pom:   # a Presence of Mind Pyroblast keeps them (beta notes 16 Oct)
             del p.buffs["Heating Up"]
         if self.is_arcane():
             if spell.name == "Arcane Blast" and spell.ab_stack:
-                stacks = min(spell.ab_stack[2], self.ab_stacks(fight) + 1)
-                p.buffs["Arcane Blast"] = {"until": t + spell.ab_stack[3], "stacks": stacks}
-            elif spell.dmg_max > 0 or spell.dot > 0:   # any other damage spell spends the stacks (after its own damage)
-                p.buffs.pop("Arcane Blast", None)
-            if spell.name == "Arcane Missiles":
-                p.buffs.pop("Missile Barrage", None)
+                # client 70425: the stacks last 15 s from the first and no other spell spends them (70291: 8 s, spent by any damage spell)
+                b = p.buff("Arcane Blast", t)
+                stacks = min(spell.ab_stack[2], (b["stacks"] if b else 0) + 1)
+                p.buffs["Arcane Blast"] = {"until": b["until"] if b else t + spell.ab_stack[3], "stacks": stacks}
+            if spell.name == "Arcane Missiles":   # spends the proc it was cast on; one its own missiles gave stays for the next channel
+                b = p.buffs.get("Missile Barrage")
+                if b and (self._am_first_tick is None or b.get("since", -1.0) < self._am_first_tick):
+                    p.buffs.pop("Missile Barrage", None)
+                self._am_first_tick = None
             # Missile Barrage rolls in on_hit: only a spell that lands procs it (2026-10-09; it rolled after every cast, misses too)
         if spell.name in ("Frost Nova", "Cone of Cold", "Blast Wave") and m.in_melee and m.hp > 0:
             if spell.name == "Frost Nova" and m.rooted(t):
@@ -644,10 +728,6 @@ class MageModule(BaseModule):
             m, t = fight.m, fight.t
             m.attack_slow_until = t + 5.0
             fight.apply_chill(Spell("Ice Armor chill", "frost"), 0.30, 5.0)
-
-    def on_kill(self, fight):
-        if self.rank("Wake of Fire"):
-            fight.p.buffs["Wake of Fire"] = {"until": fight.t + 30.0}
 
     def evocation(self, p, t):
         if self.level < 20 or not p.ready("Evocation", t) or p.mana >= 0.4 * p.mana_max:
@@ -733,7 +813,7 @@ class MageModule(BaseModule):
         wand_hit = self.wand_damage() * 0.65
         if blast and can(blast) and hp <= avg(blast) * 0.9:
             return blast
-        if lance and can(lance) and hp <= avg(lance) * (4 if frozen else 1) * 0.9:
+        if lance and can(lance) and hp <= avg(lance) * (self.lance_frozen_mult() if frozen else 1) * 0.9:
             return lance
         if hp <= wand_hit * 1.5:
             return "wand"
@@ -757,8 +837,6 @@ class MageModule(BaseModule):
                 return lance
             if can(fb):
                 return fb
-        if blast and can(blast) and p.buff("Wake of Fire", t):
-            return blast
         if p.buff("Presence of Mind", t) and can(fb):
             return fb
         if not in_melee and not rooted:
@@ -791,8 +869,9 @@ class MageModule(BaseModule):
     def decide_arcane(self, fight):
         """Arcane leveling (spec strings starting with "arcane", 2026-09-30). Arcane Power and Presence of Mind are used on the pull
         (on_fight_start); Arcane Blast (instant with Presence of Mind) is stacked up to AB_MAX_STACKS while the mob is out of reach or
-        held and the next one costs at most AB_MANA_SHARE of the mana; Arcane Missiles spends the stacks (+10% per stack) and is the
-        channel filler, first on a Missile Barrage proc (free, 2.5 s). Frost Nova / Cone of Cold and a 2-second step back when the mob
+        held and the next one costs at most AB_MANA_SHARE of the mana (each stack 15% of Intellect as spell damage for every spell, 15 s
+        from the first: client 70425); Arcane Wrath on cooldown when talented and its cast can finish; Arcane Missiles is the channel
+        filler, first on a Missile Barrage proc (free, 2.5 s). Frost Nova / Cone of Cold and a 2-second step back when the mob
         reaches you, Ice Lance into a freeze if talented, Fire Blast, Ice Lance and the wand to finish without overkill. Frostbolt
         only when Arcane Missiles is unaffordable (or before level 8)."""
         p, m, t, in_melee, rooted, frozen, avg, can = self._common(fight)
@@ -806,12 +885,12 @@ class MageModule(BaseModule):
         stacks = self.ab_stacks(fight)
 
         def am_total(s):   # a whole Arcane Missiles channel with the current stacks and buffs
-            return (s.dot + s.dot_coef * p.spell_power * s.dot_ticks) * self.damage_multiplier(s, False) if s else 0.0
+            return (s.dot + s.dot_coef * p.spell_power * s.dot_ticks) * self.periodic_multiplier(s) if s else 0.0
 
         # 1. finishers without overkill
         if blast and can(blast) and hp <= avg(blast) * self.damage_multiplier(blast, False) * 0.9:
             return blast
-        if lance and can(lance) and hp <= avg(lance) * (4 if frozen else 1) * 0.9:
+        if lance and can(lance) and hp <= avg(lance) * (self.lance_frozen_mult() if frozen else 1) * 0.9:
             return lance
         if hp <= wand_hit * 1.5:
             return "wand"
@@ -826,6 +905,17 @@ class MageModule(BaseModule):
             return "retreat"
         if frozen and lance and can(lance):
             return lance
+        aw = sp.get("Arcane Wrath")
+
+        def aw_fits():   # Arcane Wrath (client 70425) only while its cast can finish before the mob is on me
+            if aw is None or not can(aw) or hp <= avg(aw) * self.damage_multiplier(aw, False) * 0.5:
+                return False
+            c = self.cast_time(aw)
+            return c <= 0 or (rooted and m.root_until - t >= c) \
+                or (not in_melee and not rooted and (m.dist - MELEE_RANGE) / max(0.1, m.speed(t)) >= c)
+
+        if self.AW_OPENER and stacks == 0 and aw_fits():   # the pull's first cast (AW_OPENER)
+            return aw
         # 3. a Missile Barrage proc: free fast missiles (after the stacks the pull allows)
         barrage = am is not None and am.cost == 0 and am is not sp.get("Arcane Missiles")
         if barrage and can(am) and (stacks >= self.AB_MAX_STACKS or ab is None or in_melee):
@@ -840,6 +930,9 @@ class MageModule(BaseModule):
                 return ab
             if not in_melee and not rooted and (m.dist - MELEE_RANGE) / max(0.1, m.speed(t)) >= ab_cast:
                 return ab
+        # 4b. Arcane Wrath on cooldown after the stacks, while its cast fits
+        if aw_fits():
+            return aw
         # 5. Arcane Missiles: the channel (Improved Channeling keeps it whole in melee)
         if am is not None and can(am):
             return am
@@ -866,7 +959,7 @@ class MageModule(BaseModule):
         wand_hit = self.wand_damage() * 0.65
         if blast and can(blast) and hp <= avg(blast) * 0.9:
             return blast
-        if lance and can(lance) and hp <= avg(lance) * (4 if frozen else 1) * 0.9:
+        if lance and can(lance) and hp <= avg(lance) * (self.lance_frozen_mult() if frozen else 1) * 0.9:
             return lance
         if hp <= wand_hit * 1.5:
             return "wand"
@@ -883,8 +976,6 @@ class MageModule(BaseModule):
             return "retreat"
         if frozen and lance and can(lance):
             return lance
-        if blast and can(blast) and p.buff("Wake of Fire", t):
-            return blast
         if p.buff("Presence of Mind", t) and can(bolt):
             return bolt
         if not in_melee and not rooted:
@@ -914,7 +1005,7 @@ class MageModule(BaseModule):
         # finishers without overkill
         if blast and can(blast) and hp <= avg(blast) * 0.9:
             return blast
-        if lance and can(lance) and hp <= avg(lance) * (4 if frozen else 1) * 0.9:
+        if lance and can(lance) and hp <= avg(lance) * (self.lance_frozen_mult() if frozen else 1) * 0.9:
             return lance
         if scorch and can(scorch) and hp <= avg(scorch) * 0.9 and hp > wand_hit * 1.5:
             return scorch
@@ -937,8 +1028,6 @@ class MageModule(BaseModule):
             return "retreat"
         if frozen and lance and can(lance):
             return lance
-        if blast and can(blast) and p.buff("Wake of Fire", t):
-            return blast
         if p.buff("Presence of Mind", t) and can(fireball):
             return fireball
         if not in_melee and not rooted and not m.stunned(t):

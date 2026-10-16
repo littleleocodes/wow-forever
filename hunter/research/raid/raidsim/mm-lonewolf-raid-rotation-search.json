@@ -161,8 +161,8 @@
  "raid": {
   "class": "hunter",
   "spec": "mm-lonewolf-raid",
-  "date": "2026-10-09",
-  "commit": "2ce8265",
+  "date": "2026-10-16",
+  "commit": "b7083fa",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/hunter/dps/apls/mm.apl.json",
@@ -346,6 +346,6 @@
    }
   },
   "first_date": "2026-09-27",
-  "passes": 11
+  "passes": 12
  }
 }

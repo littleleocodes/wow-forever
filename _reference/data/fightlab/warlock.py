@@ -170,7 +170,6 @@ MECHANICS = {
     "Improved Life Tap": "+10%/rank Life Tap mana",
     "Suppression": "+1%/rank spell hit",
     "Improved Corruption": "-0.4s/rank Corruption cast (instant at 5/5), +2%/rank damage",
-    "Malediction": "+1%/rank periodic damage",
     "Soul Harvest": "not used (Drain Soul kills are not part of the loop)",
     "Improved Drains": "+7/13/20% Drain Life, Drain Soul, Wrack",
     "Improved Bane of Agony": "+5%/rank Bane of Agony",
@@ -182,7 +181,7 @@ MECHANICS = {
     "Curse of Exhaustion": "not used (the Voidwalker holds the mob)",
     "Siphon Life": "unlocks Siphon Life (instant 30s drain DoT, heals you per tick)",
     "Soul Siphon": "+4%/rank drains and Wrack per other Affliction effect on the target (up to 3)",
-    "Shadow Mastery": "+1%/rank Shadow damage and drains",
+    "Shadow Mastery": "+2%/rank Shadow damage and drains (client 70425; was 1%/rank), read from the tooltip",
     "Wrack": "unlocks Wrack (6s channel, 36/s at 60, +10% damage taken from your other Shadow DoTs)",
     "Improved Health Funnel": "+20%/rank Health Funnel healing, -15%/rank health cost",
     "Improved Imp": "+10%/rank Firebolt (levels 1-9)",
@@ -200,7 +199,8 @@ MECHANICS = {
     "Master Demonologist": "Voidwalker: -2%/rank physical damage taken for you and the pet (as extra armor: exact below the 75% cap)",
     "Improved Sayaad": "not used (Voidwalker)",
     "Improved Felhunter": "not used (Voidwalker)",
-    "Destructive Reach": "+10%/rank range (longer pulls)",
+    "Destructive Reach": "+10%/rank range of Destruction spells (client 70425; was every damaging spell): longer pulls for the Destruction rotation, which opens with Immolate",
+    "Grim Reach": "+10%/rank range of Affliction spells (client 70425, new in Malediction's cell): longer pulls for the Affliction and Demonology rotations, which open with Corruption",
     "Improved Shadow Bolt": "Shadow Bolt crits: +4%/rank Shadow damage taken for 12s",
     "Bane": "-0.1s/rank Shadow Bolt / Immolate cast",
     "Molten Skin": "-2%/rank all damage taken (melee and bolts, before Soul Link's split)",
@@ -232,7 +232,7 @@ NEW_MECHANICS = {
 }
 DESTRUCTION_SPELLS = ("Shadow Bolt", "Immolate", "Searing Pain", "Incinerate", "Conflagrate", "Shadowburn", "Soul Fire", "Rain of Fire", "Hellfire")
 FIT = {
-    "Improved Corruption": "scale", "Malediction": "scale", "Improved Drains": "scale", "Fel Concentration": "scale", "Pandemic": "scale",
+    "Improved Corruption": "scale", "Grim Reach": "scale", "Improved Drains": "scale", "Fel Concentration": "scale", "Pandemic": "scale",
     "Malevolence": "scale", "Nightfall": "scale",
     "Siphon Life": ("replace", [{"channel": "dmg", "scope": ["all"], "values": [0.05]}, {"channel": "sustain", "scope": ["all"], "values": [0.05]}]),
     "Soul Siphon": "scale", "Shadow Mastery": "scale", "Wrack": "scale", "Improved Life Tap": "scale",
@@ -370,7 +370,8 @@ class WarlockModule(BaseModule):
         return pet
 
     def pull_range(self):
-        return 30.0 * (1 + self.tv("Destructive Reach", 0) / 100)
+        # client 70425: each reach talent covers its own tree's spells; the pull is opened with Immolate (Destruction rotation) or Corruption
+        return 30.0 * (1 + self.tv("Destructive Reach" if self.destro else "Grim Reach", 0) / 100)
 
     # ------------------------------------------------------------ engine hooks: numbers
     def cast_time(self, spell):
@@ -470,8 +471,7 @@ class WarlockModule(BaseModule):
         m = self.damage_multiplier(spell, False)
         if spell.name == "Immolate":
             m /= 1 + self.tv("Aftermath", 0) / 100
-        if spell.kind != "channel":
-            m *= 1 + self.tv("Malediction", 0) / 100
+        if spell.kind != "channel":   # Malediction (+5% periodic damage) is gone in client 70425 (Grim Reach took its cell)
             if self._fight and spell.school == "shadow":
                 w = self._fight.m.debuffs.get("Wrack")
                 if w and w["until"] > self._fight.t:

@@ -7,7 +7,10 @@ Power Infusion on cooldown.
 Infusion and Prayer of Mending cost their mana and a global cooldown (both had been free, Power Infusion of mana too); Penance
 keeps the healer busy for its 2 s channel (it had taken one global cooldown); Renew's ticks carry the expected critical bonus
 (Renew can crit since the 2026-10-08 beta build). Talent numbers come from the 70291 tooltips (forever-talents/priest.json),
-spell numbers from the spellbook (forever-spells/priest.json)."""
+spell numbers from the spellbook (forever-spells/priest.json).
+
+2026-10-16 (client 70425): Divine Aegis caps its shield at 1,200 (the tooltip's second number, which the duration had been read from);
+Mental Strength is 2%/rank Intellect (parsed). Twin Disciplines' 16 Oct widening to Penance needs no change here (Penance is an instant)."""
 import json
 import pathlib
 import re
@@ -58,8 +61,8 @@ class Healer(E.BaseHealer):
                    "ready and he misses 80% of its heal, and the emergency heal",
         "Prayer of Mending": "kept on the tank: heals 413 when he is hit, then jumps (5 charges, 10 s cooldown, a global cooldown to place)",
         "Binding Heal": "never cast: Flash Heal fills its role (its self-heal would be idle, the healer takes no damage here)",
-        "Divine Aegis": "a critical heal leaves an absorb of 5%/rank of the amount healed on the target for 12 s (it joins the target's "
-                        "shield; a new Power Word: Shield replaces it)",
+        "Divine Aegis": "a critical non-periodic heal leaves an absorb of 5%/rank of the amount healed on the target for 12 s, the Aegis "
+                        "part at most 1,200 (client 70425's cap; it joins the target's shield; a new Power Word: Shield replaces it)",
         "Renewed Hope": "+2%/rank crit for Flash Heal, Binding Heal, Lesser Heal, Heal, Greater Heal and Penance on a target with Weakened "
                         "Soul; each such heal takes 1 s/rank off its Weakened Soul",
         "Litany of Light": "a heal unlike your previous one returns 5%/rank of its base mana cost",
@@ -125,15 +128,24 @@ class Healer(E.BaseHealer):
     def on_heal(self, sim, spell, target, amount, crit):
         if crit and self.rank("Inspiration") and sim.rng.random() < self.rank("Inspiration") / 3.0:
             target.armor_buff_until = sim.t + 15.0
-        if crit and amount > 0 and self.rank("Divine Aegis"):   # Divine Aegis: an absorb of 15% (3/3) of the amount healed, 12 s
-            shield, dur = amount * self.tv("Divine Aegis", 0) / 100, self.tv("Divine Aegis", 1) or 12.0
-            if target.absorb > 0 and sim.t < target.absorb_until:
-                target.absorb += shield
+        # Divine Aegis: an absorb of 15% (3/3) of the amount healed, 12 s. Client 70425: non-periodic crits only (periodic ticks reach
+        # on_heal with crit False) and "Shields up to 1,200 damage": the Aegis part of the target's absorb never exceeds the cap (the
+        # tooltip's numbers: percentage, cap, seconds; the cap's slot had held the duration before)
+        if crit and amount > 0 and self.rank("Divine Aegis"):
+            cap, dur = self.tv("Divine Aegis", 1) or 1200.0, self.tv("Divine Aegis", 2) or 12.0
+            live = target.absorb > 0 and sim.t < target.absorb_until
+            aegis = min(target.absorb, getattr(target, "aegis", 0.0)) if live else 0.0
+            add = max(0.0, min(cap, aegis + amount * self.tv("Divine Aegis", 0) / 100) - aegis)
+            if live:
+                target.absorb += add
                 target.absorb_until = max(target.absorb_until, sim.t + dur)
             else:
-                target.absorb, target.absorb_until = shield, sim.t + dur
+                target.absorb, target.absorb_until = add, sim.t + dur
+            target.aegis = aegis + add
 
     def on_cast_done(self, sim, spell, target):
+        if spell.name == "Power Word: Shield":   # the shield replaces the target's absorb: no Aegis left in it (Divine Aegis' cap)
+            target.aegis = 0.0
         if self.rank("Renewed Hope") and spell.name in RENEWED_HOPE_HEALS and sim.t < target.shield_lock:
             target.shield_lock = max(sim.t, target.shield_lock - self.tv("Renewed Hope", 1))
         if spell.name == "Renew" and "Renew" in target.hots:   # Renew can crit (beta, 2026-10-08): its ticks carry the expected crit bonus
