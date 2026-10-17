@@ -68,7 +68,8 @@ class Healer(E.BaseHealer):
         "Nature's Splendor": "Rejuvenation +3 s, Regrowth +6 s: one or two more ticks of the same size",
         "Moonglow": "nothing for heals: Forever's Moonglow cheapens damaging spells only",
         "Wild Growth": "679 over 7 s on the group, 6 s cooldown: the group heal",
-        "Innervate": "on yourself under 40% mana (every 6 min)",
+        "Innervate": "on yourself under 40% mana (every 6 min): 5x regeneration for 20 s, all of it while casting (the tooltip; until "
+                     "2026-10-17 the five-second rule still cut it)",
     }
     SIMULATED = {"Swiftmend", "Nature's Swiftness", "Nature's Grace", "Genesis", "Gift of the Earthmother", "Nature's Splendor", "Wild Growth", "Gift of Nature",
                  "Improved Rejuvenation", "Naturalist", "Improved Regrowth", "Reflection", "Tranquil Spirit", "Living Spirit", "Nature's Majesty", "Moonglow", "Heart of the Wild"}

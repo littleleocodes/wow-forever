@@ -168,12 +168,12 @@ MECHANICS = {
     "Totemic Focus": "-5%/rank totem mana",
     "Mindfulness": "17%/rank mana regen while casting",
     "Natural Grace": "threat only",
-    "Tidal Focus": "-1%/rank heal mana, +1%/rank hit",
+    "Tidal Focus": "-1%/rank heal mana, +1%/rank hit (melee and spells)",
     "Improved Reincarnation": "+2%/rank health, -10 min/rank Reincarnation cooldown",
     "Ancestral Healing": "not used",
     "Healing Focus": "23%/rank less pushback on heals",
     "Water Shield": "unlocks Water Shield: 2% mana per hit taken or spell crit (client 70425: any spell; 3 charges, one every 3 s), used when mana is low",
-    "Tidal Mastery": "+1%/rank heal crit",
+    "Tidal Mastery": "+1%/rank heal crit (in combat and the expected crit of the heals between fights)",
     "Restorative Totems": "not used (Mana Spring / Healing Stream are not dropped per fight)",
     "Mana Tide Totem": "not used solo (5 min cooldown; drinking is modelled)",
     "Healing Way": "+8.3%/rank Healing Wave",
@@ -388,13 +388,19 @@ class ShamanModule(BaseModule):
         return c
 
     def hit_bonus(self, spell):
-        return 0.0
+        # Tidal Focus "improves your chance to hit by 1-5%": melee already has it in p.hit_bonus, so the spells get it here (until 2026-10-17
+        # the spells did not)
+        if spell.kind in ("melee", "ranged"):
+            return 0.0
+        return self.tv("Tidal Focus", 1) / 100
 
     def crit_bonus(self, spell, frozen):
         c = 0.0
         f = self._fight
         if spell.kind == "melee" and f and f.p.buff("Elemental Devastation", f.t):
             c += self.tv("Elemental Devastation", 0) / 100
+        if spell.kind == "heal":   # Tidal Mastery: "critical effect chance of your healing spells by 1-5%" (until 2026-10-17 never applied)
+            c += self.tv("Tidal Mastery", 0) / 100
         return c
 
     def crit_damage_bonus(self, spell):
@@ -656,7 +662,8 @@ class ShamanModule(BaseModule):
             if heal is None or p.mana < self.mana_cost(heal):
                 break
             p.mana -= self.mana_cost(heal)
-            amount = ((heal.heal_min + heal.heal_max) / 2 + heal.heal_coef * p.spell_power) * self.heal_multiplier(heal)
+            cc = min(1.0, p.spell_crit + self.crit_bonus(heal, False))   # the expected crit (x1.5), Tidal Mastery included
+            amount = ((heal.heal_min + heal.heal_max) / 2 + heal.heal_coef * p.spell_power) * self.heal_multiplier(heal) * (1 + 0.5 * cc)
             p.hp = min(p.hp_max, p.hp + amount)
             spent += max(GCD, self.cast_time(heal))
         return spent

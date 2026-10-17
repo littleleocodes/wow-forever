@@ -505,6 +505,10 @@ class BaseModule:
         return None
 
 
+# Spells that cannot miss or be resisted (Blizzard, 16 Oct beta notes: "Changed Vampiric Embrace so that it can't be resisted").
+NO_MISS = {"Vampiric Embrace"}
+
+
 class Fight:
     """One fight. `mod` is the class module (hooks); `rng` rolls combat; the mob is already built."""
 
@@ -519,6 +523,7 @@ class Fight:
         self.casting = None          # (spell, end_time, started)
         self.cast_hits = 0
         self.retreat_until = 0.0
+        self.last_move = -1.0   # the last tick the player walked (retreat or advance): Auto Shot waits AUTO_SHOT_STAND_STILL after it
         self.advancing = False
         self.wand_next = None
         self.wanding = False
@@ -666,7 +671,7 @@ class Fight:
         if frozen:
             self.frozen_casts += 1
         hit = 1.0 - spell_miss(m.level - p.level) + self.mod.hit_bonus(spell)
-        if self.rng.random() > min(0.99, hit):
+        if spell.name not in NO_MISS and self.rng.random() > min(0.99, hit):
             self.note(f"{spell.name} MISS")
             self.mod.on_miss(self, spell)
             return 0.0
@@ -1025,7 +1030,9 @@ class Fight:
             self.note("Wand miss")
             return
         dmg = self.mod.wand_damage() * self.rng.uniform(0.8, 1.2)
-        dmg *= 1.0 - armor_mitigation(m.effective_armor(), p.level)
+        # a wand deals spell-school damage (Shadow, Fire, Frost, Arcane, Nature): armor does not reduce it, partial resists do (the
+        # spells' average loss, no talent factor). Until 2026-10-17 the mob's armor cut every wand shot (audit finding 8).
+        dmg *= 1.0 - PARTIAL_RESIST_LOSS
         crit = self.rng.random() < p.ranged_crit
         if crit:
             dmg *= 2.0
@@ -1181,8 +1188,9 @@ class Fight:
             dmg -= absorbed
         dmg = self.mod.split_damage_taken(self, dmg)
         p.hp -= dmg
-        if p.rage_max > 0:
-            p.rage = min(p.rage_max, p.rage + tables.rage_from_damage_taken(pre_armor, m.level))
+        if p.rage_max > 0:   # a crit taken pays rage on its doubled damage (beta notes 2026-10-08: the rage calculation now handles
+            # "increased damage taken from combat multipliers, in particular from taking critical strikes"; until 2026-10-17 it did not)
+            p.rage = min(p.rage_max, p.rage + tables.rage_from_damage_taken(pre_armor * (2.0 if crit_taken else 1.0), m.level))
         self.note(f"mob hits {dmg:.0f}{f' (absorbed {absorbed:.0f})' if absorbed else ''} -> me {max(0, p.hp):.0f}")
         self.damage_taken_effects(dmg, crit_taken)
 
@@ -1224,7 +1232,7 @@ class Fight:
         dmg = self.mod.split_damage_taken(self, dmg)
         p.hp -= dmg
         if p.rage_max > 0:
-            p.rage = min(p.rage_max, p.rage + tables.rage_from_damage_taken(pre, m.level))
+            p.rage = min(p.rage_max, p.rage + tables.rage_from_damage_taken(pre * (1.5 if crit_taken else 1.0), m.level))   # crits: as a melee hit's
         self.note(f"mob's bolt hits {dmg:.0f}{f' (absorbed {absorbed:.0f})' if absorbed else ''} -> me {max(0, p.hp):.0f}")
         self.damage_taken_effects(dmg, crit_taken)
 
@@ -1492,8 +1500,13 @@ class Fight:
                 if p.oh is not None and t >= p.swing_oh:
                     self.auto_swing("oh")
                     p.swing_oh = t + p.oh.speed * self.mod.swing_speed_factor()
-            # ranged auto shot (hunter): outside the dead zone, standing still, not casting
-            if self.mod.ranged and p.ranged is not None and not self.casting and not self.channel and t >= self.retreat_until and m.dist >= tables.MIN_RANGED_RANGE and t >= p.shot_at:
+            # ranged auto shot (hunter): outside the dead zone, standing still for 0.5 s, not channelling. Blizzard's 16 Oct notes: "Your
+            # character will still fire Auto Shot while casting spells like Aimed Shot or Sniper Shot" (a cast shot keeps the timer running;
+            # until 2026-10-17 any cast stopped it) and "Auto Shot now requires you to stand still for 0.5 seconds before shooting".
+            if t < self.retreat_until or (self.advancing and not m.in_melee):
+                self.last_move = t
+            if self.mod.ranged and p.ranged is not None and (not self.casting or self.casting[0].kind == "ranged") and not self.channel \
+                    and t >= self.retreat_until and t >= self.last_move + tables.AUTO_SHOT_STAND_STILL and m.dist >= tables.MIN_RANGED_RANGE and t >= p.shot_at:
                 self.auto_shot()
                 p.shot_at = t + p.ranged.speed * self.mod.swing_speed_factor()
             # player

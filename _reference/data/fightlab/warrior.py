@@ -44,7 +44,7 @@ RANGE = re.compile(r"(\d[\d,]*) to (\d[\d,]*) damage")
 BLEED = re.compile(r"bleed for (\d[\d,]*) damage over (\d+) sec")
 EXECUTE = re.compile(r"causing (\d[\d,]*) damage and converting each extra point of rage into (\d+) additional damage")
 CHARGE = re.compile(r"generate (\d+) Rage, and Stun it for (\d+) sec")
-SHOUT = re.compile(r"melee attack power of all party members[^.]*? by (\d+)")
+SHOUT = re.compile(r"melee attack power of all party (?:or raid )?members[^.]*? by (\d+)")   # 70425: "all party or raid members" (16 Oct: raid wide)
 SLOW = re.compile(r"slowing the enemy's movement by (\d+)% for (\d+) sec")
 AP_PCT = re.compile(r"(\d+)% of (?:your )?Attack Power")
 AP_PLUS = re.compile(r"of (?:your )?Attack Power plus (\d[\d,]*)")   # Bloodthirst: "45% of your Attack Power plus 48"
@@ -121,7 +121,7 @@ def load_spellbook():
                 if sl:
                     s.daze, s.chill_dur = float(sl.group(1)) / 100, float(sl.group(2))
                 if name in ("Bloodrage", "Berserker Rage", "Battle Stance", "Berserker Stance", "Defensive Stance", "Retaliation", "Recklessness",
-                            "Death Wish", "Last Stand", "Shield Wall", "Shield Block", "Sweeping Strikes", "Demoralizing Shout", "Intimidating Shout",
+                            "Death Wish", "Last Stand", "Shield Wall", "Shield Block", "Sweeping Strikes", "Battle Shout", "Demoralizing Shout", "Intimidating Shout",
                             "Challenging Shout", "Taunt", "Piercing Howl"):
                     s.kind = "buff"
                     if name in ("Bloodrage", "Berserker Rage", "Retaliation", "Recklessness", "Last Stand", "Shield Wall"):

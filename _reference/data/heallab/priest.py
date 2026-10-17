@@ -101,7 +101,7 @@ class Healer(E.BaseHealer):
 
     def cost_hook(self, spell, sim):
         f = 1.0
-        if "instant" in spell.tags:
+        if "instant" in spell.tags and not spell.channel:   # "instant cast spells": not a channel (Penance; 2026-10-17, audit finding 15)
             f *= 1 - [0, 0.03, 0.07, 0.10][min(3, self.rank("Mental Agility"))]
         if spell.name == "Power Word: Shield" and self.rank("Soul Warding"):
             f *= 0.85
@@ -148,11 +148,7 @@ class Healer(E.BaseHealer):
             target.aegis = 0.0
         if self.rank("Renewed Hope") and spell.name in RENEWED_HOPE_HEALS and sim.t < target.shield_lock:
             target.shield_lock = max(sim.t, target.shield_lock - self.tv("Renewed Hope", 1))
-        if spell.name == "Renew" and "Renew" in target.hots:   # Renew can crit (beta, 2026-10-08): its ticks carry the expected crit bonus
-            f = 1 + self.crit_chance(spell, sim) * (T.CRIT_MULT - 1)
-            hot = target.hots["Renew"]
-            hot[0] *= f
-            hot[3] *= f
+        # Renew's tick crits: the engine's expected bonus for every HoT in tables.HOT_CRIT (2026-10-17; this module had done it for Renew)
         if spell.name == "Penance":   # busy for the whole channel, not just the global cooldown
             sim.gcd_until = max(sim.gcd_until, sim.t + PENANCE_CHANNEL)
         self.litany(sim, spell)

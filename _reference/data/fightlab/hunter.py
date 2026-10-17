@@ -33,7 +33,10 @@ DOT = re.compile(r"caus(?:es|ing) (\d[\d,]*) (\w+) damage over (\d+) sec")
 PLUS = re.compile(r"weapon damage plus (\d[\d,]*)")
 RANGED_PLUS = re.compile(r"increases ranged damage by (\d[\d,]*)")
 MEND = re.compile(r"Heals your pet (\d[\d,]*) health every second[^.]*?Lasts (\d+) sec")
-RAP = re.compile(r"Ranged Attack Power[^0-9]*?by (\d+)")
+RAP = re.compile(r"Ranged Attack Power[^.]*? by (\d+)")   # crosses "within 45 yds" (Trueshot Aura read 0 until 2026-10-17)
+# Buffs whose newest rank is weaker than an older one in the client (70425 BasePoints: Trueshot Aura rank 5 50 vs rank 4 75, Aspect of
+# the Hawk rank 6 55 vs rank 5 90, Hunter's Mark rank 4 71 vs rank 3 98): a player casts the strongest rank known (rank_at).
+BEST_RAP_RANK = ("Trueshot Aura", "Aspect of the Hawk", "Hunter's Mark")
 MAP = re.compile(r"Melee Attack Power by (\d+)")
 DAZE = re.compile(r"slowing movement speed by (\d+)% for (\d+) sec|reduces the enemy target's movement speed by (\d+)% for (\d+) sec")
 STUN = re.compile(r"Stun the target for (\d+) sec")
@@ -183,7 +186,7 @@ MECHANICS = {
                     "then a hawk that swings on arrival and every 2.5 s (ranged haste) for 18 s at 0.35 of the base, no crits; 2 hawks at once, "
                     "a new one replaces the one closest to leaving; shares Arcane Shot's cooldown; the ranged list casts it (the melee list "
                     "leaves it out: it measured a net loss there, its mana)"),
-    "Spirit Bond": "hunter and pet regain 1%/rank of health per 5s in combat",
+    "Spirit Bond": "hunter and pet regain 1% of health every 10 s (rank 1) / 5 s (rank 2) in combat",
     "Intimidation": "pet stuns the mob 3s (its next hit crits), every 1 min",
     "Bestial Discipline": "+10%/rank pet focus regen, 25%/rank mana regen while casting",
     "Frenzy": "20%/rank on a pet crit: +30% pet attack speed for 8s",
@@ -197,7 +200,7 @@ MECHANICS = {
     "Rapid Killing": "-1 min/rank Rapid Fire cooldown",
     "Improved Arcane Shot": "-0.3s/rank Arcane Shot cooldown",
     "Lone Wolf": "+20% damage with no pet: the pet is not summoned when the talent is taken (the melee build's choice)",
-    "Trueshot Aura": "+ranged attack power by level (30..75)",
+    "Trueshot Aura": "+30/40/50/75 ranged attack power by rank (levels 25/32/40/50; rank 5 at 60 reads 50 in the client, so rank 4's 75 is cast)",
     "Mortal Shots": "+6%/rank ranged crit damage bonus",
     "Rapid Recuperation": "50% mana regen while casting for 15s after Serpent Sting",
     "Barrage": "+3.3%/rank Multi-Shot and Aimed Shot",
@@ -215,7 +218,7 @@ MECHANICS = {
     "Expose Prey": ("5%/rank per landed melee or ranged attack of yours on a target with your Hunter's Mark: Mongoose Bite usable for 10 s "
                     "(a dodge opens it for 5 s); the melee list marks the mob in a free global cooldown when the build has the talent "
                     "(the tuned rules veto the mark: it measured slower per kill even with Expose Prey)"),
-    "Lacerating Strikes": "Mongoose Bite adds a bleed of 40% of its damage over 21 s",
+    "Lacerating Strikes": "Mongoose Bite adds a bleed of 40% of its damage over 21 s (ticks crit like melee, x2)",
     "Strider Kick": "unlocks Strider Kick (a weapon hit, 8 s cooldown), cast on cooldown by the melee list",
     "Improved Wing Clip": "6.7%/rank root 5s on Wing Clip",
     "Deterrence": "+25% dodge and parry for 10 s; the melee rotation presses it below 40% health (5 min cooldown)",
@@ -335,6 +338,8 @@ class HunterModule(BaseModule):
 
     def rank_at(self, name):
         ranks = [s for s in BOOK.get(name, []) if s.level <= self.level]
+        if name in BEST_RAP_RANK and ranks:
+            return max(ranks, key=lambda s: (getattr(s, "rap", 0.0), s.level))
         return ranks[-1] if ranks else None
 
     def beast_known(self):
@@ -488,9 +493,10 @@ class HunterModule(BaseModule):
         else:
             p.regen_while_casting = self.tv("Bestial Discipline", 1) / 100
         sb = self.tv("Spirit Bond", 0) / 100
-        if sb and p.pet is not None and p.pet.alive:   # 1%/rank per 5 s for both, applied on the 2-s tick
-            p.hp = min(p.hp_max, p.hp + p.hp_max * sb * 0.4)
-            p.pet.hp = min(p.pet.hp_max, p.pet.hp + p.pet.hp_max * sb * 0.4)
+        if sb and p.pet is not None and p.pet.alive:   # 1% every 10 s (rank 1) / 5 s (rank 2) for both, applied on the 2-s tick
+            per_tick = sb * 2.0 / (self.tv("Spirit Bond", 1) or 5.0)   # until 2026-10-17 rank 1 healed every 5 s as well
+            p.hp = min(p.hp_max, p.hp + p.hp_max * per_tick)
+            p.pet.hp = min(p.pet.hp_max, p.pet.hp + p.pet.hp_max * per_tick)
         return tick
 
     def health_regen(self, p):
@@ -572,7 +578,9 @@ class HunterModule(BaseModule):
         if self.is_melee() and amount > 0 and spell.kind in ("melee", "ranged") and spell.name not in WHITE + ("Auto Shot", "Summon Hawk"):
             self.expose_prey(fight)
         if self.is_melee() and spell.name == "Mongoose Bite" and amount > 0 and self.rank("Lacerating Strikes"):
-            fight.refresh_dot("Lacerate", amount * 0.40, 7, 3.0)
+            # the bleed's ticks crit like the hunter's melee (beta notes 2026-09-24: "now Lacerating Strikes can land critical hits";
+            # x2.0, a physical crit; until 2026-10-17 they never crit)
+            fight.refresh_dot("Lacerate", amount * 0.40, 7, 3.0, crit_chance=p.melee_crit, crit_mult=2.0)
         if spell.name == "Hunter's Mark":
             p.ranged_ap = self.base_rap + getattr(spell, "rap", 0.0)
             p.buffs["Hunter's Mark"] = {"until": t + 120.0}

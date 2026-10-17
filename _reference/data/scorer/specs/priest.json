@@ -159,7 +159,7 @@
           "share": 0.1026,
           "min_level": 32,
           "tags": ["type:spell", "school:shadow", "instant", "ability:Shadow Word: Death"],
-          "cooldown": 15,
+          "cooldown": 18,
           "profile_overrides": {
             "leveling-st": {"share": 0.159},
             "solo-60": {"share": 0.159},
@@ -171,7 +171,7 @@
           "share": 0.0169,
           "min_level": 20,
           "tags": ["type:spell", "school:shadow", "dot", "instant", "ability:Devouring Plague"],
-          "cooldown": 60,
+          "cooldown": 24,
           "profile_overrides": {
             "leveling-aoe": {"share": 0.014},
             "leveling-st": {"share": 0.008},

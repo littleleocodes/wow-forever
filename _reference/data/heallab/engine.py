@@ -537,7 +537,11 @@ class Sim:
             if spell.hot > 0:
                 ticks = max(1, int(round(spell.hot_dur / spell.tick_every)))
                 per = (spell.hot + spell.hot_coef * h.healing * ticks) / ticks * f
-                tg.hots[spell.name] = [per, ticks, self.t + spell.tick_every, per * ticks]
+                # the expected crit bonus of a HoT whose ticks can crit (T.HOT_CRIT), from the crit chance at the cast (no temporary crit:
+                # Inner Focus no longer reaches periodic effects, notes post 4); kept apart from per so Swiftmend and the deficit
+                # forecasts read the plain tick
+                fc = 1 + min(1.0, h.crit_chance(spell, self)) * (T.CRIT_MULT - 1) if spell.name in T.HOT_CRIT else 1.0
+                tg.hots[spell.name] = [per, ticks, self.t + spell.tick_every, per * ticks, fc]
             if spell.absorb > 0:
                 tg.absorb = spell.absorb * f
                 tg.absorb_until = self.t + 30.0
@@ -550,19 +554,23 @@ class Sim:
                 x.hots.clear()
                 continue
             for name in list(x.hots):
-                per, left, nxt, _ = x.hots[name]
+                per, left, nxt, _, *rest = x.hots[name]
+                fc = rest[0] if rest else 1.0
                 if self.t + 1e-9 >= nxt:
-                    self.apply_heal(self.h.book[name][-1], x, per, False, label=name)
+                    self.apply_heal(self.h.book[name][-1], x, per * fc, False, label=name)
                     left -= 1
                     if left <= 0:
                         del x.hots[name]
                     else:
-                        x.hots[name] = [per, left, nxt + self.h.book[name][-1].tick_every, per * left]
+                        x.hots[name] = [per, left, nxt + self.h.book[name][-1].tick_every, per * left, fc]
 
     # ------------------------------------------------------------ mana
     def regen(self):
         casting_recently = self.t - self.last_cast < T.FSR
-        tick = self.h.regen_tick * (self.h.regen_casting if casting_recently else 1.0) * self.buffs_regen_mult()
+        # Innervate: "Increases the target's Mana regeneration by 400% and allows 100% of the target's Mana regeneration to continue while
+        # casting" (70425): the full regeneration x5 inside the five-second rule too (until 2026-10-17 the casting fraction applied)
+        innervate = self.t < self.buffs.get("Innervate", 0.0)
+        tick = self.h.regen_tick * (self.h.regen_casting if casting_recently and not innervate else 1.0) * self.buffs_regen_mult()
         self.mana = min(self.h.mana_max, self.mana + tick + self.h.mp5 * T.REGEN_TICK / 5.0)
 
     def buffs_regen_mult(self):

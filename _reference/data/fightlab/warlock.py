@@ -40,7 +40,12 @@ BURN = re.compile(r"additional (\d[\d,]*) (\w+) damage over (\d+) sec")
 FIRST = re.compile(r"Burns the enemy for (\d[\d,]*) Fire damage")
 DRAIN = re.compile(r"Transfers (\d[\d,]*) health every (\d+) sec(?:ond)? from the target to the caster\. Lasts (\d+) sec")
 SIPHON = re.compile(r"Transfers (\d[\d,]*) health from the target to the caster every (\d+) sec\. Lasts (\d+) sec")
-TICK = re.compile(r"dealing (\d[\d,]*) (\w+) damage every (\d+) sec.*?Lasts (\d+) sec")
+# "dealing/inflicting N <school> damage every N sec ... Lasts N sec / for N sec" (Wrack since 70170: "inflicting 36 Shadow damage every 1 sec
+# and increasing ... by 10% for 6 sec"; it parsed to no damage until 2026-10-17, so every search measured the talent as a 6 s channel of nothing)
+TICK = re.compile(r"(?:dealing|inflicting) (\d[\d,]*) (\w+) damage every (\d+) sec.*?(?:Lasts|for) (\d+) sec")
+# Wrack's debuff: "increasing the damage they take from your other Shadow damage over time effects by 10% for 6 sec" (client 70425)
+WRACK_DEBUFF = re.compile(r"increasing the damage they take from your other (\w+) damage over time effects by (\d+)% for (\d+) sec")
+COE = re.compile(r"increas(?:ing|es) Magic damage taken by (\d+)%")   # Curse of the Elements: 4/6/8/10% by rank (client 70425)
 RAIN = re.compile(r"for (\d[\d,]*) (\w+) damage over (\d+) sec")                                             # Rain of Fire (a channel)
 HELLFIRE = re.compile(r"(\d[\d,]*) (\w+) damage to all nearby enemies every (\d+) sec\. Lasts (\d+) sec")   # Hellfire (a channel)
 FUNNEL = re.compile(r"Gives (\d[\d,]*) health to the caster's pet every second for (\d+) sec")
@@ -139,6 +144,9 @@ def load_spellbook():
                     s.fear = float(fe.group(1) or fe.group(2))
                 if cs:
                     s.consume, s.consume_dur = _num(cs.group(1)), float(cs.group(2))
+                wd, ce = WRACK_DEBUFF.search(txt), COE.search(txt)
+                s.wrack = (wd.group(1).lower(), float(wd.group(2)) / 100, float(wd.group(3))) if wd else None
+                s.coe_pct = float(ce.group(1)) / 100 if ce else 0.0
                 st = STONE.search(txt)
                 if st:
                     s.kind, s.heal_min, s.heal_max, s.cost, s.cooldown, s.cast = "heal", _num(st.group(1)), _num(st.group(1)), 0.0, 120.0, 0.0
@@ -182,7 +190,8 @@ MECHANICS = {
     "Siphon Life": "unlocks Siphon Life (instant 30s drain DoT, heals you per tick)",
     "Soul Siphon": "+4%/rank drains and Wrack per other Affliction effect on the target (up to 3)",
     "Shadow Mastery": "+2%/rank Shadow damage and drains (client 70425; was 1%/rank), read from the tooltip",
-    "Wrack": "unlocks Wrack (6s channel, 36/s at 60, +10% damage taken from your other Shadow DoTs)",
+    "Wrack": "unlocks Wrack (6s channel, 36/s at 60, 14.3% of spell power a tick; +10% to the ticks of your other Shadow DoTs for 6 s from the "
+             "channel's start; parsed since 2026-10-17, before that a channel of nothing)",
     "Improved Health Funnel": "+20%/rank Health Funnel healing, -15%/rank health cost",
     "Improved Imp": "+10%/rank Firebolt (levels 1-9)",
     "Demonic Embrace": "+3%/rank Stamina",
@@ -430,10 +439,10 @@ class WarlockModule(BaseModule):
 
     def damage_multiplier(self, spell, frozen):
         m = 1.0 + (0.03 if self.rank("Soul Link") else 0.0)
-        if self._fight and spell.school not in ("physical", None):   # Curse of the Elements: +10% magic damage taken (2026-09-29)
+        if self._fight and spell.school not in ("physical", None):   # Curse of the Elements: magic damage taken (2026-09-29)
             coe = self._fight.m.debuffs.get("Curse of the Elements")
-            if coe and coe["until"] > self._fight.t:
-                m *= 1.10
+            if coe and coe["until"] > self._fight.t:   # the cast rank's 4/6/8/10% (client 70425; a flat 10% until 2026-10-17)
+                m *= 1 + coe.get("pct", 0.10)
         if spell.school == "shadow":
             m *= 1 + self.tv("Shadow Mastery", 0) / 100
             if self._fight:
@@ -471,11 +480,9 @@ class WarlockModule(BaseModule):
         m = self.damage_multiplier(spell, False)
         if spell.name == "Immolate":
             m /= 1 + self.tv("Aftermath", 0) / 100
-        if spell.kind != "channel":   # Malediction (+5% periodic damage) is gone in client 70425 (Grim Reach took its cell)
-            if self._fight and spell.school == "shadow":
-                w = self._fight.m.debuffs.get("Wrack")
-                if w and w["until"] > self._fight.t:
-                    m *= 1.10
+        # Malediction (+5% periodic damage) is gone in client 70425 (Grim Reach took its cell). Wrack's +10% is added to each tick that lands
+        # while it holds (on_tick): the engine snapshots a DoT when it is applied, and Wrack is cast once the DoTs are up (until 2026-10-17
+        # it applied here, at the snapshot, so it raised nothing already ticking)
         return m
 
     def periodic_can_crit(self, spell):
@@ -579,8 +586,7 @@ class WarlockModule(BaseModule):
             fight.heal(spell, amount)
         if spell.name == "Shadow Bolt" and crit and self.rank("Improved Shadow Bolt"):
             m.debuffs["Improved Shadow Bolt"] = {"until": t + 12.0, "stacks": 1}
-        if spell.name == "Wrack":
-            m.debuffs["Wrack"] = {"until": t + 6.0, "stacks": 1}
+        # Wrack's debuff is set by its first tick (on_tick): a channel never reaches on_hit
         if spell.name == "Bane of Agony" and p.buff("Amplify Curse", t):
             del p.buffs["Amplify Curse"]
         if self.new_rot:
@@ -633,6 +639,21 @@ class WarlockModule(BaseModule):
         p, t = fight.p, fight.t
         if amount <= 0:
             return
+        m = fight.m
+        if spell.name == "Wrack" and getattr(spell, "wrack", None) and not (m.debuffs.get("Wrack", {}).get("until", 0) > t):
+            # the debuff lasts its 6 s from the channel's start (the first tick comes one interval in)
+            school, pct, dur = spell.wrack
+            m.debuffs["Wrack"] = {"until": t - spell.channel / max(1, spell.dot_ticks) + dur, "pct": pct, "school": school}
+        w = m.debuffs.get("Wrack")
+        if w and w["until"] > t and spell.name != "Wrack" and spell.school == "periodic":   # another DoT of ours ticking under Wrack
+            src = BOOK.get(spell.name)
+            if src and src[0].school == w.get("school", "shadow") and src[0].kind != "channel":
+                extra = amount * w.get("pct", 0.10)
+                m.hp -= extra
+                fight.damage[spell.name] = fight.damage.get(spell.name, 0.0) + extra
+                m.threat_player += extra
+                if spell.name == "Siphon Life":
+                    fight.heal(Spell("Siphon Life", "shadow"), extra)
         if spell.name == "Siphon Life":
             fight.heal(Spell("Siphon Life", "shadow"), amount)
         if spell.name in ("Corruption", "Drain Life", "Drain Soul", "Wrack") and self.rank("Nightfall") and fight.rng.random() < self.tv("Nightfall", 0) / 100:
@@ -641,7 +662,7 @@ class WarlockModule(BaseModule):
 
     def after_cast(self, fight, spell):
         if spell.name == "Curse of the Elements":   # a Curse, not a Bane: it sits beside Bane of Agony (one of each per warlock)
-            fight.m.debuffs["Curse of the Elements"] = {"until": fight.t + 300.0}
+            fight.m.debuffs["Curse of the Elements"] = {"until": fight.t + 300.0, "pct": getattr(spell, "coe_pct", 0.0) or 0.10}
         p, t = fight.p, fight.t
         if spell.cooldown > 0:
             p.cooldowns[spell.name] = t + spell.cooldown

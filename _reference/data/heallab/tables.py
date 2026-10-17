@@ -59,6 +59,11 @@ KINGS = 1.10              # Blessing of Kings (+10% stats); 1.0 for a Horde raid
 WISDOM_MP5 = 33           # Blessing of Wisdom (rank 5, 33 mana per 5 s)
 MANA_PER_INT = 15.0
 CRIT_MULT = 1.5           # a critical heal
+# Heals over time whose ticks can crit (Blizzard's beta notes, 2026-09-24, post 1: "Corrected an issue and now Rejuvenation / Tranquility /
+# Wild Growth / Renew / Riptide can land critical hits"; Regrowth is not named). Every tick carries the expected bonus, crit chance at the
+# cast x (CRIT_MULT - 1) (engine.Sim.land; 2026-10-17, page audit finding 14: only Renew had it, in the priest module); a tick crit
+# triggers no on-crit effect (Divine Aegis: "non-periodic critical heals"; Water Shield, Nature's Grace, Illumination read direct crits).
+HOT_CRIT = ("Renew", "Rejuvenation", "Wild Growth", "Tranquility", "Riptide")
 REGEN_TICK = 2.0          # spirit regen ticks every 2 s
 FSR = 5.0                 # five-second rule: no spirit regen within 5 s of a cast (talents return a fraction)
 GCD = 1.5

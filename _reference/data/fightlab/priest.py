@@ -5,10 +5,12 @@ Spell ranks (damage, periodic damage, heals, absorbs, cost, cast, cooldown, coef
 `_reference/data/forever-talents/priest.json`. What a talent *does* is coded here per talent; the numbers are the client's.
 
 Playstyle `shadow-dps` (the scorer's model id): Power Word: Shield and Inner Fire before the pull, Mind Blast at range,
-Shadow Word: Pain, Mind Flay channels (slowing the mob) and Mind Blast on cooldown, Vampiric Embrace and Devouring Plague
-for self-healing, Shadow Word: Death as an execute, wand to finish without overkill; Psychic Scream when health runs low;
-Renew between fights until Shadowform (which forbids heals) replaces it with eating. Forever's racial priest spells (Desperate
-Prayer is a Dwarf's) are cast only for their race (RACIAL_SPELLS, PriestModule.RACE; 2026-10-09: none, the pages are race-neutral).
+Shadow Word: Pain, Mind Flay channels (slowing the mob) and Mind Blast on cooldown, Vampiric Embrace for self-healing,
+Devouring Plague (client 70425: a 24 s cooldown dot that heals you for its damage) first when hurt, then as a damage line after
+Shadow Word: Pain (2026-10-17, page audit finding 16: it had been cast only below 80% health; the tuned rules gate it), Shadow
+Word: Death as an execute, wand to finish without overkill; Psychic Scream when health runs low; Renew between fights until
+Shadowform (which forbids heals) replaces it with eating. Forever's racial priest spells (Desperate Prayer is a Dwarf's) are
+cast only for their race (RACIAL_SPELLS, PriestModule.RACE; 2026-10-09: none, the pages are race-neutral).
 
 Playstyles `holy-leveling` and `discipline-leveling` (any spec string starting with "holy" or "discipline"; 2026-09-30): the
 healing trees leveling on Smite. One priority list for both (`decide_holy`); the talents make the difference: shield before the
@@ -28,6 +30,11 @@ from tables import (GCD, MELEE_RANGE, WAND_SPEED, class_base_health, class_base_
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 SPELLBOOK = json.load(open(ROOT / "_reference/data/forever-spells/priest.json", encoding="utf-8"))
 TREE = json.load(open(ROOT / "_reference/data/forever-talents/priest.json", encoding="utf-8"))
+# Mental Agility's "instant cast spells" (tooltip) as the client's class mask 14520 reads in the community simulator
+# (sim/priest/talents_discipline.go at db4d14a): channels and Shadow Word: Death pay full price; Devouring Plague does not.
+MENTAL_AGILITY_EXCLUDED = ("Shadow Word: Death",)
+# Inner Focus's crit leaves out Mind Flay and Shadow Word: Death (14751's crit modifier mask, same source); periodic effects never get it
+INNER_FOCUS_NO_CRIT = ("Mind Flay", "Shadow Word: Death")
 
 NUM = re.compile(r"(\d+(?:\.\d+)?)")
 DMG = re.compile(r"(\d[\d,]*) to (\d[\d,]*) (\w+) damage")
@@ -153,7 +160,7 @@ MECHANICS = {
     "Improved Psychic Scream": "-2s/rank Psychic Scream cooldown",
     "Mind Flay": "unlocks Mind Flay (3s channel, 3 ticks, 50% slow)",
     "Improved Mind Flay": "each Mind Flay tick deals 10%/rank more than the one before it in the same channel (client 70425; compounding: 1, 1.2, 1.44 at 2/2; was +10%/rank, range and a weaker slow)",
-    "Vampiric Embrace": "20% of Shadow damage dealt heals you for 30s (1 min cooldown, 40 mana)",
+    "Vampiric Embrace": "20% of Shadow damage dealt heals you for 30s (30 s cooldown since client 70425, 40 mana)",
     "Shadow Weaving": "33%/rank chance per Shadow hit: +2% Shadow damage the target takes from you per stack (5 stacks, 15s; a debuff on the mob since client 70425, so the stacks start over on every mob)",
     "Dark Inspiration": "+3%/rank Spirit (mana regeneration) for 10 s after a Mind Blast hit or a fully channelled Mind Flay (client 70425; its party share does nothing solo)",
     "Devouring Contagion": "-25%/rank Devouring Plague mana cost (the spread on a kill: not modelled)",
@@ -164,8 +171,10 @@ MECHANICS = {
     "Twin Disciplines": "+1%/rank damage and healing of instant casts, Mind Flay and Penance included (16 Oct beta notes; forever-bugs #322, #328)",
     "Improved Power Word: Shield": "+7/14/20% absorb",
     "Martyrdom": "Focused Casting for 6s after a melee crit: no pushback",
-    "Mental Agility": "-3.3%/rank mana cost of instants, Smite and Holy Fire",
-    "Inner Focus": "next Mind Blast free with +25% crit, every 3 min",
+    "Mental Agility": "-3.3%/rank mana cost of instants, Smite and Holy Fire; not channels (Mind Flay, Penance) or Shadow Word: Death (the client's "
+                      "class mask 14520 as the community simulator reads it)",
+    "Inner Focus": "used at the pull every 3 min: the next spell, whatever it is, is free and gets +25% crit if it is a non-periodic spell "
+                   "(not Mind Flay or Shadow Word: Death; 2026-10-17: it had been spent by damage spells only and its crit never applied)",
     "Meditation": "17%/rank of Spirit regen continues while casting",
     "Improved Inner Fire": "+15%/rank Inner Fire armor and +4 charges",
     "Mental Strength": "+2%/rank Intellect (client 70425; was 3%)",
@@ -178,7 +187,8 @@ MECHANICS = {
     "Improved Renew": "+5%/rank Renew",
     "Holy Specialization": "+1%/rank Holy crit",
     "Divine Fury": "-0.1s/rank Smite, Holy Fire, Heal, Greater Heal cast time",
-    "Spiritual Guidance": "spell damage +1.6%/rank of Spirit, healing +5%/rank of Spirit",
+    "Spiritual Guidance": "spell damage +1.6%/rank of Spirit, healing +5%/rank of Spirit (the tooltip's two numbers; until 2026-10-17 heals "
+                          "got the damage share)",
     "Spiritual Healing": "+3.3%/rank healing",
     "Improved Healing": "-5%/rank mana on Heal / Greater Heal",
     "Searing Light": "+2.5%/rank Holy damage",
@@ -223,8 +233,8 @@ FIT = {
 }
 SHARE_SOURCE = {'Holy Nova': 'holy_nova', "Shadow Word: Pain": "swp", "Mind Blast": "mind_blast", "Mind Flay": "mind_flay", "Wand": "wand", "Smite": "smite",
                 "Devouring Plague": "devouring_plague", "Shadow Word: Death": "swd"}
-NEW_SOURCES = {'holy_nova': {'id': 'holy_nova', 'share': 0.0, 'min_level': 20, 'tags': ['type:spell', 'school:holy', 'instant', 'aoe', 'ability:Holy Nova']}, "devouring_plague": {"id": "devouring_plague", "share": 0.0, "min_level": 20, "tags": ["type:spell", "school:shadow", "dot", "instant", "ability:Devouring Plague"], "cooldown": 60},
-               "swd": {"id": "swd", "share": 0.0, "min_level": 32, "tags": ["type:spell", "school:shadow", "instant", "ability:Shadow Word: Death"], "cooldown": 15}}
+NEW_SOURCES = {'holy_nova': {'id': 'holy_nova', 'share': 0.0, 'min_level': 20, 'tags': ['type:spell', 'school:holy', 'instant', 'aoe', 'ability:Holy Nova']}, "devouring_plague": {"id": "devouring_plague", "share": 0.0, "min_level": 20, "tags": ["type:spell", "school:shadow", "dot", "instant", "ability:Devouring Plague"], "cooldown": 24},
+               "swd": {"id": "swd", "share": 0.0, "min_level": 32, "tags": ["type:spell", "school:shadow", "instant", "ability:Shadow Word: Death"], "cooldown": 18}}
 KEY_TALENTS = ["Mind Flay", "Shadowform", "Vampiric Embrace"]
 DESCRIPTION = ("Single-target leveling fights against normal mobs of your level: Power Word: Shield and Inner Fire before the pull, Mind Blast at 30 yd, "
                "Shadow Word: Pain, Mind Flay channels (50% slow) and Mind Blast on cooldown while the mob walks in and once it is on you (the shield "
@@ -357,7 +367,7 @@ class PriestModule(BaseModule):
             cost *= 1 - self.tv("Devouring Contagion", 0) / 100
         if spell.name == "Power Word: Shield" and self.rank("Soul Warding"):
             cost *= 1 - self.tv("Soul Warding", 1) / 100
-        if (spell.cast == 0 and spell.kind != "channel") or spell.name in ("Smite", "Holy Fire"):
+        if (spell.cast == 0 and spell.kind != "channel" and spell.name not in MENTAL_AGILITY_EXCLUDED) or spell.name in ("Smite", "Holy Fire"):
             cost *= 1 - self.tv("Mental Agility", 0) / 100
         if spell.name in ("Heal", "Greater Heal", "Lesser Heal"):
             cost *= 1 - self.tv("Improved Healing", 0) / 100
@@ -366,8 +376,12 @@ class PriestModule(BaseModule):
         return cost
 
     def final_cost(self, fight, spell, cost):
-        if fight.p.buff("Inner Focus", fight.t) and spell.dmg_max > 0:
-            del fight.p.buffs["Inner Focus"]
+        """Inner Focus: the next spell is free (any spell: the tooltip's "your next spell"; the community simulator spends it on the next
+        priest spell). The buff is marked spent here and removed in after_cast, so crit_bonus still sees it while that spell resolves
+        (until 2026-10-17 it was deleted here, before the spell resolved, and its crit never applied)."""
+        b = fight.p.buff("Inner Focus", fight.t)
+        if b and not b.get("spent"):
+            b["spent"] = spell.name
             return 0.0
         return cost
 
@@ -385,8 +399,9 @@ class PriestModule(BaseModule):
             c += self.tv("Holy Specialization", 0) / 100
         if spell.name == "Shadow Word: Death" and f and f.m.hp <= 0.2 * f.m.hp_max:
             c += self.tv("Early Demise", 0) / 100
-        if f and f.p.buff("Inner Focus", f.t) and spell.dmg_max > 0:
-            c += 0.25
+        b = f.p.buff("Inner Focus", f.t) if f else None
+        if b and b.get("spent") == spell.name and spell.name not in INNER_FOCUS_NO_CRIT and (spell.dmg_max > 0 or spell.heal_max > 0):
+            c += 0.25   # the spell that spent it, non-periodic part (notes post 4: "no longer applies ... to Periodic Effects")
         if self.holy and f and spell.name in RENEWED_HOPE_HEALS and f.p.cooldowns.get("Power Word: Shield", 0.0) > f.t:
             c += self.tv("Renewed Hope", 0) / 100   # the target (you) is under Weakened Soul
         return c
@@ -422,8 +437,27 @@ class PriestModule(BaseModule):
                 m *= 1.20
         return m
 
+    def _sg_heal_factor(self, spell):
+        """Spiritual Guidance gives healing the tooltip's first share of Spirit (25% at 5/5) and spell damage the second (8%); the player's
+        spell power carries the damage share, so a heal gets the rest as a factor on its mean amount (the engine adds one spell power to
+        both)."""
+        f = self._fight
+        if f is None or not self.rank("Spiritual Guidance"):
+            return 1.0
+        extra = f.p.spirit * (self.tv("Spiritual Guidance", 0) - self.tv("Spiritual Guidance", 1)) / 100
+        if extra <= 0 or spell.heal_coef <= 0:
+            return 1.0
+        sp = f.p.spell_power
+        if spell.hot > 0 and spell.heal_max <= 0:
+            ticks = max(1, int(spell.hot_dur / 3.0))
+            base = spell.hot + spell.heal_coef * sp * ticks
+            return (base + spell.heal_coef * extra * ticks) / base if base > 0 else 1.0
+        base = (spell.heal_min + spell.heal_max) / 2 + spell.heal_coef * sp
+        return (base + spell.heal_coef * extra) / base if base > 0 else 1.0
+
     def heal_multiplier(self, spell):
-        m = 1 + self.tv("Spiritual Healing", 0) / 100
+        m = self._sg_heal_factor(spell)
+        m *= 1 + self.tv("Spiritual Healing", 0) / 100
         if self.holy and self._fight and self._fight.p.buff("Power Infusion", self._fight.t):
             m *= 1.20
         if spell.name == "Renew":
@@ -573,6 +607,9 @@ class PriestModule(BaseModule):
 
     def after_cast(self, fight, spell):
         p, t = fight.p, fight.t
+        ifb = p.buffs.get("Inner Focus")
+        if ifb and ifb.get("spent") == spell.name:
+            del p.buffs["Inner Focus"]
         if spell.name == "Mind Flay":   # the channel ended: Dark Inspiration when every tick landed (fully channelled), the ramp starts over
             if self.rank("Dark Inspiration") and self._flay_i + 1 >= max(1, spell.dot_ticks):
                 p.buffs["Dark Inspiration"] = {"until": t + 10.0}
@@ -671,6 +708,9 @@ class PriestModule(BaseModule):
         # the loop
         if swp and can(swp) and not fight.dot_active("Shadow Word: Pain") and hp > 0.30 * m.hp_max:
             return swp
+        # Devouring Plague as damage (client 70425: 24 s cooldown, 24 s dot; the tuned rules set its health and mana gates)
+        if dp and can(dp) and not fight.dot_active("Devouring Plague") and hp > 0.30 * m.hp_max:
+            return dp
         if swd and can(swd) and hp <= 0.2 * m.hp_max and self.rank("Early Demise"):
             return swd
         if blast and can(blast):
@@ -738,6 +778,11 @@ class PriestModule(BaseModule):
             return hf
         if swp and can(swp) and not fight.dot_active("Shadow Word: Pain") and hp > 0.30 * m.hp_max:
             return swp
+        # Devouring Plague (client 70425: every priest has it, 24 s cooldown, heals you for its damage): the same damage line as Shadow's;
+        # the tuned rules (rotation_opt --spec holy-leveling / discipline-leveling) set its gates or veto it (2026-10-17)
+        dp = sp.get("Devouring Plague")
+        if dp and can(dp) and not fight.dot_active("Devouring Plague") and hp > 0.30 * m.hp_max:
+            return dp
         if pen and can(pen) and hp > wand_hit * 2 and m.dist <= (pen.range or 30.0):
             return pen
         if blast and can(blast):

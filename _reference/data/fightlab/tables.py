@@ -158,6 +158,7 @@ MOB_PARRY = 0.05              # only when attacking from the front (solo mobs fa
 GLANCE_CHANCE = 0.10          # white swings only; 0.95 damage vs a same-level mob (0.65 vs a +3 boss)
 GLANCE_MULT = 0.95
 MIN_RANGED_RANGE = 8.0        # bows and guns cannot fire inside this (wowsims Forever MinRangedRange)
+AUTO_SHOT_STAND_STILL = 0.5   # Blizzard, 16 Oct beta notes: "Auto Shot now requires you to stand still for 0.5 seconds before shooting"
 
 # resources
 ENERGY_PER_TICK = 20.0        # per 2-second tick (wowsims Forever: 20.2 per 2.02 s), 100 maximum

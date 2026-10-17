@@ -40,6 +40,13 @@ ROOTRX = re.compile(r"freezes them in place for up to (\d+) sec")
 ABSORB = re.compile(r"absorbing ([\d,]+) damage")
 ARMOR = re.compile(r"Increases Armor by (\d+)")
 COEF = re.compile(r"([\d.]+)% of spell power")
+TICK_COEF = re.compile(r"([\d.]+)% of spell power \(per tick\)")   # a burn's own coefficient (Pyroblast: 15% a tick, client 70425)
+DAZE = re.compile(r"Dazing them for (\d+)% reduced movement speed for (\d+) sec")   # Blast Wave (client 70425)
+# Cone of Cold (client 70425; Blizzard's 16 Oct notes: "Movement speed of the first 4 targets hit is decreased by an additional 10% and the
+# slow lasts an additional 3 seconds on those targets"): leveling pulls hold at most 4 mobs, so every mob in the cone gets it
+COC_EXTRA = re.compile(r"The first (\d+) targets hit by this cone are slowed by an additional (\d+)% for an additional (\d+) sec")
+# a burn's tick period: the client's periodic aura (the community simulator's spell store, de2b4da): Pyroblast 3 s, Fireball 2 s
+BURN_PERIOD = {"Pyroblast": 3.0}
 MISSILES = re.compile(r"causing (\d[\d,]*) Arcane damage each second for (\d+) sec")
 # client 70425: "Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is
 # increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application." (70291: +10% to other spells' damage)
@@ -57,8 +64,9 @@ LANCE_FROZEN = re.compile(r"Deals (\d+)% increased damage to Frozen targets")   
 TALENT_SPELLS = {"Ice Lance": "Ice Lance", "Ice Barrier": "Ice Barrier", "Cold Snap": "Cold Snap", "Ice Block": "Ice Block",
                  "Pyroblast": "Pyroblast", "Blast Wave": "Blast Wave", "Arcane Wrath": "Arcane Wrath"}
 DEFAULT_RANGE = {"Frost Nova": 10.0, "Cone of Cold": 10.0, "Arcane Explosion": 10.0, "Blast Wave": 10.0}
-# the client carries none: Pyroblast and Blast Wave Classic-style values; Ice Lance 0.10, the community simulator's fit to beta combat logs
-# (2ce8265: hits of two level 20-26 mages at known spell power; 0.143 until 2026-10-09)
+# the client carries none for Ice Lance: 0.10, the community simulator's fit to beta combat logs (2ce8265: hits of two level 20-26 mages at
+# known spell power; 0.143 until 2026-10-09). Pyroblast and Blast Wave read theirs from the 70425 spellbook since 2026-10-17 (these two
+# values are the fallback for an export without their ranks)
 ASSUMED_COEF = {"Ice Lance": 0.10, "Pyroblast": 1.0, "Blast Wave": 0.129}
 
 
@@ -104,6 +112,16 @@ def load_spellbook():
                 s.interrupt = parse_interrupt(txt)
                 s.burn = _num(bn.group(1)) if bn else 0.0
                 s.burn_dur = float(bn.group(3)) if bn else 0.0
+                s.burn_period = BURN_PERIOD.get(sp["name"], 2.0)
+                tc = TICK_COEF.search(r.get("coefficient") or "")
+                # the burn's coefficient over all its ticks (Pyroblast 15% x 4 = 60%; Fireball's burn has none)
+                s.burn_coef = float(tc.group(1)) / 100 * max(1, int(round(s.burn_dur / s.burn_period))) if (tc and s.burn) else 0.0
+                dz = DAZE.search(txt)
+                if dz:   # a daze is not a Chill effect: on_chill leaves Frostbite and Fingers of Frost out, __init__ undoes Permafrost
+                    s.daze, s.chill_dur = float(dz.group(1)) / 100, float(dz.group(2))
+                ce = COC_EXTRA.search(txt)
+                if sp["name"] == "Cone of Cold" and ce and s.chill:   # 50% for 9 s on the first 4 targets
+                    s.chill, s.chill_dur = s.chill + float(ce.group(2)) / 100, s.chill_dur + float(ce.group(3))
                 ab = ABSORB.search(txt)
                 s.absorb = _num(ab.group(1)) if ab else 0.0
                 ar = ARMOR.search(txt)
@@ -130,9 +148,10 @@ def load_spellbook():
                 book.setdefault(sp["name"], []).append(s)
     for name in book:
         book[name].sort(key=lambda x: (x.level, x.rank))
-    # Pyroblast: the export holds rank 1 only (talent-taught); higher ranks are synthesised from Fireball's ranks
-    # (beta pass: Pyroblast rank 8 520-646 plus 212 over 12 sec vs Fireball rank 12 425-541 plus 60 -> x1.2 direct, x3.5 burn, x1.25 mana)
-    if "Fireball" in book:
+    # Pyroblast and Blast Wave: the 70425 export holds every rank (Pyroblast 1-8 from level 20, Blast Wave 1-5 from 30, with costs and
+    # coefficients); until 2026-10-17 they were synthesised (Pyroblast from Fireball's ranks, Blast Wave from the talent tooltip, no daze).
+    # The synthesis stays as the fallback for an export that holds rank 1 only.
+    if "Fireball" in book and len(book.get("Pyroblast", [])) < 2:
         pyro = []
         for fb in book["Fireball"]:
             if fb.level < 20:
@@ -143,15 +162,16 @@ def load_spellbook():
             pyro.append(p)
         if pyro:
             book["Pyroblast"] = pyro
-    # Blast Wave: talent tooltip 154-184 at level 60 is rank 1; beta pass rank 5 453-533 at 60 -> scale with level from 30
     bw = []
-    for L in (30, 38, 46, 54, 60):
+    for L in (30, 38, 46, 54, 60) if len(book.get("Blast Wave", [])) < 2 else ():
         avg = interp([(30, 169.0), (60, 493.0)], L)
         b = Spell(name="Blast Wave", school="fire", rank=len(bw) + 1, level=L, cost=215.0, cast=0.0, cooldown=45.0, range=10.0,
                   dmg_min=round(avg * 0.92), dmg_max=round(avg * 1.08), coef=0.129, aoe=True)
         b.text, b.burn, b.burn_dur, b.absorb, b.armor = "synthesised from the talent tooltip", 0.0, 0.0, 0.0, 0.0
+        b.burn_period, b.burn_coef, b.daze, b.chill_dur = 2.0, 0.0, 0.5, 6.0
         bw.append(b)
-    book["Blast Wave"] = bw
+    if bw:
+        book["Blast Wave"] = bw
     return book
 
 
@@ -201,19 +221,21 @@ MECHANICS = {
     "Improved Fire Blast": "Fire Blast cooldown -1s and range +8/15 yd per rank (client 70425; replaced Wake of Fire and its on-kill crit)",
     "Incineration": "+2% crit per rank on Fire Blast, Ice Lance, Arcane Blast, Scorch",
     "Master of Elements": "Fire/Frost crits refund 10% per rank of the spell's base mana",
-    "Fire Power": "+1% Fire damage per rank per Fire effect of yours on the target (burns, Ignite, Improved Scorch), up to 4 effects (client 70425)",
+    "Fire Power": "+1% Fire damage per rank per Fire effect of yours on the target (burns, Ignite, Improved Scorch, Impact's stun), up to 4 "
+                  "effects (client 70425; the 16 Oct notes list the effects)",
     "Arcane Focus": "+1% hit per rank with Arcane spells (neither loop casts Arcane spells)",
     "Improved Fireball": "Fireball cast time -0.1s per rank",
     "Flame Throwing": "+3 yd Fire range per rank (longer pull for the Fire loop)",
     "Ignite": "Fire crits burn for 8% per rank of the crit's damage over 4s",
     "Impact": "Fire spell hits have 3/7/10% chance to stun 2s (no movement, no swings)",
     "Burning Soul": "23%/rank chance to ignore pushback on Fire spells",
-    "Pyroblast": "unlocks Pyroblast (6s cast; ranks synthesised from Fireball); cast on a full Heating Up",
+    "Pyroblast": "unlocks Pyroblast (6s cast; ranks 1-8 from the 70425 spellbook, burn 15% of spell power a tick every 3 s); cast on a full Heating Up",
     "Improved Scorch": "Scorch's chance (the rank) to stack +3% Fire damage taken, up to 5 stacks at every rank, 30s",
     "Heating Up": ("Fireball/Fire Blast/Scorch crits stack, Fire Blast adds one more whenever it hits (3 = Pyroblast cast -75%), 20s; a Presence "
                    "of Mind Pyroblast keeps them (client 70425 and the beta notes of 16 Oct)"),
     "Critical Mass": "+2% Fire crit per rank (5 ranks since client 70425)",
-    "Blast Wave": "unlocks Blast Wave (instant AoE, daze 50% 6s, 45s cooldown; ranks synthesised): a snare when the mob is on us",
+    "Blast Wave": "unlocks Blast Wave (instant AoE, daze 50% 6s, not a Chill effect, 45s cooldown; ranks 1-5 from the 70425 spellbook): a snare "
+                  "when the mob is on us",
     "Combustion": "on the pull every 3 min (shared with Presence of Mind): +10% Fire crit per Fire hit until 3 crits",
 }
 # Talent effects only the Arcane playstyle (spec strings starting with "arcane", decide_arcane, 2026-09-30) applies; the Frost, Fire
@@ -318,6 +340,13 @@ class MageModule(BaseModule):
         if self.rank("Improved Fire Blast") and "Fire Blast" in self.spells:   # +8/15 yd range (client 70425)
             self.spells["Fire Blast"] = copy.copy(self.spells["Fire Blast"])
             self.spells["Fire Blast"].range += self.tv("Improved Fire Blast", 1)
+        bw = self.spells.get("Blast Wave")
+        if bw is not None and getattr(bw, "daze", 0) and self.rank("Permafrost"):
+            # the engine runs a daze through apply_chill, which adds Permafrost's duration and slow; a daze is not a Chill effect, so the
+            # copy is pre-scaled to land at the tooltip's 50% for 6 s
+            bw = self.spells["Blast Wave"] = copy.copy(bw)
+            bw.chill_dur = bw.chill_dur / (1 + self.tv("Permafrost", 0) / 100)
+            bw.daze = max(0.0, bw.daze - self.tv("Permafrost", 1) / 100)
         self._fight = None
         self._am_first_tick = None
         self._base_mana = 0.0
@@ -514,7 +543,9 @@ class MageModule(BaseModule):
 
     def fire_effects(self):
         """Fire effects of yours on the target, for Fire Power (client 70425: "per your Fire effects on the target ... Effects which mix
-        multiple schools of magic do not qualify"): the burns and dots of pure Fire spells, Ignite, the Improved Scorch vulnerability."""
+        multiple schools of magic do not qualify"): the burns and dots of pure Fire spells, Ignite, the Improved Scorch vulnerability and
+        Impact's stun (Blizzard's 16 Oct notes: "the effects which can grant increased Fire damage from this talent are Ignite, Improved
+        Scorch, Fireball, and Pyroblast, and Impact"; Impact counted since 2026-10-17)."""
         f = self._fight
         if f is None:
             return 0
@@ -526,8 +557,8 @@ class MageModule(BaseModule):
             src = BOOK.get(n)
             if n == "Ignite" or (src and (src[0].school or "") == "fire"):
                 names.add(n)
-        sc = f.m.debuffs.get("Improved Scorch")
-        return len(names) + (1 if sc and sc["until"] > f.t else 0)
+        sc, im = f.m.debuffs.get("Improved Scorch"), f.m.debuffs.get("Impact")
+        return len(names) + (1 if sc and sc["until"] > f.t else 0) + (1 if im and im["until"] > f.t else 0)
 
     def talent_multiplier(self, spell, frozen):
         m = 1.0 + self.tv("Arcane Instability", 0) / 100
@@ -618,6 +649,8 @@ class MageModule(BaseModule):
 
     def on_chill(self, fight, spell):
         p, m, t, rng = fight.p, fight.m, fight.t, fight.rng
+        if not self.sch(spell, "frost"):   # Frostbite and Fingers of Frost proc from Chill effects: Blast Wave's daze is none (2026-10-17)
+            return
         fb = self.tv("Frostbite", 0)
         if fb and not m.frozen(t) and rng.random() < fb / 100:
             m.root_until = t + 5.0
@@ -650,8 +683,10 @@ class MageModule(BaseModule):
         p, m, t, rng = fight.p, fight.m, fight.t, fight.rng
         if amount <= 0:
             return
-        if spell.burn > 0:   # a burn has no coefficient: the talents' factor only
-            fight.add_dot(spell.name + " burn", spell.burn * self.talent_multiplier(spell, False), max(1, int(spell.burn_dur / 2)), 2.0)
+        if spell.burn > 0:   # the burn: its own coefficient over all its ticks (Pyroblast 15% a tick, 3 s; Fireball's has none) and the talents
+            period = getattr(spell, "burn_period", 2.0) or 2.0
+            total = (spell.burn + getattr(spell, "burn_coef", 0.0) * (p.spell_power + self.sp_bonus(spell))) * self.talent_multiplier(spell, False)
+            fight.add_dot(spell.name + " burn", total, max(1, int(round(spell.burn_dur / period))), period)
         if spell.name == "Cone of Cold":   # spends the stacks it was boosted by (talent_multiplier ran before this)
             m.debuffs.pop("Winter's Chill", None)
         elif self.rank("Winter's Chill") and (spell.name in WC_SOURCES or (spell.name == "Ice Lance" and getattr(self, "_fof_cast", False)))                 and rng.random() < self.tv("Winter's Chill", 0) / 100:
@@ -675,6 +710,7 @@ class MageModule(BaseModule):
                 p.buffs["Heating Up"] = {"until": t + 20.0, "stacks": stacks}
             if self.rank("Impact") and rng.random() < self.tv("Impact", 0) / 100 and not m.frozen(t):
                 m.stun_until = t + 2.0
+                m.debuffs["Impact"] = {"until": t + 2.0}   # a Fire effect on the target for Fire Power (16 Oct notes)
                 fight.note("Impact stun")
             if spell.name == "Scorch" and self.rank("Improved Scorch") and rng.random() < self.tv("Improved Scorch", 0) / 100:
                 b = m.debuffs.get("Improved Scorch")
@@ -875,8 +911,11 @@ class MageModule(BaseModule):
             return None
         if self.rank("Missile Barrage") and fight.p.buff("Missile Barrage", fight.t):
             fast = copy.copy(am)
-            fast.channel = am.channel * (1 - self.tv("Missile Barrage", 2) / 100)
-            fast.cost = am.cost * (1 - self.tv("Missile Barrage", 3) / 100)
+            # client 70425 rank text numbers: [20/40 Arcane Blast, 5/10 per missile, 10/20 others, 50 duration, 100 cost, 0.5 s]
+            # (70291's [40, 20, 50, 100, 0.5] had the cut at index 2 and the cost at 3: until 2026-10-17 a proc read the 70291 indices,
+            # cutting the channel 20% and the cost 50%, so decide_arcane, which knows a proc by its zero cost, never saw one)
+            fast.channel = am.channel * (1 - self.tv("Missile Barrage", 3) / 100)
+            fast.cost = am.cost * (1 - self.tv("Missile Barrage", 4) / 100)
             return fast
         return am
 

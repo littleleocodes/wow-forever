@@ -34,7 +34,23 @@ def _ancestral_healing_armor():
     return [0.08, 0.17, 0.25]
 
 
+def _water_shield():
+    """(globes, mana share a globe) from the beta spellbook: "surrounded by 3 globes of water ... 2% of maximum mana is restored to the
+    caster, expending one water globe. Only one globe will activate every few seconds. Lasts 10 min."""
+    for tab in json.load(open(_DATA / "forever-spells" / "shaman.json", encoding="utf-8"))["tabs"]:
+        for sp in tab["spells"]:
+            if sp["name"] == "Water Shield":
+                t = sp["ranks"][-1].get("text") or ""
+                g, m = re.search(r"(\d+) globes", t), re.search(r"(\d+(?:\.\d+)?)% of maximum mana", t)
+                return (int(g.group(1)) if g else 3), (float(m.group(1)) / 100 if m else 0.02)
+    return 3, 0.02
+
+
 RIPTIDE_CHAIN_HEAL = _riptide_chain_heal_bonus()
+WATER_SHIELD_GLOBES, WATER_SHIELD_MANA = _water_shield()
+# "every few seconds": 3.5 s, the client value the community simulator pins for spell 408510 (sim/shaman/shields.go at db4d14a; one timer
+# for hits taken and spell crits). The healer takes no damage in the lab, so only its own critical heals spend globes.
+WATER_SHIELD_ICD = 3.5
 ANCESTRAL_HEALING_ARMOR = _ancestral_healing_armor()
 ENGINE_ARMOR_BUFF = 0.25   # engine.Sim.boss_swing gives the tank +25% armor while `armor_buff_until` runs (Inspiration, Ancestral Healing)
 
@@ -49,7 +65,9 @@ class Healer(E.BaseHealer):
         "Mana Tide Totem": "290 mana every 3 s for 12 s when mana is under 50%, every 5 min",
         "Ancestral Healing": "every critical heal: +8/17/25% armor on the target for 15 s (the engine's armor buff is a fixed +25%, so ranks 1-2 "
                              "apply it on 32%/68% of crits: the same average armor)",
-        "Water Shield": "a critical heal restores 2% of maximum mana (one globe every 3 s; client 70425: any spell crit, and the lab casts only heals)",
+        "Water Shield": "3 globes, cast before the pull: a critical direct heal spends one for 2% of maximum mana (one globe every 3.5 s; client "
+                        "70425: any spell crit, and the lab casts only heals); recast (a global cooldown, no mana) when the globes run out "
+                        "and the tank is not in danger (2026-10-17: the lab had unlimited globes every 3 s)",
         "Totemic Focus": "totem mana only: nothing for heals",
         "Elemental Focus": "clearcasting from damage spells, for the next damage spell: nothing for heals",
         "Riptide": "instant heal plus a 15 s HoT on a 6 s cooldown: the emergency heal and the tank's HoT; a Chain Heal cast on a target with "
@@ -63,6 +81,7 @@ class Healer(E.BaseHealer):
     def on_fight_start(self, sim):
         sim.mana -= 80.0   # Healing Stream Totem
         sim.water_globe = -10.0
+        sim.water_globes = WATER_SHIELD_GLOBES if "Water Shield" in self.book else 0   # cast before the pull
 
     def on_tick(self, sim):
         hst = self.book.get("Healing Stream Totem")
@@ -99,9 +118,10 @@ class Healer(E.BaseHealer):
         rank = self.rank("Ancestral Healing")
         if crit and rank and sim.rng.random() < ANCESTRAL_HEALING_ARMOR[min(rank, len(ANCESTRAL_HEALING_ARMOR)) - 1] / ENGINE_ARMOR_BUFF:
             target.armor_buff_until = sim.t + 15.0
-        if crit and "Water Shield" in self.book and sim.t >= sim.water_globe + 3.0:
+        if crit and sim.water_globes > 0 and sim.t >= sim.water_globe + WATER_SHIELD_ICD:
             sim.water_globe = sim.t
-            sim.gain_mana(0.02 * self.mana_max, "Water Shield")
+            sim.water_globes -= 1
+            sim.gain_mana(WATER_SHIELD_MANA * self.mana_max, "Water Shield")
 
     def before_decide(self, sim):
         tank = sim.tank
@@ -115,6 +135,11 @@ class Healer(E.BaseHealer):
             sim.cd["Nature's Swiftness"] = sim.t
             sim.instant_next = True
             return (self.book["Healing Wave"][-1], tank)
+        if "Water Shield" in self.book and sim.water_globes <= 0 and (tank.hp <= 0 or tank.frac >= T.EMERGENCY):
+            sim.water_globes = WATER_SHIELD_GLOBES   # recast: a global cooldown, no mana
+            sim.water_shield_casts = getattr(sim, "water_shield_casts", 0) + 1
+            sim.gcd_until = sim.t + T.GCD
+            return None
         return None
 
     def instant_ok(self, sim, spell, target):

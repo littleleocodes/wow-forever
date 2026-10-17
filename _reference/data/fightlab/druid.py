@@ -6,7 +6,7 @@ like a one-hander by level (`tables.weapon_dps`), attack power from the client's
 plus Cat Form's 120 + Agility and Predatory Strikes.
 
 Playstyle `feral-cat-dps` (the scorer's model id, used for leveling): prowl up behind the mob, open with Ravage from 32 (Shred from
-22, Claw before; Pounce comes at 36, after Ravage), Tiger's Fury (from 24, see TIGERS_FURY), Rake once, Claw to five points,
+22, Claw before; Pounce comes at 36, after Ravage), Rake once (no Tiger's Fury: removed, see TIGERS_FURY), Claw to five points,
 Ferocious Bite whenever it kills (from 32), Rip at five points on a mob above half health (before Ferocious Bite: Rip at
 RIP_EARLY_CP points on a mob above RIP_EARLY_HP of its health), Berserk on the pull when ready; shift out to Regrowth when low
 (Nature's Swiftness + Healing Touch in an emergency) and shift back (Cat Form costs 55% of base mana; Furor carries a share of the
@@ -18,7 +18,7 @@ costs the form's mana; between fights a Moonkin stays in the form and eats.
 
 2026-10-09 fixes (against the 70291 tooltips): Eclipse by rank (0.17/0.33/0.5 s, was 0.5 at any rank), Forever's Nature's Grace
 (10% faster casts and global cooldown for 3 s, was Classic's 0.5 s off the next cast), Nature's Focus on every Arcane and Nature spell
-(was heals only), Moonkin Form and healing, no wand (druids cannot use one), Rip before Ferocious Bite, Tiger's Fury, Furor's cat
+(was heals only), Moonkin Form and healing, no wand (druids cannot use one), Rip before Ferocious Bite, Tiger's Fury (removed again on 2026-10-17), Furor's cat
 energy (read the rage number: 10% at any rank), Heart of the Wild (cat Strength and bear Stamina were swapped), Blood Frenzy's cat
 combo point, Nature's Splendor's longer damage and heals over time, Improved Moonfire's critical strike chance, Omen of Clarity at the
 simulator's beta-log rate from attacks and spells (Wrath does not use Clearcasting), Rip's attack power share capped at 4 points,
@@ -192,11 +192,14 @@ def load_spellbook():
 
 BOOK = load_spellbook()
 
-# Tiger's Fury: since build 70170 the client grants it instead of a trainer teaching it, so the beta spellbook exports this module reads
-# (forever-spells) no longer list it. The numbers are the client's for spell 5217 as the ElliotWood/Forever simulator's spell data carries
-# them (commit 2ce8265, client 1.60.1.70291): level 24, 15% more physical damage for 6 sec, 30 sec cooldown, no cost, Cat Form only.
-# Whether players still have it is open (talentsforever.com's 70291 export lists it as gone): False leaves it out.
-TIGERS_FURY = True
+# Tiger's Fury: removed (settled 2026-10-17). Blizzard's beta notes of 1 Oct (t/2360696 post 4): "Tiger's Fury has been removed." The
+# 70425 spellbook exports lack it and talentsforever.com's 70425 export lists it under "gone" ("In the spellbooks: Tiger's Fury is gone").
+# In the client, SkillLineAbility moved spell 5217 from AcquireMethod 0 (trainer, build 69893) to 3 in 70170; in the 69893 table 3 marks
+# spells never learned from the skill line: triggered effects (Pounce Bleed, Judgement of Righteousness), talent spells and the Season of
+# Discovery runes this client carries unused (417045 Tiger's Fury, Mangle, Lacerate). The ElliotWood/Forever simulator reads 3 as "granted"
+# and still casts it (sim/druid/tigers_fury.go). Until 2026-10-17 this module re-added it by hand (15% physical damage for 6 s, 30 s
+# cooldown, the client's numbers for 5217); True restores that for a sensitivity run.
+TIGERS_FURY = False
 TIGERS_FURY_LEVEL, TIGERS_FURY_DURATION, TIGERS_FURY_COOLDOWN, TIGERS_FURY_BONUS = 24, 6.0, 30.0, 0.15
 if TIGERS_FURY and "Tiger's Fury" not in BOOK:
     _tf = Spell(name="Tiger's Fury", school="physical", rank=1, level=TIGERS_FURY_LEVEL, cost=0.0, cast=0.0, cooldown=TIGERS_FURY_COOLDOWN,
@@ -272,7 +275,7 @@ MECHANICS = {
     "Insect Swarm": "Balance: a Nature DoT kept up",
     "Improved Starfire": "Balance: -0.1 s/rank Starfire cast, 3%/rank chance of a 3 s stun",
     "Eclipse": "Balance: each Wrath stores 2 charges (up to 4, 15 s); each charge takes 0.17/0.33/0.5 s (by rank) off one Starfire",
-    "Moonkin Form": "Balance: +360% armor from items from 40 and Omen of Clarity twice as likely; healing spells need you out of the form "
+    "Moonkin Form": "Balance: +360% armor from items from 40, +3% spell crit while in the form, Omen of Clarity twice as likely; healing spells need you out of the form "
                     "(35% of base mana to go back); between fights a Moonkin eats instead of shifting out to heal",
     "Nature's Splendor": "Moonfire and Rejuvenation +3 s, Regrowth +6 s, Insect Swarm +2 s: one or two more ticks of the same size",
     "Furor": "Cat Form: back in with 20%/rank of the energy you left with plus 2/rank energy a second out of form (at most 20/rank); "
@@ -303,7 +306,7 @@ NEW_SOURCES = {}
 KEY_TALENTS = ["Predatory Strikes", "Savage Fury", "Sharpened Claws"]
 DESCRIPTION = ("Single-target leveling fights against normal mobs of your level. Levels 10-19 in Bear Form: walk up, Enrage, Demoralizing Roar, Maul on every swing "
                "the rage allows, Bash when low or against a casting mob. From 20 in Cat Form: prowl up behind the mob and open with Ravage from 32 (Shred from 22, "
-               "Claw before; Pounce comes at 36, after Ravage), Tiger's Fury (from 24), Rake once, Claw to five points (the mob faces you, so Shred is only for the "
+               "Claw before; Pounce comes at 36, after Ravage), Rake once, Claw to five points (the mob faces you, so Shred is only for the "
                "opener), Ferocious Bite whenever it kills (from 32), Rip at five points on a mob above half health (before Ferocious Bite: Rip at "
                f"{RIP_EARLY_CP} points on a mob above {RIP_EARLY_HP:.0%} of its health), Berserk on the pull; when low, shift out for a Regrowth (Nature's Swiftness "
                "+ Healing Touch in an emergency) and shift back at 55% of base mana, Furor carrying the energy. Between fights: 2 s loot, 6 s travel, Rejuvenation / "
@@ -553,6 +556,8 @@ class DruidModule(BaseModule):
             bonus += 1.0
         if spell.name == "Moonfire":
             bonus += self.tv("Improved Moonfire", 0) / 100   # "damage and critical strike chance of your Moonfire spell"
+        if self.balance and self.in_moonkin and spell.kind == "spell":   # Moonkin Form's aura: "spell Critical Strike chance increased by 3%" (until 2026-10-17 left out)
+            bonus += self.tv("Moonkin Form", 3) / 100
         return bonus
 
     def crit_damage_bonus(self, spell):

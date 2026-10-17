@@ -104,7 +104,7 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   search; resume without --fresh).
   The same day, before any search (audit of 2026-10-17: these were skipped after the 70425 refresh and left stale pages, guides naming
   removed talents and four fight-lab parser breaks): `validate_builds.py && render_builds.py` after the repair, `guides.py --check --write`,
-  `fightlab/module_lint.py --write` and **fix every row it lists** (a lint row is a bug, not a note), check each fight-lab module's parsed
+  `fightlab/module_lint.py --write` and **act on every row it lists**: fix it, or confirm no module casts that spell (a pet family's ability, a racial, Blessing of Sacrifice; Holy Shield's damage is read by the paladin module itself) — Wrack sat in the lint for a day dealing 0, check each fight-lab module's parsed
   numbers for the talents and spells whose tooltip wording changed (a regex that stops matching reads 0 without an error: Battle Shout's
   "party or raid members" and Trueshot Aura's "within 45 yards" gave 0 attack power), compare the class modules with the beta notes'
   mechanics (the tooltip and the notes can disagree: Winter's Chill), check talentsforever.com's code version (`popular.js`) against

@@ -124,7 +124,7 @@
      "Drop **Healing Stream Totem** at the pull: it heals your whole group every 2 seconds for 5 minutes, and with **Restorative Totems** it did about a tenth of the healing in the lab."
     ],
     "caveats": [
-     "Mana runs out before healing power does. Keep **Water Shield** up: each of its 3 globes returns 2% of your maximum mana when you are hit or a heal crits, one every few seconds. It costs nothing and has no cooldown (the 15-second cooldown its tooltip used to show was a tooltip error, fixed in the 2026-10-08 build), so recast it whenever the globes are gone.",
+     "Mana runs out before healing power does. Keep **Water Shield** up: each of its 3 globes returns 2% of your maximum mana when you are hit or any of your spells crits (client 70425; heals only before), at most one every few seconds (the lab and the community simulator use 3.5). It costs nothing and has no cooldown (the 15-second cooldown its tooltip used to show was a tooltip error, fixed in the 2026-10-08 build), so recast it whenever the globes are gone.",
      "Drop **Mana Tide Totem** at about half mana: it restores 290 mana every 3 seconds for 12 seconds to everyone in your group within 30 yards, on a 5-minute cooldown. The lab also measured drinking a mana potion early (below 80% mana) better than saving it, since its 2-minute cooldown starts sooner.",
      "Let raid members drop to about half health before you heal them: the healer lab measured that better than healing them at 70%.",
      "The healer lab is a model of one group (a tank and four raid members) under stated assumptions; real raids spread damage differently."
