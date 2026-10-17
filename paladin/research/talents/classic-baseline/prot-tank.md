@@ -84,11 +84,11 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Protection | Precision | 3 | changed | tier 2, max 3 — tooltip changed |
 | Protection | Toughness | 5 | moved | tier 1, max 5 — was Protection row 2, col 4 |
 | Protection | Improved Righteous Fury | 3 | changed | tier 3, max 3 — tooltip changed |
-| Protection | Shield Specialization | 3 | changed | tier 3, max 3 — tooltip changed; tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3) |
+| Protection | Shield Specialization | 3 | changed | tier 3, max 3 — tooltip changed; tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3) |
 | Protection | Anticipation | 5 | changed | tier 2, max 5 — tooltip changed; was Protection row 3, col 4 |
 | Protection | Blessing of Kings | 1 | **REMOVED** | removed from Classic |
 | Protection | Blessing of Sanctuary | 1 | **REMOVED** | removed from Classic |
-| Protection | Reckoning | 3 | changed | tier 5, max 5 — tooltip changed; tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3, 4, 5) |
+| Protection | Reckoning | 3 | changed | tier 5, max 5 — tooltip changed; tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3, 4, 5) |
 | Protection | One-Handed Weapon Specialization | 5 | changed | tier 4, max 3 — max rank 5 → 3; tooltip changed; was Protection row 6, col 3 |
 | Protection | Holy Shield | 1 | changed | tier 7, max 1 — tooltip changed |
 

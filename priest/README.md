@@ -2,8 +2,8 @@
 
 > Classic: the primary raid healer (Holy with a Discipline dip for Divine Spirit) and a solo and PvP Shadow spec. Forever removes
 > Divine Spirit and Healing Focus as talents, adds Prayer of Mending and Binding Heal to Holy and Penance, Divine Aegis and Renewed Hope
-> to Discipline, makes Shadow Weaving a self-buff and gives every priest Devouring Plague and Shadow Word: Death. Gnomes can now be
-> priests.
+> to Discipline, makes Shadow Weaving a debuff only your own Shadow damage benefits from and gives every priest Devouring Plague and
+> Shadow Word: Death. Gnomes can now be priests.
 
 ## Pick your spec
 
@@ -60,23 +60,29 @@ Differences under 2-3% are within the simulations' noise and assumptions: treat 
 
 ## Roles and specs
 
-| Spec | Raid role | Classic standing | Forever outlook (beta client build 1.60.1.70291) |
+| Spec | Raid role | Classic standing | Forever outlook (beta client build 1.60.1.70425; rankings from the 2026-10-15 races on 70291) |
 |---|---|---|---|
 | Discipline | Raid healer | A dip tree for Inner Focus, Power Infusion and Divine Spirit | A healer of its own: Penance (since 2026-10-08 more mana-efficient than Heal and Greater Heal), Renewed Hope and Divine Aegis around Power Word: Shield. Its raid pick (30/21/0) holds less in the healer lab than Holy's (2026-10-15), and it is the slowest priest leveling page. |
 | Holy | Raid healer | The raid healing spec | Still the throughput healer (Spiritual Guidance, Spiritual Healing, Improved Healing, Litany of Light); its raid pick (21/30/0) takes Penance from Discipline and stops short of Prayer of Mending. The healer lab's best priest healer (2026-10-15); levels about twice as slow as Shadow. |
-| Shadow | Raid DPS | Solo and PvP; rarely raided (debuff slots, mana) | Shadow Weaving is a self-buff, Shadowform halves Shadow mana costs and doubles the crit bonus, and Shadow Word: Death and Devouring Plague add instant damage. The priest's raid damage spec (Smite 17% behind) and fastest leveler by far (2026-10-15). |
+| Shadow | Raid DPS | Solo and PvP; rarely raided (debuff slots, mana) | Shadow Weaving makes the target take up to 10% more Shadow damage from you, Shadowform halves Shadow mana costs and doubles the crit bonus, Shadow Word: Death and Devouring Plague (a 24-second cooldown since 70425) add instant damage, and Dark Inspiration (70425) raises your party's Spirit after Mind Blast and full Mind Flays. The priest's raid damage spec (Smite 17% behind) and fastest leveler by far (2026-10-15). |
 
 Hybrids with their own pages: Smite (Discipline/Holy: Penance, Holy Fire with Power in Light, Smite as the filler; raid), Discipline-Shadow (Shadow's damage talents on the Discipline leveling list; leveling), Holy-Shadow (points in all three trees on the Holy leveling list; leveling).
 
-## Forever headline changes (beta client build 1.60.1.70291, 2026-10-08)
+## Forever headline changes (beta client build 1.60.1.70425, 2026-10-16)
 
-Forever's priest has 53 talents (18 Discipline, 17 Holy, 18 Shadow): 14 are new, none is a Classic talent under a new name, and 8 Classic talents are gone.
+Forever's priest has 52 talents (18 Discipline, 17 Holy, 17 Shadow): 15 are new, none is a Classic talent under a new name, and 10 Classic talents are gone.
 
-- **Removed talents:** Unbreakable Will, Improved Power Word: Fortitude, Divine Spirit, Force of Will (Discipline); Healing Focus, Improved Prayer of Healing, Lightwell (Holy); Improved Vampiric Embrace (Shadow).
-- **New talents:** Power in Light, Twin Disciplines, Holy Precision, Soul Warding, Penance, Renewed Hope, Divine Aegis (Discipline); Twilight Focus, Binding Heal, Litany of Light, Prayer of Mending (Holy); Improved Mind Flay, Devouring Contagion, Early Demise (Shadow).
-- **Moved or reworked:** Meditation 3 ranks (50% of your regeneration while casting); Spiritual Healing 3 ranks (10%); Shadow Weaving a self-buff (up to 5 stacks of 2% Shadow damage for 15 s); Shadowform +10% Shadow damage, half the mana cost of Shadow spells, twice the Shadow crit bonus and 15% less physical damage taken, no healing spells; Improved Mind Flay +20% damage and 10 yd range for a weaker 20% slow; Mental Agility covers Smite, Holy Fire and every instant, Improved Healing Penance and Prayer of Mending; Power Infusion requires Penance, Prayer of Mending Spirit of Redemption, Improved Psychic Scream Blackout.
-- **Spells:** Penance trained at 30/40/50/60 (rank 1 with the talent); Shadow Word: Death at 32/40/48/56 (15 s cooldown; 10% of your health back at you when the target survives); Devouring Plague for every priest (1 min cooldown, heals you for its damage); Divine Spirit trained at 30/40/50/60; Power Word: Shield has a 4 s cooldown; Power Word: Fortitude and Divine Spirit last an hour and their Prayers cover the whole raid; Prayer of Healing heals the target's party. Smite and Holy Fire deal about half their Classic damage. Each race also has two priest spells of its own (Undead: Dark Sacrifice, Touch of Weakness; Dwarf: Chastise, Desperate Prayer; and so on); the pages are race-neutral and leave them out.
+- **Removed talents:** Unbreakable Will, Improved Power Word: Fortitude, Divine Spirit, Force of Will (Discipline); Healing Focus, Improved Prayer of Healing, Lightwell (Holy); Improved Vampiric Embrace, Improved Fade and Shadow Affinity (Shadow; the last two in 70425).
+- **New talents:** Power in Light, Twin Disciplines, Holy Precision, Soul Warding, Penance, Renewed Hope, Divine Aegis (Discipline); Twilight Focus, Binding Heal, Litany of Light, Prayer of Mending (Holy); Improved Mind Flay, Devouring Contagion, Early Demise, Dark Inspiration (Shadow; Dark Inspiration since 70425, in Improved Fade's place: your Mind Blast and full Mind Flays give you and your party 3-15% Spirit for 10 seconds).
+- **Moved or reworked:** Meditation 3 ranks (50% of your regeneration while casting); Spiritual Healing 3 ranks (10%); Shadow Weaving a debuff (up to 5 stacks: the target takes 2% more Shadow damage from you each, 15 s; the tooltip said a self-buff until 70425); Mental Strength 5 ranks at tier 2 (2-10% Intellect since 70425; 15% at tier 4 before); Improved Power Word: Shield to tier 3 and Improved Mind Blast to tier 2 (70425); Divine Aegis only from non-periodic critical heals, its shield capped at 1,200 (70425 tooltip); Power in Light also counts your Shadow Word: Pain (70425); Silent Resolve lowers the threat of all your spells (70425); Devouring Contagion spreads to 2 enemies; Shadowform +10% Shadow damage, half the mana cost of Shadow spells, twice the Shadow crit bonus and 15% less physical damage taken, no healing spells; Improved Mind Flay (since 70425) makes each Mind Flay tick deal 10/20% more than the one before (before: +20% damage and 10 yd range); Mental Agility covers Smite, Holy Fire and every instant, Improved Healing Penance and Prayer of Mending; Power Infusion requires Penance, Prayer of Mending Spirit of Redemption, Improved Psychic Scream Blackout.
+- **Spells:** Penance trained at 30/40/50/60 (rank 1 with the talent); Shadow Word: Death at 32/40/48/56 (18 s cooldown since 70425, 15 s before; 10% of your health back at you when the target survives); Devouring Plague for every priest (24 s cooldown since 70425, 1 min before; heals you for its damage); Vampiric Embrace has a 30 s cooldown (1 min before 70425) and cannot be resisted; Divine Spirit trained at 30/40/50/60; Power Word: Shield has a 4 s cooldown; Power Word: Fortitude and Divine Spirit last an hour and their Prayers cover the whole raid; Prayer of Healing heals the target's party. Smite and Holy Fire deal about half their Classic damage. Each race also has two priest spells of its own (Undead: Dark Sacrifice, Touch of Weakness; Dwarf: Chastise, Desperate Prayer; and so on); the pages are race-neutral and leave them out.
 - **Beta notes (to 2026-10-08):** 2026-10-01: Inner Focus no longer adds crit to periodic spells; Devouring Plague can crit; Early Demise works only below 20% health; spell ranks far below your level get less from spell damage and healing (no formula published; this project assumes TBC's). Build 70291 (2026-10-08): Penance deals and heals less but is more mana-efficient than Heal and Greater Heal; Renew can crit; Power Word: Shield can overwrite a shield on a target without Weakened Soul; Smite ranks 1-4 and the low ranks of Lesser Heal and Heal were retuned so that each new rank is an upgrade.
+- **Beta notes (16 Oct, build 70425):** Devouring Plague 24 s cooldown (was 1 min), Shadow Word: Death 18 s (the notes say "was 12"; the
+  70291 spellbook read 15), Vampiric Embrace 30 s and unresistable; Improved Fade and Shadow Affinity removed, Dark Inspiration new;
+  Improved Mind Flay ramps each tick by 10/20%; Shadow Weaving's tooltip now says the target takes more damage from you; Mental Strength to
+  row 2 at 2-10%; Improved Power Word: Shield to row 3; Twin Disciplines now benefits Shadow Word: Death, Mind Flay, Starshards and Penance;
+  Inner Focus is used by one spell only, even one queued into Penance; Shadow Word: Death gets Shadowform's crit damage bonus; a high-rank
+  Renew no longer blocks another priest's; Holy Fire rank 5's periodic damage no longer exceeds rank 6's; wands need 0.5 s standing still.
 
 ## Research files
 

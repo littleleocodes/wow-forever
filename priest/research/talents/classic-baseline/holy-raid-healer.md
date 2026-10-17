@@ -81,7 +81,7 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 |---|---|---|---|---|
 | Discipline | Unbreakable Will | 5 | **REMOVED** | removed from Classic |
 | Discipline | Improved Power Word: Fortitude | 2 | **REMOVED** | removed from Classic |
-| Discipline | Silent Resolve | 4 | changed | tier 2, max 3 — max rank 5 → 3; tooltip changed |
+| Discipline | Silent Resolve | 4 | changed | tier 2, max 3 — max rank 5 → 3; tooltip changed; tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3) |
 | Discipline | Inner Focus | 1 | changed | tier 3, max 1 — tooltip changed |
 | Discipline | Meditation | 3 | changed | tier 3, max 3 — tooltip changed; was Discipline row 3, col 3 |
 | Discipline | Mental Agility | 5 | changed | tier 3, max 3 — max rank 5 → 3; tooltip changed; was Discipline row 4, col 2 |

@@ -14,7 +14,7 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | [Frost — Winter's Chill (raid support)](builds/frost-winters-chill-raid.md) | 21/0/30 | DPS | [frost-winters-chill-raid](../talents/classic-baseline/frost-winters-chill-raid.md) |
 | [Frost — Fingers of Frost / Ice Lance / Shatter (simulator winner adopted 2026-09-28)](builds/frost-fingers-of-frost-raid.md) | 22/0/29 | DPS | — |
 | [Fire — Ignite / Heating Up (simulator winner adopted 2026-09-28)](builds/fire-raid.md) | 12/34/5 | DPS | [fire-raid](../talents/classic-baseline/fire-raid.md) |
-| [Frostfire — Frostfire Bolt / Heating Up (Fire/Frost hybrid, raid)](builds/frostfire-raid.md) | 4/31/16 | DPS | [fire-raid](../talents/classic-baseline/fire-raid.md) |
+| [Frostfire — Frostfire Bolt (Fire/Frost hybrid, raid)](builds/frostfire-raid.md) | 4/32/15 | DPS | [fire-raid](../talents/classic-baseline/fire-raid.md) |
 | [Arcane — Arcane Blast (raid)](builds/arcane-blast-raid.md) | 35/11/5 | DPS | — |
 | [Frostfire — Fingers of Frost / Ice Lance (user build)](builds/frostfire-fingers-of-frost-raid.md) | 0/29/22 | DPS | — |
 
@@ -33,7 +33,7 @@ Optimizer builds (the stats model's optimum per use-case, see the Optimizer sect
 | [opt-frost-raid-raid-dps-extwc](builds/opt-frost-raid-raid-dps-extwc.md) | 1/13/37 | raid-dps-extwc |
 | [opt-frost-raid-raid-dps](builds/opt-frost-raid-raid-dps.md) | 22/0/29 | raid-dps |
 | [opt-frost-raid-parse](builds/opt-frost-raid-parse.md) | 21/0/30 | parse |
-| [opt-fire-raid-raid-dps](builds/opt-fire-raid-raid-dps.md) | 14/32/5 | raid-dps |
+| [opt-fire-raid-raid-dps](builds/opt-fire-raid-raid-dps.md) | 13/33/5 | raid-dps |
 | [opt-fire-raid-parse](builds/opt-fire-raid-parse.md) | 13/33/5 | parse |
 
 Classic Era reference builds: [frost-arcane-power-raid](../talents/classic-baseline/frost-arcane-power-raid.md), [frost-winters-chill-raid](../talents/classic-baseline/frost-winters-chill-raid.md), [fire-raid](../talents/classic-baseline/fire-raid.md).

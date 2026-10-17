@@ -86,10 +86,10 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Arms | Anger Management | 1 | changed | tier 3, max 1 — tooltip changed |
 | Fury | Cruelty | 5 | changed | tier 1, max 5 — tooltip changed |
 | Protection | Shield Specialization | 5 | changed | tier 1, max 5 — tooltip changed |
-| Protection | Anticipation | 5 | changed | tier 2, max 5 — tooltip changed; moved in build 1.60.1.70291: was row 1, col 3 |
-| Protection | Improved Bloodrage | 2 | changed | tier 1, max 2 — tooltip changed; moved in build 1.60.1.70291: was row 2, col 1 |
+| Protection | Anticipation | 5 | changed | tier 2, max 5 — tooltip changed; moved in build 1.60.1.70425: was row 1, col 3 |
+| Protection | Improved Bloodrage | 2 | changed | tier 1, max 2 — tooltip changed; moved in build 1.60.1.70425: was row 2, col 1 |
 | Protection | Toughness | 5 | unknown | not found in Forever data |
-| Protection | Last Stand | 1 | changed | tier 3, max 1 — tooltip changed; prerequisite changed in build 1.60.1.70291: was improved bloodrage |
+| Protection | Last Stand | 1 | changed | tier 3, max 1 — tooltip changed; prerequisite changed in build 1.60.1.70425: was improved bloodrage |
 | Protection | Improved Shield Block | 1 | **REMOVED** | removed from Classic |
 | Protection | Defiance | 5 | changed | tier 3, max 3 — max rank 5 → 3; tooltip changed |
 | Protection | Improved Sunder Armor | 3 | changed | tier 4, max 3 — tooltip changed |

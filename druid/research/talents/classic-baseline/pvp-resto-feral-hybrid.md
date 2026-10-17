@@ -81,7 +81,7 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Balance | Natural Shapeshifter | 3 | moved-tree | now in Restoration, tier 2 |
 | Balance | Improved Thorns | 2 | **REMOVED** | removed from Classic |
 | Balance | Nature's Reach | 2 | changed | tier 2, max 2 — tooltip changed; was Balance row 3, col 4 |
-| Restoration | Furor | 5 | changed | tier 1, max 5 — tooltip changed; tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3, 4, 5) |
+| Restoration | Furor | 5 | changed | tier 1, max 5 — tooltip changed; tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3, 4, 5) |
 | Restoration | Improved Healing Touch | 5 | **REMOVED** | removed from Classic |
 | Restoration | Nature's Focus | 5 | changed | tier 1, max 5 — tooltip changed; was Restoration row 2, col 2 |
 | Restoration | Reflection | 3 | changed | tier 3, max 3 — tooltip changed |

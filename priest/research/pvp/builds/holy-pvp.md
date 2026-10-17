@@ -7,7 +7,7 @@
 | **Build** | 0/35/16 (Discipline / Holy / Shadow) |
 | **Role** | HEALER — PvP |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70291 (2026-10-08 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -48,7 +48,7 @@ The Holy PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP 
 | **Shadow Reach** | 2/2 | changed | Increases the range of your offensive Shadow spells by 20%. |
 | **Improved Psychic Scream** | 2/2 | moved | Reduces the cooldown of your Psychic Scream spell by 4 sec. |
 | **Mind Flay** | 1/1 | changed | Assault the target's mind with Shadow energy, causing 63 Shadow damage over 3 sec and slowing their movement speed by 50%. |
-| **Improved Mind Flay** | 2/2 | **NEW** | Your Mind Flay now deals 20% more damage, gains 10 yards increased range, but slows the target's movement speed by 20%. |
+| **Improved Mind Flay** | 2/2 | **NEW** | Each instance of damage of Mind Flay deals 20% more damage than its previous instance of damage. |
 | **Vampiric Embrace** | 1/1 | changed | Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow spell damage you deal for 30 sec. |
 
 ## Core talents (priority order)

@@ -59,7 +59,7 @@ Differences under 2-3% are within the simulations' noise and assumptions: treat 
 
 ## Roles and specs
 
-| Spec | Raid role | Classic standing | Forever outlook (beta client build 1.60.1.70291) |
+| Spec | Raid role | Classic standing | Forever outlook (beta client build 1.60.1.70425; rankings from the 2026-10-15 races on 70291) |
 |---|---|---|---|
 | Assassination | Raid DPS | A dip tree: Malice, Lethality and Seal Fate for Combat and PvP builds | A Seal Fate dagger spec: Backstab with Puncturing Wounds builds two points at a time, Cold Blood and Eviscerate at 4 or more points spend them. Blizzard built the tree around Mutilate and Venom, but neither is in the simulator's best build: a launch question. About 4% behind Combat in a full raid (2026-10-15). |
 | Combat | Raid DPS (the pick) | The raid spec, swords or daggers | Still the raid spec: Hack and Slash gives swords and axes extra attacks and daggers crit, Flawless Execution makes Eviscerate cheaper. The daggers (Backstab) build leads the rogue raid ranking, the swords builds about 4% behind; Combat is also the second-fastest rogue leveler in the fight lab (2026-10-15). |
@@ -67,7 +67,7 @@ Differences under 2-3% are within the simulations' noise and assumptions: treat 
 
 Hybrids with their own pages: Daggers (split) (Assassination and Combat dagger talents; leveling and raid), Combat-Subtlety (Subtlety's openers, Ghostly Strike and Hemorrhage with Combat's defenses; leveling, the fastest rogue leveler in the fight lab on 2026-10-15).
 
-## Forever headline changes (beta client build 1.60.1.70291, 2026-10-08)
+## Forever headline changes (beta client build 1.60.1.70425, 2026-10-16)
 
 Forever's rogue has 53 talents (17 Assassination, 17 Combat, 19 Subtlety): 10 are new, none is a Classic talent under a new name, and 8 Classic talents are gone.
 
@@ -76,6 +76,8 @@ Forever's rogue has 53 talents (17 Assassination, 17 Combat, 19 Subtlety): 10 ar
 - **Moved or reworked:** Improved Eviscerate moves to Combat and Improved Gouge to Assassination; Cold Blood and Premeditation are 16-point talents; Seal Fate no longer needs Cold Blood. Deflection, Precision and Master of Deception have 3 ranks, Opportunity 2, Improved Kidney Shot 2, Vigor 2. Malice and Precision cover poisons; Lethality is +20% crit damage at 5 ranks; Improved Expose Armor makes Expose Armor 10 energy cheaper and hands back 2 combo points; Weapon Expertise takes 2% off your chance to be dodged or parried; Dual Wield Specialization is +25% off-hand damage; Dirty Deeds lets Garrote be used from the front.
 - **Spells:** Hemorrhage deals 100% weapon damage (145% with a dagger) and makes the target take 15% more of your Rupture; Ghostly Strike deals 180% with a dagger; Rupture hits about 40% and Instant and Deadly Poison about 30% less than in Classic, the poisons with more charges; Expose Armor removes 450 armor a point; Riposte disarms for 6 seconds; Sap no longer breaks Stealth.
 - **Beta notes (to 2026-10-08):** poisons go on a weapon together with a sharpening stone or weightstone, rogues can use one-handed axes (Blizzard's rogue deep dive, 2026-10-07).
+- **Beta notes (16 Oct, build 70425):** no talent or spell changed; poisons no longer trigger against targets that attack you; Sap no longer
+  triggers weapon procs; Cold Blood is used up when Mutilate crits; swapping specializations no longer keeps your energy full.
 
 ## Research files
 

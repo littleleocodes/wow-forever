@@ -7,7 +7,7 @@
 | **Build** | 11/40/0 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70291 (2026-10-08 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -34,7 +34,7 @@ The Marksmanship build the machine-learning talent search found on the training 
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
 | **Improved Arcane Shot** | 4/5 | changed | Reduces the cooldown of your Arcane Shot by 1.2 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot. |
 | **Lone Wolf** | 1/1 | **NEW** | You deal 20% increased damage with all attacks while you do not have an active pet. |
-| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party members within 45 yds by 30. |
+| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 30. |
 | **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
 | **Barrage** | 3/3 | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 10%. |
 | **Ranged Weapon Specialization** | 5/5 | unchanged | Increases the damage you deal with ranged weapons by 5%. |
@@ -45,18 +45,18 @@ The Marksmanship build the machine-learning talent search found on the training 
 
 ## Rank among our builds and the community simulator's
 
-**3 of 8** for `mm-lonewolf-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 8** for `mm-lonewolf-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b7083fa); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) | ours: optimizer | 5/38/8 | 462 | +0.0% | 855 | -4.2% | 92 s |
-| 2 | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) | ours: hand draft | 5/41/5 | 456 | -1.3% | 893 | +0.0% | 97 s |
-| 3 | **[`marksmanship-ml-raid`](marksmanship-ml-raid.md)** | ours: derived (ML search) | 11/40/0 | 442 | -4.2% | 813 | -8.9% | 90 s |
-| 4 | [`marksmanship-ml-parse`](marksmanship-ml-parse.md) | ours: derived (ML search) | 7/44/0 | 440 | -4.7% | 852 | -4.6% | 92 s |
-| 5 | *Marksmanship* | community simulator | - | 358 | -22.5% | 689 | -22.8% | 92 s |
-| 6 | *Marksmanship 0/39/12* | community simulator | - | 356 | -22.9% | 668 | -25.1% | 87 s |
-| 7 | *Survival 0/15/36* | community simulator | - | 318 | -31.1% | 552 | -38.2% | 85 s |
-| 8 | *Beast Mastery 35/16/0* | community simulator | - | 313 | -32.2% | 542 | -39.3% | 54 s |
+| 1 | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) | ours: optimizer | 5/38/8 | 463 | +0.0% | 858 | -4.3% | 92 s |
+| 2 | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) | ours: hand draft | 5/41/5 | 457 | -1.2% | 897 | +0.0% | 97 s |
+| 3 | **[`marksmanship-ml-raid`](marksmanship-ml-raid.md)** | ours: derived (ML search) | 11/40/0 | 444 | -4.0% | 815 | -9.1% | 89 s |
+| 4 | [`marksmanship-ml-parse`](marksmanship-ml-parse.md) | ours: derived (ML search) | 7/44/0 | 441 | -4.7% | 855 | -4.6% | 92 s |
+| 5 | *Marksmanship* | community simulator | - | 359 | -22.5% | 692 | -22.9% | 92 s |
+| 6 | *Marksmanship 0/39/12* | community simulator | - | 359 | -22.5% | 672 | -25.0% | 90 s |
+| 7 | *Survival 0/15/36* | community simulator | - | 323 | -30.2% | 557 | -37.9% | 75 s |
+| 8 | *Beast Mastery 35/16/0* | community simulator | - | 315 | -32.0% | 544 | -39.4% | 52 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -70,7 +70,7 @@ The Marksmanship build the machine-learning talent search found on the training 
   7. move down below 'cast Arcane Shot': if time to the next auto attack > 0.5s: cast Aimed Shot (+0.4%, pass 6)
   8. only with 10s or more of the fight left: if auraIsInactive: cast Summon Hawk (+0.2%, pass 6)
   9. drop: if time to the next auto attack > 0.5s: cast Multi-Shot + only above 10% mana: if time to the next auto attack > 0.5s: cast Aimed Shot (+0.2%, pass 7)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 11 passes, the last 2026-10-09, 12 changes to the base rotation; third-seed check: mm-lone-wolf-raid 819 -> 896 DPS (+9.4%), sim preset: Marksmanship 629 -> 692 DPS (+9.9%), opt-mm-lonewolf-raid-raid-dps 793 -> 859 DPS (+8.2%), marksmanship-ml-parse 789 -> 855 DPS (+8.4%), marksmanship-ml-raid 756 -> 815 DPS (+7.8%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 12 passes, the last 2026-10-16, 12 changes to the base rotation; third-seed check: mm-lone-wolf-raid 819 -> 896 DPS (+9.4%), sim preset: Marksmanship 629 -> 692 DPS (+9.9%), opt-mm-lonewolf-raid-raid-dps 793 -> 859 DPS (+8.2%), marksmanship-ml-parse 789 -> 855 DPS (+8.4%), marksmanship-ml-raid 756 -> 815 DPS (+7.8%)):
   1. drop: if time to the next auto attack > 1s: cast Aimed Shot (+1.7%, pass 1)
   2. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.5%, pass 1)
   3. drop 'time to the next auto attack > 1s' from the condition: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+0.3%, pass 1)

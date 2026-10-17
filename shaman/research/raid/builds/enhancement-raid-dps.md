@@ -7,7 +7,7 @@
 | **Build** | 11/31/9 (Elemental / Enhancement / Restoration) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70291 (2026-10-08 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 | **Based on** | Classic baseline `enhancement-raid-support` |
 
 ## Summary
@@ -20,22 +20,22 @@ Allocation adopted on 2026-09-27 from `opt-enhancement-dps-raid-dps`, the best b
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Convection** | 5/5 | changed | Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 10%. |
 | **Concussion** | 2/5 | changed | Increases the damage done by your Lightning Bolt, Chain Lightning, and Earth Shock spells by 2%. |
-| **Elemental Devastation** | 3/3 | changed | Your offensive spell critical strikes will increase your chance to get a critical strike with melee attacks by 9% for 10 sec. |
+| **Convection** | 5/5 | changed | Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 10%. |
+| **Elemental Devastation** | 3/3 | changed | Your Critical Strikes with direct damage spells increase your chance to get a Critical Strike with melee attacks by 9% for 10 sec. |
 | **Elemental Focus** | 1/1 | moved | Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 
 ### Enhancement (31)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Thundering Strikes** | 5/5 | changed | Improves your chance to get a critical strike with all spells and attacks by 5%. |
 | **Ancestral Knowledge** | 5/5 | changed | Increases your Intellect by 10%. |
+| **Thundering Strikes** | 5/5 | changed | Improves your chance to get a critical strike with all spells and attacks by 5%. |
 | **Mental Dexterity** | 3/3 | **NEW** | Increases your Attack Power by an amount equal to 100% of your Intellect. |
-| **Shamanistic Focus** | 1/1 | **NEW** | Reduces the mana cost of your Shock and Lightning Shield spells by 45%. |
 | **Elemental Weapons** | 3/3 | moved | Increases the melee attack power bonus of your Rockbiter Weapon by 20%, your Windfury Weapon effect by 40% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by 15%. |
-| **Stormstrike** | 1/1 | changed | Instantly strike for normal weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec. |
+| **Shamanistic Focus** | 1/1 | **NEW** | Reduces the mana cost of your Shock and Lightning Shield spells by 45%. |
 | **Flurry** | 5/5 | changed | Increases your attack speed by 25% for your next 3 swings after dealing a melee critical strike. |
+| **Stormstrike** | 1/1 | changed | Instantly strike for normal weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec. |
 | **Mental Quickness** | 2/2 | **NEW** | Increases your spell damage and healing by up to 30% of your Intellect. |
 | **Maelstrom Weapon** | 5/5 | **NEW** | When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 20%. Stacks up to 5 times. Lasts 30 sec. |
 | **Rage of the Farseer** | 1/1 | **NEW** | Increases your attack speed by 30% for 25 sec. |
@@ -44,8 +44,8 @@ Allocation adopted on 2026-09-27 from `opt-enhancement-dps-raid-dps`, the best b
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Totemic Focus** | 5/5 | changed | Reduces the Mana cost of your totems and any spells that summon or move them by 25%. |
-| **Tidal Focus** | 4/5 | changed | Reduces the Mana cost of your healing spells by 4% and improves your chance to hit by 4%. |
+| **Tidal Focus** | 5/5 | changed | Reduces the Mana cost of your healing spells by 5% and improves your chance to hit by 5%. |
+| **Totemic Focus** | 4/5 | changed | Reduces the Mana cost of your totems and any spells that summon or move them by 20%. |
 
 ## Core talents (priority order)
 
@@ -129,6 +129,7 @@ Damage by ability:
 - Windfury Totem can no longer be improved — the melee-group support reason for bringing an Enhancement shaman is gone; the spec must stand on its own DPS.
 - Beta client: Tidal Mastery is a tier-4 talent now, so the Restoration dip is Totemic Focus 5 (tier 1) plus Tidal Focus 5.
 - 2026-09-27 scenario audit: Improved Stormstrike 2 -> Elemental Devastation 2. Improved Stormstrike resets Stormstrike when you dodge or parry and adds regen while casting: behind a raid boss you are never attacked, and the simulator measures 0.0%. Elemental Devastation turns Flame Shock and Earth Shock crits into +9% melee crit for 10 s (simulator +3.1% on the optimizer build).
+- 2026-10-16 (repair_builds.py, client build 70425 trees): 11/31/9 -> 11/31/9; +1 Tidal Focus (tier gating for Totemic Focus); -1 Totemic Focus (over 51) (refill: the enhancement-dps model, raid-dps).
 
 ## Open questions (verify in the live game)
 

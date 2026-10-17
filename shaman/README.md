@@ -1,9 +1,9 @@
 # Shaman
 
 > Classic's Horde raid healer, with Elemental as a late-game caster and Enhancement as a Windfury support hybrid. Forever
-> gives Elemental Lava Burst and Lightning Overload (and removes Elemental Mastery), turns Enhancement into a real melee spec
-> (Stormstrike, Maelstrom Weapon, Rage of the Farseer) and gives Restoration Riptide and Water Shield. Playable by Dwarves,
-> Orcs, Taurens, Trolls and Skyborne.
+> gives Elemental Lava Burst and Lightning Overload (and, since client 70425, a reworked Elemental Mastery as its 31-point talent),
+> turns Enhancement into a real melee spec (Stormstrike, Maelstrom Weapon, Rage of the Farseer) and gives Restoration Riptide and
+> Water Shield. Playable by Dwarves, Orcs, Taurens, Trolls and Skyborne.
 
 ## Pick your spec
 
@@ -58,25 +58,32 @@ Differences under 2-3% are within the simulations' noise and assumptions: treat 
 
 ## Roles and specs
 
-| Spec | Raid role | Classic standing | Forever outlook (beta client build 1.60.1.70291) |
+| Spec | Raid role | Classic standing | Forever outlook (beta client build 1.60.1.70425; rankings from the 2026-10-15 races on 70291) |
 |---|---|---|---|
-| Elemental | Ranged caster DPS | Viable only with AQ40/Naxxramas gear | Lightning Bolt around Flame Shock, with Clearcasting spent on Chain Lightning; no Elemental Mastery, so no burst window. Far behind Enhancement in a full raid (about 29%, 2026-10-15); the raid pick takes Enhancement's crit and Intellect talents over Lava Burst. Spells need 17% hit to never miss a raid boss (client tooltip). |
+| Elemental | Ranged caster DPS | Viable only with AQ40/Naxxramas gear | Lightning Bolt around Flame Shock, with Clearcasting spent on Chain Lightning; since client 70425 Elemental Mastery is back as the 31-point talent (every 3 minutes, 15 seconds of 0.5-second faster Lightning Bolts and Lava Bursts and Chain Lightning without a cooldown) and Lava Burst moved to 21 points. Far behind Enhancement in a full raid (about 29%, 2026-10-15); the raid pick takes Enhancement's crit and Intellect talents over Lava Burst. Spells need 17% hit to never miss a raid boss (client tooltip). |
 | Enhancement | Melee DPS | Windfury/Strength of Earth support build | A real melee spec: a slow two-hander with Windfury Weapon, Stormstrike, instant free Lightning Bolts from 5 Maelstrom Weapon stacks, Fire Nova from your Fire totem and Rage of the Farseer. The best shaman in a full raid and the fastest shaman leveler in the fight lab (2026-10-15); it runs short of mana. |
-| Restoration | Raid healer | The shaman raid role | The same role with Riptide, Water Shield (free mana globes), Mana Tide Totem at 16 points and Mindfulness (half your mana regeneration while casting). In the healer lab Healing Wave with Healing Way does about three quarters of the healing. |
+| Restoration | Raid healer | The shaman raid role | The same role with Riptide, Water Shield (free mana globes; since 70425 also from your damage-spell crits), Mana Tide Totem at 16 points and Mindfulness (half your mana regeneration while casting). In the healer lab Healing Wave with Healing Way does about three quarters of the healing. |
 
 Hybrids with their own pages: Elemental-Enhancement (raid: Enhancement's melee list with Elemental's shock and Fire Nova talents, about 5% behind Enhancement on 2026-10-15; leveling: a Lightning Bolt caster that dips Enhancement for Mental Quickness and Mental Dexterity).
 
-## Forever headline changes (beta client build 1.60.1.70291, 2026-10-08)
+## Forever headline changes (beta client build 1.60.1.70425, 2026-10-16)
 
 Forever's shaman has 50 talents (16 Elemental, 18 Enhancement, 16 Restoration): 12 are new, 5 are Classic talents under a new name, and 8 Classic talents are gone.
 
-- **Baseline now:** (Blizzard's class deep dive, 2026-10-07) totems cost a 1-second global cooldown, buff totems last 5 minutes and reach 30 yards, and Call of the Elements drops a saved set of four totems in one cast; Totemic Projection moves all your totems. Weapon imbues last 60 minutes and stack with sharpening stones, weightstones and wizard oils. Fire Nova Totem is gone: Fire Nova is a spell that erupts within 10 yards of your active Fire totem. Windfury Totem does nothing for a shaman with Windfury Weapon and does not stack with Grace of Air Totem.
-- **Removed talents:** Elemental Mastery, Shield Specialization, Nature's Guidance, Totemic Mastery; Enhancing Totems, Two-Handed Axes and Maces, Weapon Mastery and Improved Weapon Totems are baseline now.
-- **New talents:** Lightning Overload, Earthbound and Lava Burst (the 31-point talent: 20% more damage while your Flame Shock is on the target) in Elemental; Mental Dexterity, Shamanistic Focus (shocks and Lightning Shield 45% cheaper), Mental Quickness, Improved Stormstrike, Maelstrom Weapon and Rage of the Farseer (the 31-point talent) in Enhancement; Mindfulness, Water Shield and Riptide (the 31-point talent) in Restoration.
-- **Renamed:** Lightning Mastery is Elemental Alacrity (0.5 seconds off Lightning Bolt, Chain Lightning and Lava Burst), Improved Fire Totems is Improved Fire Nova, Storm Reach is Elemental Reach, Parry is Spirit Weapons, Healing Grace is Natural Grace.
-- **Moved or reworked:** Stormstrike, Call of Thunder (1 rank) and Mana Tide Totem are the 16-point talents; Elemental Fury has 5 ranks at tier 6; Earth's Grasp moved to Enhancement; Thundering Strikes adds crit to spells too, Ancestral Knowledge gives Intellect, Tidal Focus hit for all spells and attacks; Flurry needs Mental Dexterity; Concussion no longer covers Flame Shock or Frost Shock, while Call of Flame covers Flame Shock, Fire Nova and Lava Burst.
-- **Spells:** at 60, Lightning Bolt 189-211 (2.5-second cast; Classic Era 428-476), Chain Lightning 119-133 (2 seconds, 6-second cooldown), Lava Burst 192-248 at its top rank, Earth Shock 293-309, Flame Shock 166 plus 176 over 12 seconds, Fire Nova 413-459 (10-second cooldown), Healing Wave 1,508-1,722, Riptide 799-883 plus 805 over 15 seconds.
+- **Baseline now:** (Blizzard's class deep dive, 2026-10-07) totems cost a 1-second global cooldown, buff totems last 5 minutes and reach 30 yards, and Call of the Elements drops a saved set of four totems in one cast; Totemic Projection moves all your totems. Weapon imbues last 60 minutes and stack with sharpening stones, weightstones and wizard oils. Fire Nova Totem is gone: Fire Nova is a spell that erupts within 10 yards of your active Fire totem. Windfury Totem does nothing for a shaman with Windfury Weapon. Since client 70425 Grace of Air, Strength of Earth, Windfury and Flametongue Totem reach the whole raid, and Grace of Air stacks with Windfury and Flametongue Totem (those two stay exclusive).
+- **Removed talents:** Call of Thunder (in 70425), Shield Specialization, Nature's Guidance, Totemic Mastery; Enhancing Totems, Two-Handed Axes and Maces, Weapon Mastery and Improved Weapon Totems are baseline now.
+- **New talents:** Lightning Overload, Earthbound and Lava Burst (the 21-point talent since 70425, 31 before: 20% more damage while your Flame Shock is on the target) in Elemental; Mental Dexterity, Shamanistic Focus (shocks and Lightning Shield 45% cheaper), Mental Quickness, Improved Stormstrike, Maelstrom Weapon and Rage of the Farseer (the 31-point talent) in Enhancement; Mindfulness, Water Shield and Riptide (the 31-point talent) in Restoration.
+- **Renamed:** Lightning Mastery is Elemental Alacrity (0.5 seconds off Lightning Bolt, Chain Lightning and Lava Burst), Improved Fire Totems is Trial by Fire (Improved Fire Nova until build 70425), Storm Reach is Elemental Reach, Parry is Spirit Weapons, Healing Grace is Natural Grace.
+- **Moved or reworked:** Elemental Mastery is the 31-point talent again (client 70425): 15 seconds of Lightning Bolt and Lava Burst 0.5 seconds faster and Chain Lightning without a cooldown, 3-minute cooldown, Lava Burst required; Stormstrike, Earthbound and Mana Tide Totem are the 16-point talents (Call of Thunder until 70425); Lightning Overload needs Elemental Alacrity and Elemental Fury needs Lightning Overload; Call of Flame also lengthens Flame Shock by 3/6/9 seconds; Trial by Fire also lengthens Magma Totem by 10/20 seconds; Elemental Reach also cuts Totemic Projection's cooldown by 10/20 seconds; Tidal Focus and Totemic Focus swapped rows (ten Elemental and Restoration talents moved in 70425); Elemental Fury has 5 ranks at tier 6; Earth's Grasp moved to Enhancement; Thundering Strikes adds crit to spells too, Ancestral Knowledge gives Intellect, Tidal Focus hit for all spells and attacks; Flurry needs Mental Dexterity; Concussion no longer covers Flame Shock or Frost Shock, while Call of Flame covers Flame Shock, Fire Nova and Lava Burst.
+- **Spells:** at 60, Lightning Bolt 189-211 (2.5-second cast; Classic Era 428-476), Chain Lightning 119-133 (2 seconds, 6-second cooldown, 315 mana since 70425, was 485), Lava Burst 192-248 at rank 4 (a fourth rank since 70425: 30, 40, 50, 60), Earth Shock 293-309, Flame Shock 166 plus 176 over 12 seconds, Fire Nova 232-258 (10-second cooldown, 375 mana, 14.3% of spell power; 413-459, 520 mana and 21.4% before 70425), Stormstrike 8% of base mana (125 mana before 70425), Mana Tide Totem a rank at 38, Healing Wave 1,508-1,722, Riptide 799-883 plus 805 over 15 seconds.
 - **Beta notes (to 2026-10-08):** Flametongue Totem no longer stacks with Flametongue Weapon or Windfury Totem; Fire Nova no longer triggers Elemental Focus; Riptide can crit; Water Shield's tooltip lost a 15-second cooldown it never had; Lightning Bolt and Lava Burst low ranks were retuned so every new rank is an upgrade.
+- **Beta notes (16 Oct, build 70425):** Elemental Mastery back as the 31-point talent, Lava Burst the 21-point talent with a rank 4 and no
+  prerequisite, Call of Thunder removed; Water Shield triggers from any spell crit of yours (was heals only); Chain Lightning about 35%
+  cheaper; Fire Nova's base damage, cost and coefficient (0.143, was 0.214) cut; Stormstrike costs 8% of base mana and its debuff is no
+  longer used up by spells that miss or by other players and pets; Clearcasting is no longer used up by Lightning Overload copies, nor by
+  the Fire Nova that triggered it; Grace of Air, Strength of Earth, Windfury and Flametongue Totem are raid-wide (Flametongue and Windfury
+  Totem affect players only); Grace of Air no longer exclusive with Windfury and Flametongue Totem; Restorative Totems covers all of
+  Healing Stream; Mana Tide Totem gets a rank at 38; Grounding Totem is destroyed after redirecting a spell.
 
 ## Research files
 

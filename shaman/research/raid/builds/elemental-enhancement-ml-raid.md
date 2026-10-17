@@ -1,13 +1,13 @@
-# Elemental-Enhancement — Raid (machine-learning search) — 17/26/8
+# Elemental-Enhancement — Raid (machine-learning search) — 15/24/12
 
 *[Shaman](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 17/26/8 (Elemental / Enhancement / Restoration) |
+| **Build** | 15/24/12 (Elemental / Enhancement / Restoration) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70291 (2026-10-08 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -15,38 +15,37 @@ The Elemental-Enhancement build the machine-learning talent search found in a fu
 
 ## Point allocation
 
-### Elemental (17)
+### Elemental (15)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Convection** | 5/5 | changed | Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 10%. |
+| **Call of Flame** | 3/3 | changed | Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 15%, as well as increases the duration of your Flame Shock spell by 9 sec. |
+| **Elemental Devastation** | 3/3 | changed | Your Critical Strikes with direct damage spells increase your chance to get a Critical Strike with melee attacks by 9% for 10 sec. |
 | **Reverberation** | 3/5 | changed | Reduces the cooldown of your Shock spells by 0.6 sec. |
-| **Call of Flame** | 3/3 | changed | Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 15%. |
-| **Elemental Devastation** | 3/3 | changed | Your offensive spell critical strikes will increase your chance to get a critical strike with melee attacks by 9% for 10 sec. |
 | **Elemental Focus** | 1/1 | moved | Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
-| **Improved Fire Nova** | 2/2 | **NEW** | Increases the damage done by your Fire Nova spell by 20% and reduces its cooldown by 4 sec. |
 
-### Enhancement (26)
+### Enhancement (24)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Thundering Strikes** | 5/5 | changed | Improves your chance to get a critical strike with all spells and attacks by 5%. |
 | **Ancestral Knowledge** | 5/5 | changed | Increases your Intellect by 10%. |
+| **Thundering Strikes** | 5/5 | changed | Improves your chance to get a critical strike with all spells and attacks by 5%. |
 | **Mental Dexterity** | 3/3 | **NEW** | Increases your Attack Power by an amount equal to 100% of your Intellect. |
-| **Elemental Weapons** | 2/3 | moved | Increases the melee attack power bonus of your Rockbiter Weapon by 13%, your Windfury Weapon effect by 27% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by 10%. |
+| **Elemental Weapons** | 1/3 | moved | Increases the melee attack power bonus of your Rockbiter Weapon by 7%, your Windfury Weapon effect by 13% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by 5%. |
 | **Shamanistic Focus** | 1/1 | **NEW** | Reduces the mana cost of your Shock and Lightning Shield spells by 45%. |
 | **Flurry** | 5/5 | changed | Increases your attack speed by 25% for your next 3 swings after dealing a melee critical strike. |
 | **Stormstrike** | 1/1 | changed | Instantly strike for normal weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec. |
+| **Improved Stormstrike** | 1/2 | **NEW** | When you Stormstrike, you have a 50% chance to gain 50% mana regeneration while casting spells for 15 sec, and Stormstrike's cooldown has a 50% chance to reset each time you Dodge or Parry. |
 | **Mental Quickness** | 2/2 | **NEW** | Increases your spell damage and healing by up to 30% of your Intellect. |
-| **Improved Stormstrike** | 2/2 | **NEW** | When you Stormstrike, you have a 100% chance to gain 50% mana regeneration while casting spells for 15 sec, and Stormstrike's cooldown has a 100% chance to reset each time you Dodge or Parry. |
 
-### Restoration (8)
+### Restoration (12)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Totemic Focus** | 5/5 | changed | Reduces the Mana cost of your totems and any spells that summon or move them by 25%. |
+| **Tidal Focus** | 5/5 | changed | Reduces the Mana cost of your healing spells by 5% and improves your chance to hit by 5%. |
 | **Mindfulness** | 2/3 | **NEW** | Allows 33% of your Mana regeneration to continue while casting. |
-| **Tidal Focus** | 1/5 | changed | Reduces the Mana cost of your healing spells by 1% and improves your chance to hit by 1%. |
+| **Totemic Focus** | 5/5 | changed | Reduces the Mana cost of your totems and any spells that summon or move them by 25%. |
 
 ## Rank among our builds and the community simulator's
 
@@ -114,6 +113,7 @@ Damage by ability:
 - Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.
 - Pre-BiS gear: 17/25/9 at 690.8 DPS in a full raid (other talents: _reference/dps-rankings.md).
 - Alone on the training dummy (only your own buffs) the search's best is 29/22/0 at 379.9 DPS.
+- 2026-10-16 (repair_builds.py, client build 70425 trees): 17/26/8 -> 15/24/12; Improved Fire Nova -> Trial by Fire (renamed); +1 Tidal Focus (tier gating for Mindfulness); +1 Tidal Focus (tier gating for Mindfulness); +1 Tidal Focus (tier gating for Mindfulness); +1 Tidal Focus (tier gating for Mindfulness); -1 Trial by Fire (over 51); -1 Trial by Fire (over 51); -1 Elemental Weapons (over 51); -1 Improved Stormstrike (over 51) (refill: the enhancement-dps model, raid-dps).
 
 ## Open questions (verify in the live game)
 

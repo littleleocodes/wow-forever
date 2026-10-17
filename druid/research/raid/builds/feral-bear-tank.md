@@ -7,7 +7,7 @@
 | **Build** | 7/35/9 (Balance / Feral Combat / Restoration) |
 | **Role** | TANK — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70291 (2026-10-08 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 | **Based on** | Classic baseline `feral-bear-tank` |
 
 ## Summary
@@ -44,7 +44,7 @@ Allocation adopted on 2026-09-27 from `opt-feral-bear-tank-raid-tank`, the best 
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Furor** | 5/5 | changed | Gives you a 100% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 100% of the Energy you had when last in Cat Form, plus 10 Energy per sec spent outside Cat Form, up to 100 Energy.  Bear Form and Dire Bear Form forfeit this Energy and halt its restoration while active. |
+| **Furor** | 5/5 | changed | Gives you a 100% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 100% of the Energy you had when last in Cat Form, plus 10 Energy per second spent outside Bear Form or Dire Bear Form, up to 100 Energy. |
 | **Naturalist** | 4/5 | **NEW** | Reduces the cast time of your Healing Touch spell by 0.4 sec and increases all damage you deal by 4%. |
 
 ## Core talents (priority order)
@@ -70,17 +70,17 @@ Allocation adopted on 2026-09-27 from `opt-feral-bear-tank-raid-tank`, the best 
 
 ## Rank among our builds and the community simulator's
 
-**1 of 3** for `feral-bear-tank` by tank value in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 3** for `feral-bear-tank` by tank value in the community simulator (ElliotWood/Forever b7083fa); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | **[`feral-bear-tank`](feral-bear-tank.md)** | ours: hand draft | 7/35/9 | 1.000 | +0.0% | 1221 | 636 |
-| 2 | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) | ours: optimizer | 7/35/9 | 1.000 | +0.0% | 1221 | 636 |
-| 3 | *Bear Tank 0/31/20* | community simulator | - | 0.880 | -12.0% | 989 | 670 |
+| 1 | **[`feral-bear-tank`](feral-bear-tank.md)** | ours: hand draft | 7/35/9 | 1.000 | +0.0% | 1224 | 636 |
+| 2 | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) | ours: optimizer | 7/35/9 | 1.000 | +0.0% | 1224 | 636 |
+| 3 | *Bear Tank 0/31/20* | community simulator | - | 0.878 | -12.2% | 986 | 670 |
 
 ## Rotation (community simulator, raid setting)
 
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-15, 3 changes to the base rotation; third-seed check: deep: tank 544 -> 541 DPS (-0.4%), feral-bear-tank 544 -> 541 DPS (-0.4%), sim preset: Bear Tank 0/31/20 501 -> 506 DPS (+0.9%), opt-feral-bear-tank-raid-tank 544 -> 541 DPS (-0.4%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 10 passes, the last 2026-10-17, 3 changes to the base rotation; third-seed check: deep: tank 539 -> 537 DPS (-0.4%), feral-bear-tank 539 -> 537 DPS (-0.4%), sim preset: Bear Tank 0/31/20 495 -> 499 DPS (+1.0%), opt-feral-bear-tank-raid-tank 539 -> 537 DPS (-0.4%)):
   1. threshold 25 -> 50: if rage ≥ 25: cast Maul (+0.9%, pass 1)
   2. move down below 'if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate': cast Primal Bite (+0.6%, pass 1)
   3. insert before the filler: cast Barkskin (+2.2%, pass 3)
@@ -99,12 +99,12 @@ Damage by ability (threat for tanks):
 
 | Ability | [`feral-bear-tank`](feral-bear-tank.md) |
 |---|---|
-| Lacerate | 57% |
+| Lacerate | 58% |
 | Maul | 28% |
 | Auto Attack | 11% |
-| Retribution Aura | 1% |
 | OtherActionRageGain | 1% |
-| Thorns | 1% |
+| Retribution Aura | 0% |
+| Thorns | 0% |
 | Dragonbreath Chili | 0% |
 
 ## Notes

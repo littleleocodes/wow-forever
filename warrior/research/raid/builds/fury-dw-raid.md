@@ -7,12 +7,12 @@
 | **Build** | 13/38/0 (Arms / Fury / Protection) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70291 (2026-10-08 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 | **Based on** | Classic baseline `fury-dw-raid` |
 
 ## Summary
 
-Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best build in the community simulator (+5.5% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: The Classic 17/34/0 survives almost intact: Improved Tactical Mastery stands in for Tactical Mastery (still the gate to Anger Management), and the five orphaned Improved Battle Shout points become the new tier-3 fillers (Boundless Rage, Piercing Howl) plus Raging Blows (off-hand Whirlwind) and a point of Precision (hit).
+Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best build in the community simulator (+5.5% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: The Classic 17/34/0 survives almost intact: Improved Tactical Mastery stands in for Tactical Mastery (still the gate to Anger Management), and the five orphaned Improved Battle Shout points become the new tier-3 fillers (Boundless Rage, Piercing Howl) plus Raging Blows (off-hand Whirlwind) and a point of Precision (hit); Boundless Rage and Precision were removed in build 70170.
 
 ## Point allocation
 
@@ -64,7 +64,7 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
 | 3 | Improved Rend | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 5 | Improved Tactical Mastery | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 2 | Booming Voice | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
-| 3 | Booming Voice | Boundless Rage, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
+| 3 | Booming Voice | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 5 | Enrage | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 
 ## Rank among our builds and the community simulator's
@@ -161,6 +161,7 @@ Damage by ability:
 - Improved Battle Shout and Improved Demoralizing Shout are gone: raid Battle Shout is no longer a talent responsibility.
 - 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range). Net +0.00% on a third seed.
 - 2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Precision 3 out; Furious Precision 3 in; to be re-optimized.
+- 2026-10-17 (audit of 2026-10-17, finding 26): flex alternative Boundless Rage dropped (removed in build 70170).
 
 ## Open questions (verify in the live game)
 

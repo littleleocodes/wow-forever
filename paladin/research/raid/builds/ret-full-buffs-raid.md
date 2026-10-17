@@ -7,7 +7,7 @@
 | **Build** | 10/8/33 (Holy / Protection / Retribution) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70291 (2026-10-08 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 | **Based on** | Classic baseline `ret-raid-dps` |
 
 ## Summary
@@ -45,7 +45,7 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `ret-raid-d
 | **Sacred Arbiter** | 1/1 | **NEW** | Increases the damage of your Holy Strike ability by 20% and causes it to refresh all Judgement effects on the target. |
 | **Two-Handed Weapon Specialization** | 3/3 | unchanged | Increases the damage you deal with two-handed melee weapons by 6%. |
 | **Vengeance** | 3/3 | changed | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times. |
-| **Champion of the Light** | 3/3 | **NEW** | Increases your spell damage by up to 60% of your Intellect. |
+| **Champion of the Light** | 3/3 | **NEW** | Increases your spell damage by up to 30% of your Intellect. |
 | **Instrument of Law** | 2/2 | **NEW** | Reduces the cast time of your Hammer of Wrath by 1.0 sec, and reduces all threat you generate by 20% while Righteous Fury is not active. |
 | **Twist of Light** | 1/1 | **NEW** | Reduces the Mana cost of your Seal spells by 20%, and when you replace your Seal of Command, Seal of Righteousness, Seal of Fury, or Seal of Justice with a different Seal, you gain an Echo of that Seal. Your next melee attack applies the replaced Seal's effects, consuming the Echo. |
 
@@ -73,16 +73,16 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `ret-raid-d
 
 ## Rank among our builds and the community simulator's
 
-**5 of 6** for `ret-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**5 of 6** for `ret-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever b7083fa); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 12/8/31 | 533 | +0.0% | 979 | -0.3% | 1 s |
-| 2 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: derived (ML search) | 11/8/32 | 523 | -1.8% | 982 | +0.0% | 6 s |
-| 3 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/0/34 | 522 | -1.9% | 954 | -2.8% | 2 s |
-| 4 | *P4/P5 Ret* | community simulator | - | 514 | -3.6% | 952 | -3.1% | 7 s |
-| 5 | **[`ret-full-buffs-raid`](ret-full-buffs-raid.md)** | ours: hand draft | 10/8/33 | 509 | -4.5% | 979 | -0.3% | 20 s |
-| 6 | *Retribution 9/0/42* | community simulator | - | 489 | -8.3% | 940 | -4.2% | 16 s |
+| 1 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 12/8/31 | 517 | +0.0% | 948 | -0.4% | 2 s |
+| 2 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: derived (ML search) | 11/8/32 | 509 | -1.4% | 952 | -0.0% | 7 s |
+| 3 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/0/34 | 507 | -1.9% | 925 | -2.8% | 2 s |
+| 4 | *P4/P5 Ret* | community simulator | - | 501 | -3.0% | 923 | -3.0% | 4 s |
+| 5 | **[`ret-full-buffs-raid`](ret-full-buffs-raid.md)** | ours: hand draft | 10/8/33 | 500 | -3.2% | 952 | +0.0% | 21 s |
+| 6 | *Retribution 9/0/42* | community simulator | - | 476 | -7.9% | 914 | -3.9% | 16 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -105,7 +105,7 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `ret-raid-d
   16. threshold 70% -> 65%: if mana % ≥ 15% and Seal of Righteousness is up and mana % ≥ 70%: cast Seal of Command (+0.5%, pass 5)
   17. threshold 1s -> 2s: if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 1s: cast Seal of Command (+0.2%, pass 5)
   18. spell probe: insert at the end: cast Divine Favor (+3.9%, pass 6)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 11 passes, the last 2026-10-14, 12 changes to the base rotation; third-seed check: ):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 12 passes, the last 2026-10-16, 12 changes to the base rotation; third-seed check: retribution-ml-raid 858 -> 951 DPS (+10.9%), sim preset: P4/P5 Ret 833 -> 924 DPS (+10.9%), ret-raid-dps 836 -> 927 DPS (+10.9%), ret-full-buffs-raid 864 -> 953 DPS (+10.4%), opt-ret-dps-raid-dps 853 -> 948 DPS (+11.1%)):
   1. drop 'time left on Seal of Righteousness ≤ 1s' from the condition: if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 1s: cast Seal of Command (+2.4%, pass 1)
   2. threshold 70% -> 50%: if mana % ≥ 70%: cast Consecration (+1.4%, pass 1)
   3. move to the top: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness (+0.2%, pass 1)
@@ -123,15 +123,15 @@ Before the pull: at -1.5s: cast Seal of Command.
 
 | # | Priority (the first line whose condition holds is cast) | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) casts/min |
 |---|---|---|
-| 1 | if time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness | 4.8 |
+| 1 | if time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness | 5.0 |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if Judgement can be cast: cast Judgement | 6.7 |
+| 3 | if Judgement can be cast: cast Judgement | 7.0 |
 | 4 | if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 2s: cast Seal of Command | 5.0 |
 | 5 | if mana % ≥ 15% and Seal of Righteousness is up and mana % ≥ 65%: cast Seal of Command | 5.0 |
 | 6 | cast Hammer of Wrath | 1.7 |
 | 7 | cast Holy Strike | 5.7 |
 | 8 | cast Consecration | 5.7 |
-| 9 | cast Consecration (rank 1) | 0.8 |
+| 9 | cast Consecration (rank 1) | 0.7 |
 
 Lines of the simulator's rotation these builds never cast: cast Holy Shock (its condition never held in these fights); cast Divine Favor (needs the Divine Favor talent).
 
@@ -139,14 +139,14 @@ Damage by ability:
 
 | Ability | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) |
 |---|---|
-| Seal of Righteousness | 21% |
-| Auto Attack | 20% |
-| Consecration | 16% |
+| Auto Attack | 21% |
+| Seal of Righteousness | 20% |
+| Consecration | 15% |
 | Holy Strike | 14% |
 | Judgement of Righteousness | 13% |
 | Hammer of Wrath | 5% |
 | Seal of Command | 5% |
-| Judgement of Command | 4% |
+| Judgement of Command | 3% |
 | Dragonbreath Chili | 3% |
 
 ## Notes

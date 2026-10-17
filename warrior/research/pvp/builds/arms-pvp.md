@@ -7,7 +7,7 @@
 | **Build** | 31/20/0 (Arms / Fury / Protection) |
 | **Role** | DPS — PvP |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70291 (2026-10-08 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 | **Based on** | Classic baseline `arms-pvp` |
 
 ## Summary
@@ -62,7 +62,7 @@ Mortal Strike, Improved Hamstring, Weaponmaster and Improved Tactical Mastery fo
 
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
-| 1 | Blood Craze | Improved Cleave | Fifth tier-3 Fury point. |
+| 1 | Blood Craze | any utility talent legal at that tier | Fifth tier-3 Fury point. (Improved Cleave, the old alternative, was removed in build 70170.) |
 | 2 | Improved Heroic Strike | Deflection, Spearing Strike 1 + Improved Heroic Strike 1 (drop Improved Charge) | Spearing Strike dismounts targets — strong in world PvP. |
 | 5 | Unbridled Wrath | Iron Will (now Fury tier 2: -15% stun/fear duration) | Rage vs. crowd-control resistance. |
 
@@ -70,6 +70,7 @@ Mortal Strike, Improved Hamstring, Weaponmaster and Improved Tactical Mastery fo
 
 - Bloodthrill (Overpower procs from Rend) competes with Weaponmaster at tier 5; Rend uptime in PvP is unreliable, so Weaponmaster is the default.
 - 2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Boundless Rage 3 out; Blood Craze 3, Booming Voice 1 in; to be re-optimized.
+- 2026-10-17 (audit of 2026-10-17, finding 26): flex alternative Improved Cleave replaced (removed in 70170).
 
 ## Open questions (verify in the live game)
 

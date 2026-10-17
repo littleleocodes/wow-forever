@@ -85,7 +85,7 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Balance | Nature's Grace | 1 | changed | tier 5, max 1 — tooltip changed |
 | Balance | Moonglow | 3 | changed | tier 2, max 3 — tooltip changed; was Balance row 5, col 3 |
 | Balance | Moonfury | 5 | changed | tier 6, max 5 — tooltip changed |
-| Balance | Moonkin Form | 1 | changed | tier 7, max 1 — tooltip changed |
+| Balance | Moonkin Form | 1 | changed | tier 7, max 1 — tooltip changed; tooltip changed in build 1.60.1.70425 (ranks 1) |
 | Restoration | Improved Mark of the Wild | 5 | **REMOVED** | removed from Classic |
 | Restoration | Nature's Focus | 5 | changed | tier 1, max 5 — tooltip changed; was Restoration row 2, col 2 |
 | Restoration | Reflection | 3 | changed | tier 3, max 3 — tooltip changed |

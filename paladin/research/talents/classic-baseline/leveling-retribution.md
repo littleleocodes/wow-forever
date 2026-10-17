@@ -100,7 +100,7 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Retribution | Improved Seal of the Crusader | 3 | **REMOVED** | removed from Classic |
 | Retribution | Deflection | 5 | moved | tier 1, max 5 — was Retribution row 2, col 3 |
 | Retribution | Conviction | 5 | changed | tier 2, max 5 — tooltip changed; was Retribution row 3, col 2 |
-| Retribution | Seal of Command | 1 | changed | tier 3, max 1 — tooltip changed; tooltip changed in build 1.60.1.70291 (ranks 1) |
+| Retribution | Seal of Command | 1 | changed | tier 3, max 1 — tooltip changed; tooltip changed in build 1.60.1.70425 (ranks 1) |
 | Retribution | Pursuit of Justice | 2 | changed | tier 3, max 2 — tooltip changed |
 | Retribution | Improved Retribution Aura | 2 | **REMOVED** | removed from Classic |
 | Retribution | Two-Handed Weapon Specialization | 3 | unchanged | tier 5, max 3 |

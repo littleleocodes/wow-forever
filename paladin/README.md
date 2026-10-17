@@ -57,7 +57,7 @@ Differences under 2-3% are within the simulations' noise and assumptions: treat 
 
 ## Roles and specs
 
-| Spec | Raid role | Classic standing | Forever outlook (beta client build 1.60.1.70291) |
+| Spec | Raid role | Classic standing | Forever outlook (beta client build 1.60.1.70425; rankings from the 2026-10-15 races on 70291) |
 |---|---|---|---|
 | Holy | Raid healer | The paladin raid role | Holy Light on the tank and Flash of Light on the raid, with Illumination, Reverence and Holy Power for mana and crits. The healer lab's raid pick (34/11/6) skips Holy Shock and Light's Vigil (2026-10-15). The slowest paladin leveler: about 40% more time per kill than Shockadin. |
 | Protection | Tank | Dungeon AoE tank; no taunt | A full tank tree: Holy Shield (30% block, 4 charges), Templar's Bulwark (an absorb as large as your health), Iron Creed, Swift Judgement, and Improved Righteous Fury as 6% less damage taken; Seal of Fury's judgement taunts for 4 seconds. Levels about 14% slower than Shockadin (2026-10-15). |
@@ -65,16 +65,22 @@ Differences under 2-3% are within the simulations' noise and assumptions: treat 
 
 Hybrids with their own pages: Shockadin (Retribution's two-handed melee with Holy's Improved Seals and Divine Strength; the open search's winner takes no Holy Shock; leveling).
 
-## Forever headline changes (beta client build 1.60.1.70291, 2026-10-08)
+## Forever headline changes (beta client build 1.60.1.70425, 2026-10-16)
 
 Forever's paladin has 50 talents (17 Holy, 16 Protection, 17 Retribution): 19 are new, none is a Classic talent under a new name, and 13 Classic talents are gone.
 
 - **Baseline now:** Blessing of Kings and Consecration; blessings last 1 hour (Classic: 5 minutes); Holy Strike (8 ranks from level 6, weapon damage plus Holy damage, 10-second cooldown); Seal of Fury (7 ranks from level 10: Holy damage on every swing and, with a shield, an absorb of half of it; its judgement taunts for 4 seconds). Judgement no longer uses up your seal.
 - **Removed talents:** Improved Seal of Righteousness, Consecration, Improved Lay on Hands, Improved Blessing of Wisdom, Lasting Judgement (Holy); Improved Devotion Aura, Blessing of Kings, Improved Concentration Aura, Blessing of Sanctuary (Protection); Improved Blessing of Might, Improved Seal of the Crusader, Improved Retribution Aura, Sanctity Aura (Retribution). Improved Holy Strike and Crusade were cut during the beta.
 - **New talents:** Improved Seals, Voice of Truth, Reverence, Purifying Power, Infusion of Light, Divine Precision, Consecrated Ground, Light's Vigil (Holy); Improved Seal of Fury, Sacred Duty, Swift Judgement, Templar's Bulwark, Iron Creed (Protection); Holy Conduit, Sanctified Judgement, Sacred Arbiter, Champion of the Light, Instrument of Law, Twist of Light (Retribution).
-- **Moved or reworked:** Holy Shock and Repentance sit 20 points deep; Light's Vigil, Holy Shield and Twist of Light are the 31-point talents. Twist of Light makes seals 20% cheaper and leaves an Echo of a replaced Seal of Command, Righteousness, Fury or Justice that your next swing applies. Righteous Fury +60% Holy threat; Holy Power +15% crit for Holy Shock and Holy Strike, +5% for other spells; Vengeance up to 3 stacks of 3%; Champion of the Light up to 60% of Intellect as spell damage; Illumination returns 50% of a critical heal's base cost.
-- **Spells:** top ranks against Classic: Holy Light 1,495-1,665 (Classic 1,590-1,770), Flash of Light 291-325 (348-388), Holy Shock 307-333 healing (365-395); Blessing of Might 133 attack power (185), Blessing of Wisdom 40 mana every 5 seconds (33); Consecration 96 Holy damage over 8 seconds plus 216 more to the first 4 enemies in it (384 to every enemy); Holy Wrath stuns for 2 seconds; Divine Shield halves the damage you deal; Holy Shield 221 damage per block (130).
+- **Moved or reworked:** Holy Shock and Repentance sit 20 points deep; Light's Vigil, Holy Shield and Twist of Light are the 31-point talents. Twist of Light makes seals 20% cheaper and leaves an Echo of a replaced Seal of Command, Righteousness, Fury or Justice that your next swing applies. Righteous Fury +90% Holy threat (+60% before 70425); Holy Power +15% crit for Holy Shock and Holy Strike, +5% for other spells; Vengeance up to 3 stacks of 3%; Champion of the Light 10/20/30% of Intellect as spell damage (client 70425; 20/40/60% before); Reckoning (client 70425) stores up to 4 extra attacks that your next swing uses, at most once every 1.5 seconds from blocks; Shield Specialization returns 4% of your mana on a block (6% before 70425), once every 3 seconds; Illumination returns 50% of a critical heal's base cost.
+- **Spells:** top ranks against Classic: Holy Light 1,495-1,665 (Classic 1,590-1,770), Flash of Light 291-325 (348-388), Holy Shock 307-333 healing (365-395); Blessing of Might 133 attack power (185), Blessing of Wisdom 40 mana every 5 seconds (33); Consecration 96 Holy damage over 8 seconds plus 216 more to the first 4 enemies in it (384 to every enemy), 4.2% of spell power a tick (9.5% before 70425); Salvation and Mass Salvation (30% less threat for an hour, not exclusive with blessings) replace the Salvation blessings, and Revoke removes them; Holy Wrath stuns for 2 seconds; Divine Shield halves the damage you deal; Holy Shield 221 damage per block (130).
 - **Beta notes (to 2026-10-08):** 2026-10-02: Holy Shield's block chance 20% → 30%, Redoubt's 6-30% → 4-20%, Champion of the Light 33/66/100% → 20/40/60% of Intellect; spell ranks far below your level get less from your spell damage and healing (no formula published; this project assumes TBC's). Build 70291 (2026-10-08): Retribution Aura uses the paladin's spell power with Classic's base damage; Reckoning triggers at most once every 1.5 seconds; Seal of Fury returns mana only with Improved Seal of Fury, and neither it nor Shield Specialization generates threat when they restore mana.
+- **Beta notes (16 Oct, build 70425):** Seal of Righteousness had gained almost twice its intended benefit from spell damage, and Judgement of
+  Righteousness and Judgement of Fury now have instant-spell coefficients (42.9% in the 70425 spellbook); Consecration 0.042 per tick (was
+  0.095); Righteous Fury 90% Holy threat (was 60%); Champion of the Light 10/20/30% of Intellect (was 20/40/60%); Shield Specialization 4%
+  mana (was 6%); Reckoning stores up to 4 charges for your next auto attack, as in Classic Era; Sanctified Judgement's mana return no longer
+  generates threat; Seal of Fury is no longer overwritten by Power Word: Shield, and its rank 3 trains at 26; Infusion of Light no longer
+  gives Holy Shock 50% more damage against enemies.
 
 ## Research files
 

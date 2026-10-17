@@ -7,7 +7,7 @@
 | **Build** | 33/5/13 (Balance / Feral Combat / Restoration) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70291 (2026-10-08 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -30,7 +30,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
 | **Improved Starfire** | 5/5 | changed | Reduces the cast time of Starfire by 0.5 sec and Starfire has a 15% chance to stun its target for 3 sec. |
 | **Nature's Grace** | 1/1 | changed | All non-periodic spell criticals grace you with a blessing of nature, increasing your spellcasting speed and reducing your global cooldown by 10% for 3 sec. |
 | **Moonfury** | 5/5 | changed | Increases the damage done by your Arcane and Nature spells by 10%. |
-| **Moonkin Form** | 1/1 | changed | Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party members within 45 yards have their Critical Strike chance increased by 3%, exclusive with Leader of the Pack. Also protects the caster from Polymorph effects and prevents the use of healing spells.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects. |
+| **Moonkin Form** | 1/1 | changed | Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their spell Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects. |
 
 ### Feral Combat (5)
 
@@ -59,14 +59,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
 
 ## Rank among our builds and the community simulator's
 
-**2 of 4** for `balance-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 4** for `balance-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever b7083fa); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`balance-moonkin-raid`](balance-moonkin-raid.md) | ours: hand draft | 33/5/13 | 508 | +0.0% | 586 | +0.0% | 4 s |
-| 2 | **[`opt-balance-dps-raid-dps`](opt-balance-dps-raid-dps.md)** | ours: optimizer | 33/5/13 | 508 | +0.0% | 586 | +0.0% | 4 s |
-| 3 | *Balance* | community simulator | - | 464 | -8.6% | 521 | -11.2% | 0 s |
-| 4 | *Moonkin 38/0/13* | community simulator | - | 406 | -20.1% | 579 | -1.2% | 37 s |
+| 1 | [`balance-moonkin-raid`](balance-moonkin-raid.md) | ours: hand draft | 33/5/13 | 513 | +0.0% | 594 | +0.0% | 4 s |
+| 2 | **[`opt-balance-dps-raid-dps`](opt-balance-dps-raid-dps.md)** | ours: optimizer | 33/5/13 | 513 | +0.0% | 594 | +0.0% | 4 s |
+| 3 | *Balance* | community simulator | - | 469 | -8.6% | 527 | -11.2% | 0 s |
+| 4 | *Moonkin 38/0/13* | community simulator | - | 410 | -20.1% | 586 | -1.2% | 37 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -77,8 +77,9 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
   4. move down below 'cast Starfire': if mana % < 15%: cast Starfire (+0.3%, pass 1)
   5. only with 10s or more of the fight left: keep Insect Swarm on up to 1 targets (refresh under 0ms) (+0.2%, pass 2)
   6. insert at the end: cast Wrath (+0.2%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-01, 2 passes, the last 2026-10-09, 1 changes to the base rotation; third-seed check: balance-moonkin-raid 590 -> 591 DPS (+0.2%), sim preset: Balance 527 -> 526 DPS (-0.3%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-01, 3 passes, the last 2026-10-16, 2 changes to the base rotation; third-seed check: balance-moonkin-raid 592 -> 594 DPS (+0.3%), sim preset: Moonkin 38/0/13 584 -> 586 DPS (+0.3%)):
   1. move down below 'keep Insect Swarm on up to 1 targets (refresh under 0ms)': keep Moonfire on up to 1 targets (refresh under 0ms) (+0.3%, pass 1)
+  2. move to the top: keep Insect Swarm on up to 1 targets (refresh under 0ms) (+0.2%, pass 3)
 
 Before the pull: at -10s: activate Moonkin Form.
 

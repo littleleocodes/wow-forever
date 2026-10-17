@@ -7,12 +7,12 @@
 | **Build** | 29/22/0 (Elemental / Enhancement / Restoration) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70291 (2026-10-08 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 | **Based on** | Classic baseline `elemental-raid-dps` |
 
 ## Summary
 
-Allocation adopted on 2026-09-26 from `cand-elemental-dps-r1`, the best build in the community simulator (+5.4% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: Lightning Mastery and Elemental Mastery are gone; in their place Elemental Alacrity (-0.5s casts est.), Lightning Overload (9% est. chance for a free half-damage duplicate), Call of Thunder as a 1-point crit talent, a 5-rank Elemental Fury and the Lava Burst capstone (Fire nuke, +20% with Flame Shock up). Restoration supplies Tidal Focus (5% hit), Mindfulness, Water Shield and Mana Tide.
+Allocation adopted on 2026-09-26 from `cand-elemental-dps-r1`, the best build in the community simulator (+5.4% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: Lightning Mastery and Elemental Mastery are gone; in their place Elemental Alacrity (-0.5s casts est.), Lightning Overload (9% est. chance for a free half-damage duplicate), Call of Thunder as a 1-point crit talent (removed in build 70425), a 5-rank Elemental Fury and the Lava Burst capstone (Fire nuke, +20% with Flame Shock up). Restoration supplies Tidal Focus (5% hit), Mindfulness, Water Shield and Mana Tide.
 
 ## Point allocation
 
@@ -22,26 +22,26 @@ Allocation adopted on 2026-09-26 from `cand-elemental-dps-r1`, the best build in
 |---|---|---|---|
 | **Concussion** | 5/5 | changed | Increases the damage done by your Lightning Bolt, Chain Lightning, and Earth Shock spells by 5%. |
 | **Convection** | 5/5 | changed | Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 10%. |
-| **Call of Flame** | 3/3 | changed | Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 15%. |
-| **Reverberation** | 2/5 | changed | Reduces the cooldown of your Shock spells by 0.4 sec. |
+| **Call of Flame** | 3/3 | changed | Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 15%, as well as increases the duration of your Flame Shock spell by 9 sec. |
 | **Elemental Alacrity** | 3/3 | **NEW** | Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by 0.50 sec. |
+| **Reverberation** | 2/5 | changed | Reduces the cooldown of your Shock spells by 0.4 sec. |
 | **Elemental Focus** | 1/1 | moved | Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
-| **Call of Thunder** | 1/1 | changed | Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by 3%. |
+| **Eye of the Storm** | 2/3 | changed | Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, and Lava Burst by 47%. |
+| **Lava Burst** | 1/1 | **NEW** | You hurl molten lava at the target, dealing 113 to 145 Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage. |
 | **Lightning Overload** | 3/3 | **NEW** | Gives your Lightning Bolt and Chain Lightning spells a 10% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat. |
 | **Elemental Fury** | 4/5 | changed | Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 80%. |
-| **Eye of the Storm** | 2/3 | changed | Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, and Lava Burst by 47%. |
 
 ### Enhancement (22)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Thundering Strikes** | 5/5 | changed | Improves your chance to get a critical strike with all spells and attacks by 5%. |
 | **Ancestral Knowledge** | 5/5 | changed | Increases your Intellect by 10%. |
 | **Earth's Grasp** | 2/2 | moved | Increases the health of your Stoneclaw Totem by 50% and the radius of your Earthbind Totem by 20%. |
-| **Shamanistic Focus** | 1/1 | **NEW** | Reduces the mana cost of your Shock and Lightning Shield spells by 45%. |
-| **Mental Quickness** | 2/2 | **NEW** | Increases your spell damage and healing by up to 30% of your Intellect. |
+| **Thundering Strikes** | 5/5 | changed | Improves your chance to get a critical strike with all spells and attacks by 5%. |
 | **Anticipation** | 3/3 | changed | Increases your chance to dodge by an additional 6%. |
+| **Shamanistic Focus** | 1/1 | **NEW** | Reduces the mana cost of your Shock and Lightning Shield spells by 45%. |
 | **Toughness** | 4/5 | changed | Increases your Stamina by 8%. |
+| **Mental Quickness** | 2/2 | **NEW** | Increases your spell damage and healing by up to 30% of your Intellect. |
 
 ### Restoration (0)
 
@@ -106,7 +106,7 @@ Before the pull: at -2s: cast Lightning Bolt.
 | 5 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt (rank 7) | 23.3 |
 | 6 | cast Lightning Bolt (rank 2) | 0.6 |
 
-Lines of the simulator's rotation these builds never cast: cast Magma Totem (its condition never held in these fights); cast Lava Burst (needs the Lava Burst talent).
+Lines of the simulator's rotation these builds never cast: cast Magma Totem (its condition never held in these fights); cast Lava Burst (rank 3) (needs the Lava Burst talent).
 
 Damage by ability:
 
@@ -126,6 +126,7 @@ Damage by ability:
 - 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Elemental Weapons -> Anticipation (survival); Guardian Totems -> Anticipation (survival); Guardian Totems -> Anticipation (survival); Improved Lightning Shield -> Toughness (survival); Improved Lightning Shield -> Toughness (survival); Improved Lightning Shield -> Toughness (survival). Net +0.00% on a third seed.
 - 2026-10-02 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Stormstrike was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Reverberation -> Eye of the Storm (interrupt); Reverberation -> Eye of the Storm (interrupt); Stormstrike -> Toughness (survival). Net -0.13% on a third seed.
 - 2026-10-15 (page audit C4): `spec: Elemental`: 29 Elemental points make it a hybrid by the point rule, but it is a Lightning Bolt caster played with Elemental's rotation (the elemental-dps entry), and in a full raid it is ahead of the 31/7/13 Elemental builds (515 against 508 DPS, the 2026-10-15 race-neutral environments run, commit 2ce8265).
+- 2026-10-16 (repair_builds.py, client build 70425 trees): 29/22/0 -> 29/22/0; Call of Thunder 1 gone; +1 Lava Burst (tier gating for Elemental Fury) (refill: the elemental-dps model, raid-dps).
 
 ## Open questions (verify in the live game)
 

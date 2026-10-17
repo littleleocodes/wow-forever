@@ -93,17 +93,17 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Tree | Talent | Pts | In Forever | Detail |
 |---|---|---|---|---|
 | Discipline | Unbreakable Will | 5 | **REMOVED** | removed from Classic |
-| Discipline | Improved Power Word: Shield | 2 | changed | tier 2, max 3 — tooltip changed |
+| Discipline | Improved Power Word: Shield | 2 | changed | tier 3, max 3 — tooltip changed; moved in build 1.60.1.70425: was row 2, col 3 |
 | Shadow | Spirit Tap | 5 | changed | tier 1, max 5 — tooltip changed; was Shadow row 1, col 2 |
 | Shadow | Blackout | 5 | moved | tier 1, max 5 — was Shadow row 1, col 3 |
 | Shadow | Improved Shadow Word: Pain | 2 | moved | tier 2, max 2 — was Shadow row 2, col 2 |
 | Shadow | Shadow Focus | 5 | changed | tier 1, max 5 — tooltip changed; was Shadow row 2, col 3 |
 | Shadow | Improved Psychic Scream | 2 | moved | tier 3, max 2 — was Shadow row 3, col 1 |
-| Shadow | Improved Mind Blast | 5 | changed | tier 3, max 5 — tooltip changed; was Shadow row 3, col 2 |
+| Shadow | Improved Mind Blast | 5 | changed | tier 2, max 5 — tooltip changed; was Shadow row 3, col 2; moved in build 1.60.1.70425: was row 3, col 1 |
 | Shadow | Mind Flay | 1 | changed | tier 3, max 1 — tooltip changed |
-| Shadow | Improved Fade | 1 | moved | tier 4, max 2 — was Shadow row 4, col 2 |
+| Shadow | Improved Fade | 1 | unknown | not found in Forever data |
 | Shadow | Shadow Reach | 3 | changed | tier 2, max 2 — max rank 3 → 2; tooltip changed; was Shadow row 4, col 3 |
-| Shadow | Shadow Weaving | 5 | changed | tier 4, max 3 — max rank 5 → 3; tooltip changed; was Shadow row 4, col 4 |
+| Shadow | Shadow Weaving | 5 | changed | tier 4, max 3 — max rank 5 → 3; tooltip changed; was Shadow row 4, col 4; tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3) |
 | Shadow | Silence | 1 | changed | tier 5, max 1 — tooltip changed |
 | Shadow | Vampiric Embrace | 1 | changed | tier 4, max 1 — tooltip changed; was Shadow row 5, col 2 |
 | Shadow | Improved Vampiric Embrace | 2 | **REMOVED** | removed from Classic |

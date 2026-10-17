@@ -109,8 +109,8 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Feral Combat | Primal Fury | 2 | **REMOVED** | removed from Classic |
 | Feral Combat | Savage Fury | 2 | changed | tier 3, max 2 — tooltip changed; was Feral Combat row 5, col 1 |
 | Feral Combat | Heart of the Wild | 5 | changed | tier 1, max 5 — tooltip changed; was Feral Combat row 6, col 2 |
-| Feral Combat | Leader of the Pack | 1 | changed | tier 5, max 1 — tooltip changed; was Feral Combat row 7, col 2 |
-| Restoration | Furor | 5 | changed | tier 1, max 5 — tooltip changed; tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3, 4, 5) |
+| Feral Combat | Leader of the Pack | 1 | changed | tier 5, max 1 — tooltip changed; was Feral Combat row 7, col 2; tooltip changed in build 1.60.1.70425 (ranks 1) |
+| Restoration | Furor | 5 | changed | tier 1, max 5 — tooltip changed; tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3, 4, 5) |
 
 **17 point(s) of this build no longer exist in Forever** and must be re-spent; see `../forever/README.md` for how they were re-spent.
 

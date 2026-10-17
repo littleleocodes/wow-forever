@@ -60,7 +60,7 @@ Differences under 2-3% are within the simulations' noise and assumptions: treat 
 
 ## Roles and specs
 
-| Spec | Raid role | Classic standing | Forever outlook (beta client build 1.60.1.70291) |
+| Spec | Raid role | Classic standing | Forever outlook (beta client build 1.60.1.70425; rankings from the 2026-10-15 races on 70291) |
 |---|---|---|---|
 | Beast Mastery | Ranged DPS with a pet | 20-point dip for Improved Aspect of the Hawk and pet damage | Pets inherit from the hunter (10% of the higher attack power, all of the crit), so Unleashed Fury, Ferocity, Frenzy and Bestial Wrath make the pet about a quarter of the damage. Summon Hawk shares Arcane Shot's timer, and the raid rotation gives that timer to Arcane Shot. Last of the hunter specs in a full raid and fifth of six while leveling (2026-10-15). |
 | Marksmanship | Ranged DPS without a pet | The raid spec (Trueshot Aura) | Lone Wolf (+20% damage with no pet out) is the raid build: Aimed Shot, Arcane Shot (every 4.5 s with Improved Arcane Shot) and Sniper Shot, the 4-second capstone shot. About 15% behind the melee builds in a full raid; the slowest leveler (2026-10-15). |
@@ -70,7 +70,7 @@ Hybrids with their own pages: Beast-Marks (Marksmanship's shots with Beast Maste
 Summon Hawk and Lone Wolf in a raid, a pet while leveling; leveling and raid, the hunter's fastest leveler on 2026-10-15), Melee (split)
 (melee with Marksmanship support; leveling).
 
-## Forever headline changes (beta client build 1.60.1.70291, 2026-10-08)
+## Forever headline changes (beta client build 1.60.1.70425, 2026-10-16)
 
 Forever's hunter has 50 talents (16 Beast Mastery, 16 Marksmanship, 18 Survival): 18 are new, none is a Classic talent under a new
 name, and 14 Classic talents are gone (several replaced by a new talent with a related effect).
@@ -82,20 +82,27 @@ name, and 14 Classic talents are gone (several replaced by a new talent with a r
 - **New talents:** Deadly Aspects, Focused Fire, Summon Hawk (Beast Mastery); Lethal Attacks, Improved Stings, Careful Aim, Rapid Killing,
   Lone Wolf, Rapid Recuperation, Sniper Shot (Marksmanship); Improved Tracking, Survival Tactics, Predator's Edge, Resourcefulness, Expose
   Prey, Survivalist's Discipline, Strider Kick, Lacerating Strikes (Survival).
-- **Moved or reworked:** Trueshot Aura at tier 4, a party buff you cast (30 min), and Sniper Shot requires it; Mortal Shots requires 5
+- **Moved or reworked:** Trueshot Aura at tier 4, a buff you cast (30 min; party only until 70425, raid-wide since), and Sniper Shot requires it; Mortal Shots requires 5
   points in Careful Aim; Intimidation requires Bestial Swiftness and its pet hit gains 100% crit chance; Hawk Eye at tier 1. Deadly
   Aspects also speeds melee swings under Aspect of the Beast; Savage Strikes covers every melee ability; Surefooted's hit applies to all
   attacks; Deflection is 1% parry a rank; Lightning Reflexes 2% Agility a rank; Expose Prey opens Mongoose Bite for 10 s;
-  Counterattack is 50% weapon damage plus a flat amount; Resourcefulness's crit proc is 60% at 2 points.
+  Counterattack is 50% weapon damage plus a flat amount; Resourcefulness (client 70425) procs only from melee and ranged ability crits,
+  100% at 2 points (60% from any crit before); Predator's Edge's +30% crit damage is for melee abilities only.
 - **Spells:** Aimed Shot is trained from level 20 (2 s cast, +166 at 60, a 6 s cooldown shared with Multi-Shot); Multi-Shot is one
-  rank (0.5 s cast, 3 targets). Summon Hawk shares Arcane Shot's cooldown. Rapid Fire speeds up melee as well as ranged attacks (40%,
+  rank (instant since 70425, 0.5 s cast before; 3 targets). Summon Hawk shares Arcane Shot's cooldown. Rapid Fire speeds up melee as well as ranged attacks (40%,
   15 s). Aspect of the Beast adds melee attack power (+110 at 60). Traps work in combat (30 s cooldown, placed at your own feet);
   Volley has no cooldown; Lacerate is a new trained melee bleed (levels 30-60).
 - **Beta notes (to 2026-10-08):** pets get stats from the hunter (the 70291 client: 10% of the higher attack power, 100% of the crit,
   30% of the armor, 2 health per Stamina) and no longer take player stat buffs; Forever does not scale a pet's hit by its attack speed,
-  so a faster pet does more damage (forum logs at levels 20 and 30; this project's model at 60). To check at launch: the 70291 tooltips
+  so a faster pet does more damage (forum logs at levels 20 and 30; this project's model at 60). To check at launch: the 70291 and 70425 tooltips
   read Trueshot Aura rank 5 at +50 (rank 4: +75), Hunter's Mark rank 4 at +71 (rank 3: +98) and Aspect of the Hawk rank 6 at +55
   (rank 5: +90).
+- **Beta notes (16 Oct, build 70425):** Auto Shot (and wands) need 0.5 s standing still before shooting, and Auto Shot keeps firing
+  while you cast Aimed Shot or Sniper Shot; Trueshot Aura raid-wide; Resourcefulness only on melee and ranged ability crits (not traps);
+  pets benefit from Expertise and inherit the higher of the hunter's melee or ranged crit; Fire traps scale with attack power, and one
+  Fire and one Ice trap may be out at once; Sniper Shot now benefits from Marksmanship talents it had missed; Summon Hawk spawns at and
+  sticks to its target; Improved Mend Pet lowers Mend Pet's cost (it had raised it); pet abilities Dismember (25% healing reduction, 6 s,
+  15 s cooldown), Sonic Blast (30%, 20 s, 1 min) and Mine! (3 s, 1.5 min) weaker.
 
 ## Research files
 

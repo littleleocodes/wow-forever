@@ -7,7 +7,7 @@
 | **Build** | 0/23/28 (Holy / Protection / Retribution) |
 | **Role** | TANK — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70291 (2026-10-08 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 | **Based on** | Classic baseline `prot-tank` |
 
 ## Summary
@@ -29,7 +29,7 @@ Allocation adopted on 2026-09-28 from `opt-prot-tank-raid-tank`, the best build 
 | **Anticipation** | 5/5 | changed | Increases your Defense Skill by 20. |
 | **Improved Seal of Fury** | 1/1 | **NEW** | When Seal of Fury's shield is fully absorbed, restore 60 Mana, increased by 15% per level the attacker is above you, up to 45%. |
 | **Improved Righteous Fury** | 3/3 | changed | While Righteous Fury is active, all damage taken is reduced by 6%. |
-| **Shield Specialization** | 1/3 | changed | Increases the amount of damage absorbed by your shield by 10%, and gives your blocks a 33% chance to restore 6% of your maximum Mana. May only occur once every 3 sec. |
+| **Shield Specialization** | 1/3 | changed | Increases the amount of damage absorbed by your shield by 10%, and gives your blocks a 33% chance to restore 4% of your maximum Mana. May only occur once every 3 sec. |
 | **Swift Judgement** | 1/1 | **NEW** | Finishes the remaining cooldown on your Judgement ability and reduces the Mana cost of your next Judgement by 100%. |
 | **One-Handed Weapon Specialization** | 3/3 | changed | Increases the damage you deal with one-handed melee weapons by 10%. |
 | **Templar's Bulwark** | 1/1 | **NEW** | When activated, this ability grants you an absorb shield equal to 100% of your maximum health for 8 sec. Applies Forbearance for 1 min. Cannot be cast while Forbearance is active. |
@@ -45,7 +45,7 @@ Allocation adopted on 2026-09-28 from `opt-prot-tank-raid-tank`, the best build 
 | **Sanctified Judgement** | 3/3 | **NEW** | Gives your Judgement ability a 100% chance to return 60% of the Mana cost of the judged seal. |
 | **Sacred Arbiter** | 1/1 | **NEW** | Increases the damage of your Holy Strike ability by 20% and causes it to refresh all Judgement effects on the target. |
 | **Vengeance** | 3/3 | changed | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times. |
-| **Champion of the Light** | 3/3 | **NEW** | Increases your spell damage by up to 60% of your Intellect. |
+| **Champion of the Light** | 3/3 | **NEW** | Increases your spell damage by up to 30% of your Intellect. |
 | **Improved Judgement** | 2/2 | changed | Decreases the cooldown of your Judgement ability by 2 sec. |
 | **Eye for an Eye** | 1/2 | changed | All critical strikes against you cause 5% of the damage taken to the attacker as well. The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health. |
 
@@ -73,20 +73,20 @@ Allocation adopted on 2026-09-28 from `opt-prot-tank-raid-tank`, the best build 
 
 ## Rank among our builds and the community simulator's
 
-**3 of 6** for `prot-tank` by tank value in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 6** for `prot-tank` by tank value in the community simulator (ElliotWood/Forever b7083fa); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 0/33/18 | 1.046 | +0.0% | 503 | 516 |
-| 2 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 0/32/19 | 1.030 | -1.5% | 489 | 519 |
-| 3 | **[`prot-tank`](prot-tank.md)** | ours: hand draft | 0/23/28 | 1.000 | -4.4% | 505 | 567 |
-| 4 | *Protection 0/45/6* | community simulator | - | 0.929 | -11.2% | 443 | 577 |
-| 5 | *P4 Prot* | community simulator | - | 0.905 | -13.5% | 454 | 621 |
-| 6 | *P5 Prot* | community simulator | - | 0.899 | -14.1% | 448 | 622 |
+| 1 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 0/33/18 | 1.066 | +0.0% | 490 | 518 |
+| 2 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 0/32/19 | 1.043 | -2.2% | 469 | 518 |
+| 3 | **[`prot-tank`](prot-tank.md)** | ours: hand draft | 0/23/28 | 1.000 | -6.2% | 473 | 567 |
+| 4 | *Protection 0/45/6* | community simulator | - | 0.956 | -10.3% | 441 | 579 |
+| 5 | *P4 Prot* | community simulator | - | 0.936 | -12.2% | 452 | 619 |
+| 6 | *P5 Prot* | community simulator | - | 0.927 | -13.1% | 445 | 622 |
 
 ## Rotation (community simulator, raid setting)
 
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 8 passes, the last 2026-10-15, 7 changes to the base rotation; third-seed check: deep: tank 398 -> 419 DPS (+5.4%), protection-ml-tank 396 -> 416 DPS (+5.0%), sim preset: Protection 0/45/6 368 -> 374 DPS (+1.6%), prot-tank 458 -> 455 DPS (-0.7%), opt-prot-tank-raid-tank 390 -> 408 DPS (+4.7%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 10 passes, the last 2026-10-16, 7 changes to the base rotation; third-seed check: deep: tank 400 -> 433 DPS (+8.5%), protection-ml-tank 397 -> 422 DPS (+6.3%), sim preset: Protection 0/45/6 375 -> 390 DPS (+4.1%), prot-tank 431 -> 428 DPS (-0.7%), opt-prot-tank-raid-tank 384 -> 402 DPS (+4.8%)):
   1. insert before the filler: if health % < 10%: cast Lay on Hands (+7.8%, pass 1)
   2. drop the condition: if time left on Seal of Righteousness < 2s: cast Judgement (+4.3%, pass 1)
   3. insert at the top: cast Holy Shield (+1.3%, pass 1)
@@ -113,14 +113,14 @@ Damage by ability (threat for tanks):
 
 | Ability | [`prot-tank`](prot-tank.md) |
 |---|---|
-| Auto Attack | 25% |
+| Auto Attack | 27% |
 | Consecration | 15% |
 | Judgement of Righteousness | 15% |
 | Seal of Righteousness | 14% |
 | Holy Strike | 11% |
 | Lay on Hands | 10% |
-| Retribution Aura | 5% |
 | OtherActionManaGain | 5% |
+| Retribution Aura | 1% |
 | Thorns | 1% |
 | Eye for an Eye | 0% |
 

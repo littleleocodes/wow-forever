@@ -79,9 +79,9 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Affliction | Improved Corruption | 5 | changed | tier 1, max 5 — tooltip changed |
 | Affliction | Improved Life Tap | 2 | moved | tier 1, max 2 — was Affliction row 2, col 3 |
 | Affliction | Improved Curse of Agony | 3 | **REMOVED** | removed from Classic |
-| Affliction | Amplify Curse | 1 | changed | tier 3, max 1 — tooltip changed |
+| Affliction | Amplify Curse | 1 | changed | tier 3, max 1 — tooltip changed; tooltip changed in build 1.60.1.70425 (ranks 1) |
 | Affliction | Nightfall | 2 | changed | tier 4, max 2 — tooltip changed |
-| Affliction | Grim Reach | 2 | **REMOVED** | removed from Classic |
+| Affliction | Grim Reach | 2 | new | tier 2, max 2 — renamed from Malediction in build 1.60.1.70425; max rank 5 -> 2 in build 1.60.1.70425; tooltip changed in build 1.60.1.70425 (ranks 1, 2) |
 | Demonology | Improved Healthstone | 2 | **REMOVED** | removed from Classic |
 | Demonology | Demonic Embrace | 5 | changed | tier 1, max 5 — tooltip changed |
 | Demonology | Fel Intellect | 5 | **REMOVED** | removed from Classic |
@@ -89,11 +89,11 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Demonology | Fel Domination | 1 | changed | tier 4, max 1 — tooltip changed; was Demonology row 3, col 2 |
 | Demonology | Unholy Power | 5 | changed | tier 1, max 5 — tooltip changed; was Demonology row 4, col 3 |
 | Demonology | Master Summoner | 1 | moved | tier 3, max 2 — was Demonology row 4, col 2 |
-| Demonology | Demonic Sacrifice | 1 | changed | tier 3, max 1 — tooltip changed; was Demonology row 5, col 2; tooltip changed in build 1.60.1.70291 (ranks 1) |
+| Demonology | Demonic Sacrifice | 1 | changed | tier 3, max 1 — tooltip changed; was Demonology row 5, col 2; tooltip changed in build 1.60.1.70425 (ranks 1) |
 | Demonology | Master Demonologist | 5 | changed | tier 6, max 5 — tooltip changed |
 | Demonology | Soul Link | 1 | changed | tier 5, max 1 — tooltip changed; was Demonology row 7, col 2 |
 
-**17 point(s) of this build no longer exist in Forever** and must be re-spent; see `../forever/README.md` for how they were re-spent.
+**15 point(s) of this build no longer exist in Forever** and must be re-spent; see `../forever/README.md` for how they were re-spent.
 
 ## Sources
 

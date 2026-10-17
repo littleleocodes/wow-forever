@@ -989,50 +989,6 @@
       }
     ]
   },
-  "Boundless Rage": {
-    "note": "+10 max rage/rank: avoids rage capping on big pulls; ~0.2%/rank. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.1%). Other modes unchanged.",
-    "effects": [
-      {
-        "channel": "dmg",
-        "scope": ["yellow"],
-        "per_rank": 0.002,
-        "values": [0.002, 0.004, 0.006, 0.008, 0.01],
-        "modes": ["raid", "heal", "tank", "pvp"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["yellow"],
-        "per_rank": 0.002,
-        "values": [0.002, 0.004, 0.006, 0.008, 0.01],
-        "modes": ["leveling-aoe"],
-        "specs": ["fury-dw-raid", "prot-tank"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["yellow"],
-        "per_rank": 0.002,
-        "values": [0.002, 0.004, 0.006, 0.008, 0.01],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["fury-dw-raid", "prot-tank"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["yellow"],
-        "per_rank": 0.002,
-        "values": [0.002, 0.004, 0.006, 0.008, 0.01],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["arms-2h-raid"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["yellow"],
-        "per_rank": 0.002,
-        "values": [0.002, 0.004, 0.006, 0.008, 0.01],
-        "modes": ["leveling-aoe"],
-        "specs": ["arms-2h-raid"]
-      }
-    ]
-  },
   "Dual Wield Specialization": {
     "note": "+5%/rank off-hand damage, +20%/rank off-hand rage generation, +2%/rank off-hand hit (rank-1 text; est. 25%/100%/10% at 5/5). Off-hand hit is worth a lot against the 27% dual-wield white miss. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, fury-dw-raid, training dummy): removing it costs 11.0% DPS in the simulator (scorer said 11.7% on the same scale); already within tolerance, raid effects split off unchanged (11.7%). Other modes unchanged.",
     "effects": [
@@ -1785,59 +1741,6 @@
       }
     ]
   },
-  "Precision": {
-    "note": "+1%/rank hit with all attacks (parser scoped it to abilities). Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs 3.2% DPS in the simulator (scorer said 3.1% on the same scale); already within tolerance, raid effects split off unchanged (3.1%). Other modes unchanged.",
-    "effects": [
-      {
-        "channel": "hit",
-        "scope": ["all"],
-        "per_rank": 0.01,
-        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
-        "modes": ["raid"],
-        "specs": ["prot-tank"]
-      },
-      {
-        "channel": "hit",
-        "scope": ["all"],
-        "per_rank": 0.01,
-        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
-        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"],
-        "specs": ["fury-dw-raid", "prot-tank"]
-      },
-      {
-        "channel": "hit",
-        "scope": ["all"],
-        "values": [0.01, 0.02, 0.03],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["arms-2h-raid"]
-      },
-      {
-        "channel": "hit",
-        "scope": ["all"],
-        "per_rank": 0.018973,
-        "values": [0.018973, 0.037944, 0.056917, 0.075889, 0.094862],
-        "modes": ["leveling-aoe"],
-        "specs": ["arms-2h-raid"]
-      },
-      {
-        "channel": "hit",
-        "scope": ["all"],
-        "per_rank": 0.01,
-        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
-        "modes": ["raid"],
-        "specs": ["arms-2h-raid"]
-      },
-      {
-        "channel": "hit",
-        "scope": ["all"],
-        "per_rank": 0.01,
-        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
-        "modes": ["raid"],
-        "specs": ["fury-dw-raid"]
-      }
-    ]
-  },
   "Improved Thunder Clap": {
     "note": "-2/rank rage on Thunder Clap (parsed) - AoE tank utility. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, prot-tank): removing it costs 1.8% DPS in the simulator (scorer said 1.0% on the same scale); already within tolerance, raid effects split off unchanged (1.0%). Other modes unchanged.",
     "effects": [
@@ -1861,34 +1764,6 @@
         "scope": ["ability:Thunder Clap"],
         "per_rank": 2.414245,
         "values": [2.414245, 4.82849, 7.242736, 9.65698, 12.071225],
-        "modes": ["tank"],
-        "specs": ["prot-tank"]
-      }
-    ]
-  },
-  "Toughness": {
-    "note": "+2%/rank armor from items: a raid tank at ~8000 item armor gains 800 at 5/5 -> physical damage taken 36.4% -> 34.3% (armor DR 63.6% -> 65.7%), i.e. ~-5.8% damage taken -> +1.1%/rank effective health. Icy Veins: 'looks better on paper than what it actually is. Only your armor value from items is increased' - the arithmetic above is item armor only. Raid sim calibration (2026-09-26, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.0% DPS in the simulator (scorer said 1.5% on the same scale); raid values scaled x0.22 to match (0.5%). Other modes unchanged.",
-    "effects": [
-      {
-        "channel": "surv",
-        "scope": ["all"],
-        "per_rank": 0.011,
-        "values": [0.011, 0.022, 0.033, 0.044, 0.055],
-        "modes": ["tank"],
-        "specs": ["fury-dw-raid", "arms-2h-raid"]
-      },
-      {
-        "channel": "surv",
-        "scope": ["all"],
-        "per_rank": 0.011,
-        "values": [0.011, 0.022, 0.033, 0.044, 0.055],
-        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "heal"]
-      },
-      {
-        "channel": "surv",
-        "scope": ["all"],
-        "per_rank": 0.002466,
-        "values": [0.002466, 0.004932, 0.007398, 0.009864, 0.01233],
         "modes": ["tank"],
         "specs": ["prot-tank"]
       }
@@ -2465,16 +2340,6 @@
         "source": "parsed",
         "modes": ["tank"],
         "specs": ["prot-tank"]
-      }
-    ]
-  },
-  "Improved Cleave": {
-    "note": "2026-09-27 audit: a small raid value (trash and cleave fights; Raging Blows cheapens Cleave) so that it, not a control talent, fills Fury's first rows.",
-    "effects": [
-      {
-        "channel": "utility",
-        "scope": ["mode:raid"],
-        "per_rank": 0.001
       }
     ]
   }

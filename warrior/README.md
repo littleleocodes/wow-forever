@@ -47,13 +47,13 @@ Differences under 2-3% are within the simulations' noise and assumptions: treat 
 
 ## Roles and specs
 
-| Spec | Raid role | Classic standing | Forever outlook (beta client build 1.60.1.70291) |
+| Spec | Raid role | Classic standing | Forever outlook (beta client build 1.60.1.70425; rankings from the 2026-10-15 races on 70291) |
 |---|---|---|---|
 | Arms | Raid DPS with a two-hander in Battle Stance | PvP spec; niche in raids | A raid spec now: Bloodthrill turns Rend into a steady supply of Overpowers, Improved Slam makes Slam a 1-second cast that keeps the swing, and Weaponmaster replaces the weapon specializations. The warrior's best raid DPS in a full raid (2026-10-15); levels about as fast as Fury. |
 | Fury | Raid DPS with two one-handers in Berserker Stance | Top-tier melee DPS once hit-capped | Same skeleton, reworked: Whirlwind always hits with both weapons, Bloodthirst takes 45% of attack power, Dual Wield Specialization adds off-hand damage and rage, Flurry sits behind Death Wish. A little behind Arms in a full raid (2026-10-15); levels about as fast as Arms. |
 | Protection | Tank with a one-hander and a shield in Defensive Stance | The raid tank | Shield Slam hits about 87% harder and scales with block value, Revenge about 70% harder, Shield Block holds 2 blocks for 7 sec; Vanguard (Charge in Defensive Stance), Focused Rage and Bastion (+10% damage with a shield) are new. Levels a few percent slower than Arms or Fury, with almost no eating (2026-10-15). |
 
-## Forever headline changes (beta client build 1.60.1.70291, 2026-10-08)
+## Forever headline changes (beta client build 1.60.1.70425, 2026-10-16)
 
 Forever's warrior has 52 talents (17 Arms, 17 Fury, 18 Protection): 11 are new, 2 are Classic talents under a new name, and 11 Classic talents are gone.
 
@@ -62,8 +62,12 @@ Forever's warrior has 52 talents (17 Arms, 17 Fury, 18 Protection): 11 are new, 
 - **New talents:** Improved Tactical Mastery, Spearing Strike, Bloodthrill, Weaponmaster (Arms); Raging Blows, Gore Drinker (Fury); Iron Will (it shortens stuns and fears), Master of Defense, Vanguard, Focused Rage, Bastion (Protection).
 - **Renamed:** Improved Cleave is Furious Precision (now +10% off-hand hit); Classic's Iron Will slot is Lingering Rage (now 10 sec longer before rage decays out of combat).
 - **Moved or reworked:** Improved Slam to Arms (0.5 sec off Slam's cast and global cooldown, 3 sec off its cooldown, no swing delay); Improved Thunder Clap to Protection. Prerequisites: Anger Management needs 5 points in Improved Tactical Mastery, Flurry needs Death Wish, Gore Drinker needs Enrage, Mortal Strike needs Sweeping Strikes, Impale needs Deep Wounds, Master of Defense needs Shield Specialization, Shield Slam needs Concussion Blow. Unbridled Wrath is a 60% chance for 1 rage with any weapon; Dual Wield Specialization +25% off-hand damage and +50% off-hand rage; Deep Wounds 60% of the weapon's average damage over 12 sec; Weaponmaster by weapon: axe or polearm +5% crit, mace or staff 15% of armor ignored, sword a chance for an extra attack.
-- **Spells:** Battle Shout 40% less attack power but lasts 3 minutes; Bloodthirst 45% of attack power plus a flat amount and 10% movement speed (no healing); Death Wish +5% damage taken instead of lower armor and resistances; Demoralizing Shout 204 attack power for 45 sec; Last Stand on a 3-minute cooldown; Retaliation 15 minutes; Shield Block 2 blocks in 7 sec; Shield Slam 640-670 plus block value; Shield Wall 60% less damage for 12 sec on a 15-minute cooldown; Slam a 1.5 sec cast on an 18-second cooldown; Taunt 8-second cooldown; Thunder Clap slows attacks by 20% on a 6-second cooldown; Victory Rush (new: 15% of attack power, heals 10%, for 20 sec after a kill); Whirlwind strikes with both weapons; Concussion Blow 10 rage.
+- **Spells:** Battle Shout 40% less attack power but lasts 3 minutes and, since 70425, reaches party or raid members within 20 yards; Bloodthirst 45% of attack power plus a flat amount and 10% movement speed (no healing); Death Wish +5% damage taken instead of lower armor and resistances; Demoralizing Shout 204 attack power for 45 sec; Last Stand on a 3-minute cooldown; Retaliation 15 minutes; Shield Block 2 blocks in 7 sec; Shield Slam 640-670 plus block value; Shield Wall 60% less damage for 12 sec on a 15-minute cooldown; Slam a 1.5 sec cast on an 18-second cooldown; Taunt 8-second cooldown; Thunder Clap slows attacks by 20% on a 6-second cooldown; Victory Rush (new: 15% of attack power, heals 10%, for 20 sec after a kill); Whirlwind strikes with both weapons; Concussion Blow 10 rage.
 - **Beta notes (to 2026-10-08):** white swings give rage by weapon speed alone (normalized), and a critical strike gives 100% more; rage from damage taken is measured against a same-level creature's expected health (2026-10-08); out of combat 1.25 rage decays per second; a queued Heroic Strike no longer raises off-hand hit; Rend and Sunder Armor tag a mob at once. Unknown until launch: Sunder Armor's threat, and the attack power shares Forever adds to Rend, Revenge and Thunder Clap (the community simulator fits them from level-20 beta logs).
+- **Beta notes (16 Oct, build 70425):** Battle Shout raid-wide; Slam no longer suffers spell pushback; Overpower can trigger against much
+  lower-level enemies; Lingering Rage no longer stops your health regeneration after combat; Improved Berserker Rage removes movement
+  impairing effects; Weaponmaster's sword extra attack no longer triggers from Shield Bash and Shield Slam. Bloodthrill's tooltip now
+  reads "allow an activation of Overpower" (the 6-second window it named is gone; Overpower's own window applies).
 
 ## Research files
 

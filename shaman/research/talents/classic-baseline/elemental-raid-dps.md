@@ -81,22 +81,22 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 |---|---|---|---|---|
 | Elemental | Convection | 5 | changed | tier 1, max 5 — tooltip changed |
 | Elemental | Concussion | 5 | changed | tier 1, max 5 — tooltip changed |
-| Elemental | Call of Flame | 3 | changed | tier 2, max 3 — tooltip changed |
-| Elemental | Elemental Focus | 1 | moved | tier 3, max 1 — was Elemental row 3, col 1 |
-| Elemental | Call of Thunder | 5 | changed | tier 4, max 1 — max rank 5 → 1; tooltip changed; was Elemental row 3, col 3 |
+| Elemental | Call of Flame | 3 | changed | tier 2, max 3 — tooltip changed; moved in build 1.60.1.70425: was row 2, col 3; tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3) |
+| Elemental | Elemental Focus | 1 | moved | tier 3, max 1 — was Elemental row 3, col 1; moved in build 1.60.1.70425: was row 3, col 2 |
+| Elemental | Call of Thunder | 5 | unknown | not found in Forever data |
 | Elemental | Eye of the Storm | 3 | changed | tier 4, max 3 — tooltip changed |
-| Elemental | Elemental Fury | 1 | changed | tier 6, max 5 — max rank 1 → 5; tooltip changed; was Elemental row 5, col 2 |
+| Elemental | Elemental Fury | 1 | changed | tier 6, max 5 — max rank 1 → 5; tooltip changed; was Elemental row 5, col 2; prerequisite changed in build 1.60.1.70425: was call of thunder |
 | Elemental | Storm Reach | 2 | **REMOVED** | removed from Classic |
 | Elemental | Lightning Mastery | 5 | **REMOVED** | removed from Classic |
-| Elemental | Elemental Mastery | 1 | **REMOVED** | removed from Classic |
-| Restoration | Tidal Focus | 5 | changed | tier 2, max 5 — tooltip changed; was Restoration row 1, col 3 |
-| Restoration | Totemic Focus | 5 | changed | tier 1, max 5 — tooltip changed; was Restoration row 2, col 3 |
+| Elemental | Elemental Mastery | 1 | new | tier 7, max 1 — added in build 1.60.1.70425 |
+| Restoration | Tidal Focus | 5 | changed | tier 1, max 5 — tooltip changed; was Restoration row 1, col 3; moved in build 1.60.1.70425: was row 2, col 3 |
+| Restoration | Totemic Focus | 5 | changed | tier 2, max 5 — tooltip changed; was Restoration row 2, col 3; moved in build 1.60.1.70425: was row 1, col 3 |
 | Restoration | Improved Reincarnation | 1 | changed | tier 2, max 2 — tooltip changed; was Restoration row 2, col 1 |
 | Restoration | Nature's Guidance | 3 | **REMOVED** | removed from Classic |
 | Restoration | Totemic Mastery | 1 | **REMOVED** | removed from Classic |
 | Restoration | Tidal Mastery | 5 | changed | tier 4, max 5 — tooltip changed; was Restoration row 4, col 3 |
 
-**12 point(s) of this build no longer exist in Forever** and must be re-spent; see `../forever/README.md` for how they were re-spent.
+**11 point(s) of this build no longer exist in Forever** and must be re-spent; see `../forever/README.md` for how they were re-spent.
 
 ## Sources
 

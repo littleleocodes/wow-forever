@@ -408,17 +408,6 @@
       }
     ]
   },
-  "Soul Harvesting": {
-    "note": "Mana regen for 10s after a Drain Soul kill: leveling chain-pulls only. 2026-09-27 audit: needs a Drain Soul kill the loop never makes; about one kill in four is a shard kill: 0.0075/rank. PvP (2026-09-27): zero, defensive: Mana regen only for 10 s after a victim dies under your Drain Soul: a leveling kill proc; players are not finished with a 15 s Drain Soul channel.",
-    "effects": [
-      {
-        "channel": "sustain",
-        "scope": ["all"],
-        "modes": ["leveling"],
-        "per_rank": 0.0075
-      }
-    ]
-  },
   "Improved Drains": {
     "note": "Beta text (reworked): flat +7/13/20% to Drain Life, Drain Soul and Wrack (the demo's per-effect scaling moved to Soul Siphon). Raid sim calibration (2026-09-26, ElliotWood/Forever 40be98e, affliction-raid): removing it costs 0.0% DPS in the simulator (scorer said 2.1% on the same scale); raid values scaled x0.24 to match (0.4%). Other modes unchanged. PvP (2026-09-27): low, defensive: Drain Life heals 20% more (Drain Soul and Wrack hit harder): a little more self-healing while drain-tanking a melee. The damage is counted; drain healing is not in the survival term. Fight lab calibration (2026-09-30, levels 30,60): removing it costs 0.3% time per kill in the simulator (scorer said 0.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.2%). Other modes unchanged.",
     "effects": [

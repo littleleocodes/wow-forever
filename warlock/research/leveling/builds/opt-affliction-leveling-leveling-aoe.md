@@ -1,13 +1,13 @@
-# Optimizer — Voidwalker tank: Corruption 24%, Agony 14%, Drain Life 16%, Shadow Bolt 14%, Immolate 6%, wand 6%, Voidwalker 20% (leveling-aoe) — 17/24/10
+# Optimizer — Voidwalker tank: Corruption 24%, Agony 14%, Drain Life 16%, Shadow Bolt 14%, Immolate 6%, wand 6%, Voidwalker 20% (leveling-aoe) — 14/24/13
 
 *[Warlock](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 17/24/10 (Affliction / Demonology / Destruction) |
+| **Build** | 14/24/13 (Affliction / Demonology / Destruction) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70291 (2026-10-08 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -15,13 +15,13 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `afflicti
 
 ## Point allocation
 
-### Affliction (17)
+### Affliction (14)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Corruption** | 5/5 | changed | Reduces the casting time of your Corruption spell by 2 sec and increases the damage it deals by 10%. |
 | **Suppression** | 5/5 | changed | Improves your chance to hit by 5% and reduces all threat you generate by 20%. |
-| **Malediction** | 5/5 | **NEW** | Increases all periodic damage done by your Warlock spells by 5%. |
+| **Improved Drains** | 2/3 | **NEW** | Increases health drained or damage done by your Drain Life, Drain Soul, and Wrack spells by 13%. |
 | **Improved Bane of Agony** | 2/2 | **NEW** | Increases the damage done by your Bane of Agony by 10%. |
 
 ### Demonology (24)
@@ -31,55 +31,31 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `afflicti
 | **Demonic Embrace** | 5/5 | changed | Increases your total Stamina by 15%. |
 | **Unholy Power** | 5/5 | changed | Increases all damage done by your Imp, Voidwalker, Succubus, Incubus, and Felhunter pets by 10%. |
 | **Demonic Aegis** | 2/2 | **NEW** | Increases the effectiveness of your Demon Skin and Demon Armor spells by 30%. |
-| **Improved Voidwalker** | 3/3 | unchanged | Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice, and Suffering spells by 30%. |
 | **Demonic Energies** | 1/2 | **NEW** | You heal your pet for 8% of all spell damage you deal. When you gain Mana from Life Tap, your summoned demon gains 50% of the Mana you gain. |
+| **Improved Voidwalker** | 3/3 | unchanged | Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice, and Suffering spells by 30%. |
 | **Demonic Sacrifice** | 1/1 | changed | When activated, sacrifices your summoned Demon to enhance the opposing aspect of your power, granting you an effect that lasts 2 hrs. The effect is canceled if any Demon is summoned.  Imp: Increases your Shadow damage by 15%.  Voidwalker: Restores 2% of your total Mana every 4 sec.  Succubus/Incubus: Increases your Fire damage by 15%.  Felhunter: Restores 3% of your total Health every 4 sec. |
 | **Master Summoner** | 2/2 | moved | Reduces the casting time of your Imp, Voidwalker, Succubus, Incubus, and Felhunter Summoning spells by 4 sec and the Mana cost by 40%. |
 | **Fel Domination** | 1/1 | changed | Your next Imp, Voidwalker, Succubus, Incubus, or Felhunter Summon spell has its casting time reduced by 5.5 sec and its Mana cost reduced by 50%. |
-| **Soul Link** | 1/1 | changed | When active, 30% of all damage taken by the caster is taken by your Imp, Voidwalker, Succubus, Incubus, or Felhunter Demon instead. In addition, both the Demon and the master will inflict 3% more damage. Lasts as long as the Demon is active. |
 | **Demonic Knowledge** | 3/3 | **NEW** | Increases your spell damage and your Demon pet's spell damage by up to 100% of your level while you have a summoned Demon pet active. |
+| **Soul Link** | 1/1 | changed | When active, 30% of all damage taken by the caster is taken by your Imp, Voidwalker, Succubus, Incubus, or Felhunter Demon instead. In addition, both the Demon and the master will inflict 3% more damage. Lasts as long as the Demon is active. |
 
-### Destruction (10)
+### Destruction (13)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Bane** | 2/5 | changed | Reduces the casting time of your Shadow Bolt, Immolate, and Incinerate spells by 0.2 sec and your Soul Fire spell by 0.8 sec. |
 | **Improved Shadow Bolt** | 3/5 | changed | Your Shadow Bolt critical strikes increase Shadow damage taken by the target from your attacks by 12% for 12 sec. |
+| **Cataclysm** | 3/3 | changed | Reduces the Mana cost of your Destruction spells by 10%. |
 | **Molten Skin** | 5/5 | **NEW** | Reduces all damage taken by 10%. |
-
-## Leveling order
-
-| Levels | Tree | Talent | Pts | Running total |
-|---|---|---|---|---|
-| 10-14 | Demonology | Demonic Embrace | 5 | 0/5/0 |
-| 15-16 | Demonology | Demonic Aegis | 2 | 0/7/0 |
-| 17-19 | Demonology | Unholy Power | 3 | 0/10/0 |
-| 20 | Demonology | Demonic Sacrifice | 1 | 0/11/0 |
-| 21-22 | Demonology | Unholy Power | 2 | 0/13/0 |
-| 23 | Demonology | Demonic Energies | 1 | 0/14/0 |
-| 24-26 | Demonology | Improved Voidwalker | 3 | 0/17/0 |
-| 27-28 | Demonology | Master Summoner | 2 | 0/19/0 |
-| 29 | Demonology | Fel Domination | 1 | 0/20/0 |
-| 30 | Demonology | Soul Link | 1 | 0/21/0 |
-| 31-33 | Demonology | Demonic Knowledge | 3 | 0/24/0 |
-| 34-38 | Affliction | Improved Corruption | 5 | 5/24/0 |
-| 39-43 | Affliction | Suppression | 5 | 10/24/0 |
-| 44-45 | Affliction | Improved Bane of Agony | 2 | 12/24/0 |
-| 46-47 | Destruction | Bane | 2 | 12/24/2 |
-| 48-52 | Affliction | Malediction | 5 | 17/24/2 |
-| 53-55 | Destruction | Improved Shadow Bolt | 3 | 17/24/5 |
-| 56-60 | Destruction | Molten Skin | 5 | 17/24/10 |
 
 ## Core talents (priority order)
 
 1. **Soul Link** — Removing it costs 19.4 points of score in this model.
 2. **Improved Corruption** — Removing it costs 4.8 points of score in this model.
 3. **Demonic Knowledge** — Removing it costs 3.5 points of score in this model.
-4. **Malediction** — Removing it costs 1.8 points of score in this model.
-5. **Improved Bane of Agony** — Removing it costs 1.7 points of score in this model.
-6. **Demonic Embrace** — Removing it costs 1.4 points of score in this model.
-7. **Shadow Mastery** — Removing it costs 1.0 points of score in this model.
-8. **Suppression** — Removing it costs 0.9 points of score in this model.
+4. **Improved Bane of Agony** — Removing it costs 1.7 points of score in this model.
+5. **Demonic Embrace** — Removing it costs 1.4 points of score in this model.
+6. **Suppression** — Removing it costs 0.9 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
@@ -109,6 +85,8 @@ What this build casts per kill ([report](../fightlab/affliction-leveling-aoe.md)
 
 - Allocation and order taken from cand-aoe-r8 on 2026-10-15: an earlier optimizer round beat the last export in the fight lab (44.6s vs 46.4s per kill, level-weighted).
 - Report: warlock/research/talents/forever/optimizer/affliction-leveling-leveling-aoe.md
+- 2026-10-16 (repair_builds.py, client build 70425 trees): 17/24/10 -> 14/24/13; Malediction 5 gone; refill +3 Cataclysm, +2 Improved Drains; order dropped (order_repair.py) (refill: the affliction-leveling model, leveling-aoe).
+- 2026-10-17 (audit of 2026-10-17, finding 26): core Malediction, Shadow Mastery dropped (not in the allocation; Malediction was replaced by Grim Reach in 70425).
 
 ## Open questions (verify in the live game)
 

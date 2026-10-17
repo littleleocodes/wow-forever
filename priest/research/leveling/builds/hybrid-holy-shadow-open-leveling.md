@@ -7,7 +7,7 @@
 | **Build** | 16/17/18 (Discipline / Holy / Shadow) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70291 (2026-10-08 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -19,21 +19,21 @@ The Holy-Shadow (a Holy/Shadow hybrid) leveling build the open leveling search f
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Wand Specialization** | 2/2 | changed | Increases your damage with Wands by 25%. |
 | **Twin Disciplines** | 5/5 | **NEW** | Increases the damage and healing of your instant cast spells by 5%. |
+| **Wand Specialization** | 2/2 | changed | Increases your damage with Wands by 25%. |
+| **Mental Strength** | 3/5 | changed | Increases your total Intellect by 6%. |
 | **Improved Power Word: Shield** | 3/3 | changed | Increases the damage absorbed by your Power Word: Shield by 20%. |
-| **Mental Agility** | 1/3 | changed | Reduces the mana cost of your Smite, Holy Fire, and instant cast spells by 3%. |
 | **Inner Focus** | 1/1 | changed | When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is a non-periodic spell and capable of a critical effect. |
-| **Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
+| **Meditation** | 1/3 | changed | Allows 17% of your Mana regeneration to continue while casting. |
 | **Soul Warding** | 1/1 | **NEW** | Reduces the cooldown on your Power Word: Shield spell by 4 sec and reduces its mana cost by 15%. |
 
 ### Holy (17)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Twilight Focus** | 3/3 | **NEW** | Gives you a 70% chance to avoid interruption caused by damage while casting any spell. |
-| **Improved Renew** | 3/3 | unchanged | Increases the amount healed by your Renew spell by 15%. |
 | **Holy Specialization** | 4/5 | unchanged | Increases the critical effect chance of your Holy spells by 4%. |
+| **Improved Renew** | 3/3 | unchanged | Increases the amount healed by your Renew spell by 15%. |
+| **Twilight Focus** | 3/3 | **NEW** | Gives you a 70% chance to avoid interruption caused by damage while casting any spell. |
 | **Divine Fury** | 5/5 | changed | Reduces the casting time of your Smite, Holy Fire, Heal, and Greater Heal spells by 0.5 sec. |
 | **Searing Light** | 2/2 | changed | Increases your Holy damage done by 5%, and gives a 10% chance each time your Holy Fire spell deals periodic damage for your next Holy Nova to cost no Mana. |
 
@@ -43,34 +43,10 @@ The Holy-Shadow (a Holy/Shadow hybrid) leveling build the open leveling search f
 |---|---|---|---|
 | **Shadow Focus** | 3/5 | changed | Improves your chance to hit with Shadow spells by 3%. |
 | **Spirit Tap** | 5/5 | changed | Gives you a 100% chance to increase your Spirit by 100% for 15 sec after killing a non-trivial target or when an enemy afflicted by your Vampiric Embrace dies. For the duration, 50% of your Mana regeneration will continue while casting. |
-| **Improved Shadow Word: Pain** | 2/2 | moved | Increases the duration of your Shadow Word: Pain spell by 6 sec. |
 | **Improved Mind Blast** | 4/5 | changed | Reduces the cooldown of your Mind Blast spell by 2 sec. |
+| **Improved Shadow Word: Pain** | 2/2 | moved | Increases the duration of your Shadow Word: Pain spell by 6 sec. |
 | **Mind Flay** | 1/1 | changed | Assault the target's mind with Shadow energy, causing 63 Shadow damage over 3 sec and slowing their movement speed by 50%. |
-| **Shadow Weaving** | 3/3 | changed | Your Shadow damage spells have a 100% chance to increase the Shadow damage you deal by 2% for 15 sec, stacking up to 5 times. |
-
-## Leveling order
-
-| Levels | Tree | Talent | Pts | Running total |
-|---|---|---|---|---|
-| 10-12 | Shadow | Shadow Focus | 3 | 0/0/3 |
-| 13-17 | Shadow | Spirit Tap | 5 | 0/0/8 |
-| 18-19 | Shadow | Improved Shadow Word: Pain | 2 | 0/0/10 |
-| 20 | Shadow | Mind Flay | 1 | 0/0/11 |
-| 21-24 | Shadow | Improved Mind Blast | 4 | 0/0/15 |
-| 25 | Discipline | Wand Specialization | 1 | 1/0/15 |
-| 26-28 | Shadow | Shadow Weaving | 3 | 1/0/18 |
-| 29-33 | Discipline | Twin Disciplines | 5 | 6/0/18 |
-| 34-36 | Discipline | Improved Power Word: Shield | 3 | 9/0/18 |
-| 37 | Discipline | Wand Specialization | 1 | 10/0/18 |
-| 38-40 | Discipline | Meditation | 3 | 13/0/18 |
-| 41 | Discipline | Inner Focus | 1 | 14/0/18 |
-| 42 | Discipline | Mental Agility | 1 | 15/0/18 |
-| 43 | Discipline | Soul Warding | 1 | 16/0/18 |
-| 44-46 | Holy | Twilight Focus | 3 | 16/3/18 |
-| 47-49 | Holy | Improved Renew | 3 | 16/6/18 |
-| 50-53 | Holy | Holy Specialization | 4 | 16/10/18 |
-| 54-58 | Holy | Divine Fury | 5 | 16/15/18 |
-| 59-60 | Holy | Searing Light | 2 | 16/17/18 |
+| **Shadow Weaving** | 3/3 | changed | Your Shadow damage spells have a 100% chance to increase the Shadow damage the target takes from you by 2% for 15 sec, stacking up to 5 times. |
 
 ## Core talents (priority order)
 
@@ -91,6 +67,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 - Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 43.14; holy-leveling 51.98. The search simulated 41,544 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
+- 2026-10-16 (repair_builds.py, client build 70425 trees): 16/17/18 -> 16/17/18; +1 Mental Strength (tier gating for Improved Power Word: Shield); +1 Mental Strength (tier gating for Improved Power Word: Shield); +1 Mental Strength (tier gating for Improved Power Word: Shield); -1 Mental Agility (over 51); -1 Meditation (over 51); -1 Meditation (over 51); order dropped (order_repair.py) (refill: the shadow-dps model, leveling-st).
 
 ## Open questions (verify in the live game)
 

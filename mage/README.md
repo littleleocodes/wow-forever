@@ -1,9 +1,9 @@
 # Mage
 
 > Classic: Frost for Molten Core and Blackwing Lair, Fire once fire immunity stops mattering, one Winter's Chill mage per raid.
-> Forever adds Ice Lance, Fingers of Frost and a 3-rank Shatter to Frost, Heating Up and Wake of Fire to Fire, Arcane Blast and Missile
-> Barrage to Arcane, and the new Frostfire Bolt; Winter's Chill and Improved Scorch become personal debuffs. Playable by 6 races (Orc is
-> new) plus Skyborne (Alliance).
+> Forever adds Ice Lance, Fingers of Frost and a 3-rank Shatter to Frost, Heating Up to Fire, Arcane Blast, Missile Barrage and Arcane
+> Wrath to Arcane, and the new Frostfire Bolt and Frost Blast; Improved Scorch becomes a personal debuff and Winter's Chill (client
+> 70425) a stacking boost to your next Cone of Cold. Playable by 6 races (Orc is new) plus Skyborne (Alliance).
 
 ## Pick your spec
 
@@ -60,25 +60,30 @@ Differences under 2-3% are within the simulations' noise and assumptions: treat 
 
 ## Roles and specs
 
-| Spec | Raid role | Classic standing | Forever outlook (beta client build 1.60.1.70291) |
+| Spec | Raid role | Classic standing | Forever outlook (beta client build 1.60.1.70425; rankings from the 2026-10-15 races on 70291) |
 |---|---|---|---|
-| Arcane | Raid DPS | A dip tree: Arcane Power and Presence of Mind for Frost builds | A spec of its own: Arcane Blast stacks spent by free Arcane Missiles (Missile Barrage) and a Fire Blast every 6 seconds (11 points in Fire). In a full raid it ties with the other mage specs (2026-10-15); one of the two slowest levelers in the fight lab, with Fire. |
+| Arcane | Raid DPS | A dip tree: Arcane Power and Presence of Mind for Frost builds | A spec of its own: Arcane Blast stacks (since client 70425 each gives 15% of your Intellect as spell damage for 15 seconds, and no spell spends them), free Arcane Missiles from Missile Barrage, the new Arcane Wrath and a Fire Blast every 6 seconds (11 points in Fire in the 2026-10-15 build). In a full raid it ties with the other mage specs (2026-10-15); one of the two slowest levelers in the fight lab, with Fire. |
 | Fire | Raid DPS | Top damage from AQ40 on, once fire immunity stops mattering | Heating Up Pyroblasts (a 1.5-second cast at 3 stacks), a personal Improved Scorch debuff and Fire Blast on cooldown; the most mana-hungry spec. Ties in a full raid (2026-10-15); levels on Fireball plus Ice Lance into Frost Nova, the slowest of the five leveling pages. |
-| Frost | Raid DPS | The safe raid spec and the PvP spec | Fingers of Frost, Ice Lance, a 3-rank Shatter and a personal Winter's Chill make deep Frost a damage spec: a tie in a full raid and the clear leveling pick, the other mage pages take 17-23% longer per kill in the fight lab (2026-10-15). |
+| Frost | Raid DPS | The safe raid spec and the PvP spec | Fingers of Frost, Ice Lance (+200% against frozen targets since 70425, was +300%) and a 3-rank Shatter make deep Frost a damage spec: a tie in a full raid and the clear leveling pick, the other mage pages take 17-23% longer per kill in the fight lab (2026-10-15). |
 
 Hybrids with their own pages: Arcane-Frost (the Frost raid list with 28 Arcane points: Missile Barrage, Arcane Mind, Arcane Instability; leveling and raid), Frostfire (Frostfire Bolt with Fire's Heating Up and Frost's Fingers of Frost; leveling and raid).
 
-## Forever headline changes (beta client build 1.60.1.70291, 2026-10-08)
+## Forever headline changes (beta client build 1.60.1.70425, 2026-10-16)
 
-Forever's mage has 54 talents (18 Arcane, 17 Fire, 19 Frost): 9 are new, 2 are Classic talents under a new name, and 4 Classic talents are gone.
+Forever's mage has 55 talents (19 Arcane, 17 Fire, 19 Frost): 9 are new, 2 are Classic talents under a new name, and 3 Classic talents are gone.
 
-- **Removed talents:** Magic Attunement, Improved Arcane Explosion, Improved Mana Shield (Arcane); Improved Fire Blast (Fire).
-- **New talents:** Arcane Geometry, Arcane Impact, Arcane Blast, Arcane Shielding, Missile Barrage (Arcane); Wake of Fire, Heating Up (Fire; called Hot Streak until build 70170); Ice Lance, Fingers of Frost (Frost).
-- **Renamed:** Improved Arcane Missiles is Improved Channeling (it also protects Arcane Blast from interruption, 70% at 5 points); Incinerate is Incineration (crit for Fire Blast, Scorch, Ice Lance and Arcane Blast).
-- **Moved or reworked:** Elemental Precision 5 ranks (1% hit each); Arcane Meditation 3 ranks (up to 50% of your mana regeneration while casting); Shatter 3 ranks (up to +50% crit against frozen targets); Magic Absorption, Arcane Resilience 2 ranks; Impact, Burning Soul 3 ranks; Ice Block to tier 4, Cold Snap to tier 5; Arcane Mind adds +100% Arcane crit damage. Winter's Chill raises only your own Frostbolt and Ice Lance crit (+2% a stack, 5 stacks) and Improved Scorch only your own Fire damage (+3% a stack, 5 stacks): neither is a raid debuff any more.
-- **Spells:** Frostfire Bolt (ranks at 40, 50 and 60; counts as Fire and Frost, checked against the lower of the two resistances) and Teleport: Dalaran (level 50). Arcane Blast: each cast adds 10% to your other spells and 175% to its own next cost, 4 stacks, 8 seconds. Missile Barrage: 40% per Arcane Blast, 20% per Fireball, Frostbolt or Frostfire Bolt, for a free Arcane Missiles in half the time. Fingers of Frost: 15% per chill, your next 2 spells act as if the target were frozen. Ice Lance: 300% more damage to frozen targets. Heating Up: each crit takes 25% off your next Pyroblast's cast, 3 stacks. Base damage at top rank against Classic: Fireball -29%, Scorch -30%, Pyroblast -27%, Frostbolt -11%, Arcane Missiles -9%, Fire Blast -7%.
+- **Removed talents:** Magic Attunement, Improved Arcane Explosion, Improved Mana Shield (Arcane).
+- **New talents:** Arcane Geometry, Arcane Impact, Arcane Blast, Arcane Shielding, Missile Barrage, Arcane Wrath (Arcane; Arcane Wrath since 70425, the 16-point talent); Heating Up (Fire; called Hot Streak until build 70170); Ice Lance, Fingers of Frost (Frost). Wake of Fire (Fire, new in 70009) went back to Improved Fire Blast in 70425.
+- **Renamed:** Improved Arcane Missiles is Improved Channeling (it also protects Arcane Blast and, since 70425, Arcane Wrath from interruption, 70% at 5 points); Incinerate is Incineration (crit for Fire Blast, Scorch, Ice Lance and Arcane Blast).
+- **Moved or reworked:** Improved Fire Blast 2 ranks (Fire Blast's cooldown -2 sec and +15 yards range; Classic had 5 ranks of -0.5 sec); Missile Barrage 2 ranks in tier 1 (since 70425); Critical Mass 5 ranks (+10% Fire crit); Fire Power 3 ranks, 1/2/3% more Fire damage per Fire effect of yours on the target (Ignite, Improved Scorch, Fireball, Pyroblast, Impact), at most 12% (since 70425; a flat 2% a rank before); Elemental Precision 5 ranks (1% hit each); Arcane Meditation 3 ranks (up to 50% of your mana regeneration while casting); Shatter 3 ranks (up to +50% crit against frozen targets); Magic Absorption, Arcane Resilience 2 ranks; Impact, Burning Soul 3 ranks; Ice Block to tier 4, Cold Snap to tier 5; Arcane Mind adds +100% Arcane crit damage. Improved Scorch raises only your own Fire damage (+3% a stack, 5 stacks): no longer a raid debuff. Winter's Chill (client 70425) no longer adds crit: Frostbolt, Frost Blast and a Fingers of Frost Ice Lance give 20% a rank to put a stack on the target (5 stacks), each stack gives your next Cone of Cold +5% damage and 7% of your spell damage, and that Cone of Cold spends them (Blizzard's notes of 2026-10-16; the tooltip still reads 40% a stack).
+- **Spells:** Frostfire Bolt (ranks at 40, 50 and 60; counts as Fire and Frost, checked against the lower of the two resistances) and Teleport: Dalaran (level 50). Frost Blast (client 70425, ranks at 24, 36 and 48: a 1.5-second cast, 80-88 Frost damage at rank 3, a 40% slow for 9 seconds; Frostbolt's talents apply). Arcane Blast (client 70425): a 1.5-second cast (was 2.5), 218-254 at rank 5; each cast gives you 15% of your Intellect as spell damage and adds 175% to its own next cost, 4 stacks, 15 seconds from the first (before: +10% to your other spells, 8 seconds). Arcane Wrath (the talent): 406-496 Arcane damage at rank 4, a 3.5-second cast, 6-second cooldown, plus spell damage equal to 5% of your maximum mana. Missile Barrage at 2 points: 40% per Arcane Blast, 10% per Arcane Missiles hit, 20% per Arcane Wrath, Fireball, Frostbolt or Frostfire Bolt, for a free Arcane Missiles in half the time. Cone of Cold: 4 ranks to level 50 (260-286), and the first 4 targets are slowed 10% more for 3 seconds longer. Fingers of Frost: 15% per chill, your next 2 spells act as if the target were frozen. Ice Lance: 200% more damage to frozen targets (300% before 70425). Heating Up: each crit takes 25% off your next Pyroblast's cast, 3 stacks. Base damage at top rank against Classic: Fireball -29%, Scorch -30%, Pyroblast -27%, Frostbolt -11%, Arcane Missiles -9%, Fire Blast -7%.
 - **Beta notes (to 2026-10-08):** wands no longer gain spell damage; ranks far below your level get less of your spell damage and fewer talent procs; Arcane Missiles checks line of sight once, at the start of the channel; Ignite no longer double-dips on damage bonuses; Improved Scorch and Winter's Chill no longer roll a second resist.
-- **Simulator assumptions:** beyond the tooltips (ElliotWood/Forever, client 70291), Presence of Mind shares Combustion's 3-minute cooldown (client data); Arcane Missiles take 15% per Arcane Blast stack (the tooltip says 10%) and Ice Lance has a 0.10 spell-power coefficient, both fitted to beta combat logs; our runs assume TBC's formula for the low-rank penalty, since Blizzard published none.
+- **Beta notes (16 Oct, build 70425):** wands need 0.5 seconds standing still before shooting; Presence of Mind is consumed by spell casts,
+  and Heating Up is not consumed when Presence of Mind made the Pyroblast instant; Fire Blast always adds a Heating Up charge (a crit adds
+  two); Clearcasting rolls once per spell (not per target struck), not from Dampen or Amplify Magic and not out of combat; Missile Barrage
+  no longer reduces a second Arcane Missiles; Frost Channeling reduces threat; Frostbite and Fingers of Frost trigger from Ice Armor and
+  Frost Armor.
+- **Simulator assumptions:** beyond the tooltips (ElliotWood/Forever at 2ce8265, client 70291: the raid numbers on these pages; the fork's 70425 trees landed on 2026-10-17 and our re-run on them is pending), Presence of Mind shares Combustion's 3-minute cooldown (client data); Arcane Missiles took 15% per Arcane Blast stack (the 70291 tooltip said 10%; since 70425 the stacks give spell damage instead) and Ice Lance has a 0.10 spell-power coefficient, both fitted to beta combat logs; our runs assume TBC's formula for the low-rank penalty, since Blizzard published none.
 
 ## Research files
 

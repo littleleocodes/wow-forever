@@ -7,7 +7,7 @@
 | **Build** | 5/14/32 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70291 (2026-10-08 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
@@ -40,8 +40,8 @@ The Survival build the machine-learning talent search found in a full raid (ever
 | **Clever Traps** | 2/2 | unchanged | Increases the duration of Freezing and Frost trap effects by 30% and the damage of Immolation and Explosive trap effects by 30%. |
 | **Surefooted** | 3/3 | changed | Increases your hit chance by 3% and reduces the duration of movement impairing effects on you by 30%. |
 | **Survival Tactics** | 1/2 | **NEW** | Increases your chance to hit with your Trap and Feign Death abilities by 5%. |
-| **Predator's Edge** | 5/5 | **NEW** | Increases your melee critical strike damage by 30% and your Off Hand weapon damage by 50%. |
-| **Expose Prey** | 2/2 | **NEW** | Your attacks against targets with Hunter's Mark have a 10% chance to activate your Mongoose Bite for 10 sec. |
+| **Predator's Edge** | 5/5 | **NEW** | Increases your melee ability critical strike damage by 30% and your Off Hand weapon damage by 50%. |
+| **Expose Prey** | 2/2 | **NEW** | Grants your melee and ranged attacks against enemies afflicted by Hunter's Mark a 10% chance to allow an activation of Mongoose Bite. Lasts 10 sec. |
 | **Survivalist's Discipline** | 2/2 | **NEW** | Reduces the cooldown of your Trap and Deterrence abilities by 40%. |
 | **Strider Kick** | 1/1 | **NEW** | A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec. |
 | **Lightning Reflexes** | 5/5 | changed | Increases your Agility by 10%. |
@@ -49,15 +49,15 @@ The Survival build the machine-learning talent search found in a full raid (ever
 
 ## Rank among our builds and the community simulator's
 
-**5 of 5** for `melee-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**5 of 5** for `melee-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever b7083fa); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`survival-raid`](survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 488 | +0.0% | 987 | -2.9% | 9 s |
-| 2 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 466 | -4.5% | 1007 | -1.0% | 44 s |
-| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 465 | -4.8% | 975 | -4.1% | 8 s |
-| 4 | [`beast-survival-open-raid`](beast-survival-open-raid.md) | ours: derived (open search) | 16/11/24 | 360 | -26.3% | 1017 | +0.0% | 127 s |
-| 5 | **[`survival-ml-parse`](survival-ml-parse.md)** | ours: derived (ML search) | 5/14/32 | 360 | -26.3% | 959 | -5.7% | 117 s |
+| 1 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 496 | +0.0% | 1019 | -0.6% | 16 s |
+| 2 | [`survival-raid`](survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 494 | -0.3% | 999 | -2.6% | 0 s |
+| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 471 | -5.0% | 986 | -3.9% | 0 s |
+| 4 | [`beast-survival-open-raid`](beast-survival-open-raid.md) | ours: derived (open search) | 16/11/24 | 369 | -25.5% | 1026 | +0.0% | 126 s |
+| 5 | **[`survival-ml-parse`](survival-ml-parse.md)** | ours: derived (ML search) | 5/14/32 | 364 | -26.5% | 969 | -5.6% | 117 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -71,7 +71,7 @@ The Survival build the machine-learning talent search found in a full raid (ever
   7. move to the top: cast Mongoose Bite (+0.2%, pass 4)
   8. move to the top: cast Aspect of the Beast (+0.2%, pass 4)
   9. move to the top: if auraIsInactive: cast Summon Hawk (+0.3%, pass 7)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 10 passes, the last 2026-10-09, 4 changes to the base rotation; third-seed check: beast-survival-open-raid 736 -> 1057 DPS (+43.6%), melee-survival-raid 764 -> 1048 DPS (+37.1%), opt-melee-dps-raid-dps 764 -> 1017 DPS (+33.1%), survival-raid 749 -> 1028 DPS (+37.3%), survival-ml-parse 729 -> 999 DPS (+37.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 11 passes, the last 2026-10-16, 4 changes to the base rotation; third-seed check: beast-survival-open-raid 708 -> 1027 DPS (+45.0%), melee-survival-raid 735 -> 1017 DPS (+38.4%), opt-melee-dps-raid-dps 735 -> 987 DPS (+34.2%), survival-raid 720 -> 998 DPS (+38.5%), survival-ml-parse 701 -> 969 DPS (+38.4%)):
   1. insert before the filler: cast Wing Clip (+10.3%, pass 1)
   2. spell probe: insert in the middle: if auraIsInactive: cast Summon Hawk (+15.0%, pass 2)
   3. move down below 'cast Strider Kick': if auraIsInactive: cast Summon Hawk (+0.3%, pass 10)
@@ -82,13 +82,13 @@ Before the pull: at -3s: cast Hunter's Mark.
 | # | Priority (the first line whose condition holds is cast) | [`survival-ml-parse`](survival-ml-parse.md) casts/min |
 |---|---|---|
 | 1 | cast Aspect of the Beast | 0.3 |
-| 2 | cast Mongoose Bite | 8.2 |
-| 3 | cast Raptor Strike | 13.5 |
+| 2 | cast Mongoose Bite | 9.8 |
+| 3 | cast Raptor Strike | 12.4 |
 | 4 | cast Immolation Trap | 1.7 |
 | 5 | use every other cooldown when ready | as ready |
 | 6 | cast Strider Kick | 2.8 |
 | 7 | cast Major Mana Potion | as ready |
-| 8 | cast Wing Clip | 9.6 |
+| 8 | cast Wing Clip | 9.5 |
 
 Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Counterattack (needs the Counterattack talent); cast Explosive Trap (its condition never held in these fights).
 
@@ -96,10 +96,10 @@ Damage by ability:
 
 | Ability | [`survival-ml-parse`](survival-ml-parse.md) |
 |---|---|
-| Auto Attack | 55% |
-| Raptor Strike | 14% |
-| Mongoose Bite | 12% |
-| Immolation Trap | 9% |
+| Auto Attack | 54% |
+| Mongoose Bite | 14% |
+| Raptor Strike | 13% |
+| Immolation Trap | 8% |
 | Strider Kick | 4% |
 | Wing Clip | 3% |
 | Dragonbreath Chili | 3% |

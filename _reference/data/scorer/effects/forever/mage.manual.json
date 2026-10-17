@@ -647,37 +647,6 @@
       }
     ]
   },
-  "Hot Streak": {
-    "note": "Three Fire crits (Fireball/Scorch/Fire Blast) make Pyroblast a 1.5s cast (-75%). Raid at ~25% crit: three crits per ~12 casts -> a 1.5s Pyroblast (~1.6x Fireball damage) replaces a Fireball every ~40s -> ~+2%. Leveling at ~8% crit: rare -> +0.5%. Raid (fire-raid, 2026-09-27): the simulator's Pyroblasts (9.5% of the damage, all on Hot Streak) are 1.5 s casts at ~1.6x a Fireball's damage, ~3.7x Fireball's damage per second of casting, so they fill ~2.8% of the casting time: without Hot Streak that time goes to Fireball and DPS drops ~7%. The removal run is unusable (the rotation checks the proc aura, HotStreakTriggered: it measured 74.5%), so raidsim/calibrate.py leaves this value alone (the earlier fit had matched the broken +77%). PvP (2026-09-27): medium, burst: Fireball, Frostfire Bolt, Fire Blast and Scorch crits stack Hot Streak (20 s): at 3 stacks Pyroblast is a 1.5 s cast, a castable big hit in PvP; Fire PvP only.",
-    "effects": [
-      {
-        "channel": "dmg",
-        "scope": ["school:fire"],
-        "values": [0.005],
-        "modes": ["leveling"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["school:fire"],
-        "values": [0.02],
-        "modes": ["raid"],
-        "specs": ["frost-leveling", "frost-aoe", "fire-leveling", "frost-raid"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["school:fire"],
-        "values": [0.07],
-        "modes": ["raid"],
-        "specs": ["fire-raid"]
-      },
-      {
-        "channel": "utility",
-        "scope": ["mode:pvp"],
-        "per_rank": 0.015,
-        "modes": ["pvp"]
-      }
-    ]
-  },
   "Master of Elements": {
     "note": "10%/rank of base mana refunded on Fire/Frost crits: refund = 0.1r * crit chance. Leveling (8% crit): ~0.8%/rank; raid (25% crit): 2.5%/rank. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, fire-raid, training dummy): removing it costs 3.8% DPS in the simulator (scorer said 4.0% on the same scale); already within tolerance, raid effects split off unchanged (4.0%). Other modes unchanged.",
     "effects": [

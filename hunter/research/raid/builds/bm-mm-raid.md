@@ -7,7 +7,7 @@
 | **Build** | 22/29/0 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70291 (2026-10-08 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 | **Based on** | Classic baseline `bm-mm-raid` |
 
 ## Summary
@@ -37,7 +37,7 @@ Allocation adopted on 2026-10-02 from `opt-mm-raid-raid-dps`, the best build in 
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
 | **Improved Stings** | 3/3 | **NEW** | Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
 | **Improved Arcane Shot** | 1/5 | changed | Reduces the cooldown of your Arcane Shot by 0.3 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot. |
-| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party members within 45 yds by 30. |
+| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 30. |
 | **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
 | **Ranged Weapon Specialization** | 4/5 | unchanged | Increases the damage you deal with ranged weapons by 4%. |
 
@@ -65,18 +65,18 @@ Allocation adopted on 2026-10-02 from `opt-mm-raid-raid-dps`, the best build in 
 
 ## Rank among our builds and the community simulator's
 
-**2 of 8** for `mm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 8** for `mm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b7083fa); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 471 | +0.0% | 801 | -8.9% | 70 s |
-| 2 | **[`bm-mm-raid`](bm-mm-raid.md)** | ours: hand draft | 22/29/0 | 459 | -2.5% | 803 | -8.7% | 53 s |
-| 3 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 22/29/0 | 459 | -2.5% | 803 | -8.7% | 53 s |
-| 4 | *Marksmanship* | community simulator | - | 453 | -3.8% | 843 | -4.1% | 89 s |
-| 5 | [`marksmanship-with-a-pet-open-raid`](marksmanship-with-a-pet-open-raid.md) | ours: derived (open search) | 7/39/5 | 451 | -4.2% | 879 | +0.0% | 98 s |
-| 6 | *Beast Mastery 35/16/0* | community simulator | - | 444 | -5.7% | 768 | -12.7% | 75 s |
-| 7 | *Marksmanship 0/39/12* | community simulator | - | 428 | -9.0% | 776 | -11.7% | 83 s |
-| 8 | *Survival 0/15/36* | community simulator | - | 394 | -16.3% | 678 | -22.8% | 76 s |
+| 1 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 475 | +0.0% | 808 | -8.7% | 68 s |
+| 2 | **[`bm-mm-raid`](bm-mm-raid.md)** | ours: hand draft | 22/29/0 | 464 | -2.3% | 811 | -8.3% | 54 s |
+| 3 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 22/29/0 | 464 | -2.3% | 811 | -8.3% | 54 s |
+| 4 | *Marksmanship* | community simulator | - | 457 | -3.9% | 850 | -3.9% | 89 s |
+| 5 | [`marksmanship-with-a-pet-open-raid`](marksmanship-with-a-pet-open-raid.md) | ours: derived (open search) | 7/39/5 | 454 | -4.4% | 885 | +0.0% | 98 s |
+| 6 | *Beast Mastery 35/16/0* | community simulator | - | 449 | -5.5% | 777 | -12.2% | 75 s |
+| 7 | *Marksmanship 0/39/12* | community simulator | - | 434 | -8.7% | 795 | -10.1% | 83 s |
+| 8 | *Survival 0/15/36* | community simulator | - | 399 | -16.1% | 684 | -22.7% | 76 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -93,7 +93,7 @@ Allocation adopted on 2026-10-02 from `opt-mm-raid-raid-dps`, the best build in 
   10. threshold 10s -> 15s: if auraIsInactive and time left in the fight ≥ 10s: cast Summon Hawk + only above 10% mana: if time to the next auto attack > 1s: cast Multi-Shot (+0.2%, pass 9)
   11. insert in the middle: cast Intimidation + only above 60% mana: cast Intimidation (+0.3%, pass 9)
   12. threshold 20% -> 15%: if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 20%: cast Aimed Shot (+0.2%, pass 10)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 10 passes, the last 2026-10-09, 10 changes to the base rotation; third-seed check: open winner 821 -> 881 DPS (+7.4%), bm-mm-full-buffs-raid 788 -> 802 DPS (+1.8%), sim preset: Marksmanship 785 -> 845 DPS (+7.7%), bm-mm-raid 786 -> 806 DPS (+2.7%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 11 passes, the last 2026-10-16, 10 changes to the base rotation; third-seed check: marksmanship-with-a-pet-open-raid 825 -> 886 DPS (+7.3%), sim preset: Marksmanship 789 -> 850 DPS (+7.6%), bm-mm-raid 791 -> 812 DPS (+2.6%), bm-mm-full-buffs-raid 794 -> 808 DPS (+1.8%)):
   1. drop: if time to the next auto attack > 1s: cast Aimed Shot (+1.0%, pass 1)
   2. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.3%, pass 1)
   3. only with 6s or more of the fight left: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 1)
@@ -110,11 +110,11 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 | # | Priority (the first line whose condition holds is cast) | [`bm-mm-raid`](bm-mm-raid.md) casts/min |
 |---|---|---|
 | 1 | if auraIsInactive and time left in the fight ≥ 15s: cast Summon Hawk | 8.3 |
-| 2 | cast Arcane Shot | 0.8 |
+| 2 | cast Arcane Shot | 0.7 |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
 | 5 | if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 15%: cast Aimed Shot | 4.4 |
-| 6 | if time to the next auto attack > 1s and mana % ≥ 10%: cast Multi-Shot | 0.3 |
+| 6 | if time to the next auto attack > 1s and mana % ≥ 10%: cast Multi-Shot | 0.4 |
 | 7 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.7 |
 
 Lines of the simulator's rotation these builds never cast: cast Intimidation (needs the Intimidation talent).
@@ -130,7 +130,7 @@ Damage by ability:
 | Aimed Shot | 8% |
 | Pet: Claw | 6% |
 | Arcane Shot | 2% |
-| Multi-Shot | 0% |
+| Multi-Shot | 1% |
 | Pet: Bite | 0% |
 
 ## Notes

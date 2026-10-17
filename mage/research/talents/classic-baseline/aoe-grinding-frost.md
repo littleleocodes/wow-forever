@@ -124,11 +124,11 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Frost | Cold Snap | 1 | changed | tier 5, max 1 — tooltip changed; was Frost row 3, col 2 |
 | Frost | Piercing Ice | 3 | unchanged | tier 3, max 3 |
 | Frost | Improved Blizzard | 3 | changed | tier 3, max 3 — tooltip changed |
-| Frost | Arctic Reach | 2 | unchanged | tier 4, max 2 |
+| Frost | Arctic Reach | 2 | unchanged | tier 4, max 2 — tooltip changed in build 1.60.1.70425 (ranks 1, 2) |
 | Frost | Frost Channeling | 3 | moved | tier 3, max 3 — was Frost row 4, col 2 |
 | Frost | Ice Block | 1 | moved | tier 4, max 1 — was Frost row 5, col 2 |
 | Frost | Improved Cone of Cold | 3 | changed | tier 5, max 3 — tooltip changed; was Frost row 5, col 3 |
-| Frost | Ice Barrier | 1 | changed | tier 7, max 1 — tooltip changed; tooltip changed in build 1.60.1.70291 (ranks 1) |
+| Frost | Ice Barrier | 1 | changed | tier 7, max 1 — tooltip changed; tooltip changed in build 1.60.1.70425 (ranks 1) |
 
 **3 point(s) of this build no longer exist in Forever** and must be re-spent; see `../forever/README.md` for how they were re-spent.
 

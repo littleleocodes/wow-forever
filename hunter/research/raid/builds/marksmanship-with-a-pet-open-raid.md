@@ -7,11 +7,11 @@
 | **Build** | 7/39/5 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
-| **Data** | WoW: Forever beta client build 1.60.1.70291 (2026-10-08 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+| **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Marksmanship raid build the open talent search found on 2026-10-09: every legal 51-point build with no tree rule, searched in the community simulator's mm-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +9.3% over bm-mm-raid, the best of our builds in that rotation.
+The Marksmanship raid build the open talent search found on 2026-10-16: every legal 51-point build with no tree rule, searched in the community simulator's mm-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). 
 
 ## Point allocation
 
@@ -32,9 +32,9 @@ The Marksmanship raid build the open talent search found on 2026-10-09: every le
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
 | **Rapid Killing** | 2/2 | **NEW** | Reduces the cooldown on your Rapid Fire ability by 2 min. In addition, when you kill a non-trivial enemy or it dies while afflicted by your Serpent Sting, you gain Rapid Killing, increasing the damage of your next Shot ability within 20 sec by 20%. |
 | **Improved Arcane Shot** | 5/5 | changed | Reduces the cooldown of your Arcane Shot by 1.5 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot. |
-| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party members within 45 yds by 30. |
+| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 30. |
 | **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
-| **Rapid Recuperation** | 2/2 | **NEW** | Hitting a target with your Serpent Sting ability grants you 50% and consuming Rapid Killing grants you 100% of your Mana regeneration while casting for the next 15 sec. |
+| **Rapid Recuperation** | 2/2 | **NEW** | Afflicting a target with Serpent Sting allows 50% of your Mana Regeneration to continue while casting for 15 sec, increased to 100% when Rapid Killing is consumed. |
 | **Barrage** | 3/3 | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 10%. |
 | **Ranged Weapon Specialization** | 5/5 | unchanged | Increases the damage you deal with ranged weapons by 5%. |
 | **Sniper Shot** | 1/1 | **NEW** | A long-range shot that deals ranged damage plus 160 and increases the range of your next 3 Shots by 10 yards for 10 sec. |
@@ -58,18 +58,18 @@ The Marksmanship raid build the open talent search found on 2026-10-09: every le
 
 ## Rank among our builds and the community simulator's
 
-**5 of 8** for `mm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 2ce8265); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**5 of 8** for `mm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever b7083fa); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 471 | +0.0% | 801 | -8.9% | 70 s |
-| 2 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 459 | -2.5% | 803 | -8.7% | 53 s |
-| 3 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 22/29/0 | 459 | -2.5% | 803 | -8.7% | 53 s |
-| 4 | *Marksmanship* | community simulator | - | 453 | -3.8% | 843 | -4.1% | 89 s |
-| 5 | **[`marksmanship-with-a-pet-open-raid`](marksmanship-with-a-pet-open-raid.md)** | ours: derived (open search) | 7/39/5 | 451 | -4.2% | 879 | +0.0% | 98 s |
-| 6 | *Beast Mastery 35/16/0* | community simulator | - | 444 | -5.7% | 768 | -12.7% | 75 s |
-| 7 | *Marksmanship 0/39/12* | community simulator | - | 428 | -9.0% | 776 | -11.7% | 83 s |
-| 8 | *Survival 0/15/36* | community simulator | - | 394 | -16.3% | 678 | -22.8% | 76 s |
+| 1 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 475 | +0.0% | 808 | -8.7% | 68 s |
+| 2 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 464 | -2.3% | 811 | -8.3% | 54 s |
+| 3 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 22/29/0 | 464 | -2.3% | 811 | -8.3% | 54 s |
+| 4 | *Marksmanship* | community simulator | - | 457 | -3.9% | 850 | -3.9% | 89 s |
+| 5 | **[`marksmanship-with-a-pet-open-raid`](marksmanship-with-a-pet-open-raid.md)** | ours: derived (open search) | 7/39/5 | 454 | -4.4% | 885 | +0.0% | 98 s |
+| 6 | *Beast Mastery 35/16/0* | community simulator | - | 449 | -5.5% | 777 | -12.2% | 75 s |
+| 7 | *Marksmanship 0/39/12* | community simulator | - | 434 | -8.7% | 795 | -10.1% | 83 s |
+| 8 | *Survival 0/15/36* | community simulator | - | 399 | -16.1% | 684 | -22.7% | 76 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -86,7 +86,7 @@ The Marksmanship raid build the open talent search found on 2026-10-09: every le
   10. threshold 10s -> 15s: if auraIsInactive and time left in the fight ≥ 10s: cast Summon Hawk + only above 10% mana: if time to the next auto attack > 1s: cast Multi-Shot (+0.2%, pass 9)
   11. insert in the middle: cast Intimidation + only above 60% mana: cast Intimidation (+0.3%, pass 9)
   12. threshold 20% -> 15%: if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 20%: cast Aimed Shot (+0.2%, pass 10)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 10 passes, the last 2026-10-09, 10 changes to the base rotation; third-seed check: open winner 821 -> 881 DPS (+7.4%), bm-mm-full-buffs-raid 788 -> 802 DPS (+1.8%), sim preset: Marksmanship 785 -> 845 DPS (+7.7%), bm-mm-raid 786 -> 806 DPS (+2.7%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 11 passes, the last 2026-10-16, 10 changes to the base rotation; third-seed check: marksmanship-with-a-pet-open-raid 825 -> 886 DPS (+7.3%), sim preset: Marksmanship 789 -> 850 DPS (+7.6%), bm-mm-raid 791 -> 812 DPS (+2.6%), bm-mm-full-buffs-raid 794 -> 808 DPS (+1.8%)):
   1. drop: if time to the next auto attack > 1s: cast Aimed Shot (+1.0%, pass 1)
   2. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.3%, pass 1)
   3. only with 6s or more of the fight left: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 1)
@@ -116,7 +116,7 @@ Damage by ability:
 | Ability | [`marksmanship-with-a-pet-open-raid`](marksmanship-with-a-pet-open-raid.md) |
 |---|---|
 | Auto Shot | 45% |
-| Arcane Shot | 21% |
+| Arcane Shot | 20% |
 | Pet: Auto Attack | 12% |
 | Serpent Sting | 11% |
 | Aimed Shot | 6% |
@@ -126,12 +126,12 @@ Damage by ability:
 
 ## Notes
 
-- The best with a pet build: +9.3% over bm-mm-raid, the best of our builds in mm-raid. The spec's raid pick may be another variant; the page lists this one among the spec's other builds.
-- Open search result (mm-raid, full raid): 7/39/5 (Marksmanship) at 880.9 DPS; bm-mm-raid 806.2, opt-mm-raid-raid-dps 806.2, bm-mm-full-buffs-raid 802.2 in the same fights; 4,317 builds simulated, 2 independent runs reached the top.
+- The best with a pet build: +9.8% over bm-mm-full-buffs-raid, the best of our builds in mm-raid. The spec's raid pick may be another variant; the page lists this one among the spec's other builds.
+- Open search result (mm-raid, full raid): 7/39/5 (Marksmanship) at 880.9 DPS; bm-mm-full-buffs-raid 802.2 in the same fights; 4,317 builds simulated, 2 independent runs reached the top.
 - The mm-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.
 - Sibling rotations tried on it (10,000 fights): mm-lonewolf-raid +0.4%, bm-raid -3.0%, melee-dps -53.5%; none adopted.
 - Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Rapid Killing.
-- Simulator numbers are the community's model of the beta (ElliotWood/Forever 2ce8265 with this project's patches), not in-game measurements.
+- Simulator numbers are the community's model of the beta (ElliotWood/Forever b7083fa with this project's patches), not in-game measurements.
 
 ## Open questions (verify in the live game)
 
