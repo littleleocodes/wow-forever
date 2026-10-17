@@ -118,7 +118,7 @@
     "why": [
      "**Arcane Blast** is the filler: a 2.5-second cast that adds a stack each time (up to 4, for 8 seconds). Each stack adds 10% to the damage of your other spells (15% to **Arcane Missiles**, fitted to beta logs) and 175% to the next **Arcane Blast**'s mana cost; casting any other damage spell spends them all.",
      "**Arcane Missiles** on **Missile Barrage** comes first. Each **Arcane Blast** that lands has a 40% chance to make your next Missiles free and twice as fast, and the Missiles spend your stacks at 15% each: about a third of your damage in the simulator.",
-     "**Fire Blast** whenever it is ready is why this Arcane build spends 11 points in Fire: **Wake of Fire** brings it back every 6 seconds and **Incineration** adds crit. It is instant, it takes your stacks' bonus, and it puts **Arcane Blast** back to its base cost. Adding it was the biggest gain of the rotation search, about 8% over three steps.",
+     "**Fire Blast** whenever it is ready is why this Arcane build spends 11 points in Fire: **Improved Fire Blast** brings it back every 6 seconds and **Incineration** adds crit. It is instant, it takes your stacks' bonus, and it puts **Arcane Blast** back to its base cost. Adding it was the biggest gain of the rotation search, about 8% over three steps.",
      "**Arcane Power** and **Presence of Mind** go at the pull: 30% more damage for 15 seconds (at 30% more mana cost) and one instant spell. Both have 3-minute cooldowns, so a 3-minute fight gets one of each.",
      "Mana: **Evocation** only below 15% mana with more than 20 seconds left. With a raid's mana buffs, your mana gems and a mana potion, the simulator almost never needed it."
     ],
@@ -170,7 +170,7 @@
    "raid": {
     "plan": "Fire keeps its own **Improved Scorch** debuff at 5 stacks, fires **Fire Blast** on cooldown and casts **Fireball** in between. Crits build **Heating Up**; at 3 stacks **Pyroblast** becomes a 1.5-second cast.",
     "why": [
-     "**Fire Blast** first whenever it is ready: every 6 seconds with **Wake of Fire**, instant, and **Incineration** and **Critical Mass** make it crit often, feeding **Heating Up** and **Ignite**. The simulator measured using it on cooldown, with no mana saving, 3.7% better than the rule it replaced.",
+     "**Fire Blast** first whenever it is ready: every 6 seconds with **Improved Fire Blast**, instant, and **Incineration** and **Critical Mass** make it crit often, feeding **Heating Up** and **Ignite**. The simulator measured using it on cooldown, with no mana saving, 3.7% better than the rule it replaced.",
      "**Scorch** keeps Fire Vulnerability at 5 stacks. In Forever **Improved Scorch** is your own debuff: +3% to your Fire damage per stack, for 30 seconds. Build 5 stacks, then refresh it once 7.5 seconds or less are left so a long cast cannot let it drop; the list shows only the stack count, but the early refresh is part of the rule (the simulator measured 7.5 seconds 0.4% better than 5).",
      "**Pyroblast** waits for 3 stacks of **Heating Up**. Each crit from **Fireball**, **Fire Blast** or **Scorch** takes 25% off your next **Pyroblast**'s 6-second cast, so 3 stacks make it 1.5 seconds: your biggest hit for its cast time. The list's 2-stack line is a last-chance rule: cast a 3-second **Pyroblast** at 2 stacks only if **Heating Up** has under 3.5 seconds left or the boss dies within 6 seconds.",
      "**Fireball** fills everything else: 3 seconds with **Improved Fireball**, about half your damage, and each crit also starts **Ignite**. The list stops starting it with under 3 seconds left, when it would land too late.",
@@ -184,8 +184,7 @@
     ],
     "diverge": [
      "In the last 3 seconds a **Fireball** would land too late: cast **Scorch**. The simulator's list uses Rank 1 there, the same line it falls back on when you cannot afford a **Fireball**; Forever gives ranks that low only part of your spell power and fewer talent procs, so use your top **Scorch** whenever you have the 150 mana.",
-     "With 2 stacks of **Heating Up** and the boss dying within 6 seconds, cast **Pyroblast** now: the third crit may never come.",
-     "After an add dies, your next **Fire Blast** within 30 seconds gets +50% crit chance from **Wake of Fire**, a likely **Heating Up** stack. The simulator never kills anything, so this is extra."
+     "With 2 stacks of **Heating Up** and the boss dying within 6 seconds, cast **Pyroblast** now: the third crit may never come."
     ],
     "rotations": {
      "fire-raid": "7334e0e47452"
@@ -227,7 +226,7 @@
     "why": [
      "**Ice Lance** on **Fingers of Frost** comes first. Each **Frostfire Bolt** chill has a 15% chance to treat your next 2 spells as if the target were frozen; a frozen target takes 300% more damage from **Ice Lance** and **Shatter** adds 50% crit, so spend both charges on **Ice Lance**.",
      "**Pyroblast** at 3 stacks of **Heating Up**: crits from **Frostfire Bolt**, **Fire Blast** and **Scorch** each take 25% off its 6-second cast, so 3 stacks make it 1.5 seconds. Unlike the Fire list, this one never casts it at 2 stacks; the simulator measured dropping that line 0.3% better.",
-     "**Fire Blast** on cooldown (every 8 seconds: this build has no **Wake of Fire**): instant, and its crits feed **Heating Up** and **Ignite**. Using it without a mana condition was the biggest single gain of the full-raid rotation search, about 5%.",
+     "**Fire Blast** on cooldown (every 8 seconds: this build has no **Improved Fire Blast**): instant, and its crits feed **Heating Up** and **Ignite**. Using it without a mana condition was the biggest single gain of the full-raid rotation search, about 5%.",
      "**Scorch** keeps Fire Vulnerability (from **Improved Scorch**) at 5 stacks, +15% to your Fire damage, and **Frostfire Bolt** counts as Fire. This list refreshes it once 15 seconds or less of its 30 are left, a wider margin than the Fire list's 7.5.",
      "**Frostfire Bolt** is the main spell: 2.5 seconds with **Improved Fireball**, and one cast rolls for **Fingers of Frost**, **Heating Up** and **Ignite** at once. Below 30% mana the full rotation casts Rank 2 (285 mana against 370): the page's line \"when your mana is below 30%\". The simulator measured this about 2% better than the old rule of stopping at 10% mana.",
      "**Fireball** (Rank 2 in the full rotation) is last: a stopgap for when you cannot afford even a Rank 2 **Frostfire Bolt**. Forever gives ranks that far below your level only part of your spell power; keep your mana up with gems and a potion so it rarely comes up."

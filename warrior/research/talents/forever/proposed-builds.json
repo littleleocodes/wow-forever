@@ -10,7 +10,7 @@
       "content": "raid",
       "tier": "draft",
       "based_on": "fury-dw-raid",
-      "summary": "Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best build in the community simulator (+5.5% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: The Classic 17/34/0 survives almost intact: Improved Tactical Mastery stands in for Tactical Mastery (still the gate to Anger Management), and the five orphaned Improved Battle Shout points become the new tier-3 fillers (Boundless Rage, Piercing Howl) plus Raging Blows (off-hand Whirlwind) and a point of Precision (hit).",
+      "summary": "Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best build in the community simulator (+5.5% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: The Classic 17/34/0 survives almost intact: Improved Tactical Mastery stands in for Tactical Mastery (still the gate to Anger Management), and the five orphaned Improved Battle Shout points become the new tier-3 fillers (Boundless Rage, Piercing Howl) plus Raging Blows (off-hand Whirlwind) and a point of Precision (hit); Boundless Rage and Precision were removed in build 70170.",
       "allocation": {
         "Arms": [
           ["Improved Heroic Strike", 2],
@@ -71,7 +71,7 @@
         {
           "points": 3,
           "default": "Booming Voice",
-          "alternatives": ["Boundless Rage", "any utility talent legal at that tier"],
+          "alternatives": ["any utility talent legal at that tier"],
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         },
         {
@@ -81,7 +81,7 @@
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-26: opt-fury-dw-raid-raid-dps beat the previous draft by +5.5% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Weaponmaster (the Sword/Axe Specialization replacement) sits at Arms tier 5 (20 points) — unreachable without dropping Bloodthirst, exactly like Classic.", "Improved Battle Shout and Improved Demoralizing Shout are gone: raid Battle Shout is no longer a talent responsibility.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range). Net +0.00% on a third seed.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Precision 3 out; Furious Precision 3 in; to be re-optimized."],
+      "notes": ["Adopted from the community simulator on 2026-09-26: opt-fury-dw-raid-raid-dps beat the previous draft by +5.5% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Weaponmaster (the Sword/Axe Specialization replacement) sits at Arms tier 5 (20 points) — unreachable without dropping Bloodthirst, exactly like Classic.", "Improved Battle Shout and Improved Demoralizing Shout are gone: raid Battle Shout is no longer a talent responsibility.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range). Net +0.00% on a third seed.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Precision 3 out; Furious Precision 3 in; to be re-optimized.", "2026-10-17 (audit of 2026-10-17, finding 26): flex alternative Boundless Rage dropped (removed in build 70170)."],
       "open_questions": ["Enrage uptime for a DPS warrior who rarely takes damage — is 5/5 still the best path to Flurry?", "Real max-rank values for Flurry, Unbridled Wrath and Dual Wield Specialization (demo shows rank 1 only).", "Does Raging Blows' off-hand Whirlwind beat 2 more points of Precision?"],
       "sources": ["https://warcraftforever.games/talents/warrior"]
     },
@@ -159,7 +159,7 @@
         {
           "points": 3,
           "default": "Booming Voice",
-          "alternatives": ["Boundless Rage", "any utility talent legal at that tier"],
+          "alternatives": ["any utility talent legal at that tier"],
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         },
         {
@@ -169,7 +169,7 @@
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-26: opt-arms-2h-raid-raid-dps beat the previous draft by +8.5% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Rend up -> Mortal Strike on cooldown -> Overpower when Bloodthrill procs -> Slam filler -> Heroic Strike when rage-capped.", "This is a Battle Stance build; Sweeping Strikes is both the cleave and the Mortal Strike prerequisite.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range); Improved Heroic Strike -> Deflection (survival); Improved Heroic Strike -> Deflection (survival); Improved Heroic Strike -> Deflection (survival). Net +0.00% on a third seed.", "2026-09-30: renamed from \"Arms — Two-Handed / Improved Slam / Bloodthrill (simulator winner adopted 2026-09-26)\" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py).", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Precision 3 out; Lingering Rage 3 in; to be re-optimized."],
+      "notes": ["Adopted from the community simulator on 2026-09-26: opt-arms-2h-raid-raid-dps beat the previous draft by +8.5% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Rend up -> Mortal Strike on cooldown -> Overpower when Bloodthrill procs -> Slam filler -> Heroic Strike when rage-capped.", "This is a Battle Stance build; Sweeping Strikes is both the cleave and the Mortal Strike prerequisite.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range); Improved Heroic Strike -> Deflection (survival); Improved Heroic Strike -> Deflection (survival); Improved Heroic Strike -> Deflection (survival). Net +0.00% on a third seed.", "2026-09-30: renamed from \"Arms — Two-Handed / Improved Slam / Bloodthrill (simulator winner adopted 2026-09-26)\" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py).", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Precision 3 out; Lingering Rage 3 in; to be re-optimized.", "2026-10-17 (audit of 2026-10-17, finding 26): flex alternative Boundless Rage dropped (removed in build 70170)."],
       "open_questions": ["Does Improved Slam really remove the swing reset at rank 1 (demo text says so)? If yes Slam may be the primary filler.", "Weaponmaster proc/crit values at max rank; which weapon type wins.", "Whether a Bloodthirst dual-wield build still out-damages this — Classic history says DW wins with hit and weapon skill, but Improved Slam's rework may change that."],
       "sources": ["https://warcraftforever.games/talents/warrior"]
     },
@@ -362,8 +362,8 @@
         {
           "points": 1,
           "default": "Blood Craze",
-          "alternatives": ["Improved Cleave"],
-          "why": "Fifth tier-3 Fury point."
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Fifth tier-3 Fury point. (Improved Cleave, the old alternative, was removed in build 70170.)"
         },
         {
           "points": 2,
@@ -378,7 +378,7 @@
           "why": "Rage vs. crowd-control resistance."
         }
       ],
-      "notes": ["Bloodthrill (Overpower procs from Rend) competes with Weaponmaster at tier 5; Rend uptime in PvP is unreliable, so Weaponmaster is the default.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Boundless Rage 3 out; Blood Craze 3, Booming Voice 1 in; to be re-optimized."],
+      "notes": ["Bloodthrill (Overpower procs from Rend) competes with Weaponmaster at tier 5; Rend uptime in PvP is unreliable, so Weaponmaster is the default.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Boundless Rage 3 out; Blood Craze 3, Booming Voice 1 in; to be re-optimized.", "2026-10-17 (audit of 2026-10-17, finding 26): flex alternative Improved Cleave replaced (removed in 70170)."],
       "open_questions": ["Iron Will's max-rank value; if it is 15%+ it likely beats Unbridled Wrath for PvP.", "Whether Improved Overpower (now tier 2) should replace Improved Charge."],
       "sources": ["https://warcraftforever.games/talents/warrior"]
     },
@@ -431,7 +431,7 @@
         {
           "points": 3,
           "default": "Blood Craze",
-          "alternatives": ["Improved Execute 2 + Boundless Rage 1", "Improved Heroic Strike 3"],
+          "alternatives": ["Improved Execute 2 + another tier-3 Fury point", "Improved Heroic Strike 3"],
           "why": "Blood Craze measures 1-2% (health after crits); Improved Execute and Improved Heroic Strike measured under 1% in the sim."
         },
         {
@@ -441,7 +441,7 @@
           "why": "A tier filler on the way to Mortal Strike: none of the three does anything measurable single-target."
         }
       ],
-      "notes": ["Tier unlock levels: tier 2 at 15, tier 3 at 20, tier 4 at 25, tier 5 at 30, tier 6 at 35, tier 7 at 40.", "Spearing Strike (16-pt, extra damage vs. Giants/Dragonkin, dismounts) is skipped: leveling mobs are mostly Beasts/Humanoids.", "This allocation is the optimizer's (opt-arms-2h-raid-leveling-st) with the order fixed by hand: the optimizer buys Cruelty first and reaches Mortal Strike at 45, which is 14% slower at 40 in the sim; Arms first with Mortal Strike at 40 is within 2% of it at 20-30 and 3% faster at 40. The previous hand draft (Improved Heroic Strike, Improved Slam, Improved Execute, Boundless Rage instead of Deflection 5, Weaponmaster 3, Enrage 5, Blood Craze 3) was 7% slower at 60.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Boundless Rage 1 out; Booming Voice 1 in; to be re-optimized.", "2026-10-15 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the arms-2h-raid rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree first 27.2 s per kill; stats model 27.6 s; own tree last 29.8 s.", "Fight lab (leveling/fightlab/arms-2h-raid.md, 2026-10-16, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 23/26/26/28/30 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-arms-2h-raid-leveling-st is -0% at 60 and -0% at 30 (negative = faster); race winner over the leveling: cand-arms-r3; top talents at 60: Mortal Strike +16%, Bloodthrill +4%, Cruelty +4%, Weaponmaster +4%; about zero: Blood Craze, Deflection, Improved Tactical Mastery, Sweeping Strikes. See the Fight lab section of leveling/README.md."],
+      "notes": ["Tier unlock levels: tier 2 at 15, tier 3 at 20, tier 4 at 25, tier 5 at 30, tier 6 at 35, tier 7 at 40.", "Spearing Strike (16-pt, extra damage vs. Giants/Dragonkin, dismounts) is skipped: leveling mobs are mostly Beasts/Humanoids.", "This allocation is the optimizer's (opt-arms-2h-raid-leveling-st) with the order fixed by hand: the optimizer buys Cruelty first and reaches Mortal Strike at 45, which is 14% slower at 40 in the sim; Arms first with Mortal Strike at 40 is within 2% of it at 20-30 and 3% faster at 40. The previous hand draft (Improved Heroic Strike, Improved Slam, Improved Execute, Boundless Rage instead of Deflection 5, Weaponmaster 3, Enrage 5, Blood Craze 3) was 7% slower at 60.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Boundless Rage 1 out; Booming Voice 1 in; to be re-optimized.", "2026-10-15 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the arms-2h-raid rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree first 27.2 s per kill; stats model 27.6 s; own tree last 29.8 s.", "Fight lab (leveling/fightlab/arms-2h-raid.md, 2026-10-16, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 23/26/26/28/30 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-arms-2h-raid-leveling-st is -0% at 60 and -0% at 30 (negative = faster); race winner over the leveling: cand-arms-r3; top talents at 60: Mortal Strike +16%, Bloodthrill +4%, Cruelty +4%, Weaponmaster +4%; about zero: Blood Craze, Deflection, Improved Tactical Mastery, Sweeping Strikes. See the Fight lab section of leveling/README.md.", "2026-10-17 (audit of 2026-10-17, finding 26): flex alternative Boundless Rage dropped (removed in 70170)."],
       "open_questions": ["Bloodthrill proc rate at max rank (only rank 1 = 2% read) — if it is 10%, taking it before Weaponmaster may be better.", "Whether Improved Slam's swing-timer change is real at rank 1; if not, the two Slam points move to Improved Hamstring."],
       "sources": ["https://warcraftforever.games/talents/warrior"],
       "order": [

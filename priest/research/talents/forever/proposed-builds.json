@@ -1005,11 +1005,10 @@
         {"talent": "Improved Shadow Word: Pain", "why": "Removing it costs 2.4 points of score in this model."},
         {"talent": "Darkness", "why": "Removing it costs 1.8 points of score in this model."},
         {"talent": "Improved Mind Flay", "why": "Removing it costs 1.8 points of score in this model."},
-        {"talent": "Shadow Weaving", "why": "Removing it costs 1.5 points of score in this model."},
-        {"talent": "Spell Warding", "why": "Removing it costs 0.7 points of score in this model."}
+        {"talent": "Shadow Weaving", "why": "Removing it costs 1.5 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Allocation and order taken from cand-aoe-r1 on 2026-10-15: an earlier optimizer round beat the last export in the fight lab (50.1s vs 63.6s per kill, level-weighted).", "Report: priest/research/talents/forever/optimizer/shadow-dps-leveling-aoe.md", "2026-10-16 (repair_builds.py, client build 70425 trees): 17/3/31 -> 17/3/31; Improved Fade 1 gone; +1 Shadow Weaving (tier gating for Darkness); order dropped (order_repair.py) (refill: the shadow-dps model, leveling-aoe)."],
+      "notes": ["Allocation and order taken from cand-aoe-r1 on 2026-10-15: an earlier optimizer round beat the last export in the fight lab (50.1s vs 63.6s per kill, level-weighted).", "Report: priest/research/talents/forever/optimizer/shadow-dps-leveling-aoe.md", "2026-10-16 (repair_builds.py, client build 70425 trees): 17/3/31 -> 17/3/31; Improved Fade 1 gone; +1 Shadow Weaving (tier gating for Darkness); order dropped (order_repair.py) (refill: the shadow-dps model, leveling-aoe).", "2026-10-17 (audit of 2026-10-17, finding 26): core Spell Warding dropped (not in the allocation)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/priest"]
     },

@@ -300,7 +300,8 @@ def main():
             report += diff_against_previous(prev, obj)
             report.append("")
         if tooltip_changes:
-            report.append(f"Tooltips that changed between the 69893 and {build} reads (older text kept in `ranks_prev`):")
+            prev_builds = sorted({t.get("ranks_prev_build", "1.60.1.69893") for tr in obj["trees"] for t in tr["talents"] if t.get("ranks_prev")})
+            report.append(f"Tooltips that changed between the {', '.join(prev_builds) or 'previous'} and {build} reads (older text kept in `ranks_prev`):")
             report.append("")
             for tname, name, changed, old, new in tooltip_changes:
                 i = changed[-1]

@@ -45,11 +45,12 @@ def load_popular(path):
 
 
 # The site's code version whose talent order our forever-talents/ data follows. Version 4 was build 70009's order; the site moved to
-# version 6 with its later tree changes (its changelog: old links are translated on open), and our data comes from the site's own
-# export at build 70291 (2026-10-08), so version-6 codes map digit by digit onto it. Checked for every code of the 2026-10-09 list:
-# each tree has exactly as many digits as talents, no digit exceeds its talent's rank cap, the per-tree points equal the site's own
-# `pts`, and the validator passes. A code of another version is refused rather than decoded onto the wrong talents.
-CODE_VERSION = "6"
+# version 6 with its later tree changes (its changelog: old links are translated on open) and to version 7 with the 70425 trees
+# (2026-10-17); our data comes from the site's own export at build 70425 (2026-10-16), so version-7 codes map digit by digit onto it.
+# Checked for every code of the 2026-10-17 list (and the version-6 codes of 2026-10-09 against the 70291 data): no tree has more
+# digits than talents, no digit exceeds its talent's rank cap, the per-tree points equal the site's own `pts`, and the validator passes
+# but for builds under 51 points. A code of another version is refused rather than decoded onto the wrong talents.
+CODE_VERSION = "7"
 
 
 def decode(cls, code, trees_data):

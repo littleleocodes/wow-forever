@@ -26,11 +26,13 @@ TODAY = datetime.date.today().isoformat()
 
 
 # ------------------------------------------------------------------------------------------------ talent links
-# The site's code version for the talent order our forever-talents/ data follows (its export at build 70291). Until 2026-10-09 the links
-# said '-4' (build 70009's order): the site read the digits in that order, so for the trees that changed since (druid Feral, warrior Fury
-# and Protection, and renames in the mage and warlock trees) a link could open other talents than the page's build. Checked: every one
-# of the site's 45 popular version-6 codes re-encodes to the same digits (popular_builds.CODE_VERSION).
-TF_CODE_VERSION = "6"
+# The site's code version for the talent order our forever-talents/ data follows (its export at build 70425 since 2026-10-16). Until
+# 2026-10-09 the links said '-4' (build 70009's order): the site read the digits in that order, so for the trees that changed since
+# (druid Feral, warrior Fury and Protection, and renames in the mage and warlock trees) a link could open other talents than the page's
+# build. Version 6 was the 70291 order; version 7 (2026-10-17) the 70425 trees (mage, priest, shaman and warlock moved). Checked on
+# 2026-10-17: all 45 popular version-7 codes decode onto our 70425 data with the site's own per-tree points, no rank or tier error
+# (popular_builds.CODE_VERSION).
+TF_CODE_VERSION = "7"
 
 
 def tf_link(cls, alloc):

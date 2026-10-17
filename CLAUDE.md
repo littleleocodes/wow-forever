@@ -84,7 +84,7 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
 ## Forever-specific rules
 
 - Forever tree data is a **beta-client snapshot** (`_reference/data/forever-talents/`, merged by `refresh_forever_talents.py`
-  from three datamines archived under `_reference/data/raw/`; build 1.60.1.70291 since the 2026-10-08 refresh, 70170 from 2026-10-03,
+  from three datamines archived under `_reference/data/raw/`; build 1.60.1.70425 since the 2026-10-16 refresh (70450, 2026-10-17, changed no talents), 70291 from 2026-10-08, 70170 from 2026-10-03,
   70009 from 2026-09-25). The current build is whatever `_reference/data/data_build.py` reads from the snapshot (`BUILD`,
   `CAPTURED`): code and renderers take it from there, never a literal. Always name the build when quoting it. Every rank's tooltip is the client's level-60 text; `ranks_prev` keeps the previous
   build's text where it changed. Spell numbers: `_reference/data/forever-spells/<class>.json` (build_forever_spells.py)
@@ -102,6 +102,14 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   raid,regen`, race the rotation-only entries (`run.py --all --write`, `--env environments`), then the open searches with a warm start:
   `bash _reference/data/run_open_searches.sh --fresh <classes>` (each record moves to `<class>.prev.json` and its winners seed the new
   search; resume without --fresh).
+  The same day, before any search (audit of 2026-10-17: these were skipped after the 70425 refresh and left stale pages, guides naming
+  removed talents and four fight-lab parser breaks): `validate_builds.py && render_builds.py` after the repair, `guides.py --check --write`,
+  `fightlab/module_lint.py --write` and **fix every row it lists** (a lint row is a bug, not a note), check each fight-lab module's parsed
+  numbers for the talents and spells whose tooltip wording changed (a regex that stops matching reads 0 without an error: Battle Shout's
+  "party or raid members" and Trueshot Aura's "within 45 yards" gave 0 attack power), compare the class modules with the beta notes'
+  mechanics (the tooltip and the notes can disagree: Winter's Chill), check talentsforever.com's code version (`popular.js`) against
+  `render_start_here.TF_CODE_VERSION`, and re-record the mage regression (`fightlab/regression.py --update`) with a note when the mage
+  data moved.
 
 ## Stats model (`_reference/data/scorer/`)
 
@@ -802,7 +810,7 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   carry `bonus_stats` ({proto Stat name: value}, the simulator's own bonus stats; 2026-10-07, user question "how much spell power would a
   shaman need to equal the Beast-Survival hunter": the Elemental pick gains a linear 0.45 DPS per spell power in a full raid, 524 -> 1170
   at about +1,450 on top of its set's 390).
-  A fresh setup builds the pinned simulator commit (`GAMES[...]["commit"]` in setup.py, 2ce8265 since 2026-10-09: client build 1.60.1.70291; b0f0df3 (70205) from 2026-10-03, 40be98e before) so every machine
+  A fresh setup builds the pinned simulator commit (`GAMES[...]["commit"]` in setup.py, b7083fa since 2026-10-16 (marked client 70425, but its spell store is the 14-15 Oct data: a commit that only bumps `forever_client_build.txt` is not a new simulator; read `git show --stat` before pinning); 2ce8265 (70291) from 2026-10-09, b0f0df3 (70205) from 2026-10-03, 40be98e before) so every machine
   and cloud session simulates the same fork; after a simulator update (`setup.py --update`) set the new pin and re-run
   `rebuild.py --steps raid,regen`.
 

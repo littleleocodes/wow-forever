@@ -1,15 +1,16 @@
-# Handoff — continuing this project in a Claude Code cloud session (updated 2026-10-15)
+# Handoff — continuing this project in a Claude Code cloud session (updated 2026-10-17)
 
 This knowledge base was built in local Claude Code sessions on Windows (project in `F:\wow-forever`, simulator tools in
 `%USERPROFILE%\.wow-forever-tools`) and moved to GitHub on 2026-09-28 so the work can continue in Claude Code cloud sessions.
 Read `CLAUDE.md` (the conventions, loaded automatically) and `_reference/README.md` (the top-level `README.md` is the player
-index), then this page; the current work list is `_reference/page-audit.md`.
+index), then this page; the current work is the 70425 re-run (`_reference/rerun-70425.md`: plan, state and the after-re-pin
+checklist), then the work list `_reference/page-audit.md`; the read-only audit of 2026-10-17 is `_reference/audit-2026-10-17.md`.
 
 ## Start of every cloud session
 
 1. **Only if the task needs the raid simulator** (`raidsim/run.py`, `apl_opt.py`, `talent_opt.py`, `calibrate.py`, `rebuild.py`
    with the raid step): `python _reference/data/cloud_setup.py` (add `--classic` for the Classic-era checks). It pip-installs
-   `requirements.txt` (numpy, scikit-learn), builds the ElliotWood/Forever simulator at the pinned commit **2ce8265** (beta 70291) (`raidsim/setup.py` GAMES) with our patches and the
+   `requirements.txt` (numpy, scikit-learn), builds the ElliotWood/Forever simulator at the pinned commit **b7083fa** (marked client 70425, but its spell data is still the 14-15 Oct store: a re-pin to upstream's latest, client 70450, is the next simulator step; `raidsim/setup.py` GAMES) with our patches and the
    `foreverbench` tool under `~/.wow-forever-tools`, and runs the checks. It takes several minutes: run it in the background (or
    with the 10-minute timeout) and read its output. The container is thrown away after the session, so the tools are rebuilt
    each session that needs them.
@@ -33,12 +34,26 @@ Cloud notes:
   a rotation pass over every entry about 2 hours, a talent search 1 to 5 minutes, regen about 15 minutes.
 - The repository stores LF line endings (`.gitattributes`). The local sessions' notes are in `_reference/notes/` (below).
 
-## Where things stand (2026-10-15)
+## Where things stand (2026-10-17)
+
+- **The 70425 re-run** (started 2026-10-16; plan, scope and checklist in `_reference/rerun-70425.md`). Talent and spellbook data are client
+  1.60.1.70425 (captured 2026-10-16; client 70450 of 2026-10-17 changed no talents); 55 mage, priest, shaman and warlock builds repaired
+  for the new trees (`repair_builds.py`). The simulator pin b7083fa turned out to carry pre-16-Oct spell data (audit finding 43), and
+  upstream landed the four classes' new trees in client 70450 on 2026-10-17, so **every raid result waits for one re-pin** to upstream's
+  latest; the hunter, paladin and druid raid confirm runs of 10-16/17 on b7083fa are to be redone after it.
+- **Order of work** (user decision 2026-10-17: "Leveling first, re-pin later"): (1) the audit's fight-lab and healer-lab fixes (done
+  2026-10-17 before resuming); (2) `bash _reference/data/deep-runs/sweep_70425_lev.sh` (git-ignored; markers in `deep-runs/s70425/`, log
+  `deep-runs/sweep-70425.log`; resume with the same command): leveling rules re-tuned and certificates or open searches for every class
+  the fixes touched, order repair, races and reports, the priest and shaman healer searches, regen; (3) the re-pin and all raid work
+  (checklist in the plan).
+- The beta's last full day is 2026-10-21; launch is 2026-11-04.
+
+## Before the re-run (2026-10-15)
 
 - **Data and simulator**: beta client 1.60.1.70291 (talents, spellbooks and client tables of 2026-10-08, `raw/2026-10-08-beta-70291/`;
   `_reference/data/data_build.py` names it everywhere), simulator ElliotWood/Forever **2ce8265** with this project's patches
   (`raidsim/patches/README.md`). The final races ran race-neutral (`WOW_FOREVER_NO_RACIALS=1`; `_reference/race-sweep.md` for players
-  who want their race's share). The beta runs to 2026-10-21; launch is 2026-11-04.
+  who want their race's share).
 - **The 70291 sweep is done** (2026-10-09 to 2026-10-15 05:21, committed in 665a942; driver `_reference/data/deep-runs/sweep_70291.sh`,
   git-ignored):
   - P2: the open raid and leveling talent searches for every class, their winners written as `-open-raid` / `-open-leveling` builds
