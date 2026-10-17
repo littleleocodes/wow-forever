@@ -45,6 +45,12 @@ MISSILES = re.compile(r"causing (\d[\d,]*) Arcane damage each second for (\d+) s
 # increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application." (70291: +10% to other spells' damage)
 AB_STACK = re.compile(r"gain (\d+)% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by (\d+)%\. "
                       r"Effect stacks up to (\d+) times and lasts (\d+) sec")
+# Winter's Chill (client 70425; Blizzard's beta notes of 2026-10-16, "increasing the target's damage taken from your next Cone of Cold
+# by 5%"): Frostbolt, Frost Blast and a Fingers of Frost Ice Lance roll a stack; each stack gives the next Cone of Cold +5% damage and
+# +7% spell damage coefficient (the triggered spell 12579's two effects, as the community simulator reads them, f72c7d7/de2b4da), and that
+# Cone of Cold spends them. The tooltip's "40%" was read until 2026-10-17 (any Frost spell, never spent).
+WC_DMG, WC_COEF = 0.05, 0.07
+WC_SOURCES = ("Frostbolt", "Frost Blast")
 AW_MANA = re.compile(r"Spell Damage equal to (\d+)% of your maximum Mana")   # Arcane Wrath (client 70425)
 LANCE_FROZEN = re.compile(r"Deals (\d+)% increased damage to Frozen targets")   # Ice Lance: 200% since 70425 (300% before)
 
@@ -178,8 +184,9 @@ MECHANICS = {
     "Improved Cone of Cold": "+12/23/35% Cone of Cold damage",
     "Cold Snap": "resets Frost Nova / Cone of Cold / Ice Barrier when the mob is in melee and Nova is down",
     "Fingers of Frost": "15% per chill: the next 1 (rank 1) / 2 (rank 2) spell casts count as Frozen, 15s",
-    "Winter's Chill": ("20%/rank per Frost spell hit: +40% Cone of Cold damage per stack, up to 5 stacks, 15s (client 70425; the duration and the "
-                       "per-stack reading are assumptions; until 70291 +2% Frostbolt/Ice Lance crit per stack)"),
+    "Winter's Chill": ("20%/rank per Frostbolt, Frost Blast or Fingers of Frost Ice Lance hit: the next Cone of Cold +5% damage and +7% "
+                       "spell damage coefficient per stack and spends them, up to 5 stacks, 15s (client 70425 and the 16 Oct beta notes; the "
+                       "duration is an assumption; until 70291 +2% Frostbolt/Ice Lance crit per stack)"),
     "Ice Barrier": "absorb (447..819 by level) before every pull, 30s cooldown; no pushback while it holds",
     "Frost Warding": "+15/30% armor from Frost/Ice Armor",
     "Wand Specialization": "+13/25% wand damage",
@@ -538,8 +545,11 @@ class MageModule(BaseModule):
         if spell.name == "Cone of Cold":
             m *= 1 + self.tv("Improved Cone of Cold", 0) / 100
             wc = self._fight.m.debuffs.get("Winter's Chill") if self._fight else None
-            if wc and wc["until"] > self._fight.t:   # client 70425: +40% Cone of Cold damage per stack (was Frostbolt/Ice Lance crit)
-                m *= 1 + self.tv("Winter's Chill", 1) / 100 * wc["stacks"]
+            if wc and wc["until"] > self._fight.t:   # client 70425: +5% damage and +7% coefficient per stack (WC_DMG, WC_COEF)
+                n = wc["stacks"]
+                sp = self._fight.p.spell_power + self.sp_bonus(spell)
+                mean = (spell.dmg_min + spell.dmg_max) / 2 + spell.coef * sp
+                m *= (1 + WC_DMG * n) * ((mean + WC_COEF * n * sp) / mean if mean > 0 else 1.0)
         if self.is_arcane() and self._fight is not None:
             f = self._fight
             if f.p.buff("Arcane Power", f.t):
@@ -617,11 +627,13 @@ class MageModule(BaseModule):
             p.buffs["Fingers of Frost"] = {"until": t + 15.0, "charges": charges}
 
     def consume_frozen_charge(self, fight):
+        self._fof_cast = False   # whether this cast spent a Fingers of Frost charge (Winter's Chill on a Fingers of Frost Ice Lance)
         b = fight.p.buff("Fingers of Frost", fight.t)
         if b and b.get("charges", 0) > 0:
             b["charges"] -= 1
             if b["charges"] <= 0:
                 del fight.p.buffs["Fingers of Frost"]
+            self._fof_cast = True
             return True
         return False
 
@@ -640,7 +652,9 @@ class MageModule(BaseModule):
             return
         if spell.burn > 0:   # a burn has no coefficient: the talents' factor only
             fight.add_dot(spell.name + " burn", spell.burn * self.talent_multiplier(spell, False), max(1, int(spell.burn_dur / 2)), 2.0)
-        if self.rank("Winter's Chill") and self.sch(spell, "frost") and rng.random() < self.tv("Winter's Chill", 0) / 100:
+        if spell.name == "Cone of Cold":   # spends the stacks it was boosted by (talent_multiplier ran before this)
+            m.debuffs.pop("Winter's Chill", None)
+        elif self.rank("Winter's Chill") and (spell.name in WC_SOURCES or (spell.name == "Ice Lance" and getattr(self, "_fof_cast", False)))                 and rng.random() < self.tv("Winter's Chill", 0) / 100:
             b = m.debuffs.get("Winter's Chill")
             # client 70425: "stacking up to 5 times" at every rank (70009-70291: up to the rank)
             stacks = min(int(self.tv("Winter's Chill", 2)) or 5, (b["stacks"] if b and b["until"] > t else 0) + 1)
