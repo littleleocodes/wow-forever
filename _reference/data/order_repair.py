@@ -62,6 +62,9 @@ def main():
             if b.get("content") != "leveling" or b.get("order") or b.get("raid_path"):
                 continue
             tree = SM.spec_of(cls, b)
+            if tree.startswith("Hybrid "):   # a hybrid levels with its lead tree's rotation (SM.own_leveling_rotation); 2026-10-17 KeyError
+                pts = {t: sum(k for _, k in items) for t, items in b["allocation"].items()}
+                tree = max(tree[len("Hybrid "):].split("/"), key=lambda t: pts.get(t, 0))
             spec, model, profile = models(cls, b, tree)
             flat = {n: r for items in b["allocation"].values() for n, r in items if r}
             opt = Optimizer("forever", cls, model, profile)
