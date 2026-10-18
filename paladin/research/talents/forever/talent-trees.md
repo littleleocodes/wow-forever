@@ -1,6 +1,6 @@
-# Paladin — WoW: Forever talent trees (beta client 1.60.1.70291)
+# Paladin — WoW: Forever talent trees (beta client 1.60.1.70425)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70291, captured 2026-10-08. World of Warcraft: Forever beta client, build 1.60.1.70291: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-08, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70425, captured 2026-10-16. World of Warcraft: Forever beta client, build 1.60.1.70425: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-16, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -91,7 +91,7 @@
 |---|---|---|---|---|---|
 | **Improved Seal of Fury** | 1 | — | **NEW** | When Seal of Fury's shield is fully absorbed, restore 60 Mana, increased by 15% per level the attacker is above you, up to 45%. | — |
 | **Improved Righteous Fury** | 3 | — | changed | While Righteous Fury is active, all damage taken is reduced by 2%. | While Righteous Fury is active, all damage taken is reduced by 6%. |
-| **Shield Specialization** | 3 | Redoubt (5) | changed | Increases the amount of damage absorbed by your shield by 10%, and gives your blocks a 33% chance to restore 6% of your maximum Mana. May only occur once every 3 sec. | Increases the amount of damage absorbed by your shield by 30%, and gives your blocks a 100% chance to restore 6% of your maximum Mana. May only occur once every 3 sec. |
+| **Shield Specialization** | 3 | Redoubt (5) | changed | Increases the amount of damage absorbed by your shield by 10%, and gives your blocks a 33% chance to restore 4% of your maximum Mana. May only occur once every 3 sec. | Increases the amount of damage absorbed by your shield by 30%, and gives your blocks a 100% chance to restore 4% of your maximum Mana. May only occur once every 3 sec. |
 | **Sacred Duty** | 2 | — | **NEW** | Increases your total Stamina by 2% and reduces the cooldown of your Divine Shield, Divine Protection, and Templar's Bulwark spells by 30 sec. | Increases your total Stamina by 4% and reduces the cooldown of your Divine Shield, Divine Protection, and Templar's Bulwark spells by 60 sec. |
 
 ### Tier 4 — requires 15 points in Protection
@@ -107,7 +107,7 @@
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Templar's Bulwark** | 1 | — | **NEW** | When activated, this ability grants you an absorb shield equal to 100% of your maximum health for 8 sec. Applies Forbearance for 1 min. Cannot be cast while Forbearance is active. | — |
-| **Reckoning** | 5 | — | changed | Gives you a 8% chance to gain an extra attack after Blocking a melee attack and a 20% chance to gain an extra attack after being the victim of a non-periodic critical strike. Cannot occur more often than once every 1.5 sec. | Gives you a 40% chance to gain an extra attack after Blocking a melee attack and a 100% chance to gain an extra attack after being the victim of a non-periodic critical strike. Cannot occur more often than once every 1.5 sec. |
+| **Reckoning** | 5 | — | changed | Gives you a 8% chance after Blocking and a 20% chance after receiving a non-periodic critical strike to gain an extra attack. Stores up to 4 extra attacks. Cannot occur from Blocks more than once every 1.5 sec. | Gives you a 40% chance after Blocking and a 100% chance after receiving a non-periodic critical strike to gain an extra attack. Stores up to 4 extra attacks. Cannot occur from Blocks more than once every 1.5 sec. |
 
 ### Tier 6 — requires 25 points in Protection
 
@@ -168,7 +168,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Champion of the Light** | 3 | — | **NEW** | Increases your spell damage by up to 20% of your Intellect. | Increases your spell damage by up to 60% of your Intellect. |
+| **Champion of the Light** | 3 | — | **NEW** | Increases your spell damage by up to 10% of your Intellect. | Increases your spell damage by up to 30% of your Intellect. |
 | **Instrument of Law** | 2 | — | **NEW** | Reduces the cast time of your Hammer of Wrath by 0.5 sec, and reduces all threat you generate by 10% while Righteous Fury is not active. | Reduces the cast time of your Hammer of Wrath by 1.0 sec, and reduces all threat you generate by 20% while Righteous Fury is not active. |
 
 ### Tier 7 — requires 30 points in Retribution
@@ -221,15 +221,15 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Improved Righteous Fury** (tooltip changed)
   - Classic: Increases the amount of threat generated by your Righteous Fury spell by 16%.
   - Forever: While Righteous Fury is active, all damage taken is reduced by 2%.
-- **Shield Specialization** (tooltip changed, tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3))
+- **Shield Specialization** (tooltip changed, tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3))
   - Classic: Increases the amount of damage absorbed by your shield by 10%.
-  - Forever: Increases the amount of damage absorbed by your shield by 10%, and gives your blocks a 33% chance to restore 6% of your maximum Mana. May only occur once every 3 sec.
+  - Forever: Increases the amount of damage absorbed by your shield by 10%, and gives your blocks a 33% chance to restore 4% of your maximum Mana. May only occur once every 3 sec.
 - **One-Handed Weapon Specialization** (max rank 5 → 3, tooltip changed, was Protection row 6, col 3)
   - Classic: Increases the damage you deal with one-handed melee weapons by 2%.
   - Forever: Increases the damage you deal with one-handed melee weapons by 3%.
-- **Reckoning** (tooltip changed, tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3, 4, 5))
+- **Reckoning** (tooltip changed, tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3, 4, 5))
   - Classic: Gives you a 20% chance to gain an extra attack after being the victim of a critical strike.
-  - Forever: Gives you a 8% chance to gain an extra attack after Blocking a melee attack and a 20% chance to gain an extra attack after being the victim of a non-periodic critical strike. Cannot occur more often than once every 1.5 sec.
+  - Forever: Gives you a 8% chance after Blocking and a 20% chance after receiving a non-periodic critical strike to gain an extra attack. Stores up to 4 extra attacks. Cannot occur from Blocks more than once every 1.5 sec.
 - **Holy Shield** (tooltip changed)
   - Classic: Increases chance to block by 30% for 10 sec, and deals 65 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.
   - Forever: Increases chance to block by 30% for 10 sec, and deals 110 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.
@@ -245,10 +245,10 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Conviction** (tooltip changed, was Retribution row 3, col 2)
   - Classic: Increases your chance to get a critical strike with melee weapons by 1%.
   - Forever: Improves your chance to get a critical strike with melee attacks by 1%.
-- **Vindication** (tooltip changed, tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3))
+- **Vindication** (tooltip changed, tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3))
   - Classic: Gives the Paladin's damaging melee attacks a chance to reduce the target's Strength and Agility by 5%10 sec.
   - Forever: Gives your damaging melee attacks a chance to reduce the target's Attack Power by 68, and increase your Attack Power by 1% for 30 sec.
-- **Seal of Command** (tooltip changed, tooltip changed in build 1.60.1.70291 (ranks 1))
+- **Seal of Command** (tooltip changed, tooltip changed in build 1.60.1.70425 (ranks 1))
   - Classic: Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.  Unleashing this Seal's energy will judge an enemy, instantly causing 51 Holy damage, 101 if the target is stunned or incapacitated.
   - Forever: Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.  Unleashing this Seal's energy will judge an enemy, instantly causing 68 to 73 Holy damage, 137 to 145 if the target is stunned or incapacitated.
 - **Pursuit of Justice** (tooltip changed)

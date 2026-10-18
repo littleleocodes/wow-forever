@@ -46,6 +46,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/wowsims/forever/assets/database"
 	"github.com/wowsims/forever/sim"
 	"github.com/wowsims/forever/sim/core"
 	"github.com/wowsims/forever/sim/core/proto"
@@ -96,6 +97,10 @@ type config struct {
 	// "statweights": true prints, per build, the simulator's stat weights (DPS per point of each stat, weapon DPS as pseudo-stats)
 	// instead of a race row (2026-09-30: raidsim/gear_opt.py builds equal-tier gear sets from them)
 	StatWeights        bool            `json:"statweights"`
+	// "spells": true prints, per build, the spell and aura ids the character (and its pets) registers, instead of a race row
+	// (2026-10-18, the port: the official simulator registers one rank per spell, so rotations naming another rank cast nothing;
+	// raidsim/apl_remap.py rewrites them from this list)
+	Spells bool `json:"spells"`
 	// "link": true prints each build's share link for the simulator's web UI instead of a race row (see the file header)
 	Link       bool  `json:"link"`
 	APIVersion int32 `json:"api_version"` // the UI's proto version (proto/common.proto current_version_number) stamped on links
@@ -240,46 +245,18 @@ func main() {
 			die("bad gear set %s: %v", cfg.Gear, err)
 		}
 	}
+	gearMissing := officialGear(equipment)
+	// Consumables (2026-10-18, the port to wowsims/forever): the official simulator's ConsumesSpec names item ids only (flask, food,
+	// elixirs as a list, the stone or oil and the poison/firestone/spellstone of each hand apart, potions by class for the APL's
+	// potion placeholders). specs.json keeps the fork's fields, translated here (legacyConsumables); the fork's imbue ids that were
+	// enchant or spell ids map onto the items (legacyImbueItems). Forever's stacking of a stone or oil with a poison or stone imbue is
+	// native there: "extraMhImbueId" / "extraOhImbueId" become the other half of the hand.
+	consumables, potPlaceholder := legacyConsumables(cfg.Consumables)
 	rotation := &proto.APLRotation{}
 	if cfg.APL != "" {
-		if err := unmarshal.Unmarshal(readJSON(*root, cfg.APL), rotation); err != nil {
+		if err := unmarshal.Unmarshal(legacyAPL(readJSON(*root, cfg.APL), potPlaceholder), rotation); err != nil {
 			die("bad apl %s: %v", cfg.APL, err)
 		}
-	}
-	consumables := &proto.ConsumesSpec{}
-	// 2026-10-09: Forever lets temporary enchants stack with poisons, shaman imbues and the warlock's Firestone/Spellstone imbues; the
-	// simulator has one consumable enchant per hand, so "extraMhImbueId" / "extraOhImbueId" in the consumables go to the patched core
-	// through WOW_FOREVER_EXTRA_IMBUES (patches/forever/sim/core/forever_rules_patch.go foreverExtraImbues) and are removed here.
-	if len(cfg.Consumables) > 0 {
-		var raw map[string]json.RawMessage
-		if json.Unmarshal(cfg.Consumables, &raw) == nil {
-			var extra []string
-			for _, kv := range [][2]string{{"extraMhImbueId", "mh"}, {"extraOhImbueId", "oh"}} {
-				if v, ok := raw[kv[0]]; ok {
-					extra = append(extra, kv[1]+":"+strings.TrimSpace(string(v)))
-					delete(raw, kv[0])
-				}
-			}
-			if len(extra) > 0 {
-				os.Setenv("WOW_FOREVER_EXTRA_IMBUES", strings.Join(extra, ","))
-				cfg.Consumables, _ = json.Marshal(raw)
-			}
-		}
-	}
-	if len(cfg.Consumables) > 0 {
-		if err := unmarshal.Unmarshal(cfg.Consumables, consumables); err != nil {
-			die("bad consumables: %v", err)
-		}
-	}
-	// The simulator registers the chosen potion and conjured item (potId, conjuredId) only when they are also in the lists the
-	// UI sends with every run (all eligible potions and conjured items: sim/core/consumes.go registerPotionCD and
-	// registerConjuredCD). A config names one of each, so it goes into its list here; before 2026-09-28 no run of this bench
-	// used a potion, a Demonic Rune or Thistle Tea.
-	if consumables.PotId != 0 && !containsID(consumables.Potions, consumables.PotId) {
-		consumables.Potions = append(consumables.Potions, consumables.PotId)
-	}
-	if consumables.ConjuredId != 0 && !containsID(consumables.ConjuredItems, consumables.ConjuredId) {
-		consumables.ConjuredItems = append(consumables.ConjuredItems, consumables.ConjuredId)
 	}
 	classID, ok := proto.Class_value[cfg.Class]
 	if !ok {
@@ -319,6 +296,7 @@ func main() {
 		player.Class = proto.Class(classID)
 		player.Race = proto.Race(raceID)
 		player.Equipment = equipment
+		missing := gearMissing
 		player.Consumables = consumables
 		player.TalentsString = b.Talents
 		player.Profession1 = prof(cfg.Profession1, proto.Profession_Engineering)
@@ -342,6 +320,7 @@ func main() {
 				continue
 			}
 			player.Equipment = own
+			missing = officialGear(own)
 		}
 		if len(b.APLJSON) > 0 || b.APL != "" {
 			own := &proto.APLRotation{}
@@ -349,7 +328,7 @@ func main() {
 			if len(src) == 0 {
 				src = readJSON(*root, b.APL)
 			}
-			if err := unmarshal.Unmarshal(src, own); err != nil {
+			if err := unmarshal.Unmarshal(legacyAPL(src, potPlaceholder), own); err != nil {
 				fmt.Printf("{\"label\": %q, \"error\": %q}\n", b.Label, "bad apl: "+err.Error())
 				continue
 			}
@@ -460,6 +439,38 @@ func main() {
 			fmt.Println(string(line))
 			continue
 		}
+		if cfg.Spells {
+			env, _, _ := core.NewEnvironment(raid, encounter, false, false)
+			ch := env.Raid.Parties[0].Players[0].GetCharacter()
+			list := func(u *core.Unit) (spells []int32, auras []map[string]interface{}) {
+				for _, s := range u.Spellbook {
+					if id := s.ActionID.SpellID; id != 0 {
+						spells = append(spells, id)
+					}
+				}
+				for _, a := range u.GetAuras() {
+					auras = append(auras, map[string]interface{}{"label": a.Label, "spellId": a.ActionID.SpellID, "itemId": a.ActionID.ItemID})
+				}
+				return
+			}
+			sp, au := list(&ch.Unit)
+			out := map[string]interface{}{"label": b.Label, "spells": sp, "auras": au}
+			var pets []map[string]interface{}
+			for _, pet := range ch.Pets {
+				ps, pa := list(&pet.Unit)
+				pets = append(pets, map[string]interface{}{"name": pet.Label, "spells": ps, "auras": pa})
+			}
+			out["pets"] = pets
+			var targetAuras []map[string]interface{}
+			for _, tu := range env.Encounter.AllTargetUnits {
+				_, ta := list(tu)
+				targetAuras = append(targetAuras, ta...)
+			}
+			out["target_auras"] = targetAuras
+			line, _ := json.Marshal(out)
+			fmt.Println(string(line))
+			continue
+		}
 		if cfg.StatWeights {
 			pl := raid.Parties[0].Players[0]
 			swr := &proto.StatWeightsRequest{
@@ -530,6 +541,9 @@ func main() {
 			"oom_seconds": pm.SecondsOomAvg, "iterations": cfg.Iterations, "seconds": time.Since(t0).Seconds(),
 			"actions": actions,
 		}
+		if len(missing) > 0 {
+			out["missing_gear"] = missing
+		}
 		line, _ := json.Marshal(out)
 		fmt.Println(string(line))
 	}
@@ -542,4 +556,192 @@ func containsID(ids []int32, id int32) bool {
 		}
 	}
 	return false
+}
+
+// legacyImbueItems: the ElliotWood/Forever fork's imbue ids (enchant or spell ids) -> the official simulator's item ids.
+var legacyImbueItems = map[int32]int32{
+	25122: 20749, // Brilliant Wizard Oil
+	25123: 20748, // Brilliant Mana Oil (the fork's "Mana Oil")
+	25121: 20750, // Wizard Oil
+	28898: 23123, // Blessed Wizard Oil
+	22756: 18262, // Elemental Sharpening Stone
+	28891: 23122, // Consecrated Sharpening Stone
+	16138: 12404, // Dense Sharpening Stone
+	16622: 12643, // Dense Weightstone
+	26891: 8928,  // Instant Poison (the fork's top rank) -> Instant Poison VI
+	27186: 20844, // Deadly Poison (the fork's top rank) -> Deadly Poison V
+}
+
+// legacyItems: the fork's boolean consumables -> item ids.
+var legacyItems = map[string]int32{
+	"goblinSapper": 10646, // Goblin Sapper Charge
+}
+
+// legacyConsumables translates a config's consumables (the fork's ConsumesSpec fields as JSON) into the official ConsumesSpec, and
+// returns the APL potion placeholder the configured potion fills ("" when no potion): the fork's rotations cast "OtherActionPotion",
+// which the official simulator split by potion class.
+func legacyConsumables(raw json.RawMessage) (*proto.ConsumesSpec, string) {
+	out := &proto.ConsumesSpec{}
+	if len(raw) == 0 {
+		return out, ""
+	}
+	var m map[string]json.RawMessage
+	if err := json.Unmarshal(raw, &m); err != nil {
+		die("bad consumables: %v", err)
+	}
+	num := func(k string) int32 {
+		v, ok := m[k]
+		if !ok {
+			return 0
+		}
+		var f float64
+		if json.Unmarshal(v, &f) != nil {
+			var b bool
+			if json.Unmarshal(v, &b) == nil && b {
+				if id, ok := legacyItems[k]; ok {
+					return id
+				}
+			}
+			return 0
+		}
+		return int32(f)
+	}
+	known := func(id int32, what string) bool {
+		if id == 0 {
+			return false
+		}
+		if core.GetConsumableByID(id).Id == 0 {
+			fmt.Fprintf(os.Stderr, "consumables: %s %d is not in the simulator's catalogue: left out\n", what, id)
+			return false
+		}
+		return true
+	}
+	// one-per-kind fields that keep their meaning
+	if id := num("flaskId"); known(id, "flaskId") {
+		out.FlaskId = id
+	}
+	if id := num("foodId"); known(id, "foodId") {
+		out.FoodId = id
+	}
+	if id := num("explosiveId"); known(id, "explosiveId") {
+		out.ExplosiveId = id
+	}
+	if id := num("conjuredId"); known(id, "conjuredId") {
+		out.ConjuredId = id
+		out.ConjuredItems = append(out.ConjuredItems, id)
+	}
+	// elixirs and the other stacking buffs: elixirs go to elixir_ids, the rest to extra_ids (the simulator keeps one per exclusive group)
+	for _, k := range []string{"battleElixirId", "guardianElixirId", "schoolElixirId", "spellPowerElixirId", "defenseElixirId",
+		"strengthBuffId", "attackPowerBuffId", "zanzaId", "alcoholId", "goblinSapper", "dragonbreathChili"} {
+		id := num(k)
+		if k == "dragonbreathChili" { // the official catalogue has no Dragonbreath Chili (2026-10-18): dropped with a note
+			if _, ok := m[k]; ok {
+				fmt.Fprintln(os.Stderr, "consumables: dragonbreathChili is not in the simulator's catalogue: left out")
+			}
+			continue
+		}
+		if !known(id, k) {
+			continue
+		}
+		if core.GetConsumableByID(id).Type == proto.ConsumableType_ConsumableTypeElixir {
+			out.ElixirIds = append(out.ElixirIds, id)
+		} else {
+			out.ExtraIds = append(out.ExtraIds, id)
+		}
+	}
+	// weapons: each hand carries one stone or oil (type Imbue) and one poison/firestone/spellstone (type WeaponImbue)
+	hand := func(keys []string, stone, imbue *int32) {
+		for _, k := range keys {
+			id := num(k)
+			if mapped, ok := legacyImbueItems[id]; ok {
+				id = mapped
+			}
+			if !known(id, k) {
+				continue
+			}
+			switch core.GetConsumableByID(id).Type {
+			case proto.ConsumableType_ConsumableTypeWeaponImbue:
+				*imbue = id
+			default:
+				*stone = id
+			}
+		}
+	}
+	hand([]string{"mhImbueId", "extraMhImbueId"}, &out.MhImbueId, &out.MhWeaponImbueId)
+	hand([]string{"ohImbueId", "extraOhImbueId"}, &out.OhImbueId, &out.OhWeaponImbueId)
+	// the potion fills the placeholder of its class: offensive first (Mighty Rage Potion is resource and offensive), then resource
+	placeholder := ""
+	if id := num("potId"); known(id, "potId") {
+		classes := map[int32]bool{}
+		for _, c := range consumablePotionClasses(id) {
+			classes[int32(c)] = true
+		}
+		switch {
+		case classes[int32(proto.PotionClass_PotionClassOffensive)]:
+			out.OffensivePotId, placeholder = id, "OtherActionOffensivePotion"
+		case classes[int32(proto.PotionClass_PotionClassResource)]:
+			out.ResourcePotId, placeholder = id, "OtherActionResourcePotion"
+		default:
+			out.DefensivePotId, placeholder = id, "OtherActionDefensivePotion"
+		}
+		out.Potions = append(out.Potions, id)
+	}
+	for k := range m {
+		switch k {
+		case "flaskId", "foodId", "explosiveId", "conjuredId", "battleElixirId", "guardianElixirId", "schoolElixirId", "spellPowerElixirId",
+			"defenseElixirId", "strengthBuffId", "attackPowerBuffId", "zanzaId", "alcoholId", "goblinSapper", "dragonbreathChili",
+			"mhImbueId", "extraMhImbueId", "ohImbueId", "extraOhImbueId", "potId":
+		default:
+			fmt.Fprintf(os.Stderr, "consumables: unknown field %q left out\n", k)
+		}
+	}
+	return out, placeholder
+}
+
+// legacyAPL rewrites the fork's generic potion action into the official placeholder of the configured potion's class.
+func legacyAPL(src []byte, placeholder string) []byte {
+	if placeholder == "" {
+		placeholder = "OtherActionOffensivePotion" // no potion configured: the placeholder casts nothing
+	}
+	return bytes.ReplaceAll(src, []byte(`"OtherActionPotion"`), []byte(`"`+placeholder+`"`))
+}
+
+var uiConsumables map[int32]*proto.Consumable
+
+// consumablePotionClasses: the potion classes the official database gives a consumable (core.Consumable does not carry them).
+func consumablePotionClasses(id int32) []proto.PotionClass {
+	if uiConsumables == nil {
+		uiConsumables = map[int32]*proto.Consumable{}
+		for _, c := range database.Load().Consumables {
+			uiConsumables[c.Id] = c
+		}
+	}
+	if c, ok := uiConsumables[id]; ok {
+		return c.GetPotionClasses()
+	}
+	return nil
+}
+
+// officialGear removes from a gear set the items and enchants the official simulator's database does not have, and returns them
+// ("item:<id>", "enchant:<id>"). 2026-10-18, the port to wowsims/forever: its database comes from Forever's game files, and 159 items
+// of our gear sets (built on the ElliotWood/Forever fork's database: Blackhand's Breadth, Band of Accuria, the Molten Core tier sets ...)
+// are not in them (Wowhead's Forever database does not list them either); the simulator panics on an unknown item. A run that lost
+// gear reports it in "missing_gear": its numbers are not comparable until the set is re-made from the official database.
+func officialGear(eq *proto.EquipmentSpec) []string {
+	var missing []string
+	for i, it := range eq.Items {
+		if it == nil || it.Id == 0 {
+			continue
+		}
+		if core.GetItemByID(it.Id) == nil {
+			missing = append(missing, fmt.Sprintf("item:%d", it.Id))
+			eq.Items[i] = &proto.ItemSpec{}
+			continue
+		}
+		if it.Enchant != 0 && core.GetEnchantByEffectID(it.Enchant) == nil {
+			missing = append(missing, fmt.Sprintf("enchant:%d", it.Enchant))
+			it.Enchant = 0
+		}
+	}
+	return missing
 }

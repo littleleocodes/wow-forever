@@ -32,6 +32,7 @@ sys.path.append(str(pathlib.Path(__file__).resolve().parents[1]))   # _reference
 import paths  # noqa: E402
 from fmt_json import dumps  # noqa: E402
 import run as raidrun  # noqa: E402  (this folder's run.py: the raid-sim driver)
+import splitfx  # noqa: E402  (scorer/splitfx.py)
 
 # the same fit rules as fightlab/calibrate.py (copied: that module's name clashes with this one)
 TOLERANCE = 0.01      # keep an entry whose scorer value is within 1 point of the sim ...
@@ -203,10 +204,11 @@ def main():
                 s["share"] = share
             else:   # the Classic split lives in the source's game override so the Forever base split stays
                 s.setdefault("game_overrides", collections.OrderedDict()).setdefault(game, collections.OrderedDict())["share"] = share
-        model["note"] = model.get("note", "").split(" Raid sim shares" if game == "forever" else " Classic raid sim shares")[0] + (
-            f" {'Raid' if game == 'forever' else 'Classic raid'} sim shares ({datetime.date.today().isoformat()}, {main['label']} in the {'ElliotWood/Forever' if game == 'forever' else 'wowsims/classic'} simulator {out['sim']['commit']}"
+        # replaces only this kind of sentence (the split kept the text before it and dropped every later sentence; audit 2026-10-18, row 44)
+        model["note"] = splitfx.set_sentence(model.get("note", ""), " Raid sim shares" if game == "forever" else " Classic raid sim shares", (
+            f"{'Raid' if game == 'forever' else 'Classic raid'} sim shares ({datetime.date.today().isoformat()}, {main['label']} in the {'ElliotWood/Forever' if game == 'forever' else 'wowsims/classic'} simulator {out['sim']['commit']}"
             + (", every mana-only buff on: the split before the mana limit" if res is not out["results"] else "") + "): "
-            + ", ".join(f"{k} {v * 100:.0f}%" for k, v in main["source_shares"].items()) + f"; {main['unmatched_share'] * 100:.0f}% of the damage matched no source.")
+            + ", ".join(f"{k} {v * 100:.0f}%" for k, v in main["source_shares"].items()) + f"; {main['unmatched_share'] * 100:.0f}% of the damage matched no source."))
         if a.write:
             spec_path.write_text(dumps(specs), encoding="utf-8")
         print("  raid shares -> " + ", ".join(f"{k} {v * 100:.0f}%" for k, v in main["source_shares"].items()) + f" (unmatched {main['unmatched_share'] * 100:.0f}%)")
@@ -248,6 +250,10 @@ def main():
         import splitfx   # scorer/splitfx.py
         fit = splitfx.seed_from_parsed(fit, expand(entry_m["effects"]), expand(opt.effects[name].get("parsed") or []), FIT_MODES, set(FIT_MODES), a.spec, NO_FIT)
         how = "apl" if name in apl_dep else "unmeasured" if name in unmeasured else "noise" if noise else "kept"
+        dead = splitfx.dead_scopes(fit, specs["models"][a.spec])   # a scope no source carries scores nothing however it is scaled (audit 2026-10-18, row 47)
+        if dead:
+            print(f"  WARNING {name}: not fitted, no source of {a.spec} matches " + ", ".join(f"{e['channel']} {e['scope']}" for e in dead))
+            fit, other = [e for e in fit if e not in dead], other + dead
         reseeded = False
         if target > NOISE and how == "kept":   # an earlier fit (another setting) left every value at zero: start again from the tooltip
             seeded = splitfx.reseed_zero(fit, expand(entry_m["effects"]), expand(opt.effects[name].get("parsed") or []), FIT_MODES, a.spec, NO_FIT)
@@ -405,7 +411,6 @@ def main():
             if p["how"] in ("noise", "apl", "dead", "unmeasured") and not p.get("converted"):
                 continue
             e = collections.OrderedDict()
-            old_note = p["entry"].get("note", "").split(" Raid sim calibration")[0]
             what = {"fitted": f"raid values scaled x{p['k']:.2f} to match", "kept": "already within tolerance, raid effects split off unchanged",
                     "capped": f"raid values scaled x{p['k']:.2f}, the cap on effect size stops short of the target",
                     "held": f"raid values kept at x{p['k']:.2f}: its builds sit where the mana limit is flat, so the removal runs cannot move it"}.get(
@@ -414,8 +419,12 @@ def main():
                 what = "re-seeded from its tooltip (an earlier fit had left its raid values at zero), " + what
             if p.get("converted"):
                 what = f"mana values moved to the mana limit's unit (x{p['converted']:.2f}), " + what
-            e["note"] = old_note + (f" Raid sim calibration ({datetime.date.today().isoformat()}, {'ElliotWood/Forever' if game == 'forever' else 'wowsims/classic'} {out['sim']['commit']}, {a.spec}{', training dummy' if out['sim'].get('setting') == 'dummy' else ''}): removing it costs "
-                                    f"{p['target'] * 100:.1f}% DPS in the simulator (scorer said {p['before'] * 100:.1f}% on the same scale); {what} ({ev_mean(name) * 100:.1f}%). Other modes unchanged.")
+            # one sentence per spec model and game: other models' raid sentences stay (110 entries had lost theirs; audit 2026-10-18, row 44)
+            mk = " Raid sim calibration" if game == "forever" else " Classic raid sim calibration"
+            e["note"] = splitfx.set_sentence(p["entry"].get("note", ""), mk, (
+                f"{mk.strip()} [{a.spec}] ({datetime.date.today().isoformat()}, {'ElliotWood/Forever' if game == 'forever' else 'wowsims/classic'} {out['sim']['commit']}, {a.spec}{', training dummy' if out['sim'].get('setting') == 'dummy' else ''}): removing it costs "
+                f"{p['target'] * 100:.1f}% DPS in the simulator (scorer said {p['before'] * 100:.1f}% on the same scale); {what} ({ev_mean(name) * 100:.1f}%). Other modes unchanged."),
+                tag=a.spec, drop_untagged=lambda seg: f", {a.spec}," in seg or f", {a.spec})" in seg)
             e["effects"] = expand(p["other"]) + expand(fitted(p, p["k"]))
             manual[name] = e
             n += 1

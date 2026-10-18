@@ -168,3 +168,71 @@ def dedupe(effects):
         else:
             dropped += 1
     return out, merged, dropped
+
+
+# ------------------------------------------------------------------ provenance sentences in notes (audit 2026-10-18, row 44)
+# Each calibration appends one sentence to an entry's or a model's note. Until 2026-10-18 every writer kept only the note text before
+# its own marker, so a fit dropped every sentence after its marker (other models' raid fits, the "Raid sim shares" sentence after a
+# fight-lab one: 110 entries lost a "Raid sim calibration" line), and the leveling-aoe fit overwrote the leveling-st one. Sentences
+# now carry a tag naming what they fit ("Fight lab calibration [shadow-dps, leveling-aoe] (...)"), and a writer replaces only the
+# sentences with its own marker and tag.
+NOTE_MARKERS = (" Fight lab calibration", " Fight lab speed", " Raid sim calibration", " Raid sim shares", " Classic raid sim calibration",
+                " Classic raid sim shares", " Healer lab calibration", " Healer lab shares")
+
+
+def _segments(note):
+    """note -> (head, [segment, ...]): the text before the first marker and each marker's sentence up to the next marker."""
+    import re
+    rx = re.compile("|".join(re.escape(m) for m in NOTE_MARKERS))
+    pos = [m.start() for m in rx.finditer(note)]
+    if not pos:
+        return note, []
+    return note[:pos[0]], [note[a:b] for a, b in zip(pos, pos[1:] + [len(note)])]
+
+
+def segment_key(seg):
+    """(marker, tag or None) of a segment."""
+    import re
+    mk = max((m for m in NOTE_MARKERS if seg.startswith(m)), key=len)
+    m = re.match(re.escape(mk) + r" \[([^\]]+)\]", seg)
+    return mk, (m.group(1) if m else None)
+
+
+def set_sentence(note, marker, text, tag=None, drop_untagged=None):
+    """The note with every sentence of `marker` and `tag` replaced by `text` (a full sentence starting with the marker, appended at the
+    end). Untagged old sentences of the marker are dropped when `drop_untagged(segment)` says they describe the same fit (None: drop
+    them when no tag is given)."""
+    head, segs = _segments(note or "")
+    keep = []
+    for s in segs:
+        mk, tg = segment_key(s)
+        if mk == marker and (tg == tag or (tg is None and (drop_untagged(s) if drop_untagged else tag is None))):
+            continue
+        keep.append(s)
+    return (head.rstrip() + "".join(keep) + " " + text.strip()).strip()
+
+
+# ------------------------------------------------------------------ dead scopes (audit 2026-10-18, row 47)
+SOURCE_CHANNELS = ("dmg", "heal", "crit", "crit_bonus", "hit", "haste", "cast_time", "cooldown", "resource_cost", "threat_up")
+
+
+def dead_scopes(effects, model):
+    """Effects that can never score for this spec model: a source-scoped channel whose scope matches no source's tags (Blade Flurry's
+    dmg ["aoe"] had been fitted to 1.5 with no source tagged aoe), or a mana_cost scope with no `mana_share` key. A fit scales them
+    without moving the score, so the calibrations refuse them."""
+    tags = set()
+    for s in model.get("sources", []):
+        tags |= set(s.get("tags", []))
+        if "pet" not in s.get("tags", []):
+            tags.add("all")
+    ms = set(model.get("mana_share", {}))
+    out = []
+    for e in effects:
+        ch, scope = e.get("channel"), e.get("scope") or []
+        if not any(_values(e)):
+            continue
+        if ch in SOURCE_CHANNELS and not any(t in tags for t in scope):
+            out.append(e)
+        elif ch == "mana_cost" and not any(t in ms or t == "all" and "all" in ms for t in scope):
+            out.append(e)
+    return out

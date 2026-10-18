@@ -8,7 +8,8 @@ other spec carried 5-10. The templates are the enchants our other sets already u
 melee as the Enhancement and hunter sets (Lesser Arcanum of Voracity +8 Strength on head and legs, Cloak +3 Agility, Chest +4 stats,
 Bracer +9 Strength, Gloves +7 Strength, Boots +7 Agility, Crusader), agility melee as the rogue set (+8 Agility arcanums, Gloves +7
 Agility), casters as the mage and Elemental sets (+8 Intellect arcanums, Chest +4 stats, Bracer +7 Intellect, Boots Minor Speed,
-Weapon +30 Spell Power). Only empty enchant slots are filled; an off-hand gets Crusader only when it is a weapon. gear_tiers.make calls
+Weapon +30 Spell Power). Only empty enchant slots are filled (plus the weak enchants in `UPGRADE`), in every set since 2026-10-18 (sets
+with 4+ enchants had been skipped); an off-hand gets Crusader only when it is a weapon. gear_tiers.make calls
 `fill` on every set it writes, so a new set never lacks enchants again.
 Healers (2026-10-15, heallab/heal_gear.py): `HEALER_CANDIDATES` lists, per slot, the Classic phase-1 enchants a healer chooses from (the
 same availability as the caster template: Dire Maul's lesser arcanums, Greater Stats, the Argent Dawn bracers, Molten Core's weapon
@@ -45,6 +46,9 @@ TANK_BEAR = {0: 1508, 3: 849, 4: 1891, 5: 1886, 6: 1887, 8: 1508, 9: 1887, 14: 1
 TANK_CANDIDATES = {0: [1507, 1508, 1506], 3: [1889, 849], 4: [1891, 1892], 5: [1886, 1885, 923], 6: [1887, 927], 8: [1507, 1508, 1506],
                    9: [929, 1887], "1h": [1900, 2504], "2h": [1900, 1896], "shield": [1886, 929]}
 TANK_FILES = ("warrior-protection-", "paladin-protection-", "druid-feral-combat-tank-")
+# weaker enchants a set carried from a preset, replaced by the template's (audit 2026-10-18 row 52: the standard warlock set had Chest +3
+# stats, effect 928, where every template has Greater Stats 1891)
+UPGRADE = {4: {928: 1891}}
 TEMPLATES = {"str-melee": STR_MELEE, "agi-melee": AGI_MELEE, "caster": CASTER, "healer": HEALER, "tank-plate": TANK_PLATE, "tank-bear": TANK_BEAR}
 
 
@@ -78,7 +82,13 @@ def fill(items, tmpl):
     db = items_db()
     done = []
     for slot, ench in TEMPLATES[tmpl].items():
-        if slot >= len(items) or not items[slot] or not items[slot].get("id") or items[slot].get("enchant"):
+        if slot >= len(items) or not items[slot] or not items[slot].get("id"):
+            continue
+        if items[slot].get("enchant") in UPGRADE.get(slot, {}) and UPGRADE[slot][items[slot]["enchant"]] == ench:
+            items[slot]["enchant"] = ench
+            done.append(slot)
+            continue
+        if items[slot].get("enchant"):
             continue
         it = db.get(items[slot]["id"], {})
         if slot in (14, 15) and it.get("type") != 13:
@@ -99,8 +109,8 @@ def main():
         if not tmpl:
             continue
         d = json.load(open(f, encoding="utf-8"))
-        if sum(1 for x in d.get("items", []) if x and x.get("enchant")) >= 4:
-            continue   # a set that has its enchants keeps its own choices
+        # every set: only empty slots are filled (and UPGRADE's weak enchants replaced), so a set's own choices stay. Until 2026-10-18 a
+        # set with 4+ enchants was skipped, and the standard warlock set kept empty head and leg slots (audit 2026-10-18 row 52)
         done = fill(d["items"], tmpl)
         if done:
             print(f"{f.relative_to(SETS).as_posix()}: {tmpl}, {len(done)} enchants (slots {done})")

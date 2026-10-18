@@ -1,0 +1,387 @@
+{
+ "mage": {
+  "changes": {
+   "arcane-dps-raid.apl.json": [
+    [
+     25345,
+     10212
+    ],
+    [
+     44404,
+     400589
+    ]
+   ],
+   "arcane-dps.apl.json": [
+    [
+     143,
+     10151
+    ],
+    [
+     25304,
+     10181
+    ],
+    [
+     25345,
+     10212
+    ],
+    [
+     44404,
+     400589
+    ]
+   ],
+   "fire-raid-raid.apl.json": [
+    [
+     2948,
+     10207
+    ],
+    [
+     25306,
+     10151
+    ]
+   ],
+   "fire-raid.apl.json": [
+    [
+     143,
+     10151
+    ],
+    [
+     2948,
+     10207
+    ],
+    [
+     25306,
+     10151
+    ],
+    [
+     25345,
+     10212
+    ],
+    [
+     44404,
+     400589
+    ]
+   ],
+   "frost-raid-raid.apl.json": [
+    [
+     25304,
+     10181
+    ],
+    [
+     25345,
+     10212
+    ],
+    [
+     44404,
+     400589
+    ]
+   ],
+   "frost-raid.apl.json": [
+    [
+     25304,
+     10181
+    ],
+    [
+     25345,
+     10212
+    ],
+    [
+     44404,
+     400589
+    ]
+   ],
+   "frost-raid.base.apl.json": [
+    [
+     25304,
+     10181
+    ],
+    [
+     25345,
+     10212
+    ],
+    [
+     44404,
+     400589
+    ]
+   ],
+   "frostfire-raid-raid.apl.json": [
+    [
+     143,
+     10151
+    ],
+    [
+     2948,
+     10207
+    ],
+    [
+     25345,
+     10212
+    ],
+    [
+     44404,
+     400589
+    ],
+    [
+     1237312,
+     1237313
+    ]
+   ],
+   "frostfire-raid.apl.json": [
+    [
+     143,
+     10151
+    ],
+    [
+     2948,
+     10207
+    ],
+    [
+     25345,
+     10212
+    ],
+    [
+     44404,
+     400589
+    ]
+   ],
+   "frostfire-raid.base.apl.json": [
+    [
+     2948,
+     10207
+    ],
+    [
+     25345,
+     10212
+    ],
+    [
+     44404,
+     400589
+    ]
+   ]
+  },
+  "unresolved": {},
+  "sim": "09e739807"
+ },
+ "priest": {
+  "changes": {},
+  "unresolved": {
+   "shadow-dps-raid.apl.json": [
+    1277328
+   ],
+   "smite-dps-raid.apl.json": [
+    1277328
+   ]
+  },
+  "sim": "09e739807"
+ },
+ "warlock": {
+  "changes": {},
+  "unresolved": {},
+  "sim": "09e739807"
+ },
+ "hunter": {
+  "changes": {},
+  "unresolved": {
+   "bm-raid.apl.json": [
+    19577
+   ],
+   "melee-dps-raid.apl.json": [
+    20910
+   ],
+   "melee-dps.apl.json": [
+    20910
+   ],
+   "melee-dps.base.apl.json": [
+    20910
+   ],
+   "mm-raid-raid.apl.json": [
+    19577
+   ],
+   "mm-raid.apl.json": [
+    19577
+   ]
+  },
+  "sim": "09e739807"
+ },
+ "rogue": {
+  "changes": {
+   "assassination-raid-raid.apl.json": [
+    [
+     25300,
+     11281
+    ],
+    [
+     31016,
+     11300
+    ]
+   ],
+   "assassination-raid.apl.json": [
+    [
+     25300,
+     11281
+    ],
+    [
+     31016,
+     11300
+    ]
+   ],
+   "combat-daggers-raid-raid.apl.json": [
+    [
+     25300,
+     11281
+    ],
+    [
+     31016,
+     11300
+    ]
+   ],
+   "combat-daggers-raid.apl.json": [
+    [
+     25300,
+     11281
+    ],
+    [
+     31016,
+     11300
+    ]
+   ],
+   "combat-swords-raid-raid.apl.json": [
+    [
+     31016,
+     11300
+    ]
+   ],
+   "combat-swords-raid.apl.json": [
+    [
+     31016,
+     11300
+    ]
+   ],
+   "subtlety-raid-raid.apl.json": [
+    [
+     1856,
+     1857
+    ],
+    [
+     31016,
+     11300
+    ]
+   ],
+   "subtlety-raid.apl.json": [
+    [
+     1856,
+     1857
+    ],
+    [
+     31016,
+     11300
+    ]
+   ]
+  },
+  "unresolved": {},
+  "sim": "09e739807"
+ },
+ "warrior": {
+  "changes": {},
+  "unresolved": {
+   "arms-2h-raid-raid.apl.json": [
+    20572,
+    24427,
+    29602
+   ],
+   "arms-2h-raid.apl.json": [
+    20572,
+    24427,
+    29602
+   ],
+   "arms-battle-raid-raid.apl.json": [
+    20572,
+    24427,
+    29602
+   ],
+   "arms-battle-raid.apl.json": [
+    20572,
+    24427,
+    29602
+   ],
+   "arms-battle-raid.base.apl.json": [
+    20572,
+    24427,
+    29602
+   ],
+   "fury-dw-raid-raid.apl.json": [
+    20572,
+    24427,
+    29602
+   ],
+   "fury-dw-raid.apl.json": [
+    20572,
+    24427,
+    29602
+   ]
+  },
+  "sim": "09e739807"
+ },
+ "paladin": {
+  "changes": {},
+  "unresolved": {},
+  "sim": "09e739807"
+ },
+ "shaman": {
+  "changes": {
+   "elemental-dps-raid.apl.json": [
+    [
+     529,
+     10392
+    ]
+   ],
+   "elemental-dps.apl.json": [
+    [
+     529,
+     10392
+    ],
+    [
+     10391,
+     10392
+    ]
+   ],
+   "stormcaller-dps-raid.apl.json": [
+    [
+     529,
+     10392
+    ]
+   ],
+   "stormcaller-dps.apl.json": [
+    [
+     915,
+     10392
+    ]
+   ]
+  },
+  "unresolved": {},
+  "sim": "09e739807"
+ },
+ "druid": {
+  "changes": {
+   "balance-dps.apl.json": [
+    [
+     2912,
+     9876
+    ]
+   ]
+  },
+  "unresolved": {
+   "feral-cat-dps-raid.apl.json": [
+    5217,
+    13494,
+    17056,
+    23724
+   ],
+   "feral-cat-dps.apl.json": [
+    5217,
+    13494,
+    23724
+   ]
+  },
+  "sim": "09e739807"
+ }
+}

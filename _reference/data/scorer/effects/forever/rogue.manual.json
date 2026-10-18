@@ -139,7 +139,7 @@
     ]
   },
   "Improved Slice and Dice": {
-    "note": "+15%/rank duration: fewer SnD refreshes -> more Eviscerates (~+1.5%/rank raid); leveling mobs rarely outlive one SnD (+0.5%/rank). Fight lab calibration (2026-10-15, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "note": "+15%/rank duration: fewer SnD refreshes -> more Eviscerates (~+1.5%/rank raid); leveling mobs rarely outlive one SnD (+0.5%/rank). Fight lab calibration (2026-10-15, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, combat-daggers-raid, training dummy): removing it costs 5.5% DPS in the simulator (scorer said 5.0% on the same scale); already within tolerance, raid effects split off unchanged (5.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -192,7 +192,7 @@
     ]
   },
   "Relentless Strikes": {
-    "note": "20% per combo point to refund 25 energy on finishers (100% at 5 CP): ~25 energy per ~170 spent = +15% energy for one point -> ~+6% yellow damage. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 6.0% time per kill in the simulator (scorer said 5.4% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (5.2%). Other modes unchanged.",
+    "note": "20% per combo point to refund 25 energy on finishers (100% at 5 CP): ~25 energy per ~170 spent = +15% energy for one point -> ~+6% yellow damage. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 6.0% time per kill in the simulator (scorer said 5.4% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (5.2%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, combat-daggers-raid, training dummy): removing it costs 7.8% DPS in the simulator (scorer said 7.2% on the same scale); already within tolerance, raid effects split off unchanged (7.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -246,7 +246,7 @@
     ]
   },
   "Improved Poisons": {
-    "note": "+2%/rank poison application on a ~20% base (= +10%/rank relative) and 10%/rank chance not to consume a charge. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 4.1% time per kill in the simulator (scorer said 4.9% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (5.0%). Other modes unchanged.",
+    "note": "+2%/rank poison application on a ~20% base (= +10%/rank relative) and 10%/rank chance not to consume a charge. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 4.1% time per kill in the simulator (scorer said 4.9% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (5.0%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, combat-swords-raid, training dummy): removing it costs 2.9% DPS in the simulator (scorer said 3.2% on the same scale); already within tolerance, raid effects split off unchanged (3.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -573,7 +573,7 @@
     ]
   },
   "Cold Blood": {
-    "note": "Guaranteed crit every 3 min (parser read it as permanent +100% crit): ~+1% damage. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 2.3% time per kill in the simulator (scorer said 2.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.2%). Other modes unchanged.",
+    "note": "Guaranteed crit every 3 min (parser read it as permanent +100% crit): ~+1% damage. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 2.3% time per kill in the simulator (scorer said 2.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.2%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, combat-swords-raid, training dummy): removing it costs 0.3% DPS in the simulator (scorer said 0.6% on the same scale); raid values scaled x0.55 to match (0.3%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -627,16 +627,8 @@
     ]
   },
   "Improved Expose Armor": {
-    "note": "-5 energy and a CP refund on Expose Armor: only if you are the raid's Expose Armor rogue; +0.5%/rank. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, combat-daggers-raid, training dummy): removing it costs 5.8% DPS in the simulator (scorer said 5.3% on the same scale); already within tolerance, raid effects split off unchanged (5.3%). Other modes unchanged.",
+    "note": "-5 energy and a CP refund on Expose Armor: only if you are the raid's Expose Armor rogue; +0.5%/rank. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, combat-daggers-raid, training dummy): removing it costs 5.8% DPS in the simulator (scorer said 5.3% on the same scale); already within tolerance, raid effects split off unchanged (5.3%). Other modes unchanged. Audit 2026-10-18: dropped a resource_cost copy fitted to 1.07e10 for a model with no Expose Armor source (row 47).",
     "effects": [
-      {
-        "channel": "resource_cost",
-        "scope": ["ability:Expose Armor"],
-        "values": [5368709120.0, 10737418240.0],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["combat-swords-raid"]
-      },
       {
         "channel": "dmg",
         "scope": ["yellow"],
@@ -875,7 +867,7 @@
     ]
   },
   "Flawless Execution": {
-    "note": "Flawless Execution (replaced Restless Blades in beta build 1.60.1.69893): Eviscerate costs 10 less Energy (35 -> 25). One finisher per ~13s saves ~0.8 Energy/s against ~10.5 Energy/s income (+7% Energy), and Energy-bound yellow damage is ~55% of the total -> ~+4% melee damage in Eviscerate builds (raid and leveling); nothing for Rupture/Slice-and-Dice-only rotations. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 4.7% time per kill in the simulator (scorer said 4.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (4.1%). Other modes unchanged.",
+    "note": "Flawless Execution (replaced Restless Blades in beta build 1.60.1.69893): Eviscerate costs 10 less Energy (35 -> 25). One finisher per ~13s saves ~0.8 Energy/s against ~10.5 Energy/s income (+7% Energy), and Energy-bound yellow damage is ~55% of the total -> ~+4% melee damage in Eviscerate builds (raid and leveling); nothing for Rupture/Slice-and-Dice-only rotations. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 4.7% time per kill in the simulator (scorer said 4.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (4.1%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, combat-swords-raid, training dummy): removing it costs 0.5% DPS in the simulator (scorer said 0.5% on the same scale); already within tolerance, raid effects split off unchanged (0.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -922,7 +914,7 @@
     ]
   },
   "Blade Flurry": {
-    "note": "+20% attack speed for 15s every 2 min (12.5% uptime -> +2.5% white haste) and a cleave. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 9.5% time per kill in the simulator (scorer said 7.2% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (7.4%). Other modes unchanged.",
+    "note": "+20% attack speed for 15s every 2 min (12.5% uptime -> +2.5% white haste) and a cleave. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 9.5% time per kill in the simulator (scorer said 7.2% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (7.4%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, combat-swords-raid, training dummy): removing it costs 0.7% DPS in the simulator (scorer said 0.4% on the same scale); already within tolerance, raid effects split off unchanged (0.4%). Other modes unchanged. Audit 2026-10-18: no rogue model has a source tagged aoe, so the cleave copies (dmg ['aoe'], fitted to 1.5 in leveling-aoe) scored nothing: dropped; in leveling-aoe the cleave is +10% damage (15 s of a 2 min cooldown on two mobs, a seed) (row 47).",
     "effects": [
       {
         "channel": "haste",
@@ -932,13 +924,6 @@
         "specs": ["combat-daggers-raid"]
       },
       {
-        "channel": "dmg",
-        "scope": ["aoe"],
-        "values": [0.1],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["combat-daggers-raid"]
-      },
-      {
         "channel": "haste",
         "scope": ["white"],
         "values": [0.025],
@@ -947,21 +932,14 @@
       },
       {
         "channel": "dmg",
-        "scope": ["aoe"],
+        "scope": ["all"],
         "values": [0.1],
-        "modes": ["leveling-aoe", "heal", "tank"],
+        "modes": ["leveling-aoe"],
         "specs": ["combat-daggers-raid"]
       },
       {
         "channel": "haste",
         "scope": ["white"],
-        "values": [0.0],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["combat-swords-raid"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["aoe"],
         "values": [0.0],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["combat-swords-raid"]
@@ -981,23 +959,9 @@
         "specs": ["combat-daggers-raid"]
       },
       {
-        "channel": "dmg",
-        "scope": ["aoe"],
-        "values": [0.053022],
-        "modes": ["raid"],
-        "specs": ["combat-daggers-raid"]
-      },
-      {
         "channel": "haste",
         "scope": ["white"],
         "values": [0.009295],
-        "modes": ["raid"],
-        "specs": ["combat-swords-raid"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["aoe"],
-        "values": [0.037182],
         "modes": ["raid"],
         "specs": ["combat-swords-raid"]
       },
@@ -1010,8 +974,8 @@
       },
       {
         "channel": "dmg",
-        "scope": ["aoe"],
-        "values": [1.5],
+        "scope": ["all"],
+        "values": [0.1],
         "modes": ["leveling-aoe"],
         "specs": ["combat-swords-raid"]
       }
@@ -1078,7 +1042,7 @@
     ]
   },
   "Adrenaline Rush": {
-    "note": "Double energy regen 15s every 5 min (5% uptime) -> ~+5% yellow output in raids (Restless Blades' uptime gain is counted there), +3% leveling. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 1.8% time per kill in the simulator (scorer said 3.4% on the same scale); leveling-st/solo-60 values scaled x0.53 to match (1.8%). Other modes unchanged.",
+    "note": "Double energy regen 15s every 5 min (5% uptime) -> ~+5% yellow output in raids (Restless Blades' uptime gain is counted there), +3% leveling. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 1.8% time per kill in the simulator (scorer said 3.4% on the same scale); leveling-st/solo-60 values scaled x0.53 to match (1.8%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, combat-daggers-raid, training dummy): removing it costs 4.8% DPS in the simulator (scorer said 4.6% on the same scale); already within tolerance, raid effects split off unchanged (4.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1132,7 +1096,7 @@
     ]
   },
   "Hack and Slash": {
-    "note": "Beta curves: sword/axe 1%/rank extra attacks (~+1%/rank damage); dagger/fist +1%/rank crit; mace 3%/rank armor ignored (15% at 5/5). Fight lab calibration (2026-10-15, levels 40,60): removing it costs 1.8% time per kill in the simulator (scorer said 1.7% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.7%). Other modes unchanged.",
+    "note": "Beta curves: sword/axe 1%/rank extra attacks (~+1%/rank damage); dagger/fist +1%/rank crit; mace 3%/rank armor ignored (15% at 5/5). Fight lab calibration (2026-10-15, levels 40,60): removing it costs 1.8% time per kill in the simulator (scorer said 1.7% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.7%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, combat-daggers-raid, training dummy): removing it costs 4.1% DPS in the simulator (scorer said 4.2% on the same scale); already within tolerance, raid effects split off unchanged (4.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1284,7 +1248,7 @@
     ]
   },
   "Dual Wield Specialization": {
-    "note": "+5%/rank off-hand damage (parser could not scope 'off-hand weapon'). Fight lab calibration (2026-10-15, levels 40,60): removing it costs 2.6% time per kill in the simulator (scorer said 2.4% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.4%). Other modes unchanged.",
+    "note": "+5%/rank off-hand damage (parser could not scope 'off-hand weapon'). Fight lab calibration (2026-10-15, levels 40,60): removing it costs 2.6% time per kill in the simulator (scorer said 2.4% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.4%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, combat-daggers-raid, training dummy): removing it costs 3.8% DPS in the simulator (scorer said 3.1% on the same scale); already within tolerance, raid effects split off unchanged (3.1%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1686,7 +1650,7 @@
     ]
   },
   "Malice": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 3.9% time per kill in the simulator (scorer said 5.5% on the same scale); leveling-st/solo-60 values scaled x0.72 to match (3.9%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 3.9% time per kill in the simulator (scorer said 5.5% on the same scale); leveling-st/solo-60 values scaled x0.72 to match (3.9%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, combat-daggers-raid, training dummy): removing it costs 4.4% DPS in the simulator (scorer said 4.4% on the same scale); already within tolerance, raid effects split off unchanged (4.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -1739,7 +1703,7 @@
     ]
   },
   "Improved Eviscerate": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 4.7% time per kill in the simulator (scorer said 4.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (4.1%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 4.7% time per kill in the simulator (scorer said 4.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (4.1%). Other modes unchanged. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, combat-daggers-raid, training dummy): removing it costs 0.6% DPS in the simulator (scorer said 0.4% on the same scale); already within tolerance, raid effects split off unchanged (0.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1792,7 +1756,7 @@
     ]
   },
   "Improved Sinister Strike": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 4.4% time per kill in the simulator (scorer said 5.7% on the same scale); leveling-st/solo-60 values scaled x0.83 to match (4.3%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 4.4% time per kill in the simulator (scorer said 5.7% on the same scale); leveling-st/solo-60 values scaled x0.83 to match (4.3%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, combat-swords-raid, training dummy): removing it costs 6.9% DPS in the simulator (scorer said 6.2% on the same scale); already within tolerance, raid effects split off unchanged (6.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "resource_cost",
@@ -1882,7 +1846,7 @@
     ]
   },
   "Precision": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 4.8% time per kill in the simulator (scorer said 4.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (4.5%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 4.8% time per kill in the simulator (scorer said 4.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (4.5%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, combat-daggers-raid, training dummy): removing it costs 3.0% DPS in the simulator (scorer said 3.6% on the same scale); already within tolerance, raid effects split off unchanged (3.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "hit",
@@ -1935,7 +1899,7 @@
     ]
   },
   "Aggression": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 2.0% time per kill in the simulator (scorer said 3.2% on the same scale); leveling-st/solo-60 values scaled x0.63 to match (2.0%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 2.0% time per kill in the simulator (scorer said 3.2% on the same scale); leveling-st/solo-60 values scaled x0.63 to match (2.0%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, combat-daggers-raid, training dummy): removing it costs 2.1% DPS in the simulator (scorer said 1.9% on the same scale); already within tolerance, raid effects split off unchanged (1.9%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1988,7 +1952,7 @@
     ]
   },
   "Lethality": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 0.3% time per kill in the simulator (scorer said 0.8% on the same scale); leveling-st/solo-60 values scaled x0.47 to match (0.3%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 0.3% time per kill in the simulator (scorer said 0.8% on the same scale); leveling-st/solo-60 values scaled x0.47 to match (0.3%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, combat-daggers-raid, training dummy): removing it costs 1.2% DPS in the simulator (scorer said 1.2% on the same scale); already within tolerance, raid effects split off unchanged (1.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit_bonus",

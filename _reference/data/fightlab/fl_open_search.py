@@ -276,7 +276,8 @@ def main():
             best = min((k for k in r["race"] if k != "open winner" and not k.startswith("finalist ")), key=lambda k: r["race"][k]["weighted"], default=None)
             r.update({"split": space.split(w), "family": space.classify(w), "link": RSH.tf_link(cls, w), "ours_best": best,
                       "gain_vs_ours": round(r["race"][best]["weighted"] / r["race"]["open winner"]["weighted"] - 1, 4) if best else None,
-                      "minutes": round((time.time() - t0) / 60, 1), "done": True})
+                      "minutes": round((time.time() - t0) / 60, 1), "done": True,
+                      "date": datetime.date.today().isoformat()})   # render_modes.current_record: the rotation's own date (audit 2 row 75)
             save()
             log(f"  {cls} {spec}: open winner {r['split']} ({r['family']}), {r['race']['open winner']['weighted']:.2f} s per kill (20-60)"
                 + (f", {r['gain_vs_ours']:+.1%} faster than {best} ({r['race'][best]['weighted']:.2f} s)" if best else ""))

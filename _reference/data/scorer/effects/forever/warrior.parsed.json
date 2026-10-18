@@ -242,7 +242,7 @@
    {
     "channel": "hit",
     "scope": [
-     "unknown:off-hand attacks"
+     "offhand"
     ],
     "values": [
      0.04,
@@ -273,7 +273,7 @@
    {
     "channel": "dmg",
     "scope": [
-     "unknown:off-hand weapon"
+     "offhand"
     ],
     "values": [
      0.05,

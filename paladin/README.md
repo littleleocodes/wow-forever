@@ -61,7 +61,7 @@ Differences under 2-3% are within the simulations' noise and assumptions: treat 
 |---|---|---|---|
 | Holy | Raid healer | The paladin raid role | Holy Light on the tank and Flash of Light on the raid, with Illumination, Reverence and Holy Power for mana and crits. The healer lab's raid pick (34/11/6) skips Holy Shock and Light's Vigil (2026-10-15). The slowest paladin leveler: about 40% more time per kill than Shockadin. |
 | Protection | Tank | Dungeon AoE tank; no taunt | A full tank tree: Holy Shield (30% block, 4 charges), Templar's Bulwark (an absorb as large as your health), Iron Creed, Swift Judgement, and Improved Righteous Fury as 6% less damage taken; Seal of Fury's judgement taunts for 4 seconds. Levels about 14% slower than Shockadin (2026-10-15). |
-| Retribution | DPS | Mid-pack 2H DPS with Sanctity Aura utility | Seal twisting through Twist of Light (the replaced seal's Echo rides your next swing), Improved Seals, Champion of the Light, Holy Strike on a 10-second cooldown. The paladin's raid damage spec, and tied for the fastest leveler with Shockadin (2026-10-15). |
+| Retribution | DPS | Mid-pack 2H DPS (Sanctity Aura is removed in Forever) | Seal twisting through Twist of Light (the replaced seal's Echo rides your next swing), Improved Seals, Champion of the Light, Holy Strike on a 10-second cooldown. The paladin's raid damage spec, and tied for the fastest leveler with Shockadin (2026-10-15). |
 
 Hybrids with their own pages: Shockadin (Retribution's two-handed melee with Holy's Improved Seals and Divine Strength; the open search's winner takes no Holy Shock; leveling).
 

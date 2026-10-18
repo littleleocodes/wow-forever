@@ -1,6 +1,6 @@
-# Warlock — WoW: Forever talent trees (beta client 1.60.1.70291)
+# Warlock — WoW: Forever talent trees (beta client 1.60.1.70425)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70291, captured 2026-10-08. World of Warcraft: Forever beta client, build 1.60.1.70291: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-08, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70425, captured 2026-10-16. World of Warcraft: Forever beta client, build 1.60.1.70425: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-16, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -8,7 +8,7 @@
 
 | Tree | Talents | New | Changed | Moved | Unchanged | Removed from Classic |
 |---|---|---|---|---|---|---|
-| Affliction | 17 | 8 | 8 | 1 | 0 | 8 |
+| Affliction | 17 | 8 | 8 | 1 | 0 | 7 |
 | Demonology | 19 | 8 | 8 | 1 | 2 | 6 |
 | Destruction | 16 | 6 | 10 | 0 | 0 | 6 |
 
@@ -26,7 +26,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Malediction** | 5 | — | **NEW** | Increases all periodic damage done by your Warlock spells by 1%. | Increases all periodic damage done by your Warlock spells by 5%. |
+| **Grim Reach** | 2 | — | **NEW** | Increases the range of your Affliction spells by 10%. | Increases the range of your Affliction spells by 20%. |
 | **Soul Harvest** | 2 | — | **NEW** | Killing a non-trivial target afflicted by your Drain Soul increases your Mana regeneration by 50% for 10 sec and allows 50% of normal Mana regeneration to continue while casting. | Killing a non-trivial target afflicted by your Drain Soul increases your Mana regeneration by 100% for 10 sec and allows 100% of normal Mana regeneration to continue while casting. |
 | **Improved Drains** | 3 | — | **NEW** | Increases health drained or damage done by your Drain Life, Drain Soul, and Wrack spells by 7%. | Increases health drained or damage done by your Drain Life, Drain Soul, and Wrack spells by 20%. |
 
@@ -36,7 +36,7 @@
 |---|---|---|---|---|---|
 | **Improved Bane of Agony** | 2 | — | **NEW** | Increases the damage done by your Bane of Agony by 5%. | Increases the damage done by your Bane of Agony by 10%. |
 | **Fel Concentration** | 3 | — | changed | Gives you a 23% chance to avoid interruption caused by damage while channeling or casting your Drain Life, Drain Mana, Drain Soul, or Wrack spells. | Gives you a 70% chance to avoid interruption caused by damage while channeling or casting your Drain Life, Drain Mana, Drain Soul, or Wrack spells. |
-| **Amplify Curse** | 1 | — | changed | Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 20%. Lasts 30 sec. | — |
+| **Amplify Curse** | 1 | — | changed | Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 50%. Lasts 30 sec. | — |
 | **Pandemic** | 3 | — | **NEW** | Increases the critical strike damage bonus of your Corruption, Bane of Agony, Bane of Doom, Drain Soul, Drain Life, Siphon Life, and Wrack spells by 33%. | Increases the critical strike damage bonus of your Corruption, Bane of Agony, Bane of Doom, Drain Soul, Drain Life, Siphon Life, and Wrack spells by 100%. |
 
 ### Tier 4 — requires 15 points in Affliction
@@ -58,7 +58,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Shadow Mastery** | 5 | — | changed | Increases the damage dealt or life drained by your Shadow spells by 1%. | Increases the damage dealt or life drained by your Shadow spells by 5%. |
+| **Shadow Mastery** | 5 | — | changed | Increases the damage dealt or life drained by your Shadow spells by 2%. | Increases the damage dealt or life drained by your Shadow spells by 10%. |
 
 ### Tier 7 — requires 30 points in Affliction
 
@@ -66,7 +66,7 @@
 |---|---|---|---|---|---|
 | **Wrack** | 1 | Siphon Life (1) | **NEW** | Tears the target apart from within, inflicting 36 Shadow damage every 1 sec and increasing the damage they take from your other Shadow damage over time effects by 10% for 6 sec. | — |
 
-**Removed from Classic Affliction:** Improved Curse of Weakness, Improved Drain Soul, Improved Drain Life, Improved Curse of Agony, Grim Reach, Improved Drain Mana, Improved Curse of Exhaustion, Dark Pact
+**Removed from Classic Affliction:** Improved Curse of Weakness, Improved Drain Soul, Improved Drain Life, Improved Curse of Agony, Improved Drain Mana, Improved Curse of Exhaustion, Dark Pact
 
 ## Demonology
 
@@ -132,7 +132,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Destructive Reach** | 2 | — | changed | Increases the range of your damaging spells by 10%. | Increases the range of your damaging spells by 20%. |
+| **Destructive Reach** | 2 | — | changed | Increases the range of your Destruction spells by 10%. | Increases the range of your Destruction spells by 20%. |
 | **Improved Shadow Bolt** | 5 | — | changed | Your Shadow Bolt critical strikes increase Shadow damage taken by the target from your attacks by 4% for 12 sec. | Your Shadow Bolt critical strikes increase Shadow damage taken by the target from your attacks by 20% for 12 sec. |
 | **Bane** | 5 | — | changed | Reduces the casting time of your Shadow Bolt, Immolate, and Incinerate spells by 0.1 sec and your Soul Fire spell by 0.4 sec. | Reduces the casting time of your Shadow Bolt, Immolate, and Incinerate spells by 0.5 sec and your Soul Fire spell by 2 sec. |
 
@@ -196,9 +196,9 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Fel Concentration** (max rank 5 → 3, tooltip changed)
   - Classic: Gives you a 14% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell.
   - Forever: Gives you a 23% chance to avoid interruption caused by damage while channeling or casting your Drain Life, Drain Mana, Drain Soul, or Wrack spells.
-- **Amplify Curse** (tooltip changed)
+- **Amplify Curse** (tooltip changed, tooltip changed in build 1.60.1.70425 (ranks 1))
   - Classic: Increases the effect of your next Curse of Weakness or Curse of Agony by 50%, or your next Curse of Exhaustion by 20%. Lasts 30 sec.
-  - Forever: Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 20%. Lasts 30 sec.
+  - Forever: Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 50%. Lasts 30 sec.
 - **Nightfall** (tooltip changed)
   - Classic: Gives your Corruption and Drain Life spells a 2% chance to cause you to enter a Shadow Trance state after damaging the opponent. The Shadow Trance state reduces the casting time of your next Shadow Bolt spell by 100%.
   - Forever: Gives your Corruption, Drain Soul, Drain Life, and Wrack spells a 2% chance to cause you to enter a Shadow Trance after damaging the opponent. The Shadow Trance reduces the casting time of your next Shadow Bolt spell by 100%.
@@ -208,9 +208,9 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Siphon Life** (tooltip changed)
   - Classic: Transfers 15 health from the target to the caster every 3 sec. Lasts 30 sec.
   - Forever: Transfers 11 health from the target to the caster every 3 sec. Lasts 30 sec.
-- **Shadow Mastery** (tooltip changed, was Affliction row 6, col 2)
+- **Shadow Mastery** (tooltip changed, was Affliction row 6, col 2, tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3, 4, 5))
   - Classic: Increases the damage dealt or life drained by your Shadow spells by 2%.
-  - Forever: Increases the damage dealt or life drained by your Shadow spells by 1%.
+  - Forever: Increases the damage dealt or life drained by your Shadow spells by 2%.
 
 ### Demonology
 
@@ -226,7 +226,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Unholy Power** (tooltip changed, was Demonology row 4, col 3)
   - Classic: Increases the damage done by your Voidwalker, Succubus, Incubus, and Felhunter's melee attacks by 4%.
   - Forever: Increases all damage done by your Imp, Voidwalker, Succubus, Incubus, and Felhunter pets by 2%.
-- **Demonic Sacrifice** (tooltip changed, was Demonology row 5, col 2, tooltip changed in build 1.60.1.70291 (ranks 1))
+- **Demonic Sacrifice** (tooltip changed, was Demonology row 5, col 2, tooltip changed in build 1.60.1.70425 (ranks 1))
   - Classic: When activated, sacrifices your summoned demon to grant you an effect that lasts 30 min. The effect is canceled if any Demon is summoned.  Imp: Increases your Fire damage by 15%.  Voidwalker: Restores 3% of total Health every 4 sec.  Succubus/Incubus: Increases your Shadow damage by 15%.  Felhunter: Restores 2% of total Mana every 4 sec.
   - Forever: When activated, sacrifices your summoned Demon to enhance the opposing aspect of your power, granting you an effect that lasts 2 hrs. The effect is canceled if any Demon is summoned.  Imp: Increases your Shadow damage by 15%.  Voidwalker: Restores 2% of your total Mana every 4 sec.  Succubus/Incubus: Increases your Fire damage by 15%.  Felhunter: Restores 3% of your total Health every 4 sec.
 - **Fel Domination** (tooltip changed, was Demonology row 3, col 2)
@@ -241,9 +241,9 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 
 ### Destruction
 
-- **Destructive Reach** (tooltip changed, was Destruction row 4, col 2)
+- **Destructive Reach** (tooltip changed, was Destruction row 4, col 2, tooltip changed in build 1.60.1.70425 (ranks 1, 2))
   - Classic: Increases the range of your Destruction spells by 10%.
-  - Forever: Increases the range of your damaging spells by 10%.
+  - Forever: Increases the range of your Destruction spells by 10%.
 - **Improved Shadow Bolt** (tooltip changed)
   - Classic: Your Shadow Bolt critical strikes increase Shadow damage dealt to the target by 4% until 4 non-periodic damage sources are applied. Effect lasts a maximum of 12 sec.
   - Forever: Your Shadow Bolt critical strikes increase Shadow damage taken by the target from your attacks by 4% for 12 sec.
@@ -259,13 +259,13 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Ruin** (max rank 1 → 5, tooltip changed, was Destruction row 5, col 3)
   - Classic: Increases the critical strike damage bonus of your Destruction spells by 100%.
   - Forever: Increases the critical strike damage bonus of your Destruction spells by 20%.
-- **Shadowburn** (tooltip changed, was Destruction row 3, col 4, tooltip changed in build 1.60.1.70291 (ranks 1))
+- **Shadowburn** (tooltip changed, was Destruction row 3, col 4, tooltip changed in build 1.60.1.70425 (ranks 1))
   - Classic: Instantly blasts the target for 99 Shadow damage. If the target dies within 5 sec of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.
   - Forever: Instantly blasts the target for 65 to 73 Shadow damage. If a non-trivial target dies within 8 sec of being hit with Shadowburn, the caster gains a Soul Shard.
 - **Intensity** (max rank 2 → 3, tooltip changed)
   - Classic: Gives you a 35% chance to resist interruption caused by damage while channeling the Rain of Fire, Hellfire or Soul Fire spell.
   - Forever: Gives you a 23% chance to resist interruption caused by damage while casting or channeling any Destruction spell.
-- **Conflagrate** (tooltip changed, was Destruction row 7, col 2, tooltip changed in build 1.60.1.70291 (ranks 1))
+- **Conflagrate** (tooltip changed, was Destruction row 7, col 2, tooltip changed in build 1.60.1.70425 (ranks 1))
   - Classic: Ignites a target that is already afflicted by Immolate, dealing 306 Fire damage and consuming the Immolate spell.
   - Forever: Ignites a target that is already afflicted by your Immolate spell, dealing 88 to 110 Fire damage and consuming your Immolate effect.
 - **Pyroclasm** (tooltip changed)

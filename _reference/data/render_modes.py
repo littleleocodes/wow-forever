@@ -265,6 +265,13 @@ def raid_numbers(cls):
     return out
 
 
+def current_record(rec):
+    """Audit 2026-10-18 row 75: a record's numbers count only from the day the current data were captured, like the reports (B13).
+    derived-leveling.json, spec-builds.json, own-rotation.json and the open-search records carry a `date`; one older than
+    data_build.CAPTURED (or without a date) is ignored, so a 2026-09-30 race never overrides a report on the current data."""
+    return not DATA_CAPTURED or (rec.get("date") or "")[:10] >= DATA_CAPTURED
+
+
 def leveling_numbers(cls):
     """{build id: {level: seconds per kill}} from the fight lab reports (main build and the compared ones) and spec-builds.json."""
     out = {}
@@ -301,12 +308,14 @@ def leveling_numbers(cls):
         out[bid] = per
         LEVEL_MODEL.setdefault((cls, bid), model)
     for tree, rec in (DERIVED["leveling"].get(cls) or {}).items():   # derived builds: the race's numbers (seed 3)
-        if rec.get("verdict") in ("replaces", "new") and rec.get("levels"):
+        if rec.get("verdict") in ("replaces", "new") and rec.get("levels") and current_record(rec):
             bid = f"{SM.slug(tree)}-leveling"
             out[bid] = {int(Lv): v for Lv, v in rec["levels"].items()}
             LEVEL_MODEL[(cls, bid)] = rec["spec"]
     whole = open_leveling(cls, whole=True)
     for spec, rec in (whole.get("rotations") or {}).items():   # open-search builds (open_builds.py): the 20-60 race's numbers (seed 3)
+        if not current_record({"date": rec.get("date") or whole.get("date")}):   # a rotation's own date, else the record's (its start)
+            continue
         lv = ((rec.get("race") or {}).get("open winner") or {}).get("levels") or {}
         model = spec   # the rotation it was found in: a faster sibling rotation (fl_synergy.cross_rotations) is research only since
                        # 2026-10-08 (user decision: no spec takes another spec's rotation because it is faster)
@@ -315,12 +324,12 @@ def leveling_numbers(cls):
                 out[bid] = {int(Lv): v for Lv, v in lv.items()}
                 LEVEL_MODEL[(cls, bid)] = model
     for bid, info in (GEN.get(cls) or {}).items():
-        if info.get("levels"):
+        if info.get("levels") and current_record(info):
             out.setdefault(bid, {int(L): v for L, v in info["levels"].items()})
         if info.get("model"):   # setdefault (2026-10-08): a stale generated record (arcane-leveling from 2026-09-29, the borrowed
             LEVEL_MODEL.setdefault((cls, bid), info["model"])   # frost-leveling model) had overwritten the derived build's own rotation
     for bid, rec in (OWN_ROT.get(cls) or {}).items():   # fightlab/own_rotation_race.py: page builds raced with their spec's own rotation
-        if rec.get("levels"):
+        if rec.get("levels") and current_record(rec):
             out[bid] = {int(L): v for L, v in rec["levels"].items()}
             LEVEL_MODEL[(cls, bid)] = rec["rotation"]
     return out

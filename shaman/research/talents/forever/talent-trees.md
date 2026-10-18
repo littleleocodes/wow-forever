@@ -1,6 +1,6 @@
-# Shaman — WoW: Forever talent trees (beta client 1.60.1.70291)
+# Shaman — WoW: Forever talent trees (beta client 1.60.1.70425)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70291, captured 2026-10-08. World of Warcraft: Forever beta client, build 1.60.1.70291: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-08, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70425, captured 2026-10-16. World of Warcraft: Forever beta client, build 1.60.1.70425: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-16, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -8,7 +8,7 @@
 
 | Tree | Talents | New | Changed | Moved | Unchanged | Removed from Classic |
 |---|---|---|---|---|---|---|
-| Elemental | 16 | 6 | 9 | 1 | 0 | 4 |
+| Elemental | 16 | 7 | 8 | 1 | 0 | 3 |
 | Enhancement | 18 | 7 | 7 | 2 | 2 | 6 |
 | Restoration | 16 | 4 | 9 | 1 | 2 | 3 |
 
@@ -25,47 +25,47 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Elemental Warding** | 3 | — | changed | Reduces damage taken from Fire, Frost, and Nature effects by 3%. | Reduces damage taken from Fire, Frost, and Nature effects by 10%. |
+| **Elemental Devastation** | 3 | — | changed | Your Critical Strikes with direct damage spells increase your chance to get a Critical Strike with melee attacks by 3% for 10 sec. | Your Critical Strikes with direct damage spells increase your chance to get a Critical Strike with melee attacks by 9% for 10 sec. |
 | **Reverberation** | 5 | — | changed | Reduces the cooldown of your Shock spells by 0.2 sec. | Reduces the cooldown of your Shock spells by 1.0 sec. |
-| **Call of Flame** | 3 | — | changed | Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 5%. | Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 15%. |
-| **Elemental Devastation** | 3 | — | changed | Your offensive spell critical strikes will increase your chance to get a critical strike with melee attacks by 3% for 10 sec. | Your offensive spell critical strikes will increase your chance to get a critical strike with melee attacks by 9% for 10 sec. |
+| **Elemental Alacrity** | 3 | — | **NEW** | Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by 0.17 sec. | Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by 0.50 sec. |
+| **Call of Flame** | 3 | — | changed | Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 5%, as well as increases the duration of your Flame Shock spell by 3 sec. | Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 15%, as well as increases the duration of your Flame Shock spell by 9 sec. |
 
 ### Tier 3 — requires 10 points in Elemental
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Elemental Focus** | 1 | — | moved | Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%. | — |
-| **Elemental Alacrity** | 3 | — | **NEW** | Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by 0.17 sec. | Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by 0.50 sec. |
+| **Elemental Warding** | 3 | — | changed | Reduces damage taken from Fire, Frost, and Nature effects by 3%. | Reduces damage taken from Fire, Frost, and Nature effects by 10%. |
 
 ### Tier 4 — requires 15 points in Elemental
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Improved Fire Nova** | 2 | — | **NEW** | Increases the damage done by your Fire Nova spell by 10% and reduces its cooldown by 2 sec. | Increases the damage done by your Fire Nova spell by 20% and reduces its cooldown by 4 sec. |
+| **Trial by Fire** | 2 | — | **NEW** | Increases the damage done by your Fire Nova spell by 10% and reduces its cooldown by 2 sec, and increases the duration of your Magma Totem by 10 sec. | Increases the damage done by your Fire Nova spell by 20% and reduces its cooldown by 4 sec, and increases the duration of your Magma Totem by 20 sec. |
 | **Eye of the Storm** | 3 | — | changed | Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, and Lava Burst by 23%. | Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, and Lava Burst by 70%. |
-| **Call of Thunder** | 1 | Elemental Alacrity (3) | changed | Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by 3%. | — |
+| **Earthbound** | 1 | — | **NEW** | Your Earthbind Totem Immobilizes nearby targets for 5 sec when cast. | — |
 
 ### Tier 5 — requires 20 points in Elemental
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Elemental Reach** | 2 | — | **NEW** | Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 3 yards, and increases the range of your Flame Shock spell by 8 yards. | Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 6 yards, and increases the range of your Flame Shock spell by 15 yards. |
-| **Lightning Overload** | 3 | — | **NEW** | Gives your Lightning Bolt and Chain Lightning spells a 3% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat. | Gives your Lightning Bolt and Chain Lightning spells a 10% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat. |
-| **Earthbound** | 1 | — | **NEW** | Your Earthbind Totem Immobilizes nearby targets for 5 sec when cast. | — |
+| **Elemental Reach** | 2 | — | **NEW** | Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 3 yards and reduces the cooldown of Totemic Projection by 10 sec. | Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 6 yards and reduces the cooldown of Totemic Projection by 20 sec. |
+| **Lava Burst** | 1 | — | **NEW** | You hurl molten lava at the target, dealing 113 to 145 Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage. | — |
+| **Lightning Overload** | 3 | Elemental Alacrity (3) | **NEW** | Gives your Lightning Bolt and Chain Lightning spells a 3% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat. | Gives your Lightning Bolt and Chain Lightning spells a 10% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat. |
 
 ### Tier 6 — requires 25 points in Elemental
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Elemental Fury** | 5 | Call of Thunder (1) | changed | Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 20%. | Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 100%. |
+| **Elemental Fury** | 5 | Lightning Overload (3) | changed | Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 20%. | Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 100%. |
 
 ### Tier 7 — requires 30 points in Elemental
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Lava Burst** | 1 | Lightning Overload (3) | **NEW** | You hurl molten lava at the target, dealing 150 to 192 Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage. | — |
+| **Elemental Mastery** | 1 | Lava Burst (1) | **NEW** | Gain mastery over Fire and Lightning, reducing the cast time of Lightning Bolt and Lava Burst by 0.5 sec, and removing the cooldown from Chain Lightning. Lasts 15 sec. | — |
 
-**Removed from Classic Elemental:** Improved Fire Totems, Storm Reach, Lightning Mastery, Elemental Mastery
+**Removed from Classic Elemental:** Improved Fire Totems, Storm Reach, Lightning Mastery
 
 ## Enhancement
 
@@ -131,7 +131,7 @@
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Improved Healing Wave** | 5 | — | changed | Reduces the casting time of your Healing Wave spell by 0.1 sec. | Reduces the casting time of your Healing Wave spell by 0.5 sec. |
-| **Totemic Focus** | 5 | — | changed | Reduces the Mana cost of your totems and any spells that summon or move them by 5%. | Reduces the Mana cost of your totems and any spells that summon or move them by 25%. |
+| **Tidal Focus** | 5 | — | changed | Reduces the Mana cost of your healing spells by 1% and improves your chance to hit by 1%. | Reduces the Mana cost of your healing spells by 5% and improves your chance to hit by 5%. |
 
 ### Tier 2 — requires 5 points in Restoration
 
@@ -139,7 +139,7 @@
 |---|---|---|---|---|---|
 | **Mindfulness** | 3 | — | **NEW** | Allows 17% of your Mana regeneration to continue while casting. | Allows 50% of your Mana regeneration to continue while casting. |
 | **Natural Grace** | 3 | — | **NEW** | Reduces the threat generated by your spells by 5%. | Reduces the threat generated by your spells by 15%. |
-| **Tidal Focus** | 5 | — | changed | Reduces the Mana cost of your healing spells by 1% and improves your chance to hit by 1%. | Reduces the Mana cost of your healing spells by 5% and improves your chance to hit by 5%. |
+| **Totemic Focus** | 5 | — | changed | Reduces the Mana cost of your totems and any spells that summon or move them by 5%. | Reduces the Mana cost of your totems and any spells that summon or move them by 25%. |
 | **Improved Reincarnation** | 2 | — | changed | Reduces the cooldown of your Reincarnation spell by 10 min, increases your maximum health by 2%, and increases the amount of health and Mana you reincarnate with by an additional 10%. | Reduces the cooldown of your Reincarnation spell by 20 min, increases your maximum health by 4%, and increases the amount of health and Mana you reincarnate with by an additional 20%. |
 
 ### Tier 3 — requires 10 points in Restoration
@@ -148,7 +148,7 @@
 |---|---|---|---|---|---|
 | **Ancestral Healing** | 3 | — | moved | Increases your target's armor value by 8% for 15 sec after getting a critical effect from one of your healing spells. | Increases your target's armor value by 25% for 15 sec after getting a critical effect from one of your healing spells. |
 | **Healing Focus** | 3 | — | changed | Gives you a 23% chance to avoid interruption caused by damage while casting any healing spell. | Gives you a 70% chance to avoid interruption caused by damage while casting any healing spell. |
-| **Water Shield** | 1 | — | **NEW** | The caster is surrounded by 3 globes of water. When a spell, melee, or ranged attack hits the caster or when one of the caster's healing spells gets a critical result, 2% of maximum mana is restored to the caster, expending one water globe. Only one globe will activate every few seconds. Lasts 10 min.  Only one Elemental Shield can be active on the Shaman at any one time. | — |
+| **Water Shield** | 1 | — | **NEW** | The caster is surrounded by 3 globes of water. When a spell, melee, or ranged attack hits the caster or when one of the caster's spells gets a critical result, 2% of maximum mana is restored to the caster, expending one water globe. Only one globe will activate every few seconds. Lasts 10 min.  Only one Elemental Shield can be active on the Shaman at any one time. | — |
 
 ### Tier 4 — requires 15 points in Restoration
 
@@ -191,25 +191,22 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Concussion** (tooltip changed)
   - Classic: Increases the damage done by your Lightning Bolt, Chain Lightning and Shock spells by 1%.
   - Forever: Increases the damage done by your Lightning Bolt, Chain Lightning, and Earth Shock spells by 1%.
-- **Elemental Warding** (tooltip changed, was Elemental row 2, col 2)
-  - Classic: Reduces damage taken from Fire, Frost and Nature effects by 4%.
-  - Forever: Reduces damage taken from Fire, Frost, and Nature effects by 3%.
+- **Elemental Devastation** (tooltip changed, was Elemental row 4, col 4, moved in build 1.60.1.70425: was row 2, col 4, tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3))
+  - Classic: Your offensive spell crits will increase your chance to get a critical strike with melee attacks by 3% for 10 sec.
+  - Forever: Your Critical Strikes with direct damage spells increase your chance to get a Critical Strike with melee attacks by 3% for 10 sec.
 - **Reverberation** (tooltip changed, was Elemental row 3, col 2)
   - Classic: Reduces the cooldown of your Shock spells by 0 sec.
   - Forever: Reduces the cooldown of your Shock spells by 0.2 sec.
-- **Call of Flame** (tooltip changed)
+- **Call of Flame** (tooltip changed, moved in build 1.60.1.70425: was row 2, col 3, tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3))
   - Classic: Increases the damage done by your Fire Totems by 5%.
-  - Forever: Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 5%.
-- **Elemental Devastation** (tooltip changed, was Elemental row 4, col 4)
-  - Classic: Your offensive spell crits will increase your chance to get a critical strike with melee attacks by 3% for 10 sec.
-  - Forever: Your offensive spell critical strikes will increase your chance to get a critical strike with melee attacks by 3% for 10 sec.
+  - Forever: Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 5%, as well as increases the duration of your Flame Shock spell by 3 sec.
+- **Elemental Warding** (tooltip changed, was Elemental row 2, col 2, moved in build 1.60.1.70425: was row 2, col 1)
+  - Classic: Reduces damage taken from Fire, Frost and Nature effects by 4%.
+  - Forever: Reduces damage taken from Fire, Frost, and Nature effects by 3%.
 - **Eye of the Storm** (tooltip changed)
   - Classic: Gives you a 33% chance to gain the Focused Casting effect that lasts for 6 sec after being the victim of a melee or ranged critical strike. The Focused Casting effect prevents you from losing casting time when taking damage.
   - Forever: Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, and Lava Burst by 23%.
-- **Call of Thunder** (max rank 5 → 1, tooltip changed, was Elemental row 3, col 3)
-  - Classic: Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional 1%.
-  - Forever: Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by 3%.
-- **Elemental Fury** (max rank 1 → 5, tooltip changed, was Elemental row 5, col 2)
+- **Elemental Fury** (max rank 1 → 5, tooltip changed, was Elemental row 5, col 2, prerequisite changed in build 1.60.1.70425: was call of thunder)
   - Classic: Increases the critical strike damage bonus of your Searing, Magma, and Fire Nova Totems and your Fire, Frost, and Nature spells by 100%.
   - Forever: Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 20%.
 
@@ -242,12 +239,12 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Improved Healing Wave** (tooltip changed)
   - Classic: Reduces the casting time of your Healing Wave spell by 0 sec.
   - Forever: Reduces the casting time of your Healing Wave spell by 0.1 sec.
-- **Totemic Focus** (tooltip changed, was Restoration row 2, col 3)
-  - Classic: Reduces the Mana cost of your totems by 5%.
-  - Forever: Reduces the Mana cost of your totems and any spells that summon or move them by 5%.
-- **Tidal Focus** (tooltip changed, was Restoration row 1, col 3)
+- **Tidal Focus** (tooltip changed, was Restoration row 1, col 3, moved in build 1.60.1.70425: was row 2, col 3)
   - Classic: Reduces the Mana cost of your healing spells by 1%.
   - Forever: Reduces the Mana cost of your healing spells by 1% and improves your chance to hit by 1%.
+- **Totemic Focus** (tooltip changed, was Restoration row 2, col 3, moved in build 1.60.1.70425: was row 1, col 3)
+  - Classic: Reduces the Mana cost of your totems by 5%.
+  - Forever: Reduces the Mana cost of your totems and any spells that summon or move them by 5%.
 - **Improved Reincarnation** (tooltip changed, was Restoration row 2, col 1)
   - Classic: Reduces the cooldown of your Reincarnation spell by 10 min and increases the amount of health and mana you reincarnate with by an additional 10%.
   - Forever: Reduces the cooldown of your Reincarnation spell by 10 min, increases your maximum health by 2%, and increases the amount of health and Mana you reincarnate with by an additional 10%.
@@ -260,7 +257,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Restorative Totems** (tooltip changed)
   - Classic: Increases the effect of your Mana Spring and Healing Stream Totems by 5%.
   - Forever: Increases the effect of your Mana Spring Totem by 5% and increases the effect of your Healing Stream Totem by 10%.
-- **Mana Tide Totem** (tooltip changed, was Restoration row 7, col 2, tooltip changed in build 1.60.1.70291 (ranks 1))
+- **Mana Tide Totem** (tooltip changed, was Restoration row 7, col 2, tooltip changed in build 1.60.1.70425 (ranks 1))
   - Classic: Summons a Mana Tide Totem with 5 health at the feet of the caster for 13 sec-1 sec that restores 170 mana every 3 seconds to group members within 0 yards.
   - Forever: Summons a Mana Tide Totem with 5 health at the feet of the caster for 12 sec that restores 88 mana every 3 seconds to group members within 30 yards.
 - **Healing Way** (tooltip changed, was Restoration row 5, col 1)

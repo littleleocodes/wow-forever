@@ -193,7 +193,7 @@ MECHANICS = {
     "Camouflage": "-2s/rank Stealth cooldown, stealth speed",
     "Master of Deception": "stealth only",
     "Opportunity": "+5%/rank Backstab, Garrote (the opener's bleed), Ambush, Mutilate",
-    "Setup": "33%/rank: a combo point after a dodge",
+    "Setup": "33%/rank: a combo point after dodging the target's own swing (an add's dodged swing gives none)",
     "Elusiveness": "not used",
     "Dirty Tricks": "not used",
     "Improved Ambush": "+15%/rank crit on Ambush (only the Subtlety playstyle casts Ambush)",
@@ -567,6 +567,10 @@ class RogueModule(BaseModule):
             fight.p.combo = max(fight.p.combo, fight.last_combo)
 
     def on_dodge(self, fight):
+        # Setup: "add a Combo Point to your target after Dodging one of their attacks": only the target's own swings (combo points sit on
+        # the target); until 2026-10-18 an add's dodged swing gave one too (pulls of several mobs only; audit 2026-10-18 #23)
+        if (fight.swinging or fight.m) is not fight.m:   # engine.Fight.swinging: the mob whose swing is being resolved
+            return
         if self.rank("Setup") and fight.rng.random() < self.tv("Setup", 0) / 100:
             fight.p.combo = min(5, fight.p.combo + 1)
 

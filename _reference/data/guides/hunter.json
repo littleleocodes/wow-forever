@@ -17,7 +17,8 @@
      "Mana: the list assumes a full raid with Blessing of Wisdom and Mana Spring. With only your own buffs the simulator's best rotation never casts **Aimed Shot** (310 mana) and keeps **Arcane Shot** going above 10% mana, so **Aimed Shot** is the first thing to drop when you run low.",
      "Keep the pet alive with **Mend Pet**: Forever pets take no stat buffs from players, and a dead pet takes **Focused Fire** with it. A faster pet does more damage as modelled here (a 1.2-second cat over a 2.0-second pet; players have measured this only at levels 20 and 30).",
      "Moving: **Auto Shot** and **Aimed Shot** stop while you move; **Arcane Shot** and **Serpent Sting** are instant, so keep pressing them.",
-     "The simulator starts **Aimed Shot** 2.5 seconds before the pull so it lands as the fight begins; in a real raid, start it once your tank has the boss."
+     "The simulator starts **Aimed Shot** 2.5 seconds before the pull so it lands as the fight begins; in a real raid, start it once your tank has the boss.",
+     "Watch your ranks: in the beta client (build 70425) **Hunter's Mark** rank 4 gives +71 ranged attack power against rank 3's +98, and **Trueshot Aura** rank 5 +50 against rank 4's +75 (if your build has it); cast the stronger lower rank from your spellbook until Blizzard fixes the numbers. **Aspect of the Hawk** rank 7 (+120) is the best at 60. The simulator's numbers use **Hunter's Mark** rank 4, so they read about 0.3% low (estimate)."
     ],
     "diverge": [
      "Two or more targets close together: **Multi-Shot** instead of **Aimed Shot** on their shared cooldown, since it hits up to 3 targets for weapon damage each while **Aimed Shot** adds 166 to one. For a pack, **Volley**: a 6-second channel with no cooldown in Forever, which holds **Auto Shot** while you channel.",
@@ -74,7 +75,8 @@
      "**Multi-Shot** is on the list but shares **Aimed Shot**'s cooldown, so on one target it almost never comes up (the simulator cast it about once in five fights). It is there for groups of targets.",
      "Mana is tight even in a full raid: the simulator's hunter uses two mana potions a fight and still runs dry for a few seconds. With only your own buffs its rotation never casts **Sniper Shot** (365 mana) and casts **Aimed Shot** only above 10% mana.",
      "Moving: **Auto Shot**, **Aimed Shot** and **Sniper Shot** need you to stand still, while **Arcane Shot** and **Serpent Sting** are instant. Do not start a 4-second **Sniper Shot** when you know you must move.",
-     "**Rapid Killing**'s other half (a kill makes your next Shot within 20 seconds hit 20% harder) never happens on a boss; on trash, let the next pull's first **Aimed Shot** spend it."
+     "**Rapid Killing**'s other half (a kill makes your next Shot within 20 seconds hit 20% harder) never happens on a boss; on trash, let the next pull's first **Aimed Shot** spend it.",
+     "Watch your ranks: in the beta client (build 70425) **Hunter's Mark** rank 4 gives +71 ranged attack power against rank 3's +98, and **Trueshot Aura** rank 5 +50 against rank 4's +75 (if your build has it); cast the stronger lower rank from your spellbook until Blizzard fixes the numbers. **Aspect of the Hawk** rank 7 (+120) is the best at 60. The simulator's numbers use **Hunter's Mark** rank 4, so they read about 0.3% low (estimate)."
     ],
     "diverge": [
      "Two or three targets close together: **Multi-Shot** instead of **Aimed Shot** (same cooldown, up to 3 targets for weapon damage each). For a pack, **Volley**: a 6-second channel with no cooldown in Forever.",
@@ -131,7 +133,8 @@
      "No pet: **Lone Wolf**'s 20% needs no active pet, so **Dismiss Pet** before the pull. Track the boss's creature type too: **Improved Tracking** adds 5% only against the type you are tracking.",
      "Mana: **Resourcefulness** cuts the cost of traps and melee abilities by 60%, and in a full raid that is enough. With only your own buffs the hunter runs short; then spend the mana on **Mongoose Bite**, **Strider Kick** and the trap before **Wing Clip**.",
      "Blizzard's notes say **Expose Prey** works on the target of your own **Hunter's Mark**. With several hunters in the raid, make sure the mark on the boss is yours (the simulator accepts any).",
-     "**Explosive Trap** shares the fire-trap cooldown with **Immolation Trap**, so on one target it never comes up."
+     "**Explosive Trap** shares the fire-trap cooldown with **Immolation Trap**, so on one target it never comes up.",
+     "Watch your ranks: in the beta client (build 70425) **Hunter's Mark** rank 4 gives +71 ranged attack power against rank 3's +98, and **Trueshot Aura** rank 5 +50 against rank 4's +75 (if your build has it); cast the stronger lower rank from your spellbook until Blizzard fixes the numbers. **Aspect of the Hawk** rank 7 (+120) is the best at 60. The simulator's numbers use **Hunter's Mark** rank 4, so they read about 0.3% low (estimate)."
     ],
     "diverge": [
      "Adds around you: **Explosive Trap** instead of **Immolation Trap**; it hits everything within 10 yards.",
@@ -157,7 +160,8 @@
     "caveats": [
      "The pet is still your tank: **Mend Pet** below about a third, and let it build threat before you hit hard.",
      "**Improved Tracking** (levels 10-14) adds damage only against the creature type you are tracking: switch tracking to what you are killing.",
-     "There is no filler: with **Raptor Strike**, **Strider Kick** and the trap on cooldown, the fight lab just swings. **Lacerate**, a melee bleed in your spellbook from level 30, is in none of this project's simulations, so its worth is unmeasured."
+     "There is no filler: with **Raptor Strike**, **Strider Kick** and the trap on cooldown, the fight lab just swings. **Lacerate**, a melee bleed in your spellbook from level 30, is in none of this project's simulations, so its worth is unmeasured.",
+     "Watch your ranks at the top levels: in the beta client (build 70425) **Trueshot Aura** rank 5 gives +50 attack power against rank 4's +75, **Aspect of the Hawk** rank 6 +55 against rank 5's +90 and **Hunter's Mark** rank 4 +71 against rank 3's +98. Keep casting the stronger lower rank from your spellbook (the fight lab does) until Blizzard fixes the numbers."
     ],
     "diverge": [
      "Two or more mobs: **Explosive Trap** instead of **Immolation Trap**; it hits everything within 10 yards and shares the fire-trap cooldown.",
@@ -185,7 +189,8 @@
      "Mana: the list assumes a full raid with Blessing of Wisdom and Mana Spring. With only your own buffs the simulator drops **Aimed Shot** (310 mana) and keeps **Arcane Shot** going above 10% mana, so **Aimed Shot** goes first when you run low.",
      "Keep the pet alive with **Mend Pet**: it is about a quarter of your damage and takes no stat buffs from players in Forever. A faster pet does more damage as modelled here (a 1.2-second cat over a 2.0-second pet; measured by players only at levels 20 and 30).",
      "Track the boss's creature type: **Improved Tracking** (3 points here) counts only against the tracked type.",
-     "Moving: **Auto Shot** and **Aimed Shot** stop while you move; **Arcane Shot** and **Serpent Sting** are instant. The simulator starts **Aimed Shot** 2.5 seconds before the pull; in a real raid, wait for your tank."
+     "Moving: **Auto Shot** and **Aimed Shot** stop while you move; **Arcane Shot** and **Serpent Sting** are instant. The simulator starts **Aimed Shot** 2.5 seconds before the pull; in a real raid, wait for your tank.",
+     "Watch your ranks: in the beta client (build 70425) **Hunter's Mark** rank 4 gives +71 ranged attack power against rank 3's +98, and **Trueshot Aura** rank 5 +50 against rank 4's +75 (if your build has it); cast the stronger lower rank from your spellbook until Blizzard fixes the numbers. **Aspect of the Hawk** rank 7 (+120) is the best at 60. The simulator's numbers use **Hunter's Mark** rank 4, so they read about 0.3% low (estimate)."
     ],
     "diverge": [
      "Two or more targets close together: **Multi-Shot** instead of **Aimed Shot** on their shared cooldown (up to 3 targets for weapon damage each, against 166 extra on one). For a pack, **Volley**: a 6-second channel with no cooldown in Forever.",
@@ -211,7 +216,8 @@
     "caveats": [
      "This build takes neither **Bestial Wrath** nor **Intimidation**: skip the step that names them.",
      "From level 56, **Improved Tracking** adds damage only against the creature type you are tracking: switch tracking to what you are killing.",
-     "The fight lab drinks only below 15% mana, which measured slightly faster than drinking at a third. A mob that turns on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Wing Clip** and **Raptor Strike** hold it until the pet's Growl takes it back."
+     "The fight lab drinks only below 15% mana, which measured slightly faster than drinking at a third. A mob that turns on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Wing Clip** and **Raptor Strike** hold it until the pet's Growl takes it back.",
+     "Watch your ranks at the top levels: in the beta client (build 70425) **Trueshot Aura** rank 5 gives +50 attack power against rank 4's +75, **Aspect of the Hawk** rank 6 +55 against rank 5's +90 and **Hunter's Mark** rank 4 +71 against rank 3's +98. Keep casting the stronger lower rank from your spellbook (the fight lab does) until Blizzard fixes the numbers."
     ],
     "diverge": [
      "Several mobs: **Multi-Shot** and **Volley** (no cooldown in Forever) instead of single-target shots.",
@@ -237,7 +243,8 @@
     ],
     "caveats": [
      "**Aspect of the Monkey** until level 30, then **Aspect of the Beast** for its melee attack power; **Deadly Aspects** (levels 51-55) adds its swing-speed chance to Aspect of the Beast.",
-     "**Improved Tracking** (levels 10-14) adds damage only against the creature type you are tracking: keep tracking set to what you are killing."
+     "**Improved Tracking** (levels 10-14) adds damage only against the creature type you are tracking: keep tracking set to what you are killing.",
+     "Watch your ranks at the top levels: in the beta client (build 70425) **Trueshot Aura** rank 5 gives +50 attack power against rank 4's +75, **Aspect of the Hawk** rank 6 +55 against rank 5's +90 and **Hunter's Mark** rank 4 +71 against rank 3's +98. Keep casting the stronger lower rank from your spellbook (the fight lab does) until Blizzard fixes the numbers."
     ],
     "diverge": [
      "Two or more mobs: **Explosive Trap** instead of **Immolation Trap**; it hits everything within 10 yards and shares the fire-trap cooldown.",
@@ -263,7 +270,8 @@
     "caveats": [
      "Mana: this build has no **Resourcefulness**, and each hawk costs 190 mana. In a full raid the simulator needs one mana potion a fight; with only your own buffs it ran out of mana and fell about a quarter behind the Survival builds on the training dummy. Without Blessing of Wisdom or Mana Spring, play Survival.",
      "The build rests on the simulator's reading that a hawk is not a pet: if the game counts hawks as pets, **Lone Wolf** turns off while they are out. Check it at launch.",
-     "No pet: **Dismiss Pet** before the pull. Track the boss's creature type: **Improved Tracking** adds 5% only against the tracked type."
+     "No pet: **Dismiss Pet** before the pull. Track the boss's creature type: **Improved Tracking** adds 5% only against the tracked type.",
+     "Watch your ranks: in the beta client (build 70425) **Hunter's Mark** rank 4 gives +71 ranged attack power against rank 3's +98, and **Trueshot Aura** rank 5 +50 against rank 4's +75 (if your build has it); cast the stronger lower rank from your spellbook until Blizzard fixes the numbers. **Aspect of the Hawk** rank 7 (+120) is the best at 60. The simulator's numbers use **Hunter's Mark** rank 4, so they read about 0.3% low (estimate)."
     ],
     "diverge": [
      "Adds around you: **Explosive Trap** instead of **Immolation Trap**; they share the fire-trap cooldown.",
@@ -287,7 +295,8 @@
     ],
     "caveats": [
      "This build takes none of **Counterattack**, **Deterrence** or **Summon Hawk**: skip those steps. Between traps and kicks your global cooldown is mostly free.",
-     "**Improved Tracking** (levels 10-14) adds damage only against the creature type you are tracking: keep tracking set to what you are killing."
+     "**Improved Tracking** (levels 10-14) adds damage only against the creature type you are tracking: keep tracking set to what you are killing.",
+     "Watch your ranks at the top levels: in the beta client (build 70425) **Trueshot Aura** rank 5 gives +50 attack power against rank 4's +75, **Aspect of the Hawk** rank 6 +55 against rank 5's +90 and **Hunter's Mark** rank 4 +71 against rank 3's +98. Keep casting the stronger lower rank from your spellbook (the fight lab does) until Blizzard fixes the numbers."
     ],
     "diverge": [
      "Two or more mobs: **Explosive Trap** instead of **Immolation Trap**; it hits everything within 10 yards and shares the fire-trap cooldown.",

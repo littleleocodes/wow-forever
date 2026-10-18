@@ -106,6 +106,8 @@ def scope_from_subject(subj: str):
             tags.append(f"school:{sc}")
     if not names and re.search(r"\b(your )?abilities\b", s) and not re.search(r"\b(melee|ranged)\b", s):
         tags.append("yellow")
+    if re.search(r"\boff-?hand\b", s):   # "off-hand attacks" (Furious Precision) had parsed to an unknown scope (audit 2026-10-18, row 37)
+        tags = [t for t in tags if t != "type:melee"] + ["offhand"]
     if "two-handed" in s:
         tags = [t for t in tags if t != "type:melee"] + ["weapon:2h"]
     if "one-handed" in s:
@@ -276,6 +278,42 @@ def build_parsed(game: str, cls: str):
     return out
 
 
+_SPELL_LEVELS = {}
+
+
+def spell_levels(cls: str):
+    """{spell name: the level its first rank is learned} from the beta spellbook (forever-spells/<class>.json)."""
+    if cls not in _SPELL_LEVELS:
+        out = {}
+        path = DATA / "forever-spells" / f"{cls}.json"
+
+        def walk(o):
+            if isinstance(o, dict):
+                if isinstance(o.get("name"), str) and isinstance(o.get("ranks"), list):
+                    lv = [r.get("level") for r in o["ranks"] if isinstance(r, dict) and isinstance(r.get("level"), int)]
+                    if lv:
+                        out[o["name"]] = min(lv + [out.get(o["name"], 99)])
+                for v in o.values():
+                    walk(v)
+            elif isinstance(o, list):
+                for v in o:
+                    walk(v)
+        if path.exists():
+            walk(json.load(open(path, encoding="utf-8")))
+        _SPELL_LEVELS[cls] = out
+    return _SPELL_LEVELS[cls]
+
+
+def learn_level(cls: str, name: str, text: str):
+    """The level from which a talent's soft effects (utility, survival, mana) can count: the earliest the class learns a spell its
+    tooltip names (Pathfinding's Aspect of the Cheetah at 20, Improved Ghost Wolf's Ghost Wolf at 20, Holy Conduit's Consecration and
+    Exorcism at 20+), else 0. Audit 2026-10-18, row 43: the orders bought such talents at 15-16, before the spell existed."""
+    if not text:
+        return 0
+    lv = [L for sp, L in spell_levels(cls).items() if sp != name and len(sp) > 3 and re.search(r"(?<![\w'])" + re.escape(sp) + r"(?![\w'])", text)]
+    return min(lv) if lv else 0
+
+
 def load_effects(game: str, cls: str):
     """Merged effects: manual overrides parsed, talent by talent. Returns {talent: {"effects": [...], "source": ...}}."""
     parsed = json.load(open(parsed_path(game, cls), encoding="utf-8")) if parsed_path(game, cls).exists() else build_parsed(game, cls)
@@ -298,6 +336,10 @@ def load_effects(game: str, cls: str):
         else:
             merged[name] = {"effects": entry["effects"], "source": "parsed" if entry["effects"] else "missing",
                             "note": "", "tree": entry["tree"], "max": entry["max"], "parsed": entry["effects"]}
+    if game == "forever":   # soft effects wait for the spell they name (Evaluator.score; audit 2026-10-18, row 43)
+        for name, entry in parsed.items():
+            if name in merged:
+                merged[name]["learn_level"] = learn_level(cls, name, entry.get("text", ""))
     # what kind of value each talent's soft effects are, and whether it needs a pet out (scorer/kinds.json)
     for name, info in load_kinds(game, cls).items():
         if name in merged:

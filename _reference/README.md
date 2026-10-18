@@ -55,7 +55,15 @@ wow-forever/
 ```
 
 Every page under `<class>/leveling|raid/` and `<class>/research/` is generated except `proposed-builds.json`, `builds.json` and the
-adaptation notes: edit those, the effect files or the scripts, then regenerate (`python _reference/data/rebuild.py --steps regen`). A
+adaptation notes: edit those, the effect files or the scripts, then regenerate (`python _reference/data/rebuild.py --steps regen`). Regen
+rewrites the talent-tree pages, the Fight lab / Raid sim / Healer lab README sections and summaries, guide.md, gear.md and consumables.md
+(needs a simulator checkout), rotation.md, every build page and Research files section, the new-builds survey, the player pages and top
+README, the tier list, respec plans, optimizer sections, scorer changes, the loop audit, both checklists, the fight-lab summary and the
+report index. It does **not** rewrite (each has its own tool): the spells READMEs (`build_forever_spells.py --render-only`),
+`forever-talents/README.md` (`refresh_forever_talents.py`), `dps-rankings.md`, the "DPS by gear tier" sections and `gear-links.json`
+(`raidsim/ml_builds.py --rank`), the raid-sim, fight-lab, healer-lab, deep-optimization and open-search reports (the searches and races
+that write them), the optimizer pages, the PvP check and the audits; the page numbers come from those records, so run their tools first
+when the records are stale (audit 2026-10-18 row 80). A
 build's research folder comes from its `content` field (leveling and solo -> `research/leveling/`, raid and dungeon -> `research/raid/`,
 pvp -> `research/pvp/`); its spec (the player page it appears on) from `spec_modes.py`: a tank or healer build belongs to its role's tree,
 otherwise the tree with 30+ points, otherwise a hybrid of its two biggest trees; a build's `spec` field overrides this (Frostfire,
@@ -86,7 +94,7 @@ takes optional class names (`... warrior druid`); each has its usage in its docs
 
 ```
 python _reference/data/validate_builds.py && python _reference/data/render_builds.py   # check every build, regenerate build pages + indexes
-python _reference/data/rebuild.py --steps regen                                        # regenerate every generated page
+python _reference/data/rebuild.py --steps regen                                        # regenerate the pages (what it covers: above)
 python _reference/data/rebuild.py [classes] --jobs 3                                   # the whole pipeline (hours): calibrate <-> optimize, race, report, regen
 python _reference/data/check_beta_build.py                                             # is there a newer beta client? prints the refresh command
 python _reference/data/refresh_forever_talents.py --fetch --raw <date>-beta-<build>    # pull and merge a new beta build (then CLAUDE.md's steps)

@@ -50,9 +50,12 @@ HOT = re.compile(r"Heals the target for (\d[\d,]*) over (\d+) sec")
 DMG = re.compile(r"Causes (\d[\d,]*) to (\d[\d,]*) (\w+) damage")
 MOONFIRE = re.compile(r"Burns the enemy for (\d[\d,]*) to (\d[\d,]*) Arcane damage and then an additional (\d[\d,]*) Arcane damage over (\d+) sec")
 CP = re.compile(r"Awards (\d) combo point")
-FORM_AP = re.compile(r"increasing melee attack power by (\d+)")
-FORM_ARMOR = re.compile(r"armor contribution from items by (\d+)%")
-FORM_HP = re.compile(r"and health by (\d[\d,]*)")
+# 2026-10-18 (audit 2 row 3): Classic's "increasing melee attack power by"; 70425 says "increasing Attack Power by 120 plus Agility",
+# "Armor contribution from items by 180%, and Health by 180", so all three had read nothing since 70170 (forms only, see FORMS)
+FORM_AP = re.compile(r"increasing (?:melee )?attack power by (\d+)", re.I)
+FORM_ARMOR = re.compile(r"armor contribution from items by (\d+)%", re.I)
+FORM_HP = re.compile(r"and health by (\d[\d,]*)", re.I)
+FORMS = {"Cat Form", "Bear Form", "Dire Bear Form"}
 MAUL = re.compile(r"next attack by (\d+) damage")
 SWARM = re.compile(r"causing (\d[\d,]*) Nature damage over (\d+) sec")
 STARFIRE = re.compile(r"Causes (\d[\d,]*) to (\d[\d,]*) Arcane damage")
@@ -89,7 +92,7 @@ def load_spellbook():
         for sp in tab["spells"]:
             for r in sp["ranks"]:
                 txt = (r.get("text") or "").replace("\n", " ")
-                cost_txt = r.get("cost") or ""
+                cost_txt = (r.get("cost") or "").replace(",", "")   # "1,185 Mana" had read 1 (audit 2 row 30)
                 cost = _num(NUM.search(cost_txt).group(1)) if NUM.search(cost_txt) else 0.0
                 cast_txt = (r.get("cast") or "").lower()
                 cast = 0.0 if "instant" in cast_txt or not cast_txt or "channel" in cast_txt else _seconds(cast_txt)
@@ -141,7 +144,7 @@ def load_spellbook():
                     s.dot, s.dot_dur, s.dot_ticks, s.dot_coef = _num(sw.group(1)), float(sw.group(2)), 6, coefs.get("per tick", 0.0)
                 elif dm:
                     s.dmg_min, s.dmg_max = _num(dm.group(1)), _num(dm.group(2))
-                if fa:
+                if fa and name in FORMS:
                     s.kind, s.form_ap = "buff", float(fa.group(1))
                     am, hm = FORM_ARMOR.search(txt), FORM_HP.search(txt)
                     s.form_armor_pct = float(am.group(1)) if am else 0.0
@@ -228,6 +231,7 @@ OMEN_PPM = 2.0
 OMEN_ICD = 10.0
 OMEN_MOONKIN_ICD = 0.5
 CLEARCASTING_DURATION = 15.0
+THORNS_COEF = 0.06   # Thorns' spell power ratio (beta notes 2026-10-08: "reduced to 6% (was 13.3%)")
 
 
 def talent_numbers():
@@ -246,7 +250,7 @@ MECHANICS = {
     "Feral Swiftness": "+2%/rank dodge",
     "Feral Instinct": "+10%/rank Swipe (bear, not used single-target) and stealth: no effect here",
     "Brutal Impact": "+0.5 s/rank Pounce and Bash stun, -15 s/rank Bash cooldown",
-    "Thick Hide": "+3 armor per level per rank in forms",
+    "Thick Hide": "+1 base armor per level per rank in Cat, Bear and Moonkin Form, times the form's armor multiplier",
     "Savage Fury": "+5%/rank Claw, Rake, Shred, Maul, Swipe",
     "Feral Charge": "cat / bear: charge that roots and interrupts a casting mob (4 s)",
     "Sharpened Claws": "+3%/rank crit in forms",
@@ -254,7 +258,7 @@ MECHANICS = {
     "Primal Bite": "bear (levels 10-19): 100% weapon damage plus a bonus for 20 rage every 6 s",
     "Predatory Strikes": "+50%/rank of your level as attack power in forms",
     "Blood Frenzy": "bear: 50%/rank chance of 5 rage on a critical strike; cat: 50%/rank chance of an extra combo point on a critical Claw, Rake, Shred or Ravage",
-    "Natural Instinct": "+10%/rank crit damage bonus on abilities",
+    "Natural Instinct": "+10%/rank crit damage bonus on abilities; healing power +12/25% of Intellect",
     "Leader of the Pack": "+3% crit in forms",
     "Shifting Power": "cat: 40 energy for 55% of base mana (less with Natural Shapeshifter) every 16 s, at 60 energy or less, above "
                       "SHIFTING_POWER_ABOVE of mana (default never: solo its mana costs more drinking time than the energy saves) and "
@@ -404,33 +408,48 @@ class DruidModule(BaseModule):
     # ------------------------------------------------------------ character
     def make_player(self, level):
         base = class_base_stats("druid", level)
-        g = gear_stats(level, self.gear, "druid")
-        # Heart of the Wild's tooltip: Intellect, then Stamina in Bear Form, then Strength in Cat Form (numbers 0, 1, 2)
-        strength = (base["strength"] + g["strength"]) * (1 + self.tv("Heart of the Wild", 2) / 100 if self.form == "cat" else 1.0)
-        agility = base["agility"] + g["agility"]
-        stamina = (base["stamina"] + g["stamina"]) * (1 + self.tv("Heart of the Wild", 1) / 100 if self.form == "bear" else 1.0)
-        intellect = (base["intellect"] + g["intellect"]) * (1 + self.tv("Heart of the Wild", 0) / 100)
-        spirit = (base["spirit"] + g["spirit"]) * (1 + self.tv("Living Spirit", 0) / 100)
+        g = gear_stats(level, self.gear, "druid-caster" if self.balance else "druid")   # caster row for Balance (audit 2026-10-18 row 65)
+        # Mark of the Wild, self-cast and kept up (an hour: recast between pulls, its mana not counted) like its armor before: "armor by 385,
+        # all attributes by 16" at rank 7. Until 2026-10-18 only the armor counted (audit 2 row 4: about +8% cat attack power at 60).
         motw = self.book.get("Mark of the Wild")
         mm = re.search(r"armor by (\d+)", motw.text) if motw else None
-        form = self.form_spell
+        ma = re.search(r"all attributes by (\d+)", motw.text) if motw else None
+        attr = _num(ma.group(1)) if ma else 0.0
+        # Heart of the Wild's tooltip: Intellect, then Stamina in Bear Form, then Strength in Cat Form (numbers 0, 1, 2)
+        strength = (base["strength"] + g["strength"] + attr) * (1 + self.tv("Heart of the Wild", 2) / 100 if self.form == "cat" else 1.0)
+        agility = base["agility"] + g["agility"] + attr
+        stamina = (base["stamina"] + g["stamina"] + attr) * (1 + self.tv("Heart of the Wild", 1) / 100 if self.form == "bear" else 1.0)
+        intellect = (base["intellect"] + g["intellect"] + attr) * (1 + self.tv("Heart of the Wild", 0) / 100)
+        spirit = (base["spirit"] + g["spirit"] + attr) * (1 + self.tv("Living Spirit", 0) / 100)
+        # the animal form's own numbers (a Balance druid's form_spell is Bear Form, never used: no form stats; they had read 0 until 2026-10-18)
+        form = self.form_spell if self.form in ("cat", "bear") else None
         moonkin_pct = self.tv("Moonkin Form", 1) / 100 if self.moonkin else 0.0   # "Armor contribution from items by 360%"
-        self._moonkin_armor = g["armor"] * moonkin_pct
+        # Thick Hide (70425): "While in Bear Form, Cat Form, Dire Bear Form, or Moonkin Form, you gain 1/2/3 additional base Armor per level
+        # ... further increased by multipliers from those forms": inside the form's multiplier, nothing in caster form (until 2026-10-18 it
+        # counted in caster form too and outside the multiplier: audit 2 row 24). The defense-skill half is 0 (no defense above 5 x level).
+        in_form = self.moonkin if self.balance else self.form in ("cat", "bear")
+        thick = level * self.tv("Thick Hide", 0) if in_form else 0.0
+        self._moonkin_armor = (g["armor"] + thick) * moonkin_pct + thick if self.moonkin else 0.0   # what leaving Moonkin Form takes away
         self.in_moonkin = self.moonkin           # a new session (its clock starts again): fresh state
         self._cat_exit = None
         self._omen_ready = 0.0
-        armor = g["armor"] * (1 + (moonkin_pct if self.moonkin else getattr(form, "form_armor_pct", 0.0) / 100)) + (_num(mm.group(1)) if mm else 0.0) + level * self.rank("Thick Hide")
+        self._intellect, self._spell_power = intellect, g["spell_power"]   # Natural Instinct's healing (heal_multiplier)
+        armor = (g["armor"] + thick) * (1 + (moonkin_pct if self.moonkin else getattr(form, "form_armor_pct", 0.0) / 100)) + (_num(mm.group(1)) if mm else 0.0)
         bm = class_base_mana("druid", level)
         cat = self.book.get("Cat Form")
         p = Player(level=level, hp_max=class_base_health("druid", level) + 10 * stamina + getattr(form, "form_hp", 0.0), hp=0.0, mana_max=bm + 15 * intellect, mana=0.0, base_mana=bm,
                    spirit=spirit, intellect=intellect, spell_power=g["spell_power"], armor=armor, spell_crit=class_spell_crit("druid", level, intellect),
                    dodge=class_dodge("druid", level, agility) + self.tv("Feral Swiftness", 1) / 100 + self.tv("Natural Reaction", 0) / 100, ranged_crit=0.0)
         p.strength, p.agility, p.stamina = strength, agility, stamina
-        p.attack_power = class_attack_power("druid", level, strength, agility) + level * self.tv("Predatory Strikes", 0) / 100
+        # Attack power (2026-10-18, audit 2 row 3): Agility gives a druid none outside Cat Form (client ChrClasses AttackPowerPerAgility 0;
+        # tables.AP_PER_AGI had 1, so Cat Form counted it twice), and the forms' "Attack Power by 120" (Cat, Bear) / 180 (Dire Bear) is the
+        # level-60 value of 2 / 3 x level (the ElliotWood/Forever simulator's forms.go: 2 x level for Cat Form, 3 x level for Dire Bear).
+        # Before, the form numbers read 0 (FORM_AP), so a cat had +Agility - 2 x level and a bear no form attack power, armor or health.
+        p.attack_power = class_attack_power("druid", level, strength, 0.0) + level * self.tv("Predatory Strikes", 0) / 100
         if self.form == "cat":
-            p.attack_power += getattr(cat, "form_ap", 0.0) + agility
+            p.attack_power += getattr(cat, "form_ap", 0.0) * level / 60 + agility
         elif self.form == "bear":
-            p.attack_power += getattr(form, "form_ap", 0.0)
+            p.attack_power += getattr(form, "form_ap", 0.0) * level / 60
         p.melee_crit = class_melee_crit("druid", level, agility) + self.tv("Sharpened Claws", 0) / 100 + (0.03 if self.rank("Leader of the Pack") else 0.0) + self.tv("Nature's Majesty", 0) / 100
         p.hit_bonus = self.tv("Nature's Reach", 1) / 100
         dps = weapon_dps(level, "2h") * 0.85   # a cat's paws: assumed 85% of a quest-green two-hander's dps at a 1.0 s swing (a bear's at 2.5 s)
@@ -595,6 +614,16 @@ class DruidModule(BaseModule):
         m = (1 + self.tv("Gift of Nature", 0) / 100) * (1 + self.tv("Genesis", 0) / 100 if spell.hot > 0 else 1.0)
         if spell.name == "Rejuvenation":
             m *= 1 + self.tv("Improved Rejuvenation", 0) / 100
+        # Natural Instinct's second half (70425): "increases your spell healing by 12/25% of your Intellect": healing power the engine has
+        # no slot for, so the heal's mean is scaled by its gain (until 2026-10-18 left out: audit 2 row 24)
+        ni = self.tv("Natural Instinct", 1) / 100 * getattr(self, "_intellect", 0.0)
+        if ni > 0 and spell.heal_coef > 0:
+            sp = getattr(self, "_spell_power", 0.0)
+            ticks = max(1, int(spell.hot_dur / 3.0)) if spell.hot > 0 else 0
+            direct = 1 if spell.heal_max > 0 else 0
+            mean = direct * ((spell.heal_min + spell.heal_max) / 2 + spell.heal_coef * sp) + (spell.hot + spell.heal_coef * sp * ticks if ticks else 0.0)
+            if mean > 0:
+                m *= 1 + spell.heal_coef * ni * (direct + ticks) / mean
         return m
 
     def periodic_can_crit(self, spell):
@@ -614,6 +643,19 @@ class DruidModule(BaseModule):
 
     def attacks_from_front(self):
         return self.opened or self.balance
+
+    def on_hit_taken(self, fight, dmg, crit=False):
+        # Thorns (2026-10-18, audit 2 row 4): self-cast and kept up (10 min; its mana not counted), "causing 18 Nature damage to attackers
+        # when hit" at rank 6 plus 6% of spell power (Blizzard's beta notes of 8 Oct; the ElliotWood/Forever simulator's
+        # ThornsSpellPowerCoefficient); melee hits only (a caster mob's bolt at range does not trigger it), no crit
+        th = self.book.get("Thorns")
+        m = fight.m
+        if th is None or not m.in_melee or m.hp <= 0:
+            return
+        val = re.search(r"causing (\d+) Nature damage", th.text)
+        if val:
+            spell = Spell("Thorns", "nature")
+            fight.deal(spell, (float(val.group(1)) + THORNS_COEF * fight.p.spell_power) * self.damage_multiplier(spell, False))
 
     # ------------------------------------------------------------ forms
     def shift_out(self, fight):

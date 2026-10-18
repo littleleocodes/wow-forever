@@ -20,9 +20,15 @@ PROT_NOTES below. Every other spec string runs exactly as before (the shield cod
 Forever's 2% of attack power a tick, with Improved Rend on the bleed; Bloodthirst keeps its flat damage; Revenge and Thunder Clap
 take Forever's attack power shares (FOREVER_AP); Two-Handed Weapon Specialization only with a two-hander; Dual Wield
 Specialization (off-hand damage and rage), Furious Precision (off-hand hit), Gore Drinker and Sweeping Strikes are simulated;
-Unbridled Wrath gives 1 rage on either hand; Bloodthrill triggers on every main-hand attack; Blood Craze no longer triggers on
+Unbridled Wrath gives 1 rage on either hand (white swings only since 2026-10-18); Bloodthrill triggers on every main-hand attack; Blood Craze no longer triggers on
 Bloodthirst; Deep Wounds rolls the main hand's average weapon damage without attack power; Flurry charges go on either hand's
 landed white swings; Death Wish adds 5% damage taken; Thunder Clap never crits.
+
+2026-10-18 (audit 2026-10-18 #6, #17, #25, #28): Slam is cast with Improved Slam (shorter cast and global cooldown, the swing keeps
+running, 3 s off the cooldown; plain Slam stops and resets the swing and is left out of the hand-written priority); Spearing Strike
+(40% weapon damage) is cast; Concussion Blow stuns (its "Stuns the target for 5 sec." was never parsed); Unbridled Wrath procs from
+white swings only; Bloodthrill's Overpower window is the dodge's 5 s; Bloodrage's trickle pays every second it owes and takes
+Improved Bloodrage's +50%.
 """
 import json
 import pathlib
@@ -48,6 +54,8 @@ SHOUT = re.compile(r"melee attack power of all party (?:or raid )?members[^.]*? 
 SLOW = re.compile(r"slowing the enemy's movement by (\d+)% for (\d+) sec")
 AP_PCT = re.compile(r"(\d+)% of (?:your )?Attack Power")
 AP_PLUS = re.compile(r"of (?:your )?Attack Power plus (\d[\d,]*)")   # Bloodthirst: "45% of your Attack Power plus 48"
+WPCT = re.compile(r"deals (\d+)% weapon damage")   # Spearing Strike: "A brutal attack that deals 40% weapon damage." (audit 2026-10-18 #6)
+STUN = re.compile(r"(?:Stuns the target|stunning it) for (\d+) sec")   # Concussion Blow: "Stuns the target for 5 sec." (audit 2026-10-18 #28: never parsed); Intercept: "stunning it for 3 sec" (lint)
 # Attack power shares Forever adds that the client rows do not carry, as the community raid simulator fits them to beta logs
 # (ElliotWood/Forever sim/warrior rend.go, revenge.go, thunder_clap.go): Rend 0.02 of attack power a tick, Revenge 0.25, Thunder
 # Clap 0.0255 (fitted below level 20; the same share at 60 is assumed there too).
@@ -114,6 +122,12 @@ def load_spellbook():
                         s.coef = share
                 if name == "Whirlwind":
                     s.weapon_pct = 1.0
+                wp = WPCT.search(txt)
+                if wp and not pl:   # Spearing Strike's 40% (its extra 80% against Giants, Dragonkin and mounted targets: no leveling mob here)
+                    s.weapon_pct = float(wp.group(1)) / 100
+                st = STUN.search(txt)
+                if st and not ch:
+                    s.stun = float(st.group(1))
                 if ch:
                     s.kind, s.charge, s.charge_rage, s.stun, s.resource = "buff", True, float(ch.group(1)), float(ch.group(2)), "none"
                 if sh:
@@ -163,7 +177,8 @@ NO_SWEEP = {"Execute", "Thunder Clap", "Whirlwind", "Cleave", "Rend", "Concussio
 SHOUTS = {"Battle Shout", "Demoralizing Shout", "Challenging Shout", "Intimidating Shout"}   # Booming Voice's rage cost cut
 SWEEP_CHARGES = int(NUM.search(BOOK["Sweeping Strikes"][-1].text).group(1))   # "Your next 5 melee attacks strike an additional nearby opponent."
 SWEEP_DURATION = 20.0   # the client's duration of 12292 (the raid simulator's spell data: DurationMs 20000); the tooltip gives none
-OVERPOWER_WINDOW = 5.0  # a dodge's Overpower window (the client's Offensive State aura 1282733, 5 s; Bloodthrill's own lasts 6 s)
+OVERPOWER_WINDOW = 5.0  # a dodge's Overpower window (the client's Offensive State aura 1282733, 5 s); Bloodthrill's too since 2026-10-18
+                        # (its 6 s came from no 70425 text: the tooltip names no window; audit 2026-10-18 #25)
 GORE = Spell("Gore Drinker", "physical", kind="buff", resource="none")   # healing bookkeeping for Gore Drinker
 
 
@@ -186,20 +201,20 @@ MECHANICS = {
     "Improved Overpower": "+25%/rank Overpower crit",
     "Anger Management": "+1 rage per 3 s in combat",
     "Deep Wounds": "crits bleed 20%/rank of the main hand's average weapon damage over 12 s (no attack power; a crit on a running bleed adds what it still owed)",
-    "Spearing Strike": "40% weapon damage instant: not used (Beasts/Humanoids)",
+    "Spearing Strike": "40% weapon damage instant, 15 rage, 20 s cooldown (its extra 80% against Giants, Dragonkin and mounted targets: no leveling mob here)",
     "Two-Handed Weapon Specialization": "+1%/rank damage with a two-hander (nothing with one-handers)",
     "Impale": "+10%/rank ability crit damage bonus",
-    "Bloodthrill": "4%/rank per main-hand attack (white or ability) on a Rended mob: Overpower usable for 6 s",
+    "Bloodthrill": "4%/rank per main-hand attack (white or ability) on a Rended mob: Overpower usable for 5 s (the dodge window; 70425 names no other)",
     "Sweeping Strikes": "pulls of several mobs: the next 5 melee attacks (20 s) also hit a second mob; 30 rage, Battle Stance, off the global cooldown",
     "Weaponmaster": "axe/polearm: +1%/rank crit (assumed weapon type)",
-    "Improved Slam": "not used (Slam is a 1.5 s cast on an 18 s cooldown: Mortal Strike and Heroic Strike fill the rage)",
+    "Improved Slam": "-0.25 s/rank Slam cast and global cooldown, Slam no longer stops the swing timer, -3 s Slam cooldown (Slam: weapon plus N, 1.5 s cast, 18 s cooldown, resets the swing without the talent)",
     "Improved Hamstring": "not used",
     "Mortal Strike": "unlocks Mortal Strike (30 rage, weapon plus 85..160, 6 s cooldown)",
     "Booming Voice": "-5%/rank shout rage cost (Battle Shout; the larger area does nothing here)",
     "Cruelty": "+1%/rank melee crit",
     "Iron Will": "PvP",
     "Lingering Rage": "not modelled (the engine decays rage between fights with no module hook)",
-    "Unbridled Wrath": "12%/rank per weapon hit, either hand: +1 rage",
+    "Unbridled Wrath": "12%/rank per landed white swing, either hand: +1 rage (the raid simulator's rule and its beta logs: no procs from abilities)",
     "Furious Precision": "+4/7/10% off-hand hit (dual wield)",
     "Piercing Howl": "not used (the mob stands and fights)",
     "Blood Craze": "1%/rank health over 6 s after being crit or losing 20% in one hit",
@@ -215,7 +230,7 @@ MECHANICS = {
     "Bloodthirst": "unlocks Bloodthirst (30 rage, 45% AP plus 30..48, 6 s cooldown)",
     "Shield Specialization": "+1%/rank block, 5 rage per block (sword and board; nothing without a shield)",
     "Anticipation": "+20 Defense: ~-1.6% chance to be hit (assumed)",
-    "Improved Bloodrage": "+50% Bloodrage rage",
+    "Improved Bloodrage": "+50% Bloodrage rage (both the instant 10 and the 10 over 10 s)",
     "Improved Thunder Clap": "-2 rage/rank Thunder Clap (pulls of several mobs; Thunder Clap is off on a single mob)",
     "Last Stand": "+30% health for 20 s every 3 min when low",
     "Master of Defense": "5 rage per dodge or parry with a shield (sword and board)",
@@ -225,7 +240,7 @@ MECHANICS = {
     "Improved Disarm": "not used",
     "Vanguard": "Charge in Defensive Stance (sword and board: no swap to Battle Stance for it)",
     "Improved Shield Wall": "not used",
-    "Concussion Blow": "5 s stun every 45 s (when the mob is on you)",
+    "Concussion Blow": "5 s stun every 45 s, no damage (when the mob is on you)",
     "Improved Shield Bash": "silence not modelled (Shield Bash's own 6 s lockout is)",
     "Bastion": "+2%/rank damage with a shield (sword and board)",
     "Focused Rage": "-3 rage on offensive abilities",
@@ -421,6 +436,17 @@ class WarriorModule(BaseModule):
             cost = max(0.0, cost - self.tv("Focused Rage", 0))
         return cost
 
+    def cast_time(self, spell):
+        """Slam: 1.5 s, minus Improved Slam's 0.25 s a rank. With the talent Slam "no longer interrupts or delays your melee swing": the lab
+        plays it as an instant that holds the (equally shortened) global cooldown for the cast (after_cast), so white swings keep
+        running; its damage lands at the start of the cast instead of the end (audit 2026-10-18 #6)."""
+        if spell.name == "Slam" and self.rank("Improved Slam"):
+            return 0.0
+        return spell.cast
+
+    def pushback_resisted(self, fight, spell):
+        return spell.name == "Slam" or super().pushback_resisted(fight, spell)   # a melee ability's cast is not pushed back
+
     def hit_bonus(self, spell):
         """Furious Precision: off-hand attacks hit more often (the engine adds the dual-wield miss penalty to white swings)."""
         if spell.hand == "oh":
@@ -575,10 +601,10 @@ class WarriorModule(BaseModule):
             self.prot_fight_start(fight)
         br = self.spells.get("Bloodrage")
         if br is not None and p.ready("Bloodrage", t) and p.hp > 0.45 * p.hp_max:
-            gain = 10.0 * (1 + self.tv("Improved Bloodrage", 0) / 100)
+            gain = 10.0 * (1 + self.tv("Improved Bloodrage", 0) / 100)   # "all the Rage generated": the instant 10 and the 10 over 10 s
             p.hp -= 0.06 * p.hp_max
             p.rage = min(p.rage_max, p.rage + gain)
-            p.buffs["Bloodrage"] = {"until": t + 10.0, "left": gain}
+            p.buffs["Bloodrage"] = {"until": t + 10.0, "left": gain, "per": gain / 10.0, "last": t}
             p.cooldowns["Bloodrage"] = t + br.cooldown
             fight.casts["Bloodrage"] = fight.casts.get("Bloodrage", 0) + 1
             self._gore()
@@ -589,6 +615,23 @@ class WarriorModule(BaseModule):
             p.cooldowns["Death Wish"] = t + dw.cooldown
             fight.casts["Death Wish"] = fight.casts.get("Death Wish", 0) + 1
             self._gore()
+
+    def _bloodrage_tick(self, fight):
+        """Bloodrage's trickle: a tick every second for 10 s (10 rage; Improved Bloodrage +50%), paid for every whole second since the
+        last tick. Until 2026-10-18 it paid at most 1 rage per decision (none while the warrior waited on the global cooldown), and the
+        `_br_tick` stamp on the fight carried over between fights; Improved Bloodrage added nothing to it (audit 2026-10-18 #25)."""
+        p, t = fight.p, fight.t
+        br = p.buffs.get("Bloodrage")
+        if not br or br.get("left", 0) <= 0:
+            return
+        last = br.get("last", br["until"] - 10.0)
+        n = int(min(t, br["until"]) - last + 1e-9)
+        if n <= 0:
+            return
+        gain = min(br["left"], n * br.get("per", 1.0))
+        br["left"] -= gain
+        br["last"] = last + n
+        p.rage = min(p.rage_max, p.rage + gain)
 
     def _gore(self):
         """Gore Drinker: "Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks
@@ -618,9 +661,10 @@ class WarriorModule(BaseModule):
             if spell.name == "Revenge":
                 p.buffs.pop("Revenge", None)
             near = [x for x in fight.alive() if x is m or x.in_melee]   # the pull's mobs next to the warrior
-            if spell.name == "Thunder Clap":   # the engine's attack slow is a flat 25% longer swing time (tooltip: 20%)
+            if spell.name == "Thunder Clap":   # "increasing the time between their attacks by 20% for 10 sec" (audit 2026-10-18 #73: was 25%)
                 mt = TC_TXT.search(spell.text or "")
                 for x in near[:4]:
+                    x.attack_slow = float(mt.group(1)) / 100 if mt else 0.20
                     x.attack_slow_until = t + (float(mt.group(2)) if mt else 10.0)
             if spell.name == "Demoralizing Shout":   # attack power / 14 x the mob's 2 s swing off every hit (as the druid's Roar)
                 md = DEMO_TXT.search(spell.text or "")
@@ -637,19 +681,21 @@ class WarriorModule(BaseModule):
     def on_swing(self, fight, spell, outcome, amount, hand):
         p, m, t = fight.p, fight.m, fight.t
         white = spell.name in WHITE
+        self._bloodrage_tick(fight)
         if outcome == "dodge":
             p.buffs["Overpower"] = {"until": t + OVERPOWER_WINDOW}
         if outcome in ("miss", "dodge", "parry"):
             return
-        weapon_hit = white or spell.weapon_pct > 0   # either hand (the off-hand's white swing is "Melee (off-hand)")
-        if weapon_hit and self.rank("Unbridled Wrath") and fight.rng.random() < self.tv("Unbridled Wrath", 0) / 100:
+        # Unbridled Wrath: white swings of either hand only (the raid simulator's rule, fitted to beta logs: 0 of 148 Heroic Strike and
+        # Cleave hits proc it; audit 2026-10-18 #17); until 2026-10-18 every weapon ability rolled it too
+        if white and self.rank("Unbridled Wrath") and fight.rng.random() < self.tv("Unbridled Wrath", 0) / 100:
             p.rage = min(p.rage_max, p.rage + self.tv("Unbridled Wrath", 1))   # "1 additional Rage" (70291: no longer 2 for a two-hander)
         attack = amount > 0 and spell.kind == "melee" and spell.name not in NOT_WEAPON_ATTACK   # a weapon attack that dealt damage
         # Bloodthrill: "Your Main Hand melee attacks against enemies afflicted by your Rend" (white swings and main-hand abilities,
         # Heroic Strike and Cleave included: Blizzard's 2026-09-24 notes; Overpower's own hit is spent by after_cast)
         if attack and hand == "mh" and self.rank("Bloodthrill") and fight.dot_active("Rend") and fight.rng.random() < self.tv("Bloodthrill", 0) / 100:
             b = p.buffs.get("Overpower")
-            p.buffs["Overpower"] = {"until": max(b["until"] if b else 0.0, t + (self.tv("Bloodthrill", 1) or 6.0))}
+            p.buffs["Overpower"] = {"until": max(b["until"] if b else 0.0, t + OVERPOWER_WINDOW)}   # 70425 names no window of its own
         if attack and self.gore_charges > 0:   # Gore Drinker's heal on each of the next 3 melee attacks
             self.gore_charges -= 1
             fight.heal(GORE, p.hp_max * self.tv("Gore Drinker", 1) / 100)
@@ -689,6 +735,15 @@ class WarriorModule(BaseModule):
             p.cooldowns[spell.name] = t + spell.cooldown
         if spell.name == "Overpower":
             p.buffs.pop("Overpower", None)
+        if spell.name == "Slam":
+            if self.rank("Improved Slam"):   # "Slam's cooldown is reduced by 3.0 sec"; the global cooldown is the shortened cast
+                p.cooldowns["Slam"] = t + max(0.0, spell.cooldown - self.tv("Improved Slam", 1))
+                p.gcd_until = t + max(0.0, spell.cast - self.tv("Improved Slam", 0))
+            else:   # without the talent the cast interrupts the swing: the swing timer starts over when it ends (Classic's Slam)
+                if p.mh is not None:
+                    p.swing_mh = max(p.swing_mh, t + p.mh.speed * self.swing_speed_factor())
+                if p.oh is not None:
+                    p.swing_oh = max(p.swing_oh, t + p.oh.speed * self.swing_speed_factor())
 
     def on_kill(self, fight):
         p, t = fight.p, fight.t
@@ -744,15 +799,9 @@ class WarriorModule(BaseModule):
             return s is not None and self.stance_ok(s.name) and p.ready(s.name, t) and fight.can_afford(s, self.mana_cost(s))
 
         charge, shout, vr, execute, over, ms, rend, hs, bt, cb, brage = (sp.get(n) for n in ("Charge", "Battle Shout", "Victory Rush", "Execute", "Overpower", "Mortal Strike", "Rend", "Heroic Strike", "Bloodthirst", "Concussion Blow", "Berserker Rage"))
+        slam, spear = sp.get("Slam"), sp.get("Spearing Strike")
         hp = m.hp
-        # Bloodrage's trickle: 1 rage per second for 10 s
-        br = p.buffs.get("Bloodrage")
-        if br and br["until"] > t and br.get("left", 0) > 0 and not hasattr(fight, "_br_tick"):
-            fight._br_tick = t
-        if br and br["until"] > t and br.get("left", 0) > 0 and t - fight._br_tick >= 1.0:
-            fight._br_tick = t
-            br["left"] -= 1
-            p.rage = min(p.rage_max, p.rage + 1.0)
+        self._bloodrage_tick(fight)
         if not in_melee:
             if charge and can(charge) and 8.0 <= m.dist <= 25.0 and fight.swings == 0 and not m.in_melee:
                 return charge
@@ -777,6 +826,14 @@ class WarriorModule(BaseModule):
         if rend and can(rend) and not fight.dot_active("Rend") and hp > 0.35 * m.hp_max and (ms is None or p.rage >= 40 or not p.ready("Mortal Strike", t)):
             return rend
         reserve = 30.0 if (ms and p.cooldowns.get("Mortal Strike", 0) - t < 3.0) else 0.0
+        # Slam (learned at 20; 70425: 15 rage, 18 s cooldown) with Improved Slam, and Spearing Strike (talent, 40% weapon damage), with the
+        # rage Mortal Strike does not need (audit 2026-10-18 #6: neither was ever cast before; the tuned rules veto either where it does
+        # not pay). Plain Slam stops the swing for its 1.5 s cast and resets it: cast like this it cost 2.6-6% per kill at 20-60
+        # (2026-10-18, 1000 fights, Arms and Fury leveling builds), so it waits for the talent.
+        if slam and self.rank("Improved Slam") and can(slam) and p.rage >= self.mana_cost(slam) + reserve:
+            return slam
+        if spear and can(spear) and p.rage >= self.mana_cost(spear) + reserve:
+            return spear
         if hs and fight.queued_swing is None and p.rage >= self.mana_cost(hs) + reserve + (15 if over and p.buff("Overpower", t) is None else 0):
             return hs
         return None
@@ -826,14 +883,7 @@ class WarriorModule(BaseModule):
         def can(s):   # every cast needs its stance (STANCES; Vanguard: Charge in Defensive Stance)
             return s is not None and self.stance_ok(s.name) and p.ready(s.name, t) and fight.can_afford(s, self.mana_cost(s))
 
-        # Bloodrage's trickle: 1 rage per second for 10 s (as in the Arms priority)
-        br = p.buffs.get("Bloodrage")
-        if br and br["until"] > t and br.get("left", 0) > 0 and not hasattr(fight, "_br_tick"):
-            fight._br_tick = t
-        if br and br["until"] > t and br.get("left", 0) > 0 and t - fight._br_tick >= 1.0:
-            fight._br_tick = t
-            br["left"] -= 1
-            p.rage = min(p.rage_max, p.rage + 1.0)
+        self._bloodrage_tick(fight)
         charge = sp.get("Charge")
         if not in_melee:
             if charge and can(charge) and 8.0 <= m.dist <= 25.0 and fight.swings == 0 and not m.in_melee and (self.stance == "Battle Stance" or self.rank("Vanguard")):

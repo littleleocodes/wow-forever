@@ -23,9 +23,10 @@ from tables import (DEATH_TIME, DRINK_BELOW, EAT_BELOW, GCD, LOOT_TIME, MELEE_RA
                     MOB_HIT_CHANCE, MOB_HP_SPREAD, MOB_SPEED, MOB_SWING, PARTIAL_RESIST_LOSS, PUSHBACK_FIRST,
                     PUSHBACK_NEXT, ROOT_BREAK_CHANCE, SIT_DOWN, TRAVEL_TIME, WAND_SPEED, armor_mitigation, drink_rate,
                     food_rate, health_regen_tick, mana_regen_tick, mob_armor, mob_health, mob_melee_damage, ranged_miss,
-                    spell_miss)
+                    spell_miss, CHANNEL_PUSHBACK, SPELL_HIT_CAP)
 
 DT = 0.1
+EPS = 1e-9   # timers compared with this slack: t accumulates DT in floating point (2.4999999 < 2.5 cost a step; audit of 2026-10-18 row 70)
 
 
 INTERRUPT_RX = [re.compile(p) for p in (r"prevents? any spell in that school from being cast for (\d+) sec", r"preventing them from casting spells for (\d+) sec",
@@ -116,7 +117,7 @@ class Pet:
     crit: float = 0.05
     focus: float = 100.0
     focus_max: float = 100.0
-    focus_regen: float = 5.0     # per second (Classic pets: ~5 focus/s... 24 per 4 s; hunter talents scale it)
+    focus_regen: float = 10.0    # per second (client PowerType FOCUS RegenCombat 10; 5 until 2026-10-18; hunter.make_pet sets it, talents scale it)
     mana: float = 0.0
     mana_max: float = 0.0
     mana_regen: float = 0.0      # per second
@@ -145,6 +146,7 @@ class Mob:
     slow_until: float = 0.0
     root_until: float = 0.0
     attack_slow_until: float = 0.0
+    attack_slow: float = 0.25    # swing time added while attack_slow_until runs (Frost/Ice Armor 25%; Thunder Clap sets 0.20)
     stun_until: float = 0.0
     fear_until: float = 0.0
     debuffs: dict = field(default_factory=dict)   # name -> {"until", "stacks"}
@@ -341,6 +343,10 @@ class BaseModule:
     def periodic_can_crit(self, spell):
         return False
 
+    def gcd_of(self, spell):
+        """The global cooldown a spell triggers: the client's per-spell value (tables.spell_gcd: rogue, cat and totem abilities 1.0 s)."""
+        return tables.spell_gcd(type(self).__module__.rsplit(".", 1)[-1], spell.name)
+
     def pet_decide(self, fight):
         return None
 
@@ -528,6 +534,7 @@ class Fight:
         self.wand_next = None
         self.wanding = False
         self.channel = None          # [spell, next_tick, ticks_left, interval, hit]
+        self.swinging = None         # the mob whose melee swing is being resolved (mob_swing sets it)
         self.channel_lost = 0.0
         self.queued_swing = None
         self.regen_tick = t0 + 2.0
@@ -671,7 +678,7 @@ class Fight:
         if frozen:
             self.frozen_casts += 1
         hit = 1.0 - spell_miss(m.level - p.level) + self.mod.hit_bonus(spell)
-        if spell.name not in NO_MISS and self.rng.random() > min(0.99, hit):
+        if spell.name not in NO_MISS and self.rng.random() > min(SPELL_HIT_CAP, hit):
             self.note(f"{spell.name} MISS")
             self.mod.on_miss(self, spell)
             return 0.0
@@ -721,7 +728,7 @@ class Fight:
         for i, om in enumerate(others):
             self.m = om
             try:
-                if self.rng.random() > min(0.99, 1.0 - spell_miss(om.level - p.level) + self.mod.hit_bonus(spell)):
+                if self.rng.random() > min(SPELL_HIT_CAP, 1.0 - spell_miss(om.level - p.level) + self.mod.hit_bonus(spell)):
                     self.note(f"{spell.name} MISS (add)")
                     continue
                 frozen = om.frozen(self.t)
@@ -764,6 +771,8 @@ class Fight:
         if spell.hot > 0:
             ticks = max(1, int(spell.hot_dur / 3.0))
             total = (spell.hot + spell.heal_coef * p.spell_power * ticks) * mult
+            if tables.HOT_CRIT:   # HoT ticks can crit in Forever (beta notes, post 1: Renew): the expected value, no on-crit procs (as the healer lab)
+                total *= 1.0 + 0.5 * max(0.0, min(1.0, p.spell_crit + self.mod.crit_bonus(spell, False)))
             p.hots = [h for h in p.hots if h[0] != spell.name]
             p.hots.append([spell.name, total / ticks, ticks, self.t + spell.hot_dur / ticks, spell.hot_dur / ticks, target])
         self.mod.on_hit(self, spell, amount, False, False)
@@ -927,11 +936,11 @@ class Fight:
             return True
         if spell.channel > 0:
             self.spend(cost, spell)
-            p.gcd_until = self.t + GCD
+            p.gcd_until = self.t + self.mod.gcd_of(spell)
             self.casting = None
             self.wanding = False
             interval = spell.channel / max(1, spell.dot_ticks)
-            hit = self.rng.random() <= min(0.99, 1.0 - spell_miss(self.m.level - p.level) + self.mod.hit_bonus(spell)) if spell.dot > 0 or spell.dmg_max > 0 else True
+            hit = self.rng.random() <= min(SPELL_HIT_CAP, 1.0 - spell_miss(self.m.level - p.level) + self.mod.hit_bonus(spell)) if spell.dot > 0 or spell.dmg_max > 0 else True
             self.casts[spell.name] = self.casts.get(spell.name, 0) + 1
             self.spell_casts += 1
             if not hit:
@@ -947,14 +956,14 @@ class Fight:
             return True
         if cast <= 0:
             self.spend(cost, spell)
-            p.gcd_until = self.t + GCD
+            p.gcd_until = self.t + self.mod.gcd_of(spell)
             self.resolve_spell(spell)
             self.mod.after_cast(self, spell)
             return True
         self.casting = (spell, self.t + cast, self.t)
         self.cast_hits = 0
         self.wanding = False
-        p.gcd_until = self.t + GCD
+        p.gcd_until = self.t + self.mod.gcd_of(spell)
         return True
 
     def spend(self, cost, spell):
@@ -1130,6 +1139,7 @@ class Fight:
     def mob_swing(self, mob=None):
         p = self.p
         m = mob if mob is not None else self.m
+        self.swinging = m   # the mob whose swing this is: on_dodge / on_parry / on_hit_taken hooks read fight.swinging (an add's swing in a pull)
         pet = p.pet
         if m.target == "pet" and pet is not None and pet.alive:
             if self.rng.random() > MOB_HIT_CHANCE - 0.05:
@@ -1198,6 +1208,7 @@ class Fight:
         """A caster mob's bolt lands: spell damage (no armor) on the pet or the player, pushback like a melee hit."""
         p = self.p
         m = mob if mob is not None else self.m
+        self.swinging = m
         pet = p.pet
         if m.target == "pet" and pet is not None and pet.alive:
             if self.rng.random() > MOB_HIT_CHANCE:
@@ -1250,7 +1261,10 @@ class Fight:
             self.pushbacks += 1
         elif self.channel and dmg > 0:   # a hit shortens a channel: lost time drops ticks from its end
             spell = self.channel[0]
-            delay = PUSHBACK_FIRST if self.cast_hits == 0 else PUSHBACK_NEXT
+            if CHANNEL_PUSHBACK > 0:   # 25% of the channel's full duration per hit (Classic, the raid simulator)
+                delay = CHANNEL_PUSHBACK * spell.channel
+            else:
+                delay = PUSHBACK_FIRST if self.cast_hits == 0 else PUSHBACK_NEXT
             if self.mod.pushback_resisted(self, spell):
                 delay = 0.0
             self.cast_hits += 1
@@ -1306,7 +1320,7 @@ class Fight:
             om.swing_at = max(om.swing_at, max(om.stun_until, om.fear_until, om.flee_until))
         if om.in_melee and t >= om.swing_at and not om.casting(t) and p.hp > 0:
             self.mob_swing(om)
-            om.swing_at = t + MOB_SWING * (1.25 if t < om.attack_slow_until else 1.0)
+            om.swing_at = t + MOB_SWING * (1.0 + om.attack_slow if t < om.attack_slow_until else 1.0)
 
     def tick_dots(self, om, t):
         for dot in list(om.dots):
@@ -1469,7 +1483,7 @@ class Fight:
                     m.swing_at = max(m.swing_at, max(m.stun_until, m.fear_until))
                 if t >= m.swing_at and not m.casting(t):
                     self.mob_swing()
-                    m.swing_at = t + MOB_SWING * (1.25 if t < m.attack_slow_until else 1.0)
+                    m.swing_at = t + MOB_SWING * (1.0 + m.attack_slow if t < m.attack_slow_until else 1.0)
                 if pet.alive and m.hp > 0 and t >= pet.swing_at:
                     self.pet_swing()
                     pet.swing_at = t + pet.speed
@@ -1478,7 +1492,7 @@ class Fight:
                     m.swing_at = max(m.swing_at, max(m.stun_until, m.fear_until))
                 if m.in_melee and t >= m.swing_at and not m.casting(t):
                     self.mob_swing()
-                    m.swing_at = t + MOB_SWING * (1.25 if t < m.attack_slow_until else 1.0)
+                    m.swing_at = t + MOB_SWING * (1.0 + m.attack_slow if t < m.attack_slow_until else 1.0)
                 # a pet fighting a mob that is on the player: the pet keeps swinging from behind
                 if pet is not None and pet.alive and pet.engaged and m.hp > 0 and (m.in_melee or m.pet_in_melee) and t >= pet.swing_at:
                     self.pet_swing()
@@ -1509,15 +1523,18 @@ class Fight:
                     and t >= self.retreat_until and t >= self.last_move + tables.AUTO_SHOT_STAND_STILL and m.dist >= tables.MIN_RANGED_RANGE and t >= p.shot_at:
                 self.auto_shot()
                 p.shot_at = t + p.ranged.speed * self.mod.swing_speed_factor()
-            # player
+            # player: a cast or channel that ends this step lets the next decision happen in the same step (until 2026-10-18 it waited one
+            # step, a hidden 0.1 s after every cast: audit row 70)
             if self.casting:
                 spell, end, started = self.casting
-                if t >= end:
+                if t + EPS >= end:
                     self.finish_cast()
             elif self.channel:
-                if t >= self.channel[1]:
+                if t + EPS >= self.channel[1]:
                     self.channel_tick()
-            elif t >= self.retreat_until and t >= p.gcd_until:
+            if self.casting or self.channel or m.hp <= 0 or p.hp <= 0:
+                pass
+            elif t >= self.retreat_until and t + EPS >= p.gcd_until:
                 action = self.mod.decide(self)
                 if action is None:
                     pass

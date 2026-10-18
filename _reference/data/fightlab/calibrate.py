@@ -204,13 +204,19 @@ def main():
     alphas.sort()
     alpha = round(alphas[len(alphas) // 2], 2) if alphas else 0.0
     alpha = max(0.0, min(1.0, alpha))
-    model["fight_coupling"] = collections.OrderedDict((pid, alpha) for pid in LEVELING_MODES)
+    # only the fitted profiles' keys: an AoE fit used to rebuild the dict and delete the leveling-st/solo-60 coupling (audit 2026-10-18, row 42)
+    fc = model.get("fight_coupling")
+    fc = collections.OrderedDict(fc) if isinstance(fc, dict) else collections.OrderedDict((pid, fc) for pid in ("leveling-st", "solo-60") if fc)
+    for pid in LEVELING_MODES:
+        fc[pid] = alpha
+    model["fight_coupling"] = fc
     print(f"fight coupling alpha = {alpha} (median of {len(alphas)} removal experiments: {', '.join(f'{x:.2f}' for x in alphas)})")
-    model["note"] = model.get("note", "").split(" Fight lab calibration")[0] + (
-        f" Fight lab calibration ({datetime.date.today().isoformat()}, beta client {DATA_BUILD}, build {pathlib.Path(share_bid).stem} at level {top}, {a.fights} fights): shares are the measured damage split "
+    model["note"] = splitfx.set_sentence(model.get("note", ""), " Fight lab calibration", (
+        f"Fight lab calibration [{a.profile}] ({datetime.date.today().isoformat()}, beta client {DATA_BUILD}, build {pathlib.Path(share_bid).stem} at level {top}, {a.fights} fights): shares are the measured damage split "
         f"({', '.join(f'{k} {v * 100:.0f}%' for k, v in shares.items())}) and the leveling time split is fight {split['fight']:.0%} / drink {split['drink']:.0%} / eat {split['eat']:.0%} / other {split['other']:.0%} / death {split['death']:.0%} "
         f"of talent-affected time with fight_coupling {alpha} (downtime and deaths scale with fight length)."
-        + (" Ice Lance is a source so Frost crit/damage talents scale with the Frozen-target loop." if a.cls == "mage" else ""))
+        + (" Ice Lance is a source so Frost crit/damage talents scale with the Frozen-target loop." if a.cls == "mage" else "")),
+        tag=a.profile, drop_untagged=lambda seg: a.profile == "leveling-st")
     if a.write:
         spec_path.write_text(dumps(specs), encoding="utf-8")
         print(f"wrote {spec_path.relative_to(ROOT)}: time split {split}")
@@ -249,6 +255,10 @@ def main():
         lev, other = leveling_split(entry, "scale" if noise else how, a.spec, other_specs, with_utility=sim_ok)   # (never swap a template in for a noise talent)
         lev = splitfx.seed_from_parsed(lev, expand(entry["effects"]), expand(opt.effects[name].get("parsed") or []), LEVELING_MODES,
                                        set(LEVELING_MODES) | {"leveling"}, a.spec)   # a new model valued through the tooltip fallback
+        dead = splitfx.dead_scopes(lev, model)   # a scope no source of this model carries scores nothing however it is scaled (row 47)
+        if dead:
+            print(f"WARNING {name}: not fitted, no source of {a.spec} matches " + ", ".join(f"{e['channel']} {e['scope']}" for e in dead))
+            lev, other = [e for e in lev if e not in dead], other + dead
         reseeded = False
         if not noise and target > NOISE:   # an earlier fit left every value at zero but the lab measures it: start again from the tooltip
             seeded = splitfx.reseed_zero(lev, expand(entry["effects"]), expand(opt.effects[name].get("parsed") or []), LEVELING_MODES, a.spec)
@@ -325,22 +335,26 @@ def main():
             if p["how"] in ("noise", "dead"):
                 continue
             entry = collections.OrderedDict()
-            old_note = p["entry"].get("note", "").split(" Fight lab calibration")[0]
-            what = {"fitted": f"leveling-st/solo-60 values scaled x{p['k']:.2f} to match",
-                    "approx": f"leveling-st/solo-60 values scaled x{p['k']:.2f} (the channel saturates before the target)",
-                    "kept": "already within tolerance, leveling-st/solo-60 effects split off unchanged",
-                    "capped": f"leveling-st/solo-60 values scaled x{p['k']:.2f}, the cap on effect size stops short of the target"}[p["how"]]
+            fm = "/".join(LEVELING_MODES)   # the modes this fit wrote (an AoE fit said "leveling-st/solo-60" until 2026-10-18, row 44)
+            what = {"fitted": f"{fm} values scaled x{p['k']:.2f} to match",
+                    "approx": f"{fm} values scaled x{p['k']:.2f} (the channel saturates before the target)",
+                    "kept": f"already within tolerance, {fm} effects split off unchanged",
+                    "capped": f"{fm} values scaled x{p['k']:.2f}, the cap on effect size stops short of the target"}[p["how"]]
             if p.get("reseeded"):
                 what = "re-seeded from its tooltip (an earlier fit had left its values at zero), " + what
-            entry["note"] = old_note + (f" Fight lab calibration ({datetime.date.today().isoformat()}, levels {a.levels}): removing it costs {p['target'] * 100:.1f}% time per kill in the simulator "
-                                        f"(scorer said {p['before'] * 100:.1f}% on the same scale); {what} ({ev_mean(name) * 100:.1f}%). Other modes unchanged.")
+            tag = f"{a.spec}, {a.profile}"   # one sentence per model and profile; other models' and modes' sentences stay
+            entry["note"] = splitfx.set_sentence(p["entry"].get("note", ""), " Fight lab calibration", (
+                f"Fight lab calibration [{tag}] ({datetime.date.today().isoformat()}, beta client {DATA_BUILD}, levels {a.levels}): removing it costs "
+                f"{p['target'] * 100:.1f}% time per kill in the simulator (scorer said {p['before'] * 100:.1f}% on the same scale); {what} "
+                f"({ev_mean(name) * 100:.1f}%). Other modes unchanged."), tag=tag, drop_untagged=lambda seg: a.profile == "leveling-st")
             entry["effects"] = expand(p["other"]) + expand(scaled(p["lev"], p["k"]))
             manual[name] = entry
             n_written += 1
         man_path.write_text(dumps(manual), encoding="utf-8")
         print(f"wrote {man_path.relative_to(ROOT)} ({n_written} entries written, {sum(1 for p in plan.values() if p['how'] == 'fitted')} fitted)")
         out = {"class": a.cls, "spec": a.spec, "profile": a.profile, "levels": levels, "fights": a.fights, "builds": a.builds, "shares": shares, "time_split": split, "talents": rows}
-        cal_path = paths.fightlab_dir(a.cls) / f"{a.spec}-calibration.json"
+        # one record per profile: the AoE fit had overwritten the single-target record (audit 2026-10-18, row 44)
+        cal_path = paths.fightlab_dir(a.cls) / (f"{a.spec}-calibration.json" if a.profile == "leveling-st" else f"{a.spec}-{a.profile}-calibration.json")
         cal_path.write_text(json.dumps(out, indent=1), encoding="utf-8")
         print(f"wrote {cal_path.relative_to(ROOT)}")
 

@@ -225,6 +225,11 @@ def merge_class(cls, wf, tf, wd, build, captured, sources):
             talents.append(rec)
         out_trees.append({"id": tslug, "name": tname, "icon": wtr.get("icon"), "background": wtr.get("background"),
                           "talents": talents, "removed": wtr.get("removed", [])})
+    # audit 2026-10-18 row 86: warcraftforever.games' removed-Classic-talent lists date from 70205; a talent the current tree has again
+    # (Improved Fire Blast, Elemental Mastery, Grim Reach in 70425) is not removed, and render_trees printed it both ways
+    present = {t["name"] for tr in out_trees for t in tr["talents"]}
+    for tr in out_trees:
+        tr["removed"] = [r for r in tr["removed"] if (r if isinstance(r, str) else r.get("name")) not in present]
     obj = {"slug": cls, "name": wf["name"], "build": build, "captured": captured, "tooltip_level": 60,
            "source": f"World of Warcraft: Forever beta client, build {build}: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated {sources['talentsforever']['generated']}, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build {sources['thewowdb']['build']}; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client {wf.get('build')}, captured {wf.get('captured')}). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo).",
            "sources": sources, "removed_since_demo": removed_now, "renamed_since_demo": renamed_now, "merge_notes": notes,

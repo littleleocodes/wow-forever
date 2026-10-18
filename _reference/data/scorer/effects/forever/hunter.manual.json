@@ -1,7 +1,7 @@
 {
   "_doc": "Hand-entered effects for talents the tooltip parser cannot turn into numbers (procs, actives, conditionals). Every entry says how the number was derived. per_rank = linear per rank; values = cumulative per rank when scaling is not linear. modes restricts an effect to leveling or raid scoring.",
   "Deadly Aspects": {
-    "note": "Hawk: 2%/rank chance per auto shot for +30% ranged attack speed 12s. ~4.3 auto shots per 12s window at 2.8s -> uptime = 1-(1-p)^4.3: 8/16/23/30/36% -> haste EV = uptime*0.30 on Auto Shot only (instant shots are not sped up). Same numbers as Classic Improved Aspect of the Hawk. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 2.1% time per kill in the simulator (scorer said 2.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.2%). Other modes unchanged.",
+    "note": "Hawk: 2%/rank chance per auto shot for +30% ranged attack speed 12s. ~4.3 auto shots per 12s window at 2.8s -> uptime = 1-(1-p)^4.3: 8/16/23/30/36% -> haste EV = uptime*0.30 on Auto Shot only (instant shots are not sped up). Same numbers as Classic Improved Aspect of the Hawk. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 2.1% time per kill in the simulator (scorer said 2.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.2%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-lonewolf-raid, training dummy): removing it costs 5.2% DPS in the simulator (scorer said 5.6% on the same scale); already within tolerance, raid effects split off unchanged (5.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "haste",
@@ -257,7 +257,7 @@
     ]
   },
   "Summon Hawk": {
-    "note": "Hawk dive-bombs then attacks for 18s; beta spellbook ranks 1-4 (levels 25/40/50/60) deal 32/47/85/108 plus 5% of ranged attack power per dive bomb, 80-190 mana, cooldown shared with Arcane Shot (6s). Treated as ~15% of pet damage while up, usable on every pull -> +12% of pet damage; raid uptime unknown, same EV. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 9.4% time per kill in the simulator (scorer said 17.6% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (9.0%). Other modes unchanged.",
+    "note": "Hawk dive-bombs then attacks for 18s; beta spellbook ranks 1-4 (levels 25/40/50/60) deal 32/47/85/108 plus 5% of ranged attack power per dive bomb, 80-190 mana, cooldown shared with Arcane Shot (6s). Treated as ~15% of pet damage while up, usable on every pull -> +12% of pet damage; raid uptime unknown, same EV. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 9.4% time per kill in the simulator (scorer said 17.6% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (9.0%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-raid, training dummy): removing it costs 8.4% DPS in the simulator (scorer said 9.4% on the same scale); already within tolerance, raid effects split off unchanged (9.1%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -562,7 +562,7 @@
     ]
   },
   "Careful Aim": {
-    "note": "AP equal to 20%/rank of Intellect (est. 100% at 5/5 - the demo shows 20% at rank 1). Hunter Intellect ~120 at 60 vs ~900 AP: 100% Int = +13% AP = ~+8% ranged damage if AP is ~60% of shot damage. int_to_ap_dps in the spec model (0.06) scales this. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 3.5% time per kill in the simulator (scorer said 3.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.1%). Other modes unchanged.",
+    "note": "AP equal to 20%/rank of Intellect (est. 100% at 5/5 - the demo shows 20% at rank 1). Hunter Intellect ~120 at 60 vs ~900 AP: 100% Int = +13% AP = ~+8% ranged damage if AP is ~60% of shot damage. int_to_ap_dps in the spec model (0.06) scales this. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 3.5% time per kill in the simulator (scorer said 3.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.1%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-lonewolf-raid, training dummy): removing it costs 4.6% DPS in the simulator (scorer said 4.5% on the same scale); already within tolerance, raid effects split off unchanged (4.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "ap_from_int",
@@ -667,7 +667,7 @@
     ]
   },
   "Focused Fire": {
-    "note": "Beta text: +1%/rank all damage you AND your pet deal while the pet is active. Applies to withpet sources and the pet; a Lone Wolf model gets nothing. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 1.3% time per kill in the simulator (scorer said 1.7% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.7%). Other modes unchanged.",
+    "note": "Beta text: +1%/rank all damage you AND your pet deal while the pet is active. Applies to withpet sources and the pet; a Lone Wolf model gets nothing. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 1.3% time per kill in the simulator (scorer said 1.7% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.7%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-raid, training dummy): removing it costs 2.0% DPS in the simulator (scorer said 1.8% on the same scale); already within tolerance, raid effects split off unchanged (1.8%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -735,7 +735,7 @@
     ]
   },
   "Trueshot Aura": {
-    "note": "Beta spellbook: +30/40/50/75/50 ranged attack power at levels 25/32/40/50/60 (rank 5's 50 looks like a data slip; +75 assumed at 60). Own damage: +75 AP on ~900 = +8% AP, AP is ~55% of shot damage -> +4% ranged damage; the party value is not scored. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-lonewolf-raid, training dummy): removing it costs 2.4% DPS in the simulator (scorer said 2.8% on the same scale); already within tolerance, raid effects split off unchanged (2.8%). Other modes unchanged.",
+    "note": "Beta spellbook: +30/40/50/75/50 ranged attack power at levels 25/32/40/50/60 (rank 5's 50 looks like a data slip; +75 assumed at 60). Own damage: +75 AP on ~900 = +8% AP, AP is ~55% of shot damage -> +4% ranged damage; the party value is not scored. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-lonewolf-raid, training dummy): removing it costs 2.4% DPS in the simulator (scorer said 2.8% on the same scale); already within tolerance, raid effects split off unchanged (2.8%). Other modes unchanged. Audit 2026-10-18: the bm-leveling leveling-st fit of 09-28 read 0 because the lab gave the aura 0 attack power until 10-17 (a parse break); re-seeded at the tooltip's +4% ranged damage (rank 4, +75, the strongest rank) for the next fit (row 45).",
     "effects": [
       {
         "channel": "dmg",
@@ -768,7 +768,7 @@
       {
         "channel": "dmg",
         "scope": ["type:ranged"],
-        "values": [0.0],
+        "values": [0.04],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["bm-leveling"]
       },
@@ -1114,14 +1114,13 @@
     ]
   },
   "Resourcefulness": {
-    "note": "-30%/rank mana on traps and melee abilities; a crit has a 30%/rank chance to let 50% of mana regen continue while casting for 30 s. Ranged models: 1%/rank sustain (traps and the odd Raptor Strike; the regen overlaps Rapid Recuperation). Melee model (2026-09-27, beta tooltip): melee abilities cost 60% less at 2/2 (mana_cost on type:melee, 70% of its mana goes there) and melee crits every few seconds keep the regen up almost all the time (regen 0.45 / 0.50 of the while-casting share). Fight lab: the hunter module models both parts. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 20.6% time per kill in the simulator (scorer said 7.5% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (7.3%). Other modes unchanged.",
+    "note": "-30%/rank mana on traps and melee abilities; a crit has a 30%/rank chance to let 50% of mana regen continue while casting for 30 s. Ranged models: 1%/rank sustain (traps and the odd Raptor Strike; the regen overlaps Rapid Recuperation). Melee model (2026-09-27, beta tooltip): melee abilities cost 60% less at 2/2 (mana_cost on type:melee, 70% of its mana goes there) and melee crits every few seconds keep the regen up almost all the time (regen 0.45 / 0.50 of the while-casting share). Fight lab: the hunter module models both parts. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 20.6% time per kill in the simulator (scorer said 7.5% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (7.3%). Other modes unchanged. Audit 2026-10-18: 70425 text: melee and ranged ABILITY crits have a 50%/rank chance to let 50% of mana regeneration continue for 30 s (no longer any crit, no longer 30%/rank). Ranged models: Arcane Shot, Multi-Shot and Aimed Shot crit about twice a minute -> ~40%/70% uptime -> regen 0.2/0.35 (was a flat 1%/rank sustain). Melee copies keep their values (melee abilities crit every few seconds) (row 46).",
     "effects": [
       {
-        "channel": "sustain",
+        "channel": "regen",
         "scope": ["all"],
-        "per_rank": 0.01,
-        "specs": ["bm-leveling", "mm-raid", "mm-lonewolf-raid"],
-        "values": [0.01, 0.02, 0.03, 0.04, 0.05]
+        "values": [0.2, 0.35],
+        "specs": ["bm-leveling", "mm-raid", "mm-lonewolf-raid"]
       },
       {
         "channel": "mana_cost",
@@ -1305,7 +1304,7 @@
     ]
   },
   "Improved Stings": {
-    "note": "Beta curve 6/13/20% Serpent Sting damage (parsed); Viper/Scorpid parts are PvP utility (not scored). Fight lab calibration (2026-10-15, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "note": "Beta curve 6/13/20% Serpent Sting damage (parsed); Viper/Scorpid parts are PvP utility (not scored). Fight lab calibration (2026-10-15, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-lonewolf-raid, training dummy): removing it costs 2.5% DPS in the simulator (scorer said 2.6% on the same scale); already within tolerance, raid effects split off unchanged (2.6%). Other modes unchanged. Audit 2026-10-18: dropped the Viper Sting cooldown copy: no model has a Viper Sting source (row 47).",
     "effects": [
       {
         "channel": "dmg",
@@ -1360,14 +1359,6 @@
         "channel": "dmg",
         "scope": ["ability:Serpent Sting"],
         "values": [0.06, 0.13, 0.2],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["melee-dps"]
-      },
-      {
-        "channel": "cooldown",
-        "scope": ["ability:Viper Sting"],
-        "values": [2.0, 4.0, 6.0],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
         "specs": ["melee-dps"]
@@ -1427,7 +1418,7 @@
     ]
   },
   "Unleashed Fury": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 7.8% time per kill in the simulator (scorer said 10.5% on the same scale); leveling-st/solo-60 values scaled x0.71 to match (7.5%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 7.8% time per kill in the simulator (scorer said 10.5% on the same scale); leveling-st/solo-60 values scaled x0.71 to match (7.5%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-raid, training dummy): removing it costs 3.3% DPS in the simulator (scorer said 3.1% on the same scale); already within tolerance, raid effects split off unchanged (3.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1480,7 +1471,7 @@
     ]
   },
   "Ferocity": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 3.5% time per kill in the simulator (scorer said 5.5% on the same scale); leveling-st/solo-60 values scaled x0.64 to match (3.5%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 3.5% time per kill in the simulator (scorer said 5.5% on the same scale); leveling-st/solo-60 values scaled x0.64 to match (3.5%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-raid, training dummy): removing it costs 1.6% DPS in the simulator (scorer said 1.6% on the same scale); already within tolerance, raid effects split off unchanged (1.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -1628,7 +1619,7 @@
     ]
   },
   "Efficiency": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 3.1% time per kill in the simulator (scorer said 1.4% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (1.4%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 3.1% time per kill in the simulator (scorer said 1.4% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (1.4%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-lonewolf-raid, training dummy): removing it costs 6.8% DPS in the simulator (scorer said 5.6% on the same scale); already within tolerance, raid effects split off unchanged (6.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "mana_cost",
@@ -1681,7 +1672,7 @@
     ]
   },
   "Lethal Attacks": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 5.7% time per kill in the simulator (scorer said 6.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (6.3%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 5.7% time per kill in the simulator (scorer said 6.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (6.3%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-lonewolf-raid, training dummy): removing it costs 5.4% DPS in the simulator (scorer said 5.7% on the same scale); already within tolerance, raid effects split off unchanged (5.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -2064,12 +2055,12 @@
     ]
   },
   "Lightning Reflexes": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 0.4% time per kill in the simulator (scorer said 0.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.3%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 0.4% time per kill in the simulator (scorer said 0.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.3%). Other modes unchanged. Audit 2026-10-18: the unfitted copies held 70009's 3%/rank; 70425's 2%/rank since (row 38).",
     "effects": [
       {
         "channel": "stat",
         "scope": ["stat:agility"],
-        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
         "source": "parsed",
         "modes": ["leveling-aoe"],
         "specs": ["mm-raid", "mm-lonewolf-raid"]
@@ -2077,14 +2068,14 @@
       {
         "channel": "stat",
         "scope": ["stat:agility"],
-        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
         "source": "parsed",
         "modes": ["raid", "heal", "tank"]
       },
       {
         "channel": "stat",
         "scope": ["stat:agility"],
-        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
         "specs": ["bm-leveling", "mm-raid", "mm-lonewolf-raid"]
@@ -2108,12 +2099,12 @@
     ]
   },
   "Deflection": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 0.2% time per kill in the simulator (scorer said 0.5% on the same scale); leveling-st/solo-60 values scaled x0.36 to match (0.2%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 0.2% time per kill in the simulator (scorer said 0.5% on the same scale); leveling-st/solo-60 values scaled x0.36 to match (0.2%). Other modes unchanged. Audit 2026-10-18: the unfitted copies held 70009's 2% parry/rank; 70425's 1%/rank since (row 38).",
     "effects": [
       {
         "channel": "surv",
         "scope": ["surv:parry"],
-        "values": [0.024, 0.048, 0.072, 0.096, 0.12],
+        "values": [0.012, 0.024, 0.036, 0.048, 0.06],
         "source": "parsed",
         "modes": ["leveling-aoe"],
         "specs": ["mm-raid", "mm-lonewolf-raid"]
@@ -2121,14 +2112,14 @@
       {
         "channel": "surv",
         "scope": ["surv:parry"],
-        "values": [0.024, 0.048, 0.072, 0.096, 0.12],
+        "values": [0.012, 0.024, 0.036, 0.048, 0.06],
         "source": "parsed",
         "modes": ["raid", "heal", "tank"]
       },
       {
         "channel": "surv",
         "scope": ["surv:parry"],
-        "values": [0.024, 0.048, 0.072, 0.096, 0.12],
+        "values": [0.012, 0.024, 0.036, 0.048, 0.06],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
         "specs": ["bm-leveling", "mm-raid", "mm-lonewolf-raid"]
@@ -2203,12 +2194,18 @@
     ]
   },
   "Predator's Edge": {
-    "note": "Melee model: +10%/rank off-hand weapon damage on top of the parsed +6%/rank melee crit damage (beta tooltip).",
+    "note": "Melee model: +10%/rank off-hand weapon damage on top of the parsed +6%/rank melee crit damage (beta tooltip). Audit 2026-10-18: the +6%/rank melee ability crit damage was never applied (a manual entry replaces the parse, and the parser does not read this wording); added on yellow attacks: +6% of melee's 100% base bonus per rank (row 46).",
     "effects": [
       {
         "channel": "dmg",
         "scope": ["offhand"],
         "per_rank": 0.1,
+        "specs": ["melee-dps"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["yellow"],
+        "values": [0.06, 0.12, 0.18, 0.24, 0.3],
         "specs": ["melee-dps"]
       }
     ]

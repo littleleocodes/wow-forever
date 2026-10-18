@@ -53,6 +53,20 @@ WEIGHTS = {"mage": {"intellect": 1.0, "spirit": 0.7, "stamina": 0.5, "spell_powe
            "hunter": {"agility": 1.0, "strength": 0.3, "stamina": 0.5, "intellect": 0.2}, "warrior": {"strength": 1.0, "agility": 0.5, "stamina": 0.6},
            "paladin": {"strength": 1.0, "agility": 0.3, "stamina": 0.5, "intellect": 0.4, "spell_power": 0.3}, "shaman": {"strength": 1.0, "agility": 0.4, "stamina": 0.5, "intellect": 0.4, "spell_power": 0.5},
            "druid": {"strength": 0.8, "agility": 1.0, "stamina": 0.5, "intellect": 0.2}}
+# Caster gear rows for the hybrid classes' caster rotations (audit of 2026-10-18, row 65: Balance, Elemental and its hybrid, the paladin's
+# Holy/Shockadin path read the class's melee row: a druid at 60 had Int 0 and spell power 0 against the mage's 128 / 74). Same armor
+# class and weapon type as the class; the weights a caster of that class picks by. Modules ask for "<class>-caster".
+CASTER_WEIGHTS = {"druid-caster": {"intellect": 1.0, "spirit": 0.6, "stamina": 0.5, "spell_power": 1.2, "healing": 0.2},
+                  "shaman-caster": {"intellect": 1.0, "spirit": 0.5, "stamina": 0.5, "spell_power": 1.2, "healing": 0.2},
+                  "paladin-caster": {"intellect": 1.0, "strength": 0.5, "spirit": 0.3, "stamina": 0.5, "spell_power": 1.2, "healing": 0.3}}
+WEIGHTS.update(CASTER_WEIGHTS)
+PROFILE_CLASS = {k: k.split("-")[0] for k in CASTER_WEIGHTS}   # gear profile -> the class that wears it
+
+
+def base_class(cls):
+    return PROFILE_CLASS.get(cls, cls)
+
+
 LEVELS = list(range(10, 61, 5))
 
 
@@ -169,7 +183,7 @@ def item_level_req(it):
 
 
 def wearable(it, cls):
-    return it["allow"] in (-1, 0) or bool(it["allow"] & CLASS_BIT[cls]) or it["allow"] == 1535 or it["allow"] == 2047
+    return it["allow"] in (-1, 0) or bool(it["allow"] & CLASS_BIT[base_class(cls)]) or it["allow"] == 1535 or it["allow"] == 2047
 
 
 def better_half_median(its, score):
@@ -222,7 +236,8 @@ def pick(pool, cls, L, slot_key, kind):
 def character(pool, cls, L, prev=None):
     """A slot keeps the previous level's pick when the new window has nothing better for the class (a hunter at 58 keeps a
     level-45 Agility piece rather than a Strength one)."""
-    arm = [a for lv, a in CLASS_ARMOR[cls] if L >= lv][-1]
+    bc = base_class(cls)
+    arm = [a for lv, a in CLASS_ARMOR[bc] if L >= lv][-1]
     w = WEIGHTS[cls]
     tot = {st: 0.0 for st in list(STAT_NAMES.values()) + list(EXTRA_STATS)}
     tot["armor"] = 0.0
@@ -240,8 +255,12 @@ def character(pool, cls, L, prev=None):
             return dict(old, kept_from=old.get("window"))
         return rec
 
+    order = ["cloth", "leather", "mail", "plate"]
     for slot in ARMOR_SLOTS:
         rec = pick(pool, cls, L, (slot, arm), "armor")
+        if cls in CASTER_WEIGHTS:   # a hybrid caster wears whatever it may that carries caster stats (cloth for a Balance druid; 2026-10-18)
+            alts = [pick(pool, cls, L, (slot, a), "armor") for a in order[:order.index(arm)]]
+            rec = max([r for r in [rec] + alts if r], key=score, default=None)
         if rec is None and arm in ("mail", "plate"):
             rec = pick(pool, cls, L, (slot, "leather" if arm == "mail" else "mail"), "armor")
         rec = keep_better(slot, rec)
@@ -249,7 +268,7 @@ def character(pool, cls, L, prev=None):
             picks[slot] = rec
             for k in tot:
                 tot[k] += rec.get(k, 0.0)
-    for slot, times in (("back", 1), ("neck", 1), ("finger", 2), ("shield", 1 if cls in ("warrior", "paladin", "shaman") and CLASS_WEAPON[cls] == "1h" else 0)):
+    for slot, times in (("back", 1), ("neck", 1), ("finger", 2), ("shield", 1 if bc in ("warrior", "paladin", "shaman") and CLASS_WEAPON[bc] == "1h" else 0)):
         if not times:
             continue
         rec = keep_better(slot, pick(pool, cls, L, slot, "other"))
@@ -257,7 +276,7 @@ def character(pool, cls, L, prev=None):
             picks[slot] = rec
             for k in tot:
                 tot[k] += rec.get(k, 0.0) * times
-    wt = CLASS_WEAPON[cls]
+    wt = CLASS_WEAPON[bc]
     wrec = pick(pool, cls, L, wt, "weapon")
     if wrec is not None and prev.get("weapon") is not None and prev["weapon"].get("dps", 0) > wrec.get("dps", 0):
         wrec = dict(prev["weapon"], kept_from=prev["weapon"].get("window"))
@@ -265,13 +284,13 @@ def character(pool, cls, L, prev=None):
         picks["weapon"] = wrec
         for k in list(STAT_NAMES.values()) + list(EXTRA_STATS):
             tot[k] += wrec.get(k, 0.0)
-    if cls in ("mage", "priest", "warlock", "druid", "shaman", "paladin"):   # a caster's held off-hand item
+    if bc in ("mage", "priest", "warlock", "druid", "shaman", "paladin"):   # a caster's held off-hand item
         held = keep_better("held", pick(pool, cls, L, "held", "other"))
-        if held and CLASS_WEAPON[cls] == "wand":
+        if held and CLASS_WEAPON[bc] == "wand":
             picks["held"] = held
             for k in tot:
                 tot[k] += held.get(k, 0.0)
-    if cls == "rogue":   # dual wield: a second one-hander's stats
+    if bc == "rogue":   # dual wield: a second one-hander's stats
         w2 = pick(pool, cls, L, "dagger", "weapon") or wrec
         if w2:
             for k in list(STAT_NAMES.values()) + list(EXTRA_STATS):
@@ -293,7 +312,7 @@ def build(write):
            "greens": {}, "blues": {}, "weapons": {}, "picks": {}}
     print(f"{len(greens)} fixed-stat green armor/weapon items ({sum(1 for i in greens if i['entry'] in rewards)} of them quest rewards), {len(blues)} blue items")
     for tier, pool in (("greens", greens), ("blues", blues)):
-        for cls in CLASS_ARMOR:
+        for cls in list(CLASS_ARMOR) + list(CASTER_WEIGHTS):
             picks = None
             for L in LEVELS:
                 tot, picks = character(pool, cls, L, picks)
@@ -313,11 +332,11 @@ def build(write):
     import tables as T
     print(f"{'tier':6} {'class':8} {'L':>3} {'Str':>5} {'Agi':>5} {'Sta':>5} {'Int':>5} {'Spi':>5} {'SP':>4} {'heal':>4} {'armor':>6} {'wdps':>5} {'spd':>4} slots | old assumption Str/Agi/Sta/Int/Spi, wdps")
     for tier in ("greens", "blues"):
-        for cls in ("mage", "priest", "rogue", "hunter", "warrior", "druid", "shaman"):
+        for cls in ("mage", "priest", "rogue", "hunter", "warrior", "druid", "shaman") + tuple(CASTER_WEIGHTS):
             for L in (10, 20, 30, 40, 50, 60):
                 c = out[tier][cls][str(L)]
-                g = T.gear_stats(L, "leveling", cls)
-                wd = T.wand_dps(L) if CLASS_WEAPON[cls] == "wand" else T.weapon_dps(L, CLASS_WEAPON[cls])
+                g = T.gear_stats(L, "leveling", cls) if cls in T._GEAR.get(T.GEAR_TIER, {}) else {k: 0.0 for k in ("strength", "agility", "stamina", "intellect", "spirit")}
+                wd = T.wand_dps(L) if CLASS_WEAPON[base_class(cls)] == "wand" else T.weapon_dps(L, CLASS_WEAPON[base_class(cls)])
                 print(f"{tier:6} {cls:8} {L:>3} {c['strength']:5.0f} {c['agility']:5.0f} {c['stamina']:5.0f} {c['intellect']:5.0f} {c['spirit']:5.0f} {c.get('spell_power', 0):4.0f} {c.get('healing', 0):4.0f} {c['armor']:6.0f} {c['weapon_dps']:5.1f} {c['weapon_speed']:4.1f} {c['slots']:>5} | "
                       f"{g['strength']:.0f}/{g['agility']:.0f}/{g['stamina']:.0f}/{g['intellect']:.0f}/{g['spirit']:.0f}, {wd:.1f}")
     print("weapon dps (greens / blues):", {wt: [f"L{L}: {out['weapons']['greens'][wt][str(L)].get('dps', 0):.0f}/{out['weapons']['blues'][wt][str(L)].get('dps', 0):.0f}" for L in (20, 40, 60)] for wt in ("2h", "1h", "dagger", "ranged", "wand")})

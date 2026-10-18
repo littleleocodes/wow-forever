@@ -67,7 +67,7 @@
       "abs_dps_factor": 1.0
     },
     "ret-dps": {
-      "note": "Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic). Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Holy Strike is baseline from level 6 with eight ranks (rank 8: 50% weapon damage plus 40-53 Holy, 20 mana, 10s cooldown since build 70009; Improved Holy Strike was removed); Consecration has an 8s cooldown; Judgement no longer consumes the seal; Exorcism and Hammer of Wrath are ~10% lower than Classic. Fight lab calibration (2026-10-15, beta client 1.60.1.70291, build opt-ret-dps-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Melee 38%, Seal of Command 18%, Judgement 18%, Holy Strike 16%, Hammer of Wrath 11%) and the leveling time split is fight 86% / drink 5% / eat 4% / other 0% / death 5% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length).",
+      "note": "Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic). Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Holy Strike is baseline from level 6 with eight ranks (rank 8: 50% weapon damage plus 40-53 Holy, 20 mana, 10s cooldown since build 70009; Improved Holy Strike was removed); Consecration has an 8s cooldown; Judgement no longer consumes the seal; Exorcism and Hammer of Wrath are ~10% lower than Classic. Fight lab calibration (2026-10-15, beta client 1.60.1.70291, build opt-ret-dps-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Melee 38%, Seal of Command 18%, Judgement 18%, Holy Strike 16%, Hammer of Wrath 11%) and the leveling time split is fight 86% / drink 5% / eat 4% / other 0% / death 5% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Raid sim shares (2026-10-03, ret-raid-dps in the ElliotWood/Forever simulator b0f0df3, every mana-only buff on: the split before the mana limit): seal 32%, white 18%, judgement 16%, consecration 15%, holy_strike 13%, hammer_of_wrath 6%; 3% of the damage matched no source.",
       "sources": [
         {
           "id": "white",
@@ -192,7 +192,7 @@
         "leveling-aoe": {"fight": 0.855, "drink": 0.053, "eat": 0.044, "other": 0.0, "death": 0.048}
       },
       "mana_weight": {"raid-dps": 0.4},
-      "fight_coupling": {"leveling-aoe": 1.0},
+      "fight_coupling": {"leveling-aoe": 1.0, "leveling-st": 0.6, "solo-60": 0.6},
       "kind_weights": {"kite": 0, "range": 0},
       "kind_note": "Melee playstyle: it fights in melee range and never kites, so roots and slows used to open distance (kite) and longer spell or shot range (range) are worth nothing to it in any scenario. Snares that stop a runner (stick), stuns and movement still count.",
       "mana_limit": {

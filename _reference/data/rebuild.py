@@ -600,9 +600,11 @@ def abs_dps_factor(cls, main_spec, extra_spec, log):
     if model is None:
         return
     model["abs_dps_factor"] = factor
-    model["note"] = model.get("note", "").split(" Fight lab speed")[0] + (
-        f" Fight lab speed ({datetime.date.today().isoformat()}): its leveling build kills {factor:.2f}x as fast as {main_spec}'s optimizer build "
-        f"(level-weighted time per kill {weighted_mean(mine):.1f}s vs {weighted_mean(theirs):.1f}s), written as abs_dps_factor so respec.py compares the models on that.")
+    sys.path.insert(0, str(HERE / "scorer"))
+    import splitfx   # replaces only the speed sentence: the split dropped every sentence after it (audit 2026-10-18, row 44)
+    model["note"] = splitfx.set_sentence(model.get("note", ""), " Fight lab speed", (
+        f"Fight lab speed ({datetime.date.today().isoformat()}): its leveling build kills {factor:.2f}x as fast as {main_spec}'s optimizer build "
+        f"(level-weighted time per kill {weighted_mean(mine):.1f}s vs {weighted_mean(theirs):.1f}s), written as abs_dps_factor so respec.py compares the models on that."))
     sys.path.insert(0, str(HERE))
     from fmt_json import dumps
     sp.write_text(dumps(specs), encoding="utf-8")
@@ -733,7 +735,9 @@ def classic_step(cls, a, log, result):
 
 
 def regen(a, classes, log):
-    for args in ([HERE / "render_fightlab_sections.py", *classes], [HERE / "render_raidsim_sections.py", *classes], [HERE / "render_heallab_sections.py", *classes], [HERE / "render_leveling_guides.py", *classes], [HERE / "render_sim_presets.py", *classes], [HERE / "render_rotations.py", *classes], [HERE / "validate_builds.py"], [HERE / "render_builds.py"], [HERE / "render_new_builds.py", *classes], [HERE / "render_modes.py"], [HERE / "render_tier_list.py"], *[[HERE / "scorer/respec.py", c, "--write"] for c in classes],
+    # render_trees.py first (audit 2026-10-18 row 78: it ran only with --refresh, so the hand-run 70425 refresh left every
+    # talent-trees.md on 70291)
+    for args in ([HERE / "render_trees.py", *classes], [HERE / "render_fightlab_sections.py", *classes], [HERE / "render_raidsim_sections.py", *classes], [HERE / "render_heallab_sections.py", *classes], [HERE / "render_leveling_guides.py", *classes], [HERE / "render_sim_presets.py", *classes], [HERE / "render_rotations.py", *classes], [HERE / "validate_builds.py"], [HERE / "render_builds.py"], [HERE / "render_new_builds.py", *classes], [HERE / "render_modes.py"], [HERE / "render_tier_list.py"], *[[HERE / "scorer/respec.py", c, "--write"] for c in classes],
                  [HERE / "render_optimizer_sections.py"], [HERE / "scorer/compare_effects.py"], [HERE / "scorer/loop_audit.py"],
                  [HERE / "build_launch_checklist.py"], [HERE / "build_beta_checklist.py"], [FL / "summary.py", "--write"],
                  [HERE / "render_report_index.py", *classes]):
@@ -764,7 +768,7 @@ def main():
     log = []
     t0 = time.time()
     if a.refresh:
-        for args in ([HERE / "refresh_forever_talents.py", "--fetch", "--raw", a.refresh], [HERE / "build_forever_spells.py"], [HERE / "render_trees.py"]):
+        for args in ([HERE / "refresh_forever_talents.py", "--fetch", "--raw", a.refresh], [HERE / "build_forever_spells.py", "--raw", a.refresh], [HERE / "render_trees.py"]):
             sh(args, a.dry_run, log)
     results = []
     class_steps = [s for s in a.steps if s != "regen"]

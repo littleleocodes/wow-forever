@@ -32,7 +32,14 @@ FLAT = re.compile(r"caus(?:es|ing) (\d[\d,]*) (\w+) damage(?! over)|Inflicts (\d
 DOT = re.compile(r"caus(?:es|ing) (\d[\d,]*) (\w+) damage over (\d+) sec")
 PLUS = re.compile(r"weapon damage plus (\d[\d,]*)")
 RANGED_PLUS = re.compile(r"increases ranged damage by (\d[\d,]*)")
-MEND = re.compile(r"Heals your pet (\d[\d,]*) health every second[^.]*?Lasts (\d+) sec")
+# "Heals your pet 245 health every second while you focus. Lasts 5 sec." Until 2026-10-18 the pattern's [^.]*? could not cross the period
+# after "focus", so Mend Pet parsed as a 0-damage spell cast at the mob (mana and a GCD) and healed nothing between fights (audit 2 #26).
+MEND = re.compile(r"Heals your pet (\d[\d,]*) health every second.*?Lasts (\d+) sec")
+# Volley (70425): "causing 112 Arcane damage to enemy targets within 8 yards every 1 sec for 6 sec": a 6 s channel of 6 area ticks. FLAT had
+# read one 112-damage hit (audit 2 #33).
+VOLLEY = re.compile(r"causing (\d[\d,]*) (\w+) damage to enemy targets within \d+ yards every (\d+(?:\.\d+)?) sec for (\d+) sec")
+# Lacerate (the trainable Survival bleed, 30-60): "Wounds the target causing them to bleed for 406 damage over 21 sec" (ticks every 3 s)
+BLEED = re.compile(r"bleed for (\d[\d,]*) damage over (\d+) sec")
 RAP = re.compile(r"Ranged Attack Power[^.]*? by (\d+)")   # crosses "within 45 yds" (Trueshot Aura read 0 until 2026-10-17)
 # Buffs whose newest rank is weaker than an older one in the client (70425 BasePoints: Trueshot Aura rank 5 50 vs rank 4 75, Aspect of
 # the Hawk rank 6 55 vs rank 5 90, Hunter's Mark rank 4 71 vs rank 3 98): a player casts the strongest rank known (rank_at).
@@ -65,7 +72,10 @@ HAWK_SWING = Spell("Summon Hawk", "physical", kind="melee", resource="none")   #
 TALENT_SPELLS = {"Summon Hawk": "Summon Hawk", "Intimidation": "Intimidation", "Bestial Wrath": "Bestial Wrath", "Trueshot Aura": "Trueshot Aura",
                  "Scatter Shot": "Scatter Shot", "Sniper Shot": "Sniper Shot", "Counterattack": "Counterattack", "Deterrence": "Deterrence",
                  "Strider Kick": "Strider Kick", "Lacerating Strikes": "Lacerating Strikes"}
-MELEE = {"Raptor Strike", "Mongoose Bite", "Wing Clip", "Counterattack", "Strider Kick"}
+MELEE = {"Raptor Strike", "Mongoose Bite", "Wing Clip", "Counterattack", "Strider Kick", "Lacerate"}
+# The Lacerating Strikes talent's bleed on Mongoose Bite: its own name since 2026-10-18 (it was booked as "Lacerate", the trainable
+# Survival bleed's name, audit 2 #24)
+LS_BLEED = "Lacerating Strikes"
 RANGED = {"Arcane Shot", "Multi-Shot", "Aimed Shot", "Serpent Sting", "Concussive Shot", "Scatter Shot", "Sniper Shot", "Summon Hawk", "Scorpid Sting", "Viper Sting"}
 SHARED_CD = {"Multi-Shot": ("Aimed Shot",), "Aimed Shot": ("Multi-Shot",), "Arcane Shot": ("Summon Hawk",), "Summon Hawk": ("Arcane Shot",),
              "Immolation Trap": ("Explosive Trap",), "Explosive Trap": ("Immolation Trap",)}   # fire traps share their cooldown
@@ -140,6 +150,18 @@ def load_spellbook():
                 if me:
                     per, dur = _num(me.group(1)), float(me.group(2))
                     s.kind, s.channel, s.dot_ticks, s.hot, s.hot_dur, s.target, s.heal_coef = "channel", dur, int(dur), per * dur, dur, "pet", 0.0
+                    s.dmg_min = s.dmg_max = 0.0
+                vm = VOLLEY.search(txt) if name == "Volley" else None
+                if vm:
+                    per, every, dur = _num(vm.group(1)), float(vm.group(3)), float(vm.group(4))
+                    ticks = max(1, int(round(dur / every)))
+                    s.kind, s.channel, s.dot_ticks, s.dot, s.dot_dur = "channel", dur, ticks, per * ticks, dur
+                    s.dmg_min = s.dmg_max = 0.0
+                bl = BLEED.search(txt) if name == "Lacerate" else None
+                if bl:
+                    s.dot, s.dot_dur = _num(bl.group(1)), float(bl.group(2))
+                    s.dot_ticks = max(1, int(round(s.dot_dur / 3.0)))
+                    s.dmg_min = s.dmg_max = 0.0
                 if ra:
                     s.kind, s.rap = "buff", _num(ra.group(1))
                 if ma:
@@ -178,16 +200,16 @@ MECHANICS = {
                                       "Mongoose Bite); the ranged builds keep Aspect of the Hawk up"),
     "Pathfinding": "travel speed only",
     "Improved Revive Pet": "-3s/rank Revive Pet",
-    "Bestial Swiftness": "+30% pet speed: the pet reaches the mob sooner",
+    "Bestial Swiftness": "not modelled (+30% pet movement speed: the engine runs the pet at the mob's speed and has no hook for it)",
     "Unleashed Fury": "+3%/rank pet and hawk damage",
-    "Improved Mend Pet": "-10%/rank Mend Pet mana",
+    "Improved Mend Pet": "-10%/rank Mend Pet mana (the cleanse: no debuffs on the pet here)",
     "Ferocity": "+2%/rank pet and hawk crit",
     "Summon Hawk": ("unlocks Summon Hawk: a dive bomb (the rank's base + 5% of ranged attack power; Ferocity's crit and Unleashed Fury apply), "
                     "then a hawk that swings on arrival and every 2.5 s (ranged haste) for 18 s at 0.35 of the base, no crits; 2 hawks at once, "
                     "a new one replaces the one closest to leaving; shares Arcane Shot's cooldown; the ranged list casts it (the melee list "
                     "leaves it out: it measured a net loss there, its mana)"),
     "Spirit Bond": "hunter and pet regain 1% of health every 10 s (rank 1) / 5 s (rank 2) in combat",
-    "Intimidation": "pet stuns the mob 3s (its next hit crits), every 1 min",
+    "Intimidation": "the pet's next landed attack stuns the mob 3s and has +100% crit chance (a sure crit), every 1 min",
     "Bestial Discipline": "+10%/rank pet focus regen, 25%/rank mana regen while casting",
     "Frenzy": "20%/rank on a pet crit: +30% pet attack speed for 8s",
     "Bestial Wrath": "+50% pet damage for 18s every 2 min (on the pull)",
@@ -220,7 +242,9 @@ MECHANICS = {
                     "(the tuned rules veto the mark: it measured slower per kill even with Expose Prey)"),
     "Lacerating Strikes": "Mongoose Bite adds a bleed of 40% of its damage over 21 s (ticks crit like melee, x2)",
     "Strider Kick": "unlocks Strider Kick (a weapon hit, 8 s cooldown), cast on cooldown by the melee list",
-    "Improved Wing Clip": "6.7%/rank root 5s on Wing Clip",
+    "Improved Wing Clip": ("7/13/20% root 5s on Wing Clip, rank 1 of Wing Clip (level 12, the rank at 12-37) at 0.7 of it (Blizzard's 8 Oct notes: "
+                           "a reduced chance with ranks substantially below your level; the size is our assumption, the downranking rule the "
+                           "healer lab and the raid patch use)"),
     "Deterrence": "+25% dodge and parry for 10 s; the melee rotation presses it below 40% health (5 min cooldown)",
     "Survivalist's Discipline": "-20%/rank Deterrence and trap cooldown (the melee hunter's Immolation Trap)",
     "Resourcefulness": "-30%/rank mana on melee abilities; a melee or ranged ability crit has a 50%/rank chance to let 50% of mana regen continue while casting for 30 s (70425: abilities only)",
@@ -230,7 +254,7 @@ MECHANICS = {
     "Clever Traps": "+15%/rank Immolation and Explosive Trap damage (the melee hunter's Immolation Trap)",
 }
 FIT = {
-    "Unleashed Fury": "scale", "Ferocity": "scale", "Endurance Training": "scale", "Focused Fire": "scale", "Bestial Swiftness": "scale",
+    "Unleashed Fury": "scale", "Ferocity": "scale", "Endurance Training": "scale", "Focused Fire": "scale",
     "Summon Hawk": ("replace", [{"channel": "dmg", "scope": ["all"], "values": [0.10]}]),
     "Spirit Bond": "scale", "Intimidation": "scale", "Bestial Discipline": "scale", "Frenzy": "scale", "Bestial Wrath": "scale", "Deadly Aspects": "scale",
     "Improved Mend Pet": "scale", "Improved Revive Pet": "scale", "Hawk Eye": "scale", "Improved Concussive Shot": "scale", "Lethal Attacks": "scale",
@@ -239,10 +263,12 @@ FIT = {
     "Surefooted": "scale", "Survivalist": "scale", "Lightning Reflexes": "scale", "Savage Strikes": "scale", "Deflection": "scale", "Resourcefulness": "scale",
 }
 SHARE_SOURCE_BY_SPEC = {"melee-dps": {"Melee": "melee", "Melee (off-hand)": "melee_oh", "Raptor Strike": "raptor_strike", "Mongoose Bite": "mongoose_bite", "Counterattack": "counterattack",
-                                      "Strider Kick": "strider_kick", "Lacerate": "lacerate", "Serpent Sting": "serpent", "Cat melee": "pet", "Claw": "pet", "Bite": "pet", "Summon Hawk": "pet"}}
+                                      "Strider Kick": "strider_kick", LS_BLEED: "lacerate", "Lacerate": "lacerate_spell", "Serpent Sting": "serpent", "Cat melee": "pet", "Claw": "pet", "Bite": "pet", "Summon Hawk": "pet"}}
 SHARE_SOURCE = {'Volley': 'volley', "Auto Shot": "auto", "Multi-Shot": "multi", "Arcane Shot": "arcane", "Serpent Sting": "serpent", "Melee": "melee", "Raptor Strike": "melee",
                 "Cat melee": "pet", "Claw": "pet", "Bite": "pet", "Summon Hawk": "hawk", "Aimed Shot": "aimed"}
-NEW_SOURCES = {'volley': {'id': 'volley', 'share': 0.0, 'min_level': 40, 'tags': ['type:spell', 'school:arcane', 'aoe', 'ability:Volley'], 'cast': 6.0, 'min_cast': 6.0}, "hawk": {"id": "hawk", "share": 0.0, "min_level": 25, "tags": ["pet", "withpet", "ability:Summon Hawk", "school:physical"], "cooldown": 6},
+NEW_SOURCES = {'lacerate_spell': {'id': 'lacerate_spell', 'share': 0.0, 'min_level': 30, 'tags': ['type:melee', 'school:physical', 'withpet', 'dot', 'ability:Lacerate'],
+                                    'can_crit': False, 'cost': 95, 'note': 'The trainable Survival bleed (fight lab, 2026-10-18).'},
+               'volley': {'id': 'volley', 'share': 0.0, 'min_level': 40, 'tags': ['type:spell', 'school:arcane', 'aoe', 'ability:Volley'], 'cast': 6.0, 'min_cast': 6.0}, "hawk": {"id": "hawk", "share": 0.0, "min_level": 25, "tags": ["pet", "withpet", "ability:Summon Hawk", "school:physical"], "cooldown": 6},
                "aimed": {"id": "aimed", "share": 0.0, "min_level": 20, "tags": ["type:ranged", "yellow", "school:physical", "ability:Aimed Shot", "ability:Shots", "withpet"], "cooldown": 6}}
 KEY_TALENTS = ["Unleashed Fury", "Bestial Wrath", "Ferocity"]
 DESCRIPTION = ("Single-target leveling fights against normal mobs of your level with a cat: the pet runs in and meets the mob halfway, Growls every 5 s and holds it "
@@ -250,7 +276,7 @@ DESCRIPTION = ("Single-target leveling fights against normal mobs of your level 
                "shared cooldown, Auto Shot in between (the bow cannot fire inside 8 yd); Bestial Wrath, Intimidation and Rapid Fire on the pull when ready; Mend Pet when "
                "the pet drops below 35%; Feign Death, Wing Clip and Raptor Strike when a mob reaches you. Between fights: 2 s loot, 6 s travel, Mend Pet below 70% pet "
                "health, water below 35% mana, food below 65% health, a 10 s Revive Pet after a pet death; a death costs 90 s.")
-NOT_MODELLED = "runners, adds, the ranged hunter's traps (the pet holds the mob away from them), kiting (Concussive Shot / Wing Clip and running), Scatter Shot, Disengage, Volley, pet happiness and feeding, gear upgrades within a level bracket."
+NOT_MODELLED = "runners, adds (Volley only in the AoE variant), the ranged hunter's traps (the pet holds the mob away from them), kiting (Concussive Shot / Wing Clip and running), Scatter Shot, Disengage, the pet's movement speed (Bestial Swiftness), pet happiness and feeding, gear upgrades within a level bracket."
 # rebuild.py: which scorer model, hand draft and optimizer build the pipeline calibrates, races and reports for this class
 PIPELINE = {"variants": [{'spec': 'bm-leveling', 'opt': 'opt-bm-leveling-leveling-aoe', 'tag': 'aoe', 'profile': 'leveling-aoe', 'lookahead': 16, 'sets': ['MOBS_PER_PULL=3'], 'levels': '30,40,50,60', 'calibrate_levels': '40,60', 'label': 'AoE grinding, 3 mobs per pull'},
                           {'spec': 'melee-dps', 'opt': 'opt-melee-dps-leveling-st', 'tag': 'melee', 'profile': 'leveling-st', 'lookahead': 16, 'sets': [], 'levels': '20,30,40,50,60',
@@ -260,6 +286,7 @@ PIPELINE = {"variants": [{'spec': 'bm-leveling', 'opt': 'opt-bm-leveling-levelin
             "extra_reports": [{"spec": "mm-raid", "build": "opt-mm-raid-leveling-st", "compare": ["opt-bm-leveling-leveling-st"]},
                               {"spec": "melee-dps", "build": "leveling-melee", "compare": ["opt-bm-leveling-leveling-st", "opt-melee-dps-leveling-st"]}]}
 
+PET_FOCUS_REGEN = 10.0   # focus a second: client PowerType FOCUS RegenCombat 10 (make_pet; 5 until 2026-10-18)
 PET = dict(strength=136, agility=100, stamina=274, intellect=50, spirit=80, dmg=(18.17, 27.66), speed=2.0, armor_per_level=50, hp_mult=0.98, dmg_family=1.10, happiness=1.25)
 
 
@@ -391,7 +418,13 @@ class HunterModule(BaseModule):
     def make_pet(self, level, p=None):
         """The cat. Since 2026-10-08 it inherits from the hunter (`tables.PET_SCALING`: 10% of the higher attack power, the crit chance,
         30% of the armor, 2 health per Stamina) and swings every `tables.HUNTER_PET_SPEED` seconds with the 2.0 s base hit (Forever does not
-        normalize pet damage by attack speed)."""
+        normalize pet damage by attack speed).
+        2026-10-18 (audit 2 #66, #67): focus regenerates 10 a second (client PowerType row FOCUS: RegenPeace 10, RegenCombat 10,
+        raw/2026-10-08-beta-70291/client-tables/PowerType_1.60.1.70291.csv; the raid simulator's sim/core/focus.go the same; the lab had 5),
+        times Bestial Discipline; the pet's crit is the hunter's melee or ranged crit, whichever is higher (Blizzard's 16 Oct notes: "pets
+        were only ever inheriting the player's Melee Critical Strike chance instead of whichever is higher"; no crit of its own, as the raid
+        simulator's pet), plus Ferocity; it inherits the hunter's hit (the raid patch's rule). PET_SCALING 0 keeps the model before 2026-10-08
+        (its own 5% + Agility crit, no inheritance)."""
         f = (level - 1) / 59.0
         stat = {k: 20 + (PET[k] - 20) * f for k in ("strength", "agility", "stamina", "intellect", "spirit")}
         et = 1 + self.tv("Endurance Training", 0) / 100
@@ -401,10 +434,13 @@ class HunterModule(BaseModule):
         pet = Pet(name="Cat", hp_max=hp, hp=hp, armor=(PET["armor_per_level"] * level + k * 0.30 * (p.armor if p is not None else 0.0)) * et,
                   dmg_min=PET["dmg"][0] * PET["speed"] * level / 60.0, dmg_max=PET["dmg"][1] * PET["speed"] * level / 60.0, speed=tables.HUNTER_PET_SPEED,
                   attack_power=max(0.0, 2 * stat["strength"] - 20) + k * 0.10 * own_ap,
-                  crit=0.05 + stat["agility"] * 0.05 / 100 + self.tv("Ferocity", 0) / 100 + k * (p.melee_crit if p is not None else 0.0),
-                  focus=100.0, focus_max=100.0, focus_regen=5.0 * (1 + self.tv("Bestial Discipline", 0) / 100), threat_mult=1.0)
+                  crit=((0.05 + stat["agility"] * 0.05 / 100) if k == 0 else 0.0) + self.tv("Ferocity", 0) / 100
+                  + k * (max(p.melee_crit, p.ranged_crit) if p is not None else 0.0),
+                  focus=100.0, focus_max=100.0, focus_regen=PET_FOCUS_REGEN * (1 + self.tv("Bestial Discipline", 0) / 100), threat_mult=1.0)
+        pet.hit_bonus = k * (p.hit_bonus if p is not None else 0.0)
         pet.dmg_mult = PET["happiness"] * PET["dmg_family"] * (1 + self.tv("Unleashed Fury", 0) / 100) * (1 + self.tv("Focused Fire", 0) / 100)
         self.pet_base_speed = pet.speed
+        self.pet_base_crit = pet.crit
         return pet
 
     def pull_range(self):
@@ -419,8 +455,8 @@ class HunterModule(BaseModule):
             cost *= 1 - self.tv("Efficiency", 0) / 100
         if spell.kind == "melee" or spell.name in TRAPS:   # Resourcefulness: "Trap abilities and melee abilities"
             cost *= 1 - self.tv("Resourcefulness", 0) / 100
-        if spell.name == "Mend Pet":
-            cost *= 1 - self.tv("Improved Mend Pet", 1) / 100
+        if spell.name == "Mend Pet":   # "... cleansing 1 Curse ... and reduces the Mana cost by 10%": index 2 (index 1, the "1", read 1% until 2026-10-18)
+            cost *= 1 - self.tv("Improved Mend Pet", 2) / 100
         return cost
 
     def hit_bonus(self, spell):
@@ -531,6 +567,9 @@ class HunterModule(BaseModule):
             m.stun_until = max(m.stun_until, t + 3.0)
             del p.buffs["Intimidation"]
             fight.note("Intimidation stun")
+            pet.crit = self.pet_base_crit
+        elif not b and pet.crit != self.pet_base_crit:   # Intimidation's crit lasts for one landed attack (or until its 15 s run out)
+            pet.crit = self.pet_base_crit
 
     # ------------------------------------------------------------ engine hooks: events
     def on_fight_start(self, fight):
@@ -542,6 +581,7 @@ class HunterModule(BaseModule):
         pet = p.pet
         if pet is not None:
             pet.speed = self.pet_base_speed
+            pet.crit = self.pet_base_crit
         bw = self.spells.get("Bestial Wrath")
         if bw is not None and p.ready("Bestial Wrath", t) and pet is not None and pet.alive and p.mana >= self.mana_cost(bw):
             p.mana -= self.mana_cost(bw)
@@ -559,6 +599,9 @@ class HunterModule(BaseModule):
             p.mana -= self.mana_cost(im)
             p.buffs["Intimidation"] = {"until": t + 15.0}
             p.cooldowns["Intimidation"] = t + im.cooldown
+            # "its next successful attack ... gains 100% increased critical strike chance": a sure crit (until 2026-10-18 only the stun,
+            # though MECHANICS claimed the crit; audit 2 #24); on_pet_hit restores the pet's crit after the landed attack
+            pet.crit = self.pet_base_crit + 1.0
 
     def dodge_bonus(self, fight):
         return (0.25 if fight.p.buff("Deterrence", fight.t) else 0.0) + self.monkey_dodge   # Aspect of the Monkey: the melee builds below 30
@@ -580,7 +623,7 @@ class HunterModule(BaseModule):
         if self.is_melee() and spell.name == "Mongoose Bite" and amount > 0 and self.rank("Lacerating Strikes"):
             # the bleed's ticks crit like the hunter's melee (beta notes 2026-09-24: "now Lacerating Strikes can land critical hits";
             # x2.0, a physical crit; until 2026-10-17 they never crit)
-            fight.refresh_dot("Lacerate", amount * 0.40, 7, 3.0, crit_chance=p.melee_crit, crit_mult=2.0)
+            fight.refresh_dot(LS_BLEED, amount * 0.40, 7, 3.0, crit_chance=p.melee_crit, crit_mult=2.0)
         if spell.name == "Hunter's Mark":
             p.ranged_ap = self.base_rap + getattr(spell, "rap", 0.0)
             p.buffs["Hunter's Mark"] = {"until": t + 120.0}
@@ -597,11 +640,25 @@ class HunterModule(BaseModule):
             p.buffs["Rapid Recuperation"] = {"until": t + 15.0}
         if spell.name == "Concussive Shot" and self.rank("Improved Concussive Shot") and fight.rng.random() < self.tv("Improved Concussive Shot", 0) / 100:
             m.stun_until = max(m.stun_until, t + 3.0)
-        if spell.name == "Wing Clip" and self.rank("Improved Wing Clip") and fight.rng.random() < self.tv("Improved Wing Clip", 0) / 100:
+        if spell.name == "Wing Clip" and self.rank("Improved Wing Clip") and fight.rng.random() < self.tv("Improved Wing Clip", 0) / 100 * self.low_rank_factor(spell):
             m.root_until = max(m.root_until, t + 5.0)
 
     def is_melee(self):
         return self.spec == "melee-dps"
+
+    def low_rank_factor(self, spell):
+        """Blizzard's 8 Oct notes: "Improved Wing Clip now has ... reduced chance to activate if using ranks substantially below your current
+        level". The size is not published: the downranking rule the healer lab and the raid patch assume (heallab/engine.downrank_multiplier,
+        TBC's): x (last level before the next rank + 6) / your level once that level is 5 below yours, and x (1 - 0.0375 per level below 20)
+        for a rank learned below 20. Wing Clip rank 1 (12, used to 37): 0.7; ranks 2-3 (38, 60): 1.0 in this lab (the top rank is cast)."""
+        ranks = BOOK.get(spell.name, [])
+        nxt = next((r.level for r in ranks if r.level > spell.level), None)
+        m = 1.0
+        if nxt is not None and nxt - 1 + 5 < self.level:
+            m *= (nxt - 1 + 6) / self.level
+        if 0 < spell.level < 20:
+            m *= 1 - (20 - spell.level) * 0.0375
+        return m
 
     def on_parry(self, fight):
         if "Counterattack" in self.spells:
@@ -656,7 +713,7 @@ class HunterModule(BaseModule):
             return s is not None and p.ready(s.name, t) and fight.can_afford(s, self.mana_cost(s))
 
         mark, sting, raptor, mongoose, counter, kick, deter, mend = (sp.get(n) for n in ("Hunter's Mark", "Serpent Sting", "Raptor Strike", "Mongoose Bite", "Counterattack", "Strider Kick", "Deterrence", "Mend Pet"))
-        trap = sp.get("Immolation Trap")
+        trap, lac = sp.get("Immolation Trap"), sp.get("Lacerate")
         hp = m.hp
         if mend and can(mend) and pet is not None and pet.alive and pet.hp < 0.35 * pet.hp_max and m.target == "pet":
             return mend
@@ -678,6 +735,11 @@ class HunterModule(BaseModule):
             return mongoose
         if kick and can(kick):
             return kick
+        # 2026-10-18: Lacerate, the trainable bleed (30-60; never parsed or cast before), kept up while the mob has half its health and you
+        # have 80% of your mana: cast freely it cost the Beast-Survival build 0.2-2.6% per kill at 30-50 (mana; 1,500 fights, seed 3), with
+        # the guard it measured even (24.39 s at 60 either way). The tuned rules may move or veto it.
+        if lac and can(lac) and not fight.dot_active("Lacerate") and hp > 0.5 * m.hp_max and p.mana >= 0.8 * p.mana_max:
+            return lac
         # Immolation Trap under the mob while it has health for the 15 s burn (2026-09-29: traps work in combat; the raid rotation's
         # last line, here before the Raptor Strike queue, which is off the GCD)
         if trap and can(trap) and hp > 0.4 * m.hp_max and not fight.dot_active("Immolation Trap"):
@@ -746,6 +808,7 @@ class HunterModule(BaseModule):
             del p.buffs["Bestial Wrath"]
         if p.pet is not None:
             p.pet.speed = self.pet_base_speed
+            p.pet.crit = self.pet_base_crit
         spent = 0.0
         mend = self.spells.get("Mend Pet")
         pet = p.pet

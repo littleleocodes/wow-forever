@@ -58,7 +58,7 @@
   },
   "Protection": {
    "raid": {
-    "plan": "Most of your threat is Holy damage, and **Righteous Fury** makes it 60% more threat. Keep **Holy Shield** up, judge **Seal of Righteousness** on cooldown and press **Consecration** and **Holy Strike** whenever they are ready; **Templar's Bulwark** and **Lay on Hands** are your big defensive buttons.",
+    "plan": "Most of your threat is Holy damage, and **Righteous Fury** makes it 90% more threat. Keep **Holy Shield** up, judge **Seal of Righteousness** on cooldown and press **Consecration** and **Holy Strike** whenever they are ready; **Templar's Bulwark** and **Lay on Hands** are your big defensive buttons.",
     "why": [
      "Before the pull: **Righteous Fury** (it lasts 30 minutes, and **Improved Righteous Fury** and **Iron Creed** only work while it is up), then **Seal of Righteousness** and **Holy Shield** in the last seconds, so the first hits already meet both.",
      "**Holy Shield** lasts 10 seconds and comes back every 10, so keep it up all fight: 30% more block for 4 blocks, and every block deals Holy damage with 20% extra threat and can trigger **Redoubt** and **Shield Specialization**'s mana. The simulator measured 1.3% more tank value with it at the top of the list.",
@@ -85,7 +85,7 @@
    "leveling": {
     "plan": "Protection levels with the raid tank build behind a shield: **Seal of Fury** turns half of its Holy damage into an absorb, blocks and judgements pay your mana back, and **Judgement**, **Holy Strike** and **Consecration** do the damage, so you rarely stop to eat. The order takes Protection first (levels 10-41) and the Retribution points last (42-60).",
     "why": [
-     "**Seal of Fury** before each pull: at rank 7 it adds 35 Holy damage to every swing, and with a shield each swing also gives you an absorb of half that damage; **Improved Seal of Fury** (level 24) returns 60 mana each time such a shield is used up, and **Shield Specialization** (20-22) 6% of your mana on a block, once every 3 seconds.",
+     "**Seal of Fury** before each pull: at rank 7 it adds 35 Holy damage to every swing, and with a shield each swing also gives you an absorb of half that damage; **Improved Seal of Fury** (level 24) returns 60 mana each time such a shield is used up, and **Shield Specialization** (20-22) 4% of your mana on a block, once every 3 seconds.",
      "Keep **Righteous Fury** up even alone: its threat does nothing solo, but **Improved Righteous Fury** (6% less damage taken at 3 points, levels 28-31) and **Iron Creed** (36-40: **Holy Strike** cuts your damage taken by 10% for 6 seconds) only work while it is on; the fight lab assumes it always up.",
      "**Holy Shield** (level 41) whenever it is down: 30% more block for 10 seconds or 4 blocks, and each block deals Holy damage. In the open leveling search it was the most valuable talent of a Protection leveling build at 60.",
      "**Judgement** and **Holy Strike** whenever ready, with **Swift Judgement** (level 25) right after a **Judgement**: it finishes the cooldown and makes the next one free. **Sanctified Judgement** comes late in this order (52-54) and then returns 60% of your seal's mana cost each time you judge.",
@@ -101,7 +101,7 @@
     "diverge": [
      "A mob that casts spells: **Hammer of Justice** stops the cast.",
      "Two or more mobs: **Consecration** hits them all; the 60% mana rule was set for single mobs, and this rotation was not measured on several.",
-     "Tanking a dungeon on the way: **Seal of Fury**'s judgement taunts for 4 seconds, and **Righteous Fury** makes your Holy damage 60% more threat."
+     "Tanking a dungeon on the way: **Seal of Fury**'s judgement taunts for 4 seconds, and **Righteous Fury** makes your Holy damage 90% more threat."
     ],
     "rotations": {
      "leveling:ret-dps": "d2c387bf1a8d",
@@ -166,7 +166,7 @@
    "leveling": {
     "plan": "Prot-Ret plays like Protection (a one-hander, a shield and **Seal of Fury**) but spends its deeper points on Retribution's crit, **Vengeance** and cheaper Holy spells. Blocks and used-up **Seal of Fury** shields pay for **Consecration**.",
     "why": [
-     "**Seal of Fury** before each pull: 35 Holy damage on every swing at rank 7 and, with a shield, an absorb of half of it. **Improved Seal of Fury** returns 60 mana each time that absorb is used up and **Shield Specialization** 6% of your mana on a block (once every 3 seconds); the open search found **Improved Seal of Fury** worth about 3 seconds per kill at 60.",
+     "**Seal of Fury** before each pull: 35 Holy damage on every swing at rank 7 and, with a shield, an absorb of half of it. **Improved Seal of Fury** returns 60 mana each time that absorb is used up and **Shield Specialization** 4% of your mana on a block (once every 3 seconds); the open search found **Improved Seal of Fury** worth about 3 seconds per kill at 60.",
      "**Judgement** and **Holy Strike** whenever ready, with **Swift Judgement** right after a **Judgement** for a free second one. **Sanctified Judgement** returns 60% of your seal's mana cost each time you judge, and **Sacred Arbiter** adds 20% to **Holy Strike**.",
      "**Consecration** while your mana is above 60%: **Holy Conduit** makes it 40% cheaper, and the open search found **Holy Conduit** the most valuable talent of this build at 60 (about 3.3 seconds per kill).",
      "**Hammer of Wrath** finishes mobs below 20% health from level 44; 1 point in **Instrument of Law** cuts its cast by half a second.",

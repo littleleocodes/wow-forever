@@ -22,7 +22,7 @@ import pathlib
 import re
 
 from engine import parse_interrupt, BaseModule, Player, Spell, Weapon
-from tables import (GCD, MELEE_RANGE, WEAPON_SPEED, class_attack_power, class_base_health, class_base_mana, class_base_stats, class_dodge,
+from tables import (GCD, MELEE_MISS, MELEE_RANGE, WEAPON_SPEED, class_attack_power, class_base_health, class_base_mana, class_base_stats, class_dodge,
                     class_health_regen_tick, class_mana_regen_tick, class_melee_crit, class_spell_crit, gear_stats, weapon_dps)
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
@@ -30,6 +30,7 @@ SPELLBOOK = json.load(open(ROOT / "_reference/data/forever-spells/paladin.json",
 TREE = json.load(open(ROOT / "_reference/data/forever-talents/paladin.json", encoding="utf-8"))
 
 NUM = re.compile(r"(\d+(?:\.\d+)?)")
+COST = re.compile(r"(\d[\d,]*(?:\.\d+)?)")   # "1,340 Mana": NUM stopped at the comma and read Light's Vigil rank 3 as 1 mana (audit 2026-10-18 #30)
 DMG = re.compile(r"(\d[\d,]*) to (\d[\d,]*) (?:as )?Holy damage")
 HEAL = re.compile(r"[Hh]eals a friendly target for (\d[\d,]*) to (\d[\d,]*)")
 WEAPON_PCT = re.compile(r"(\d+)% weapon damage")
@@ -89,7 +90,7 @@ def load_spellbook():
             for r in sp["ranks"]:
                 txt = (r.get("text") or "").replace("\n", " ")
                 cost_txt = r.get("cost") or ""
-                cost = _num(NUM.search(cost_txt).group(1)) if NUM.search(cost_txt) else 0.0
+                cost = _num(COST.search(cost_txt).group(1)) if COST.search(cost_txt) else 0.0
                 cast_txt = (r.get("cast") or "").lower()
                 cast = 0.0 if "instant" in cast_txt or not cast_txt else _seconds(cast_txt)
                 coefs = {k: float(v) / 100 for v, k in COEF.findall(r.get("coefficient") or "")}
@@ -154,8 +155,10 @@ def load_spellbook():
 
 BOOK = load_spellbook()
 
-FURY_HIT = re.compile(r"deal an additional (\d[\d,]*) Holy damage")
-FURY_JUDGE = re.compile(r"Seal's energy causes (\d[\d,]*) to (\d[\d,]*) Holy damage")
+# 70425 words rank 2's hit "inflict" and every judgement "inflicts" (audit 2026-10-18 #27: until then rank 2 did nothing and no rank's
+# judgement had base damage)
+FURY_HIT = re.compile(r"(?:deal|inflict) an additional (\d[\d,]*) Holy damage")
+FURY_JUDGE = re.compile(r"Seal's energy (?:causes|inflicts) (\d[\d,]*) to (\d[\d,]*) Holy damage")
 FURY_COEF = re.compile(r"(\d+(?:\.\d+)?)% and (\d+(?:\.\d+)?)% of spell power")
 HSHIELD = re.compile(r"deals (\d[\d,]*) Holy damage for each attack blocked")
 SHOCK_HEAL = re.compile(r"or (\d[\d,]*) to (\d[\d,]*) healing")
@@ -211,7 +214,7 @@ MECHANICS = {
     "Divine Intellect": "+2%/rank Intellect",
     "Healing Light": "+4%/rank Holy Light / Flash of Light",
     "Spiritual Focus": "35%/rank chance to ignore pushback on heals",
-    "Improved Seals": "+5%/rank seal and judgement damage",
+    "Improved Seals": "+5%/rank seal and judgement damage (seal procs and judgements roll on the melee table: miss, crit x2.0)",
     "Unyielding Faith": "PvP",
     "Voice of Truth": "casters only",
     "Reverence": "10%/rank mana regen while casting",
@@ -219,9 +222,9 @@ MECHANICS = {
     "Infusion of Light": "healers",
     "Illumination": "20%/rank: crit heals refund 50% of base mana",
     "Divine Favor": "not used",
-    "Divine Precision": "+6%/rank Holy spell hit (judgements, Consecration)",
+    "Divine Precision": "+6%/rank hit with Consecration, Exorcism, Holy Shock, Holy Strike, Holy Wrath (the client's class mask; not judgements)",
     "Holy Shock": "not used (Retribution)",
-    "Consecrated Ground": "+5%/rank Holy damage vs the first mobs in Consecration",
+    "Consecrated Ground": "+5%/rank to every Holy spell against a mob standing in your Consecration (Consecration's own ticks after the first)",
     "Holy Power": "+3%/rank Holy Strike crit, +1%/rank spell crit",
     "Toughness": "+2%/rank armor",
     "Redoubt": "no shield",
@@ -236,21 +239,21 @@ MECHANICS = {
     "One-Handed Weapon Specialization": "two-hander build",
     "Improved Hammer of Justice": "-5 s/rank Hammer of Justice cooldown",
     "Templar's Bulwark": "not used",
-    "Reckoning": "20%/rank chance after a crit taken to store an extra attack (up to 4); the next auto attack releases them all (client 70425)",
+    "Reckoning": "20%/rank chance after a crit taken to store an extra attack (up to 4, one per 1.5 s); the next auto attack releases them all (client 70425)",
     "Iron Creed": "threat only",
     "Holy Shield": "no shield",
     "Deflection": "+1%/rank parry",
     "Benediction": "-2%/rank mana on instants",
     "Improved Judgement": "-1 s/rank Judgement cooldown",
     "Holy Conduit": "-20%/rank Consecration / Hammer of Wrath mana",
-    "Conviction": "+1%/rank melee crit",
-    "Vindication": "10%/rank per melee hit: +3% attack power for 30 s (the mob's attack power loss is not modelled)",
+    "Conviction": "+1%/rank melee crit (white, Holy Strike, seal procs and judgements: all on the melee table)",
+    "Vindication": "every landed melee attack: +1%/rank attack power for 30 s (client and fork: 100% chance; the mob's attack power loss is not modelled)",
     "Sanctified Judgement": "33%/rank chance per Judgement to refund 20%/rank of the seal's mana",
-    "Seal of Command": "unlocks Seal of Command (7 procs per minute: +70% weapon damage as Holy; judgement 169..187, doubled on a stunned mob)",
+    "Seal of Command": "unlocks Seal of Command (7 procs per minute: 70% of weapon damage + 0.29 x spell power as Holy, hit and crit on the melee table; judgement 169..187, doubled on a stunned mob)",
     "Pursuit of Justice": "travel speed only",
     "Eye for an Eye": "10%/rank of crits taken dealt back",
     "Sacred Arbiter": "+20% Holy Strike",
-    "Two-Handed Weapon Specialization": "+2%/rank two-hander damage",
+    "Two-Handed Weapon Specialization": "+2%/rank Physical damage with a two-hander (white swings, Reckoning; not Holy Strike, seals or judgements)",
     "Vengeance": "+1%/rank Physical and Holy damage per stack after any non-periodic crit (melee, seal, judgement, spell; 3 stacks, 30 s)",
     "Repentance": "Humanoids only: not used",
     "Champion of the Light": "+10%/rank of Intellect as spell damage (seals, judgements, Consecration, Holy Shock); not healing (notes, 1 Oct)",
@@ -275,7 +278,7 @@ DESCRIPTION = ("Single-target leveling fights against normal mobs of your level 
                "Consecration while mana allows, Hammer of Justice into a doubled Seal of Command judgement or when hurt, Hammer of Wrath under 20%; Divine "
                "Protection and a Holy Light when low, Lay on Hands in an emergency. Between fights: 2 s loot, 6 s travel, Holy Light or Flash of Light back to "
                "80% health, water below 35% mana; a death costs 90 s.")
-NOT_MODELLED = "runners, adds, Exorcism / Holy Wrath (Undead and Demons), Repentance, Seal of Wisdom / Seal of Light twisting, Blessing of Kings, shields, gear upgrades within a level bracket."
+NOT_MODELLED = "runners, adds, Exorcism / Holy Wrath (Undead and Demons), Repentance, Retribution Aura (Devotion Aura is assumed up), Seal of Wisdom / Seal of Light twisting, Blessing of Kings, shields, gear upgrades within a level bracket."
 # rebuild.py: which scorer model, hand draft and optimizer build the pipeline calibrates, races and reports for this class
 PIPELINE = {"variants": [{'spec': 'ret-dps', 'opt': 'opt-ret-dps-leveling-aoe', 'tag': 'aoe', 'profile': 'leveling-aoe', 'lookahead': 16, 'sets': ['MOBS_PER_PULL=3'], 'levels': '30,40,50,60', 'calibrate_levels': '40,60', 'label': 'AoE grinding, 3 mobs per pull'}], "spec": "ret-dps", "hand": "leveling-retribution", "opt": "opt-ret-dps-leveling-st", "tag": "ret", "lookahead": 16,
             "levels": "20,30,40,50,60", "calibrate_levels": "30,60"}
@@ -292,6 +295,16 @@ BASE_BLOCK = 0.05              # player base block chance with a shield (Classic
 DEFENSE_PER_POINT = 0.0004     # +0.04% dodge, parry and block per Defense point (Classic rule; Anticipation)
 HOLY_SHIELD_CHARGES = 4        # rank 1 tooltip says 4 charges; ranks 2-3 do not repeat it (assumed unchanged)
 SOF_SHIELD_TIME = 10.0         # Seal of Fury's absorb: duration not in the tooltip (assumed 10 s, refreshed, not stacked)
+# Seal of Command's proc: (weapon damage + 0.29 x spell power) x the weapon percent (the client's coefficient on the weapon-percent effect of
+# 20424, as the ElliotWood/Forever simulator reads it: sim/paladin/seal_of_command.go); the lab had no spell power on it until 2026-10-18
+SOC_PROC_COEF = 0.29
+# Reckoning: one 1.5 s proc cooldown shared by the block and the crit trigger (the client's ICD on 20177, the fork's reading; the tooltip
+# names it for blocks only)
+RECKONING_ICD = 1.5
+# Consecrated Ground: Consecration marks the mobs each tick hits and every Holy spell does more to a marked mob; Consecration's own first
+# tick lands before the mark, so its ticks get 7 of 8 (audit 2026-10-18 #16: the lab boosted Consecration alone)
+CONSEC_MARKED_TICKS = 7.0 / 8.0
+DIVINE_PRECISION_SPELLS = ("Consecration", "Exorcism", "Holy Shock", "Holy Strike", "Holy Wrath", "Light's Vigil")
 MECHANICS_ALT = dict(MECHANICS, **{
     "Holy Shock": "offensive Holy Shock (Forever tooltip: damage to an enemy or healing to an ally; 10 s cooldown), a heal when low",
     "Holy Power": "+3%/rank Holy Shock and Holy Strike crit, +1%/rank other spells",
@@ -301,19 +314,19 @@ MECHANICS_ALT = dict(MECHANICS, **{
     "Spiritual Focus": "35%/rank chance to ignore pushback on Holy Light / Flash of Light",
     "Light's Vigil": "not used (1,340 mana at 60 for one free Holy Shock and 75% back: net mana loss for a solo leveler)",
     "Toughness": "+2%/rank armor from items (shield included)",
-    "Redoubt": "10% of melee hits taken: +4%/rank block for 10 s or 5 blocks",
+    "Redoubt": "2%/rank of melee hits taken: +4%/rank block for 10 s or 5 blocks",
     "Anticipation": "+4 Defense/rank: +0.04% dodge, parry and block per point (mob hit and crit chance unchanged)",
     "Improved Seal of Fury": "60 mana when a Seal of Fury shield is fully absorbed",
     "Improved Righteous Fury": "-2%/rank damage taken (Righteous Fury assumed always up)",
     "Shield Specialization": "+10%/rank block value; blocks restore 4% max mana at 33%/rank chance, once per 3 s",
     "Swift Judgement": "off the global cooldown: resets Judgement and makes it free when it has 3+ s left",
-    "One-Handed Weapon Specialization": "+3/6/10% one-hander damage (white, Holy Strike, seals, Judgement)",
+    "One-Handed Weapon Specialization": "+3/6/10% Physical damage with a one-hander (white swings, Reckoning)",
     "Templar's Bulwark": "emergency absorb of 100% max health for 8 s (Forbearance 1 min)",
-    "Reckoning": "8%/rank after a block (at most once per 1.5 s) and 20%/rank after a crit taken: an extra attack stored (up to 4), all released "
-                 "on the next auto attack (client 70425, notes of 16 Oct)",
+    "Reckoning": "8%/rank after a block and 20%/rank after a crit taken (one 1.5 s proc cooldown for both): an extra attack stored (up to 4), "
+                 "all released on the next auto attack (client 70425, notes of 16 Oct)",
     "Iron Creed": "Holy Strike: -2%/rank damage taken for 6 s (Righteous Fury assumed up)",
     "Holy Shield": "+30% block (the 70291 tooltip) for 10 s or 4 blocks, Holy damage per block, recast when down",
-    "Two-Handed Weapon Specialization": "+2%/rank two-hander damage (weapon, seals, Judgement)",
+    "Two-Handed Weapon Specialization": "+2%/rank Physical damage with a two-hander (white swings, Reckoning)",
 })
 
 
@@ -438,9 +451,108 @@ class PaladinModule(BaseModule):
         return c
 
     def hit_bonus(self, spell):
-        if spell.kind == "spell" and spell.school == "holy":
+        # Divine Precision is a miss-chance modifier on a class mask (the client's 1310904, the fork's SpellMaskDivinePrecision): Consecration,
+        # Exorcism, Holy Shock, Holy Strike, Holy Wrath, Light's Vigil; not Hammer of Wrath, the seals or the judgements (until 2026-10-18 the
+        # lab gave it to every Holy "spell" kind)
+        if spell.name in DIVINE_PRECISION_SPELLS:
             return self.tv("Divine Precision", 0) / 100
         return 0.0
+
+    # ------------------------------------------------------------ shared mechanics (both paths)
+    def _weapon_spec(self, kind):
+        """Two- or One-Handed Weapon Specialization: the client rows (20111 / 20196, A_MOD_DAMAGE_PERCENT_DONE, Misc 1) are Physical
+        damage only: white swings and Reckoning's extra attacks, not Holy Strike (a Holy-school strike), seals, judgements or spells (audit
+        2026-10-18 #5)."""
+        return self.tv("Two-Handed Weapon Specialization" if kind == "2h" else "One-Handed Weapon Specialization", 0) / 100
+
+    def _holy_marks(self, spell):
+        """Consecrated Ground: +X% to every Holy spell against a mob standing in your Consecration (its dot ticking on the mob)."""
+        if not self.rank("Consecrated Ground") or spell.school != "holy":
+            return 1.0
+        bonus = self.tv("Consecrated Ground", 0) / 100
+        if spell.name == "Consecration":
+            return 1 + bonus * CONSEC_MARKED_TICKS
+        f = self._fight
+        return 1 + bonus if (f is not None and f.dot_active("Consecration")) else 1.0
+
+    def _vind_gain(self, fight):
+        """Vindication's attack power gain while its buff is up: +1/2/3% of attack power (read from the buff, never written into the player)."""
+        p = fight.p
+        if not self.rank("Vindication") or not p.buff("Vindication", fight.t):
+            return 0.0
+        return p.attack_power * self.tv("Vindication", 1) / 100
+
+    def _vind_factor(self, spell):
+        """Vindication on the attacks the engine resolves: the expected weapon damage with the extra attack power over the one without
+        (white swings and Reckoning: all weapon damage; Holy Strike: its 50% weapon part next to its flat Holy part)."""
+        f = self._fight
+        if f is None or spell.name not in ("Melee", "Reckoning", "Holy Strike"):
+            return 1.0
+        gain = self._vind_gain(f)
+        if gain <= 0:
+            return 1.0
+        w = f.p.mh
+        weapon = (w.dmg_min + w.dmg_max) / 2 + (f.p.attack_power / 14.0 + w.dps_bonus) * w.speed
+        extra = gain / 14.0 * w.speed
+        if spell.name == "Holy Strike":
+            pct = spell.weapon_pct or 0.5
+            flat = (spell.dmg_min + spell.dmg_max) / 2
+            return 1 + pct * extra / max(1e-9, flat + pct * weapon)
+        return 1 + extra / max(1e-9, weapon)
+
+    def _on_landed_melee(self, fight, spell):
+        """Vindication (client and fork: every damaging melee attack that lands procs it, white or special; 30 s)."""
+        if self.rank("Vindication") and spell.kind == "melee":
+            fight.p.buffs["Vindication"] = {"until": fight.t + 30.0}
+
+    def _melee_roll(self, fight, can_miss=True):
+        """The seals' procs and the judgements roll on the melee table (the fork: Seal of Righteousness and Seal of Fury hits "crit only",
+        Seal of Command's proc hit and crit, the judgements hit and crit with no dodge, parry or block); crit x2.0 like a melee hit, at the
+        melee crit chance plus Holy Power's 1%/rank on other Holy spells (the client's mask holds these procs and judgements). Until
+        2026-10-18 the lab rolled judgements on the spell table (never missing, crit x1.5) and seal hits never crit (audit #22)."""
+        p = fight.p
+        r = fight.rng.random()
+        if can_miss:
+            miss = max(0.0, MELEE_MISS - p.hit_bonus)
+            if r < miss:
+                return "miss"
+            r -= miss
+        return "crit" if r < p.melee_crit + self.tv("Holy Power", 1) / 100 else "hit"
+
+    def _seal_hit(self, fight, seal, dmg, can_miss=False):
+        """Deal a seal's proc on the melee table; a crit doubles it and stacks Vengeance."""
+        out = self._melee_roll(fight, can_miss)
+        if out == "miss":
+            fight.note(f"{seal.name} proc MISS")
+            return
+        crit = out == "crit"
+        if crit:
+            dmg *= 2.0
+            self._vengeance(fight)
+        fight.deal(Spell(seal.name, "holy"), dmg, crit)
+
+    def _judge(self, fight, spell, lo, hi, coef):
+        """A judgement's damage on the melee table (miss and crit, crit x2.0)."""
+        p, m = fight.p, fight.m
+        out = self._melee_roll(fight, True)
+        if out == "miss":
+            fight.note("Judgement MISS")
+            return
+        dmg = (fight.rng.uniform(lo, hi) + coef * p.spell_power) * self.damage_multiplier(spell, False)
+        jcrit = out == "crit"
+        if jcrit:
+            dmg *= 2.0
+            self._vengeance(fight)
+        fight.deal(spell, dmg, jcrit)
+        fight.note(f"Judgement{' CRIT' if jcrit else ''} {dmg:.0f} -> mob {max(0, m.hp):.0f}")
+
+    def _soc_proc(self, fight, seal):
+        """Seal of Command's proc: 7 per minute, (weapon damage + 0.29 x spell power) x 70%, hit and crit on the melee table."""
+        p = fight.p
+        if fight.rng.random() < 7.0 * p.mh.speed / 60.0:
+            wd = fight.weapon_damage(p.mh) + self._vind_gain(fight) / 14.0 * p.mh.speed
+            dmg = seal.seal_pct * (wd + SOC_PROC_COEF * p.spell_power) * self.damage_multiplier(seal, False)
+            self._seal_hit(fight, seal, dmg, can_miss=True)
 
     def crit_bonus(self, spell, frozen):
         if self.path != "ret":
@@ -452,7 +564,7 @@ class PaladinModule(BaseModule):
     def damage_multiplier(self, spell, frozen):
         if self.path != "ret":
             return self._damage_multiplier_alt(spell)
-        m = 1 + self.tv("Two-Handed Weapon Specialization", 0) / 100
+        m = (1 + self._weapon_spec("2h")) if spell.school == "physical" else 1.0
         f = self._fight
         if f:
             v = f.p.buff("Vengeance", f.t)
@@ -462,9 +574,7 @@ class PaladinModule(BaseModule):
             m *= 1 + self.tv("Improved Seals", 0) / 100
         if spell.name == "Holy Strike" and self.rank("Sacred Arbiter"):
             m *= 1.20
-        if spell.name == "Consecration":
-            m *= 1 + self.tv("Consecrated Ground", 0) / 100
-        return m
+        return m * self._holy_marks(spell) * self._vind_factor(spell)
 
     def heal_multiplier(self, spell):
         """Healing Light, and Champion of the Light taken back out: the player's spell power carries it for damage, but it "did not" increase
@@ -486,9 +596,10 @@ class PaladinModule(BaseModule):
             p.buffs["Vengeance"] = {"until": t + 30.0, "stacks": stacks}
 
     def _reckoning_gain(self, fight, chance):
-        """Reckoning (70425): a stored extra attack, up to 4."""
-        if self.rank("Reckoning") and fight.rng.random() < chance:
+        """Reckoning (70425): a stored extra attack, up to 4, at most one per RECKONING_ICD from either trigger."""
+        if self.rank("Reckoning") and fight.t >= getattr(self, "_reck_block_ready", -1.0) and fight.rng.random() < chance:
             self._reck = min(4, getattr(self, "_reck", 0) + 1)
+            self._reck_block_ready = fight.t + RECKONING_ICD
             return True
         return False
 
@@ -559,22 +670,11 @@ class PaladinModule(BaseModule):
         seal = self.spells.get(sealb["name"]) if sealb else None
         if seal is not None and spell.name == "Melee":
             if getattr(seal, "seal_pct", 0.0):
-                if fight.rng.random() < 7.0 * p.mh.speed / 60.0:   # 7 procs per minute
-                    dmg = seal.seal_pct * fight.weapon_damage(p.mh) * self.damage_multiplier(seal, False)
-                    crit = fight.rng.random() < p.melee_crit
-                    if crit:
-                        dmg *= 2.0
-                        self._vengeance(fight)
-                    fight.deal(Spell(seal.name, "holy"), dmg, crit)
-                    fight.note(f"{seal.name} proc{' CRIT' if crit else ''} {dmg:.0f} -> mob {max(0, m.hp):.0f}")
+                self._soc_proc(fight, seal)
             elif getattr(seal, "seal_max", 0.0):   # Seal of Righteousness: the client's per-hit rows (SOR_PER_HIT; the Retribution path holds a two-hander)
                 base, coef = sor_hit(seal, self.level, p.mh.speed, True)
-                dmg = (base + coef * p.spell_power) * self.damage_multiplier(seal, False)
-                fight.deal(Spell(seal.name, "holy"), dmg, False)
-        if spell.name == "Melee" and self.rank("Vindication") and fight.rng.random() < 0.10 * self.rank("Vindication"):
-            if not p.buff("Vindication", t):
-                p.attack_power = self.base_ap * 1.03
-            p.buffs["Vindication"] = {"until": t + 30.0}
+                self._seal_hit(fight, seal, (base + coef * p.spell_power) * self.damage_multiplier(seal, False))
+        self._on_landed_melee(fight, spell)
         if outcome == "crit":
             self._vengeance(fight)
 
@@ -594,13 +694,7 @@ class PaladinModule(BaseModule):
                 lo, hi = seal.judge
                 if m.stunned(t) and getattr(seal, "judge_stunned", None):
                     lo, hi = seal.judge_stunned
-                dmg = (fight.rng.uniform(lo, hi) + seal.coef * p.spell_power) * self.damage_multiplier(spell, False)
-                jcrit = fight.rng.random() < p.spell_crit
-                if jcrit:
-                    dmg *= 1.5
-                    self._vengeance(fight)
-                fight.deal(spell, dmg, jcrit)
-                fight.note(f"Judgement ({seal.name}){' CRIT' if jcrit else ''} {dmg:.0f} -> mob {max(0, m.hp):.0f}")
+                self._judge(fight, spell, lo, hi, seal.coef)
                 # Sanctified Judgement (70425): 33/66/100% chance to return 20/40/60% of the judged seal's mana (60% at every rank until 2026-10-17)
                 if self.rank("Sanctified Judgement") and fight.rng.random() < self.tv("Sanctified Judgement", 0) / 100:
                     p.mana = min(p.mana_max, p.mana + self.tv("Sanctified Judgement", 1) / 100 * self.mana_cost(seal))
@@ -764,7 +858,10 @@ class PaladinModule(BaseModule):
 
     def _make_player_alt(self, level):
         base = class_base_stats("paladin", level)
-        g = gear_stats(level, self.gear, "paladin")
+        # caster gear row for a Holy-path build that casts Holy Shock (audit 2026-10-18 row 65); the Holy rotation's page builds without it
+        # (holy-leveling, shockadin-open-leveling on 2026-10-18) melee and judge for 100% of their damage: the melee row is 4-5% faster at 60
+        caster = self.path == "holy" and "Holy Shock" in self.spells
+        g = gear_stats(level, self.gear, "paladin-caster" if caster else "paladin")
         kings = 1.10 if self.blessing == "kings" and self.book.get("Blessing of Kings") is not None else 1.0
         sh_armor = _interp(SHIELD_ARMOR, level) if self.shield else 0.0
         sh_sta = _interp(SHIELD_STAMINA, level) if self.shield else 0.0
@@ -817,10 +914,7 @@ class PaladinModule(BaseModule):
         return b
 
     def _damage_multiplier_alt(self, spell):
-        m = 1.0
-        if spell.name in ("Melee", "Holy Strike", "Reckoning", "Judgement") or spell.name in SEALS:
-            spec = "Two-Handed Weapon Specialization" if self.weapon_kind == "2h" else "One-Handed Weapon Specialization"
-            m *= 1 + self.tv(spec, 0) / 100
+        m = (1 + self._weapon_spec(self.weapon_kind)) if spell.school == "physical" else 1.0
         f = self._fight
         if f:
             v = f.p.buff("Vengeance", f.t)
@@ -830,9 +924,7 @@ class PaladinModule(BaseModule):
             m *= 1 + self.tv("Improved Seals", 0) / 100
         if spell.name == "Holy Strike" and self.rank("Sacred Arbiter"):
             m *= 1.20
-        if spell.name == "Consecration":
-            m *= 1 + self.tv("Consecrated Ground", 0) / 100
-        return m
+        return m * self._holy_marks(spell) * self._vind_factor(spell)
 
     # ---------------------------------------------------------------- shield block (engine hooks when the engine has them)
     def block_bonus(self, fight):
@@ -866,8 +958,7 @@ class PaladinModule(BaseModule):
         if self.rank("Shield Specialization") and t >= self._ss_ready and fight.rng.random() < self.tv("Shield Specialization", 1) / 100:
             p.mana = min(p.mana_max, p.mana + self.tv("Shield Specialization", 2) / 100 * p.mana_max)
             self._ss_ready = t + 3.0
-        if t >= getattr(self, "_reck_block_ready", -1.0) and self._reckoning_gain(fight, self.tv("Reckoning", 0) / 100):
-            self._reck_block_ready = t + 1.5   # "Cannot occur from Blocks more than once every 1.5 sec"
+        self._reckoning_gain(fight, self.tv("Reckoning", 0) / 100)
 
     def _split_damage_taken_alt(self, fight, dmg):
         p, t = fight.p, fight.t
@@ -880,7 +971,8 @@ class PaladinModule(BaseModule):
                 dmg -= blocked
                 fight.note(f"blocked {blocked:.0f}")
                 self.on_block(fight)
-            if self.rank("Redoubt") and fight.rng.random() < 0.10:
+            # 2%/rank (the client's talent curve; the fork reads it: talents_protection.go); the tooltip's 10% is rank 5's on every rank
+            if self.rank("Redoubt") and fight.rng.random() < 0.02 * self.rank("Redoubt"):
                 p.buffs["Redoubt"] = {"until": t + 10.0, "charges": 5}
         if self.rf:
             dmg *= 1 - self.tv("Improved Righteous Fury", 0) / 100
@@ -919,7 +1011,12 @@ class PaladinModule(BaseModule):
         if seal is not None and spell.name == "Melee":
             if getattr(seal, "fury_hit", 0.0):
                 dmg = (seal.fury_hit + seal.fury_coefs[1] * p.spell_power) * self.damage_multiplier(seal, False)
-                fight.deal(Spell(seal.name, "holy"), dmg, False)
+                if self._melee_roll(fight, False) == "crit":   # crit only on the melee table (the fork's seal_of_fury.go)
+                    dmg *= 2.0
+                    self._vengeance(fight)
+                    fight.deal(Spell(seal.name, "holy"), dmg, True)
+                else:
+                    fight.deal(Spell(seal.name, "holy"), dmg, False)
                 if self.shield:
                     shield = 0.5 * dmg
                     if t < self._bulwark_until:
@@ -928,22 +1025,12 @@ class PaladinModule(BaseModule):
                         p.absorb, p.absorb_until = shield, t + SOF_SHIELD_TIME
                         self._sof_live = True
             elif getattr(seal, "seal_pct", 0.0):
-                if fight.rng.random() < 7.0 * p.mh.speed / 60.0:
-                    dmg = seal.seal_pct * fight.weapon_damage(p.mh) * self.damage_multiplier(seal, False)
-                    crit = fight.rng.random() < p.melee_crit
-                    if crit:
-                        dmg *= 2.0
-                        self._vengeance(fight)
-                    fight.deal(Spell(seal.name, "holy"), dmg, crit)
+                self._soc_proc(fight, seal)
             elif getattr(seal, "seal_max", 0.0):
                 # "slower weapons cause more Holy damage per swing": the client's per-hit rows by swing speed and hand (SOR_PER_HIT)
                 base, coef = sor_hit(seal, self.level, p.mh.speed, self.weapon_kind == "2h")
-                dmg = (base + coef * p.spell_power) * self.damage_multiplier(seal, False)
-                fight.deal(Spell(seal.name, "holy"), dmg, False)
-        if spell.name == "Melee" and self.rank("Vindication") and fight.rng.random() < 0.10 * self.rank("Vindication"):
-            if not p.buff("Vindication", t):
-                p.attack_power = self.base_ap * 1.03
-            p.buffs["Vindication"] = {"until": t + 30.0}
+                self._seal_hit(fight, seal, (base + coef * p.spell_power) * self.damage_multiplier(seal, False))
+        self._on_landed_melee(fight, spell)
         if outcome == "crit":
             self._vengeance(fight)
 
@@ -984,13 +1071,7 @@ class PaladinModule(BaseModule):
                 coef = seal.coef
             else:
                 return True
-            dmg = (fight.rng.uniform(lo, hi) + coef * p.spell_power) * self.damage_multiplier(spell, False)
-            jcrit = fight.rng.random() < p.spell_crit
-            if jcrit:
-                dmg *= 1.5
-                self._vengeance(fight)
-            fight.deal(spell, dmg, jcrit)
-            fight.note(f"Judgement ({seal.name}){' CRIT' if jcrit else ''} {dmg:.0f} -> mob {max(0, m.hp):.0f}")
+            self._judge(fight, spell, lo, hi, coef)
             if self.rank("Sanctified Judgement") and fight.rng.random() < self.tv("Sanctified Judgement", 0) / 100:
                 p.mana = min(p.mana_max, p.mana + self.tv("Sanctified Judgement", 1) / 100 * self.mana_cost(seal))
             return True

@@ -23,6 +23,10 @@ def interp(points, x):
 
 MOB_HP_MULT = 1.0        # sensitivity knob: scales mob health (the beta NPC scans record level and zone but not health)
 MOB_DMG_MULT = 1.0       # sensitivity knob: scales mob melee damage
+# Mob health by level (audit of 2026-10-18, row 71): "classic" = the Classic 1.12 creature database's median (the default); "expected" =
+# the client's ExpectedStat creature health (EXPECTED_CREATURE_HEALTH below, build 70291: 1.35x the Classic median at 20, 1.24x at 30,
+# 1.13x at 60). Whether the Forever server uses it is unknown: a sensitivity row, not the default.
+MOB_HP_SHAPE = "classic"
 
 _MOB_STATS = json.load(open(pathlib.Path(__file__).resolve().parent / "mob_stats.json", encoding="utf-8"))
 _ANCHORS = sorted(((int(L), a) for L, a in _MOB_STATS["anchors"].items()), key=lambda kv: kv[0])
@@ -38,7 +42,11 @@ def mob_health(level):
     """Median health of a normal outdoor mob at the level, from the Classic 1.12 creature database (cmangos classic-db z2815, 2,262
     templates weighted by spawn count: 187 at 10, 466 at 20, 1,002 at 30, 1,844 at 40, 2,672 at 50, 3,878 at 60; `mob_stats.json`).
     Unverified for WoW: Forever (creature stats are server side; the Wowhead Forever tooltips carry level and type only)."""
-    return interp(_HP, level) * MOB_HP_MULT
+    hp = interp(_HP, level) * MOB_HP_MULT
+    if MOB_HP_SHAPE == "expected":
+        L = max(1, min(63, int(round(level))))
+        hp *= EXPECTED_CREATURE_HEALTH[L] / interp(_HP, L)
+    return hp
 
 
 def mob_melee_damage(level):
@@ -120,9 +128,10 @@ def spell_miss(level_diff):
 
 
 def ranged_miss(level_diff):
-    """White ranged/melee miss by level difference: 4% at +0, 5% at +1, 5.5% at +2, 6% at +3 (wowsims Forever attack table)."""
-    table = {0: 0.04, 1: 0.05, 2: 0.055, 3: 0.06, 4: 0.08}
-    return table.get(max(0, min(4, level_diff)), 0.08) if level_diff >= 0 else 0.04
+    """White ranged/melee miss by level difference: 5% at +0, 5.5% at +1, 6% at +2, 8% at +3 (wowsims Forever attack table, as RANGED_MISS;
+    until 2026-10-18 the table was one level off: 4% against a same-level mob, audit row 73)."""
+    table = {0: 0.05, 1: 0.055, 2: 0.06, 3: 0.08}
+    return table.get(max(0, min(3, level_diff)), 0.08) if level_diff >= 0 else 0.05
 
 
 def armor_mitigation(armor, attacker_level):
@@ -141,13 +150,36 @@ def int_per_spell_crit(level):
     return max(8.0, 59.5 * level / 60.0)
 
 
-PARTIAL_RESIST_LOSS = 0.025   # average damage lost to partial resists vs a same-level mob (no resistance gear)
+# Average damage lost to partial resists vs a same-level mob. 0 since 2026-10-18 (audit row 70): the raid simulator's resistance code gives
+# a same-level target without resistance no partial resists (fork spell_resistances.go); the 2.5% had no source. Sensitivity row: 0.025.
+PARTIAL_RESIST_LOSS = 0.0
+# Spell hit cap: 1.0 since 2026-10-18 (audit row 73; the raid patch removed the 99% cap / 1% miss floor, CLAUDE.md audit of 2026-10-09).
+SPELL_HIT_CAP = 1.0
+HOT_CRIT = True               # heal-over-time ticks crit as the expected value (beta notes post 1; the healer lab's rule); False = never (before 2026-10-18)
 SPELL_CRIT_BASE = 0.0091      # mage base spell crit before Intellect (Forever client PlayerExpectedStat: 0.9075%)
 PUSHBACK_FIRST = 0.5          # seconds a melee hit adds to a cast (wowsims Forever: 500 ms per hit, never more than the cast time)
 PUSHBACK_NEXT = 0.5           # same for further hits during the same cast
+# A hit during a channel takes this share of the channel's full duration off its end (Classic and the raid simulator: 25%: Mind Flay 0.75 s,
+# Drain Life 1.25 s, Blizzard 2 s; audit of 2026-10-18 row 70). 0 = the model before: PUSHBACK_FIRST / PUSHBACK_NEXT seconds per hit.
+CHANNEL_PUSHBACK = 0.25
 ROOT_BREAK_CHANCE = 0.20      # chance that a direct damage hit breaks a Frost Nova / Frostbite freeze early
 FEAR_BREAK_CHANCE = 0.20      # chance that a damaging hit breaks a fear (Psychic Scream, Fear, Howl of Terror) early
 GCD = 1.5
+# Per-spell global cooldowns from the client data (audit of 2026-10-18 row 68): rogue abilities, cat-form abilities, totems and Hammer of
+# Wrath are 1.0 s (`spell_gcd.json`, written by spell_gcd.py from the raid simulator's spell store, GCDMs). SPELL_GCD_TABLE = False
+# restores 1.5 s for everything. Spells the store marks off the global cooldown are listed there but not applied (not checked per module).
+SPELL_GCD_TABLE = True
+_SPELL_GCD_FILE = pathlib.Path(__file__).resolve().parent / "spell_gcd.json"
+_SPELL_GCD = json.load(open(_SPELL_GCD_FILE, encoding="utf-8")) if _SPELL_GCD_FILE.exists() else {"gcd": {}}   # missing: 1.5 s for all
+
+
+def spell_gcd(cls, name):
+    """The global cooldown a spell triggers, by class and spell name."""
+    if SPELL_GCD_TABLE:
+        v = _SPELL_GCD["gcd"].get(cls, {}).get(name)
+        if v is not None:
+            return v
+    return GCD
 
 # player attacks vs a same-level mob (ElliotWood/Forever target.go attack table, level-60 attacker, defender at +0):
 MELEE_MISS = 0.05             # yellow and single-weapon white miss
@@ -203,8 +235,11 @@ def rage_from_hit(amount, speed, hand, crit, level, two_hand=False):
     if RAGE_MODEL == "classic":
         f = (7.0 if crit else 3.5) if hand == "mh" else (3.5 if crit else 1.75)
         return 15.0 * amount / (4.0 * rage_conversion(level)) + f * speed / 2.0
-    r = (RAGE_HIT_2H if two_hand else RAGE_HIT_1H) * speed * (0.5 if hand == "oh" else 1.0)
-    return r * RAGE_CRIT_MULT if crit else r
+    base = RAGE_HIT_1H * speed * (0.5 if hand == "oh" else 1.0)
+    r = base * (RAGE_HIT_2H / RAGE_HIT_1H if two_hand else 1.0)
+    # a crit adds the one-handed swing's rage again, before the two-hander's factor (the fork's fit to Magey's beta logs, sim/core/rage.go
+    # CritRageBonus; a two-hander's crit is 7.96 x speed, not 9.0: audit of 2026-10-18 row 18)
+    return r + base * (RAGE_CRIT_MULT - 1.0) if crit else r
 
 
 RAGE_PER_DAMAGE_TAKEN = 2.5   # Classic: rage from damage taken = 2.5 d / c(L) (RAGE_MODEL = "classic")
@@ -243,9 +278,10 @@ CLASS_BASE_60 = {
     "druid": dict(strength=65, agility=60, stamina=70, intellect=100, spirit=110, health=1483, mana=1244, spell_crit=1.8515, phys_crit=0.961, crit_per_agi=0.0500, crit_per_int=0.0167, ap_base=lambda L: -20),
 }
 # attack power per point of Strength / Agility (wowsims Forever class files: warrior/paladin/shaman/druid 2 per Str,
-# rogue/hunter 1 per Str and 1 per Agi, hunter 2 ranged AP per Agi); dodge per Agility (wowsims: 1/20 for most, 1/25 hunter/shaman)
+# rogue/hunter 1 per Str and 1 per Agi, hunter 2 ranged AP per Agi; the druid 0 per Agility out of Cat Form: client ChrClasses
+# AttackPowerPerAgility 0, Cat Form's "plus Agility" is applied by the form, audit of 2026-10-18 row 3); dodge per Agility (wowsims: 1/20 for most, 1/25 hunter/shaman)
 AP_PER_STR = {"warrior": 2, "paladin": 2, "shaman": 2, "druid": 2, "rogue": 1, "hunter": 1, "priest": 0, "mage": 0, "warlock": 0}
-AP_PER_AGI = {"rogue": 1, "hunter": 1, "druid": 1, "warrior": 0, "paladin": 0, "shaman": 0, "priest": 0, "mage": 0, "warlock": 0}
+AP_PER_AGI = {"rogue": 1, "hunter": 1, "druid": 0, "warrior": 0, "paladin": 0, "shaman": 0, "priest": 0, "mage": 0, "warlock": 0}
 RAP_PER_AGI = {"hunter": 2, "warrior": 1, "rogue": 1}
 DODGE_PER_AGI = {"hunter": 1 / 25.0, "shaman": 1 / 25.0, "rogue": 1 / 14.5}   # others 1/20 (Classic: 20 Agility per 1% dodge at 60)
 
@@ -266,16 +302,32 @@ def class_base_health(cls, level):
     return LEVEL1_HEALTH + (CLASS_BASE_60[cls]["health"] - LEVEL1_HEALTH) * (level - 1) / 59.0
 
 
+# Base mana by class and level from the client's PlayerExpectedStat BaseMana (build 70291; audit of 2026-10-18 row 70: the line from 50 at
+# level 1 was 14-57% high at levels 10-20, exact at 60). BASE_MANA_TABLE = False restores the line.
+BASE_MANA_TABLE = True
+
+
+def _base_mana_row(cls, level):
+    if not BASE_MANA_TABLE:
+        return None
+    return _PES_MANA.get(cls, {}).get(str(max(1, min(60, int(round(level))))))
+
+
 def class_base_mana(cls, level):
-    """Mana before Intellect (15 mana per Intellect on top): the client's level-60 value interpolated from 50 at level 1."""
+    """Mana before Intellect (15 mana per Intellect on top): the client's BaseMana at the level (else the level-60 value on a line from 50)."""
     m60 = CLASS_BASE_60[cls]["mana"]
-    return 0.0 if m60 <= 0 else LEVEL1_MANA + (m60 - LEVEL1_MANA) * (level - 1) / 59.0
+    if m60 <= 0:
+        return 0.0
+    row = _base_mana_row(cls, level)
+    return float(row) if row is not None else LEVEL1_MANA + (m60 - LEVEL1_MANA) * (level - 1) / 59.0
 
 
 # Crit per point of Agility and Intellect by class and level, the client's PlayerExpectedStat table (build 70291; 2026-10-09 audit:
 # the level-60 value scaled by 60 / level was 15-30% off at level 20 for most classes, about 10% at 30, close from 40). Levels the
 # table lacks fall back to the scaling. CRIT_PER_STAT_TABLE = False restores the scaling (the model before 2026-10-09).
-_PES = json.load(open(pathlib.Path(__file__).resolve().parent / "player_expected_stat.json", encoding="utf-8"))["classes"]
+_PES_ALL = json.load(open(pathlib.Path(__file__).resolve().parent / "player_expected_stat.json", encoding="utf-8"))
+_PES = _PES_ALL["classes"]
+_PES_MANA = _PES_ALL.get("base_mana", {})
 CRIT_PER_STAT_TABLE = True
 
 
@@ -390,8 +442,9 @@ WAND_SPEED = 1.5
 
 
 def base_mana(level):
-    """Mana before Intellect: 1,213 at 60 for mages in the Forever client (PlayerExpectedStat); 15 mana per Intellect on top."""
-    return 50 + (1213 - 50) * (level - 1) / 59.0
+    """Mana before Intellect for mages: the client's PlayerExpectedStat BaseMana (1,213 at 60); 15 mana per Intellect on top."""
+    row = _base_mana_row("mage", level)
+    return float(row) if row is not None else 50 + (1213 - 50) * (level - 1) / 59.0
 
 
 def base_health(level):
@@ -428,7 +481,7 @@ def class_health_regen_tick(cls, spirit):
 # ------------------------------------------------------------------ downtime: conjured water/food by level (mana or health per second)
 
 def drink_rate(level):
-    """Conjured water, Forever beta tooltips (Wowhead Forever items 5350/2288/2136/3772/8077/8078/8079, read 2026-09-26) at the
+    """Conjured water (mana per second while drinking; unverified against the 70425 items, audit of 2026-10-18 row 73), Forever beta tooltips (Wowhead Forever items 5350/2288/2136/3772/8077/8078/8079, read 2026-09-26) at the
     Conjure Water rank levels 4/10/20/30/40/50/60: 145/18s, 420/21s, 803/24s, 1293/27s, 1915/30s, 2821/30s, 4038/30s mana."""
     return interp([(4, 145 / 18), (10, 420 / 21), (20, 803 / 24), (30, 1293 / 27), (40, 1915 / 30), (50, 2821 / 30), (60, 4038 / 30)], level)
 

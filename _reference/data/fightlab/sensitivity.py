@@ -34,8 +34,13 @@ VARIATIONS = [
     ("no caster mobs", ["MOB_CASTER_SHARE=0"]),
     ("30% caster mobs", ["MOB_CASTER_SHARE=0.3"]),
     ("20% of mobs run at 20% health", ["RUNNER_SHARE=0.2"]),
+    # 2026-10-18 (audit rows 70-71): the old assumptions the lab dropped, and the client's creature health curve
+    ("2.5% partial resists (the assumption before 2026-10-18)", ["PARTIAL_RESIST_LOSS=0.025"]),
+    ("channel pushback 0.5 s per hit (before 2026-10-18)", ["CHANNEL_PUSHBACK=0"]),
+    ("mob health by the client's ExpectedStat (1.35x at 20, 1.13x at 60)", ["MOB_HP_SHAPE=expected"]),
 ]
-DEFAULTS = {k: getattr(tables, k) for k in ("ROOT_BREAK_CHANCE", "MOB_HP_MULT", "MOB_DMG_MULT", "PUSHBACK_FIRST", "PUSHBACK_NEXT", "WEAPON_DPS_MULT", "GEAR_STAT_MULT", "GEAR_TIER", "MOB_CASTER_SHARE", "RUNNER_SHARE")}
+DEFAULTS = {k: getattr(tables, k) for k in ("ROOT_BREAK_CHANCE", "MOB_HP_MULT", "MOB_DMG_MULT", "PUSHBACK_FIRST", "PUSHBACK_NEXT", "WEAPON_DPS_MULT", "GEAR_STAT_MULT", "GEAR_TIER", "MOB_CASTER_SHARE", "RUNNER_SHARE",
+                                         "PARTIAL_RESIST_LOSS", "CHANNEL_PUSHBACK", "MOB_HP_SHAPE")}
 
 
 def reset():

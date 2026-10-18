@@ -84,6 +84,25 @@ LATER_PREFIXES = ("Bloodvine", "Blood Tiger", "Primal Batskin", "Bloodsoul", "Da
 PHASE1_QUEST = {"Rhok'delar, Longbow of the Ancient Keepers", "Lok'delar, Stave of the Ancient Keepers"}
 
 
+def unique_keys(it):
+    """What an item uses up of the set's unique-equipped limits (audit 2026-10-18 row 50): its id when it is unique-equipped, its
+    `limitCategory` when it has one (one item per category: the Signet Rings of the Bronze Dragonflight 21202/21207/234020/234439 share
+    475, Ferocious Watcher's Signet 275981 is 710; the fork's bulk generator allows one per category). Same-id unique checks alone let
+    seven pre-BiS sets wear two rings of one group."""
+    if not it:
+        return set()
+    out = {("id", it["id"])} if it.get("unique") else set()
+    if it.get("limitCategory"):
+        out.add(("cat", it["limitCategory"]))
+    return out
+
+
+def pair_ok(db, pair):
+    """A trinket pair one character can wear: not the same item twice, no shared unique id or limit category."""
+    a, b = (db.get(x) for x in pair)
+    return pair[0] != pair[1] and not (unique_keys(a) & unique_keys(b))
+
+
 def later_craft(it):
     srcs = it.get("sources") or []
     return bool(srcs) and all(s.get("crafted") for s in srcs) and it.get("name", "").startswith(LATER_PREFIXES)
@@ -256,31 +275,42 @@ def optimize(gear, members, repo, db, zones, a):
 
     def greedy(items, w, keep_special):
         new = [dict(x) if x else {} for x in items]
-        used = set()
+        used, ukeys = set(), set()   # ids held, unique ids and limit categories held (unique_keys)
+
+        def hold(iid):
+            used.add(iid)
+            ukeys.update(unique_keys(db.get(iid)))
+
         for slot in range(17):
             curx = new[slot]
             curit = db.get(curx.get("id")) if curx.get("id") else None
             if SLOT_TYPE[slot] == 12 or (curit and curit.get("rangedWeaponType", 0) in (6, 7, 8, 9)):
-                used.add(curx.get("id"))
+                hold(curx.get("id"))
                 continue   # trinkets are raced; relics stay
             if slot == 15 and new[14].get("id") and db.get(new[14]["id"], {}).get("handType") == 4:
                 new[15] = {}
                 continue
-            if keep_special and curit and in_pool(curit, zones) and (curit.get("setName") or curit.get("itemEffects")):
-                used.add(curx.get("id"))
+            if keep_special and curit and in_pool(curit, zones) and (curit.get("setName") or curit.get("itemEffects")) \
+                    and not (unique_keys(curit) & ukeys):
+                hold(curx.get("id"))
                 continue
             if not curit and slot not in (15,):
                 continue
-            cands = [it for it in db.values() if fits(it, slot, curit) and it["id"] not in used]
-            # the current item stays a candidate unless the set already holds it in an earlier slot and it is unique-equipped
-            # (2026-10-06: three hunter melee sets and the warrior's Fury pre-BiS set carried the same unique ring twice)
-            if curit and in_pool(curit, zones) and not (curit["id"] in used and curit.get("unique")):
+            cands = [it for it in db.values() if fits(it, slot, curit) and it["id"] not in used and not (unique_keys(it) & ukeys)]
+            # the current item stays a candidate unless the set already holds it (or its limit category) in an earlier slot and it is
+            # unique-equipped (2026-10-06: the same unique ring twice; 2026-10-18 row 50: two rings of one limit category)
+            if curit and in_pool(curit, zones) and not (unique_keys(curit) & ukeys):
                 cands.append(curit)
-            best = max(cands, key=lambda it: value(it, w, slot)) if cands else curit   # an empty pool keeps the current item
-            if best and best["id"] != curx.get("id"):
+            best = max(cands, key=lambda it: value(it, w, slot)) if cands else None
+            if best is None:   # an empty pool keeps the current item unless the set already uses up its limit
+                best = curit if curit and not (unique_keys(curit) & ukeys) else None
+            if best is None:
+                new[slot] = {}
+                continue
+            if best["id"] != curx.get("id"):
                 ench = curx.get("enchant")
                 new[slot] = {"id": best["id"], **({"enchant": ench} if ench else {})}
-            used.add(new[slot].get("id"))
+            hold(new[slot].get("id"))
         return new
 
     def with_trinkets(items, pair):
@@ -312,9 +342,10 @@ def optimize(gear, members, repo, db, zones, a):
     w = weights(v1)   # the hit caps move with the new gear: weigh again on it
     v1, v2 = greedy(v1, w, False), greedy(v2, w, True)
     # trinkets: every pair of the class's preset trinkets, raced on the main entry with the first variant
-    pairs = [p for p in itertools.combinations(trinkets, 2)][: a.max_pairs]
+    pairs = [p for p in itertools.combinations(trinkets, 2) if pair_ok(db, p)][: a.max_pairs]
     cur_pair = (cur_items[12].get("id"), cur_items[13].get("id"))
-    tsets = {"cur": v1, **{f"t{i}": with_trinkets(v1, p) for i, p in enumerate(pairs)}}
+    # the current pair competes only when one character can wear it (audit 2026-10-18 row 50)
+    tsets = ({"cur": v1} if not all(cur_pair) or pair_ok(db, cur_pair) or not pairs else {}) | {f"t{i}": with_trinkets(v1, p) for i, p in enumerate(pairs)}
     tr = race(tsets, a.iterations, 1)
     tbest = max(tr, key=tr.get)
     pair = cur_pair if tbest == "cur" else pairs[int(tbest[1:])]

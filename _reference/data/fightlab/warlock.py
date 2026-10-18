@@ -79,7 +79,7 @@ def load_spellbook():
         for sp in tab["spells"]:
             for r in sp["ranks"]:
                 txt = (r.get("text") or "").replace("\n", " ")
-                cost_txt = r.get("cost") or ""
+                cost_txt = (r.get("cost") or "").replace(",", "")   # "1,185 Mana" read as 1 before 2026-10-18 (audit #30)
                 cost = _num(NUM.search(cost_txt).group(1)) if NUM.search(cost_txt) else 0.0
                 cast_txt = (r.get("cast") or "").lower()
                 channel = "channel" in cast_txt
@@ -176,7 +176,8 @@ TNUM = talent_numbers()
 
 MECHANICS = {
     "Improved Life Tap": "+10%/rank Life Tap mana",
-    "Suppression": "+1%/rank spell hit",
+    "Suppression": "+1%/rank spell hit; -4%/rank threat you generate (client 70425), as extra pet threat when the demon holds the mob "
+                   "(`pet_threat_bonus`; audit 2026-10-18 #25)",
     "Improved Corruption": "-0.4s/rank Corruption cast (instant at 5/5), +2%/rank damage",
     "Soul Harvest": "not used (Drain Soul kills are not part of the loop)",
     "Improved Drains": "+7/13/20% Drain Life, Drain Soul, Wrack",
@@ -297,6 +298,7 @@ class WarlockModule(BaseModule):
     def __init__(self, talents, level, spec="affliction-leveling", gear="leveling"):
         self.t = {k: v for k, v in talents.items() if v > 0}
         self.level = level
+        self._spirit = 0.0   # set by make_player (Life Tap converts the rank's amount plus Spirit)
         self.spec = spec
         self.gear = gear
         self.book = {name: self.rank_at(name) for name in BOOK}
@@ -354,12 +356,14 @@ class WarlockModule(BaseModule):
                    mana_max=(bm + 15 * intellect) * (1 + self.tv("Fel Vitality", 1) / 100), mana=0.0, base_mana=bm, spirit=spirit,
                    intellect=intellect, spell_power=sp, armor=armor, spell_crit=class_spell_crit("warlock", level, intellect), dodge=0.04, ranged_crit=0.03)
         p.hp, p.mana = p.hp_max, p.mana_max
+        self._spirit = spirit
         p.pet = self.make_pet(level, p, stamina)
         return p
 
     def make_pet(self, level, p=None, stamina=0.0):
         """The demon. Since 2026-10-08 it inherits from the warlock (`tables.PET_SCALING`: 17% of the spell damage as attack power, 10% as
-        spell damage, 35% of the armor, 7.5 health per Stamina, the spell crit chance), as the raid simulator's demon_scaling patch."""
+        spell damage, 35% of the armor, 7.5 health per Stamina, the spell crit chance in place of its own: the patch sets the demon's crit to
+        the warlock's, audit 2026-10-18 #67), as the raid simulator's demon_scaling patch."""
         cfg = PETS[self.pet_name]
         f = (level - 1) / 59.0
         stat = {k: 20 + (cfg[k] - 20) * f for k in ("strength", "agility", "stamina", "intellect", "spirit")}
@@ -369,7 +373,7 @@ class WarlockModule(BaseModule):
         pet = Pet(name=self.pet_name, hp_max=hp, hp=hp, armor=cfg["armor_per_level"] * level + k * 0.35 * (p.armor if p is not None else 0.0),
                   dmg_min=cfg["dmg"][0] * level / 60.0, dmg_max=cfg["dmg"][1] * level / 60.0, speed=cfg["speed"],
                   attack_power=max(0.0, 2 * stat["strength"] - 20) + k * 0.17 * sp,
-                  crit=0.05 + stat["agility"] * 0.05 / 100 + k * (p.spell_crit if p is not None else 0.0),
+                  crit=(1 - k) * (0.05 + stat["agility"] * 0.05 / 100) + k * (p.spell_crit if p is not None else 0.0),
                   focus=0.0, focus_max=0.0, focus_regen=0.0, mana=cfg["mana"] * level / 60.0 * (1 + self.tv("Fel Vitality", 0) / 100),
                   mana_max=cfg["mana"] * level / 60.0 * (1 + self.tv("Fel Vitality", 0) / 100), mana_regen=(15 + stat["spirit"] / 5) / 2.0,
                   threat_mult=cfg["threat_mult"], caster=cfg["caster"])
@@ -406,10 +410,24 @@ class WarlockModule(BaseModule):
             cost *= 1 - self.tv("Cataclysm", 0) / 100
         if spell.name == "Health Funnel":
             cost *= 1 - self.tv("Improved Health Funnel", 1) / 100
+        if spell.name == "Life Tap":   # health paid: the rank's amount plus Spirit (70425: "Spirit increases the amount converted")
+            cost += self._spirit
         return cost
+
+    def tap_mana(self, spell):
+        """Life Tap's mana: (the rank's amount + Spirit) x (1 + Improved Life Tap), the raid simulator's rule (ElliotWood/Forever
+        sim/warlock/lifetap.go: restore := (baseAmount + Spirit) * manaMultiplier; it also takes the multiplied amount as health, we take
+        the converted amount: the tooltip's "Converts N Health into N Mana" and Improved Life Tap's "mana awarded"). Audit 2026-10-18 #7."""
+        return (getattr(spell, "tap", spell.cost) + self._spirit) * (1 + self.tv("Improved Life Tap", 0) / 100)
 
     def hit_bonus(self, spell):
         return self.tv("Suppression", 0) / 100
+
+    def pet_threat_bonus(self, fight):
+        """Suppression: "reduces all threat you generate by 4%/rank". The engine compares your threat with the pet's; a fraction f of your
+        threat against the pet's is the same as your full threat against the pet's / f."""
+        r = self.tv("Suppression", 1) / 100
+        return fight.m.threat_pet * (1 / (1 - r) - 1) if 0 < r < 1 else 0.0
 
     def crit_bonus(self, spell, frozen):
         c = 0.0
@@ -576,7 +594,7 @@ class WarlockModule(BaseModule):
     def on_hit(self, fight, spell, amount, crit, frozen):
         p, m, t = fight.p, fight.m, fight.t
         if spell.name == "Life Tap":
-            mana = getattr(spell, "tap", spell.cost) * (1 + self.tv("Improved Life Tap", 0) / 100)
+            mana = self.tap_mana(spell)
             p.mana = min(p.mana_max, p.mana + mana)
             if self.rank("Demonic Energies") and p.pet is not None and p.pet.alive:
                 p.pet.mana = min(p.pet.mana_max, p.pet.mana + mana)
@@ -679,9 +697,9 @@ class WarlockModule(BaseModule):
         spent = 0.0
         tap = self.spells.get("Life Tap")
         if tap is not None:
-            while p.mana < 0.70 * p.mana_max and p.hp - tap.cost > 0.60 * p.hp_max:
-                p.hp -= tap.cost
-                p.mana = min(p.mana_max, p.mana + getattr(tap, "tap", tap.cost) * (1 + self.tv("Improved Life Tap", 0) / 100))
+            while p.mana < 0.70 * p.mana_max and p.hp - self.mana_cost(tap) > 0.60 * p.hp_max:
+                p.hp -= self.mana_cost(tap)
+                p.mana = min(p.mana_max, p.mana + self.tap_mana(tap))
                 spent += GCD
         pet = p.pet
         if pet is not None and pet.alive and pet.hp < 0.6 * pet.hp_max:
@@ -749,7 +767,7 @@ class WarlockModule(BaseModule):
         bolt_cost = self.mana_cost(bolt) if bolt else 0.0
         reserve = (self.mana_cost(fear) if fear else 0.0) + (self.mana_cost(drain) if drain else 0.0)
         pet_ok = not (on_me and in_melee) and not (pet is not None and pet.alive and m.target == "pet" and pet.hp < 0.3 * pet.hp_max)
-        if tap and bolt and pet_ok and p.mana - bolt_cost < reserve and p.hp - tap.cost > 0.60 * p.hp_max and hp > avg(bolt) and not near_aggro:
+        if tap and bolt and pet_ok and p.mana - bolt_cost < reserve and p.hp - self.mana_cost(tap) > 0.60 * p.hp_max and hp > avg(bolt) and not near_aggro:
             return tap
         # DoTs once each, when the mob will live long enough (Curse of the Elements first: it raises every spell after it)
         if coe and can(coe) and not (m.debuffs.get("Curse of the Elements") or {}).get("until", 0) > t and hp > 0.5 * m.hp_max:
@@ -823,7 +841,7 @@ class WarlockModule(BaseModule):
             return c.drain
         cost = self.mana_cost(nuke) if nuke else 0.0
         pet_ok = not (c.on_me and c.in_melee) and not (c.pet is not None and c.pet.alive and m.target == "pet" and c.pet.hp < 0.3 * c.pet.hp_max)
-        if (c.tap and nuke and pet_ok and p.mana - cost < c.reserve and p.hp - c.tap.cost > 0.60 * p.hp_max
+        if (c.tap and nuke and pet_ok and p.mana - cost < c.reserve and p.hp - self.mana_cost(c.tap) > 0.60 * p.hp_max
                 and m.hp > c.avg(nuke) and not c.near_aggro):
             return c.tap
         return None

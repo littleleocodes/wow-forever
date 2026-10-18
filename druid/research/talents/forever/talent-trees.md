@@ -1,6 +1,6 @@
-# Druid — WoW: Forever talent trees (beta client 1.60.1.70291)
+# Druid — WoW: Forever talent trees (beta client 1.60.1.70425)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70291, captured 2026-10-08. World of Warcraft: Forever beta client, build 1.60.1.70291: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-08, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70425, captured 2026-10-16. World of Warcraft: Forever beta client, build 1.60.1.70425: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-16, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -63,7 +63,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Moonkin Form** | 1 | — | changed | Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party members within 45 yards have their Critical Strike chance increased by 3%, exclusive with Leader of the Pack. Also protects the caster from Polymorph effects and prevents the use of healing spells.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects. | — |
+| **Moonkin Form** | 1 | — | changed | Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their spell Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects. | — |
 
 **Removed from Classic Balance:** Nature's Grasp, Improved Nature's Grasp, Natural Weapons, Improved Thorns, Omen of Clarity
 
@@ -108,7 +108,7 @@
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Improved Shifting Power** | 2 | Shifting Power (1) | **NEW** | Reduces the cooldown of your Shifting Power spell by 4 sec. | Reduces the cooldown of your Shifting Power spell by 8 sec. |
-| **Leader of the Pack** | 1 | — | changed | While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the critical strike chance of all party members within 45 yards by 3%, exclusive with Moonkin Aura. | — |
+| **Leader of the Pack** | 1 | — | changed | While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the melee and ranged Critical Strike chance of all party or raid members within 45 yards by 3%. | — |
 | **Natural Instinct** | 2 | — | **NEW** | Increases the critical strike damage bonus of your melee abilities by 10% and increases your spell healing by 12% of your Intellect. | Increases the critical strike damage bonus of your melee abilities by 20% and increases your spell healing by 25% of your Intellect. |
 
 ### Tier 6 — requires 25 points in Feral Combat
@@ -133,7 +133,7 @@
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Nature's Focus** | 5 | — | changed | Gives you a 14% chance to avoid interruption caused by damage while casting Arcane and Nature spells. | Gives you a 70% chance to avoid interruption caused by damage while casting Arcane and Nature spells. |
-| **Furor** | 5 | — | changed | Gives you a 20% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 20% of the Energy you had when last in Cat Form, plus 2 Energy per sec spent outside Cat Form, up to 20 Energy.  Bear Form and Dire Bear Form forfeit this Energy and halt its restoration while active. | Gives you a 100% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 100% of the Energy you had when last in Cat Form, plus 10 Energy per sec spent outside Cat Form, up to 100 Energy.  Bear Form and Dire Bear Form forfeit this Energy and halt its restoration while active. |
+| **Furor** | 5 | — | changed | Gives you a 20% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 20% of the Energy you had when last in Cat Form, plus 2 Energy per second spent outside Bear Form or Dire Bear Form, up to 20 Energy. | Gives you a 100% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 100% of the Energy you had when last in Cat Form, plus 10 Energy per second spent outside Bear Form or Dire Bear Form, up to 100 Energy. |
 
 ### Tier 2 — requires 5 points in Restoration
 
@@ -217,9 +217,9 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Moonfury** (tooltip changed)
   - Classic: Increases the damage done by your Starfire, Moonfire and Wrath spells by 2%. .
   - Forever: Increases the damage done by your Arcane and Nature spells by 2%.
-- **Moonkin Form** (tooltip changed)
+- **Moonkin Form** (tooltip changed, tooltip changed in build 1.60.1.70425 (ranks 1))
   - Classic: Transforms the Druid into Moonkin Form. While in this form the armor contribution from items is increased by 360% and all party members within 0 yards have their spell critical chance increased by 3%. The Moonkin can only cast Balance spells while shapeshifted.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
-  - Forever: Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party members within 45 yards have their Critical Strike chance increased by 3%, exclusive with Leader of the Pack. Also protects the caster from Polymorph effects and prevents the use of healing spells.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
+  - Forever: Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their spell Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
 
 ### Feral Combat
 
@@ -241,7 +241,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Savage Fury** (tooltip changed, was Feral Combat row 5, col 1)
   - Classic: Increases the damage caused by your Claw, Rake, Maul and Swipe abilities by 10%.
   - Forever: Increases the damage caused by your Claw, Rake, Shred, Maul, and Swipe abilities by 5%.
-- **Feral Charge** (tooltip changed, was Feral Combat row 3, col 2, tooltip changed in build 1.60.1.70291 (ranks 1))
+- **Feral Charge** (tooltip changed, was Feral Combat row 3, col 2, tooltip changed in build 1.60.1.70425 (ranks 1))
   - Classic: Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec.
   - Forever: Charge an enemy, immobilizing them and interrupting any spell they are casting for 4 sec.  Feral Charge (Cat): 8-25 yd range, Instant, 30 sec cooldown, Requires Cat Form. Leap behind an enemy.
 - **Sharpened Claws** (max rank 3 → 2, tooltip changed, was Feral Combat row 3, col 3)
@@ -253,18 +253,18 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Blood Frenzy** (tooltip changed, was Feral Combat row 4, col 3)
   - Classic: Your critical strikes from Cat Form abilities that add combo points have a 50% chance to add an additional combo point.
   - Forever: Gives you a 50% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 50% chance to add an additional Combo Point.
-- **Leader of the Pack** (tooltip changed, was Feral Combat row 7, col 2)
+- **Leader of the Pack** (tooltip changed, was Feral Combat row 7, col 2, tooltip changed in build 1.60.1.70425 (ranks 1))
   - Classic: While in Cat, Bear or Dire Bear Form, the Leader of the Pack increases ranged and melee critical chance of all party members within 0 yards by 3%.
-  - Forever: While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the critical strike chance of all party members within 45 yards by 3%, exclusive with Moonkin Aura.
+  - Forever: While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the melee and ranged Critical Strike chance of all party or raid members within 45 yards by 3%.
 
 ### Restoration
 
 - **Nature's Focus** (tooltip changed, was Restoration row 2, col 2)
   - Classic: Gives you a 14% chance to avoid interruption caused by damage while casting the Healing Touch, Regrowth and Tranquility spells.
   - Forever: Gives you a 14% chance to avoid interruption caused by damage while casting Arcane and Nature spells.
-- **Furor** (tooltip changed, tooltip changed in build 1.60.1.70291 (ranks 1, 2, 3, 4, 5))
+- **Furor** (tooltip changed, tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3, 4, 5))
   - Classic: Gives you 20% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form.
-  - Forever: Gives you a 20% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 20% of the Energy you had when last in Cat Form, plus 2 Energy per sec spent outside Cat Form, up to 20 Energy.  Bear Form and Dire Bear Form forfeit this Energy and halt its restoration while active.
+  - Forever: Gives you a 20% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 20% of the Energy you had when last in Cat Form, plus 2 Energy per second spent outside Bear Form or Dire Bear Form, up to 20 Energy.
 - **Subtlety** (max rank 5 → 3, tooltip changed, was Restoration row 3, col 4)
   - Classic: Reduces the threat generated by your Healing spells by 4%.
   - Forever: Reduces the threat generated by your Nature and Arcane spells by 10%.

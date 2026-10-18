@@ -2377,7 +2377,7 @@
     ]
   },
   "Heart of the Wild": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 0.1% time per kill in the simulator (scorer said 0.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.1%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 0.1% time per kill in the simulator (scorer said 0.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.1%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-bear-tank): removing it costs -0.6% DPS in the simulator (scorer said 0.0% on the same scale); already within tolerance, raid effects split off unchanged (0.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "stat",
@@ -2770,7 +2770,7 @@
     ]
   },
   "Nature's Majesty": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 2.2% time per kill in the simulator (scorer said 1.9% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.8%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 2.2% time per kill in the simulator (scorer said 1.9% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.8%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-bear-tank): removing it costs 2.7% DPS in the simulator (scorer said 1.9% on the same scale); already within tolerance, raid effects split off unchanged (1.9%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -2854,7 +2854,7 @@
     ]
   },
   "Naturalist": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 3.8% time per kill in the simulator (scorer said 3.4% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.4%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 3.8% time per kill in the simulator (scorer said 3.4% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.4%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, feral-bear-tank): removing it costs 2.0% DPS in the simulator (scorer said 1.6% on the same scale); already within tolerance, raid effects split off unchanged (1.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -3017,7 +3017,7 @@
     ]
   },
   "Moonglow": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 10.1% time per kill in the simulator (scorer said 9.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (9.5%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 10.1% time per kill in the simulator (scorer said 9.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (9.5%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, balance-dps, training dummy): removing it costs 21.3% DPS in the simulator (scorer said 22.1% on the same scale); already within tolerance, raid effects split off unchanged (21.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "mana_cost",

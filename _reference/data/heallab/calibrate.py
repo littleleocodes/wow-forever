@@ -26,6 +26,7 @@ sys.path.insert(0, str(ROOT / "_reference/data/scorer"))
 sys.path.insert(0, str(HERE))   # first: the lab's run.py, not the scorer's
 sys.path.append(str(pathlib.Path(__file__).resolve().parents[1]))   # _reference/data: paths.py
 import paths  # noqa: E402
+import splitfx  # noqa: E402  (scorer/splitfx.py)
 import engine as E  # noqa: E402
 import run as labrun  # noqa: E402
 from fmt_json import dumps  # noqa: E402
@@ -128,9 +129,9 @@ def main():
         if s.get("max_level"):
             continue
         s["share"] = round(by_source.get(s["id"], 0.0) / tot, 4)
-    model["note"] = model.get("note", "").split(" Healer lab shares")[0].rstrip() + (
-        f" Healer lab shares ({datetime.date.today().isoformat()}, {main_id}): " + ", ".join(f"{k} {v / tot * 100:.0f}%" for k, v in sorted(by_source.items(), key=lambda kv: -kv[1]))
-        + f"; {unmatched * 100:.0f}% of the healing came from talent-taught spells the model carries as talent effects.")
+    model["note"] = splitfx.set_sentence(model.get("note", ""), " Healer lab shares", (   # only this kind of sentence (audit 2026-10-18, row 44)
+        f"Healer lab shares ({datetime.date.today().isoformat()}, {main_id}): " + ", ".join(f"{k} {v / tot * 100:.0f}%" for k, v in sorted(by_source.items(), key=lambda kv: -kv[1]))
+        + f"; {unmatched * 100:.0f}% of the healing came from talent-taught spells the model carries as talent effects."))
     print("  healing shares -> " + ", ".join(f"{k} {v / tot * 100:.0f}%" for k, v in by_source.items()) + f" (unmatched {unmatched * 100:.0f}%)")
     if a.write:
         spec_path.write_text(dumps(specs), encoding="utf-8")
@@ -163,6 +164,10 @@ def main():
         fit, other = heal_split(entry_m, spec, other_specs)
         import splitfx   # scorer/splitfx.py
         fit = splitfx.seed_from_parsed(fit, expand(entry_m["effects"]), expand(opt.effects[name].get("parsed") or []), FIT_MODES, set(FIT_MODES) | {"raid-heal"}, spec, NO_FIT)
+        dead = splitfx.dead_scopes(fit, specs["models"][spec])   # a scope no source carries scores nothing however it is scaled (audit 2026-10-18, row 47)
+        if dead:
+            print(f"  WARNING {name}: not fitted, no source of {spec} matches " + ", ".join(f"{e['channel']} {e['scope']}" for e in dead))
+            fit, other = [e for e in fit if e not in dead], other + dead
         reseeded = False
         if not noise and target > NOISE:   # an earlier fit left every value at zero but the lab measures it: start again from the tooltip
             seeded = splitfx.reseed_zero(fit, expand(entry_m["effects"]), expand(opt.effects[name].get("parsed") or []), FIT_MODES, spec, NO_FIT)
@@ -226,13 +231,14 @@ def main():
             if p["how"] in ("noise", "dead"):
                 continue
             e = collections.OrderedDict()
-            old_note = p["entry"].get("note", "").split(" Healer lab calibration")[0]
             what = {"fitted": f"heal values scaled x{p['k']:.2f} to match", "kept": "already within tolerance, heal effects split off unchanged",
                     "capped": f"heal values scaled x{p['k']:.2f}, the cap on effect size stops short of the target"}[p["how"]]
             if p.get("reseeded"):
                 what = "re-seeded from its tooltip (an earlier fit had left its heal values at zero), " + what
-            e["note"] = old_note + (f" Healer lab calibration ({datetime.date.today().isoformat()}, {spec}): removing it costs {p['target'] * 100:.1f}% healing capacity in the lab "
-                                    f"(scorer said {p['before'] * 100:.1f}% on the same scale); {what} ({ev_mean(name) * 100:.1f}%). Other modes unchanged.")
+            e["note"] = splitfx.set_sentence(p["entry"].get("note", ""), " Healer lab calibration", (   # one sentence per healer model (row 44)
+                f"Healer lab calibration [{spec}] ({datetime.date.today().isoformat()}, {spec}): removing it costs {p['target'] * 100:.1f}% healing capacity in the lab "
+                f"(scorer said {p['before'] * 100:.1f}% on the same scale); {what} ({ev_mean(name) * 100:.1f}%). Other modes unchanged."),
+                tag=spec, drop_untagged=lambda seg: f", {spec})" in seg)
             e["effects"] = expand(p["other"]) + expand(scaled(p["fit"], p["k"]))
             manual[name] = e
             n += 1

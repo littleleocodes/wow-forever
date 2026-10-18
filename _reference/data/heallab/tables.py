@@ -52,11 +52,27 @@ def use_gear(cls, stats):
     HEALER_GEAR[cls] = {k: stats[k] for k in GEAR_KEYS}
 
 
-RAID_BUFF_INT = 31        # Arcane Intellect
-RAID_BUFF_STATS = 12      # Mark of the Wild (all stats)
-RAID_BUFF_SPIRIT = 40     # Divine Spirit (a priest in the raid)
+def _top_rank_value(cls, spell, pattern, default):
+    """The number `pattern` finds in the top rank of a spell in the beta spellbook (forever-spells/<cls>.json); `default` if missing."""
+    import json
+    import re
+    data = json.load(open(HERE.parent / "forever-spells" / f"{cls}.json", encoding="utf-8"))
+    for tab in data["tabs"]:
+        for sp in tab["spells"]:
+            if sp["name"] == spell and sp["ranks"]:
+                m = re.search(pattern, (sp["ranks"][-1].get("text") or "").replace("\n", " "))
+                if m:
+                    return float(m.group(1).replace(",", ""))
+    return default
+
+
+# Raid buffs at their top rank in the beta spellbook (2026-10-18, audit 2 row 72: Mark of the Wild had Classic's 12, Blessing of Wisdom
+# Classic's 33 mp5; Forever: 16 and 40)
+RAID_BUFF_INT = _top_rank_value("mage", "Arcane Intellect", r"Intellect by (\d+)", 31)       # Arcane Intellect (31)
+RAID_BUFF_STATS = _top_rank_value("druid", "Mark of the Wild", r"all attributes by (\d+)", 16)   # Mark of the Wild, all stats (16)
+RAID_BUFF_SPIRIT = _top_rank_value("priest", "Divine Spirit", r"Spirit by (\d+)", 40)        # Divine Spirit, a priest in the raid (40)
 KINGS = 1.10              # Blessing of Kings (+10% stats); 1.0 for a Horde raid
-WISDOM_MP5 = 33           # Blessing of Wisdom (rank 5, 33 mana per 5 s)
+WISDOM_MP5 = _top_rank_value("paladin", "Blessing of Wisdom", r"restoring (\d+) mana every 5 sec", 40)   # Blessing of Wisdom (rank 6, 40 mp5)
 MANA_PER_INT = 15.0
 CRIT_MULT = 1.5           # a critical heal
 # Heals over time whose ticks can crit (Blizzard's beta notes, 2026-09-24, post 1: "Corrected an issue and now Rejuvenation / Tranquility /

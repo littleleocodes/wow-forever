@@ -85,12 +85,33 @@ def load(cls, spec):
     return json.load(open(p, encoding="utf-8")) if p.exists() else None
 
 
-def save(rec):
-    if not rec.get("commit"):   # the simulator commit the search runs on (2026-10-09: records had none, so pages could not date them)
+_COMMIT = []
+
+
+def sim_commit():
+    """The simulator commit this process runs on (read once)."""
+    if not _COMMIT:
         try:
-            rec["commit"] = R.git_commit(R.repo_path(argparse.Namespace(repo=None)))
+            _COMMIT.append(R.git_commit(R.repo_path(argparse.Namespace(repo=None))))
         except Exception:   # noqa: BLE001 - a record without a commit falls back to its date (ml_builds.sim_of)
-            pass
+            _COMMIT.append(None)
+    return _COMMIT[0]
+
+
+def save(rec):
+    # The simulator commit each step ran on (2026-10-09: records had none). Audit 2026-10-18 row 81: `commit` was stamped only when
+    # missing, so records whose final steps ran on a later pin still named the first one; now every search, gear set and the
+    # comparison race carry their own `commit` when written, and the record's `commit` is the last step's.
+    c = sim_commit()
+    if c:
+        steps = [v for v in list((rec.get("search") or {}).values()) + list((rec.get("gear") or {}).values()) if isinstance(v, dict)]
+        if isinstance(rec.get("compare"), dict):
+            steps.append(rec["compare"])
+        new = [v for v in steps if "commit" not in v]
+        for v in new:
+            v["commit"] = c
+        if new or not rec.get("commit"):
+            rec["commit"] = c
     p = rec_path(rec["class"], rec["spec"])
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps(rec, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")

@@ -1,0 +1,160 @@
+{
+ "source": "GCDMs of the raid simulator's spell store (~\\.wow-forever-tools\\forever-repo\\sim\\core\\spelldata\\spells_auto_gen.go), by our spellbooks' rank ids; written by spell_gcd.py (audit of 2026-10-18 row 68)",
+ "gcd": {
+  "druid": {
+   "Claw": 1.0,
+   "Cower": 1.0,
+   "Ferocious Bite": 1.0,
+   "Pounce": 1.0,
+   "Rake": 1.0,
+   "Ravage": 1.0,
+   "Rip": 1.0,
+   "Shifting Power": 1.0,
+   "Shred": 1.0
+  },
+  "hunter": {},
+  "mage": {},
+  "paladin": {
+   "Hammer of Wrath": 1.0
+  },
+  "priest": {},
+  "rogue": {
+   "Adrenaline Rush": 1.0,
+   "Ambush": 1.0,
+   "Backstab": 1.0,
+   "Blade Flurry": 1.0,
+   "Blind": 1.0,
+   "Cheap Shot": 1.0,
+   "Eviscerate": 1.0,
+   "Expose Armor": 1.0,
+   "Feint": 1.0,
+   "Garrote": 1.0,
+   "Ghostly Strike": 1.0,
+   "Gouge": 1.0,
+   "Hemorrhage": 1.0,
+   "Kick": 1.0,
+   "Kidney Shot": 1.0,
+   "Mutilate": 1.0,
+   "Preparation": 1.0,
+   "Rupture": 1.0,
+   "Sap": 1.0,
+   "Sinister Strike": 1.0,
+   "Slice and Dice": 1.0,
+   "Venom": 1.0
+  },
+  "shaman": {
+   "Disease Cleansing Totem": 1.0,
+   "Earthbind Totem": 1.0,
+   "Fire Resistance Totem": 1.0,
+   "Flametongue Totem": 1.0,
+   "Frost Resistance Totem": 1.0,
+   "Grace of Air Totem": 1.0,
+   "Grounding Totem": 1.0,
+   "Healing Stream Totem": 1.0,
+   "Magma Totem": 1.0,
+   "Mana Spring Totem": 1.0,
+   "Mana Tide Totem": 1.0,
+   "Nature Resistance Totem": 1.0,
+   "Poison Cleansing Totem": 1.0,
+   "Searing Totem": 1.0,
+   "Sentry Totem": 1.0,
+   "Stoneclaw Totem": 1.0,
+   "Stoneskin Totem": 1.0,
+   "Strength of Earth Totem": 1.0,
+   "Tremor Totem": 1.0,
+   "Windfury Totem": 1.0,
+   "Windwall Totem": 1.0
+  },
+  "warlock": {},
+  "warrior": {}
+ },
+ "off_gcd": {
+  "druid": [
+   "Berserk",
+   "Dash",
+   "Enrage",
+   "Feral Charge",
+   "Growl",
+   "Maul",
+   "Nature's Swiftness",
+   "Omen of Clarity",
+   "Prowl",
+   "Revive"
+  ],
+  "hunter": [
+   "Arcane Resistance",
+   "Auto Shot",
+   "Bestial Wrath",
+   "Deterrence",
+   "Feed Pet",
+   "Feign Death",
+   "Fire Resistance",
+   "Frost Resistance",
+   "Great Stamina",
+   "Growl",
+   "Nature Resistance",
+   "Prowl",
+   "Rapid Fire",
+   "Raptor Strike",
+   "Shadow Resistance"
+  ],
+  "mage": [
+   "Arcane Power",
+   "Cold Snap",
+   "Combustion",
+   "Counterspell",
+   "Presence of Mind"
+  ],
+  "paladin": [
+   "Divine Favor",
+   "Judgement",
+   "Swift Judgement",
+   "Templar's Bulwark",
+   "Voice of Truth"
+  ],
+  "priest": [
+   "Confounding Flash",
+   "Inner Focus",
+   "Power Infusion"
+  ],
+  "rogue": [
+   "Cold Blood",
+   "Disarm Trap",
+   "Evasion",
+   "Pick Pocket",
+   "Premeditation",
+   "Riposte",
+   "Sprint",
+   "Stealth",
+   "Vanish"
+  ],
+  "shaman": [
+   "Nature's Swiftness",
+   "Rage of the Farseer"
+  ],
+  "warlock": [
+   "Amplify Curse",
+   "Bane of Havoc",
+   "Blood Pact",
+   "Demonic Sacrifice",
+   "Fel Domination"
+  ],
+  "warrior": [
+   "Battle Stance",
+   "Berserker Stance",
+   "Bloodrage",
+   "Charge",
+   "Cleave",
+   "Concussion Blow",
+   "Defensive Stance",
+   "Heroic Strike",
+   "Intercept",
+   "Last Stand",
+   "Shield Block",
+   "Sweeping Strikes",
+   "Tactical Mastery",
+   "Taunt"
+  ]
+ },
+ "spellbook_build": "1.60.1.70425"
+}

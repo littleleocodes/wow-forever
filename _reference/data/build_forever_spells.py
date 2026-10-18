@@ -7,7 +7,8 @@ Source: talentsforever.com's data export (`raw/<pull>/talentsforever-com*/data.j
 effect text, spell-power coefficient and school, plus the Classic Era text where it differs.
 
 Usage (from anywhere):
-    python _reference/data/build_forever_spells.py [--raw 2026-09-25-beta-70009] [--captured 2026-09-25] [class ...]
+    python _reference/data/build_forever_spells.py [--raw 2026-10-16-beta-70425] [--captured 2026-10-16] [class ...]
+    (default --raw: the newest raw/*-beta-* pull with a talentsforever.com export; --captured: that folder's date)
 
 Writes the JSON, then `<class>/research/spells/README.md` (generated; do not hand-edit). The JSON is what the scorer's spec
 models should be checked against (learn levels, cast times, cooldowns, costs, relative base damage).
@@ -31,6 +32,14 @@ def find_raw(raw_dir, sub_prefix, name):
         if d.is_dir() and d.name.startswith(sub_prefix) and (d / name).exists():
             return d / name
     raise SystemExit(f"{name} not found under {raw_dir}/{sub_prefix}*")
+
+
+def newest_raw():
+    """The newest raw/<date>-beta-<build> folder with a talentsforever.com data.json (folder names sort by date)."""
+    for d in sorted(RAW.glob("*-beta-*"), reverse=True):
+        if any(x.is_dir() and x.name.startswith("talentsforever-com") and (x / "data.json").exists() for x in d.iterdir()):
+            return d.name
+    raise SystemExit(f"no *-beta-* folder with a talentsforever.com export under {RAW}")
 
 
 def lines_to_fields(lines):
@@ -163,11 +172,47 @@ def render_class(cls, obj):
     return "\n".join(out) + "\n"
 
 
+def keep_dropped_ranks(cls, obj):
+    """Audit 2026-10-18 row 10: the 70425 export lost the mage's Cone of Cold rank 5 (10161, level 58) that every earlier export, wago and
+    the raid simulator have. A rank the previous forever-spells/<class>.json had (same spell, rank id) and the new export lacks is kept,
+    with its `source` saying where it comes from, and listed in the run's output, so an export error never removes a rank silently. A
+    spell missing as a whole is not kept (spells are removed from the game: Tiger's Fury); the output lists it for a check."""
+    prev_f = OUT / f"{cls}.json"
+    if not prev_f.exists():
+        return []
+    prev = json.load(open(prev_f, encoding="utf-8"))
+    new_spells = {sp["name"]: sp for tab in obj["tabs"] for sp in tab["spells"]}
+    kept = []
+    for tab in prev.get("tabs", []):
+        for sp in tab["spells"]:
+            cur = new_spells.get(sp["name"])
+            if cur is None:
+                print(f"  {cls}: {sp['name']} is in the previous file but not in the export (not kept: check whether it was removed)")
+                continue
+            have = {r.get("id") for r in cur["ranks"]}
+            for r in sp["ranks"]:
+                if r.get("id") not in have:
+                    r = dict(r)
+                    if "missing from" not in (r.get("source") or ""):
+                        r["source"] = (f"{r.get('source') or 'previous export'} (missing from the {obj.get('build')} export; kept from the "
+                                       f"previous forever-spells file by build_forever_spells.py's guard)")
+                    cur["ranks"].append(r)
+                    kept.append((sp["name"], r))
+                    for key, val in (("tooltip_sources", r.get("tooltip_source")), ("classic_status_counts", (r.get("classic") or {}).get("status"))):
+                        if val and isinstance(obj.get(key), dict):
+                            obj[key][val] = obj[key].get(val, 0) + 1
+            cur["ranks"].sort(key=lambda r: (r.get("level") or 0, str(r.get("rank"))))
+    return kept
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("classes", nargs="*")
-    ap.add_argument("--raw", default="2026-10-03-beta-70170")
-    ap.add_argument("--captured", default=dt.date.today().isoformat())
+    # audit 2026-10-18 row 84: the default was a fixed 2026-10-03-beta-70170, so the refresh steps (rebuild.py --refresh, CLAUDE.md,
+    # check_beta_build.py's printed command) paired new talents with 70170 spells; now the newest raw/*-beta-* pull that holds a
+    # talentsforever.com export, stamped with that folder's date
+    ap.add_argument("--raw", default=newest_raw(), help="raw folder (default: the newest *-beta-* with a talentsforever.com export)")
+    ap.add_argument("--captured", default=None, help="capture date (default: the raw folder's date)")
     ap.add_argument("--render-only", action="store_true",
                     help="re-render the READMEs from the existing forever-spells/<class>.json (no raw export read; 2026-10-15)")
     a = ap.parse_args()
@@ -177,10 +222,15 @@ def main():
             (ROOT / cls / "research" / "spells" / "README.md").write_text(render_class(cls, obj), encoding="utf-8")
             print(f"{cls}: research/spells/README.md re-rendered from forever-spells/{cls}.json (build {obj['build']})")
         return
+    a.captured = a.captured or a.raw[:10]
+    print(f"spellbooks from raw/{a.raw} (captured {a.captured})")
     data = json.load(open(find_raw(RAW / a.raw, "talentsforever-com", "data.json"), encoding="utf-8"))
     OUT.mkdir(exist_ok=True)
     for cls in [c for c in CLASSES if not a.classes or c in a.classes]:
         obj = build_class(cls, data, a.captured)
+        for name, r in keep_dropped_ranks(cls, obj):
+            print(f"  {cls}: KEPT {name} {r.get('rank')} (id {r.get('id')}, level {r.get('level')}): the export lacks it; "
+                  f"the previous file had it ({r.get('source')})")
         (OUT / f"{cls}.json").write_text(json.dumps(obj, indent=1, ensure_ascii=False), encoding="utf-8")
         d = ROOT / cls / "research" / "spells"
         d.mkdir(exist_ok=True)

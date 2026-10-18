@@ -42,8 +42,9 @@ import gear_tables as GTAB  # noqa: E402
 def sim_of(r):
     """The simulator commit a search record ran on: its own `commit` (ml_pipeline.py writes it since 2026-10-09), else the pin of the
     record's date (40be98e until 2026-10-03, b0f0df3 until 2026-10-08, then setup.py's pin)."""
-    if r.get("commit"):
-        return r["commit"][:7]
+    c = (r.get("compare") or {}).get("commit") or ((r.get("search") or {}).get("bis-dummy") or {}).get("commit") or r.get("commit")
+    if c:   # the comparison race's (the numbers the pages show; audit 2026-10-18 row 81), else the final search's, else the record's
+        return c[:7]
     d = r.get("date") or ""
     if d < "2026-10-03":
         return "40be98e"

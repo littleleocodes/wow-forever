@@ -1,6 +1,6 @@
-# Hunter — WoW: Forever talent trees (beta client 1.60.1.70291)
+# Hunter — WoW: Forever talent trees (beta client 1.60.1.70425)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70291, captured 2026-10-08. World of Warcraft: Forever beta client, build 1.60.1.70291: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-08, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70425, captured 2026-10-16. World of Warcraft: Forever beta client, build 1.60.1.70425: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-16, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -97,14 +97,14 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Trueshot Aura** | 1 | — | changed | Increases the Ranged Attack Power of party members within 45 yds by 30. | — |
+| **Trueshot Aura** | 1 | — | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 30. | — |
 | **Mortal Shots** | 5 | Careful Aim (5) | changed | Increases the critical strike damage bonus on all ranged abilities by 6%. | Increases the critical strike damage bonus on all ranged abilities by 30%. |
 
 ### Tier 5 — requires 20 points in Marksmanship
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Rapid Recuperation** | 2 | Rapid Killing (2) | **NEW** | Hitting a target with your Serpent Sting ability grants you 25% and consuming Rapid Killing grants you 50% of your Mana regeneration while casting for the next 15 sec. | Hitting a target with your Serpent Sting ability grants you 50% and consuming Rapid Killing grants you 100% of your Mana regeneration while casting for the next 15 sec. |
+| **Rapid Recuperation** | 2 | Rapid Killing (2) | **NEW** | Afflicting a target with Serpent Sting allows 25% of your Mana Regeneration to continue while casting for 15 sec, increased to 50% when Rapid Killing is consumed. | Afflicting a target with Serpent Sting allows 50% of your Mana Regeneration to continue while casting for 15 sec, increased to 100% when Rapid Killing is consumed. |
 | **Barrage** | 3 | — | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 3%. | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 10%. |
 | **Scatter Shot** | 1 | — | moved | A short-range shot that deals 50% weapon damage and disorients the target for 4 sec. Any damage caused will remove the effect. Turns off your attack when used. | — |
 
@@ -153,15 +153,15 @@
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Survival Tactics** | 2 | — | **NEW** | Increases your chance to hit with your Trap and Feign Death abilities by 5%. | Increases your chance to hit with your Trap and Feign Death abilities by 10%. |
-| **Predator's Edge** | 5 | — | **NEW** | Increases your melee critical strike damage by 6% and your Off Hand weapon damage by 10%. | Increases your melee critical strike damage by 30% and your Off Hand weapon damage by 50%. |
+| **Predator's Edge** | 5 | — | **NEW** | Increases your melee ability critical strike damage by 6% and your Off Hand weapon damage by 10%. | Increases your melee ability critical strike damage by 30% and your Off Hand weapon damage by 50%. |
 | **Counterattack** | 1 | Deterrence (1) | changed | A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 13 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried. | — |
 
 ### Tier 5 — requires 20 points in Survival
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Resourcefulness** | 2 | — | **NEW** | Reduces the mana cost of your Trap abilities and melee abilities by 30%. In addition, your critical strikes have a 30% chance to allow 50% of your Mana regeneration to continue while casting for 30 sec. | Reduces the mana cost of your Trap abilities and melee abilities by 60%. In addition, your critical strikes have a 60% chance to allow 50% of your Mana regeneration to continue while casting for 30 sec. |
-| **Expose Prey** | 2 | — | **NEW** | Your attacks against targets with Hunter's Mark have a 5% chance to activate your Mongoose Bite for 10 sec. | Your attacks against targets with Hunter's Mark have a 10% chance to activate your Mongoose Bite for 10 sec. |
+| **Resourcefulness** | 2 | — | **NEW** | Reduces the Mana cost of your Trap and melee abilities by 30%, and grants your melee and ranged ability Critical Strikes a 50% chance to allow 50% of your Mana Regeneration to continue while casting for 30 sec. | Reduces the Mana cost of your Trap and melee abilities by 60%, and grants your melee and ranged ability Critical Strikes a 100% chance to allow 50% of your Mana Regeneration to continue while casting for 30 sec. |
+| **Expose Prey** | 2 | — | **NEW** | Grants your melee and ranged attacks against enemies afflicted by Hunter's Mark a 5% chance to allow an activation of Mongoose Bite. Lasts 10 sec. | Grants your melee and ranged attacks against enemies afflicted by Hunter's Mark a 10% chance to allow an activation of Mongoose Bite. Lasts 10 sec. |
 | **Survivalist's Discipline** | 2 | — | **NEW** | Reduces the cooldown of your Trap and Deterrence abilities by 20%. | Reduces the cooldown of your Trap and Deterrence abilities by 40%. |
 | **Strider Kick** | 1 | — | **NEW** | A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec. | — |
 
@@ -218,9 +218,9 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Improved Arcane Shot** (tooltip changed)
   - Classic: Reduces the cooldown of your Arcane Shot by 0 sec.
   - Forever: Reduces the cooldown of your Arcane Shot by 0.3 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot.
-- **Trueshot Aura** (tooltip changed, was Marksmanship row 7, col 2)
+- **Trueshot Aura** (tooltip changed, was Marksmanship row 7, col 2, tooltip changed in build 1.60.1.70425 (ranks 1))
   - Classic: Increases the attack power of party members within 0 yards by 50. Lasts 30 min.
-  - Forever: Increases the Ranged Attack Power of party members within 45 yds by 30.
+  - Forever: Increases the Ranged Attack Power of party or raid members within 45 yds by 30.
 - **Mortal Shots** (tooltip changed)
   - Classic: Increases your ranged weapon critical strike damage bonus by 6%.
   - Forever: Increases the critical strike damage bonus on all ranged abilities by 6%.
@@ -245,7 +245,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Surefooted** (tooltip changed, was Survival row 4, col 2)
   - Classic: Increases hit chance by 1% and increases the chance movement impairing effects will be resisted by an additional 5%.
   - Forever: Increases your hit chance by 1% and reduces the duration of movement impairing effects on you by 10%.
-- **Counterattack** (tooltip changed, was Survival row 5, col 3, tooltip changed in build 1.60.1.70291 (ranks 1))
+- **Counterattack** (tooltip changed, was Survival row 5, col 3, tooltip changed in build 1.60.1.70425 (ranks 1))
   - Classic: A strike that becomes active after parrying an opponent's attack. This attack deals 40 damage and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.
   - Forever: A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 13 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.
 - **Lightning Reflexes** (tooltip changed)

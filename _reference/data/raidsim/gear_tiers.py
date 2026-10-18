@@ -169,24 +169,31 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, we
 
     def greedy(items, w, keep_special):
         new = [dict(x) if x else {} for x in items]
-        used = set()
+        used, ukeys = set(), set()   # ids held, unique ids and limit categories held (gear_opt.unique_keys)
+
+        def hold(iid):
+            used.add(iid)
+            ukeys.update(G.unique_keys(db.get(iid)))
+
         for slot in range(17):
             curx = new[slot]
             curit = db.get(curx.get("id")) if curx.get("id") else None
             if G.SLOT_TYPE[slot] == 12 or (curit and curit.get("rangedWeaponType", 0) in (6, 7, 8, 9)):
-                used.add(curx.get("id"))
+                hold(curx.get("id"))
                 continue   # trinkets are raced; relics stay
             if slot == 15 and new[14].get("id") and db.get(new[14]["id"], {}).get("handType") == 4:
                 new[15] = {}
                 continue
-            allowed = curit is not None and pool(curit)   # never keep an item outside the tier's pool
+            # never keep an item outside the tier's pool, or one whose unique id or limit category the set already holds
+            allowed = curit is not None and pool(curit) and not (G.unique_keys(curit) & ukeys)
             if keep_special and allowed and (curit.get("setName") or curit.get("itemEffects")):
-                used.add(curx.get("id"))
+                hold(curx.get("id"))
                 continue
             if not curit and slot not in (15,):
                 continue
-            cands = [it for it in db.values() if fits(it, slot, curit) and it["id"] not in used]
-            if allowed and not (curit["id"] in used and curit.get("unique")):   # a unique-equipped item held earlier in the set: not twice (2026-10-06)
+            # a unique-equipped item (2026-10-06) or a second item of one limit category (2026-10-18 audit row 50): not twice
+            cands = [it for it in db.values() if fits(it, slot, curit) and it["id"] not in used and not (G.unique_keys(it) & ukeys)]
+            if allowed:
                 cands.append(curit)
             best = max(cands, key=lambda it: G.value(it, w, slot)) if cands else (curit if allowed else None)
             if best is None:
@@ -195,7 +202,7 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, we
             if best["id"] != curx.get("id"):
                 ench = curx.get("enchant")
                 new[slot] = {"id": best["id"], **({"enchant": ench} if ench else {})}
-            used.add(new[slot].get("id"))
+            hold(new[slot].get("id"))
         return new
 
     def with_trinkets(items, pair):
@@ -225,8 +232,9 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, we
     w = weights(v1)
     v1, v2 = greedy(v1, w, False), greedy(v2, w, True)
     cur_pair = (cur_items[12].get("id"), cur_items[13].get("id"))
-    pairs = [p for p in itertools.combinations(trinkets, 2)][: a.max_pairs]
-    base_pair = cur_pair if all(cur_pair) and all(pool(db[i]) for i in cur_pair if i in db) else (pairs[0] if pairs else cur_pair)
+    pairs = [p for p in itertools.combinations(trinkets, 2) if G.pair_ok(db, p)][: a.max_pairs]
+    base_pair = (cur_pair if all(cur_pair) and all(pool(db[i]) for i in cur_pair if i in db) and G.pair_ok(db, cur_pair)
+                 else (pairs[0] if pairs else cur_pair))
     v1 = with_trinkets(v1, base_pair) if all(base_pair) else v1
     tsets = {"base": v1, **{f"t{i}": with_trinkets(v1, p) for i, p in enumerate(pairs)}}
     tr = race(tsets, a.iterations, 1)

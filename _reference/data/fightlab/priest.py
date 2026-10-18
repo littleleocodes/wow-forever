@@ -79,7 +79,7 @@ def load_spellbook():
         for sp in tab["spells"]:
             for r in sp["ranks"]:
                 txt = (r.get("text") or "").replace("\n", " ")
-                cost_txt = r.get("cost") or ""
+                cost_txt = (r.get("cost") or "").replace(",", "")   # "1,070 Mana" read as 1 before 2026-10-18 (audit #30)
                 cost = _num(NUM.search(cost_txt).group(1)) if NUM.search(cost_txt) else 0.0
                 cast_txt = (r.get("cast") or "").lower()
                 channel = "channel" in cast_txt
@@ -398,10 +398,12 @@ class PriestModule(BaseModule):
         if spell.school == "holy":
             c += self.tv("Holy Specialization", 0) / 100
         if spell.name == "Shadow Word: Death" and f and f.m.hp <= 0.2 * f.m.hp_max:
-            c += self.tv("Early Demise", 0) / 100
+            c += self.tv("Early Demise", 1) / 100   # index 1: the crit (15/30); index 0 is the 20% health threshold (audit 2026-10-18 #32)
         b = f.p.buff("Inner Focus", f.t) if f else None
-        if b and b.get("spent") == spell.name and spell.name not in INNER_FOCUS_NO_CRIT and (spell.dmg_max > 0 or spell.heal_max > 0):
+        if (b and b.get("spent") == spell.name and not b.get("crit_used") and spell.name not in INNER_FOCUS_NO_CRIT
+                and (spell.dmg_max > 0 or spell.heal_max > 0)):
             c += 0.25   # the spell that spent it, non-periodic part (notes post 4: "no longer applies ... to Periodic Effects")
+            b["crit_used"] = True   # the direct roll comes first; Holy Fire's burn snapshots its crit right after (audit 2026-10-18 #23)
         if self.holy and f and spell.name in RENEWED_HOPE_HEALS and f.p.cooldowns.get("Power Word: Shield", 0.0) > f.t:
             c += self.tv("Renewed Hope", 0) / 100   # the target (you) is under Weakened Soul
         return c
@@ -635,7 +637,7 @@ class PriestModule(BaseModule):
             p.buffs["Focused Casting"] = {"until": t + 6.0}
         if self.holy and self.rank("Blessed Recovery") and dmg > 0 and (crit or dmg > 0.30 * p.hp_max):
             left = sum(h[1] * h[2] for h in p.hots if h[0] == "Blessed Recovery")   # refreshing carries over the rest
-            total = left + dmg * self.tv("Blessed Recovery", 0) / 100
+            total = left + dmg * self.tv("Blessed Recovery", 1) / 100   # index 1: 8/17/25%; index 0 is the 30% threshold (audit 2026-10-18 #32)
             p.hots = [h for h in p.hots if h[0] != "Blessed Recovery"]
             p.hots.append(["Blessed Recovery", total / 3, 3, t + 2.0, 2.0, "player"])
 

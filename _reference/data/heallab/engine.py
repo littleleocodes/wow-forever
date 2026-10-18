@@ -25,8 +25,10 @@ HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
 
 NUM = re.compile(r"(\d[\d,]*)")
-HEAL = re.compile(r"(?:[Hh]eals?|heal)(?: a| the| your)? (?:friendly |single )?target(?: and (?:their|the) party| and the caster)? for (\d[\d,]*) to (\d[\d,]*)")
-HEAL1 = re.compile(r"(?:[Hh]eals?|heal) (?:a friendly target|the friendly target|the target|your target) for (\d[\d,]*)(?! to| over)")
+HEAL = re.compile(r"(?:[Hh]eals?|heal)(?: yourself and)?(?: a| the| your)? (?:friendly |single )?target(?: and (?:their|the) party| and the caster)? for (\d[\d,]*) to (\d[\d,]*)")
+# (?![\d,]): without it "Heals the target for 776 over 12 sec." backtracked a digit and read a direct heal of 77 on every Rejuvenation
+# rank (audit 2026-10-18 row 29); "Heal yourself and a friendly target" (Binding Heal ranks 2-6) had matched neither pattern (row 35)
+HEAL1 = re.compile(r"(?:[Hh]eals?|heal) (?:a friendly target|the friendly target|the target|your target) for (\d[\d,]*)(?![\d,])(?! to| over)")
 HOT = re.compile(r"(?:heals? the target (?:of|for)|another|an additional) (\d[\d,]*)(?: damage)? over (\d+) sec", re.I)
 GROUP_HOT = re.compile(r"heals the target and their party for (\d[\d,]*) over (\d+) sec", re.I)
 TICK = re.compile(r"for (\d[\d,]*) every (\d+) sec(?:onds)?(?: for (\d+) sec)?", re.I)

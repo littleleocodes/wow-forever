@@ -2,10 +2,13 @@
 
     python _reference/data/check_beta_build.py
 
-Reads the client build the datamines currently show (talentsforever.com's data.json header, thewowdb.com's talent page
-for one class) and compares it with `_reference/data/forever-talents/<class>.json["build"]`. Prints the verdict and, when a
+Reads the client build the sources currently show and compares it with `_reference/data/forever-talents/<class>.json["build"]`:
+talentsforever.com's data.json (the build every spellbook was read from: `spellbooks[*].build`), thewowdb.com's talent page for one
+class, and wago.tools' build list (the newest 1.60.x build of any product: the beta ships as `wow_classic_beta`; wago lists a build
+before any datamine has exported it, so "newer on wago only" means a new client exists but no talent export has it yet). Prints the verdict and, when a
 newer build exists, the refresh command to run (`rebuild.py --refresh <date>-beta-<build>` does everything downstream).
-Exit code 0 = up to date, 3 = newer build found, 1 = the sources could not be read.
+Exit code 0 = up to date, 3 = newer build found, 4 = a newer client on wago.tools only (no export yet), 1 = the sources could not
+be read.
 """
 import datetime as dt
 import json
@@ -18,6 +21,7 @@ sys.path.insert(0, str(HERE))
 import refresh_forever_talents as R  # noqa: E402
 
 BUILD = re.compile(r"1\.60\.\d+\.(\d{5})")
+WAGO = "https://wago.tools/api/builds"
 
 
 def main():
@@ -27,9 +31,12 @@ def main():
     try:
         tf = R.fetch(R.URL_TF)
         text = tf.decode("utf-8", "replace") if isinstance(tf, bytes) else str(tf)
+        # audit 2026-10-18 row 12: the build strings sit in spellbooks[*].build (the first at character 48,333); the old scan read
+        # only text[:20000] and never found one
         head = json.loads(text) if text.lstrip().startswith("{") else {}
-        blob = json.dumps({k: v for k, v in head.items() if k in ("generated", "build", "client", "version", "patch")}) + text[:20000]
-        m = BUILD.findall(blob)
+        books = head.get("spellbooks")
+        vals = [str(b.get("build", "")) for b in (books.values() if isinstance(books, dict) else books or []) if isinstance(b, dict)]
+        m = BUILD.findall(" ".join(vals)) or BUILD.findall(text)
         seen["talentsforever.com"] = (max(int(x) for x in m) if m else None, head.get("generated"))
     except Exception as e:
         seen["talentsforever.com"] = (None, f"error: {e}")
@@ -40,6 +47,15 @@ def main():
         seen["thewowdb.com"] = (max(int(x) for x in m) if m else None, None)
     except Exception as e:
         seen["thewowdb.com"] = (None, f"error: {e}")
+    try:
+        import urllib.request
+        with urllib.request.urlopen(urllib.request.Request(WAGO, headers={"User-Agent": "wow-forever"}), timeout=30) as r:
+            builds = json.load(r)
+        best = max(((int(BUILD.search(x["version"]).group(1)), k) for k, v in builds.items() for x in v
+                    if BUILD.search(x.get("version", ""))), default=None)
+        seen["wago.tools"] = (best[0], f"product {best[1]}; client only, no talent export") if best else (None, None)
+    except Exception as e:
+        seen["wago.tools"] = (None, f"error: {e}")
     print(f"our data: build {ours}")
     newest = 0
     for src, (b, note) in seen.items():
@@ -48,6 +64,11 @@ def main():
     if not any(b for b, _ in seen.values()):
         print("could not read the sources")
         return 1
+    exported = max((b or 0) for src, (b, _) in seen.items() if src != "wago.tools")
+    if newest > ours_n and exported <= ours_n:
+        print(f"NEWER CLIENT {newest} > {ours_n} on wago.tools only: no talent export has it yet (a hotfix-only build changes no "
+              f"exported file); check again later")
+        return 4
     if newest > ours_n:
         name = f"{dt.date.today().isoformat()}-beta-{newest}"
         print(f"NEWER BUILD {newest} > {ours_n}: run  python _reference/data/rebuild.py --refresh {name} --jobs 5")

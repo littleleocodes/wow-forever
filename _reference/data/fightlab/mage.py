@@ -58,6 +58,12 @@ AB_STACK = re.compile(r"gain (\d+)% of your Intellect as Spell Damage and the ma
 # Cone of Cold spends them. The tooltip's "40%" was read until 2026-10-17 (any Frost spell, never spent).
 WC_DMG, WC_COEF = 0.05, 0.07
 WC_SOURCES = ("Frostbolt", "Frost Blast")
+# Missile Barrage's triggers (audit 2026-10-18 #24): the 70425 tooltip names Arcane Blast (index 0), each Arcane Missile hit (index 1) and
+# Arcane Wrath, Fireball, Frostbolt, Frostfire Bolt (index 2). The hotfixes read from the 70450 hotfix cache (fan site's decode, quoted in
+# _reference/audit-2026-10-18.md) take the missile hits out of the text (70425's own hotfix) and add Frost Blast to the index-2 list
+# (70450). We follow the hotfixed text; the raid simulator (db4d14a) still procs from missiles at a quarter of the Arcane Blast chance.
+MB_OTHERS = ("Arcane Wrath", "Frostbolt", "Fireball", "Frostfire Bolt", "Frost Blast")
+MB_MISSILE_PROCS = False   # True: the 70425 file text (each missile 5%/rank)
 AW_MANA = re.compile(r"Spell Damage equal to (\d+)% of your maximum Mana")   # Arcane Wrath (client 70425)
 LANCE_FROZEN = re.compile(r"Deals (\d+)% increased damage to Frozen targets")   # Ice Lance: 200% since 70425 (300% before)
 
@@ -176,6 +182,12 @@ def load_spellbook():
 
 
 BOOK = load_spellbook()
+# Frost Blast's spell power coefficient: 34.3% in the 70425 spellbook export, 27.1% after a hotfix (0.343 -> 0.271; the fan site's decode of
+# the 70425/70450 hotfix cache, quoted by the audit of 2026-10-18 (_reference/audit-2026-10-18.md, area 2 notes); Blizzard's notes do not
+# mention it). The export carries no hotfixes, so the hotfixed value is set here (2026-10-18).
+FROST_BLAST_COEF = 0.271
+for _fb in BOOK.get("Frost Blast", []):
+    _fb.coef = FROST_BLAST_COEF
 
 
 def talent_numbers():
@@ -245,7 +257,8 @@ ARCANE_MECHANICS = {
                     "+175% to its own cost per stack, up to 4 stacks, 15 s from the first (client 70425)",
     "Arcane Wrath": "unlocks Arcane Wrath (ranks by level, 3.5 s, 6 s cooldown; spell damage +5% of maximum mana): cast after the Arcane "
                     "Blast stacks while it can finish before the mob reaches you (client 70425)",
-    "Missile Barrage": "Arcane Blast 20%/rank, each Arcane Missile 5%/rank, Arcane Wrath, Frostbolt, Fireball, Frostfire Bolt 10%/rank: the "
+    "Missile Barrage": "Arcane Blast 20%/rank, Arcane Wrath, Frostbolt, Frost Blast, Fireball, Frostfire Bolt 10%/rank (the hotfixed text: no "
+                       "missile procs, Frost Blast added; MB_MISSILE_PROCS): the "
                        "next Arcane Missiles is free and fires its missiles every 0.5 s (half the channel), 15 s (duration assumed; client 70425)",
     "Improved Channeling": "20%/rank to lose no channel time to a hit during Arcane Missiles, 14%/rank no pushback on Arcane Blast and Arcane Wrath",
     "Arcane Power": "on the pull every 3 min (mana above half): +30% spell damage, +30% mana cost for 15 s",
@@ -376,7 +389,11 @@ class MageModule(BaseModule):
     def make_player(self, level):
         base = mage_base_stats(level)
         g = gear_stats(level, self.gear)
-        intellect = (base["intellect"] + g["intellect"]) * (1 + self.tv("Arcane Mind", 0) / 100)
+        # Arcane Intellect, self-cast and kept up (an hour: recast between pulls, its mana not counted), as the priest's Fortitude and the
+        # druid's Mark of the Wild: +31 Intellect at rank 5 (+465 mana at 60). Not applied before 2026-10-18 (audit 2 row 4).
+        ai = self.book.get("Arcane Intellect")
+        m_ai = re.search(r"Intellect by (\d+)", ai.text) if ai is not None else None
+        intellect = (base["intellect"] + g["intellect"] + (float(m_ai.group(1)) if m_ai else 0.0)) * (1 + self.tv("Arcane Mind", 0) / 100)
         spirit = base["spirit"] + g["spirit"]
         stamina = base["stamina"] + g["stamina"]
         armor_spell = self.armor_choice()
@@ -671,8 +688,8 @@ class MageModule(BaseModule):
         return False
 
     def on_hit(self, fight, spell, amount, crit, frozen):
-        if amount > 0 and self.is_arcane() and self.rank("Missile Barrage") and spell.name in ("Arcane Blast", "Arcane Wrath", "Frostbolt", "Fireball", "Frostfire Bolt"):
-            # client 70425 numbers: Arcane Blast 20%/rank (index 0), each missile 5%/rank (1, on_tick), the others 10%/rank (2)
+        if amount > 0 and self.is_arcane() and self.rank("Missile Barrage") and (spell.name == "Arcane Blast" or spell.name in MB_OTHERS):
+            # client 70425 numbers: Arcane Blast 20%/rank (index 0), each missile 5%/rank (1, on_tick; off since the hotfix), the others 10%/rank (2)
             chance = self.tv("Missile Barrage", 0) if spell.name == "Arcane Blast" else self.tv("Missile Barrage", 2)
             if chance and fight.rng.random() < chance / 100:
                 fight.p.buffs["Missile Barrage"] = {"until": fight.t + 15.0, "since": fight.t}
@@ -730,8 +747,8 @@ class MageModule(BaseModule):
             self._am_first_tick = fight.t   # the channel's first missile: a Missile Barrage proc from before it is spent (after_cast)
             if self.rank("Arcane Concentration") and fight.rng.random() < self.tv("Arcane Concentration", 0) / 100:
                 fight.p.buffs["Clearcasting"] = {"until": fight.t + 15.0}
-        # client 70425: each Arcane Missile hit has 5%/rank to proc Missile Barrage for the next channel
-        if spell.name == "Arcane Missiles" and amount > 0 and self.is_arcane() and self.rank("Missile Barrage") \
+        # client 70425 file text: each Arcane Missile hit has 5%/rank to proc Missile Barrage for the next channel (hotfixed out: MB_MISSILE_PROCS)
+        if MB_MISSILE_PROCS and spell.name == "Arcane Missiles" and amount > 0 and self.is_arcane() and self.rank("Missile Barrage") \
                 and fight.rng.random() < self.tv("Missile Barrage", 1) / 100:
             fight.p.buffs["Missile Barrage"] = {"until": fight.t + 15.0, "since": fight.t}
 

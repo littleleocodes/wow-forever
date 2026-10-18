@@ -26,6 +26,8 @@ DEFAULT_CRIT_BONUS = {"type:spell": 0.5, "type:melee": 1.0, "type:ranged": 1.0, 
 #   avoid   dodge, parry, block and armor talents: they only matter while something hits you in melee
 #   resist  shorter stuns, fears and silences on you
 SOFT_CHANNELS = ("utility", "surv", "sustain")
+# channels that wait for the spell a talent's tooltip names (effects.learn_level): damage channels are gated by their sources' min_level
+LEARN_GATED = ("utility", "surv", "sustain", "regen", "mana_cost", "pet_surv")
 KIND_FROM_SCOPE = {"surv:parry": "avoid", "surv:dodge": "avoid", "surv:block": "avoid", "surv:armor": "avoid", "surv:defense": "avoid"}
 
 
@@ -302,7 +304,8 @@ class Evaluator:
         sid = self.spec.get("id")
         kept = [e for e in effects
                 if (len(e) < 4 or not e[3] or any(m in self.modes_ok for m in e[3]))
-                and (len(e) < 5 or not e[4] or sid in e[4])]
+                and (len(e) < 5 or not e[4] or sid in e[4])
+                and not (len(e) > 7 and e[7] and e[0] in LEARN_GATED and e[7] > self.level)]   # the named spell is not learned yet (row 43)
         needs = {e[6] for e in kept if len(e) > 6 and e[6]}
         if needs:   # a pet talent does nothing without its pet out (True = any pet, a name = that pet)
             base3 = [e[:3] for e in kept]
@@ -384,6 +387,7 @@ def effects_for(allocation, merged_effects, spec_id=None, mode=None, profile_id=
         effs = entry["effects"]
         kinds = entry.get("kinds") or {}   # talent-level kinds by channel (scorer/kinds.json)
         needs_pet = entry.get("needs_pet") or False   # True (any pet) or the pet's name
+        learn = entry.get("learn_level") or 0         # soft effects count from this level (effects.learn_level)
         if spec_id is not None and effs and entry.get("parsed"):
             toks = set(mode) if isinstance(mode, (set, frozenset, list, tuple)) else {mode, profile_id}   # a profile's mode tokens (profile_modes) or mode + id
 
@@ -403,5 +407,5 @@ def effects_for(allocation, merged_effects, spec_id=None, mode=None, profile_id=
             v = vals[min(rank, len(vals)) - 1] if vals else 0.0
             if v:
                 kind = e.get("kind") or kinds.get(e["channel"]) or (KIND_FROM_SCOPE.get(e["scope"][0]) if e["scope"] else None)
-                out.append((e["channel"], e["scope"], v, e.get("modes"), e.get("specs"), kind, needs_pet))
+                out.append((e["channel"], e["scope"], v, e.get("modes"), e.get("specs"), kind, needs_pet, learn))
     return out

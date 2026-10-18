@@ -34,14 +34,23 @@ MAGMA = re.compile(r"for (\d+) sec that causes (\d+) Fire damage to creatures wi
 FLAME = re.compile(r"causing (\d[\d,]*) Fire damage immediately and (\d[\d,]*) Fire damage over (\d+) sec")
 HEAL = re.compile(r"Heals (?:a|the) friendly target for (\d[\d,]*) to (\d[\d,]*)")
 ROCK = re.compile(r"increasing melee attack power by (\d+)")
+# Windfury Weapon's proc aura (439431) has a 1.5 sec ProcCategoryRecovery (the old fork's weapon_imbues.go, from the client data; the
+# tooltip does not say): no second proc within 1.5 s (audit 2026-10-18 #73; before, every landed hit rolled)
+WF_ICD = 1.5
 WIND = re.compile(r"(\d+)% chance of granting you (\d) extra attacks with (\d+) extra melee attack power")
-FLAME_W = re.compile(r"Each hit causes (\d+) to (\d+) additional Fire damage")
+FLAME_W = re.compile(r"Each (?:main hand )?hit causes (\d+) to (\d+) additional Fire damage")   # Flametongue Totem ranks 2-4: "Each main hand hit" (lint, 2026-10-18)
 SHIELD = re.compile(r"struck for (\d+) Nature damage")
 SEARING = re.compile(r"for (\d+) sec that repeatedly attacks an enemy within (\d+) yards for (\d+) to (\d+) Fire damage")
 CLAW = re.compile(r"Stoneclaw Totem with (\d+) health at the feet of the caster for (\d+) sec")
 SLOW = re.compile(r"slowing movement speed by (\d+)%\. Lasts (\d+) sec")
 COEF = re.compile(r"([\d.]+)% of spell power \((\w+(?: \w+)?)\)")
 
+# Lightning and Water Shield: "Only one ball/globe will fire every few seconds": 3.5 s, as the healer lab (heallab/shaman.py
+# WATER_SHIELD_ICD) and the raid simulator (sim/shaman/shields.go at db4d14a); 3.0 s before 2026-10-18 (audit 2026-10-18 #73).
+SHIELD_ICD = 3.5
+# Totemic Recall (a trained spell, 70425: "giving you 25% of the mana required to cast each totem destroyed"): not cast. Between fights
+# it returns a quarter of one Searing Totem's cost (about 40 mana at 60) for a global cooldown; drinking restores more in that time
+# (audit 2026-10-18 #25).
 TALENT_SPELLS = {"Stormstrike": "Stormstrike", "Rage of the Farseer": "Rage of the Farseer", "Water Shield": "Water Shield", "Mana Tide Totem": "Mana Tide Totem",
                  "Nature's Swiftness": "Nature's Swiftness", "Lava Burst": "Lava Burst", "Riptide": "Riptide", "Elemental Mastery": "Elemental Mastery"}
 
@@ -63,7 +72,7 @@ def load_spellbook():
         for sp in tab["spells"]:
             for r in sp["ranks"]:
                 txt = (r.get("text") or "").replace("\n", " ")
-                cost_txt = r.get("cost") or ""
+                cost_txt = (r.get("cost") or "").replace(",", "")   # a cost of 1,000 or more read as 1 before 2026-10-18 (audit #30)
                 cost = _num(NUM.search(cost_txt).group(1)) if NUM.search(cost_txt) else 0.0
                 cast_txt = (r.get("cast") or "").lower()
                 cast = 0.0 if "instant" in cast_txt or not cast_txt else _seconds(cast_txt)
@@ -172,7 +181,7 @@ MECHANICS = {
     "Improved Reincarnation": "+2%/rank health, -10 min/rank Reincarnation cooldown",
     "Ancestral Healing": "not used",
     "Healing Focus": "23%/rank less pushback on heals",
-    "Water Shield": "unlocks Water Shield: 2% mana per hit taken or spell crit (client 70425: any spell; 3 charges, one every 3 s), used when mana is low",
+    "Water Shield": "unlocks Water Shield: 2% mana per hit taken or spell crit (client 70425: any spell; 3 charges, one every 3.5 s), used when mana is low",
     "Tidal Mastery": "+1%/rank heal crit (in combat and the expected crit of the heals between fights)",
     "Restorative Totems": "not used (Mana Spring / Healing Stream are not dropped per fight)",
     "Mana Tide Totem": "not used solo (5 min cooldown; drinking is modelled)",
@@ -303,7 +312,7 @@ class ShamanModule(BaseModule):
     # ------------------------------------------------------------ character
     def make_player(self, level):
         base = class_base_stats("shaman", level)
-        g = gear_stats(level, self.gear, "shaman")
+        g = gear_stats(level, self.gear, "shaman-caster" if self.spec.startswith("elemental") else "shaman")   # caster row (audit 2026-10-18 row 65)
         strength = base["strength"] + g["strength"]
         agility = base["agility"] + g["agility"]
         stamina = (base["stamina"] + g["stamina"]) * (1 + self.tv("Toughness", 0) / 100)
@@ -505,8 +514,9 @@ class ShamanModule(BaseModule):
             self.flurry_swings -= 1
         imb = self.imbue
         if imb is not None and not getattr(fight, "_wf", False):
-            if getattr(imb, "wf_chance", 0.0) and fight.rng.random() < imb.wf_chance:
+            if getattr(imb, "wf_chance", 0.0) and t >= getattr(fight, "_wf_ready", 0.0) and fight.rng.random() < imb.wf_chance:
                 fight._wf = True
+                fight._wf_ready = t + WF_ICD
                 bonus = imb.wf_ap * (1 + self.tv("Elemental Weapons", 1) / 100)
                 p.attack_power += bonus
                 for _ in range(imb.wf_attacks):
@@ -566,11 +576,11 @@ class ShamanModule(BaseModule):
             del p.buffs["Nature's Swiftness"]
 
     def water_globe(self, p, t):
-        """Water Shield's globe on one of your spell crits (client 70425): 2% of maximum mana, one globe every 3 s, as for a hit taken."""
+        """Water Shield's globe on one of your spell crits (client 70425): 2% of maximum mana, one globe every SHIELD_ICD s, as for a hit taken."""
         sh = p.buffs.get("Shield")
         if sh and sh.get("kind") == "water" and sh.get("charges", 0) > 0 and t >= sh.get("icd", 0.0):
             sh["charges"] -= 1
-            sh["icd"] = t + 3.0
+            sh["icd"] = t + SHIELD_ICD
             p.mana = min(p.mana_max, p.mana + 0.02 * p.mana_max)
 
     def on_hit_taken(self, fight, dmg, crit=False):
@@ -578,7 +588,7 @@ class ShamanModule(BaseModule):
         sh = p.buffs.get("Shield")
         if sh and sh.get("charges", 0) > 0 and t >= sh.get("icd", 0.0):
             sh["charges"] -= 1
-            sh["icd"] = t + 3.0
+            sh["icd"] = t + SHIELD_ICD
             if sh["kind"] == "lightning":
                 dmg_out = sh["dmg"] * self.damage_multiplier(Spell("Lightning Shield", "nature"), False)
                 lcrit = fight.rng.random() < p.spell_crit

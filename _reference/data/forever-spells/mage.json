@@ -7,12 +7,12 @@
  "tooltip_level": 60,
  "source": "talentsforever.com data export (generated 2026-10-16, CC-BY-4.0, Data from talentsforever.com (https://talentsforever.com)): trainer spellbook and level-60 tooltips read from the WoW: Forever beta client build 1.60.1.70425; 'classic' blocks quote Classic Era where the tooltip differs.",
  "tooltip_sources": {
-  "beta": 197,
+  "beta": 198,
   "demo": 0,
   "classic": 0
  },
  "classic_status_counts": {
-  "changed": 122,
+  "changed": 123,
   "new": 22,
   "same": 53
  },
@@ -3323,6 +3323,26 @@
         "status": "changed",
         "text": "Targets in a cone in front of the caster take 270 to 296 Frost damage and are slowed by 50% for 8 sec.",
         "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 10161,
+       "text": "Targets in a cone in front of the caster take 328 to 358 Frost damage and are slowed by 40% for 6 sec. The first 4 targets hit by this cone are slowed by an additional 10% for an additional 3 sec.",
+       "school": "Frost",
+       "coefficient": "12.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70291 (rank 5 is missing from the 70425 talentsforever.com export but present in the 70009-70291 exports, wago and the raid simulator's spell store; restored 2026-10-18, audit 2 #10; its second sentence copied from ranks 1-4 at 70425)",
+       "cost": "555 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "changed",
+        "text": "Targets in a cone in front of the caster take 338 to 368 Frost damage and are slowed by 50% for 8 sec.",
+        "change_kind": "numbers"
        }
       }
      ]

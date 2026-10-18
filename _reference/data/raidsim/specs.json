@@ -47,7 +47,7 @@
       "profession1": "Alchemy",
       "profession2": "Tailoring",
       "gear": "_reference/data/raidsim/gear_sets/forever/mage-dps-p1.p1opt.gear.json",
-      "apl": "ui/specs/mage/dps/apls/fire.apl.json",
+      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/mage/dps/apls/fire.apl.json",
       "spec": {
         "mage": {
           "options": {
@@ -58,7 +58,7 @@
       "consumables": {
         "flaskId": 13512,
         "spellPowerElixirId": 13454,
-        "schoolElixirId": 21546,
+        "schoolElixirId": 6373,
         "guardianElixirId": 20007,
         "zanzaId": 8423,
         "foodId": 18254,
@@ -123,7 +123,7 @@
       "consumables": {
         "flaskId": 13512,
         "spellPowerElixirId": 13454,
-        "schoolElixirId": 21546,
+        "schoolElixirId": 17708,
         "guardianElixirId": 20007,
         "zanzaId": 8423,
         "foodId": 18254,
@@ -149,7 +149,7 @@
       "profession1": "Alchemy",
       "profession2": "Tailoring",
       "gear": "_reference/data/raidsim/gear_sets/forever/priest-dps-p0.p1opt.gear.json",
-      "apl": "ui/specs/priest/dps/apls/shadow.apl.json",
+      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/priest/dps/apls/shadow.apl.json",
       "spec": {
         "dpsPriest": {
           "options": {
@@ -181,7 +181,7 @@
       "profession1": "Alchemy",
       "profession2": "Tailoring",
       "gear": "_reference/data/raidsim/gear_sets/forever/priest-dps-p0.p1opt.gear.json",
-      "apl": "ui/specs/priest/dps/apls/smite.apl.json",
+      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/priest/dps/apls/smite.apl.json",
       "spec": {
         "dpsPriest": {
           "options": {
@@ -218,7 +218,7 @@
       "profession1": "Enchanting",
       "profession2": "Tailoring",
       "gear": "_reference/data/raidsim/gear_sets/forever/warlock-dps-mc.p1opt.gear.json",
-      "apl": "ui/specs/warlock/dps/apls/affliction.apl.json",
+      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warlock/dps/apls/affliction.apl.json",
       "spec": {
         "warlock": {
           "options": {
@@ -252,7 +252,7 @@
       "profession1": "Enchanting",
       "profession2": "Tailoring",
       "gear": "_reference/data/raidsim/gear_sets/forever/warlock-dps-mc.p1opt.gear.json",
-      "apl": "ui/specs/warlock/dps/apls/destruction.apl.json",
+      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warlock/dps/apls/destruction.apl.json",
       "spec": {
         "warlock": {
           "options": {
@@ -286,7 +286,7 @@
       "profession1": "Enchanting",
       "profession2": "Tailoring",
       "gear": "_reference/data/raidsim/gear_sets/forever/warlock-dps-mc.p1opt.gear.json",
-      "apl": "ui/specs/warlock/dps/apls/ds_ruin.apl.json",
+      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warlock/dps/apls/ds_ruin.apl.json",
       "spec": {
         "warlock": {
           "options": {
@@ -319,7 +319,7 @@
       "profession1": "Enchanting",
       "profession2": "Tailoring",
       "gear": "_reference/data/raidsim/gear_sets/forever/warlock-dps-mc.p1opt.gear.json",
-      "apl": "ui/specs/warlock/dps/apls/demonic_pact.apl.json",
+      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warlock/dps/apls/demonic_pact.apl.json",
       "spec": {
         "warlock": {
           "options": {
@@ -394,7 +394,7 @@
       "profession1": "Engineering",
       "profession2": "Leatherworking",
       "gear": "_reference/data/raidsim/gear_sets/forever/hunter-dps-p1.p1opt.gear.json",
-      "apl": "ui/specs/hunter/dps/apls/mm.apl.json",
+      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/hunter/dps/apls/mm.apl.json",
       "spec": {
         "hunter": {
           "options": {
@@ -432,7 +432,7 @@
       "profession1": "Engineering",
       "profession2": "Leatherworking",
       "gear": "_reference/data/raidsim/gear_sets/forever/hunter-dps-p1.p1opt.gear.json",
-      "apl": "ui/specs/hunter/dps/apls/mm.apl.json",
+      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/hunter/dps/apls/mm.apl.json",
       "spec": {
         "hunter": {
           "options": {
@@ -469,7 +469,7 @@
       "profession1": "Engineering",
       "profession2": "Leatherworking",
       "gear": "_reference/data/raidsim/gear_sets/forever/hunter-dps-p1.p1opt.gear.json",
-      "apl": "ui/specs/hunter/dps/apls/bm.apl.json",
+      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/hunter/dps/apls/bm.apl.json",
       "spec": {
         "hunter": {
           "options": {
@@ -549,7 +549,7 @@
       "distance": 5,
       "profession1": "Engineering",
       "gear": "_reference/data/raidsim/gear_sets/forever/rogue-dps-combat_sinister_strike_p1_bis.p1opt.gear.json",
-      "apl": "ui/specs/rogue/dps/apls/combat_sinister_strike.apl.json",
+      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/rogue/dps/apls/combat_sinister_strike.apl.json",
       "spec": {
         "rogue": {
           "options": {
@@ -585,8 +585,8 @@
       "race": "RaceDwarf",
       "distance": 5,
       "profession1": "Engineering",
-      "gear": "ui/specs/rogue/dps/gear_sets/combat_backstab_p1_bis.gear.json",
-      "apl": "ui/specs/rogue/dps/apls/combat_backstab.apl.json",
+      "gear": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/rogue/dps/gear_sets/combat_backstab_p1_bis.gear.json",
+      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/rogue/dps/apls/combat_backstab.apl.json",
       "spec": {
         "rogue": {
           "options": {
@@ -621,8 +621,8 @@
       "race": "RaceDwarf",
       "distance": 5,
       "profession1": "Engineering",
-      "gear": "ui/specs/rogue/dps/gear_sets/combat_backstab_p1_bis.gear.json",
-      "apl": "ui/specs/rogue/dps/apls/forever_mutilate.apl.json",
+      "gear": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/rogue/dps/gear_sets/combat_backstab_p1_bis.gear.json",
+      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/rogue/dps/apls/forever_mutilate.apl.json",
       "spec": {
         "rogue": {
           "options": {
@@ -660,7 +660,7 @@
       "distance": 5,
       "profession1": "Engineering",
       "gear": "_reference/data/raidsim/gear_sets/forever/rogue-dps-combat_sinister_strike_p1_bis.p1opt.gear.json",
-      "apl": "ui/specs/rogue/dps/apls/forever_hemorrhage.apl.json",
+      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/rogue/dps/apls/forever_hemorrhage.apl.json",
       "spec": {
         "rogue": {
           "options": {
@@ -701,7 +701,7 @@
       "distance": 5,
       "profession1": "Engineering",
       "gear": "_reference/data/raidsim/gear_sets/forever/warrior-dps-p1_arms.p1opt.gear.json",
-      "apl": "ui/specs/warrior/dps/apls/dps_no_reck.apl.json",
+      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warrior/dps/apls/dps_no_reck.apl.json",
       "spec": {
         "dpsWarrior": {
           "options": {
@@ -733,7 +733,7 @@
       "distance": 5,
       "profession1": "Engineering",
       "gear": "_reference/data/raidsim/gear_sets/forever/warrior-dps-p1_fury.p1opt.gear.json",
-      "apl": "ui/specs/warrior/dps/apls/dps_no_reck.apl.json",
+      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warrior/dps/apls/dps_no_reck.apl.json",
       "spec": {
         "dpsWarrior": {
           "options": {
@@ -765,8 +765,8 @@
       "distance": 5,
       "profession1": "Engineering",
       "tank": true,
-      "gear": "ui/specs/warrior/protection/gear_sets/launch.gear.json",
-      "apl": "ui/specs/warrior/protection/apls/protection.apl.json",
+      "gear": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warrior/protection/gear_sets/launch.gear.json",
+      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warrior/protection/apls/protection.apl.json",
       "spec": {
         "protectionWarrior": {
           "options": {
@@ -836,7 +836,7 @@
       "distance": 5,
       "profession1": "Engineering",
       "gear": "_reference/data/raidsim/gear_sets/forever/paladin-retribution-default.p1opt.gear.json",
-      "apl": "ui/specs/paladin/retribution/apls/default.apl.json",
+      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/paladin/retribution/apls/default.apl.json",
       "spec": {
         "retributionPaladin": {
           "options": {
@@ -908,7 +908,7 @@
       "profession1": "Enchanting",
       "profession2": "Alchemy",
       "gear": "_reference/data/raidsim/gear_sets/forever/shaman-elemental-phase_1.p1opt.gear.json",
-      "apl": "ui/specs/shaman/elemental/apls/forever.apl.json",
+      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/shaman/elemental/apls/forever.apl.json",
       "spec": {
         "elementalShaman": {
           "options": {
@@ -944,7 +944,7 @@
       "profession1": "Alchemy",
       "profession2": "Enchanting",
       "gear": "_reference/data/raidsim/gear_sets/forever/shaman-enhancement-phase_1.p1opt.gear.json",
-      "apl": "ui/specs/shaman/enhancement/apls/forever.apl.json",
+      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/shaman/enhancement/apls/forever.apl.json",
       "spec": {
         "enhancementShaman": {
           "options": {
@@ -983,7 +983,7 @@
       "profession1": "Enchanting",
       "profession2": "Alchemy",
       "gear": "_reference/data/raidsim/gear_sets/forever/shaman-elemental-phase_1.p1opt.gear.json",
-      "apl": "ui/specs/shaman/elemental/apls/forever.apl.json",
+      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/shaman/elemental/apls/forever.apl.json",
       "spec": {
         "elementalShaman": {
           "options": {
@@ -1094,7 +1094,7 @@
       "profession1": "Engineering",
       "profession2": "Leatherworking",
       "tank": true,
-      "gear": "ui/specs/druid/feralbear/gear_sets/launch.gear.json",
+      "gear": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/druid/feralbear/gear_sets/launch.gear.json",
       "apl": "ui/specs/druid/feralbear/apls/default.apl.json",
       "spec": {
         "feralBearDruid": {
