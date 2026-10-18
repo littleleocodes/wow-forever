@@ -181,6 +181,42 @@ def spell_gcd(cls, name):
             return v
     return GCD
 
+
+# A rank's damage, healing and absorb grow with the caster's level up to the level its scaling stops at (the client's SpellLevels and
+# EffectRealPointsPerLevel; audit of 2026-10-18 row 8): Shadow Bolt rank 4 deals 58 at 20 and 62 from 25. Our tooltips are the level-60
+# text, so a rank read its capped amount at every level (casters about 4% high at 20-50). `spell_scaling.json` (spell_scaling.py, from the
+# raid simulator's spell store) holds the rows; engine.scale_rank applies the factor in each module's rank_at. False = the model before.
+RANK_LEVEL_SCALING = True
+TOOLTIP_LEVEL = 60
+_SCALING_FILE = pathlib.Path(__file__).resolve().parent / "spell_scaling.json"
+_SCALING = json.load(open(_SCALING_FILE, encoding="utf-8"))["classes"] if _SCALING_FILE.exists() else {}
+
+
+def _effect_amount(row, level):
+    """effect.go Effect.Average: floor(base + (min(level, max level) - spell level) x gain); max level 0 = no cap."""
+    base, gain, sl, ml = row
+    lvl = min(level, ml) if ml > 0 else level
+    return math.floor(base + max(0, lvl - sl) * gain)
+
+
+def rank_level_factor(cls, name, rank_level, level):
+    """{"direct", "periodic", "absorb"}: the rank's amount at `level` over its tooltip (level-60) amount; {} when it does not scale."""
+    if not RANK_LEVEL_SCALING:
+        return {}
+    rec = _SCALING.get(cls, {}).get(name, {}).get(str(int(rank_level)))
+    if not rec:
+        return {}
+    out = {}
+    for kind in ("direct", "periodic", "absorb"):
+        rows = rec.get(kind)
+        if rows:
+            at60 = sum(_effect_amount(r, TOOLTIP_LEVEL) for r in rows)
+            if at60 > 0:
+                f = sum(_effect_amount(r, level) for r in rows) / at60
+                if abs(f - 1) > 1e-9:
+                    out[kind] = f
+    return out
+
 # player attacks vs a same-level mob (ElliotWood/Forever target.go attack table, level-60 attacker, defender at +0):
 MELEE_MISS = 0.05             # yellow and single-weapon white miss
 DW_MISS_PENALTY = 0.19        # extra white miss while dual wielding

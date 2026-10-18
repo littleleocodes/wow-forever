@@ -2602,8 +2602,15 @@
     ]
   },
   "Wand Specialization": {
-    "note": "PvP (2026-09-27): zero, burst: Wands are not used in PvP; the talent only pays while leveling (wand finishing).",
-    "effects": []
+    "note": "PvP (2026-09-27): zero, burst: Wands are not used in PvP; the talent only pays while leveling (wand finishing). Audit 2026-10-18 (row 49): the entry held no effects, so the talent scored 0 in leveling too: +13/25% wand damage in the leveling profiles (tooltip); PvP and raid stay 0.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Wand", "ability:Wands"],
+        "values": [0.13, 0.25],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe"]
+      }
+    ]
   },
   "Arcane Focus": {
     "note": "PvP (2026-09-27): medium, stun: +hit on Polymorph and Counterspell against players; with the Classic table (96% base, 99% cap) 3 ranks reach the cap, ranks 4-5 add nothing in PvP. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, frost-raid, training dummy): removing it costs 0.5% DPS in the simulator (scorer said 0.7% on the same scale); already within tolerance, raid effects split off unchanged (0.7%). Other modes unchanged.",
