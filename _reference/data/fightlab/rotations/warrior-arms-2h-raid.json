@@ -1,5 +1,10 @@
 {
  "eat_below": 0.4,
+ "veto": {
+  "Heroic Strike": {
+   "min_hp": 0.35
+  }
+ },
  "class": "warrior",
  "spec": "arms-2h-raid",
  "build": "leveling-arms",
@@ -10,7 +15,7 @@
   50,
   60
  ],
- "date": "2026-10-09",
+ "date": "2026-10-17",
  "fights": 600,
  "confirm": 3000,
  "changes": [
@@ -22,40 +27,51 @@
     null,
     0.4
    ],
-   "gain_seed1": 0.017655207411502727,
-   "gain_seed2": 0.020431207871550616
+   "gain_seed1": 0.029404536872988163,
+   "gain_seed2": 0.02336324490728381
+  },
+  {
+   "round": 2,
+   "change": "Heroic Strike only while the mob has more than 35% health",
+   "rule": [
+    "min_hp",
+    "Heroic Strike",
+    0.35
+   ],
+   "gain_seed1": 0.0031351998214635968,
+   "gain_seed2": 0.004258530297460483
   }
  ],
- "weighted_before": 25.95867762651023,
- "weighted_after": 25.520836666673905,
+ "weighted_before": 27.860255267740634,
+ "weighted_after": 27.091993333385524,
  "per_level": {
   "20": {
-   "before": 19.202166666557513,
-   "after": 19.202166666557513,
+   "before": 22.499238872132935,
+   "after": 22.520699999879668,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 22.008470796693555,
-   "after": 22.092633333198503,
+   "before": 26.409814781022327,
+   "after": 25.612066666658336,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 24.022502067676037,
-   "after": 23.79246666659099,
+   "before": 26.47086852729949,
+   "after": 25.981900000006455,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 26.89967616145179,
-   "after": 26.245966666682158,
+   "before": 28.486586270007713,
+   "after": 27.41633333339514,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 30.692569621507626,
-   "after": 29.889133333498798,
+   "before": 30.776796301373867,
+   "after": 29.82550000016243,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

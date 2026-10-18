@@ -4,15 +4,20 @@
    "min_hp": 0.35
   },
   "Corruption": {
-   "min_hp": 0.35
-  },
-  "Life Tap": {
-   "max_hp": 0.35
+   "min_hp": 0.35,
+   "min_mana": 0.15
   },
   "Curse of the Elements": {
-   "min_mana": 0.3
+   "off": true
+  },
+  "Fear": {
+   "off": true
+  },
+  "Drain Life": {
+   "off": true
   }
  },
+ "eat_below": 0.4,
  "class": "warlock",
  "spec": "affliction-leveling",
  "build": "leveling-affliction",
@@ -23,7 +28,7 @@
   50,
   60
  ],
- "date": "2026-10-09",
+ "date": "2026-10-18",
  "fights": 600,
  "confirm": 3000,
  "changes": [
@@ -35,8 +40,8 @@
     "Shadow Bolt",
     0.35
    ],
-   "gain_seed1": 0.0587752653985707,
-   "gain_seed2": 0.05950026413616871
+   "gain_seed1": 0.059120878499270724,
+   "gain_seed2": 0.057502904110073305
   },
   {
    "round": 2,
@@ -46,62 +51,95 @@
     "Corruption",
     0.35
    ],
-   "gain_seed1": 0.028231721544614174,
-   "gain_seed2": 0.025602370789354678
+   "gain_seed1": 0.024394760011148264,
+   "gain_seed2": 0.024273244028202634
   },
   {
    "round": 3,
-   "change": "Life Tap only when the mob is below 35% health",
+   "change": "never cast Curse of the Elements",
    "rule": [
-    "max_hp",
-    "Life Tap",
-    0.35
+    "off",
+    "Curse of the Elements",
+    true
    ],
-   "gain_seed1": 0.01799680562446948,
-   "gain_seed2": 0.01747015092814652
+   "gain_seed1": 0.013417309407576017,
+   "gain_seed2": 0.00732870576933764
   },
   {
    "round": 4,
-   "change": "Curse of the Elements only above 30% mana",
+   "change": "never cast Fear",
+   "rule": [
+    "off",
+    "Fear",
+    true
+   ],
+   "gain_seed1": 0.004561948042805297,
+   "gain_seed2": 0.009764879278674421
+  },
+  {
+   "round": 5,
+   "change": "never cast Drain Life",
+   "rule": [
+    "off",
+    "Drain Life",
+    true
+   ],
+   "gain_seed1": 0.013713276252386386,
+   "gain_seed2": 0.010102574745111448
+  },
+  {
+   "round": 6,
+   "change": "Corruption only above 15% mana",
    "rule": [
     "min_mana",
-    "Curse of the Elements",
-    0.3
+    "Corruption",
+    0.15
    ],
-   "gain_seed1": 0.007330057634627463,
-   "gain_seed2": 0.006455168033768555
+   "gain_seed1": 0.0063671451740222595,
+   "gain_seed2": 0.008057670062394884
+  },
+  {
+   "round": 7,
+   "change": "eat below 40% health",
+   "rule": [
+    "eat_below",
+    null,
+    0.4
+   ],
+   "gain_seed1": 0.004419269943115589,
+   "gain_seed2": 0.004300773515356959
   }
  ],
- "weighted_before": 45.191612467627465,
- "weighted_after": 40.30437739965737,
+ "weighted_before": 43.884365924715944,
+ "weighted_after": 38.82814107311964,
  "per_level": {
   "20": {
-   "before": 34.185344054639536,
-   "after": 31.179251395246766,
+   "before": 35.720799704754405,
+   "after": 30.837839735313217,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 44.16824203502952,
-   "after": 36.18293000104024,
+   "before": 44.977361782993036,
+   "after": 39.07800355833825,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 50.00529852996618,
-   "after": 42.17018550488904,
+   "before": 47.646203485345524,
+   "after": 41.886642833441385,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 48.55456835159439,
-   "after": 44.128251203184064,
+   "before": 45.58793413143722,
+   "after": 40.7708931996371,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 43.360466543390835,
-   "after": 40.97637619400943,
+   "before": 42.131524856210454,
+   "after": 37.708682330800094,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

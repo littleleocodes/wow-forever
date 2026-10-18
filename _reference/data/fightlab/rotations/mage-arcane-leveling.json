@@ -1,16 +1,18 @@
 {
  "veto": {
+  "Cone of Cold": {
+   "max_hp": 0.2,
+   "off": true
+  },
   "Arcane Missiles": {
    "min_hp": 0.35
   },
-  "Cone of Cold": {
-   "min_hp": 0.35
-  },
   "Frostbolt": {
-   "min_hp": 0.35
+   "off": true
   },
   "Fire Blast": {
-   "min_hp": 0.1
+   "min_hp": 0.1,
+   "max_hp": 0.2
   }
  },
  "class": "mage",
@@ -23,85 +25,107 @@
   50,
   60
  ],
- "date": "2026-10-15",
+ "date": "2026-10-17",
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
+   "change": "Cone of Cold only when the mob is below 20% health",
+   "rule": [
+    "max_hp",
+    "Cone of Cold",
+    0.2
+   ],
+   "gain_seed1": 0.021273843148038485,
+   "gain_seed2": 0.016880352192509718
+  },
+  {
+   "round": 2,
    "change": "Arcane Missiles only while the mob has more than 35% health",
    "rule": [
     "min_hp",
     "Arcane Missiles",
     0.35
    ],
-   "gain_seed1": 0.006085811515468387,
-   "gain_seed2": 0.012157502312530655
-  },
-  {
-   "round": 2,
-   "change": "Cone of Cold only while the mob has more than 35% health",
-   "rule": [
-    "min_hp",
-    "Cone of Cold",
-    0.35
-   ],
-   "gain_seed1": 0.011477122138362494,
-   "gain_seed2": 0.005719953639850561
+   "gain_seed1": 0.0032216852119552053,
+   "gain_seed2": 0.00825741491069154
   },
   {
    "round": 3,
-   "change": "Frostbolt only while the mob has more than 35% health",
+   "change": "never cast Frostbolt",
    "rule": [
-    "min_hp",
+    "off",
     "Frostbolt",
-    0.35
+    true
    ],
-   "gain_seed1": 0.005185957497082283,
-   "gain_seed2": 0.005001231116807725
+   "gain_seed1": 0.00887219236849801,
+   "gain_seed2": 0.008203920559956779
   },
   {
    "round": 4,
+   "change": "never cast Cone of Cold",
+   "rule": [
+    "off",
+    "Cone of Cold",
+    true
+   ],
+   "gain_seed1": 0.009766817742379752,
+   "gain_seed2": 0.008930943312357997
+  },
+  {
+   "round": 5,
    "change": "Fire Blast only while the mob has more than 10% health",
    "rule": [
     "min_hp",
     "Fire Blast",
     0.1
    ],
-   "gain_seed1": 0.0043728000169005465,
-   "gain_seed2": 0.00553858287198683
+   "gain_seed1": 0.00640730672059775,
+   "gain_seed2": 0.007013618976077884
+  },
+  {
+   "round": 6,
+   "change": "Fire Blast only when the mob is below 20% health",
+   "rule": [
+    "max_hp",
+    "Fire Blast",
+    0.2
+   ],
+   "gain_seed1": 0.004268297596551007,
+   "gain_seed2": 0.004312142729220092
   }
  ],
- "weighted_before": 34.43970468256125,
- "weighted_after": 33.536421628012526,
+ "weighted_before": 37.64562626302301,
+ "weighted_after": 35.63543381633414,
  "per_level": {
   "20": {
-   "before": 30.338374351986694,
-   "after": 29.7522426325543,
+   "before": 32.18400017741971,
+   "after": 31.079573197348765,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 37.85063362878252,
-   "after": 36.09270576452927,
+   "before": 41.60471945740201,
+   "after": 39.10488963673548,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 40.651995079070886,
-   "after": 39.40012377236117,
+   "before": 44.64351651860651,
+   "after": 41.66300404872901,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 33.81978139855294,
-   "after": 33.028463925614446,
+   "before": 37.178950860259754,
+   "after": 35.33475248888506,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 30.476426125309303,
-   "after": 30.03383588067287,
+   "before": 33.21025769294833,
+   "after": 31.65151373040625,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

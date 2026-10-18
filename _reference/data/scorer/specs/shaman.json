@@ -63,7 +63,7 @@
       "abs_dps_factor": 1.0
     },
     "elemental-dps": {
-      "note": "Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Lightning Bolt rank 10 189-211 in 2.5s for 220 mana (71.4% coefficient; Classic 428-477 in 3s at 85.7%), Chain Lightning rank 4 119-133 in 2s (57.1%), Earth Shock rank 7 293-309, Flame Shock rank 6 166 plus 176, Lava Burst ranks at 40/50/60 (2.5s, 10s cooldown): the shocks are relatively stronger, so Lightning Bolt 60 -> 52%, Chain Lightning 15 -> 11%, Earth Shock 10 -> 16%, Flame Shock 8 -> 12%. Fire Nova is a spell now (10s cooldown), still counted with the fire totem. Raid sim shares (2026-10-03, elemental-raid-dps in the ElliotWood/Forever simulator b0f0df3, every mana-only buff on: the split before the mana limit): lightning_bolt 73%, flame_shock 18%, chain_lightning 8%; 6% of the damage matched no source. Fight lab speed (2026-10-09): its leveling build kills 0.85x as fast as enhancement-dps's optimizer build (level-weighted time per kill 39.4s vs 33.6s), written as abs_dps_factor so respec.py compares the models on that. Fight lab calibration (2026-10-15, beta client 1.60.1.70291, build opt-elemental-dps-leveling-st at level 60, 1500 fights): shares are the measured damage split (Lightning Bolt 26%, Melee 15%, Lightning Shield 13%, Earth Shock 11%, Flame Shock 10%, Lava Burst 10%, Searing Totem 8%, Windfury 7%) and the leveling time split is fight 52% / drink 34% / eat 10% / other 0% / death 4% of talent-affected time with fight_coupling 0.82 (downtime and deaths scale with fight length).",
+      "note": "Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Lightning Bolt rank 10 189-211 in 2.5s for 220 mana (71.4% coefficient; Classic 428-477 in 3s at 85.7%), Chain Lightning rank 4 119-133 in 2s (57.1%), Earth Shock rank 7 293-309, Flame Shock rank 6 166 plus 176, Lava Burst ranks at 40/50/60 (2.5s, 10s cooldown): the shocks are relatively stronger, so Lightning Bolt 60 -> 52%, Chain Lightning 15 -> 11%, Earth Shock 10 -> 16%, Flame Shock 8 -> 12%. Fire Nova is a spell now (10s cooldown), still counted with the fire totem. Raid sim shares (2026-10-03, elemental-raid-dps in the ElliotWood/Forever simulator b0f0df3, every mana-only buff on: the split before the mana limit): lightning_bolt 73%, flame_shock 18%, chain_lightning 8%; 6% of the damage matched no source. Fight lab speed (2026-10-17): its leveling build kills 0.85x as fast as enhancement-dps's optimizer build (level-weighted time per kill 38.3s vs 32.6s), written as abs_dps_factor so respec.py compares the models on that.",
       "sources": [
         {
           "id": "lightning_bolt",
@@ -178,7 +178,7 @@
         "dmgspell": 0.95
       },
       "regen_share": 0.3,
-      "abs_dps_factor": 0.853,
+      "abs_dps_factor": 0.85,
       "time": {
         "leveling-st": {"fight": 0.517, "drink": 0.341, "eat": 0.099, "other": 0.0, "death": 0.044},
         "solo-60": {"fight": 0.517, "drink": 0.341, "eat": 0.099, "other": 0.0, "death": 0.044}

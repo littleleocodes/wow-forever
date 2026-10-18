@@ -1,7 +1,7 @@
 {
  "class": "mage",
  "spec": "fire-leveling",
- "build": "fire-leveling",
+ "build": "opt-fire-leveling-leveling-st",
  "levels": [
   20,
   30,
@@ -9,40 +9,40 @@
   50,
   60
  ],
- "date": "2026-10-15",
+ "date": "2026-10-17",
  "fights": 600,
  "confirm": 3000,
  "changes": [],
- "weighted_before": 34.54859675317362,
- "weighted_after": 34.54859675317362,
+ "weighted_before": 39.494564297857586,
+ "weighted_after": 39.494564297857586,
  "per_level": {
   "20": {
-   "before": 31.06262238012705,
-   "after": 31.06262238012705,
+   "before": 32.96644050274766,
+   "after": 32.96644050274766,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 36.14948784047465,
-   "after": 36.14948784047465,
+   "before": 39.02280003595717,
+   "after": 39.02280003595717,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 40.93570465630012,
-   "after": 40.93570465630012,
+   "before": 46.538219637517564,
+   "after": 46.538219637517564,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 34.729122441495726,
-   "after": 34.729122441495726,
+   "before": 40.99722047044122,
+   "after": 40.99722047044122,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 30.501632658185887,
-   "after": 30.501632658185887,
+   "before": 35.95850399025142,
+   "after": 35.95850399025142,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

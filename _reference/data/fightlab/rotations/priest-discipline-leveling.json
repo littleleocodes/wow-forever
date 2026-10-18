@@ -3,11 +3,18 @@
   "Smite": {
    "min_hp": 0.35
   },
+  "Devouring Plague": {
+   "off": true
+  },
   "Holy Fire": {
    "off": true
   },
   "Penance": {
-   "min_mana": 0.3
+   "min_mana": 0.5
+  },
+  "Mind Blast": {
+   "min_mana": 0.3,
+   "min_hp": 0.1
   }
  },
  "knobs": {
@@ -24,7 +31,7 @@
   50,
   60
  ],
- "date": "2026-10-15",
+ "date": "2026-10-17",
  "fights": 600,
  "confirm": 3000,
  "changes": [
@@ -36,52 +43,52 @@
     "Smite",
     0.35
    ],
-   "gain_seed1": 0.0415973710964066,
-   "gain_seed2": 0.03938086470571911
+   "gain_seed1": 0.047372879082357655,
+   "gain_seed2": 0.04602525946116409
   },
   {
    "round": 2,
+   "change": "never cast Devouring Plague",
+   "rule": [
+    "off",
+    "Devouring Plague",
+    true
+   ],
+   "gain_seed1": 0.03805077895134179,
+   "gain_seed2": 0.038922808324735714
+  },
+  {
+   "round": 3,
    "change": "WAND_BELOW = 0.3",
    "rule": [
     "knob",
     "WAND_BELOW",
     0.3
    ],
-   "gain_seed1": 0.008243338153523183,
-   "gain_seed2": 0.010831120584836373
-  },
-  {
-   "round": 3,
-   "change": "drink below 25% mana",
-   "rule": [
-    "drink_below",
-    null,
-    0.25
-   ],
-   "gain_seed1": 0.011345140224339745,
-   "gain_seed2": 0.011460798439447806
+   "gain_seed1": 0.012922974687379463,
+   "gain_seed2": 0.016129292286209407
   },
   {
    "round": 4,
-   "change": "never cast Holy Fire",
-   "rule": [
-    "off",
-    "Holy Fire",
-    true
-   ],
-   "gain_seed1": 0.009831411013605962,
-   "gain_seed2": 0.011797345016277716
-  },
-  {
-   "round": 5,
    "change": "drink below 15% mana",
    "rule": [
     "drink_below",
     null,
     0.15
    ],
-   "gain_seed1": 0.003277769465157787,
-   "gain_seed2": 0.007336656005861419
+   "gain_seed1": 0.021229606904538567,
+   "gain_seed2": 0.019972555510142986
+  },
+  {
+   "round": 5,
+   "change": "never cast Holy Fire",
+   "rule": [
+    "off",
+    "Holy Fire",
+    true
+   ],
+   "gain_seed1": 0.03120925726418322,
+   "gain_seed2": 0.03133677633929888
   },
   {
    "round": 6,
@@ -91,40 +98,73 @@
     "Penance",
     0.3
    ],
-   "gain_seed1": 0.02224789754709955,
-   "gain_seed2": 0.019146604918708898
+   "gain_seed1": 0.025243005884902803,
+   "gain_seed2": 0.027485438480949642
+  },
+  {
+   "round": 7,
+   "change": "Mind Blast only above 30% mana",
+   "rule": [
+    "min_mana",
+    "Mind Blast",
+    0.3
+   ],
+   "gain_seed1": 0.039771571470306855,
+   "gain_seed2": 0.037618767582258794
+  },
+  {
+   "round": 8,
+   "change": "Penance only above 50% mana",
+   "rule": [
+    "min_mana",
+    "Penance",
+    0.5
+   ],
+   "gain_seed1": 0.010793864100776318,
+   "gain_seed2": 0.012267928057469235
+  },
+  {
+   "round": 9,
+   "change": "Mind Blast only while the mob has more than 10% health",
+   "rule": [
+    "min_hp",
+    "Mind Blast",
+    0.1
+   ],
+   "gain_seed1": 0.011084134780502963,
+   "gain_seed2": 0.009823509911121908
   }
  ],
- "weighted_before": 56.39670838455214,
- "weighted_after": 51.01894330585371,
+ "weighted_before": 54.65618666068375,
+ "weighted_after": 42.87563895643346,
  "per_level": {
   "20": {
-   "before": 46.43259299779574,
-   "after": 38.70522257182277,
+   "before": 41.34601162203396,
+   "after": 27.952066666758174,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 56.141323291668,
-   "after": 47.17348242095959,
+   "before": 51.46153190898314,
+   "after": 34.25313333370985,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 61.36651898088416,
-   "after": 54.48939397901449,
+   "before": 59.86546025282756,
+   "after": 43.90409645021611,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 57.01410185891058,
-   "after": 53.29696192041911,
+   "before": 56.187503085228315,
+   "after": 45.31637635097585,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 56.01807110039296,
-   "after": 52.83426469873274,
+   "before": 55.941292967534295,
+   "after": 49.44182970637995,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

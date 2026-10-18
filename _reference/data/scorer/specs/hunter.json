@@ -146,7 +146,7 @@
       "kind_note": "Pet-tank playstyle while leveling: the pet holds the mob, so kiting tools add nothing in single-target play (fight lab, 2026-09-27: Improved Wing Clip -0.2% +- 0.3 and Scatter Shot 0.0% in the pet hunter's loop at 60). Pulls of several mobs (leveling-aoe) keep them: adds come to the hunter."
     },
     "mm-raid": {
-      "note": "Marksmanship raid DPS with a pet (Classic 20/31/0 style). Auto Shot ~45%, Aimed/Multi ~25%, pet ~18%. Aimed Shot/Sniper Shot are modelled as damage effects on the ranged sources, not as a source. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Multi-Shot lost its flat +150 and Aimed Shot's rank 6 is +166 (Classic +600) while Arcane Shot rank 8 rose to 217 (Classic 183): Multi-Shot share 16 -> 12%, Arcane Shot 4 -> 7%, Auto Shot 55 -> 58%, pet 18 -> 16%; Multi-Shot cooldown 6s (shared with Aimed Shot). Raid sim shares (2026-10-03, bm-mm-raid in the ElliotWood/Forever simulator b0f0df3, every mana-only buff on: the split before the mana limit): auto 46%, serpent 22%, pet 16%, aimed 14%, multi 2%; 24% of the damage matched no source. Fight lab speed (2026-10-09): its leveling build kills 0.96x as fast as bm-leveling's optimizer build (level-weighted time per kill 26.9s vs 26.0s), written as abs_dps_factor so respec.py compares the models on that.",
+      "note": "Marksmanship raid DPS with a pet (Classic 20/31/0 style). Auto Shot ~45%, Aimed/Multi ~25%, pet ~18%. Aimed Shot/Sniper Shot are modelled as damage effects on the ranged sources, not as a source. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Multi-Shot lost its flat +150 and Aimed Shot's rank 6 is +166 (Classic +600) while Arcane Shot rank 8 rose to 217 (Classic 183): Multi-Shot share 16 -> 12%, Arcane Shot 4 -> 7%, Auto Shot 55 -> 58%, pet 18 -> 16%; Multi-Shot cooldown 6s (shared with Aimed Shot). Raid sim shares (2026-10-03, bm-mm-raid in the ElliotWood/Forever simulator b0f0df3, every mana-only buff on: the split before the mana limit): auto 46%, serpent 22%, pet 16%, aimed 14%, multi 2%; 24% of the damage matched no source. Fight lab speed (2026-10-17): its leveling build kills 0.98x as fast as bm-leveling's optimizer build (level-weighted time per kill 25.6s vs 25.1s), written as abs_dps_factor so respec.py compares the models on that.",
       "sources": [
         {
           "id": "auto",
@@ -232,7 +232,7 @@
       "mana_share": {"all": 1.0, "type:ranged": 0.85, "ability:Shots": 0.65, "ability:Stings": 0.15, "type:melee": 0.0},
       "regen_share": 0.2,
       "pet_surv_to_sustain": 0.1,
-      "abs_dps_factor": 0.964,
+      "abs_dps_factor": 0.982,
       "mana_weight": {"raid-dps": 0.5},
       "kind_weights_by_profile": {
         "leveling-st": {"kite": 0},
@@ -324,7 +324,7 @@
       }
     },
     "melee-dps": {
-      "note": "Melee hunter (Forever): dual-wield white swings under Aspect of the Beast, Raptor Strike on the next swing, Mongoose Bite after dodges and Expose Prey procs, Strider Kick on cooldown, Counterattack after parries, the Lacerating Strikes bleed, one Serpent Sting from the pull (the 8 yd minimum range stops every other shot in melee), and the pet unless Lone Wolf. Shares are 2026-09-27 assumptions from the tooltips (a 1.0 s weapon pair, Raptor Strike every 6 s, Mongoose Bite every ~8 s with Expose Prey, Strider Kick every 8 s) until the fight lab's melee rotation calibrates them. Fight lab calibration (2026-10-15, beta client 1.60.1.70291, build cand-melee-pet at level 60, 1500 fights): shares are the measured damage split (Cat melee 22%, Immolation Trap 15%, Raptor Strike 13%, Melee (off-hand) 12%, Melee 12%, Strider Kick 8%, Claw 6%, Mongoose Bite 5%, Auto Shot 5%, Bite 2%, Lacerate 0%, Counterattack 0%) and the leveling time split is fight 83% / drink 8% / eat 4% / other 0% / death 5% of talent-affected time with fight_coupling 0.0 (downtime and deaths scale with fight length).",
+      "note": "Melee hunter (Forever): dual-wield white swings under Aspect of the Beast, Raptor Strike on the next swing, Mongoose Bite after dodges and Expose Prey procs, Strider Kick on cooldown, Counterattack after parries, the Lacerating Strikes bleed, one Serpent Sting from the pull (the 8 yd minimum range stops every other shot in melee), and the pet unless Lone Wolf. Shares are 2026-09-27 assumptions from the tooltips (a 1.0 s weapon pair, Raptor Strike every 6 s, Mongoose Bite every ~8 s with Expose Prey, Strider Kick every 8 s) until the fight lab's melee rotation calibrates them. Fight lab calibration (2026-10-15, beta client 1.60.1.70291, build cand-melee-pet at level 60, 1500 fights): shares are the measured damage split (Cat melee 22%, Immolation Trap 15%, Raptor Strike 13%, Melee (off-hand) 12%, Melee 12%, Strider Kick 8%, Claw 6%, Mongoose Bite 5%, Auto Shot 5%, Bite 2%, Lacerate 0%, Counterattack 0%) and the leveling time split is fight 83% / drink 8% / eat 4% / other 0% / death 5% of talent-affected time with fight_coupling 0.0 (downtime and deaths scale with fight length). Fight lab speed (2026-10-17): its leveling build kills 1.03x as fast as bm-leveling's optimizer build (level-weighted time per kill 24.3s vs 25.1s), written as abs_dps_factor so respec.py compares the models on that.",
       "sources": [
         {
           "id": "melee",
@@ -447,7 +447,7 @@
         "leveling-st": {"fight": 0.827, "drink": 0.081, "eat": 0.045, "other": 0.0, "death": 0.047},
         "solo-60": {"fight": 0.827, "drink": 0.081, "eat": 0.045, "other": 0.0, "death": 0.047}
       },
-      "abs_dps_factor": 1.072,
+      "abs_dps_factor": 1.033,
       "kind_weights": {"kite": 0, "range": 0},
       "kind_note": "Melee playstyle: it fights in melee range and never kites, so roots and slows used to open distance (kite) and longer spell or shot range (range) are worth nothing to it in any scenario. Snares that stop a runner (stick), stuns and movement still count.",
       "fight_coupling": {"leveling-st": 0.0, "solo-60": 0.0},

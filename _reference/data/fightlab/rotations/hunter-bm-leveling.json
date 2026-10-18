@@ -5,9 +5,11 @@
   },
   "Arcane Shot": {
    "off": true
+  },
+  "Summon Hawk": {
+   "off": true
   }
  },
- "drink_below": 0.15,
  "class": "hunter",
  "spec": "bm-leveling",
  "build": "leveling-beast-mastery",
@@ -18,7 +20,7 @@
   50,
   60
  ],
- "date": "2026-10-09",
+ "date": "2026-10-17",
  "fights": 600,
  "confirm": 3000,
  "changes": [
@@ -30,8 +32,8 @@
     "Multi-Shot",
     true
    ],
-   "gain_seed1": 0.031601778836169214,
-   "gain_seed2": 0.02655836020309832
+   "gain_seed1": 0.04845786431242549,
+   "gain_seed2": 0.04454050460639214
   },
   {
    "round": 2,
@@ -41,51 +43,51 @@
     "Arcane Shot",
     true
    ],
-   "gain_seed1": 0.023745488389563696,
-   "gain_seed2": 0.023109821886278414
+   "gain_seed1": 0.022802494229182457,
+   "gain_seed2": 0.022279705578895026
   },
   {
    "round": 3,
-   "change": "drink below 15% mana",
+   "change": "never cast Summon Hawk",
    "rule": [
-    "drink_below",
-    null,
-    0.15
+    "off",
+    "Summon Hawk",
+    true
    ],
-   "gain_seed1": 0.00556812613932256,
-   "gain_seed2": 0.009057262769929242
+   "gain_seed1": 0.011415562313085381,
+   "gain_seed2": 0.008181990898646352
   }
  ],
- "weighted_before": 27.970051144616043,
- "weighted_after": 26.34830959681106,
+ "weighted_before": 27.676583672947082,
+ "weighted_after": 25.652895327972708,
  "per_level": {
   "20": {
-   "before": 18.6618256082824,
-   "after": 17.029960701681116,
+   "before": 18.61590848337763,
+   "after": 17.016033908793542,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 23.783096538028623,
-   "after": 22.456477971263066,
+   "before": 23.815338571403903,
+   "after": 21.158637581661715,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 29.017773953199534,
-   "after": 26.74504575184301,
+   "before": 28.961126961295324,
+   "after": 25.81591614070916,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 29.644841607709257,
-   "after": 27.82932643766705,
+   "before": 29.189680399177185,
+   "after": 27.246596459816462,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 31.072129701720957,
-   "after": 29.90167023722708,
+   "before": 30.510155156151235,
+   "after": 29.34221318916051,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
