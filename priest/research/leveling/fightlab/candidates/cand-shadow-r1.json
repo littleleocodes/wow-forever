@@ -1,261 +1,56 @@
 {
- "id": "cand-shadow-r1",
- "allocation": {
-  "Discipline": [
-   [
-    "Twin Disciplines",
-    5
-   ],
-   [
-    "Martyrdom",
-    2
-   ],
-   [
-    "Improved Power Word: Shield",
-    3
-   ],
-   [
-    "Meditation",
-    3
-   ],
-   [
-    "Inner Focus",
-    1
-   ]
+  "id": "cand-shadow-r1",
+  "allocation": {
+    "Discipline": [
+      ["Twin Disciplines", 5],
+      ["Martyrdom", 2],
+      ["Mental Strength", 3],
+      ["Improved Power Word: Shield", 3],
+      ["Inner Focus", 1]
+    ],
+    "Holy": [
+      ["Twilight Focus", 3]
+    ],
+    "Shadow": [
+      ["Blackout", 5],
+      ["Shadow Focus", 5],
+      ["Spirit Tap", 2],
+      ["Improved Shadow Word: Pain", 2],
+      ["Shadow Reach", 2],
+      ["Improved Mind Flay", 2],
+      ["Improved Psychic Scream", 2],
+      ["Mind Flay", 1],
+      ["Shadow Weaving", 3],
+      ["Vampiric Embrace", 1],
+      ["Silence", 1],
+      ["Darkness", 5],
+      ["Early Demise", 2],
+      ["Shadowform", 1]
+    ]
+  },
+  "order": [
+    {"levels": "10-14", "tree": "Shadow", "talent": "Blackout", "points": 5},
+    {"levels": "15-16", "tree": "Shadow", "talent": "Shadow Reach", "points": 2},
+    {"levels": "17-19", "tree": "Shadow", "talent": "Shadow Focus", "points": 3},
+    {"levels": "20", "tree": "Shadow", "talent": "Mind Flay", "points": 1},
+    {"levels": "21-22", "tree": "Shadow", "talent": "Improved Mind Flay", "points": 2},
+    {"levels": "23-24", "tree": "Shadow", "talent": "Shadow Focus", "points": 2},
+    {"levels": "25", "tree": "Shadow", "talent": "Vampiric Embrace", "points": 1},
+    {"levels": "26-28", "tree": "Shadow", "talent": "Shadow Weaving", "points": 3},
+    {"levels": "29-30", "tree": "Shadow", "talent": "Spirit Tap", "points": 2},
+    {"levels": "31-32", "tree": "Shadow", "talent": "Improved Shadow Word: Pain", "points": 2},
+    {"levels": "33-34", "tree": "Shadow", "talent": "Improved Psychic Scream", "points": 2},
+    {"levels": "35-36", "tree": "Shadow", "talent": "Early Demise", "points": 2},
+    {"levels": "37-39", "tree": "Shadow", "talent": "Darkness", "points": 3},
+    {"levels": "40", "tree": "Shadow", "talent": "Shadowform", "points": 1},
+    {"levels": "41-42", "tree": "Shadow", "talent": "Darkness", "points": 2},
+    {"levels": "43-47", "tree": "Discipline", "talent": "Twin Disciplines", "points": 5},
+    {"levels": "48-50", "tree": "Discipline", "talent": "Mental Strength", "points": 3},
+    {"levels": "51-52", "tree": "Discipline", "talent": "Martyrdom", "points": 2},
+    {"levels": "53", "tree": "Discipline", "talent": "Inner Focus", "points": 1},
+    {"levels": "54-56", "tree": "Discipline", "talent": "Improved Power Word: Shield", "points": 3},
+    {"levels": "57-59", "tree": "Holy", "talent": "Twilight Focus", "points": 3},
+    {"levels": "60", "tree": "Shadow", "talent": "Silence", "points": 1}
   ],
-  "Holy": [
-   [
-    "Twilight Focus",
-    3
-   ]
-  ],
-  "Shadow": [
-   [
-    "Spirit Tap",
-    2
-   ],
-   [
-    "Shadow Focus",
-    5
-   ],
-   [
-    "Blackout",
-    5
-   ],
-   [
-    "Improved Shadow Word: Pain",
-    2
-   ],
-   [
-    "Shadow Reach",
-    2
-   ],
-   [
-    "Mind Flay",
-    1
-   ],
-   [
-    "Improved Mind Flay",
-    2
-   ],
-   [
-    "Improved Psychic Scream",
-    2
-   ],
-   [
-    "Vampiric Embrace",
-    1
-   ],
-   [
-    "Shadow Weaving",
-    3
-   ],
-   [
-    "Silence",
-    1
-   ],
-   [
-    "Early Demise",
-    2
-   ],
-   [
-    "Darkness",
-    5
-   ],
-   [
-    "Shadowform",
-    1
-   ]
-  ]
- },
- "order": [
-  {
-   "levels": "10-11",
-   "tree": "Shadow",
-   "talent": "Spirit Tap",
-   "points": 2
-  },
-  {
-   "levels": "12-14",
-   "tree": "Shadow",
-   "talent": "Shadow Focus",
-   "points": 3
-  },
-  {
-   "levels": "15-16",
-   "tree": "Shadow",
-   "talent": "Improved Shadow Word: Pain",
-   "points": 2
-  },
-  {
-   "levels": "17-18",
-   "tree": "Shadow",
-   "talent": "Shadow Focus",
-   "points": 2
-  },
-  {
-   "levels": "19",
-   "tree": "Shadow",
-   "talent": "Shadow Reach",
-   "points": 1
-  },
-  {
-   "levels": "20",
-   "tree": "Shadow",
-   "talent": "Mind Flay",
-   "points": 1
-  },
-  {
-   "levels": "21-22",
-   "tree": "Shadow",
-   "talent": "Improved Mind Flay",
-   "points": 2
-  },
-  {
-   "levels": "23",
-   "tree": "Shadow",
-   "talent": "Shadow Reach",
-   "points": 1
-  },
-  {
-   "levels": "24",
-   "tree": "Shadow",
-   "talent": "Blackout",
-   "points": 1
-  },
-  {
-   "levels": "25-26",
-   "tree": "Shadow",
-   "talent": "Shadow Weaving",
-   "points": 2
-  },
-  {
-   "levels": "27-29",
-   "tree": "Holy",
-   "talent": "Twilight Focus",
-   "points": 3
-  },
-  {
-   "levels": "30",
-   "tree": "Shadow",
-   "talent": "Shadow Weaving",
-   "points": 1
-  },
-  {
-   "levels": "31",
-   "tree": "Shadow",
-   "talent": "Vampiric Embrace",
-   "points": 1
-  },
-  {
-   "levels": "32",
-   "tree": "Shadow",
-   "talent": "Blackout",
-   "points": 1
-  },
-  {
-   "levels": "33",
-   "tree": "Shadow",
-   "talent": "Silence",
-   "points": 1
-  },
-  {
-   "levels": "34-36",
-   "tree": "Shadow",
-   "talent": "Blackout",
-   "points": 3
-  },
-  {
-   "levels": "37",
-   "tree": "Shadow",
-   "talent": "Improved Psychic Scream",
-   "points": 1
-  },
-  {
-   "levels": "38-39",
-   "tree": "Shadow",
-   "talent": "Early Demise",
-   "points": 2
-  },
-  {
-   "levels": "40-42",
-   "tree": "Shadow",
-   "talent": "Darkness",
-   "points": 3
-  },
-  {
-   "levels": "43",
-   "tree": "Shadow",
-   "talent": "Shadowform",
-   "points": 1
-  },
-  {
-   "levels": "44",
-   "tree": "Shadow",
-   "talent": "Darkness",
-   "points": 1
-  },
-  {
-   "levels": "45",
-   "tree": "Shadow",
-   "talent": "Improved Psychic Scream",
-   "points": 1
-  },
-  {
-   "levels": "46",
-   "tree": "Shadow",
-   "talent": "Darkness",
-   "points": 1
-  },
-  {
-   "levels": "47-51",
-   "tree": "Discipline",
-   "talent": "Twin Disciplines",
-   "points": 5
-  },
-  {
-   "levels": "52-53",
-   "tree": "Discipline",
-   "talent": "Martyrdom",
-   "points": 2
-  },
-  {
-   "levels": "54-56",
-   "tree": "Discipline",
-   "talent": "Improved Power Word: Shield",
-   "points": 3
-  },
-  {
-   "levels": "57-59",
-   "tree": "Discipline",
-   "talent": "Meditation",
-   "points": 3
-  },
-  {
-   "levels": "60",
-   "tree": "Discipline",
-   "talent": "Inner Focus",
-   "points": 1
-  }
- ]
+  "notes": ["2026-10-19 (candidate_orders.py, repair_builds.repair, client build 70425 trees): 14/3/34 -> 14/3/34; +1 Mental Strength (tier gating for Improved Power Word: Shield); +1 Mental Strength (tier gating for Improved Power Word: Shield); +1 Mental Strength (tier gating for Improved Power Word: Shield); -1 Meditation (over 51); -1 Meditation (over 51); -1 Meditation (over 51) (the shadow-dps model, leveling-st).", "2026-10-19 (candidate_orders.py): the saved order named talents the current trees lack; replaced by the stats model's leveling-st order for the same allocation (shadow-dps)."]
 }

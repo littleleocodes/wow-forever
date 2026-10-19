@@ -1,249 +1,55 @@
 {
- "id": "cand-enh-r4",
- "allocation": {
-  "Elemental": [
-   [
-    "Convection",
-    1
-   ],
-   [
-    "Concussion",
-    5
-   ],
-   [
-    "Call of Flame",
-    3
-   ],
-   [
-    "Reverberation",
-    5
-   ],
-   [
-    "Elemental Devastation",
-    3
-   ],
-   [
-    "Elemental Alacrity",
-    3
-   ],
-   [
-    "Elemental Focus",
-    1
-   ],
-   [
-    "Call of Thunder",
-    1
-   ],
-   [
-    "Earthbound",
-    1
-   ],
-   [
-    "Elemental Reach",
-    2
-   ],
-   [
-    "Elemental Fury",
-    4
-   ]
+  "id": "cand-enh-r4",
+  "allocation": {
+    "Elemental": [
+      ["Concussion", 5],
+      ["Call of Flame", 3],
+      ["Elemental Alacrity", 3],
+      ["Elemental Devastation", 3],
+      ["Reverberation", 5],
+      ["Elemental Warding", 1],
+      ["Elemental Reach", 2],
+      ["Lightning Overload", 3],
+      ["Elemental Fury", 4]
+    ],
+    "Enhancement": [
+      ["Ancestral Knowledge", 3],
+      ["Earth's Grasp", 2],
+      ["Thundering Strikes", 5],
+      ["Guardian Totems", 2],
+      ["Improved Lightning Shield", 3],
+      ["Mental Dexterity", 3],
+      ["Shamanistic Focus", 1],
+      ["Stormstrike", 1],
+      ["Mental Quickness", 2]
+    ],
+    "Restoration": []
+  },
+  "order": [
+    {"levels": "10-14", "tree": "Enhancement", "talent": "Thundering Strikes", "points": 5},
+    {"levels": "15", "tree": "Enhancement", "talent": "Mental Dexterity", "points": 1},
+    {"levels": "16", "tree": "Enhancement", "talent": "Improved Lightning Shield", "points": 1},
+    {"levels": "17", "tree": "Enhancement", "talent": "Mental Dexterity", "points": 1},
+    {"levels": "18", "tree": "Enhancement", "talent": "Improved Lightning Shield", "points": 1},
+    {"levels": "19", "tree": "Enhancement", "talent": "Mental Dexterity", "points": 1},
+    {"levels": "20", "tree": "Enhancement", "talent": "Shamanistic Focus", "points": 1},
+    {"levels": "21", "tree": "Enhancement", "talent": "Improved Lightning Shield", "points": 1},
+    {"levels": "22-23", "tree": "Enhancement", "talent": "Guardian Totems", "points": 2},
+    {"levels": "24", "tree": "Enhancement", "talent": "Ancestral Knowledge", "points": 1},
+    {"levels": "25", "tree": "Enhancement", "talent": "Stormstrike", "points": 1},
+    {"levels": "26-27", "tree": "Enhancement", "talent": "Ancestral Knowledge", "points": 2},
+    {"levels": "28-29", "tree": "Enhancement", "talent": "Earth's Grasp", "points": 2},
+    {"levels": "30-31", "tree": "Enhancement", "talent": "Mental Quickness", "points": 2},
+    {"levels": "32-36", "tree": "Elemental", "talent": "Concussion", "points": 5},
+    {"levels": "37-39", "tree": "Elemental", "talent": "Call of Flame", "points": 3},
+    {"levels": "40-44", "tree": "Elemental", "talent": "Reverberation", "points": 5},
+    {"levels": "45", "tree": "Elemental", "talent": "Elemental Warding", "points": 1},
+    {"levels": "46-48", "tree": "Elemental", "talent": "Elemental Devastation", "points": 3},
+    {"levels": "49-51", "tree": "Elemental", "talent": "Elemental Alacrity", "points": 3},
+    {"levels": "52-53", "tree": "Elemental", "talent": "Elemental Reach", "points": 2},
+    {"levels": "54-56", "tree": "Elemental", "talent": "Lightning Overload", "points": 3},
+    {"levels": "57-60", "tree": "Elemental", "talent": "Elemental Fury", "points": 4}
   ],
-  "Enhancement": [
-   [
-    "Thundering Strikes",
-    5
-   ],
-   [
-    "Ancestral Knowledge",
-    3
-   ],
-   [
-    "Earth's Grasp",
-    2
-   ],
-   [
-    "Mental Dexterity",
-    3
-   ],
-   [
-    "Improved Lightning Shield",
-    3
-   ],
-   [
-    "Guardian Totems",
-    2
-   ],
-   [
-    "Shamanistic Focus",
-    1
-   ],
-   [
-    "Stormstrike",
-    1
-   ],
-   [
-    "Mental Quickness",
-    2
-   ]
-  ],
-  "Restoration": []
- },
- "order": [
-  {
-   "levels": "10-11",
-   "tree": "Enhancement",
-   "talent": "Ancestral Knowledge",
-   "points": 2
-  },
-  {
-   "levels": "12-14",
-   "tree": "Enhancement",
-   "talent": "Thundering Strikes",
-   "points": 3
-  },
-  {
-   "levels": "15-16",
-   "tree": "Enhancement",
-   "talent": "Mental Dexterity",
-   "points": 2
-  },
-  {
-   "levels": "17-18",
-   "tree": "Enhancement",
-   "talent": "Improved Lightning Shield",
-   "points": 2
-  },
-  {
-   "levels": "19",
-   "tree": "Enhancement",
-   "talent": "Mental Dexterity",
-   "points": 1
-  },
-  {
-   "levels": "20",
-   "tree": "Enhancement",
-   "talent": "Shamanistic Focus",
-   "points": 1
-  },
-  {
-   "levels": "21",
-   "tree": "Enhancement",
-   "talent": "Improved Lightning Shield",
-   "points": 1
-  },
-  {
-   "levels": "22-23",
-   "tree": "Enhancement",
-   "talent": "Thundering Strikes",
-   "points": 2
-  },
-  {
-   "levels": "24",
-   "tree": "Enhancement",
-   "talent": "Earth's Grasp",
-   "points": 1
-  },
-  {
-   "levels": "25",
-   "tree": "Enhancement",
-   "talent": "Stormstrike",
-   "points": 1
-  },
-  {
-   "levels": "26",
-   "tree": "Enhancement",
-   "talent": "Earth's Grasp",
-   "points": 1
-  },
-  {
-   "levels": "27-28",
-   "tree": "Enhancement",
-   "talent": "Guardian Totems",
-   "points": 2
-  },
-  {
-   "levels": "29",
-   "tree": "Enhancement",
-   "talent": "Ancestral Knowledge",
-   "points": 1
-  },
-  {
-   "levels": "30-31",
-   "tree": "Enhancement",
-   "talent": "Mental Quickness",
-   "points": 2
-  },
-  {
-   "levels": "32-36",
-   "tree": "Elemental",
-   "talent": "Concussion",
-   "points": 5
-  },
-  {
-   "levels": "37-39",
-   "tree": "Elemental",
-   "talent": "Elemental Devastation",
-   "points": 3
-  },
-  {
-   "levels": "40-41",
-   "tree": "Elemental",
-   "talent": "Call of Flame",
-   "points": 2
-  },
-  {
-   "levels": "42",
-   "tree": "Elemental",
-   "talent": "Elemental Focus",
-   "points": 1
-  },
-  {
-   "levels": "43-45",
-   "tree": "Elemental",
-   "talent": "Elemental Alacrity",
-   "points": 3
-  },
-  {
-   "levels": "46",
-   "tree": "Elemental",
-   "talent": "Call of Flame",
-   "points": 1
-  },
-  {
-   "levels": "47-51",
-   "tree": "Elemental",
-   "talent": "Reverberation",
-   "points": 5
-  },
-  {
-   "levels": "52",
-   "tree": "Elemental",
-   "talent": "Earthbound",
-   "points": 1
-  },
-  {
-   "levels": "53-54",
-   "tree": "Elemental",
-   "talent": "Elemental Reach",
-   "points": 2
-  },
-  {
-   "levels": "55",
-   "tree": "Elemental",
-   "talent": "Convection",
-   "points": 1
-  },
-  {
-   "levels": "56",
-   "tree": "Elemental",
-   "talent": "Call of Thunder",
-   "points": 1
-  },
-  {
-   "levels": "57-60",
-   "tree": "Elemental",
-   "talent": "Elemental Fury",
-   "points": 4
-  }
- ],
- "note": "Optimizer build saved by rebuild.py on 2026-09-26 (calibration round 4)"
+  "note": "Optimizer build saved by rebuild.py on 2026-09-26 (calibration round 4)",
+  "notes": ["2026-10-19 (candidate_orders.py, repair_builds.repair, client build 70425 trees): 29/22/0 -> 29/22/0; Call of Thunder 1 gone; +1 Elemental Warding (tier gating for Elemental Fury); +1 Lightning Overload (prerequisite of Elemental Fury); +1 Lightning Overload (prerequisite of Elemental Fury); +1 Lightning Overload (prerequisite of Elemental Fury); -1 Convection (over 51); -1 Elemental Focus (over 51); -1 Earthbound (over 51) (the enhancement-dps model, leveling-st).", "2026-10-19 (candidate_orders.py): the saved order named talents the current trees lack; replaced by the stats model's leveling-st order for the same allocation (enhancement-dps)."]
 }

@@ -1,258 +1,57 @@
 {
- "id": "cand-affliction-r3",
- "allocation": {
-  "Affliction": [
-   [
-    "Improved Life Tap",
-    2
-   ],
-   [
-    "Suppression",
-    5
-   ],
-   [
-    "Malediction",
-    5
-   ],
-   [
-    "Amplify Curse",
-    1
-   ],
-   [
-    "Improved Bane of Agony",
-    2
-   ],
-   [
-    "Pandemic",
-    3
-   ],
-   [
-    "Malevolence",
-    5
-   ],
-   [
-    "Curse of Exhaustion",
-    1
-   ],
-   [
-    "Siphon Life",
-    1
-   ],
-   [
-    "Shadow Mastery",
-    2
-   ]
+  "id": "cand-affliction-r3",
+  "allocation": {
+    "Affliction": [
+      ["Improved Corruption", 5],
+      ["Improved Life Tap", 2],
+      ["Suppression", 5],
+      ["Amplify Curse", 1],
+      ["Improved Bane of Agony", 2],
+      ["Pandemic", 3],
+      ["Curse of Exhaustion", 1],
+      ["Malevolence", 5],
+      ["Siphon Life", 1],
+      ["Shadow Mastery", 2]
+    ],
+    "Demonology": [
+      ["Improved Health Funnel", 2],
+      ["Unholy Power", 5],
+      ["Demonic Energies", 2],
+      ["Improved Voidwalker", 3],
+      ["Demonic Sacrifice", 1],
+      ["Improved Sayaad", 3],
+      ["Master Summoner", 2],
+      ["Decimation", 1],
+      ["Fel Domination", 1],
+      ["Demonic Knowledge", 3],
+      ["Soul Link", 1]
+    ],
+    "Destruction": []
+  },
+  "order": [
+    {"levels": "10-14", "tree": "Affliction", "talent": "Improved Corruption", "points": 5},
+    {"levels": "15-19", "tree": "Affliction", "talent": "Suppression", "points": 5},
+    {"levels": "20", "tree": "Affliction", "talent": "Amplify Curse", "points": 1},
+    {"levels": "21-22", "tree": "Affliction", "talent": "Improved Bane of Agony", "points": 2},
+    {"levels": "23-25", "tree": "Affliction", "talent": "Pandemic", "points": 3},
+    {"levels": "26-29", "tree": "Affliction", "talent": "Malevolence", "points": 4},
+    {"levels": "30", "tree": "Affliction", "talent": "Siphon Life", "points": 1},
+    {"levels": "31", "tree": "Affliction", "talent": "Improved Life Tap", "points": 1},
+    {"levels": "32", "tree": "Affliction", "talent": "Malevolence", "points": 1},
+    {"levels": "33-37", "tree": "Demonology", "talent": "Unholy Power", "points": 5},
+    {"levels": "38", "tree": "Affliction", "talent": "Improved Life Tap", "points": 1},
+    {"levels": "39", "tree": "Affliction", "talent": "Curse of Exhaustion", "points": 1},
+    {"levels": "40-41", "tree": "Affliction", "talent": "Shadow Mastery", "points": 2},
+    {"levels": "42-43", "tree": "Demonology", "talent": "Improved Health Funnel", "points": 2},
+    {"levels": "44-45", "tree": "Demonology", "talent": "Demonic Energies", "points": 2},
+    {"levels": "46-48", "tree": "Demonology", "talent": "Improved Voidwalker", "points": 3},
+    {"levels": "49", "tree": "Demonology", "talent": "Demonic Sacrifice", "points": 1},
+    {"levels": "50-52", "tree": "Demonology", "talent": "Improved Sayaad", "points": 3},
+    {"levels": "53-54", "tree": "Demonology", "talent": "Master Summoner", "points": 2},
+    {"levels": "55", "tree": "Demonology", "talent": "Decimation", "points": 1},
+    {"levels": "56", "tree": "Demonology", "talent": "Fel Domination", "points": 1},
+    {"levels": "57", "tree": "Demonology", "talent": "Soul Link", "points": 1},
+    {"levels": "58-60", "tree": "Demonology", "talent": "Demonic Knowledge", "points": 3}
   ],
-  "Demonology": [
-   [
-    "Unholy Power",
-    5
-   ],
-   [
-    "Improved Health Funnel",
-    2
-   ],
-   [
-    "Improved Voidwalker",
-    3
-   ],
-   [
-    "Demonic Energies",
-    2
-   ],
-   [
-    "Master Summoner",
-    2
-   ],
-   [
-    "Improved Sayaad",
-    3
-   ],
-   [
-    "Demonic Sacrifice",
-    1
-   ],
-   [
-    "Fel Domination",
-    1
-   ],
-   [
-    "Decimation",
-    1
-   ],
-   [
-    "Demonic Knowledge",
-    3
-   ],
-   [
-    "Soul Link",
-    1
-   ]
-  ],
-  "Destruction": []
- },
- "order": [
-  {
-   "levels": "10-11",
-   "tree": "Affliction",
-   "talent": "Improved Life Tap",
-   "points": 2
-  },
-  {
-   "levels": "12-13",
-   "tree": "Demonology",
-   "talent": "Improved Health Funnel",
-   "points": 2
-  },
-  {
-   "levels": "14-16",
-   "tree": "Demonology",
-   "talent": "Unholy Power",
-   "points": 3
-  },
-  {
-   "levels": "17",
-   "tree": "Demonology",
-   "talent": "Demonic Energies",
-   "points": 1
-  },
-  {
-   "levels": "18-20",
-   "tree": "Demonology",
-   "talent": "Improved Voidwalker",
-   "points": 3
-  },
-  {
-   "levels": "21-23",
-   "tree": "Affliction",
-   "talent": "Suppression",
-   "points": 3
-  },
-  {
-   "levels": "24-28",
-   "tree": "Affliction",
-   "talent": "Malediction",
-   "points": 5
-  },
-  {
-   "levels": "29",
-   "tree": "Affliction",
-   "talent": "Amplify Curse",
-   "points": 1
-  },
-  {
-   "levels": "30-31",
-   "tree": "Affliction",
-   "talent": "Improved Bane of Agony",
-   "points": 2
-  },
-  {
-   "levels": "32-33",
-   "tree": "Affliction",
-   "talent": "Pandemic",
-   "points": 2
-  },
-  {
-   "levels": "34-35",
-   "tree": "Affliction",
-   "talent": "Malevolence",
-   "points": 2
-  },
-  {
-   "levels": "36",
-   "tree": "Affliction",
-   "talent": "Pandemic",
-   "points": 1
-  },
-  {
-   "levels": "37-38",
-   "tree": "Affliction",
-   "talent": "Malevolence",
-   "points": 2
-  },
-  {
-   "levels": "39",
-   "tree": "Affliction",
-   "talent": "Siphon Life",
-   "points": 1
-  },
-  {
-   "levels": "40",
-   "tree": "Affliction",
-   "talent": "Malevolence",
-   "points": 1
-  },
-  {
-   "levels": "41",
-   "tree": "Demonology",
-   "talent": "Demonic Energies",
-   "points": 1
-  },
-  {
-   "levels": "42-43",
-   "tree": "Demonology",
-   "talent": "Master Summoner",
-   "points": 2
-  },
-  {
-   "levels": "44-46",
-   "tree": "Demonology",
-   "talent": "Improved Sayaad",
-   "points": 3
-  },
-  {
-   "levels": "47",
-   "tree": "Demonology",
-   "talent": "Fel Domination",
-   "points": 1
-  },
-  {
-   "levels": "48-49",
-   "tree": "Demonology",
-   "talent": "Unholy Power",
-   "points": 2
-  },
-  {
-   "levels": "50",
-   "tree": "Demonology",
-   "talent": "Decimation",
-   "points": 1
-  },
-  {
-   "levels": "51",
-   "tree": "Demonology",
-   "talent": "Demonic Sacrifice",
-   "points": 1
-  },
-  {
-   "levels": "52",
-   "tree": "Demonology",
-   "talent": "Soul Link",
-   "points": 1
-  },
-  {
-   "levels": "53-55",
-   "tree": "Demonology",
-   "talent": "Demonic Knowledge",
-   "points": 3
-  },
-  {
-   "levels": "56",
-   "tree": "Affliction",
-   "talent": "Curse of Exhaustion",
-   "points": 1
-  },
-  {
-   "levels": "57-58",
-   "tree": "Affliction",
-   "talent": "Suppression",
-   "points": 2
-  },
-  {
-   "levels": "59-60",
-   "tree": "Affliction",
-   "talent": "Shadow Mastery",
-   "points": 2
-  }
- ]
+  "notes": ["2026-10-19 (candidate_orders.py, repair_builds.repair, client build 70425 trees): 27/24/0 -> 27/24/0; Malediction 5 gone; +1 Improved Corruption (tier gating for Amplify Curse); +1 Improved Corruption (tier gating for Amplify Curse); +1 Improved Corruption (tier gating for Amplify Curse); +1 Improved Corruption (tier gating for Shadow Mastery); +1 Improved Corruption (tier gating for Shadow Mastery) (the affliction-leveling model, leveling-st).", "2026-10-19 (candidate_orders.py): the saved order named talents the current trees lack; replaced by the stats model's leveling-st order for the same allocation (affliction-leveling)."]
 }

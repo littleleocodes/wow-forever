@@ -1,260 +1,58 @@
 {
- "id": "cand-affliction-r7",
- "allocation": {
-  "Affliction": [
-   [
-    "Improved Life Tap",
-    2
-   ],
-   [
-    "Suppression",
-    5
-   ],
-   [
-    "Malediction",
-    1
-   ],
-   [
-    "Soul Harvest",
-    2
-   ],
-   [
-    "Improved Bane of Agony",
-    2
-   ],
-   [
-    "Amplify Curse",
-    1
-   ],
-   [
-    "Pandemic",
-    3
-   ],
-   [
-    "Malevolence",
-    1
-   ],
-   [
-    "Nightfall",
-    2
-   ],
-   [
-    "Curse of Exhaustion",
-    1
-   ],
-   [
-    "Siphon Life",
-    1
-   ]
+  "id": "cand-affliction-r7",
+  "allocation": {
+    "Affliction": [
+      ["Improved Corruption", 1],
+      ["Improved Life Tap", 2],
+      ["Suppression", 5],
+      ["Soul Harvest", 2],
+      ["Amplify Curse", 1],
+      ["Improved Bane of Agony", 2],
+      ["Pandemic", 3],
+      ["Curse of Exhaustion", 1],
+      ["Malevolence", 1],
+      ["Nightfall", 2],
+      ["Siphon Life", 1]
+    ],
+    "Demonology": [],
+    "Destruction": [
+      ["Bane", 5],
+      ["Destructive Reach", 2],
+      ["Cataclysm", 3],
+      ["Ruin", 4],
+      ["Shadowburn", 1],
+      ["Agonizing Flames", 3],
+      ["Conflagrate", 1],
+      ["Intensity", 3],
+      ["Bane of Havoc", 1],
+      ["Pyroclasm", 2],
+      ["Shadow and Flame", 5]
+    ]
+  },
+  "order": [
+    {"levels": "10", "tree": "Affliction", "talent": "Improved Corruption", "points": 1},
+    {"levels": "11-15", "tree": "Affliction", "talent": "Suppression", "points": 5},
+    {"levels": "16-17", "tree": "Affliction", "talent": "Improved Life Tap", "points": 2},
+    {"levels": "18-19", "tree": "Affliction", "talent": "Soul Harvest", "points": 2},
+    {"levels": "20", "tree": "Affliction", "talent": "Amplify Curse", "points": 1},
+    {"levels": "21-22", "tree": "Affliction", "talent": "Improved Bane of Agony", "points": 2},
+    {"levels": "23-25", "tree": "Affliction", "talent": "Pandemic", "points": 3},
+    {"levels": "26", "tree": "Affliction", "talent": "Malevolence", "points": 1},
+    {"levels": "27", "tree": "Affliction", "talent": "Curse of Exhaustion", "points": 1},
+    {"levels": "28-29", "tree": "Affliction", "talent": "Nightfall", "points": 2},
+    {"levels": "30", "tree": "Affliction", "talent": "Siphon Life", "points": 1},
+    {"levels": "31-35", "tree": "Destruction", "talent": "Bane", "points": 5},
+    {"levels": "36-37", "tree": "Destruction", "talent": "Destructive Reach", "points": 2},
+    {"levels": "38-40", "tree": "Destruction", "talent": "Cataclysm", "points": 3},
+    {"levels": "41-44", "tree": "Destruction", "talent": "Ruin", "points": 4},
+    {"levels": "45", "tree": "Destruction", "talent": "Shadowburn", "points": 1},
+    {"levels": "46-48", "tree": "Destruction", "talent": "Agonizing Flames", "points": 3},
+    {"levels": "49", "tree": "Destruction", "talent": "Conflagrate", "points": 1},
+    {"levels": "50-52", "tree": "Destruction", "talent": "Intensity", "points": 3},
+    {"levels": "53", "tree": "Destruction", "talent": "Bane of Havoc", "points": 1},
+    {"levels": "54-55", "tree": "Destruction", "talent": "Pyroclasm", "points": 2},
+    {"levels": "56-60", "tree": "Destruction", "talent": "Shadow and Flame", "points": 5}
   ],
-  "Demonology": [],
-  "Destruction": [
-   [
-    "Destructive Reach",
-    2
-   ],
-   [
-    "Bane",
-    5
-   ],
-   [
-    "Cataclysm",
-    3
-   ],
-   [
-    "Ruin",
-    4
-   ],
-   [
-    "Shadowburn",
-    1
-   ],
-   [
-    "Intensity",
-    3
-   ],
-   [
-    "Agonizing Flames",
-    3
-   ],
-   [
-    "Conflagrate",
-    1
-   ],
-   [
-    "Pyroclasm",
-    2
-   ],
-   [
-    "Bane of Havoc",
-    1
-   ],
-   [
-    "Shadow and Flame",
-    5
-   ]
-  ]
- },
- "order": [
-  {
-   "levels": "10-11",
-   "tree": "Affliction",
-   "talent": "Improved Life Tap",
-   "points": 2
-  },
-  {
-   "levels": "12-14",
-   "tree": "Affliction",
-   "talent": "Suppression",
-   "points": 3
-  },
-  {
-   "levels": "15-16",
-   "tree": "Affliction",
-   "talent": "Soul Harvesting",
-   "points": 2
-  },
-  {
-   "levels": "17-18",
-   "tree": "Affliction",
-   "talent": "Suppression",
-   "points": 2
-  },
-  {
-   "levels": "19",
-   "tree": "Affliction",
-   "talent": "Malediction",
-   "points": 1
-  },
-  {
-   "levels": "20",
-   "tree": "Affliction",
-   "talent": "Amplify Curse",
-   "points": 1
-  },
-  {
-   "levels": "21-22",
-   "tree": "Affliction",
-   "talent": "Improved Bane of Agony",
-   "points": 2
-  },
-  {
-   "levels": "23-24",
-   "tree": "Affliction",
-   "talent": "Pandemic",
-   "points": 2
-  },
-  {
-   "levels": "25-26",
-   "tree": "Affliction",
-   "talent": "Nightfall",
-   "points": 2
-  },
-  {
-   "levels": "27",
-   "tree": "Affliction",
-   "talent": "Pandemic",
-   "points": 1
-  },
-  {
-   "levels": "28",
-   "tree": "Affliction",
-   "talent": "Curse of Exhaustion",
-   "points": 1
-  },
-  {
-   "levels": "29",
-   "tree": "Affliction",
-   "talent": "Malevolence",
-   "points": 1
-  },
-  {
-   "levels": "30",
-   "tree": "Affliction",
-   "talent": "Siphon Life",
-   "points": 1
-  },
-  {
-   "levels": "31-32",
-   "tree": "Destruction",
-   "talent": "Destructive Reach",
-   "points": 2
-  },
-  {
-   "levels": "33-35",
-   "tree": "Destruction",
-   "talent": "Bane",
-   "points": 3
-  },
-  {
-   "levels": "36-38",
-   "tree": "Destruction",
-   "talent": "Cataclysm",
-   "points": 3
-  },
-  {
-   "levels": "39-40",
-   "tree": "Destruction",
-   "talent": "Bane",
-   "points": 2
-  },
-  {
-   "levels": "41-44",
-   "tree": "Destruction",
-   "talent": "Ruin",
-   "points": 4
-  },
-  {
-   "levels": "45",
-   "tree": "Destruction",
-   "talent": "Shadowburn",
-   "points": 1
-  },
-  {
-   "levels": "46",
-   "tree": "Destruction",
-   "talent": "Conflagrate",
-   "points": 1
-  },
-  {
-   "levels": "47-49",
-   "tree": "Destruction",
-   "talent": "Agonizing Flames",
-   "points": 3
-  },
-  {
-   "levels": "50",
-   "tree": "Destruction",
-   "talent": "Intensity",
-   "points": 1
-  },
-  {
-   "levels": "51",
-   "tree": "Destruction",
-   "talent": "Bane of Havoc",
-   "points": 1
-  },
-  {
-   "levels": "52-53",
-   "tree": "Destruction",
-   "talent": "Intensity",
-   "points": 2
-  },
-  {
-   "levels": "54-55",
-   "tree": "Destruction",
-   "talent": "Pyroclasm",
-   "points": 2
-  },
-  {
-   "levels": "56-60",
-   "tree": "Destruction",
-   "talent": "Shadow and Flame",
-   "points": 5
-  }
- ],
- "note": "Optimizer build saved by rebuild.py on 2026-09-26 (calibration round 7)",
- "notes": [
-  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
- ]
+  "note": "Optimizer build saved by rebuild.py on 2026-09-26 (calibration round 7)",
+  "notes": ["2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)", "2026-10-19 (candidate_orders.py, repair_builds.repair, client build 70425 trees): 21/0/30 -> 21/0/30; Malediction 1 gone; +1 Improved Corruption (tier gating for Amplify Curse) (the affliction-leveling model, leveling-st).", "2026-10-19 (candidate_orders.py): the saved order named talents the current trees lack; replaced by the stats model's leveling-st order for the same allocation (affliction-leveling)."]
 }

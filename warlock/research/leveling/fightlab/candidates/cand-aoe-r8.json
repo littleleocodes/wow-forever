@@ -1,190 +1,52 @@
 {
- "id": "cand-aoe-r8",
- "allocation": {
-  "Affliction": [
-   [
-    "Improved Corruption",
-    5
-   ],
-   [
-    "Suppression",
-    5
-   ],
-   [
-    "Malediction",
-    5
-   ],
-   [
-    "Improved Bane of Agony",
-    2
-   ]
+  "id": "cand-aoe-r8",
+  "allocation": {
+    "Affliction": [
+      ["Improved Corruption", 5],
+      ["Suppression", 5],
+      ["Improved Drains", 2],
+      ["Improved Bane of Agony", 2]
+    ],
+    "Demonology": [
+      ["Demonic Embrace", 5],
+      ["Unholy Power", 5],
+      ["Demonic Aegis", 2],
+      ["Demonic Energies", 1],
+      ["Improved Voidwalker", 3],
+      ["Demonic Sacrifice", 1],
+      ["Master Summoner", 2],
+      ["Fel Domination", 1],
+      ["Demonic Knowledge", 3],
+      ["Soul Link", 1]
+    ],
+    "Destruction": [
+      ["Bane", 2],
+      ["Improved Shadow Bolt", 3],
+      ["Cataclysm", 3],
+      ["Molten Skin", 5]
+    ]
+  },
+  "order": [
+    {"levels": "10-14", "tree": "Demonology", "talent": "Demonic Embrace", "points": 5},
+    {"levels": "15-16", "tree": "Demonology", "talent": "Demonic Aegis", "points": 2},
+    {"levels": "17", "tree": "Demonology", "talent": "Demonic Energies", "points": 1},
+    {"levels": "18-19", "tree": "Demonology", "talent": "Unholy Power", "points": 2},
+    {"levels": "20", "tree": "Demonology", "talent": "Demonic Sacrifice", "points": 1},
+    {"levels": "21-23", "tree": "Demonology", "talent": "Unholy Power", "points": 3},
+    {"levels": "24-26", "tree": "Demonology", "talent": "Improved Voidwalker", "points": 3},
+    {"levels": "27-28", "tree": "Demonology", "talent": "Master Summoner", "points": 2},
+    {"levels": "29", "tree": "Demonology", "talent": "Fel Domination", "points": 1},
+    {"levels": "30", "tree": "Demonology", "talent": "Soul Link", "points": 1},
+    {"levels": "31-33", "tree": "Demonology", "talent": "Demonic Knowledge", "points": 3},
+    {"levels": "34-38", "tree": "Affliction", "talent": "Improved Corruption", "points": 5},
+    {"levels": "39-43", "tree": "Affliction", "talent": "Suppression", "points": 5},
+    {"levels": "44-45", "tree": "Affliction", "talent": "Improved Bane of Agony", "points": 2},
+    {"levels": "46-47", "tree": "Destruction", "talent": "Bane", "points": 2},
+    {"levels": "48-50", "tree": "Destruction", "talent": "Improved Shadow Bolt", "points": 3},
+    {"levels": "51-55", "tree": "Destruction", "talent": "Molten Skin", "points": 5},
+    {"levels": "56-58", "tree": "Destruction", "talent": "Cataclysm", "points": 3},
+    {"levels": "59-60", "tree": "Affliction", "talent": "Improved Drains", "points": 2}
   ],
-  "Demonology": [
-   [
-    "Demonic Embrace",
-    5
-   ],
-   [
-    "Unholy Power",
-    5
-   ],
-   [
-    "Demonic Aegis",
-    2
-   ],
-   [
-    "Improved Voidwalker",
-    3
-   ],
-   [
-    "Demonic Energies",
-    1
-   ],
-   [
-    "Demonic Sacrifice",
-    1
-   ],
-   [
-    "Master Summoner",
-    2
-   ],
-   [
-    "Fel Domination",
-    1
-   ],
-   [
-    "Soul Link",
-    1
-   ],
-   [
-    "Demonic Knowledge",
-    3
-   ]
-  ],
-  "Destruction": [
-   [
-    "Bane",
-    2
-   ],
-   [
-    "Improved Shadow Bolt",
-    3
-   ],
-   [
-    "Molten Skin",
-    5
-   ]
-  ]
- },
- "order": [
-  {
-   "levels": "10-14",
-   "tree": "Demonology",
-   "talent": "Demonic Embrace",
-   "points": 5
-  },
-  {
-   "levels": "15-16",
-   "tree": "Demonology",
-   "talent": "Demonic Aegis",
-   "points": 2
-  },
-  {
-   "levels": "17-19",
-   "tree": "Demonology",
-   "talent": "Unholy Power",
-   "points": 3
-  },
-  {
-   "levels": "20",
-   "tree": "Demonology",
-   "talent": "Demonic Sacrifice",
-   "points": 1
-  },
-  {
-   "levels": "21-22",
-   "tree": "Demonology",
-   "talent": "Unholy Power",
-   "points": 2
-  },
-  {
-   "levels": "23",
-   "tree": "Demonology",
-   "talent": "Demonic Energies",
-   "points": 1
-  },
-  {
-   "levels": "24-26",
-   "tree": "Demonology",
-   "talent": "Improved Voidwalker",
-   "points": 3
-  },
-  {
-   "levels": "27-28",
-   "tree": "Demonology",
-   "talent": "Master Summoner",
-   "points": 2
-  },
-  {
-   "levels": "29",
-   "tree": "Demonology",
-   "talent": "Fel Domination",
-   "points": 1
-  },
-  {
-   "levels": "30",
-   "tree": "Demonology",
-   "talent": "Soul Link",
-   "points": 1
-  },
-  {
-   "levels": "31-33",
-   "tree": "Demonology",
-   "talent": "Demonic Knowledge",
-   "points": 3
-  },
-  {
-   "levels": "34-38",
-   "tree": "Affliction",
-   "talent": "Improved Corruption",
-   "points": 5
-  },
-  {
-   "levels": "39-43",
-   "tree": "Affliction",
-   "talent": "Suppression",
-   "points": 5
-  },
-  {
-   "levels": "44-45",
-   "tree": "Affliction",
-   "talent": "Improved Bane of Agony",
-   "points": 2
-  },
-  {
-   "levels": "46-47",
-   "tree": "Destruction",
-   "talent": "Bane",
-   "points": 2
-  },
-  {
-   "levels": "48-52",
-   "tree": "Affliction",
-   "talent": "Malediction",
-   "points": 5
-  },
-  {
-   "levels": "53-55",
-   "tree": "Destruction",
-   "talent": "Improved Shadow Bolt",
-   "points": 3
-  },
-  {
-   "levels": "56-60",
-   "tree": "Destruction",
-   "talent": "Molten Skin",
-   "points": 5
-  }
- ],
- "note": "Optimizer build saved by rebuild.py on 2026-10-15 (calibration round 8)"
+  "note": "Optimizer build saved by rebuild.py on 2026-10-15 (calibration round 8)",
+  "notes": ["2026-10-19 (candidate_orders.py, repair_builds.repair, client build 70425 trees): 17/24/10 -> 14/24/13; Malediction 5 gone; refill +3 Cataclysm, +2 Improved Drains (the affliction-leveling model, leveling-aoe).", "2026-10-19 (candidate_orders.py): the saved order named talents the current trees lack; replaced by the stats model's leveling-aoe order for the same allocation (affliction-leveling)."]
 }

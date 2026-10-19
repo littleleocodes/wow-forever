@@ -1,223 +1,51 @@
 {
- "id": "cand-enh-r1",
- "allocation": {
-  "Elemental": [
-   [
-    "Concussion",
-    5
-   ],
-   [
-    "Reverberation",
-    5
-   ],
-   [
-    "Elemental Devastation",
-    3
-   ],
-   [
-    "Elemental Focus",
-    1
-   ],
-   [
-    "Elemental Alacrity",
-    1
-   ]
+  "id": "cand-enh-r1",
+  "allocation": {
+    "Elemental": [
+      ["Concussion", 5],
+      ["Reverberation", 5],
+      ["Elemental Devastation", 3],
+      ["Elemental Focus", 1],
+      ["Elemental Alacrity", 1]
+    ],
+    "Enhancement": [
+      ["Thundering Strikes", 5],
+      ["Earth's Grasp", 2],
+      ["Mental Dexterity", 3],
+      ["Guardian Totems", 2],
+      ["Improved Lightning Shield", 2],
+      ["Shamanistic Focus", 1],
+      ["Stormstrike", 1],
+      ["Flurry", 5],
+      ["Mental Quickness", 2]
+    ],
+    "Restoration": [
+      ["Totemic Focus", 5],
+      ["Tidal Focus", 5],
+      ["Improved Reincarnation", 2],
+      ["Water Shield", 1]
+    ]
+  },
+  "order": [
+    {"levels": "10-14", "tree": "Enhancement", "talent": "Thundering Strikes", "points": 5},
+    {"levels": "15-17", "tree": "Enhancement", "talent": "Mental Dexterity", "points": 3},
+    {"levels": "18-19", "tree": "Enhancement", "talent": "Improved Lightning Shield", "points": 2},
+    {"levels": "20", "tree": "Enhancement", "talent": "Shamanistic Focus", "points": 1},
+    {"levels": "21-22", "tree": "Enhancement", "talent": "Guardian Totems", "points": 2},
+    {"levels": "23-24", "tree": "Enhancement", "talent": "Earth's Grasp", "points": 2},
+    {"levels": "25", "tree": "Enhancement", "talent": "Stormstrike", "points": 1},
+    {"levels": "26-29", "tree": "Enhancement", "talent": "Flurry", "points": 4},
+    {"levels": "30-31", "tree": "Enhancement", "talent": "Mental Quickness", "points": 2},
+    {"levels": "32", "tree": "Enhancement", "talent": "Flurry", "points": 1},
+    {"levels": "33-37", "tree": "Restoration", "talent": "Tidal Focus", "points": 5},
+    {"levels": "38-42", "tree": "Restoration", "talent": "Totemic Focus", "points": 5},
+    {"levels": "43-47", "tree": "Elemental", "talent": "Concussion", "points": 5},
+    {"levels": "48-52", "tree": "Elemental", "talent": "Reverberation", "points": 5},
+    {"levels": "53-55", "tree": "Elemental", "talent": "Elemental Devastation", "points": 3},
+    {"levels": "56", "tree": "Elemental", "talent": "Elemental Focus", "points": 1},
+    {"levels": "57", "tree": "Elemental", "talent": "Elemental Alacrity", "points": 1},
+    {"levels": "58-59", "tree": "Restoration", "talent": "Improved Reincarnation", "points": 2},
+    {"levels": "60", "tree": "Restoration", "talent": "Water Shield", "points": 1}
   ],
-  "Enhancement": [
-   [
-    "Thundering Strikes",
-    5
-   ],
-   [
-    "Earth's Grasp",
-    2
-   ],
-   [
-    "Mental Dexterity",
-    3
-   ],
-   [
-    "Guardian Totems",
-    2
-   ],
-   [
-    "Improved Lightning Shield",
-    2
-   ],
-   [
-    "Shamanistic Focus",
-    1
-   ],
-   [
-    "Stormstrike",
-    1
-   ],
-   [
-    "Flurry",
-    5
-   ],
-   [
-    "Mental Quickness",
-    2
-   ]
-  ],
-  "Restoration": [
-   [
-    "Totemic Focus",
-    5
-   ],
-   [
-    "Tidal Focus",
-    5
-   ],
-   [
-    "Improved Reincarnation",
-    2
-   ],
-   [
-    "Water Shield",
-    1
-   ]
-  ]
- },
- "order": [
-  {
-   "levels": "10-14",
-   "tree": "Enhancement",
-   "talent": "Thundering Strikes",
-   "points": 5
-  },
-  {
-   "levels": "15-17",
-   "tree": "Enhancement",
-   "talent": "Mental Dexterity",
-   "points": 3
-  },
-  {
-   "levels": "18-19",
-   "tree": "Enhancement",
-   "talent": "Improved Lightning Shield",
-   "points": 2
-  },
-  {
-   "levels": "20",
-   "tree": "Enhancement",
-   "talent": "Shamanistic Focus",
-   "points": 1
-  },
-  {
-   "levels": "21-22",
-   "tree": "Enhancement",
-   "talent": "Earth's Grasp",
-   "points": 2
-  },
-  {
-   "levels": "23-24",
-   "tree": "Enhancement",
-   "talent": "Guardian Totems",
-   "points": 2
-  },
-  {
-   "levels": "25",
-   "tree": "Enhancement",
-   "talent": "Stormstrike",
-   "points": 1
-  },
-  {
-   "levels": "26-28",
-   "tree": "Elemental",
-   "talent": "Concussion",
-   "points": 3
-  },
-  {
-   "levels": "29",
-   "tree": "Enhancement",
-   "talent": "Flurry",
-   "points": 1
-  },
-  {
-   "levels": "30-31",
-   "tree": "Elemental",
-   "talent": "Concussion",
-   "points": 2
-  },
-  {
-   "levels": "32-35",
-   "tree": "Elemental",
-   "talent": "Reverberation",
-   "points": 4
-  },
-  {
-   "levels": "36",
-   "tree": "Enhancement",
-   "talent": "Flurry",
-   "points": 1
-  },
-  {
-   "levels": "37",
-   "tree": "Elemental",
-   "talent": "Reverberation",
-   "points": 1
-  },
-  {
-   "levels": "38",
-   "tree": "Elemental",
-   "talent": "Elemental Focus",
-   "points": 1
-  },
-  {
-   "levels": "39-40",
-   "tree": "Enhancement",
-   "talent": "Flurry",
-   "points": 2
-  },
-  {
-   "levels": "41-42",
-   "tree": "Enhancement",
-   "talent": "Mental Quickness",
-   "points": 2
-  },
-  {
-   "levels": "43-45",
-   "tree": "Elemental",
-   "talent": "Elemental Devastation",
-   "points": 3
-  },
-  {
-   "levels": "46-50",
-   "tree": "Restoration",
-   "talent": "Totemic Focus",
-   "points": 5
-  },
-  {
-   "levels": "51-55",
-   "tree": "Restoration",
-   "talent": "Tidal Focus",
-   "points": 5
-  },
-  {
-   "levels": "56",
-   "tree": "Restoration",
-   "talent": "Water Shield",
-   "points": 1
-  },
-  {
-   "levels": "57-58",
-   "tree": "Restoration",
-   "talent": "Improved Reincarnation",
-   "points": 2
-  },
-  {
-   "levels": "59",
-   "tree": "Enhancement",
-   "talent": "Flurry",
-   "points": 1
-  },
-  {
-   "levels": "60",
-   "tree": "Elemental",
-   "talent": "Elemental Alacrity",
-   "points": 1
-  }
- ]
+  "notes": ["2026-10-19 (candidate_orders.py): the saved order named talents the current trees lack; replaced by the stats model's leveling-st order for the same allocation (enhancement-dps)."]
 }

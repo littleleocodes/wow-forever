@@ -1,200 +1,55 @@
 {
- "id": "cand-aoe-r3",
- "allocation": {
-  "Discipline": [
-   [
-    "Power in Light",
-    5
-   ],
-   [
-    "Improved Power Word: Shield",
-    1
-   ]
+  "id": "cand-aoe-r3",
+  "allocation": {
+    "Discipline": [
+      ["Power in Light", 3],
+      ["Wand Specialization", 2],
+      ["Silent Resolve", 1]
+    ],
+    "Holy": [
+      ["Improved Renew", 2],
+      ["Twilight Focus", 3],
+      ["Spell Warding", 5],
+      ["Blessed Recovery", 3],
+      ["Holy Nova", 1]
+    ],
+    "Shadow": [
+      ["Blackout", 5],
+      ["Shadow Focus", 5],
+      ["Spirit Tap", 5],
+      ["Improved Mind Blast", 5],
+      ["Improved Shadow Word: Pain", 2],
+      ["Shadow Reach", 2],
+      ["Improved Mind Flay", 2],
+      ["Mind Flay", 1],
+      ["Vampiric Embrace", 1],
+      ["Devouring Contagion", 2],
+      ["Shadowform", 1]
+    ]
+  },
+  "order": [
+    {"levels": "10-12", "tree": "Holy", "talent": "Twilight Focus", "points": 3},
+    {"levels": "13-17", "tree": "Shadow", "talent": "Shadow Focus", "points": 5},
+    {"levels": "18-19", "tree": "Shadow", "talent": "Improved Shadow Word: Pain", "points": 2},
+    {"levels": "20-21", "tree": "Shadow", "talent": "Shadow Reach", "points": 2},
+    {"levels": "22", "tree": "Shadow", "talent": "Blackout", "points": 1},
+    {"levels": "23", "tree": "Shadow", "talent": "Mind Flay", "points": 1},
+    {"levels": "24-25", "tree": "Shadow", "talent": "Improved Mind Flay", "points": 2},
+    {"levels": "26-27", "tree": "Holy", "talent": "Improved Renew", "points": 2},
+    {"levels": "28-32", "tree": "Holy", "talent": "Spell Warding", "points": 5},
+    {"levels": "33", "tree": "Holy", "talent": "Holy Nova", "points": 1},
+    {"levels": "34-36", "tree": "Holy", "talent": "Blessed Recovery", "points": 3},
+    {"levels": "37-40", "tree": "Shadow", "talent": "Blackout", "points": 4},
+    {"levels": "41-42", "tree": "Shadow", "talent": "Spirit Tap", "points": 2},
+    {"levels": "43", "tree": "Shadow", "talent": "Vampiric Embrace", "points": 1},
+    {"levels": "44-45", "tree": "Shadow", "talent": "Devouring Contagion", "points": 2},
+    {"levels": "46-48", "tree": "Shadow", "talent": "Spirit Tap", "points": 3},
+    {"levels": "49-53", "tree": "Shadow", "talent": "Improved Mind Blast", "points": 5},
+    {"levels": "54", "tree": "Shadow", "talent": "Shadowform", "points": 1},
+    {"levels": "55-57", "tree": "Discipline", "talent": "Power in Light", "points": 3},
+    {"levels": "58-59", "tree": "Discipline", "talent": "Wand Specialization", "points": 2},
+    {"levels": "60", "tree": "Discipline", "talent": "Silent Resolve", "points": 1}
   ],
-  "Holy": [
-   [
-    "Twilight Focus",
-    3
-   ],
-   [
-    "Improved Renew",
-    2
-   ],
-   [
-    "Spell Warding",
-    5
-   ],
-   [
-    "Holy Nova",
-    1
-   ],
-   [
-    "Blessed Recovery",
-    3
-   ]
-  ],
-  "Shadow": [
-   [
-    "Spirit Tap",
-    5
-   ],
-   [
-    "Shadow Focus",
-    5
-   ],
-   [
-    "Blackout",
-    5
-   ],
-   [
-    "Shadow Reach",
-    2
-   ],
-   [
-    "Shadow Affinity",
-    2
-   ],
-   [
-    "Mind Flay",
-    1
-   ],
-   [
-    "Improved Mind Flay",
-    2
-   ],
-   [
-    "Improved Mind Blast",
-    5
-   ],
-   [
-    "Vampiric Embrace",
-    1
-   ],
-   [
-    "Devouring Contagion",
-    2
-   ],
-   [
-    "Shadowform",
-    1
-   ]
-  ]
- },
- "order": [
-  {
-   "levels": "10-14",
-   "tree": "Shadow",
-   "talent": "Spirit Tap",
-   "points": 5
-  },
-  {
-   "levels": "15-16",
-   "tree": "Shadow",
-   "talent": "Shadow Reach",
-   "points": 2
-  },
-  {
-   "levels": "17-19",
-   "tree": "Shadow",
-   "talent": "Shadow Focus",
-   "points": 3
-  },
-  {
-   "levels": "20",
-   "tree": "Shadow",
-   "talent": "Mind Flay",
-   "points": 1
-  },
-  {
-   "levels": "21-22",
-   "tree": "Shadow",
-   "talent": "Improved Mind Flay",
-   "points": 2
-  },
-  {
-   "levels": "23-27",
-   "tree": "Shadow",
-   "talent": "Improved Mind Blast",
-   "points": 5
-  },
-  {
-   "levels": "28-29",
-   "tree": "Shadow",
-   "talent": "Shadow Focus",
-   "points": 2
-  },
-  {
-   "levels": "30-31",
-   "tree": "Shadow",
-   "talent": "Devouring Contagion",
-   "points": 2
-  },
-  {
-   "levels": "32",
-   "tree": "Shadow",
-   "talent": "Vampiric Embrace",
-   "points": 1
-  },
-  {
-   "levels": "33-37",
-   "tree": "Shadow",
-   "talent": "Blackout",
-   "points": 5
-  },
-  {
-   "levels": "38-39",
-   "tree": "Shadow",
-   "talent": "Shadow Affinity",
-   "points": 2
-  },
-  {
-   "levels": "40",
-   "tree": "Shadow",
-   "talent": "Shadowform",
-   "points": 1
-  },
-  {
-   "levels": "41-43",
-   "tree": "Holy",
-   "talent": "Twilight Focus",
-   "points": 3
-  },
-  {
-   "levels": "44-45",
-   "tree": "Holy",
-   "talent": "Improved Renew",
-   "points": 2
-  },
-  {
-   "levels": "46-50",
-   "tree": "Holy",
-   "talent": "Spell Warding",
-   "points": 5
-  },
-  {
-   "levels": "51",
-   "tree": "Holy",
-   "talent": "Holy Nova",
-   "points": 1
-  },
-  {
-   "levels": "52-54",
-   "tree": "Holy",
-   "talent": "Blessed Recovery",
-   "points": 3
-  },
-  {
-   "levels": "55-59",
-   "tree": "Discipline",
-   "talent": "Power in Light",
-   "points": 5
-  },
-  {
-   "levels": "60",
-   "tree": "Discipline",
-   "talent": "Improved Power Word: Shield",
-   "points": 1
-  }
- ],
- "note": "Optimizer build saved by rebuild.py on 2026-09-27 (calibration round 3)"
+  "note": "Optimizer build saved by rebuild.py on 2026-09-27 (calibration round 3)",
+  "notes": ["2026-10-19 (candidate_orders.py, repair_builds.repair, client build 70425 trees): 6/14/31 -> 6/14/31; Shadow Affinity 2 gone; +1 Silent Resolve (tier gating for Improved Power Word: Shield); +1 Silent Resolve (tier gating for Improved Power Word: Shield); +1 Silent Resolve (tier gating for Improved Power Word: Shield); +1 Wand Specialization (tier gating for Improved Power Word: Shield); +1 Wand Specialization (tier gating for Improved Power Word: Shield); +1 Improved Shadow Word: Pain (tier gating for Shadowform); +1 Improved Shadow Word: Pain (tier gating for Shadowform); -1 Improved Power Word: Shield (over 51); -1 Power in Light (over 51); -1 Power in Light (over 51); -1 Silent Resolve (over 51); -1 Silent Resolve (over 51) (the shadow-dps model, leveling-aoe).", "2026-10-19 (candidate_orders.py): the saved order named talents the current trees lack; replaced by the stats model's leveling-aoe order for the same allocation (shadow-dps)."]
 }

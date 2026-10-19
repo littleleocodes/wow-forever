@@ -1,220 +1,55 @@
 {
- "id": "cand-aoe-r2",
- "allocation": {
-  "Arms": [
-   [
-    "Deflection",
-    5
-   ],
-   [
-    "Improved Rend",
-    3
-   ],
-   [
-    "Improved Charge",
-    2
-   ],
-   [
-    "Improved Overpower",
-    2
-   ],
-   [
-    "Deep Wounds",
-    3
-   ],
-   [
-    "Spearing Strike",
-    1
-   ],
-   [
-    "Two-Handed Weapon Specialization",
-    3
-   ],
-   [
-    "Impale",
-    1
-   ]
+  "id": "cand-aoe-r2",
+  "allocation": {
+    "Arms": [
+      ["Deflection", 5],
+      ["Improved Rend", 3],
+      ["Improved Charge", 2],
+      ["Improved Overpower", 2],
+      ["Deep Wounds", 3],
+      ["Spearing Strike", 1],
+      ["Two-Handed Weapon Specialization", 3],
+      ["Impale", 1]
+    ],
+    "Fury": [
+      ["Booming Voice", 3],
+      ["Cruelty", 5],
+      ["Unbridled Wrath", 5],
+      ["Piercing Howl", 1],
+      ["Blood Craze", 3],
+      ["Enrage", 5],
+      ["Improved Execute", 2],
+      ["Death Wish", 1],
+      ["Flurry", 5],
+      ["Bloodthirst", 1]
+    ],
+    "Protection": []
+  },
+  "order": [
+    {"levels": "10-11", "tree": "Arms", "talent": "Deflection", "points": 2},
+    {"levels": "12-13", "tree": "Fury", "talent": "Cruelty", "points": 2},
+    {"levels": "14", "tree": "Arms", "talent": "Deflection", "points": 1},
+    {"levels": "15-17", "tree": "Fury", "talent": "Cruelty", "points": 3},
+    {"levels": "18", "tree": "Arms", "talent": "Deflection", "points": 1},
+    {"levels": "19-23", "tree": "Fury", "talent": "Unbridled Wrath", "points": 5},
+    {"levels": "24-26", "tree": "Fury", "talent": "Blood Craze", "points": 3},
+    {"levels": "27", "tree": "Fury", "talent": "Piercing Howl", "points": 1},
+    {"levels": "28", "tree": "Fury", "talent": "Booming Voice", "points": 1},
+    {"levels": "29-33", "tree": "Fury", "talent": "Enrage", "points": 5},
+    {"levels": "34", "tree": "Fury", "talent": "Death Wish", "points": 1},
+    {"levels": "35-36", "tree": "Fury", "talent": "Improved Execute", "points": 2},
+    {"levels": "37-38", "tree": "Fury", "talent": "Booming Voice", "points": 2},
+    {"levels": "39-43", "tree": "Fury", "talent": "Flurry", "points": 5},
+    {"levels": "44", "tree": "Fury", "talent": "Bloodthirst", "points": 1},
+    {"levels": "45", "tree": "Arms", "talent": "Deflection", "points": 1},
+    {"levels": "46-47", "tree": "Arms", "talent": "Improved Overpower", "points": 2},
+    {"levels": "48-50", "tree": "Arms", "talent": "Improved Rend", "points": 3},
+    {"levels": "51-53", "tree": "Arms", "talent": "Deep Wounds", "points": 3},
+    {"levels": "54-55", "tree": "Arms", "talent": "Improved Charge", "points": 2},
+    {"levels": "56", "tree": "Arms", "talent": "Spearing Strike", "points": 1},
+    {"levels": "57-59", "tree": "Arms", "talent": "Two-Handed Weapon Specialization", "points": 3},
+    {"levels": "60", "tree": "Arms", "talent": "Impale", "points": 1}
   ],
-  "Fury": [
-   [
-    "Booming Voice",
-    3
-   ],
-   [
-    "Cruelty",
-    5
-   ],
-   [
-    "Unbridled Wrath",
-    5
-   ],
-   [
-    "Piercing Howl",
-    1
-   ],
-   [
-    "Blood Craze",
-    3
-   ],
-   [
-    "Enrage",
-    5
-   ],
-   [
-    "Improved Execute",
-    2
-   ],
-   [
-    "Death Wish",
-    1
-   ],
-   [
-    "Flurry",
-    5
-   ],
-   [
-    "Bloodthirst",
-    1
-   ]
-  ],
-  "Protection": []
- },
- "order": [
-  {
-   "levels": "10-14",
-   "tree": "Fury",
-   "talent": "Cruelty",
-   "points": 5
-  },
-  {
-   "levels": "15-19",
-   "tree": "Fury",
-   "talent": "Unbridled Wrath",
-   "points": 5
-  },
-  {
-   "levels": "20-22",
-   "tree": "Fury",
-   "talent": "Blood Craze",
-   "points": 3
-  },
-  {
-   "levels": "23",
-   "tree": "Fury",
-   "talent": "Piercing Howl",
-   "points": 1
-  },
-  {
-   "levels": "24",
-   "tree": "Fury",
-   "talent": "Boundless Rage",
-   "points": 1
-  },
-  {
-   "levels": "25-29",
-   "tree": "Fury",
-   "talent": "Enrage",
-   "points": 5
-  },
-  {
-   "levels": "30",
-   "tree": "Fury",
-   "talent": "Death Wish",
-   "points": 1
-  },
-  {
-   "levels": "31-32",
-   "tree": "Fury",
-   "talent": "Precision",
-   "points": 2
-  },
-  {
-   "levels": "33-34",
-   "tree": "Fury",
-   "talent": "Improved Execute",
-   "points": 2
-  },
-  {
-   "levels": "35-39",
-   "tree": "Fury",
-   "talent": "Flurry",
-   "points": 5
-  },
-  {
-   "levels": "40",
-   "tree": "Fury",
-   "talent": "Bloodthirst",
-   "points": 1
-  },
-  {
-   "levels": "41-42",
-   "tree": "Arms",
-   "talent": "Deflection",
-   "points": 2
-  },
-  {
-   "levels": "43-45",
-   "tree": "Arms",
-   "talent": "Improved Rend",
-   "points": 3
-  },
-  {
-   "levels": "46",
-   "tree": "Arms",
-   "talent": "Improved Overpower",
-   "points": 1
-  },
-  {
-   "levels": "47-48",
-   "tree": "Arms",
-   "talent": "Deflection",
-   "points": 2
-  },
-  {
-   "levels": "49-50",
-   "tree": "Arms",
-   "talent": "Improved Charge",
-   "points": 2
-  },
-  {
-   "levels": "51-53",
-   "tree": "Arms",
-   "talent": "Deep Wounds",
-   "points": 3
-  },
-  {
-   "levels": "54",
-   "tree": "Arms",
-   "talent": "Deflection",
-   "points": 1
-  },
-  {
-   "levels": "55",
-   "tree": "Arms",
-   "talent": "Improved Overpower",
-   "points": 1
-  },
-  {
-   "levels": "56-58",
-   "tree": "Arms",
-   "talent": "Two-Handed Weapon Specialization",
-   "points": 3
-  },
-  {
-   "levels": "59",
-   "tree": "Arms",
-   "talent": "Spearing Strike",
-   "points": 1
-  },
-  {
-   "levels": "60",
-   "tree": "Arms",
-   "talent": "Impale",
-   "points": 1
-  }
- ],
- "note": "Optimizer build saved by rebuild.py on 2026-09-26 (calibration round 2)",
- "notes": [
-  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
- ]
+  "note": "Optimizer build saved by rebuild.py on 2026-09-26 (calibration round 2)",
+  "notes": ["2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)", "2026-10-19 (candidate_orders.py): the saved order named talents the current trees lack; replaced by the stats model's leveling-aoe order for the same allocation (arms-2h-raid)."]
 }

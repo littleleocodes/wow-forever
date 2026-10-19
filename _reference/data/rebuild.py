@@ -386,6 +386,12 @@ def run_variant(cls, V, a, log, result):
             best = min(means, key=means.get)
             if best != opt and means[best] < means[opt] * (1 - RACE_NOISE):
                 cand = json.load(open(paths.fightlab_dir(cls) / "candidates" / f"{best}.json", encoding="utf-8"))
+                import candidate_orders   # 2026-10-19: cand-aoe-r1 carried a 70170-era order (Boundless Rage) into opt-arms-2h-raid-leveling-aoe
+                candidate_orders.fix_order(cls, cand, tag)
+                if candidate_orders.errors(cls, cand):
+                    print(f"  {spec}: {best} is faster but not legal on the current trees; not promoted: {candidate_orders.errors(cls, cand)[0]}")
+                    best = opt
+            if best != opt and means[best] < means[opt] * (1 - RACE_NOISE):
                 bp = ROOT / cls / "research/talents/forever/proposed-builds.json"
                 data = json.load(open(bp, encoding="utf-8"))
                 for b in data["builds"]:

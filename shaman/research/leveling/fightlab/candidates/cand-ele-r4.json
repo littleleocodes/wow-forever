@@ -1,216 +1,56 @@
 {
- "id": "cand-ele-r4",
- "allocation": {
-  "Elemental": [
-   [
-    "Convection",
-    5
-   ],
-   [
-    "Concussion",
-    5
-   ],
-   [
-    "Call of Flame",
-    3
-   ],
-   [
-    "Elemental Focus",
-    1
-   ],
-   [
-    "Elemental Alacrity",
-    3
-   ],
-   [
-    "Call of Thunder",
-    1
-   ],
-   [
-    "Eye of the Storm",
-    3
-   ],
-   [
-    "Lightning Overload",
-    3
-   ],
-   [
-    "Earthbound",
-    1
-   ],
-   [
-    "Elemental Fury",
-    5
-   ],
-   [
-    "Lava Burst",
-    1
-   ]
+  "id": "cand-ele-r4",
+  "allocation": {
+    "Elemental": [
+      ["Concussion", 5],
+      ["Convection", 5],
+      ["Call of Flame", 3],
+      ["Elemental Alacrity", 3],
+      ["Elemental Focus", 1],
+      ["Earthbound", 1],
+      ["Eye of the Storm", 3],
+      ["Lava Burst", 1],
+      ["Lightning Overload", 3],
+      ["Elemental Fury", 5]
+    ],
+    "Enhancement": [
+      ["Earth's Grasp", 1],
+      ["Thundering Strikes", 5],
+      ["Guardian Totems", 2],
+      ["Improved Ghost Wolf", 2],
+      ["Anticipation", 1],
+      ["Shamanistic Focus", 1]
+    ],
+    "Restoration": [
+      ["Tidal Focus", 5],
+      ["Mindfulness", 3],
+      ["Totemic Focus", 1]
+    ]
+  },
+  "order": [
+    {"levels": "10-14", "tree": "Elemental", "talent": "Convection", "points": 5},
+    {"levels": "15-17", "tree": "Elemental", "talent": "Call of Flame", "points": 3},
+    {"levels": "18-19", "tree": "Elemental", "talent": "Elemental Alacrity", "points": 2},
+    {"levels": "20", "tree": "Elemental", "talent": "Elemental Focus", "points": 1},
+    {"levels": "21-25", "tree": "Enhancement", "talent": "Thundering Strikes", "points": 5},
+    {"levels": "26-27", "tree": "Enhancement", "talent": "Improved Ghost Wolf", "points": 2},
+    {"levels": "28-29", "tree": "Enhancement", "talent": "Guardian Totems", "points": 2},
+    {"levels": "30", "tree": "Enhancement", "talent": "Earth's Grasp", "points": 1},
+    {"levels": "31", "tree": "Enhancement", "talent": "Shamanistic Focus", "points": 1},
+    {"levels": "32", "tree": "Elemental", "talent": "Elemental Alacrity", "points": 1},
+    {"levels": "33-35", "tree": "Elemental", "talent": "Concussion", "points": 3},
+    {"levels": "36", "tree": "Elemental", "talent": "Earthbound", "points": 1},
+    {"levels": "37-38", "tree": "Elemental", "talent": "Concussion", "points": 2},
+    {"levels": "39-40", "tree": "Elemental", "talent": "Eye of the Storm", "points": 2},
+    {"levels": "41", "tree": "Elemental", "talent": "Lava Burst", "points": 1},
+    {"levels": "42-46", "tree": "Restoration", "talent": "Tidal Focus", "points": 5},
+    {"levels": "47-49", "tree": "Restoration", "talent": "Mindfulness", "points": 3},
+    {"levels": "50-52", "tree": "Elemental", "talent": "Lightning Overload", "points": 3},
+    {"levels": "53", "tree": "Elemental", "talent": "Eye of the Storm", "points": 1},
+    {"levels": "54-58", "tree": "Elemental", "talent": "Elemental Fury", "points": 5},
+    {"levels": "59", "tree": "Enhancement", "talent": "Anticipation", "points": 1},
+    {"levels": "60", "tree": "Restoration", "talent": "Totemic Focus", "points": 1}
   ],
-  "Enhancement": [
-   [
-    "Thundering Strikes",
-    5
-   ],
-   [
-    "Earth's Grasp",
-    1
-   ],
-   [
-    "Improved Ghost Wolf",
-    2
-   ],
-   [
-    "Guardian Totems",
-    2
-   ],
-   [
-    "Shamanistic Focus",
-    1
-   ],
-   [
-    "Anticipation",
-    1
-   ]
-  ],
-  "Restoration": [
-   [
-    "Totemic Focus",
-    5
-   ],
-   [
-    "Mindfulness",
-    3
-   ]
-  ]
- },
- "order": [
-  {
-   "levels": "10-14",
-   "tree": "Elemental",
-   "talent": "Convection",
-   "points": 5
-  },
-  {
-   "levels": "15-17",
-   "tree": "Elemental",
-   "talent": "Call of Flame",
-   "points": 3
-  },
-  {
-   "levels": "18-19",
-   "tree": "Elemental",
-   "talent": "Concussion",
-   "points": 2
-  },
-  {
-   "levels": "20",
-   "tree": "Elemental",
-   "talent": "Elemental Focus",
-   "points": 1
-  },
-  {
-   "levels": "21-25",
-   "tree": "Enhancement",
-   "talent": "Thundering Strikes",
-   "points": 5
-  },
-  {
-   "levels": "26-27",
-   "tree": "Enhancement",
-   "talent": "Improved Ghost Wolf",
-   "points": 2
-  },
-  {
-   "levels": "28-29",
-   "tree": "Enhancement",
-   "talent": "Guardian Totems",
-   "points": 2
-  },
-  {
-   "levels": "30",
-   "tree": "Enhancement",
-   "talent": "Earth's Grasp",
-   "points": 1
-  },
-  {
-   "levels": "31",
-   "tree": "Enhancement",
-   "talent": "Shamanistic Focus",
-   "points": 1
-  },
-  {
-   "levels": "32-34",
-   "tree": "Elemental",
-   "talent": "Elemental Alacrity",
-   "points": 3
-  },
-  {
-   "levels": "35-37",
-   "tree": "Elemental",
-   "talent": "Concussion",
-   "points": 3
-  },
-  {
-   "levels": "38",
-   "tree": "Elemental",
-   "talent": "Call of Thunder",
-   "points": 1
-  },
-  {
-   "levels": "39-40",
-   "tree": "Elemental",
-   "talent": "Eye of the Storm",
-   "points": 2
-  },
-  {
-   "levels": "41-43",
-   "tree": "Elemental",
-   "talent": "Lightning Overload",
-   "points": 3
-  },
-  {
-   "levels": "44",
-   "tree": "Elemental",
-   "talent": "Earthbound",
-   "points": 1
-  },
-  {
-   "levels": "45",
-   "tree": "Elemental",
-   "talent": "Eye of the Storm",
-   "points": 1
-  },
-  {
-   "levels": "46-50",
-   "tree": "Elemental",
-   "talent": "Elemental Fury",
-   "points": 5
-  },
-  {
-   "levels": "51",
-   "tree": "Elemental",
-   "talent": "Lava Burst",
-   "points": 1
-  },
-  {
-   "levels": "52-56",
-   "tree": "Restoration",
-   "talent": "Totemic Focus",
-   "points": 5
-  },
-  {
-   "levels": "57-59",
-   "tree": "Restoration",
-   "talent": "Mindfulness",
-   "points": 3
-  },
-  {
-   "levels": "60",
-   "tree": "Enhancement",
-   "talent": "Anticipation",
-   "points": 1
-  }
- ],
- "note": "Optimizer build saved by rebuild.py on 2026-09-28 (calibration round 4)"
+  "note": "Optimizer build saved by rebuild.py on 2026-09-28 (calibration round 4)",
+  "notes": ["2026-10-19 (candidate_orders.py, repair_builds.repair, client build 70425 trees): 31/12/8 -> 30/12/9; Call of Thunder 1 gone; +1 Tidal Focus (tier gating for Mindfulness); +1 Tidal Focus (tier gating for Mindfulness); +1 Tidal Focus (tier gating for Mindfulness); +1 Tidal Focus (tier gating for Mindfulness); +1 Tidal Focus (tier gating for Mindfulness); -1 Totemic Focus (over 51); -1 Totemic Focus (over 51); -1 Totemic Focus (over 51); -1 Totemic Focus (over 51) (the elemental-dps model, leveling-st).", "2026-10-19 (candidate_orders.py): the saved order named talents the current trees lack; replaced by the stats model's leveling-st order for the same allocation (elemental-dps)."]
 }

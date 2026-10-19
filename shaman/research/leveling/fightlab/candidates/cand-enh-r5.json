@@ -1,226 +1,56 @@
 {
- "id": "cand-enh-r5",
- "allocation": {
-  "Elemental": [
-   [
-    "Concussion",
-    5
-   ],
-   [
-    "Call of Flame",
-    3
-   ],
-   [
-    "Elemental Warding",
-    2
-   ],
-   [
-    "Elemental Focus",
-    1
-   ]
+  "id": "cand-enh-r5",
+  "allocation": {
+    "Elemental": [
+      ["Concussion", 5],
+      ["Call of Flame", 3],
+      ["Reverberation", 2],
+      ["Elemental Warding", 2]
+    ],
+    "Enhancement": [
+      ["Thundering Strikes", 5],
+      ["Guardian Totems", 2],
+      ["Improved Ghost Wolf", 2],
+      ["Improved Lightning Shield", 3],
+      ["Mental Dexterity", 3],
+      ["Anticipation", 1],
+      ["Shamanistic Focus", 1],
+      ["Stormstrike", 1],
+      ["Toughness", 2],
+      ["Improved Stormstrike", 1],
+      ["Mental Quickness", 2]
+    ],
+    "Restoration": [
+      ["Tidal Focus", 5],
+      ["Improved Reincarnation", 2],
+      ["Mindfulness", 3],
+      ["Totemic Focus", 5],
+      ["Mana Tide Totem", 1]
+    ]
+  },
+  "order": [
+    {"levels": "10-14", "tree": "Enhancement", "talent": "Thundering Strikes", "points": 5},
+    {"levels": "15-17", "tree": "Enhancement", "talent": "Mental Dexterity", "points": 3},
+    {"levels": "18-19", "tree": "Enhancement", "talent": "Improved Ghost Wolf", "points": 2},
+    {"levels": "20", "tree": "Enhancement", "talent": "Shamanistic Focus", "points": 1},
+    {"levels": "21-23", "tree": "Enhancement", "talent": "Improved Lightning Shield", "points": 3},
+    {"levels": "24", "tree": "Enhancement", "talent": "Guardian Totems", "points": 1},
+    {"levels": "25", "tree": "Enhancement", "talent": "Stormstrike", "points": 1},
+    {"levels": "26", "tree": "Enhancement", "talent": "Guardian Totems", "points": 1},
+    {"levels": "27", "tree": "Enhancement", "talent": "Anticipation", "points": 1},
+    {"levels": "28-29", "tree": "Enhancement", "talent": "Toughness", "points": 2},
+    {"levels": "30-31", "tree": "Enhancement", "talent": "Mental Quickness", "points": 2},
+    {"levels": "32-36", "tree": "Restoration", "talent": "Tidal Focus", "points": 5},
+    {"levels": "37-41", "tree": "Restoration", "talent": "Totemic Focus", "points": 5},
+    {"levels": "42-46", "tree": "Elemental", "talent": "Concussion", "points": 5},
+    {"levels": "47-49", "tree": "Elemental", "talent": "Call of Flame", "points": 3},
+    {"levels": "50-51", "tree": "Elemental", "talent": "Reverberation", "points": 2},
+    {"levels": "52-54", "tree": "Restoration", "talent": "Mindfulness", "points": 3},
+    {"levels": "55-56", "tree": "Restoration", "talent": "Improved Reincarnation", "points": 2},
+    {"levels": "57", "tree": "Restoration", "talent": "Mana Tide Totem", "points": 1},
+    {"levels": "58-59", "tree": "Elemental", "talent": "Elemental Warding", "points": 2},
+    {"levels": "60", "tree": "Enhancement", "talent": "Improved Stormstrike", "points": 1}
   ],
-  "Enhancement": [
-   [
-    "Thundering Strikes",
-    5
-   ],
-   [
-    "Mental Dexterity",
-    3
-   ],
-   [
-    "Improved Ghost Wolf",
-    2
-   ],
-   [
-    "Guardian Totems",
-    2
-   ],
-   [
-    "Improved Lightning Shield",
-    3
-   ],
-   [
-    "Shamanistic Focus",
-    1
-   ],
-   [
-    "Anticipation",
-    1
-   ],
-   [
-    "Stormstrike",
-    1
-   ],
-   [
-    "Toughness",
-    2
-   ],
-   [
-    "Mental Quickness",
-    2
-   ],
-   [
-    "Improved Stormstrike",
-    2
-   ]
-  ],
-  "Restoration": [
-   [
-    "Totemic Focus",
-    5
-   ],
-   [
-    "Tidal Focus",
-    5
-   ],
-   [
-    "Mindfulness",
-    3
-   ],
-   [
-    "Improved Reincarnation",
-    2
-   ],
-   [
-    "Mana Tide Totem",
-    1
-   ]
-  ]
- },
- "order": [
-  {
-   "levels": "10-14",
-   "tree": "Enhancement",
-   "talent": "Thundering Strikes",
-   "points": 5
-  },
-  {
-   "levels": "15-16",
-   "tree": "Enhancement",
-   "talent": "Improved Ghost Wolf",
-   "points": 2
-  },
-  {
-   "levels": "17-19",
-   "tree": "Enhancement",
-   "talent": "Mental Dexterity",
-   "points": 3
-  },
-  {
-   "levels": "20",
-   "tree": "Enhancement",
-   "talent": "Shamanistic Focus",
-   "points": 1
-  },
-  {
-   "levels": "21-23",
-   "tree": "Enhancement",
-   "talent": "Improved Lightning Shield",
-   "points": 3
-  },
-  {
-   "levels": "24",
-   "tree": "Enhancement",
-   "talent": "Guardian Totems",
-   "points": 1
-  },
-  {
-   "levels": "25",
-   "tree": "Enhancement",
-   "talent": "Stormstrike",
-   "points": 1
-  },
-  {
-   "levels": "26",
-   "tree": "Elemental",
-   "talent": "Concussion",
-   "points": 1
-  },
-  {
-   "levels": "27",
-   "tree": "Enhancement",
-   "talent": "Guardian Totems",
-   "points": 1
-  },
-  {
-   "levels": "28",
-   "tree": "Enhancement",
-   "talent": "Anticipation",
-   "points": 1
-  },
-  {
-   "levels": "29-30",
-   "tree": "Enhancement",
-   "talent": "Toughness",
-   "points": 2
-  },
-  {
-   "levels": "31-32",
-   "tree": "Enhancement",
-   "talent": "Mental Quickness",
-   "points": 2
-  },
-  {
-   "levels": "33-34",
-   "tree": "Enhancement",
-   "talent": "Improved Stormstrike",
-   "points": 2
-  },
-  {
-   "levels": "35-38",
-   "tree": "Elemental",
-   "talent": "Concussion",
-   "points": 4
-  },
-  {
-   "levels": "39-41",
-   "tree": "Elemental",
-   "talent": "Call of Flame",
-   "points": 3
-  },
-  {
-   "levels": "42-43",
-   "tree": "Elemental",
-   "talent": "Elemental Warding",
-   "points": 2
-  },
-  {
-   "levels": "44",
-   "tree": "Elemental",
-   "talent": "Elemental Focus",
-   "points": 1
-  },
-  {
-   "levels": "45-49",
-   "tree": "Restoration",
-   "talent": "Totemic Focus",
-   "points": 5
-  },
-  {
-   "levels": "50-54",
-   "tree": "Restoration",
-   "talent": "Tidal Focus",
-   "points": 5
-  },
-  {
-   "levels": "55-57",
-   "tree": "Restoration",
-   "talent": "Mindfulness",
-   "points": 3
-  },
-  {
-   "levels": "58-59",
-   "tree": "Restoration",
-   "talent": "Improved Reincarnation",
-   "points": 2
-  },
-  {
-   "levels": "60",
-   "tree": "Restoration",
-   "talent": "Mana Tide Totem",
-   "points": 1
-  }
- ],
- "note": "Optimizer build saved by rebuild.py on 2026-09-27 (calibration round 5)"
+  "note": "Optimizer build saved by rebuild.py on 2026-09-27 (calibration round 5)",
+  "notes": ["2026-10-19 (candidate_orders.py, repair_builds.repair, client build 70425 trees): 11/24/16 -> 12/23/16; +1 Reverberation (tier gating for Elemental Focus); +1 Reverberation (tier gating for Elemental Focus); -1 Elemental Focus (over 51); -1 Improved Stormstrike (over 51) (the enhancement-dps model, leveling-st).", "2026-10-19 (candidate_orders.py): the saved order named talents the current trees lack; replaced by the stats model's leveling-st order for the same allocation (enhancement-dps)."]
 }
