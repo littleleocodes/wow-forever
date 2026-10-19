@@ -73,6 +73,9 @@
         "auraIsKnown": {
          "auraId": {
           "spellId": 22959
+         },
+         "sourceUnit": {
+          "type": "CurrentTarget"
          }
         }
        },
@@ -86,6 +89,9 @@
              "auraNumStacks": {
               "auraId": {
                "spellId": 22959
+              },
+              "sourceUnit": {
+               "type": "CurrentTarget"
               }
              }
             },
@@ -103,6 +109,9 @@
              "auraRemainingTime": {
               "auraId": {
                "spellId": 22959
+              },
+              "sourceUnit": {
+               "type": "CurrentTarget"
               }
              }
             },

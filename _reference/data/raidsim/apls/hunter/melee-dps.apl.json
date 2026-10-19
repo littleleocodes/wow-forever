@@ -43,6 +43,16 @@
      "spellId": {
       "spellId": 1299447
      }
+    },
+    "condition": {
+     "auraIsInactive": {
+      "sourceUnit": {
+       "type": "Self"
+      },
+      "auraId": {
+       "spellId": 1299447
+      }
+     }
     }
    }
   },

@@ -28,7 +28,7 @@ import paths  # noqa: E402
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import id_names  # noqa: E402  (spell and item names the simulator's lists miss)
 GAME = "forever"   # or "classic-era": set by main() from --game; every path below follows it
-GAMES = {"forever": {"specs": "specs.json", "env": "WOW_FOREVER_SIM", "repo": "forever-repo", "bench": "foreverbench", "builds": "research/talents/forever/proposed-builds.json",
+GAMES = {"forever": {"specs": "specs.json", "env": "WOW_FOREVER_SIM", "repo": "wowsims-forever", "bench": "foreverbench", "builds": "research/talents/forever/proposed-builds.json",
                      "trees": "ui/sim/talents/trees", "reports": "research/raid/raidsim", "name_key": "fancyName", "ui": "ui/specs"},
          "classic-era": {"specs": "specs-classic.json", "env": "WOW_FOREVER_CLASSIC_SIM", "repo": "classic-repo", "bench": "classicbench", "builds": "research/talents/classic-baseline/builds.json",
                          "trees": "ui/core/talents/trees", "reports": "research/talents/classic-baseline/raidsim", "name_key": "fieldName", "ui": "ui"}}
@@ -547,7 +547,7 @@ def run_spec(cls, spec, a, repo):
     if first:
         print(f"  damage shares of {first['label']}: " + ", ".join(f"{k} {v * 100:.0f}%" for k, v in list(first["shares"].items())[:8])
               + f" | model sources: " + ", ".join(f"{k} {v * 100:.0f}%" for k, v in first["source_shares"].items()) + f" (unmatched {first['unmatched_share'] * 100:.0f}%)")
-    out = {"class": cls, "spec": spec, "game": GAME, "sim": {"repo": str(repo), "commit": git_commit(repo), "spec_folder": entry["sim_spec"], "gear": entry["gear"], "apl": apl_label(entry, repo), "apl_sim": entry["apl"],
+    out = {"class": cls, "spec": spec, "game": GAME, "sim": {"repo": str(repo), "commit": git_commit(repo), **sim_switches(), "spec_folder": entry["sim_spec"], "gear": entry["gear"], "apl": apl_label(entry, repo), "apl_sim": entry["apl"],
                                               "race": cfg["race"], "setting": setting(entry), "buffs": setting_text(entry, setting(entry)), "consumables": cfg["consumables"],
                                               "encounter": (f"a boss-level training dummy (level 63, creature type Elemental), {a.duration}s, execute phases 20/25/35/45/90%" if setting(entry) == "dummy" else f"single level-63 target (creature type Elemental), {a.duration}s, execute phases 20/25/35/45/90%"), "iterations": a.iterations, "seed": a.seed, "duration": a.duration},
            "date": datetime.date.today().isoformat(), "results": results, "deltas": deltas}
@@ -761,7 +761,7 @@ def run_environments(cls, spec, a, repo):
                         raid_casts[d["label"]] = action_casts(d.get("actions"), names)
     rows = [{"label": b["label"], "split": b["split"], "ours": b["ours"], "dps": dps[b["label"]],
              "raid_spell_casts": raid_casts[b["label"]][0], "raid_casts": raid_casts[b["label"]][1]} for b in builds]
-    out = {"class": cls, "spec": spec, "game": GAME, "date": datetime.date.today().isoformat(), "sim": {"repo": str(repo), "commit": git_commit(repo), "gear_raid": entry["gear"], "gear_max": gear_max,
+    out = {"class": cls, "spec": spec, "game": GAME, "date": datetime.date.today().isoformat(), "sim": {"repo": str(repo), "commit": git_commit(repo), **sim_switches(), "gear_raid": entry["gear"], "gear_max": gear_max,
                                                                                                           "iterations": a.iterations, "seed": a.seed}, "environments": ENVIRONMENTS, "results": rows}
     print(f"== {cls} {spec} environments (gear raid {pathlib.Path(entry['gear']).name}, max {pathlib.Path(gear_max).name}):")
     key = "dummy" if GAME == "forever" else "raid"
@@ -831,6 +831,13 @@ def scorer_removals(cls, spec, profile, allocs):
             wo = opt.score({k: v for k, v in al.items() if k != name}, 60)
             out.setdefault(bid, {})[name] = (with_s - wo) / (1.0 + wo)
     return out
+
+
+def sim_switches():
+    """The patch switches a run was made with (2026-10-18, audit 2 row 96: race-neutral numbers depended on an environment variable no
+    report recorded): racials on or off (WOW_FOREVER_NO_RACIALS=1), the pet swing rule (WOW_FOREVER_PET_NORMALIZE=1)."""
+    return {"racials": "off" if os.environ.get("WOW_FOREVER_NO_RACIALS") == "1" else "on",
+            "pet_normalize": os.environ.get("WOW_FOREVER_PET_NORMALIZE") == "1"}
 
 
 def git_commit(repo):

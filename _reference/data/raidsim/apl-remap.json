@@ -156,6 +156,48 @@
      44404,
      400589
     ]
+   ],
+   "fire.apl.json": [
+    [
+     2948,
+     10207
+    ],
+    [
+     25306,
+     10151
+    ]
+   ]
+  },
+  "condition_rewrites": {
+   "fire-raid-raid.apl.json": [
+    "auraNumStacks(22959) on the target",
+    "auraRemainingTime(22959) on the target"
+   ],
+   "fire-raid.apl.json": [
+    "auraNumStacks(22959) on the target",
+    "auraRemainingTime(22959) on the target"
+   ],
+   "frostfire-raid-raid.apl.json": [
+    "auraIsKnown(22959) on the target",
+    "auraNumStacks(22959) on the target",
+    "auraRemainingTime(22959) on the target"
+   ],
+   "frostfire-raid.apl.json": [
+    "auraNumStacks(22959) on the target",
+    "auraRemainingTime(22959) on the target",
+    "auraIsKnown(22959) on the target",
+    "auraNumStacks(22959) on the target",
+    "auraRemainingTime(22959) on the target"
+   ],
+   "frostfire-raid.base.apl.json": [
+    "auraIsKnown(22959) on the target",
+    "auraNumStacks(22959) on the target",
+    "auraRemainingTime(22959) on the target"
+   ],
+   "fire.apl.json": [
+    "auraNumStacks(22959) on the target",
+    "auraNumStacks(22959) on the target",
+    "auraRemainingTime(22959) on the target"
    ]
   },
   "unresolved": {},
@@ -163,6 +205,7 @@
  },
  "priest": {
   "changes": {},
+  "condition_rewrites": {},
   "unresolved": {
    "shadow-dps-raid.apl.json": [
     1277328
@@ -175,11 +218,20 @@
  },
  "warlock": {
   "changes": {},
+  "condition_rewrites": {},
   "unresolved": {},
   "sim": "09e739807"
  },
  "hunter": {
   "changes": {},
+  "condition_rewrites": {
+   "melee-dps-raid.apl.json": [
+    "guard 1299447"
+   ],
+   "melee-dps.apl.json": [
+    "guard 1299447"
+   ]
+  },
   "unresolved": {
    "bm-raid.apl.json": [
     19577
@@ -198,6 +250,12 @@
    ],
    "mm-raid.apl.json": [
     19577
+   ],
+   "bm.apl.json": [
+    14295
+   ],
+   "mm.apl.json": [
+    14295
    ]
   },
   "sim": "09e739807"
@@ -275,13 +333,47 @@
      31016,
      11300
     ]
+   ],
+   "combat_backstab.apl.json": [
+    [
+     25300,
+     11281
+    ],
+    [
+     31016,
+     11300
+    ]
+   ],
+   "combat_sinister_strike.apl.json": [
+    [
+     31016,
+     11300
+    ]
+   ],
+   "forever_hemorrhage.apl.json": [
+    [
+     1856,
+     1857
+    ],
+    [
+     31016,
+     11300
+    ]
+   ],
+   "forever_mutilate.apl.json": [
+    [
+     31016,
+     11300
+    ]
    ]
   },
+  "condition_rewrites": {},
   "unresolved": {},
   "sim": "09e739807"
  },
  "warrior": {
   "changes": {},
+  "condition_rewrites": {},
   "unresolved": {
    "arms-2h-raid-raid.apl.json": [
     20572,
@@ -317,13 +409,23 @@
     20572,
     24427,
     29602
+   ],
+   "dps_no_reck.apl.json": [
+    20572,
+    24427,
+    29602
    ]
   },
   "sim": "09e739807"
  },
  "paladin": {
   "changes": {},
-  "unresolved": {},
+  "condition_rewrites": {},
+  "unresolved": {
+   "default.apl.json": [
+    407632
+   ]
+  },
   "sim": "09e739807"
  },
  "shaman": {
@@ -355,6 +457,37 @@
      915,
      10392
     ]
+   ],
+   "forever.apl.json": [
+    [
+     915,
+     10392
+    ]
+   ]
+  },
+  "condition_rewrites": {
+   "elemental-dps-raid.apl.json": [
+    "totem 10438",
+    "totem 10587"
+   ],
+   "elemental-dps.apl.json": [
+    "totem 10438",
+    "totem 10587"
+   ],
+   "enhancement-dps.apl.json": [
+    "totem 10438"
+   ],
+   "stormcaller-dps-raid.apl.json": [
+    "totem 10438",
+    "totem 10587"
+   ],
+   "stormcaller-dps.apl.json": [
+    "totem 10438",
+    "totem 10587"
+   ],
+   "forever.apl.json": [
+    "totem 10438",
+    "totem 10587"
    ]
   },
   "unresolved": {},
@@ -369,11 +502,15 @@
     ]
    ]
   },
+  "condition_rewrites": {
+   "feral-cat-dps-raid.apl.json": [
+    "auraIsKnown dropped"
+   ]
+  },
   "unresolved": {
    "feral-cat-dps-raid.apl.json": [
     5217,
     13494,
-    17056,
     23724
    ],
    "feral-cat-dps.apl.json": [

@@ -1,13 +1,18 @@
-"""Set up the ElliotWood/Forever simulator (wowsims fork) for `run.py`: Go and protoc toolchains, a sparse clone, the generated
+"""Set up the official WoW Forever simulator (github.com/wowsims/forever, since 2026-10-18) for `run.py`: Go and protoc toolchains, a sparse clone, the generated
 protobuf code, the simulator CLI and our `foreverbench` tool — everything under %USERPROFILE%/.wow-forever-tools (or --tools).
 
     python _reference/data/raidsim/setup.py            # first time: ~400 MB of downloads and checkout, a few minutes
     python _reference/data/raidsim/setup.py --update   # pull the simulator's master and rebuild the tools
     python _reference/data/raidsim/setup.py --rebuild  # rebuild the tools only (after editing foreverbench/main.go)
 
-Layout: <tools>/go (Go toolchain), <tools>/protoc, <tools>/gopath (module cache, protoc-gen-go), <tools>/forever-repo
-(sparse checkout of https://github.com/ElliotWood/Forever: sim, proto, cmd, ui, assets/database, tools) with
+Layout: <tools>/go (Go toolchain), <tools>/protoc, <tools>/gopath (module cache, protoc-gen-go), <tools>/wowsims-forever
+(sparse checkout of https://github.com/wowsims/forever: sim, proto, cmd, ui, assets/database, tools) with
 `wowsimcli.exe` and `foreverbench.exe` built in it. Nothing is installed system-wide.
+
+2026-10-18: the ElliotWood/Forever fork every number before that date was simulated with was deprecated and its repository deleted
+in the night of 2026-10-17/18 ("The official WoW Forever simulator is now live", wowsims.com/forever); the pipeline moved to the
+official repository (user decision, audit 2 row 1; `_reference/sim-port.md`). An existing <tools>/forever-repo clone of the fork
+(b7083fa) still builds with the archived patches in patches/elliotwood-b7083fa/, but nothing points at it.
 
 A fresh setup checks out the pinned simulator commit (GAMES[...]["commit"]: the one every number in the project was simulated
 with), so a new machine or a Claude Code cloud session builds the same simulator; `--update` moves to the fork's latest commit
@@ -28,10 +33,12 @@ import zipfile
 HERE = pathlib.Path(__file__).resolve().parent
 GO_VERSION = "1.27.1"
 PROTOC_VERSION = "36.2"
-REPO_URL = "https://github.com/ElliotWood/Forever"
+REPO_URL = "https://github.com/wowsims/forever"
 SPARSE = ["sim", "proto", "cmd", "ui", "assets/database", "tools"]
-GAMES = {"forever": {"url": "https://github.com/ElliotWood/Forever", "dir": "forever-repo", "module": "github.com/wowsims/forever", "bench": "foreverbench",
-                     "commit": "b7083fac1ec8cc88bfbba0518dba3e0b5e71f8e1"},   # b7083fa: client build 1.60.1.70425, 2026-10-16 (2ce8265, 70291, from 2026-10-09; b0f0df3, 70205; 40be98e before)
+GAMES = {"forever": {"url": "https://github.com/wowsims/forever", "dir": "wowsims-forever", "module": "github.com/wowsims/forever", "bench": "foreverbench",
+                     # 09e7398 (wowsims/forever master, 2026-10-18 19:55 +0200; spell data and items client 1.60.1.70450). Before 2026-10-18
+                     # the ElliotWood/Forever fork: b7083fa (70425) from 2026-10-16, 2ce8265 (70291) from 2026-10-09, b0f0df3 (70205), 40be98e
+                     "commit": "09e739807d68a561f01ddb0ba41c2c6a6003d681"},
          "classic": {"url": "https://github.com/wowsims/classic", "dir": "classic-repo", "module": "github.com/wowsims/classic", "bench": "classicbench",
                      "commit": "7779ebbf79dc7f1341e6ab939b28a3402c9a730a"}}
 

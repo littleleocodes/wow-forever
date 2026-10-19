@@ -1,4 +1,5 @@
-// foreverbench: run several talent builds through the ElliotWood/Forever (wowsims) simulator with one gear set,
+// foreverbench: run several talent builds through the official WoW Forever simulator (github.com/wowsims/forever since 2026-10-18;
+// the ElliotWood/Forever fork before) with one gear set,
 // rotation and encounter, and print DPS per build as JSON lines (with the damage of every action).
 //
 //	foreverbench --config bench.json
@@ -101,6 +102,9 @@ type config struct {
 	// (2026-10-18, the port: the official simulator registers one rank per spell, so rotations naming another rank cast nothing;
 	// raidsim/apl_remap.py rewrites them from this list)
 	Spells bool `json:"spells"`
+	// "validate": true prints, per build, the rotation's validation messages by priority-list and prepull index (the simulator's own
+	// APL checks: an unknown spell or aura, a condition it cannot resolve and treats as always true), instead of a race row
+	Validate bool `json:"validate"`
 	// "link": true prints each build's share link for the simulator's web UI instead of a race row (see the file header)
 	Link       bool  `json:"link"`
 	APIVersion int32 `json:"api_version"` // the UI's proto version (proto/common.proto current_version_number) stamped on links
@@ -358,6 +362,9 @@ func main() {
 			raid = core.SinglePlayerRaidProto(player, party, raidBuffs, debuffs)
 		} else {
 			party, raidBuffs, indiv := gproto.Clone(core.FullPartyBuffs).(*proto.PartyBuffs), gproto.Clone(core.FullRaidBuffs).(*proto.RaidBuffs), gproto.Clone(core.FullIndividualBuffs).(*proto.IndividualBuffs)
+			if cfg.IsTank { // 2026-10-18 (audit 2 row 63): a tank gets the simulator's tank set, without Blessing of Salvation's -30% threat
+				indiv = gproto.Clone(core.FullTankIndividualBuffs).(*proto.IndividualBuffs)
+			}
 			// 2026-10-09: the fork's full party (core.FullPartyBuffs) carries all four Atiesh auras (+33 spell damage, +2% spell
 			// crit, +62 healing, +11 mp5 for the party). Atiesh is Naxxramas's legendary, in no announced Forever phase, so the
 			// full raid leaves it out unless the config says "atiesh": true (comparisons with older runs).
@@ -434,6 +441,28 @@ func main() {
 				zw.Write(bin)
 				zw.Close()
 				out["link"] = base64.StdEncoding.EncodeToString(buf.Bytes())
+			}
+			line, _ := json.Marshal(out)
+			fmt.Println(string(line))
+			continue
+		}
+		if cfg.Validate {
+			res := core.ComputeStats(&proto.ComputeStatsRequest{Raid: raid, Encounter: encounter})
+			out := map[string]interface{}{"label": b.Label}
+			if res.ErrorResult != "" {
+				out["error"] = res.ErrorResult
+			} else if rs := res.RaidStats.Parties[0].Players[0].RotationStats; rs != nil {
+				collect := func(list []*proto.APLActionStats) map[string][]string {
+					m := map[string][]string{}
+					for i, a := range list {
+						for _, v := range a.Validations {
+							m[fmt.Sprint(i)] = append(m[fmt.Sprint(i)], v.LogLevel.String()+": "+v.Validation)
+						}
+					}
+					return m
+				}
+				out["priority"] = collect(rs.PriorityList)
+				out["prepull"] = collect(rs.PrepullActions)
 			}
 			line, _ := json.Marshal(out)
 			fmt.Println(string(line))

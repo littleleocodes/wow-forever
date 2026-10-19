@@ -1,0 +1,98 @@
+[
+ {
+  "file": "sim/hunter/aspects.go",
+  "after": "\thunter.registerAspectOfTheHawkSpell()\n",
+  "insert": "\thunter.registerAspectOfTheBeastSpell() // wow-forever patch: Aspect of the Beast + melee Deadly Aspects (patches/forever/sim/hunter/aspect_of_the_beast.go)\n",
+  "why": "the fork models only Aspect of the Hawk and the ranged half of Deadly Aspects"
+ },
+ {
+  "file": "sim/hunter/pet.go",
+  "after": "\treturn func(ownerStats stats.Stats) stats.Stats {\n",
+  "insert": "\t\treturn foreverPetScaling(ownerStats) // wow-forever patch: Forever's pet scaling (patches/forever/sim/hunter/pet_scaling.go)\n",
+  "why": "the fork's pets inherit nothing from the hunter; Forever pets get 10% of the highest attack power, 100% crit, 30% armor, 2 health per stamina"
+ },
+ {
+  "file": "sim/hunter/talents_survival.go",
+  "after": "\tif hunter.Talents.LightningReflexes == 0 {\n\t\treturn\n\t}\n",
+  "insert": "\t// wow-forever patch: 2% Agility a rank (client 70205's trait node 110859; the spell 19168 the fork reads still says 3%). The factor\n\t// corrects the line below to 1 + 0.02 x rank and is 1 once the fork reads the trait's value.\n\thunter.MultiplyStat(stats.Agility, (1+0.02*float64(hunter.Talents.LightningReflexes))/spellData.LightningReflexes.MultiplierAt(hunter.Talents.LightningReflexes))\n",
+  "why": "Lightning Reflexes: 70205 gives 2% Agility a rank (10% at 5/5); the fork applies the base spell's 3%"
+ },
+ {
+  "file": "sim/core/racials.go",
+  "after": "func applyRaceEffects(agent Agent) {\n",
+  "insert": "\tif noRacials() { // wow-forever patch: WOW_FOREVER_NO_RACIALS=1 (patches/forever/sim/core/no_racials.go)\n\t\treturn\n\t}\n",
+  "why": "racial effects off on request, so builds compare without the preset's race (user preference 2026-10-07: as unbiased as possible)"
+ },
+ {
+  "file": "sim/warlock/pets.go",
+  "replace": "StatInheritance: func(_ stats.Stats) stats.Stats { return stats.Stats{} },",
+  "with": "StatInheritance: foreverDemonScaling, // wow-forever patch: Forever's demon scaling (patches/forever/sim/warlock/demon_scaling.go)",
+  "why": "the fork's demons inherit nothing from the warlock; Forever demons get 17% of the warlock's spell damage as attack power, 10% as spell damage, 35% armor, 7.5 health per Stamina, its spell crit (client 70291 UI)"
+ },
+ {
+  "file": "sim/hunter/pet.go",
+  "replace": "\t\t\tBaseDamageMin: 18.17 * attackSpeed,\n\t\t\tBaseDamageMax: 27.66 * attackSpeed,\n",
+  "with": "\t\t\tBaseDamageMin: 18.17 * foreverPetHitSpeed(attackSpeed), // wow-forever patch: Forever does not normalize pet damage (patches/forever/sim/hunter/pet_scaling.go)\n\t\t\tBaseDamageMax: 27.66 * foreverPetHitSpeed(attackSpeed),\n",
+  "why": "the fork scales a pet's base hit with its attack speed (equal damage at every speed); in Forever a faster pet hits as hard and does more damage"
+ },
+ {
+  "file": "sim/core/target.go",
+  "replace": "table.HitSuppression = UnitLevelFloat64(defender.Level, 0, 0, 0, 0, 0.01)",
+  "with": "table.HitSuppression = UnitLevelFloat64(defender.Level, 0, 0, 0, 0, foreverHitSuppression()) // wow-forever patch: no 1% hit suppression in Forever (patches/forever/sim/core/forever_rules_patch.go)",
+  "why": "the client's hit-cap tooltips: 8% melee, 17% spells, 27% dual wield never miss a raid boss (no 1% suppression, no 1% spell floor)"
+ },
+ {
+  "file": "sim/core/spell_result.go",
+  "replace": "return math.Max(0.01, 1-hitChance)",
+  "with": "return math.Max(foreverSpellMissFloor(), 1-hitChance) // wow-forever patch: no 1% spell-miss floor in Forever (forever_rules_patch.go)",
+  "why": "17% spell hit never misses a raid boss in Forever (client tooltip), so no 1% floor"
+ },
+ {
+  "file": "sim/core/rage.go",
+  "replace": "generatedRage := preArmorDamage * DamageTakenRageFactor / unit.MaxHealth() * unit.rageBar.damageTakenRageMultiplier",
+  "with": "generatedRage := preArmorDamage * DamageTakenRageFactor / foreverRageHealth(unit) * unit.rageBar.damageTakenRageMultiplier // wow-forever patch: an expected creature's health, not the player's (forever_rules_patch.go)",
+  "why": "beta notes 2026-10-08: rage from damage taken uses an expected creature's health, not the player's"
+ },
+ {
+  "file": "sim/core/spelldata/effect.go",
+  "replace": "func (e *Effect) Coeff() float64 {\n\treturn e.SPCoef\n}",
+  "with": "func (e *Effect) Coeff() float64 {\n\treturn e.SPCoef * DownrankMultiplier(e.SpellID) // wow-forever patch: Forever's downranking penalty (patches/forever/sim/core/spelldata/downrank.go)\n}",
+  "why": "Forever: spell ranks far below your level get less from spell power (TBC's rule as the assumption)"
+ },
+ {
+  "file": "sim/hunter/raptor_strike.go",
+  "replace": "\t\t\thunter.PseudoStats.DisableDWMissPenalty = true\n",
+  "with": "\t\t\thunter.PseudoStats.DisableDWMissPenalty = foreverRaptorQueueHit() // wow-forever patch: no off-hand hit bonus while queued (patches/forever/sim/hunter/raptor_queue.go)\n",
+  "why": "Forever removed the off-hand hit bonus of a queued Heroic Strike; we assume the same for Raptor Strike"
+ },
+ {
+  "file": "sim/core/consumes.go",
+  "after": "\tif consumables.OhImbueId != 0 {\n\t\tregisterStaticImbue(agent, consumables.OhImbueId, character.AutoAttacks.OH())\n\t}\n",
+  "insert": "\tforeverExtraImbues(agent) // wow-forever patch: a second temporary enchant per weapon, as Forever allows (patches/forever/sim/core/forever_rules_patch.go)\n",
+  "why": "Forever lets stones and oils stack with poisons, shaman imbues and the warlock's Firestone/Spellstone imbues"
+ },
+ {
+  "file": "sim/core/buffs/drivers.go",
+  "after": "\ttrigger.Name = \"Windfury Totem Trigger\"\n",
+  "insert": "\ttrigger.ProcMask &= core.ProcMaskMeleeMH // wow-forever patch: Windfury Totem procs from main-hand hits only (70291 tooltip: \"Each main hand hit\")\n",
+  "why": "the spell's proc flags (0x14: melee autos and specials) decode to both hands; the 70291 tooltip and Classic's main-hand enchant say main hand only"
+ },
+ {
+  "file": "sim/core/database_load.go",
+  "replace": "\tfor i, suffix := range db.RandomSuffixes {\n",
+  "with": "\tforeverFillArmor(simDB.Items) // wow-forever patch: armor the database lacks (patches/forever/sim/core/forever_armor.go)\n\n\tfor i, suffix := range db.RandomSuffixes {\n",
+  "why": "the fork's database lists base armor for one armor item in five; fill_armor.py generates the rest from Classic 1.12"
+ },
+ {
+  "file": "sim/paladin/talents_retribution.go",
+  "replace": "\tshare := spellData.ChampionOfTheLight.Effect(dbcenums.A_MOD_SPELL_DAMAGE_OF_STAT_PERCENT, 126).FractionAt(paladin.Talents.ChampionOfTheLight)\n",
+  "with": "\tshare := 0.10 * float64(paladin.Talents.ChampionOfTheLight) // wow-forever patch: 10% of Intellect a rank (client 70425's tooltip; the fork's spell 1311084 still reads 20%)\n",
+  "why": "client 70425 halved Champion of the Light to 10/20/30% of Intellect as spell damage; the fork's spell data (b7083fa) still gives 20/40/60%"
+ },
+ {
+  "file": "sim/hunter/talents_survival.go",
+  "replace": "\t\tName:       \"Resourcefulness Trigger\",\n\t\tCallback:   core.CallbackOnSpellHitDealt,\n",
+  "with": "\t\tName:       \"Resourcefulness Trigger\",\n\t\tCallback:   core.CallbackOnSpellHitDealt,\n\t\tProcMask:   core.ProcMaskMeleeSpecial | core.ProcMaskRangedSpecial, // wow-forever patch: ability crits only (client 70425)\n",
+  "why": "client 70425: Resourcefulness procs from 'melee and ranged ability Critical Strikes' (was any crit); the fork procs it from every crit, auto attacks and Auto Shot included"
+ }
+]

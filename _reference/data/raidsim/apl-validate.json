@@ -1,0 +1,1570 @@
+{
+ "mage": {
+  "frost-raid:frost-raid.apl.json": {
+   "priority[3]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1240047}"
+    ],
+    "line": "{\"condition\": {\"auraIsActive\": {\"auraId\": {\"spellId\": 400669}}}, \"castSpell\": {\"spellId\": {\"spellId\": 1240047}}}"
+   },
+   "priority[7]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1239700}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1239700}}}"
+   }
+  },
+  "frost-raid:frost-raid-raid.apl.json": {
+   "priority[4]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1240047}"
+    ],
+    "line": "{\"condition\": {\"auraIsActive\": {\"auraId\": {\"spellId\": 400669}}}, \"castSpell\": {\"spellId\": {\"spellId\": 1240047}}}"
+   }
+  },
+  "frost-raid:frost-raid.base.apl.json": {
+   "priority[3]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1240047}"
+    ],
+    "line": "{\"condition\": {\"auraIsActive\": {\"auraId\": {\"spellId\": 400669}}}, \"castSpell\": {\"spellId\": {\"spellId\": 1240047}}}"
+   }
+  },
+  "fire-raid:fire-raid.apl.json": {
+   "priority[0]": {
+    "messages": [
+     "Warning: Condition could not be resolved and will be treated as always true. Add an 'Aura Known' check if this action should be skipped when the aura is absent.",
+     "Warning: No aura found on  (#1) for: {SpellID: 22959}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLt\", \"lhs\": {\"auraNumStacks\": {\"auraId\": {\"spellId\": 22959}}}, \"rhs\": {\"const\": {\"val\": \"5\"}}}}, {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"auraRemainingTime\": {\"auraId\": {\"spellId\":"
+   },
+   "priority[7]": {
+    "messages": [
+     "Warning: Condition could not be resolved and will be treated as always true. Add an 'Aura Known' check if this action should be skipped when the aura is absent.",
+     "Warning: No aura found on  (#1) for: {SpellID: 400589}"
+    ],
+    "line": "{\"condition\": {\"auraIsActive\": {\"auraId\": {\"spellId\": 400589}}}, \"castSpell\": {\"spellId\": {\"spellId\": 10212}}}"
+   }
+  },
+  "fire-raid:fire-raid-raid.apl.json": {
+   "priority[1]": {
+    "messages": [
+     "Warning: Condition could not be resolved and will be treated as always true. Add an 'Aura Known' check if this action should be skipped when the aura is absent.",
+     "Warning: No aura found on  (#1) for: {SpellID: 22959}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLt\", \"lhs\": {\"auraNumStacks\": {\"auraId\": {\"spellId\": 22959}}}, \"rhs\": {\"const\": {\"val\": \"5\"}}}}, {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"auraRemainingTime\": {\"auraId\": {\"spellId\":"
+   }
+  },
+  "fire-raid:fire.apl.json": {
+   "priority[1]": {
+    "messages": [
+     "Warning: Condition could not be resolved and will be treated as always true. Add an 'Aura Known' check if this action should be skipped when the aura is absent.",
+     "Warning: No aura found on  (#1) for: {SpellID: 22959}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 11129}}, \"condition\": {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"auraNumStacks\": {\"auraId\": {\"spellId\": 22959}}}, \"rhs\": {\"const\": {\"val\": \"5\"}}}}}"
+   },
+   "priority[10]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 25306}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"currentManaPercent\": {}}, \"rhs\": {\"const\": {\"val\": \"10%\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 25306}}}"
+   },
+   "priority[11]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 2948}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 2948}}}"
+   },
+   "priority[6]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 13021}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"numberTargets\": {}}, \"rhs\": {\"const\": {\"val\": \"3\"}}}}, {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"unitDistance\": {}}, \"rhs\": {\"const\": {\"val\": \"10\"}}}}]}}, \"castSpell\""
+   },
+   "priority[8]": {
+    "messages": [
+     "Warning: Condition could not be resolved and will be treated as always true. Add an 'Aura Known' check if this action should be skipped when the aura is absent.",
+     "Warning: No aura found on  (#1) for: {SpellID: 22959}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLt\", \"lhs\": {\"auraNumStacks\": {\"auraId\": {\"spellId\": 22959}}}, \"rhs\": {\"const\": {\"val\": \"5\"}}}}, {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"auraRemainingTime\": {\"auraId\": {\"spellId\":"
+   },
+   "prepull[0]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 25306}"
+    ],
+    "line": ""
+   }
+  },
+  "arcane-dps:arcane-dps.apl.json": {},
+  "arcane-dps:arcane-dps-raid.apl.json": {},
+  "arcane-dps:arcane.apl.json": {
+   "priority[1]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259705}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"spellIsKnown\": {\"spellId\": {\"spellId\": 1259705}}}, {\"auraIsActive\": {\"auraId\": {\"spellId\": 29166, \"tag\": -1}}}]}}, \"castSpell\": {\"spellId\": {\"spellId\": 1259705}}}"
+   },
+   "priority[4]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1326082}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1326082}}}"
+   }
+  },
+  "frostfire-raid:frostfire-raid.apl.json": {
+   "priority[0]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 12042}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 12042}}}"
+   },
+   "priority[1]": {
+    "messages": [
+     "Warning: Condition could not be resolved and will be treated as always true. Add an 'Aura Known' check if this action should be skipped when the aura is absent.",
+     "Warning: No aura found on  (#1) for: {SpellID: 22959}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLt\", \"lhs\": {\"auraNumStacks\": {\"auraId\": {\"spellId\": 22959}}}, \"rhs\": {\"const\": {\"val\": \"5\"}}}}, {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"auraRemainingTime\": {\"auraId\": {\"spellId\":"
+   },
+   "priority[10]": {
+    "messages": [
+     "Warning: Condition could not be resolved and will be treated as always true. Add an 'Aura Known' check if this action should be skipped when the aura is absent.",
+     "Warning: No aura found on  (#1) for: {SpellID: 400625}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpEq\", \"lhs\": {\"auraNumStacks\": {\"auraId\": {\"spellId\": 400625}}}, \"rhs\": {\"const\": {\"val\": \"3\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 18809}}}"
+   },
+   "priority[14]": {
+    "messages": [
+     "Warning: Condition could not be resolved and will be treated as always true. Add an 'Aura Known' check if this action should be skipped when the aura is absent.",
+     "Warning: No aura found on  (#1) for: {SpellID: 400589}"
+    ],
+    "line": "{\"condition\": {\"auraIsActive\": {\"auraId\": {\"spellId\": 400589}}}, \"castSpell\": {\"spellId\": {\"spellId\": 10212}}}"
+   },
+   "priority[16]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 14152}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"itemId\": 14152}}}"
+   },
+   "priority[4]": {
+    "messages": [
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on  (#1) for: {SpellID: 22959}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"auraIsKnown\": {\"auraId\": {\"spellId\": 22959}}}, {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLt\", \"lhs\": {\"auraNumStacks\": {\"auraId\": {\"spellId\": 22959}}}, \"rhs\": {\"const\": {\"val\": \"5\"}}}}, {\"cmp\":"
+   },
+   "priority[8]": {
+    "messages": [
+     "Warning: Condition could not be resolved and will be treated as always true. Add an 'Aura Known' check if this action should be skipped when the aura is absent.",
+     "Warning: No aura found on  (#1) for: {SpellID: 400625}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpEq\", \"lhs\": {\"auraNumStacks\": {\"auraId\": {\"spellId\": 400625}}}, \"rhs\": {\"const\": {\"val\": \"2\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 18809}}}"
+   },
+   "priority[9]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1239700}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1239700}}}"
+   }
+  },
+  "frostfire-raid:frostfire-raid-raid.apl.json": {
+   "priority[0]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 12042}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 12042}}}"
+   },
+   "priority[1]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1240047}"
+    ],
+    "line": "{\"condition\": {\"auraIsActive\": {\"auraId\": {\"spellId\": 400669}}}, \"castSpell\": {\"spellId\": {\"spellId\": 1240047}}}"
+   },
+   "priority[10]": {
+    "messages": [
+     "Warning: Condition could not be resolved and will be treated as always true. Add an 'Aura Known' check if this action should be skipped when the aura is absent.",
+     "Warning: No aura found on  (#1) for: {SpellID: 400589}"
+    ],
+    "line": "{\"condition\": {\"auraIsActive\": {\"auraId\": {\"spellId\": 400589}}}, \"castSpell\": {\"spellId\": {\"spellId\": 10212}}}"
+   },
+   "priority[2]": {
+    "messages": [
+     "Warning: Condition could not be resolved and will be treated as always true. Add an 'Aura Known' check if this action should be skipped when the aura is absent.",
+     "Warning: No aura found on  (#1) for: {SpellID: 400625}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpEq\", \"lhs\": {\"auraNumStacks\": {\"auraId\": {\"spellId\": 400625}}}, \"rhs\": {\"const\": {\"val\": \"3\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 18809}}}"
+   },
+   "priority[4]": {
+    "messages": [
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on  (#1) for: {SpellID: 22959}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"auraIsKnown\": {\"auraId\": {\"spellId\": 22959}}}, {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLt\", \"lhs\": {\"auraNumStacks\": {\"auraId\": {\"spellId\": 22959}}}, \"rhs\": {\"const\": {\"val\": \"5\"}}}}, {\"cmp\":"
+   }
+  },
+  "frostfire-raid:frostfire-raid.base.apl.json": {
+   "priority[0]": {
+    "messages": [
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on  (#1) for: {SpellID: 22959}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"auraIsKnown\": {\"auraId\": {\"spellId\": 22959}}}, {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLt\", \"lhs\": {\"auraNumStacks\": {\"auraId\": {\"spellId\": 22959}}}, \"rhs\": {\"const\": {\"val\": \"5\"}}}}, {\"cmp\":"
+   },
+   "priority[4]": {
+    "messages": [
+     "Warning: Condition could not be resolved and will be treated as always true. Add an 'Aura Known' check if this action should be skipped when the aura is absent.",
+     "Warning: No aura found on  (#1) for: {SpellID: 400625}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpEq\", \"lhs\": {\"auraNumStacks\": {\"auraId\": {\"spellId\": 400625}}}, \"rhs\": {\"const\": {\"val\": \"3\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 18809}}}"
+   },
+   "priority[7]": {
+    "messages": [
+     "Warning: Condition could not be resolved and will be treated as always true. Add an 'Aura Known' check if this action should be skipped when the aura is absent.",
+     "Warning: No aura found on  (#1) for: {SpellID: 400589}"
+    ],
+    "line": "{\"condition\": {\"auraIsActive\": {\"auraId\": {\"spellId\": 400589}}}, \"castSpell\": {\"spellId\": {\"spellId\": 10212}}}"
+   }
+  }
+ },
+ "priest": {
+  "shadow-dps:shadow-dps.apl.json": {},
+  "shadow-dps:shadow-dps-raid.apl.json": {
+   "priority[7]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1277328}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1277328}}}"
+   }
+  },
+  "shadow-dps:shadow.apl.json": {},
+  "smite-dps:smite-dps.apl.json": {
+   "priority[15]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 15473}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 15473}}}"
+   },
+   "priority[7]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 18807}"
+    ],
+    "line": "{\"condition\": {\"not\": {\"val\": {\"dotIsActive\": {\"spellId\": {\"spellId\": 18807}}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 18807}}}"
+   }
+  },
+  "smite-dps:smite-dps-raid.apl.json": {
+   "priority[15]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1277328}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1277328}}}"
+   },
+   "priority[16]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 15473}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 15473}}}"
+   },
+   "priority[17]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 18807}"
+    ],
+    "line": "{\"condition\": {\"not\": {\"val\": {\"dotIsActive\": {\"spellId\": {\"spellId\": 18807}}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 18807}}}"
+   }
+  },
+  "smite-dps:smite.apl.json": {}
+ },
+ "warlock": {
+  "affliction-raid:affliction-raid.apl.json": {
+   "priority[10]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 18881}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"dotRemainingTime\": {\"spellId\": {\"spellId\": 18881}}}, \"rhs\": {\"spellCastTime\": {\"spellId\": {\"spellId\": 18881}}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 18881}}}"
+   },
+   "priority[4]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 18871}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"1.5\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 18871}}}"
+   }
+  },
+  "affliction-raid:affliction-raid-raid.apl.json": {
+   "priority[10]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 18881}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"dotRemainingTime\": {\"spellId\": {\"spellId\": 18881}}}, \"rhs\": {\"spellCastTime\": {\"spellId\": {\"spellId\": 18881}}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 18881}}}"
+   },
+   "priority[4]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 18871}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"1.5\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 18871}}}"
+   }
+  },
+  "affliction-raid:affliction.apl.json": {
+   "priority[13]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 18881}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"dotRemainingTime\": {\"spellId\": {\"spellId\": 18881}}}, \"rhs\": {\"spellCastTime\": {\"spellId\": {\"spellId\": 18881}}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 18881}}}"
+   },
+   "priority[3]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 18871}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"1.5\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 18871}}}"
+   }
+  },
+  "fire-destro-raid:fire-destro-raid.apl.json": {
+   "priority[9]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 18932}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 18932}}}"
+   }
+  },
+  "fire-destro-raid:fire-destro-raid-raid.apl.json": {
+   "priority[5]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 18932}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 18932}}}"
+   }
+  },
+  "fire-destro-raid:destruction.apl.json": {},
+  "sb-raid:sb-raid.apl.json": {
+   "priority[11]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 18932}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 18932}}}"
+   },
+   "priority[3]": {
+    "messages": [
+     "Warning: Autocast Other Cooldowns will not cast any spells! There are either no major cooldowns configured for this character, or all of them are manually cast in the APL."
+    ],
+    "line": "{\"autocastOtherCooldowns\": {}}"
+   },
+   "priority[4]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 18871}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"1.5\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 18871}}}"
+   }
+  },
+  "sb-raid:sb-raid-raid.apl.json": {
+   "priority[11]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 18932}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 18932}}}"
+   },
+   "priority[4]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 18871}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"1.5\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 18871}}}"
+   }
+  },
+  "sb-raid:ds_ruin.apl.json": {
+   "priority[3]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 18871}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"1.5\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 18871}}}"
+   }
+  },
+  "demonology-raid:demonology-raid.apl.json": {},
+  "demonology-raid:demonology-raid-raid.apl.json": {},
+  "demonology-raid:demonic_pact.apl.json": {},
+  "incinerate-raid:incinerate-raid.apl.json": {},
+  "incinerate-raid:incinerate-raid-raid.apl.json": {},
+  "incinerate-raid:incinerate-raid.base.apl.json": {}
+ },
+ "hunter": {
+  "mm-raid:mm-raid.apl.json": {
+   "priority[0]": {
+    "messages": [
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on  (#1) for: {SpellID: 1293527}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"auraIsInactive\": {\"sourceUnit\": {\"type\": \"Self\"}, \"auraId\": {\"spellId\": 1293527}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"15s\"}}}}]}}, \"castSpell"
+   },
+   "priority[3]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 19577}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 19577}}, \"condition\": {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"currentManaPercent\": {}}, \"rhs\": {\"const\": {\"val\": \"60%\"}}}}}"
+   }
+  },
+  "mm-raid:mm-raid-raid.apl.json": {
+   "priority[1]": {
+    "messages": [
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on  (#1) for: {SpellID: 1293527}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"auraIsInactive\": {\"sourceUnit\": {\"type\": \"Self\"}, \"auraId\": {\"spellId\": 1293527}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"10s\"}}}}]}}, \"castSpell"
+   },
+   "priority[7]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 19577}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 19577}}}"
+   },
+   "priority[8]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1310786}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGt\", \"lhs\": {\"autoTimeToNext\": {\"autoType\": \"RangedAuto\"}}, \"rhs\": {\"const\": {\"val\": \"1s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"spellTimeToReady\": {\"spellId\": {\"spellId\": "
+   }
+  },
+  "mm-raid:mm.apl.json": {
+   "priority[1]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 14295}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"numberTargets\": {}}, \"rhs\": {\"const\": {\"val\": \"3\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 14295}}}"
+   },
+   "priority[6]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1310786}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGt\", \"lhs\": {\"autoTimeToNext\": {\"autoType\": \"RangedAuto\"}}, \"rhs\": {\"const\": {\"val\": \"1s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"spellTimeToReady\": {\"spellId\": {\"spellId\": "
+   }
+  },
+  "mm-lonewolf-raid:mm-lonewolf-raid.apl.json": {
+   "priority[0]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1293527}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"auraIsInactive\": {\"sourceUnit\": {\"type\": \"Self\"}, \"auraId\": {\"spellId\": 1293527}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"10s\"}}}}]}}, \"castSpell"
+   }
+  },
+  "mm-lonewolf-raid:mm-lonewolf-raid-raid.apl.json": {
+   "priority[0]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1293527}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGt\", \"lhs\": {\"autoTimeToNext\": {\"autoType\": \"RangedAuto\"}}, \"rhs\": {\"const\": {\"val\": \"1s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val"
+   }
+  },
+  "mm-lonewolf-raid:mm.apl.json": {
+   "priority[1]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 14295}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"numberTargets\": {}}, \"rhs\": {\"const\": {\"val\": \"3\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 14295}}}"
+   }
+  },
+  "bm-raid:bm-raid.apl.json": {
+   "priority[5]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 19577}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"auraIsInactive\": {\"sourceUnit\": {\"type\": \"Self\"}, \"auraId\": {\"spellId\": 19577}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"currentManaPercent\": {}}, \"rhs\": {\"const\": {\"val\": \"70%\"}}}}]}}, \"castSp"
+   }
+  },
+  "bm-raid:bm-raid-raid.apl.json": {
+   "priority[3]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1310786}"
+    ],
+    "line": "{\"condition\": {\"auraIsInactive\": {\"sourceUnit\": {\"type\": \"Self\"}, \"auraId\": {\"spellId\": 1310786}}}, \"castSpell\": {\"spellId\": {\"spellId\": 1310786}}}"
+   }
+  },
+  "bm-raid:bm.apl.json": {
+   "priority[1]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 14295}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"numberTargets\": {}}, \"rhs\": {\"const\": {\"val\": \"4\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 14295}}}"
+   }
+  },
+  "melee-dps:melee-dps.apl.json": {
+   "priority[0]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1293527}"
+    ],
+    "line": "{\"condition\": {\"auraIsInactive\": {\"sourceUnit\": {\"type\": \"Self\"}, \"auraId\": {\"spellId\": 1293527}}}, \"castSpell\": {\"spellId\": {\"spellId\": 1293527}}}"
+   },
+   "priority[6]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20910}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 20910}}}"
+   }
+  },
+  "melee-dps:melee-dps-raid.apl.json": {
+   "priority[3]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20910}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 20910}}}"
+   },
+   "priority[6]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1293527}"
+    ],
+    "line": "{\"condition\": {\"auraIsInactive\": {\"sourceUnit\": {\"type\": \"Self\"}, \"auraId\": {\"spellId\": 1293527}}}, \"castSpell\": {\"spellId\": {\"spellId\": 1293527}}}"
+   }
+  },
+  "melee-dps:melee-dps.base.apl.json": {
+   "priority[1]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20910}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 20910}}}"
+   }
+  }
+ },
+ "rogue": {
+  "combat-swords-raid:combat-swords-raid.apl.json": {
+   "priority[1]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 14278}"
+    ],
+    "line": "{\"condition\": {\"auraIsInactive\": {\"sourceUnit\": {\"type\": \"Self\"}, \"auraId\": {\"spellId\": 14278}}}, \"castSpell\": {\"spellId\": {\"spellId\": 14278}}}"
+   },
+   "priority[5]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1241584}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1241584}}}"
+   },
+   "priority[7]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 16511}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 16511}}}"
+   }
+  },
+  "combat-swords-raid:combat-swords-raid-raid.apl.json": {
+   "priority[0]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 16511}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 16511}}}"
+   },
+   "priority[1]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 14278}"
+    ],
+    "line": "{\"condition\": {\"auraIsInactive\": {\"sourceUnit\": {\"type\": \"Self\"}, \"auraId\": {\"spellId\": 14278}}}, \"castSpell\": {\"spellId\": {\"spellId\": 14278}}}"
+   },
+   "priority[6]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1241584}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1241584}}}"
+   }
+  },
+  "combat-swords-raid:combat_sinister_strike.apl.json": {
+   "priority[3]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 31016}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"currentComboPoints\": {}}, \"rhs\": {\"const\": {\"val\": \"5\"}}}}, {\"or\": {\"vals\": [{\"auraIsActive\": {\"auraId\": {\"spellId\": 6774, \"rank\": 2}}}, {\"cmp\": {\"op\": \"OpG"
+   }
+  },
+  "combat-daggers-raid:combat-daggers-raid.apl.json": {
+   "priority[3]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1241584}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1241584}}}"
+   }
+  },
+  "combat-daggers-raid:combat-daggers-raid-raid.apl.json": {
+   "priority[0]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 14177}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"currentComboPoints\": {}}, \"rhs\": {\"const\": {\"val\": \"4\"}}}}, {\"auraIsActive\": {\"auraId\": {\"spellId\": 6774, \"rank\": 2}}}]}}, \"castSpell\": {\"spellId\": {\"spellI"
+   },
+   "priority[6]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1241584}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1241584}}}"
+   }
+  },
+  "combat-daggers-raid:combat_backstab.apl.json": {
+   "priority[3]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 31016}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"currentComboPoints\": {}}, \"rhs\": {\"const\": {\"val\": \"5\"}}}}, {\"or\": {\"vals\": [{\"auraIsActive\": {\"auraId\": {\"spellId\": 6774, \"rank\": 2}}}, {\"cmp\": {\"op\": \"OpG"
+   },
+   "priority[4]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 25300}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 25300}}}"
+   }
+  },
+  "assassination-raid:assassination-raid.apl.json": {
+   "priority[0]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 13750}"
+    ],
+    "line": "{\"condition\": {\"auraIsInactive\": {\"sourceUnit\": {\"type\": \"Self\"}, \"auraId\": {\"spellId\": 13750}}}, \"castSpell\": {\"spellId\": {\"spellId\": 13750}}}"
+   },
+   "priority[1]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 14278}"
+    ],
+    "line": "{\"condition\": {\"auraIsInactive\": {\"sourceUnit\": {\"type\": \"Self\"}, \"auraId\": {\"spellId\": 14278}}}, \"castSpell\": {\"spellId\": {\"spellId\": 14278}}}"
+   },
+   "priority[8]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1241584}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1241584}}}"
+   },
+   "priority[9]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 16511}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 16511}}}"
+   }
+  },
+  "assassination-raid:assassination-raid-raid.apl.json": {
+   "priority[3]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 14278}"
+    ],
+    "line": "{\"condition\": {\"auraIsInactive\": {\"sourceUnit\": {\"type\": \"Self\"}, \"auraId\": {\"spellId\": 14278}}}, \"castSpell\": {\"spellId\": {\"spellId\": 14278}}}"
+   },
+   "priority[4]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 13750}"
+    ],
+    "line": "{\"condition\": {\"auraIsInactive\": {\"sourceUnit\": {\"type\": \"Self\"}, \"auraId\": {\"spellId\": 13750}}}, \"castSpell\": {\"spellId\": {\"spellId\": 13750}}}"
+   },
+   "priority[6]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1241584}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1241584}}}"
+   },
+   "priority[8]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 16511}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 16511}}}"
+   }
+  },
+  "assassination-raid:forever_mutilate.apl.json": {
+   "priority[3]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 31016}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"currentComboPoints\": {}}, \"rhs\": {\"const\": {\"val\": \"4\"}}}}, {\"or\": {\"vals\": [{\"auraIsActive\": {\"auraId\": {\"spellId\": 6774, \"rank\": 2}}}, {\"cmp\": {\"op\": \"OpG"
+   },
+   "priority[4]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1241584}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1241584}}}"
+   }
+  },
+  "subtlety-raid:subtlety-raid.apl.json": {
+   "priority[9]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 13877}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 13877}}}"
+   }
+  },
+  "subtlety-raid:subtlety-raid-raid.apl.json": {
+   "priority[10]": {
+    "messages": [
+     "Warning: Condition could not be resolved and will be treated as always true. Add an 'Aura Known' check if this action should be skipped when the aura is absent.",
+     "Warning: No aura found on  (#1) for: {SpellID: 14278}"
+    ],
+    "line": "{\"condition\": {\"auraIsInactive\": {\"sourceUnit\": {\"type\": \"Self\"}, \"auraId\": {\"spellId\": 14278}}}, \"castSpell\": {\"spellId\": {\"spellId\": 14278}}}"
+   },
+   "priority[12]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 13877}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 13877}}}"
+   }
+  },
+  "subtlety-raid:forever_hemorrhage.apl.json": {
+   "priority[1]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1856}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"currentEnergy\": {}}, \"rhs\": {\"const\": {\"val\": \"60\"}}}}, {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"currentComboPoints\": {}}, \"rhs\": {\"const\": {\"val\": \"1\"}}}}, {\"auraIs"
+   },
+   "priority[6]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 31016}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"currentComboPoints\": {}}, \"rhs\": {\"const\": {\"val\": \"4\"}}}}, {\"or\": {\"vals\": [{\"auraIsActive\": {\"auraId\": {\"spellId\": 6774, \"rank\": 2}}}, {\"cmp\": {\"op\": \"OpG"
+   }
+  }
+ },
+ "warrior": {
+  "arms-2h-raid:arms-2h-raid.apl.json": {
+   "priority[10]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 21180}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[11]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 29602}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[12]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 23041}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[13]": {
+    "messages": [
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on Target 1 for: {SpellID: 11198}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpLt\", \"lhs\": {\"auraNumStacks\": {\"sourceUnit\": {\"type\": \"CurrentTarget\"}, \"auraId\": {\"spellId\": 11597, \"rank\": 5}}}, \"rhs\": {\"const\": {\"val\": \"4\"}}}}, {\"not\": {\"val\": {\"aur"
+   },
+   "priority[14]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 23041}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[17]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 21553}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 21553}}}"
+   },
+   "priority[18]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1310222}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1310222}}}"
+   },
+   "priority[3]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 10646}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"itemId\": 10646}}}"
+   },
+   "priority[4]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 18641}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"itemId\": 18641}}}"
+   },
+   "priority[8]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"20s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"141.5s\"}}}}]}}, \"cast"
+   },
+   "priority[9]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 24427}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"60s\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 24427}}}"
+   }
+  },
+  "arms-2h-raid:arms-2h-raid-raid.apl.json": {
+   "priority[10]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 21180}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[11]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 29602}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[12]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 23041}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[13]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 23041}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[17]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 21553}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 21553}}}"
+   },
+   "priority[18]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1310222}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1310222}}}"
+   },
+   "priority[2]": {
+    "messages": [
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on Target 1 for: {SpellID: 11198}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpLt\", \"lhs\": {\"auraNumStacks\": {\"sourceUnit\": {\"type\": \"CurrentTarget\"}, \"auraId\": {\"spellId\": 11597, \"rank\": 5}}}, \"rhs\": {\"const\": {\"val\": \"1\"}}}}, {\"not\": {\"val\": {\"aur"
+   },
+   "priority[3]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 10646}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"itemId\": 10646}}}"
+   },
+   "priority[4]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 18641}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"itemId\": 18641}}}"
+   },
+   "priority[8]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"20s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"141.5s\"}}}}]}}, \"cast"
+   },
+   "priority[9]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 24427}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"60s\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 24427}}}"
+   }
+  },
+  "arms-2h-raid:dps_no_reck.apl.json": {
+   "priority[0]": {
+    "messages": [
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on Target 1 for: {SpellID: 11198}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpLt\", \"lhs\": {\"auraNumStacks\": {\"sourceUnit\": {\"type\": \"CurrentTarget\"}, \"auraId\": {\"spellId\": 11597, \"rank\": 5}}}, \"rhs\": {\"const\": {\"val\": \"1\"}}}}, {\"not\": {\"val\": {\"aur"
+   },
+   "priority[1]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 10646}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"itemId\": 10646}}}"
+   },
+   "priority[10]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 29602}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[11]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 23041}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[12]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 23041}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[16]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 21553}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 21553}}}"
+   },
+   "priority[17]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1310222}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1310222}}}"
+   },
+   "priority[2]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 18641}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"itemId\": 18641}}}"
+   },
+   "priority[7]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"20s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"141.5s\"}}}}]}}, \"cast"
+   },
+   "priority[8]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 24427}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"60s\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 24427}}}"
+   },
+   "priority[9]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 21180}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   }
+  },
+  "fury-dw-raid:fury-dw-raid.apl.json": {
+   "priority[10]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 24427}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"60s\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 24427}}}"
+   },
+   "priority[11]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 21180}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[12]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 29602}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[13]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 23041}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[14]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 23041}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[17]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 21553}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 21553}}}"
+   },
+   "priority[18]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1310222}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1310222}}}"
+   },
+   "priority[4]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 10646}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"itemId\": 10646}}}"
+   },
+   "priority[5]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 18641}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"itemId\": 18641}}}"
+   },
+   "priority[9]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"20s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"141.5s\"}}}}]}}, \"cast"
+   }
+  },
+  "fury-dw-raid:fury-dw-raid-raid.apl.json": {
+   "priority[1]": {
+    "messages": [
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on Target 1 for: {SpellID: 11198}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpLt\", \"lhs\": {\"auraNumStacks\": {\"sourceUnit\": {\"type\": \"CurrentTarget\"}, \"auraId\": {\"spellId\": 11597, \"rank\": 5}}}, \"rhs\": {\"const\": {\"val\": \"1\"}}}}, {\"not\": {\"val\": {\"aur"
+   },
+   "priority[10]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 29602}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[11]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 23041}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[12]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 23041}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[16]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 21553}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 21553}}}"
+   },
+   "priority[17]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1310222}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1310222}}}"
+   },
+   "priority[2]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 10646}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"itemId\": 10646}}}"
+   },
+   "priority[3]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 18641}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"itemId\": 18641}}}"
+   },
+   "priority[7]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"20s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"141.5s\"}}}}]}}, \"cast"
+   },
+   "priority[8]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 24427}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"60s\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 24427}}}"
+   },
+   "priority[9]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 21180}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   }
+  },
+  "fury-dw-raid:dps_no_reck.apl.json": {
+   "priority[0]": {
+    "messages": [
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on Target 1 for: {SpellID: 11198}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpLt\", \"lhs\": {\"auraNumStacks\": {\"sourceUnit\": {\"type\": \"CurrentTarget\"}, \"auraId\": {\"spellId\": 11597, \"rank\": 5}}}, \"rhs\": {\"const\": {\"val\": \"1\"}}}}, {\"not\": {\"val\": {\"aur"
+   },
+   "priority[1]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 10646}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"itemId\": 10646}}}"
+   },
+   "priority[10]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 29602}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[11]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 23041}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[12]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 23041}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[16]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 21553}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 21553}}}"
+   },
+   "priority[17]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1310222}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1310222}}}"
+   },
+   "priority[2]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 18641}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"itemId\": 18641}}}"
+   },
+   "priority[7]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"20s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"141.5s\"}}}}]}}, \"cast"
+   },
+   "priority[8]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 24427}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"60s\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 24427}}}"
+   },
+   "priority[9]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 21180}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   }
+  },
+  "prot-tank:protection.apl.json": {},
+  "prot-tank:prot-tank-raid.apl.json": {},
+  "arms-battle-raid:arms-battle-raid.apl.json": {
+   "priority[10]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 21180}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[11]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 29602}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[12]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 23041}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[13]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 23041}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[17]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 21553}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 21553}}}"
+   },
+   "priority[19]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 23894}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 23894, \"rank\": 4}}}"
+   },
+   "priority[21]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 23894}",
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped."
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGt\", \"lhs\": {\"spellTimeToReady\": {\"spellId\": {\"spellId\": 23894, \"rank\": 4}}}, \"rhs\": {\"const\": {\"val\": \"1.5s\"}}}}, {\"cmp\": {\"op\": \"OpGt\", \"lhs\": {\"spellTimeToReady\": {\"sp"
+   },
+   "priority[28]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 23894}",
+     "Warning: Condition could not be resolved and will be treated as always true. Add an 'Aura Known' check if this action should be skipped when the aura is absent."
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpGt\", \"lhs\": {\"spellTimeToReady\": {\"spellId\": {\"spellId\": 23894, \"rank\": 4}}}, \"rhs\": {\"const\": {\"val\": \"1.5s\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 1680, \"tag\": 1}}}"
+   },
+   "priority[3]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 10646}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"itemId\": 10646}}}"
+   },
+   "priority[4]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 18641}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"itemId\": 18641}}}"
+   },
+   "priority[5]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 12328}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"211.5s\"}}}}]}}, \"cast"
+   },
+   "priority[8]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"20s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"141.5s\"}}}}]}}, \"cast"
+   },
+   "priority[9]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 24427}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"60s\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 24427}}}"
+   }
+  },
+  "arms-battle-raid:arms-battle-raid-raid.apl.json": {
+   "priority[10]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 21180}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[11]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 29602}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[12]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 23041}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[13]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 23041}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[16]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 21553}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 21553}}}"
+   },
+   "priority[19]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 23894}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 23894, \"rank\": 4}}}"
+   },
+   "priority[2]": {
+    "messages": [
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped.",
+     "Warning: No aura found on Target 1 for: {SpellID: 11198}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpLt\", \"lhs\": {\"auraNumStacks\": {\"sourceUnit\": {\"type\": \"CurrentTarget\"}, \"auraId\": {\"spellId\": 11597, \"rank\": 5}}}, \"rhs\": {\"const\": {\"val\": \"1\"}}}}, {\"not\": {\"val\": {\"aur"
+   },
+   "priority[3]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 10646}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"itemId\": 10646}}}"
+   },
+   "priority[4]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 18641}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"itemId\": 18641}}}"
+   },
+   "priority[5]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 12328}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"211.5s\"}}}}]}}, \"cast"
+   },
+   "priority[8]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"20s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"141.5s\"}}}}]}}, \"cast"
+   },
+   "priority[9]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 24427}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"60s\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 24427}}}"
+   }
+  },
+  "arms-battle-raid:arms-battle-raid.base.apl.json": {
+   "priority[1]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 10646}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"itemId\": 10646}}}"
+   },
+   "priority[10]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 23041}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[11]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 23041}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[14]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 21553}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 21553}}}"
+   },
+   "priority[18]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 23894}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 23894, \"rank\": 4}}}"
+   },
+   "priority[2]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 18641}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"itemId\": 18641}}}"
+   },
+   "priority[21]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 23894}",
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped."
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGt\", \"lhs\": {\"spellTimeToReady\": {\"spellId\": {\"spellId\": 23894, \"rank\": 4}}}, \"rhs\": {\"const\": {\"val\": \"1.5s\"}}}}, {\"cmp\": {\"op\": \"OpGt\", \"lhs\": {\"spellTimeToReady\": {\"sp"
+   },
+   "priority[3]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 12328}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"211.5s\"}}}}]}}, \"cast"
+   },
+   "priority[6]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20572}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"20s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"141.5s\"}}}}]}}, \"cast"
+   },
+   "priority[7]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 24427}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"60s\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 24427}}}"
+   },
+   "priority[8]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 21180}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   },
+   "priority[9]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 29602}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"30s\"}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"130s\"}}}}]}}, \"castSp"
+   }
+  }
+ },
+ "paladin": {
+  "ret-dps:ret-dps.apl.json": {
+   "priority[0]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20930}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 20930}}}"
+   }
+  },
+  "ret-dps:ret-dps-raid.apl.json": {
+   "priority[6]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20930}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 20930}}}"
+   }
+  },
+  "ret-dps:default.apl.json": {
+   "priority[8]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 407632}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"numberTargets\": {}}, \"rhs\": {\"const\": {\"val\": \"2\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 407632}}}"
+   }
+  },
+  "prot-tank:default.apl.json": {
+   "priority[6]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 25903}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"not\": {\"val\": {\"auraIsKnown\": {\"sourceUnit\": {\"type\": \"CurrentTarget\"}, \"auraId\": {\"spellId\": 1310905}}}}}, {\"auraIsActive\": {\"sourceUnit\": {\"type\": \"CurrentTarget\"}, \"auraId\": {\"spellId\""
+   },
+   "priority[7]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20928}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 20928, \"rank\": 3}}}"
+   }
+  },
+  "prot-tank:prot-tank-raid.apl.json": {
+   "priority[1]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20928}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 20928, \"rank\": 3}}}"
+   },
+   "priority[8]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20928}"
+    ],
+    "line": "{\"condition\": {\"auraIsActive\": {\"auraId\": {\"spellId\": 20128}}}, \"castSpell\": {\"spellId\": {\"spellId\": 20928, \"rank\": 3}}}"
+   },
+   "prepull[2]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20928}"
+    ],
+    "line": ""
+   }
+  }
+ },
+ "shaman": {
+  "elemental-dps:elemental-dps.apl.json": {
+   "priority[0]": {
+    "messages": [
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped."
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpEq\", \"lhs\": {\"numberTargets\": {}}, \"rhs\": {\"const\": {\"val\": \"1\"}}}}, {\"not\": {\"val\": {\"dotIsActive\": {\"spellId\": {\"spellId\": 10438}}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"r"
+   },
+   "priority[1]": {
+    "messages": [
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped."
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"numberTargets\": {}}, \"rhs\": {\"const\": {\"val\": \"2\"}}}}, {\"not\": {\"val\": {\"dotIsActive\": {\"spellId\": {\"spellId\": 10587}}}}}]}}, \"castSpell\": {\"spellId\": {\"spe"
+   }
+  },
+  "elemental-dps:elemental-dps-raid.apl.json": {
+   "priority[0]": {
+    "messages": [
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped."
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpEq\", \"lhs\": {\"numberTargets\": {}}, \"rhs\": {\"const\": {\"val\": \"1\"}}}}, {\"not\": {\"val\": {\"dotIsActive\": {\"spellId\": {\"spellId\": 10438}}}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"r"
+   },
+   "priority[1]": {
+    "messages": [
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped."
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"numberTargets\": {}}, \"rhs\": {\"const\": {\"val\": \"2\"}}}}, {\"not\": {\"val\": {\"dotIsActive\": {\"spellId\": {\"spellId\": 10587}}}}}]}}, \"castSpell\": {\"spellId\": {\"spe"
+   }
+  },
+  "elemental-dps:forever.apl.json": {
+   "priority[0]": {
+    "messages": [
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped."
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpEq\", \"lhs\": {\"numberTargets\": {}}, \"rhs\": {\"const\": {\"val\": \"1\"}}}}, {\"not\": {\"val\": {\"dotIsActive\": {\"spellId\": {\"spellId\": 10438}}}}}]}}, \"castSpell\": {\"spellId\": {\"spe"
+   },
+   "priority[1]": {
+    "messages": [
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped."
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"numberTargets\": {}}, \"rhs\": {\"const\": {\"val\": \"2\"}}}}, {\"not\": {\"val\": {\"dotIsActive\": {\"spellId\": {\"spellId\": 10587}}}}}]}}, \"castSpell\": {\"spellId\": {\"spe"
+   },
+   "priority[7]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 915}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 915}}}"
+   }
+  },
+  "enhancement-dps:enhancement-dps.apl.json": {
+   "priority[8]": {
+    "messages": [
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped."
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpEq\", \"lhs\": {\"numberTargets\": {}}, \"rhs\": {\"const\": {\"val\": \"1\"}}}}, {\"not\": {\"val\": {\"dotIsActive\": {\"spellId\": {\"spellId\": 10438}}}}}]}}, \"castSpell\": {\"spellId\": {\"spe"
+   }
+  },
+  "enhancement-dps:enhancement-dps-raid.apl.json": {},
+  "enhancement-dps:forever.apl.json": {}
+ },
+ "druid": {
+  "balance-dps:balance-dps.apl.json": {},
+  "balance-dps:balance-dps-raid.apl.json": {},
+  "balance-dps:default.apl.json": {
+   "priority[5]": {
+    "messages": [
+     "Warning: Condition could not be resolved and will be treated as always true. Add an 'Aura Known' check if this action should be skipped when the aura is absent.",
+     "Warning: No aura found on  (#1) for: {SpellID: 408255}"
+    ],
+    "line": "{\"condition\": {\"auraIsActive\": {\"auraId\": {\"spellId\": 408255}}}, \"castSpell\": {\"spellId\": {\"spellId\": 25298}}}"
+   }
+  },
+  "feral-cat-dps:feral-cat-dps.apl.json": {
+   "priority[0]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 5217}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 5217}}}"
+   },
+   "priority[11]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 23724}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"not\": {\"val\": {\"auraIsActive\": {\"auraId\": {\"spellId\": 768}}}}}, {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"currentManaPercent\": {}}, \"rhs\": {\"const\": {\"val\": \"80%\"}}}}, {\"not\": {\"val\": {\"or\": {\"val"
+   },
+   "priority[2]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 13494}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"auraIsActive\": {\"auraId\": {\"spellId\": 768}}}, {\"spellIsKnown\": {\"spellId\": {\"spellId\": 13494}}}, {\"not\": {\"val\": {\"auraIsActive\": {\"auraId\": {\"spellId\": 13494}}}}}, {\"cmp\": {\"op\": \"OpLt\""
+   },
+   "prepull[1]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 5217}"
+    ],
+    "line": ""
+   }
+  },
+  "feral-cat-dps:feral-cat-dps-raid.apl.json": {
+   "priority[1]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 5217}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 5217}}}"
+   },
+   "priority[13]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 23724}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"not\": {\"val\": {\"auraIsActive\": {\"auraId\": {\"spellId\": 768}}}}}, {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"currentManaPercent\": {}}, \"rhs\": {\"const\": {\"val\": \"80%\"}}}}, {\"not\": {\"val\": {\"or\": {\"val"
+   },
+   "priority[3]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 13494}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"auraIsActive\": {\"auraId\": {\"spellId\": 768}}}, {\"spellIsKnown\": {\"spellId\": {\"spellId\": 13494}}}, {\"not\": {\"val\": {\"auraIsActive\": {\"auraId\": {\"spellId\": 13494}}}}}, {\"cmp\": {\"op\": \"OpLt\""
+   },
+   "priority[5]": {
+    "messages": [
+     "Warning: No aura found on  (#1) for: {SpellID: 17056}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"auraIsKnown\": {\"auraId\": {\"spellId\": 17056}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"currentMana\": {}}, \"rhs\": {\"spellCurrentCost\": {\"spellId\": {\"spellId\": 768}}}}}, {\"gcdIsReady\": {}}, {\"and\""
+   },
+   "prepull[1]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 5217}"
+    ],
+    "line": ""
+   }
+  },
+  "feral-cat-dps:default.apl.json": {},
+  "feral-bear-tank:default.apl.json": {
+   "priority[2]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1238073}",
+     "Warning:  (#1) does not know spell {SpellID: 417141}",
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped."
+    ],
+    "line": "{\"groupReference\": {\"groupName\": \"Keep up\"}}"
+   },
+   "priority[3]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1238073}",
+     "Warning:  (#1) does not know spell {SpellID: 417141}",
+     "Warning: A condition branch in this 'And' check could not be resolved and was dropped."
+    ],
+    "line": "{\"groupReference\": {\"groupName\": \"Damage\"}}"
+   }
+  },
+  "feral-bear-tank:feral-bear-tank-raid.apl.json": {
+   "priority[4]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1238073}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1238073}}}"
+   }
+  }
+ }
+}

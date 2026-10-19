@@ -5,8 +5,9 @@
     python _reference/data/cloud_setup.py --skip-sim   # Python packages and the quick checks only
 
 1. `pip install -r requirements.txt` (numpy: the raid calibration's mana-limit fit).
-2. `raidsim/setup.py`: Go, protoc, a sparse clone of the community simulator at the pinned commit (`GAMES["forever"]["commit"]` in setup.py: 2ce8265, beta 70291,
-   since 2026-10-08), our patches (raidsim/patches/README.md) and the `foreverbench` tool, under ~/.wow-forever-tools.
+2. `raidsim/setup.py`: Go, protoc, a sparse clone of the official simulator (github.com/wowsims/forever since 2026-10-18: the
+   ElliotWood/Forever fork it replaced was deleted) at the pinned commit (`GAMES["forever"]["commit"]` in setup.py: 09e7398, client
+   70450), our patches (raidsim/patches/README.md) and the `foreverbench` tool, under ~/.wow-forever-tools/wowsims-forever.
    Several minutes the first time. In a cloud session the container (and the tools with it) goes away when the session ends,
    so run this at the start of every session that needs the raid simulator; the fight lab, the scorer, the healer lab and
    the page renderers need only step 1.

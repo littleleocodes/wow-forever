@@ -80,12 +80,16 @@
         }
        },
        {
-        "not": {
-         "val": {
-          "dotIsActive": {
-           "spellId": {
-            "spellId": 10438
-           }
+        "cmp": {
+         "op": "OpLe",
+         "lhs": {
+          "totemRemainingTime": {
+           "totemType": "Fire"
+          }
+         },
+         "rhs": {
+          "const": {
+           "val": "0s"
           }
          }
         }
@@ -133,12 +137,16 @@
         }
        },
        {
-        "not": {
-         "val": {
-          "dotIsActive": {
-           "spellId": {
-            "spellId": 10587
-           }
+        "cmp": {
+         "op": "OpLe",
+         "lhs": {
+          "totemRemainingTime": {
+           "totemType": "Fire"
+          }
+         },
+         "rhs": {
+          "const": {
+           "val": "0s"
           }
          }
         }

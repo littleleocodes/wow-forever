@@ -50,7 +50,7 @@ def registered(cls, repo):
     trees = R.load_trees(repo, cls)
     data = json.load(open(ROOT / cls / R.GAMES["forever"]["builds"], encoding="utf-8"))
     by_id = {b["id"]: b for b in data["builds"]}
-    spells, auras = set(), set()
+    spells, auras, target = set(), set(), set()
     for spec, entry in R.SPECS[cls].items():
         builds = []
         for bid in entry.get("builds", []):
@@ -79,11 +79,71 @@ def registered(cls, repo):
                     continue
                 d = json.loads(line)
                 units = [d] + (d.get("pets") or [])
-                auras.update(a["spellId"] for a in d.get("target_auras") or [] if a.get("spellId"))
+                target.update(a["spellId"] for a in d.get("target_auras") or [] if a.get("spellId"))
                 for u in units:
                     spells.update(u.get("spells") or [])
                     auras.update(a["spellId"] for a in u.get("auras") or [] if a.get("spellId"))
-    return spells, auras
+    return spells, auras, target
+
+
+# Totems the fork tracked as dots (`dotIsActive`); the official simulator has no dot for them and drops the condition, so the line
+# recast every GCD (the Elemental smoke run: Searing Totem 58 casts a fight). Its own rotations ask `totemRemainingTime` by type.
+TOTEMS = {10438: "Fire", 10587: "Fire"}   # Searing Totem, Magma Totem
+# Auras the fork registered and the official simulator does not: a clause that only asks whether the aura exists
+# (`auraIsKnown`) is dropped from its `and` (true for the builds that use the line). 17056 Furor: a passive in the official code.
+DROP_KNOWN = {17056}
+GUARD_SELF = {1299447, 25296, 13163, 20043}   # Aspect of the Beast, of the Hawk, of the Monkey, of the Wild
+AURA_VALUES = ("auraIsActive", "auraIsInactive", "auraIsActiveWithReactionTime", "auraIsInactiveWithReactionTime", "auraNumStacks",
+               "auraRemainingTime", "auraIsKnown", "auraInternalCooldown", "auraShouldRefresh")
+
+
+def semantics(data, self_auras, target_auras):
+    """Rewrites a rotation's conditions the official simulator reads differently; returns the list of changes."""
+    changes = []
+
+    # a self-buff the fork refused to recast while it was up and the official simulator casts again every GCD (the melee hunter's
+    # Aspect of the Beast: 55 casts a fight and out of mana for 100 s of 180): guard the plain cast with "while the aura is down"
+    for lst in (data.get("priorityList") or []):
+        act = lst.get("action") if isinstance(lst, dict) else None
+        sid = (act or {}).get("castSpell", {}).get("spellId", {}).get("spellId")
+        if act is not None and sid in GUARD_SELF and "condition" not in act:
+            act["condition"] = {"auraIsInactive": {"sourceUnit": {"type": "Self"}, "auraId": {"spellId": sid}}}
+            changes.append(f"guard {sid}")
+
+    def visit(o):
+        if isinstance(o, dict):
+            # a debuff asked without a source unit: the fork looked on the target, the official simulator on yourself
+            for k in AURA_VALUES:
+                v = o.get(k)
+                if isinstance(v, dict) and "sourceUnit" not in v and isinstance(v.get("auraId"), dict):
+                    sid = v["auraId"].get("spellId")
+                    if sid in target_auras and sid not in self_auras:
+                        v["sourceUnit"] = {"type": "CurrentTarget"}
+                        changes.append(f"{k}({sid}) on the target")
+            if "and" in o and isinstance(o["and"].get("vals"), list):
+                keep = [x for x in o["and"]["vals"] if not (isinstance(x, dict) and x.get("auraIsKnown", {}).get("auraId", {}).get("spellId") in DROP_KNOWN)]
+                if len(keep) != len(o["and"]["vals"]):
+                    changes.append("auraIsKnown dropped")
+                    o["and"]["vals"] = keep
+            for k, v in list(o.items()):
+                if isinstance(v, dict) and k == "not" and isinstance(v.get("val"), dict) and "dotIsActive" in v["val"]:
+                    sid = v["val"]["dotIsActive"].get("spellId", {}).get("spellId")
+                    if sid in TOTEMS:   # not dotIsActive(totem) -> no totem of that type standing
+                        o.pop("not")
+                        o["cmp"] = {"op": "OpLe", "lhs": {"totemRemainingTime": {"totemType": TOTEMS[sid]}}, "rhs": {"const": {"val": "0s"}}}
+                        changes.append(f"totem {sid}")
+                elif k == "dotIsActive" and isinstance(v, dict) and v.get("spellId", {}).get("spellId") in TOTEMS:
+                    sid = v["spellId"]["spellId"]
+                    o.pop("dotIsActive")
+                    o["cmp"] = {"op": "OpGt", "lhs": {"totemRemainingTime": {"totemType": TOTEMS[sid]}}, "rhs": {"const": {"val": "0s"}}}
+                    changes.append(f"totem {sid}")
+            for v in list(o.values()):
+                visit(v)
+        elif isinstance(o, list):
+            for v in o:
+                visit(v)
+    visit(data)
+    return changes
 
 
 def walk(o, fn, path=""):
@@ -114,10 +174,11 @@ def main():
     record_path = HERE / "apl-remap.json"
     record = json.load(open(record_path, encoding="utf-8")) if record_path.exists() else {}
     for cls in a.classes or [c for c in R.SPECS if isinstance(R.SPECS[c], dict)]:
-        spells, auras = registered(cls, repo)
-        known = spells | auras
-        changes, unresolved = {}, {}
-        for f in sorted((HERE / "apls" / cls).glob("*.json")):
+        spells, auras, target = registered(cls, repo)
+        known = spells | auras | target
+        changes, unresolved, rewrites = {}, {}, {}
+        vendored = sorted((HERE / "presets" / "elliotwood-b7083fa" / "ui" / "specs").glob(f"{cls}/*/apls/*.json"))
+        for f in sorted((HERE / "apls" / cls).glob("*.json")) + vendored:
             data = json.load(open(f, encoding="utf-8"))
             fc = []
 
@@ -142,16 +203,24 @@ def main():
                 fc.append((sid, new))
                 aid["spellId"] = new
             walk(data, fix)
+            sem = semantics(data, auras, target)
+            if sem:
+                rewrites[f.name] = sem
             if fc:
                 changes[f.name] = sorted(set(fc))
-                if a.write:
-                    f.write_text(json.dumps(data, indent=1) + "\n", encoding="utf-8")
+            if (fc or sem) and a.write:
+                f.write_text(json.dumps(data, indent=1) + "\n", encoding="utf-8")
         print(f"== {cls}: {len(spells)} spells, {len(auras)} auras registered")
         for fn, ch in changes.items():
             print(f"  {fn}: " + ", ".join(f"{o}->{n}" for o, n in ch))
+        for fn, sem in rewrites.items():
+            print(f"  {fn}: conditions " + ", ".join(sem))
         for fn, ids in unresolved.items():
             print(f"  UNRESOLVED {fn}: {sorted(ids)}")
-        record[cls] = {"changes": changes, "unresolved": {k: sorted(v) for k, v in unresolved.items()}, "sim": R.git_commit(repo)}
+        old = record.get(cls, {})   # a second pass finds nothing left to remap: keep the first pass's changes
+        record[cls] = {"changes": {**old.get("changes", {}), **changes},
+                       "condition_rewrites": {**old.get("condition_rewrites", {}), **rewrites},
+                       "unresolved": {k: sorted(v) for k, v in unresolved.items()}, "sim": R.git_commit(repo)}
     if a.write:
         record_path.write_text(json.dumps(record, indent=1) + "\n", encoding="utf-8")
         print(f"wrote {record_path}")
