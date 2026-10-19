@@ -6,6 +6,7 @@ caster share by level come from `mob_stats.json` (Classic 1.12 creature database
 still an assumption for WoW: Forever.
 """
 import json
+import math
 import pathlib
 
 
@@ -200,7 +201,8 @@ def _effect_amount(row, level):
 
 
 def rank_level_factor(cls, name, rank_level, level):
-    """{"direct", "periodic", "absorb"}: the rank's amount at `level` over its tooltip (level-60) amount; {} when it does not scale."""
+    """{"direct", "periodic", "absorb"}: the rank's amount at `level` over its tooltip (level-60) amount, for each kind the rank has
+    (a kind without a gain reads 1.0: Immolate's periodic part); {} when nothing scales at that level."""
     if not RANK_LEVEL_SCALING:
         return {}
     rec = _SCALING.get(cls, {}).get(name, {}).get(str(int(rank_level)))
@@ -212,10 +214,8 @@ def rank_level_factor(cls, name, rank_level, level):
         if rows:
             at60 = sum(_effect_amount(r, TOOLTIP_LEVEL) for r in rows)
             if at60 > 0:
-                f = sum(_effect_amount(r, level) for r in rows) / at60
-                if abs(f - 1) > 1e-9:
-                    out[kind] = f
-    return out
+                out[kind] = sum(_effect_amount(r, level) for r in rows) / at60
+    return out if any(abs(f - 1) > 1e-9 for f in out.values()) else {}
 
 # player attacks vs a same-level mob (ElliotWood/Forever target.go attack table, level-60 attacker, defender at +0):
 MELEE_MISS = 0.05             # yellow and single-weapon white miss

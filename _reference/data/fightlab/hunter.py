@@ -366,8 +366,8 @@ class HunterModule(BaseModule):
     def rank_at(self, name):
         ranks = [s for s in BOOK.get(name, []) if s.level <= self.level]
         if name in BEST_RAP_RANK and ranks:
-            return max(ranks, key=lambda s: (getattr(s, "rap", 0.0), s.level))
-        return ranks[-1] if ranks else None
+            return self.scale_rank(max(ranks, key=lambda s: (getattr(s, "rap", 0.0), s.level)))
+        return self.scale_rank(ranks[-1]) if ranks else None   # the rank at this level (row 8)
 
     def beast_known(self):
         """Aspect of the Beast is trained at level 30: the melee builds' aspect from then on."""

@@ -12,6 +12,7 @@ plus hooks the module fills in. Spell kinds: "spell" (cast/instant, direct and/o
 "heal", "melee" / "ranged" (weapon attacks: white swings and yellow abilities), "buff" (no target effect).
 Pets (`Pet`) fight the mob on their own swing timer and hold its attention until the player out-threatens them.
 """
+import copy
 import math
 import random
 import re
@@ -342,6 +343,26 @@ class BaseModule:
 
     def periodic_can_crit(self, spell):
         return False
+
+    def scale_rank(self, spell):
+        """The rank at the character's level (tables.rank_level_factor, audit of 2026-10-18 row 8): a copy with the tooltip's level-60
+        damage, healing and absorb scaled to what the rank gives at self.level; the spell itself when nothing scales (physical
+        abilities, top ranks at their cap, RANK_LEVEL_SCALING off). A kind the rank lacks borrows the other's factor for a field the
+        module filled anyway (a channel's damage read into dmg_min, a periodic rank's number into dot)."""
+        if spell is None:
+            return None
+        f = tables.rank_level_factor(type(self).__module__.rsplit(".", 1)[-1], spell.name, spell.level, self.level)
+        if not f:
+            return spell
+        fd = f.get("direct", f.get("periodic", 1.0))
+        fp = f.get("periodic", f.get("direct", 1.0))
+        fa = f.get("absorb", 1.0)
+        s = copy.copy(spell)
+        s.dmg_min, s.dmg_max, s.heal_min, s.heal_max = s.dmg_min * fd, s.dmg_max * fd, s.heal_min * fd, s.heal_max * fd
+        s.dot, s.hot, s.absorb = s.dot * fp, s.hot * fp, s.absorb * fa
+        if getattr(s, "burn", 0.0):
+            s.burn = s.burn * fp
+        return s
 
     def gcd_of(self, spell):
         """The global cooldown a spell triggers: the client's per-spell value (tables.spell_gcd: rogue, cat and totem abilities 1.0 s)."""

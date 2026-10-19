@@ -383,7 +383,7 @@ class PaladinModule(BaseModule):
 
     def rank_at(self, name):
         ranks = [s for s in BOOK.get(name, []) if s.level <= self.level]
-        return ranks[-1] if ranks else None
+        return self.scale_rank(ranks[-1]) if ranks else None   # the rank at this level (row 8)
 
     def seal(self):
         if self.path != "ret":

@@ -38,9 +38,10 @@ VARIATIONS = [
     ("2.5% partial resists (the assumption before 2026-10-18)", ["PARTIAL_RESIST_LOSS=0.025"]),
     ("channel pushback 0.5 s per hit (before 2026-10-18)", ["CHANNEL_PUSHBACK=0"]),
     ("mob health by the client's ExpectedStat (1.35x at 20, 1.13x at 60)", ["MOB_HP_SHAPE=expected"]),
+    ("every rank at its level-60 amount (no rank level scaling, before 2026-10-18)", ["RANK_LEVEL_SCALING=0"]),
 ]
 DEFAULTS = {k: getattr(tables, k) for k in ("ROOT_BREAK_CHANCE", "MOB_HP_MULT", "MOB_DMG_MULT", "PUSHBACK_FIRST", "PUSHBACK_NEXT", "WEAPON_DPS_MULT", "GEAR_STAT_MULT", "GEAR_TIER", "MOB_CASTER_SHARE", "RUNNER_SHARE",
-                                         "PARTIAL_RESIST_LOSS", "CHANNEL_PUSHBACK", "MOB_HP_SHAPE")}
+                                         "PARTIAL_RESIST_LOSS", "CHANNEL_PUSHBACK", "MOB_HP_SHAPE", "RANK_LEVEL_SCALING")}
 
 
 def reset():

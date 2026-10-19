@@ -266,7 +266,7 @@ class PriestModule(BaseModule):
         self.holy = spec.startswith(("holy", "discipline"))
         self.book = {name: self.rank_at(name) for name in BOOK}
         if self.holy and self.book.get("Penance") is not None:   # the learned rank with the most damage (an earlier beta's rank 4 hit for less)
-            self.book["Penance"] = max((s for s in BOOK["Penance"] if s.level <= level), key=lambda s: (s.dot, s.level))
+            self.book["Penance"] = self.scale_rank(max((s for s in BOOK["Penance"] if s.level <= level), key=lambda s: (s.dot, s.level)))
         self.spells = {n: s for n, s in self.book.items() if s is not None}
         for tname, sname in TALENT_SPELLS.items():
             if not self.t.get(tname):
@@ -308,7 +308,7 @@ class PriestModule(BaseModule):
 
     def rank_at(self, name):
         ranks = [s for s in BOOK.get(name, []) if s.level <= self.level]
-        return ranks[-1] if ranks else None
+        return self.scale_rank(ranks[-1]) if ranks else None   # the rank at this level (row 8)
 
     # ------------------------------------------------------------ character
     def make_player(self, level):
