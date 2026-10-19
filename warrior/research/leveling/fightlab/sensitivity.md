@@ -4,30 +4,38 @@
 
 | Assumption | Level | opt-arms-2h-raid-leveling-st time/kill | leveling-arms time/kill | Best build | opt-arms-2h-raid-leveling-st: −Mortal Strike | opt-arms-2h-raid-leveling-st: −Deep Wounds | opt-arms-2h-raid-leveling-st: −Cruelty |
 |---|---|---|---|---|---|---|---|
-| baseline | 30 | 26.0s (deaths 0.0/100) | 26.1s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | - | +1% | - |
-| baseline | 60 | 30.0s (deaths 0.0/100) | 30.2s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +16% | +3% | +4% |
-| root breaks on 10% of hits | 30 | 26.0s (deaths 0.0/100) | 26.1s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | - | +1% | - |
-| root breaks on 10% of hits | 60 | 30.0s (deaths 0.0/100) | 30.2s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +16% | +3% | +4% |
-| root breaks on 40% of hits | 30 | 26.0s (deaths 0.0/100) | 26.1s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | - | +1% | - |
-| root breaks on 40% of hits | 60 | 30.0s (deaths 0.0/100) | 30.2s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +16% | +3% | +4% |
-| mobs have 20% less health | 30 | 21.9s (deaths 0.0/100) | 21.9s (deaths 0.0/100) | leveling-arms | - | +0% | - |
-| mobs have 20% less health | 60 | 25.5s (deaths 0.0/100) | 25.3s (deaths 0.0/100) | leveling-arms | +13% | +2% | +3% |
-| mobs have 20% more health | 30 | 30.4s (deaths 0.0/100) | 30.5s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | - | +2% | - |
-| mobs have 20% more health | 60 | 34.4s (deaths 0.0/100) | 34.8s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +19% | +3% | +6% |
-| mobs hit 30% harder | 30 | 27.1s (deaths 0.0/100) | 26.7s (deaths 0.0/100) | leveling-arms | - | +1% | - |
-| mobs hit 30% harder | 60 | 30.5s (deaths 0.0/100) | 30.5s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +19% | +2% | +6% |
-| pushback 1.0 s per hit | 30 | 26.0s (deaths 0.0/100) | 26.1s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | - | +1% | - |
-| pushback 1.0 s per hit | 60 | 30.0s (deaths 0.0/100) | 30.2s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +16% | +3% | +4% |
-| weapons 20% better (blues) | 30 | 24.7s (deaths 0.0/100) | 24.7s (deaths 0.0/100) | leveling-arms | - | +1% | - |
-| weapons 20% better (blues) | 60 | 28.6s (deaths 0.0/100) | 28.6s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +15% | +2% | +5% |
-| dungeon blues (item database) | 30 | 22.7s (deaths 0.0/100) | 22.9s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | - | +2% | - |
-| dungeon blues (item database) | 60 | 27.9s (deaths 0.0/100) | 27.9s (deaths 0.0/100) | leveling-arms | +16% | +2% | +5% |
-| gear stats 20% better | 30 | 25.3s (deaths 0.0/100) | 25.2s (deaths 0.0/100) | leveling-arms | - | +1% | - |
-| gear stats 20% better | 60 | 28.7s (deaths 0.0/100) | 29.1s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +17% | +3% | +5% |
-| no caster mobs | 30 | 26.4s (deaths 0.0/100) | 26.4s (deaths 0.0/100) | leveling-arms | - | +2% | - |
-| no caster mobs | 60 | 30.0s (deaths 0.0/100) | 30.4s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +17% | +2% | +6% |
-| 30% caster mobs | 30 | 25.7s (deaths 0.0/100) | 25.9s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | - | +1% | - |
-| 30% caster mobs | 60 | 29.0s (deaths 0.0/100) | 29.1s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +16% | +2% | +3% |
-| 20% of mobs run at 20% health | 30 | 26.3s (deaths 0.0/100) | 26.2s (deaths 0.0/100) | leveling-arms | - | +1% | - |
-| 20% of mobs run at 20% health | 60 | 30.3s (deaths 0.0/100) | 30.8s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +17% | +2% | +5% |
+| baseline | 30 | 24.9s (deaths 0.0/100) | 26.0s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | - | +1% | - |
+| baseline | 60 | 29.5s (deaths 0.0/100) | 30.0s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +6% | +2% | +5% |
+| root breaks on 10% of hits | 30 | 24.9s (deaths 0.0/100) | 26.0s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | - | +1% | - |
+| root breaks on 10% of hits | 60 | 29.5s (deaths 0.0/100) | 30.0s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +6% | +2% | +5% |
+| root breaks on 40% of hits | 30 | 24.9s (deaths 0.0/100) | 26.0s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | - | +1% | - |
+| root breaks on 40% of hits | 60 | 29.5s (deaths 0.0/100) | 30.0s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +6% | +2% | +5% |
+| mobs have 20% less health | 30 | 21.1s (deaths 0.0/100) | 21.9s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | - | +0% | - |
+| mobs have 20% less health | 60 | 24.9s (deaths 0.0/100) | 25.5s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +4% | +3% | +5% |
+| mobs have 20% more health | 30 | 29.2s (deaths 0.0/100) | 30.2s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | - | +2% | - |
+| mobs have 20% more health | 60 | 33.7s (deaths 0.0/100) | 34.6s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +9% | +4% | +7% |
+| mobs hit 30% harder | 30 | 25.8s (deaths 0.0/100) | 26.9s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | - | +0% | - |
+| mobs hit 30% harder | 60 | 30.2s (deaths 0.0/100) | 30.7s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +6% | +3% | +5% |
+| pushback 1.0 s per hit | 30 | 24.9s (deaths 0.0/100) | 26.0s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | - | +1% | - |
+| pushback 1.0 s per hit | 60 | 29.5s (deaths 0.0/100) | 30.0s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +6% | +2% | +5% |
+| weapons 20% better (blues) | 30 | 23.6s (deaths 0.0/100) | 24.6s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | - | +2% | - |
+| weapons 20% better (blues) | 60 | 28.1s (deaths 0.0/100) | 28.4s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +5% | +2% | +4% |
+| dungeon blues (item database) | 30 | 22.0s (deaths 0.0/100) | 22.9s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | - | +1% | - |
+| dungeon blues (item database) | 60 | 27.2s (deaths 0.0/100) | 27.7s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +6% | +3% | +6% |
+| gear stats 20% better | 30 | 24.5s (deaths 0.0/100) | 25.2s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | - | +0% | - |
+| gear stats 20% better | 60 | 28.5s (deaths 0.0/100) | 28.9s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +5% | +2% | +6% |
+| no caster mobs | 30 | 25.1s (deaths 0.0/100) | 26.1s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | - | +2% | - |
+| no caster mobs | 60 | 29.7s (deaths 0.0/100) | 30.2s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +6% | +3% | +5% |
+| 30% caster mobs | 30 | 24.8s (deaths 0.0/100) | 25.7s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | - | +1% | - |
+| 30% caster mobs | 60 | 28.4s (deaths 0.0/100) | 29.1s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +5% | +2% | +5% |
+| 20% of mobs run at 20% health | 30 | 25.0s (deaths 0.0/100) | 26.2s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | - | +2% | - |
+| 20% of mobs run at 20% health | 60 | 30.0s (deaths 0.0/100) | 30.5s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +5% | +3% | +5% |
+| 2.5% partial resists (the assumption before 2026-10-18) | 30 | 24.9s (deaths 0.0/100) | 26.0s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | - | +1% | - |
+| 2.5% partial resists (the assumption before 2026-10-18) | 60 | 29.5s (deaths 0.0/100) | 30.0s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +6% | +2% | +5% |
+| channel pushback 0.5 s per hit (before 2026-10-18) | 30 | 24.9s (deaths 0.0/100) | 26.0s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | - | +1% | - |
+| channel pushback 0.5 s per hit (before 2026-10-18) | 60 | 29.5s (deaths 0.0/100) | 30.0s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +6% | +2% | +5% |
+| mob health by the client's ExpectedStat (1.35x at 20, 1.13x at 60) | 30 | 30.0s (deaths 0.0/100) | 31.1s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | - | +2% | - |
+| mob health by the client's ExpectedStat (1.35x at 20, 1.13x at 60) | 60 | 32.4s (deaths 0.0/100) | 32.9s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +7% | +3% | +5% |
+| every rank at its level-60 amount (no rank level scaling, before 2026-10-18) | 30 | 24.9s (deaths 0.0/100) | 26.0s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | - | +1% | - |
+| every rank at its level-60 amount (no rank level scaling, before 2026-10-18) | 60 | 29.5s (deaths 0.0/100) | 30.0s (deaths 0.0/100) | opt-arms-2h-raid-leveling-st | +6% | +2% | +5% |
 

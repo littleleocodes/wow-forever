@@ -10,26 +10,26 @@ Missing: Shifting Power
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Moonglow | Balance | 2 | +6.87% | manual |
-| Reflection | Restoration | 3 | +5.15% | manual |
-| Nature's Splendor | Balance | 3 | +4.54% | manual |
-| Moonkin Form | Balance | 7 | +3.64% | manual |
-| Eclipse | Balance | 5 | +3.46% | manual |
-| Insect Swarm | Balance | 4 | +3.20% | manual |
-| Nature's Grace | Balance | 5 | +2.96% | manual |
-| Swiftmend | Restoration | 4 | +2.76% | manual |
-| Improved Starfire | Balance | 4 | +2.23% | manual |
-| Improved Wrath | Balance | 1 | +1.72% | manual |
-| Moonfury | Balance | 6 | +1.71% | manual |
-| Improved Moonfire | Balance | 2 | +1.06% | manual |
-| Feral Swiftness | Feral Combat | 2 | +0.93% | manual |
-| Vengeance | Balance | 4 | +0.84% | manual |
-| Naturalist | Restoration | 2 | +0.63% | manual |
-| Living Spirit | Restoration | 5 | +0.60% | manual |
-| Nature's Majesty | Balance | 2 | +0.47% | manual |
-| Nature's Swiftness | Restoration | 5 | +0.43% | manual |
+| Moonglow | Balance | 2 | +8.45% | manual |
+| Nature's Splendor | Balance | 3 | +4.89% | manual |
+| Reflection | Restoration | 3 | +4.54% | manual |
+| Eclipse | Balance | 5 | +3.96% | manual |
+| Moonkin Form | Balance | 7 | +3.77% | manual |
+| Insect Swarm | Balance | 4 | +3.66% | manual |
+| Nature's Grace | Balance | 5 | +3.39% | manual |
+| Improved Starfire | Balance | 4 | +2.52% | manual |
+| Swiftmend | Restoration | 4 | +2.44% | manual |
+| Moonfury | Balance | 6 | +1.96% | manual |
+| Improved Wrath | Balance | 1 | +1.52% | manual |
+| Improved Moonfire | Balance | 2 | +1.22% | manual |
+| Vengeance | Balance | 4 | +0.97% | manual |
+| Feral Swiftness | Feral Combat | 2 | +0.94% | manual |
+| Naturalist | Restoration | 2 | +0.72% | manual |
+| Nature's Majesty | Balance | 2 | +0.54% | manual |
+| Living Spirit | Restoration | 5 | +0.53% | manual |
+| Nature's Swiftness | Restoration | 5 | +0.50% | manual |
 | Improved Entangling Roots | Balance | 3 | +0.30% | manual |
-| Heart of the Wild | Feral Combat | 1 | +0.17% | manual |
+| Heart of the Wild | Feral Combat | 1 | +0.16% | manual |
 | Thick Hide | Feral Combat | 2 | +0.10% | manual |
 | Genesis | Balance | 1 | +0.00% | manual |
 | Nature's Reach | Balance | 2 | +0.00% | manual |
@@ -41,11 +41,11 @@ Missing: Shifting Power
 | Savage Fury | Feral Combat | 3 | +0.00% | manual |
 | Feral Charge | Feral Combat | 3 | +0.00% | manual |
 
-## Optimized build: 36/2/13  score +57.43%  (dps x1.874, sustain x2.891, surv x1.100, utility +1.90%)
-Absolute DPS index (character alone, no talents = 1.00): 1.196  — use this to compare models with different pet shares.
+## Optimized build: 36/2/13  score +59.45%  (dps x1.874, sustain x3.419, surv x1.100, utility +1.90%)
+Absolute DPS index (character alone, no talents = 1.00): 1.246  — use this to compare models with different pet shares.
 
 ```
-  Balance: Improved Wrath 5, Moonglow 3, Improved Moonfire 2, Nature's Majesty 2, Nature's Splendor 1, Improved Entangling Roots 3, Improved Starfire 5, Vengeance 5, Eclipse 3, Nature's Grace 1, Moonfury 5, Moonkin Form 1
+  Balance: Improved Wrath 5, Nature's Majesty 2, Moonglow 3, Improved Moonfire 2, Nature's Splendor 1, Improved Entangling Roots 3, Improved Starfire 5, Vengeance 5, Eclipse 3, Nature's Grace 1, Moonfury 5, Moonkin Form 1
   Feral Combat: Heart of the Wild 2
   Restoration: Nature's Focus 5, Naturalist 5, Reflection 3
 ```
@@ -54,12 +54,12 @@ Absolute DPS index (character alone, no talents = 1.00): 1.196  — use this to 
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Feral Swiftness | Feral Combat 2 | 1/2 | +0.77% | no |
-| Swiftmend | Restoration 4 | 1/1 | +0.22% | no |
-| Nature's Swiftness | Restoration 5 | 1/1 | +0.20% | no |
+| Feral Swiftness | Feral Combat 2 | 1/2 | +0.75% | no |
+| Nature's Swiftness | Restoration 5 | 1/1 | +0.21% | no |
+| Swiftmend | Restoration 4 | 1/1 | +0.12% | no |
 | Thick Hide | Feral Combat 2 | 1/3 | +0.05% | no |
-| Living Spirit | Restoration 5 | 1/3 | +0.05% | no |
-| Heart of the Wild | Feral Combat 1 | 3/5 | +0.03% | yes |
+| Living Spirit | Restoration 5 | 1/3 | +0.02% | no |
+| Heart of the Wild | Feral Combat 1 | 3/5 | +0.02% | yes |
 | Genesis | Balance 1 | 1/5 | +0.00% | yes |
 | Nature's Reach | Balance 2 | 1/2 | +0.00% | yes |
 | Overgrowth | Balance 5 | 1/2 | +0.00% | yes |
@@ -74,26 +74,29 @@ Absolute DPS index (character alone, no talents = 1.00): 1.196  — use this to 
 
 | Levels | Tree | Talent | Pts | Score at end |
 |---|---|---|---|---|
-| 10-14 | Balance | Improved Wrath | 5 | +7.0% |
-| 15-17 | Balance | Moonglow | 3 | +16.7% |
-| 18-19 | Balance | Improved Moonfire | 2 | +23.7% |
-| 20-21 | Balance | Nature's Majesty | 2 | +19.1% |
-| 22 | Balance | Nature's Splendor | 1 | +22.3% |
-| 23-24 | Balance | Improved Entangling Roots | 2 | +22.9% |
-| 25-29 | Balance | Improved Starfire | 5 | +31.5% |
-| 30-32 | Balance | Eclipse | 3 | +39.7% |
-| 33 | Balance | Nature's Grace | 1 | +41.6% |
-| 34 | Balance | Vengeance | 1 | +42.4% |
-| 35-36 | Balance | Moonfury | 2 | +44.5% |
-| 37 | Balance | Vengeance | 1 | +45.3% |
-| 38 | Balance | Moonfury | 1 | +46.2% |
-| 39 | Balance | Vengeance | 1 | +47.0% |
-| 40 | Balance | Moonkin Form | 1 | +50.4% |
-| 41-42 | Balance | Vengeance | 2 | +52.2% |
-| 43-44 | Balance | Moonfury | 2 | +53.8% |
-| 45 | Balance | Improved Entangling Roots | 1 | +54.1% |
-| 46-50 | Restoration | Nature's Focus | 5 | +54.1% |
-| 51-55 | Restoration | Naturalist | 5 | +55.6% |
-| 56-58 | Restoration | Reflection | 3 | +57.4% |
-| 59-60 | Feral Combat | Heart of the Wild | 2 | +57.4% |
+| 10-14 | Balance | Improved Wrath | 5 | +6.1% |
+| 15 | Balance | Moonglow | 1 | +11.5% |
+| 16 | Balance | Improved Moonfire | 1 | +15.7% |
+| 17 | Balance | Moonglow | 1 | +19.0% |
+| 18 | Balance | Improved Moonfire | 1 | +22.8% |
+| 19 | Balance | Moonglow | 1 | +24.6% |
+| 20-21 | Balance | Nature's Majesty | 2 | +19.7% |
+| 22 | Balance | Nature's Splendor | 1 | +23.1% |
+| 23-24 | Balance | Improved Entangling Roots | 2 | +23.7% |
+| 25-29 | Balance | Improved Starfire | 5 | +32.9% |
+| 30-32 | Balance | Eclipse | 3 | +41.9% |
+| 33 | Balance | Nature's Grace | 1 | +43.8% |
+| 34 | Balance | Vengeance | 1 | +44.7% |
+| 35-36 | Balance | Moonfury | 2 | +46.9% |
+| 37 | Balance | Vengeance | 1 | +47.8% |
+| 38 | Balance | Moonfury | 1 | +48.8% |
+| 39 | Balance | Vengeance | 1 | +49.6% |
+| 40 | Balance | Moonkin Form | 1 | +53.0% |
+| 41-42 | Balance | Vengeance | 2 | +54.9% |
+| 43-44 | Balance | Moonfury | 2 | +56.6% |
+| 45 | Balance | Improved Entangling Roots | 1 | +56.9% |
+| 46-50 | Restoration | Nature's Focus | 5 | +56.9% |
+| 51-55 | Restoration | Naturalist | 5 | +58.5% |
+| 56-58 | Restoration | Reflection | 3 | +59.4% |
+| 59-60 | Feral Combat | Heart of the Wild | 2 | +59.5% |
 

@@ -23,7 +23,7 @@ Missing: Shifting Power
 | Rend and Tear | Feral Combat | 6 | +0.68% | manual |
 | Predatory Strikes | Feral Combat | 4 | +0.45% | manual |
 | Naturalist | Restoration | 2 | +0.34% | manual |
-| Predatory Instincts | Feral Combat | 5 | +0.32% | manual |
+| Natural Instinct | Feral Combat | 5 | +0.32% | manual |
 | Primal Bite | Feral Combat | 4 | +0.28% | manual |
 | Ferocity | Feral Combat | 1 | +0.18% | manual |
 | Genesis | Balance | 1 | +0.07% | manual |
@@ -45,7 +45,7 @@ Missing: Shifting Power
 
 ```
   Balance: Genesis 5, Nature's Majesty 2
-  Feral Combat: Ferocity 5, Thick Hide 3, Feral Swiftness 2, Sharpened Claws 2, Shredding Attacks 3, Feral Charge 1, Savage Fury 2, Blood Frenzy 2, Predatory Strikes 3, Predatory Instincts 2, Natural Reaction 5, Rend and Tear 5
+  Feral Combat: Ferocity 5, Thick Hide 3, Feral Swiftness 2, Sharpened Claws 2, Shredding Attacks 3, Feral Charge 1, Savage Fury 2, Blood Frenzy 2, Predatory Strikes 3, Natural Instinct 2, Natural Reaction 5, Rend and Tear 5
   Restoration: Nature's Focus 5, Naturalist 4
 ```
 

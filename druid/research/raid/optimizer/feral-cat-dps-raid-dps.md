@@ -20,7 +20,7 @@ Missing: Shifting Power
 | Savage Fury | Feral Combat | 3 | +1.12% | manual |
 | Predatory Strikes | Feral Combat | 4 | +1.10% | manual |
 | Rend and Tear | Feral Combat | 6 | +1.05% | manual |
-| Predatory Instincts | Feral Combat | 5 | +1.00% | manual |
+| Natural Instinct | Feral Combat | 5 | +1.00% | manual |
 | Naturalist | Restoration | 2 | +1.00% | manual |
 | Reflection | Restoration | 3 | +0.68% | manual |
 | Moonkin Form | Balance | 7 | +0.60% | manual |
@@ -45,7 +45,7 @@ Missing: Shifting Power
 
 ```
   Balance: Genesis 5, Nature's Majesty 2, Nature's Reach 2
-  Feral Combat: Heart of the Wild 5, Ferocity 2, Thick Hide 3, Shredding Attacks 3, Sharpened Claws 2, Savage Fury 2, Blood Frenzy 2, Predatory Strikes 3, Leader of the Pack 1, Predatory Instincts 2, Rend and Tear 5, Berserk 1
+  Feral Combat: Heart of the Wild 5, Ferocity 2, Thick Hide 3, Shredding Attacks 3, Sharpened Claws 2, Savage Fury 2, Blood Frenzy 2, Predatory Strikes 3, Leader of the Pack 1, Natural Instinct 2, Rend and Tear 5, Berserk 1
   Restoration: Furor 5, Naturalist 5, Reflection 1
 ```
 

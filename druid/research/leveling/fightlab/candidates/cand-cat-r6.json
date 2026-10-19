@@ -1,0 +1,206 @@
+{
+ "id": "cand-cat-r6",
+ "allocation": {
+  "Balance": [
+   [
+    "Genesis",
+    5
+   ],
+   [
+    "Nature's Reach",
+    2
+   ],
+   [
+    "Nature's Majesty",
+    2
+   ]
+  ],
+  "Feral Combat": [
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Heart of the Wild",
+    5
+   ],
+   [
+    "Feral Swiftness",
+    2
+   ],
+   [
+    "Thick Hide",
+    1
+   ],
+   [
+    "Sharpened Claws",
+    2
+   ],
+   [
+    "Savage Fury",
+    2
+   ],
+   [
+    "Blood Frenzy",
+    2
+   ],
+   [
+    "Predatory Strikes",
+    3
+   ],
+   [
+    "Leader of the Pack",
+    1
+   ],
+   [
+    "Natural Instinct",
+    2
+   ],
+   [
+    "Rend and Tear",
+    5
+   ],
+   [
+    "Berserk",
+    1
+   ]
+  ],
+  "Restoration": [
+   [
+    "Nature's Focus",
+    5
+   ],
+   [
+    "Naturalist",
+    5
+   ],
+   [
+    "Natural Shapeshifter",
+    1
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Feral Combat",
+   "talent": "Ferocity",
+   "points": 5
+  },
+  {
+   "levels": "15-17",
+   "tree": "Feral Combat",
+   "talent": "Heart of the Wild",
+   "points": 3
+  },
+  {
+   "levels": "18-19",
+   "tree": "Feral Combat",
+   "talent": "Feral Swiftness",
+   "points": 2
+  },
+  {
+   "levels": "20-21",
+   "tree": "Feral Combat",
+   "talent": "Sharpened Claws",
+   "points": 2
+  },
+  {
+   "levels": "22-23",
+   "tree": "Feral Combat",
+   "talent": "Savage Fury",
+   "points": 2
+  },
+  {
+   "levels": "24",
+   "tree": "Feral Combat",
+   "talent": "Heart of the Wild",
+   "points": 1
+  },
+  {
+   "levels": "25-27",
+   "tree": "Feral Combat",
+   "talent": "Predatory Strikes",
+   "points": 3
+  },
+  {
+   "levels": "28-29",
+   "tree": "Feral Combat",
+   "talent": "Blood Frenzy",
+   "points": 2
+  },
+  {
+   "levels": "30",
+   "tree": "Feral Combat",
+   "talent": "Leader of the Pack",
+   "points": 1
+  },
+  {
+   "levels": "31-35",
+   "tree": "Balance",
+   "talent": "Genesis",
+   "points": 5
+  },
+  {
+   "levels": "36-37",
+   "tree": "Balance",
+   "talent": "Nature's Reach",
+   "points": 2
+  },
+  {
+   "levels": "38-39",
+   "tree": "Balance",
+   "talent": "Nature's Majesty",
+   "points": 2
+  },
+  {
+   "levels": "40-41",
+   "tree": "Feral Combat",
+   "talent": "Natural Instinct",
+   "points": 2
+  },
+  {
+   "levels": "42",
+   "tree": "Feral Combat",
+   "talent": "Heart of the Wild",
+   "points": 1
+  },
+  {
+   "levels": "43",
+   "tree": "Feral Combat",
+   "talent": "Thick Hide",
+   "points": 1
+  },
+  {
+   "levels": "44-48",
+   "tree": "Feral Combat",
+   "talent": "Rend and Tear",
+   "points": 5
+  },
+  {
+   "levels": "49",
+   "tree": "Feral Combat",
+   "talent": "Berserk",
+   "points": 1
+  },
+  {
+   "levels": "50-54",
+   "tree": "Restoration",
+   "talent": "Nature's Focus",
+   "points": 5
+  },
+  {
+   "levels": "55-59",
+   "tree": "Restoration",
+   "talent": "Naturalist",
+   "points": 5
+  },
+  {
+   "levels": "60",
+   "tree": "Restoration",
+   "talent": "Natural Shapeshifter",
+   "points": 1
+  }
+ ],
+ "note": "Optimizer build saved by rebuild.py on 2026-10-19 (calibration round 6)"
+}

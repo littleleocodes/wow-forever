@@ -1,538 +1,541 @@
 {
  "class": "rogue",
  "spec": "combat-swords-raid",
- "profile": "leveling-aoe",
+ "profile": "leveling-st",
  "levels": [
-  40,
+  30,
   60
  ],
  "fights": 1500,
  "builds": [
-  "opt-combat-swords-raid-leveling-aoe",
-  "F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-aoe-r1.json",
-  "F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-aoe-r2.json",
-  "F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-aoe-r3.json",
-  "F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-aoe-r4.json",
-  "F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-aoe-r5.json",
-  "F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-aoe-r6.json",
-  "F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-aoe-r7.json"
+  "opt-combat-swords-raid-leveling-st",
+  "leveling-combat-swords",
+  "F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-hand-2026-09-26.json",
+  "F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r1.json",
+  "F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r2.json",
+  "F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r3.json",
+  "F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r4.json",
+  "F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r5.json",
+  "F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r6.json",
+  "F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r7.json",
+  "F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r8.json",
+  "F:\\wow-forever\\rogue\\research\\leveling\\fightlab\\candidates\\cand-combat-r9.json"
  ],
  "shares": {
-  "Eviscerate": 0.34746419835689646,
-  "Sinister Strike": 0.21816694654664198,
-  "Melee": 0.1672815473726985,
-  "Melee (off-hand)": 0.09946074442851563,
-  "Garrote": 0.05531095088270418,
-  "Instant Poison": 0.054288283230582754,
-  "Riposte": 0.02527818352775302,
-  "Hack and Slash": 0.016820398046185008,
-  "Deadly Poison": 0.01592874760802253
+  "Eviscerate": 0.2667802684580883,
+  "Sinister Strike": 0.21044879745391112,
+  "Melee": 0.1640085079622757,
+  "Garrote": 0.11814687961310119,
+  "Instant Poison": 0.1008610673769746,
+  "Melee (off-hand)": 0.07629913762683041,
+  "Riposte": 0.039834393278332256,
+  "Deadly Poison": 0.023620948230486473
  },
  "time_split": {
-  "fight": 0.88,
+  "fight": 0.85,
   "drink": 0.0,
-  "eat": 0.066,
+  "eat": 0.102,
   "other": 0.0,
-  "death": 0.054
+  "death": 0.048
  },
  "talents": [
   {
-   "talent": "Setup",
-   "sim": 0.1272252584241696,
-   "ev_before": 0.12497369523507293,
-   "ev_after": 0.12266298383388287,
+   "talent": "Seal Fate",
+   "sim": 0.05319790556290538,
+   "ev_before": 0.04878195154211936,
+   "ev_after": 0.04826319126356682,
    "scale": 1.0,
    "how": "kept",
    "per_level": [
     {
-     "level": 40,
-     "sim": 0.0987035356834598,
-     "ev": 0.11876019672685864
-    },
-    {
-     "level": 60,
-     "sim": 0.15574698116487942,
-     "ev": 0.1265657709409071
-    }
-   ]
-  },
-  {
-   "talent": "Blade Flurry",
-   "sim": 0.09484740533034311,
-   "ev_before": 0.07194554250831353,
-   "ev_after": 0.07420413131413177,
-   "scale": 1.0,
-   "how": "capped",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.08141605725740027,
-     "ev": 0.07773576132910098
-    },
-    {
-     "level": 60,
-     "sim": 0.10827875340328597,
-     "ev": 0.07067250129916255
-    }
-   ]
-  },
-  {
-   "talent": "Relentless Strikes",
-   "sim": 0.05987179526664673,
-   "ev_before": 0.053917538556637376,
-   "ev_after": 0.052446365514430535,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
+     "level": 30,
      "sim": null,
      "ev": null
     },
     {
      "level": 60,
-     "sim": 0.05987179526664673,
-     "ev": 0.052446365514430535
-    }
-   ]
-  },
-  {
-   "talent": "Precision",
-   "sim": 0.048080377048930985,
-   "ev_before": 0.04530142989475407,
-   "ev_after": 0.045285129783710826,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.04360297805212051,
-     "ev": 0.04523343446150639
-    },
-    {
-     "level": 60,
-     "sim": 0.05255777604574146,
-     "ev": 0.04533682510591527
-    }
-   ]
-  },
-  {
-   "talent": "Flawless Execution",
-   "sim": 0.04734942268774121,
-   "ev_before": 0.04124430089383253,
-   "ev_after": 0.04053131051807729,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.03792653898084857,
-     "ev": 0.039321810671067145
-    },
-    {
-     "level": 60,
-     "sim": 0.05677230639463386,
-     "ev": 0.041740810365087436
-    }
-   ]
-  },
-  {
-   "talent": "Improved Eviscerate",
-   "sim": 0.0470950162781275,
-   "ev_before": 0.04093884376556431,
-   "ev_after": 0.04138955102775144,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.03304579768861332,
-     "ev": 0.04055736628888001
-    },
-    {
-     "level": 60,
-     "sim": 0.06114423486764168,
-     "ev": 0.04222173576662287
-    }
-   ]
-  },
-  {
-   "talent": "Improved Sinister Strike",
-   "sim": 0.04394972885314159,
-   "ev_before": 0.05691349740150672,
-   "ev_after": 0.04273528487680252,
-   "scale": 0.8318484607152641,
-   "how": "fitted",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.03459437914842556,
-     "ev": 0.04074700696623458
-    },
-    {
-     "level": 60,
-     "sim": 0.05330507855785763,
-     "ev": 0.04472356278737045
+     "sim": 0.05319790556290538,
+     "ev": 0.04826319126356682
     }
    ]
   },
   {
    "talent": "Weapon Expertise",
-   "sim": 0.04295385921253027,
-   "ev_before": 0.04169212638566243,
-   "ev_after": 0.0415243242023523,
+   "sim": 0.04118368010300822,
+   "ev_before": 0.03575207641646606,
+   "ev_after": 0.035797899429196714,
    "scale": 1.0,
    "how": "kept",
    "per_level": [
     {
-     "level": 40,
-     "sim": 0.0367389159601394,
-     "ev": 0.04098372680222586
-    },
-    {
-     "level": 60,
-     "sim": 0.049168802464921134,
-     "ev": 0.04206492160247874
-    }
-   ]
-  },
-  {
-   "talent": "Improved Poisons",
-   "sim": 0.040629740041615105,
-   "ev_before": 0.049488100660247794,
-   "ev_after": 0.05049304066663954,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
+     "level": 30,
      "sim": null,
      "ev": null
     },
     {
      "level": 60,
-     "sim": 0.040629740041615105,
-     "ev": 0.05049304066663954
+     "sim": 0.04118368010300822,
+     "ev": 0.035797899429196714
     }
    ]
   },
   {
-   "talent": "Malice",
-   "sim": 0.03944965448219174,
-   "ev_before": 0.054533645915706246,
-   "ev_after": 0.03884267261953045,
-   "scale": 0.7247402225621045,
-   "how": "fitted",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.04490064385943822,
-     "ev": 0.03792701974914633
-    },
-    {
-     "level": 60,
-     "sim": 0.03399866510494526,
-     "ev": 0.039758325489914564
-    }
-   ]
-  },
-  {
-   "talent": "Deflection",
-   "sim": 0.03907104046995065,
-   "ev_before": 0.051623734355379494,
-   "ev_after": 0.03903756255543551,
-   "scale": 0.6105696666054428,
-   "how": "fitted",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.03771260997900766,
-     "ev": 0.038886520674534075
-    },
-    {
-     "level": 60,
-     "sim": 0.04042947096089363,
-     "ev": 0.03918860443633694
-    }
-   ]
-  },
-  {
-   "talent": "Riposte",
-   "sim": 0.03272017820722255,
-   "ev_before": 0.02586265834990265,
-   "ev_after": 0.02636988529032272,
+   "talent": "Improved Sinister Strike",
+   "sim": 0.03298175817651963,
+   "ev_before": 0.02612075563932014,
+   "ev_after": 0.026057066583578994,
    "scale": 1.0,
    "how": "kept",
    "per_level": [
     {
-     "level": 40,
-     "sim": 0.04442231065043615,
-     "ev": 0.026245890849167047
+     "level": 30,
+     "sim": 0.026508019258292204,
+     "ev": 0.025784020591751906
     },
     {
      "level": 60,
-     "sim": 0.021018045764008945,
-     "ev": 0.026493879731478397
+     "sim": 0.039455497094747057,
+     "ev": 0.026330112575406087
     }
    ]
   },
   {
-   "talent": "Vile Poisons",
-   "sim": 0.02923655877012069,
-   "ev_before": 0.030233806736779445,
-   "ev_after": 0.030835921030379704,
+   "talent": "Precision",
+   "sim": 0.030780065102811224,
+   "ev_before": 0.02612742419961575,
+   "ev_after": 0.026135197920707204,
    "scale": 1.0,
    "how": "kept",
    "per_level": [
     {
-     "level": 40,
-     "sim": null,
-     "ev": null
+     "level": 30,
+     "sim": 0.029139194700624857,
+     "ev": 0.026229539389039123
     },
     {
      "level": 60,
-     "sim": 0.02923655877012069,
-     "ev": 0.030835921030379704
-    }
-   ]
-  },
-  {
-   "talent": "Dual Wield Specialization",
-   "sim": 0.026117367418265577,
-   "ev_before": 0.023548547673971635,
-   "ev_after": 0.02425511176781687,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.019568688452873528,
-     "ev": 0.025353554641715133
-    },
-    {
-     "level": 60,
-     "sim": 0.03266604638365763,
-     "ev": 0.0231566688939186
-    }
-   ]
-  },
-  {
-   "talent": "Endurance",
-   "sim": 0.025295801491689703,
-   "ev_before": 0.029277331155287543,
-   "ev_after": 0.028416796056068668,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.028981886033286986,
-     "ev": 0.025592787981403284
-    },
-    {
-     "level": 60,
-     "sim": 0.021609716950092415,
-     "ev": 0.031240804130734053
-    }
-   ]
-  },
-  {
-   "talent": "Murder",
-   "sim": 0.023267816093980577,
-   "ev_before": 0.02068206039855111,
-   "ev_after": 0.02063758920997548,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.02572335489981227,
-     "ev": 0.020437644603115354
-    },
-    {
-     "level": 60,
-     "sim": 0.020812277288148887,
-     "ev": 0.0208375338168356
-    }
-   ]
-  },
-  {
-   "talent": "Cold Blood",
-   "sim": 0.022883687294681588,
-   "ev_before": 0.022695663542998606,
-   "ev_after": 0.022443400787302375,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": null,
-     "ev": null
-    },
-    {
-     "level": 60,
-     "sim": 0.022883687294681588,
-     "ev": 0.022443400787302375
-    }
-   ]
-  },
-  {
-   "talent": "Vigor",
-   "sim": 0.02122313456468755,
-   "ev_before": 0.02526891771399703,
-   "ev_after": 0.024987440649271424,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": null,
-     "ev": null
-    },
-    {
-     "level": 60,
-     "sim": 0.02122313456468755,
-     "ev": 0.024987440649271424
-    }
-   ]
-  },
-  {
-   "talent": "Aggression",
-   "sim": 0.01985717158202864,
-   "ev_before": 0.031711141048202766,
-   "ev_after": 0.01962552832593828,
-   "scale": 0.6313683059997857,
-   "how": "fitted",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.01483680486752176,
-     "ev": 0.018592809392587794
-    },
-    {
-     "level": 60,
-     "sim": 0.02487753829653552,
-     "ev": 0.02065824725928877
-    }
-   ]
-  },
-  {
-   "talent": "Hack and Slash",
-   "sim": 0.017937126014241984,
-   "ev_before": 0.017129239869282192,
-   "ev_after": 0.017060537283421853,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.006866206056433619,
-     "ev": 0.011271834456144684
-    },
-    {
-     "level": 60,
-     "sim": 0.029008045972050346,
-     "ev": 0.02284924011069902
-    }
-   ]
-  },
-  {
-   "talent": "Adrenaline Rush",
-   "sim": 0.01787147660396555,
-   "ev_before": 0.03398234413074463,
-   "ev_after": 0.017811298108448254,
-   "scale": 0.5330820349045098,
-   "how": "fitted",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.025092499365146115,
-     "ev": 0.016882125962618278
-    },
-    {
-     "level": 60,
-     "sim": 0.010650453842784983,
-     "ev": 0.018740470254278233
-    }
-   ]
-  },
-  {
-   "talent": "Lightning Reflexes",
-   "sim": 0.013310947005688481,
-   "ev_before": 0.005504707286729145,
-   "ev_after": 0.008822533752464903,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.007269396739262359,
-     "ev": 0.008788398114759668
-    },
-    {
-     "level": 60,
-     "sim": 0.0193524972721146,
-     "ev": 0.008856669390170139
-    }
-   ]
-  },
-  {
-   "talent": "Opportunity",
-   "sim": 0.01177242493047714,
-   "ev_before": 0.004174187256597822,
-   "ev_after": 0.004297104328322178,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.013338198272747334,
-     "ev": 0.004487746380285144
-    },
-    {
-     "level": 60,
-     "sim": 0.010206651588206946,
-     "ev": 0.004106462276359213
+     "sim": 0.03242093550499759,
+     "ev": 0.026040856452375284
     }
    ]
   },
   {
    "talent": "Remorseless Attacks",
-   "sim": 0.011242939444322293,
-   "ev_before": 0.02236841509790396,
-   "ev_after": 0.01113660383265132,
-   "scale": 0.5277217538096011,
-   "how": "fitted",
+   "sim": 0.02899879808482638,
+   "ev_before": 0.02403860231626518,
+   "ev_after": 0.02398011147491737,
+   "scale": 1.0,
+   "how": "kept",
    "per_level": [
     {
-     "level": 40,
+     "level": 30,
+     "sim": 0.022328191603379535,
+     "ev": 0.023729338007363102
+    },
+    {
+     "level": 60,
+     "sim": 0.03566940456627323,
+     "ev": 0.02423088494247164
+    }
+   ]
+  },
+  {
+   "talent": "Flawless Execution",
+   "sim": 0.028684357378405106,
+   "ev_before": 0.02713900676112832,
+   "ev_after": 0.026996145763668128,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.026722683921432375,
+     "ev": 0.026857288346222943
+    },
+    {
+     "level": 60,
+     "sim": 0.030646030835377834,
+     "ev": 0.027135003181113317
+    }
+   ]
+  },
+  {
+   "talent": "Improved Poisons",
+   "sim": 0.027854500867633927,
+   "ev_before": 0.027609604906150977,
+   "ev_after": 0.02806633386853351,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
      "sim": null,
      "ev": null
     },
     {
      "level": 60,
-     "sim": 0.011242939444322293,
-     "ev": 0.01113660383265132
+     "sim": 0.027854500867633927,
+     "ev": 0.02806633386853351
+    }
+   ]
+  },
+  {
+   "talent": "Malice",
+   "sim": 0.02736207313357015,
+   "ev_before": 0.02753079459117966,
+   "ev_after": 0.027862386171997454,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.016872642521879495,
+     "ev": 0.020590754978189955
+    },
+    {
+     "level": 60,
+     "sim": 0.037851503745260806,
+     "ev": 0.03513401736580495
+    }
+   ]
+  },
+  {
+   "talent": "Relentless Strikes",
+   "sim": 0.02584566453052775,
+   "ev_before": 0.024778149080974442,
+   "ev_after": 0.024520619706353462,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.02584566453052775,
+     "ev": 0.024520619706353462
+    }
+   ]
+  },
+  {
+   "talent": "Riposte",
+   "sim": 0.024020674348468003,
+   "ev_before": 0.043599445904186185,
+   "ev_after": 0.0432676271154602,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.019871814529572953,
+     "ev": 0.04322780660354051
+    },
+    {
+     "level": 60,
+     "sim": 0.02816953416736305,
+     "ev": 0.04330744762737989
+    }
+   ]
+  },
+  {
+   "talent": "Adrenaline Rush",
+   "sim": 0.023077752534056806,
+   "ev_before": 0.020041586634724703,
+   "ev_after": 0.020223300235094818,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.023077752534056806,
+     "ev": 0.020223300235094818
+    }
+   ]
+  },
+  {
+   "talent": "Improved Eviscerate",
+   "sim": 0.020148954086974355,
+   "ev_before": 0.019839027895401557,
+   "ev_after": 0.019691484135348984,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.006798736545072236,
+     "ev": 0.01967377100657307
+    },
+    {
+     "level": 60,
+     "sim": 0.03349917162887647,
+     "ev": 0.0197091972641249
+    }
+   ]
+  },
+  {
+   "talent": "Aggression",
+   "sim": 0.01826157109972068,
+   "ev_before": 0.007451524416631167,
+   "ev_after": 0.018306558337719273,
+   "scale": 2.450719615444541,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.01826157109972068,
+     "ev": 0.018306558337719273
+    }
+   ]
+  },
+  {
+   "talent": "Vile Poisons",
+   "sim": 0.01750287406533884,
+   "ev_before": 0.022785428821913714,
+   "ev_after": 0.023160555730743073,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.01750287406533884,
+     "ev": 0.023160555730743073
+    }
+   ]
+  },
+  {
+   "talent": "Hack and Slash",
+   "sim": 0.017147432495601377,
+   "ev_before": 0.00825768671164627,
+   "ev_after": 0.00826798919033883,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.017147432495601377,
+     "ev": 0.00826798919033883
+    }
+   ]
+  },
+  {
+   "talent": "Cold Blood",
+   "sim": 0.01633355406801388,
+   "ev_before": 0.03543165726619483,
+   "ev_after": 0.01636230058948653,
+   "scale": 0.4609832460992038,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.01633355406801388,
+     "ev": 0.01636230058948653
+    }
+   ]
+  },
+  {
+   "talent": "Vigor",
+   "sim": 0.015737816300931632,
+   "ev_before": 0.012172315008957017,
+   "ev_after": 0.012047343440550357,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.015737816300931632,
+     "ev": 0.012047343440550357
+    }
+   ]
+  },
+  {
+   "talent": "Dual Wield Specialization",
+   "sim": 0.015135890257855753,
+   "ev_before": 0.01209934294334782,
+   "ev_after": 0.012193353041123817,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.019775509898106974,
+     "ev": 0.014459891835954168
+    },
+    {
+     "level": 60,
+     "sim": 0.010496270617604532,
+     "ev": 0.009926814246293467
+    }
+   ]
+  },
+  {
+   "talent": "Murder",
+   "sim": 0.014387863225385586,
+   "ev_before": 0.009608999999999906,
+   "ev_after": 0.009608999999999989,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.01303544842351535,
+     "ev": 0.009609000000000072
+    },
+    {
+     "level": 60,
+     "sim": 0.015740278027255823,
+     "ev": 0.009608999999999908
+    }
+   ]
+  },
+  {
+   "talent": "Opportunity",
+   "sim": 0.008881908527113985,
+   "ev_before": 0.009866649021702941,
+   "ev_after": 0.010027003054733839,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.008881908527113985,
+     "ev": 0.010027003054733839
+    }
+   ]
+  },
+  {
+   "talent": "Deflection",
+   "sim": 0.008415987861408675,
+   "ev_before": 0.007471121812505098,
+   "ev_after": 0.007471121812505053,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.008454721089252165,
+     "ev": 0.007471121812505197
+    },
+    {
+     "level": 60,
+     "sim": 0.008377254633565185,
+     "ev": 0.007471121812504909
     }
    ]
   },
   {
    "talent": "Lethality",
-   "sim": 0.0032889926669178934,
-   "ev_before": 0.008221851037293362,
-   "ev_after": 0.0032889815076216013,
-   "scale": 0.47095415787771344,
+   "sim": 0.0050145364938248916,
+   "ev_before": 0.0023790545041039624,
+   "ev_after": 0.005014535032319805,
+   "scale": 2.1331223230808973,
    "how": "fitted",
    "per_level": [
     {
-     "level": 40,
+     "level": 30,
      "sim": null,
      "ev": null
     },
     {
      "level": 60,
-     "sim": 0.0032889926669178934,
-     "ev": 0.0032889815076216013
+     "sim": 0.0050145364938248916,
+     "ev": 0.005014535032319805
+    }
+   ]
+  },
+  {
+   "talent": "Ruthlessness",
+   "sim": 0.004444035033035648,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "dead",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.000353552614518529,
+     "ev": 0.0
+    },
+    {
+     "level": 60,
+     "sim": 0.008534517451552768,
+     "ev": 0.0
+    }
+   ]
+  },
+  {
+   "talent": "Lightning Reflexes",
+   "sim": 0.0039325265673353735,
+   "ev_before": 0.004745890338414174,
+   "ev_after": 0.004745890338414142,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.0031617038240954716,
+     "ev": 0.004745890338414129
+    },
+    {
+     "level": 60,
+     "sim": 0.0047033493105752755,
+     "ev": 0.004745890338414155
+    }
+   ]
+  },
+  {
+   "talent": "Blade Flurry",
+   "sim": 0.0036668269977816106,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "dead",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.0036668269977816106,
+     "ev": 0.0
     }
    ]
   },
@@ -545,7 +548,7 @@
    "how": "kept",
    "per_level": [
     {
-     "level": 40,
+     "level": 30,
      "sim": 0.0,
      "ev": 0.0
     },
@@ -565,9 +568,9 @@
    "how": "kept",
    "per_level": [
     {
-     "level": 40,
-     "sim": 0.0,
-     "ev": 0.0
+     "level": 30,
+     "sim": null,
+     "ev": null
     },
     {
      "level": 60,
@@ -585,7 +588,7 @@
    "how": "kept",
    "per_level": [
     {
-     "level": 40,
+     "level": 30,
      "sim": null,
      "ev": null
     },
@@ -605,13 +608,33 @@
    "how": "noise",
    "per_level": [
     {
-     "level": 40,
+     "level": 30,
      "sim": 0.0,
      "ev": 0.0
     },
     {
      "level": 60,
      "sim": 0.0,
+     "ev": 0.0
+    }
+   ]
+  },
+  {
+   "talent": "Endurance",
+   "sim": -0.000277232687420432,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.0,
+     "ev": 0.0
+    },
+    {
+     "level": 60,
+     "sim": -0.000554465374840864,
      "ev": 0.0
     }
    ]

@@ -9,43 +9,43 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Mutilate | Assassination | 5 | +5.33% | manual |
-| Puncturing Wounds | Combat | 2 | +3.11% | manual |
-| Flawless Execution | Combat | 4 | +2.44% | manual |
-| Relentless Strikes | Assassination | 3 | +2.10% | manual |
-| Riposte | Combat | 3 | +1.89% | manual |
-| Opportunity | Subtlety | 1 | +1.41% | manual |
+| Mutilate | Assassination | 5 | +5.71% | manual |
+| Puncturing Wounds | Combat | 2 | +3.34% | manual |
+| Flawless Execution | Combat | 4 | +2.21% | manual |
+| Relentless Strikes | Assassination | 3 | +1.90% | manual |
+| Riposte | Combat | 3 | +1.90% | manual |
+| Opportunity | Subtlety | 1 | +1.52% | manual |
+| Thousand Cuts | Subtlety | 7 | +1.22% | manual |
 | Ghostly Strike | Subtlety | 3 | +1.21% | manual |
-| Thousand Cuts | Subtlety | 7 | +1.13% | manual |
-| Adrenaline Rush | Combat | 7 | +1.07% | manual |
-| Precision | Combat | 2 | +0.80% | manual |
-| Ruthlessness | Assassination | 2 | +0.72% | manual |
-| Aggression | Combat | 6 | +0.72% | manual |
-| Blade Flurry | Combat | 5 | +0.71% | manual |
+| Adrenaline Rush | Combat | 7 | +0.96% | manual |
+| Precision | Combat | 2 | +0.81% | manual |
+| Blade Flurry | Combat | 5 | +0.80% | manual |
 | Murder | Assassination | 2 | +0.69% | manual |
+| Ruthlessness | Assassination | 2 | +0.65% | manual |
+| Aggression | Combat | 6 | +0.65% | manual |
 | Weapon Expertise | Combat | 6 | +0.64% | manual |
 | Serrated Blades | Subtlety | 4 | +0.64% | manual |
 | Malice | Assassination | 1 | +0.61% | manual |
-| Hack and Slash | Combat | 5 | +0.58% | manual |
-| Improved Poisons | Assassination | 4 | +0.53% | manual |
-| Improved Eviscerate | Combat | 1 | +0.51% | manual |
-| Dual Wield Specialization | Combat | 4 | +0.50% | manual |
+| Hack and Slash | Combat | 5 | +0.59% | manual |
+| Dual Wield Specialization | Combat | 4 | +0.56% | manual |
+| Improved Poisons | Assassination | 4 | +0.50% | manual |
 | Preparation | Subtlety | 5 | +0.41% | manual |
-| Cold Blood | Assassination | 4 | +0.36% | manual |
-| Vigor | Assassination | 5 | +0.36% | manual |
-| Initiative | Subtlety | 3 | +0.36% | manual |
-| Premeditation | Subtlety | 4 | +0.36% | manual |
+| Cold Blood | Assassination | 4 | +0.32% | manual |
+| Vigor | Assassination | 5 | +0.32% | manual |
+| Initiative | Subtlety | 3 | +0.32% | manual |
+| Premeditation | Subtlety | 4 | +0.32% | manual |
+| Improved Ambush | Subtlety | 2 | +0.31% | manual |
 | Dirty Deeds | Subtlety | 5 | +0.30% | manual |
-| Improved Ambush | Subtlety | 2 | +0.29% | manual |
 | Endurance | Combat | 3 | +0.27% | manual |
 | Deflection | Combat | 2 | +0.23% | manual |
+| Remorseless Attacks | Assassination | 1 | +0.22% | manual |
 
-## Optimized build: 21/28/2  score +36.00%  (dps x1.945, sustain x1.000, surv x1.114, utility +0.96%)
-Absolute DPS index (character alone, no talents = 1.00): 1.647  — use this to compare models with different pet shares.
+## Optimized build: 21/28/2  score +36.21%  (dps x1.941, sustain x1.000, surv x1.150, utility +0.96%)
+Absolute DPS index (character alone, no talents = 1.00): 1.702  — use this to compare models with different pet shares.
 
 ```
   Assassination: Malice 5, Improved Gouge 3, Ruthlessness 3, Murder 2, Relentless Strikes 1, Lethality 5, Cold Blood 1, Mutilate 1
-  Combat: Improved Eviscerate 3, Lightning Reflexes 2, Puncturing Wounds 3, Precision 3, Deflection 3, Endurance 2, Riposte 1, Flawless Execution 1, Dual Wield Specialization 2, Hack and Slash 5, Aggression 3
+  Combat: Lightning Reflexes 5, Puncturing Wounds 3, Precision 3, Deflection 3, Endurance 2, Riposte 1, Flawless Execution 1, Dual Wield Specialization 2, Hack and Slash 5, Aggression 3
   Subtlety: Opportunity 2
 ```
 
@@ -53,45 +53,43 @@ Absolute DPS index (character alone, no talents = 1.00): 1.647  — use this to 
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Thousand Cuts | Subtlety 7 | 1/1 | +0.85% | no |
-| Ghostly Strike | Subtlety 3 | 1/1 | +0.80% | no |
-| Adrenaline Rush | Combat 7 | 1/1 | +0.74% | no |
-| Preparation | Subtlety 5 | 1/1 | +0.36% | no |
+| Thousand Cuts | Subtlety 7 | 1/1 | +0.91% | no |
+| Ghostly Strike | Subtlety 3 | 1/1 | +0.77% | no |
+| Adrenaline Rush | Combat 7 | 1/1 | +0.71% | no |
 | Weapon Expertise | Combat 6 | 1/2 | +0.34% | no |
 | Serrated Blades | Subtlety 4 | 1/3 | +0.34% | no |
+| Preparation | Subtlety 5 | 1/1 | +0.34% | no |
 | Dirty Deeds | Subtlety 5 | 1/2 | +0.30% | no |
-| Vigor | Assassination 5 | 1/2 | +0.25% | yes |
-| Initiative | Subtlety 3 | 1/3 | +0.25% | no |
-| Premeditation | Subtlety 4 | 1/1 | +0.25% | no |
-| Blade Flurry | Combat 5 | 1/1 | +0.23% | yes |
-| Improved Ambush | Subtlety 2 | 1/3 | +0.22% | no |
+| Blade Flurry | Combat 5 | 1/1 | +0.26% | yes |
+| Vigor | Assassination 5 | 1/2 | +0.24% | yes |
+| Initiative | Subtlety 3 | 1/3 | +0.24% | no |
+| Premeditation | Subtlety 4 | 1/1 | +0.24% | no |
+| Improved Ambush | Subtlety 2 | 1/3 | +0.23% | no |
 | Camouflage | Subtlety 1 | 1/5 | +0.20% | yes |
 | Master of Deception | Subtlety 1 | 1/3 | +0.20% | yes |
-| Dual Wield Specialization | Combat 4 | 3/5 | +0.16% | yes |
+| Dual Wield Specialization | Combat 4 | 3/5 | +0.18% | yes |
 
 ## Leveling order (lookahead 16; receding horizon)
 
 | Levels | Tree | Talent | Pts | Score at end |
 |---|---|---|---|---|
-| 10-11 | Subtlety | Opportunity | 2 | +3.0% |
-| 12-14 | Combat | Improved Eviscerate | 3 | +4.4% |
-| 15-16 | Combat | Lightning Reflexes | 2 | +4.6% |
+| 10-11 | Subtlety | Opportunity | 2 | +3.2% |
+| 12-16 | Combat | Lightning Reflexes | 5 | +3.8% |
 | 17-19 | Combat | Puncturing Wounds | 3 | +13.7% |
 | 20-22 | Combat | Deflection | 3 | +13.5% |
 | 23 | Combat | Riposte | 1 | +15.1% |
-| 24-26 | Combat | Precision | 3 | +16.9% |
-| 27 | Combat | Flawless Execution | 1 | +19.1% |
-| 28-32 | Assassination | Malice | 5 | +21.1% |
-| 33-35 | Assassination | Ruthlessness | 3 | +22.9% |
-| 36-37 | Assassination | Murder | 2 | +23.8% |
-| 38 | Assassination | Relentless Strikes | 1 | +25.5% |
-| 39-42 | Assassination | Lethality | 4 | +26.7% |
-| 43 | Assassination | Cold Blood | 1 | +27.0% |
-| 44 | Assassination | Lethality | 1 | +27.3% |
-| 45-47 | Assassination | Improved Gouge | 3 | +27.9% |
-| 48 | Assassination | Mutilate | 1 | +32.2% |
-| 49-50 | Combat | Endurance | 2 | +32.7% |
-| 51-52 | Combat | Dual Wield Specialization | 2 | +33.1% |
-| 53-57 | Combat | Hack and Slash | 5 | +34.5% |
-| 58-60 | Combat | Aggression | 3 | +36.0% |
+| 24-26 | Combat | Precision | 3 | +17.0% |
+| 27 | Combat | Flawless Execution | 1 | +19.0% |
+| 28-32 | Assassination | Malice | 5 | +21.0% |
+| 33-35 | Assassination | Ruthlessness | 3 | +22.7% |
+| 36-37 | Assassination | Murder | 2 | +23.6% |
+| 38 | Assassination | Relentless Strikes | 1 | +25.2% |
+| 39-43 | Assassination | Lethality | 5 | +26.8% |
+| 44 | Assassination | Cold Blood | 1 | +27.1% |
+| 45-47 | Assassination | Improved Gouge | 3 | +27.7% |
+| 48 | Assassination | Mutilate | 1 | +32.4% |
+| 49-50 | Combat | Endurance | 2 | +32.9% |
+| 51-52 | Combat | Dual Wield Specialization | 2 | +33.3% |
+| 53-57 | Combat | Hack and Slash | 5 | +34.8% |
+| 58-60 | Combat | Aggression | 3 | +36.2% |
 

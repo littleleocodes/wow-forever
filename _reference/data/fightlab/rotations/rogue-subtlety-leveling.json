@@ -1,13 +1,10 @@
 {
- "eat_below": 0.4,
+ "eat_below": 0.5,
  "veto": {
   "Slice and Dice": {
    "off": true
   },
   "Kidney Shot": {
-   "off": true
-  },
-  "Kick": {
    "off": true
   }
  },
@@ -21,20 +18,20 @@
   50,
   60
  ],
- "date": "2026-10-15",
+ "date": "2026-10-19",
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "eat below 40% health",
+   "change": "eat below 50% health",
    "rule": [
     "eat_below",
     null,
-    0.4
+    0.5
    ],
-   "gain_seed1": 0.04423409910818987,
-   "gain_seed2": 0.043461087742102666
+   "gain_seed1": 0.04373019892888175,
+   "gain_seed2": 0.04339941794229285
   },
   {
    "round": 2,
@@ -44,8 +41,8 @@
     "Slice and Dice",
     true
    ],
-   "gain_seed1": 0.025779830482019817,
-   "gain_seed2": 0.027582499601632615
+   "gain_seed1": 0.04076936351208027,
+   "gain_seed2": 0.03675335246044942
   },
   {
    "round": 3,
@@ -55,51 +52,40 @@
     "Kidney Shot",
     true
    ],
-   "gain_seed1": 0.01139726966735588,
-   "gain_seed2": 0.009454117166865172
-  },
-  {
-   "round": 4,
-   "change": "never cast Kick",
-   "rule": [
-    "off",
-    "Kick",
-    true
-   ],
-   "gain_seed1": 0.0037311086220928047,
-   "gain_seed2": 0.006589873072514907
+   "gain_seed1": 0.013039271685682308,
+   "gain_seed2": 0.008965408777934392
   }
  ],
- "weighted_before": 25.763664286308153,
- "weighted_after": 23.584005182043278,
+ "weighted_before": 25.905995599511435,
+ "weighted_after": 23.633366666618105,
  "per_level": {
   "20": {
-   "before": 17.969945255710837,
-   "after": 17.309166666580882,
+   "before": 17.899875279445908,
+   "after": 17.37499999991386,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 22.741544145889034,
-   "after": 20.75246666654269,
+   "before": 22.87397967696125,
+   "after": 20.859433333209505,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 28.44465962024094,
-   "after": 25.276299999978534,
+   "before": 28.702577920188723,
+   "after": 25.324999999981692,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 27.52394896721115,
-   "after": 25.214794061685126,
+   "before": 27.826458593177595,
+   "after": 25.263566666646607,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 26.61839657667579,
-   "after": 24.604199999956,
+   "before": 26.625936292301713,
+   "after": 24.62019999995767,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

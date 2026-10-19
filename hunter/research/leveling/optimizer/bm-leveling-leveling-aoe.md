@@ -9,89 +9,90 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Strider Kick | Survival | 5 | +8.25% | manual |
-| Summon Hawk | Beast Mastery | 4 | +7.92% | manual |
-| Surefooted | Survival | 3 | +3.57% | manual |
-| Bestial Wrath | Beast Mastery | 7 | +3.12% | manual |
-| Lacerating Strikes | Survival | 7 | +2.52% | manual |
-| Sniper Shot | Marksmanship | 7 | +2.17% | manual |
-| Unleashed Fury | Beast Mastery | 3 | +1.59% | manual |
-| Expose Prey | Survival | 5 | +1.36% | manual |
-| Intimidation | Beast Mastery | 5 | +1.16% | manual |
-| Deadly Aspects | Beast Mastery | 1 | +1.12% | manual |
-| Focused Fire | Beast Mastery | 2 | +1.05% | manual |
-| Ferocity | Beast Mastery | 4 | +0.89% | manual |
-| Ranged Weapon Specialization | Marksmanship | 6 | +0.88% | manual |
-| Deterrence | Survival | 3 | +0.84% | manual |
-| Trueshot Aura | Marksmanship | 4 | +0.82% | manual |
-| Frenzy | Beast Mastery | 6 | +0.76% | manual |
-| Improved Tracking | Survival | 1 | +0.75% | manual |
-| Efficiency | Marksmanship | 2 | +0.68% | manual |
+| Strider Kick | Survival | 5 | +7.51% | manual |
+| Surefooted | Survival | 3 | +3.06% | manual |
+| Bestial Wrath | Beast Mastery | 7 | +2.59% | manual |
+| Lacerating Strikes | Survival | 7 | +2.29% | manual |
+| Efficiency | Marksmanship | 2 | +1.40% | manual |
+| Expose Prey | Survival | 5 | +1.23% | manual |
+| Sniper Shot | Marksmanship | 7 | +1.10% | manual |
+| Intimidation | Beast Mastery | 5 | +1.08% | manual |
+| Bestial Discipline | Beast Mastery | 5 | +1.00% | manual |
+| Barrage | Marksmanship | 5 | +0.86% | manual |
+| Rapid Killing | Marksmanship | 3 | +0.82% | manual |
+| Deadly Aspects | Beast Mastery | 1 | +0.82% | manual |
+| Ferocity | Beast Mastery | 4 | +0.74% | manual |
+| Focused Fire | Beast Mastery | 2 | +0.71% | manual |
+| Frenzy | Beast Mastery | 6 | +0.63% | manual |
 | Scatter Shot | Marksmanship | 5 | +0.60% | manual |
+| Deterrence | Survival | 3 | +0.57% | manual |
 | Improved Wing Clip | Survival | 2 | +0.50% | manual |
-| Bestial Discipline | Beast Mastery | 5 | +0.49% | manual |
-| Improved Stings | Marksmanship | 2 | +0.47% | manual |
-| Deflection | Survival | 1 | +0.44% | manual |
+| Unleashed Fury | Beast Mastery | 3 | +0.50% | manual |
+| Ranged Weapon Specialization | Marksmanship | 6 | +0.45% | manual |
+| Trueshot Aura | Marksmanship | 4 | +0.41% | manual |
 | Counterattack | Survival | 4 | +0.40% | manual |
-| Lethal Attacks | Marksmanship | 1 | +0.35% | manual |
-| Barrage | Marksmanship | 5 | +0.35% | manual |
+| Rapid Recuperation | Marksmanship | 5 | +0.34% | manual |
+| Improved Stings | Marksmanship | 2 | +0.32% | manual |
 | Pathfinding | Beast Mastery | 2 | +0.30% | manual |
 | Survivalist's Discipline | Survival | 5 | +0.30% | manual |
-| Mortal Shots | Marksmanship | 4 | +0.23% | manual |
-| Rapid Killing | Marksmanship | 3 | +0.22% | manual |
+| Lethal Attacks | Marksmanship | 1 | +0.29% | manual |
+| Spirit Bond | Beast Mastery | 5 | +0.29% | manual |
+| Resourcefulness | Survival | 5 | +0.29% | manual |
+| Entrapment | Survival | 2 | +0.20% | manual |
 
-## Optimized build: 20/0/31  score +44.82%  (dps x1.589, sustain x1.020, surv x1.184, utility +4.80%)
-Absolute DPS index (character alone, no talents = 1.00): 2.522  — use this to compare models with different pet shares.
+## Optimized build: 8/12/31  score +32.17%  (dps x1.327, sustain x1.877, surv x1.063, utility +5.31%)
+Absolute DPS index (character alone, no talents = 1.00): 2.107  — use this to compare models with different pet shares.
 
 ```
-  Beast Mastery: Deadly Aspects 5, Focused Fire 2, Pathfinding 2, Improved Revive Pet 1, Unleashed Fury 5, Summon Hawk 1, Ferocity 4
-  Survival: Improved Tracking 5, Deflection 5, Improved Wing Clip 3, Entrapment 5, Surefooted 1, Deterrence 1, Clever Traps 2, Counterattack 1, Strider Kick 1, Expose Prey 2, Survivalist's Discipline 2, Lightning Reflexes 2, Lacerating Strikes 1
+  Beast Mastery: Deadly Aspects 5, Focused Fire 2, Pathfinding 1
+  Marksmanship: Lethal Attacks 5, Efficiency 5, Rapid Killing 2
+  Survival: Deflection 5, Improved Tracking 5, Improved Wing Clip 3, Entrapment 5, Surefooted 1, Deterrence 1, Clever Traps 2, Counterattack 1, Expose Prey 2, Strider Kick 1, Survivalist's Discipline 2, Resourcefulness 2, Lacerating Strikes 1
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Bestial Wrath | Beast Mastery 7 | 1/1 | +1.91% | no |
-| Sniper Shot | Marksmanship 7 | 1/1 | +1.14% | no |
-| Intimidation | Beast Mastery 5 | 1/1 | +0.99% | no |
+| Bestial Wrath | Beast Mastery 7 | 1/1 | +1.77% | no |
+| Intimidation | Beast Mastery 5 | 1/1 | +0.97% | no |
+| Sniper Shot | Marksmanship 7 | 1/1 | +0.81% | no |
 | Scatter Shot | Marksmanship 5 | 1/1 | +0.60% | no |
-| Ranged Weapon Specialization | Marksmanship 6 | 1/5 | +0.46% | no |
-| Ferocity | Beast Mastery 4 | 5/5 | +0.45% | yes |
-| Trueshot Aura | Marksmanship 4 | 1/1 | +0.43% | no |
-| Frenzy | Beast Mastery 6 | 1/5 | +0.43% | no |
-| Efficiency | Marksmanship 2 | 1/5 | +0.41% | no |
-| Bestial Discipline | Beast Mastery 5 | 1/2 | +0.29% | yes |
-| Lethal Attacks | Marksmanship 1 | 1/5 | +0.24% | yes |
-| Improved Stings | Marksmanship 2 | 1/3 | +0.22% | no |
-| Barrage | Marksmanship 5 | 1/3 | +0.16% | no |
-| Rapid Killing | Marksmanship 3 | 1/2 | +0.14% | no |
-| Mortal Shots | Marksmanship 4 | 1/5 | +0.13% | no |
+| Barrage | Marksmanship 5 | 1/3 | +0.51% | no |
+| Ferocity | Beast Mastery 4 | 1/5 | +0.42% | no |
+| Frenzy | Beast Mastery 6 | 1/5 | +0.36% | no |
+| Ranged Weapon Specialization | Marksmanship 6 | 1/5 | +0.33% | no |
+| Trueshot Aura | Marksmanship 4 | 1/1 | +0.30% | no |
+| Unleashed Fury | Beast Mastery 3 | 1/5 | +0.30% | no |
+| Pathfinding | Beast Mastery 2 | 2/2 | +0.30% | yes |
+| Bestial Discipline | Beast Mastery 5 | 1/2 | +0.25% | no |
+| Improved Stings | Marksmanship 2 | 1/3 | +0.19% | yes |
+| Mortal Shots | Marksmanship 4 | 1/5 | +0.11% | no |
+| Careful Aim | Marksmanship 2 | 1/5 | +0.11% | yes |
 
-## Leveling order (lookahead 16; receding horizon)
+## Leveling order (lookahead 16; rush Strider Kick (reached at level 30))
 
 | Levels | Tree | Talent | Pts | Score at end |
 |---|---|---|---|---|
-| 10-14 | Beast Mastery | Deadly Aspects | 5 | +5.3% |
-| 15-16 | Beast Mastery | Focused Fire | 2 | +7.5% |
-| 17-18 | Beast Mastery | Pathfinding | 2 | +8.1% |
-| 19 | Beast Mastery | Improved Revive Pet | 1 | +8.2% |
-| 20-24 | Beast Mastery | Unleashed Fury | 5 | +15.5% |
-| 25 | Beast Mastery | Summon Hawk | 1 | +22.0% |
-| 26-29 | Beast Mastery | Ferocity | 4 | +25.2% |
-| 30-34 | Survival | Improved Tracking | 5 | +27.7% |
-| 35-37 | Survival | Improved Wing Clip | 3 | +29.2% |
-| 38-39 | Survival | Deflection | 2 | +29.8% |
-| 40 | Survival | Surefooted | 1 | +31.2% |
-| 41 | Survival | Deterrence | 1 | +31.7% |
-| 42-44 | Survival | Deflection | 3 | +32.4% |
-| 45 | Survival | Counterattack | 1 | +32.8% |
-| 46-49 | Survival | Entrapment | 4 | +33.6% |
-| 50 | Survival | Strider Kick | 1 | +39.0% |
-| 51-52 | Survival | Expose Prey | 2 | +41.2% |
-| 53-54 | Survival | Survivalist's Discipline | 2 | +41.8% |
-| 55 | Survival | Entrapment | 1 | +42.0% |
-| 56-57 | Survival | Clever Traps | 2 | +42.4% |
-| 58-59 | Survival | Lightning Reflexes | 2 | +42.6% |
-| 60 | Survival | Lacerating Strikes | 1 | +44.8% |
+| 10-14 | Survival | Deflection | 5 | +0.4% |
+| 15-17 | Survival | Improved Wing Clip | 3 | +1.9% |
+| 18-19 | Survival | Entrapment | 2 | +2.3% |
+| 20 | Survival | Surefooted | 1 | +5.1% |
+| 21 | Survival | Deterrence | 1 | +5.7% |
+| 22-24 | Survival | Entrapment | 3 | +6.3% |
+| 25 | Survival | Counterattack | 1 | +6.7% |
+| 26-27 | Survival | Clever Traps | 2 | +7.1% |
+| 28-29 | Survival | Improved Tracking | 2 | +7.2% |
+| 30 | Survival | Strider Kick | 1 | +17.5% |
+| 31-32 | Survival | Expose Prey | 2 | +21.5% |
+| 33-37 | Beast Mastery | Deadly Aspects | 5 | +25.0% |
+| 38-39 | Beast Mastery | Focused Fire | 2 | +26.5% |
+| 40-44 | Marksmanship | Lethal Attacks | 5 | +23.0% |
+| 45-49 | Marksmanship | Efficiency | 5 | +26.9% |
+| 50-51 | Marksmanship | Rapid Killing | 2 | +28.3% |
+| 52-53 | Survival | Survivalist's Discipline | 2 | +28.9% |
+| 54 | Survival | Resourcefulness | 1 | +29.0% |
+| 55-57 | Survival | Improved Tracking | 3 | +29.2% |
+| 58 | Survival | Resourcefulness | 1 | +29.2% |
+| 59 | Survival | Lacerating Strikes | 1 | +31.9% |
+| 60 | Beast Mastery | Pathfinding | 1 | +32.2% |
 

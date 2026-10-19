@@ -1,451 +1,436 @@
 {
  "class": "paladin",
  "spec": "ret-dps",
- "profile": "leveling-aoe",
+ "profile": "leveling-st",
  "levels": [
-  40,
+  30,
   60
  ],
  "fights": 1500,
  "builds": [
-  "opt-ret-dps-leveling-aoe",
-  "F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-aoe-r1.json",
-  "F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-aoe-r2.json",
-  "F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-aoe-r3.json",
-  "F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-aoe-r4.json"
+  "opt-ret-dps-leveling-st",
+  "leveling-retribution",
+  "F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-hand-2026-09-26.json",
+  "F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-r1.json",
+  "F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-r2.json",
+  "F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-r3.json",
+  "F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-r4.json",
+  "F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-r5.json",
+  "F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-r6.json",
+  "F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\candidates\\cand-ret-r7.json"
  ],
  "shares": {
-  "Melee": 0.3781504817078159,
-  "Seal of Command": 0.17789878108685006,
-  "Judgement": 0.17625291568278337,
-  "Holy Strike": 0.15714646242245162,
-  "Hammer of Wrath": 0.11055135910009906
+  "Melee": 0.3545283442985982,
+  "Judgement": 0.1957427183979858,
+  "Seal of Command": 0.1729671916437483,
+  "Holy Strike": 0.14844207123936087,
+  "Hammer of Wrath": 0.1283196744203069
  },
  "time_split": {
-  "fight": 0.855,
-  "drink": 0.053,
-  "eat": 0.044,
+  "fight": 0.755,
+  "drink": 0.148,
+  "eat": 0.05,
   "other": 0.0,
-  "death": 0.048
+  "death": 0.047
  },
  "talents": [
   {
-   "talent": "Seal of Command",
-   "sim": 0.12136907224984528,
-   "ev_before": 0.00596712037337933,
-   "ev_after": 0.11263420495000127,
+   "talent": "Sanctified Judgement",
+   "sim": 0.11682271207140929,
+   "ev_before": 0.062381694034961924,
+   "ev_after": 0.060586713239912465,
    "scale": 1.0,
-   "how": "kept",
+   "how": "capped",
    "per_level": [
     {
-     "level": 40,
-     "sim": 0.1707914671848838,
-     "ev": 0.11849439714331493
+     "level": 30,
+     "sim": 0.14346838742946222,
+     "ev": 0.06863987931706618
     },
     {
      "level": 60,
-     "sim": 0.07194667731480675,
-     "ev": 0.10677401275668762
+     "sim": 0.09017703671335636,
+     "ev": 0.052533547162758744
     }
    ]
   },
   {
-   "talent": "Two-Handed Weapon Specialization",
-   "sim": 0.06672276866055271,
-   "ev_before": 0.0849758612142421,
-   "ev_after": 0.06668800459472335,
-   "scale": 0.7848377632908523,
+   "talent": "Seal of Command",
+   "sim": 0.06733132288139412,
+   "ev_before": 0.10233177113941619,
+   "ev_after": 0.06781652677065914,
+   "scale": 0.6574766668491066,
    "how": "fitted",
    "per_level": [
     {
-     "level": 40,
-     "sim": 0.05178969214901584,
-     "ev": 0.06667408073500329
+     "level": 30,
+     "sim": 0.11296437189081686,
+     "ev": 0.07224513068571227
     },
     {
      "level": 60,
-     "sim": 0.0816558451720896,
-     "ev": 0.0667019284544434
+     "sim": 0.021698273871971402,
+     "ev": 0.063387922855606
     }
    ]
   },
   {
    "talent": "Improved Seals",
-   "sim": 0.058460597158372235,
-   "ev_before": 0.0970500865918513,
-   "ev_after": 0.0563307469468424,
-   "scale": 0.6237433296628296,
-   "how": "fitted",
+   "sim": 0.04705719996540798,
+   "ev_before": 0.041269985201721926,
+   "ev_after": 0.04158870754256029,
+   "scale": 1.0,
+   "how": "kept",
    "per_level": [
     {
-     "level": 40,
-     "sim": 0.04787839877333439,
-     "ev": 0.058453208824379335
+     "level": 30,
+     "sim": 0.0502063003869197,
+     "ev": 0.04216808166636713
     },
     {
      "level": 60,
-     "sim": 0.06904279554341008,
-     "ev": 0.05420828506930545
+     "sim": 0.04390809954389625,
+     "ev": 0.041009333418753444
     }
    ]
   },
   {
    "talent": "Conviction",
-   "sim": 0.055127489363249654,
-   "ev_before": 0.04801590749306098,
-   "ev_after": 0.05152292046065503,
-   "scale": 1.0,
-   "how": "kept",
+   "sim": 0.04348155429292892,
+   "ev_before": 0.029302456252190266,
+   "ev_after": 0.04355265498551164,
+   "scale": 1.503010000102222,
+   "how": "fitted",
    "per_level": [
     {
-     "level": 40,
-     "sim": 0.04368730569799623,
-     "ev": 0.05405687598830867
+     "level": 30,
+     "sim": 0.030454815633608613,
+     "ev": 0.04155611766997226
     },
     {
      "level": 60,
-     "sim": 0.06656767302850307,
-     "ev": 0.04898896493300138
+     "sim": 0.05650829295224923,
+     "ev": 0.04554919230105102
     }
    ]
   },
   {
    "talent": "Vengeance",
-   "sim": 0.04215301373757907,
-   "ev_before": 0.040700906253780936,
-   "ev_after": 0.04068652701213676,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": null,
-     "ev": null
-    },
-    {
-     "level": 60,
-     "sim": 0.04215301373757907,
-     "ev": 0.04068652701213676
-    }
-   ]
-  },
-  {
-   "talent": "Sanctified Judgement",
-   "sim": 0.03983907342297785,
-   "ev_before": 0.0011418772259074099,
-   "ev_after": 0.00903817122858696,
-   "scale": 25.0,
-   "how": "capped",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.03642295619527235,
-     "ev": 0.01078427079337209
-    },
-    {
-     "level": 60,
-     "sim": 0.04325519065068335,
-     "ev": 0.007292071663801828
-    }
-   ]
-  },
-  {
-   "talent": "Reverence",
-   "sim": 0.038149065384661326,
-   "ev_before": 0.008150562869420869,
-   "ev_after": 0.005520725643563455,
-   "scale": 1.0,
-   "how": "capped",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": null,
-     "ev": null
-    },
-    {
-     "level": 60,
-     "sim": 0.038149065384661326,
-     "ev": 0.005520725643563455
-    }
-   ]
-  },
-  {
-   "talent": "Divine Strength",
-   "sim": 0.033473084380940585,
-   "ev_before": 0.028547750482642978,
-   "ev_after": 0.02854571168270519,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.028500924566455848,
-     "ev": 0.02853975159306854
-    },
-    {
-     "level": 60,
-     "sim": 0.038445244195425325,
-     "ev": 0.028551671772341837
-    }
-   ]
-  },
-  {
-   "talent": "Divine Precision",
-   "sim": 0.025943062932644277,
-   "ev_before": 0.016023883835165995,
-   "ev_after": 0.025158735625295216,
-   "scale": 1.6751416241750121,
+   "sim": 0.037585836813590914,
+   "ev_before": 0.013389747421058109,
+   "ev_after": 0.03759210399909874,
+   "scale": 2.808497669175267,
    "how": "fitted",
    "per_level": [
     {
-     "level": 40,
+     "level": 30,
      "sim": null,
      "ev": null
     },
     {
      "level": 60,
-     "sim": 0.025943062932644277,
-     "ev": 0.025158735625295216
-    }
-   ]
-  },
-  {
-   "talent": "Sacred Arbiter",
-   "sim": 0.025812109174526726,
-   "ev_before": 0.04055494621857978,
-   "ev_after": 0.025093953032545493,
-   "scale": 0.6464764955453575,
-   "how": "fitted",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.02272164176491098,
-     "ev": 0.026011191034250106
-    },
-    {
-     "level": 60,
-     "sim": 0.028902576584142473,
-     "ev": 0.02417671503084088
-    }
-   ]
-  },
-  {
-   "talent": "Divine Intellect",
-   "sim": 0.022934606598919324,
-   "ev_before": 0.0,
-   "ev_after": 0.022509936717114896,
-   "scale": 5.648587439209223,
-   "how": "fitted",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": null,
-     "ev": null
-    },
-    {
-     "level": 60,
-     "sim": 0.022934606598919324,
-     "ev": 0.022509936717114896
+     "sim": 0.037585836813590914,
+     "ev": 0.03759210399909874
     }
    ]
   },
   {
    "talent": "Precision",
-   "sim": 0.022746920355219025,
-   "ev_before": 0.0494335996101714,
-   "ev_after": 0.02274012698175742,
-   "scale": 0.3590083331800997,
+   "sim": 0.036815874735619286,
+   "ev_before": 0.010665406363657728,
+   "ev_after": 0.03693967487869806,
+   "scale": 3.4581483844667673,
    "how": "fitted",
    "per_level": [
     {
-     "level": 40,
+     "level": 30,
      "sim": null,
      "ev": null
     },
     {
      "level": 60,
-     "sim": 0.022746920355219025,
-     "ev": 0.02274012698175742
-    }
-   ]
-  },
-  {
-   "talent": "Benediction",
-   "sim": 0.022591332001766943,
-   "ev_before": 0.002643814782982537,
-   "ev_after": 0.013069402730395495,
-   "scale": 15.0,
-   "how": "capped",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.025584591021128117,
-     "ev": 0.019918351284973875
-    },
-    {
-     "level": 60,
-     "sim": 0.01959807298240577,
-     "ev": 0.006220454175817115
-    }
-   ]
-  },
-  {
-   "talent": "Champion of the Light",
-   "sim": 0.02019565194963602,
-   "ev_before": 0.049921814663296746,
-   "ev_after": 0.01985335858370893,
-   "scale": 0.4189317221753299,
-   "how": "fitted",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.021988102243998626,
-     "ev": 0.018881944926542767
-    },
-    {
-     "level": 60,
-     "sim": 0.018403201655273416,
-     "ev": 0.02082477224087509
-    }
-   ]
-  },
-  {
-   "talent": "Improved Judgement",
-   "sim": 0.014424618321107521,
-   "ev_before": 0.03640117125616872,
-   "ev_after": 0.014329551293279053,
-   "scale": 0.5064676669426262,
-   "how": "fitted",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.012113103868070685,
-     "ev": 0.014848918252597095
-    },
-    {
-     "level": 60,
-     "sim": 0.016736132774144357,
-     "ev": 0.013810184333961011
-    }
-   ]
-  },
-  {
-   "talent": "Vindication",
-   "sim": 0.011769624452444418,
-   "ev_before": 0.013483853475872342,
-   "ev_after": 0.014307403951274323,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.015625037121572618,
-     "ev": 0.014983874704637476
-    },
-    {
-     "level": 60,
-     "sim": 0.007914211783316218,
-     "ev": 0.013630933197911168
-    }
-   ]
-  },
-  {
-   "talent": "Deflection",
-   "sim": 0.011667542150383542,
-   "ev_before": 0.0013097818895743865,
-   "ev_after": 0.011694470823807684,
-   "scale": 9.913830138742924,
-   "how": "fitted",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.013262159167785989,
-     "ev": 0.011625171867928887
-    },
-    {
-     "level": 60,
-     "sim": 0.010072925132981093,
-     "ev": 0.01176376977968648
-    }
-   ]
-  },
-  {
-   "talent": "Instrument of Law",
-   "sim": 0.00839973596156382,
-   "ev_before": 0.035234722603673725,
-   "ev_after": 0.0083981621425009,
-   "scale": 0.25426376098766923,
-   "how": "fitted",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": null,
-     "ev": null
-    },
-    {
-     "level": 60,
-     "sim": 0.00839973596156382,
-     "ev": 0.0083981621425009
+     "sim": 0.036815874735619286,
+     "ev": 0.03693967487869806
     }
    ]
   },
   {
    "talent": "Holy Conduit",
-   "sim": 0.004946960621170262,
-   "ev_before": 0.009516099798849162,
-   "ev_after": 0.0022638192815725416,
-   "scale": 1.3504243033161019,
+   "sim": 0.023918982283826985,
+   "ev_before": 0.008925557067614661,
+   "ev_after": 0.008704972051848215,
+   "scale": 1.0,
    "how": "capped",
    "per_level": [
     {
-     "level": 40,
+     "level": 30,
      "sim": 0.0,
-     "ev": 0.003237320687569634
+     "ev": 0.009437983406096659
     },
     {
      "level": 60,
-     "sim": 0.009893921242340524,
-     "ev": 0.001290317875575449
+     "sim": 0.04783796456765397,
+     "ev": 0.007971960697599773
+    }
+   ]
+  },
+  {
+   "talent": "Reverence",
+   "sim": 0.023821867794401538,
+   "ev_before": 0.00645700705580629,
+   "ev_after": 0.006214742153269236,
+   "scale": 1.0,
+   "how": "capped",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.023821867794401538,
+     "ev": 0.006214742153269236
+    }
+   ]
+  },
+  {
+   "talent": "Divine Strength",
+   "sim": 0.023288485065995887,
+   "ev_before": 0.011922661680154644,
+   "ev_after": 0.023388569319771672,
+   "scale": 1.9535355689004064,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.021380747751655063,
+     "ev": 0.022631728745998145
+    },
+    {
+     "level": 60,
+     "sim": 0.025196222380336714,
+     "ev": 0.024145409893545203
+    }
+   ]
+  },
+  {
+   "talent": "Instrument of Law",
+   "sim": 0.022161821552535904,
+   "ev_before": 0.02923150436968859,
+   "ev_after": 0.02917180232791545,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.022161821552535904,
+     "ev": 0.02917180232791545
+    }
+   ]
+  },
+  {
+   "talent": "Improved Judgement",
+   "sim": 0.021254252183948802,
+   "ev_before": 0.017065386459621752,
+   "ev_after": 0.017352559183028686,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.01651772443064227,
+     "ev": 0.017636945295230046
+    },
+    {
+     "level": 60,
+     "sim": 0.025990779937255334,
+     "ev": 0.01706817307082733
+    }
+   ]
+  },
+  {
+   "talent": "Sacred Arbiter",
+   "sim": 0.020272076047483906,
+   "ev_before": 0.02164263596340605,
+   "ev_after": 0.021657410790253198,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.01708255525044672,
+     "ev": 0.0225701315360852
+    },
+    {
+     "level": 60,
+     "sim": 0.023461596844521086,
+     "ev": 0.020744690044421196
+    }
+   ]
+  },
+  {
+   "talent": "Two-Handed Weapon Specialization",
+   "sim": 0.016309035826470065,
+   "ev_before": 0.03829031457848312,
+   "ev_after": 0.016312621589139605,
+   "scale": 0.4256749995984137,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.009702427153082924,
+     "ev": 0.008102802086969979
+    },
+    {
+     "level": 60,
+     "sim": 0.02291564449985721,
+     "ev": 0.024522441091309227
+    }
+   ]
+  },
+  {
+   "talent": "Champion of the Light",
+   "sim": 0.015502813608041292,
+   "ev_before": 0.026896236080369274,
+   "ev_after": 0.015509596894611033,
+   "scale": 0.5742181991226971,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.015502813608041292,
+     "ev": 0.015509596894611033
+    }
+   ]
+  },
+  {
+   "talent": "Deflection",
+   "sim": 0.015083918421179024,
+   "ev_before": 0.006471729679936932,
+   "ev_after": 0.00640484669184904,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.013333738803038973,
+     "ev": 0.00629478647376467
+    },
+    {
+     "level": 60,
+     "sim": 0.016834098039319075,
+     "ev": 0.006514906909933411
+    }
+   ]
+  },
+  {
+   "talent": "Divine Precision",
+   "sim": 0.011906160360084996,
+   "ev_before": 0.009162728314412075,
+   "ev_after": 0.009178173442386639,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.011906160360084996,
+     "ev": 0.009178173442386639
+    }
+   ]
+  },
+  {
+   "talent": "Benediction",
+   "sim": 0.00913109571337923,
+   "ev_before": 0.004970862708771718,
+   "ev_after": 0.009023694387809363,
+   "scale": 1.9965877020731568,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.006415910082353381,
+     "ev": 0.009527996562778498
+    },
+    {
+     "level": 60,
+     "sim": 0.01184628134440508,
+     "ev": 0.00851939221284023
     }
    ]
   },
   {
    "talent": "Toughness",
-   "sim": 0.0032380860456682737,
-   "ev_before": 0.004665383646403526,
-   "ev_after": 0.00478146050984721,
+   "sim": 0.00733140322902843,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
    "scale": 1.0,
-   "how": "kept",
+   "how": "dead",
    "per_level": [
     {
-     "level": 40,
+     "level": 30,
      "sim": null,
      "ev": null
     },
     {
      "level": 60,
-     "sim": 0.0032380860456682737,
-     "ev": 0.00478146050984721
+     "sim": 0.00733140322902843,
+     "ev": 0.0
     }
    ]
   },
   {
-   "talent": "Illumination",
-   "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
+   "talent": "Vindication",
+   "sim": 0.007284761409814284,
+   "ev_before": 0.008053268468070146,
+   "ev_after": 0.008015265823942597,
    "scale": 1.0,
-   "how": "kept",
+   "how": "noise",
    "per_level": [
     {
-     "level": 40,
+     "level": 30,
+     "sim": 0.0046828974277933885,
+     "ev": 0.004249672738644366
+    },
+    {
+     "level": 60,
+     "sim": 0.009886625391835178,
+     "ev": 0.011780858909240828
+    }
+   ]
+  },
+  {
+   "talent": "Divine Intellect",
+   "sim": 0.006213729420163679,
+   "ev_before": 0.0015576253380455642,
+   "ev_after": 0.006213699618081095,
+   "scale": 4.004356671124697,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 30,
      "sim": null,
      "ev": null
     },
     {
      "level": 60,
-     "sim": 0.0,
-     "ev": 0.0
+     "sim": 0.006213729420163679,
+     "ev": 0.006213699618081095
     }
    ]
   },
@@ -458,7 +443,7 @@
    "how": "kept",
    "per_level": [
     {
-     "level": 40,
+     "level": 30,
      "sim": null,
      "ev": null
     },
@@ -472,20 +457,20 @@
   {
    "talent": "Repentance",
    "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
+   "ev_before": 0.004912062208348217,
+   "ev_after": 0.004820649412678601,
    "scale": 1.0,
    "how": "noise",
    "per_level": [
     {
-     "level": 40,
-     "sim": 0.0,
-     "ev": 0.0
+     "level": 30,
+     "sim": null,
+     "ev": null
     },
     {
      "level": 60,
      "sim": 0.0,
-     "ev": 0.0
+     "ev": 0.004820649412678601
     }
    ]
   },
@@ -498,7 +483,7 @@
    "how": "kept",
    "per_level": [
     {
-     "level": 40,
+     "level": 30,
      "sim": null,
      "ev": null
     },
@@ -511,20 +496,20 @@
   },
   {
    "talent": "Twist of Light",
-   "sim": -0.006419311195586831,
-   "ev_before": 0.02172637514275529,
+   "sim": -0.0051237917112186455,
+   "ev_before": 0.0,
    "ev_after": 0.0,
-   "scale": 4.656612873077393e-10,
-   "how": "fitted",
+   "scale": 1.0,
+   "how": "kept",
    "per_level": [
     {
-     "level": 40,
+     "level": 30,
      "sim": null,
      "ev": null
     },
     {
      "level": 60,
-     "sim": -0.006419311195586831,
+     "sim": -0.0051237917112186455,
      "ev": 0.0
     }
    ]

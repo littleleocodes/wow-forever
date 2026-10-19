@@ -1,6 +1,5 @@
 {
- "drink_below": 0.6,
- "eat_below": 0.8,
+ "eat_below": 0.5,
  "class": "druid",
  "spec": "balance-dps",
  "build": "opt-balance-dps-leveling-st",
@@ -12,69 +11,58 @@
   50,
   60
  ],
- "date": "2026-10-17",
+ "date": "2026-10-19",
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "drink below 60% mana",
-   "rule": [
-    "drink_below",
-    null,
-    0.6
-   ],
-   "gain_seed1": 0.032835780136325265,
-   "gain_seed2": 0.029562358518607
-  },
-  {
-   "round": 2,
-   "change": "eat below 80% health",
+   "change": "eat below 50% health",
    "rule": [
     "eat_below",
     null,
-    0.8
+    0.5
    ],
-   "gain_seed1": 0.008478902549072354,
-   "gain_seed2": 0.00948877542747184
+   "gain_seed1": 0.006218759850763034,
+   "gain_seed2": 0.006415749930829828
   }
  ],
- "weighted_before": 47.995846350342376,
- "weighted_after": 46.24431674421763,
+ "weighted_before": 43.4688657038942,
+ "weighted_after": 43.32859814806738,
  "per_level": {
   "15": {
-   "before": 37.95503339357024,
-   "after": 39.969420395305896,
+   "before": 34.44632922685828,
+   "after": 34.44632922685828,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "20": {
-   "before": 41.97773355475328,
-   "after": 43.892614691793796,
+   "before": 36.558736598259095,
+   "after": 36.558736598259095,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 51.38837395553505,
-   "after": 53.11579096612682,
+   "before": 50.13823090894724,
+   "after": 50.15371861786247,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 55.1281787383999,
-   "after": 52.800335116775635,
-   "deaths_before": 0.03333333333333333,
+   "before": 53.59117097966955,
+   "after": 53.22408582369045,
+   "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 50.205750110516945,
-   "after": 44.9571797495006,
-   "deaths_before": 0.7333333333333333,
+   "before": 43.92432853296,
+   "after": 43.98032697019942,
+   "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 44.219348659951606,
-   "after": 41.863139651857765,
+   "before": 37.5654377144333,
+   "after": 37.25312652454945,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

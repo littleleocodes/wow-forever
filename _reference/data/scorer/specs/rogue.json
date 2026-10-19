@@ -2,7 +2,7 @@
   "_doc": "Rogue spec models. Always dual-wield: white swings carry the +19% miss penalty. Energy talents are resource_cost on the builder. Weapon-type talents use weapon:sword / weapon:dagger tags. The builder source is tagged 'builder' (+ 'builder-dagger' for Backstab/Mutilate builds) so Mutilate/Puncturing Wounds/Opportunity apply to the right one. Poisons are a separate source (school:nature, ability:Poisons). min_level/max_level are Classic learn levels (Forever unlock levels are a beta check).",
   "models": {
     "combat-swords-raid": {
-      "note": "Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5%. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Rupture rank 4 ticks for 16 plus 2.96 per combo point (Classic 27 plus 5), Instant Poison VI 45-57 (Classic 67-85), Deadly Poison V 18 a tick (Classic 27), Eviscerate unchanged: Rupture 5 -> 3%, poisons 10 -> 8%, white and Eviscerate up. Expose Armor is 450 armor per point with no talent multiplier. Fight lab calibration (2026-10-15, beta client 1.60.1.70291, build opt-combat-swords-raid-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Eviscerate 35%, Sinister Strike 22%, Melee 17%, Melee (off-hand) 10%, Garrote 6%, Instant Poison 5%, Riposte 3%, Hack and Slash 2%, Deadly Poison 2%) and the leveling time split is fight 88% / drink 0% / eat 7% / other 0% / death 5% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Raid sim shares (2026-10-03, combat-swords-raid in the ElliotWood/Forever simulator b0f0df3): white_mh 37%, sinister 32%, white_oh 20%, eviscerate 6%, poisons 5%; 7% of the damage matched no source.",
+      "note": "Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5%. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Rupture rank 4 ticks for 16 plus 2.96 per combo point (Classic 27 plus 5), Instant Poison VI 45-57 (Classic 67-85), Deadly Poison V 18 a tick (Classic 27), Eviscerate unchanged: Rupture 5 -> 3%, poisons 10 -> 8%, white and Eviscerate up. Expose Armor is 450 armor per point with no talent multiplier. Raid sim shares (2026-10-03, combat-swords-raid in the ElliotWood/Forever simulator b0f0df3): white_mh 37%, sinister 32%, white_oh 20%, eviscerate 6%, poisons 5%; 7% of the damage matched no source. Fight lab calibration [leveling-st] (2026-10-19, beta client 1.60.1.70425, build opt-combat-swords-raid-leveling-st at level 60, 1500 fights): shares are the measured damage split (Eviscerate 27%, Sinister Strike 21%, Melee 16%, Garrote 12%, Instant Poison 10%, Melee (off-hand) 8%, Riposte 4%, Deadly Poison 2%) and the leveling time split is fight 85% / drink 0% / eat 10% / other 0% / death 5% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Fight lab calibration [leveling-aoe] (2026-10-19, beta client 1.60.1.70425, build opt-combat-swords-raid-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Eviscerate 33%, Sinister Strike 23%, Melee 17%, Melee (off-hand) 10%, Garrote 6%, Instant Poison 5%, Riposte 3%, Deadly Poison 2%, Hack and Slash 1%) and the leveling time split is fight 87% / drink 0% / eat 7% / other 0% / death 6% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length).",
       "sources": [
         {
           "id": "white_mh",
@@ -10,9 +10,9 @@
           "tags": ["type:melee", "white", "school:physical", "mainhand", "dw", "weapon:sword"],
           "miss_extra": 0.19,
           "profile_overrides": {
-            "leveling-st": {"share": 0.169},
-            "solo-60": {"share": 0.169},
-            "leveling-aoe": {"share": 0.173}
+            "leveling-st": {"share": 0.168},
+            "solo-60": {"share": 0.168},
+            "leveling-aoe": {"share": 0.18}
           },
           "game_overrides": {
             "classic-era": {"share": 0.4178}
@@ -24,9 +24,9 @@
           "tags": ["type:melee", "white", "school:physical", "offhand", "dw", "weapon:sword"],
           "miss_extra": 0.19,
           "profile_overrides": {
-            "leveling-st": {"share": 0.101},
-            "solo-60": {"share": 0.101},
-            "leveling-aoe": {"share": 0.103}
+            "leveling-st": {"share": 0.078},
+            "solo-60": {"share": 0.078},
+            "leveling-aoe": {"share": 0.108}
           },
           "game_overrides": {
             "classic-era": {"share": 0.225}
@@ -38,9 +38,9 @@
           "tags": ["type:melee", "yellow", "school:physical", "ability:Sinister Strike", "builder", "weapon:sword"],
           "cost": 45,
           "profile_overrides": {
-            "leveling-st": {"share": 0.226},
-            "solo-60": {"share": 0.226},
-            "leveling-aoe": {"share": 0.226}
+            "leveling-st": {"share": 0.216},
+            "solo-60": {"share": 0.216},
+            "leveling-aoe": {"share": 0.234}
           },
           "game_overrides": {
             "classic-era": {"share": 0.2446}
@@ -52,9 +52,9 @@
           "tags": ["type:melee", "yellow", "school:physical", "ability:Eviscerate", "finisher", "weapon:sword"],
           "cost": 35,
           "profile_overrides": {
-            "leveling-st": {"share": 0.259},
-            "solo-60": {"share": 0.259},
-            "leveling-aoe": {"share": 0.359}
+            "leveling-st": {"share": 0.273},
+            "solo-60": {"share": 0.273},
+            "leveling-aoe": {"share": 0.336}
           },
           "game_overrides": {
             "classic-era": {"share": 0.0675}
@@ -71,8 +71,8 @@
           },
           "min_level": 20,
           "profile_overrides": {
-            "leveling-st": {"share": 0.095},
-            "solo-60": {"share": 0.095},
+            "leveling-st": {"share": 0.103},
+            "solo-60": {"share": 0.103},
             "leveling-aoe": {"share": 0.056}
           }
         },
@@ -99,9 +99,9 @@
           "tags": ["type:melee", "yellow", "school:physical", "ability:Riposte", "weapon:sword"],
           "cooldown": 6,
           "profile_overrides": {
-            "leveling-st": {"share": 0.04},
-            "solo-60": {"share": 0.04},
-            "leveling-aoe": {"share": 0.026}
+            "leveling-st": {"share": 0.041},
+            "solo-60": {"share": 0.041},
+            "leveling-aoe": {"share": 0.027}
           },
           "game_overrides": {
             "classic-era": {"share": 0.0}
@@ -114,9 +114,9 @@
           "min_level": 14,
           "tags": ["type:melee", "dot", "school:physical", "ability:Garrote", "opener", "weapon:sword"],
           "profile_overrides": {
-            "leveling-st": {"share": 0.109},
-            "solo-60": {"share": 0.109},
-            "leveling-aoe": {"share": 0.057}
+            "leveling-st": {"share": 0.121},
+            "solo-60": {"share": 0.121},
+            "leveling-aoe": {"share": 0.06}
           }
         }
       ],
@@ -135,11 +135,11 @@
       "regen_share": 0.0,
       "abs_dps_factor": 1.0,
       "time": {
-        "leveling-st": {"fight": 0.851, "drink": 0.0, "eat": 0.102, "other": 0.0, "death": 0.048},
-        "solo-60": {"fight": 0.851, "drink": 0.0, "eat": 0.102, "other": 0.0, "death": 0.048},
-        "leveling-aoe": {"fight": 0.88, "drink": 0.0, "eat": 0.066, "other": 0.0, "death": 0.054}
+        "leveling-st": {"fight": 0.85, "drink": 0.0, "eat": 0.102, "other": 0.0, "death": 0.048},
+        "solo-60": {"fight": 0.85, "drink": 0.0, "eat": 0.102, "other": 0.0, "death": 0.048},
+        "leveling-aoe": {"fight": 0.874, "drink": 0.0, "eat": 0.067, "other": 0.0, "death": 0.06}
       },
-      "fight_coupling": {"leveling-aoe": 1.0},
+      "fight_coupling": {"leveling-aoe": 1.0, "leveling-st": 1.0, "solo-60": 1.0},
       "kind_weights": {"kite": 0, "range": 0},
       "kind_note": "Melee playstyle: it fights in melee range and never kites, so roots and slows used to open distance (kite) and longer spell or shot range (range) are worth nothing to it in any scenario. Snares that stop a runner (stick), stuns and movement still count. Swords leveling (fight lab): Gouge is not in the loop, Improved Kick measures -0.1 +-1.0, Blade Flurry breaks Gouge and single-target deaths are 0 per 100 kills: stun 0 while leveling, half at 60 for +2 adds.",
       "kind_weights_by_profile": {

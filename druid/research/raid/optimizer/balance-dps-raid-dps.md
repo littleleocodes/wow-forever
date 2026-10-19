@@ -42,7 +42,7 @@ Missing: Shifting Power
 | Feral Swiftness | Feral Combat | 2 | +0.00% | manual |
 
 ## Optimized build: 33/5/13  score +130.06%  (dps x2.300, sustain x1.702, surv x1.000, utility +0.00%)
-Absolute DPS index (character alone, no talents = 1.00): 1.129  — use this to compare models with different pet shares.
+Absolute DPS index (character alone, no talents = 1.00): 1.530  — use this to compare models with different pet shares.
 
 ```
   Balance: Genesis 5, Nature's Reach 2, Improved Moonfire 2, Nature's Majesty 2, Moonglow 3, Nature's Splendor 1, Insect Swarm 1, Vengeance 5, Improved Starfire 5, Nature's Grace 1, Moonfury 5, Moonkin Form 1

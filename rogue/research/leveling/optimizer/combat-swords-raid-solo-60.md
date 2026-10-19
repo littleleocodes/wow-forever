@@ -9,38 +9,38 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Riposte | Combat | 3 | +4.31% | manual |
-| Cold Blood | Assassination | 4 | +3.13% | manual |
-| Flawless Execution | Combat | 4 | +2.42% | manual |
-| Relentless Strikes | Assassination | 3 | +2.19% | manual |
-| Adrenaline Rush | Combat | 7 | +1.79% | manual |
+| Riposte | Combat | 3 | +4.43% | manual |
+| Flawless Execution | Combat | 4 | +2.45% | manual |
+| Relentless Strikes | Assassination | 3 | +2.22% | manual |
+| Adrenaline Rush | Combat | 7 | +1.81% | manual |
 | Weapon Expertise | Combat | 6 | +1.75% | manual |
-| Ghostly Strike | Subtlety | 3 | +1.75% | manual |
-| Improved Sinister Strike | Combat | 1 | +1.46% | manual |
-| Remorseless Attacks | Assassination | 1 | +1.21% | manual |
+| Ghostly Strike | Subtlety | 3 | +1.74% | manual |
+| Cold Blood | Assassination | 4 | +1.48% | manual |
+| Improved Sinister Strike | Combat | 1 | +1.40% | manual |
+| Remorseless Attacks | Assassination | 1 | +1.16% | manual |
 | Serrated Blades | Subtlety | 4 | +0.90% | manual |
-| Seal Fate | Assassination | 6 | +0.89% | manual |
+| Seal Fate | Assassination | 6 | +0.90% | manual |
 | Precision | Combat | 2 | +0.88% | manual |
-| Improved Eviscerate | Combat | 1 | +0.71% | manual |
+| Improved Eviscerate | Combat | 1 | +0.75% | manual |
+| Opportunity | Subtlety | 1 | +0.68% | manual |
 | Preparation | Subtlety | 5 | +0.62% | manual |
-| Opportunity | Subtlety | 1 | +0.61% | manual |
-| Malice | Assassination | 1 | +0.57% | manual |
-| Vigor | Assassination | 5 | +0.54% | manual |
-| Initiative | Subtlety | 3 | +0.54% | manual |
-| Premeditation | Subtlety | 4 | +0.54% | manual |
+| Aggression | Combat | 6 | +0.60% | manual |
+| Malice | Assassination | 1 | +0.58% | manual |
+| Vigor | Assassination | 5 | +0.55% | manual |
+| Initiative | Subtlety | 3 | +0.55% | manual |
+| Premeditation | Subtlety | 4 | +0.55% | manual |
+| Improved Poisons | Assassination | 4 | +0.52% | manual |
 | Murder | Assassination | 2 | +0.48% | manual |
-| Improved Poisons | Assassination | 4 | +0.47% | manual |
-| Dual Wield Specialization | Combat | 4 | +0.42% | manual |
-| Vile Poisons | Assassination | 4 | +0.37% | manual |
+| Vile Poisons | Assassination | 4 | +0.41% | manual |
+| Dual Wield Specialization | Combat | 4 | +0.33% | manual |
 | Dirty Deeds | Subtlety | 5 | +0.30% | manual |
+| Setup | Subtlety | 2 | +0.28% | manual |
 | Deflection | Combat | 2 | +0.27% | manual |
-| Setup | Subtlety | 2 | +0.27% | manual |
-| Aggression | Combat | 6 | +0.24% | manual |
+| Lethality | Assassination | 3 | +0.23% | manual |
 | Master of Deception | Subtlety | 1 | +0.20% | manual |
 | Lightning Reflexes | Combat | 1 | +0.18% | manual |
-| Hack and Slash | Combat | 5 | +0.16% | manual |
 
-## Optimized build: 33/16/2  score +32.18%  (dps x1.461, sustain x1.000, surv x1.092, utility +0.00%)
+## Optimized build: 33/16/2  score +31.77%  (dps x1.447, sustain x1.000, surv x1.092, utility +0.00%)
 
 ```
   Assassination: Remorseless Attacks 2, Malice 5, Improved Gouge 1, Murder 2, Relentless Strikes 1, Lethality 4, Cold Blood 1, Improved Poisons 5, Vile Poisons 5, Vigor 2, Seal Fate 5
@@ -52,48 +52,48 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Adrenaline Rush | Combat 7 | 1/1 | +1.38% | no |
-| Weapon Expertise | Combat 6 | 1/2 | +1.17% | no |
+| Adrenaline Rush | Combat 7 | 1/1 | +1.39% | no |
+| Weapon Expertise | Combat 6 | 1/2 | +1.18% | no |
 | Ghostly Strike | Subtlety 3 | 1/1 | +1.10% | no |
-| Serrated Blades | Subtlety 4 | 1/3 | +0.60% | no |
-| Preparation | Subtlety 5 | 1/1 | +0.44% | no |
+| Serrated Blades | Subtlety 4 | 1/3 | +0.61% | no |
+| Preparation | Subtlety 5 | 1/1 | +0.43% | no |
+| Aggression | Combat 6 | 1/3 | +0.43% | no |
 | Initiative | Subtlety 3 | 1/3 | +0.42% | no |
 | Premeditation | Subtlety 4 | 1/1 | +0.42% | no |
 | Dirty Deeds | Subtlety 5 | 1/2 | +0.30% | no |
 | Setup | Subtlety 2 | 1/3 | +0.21% | no |
-| Dual Wield Specialization | Combat 4 | 1/5 | +0.21% | yes |
 | Master of Deception | Subtlety 1 | 1/3 | +0.20% | yes |
-| Aggression | Combat 6 | 1/3 | +0.17% | no |
-| Quietus | Subtlety 6 | 1/5 | +0.12% | no |
+| Lethality | Assassination 3 | 5/5 | +0.19% | yes |
+| Dual Wield Specialization | Combat 4 | 1/5 | +0.17% | yes |
+| Quietus | Subtlety 6 | 1/5 | +0.11% | no |
 | Hack and Slash | Combat 5 | 1/5 | +0.11% | no |
-| Lightning Reflexes | Combat 1 | 4/5 | +0.10% | yes |
 
 ## Leveling order (lookahead 16; receding horizon)
 
 | Levels | Tree | Talent | Pts | Score at end |
 |---|---|---|---|---|
-| 10 | Combat | Improved Sinister Strike | 1 | +1.7% |
+| 10 | Combat | Improved Sinister Strike | 1 | +1.8% |
 | 11-12 | Assassination | Remorseless Attacks | 2 | +4.8% |
 | 13 | Combat | Improved Sinister Strike | 1 | +6.2% |
 | 14-16 | Combat | Improved Eviscerate | 3 | +7.4% |
-| 17 | Combat | Deflection | 1 | +7.6% |
-| 18-19 | Combat | Precision | 2 | +9.2% |
+| 17 | Combat | Deflection | 1 | +7.7% |
+| 18-19 | Combat | Precision | 2 | +9.3% |
 | 20-21 | Combat | Deflection | 2 | +9.2% |
-| 22 | Combat | Riposte | 1 | +12.8% |
-| 23 | Combat | Precision | 1 | +13.5% |
-| 24-26 | Combat | Lightning Reflexes | 3 | +14.0% |
-| 27 | Combat | Flawless Execution | 1 | +16.2% |
-| 28-32 | Assassination | Malice | 5 | +18.6% |
-| 33-34 | Assassination | Murder | 2 | +19.3% |
-| 35 | Assassination | Improved Gouge | 1 | +19.3% |
-| 36 | Assassination | Relentless Strikes | 1 | +21.3% |
-| 37-40 | Assassination | Lethality | 4 | +21.7% |
-| 41 | Assassination | Cold Blood | 1 | +24.5% |
-| 42-45 | Assassination | Improved Poisons | 4 | +25.6% |
-| 46-47 | Assassination | Vigor | 2 | +26.5% |
-| 48 | Assassination | Improved Poisons | 1 | +26.8% |
-| 49-50 | Assassination | Vile Poisons | 2 | +27.3% |
-| 51-55 | Assassination | Seal Fate | 5 | +30.8% |
-| 56-57 | Subtlety | Opportunity | 2 | +31.5% |
-| 58-60 | Assassination | Vile Poisons | 3 | +32.2% |
+| 22 | Combat | Riposte | 1 | +12.9% |
+| 23 | Combat | Precision | 1 | +13.7% |
+| 24-26 | Combat | Lightning Reflexes | 3 | +14.1% |
+| 27 | Combat | Flawless Execution | 1 | +16.4% |
+| 28-32 | Assassination | Malice | 5 | +18.7% |
+| 33-34 | Assassination | Murder | 2 | +19.5% |
+| 35 | Assassination | Improved Gouge | 1 | +19.5% |
+| 36 | Assassination | Relentless Strikes | 1 | +21.5% |
+| 37-38 | Subtlety | Opportunity | 2 | +22.4% |
+| 39-42 | Assassination | Lethality | 4 | +23.2% |
+| 43 | Assassination | Cold Blood | 1 | +24.5% |
+| 44-47 | Assassination | Improved Poisons | 4 | +25.7% |
+| 48-49 | Assassination | Vigor | 2 | +26.6% |
+| 50 | Assassination | Improved Poisons | 1 | +26.9% |
+| 51-52 | Assassination | Vile Poisons | 2 | +27.5% |
+| 53-57 | Assassination | Seal Fate | 5 | +31.0% |
+| 58-60 | Assassination | Vile Poisons | 3 | +31.8% |
 

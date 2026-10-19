@@ -12,19 +12,19 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 | Summon Hawk | Beast Mastery | 4 | +9.23% | manual |
 | Trueshot Aura | Marksmanship | 4 | +2.22% | manual |
 | Bestial Discipline | Beast Mastery | 5 | +2.01% | manual |
+| Resourcefulness | Survival | 5 | +1.79% | manual |
 | Bestial Wrath | Beast Mastery | 7 | +1.49% | manual |
 | Deadly Aspects | Beast Mastery | 1 | +1.43% | manual |
 | Efficiency | Marksmanship | 2 | +1.37% | manual |
-| Lightning Reflexes | Survival | 6 | +1.20% | manual |
 | Focused Fire | Beast Mastery | 2 | +0.92% | manual |
 | Ranged Weapon Specialization | Marksmanship | 6 | +0.80% | manual |
+| Lightning Reflexes | Survival | 6 | +0.80% | manual |
 | Careful Aim | Marksmanship | 2 | +0.77% | manual |
 | Mortal Shots | Marksmanship | 4 | +0.76% | manual |
 | Lethal Attacks | Marksmanship | 1 | +0.75% | manual |
 | Improved Stings | Marksmanship | 2 | +0.69% | manual |
 | Unleashed Fury | Beast Mastery | 3 | +0.60% | manual |
 | Frenzy | Beast Mastery | 6 | +0.56% | manual |
-| Resourcefulness | Survival | 5 | +0.45% | manual |
 | Ferocity | Beast Mastery | 4 | +0.36% | manual |
 | Intimidation | Beast Mastery | 5 | +0.20% | manual |
 | Barrage | Marksmanship | 5 | +0.17% | manual |
@@ -41,7 +41,7 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 | Pathfinding | Beast Mastery | 2 | +0.00% | manual |
 
 ## Optimized build: 31/20/0  score +67.64%  (dps x1.676, sustain x1.162, surv x1.000, utility +0.00%)
-Absolute DPS index (character alone, no talents = 1.00): 1.594  — use this to compare models with different pet shares.
+Absolute DPS index (character alone, no talents = 1.00): 1.646  — use this to compare models with different pet shares.
 
 ```
   Beast Mastery: Deadly Aspects 5, Endurance Training 3, Focused Fire 2, Unleashed Fury 5, Bestial Swiftness 1, Summon Hawk 1, Ferocity 5, Intimidation 1, Bestial Discipline 2, Frenzy 5, Bestial Wrath 1
@@ -52,11 +52,11 @@ Absolute DPS index (character alone, no talents = 1.00): 1.594  — use this to 
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Lightning Reflexes | Survival 6 | 1/5 | +2.01% | no |
+| Resourcefulness | Survival 5 | 1/2 | +2.03% | no |
+| Lightning Reflexes | Survival 6 | 1/5 | +1.34% | no |
 | Mortal Shots | Marksmanship 4 | 5/5 | +1.21% | yes |
 | Ranged Weapon Specialization | Marksmanship 6 | 1/5 | +1.11% | no |
 | Improved Stings | Marksmanship 2 | 1/3 | +1.05% | yes |
-| Resourcefulness | Survival 5 | 1/2 | +0.51% | no |
 | Barrage | Marksmanship 5 | 1/3 | +0.28% | yes |
 | Endurance Training | Beast Mastery 1 | 4/5 | +0.15% | yes |
 | Rapid Recuperation | Marksmanship 5 | 1/2 | +0.00% | no |

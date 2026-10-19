@@ -41,7 +41,7 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 | Riposte | Combat | 3 | +0.00% | manual |
 
 ## Optimized build: 17/32/2  score +85.31%  (dps x1.853, sustain x1.000, surv x1.000, utility +0.00%)
-Absolute DPS index (character alone, no talents = 1.00): 1.597  — use this to compare models with different pet shares.
+Absolute DPS index (character alone, no talents = 1.00): 1.625  — use this to compare models with different pet shares.
 
 ```
   Assassination: Malice 5, Improved Slice and Dice 3, Ruthlessness 3, Murder 2, Relentless Strikes 1, Improved Expose Armor 2, Lethality 1

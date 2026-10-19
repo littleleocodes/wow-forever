@@ -634,229 +634,6 @@
       "sources": ["https://warcraftforever.games/talents/rogue"]
     },
     {
-      "id": "opt-combat-daggers-raid-leveling-st",
-      "name": "Optimizer — Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (leveling-st)",
-      "role": "dps",
-      "content": "leveling",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-daggers-raid` and profile `leveling-st`: score +36.0% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Assassination": [
-          ["Malice", 5],
-          ["Improved Gouge", 3],
-          ["Ruthlessness", 3],
-          ["Murder", 2],
-          ["Relentless Strikes", 1],
-          ["Lethality", 5],
-          ["Cold Blood", 1],
-          ["Mutilate", 1]
-        ],
-        "Combat": [
-          ["Improved Eviscerate", 3],
-          ["Lightning Reflexes", 2],
-          ["Puncturing Wounds", 3],
-          ["Precision", 3],
-          ["Deflection", 3],
-          ["Endurance", 2],
-          ["Riposte", 1],
-          ["Flawless Execution", 1],
-          ["Dual Wield Specialization", 2],
-          ["Hack and Slash", 5],
-          ["Aggression", 3]
-        ],
-        "Subtlety": [
-          ["Opportunity", 2]
-        ]
-      },
-      "core": [
-        {"talent": "Puncturing Wounds", "why": "Removing it costs 6.9 points of score in this model."},
-        {"talent": "Mutilate", "why": "Removing it costs 4.0 points of score in this model."},
-        {"talent": "Opportunity", "why": "Removing it costs 2.1 points of score in this model."},
-        {"talent": "Flawless Execution", "why": "Removing it costs 1.7 points of score in this model."},
-        {"talent": "Ruthlessness", "why": "Removing it costs 1.5 points of score in this model."},
-        {"talent": "Relentless Strikes", "why": "Removing it costs 1.5 points of score in this model."},
-        {"talent": "Aggression", "why": "Removing it costs 1.5 points of score in this model."},
-        {"talent": "Malice", "why": "Removing it costs 1.4 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: rogue/talents/forever/optimizer/combat-daggers-raid-leveling-st.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/rogue"],
-      "order": [
-        {"levels": "10-11", "tree": "Subtlety", "talent": "Opportunity", "points": 2},
-        {"levels": "12-14", "tree": "Combat", "talent": "Improved Eviscerate", "points": 3},
-        {"levels": "15-16", "tree": "Combat", "talent": "Lightning Reflexes", "points": 2},
-        {"levels": "17-19", "tree": "Combat", "talent": "Puncturing Wounds", "points": 3},
-        {"levels": "20-22", "tree": "Combat", "talent": "Deflection", "points": 3},
-        {"levels": "23", "tree": "Combat", "talent": "Riposte", "points": 1},
-        {"levels": "24-26", "tree": "Combat", "talent": "Precision", "points": 3},
-        {"levels": "27", "tree": "Combat", "talent": "Flawless Execution", "points": 1},
-        {"levels": "28-32", "tree": "Assassination", "talent": "Malice", "points": 5},
-        {"levels": "33-35", "tree": "Assassination", "talent": "Ruthlessness", "points": 3},
-        {"levels": "36-37", "tree": "Assassination", "talent": "Murder", "points": 2},
-        {"levels": "38", "tree": "Assassination", "talent": "Relentless Strikes", "points": 1},
-        {"levels": "39-42", "tree": "Assassination", "talent": "Lethality", "points": 4},
-        {"levels": "43", "tree": "Assassination", "talent": "Cold Blood", "points": 1},
-        {"levels": "44", "tree": "Assassination", "talent": "Lethality", "points": 1},
-        {"levels": "45-47", "tree": "Assassination", "talent": "Improved Gouge", "points": 3},
-        {"levels": "48", "tree": "Assassination", "talent": "Mutilate", "points": 1},
-        {"levels": "49-50", "tree": "Combat", "talent": "Endurance", "points": 2},
-        {"levels": "51-52", "tree": "Combat", "talent": "Dual Wield Specialization", "points": 2},
-        {"levels": "53-57", "tree": "Combat", "talent": "Hack and Slash", "points": 5},
-        {"levels": "58-60", "tree": "Combat", "talent": "Aggression", "points": 3}
-      ]
-    },
-    {
-      "id": "opt-combat-swords-raid-leveling-st",
-      "name": "Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (leveling-st)",
-      "role": "dps",
-      "content": "leveling",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-swords-raid` and profile `leveling-st`: score +32.5% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Assassination": [
-          ["Remorseless Attacks", 2],
-          ["Malice", 5],
-          ["Improved Gouge", 1],
-          ["Murder", 2],
-          ["Relentless Strikes", 1],
-          ["Lethality", 4],
-          ["Cold Blood", 1],
-          ["Improved Poisons", 5],
-          ["Vile Poisons", 5],
-          ["Vigor", 2],
-          ["Seal Fate", 5]
-        ],
-        "Combat": [
-          ["Improved Sinister Strike", 2],
-          ["Improved Eviscerate", 3],
-          ["Lightning Reflexes", 3],
-          ["Deflection", 3],
-          ["Precision", 3],
-          ["Riposte", 1],
-          ["Flawless Execution", 1]
-        ],
-        "Subtlety": [
-          ["Opportunity", 2]
-        ]
-      },
-      "core": [
-        {"talent": "Seal Fate", "why": "Removing it costs 3.3 points of score in this model."},
-        {"talent": "Riposte", "why": "Removing it costs 2.9 points of score in this model."},
-        {"talent": "Cold Blood", "why": "Removing it costs 2.4 points of score in this model."},
-        {"talent": "Malice", "why": "Removing it costs 2.3 points of score in this model."},
-        {"talent": "Improved Sinister Strike", "why": "Removing it costs 1.9 points of score in this model."},
-        {"talent": "Flawless Execution", "why": "Removing it costs 1.8 points of score in this model."},
-        {"talent": "Precision", "why": "Removing it costs 1.8 points of score in this model."},
-        {"talent": "Remorseless Attacks", "why": "Removing it costs 1.7 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: rogue/talents/forever/optimizer/combat-swords-raid-leveling-st.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/rogue"],
-      "order": [
-        {"levels": "10-11", "tree": "Combat", "talent": "Improved Sinister Strike", "points": 2},
-        {"levels": "12-13", "tree": "Combat", "talent": "Improved Eviscerate", "points": 2},
-        {"levels": "14-15", "tree": "Assassination", "talent": "Remorseless Attacks", "points": 2},
-        {"levels": "16", "tree": "Combat", "talent": "Improved Eviscerate", "points": 1},
-        {"levels": "17", "tree": "Combat", "talent": "Deflection", "points": 1},
-        {"levels": "18-19", "tree": "Combat", "talent": "Precision", "points": 2},
-        {"levels": "20-21", "tree": "Combat", "talent": "Deflection", "points": 2},
-        {"levels": "22", "tree": "Combat", "talent": "Riposte", "points": 1},
-        {"levels": "23", "tree": "Combat", "talent": "Precision", "points": 1},
-        {"levels": "24-26", "tree": "Combat", "talent": "Lightning Reflexes", "points": 3},
-        {"levels": "27", "tree": "Combat", "talent": "Flawless Execution", "points": 1},
-        {"levels": "28-32", "tree": "Assassination", "talent": "Malice", "points": 5},
-        {"levels": "33-34", "tree": "Assassination", "talent": "Murder", "points": 2},
-        {"levels": "35", "tree": "Assassination", "talent": "Improved Gouge", "points": 1},
-        {"levels": "36", "tree": "Assassination", "talent": "Relentless Strikes", "points": 1},
-        {"levels": "37-40", "tree": "Assassination", "talent": "Lethality", "points": 4},
-        {"levels": "41", "tree": "Assassination", "talent": "Cold Blood", "points": 1},
-        {"levels": "42-45", "tree": "Assassination", "talent": "Improved Poisons", "points": 4},
-        {"levels": "46-47", "tree": "Assassination", "talent": "Vigor", "points": 2},
-        {"levels": "48", "tree": "Assassination", "talent": "Improved Poisons", "points": 1},
-        {"levels": "49-50", "tree": "Assassination", "talent": "Vile Poisons", "points": 2},
-        {"levels": "51-55", "tree": "Assassination", "talent": "Seal Fate", "points": 5},
-        {"levels": "56-57", "tree": "Subtlety", "talent": "Opportunity", "points": 2},
-        {"levels": "58-60", "tree": "Assassination", "talent": "Vile Poisons", "points": 3}
-      ]
-    },
-    {
-      "id": "opt-combat-swords-raid-solo-60",
-      "name": "Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (solo-60)",
-      "role": "dps",
-      "content": "solo",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-swords-raid` and profile `solo-60`: score +32.2% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Assassination": [
-          ["Remorseless Attacks", 2],
-          ["Malice", 5],
-          ["Improved Gouge", 1],
-          ["Murder", 2],
-          ["Relentless Strikes", 1],
-          ["Lethality", 4],
-          ["Cold Blood", 1],
-          ["Improved Poisons", 5],
-          ["Vile Poisons", 5],
-          ["Vigor", 2],
-          ["Seal Fate", 5]
-        ],
-        "Combat": [
-          ["Improved Sinister Strike", 2],
-          ["Improved Eviscerate", 3],
-          ["Lightning Reflexes", 3],
-          ["Deflection", 3],
-          ["Precision", 3],
-          ["Riposte", 1],
-          ["Flawless Execution", 1]
-        ],
-        "Subtlety": [
-          ["Opportunity", 2]
-        ]
-      },
-      "core": [
-        {"talent": "Seal Fate", "why": "Removing it costs 3.4 points of score in this model."},
-        {"talent": "Riposte", "why": "Removing it costs 3.0 points of score in this model."},
-        {"talent": "Cold Blood", "why": "Removing it costs 2.4 points of score in this model."},
-        {"talent": "Malice", "why": "Removing it costs 2.0 points of score in this model."},
-        {"talent": "Improved Sinister Strike", "why": "Removing it costs 1.9 points of score in this model."},
-        {"talent": "Flawless Execution", "why": "Removing it costs 1.9 points of score in this model."},
-        {"talent": "Precision", "why": "Removing it costs 1.8 points of score in this model."},
-        {"talent": "Remorseless Attacks", "why": "Removing it costs 1.8 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: rogue/talents/forever/optimizer/combat-swords-raid-solo-60.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/rogue"],
-      "order": [
-        {"levels": "10", "tree": "Combat", "talent": "Improved Sinister Strike", "points": 1},
-        {"levels": "11-12", "tree": "Assassination", "talent": "Remorseless Attacks", "points": 2},
-        {"levels": "13", "tree": "Combat", "talent": "Improved Sinister Strike", "points": 1},
-        {"levels": "14-16", "tree": "Combat", "talent": "Improved Eviscerate", "points": 3},
-        {"levels": "17", "tree": "Combat", "talent": "Deflection", "points": 1},
-        {"levels": "18-19", "tree": "Combat", "talent": "Precision", "points": 2},
-        {"levels": "20-21", "tree": "Combat", "talent": "Deflection", "points": 2},
-        {"levels": "22", "tree": "Combat", "talent": "Riposte", "points": 1},
-        {"levels": "23", "tree": "Combat", "talent": "Precision", "points": 1},
-        {"levels": "24-26", "tree": "Combat", "talent": "Lightning Reflexes", "points": 3},
-        {"levels": "27", "tree": "Combat", "talent": "Flawless Execution", "points": 1},
-        {"levels": "28-32", "tree": "Assassination", "talent": "Malice", "points": 5},
-        {"levels": "33-34", "tree": "Assassination", "talent": "Murder", "points": 2},
-        {"levels": "35", "tree": "Assassination", "talent": "Improved Gouge", "points": 1},
-        {"levels": "36", "tree": "Assassination", "talent": "Relentless Strikes", "points": 1},
-        {"levels": "37-40", "tree": "Assassination", "talent": "Lethality", "points": 4},
-        {"levels": "41", "tree": "Assassination", "talent": "Cold Blood", "points": 1},
-        {"levels": "42-45", "tree": "Assassination", "talent": "Improved Poisons", "points": 4},
-        {"levels": "46-47", "tree": "Assassination", "talent": "Vigor", "points": 2},
-        {"levels": "48", "tree": "Assassination", "talent": "Improved Poisons", "points": 1},
-        {"levels": "49-50", "tree": "Assassination", "talent": "Vile Poisons", "points": 2},
-        {"levels": "51-55", "tree": "Assassination", "talent": "Seal Fate", "points": 5},
-        {"levels": "56-57", "tree": "Subtlety", "talent": "Opportunity", "points": 2},
-        {"levels": "58-60", "tree": "Assassination", "talent": "Vile Poisons", "points": 3}
-      ]
-    },
-    {
       "id": "combat-leveling",
       "name": "Combat — Leveling (generated)",
       "role": "dps",
@@ -1212,53 +989,6 @@
       "sources": ["https://github.com/ElliotWood/Forever"]
     },
     {
-      "id": "opt-combat-swords-raid-raid-dps",
-      "name": "Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (raid-dps)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-swords-raid` and profile `raid-dps`: score +68.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Assassination": [
-          ["Malice", 5],
-          ["Improved Slice and Dice", 3],
-          ["Ruthlessness", 3],
-          ["Murder", 2],
-          ["Relentless Strikes", 1],
-          ["Lethality", 1],
-          ["Improved Poisons", 5]
-        ],
-        "Combat": [
-          ["Improved Sinister Strike", 2],
-          ["Improved Eviscerate", 3],
-          ["Lightning Reflexes", 5],
-          ["Precision", 3],
-          ["Deflection", 2],
-          ["Dual Wield Specialization", 5],
-          ["Hack and Slash", 4],
-          ["Blade Flurry", 1],
-          ["Weapon Expertise", 2],
-          ["Aggression", 3],
-          ["Adrenaline Rush", 1]
-        ],
-        "Subtlety": []
-      },
-      "core": [
-        {"talent": "Relentless Strikes", "why": "Removing it costs 12.2 points of score in this model."},
-        {"talent": "Improved Sinister Strike", "why": "Removing it costs 9.5 points of score in this model."},
-        {"talent": "Improved Slice and Dice", "why": "Removing it costs 9.0 points of score in this model."},
-        {"talent": "Ruthlessness", "why": "Removing it costs 7.7 points of score in this model."},
-        {"talent": "Malice", "why": "Removing it costs 7.6 points of score in this model."},
-        {"talent": "Adrenaline Rush", "why": "Removing it costs 7.1 points of score in this model."},
-        {"talent": "Dual Wield Specialization", "why": "Removing it costs 7.0 points of score in this model."},
-        {"talent": "Improved Poisons", "why": "Removing it costs 6.5 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: rogue/research/talents/forever/optimizer/combat-swords-raid-raid-dps.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/rogue"]
-    },
-    {
       "id": "opt-combat-swords-raid-parse",
       "name": "Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (parse)",
       "role": "dps",
@@ -1302,55 +1032,6 @@
       ],
       "flex": [],
       "notes": ["Report: rogue/research/talents/forever/optimizer/combat-swords-raid-parse.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/rogue"]
-    },
-    {
-      "id": "opt-combat-daggers-raid-raid-dps",
-      "name": "Optimizer — Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (raid-dps)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-daggers-raid` and profile `raid-dps`: score +85.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Assassination": [
-          ["Malice", 5],
-          ["Improved Slice and Dice", 3],
-          ["Ruthlessness", 3],
-          ["Murder", 2],
-          ["Relentless Strikes", 1],
-          ["Improved Expose Armor", 2],
-          ["Lethality", 1]
-        ],
-        "Combat": [
-          ["Improved Eviscerate", 3],
-          ["Lightning Reflexes", 5],
-          ["Puncturing Wounds", 3],
-          ["Precision", 3],
-          ["Deflection", 1],
-          ["Dual Wield Specialization", 5],
-          ["Hack and Slash", 5],
-          ["Blade Flurry", 1],
-          ["Aggression", 3],
-          ["Weapon Expertise", 2],
-          ["Adrenaline Rush", 1]
-        ],
-        "Subtlety": [
-          ["Opportunity", 2]
-        ]
-      },
-      "core": [
-        {"talent": "Puncturing Wounds", "why": "Removing it costs 24.9 points of score in this model."},
-        {"talent": "Relentless Strikes", "why": "Removing it costs 12.7 points of score in this model."},
-        {"talent": "Improved Expose Armor", "why": "Removing it costs 9.4 points of score in this model."},
-        {"talent": "Improved Slice and Dice", "why": "Removing it costs 8.9 points of score in this model."},
-        {"talent": "Adrenaline Rush", "why": "Removing it costs 8.3 points of score in this model."},
-        {"talent": "Malice", "why": "Removing it costs 7.7 points of score in this model."},
-        {"talent": "Hack and Slash", "why": "Removing it costs 7.3 points of score in this model."},
-        {"talent": "Ruthlessness", "why": "Removing it costs 6.9 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: rogue/research/talents/forever/optimizer/combat-daggers-raid-raid-dps.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/rogue"]
     },
@@ -1562,87 +1243,6 @@
       "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/rogue/60/00530310311301-311333010015142-002-6"]
     },
     {
-      "id": "opt-combat-swords-raid-leveling-aoe",
-      "name": "Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (leveling-aoe)",
-      "role": "dps",
-      "content": "leveling",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-swords-raid` and profile `leveling-aoe`: score +52.2% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Assassination": [
-          ["Malice", 5],
-          ["Remorseless Attacks", 2],
-          ["Improved Gouge", 1],
-          ["Murder", 2],
-          ["Relentless Strikes", 1]
-        ],
-        "Combat": [
-          ["Lightning Reflexes", 2],
-          ["Improved Sinister Strike", 2],
-          ["Improved Eviscerate", 3],
-          ["Precision", 3],
-          ["Deflection", 3],
-          ["Endurance", 2],
-          ["Riposte", 1],
-          ["Flawless Execution", 1],
-          ["Dual Wield Specialization", 5],
-          ["Blade Flurry", 1],
-          ["Hack and Slash", 3],
-          ["Weapon Expertise", 2],
-          ["Aggression", 3],
-          ["Adrenaline Rush", 1]
-        ],
-        "Subtlety": [
-          ["Master of Deception", 3],
-          ["Opportunity", 2],
-          ["Setup", 3]
-        ]
-      },
-      "core": [
-        {"talent": "Setup", "why": "Removing it costs 6.0 points of score in this model."},
-        {"talent": "Blade Flurry", "why": "Removing it costs 3.5 points of score in this model."},
-        {"talent": "Relentless Strikes", "why": "Removing it costs 2.5 points of score in this model."},
-        {"talent": "Precision", "why": "Removing it costs 2.2 points of score in this model."},
-        {"talent": "Improved Sinister Strike", "why": "Removing it costs 2.1 points of score in this model."},
-        {"talent": "Improved Eviscerate", "why": "Removing it costs 2.0 points of score in this model."},
-        {"talent": "Weapon Expertise", "why": "Removing it costs 2.0 points of score in this model."},
-        {"talent": "Flawless Execution", "why": "Removing it costs 2.0 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: rogue/research/talents/forever/optimizer/combat-swords-raid-leveling-aoe.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/rogue"],
-      "order": [
-        {"levels": "10", "tree": "Combat", "talent": "Lightning Reflexes", "points": 1},
-        {"levels": "11-12", "tree": "Combat", "talent": "Improved Sinister Strike", "points": 2},
-        {"levels": "13", "tree": "Combat", "talent": "Lightning Reflexes", "points": 1},
-        {"levels": "14", "tree": "Combat", "talent": "Improved Eviscerate", "points": 1},
-        {"levels": "15-17", "tree": "Combat", "talent": "Precision", "points": 3},
-        {"levels": "18", "tree": "Combat", "talent": "Deflection", "points": 1},
-        {"levels": "19-20", "tree": "Combat", "talent": "Improved Eviscerate", "points": 2},
-        {"levels": "21-22", "tree": "Combat", "talent": "Endurance", "points": 2},
-        {"levels": "23-24", "tree": "Combat", "talent": "Deflection", "points": 2},
-        {"levels": "25", "tree": "Combat", "talent": "Flawless Execution", "points": 1},
-        {"levels": "26", "tree": "Combat", "talent": "Riposte", "points": 1},
-        {"levels": "27-29", "tree": "Combat", "talent": "Dual Wield Specialization", "points": 3},
-        {"levels": "30", "tree": "Combat", "talent": "Blade Flurry", "points": 1},
-        {"levels": "31-33", "tree": "Subtlety", "talent": "Master of Deception", "points": 3},
-        {"levels": "34-35", "tree": "Subtlety", "talent": "Opportunity", "points": 2},
-        {"levels": "36-38", "tree": "Subtlety", "talent": "Setup", "points": 3},
-        {"levels": "39-40", "tree": "Combat", "talent": "Dual Wield Specialization", "points": 2},
-        {"levels": "41-42", "tree": "Combat", "talent": "Hack and Slash", "points": 2},
-        {"levels": "43-44", "tree": "Combat", "talent": "Weapon Expertise", "points": 2},
-        {"levels": "45-49", "tree": "Assassination", "talent": "Malice", "points": 5},
-        {"levels": "50-51", "tree": "Assassination", "talent": "Murder", "points": 2},
-        {"levels": "52-53", "tree": "Assassination", "talent": "Remorseless Attacks", "points": 2},
-        {"levels": "54", "tree": "Assassination", "talent": "Improved Gouge", "points": 1},
-        {"levels": "55", "tree": "Assassination", "talent": "Relentless Strikes", "points": 1},
-        {"levels": "56-58", "tree": "Combat", "talent": "Aggression", "points": 3},
-        {"levels": "59", "tree": "Combat", "talent": "Adrenaline Rush", "points": 1},
-        {"levels": "60", "tree": "Combat", "talent": "Hack and Slash", "points": 1}
-      ]
-    },
-    {
       "id": "daggers-split-open-leveling",
       "name": "Daggers (split) — Leveling (open talent search)",
       "role": "dps",
@@ -1803,6 +1403,407 @@
       "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 23.58; subtlety-leveling 25.80. The search simulated 83,167 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Combat-Subtlety leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/rogue", "https://talentsforever.com/rogue/60/0253201-305033010011-3023003311013001-6"]
+    },
+    {
+      "id": "opt-combat-daggers-raid-leveling-st",
+      "name": "Optimizer — Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (leveling-st)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-daggers-raid` and profile `leveling-st`: score +36.2% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Assassination": [
+          ["Malice", 5],
+          ["Improved Gouge", 3],
+          ["Ruthlessness", 3],
+          ["Murder", 2],
+          ["Relentless Strikes", 1],
+          ["Lethality", 5],
+          ["Cold Blood", 1],
+          ["Mutilate", 1]
+        ],
+        "Combat": [
+          ["Lightning Reflexes", 5],
+          ["Puncturing Wounds", 3],
+          ["Precision", 3],
+          ["Deflection", 3],
+          ["Endurance", 2],
+          ["Riposte", 1],
+          ["Flawless Execution", 1],
+          ["Dual Wield Specialization", 2],
+          ["Hack and Slash", 5],
+          ["Aggression", 3]
+        ],
+        "Subtlety": [
+          ["Opportunity", 2]
+        ]
+      },
+      "core": [
+        {"talent": "Puncturing Wounds", "why": "Removing it costs 7.6 points of score in this model."},
+        {"talent": "Mutilate", "why": "Removing it costs 4.4 points of score in this model."},
+        {"talent": "Opportunity", "why": "Removing it costs 2.3 points of score in this model."},
+        {"talent": "Flawless Execution", "why": "Removing it costs 1.6 points of score in this model."},
+        {"talent": "Lethality", "why": "Removing it costs 1.5 points of score in this model."},
+        {"talent": "Malice", "why": "Removing it costs 1.4 points of score in this model."},
+        {"talent": "Ruthlessness", "why": "Removing it costs 1.4 points of score in this model."},
+        {"talent": "Relentless Strikes", "why": "Removing it costs 1.4 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: rogue/research/talents/forever/optimizer/combat-daggers-raid-leveling-st.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/rogue"],
+      "order": [
+        {"levels": "10-11", "tree": "Subtlety", "talent": "Opportunity", "points": 2},
+        {"levels": "12-16", "tree": "Combat", "talent": "Lightning Reflexes", "points": 5},
+        {"levels": "17-19", "tree": "Combat", "talent": "Puncturing Wounds", "points": 3},
+        {"levels": "20-22", "tree": "Combat", "talent": "Deflection", "points": 3},
+        {"levels": "23", "tree": "Combat", "talent": "Riposte", "points": 1},
+        {"levels": "24-26", "tree": "Combat", "talent": "Precision", "points": 3},
+        {"levels": "27", "tree": "Combat", "talent": "Flawless Execution", "points": 1},
+        {"levels": "28-32", "tree": "Assassination", "talent": "Malice", "points": 5},
+        {"levels": "33-35", "tree": "Assassination", "talent": "Ruthlessness", "points": 3},
+        {"levels": "36-37", "tree": "Assassination", "talent": "Murder", "points": 2},
+        {"levels": "38", "tree": "Assassination", "talent": "Relentless Strikes", "points": 1},
+        {"levels": "39-43", "tree": "Assassination", "talent": "Lethality", "points": 5},
+        {"levels": "44", "tree": "Assassination", "talent": "Cold Blood", "points": 1},
+        {"levels": "45-47", "tree": "Assassination", "talent": "Improved Gouge", "points": 3},
+        {"levels": "48", "tree": "Assassination", "talent": "Mutilate", "points": 1},
+        {"levels": "49-50", "tree": "Combat", "talent": "Endurance", "points": 2},
+        {"levels": "51-52", "tree": "Combat", "talent": "Dual Wield Specialization", "points": 2},
+        {"levels": "53-57", "tree": "Combat", "talent": "Hack and Slash", "points": 5},
+        {"levels": "58-60", "tree": "Combat", "talent": "Aggression", "points": 3}
+      ]
+    },
+    {
+      "id": "opt-combat-swords-raid-leveling-st",
+      "name": "Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (leveling-st)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-swords-raid` and profile `leveling-st`: score +31.9% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Assassination": [
+          ["Remorseless Attacks", 2],
+          ["Malice", 5],
+          ["Improved Gouge", 1],
+          ["Murder", 2],
+          ["Relentless Strikes", 1],
+          ["Lethality", 4],
+          ["Cold Blood", 1],
+          ["Improved Poisons", 5],
+          ["Vile Poisons", 5],
+          ["Vigor", 2],
+          ["Seal Fate", 5]
+        ],
+        "Combat": [
+          ["Improved Sinister Strike", 2],
+          ["Improved Eviscerate", 3],
+          ["Lightning Reflexes", 3],
+          ["Deflection", 3],
+          ["Precision", 3],
+          ["Riposte", 1],
+          ["Flawless Execution", 1]
+        ],
+        "Subtlety": [
+          ["Opportunity", 2]
+        ]
+      },
+      "core": [
+        {"talent": "Seal Fate", "why": "Removing it costs 3.3 points of score in this model."},
+        {"talent": "Riposte", "why": "Removing it costs 3.0 points of score in this model."},
+        {"talent": "Malice", "why": "Removing it costs 2.4 points of score in this model."},
+        {"talent": "Improved Poisons", "why": "Removing it costs 1.9 points of score in this model."},
+        {"talent": "Flawless Execution", "why": "Removing it costs 1.8 points of score in this model."},
+        {"talent": "Improved Sinister Strike", "why": "Removing it costs 1.8 points of score in this model."},
+        {"talent": "Precision", "why": "Removing it costs 1.8 points of score in this model."},
+        {"talent": "Relentless Strikes", "why": "Removing it costs 1.7 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: rogue/research/talents/forever/optimizer/combat-swords-raid-leveling-st.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/rogue"],
+      "order": [
+        {"levels": "10", "tree": "Combat", "talent": "Improved Sinister Strike", "points": 1},
+        {"levels": "11-12", "tree": "Assassination", "talent": "Remorseless Attacks", "points": 2},
+        {"levels": "13", "tree": "Combat", "talent": "Improved Sinister Strike", "points": 1},
+        {"levels": "14-16", "tree": "Combat", "talent": "Improved Eviscerate", "points": 3},
+        {"levels": "17", "tree": "Combat", "talent": "Deflection", "points": 1},
+        {"levels": "18-19", "tree": "Combat", "talent": "Precision", "points": 2},
+        {"levels": "20-21", "tree": "Combat", "talent": "Deflection", "points": 2},
+        {"levels": "22", "tree": "Combat", "talent": "Riposte", "points": 1},
+        {"levels": "23", "tree": "Combat", "talent": "Precision", "points": 1},
+        {"levels": "24-26", "tree": "Combat", "talent": "Lightning Reflexes", "points": 3},
+        {"levels": "27", "tree": "Combat", "talent": "Flawless Execution", "points": 1},
+        {"levels": "28-32", "tree": "Assassination", "talent": "Malice", "points": 5},
+        {"levels": "33-34", "tree": "Assassination", "talent": "Murder", "points": 2},
+        {"levels": "35", "tree": "Assassination", "talent": "Improved Gouge", "points": 1},
+        {"levels": "36", "tree": "Assassination", "talent": "Relentless Strikes", "points": 1},
+        {"levels": "37-38", "tree": "Subtlety", "talent": "Opportunity", "points": 2},
+        {"levels": "39-42", "tree": "Assassination", "talent": "Lethality", "points": 4},
+        {"levels": "43", "tree": "Assassination", "talent": "Cold Blood", "points": 1},
+        {"levels": "44-47", "tree": "Assassination", "talent": "Improved Poisons", "points": 4},
+        {"levels": "48-49", "tree": "Assassination", "talent": "Vigor", "points": 2},
+        {"levels": "50", "tree": "Assassination", "talent": "Improved Poisons", "points": 1},
+        {"levels": "51-52", "tree": "Assassination", "talent": "Vile Poisons", "points": 2},
+        {"levels": "53-57", "tree": "Assassination", "talent": "Seal Fate", "points": 5},
+        {"levels": "58-60", "tree": "Assassination", "talent": "Vile Poisons", "points": 3}
+      ]
+    },
+    {
+      "id": "opt-combat-swords-raid-solo-60",
+      "name": "Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (solo-60)",
+      "role": "dps",
+      "content": "solo",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-swords-raid` and profile `solo-60`: score +31.8% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Assassination": [
+          ["Remorseless Attacks", 2],
+          ["Malice", 5],
+          ["Improved Gouge", 1],
+          ["Murder", 2],
+          ["Relentless Strikes", 1],
+          ["Lethality", 4],
+          ["Cold Blood", 1],
+          ["Improved Poisons", 5],
+          ["Vile Poisons", 5],
+          ["Vigor", 2],
+          ["Seal Fate", 5]
+        ],
+        "Combat": [
+          ["Improved Sinister Strike", 2],
+          ["Improved Eviscerate", 3],
+          ["Lightning Reflexes", 3],
+          ["Deflection", 3],
+          ["Precision", 3],
+          ["Riposte", 1],
+          ["Flawless Execution", 1]
+        ],
+        "Subtlety": [
+          ["Opportunity", 2]
+        ]
+      },
+      "core": [
+        {"talent": "Seal Fate", "why": "Removing it costs 3.4 points of score in this model."},
+        {"talent": "Riposte", "why": "Removing it costs 3.0 points of score in this model."},
+        {"talent": "Malice", "why": "Removing it costs 2.0 points of score in this model."},
+        {"talent": "Flawless Execution", "why": "Removing it costs 1.9 points of score in this model."},
+        {"talent": "Improved Sinister Strike", "why": "Removing it costs 1.9 points of score in this model."},
+        {"talent": "Precision", "why": "Removing it costs 1.8 points of score in this model."},
+        {"talent": "Remorseless Attacks", "why": "Removing it costs 1.7 points of score in this model."},
+        {"talent": "Relentless Strikes", "why": "Removing it costs 1.7 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: rogue/research/talents/forever/optimizer/combat-swords-raid-solo-60.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/rogue"],
+      "order": [
+        {"levels": "10", "tree": "Combat", "talent": "Improved Sinister Strike", "points": 1},
+        {"levels": "11-12", "tree": "Assassination", "talent": "Remorseless Attacks", "points": 2},
+        {"levels": "13", "tree": "Combat", "talent": "Improved Sinister Strike", "points": 1},
+        {"levels": "14-16", "tree": "Combat", "talent": "Improved Eviscerate", "points": 3},
+        {"levels": "17", "tree": "Combat", "talent": "Deflection", "points": 1},
+        {"levels": "18-19", "tree": "Combat", "talent": "Precision", "points": 2},
+        {"levels": "20-21", "tree": "Combat", "talent": "Deflection", "points": 2},
+        {"levels": "22", "tree": "Combat", "talent": "Riposte", "points": 1},
+        {"levels": "23", "tree": "Combat", "talent": "Precision", "points": 1},
+        {"levels": "24-26", "tree": "Combat", "talent": "Lightning Reflexes", "points": 3},
+        {"levels": "27", "tree": "Combat", "talent": "Flawless Execution", "points": 1},
+        {"levels": "28-32", "tree": "Assassination", "talent": "Malice", "points": 5},
+        {"levels": "33-34", "tree": "Assassination", "talent": "Murder", "points": 2},
+        {"levels": "35", "tree": "Assassination", "talent": "Improved Gouge", "points": 1},
+        {"levels": "36", "tree": "Assassination", "talent": "Relentless Strikes", "points": 1},
+        {"levels": "37-38", "tree": "Subtlety", "talent": "Opportunity", "points": 2},
+        {"levels": "39-42", "tree": "Assassination", "talent": "Lethality", "points": 4},
+        {"levels": "43", "tree": "Assassination", "talent": "Cold Blood", "points": 1},
+        {"levels": "44-47", "tree": "Assassination", "talent": "Improved Poisons", "points": 4},
+        {"levels": "48-49", "tree": "Assassination", "talent": "Vigor", "points": 2},
+        {"levels": "50", "tree": "Assassination", "talent": "Improved Poisons", "points": 1},
+        {"levels": "51-52", "tree": "Assassination", "talent": "Vile Poisons", "points": 2},
+        {"levels": "53-57", "tree": "Assassination", "talent": "Seal Fate", "points": 5},
+        {"levels": "58-60", "tree": "Assassination", "talent": "Vile Poisons", "points": 3}
+      ]
+    },
+    {
+      "id": "opt-combat-daggers-raid-raid-dps",
+      "name": "Optimizer — Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-daggers-raid` and profile `raid-dps`: score +85.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Assassination": [
+          ["Malice", 5],
+          ["Improved Slice and Dice", 3],
+          ["Ruthlessness", 3],
+          ["Murder", 2],
+          ["Relentless Strikes", 1],
+          ["Improved Expose Armor", 2],
+          ["Lethality", 1]
+        ],
+        "Combat": [
+          ["Improved Eviscerate", 3],
+          ["Lightning Reflexes", 5],
+          ["Puncturing Wounds", 3],
+          ["Precision", 3],
+          ["Deflection", 1],
+          ["Dual Wield Specialization", 5],
+          ["Hack and Slash", 5],
+          ["Blade Flurry", 1],
+          ["Aggression", 3],
+          ["Weapon Expertise", 2],
+          ["Adrenaline Rush", 1]
+        ],
+        "Subtlety": [
+          ["Opportunity", 2]
+        ]
+      },
+      "core": [
+        {"talent": "Puncturing Wounds", "why": "Removing it costs 24.9 points of score in this model."},
+        {"talent": "Relentless Strikes", "why": "Removing it costs 12.7 points of score in this model."},
+        {"talent": "Improved Expose Armor", "why": "Removing it costs 9.4 points of score in this model."},
+        {"talent": "Improved Slice and Dice", "why": "Removing it costs 8.9 points of score in this model."},
+        {"talent": "Adrenaline Rush", "why": "Removing it costs 8.3 points of score in this model."},
+        {"talent": "Malice", "why": "Removing it costs 7.7 points of score in this model."},
+        {"talent": "Hack and Slash", "why": "Removing it costs 7.3 points of score in this model."},
+        {"talent": "Ruthlessness", "why": "Removing it costs 6.9 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: rogue/research/talents/forever/optimizer/combat-daggers-raid-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/rogue"]
+    },
+    {
+      "id": "opt-combat-swords-raid-raid-dps",
+      "name": "Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-swords-raid` and profile `raid-dps`: score +68.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Assassination": [
+          ["Malice", 5],
+          ["Improved Slice and Dice", 3],
+          ["Ruthlessness", 3],
+          ["Murder", 2],
+          ["Relentless Strikes", 1],
+          ["Lethality", 1],
+          ["Improved Poisons", 5]
+        ],
+        "Combat": [
+          ["Improved Sinister Strike", 2],
+          ["Improved Eviscerate", 3],
+          ["Lightning Reflexes", 5],
+          ["Precision", 3],
+          ["Deflection", 2],
+          ["Dual Wield Specialization", 5],
+          ["Hack and Slash", 4],
+          ["Blade Flurry", 1],
+          ["Weapon Expertise", 2],
+          ["Aggression", 3],
+          ["Adrenaline Rush", 1]
+        ],
+        "Subtlety": []
+      },
+      "core": [
+        {"talent": "Relentless Strikes", "why": "Removing it costs 12.2 points of score in this model."},
+        {"talent": "Improved Sinister Strike", "why": "Removing it costs 9.5 points of score in this model."},
+        {"talent": "Improved Slice and Dice", "why": "Removing it costs 9.0 points of score in this model."},
+        {"talent": "Ruthlessness", "why": "Removing it costs 7.7 points of score in this model."},
+        {"talent": "Malice", "why": "Removing it costs 7.6 points of score in this model."},
+        {"talent": "Adrenaline Rush", "why": "Removing it costs 7.1 points of score in this model."},
+        {"talent": "Dual Wield Specialization", "why": "Removing it costs 7.0 points of score in this model."},
+        {"talent": "Improved Poisons", "why": "Removing it costs 6.5 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: rogue/research/talents/forever/optimizer/combat-swords-raid-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/rogue"]
+    },
+    {
+      "id": "opt-combat-swords-raid-leveling-aoe",
+      "name": "Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (leveling-aoe)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-swords-raid` and profile `leveling-aoe`: score +49.0% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Assassination": [
+          ["Malice", 5],
+          ["Remorseless Attacks", 2],
+          ["Improved Gouge", 1],
+          ["Murder", 2],
+          ["Relentless Strikes", 1],
+          ["Lethality", 1]
+        ],
+        "Combat": [
+          ["Improved Sinister Strike", 2],
+          ["Lightning Reflexes", 1],
+          ["Improved Eviscerate", 3],
+          ["Deflection", 3],
+          ["Precision", 3],
+          ["Endurance", 2],
+          ["Riposte", 1],
+          ["Flawless Execution", 1],
+          ["Dual Wield Specialization", 4],
+          ["Blade Flurry", 1],
+          ["Hack and Slash", 4],
+          ["Weapon Expertise", 2],
+          ["Aggression", 3],
+          ["Adrenaline Rush", 1]
+        ],
+        "Subtlety": [
+          ["Master of Deception", 3],
+          ["Opportunity", 2],
+          ["Setup", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Setup", "why": "Removing it costs 4.9 points of score in this model."},
+        {"talent": "Blade Flurry", "why": "Removing it costs 4.0 points of score in this model."},
+        {"talent": "Improved Sinister Strike", "why": "Removing it costs 3.1 points of score in this model."},
+        {"talent": "Relentless Strikes", "why": "Removing it costs 2.7 points of score in this model."},
+        {"talent": "Deflection", "why": "Removing it costs 2.5 points of score in this model."},
+        {"talent": "Precision", "why": "Removing it costs 2.3 points of score in this model."},
+        {"talent": "Flawless Execution", "why": "Removing it costs 2.1 points of score in this model."},
+        {"talent": "Improved Eviscerate", "why": "Removing it costs 2.0 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Allocation and order taken from cand-aoe-r7 on 2026-10-19: an earlier optimizer round beat the last export in the fight lab (27.3s vs 27.8s per kill, level-weighted).", "Report: rogue/research/talents/forever/optimizer/combat-swords-raid-leveling-aoe.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/rogue"],
+      "order": [
+        {"levels": "10", "tree": "Combat", "talent": "Lightning Reflexes", "points": 1},
+        {"levels": "11-12", "tree": "Combat", "talent": "Improved Sinister Strike", "points": 2},
+        {"levels": "13-14", "tree": "Combat", "talent": "Improved Eviscerate", "points": 2},
+        {"levels": "15-17", "tree": "Combat", "talent": "Deflection", "points": 3},
+        {"levels": "18", "tree": "Combat", "talent": "Improved Eviscerate", "points": 1},
+        {"levels": "19", "tree": "Combat", "talent": "Precision", "points": 1},
+        {"levels": "20", "tree": "Combat", "talent": "Riposte", "points": 1},
+        {"levels": "21-22", "tree": "Combat", "talent": "Precision", "points": 2},
+        {"levels": "23-24", "tree": "Combat", "talent": "Endurance", "points": 2},
+        {"levels": "25", "tree": "Combat", "talent": "Flawless Execution", "points": 1},
+        {"levels": "26-29", "tree": "Combat", "talent": "Dual Wield Specialization", "points": 4},
+        {"levels": "30", "tree": "Combat", "talent": "Blade Flurry", "points": 1},
+        {"levels": "31-33", "tree": "Subtlety", "talent": "Master of Deception", "points": 3},
+        {"levels": "34-35", "tree": "Subtlety", "talent": "Opportunity", "points": 2},
+        {"levels": "36-38", "tree": "Subtlety", "talent": "Setup", "points": 3},
+        {"levels": "39-42", "tree": "Combat", "talent": "Hack and Slash", "points": 4},
+        {"levels": "43-44", "tree": "Combat", "talent": "Weapon Expertise", "points": 2},
+        {"levels": "45-47", "tree": "Combat", "talent": "Aggression", "points": 3},
+        {"levels": "48", "tree": "Combat", "talent": "Adrenaline Rush", "points": 1},
+        {"levels": "49-50", "tree": "Assassination", "talent": "Malice", "points": 2},
+        {"levels": "51", "tree": "Assassination", "talent": "Remorseless Attacks", "points": 1},
+        {"levels": "52", "tree": "Assassination", "talent": "Malice", "points": 1},
+        {"levels": "53", "tree": "Assassination", "talent": "Remorseless Attacks", "points": 1},
+        {"levels": "54", "tree": "Assassination", "talent": "Murder", "points": 1},
+        {"levels": "55", "tree": "Assassination", "talent": "Malice", "points": 1},
+        {"levels": "56", "tree": "Assassination", "talent": "Murder", "points": 1},
+        {"levels": "57", "tree": "Assassination", "talent": "Malice", "points": 1},
+        {"levels": "58", "tree": "Assassination", "talent": "Improved Gouge", "points": 1},
+        {"levels": "59", "tree": "Assassination", "talent": "Relentless Strikes", "points": 1},
+        {"levels": "60", "tree": "Assassination", "talent": "Lethality", "points": 1}
+      ]
     }
   ]
 }

@@ -1,5 +1,10 @@
 {
  "drink_below": 0.15,
+ "veto": {
+  "Shred": {
+   "off": true
+  }
+ },
  "class": "druid",
  "spec": "feral-cat-dps",
  "build": "leveling-feral",
@@ -11,7 +16,7 @@
   50,
   60
  ],
- "date": "2026-10-17",
+ "date": "2026-10-19",
  "fights": 600,
  "confirm": 3000,
  "changes": [
@@ -23,46 +28,57 @@
     null,
     0.15
    ],
-   "gain_seed1": 0.006990765506198038,
-   "gain_seed2": 0.009967649009828827
+   "gain_seed1": 0.007269206254845284,
+   "gain_seed2": 0.005030886694856962
+  },
+  {
+   "round": 2,
+   "change": "never cast Shred",
+   "rule": [
+    "off",
+    "Shred",
+    true
+   ],
+   "gain_seed1": 0.0031647161320311756,
+   "gain_seed2": 0.004024752771470963
   }
  ],
- "weighted_before": 30.99195170377546,
- "weighted_after": 30.6403416226996,
+ "weighted_before": 29.18375033780904,
+ "weighted_after": 28.903310717094907,
  "per_level": {
   "15": {
-   "before": 34.935839109928516,
-   "after": 34.935839109928516,
+   "before": 30.80563333353309,
+   "after": 30.80563333353309,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "20": {
-   "before": 22.863766666563947,
-   "after": 22.863766666563947,
+   "before": 22.106066666539792,
+   "after": 21.610899999867904,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 26.547800000023837,
-   "after": 26.547800000023837,
+   "before": 25.51353333332028,
+   "after": 25.089733333305936,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 30.406938838653673,
-   "after": 30.202564644436283,
+   "before": 29.01111026549155,
+   "after": 28.984086038086293,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 32.212988501697936,
-   "after": 31.570261209800268,
+   "before": 30.097048467742642,
+   "after": 29.80685769854697,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 34.3099286283293,
-   "after": 33.72184804386711,
+   "before": 32.32662758814582,
+   "after": 31.958516295417876,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

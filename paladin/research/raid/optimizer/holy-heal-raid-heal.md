@@ -11,7 +11,6 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 |---|---|---|---|---|
 | Reverence | Holy | 3 | +6.77% | manual |
 | Divine Favor | Holy | 4 | +6.17% | manual |
-| Champion of the Light | Retribution | 6 | +4.90% | manual |
 | Illumination | Holy | 4 | +4.80% | manual |
 | Light's Vigil | Holy | 7 | +4.60% | manual |
 | Healing Light | Holy | 2 | +2.92% | manual |
@@ -39,31 +38,33 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 | Precision | Protection | 2 | +0.00% | manual |
 | Anticipation | Protection | 2 | +0.00% | manual |
 | Improved Seal of Fury | Protection | 3 | +0.00% | manual |
+| Improved Righteous Fury | Protection | 3 | +0.00% | manual |
 
-## Optimized build: 23/0/28  score +101.88%  (dps x1.673, sustain x2.230, surv x1.000, utility +0.00%)
+## Optimized build: 31/7/13  score +94.63%  (dps x1.519, sustain x2.250, surv x1.000, utility +1.00%)
 
 ```
-  Holy: Divine Intellect 5, Healing Light 3, Spiritual Focus 2, Reverence 3, Purifying Power 2, Divine Favor 1, Illumination 5, Infusion of Light 2
-  Retribution: Benediction 5, Deflection 5, Holy Conduit 2, Conviction 5, Sanctified Judgement 3, Vindication 3, Seal of Command 1, Pursuit of Justice 1, Champion of the Light 3
+  Holy: Divine Intellect 5, Divine Strength 1, Healing Light 3, Spiritual Focus 2, Reverence 3, Purifying Power 2, Divine Favor 1, Illumination 5, Infusion of Light 2, Holy Shock 1, Holy Power 5, Light's Vigil 1
+  Protection: Toughness 5, Guardian's Favor 2
+  Retribution: Benediction 5, Deflection 5, Sanctified Judgement 3
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Light's Vigil | Holy 7 | 1/1 | +7.02% | no |
-| Holy Power | Holy 6 | 1/5 | +1.47% | no |
 | Swift Judgement | Protection 4 | 1/1 | +1.00% | no |
-| Guardian's Favor | Protection 2 | 1/2 | +0.50% | no |
 | Twist of Light | Retribution 7 | 1/1 | +0.40% | no |
 | Templar's Bulwark | Protection 5 | 1/1 | +0.01% | no |
 | Sacred Duty | Protection 3 | 1/2 | +0.00% | no |
-| Divine Strength | Holy 1 | 1/5 | +0.00% | yes |
+| Divine Strength | Holy 1 | 2/5 | +0.00% | yes |
 | Improved Seals | Holy 2 | 1/3 | +0.00% | yes |
 | Unyielding Faith | Holy 2 | 1/2 | +0.00% | yes |
 | Voice of Truth | Holy 3 | 1/1 | +0.00% | yes |
-| Divine Precision | Holy 5 | 1/3 | +0.00% | no |
+| Divine Precision | Holy 5 | 1/3 | +0.00% | yes |
 | Consecrated Ground | Holy 5 | 1/2 | +0.00% | yes |
-| Toughness | Protection 1 | 1/5 | +0.00% | yes |
 | Redoubt | Protection 1 | 1/5 | +0.00% | yes |
+| Precision | Protection 2 | 1/3 | +0.00% | yes |
+| Anticipation | Protection 2 | 1/5 | +0.00% | yes |
+| Improved Seal of Fury | Protection 3 | 1/1 | +0.00% | no |
+| Improved Righteous Fury | Protection 3 | 1/3 | +0.00% | no |
 

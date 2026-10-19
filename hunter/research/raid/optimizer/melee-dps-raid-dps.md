@@ -15,14 +15,15 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 | Lacerating Strikes | Survival | 7 | +5.13% | manual |
 | Lone Wolf | Marksmanship | 3 | +3.74% | manual |
 | Deadly Aspects | Beast Mastery | 1 | +1.73% | manual |
+| Predator's Edge | Survival | 4 | +1.69% | manual |
 | Bestial Discipline | Beast Mastery | 5 | +1.50% | manual |
-| Predator's Edge | Survival | 4 | +1.42% | manual |
+| Rapid Recuperation | Marksmanship | 5 | +1.50% | manual |
 | Careful Aim | Marksmanship | 2 | +1.20% | manual |
-| Lightning Reflexes | Survival | 6 | +1.05% | manual |
 | Bestial Wrath | Beast Mastery | 7 | +1.02% | manual |
 | Focused Fire | Beast Mastery | 2 | +1.00% | manual |
 | Surefooted | Survival | 3 | +0.94% | manual |
 | Improved Tracking | Survival | 1 | +0.86% | manual |
+| Lightning Reflexes | Survival | 6 | +0.70% | manual |
 | Lethal Attacks | Marksmanship | 1 | +0.70% | manual |
 | Efficiency | Marksmanship | 2 | +0.63% | manual |
 | Savage Strikes | Survival | 2 | +0.62% | manual |
@@ -33,15 +34,14 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 | Improved Mend Pet | Beast Mastery | 4 | +0.18% | manual |
 | Endurance Training | Beast Mastery | 1 | +0.09% | manual |
 | Ranged Weapon Specialization | Marksmanship | 6 | +0.06% | manual |
+| Intimidation | Beast Mastery | 5 | +0.00% | manual |
 | Survivalist | Survival | 2 | +0.00% | manual |
+| Hawk Eye | Marksmanship | 1 | +0.00% | manual |
+| Sniper Shot | Marksmanship | 7 | +0.00% | manual |
 | Improved Aspect of the Monkey | Beast Mastery | 2 | +0.00% | manual |
-| Pathfinding | Beast Mastery | 2 | +0.00% | manual |
-| Improved Revive Pet | Beast Mastery | 2 | +0.00% | manual |
-| Bestial Swiftness | Beast Mastery | 3 | +0.00% | manual |
-| Summon Hawk | Beast Mastery | 4 | +0.00% | manual |
 
-## Optimized build: 5/15/31  score +123.67%  (dps x2.055, sustain x1.604, surv x1.145, utility +0.00%)
-Absolute DPS index (character alone, no talents = 1.00): 2.146  — use this to compare models with different pet shares.
+## Optimized build: 5/15/31  score +126.05%  (dps x2.079, sustain x1.604, surv x1.130, utility +0.00%)
+Absolute DPS index (character alone, no talents = 1.00): 2.148  — use this to compare models with different pet shares.
 
 ```
   Beast Mastery: Deadly Aspects 5
@@ -54,18 +54,18 @@ Absolute DPS index (character alone, no talents = 1.00): 2.146  — use this to 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
 | Bestial Discipline | Beast Mastery 5 | 1/2 | +1.50% | no |
+| Rapid Recuperation | Marksmanship 5 | 1/2 | +1.50% | no |
 | Efficiency | Marksmanship 2 | 5/5 | +0.63% | yes |
-| Improved Stings | Marksmanship 2 | 1/3 | +0.54% | yes |
+| Improved Stings | Marksmanship 2 | 1/3 | +0.53% | yes |
 | Ranged Weapon Specialization | Marksmanship 6 | 1/5 | +0.09% | no |
-| Unleashed Fury | Beast Mastery 3 | 1/5 | +0.00% | no |
+| Intimidation | Beast Mastery 5 | 1/1 | +0.00% | no |
+| Hawk Eye | Marksmanship 1 | 1/3 | +0.00% | yes |
+| Sniper Shot | Marksmanship 7 | 1/1 | +0.00% | no |
 | Endurance Training | Beast Mastery 1 | 1/5 | +0.00% | yes |
-| Focused Fire | Beast Mastery 2 | 1/2 | +0.00% | yes |
 | Improved Aspect of the Monkey | Beast Mastery 2 | 1/3 | +0.00% | yes |
-| Pathfinding | Beast Mastery 2 | 1/2 | +0.00% | yes |
-| Improved Revive Pet | Beast Mastery 2 | 1/2 | +0.00% | yes |
-| Bestial Swiftness | Beast Mastery 3 | 1/1 | +0.00% | no |
-| Improved Mend Pet | Beast Mastery 4 | 1/2 | +0.00% | no |
-| Ferocity | Beast Mastery 4 | 1/5 | +0.00% | no |
-| Summon Hawk | Beast Mastery 4 | 1/1 | +0.00% | no |
 | Spirit Bond | Beast Mastery 5 | 1/2 | +0.00% | no |
+| Deflection | Survival 1 | 1/5 | +0.00% | yes |
+| Deterrence | Survival 3 | 1/1 | +0.00% | yes |
+| Counterattack | Survival 4 | 1/1 | +0.00% | no |
+| Unleashed Fury | Beast Mastery 3 | 1/5 | +0.00% | no |
 

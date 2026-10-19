@@ -1,0 +1,216 @@
+{
+ "id": "cand-aoe-r6",
+ "allocation": {
+  "Holy": [
+   [
+    "Divine Strength",
+    5
+   ],
+   [
+    "Improved Seals",
+    3
+   ]
+  ],
+  "Protection": [
+   [
+    "Toughness",
+    5
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Anticipation",
+    4
+   ],
+   [
+    "Improved Seal of Fury",
+    1
+   ],
+   [
+    "Sacred Duty",
+    2
+   ],
+   [
+    "Swift Judgement",
+    1
+   ],
+   [
+    "Improved Hammer of Justice",
+    1
+   ]
+  ],
+  "Retribution": [
+   [
+    "Deflection",
+    5
+   ],
+   [
+    "Conviction",
+    5
+   ],
+   [
+    "Improved Judgement",
+    2
+   ],
+   [
+    "Seal of Command",
+    1
+   ],
+   [
+    "Sanctified Judgement",
+    3
+   ],
+   [
+    "Pursuit of Justice",
+    1
+   ],
+   [
+    "Vindication",
+    2
+   ],
+   [
+    "Sacred Arbiter",
+    1
+   ],
+   [
+    "Vengeance",
+    3
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Retribution",
+   "talent": "Deflection",
+   "points": 5
+  },
+  {
+   "levels": "15-19",
+   "tree": "Retribution",
+   "talent": "Conviction",
+   "points": 5
+  },
+  {
+   "levels": "20",
+   "tree": "Retribution",
+   "talent": "Seal of Command",
+   "points": 1
+  },
+  {
+   "levels": "21-23",
+   "tree": "Retribution",
+   "talent": "Sanctified Judgement",
+   "points": 3
+  },
+  {
+   "levels": "24",
+   "tree": "Retribution",
+   "talent": "Improved Judgement",
+   "points": 1
+  },
+  {
+   "levels": "25",
+   "tree": "Retribution",
+   "talent": "Sacred Arbiter",
+   "points": 1
+  },
+  {
+   "levels": "26-30",
+   "tree": "Holy",
+   "talent": "Divine Strength",
+   "points": 5
+  },
+  {
+   "levels": "31-33",
+   "tree": "Holy",
+   "talent": "Improved Seals",
+   "points": 3
+  },
+  {
+   "levels": "34",
+   "tree": "Retribution",
+   "talent": "Improved Judgement",
+   "points": 1
+  },
+  {
+   "levels": "35-36",
+   "tree": "Retribution",
+   "talent": "Vindication",
+   "points": 2
+  },
+  {
+   "levels": "37",
+   "tree": "Retribution",
+   "talent": "Pursuit of Justice",
+   "points": 1
+  },
+  {
+   "levels": "38-40",
+   "tree": "Retribution",
+   "talent": "Vengeance",
+   "points": 3
+  },
+  {
+   "levels": "41-43",
+   "tree": "Retribution",
+   "talent": "Two-Handed Weapon Specialization",
+   "points": 3
+  },
+  {
+   "levels": "44-48",
+   "tree": "Protection",
+   "talent": "Toughness",
+   "points": 5
+  },
+  {
+   "levels": "49-51",
+   "tree": "Protection",
+   "talent": "Precision",
+   "points": 3
+  },
+  {
+   "levels": "52-53",
+   "tree": "Protection",
+   "talent": "Anticipation",
+   "points": 2
+  },
+  {
+   "levels": "54-55",
+   "tree": "Protection",
+   "talent": "Sacred Duty",
+   "points": 2
+  },
+  {
+   "levels": "56-57",
+   "tree": "Protection",
+   "talent": "Anticipation",
+   "points": 2
+  },
+  {
+   "levels": "58",
+   "tree": "Protection",
+   "talent": "Improved Seal of Fury",
+   "points": 1
+  },
+  {
+   "levels": "59",
+   "tree": "Protection",
+   "talent": "Swift Judgement",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Protection",
+   "talent": "Improved Hammer of Justice",
+   "points": 1
+  }
+ ],
+ "note": "Optimizer build saved by rebuild.py on 2026-10-19 (calibration round 6)"
+}
