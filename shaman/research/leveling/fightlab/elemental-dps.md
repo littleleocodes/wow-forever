@@ -10,46 +10,46 @@ Single-target leveling fights against normal mobs of your level with a slow two-
 
 | Level | Talents | Fight mean | median | p90 | Downtime/kill | Deaths/100 kills | Time/kill | Kills/hour | Mana/kill | Pushbacks/kill |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 20 | 11 | 12.2s | 12.2s | 16.0s | 7.8s | 0.0 | 28.0s | 129 | 269 | 2.42 |
-| 30 | 21 | 16.4s | 16.1s | 22.7s | 11.7s | 0.0 | 36.2s | 100 | 479 | 3.44 |
-| 40 | 31 | 15.8s | 15.4s | 19.6s | 14.7s | 0.0 | 38.6s | 93 | 802 | 2.96 |
-| 50 | 41 | 18.3s | 16.5s | 23.5s | 14.6s | 0.5 | 41.4s | 87 | 1161 | 3.10 |
-| 60 | 51 | 18.4s | 17.1s | 23.8s | 13.2s | 0.2 | 39.9s | 90 | 1523 | 3.35 |
+| 20 | 11 | 12.9s | 12.6s | 16.1s | 8.3s | 0.0 | 29.2s | 123 | 299 | 2.90 |
+| 30 | 21 | 15.4s | 15.6s | 19.2s | 12.7s | 0.0 | 36.1s | 100 | 575 | 2.78 |
+| 40 | 31 | 15.2s | 15.1s | 18.1s | 13.8s | 0.0 | 37.0s | 97 | 770 | 2.98 |
+| 50 | 41 | 16.1s | 15.2s | 20.1s | 14.1s | 0.1 | 38.3s | 94 | 1143 | 3.22 |
+| 60 | 51 | 16.9s | 16.1s | 21.1s | 13.0s | 0.1 | 37.9s | 95 | 1482 | 3.47 |
 
 ## Measured damage shares (vs. the spec model's assumed shares)
 
 | Level | Earth Shock | Flame Shock | Lava Burst | Lightning Bolt | Lightning Shield | Melee | Searing Totem | Windfury |
 |---|---|---|---|---|---|---|---|---|
-| 20 | 4% | 8% | 0% | 39% | 8% | 27% | 13% | 0% |
-| 30 | 7% | 8% | 0% | 34% | 9% | 22% | 11% | 10% |
-| 40 | 8% | 9% | 0% | 35% | 11% | 18% | 9% | 9% |
-| 50 | 11% | 6% | 0% | 36% | 12% | 18% | 9% | 8% |
-| 60 | 12% | 10% | 10% | 25% | 13% | 15% | 7% | 7% |
+| 20 | 7% | 9% | 0% | 45% | 9% | 20% | 10% | 0% |
+| 30 | 9% | 9% | 0% | 43% | 9% | 15% | 8% | 6% |
+| 40 | 9% | 9% | 0% | 46% | 13% | 10% | 7% | 5% |
+| 50 | 9% | 7% | 12% | 38% | 13% | 9% | 7% | 5% |
+| 60 | 11% | 11% | 11% | 34% | 14% | 9% | 6% | 4% |
 
 Spec model (`_reference/data/scorer/specs`) assumes: lightning_bolt 73%, chain_lightning 8%, earth_shock 0%, flame_shock 18%, fire_totem 0%, searing_totem 0%.
 
 ## Realized crit rates and player at each level
 
-- **Level 20**: 1169 health, 1214 mana, 46 Int, 46 Spirit, 56 Str, 55 Agi, 250 AP, melee crit 12.5%, 0 spell power, base spell crit 9.6%, armor 490 (Rockbiter Weapon, Lightning Shield); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Lightning Shield 25%, Searing Totem 43%, Lightning Bolt 9%, Melee 12%, Flame Shock 24%, Earth Shock 10%. Health after a fight 86%, mana 54%.
-- **Level 30**: 1788 health, 1716 mana, 63 Int, 66 Spirit, 68 Str, 66 Agi, 176 AP, melee crit 12.4%, 0 spell power, base spell crit 9.4%, armor 550 (Windfury Weapon, Lightning Shield); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Lightning Shield 27%, Searing Totem 60%, Lightning Bolt 9%, Melee 13%, Flame Shock 36%, Windfury 12%, Earth Shock 9%. Health after a fight 82%, mana 49%.
-- **Level 40**: 2347 health, 2046 mana, 68 Int, 88 Spirit, 133 Str, 62 Agi, 327 AP, melee crit 11.1%, 0 spell power, base spell crit 9.0%, armor 1382 (Windfury Weapon, Lightning Shield); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Lightning Shield 27%, Searing Totem 53%, Lightning Bolt 9%, Flame Shock 40%, Melee 11%, Earth Shock 8%, Windfury 13%. Health after a fight 83%, mana 41%.
-- **Level 50**: 2761 health, 2443 mana, 78 Int, 96 Spirit, 169 Str, 73 Agi, 418 AP, melee crit 11.1%, 0 spell power, base spell crit 8.8%, armor 1442 (Windfury Weapon, Lightning Shield); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Lightning Shield 28%, Searing Totem 56%, Lightning Bolt 9%, Flame Shock 42%, Melee 11%, Earth Shock 8%, Windfury 11%, Stoneclaw Totem 0%. Health after a fight 79%, mana 34%.
-- **Level 60**: 3415 health, 3170 mana, 110 Int, 109 Spirit, 156 Str, 82 Agi, 411 AP, melee crit 10.8%, 22 spell power, base spell crit 9.1%, armor 1824 (Windfury Weapon, Lightning Shield); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Lightning Shield 27%, Searing Totem 60%, Lightning Bolt 9%, Flame Shock 44%, Melee 12%, Lava Burst 9%, Windfury 12%, Earth Shock 9%, Stoneclaw Totem 0%. Health after a fight 78%, mana 32%.
+- **Level 20**: 1104 health, 1511 mana, 76 Int, 61 Spirit, 41 Str, 31 Agi, 220 AP, melee crit 5.0%, 0 spell power, base spell crit 6.2%, armor 274 (Rockbiter Weapon, Lightning Shield); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Lightning Shield 20%, Searing Totem 29%, Lightning Bolt 6%, Flame Shock 17%, Melee 5%, Earth Shock 6%. Health after a fight 85%, mana 46%.
+- **Level 30**: 1598 health, 2299 mana, 109 Int, 93 Spirit, 53 Str, 37 Agi, 147 AP, melee crit 6.9%, 5 spell power, base spell crit 8.1%, armor 376 (Windfury Weapon, Lightning Shield); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Lightning Shield 26%, Searing Totem 45%, Lightning Bolt 8%, Flame Shock 35%, Melee 7%, Earth Shock 7%, Windfury 8%. Health after a fight 81%, mana 42%.
+- **Level 40**: 1652 health, 3409 mana, 162 Int, 112 Spirit, 63 Str, 43 Agi, 186 AP, melee crit 9.8%, 26 spell power, base spell crit 11.5%, armor 384 (Windfury Weapon, Lightning Shield); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Lightning Shield 35%, Searing Totem 62%, Lightning Bolt 11%, Flame Shock 50%, Melee 10%, Earth Shock 13%, Windfury 11%. Health after a fight 78%, mana 43%.
+- **Level 50**: 2381 health, 3852 mana, 173 Int, 129 Spirit, 89 Str, 49 Agi, 258 AP, melee crit 9.6%, 52 spell power, base spell crit 10.8%, armor 568 (Windfury Weapon, Lightning Shield); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Lightning Shield 33%, Searing Totem 62%, Lightning Bolt 10%, Flame Shock 47%, Melee 10%, Lava Burst 10%, Earth Shock 10%, Windfury 10%, Stoneclaw Totem 0%. Health after a fight 77%, mana 38%.
+- **Level 60**: 2570 health, 4670 mana, 210 Int, 164 Spirit, 88 Str, 55 Agi, 276 AP, melee crit 9.5%, 76 spell power, base spell crit 10.8%, armor 861 (Windfury Weapon, Lightning Shield); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Lightning Shield 31%, Searing Totem 64%, Elemental Mastery 0%, Lightning Bolt 11%, Flame Shock 51%, Melee 10%, Windfury 9%, Lava Burst 11%, Earth Shock 9%, Stoneclaw Totem 0%. Health after a fight 74%, mana 36%.
 
 ## Other builds (same mobs, same seeds)
 
 | Level | Build | Time/kill | vs. main | Fight mean | Deaths/100 | Downtime/kill |
 |---|---|---|---|---|---|---|
-| 20 | opt-elemental-dps-leveling-st | 28.0s | - | 12.2s | 0.0 | 7.8s |
-| 20 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 22.8s | -18.5% | 11.9s | 0.0 | 3.0s |
-| 30 | opt-elemental-dps-leveling-st | 36.2s | - | 16.4s | 0.0 | 11.7s |
-| 30 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 28.4s | -21.5% | 12.5s | 0.0 | 7.8s |
-| 40 | opt-elemental-dps-leveling-st | 38.6s | - | 15.8s | 0.0 | 14.7s |
-| 40 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 32.4s | -16.0% | 14.1s | 0.0 | 10.3s |
-| 50 | opt-elemental-dps-leveling-st | 41.4s | - | 18.3s | 0.5 | 14.6s |
-| 50 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 34.4s | -17.0% | 15.8s | 0.0 | 10.6s |
-| 60 | opt-elemental-dps-leveling-st | 39.9s | - | 18.4s | 0.2 | 13.2s |
-| 60 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 36.5s | -8.7% | 18.1s | 0.0 | 10.3s |
+| 20 | opt-elemental-dps-leveling-st | 29.2s | - | 12.9s | 0.0 | 8.3s |
+| 20 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 22.8s | -22.1% | 11.7s | 0.0 | 3.0s |
+| 30 | opt-elemental-dps-leveling-st | 36.1s | - | 15.4s | 0.0 | 12.7s |
+| 30 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 27.5s | -23.7% | 12.2s | 0.0 | 7.3s |
+| 40 | opt-elemental-dps-leveling-st | 37.0s | - | 15.2s | 0.0 | 13.8s |
+| 40 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 31.0s | -16.2% | 13.9s | 0.0 | 9.1s |
+| 50 | opt-elemental-dps-leveling-st | 38.3s | - | 16.1s | 0.1 | 14.1s |
+| 50 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 33.8s | -11.6% | 15.5s | 0.0 | 10.3s |
+| 60 | opt-elemental-dps-leveling-st | 37.9s | - | 16.9s | 0.1 | 13.0s |
+| 60 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 35.1s | -7.3% | 17.5s | 0.0 | 9.6s |
 
 ## Talent values at level 30
 
@@ -57,15 +57,13 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Shamanistic Focus | 1 | +9.8% | -0.3% ± 0.4 | +9.8% | +4.4% | 0.0 |
-| Mindfulness | 3 | +5.9% | +1.7% ± 0.6 | +2.0% | +7.0% | 0.0 |
-| Tidal Focus | 5 | +3.6% | +4.3% ± 0.4 | +0.7% | +0.8% | 0.0 |
-| Thundering Strikes | 5 | +2.5% | +2.9% ± 0.3 | +0.5% | +1.9% | 0.0 |
-| Anticipation | 1 | +0.3% | +0.2% ± 0.3 | +0.3% | +0.3% | 0.0 |
-| Totemic Focus | 1 | +0.2% | -0.1% ± 0.2 | +0.2% | +0.0% | 0.0 |
-| Earth's Grasp | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.2% | 0.0 |
-| Guardian Totems | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.7% | 0.0 |
-| Improved Ghost Wolf | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +3.7% | 0.0 |
+| Mindfulness | 3 | +6.4% | +1.8% ± 0.6 | +2.1% | +5.7% | 0.0 |
+| Elemental Alacrity | 3 | +4.8% | +12.7% ± 0.6 | +1.6% | +4.1% | 0.0 |
+| Convection | 5 | +4.0% | +1.4% ± 0.6 | +0.8% | +3.4% | 0.0 |
+| Tidal Focus | 5 | +3.7% | +4.1% ± 0.5 | +0.7% | +3.8% | 0.0 |
+| Elemental Focus | 1 | +3.6% | +0.6% ± 0.6 | +3.6% | +2.9% | 0.0 |
+| Call of Flame | 2 | +1.5% | +1.5% ± 0.4 | +0.8% | +1.4% | 0.0 |
+| Thundering Strikes | 2 | +0.9% | +0.7% ± 0.4 | +0.5% | +0.7% | 0.0 |
 
 ## Talent values at level 60
 
@@ -73,25 +71,25 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Shamanistic Focus | 1 | +13.0% | +7.6% ± 1.6 | +13.0% | +2.9% | 0.5 |
-| Convection | 5 | +4.4% | +4.1% ± 1.6 | +0.9% | +2.8% | 0.4 |
-| Mindfulness | 3 | +4.3% | +5.0% ± 1.1 | +1.4% | +4.6% | 0.5 |
-| Call of Flame | 3 | +4.0% | +5.5% ± 0.8 | +1.3% | +2.7% | 0.3 |
-| Elemental Alacrity | 3 | +3.7% | +8.2% ± 1.5 | +1.2% | +2.7% | 0.3 |
-| Elemental Focus | 1 | +3.6% | +4.0% ± 1.6 | +3.6% | +2.3% | 0.2 |
-| Thundering Strikes | 5 | +3.4% | +5.2% ± 1.4 | +0.7% | +2.9% | 0.1 |
-| Elemental Fury | 5 | +2.9% | +4.9% ± 1.5 | +0.6% | +2.3% | 0.2 |
-| Concussion | 5 | +2.1% | +3.1% ± 0.7 | +0.4% | +1.5% | 0.3 |
-| Tidal Focus | 5 | +2.0% | +3.5% ± 1.3 | +0.4% | +0.7% | 0.1 |
-| Lava Burst | 1 | +1.7% | +3.7% ± 1.4 | +1.7% | +3.8% | 0.2 |
-| Lightning Overload | 3 | +1.6% | +3.5% ± 1.5 | +0.5% | +1.9% | 0.1 |
-| Eye of the Storm | 3 | +0.4% | +3.0% ± 1.3 | +0.1% | +0.8% | 0.1 |
-| Totemic Focus | 1 | +0.2% | +0.3% ± 0.3 | +0.2% | +0.0% | 0.2 |
-| Anticipation | 1 | +0.1% | -0.0% ± 0.4 | +0.1% | +0.4% | 0.2 |
-| Earth's Grasp | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.2% | 0.2 |
-| Earthbound | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.5% | 0.2 |
-| Guardian Totems | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.9% | 0.2 |
-| Improved Ghost Wolf | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +4.5% | 0.2 |
+| Shamanistic Focus | 1 | +10.9% | +5.2% ± 1.1 | +10.9% | +3.1% | 0.1 |
+| Mindfulness | 3 | +4.5% | +3.5% ± 1.3 | +1.5% | +4.9% | 0.1 |
+| Convection | 5 | +4.1% | +2.8% ± 1.2 | +0.8% | +2.9% | 0.1 |
+| Thundering Strikes | 5 | +3.8% | +4.4% ± 1.0 | +0.8% | +3.3% | 0.2 |
+| Tidal Focus | 5 | +3.8% | +4.8% ± 1.1 | +0.8% | +3.9% | 0.1 |
+| Call of Flame | 3 | +3.8% | +4.4% ± 1.1 | +1.3% | +2.1% | 0.2 |
+| Elemental Fury | 5 | +3.5% | +4.2% ± 1.1 | +0.7% | +3.5% | 0.1 |
+| Elemental Focus | 1 | +3.2% | +1.6% ± 1.1 | +3.2% | +2.5% | 0.0 |
+| Elemental Alacrity | 3 | +2.5% | +7.2% ± 0.9 | +0.8% | +4.6% | 0.1 |
+| Lightning Overload | 3 | +1.7% | +2.2% ± 0.9 | +0.6% | +2.2% | 0.1 |
+| Concussion | 5 | +1.7% | +2.0% ± 1.0 | +0.3% | +1.6% | 0.1 |
+| Lava Burst | 1 | +1.5% | +2.8% ± 0.9 | +1.5% | +4.5% | 0.1 |
+| Eye of the Storm | 3 | +0.9% | +3.5% ± 1.0 | +0.3% | +0.7% | 0.1 |
+| Elemental Mastery | 1 | +0.3% | +0.8% ± 0.6 | +0.3% | +0.4% | 0.1 |
+| Anticipation | 1 | +0.3% | +0.2% ± 0.5 | +0.3% | +0.4% | 0.1 |
+| Earth's Grasp | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.2% | 0.1 |
+| Earthbound | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.5% | 0.1 |
+| Guardian Totems | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +1.0% | 0.1 |
+| Improved Ghost Wolf | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +4.9% | 0.1 |
 
 ## Assumptions (edit `tables.py` to change them)
 
@@ -103,7 +101,7 @@ Unverified for WoW: Forever (creature stats are server side; the Wowhead Forever
 - Caster mobs: the creature database share by level (Share of normal outdoor mob spawns whose unit class is mage or paladin, by level, from the Classic 1.12 creature database
 (5% at 1-5, 14% at 10, 12-23% from 15 to 55, 9% at 60; `mob_stats.json`).); a caster stands at up to 30 yd and casts a bolt every 3.5 s for 1.6x its melee swing (spell damage, no armor) until interrupted or stunned, then runs in and melees until the lockout ends; Median health of a mage-class mob (Classic 1.12 creature database: 75-90% of the all-mob median).
 - Runners: 0% of pulls flee at 20% health for 5 s (roots and stuns hold them; `RUNNER_SHARE`, 0 = not simulated, see sensitivity.md).
-- Spell miss: Classic spell miss vs a mob `level_diff` levels above the caster: 4% at +0, 5% at +1, 6% at +2, 17% at +3. Partial resists cost 2.5% on average.
+- Spell miss: Classic spell miss vs a mob `level_diff` levels above the caster: 4% at +0, 5% at +1, 6% at +2, 17% at +3. Partial resists cost 0.0% on average.
 - Spell crit: 0.91% base plus Intellect / (Intellect per 1% spell crit for mages: the client's PlayerExpectedStat by level (59.5 at 60; 2026-10-09), else 59.5 x L / 60.)
 - Pushback: 0.5s for the first melee hit taken during a cast, 0.5s per further hit; a direct hit breaks a freeze with 20% chance.
 - Gear: Gear stats by level from the Classic 1.12 item database (`gear_stats.json`, built by gear_stats.py): every slot holds a typical
@@ -112,7 +110,7 @@ with required level 2-7 levels below the character (a mage at 40: Int 87, Spirit
 armor 2,369 in plate). Spell power and healing come from the items' on-equip spells (spell_template auras 13 / 135; a
 school-specific bonus counts half). Classic items: unverified for WoW: Forever. GEAR_STAT_MULT scales the stats (sensitivity). Wand: Wand dps by level from the Classic 1.12 item database (median green wand with required level 2-7 below the character:
 11 at 10, 17 at 20, 26 at 30, 33 at 40, 41 at 50, 55 at 60; blues 25 / 33 / 38 / 51 / 63 from 20).
-- Regen: Vanilla mage/priest mana regen per 2-second tick while not casting: 13 + Spirit / 4. Drinking: Conjured water, Forever beta tooltips (Wowhead Forever items 5350/2288/2136/3772/8077/8078/8079, read 2026-09-26) at the
+- Regen: Vanilla mage/priest mana regen per 2-second tick while not casting: 13 + Spirit / 4. Drinking: Conjured water (mana per second while drinking; unverified against the 70425 items, audit of 2026-10-18 row 73), Forever beta tooltips (Wowhead Forever items 5350/2288/2136/3772/8077/8078/8079, read 2026-09-26) at the
 Conjure Water rank levels 4/10/20/30/40/50/60: 145/18s, 420/21s, 803/24s, 1293/27s, 1915/30s, 2821/30s, 4038/30s mana.
 - Between fights: loot 2s, travel 6s, drink below 35% mana, eat below 65% health, a death costs 90s.
 - Not modelled yet: runners, adds, Strength of Earth / Stoneskin / Grace of Air totems (5-minute totems left behind between mobs), Frost Shock kiting, Chain Lightning on single targets, Ghost Wolf travel, gear upgrades within a level bracket, where a Fire totem stands (Fire Nova and Magma Totem reach the mobs around you).

@@ -4,30 +4,38 @@
 
 | Assumption | Level | opt-combat-swords-raid-leveling-st time/kill | leveling-combat-swords time/kill | Best build | opt-combat-swords-raid-leveling-st: −Dual Wield Specialization | opt-combat-swords-raid-leveling-st: −Malice | opt-combat-swords-raid-leveling-st: −Improved Eviscerate |
 |---|---|---|---|---|---|---|---|
-| baseline | 30 | 22.0s (deaths 0.0/100) | 22.5s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
-| baseline | 60 | 27.4s (deaths 0.0/100) | 27.9s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +3% |
-| root breaks on 10% of hits | 30 | 22.0s (deaths 0.0/100) | 22.5s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
-| root breaks on 10% of hits | 60 | 27.4s (deaths 0.0/100) | 27.9s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +3% |
-| root breaks on 40% of hits | 30 | 22.0s (deaths 0.0/100) | 22.5s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
-| root breaks on 40% of hits | 60 | 27.4s (deaths 0.0/100) | 27.9s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +3% |
-| mobs have 20% less health | 30 | 18.7s (deaths 0.0/100) | 19.3s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
-| mobs have 20% less health | 60 | 23.6s (deaths 0.0/100) | 23.9s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +2% |
-| mobs have 20% more health | 30 | 25.0s (deaths 0.0/100) | 25.6s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
-| mobs have 20% more health | 60 | 32.1s (deaths 0.0/100) | 32.6s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +4% |
-| mobs hit 30% harder | 30 | 22.7s (deaths 0.0/100) | 23.3s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
-| mobs hit 30% harder | 60 | 28.1s (deaths 0.0/100) | 28.6s (deaths 0.1/100) | opt-combat-swords-raid-leveling-st | - | +4% | +3% |
-| pushback 1.0 s per hit | 30 | 22.0s (deaths 0.0/100) | 22.5s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
-| pushback 1.0 s per hit | 60 | 27.4s (deaths 0.0/100) | 27.9s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +3% |
-| weapons 20% better (blues) | 30 | 21.0s (deaths 0.0/100) | 21.5s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
-| weapons 20% better (blues) | 60 | 26.5s (deaths 0.0/100) | 27.0s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +3% |
-| dungeon blues (item database) | 30 | 20.1s (deaths 0.0/100) | 20.6s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
-| dungeon blues (item database) | 60 | 26.4s (deaths 0.0/100) | 26.8s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +3% |
-| gear stats 20% better | 30 | 21.4s (deaths 0.0/100) | 21.9s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
-| gear stats 20% better | 60 | 26.6s (deaths 0.0/100) | 27.1s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +3% |
-| no caster mobs | 30 | 22.2s (deaths 0.0/100) | 22.8s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
-| no caster mobs | 60 | 27.8s (deaths 0.0/100) | 28.3s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +4% |
-| 30% caster mobs | 30 | 21.8s (deaths 0.0/100) | 22.3s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
-| 30% caster mobs | 60 | 26.4s (deaths 0.0/100) | 26.9s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +3% |
-| 20% of mobs run at 20% health | 30 | 22.1s (deaths 0.0/100) | 22.7s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
-| 20% of mobs run at 20% health | 60 | 27.6s (deaths 0.0/100) | 28.2s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +4% |
+| baseline | 30 | 21.9s (deaths 0.0/100) | 22.5s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
+| baseline | 60 | 27.1s (deaths 0.0/100) | 27.7s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +3% |
+| root breaks on 10% of hits | 30 | 21.9s (deaths 0.0/100) | 22.5s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
+| root breaks on 10% of hits | 60 | 27.1s (deaths 0.0/100) | 27.7s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +3% |
+| root breaks on 40% of hits | 30 | 21.9s (deaths 0.0/100) | 22.5s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
+| root breaks on 40% of hits | 60 | 27.1s (deaths 0.0/100) | 27.7s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +3% |
+| mobs have 20% less health | 30 | 18.6s (deaths 0.0/100) | 19.3s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
+| mobs have 20% less health | 60 | 23.3s (deaths 0.0/100) | 23.6s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +3% |
+| mobs have 20% more health | 30 | 24.8s (deaths 0.0/100) | 25.5s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
+| mobs have 20% more health | 60 | 31.8s (deaths 0.0/100) | 32.3s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +4% |
+| mobs hit 30% harder | 30 | 22.6s (deaths 0.0/100) | 23.3s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
+| mobs hit 30% harder | 60 | 27.7s (deaths 0.0/100) | 28.3s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +4% |
+| pushback 1.0 s per hit | 30 | 21.9s (deaths 0.0/100) | 22.5s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
+| pushback 1.0 s per hit | 60 | 27.1s (deaths 0.0/100) | 27.7s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +3% |
+| weapons 20% better (blues) | 30 | 20.8s (deaths 0.0/100) | 21.4s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
+| weapons 20% better (blues) | 60 | 26.2s (deaths 0.0/100) | 26.7s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +3% |
+| dungeon blues (item database) | 30 | 20.0s (deaths 0.0/100) | 20.5s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
+| dungeon blues (item database) | 60 | 26.1s (deaths 0.0/100) | 26.6s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +3% |
+| gear stats 20% better | 30 | 21.3s (deaths 0.0/100) | 21.8s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
+| gear stats 20% better | 60 | 26.2s (deaths 0.0/100) | 26.7s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +3% |
+| no caster mobs | 30 | 22.1s (deaths 0.0/100) | 22.7s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
+| no caster mobs | 60 | 27.6s (deaths 0.0/100) | 28.1s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +3% |
+| 30% caster mobs | 30 | 21.6s (deaths 0.0/100) | 22.2s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
+| 30% caster mobs | 60 | 26.2s (deaths 0.0/100) | 26.7s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +3% |
+| 20% of mobs run at 20% health | 30 | 22.0s (deaths 0.0/100) | 22.6s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
+| 20% of mobs run at 20% health | 60 | 27.4s (deaths 0.0/100) | 27.9s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +4% |
+| 2.5% partial resists (the assumption before 2026-10-18) | 30 | 21.9s (deaths 0.0/100) | 22.5s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
+| 2.5% partial resists (the assumption before 2026-10-18) | 60 | 27.1s (deaths 0.0/100) | 27.7s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +3% |
+| channel pushback 0.5 s per hit (before 2026-10-18) | 30 | 21.9s (deaths 0.0/100) | 22.5s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
+| channel pushback 0.5 s per hit (before 2026-10-18) | 60 | 27.1s (deaths 0.0/100) | 27.7s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +3% |
+| mob health by the client's ExpectedStat (1.35x at 20, 1.13x at 60) | 30 | 25.4s (deaths 0.0/100) | 26.1s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
+| mob health by the client's ExpectedStat (1.35x at 20, 1.13x at 60) | 60 | 29.9s (deaths 0.0/100) | 30.5s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +4% |
+| every rank at its level-60 amount (no rank level scaling, before 2026-10-18) | 30 | 21.9s (deaths 0.0/100) | 22.5s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +2% | +1% |
+| every rank at its level-60 amount (no rank level scaling, before 2026-10-18) | 60 | 27.1s (deaths 0.0/100) | 27.7s (deaths 0.0/100) | opt-combat-swords-raid-leveling-st | - | +4% | +3% |
 

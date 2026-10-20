@@ -17,7 +17,7 @@
     ]
   },
   "Elemental Devastation": {
-    "note": "+3%/rank melee crit for 10s after an offensive spell crit: Enhancement shocks every 6s at ~15% spell crit -> ~40% uptime -> +1.2%/rank melee crit. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 0.4% time per kill in the simulator (scorer said 1.9% on the same scale); leveling-st/solo-60 values scaled x0.25 to match (0.4%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 1.7% DPS in the simulator (scorer said 1.1% on the same scale); already within tolerance, raid effects split off unchanged (1.0%). Other modes unchanged.",
+    "note": "+3%/rank melee crit for 10s after an offensive spell crit: Enhancement shocks every 6s at ~15% spell crit -> ~40% uptime -> +1.2%/rank melee crit. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 1.7% DPS in the simulator (scorer said 1.1% on the same scale); already within tolerance, raid effects split off unchanged (1.0%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 0.3% time per kill in the simulator (scorer said 0.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.1%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs -0.7% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (0.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -49,14 +49,6 @@
         "values": [0.012, 0.024, 0.036, 0.048, 0.06],
         "modes": ["leveling-aoe"],
         "specs": ["resto-heal", "elemental-dps"]
-      },
-      {
-        "channel": "crit",
-        "scope": ["type:melee"],
-        "per_rank": 0.000455,
-        "values": [0.000455, 0.00091, 0.001366, 0.001821, 0.002276],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["enhancement-dps"]
       },
       {
         "channel": "crit",
@@ -69,15 +61,23 @@
       {
         "channel": "crit",
         "scope": ["type:melee"],
-        "per_rank": 0.002978,
-        "values": [0.002978, 0.005955, 0.008933, 0.01191, 0.014888],
+        "per_rank": 0.000455,
+        "values": [0.000455, 0.00091, 0.001366, 0.001821, 0.002276],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
         "modes": ["leveling-aoe"],
         "specs": ["enhancement-dps"]
       }
     ]
   },
   "Elemental Focus": {
-    "note": "10% Clearcasting after any damage spell (next damage spell free): ~10% of damage-spell mana. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 3.9% time per kill in the simulator (scorer said 3.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.3%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 2.1% DPS in the simulator (scorer said 1.3% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged.",
+    "note": "10% Clearcasting after any damage spell (next damage spell free): ~10% of damage-spell mana. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 2.1% DPS in the simulator (scorer said 1.3% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 1.3% time per kill in the simulator (scorer said 0.0% on the same scale); re-seeded from its tooltip (an earlier fit had left its values at zero), already within tolerance, leveling-st/solo-60 effects split off unchanged (0.8%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 12.8% time per kill in the simulator (scorer said 1.3% on the same scale); leveling-aoe values scaled x1.00, the cap on effect size stops short of the target (1.3%). Other modes unchanged. Fight lab calibration [elemental-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 3.5% time per kill in the simulator (scorer said 3.6% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "mana_cost",
@@ -105,13 +105,6 @@
         "values": [0.1],
         "modes": ["raid", "leveling-aoe", "heal", "tank"],
         "specs": ["resto-heal"]
-      },
-      {
-        "channel": "mana_cost",
-        "scope": ["dmgspell"],
-        "values": [0.0],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["enhancement-dps"]
       },
       {
         "channel": "mana_cost",
@@ -130,7 +123,14 @@
       {
         "channel": "mana_cost",
         "scope": ["dmgspell"],
-        "values": [0.0],
+        "values": [0.1],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["dmgspell"],
+        "values": [1.5],
         "modes": ["leveling-aoe"],
         "specs": ["enhancement-dps"]
       },
@@ -144,7 +144,7 @@
     ]
   },
   "Eye of the Storm": {
-    "note": "-23%/rank pushback on Lightning Bolt/Chain Lightning/Lava Burst: only matters when being hit (leveling). 2026-09-27 audit: pushback only hits cast Lightning Bolts: Enhancement's bolts are pull shots or instant Maelstrom casts. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 0.8% time per kill in the simulator (scorer said 0.5% on the same scale); leveling-st/solo-60 values scaled x1.76 to match (0.8%). Other modes unchanged.",
+    "note": "-23%/rank pushback on Lightning Bolt/Chain Lightning/Lava Burst: only matters when being hit (leveling). 2026-09-27 audit: pushback only hits cast Lightning Bolts: Enhancement's bolts are pull shots or instant Maelstrom casts. Fight lab calibration [elemental-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 0.7% time per kill in the simulator (scorer said 0.9% on the same scale); leveling-st/solo-60 values scaled x0.77 to match (0.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -165,15 +165,15 @@
       {
         "channel": "dmg",
         "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Lava Burst"],
-        "per_rank": 0.005273,
+        "per_rank": 0.004062,
         "modes": ["leveling-st", "solo-60"],
         "specs": ["elemental-dps"],
-        "values": [0.005273, 0.010545, 0.015819, 0.021092, 0.026365]
+        "values": [0.004062, 0.008124, 0.012187, 0.01625, 0.020312]
       }
     ]
   },
   "Lightning Overload": {
-    "note": "Beta curve 3/7/10% chance for a free half-damage second Lightning Bolt/Chain Lightning: +1.5/3.5/5% on those spells. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, elemental-dps, training dummy): removing it costs 2.8% DPS in the simulator (scorer said 2.9% on the same scale); already within tolerance, raid effects split off unchanged (2.9%). Other modes unchanged. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 1.6% time per kill in the simulator (scorer said 2.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.9%). Other modes unchanged.",
+    "note": "Beta curve 3/7/10% chance for a free half-damage second Lightning Bolt/Chain Lightning: +1.5/3.5/5% on those spells. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, elemental-dps, training dummy): removing it costs 2.8% DPS in the simulator (scorer said 2.9% on the same scale); already within tolerance, raid effects split off unchanged (2.9%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 3.4% time per kill in the simulator (scorer said 7.0% on the same scale); leveling-aoe values scaled x0.52 to match (3.5%). Other modes unchanged. Fight lab calibration [elemental-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 1.7% time per kill in the simulator (scorer said 2.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -186,14 +186,21 @@
         "channel": "dmg",
         "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
         "values": [0.015, 0.035, 0.05],
-        "modes": ["leveling-aoe", "heal", "tank"]
+        "modes": ["heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
+        "values": [0.015, 0.035, 0.05],
+        "modes": ["leveling-aoe"],
+        "specs": ["resto-heal", "elemental-dps"]
       },
       {
         "channel": "dmg",
         "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
         "values": [0.015, 0.035, 0.05],
         "modes": ["leveling-st", "solo-60"],
-        "specs": ["resto-heal", "enhancement-dps"]
+        "specs": ["resto-heal"]
       },
       {
         "channel": "dmg",
@@ -201,6 +208,20 @@
         "values": [0.010577, 0.02468, 0.035257],
         "modes": ["raid"],
         "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
+        "values": [0.015, 0.035, 0.05],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
+        "values": [0.170076, 0.396843, 0.566919],
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
       },
       {
         "channel": "dmg",
@@ -329,7 +350,7 @@
     ]
   },
   "Call of Flame": {
-    "note": "+5%/rank Fire Totems, Flame Shock, Fire Nova and Lava Burst damage (parser dropped Flame Shock). Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 2.3% DPS in the simulator (scorer said 2.7% on the same scale); already within tolerance, raid effects split off unchanged (3.0%). Other modes unchanged. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 2.6% time per kill in the simulator (scorer said 2.7% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.8%). Other modes unchanged.",
+    "note": "+5%/rank Fire Totems, Flame Shock, Fire Nova and Lava Burst damage (parser dropped Flame Shock). Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 2.3% DPS in the simulator (scorer said 2.7% on the same scale); already within tolerance, raid effects split off unchanged (3.0%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 0.7% time per kill in the simulator (scorer said 0.6% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.7%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 30.4% time per kill in the simulator (scorer said 31.7% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (31.9%). Other modes unchanged. Fight lab calibration [elemental-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 3.0% time per kill in the simulator (scorer said 2.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -365,14 +386,6 @@
       {
         "channel": "dmg",
         "scope": ["ability:Fire Totems", "ability:Flame Shock", "ability:Fire Nova", "ability:Lava Burst"],
-        "per_rank": 0.038537,
-        "values": [0.038537, 0.077075, 0.115612, 0.15415, 0.192687],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["enhancement-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["ability:Fire Totems", "ability:Flame Shock", "ability:Fire Nova", "ability:Lava Burst"],
         "per_rank": 0.091489,
         "values": [0.091489, 0.182977, 0.274466, 0.365953, 0.457442],
         "modes": ["raid"],
@@ -389,8 +402,16 @@
       {
         "channel": "dmg",
         "scope": ["ability:Fire Totems", "ability:Flame Shock", "ability:Fire Nova", "ability:Lava Burst"],
-        "per_rank": 0.097365,
-        "values": [0.097365, 0.194731, 0.292096, 0.389462, 0.486827],
+        "per_rank": 0.038537,
+        "values": [0.038537, 0.077075, 0.115612, 0.15415, 0.192687],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Fire Totems", "ability:Flame Shock", "ability:Fire Nova", "ability:Lava Burst"],
+        "per_rank": 0.383828,
+        "values": [0.383828, 0.767659, 1.151485, 1.535318, 1.919145],
         "modes": ["leveling-aoe"],
         "specs": ["enhancement-dps"]
       },
@@ -405,7 +426,7 @@
     ]
   },
   "Thundering Strikes": {
-    "note": "+1%/rank crit with all spells and attacks. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 3.2% time per kill in the simulator (scorer said 4.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.4%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 5.1% DPS in the simulator (scorer said 4.7% on the same scale); already within tolerance, raid effects split off unchanged (4.7%). Other modes unchanged.",
+    "note": "+1%/rank crit with all spells and attacks. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 5.1% DPS in the simulator (scorer said 4.7% on the same scale); already within tolerance, raid effects split off unchanged (4.7%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 3.7% time per kill in the simulator (scorer said 3.4% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.4%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 10.2% time per kill in the simulator (scorer said 13.4% on the same scale); leveling-aoe values scaled x0.76 to match (9.5%). Other modes unchanged. Fight lab calibration [elemental-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 3.0% time per kill in the simulator (scorer said 2.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -422,14 +443,6 @@
         "values": [0.01, 0.02, 0.03, 0.04, 0.05],
         "modes": ["leveling-aoe", "heal", "tank"],
         "specs": ["elemental-dps"]
-      },
-      {
-        "channel": "crit",
-        "scope": ["type:melee", "type:spell"],
-        "per_rank": 0.010887,
-        "values": [0.010887, 0.021773, 0.03266, 0.043547, 0.054434],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["enhancement-dps"]
       },
       {
         "channel": "crit",
@@ -457,8 +470,16 @@
       {
         "channel": "crit",
         "scope": ["type:melee", "type:spell"],
-        "per_rank": 0.018923,
-        "values": [0.018923, 0.037844, 0.056767, 0.075689, 0.09461],
+        "per_rank": 0.010887,
+        "values": [0.010887, 0.021773, 0.03266, 0.043547, 0.054434],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee", "type:spell"],
+        "per_rank": 0.023119,
+        "values": [0.023119, 0.046234, 0.069353, 0.09247, 0.115586],
         "modes": ["leveling-aoe"],
         "specs": ["enhancement-dps"]
       },
@@ -473,7 +494,7 @@
     ]
   },
   "Mental Dexterity": {
-    "note": "Beta text: attack power equal to 33%/rank of Intellect (100% at 3/3; the demo read 33% at 3/3). ~150 Intellect -> +50 AP per rank on ~700 AP = ~+5%/rank melee damage; encoded as ap_from_int. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 4.8% time per kill in the simulator (scorer said 6.7% on the same scale); leveling-st/solo-60 values scaled x0.72 to match (4.8%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 5.7% DPS in the simulator (scorer said 5.6% on the same scale); already within tolerance, raid effects split off unchanged (5.6%). Other modes unchanged.",
+    "note": "Beta text: attack power equal to 33%/rank of Intellect (100% at 3/3; the demo read 33% at 3/3). ~150 Intellect -> +50 AP per rank on ~700 AP = ~+5%/rank melee damage; encoded as ap_from_int. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 5.7% DPS in the simulator (scorer said 5.6% on the same scale); already within tolerance, raid effects split off unchanged (5.6%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 4.7% time per kill in the simulator (scorer said 5.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (5.1%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 4.7% time per kill in the simulator (scorer said 4.8% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (4.8%). Other modes unchanged.",
     "effects": [
       {
         "channel": "ap_from_int",
@@ -502,17 +523,17 @@
       {
         "channel": "ap_from_int",
         "scope": ["all"],
-        "per_rank": 0.194429,
-        "values": [0.194429, 0.388859, 0.583286, 0.777716, 0.972145],
-        "modes": ["leveling-st", "solo-60"],
+        "per_rank": 0.206652,
+        "values": [0.206652, 0.413305, 0.619957, 0.826611, 1.033265],
+        "modes": ["raid"],
         "specs": ["enhancement-dps"]
       },
       {
         "channel": "ap_from_int",
         "scope": ["all"],
-        "per_rank": 0.206652,
-        "values": [0.206652, 0.413305, 0.619957, 0.826611, 1.033265],
-        "modes": ["raid"],
+        "per_rank": 0.194429,
+        "values": [0.194429, 0.388859, 0.583286, 0.777716, 0.972145],
+        "modes": ["leveling-st", "solo-60"],
         "specs": ["enhancement-dps"]
       },
       {
@@ -526,7 +547,7 @@
     ]
   },
   "Improved Lightning Shield": {
-    "note": "+5%/rank Lightning Shield orb damage. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 0.4% time per kill in the simulator (scorer said 0.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.2%). Other modes unchanged.",
+    "note": "+5%/rank Lightning Shield orb damage. Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 1.3% time per kill in the simulator (scorer said 1.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.3%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 2.0% time per kill in the simulator (scorer said 3.0% on the same scale); leveling-aoe values scaled x0.66 to match (2.1%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -578,15 +599,15 @@
       {
         "channel": "dmg",
         "scope": ["ability:Lightning Shield"],
-        "per_rank": 0.05,
-        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "per_rank": 0.157314,
+        "values": [0.157314, 0.314629, 0.471943, 0.629258, 0.786573],
         "modes": ["leveling-aoe"],
         "specs": ["enhancement-dps"]
       }
     ]
   },
   "Elemental Weapons": {
-    "note": "Windfury Weapon +13.3%/rank (40% at 3/3), Rockbiter AP +6.7%/rank, Flametongue/Frostbrand +5%/rank. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 2.0% time per kill in the simulator (scorer said 2.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.0%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 0.9% DPS in the simulator (scorer said 0.0% on the same scale); already within tolerance, raid effects split off unchanged (0.0%). Other modes unchanged.",
+    "note": "Windfury Weapon +13.3%/rank (40% at 3/3), Rockbiter AP +6.7%/rank, Flametongue/Frostbrand +5%/rank. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 2.0% time per kill in the simulator (scorer said 2.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.0%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 0.9% DPS in the simulator (scorer said 0.0% on the same scale); already within tolerance, raid effects split off unchanged (0.0%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 1.8% time per kill in the simulator (scorer said 1.6% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (1.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -671,23 +692,23 @@
       {
         "channel": "dmg",
         "scope": ["ability:Windfury Weapon"],
-        "per_rank": 0.033738,
-        "values": [0.033738, 0.067477, 0.101216, 0.134953, 0.168693],
+        "per_rank": 0.044481,
+        "values": [0.044481, 0.088962, 0.133442, 0.177923, 0.22241],
         "modes": ["leveling-aoe"],
         "specs": ["enhancement-dps"]
       },
       {
         "channel": "dmg",
         "scope": ["ability:Rockbiter Weapon"],
-        "per_rank": 0.016996,
-        "values": [0.016996, 0.033993, 0.050988, 0.067984, 0.08498],
+        "per_rank": 0.022408,
+        "values": [0.022408, 0.044816, 0.067224, 0.089632, 0.11204],
         "modes": ["leveling-aoe"],
         "specs": ["enhancement-dps"]
       }
     ]
   },
   "Anticipation": {
-    "note": "+2%/rank dodge (6% at 3/3). Fight lab calibration (2026-10-15, levels 30,60): removing it costs 0.5% time per kill in the simulator (scorer said 0.4% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.4%). Other modes unchanged.",
+    "note": "+2%/rank dodge (6% at 3/3). Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 0.3% time per kill in the simulator (scorer said 0.6% on the same scale); leveling-st/solo-60 values scaled x0.40 to match (0.3%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 3.0% time per kill in the simulator (scorer said 2.3% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (2.3%). Other modes unchanged. Fight lab calibration [elemental-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 0.3% time per kill in the simulator (scorer said 0.4% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "surv",
@@ -715,16 +736,16 @@
       {
         "channel": "surv",
         "scope": ["all"],
-        "per_rank": 0.02,
-        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "per_rank": 0.007986,
+        "values": [0.007986, 0.015972, 0.023958, 0.031943, 0.039929],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["enhancement-dps"]
       },
       {
         "channel": "surv",
         "scope": ["all"],
-        "per_rank": 0.024596,
-        "values": [0.024596, 0.049193, 0.07379, 0.098389, 0.122986],
+        "per_rank": 0.018896,
+        "values": [0.018896, 0.037792, 0.056688, 0.075567, 0.094463],
         "modes": ["leveling-aoe"],
         "specs": ["enhancement-dps"]
       },
@@ -739,7 +760,7 @@
     ]
   },
   "Flurry": {
-    "note": "+5%/rank attack speed for 3 swings after a melee crit (25% at 5/5, Classic 30%). Slow two-hander at ~30% raid crit: ~66% of swings hasted -> 3.3/6.6/10/13/16.5% white haste; leveling crit ~13%: ~35% -> 1.7/3.5/5/7/9%. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 4.6% time per kill in the simulator (scorer said 5.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (4.8%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 8.3% DPS in the simulator (scorer said 6.8% on the same scale); raid values scaled x1.31 to match (8.3%). Other modes unchanged.",
+    "note": "+5%/rank attack speed for 3 swings after a melee crit (25% at 5/5, Classic 30%). Slow two-hander at ~30% raid crit: ~66% of swings hasted -> 3.3/6.6/10/13/16.5% white haste; leveling crit ~13%: ~35% -> 1.7/3.5/5/7/9%. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 8.3% DPS in the simulator (scorer said 6.8% on the same scale); raid values scaled x1.31 to match (8.3%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 1.8% time per kill in the simulator (scorer said 2.9% on the same scale); leveling-st/solo-60 values scaled x0.62 to match (1.8%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 3.4% time per kill in the simulator (scorer said 5.2% on the same scale); leveling-aoe values scaled x0.61 to match (3.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "haste",
@@ -765,13 +786,6 @@
       {
         "channel": "haste",
         "scope": ["white"],
-        "values": [0.015024, 0.030932, 0.044187, 0.061862, 0.079537],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["enhancement-dps"]
-      },
-      {
-        "channel": "haste",
-        "scope": ["white"],
         "values": [0.045043, 0.090085, 0.136495, 0.177443, 0.225214],
         "modes": ["raid"],
         "specs": ["enhancement-dps"]
@@ -779,14 +793,21 @@
       {
         "channel": "haste",
         "scope": ["white"],
-        "values": [0.019355, 0.039846, 0.056922, 0.079692, 0.102459],
+        "values": [0.009247, 0.019038, 0.027196, 0.038075, 0.048953],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["white"],
+        "values": [0.018615, 0.038322, 0.054745, 0.076644, 0.098539],
         "modes": ["leveling-aoe"],
         "specs": ["enhancement-dps"]
       }
     ]
   },
   "Stormstrike": {
-    "note": "Beta text: instant weapon strike every 8s (+25% main-hand swings) and +20% on the NEXT Lightning Bolt, Chain Lightning or Earth Shock within 12s (one charge; the demo read +20% Nature for 12s). With Earth Shock every 6-8s nearly every shock is buffed; Maelstrom Lightning Bolts get it about half the time. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 18.2% DPS in the simulator (scorer said 30.7% on the same scale); raid values scaled x0.25 to match (18.0%). Other modes unchanged.",
+    "note": "Beta text: instant weapon strike every 8s (+25% main-hand swings) and +20% on the NEXT Lightning Bolt, Chain Lightning or Earth Shock within 12s (one charge; the demo read +20% Nature for 12s). With Earth Shock every 6-8s nearly every shock is buffed; Maelstrom Lightning Bolts get it about half the time. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 18.2% DPS in the simulator (scorer said 30.7% on the same scale); raid values scaled x0.25 to match (18.0%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 8.3% time per kill in the simulator (scorer said 11.1% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (11.2%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs -6.6% time per kill in the simulator (scorer said 4.1% on the same scale); leveling-aoe values scaled x0.00 to match (4.3%). Other modes unchanged. Fight lab calibration [elemental-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -881,13 +902,6 @@
       },
       {
         "channel": "dmg",
-        "scope": ["type:melee"],
-        "values": [0.0],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["enhancement-dps"]
-      },
-      {
-        "channel": "dmg",
         "scope": ["mainhand"],
         "values": [0.062526],
         "modes": ["raid"],
@@ -910,7 +924,14 @@
       {
         "channel": "dmg",
         "scope": ["type:melee"],
-        "values": [0.266388],
+        "values": [0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.0],
         "modes": ["leveling-aoe"],
         "specs": ["enhancement-dps"]
       },
@@ -924,7 +945,7 @@
     ]
   },
   "Spirit Weapons": {
-    "note": "Parry (~5% avoidance) and -30% threat without Rockbiter. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 1.5% time per kill in the simulator (scorer said 4.6% on the same scale); leveling-st/solo-60 values scaled x0.26 to match (1.5%). Other modes unchanged.",
+    "note": "Parry (~5% avoidance) and -30% threat without Rockbiter. Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs -0.4% time per kill in the simulator (scorer said 0.6% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (0.0%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 1.5% time per kill in the simulator (scorer said 1.4% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (1.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "utility",
@@ -956,28 +977,21 @@
       {
         "channel": "surv",
         "scope": ["all"],
-        "values": [0.04],
+        "values": [0.0],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["enhancement-dps"]
       },
       {
-        "channel": "utility",
-        "scope": ["mode:raid"],
-        "values": [0.004735],
-        "specs": ["enhancement-dps"],
-        "modes": ["leveling-aoe"]
-      },
-      {
         "channel": "surv",
         "scope": ["all"],
-        "values": [0.038186],
+        "values": [0.04],
         "modes": ["leveling-aoe"],
         "specs": ["enhancement-dps"]
       }
     ]
   },
   "Mental Quickness": {
-    "note": "Beta text: spell damage and healing from 15%/rank of Intellect (30% at 2/2; the demo read 15% at 2/2): ~+22 spell power per rank on shocks/Lightning Shield -> ~+3%/rank spell damage. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 2.2% time per kill in the simulator (scorer said 2.7% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.8%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 2.7% DPS in the simulator (scorer said 3.2% on the same scale); already within tolerance, raid effects split off unchanged (3.2%). Other modes unchanged.",
+    "note": "Beta text: spell damage and healing from 15%/rank of Intellect (30% at 2/2; the demo read 15% at 2/2): ~+22 spell power per rank on shocks/Lightning Shield -> ~+3%/rank spell damage. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 2.7% DPS in the simulator (scorer said 3.2% on the same scale); already within tolerance, raid effects split off unchanged (3.2%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 1.4% time per kill in the simulator (scorer said 2.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.0%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 5.6% time per kill in the simulator (scorer said 7.8% on the same scale); leveling-aoe values scaled x0.74 to match (5.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1006,14 +1020,6 @@
       {
         "channel": "dmg",
         "scope": ["type:spell"],
-        "per_rank": 0.03,
-        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["enhancement-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["type:spell"],
         "per_rank": 0.046415,
         "values": [0.046415, 0.092831, 0.139247, 0.185662, 0.232077],
         "modes": ["raid"],
@@ -1030,8 +1036,16 @@
       {
         "channel": "dmg",
         "scope": ["type:spell"],
-        "per_rank": 0.034175,
-        "values": [0.034175, 0.06835, 0.102529, 0.136704, 0.170879],
+        "per_rank": 0.03,
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "per_rank": 0.037548,
+        "values": [0.037548, 0.075096, 0.112648, 0.150196, 0.187744],
         "modes": ["leveling-aoe"],
         "specs": ["enhancement-dps"]
       }
@@ -1125,7 +1139,7 @@
     ]
   },
   "Maelstrom Weapon": {
-    "note": "Melee hits stack -20% Lightning Bolt cast time/mana (5 stacks = instant): at 5/5 roughly one instant Lightning Bolt every ~10s -> the Lightning Bolt share grows ~2.5x for Enhancement. Fight lab calibration (2026-10-15, levels 40,60): removing it costs -1.2% time per kill in the simulator (scorer said 0.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.1%). Other modes unchanged. Audit 2026-10-18: the mana half scored nothing: the models had no `mana_share` for enh-lb; enhancement-dps has one since (0.2, Lightning Bolt's share of its mana) (row 47).",
+    "note": "Melee hits stack -20% Lightning Bolt cast time/mana (5 stacks = instant): at 5/5 roughly one instant Lightning Bolt every ~10s -> the Lightning Bolt share grows ~2.5x for Enhancement. Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 3.9% time per kill in the simulator (scorer said 0.0% on the same scale); leveling-st/solo-60 values scaled x10.00, the cap on effect size stops short of the target (0.4%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 7.9% time per kill in the simulator (scorer said 0.4% on the same scale); leveling-aoe values scaled x1.00, the cap on effect size stops short of the target (0.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1173,21 +1187,6 @@
         "specs": ["resto-heal", "elemental-dps"]
       },
       {
-        "channel": "dmg",
-        "scope": ["enh-lb"],
-        "values": [0.019998, 0.049995, 0.079992, 0.109989, 0.149985],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["enhancement-dps"]
-      },
-      {
-        "channel": "mana_cost",
-        "scope": ["enh-lb"],
-        "per_rank": 0.004,
-        "values": [0.004, 0.007999, 0.011999, 0.015998, 0.019998],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["enhancement-dps"]
-      },
-      {
         "channel": "utility",
         "scope": ["mode:pvp"],
         "per_rank": 0.003,
@@ -1213,6 +1212,21 @@
         "channel": "dmg",
         "scope": ["enh-lb"],
         "values": [0.2, 0.5, 0.8, 1.1, 1.5],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["enh-lb"],
+        "per_rank": 0.040004,
+        "values": [0.040004, 0.079998, 0.120002, 0.159996, 0.2],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["enh-lb"],
+        "values": [0.2, 0.5, 0.8, 1.1, 1.5],
         "modes": ["leveling-aoe"],
         "specs": ["enhancement-dps"]
       },
@@ -1227,7 +1241,7 @@
     ]
   },
   "Rage of the Farseer": {
-    "note": "Build 70009: +30% attack speed only (the demo's spell-casting speed is gone) for 25s every 3 min (13.9% uptime): ~+4% melee haste. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 4.5% time per kill in the simulator (scorer said 3.5% on the same scale); leveling-st/solo-60 values scaled x1.36 to match (4.5%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 2.2% DPS in the simulator (scorer said 1.5% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged.",
+    "note": "Build 70009: +30% attack speed only (the demo's spell-casting speed is gone) for 25s every 3 min (13.9% uptime): ~+4% melee haste. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 2.2% DPS in the simulator (scorer said 1.5% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 1.7% time per kill in the simulator (scorer said 1.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.4%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 2.1% time per kill in the simulator (scorer said 1.5% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (1.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "haste",
@@ -1260,13 +1274,6 @@
       {
         "channel": "haste",
         "scope": ["type:melee"],
-        "values": [0.027682],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["enhancement-dps"]
-      },
-      {
-        "channel": "haste",
-        "scope": ["type:melee"],
         "values": [0.031249],
         "modes": ["raid"],
         "specs": ["enhancement-dps"]
@@ -1274,7 +1281,14 @@
       {
         "channel": "haste",
         "scope": ["type:melee"],
-        "values": [0.08202],
+        "values": [0.027682],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["type:melee"],
+        "values": [0.041225],
         "modes": ["leveling-aoe"],
         "specs": ["enhancement-dps"]
       }
@@ -1323,7 +1337,7 @@
     ]
   },
   "Water Shield": {
-    "note": "3 globes, 2% max mana each when hit or on a crit heal (one every few seconds): a raid healer at 18% crit gets ~4 globes/min = ~8% max mana per minute -> ~+18% mana budget over a fight; leveling (hit often) ~+12%; raid DPS rarely hit ~+2%. Fight lab calibration (2026-09-28, levels 30,60): removing it costs -1.6% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Healer lab calibration (2026-09-30, resto-heal): removing it costs 7.0% healing capacity in the lab (scorer said 6.5% on the same scale); already within tolerance, heal effects split off unchanged (6.5%). Other modes unchanged. Audit 2026-10-18: 70425 text: any spell crit (not only heals) or a hit taken expends a globe, one every few seconds (3.5 s in both labs): an Elemental shaman crits every few casts and is hit while leveling -> unfitted leveling copy 3% -> 8% sustain (row 46). Seed for the next fits.",
+    "note": "3 globes, 2% max mana each when hit or on a crit heal (one every few seconds): a raid healer at 18% crit gets ~4 globes/min = ~8% max mana per minute -> ~+18% mana budget over a fight; leveling (hit often) ~+12%; raid DPS rarely hit ~+2%. Healer lab calibration (2026-09-30, resto-heal): removing it costs 7.0% healing capacity in the lab (scorer said 6.5% on the same scale); already within tolerance, heal effects split off unchanged (6.5%). Other modes unchanged. Audit 2026-10-18: 70425 text: any spell crit (not only heals) or a hit taken expends a globe, one every few seconds (3.5 s in both labs): an Elemental shaman crits every few casts and is hit while leveling -> unfitted leveling copy 3% -> 8% sustain (row 46). Seed for the next fits. Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs -1.5% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "sustain",
@@ -1363,13 +1377,6 @@
         "channel": "sustain",
         "scope": ["all"],
         "values": [0.0],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["enhancement-dps"]
-      },
-      {
-        "channel": "sustain",
-        "scope": ["all"],
-        "values": [0.0],
         "modes": ["raid"],
         "specs": ["elemental-dps"]
       },
@@ -1379,11 +1386,18 @@
         "values": [0.307604],
         "modes": ["heal"],
         "specs": ["resto-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
       }
     ]
   },
   "Totemic Focus": {
-    "note": "-5%/rank mana on totems and totem spells. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 0.3% time per kill in the simulator (scorer said 0.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.1%). Other modes unchanged. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 0.6% DPS in the simulator (scorer said 0.3% on the same scale); already within tolerance, raid effects split off unchanged (0.4%). Other modes unchanged.",
+    "note": "-5%/rank mana on totems and totem spells. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 0.6% DPS in the simulator (scorer said 0.3% on the same scale); already within tolerance, raid effects split off unchanged (0.4%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 0.6% time per kill in the simulator (scorer said 1.2% on the same scale); leveling-st/solo-60 values scaled x0.55 to match (0.7%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 2.6% time per kill in the simulator (scorer said 0.7% on the same scale); leveling-aoe values scaled x1.00, the cap on effect size stops short of the target (0.7%). Other modes unchanged. Fight lab calibration [elemental-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 0.7% time per kill in the simulator (scorer said 0.2% on the same scale); leveling-st/solo-60 values scaled x3.59 to match (0.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "mana_cost",
@@ -1412,14 +1426,6 @@
       {
         "channel": "mana_cost",
         "scope": ["ability:Totems"],
-        "per_rank": 0.20319,
-        "values": [0.20319, 0.406381, 0.609571, 0.812762, 1.015952],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["enhancement-dps"]
-      },
-      {
-        "channel": "mana_cost",
-        "scope": ["ability:Totems"],
         "per_rank": 0.0125,
         "values": [0.0125, 0.025, 0.0375, 0.05, 0.0625],
         "modes": ["raid"],
@@ -1435,16 +1441,23 @@
       {
         "channel": "mana_cost",
         "scope": ["ability:Totems"],
-        "per_rank": 0.0,
-        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "per_rank": 0.110944,
+        "values": [0.110944, 0.22189, 0.332834, 0.443779, 0.554723],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Totems"],
+        "values": [0.299987, 0.599996, 0.899983, 1.199991, 1.5],
         "modes": ["leveling-aoe"],
         "specs": ["enhancement-dps"]
       },
       {
         "channel": "mana_cost",
         "scope": ["ability:Totems"],
-        "per_rank": 0.049702,
-        "values": [0.049702, 0.099404, 0.149106, 0.198808, 0.24851],
+        "per_rank": 0.178376,
+        "values": [0.178376, 0.356751, 0.535127, 0.713503, 0.891879],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["elemental-dps"]
       }
@@ -1811,7 +1824,7 @@
     ]
   },
   "Improved Reincarnation": {
-    "note": "Shorter self-res cooldown: leveling deaths. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 0.2% time per kill in the simulator (scorer said 0.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.3%). Other modes unchanged.",
+    "note": "Shorter self-res cooldown: leveling deaths. Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 0.2% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 2.2% time per kill in the simulator (scorer said 2.3% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (2.3%). Other modes unchanged. Fight lab calibration [elemental-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 0.1% time per kill in the simulator (scorer said 0.3% on the same scale); leveling-st/solo-60 values scaled x0.20 to match (0.1%). Other modes unchanged.",
     "effects": [
       {
         "channel": "utility",
@@ -1885,39 +1898,39 @@
       {
         "channel": "utility",
         "scope": ["mode:leveling"],
-        "per_rank": 0.001024,
-        "values": [0.001024, 0.002049, 0.003073, 0.004097, 0.005121],
+        "per_rank": 0.002971,
+        "values": [0.002971, 0.005944, 0.008915, 0.011885, 0.014856],
         "modes": ["leveling-aoe"],
         "specs": ["enhancement-dps"]
       },
       {
         "channel": "surv",
         "scope": ["surv:health"],
-        "per_rank": 0.006828,
-        "values": [0.006828, 0.013657, 0.020485, 0.027313, 0.034142],
+        "per_rank": 0.019808,
+        "values": [0.019808, 0.039619, 0.059426, 0.079234, 0.099045],
         "modes": ["leveling-aoe"],
         "specs": ["enhancement-dps"]
       },
       {
         "channel": "utility",
         "scope": ["mode:leveling"],
-        "per_rank": 0.001169,
-        "values": [0.001169, 0.002337, 0.003506, 0.004674, 0.005843],
+        "per_rank": 0.000233,
+        "values": [0.000233, 0.000467, 0.0007, 0.000934, 0.001167],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["elemental-dps"]
       },
       {
         "channel": "surv",
         "scope": ["surv:health"],
-        "per_rank": 0.00779,
-        "values": [0.00779, 0.01558, 0.02337, 0.03116, 0.03895],
+        "per_rank": 0.001556,
+        "values": [0.001556, 0.003112, 0.004668, 0.006224, 0.00778],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["elemental-dps"]
       }
     ]
   },
   "Elemental Fury": {
-    "note": "+20%/rank crit damage bonus on Fire/Frost/Nature damage spells and fire totems (healing crits are unaffected). Fight lab calibration (2026-10-15, levels 30,60): removing it costs 2.5% time per kill in the simulator (scorer said 11.5% on the same scale); leveling-st/solo-60 values scaled x0.22 to match (2.3%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, elemental-dps, training dummy): removing it costs 7.8% DPS in the simulator (scorer said 8.7% on the same scale); already within tolerance, raid effects split off unchanged (8.7%). Other modes unchanged.",
+    "note": "+20%/rank crit damage bonus on Fire/Frost/Nature damage spells and fire totems (healing crits are unaffected). Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, elemental-dps, training dummy): removing it costs 7.8% DPS in the simulator (scorer said 8.7% on the same scale); already within tolerance, raid effects split off unchanged (8.7%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 1.4% time per kill in the simulator (scorer said 2.7% on the same scale); leveling-st/solo-60 values scaled x0.53 to match (1.4%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 7.7% time per kill in the simulator (scorer said 11.8% on the same scale); leveling-aoe values scaled x0.80 to match (7.7%). Other modes unchanged. Fight lab calibration [elemental-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 3.5% time per kill in the simulator (scorer said 2.3% on the same scale); leveling-st/solo-60 values scaled x1.52 to match (3.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit_bonus",
@@ -1931,20 +1944,27 @@
         "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Shock", "ability:Lava Burst", "ability:Fire Totems", "ability:Fire Nova", "ability:Lightning Shield"],
         "values": [0.2, 0.4, 0.6, 0.8, 1.0],
         "modes": ["raid", "leveling-aoe", "heal", "tank"],
-        "specs": ["resto-heal", "enhancement-dps"]
+        "specs": ["resto-heal"]
       },
       {
         "channel": "crit_bonus",
         "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Shock", "ability:Lava Burst", "ability:Fire Totems", "ability:Fire Nova", "ability:Lightning Shield"],
         "values": [0.2, 0.4, 0.6, 0.8, 1.0],
-        "modes": ["leveling-aoe", "heal", "tank"]
-      },
-      {
-        "channel": "crit_bonus",
-        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Shock", "ability:Lava Burst", "ability:Fire Totems", "ability:Fire Nova", "ability:Lightning Shield"],
-        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
-        "modes": ["leveling-st", "solo-60"],
+        "modes": ["raid", "heal", "tank"],
         "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Shock", "ability:Lava Burst", "ability:Fire Totems", "ability:Fire Nova", "ability:Lightning Shield"],
+        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
+        "modes": ["heal", "tank"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Shock", "ability:Lava Burst", "ability:Fire Totems", "ability:Fire Nova", "ability:Lightning Shield"],
+        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
+        "modes": ["leveling-aoe"],
+        "specs": ["resto-heal", "elemental-dps"]
       },
       {
         "channel": "crit_bonus",
@@ -1956,14 +1976,28 @@
       {
         "channel": "crit_bonus",
         "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Shock", "ability:Lava Burst", "ability:Fire Totems", "ability:Fire Nova", "ability:Lightning Shield"],
-        "values": [0.055575, 0.111149, 0.166724, 0.222298, 0.277873],
+        "values": [0.105863, 0.211726, 0.317589, 0.423452, 0.529314],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Shock", "ability:Lava Burst", "ability:Fire Totems", "ability:Fire Nova", "ability:Lightning Shield"],
+        "values": [0.239561, 0.479122, 0.718683, 0.958245, 1.197806],
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Shock", "ability:Lava Burst", "ability:Fire Totems", "ability:Fire Nova", "ability:Lightning Shield"],
+        "values": [0.084431, 0.168861, 0.253292, 0.337722, 0.422153],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["elemental-dps"]
       }
     ]
   },
   "Shamanistic Focus": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 11.8% time per kill in the simulator (scorer said 3.3% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (2.9%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 10.1% DPS in the simulator (scorer said 11.8% on the same scale); already within tolerance, raid effects split off unchanged (11.9%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 10.1% DPS in the simulator (scorer said 11.8% on the same scale); already within tolerance, raid effects split off unchanged (11.9%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 12.5% time per kill in the simulator (scorer said 14.8% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (15.2%). Other modes unchanged. Fight lab calibration [elemental-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 11.0% time per kill in the simulator (scorer said 3.2% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (3.1%). Other modes unchanged.",
     "effects": [
       {
         "channel": "mana_cost",
@@ -2000,14 +2034,6 @@
       {
         "channel": "mana_cost",
         "scope": ["ability:Shock", "ability:Lightning Shield"],
-        "values": [1.5],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["enhancement-dps"]
-      },
-      {
-        "channel": "mana_cost",
-        "scope": ["ability:Shock", "ability:Lightning Shield"],
         "values": [0.568387],
         "source": "parsed",
         "modes": ["raid"],
@@ -2035,12 +2061,20 @@
         "values": [1.5],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Shock", "ability:Lightning Shield"],
+        "values": [1.5],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
         "specs": ["elemental-dps"]
       }
     ]
   },
   "Concussion": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 1.0% time per kill in the simulator (scorer said 2.3% on the same scale); leveling-st/solo-60 values scaled x0.43 to match (1.0%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 0.8% DPS in the simulator (scorer said 0.6% on the same scale); already within tolerance, raid effects split off unchanged (0.6%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 0.8% DPS in the simulator (scorer said 0.6% on the same scale); already within tolerance, raid effects split off unchanged (0.6%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 1.0% time per kill in the simulator (scorer said 1.3% on the same scale); leveling-st/solo-60 values scaled x0.74 to match (0.9%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (0.0%). Other modes unchanged. Fight lab calibration [elemental-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 1.9% time per kill in the simulator (scorer said 1.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -2078,14 +2112,6 @@
         "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Earth Shock"],
         "values": [0.01, 0.02, 0.03, 0.04, 0.05],
         "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["enhancement-dps"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Earth Shock"],
-        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
-        "source": "parsed",
         "modes": ["raid"],
         "specs": ["elemental-dps"]
       },
@@ -2095,6 +2121,14 @@
         "values": [0.004324, 0.008649, 0.012973, 0.017298, 0.021622],
         "source": "parsed",
         "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Earth Shock"],
+        "values": [0.00745, 0.014899, 0.022349, 0.029799, 0.037248],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
         "specs": ["enhancement-dps"]
       },
       {
@@ -2116,7 +2150,7 @@
     ]
   },
   "Reverberation": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 30,60): removing it costs -0.2% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 0.8% DPS in the simulator (scorer said 0.7% on the same scale); already within tolerance, raid effects split off unchanged (0.7%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 0.8% DPS in the simulator (scorer said 0.7% on the same scale); already within tolerance, raid effects split off unchanged (0.7%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 0.9% time per kill in the simulator (scorer said 1.5% on the same scale); leveling-st/solo-60 values scaled x0.60 to match (0.9%). Other modes unchanged.",
     "effects": [
       {
         "channel": "cooldown",
@@ -2160,14 +2194,6 @@
       {
         "channel": "cooldown",
         "scope": ["ability:Shock"],
-        "values": [0.16869, 0.337386, 0.506076, 0.674773, 0.84347],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["enhancement-dps"]
-      },
-      {
-        "channel": "cooldown",
-        "scope": ["ability:Shock"],
         "values": [0.078876, 0.157753, 0.236629, 0.315505, 0.394382],
         "source": "parsed",
         "modes": ["raid"],
@@ -2180,11 +2206,19 @@
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
         "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Shock"],
+        "values": [0.100814, 0.201632, 0.302447, 0.403266, 0.504084],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
       }
     ]
   },
   "Mindfulness": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 4.7% time per kill in the simulator (scorer said 3.3% on the same scale); leveling-st/solo-60 values scaled x1.49 to match (4.6%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, elemental-dps, training dummy): removing it costs 2.1% DPS in the simulator (scorer said 2.5% on the same scale); already within tolerance, raid effects split off unchanged (2.3%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, elemental-dps, training dummy): removing it costs 2.1% DPS in the simulator (scorer said 2.5% on the same scale); already within tolerance, raid effects split off unchanged (2.3%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 1.4% time per kill in the simulator (scorer said 0.3% on the same scale); leveling-st/solo-60 values scaled x4.80 to match (1.5%). Other modes unchanged. Fight lab calibration [elemental-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 5.0% time per kill in the simulator (scorer said 5.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (4.9%). Other modes unchanged.",
     "effects": [
       {
         "channel": "regen",
@@ -2213,14 +2247,6 @@
       {
         "channel": "regen",
         "scope": ["all"],
-        "values": [0.052319, 0.10156, 0.15388],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["enhancement-dps"]
-      },
-      {
-        "channel": "regen",
-        "scope": ["all"],
         "values": [0.510001, 0.990001, 1.5],
         "source": "parsed",
         "modes": ["heal"],
@@ -2244,6 +2270,14 @@
       {
         "channel": "regen",
         "scope": ["all"],
+        "values": [0.250887, 0.487014, 0.737907],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
         "values": [0.375052, 0.728043, 1.103097],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
@@ -2252,7 +2286,7 @@
     ]
   },
   "Tidal Focus": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 1.2% time per kill in the simulator (scorer said 0.6% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.6%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 1.7% DPS in the simulator (scorer said 2.9% on the same scale); raid values scaled x0.41 to match (1.7%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 1.7% DPS in the simulator (scorer said 2.9% on the same scale); raid values scaled x0.41 to match (1.7%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 4.8% time per kill in the simulator (scorer said 3.2% on the same scale); leveling-st/solo-60 values scaled x1.52 to match (4.8%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 1.8% time per kill in the simulator (scorer said 1.8% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (1.8%). Other modes unchanged. Fight lab calibration [elemental-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 3.9% time per kill in the simulator (scorer said 0.7% on the same scale); leveling-st/solo-60 values scaled x5.43 to match (3.9%). Other modes unchanged.",
     "effects": [
       {
         "channel": "hit",
@@ -2285,22 +2319,6 @@
         "source": "parsed",
         "modes": ["leveling-aoe", "heal", "tank"],
         "specs": ["elemental-dps"]
-      },
-      {
-        "channel": "hit",
-        "scope": ["all"],
-        "values": [0.005632, 0.011263, 0.016895, 0.022527, 0.028159],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["enhancement-dps"]
-      },
-      {
-        "channel": "mana_cost",
-        "scope": ["type:spell", "heal"],
-        "values": [0.005632, 0.011263, 0.016895, 0.022527, 0.028159],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["enhancement-dps"]
       },
       {
         "channel": "hit",
@@ -2353,7 +2371,23 @@
       {
         "channel": "hit",
         "scope": ["all"],
-        "values": [0.001511, 0.003022, 0.004534, 0.006045, 0.007556],
+        "values": [0.008559, 0.017117, 0.025677, 0.034236, 0.042796],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell", "heal"],
+        "values": [0.008559, 0.017117, 0.025677, 0.034236, 0.042796],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "values": [0.015738, 0.031477, 0.047226, 0.062964, 0.078703],
         "source": "parsed",
         "modes": ["leveling-aoe"],
         "specs": ["enhancement-dps"]
@@ -2361,7 +2395,7 @@
       {
         "channel": "mana_cost",
         "scope": ["type:spell", "heal"],
-        "values": [0.001511, 0.003022, 0.004534, 0.006045, 0.007556],
+        "values": [0.015738, 0.031477, 0.047226, 0.062964, 0.078703],
         "source": "parsed",
         "modes": ["leveling-aoe"],
         "specs": ["enhancement-dps"]
@@ -2369,7 +2403,7 @@
       {
         "channel": "hit",
         "scope": ["all"],
-        "values": [0.001278, 0.002555, 0.003833, 0.005111, 0.006388],
+        "values": [0.006945, 0.013885, 0.02083, 0.027776, 0.034715],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
         "specs": ["elemental-dps"]
@@ -2377,7 +2411,7 @@
       {
         "channel": "mana_cost",
         "scope": ["type:spell", "heal"],
-        "values": [0.001278, 0.002555, 0.003833, 0.005111, 0.006388],
+        "values": [0.006945, 0.013885, 0.02083, 0.027776, 0.034715],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
         "specs": ["elemental-dps"]
@@ -2385,7 +2419,7 @@
     ]
   },
   "Elemental Alacrity": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 3.1% time per kill in the simulator (scorer said 2.6% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.5%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, elemental-dps, training dummy): removing it costs 18.0% DPS in the simulator (scorer said 20.8% on the same scale); already within tolerance, raid effects split off unchanged (20.8%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, elemental-dps, training dummy): removing it costs 18.0% DPS in the simulator (scorer said 20.8% on the same scale); already within tolerance, raid effects split off unchanged (20.8%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs -1.3% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (0.0%). Other modes unchanged. Fight lab calibration [elemental-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 3.7% time per kill in the simulator (scorer said 2.4% on the same scale); leveling-st/solo-60 values scaled x1.47 to match (3.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "cast_time",
@@ -2429,14 +2463,6 @@
       {
         "channel": "cast_time",
         "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Lava Burst"],
-        "values": [0.041017, 0.079621, 0.120639],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["enhancement-dps"]
-      },
-      {
-        "channel": "cast_time",
-        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Lava Burst"],
         "values": [0.171697, 0.333293, 0.504988],
         "source": "parsed",
         "modes": ["raid"],
@@ -2445,7 +2471,15 @@
       {
         "channel": "cast_time",
         "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Lava Burst"],
-        "values": [0.51, 0.99, 1.5],
+        "values": [0.041017, 0.079621, 0.120639],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Lava Burst"],
+        "values": [0.0, 0.0, 0.0],
         "source": "parsed",
         "modes": ["leveling-aoe"],
         "specs": ["enhancement-dps"]
@@ -2453,7 +2487,7 @@
       {
         "channel": "cast_time",
         "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Lava Burst"],
-        "values": [0.044113, 0.085631, 0.129744],
+        "values": [0.065, 0.126176, 0.191175],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
         "specs": ["elemental-dps"]
@@ -2461,7 +2495,7 @@
     ]
   },
   "Convection": {
-    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 3.6% DPS in the simulator (scorer said 4.2% on the same scale); already within tolerance, raid effects split off unchanged (4.3%). Other modes unchanged. Fight lab calibration (2026-10-15, levels 30,60): removing it costs 3.9% time per kill in the simulator (scorer said 4.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.9%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 3.6% DPS in the simulator (scorer said 4.2% on the same scale); already within tolerance, raid effects split off unchanged (4.3%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 8.0% time per kill in the simulator (scorer said 1.6% on the same scale); leveling-aoe values scaled x1.00, the cap on effect size stops short of the target (1.6%). Other modes unchanged. Fight lab calibration [elemental-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 3.7% time per kill in the simulator (scorer said 4.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (4.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "mana_cost",
@@ -2476,7 +2510,15 @@
         "scope": ["ability:Shock", "ability:Lightning Bolt", "ability:Lava Burst", "ability:Chain Lightning"],
         "values": [0.02, 0.04, 0.06, 0.08, 0.1],
         "source": "parsed",
-        "modes": ["leveling-aoe", "heal", "tank"]
+        "modes": ["heal", "tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Shock", "ability:Lightning Bolt", "ability:Lava Burst", "ability:Chain Lightning"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["resto-heal", "elemental-dps"]
       },
       {
         "channel": "mana_cost",
@@ -2513,6 +2555,14 @@
       {
         "channel": "mana_cost",
         "scope": ["ability:Shock", "ability:Lightning Bolt", "ability:Lava Burst", "ability:Chain Lightning"],
+        "values": [0.3, 0.6, 0.9, 1.2, 1.5],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Shock", "ability:Lightning Bolt", "ability:Lava Burst", "ability:Chain Lightning"],
         "values": [0.070894, 0.141788, 0.212682, 0.283576, 0.354471],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
@@ -2521,7 +2571,7 @@
     ]
   },
   "Ancestral Knowledge": {
-    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 1.8% DPS in the simulator (scorer said 2.1% on the same scale); already within tolerance, raid effects split off unchanged (2.1%). Other modes unchanged. Fight lab calibration (2026-10-15, levels 40,60): removing it costs -25.4% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, enhancement-dps, training dummy): removing it costs 1.8% DPS in the simulator (scorer said 2.1% on the same scale); already within tolerance, raid effects split off unchanged (2.1%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 0.1% time per kill in the simulator (scorer said 0.7% on the same scale); leveling-st/solo-60 values scaled x0.10 to match (0.1%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 1.0% time per kill in the simulator (scorer said 0.2% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (0.2%). Other modes unchanged. Fight lab calibration [elemental-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs -0.2% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "stat",
@@ -2573,22 +2623,6 @@
       {
         "channel": "stat",
         "scope": ["stat:intellect"],
-        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["elemental-dps"]
-      },
-      {
-        "channel": "stat",
-        "scope": ["stat:intellect"],
-        "values": [0.018568, 0.037139, 0.055707, 0.074277, 0.092845],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["enhancement-dps"]
-      },
-      {
-        "channel": "stat",
-        "scope": ["stat:intellect"],
         "values": [0.036643, 0.073286, 0.109929, 0.146572, 0.183215],
         "source": "parsed",
         "modes": ["heal"],
@@ -2613,15 +2647,31 @@
       {
         "channel": "stat",
         "scope": ["stat:intellect"],
-        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "values": [0.001868, 0.003736, 0.005603, 0.007471, 0.009339],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
         "source": "parsed",
         "modes": ["leveling-aoe"],
         "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["elemental-dps"]
       }
     ]
   },
   "Toughness": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 0.6% time per kill in the simulator (scorer said 1.0% on the same scale); leveling-st/solo-60 values scaled x0.45 to match (0.6%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [enhancement-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.6% on the same scale); leveling-st/solo-60 values scaled x0.04 to match (0.0%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 0.6% time per kill in the simulator (scorer said 0.6% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (0.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "stat",
@@ -2657,7 +2707,7 @@
       {
         "channel": "stat",
         "scope": ["stat:stamina"],
-        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "values": [0.00084, 0.001679, 0.002519, 0.003359, 0.004199],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
         "specs": ["enhancement-dps"]
@@ -2701,7 +2751,7 @@
     ]
   },
   "Improved Healing Wave": {
-    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration (2026-09-27, resto-heal): removing it costs -0.8% healing capacity in the lab (scorer said 0.5% on the same scale); heal values scaled x0.00 to match (0.0%). Other modes unchanged. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration (2026-09-27, resto-heal): removing it costs -0.8% healing capacity in the lab (scorer said 0.5% on the same scale); heal values scaled x0.00 to match (0.0%). Other modes unchanged. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (0.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "cast_time",
@@ -2773,32 +2823,92 @@
     ]
   },
   "Elemental Mastery": {
-    "note": "70425: for 15 s Lightning Bolt and Lava Burst cast 0.5 s faster and Chain Lightning has no cooldown (cooldown assumed 3 min): about one window per three pulls while leveling, one a minute-and-a-half in a raid fight's share -> +2% Lightning Bolt and Chain Lightning damage. Audit 2026-10-18: was valued 0 (no parse, no entry) though the fight lab plays it (row 37). Seed for the next fits.",
+    "note": "70425: for 15 s Lightning Bolt and Lava Burst cast 0.5 s faster and Chain Lightning has no cooldown (cooldown assumed 3 min): about one window per three pulls while leveling, one a minute-and-a-half in a raid fight's share -> +2% Lightning Bolt and Chain Lightning damage. Audit 2026-10-18: was valued 0 (no parse, no entry) though the fight lab plays it (row 37). Seed for the next fits. Fight lab calibration [elemental-dps, leveling-st] (2026-10-20, beta client 1.60.1.70425, levels 30,60): removing it costs 0.4% time per kill in the simulator (scorer said 1.1% on the same scale); leveling-st/solo-60 values scaled x0.38 to match (0.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
         "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Lava Burst"],
-        "values": [0.02]
+        "values": [0.02],
+        "modes": ["raid", "leveling-aoe", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Lava Burst"],
+        "values": [0.02],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Lava Burst"],
+        "values": [0.007676],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["elemental-dps"]
       }
     ]
   },
   "Trial by Fire": {
-    "note": "70425: Fire Nova +10%/rank damage and 2 s/rank shorter cooldown, Magma Totem +10 s/rank. The parse read only the damage. Audit 2026-10-18 (row 37): cooldown and Magma Totem added (20 s totem -> +50%/rank uptime in a pull, valued +25%/rank on its damage).",
+    "note": "70425: Fire Nova +10%/rank damage and 2 s/rank shorter cooldown, Magma Totem +10 s/rank. The parse read only the damage. Audit 2026-10-18 (row 37): cooldown and Magma Totem added (20 s totem -> +50%/rank uptime in a pull, valued +25%/rank on its damage). Fight lab calibration [enhancement-dps, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 70.0% time per kill in the simulator (scorer said 5.1% on the same scale); leveling-aoe values scaled x1.00, the cap on effect size stops short of the target (5.3%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
         "scope": ["ability:Fire Nova"],
-        "values": [0.1, 0.2]
+        "values": [0.1, 0.2],
+        "modes": ["raid", "leveling-st", "solo-60", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Fire Nova"],
+        "values": [0.1, 0.2],
+        "modes": ["leveling-aoe"],
+        "specs": ["resto-heal", "elemental-dps"]
       },
       {
         "channel": "cooldown",
         "scope": ["ability:Fire Nova"],
-        "values": [2.0, 4.0]
+        "values": [2.0, 4.0],
+        "modes": ["raid", "leveling-st", "solo-60", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Fire Nova"],
+        "values": [2.0, 4.0],
+        "modes": ["leveling-aoe"],
+        "specs": ["resto-heal", "elemental-dps"]
       },
       {
         "channel": "dmg",
         "scope": ["ability:Magma Totem"],
-        "values": [0.25, 0.5]
+        "values": [0.25, 0.5],
+        "modes": ["raid", "leveling-st", "solo-60", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Magma Totem"],
+        "values": [0.25, 0.5],
+        "modes": ["leveling-aoe"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Fire Nova"],
+        "values": [0.0375, 0.075],
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Fire Nova"],
+        "values": [0.75, 1.5],
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Magma Totem"],
+        "values": [0.09375, 0.1875],
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
       }
     ]
   }

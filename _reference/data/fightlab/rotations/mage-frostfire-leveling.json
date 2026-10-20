@@ -7,12 +7,14 @@
    "off": true
   },
   "Fire Blast": {
-   "min_hp": 0.1
+   "off": true
   },
   "Frostbolt": {
-   "min_hp": 0.35
+   "min_hp": 0.2
   }
  },
+ "drink_below": 0.15,
+ "eat_below": 0.5,
  "class": "mage",
  "spec": "frostfire-leveling",
  "build": "opt-frost-leveling-leveling-st",
@@ -23,7 +25,7 @@
   50,
   60
  ],
- "date": "2026-10-17",
+ "date": "2026-10-19",
  "fights": 600,
  "confirm": 3000,
  "changes": [
@@ -35,8 +37,8 @@
     "Frostfire Bolt",
     true
    ],
-   "gain_seed1": 0.03822244954164056,
-   "gain_seed2": 0.03477728591474649
+   "gain_seed1": 0.034912643638159824,
+   "gain_seed2": 0.0314337139637626
   },
   {
    "round": 2,
@@ -46,62 +48,84 @@
     "Cone of Cold",
     true
    ],
-   "gain_seed1": 0.035214050277001085,
-   "gain_seed2": 0.035377359597290936
+   "gain_seed1": 0.02875447805169895,
+   "gain_seed2": 0.033465688182676145
   },
   {
    "round": 3,
-   "change": "Fire Blast only while the mob has more than 10% health",
+   "change": "never cast Fire Blast",
    "rule": [
-    "min_hp",
+    "off",
     "Fire Blast",
-    0.1
+    true
    ],
-   "gain_seed1": 0.009888430081587463,
-   "gain_seed2": 0.0078062125985406405
+   "gain_seed1": 0.02765758824766218,
+   "gain_seed2": 0.027306588699221757
   },
   {
    "round": 4,
-   "change": "Frostbolt only while the mob has more than 35% health",
+   "change": "drink below 15% mana",
+   "rule": [
+    "drink_below",
+    null,
+    0.15
+   ],
+   "gain_seed1": 0.008827840698459322,
+   "gain_seed2": 0.007555896960681374
+  },
+  {
+   "round": 5,
+   "change": "Frostbolt only while the mob has more than 20% health",
    "rule": [
     "min_hp",
     "Frostbolt",
-    0.35
+    0.2
    ],
-   "gain_seed1": 0.005429782964482599,
-   "gain_seed2": 0.005441196132133563
+   "gain_seed1": 0.006074811006388958,
+   "gain_seed2": 0.005276091313360598
+  },
+  {
+   "round": 6,
+   "change": "eat below 50% health",
+   "rule": [
+    "eat_below",
+    null,
+    0.5
+   ],
+   "gain_seed1": 0.0031149948535135197,
+   "gain_seed2": 0.004465408648766767
   }
  ],
- "weighted_before": 35.899246912799875,
- "weighted_after": 32.96919878674185,
+ "weighted_before": 34.96023884735635,
+ "weighted_after": 31.22812521871549,
  "per_level": {
   "20": {
-   "before": 28.875135477182372,
-   "after": 28.253462210616714,
+   "before": 28.277486634715746,
+   "after": 27.128387916696024,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 36.22436350756494,
-   "after": 34.51611083662327,
+   "before": 35.46672894375654,
+   "after": 34.68049873659023,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 42.911431163091684,
-   "after": 37.71916667376986,
+   "before": 41.99568389206963,
+   "after": 35.94714924043112,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 35.87526739388132,
-   "after": 32.31582021677843,
+   "before": 35.14492781561726,
+   "after": 29.56713256502672,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 33.423252526194084,
-   "after": 31.14549183746037,
+   "before": 32.09037370001018,
+   "after": 29.106662090714817,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

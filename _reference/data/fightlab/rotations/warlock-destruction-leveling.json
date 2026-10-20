@@ -1,10 +1,7 @@
 {
  "veto": {
   "Immolate": {
-   "off": true
-  },
-  "Fear": {
-   "off": true
+   "min_mana": 0.5
   },
   "Corruption": {
    "min_hp": 0.35
@@ -20,74 +17,63 @@
   50,
   60
  ],
- "date": "2026-10-18",
+ "date": "2026-10-20",
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "never cast Immolate",
+   "change": "Immolate only above 50% mana",
    "rule": [
-    "off",
+    "min_mana",
     "Immolate",
-    true
+    0.5
    ],
-   "gain_seed1": 0.05768909088071639,
-   "gain_seed2": 0.05409807012709644
+   "gain_seed1": 0.028838393995362033,
+   "gain_seed2": 0.02997520979911461
   },
   {
    "round": 2,
-   "change": "never cast Fear",
-   "rule": [
-    "off",
-    "Fear",
-    true
-   ],
-   "gain_seed1": 0.0058942925688063585,
-   "gain_seed2": 0.005243086780312822
-  },
-  {
-   "round": 3,
    "change": "Corruption only while the mob has more than 35% health",
    "rule": [
     "min_hp",
     "Corruption",
     0.35
    ],
-   "gain_seed1": 0.003835466051118175,
-   "gain_seed2": 0.004026839087583722
+   "gain_seed1": 0.010334047132888546,
+   "gain_seed2": 0.007482691527170182
   }
  ],
- "weighted_before": 36.15861255469787,
- "weighted_after": 33.85908864892448,
+ "weighted_before": 33.881820779244535,
+ "weighted_after": 32.61131065408318,
  "per_level": {
   "20": {
-   "before": 23.66743333325875,
-   "after": 23.93083333326165,
+   "before": 23.15919999990293,
+   "after": 23.152033333235984,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 31.426420208687148,
-   "after": 29.43120000014226,
+   "before": 30.010067368773694,
+   "after": 28.887433333448072,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 36.862540122403644,
-   "after": 34.893631811957654,
+   "before": 35.277053607019035,
+   "after": 33.75094241591846,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 39.7489570862927,
-   "after": 36.93155674067251,
+   "before": 37.04777951707925,
+   "after": 35.3170155338958,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 39.22719631338339,
-   "after": 36.13236589339105,
+   "before": 35.82345024421523,
+   "after": 34.611833180282424,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

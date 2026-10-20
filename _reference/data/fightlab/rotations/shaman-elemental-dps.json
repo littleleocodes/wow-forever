@@ -1,4 +1,5 @@
 {
+ "drink_below": 0.15,
  "eat_below": 0.8,
  "class": "shaman",
  "spec": "elemental-dps",
@@ -10,54 +11,65 @@
   50,
   60
  ],
- "date": "2026-10-17",
+ "date": "2026-10-20",
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
+   "change": "drink below 15% mana",
+   "rule": [
+    "drink_below",
+    null,
+    0.15
+   ],
+   "gain_seed1": 0.009665525963754917,
+   "gain_seed2": 0.0061224835198663285
+  },
+  {
+   "round": 2,
    "change": "eat below 80% health",
    "rule": [
     "eat_below",
     null,
     0.8
    ],
-   "gain_seed1": 0.011343204911851146,
-   "gain_seed2": 0.018261597507514882
+   "gain_seed1": 0.005926977049322324,
+   "gain_seed2": 0.005801690901052314
   }
  ],
- "weighted_before": 35.854270846143336,
- "weighted_after": 35.169127818945476,
+ "weighted_before": 37.642234061642235,
+ "weighted_after": 37.19058421199385,
  "per_level": {
   "20": {
-   "before": 20.971286700201837,
-   "after": 20.971286700201837,
+   "before": 29.912597889371998,
+   "after": 29.617179643522707,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 29.628962775196246,
-   "after": 29.592633228221516,
+   "before": 37.08924347493585,
+   "after": 36.73390821729008,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 34.910509160356966,
-   "after": 34.68359459681529,
+   "before": 39.20550688174575,
+   "after": 38.46451234116905,
    "deaths_before": 0.0,
-   "deaths_after": 0.0
+   "deaths_after": 0.03333333333333333
   },
   "50": {
-   "before": 40.30717678718822,
-   "after": 39.03550387997334,
-   "deaths_before": 0.4,
-   "deaths_after": 0.36666666666666664
+   "before": 39.2576204183921,
+   "after": 38.8647277797615,
+   "deaths_before": 0.0,
+   "deaths_after": 0.06666666666666667
   },
   "60": {
-   "before": 40.846339103250905,
-   "after": 39.79169758445224,
-   "deaths_before": 0.26666666666666666,
-   "deaths_after": 0.3333333333333333
+   "before": 38.106937568391594,
+   "after": 37.698985339579615,
+   "deaths_before": 0.0,
+   "deaths_after": 0.13333333333333333
   }
  }
 }
