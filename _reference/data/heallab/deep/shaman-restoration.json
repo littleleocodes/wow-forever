@@ -1,13 +1,18 @@
 {
  "class": "shaman",
  "spec": "Restoration",
- "date": "2026-10-14",
+ "date": "2026-10-21",
  "cycles": [
   {
    "cycle": 1,
    "winner": {
     "allocation": {
-     "Elemental": [],
+     "Elemental": [
+      [
+       "Concussion",
+       1
+      ]
+     ],
      "Enhancement": [
       [
        "Thundering Strikes",
@@ -16,19 +21,11 @@
       [
        "Ancestral Knowledge",
        5
-      ],
-      [
-       "Improved Lightning Shield",
-       3
-      ],
-      [
-       "Anticipation",
-       1
       ]
      ],
      "Restoration": [
       [
-       "Totemic Focus",
+       "Tidal Focus",
        5
       ],
       [
@@ -36,11 +33,15 @@
        3
       ],
       [
-       "Tidal Focus",
-       5
+       "Totemic Focus",
+       4
       ],
       [
        "Ancestral Healing",
+       3
+      ],
+      [
+       "Healing Focus",
        3
       ],
       [
@@ -53,7 +54,7 @@
       ],
       [
        "Restorative Totems",
-       4
+       5
       ],
       [
        "Mana Tide Totem",
@@ -77,206 +78,204 @@
       ]
      ]
     },
-    "split": "0/14/37",
-    "dps": 0.6945,
-    "se": 0.002,
+    "split": "1/10/40",
+    "dps": 0.7052,
+    "se": 0.0024,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "0/14/37",
-    "dps": 0.684,
-    "se": 0.0032,
+    "split": "1/10/40",
+    "dps": 0.6999,
+    "se": 0.0027,
     "differs": [
      [
-      "Healing Focus",
-      2
-     ],
-     [
-      "Restorative Totems",
-      2
-     ],
-     [
-      "Restorative Totems",
+      "Purification",
       4
+     ],
+     [
+      "Purification",
+      5
+     ],
+     [
+      "Totemic Focus",
+      4
+     ],
+     [
+      "Totemic Focus",
+      5
      ]
     ]
    },
-   "gap_to_runner_up": 0.0153,
+   "gap_to_runner_up": 0.0077,
    "runs": [
     {
      "entry": "heal",
      "run": 1,
-     "simulated": 2606,
-     "best_screen": 0.7109,
-     "best_split": "1/13/37",
-     "best_stage1_gap": -0.0019,
+     "simulated": 1410,
+     "best_screen": 0.7231,
+     "best_split": "1/10/40",
+     "best_stage1_gap": 0.0,
      "agrees_with_winner": true
     },
     {
      "entry": "heal",
      "run": 2,
-     "simulated": 2004,
-     "best_screen": 0.7079,
-     "best_split": "0/14/37",
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
+     "simulated": 1605,
+     "best_screen": 0.7353,
+     "best_split": "1/12/38",
+     "best_stage1_gap": -0.0125,
+     "agrees_with_winner": false
     },
     {
      "entry": "heal",
      "run": 3,
-     "simulated": 1407,
-     "best_screen": 0.7079,
-     "best_split": "0/13/38",
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
+     "simulated": 1809,
+     "best_screen": 0.7353,
+     "best_split": "0/12/39",
+     "best_stage1_gap": -0.0125,
+     "agrees_with_winner": false
     },
     {
      "entry": "heal",
      "run": 4,
-     "simulated": 1605,
-     "best_screen": 0.7079,
-     "best_split": "0/13/38",
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
+     "simulated": 1807,
+     "best_screen": 0.7353,
+     "best_split": "1/10/40",
+     "best_stage1_gap": -0.0125,
+     "agrees_with_winner": false
     }
    ],
-   "runs_agree": 4,
+   "runs_agree": 1,
    "race": [
     {
      "iterations": 60,
      "seed": 2,
      "dps": [
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.6827,
-      0.6827,
-      0.6827,
-      0.6827,
-      0.6827,
-      0.6827
+      0.7106,
+      0.7106,
+      0.7106,
+      0.7106,
+      0.7106,
+      0.7106,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018
      ]
     },
     {
      "iterations": 120,
      "seed": 3,
      "dps": [
-      0.6986,
-      0.6986,
-      0.6986,
-      0.6986,
-      0.6986
+      0.7056,
+      0.7056,
+      0.7056,
+      0.7056,
+      0.7056
      ]
     },
     {
      "iterations": 240,
      "seed": 4,
      "dps": [
-      0.684,
-      0.684
+      0.6999,
+      0.6999
      ]
     },
     {
      "iterations": 240,
      "seed": 4,
      "dps": [
-      0.6945,
-      0.684
+      0.7052,
+      0.6999
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 200,
-     "best_gap": 0.011,
-     "best_move": "2 Ancestral Knowledge -> Restorative Totems",
+     "neighbours": 405,
+     "best_gap": 0.0327,
+     "best_move": "1 Concussion -> Purification",
      "raced": [
-      "2 Ancestral Knowledge -> Restorative Totems",
-      "3 Improved Lightning Shield -> Restorative Totems",
-      "2 Improved Lightning Shield -> Restorative Totems",
-      "2 Healing Focus -> Restorative Totems"
+      "1 Concussion -> Purification",
+      "1 Healing Focus -> Purification",
+      "1 Totemic Focus -> Purification",
+      "1 Tidal Mastery -> Purification"
      ],
-     "confirmed_gap": 0.0076
+     "confirmed_gap": 0.0061
     },
     {
-     "neighbours": 557,
-     "best_gap": 0.022,
-     "best_move": "1 Improved Lightning Shield -> Improved Healing Wave",
-     "raced": [
-      "1 Improved Lightning Shield -> Improved Healing Wave",
-      "1 Anticipation -> Improved Healing Wave",
-      "1 Totemic Focus -> Improved Healing Wave",
-      "1 Nature's Swiftness -> Restorative Totems"
-     ],
-     "confirmed_gap": 0.0007
+     "neighbours": 402,
+     "best_gap": 0.0,
+     "best_move": "1 Concussion -> Improved Reincarnation"
     }
    ],
    "important_features": [
     {
      "feature": "Riptide",
-     "importance": 0.2676
-    },
-    {
-     "feature": "Healing Way",
-     "importance": 0.1655
-    },
-    {
-     "feature": "Purification",
-     "importance": 0.1591
-    },
-    {
-     "feature": "Improved Healing Wave",
-     "importance": 0.1117
-    },
-    {
-     "feature": "Mindfulness",
-     "importance": 0.0813
+     "importance": 0.314
     },
     {
      "feature": "Elemental points",
-     "importance": 0.0656
+     "importance": 0.1325
     },
     {
-     "feature": "Restoration points",
-     "importance": 0.0339
+     "feature": "Improved Healing Wave",
+     "importance": 0.1295
     },
     {
-     "feature": "Natural Grace",
-     "importance": 0.0132
+     "feature": "Healing Way",
+     "importance": 0.0917
+    },
+    {
+     "feature": "Purification",
+     "importance": 0.0915
+    },
+    {
+     "feature": "Mindfulness",
+     "importance": 0.0715
     },
     {
      "feature": "Water Shield",
-     "importance": 0.012
+     "importance": 0.0306
     },
     {
-     "feature": "Ancestral Knowledge",
-     "importance": 0.0109
-    },
-    {
-     "feature": "Mana Tide Totem",
-     "importance": 0.0092
+     "feature": "Restoration points",
+     "importance": 0.0289
     },
     {
      "feature": "Thundering Strikes",
-     "importance": 0.009
+     "importance": 0.0166
+    },
+    {
+     "feature": "Improved Reincarnation",
+     "importance": 0.0147
+    },
+    {
+     "feature": "Ancestral Knowledge",
+     "importance": 0.0143
+    },
+    {
+     "feature": "Mana Tide Totem",
+     "importance": 0.011
     }
    ],
-   "simulated_builds": 9096,
-   "minutes": 124.6,
+   "simulated_builds": 7478,
+   "minutes": 45.8,
    "policy_changed": true
   },
   {
@@ -291,10 +290,6 @@
      ],
      "Enhancement": [
       [
-       "Earth's Grasp",
-       1
-      ],
-      [
        "Thundering Strikes",
        5
       ],
@@ -303,13 +298,17 @@
        5
       ],
       [
-       "Improved Ghost Wolf",
+       "Anticipation",
        1
       ]
      ],
      "Restoration": [
       [
-       "Totemic Focus",
+       "Improved Healing Wave",
+       1
+      ],
+      [
+       "Tidal Focus",
        5
       ],
       [
@@ -317,8 +316,12 @@
        3
       ],
       [
-       "Tidal Focus",
-       5
+       "Natural Grace",
+       1
+      ],
+      [
+       "Totemic Focus",
+       4
       ],
       [
        "Ancestral Healing",
@@ -362,51 +365,67 @@
       ]
      ]
     },
-    "split": "1/12/38",
-    "dps": 0.6945,
-    "se": 0.002,
+    "split": "1/11/39",
+    "dps": 0.7049,
+    "se": 0.0018,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "3/12/36",
-    "dps": 0.684,
-    "se": 0.0032,
+    "split": "1/11/39",
+    "dps": 0.6973,
+    "se": 0.0025,
     "differs": [
      [
-      "Concussion",
+      "Healing Focus",
       1
      ],
      [
-      "Concussion",
+      "Healing Focus",
       3
      ],
      [
-      "Restorative Totems",
-      2
+      "Improved Healing Wave",
+      1
      ],
      [
-      "Restorative Totems",
+      "Nature's Swiftness",
+      1
+     ],
+     [
+      "Tidal Mastery",
       4
+     ],
+     [
+      "Tidal Mastery",
+      5
+     ],
+     [
+      "Totemic Focus",
+      4
+     ],
+     [
+      "Totemic Focus",
+      5
      ]
     ]
    },
-   "gap_to_runner_up": 0.0153,
+   "gap_to_runner_up": 0.0109,
    "runs": [
     {
      "entry": "heal",
      "run": 1,
-     "simulated": 1678,
-     "best_screen": 0.7079,
-     "best_split": "3/12/36",
+     "simulated": 1473,
+     "best_screen": 0.7353,
+     "best_split": "1/11/39",
      "best_stage1_gap": 0.0,
      "agrees_with_winner": true
     },
     {
      "entry": "heal",
      "run": 2,
-     "simulated": 1284,
-     "best_screen": 0.7079,
-     "best_split": "0/16/35",
+     "simulated": 1676,
+     "best_screen": 0.7353,
+     "best_split": "6/11/34",
      "best_stage1_gap": 0.0,
      "agrees_with_winner": true
     }
@@ -417,137 +436,150 @@
      "iterations": 60,
      "seed": 2,
      "dps": [
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018
      ]
     },
     {
      "iterations": 120,
      "seed": 3,
      "dps": [
-      0.6986,
-      0.6986,
-      0.6986,
-      0.6986,
-      0.6986
+      0.71,
+      0.71,
+      0.71,
+      0.71,
+      0.71
      ]
     },
     {
      "iterations": 240,
      "seed": 4,
      "dps": [
-      0.684,
-      0.684
+      0.6973,
+      0.6973
      ]
     },
     {
      "iterations": 240,
      "seed": 4,
      "dps": [
-      0.6945,
-      0.684
+      0.7049,
+      0.6973
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 200,
-     "best_gap": 0.011,
-     "best_move": "2 Ancestral Knowledge -> Restorative Totems",
+     "neighbours": 368,
+     "best_gap": 0.0027,
+     "best_move": "1 Natural Grace -> Tidal Mastery",
      "raced": [
-      "2 Ancestral Knowledge -> Restorative Totems",
-      "3 Concussion -> Restorative Totems",
-      "2 Concussion -> Restorative Totems"
+      "1 Natural Grace -> Tidal Mastery",
+      "1 Anticipation -> Tidal Mastery",
+      "1 Healing Focus -> Tidal Mastery",
+      "1 Ancestral Healing -> Tidal Mastery"
      ],
-     "confirmed_gap": 0.0076
+     "confirmed_gap": 0.0055
     },
     {
-     "neighbours": 498,
-     "best_gap": 0.022,
-     "best_move": "1 Concussion -> Improved Healing Wave",
+     "neighbours": 372,
+     "best_gap": 0.0188,
+     "best_move": "1 Natural Grace -> Improved Healing Wave",
      "raced": [
-      "1 Concussion -> Improved Healing Wave",
-      "1 Earth's Grasp -> Improved Healing Wave",
-      "1 Improved Ghost Wolf -> Improved Healing Wave",
-      "1 Healing Focus -> Improved Healing Wave"
+      "1 Natural Grace -> Improved Healing Wave",
+      "1 Anticipation -> Improved Healing Wave",
+      "1 Healing Focus -> Improved Healing Wave",
+      "1 Totemic Focus -> Improved Healing Wave"
      ],
-     "confirmed_gap": -0.0137
+     "confirmed_gap": 0.0027
+    },
+    {
+     "neighbours": 412,
+     "best_gap": 0.0135,
+     "best_move": "1 Purification -> Nature's Swiftness",
+     "raced": [
+      "1 Purification -> Nature's Swiftness",
+      "1 Natural Grace -> Nature's Swiftness",
+      "1 Anticipation -> Nature's Swiftness",
+      "1 Healing Focus -> Nature's Swiftness"
+     ],
+     "confirmed_gap": 0.0041
+    },
+    {
+     "neighbours": 407,
+     "best_gap": 0.0,
+     "best_move": "1 Nature's Swiftness -> Healing Focus"
     }
    ],
    "important_features": [
     {
      "feature": "Riptide",
-     "importance": 0.2576
-    },
-    {
-     "feature": "Healing Way",
-     "importance": 0.1952
-    },
-    {
-     "feature": "Mindfulness",
-     "importance": 0.1443
-    },
-    {
-     "feature": "Purification",
-     "importance": 0.0965
+     "importance": 0.2596
     },
     {
      "feature": "Improved Healing Wave",
-     "importance": 0.057
+     "importance": 0.1856
     },
     {
-     "feature": "Restoration points",
-     "importance": 0.054
+     "feature": "Purification",
+     "importance": 0.1135
+    },
+    {
+     "feature": "Mindfulness",
+     "importance": 0.1119
     },
     {
      "feature": "Elemental points",
-     "importance": 0.0476
+     "importance": 0.0685
     },
     {
-     "feature": "Ancestral Knowledge",
-     "importance": 0.021
-    },
-    {
-     "feature": "Mana Tide Totem",
-     "importance": 0.0161
+     "feature": "Healing Way",
+     "importance": 0.0658
     },
     {
      "feature": "Water Shield",
-     "importance": 0.0145
+     "importance": 0.0353
     },
     {
-     "feature": "Enhancement points",
-     "importance": 0.0142
+     "feature": "Mana Tide Totem",
+     "importance": 0.0282
     },
     {
-     "feature": "Improved Reincarnation",
-     "importance": 0.0137
+     "feature": "Restoration points",
+     "importance": 0.0189
+    },
+    {
+     "feature": "Tidal Mastery",
+     "importance": 0.0174
+    },
+    {
+     "feature": "Ancestral Knowledge",
+     "importance": 0.0111
+    },
+    {
+     "feature": "Natural Grace",
+     "importance": 0.0104
     }
    ],
-   "simulated_builds": 4684,
-   "minutes": 136.3,
+   "simulated_builds": 4748,
+   "minutes": 34.7,
    "policy_changed": true
   },
   {
    "cycle": 3,
    "winner": {
     "allocation": {
-     "Elemental": [
-      [
-       "Concussion",
-       1
-      ]
-     ],
+     "Elemental": [],
      "Enhancement": [
       [
        "Thundering Strikes",
@@ -558,13 +590,21 @@
        5
       ],
       [
-       "Anticipation",
+       "Improved Lightning Shield",
+       1
+      ],
+      [
+       "Shamanistic Focus",
        1
       ]
      ],
      "Restoration": [
       [
-       "Totemic Focus",
+       "Improved Healing Wave",
+       1
+      ],
+      [
+       "Tidal Focus",
        5
       ],
       [
@@ -572,12 +612,8 @@
        3
       ],
       [
-       "Tidal Focus",
+       "Totemic Focus",
        5
-      ],
-      [
-       "Improved Reincarnation",
-       2
       ],
       [
        "Ancestral Healing",
@@ -593,7 +629,7 @@
       ],
       [
        "Restorative Totems",
-       4
+       5
       ],
       [
        "Mana Tide Totem",
@@ -617,47 +653,63 @@
       ]
      ]
     },
-    "split": "1/11/39",
-    "dps": 0.6945,
-    "se": 0.002,
+    "split": "0/12/39",
+    "dps": 0.7049,
+    "se": 0.0018,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "1/13/37",
-    "dps": 0.684,
-    "se": 0.0032,
+    "split": "0/12/39",
+    "dps": 0.6973,
+    "se": 0.0025,
     "differs": [
      [
-      "Improved Lightning Shield",
-      2
+      "Elemental Weapons",
+      1
      ],
      [
-      "Restorative Totems",
-      2
+      "Healing Focus",
+      1
      ],
      [
-      "Restorative Totems",
+      "Healing Focus",
+      3
+     ],
+     [
+      "Improved Healing Wave",
+      1
+     ],
+     [
+      "Nature's Swiftness",
+      1
+     ],
+     [
+      "Thundering Strikes",
       4
+     ],
+     [
+      "Thundering Strikes",
+      5
      ]
     ]
    },
-   "gap_to_runner_up": 0.0153,
+   "gap_to_runner_up": 0.0109,
    "runs": [
     {
      "entry": "heal",
      "run": 1,
-     "simulated": 1487,
-     "best_screen": 0.7079,
-     "best_split": "1/13/37",
+     "simulated": 1489,
+     "best_screen": 0.7353,
+     "best_split": "0/12/39",
      "best_stage1_gap": 0.0,
      "agrees_with_winner": true
     },
     {
      "entry": "heal",
      "run": 2,
-     "simulated": 1290,
-     "best_screen": 0.7079,
-     "best_split": "0/14/37",
+     "simulated": 1689,
+     "best_screen": 0.7353,
+     "best_split": "1/12/38",
      "best_stage1_gap": 0.0,
      "agrees_with_winner": true
     }
@@ -668,201 +720,272 @@
      "iterations": 60,
      "seed": 2,
      "dps": [
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684,
-      0.684
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018,
+      0.7018
      ]
     },
     {
      "iterations": 120,
      "seed": 3,
      "dps": [
-      0.6986,
-      0.6986,
-      0.6986,
-      0.6986,
-      0.6986
+      0.71,
+      0.71,
+      0.71,
+      0.71,
+      0.71
      ]
     },
     {
      "iterations": 240,
      "seed": 4,
      "dps": [
-      0.684,
-      0.684
+      0.6973,
+      0.6973
      ]
     },
     {
      "iterations": 240,
      "seed": 4,
      "dps": [
-      0.6945,
-      0.684
+      0.7049,
+      0.6973
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 200,
+     "neighbours": 409,
      "best_gap": 0.0027,
-     "best_move": "2 Improved Reincarnation -> Restorative Totems",
+     "best_move": "1 Shamanistic Focus -> Thundering Strikes",
      "raced": [
-      "2 Improved Reincarnation -> Restorative Totems",
-      "2 Improved Lightning Shield -> Restorative Totems"
+      "1 Shamanistic Focus -> Thundering Strikes",
+      "1 Improved Lightning Shield -> Thundering Strikes",
+      "1 Elemental Weapons -> Thundering Strikes",
+      "1 Healing Focus -> Thundering Strikes"
      ],
-     "confirmed_gap": 0.0076
+     "confirmed_gap": 0.0055
     },
     {
-     "neighbours": 360,
-     "best_gap": 0.022,
-     "best_move": "1 Improved Reincarnation -> Improved Healing Wave",
+     "neighbours": 564,
+     "best_gap": 0.0188,
+     "best_move": "1 Shamanistic Focus -> Improved Healing Wave",
      "raced": [
-      "1 Improved Reincarnation -> Improved Healing Wave",
-      "1 Totemic Focus -> Improved Healing Wave",
-      "1 Anticipation -> Improved Healing Wave",
-      "1 Concussion -> Improved Healing Wave"
+      "1 Shamanistic Focus -> Improved Healing Wave",
+      "1 Improved Lightning Shield -> Improved Healing Wave",
+      "1 Elemental Weapons -> Improved Healing Wave",
+      "1 Healing Focus -> Improved Healing Wave"
      ],
-     "confirmed_gap": -0.0137
+     "confirmed_gap": 0.0027
+    },
+    {
+     "neighbours": 200,
+     "best_gap": 0.0135,
+     "best_move": "1 Purification -> Nature's Swiftness",
+     "raced": [
+      "1 Purification -> Nature's Swiftness",
+      "1 Shamanistic Focus -> Nature's Swiftness",
+      "1 Improved Lightning Shield -> Nature's Swiftness",
+      "1 Elemental Weapons -> Nature's Swiftness"
+     ],
+     "confirmed_gap": 0.0041
+    },
+    {
+     "neighbours": 461,
+     "best_gap": 0.0,
+     "best_move": "4 Totemic Focus -> 3 Anticipation + 1 Stormstrike (tier chain)"
     }
    ],
    "important_features": [
     {
      "feature": "Riptide",
-     "importance": 0.2581
+     "importance": 0.3026
     },
     {
      "feature": "Purification",
-     "importance": 0.155
-    },
-    {
-     "feature": "Healing Way",
-     "importance": 0.1468
+     "importance": 0.1595
     },
     {
      "feature": "Mindfulness",
-     "importance": 0.1295
+     "importance": 0.1004
+    },
+    {
+     "feature": "Healing Way",
+     "importance": 0.0906
     },
     {
      "feature": "Improved Healing Wave",
-     "importance": 0.0699
+     "importance": 0.0867
     },
     {
      "feature": "Elemental points",
-     "importance": 0.055
-    },
-    {
-     "feature": "Natural Grace",
-     "importance": 0.0263
+     "importance": 0.0577
     },
     {
      "feature": "Restoration points",
-     "importance": 0.0215
-    },
-    {
-     "feature": "Water Shield",
-     "importance": 0.0175
+     "importance": 0.0429
     },
     {
      "feature": "Ancestral Knowledge",
-     "importance": 0.0163
+     "importance": 0.0211
+    },
+    {
+     "feature": "Nature's Swiftness",
+     "importance": 0.0175
+    },
+    {
+     "feature": "Water Shield",
+     "importance": 0.0161
+    },
+    {
+     "feature": "Thundering Strikes",
+     "importance": 0.015
     },
     {
      "feature": "Mana Tide Totem",
-     "importance": 0.0155
-    },
-    {
-     "feature": "Improved Reincarnation",
-     "importance": 0.0127
+     "importance": 0.0139
     }
    ],
-   "simulated_builds": 4282,
-   "minutes": 126.6,
+   "simulated_builds": 5529,
+   "minutes": 113.8,
    "policy_changed": true
   }
  ],
  "two_move": {
   "steps": [
    {
-    "one_move": 360,
-    "two_move": 7727,
+    "one_move": 459,
+    "two_move": 8053,
     "expanded": 25,
     "screen": 24,
     "screen_best": [
      [
-      "1 Tidal Mastery -> Healing Focus; then 1 Improved Reincarnation -> Restorative Totems",
-      0.0311
+      "2 Totemic Focus -> Improved Healing Wave; then 1 Purification -> Restorative Totems",
+      0.0716
      ],
      [
-      "1 Tidal Mastery -> Healing Focus; then 1 Anticipation -> Restorative Totems",
-      0.0311
+      "2 Totemic Focus -> Improved Healing Wave; then 1 Improved Healing Wave -> Restorative Totems",
+      0.0627
      ],
      [
-      "1 Tidal Mastery -> Healing Focus; then 1 Concussion -> Restorative Totems",
-      0.0311
+      "1 Healing Focus -> Restorative Totems",
+      0.0582
      ],
      [
-      "1 Tidal Mastery -> Natural Grace; then 1 Improved Reincarnation -> Restorative Totems",
-      0.0311
+      "1 Totemic Focus -> Restorative Totems",
+      0.0582
      ],
      [
-      "1 Tidal Mastery -> Natural Grace; then 1 Anticipation -> Restorative Totems",
-      0.0311
+      "1 Shamanistic Focus -> Restorative Totems",
+      0.0582
      ]
     ],
     "raced": 30,
     "confirmed": [
      [
-      "1 Tidal Mastery -> Healing Focus; then 1 Improved Reincarnation -> Restorative Totems",
-      -0.0058
+      "1 Healing Focus -> Restorative Totems",
+      0.0084
      ],
      [
-      "1 Tidal Mastery -> Healing Focus; then 1 Anticipation -> Restorative Totems",
-      -0.0058
+      "1 Totemic Focus -> Restorative Totems",
+      0.0084
      ],
      [
-      "1 Tidal Mastery -> Healing Focus; then 1 Concussion -> Restorative Totems",
-      -0.0058
+      "1 Shamanistic Focus -> Restorative Totems",
+      0.0084
      ],
      [
-      "1 Tidal Mastery -> Natural Grace; then 1 Improved Reincarnation -> Restorative Totems",
-      -0.0058
+      "1 Improved Lightning Shield -> Restorative Totems",
+      0.0084
      ],
      [
-      "1 Tidal Mastery -> Natural Grace; then 1 Anticipation -> Restorative Totems",
-      -0.0058
+      "2 Totemic Focus -> Improved Healing Wave; then 1 Improved Healing Wave -> Restorative Totems",
+      0.0046
      ]
     ],
-    "minutes": 42.3
+    "minutes": 47.6
+   },
+   {
+    "one_move": 419,
+    "two_move": 7014,
+    "expanded": 25,
+    "screen": 24,
+    "screen_best": [
+     [
+      "1 Shamanistic Focus -> Healing Focus; then 1 Tidal Mastery -> Improved Healing Wave",
+      0.0215
+     ],
+     [
+      "1 Shamanistic Focus -> Healing Focus; then 1 Thundering Strikes -> Improved Healing Wave",
+      0.0215
+     ],
+     [
+      "1 Shamanistic Focus -> Improved Reincarnation; then 1 Tidal Mastery -> Improved Healing Wave",
+      0.0215
+     ],
+     [
+      "1 Shamanistic Focus -> Improved Reincarnation; then 1 Thundering Strikes -> Improved Healing Wave",
+      0.0215
+     ],
+     [
+      "1 Shamanistic Focus -> Natural Grace; then 1 Tidal Mastery -> Improved Healing Wave",
+      0.0215
+     ]
+    ],
+    "raced": 30,
+    "confirmed": [
+     [
+      "1 Shamanistic Focus -> Healing Focus; then 1 Tidal Mastery -> Improved Healing Wave",
+      -0.0121
+     ],
+     [
+      "1 Shamanistic Focus -> Healing Focus; then 1 Thundering Strikes -> Improved Healing Wave",
+      -0.0121
+     ],
+     [
+      "1 Shamanistic Focus -> Improved Reincarnation; then 1 Tidal Mastery -> Improved Healing Wave",
+      -0.0121
+     ],
+     [
+      "1 Shamanistic Focus -> Improved Reincarnation; then 1 Thundering Strikes -> Improved Healing Wave",
+      -0.0121
+     ],
+     [
+      "1 Shamanistic Focus -> Natural Grace; then 1 Tidal Mastery -> Improved Healing Wave",
+      -0.0121
+     ]
+    ],
+    "minutes": 41.6
    }
   ],
-  "moved": false
+  "moved": true
  },
  "final": {
   "deep winner": {
-   "capacity": 0.6919,
-   "se": 0.0018
+   "capacity": 0.7077,
+   "se": 0.0017
   },
   "resto-raid-healer": {
-   "capacity": 0.6911,
-   "se": 0.0016
+   "capacity": 0.7073,
+   "se": 0.0019
   },
   "opt-resto-heal-raid-heal": {
-   "capacity": 0.6911,
-   "se": 0.0016
+   "capacity": 0.7073,
+   "se": 0.0019
   }
  },
- "minutes": 435.7,
+ "minutes": 293.0,
  "build": {
   "written": null,
-  "why": "confirms resto-raid-healer (+0.12%)"
+  "why": "confirms resto-raid-healer (+0.06%)"
  }
 }

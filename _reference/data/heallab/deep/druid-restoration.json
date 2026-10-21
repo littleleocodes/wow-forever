@@ -1,7 +1,7 @@
 {
  "class": "druid",
  "spec": "Restoration",
- "date": "2026-10-14",
+ "date": "2026-10-21",
  "cycles": [
   {
    "cycle": 1,
@@ -14,11 +14,11 @@
       ],
       [
        "Moonglow",
-       3
+       1
       ],
       [
        "Improved Moonfire",
-       1
+       2
       ],
       [
        "Nature's Majesty",
@@ -32,17 +32,17 @@
      "Feral Combat": [
       [
        "Heart of the Wild",
-       4
+       5
       ]
      ],
      "Restoration": [
       [
        "Nature's Focus",
-       2
+       1
       ],
       [
        "Furor",
-       3
+       4
       ],
       [
        "Naturalist",
@@ -82,34 +82,26 @@
       ]
      ]
     },
-    "split": "12/4/35",
-    "dps": 0.5732,
-    "se": 0.0013,
+    "split": "11/5/35",
+    "dps": 0.6583,
+    "se": 0.0021,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "12/4/35",
-    "dps": 0.5729,
-    "se": 0.0015,
+    "split": "11/5/35",
+    "dps": 0.6532,
+    "se": 0.0024,
     "differs": [
      [
-      "Gift of the Earthmother",
-      1
+      "Natural Shapeshifter",
+      3
      ],
      [
       "Naturalist",
-      2
+      3
      ],
      [
       "Naturalist",
-      5
-     ],
-     [
-      "Nature's Focus",
-      2
-     ],
-     [
-      "Nature's Focus",
       5
      ],
      [
@@ -118,182 +110,211 @@
      ]
     ]
    },
-   "gap_to_runner_up": 0.0006,
+   "gap_to_runner_up": 0.0078,
    "runs": [
     {
      "entry": "heal",
      "run": 1,
-     "simulated": 2606,
-     "best_screen": 0.586,
-     "best_split": "12/4/35",
-     "best_stage1_gap": -0.0045,
-     "agrees_with_winner": false
+     "simulated": 1616,
+     "best_screen": 0.6713,
+     "best_split": "11/5/35",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
     },
     {
      "entry": "heal",
      "run": 2,
-     "simulated": 1822,
-     "best_screen": 0.586,
-     "best_split": "12/4/35",
-     "best_stage1_gap": 0.0,
+     "simulated": 1426,
+     "best_screen": 0.6713,
+     "best_split": "11/5/35",
+     "best_stage1_gap": -0.0019,
      "agrees_with_winner": true
     },
     {
      "entry": "heal",
      "run": 3,
-     "simulated": 2014,
-     "best_screen": 0.586,
-     "best_split": "13/4/34",
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
+     "simulated": 2020,
+     "best_screen": 0.6713,
+     "best_split": "13/6/32",
+     "best_stage1_gap": -0.0136,
+     "agrees_with_winner": false
     },
     {
      "entry": "heal",
      "run": 4,
-     "simulated": 2201,
-     "best_screen": 0.586,
-     "best_split": "13/5/33",
-     "best_stage1_gap": -0.0045,
-     "agrees_with_winner": false
+     "simulated": 1615,
+     "best_screen": 0.6713,
+     "best_split": "11/5/35",
+     "best_stage1_gap": -0.0019,
+     "agrees_with_winner": true
     }
    ],
-   "runs_agree": 2,
+   "runs_agree": 3,
    "race": [
     {
      "iterations": 60,
      "seed": 2,
      "dps": [
-      0.5697,
-      0.5697,
-      0.5697,
-      0.5697,
-      0.5697,
-      0.5697,
-      0.5697,
-      0.5685,
-      0.5685,
-      0.5685,
-      0.5685,
-      0.5685,
-      0.5672,
-      0.5672,
-      0.5672,
-      0.5672,
-      0.5672,
-      0.5672,
-      0.5672,
-      0.5672,
-      0.5646,
-      0.5634,
-      0.5634,
-      0.5634
+      0.6535,
+      0.6535,
+      0.6522,
+      0.6522,
+      0.6522,
+      0.6522,
+      0.6522,
+      0.6522,
+      0.6522,
+      0.6522,
+      0.6522,
+      0.6522,
+      0.6522,
+      0.6522,
+      0.6522,
+      0.6522,
+      0.6522,
+      0.6446,
+      0.6446,
+      0.6446,
+      0.6446,
+      0.6446,
+      0.6446
      ]
     },
     {
      "iterations": 120,
      "seed": 3,
      "dps": [
-      0.5742,
-      0.5723,
-      0.571,
-      0.571,
-      0.571
+      0.6637,
+      0.6637,
+      0.663,
+      0.663,
+      0.6599
      ]
     },
     {
      "iterations": 240,
      "seed": 4,
      "dps": [
-      0.5729,
-      0.5704
+      0.6532,
+      0.6532
      ]
     },
     {
      "iterations": 240,
      "seed": 4,
      "dps": [
-      0.5732,
-      0.5729
+      0.6583,
+      0.6532
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 496,
-     "best_gap": 0.0066,
-     "best_move": "1 Gift of the Earthmother + 3 Furor -> 3 Naturalist + 1 Nature's Swiftness",
+     "neighbours": 356,
+     "best_gap": 0.0116,
+     "best_move": "2 Heart of the Wild -> Naturalist",
      "raced": [
-      "1 Gift of the Earthmother + 3 Furor -> 3 Naturalist + 1 Nature's Swiftness",
-      "3 Nature's Focus + 1 Gift of the Earthmother -> 3 Naturalist + 1 Nature's Swiftness",
-      "2 Improved Regrowth -> 1 Ferocity + 1 Thick Hide (tier chain)",
-      "2 Improved Regrowth -> 1 Ferocity + 1 Brutal Impact (tier chain)"
+      "2 Heart of the Wild -> Naturalist",
+      "3 Natural Shapeshifter -> 2 Naturalist + 1 Nature's Swiftness",
+      "1 Tranquil Spirit -> Naturalist",
+      "1 Heart of the Wild -> Naturalist"
      ],
-     "confirmed_gap": 0.005
+     "confirmed_gap": 0.0036
     },
     {
-     "neighbours": 414,
-     "best_gap": 0.0066,
-     "best_move": "1 Improved Moonfire -> Heart of the Wild",
+     "neighbours": 293,
+     "best_gap": 0.0233,
+     "best_move": "1 Nature's Swiftness -> Improved Regrowth",
      "raced": [
-      "1 Improved Moonfire -> Heart of the Wild",
-      "1 Moonglow -> Heart of the Wild",
-      "1 Improved Regrowth -> Heart of the Wild"
+      "1 Nature's Swiftness -> Improved Regrowth",
+      "1 Nature's Swiftness -> Improved Tranquility",
+      "1 Nature's Swiftness -> Natural Shapeshifter",
+      "1 Nature's Swiftness -> Subtlety"
      ],
-     "confirmed_gap": 0.0
+     "confirmed_gap": 0.0022
+    },
+    {
+     "neighbours": 317,
+     "best_gap": 0.0234,
+     "best_move": "1 Naturalist -> Improved Regrowth",
+     "raced": [
+      "1 Naturalist -> Improved Regrowth",
+      "1 Naturalist -> Improved Tranquility",
+      "1 Naturalist -> Natural Shapeshifter",
+      "1 Naturalist -> Subtlety"
+     ],
+     "confirmed_gap": 0.0029
+    },
+    {
+     "neighbours": 334,
+     "best_gap": 0.0234,
+     "best_move": "1 Subtlety -> Naturalist",
+     "raced": [
+      "1 Subtlety -> Naturalist",
+      "2 Genesis -> Improved Wrath",
+      "1 Genesis -> Improved Wrath",
+      "1 Improved Regrowth + 1 Subtlety -> 1 Naturalist + 1 Nature's Swiftness"
+     ],
+     "confirmed_gap": 0.0174
+    },
+    {
+     "neighbours": 293,
+     "best_gap": 0.0,
+     "best_move": "3 Furor -> Nature's Focus"
     }
    ],
    "important_features": [
     {
-     "feature": "Reflection",
-     "importance": 0.3651
+     "feature": "Nature's Splendor",
+     "importance": 0.3038
     },
     {
-     "feature": "Nature's Splendor",
-     "importance": 0.2762
+     "feature": "Reflection",
+     "importance": 0.1462
+    },
+    {
+     "feature": "Gift of the Earthmother",
+     "importance": 0.1222
     },
     {
      "feature": "Nature's Majesty",
-     "importance": 0.0993
-    },
-    {
-     "feature": "Balance points",
-     "importance": 0.0418
-    },
-    {
-     "feature": "Tranquil Spirit",
-     "importance": 0.0262
-    },
-    {
-     "feature": "Furor",
-     "importance": 0.0243
-    },
-    {
-     "feature": "Swiftmend",
-     "importance": 0.0214
-    },
-    {
-     "feature": "Gift of Nature",
-     "importance": 0.0186
-    },
-    {
-     "feature": "Restoration points",
-     "importance": 0.0159
-    },
-    {
-     "feature": "Living Spirit",
-     "importance": 0.0157
+     "importance": 0.0947
     },
     {
      "feature": "Subtlety",
-     "importance": 0.0138
+     "importance": 0.0727
     },
     {
-     "feature": "Feral Combat points",
-     "importance": 0.0119
+     "feature": "Nature's Focus",
+     "importance": 0.0581
+    },
+    {
+     "feature": "Tranquil Spirit",
+     "importance": 0.0326
+    },
+    {
+     "feature": "Naturalist",
+     "importance": 0.0246
+    },
+    {
+     "feature": "Living Spirit",
+     "importance": 0.0183
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0152
+    },
+    {
+     "feature": "Heart of the Wild",
+     "importance": 0.0126
+    },
+    {
+     "feature": "Improved Regrowth",
+     "importance": 0.0108
     }
    ],
-   "simulated_builds": 9597,
-   "minutes": 55.3,
+   "simulated_builds": 8327,
+   "minutes": 54.1,
    "policy_changed": true
   },
   {
@@ -307,11 +328,7 @@
       ],
       [
        "Moonglow",
-       1
-      ],
-      [
-       "Improved Moonfire",
-       2
+       3
       ],
       [
        "Nature's Majesty",
@@ -331,19 +348,23 @@
      "Restoration": [
       [
        "Nature's Focus",
-       2
+       1
       ],
       [
        "Furor",
-       3
+       4
       ],
       [
        "Naturalist",
-       2
+       3
+      ],
+      [
+       "Subtlety",
+       1
       ],
       [
        "Natural Shapeshifter",
-       3
+       1
       ],
       [
        "Reflection",
@@ -376,82 +397,46 @@
      ]
     },
     "split": "11/5/35",
-    "dps": 0.6011,
-    "se": 0.0019,
+    "dps": 0.6545,
+    "se": 0.0026,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "11/5/35",
-    "dps": 0.6008,
-    "se": 0.0018,
+    "split": "11/7/33",
+    "dps": 0.6535,
+    "se": 0.0022,
     "differs": [
      [
-      "Furor",
-      3
-     ],
-     [
-      "Furor",
-      5
-     ],
-     [
-      "Improved Moonfire",
-      1
-     ],
-     [
-      "Improved Moonfire",
-      2
-     ],
-     [
       "Improved Regrowth",
-      4
+      3
      ],
      [
       "Improved Regrowth",
       5
      ],
      [
-      "Improved Tranquility",
-      1
-     ],
-     [
-      "Improved Wrath",
+      "Thick Hide",
       2
-     ],
-     [
-      "Moonglow",
-      1
-     ],
-     [
-      "Natural Shapeshifter",
-      3
-     ],
-     [
-      "Nature's Focus",
-      2
-     ],
-     [
-      "Nature's Focus",
-      3
      ]
     ]
    },
-   "gap_to_runner_up": 0.0005,
+   "gap_to_runner_up": 0.0015,
    "runs": [
     {
      "entry": "heal",
      "run": 1,
-     "simulated": 1473,
-     "best_screen": 0.6164,
-     "best_split": "11/4/36",
-     "best_stage1_gap": -0.0437,
+     "simulated": 1673,
+     "best_screen": 0.6743,
+     "best_split": "13/4/34",
+     "best_stage1_gap": -0.0195,
      "agrees_with_winner": false
     },
     {
      "entry": "heal",
      "run": 2,
      "simulated": 1678,
-     "best_screen": 0.6225,
-     "best_split": "11/5/35",
+     "best_screen": 0.6713,
+     "best_split": "11/7/33",
      "best_stage1_gap": 0.0,
      "agrees_with_winner": true
     }
@@ -462,99 +447,126 @@
      "iterations": 60,
      "seed": 2,
      "dps": [
-      0.6104,
-      0.6104,
-      0.6104,
-      0.6104,
-      0.6104,
-      0.6104,
-      0.5837,
-      0.5837,
-      0.5837,
-      0.5837,
-      0.5837,
-      0.5837
+      0.6522,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6396,
+      0.6357,
+      0.6357,
+      0.6357,
+      0.6357,
+      0.6357
      ]
     },
     {
      "iterations": 120,
      "seed": 3,
      "dps": [
-      0.6034,
-      0.6021,
-      0.6021,
-      0.6021,
-      0.6021
+      0.6599,
+      0.6548,
+      0.6491,
+      0.6491,
+      0.6491
      ]
     },
     {
      "iterations": 240,
      "seed": 4,
      "dps": [
-      0.6011,
-      0.6008
+      0.6535,
+      0.6456
+     ]
+    },
+    {
+     "iterations": 240,
+     "seed": 4,
+     "dps": [
+      0.6545,
+      0.6535
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 337,
-     "best_gap": 0.0,
-     "best_move": "3 Natural Shapeshifter -> Subtlety"
+     "neighbours": 338,
+     "best_gap": 0.0029,
+     "best_move": "1 Natural Shapeshifter + 2 Thick Hide -> 2 Naturalist + 1 Nature's Swiftness",
+     "raced": [
+      "1 Natural Shapeshifter + 2 Thick Hide -> 2 Naturalist + 1 Nature's Swiftness",
+      "1 Subtlety + 2 Thick Hide -> 2 Naturalist + 1 Nature's Swiftness",
+      "2 Thick Hide -> Improved Regrowth",
+      "1 Thick Hide -> Improved Regrowth"
+     ],
+     "confirmed_gap": 0.0058
+    },
+    {
+     "neighbours": 335,
+     "best_gap": 0.0348,
+     "best_move": "1 Heart of the Wild -> Improved Tranquility",
+     "raced": [
+      "1 Heart of the Wild -> Improved Tranquility",
+      "1 Heart of the Wild -> Natural Shapeshifter",
+      "1 Heart of the Wild -> Subtlety",
+      "1 Heart of the Wild -> Furor"
+     ],
+     "confirmed_gap": -0.0036
     }
    ],
    "important_features": [
     {
-     "feature": "Reflection",
-     "importance": 0.3264
+     "feature": "Nature's Splendor",
+     "importance": 0.3438
     },
     {
-     "feature": "Nature's Splendor",
-     "importance": 0.2514
+     "feature": "Reflection",
+     "importance": 0.1578
+    },
+    {
+     "feature": "Gift of the Earthmother",
+     "importance": 0.1258
     },
     {
      "feature": "Nature's Majesty",
-     "importance": 0.0693
-    },
-    {
-     "feature": "Subtlety",
-     "importance": 0.0508
-    },
-    {
-     "feature": "Restoration points",
-     "importance": 0.042
-    },
-    {
-     "feature": "Natural Shapeshifter",
-     "importance": 0.0397
-    },
-    {
-     "feature": "Genesis",
-     "importance": 0.0274
-    },
-    {
-     "feature": "Tranquil Spirit",
-     "importance": 0.0252
+     "importance": 0.0801
     },
     {
      "feature": "Balance points",
-     "importance": 0.0195
+     "importance": 0.0349
+    },
+    {
+     "feature": "Tranquil Spirit",
+     "importance": 0.033
+    },
+    {
+     "feature": "Nature's Focus",
+     "importance": 0.0239
     },
     {
      "feature": "Gift of Nature",
-     "importance": 0.0169
+     "importance": 0.02
     },
     {
-     "feature": "Improved Regrowth",
-     "importance": 0.0149
+     "feature": "Living Spirit",
+     "importance": 0.0197
     },
     {
-     "feature": "Feral Combat points",
-     "importance": 0.0132
+     "feature": "Natural Shapeshifter",
+     "importance": 0.0173
+    },
+    {
+     "feature": "Swiftmend",
+     "importance": 0.0168
+    },
+    {
+     "feature": "Heart of the Wild",
+     "importance": 0.0158
     }
    ],
-   "simulated_builds": 3508,
-   "minutes": 20.1,
+   "simulated_builds": 4057,
+   "minutes": 25.9,
    "policy_changed": true
   },
   {
@@ -568,11 +580,7 @@
       ],
       [
        "Moonglow",
-       1
-      ],
-      [
-       "Improved Moonfire",
-       2
+       3
       ],
       [
        "Nature's Majesty",
@@ -592,19 +600,23 @@
      "Restoration": [
       [
        "Nature's Focus",
-       2
+       1
       ],
       [
        "Furor",
-       3
+       4
       ],
       [
        "Naturalist",
-       2
+       3
+      ],
+      [
+       "Subtlety",
+       1
       ],
       [
        "Natural Shapeshifter",
-       3
+       1
       ],
       [
        "Reflection",
@@ -637,26 +649,26 @@
      ]
     },
     "split": "11/5/35",
-    "dps": 0.6011,
-    "se": 0.0019,
+    "dps": 0.6545,
+    "se": 0.0026,
     "iterations": 100000
    },
    "runner_up": {
     "split": "11/5/35",
-    "dps": 0.6011,
-    "se": 0.0019,
+    "dps": 0.6545,
+    "se": 0.0026,
     "differs": [
      [
-      "Improved Moonfire",
-      2
-     ],
-     [
-      "Moonglow",
+      "Natural Shapeshifter",
       1
      ],
      [
-      "Moonglow",
-      3
+      "Natural Shapeshifter",
+      2
+     ],
+     [
+      "Subtlety",
+      1
      ]
     ]
    },
@@ -665,8 +677,8 @@
     {
      "entry": "heal",
      "run": 1,
-     "simulated": 1289,
-     "best_screen": 0.6225,
+     "simulated": 1272,
+     "best_screen": 0.6713,
      "best_split": "11/5/35",
      "best_stage1_gap": 0.0,
      "agrees_with_winner": true
@@ -674,8 +686,8 @@
     {
      "entry": "heal",
      "run": 2,
-     "simulated": 1287,
-     "best_screen": 0.6225,
+     "simulated": 1272,
+     "best_screen": 0.6713,
      "best_split": "11/5/35",
      "best_stage1_gap": 0.0,
      "agrees_with_winner": true
@@ -687,178 +699,107 @@
      "iterations": 60,
      "seed": 2,
      "dps": [
-      0.6104,
-      0.6104,
-      0.6104,
-      0.6104,
-      0.6104,
-      0.6104,
-      0.6104,
-      0.6104,
-      0.5926
+      0.6535,
+      0.6535,
+      0.6535,
+      0.6535,
+      0.6535,
+      0.6535,
+      0.6522,
+      0.6522,
+      0.6522,
+      0.6522,
+      0.6522
      ]
     },
     {
      "iterations": 120,
      "seed": 3,
      "dps": [
-      0.6034,
-      0.6034,
-      0.6034,
-      0.6034,
-      0.6021
+      0.663,
+      0.663,
+      0.663,
+      0.663,
+      0.663
      ]
     },
     {
      "iterations": 240,
      "seed": 4,
      "dps": [
-      0.6011,
-      0.6011
+      0.6545,
+      0.6545
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 337,
-     "best_gap": 0.0,
-     "best_move": "3 Natural Shapeshifter + 1 Tranquil Spirit -> 3 Naturalist + 1 Nature's Swiftness"
+     "neighbours": 335,
+     "best_gap": 0.0145,
+     "best_move": "2 Heart of the Wild -> Naturalist",
+     "raced": [
+      "2 Heart of the Wild -> Naturalist",
+      "3 Heart of the Wild -> 2 Naturalist + 1 Nature's Swiftness",
+      "1 Tranquil Spirit -> Naturalist",
+      "1 Natural Shapeshifter -> Naturalist"
+     ],
+     "confirmed_gap": -0.0014
     }
    ],
    "important_features": [
     {
-     "feature": "Reflection",
-     "importance": 0.309
+     "feature": "Nature's Splendor",
+     "importance": 0.3327
     },
     {
-     "feature": "Nature's Splendor",
-     "importance": 0.3086
+     "feature": "Reflection",
+     "importance": 0.213
     },
     {
      "feature": "Nature's Majesty",
-     "importance": 0.0729
+     "importance": 0.088
     },
     {
-     "feature": "Naturalist",
-     "importance": 0.0646
+     "feature": "Nature's Focus",
+     "importance": 0.0738
     },
     {
      "feature": "Balance points",
-     "importance": 0.038
+     "importance": 0.0477
     },
     {
      "feature": "Gift of the Earthmother",
-     "importance": 0.0239
+     "importance": 0.038
     },
     {
      "feature": "Tranquil Spirit",
-     "importance": 0.0237
+     "importance": 0.0305
     },
     {
-     "feature": "Improved Regrowth",
-     "importance": 0.0184
+     "feature": "Subtlety",
+     "importance": 0.0234
     },
     {
-     "feature": "Gift of Nature",
-     "importance": 0.016
+     "feature": "Living Spirit",
+     "importance": 0.0206
     },
     {
      "feature": "Restoration points",
-     "importance": 0.0139
+     "importance": 0.0165
     },
     {
-     "feature": "Feral Combat points",
-     "importance": 0.0122
+     "feature": "Gift of Nature",
+     "importance": 0.015
     },
     {
-     "feature": "Nature's Swiftness",
-     "importance": 0.0121
+     "feature": "Heart of the Wild",
+     "importance": 0.0115
     }
    ],
-   "simulated_builds": 2930,
-   "minutes": 17.4,
+   "simulated_builds": 2903,
+   "minutes": 17.9,
    "policy_changed": true
   }
  ],
- "converged": 3,
- "two_move": {
-  "steps": [
-   {
-    "one_move": 337,
-    "two_move": 7262,
-    "expanded": 25,
-    "screen": 24,
-    "screen_best": [
-     [
-      "1 Natural Shapeshifter -> Naturalist; then 2 Heart of the Wild + 1 Tranquil Spirit -> 2 Naturalist + 1 Nature's Swiftness",
-      0.0412
-     ],
-     [
-      "2 Heart of the Wild -> Improved Tranquility; then 3 Natural Shapeshifter + 1 Tranquil Spirit -> 3 Naturalist + 1 Nature's Swiftness",
-      0.0412
-     ],
-     [
-      "2 Heart of the Wild -> Subtlety; then 3 Natural Shapeshifter + 1 Tranquil Spirit -> 3 Naturalist + 1 Nature's Swiftness",
-      0.0412
-     ],
-     [
-      "2 Heart of the Wild -> Furor; then 3 Natural Shapeshifter + 1 Tranquil Spirit -> 3 Naturalist + 1 Nature's Swiftness",
-      0.0412
-     ],
-     [
-      "2 Heart of the Wild -> Nature's Focus; then 3 Natural Shapeshifter + 1 Tranquil Spirit -> 3 Naturalist + 1 Nature's Swiftness",
-      0.0412
-     ]
-    ],
-    "raced": 30,
-    "confirmed": [
-     [
-      "1 Natural Shapeshifter -> Naturalist; then 1 Heart of the Wild -> Naturalist",
-      -0.0029
-     ],
-     [
-      "1 Natural Shapeshifter -> Naturalist; then 2 Heart of the Wild + 1 Tranquil Spirit -> 2 Naturalist + 1 Nature's Swiftness",
-      -0.0048
-     ],
-     [
-      "2 Heart of the Wild -> Improved Tranquility; then 3 Natural Shapeshifter + 1 Tranquil Spirit -> 3 Naturalist + 1 Nature's Swiftness",
-      -0.0048
-     ],
-     [
-      "1 Improved Regrowth -> Naturalist; then 2 Heart of the Wild + 1 Living Spirit -> 2 Naturalist + 1 Nature's Swiftness",
-      -0.0067
-     ],
-     [
-      "2 Heart of the Wild -> Improved Wrath; then 2 Genesis -> Naturalist",
-      -0.0155
-     ]
-    ],
-    "minutes": 42.7
-   }
-  ],
-  "moved": false
- },
- "final": {
-  "deep winner": {
-   "capacity": 0.6037,
-   "se": 0.0017
-  },
-  "resto-raid-healer": {
-   "capacity": 0.5894,
-   "se": 0.001
-  },
-  "resto-regrowth-natures-grace": {
-   "capacity": 0.5553,
-   "se": 0.0014
-  },
-  "opt-resto-heal-raid-heal": {
-   "capacity": 0.5894,
-   "se": 0.001
-  }
- },
- "minutes": 145.7,
- "build": {
-  "written": "restoration-ml-heal",
-  "gain_vs_hand": 0.024261961316593084
- }
+ "converged": 3
 }

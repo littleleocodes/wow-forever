@@ -1,6 +1,11 @@
 {
  "allocation": {
-  "Elemental": [],
+  "Elemental": [
+   [
+    "Concussion",
+    1
+   ]
+  ],
   "Enhancement": [
    [
     "Thundering Strikes",
@@ -9,19 +14,11 @@
    [
     "Ancestral Knowledge",
     5
-   ],
-   [
-    "Improved Lightning Shield",
-    3
-   ],
-   [
-    "Anticipation",
-    1
    ]
   ],
   "Restoration": [
    [
-    "Totemic Focus",
+    "Tidal Focus",
     5
    ],
    [
@@ -29,11 +26,15 @@
     3
    ],
    [
-    "Tidal Focus",
-    5
+    "Totemic Focus",
+    4
    ],
    [
     "Ancestral Healing",
+    3
+   ],
+   [
+    "Healing Focus",
     3
    ],
    [
@@ -46,7 +47,7 @@
    ],
    [
     "Restorative Totems",
-    4
+    5
    ],
    [
     "Mana Tide Totem",

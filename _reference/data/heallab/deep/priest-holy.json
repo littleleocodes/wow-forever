@@ -1,7 +1,7 @@
 {
  "class": "priest",
  "spec": "Holy",
- "date": "2026-10-12",
+ "date": "2026-10-21",
  "cycles": [
   {
    "cycle": 1,
@@ -9,15 +9,23 @@
     "allocation": {
      "Discipline": [
       [
-       "Power in Light",
-       1
+       "Wand Specialization",
+       2
       ],
       [
        "Twin Disciplines",
+       4
+      ],
+      [
+       "Holy Precision",
+       1
+      ],
+      [
+       "Mental Strength",
        5
       ],
       [
-       "Silent Resolve",
+       "Inner Focus",
        1
       ],
       [
@@ -25,20 +33,12 @@
        3
       ],
       [
-       "Mental Agility",
-       2
-      ],
-      [
-       "Inner Focus",
-       1
-      ],
-      [
        "Meditation",
        3
       ],
       [
-       "Mental Strength",
-       4
+       "Soul Warding",
+       1
       ],
       [
        "Penance",
@@ -47,24 +47,24 @@
      ],
      "Holy": [
       [
+       "Twilight Focus",
+       2
+      ],
+      [
        "Improved Renew",
-       1
+       3
       ],
       [
        "Holy Specialization",
-       4
+       5
       ],
       [
        "Divine Fury",
-       5
+       3
       ],
       [
        "Holy Nova",
        1
-      ],
-      [
-       "Blessed Recovery",
-       2
       ],
       [
        "Inspiration",
@@ -73,10 +73,6 @@
       [
        "Improved Healing",
        3
-      ],
-      [
-       "Searing Light",
-       1
       ],
       [
        "Litany of Light",
@@ -94,105 +90,69 @@
      "Shadow": []
     },
     "split": "21/30/0",
-    "dps": 0.6722,
-    "se": 0.002,
+    "dps": 0.6967,
+    "se": 0.0013,
     "iterations": 100000
    },
    "runner_up": {
     "split": "21/30/0",
-    "dps": 0.6681,
-    "se": 0.0019,
+    "dps": 0.6881,
+    "se": 0.0024,
     "differs": [
      [
-      "Blessed Recovery",
-      1
+      "Divine Fury",
+      3
      ],
      [
-      "Blessed Recovery",
-      2
-     ],
-     [
-      "Holy Nova",
-      1
-     ],
-     [
-      "Holy Precision",
-      1
-     ],
-     [
-      "Holy Reach",
-      1
-     ],
-     [
-      "Holy Specialization",
-      4
-     ],
-     [
-      "Holy Specialization",
+      "Divine Fury",
       5
      ],
      [
-      "Mental Agility",
+      "Improved Inner Fire",
       2
      ],
      [
-      "Mental Agility",
+      "Mental Strength",
       3
      ],
      [
       "Mental Strength",
-      2
-     ],
-     [
-      "Mental Strength",
-      4
+      5
      ],
      [
       "Power in Light",
       1
      ],
      [
-      "Searing Light",
-      1
+      "Twilight Focus",
+      2
      ],
      [
-      "Soul Warding",
-      1
+      "Twin Disciplines",
+      3
      ],
      [
-      "Spell Warding",
-      1
-     ],
-     [
-      "Spirit of Redemption",
-      1
-     ],
-     [
-      "Spiritual Guidance",
+      "Twin Disciplines",
       4
-     ],
-     [
-      "Spiritual Guidance",
-      5
      ]
     ]
    },
-   "gap_to_runner_up": 0.0062,
+   "gap_to_runner_up": 0.0125,
    "runs": [
     {
      "entry": "heal",
      "run": 1,
-     "simulated": 2613,
-     "best_screen": 0.6957,
+     "simulated": 1832,
+     "best_screen": 0.7079,
      "best_split": "21/30/0",
-     "best_stage1_gap": -0.0038,
-     "agrees_with_winner": false
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
     },
     {
      "entry": "heal",
      "run": 2,
-     "simulated": 2615,
-     "best_screen": 0.6896,
+     "simulated": 2030,
+     "best_screen": 0.7079,
      "best_split": "21/30/0",
      "best_stage1_gap": 0.0,
      "agrees_with_winner": true
@@ -200,454 +160,181 @@
     {
      "entry": "heal",
      "run": 3,
-     "simulated": 2614,
-     "best_screen": 0.6957,
+     "simulated": 1832,
+     "best_screen": 0.7079,
      "best_split": "21/30/0",
-     "best_stage1_gap": -0.0076,
-     "agrees_with_winner": false
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
     },
     {
      "entry": "heal",
      "run": 4,
-     "simulated": 2608,
-     "best_screen": 0.6896,
+     "simulated": 2231,
+     "best_screen": 0.7109,
      "best_split": "21/30/0",
-     "best_stage1_gap": -0.0227,
-     "agrees_with_winner": false
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 60,
-     "seed": 2,
-     "dps": [
-      0.6713,
-      0.6713,
-      0.6713,
-      0.6688,
-      0.6675,
-      0.6662,
-      0.6662,
-      0.6662,
-      0.6662,
-      0.6662,
-      0.6662,
-      0.6662,
-      0.6662,
-      0.6662,
-      0.6662,
-      0.6637,
-      0.6624,
-      0.6624,
-      0.6561,
-      0.6561,
-      0.6561,
-      0.6561,
-      0.6561,
-      0.6561
-     ]
-    },
-    {
-     "iterations": 120,
-     "seed": 3,
-     "dps": [
-      0.6757,
-      0.6681,
-      0.6675,
-      0.6675,
-      0.6675
-     ]
-    },
-    {
-     "iterations": 240,
-     "seed": 4,
-     "dps": [
-      0.6722,
-      0.6681
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 224,
-     "best_gap": 0.0056,
-     "best_move": "2 Holy Specialization -> Improved Renew",
-     "raced": [
-      "2 Holy Specialization -> Improved Renew",
-      "1 Blessed Recovery -> Holy Specialization",
-      "1 Searing Light -> Holy Specialization",
-      "1 Holy Nova -> Holy Specialization"
-     ],
-     "confirmed_gap": -0.0014
-    }
-   ],
-   "important_features": [
-    {
-     "feature": "Meditation",
-     "importance": 0.3539
-    },
-    {
-     "feature": "Discipline points",
-     "importance": 0.2132
-    },
-    {
-     "feature": "Mental Strength",
-     "importance": 0.1258
-    },
-    {
-     "feature": "Shadow points",
-     "importance": 0.0986
-    },
-    {
-     "feature": "Penance",
-     "importance": 0.0414
-    },
-    {
-     "feature": "Twilight Focus",
-     "importance": 0.0409
-    },
-    {
-     "feature": "Inner Focus",
-     "importance": 0.0388
-    },
-    {
-     "feature": "Spirit Tap",
-     "importance": 0.0147
-    },
-    {
-     "feature": "Improved Healing",
-     "importance": 0.011
-    },
-    {
-     "feature": "Holy points",
-     "importance": 0.0101
-    },
-    {
-     "feature": "Litany of Light",
-     "importance": 0.0097
-    },
-    {
-     "feature": "Spiritual Healing",
-     "importance": 0.008
-    }
-   ],
-   "simulated_builds": 10711,
-   "minutes": 67.0,
-   "policy_changed": true
-  },
-  {
-   "cycle": 2,
-   "winner": {
-    "allocation": {
-     "Discipline": [
-      [
-       "Power in Light",
-       2
-      ],
-      [
-       "Wand Specialization",
-       1
-      ],
-      [
-       "Twin Disciplines",
-       3
-      ],
-      [
-       "Silent Resolve",
-       1
-      ],
-      [
-       "Improved Power Word: Shield",
-       1
-      ],
-      [
-       "Martyrdom",
-       2
-      ],
-      [
-       "Mental Agility",
-       3
-      ],
-      [
-       "Inner Focus",
-       1
-      ],
-      [
-       "Meditation",
-       3
-      ],
-      [
-       "Mental Strength",
-       3
-      ],
-      [
-       "Penance",
-       1
-      ]
-     ],
-     "Holy": [
-      [
-       "Improved Renew",
-       3
-      ],
-      [
-       "Holy Specialization",
-       5
-      ],
-      [
-       "Divine Fury",
-       5
-      ],
-      [
-       "Inspiration",
-       3
-      ],
-      [
-       "Holy Reach",
-       1
-      ],
-      [
-       "Improved Healing",
-       3
-      ],
-      [
-       "Litany of Light",
-       2
-      ],
-      [
-       "Spiritual Guidance",
-       5
-      ],
-      [
-       "Spiritual Healing",
-       3
-      ]
-     ],
-     "Shadow": []
-    },
-    "split": "21/30/0",
-    "dps": 0.69,
-    "se": 0.0021,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "21/30/0",
-    "dps": 0.6865,
-    "se": 0.0026,
-    "differs": [
-     [
-      "Divine Fury",
-      4
-     ],
-     [
-      "Divine Fury",
-      5
-     ],
-     [
-      "Holy Reach",
-      1
-     ],
-     [
-      "Holy Reach",
-      2
-     ],
-     [
-      "Mental Agility",
-      2
-     ],
-     [
-      "Mental Agility",
-      3
-     ],
-     [
-      "Mental Strength",
-      3
-     ],
-     [
-      "Mental Strength",
-      4
-     ],
-     [
-      "Power in Light",
-      2
-     ],
-     [
-      "Twin Disciplines",
-      3
-     ],
-     [
-      "Twin Disciplines",
-      5
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0051,
-   "runs": [
-    {
-     "entry": "heal",
-     "run": 1,
-     "simulated": 1475,
-     "best_screen": 0.7018,
-     "best_split": "21/30/0",
-     "best_stage1_gap": -0.0163,
-     "agrees_with_winner": false
-    },
-    {
-     "entry": "heal",
-     "run": 2,
-     "simulated": 1682,
-     "best_screen": 0.7139,
-     "best_split": "21/30/0",
-     "best_stage1_gap": 0.0,
+     "best_stage1_gap": -0.0018,
      "agrees_with_winner": true
     }
    ],
-   "runs_agree": 1,
+   "runs_agree": 4,
    "race": [
     {
      "iterations": 60,
      "seed": 2,
      "dps": [
-      0.6992,
-      0.6992,
-      0.6992,
-      0.6903,
-      0.6903,
-      0.6903,
-      0.6878,
-      0.6865,
-      0.6865,
-      0.6865,
-      0.6865,
-      0.6865
+      0.6941,
+      0.6941,
+      0.6941,
+      0.6941,
+      0.6941,
+      0.6941,
+      0.6941,
+      0.6941,
+      0.6941,
+      0.6941,
+      0.6941,
+      0.6941,
+      0.6941,
+      0.6941,
+      0.6941,
+      0.6941,
+      0.6941,
+      0.6941,
+      0.6929,
+      0.6929,
+      0.6929,
+      0.6929,
+      0.6929,
+      0.6929
      ]
     },
     {
      "iterations": 120,
      "seed": 3,
      "dps": [
-      0.6903,
-      0.6903,
-      0.6884,
-      0.6872,
-      0.6872
+      0.6891,
+      0.6891,
+      0.6891,
+      0.6891,
+      0.6891
      ]
     },
     {
      "iterations": 240,
      "seed": 4,
      "dps": [
-      0.69,
-      0.69
+      0.6881,
+      0.6881
      ]
     },
     {
      "iterations": 240,
      "seed": 4,
      "dps": [
-      0.69,
-      0.6865
+      0.6967,
+      0.6881
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 269,
-     "best_gap": 0.0193,
-     "best_move": "2 Mental Agility -> Mental Strength",
+     "neighbours": 236,
+     "best_gap": 0.0082,
+     "best_move": "2 Divine Fury -> Holy Reach",
      "raced": [
-      "2 Mental Agility -> Mental Strength",
-      "2 Martyrdom -> Twin Disciplines",
-      "1 Divine Fury -> Binding Heal",
-      "1 Divine Fury -> Holy Reach"
+      "2 Divine Fury -> Holy Reach",
+      "2 Divine Fury -> Blessed Recovery",
+      "2 Divine Fury -> Spell Warding",
+      "2 Divine Fury -> Twilight Focus"
      ],
-     "confirmed_gap": 0.0097
+     "confirmed_gap": 0.009
     },
     {
-     "neighbours": 314,
-     "best_gap": 0.0027,
-     "best_move": "2 Martyrdom -> Twin Disciplines",
+     "neighbours": 324,
+     "best_gap": 0.0252,
+     "best_move": "2 Improved Inner Fire -> Mental Strength",
      "raced": [
-      "2 Martyrdom -> Twin Disciplines",
-      "2 Power in Light -> Twin Disciplines"
+      "2 Improved Inner Fire -> Mental Strength",
+      "3 Improved Renew + 1 Spiritual Guidance -> 2 Divine Fury + 2 Searing Light",
+      "2 Improved Renew + 1 Spiritual Guidance -> 2 Divine Fury + 1 Searing Light",
+      "2 Mental Strength -> Twin Disciplines"
+     ],
+     "confirmed_gap": 0.0132
+    },
+    {
+     "neighbours": 324,
+     "best_gap": 0.0194,
+     "best_move": "1 Holy Precision -> Twin Disciplines",
+     "raced": [
+      "1 Holy Precision -> Twin Disciplines",
+      "1 Wand Specialization -> Twin Disciplines",
+      "1 Power in Light -> Twin Disciplines",
+      "1 Soul Warding -> Twin Disciplines"
      ],
      "confirmed_gap": 0.0055
     },
     {
-     "neighbours": 296,
-     "best_gap": 0.0083,
-     "best_move": "3 Divine Fury -> Spell Warding",
-     "raced": [
-      "3 Divine Fury -> Spell Warding",
-      "3 Divine Fury -> Twilight Focus",
-      "1 Mental Agility -> Mental Strength",
-      "1 Improved Renew + 1 Holy Reach -> 1 Divine Fury + 1 Searing Light"
-     ],
-     "confirmed_gap": 0.0028
-    },
-    {
-     "neighbours": 289,
+     "neighbours": 314,
      "best_gap": 0.0,
-     "best_move": "2 Martyrdom -> Improved Power Word: Shield"
+     "best_move": "1 Twilight Focus -> Binding Heal"
     }
    ],
    "important_features": [
     {
      "feature": "Meditation",
-     "importance": 0.3487
+     "importance": 0.4368
     },
     {
      "feature": "Discipline points",
-     "importance": 0.3279
-    },
-    {
-     "feature": "Mental Strength",
-     "importance": 0.1138
-    },
-    {
-     "feature": "Penance",
-     "importance": 0.0732
+     "importance": 0.172
     },
     {
      "feature": "Shadow points",
-     "importance": 0.053
+     "importance": 0.1583
+    },
+    {
+     "feature": "Penance",
+     "importance": 0.0813
     },
     {
      "feature": "Holy points",
-     "importance": 0.0142
+     "importance": 0.0351
     },
     {
-     "feature": "Mental Agility",
-     "importance": 0.0129
+     "feature": "Inner Focus",
+     "importance": 0.0344
     },
     {
-     "feature": "Improved Healing",
-     "importance": 0.0106
-    },
-    {
-     "feature": "Spell Warding",
-     "importance": 0.0068
-    },
-    {
-     "feature": "Litany of Light",
-     "importance": 0.0055
+     "feature": "Mental Strength",
+     "importance": 0.0229
     },
     {
      "feature": "Spiritual Healing",
-     "importance": 0.0051
+     "importance": 0.0072
     },
     {
-     "feature": "Spiritual Guidance",
-     "importance": 0.0047
+     "feature": "Improved Healing",
+     "importance": 0.0057
+    },
+    {
+     "feature": "Spell Warding",
+     "importance": 0.0053
+    },
+    {
+     "feature": "Litany of Light",
+     "importance": 0.0048
+    },
+    {
+     "feature": "Improved Power Word: Shield",
+     "importance": 0.0048
     }
    ],
-   "simulated_builds": 4363,
-   "minutes": 32.8,
+   "simulated_builds": 9175,
+   "minutes": 62.3,
    "policy_changed": true
   },
   {
-   "cycle": 3,
+   "cycle": 2,
    "winner": {
     "allocation": {
      "Discipline": [
@@ -672,24 +359,28 @@
        1
       ],
       [
-       "Improved Power Word: Shield",
+       "Mental Strength",
        3
       ],
       [
        "Mental Agility",
-       3
+       2
       ],
       [
        "Inner Focus",
        1
       ],
       [
+       "Improved Power Word: Shield",
+       3
+      ],
+      [
        "Meditation",
        3
       ],
       [
-       "Mental Strength",
-       3
+       "Soul Warding",
+       1
       ],
       [
        "Penance",
@@ -698,8 +389,12 @@
      ],
      "Holy": [
       [
+       "Twilight Focus",
+       2
+      ],
+      [
        "Improved Renew",
-       3
+       2
       ],
       [
        "Holy Specialization",
@@ -707,11 +402,15 @@
       ],
       [
        "Divine Fury",
-       5
+       1
       ],
       [
        "Holy Nova",
        1
+      ],
+      [
+       "Blessed Recovery",
+       3
       ],
       [
        "Inspiration",
@@ -737,35 +436,297 @@
      "Shadow": []
     },
     "split": "21/30/0",
-    "dps": 0.69,
-    "se": 0.0021,
+    "dps": 0.6935,
+    "se": 0.0019,
     "iterations": 100000
    },
    "runner_up": {
     "split": "21/30/0",
-    "dps": 0.6865,
-    "se": 0.0026,
+    "dps": 0.6932,
+    "se": 0.002,
     "differs": [
      [
-      "Blessed Recovery",
+      "Improved Mana Burn",
       1
-     ],
-     [
-      "Divine Fury",
-      4
-     ],
-     [
-      "Divine Fury",
-      5
      ],
      [
       "Improved Power Word: Shield",
-      1
+      2
      ],
      [
       "Improved Power Word: Shield",
       3
      ],
+     [
+      "Soul Warding",
+      1
+     ],
+     [
+      "Twin Disciplines",
+      3
+     ],
+     [
+      "Twin Disciplines",
+      4
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0005,
+   "runs": [
+    {
+     "entry": "heal",
+     "run": 1,
+     "simulated": 1687,
+     "best_screen": 0.7079,
+     "best_split": "21/30/0",
+     "best_stage1_gap": -0.0055,
+     "agrees_with_winner": false
+    },
+    {
+     "entry": "heal",
+     "run": 2,
+     "simulated": 1488,
+     "best_screen": 0.7079,
+     "best_split": "21/30/0",
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 60,
+     "seed": 2,
+     "dps": [
+      0.6954,
+      0.6954,
+      0.6941,
+      0.6941,
+      0.6941,
+      0.6941,
+      0.6916,
+      0.6916,
+      0.6916,
+      0.6916,
+      0.6916,
+      0.6916
+     ]
+    },
+    {
+     "iterations": 120,
+     "seed": 3,
+     "dps": [
+      0.6916,
+      0.6916,
+      0.6916,
+      0.691,
+      0.691
+     ]
+    },
+    {
+     "iterations": 240,
+     "seed": 4,
+     "dps": [
+      0.6932,
+      0.6932
+     ]
+    },
+    {
+     "iterations": 240,
+     "seed": 4,
+     "dps": [
+      0.6935,
+      0.6932
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 362,
+     "best_gap": 0.0082,
+     "best_move": "1 Twin Disciplines + 1 Improved Mana Burn -> 1 Improved Power Word: Shield + 1 Soul Warding",
+     "raced": [
+      "1 Twin Disciplines + 1 Improved Mana Burn -> 1 Improved Power Word: Shield + 1 Soul Warding",
+      "1 Twin Disciplines -> Mental Agility",
+      "3 Twin Disciplines -> Power in Light",
+      "2 Twin Disciplines -> Power in Light"
+     ],
+     "confirmed_gap": 0.0014
+    },
+    {
+     "neighbours": 263,
+     "best_gap": 0.0027,
+     "best_move": "1 Holy Specialization -> Spell Warding",
+     "raced": [
+      "1 Holy Specialization -> Spell Warding",
+      "1 Holy Specialization -> Improved Renew",
+      "1 Holy Specialization -> Twilight Focus"
+     ],
+     "confirmed_gap": -0.0027
+    }
+   ],
+   "important_features": [
+    {
+     "feature": "Meditation",
+     "importance": 0.4125
+    },
+    {
+     "feature": "Discipline points",
+     "importance": 0.2192
+    },
+    {
+     "feature": "Shadow points",
+     "importance": 0.1211
+    },
+    {
+     "feature": "Penance",
+     "importance": 0.0832
+    },
+    {
+     "feature": "Mental Strength",
+     "importance": 0.0353
+    },
+    {
+     "feature": "Spell Warding",
+     "importance": 0.0256
+    },
+    {
+     "feature": "Spirit Tap",
+     "importance": 0.0177
+    },
+    {
+     "feature": "Spiritual Healing",
+     "importance": 0.0125
+    },
+    {
+     "feature": "Holy points",
+     "importance": 0.0111
+    },
+    {
+     "feature": "Litany of Light",
+     "importance": 0.0079
+    },
+    {
+     "feature": "Improved Healing",
+     "importance": 0.0072
+    },
+    {
+     "feature": "Shadow Focus",
+     "importance": 0.0072
+    }
+   ],
+   "simulated_builds": 3832,
+   "minutes": 27.4,
+   "policy_changed": true
+  },
+  {
+   "cycle": 3,
+   "winner": {
+    "allocation": {
+     "Discipline": [
+      [
+       "Power in Light",
+       1
+      ],
+      [
+       "Wand Specialization",
+       2
+      ],
+      [
+       "Twin Disciplines",
+       2
+      ],
+      [
+       "Holy Precision",
+       1
+      ],
+      [
+       "Mental Strength",
+       5
+      ],
+      [
+       "Mental Agility",
+       2
+      ],
+      [
+       "Inner Focus",
+       1
+      ],
+      [
+       "Improved Power Word: Shield",
+       3
+      ],
+      [
+       "Meditation",
+       3
+      ],
+      [
+       "Penance",
+       1
+      ]
+     ],
+     "Holy": [
+      [
+       "Twilight Focus",
+       2
+      ],
+      [
+       "Improved Renew",
+       2
+      ],
+      [
+       "Holy Specialization",
+       5
+      ],
+      [
+       "Divine Fury",
+       1
+      ],
+      [
+       "Holy Nova",
+       1
+      ],
+      [
+       "Blessed Recovery",
+       2
+      ],
+      [
+       "Inspiration",
+       3
+      ],
+      [
+       "Improved Healing",
+       3
+      ],
+      [
+       "Binding Heal",
+       1
+      ],
+      [
+       "Litany of Light",
+       2
+      ],
+      [
+       "Spiritual Guidance",
+       5
+      ],
+      [
+       "Spiritual Healing",
+       3
+      ]
+     ],
+     "Shadow": []
+    },
+    "split": "21/30/0",
+    "dps": 0.6932,
+    "se": 0.002,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "21/30/0",
+    "dps": 0.6922,
+    "se": 0.0019,
+    "differs": [
      [
       "Mental Agility",
       2
@@ -775,30 +736,22 @@
       3
      ],
      [
-      "Mental Strength",
+      "Twin Disciplines",
       3
      ],
      [
-      "Mental Strength",
+      "Twin Disciplines",
       4
-     ],
-     [
-      "Twin Disciplines",
-      3
-     ],
-     [
-      "Twin Disciplines",
-      5
      ]
     ]
    },
-   "gap_to_runner_up": 0.0051,
+   "gap_to_runner_up": 0.0014,
    "runs": [
     {
      "entry": "heal",
      "run": 1,
-     "simulated": 1690,
-     "best_screen": 0.72,
+     "simulated": 1486,
+     "best_screen": 0.7079,
      "best_split": "21/30/0",
      "best_stage1_gap": 0.0,
      "agrees_with_winner": true
@@ -806,8 +759,8 @@
     {
      "entry": "heal",
      "run": 2,
-     "simulated": 1285,
-     "best_screen": 0.72,
+     "simulated": 1688,
+     "best_screen": 0.7079,
      "best_split": "21/30/0",
      "best_stage1_gap": 0.0,
      "agrees_with_winner": true
@@ -819,217 +772,258 @@
      "iterations": 60,
      "seed": 2,
      "dps": [
-      0.6903,
-      0.6903,
-      0.6903,
-      0.6903,
-      0.6903,
-      0.6903,
-      0.6903,
-      0.6903,
-      0.6903,
-      0.6903,
-      0.6903,
-      0.6903
+      0.6941,
+      0.6941,
+      0.6941,
+      0.6941,
+      0.6941,
+      0.6941,
+      0.6941,
+      0.6941,
+      0.6941,
+      0.6916,
+      0.6916
      ]
     },
     {
      "iterations": 120,
      "seed": 3,
      "dps": [
-      0.6903,
-      0.6903,
-      0.6903,
-      0.6903,
-      0.6903
+      0.6922,
+      0.6922,
+      0.6922,
+      0.6922,
+      0.6922
      ]
     },
     {
      "iterations": 240,
      "seed": 4,
      "dps": [
-      0.69,
-      0.69
+      0.6932,
+      0.6932
      ]
     },
     {
      "iterations": 240,
      "seed": 4,
      "dps": [
-      0.69,
-      0.6865
+      0.6932,
+      0.6922
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 245,
-     "best_gap": 0.0137,
-     "best_move": "2 Mental Agility -> Mental Strength",
+     "neighbours": 314,
+     "best_gap": 0.0082,
+     "best_move": "1 Twin Disciplines -> Soul Warding",
      "raced": [
-      "2 Mental Agility -> Mental Strength",
-      "1 Divine Fury -> Binding Heal",
-      "1 Divine Fury -> Holy Reach",
-      "1 Divine Fury -> Blessed Recovery"
+      "1 Twin Disciplines -> Soul Warding",
+      "1 Twin Disciplines -> Mental Agility",
+      "2 Twin Disciplines -> Martyrdom",
+      "2 Twin Disciplines -> Holy Precision"
      ],
-     "confirmed_gap": 0.0097
+     "confirmed_gap": 0.0014
     },
     {
-     "neighbours": 342,
-     "best_gap": 0.0027,
-     "best_move": "2 Improved Power Word: Shield -> Twin Disciplines",
+     "neighbours": 280,
+     "best_gap": 0.0055,
+     "best_move": "1 Spiritual Guidance -> Divine Fury",
      "raced": [
-      "2 Improved Power Word: Shield -> Twin Disciplines"
+      "1 Spiritual Guidance -> Divine Fury",
+      "1 Inspiration -> Binding Heal",
+      "1 Inspiration -> Holy Reach",
+      "1 Inspiration -> Spell Warding"
      ],
-     "confirmed_gap": 0.0062
-    },
-    {
-     "neighbours": 369,
-     "best_gap": 0.0083,
-     "best_move": "3 Divine Fury -> Spell Warding",
-     "raced": [
-      "3 Divine Fury -> Spell Warding",
-      "3 Divine Fury -> Twilight Focus",
-      "1 Mental Agility -> Mental Strength",
-      "2 Improved Renew + 1 Blessed Recovery -> 1 Divine Fury + 2 Searing Light"
-     ],
-     "confirmed_gap": 0.0028
-    },
-    {
-     "neighbours": 363,
-     "best_gap": 0.0,
-     "best_move": "1 Blessed Recovery -> Binding Heal"
+     "confirmed_gap": -0.0117
     }
    ],
    "important_features": [
     {
      "feature": "Meditation",
-     "importance": 0.3623
+     "importance": 0.3893
     },
     {
      "feature": "Discipline points",
-     "importance": 0.2464
+     "importance": 0.2303
     },
     {
      "feature": "Penance",
-     "importance": 0.1143
+     "importance": 0.1051
     },
     {
      "feature": "Shadow points",
-     "importance": 0.1035
+     "importance": 0.0986
     },
     {
      "feature": "Mental Strength",
-     "importance": 0.0715
+     "importance": 0.0456
     },
     {
      "feature": "Holy points",
-     "importance": 0.022
+     "importance": 0.0231
     },
     {
      "feature": "Improved Healing",
-     "importance": 0.0169
+     "importance": 0.0155
     },
     {
-     "feature": "Inner Focus",
-     "importance": 0.0105
+     "feature": "Blackout",
+     "importance": 0.0145
     },
     {
      "feature": "Litany of Light",
-     "importance": 0.0085
+     "importance": 0.0114
     },
     {
-     "feature": "Mental Agility",
-     "importance": 0.0078
-    },
-    {
-     "feature": "Spell Warding",
-     "importance": 0.0046
+     "feature": "Inner Focus",
+     "importance": 0.0108
     },
     {
      "feature": "Spiritual Healing",
-     "importance": 0.0043
+     "importance": 0.0095
+    },
+    {
+     "feature": "Divine Fury",
+     "importance": 0.0074
     }
    ],
-   "simulated_builds": 4331,
-   "minutes": 33.3,
+   "simulated_builds": 3800,
+   "minutes": 27.0,
    "policy_changed": true
   }
  ],
  "two_move": {
   "steps": [
    {
-    "one_move": 245,
-    "two_move": 5307,
+    "one_move": 314,
+    "two_move": 6388,
     "expanded": 25,
     "screen": 24,
     "screen_best": [
      [
-      "1 Spiritual Guidance -> Spirit of Redemption",
-      0.0264
+      "2 Mental Agility -> Mental Strength; then 2 Blessed Recovery -> Divine Fury",
+      0.0587
      ],
      [
-      "1 Spiritual Guidance -> Binding Heal",
-      0.0264
+      "2 Mental Agility -> Mental Strength; then 2 Improved Renew -> Divine Fury",
+      0.0587
      ],
      [
-      "1 Spiritual Guidance -> Searing Light",
-      0.0264
+      "2 Mental Agility -> Mental Strength; then 2 Twilight Focus -> Divine Fury",
+      0.0587
      ],
      [
-      "1 Spiritual Guidance -> Holy Reach",
-      0.0264
+      "2 Twin Disciplines -> Mental Strength; then 1 Blessed Recovery -> Binding Heal",
+      0.0587
      ],
      [
-      "1 Spiritual Guidance -> Blessed Recovery",
-      0.0264
+      "2 Twin Disciplines -> Mental Strength; then 2 Blessed Recovery -> Holy Reach",
+      0.0587
      ]
     ],
     "raced": 30,
     "confirmed": [
      [
-      "1 Holy Specialization -> Blessed Recovery; then 2 Improved Renew -> Searing Light",
-      -0.0069
+      "2 Twin Disciplines -> Mental Strength; then 1 Blessed Recovery -> Binding Heal",
+      0.0014
      ],
      [
-      "1 Holy Specialization -> Blessed Recovery; then 2 Improved Renew -> Holy Reach",
-      -0.0069
+      "2 Twin Disciplines -> Mental Strength; then 2 Blessed Recovery -> Holy Reach",
+      0.0014
      ],
      [
-      "1 Holy Specialization -> Blessed Recovery; then 2 Improved Renew -> Blessed Recovery",
-      -0.0069
+      "2 Twin Disciplines -> Mental Strength; then 1 Blessed Recovery -> Holy Reach",
+      0.0014
      ],
      [
-      "1 Holy Specialization -> Blessed Recovery; then 2 Improved Renew -> Spell Warding",
-      -0.0069
+      "2 Twin Disciplines -> Mental Strength; then 3 Blessed Recovery -> Spell Warding",
+      0.0014
      ],
      [
-      "1 Holy Specialization -> Blessed Recovery; then 3 Improved Renew -> Twilight Focus",
-      -0.0069
+      "2 Twin Disciplines -> Mental Strength; then 2 Blessed Recovery -> Spell Warding",
+      0.0014
      ]
     ],
-    "minutes": 33.1
+    "minutes": 38.9
+   },
+   {
+    "one_move": 272,
+    "two_move": 6197,
+    "expanded": 25,
+    "screen": 24,
+    "screen_best": [
+     [
+      "2 Mental Agility -> Twin Disciplines; then 2 Improved Renew -> Spell Warding",
+      0.0446
+     ],
+     [
+      "2 Improved Power Word: Shield -> Twin Disciplines; then 2 Blessed Recovery -> Divine Fury",
+      0.0401
+     ],
+     [
+      "2 Improved Power Word: Shield -> Twin Disciplines; then 2 Twilight Focus -> Divine Fury",
+      0.0401
+     ],
+     [
+      "1 Holy Precision -> Improved Mana Burn; then 2 Mental Agility -> Improved Inner Fire",
+      0.0401
+     ],
+     [
+      "1 Holy Precision -> Improved Mana Burn; then 2 Mental Agility -> Martyrdom",
+      0.0401
+     ]
+    ],
+    "raced": 30,
+    "confirmed": [
+     [
+      "1 Holy Precision -> Improved Mana Burn; then 2 Mental Agility -> Improved Inner Fire",
+      -0.0011
+     ],
+     [
+      "1 Holy Precision -> Improved Mana Burn; then 2 Mental Agility -> Martyrdom",
+      -0.0011
+     ],
+     [
+      "1 Holy Precision -> Improved Mana Burn; then 2 Mental Agility -> Holy Precision",
+      -0.0011
+     ],
+     [
+      "1 Holy Precision -> Improved Mana Burn; then 2 Mental Agility -> Silent Resolve",
+      -0.0011
+     ],
+     [
+      "1 Holy Precision -> Improved Mana Burn; then 2 Mental Agility -> Power in Light",
+      -0.0011
+     ]
+    ],
+    "minutes": 38.0
    }
   ],
-  "moved": false
+  "moved": true
  },
  "final": {
   "deep winner": {
-   "capacity": 0.6941,
-   "se": 0.0013
+   "capacity": 0.696,
+   "se": 0.0014
   },
   "holy-raid-healer": {
-   "capacity": 0.6888,
-   "se": 0.0019
+   "capacity": 0.6919,
+   "se": 0.0017
+  },
+  "holy-ml-heal": {
+   "capacity": 0.6911,
+   "se": 0.0016
   },
   "opt-holy-heal-raid-heal": {
-   "capacity": 0.6888,
-   "se": 0.0019
+   "capacity": 0.6983,
+   "se": 0.0009
   }
  },
- "minutes": 104.8,
+ "minutes": 206.4,
  "build": {
-  "written": "holy-ml-heal",
-  "gain_vs_hand": 0.0076945412311266725
+  "written": null,
+  "why": "confirms opt-holy-heal-raid-heal (-0.33%)"
  }
 }
