@@ -1,419 +1,504 @@
 {
  "class": "warlock",
  "spec": "affliction-leveling",
- "profile": "leveling-aoe",
+ "profile": "leveling-st",
  "levels": [
-  40,
+  30,
   60
  ],
  "fights": 1500,
  "builds": [
-  "opt-affliction-leveling-leveling-aoe",
-  "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-aoe-r1.json",
-  "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-aoe-r2.json",
-  "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-aoe-r3.json",
-  "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-aoe-r4.json",
-  "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-aoe-r5.json",
-  "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-aoe-r6.json",
-  "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-aoe-r7.json",
-  "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-aoe-r8.json"
+  "opt-affliction-leveling-leveling-st",
+  "leveling-affliction",
+  "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-hand-2026-09-28.json",
+  "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r1.json",
+  "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r10.json",
+  "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r11.json",
+  "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r2.json",
+  "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r3.json",
+  "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r4.json",
+  "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r5.json",
+  "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r6.json",
+  "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r7.json",
+  "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r8.json",
+  "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r9.json"
  ],
  "shares": {
-  "Rain of Fire": 0.6884311576270172,
-  "Voidwalker melee": 0.08928314792364075,
-  "Corruption": 0.07893622374780132,
-  "Bane of Agony": 0.06428871006402534,
-  "Immolate": 0.04158073194126256,
-  "Wand": 0.023352493066482693,
-  "Drain Life": 0.008215853471665523,
-  "Death Coil": 0.0054429265698831405,
-  "Shadow Bolt": 0.00046875558822145565
+  "Bane of Agony": 0.2094754058927923,
+  "Corruption": 0.2020186571409638,
+  "Shadow Bolt": 0.16488273103174578,
+  "Wand": 0.15777305001613934,
+  "Voidwalker melee": 0.11832073476822201,
+  "Siphon Life": 0.09088526915605268,
+  "Immolate": 0.03374616622965019,
+  "Drain Life": 0.022727505625407474,
+  "Death Coil": 0.00017048013902652503
  },
  "time_split": {
-  "fight": 0.778,
-  "drink": 0.043,
-  "eat": 0.075,
+  "fight": 0.719,
+  "drink": 0.193,
+  "eat": 0.04,
   "other": 0.0,
-  "death": 0.104
+  "death": 0.048
  },
  "talents": [
   {
-   "talent": "Soul Link",
-   "sim": 1.0410044726072345,
-   "ev_before": 0.4120677264282625,
-   "ev_after": 0.4175964088354984,
-   "scale": 1.0,
-   "how": "capped",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.9081809943410196,
-     "ev": 0.4251725009370836
-    },
-    {
-     "level": 60,
-     "sim": 1.1738279508734493,
-     "ev": 0.41002031673391326
-    }
-   ]
-  },
-  {
-   "talent": "Molten Skin",
-   "sim": 0.37997060587745196,
-   "ev_before": 0.02912538379080896,
-   "ev_after": 0.05856160099694848,
-   "scale": 2.520974507905776,
-   "how": "capped",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.6350737107346935,
-     "ev": 0.10493408428738589
-    },
-    {
-     "level": 60,
-     "sim": 0.1248675010202104,
-     "ev": 0.012189117706511066
-    }
-   ]
-  },
-  {
    "talent": "Demonic Knowledge",
-   "sim": 0.09284199796495672,
-   "ev_before": 0.0768308361787573,
-   "ev_after": 0.07673763617170148,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.08107723822366031,
-     "ev": 0.07649361330273198
-    },
-    {
-     "level": 60,
-     "sim": 0.10460675770625313,
-     "ev": 0.07698165904067097
-    }
-   ]
-  },
-  {
-   "talent": "Improved Corruption",
-   "sim": 0.09134763099241228,
-   "ev_before": 0.09770457636189427,
-   "ev_after": 0.09772840162339005,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.07359167527553112,
-     "ev": 0.09376409198905562
-    },
-    {
-     "level": 60,
-     "sim": 0.10910358670929345,
-     "ev": 0.10169271125772449
-    }
-   ]
-  },
-  {
-   "talent": "Demonic Embrace",
-   "sim": 0.040580045588986105,
-   "ev_before": 0.021695944050626192,
-   "ev_after": 0.025567167312966425,
-   "scale": 1.0,
-   "how": "capped",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.03936670854073834,
-     "ev": 0.031137500800625387
-    },
-    {
-     "level": 60,
-     "sim": 0.04179338263723387,
-     "ev": 0.01999683382530746
-    }
-   ]
-  },
-  {
-   "talent": "Malediction",
-   "sim": 0.037576526985321386,
-   "ev_before": 0.026807423599878748,
-   "ev_after": 0.0377453978547661,
-   "scale": 1.3935101041570306,
+   "sim": 0.050813364749802525,
+   "ev_before": 0.03830226422802488,
+   "ev_after": 0.05046327443972759,
+   "scale": 1.3182804314419627,
    "how": "fitted",
    "per_level": [
     {
-     "level": 40,
-     "sim": 0.05267064602725304,
-     "ev": 0.03691307220505012
-    },
-    {
-     "level": 60,
-     "sim": 0.022482407943389734,
-     "ev": 0.038577723504482075
-    }
-   ]
-  },
-  {
-   "talent": "Shadowburn",
-   "sim": 0.03714020421524632,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "dead",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.046820169281791314,
-     "ev": 0.0
-    },
-    {
-     "level": 60,
-     "sim": 0.027460239148701326,
-     "ev": 0.0
-    }
-   ]
-  },
-  {
-   "talent": "Improved Voidwalker",
-   "sim": 0.034291901003100145,
-   "ev_before": 0.00488571764988625,
-   "ev_after": 0.004861466956764477,
-   "scale": 1.0,
-   "how": "capped",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.013566042465373556,
-     "ev": 0.004819688011035219
-    },
-    {
-     "level": 60,
-     "sim": 0.05501775954082673,
-     "ev": 0.004903245902493734
-    }
-   ]
-  },
-  {
-   "talent": "Bane",
-   "sim": 0.0329658070744002,
-   "ev_before": 0.01097027949815264,
-   "ev_after": 0.01140981344155216,
-   "scale": 1.0,
-   "how": "capped",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.07713805565623885,
-     "ev": 0.007761305112239649
-    },
-    {
-     "level": 60,
-     "sim": -0.011206441507438446,
-     "ev": 0.015058321770864672
-    }
-   ]
-  },
-  {
-   "talent": "Improved Bane of Agony",
-   "sim": 0.032297606966494564,
-   "ev_before": 0.03293193821912552,
-   "ev_after": 0.034138139231405296,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.041210103208757155,
-     "ev": 0.03379797057499444
-    },
-    {
-     "level": 60,
-     "sim": 0.02338511072423197,
-     "ev": 0.03447830788781615
-    }
-   ]
-  },
-  {
-   "talent": "Shadow Mastery",
-   "sim": 0.021958473826471796,
-   "ev_before": 0.0,
-   "ev_after": 0.0219808298069769,
-   "scale": 4.037824999541044,
-   "how": "fitted",
-   "per_level": [
-    {
-     "level": 40,
+     "level": 30,
      "sim": null,
      "ev": null
     },
     {
      "level": 60,
-     "sim": 0.021958473826471796,
-     "ev": 0.0219808298069769
+     "sim": 0.050813364749802525,
+     "ev": 0.05046327443972759
+    }
+   ]
+  },
+  {
+   "talent": "Siphon Life",
+   "sim": 0.03769428364971968,
+   "ev_before": 0.06650550556511059,
+   "ev_after": 0.06718166452858346,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.007298968298371724,
+     "ev": 0.0674155277378765
+    },
+    {
+     "level": 60,
+     "sim": 0.06808959900106765,
+     "ev": 0.06694780131929043
     }
    ]
   },
   {
    "talent": "Suppression",
-   "sim": 0.013545017129892683,
-   "ev_before": 0.022718128429904054,
-   "ev_after": 0.013730817819481338,
-   "scale": 0.26954999985173345,
-   "how": "fitted",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.011791477438218926,
-     "ev": 0.007739418031320825
-    },
-    {
-     "level": 60,
-     "sim": 0.01529855682156644,
-     "ev": 0.01972221760764185
-    }
-   ]
-  },
-  {
-   "talent": "Unholy Power",
-   "sim": 0.012674006215849139,
-   "ev_before": 0.029311732557792118,
-   "ev_after": 0.012773970606025175,
-   "scale": 0.43242092290893197,
-   "how": "fitted",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.023985978939135198,
-     "ev": 0.013422904834971862
-    },
-    {
-     "level": 60,
-     "sim": 0.0013620334925630803,
-     "ev": 0.012125036377078489
-    }
-   ]
-  },
-  {
-   "talent": "Aftermath",
-   "sim": 0.011926678119188497,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "dead",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.024104267103488283,
-     "ev": 0.0
-    },
-    {
-     "level": 60,
-     "sim": -0.00025091086511128927,
-     "ev": 0.0
-    }
-   ]
-  },
-  {
-   "talent": "Agonizing Flames",
-   "sim": 0.010027075188328145,
-   "ev_before": 0.009902550421991476,
-   "ev_after": 0.009900667637482,
+   "sim": 0.03482776612262471,
+   "ev_before": 0.01389130240931333,
+   "ev_after": 0.03389722946181353,
    "scale": 1.0,
    "how": "kept",
    "per_level": [
     {
-     "level": 40,
-     "sim": 0.009795717949504028,
-     "ev": 0.00979688736445073
+     "level": 30,
+     "sim": 0.016447345627499957,
+     "ev": 0.033869770541555495
     },
     {
      "level": 60,
-     "sim": 0.010258432427152263,
-     "ev": 0.010004447910513267
+     "sim": 0.05320818661774947,
+     "ev": 0.03392468838207157
     }
    ]
   },
   {
-   "talent": "Demonic Energies",
-   "sim": 0.004199632362209278,
-   "ev_before": 0.0039148453769765066,
-   "ev_after": 0.0038954136945381227,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": 0.0027933156348101053,
-     "ev": 0.0038619369109284493
-    },
-    {
-     "level": 60,
-     "sim": 0.005605949089608451,
-     "ev": 0.003928890478147796
-    }
-   ]
-  },
-  {
-   "talent": "Demonic Aegis",
-   "sim": 0.0041753153499831325,
-   "ev_before": 0.011291430703742077,
-   "ev_after": 0.0041751412750481685,
-   "scale": 0.3553808596916497,
+   "talent": "Shadow Mastery",
+   "sim": 0.023387687680927086,
+   "ev_before": 0.008689837930017638,
+   "ev_after": 0.021739402180788465,
+   "scale": 2.493486313149333,
    "how": "fitted",
    "per_level": [
     {
-     "level": 40,
-     "sim": -0.010857841001341304,
-     "ev": 0.005334479250032723
-    },
-    {
-     "level": 60,
-     "sim": 0.01920847170130757,
-     "ev": 0.003015803300063613
-    }
-   ]
-  },
-  {
-   "talent": "Amplify Curse",
-   "sim": 0.002132611849285528,
-   "ev_before": 0.0007689049305706594,
-   "ev_after": 0.0008461073646641837,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
+     "level": 30,
      "sim": null,
      "ev": null
     },
     {
      "level": 60,
-     "sim": 0.002132611849285528,
-     "ev": 0.0008461073646641837
+     "sim": 0.023387687680927086,
+     "ev": 0.021739402180788465
+    }
+   ]
+  },
+  {
+   "talent": "Soul Link",
+   "sim": 0.02317288578495096,
+   "ev_before": 0.012440032343729304,
+   "ev_after": 0.02321660264677544,
+   "scale": 1.8639499535784125,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.024427533045767627,
+     "ev": 0.022639640721370077
+    },
+    {
+     "level": 60,
+     "sim": 0.02191823852413429,
+     "ev": 0.02379356457218081
+    }
+   ]
+  },
+  {
+   "talent": "Improved Corruption",
+   "sim": 0.02278802089838307,
+   "ev_before": 0.02242383005513017,
+   "ev_after": 0.023108093454818998,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.024410354124742045,
+     "ev": 0.022303423147741887
+    },
+    {
+     "level": 60,
+     "sim": 0.021165687672024095,
+     "ev": 0.023912763761896112
     }
    ]
   },
   {
    "talent": "Malevolence",
-   "sim": 0.00036274138284916446,
-   "ev_before": 0.001250225562442165,
-   "ev_after": 0.0013710788000254493,
+   "sim": 0.021257367602669545,
+   "ev_before": 0.011007131576033745,
+   "ev_after": 0.021257417770436715,
+   "scale": 1.9380729394033551,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.02658670976421728,
+     "ev": 0.019037057430039594
+    },
+    {
+     "level": 60,
+     "sim": 0.01592802544112181,
+     "ev": 0.023477778110833836
+    }
+   ]
+  },
+  {
+   "talent": "Improved Life Tap",
+   "sim": 0.019272119123007872,
+   "ev_before": 0.008797319317734852,
+   "ev_after": 0.0244133782200915,
+   "scale": 3.069721160456538,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.014525009301480488,
+     "ev": 0.025934677676713185
+    },
+    {
+     "level": 60,
+     "sim": 0.024019228944535256,
+     "ev": 0.022892078763469815
+    }
+   ]
+  },
+  {
+   "talent": "Pandemic",
+   "sim": 0.018391383855534165,
+   "ev_before": 0.011682341070758114,
+   "ev_after": 0.01502694478208056,
    "scale": 1.0,
    "how": "kept",
    "per_level": [
     {
-     "level": 40,
+     "level": 30,
+     "sim": 0.020602660611624246,
+     "ev": 0.01423319703202162
+    },
+    {
+     "level": 60,
+     "sim": 0.016180107099444084,
+     "ev": 0.015820692532139503
+    }
+   ]
+  },
+  {
+   "talent": "Improved Voidwalker",
+   "sim": 0.01721560202147079,
+   "ev_before": 0.0,
+   "ev_after": 0.017627853639650908,
+   "scale": 0.1663169995881617,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": -0.00038064941951989993,
+     "ev": 0.014413691796925261
+    },
+    {
+     "level": 60,
+     "sim": 0.03481185346246148,
+     "ev": 0.020842015482376557
+    }
+   ]
+  },
+  {
+   "talent": "Demonic Energies",
+   "sim": 0.017074584469849722,
+   "ev_before": 0.014114459017241725,
+   "ev_after": 0.01177044205362197,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.024582829666283862,
+     "ev": 0.011687844898352746
+    },
+    {
+     "level": 60,
+     "sim": 0.009566339273415584,
+     "ev": 0.011853039208891195
+    }
+   ]
+  },
+  {
+   "talent": "Agonizing Flames",
+   "sim": 0.016128926477464667,
+   "ev_before": 0.010546303924452301,
+   "ev_after": 0.010732743090888713,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
      "sim": null,
      "ev": null
     },
     {
      "level": 60,
-     "sim": 0.00036274138284916446,
-     "ev": 0.0013710788000254493
+     "sim": 0.016128926477464667,
+     "ev": 0.010732743090888713
+    }
+   ]
+  },
+  {
+   "talent": "Improved Bane of Agony",
+   "sim": 0.013900167192616653,
+   "ev_before": 0.008115874203544997,
+   "ev_after": 0.008186756589947858,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.01857558197184065,
+     "ev": 0.008215751349650637
+    },
+    {
+     "level": 60,
+     "sim": 0.009224752413392654,
+     "ev": 0.008157761830245079
+    }
+   ]
+  },
+  {
+   "talent": "Amplify Curse",
+   "sim": 0.013804471993622426,
+   "ev_before": 0.006599461531602527,
+   "ev_after": 0.006656854596429389,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.015785272999711636,
+     "ev": 0.0066804414168451015
+    },
+    {
+     "level": 60,
+     "sim": 0.011823670987533216,
+     "ev": 0.006633267776013677
+    }
+   ]
+  },
+  {
+   "talent": "Soul Siphon",
+   "sim": 0.013758863149701693,
+   "ev_before": 0.005517162094738075,
+   "ev_after": 0.005613300895400639,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.013758863149701693,
+     "ev": 0.005613300895400639
+    }
+   ]
+  },
+  {
+   "talent": "Unholy Power",
+   "sim": 0.01247281911585214,
+   "ev_before": 0.009052598045701845,
+   "ev_after": 0.008807979401933166,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.016613271432766134,
+     "ev": 0.009820437153049777
+    },
+    {
+     "level": 60,
+     "sim": 0.008332366798938144,
+     "ev": 0.007795521650816556
+    }
+   ]
+  },
+  {
+   "talent": "Aftermath",
+   "sim": 0.007950040412798363,
+   "ev_before": 0.0054148552553073565,
+   "ev_after": 0.007863614808397028,
+   "scale": 1.444493723101914,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.007950040412798363,
+     "ev": 0.007863614808397028
+    }
+   ]
+  },
+  {
+   "talent": "Cataclysm",
+   "sim": 0.005328501167422311,
+   "ev_before": 0.018885124022587813,
+   "ev_after": 0.005254917249519753,
+   "scale": 0.29552332451567054,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.005328501167422311,
+     "ev": 0.005254917249519753
+    }
+   ]
+  },
+  {
+   "talent": "Improved Drains",
+   "sim": 0.0025238305697103153,
+   "ev_before": 0.001560236553726844,
+   "ev_after": 0.0015952698228875084,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.0,
+     "ev": 0.0013508372566695894
+    },
+    {
+     "level": 60,
+     "sim": 0.005047661139420631,
+     "ev": 0.0018397023891054275
+    }
+   ]
+  },
+  {
+   "talent": "Ruin",
+   "sim": 0.0019643991976026976,
+   "ev_before": 0.009243646435938339,
+   "ev_after": 0.0025255534560297485,
+   "scale": 0.21371949976310134,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.0019643991976026976,
+     "ev": 0.0025255534560297485
+    }
+   ]
+  },
+  {
+   "talent": "Bane",
+   "sim": 0.0018338727135446776,
+   "ev_before": 0.0021434103566848176,
+   "ev_after": 0.002067631203434428,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.0018338727135446776,
+     "ev": 0.002067631203434428
+    }
+   ]
+  },
+  {
+   "talent": "Demonic Embrace",
+   "sim": 0.00165052074033334,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.00165052074033334,
+     "ev": 0.0
+    }
+   ]
+  },
+  {
+   "talent": "Fel Concentration",
+   "sim": 0.00036390337594652955,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.0,
+     "ev": 0.0
+    },
+    {
+     "level": 60,
+     "sim": 0.0007278067518930591,
+     "ev": 0.0
     }
    ]
   },
@@ -426,7 +511,7 @@
    "how": "kept",
    "per_level": [
     {
-     "level": 40,
+     "level": 30,
      "sim": 0.0,
      "ev": 0.0
     },
@@ -446,7 +531,87 @@
    "how": "kept",
    "per_level": [
     {
-     "level": 40,
+     "level": 30,
+     "sim": 0.0,
+     "ev": 0.0
+    },
+    {
+     "level": 60,
+     "sim": 0.0,
+     "ev": 0.0
+    }
+   ]
+  },
+  {
+   "talent": "Destructive Reach",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.0,
+     "ev": 0.0
+    }
+   ]
+  },
+  {
+   "talent": "Improved Imp",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.0,
+     "ev": 0.0
+    }
+   ]
+  },
+  {
+   "talent": "Intensity",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.0,
+     "ev": 0.0
+    }
+   ]
+  },
+  {
+   "talent": "Soul Harvest",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "per_level": [
+    {
+     "level": 30,
      "sim": 0.0,
      "ev": 0.0
     },
@@ -459,160 +624,120 @@
   },
   {
    "talent": "Improved Shadow Bolt",
-   "sim": 0.0,
-   "ev_before": 0.001994024862914278,
-   "ev_after": 0.0,
-   "scale": 4.656612873077393e-10,
-   "how": "fitted",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": null,
-     "ev": null
-    },
-    {
-     "level": 60,
-     "sim": 0.0,
-     "ev": 0.0
-    }
-   ]
-  },
-  {
-   "talent": "Ruin",
-   "sim": -0.0009180931180582308,
+   "sim": -8.014821568639804e-05,
    "ev_before": 0.0,
    "ev_after": 0.0,
    "scale": 1.0,
    "how": "kept",
    "per_level": [
     {
-     "level": 40,
-     "sim": 0.011127377153944427,
-     "ev": 0.0
+     "level": 30,
+     "sim": null,
+     "ev": null
     },
     {
      "level": 60,
-     "sim": -0.012963563390060889,
+     "sim": -8.014821568639804e-05,
      "ev": 0.0
     }
    ]
   },
   {
-   "talent": "Soul Siphon",
-   "sim": -0.0009978564992168906,
+   "talent": "Nightfall",
+   "sim": -0.0006902185642725224,
    "ev_before": 0.0,
    "ev_after": 0.0,
    "scale": 1.0,
    "how": "kept",
    "per_level": [
     {
-     "level": 40,
-     "sim": null,
-     "ev": null
+     "level": 30,
+     "sim": 0.003479221396411635,
+     "ev": 0.0
     },
     {
      "level": 60,
-     "sim": -0.0009978564992168906,
+     "sim": -0.00485965852495668,
      "ev": 0.0
     }
    ]
   },
   {
-   "talent": "Siphon Life",
-   "sim": -0.0026742246381341165,
+   "talent": "Demonic Aegis",
+   "sim": -0.0013941189300674442,
    "ev_before": 0.0,
    "ev_after": 0.0,
-   "scale": 4.656612873077393e-10,
-   "how": "fitted",
+   "scale": 1.0,
+   "how": "kept",
    "per_level": [
     {
-     "level": 40,
+     "level": 30,
      "sim": null,
      "ev": null
     },
     {
      "level": 60,
-     "sim": -0.0026742246381341165,
+     "sim": -0.0013941189300674442,
      "ev": 0.0
     }
    ]
   },
   {
    "talent": "Fel Vitality",
-   "sim": -0.004038903410431416,
-   "ev_before": 0.0006688426163919592,
-   "ev_after": 0.0006671361206452491,
-   "scale": 1.0,
-   "how": "kept",
-   "per_level": [
-    {
-     "level": 40,
-     "sim": -0.03694196184464206,
-     "ev": 0.0005710336177776655
-    },
-    {
-     "level": 60,
-     "sim": 0.028864155023779228,
-     "ev": 0.0007632386235128328
-    }
-   ]
-  },
-  {
-   "talent": "Pandemic",
-   "sim": -0.005911047311305427,
+   "sim": -0.007894531446961246,
    "ev_before": 0.0,
    "ev_after": 0.0,
    "scale": 1.0,
    "how": "kept",
    "per_level": [
     {
-     "level": 40,
+     "level": 30,
      "sim": null,
      "ev": null
     },
     {
      "level": 60,
-     "sim": -0.005911047311305427,
+     "sim": -0.007894531446961246,
      "ev": 0.0
     }
    ]
   },
   {
-   "talent": "Improved Life Tap",
-   "sim": -0.008438054080505818,
+   "talent": "Shadowburn",
+   "sim": -0.017529239202272843,
    "ev_before": 0.0,
    "ev_after": 0.0,
    "scale": 1.0,
    "how": "kept",
    "per_level": [
     {
-     "level": 40,
+     "level": 30,
      "sim": null,
      "ev": null
     },
     {
      "level": 60,
-     "sim": -0.008438054080505818,
+     "sim": -0.017529239202272843,
      "ev": 0.0
     }
    ]
   },
   {
-   "talent": "Destructive Reach",
-   "sim": -0.02021528173890308,
-   "ev_before": 0.0,
+   "talent": "Wrack",
+   "sim": -0.030263964837706502,
+   "ev_before": 0.018770293065671618,
    "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "kept",
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
    "per_level": [
     {
-     "level": 40,
-     "sim": 0.12963497911874156,
-     "ev": 0.0
+     "level": 30,
+     "sim": null,
+     "ev": null
     },
     {
      "level": 60,
-     "sim": -0.17006554259654771,
+     "sim": -0.030263964837706502,
      "ev": 0.0
     }
    ]

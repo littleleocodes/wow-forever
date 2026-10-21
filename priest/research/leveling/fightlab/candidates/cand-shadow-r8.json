@@ -1,0 +1,228 @@
+{
+ "id": "cand-shadow-r8",
+ "allocation": {
+  "Discipline": [
+   [
+    "Twin Disciplines",
+    5
+   ],
+   [
+    "Wand Specialization",
+    2
+   ],
+   [
+    "Mental Strength",
+    3
+   ],
+   [
+    "Inner Focus",
+    1
+   ],
+   [
+    "Meditation",
+    3
+   ],
+   [
+    "Mental Agility",
+    2
+   ]
+  ],
+  "Holy": [
+   [
+    "Twilight Focus",
+    2
+   ]
+  ],
+  "Shadow": [
+   [
+    "Spirit Tap",
+    5
+   ],
+   [
+    "Shadow Focus",
+    5
+   ],
+   [
+    "Blackout",
+    5
+   ],
+   [
+    "Shadow Reach",
+    2
+   ],
+   [
+    "Improved Mind Blast",
+    1
+   ],
+   [
+    "Mind Flay",
+    1
+   ],
+   [
+    "Improved Mind Flay",
+    2
+   ],
+   [
+    "Vampiric Embrace",
+    1
+   ],
+   [
+    "Shadow Weaving",
+    3
+   ],
+   [
+    "Early Demise",
+    2
+   ],
+   [
+    "Darkness",
+    5
+   ],
+   [
+    "Shadowform",
+    1
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-11",
+   "tree": "Discipline",
+   "talent": "Wand Specialization",
+   "points": 2
+  },
+  {
+   "levels": "12-14",
+   "tree": "Discipline",
+   "talent": "Twin Disciplines",
+   "points": 3
+  },
+  {
+   "levels": "15-17",
+   "tree": "Discipline",
+   "talent": "Mental Strength",
+   "points": 3
+  },
+  {
+   "levels": "18-19",
+   "tree": "Discipline",
+   "talent": "Twin Disciplines",
+   "points": 2
+  },
+  {
+   "levels": "20-21",
+   "tree": "Discipline",
+   "talent": "Mental Agility",
+   "points": 2
+  },
+  {
+   "levels": "22-24",
+   "tree": "Discipline",
+   "talent": "Meditation",
+   "points": 3
+  },
+  {
+   "levels": "25-29",
+   "tree": "Shadow",
+   "talent": "Spirit Tap",
+   "points": 5
+  },
+  {
+   "levels": "30-31",
+   "tree": "Shadow",
+   "talent": "Shadow Focus",
+   "points": 2
+  },
+  {
+   "levels": "32",
+   "tree": "Discipline",
+   "talent": "Inner Focus",
+   "points": 1
+  },
+  {
+   "levels": "33-34",
+   "tree": "Holy",
+   "talent": "Twilight Focus",
+   "points": 2
+  },
+  {
+   "levels": "35-37",
+   "tree": "Shadow",
+   "talent": "Shadow Focus",
+   "points": 3
+  },
+  {
+   "levels": "38-39",
+   "tree": "Shadow",
+   "talent": "Shadow Reach",
+   "points": 2
+  },
+  {
+   "levels": "40-42",
+   "tree": "Shadow",
+   "talent": "Blackout",
+   "points": 3
+  },
+  {
+   "levels": "43-45",
+   "tree": "Shadow",
+   "talent": "Shadow Weaving",
+   "points": 3
+  },
+  {
+   "levels": "46-47",
+   "tree": "Shadow",
+   "talent": "Blackout",
+   "points": 2
+  },
+  {
+   "levels": "48",
+   "tree": "Shadow",
+   "talent": "Improved Mind Blast",
+   "points": 1
+  },
+  {
+   "levels": "49",
+   "tree": "Shadow",
+   "talent": "Vampiric Embrace",
+   "points": 1
+  },
+  {
+   "levels": "50",
+   "tree": "Shadow",
+   "talent": "Mind Flay",
+   "points": 1
+  },
+  {
+   "levels": "51-52",
+   "tree": "Shadow",
+   "talent": "Improved Mind Flay",
+   "points": 2
+  },
+  {
+   "levels": "53-54",
+   "tree": "Shadow",
+   "talent": "Early Demise",
+   "points": 2
+  },
+  {
+   "levels": "55-57",
+   "tree": "Shadow",
+   "talent": "Darkness",
+   "points": 3
+  },
+  {
+   "levels": "58",
+   "tree": "Shadow",
+   "talent": "Shadowform",
+   "points": 1
+  },
+  {
+   "levels": "59-60",
+   "tree": "Shadow",
+   "talent": "Darkness",
+   "points": 2
+  }
+ ],
+ "note": "Optimizer build saved by rebuild.py on 2026-10-20 (calibration round 8)"
+}

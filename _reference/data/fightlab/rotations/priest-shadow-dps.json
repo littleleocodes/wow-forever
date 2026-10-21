@@ -1,6 +1,6 @@
 {
  "knobs": {
-  "SHIELD_BELOW": 0.5
+  "SHIELD_BELOW": 0.8
  },
  "veto": {
   "Devouring Plague": {
@@ -21,20 +21,20 @@
   50,
   60
  ],
- "date": "2026-10-17",
+ "date": "2026-10-20",
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "SHIELD_BELOW = 0.5",
+   "change": "SHIELD_BELOW = 0.8",
    "rule": [
     "knob",
     "SHIELD_BELOW",
-    0.5
+    0.8
    ],
-   "gain_seed1": 0.12443865111307673,
-   "gain_seed2": 0.12507277597435862
+   "gain_seed1": 0.1330270420739197,
+   "gain_seed2": 0.13252211497120614
   },
   {
    "round": 2,
@@ -44,8 +44,8 @@
     "Devouring Plague",
     true
    ],
-   "gain_seed1": 0.10554469755177542,
-   "gain_seed2": 0.11107249855119272
+   "gain_seed1": 0.11433645225372346,
+   "gain_seed2": 0.11616168638649771
   },
   {
    "round": 3,
@@ -55,8 +55,8 @@
     "Smite",
     true
    ],
-   "gain_seed1": 0.0673567551848765,
-   "gain_seed2": 0.06128940275282224
+   "gain_seed1": 0.07122586125060093,
+   "gain_seed2": 0.07000748951084002
   },
   {
    "round": 4,
@@ -66,40 +66,40 @@
     null,
     0.15
    ],
-   "gain_seed1": 0.005868092637400291,
-   "gain_seed2": 0.006406134797672602
+   "gain_seed1": 0.00526755952057556,
+   "gain_seed2": 0.005460315016901696
   }
  ],
- "weighted_before": 36.5311353785663,
- "weighted_after": 26.59116023932618,
+ "weighted_before": 35.824857670600174,
+ "weighted_after": 25.457534848070402,
  "per_level": {
   "20": {
-   "before": 45.00790667310693,
-   "after": 36.755243410736675,
+   "before": 44.316905838646306,
+   "after": 35.010822422510095,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 50.10049472961056,
-   "after": 36.9931769114453,
+   "before": 49.50137494247149,
+   "after": 35.37536684653588,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 34.99856362372491,
-   "after": 23.89600495044107,
+   "before": 34.50317055530724,
+   "after": 23.000892430311588,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 33.193483678696296,
-   "after": 23.242762322047845,
+   "before": 32.50312426992349,
+   "after": 22.278216898758206,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 30.723956191316542,
-   "after": 22.589225969785122,
+   "before": 29.80515222274166,
+   "after": 21.601382893623793,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

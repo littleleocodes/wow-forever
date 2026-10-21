@@ -4,30 +4,38 @@
 
 | Assumption | Level | opt-affliction-leveling-leveling-st time/kill | leveling-affliction time/kill | Best build | opt-affliction-leveling-leveling-st: −Siphon Life | opt-affliction-leveling-leveling-st: −Demonic Knowledge | opt-affliction-leveling-leveling-st: −Soul Link |
 |---|---|---|---|---|---|---|---|
-| baseline | 30 | 36.6s (deaths 0.0/100) | 36.2s (deaths 0.0/100) | leveling-affliction | +8% | - | - |
-| baseline | 60 | 42.4s (deaths 0.0/100) | 41.4s (deaths 0.0/100) | leveling-affliction | +7% | +6% | +2% |
-| root breaks on 10% of hits | 30 | 36.6s (deaths 0.0/100) | 36.2s (deaths 0.0/100) | leveling-affliction | +8% | - | - |
-| root breaks on 10% of hits | 60 | 42.4s (deaths 0.0/100) | 41.4s (deaths 0.0/100) | leveling-affliction | +7% | +6% | +2% |
-| root breaks on 40% of hits | 30 | 36.6s (deaths 0.0/100) | 36.2s (deaths 0.0/100) | leveling-affliction | +8% | - | - |
-| root breaks on 40% of hits | 60 | 42.4s (deaths 0.0/100) | 41.4s (deaths 0.0/100) | leveling-affliction | +7% | +6% | +2% |
-| mobs have 20% less health | 30 | 32.0s (deaths 0.0/100) | 32.3s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | +8% | - | - |
-| mobs have 20% less health | 60 | 35.2s (deaths 0.0/100) | 34.7s (deaths 0.0/100) | leveling-affliction | +8% | +4% | +2% |
-| mobs have 20% more health | 30 | 41.8s (deaths 0.0/100) | 41.4s (deaths 0.0/100) | leveling-affliction | +8% | - | - |
-| mobs have 20% more health | 60 | 51.2s (deaths 0.0/100) | 50.3s (deaths 0.0/100) | leveling-affliction | +7% | +7% | +3% |
-| mobs hit 30% harder | 30 | 37.5s (deaths 0.0/100) | 37.4s (deaths 0.0/100) | leveling-affliction | +7% | - | - |
-| mobs hit 30% harder | 60 | 43.4s (deaths 0.0/100) | 42.6s (deaths 0.0/100) | leveling-affliction | +6% | +5% | +2% |
-| pushback 1.0 s per hit | 30 | 36.6s (deaths 0.0/100) | 36.2s (deaths 0.0/100) | leveling-affliction | +7% | - | - |
-| pushback 1.0 s per hit | 60 | 42.6s (deaths 0.0/100) | 41.5s (deaths 0.0/100) | leveling-affliction | +8% | +6% | +2% |
-| weapons 20% better (blues) | 30 | 35.8s (deaths 0.0/100) | 35.9s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | +8% | - | - |
-| weapons 20% better (blues) | 60 | 41.5s (deaths 0.0/100) | 40.9s (deaths 0.0/100) | leveling-affliction | +8% | +5% | +3% |
-| dungeon blues (item database) | 30 | 32.5s (deaths 0.0/100) | 32.7s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | +8% | - | - |
-| dungeon blues (item database) | 60 | 39.9s (deaths 0.0/100) | 39.2s (deaths 0.0/100) | leveling-affliction | +8% | +5% | +2% |
-| gear stats 20% better | 30 | 36.4s (deaths 0.0/100) | 36.0s (deaths 0.0/100) | leveling-affliction | +10% | - | - |
-| gear stats 20% better | 60 | 41.5s (deaths 0.0/100) | 40.5s (deaths 0.0/100) | leveling-affliction | +7% | +5% | +2% |
-| no caster mobs | 30 | 36.9s (deaths 0.0/100) | 36.7s (deaths 0.0/100) | leveling-affliction | +7% | - | - |
-| no caster mobs | 60 | 42.8s (deaths 0.0/100) | 41.7s (deaths 0.0/100) | leveling-affliction | +7% | +6% | +2% |
-| 30% caster mobs | 30 | 35.9s (deaths 0.0/100) | 35.7s (deaths 0.0/100) | leveling-affliction | +9% | - | - |
-| 30% caster mobs | 60 | 41.0s (deaths 0.0/100) | 40.5s (deaths 0.0/100) | leveling-affliction | +7% | +5% | +2% |
-| 20% of mobs run at 20% health | 30 | 36.7s (deaths 0.0/100) | 36.4s (deaths 0.0/100) | leveling-affliction | +8% | - | - |
-| 20% of mobs run at 20% health | 60 | 42.5s (deaths 0.0/100) | 41.4s (deaths 0.0/100) | leveling-affliction | +7% | +6% | +3% |
+| baseline | 30 | 38.8s (deaths 0.0/100) | 38.7s (deaths 0.0/100) | leveling-affliction | -1% | - | - |
+| baseline | 60 | 36.8s (deaths 0.0/100) | 38.4s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | +8% | +5% | +1% |
+| root breaks on 10% of hits | 30 | 38.8s (deaths 0.0/100) | 38.7s (deaths 0.0/100) | leveling-affliction | -1% | - | - |
+| root breaks on 10% of hits | 60 | 36.8s (deaths 0.0/100) | 38.4s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | +8% | +5% | +1% |
+| root breaks on 40% of hits | 30 | 38.8s (deaths 0.0/100) | 38.7s (deaths 0.0/100) | leveling-affliction | -1% | - | - |
+| root breaks on 40% of hits | 60 | 36.8s (deaths 0.0/100) | 38.4s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | +8% | +5% | +1% |
+| mobs have 20% less health | 30 | 34.3s (deaths 0.0/100) | 35.2s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | -2% | - | - |
+| mobs have 20% less health | 60 | 33.2s (deaths 0.0/100) | 34.2s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | +2% | +3% | +1% |
+| mobs have 20% more health | 30 | 41.9s (deaths 0.0/100) | 43.4s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | -1% | - | - |
+| mobs have 20% more health | 60 | 41.5s (deaths 0.0/100) | 43.7s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | +14% | +6% | +4% |
+| mobs hit 30% harder | 30 | 39.2s (deaths 0.0/100) | 39.2s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | +1% | - | - |
+| mobs hit 30% harder | 60 | 37.3s (deaths 0.0/100) | 38.9s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | +8% | +5% | +1% |
+| pushback 1.0 s per hit | 30 | 38.5s (deaths 0.0/100) | 38.7s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | +0% | - | - |
+| pushback 1.0 s per hit | 60 | 36.9s (deaths 0.0/100) | 38.1s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | +8% | +4% | +2% |
+| weapons 20% better (blues) | 30 | 38.8s (deaths 0.0/100) | 39.0s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | -1% | - | - |
+| weapons 20% better (blues) | 60 | 36.1s (deaths 0.0/100) | 37.7s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | +8% | +5% | +3% |
+| dungeon blues (item database) | 30 | 34.6s (deaths 0.0/100) | 35.3s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | -1% | - | - |
+| dungeon blues (item database) | 60 | 35.8s (deaths 0.0/100) | 37.1s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | +7% | +3% | +2% |
+| gear stats 20% better | 30 | 39.0s (deaths 0.0/100) | 39.7s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | -1% | - | - |
+| gear stats 20% better | 60 | 36.7s (deaths 0.0/100) | 38.4s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | +10% | +5% | +3% |
+| no caster mobs | 30 | 38.7s (deaths 0.0/100) | 39.2s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | -0% | - | - |
+| no caster mobs | 60 | 36.8s (deaths 0.0/100) | 38.3s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | +9% | +5% | +2% |
+| 30% caster mobs | 30 | 38.6s (deaths 0.0/100) | 38.4s (deaths 0.0/100) | leveling-affliction | -1% | - | - |
+| 30% caster mobs | 60 | 36.3s (deaths 0.0/100) | 37.6s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | +8% | +4% | +2% |
+| 20% of mobs run at 20% health | 30 | 38.5s (deaths 0.0/100) | 38.6s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | -0% | - | - |
+| 20% of mobs run at 20% health | 60 | 36.8s (deaths 0.0/100) | 38.2s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | +8% | +5% | +2% |
+| 2.5% partial resists (the assumption before 2026-10-18) | 30 | 38.7s (deaths 0.0/100) | 39.1s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | -1% | - | - |
+| 2.5% partial resists (the assumption before 2026-10-18) | 60 | 36.9s (deaths 0.0/100) | 38.0s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | +9% | +5% | +2% |
+| channel pushback 0.5 s per hit (before 2026-10-18) | 30 | 38.8s (deaths 0.0/100) | 38.7s (deaths 0.0/100) | leveling-affliction | -1% | - | - |
+| channel pushback 0.5 s per hit (before 2026-10-18) | 60 | 36.6s (deaths 0.0/100) | 37.5s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | +9% | +6% | +2% |
+| mob health by the client's ExpectedStat (1.35x at 20, 1.13x at 60) | 30 | 42.7s (deaths 0.0/100) | 43.8s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | -0% | - | - |
+| mob health by the client's ExpectedStat (1.35x at 20, 1.13x at 60) | 60 | 39.6s (deaths 0.0/100) | 41.5s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | +12% | +6% | +3% |
+| every rank at its level-60 amount (no rank level scaling, before 2026-10-18) | 30 | 38.4s (deaths 0.0/100) | 38.4s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | +0% | - | - |
+| every rank at its level-60 amount (no rank level scaling, before 2026-10-18) | 60 | 36.8s (deaths 0.0/100) | 38.4s (deaths 0.0/100) | opt-affliction-leveling-leveling-st | +8% | +5% | +1% |
 

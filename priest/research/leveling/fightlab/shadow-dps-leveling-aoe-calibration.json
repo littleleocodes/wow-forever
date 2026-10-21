@@ -1,0 +1,575 @@
+{
+ "class": "priest",
+ "spec": "shadow-dps",
+ "profile": "leveling-aoe",
+ "levels": [
+  40,
+  60
+ ],
+ "fights": 1500,
+ "builds": [
+  "opt-shadow-dps-leveling-aoe",
+  "F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-aoe-r1.json",
+  "F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-aoe-r2.json",
+  "F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-aoe-r3.json",
+  "F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-aoe-r4.json",
+  "F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-aoe-r5.json"
+ ],
+ "shares": {
+  "Shadow Word: Pain": 0.33391523534411033,
+  "Holy Nova": 0.25398773945812464,
+  "Wand": 0.13822974972144572,
+  "Mind Flay": 0.12457687045746325,
+  "Mind Blast": 0.09358430896378558,
+  "Shadow Word: Death": 0.055706096055070375
+ },
+ "time_split": {
+  "fight": 0.513,
+  "drink": 0.029,
+  "eat": 0.019,
+  "other": 0.0,
+  "death": 0.439
+ },
+ "talents": [
+  {
+   "talent": "Shadowform",
+   "sim": 0.40263721042544626,
+   "ev_before": 0.2289979789472904,
+   "ev_after": 0.4177482402938679,
+   "scale": 1.8649419834837317,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.22291218593850085,
+     "ev": 0.424497211429414
+    },
+    {
+     "level": 60,
+     "sim": 0.5823622349123917,
+     "ev": 0.41099926915832186
+    }
+   ]
+  },
+  {
+   "talent": "Mind Flay",
+   "sim": 0.14140061242654114,
+   "ev_before": 0.10214697142619168,
+   "ev_after": 0.1242160904825113,
+   "scale": 0.4689166662283242,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.30281426648087395,
+     "ev": 0.10154927730250626
+    },
+    {
+     "level": 60,
+     "sim": -0.02001304162779164,
+     "ev": 0.14688290366251633
+    }
+   ]
+  },
+  {
+   "talent": "Improved Shadow Word: Pain",
+   "sim": 0.06804862260806978,
+   "ev_before": 0.047071691560755885,
+   "ev_after": 0.0696863235105045,
+   "scale": 1.3796347854658961,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.005423866672755473,
+     "ev": 0.06570606168467703
+    },
+    {
+     "level": 60,
+     "sim": 0.1306733785433841,
+     "ev": 0.07366658533633194
+    }
+   ]
+  },
+  {
+   "talent": "Darkness",
+   "sim": 0.06592771370037832,
+   "ev_before": 0.01954119757950156,
+   "ev_after": 0.06526223923176439,
+   "scale": 3.185704944655299,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.03362271634523454,
+     "ev": 0.04586720373612419
+    },
+    {
+     "level": 60,
+     "sim": 0.09823271105552212,
+     "ev": 0.08465727472740457
+    }
+   ]
+  },
+  {
+   "talent": "Twilight Focus",
+   "sim": 0.06056621638521301,
+   "ev_before": 0.16683800821261827,
+   "ev_after": 0.06055866138171874,
+   "scale": 0.35571218421682715,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.04252738364274225,
+     "ev": 0.059494458308134
+    },
+    {
+     "level": 60,
+     "sim": 0.07860504912768378,
+     "ev": 0.06162286445530349
+    }
+   ]
+  },
+  {
+   "talent": "Shadow Reach",
+   "sim": 0.05665475332714802,
+   "ev_before": 0.0003150218865752201,
+   "ev_after": 0.021199126241018978,
+   "scale": 64.0,
+   "how": "capped",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.013049686104024575,
+     "ev": 0.020033447284769065
+    },
+    {
+     "level": 60,
+     "sim": 0.10025982055027147,
+     "ev": 0.02236480519726889
+    }
+   ]
+  },
+  {
+   "talent": "Shadow Focus",
+   "sim": 0.04405658813100451,
+   "ev_before": 0.004061585510590455,
+   "ev_after": 0.048251007427739544,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.020929216402390198,
+     "ev": 0.045533600637166036
+    },
+    {
+     "level": 60,
+     "sim": 0.06718395985961882,
+     "ev": 0.05096841421831305
+    }
+   ]
+  },
+  {
+   "talent": "Meditation",
+   "sim": 0.02364146229857741,
+   "ev_before": 0.00483641785276712,
+   "ev_after": 0.003117338745804745,
+   "scale": 1.0,
+   "how": "capped",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.02364146229857741,
+     "ev": 0.003117338745804745
+    }
+   ]
+  },
+  {
+   "talent": "Blackout",
+   "sim": 0.02231354115098968,
+   "ev_before": 0.0,
+   "ev_after": 0.030812816989223002,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.010648656449343298,
+     "ev": 0.03585780282588367
+    },
+    {
+     "level": 60,
+     "sim": 0.03397842585263606,
+     "ev": 0.025767831152562336
+    }
+   ]
+  },
+  {
+   "talent": "Inner Focus",
+   "sim": 0.016166293291070406,
+   "ev_before": 0.003395251868951082,
+   "ev_after": 0.016133981649583212,
+   "scale": 4.716684874147177,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.016166293291070406,
+     "ev": 0.016133981649583212
+    }
+   ]
+  },
+  {
+   "talent": "Twin Disciplines",
+   "sim": 0.01514932802993003,
+   "ev_before": 0.0,
+   "ev_after": 0.015331689378995865,
+   "scale": 0.5693874997086823,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.01514932802993003,
+     "ev": 0.015331689378995865
+    }
+   ]
+  },
+  {
+   "talent": "Vampiric Embrace",
+   "sim": 0.01390857853813298,
+   "ev_before": 0.0,
+   "ev_after": 0.013907283535684187,
+   "scale": 0.4144049999304116,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": -0.03805055934904707,
+     "ev": 0.01783065170987291
+    },
+    {
+     "level": 60,
+     "sim": 0.06586771642531303,
+     "ev": 0.009983915361495465
+    }
+   ]
+  },
+  {
+   "talent": "Shadow Weaving",
+   "sim": 0.01161648797519058,
+   "ev_before": 0.020364536886841856,
+   "ev_after": 0.011565163182128656,
+   "scale": 0.5331500913016498,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.013037347107904924,
+     "ev": 0.010934711277997267
+    },
+    {
+     "level": 60,
+     "sim": 0.010195628842476233,
+     "ev": 0.012195615086260044
+    }
+   ]
+  },
+  {
+   "talent": "Holy Specialization",
+   "sim": 0.010967975963946545,
+   "ev_before": 0.0039090949816942555,
+   "ev_after": 0.003321101832162269,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.010618137623086842,
+     "ev": 0.002320448619886892
+    },
+    {
+     "level": 60,
+     "sim": 0.011317814304806247,
+     "ev": 0.004321755044437646
+    }
+   ]
+  },
+  {
+   "talent": "Mental Strength",
+   "sim": 0.005534076972841425,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "dead",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.005534076972841425,
+     "ev": 0.0
+    }
+   ]
+  },
+  {
+   "talent": "Early Demise",
+   "sim": 0.005405362050665526,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "dead",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": -0.001978086713344352,
+     "ev": 0.0
+    },
+    {
+     "level": 60,
+     "sim": 0.012788810814675405,
+     "ev": 0.0
+    }
+   ]
+  },
+  {
+   "talent": "Improved Mind Flay",
+   "sim": 0.004415668828529264,
+   "ev_before": 0.01539769212041971,
+   "ev_after": 0.004415771818156269,
+   "scale": 0.2759613678790629,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.03369633509897091,
+     "ev": 0.004176608561137377
+    },
+    {
+     "level": 60,
+     "sim": -0.02486499744191238,
+     "ev": 0.004654935075175162
+    }
+   ]
+  },
+  {
+   "talent": "Martyrdom",
+   "sim": 0.002790910712900101,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "dead",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.002790910712900101,
+     "ev": 0.0
+    }
+   ]
+  },
+  {
+   "talent": "Spirit Tap",
+   "sim": 0.002347878806968973,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "dead",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.001469750668499426,
+     "ev": 0.0
+    },
+    {
+     "level": 60,
+     "sim": 0.0032260069454385196,
+     "ev": 0.0
+    }
+   ]
+  },
+  {
+   "talent": "Wand Specialization",
+   "sim": 0.0011876624571435673,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.0011876624571435673,
+     "ev": 0.0
+    }
+   ]
+  },
+  {
+   "talent": "Improved Psychic Scream",
+   "sim": 0.00016410679297525498,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.0005288463916003291,
+     "ev": 0.0
+    },
+    {
+     "level": 60,
+     "sim": -0.00020063280564981917,
+     "ev": 0.0
+    }
+   ]
+  },
+  {
+   "talent": "Improved Renew",
+   "sim": 3.726076229117874e-06,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 7.452152458235748e-06,
+     "ev": 0.0
+    },
+    {
+     "level": 60,
+     "sim": 0.0,
+     "ev": 0.0
+    }
+   ]
+  },
+  {
+   "talent": "Silence",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.0,
+     "ev": 0.0
+    },
+    {
+     "level": 60,
+     "sim": 0.0,
+     "ev": 0.0
+    }
+   ]
+  },
+  {
+   "talent": "Devouring Contagion",
+   "sim": 0.0,
+   "ev_before": 0.008268008702626424,
+   "ev_after": 0.006989290746049787,
+   "scale": 1.0,
+   "how": "noise",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.0,
+     "ev": 0.009846564591237625
+    },
+    {
+     "level": 60,
+     "sim": 0.0,
+     "ev": 0.004132016900861948
+    }
+   ]
+  },
+  {
+   "talent": "Improved Power Word: Shield",
+   "sim": -0.0013985979144997627,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": -0.0013985979144997627,
+     "ev": 0.0
+    }
+   ]
+  },
+  {
+   "talent": "Improved Mind Blast",
+   "sim": -0.00900178893790712,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": -0.010418463169152407,
+     "ev": 0.0
+    },
+    {
+     "level": 60,
+     "sim": -0.0075851147066618345,
+     "ev": 0.0
+    }
+   ]
+  },
+  {
+   "talent": "Dark Inspiration",
+   "sim": -0.03583788530690451,
+   "ev_before": 0.0005255435134923818,
+   "ev_after": 0.0004559819387668014,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": -0.00157660667120348,
+     "ev": 0.0006096359590575382
+    },
+    {
+     "level": 60,
+     "sim": -0.07009916394260554,
+     "ev": 0.00030232791847606454
+    }
+   ]
+  }
+ ]
+}

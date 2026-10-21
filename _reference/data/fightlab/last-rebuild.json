@@ -818,10 +818,11 @@
    "spec": "shadow-dps",
    "hand": "leveling-shadow",
    "opt": "opt-shadow-dps-leveling-st",
-   "started": "2026-10-18T05:42:27",
+   "started": "2026-10-21T05:26:42",
    "steps": [
     "race",
-    "report"
+    "report",
+    "sensitivity"
    ],
    "raid": {
     "shadow-dps": {
@@ -965,45 +966,65 @@
      }
     }
    },
-   "seconds": 117,
+   "seconds": 469,
    "log": [
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py priest --spec shadow-dps --build leveling-shadow --compare F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-hand-2026-09-26.json F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r1.json F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r2.json F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r3.json F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r4.json F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r5.json F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r6.json F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r7.json --levels 20,30,40,50,60 --fights 1000",
+     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py priest --spec shadow-dps --build leveling-shadow --compare F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-hand-2026-09-26.json F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r1.json F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r2.json F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r3.json F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r4.json F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r5.json F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r6.json F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r7.json F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r8.json --levels 20,30,40,50,60 --fights 1000",
      "rc": 0,
-     "seconds": 41,
+     "seconds": 51,
      "tail": [
-      "   vs cand-shadow-r6: time/kill 23.2s (-0.0%), fight 14.7s, deaths/100 0.0",
-      "   vs cand-shadow-r7: time/kill 27.1s (+16.8%), fight 14.1s, deaths/100 0.0",
-      "L60: fight 14.0s (median 14.1, p90 16.5), downtime 0.5s, deaths/100 0.0, time/kill 22.5s, 160 kills/h, mana/kill 621, shares Mind Flay 45%, Mind Blast 21%, Shadow Word: Pain 19%, Shadow Word: Death 15%, Wand 1%",
-      "   vs cand-shadow-hand-2026-09-26: time/kill 23.5s (+4.3%), fight 13.6s, deaths/100 0.0",
-      "   vs cand-shadow-r1: time/kill 23.8s (+5.8%), fight 14.0s, deaths/100 0.0",
-      "   vs cand-shadow-r2: time/kill 23.8s (+5.8%), fight 14.0s, deaths/100 0.0",
-      "   vs cand-shadow-r3: time/kill 23.1s (+2.7%), fight 14.0s, deaths/100 0.0",
-      "   vs cand-shadow-r4: time/kill 22.0s (-2.1%), fight 14.0s, deaths/100 0.0",
-      "   vs cand-shadow-r5: time/kill 22.1s (-2.0%), fight 14.0s, deaths/100 0.0",
-      "   vs cand-shadow-r6: time/kill 21.9s (-2.6%), fight 13.9s, deaths/100 0.0",
-      "   vs cand-shadow-r7: time/kill 26.3s (+16.8%), fight 13.3s, deaths/100 0.0",
-      "done in 41s"
+      "   vs cand-shadow-r8: time/kill 36.4s (+63.8%), fight 18.5s, deaths/100 0.0",
+      "L60: fight 13.2s (median 13.6, p90 15.6), downtime 0.4s, deaths/100 0.0, time/kill 21.6s, 167 kills/h, mana/kill 605, shares Mind Flay 46%, Mind Blast 20%, Shadow Word: Pain 17%, Shadow Word: Death 16%, Wand 1%",
+      "   vs cand-shadow-hand-2026-09-26: time/kill 22.1s (+2.4%), fight 12.5s, deaths/100 0.0",
+      "   vs cand-shadow-r1: time/kill 24.4s (+13.2%), fight 13.2s, deaths/100 0.0",
+      "   vs cand-shadow-r2: time/kill 24.4s (+13.2%), fight 13.2s, deaths/100 0.0",
+      "   vs cand-shadow-r3: time/kill 22.3s (+3.2%), fight 13.3s, deaths/100 0.0",
+      "   vs cand-shadow-r4: time/kill 21.3s (-1.6%), fight 13.2s, deaths/100 0.0",
+      "   vs cand-shadow-r5: time/kill 21.6s (+0.0%), fight 13.2s, deaths/100 0.0",
+      "   vs cand-shadow-r6: time/kill 21.5s (-0.5%), fight 13.2s, deaths/100 0.0",
+      "   vs cand-shadow-r7: time/kill 25.1s (+16.1%), fight 12.3s, deaths/100 0.0",
+      "   vs cand-shadow-r8: time/kill 21.1s (-2.3%), fight 13.1s, deaths/100 0.0",
+      "done in 51s"
      ],
      "stderr": []
     },
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py priest --spec shadow-dps --build opt-shadow-dps-leveling-st --compare leveling-shadow --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --gear-tiers --write",
      "rc": 0,
-     "seconds": 76,
+     "seconds": 116,
      "tail": [
-      "   Mind Flay                1  sim  +14.9% (fight  +35.4% +-0.5)  EV  +85.5%",
-      "   Shadow Focus             5  sim   +2.2% (fight   +2.7% +-0.3)  EV   +2.6%",
-      "   Shadow Reach             2  sim   +0.3% (fight   +0.3% +-0.3)  EV   +2.3%",
-      "   Shadow Weaving           3  sim   +3.2% (fight   +4.4% +-0.3)  EV   +7.8%",
-      "   Shadowform               1  sim  +41.3% (fight  +19.7% +-0.6)  EV  +48.6%",
-      "   Spell Warding            5  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.2%",
-      "   Spirit Tap               1  sim   +2.7% (fight   +0.3% +-0.2)  EV   +0.0%",
-      "   Twilight Focus           3  sim   +0.7% (fight   +2.0% +-0.3)  EV   +0.0%",
-      "   Twin Disciplines         5  sim   +2.0% (fight   +2.6% +-0.2)  EV   +0.8%",
-      "   Vampiric Embrace         1  sim   +0.9% (fight   -6.9% +-0.2)  EV   +4.5%",
-      "done in 75s",
+      "   Mind Flay                1  sim  +23.6% (fight  +36.7% +-0.5)  EV   +3.2%",
+      "   Shadow Focus             5  sim   +1.8% (fight   +2.8% +-0.2)  EV   +2.9%",
+      "   Shadow Reach             2  sim   -0.1% (fight   -0.2% +-0.2)  EV   +0.7%",
+      "   Shadow Weaving           3  sim   +2.3% (fight   +2.8% +-0.3)  EV   +4.4%",
+      "   Shadowform               1  sim  +47.5% (fight   +9.4% +-0.3)  EV  +38.0%",
+      "   Spirit Tap               5  sim  +13.5% (fight   +0.5% +-0.2)  EV   +3.0%",
+      "   Twilight Focus           2  sim   -0.1% (fight   -0.0% +-0.2)  EV   +0.7%",
+      "   Twin Disciplines         5  sim   +1.5% (fight   +2.4% +-0.2)  EV   +2.0%",
+      "   Vampiric Embrace         1  sim   +2.4% (fight   -6.4% +-0.2)  EV   +0.0%",
+      "   Wand Specialization      2  sim   +0.3% (fight   +0.3% +-0.1)  EV   +0.4%",
+      "done in 116s",
       "wrote F:\\wow-forever\\priest\\research\\leveling\\fightlab\\shadow-dps.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\sensitivity.py priest --spec shadow-dps --builds opt-shadow-dps-leveling-st leveling-shadow --levels 30,60 --fights 1000 --write",
+     "rc": 0,
+     "seconds": 301,
+     "tail": [
+      "30% caster mobs 60 {'opt-shadow-dps-leveling-st': 21.3, 'leveling-shadow': 21.7} {'opt-shadow-dps-leveling-st': {'Mind Flay': 17.3, 'Shadowform': 42.9, 'Vampiric Embrace': 0.8}, 'leveling-shadow': {'Mind Flay': 20.9, 'Shadowform': 46.2, 'Vampiric Embrace': 2.8}}",
+      "20% of mobs run at 20% health 30 {'opt-shadow-dps-leveling-st': 31.1, 'leveling-shadow': 35.0} {'opt-shadow-dps-leveling-st': {}, 'leveling-shadow': {'Mind Flay': 6.4, 'Vampiric Embrace': 0.6}}",
+      "20% of mobs run at 20% health 60 {'opt-shadow-dps-leveling-st': 21.1, 'leveling-shadow': 21.6} {'opt-shadow-dps-leveling-st': {'Mind Flay': 23.6, 'Shadowform': 47.7, 'Vampiric Embrace': 2.4}, 'leveling-shadow': {'Mind Flay': 26.9, 'Shadowform': 49.8, 'Vampiric Embrace': 3.2}}",
+      "2.5% partial resists (the assumption before 2026-10-18) 30 {'opt-shadow-dps-leveling-st': 32.3, 'leveling-shadow': 36.0} {'opt-shadow-dps-leveling-st': {}, 'leveling-shadow': {'Mind Flay': 7.8, 'Vampiric Embrace': 1.2}}",
+      "2.5% partial resists (the assumption before 2026-10-18) 60 {'opt-shadow-dps-leveling-st': 21.3, 'leveling-shadow': 21.8} {'opt-shadow-dps-leveling-st': {'Mind Flay': 24.5, 'Shadowform': 48.6, 'Vampiric Embrace': 2.9}, 'leveling-shadow': {'Mind Flay': 27.1, 'Shadowform': 50.1, 'Vampiric Embrace': 4.1}}",
+      "channel pushback 0.5 s per hit (before 2026-10-18) 30 {'opt-shadow-dps-leveling-st': 31.5, 'leveling-shadow': 35.3} {'opt-shadow-dps-leveling-st': {}, 'leveling-shadow': {'Mind Flay': 7.0, 'Vampiric Embrace': 1.1}}",
+      "channel pushback 0.5 s per hit (before 2026-10-18) 60 {'opt-shadow-dps-leveling-st': 21.1, 'leveling-shadow': 21.6} {'opt-shadow-dps-leveling-st': {'Mind Flay': 23.8, 'Shadowform': 48.0, 'Vampiric Embrace': 2.3}, 'leveling-shadow': {'Mind Flay': 26.9, 'Shadowform': 49.3, 'Vampiric Embrace': 3.9}}",
+      "mob health by the client's ExpectedStat (1.35x at 20, 1.13x at 60) 30 {'opt-shadow-dps-leveling-st': 40.8, 'leveling-shadow': 43.3} {'opt-shadow-dps-leveling-st': {}, 'leveling-shadow': {'Mind Flay': 11.7, 'Vampiric Embrace': 2.7}}",
+      "mob health by the client's ExpectedStat (1.35x at 20, 1.13x at 60) 60 {'opt-shadow-dps-leveling-st': 22.5, 'leveling-shadow': 23.5} {'opt-shadow-dps-leveling-st': {'Mind Flay': 27.7, 'Shadowform': 51.4, 'Vampiric Embrace': 6.6}, 'leveling-shadow': {'Mind Flay': 28.6, 'Shadowform': 49.6, 'Vampiric Embrace': 5.9}}",
+      "every rank at its level-60 amount (no rank level scaling, before 2026-10-18) 30 {'opt-shadow-dps-leveling-st': 31.1, 'leveling-shadow': 34.9} {'opt-shadow-dps-leveling-st': {}, 'leveling-shadow': {'Mind Flay': 6.4, 'Vampiric Embrace': 1.3}}",
+      "every rank at its level-60 amount (no rank level scaling, before 2026-10-18) 60 {'opt-shadow-dps-leveling-st': 21.1, 'leveling-shadow': 21.6} {'opt-shadow-dps-leveling-st': {'Mind Flay': 23.8, 'Shadowform': 48.0, 'Vampiric Embrace': 2.3}, 'leveling-shadow': {'Mind Flay': 26.9, 'Shadowform': 49.3, 'Vampiric Embrace': 3.9}}",
+      "wrote F:\\wow-forever\\priest\\research\\leveling\\fightlab\\sensitivity.md"
      ],
      "stderr": []
     }
@@ -1012,82 +1033,90 @@
    "race": {
     "time_per_kill": {
      "leveling-shadow": {
-      "20": 36.8,
-      "30": 37.1,
-      "40": 24.0,
-      "50": 23.2,
-      "60": 22.5
+      "20": 35.0,
+      "30": 35.3,
+      "40": 23.1,
+      "50": 22.3,
+      "60": 21.6
      },
      "cand-shadow-hand-2026-09-26": {
       "20": 34.9,
-      "30": 37.8,
-      "40": 23.7,
-      "50": 23.6,
-      "60": 23.5
-     },
-     "cand-shadow-r1": {
-      "20": 36.5,
-      "30": 39.7,
-      "40": 41.6,
-      "50": 26.2,
-      "60": 23.8
-     },
-     "cand-shadow-r2": {
-      "20": 36.5,
-      "30": 39.2,
-      "40": 27.5,
-      "50": 26.2,
-      "60": 23.8
-     },
-     "cand-shadow-r3": {
-      "20": 35.3,
-      "30": 38.3,
-      "40": 26.3,
-      "50": 25.3,
-      "60": 23.1
-     },
-     "cand-shadow-r4": {
-      "20": 34.0,
-      "30": 36.5,
-      "40": 24.0,
-      "50": 23.3,
-      "60": 22.0
-     },
-     "cand-shadow-r5": {
-      "20": 34.0,
-      "30": 36.5,
-      "40": 24.0,
-      "50": 23.3,
+      "30": 39.0,
+      "40": 27.0,
+      "50": 26.1,
       "60": 22.1
      },
-     "cand-shadow-r6": {
+     "cand-shadow-r1": {
+      "20": 34.9,
+      "30": 37.2,
+      "40": 26.5,
+      "50": 25.3,
+      "60": 24.4
+     },
+     "cand-shadow-r2": {
+      "20": 34.9,
+      "30": 37.2,
+      "40": 26.5,
+      "50": 25.3,
+      "60": 24.4
+     },
+     "cand-shadow-r3": {
+      "20": 34.9,
+      "30": 37.2,
+      "40": 25.4,
+      "50": 24.3,
+      "60": 22.3
+     },
+     "cand-shadow-r4": {
       "20": 35.0,
-      "30": 37.0,
-      "40": 23.8,
-      "50": 23.2,
-      "60": 21.9
+      "30": 35.3,
+      "40": 23.1,
+      "50": 22.3,
+      "60": 21.3
+     },
+     "cand-shadow-r5": {
+      "20": 35.0,
+      "30": 35.3,
+      "40": 23.1,
+      "50": 22.3,
+      "60": 21.6
+     },
+     "cand-shadow-r6": {
+      "20": 34.9,
+      "30": 38.1,
+      "40": 22.8,
+      "50": 22.2,
+      "60": 21.5
      },
      "cand-shadow-r7": {
-      "20": 36.3,
-      "30": 40.8,
-      "40": 28.2,
-      "50": 27.1,
-      "60": 26.3
+      "20": 34.9,
+      "30": 39.0,
+      "40": 27.0,
+      "50": 26.0,
+      "60": 25.1
+     },
+     "cand-shadow-r8": {
+      "20": 30.7,
+      "30": 31.5,
+      "40": 36.2,
+      "50": 36.4,
+      "60": 21.1
      }
     },
     "mean": {
-     "leveling-shadow": 26.595,
-     "cand-shadow-hand-2026-09-26": 26.85,
-     "cand-shadow-r1": 31.615,
-     "cand-shadow-r2": 28.72,
-     "cand-shadow-r3": 27.79,
-     "cand-shadow-r4": 26.1,
-     "cand-shadow-r5": 26.130000000000003,
-     "cand-shadow-r6": 26.18,
-     "cand-shadow-r7": 30.055
+     "leveling-shadow": 25.47,
+     "cand-shadow-hand-2026-09-26": 27.895,
+     "cand-shadow-r1": 28.014999999999997,
+     "cand-shadow-r2": 28.014999999999997,
+     "cand-shadow-r3": 26.915,
+     "cand-shadow-r4": 25.380000000000003,
+     "cand-shadow-r5": 25.47,
+     "cand-shadow-r6": 25.764999999999997,
+     "cand-shadow-r7": 28.77,
+     "cand-shadow-r8": 30.464999999999996
     },
     "winner": "cand-shadow-r4",
-    "gain_vs_hand": 0.0186,
+    "gain_vs_hand": 0.0035,
     "recommended": "leveling-shadow",
     "margin": 0.02,
     "candidate_files": {
@@ -1098,7 +1127,8 @@
      "cand-shadow-r4": "F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r4.json",
      "cand-shadow-r5": "F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r5.json",
      "cand-shadow-r6": "F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r6.json",
-     "cand-shadow-r7": "F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r7.json"
+     "cand-shadow-r7": "F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r7.json",
+     "cand-shadow-r8": "F:\\wow-forever\\priest\\research\\leveling\\fightlab\\candidates\\cand-shadow-r8.json"
     }
    },
    "rounds": [
@@ -1112,31 +1142,35 @@
         5
        ],
        [
-        "Improved Power Word: Shield",
+        "Wand Specialization",
+        2
+       ],
+       [
+        "Mental Strength",
+        3
+       ],
+       [
+        "Inner Focus",
+        1
+       ],
+       [
+        "Meditation",
+        3
+       ],
+       [
+        "Mental Agility",
         2
        ]
       ],
       "Holy": [
        [
         "Twilight Focus",
-        3
-       ],
-       [
-        "Improved Renew",
         2
-       ],
-       [
-        "Spell Warding",
-        5
-       ],
-       [
-        "Holy Nova",
-        1
        ]
       ],
       "Shadow": [
        [
-        "Blackout",
+        "Spirit Tap",
         5
        ],
        [
@@ -1144,12 +1178,16 @@
         5
        ],
        [
-        "Spirit Tap",
-        1
+        "Blackout",
+        5
        ],
        [
         "Shadow Reach",
         2
+       ],
+       [
+        "Improved Mind Blast",
+        1
        ],
        [
         "Mind Flay",
@@ -1158,10 +1196,6 @@
        [
         "Improved Mind Flay",
         2
-       ],
-       [
-        "Improved Mind Blast",
-        5
        ],
        [
         "Vampiric Embrace",
@@ -1186,33 +1220,34 @@
       ]
      },
      "quick_race": {
-      "leveling-shadow": 25.925,
-      "cand-shadow-hand-2026-09-26": 26.82,
-      "cand-shadow-r1": 31.654999999999994,
-      "cand-shadow-r2": 28.415,
-      "cand-shadow-r3": 27.505000000000003,
-      "cand-shadow-r4": 25.955000000000002,
-      "cand-shadow-r5": 25.925,
-      "cand-shadow-r6": 25.865,
-      "cand-shadow-r7": 29.57
+      "leveling-shadow": 25.57,
+      "cand-shadow-hand-2026-09-26": 27.98,
+      "cand-shadow-r1": 28.15,
+      "cand-shadow-r2": 28.15,
+      "cand-shadow-r3": 27.044999999999998,
+      "cand-shadow-r4": 25.48,
+      "cand-shadow-r5": 25.57,
+      "cand-shadow-r6": 25.855,
+      "cand-shadow-r7": 28.830000000000002,
+      "cand-shadow-r8": 30.77
      },
      "converged_by_noise": true
     }
    ],
    "converged": true,
    "time_per_kill": {
-    "20": 36.3,
-    "30": 40.7,
-    "40": 28.2,
-    "50": 27.4,
-    "60": 26.4
+    "20": 30.4,
+    "30": 31.2,
+    "40": 36.0,
+    "50": 36.5,
+    "60": 21.2
    },
    "hand_time_per_kill": {
-    "20": 36.7,
-    "30": 37.0,
-    "40": 24.0,
-    "50": 23.3,
-    "60": 22.6
+    "20": 34.9,
+    "30": 35.2,
+    "40": 23.1,
+    "50": 22.3,
+    "60": 21.6
    },
    "classic": {},
    "heal": {
@@ -1249,16 +1284,17 @@
        "round": 1,
        "new_build": true,
        "quick_race": {
-        "opt-shadow-dps-leveling-aoe": 60.71666666666667,
-        "cand-aoe-r1": 48.172222222222224,
-        "cand-aoe-r2": 48.11666666666667,
-        "cand-aoe-r3": 73.22777777777777,
-        "cand-aoe-r4": 119.36111111111111
+        "opt-shadow-dps-leveling-aoe": 58.544444444444444,
+        "cand-aoe-r1": 50.06666666666667,
+        "cand-aoe-r2": 48.650000000000006,
+        "cand-aoe-r3": 96.66111111111111,
+        "cand-aoe-r4": 99.30000000000001,
+        "cand-aoe-r5": 60.17222222222222
        },
        "converged_by_noise": true
       }
      ],
-     "promoted": "cand-aoe-r1",
+     "promoted": "cand-aoe-r2",
      "sets": [
       "MOBS_PER_PULL=3"
      ]
@@ -1270,10 +1306,11 @@
    "spec": "affliction-leveling",
    "hand": "leveling-affliction",
    "opt": "opt-affliction-leveling-leveling-st",
-   "started": "2026-10-15T12:01:55",
+   "started": "2026-10-20T21:35:53",
    "steps": [
     "race",
-    "report"
+    "report",
+    "sensitivity"
    ],
    "raid": {
     "affliction-raid": {
@@ -1863,45 +1900,65 @@
      }
     }
    },
-   "seconds": 1132,
+   "seconds": 1328,
    "log": [
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py warlock --spec affliction-leveling --build leveling-affliction --compare F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-hand-2026-09-28.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r1.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r10.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r11.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r2.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r3.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r4.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r5.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r6.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r7.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r8.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r9.json --levels 20,30,40,50,60 --fights 1000",
+     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py warlock --spec affliction-leveling --build leveling-affliction --compare F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-hand-2026-09-28.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r1.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r10.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r11.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r12.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r2.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r3.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r4.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r5.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r6.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r7.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r8.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r9.json --levels 20,30,40,50,60 --fights 1000",
      "rc": 0,
-     "seconds": 500,
+     "seconds": 229,
      "tail": [
-      "   vs cand-affliction-r1: time/kill 51.9s (+25.4%), fight 33.5s, deaths/100 0.0",
-      "   vs cand-affliction-r10: time/kill 42.1s (+1.8%), fight 29.0s, deaths/100 0.0",
-      "   vs cand-affliction-r11: time/kill 42.4s (+2.5%), fight 29.4s, deaths/100 0.0",
-      "   vs cand-affliction-r2: time/kill 41.0s (-0.9%), fight 30.8s, deaths/100 0.0",
-      "   vs cand-affliction-r3: time/kill 41.0s (-0.9%), fight 30.6s, deaths/100 0.0",
-      "   vs cand-affliction-r4: time/kill 41.4s (+0.0%), fight 31.0s, deaths/100 0.0",
-      "   vs cand-affliction-r5: time/kill 42.5s (+2.6%), fight 32.4s, deaths/100 0.0",
-      "   vs cand-affliction-r6: time/kill 41.9s (+1.3%), fight 31.5s, deaths/100 0.0",
-      "   vs cand-affliction-r7: time/kill 50.4s (+21.7%), fight 34.0s, deaths/100 0.0",
-      "   vs cand-affliction-r8: time/kill 50.6s (+22.3%), fight 32.6s, deaths/100 0.0",
-      "   vs cand-affliction-r9: time/kill 41.3s (-0.3%), fight 30.9s, deaths/100 0.0",
-      "done in 500s"
+      "   vs cand-affliction-r10: time/kill 38.3s (-0.1%), fight 22.8s, deaths/100 0.0",
+      "   vs cand-affliction-r11: time/kill 38.3s (-0.1%), fight 22.8s, deaths/100 0.0",
+      "   vs cand-affliction-r12: time/kill 36.8s (-4.0%), fight 23.1s, deaths/100 0.0",
+      "   vs cand-affliction-r2: time/kill 37.7s (-1.7%), fight 23.8s, deaths/100 0.0",
+      "   vs cand-affliction-r3: time/kill 36.8s (-4.1%), fight 23.2s, deaths/100 0.0",
+      "   vs cand-affliction-r4: time/kill 38.4s (+0.0%), fight 24.2s, deaths/100 0.0",
+      "   vs cand-affliction-r5: time/kill 38.0s (-0.9%), fight 24.6s, deaths/100 0.0",
+      "   vs cand-affliction-r6: time/kill 38.0s (-0.9%), fight 24.4s, deaths/100 0.0",
+      "   vs cand-affliction-r7: time/kill 45.8s (+19.3%), fight 24.4s, deaths/100 0.0",
+      "   vs cand-affliction-r8: time/kill 47.7s (+24.2%), fight 26.3s, deaths/100 0.0",
+      "   vs cand-affliction-r9: time/kill 37.1s (-3.4%), fight 23.9s, deaths/100 0.0",
+      "done in 228s"
      ],
      "stderr": []
     },
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py warlock --spec affliction-leveling --build opt-affliction-leveling-leveling-st --compare leveling-affliction --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --gear-tiers --write",
      "rc": 0,
-     "seconds": 632,
+     "seconds": 295,
      "tail": [
-      "   Improved Imp             3  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.0%",
-      "   Improved Voidwalker      3  sim   +5.4% (fight   +2.9% +-0.8)  EV   +0.0%",
-      "   Malediction              5  sim   +2.2% (fight   +2.9% +-0.7)  EV   +1.9%",
-      "   Malevolence              3  sim   +1.2% (fight   +1.7% +-0.7)  EV   +0.9%",
-      "   Pandemic                 3  sim   +1.3% (fight   +3.0% +-0.7)  EV   +1.6%",
-      "   Shadow Mastery           2  sim   +0.8% (fight   +2.1% +-0.7)  EV   +1.0%",
-      "   Siphon Life              1  sim   +7.2% (fight   -7.1% +-0.7)  EV  +10.3%",
-      "   Soul Link                1  sim   +2.5% (fight   +1.8% +-0.7)  EV   +2.1%",
-      "   Suppression              5  sim   +1.2% (fight   +1.8% +-0.7)  EV   +1.6%",
-      "   Unholy Power             5  sim   +1.8% (fight   +2.0% +-0.7)  EV   +1.3%",
-      "done in 632s",
+      "   Improved Life Tap        2  sim   +2.8% (fight   -0.5% +-0.4)  EV   +2.4%",
+      "   Improved Voidwalker      3  sim   +4.3% (fight   +3.9% +-0.4)  EV   +1.5%",
+      "   Malevolence              5  sim   +1.3% (fight   +3.5% +-0.4)  EV   +2.4%",
+      "   Pandemic                 3  sim   +1.2% (fight   +2.9% +-0.4)  EV   +1.6%",
+      "   Shadow Mastery           2  sim   +1.3% (fight   +3.4% +-0.4)  EV   +2.3%",
+      "   Siphon Life              1  sim   +8.7% (fight   +4.0% +-0.5)  EV   +7.0%",
+      "   Soul Link                1  sim   +1.9% (fight   +3.0% +-0.4)  EV   +2.5%",
+      "   Soul Siphon              1  sim   +0.7% (fight   +0.2% +-0.4)  EV   +0.2%",
+      "   Suppression              5  sim   +6.9% (fight   +5.6% +-0.5)  EV   +3.5%",
+      "   Unholy Power             5  sim   +0.7% (fight   +1.9% +-0.4)  EV   +0.8%",
+      "done in 295s",
       "wrote F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\affliction-leveling.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\sensitivity.py warlock --spec affliction-leveling --builds opt-affliction-leveling-leveling-st leveling-affliction --levels 30,60 --fights 1000 --write",
+     "rc": 0,
+     "seconds": 804,
+     "tail": [
+      "30% caster mobs 60 {'opt-affliction-leveling-leveling-st': 36.3, 'leveling-affliction': 37.6} {'opt-affliction-leveling-leveling-st': {'Siphon Life': 8.1, 'Demonic Knowledge': 3.9, 'Soul Link': 2.3}, 'leveling-affliction': {'Siphon Life': 8.7, 'Demonic Knowledge': 4.2, 'Soul Link': 2.7}}",
+      "20% of mobs run at 20% health 30 {'opt-affliction-leveling-leveling-st': 38.5, 'leveling-affliction': 38.6} {'opt-affliction-leveling-leveling-st': {'Siphon Life': -0.2}, 'leveling-affliction': {'Soul Link': 2.2}}",
+      "20% of mobs run at 20% health 60 {'opt-affliction-leveling-leveling-st': 36.8, 'leveling-affliction': 38.2} {'opt-affliction-leveling-leveling-st': {'Siphon Life': 8.2, 'Demonic Knowledge': 4.6, 'Soul Link': 1.7}, 'leveling-affliction': {'Siphon Life': 9.7, 'Demonic Knowledge': 5.0, 'Soul Link': 2.4}}",
+      "2.5% partial resists (the assumption before 2026-10-18) 30 {'opt-affliction-leveling-leveling-st': 38.7, 'leveling-affliction': 39.1} {'opt-affliction-leveling-leveling-st': {'Siphon Life': -0.7}, 'leveling-affliction': {'Soul Link': 0.7}}",
+      "2.5% partial resists (the assumption before 2026-10-18) 60 {'opt-affliction-leveling-leveling-st': 36.9, 'leveling-affliction': 38.0} {'opt-affliction-leveling-leveling-st': {'Siphon Life': 8.6, 'Demonic Knowledge': 4.7, 'Soul Link': 1.5}, 'leveling-affliction': {'Siphon Life': 10.1, 'Demonic Knowledge': 5.5, 'Soul Link': 4.0}}",
+      "channel pushback 0.5 s per hit (before 2026-10-18) 30 {'opt-affliction-leveling-leveling-st': 38.8, 'leveling-affliction': 38.7} {'opt-affliction-leveling-leveling-st': {'Siphon Life': -1.1}, 'leveling-affliction': {'Soul Link': 2.1}}",
+      "channel pushback 0.5 s per hit (before 2026-10-18) 60 {'opt-affliction-leveling-leveling-st': 36.6, 'leveling-affliction': 37.5} {'opt-affliction-leveling-leveling-st': {'Siphon Life': 9.2, 'Demonic Knowledge': 5.6, 'Soul Link': 1.8}, 'leveling-affliction': {'Siphon Life': 10.7, 'Demonic Knowledge': 6.1, 'Soul Link': 4.6}}",
+      "mob health by the client's ExpectedStat (1.35x at 20, 1.13x at 60) 30 {'opt-affliction-leveling-leveling-st': 42.7, 'leveling-affliction': 43.8} {'opt-affliction-leveling-leveling-st': {'Siphon Life': -0.2}, 'leveling-affliction': {'Soul Link': 1.1}}",
+      "mob health by the client's ExpectedStat (1.35x at 20, 1.13x at 60) 60 {'opt-affliction-leveling-leveling-st': 39.6, 'leveling-affliction': 41.5} {'opt-affliction-leveling-leveling-st': {'Siphon Life': 12.5, 'Demonic Knowledge': 5.9, 'Soul Link': 3.2}, 'leveling-affliction': {'Siphon Life': 12.4, 'Demonic Knowledge': 5.4, 'Soul Link': 3.6}}",
+      "every rank at its level-60 amount (no rank level scaling, before 2026-10-18) 30 {'opt-affliction-leveling-leveling-st': 38.4, 'leveling-affliction': 38.4} {'opt-affliction-leveling-leveling-st': {'Siphon Life': 0.4}, 'leveling-affliction': {'Soul Link': 1.0}}",
+      "every rank at its level-60 amount (no rank level scaling, before 2026-10-18) 60 {'opt-affliction-leveling-leveling-st': 36.8, 'leveling-affliction': 38.4} {'opt-affliction-leveling-leveling-st': {'Siphon Life': 8.1, 'Demonic Knowledge': 5.0, 'Soul Link': 1.5}, 'leveling-affliction': {'Siphon Life': 8.9, 'Demonic Knowledge': 3.5, 'Soul Link': 2.2}}",
+      "wrote F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\sensitivity.md"
      ],
      "stderr": []
     }
@@ -1910,121 +1967,130 @@
    "race": {
     "time_per_kill": {
      "leveling-affliction": {
-      "20": 31.0,
-      "30": 36.2,
-      "40": 42.5,
-      "50": 44.3,
-      "60": 41.4
+      "20": 31.2,
+      "30": 38.7,
+      "40": 42.2,
+      "50": 40.6,
+      "60": 38.4
      },
      "cand-affliction-hand-2026-09-28": {
-      "20": 31.0,
-      "30": 36.2,
-      "40": 51.5,
-      "50": 53.1,
-      "60": 53.7
-     },
-     "cand-affliction-r1": {
-      "20": 31.2,
-      "30": 37.3,
-      "40": 46.0,
-      "50": 50.8,
-      "60": 51.9
-     },
-     "cand-affliction-r10": {
-      "20": 31.5,
-      "30": 35.8,
-      "40": 42.6,
-      "50": 45.5,
+      "20": 30.8,
+      "30": 38.0,
+      "40": 40.1,
+      "50": 40.4,
       "60": 42.1
      },
+     "cand-affliction-r1": {
+      "20": 30.9,
+      "30": 39.1,
+      "40": 45.7,
+      "50": 49.8,
+      "60": 48.7
+     },
+     "cand-affliction-r10": {
+      "20": 30.8,
+      "30": 38.0,
+      "40": 42.4,
+      "50": 41.6,
+      "60": 38.3
+     },
      "cand-affliction-r11": {
-      "20": 31.5,
-      "30": 36.6,
-      "40": 42.7,
-      "50": 45.7,
-      "60": 42.4
+      "20": 30.8,
+      "30": 38.0,
+      "40": 42.4,
+      "50": 41.6,
+      "60": 38.3
+     },
+     "cand-affliction-r12": {
+      "20": 30.4,
+      "30": 38.8,
+      "40": 42.1,
+      "50": 39.6,
+      "60": 36.8
      },
      "cand-affliction-r2": {
-      "20": 31.6,
-      "30": 36.5,
-      "40": 43.1,
-      "50": 44.8,
-      "60": 41.0
+      "20": 30.6,
+      "30": 38.5,
+      "40": 42.5,
+      "50": 41.1,
+      "60": 37.7
      },
      "cand-affliction-r3": {
-      "20": 31.7,
-      "30": 40.0,
-      "40": 42.8,
-      "50": 44.7,
-      "60": 41.0
+      "20": 30.8,
+      "30": 38.0,
+      "40": 42.3,
+      "50": 39.6,
+      "60": 36.8
      },
      "cand-affliction-r4": {
-      "20": 31.0,
-      "30": 36.2,
-      "40": 42.5,
-      "50": 44.3,
-      "60": 41.4
+      "20": 30.6,
+      "30": 38.5,
+      "40": 42.1,
+      "50": 40.5,
+      "60": 38.4
      },
      "cand-affliction-r5": {
-      "20": 31.4,
-      "30": 36.8,
-      "40": 43.7,
-      "50": 46.0,
-      "60": 42.5
+      "20": 31.0,
+      "30": 38.6,
+      "40": 44.2,
+      "50": 41.3,
+      "60": 38.0
      },
      "cand-affliction-r6": {
-      "20": 31.3,
-      "30": 36.6,
-      "40": 43.0,
-      "50": 44.9,
-      "60": 41.9
+      "20": 30.6,
+      "30": 38.5,
+      "40": 42.0,
+      "50": 41.1,
+      "60": 38.0
      },
      "cand-affliction-r7": {
-      "20": 31.5,
-      "30": 37.3,
-      "40": 45.7,
-      "50": 49.3,
-      "60": 50.4
+      "20": 31.0,
+      "30": 39.4,
+      "40": 44.3,
+      "50": 46.1,
+      "60": 45.8
      },
      "cand-affliction-r8": {
-      "20": 32.1,
-      "30": 43.8,
-      "40": 53.0,
-      "50": 54.5,
-      "60": 50.6
+      "20": 30.9,
+      "30": 39.3,
+      "40": 45.0,
+      "50": 48.2,
+      "60": 47.7
      },
      "cand-affliction-r9": {
-      "20": 31.3,
-      "30": 36.3,
-      "40": 42.8,
-      "50": 45.0,
-      "60": 41.3
+      "20": 30.8,
+      "30": 37.9,
+      "40": 42.3,
+      "50": 40.8,
+      "60": 37.1
      }
     },
     "mean": {
-     "leveling-affliction": 40.525,
-     "cand-affliction-hand-2026-09-28": 48.214999999999996,
-     "cand-affliction-r1": 46.184999999999995,
-     "cand-affliction-r10": 41.045,
-     "cand-affliction-r11": 41.325,
-     "cand-affliction-r2": 40.755,
-     "cand-affliction-r3": 41.205,
-     "cand-affliction-r4": 40.525,
-     "cand-affliction-r5": 41.65,
-     "cand-affliction-r6": 41.015,
-     "cand-affliction-r7": 45.33,
-     "cand-affliction-r8": 49.185,
-     "cand-affliction-r9": 40.775
+     "leveling-affliction": 39.035000000000004,
+     "cand-affliction-hand-2026-09-28": 39.53,
+     "cand-affliction-r1": 45.155,
+     "cand-affliction-r10": 39.15,
+     "cand-affliction-r11": 39.15,
+     "cand-affliction-r12": 38.22,
+     "cand-affliction-r2": 38.92,
+     "cand-affliction-r3": 38.18,
+     "cand-affliction-r4": 38.9,
+     "cand-affliction-r5": 39.455,
+     "cand-affliction-r6": 38.910000000000004,
+     "cand-affliction-r7": 43.135000000000005,
+     "cand-affliction-r8": 44.345,
+     "cand-affliction-r9": 38.55499999999999
     },
-    "winner": "leveling-affliction",
-    "gain_vs_hand": 0.0,
-    "recommended": "leveling-affliction",
+    "winner": "cand-affliction-r3",
+    "gain_vs_hand": 0.0219,
+    "recommended": "cand-affliction-r3",
     "margin": 0.02,
     "candidate_files": {
      "cand-affliction-hand-2026-09-28": "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-hand-2026-09-28.json",
      "cand-affliction-r1": "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r1.json",
      "cand-affliction-r10": "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r10.json",
      "cand-affliction-r11": "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r11.json",
+     "cand-affliction-r12": "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r12.json",
      "cand-affliction-r2": "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r2.json",
      "cand-affliction-r3": "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r3.json",
      "cand-affliction-r4": "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r4.json",
@@ -2042,15 +2108,15 @@
      "allocation": {
       "Affliction": [
        [
-        "Improved Corruption",
-        5
+        "Improved Life Tap",
+        2
        ],
        [
         "Suppression",
         5
        ],
        [
-        "Malediction",
+        "Improved Corruption",
         5
        ],
        [
@@ -2067,10 +2133,14 @@
        ],
        [
         "Malevolence",
-        3
+        5
        ],
        [
         "Siphon Life",
+        1
+       ],
+       [
+        "Soul Siphon",
         1
        ],
        [
@@ -2089,23 +2159,23 @@
        ],
        [
         "Demonic Embrace",
-        5
-       ],
-       [
-        "Demonic Aegis",
-        2
+        4
        ],
        [
         "Improved Voidwalker",
         3
        ],
        [
-        "Fel Vitality",
-        1
+        "Demonic Energies",
+        2
        ],
        [
         "Demonic Sacrifice",
         1
+       ],
+       [
+        "Decimation",
+        2
        ],
        [
         "Soul Link",
@@ -2119,37 +2189,38 @@
       "Destruction": []
      },
      "quick_race": {
-      "leveling-affliction": 36.64,
-      "cand-affliction-hand-2026-09-28": 38.545,
-      "cand-affliction-r1": 40.665000000000006,
-      "cand-affliction-r10": 37.239999999999995,
-      "cand-affliction-r11": 37.485,
-      "cand-affliction-r2": 36.89,
-      "cand-affliction-r3": 36.7,
-      "cand-affliction-r4": 36.64,
-      "cand-affliction-r5": 37.725,
-      "cand-affliction-r6": 36.895,
-      "cand-affliction-r7": 40.730000000000004,
-      "cand-affliction-r8": 42.29,
-      "cand-affliction-r9": 36.75
+      "leveling-affliction": 38.82,
+      "cand-affliction-hand-2026-09-28": 39.585,
+      "cand-affliction-r1": 45.265,
+      "cand-affliction-r10": 39.11,
+      "cand-affliction-r11": 39.11,
+      "cand-affliction-r12": 38.345,
+      "cand-affliction-r2": 39.055,
+      "cand-affliction-r3": 38.26,
+      "cand-affliction-r4": 38.955,
+      "cand-affliction-r5": 39.375,
+      "cand-affliction-r6": 38.935,
+      "cand-affliction-r7": 43.260000000000005,
+      "cand-affliction-r8": 44.53,
+      "cand-affliction-r9": 38.64
      },
      "converged_by_noise": true
     }
    ],
    "converged": true,
    "time_per_kill": {
-    "20": 31.6,
-    "30": 36.5,
-    "40": 42.8,
-    "50": 45.6,
-    "60": 42.2
+    "20": 30.5,
+    "30": 38.8,
+    "40": 42.2,
+    "50": 39.6,
+    "60": 36.6
    },
    "hand_time_per_kill": {
-    "20": 31.0,
-    "30": 36.1,
-    "40": 42.5,
-    "50": 44.2,
-    "60": 41.4
+    "20": 31.4,
+    "30": 38.7,
+    "40": 42.3,
+    "50": 40.5,
+    "60": 38.4
    },
    "classic": {
     "sb-raid": {
@@ -2165,34 +2236,21 @@
        "round": 1,
        "new_build": true,
        "quick_race": {
-        "opt-affliction-leveling-leveling-aoe": 44.73888888888889,
-        "cand-aoe-r1": 66.75555555555555,
-        "cand-aoe-r2": 72.16111111111111,
-        "cand-aoe-r3": 99.88888888888887,
-        "cand-aoe-r4": 47.03888888888889,
-        "cand-aoe-r5": 50.50555555555556,
-        "cand-aoe-r6": 50.650000000000006,
-        "cand-aoe-r7": 47.41111111111111
-       }
-      },
-      {
-       "round": 2,
-       "new_build": true,
-       "quick_race": {
-        "opt-affliction-leveling-leveling-aoe": 46.96111111111111,
-        "cand-aoe-r1": 66.75555555555555,
-        "cand-aoe-r2": 72.16111111111111,
-        "cand-aoe-r3": 99.88888888888887,
-        "cand-aoe-r4": 47.03888888888889,
-        "cand-aoe-r5": 50.50555555555556,
-        "cand-aoe-r6": 50.650000000000006,
-        "cand-aoe-r7": 47.41111111111111,
-        "cand-aoe-r8": 44.73888888888889
+        "opt-affliction-leveling-leveling-aoe": 55.02222222222222,
+        "cand-aoe-r1": 56.02222222222222,
+        "cand-aoe-r2": 54.955555555555556,
+        "cand-aoe-r3": 98.82777777777777,
+        "cand-aoe-r4": 54.644444444444446,
+        "cand-aoe-r5": 55.51111111111111,
+        "cand-aoe-r6": 56.3,
+        "cand-aoe-r7": 55.43888888888889,
+        "cand-aoe-r8": 54.266666666666666,
+        "cand-aoe-r9": 55.73888888888889
        },
        "converged_by_noise": true
       }
      ],
-     "promoted": "cand-aoe-r8",
+     "promoted": null,
      "sets": [
       "MOBS_PER_PULL=3"
      ]
@@ -6214,9 +6272,9 @@
   }
  },
  "last_run": {
-  "date": "2026-10-20T06:38:30",
+  "date": "2026-10-21T05:34:30",
   "classes": [
-   "shaman"
+   "priest"
   ],
   "steps": [
    "race",
@@ -6229,7 +6287,7 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 406,
+  "seconds": 469,
   "refresh": null,
   "regen_log": []
  }

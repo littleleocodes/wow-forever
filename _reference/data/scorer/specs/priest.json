@@ -85,7 +85,7 @@
       "abs_dps_factor": 1.0
     },
     "shadow-dps": {
-      "note": "Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20. Priests drink a lot: downtime 35%. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Shadow Word: Pain rank 8 762 over 18s (Classic 852, 20% per tick), Mind Blast rank 9 477-504, Mind Flay rank 6 390 over 3s (Classic 426), Devouring Plague cooldown 24 s since 70425 (1 min before; audit 2026-10-18 row 49), Vampiric Embrace 1 min cooldown, Smite rank 8 166-187 (Classic 384-429): the Shadow shares stand. Fight lab calibration (2026-10-15, beta client 1.60.1.70291, build opt-shadow-dps-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Shadow Word: Pain 35%, Mind Flay 29%, Shadow Word: Death 15%, Mind Blast 15%, Wand 5%, Devouring Plague 1%) and the leveling time split is fight 68% / drink 4% / eat 5% / other 0% / death 22% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Raid sim shares (2026-10-03, opt-shadow-dps-raid-dps in the ElliotWood/Forever simulator b0f0df3): mind_flay 47%, swp 21%, mind_blast 20%, swd 10%, devouring_plague 2%; 0% of the damage matched no source.",
+      "note": "Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20. Priests drink a lot: downtime 35%. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Shadow Word: Pain rank 8 762 over 18s (Classic 852, 20% per tick), Mind Blast rank 9 477-504, Mind Flay rank 6 390 over 3s (Classic 426), Devouring Plague cooldown 24 s since 70425 (1 min before; audit 2026-10-18 row 49), Vampiric Embrace 1 min cooldown, Smite rank 8 166-187 (Classic 384-429): the Shadow shares stand. Raid sim shares (2026-10-03, opt-shadow-dps-raid-dps in the ElliotWood/Forever simulator b0f0df3): mind_flay 47%, swp 21%, mind_blast 20%, swd 10%, devouring_plague 2%; 0% of the damage matched no source. Fight lab calibration [leveling-st] (2026-10-20, beta client 1.60.1.70425, build opt-shadow-dps-leveling-st at level 60, 1500 fights): shares are the measured damage split (Mind Flay 35%, Mind Blast 31%, Shadow Word: Death 17%, Shadow Word: Pain 15%, Wand 1%) and the leveling time split is fight 69% / drink 26% / eat 0% / other 0% / death 5% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Fight lab calibration [leveling-aoe] (2026-10-20, beta client 1.60.1.70425, build opt-shadow-dps-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Shadow Word: Pain 33%, Holy Nova 25%, Wand 14%, Mind Flay 12%, Mind Blast 9%, Shadow Word: Death 6%) and the leveling time split is fight 51% / drink 3% / eat 2% / other 0% / death 44% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length).",
       "sources": [
         {
           "id": "swp",
@@ -97,9 +97,9 @@
           },
           "min_level": 4,
           "profile_overrides": {
-            "leveling-st": {"share": 0.191},
-            "solo-60": {"share": 0.191},
-            "leveling-aoe": {"share": 0.346}
+            "leveling-st": {"share": 0.149},
+            "solo-60": {"share": 0.149},
+            "leveling-aoe": {"share": 0.334}
           }
         },
         {
@@ -111,9 +111,9 @@
           "cooldown": 8,
           "min_level": 10,
           "profile_overrides": {
-            "leveling-st": {"share": 0.202},
-            "solo-60": {"share": 0.202},
-            "leveling-aoe": {"share": 0.149}
+            "leveling-st": {"share": 0.315},
+            "solo-60": {"share": 0.315},
+            "leveling-aoe": {"share": 0.094}
           }
         },
         {
@@ -126,9 +126,9 @@
             "forever": {"can_crit": true}
           },
           "profile_overrides": {
-            "leveling-st": {"share": 0.44},
-            "solo-60": {"share": 0.44},
-            "leveling-aoe": {"share": 0.287}
+            "leveling-st": {"share": 0.352},
+            "solo-60": {"share": 0.352},
+            "leveling-aoe": {"share": 0.125}
           },
           "enabled_by": "Mind Flay",
           "displaces": ["wand", "smite"],
@@ -141,9 +141,9 @@
           "tags": ["ability:Wand", "ability:Wands", "white"],
           "can_crit": false,
           "profile_overrides": {
-            "leveling-st": {"share": 0.0},
-            "solo-60": {"share": 0.0},
-            "leveling-aoe": {"share": 0.053}
+            "leveling-st": {"share": 0.01},
+            "solo-60": {"share": 0.01},
+            "leveling-aoe": {"share": 0.138}
           }
         },
         {
@@ -161,9 +161,9 @@
           "tags": ["type:spell", "school:shadow", "instant", "ability:Shadow Word: Death"],
           "cooldown": 18,
           "profile_overrides": {
-            "leveling-st": {"share": 0.159},
-            "solo-60": {"share": 0.159},
-            "leveling-aoe": {"share": 0.15}
+            "leveling-st": {"share": 0.175},
+            "solo-60": {"share": 0.175},
+            "leveling-aoe": {"share": 0.056}
           }
         },
         {
@@ -173,9 +173,9 @@
           "tags": ["type:spell", "school:shadow", "dot", "instant", "ability:Devouring Plague"],
           "cooldown": 24,
           "profile_overrides": {
-            "leveling-aoe": {"share": 0.014},
-            "leveling-st": {"share": 0.008},
-            "solo-60": {"share": 0.008}
+            "leveling-aoe": {"share": 0.0},
+            "leveling-st": {"share": 0.0},
+            "solo-60": {"share": 0.0}
           }
         },
         {
@@ -184,7 +184,9 @@
           "min_level": 20,
           "tags": ["type:spell", "school:holy", "instant", "aoe", "ability:Holy Nova"],
           "profile_overrides": {
-            "leveling-aoe": {"share": 0.0}
+            "leveling-aoe": {"share": 0.254},
+            "leveling-st": {"share": 0.0},
+            "solo-60": {"share": 0.0}
           }
         }
       ],
@@ -212,12 +214,12 @@
       "regen_share": 0.3,
       "abs_dps_factor": 1.0,
       "time": {
-        "leveling-st": {"fight": 0.947, "drink": 0.0, "eat": 0.006, "other": 0.0, "death": 0.048},
-        "solo-60": {"fight": 0.947, "drink": 0.0, "eat": 0.006, "other": 0.0, "death": 0.048},
-        "leveling-aoe": {"fight": 0.682, "drink": 0.045, "eat": 0.051, "other": 0.0, "death": 0.222}
+        "leveling-st": {"fight": 0.69, "drink": 0.263, "eat": 0.0, "other": 0.0, "death": 0.048},
+        "solo-60": {"fight": 0.69, "drink": 0.263, "eat": 0.0, "other": 0.0, "death": 0.048},
+        "leveling-aoe": {"fight": 0.513, "drink": 0.029, "eat": 0.019, "other": 0.0, "death": 0.439}
       },
       "mana_weight": {"raid-dps": 0.4},
-      "fight_coupling": {"leveling-aoe": 1.0}
+      "fight_coupling": {"leveling-aoe": 1.0, "leveling-st": 1.0, "solo-60": 1.0}
     }
   }
 }

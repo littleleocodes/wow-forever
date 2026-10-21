@@ -21,13 +21,12 @@ Missing: Soul Harvest
 | Fel Vitality | Demonology | 2 | +0.78% | manual |
 | Improved Bane of Agony | Affliction | 3 | +0.77% | manual |
 | Amplify Curse | Affliction | 3 | +0.77% | manual |
+| Shadow Mastery | Affliction | 6 | +0.64% | manual |
 | Ruin | Destruction | 3 | +0.61% | manual |
 | Malevolence | Affliction | 4 | +0.58% | manual |
 | Cataclysm | Destruction | 2 | +0.56% | manual |
 | Pandemic | Affliction | 3 | +0.47% | manual |
 | Wrack | Affliction | 7 | +0.43% | manual |
-| Malediction | Affliction | 2 | +0.43% | manual |
-| Shadow Mastery | Affliction | 6 | +0.32% | manual |
 | Aftermath | Destruction | 2 | +0.29% | manual |
 | Nightfall | Affliction | 4 | +0.23% | manual |
 | Decimation | Demonology | 4 | +0.09% | manual |
@@ -38,6 +37,7 @@ Missing: Soul Harvest
 | Soul Harvest | Affliction | 2 | +0.00% | missing |
 | Master Summoner | Demonology | 3 | +0.00% | manual |
 | Demonic Aegis | Demonology | 2 | +0.00% | manual |
+| Grim Reach | Affliction | 2 | +0.00% | manual |
 | Destructive Reach | Destruction | 1 | +0.00% | manual |
 | Improved Drains | Affliction | 2 | +0.00% | manual |
 
@@ -56,16 +56,16 @@ Missing: Soul Harvest
 | Improved Corruption | Affliction 1 | 4/5 | +1.64% | yes |
 | Improved Bane of Agony | Affliction 3 | 1/2 | +1.15% | yes |
 | Amplify Curse | Affliction 3 | 1/1 | +1.15% | yes |
+| Shadow Mastery | Affliction 6 | 1/5 | +0.98% | no |
 | Fire and Brimstone | Destruction 5 | 3/3 | +0.93% | yes |
 | Malevolence | Affliction 4 | 1/5 | +0.91% | no |
 | Aftermath | Destruction 2 | 1/5 | +0.84% | yes |
-| Malediction | Affliction 2 | 1/5 | +0.80% | yes |
 | Wrack | Affliction 7 | 1/1 | +0.75% | no |
 | Pandemic | Affliction 3 | 1/3 | +0.74% | yes |
-| Shadow Mastery | Affliction 6 | 1/5 | +0.49% | no |
 | Nightfall | Affliction 4 | 1/2 | +0.47% | no |
 | Decimation | Demonology 4 | 1/2 | +0.18% | no |
 | Fel Concentration | Affliction 3 | 1/3 | +0.00% | yes |
 | Intensity | Destruction 4 | 1/3 | +0.00% | yes |
 | Demonic Brand | Demonology 4 | 1/3 | +0.00% | no |
+| Molten Skin | Destruction 2 | 1/5 | +0.00% | yes |
 
