@@ -1,7 +1,26 @@
 [
- {"file": "sim/core/racials.go", "after": "func applyRaceEffects(agent Agent) {\n", "insert": "\tif noRacials() { // wow-forever patch: WOW_FOREVER_NO_RACIALS=1 (patches/forever/sim/core/no_racials.go)\n\t\treturn\n\t}\n", "why": "racial effects off on request, so builds compare without the preset's race (user preference 2026-10-07: as unbiased as possible)"},
- {"file": "sim/paladin/talents_retribution.go", "replace": "\tspelldata.ParseStatic(&paladin.Character, spellData.ChampionOfTheLight.Rank(paladin.Talents.ChampionOfTheLight))\n", "with": "\t// wow-forever patch: 10% of Intellect a rank as spell damage (client 70425's tooltip and Blizzard's 16 Oct notes; user decision\n\t// 2026-10-18). The official spell store's curve for 1311084 reads 20/40/60%, which a 70450 hotfix may have restored (audit 2 row 2).\n\tpaladin.AddStatDependency(stats.Intellect, stats.SpellDamage, 0.10*float64(paladin.Talents.ChampionOfTheLight))\n", "why": "Champion of the Light 10/20/30% of Intellect (70425 tooltip, 16 Oct notes); the official store reads 20/40/60%"},
- {"file": "sim/core/buffs/debuffs_auto_gen.go", "replace": "var huntersMarkSpell = spelldata.MustFind(14325)\n", "with": "var huntersMarkSpell = spelldata.MustFind(14324) // wow-forever patch: rank 3 (+98 ranged attack power) outvalues rank 4 (+71) in the client data; a hunter casts the stronger (audit 2 row 13)\n", "why": "Hunter's Mark rank 3 gives +98 ranged attack power, rank 4 +71 (both in the official spell store); the raid debuff and the hunter's own mark used rank 4"},
- {"file": "sim/hunter/pets.go", "replace": "\t\t\tstats.ExpertisePercent: ownerStats[stats.ExpertisePercent],\n", "with": "\t\t\tstats.ExpertisePercent: ownerStats[stats.ExpertisePercent],\n\t\t\t// wow-forever patch: the owner's hit (client 70425 Camelot/PaperDollFrameStats.lua: \"Pets inherit 100% of the owner's hit chance\")\n\t\t\tstats.PhysicalHitPercent: ownerStats[stats.PhysicalHitPercent] + ownerStats[stats.RangedHitPercent],\n", "why": "70425's pet pane: pets inherit 100% of the owner's hit; the official inheritance has expertise only"},
- {"file": "sim/hunter/pets.go", "replace": "\t\thp.AutoAttacks.MHConfig().DamageMultiplier /= 1 + attackSpeed.Effect(dbcenums.A_MOD_ATTACKSPEED, 0).Percent()\n", "with": "\t\tif foreverPetNormalize() { // wow-forever patch: Forever keeps a faster pet's swing damage whole (patches/forever/sim/hunter/forever_pet_rule.go)\n\t\t\thp.AutoAttacks.MHConfig().DamageMultiplier /= 1 + attackSpeed.Effect(dbcenums.A_MOD_ATTACKSPEED, 0).Percent()\n\t\t}\n", "why": "forum measurements put a 1.2 s cat 42% ahead of a 2.0 s pet at levels 20-30: Forever does not normalize pet damage by speed; the official simulator does"}
+ {
+  "file": "sim/core/racials.go",
+  "after": "func applyRaceEffects(agent Agent) {\n",
+  "insert": "\tif noRacials() { // wow-forever patch: WOW_FOREVER_NO_RACIALS=1 (patches/forever/sim/core/no_racials.go)\n\t\treturn\n\t}\n",
+  "why": "racial effects off on request, so builds compare without the preset's race (user preference 2026-10-07: as unbiased as possible)"
+ },
+ {
+  "file": "sim/paladin/talents_retribution.go",
+  "replace": "\tspelldata.ParseStatic(&paladin.Character, spellData.ChampionOfTheLight.Rank(paladin.Talents.ChampionOfTheLight))\n",
+  "with": "\t// wow-forever patch: 10% of Intellect a rank as spell damage (client 70425's tooltip and Blizzard's 16 Oct notes; user decision\n\t// 2026-10-18). The official spell store's curve for 1311084 reads 20/40/60%, which a 70450 hotfix may have restored (audit 2 row 2).\n\tpaladin.AddStatDependency(stats.Intellect, stats.SpellDamage, 0.10*float64(paladin.Talents.ChampionOfTheLight))\n",
+  "why": "Champion of the Light 10/20/30% of Intellect (70425 tooltip, 16 Oct notes); the official store reads 20/40/60%"
+ },
+ {
+  "file": "sim/core/buffs/debuffs_auto_gen.go",
+  "replace": "var huntersMarkSpell = spelldata.MustFind(14325)\n",
+  "with": "var huntersMarkSpell = spelldata.MustFind(14324) // wow-forever patch: rank 3 (+98 ranged attack power) outvalues rank 4 (+71) in the client data; a hunter casts the stronger (audit 2 row 13)\n",
+  "why": "Hunter's Mark rank 3 gives +98 ranged attack power, rank 4 +71 (both in the official spell store); the raid debuff and the hunter's own mark used rank 4"
+ },
+ {
+  "file": "sim/hunter/pets.go",
+  "replace": "\t\thp.AutoAttacks.MHConfig().DamageMultiplier /= 1 + attackSpeed.Effect(dbcenums.A_MOD_ATTACKSPEED, 0).Percent()\n",
+  "with": "\t\tif foreverPetNormalize() { // wow-forever patch: Forever keeps a faster pet's swing damage whole (patches/forever/sim/hunter/forever_pet_rule.go)\n\t\t\thp.AutoAttacks.MHConfig().DamageMultiplier /= 1 + attackSpeed.Effect(dbcenums.A_MOD_ATTACKSPEED, 0).Percent()\n\t\t}\n",
+  "why": "forum measurements put a 1.2 s cat 42% ahead of a 2.0 s pet at levels 20-30: Forever does not normalize pet damage by speed; the official simulator does"
+ }
 ]
