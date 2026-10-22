@@ -1,6 +1,11 @@
-"""Write the simulator patch that fills the item armor the fork's database lacks (2026-10-15, user decision: "Fill it").
+"""RETIRED 2026-10-18 (port to the official wowsims/forever, `_reference/sim-port.md`): do not run. The official simulator takes item
+armor from the client's item-level tables (5,884 of 6,151 armor items list armor), so the armor fill patch was retired with the fork
+(archived in patches/elliotwood-b7083fa/); this script still reads the fork's archived database (~/.wow-forever-tools/forever-repo) and
+would write its output into patches/forever/, the official simulator's live patches. Kept as the record of how the fork's numbers were made.
 
-    python _reference/data/raidsim/fill_armor.py      # writes patches/forever/sim/core/forever_armor.go, then rebuild the bench
+Write the simulator patch that fills the item armor the fork's database lacks (2026-10-15, user decision: "Fill it").
+
+    python _reference/data/raidsim/fill_armor.py      # (retired) wrote patches/forever/sim/core/forever_armor.go, then rebuild the bench
 
 The fork's item database (2ce8265) lists base armor for about one armor item in five (1,338 of 7,277: Legplates of Wrath 749; none for
 Lionheart Helm, the PvP and Forever items, most dungeon pieces), and the simulator gives an item no armor it does not list, so every tank

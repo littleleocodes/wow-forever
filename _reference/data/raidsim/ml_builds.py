@@ -45,19 +45,13 @@ def sim_of(r):
     c = (r.get("compare") or {}).get("commit") or ((r.get("search") or {}).get("bis-dummy") or {}).get("commit") or r.get("commit")
     if c:   # the comparison race's (the numbers the pages show; audit 2026-10-18 row 81), else the final search's, else the record's
         return c[:7]
-    d = r.get("date") or ""
-    if d < "2026-10-03":
-        return "40be98e"
-    if d < "2026-10-08":
-        return "b0f0df3"
-    import re as _re
-    t = (HERE / "setup.py").read_text(encoding="utf-8")
-    m = _re.search(r'"forever":\s*\{.*?"commit":\s*"([0-9a-f]{7})', t, _re.S)
-    return m.group(1) if m else "?"
+    return SI.commit_of_date(   # the pin of the record's date (2026-10-22: 2ce8265 and b7083fa added; after the port, setup.py's pin)
+        r.get("date"))
 import paths  # noqa: E402
 import readme_sections as RS  # noqa: E402
 import render_start_here as RSH  # noqa: E402
 import spec_modes as SM  # noqa: E402
+import sim_info as SI  # noqa: E402  (which simulator a record ran on)
 from filelock import locked  # noqa: E402
 from fmt_json import dumps  # noqa: E402
 
@@ -192,10 +186,10 @@ def make_build(r):
                    f"{w['winner']['iterations']:,} fights; runner-up "
                    + (f"{ru['split']} ({w['gap_to_runner_up']:+.2%}; {differs_text(w)})" if ru and w.get("gap_to_runner_up") is not None else "none")
                    + f"; {w.get('simulated_builds') or 0:,} builds simulated; certificate: {cert_text(w)}.",
-                   f"Simulator numbers are the community's model of the beta (ElliotWood/Forever {sim_of(r)} with this project's patches), not in-game "
+                   f"Simulator numbers are the community's model of the beta ({SI.label(sim_of(r), short=True)} with this project's patches), not in-game "
                    "measurements; the talents are the simulator's answer for this gear and rotation."],
          "open_questions": [f"A machine-searched {name} build: check it against the community's {name} builds at launch."],
-         "sources": ["https://github.com/ElliotWood/Forever"]}
+         "sources": [SI.URL[SI.kind(sim_of(r))].split(" ")[0]]}
     c = r["compare_raid"]
     if c.get("gain_vs_hand") is not None:
         over = c["gain_vs_hand"] >= MIN_GAIN
@@ -511,7 +505,8 @@ def intro():
             "buff and debuff. 3-minute fights; each number is the winner's average over 100,000 fights (standard error about ±0.1 DPS; "
             "differences under 2-3% are within the model's assumptions). These numbers use each spec's own best gear, so they differ a little "
             "from the spec pages' ranking, which races every build in the project's standard set per spec. Simulations of the community's "
-            "model of the beta (ElliotWood/Forever with this project's patches; each spec's record names the commit its search ran on), "
+            "model of the beta (with this project's patches; the ElliotWood/Forever fork for searches before 2026-10-18, the official "
+            "wowsims/forever since; each spec's record names the commit its search ran on), "
             "not in-game measurements.")
 
 

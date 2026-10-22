@@ -205,7 +205,7 @@ SCENARIO_INTRO = {
                  "and the respec plan. Numbers come from the fight lab (a Monte Carlo fight simulator of stated assumptions) and the "
                  "stats model; every build is a hypothesis for the beta client " + DATA_BUILD + "."),
     "raid": ("Raid DPS, tank and healer builds. DPS builds are ranked on a boss-level training dummy with only your own buffs in the "
-             "community simulator (ElliotWood/Forever); the raid setting and the parse build are shown next to it. Tanks are measured "
+             "community's raid simulator (each report names its simulator and commit: the ElliotWood/Forever fork, deleted 2026-10-18, for runs before the port to the official wowsims/forever); the raid setting and the parse build are shown next to it. Tanks are measured "
              "in the raid setting and healers in the healer lab. Simulations of the community's model of the beta, not measurements."),
     "pvp": ("PvP talent builds. There is no rotation page: PvP play depends on the fight. PvP values in the stats model are assumptions "
             "tuned on the Classic community PvP builds; no simulator plays PvP."),

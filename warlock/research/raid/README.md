@@ -34,7 +34,7 @@ Optimizer builds (the stats model's optimum per use-case, see the Optimizer sect
 | [opt-sb-raid-parse](builds/opt-sb-raid-parse.md) | 10/11/30 | parse |
 | [opt-affliction-raid-raid-dps](builds/opt-affliction-raid-raid-dps.md) | 30/0/21 | raid-dps |
 | [opt-fire-destro-raid-raid-dps](builds/opt-fire-destro-raid-raid-dps.md) | 10/11/30 | raid-dps |
-| [opt-sb-raid-raid-dps](builds/opt-sb-raid-raid-dps.md) | 22/11/18 | raid-dps |
+| [opt-sb-raid-raid-dps](builds/opt-sb-raid-raid-dps.md) | 10/11/30 | raid-dps |
 
 Classic Era reference builds: [ds-ruin-raid](../talents/classic-baseline/ds-ruin-raid.md), [sm-ruin-raid](../talents/classic-baseline/sm-ruin-raid.md).
 

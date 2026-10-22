@@ -261,9 +261,15 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
 
 ## Raid sim (`_reference/data/raidsim/`)
 
-- Level-60 raid builds are checked in the community's simulator, the ElliotWood/Forever wowsims fork (Go). `setup.py` puts
+- Level-60 raid builds are checked in the community's simulator: since 2026-10-18 the official **wowsims/forever** (Go,
+  github.com/wowsims/forever, web UI wowsims.com/forever; clone `~/.wow-forever-tools/wowsims-forever`); until then the ElliotWood/Forever
+  wowsims fork, deprecated and deleted in the night of 2026-10-17/18 (its clone `~/.wow-forever-tools/forever-repo` at b7083fa stays as
+  an archive; the port, what changed and what is open: `_reference/sim-port.md`). Every raid number made before the port is the fork's:
+  reports carry `sim.repo`/`sim.commit` (since 2026-10-22 also `sim.simulator` and `sim.client`), and the renderers name each record's
+  simulator, commit and client build through `_reference/data/sim_info.py` ("the official wowsims/forever simulator" / "the
+  ElliotWood/Forever fork (deleted 2026-10-18)"); never print the pin as the commit of numbers made on another. `setup.py` puts
   Go, protoc, a sparse clone and the built tools under `~/.wow-forever-tools` (nothing system-wide; `WOW_FOREVER_SIM` or
-  `--repo` point elsewhere); `run.py <class> --spec <scorer model id> --write` (or `--all`) runs every raid build of that
+  `--repo` point elsewhere; scripts find the clone with `setup.checkout()`); `run.py <class> --spec <scorer model id> --write` (or `--all`) runs every raid build of that
   model plus the simulator's preset talents with the simulator's own gear preset and rotation, so the table ranks talents only;
   `specs.json` holds the per-spec mapping (from each `presets.ts`). **What the pages rank on** (2026-10-02, user decision: "I want each
   page to be based off of raid/parse ... the recommended leveling builds should be based on solo play, and then raid/parse builds should
@@ -383,7 +389,11 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   rotation turned into Frostbolt spam). Tune rotation and talents in turns. Builds raced only in rotation-only entries have no
   scorer model: the scenario audit leaves them out.
 - **Simulator patches** (`raidsim/patches/<game>/`, applied by `setup.py` on every build, reset before `--update`; files the patches add are
-  removed there): our additions to the community simulator. Frostfire Bolt was one until 2026-10-03, when the fork implemented it (retired).
+  removed there): our additions to the community simulator. **Since the port (2026-10-18)** `patches/forever/` holds the official
+  simulator's: no racials, Champion of the Light 10/20/30%, pet hit inheritance, the unnormalized pet swing, Hunter's Mark rank 3; the
+  others below are the official code's own now or retired, and the fork's set is archived in `patches/elliotwood-b7083fa/`
+  (`patches/README.md`, `_reference/sim-port.md`). The rest of this paragraph is the fork's history.
+  Frostfire Bolt was one until 2026-10-03, when the fork implemented it (retired).
   Since b0f0df3 also Lightning Reflexes at 2% Agility a rank (70205's trait value; the fork's curve for spell 19168 still says 3%; a curve
   audit of 354 multi-rank talents against the 70170 tooltips found no other damage talent off). Since 2026-10-03 also Forever's hunter pet scaling (`patches/forever/sim/hunter/pet_scaling.go`; Blizzard's class deep dive: pets get stats from the hunter's gear; the community's numbers: 10% of the highest attack power, 100% of crit, 30% of armor, 2 health per Stamina; the fork gives pets nothing; `WOW_FOREVER_PET_SCALING=0` turns it off): a Beast Mastery pet 97 -> 166 DPS in a full raid, the build +8.5%. Since 2026-10-08 (client 70291's own text: GlobalStrings and Camelot/PaperDollFrame.lua) the pet shares are confirmed, and two more patches: **demon scaling** (`sim/warlock/demon_scaling.go`: attack power 17% of the warlock's spell damage, spell damage 10%, armor 35%, 7.5 health per Stamina, 100% of its spell crit; our readings: Fire or Shadow, whichever is higher, crit on melee too, hit inherited at an assumed 100%; `WOW_FOREVER_DEMON_SCALING=0`; demon-keeping warlocks +3.6-4.2%) and the **pet hit rule** (`foreverPetHitSpeed`: Forever does not normalize pet damage by attack speed; the Faster Attack passives raise a 2.0 s base and forum logs put a 1.2 s cat 42% ahead at level 20, so every pet hits with the fork's 2.0 s base; our entries' 1.2 s cat: hunters with a pet +3.0-3.9%; `WOW_FOREVER_PET_NORMALIZE=1` restores the fork's rule). Since 2026-10-15 also **Windfury Totem procs from main-hand hits only** (`sim/core/buffs/drivers.go`; the fork let the off hand proc it: Fury -6%, Combat -5.4%, Survival -4.4% in a full raid) and the **armor fill** (`sim/core/forever_armor.go`, written by `raidsim/fill_armor.py`: the fork's item database lists base armor for about one armor item in five; the 6,156 others get their Classic 1.12 armor, Forever's new items a fit by item level; tank numbers only, warrior tank damage taken 1162 -> 672 per second). `setup.py`'s edits take `replace`/`with` as well as `after`/`insert`; `patches/README.md` lists every patch with its sources. Numbers that depend on a patch are our model: say so.
 - **Audit of 2026-10-09** (user request: "a full search for any missing data"; a research pass over Blizzard's deep dives, beta notes
@@ -764,11 +774,11 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   each spec's pre-BiS and BiS set with its Wowhead Forever link (`www.wowhead.com/forever/item=`, the database the simulator's UI uses),
   item level and source (boss and zone, profession, quest or vendor, from the simulator's `assets/database/db.json`; about 40% of items
   list none there), the enchant matched to the item's slot (one enchant effect id serves a bracer and a glove enchant, a 1H and a 2H
-  one), and one share link per tier x setting that opens the character in the community simulator's live web UI
-  (`elliotwood.github.io/Forever/forever/<sim_spec>/#...`): gear, enchants, the talents the pages show, the setting's rotation,
+  one), and one share link per tier x setting that opens the character in the simulator's live web UI
+  (`wowsims.com/forever/<sim_spec>/#...` since 2026-10-22, proto version 2; until 2026-10-18 the fork's
+  `elliotwood.github.io/Forever/forever/...`, gone with it): gear, enchants, the talents the pages show, the setting's rotation,
   consumables, buffs and encounter. The links come from foreverbench's `link` mode (the UI's own encoding: the IndividualSimSettings
-  proto, zlib, base64, stamped with proto/common.proto's version; the live site's protos matched our pin on 2026-10-03, re-check after a
-  simulator update). `gear_tables.py` renders them: the raid pages' "The gear" table and "Open in the simulator" line, the rankings page.
+  proto, zlib, base64, stamped with proto/common.proto's version; re-check the live site's version after a simulator update). `gear_tables.py` renders them: the raid pages' "The gear" table and "Open in the simulator" line, the rankings page.
   The Classic bench (`setup.py --game classic`) no longer compiles: the potion and conjured-item lists (2026-09-28) and the stat-weight
   mode (2026-09-30) use Forever-only proto fields; the classicbench.exe in use dates from 2026-09-27.
 - **Deep optimisation of one class** (2026-10-02/03, user request for the shaman: "Find the best talent tree entirely for each spec and
@@ -802,7 +812,7 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   written); logs `_reference/data/deep-runs/<class>.log` (git-ignored). Scores below 10 (capacity, tank value) keep four decimals in the
   search's records (`ml_talents._r`). The shaman took about 14 hours for three damage specs and 2-3 for Restoration on 12 threads; the
   rotation re-tunes cost about an hour per entry, so the other eight classes need about five days on one such machine (several cloud
-  sessions can take one class each). At the end of the beta: the simulator's fork must have the final build (setup.py --update, the
+  sessions can take one class each). At the end of the beta: the simulator must have the final build (setup.py --update, the
   pin), our data refreshed (refresh_forever_talents.py and the steps after it), then deep_class.py per class (deep_opt.py takes its specs,
   first gear sets and starting builds from the ML records; starts the new trees no longer allow are dropped, and from cycle 2 it re-gears
   itself, so `ml_pipeline.py`, about 15 hours, is only needed when a new spec or hybrid appears).
@@ -810,9 +820,12 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   carry `bonus_stats` ({proto Stat name: value}, the simulator's own bonus stats; 2026-10-07, user question "how much spell power would a
   shaman need to equal the Beast-Survival hunter": the Elemental pick gains a linear 0.45 DPS per spell power in a full raid, 524 -> 1170
   at about +1,450 on top of its set's 390).
-  A fresh setup builds the pinned simulator commit (`GAMES[...]["commit"]` in setup.py, b7083fa since 2026-10-16 (marked client 70425, but its spell store is the 14-15 Oct data: a commit that only bumps `forever_client_build.txt` is not a new simulator; read `git show --stat` before pinning); 2ce8265 (70291) from 2026-10-09, b0f0df3 (70205) from 2026-10-03, 40be98e before) so every machine
-  and cloud session simulates the same fork; after a simulator update (`setup.py --update`) set the new pin and re-run
-  `rebuild.py --steps raid,regen`.
+  A fresh setup builds the pinned simulator commit (`GAMES[...]["commit"]` in setup.py: the official wowsims/forever **09e7398** since
+  2026-10-18, spell data and items client 1.60.1.70450; before, the fork: b7083fa from 2026-10-16 (marked client 70425, but its spell store
+  is the 14-15 Oct data: a commit that only bumps the client build file is not a new simulator; read `git show --stat` before pinning),
+  2ce8265 (70291) from 2026-10-09, b0f0df3 (70205) from 2026-10-03, 40be98e before) so every machine and cloud session simulates the same
+  code; after a simulator update (`setup.py --update`) set the new pin, add it to `sim_info.OFFICIAL_COMMITS` with its client build, and
+  re-run `rebuild.py --steps raid,regen`. `raidsim/repin_rehearsal.py` builds the patched bench on another commit in a worktree first.
 
 ## Writing style
 

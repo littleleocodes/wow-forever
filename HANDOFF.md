@@ -10,8 +10,10 @@ checklist), then the work list `_reference/page-audit.md`; the read-only audit o
 
 1. **Only if the task needs the raid simulator** (`raidsim/run.py`, `apl_opt.py`, `talent_opt.py`, `calibrate.py`, `rebuild.py`
    with the raid step): `python _reference/data/cloud_setup.py` (add `--classic` for the Classic-era checks). It pip-installs
-   `requirements.txt` (numpy, scikit-learn), builds the ElliotWood/Forever simulator at the pinned commit **b7083fa** (marked client 70425, but its spell data is still the 14-15 Oct store: a re-pin to upstream's latest, client 70450, is the next simulator step; `raidsim/setup.py` GAMES) with our patches and the
-   `foreverbench` tool under `~/.wow-forever-tools`, and runs the checks. It takes several minutes: run it in the background (or
+   `requirements.txt` (numpy, scikit-learn), builds the official wowsims/forever simulator (github.com/wowsims/forever) at the pinned
+   commit **09e7398** (client 1.60.1.70450; `raidsim/setup.py` GAMES) with our patches and the `foreverbench` tool under
+   `~/.wow-forever-tools/wowsims-forever`, and runs the checks. Until 2026-10-18 it built the ElliotWood/Forever fork (b7083fa, deleted
+   that night; `_reference/sim-port.md`): every raid number on the pages is still the fork's until the raid re-run. It takes several minutes: run it in the background (or
    with the 10-minute timeout) and read its output. The container is thrown away after the session, so the tools are rebuilt
    each session that needs them.
 2. Everything else (fight lab, scorer, healer lab, renderers, validation) needs only Python 3 and numpy:
@@ -41,6 +43,11 @@ Cloud notes:
   for the new trees (`repair_builds.py`). The simulator pin b7083fa turned out to carry pre-16-Oct spell data (audit finding 43), and
   upstream landed the four classes' new trees in client 70450 on 2026-10-17, so **every raid result waits for one re-pin** to upstream's
   latest; the hunter, paladin and druid raid confirm runs of 10-16/17 on b7083fa are to be redone after it.
+- **The simulator moved** (2026-10-18, user decision, audit 2 row 1): the ElliotWood/Forever fork was deprecated and deleted; the "re-pin"
+  above became a port to the official github.com/wowsims/forever (pin 09e7398, client 70450; web UI and share links wowsims.com/forever).
+  State and open items: `_reference/sim-port.md` (the gear sets must be re-made from the official item database before any raid number
+  means anything). The pages' raid numbers are still the fork's (2ce8265, and b7083fa for hunter, paladin and druid); the renderers say so
+  from each record (`_reference/data/sim_info.py`).
 - **Order of work** (user decision 2026-10-17: "Leveling first, re-pin later"): (1) the audit's fight-lab and healer-lab fixes (done
   2026-10-17 before resuming); (2) `bash _reference/data/deep-runs/sweep_70425_lev.sh` (git-ignored; markers in `deep-runs/s70425/`, log
   `deep-runs/sweep-70425.log`; resume with the same command): leveling rules re-tuned and certificates or open searches for every class

@@ -20,7 +20,7 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 | Build | Split | Role |
 |---|---|---|
 | [Retribution — Raid (machine-learning search)](builds/retribution-ml-raid.md) 🔬 | 11/8/32 | DPS |
-| [Protection — Raid tank (machine-learning search)](builds/protection-ml-tank.md) 🔬 | 0/33/18 | TANK |
+| [Protection — Raid tank (machine-learning search)](builds/protection-ml-tank.md) 🔬 | 0/35/16 | TANK |
 | [Holy — Raid healing (machine-learning search)](builds/holy-ml-heal.md) 🔬 | 33/12/6 | HEALER |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
@@ -30,7 +30,7 @@ Optimizer builds (the stats model's optimum per use-case, see the Optimizer sect
 | [opt-ret-dps-parse](builds/opt-ret-dps-parse.md) | 9/8/34 | parse |
 | [opt-holy-heal-raid-heal](builds/opt-holy-heal-raid-heal.md) | 31/7/13 | raid-heal |
 | [opt-prot-tank-raid-tank](builds/opt-prot-tank-raid-tank.md) | 0/32/19 | raid-tank |
-| [opt-ret-dps-raid-dps](builds/opt-ret-dps-raid-dps.md) | 12/8/31 | raid-dps |
+| [opt-ret-dps-raid-dps](builds/opt-ret-dps-raid-dps.md) | 17/0/34 | raid-dps |
 
 Classic Era reference builds: [holy-raid-healer](../talents/classic-baseline/holy-raid-healer.md), [ret-raid-dps](../talents/classic-baseline/ret-raid-dps.md), [prot-tank](../talents/classic-baseline/prot-tank.md).
 

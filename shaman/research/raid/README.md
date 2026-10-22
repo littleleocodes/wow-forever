@@ -18,18 +18,18 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 
 | Build | Split | Role |
 |---|---|---|
-| [Elemental — Raid (generated)](builds/elemental-raid.md) ⚗ | 31/7/13 | DPS |
+| [Elemental — Raid (generated)](builds/elemental-raid.md) ⚗ | 30/8/13 | DPS |
 | [Enhancement — Raid (machine-learning search)](builds/enhancement-ml-raid.md) 🔬 | 19/32/0 | DPS |
-| [Elemental-Enhancement — Raid (machine-learning search)](builds/elemental-enhancement-ml-raid.md) 🔬 | 17/26/8 | DPS |
+| [Elemental-Enhancement — Raid (machine-learning search)](builds/elemental-enhancement-ml-raid.md) 🔬 | 15/24/12 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
 | Build | Split | Profile |
 |---|---|---|
-| [opt-elemental-dps-parse](builds/opt-elemental-dps-parse.md) | 31/7/13 | parse |
+| [opt-elemental-dps-parse](builds/opt-elemental-dps-parse.md) | 30/8/13 | parse |
 | [opt-enhancement-dps-parse](builds/opt-enhancement-dps-parse.md) | 20/31/0 | parse |
-| [opt-elemental-dps-raid-dps](builds/opt-elemental-dps-raid-dps.md) | 31/7/13 | raid-dps |
-| [opt-enhancement-dps-raid-dps](builds/opt-enhancement-dps-raid-dps.md) | 11/31/9 | raid-dps |
+| [opt-elemental-dps-raid-dps](builds/opt-elemental-dps-raid-dps.md) | 31/11/9 | raid-dps |
+| [opt-enhancement-dps-raid-dps](builds/opt-enhancement-dps-raid-dps.md) | 14/31/6 | raid-dps |
 | [opt-resto-heal-raid-heal](builds/opt-resto-heal-raid-heal.md) | 0/10/41 | raid-heal |
 
 Classic Era reference builds: [resto-raid-healer](../talents/classic-baseline/resto-raid-healer.md), [elemental-raid-dps](../talents/classic-baseline/elemental-raid-dps.md), [enhancement-raid-support](../talents/classic-baseline/enhancement-raid-support.md).

@@ -38,7 +38,7 @@ Optimizer builds (the stats model's optimum per use-case, see the Optimizer sect
 | [opt-mm-lonewolf-raid-parse](builds/opt-mm-lonewolf-raid-parse.md) | 5/37/9 | parse |
 | [opt-melee-dps-raid-dps](builds/opt-melee-dps-raid-dps.md) | 5/15/31 | raid-dps |
 | [opt-mm-lonewolf-raid-raid-dps](builds/opt-mm-lonewolf-raid-raid-dps.md) | 5/38/8 | raid-dps |
-| [opt-mm-raid-raid-dps](builds/opt-mm-raid-raid-dps.md) | 22/29/0 | raid-dps |
+| [opt-mm-raid-raid-dps](builds/opt-mm-raid-raid-dps.md) | 31/20/0 | raid-dps |
 
 Classic Era reference builds: [bm-mm-raid](../talents/classic-baseline/bm-mm-raid.md), [mm-surv-hit-raid](../talents/classic-baseline/mm-surv-hit-raid.md).
 

@@ -43,6 +43,20 @@ GAMES = {"forever": {"url": "https://github.com/wowsims/forever", "dir": "wowsim
                      "commit": "7779ebbf79dc7f1341e6ab939b28a3402c9a730a"}}
 
 
+ENV = {"forever": "WOW_FOREVER_SIM", "classic": "WOW_FOREVER_CLASSIC_SIM"}   # an explicit checkout overrides <tools>/<dir>
+
+
+def tools_dir():
+    return pathlib.Path(os.environ.get("WOW_FOREVER_TOOLS", pathlib.Path.home() / ".wow-forever-tools"))
+
+
+def checkout(game="forever"):
+    """The simulator checkout scripts read (2026-10-22, sim-port open item 2): WOW_FOREVER_SIM (Classic: WOW_FOREVER_CLASSIC_SIM), else
+    <tools>/<GAMES[game]["dir"]>: the official wowsims/forever clone since 2026-10-18 (the fork's <tools>/forever-repo is an archive).
+    No check that the bench is built (run.py's repo_path does that)."""
+    return pathlib.Path(os.environ.get(ENV[game]) or tools_dir() / GAMES[game]["dir"])
+
+
 def sh(args, cwd, env=None, check=True):
     print("  $", " ".join(str(a) for a in args))
     r = subprocess.run([str(a) for a in args], cwd=str(cwd), env=env, text=True, capture_output=True, encoding="utf-8", errors="replace")

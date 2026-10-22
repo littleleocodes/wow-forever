@@ -37,6 +37,7 @@ ROOT = HERE.parents[1]
 sys.path[:0] = [str(HERE / "scorer"), str(HERE)]
 import paths  # noqa: E402
 import spec_modes as SM  # noqa: E402
+import sim_info as SI  # noqa: E402  (which simulator a record ran on)
 import spec_builds as SB  # noqa: E402
 import render_start_here as RSH  # noqa: E402
 from filelock import locked  # noqa: E402
@@ -290,7 +291,7 @@ def make_raid_build(cls, entry, e, st, spec, w, allr, best, rivals, best_hand, h
                           "--fresh) to value the talent in the search itself.")
     if zero:
         b["notes"].append("Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): " + ", ".join(zero) + ".")
-    b["notes"].append(f"Simulator numbers are the community's model of the beta (ElliotWood/Forever {sim_commit()} with this project's patches), "
+    b["notes"].append(f"Simulator numbers are the community's model of the beta ({SI.label(sim_commit(), short=True)} with this project's patches), "
                       "not in-game measurements.")
     return b
 

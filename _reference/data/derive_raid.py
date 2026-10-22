@@ -24,6 +24,7 @@ HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 sys.path[:0] = [str(HERE / "scorer"), str(HERE)]
 import paths  # noqa: E402
+import sim_info as SI  # noqa: E402  (which simulator a record ran on)
 import spec_modes as SM  # noqa: E402
 import spec_builds as SB  # noqa: E402
 import render_start_here as rs  # noqa: E402
@@ -107,9 +108,9 @@ def build_of(cls, rec, c):
          "allocation": c["allocation"], "core": [], "flex": [],
          "notes": [f"Simulator talent search from {rec['start']}: {moves} ({rec['search_gain']:+.1%} "
                    f"{'tank value' if tank else 'DPS'} on the search's third seed).",
-                   "Simulator numbers are the community's model of the beta (ElliotWood/Forever), not in-game measurements."],
+                   f"Simulator numbers are the community's model of the beta ({SI.label(SI.pin(), short=True)}), not in-game measurements."],
          "open_questions": [f"A derived {tree} raid build: check it against the community's {tree} builds at launch."],
-         "sources": ["https://github.com/ElliotWood/Forever"]}
+         "sources": [SI.URL[SI.kind(SI.pin())]]}
     if rec["verdict"] == "replaces":
         b["replaces"] = rec["hand"]
         b["notes"].insert(0, f"About {rec['gain_vs_hand']:+.1%} over the hand draft {rec['hand']} (over the replacement bar): this build is the "

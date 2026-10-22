@@ -322,7 +322,7 @@ def class_part(cls, src, level=3):
 
 
 INTRO = ("Every spell the Forever beta spellbook (build " + DATA_BUILD + ") marks new against Classic Era, what the community simulator "
-         "(ElliotWood/Forever with this project's patches, `raidsim/patches/`) and the fight lab measured it doing, and the builds "
+         "(with this project's patches, `raidsim/patches/`; the ElliotWood/Forever fork for runs before 2026-10-18, the official wowsims/forever since: each report names its commit) and the fight lab measured it doing, and the builds "
          "searched around the new spells: each target has its own rotation (a rotation-only entry of `raidsim/specs.json`, tuned by "
          "`raidsim/apl_opt.py`, whose pool offers every new spell) and its talents found by `raidsim/talent_opt.py` (a local search over "
          "legal 51-point builds in the simulator, keeping every talent the rotation reads). Raid numbers are the last races: the boss-level "

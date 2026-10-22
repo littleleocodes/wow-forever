@@ -6,10 +6,13 @@ and bis gear have a way to see the actual items?").
 For every damage spec's pre-BiS and phase-1 BiS set (the machine-learning records, raidsim/ml/): each item and enchant with its Wowhead
 Forever link (www.wowhead.com/forever, the database the simulator's own UI links to), its item level and where it comes from (the boss
 and zone, the profession, the quest or the vendor; the simulator's item database), and the whole character as a share link for the
-community simulator's live web UI (the ElliotWood/Forever fork's GitHub Pages): the set, the talents the pages show for that tier and
-setting (ml_builds.shown), the setting's rotation, consumables, buffs and encounter, exactly as our runs simulate them, encoded by
-foreverbench's "link" mode the way the UI's "copy link" does. The site reads links of its own proto version and older; links carry our
-simulator copy's version (proto/common.proto: 18, the same as the live site's on 2026-10-03).
+official simulator's live web UI (wowsims.com/forever since 2026-10-22; a spec page is `/forever/<class>/<spec>/`, ui/app/spec_entry.tsx):
+the set, the talents the pages show for that tier and setting (ml_builds.shown), the setting's rotation, consumables, buffs and
+encounter, exactly as our runs simulate them, encoded by foreverbench's "link" mode the way the UI's "copy link" does
+(ui/features/import-export/exporters/link.ts: IndividualSimSettings, zlib, base64 in the URL hash). The site reads links of its own proto
+version and older; links carry our simulator copy's version (proto/common.proto `current_version_number`: 2 in the official repository at
+09e7398). Until 2026-10-18 the links went to the ElliotWood/Forever fork's GitHub Pages (elliotwood.github.io/Forever, proto version 18),
+which is gone with the fork; links in a gear-links.json written before then no longer open.
 --write: raidsim/gear-links.json, read by render_modes.py (raid pages), ml_builds.py --rank (_reference/dps-rankings.md) and the ranking
 page.
 """
@@ -39,7 +42,7 @@ MB = _load("ml_builds_links", HERE / "ml_builds.py")
 import paths  # noqa: E402
 import spec_modes as SM  # noqa: E402
 OUT = HERE / "gear-links.json"
-SITE = "https://elliotwood.github.io/Forever/forever"
+SITE = "https://wowsims.com/forever"   # the official simulator's web UI (vite base /forever/); the fork's elliotwood.github.io/Forever/forever until 2026-10-18
 WOWHEAD = "https://www.wowhead.com/forever"
 KEYS = ("prebis-raid", "bis-raid", "prebis-dummy", "bis-dummy")
 TODAY = datetime.date.today().isoformat()

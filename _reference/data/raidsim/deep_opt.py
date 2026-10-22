@@ -36,6 +36,7 @@ HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
 sys.path[:0] = [str(ROOT / "_reference/data"), str(HERE)]
 import paths  # noqa: E402
+import sim_info as SI  # noqa: E402  (which simulator a record ran on)
 import spec_modes as SM  # noqa: E402
 
 
@@ -332,7 +333,7 @@ def report_commit(cls, st):
         return st["commit"]
     import re
     p = paths.scenario_dir(cls, "raid") / "deep-optimization.md"
-    m = re.search(r"ElliotWood/Forever (\w+) with", p.read_text(encoding="utf-8")) if p.exists() else None
+    m = re.search(r"(?:ElliotWood/Forever(?: fork)?|wowsims/forever) (\w+)(?: \(client [^)]*\))? with", p.read_text(encoding="utf-8")) if p.exists() else None
     return m.group(1) if m else R.git_commit(R.repo_path(argparse.Namespace(repo=None)))
 
 
@@ -356,7 +357,7 @@ def report(cls, st, recs):
               "(`raidsim/ml/`) and the pages supersede its winners; it stays as the record of that search.", ""]
     o += ["Talents, gear and rotation were tuned in turns until none of them moved; every winner was then checked against every build one or two "
           "talent moves away and raced against all our builds of its spec over 200,000 fights. The community simulator's model of the beta "
-          f"(ElliotWood/Forever {commit} with this project's patches), not in-game measurements. No search over this many builds can prove a "
+          f"({SI.label(commit, short=True)} with this project's patches), not in-game measurements. No search over this many builds can prove a "
           "global optimum; what the checks below rule out is a better build near the winner, and the independent runs show how often the "
           "search reaches the same top from different starts.", "",
           f"Cycles: {len(st['cycles'])}" + (f" (converged in cycle {st['converged']})" if st.get("converged") else " (the cycle limit)")

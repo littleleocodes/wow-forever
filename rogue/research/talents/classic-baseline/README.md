@@ -13,16 +13,3 @@ The community-standard WoW Classic Era builds, used as the *starting point* for 
 Classic Era community-standard builds. Swords and daggers Combat are the raid specs; Assassination-heavy builds only become competitive with Naxxramas gear. Allocations validated against the Classic tree data.
 
 Source of truth: `builds.json` in this folder. Regenerate with `python _reference/data/validate_builds.py && python _reference/data/render_builds.py`.
-
-## Report index
-
-Reports under this folder that no other page links to (generated):
-
-- [optimizer/combat-daggers-raid-raid-dps.md](optimizer/combat-daggers-raid-raid-dps.md): rogue / classic-era / spec combat-daggers-raid / profile raid-dps
-- [optimizer/combat-swords-raid-leveling-st.md](optimizer/combat-swords-raid-leveling-st.md): rogue / classic-era / spec combat-swords-raid / profile leveling-st
-- [optimizer/combat-swords-raid-raid-dps.md](optimizer/combat-swords-raid-raid-dps.md): rogue / classic-era / spec combat-swords-raid / profile raid-dps
-- [raidsim/combat-daggers-raid-environments.md](raidsim/combat-daggers-raid-environments.md): DPS by environment — rogue combat-daggers-raid (Classic Era)
-- [raidsim/combat-daggers-raid.md](raidsim/combat-daggers-raid.md): Raid sim — rogue combat-daggers-raid (Classic Era)
-- [raidsim/combat-swords-raid-environments.md](raidsim/combat-swords-raid-environments.md): DPS by environment — rogue combat-swords-raid (Classic Era)
-- [raidsim/combat-swords-raid.md](raidsim/combat-swords-raid.md): Raid sim — rogue combat-swords-raid (Classic Era)
-- [respec-plan.md](respec-plan.md): Rogue / classic-era: respec plan for `leveling-st`

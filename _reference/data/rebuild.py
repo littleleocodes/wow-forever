@@ -62,6 +62,7 @@ ROOT = HERE.parents[1]
 FL = HERE / "fightlab"
 sys.path.insert(0, str(FL))
 import paths  # noqa: E402
+import sim_info as SI  # noqa: E402  (which simulator a record ran on)
 CLASSES = ["mage", "priest", "warlock", "hunter", "warrior", "rogue", "paladin", "shaman", "druid"]
 PROFILES = ["leveling-st", "leveling-aoe", "solo-60", "raid-dps-extwc", "raid-dps", "raid-heal", "raid-tank"]
 STEPS = ["effects", "calibrate", "race", "adopt", "report", "sensitivity", "variants", "raid", "classic", "heal", "regen"]
@@ -575,7 +576,7 @@ def adopt_raid(cls, spec, entry, opt_id, folder, a, log):
                     "Previous summary: " + b["summary"])
     b["notes"] = [f"Adopted from the community simulator on {today}: {what} beat the previous draft by {gain:+.1%} {unit}; the rationale below predates the adoption where it names talents no longer taken."] + b.get("notes", [])
     if preset:   # credit the preset's source
-        url = f"https://github.com/ElliotWood/Forever/blob/master/ui/specs/{entry['sim_spec']}/presets.ts"
+        url = f"{SI.URL[SI.kind(SI.pin())]}/blob/master/ui/specs/{entry['sim_spec']}/presets.ts"   # the official repository since 2026-10-18
         if url not in (b.get("sources") or []):
             b["sources"] = (b.get("sources") or []) + [url]
     data["builds"] = [x if x["id"] != hand else b for x in data["builds"]]

@@ -30,7 +30,7 @@ Optimizer builds (the stats model's optimum per use-case, see the Optimizer sect
 | [opt-arms-2h-raid-parse](builds/opt-arms-2h-raid-parse.md) | 20/31/0 | parse |
 | [opt-fury-dw-raid-parse](builds/opt-fury-dw-raid-parse.md) | 19/32/0 | parse |
 | [opt-arms-2h-raid-raid-dps](builds/opt-arms-2h-raid-raid-dps.md) | 20/31/0 | raid-dps |
-| [opt-fury-dw-raid-raid-dps](builds/opt-fury-dw-raid-raid-dps.md) | 19/32/0 | raid-dps |
+| [opt-fury-dw-raid-raid-dps](builds/opt-fury-dw-raid-raid-dps.md) | 18/33/0 | raid-dps |
 | [opt-prot-tank-raid-tank](builds/opt-prot-tank-raid-tank.md) | 14/5/32 | raid-tank |
 
 Classic Era reference builds: [fury-dw-raid](../talents/classic-baseline/fury-dw-raid.md), [fury-2h-raid](../talents/classic-baseline/fury-2h-raid.md), [prot-raid-tank](../talents/classic-baseline/prot-raid-tank.md).

@@ -28,7 +28,7 @@ Optimizer builds (the stats model's optimum per use-case, see the Optimizer sect
 |---|---|---|
 | [opt-shadow-dps-parse](builds/opt-shadow-dps-parse.md) | 18/0/33 | parse |
 | [opt-holy-heal-raid-heal](builds/opt-holy-heal-raid-heal.md) | 21/30/0 | raid-heal |
-| [opt-shadow-dps-raid-dps](builds/opt-shadow-dps-raid-dps.md) | 18/0/33 | raid-dps |
+| [opt-shadow-dps-raid-dps](builds/opt-shadow-dps-raid-dps.md) | 17/0/34 | raid-dps |
 
 Classic Era reference builds: [holy-raid-healer](../talents/classic-baseline/holy-raid-healer.md), [disc-power-infusion-healer](../talents/classic-baseline/disc-power-infusion-healer.md).
 

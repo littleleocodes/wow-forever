@@ -30,6 +30,7 @@ sys.path.insert(0, str(ROOT / "_reference/data/scorer"))
 sys.path.insert(0, str(HERE))
 sys.path.append(str(pathlib.Path(__file__).resolve().parents[1]))   # _reference/data: paths.py
 import paths  # noqa: E402
+import sim_info as SI  # noqa: E402  (which simulator a record ran on)
 from fmt_json import dumps  # noqa: E402
 import run as raidrun  # noqa: E402  (this folder's run.py: the raid-sim driver)
 import splitfx  # noqa: E402  (scorer/splitfx.py)
@@ -206,7 +207,7 @@ def main():
                 s.setdefault("game_overrides", collections.OrderedDict()).setdefault(game, collections.OrderedDict())["share"] = share
         # replaces only this kind of sentence (the split kept the text before it and dropped every later sentence; audit 2026-10-18, row 44)
         model["note"] = splitfx.set_sentence(model.get("note", ""), " Raid sim shares" if game == "forever" else " Classic raid sim shares", (
-            f"{'Raid' if game == 'forever' else 'Classic raid'} sim shares ({datetime.date.today().isoformat()}, {main['label']} in the {'ElliotWood/Forever' if game == 'forever' else 'wowsims/classic'} simulator {out['sim']['commit']}"
+            f"{'Raid' if game == 'forever' else 'Classic raid'} sim shares ({datetime.date.today().isoformat()}, {main['label']} in the {SI.name(out['sim'], short=True) if game == 'forever' else 'wowsims/classic'} simulator {out['sim']['commit']}"
             + (", every mana-only buff on: the split before the mana limit" if res is not out["results"] else "") + "): "
             + ", ".join(f"{k} {v * 100:.0f}%" for k, v in main["source_shares"].items()) + f"; {main['unmatched_share'] * 100:.0f}% of the damage matched no source."))
         if a.write:
@@ -422,7 +423,7 @@ def main():
             # one sentence per spec model and game: other models' raid sentences stay (110 entries had lost theirs; audit 2026-10-18, row 44)
             mk = " Raid sim calibration" if game == "forever" else " Classic raid sim calibration"
             e["note"] = splitfx.set_sentence(p["entry"].get("note", ""), mk, (
-                f"{mk.strip()} [{a.spec}] ({datetime.date.today().isoformat()}, {'ElliotWood/Forever' if game == 'forever' else 'wowsims/classic'} {out['sim']['commit']}, {a.spec}{', training dummy' if out['sim'].get('setting') == 'dummy' else ''}): removing it costs "
+                f"{mk.strip()} [{a.spec}] ({datetime.date.today().isoformat()}, {SI.name(out['sim'], short=True) if game == 'forever' else 'wowsims/classic'} {out['sim']['commit']}, {a.spec}{', training dummy' if out['sim'].get('setting') == 'dummy' else ''}): removing it costs "
                 f"{p['target'] * 100:.1f}% DPS in the simulator (scorer said {p['before'] * 100:.1f}% on the same scale); {what} ({ev_mean(name) * 100:.1f}%). Other modes unchanged."),
                 tag=a.spec, drop_untagged=lambda seg: f", {a.spec}," in seg or f", {a.spec})" in seg)
             e["effects"] = expand(p["other"]) + expand(fitted(p, p["k"]))
@@ -436,7 +437,7 @@ def main():
             if ml:
                 lo_d, hi_d = min(v["deficit"] for v in deficits.values()), max(v["deficit"] for v in deficits.values())
                 lim[game] = collections.OrderedDict([("profiles", ml["profiles"]), ("loss", ml["loss"]), ("cap", ml["cap"]), ("rms", ml["rms"]), ("points", ml.get("points")), (
-                    "note", f"Raid sim calibration ({datetime.date.today().isoformat()}, ElliotWood/Forever {out['sim']['commit']}, training dummy): the builds "
+                    "note", f"Raid sim calibration ({datetime.date.today().isoformat()}, {SI.name(out['sim'], short=True)} {out['sim']['commit']}, training dummy): the builds "
                             f"lose {lo_d * 100:.0f}-{hi_d * 100:.0f}% of their damage to mana (the same builds gain that much with every mana-only buff on); "
                             "the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss "
                             "and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana "

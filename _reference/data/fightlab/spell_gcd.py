@@ -13,11 +13,14 @@ import collections
 import json
 import pathlib
 import re
+import sys
 
 HERE = pathlib.Path(__file__).resolve().parent
 SPELLS = HERE.parent / "forever-spells"
 OUT = HERE / "spell_gcd.json"
-STORE = pathlib.Path.home() / ".wow-forever-tools/forever-repo/sim/core/spelldata/spells_auto_gen.go"
+sys.path.insert(0, str(HERE.parent / "raidsim"))
+import setup as SIM_SETUP  # noqa: E402  (raidsim/setup.py: the simulator checkout, the official wowsims/forever clone since 2026-10-18)
+STORE = SIM_SETUP.checkout() / "sim" / "core" / "spelldata" / "spells_auto_gen.go"
 CLASSES = ["druid", "hunter", "mage", "paladin", "priest", "rogue", "shaman", "warlock", "warrior"]
 
 
@@ -25,6 +28,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--store", default=str(STORE))
     ap.add_argument("--write", action="store_true")
+    ap.add_argument("--out", default=str(OUT), help="where --write writes (default: the committed file the fight lab reads)")
     a = ap.parse_args()
     rows = {}
     for line in open(a.store, encoding="utf-8"):
@@ -51,8 +55,8 @@ def main():
         out["off_gcd"][cls] = sorted(n for n, v in by.items() if v == {0})
         print(cls, out["gcd"][cls])
     if a.write:
-        OUT.write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")
-        print(f"wrote {OUT}")
+        pathlib.Path(a.out).write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")
+        print(f"wrote {a.out}")
 
 
 if __name__ == "__main__":

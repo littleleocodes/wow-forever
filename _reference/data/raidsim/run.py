@@ -1,4 +1,4 @@
-"""Level-60 raid builds through the ElliotWood/Forever (wowsims) simulator: DPS per talent build, one report per spec.
+"""Level-60 raid builds through the official wowsims/forever simulator (the ElliotWood/Forever fork until 2026-10-18): DPS per talent build, one report per spec.
 
     python _reference/data/raidsim/run.py mage --spec frost-raid [--builds id ...] [--iterations 3000] [--duration 180] [--write]
     python _reference/data/raidsim/run.py --all --write            # every spec in specs.json
@@ -27,6 +27,8 @@ sys.path.append(str(pathlib.Path(__file__).resolve().parents[1]))   # _reference
 import paths  # noqa: E402
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import id_names  # noqa: E402  (spell and item names the simulator's lists miss)
+import setup as SETUP  # noqa: E402  (the checkout path: setup.checkout)
+import sim_info  # noqa: E402  (_reference/data/sim_info.py: which simulator and client a record ran on)
 GAME = "forever"   # or "classic-era": set by main() from --game; every path below follows it
 GAMES = {"forever": {"specs": "specs.json", "env": "WOW_FOREVER_SIM", "repo": "wowsims-forever", "bench": "foreverbench", "builds": "research/talents/forever/proposed-builds.json",
                      "trees": "ui/sim/talents/trees", "reports": "research/raid/raidsim", "name_key": "fancyName", "ui": "ui/specs"},
@@ -43,7 +45,7 @@ def set_game(game):
 
 def repo_path(a):
     g = GAMES[GAME]
-    p = pathlib.Path(a.repo) if a.repo else pathlib.Path(os.environ.get(g["env"], pathlib.Path.home() / ".wow-forever-tools" / g["repo"]))
+    p = pathlib.Path(a.repo) if a.repo else SETUP.checkout("forever" if GAME == "forever" else "classic")   # setup.py: env override or <tools>/<dir>
     if not (p / f"{g['bench']}.exe").exists() and not (p / g["bench"]).exists():
         raise SystemExit(f"no bench tool in {p}: run _reference/data/raidsim/setup.py{' --game classic' if GAME != 'forever' else ''} (or pass --repo)")
     return p
@@ -547,7 +549,7 @@ def run_spec(cls, spec, a, repo):
     if first:
         print(f"  damage shares of {first['label']}: " + ", ".join(f"{k} {v * 100:.0f}%" for k, v in list(first["shares"].items())[:8])
               + f" | model sources: " + ", ".join(f"{k} {v * 100:.0f}%" for k, v in first["source_shares"].items()) + f" (unmatched {first['unmatched_share'] * 100:.0f}%)")
-    out = {"class": cls, "spec": spec, "game": GAME, "sim": {"repo": str(repo), "commit": git_commit(repo), **sim_switches(), "spec_folder": entry["sim_spec"], "gear": entry["gear"], "apl": apl_label(entry, repo), "apl_sim": entry["apl"],
+    out = {"class": cls, "spec": spec, "game": GAME, "sim": {"repo": str(repo), "commit": git_commit(repo), **sim_switches(repo), "spec_folder": entry["sim_spec"], "gear": entry["gear"], "apl": apl_label(entry, repo), "apl_sim": entry["apl"],
                                               "race": cfg["race"], "setting": setting(entry), "buffs": setting_text(entry, setting(entry)), "consumables": cfg["consumables"],
                                               "encounter": (f"a boss-level training dummy (level 63, creature type Elemental), {a.duration}s, execute phases 20/25/35/45/90%" if setting(entry) == "dummy" else f"single level-63 target (creature type Elemental), {a.duration}s, execute phases 20/25/35/45/90%"), "iterations": a.iterations, "seed": a.seed, "duration": a.duration},
            "date": datetime.date.today().isoformat(), "results": results, "deltas": deltas}
@@ -761,7 +763,7 @@ def run_environments(cls, spec, a, repo):
                         raid_casts[d["label"]] = action_casts(d.get("actions"), names)
     rows = [{"label": b["label"], "split": b["split"], "ours": b["ours"], "dps": dps[b["label"]],
              "raid_spell_casts": raid_casts[b["label"]][0], "raid_casts": raid_casts[b["label"]][1]} for b in builds]
-    out = {"class": cls, "spec": spec, "game": GAME, "date": datetime.date.today().isoformat(), "sim": {"repo": str(repo), "commit": git_commit(repo), **sim_switches(), "gear_raid": entry["gear"], "gear_max": gear_max,
+    out = {"class": cls, "spec": spec, "game": GAME, "date": datetime.date.today().isoformat(), "sim": {"repo": str(repo), "commit": git_commit(repo), **sim_switches(repo), "gear_raid": entry["gear"], "gear_max": gear_max,
                                                                                                           "iterations": a.iterations, "seed": a.seed}, "environments": ENVIRONMENTS, "results": rows}
     print(f"== {cls} {spec} environments (gear raid {pathlib.Path(entry['gear']).name}, max {pathlib.Path(gear_max).name}):")
     key = "dummy" if GAME == "forever" else "raid"
@@ -772,9 +774,8 @@ def run_environments(cls, spec, a, repo):
         d = paths.raidsim_dir(cls, GAME)
         d.mkdir(parents=True, exist_ok=True)
         (d / f"{spec}-environments.json").write_text(json.dumps(out, indent=1), encoding="utf-8")
-        simname = "ElliotWood/Forever simulator" if GAME == "forever" else "upstream wowsims/classic simulator (Classic Era)"
         o = [f"# DPS by environment — {cls} {spec}" + (" (Classic Era)" if GAME != "forever" else ""), "",
-             f"> Generated by `_reference/data/raidsim/run.py --env environments` on {out['date']} with the {simname}, commit {out['sim']['commit']}, {a.iterations} iterations per build. "
+             f"> Generated by `_reference/data/raidsim/run.py --env environments` on {out['date']} with {sim_info.label(dict(out['sim'], game=GAME))}, {a.iterations} iterations per build. "
              "Personal DPS of the same builds in every setting: the boss-level training dummy with your own buffs (it ranks the raid DPS builds), an in-game "
              "level-60 dummy, the fully buffed raid, and the theoretical maximum (best gear preset, everything on). Simulations of the community's model, "
              "not measurements. Do not hand-edit.", "",
@@ -833,11 +834,12 @@ def scorer_removals(cls, spec, profile, allocs):
     return out
 
 
-def sim_switches():
+def sim_switches(repo=None):
     """The patch switches a run was made with (2026-10-18, audit 2 row 96: race-neutral numbers depended on an environment variable no
-    report recorded): racials on or off (WOW_FOREVER_NO_RACIALS=1), the pet swing rule (WOW_FOREVER_PET_NORMALIZE=1)."""
+    report recorded): racials on or off (WOW_FOREVER_NO_RACIALS=1), the pet swing rule (WOW_FOREVER_PET_NORMALIZE=1). With the checkout
+    also the simulator and its data's client build (2026-10-22, sim_info.identity), so the pages can name what a record ran on."""
     return {"racials": "off" if os.environ.get("WOW_FOREVER_NO_RACIALS") == "1" else "on",
-            "pet_normalize": os.environ.get("WOW_FOREVER_PET_NORMALIZE") == "1"}
+            "pet_normalize": os.environ.get("WOW_FOREVER_PET_NORMALIZE") == "1", **(sim_info.identity(repo) if repo else {})}
 
 
 def git_commit(repo):
@@ -862,9 +864,8 @@ def write_report(out):
         print(f"  {cls} {spec}: no builds to report")
         return
     best = rows[0]["dps"] or 1.0
-    simname = "ElliotWood/Forever simulator (wowsims fork" if out.get("game", "forever") == "forever" else "upstream wowsims/classic simulator (Classic Era"
     o = [f"# Raid sim — {cls} {spec}" + (" (Classic Era)" if out.get("game") == "classic-era" else ""), "",
-         f"> Generated by `_reference/data/raidsim/run.py` on {out['date']} with the {simname}, commit {sim['commit']}): "
+         f"> Generated by `_reference/data/raidsim/run.py` on {out['date']} with {sim_info.label(dict(sim, game=out.get('game', 'forever')))}: "
          f"{sim['iterations']} iterations per build, seed {sim['seed']}, {sim['encounter']}, gear preset `{pathlib.Path(sim['gear']).name}`, rotation `{pathlib.Path(sim['apl']).name}`, "
          f"race {sim['race']}, {sim['buffs']}, the sim spec's default options. Every build uses the same gear and rotation, so the table ranks talents only; "
          "a build whose playstyle the rotation does not express (a Fire build under a Frost rotation) is not fairly measured. The simulator models the beta from the "
