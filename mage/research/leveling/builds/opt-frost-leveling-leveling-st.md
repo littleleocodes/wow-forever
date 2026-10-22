@@ -1,10 +1,10 @@
-# Optimizer — Single-target Frostbolt leveling: Frostbolt ~70%, Fire Blast/Frost Nova instants, wand finishes (leveling-st) — 18/0/33
+# Optimizer — Single-target Frostbolt leveling: Frostbolt ~70%, Fire Blast/Frost Nova instants, wand finishes (leveling-st) — 19/1/31
 
 *[Mage](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 18/0/33 (Arcane / Fire / Frost) |
+| **Build** | 19/1/31 (Arcane / Fire / Frost) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
@@ -15,72 +15,43 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-le
 
 ## Point allocation
 
-### Arcane (18)
+### Arcane (19)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
+| **Arcane Focus** | 1/5 | changed | Improves your chance to hit with Arcane spells by 1%. |
 | **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, your Arcane Missile hits a 10% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 | **Wand Specialization** | 2/2 | moved | Increases your damage with Wands by 25%. |
-| **Arcane Focus** | 1/5 | changed | Improves your chance to hit with Arcane spells by 1%. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
 | **Magic Absorption** | 2/2 | changed | Increases all your resistances by 10 and causes all spells you fully resist to restore 2% of your total mana. Cannot trigger more often than 1 time per sec. |
 | **Arcane Blast** | 1/1 | **NEW** | Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application. |
+| **Arcane Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
 | **Arcane Wrath** | 1/1 | **NEW** | Launches a projectile of pure Arcane energy at the enemy target, causing 122 to 146 Arcane damage. This spell gains additional Spell Damage equal to 5% of your maximum Mana. |
-| **Arcane Meditation** | 2/3 | changed | Allows 33% of your Mana regeneration to continue while casting. |
 
-### Fire (0)
-
-*No points.*
-
-### Frost (33)
+### Fire (1)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
+| **Incineration** | 1/3 | **NEW** | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 2%. |
+
+### Frost (31)
+
+| Talent | Pts | vs Classic | Effect at this rank |
+|---|---|---|---|
+| **Elemental Precision** | 3/3 | changed | Improves your chance to hit with Frost and Fire spells by 6%. |
 | **Improved Frostbolt** | 5/5 | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.5 sec. |
-| **Elemental Precision** | 5/5 | changed | Improves your chance to hit with Frost and Fire spells by 5%. |
 | **Frostbite** | 3/3 | moved | Gives your Chill effects a 15% chance to Freeze the target for 5 sec. |
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
-| **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets. |
+| **Improved Frost Nova** | 1/2 | unchanged | Reduces the cooldown of your Frost Nova spell by 2 sec. |
 | **Frost Channeling** | 3/3 | moved | Reduces the mana cost of your Frost spells by 15% and reduces the threat caused by your Frost spells by 30%. |
-| **Piercing Ice** | 3/3 | unchanged | Increases the damage done by your Frost spells by 6%. |
-| **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
+| **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets. |
+| **Arctic Reach** | 2/2 | unchanged | Increases the range of your Frostbolt, Frost Blast, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%. |
 | **Ice Block** | 1/1 | moved | You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move, or cast spells. |
-| **Fingers of Frost** | 2/2 | **NEW** | Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 2 spells cast as if the target were Frozen. Lasts 15 sec. |
+| **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
 | **Cold Snap** | 1/1 | changed | Finishes the remaining cooldown on all your other Frost spells. |
+| **Fingers of Frost** | 2/2 | **NEW** | Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 2 spells cast as if the target were Frozen. Lasts 15 sec. |
 | **Ice Barrier** | 1/1 | changed | Instantly shields you, absorbing 447 damage. Lasts 1 min. While the shield holds, your spellcasts will not be interrupted or delayed from taking damage. |
-
-## Leveling order
-
-| Levels | Tree | Talent | Pts | Running total |
-|---|---|---|---|---|
-| 10-14 | Frost | Improved Frostbolt | 5 | 0/0/5 |
-| 15-17 | Frost | Frostbite | 3 | 0/0/8 |
-| 18-19 | Frost | Elemental Precision | 2 | 0/0/10 |
-| 20 | Frost | Ice Lance | 1 | 0/0/11 |
-| 21-23 | Frost | Frost Channeling | 3 | 0/0/14 |
-| 24 | Frost | Piercing Ice | 1 | 0/0/15 |
-| 25 | Frost | Ice Block | 1 | 0/0/16 |
-| 26 | Frost | Shatter | 1 | 0/0/17 |
-| 27 | Frost | Ice Shards | 1 | 0/0/18 |
-| 28-29 | Frost | Shatter | 2 | 0/0/20 |
-| 30-31 | Frost | Fingers of Frost | 2 | 0/0/22 |
-| 32-35 | Frost | Ice Shards | 4 | 0/0/26 |
-| 36-37 | Frost | Piercing Ice | 2 | 0/0/28 |
-| 38 | Frost | Elemental Precision | 1 | 0/0/29 |
-| 39 | Frost | Cold Snap | 1 | 0/0/30 |
-| 40 | Frost | Ice Barrier | 1 | 0/0/31 |
-| 41-42 | Frost | Elemental Precision | 2 | 0/0/33 |
-| 43-44 | Arcane | Missile Barrage | 2 | 2/0/33 |
-| 45-46 | Arcane | Wand Specialization | 2 | 4/0/33 |
-| 47 | Arcane | Arcane Focus | 1 | 5/0/33 |
-| 48-51 | Arcane | Arcane Concentration | 4 | 9/0/33 |
-| 52-53 | Arcane | Arcane Subtlety | 2 | 11/0/33 |
-| 54 | Arcane | Arcane Concentration | 1 | 12/0/33 |
-| 55-56 | Arcane | Magic Absorption | 2 | 14/0/33 |
-| 57 | Arcane | Arcane Blast | 1 | 15/0/33 |
-| 58 | Arcane | Arcane Wrath | 1 | 16/0/33 |
-| 59-60 | Arcane | Arcane Meditation | 2 | 18/0/33 |
 
 ## Core talents (priority order)
 
@@ -112,6 +83,7 @@ What this build casts per kill ([report](../fightlab/frost-leveling.md), all lev
 ## Notes
 
 - Report: mage/research/talents/forever/optimizer/frost-leveling-leveling-st.md
+- 2026-10-22 (repair_builds.py, client build 70425 trees): 18/0/33 -> 19/1/31; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Arctic Reach (tier gating for Ice Barrier); +1 Arctic Reach (tier gating for Ice Barrier); +1 Improved Frost Nova (tier gating for Ice Barrier); refill +1 Arcane Meditation, +1 Incineration; order dropped (order_repair.py) (refill: the frost-leveling model, leveling-st).
 
 ## Open questions (verify in the live game)
 

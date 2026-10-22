@@ -1,227 +1,63 @@
 {
- "id": "cand-frost-r2",
- "allocation": {
-  "Arcane": [
-   [
-    "Wand Specialization",
-    2
-   ],
-   [
-    "Arcane Focus",
-    3
-   ],
-   [
-    "Arcane Concentration",
-    5
-   ],
-   [
-    "Arcane Subtlety",
-    2
-   ],
-   [
-    "Magic Absorption",
-    2
-   ],
-   [
-    "Arcane Resilience",
-    1
-   ],
-   [
-    "Arcane Meditation",
-    3
-   ]
+  "id": "cand-frost-r2",
+  "allocation": {
+    "Arcane": [
+      ["Arcane Focus", 3],
+      ["Wand Specialization", 2],
+      ["Arcane Concentration", 5],
+      ["Arcane Resilience", 1],
+      ["Arcane Subtlety", 2],
+      ["Magic Absorption", 2],
+      ["Arcane Blast", 1],
+      ["Arcane Meditation", 3],
+      ["Arcane Wrath", 1]
+    ],
+    "Fire": [],
+    "Frost": [
+      ["Elemental Precision", 3],
+      ["Improved Frostbolt", 3],
+      ["Frostbite", 3],
+      ["Ice Shards", 5],
+      ["Frost Channeling", 3],
+      ["Ice Lance", 1],
+      ["Ice Block", 1],
+      ["Shatter", 3],
+      ["Cold Snap", 1],
+      ["Fingers of Frost", 2],
+      ["Winter's Chill", 5],
+      ["Ice Barrier", 1]
+    ]
+  },
+  "order": [
+    {"levels": "10-12", "tree": "Frost", "talent": "Improved Frostbolt", "points": 3},
+    {"levels": "13-14", "tree": "Frost", "talent": "Elemental Precision", "points": 2},
+    {"levels": "15-17", "tree": "Frost", "talent": "Frostbite", "points": 3},
+    {"levels": "18", "tree": "Frost", "talent": "Elemental Precision", "points": 1},
+    {"levels": "19", "tree": "Frost", "talent": "Ice Shards", "points": 1},
+    {"levels": "20", "tree": "Frost", "talent": "Ice Lance", "points": 1},
+    {"levels": "21-23", "tree": "Frost", "talent": "Frost Channeling", "points": 3},
+    {"levels": "24", "tree": "Frost", "talent": "Ice Shards", "points": 1},
+    {"levels": "25", "tree": "Frost", "talent": "Shatter", "points": 1},
+    {"levels": "26", "tree": "Frost", "talent": "Ice Shards", "points": 1},
+    {"levels": "27", "tree": "Frost", "talent": "Ice Block", "points": 1},
+    {"levels": "28-29", "tree": "Frost", "talent": "Shatter", "points": 2},
+    {"levels": "30-31", "tree": "Frost", "talent": "Fingers of Frost", "points": 2},
+    {"levels": "32-33", "tree": "Frost", "talent": "Ice Shards", "points": 2},
+    {"levels": "34-35", "tree": "Arcane", "talent": "Wand Specialization", "points": 2},
+    {"levels": "36-38", "tree": "Arcane", "talent": "Arcane Focus", "points": 3},
+    {"levels": "39-42", "tree": "Arcane", "talent": "Arcane Concentration", "points": 4},
+    {"levels": "43-44", "tree": "Arcane", "talent": "Arcane Subtlety", "points": 2},
+    {"levels": "45", "tree": "Arcane", "talent": "Arcane Concentration", "points": 1},
+    {"levels": "46", "tree": "Arcane", "talent": "Arcane Resilience", "points": 1},
+    {"levels": "47", "tree": "Arcane", "talent": "Magic Absorption", "points": 1},
+    {"levels": "48", "tree": "Arcane", "talent": "Arcane Blast", "points": 1},
+    {"levels": "49", "tree": "Arcane", "talent": "Arcane Wrath", "points": 1},
+    {"levels": "50-52", "tree": "Arcane", "talent": "Arcane Meditation", "points": 3},
+    {"levels": "53", "tree": "Frost", "talent": "Cold Snap", "points": 1},
+    {"levels": "54-58", "tree": "Frost", "talent": "Winter's Chill", "points": 5},
+    {"levels": "59", "tree": "Frost", "talent": "Ice Barrier", "points": 1},
+    {"levels": "60", "tree": "Arcane", "talent": "Magic Absorption", "points": 1}
   ],
-  "Fire": [],
-  "Frost": [
-   [
-    "Elemental Precision",
-    5
-   ],
-   [
-    "Frostbite",
-    3
-   ],
-   [
-    "Ice Shards",
-    5
-   ],
-   [
-    "Ice Lance",
-    1
-   ],
-   [
-    "Piercing Ice",
-    3
-   ],
-   [
-    "Frost Channeling",
-    3
-   ],
-   [
-    "Shatter",
-    3
-   ],
-   [
-    "Ice Block",
-    1
-   ],
-   [
-    "Fingers of Frost",
-    2
-   ],
-   [
-    "Cold Snap",
-    1
-   ],
-   [
-    "Winter's Chill",
-    5
-   ],
-   [
-    "Ice Barrier",
-    1
-   ]
-  ]
- },
- "order": [
-  {
-   "levels": "10-14",
-   "tree": "Frost",
-   "talent": "Elemental Precision",
-   "points": 5
-  },
-  {
-   "levels": "15-17",
-   "tree": "Frost",
-   "talent": "Frostbite",
-   "points": 3
-  },
-  {
-   "levels": "18-19",
-   "tree": "Frost",
-   "talent": "Ice Shards",
-   "points": 2
-  },
-  {
-   "levels": "20",
-   "tree": "Frost",
-   "talent": "Ice Lance",
-   "points": 1
-  },
-  {
-   "levels": "21-23",
-   "tree": "Frost",
-   "talent": "Frost Channeling",
-   "points": 3
-  },
-  {
-   "levels": "24",
-   "tree": "Frost",
-   "talent": "Piercing Ice",
-   "points": 1
-  },
-  {
-   "levels": "25",
-   "tree": "Frost",
-   "talent": "Shatter",
-   "points": 1
-  },
-  {
-   "levels": "26-28",
-   "tree": "Frost",
-   "talent": "Ice Shards",
-   "points": 3
-  },
-  {
-   "levels": "29",
-   "tree": "Frost",
-   "talent": "Ice Block",
-   "points": 1
-  },
-  {
-   "levels": "30-31",
-   "tree": "Frost",
-   "talent": "Shatter",
-   "points": 2
-  },
-  {
-   "levels": "32-33",
-   "tree": "Frost",
-   "talent": "Fingers of Frost",
-   "points": 2
-  },
-  {
-   "levels": "34",
-   "tree": "Frost",
-   "talent": "Piercing Ice",
-   "points": 1
-  },
-  {
-   "levels": "35-39",
-   "tree": "Frost",
-   "talent": "Winter's Chill",
-   "points": 5
-  },
-  {
-   "levels": "40",
-   "tree": "Frost",
-   "talent": "Piercing Ice",
-   "points": 1
-  },
-  {
-   "levels": "41",
-   "tree": "Frost",
-   "talent": "Cold Snap",
-   "points": 1
-  },
-  {
-   "levels": "42",
-   "tree": "Frost",
-   "talent": "Ice Barrier",
-   "points": 1
-  },
-  {
-   "levels": "43-44",
-   "tree": "Arcane",
-   "talent": "Wand Specialization",
-   "points": 2
-  },
-  {
-   "levels": "45-47",
-   "tree": "Arcane",
-   "talent": "Arcane Focus",
-   "points": 3
-  },
-  {
-   "levels": "48-52",
-   "tree": "Arcane",
-   "talent": "Arcane Concentration",
-   "points": 5
-  },
-  {
-   "levels": "53-54",
-   "tree": "Arcane",
-   "talent": "Arcane Subtlety",
-   "points": 2
-  },
-  {
-   "levels": "55-56",
-   "tree": "Arcane",
-   "talent": "Magic Absorption",
-   "points": 2
-  },
-  {
-   "levels": "57",
-   "tree": "Arcane",
-   "talent": "Arcane Resilience",
-   "points": 1
-  },
-  {
-   "levels": "58-60",
-   "tree": "Arcane",
-   "talent": "Arcane Meditation",
-   "points": 3
-  }
- ],
- "note": "Optimizer build saved by rebuild.py on 2026-09-27 (calibration round 2)"
+  "note": "Optimizer build saved by rebuild.py on 2026-09-27 (calibration round 2)",
+  "notes": ["2026-10-22 (candidate_orders.py, repair_builds.repair, client build 70425 trees): 18/0/33 -> 20/0/31; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Improved Frostbolt (tier gating for Frostbite); +1 Improved Frostbolt (tier gating for Frostbite); +1 Improved Frostbolt (tier gating for Winter's Chill); refill +1 Arcane Blast, +1 Arcane Wrath (the frost-leveling model, leveling-st).", "2026-10-22 (candidate_orders.py): the saved order named talents the current trees lack; replaced by the stats model's leveling-st order for the same allocation (frost-leveling)."]
 }

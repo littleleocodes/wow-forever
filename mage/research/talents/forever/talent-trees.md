@@ -1,6 +1,6 @@
 # Mage — WoW: Forever talent trees (beta client 1.60.1.70425)
 
-> **Data status:** WoW: Forever beta client build 1.60.1.70425, captured 2026-10-16. World of Warcraft: Forever beta client, build 1.60.1.70425: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-16, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
+> **Data status:** WoW: Forever beta client build 1.60.1.70425, captured 2026-10-20. World of Warcraft: Forever beta client, build 1.60.1.70425: per-rank tooltips (level 60, no gear), rank caps and positions from talentsforever.com's data export (generated 2026-10-20, CC BY 4.0); positions and prerequisite arrows cross-checked against thewowdb.com's Trait-table snapshot of build 1.60.1.70291; talent ids, Classic status/diff/tooltips and removed-Classic-talent lists from warcraftforever.games (beta client 1.60.1.70205, captured 2026-10-04). Earlier snapshot: BlizzCon 2026 demo transcription captured 2026-09-13 (archived under raw/2026-09-13-demo). Every rank's tooltip is the client's (level-60 values, no gear); talents whose text changed between beta builds keep the older text in the JSON (`ranks_prev`). **Everything here can change before the November 4, 2026 launch** — re-verify against the live game or the [Wowhead Forever calculator](https://www.wowhead.com/forever/talent-calc) before locking a build.
 
 > Tier rule (same as Classic): tier *n* unlocks after 5 × (*n* − 1) points in that tree. 51 points total at level 60. Prerequisites are listed where the calculator shows an arrow.
 
@@ -10,7 +10,7 @@
 |---|---|---|---|---|---|---|
 | Arcane | 19 | 7 | 9 | 1 | 2 | 4 |
 | Fire | 17 | 3 | 8 | 0 | 6 | 1 |
-| Frost | 19 | 2 | 10 | 3 | 4 | 0 |
+| Frost | 18 | 2 | 10 | 3 | 3 | 0 |
 
 ## Arcane
 
@@ -134,25 +134,24 @@
 |---|---|---|---|---|---|
 | **Frost Warding** | 2 | — | changed | Increases the Armor and resistance given by your Frost Armor and Ice Armor spells by 15%. In addition, gives your Frost Ward a 10% chance to reflect Frost spells and effects while active. | Increases the Armor and resistance given by your Frost Armor and Ice Armor spells by 30%. In addition, gives your Frost Ward a 20% chance to reflect Frost spells and effects while active. |
 | **Improved Frostbolt** | 5 | — | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.1 sec. | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.5 sec. |
-| **Elemental Precision** | 5 | — | changed | Improves your chance to hit with Frost and Fire spells by 1%. | Improves your chance to hit with Frost and Fire spells by 5%. |
+| **Elemental Precision** | 3 | — | changed | Improves your chance to hit with Frost and Fire spells by 2%. | Improves your chance to hit with Frost and Fire spells by 6%. |
 
 ### Tier 2 — requires 5 points in Frost
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Ice Shards** | 5 | — | unchanged | Increases the critical strike damage bonus of your Frost spells by 20%. | Increases the critical strike damage bonus of your Frost spells by 100%. |
-| **Permafrost** | 3 | — | changed | Increases the duration of your Chill effects by 11% and reduces the target's speed by an additional 3%. | Increases the duration of your Chill effects by 33% and reduces the target's speed by an additional 10%. |
-| **Improved Frost Nova** | 2 | — | unchanged | Reduces the cooldown of your Frost Nova spell by 2 sec. | Reduces the cooldown of your Frost Nova spell by 4 sec. |
 | **Frostbite** | 3 | — | moved | Gives your Chill effects a 5% chance to Freeze the target for 5 sec. | Gives your Chill effects a 15% chance to Freeze the target for 5 sec. |
+| **Improved Frost Nova** | 2 | — | unchanged | Reduces the cooldown of your Frost Nova spell by 2 sec. | Reduces the cooldown of your Frost Nova spell by 4 sec. |
+| **Permafrost** | 3 | — | changed | Increases the duration of your Chill effects by 11% and reduces the target's speed by an additional 3%. | Increases the duration of your Chill effects by 33% and reduces the target's speed by an additional 10%. |
 
 ### Tier 3 — requires 10 points in Frost
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Piercing Ice** | 3 | — | unchanged | Increases the damage done by your Frost spells by 2%. | Increases the damage done by your Frost spells by 6%. |
 | **Frost Channeling** | 3 | — | moved | Reduces the mana cost of your Frost spells by 5% and reduces the threat caused by your Frost spells by 10%. | Reduces the mana cost of your Frost spells by 15% and reduces the threat caused by your Frost spells by 30%. |
-| **Ice Lance** | 1 | — | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets. | — |
 | **Improved Blizzard** | 3 | — | changed | Adds a Chill effect to your Blizzard spell. This effect lowers the target's movement speed by 15% for 1.5 sec. | Adds a Chill effect to your Blizzard spell. This effect lowers the target's movement speed by 40% for 1.5 sec. |
+| **Ice Lance** | 1 | — | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets. | — |
 
 ### Tier 4 — requires 15 points in Frost
 
@@ -251,13 +250,13 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
 - **Improved Frostbolt** (tooltip changed, tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3, 4, 5))
   - Classic: Reduces the casting time of your Frostbolt spell by 0 sec.
   - Forever: Reduces the casting time of your Frostbolt and Frost Blast spells by 0.1 sec.
-- **Elemental Precision** (max rank 3 → 5, tooltip changed)
+- **Elemental Precision** (max rank 3 → 5, tooltip changed, max rank 5 -> 3 in build 1.60.1.70425, tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3))
   - Classic: Reduces the chance that the opponent can resist your Frost and Fire spells by 2%.
-  - Forever: Improves your chance to hit with Frost and Fire spells by 1%.
-- **Permafrost** (tooltip changed, was Frost row 2, col 4)
+  - Forever: Improves your chance to hit with Frost and Fire spells by 2%.
+- **Permafrost** (tooltip changed, was Frost row 2, col 4, moved in build 1.60.1.70425: was row 2, col 2)
   - Classic: Increases the duration of your Chill effects by 1 sec and reduces the target's speed by an additional 4%.
   - Forever: Increases the duration of your Chill effects by 11% and reduces the target's speed by an additional 3%.
-- **Improved Blizzard** (tooltip changed)
+- **Improved Blizzard** (tooltip changed, moved in build 1.60.1.70425: was row 3, col 4)
   - Classic: Adds a chill effect to your Blizzard spell. This effect lowers the target's movement speed by 30%. Lasts 1.5 sec.
   - Forever: Adds a Chill effect to your Blizzard spell. This effect lowers the target's movement speed by 15% for 1.5 sec.
 - **Shatter** (max rank 5 → 3, tooltip changed, was Frost row 4, col 3)

@@ -10,7 +10,7 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
-| [Leveling — Frost (Ice Lance at 20, Shatter at 25, Ice Barrier at 40)](builds/leveling-frost.md) | 12/0/39 | DPS | [leveling-frost](../talents/classic-baseline/leveling-frost.md) |
+| [Leveling — Frost (Ice Lance at 20, Shatter at 25, Ice Barrier at 40)](builds/leveling-frost.md) | 17/0/34 | DPS | [leveling-frost](../talents/classic-baseline/leveling-frost.md) |
 
 Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
 
@@ -19,7 +19,7 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 | [Arcane — Leveling (derived)](builds/arcane-leveling.md) 🔬 | 30/0/21 | DPS |
 | [Fire — Leveling (derived)](builds/fire-leveling.md) 🔬 | 0/32/19 | DPS |
 | [Arcane-Frost — Leveling (open talent search)](builds/arcane-frost-open-leveling.md) 🔬 | 29/0/22 | DPS |
-| [Frostfire — Leveling (open talent search)](builds/frostfire-open-leveling.md) 🔬 | 0/26/25 | DPS |
+| [Frostfire — Leveling (open talent search)](builds/frostfire-open-leveling.md) 🔬 | 0/27/24 | DPS |
 | [Frost — Leveling (open talent search)](builds/frost-open-leveling.md) 🔬 | 18/2/31 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
@@ -27,8 +27,8 @@ Optimizer builds (the stats model's optimum per use-case, see the Optimizer sect
 | Build | Split | Profile |
 |---|---|---|
 | [opt-fire-leveling-leveling-st](builds/opt-fire-leveling-leveling-st.md) | 2/33/16 | leveling-st |
-| [opt-frost-leveling-leveling-st](builds/opt-frost-leveling-leveling-st.md) | 18/0/33 | leveling-st |
-| [opt-frost-aoe-leveling-aoe](builds/opt-frost-aoe-leveling-aoe.md) | 2/3/46 | leveling-aoe |
+| [opt-frost-leveling-leveling-st](builds/opt-frost-leveling-leveling-st.md) | 19/1/31 | leveling-st |
+| [opt-frost-aoe-leveling-aoe](builds/opt-frost-aoe-leveling-aoe.md) | 4/3/44 | leveling-aoe |
 
 Classic Era reference builds: [aoe-grinding-frost](../talents/classic-baseline/aoe-grinding-frost.md), [aoe-grinding-frost-deep](../talents/classic-baseline/aoe-grinding-frost-deep.md), [leveling-frost](../talents/classic-baseline/leveling-frost.md).
 

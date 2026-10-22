@@ -1,10 +1,10 @@
-# Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (raid-dps-extwc) — 28/0/23
+# Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (raid-dps-extwc) — 28/1/22
 
 *[Mage](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 28/0/23 (Arcane / Fire / Frost) |
+| **Build** | 28/1/22 (Arcane / Fire / Frost) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
@@ -19,31 +19,33 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ra
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, your Arcane Missile hits a 10% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 | **Arcane Focus** | 5/5 | changed | Improves your chance to hit with Arcane spells by 5%. |
+| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, your Arcane Missile hits a 10% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Arcane Subtlety** | 1/2 | changed | Reduces your target's resistance to all your spells by 8 and reduces the threat caused by your Arcane spells by 15%. |
 | **Arcane Blast** | 1/1 | **NEW** | Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application. |
 | **Arcane Impact** | 3/3 | **NEW** | Increases the critical strike chance of your Arcane spells by 6%. |
-| **Arcane Wrath** | 1/1 | **NEW** | Launches a projectile of pure Arcane energy at the enemy target, causing 122 to 146 Arcane damage. This spell gains additional Spell Damage equal to 5% of your maximum Mana. |
 | **Arcane Meditation** | 2/3 | changed | Allows 33% of your Mana regeneration to continue while casting. |
-| **Presence of Mind** | 1/1 | unchanged | When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell. |
+| **Arcane Wrath** | 1/1 | **NEW** | Launches a projectile of pure Arcane energy at the enemy target, causing 122 to 146 Arcane damage. This spell gains additional Spell Damage equal to 5% of your maximum Mana. |
 | **Arcane Mind** | 4/5 | changed | Increases your Intellect by 8% and increases the critical strike damage bonus of your Arcane spells by 80%. |
+| **Presence of Mind** | 1/1 | unchanged | When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell. |
 | **Arcane Instability** | 3/3 | changed | Increases the damage done by your spells by 3% and your critical strike chance by 3%. |
 
-### Fire (0)
-
-*No points.*
-
-### Frost (23)
+### Fire (1)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Elemental Precision** | 4/5 | changed | Improves your chance to hit with Frost and Fire spells by 4%. |
+| **Incineration** | 1/3 | **NEW** | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 2%. |
+
+### Frost (22)
+
+| Talent | Pts | vs Classic | Effect at this rank |
+|---|---|---|---|
+| **Elemental Precision** | 3/3 | changed | Improves your chance to hit with Frost and Fire spells by 6%. |
 | **Improved Frostbolt** | 5/5 | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.5 sec. |
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
+| **Frost Channeling** | 3/3 | moved | Reduces the mana cost of your Frost spells by 15% and reduces the threat caused by your Frost spells by 30%. |
 | **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets. |
-| **Piercing Ice** | 3/3 | unchanged | Increases the damage done by your Frost spells by 6%. |
 | **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
 | **Fingers of Frost** | 2/2 | **NEW** | Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 2 spells cast as if the target were Frozen. Lasts 15 sec. |
 
@@ -113,6 +115,7 @@ Damage by ability:
 ## Notes
 
 - Report: mage/research/talents/forever/optimizer/frost-raid-raid-dps-extwc.md
+- 2026-10-22 (repair_builds.py, client build 70425 trees): 28/0/23 -> 28/1/22; Elemental Precision 4 -> 3 (rank cap); Piercing Ice 3 gone; +1 Frost Channeling (tier gating for Shatter); +1 Frost Channeling (tier gating for Fingers of Frost); +1 Frost Channeling (tier gating for Fingers of Frost); refill +1 Incineration (refill: the frost-raid model, raid-dps-extwc).
 
 ## Open questions (verify in the live game)
 

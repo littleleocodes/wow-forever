@@ -1,10 +1,10 @@
-# Fire — Ignite / Heating Up (simulator winner adopted 2026-09-28) — 12/34/5
+# Fire — Ignite / Heating Up (simulator winner adopted 2026-09-28) — 14/34/3
 
 *[Mage](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 12/34/5 (Arcane / Fire / Frost) |
+| **Build** | 14/34/3 (Arcane / Fire / Frost) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
@@ -16,11 +16,12 @@ Allocation adopted on 2026-09-28 from `cand-fire-raid-r5`, the best build in the
 
 ## Point allocation
 
-### Arcane (12)
+### Arcane (14)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Channeling** | 5/5 | **NEW** | Gives you a 100% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 70% chance while casting Arcane Blast or Arcane Wrath. |
+| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, your Arcane Missile hits a 10% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
 
@@ -41,11 +42,11 @@ Allocation adopted on 2026-09-28 from `cand-fire-raid-r5`, the best build in the
 | **Fire Power** | 3/3 | unchanged | Increases the damage done by your Fire spells by 3% per your Fire effects on the target, up to a maximum increase of 12%. Effects which mix multiple schools of magic do not qualify. |
 | **Combustion** | 1/1 | changed | When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 3 non-periodic critical strikes with Fire spells. |
 
-### Frost (5)
+### Frost (3)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Elemental Precision** | 5/5 | changed | Improves your chance to hit with Frost and Fire spells by 5%. |
+| **Elemental Precision** | 3/3 | changed | Improves your chance to hit with Frost and Fire spells by 6%. |
 
 ## Core talents (priority order)
 
@@ -141,6 +142,7 @@ Damage by ability:
 - 2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Fire: its full-raid winner is +0.00% against it, under the 0.5% bar for a new build.
 - 2026-10-16 (repair_builds.py, client build 70425 trees): 12/34/5 -> 12/34/5; Wake of Fire -> Improved Fire Blast (renamed); Fire Power 5 -> 3 (rank cap); +1 Critical Mass (prerequisite of Combustion); +1 Critical Mass (prerequisite of Combustion) (refill: the fire-raid model, raid-dps).
 - 2026-10-17 (audit of 2026-10-17, finding 26): flex default Wake of Fire -> Improved Fire Blast (renamed in 70425).
+- 2026-10-22 (repair_builds.py, client build 70425 trees): 12/34/5 -> 14/34/3; Elemental Precision 5 -> 3 (rank cap); refill +2 Missile Barrage (refill: the fire-raid model, raid-dps).
 
 ## Open questions (verify in the live game)
 

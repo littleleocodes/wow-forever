@@ -1,10 +1,10 @@
-# Frostfire — Leveling (open talent search) — 0/26/25
+# Frostfire — Leveling (open talent search) — 0/27/24
 
 *[Mage](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 0/26/25 (Arcane / Fire / Frost) |
+| **Build** | 0/27/24 (Arcane / Fire / Frost) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
@@ -19,12 +19,13 @@ The Frostfire (a Fire/Frost hybrid) leveling build the open leveling search foun
 
 *No points.*
 
-### Fire (26)
+### Fire (27)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Incineration** | 3/3 | **NEW** | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 6%. |
+| **Improved Fire Blast** | 1/2 | **NEW** | Reduces the cooldown of your Fire Blast spell by 1 sec and increases its range by 8 yards. |
 | **Improved Fireball** | 5/5 | changed | Reduces the casting time of your Fireball and Frostfire Bolt spells by 0.5 sec. |
+| **Incineration** | 3/3 | **NEW** | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 6%. |
 | **Ignite** | 5/5 | unchanged | Your critical strikes from Fire damage spells cause the target to burn for an additional 40% of your spell's damage over 4 sec. |
 | **Burning Soul** | 3/3 | changed | Gives your Fire spells a 70% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 30%. |
 | **Pyroblast** | 1/1 | changed | Hurls an immense fiery boulder that causes 101 to 131 Fire damage and an additional 44 Fire damage over 12 sec. |
@@ -32,47 +33,20 @@ The Frostfire (a Fire/Frost hybrid) leveling build the open leveling search foun
 | **Master of Elements** | 3/3 | changed | Your Fire and Frost critical strikes will refund 30% of their base mana cost. |
 | **Critical Mass** | 5/5 | unchanged | Increases the critical strike chance of your Fire spells by 10%. |
 
-### Frost (25)
+### Frost (24)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Elemental Precision** | 5/5 | changed | Improves your chance to hit with Frost and Fire spells by 5%. |
+| **Elemental Precision** | 3/3 | changed | Improves your chance to hit with Frost and Fire spells by 6%. |
+| **Frost Warding** | 2/2 | changed | Increases the Armor and resistance given by your Frost Armor and Ice Armor spells by 30%. In addition, gives your Frost Ward a 20% chance to reflect Frost spells and effects while active. |
+| **Frostbite** | 2/3 | moved | Gives your Chill effects a 10% chance to Freeze the target for 5 sec. |
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
 | **Improved Frost Nova** | 2/2 | unchanged | Reduces the cooldown of your Frost Nova spell by 4 sec. |
-| **Frostbite** | 2/3 | moved | Gives your Chill effects a 10% chance to Freeze the target for 5 sec. |
-| **Piercing Ice** | 1/3 | unchanged | Increases the damage done by your Frost spells by 2%. |
 | **Frost Channeling** | 3/3 | moved | Reduces the mana cost of your Frost spells by 15% and reduces the threat caused by your Frost spells by 30%. |
 | **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets. |
 | **Ice Block** | 1/1 | moved | You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move, or cast spells. |
 | **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
 | **Fingers of Frost** | 2/2 | **NEW** | Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 2 spells cast as if the target were Frozen. Lasts 15 sec. |
-
-## Leveling order
-
-| Levels | Tree | Talent | Pts | Running total |
-|---|---|---|---|---|
-| 10-14 | Frost | Elemental Precision | 5 | 0/0/5 |
-| 15-16 | Frost | Frostbite | 2 | 0/0/7 |
-| 17-18 | Frost | Improved Frost Nova | 2 | 0/0/9 |
-| 19 | Frost | Ice Shards | 1 | 0/0/10 |
-| 20 | Frost | Ice Lance | 1 | 0/0/11 |
-| 21 | Frost | Piercing Ice | 1 | 0/0/12 |
-| 22-24 | Frost | Ice Shards | 3 | 0/0/15 |
-| 25-27 | Frost | Shatter | 3 | 0/0/18 |
-| 28 | Frost | Ice Block | 1 | 0/0/19 |
-| 29 | Frost | Ice Shards | 1 | 0/0/20 |
-| 30-31 | Frost | Fingers of Frost | 2 | 0/0/22 |
-| 32-34 | Frost | Frost Channeling | 3 | 0/0/25 |
-| 35-39 | Fire | Improved Fireball | 5 | 0/5/25 |
-| 40-44 | Fire | Ignite | 5 | 0/10/25 |
-| 45-47 | Fire | Burning Soul | 3 | 0/13/25 |
-| 48 | Fire | Pyroblast | 1 | 0/14/25 |
-| 49 | Fire | Incineration | 1 | 0/15/25 |
-| 50 | Fire | Heating Up | 1 | 0/16/25 |
-| 51-53 | Fire | Master of Elements | 3 | 0/19/25 |
-| 54 | Fire | Incineration | 1 | 0/20/25 |
-| 55-59 | Fire | Critical Mass | 5 | 0/25/25 |
-| 60 | Fire | Incineration | 1 | 0/26/25 |
 
 ## Core talents (priority order)
 
@@ -93,6 +67,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 - Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 33.65; fire-open-leveling 34.25, fire-leveling 35.79, opt-fire-leveling-leveling-st 39.19. The search simulated 79,053 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
+- 2026-10-22 (repair_builds.py, client build 70425 trees): 0/26/25 -> 0/27/24; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 1 gone; +1 Frost Warding (tier gating for Frostbite); +1 Frost Warding (tier gating for Frostbite); refill +1 Improved Fire Blast; order dropped (order_repair.py) (refill: the fire-leveling model, leveling-st).
 
 ## Open questions (verify in the live game)
 

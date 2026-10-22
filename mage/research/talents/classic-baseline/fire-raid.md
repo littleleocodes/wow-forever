@@ -99,7 +99,7 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Fire | Critical Mass | 3 | unchanged | tier 5, max 5 — max rank 3 -> 5 in build 1.60.1.70425; tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3, 4, 5) |
 | Fire | Fire Power | 5 | unchanged | tier 6, max 3 — max rank 5 -> 3 in build 1.60.1.70425; tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3) |
 | Fire | Combustion | 1 | changed | tier 7, max 1 — tooltip changed |
-| Frost | Elemental Precision | 3 | changed | tier 1, max 5 — max rank 3 → 5; tooltip changed |
+| Frost | Elemental Precision | 3 | changed | tier 1, max 3 — max rank 3 → 5; tooltip changed; max rank 5 -> 3 in build 1.60.1.70425; tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3) |
 
 **6 point(s) of this build no longer exist in Forever** and must be re-spent; see `../forever/README.md` for how they were re-spent.
 

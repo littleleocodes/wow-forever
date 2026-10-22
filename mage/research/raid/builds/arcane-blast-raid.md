@@ -1,10 +1,10 @@
-# Arcane — Arcane Blast (raid) — 35/11/5
+# Arcane — Arcane Blast (raid) — 36/11/4
 
 *[Mage](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 35/11/5 (Arcane / Fire / Frost) |
+| **Build** | 36/11/4 (Arcane / Fire / Frost) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
@@ -15,13 +15,13 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 
 ## Point allocation
 
-### Arcane (35)
+### Arcane (36)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Arcane Focus** | 5/5 | changed | Improves your chance to hit with Arcane spells by 5%. |
 | **Improved Channeling** | 5/5 | **NEW** | Gives you a 100% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 70% chance while casting Arcane Blast or Arcane Wrath. |
-| **Missile Barrage** | 1/2 | **NEW** | Gives your Arcane Blast spell a 20% chance, your Arcane Missile hits a 5% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 10% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
+| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, your Arcane Missile hits a 10% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
 | **Arcane Blast** | 1/1 | **NEW** | Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application. |
@@ -41,11 +41,12 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 | **Ignite** | 5/5 | unchanged | Your critical strikes from Fire damage spells cause the target to burn for an additional 40% of your spell's damage over 4 sec. |
 | **Burning Soul** | 1/3 | changed | Gives your Fire spells a 23% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 10%. |
 
-### Frost (5)
+### Frost (4)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Elemental Precision** | 5/5 | changed | Improves your chance to hit with Frost and Fire spells by 5%. |
+| **Elemental Precision** | 3/3 | changed | Improves your chance to hit with Frost and Fire spells by 6%. |
+| **Improved Frostbolt** | 1/5 | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.1 sec. |
 
 ## Core talents (priority order)
 
@@ -127,6 +128,7 @@ Damage by ability:
 - 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Subtlety -> Improved Channeling (interrupt); Arcane Subtlety -> Improved Channeling (interrupt); Burning Soul -> Improved Channeling (interrupt); Burning Soul -> Improved Channeling (interrupt); Burning Soul -> Improved Channeling (interrupt); Improved Flamestrike -> Arcane Subtlety (threat); Improved Flamestrike -> Arcane Subtlety (threat); Magic Absorption -> Burning Soul (threat). Net +0.00% on a third seed.
 - 2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Arcane: its full-raid winner is +0.36% against it, under the 0.5% bar for a new build.
 - 2026-10-16 (repair_builds.py, client build 70425 trees): 35/11/5 -> 35/11/5; Wake of Fire -> Improved Fire Blast (renamed) (refill: the frost-raid model, raid-dps).
+- 2026-10-22 (repair_builds.py, client build 70425 trees): 35/11/5 -> 36/11/4; Elemental Precision 5 -> 3 (rank cap); refill +1 Missile Barrage, +1 Improved Frostbolt (refill: the frost-raid model, raid-dps).
 
 ## Open questions (verify in the live game)
 

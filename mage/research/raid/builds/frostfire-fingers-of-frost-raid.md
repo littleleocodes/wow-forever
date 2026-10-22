@@ -39,11 +39,14 @@ A Frostfire Bolt build the user brought on 2026-10-06 (talentsforever.com link):
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Elemental Precision** | 5/5 | changed | Improves your chance to hit with Frost and Fire spells by 5%. |
+| **Elemental Precision** | 3/3 | changed | Improves your chance to hit with Frost and Fire spells by 6%. |
+| **Frost Warding** | 2/2 | changed | Increases the Armor and resistance given by your Frost Armor and Ice Armor spells by 30%. In addition, gives your Frost Ward a 20% chance to reflect Frost spells and effects while active. |
+| **Improved Frostbolt** | 1/5 | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.1 sec. |
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
 | **Frost Channeling** | 3/3 | moved | Reduces the mana cost of your Frost spells by 15% and reduces the threat caused by your Frost spells by 30%. |
 | **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets. |
-| **Piercing Ice** | 3/3 | unchanged | Increases the damage done by your Frost spells by 6%. |
+| **Arctic Reach** | 1/2 | unchanged | Increases the range of your Frostbolt, Frost Blast, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 10%. |
+| **Ice Block** | 1/1 | moved | You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move, or cast spells. |
 | **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
 | **Fingers of Frost** | 2/2 | **NEW** | Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 2 spells cast as if the target were Frozen. Lasts 15 sec. |
 
@@ -145,6 +148,7 @@ Damage by ability:
 - Alone on a training dummy (own buffs only) it is 2% behind the 0/34/17 build; in a full raid 2% ahead. Simulator numbers are the community's model of the beta (ElliotWood/Forever b0f0df3 with this project's patches), not in-game measurements.
 - 2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Hybrid Fire/Frost: its full-raid winner is +0.07% against it, under the 0.5% bar for a new build.
 - 2026-10-16 (repair_builds.py, client build 70425 trees): 0/29/22 -> 0/29/22; Fire Power 4 -> 3 (rank cap); refill +1 Improved Fire Blast (refill: the fire-raid model, raid-dps).
+- 2026-10-22 (repair_builds.py, client build 70425 trees): 0/29/22 -> 0/29/22; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Frost Warding (tier gating for Ice Shards); +1 Frost Warding (tier gating for Ice Shards); +1 Improved Frostbolt (tier gating for Shatter); +1 Ice Block (tier gating for Fingers of Frost); +1 Arctic Reach (tier gating for Fingers of Frost) (refill: the fire-raid model, raid-dps).
 
 ## Open questions (verify in the live game)
 

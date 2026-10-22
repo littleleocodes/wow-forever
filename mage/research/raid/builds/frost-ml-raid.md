@@ -21,10 +21,10 @@ The Frost build the machine-learning talent search found on the training dummy (
 |---|---|---|---|
 | **Arcane Focus** | 5/5 | changed | Improves your chance to hit with Arcane spells by 5%. |
 | **Improved Channeling** | 3/5 | **NEW** | Gives you a 60% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 42% chance while casting Arcane Blast or Arcane Wrath. |
+| **Missile Barrage** | 1/2 | **NEW** | Gives your Arcane Blast spell a 20% chance, your Arcane Missile hits a 5% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 10% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Arcane Impact** | 3/3 | **NEW** | Increases the critical strike chance of your Arcane spells by 6%. |
 | **Arcane Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
-| **Missile Barrage** | 1/2 | **NEW** | Gives your Arcane Blast spell a 20% chance, your Arcane Missile hits a 5% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 10% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 | **Presence of Mind** | 1/1 | unchanged | When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell. |
 
 ### Fire (0)
@@ -35,12 +35,13 @@ The Frost build the machine-learning talent search found on the training dummy (
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
+| **Elemental Precision** | 3/3 | changed | Improves your chance to hit with Frost and Fire spells by 6%. |
 | **Improved Frostbolt** | 5/5 | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.5 sec. |
-| **Elemental Precision** | 5/5 | changed | Improves your chance to hit with Frost and Fire spells by 5%. |
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
-| **Piercing Ice** | 3/3 | unchanged | Increases the damage done by your Frost spells by 6%. |
-| **Frost Channeling** | 1/3 | moved | Reduces the mana cost of your Frost spells by 5% and reduces the threat caused by your Frost spells by 10%. |
+| **Frost Channeling** | 3/3 | moved | Reduces the mana cost of your Frost spells by 15% and reduces the threat caused by your Frost spells by 30%. |
 | **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets. |
+| **Arctic Reach** | 2/2 | unchanged | Increases the range of your Frostbolt, Frost Blast, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%. |
+| **Ice Block** | 1/1 | moved | You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move, or cast spells. |
 | **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
 | **Fingers of Frost** | 2/2 | **NEW** | Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 2 spells cast as if the target were Frozen. Lasts 15 sec. |
 | **Winter's Chill** | 5/5 | changed | Gives your Frost damage spells a 100% chance to apply the Winter's Chill effect, which increases the damage done by your Cone of Cold spell to the target by 40%, stacking up to 5 times. |
@@ -105,6 +106,7 @@ Damage by ability:
 - Pre-BiS gear: 21/0/30 at 627.1 DPS on the dummy (other talents: _reference/dps-rankings.md).
 - 2026-10-02 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Arcane Blast was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Blast -> Improved Channeling (interrupt). Net +0.00% on a third seed.
 - 2026-10-15: the 70291 machine-learning search (ElliotWood/Forever 2ce8265 with this project's patches, ml_pipeline.py --fresh) confirms this build for Frost: its full-raid winner is +0.15% against it, under the 0.5% bar for a new build.
+- 2026-10-22 (repair_builds.py, client build 70425 trees): 21/0/30 -> 21/0/30; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Ice Block (tier gating for Fingers of Frost); +1 Frost Channeling (tier gating for Fingers of Frost); +1 Frost Channeling (tier gating for Winter's Chill); +1 Arctic Reach (tier gating for Winter's Chill); +1 Arctic Reach (tier gating for Winter's Chill) (refill: the frost-raid model, raid-dps).
 
 ## Open questions (verify in the live game)
 

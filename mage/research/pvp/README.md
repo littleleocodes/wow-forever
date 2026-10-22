@@ -18,7 +18,7 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 |---|---|---|
 | [Arcane — PvP (derived)](builds/arcane-pvp.md) 🔬 | 31/0/20 | DPS |
 | [Fire — PvP (derived)](builds/fire-pvp.md) 🔬 | 0/32/19 | DPS |
-| [Frost — PvP (derived)](builds/frost-pvp.md) 🔬 | 18/0/33 | DPS |
+| [Frost — PvP (derived)](builds/frost-pvp.md) 🔬 | 19/0/32 | DPS |
 
 Classic Era reference builds: [pvp-frost](../talents/classic-baseline/pvp-frost.md).
 

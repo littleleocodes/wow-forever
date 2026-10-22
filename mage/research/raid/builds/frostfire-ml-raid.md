@@ -1,10 +1,10 @@
-# Frostfire — Raid (machine-learning search) — 4/31/16
+# Frostfire — Raid (machine-learning search) — 6/32/13
 
 *[Mage](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 4/31/16 (Arcane / Fire / Frost) |
+| **Build** | 6/32/13 (Arcane / Fire / Frost) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
@@ -15,13 +15,14 @@ The Frostfire build the machine-learning talent search found in a full raid (eve
 
 ## Point allocation
 
-### Arcane (4)
+### Arcane (6)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Channeling** | 4/5 | **NEW** | Gives you a 80% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 56% chance while casting Arcane Blast or Arcane Wrath. |
+| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, your Arcane Missile hits a 10% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 
-### Fire (31)
+### Fire (32)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -33,18 +34,19 @@ The Frostfire build the machine-learning talent search found in a full raid (eve
 | **Pyroblast** | 1/1 | changed | Hurls an immense fiery boulder that causes 101 to 131 Fire damage and an additional 44 Fire damage over 12 sec. |
 | **Heating Up** | 1/1 | **NEW** | Non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch reduce the cast time of your next Pyroblast cast within 20 sec by 25%, stacking up to 3 times. Fire Blast grants an additional stack every time it deals damage. |
 | **Improved Scorch** | 3/3 | changed | Your Scorch spell has a 100% chance to cause your target to be vulnerable to Fire damage. This vulnerability increases all Fire damage you deal to your target by 3% and lasts 30 sec, stacking up to 5 times. |
+| **Master of Elements** | 1/3 | changed | Your Fire and Frost critical strikes will refund 10% of their base mana cost. |
 | **Critical Mass** | 5/5 | unchanged | Increases the critical strike chance of your Fire spells by 10%. |
 | **Fire Power** | 3/3 | unchanged | Increases the damage done by your Fire spells by 3% per your Fire effects on the target, up to a maximum increase of 12%. Effects which mix multiple schools of magic do not qualify. |
 | **Combustion** | 1/1 | changed | When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 3 non-periodic critical strikes with Fire spells. |
 
-### Frost (16)
+### Frost (13)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Elemental Precision** | 5/5 | changed | Improves your chance to hit with Frost and Fire spells by 5%. |
+| **Elemental Precision** | 3/3 | changed | Improves your chance to hit with Frost and Fire spells by 6%. |
+| **Frost Warding** | 2/2 | changed | Increases the Armor and resistance given by your Frost Armor and Ice Armor spells by 30%. In addition, gives your Frost Ward a 20% chance to reflect Frost spells and effects while active. |
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
 | **Frost Channeling** | 3/3 | moved | Reduces the mana cost of your Frost spells by 15% and reduces the threat caused by your Frost spells by 30%. |
-| **Piercing Ice** | 3/3 | unchanged | Increases the damage done by your Frost spells by 6%. |
 
 ## Rank among our builds and the community simulator's
 
@@ -142,6 +144,7 @@ Damage by ability:
 - 2026-10-03 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Impact -> Flame Throwing (range). Net +0.00% on a third seed.
 - 2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized.
 - 2026-10-16 (repair_builds.py, client build 70425 trees): 4/31/16 -> 4/31/16; Wake of Fire -> Improved Fire Blast (renamed); Fire Power 5 -> 3 (rank cap); +1 Improved Fire Blast (tier gating for Combustion); +1 Improved Fireball (tier gating for Combustion); +1 Critical Mass (prerequisite of Combustion); +1 Critical Mass (prerequisite of Combustion); -1 Impact (over 51); -1 Improved Flamestrike (over 51) (refill: the fire-raid model, raid-dps).
+- 2026-10-22 (repair_builds.py, client build 70425 trees): 4/31/16 -> 6/32/13; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Frost Warding (tier gating for Ice Shards); +1 Frost Warding (tier gating for Ice Shards); refill +2 Missile Barrage, +1 Master of Elements (refill: the fire-raid model, raid-dps).
 
 ## Open questions (verify in the live game)
 

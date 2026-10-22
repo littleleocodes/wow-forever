@@ -10,12 +10,12 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
-| [Frost — Arcane Power / Frostbolt (raid DPS)](builds/frost-arcane-power-raid.md) | 32/0/19 | DPS | [frost-arcane-power-raid](../talents/classic-baseline/frost-arcane-power-raid.md) |
+| [Frost — Arcane Power / Frostbolt (raid DPS)](builds/frost-arcane-power-raid.md) | 35/0/16 | DPS | [frost-arcane-power-raid](../talents/classic-baseline/frost-arcane-power-raid.md) |
 | [Frost — Winter's Chill (raid support)](builds/frost-winters-chill-raid.md) | 21/0/30 | DPS | [frost-winters-chill-raid](../talents/classic-baseline/frost-winters-chill-raid.md) |
 | [Frost — Fingers of Frost / Ice Lance / Shatter (simulator winner adopted 2026-09-28)](builds/frost-fingers-of-frost-raid.md) | 22/0/29 | DPS | — |
-| [Fire — Ignite / Heating Up (simulator winner adopted 2026-09-28)](builds/fire-raid.md) | 12/34/5 | DPS | [fire-raid](../talents/classic-baseline/fire-raid.md) |
-| [Frostfire — Frostfire Bolt / Heating Up (Fire/Frost hybrid, raid)](builds/frostfire-raid.md) | 4/31/16 | DPS | [fire-raid](../talents/classic-baseline/fire-raid.md) |
-| [Arcane — Arcane Blast (raid)](builds/arcane-blast-raid.md) | 35/11/5 | DPS | — |
+| [Fire — Ignite / Heating Up (simulator winner adopted 2026-09-28)](builds/fire-raid.md) | 14/34/3 | DPS | [fire-raid](../talents/classic-baseline/fire-raid.md) |
+| [Frostfire — Frostfire Bolt (Fire/Frost hybrid, raid)](builds/frostfire-raid.md) | 5/33/13 | DPS | [fire-raid](../talents/classic-baseline/fire-raid.md) |
+| [Arcane — Arcane Blast (raid)](builds/arcane-blast-raid.md) | 36/11/4 | DPS | — |
 | [Frostfire — Fingers of Frost / Ice Lance (user build)](builds/frostfire-fingers-of-frost-raid.md) | 0/29/22 | DPS | — |
 
 Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
@@ -23,18 +23,18 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 | Build | Split | Role |
 |---|---|---|
 | [Frost — Raid (machine-learning search)](builds/frost-ml-raid.md) 🔬 | 21/0/30 | DPS |
-| [Frostfire — Raid (machine-learning search)](builds/frostfire-ml-raid.md) 🔬 | 4/31/16 | DPS |
-| [Arcane-Frost — Raid (open talent search)](builds/arcane-frost-open-raid.md) 🔬 | 28/0/23 | DPS |
+| [Frostfire — Raid (machine-learning search)](builds/frostfire-ml-raid.md) 🔬 | 6/32/13 | DPS |
+| [Arcane-Frost — Raid (open talent search)](builds/arcane-frost-open-raid.md) 🔬 | 29/0/22 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
 | Build | Split | Profile |
 |---|---|---|
 | [opt-frost-raid-parse](builds/opt-frost-raid-parse.md) | 21/0/30 | parse |
-| [opt-fire-raid-parse](builds/opt-fire-raid-parse.md) | 13/33/5 | parse |
-| [opt-fire-raid-raid-dps](builds/opt-fire-raid-raid-dps.md) | 14/32/5 | raid-dps |
-| [opt-frost-raid-raid-dps-extwc](builds/opt-frost-raid-raid-dps-extwc.md) | 1/13/37 | raid-dps-extwc |
-| [opt-frost-raid-raid-dps](builds/opt-frost-raid-raid-dps.md) | 22/0/29 | raid-dps |
+| [opt-fire-raid-parse](builds/opt-fire-raid-parse.md) | 14/34/3 | parse |
+| [opt-fire-raid-raid-dps](builds/opt-fire-raid-raid-dps.md) | 17/31/3 | raid-dps |
+| [opt-frost-raid-raid-dps-extwc](builds/opt-frost-raid-raid-dps-extwc.md) | 28/1/22 | raid-dps-extwc |
+| [opt-frost-raid-raid-dps](builds/opt-frost-raid-raid-dps.md) | 28/1/22 | raid-dps |
 
 Classic Era reference builds: [frost-arcane-power-raid](../talents/classic-baseline/frost-arcane-power-raid.md), [frost-winters-chill-raid](../talents/classic-baseline/frost-winters-chill-raid.md), [fire-raid](../talents/classic-baseline/fire-raid.md).
 

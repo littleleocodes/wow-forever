@@ -1737,109 +1737,109 @@
     ]
   },
   "Elemental Precision": {
-    "note": "+1%/rank Frost/Fire hit (parsed). AoE grinding: 'you will need to avoid having even a single resist in a pack of 8+ enemies' - a resisted mob is a mob in melee -> +3%/rank surv in leveling-aoe. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, fire-raid, training dummy): removing it costs 6.0% DPS in the simulator (scorer said 6.0% on the same scale); already within tolerance, raid effects split off unchanged (6.0%). Other modes unchanged. Fight lab calibration [frost-leveling, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 3.7% time per kill in the simulator (scorer said 2.2% on the same scale); leveling-st/solo-60 values scaled x0.71 to match (3.7%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 9.9% time per kill in the simulator (scorer said 7.9% on the same scale); leveling-aoe values scaled x2.32 to match (8.9%). Other modes unchanged.",
+    "note": "+1%/rank Frost/Fire hit (parsed). AoE grinding: 'you will need to avoid having even a single resist in a pack of 8+ enemies' - a resisted mob is a mob in melee -> +3%/rank surv in leveling-aoe. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, fire-raid, training dummy): removing it costs 6.0% DPS in the simulator (scorer said 6.0% on the same scale); already within tolerance, raid effects split off unchanged (6.0%). Other modes unchanged. Fight lab calibration [frost-leveling, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 3.7% time per kill in the simulator (scorer said 2.2% on the same scale); leveling-st/solo-60 values scaled x0.71 to match (3.7%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 9.9% time per kill in the simulator (scorer said 7.9% on the same scale); leveling-aoe values scaled x2.32 to match (8.9%). Other modes unchanged. 2026-10-22 (hotfix of 2026-10-20, client 1.60.1.70425): 3 ranks at 2% hit instead of 5 at 1%; every fitted per-rank value doubled and the lists cut to 3 ranks (the same hit per point), refit with the mage re-run.",
     "effects": [
       {
         "channel": "hit",
         "scope": ["school:frost", "school:fire"],
-        "per_rank": 0.01,
-        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["frost-aoe", "frost-raid", "fire-raid"]
       },
       {
         "channel": "hit",
         "scope": ["school:frost", "school:fire"],
-        "per_rank": 0.004671,
-        "values": [0.004671, 0.009342, 0.014013, 0.018684, 0.023354],
+        "per_rank": 0.009342,
+        "values": [0.009342, 0.018684, 0.028026],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["fire-leveling"]
       },
       {
         "channel": "dmg",
         "scope": ["school:frost", "school:fire"],
-        "per_rank": 0.002335,
-        "values": [0.002335, 0.004671, 0.007006, 0.009342, 0.011677],
+        "per_rank": 0.00467,
+        "values": [0.00467, 0.00934, 0.01401],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["fire-leveling"]
       },
       {
         "channel": "surv",
         "scope": ["all"],
-        "per_rank": 0.03,
+        "per_rank": 0.06,
         "modes": ["leveling-aoe"],
-        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "values": [0.06, 0.12, 0.18],
         "specs": ["frost-leveling", "fire-leveling", "frost-raid", "fire-raid"]
       },
       {
         "channel": "hit",
         "scope": ["school:frost", "school:fire"],
-        "per_rank": 0.01,
-        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06],
         "modes": ["leveling-aoe", "heal", "tank"],
         "specs": ["frost-leveling", "fire-leveling", "frost-raid", "fire-raid"]
       },
       {
         "channel": "hit",
         "scope": ["school:frost", "school:fire"],
-        "per_rank": 0.01,
-        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06],
         "modes": ["raid", "leveling-aoe", "heal", "tank"],
         "specs": ["frost-leveling", "fire-leveling"]
       },
       {
         "channel": "utility",
         "scope": ["mode:pvp"],
-        "per_rank": 0.003,
+        "per_rank": 0.006,
         "modes": ["pvp"],
         "kind": "kite",
-        "values": [0.003, 0.006, 0.009, 0.012, 0.015]
+        "values": [0.006, 0.012, 0.018]
       },
       {
         "channel": "hit",
         "scope": ["school:frost", "school:fire"],
-        "per_rank": 0.01,
-        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06],
         "modes": ["raid"],
         "specs": ["frost-raid"]
       },
       {
         "channel": "hit",
         "scope": ["school:frost", "school:fire"],
-        "per_rank": 0.01,
-        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06],
         "modes": ["raid"],
         "specs": ["fire-raid"]
       },
       {
         "channel": "hit",
         "scope": ["school:frost", "school:fire"],
-        "per_rank": 0.007081,
-        "values": [0.007081, 0.014161, 0.021242, 0.028322, 0.035403],
+        "per_rank": 0.014162,
+        "values": [0.014162, 0.028324, 0.042486],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["frost-leveling"]
       },
       {
         "channel": "dmg",
         "scope": ["school:frost", "school:fire"],
-        "per_rank": 0.00354,
-        "values": [0.00354, 0.007081, 0.010621, 0.014161, 0.017701],
+        "per_rank": 0.00708,
+        "values": [0.00708, 0.01416, 0.02124],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["frost-leveling"]
       },
       {
         "channel": "hit",
         "scope": ["school:frost", "school:fire"],
-        "per_rank": 0.023227,
-        "values": [0.023227, 0.046454, 0.069681, 0.092908, 0.116135],
+        "per_rank": 0.046454,
+        "values": [0.046454, 0.092908, 0.139362],
         "modes": ["leveling-aoe"],
         "specs": ["frost-aoe"]
       },
       {
         "channel": "dmg",
         "scope": ["school:frost", "school:fire"],
-        "per_rank": 0.011613,
-        "values": [0.011613, 0.023227, 0.03484, 0.046454, 0.058067],
+        "per_rank": 0.023226,
+        "values": [0.023226, 0.046452, 0.069678],
         "modes": ["leveling-aoe"],
         "specs": ["frost-aoe"]
       }
@@ -2161,67 +2161,6 @@
         "scope": ["mode:raid"],
         "per_rank": 0.0015,
         "values": [0.0015, 0.003, 0.0045, 0.006, 0.0075],
-        "modes": ["leveling-aoe"],
-        "specs": ["frost-aoe"]
-      }
-    ]
-  },
-  "Piercing Ice": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, frost-raid, training dummy): removing it costs 5.5% DPS in the simulator (scorer said 5.2% on the same scale); already within tolerance, raid effects split off unchanged (5.2%). Other modes unchanged. Fight lab calibration [frost-leveling, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 3.7% time per kill in the simulator (scorer said 2.4% on the same scale); leveling-st/solo-60 values scaled x1.55 to match (3.7%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 12.2% time per kill in the simulator (scorer said 11.7% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (11.5%). Other modes unchanged.",
-    "effects": [
-      {
-        "channel": "dmg",
-        "scope": ["school:frost"],
-        "values": [0.02, 0.04, 0.06],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["frost-aoe", "frost-raid", "fire-raid"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["school:frost"],
-        "values": [0.011151, 0.022301, 0.033452],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["fire-leveling"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["school:frost"],
-        "values": [0.02, 0.04, 0.06],
-        "source": "parsed",
-        "modes": ["raid", "leveling-aoe", "heal", "tank"],
-        "specs": ["frost-leveling", "fire-leveling", "fire-raid"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["school:frost"],
-        "values": [0.02, 0.04, 0.06],
-        "source": "parsed",
-        "modes": ["leveling-aoe", "heal", "tank"],
-        "specs": ["frost-leveling", "fire-leveling", "frost-raid", "fire-raid"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["school:frost"],
-        "values": [0.02, 0.04, 0.06],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["frost-raid"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["school:frost"],
-        "values": [0.019368, 0.038731, 0.0581],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["frost-leveling"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["school:frost"],
-        "values": [0.037862, 0.076431, 0.115702],
-        "source": "parsed",
         "modes": ["leveling-aoe"],
         "specs": ["frost-aoe"]
       }

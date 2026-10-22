@@ -1,10 +1,10 @@
-# Frost — PvP (derived) — 18/0/33
+# Frost — PvP (derived) — 19/0/32
 
 *[Mage](../../../README.md) · [PvP](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 18/0/33 (Arcane / Fire / Frost) |
+| **Build** | 19/0/32 (Arcane / Fire / Frost) |
 | **Role** | DPS — PvP |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
@@ -15,33 +15,33 @@ The Frost PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP
 
 ## Point allocation
 
-### Arcane (18)
+### Arcane (19)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Arcane Focus** | 5/5 | changed | Improves your chance to hit with Arcane spells by 5%. |
-| **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
-| **Magic Absorption** | 2/2 | changed | Increases all your resistances by 10 and causes all spells you fully resist to restore 2% of your total mana. Cannot trigger more often than 1 time per sec. |
+| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, your Arcane Missile hits a 10% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 | **Arcane Concentration** | 3/5 | unchanged | Gives you a 6% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Arcane Resilience** | 1/2 | changed | Increases your Armor by an amount equal to 25% of your Intellect. |
+| **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
+| **Magic Absorption** | 2/2 | changed | Increases all your resistances by 10 and causes all spells you fully resist to restore 2% of your total mana. Cannot trigger more often than 1 time per sec. |
 | **Arcane Geometry** | 2/2 | **NEW** | Increases the range of your Arcane spells by 6 yards. |
 | **Improved Counterspell** | 2/2 | changed | Your Counterspell also Silences the target for 4 sec. |
-| **Missile Barrage** | 1/2 | **NEW** | Gives your Arcane Blast spell a 20% chance, your Arcane Missile hits a 5% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 10% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 
 ### Fire (0)
 
 *No points.*
 
-### Frost (33)
+### Frost (32)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
+| **Elemental Precision** | 2/3 | changed | Improves your chance to hit with Frost and Fire spells by 4%. |
 | **Improved Frostbolt** | 5/5 | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.5 sec. |
-| **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
-| **Permafrost** | 3/3 | changed | Increases the duration of your Chill effects by 33% and reduces the target's speed by an additional 10%. |
-| **Improved Frost Nova** | 2/2 | unchanged | Reduces the cooldown of your Frost Nova spell by 4 sec. |
 | **Frostbite** | 3/3 | moved | Gives your Chill effects a 15% chance to Freeze the target for 5 sec. |
-| **Piercing Ice** | 3/3 | unchanged | Increases the damage done by your Frost spells by 6%. |
+| **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
+| **Improved Frost Nova** | 2/2 | unchanged | Reduces the cooldown of your Frost Nova spell by 4 sec. |
+| **Permafrost** | 3/3 | changed | Increases the duration of your Chill effects by 33% and reduces the target's speed by an additional 10%. |
 | **Frost Channeling** | 1/3 | moved | Reduces the mana cost of your Frost spells by 5% and reduces the threat caused by your Frost spells by 10%. |
 | **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets. |
 | **Arctic Reach** | 2/2 | unchanged | Increases the range of your Frostbolt, Frost Blast, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%. |
@@ -66,6 +66,7 @@ The Frost PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP
 - Community tie-break moves: 1 point Elemental Precision -> Missile Barrage; 1 point Elemental Precision -> Frost Channeling.
 - Where we disagree with the community: most Frost builds take none, which the model values below this build's weakest point; this build takes none, which few Frost builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.
 - PvP values are assumptions: no simulator plays PvP.
+- 2026-10-22 (repair_builds.py, client build 70425 trees): 18/0/33 -> 19/0/32; Piercing Ice 3 gone; +1 Elemental Precision (tier gating for Ice Barrier); refill +1 Missile Barrage, +1 Elemental Precision (refill: the frost-raid model, pvp).
 
 ## Open questions (verify in the live game)
 

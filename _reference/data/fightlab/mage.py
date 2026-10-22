@@ -203,12 +203,11 @@ TNUM = talent_numbers()
 MECHANICS = {
     "Improved Frostbolt": "Frostbolt (and Frost Blast, client 70425) cast time -0.1s per rank",
     "Improved Counterspell": "Counterspell also silences: +2/4 s lockout on a caster mob (tables.MOB_CASTER_SHARE of pulls)",
-    "Elemental Precision": "+1% hit per rank with Frost and Fire spells",
+    "Elemental Precision": "+2% hit per rank with Frost and Fire spells (3 ranks since the 2026-10-20 hotfix of 70425; 5 x 1% before)",
     "Ice Shards": "Frost crit damage bonus +20% per rank of the 50% spell bonus (x2.0 at 5/5)",
     "Permafrost": "chill duration +11/22/33%, extra slow +3/6/10%",
     "Improved Frost Nova": "Frost Nova cooldown -2s per rank",
     "Frostbite": "each chill (Frostbolt, Cone of Cold, Ice Armor proc) has 5% per rank to freeze 5s",
-    "Piercing Ice": "+2% Frost damage per rank",
     "Frost Channeling": "-5% Frost mana cost per rank",
     "Ice Lance": "unlocks Ice Lance (ranks by level; x3 damage vs Frozen since client 70425, x4 before; coefficient 0.10, the simulator's fit to beta logs)",
     "Arctic Reach": "+10% Frostbolt range per rank (longer pull)",
@@ -281,7 +280,7 @@ FIT = {"Improved Counterspell": "scale",
     "Frostbite": ("replace", [{"channel": "dmg", "scope": ["school:frost"], "per_rank": 0.04}]),
     "Permafrost": ("replace", [{"channel": "surv", "scope": ["all"], "per_rank": 0.10}, {"channel": "sustain", "scope": ["all"], "per_rank": 0.08}]),
     "Ice Barrier": ("replace", [{"channel": "sustain", "scope": ["all"], "values": [0.15]}, {"channel": "surv", "scope": ["all"], "values": [0.30]}, {"channel": "dmg", "scope": ["type:spell"], "values": [0.02]}]),
-    "Elemental Precision": ("replace", [{"channel": "hit", "scope": ["school:frost", "school:fire"], "per_rank": 0.01}, {"channel": "dmg", "scope": ["school:frost", "school:fire"], "per_rank": 0.005}]),
+    "Elemental Precision": ("replace", [{"channel": "hit", "scope": ["school:frost", "school:fire"], "per_rank": 0.02}, {"channel": "dmg", "scope": ["school:frost", "school:fire"], "per_rank": 0.01}]),   # 3 ranks since 2026-10-20
     "Cold Snap": "scale",
     "Winter's Chill": "scale",
     "Improved Frostbolt": "scale",
@@ -290,7 +289,6 @@ FIT = {"Improved Counterspell": "scale",
     "Arcane Instability": "scale",   # crit + damage: the scorer has no crit cap, the Frozen Ice Lance already crits ~80% (sim: half the scorer value)
     "Arcane Mind": "scale",          # 2%/rank Intellect (the Arcane crit-bonus part is irrelevant to a Frost mage): ~0 in the sim
     "Frost Channeling": "scale",
-    "Piercing Ice": "scale",
     "Presence of Mind": "scale",
     "Arcane Concentration": "scale",
     # Fire loop
@@ -579,8 +577,6 @@ class MageModule(BaseModule):
 
     def talent_multiplier(self, spell, frozen):
         m = 1.0 + self.tv("Arcane Instability", 0) / 100
-        if self.sch(spell, "frost"):
-            m *= 1 + self.tv("Piercing Ice", 0) / 100
         if self.sch(spell, "fire"):
             if self.rank("Fire Power"):   # per Fire effect, up to the cap (client 70425; a flat 2%/rank before)
                 m *= 1 + min(self.fire_effects() * self.tv("Fire Power", 0), self.tv("Fire Power", 1)) / 100

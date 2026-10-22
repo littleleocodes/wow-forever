@@ -87,8 +87,8 @@ Talent-by-talent check against the Forever beta-client trees (`../forever/talent
 | Frost | Improved Frostbolt | 5 | changed | tier 1, max 5 — tooltip changed; tooltip changed in build 1.60.1.70425 (ranks 1, 2, 3, 4, 5) |
 | Frost | Ice Shards | 5 | unchanged | tier 2, max 5 |
 | Frost | Improved Frost Nova | 2 | unchanged | tier 2, max 2 |
-| Frost | Permafrost | 3 | changed | tier 2, max 3 — tooltip changed; was Frost row 2, col 4 |
-| Frost | Piercing Ice | 3 | unchanged | tier 3, max 3 |
+| Frost | Permafrost | 3 | changed | tier 2, max 3 — tooltip changed; was Frost row 2, col 4; moved in build 1.60.1.70425: was row 2, col 2 |
+| Frost | Piercing Ice | 3 | unknown | not found in Forever data |
 | Frost | Cold Snap | 1 | changed | tier 5, max 1 — tooltip changed; was Frost row 3, col 2 |
 | Frost | Arctic Reach | 2 | unchanged | tier 4, max 2 — tooltip changed in build 1.60.1.70425 (ranks 1, 2) |
 | Frost | Shatter | 5 | changed | tier 4, max 3 — max rank 5 → 3; tooltip changed; was Frost row 4, col 3 |

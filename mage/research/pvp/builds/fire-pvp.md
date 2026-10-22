@@ -40,7 +40,8 @@ The Fire PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP 
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Elemental Precision** | 5/5 | changed | Improves your chance to hit with Frost and Fire spells by 5%. |
+| **Elemental Precision** | 3/3 | changed | Improves your chance to hit with Frost and Fire spells by 6%. |
+| **Frost Warding** | 2/2 | changed | Increases the Armor and resistance given by your Frost Armor and Ice Armor spells by 30%. In addition, gives your Frost Ward a 20% chance to reflect Frost spells and effects while active. |
 | **Frostbite** | 3/3 | moved | Gives your Chill effects a 15% chance to Freeze the target for 5 sec. |
 | **Ice Shards** | 1/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 20%. |
 | **Improved Frost Nova** | 2/2 | unchanged | Reduces the cooldown of your Frost Nova spell by 4 sec. |
@@ -65,6 +66,7 @@ The Fire PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP 
 - PvP values are assumptions: no simulator plays PvP.
 - 2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized.
 - 2026-10-16 (repair_builds.py, client build 70425 trees): 0/32/19 -> 0/32/19; Wake of Fire -> Improved Fire Blast (renamed); Fire Power 5 -> 3 (rank cap); +1 Improved Fireball (tier gating for Combustion); +1 Critical Mass (prerequisite of Combustion); +1 Critical Mass (prerequisite of Combustion); -1 Heating Up (over 51) (refill: the fire-raid model, pvp).
+- 2026-10-22 (repair_builds.py, client build 70425 trees): 0/32/19 -> 0/32/19; Elemental Precision 5 -> 3 (rank cap); +1 Frost Warding (tier gating for Frostbite); +1 Frost Warding (tier gating for Frostbite) (refill: the fire-raid model, pvp).
 
 ## Open questions (verify in the live game)
 
