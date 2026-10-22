@@ -2,7 +2,7 @@
 
 [Hunter](../README.md) > [Leveling (solo)](README.md) > Beast Mastery
 
-**[Beast Mastery — Leveling](../research/leveling/builds/beast-mastery-leveling.md)** (30/21/0) — [open the talent tree](https://talentsforever.com/hunter/60/532020050510025-005355200001--6)
+**[Beast Mastery — Leveling](../research/leveling/builds/beast-mastery-leveling.md)** (30/21/0) — [open the talent tree](https://talentsforever.com/hunter/60/532020050510025-005355200001--7)
 
 > ⚗ Generated build: no hand-made Beast Mastery build exists for this mode yet, so this is the stats model's best Beast Mastery build. A starting point, not a proven build.
 
@@ -14,34 +14,36 @@
 
 **In the fight**, top to bottom:
 
-1. **Hunter's Mark** and **Serpent Sting** while the mob has most of its health.
+1. **Hunter's Mark** while the mob has more than 30% of its health, **Serpent Sting** while it has more than 40%.
 2. **Bestial Wrath**, **Intimidation** and **Rapid Fire** at the start when they are ready.
-3. **Summon Hawk** whenever it is ready (from level 25) while the mob has a third of its health or more; skip **Arcane Shot**, which shares its timer.
-4. **Aimed Shot** whenever it is ready while the mob has more than a quarter of its health; on a single mob never **Multi-Shot** (they share a cooldown).
+3. **Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.
+4. No other shots on a single mob: the fight lab levels faster skipping Arcane Shot, Multi-Shot and the hawk and keeping the mana.
 5. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards. **Mend Pet** when the pet drops below a third of its health.
-6. If a mob reaches you: **Feign Death** to send it back to the pet; when that is on cooldown, **Wing Clip** and **Raptor Strike** until the pet takes it back.
+6. If a mob reaches you: **Feign Death** to send it back to the pet; when that is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.
 
-**Between fights:** Mend the pet, drink below 15% mana, eat below two thirds of your health.
+**Between fights:** Mend the pet below half its health, drink below 15% mana, eat below two thirds of your health.
 
 ## Why this rotation
 
-Beast Mastery levels with the cat as the tank: it holds the mob while **Auto Shot**, **Serpent Sting** and your cooldown shots kill it from range. Your job is to keep the mob on the pet and to spend mana only where it shortens the fight.
+Beast Mastery levels with the cat as the tank: it holds the mob while **Auto Shot**, **Serpent Sting** and **Aimed Shot** kill it from range. Your job is to keep the mob on the pet and to spend mana only where it shortens the fight.
 
 **Why it works**
 
 - Send the pet first, then **Hunter's Mark** and **Serpent Sting**. In the fight lab the cat Growls every 5 seconds and keeps the mob until your threat passes 130% of its own, so two cheap openers give it a head start; the lab casts them only while the mob has more than 30% and 40% of its health.
-- **Aimed Shot** and **Multi-Shot** share one 6-second cooldown. On a single mob it goes to **Aimed Shot**, which adds a flat bonus to the weapon hit: the fight lab never casts **Multi-Shot** on one mob, which measured about 2.5% faster kills, and stops casting **Aimed Shot** once the mob is below a quarter of its health.
-- **Summon Hawk** (level 25) and **Arcane Shot** share a timer too. The fight lab gives it to the hawk while the mob has more than 30% of its health and never casts **Arcane Shot**, which measured about 2% faster per kill.
-- **Auto Shot** is the biggest part of your damage (about a third at 60) and cannot fire within 8 yards: if the mob ends up next to you while the pet holds it, step back rather than melee.
+- **Aimed Shot** is your only cooldown shot on a single mob, while the mob has more than a quarter of its health. The fight lab's tuned rules never cast Multi-Shot (it shares the cooldown; about 4% faster per kill without it), Arcane Shot (about 2%) or **Summon Hawk** (about 2%): their mana is worth more as fewer drinks between pulls.
+- **Summon Hawk** (level 25 in this order) is still taken: it is the point that opens the next rows of the tree. On one mob the hawk costs more mana than it saves time.
+- **Auto Shot** is the biggest part of your damage (about 37% at 60, the cat about a third) and cannot fire within 8 yards: if the mob ends up next to you while the pet holds it, step back rather than melee.
 - **Rapid Fire** at the start of a fight whenever it is ready: 40% faster attacks for 15 seconds, every 3 minutes once **Rapid Killing** is in (levels 49-50 in this order).
-- **Mend Pet** when the pet drops below about a third while it holds the mob. A dead pet costs a **Revive Pet** before the next pull and your **Focused Fire** bonus until then.
+- **Mend Pet** when the pet drops below about a third while it holds the mob, and between fights below half. A dead pet costs a **Revive Pet** before the next pull and your **Focused Fire** bonus until then.
 
 **Caveats**
 
 - This build takes neither **Bestial Wrath** nor **Intimidation**: skip the step that names them.
-- The fight lab's tuned play drinks only below 15% mana, not at a third, which measured slightly faster: less time sitting between pulls.
-- A mob that turns on you: **Feign Death** sends it back to the pet (the fight lab needs it about once in ten kills at 60); while it is on cooldown, **Wing Clip** and **Raptor Strike** until the pet's Growl takes the mob back.
+- The fight lab's tuned play drinks only below 15% mana, not at a third, which measured slightly faster (about 0.6% per kill): less time sitting between pulls.
+- A mob that turns on you: **Feign Death** sends it back to the pet (the fight lab needs it less than once in five kills at 60); while it is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet's Growl takes the mob back.
 - Several mobs at once: **Multi-Shot** and **Volley** (a 6-second channel with no cooldown in Forever) are your area damage. In the fight lab's three-mob pulls **Volley** is about a tenth of the damage at 60.
+- Watch your ranks at the top levels: in the beta client (build 70425) **Trueshot Aura** rank 5 gives +50 attack power against rank 4's +75, **Aspect of the Hawk** rank 6 +55 against rank 5's +90 and **Hunter's Mark** rank 4 +71 against rank 3's +98. Keep casting the stronger lower rank from your spellbook (the fight lab does) until Blizzard fixes the numbers.
+- **Auto Shot** keeps firing while you cast **Aimed Shot**, but after you step back it waits until you have stood still for half a second (Blizzard's 16 Oct notes), so don't shuffle between shots.
 
 **When to change it**
 
@@ -79,16 +81,16 @@ One point per level from 10, in this order:
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
-| 20 | 18 |
-| 30 | 23 |
-| 40 | 28 |
-| 50 | 28 |
-| 60 | 30 |
+| 20 | 17 |
+| 30 | 20 |
+| 40 | 24 |
+| 50 | 27 |
+| 60 | 28 |
 
 ## Other builds of this spec
 
-- [Beast Mastery](../research/leveling/builds/bm-solo-farm.md) (31/20/0) — [open the talent tree](https://talentsforever.com/hunter/60/5520001505101051-00505500005--6)
+- [Beast Mastery](../research/leveling/builds/bm-solo-farm.md) (31/20/0, 25 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/hunter/60/5520001505101051-00505500005--7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-16 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-22 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
 

@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-swords-raid` and profile `solo-60`: score +32.2% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-swords-raid` and profile `solo-60`: score +31.8% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -68,26 +68,26 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-s
 | 33-34 | Assassination | Murder | 2 | 9/16/0 |
 | 35 | Assassination | Improved Gouge | 1 | 10/16/0 |
 | 36 | Assassination | Relentless Strikes | 1 | 11/16/0 |
-| 37-40 | Assassination | Lethality | 4 | 15/16/0 |
-| 41 | Assassination | Cold Blood | 1 | 16/16/0 |
-| 42-45 | Assassination | Improved Poisons | 4 | 20/16/0 |
-| 46-47 | Assassination | Vigor | 2 | 22/16/0 |
-| 48 | Assassination | Improved Poisons | 1 | 23/16/0 |
-| 49-50 | Assassination | Vile Poisons | 2 | 25/16/0 |
-| 51-55 | Assassination | Seal Fate | 5 | 30/16/0 |
-| 56-57 | Subtlety | Opportunity | 2 | 30/16/2 |
+| 37-38 | Subtlety | Opportunity | 2 | 11/16/2 |
+| 39-42 | Assassination | Lethality | 4 | 15/16/2 |
+| 43 | Assassination | Cold Blood | 1 | 16/16/2 |
+| 44-47 | Assassination | Improved Poisons | 4 | 20/16/2 |
+| 48-49 | Assassination | Vigor | 2 | 22/16/2 |
+| 50 | Assassination | Improved Poisons | 1 | 23/16/2 |
+| 51-52 | Assassination | Vile Poisons | 2 | 25/16/2 |
+| 53-57 | Assassination | Seal Fate | 5 | 30/16/2 |
 | 58-60 | Assassination | Vile Poisons | 3 | 33/16/2 |
 
 ## Core talents (priority order)
 
 1. **Seal Fate** — Removing it costs 3.4 points of score in this model.
 2. **Riposte** — Removing it costs 3.0 points of score in this model.
-3. **Cold Blood** — Removing it costs 2.4 points of score in this model.
-4. **Malice** — Removing it costs 2.0 points of score in this model.
+3. **Malice** — Removing it costs 2.0 points of score in this model.
+4. **Flawless Execution** — Removing it costs 1.9 points of score in this model.
 5. **Improved Sinister Strike** — Removing it costs 1.9 points of score in this model.
-6. **Flawless Execution** — Removing it costs 1.9 points of score in this model.
-7. **Precision** — Removing it costs 1.8 points of score in this model.
-8. **Remorseless Attacks** — Removing it costs 1.8 points of score in this model.
+6. **Precision** — Removing it costs 1.8 points of score in this model.
+7. **Remorseless Attacks** — Removing it costs 1.7 points of score in this model.
+8. **Relentless Strikes** — Removing it costs 1.7 points of score in this model.
 
 ## Leveling rotation
 
@@ -95,7 +95,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Report: rogue/talents/forever/optimizer/combat-swords-raid-solo-60.md
+- Report: rogue/research/talents/forever/optimizer/combat-swords-raid-solo-60.md
 
 ## Open questions (verify in the live game)
 

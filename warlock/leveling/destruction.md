@@ -2,7 +2,7 @@
 
 [Warlock](../README.md) > [Leveling (solo)](README.md) > Destruction
 
-**[Destruction — Leveling](../research/leveling/builds/destruction-leveling.md)** (21/0/30) — [open the talent tree](https://talentsforever.com/warlock/60/00550020134001--20550550331001-6)
+**[Destruction — Leveling](../research/leveling/builds/destruction-leveling.md)** (21/0/30) — [open the talent tree](https://talentsforever.com/warlock/60/05500020134001--20550550331001-7)
 
 > 🔬 Derived build: searched in the fight lab (this project's leveling simulator) from the spec's builds and the stats model's best one. A model of the beta, to check at launch.
 
@@ -14,33 +14,33 @@
 
 **In the fight**, top to bottom:
 
-1. **Corruption** and **Bane of Agony** first while the Voidwalker builds threat: no **Corruption** on a mob below a quarter of its health, no **Bane of Agony** below a third.
-2. **Immolate** while you have more than 30% of your mana, the mob has more than a third of its health and it will not pull the mob off the Voidwalker.
+1. **Corruption** and **Bane of Agony** first while the Voidwalker builds threat, neither on a mob below about a third of its health.
+2. **Immolate** only while you have more than half your mana, the mob has more than about a third of its health and it will not pull the mob off the Voidwalker.
 3. **Conflagrate** when **Immolate** has about 3 seconds left (at once with 5 points in **Shadow and Flame**, which keeps **Immolate** burning), or to finish a burning mob it would kill; then **Siphon Life**.
-4. Above 80% mana, **Shadow Bolt** (**Searing Pain** when the mob has too little health left for it); below that, your wand.
+4. Your wand is the filler: **Shadow Bolt** only above 80% mana (**Searing Pain** when the mob has too little health left for a bolt), which the dots rarely leave you.
 5. With **Incinerate**: cast it instead of **Shadow Bolt** on a burning mob. With **Shadowburn**: finish any mob it would kill.
 6. **Drain Life** whenever you drop below 60% health, and in place of the wand while you are below 85%; **Life Tap** in a fight only when you are short of mana and above 60% health.
 7. If a mob reaches you: **Death Coil** below 60% health, otherwise **Fear** it, then **Drain Life** while it runs, until **Torment** takes it back. Your Healthstone below 35% health.
 
-**Between fights:** **Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, and eat only below 55% health.
+**Between fights:** **Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, eat only below 55% health, and drink only below 15% mana (when you are too hurt to **Life Tap**).
 
 ## Why this rotation
 
-Destruction levels with the same Voidwalker and Affliction dots as the other specs, since its first 21 points are Affliction, and adds a hard-hitting **Immolate** and, from level 59, **Conflagrate**. This build takes neither **Incinerate** nor **Shadowburn**, so your filler is **Shadow Bolt** when your mana is nearly full and the wand otherwise.
+Destruction levels with the same Voidwalker and Affliction dots as the other specs, since its first 21 points are Affliction, and adds **Immolate** and, from level 56, **Conflagrate**. This build takes neither **Incinerate** nor **Shadowburn**; your filler is the wand, with **Shadow Bolt** only when your mana is nearly full.
 
 **Why it works**
 
-- **Corruption** and **Bane of Agony** go first: both are instant (with 5 points in **Improved Corruption**) and cheap, and they give the Voidwalker time to build threat before your fire spells land. **Amplify Curse** before the pull makes that **Bane of Agony** 50% stronger, and **Siphon Life** joins at level 30. Skip **Corruption** on a mob below a quarter of its health and **Bane of Agony** below a third.
-- **Immolate** only while you have more than 30% of your mana: the fight lab's 2026-10-15 re-tune measured that about 3% faster per kill than casting it whenever the mana reserve allows (the earlier rule was half your mana). **Aftermath** makes its first hit 50% stronger, and the fight lab holds it back while it would pull the mob off the Voidwalker.
-- **Conflagrate** (level 59 in this order) eats your **Immolate** in this build, so cast it when **Immolate** has about 3 seconds left, or to finish a burning mob it would kill. **Fire and Brimstone** (level 60) adds to its crit chance and **Ruin** doubles its crit bonus.
-- Your filler is **Shadow Bolt** above about 80% mana and the wand below it. When a mob has too little health left for a **Shadow Bolt**, the fight lab casts **Searing Pain** instead, also only with nearly full mana.
-- **Life Tap** when your mana runs short and your health is above 60%; between fights, **Life Tap** back up and heal the Voidwalker with **Health Funnel**. Eat below 55% health, the fight lab's default: the 2026-10-15 re-tune dropped the earlier 40% rule.
+- **Corruption** and **Bane of Agony** go first: both are instant (with 5 points in **Improved Corruption**) and cheap, and they give the Voidwalker time to build threat before your fire spells land. **Amplify Curse** before the pull makes that **Bane of Agony** 50% stronger, and **Siphon Life** joins at level 30. Skip **Corruption** and **Bane of Agony** on a mob below about a third of its health (the 2026-10-20 re-tune measured the **Corruption** rule about 1% faster per kill).
+- **Immolate** only while you have more than half your mana: the 2026-10-20 re-tune measured that about 3% faster per kill than casting it whenever the **Fear** and **Drain Life** reserve allows. It also waits until it cannot pull the mob off the Voidwalker. **Aftermath** makes its first hit 50% stronger.
+- **Conflagrate** eats your **Immolate** in this build, so cast it when **Immolate** has about 3 seconds left, or to finish a burning mob it would kill. With the mana rule, **Immolate** is on few mobs at 60, so **Conflagrate** is a rare bonus, not the core of the list.
+- Your filler is the wand: **Shadow Bolt** and filler **Searing Pain** wait for 80% mana, which the dots rarely leave you (the fight lab casts almost none).
+- **Life Tap** when your mana runs short and your health is above 60%; between fights, **Life Tap** back to 70% mana and heal the Voidwalker with **Consume Shadows** or **Health Funnel**. Eat below 55% health.
 
 **Caveats**
 
-- This build has neither **Incinerate** nor **Shadowburn**: where the steps name **Incinerate**, cast **Shadow Bolt** (the fight lab does), and finish mobs with **Conflagrate** or the wand.
-- Until level 59 you have no **Conflagrate**: you play **Corruption**, **Bane of Agony**, **Siphon Life**, **Immolate**, then **Shadow Bolt** or the wand.
-- When a mob reaches you, cast **Death Coil** if you are below 60% health, otherwise **Fear** it and **Drain Life** while it runs, until the Voidwalker's **Torment** takes it back (the 2026-10-15 re-tune no longer skips **Fear** and **Drain Life**). **Molten Skin** (10% less damage taken) and **Intensity** (casts that resist pushback) make those moments cheaper.
+- This build has neither **Incinerate** nor **Shadowburn**: skip the lines that name them, and finish mobs with **Conflagrate** or the wand.
+- Until level 56 you have no **Conflagrate**: you play **Corruption**, **Bane of Agony**, **Siphon Life**, **Immolate**, then the wand.
+- When a mob reaches you, cast **Death Coil** if you are below 60% health, otherwise **Fear** it and **Drain Life** while it runs, until the Voidwalker's **Torment** takes it back. **Molten Skin** (10% less damage taken) and **Intensity** (casts that resist pushback) make those moments cheaper.
 
 **When to change it**
 
@@ -54,7 +54,7 @@ One point per level from 10, in this order:
 | Levels | Talent | Points |
 |---|---|---|
 | 10-14 | Improved Corruption (Affliction) | 5 |
-| 15-19 | Malediction (Affliction) | 5 |
+| 15-19 | Suppression (Affliction) | 5 |
 | 20 | Amplify Curse (Affliction) | 1 |
 | 21-22 | Improved Bane of Agony (Affliction) | 2 |
 | 23-25 | Pandemic (Affliction) | 3 |
@@ -66,20 +66,20 @@ One point per level from 10, in this order:
 | 46-48 | Agonizing Flames (Destruction) | 3 |
 | 49-53 | Ruin (Destruction) | 5 |
 | 54-55 | Destructive Reach (Destruction) | 2 |
-| 56-58 | Intensity (Destruction) | 3 |
-| 59 | Conflagrate (Destruction) | 1 |
+| 56 | Conflagrate (Destruction) | 1 |
+| 57-59 | Intensity (Destruction) | 3 |
 | 60 | Fire and Brimstone (Destruction) | 1 |
 
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
-| 20 | 26 |
-| 30 | 32 |
-| 40 | 39 |
-| 50 | 42 |
-| 60 | 43 |
+| 20 | 23 |
+| 30 | 29 |
+| 40 | 35 |
+| 50 | 37 |
+| 60 | 39 |
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-16 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-22 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
 

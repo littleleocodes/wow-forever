@@ -801,5 +801,89 @@
    "policy_changed": true
   }
  ],
- "converged": 3
+ "converged": 3,
+ "two_move": {
+  "steps": [
+   {
+    "one_move": 335,
+    "two_move": 7303,
+    "expanded": 25,
+    "screen": 24,
+    "screen_best": [
+     [
+      "1 Naturalist -> Natural Shapeshifter; then 3 Genesis -> Improved Wrath",
+      0.038
+     ],
+     [
+      "1 Naturalist -> Subtlety; then 3 Genesis -> Improved Wrath",
+      0.038
+     ],
+     [
+      "1 Naturalist -> Furor; then 3 Genesis -> Improved Wrath",
+      0.038
+     ],
+     [
+      "1 Naturalist -> Nature's Focus; then 3 Genesis -> Improved Wrath",
+      0.038
+     ],
+     [
+      "1 Natural Shapeshifter -> Subtlety; then 1 Tranquil Spirit -> Improved Tranquility",
+      0.0333
+     ]
+    ],
+    "raced": 30,
+    "confirmed": [
+     [
+      "1 Natural Shapeshifter -> Subtlety; then 1 Tranquil Spirit -> Improved Tranquility",
+      -0.0009
+     ],
+     [
+      "1 Naturalist -> Natural Shapeshifter; then 3 Genesis -> Improved Wrath",
+      -0.0032
+     ],
+     [
+      "1 Naturalist -> Subtlety; then 3 Genesis -> Improved Wrath",
+      -0.0032
+     ],
+     [
+      "1 Naturalist -> Furor; then 3 Genesis -> Improved Wrath",
+      -0.0032
+     ],
+     [
+      "1 Naturalist -> Nature's Focus; then 3 Genesis -> Improved Wrath",
+      -0.0032
+     ]
+    ],
+    "minutes": 44.7
+   }
+  ],
+  "moved": false
+ },
+ "final": {
+  "deep winner": {
+   "capacity": 0.6553,
+   "se": 0.0016
+  },
+  "resto-raid-healer": {
+   "capacity": 0.6324,
+   "se": 0.0016
+  },
+  "resto-regrowth-natures-grace": {
+   "capacity": 0.5957,
+   "se": 0.0017
+  },
+  "restoration-ml-heal": {
+   "capacity": 0.657,
+   "se": 0.0015
+  },
+  "opt-resto-heal-raid-heal": {
+   "capacity": 0.6324,
+   "se": 0.0016
+  }
+ },
+ "minutes": 47.4,
+ "build": {
+  "written": "restoration-ml-heal",
+  "gain_vs_hand": 0.03621125869702735
+ }
 }

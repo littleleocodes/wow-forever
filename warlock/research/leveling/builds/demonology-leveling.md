@@ -48,6 +48,31 @@ The Demonology leveling build derived on 2026-09-30 (derive_leveling.py): search
 
 *No points.*
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Demonology | Unholy Power | 5 | 0/5/0 |
+| 15-16 | Demonology | Demonic Embrace | 2 | 0/7/0 |
+| 17-19 | Demonology | Improved Imp | 3 | 0/10/0 |
+| 20-21 | Demonology | Demonic Aegis | 2 | 0/12/0 |
+| 22-23 | Demonology | Demonic Energies | 2 | 0/14/0 |
+| 24-26 | Demonology | Improved Voidwalker | 3 | 0/17/0 |
+| 27 | Demonology | Demonic Sacrifice | 1 | 0/18/0 |
+| 28-29 | Demonology | Demonic Brand | 2 | 0/20/0 |
+| 30 | Demonology | Soul Link | 1 | 0/21/0 |
+| 31-33 | Demonology | Demonic Knowledge | 3 | 0/24/0 |
+| 34 | Demonology | Demonic Brand | 1 | 0/25/0 |
+| 35-39 | Demonology | Master Demonologist | 5 | 0/30/0 |
+| 40-44 | Affliction | Improved Corruption | 5 | 5/30/0 |
+| 45-47 | Affliction | Suppression | 3 | 8/30/0 |
+| 48-49 | Affliction | Improved Life Tap | 2 | 10/30/0 |
+| 50 | Affliction | Amplify Curse | 1 | 11/30/0 |
+| 51-52 | Affliction | Improved Bane of Agony | 2 | 13/30/0 |
+| 53-55 | Affliction | Pandemic | 3 | 16/30/0 |
+| 56-59 | Affliction | Malevolence | 4 | 20/30/0 |
+| 60 | Affliction | Siphon Life | 1 | 21/30/0 |
+
 ## Core talents (priority order)
 
 1. **Siphon Life** — The scorer's value in this build: +35.1% of its score (model affliction-leveling).
@@ -66,6 +91,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 - Fight-lab numbers are a model of the beta, not in-game measurements.
 - 2026-10-16 (repair_builds.py, client build 70425 trees): 21/30/0 -> 21/30/0; Malediction 5 gone; +1 Improved Corruption (tier gating for Amplify Curse); +1 Improved Corruption (tier gating for Amplify Curse); +1 Suppression (tier gating for Amplify Curse); +1 Suppression (tier gating for Amplify Curse); +1 Suppression (tier gating for Amplify Curse); order dropped (order_repair.py) (refill: the affliction-leveling model, leveling-st).
 - 2026-10-17 (audit of 2026-10-17, finding 26): core Malediction dropped (not in the allocation; Malediction was replaced by Grim Reach in 70425).
+- 2026-10-18 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the demonology-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree first 31.3 s per kill; stats model 32.8 s; own tree last 32.8 s.
 
 ## Open questions (verify in the live game)
 

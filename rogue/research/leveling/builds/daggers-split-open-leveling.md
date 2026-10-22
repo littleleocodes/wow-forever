@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Daggers (split) (an Assassination/Combat hybrid) leveling build the open leveling search found on 2026-10-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the combat-daggers-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-daggers-raid). +3.1% faster per kill than opt-combat-swords-raid-leveling-st, the fastest of our leveling builds in that race.
+The Daggers (split) (an Assassination/Combat hybrid) leveling build the open leveling search found on 2026-10-19: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the combat-daggers-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-daggers-raid). +3.0% faster per kill than opt-combat-swords-raid-leveling-st, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -81,12 +81,12 @@ The Daggers (split) (an Assassination/Combat hybrid) leveling build the open lev
 ## Core talents (priority order)
 
 1. **Setup** — +1.8 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Improved Eviscerate** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Flawless Execution** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Flawless Execution** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Improved Eviscerate** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
 4. **Relentless Strikes** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Initiative** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Improved Sinister Strike** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Precision** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Improved Sinister Strike** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Initiative** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Precision** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
 8. **Improved Poisons** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
@@ -95,8 +95,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 25.85; opt-combat-swords-raid-leveling-st 26.65, opt-combat-swords-raid-solo-60 26.65, leveling-combat-swords 27.10. The search simulated 90,763 builds.
-- The spec's other leveling builds on the pages: opt-combat-daggers-raid-leveling-st 28.90 s.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 25.77; opt-combat-swords-raid-leveling-st 26.55, opt-combat-swords-raid-solo-60 26.55, leveling-combat-swords 27.07. The search simulated 92,224 builds.
+- The spec's other leveling builds on the pages: opt-combat-daggers-raid-leveling-st 29.28 s.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -106,7 +106,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/rogue>
-- <https://talentsforever.com/rogue/60/0253201020151-32303301001-30230023-6>
+- <https://talentsforever.com/rogue/60/0253201020151-32303301001-30230023-7>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

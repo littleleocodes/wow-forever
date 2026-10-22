@@ -107,10 +107,8 @@ The conservative dagger adaptation: Puncturing Wounds replaces Improved Backstab
 | 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.8 |
 | 3 | if energy < 59 and timeToNextEnergyTick < 1: cast Adrenaline Rush | 0.3 |
 | 4 | if Slice and Dice is up: use every other cooldown when ready | as ready |
-| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.3 |
-| 6 | cast Backstab | 11.5 |
 
-Lines of the simulator's rotation these builds never cast: cast Mutilate (needs the Mutilate talent).
+Lines of the simulator's rotation these builds never cast: cast Mutilate (needs the Mutilate talent); cast Eviscerate (rank 8), cast Backstab (rank 8) (its condition never held in these fights).
 
 Damage by ability:
 

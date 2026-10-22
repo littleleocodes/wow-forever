@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Balance leveling build the open leveling search found on 2026-10-11: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the balance-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (balance-dps). +2.1% faster per kill than opt-balance-dps-leveling-st, the fastest of our leveling builds in that race.
+The Balance leveling build the open leveling search found on 2026-10-19: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the balance-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (balance-dps). 
 
 ## Point allocation
 
@@ -50,20 +50,21 @@ The Balance leveling build the open leveling search found on 2026-10-11: every l
 | Levels | Tree | Talent | Pts | Running total |
 |---|---|---|---|---|
 | 10-14 | Balance | Improved Wrath | 5 | 5/0/0 |
-| 15-17 | Balance | Moonglow | 3 | 8/0/0 |
-| 18 | Balance | Improved Moonfire | 1 | 9/0/0 |
-| 19-20 | Balance | Nature's Majesty | 2 | 11/0/0 |
-| 21 | Balance | Nature's Splendor | 1 | 12/0/0 |
-| 22 | Balance | Improved Moonfire | 1 | 13/0/0 |
+| 15-16 | Balance | Improved Moonfire | 2 | 7/0/0 |
+| 17-19 | Balance | Moonglow | 3 | 10/0/0 |
+| 20-21 | Balance | Nature's Majesty | 2 | 12/0/0 |
+| 22 | Balance | Nature's Splendor | 1 | 13/0/0 |
 | 23-24 | Balance | Genesis | 2 | 15/0/0 |
 | 25 | Balance | Insect Swarm | 1 | 16/0/0 |
 | 26-29 | Balance | Improved Starfire | 4 | 20/0/0 |
 | 30-32 | Balance | Eclipse | 3 | 23/0/0 |
 | 33 | Balance | Nature's Grace | 1 | 24/0/0 |
 | 34 | Balance | Improved Starfire | 1 | 25/0/0 |
-| 35-39 | Balance | Moonfury | 5 | 30/0/0 |
+| 35-38 | Balance | Moonfury | 4 | 29/0/0 |
+| 39 | Balance | Vengeance | 1 | 30/0/0 |
 | 40 | Balance | Moonkin Form | 1 | 31/0/0 |
-| 41-45 | Balance | Vengeance | 5 | 36/0/0 |
+| 41-44 | Balance | Vengeance | 4 | 35/0/0 |
+| 45 | Balance | Moonfury | 1 | 36/0/0 |
 | 46-50 | Restoration | Nature's Focus | 5 | 36/0/5 |
 | 51-55 | Restoration | Naturalist | 5 | 36/0/10 |
 | 56-58 | Restoration | Reflection | 3 | 36/0/13 |
@@ -71,14 +72,14 @@ The Balance leveling build the open leveling search found on 2026-10-11: every l
 
 ## Core talents (priority order)
 
-1. **Eclipse** — +6.9 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Moonkin Form** — +4.3 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Moonglow** — +4.0 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Moonfury** — +3.0 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Eclipse** — +5.9 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Moonglow** — +3.6 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Moonfury** — +3.1 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Moonkin Form** — +2.6 s per kill at level 60 without it (removal, 3,000 fights).
 5. **Nature's Focus** — +2.4 s per kill at level 60 without it (removal, 3,000 fights).
 6. **Improved Starfire** — +2.0 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Improved Wrath** — +1.8 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Naturalist** — +1.6 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Reflection** — +1.8 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Vengeance** — +1.7 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -86,7 +87,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 46.39; opt-balance-dps-leveling-st 47.36, balance-open-leveling 47.86. The search simulated 67,565 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 43.03; opt-balance-dps-leveling-st 43.99. The search simulated 59,650 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -96,7 +97,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/druid>
-- <https://talentsforever.com/druid/60/5432200115501351--505003-6>
+- <https://talentsforever.com/druid/60/5432200115501351--505003-7>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

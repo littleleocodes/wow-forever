@@ -89,7 +89,7 @@ Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of A
 | 5 | if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.3 |
 | 6 | if not Flame Shock is on the target: cast Flame Shock | 4.0 |
 | 7 | cast Earth Shock | 7.0 |
-| 8 | if number of targets = 1 and not Searing Totem is on the target: cast Searing Totem | 1.3 |
+| 8 | if number of targets = 1 and time left on the totem ≤ 0s: cast Searing Totem | 1.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Lightning Bolt (its condition never held in these fights).
 

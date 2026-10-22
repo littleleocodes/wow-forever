@@ -1,62 +1,62 @@
-# Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (raid-dps) — 22/0/29
+# Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (raid-dps) — 28/0/23
 
 *[Mage](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 22/0/29 (Arcane / Fire / Frost) |
+| **Build** | 28/0/23 (Arcane / Fire / Frost) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `raid-dps`: score +76.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `raid-dps`: score +90.9% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
-### Arcane (22)
+### Arcane (28)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
+| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, your Arcane Missile hits a 10% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 | **Arcane Focus** | 5/5 | changed | Improves your chance to hit with Arcane spells by 5%. |
-| **Wand Specialization** | 1/2 | moved | Increases your damage with Wands by 13%. |
-| **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
+| **Improved Channeling** | 1/5 | **NEW** | Gives you a 20% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 14% chance while casting Arcane Blast or Arcane Wrath. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
+| **Arcane Blast** | 1/1 | **NEW** | Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application. |
 | **Arcane Impact** | 3/3 | **NEW** | Increases the critical strike chance of your Arcane spells by 6%. |
-| **Missile Barrage** | 1/2 | **NEW** | Gives your Arcane Blast spell a 20% chance, your Arcane Missile hits a 5% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 10% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
-| **Arcane Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
+| **Arcane Wrath** | 1/1 | **NEW** | Launches a projectile of pure Arcane energy at the enemy target, causing 122 to 146 Arcane damage. This spell gains additional Spell Damage equal to 5% of your maximum Mana. |
+| **Arcane Meditation** | 2/3 | changed | Allows 33% of your Mana regeneration to continue while casting. |
 | **Presence of Mind** | 1/1 | unchanged | When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell. |
-| **Arcane Mind** | 1/5 | changed | Increases your Intellect by 2% and increases the critical strike damage bonus of your Arcane spells by 20%. |
+| **Arcane Mind** | 4/5 | changed | Increases your Intellect by 8% and increases the critical strike damage bonus of your Arcane spells by 80%. |
+| **Arcane Instability** | 3/3 | changed | Increases the damage done by your spells by 3% and your critical strike chance by 3%. |
 
 ### Fire (0)
 
 *No points.*
 
-### Frost (29)
+### Frost (23)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Frostbolt** | 5/5 | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.5 sec. |
-| **Elemental Precision** | 5/5 | changed | Improves your chance to hit with Frost and Fire spells by 5%. |
+| **Elemental Precision** | 4/5 | changed | Improves your chance to hit with Frost and Fire spells by 4%. |
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
 | **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets. |
 | **Piercing Ice** | 3/3 | unchanged | Increases the damage done by your Frost spells by 6%. |
 | **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
 | **Fingers of Frost** | 2/2 | **NEW** | Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 2 spells cast as if the target were Frozen. Lasts 15 sec. |
-| **Improved Cone of Cold** | 1/3 | changed | Increases the damage dealt by your Cone of Cold spell by 12%. |
-| **Winter's Chill** | 4/5 | changed | Gives your Frost damage spells a 80% chance to apply the Winter's Chill effect, which increases the damage done by your Cone of Cold spell to the target by 40%, stacking up to 5 times. |
 
 ## Core talents (priority order)
 
-1. **Improved Frostbolt** — Removing it costs 22.4 points of score in this model.
-2. **Ice Shards** — Removing it costs 20.2 points of score in this model.
-3. **Fingers of Frost** — Removing it costs 19.2 points of score in this model.
-4. **Ice Lance** — Removing it costs 12.6 points of score in this model.
-5. **Winter's Chill** — Removing it costs 11.4 points of score in this model.
-6. **Shatter** — Removing it costs 10.8 points of score in this model.
-7. **Piercing Ice** — Removing it costs 8.7 points of score in this model.
-8. **Elemental Precision** — Removing it costs 8.6 points of score in this model.
+1. **Improved Frostbolt** — Removing it costs 22.9 points of score in this model.
+2. **Fingers of Frost** — Removing it costs 20.0 points of score in this model.
+3. **Ice Shards** — Removing it costs 17.0 points of score in this model.
+4. **Missile Barrage** — Removing it costs 12.5 points of score in this model.
+5. **Ice Lance** — Removing it costs 12.3 points of score in this model.
+6. **Shatter** — Removing it costs 11.7 points of score in this model.
+7. **Arcane Instability** — Removing it costs 9.8 points of score in this model.
+8. **Piercing Ice** — Removing it costs 8.8 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
@@ -94,14 +94,12 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ra
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | if mana % ≤ 60%: cast Mana Ruby (mana gem) | as ready |
+| 1 | if mana % ≤ 60%: cast Mana Ruby | as ready |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles | 3.2 |
-| 4 | if Fingers of Frost is up: cast Ice Lance | 4.6 |
-| 5 | if time left in the fight ≥ 3s: cast Frostbolt | 17.9 |
-| 6 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.3 |
+| 3 | if Fingers of Frost is up: cast Ice Lance | 4.6 |
+| 4 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.3 |
 
-Lines of the simulator's rotation these builds never cast: cast Evocation (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent).
+Lines of the simulator's rotation these builds never cast: cast Arcane Missiles (rank 7), cast Evocation, cast Frostbolt (rank 10) (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent).
 
 Damage by ability:
 
@@ -114,7 +112,6 @@ Damage by ability:
 
 ## Notes
 
-- Allocation taken from cand-frost-raid-r1 on 2026-10-03: the optimizer's earlier round beat its last export in the community simulator (614 vs 584 DPS; the calibration moved the model past the better build).
 - Report: mage/research/talents/forever/optimizer/frost-raid-raid-dps.md
 
 ## Open questions (verify in the live game)

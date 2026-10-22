@@ -2,37 +2,37 @@
 
 [Priest](../README.md) > [Raid (group)](README.md) > Discipline
 
-**[Discipline — Raid healing](../research/raid/builds/discipline-ml-heal.md)** (30/21/0) — [open the talent tree](https://talentsforever.com/priest/60/00521303131510113-2250300323001--6)
+**[Discipline — Raid healing](../research/raid/builds/discipline-ml-heal.md)** (30/21/0) — [open the talent tree](https://talentsforever.com/priest/60/10531503133001103-3150102323001--7)
 
 > 🔬 Derived build: found by this project's deep search over every legal build of the spec in the healer lab (this project's healing model; healers are not in the community simulator), then raced against the spec's builds; it beat the hand-made build (Discipline — Penance / Divine Aegis / Power Infusion), which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to heal
 
-The healer lab plays Discipline with the class's heal choices: **Penance** on the tank whenever it is ready, downranked **Greater Heal** on the tank, **Prayer of Healing** for the group, and **Power Word: Shield** and **Flash Heal** for emergencies. **Renewed Hope** and **Divine Aegis** are what the Discipline points buy; this build takes no **Power Infusion**.
+The healer lab plays Discipline with the class's heal choices: **Penance** on the tank whenever it is ready, downranked **Greater Heal** on the tank, **Prayer of Healing** when the group drops below 60%, and **Power Word: Shield** and **Flash Heal** for emergencies. **Divine Aegis** and **Soul Warding** are what the deep Discipline points buy here; this build takes neither **Power Infusion** nor **Renewed Hope**.
 
 **Why it works**
 
 - **Penance** goes on the tank whenever it comes off cooldown and he is missing most of what it heals. Since 2026-10-08 it heals more per mana than **Heal** and **Greater Heal**, and the healer lab measured about 4% more capacity than keeping it for emergencies.
-- **Greater Heal** on the tank is your biggest heal (0.3 seconds faster with 3 points in **Divine Fury**). Start it when he is missing about half of what it heals and a boss swing is coming, at the lowest rank that covers the damage.
+- **Greater Heal** on the tank is your biggest heal. Start it when he is missing about half of what it heals and a boss swing is coming, at the lowest rank that covers the damage.
 - In an emergency (anyone below 20% health): **Power Word: Shield** on the tank if Weakened Soul is gone, then **Penance** if it is ready, then a full-rank **Flash Heal**. **Soul Warding** removes the shield's 4-second cooldown and cuts its cost by 15%.
-- After a shield, heal the tank directly: with **Renewed Hope** your **Flash Heal**, **Greater Heal** and **Penance** crit 10% more often on a target with Weakened Soul, and each cuts 5 seconds off it, so the next shield comes sooner. Each crit also leaves an absorb of 15% of the heal (**Divine Aegis**) and 25% more armor for 15 seconds (**Inspiration**).
-- **Inner Focus** on a full-rank **Greater Heal** when the tank is missing more than half of one; **Prayer of Healing** when two or more of the group drop below 70%; **Renew** on the tank once he is missing a fifth of his health.
+- Each critical direct heal leaves an absorb of 15% of the heal on the target (**Divine Aegis**, at most 1,200) and gives him 25% more armor for 15 seconds (**Inspiration**).
+- **Inner Focus** on a full-rank **Greater Heal** when the tank is missing more than half of one; **Prayer of Healing** when two or more of the group drop below 60% (the tuned policy since 2026-10-21; it was 70%); **Renew** on the tank once he is missing a fifth of his health.
 
 **Caveats**
 
 - Mana runs out first. **Meditation** keeps half your regeneration going while you cast; the tuned policy takes a mana potion below 40% of your mana.
-- The lab shields only in emergencies: shielding the tank every time Weakened Soul ends measured slightly worse there, because the shields cost mana the fight runs short of. With mana to spare, extra shields feed **Renewed Hope**; the lab did not find that.
+- The lab shields only in emergencies: shielding the tank every time Weakened Soul ends measured slightly worse there, because the shields cost mana the fight runs short of.
 - Ranks far below your level now get less from your healing power (a beta change; the formula is our assumption). In our model **Greater Heal** ranks 3 to 5 lose nothing, so downranking within **Greater Heal** still pays.
-- This build gives up **Power Infusion**, **Spiritual Guidance**, **Spiritual Healing** and **Prayer of Mending**; in the healer lab it holds less than the Holy page's build.
+- This build gives up **Power Infusion**, **Renewed Hope**, **Spiritual Guidance**, **Spiritual Healing** and **Prayer of Mending**; in the healer lab it holds about 9% less than the Holy page's build.
 
 **When to change it**
 
-- When the tank takes a big hit while Weakened Soul is still on him, cast **Penance** or **Flash Heal** at once: each also takes 5 seconds off Weakened Soul (**Renewed Hope**), so you can shield again sooner.
-- **Litany of Light** gives back 10% of a heal's base cost when it differs from your previous heal: alternate heals when two fit equally well.
+- **Litany of Light** (1 point) gives back 5% of a heal's base cost when it differs from your previous heal: alternate heals when two fit equally well.
+- With mana to spare, shield the tank more often: the lab's shields only went out in emergencies because mana ran out first.
 
 ## The numbers
 
-Healing capacity 0.61 (the raid damage it heals through in this project's healer lab), 346 healing per second. Healers are not in the community simulator.
+Healing capacity 0.63 (the raid damage it heals through in this project's healer lab), 344 healing per second. Healers are not in the community simulator.
 
 **The gear** (average item level: Pre-BiS 60.2; Phase 1 BiS 66.2; chosen by the stat weights this project's healer lab measures for this build, the healing capacity each stat adds; healers are in no community simulator, so this is our model; each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -57,8 +57,8 @@ Healing capacity 0.61 (the raid damage it heals through in this project's healer
 
 ## Other builds of this spec
 
-- [Discipline — Penance / Divine Aegis / Power Infusion](../research/raid/builds/disc-penance-healer.md) (31/20/0) — [open the talent tree](https://talentsforever.com/priest/60/005203031303101531-215050030301--6)
+- [Discipline — Penance / Divine Aegis / Power Infusion](../research/raid/builds/disc-penance-healer.md) (31/20/0) — [open the talent tree](https://talentsforever.com/priest/60/005203031330011531-215050030301--7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-16 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-22 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
 

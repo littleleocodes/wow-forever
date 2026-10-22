@@ -111,16 +111,14 @@ Allocation adopted on 2026-09-28 from `cand-fire-raid-r5`, the best build in the
 | # | Priority (the first line whose condition holds is cast) | [`fire-raid`](fire-raid.md) casts/min |
 |---|---|---|
 | 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 4.4 |
-| 2 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
+| 2 | if mana % ≤ 80%: cast Mana Ruby | as ready |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
 | 5 | if stacks of Heating Up = 3: cast Pyroblast | 1.5 |
 | 6 | cast Fire Blast | 7.0 |
-| 7 | if mana % ≥ 10%: cast Fireball | 9.5 |
-| 8 | if time left in the fight ≥ 3s: cast Fireball (rank 2) | 5.4 |
-| 9 | cast Scorch (rank 1) | 0.2 |
+| 7 | cast Scorch | 4.4 |
 
-Lines of the simulator's rotation these builds never cast: cast Arcane Missiles (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Fireball (rank 11), cast Arcane Missiles (rank 7) (its condition never held in these fights).
 
 Damage by ability:
 

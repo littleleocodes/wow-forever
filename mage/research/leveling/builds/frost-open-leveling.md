@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Frost leveling build the open leveling search found on 2026-10-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the frost-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). 
+The Frost leveling build the open leveling search found on 2026-10-20: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the frost-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). 
 
 ## Point allocation
 
@@ -20,11 +20,12 @@ The Frost leveling build the open leveling search found on 2026-10-15: every leg
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Wand Specialization** | 2/2 | moved | Increases your damage with Wands by 25%. |
-| **Arcane Focus** | 4/5 | changed | Improves your chance to hit with Arcane spells by 4%. |
-| **Improved Channeling** | 1/5 | **NEW** | Gives you a 20% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 14% chance while casting Arcane Blast or Arcane Wrath. |
+| **Arcane Focus** | 2/5 | changed | Improves your chance to hit with Arcane spells by 2%. |
+| **Improved Channeling** | 2/5 | **NEW** | Gives you a 40% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 28% chance while casting Arcane Blast or Arcane Wrath. |
 | **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
 | **Magic Absorption** | 1/2 | changed | Increases all your resistances by 5 and causes all spells you fully resist to restore 1% of your total mana. Cannot trigger more often than 1 time per sec. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
+| **Arcane Resilience** | 1/2 | changed | Increases your Armor by an amount equal to 25% of your Intellect. |
 | **Arcane Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
 
 ### Fire (2)
@@ -37,9 +38,8 @@ The Frost leveling build the open leveling search found on 2026-10-15: every leg
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Frost Warding** | 1/2 | changed | Increases the Armor and resistance given by your Frost Armor and Ice Armor spells by 15%. In addition, gives your Frost Ward a 10% chance to reflect Frost spells and effects while active. |
 | **Improved Frostbolt** | 5/5 | changed | Reduces the casting time of your Frostbolt and Frost Blast spells by 0.5 sec. |
-| **Elemental Precision** | 3/5 | changed | Improves your chance to hit with Frost and Fire spells by 3%. |
+| **Elemental Precision** | 4/5 | changed | Improves your chance to hit with Frost and Fire spells by 4%. |
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
 | **Frostbite** | 3/3 | moved | Gives your Chill effects a 15% chance to Freeze the target for 5 sec. |
 | **Piercing Ice** | 3/3 | unchanged | Increases the damage done by your Frost spells by 6%. |
@@ -60,37 +60,36 @@ The Frost leveling build the open leveling search found on 2026-10-15: every leg
 | 20 | Frost | Ice Lance | 1 | 0/0/11 |
 | 21-23 | Frost | Frost Channeling | 3 | 0/0/14 |
 | 24 | Frost | Piercing Ice | 1 | 0/0/15 |
-| 25-26 | Frost | Shatter | 2 | 0/0/17 |
-| 27-28 | Frost | Ice Shards | 2 | 0/0/19 |
-| 29 | Frost | Shatter | 1 | 0/0/20 |
+| 25 | Frost | Shatter | 1 | 0/0/16 |
+| 26-27 | Frost | Ice Shards | 2 | 0/0/18 |
+| 28-29 | Frost | Shatter | 2 | 0/0/20 |
 | 30-31 | Frost | Fingers of Frost | 2 | 0/0/22 |
 | 32-34 | Frost | Ice Shards | 3 | 0/0/25 |
 | 35-36 | Frost | Piercing Ice | 2 | 0/0/27 |
-| 37 | Frost | Elemental Precision | 1 | 0/0/28 |
-| 38 | Frost | Frost Warding | 1 | 0/0/29 |
+| 37-38 | Frost | Elemental Precision | 2 | 0/0/29 |
 | 39 | Frost | Cold Snap | 1 | 0/0/30 |
 | 40 | Frost | Ice Barrier | 1 | 0/0/31 |
-| 41-42 | Fire | Incineration | 2 | 0/2/31 |
-| 43-44 | Arcane | Wand Specialization | 2 | 2/2/31 |
-| 45-47 | Arcane | Arcane Focus | 3 | 5/2/31 |
-| 48-50 | Arcane | Arcane Concentration | 3 | 8/2/31 |
-| 51-52 | Arcane | Arcane Subtlety | 2 | 10/2/31 |
-| 53-54 | Arcane | Arcane Concentration | 2 | 12/2/31 |
-| 55 | Arcane | Magic Absorption | 1 | 13/2/31 |
-| 56 | Arcane | Arcane Focus | 1 | 14/2/31 |
-| 57 | Arcane | Improved Channeling | 1 | 15/2/31 |
-| 58-60 | Arcane | Arcane Meditation | 3 | 18/2/31 |
+| 41-42 | Arcane | Wand Specialization | 2 | 2/0/31 |
+| 43-44 | Arcane | Arcane Focus | 2 | 4/0/31 |
+| 45 | Arcane | Improved Channeling | 1 | 5/0/31 |
+| 46-50 | Arcane | Arcane Concentration | 5 | 10/0/31 |
+| 51-52 | Arcane | Arcane Subtlety | 2 | 12/0/31 |
+| 53 | Arcane | Magic Absorption | 1 | 13/0/31 |
+| 54 | Arcane | Arcane Resilience | 1 | 14/0/31 |
+| 55 | Arcane | Improved Channeling | 1 | 15/0/31 |
+| 56-58 | Arcane | Arcane Meditation | 3 | 18/0/31 |
+| 59-60 | Fire | Incineration | 2 | 18/2/31 |
 
 ## Core talents (priority order)
 
-1. **Ice Lance** — +9.0 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Shatter** — +4.2 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Ice Shards** — +2.2 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Fingers of Frost** — +1.6 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Frost Channeling** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Frostbite** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Arcane Meditation** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Piercing Ice** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Ice Lance** — +6.4 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Shatter** — +4.6 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Ice Shards** — +2.5 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Frost Channeling** — +1.6 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Fingers of Frost** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Arcane Meditation** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Piercing Ice** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Frostbite** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -98,8 +97,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- +3.0% faster than the hand draft leveling-frost, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 27.20; opt-frost-leveling-leveling-st 27.77, leveling-frost 28.02, opt-frost-aoe-leveling-aoe 31.69. The search simulated 101,364 builds.
+- +3.6% faster than the hand draft leveling-frost, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 29.43; opt-frost-leveling-leveling-st 29.84, leveling-frost 30.48, opt-frost-aoe-leveling-aoe 33.44. The search simulated 103,214 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -109,7 +108,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/mage>
-- <https://talentsforever.com/mage/60/2412150000003-02-1535003331000301201-6>
+- <https://talentsforever.com/mage/60/22202151000003-02-0545003331000301201-7>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

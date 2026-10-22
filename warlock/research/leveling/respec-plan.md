@@ -6,32 +6,32 @@ Talentless baseline: 90 h for levels 10-60 under these assumptions.
 
 ## Recommended schedule
 
-- **Levels 10-60: affliction-leveling -> level-40 build (31/0/0)**
-  - at level 10: **Affliction**: Improved Corruption 1
-  - at level 60: **Affliction**: Improved Corruption 5, Malediction 5, Amplify Curse 1, Improved Bane of Agony 2, Pandemic 3, Suppression 5, Siphon Life 1, Malevolence 5, Shadow Mastery 5, Soul Siphon 3; **Demonology**: Unholy Power 5; **Destruction**: Bane 5, Molten Skin 5, Ruin 1
-  - order: 10-14 Improved Corruption x5, 15-19 Malediction x5, 20 Amplify Curse, 21-22 Improved Bane of Agony x2, 23-25 Pandemic x3, 26-29 Suppression x4, 30 Siphon Life, 31 Suppression, 32-34 Malevolence x3, 35-39 Shadow Mastery x5, 40-41 Malevolence x2, 42-46 Unholy Power x5, 47-49 Soul Siphon x3, 50-54 Bane x5, 55-59 Molten Skin x5, 60 Ruin
+- **Levels 10-60: affliction-leveling -> level-50 build (32/9/0)**
+  - at level 10: **Affliction**: Improved Life Tap 1
+  - at level 60: **Affliction**: Improved Life Tap 2, Suppression 5, Improved Corruption 5, Amplify Curse 1, Improved Bane of Agony 2, Pandemic 3, Malevolence 5, Siphon Life 1, Soul Siphon 3, Shadow Mastery 5; **Demonology**: Unholy Power 5, Demonic Energies 2, Improved Voidwalker 3; **Destruction**: Bane 5, Molten Skin 4
+  - order: 10-11 Improved Life Tap x2, 12-15 Suppression x4, 16-19 Improved Corruption x4, 20 Amplify Curse, 21-22 Improved Bane of Agony x2, 23 Improved Corruption, 24 Pandemic, 25-27 Malevolence x3, 28 Pandemic, 29 Malevolence, 30 Siphon Life, 31 Pandemic, 32 Malevolence, 33 Suppression, 34 Soul Siphon, 35-39 Shadow Mastery x5, 40-41 Soul Siphon x2, 42-46 Unholy Power x5, 47 Demonic Energies, 48-50 Improved Voidwalker x3, 51 Demonic Energies, 52-56 Bane x5, 57-60 Molten Skin x4
 
-Total: **74.3 h** (17.5% faster than talentless), no respec.
+Total: **72.0 h** (20.0% faster than talentless), no respec.
 
 ## Never respec: best single plan
 
 | Plan | Hours 10-60 | vs. schedule |
 |---|---|---|
-| affliction-leveling -> level-40 build (31/0/0) | 74.3 | +0.0 h |
-| affliction-leveling -> level-20 build (11/0/0) | 74.3 | +0.0 h |
-| affliction-leveling -> level-30 build (21/0/0) | 74.3 | +0.0 h |
-| affliction-leveling -> level-50 build (36/5/0) | 74.3 | +0.0 h |
-| affliction-leveling -> level-60 build (27/24/0) | 75.1 | +0.8 h |
+| affliction-leveling -> level-50 build (32/9/0) | 72.0 | +0.0 h |
+| affliction-leveling -> level-40 build (31/0/0) | 72.0 | +0.0 h |
+| affliction-leveling -> level-20 build (11/0/0) | 72.0 | +0.0 h |
+| affliction-leveling -> level-30 build (21/0/0) | 72.0 | +0.0 h |
+| affliction-leveling -> level-60 build (27/24/0) | 72.9 | +0.9 h |
 
 ## Leveling score by level (fraction of time per kill saved)
 
 | Plan | 10 | 15 | 20 | 25 | 30 | 35 | 40 | 45 | 50 | 55 | 60 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| affliction-leveling -> level-20 build (11/0/0) | +0.3% | +2.3% | +4.6% | +6.9% | +16.6% | +18.0% | +19.9% | +21.0% | +21.7% | +22.1% | +23.2% |
-| affliction-leveling -> level-30 build (21/0/0) | +0.3% | +2.3% | +4.6% | +6.9% | +16.6% | +18.0% | +19.9% | +21.0% | +21.7% | +22.1% | +23.2% |
-| affliction-leveling -> level-40 build (31/0/0) | +0.3% | +2.3% | +4.6% | +6.9% | +16.6% | +18.0% | +19.9% | +21.0% | +21.7% | +22.1% | +23.2% |
-| affliction-leveling -> level-50 build (36/5/0) | +0.3% | +2.3% | +4.6% | +6.9% | +16.6% | +18.0% | +19.9% | +21.0% | +21.8% | +21.8% | +23.3% |
-| affliction-leveling -> level-60 build (27/24/0) | +0.3% | +2.3% | +4.6% | +6.9% | +16.6% | +18.0% | +19.3% | +19.5% | +19.5% | +19.5% | +24.7% |
+| affliction-leveling -> level-20 build (11/0/0) | +1.2% | +5.2% | +7.7% | +9.6% | +16.8% | +18.9% | +22.4% | +23.0% | +25.1% | +25.4% | +25.7% |
+| affliction-leveling -> level-30 build (21/0/0) | +1.2% | +5.2% | +7.7% | +9.3% | +16.9% | +18.9% | +22.4% | +23.0% | +25.1% | +25.4% | +25.7% |
+| affliction-leveling -> level-40 build (31/0/0) | +1.2% | +5.2% | +7.7% | +9.6% | +16.8% | +18.9% | +22.4% | +23.0% | +25.1% | +25.4% | +25.9% |
+| affliction-leveling -> level-50 build (32/9/0) | +1.2% | +5.2% | +7.7% | +9.6% | +16.8% | +18.9% | +22.4% | +23.0% | +25.1% | +25.4% | +26.0% |
+| affliction-leveling -> level-60 build (27/24/0) | +1.2% | +5.2% | +7.7% | +9.6% | +16.8% | +18.9% | +20.3% | +22.4% | +22.5% | +22.7% | +28.3% |
 
 ## Reading it
 

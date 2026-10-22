@@ -97,14 +97,12 @@ The Daggers (split) (an Assassination/Combat hybrid) raid build the open talent 
 
 | # | Priority (the first line whose condition holds is cast) | [`daggers-split-open-raid`](daggers-split-open-raid.md) casts/min |
 |---|---|---|
-| 1 | cast Backstab | 10.8 |
-| 2 | if time left on Expose Armor < 3 and combo points ≥ 3.75 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.5 |
-| 3 | if combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 12: cast Slice and Dice | 3.1 |
-| 4 | if Slice and Dice is up: use every other cooldown when ready | as ready |
-| 5 | if combo points ≥ 5 and Slice and Dice is up: cast Cold Blood | 0.3 |
-| 6 | if combo points ≥ 4 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 1.1 |
+| 1 | if time left on Expose Armor < 3 and combo points ≥ 3.75 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.5 |
+| 2 | if combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 12: cast Slice and Dice | 3.1 |
+| 3 | if Slice and Dice is up: use every other cooldown when ready | as ready |
+| 4 | if combo points ≥ 5 and Slice and Dice is up: cast Cold Blood | 0.3 |
 
-Lines of the simulator's rotation these builds never cast: cast Adrenaline Rush (needs the Adrenaline Rush talent); cast Ghostly Strike (needs the Ghostly Strike talent); cast Mutilate (its condition never held in these fights); cast Hemorrhage (needs the Hemorrhage talent).
+Lines of the simulator's rotation these builds never cast: cast Adrenaline Rush (needs the Adrenaline Rush talent); cast Ghostly Strike (needs the Ghostly Strike talent); cast Backstab (rank 8), cast Eviscerate (rank 8), cast Mutilate (its condition never held in these fights); cast Hemorrhage (needs the Hemorrhage talent).
 
 Damage by ability:
 

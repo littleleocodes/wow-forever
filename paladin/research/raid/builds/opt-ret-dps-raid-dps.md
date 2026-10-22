@@ -1,64 +1,62 @@
-# Optimizer — Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic) (raid-dps) — 12/8/31
+# Optimizer — Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic) (raid-dps) — 17/0/34
 
 *[Paladin](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 12/8/31 (Holy / Protection / Retribution) |
+| **Build** | 17/0/34 (Holy / Protection / Retribution) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `raid-dps`: score +230.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `raid-dps`: score +92.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
-### Holy (12)
+### Holy (17)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Divine Strength** | 2/5 | unchanged | Increases your Strength by 4%. |
 | **Divine Intellect** | 5/5 | unchanged | Increases your total Intellect by 10%. |
+| **Divine Strength** | 5/5 | unchanged | Increases your Strength by 10%. |
 | **Improved Seals** | 3/3 | **NEW** | Increases the damage done by your Seals and Judgements by 15%. |
-| **Reverence** | 2/3 | **NEW** | Allows 20% of your Mana regeneration to continue while casting. |
+| **Reverence** | 3/3 | **NEW** | Allows 30% of your Mana regeneration to continue while casting. |
+| **Voice of Truth** | 1/1 | **NEW** | Grants you immunity to Silence and Interrupt effects for 6 sec. |
 
-### Protection (8)
+### Protection (0)
 
-| Talent | Pts | vs Classic | Effect at this rank |
-|---|---|---|---|
-| **Toughness** | 5/5 | moved | Increases your armor value from items by 10%. |
-| **Precision** | 3/3 | changed | Improves your chance to hit by 3%. |
+*No points.*
 
-### Retribution (31)
+### Retribution (34)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Benediction** | 5/5 | changed | Reduces the Mana cost of all instant cast spells and abilities by 10%. |
 | **Improved Judgement** | 2/2 | changed | Decreases the cooldown of your Judgement ability by 2 sec. |
-| **Holy Conduit** | 2/2 | **NEW** | Reduces the mana cost of your Consecration, Holy Wrath, Exorcism, and Hammer of Wrath spells by 40%. |
 | **Conviction** | 5/5 | changed | Improves your chance to get a critical strike with melee attacks by 5%. |
-| **Vindication** | 1/3 | changed | Gives your damaging melee attacks a chance to reduce the target's Attack Power by 68, and increase your Attack Power by 1% for 30 sec. |
-| **Sanctified Judgement** | 3/3 | **NEW** | Gives your Judgement ability a 100% chance to return 60% of the Mana cost of the judged seal. |
+| **Holy Conduit** | 2/2 | **NEW** | Reduces the mana cost of your Consecration, Holy Wrath, Exorcism, and Hammer of Wrath spells by 40%. |
 | **Seal of Command** | 1/1 | changed | Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.  Unleashing this Seal's energy will judge an enemy, instantly causing 68 to 73 Holy damage, 137 to 145 if the target is stunned or incapacitated. |
+| **Vindication** | 3/3 | changed | Gives your damaging melee attacks a chance to reduce the target's Attack Power by 204, and increase your Attack Power by 3% for 30 sec. |
+| **Sanctified Judgement** | 3/3 | **NEW** | Gives your Judgement ability a 100% chance to return 60% of the Mana cost of the judged seal. |
 | **Sacred Arbiter** | 1/1 | **NEW** | Increases the damage of your Holy Strike ability by 20% and causes it to refresh all Judgement effects on the target. |
-| **Two-Handed Weapon Specialization** | 2/3 | unchanged | Increases the damage you deal with two-handed melee weapons by 4%. |
 | **Vengeance** | 3/3 | changed | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times. |
+| **Two-Handed Weapon Specialization** | 3/3 | unchanged | Increases the damage you deal with two-handed melee weapons by 6%. |
 | **Champion of the Light** | 3/3 | **NEW** | Increases your spell damage by up to 30% of your Intellect. |
 | **Instrument of Law** | 2/2 | **NEW** | Reduces the cast time of your Hammer of Wrath by 1.0 sec, and reduces all threat you generate by 20% while Righteous Fury is not active. |
 | **Twist of Light** | 1/1 | **NEW** | Reduces the Mana cost of your Seal spells by 20%, and when you replace your Seal of Command, Seal of Righteousness, Seal of Fury, or Seal of Justice with a different Seal, you gain an Echo of that Seal. Your next melee attack applies the replaced Seal's effects, consuming the Echo. |
 
 ## Core talents (priority order)
 
-1. **Seal of Command** — Removing it costs 143.4 points of score in this model.
-2. **Holy Conduit** — Removing it costs 53.8 points of score in this model.
-3. **Champion of the Light** — Removing it costs 47.7 points of score in this model.
-4. **Vengeance** — Removing it costs 22.2 points of score in this model.
-5. **Improved Seals** — Removing it costs 20.2 points of score in this model.
-6. **Twist of Light** — Removing it costs 17.1 points of score in this model.
-7. **Conviction** — Removing it costs 16.3 points of score in this model.
-8. **Sanctified Judgement** — Removing it costs 15.5 points of score in this model.
+1. **Holy Conduit** — Removing it costs 31.6 points of score in this model.
+2. **Seal of Command** — Removing it costs 22.6 points of score in this model.
+3. **Champion of the Light** — Removing it costs 15.1 points of score in this model.
+4. **Vengeance** — Removing it costs 12.9 points of score in this model.
+5. **Improved Seals** — Removing it costs 11.1 points of score in this model.
+6. **Twist of Light** — Removing it costs 9.8 points of score in this model.
+7. **Conviction** — Removing it costs 9.2 points of score in this model.
+8. **Sanctified Judgement** — Removing it costs 8.9 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
@@ -122,7 +120,7 @@ Before the pull: at -1.5s: cast Seal of Command.
 | 8 | cast Consecration | 6.2 |
 | 9 | cast Consecration (rank 1) | 0.7 |
 
-Lines of the simulator's rotation these builds never cast: cast Holy Shock (its condition never held in these fights); cast Divine Favor (needs the Divine Favor talent).
+Lines of the simulator's rotation these builds never cast: cast Holy Shock (needs the Holy Shock talent); cast Divine Favor (needs the Divine Favor talent).
 
 Damage by ability:
 

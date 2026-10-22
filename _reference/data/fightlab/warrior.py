@@ -11,7 +11,7 @@ Playstyle `arms-2h-raid` (the scorer's model id, used for leveling; `fury-dw-rai
 weapons): Bloodrage and Charge on the pull (Death Wish too when the build has it), Battle Shout kept up, Victory Rush after a
 kill, Mortal Strike or Bloodthirst on cooldown, Overpower after a dodge (or a Bloodthrill proc), Rend once, Execute under 20%,
 Heroic Strike with spare rage; Sweeping Strikes when a second mob stands in reach. Between fights: a bandage below 60% health
-(First Aid, 60 s cooldown), food below `eat_below` (the tuned rules in rotations/ set 40% for both models).
+(First Aid, 60 s cooldown), food below `eat_below` (the tuned rules in rotations/ set it: 50% Arms, 40% Fury since 2026-10-19).
 
 Playstyle `prot-leveling` (any spec string starting with "prot"): sword and board in Defensive Stance, see `decide_prot` and
 PROT_NOTES below. Every other spec string runs exactly as before (the shield code is behind `self.prot`).

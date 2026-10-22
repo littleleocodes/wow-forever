@@ -6,32 +6,36 @@ Talentless baseline: 90 h for levels 10-60 under these assumptions.
 
 ## Recommended schedule
 
-- **Levels 10-60: shadow-dps -> level-50 build (8/0/33)**
-  - at level 10: **Shadow**: Blackout 1
-  - at level 60: **Shadow**: Blackout 5, Shadow Reach 2, Shadow Focus 5, Mind Flay 1, Improved Mind Flay 2, Vampiric Embrace 1, Shadow Weaving 3, Improved Mind Blast 5, Spirit Tap 1, Early Demise 2, Darkness 5, Shadowform 1; **Discipline**: Twin Disciplines 5, Improved Power Word: Shield 3, Silent Resolve 3, Inner Focus 1, Power in Light 3, Mental Strength 3
-  - order: 10-14 Blackout x5, 15-16 Shadow Reach x2, 17-19 Shadow Focus x3, 20 Mind Flay, 21-22 Improved Mind Flay x2, 23-24 Shadow Focus x2, 25 Vampiric Embrace, 26-28 Shadow Weaving x3, 29-33 Improved Mind Blast x5, 34 Spirit Tap, 35-36 Early Demise x2, 37-39 Darkness x3, 40 Shadowform, 41-42 Darkness x2, 43-47 Twin Disciplines x5, 48-50 Improved Power Word: Shield x3, 51-52 Silent Resolve x2, 53 Inner Focus, 54 Silent Resolve, 55-57 Power in Light x3, 58-60 Mental Strength x3
+- **Levels 10-39: shadow-dps -> level-30 build (17/0/4)**
+  - at level 10: **Discipline**: Wand Specialization 1
+  - at level 39: **Discipline**: Wand Specialization 2, Twin Disciplines 5, Mental Strength 3, Mental Agility 3, Meditation 3, Inner Focus 1; **Shadow**: Spirit Tap 5, Shadow Focus 5, Blackout 1, Shadow Reach 2
+  - order: 10-11 Wand Specialization x2, 12-14 Twin Disciplines x3, 15-17 Mental Strength x3, 18-19 Twin Disciplines x2, 20-21 Mental Agility x2, 22-24 Meditation x3, 25-27 Spirit Tap x3, 28 Mental Agility, 29 Spirit Tap, 30 Inner Focus, 31 Spirit Tap, 32-36 Shadow Focus x5, 37 Blackout, 38-39 Shadow Reach x2
+- **Levels 40-60: shadow-dps -> level-40 build (0/0/31)** (respec here)
+  - at level 40: **Shadow**: Shadow Focus 5, Improved Mind Blast 1, Shadow Reach 2, Spirit Tap 5, Blackout 5, Mind Flay 1, Improved Mind Flay 2, Shadow Weaving 3, Vampiric Embrace 1, Early Demise 2, Darkness 3, Shadowform 1
+  - at level 60: **Shadow**: Shadow Focus 5, Improved Mind Blast 1, Shadow Reach 2, Spirit Tap 5, Blackout 5, Mind Flay 1, Improved Mind Flay 2, Shadow Weaving 3, Vampiric Embrace 1, Early Demise 2, Darkness 5, Shadowform 1; **Discipline**: Twin Disciplines 5, Wand Specialization 2, Mental Strength 3, Inner Focus 1, Meditation 3, Mental Agility 1; **Holy**: Twilight Focus 3
+  - order: 41-42 Darkness x2, 43-47 Twin Disciplines x5, 48-50 Twilight Focus x3, 51-52 Wand Specialization x2, 53-55 Mental Strength x3, 56 Inner Focus, 57-59 Meditation x3, 60 Mental Agility
 
-Total: **33.7 h** (62.5% faster than talentless), no respec.
+Total: **51.0 h** (43.4% faster than talentless), 1 respec.
 
 ## Never respec: best single plan
 
 | Plan | Hours 10-60 | vs. schedule |
 |---|---|---|
-| shadow-dps -> level-50 build (8/0/33) | 33.7 | -0.0 h |
-| shadow-dps -> level-20 build (0/0/11) | 33.7 | +0.0 h |
-| shadow-dps -> level-40 build (0/0/31) | 33.7 | +0.0 h |
-| shadow-dps -> level-60 build (7/11/33) | 33.7 | +0.0 h |
-| shadow-dps -> level-30 build (2/0/19) | 34.4 | +0.7 h |
+| shadow-dps -> level-40 build (0/0/31) | 54.5 | +3.6 h |
+| shadow-dps -> level-50 build (5/3/33) | 54.7 | +3.7 h |
+| shadow-dps -> level-20 build (11/0/0) | 55.2 | +4.2 h |
+| shadow-dps -> level-30 build (17/0/4) | 56.1 | +5.1 h |
+| shadow-dps -> level-60 build (16/2/33) | 58.4 | +7.5 h |
 
 ## Leveling score by level (fraction of time per kill saved)
 
 | Plan | 10 | 15 | 20 | 25 | 30 | 35 | 40 | 45 | 50 | 55 | 60 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| shadow-dps -> level-20 build (0/0/11) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +56.1% | +71.6% | +72.3% | +72.4% | +72.4% | +72.9% |
-| shadow-dps -> level-30 build (2/0/19) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +55.8% | +57.7% | +72.3% | +72.4% | +72.4% | +72.9% |
-| shadow-dps -> level-40 build (0/0/31) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +56.1% | +71.6% | +72.3% | +72.4% | +72.4% | +72.9% |
-| shadow-dps -> level-50 build (8/0/33) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +56.1% | +71.6% | +72.3% | +72.4% | +72.5% | +72.6% |
-| shadow-dps -> level-60 build (7/11/33) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +56.1% | +71.6% | +72.3% | +72.4% | +72.4% | +72.9% |
+| shadow-dps -> level-20 build (11/0/0) | +0.6% | +2.8% | +29.5% | +36.0% | +36.7% | +34.8% | +36.4% | +36.9% | +38.9% | +52.3% | +53.3% |
+| shadow-dps -> level-30 build (17/0/4) | +0.6% | +2.8% | +29.0% | +36.1% | +38.6% | +37.2% | +37.8% | +39.4% | +40.0% | +41.5% | +53.5% |
+| shadow-dps -> level-40 build (0/0/31) | +0.4% | +2.8% | +4.9% | +22.4% | +25.8% | +26.2% | +50.2% | +51.8% | +52.7% | +53.2% | +54.5% |
+| shadow-dps -> level-50 build (5/3/33) | -0.1% | +0.4% | +3.7% | +23.5% | +25.8% | +26.2% | +50.2% | +51.8% | +52.7% | +53.2% | +54.5% |
+| shadow-dps -> level-60 build (16/2/33) | +0.6% | +2.8% | +29.0% | +36.1% | +38.4% | +37.0% | +37.6% | +39.2% | +27.8% | +34.4% | +54.6% |
 
 ## Reading it
 

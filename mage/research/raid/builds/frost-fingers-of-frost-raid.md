@@ -106,14 +106,12 @@ Allocation adopted on 2026-09-28 from `opt-frost-raid-raid-dps`, the best build 
 
 | # | Priority (the first line whose condition holds is cast) | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) casts/min |
 |---|---|---|
-| 1 | if mana % ≤ 60%: cast Mana Ruby (mana gem) | as ready |
+| 1 | if mana % ≤ 60%: cast Mana Ruby | as ready |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles | 3.3 |
-| 4 | if Fingers of Frost is up: cast Ice Lance | 4.6 |
-| 5 | if time left in the fight ≥ 3s: cast Frostbolt | 17.9 |
-| 6 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.3 |
+| 3 | if Fingers of Frost is up: cast Ice Lance | 4.6 |
+| 4 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.3 |
 
-Lines of the simulator's rotation these builds never cast: cast Evocation (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent).
+Lines of the simulator's rotation these builds never cast: cast Arcane Missiles (rank 7), cast Evocation, cast Frostbolt (rank 10) (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent).
 
 Damage by ability:
 

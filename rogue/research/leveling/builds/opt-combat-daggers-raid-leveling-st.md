@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-daggers-raid` and profile `leveling-st`: score +36.0% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-daggers-raid` and profile `leveling-st`: score +36.2% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -32,8 +32,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Eviscerate** | 3/3 | changed | Increases the damage done by your Eviscerate ability by 20%. |
-| **Lightning Reflexes** | 2/5 | unchanged | Increases your Dodge chance by 2%. |
+| **Lightning Reflexes** | 5/5 | unchanged | Increases your Dodge chance by 5%. |
 | **Puncturing Wounds** | 3/3 | **NEW** | Increases the critical strike chance of your Backstab by 30% and your Mutilate by 15%, and gives Backstab a 45% chance to add an additional Combo Point. |
 | **Precision** | 3/3 | changed | Improves your chance to hit by 3%. |
 | **Deflection** | 3/3 | changed | Increases your Parry chance by 6%. |
@@ -55,8 +54,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
 | Levels | Tree | Talent | Pts | Running total |
 |---|---|---|---|---|
 | 10-11 | Subtlety | Opportunity | 2 | 0/0/2 |
-| 12-14 | Combat | Improved Eviscerate | 3 | 0/3/2 |
-| 15-16 | Combat | Lightning Reflexes | 2 | 0/5/2 |
+| 12-16 | Combat | Lightning Reflexes | 5 | 0/5/2 |
 | 17-19 | Combat | Puncturing Wounds | 3 | 0/8/2 |
 | 20-22 | Combat | Deflection | 3 | 0/11/2 |
 | 23 | Combat | Riposte | 1 | 0/12/2 |
@@ -66,9 +64,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
 | 33-35 | Assassination | Ruthlessness | 3 | 8/16/2 |
 | 36-37 | Assassination | Murder | 2 | 10/16/2 |
 | 38 | Assassination | Relentless Strikes | 1 | 11/16/2 |
-| 39-42 | Assassination | Lethality | 4 | 15/16/2 |
-| 43 | Assassination | Cold Blood | 1 | 16/16/2 |
-| 44 | Assassination | Lethality | 1 | 17/16/2 |
+| 39-43 | Assassination | Lethality | 5 | 16/16/2 |
+| 44 | Assassination | Cold Blood | 1 | 17/16/2 |
 | 45-47 | Assassination | Improved Gouge | 3 | 20/16/2 |
 | 48 | Assassination | Mutilate | 1 | 21/16/2 |
 | 49-50 | Combat | Endurance | 2 | 21/18/2 |
@@ -78,38 +75,38 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
 
 ## Core talents (priority order)
 
-1. **Puncturing Wounds** — Removing it costs 6.9 points of score in this model.
-2. **Mutilate** — Removing it costs 4.0 points of score in this model.
-3. **Opportunity** — Removing it costs 2.1 points of score in this model.
-4. **Flawless Execution** — Removing it costs 1.7 points of score in this model.
-5. **Ruthlessness** — Removing it costs 1.5 points of score in this model.
-6. **Relentless Strikes** — Removing it costs 1.5 points of score in this model.
-7. **Aggression** — Removing it costs 1.5 points of score in this model.
-8. **Malice** — Removing it costs 1.4 points of score in this model.
+1. **Puncturing Wounds** — Removing it costs 7.6 points of score in this model.
+2. **Mutilate** — Removing it costs 4.4 points of score in this model.
+3. **Opportunity** — Removing it costs 2.3 points of score in this model.
+4. **Flawless Execution** — Removing it costs 1.6 points of score in this model.
+5. **Lethality** — Removing it costs 1.5 points of score in this model.
+6. **Malice** — Removing it costs 1.4 points of score in this model.
+7. **Ruthlessness** — Removing it costs 1.4 points of score in this model.
+8. **Relentless Strikes** — Removing it costs 1.4 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
 Single-target leveling fights against normal mobs of your level with two swords (the daggers models: two daggers, still Sinister Strike: the mob faces you after the opener, so no Backstab): open from stealth behind the mob with Cheap Shot (Garrote before 26; the mob turns to face you after the opener, so it can parry from then on), Slice and Dice at 1-2 points when it is down, Sinister Strike to 5 points, Eviscerate (Kidney Shot instead when below 60% health, stunning for the tooltip's seconds per point), Eviscerate at fewer points when it would kill the mob, Cold Blood right before a 5-point Eviscerate, Riposte after a parry, Blade Flurry and Adrenaline Rush on the pull, Evasion when low; white swings with both hands (19% extra miss on white dual-wield hits), Instant Poison on the main hand and Deadly Poison on the off hand. Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below 65%; a death costs 90 s. The tuned rules (rotations/rogue-<spec>.json) veto spells and move the thresholds on top of this list.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): never cast Cheap Shot; eat below 40% health; never cast Slice and Dice; never cast Kidney Shot. Together +15.8% time per kill saved for `opt-combat-daggers-raid-leveling-st` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-19, on top of the priority below): never cast Cheap Shot; eat below 40% health; never cast Slice and Dice; never cast Kidney Shot. Together +16.0% time per kill saved for `opt-combat-daggers-raid-leveling-st` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/combat-daggers-raid.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 7.3 | 8.3 | 10.4 | 11.5 | 11.7 | 20% |
-| Melee (off-hand) | 6.7 | 7.8 | 10.0 | 11.1 | 11.4 | 11% |
-| Sinister Strike | 2.8 | 3.3 | 4.0 | 4.4 | 4.6 | 16% |
-| Eviscerate | 0.7 | 0.7 | 1.0 | 1.2 | 1.3 | 25% |
-| Riposte | 0.0 | 0.9 | 1.1 | 1.2 | 1.2 | 4% |
-| Garrote | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 13% |
+| Melee | 7.5 | 8.4 | 10.6 | 11.7 | 12.0 | 21% |
+| Melee (off-hand) | 6.9 | 7.8 | 10.2 | 11.4 | 11.7 | 11% |
+| Sinister Strike | 3.0 | 3.3 | 4.1 | 4.5 | 4.7 | 17% |
+| Eviscerate | 0.6 | 0.6 | 1.0 | 1.2 | 1.3 | 22% |
+| Riposte | 0.0 | 0.8 | 1.1 | 1.2 | 1.3 | 4% |
+| Garrote | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 14% |
 | Kick | 0.3 | 0.3 | 0.3 | 0.3 | 0.2 | 0% |
 | Cold Blood | 0.0 | 0.0 | 0.0 | 0.1 | 0.1 | 0% |
-| Evasion | 0.0 | 0.0 | 0.0 | 0.1 | 0.1 | 0% |
+| Evasion | 0.0 | 0.0 | 0.0 | 0.0 | 0.1 | 0% |
 
 ## Notes
 
-- Report: rogue/talents/forever/optimizer/combat-daggers-raid-leveling-st.md
+- Report: rogue/research/talents/forever/optimizer/combat-daggers-raid-leveling-st.md
 
 ## Open questions (verify in the live game)
 

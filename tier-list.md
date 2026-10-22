@@ -4,7 +4,7 @@ Every spec of every class, by the build its raid page recommends. Tiers by how f
 
 ## Damage
 
-DPS in a full raid: a 3-minute fight against a raid boss with every raid buff and debuff up, phase-1 gear from one item pool for every spec, racials off. The community's combat simulator (ElliotWood/Forever, commit 2ce8265) with this project's patches and tuned rotations: a model of the beta, not a measurement in the game. Patches that move whole classes (from Forever's client and community numbers, `_reference/data/raidsim/patches/README.md`): hunter pets scale with the hunter's gear (a Beast Mastery build +8.5%), warlock demons with the warlock's (+3.6-4.2%), pets hit with a 2.0 s base (+3.0-3.9% for hunters with a pet); the boss is an Elemental, which hunters' Improved Tracking counts (+5%). Pet scaling is the largest difference from MythicSim's tier list (its engine gives pets nothing from the hunter; [our comparison](_reference/mythicsim-comparison.md)), which also ranks in dungeon gear without trinkets.
+DPS in a full raid: a 3-minute fight against a raid boss with every raid buff and debuff up, phase-1 gear from one item pool for every spec, racials off. The community's combat simulator (ElliotWood/Forever, commit 09e7398) with this project's patches and tuned rotations: a model of the beta, not a measurement in the game. Patches that move whole classes (from Forever's client and community numbers, `_reference/data/raidsim/patches/README.md`): hunter pets scale with the hunter's gear (a Beast Mastery build +8.5%), warlock demons with the warlock's (+3.6-4.2%), pets hit with a 2.0 s base (+3.0-3.9% for hunters with a pet); the boss is an Elemental, which hunters' Improved Tracking counts (+5%). Pet scaling is the largest difference from MythicSim's tier list (its engine gives pets nothing from the hunter; [our comparison](_reference/mythicsim-comparison.md)), which also ranks in dungeon gear without trinkets.
 
 | Tier | Spec | Build | Full raid DPS | Behind the best |
 |---|---|---|---|---|
@@ -17,17 +17,17 @@ DPS in a full raid: a 3-minute fight against a raid boss with every raid buff an
 | **B** | [Hunter: Beast-Marks](hunter/raid/beast-marks.md) | 27/21/3 | 852 | 16.2% |
 | **B** | [Hunter: Beast Mastery](hunter/raid/beast-mastery.md) | 31/20/0 | 847 | 16.7% |
 | **B** | [Warlock: Demonology](warlock/raid/demonology.md) | 2/31/18 | 822 | 19.2% |
-| **C** | [Shaman: Enhancement](shaman/raid/enhancement.md) | 19/32/0 | 754 | 25.9% |
-| **C** | [Warlock: Affliction](warlock/raid/affliction.md) | 30/0/21 | 752 | 26.0% |
-| **C** | [Warlock: Shadow Bolt hybrid](warlock/raid/shadow-bolt-hybrid.md) | 20/11/20 | 723 | 28.9% |
-| **C** | [Shaman: Elemental-Enhancement](shaman/raid/elemental-enhancement.md) | 17/26/8 | 713 | 29.9% |
+| **C** | [Shaman: Enhancement](shaman/raid/enhancement.md) | 17/32/0 | 754 | 25.9% |
+| **C** | [Warlock: Affliction](warlock/raid/affliction.md) | 28/0/21 | 752 | 26.0% |
+| **C** | [Warlock: Shadow Bolt hybrid](warlock/raid/shadow-bolt-hybrid.md) | 19/11/20 | 723 | 28.9% |
+| **C** | [Shaman: Elemental-Enhancement](shaman/raid/elemental-enhancement.md) | 15/26/8 | 713 | 29.9% |
 | **C** | [Warlock: Destruction](warlock/raid/destruction.md) | 10/11/30 | 705 | 30.7% |
-| **C** | [Priest: Shadow](priest/raid/shadow.md) | 18/0/33 | 699 | 31.3% |
+| **C** | [Priest: Shadow](priest/raid/shadow.md) | 18/0/30 | 699 | 31.3% |
 | **C** | [Rogue: Combat](rogue/raid/combat.md) | 16/33/2 | 695 | 31.6% |
 | **C** | [Druid: Feral Combat](druid/raid/feral-combat.md) | 9/33/9 | 694 | 31.7% |
-| **C** | [Mage: Arcane](mage/raid/arcane.md) | 35/11/5 | 689 | 32.2% |
+| **C** | [Mage: Arcane](mage/raid/arcane.md) | 35/9/5 | 689 | 32.2% |
 | **C** | [Mage: Arcane-Frost](mage/raid/arcane-frost.md) | 28/0/23 | 687 | 32.4% |
-| **C** | [Mage: Fire](mage/raid/fire.md) | 12/34/5 | 685 | 32.7% |
+| **C** | [Mage: Fire](mage/raid/fire.md) | 12/32/5 | 685 | 32.7% |
 | **C** | [Mage: Frost](mage/raid/frost.md) | 21/0/30 | 680 | 33.1% |
 | **C** | [Mage: Frostfire](mage/raid/frostfire.md) | 0/29/22 | 675 | 33.6% |
 | **C** | [Rogue: Assassination](rogue/raid/assassination.md) | 30/19/2 | 672 | 33.9% |
@@ -35,7 +35,7 @@ DPS in a full raid: a 3-minute fight against a raid boss with every raid buff an
 | **C** | [Rogue: Subtlety](rogue/raid/subtlety.md) | 20/0/31 | 640 | 37.1% |
 | **C** | [Priest: Smite](priest/raid/smite.md) | 31/17/3 | 597 | 41.3% |
 | **C** | [Druid: Balance](druid/raid/balance.md) | 33/5/13 | 586 | 42.4% |
-| **C** | [Shaman: Elemental](shaman/raid/elemental.md) | 29/22/0 | 515 | 49.3% |
+| **C** | [Shaman: Elemental](shaman/raid/elemental.md) | 28/22/0 | 515 | 49.3% |
 
 ## Healing
 
@@ -44,10 +44,10 @@ Healing capacity in this project's healer lab: how much of the lab's standard ra
 | Tier | Spec | Build | Capacity | Behind the best |
 |---|---|---|---|---|
 | **S** | [Shaman: Restoration](shaman/raid/restoration.md) | 0/10/41 | 0.69 | best |
-| **S** | [Priest: Holy](priest/raid/holy.md) | 21/30/0 | 0.69 | 0.3% |
-| **B** | [Priest: Discipline](priest/raid/discipline.md) | 30/21/0 | 0.61 | 11.5% |
-| **B** | [Druid: Restoration](druid/raid/restoration.md) | 11/5/35 | 0.60 | 13.7% |
-| **B** | [Paladin: Holy](paladin/raid/holy.md) | 34/11/6 | 0.58 | 15.9% |
+| **S** | [Priest: Holy](priest/raid/holy.md) | 22/29/0 | 0.69 | 0.5% |
+| **A** | [Druid: Restoration](druid/raid/restoration.md) | 11/5/35 | 0.65 | 6.1% |
+| **A** | [Priest: Discipline](priest/raid/discipline.md) | 30/21/0 | 0.63 | 9.5% |
+| **B** | [Paladin: Holy](paladin/raid/holy.md) | 33/12/6 | 0.59 | 14.9% |
 
 ## Tanking
 
@@ -138,5 +138,5 @@ The trinket pair in each spec's own gear sets (damage specs and tanks: raced in 
 | [Warrior: Protection](warrior/raid/protection.md) (tank) | [Hand of Justice](https://www.wowhead.com/forever/item=11815), [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437) | [Demon's Blood](https://www.wowhead.com/forever/item=10779), [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437) |
 
 ---
-*Generated by `_reference/data/render_tier_list.py` on 2026-10-16 from the pages' own picks and numbers (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_tier_list.py` on 2026-10-22 from the pages' own picks and numbers (client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
 

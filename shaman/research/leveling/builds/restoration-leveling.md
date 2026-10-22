@@ -11,7 +11,7 @@
 
 ## Summary
 
-Level with the talents of the Restoration raid build (resto-raid-healer) so you arrive at 60 ready to heal; the order is the fastest of three the fight lab raced (stats model's order: 45 s per kill over levels 20-60, the enhancement-dps rotation).
+Level with the talents of the Restoration raid build (resto-raid-healer) so you arrive at 60 ready to heal; the order is the fastest of three the fight lab raced (stats model's order: 44 s per kill over levels 20-60, the enhancement-dps rotation).
 
 ## Point allocation
 
@@ -23,19 +23,19 @@ Level with the talents of the Restoration raid build (resto-raid-healer) so you 
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Ancestral Knowledge** | 5/5 | changed | Increases your Intellect by 10%. |
 | **Thundering Strikes** | 5/5 | changed | Improves your chance to get a critical strike with all spells and attacks by 5%. |
+| **Ancestral Knowledge** | 5/5 | changed | Increases your Intellect by 10%. |
 
 ### Restoration (41)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Tidal Focus** | 5/5 | changed | Reduces the Mana cost of your healing spells by 5% and improves your chance to hit by 5%. |
-| **Mindfulness** | 3/3 | **NEW** | Allows 50% of your Mana regeneration to continue while casting. |
 | **Totemic Focus** | 5/5 | changed | Reduces the Mana cost of your totems and any spells that summon or move them by 25%. |
+| **Mindfulness** | 3/3 | **NEW** | Allows 50% of your Mana regeneration to continue while casting. |
+| **Tidal Focus** | 5/5 | changed | Reduces the Mana cost of your healing spells by 5% and improves your chance to hit by 5%. |
+| **Water Shield** | 1/1 | **NEW** | The caster is surrounded by 3 globes of water. When a spell, melee, or ranged attack hits the caster or when one of the caster's spells gets a critical result, 2% of maximum mana is restored to the caster, expending one water globe. Only one globe will activate every few seconds. Lasts 10 min.  Only one Elemental Shield can be active on the Shaman at any one time. |
 | **Ancestral Healing** | 3/3 | moved | Increases your target's armor value by 25% for 15 sec after getting a critical effect from one of your healing spells. |
 | **Healing Focus** | 3/3 | changed | Gives you a 70% chance to avoid interruption caused by damage while casting any healing spell. |
-| **Water Shield** | 1/1 | **NEW** | The caster is surrounded by 3 globes of water. When a spell, melee, or ranged attack hits the caster or when one of the caster's spells gets a critical result, 2% of maximum mana is restored to the caster, expending one water globe. Only one globe will activate every few seconds. Lasts 10 min.  Only one Elemental Shield can be active on the Shaman at any one time. |
 | **Mana Tide Totem** | 1/1 | changed | Summons a Mana Tide Totem with 5 health at the feet of the caster for 12 sec that restores 88 mana every 3 seconds to group members within 30 yards. |
 | **Restorative Totems** | 5/5 | changed | Increases the effect of your Mana Spring Totem by 25% and increases the effect of your Healing Stream Totem by 50%. |
 | **Tidal Mastery** | 5/5 | changed | Increases the critical effect chance of your healing spells by 5%. |
@@ -43,6 +43,28 @@ Level with the talents of the Restoration raid build (resto-raid-healer) so you 
 | **Nature's Swiftness** | 1/1 | unchanged | When activated, your next Nature spell with a casting time less than 10 sec. becomes an instant cast spell. |
 | **Purification** | 5/5 | unchanged | Increases the effectiveness of your healing spells by 10%. |
 | **Riptide** | 1/1 | **NEW** | Heals a friendly target for 485 to 533, an additional 445 over 15 sec, and increases the effectiveness of your Chain Heal casts directly on that target by 25%. |
+
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Restoration | Tidal Focus | 5 | 0/0/5 |
+| 15-17 | Restoration | Mindfulness | 3 | 0/0/8 |
+| 18-22 | Enhancement | Thundering Strikes | 5 | 0/5/8 |
+| 23-27 | Restoration | Totemic Focus | 5 | 0/5/13 |
+| 28 | Restoration | Water Shield | 1 | 0/5/14 |
+| 29 | Restoration | Ancestral Healing | 1 | 0/5/15 |
+| 30 | Restoration | Mana Tide Totem | 1 | 0/5/16 |
+| 31-34 | Restoration | Restorative Totems | 4 | 0/5/20 |
+| 35 | Restoration | Nature's Swiftness | 1 | 0/5/21 |
+| 36 | Restoration | Restorative Totems | 1 | 0/5/22 |
+| 37-41 | Enhancement | Ancestral Knowledge | 5 | 0/10/22 |
+| 42-43 | Restoration | Ancestral Healing | 2 | 0/10/24 |
+| 44-46 | Restoration | Healing Focus | 3 | 0/10/27 |
+| 47-51 | Restoration | Tidal Mastery | 5 | 0/10/32 |
+| 52-54 | Restoration | Healing Way | 3 | 0/10/35 |
+| 55-59 | Restoration | Purification | 5 | 0/10/40 |
+| 60 | Restoration | Riptide | 1 | 0/10/41 |
 
 ## Core talents (priority order)
 
@@ -61,9 +83,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- 2026-10-15 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 45 s; own tree first 46 s; own tree last 45 s. First Restoration point at level 10.
+- 2026-10-22 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 44 s; own tree first 45 s; own tree last 44 s. First Restoration point at level 10.
 - Fight-lab numbers are a model of the beta, not in-game measurements.
-- 2026-10-16 (repair_builds.py, client build 70425 trees): 0/10/41 -> 0/10/41; order dropped (order_repair.py) (refill: the enhancement-dps model, leveling-st).
 
 ## Open questions (verify in the live game)
 

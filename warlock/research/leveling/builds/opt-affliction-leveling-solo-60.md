@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `affliction-leveling` and profile `solo-60`: score +26.3% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `affliction-leveling` and profile `solo-60`: score +29.7% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -19,43 +19,73 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `afflicti
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Corruption** | 5/5 | changed | Reduces the casting time of your Corruption spell by 2 sec and increases the damage it deals by 10%. |
+| **Improved Life Tap** | 2/2 | moved | Increases the amount of Mana awarded by your Life Tap spell by 20%. |
 | **Suppression** | 5/5 | changed | Improves your chance to hit by 5% and reduces all threat you generate by 20%. |
+| **Improved Corruption** | 5/5 | changed | Reduces the casting time of your Corruption spell by 2 sec and increases the damage it deals by 10%. |
 | **Amplify Curse** | 1/1 | changed | Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 50%. Lasts 30 sec. |
-| **Improved Bane of Agony** | 2/2 | **NEW** | Increases the damage done by your Bane of Agony by 10%. |
 | **Pandemic** | 3/3 | **NEW** | Increases the critical strike damage bonus of your Corruption, Bane of Agony, Bane of Doom, Drain Soul, Drain Life, Siphon Life, and Wrack spells by 100%. |
+| **Improved Bane of Agony** | 2/2 | **NEW** | Increases the damage done by your Bane of Agony by 10%. |
 | **Malevolence** | 5/5 | **NEW** | Increases the critical effect chance of your Shadow spells by 5%. |
 | **Siphon Life** | 1/1 | changed | Transfers 11 health from the target to the caster every 3 sec. Lasts 30 sec. |
-| **Soul Siphon** | 3/3 | **NEW** | Increases the damage done or health drained by your Drain Life, Drain Soul, and Wrack spells by 12% per each of your other Affliction effects active on the target, up to a maximum increase of 36%. |
+| **Soul Siphon** | 1/3 | **NEW** | Increases the damage done or health drained by your Drain Life, Drain Soul, and Wrack spells by 4% per each of your other Affliction effects active on the target, up to a maximum increase of 12%. |
 | **Shadow Mastery** | 2/5 | changed | Increases the damage dealt or life drained by your Shadow spells by 4%. |
 
 ### Demonology (24)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Demonic Embrace** | 5/5 | changed | Increases your total Stamina by 15%. |
-| **Improved Imp** | 3/3 | changed | Increases the damage of your Imp's Firebolt spell by 30% and the effect of its Fire Shield spell by 30%. |
 | **Unholy Power** | 5/5 | changed | Increases all damage done by your Imp, Voidwalker, Succubus, Incubus, and Felhunter pets by 10%. |
-| **Demonic Aegis** | 2/2 | **NEW** | Increases the effectiveness of your Demon Skin and Demon Armor spells by 30%. |
-| **Fel Vitality** | 1/3 | **NEW** | Increases the maximum health and Mana of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 5%, and increases your maximum Mana by 5%. |
+| **Improved Imp** | 3/3 | changed | Increases the damage of your Imp's Firebolt spell by 30% and the effect of its Fire Shield spell by 30%. |
+| **Demonic Embrace** | 4/5 | changed | Increases your total Stamina by 12%. |
 | **Improved Voidwalker** | 3/3 | unchanged | Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice, and Suffering spells by 30%. |
+| **Demonic Energies** | 2/2 | **NEW** | You heal your pet for 15% of all spell damage you deal. When you gain Mana from Life Tap, your summoned demon gains 100% of the Mana you gain. |
 | **Demonic Sacrifice** | 1/1 | changed | When activated, sacrifices your summoned Demon to enhance the opposing aspect of your power, granting you an effect that lasts 2 hrs. The effect is canceled if any Demon is summoned.  Imp: Increases your Shadow damage by 15%.  Voidwalker: Restores 2% of your total Mana every 4 sec.  Succubus/Incubus: Increases your Fire damage by 15%.  Felhunter: Restores 3% of your total Health every 4 sec. |
-| **Demonic Knowledge** | 3/3 | **NEW** | Increases your spell damage and your Demon pet's spell damage by up to 100% of your level while you have a summoned Demon pet active. |
+| **Decimation** | 2/2 | **NEW** | Reduces the cooldown of your Soul Fire spell by 90%. When you cast Shadow Bolt or Searing Pain on an enemy below 35% health, they deal 6% increased damage, and for the next 10 sec your Soul Fire spell has its cast time reduced by 40% and costs no Soul Shards. |
 | **Soul Link** | 1/1 | changed | When active, 30% of all damage taken by the caster is taken by your Imp, Voidwalker, Succubus, Incubus, or Felhunter Demon instead. In addition, both the Demon and the master will inflict 3% more damage. Lasts as long as the Demon is active. |
+| **Demonic Knowledge** | 3/3 | **NEW** | Increases your spell damage and your Demon pet's spell damage by up to 100% of your level while you have a summoned Demon pet active. |
 
 ### Destruction (0)
 
 *No points.*
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-11 | Affliction | Improved Life Tap | 2 | 2/0/0 |
+| 12-16 | Affliction | Suppression | 5 | 7/0/0 |
+| 17-19 | Affliction | Improved Corruption | 3 | 10/0/0 |
+| 20 | Affliction | Amplify Curse | 1 | 11/0/0 |
+| 21-23 | Affliction | Pandemic | 3 | 14/0/0 |
+| 24-25 | Affliction | Improved Bane of Agony | 2 | 16/0/0 |
+| 26-27 | Affliction | Improved Corruption | 2 | 18/0/0 |
+| 28-29 | Affliction | Malevolence | 2 | 20/0/0 |
+| 30 | Affliction | Siphon Life | 1 | 21/0/0 |
+| 31-33 | Affliction | Malevolence | 3 | 24/0/0 |
+| 34 | Affliction | Soul Siphon | 1 | 25/0/0 |
+| 35-36 | Affliction | Shadow Mastery | 2 | 27/0/0 |
+| 37-41 | Demonology | Unholy Power | 5 | 27/5/0 |
+| 42 | Demonology | Demonic Energies | 1 | 27/6/0 |
+| 43-45 | Demonology | Improved Voidwalker | 3 | 27/9/0 |
+| 46 | Demonology | Demonic Energies | 1 | 27/10/0 |
+| 47 | Demonology | Demonic Sacrifice | 1 | 27/11/0 |
+| 48-50 | Demonology | Improved Imp | 3 | 27/14/0 |
+| 51 | Demonology | Demonic Embrace | 1 | 27/15/0 |
+| 52-53 | Demonology | Decimation | 2 | 27/17/0 |
+| 54-56 | Demonology | Demonic Embrace | 3 | 27/20/0 |
+| 57 | Demonology | Soul Link | 1 | 27/21/0 |
+| 58-60 | Demonology | Demonic Knowledge | 3 | 27/24/0 |
+
 ## Core talents (priority order)
 
-1. **Siphon Life** — Removing it costs 7.7 points of score in this model.
-2. **Demonic Knowledge** — Removing it costs 3.5 points of score in this model.
-3. **Pandemic** — Removing it costs 2.8 points of score in this model.
-4. **Improved Corruption** — Removing it costs 1.6 points of score in this model.
-5. **Soul Link** — Removing it costs 1.6 points of score in this model.
-6. **Suppression** — Removing it costs 1.2 points of score in this model.
-7. **Unholy Power** — Removing it costs 1.0 points of score in this model.
+1. **Siphon Life** — Removing it costs 5.0 points of score in this model.
+2. **Demonic Knowledge** — Removing it costs 3.7 points of score in this model.
+3. **Suppression** — Removing it costs 2.9 points of score in this model.
+4. **Pandemic** — Removing it costs 2.2 points of score in this model.
+5. **Improved Corruption** — Removing it costs 1.8 points of score in this model.
+6. **Soul Link** — Removing it costs 1.7 points of score in this model.
+7. **Improved Life Tap** — Removing it costs 1.7 points of score in this model.
+8. **Malevolence** — Removing it costs 1.6 points of score in this model.
 
 ## Leveling rotation
 
@@ -64,8 +94,6 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Notes
 
 - Report: warlock/research/talents/forever/optimizer/affliction-leveling-solo-60.md
-- 2026-10-16 (repair_builds.py, client build 70425 trees): 27/24/0 -> 27/24/0; Malediction 5 gone; +1 Malevolence (tier gating for Siphon Life); +1 Malevolence (tier gating for Shadow Mastery); +1 Soul Siphon (tier gating for Shadow Mastery); +1 Soul Siphon (tier gating for Shadow Mastery); +1 Soul Siphon (tier gating for Shadow Mastery); order dropped (order_repair.py) (refill: the affliction-leveling model, solo-60).
-- 2026-10-17 (audit of 2026-10-17, finding 26): core Malediction dropped (not in the allocation; Malediction was replaced by Grim Reach in 70425).
 
 ## Open questions (verify in the live game)
 

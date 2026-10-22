@@ -34,11 +34,11 @@
     "plan": "Retribution levels with one seal: **Seal of Command** before each pull, **Judgement** and **Holy Strike** on cooldown, and your mana kept for judgements and heals instead of **Consecration**.",
     "why": [
      "**Seal of Command** goes up before each pull (from level 20; **Seal of Righteousness** before that) and lasts 30 seconds, longer than most fights. It adds a Holy hit of 70% of your weapon damage about 7 times a minute, so a slow two-hander suits it; this build has no **Twist of Light**, so there is no seal swapping while leveling.",
-     "**Judgement** and **Holy Strike** whenever ready: **Judgement** is off the global cooldown and comes back every 8 seconds with **Improved Judgement**, and **Sanctified Judgement** (levels 21 to 23) returns 60% of your seal's mana cost each time. The open search found **Sanctified Judgement** the most valuable talent of this build at 60, for the drinking it saves.",
-     "**Consecration** is for two or more mobs. Against a single mob the fight lab's tuned rotation (re-tuned 2026-10-15) never casts it and kills about 11% faster that way: its mana costs more drinking than its damage saves.",
+     "**Judgement** and **Holy Strike** whenever ready: **Judgement** is off the global cooldown and comes back every 8 seconds with both points of **Improved Judgement** (levels 24 and 26), and **Sanctified Judgement** (levels 21 to 23) returns 60% of your seal's mana cost each time. The open search found **Sanctified Judgement** the most valuable talent of this build at 60 (about 3.3 seconds per kill), for the drinking it saves; **Conviction** (15-19) comes next.",
+     "**Consecration** is for two or more mobs. Against a single mob the fight lab's tuned rotation (re-tuned 2026-10-19) never casts it and kills about 5% faster that way: its mana costs more drinking than its damage saves.",
      "**Hammer of Justice** doubles **Seal of Command**'s judgement: against a stunned mob it hits for 339 to 373 instead of 169 to 187 at rank 5. When both are ready and the mob has more than 30% health left, stun first, then judge; otherwise keep the stun for a caster or for when you are hurt.",
      "**Hammer of Wrath** finishes mobs below 20% health from level 44, and it is instant once you have 2 points in **Instrument of Law** (levels 35 and 36).",
-     "Below about a third of your health, while the mob still has a quarter of its own: **Divine Protection** (8 seconds immune, but you cannot attack) with **Holy Light** inside it, or **Hammer of Justice** and heal during the stun; **Flash of Light** below a quarter, **Lay on Hands** below 15%. Between fights heal back to 80%; the tuned rotation drinks only below 15% of your mana."
+     "Below about a third of your health, while the mob still has a quarter of its own: **Divine Protection** (8 seconds immune, but you cannot attack) with **Holy Light** inside it, or **Hammer of Justice** and heal during the stun; **Flash of Light** below a quarter, **Lay on Hands** below 15%. Against same-level mobs the fight lab almost never needed these. Between fights heal back to 80%; the tuned rotation drinks only below 15% of your mana."
     ],
     "caveats": [
      "Several mobs: **Consecration** hits all of them and its bonus damage goes to the first four in it, so it earns its mana there. The fight lab's three-mob runs still played without it, so the gain is unmeasured.",
@@ -49,11 +49,11 @@
      "A mob that runs at low health: **Hammer of Wrath** (30 yards) finishes it, or **Hammer of Justice** holds it."
     ],
     "rotations": {
-     "leveling:ret-dps": "d2c387bf1a8d",
-     "leveling:holy-leveling": "1f803e2dfeb5",
+     "leveling:ret-dps": "9fb99f015b4f",
+     "leveling:holy-leveling": "4424390dd321",
      "leveling:prot-leveling": "b67ce1361aef"
     },
-    "written": "2026-10-15"
+    "written": "2026-10-22"
    }
   },
   "Protection": {
@@ -83,18 +83,18 @@
     "written": "2026-10-15"
    },
    "leveling": {
-    "plan": "Protection levels with the raid tank build behind a shield: **Seal of Fury** turns half of its Holy damage into an absorb, blocks and judgements pay your mana back, and **Judgement**, **Holy Strike** and **Consecration** do the damage, so you rarely stop to eat. The order takes Protection first (levels 10-41) and the Retribution points last (42-60).",
+    "plan": "Protection levels behind a shield: **Seal of Fury** turns half of its Holy damage into an absorb, blocks and judgements pay your mana back, and **Judgement**, **Holy Strike** and **Consecration** do the damage, so you rarely stop to eat. The order takes Retribution's mana talents first (levels 10-25) and Protection from 26, with **Holy Shield** last at 60.",
     "why": [
-     "**Seal of Fury** before each pull: at rank 7 it adds 35 Holy damage to every swing, and with a shield each swing also gives you an absorb of half that damage; **Improved Seal of Fury** (level 24) returns 60 mana each time such a shield is used up, and **Shield Specialization** (20-22) 4% of your mana on a block, once every 3 seconds.",
-     "Keep **Righteous Fury** up even alone: its threat does nothing solo, but **Improved Righteous Fury** (6% less damage taken at 3 points, levels 28-31) and **Iron Creed** (36-40: **Holy Strike** cuts your damage taken by 10% for 6 seconds) only work while it is on; the fight lab assumes it always up.",
-     "**Holy Shield** (level 41) whenever it is down: 30% more block for 10 seconds or 4 blocks, and each block deals Holy damage. In the open leveling search it was the most valuable talent of a Protection leveling build at 60.",
-     "**Judgement** and **Holy Strike** whenever ready, with **Swift Judgement** (level 25) right after a **Judgement**: it finishes the cooldown and makes the next one free. **Sanctified Judgement** comes late in this order (52-54) and then returns 60% of your seal's mana cost each time you judge.",
-     "**Consecration** only while your mana is above 60% and the mob has more than 30% health, a hand-set rule the fight lab plays (no search has tuned this rotation); **Holy Conduit** (47-48) makes it and **Hammer of Wrath** 40% cheaper. **Hammer of Wrath** finishes mobs below 20% health from level 44.",
-     "Below about a third of your health: **Templar's Bulwark** first (level 30; an absorb as large as your health for 8 seconds), then **Holy Light** behind it. Otherwise the fight lab casts **Holy Light** only while the mob cannot hurt you: during **Divine Protection** (below 30%) or while **Hammer of Justice** holds it; **Lay on Hands** below 15%."
+     "**Seal of Fury** before each pull: at rank 7 it adds 35 Holy damage to every swing, and with a shield each swing also gives you an absorb of half that damage. **Shield Specialization** (levels 37-39) returns 4% of your mana on a block, once every 3 seconds, and **Improved Seal of Fury** (40) 60 mana each time such a shield is used up; the open search values them at about 2 seconds per kill each at 60.",
+     "**Judgement** and **Holy Strike** whenever ready, with **Swift Judgement** (level 41) right after a **Judgement**: it finishes the cooldown and makes the next one free. **Sanctified Judgement** (20-22) returns 60% of your seal's mana cost each time you judge: the open search found it the build's most valuable talent at 60 (about 3 seconds per kill), ahead of **Holy Shield** and **Holy Conduit**.",
+     "**Holy Shield** (level 60) whenever it is down: 30% more block for 10 seconds or 4 blocks, and each block deals Holy damage; about 2.8 seconds per kill at 60.",
+     "**Consecration** only while your mana is above 60% and the mob has more than 30% health, a hand-set rule the fight lab plays (no search has tuned this rotation); **Holy Conduit** (levels 19 and 23) makes it and **Hammer of Wrath** 40% cheaper. **Hammer of Wrath** finishes mobs below 20% health from level 44.",
+     "Keep **Righteous Fury** up even alone: **Improved Righteous Fury** (level 45) and **Iron Creed** (55-59: **Holy Strike** cuts your damage taken for 6 seconds) only work while it is on. Against same-level mobs the fight lab finds both worth almost nothing per kill; they are there for the tank build.",
+     "Below about a third of your health: **Templar's Bulwark** first (level 47; an absorb as large as your health for 8 seconds), then **Holy Light** behind it. Otherwise the fight lab casts **Holy Light** only while the mob cannot hurt you: during **Divine Protection** (below 30%) or while **Hammer of Justice** holds it; **Lay on Hands** below 15%. Drink below 15% of your mana."
     ],
     "caveats": [
-     "Before level 41 skip the **Holy Shield** line, and before 30 the **Templar's Bulwark** one: the order takes them there.",
-     "This order spends levels 10-19 on defensive talents (**Redoubt**, **Precision**, **Anticipation**), so early kills are slow: about 33 seconds at level 20 against 28 at 30.",
+     "Before level 60 skip the **Holy Shield** line, and before 47 the **Templar's Bulwark** one: the order takes them there.",
+     "Until about level 50 the build is a one-handed paladin with a shield and Retribution's mana talents; **Reckoning** (50-54), **Iron Creed** and **Holy Shield** come last. It kills about 10% slower than the Retribution page over levels 20-60, most of it at 20 and 30.",
      "**Templar's Bulwark** applies Forbearance for a minute, so **Divine Protection** is not available right after it.",
      "Undead and Demons: **Exorcism** (instant, 15-second cooldown, 40% cheaper with **Holy Conduit**) hits them hard. The fight lab has no such mobs, so it was not measured."
     ],
@@ -104,11 +104,11 @@
      "Tanking a dungeon on the way: **Seal of Fury**'s judgement taunts for 4 seconds, and **Righteous Fury** makes your Holy damage 90% more threat."
     ],
     "rotations": {
-     "leveling:ret-dps": "d2c387bf1a8d",
-     "leveling:holy-leveling": "1f803e2dfeb5",
+     "leveling:ret-dps": "9fb99f015b4f",
+     "leveling:holy-leveling": "4424390dd321",
      "leveling:prot-leveling": "b67ce1361aef"
     },
-    "written": "2026-10-15"
+    "written": "2026-10-22"
    }
   },
   "Holy": {
@@ -118,36 +118,35 @@
      "Keep **Blessing of Light** on the tank: it adds up to 400 to each **Holy Light** and 115 to each **Flash of Light** he receives. Start a **Holy Light** when he is missing at least half of one and more hits are coming; in the healer lab the two spells do almost all your healing.",
      "Downrank: cast the smallest rank that heals about what the target is missing. Forever gives ranks far below your level less of your +healing (TBC's rule, our assumption): **Holy Light** ranks 7 to 9 and **Flash of Light** ranks 5 and 6 lose nothing or almost nothing, while rank 6 **Holy Light** keeps 85% of the bonus and lower ranks less, so stay near the top.",
      "**Flash of Light** is your raid heal and your emergency heal: the lab heals other raid members once they fall below half health, and anyone under a quarter of their health gets a **Flash of Light** first.",
-     "**Divine Favor** (2-minute cooldown) goes before a top-rank **Holy Light** on a tank who is missing most of one: a sure critical heal, which **Illumination** then refunds.",
+     "**Divine Favor** (2-minute cooldown) goes before a top-rank **Holy Light** on a tank who is missing most of one: a sure critical heal, which **Illumination** then refunds. **Infusion of Light** (one point) makes your next **Holy Light** within 15 seconds half a second faster after a critical **Flash of Light**.",
      "Mana: **Illumination** returns half the base cost of each critical **Holy Light** or **Flash of Light**, **Holy Power** adds 5% crit to your heals, **Healing Light** 12% healing, and **Reverence** keeps 30% of your mana regeneration going while you cast. Drink a mana potion as soon as you are below 80% mana (after the first 45 seconds).",
      "**Lay on Hands** is for a tank about to die (the lab uses it under 20% health): it heals him for your maximum health but drains all your mana, and its 20-minute cooldown makes it once a fight."
     ],
     "caveats": [
      "The healer lab is this project's model of stated assumptions: one tank under boss melee and four raid members under raid damage for five minutes, with no dispels and no spell pushback. Check its numbers at launch.",
-     "The deep search's winner takes neither **Holy Shock** nor **Light's Vigil**: the healer lab measured more capacity without them. The build therefore has no group heal; **Flash of Light** on the lowest member is your answer to raid damage.",
-     "**Spiritual Focus** keeps 70% of your **Holy Light** and **Flash of Light** casts from being pushed back; the lab has no pushback, so its value there is unmeasured."
+     "The deep search's winner (re-run 2026-10-21, about 2% more capacity than the hand draft) takes neither **Holy Shock** nor **Light's Vigil**: the healer lab measured more capacity without them. The build therefore has no group heal; **Flash of Light** on the lowest member is your answer to raid damage.",
+     "**Spiritual Focus** (one point) keeps 35% of your **Holy Light** and **Flash of Light** casts from being pushed back; the lab has no pushback, so its value there is unmeasured."
     ],
     "diverge": [
      "When a whole party is taking damage, heal the lowest member with **Flash of Light**; you have no group heal in this build.",
      "**Cleanse** a harmful magic, poison or disease effect when it would cost more healing than the cast; the lab has no debuffs, so when is your call."
     ],
     "rotations": {
-     "healer-policy": "0b517166c0ec"
+     "healer-policy": "7cf1636a5c1f"
     },
-    "written": "2026-10-15"
+    "written": "2026-10-22"
    },
    "leveling": {
-    "plan": "Holy levels with the raid healer build as a two-handed **Seal of Righteousness** paladin who heals itself: **Judgement** and **Holy Strike** for damage, heals in the fight when you are low. It is the slowest paladin leveling page; Retribution and Shockadin kill about a quarter faster.",
+    "plan": "Holy levels with the raid healer build as a two-handed **Seal of Righteousness** paladin who heals itself: **Judgement** and **Holy Strike** for damage, heals in the fight when you are low. It is the slowest paladin leveling page; Retribution and Shockadin take about a quarter less time per kill.",
     "why": [
      "**Blessing of Wisdom** instead of **Blessing of Might**: the fight lab found the blessings within about 2% of each other for Holy, and Wisdom's mana keeps coming while you fight and cast. **Seal of Righteousness** is your only damage seal: this build has no **Seal of Command**.",
      "**Judgement** and **Holy Strike** whenever ready; **Holy Power** (levels 35-39) adds 15% crit to **Holy Strike**. This build takes neither **Improved Judgement** nor **Sanctified Judgement**, so each judgement costs its full price.",
-     "Heal in the fight once you drop below 40% health and the mob has more than a fifth left: **Divine Protection** below 30%, **Hammer of Justice**, then **Holy Light**; **Divine Favor** (level 42) makes that heal a sure crit. **Illumination** (25-29) returns half the base cost of each critical heal, and **Spiritual Focus** (40-41) keeps 70% of your heals from being pushed back.",
-     "Not on the list: **Consecration** and **Hammer of Wrath**. The Holy rotation never casts **Consecration** (its mana buys more as heals and less drinking), and its tuned rules (2026-10-15) skip **Hammer of Wrath** for about 3% faster kills.",
+     "Heal in the fight once you drop below 40% health and the mob has more than a fifth left: **Divine Protection** below 30%, **Hammer of Justice**, then **Holy Light**; **Divine Favor** (level 42) makes that heal a sure crit. **Illumination** (25-29) returns half the base cost of each critical heal, **Infusion of Light** (41) makes the next **Holy Light** half a second faster after a critical **Flash of Light**, and **Spiritual Focus** (40, one point) keeps 35% of your heals from being pushed back. Against same-level mobs the fight lab almost never needed these heals.",
+     "Not on the list: **Consecration** and **Hammer of Wrath**. The Holy rotation never casts **Consecration** (its mana buys more as heals and less drinking), and its tuned rules (re-tuned 2026-10-19) skip **Hammer of Wrath** for about 3% faster kills.",
      "Drink below a quarter of your mana; between fights heal back to 80% with **Holy Light** or **Flash of Light**."
     ],
     "caveats": [
-     "This build takes no **Holy Shock**: skip the list's **Holy Shock** lines.",
-     "**Consecrated Ground** (level 43) only helps Holy spells against mobs in your **Consecration**, which this rotation never casts: it is there for the raid build.",
+     "This build takes no **Holy Shock**: skip the list's **Holy Shock** lines. It has no **Seal of Command** either, so skip the stun-then-judge line.",
      "Undead and Demons: **Exorcism** and **Holy Wrath** come back a third faster with **Purifying Power** (levels 23-24), so use **Exorcism** on cooldown against them. The fight lab has no such mobs, so this is unmeasured."
     ],
     "diverge": [
@@ -155,62 +154,60 @@
      "If you only want to reach 60, level as Retribution or Shockadin and respec: their pages kill about a quarter faster per mob."
     ],
     "rotations": {
-     "leveling:ret-dps": "d2c387bf1a8d",
-     "leveling:holy-leveling": "1f803e2dfeb5",
+     "leveling:ret-dps": "9fb99f015b4f",
+     "leveling:holy-leveling": "4424390dd321",
      "leveling:prot-leveling": "b67ce1361aef"
     },
-    "written": "2026-10-15"
+    "written": "2026-10-22"
    }
   },
   "Hybrid Protection/Retribution": {
    "leveling": {
-    "plan": "Prot-Ret plays like Protection (a one-hander, a shield and **Seal of Fury**) but spends its deeper points on Retribution's crit, **Vengeance** and cheaper Holy spells. Blocks and used-up **Seal of Fury** shields pay for **Consecration**.",
+    "plan": "The Prot-Ret leveling build is the stats model's pick for solo play at 60: a two-handed Retribution paladin (**Seal of Command**, **Judgement**, **Holy Strike**) whose last 16 points (levels 45-60) go into Protection. It plays the Retribution list; the fight lab has not raced it.",
     "why": [
-     "**Seal of Fury** before each pull: 35 Holy damage on every swing at rank 7 and, with a shield, an absorb of half of it. **Improved Seal of Fury** returns 60 mana each time that absorb is used up and **Shield Specialization** 4% of your mana on a block (once every 3 seconds); the open search found **Improved Seal of Fury** worth about 3 seconds per kill at 60.",
-     "**Judgement** and **Holy Strike** whenever ready, with **Swift Judgement** right after a **Judgement** for a free second one. **Sanctified Judgement** returns 60% of your seal's mana cost each time you judge, and **Sacred Arbiter** adds 20% to **Holy Strike**.",
-     "**Consecration** while your mana is above 60%: **Holy Conduit** makes it 40% cheaper, and the open search found **Holy Conduit** the most valuable talent of this build at 60 (about 3.3 seconds per kill).",
-     "**Hammer of Wrath** finishes mobs below 20% health from level 44; 1 point in **Instrument of Law** cuts its cast by half a second.",
-     "Low on health: this build has no **Templar's Bulwark**, so use **Divine Protection** below 30% or a **Hammer of Justice** stun and cast **Holy Light** while the mob cannot hit you; **Flash of Light** below a quarter, **Lay on Hands** below 15%."
+     "Levels 10-44 are a Retribution leveling build: **Benediction** (10-14), **Conviction** (15-19), **Seal of Command** (20), **Sanctified Judgement** (21-22 and 26), **Improved Judgement** (27-28), **Vengeance** (30-32), **Instrument of Law** (35-36), then **Divine Strength** and **Improved Seals** from Holy. Play it like the Retribution page: **Seal of Command** before each pull, **Judgement** and **Holy Strike** on cooldown, **Hammer of Justice** before a **Judgement** on a mob above 30% health.",
+     "No **Consecration** against a single mob: the Retribution list's tuned rules never cast it (about 5% faster kills).",
+     "**Hammer of Wrath** below 20% health from level 44, instant with **Instrument of Law**. Drink below 15% of your mana."
     ],
     "caveats": [
-     "**Holy Shield** and **Templar's Bulwark** are not in this build: skip their lines.",
-     "The order spends levels 10 to 31 in Protection, starting with defensive talents (**Redoubt**, **Anticipation**, **Shield Specialization**), so early kills are slow: about 33 seconds at level 20 against 27 at 30.",
-     "Undead and Demons: **Exorcism** (40% cheaper with **Holy Conduit**) hits them hard; the fight lab has no such mobs, so it was not measured."
+     "The Protection points (**Redoubt**, **Shield Specialization**, **Improved Seal of Fury**, **Swift Judgement**) need a shield, **Seal of Fury** or the Protection list: with a two-hander in the Retribution list they do nothing, and the fight lab plays them that way. The Retribution page's build is the measured one.",
+     "Undead and Demons: **Exorcism** hits them hard; the fight lab has no such mobs, so it was not measured."
     ],
     "diverge": [
      "A mob that casts spells: **Hammer of Justice** stops the cast.",
-     "Two or more mobs: **Consecration** hits them all; the 60% mana rule was set for single mobs."
+     "Two or more mobs: **Consecration** hits them all; the single-target rule does not apply there.",
+     "If you carry a shield and **Seal of Fury** instead, play the Protection page's list: that is what these points are for."
     ],
     "rotations": {
-     "leveling:ret-dps": "d2c387bf1a8d",
-     "leveling:holy-leveling": "1f803e2dfeb5",
+     "leveling:ret-dps": "9fb99f015b4f",
+     "leveling:holy-leveling": "4424390dd321",
      "leveling:prot-leveling": "b67ce1361aef"
     },
-    "written": "2026-10-09"
+    "written": "2026-10-22"
    }
   },
   "Hybrid Holy/Retribution": {
    "leveling": {
-    "plan": "The Shockadin leveling build is a two-handed Retribution paladin with Holy's **Improved Seals** and **Divine Strength**; despite the name it takes no **Holy Shock**. It plays the Holy leveling list, so **Blessing of Wisdom**, no **Consecration**, and from level 20 **Seal of Command** as your seal.",
+    "plan": "The Shockadin leveling build is a two-handed Retribution paladin with Holy's **Improved Seals** and **Divine Strength**; despite the name it takes no **Holy Shock**. It plays the Holy leveling list, so **Blessing of Wisdom**, no **Consecration**, and from level 20 **Seal of Command** as your seal. Over levels 20-60 it is the fastest paladin leveling build in the fight lab, about level with Retribution.",
     "why": [
      "The fight lab's Holy list uses **Seal of Command** once you have it (level 20; **Seal of Righteousness** before): it adds a Holy hit of 70% of your weapon damage on some swings, so a slow two-hander suits it, and its judgement hits a stunned mob twice as hard. When **Hammer of Justice** and **Judgement** are both ready and the mob has more than 30% health, stun first, then judge.",
-     "**Judgement** and **Holy Strike** whenever ready: **Improved Judgement** (levels 15-16) brings **Judgement** back every 8 seconds, and **Sanctified Judgement** (21-23) returns 60% of your seal's mana cost each time. In the open search it is the build's most valuable talent at 60 (about 3 seconds per kill), ahead of **Improved Seals** (38-40) and **Two-Handed Weapon Specialization** (30-32).",
-     "No **Consecration** and no **Hammer of Wrath**: the Holy list never casts **Consecration**, and its tuned rules (2026-10-15) skip **Hammer of Wrath** (about 3% faster kills).",
-     "Heal in the fight once you drop below 40% health and the mob has more than a fifth left: **Divine Protection** below 30%, **Hammer of Justice**, then **Holy Light**; **Flash of Light** below a quarter, **Lay on Hands** below 15%."
+     "**Judgement** and **Holy Strike** whenever ready: **Sanctified Judgement** (levels 21-23) returns 60% of your seal's mana cost each time, and **Improved Judgement** (24 and 34) brings **Judgement** back every 8 seconds. In the open search **Sanctified Judgement** is the build's most valuable talent at 60 (about 3.5 seconds per kill), ahead of **Conviction** (15-19) and **Improved Seals** (31-33).",
+     "No **Consecration** and no **Hammer of Wrath**: the Holy list never casts **Consecration**, and its tuned rules (re-tuned 2026-10-19 on this build) skip **Hammer of Wrath**, which has a cast time without **Instrument of Law** (about 3% faster kills).",
+     "Heal in the fight once you drop below 40% health and the mob has more than a fifth left: **Divine Protection** below 30%, **Hammer of Justice**, then **Holy Light**; **Flash of Light** below a quarter, **Lay on Hands** below 15%. Against same-level mobs the fight lab almost never needed them."
     ],
     "caveats": [
      "This build takes neither **Holy Shock** nor **Divine Favor**: skip those lines.",
-     "Drink below a quarter of your mana (the Holy list's rule); between fights heal back to 80% with **Holy Light** or **Flash of Light**.",
+     "Drink below a quarter of your mana (the Holy list's rule); between fights heal back to 80% with **Holy Light** or **Flash of Light**. **Sanctified Judgement** keeps the drinking close to none.",
      "Undead and Demons: **Exorcism** hits them hard; the fight lab has no such mobs, so it was not measured."
     ],
     "diverge": [
      "A mob that casts spells: **Hammer of Justice** stops the cast.",
      "Two or more mobs: **Consecration** hits them all; the Holy list was not measured on several mobs with this build."
     ],
-    "written": "2026-10-15",
+    "written": "2026-10-22",
     "rotations": {
-     "leveling:ret-dps": "d2c387bf1a8d",
-     "leveling:holy-leveling": "1f803e2dfeb5",
+     "leveling:ret-dps": "9fb99f015b4f",
+     "leveling:holy-leveling": "4424390dd321",
      "leveling:prot-leveling": "b67ce1361aef"
     }
    }

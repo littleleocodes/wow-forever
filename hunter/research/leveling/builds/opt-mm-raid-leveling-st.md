@@ -1,17 +1,17 @@
-# Optimizer — Marksmanship raid DPS with a pet (Classic 20/31/0 style) (leveling-st) — 12/33/6
+# Optimizer — Marksmanship raid DPS with a pet (Classic 20/31/0 style) (leveling-st) — 12/34/5
 
 *[Hunter](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 12/33/6 (Beast Mastery / Marksmanship / Survival) |
+| **Build** | 12/34/5 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid` and profile `leveling-st`: score +27.5% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid` and profile `leveling-st`: score +26.8% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -25,7 +25,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 | **Pathfinding** | 2/2 | moved | Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 6%. |
 | **Bestial Swiftness** | 1/1 | changed | Increases the movement speed of your pets by 30%. |
 
-### Marksmanship (33)
+### Marksmanship (34)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -35,87 +35,86 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 | **Efficiency** | 5/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
 | **Rapid Killing** | 2/2 | **NEW** | Reduces the cooldown on your Rapid Fire ability by 2 min. In addition, when you kill a non-trivial enemy or it dies while afflicted by your Serpent Sting, you gain Rapid Killing, increasing the damage of your next Shot ability within 20 sec by 20%. |
 | **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 30. |
+| **Mortal Shots** | 2/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 12%. |
 | **Scatter Shot** | 1/1 | moved | A short-range shot that deals 50% weapon damage and disorients the target for 4 sec. Any damage caused will remove the effect. Turns off your attack when used. |
 | **Rapid Recuperation** | 2/2 | **NEW** | Afflicting a target with Serpent Sting allows 50% of your Mana Regeneration to continue while casting for 15 sec, increased to 100% when Rapid Killing is consumed. |
-| **Barrage** | 3/3 | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 10%. |
+| **Barrage** | 2/3 | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 7%. |
 | **Ranged Weapon Specialization** | 5/5 | unchanged | Increases the damage you deal with ranged weapons by 5%. |
 | **Sniper Shot** | 1/1 | **NEW** | A long-range shot that deals ranged damage plus 160 and increases the range of your next 3 Shots by 10 yards for 10 sec. |
 
-### Survival (6)
+### Survival (5)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Tracking** | 5/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 5%. |
-| **Deflection** | 1/5 | unchanged | Increases your Parry chance by 1%. |
 
 ## Leveling order
 
 | Levels | Tree | Talent | Pts | Running total |
 |---|---|---|---|---|
-| 10-11 | Beast Mastery | Deadly Aspects | 2 | 2/0/0 |
-| 12-16 | Marksmanship | Lethal Attacks | 5 | 2/5/0 |
-| 17 | Marksmanship | Careful Aim | 1 | 2/6/0 |
-| 18-20 | Marksmanship | Improved Stings | 3 | 2/9/0 |
-| 21-24 | Marksmanship | Careful Aim | 4 | 2/13/0 |
-| 25-26 | Marksmanship | Rapid Killing | 2 | 2/15/0 |
-| 27 | Marksmanship | Trueshot Aura | 1 | 2/16/0 |
-| 28-31 | Marksmanship | Efficiency | 4 | 2/20/0 |
-| 32 | Marksmanship | Scatter Shot | 1 | 2/21/0 |
-| 33-34 | Marksmanship | Rapid Recuperation | 2 | 2/23/0 |
-| 35 | Marksmanship | Efficiency | 1 | 2/24/0 |
-| 36 | Marksmanship | Barrage | 1 | 2/25/0 |
-| 37-41 | Marksmanship | Ranged Weapon Specialization | 5 | 2/30/0 |
-| 42 | Marksmanship | Sniper Shot | 1 | 2/31/0 |
-| 43-44 | Beast Mastery | Deadly Aspects | 2 | 4/31/0 |
-| 45 | Survival | Improved Tracking | 1 | 4/31/1 |
-| 46 | Beast Mastery | Deadly Aspects | 1 | 5/31/1 |
-| 47-50 | Survival | Improved Tracking | 4 | 5/31/5 |
-| 51-52 | Beast Mastery | Focused Fire | 2 | 7/31/5 |
-| 53-54 | Beast Mastery | Improved Revive Pet | 2 | 9/31/5 |
-| 55 | Beast Mastery | Pathfinding | 1 | 10/31/5 |
-| 56 | Beast Mastery | Bestial Swiftness | 1 | 11/31/5 |
-| 57 | Marksmanship | Barrage | 1 | 11/32/5 |
-| 58 | Beast Mastery | Pathfinding | 1 | 12/32/5 |
-| 59 | Marksmanship | Barrage | 1 | 12/33/5 |
-| 60 | Survival | Deflection | 1 | 12/33/6 |
+| 10 | Beast Mastery | Deadly Aspects | 1 | 1/0/0 |
+| 11-15 | Marksmanship | Lethal Attacks | 5 | 1/5/0 |
+| 16-18 | Marksmanship | Improved Stings | 3 | 1/8/0 |
+| 19-23 | Marksmanship | Careful Aim | 5 | 1/13/0 |
+| 24-25 | Marksmanship | Rapid Killing | 2 | 1/15/0 |
+| 26 | Marksmanship | Trueshot Aura | 1 | 1/16/0 |
+| 27-30 | Marksmanship | Efficiency | 4 | 1/20/0 |
+| 31 | Marksmanship | Scatter Shot | 1 | 1/21/0 |
+| 32-33 | Marksmanship | Rapid Recuperation | 2 | 1/23/0 |
+| 34 | Marksmanship | Efficiency | 1 | 1/24/0 |
+| 35 | Marksmanship | Barrage | 1 | 1/25/0 |
+| 36-40 | Marksmanship | Ranged Weapon Specialization | 5 | 1/30/0 |
+| 41 | Marksmanship | Sniper Shot | 1 | 1/31/0 |
+| 42-44 | Beast Mastery | Deadly Aspects | 3 | 4/31/0 |
+| 45-46 | Survival | Improved Tracking | 2 | 4/31/2 |
+| 47 | Beast Mastery | Deadly Aspects | 1 | 5/31/2 |
+| 48-49 | Beast Mastery | Focused Fire | 2 | 7/31/2 |
+| 50-51 | Survival | Improved Tracking | 2 | 7/31/4 |
+| 52-53 | Beast Mastery | Improved Revive Pet | 2 | 9/31/4 |
+| 54 | Beast Mastery | Pathfinding | 1 | 10/31/4 |
+| 55 | Beast Mastery | Bestial Swiftness | 1 | 11/31/4 |
+| 56 | Survival | Improved Tracking | 1 | 11/31/5 |
+| 57 | Beast Mastery | Pathfinding | 1 | 12/31/5 |
+| 58 | Marksmanship | Barrage | 1 | 12/32/5 |
+| 59-60 | Marksmanship | Mortal Shots | 2 | 12/34/5 |
 
 ## Core talents (priority order)
 
 1. **Careful Aim** — Removing it costs 2.7 points of score in this model.
-2. **Deadly Aspects** — Removing it costs 2.4 points of score in this model.
-3. **Sniper Shot** — Removing it costs 2.0 points of score in this model.
-4. **Ranged Weapon Specialization** — Removing it costs 2.0 points of score in this model.
-5. **Improved Tracking** — Removing it costs 2.0 points of score in this model.
+2. **Deadly Aspects** — Removing it costs 2.3 points of score in this model.
+3. **Sniper Shot** — Removing it costs 1.9 points of score in this model.
+4. **Ranged Weapon Specialization** — Removing it costs 1.9 points of score in this model.
+5. **Improved Tracking** — Removing it costs 1.9 points of score in this model.
 6. **Efficiency** — Removing it costs 1.9 points of score in this model.
-7. **Trueshot Aura** — Removing it costs 1.6 points of score in this model.
-8. **Improved Stings** — Removing it costs 1.5 points of score in this model.
+7. **Improved Stings** — Removing it costs 1.7 points of score in this model.
+8. **Trueshot Aura** — Removing it costs 1.6 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
 Single-target leveling fights against normal mobs of your level with a cat: the pet runs in and meets the mob halfway, Growls every 5 s and holds it until your threat passes 130% of its own. You shoot from 35 yd: Hunter's Mark, Serpent Sting, Summon Hawk or Arcane Shot, Multi-Shot / Aimed Shot on their shared cooldown, Auto Shot in between (the bow cannot fire inside 8 yd); Bestial Wrath, Intimidation and Rapid Fire on the pull when ready; Mend Pet when the pet drops below 35%; Feign Death, Wing Clip and Raptor Strike when a mob reaches you. Between fights: 2 s loot, 6 s travel, Mend Pet below 70% pet health, water below 35% mana, food below 65% health, a 10 s Revive Pet after a pet death; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): never cast Arcane Shot; never cast Multi-Shot. Together +4.8% time per kill saved for `opt-mm-raid-leveling-st` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-18, on top of the priority below): never cast Arcane Shot; never cast Multi-Shot; drink below 15% mana. Together +8.3% time per kill saved for `opt-mm-raid-leveling-st` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/mm-raid.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Auto Shot | 3.1 | 4.5 | 5.9 | 6.7 | 7.2 | 37% |
-| Claw | 3.0 | 3.7 | 4.5 | 4.7 | 5.3 | 6% |
-| Growl | 1.4 | 2.2 | 2.9 | 3.2 | 3.6 | 0% |
-| Aimed Shot | 1.0 | 1.0 | 1.5 | 1.7 | 1.8 | 16% |
-| Serpent Sting | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 18% |
+| Auto Shot | 3.1 | 4.4 | 5.8 | 6.6 | 7.0 | 38% |
+| Claw | 4.0 | 4.9 | 5.6 | 5.7 | 6.6 | 7% |
+| Growl | 1.4 | 2.1 | 2.7 | 2.9 | 3.3 | 0% |
+| Bite | 1.0 | 1.1 | 1.7 | 1.8 | 1.9 | 3% |
+| Aimed Shot | 1.0 | 1.0 | 1.4 | 1.5 | 1.7 | 15% |
+| Serpent Sting | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 17% |
 | Hunter's Mark | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
-| Bite | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2% |
-| Feign Death | 0.0 | 0.1 | 0.1 | 0.2 | 0.3 | 0% |
-| Melee | 0.0 | 0.0 | 0.0 | 0.0 | 0.1 | 0% |
-| Wing Clip | 0.0 | 0.0 | 0.0 | 0.0 | 0.1 | 0% |
-| Raptor Strike | 0.0 | 0.0 | 0.0 | 0.0 | 0.1 | 0% |
-| Mongoose Bite | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Feign Death | 0.0 | 0.1 | 0.2 | 0.2 | 0.4 | 0% |
+| Melee | 0.0 | 0.0 | 0.0 | 0.1 | 0.3 | 1% |
+| Wing Clip | 0.0 | 0.0 | 0.0 | 0.1 | 0.2 | 0% |
+| Raptor Strike | 0.0 | 0.0 | 0.0 | 0.1 | 0.1 | 1% |
+| Mongoose Bite | 0.0 | 0.0 | 0.0 | 0.0 | 0.1 | 0% |
 
 ## Notes
 
-- Report: hunter/talents/forever/optimizer/mm-raid-leveling-st.md
+- Report: hunter/research/talents/forever/optimizer/mm-raid-leveling-st.md
 
 ## Open questions (verify in the live game)
 

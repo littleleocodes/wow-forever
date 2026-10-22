@@ -111,7 +111,7 @@ Before the pull: at -1.5s: cast Seal of Command.
 | 8 | cast Consecration | 5.9 |
 | 9 | cast Consecration (rank 1) | 0.6 |
 
-Lines of the simulator's rotation these builds never cast: cast Holy Shock (its condition never held in these fights); cast Divine Favor (needs the Divine Favor talent).
+Lines of the simulator's rotation these builds never cast: cast Holy Shock (needs the Holy Shock talent); cast Divine Favor (needs the Divine Favor talent).
 
 Damage by ability:
 

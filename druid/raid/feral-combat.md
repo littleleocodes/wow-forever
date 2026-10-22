@@ -4,7 +4,7 @@
 
 **✅ Recommended** for raid (the best druid spec here, or within 3% of it).
 
-**[Feral Combat — Raid](../research/raid/builds/feral-combat-open-raid.md)** (9/33/9) — [open the talent tree](https://talentsforever.com/druid/60/050022-25000332021031212051-144-6)
+**[Feral Combat — Raid](../research/raid/builds/feral-combat-open-raid.md)** (9/33/9) — [open the talent tree](https://talentsforever.com/druid/60/050022-25000332021031212051-144-7)
 
 > 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (Feral — Cat DPS), which stays below as the alternative. A model of the beta, to check at launch.
 
@@ -32,7 +32,7 @@
 
 ## Why this rotation
 
-A raid cat keeps **Rip** bleeding on the boss, turns mana into energy with **Shifting Power**, and spends the rest on **Shred** from behind. **Faerie Fire** opens the fight, **Berserk** goes on the pull, and Tiger's Fury on every cooldown.
+A raid cat keeps **Rip** bleeding on the boss, turns mana into energy with **Shifting Power**, and spends the rest on **Shred** from behind. **Faerie Fire** opens the fight, **Berserk** goes on the pull.
 
 **Why it works**
 
@@ -41,13 +41,13 @@ A raid cat keeps **Rip** bleeding on the boss, turns mana into energy with **Shi
 - **Shred** is the filler: 42 energy with **Shredding Attacks**, 1 combo point, 2 on a critical strike with **Blood Frenzy**, and 10% more damage from **Rend and Tear** while **Rip** bleeds. **Rip** lasts 12 seconds, about the time three Shreds take, and those Shreds bring about 4 combo points with their critical strikes. So when Rip falls off, you usually hold the points to put it straight back.
 - **Ferocious Bite** is not in the list: the simulator measured the rotation 1% better in a full raid without it, the energy going to **Shred** instead. With **Rip** up and 5 combo points, keep shredding; points beyond 5 are lost.
 - **Shifting Power** turns 55% of your base mana into 40 energy every 8 seconds with **Improved Shifting Power**: cast it whenever it is ready and your energy is 60 or less, so none of the 40 spills over your 100 cap. A raid's mana buffs pay for it, and in the simulator's full raid this build (694 DPS) and the 9/35/7 build (688) both take it and do about 17% more than the 9/31/11 build without it (590).
-- Tiger's Fury (15% more physical damage for 6 seconds, 30-second cooldown) is not on the list above because the beta's trainer list no longer shows it, but the simulator reads it from the client as granted and casts it first, on every cooldown and once 3.5 seconds before the pull: about 7 times a fight. It costs no energy and no combo points, so press it whenever it is ready. **Berserk** (3-minute cooldown) makes every **Shred** a critical strike for 15 seconds, each worth 2 combo points with **Blood Frenzy**: press it on the pull.
+- Tiger's Fury was removed (Blizzard's notes of 1 Oct; the 70425 spellbook lacks it), but the community simulator still reads it from the client as granted and casts it on every cooldown, so the raid numbers on this page run about 2-3% high until the simulator drops it.
 
 **Caveats**
 
 - **Shred** only works from behind. If the boss faces you, or you have to tank, build with **Claw** instead (110% weapon damage plus 126 for 45 energy, less with **Ferocity**).
 - Without a raid's mana buffs (a dungeon group, or alone) each **Shifting Power** costs more than half your base mana and you run dry fast: keep the mana for a shift and a **Regrowth**. Solo, the fight lab found that drinking the mana back costs more time than the energy saves.
-- Powershifting is nearly gone in Forever: instead of granting a flat 40, this build's 4 points in **Furor** give back 80% of the energy you left with, plus 8 a second spent out of form, and leaving **Cat Form** ends Tiger's Fury. The rotation shifts out only with Clearcasting up and under 14 energy, about twice a fight, and the simulator found almost nothing in it: skip it if it costs you attention.
+- Powershifting is nearly gone in Forever: instead of granting a flat 40, this build's 4 points in **Furor** give back 80% of the energy you left with, plus 8 a second spent out of form. The rotation shifts out only with Clearcasting up and under 14 energy, about twice a fight, and the simulator found almost nothing in it: skip it if it costs you attention.
 - The bear builds under Other builds are tank builds: they play **Lacerate**, **Maul** and **Barkskin** in **Dire Bear Form**, not this list (the research rotation page has their priority).
 
 **When to change it**
@@ -66,8 +66,8 @@ A raid cat keeps **Rip** bleeding on the boss, turns mana into energy with **Shi
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 692 | [9/34/8](https://talentsforever.com/druid/60/050022-55000032021032212051-053-6) |
-| Phase 1 BiS | 714 | [9/33/9](https://talentsforever.com/druid/60/050022-55000032021031212051-054-6) (ties this build) |
+| Pre-BiS | 692 | [9/34/8](https://talentsforever.com/druid/60/050022-55000032021032212051-053-7) |
+| Phase 1 BiS | 714 | [9/33/9](https://talentsforever.com/druid/60/050022-55000032021031212051-054-7) (ties this build) |
 
 **The gear** (average item level: Pre-BiS 63.0; Phase 1 BiS 64.8; each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -94,7 +94,7 @@ A raid cat keeps **Rip** bleeding on the boss, turns mana into energy with **Shi
 
 ## Tanking
 
-**[Feral — Bear Tank](../research/raid/builds/feral-bear-tank.md)** (7/35/9) — [open the talent tree](https://talentsforever.com/druid/60/05002-5020033212003200255-054-6)
+**[Feral — Bear Tank](../research/raid/builds/feral-bear-tank.md)** (7/35/9) — [open the talent tree](https://talentsforever.com/druid/60/05002-5020033212003200255-054-7)
 
 Tank value 1.000 (threat and damage taken under a boss, relative to our reference tank build): 1221 threat and 636 damage taken per second in a full raid.
 
@@ -123,12 +123,12 @@ Tank value 1.000 (threat and damage taken under a boss, relative to our referenc
 
 ## Other builds of this spec
 
-- [Feral Combat — Shifting Power](../research/raid/builds/feral-combat-shifting-power-raid.md) (9/35/7, 688 DPS in a full raid) — [open the talent tree](https://talentsforever.com/druid/60/050022-55000032121032212051-052-6)
-- [Feral Combat (optimized)](../research/raid/builds/opt-feral-cat-dps-raid-dps.md) (9/31/11, 590 DPS in a full raid) — [open the talent tree](https://talentsforever.com/druid/60/050022-25000332020032012051-055001-6)
-- [Feral — Cat DPS](../research/raid/builds/feral-cat-dps.md) (9/32/10, 575 DPS in a full raid) — [open the talent tree](https://talentsforever.com/druid/60/050022-55000332120032012021-055-6)
-- [Feral — Bear Tank](../research/raid/builds/feral-bear-tank.md) (7/35/9) — [open the talent tree](https://talentsforever.com/druid/60/05002-5020033212003200255-054-6)
-- [Feral Combat (optimized, tank)](../research/raid/builds/opt-feral-bear-tank-raid-tank.md) (7/35/9) — [open the talent tree](https://talentsforever.com/druid/60/05002-5020033212003200255-504-6)
+- [Feral Combat — Shifting Power](../research/raid/builds/feral-combat-shifting-power-raid.md) (9/35/7, 688 DPS in a full raid) — [open the talent tree](https://talentsforever.com/druid/60/050022-55000032121032212051-052-7)
+- [Feral Combat (optimized)](../research/raid/builds/opt-feral-cat-dps-raid-dps.md) (9/31/11, 590 DPS in a full raid) — [open the talent tree](https://talentsforever.com/druid/60/050022-25000332020032012051-055001-7)
+- [Feral — Cat DPS](../research/raid/builds/feral-cat-dps.md) (9/32/10, 575 DPS in a full raid) — [open the talent tree](https://talentsforever.com/druid/60/050022-55000332120032012021-055-7)
+- [Feral — Bear Tank](../research/raid/builds/feral-bear-tank.md) (7/35/9) — [open the talent tree](https://talentsforever.com/druid/60/05002-5020033212003200255-054-7)
+- [Feral Combat (optimized, tank)](../research/raid/builds/opt-feral-bear-tank-raid-tank.md) (7/35/9) — [open the talent tree](https://talentsforever.com/druid/60/05002-5020033212003200255-504-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-16 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-22 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
 

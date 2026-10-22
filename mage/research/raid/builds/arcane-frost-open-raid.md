@@ -92,14 +92,14 @@ The Arcane-Frost (an Arcane/Frost hybrid) raid build the open talent search foun
 
 | # | Priority (the first line whose condition holds is cast) | [`arcane-frost-open-raid`](arcane-frost-open-raid.md) casts/min |
 |---|---|---|
-| 1 | if mana % ≤ 60%: cast Mana Ruby (mana gem) | as ready |
+| 1 | if mana % ≤ 60%: cast Mana Ruby | as ready |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles | 3.2 |
-| 4 | if Fingers of Frost is up: cast Ice Lance | 4.3 |
-| 5 | if mana % < 5% and time left in the fight > 50s: cast Evocation | 0.1 |
-| 6 | if time left in the fight ≥ 3s: cast Frostbolt | 17.2 |
-| 7 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.2 |
-| 8 | cast Arcane Blast | 0.2 |
+| 3 | if Fingers of Frost is up: cast Ice Lance | 4.3 |
+| 4 | if mana % < 5% and time left in the fight > 50s: cast Evocation | 0.1 |
+| 5 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.2 |
+| 6 | cast Arcane Blast | 0.2 |
+
+Lines of the simulator's rotation these builds never cast: cast Arcane Missiles (rank 7), cast Frostbolt (rank 10) (its condition never held in these fights).
 
 Damage by ability:
 

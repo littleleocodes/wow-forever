@@ -107,7 +107,7 @@ Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of A
 | 6 | if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.3 |
 | 7 | if not Flame Shock is on the target: cast Flame Shock | 4.2 |
 | 8 | cast Earth Shock | 5.1 |
-| 9 | if number of targets = 1 and not Searing Totem is on the target: cast Searing Totem | 1.3 |
+| 9 | if number of targets = 1 and time left on the totem ≤ 0s: cast Searing Totem | 1.3 |
 
 Damage by ability:
 

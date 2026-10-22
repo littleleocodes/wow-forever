@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dps` and profile `raid-dps`: score +123.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dps` and profile `raid-dps`: score +126.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -47,14 +47,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dp
 
 ## Core talents (priority order)
 
-1. **Expose Prey** — Removing it costs 29.5 points of score in this model.
-2. **Deadly Aspects** — Removing it costs 19.2 points of score in this model.
-3. **Lone Wolf** — Removing it costs 19.1 points of score in this model.
-4. **Resourcefulness** — Removing it costs 15.6 points of score in this model.
-5. **Predator's Edge** — Removing it costs 11.9 points of score in this model.
-6. **Careful Aim** — Removing it costs 11.6 points of score in this model.
-7. **Lightning Reflexes** — Removing it costs 10.3 points of score in this model.
-8. **Strider Kick** — Removing it costs 10.2 points of score in this model.
+1. **Expose Prey** — Removing it costs 30.7 points of score in this model.
+2. **Lone Wolf** — Removing it costs 19.8 points of score in this model.
+3. **Deadly Aspects** — Removing it costs 19.4 points of score in this model.
+4. **Predator's Edge** — Removing it costs 17.5 points of score in this model.
+5. **Resourcefulness** — Removing it costs 15.6 points of score in this model.
+6. **Careful Aim** — Removing it costs 11.8 points of score in this model.
+7. **Strider Kick** — Removing it costs 10.7 points of score in this model.
+8. **Improved Tracking** — Removing it costs 9.9 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
@@ -90,7 +90,7 @@ Before the pull: at -3s: cast Hunter's Mark.
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | cast Aspect of the Beast | 0.3 |
+| 1 | if auraIsInactive: cast Aspect of the Beast | 0.3 |
 | 2 | cast Mongoose Bite | 13.1 |
 | 3 | cast Raptor Strike | 20.0 |
 | 4 | cast Immolation Trap | 2.0 |
@@ -115,7 +115,7 @@ Damage by ability:
 
 ## Notes
 
-- Report: hunter/talents/forever/optimizer/melee-dps-raid-dps.md
+- Report: hunter/research/talents/forever/optimizer/melee-dps-raid-dps.md
 
 ## Open questions (verify in the live game)
 

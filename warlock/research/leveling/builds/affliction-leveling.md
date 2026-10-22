@@ -45,6 +45,27 @@ The Affliction leveling build derived on 2026-09-30 (derive_leveling.py): search
 | **Molten Skin** | 5/5 | **NEW** | Reduces all damage taken by 10%. |
 | **Ruin** | 2/5 | changed | Increases the critical strike damage bonus of your Destruction spells by 40%. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Affliction | Improved Corruption | 5 | 5/0/0 |
+| 15-19 | Affliction | Suppression | 5 | 10/0/0 |
+| 20 | Affliction | Amplify Curse | 1 | 11/0/0 |
+| 21-22 | Affliction | Improved Bane of Agony | 2 | 13/0/0 |
+| 23-25 | Affliction | Pandemic | 3 | 16/0/0 |
+| 26-29 | Affliction | Malevolence | 4 | 20/0/0 |
+| 30 | Affliction | Siphon Life | 1 | 21/0/0 |
+| 31 | Affliction | Malevolence | 1 | 22/0/0 |
+| 32-34 | Affliction | Soul Siphon | 3 | 25/0/0 |
+| 35-39 | Affliction | Shadow Mastery | 5 | 30/0/0 |
+| 40-42 | Affliction | Improved Drains | 3 | 33/0/0 |
+| 43-47 | Demonology | Unholy Power | 5 | 33/5/0 |
+| 48-52 | Destruction | Bane | 5 | 33/5/5 |
+| 53-57 | Destruction | Molten Skin | 5 | 33/5/10 |
+| 58-59 | Destruction | Ruin | 2 | 33/5/12 |
+| 60 | Demonology | Demonic Energies | 1 | 33/6/12 |
+
 ## Core talents (priority order)
 
 1. **Siphon Life** — The scorer's value in this build: +33.8% of its score (model affliction-leveling).
@@ -63,6 +84,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 - Fight-lab numbers are a model of the beta, not in-game measurements.
 - 2026-10-16 (repair_builds.py, client build 70425 trees): 35/6/10 -> 33/6/12; Malediction 5 gone; refill +3 Improved Drains, +2 Ruin; order dropped (order_repair.py) (refill: the affliction-leveling model, leveling-st).
 - 2026-10-17 (audit of 2026-10-17, finding 26): core Malediction dropped (not in the allocation; Malediction was replaced by Grim Reach in 70425).
+- 2026-10-18 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the affliction-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree first 40.4 s per kill; stats model 40.4 s; own tree last 42.5 s.
 
 ## Open questions (verify in the live game)
 

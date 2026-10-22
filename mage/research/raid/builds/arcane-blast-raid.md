@@ -105,10 +105,9 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
 | 2 | cast Fire Blast | 8.8 |
-| 3 | if Missile Barrage is up: cast Arcane Missiles | 4.9 |
-| 4 | if stacks of Arcane Blast ≥ 1.5: cast Frostbolt | 0.2 |
-| 5 | cast Arcane Blast | 12.7 |
-| 6 | cast Fireball (rank 2) | 1.2 |
+| 3 | cast Arcane Blast | 12.7 |
+
+Lines of the simulator's rotation these builds never cast: cast Arcane Missiles (rank 7), cast Frostbolt (rank 10), cast Fireball (rank 11) (its condition never held in these fights).
 
 Damage by ability:
 

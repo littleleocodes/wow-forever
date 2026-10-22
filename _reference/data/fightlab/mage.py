@@ -1021,7 +1021,8 @@ class MageModule(BaseModule):
         p, m, t, in_melee, rooted, frozen, avg, can = self._common(fight)
         sp = self.spells
         ffb, fb, blast, nova, coc, lance, pyro = (sp.get(n) for n in ("Frostfire Bolt", "Frostbolt", "Fire Blast", "Frost Nova", "Cone of Cold", "Ice Lance", "Pyroblast"))
-        bolt = ffb or fb
+        ffb_off = ((self.veto or {}).get("Frostfire Bolt") or {}).get("off")   # 2026-10-22: a vetoed Frostfire Bolt fell back to nothing
+        bolt = (fb if ffb_off else ffb) or fb or (None if ffb_off else ffb)    # (wand and Ice Lance only from 40), not to Frostbolt
         if bolt is None:
             return "wand"
         hp = m.hp

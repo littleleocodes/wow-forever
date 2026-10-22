@@ -8,62 +8,62 @@ Talentless baseline: 90 h for levels 10-60 under these assumptions.
 
 > Models frost-leveling, fire-leveling all have `abs_dps_factor` 1.0 (unmeasured), so their plans are compared as if a talentless character of each killed equally fast. A switch *between models* below rests on that assumption; the per-model schedules further down do not.
 
-- **Levels 10-60: frost-leveling -> level-30 build (0/0/21)**
-  - at level 10: **Frost**: Improved Frostbolt 1
-  - at level 60: **Frost**: Improved Frostbolt 5, Frostbite 3, Ice Shards 5, Ice Lance 1, Frost Channeling 3, Shatter 3, Ice Block 1, Fingers of Frost 2, Piercing Ice 3, Elemental Precision 5, Cold Snap 1, Ice Barrier 1, Winter's Chill 5, Arctic Reach 2; **Fire**: Incineration 3; **Arcane**: Wand Specialization 2, Arcane Focus 3, Arcane Concentration 3
-  - order: 10-14 Improved Frostbolt x5, 15-17 Frostbite x3, 18-19 Ice Shards x2, 20 Ice Lance, 21-22 Frost Channeling x2, 23-24 Ice Shards x2, 25 Shatter, 26 Ice Shards, 27 Ice Block, 28-29 Shatter x2, 30-31 Fingers of Frost x2, 32 Frost Channeling, 33-35 Piercing Ice x3, 36-38 Elemental Precision x3, 39 Cold Snap, 40 Ice Barrier, 41-42 Elemental Precision x2, 43-45 Incineration x3, 46-50 Winter's Chill x5, 51-52 Arctic Reach x2, 53-54 Wand Specialization x2, 55-57 Arcane Focus x3, 58-60 Arcane Concentration x3
+- **Levels 10-60: fire-leveling -> level-20 build (0/0/11)**
+  - at level 10: **Frost**: Elemental Precision 1
+  - at level 60: **Frost**: Elemental Precision 5, Permafrost 3, Frostbite 3, Ice Lance 1, Piercing Ice 3, Ice Block 1; **Fire**: Improved Fire Blast 2, Improved Fireball 3, Ignite 5, Burning Soul 3, Impact 3, Pyroblast 1, Heating Up 1, Flame Throwing 2, Blast Wave 1, Improved Scorch 3, Critical Mass 5, Fire Power 3, Combustion 1; **Arcane**: Missile Barrage 2
+  - order: 10-14 Elemental Precision x5, 15-16 Permafrost x2, 17-19 Frostbite x3, 20 Ice Lance, 21-22 Improved Fire Blast x2, 23-24 Missile Barrage x2, 25-27 Improved Fireball x3, 28-32 Ignite x5, 33-35 Burning Soul x3, 36 Impact, 37 Pyroblast, 38 Heating Up, 39-40 Impact x2, 41-42 Flame Throwing x2, 43 Blast Wave, 44-46 Improved Scorch x3, 47 Critical Mass, 48-50 Fire Power x3, 51-54 Critical Mass x4, 55 Combustion, 56 Permafrost, 57-59 Piercing Ice x3, 60 Ice Block
 
-Total: **35.7 h** (60.3% faster than talentless), no respec.
+Total: **39.0 h** (56.7% faster than talentless), no respec.
 
 ## Best schedule if you stay in one spec model
 
 ### frost-leveling
 
-- **Levels 10-60: frost-leveling -> level-30 build (0/0/21)**
+- **Levels 10-60: frost-leveling -> level-50 build (8/0/33)**
   - at level 10: **Frost**: Improved Frostbolt 1
-  - at level 60: **Frost**: Improved Frostbolt 5, Frostbite 3, Ice Shards 5, Ice Lance 1, Frost Channeling 3, Shatter 3, Ice Block 1, Fingers of Frost 2, Piercing Ice 3, Elemental Precision 5, Cold Snap 1, Ice Barrier 1, Winter's Chill 5, Arctic Reach 2; **Fire**: Incineration 3; **Arcane**: Wand Specialization 2, Arcane Focus 3, Arcane Concentration 3
-  - order: 10-14 Improved Frostbolt x5, 15-17 Frostbite x3, 18-19 Ice Shards x2, 20 Ice Lance, 21-22 Frost Channeling x2, 23-24 Ice Shards x2, 25 Shatter, 26 Ice Shards, 27 Ice Block, 28-29 Shatter x2, 30-31 Fingers of Frost x2, 32 Frost Channeling, 33-35 Piercing Ice x3, 36-38 Elemental Precision x3, 39 Cold Snap, 40 Ice Barrier, 41-42 Elemental Precision x2, 43-45 Incineration x3, 46-50 Winter's Chill x5, 51-52 Arctic Reach x2, 53-54 Wand Specialization x2, 55-57 Arcane Focus x3, 58-60 Arcane Concentration x3
+  - at level 60: **Frost**: Improved Frostbolt 5, Frostbite 3, Elemental Precision 5, Ice Lance 1, Frost Channeling 3, Piercing Ice 3, Shatter 3, Ice Shards 5, Fingers of Frost 2, Ice Block 1, Cold Snap 1, Ice Barrier 1; **Arcane**: Missile Barrage 2, Wand Specialization 2, Arcane Focus 1, Arcane Concentration 5, Arcane Subtlety 2, Magic Absorption 2, Arcane Blast 1, Arcane Wrath 1, Arcane Meditation 2
+  - order: 10-14 Improved Frostbolt x5, 15-17 Frostbite x3, 18-19 Elemental Precision x2, 20 Ice Lance, 21-23 Frost Channeling x3, 24 Piercing Ice, 25-27 Shatter x3, 28-29 Ice Shards x2, 30-31 Fingers of Frost x2, 32 Ice Block, 33-35 Ice Shards x3, 36-37 Piercing Ice x2, 38 Elemental Precision, 39 Cold Snap, 40 Ice Barrier, 41-42 Elemental Precision x2, 43-44 Missile Barrage x2, 45-46 Wand Specialization x2, 47 Arcane Focus, 48-52 Arcane Concentration x5, 53-54 Arcane Subtlety x2, 55-56 Magic Absorption x2, 57 Arcane Blast, 58 Arcane Wrath, 59-60 Arcane Meditation x2
 
-Total: **35.7 h** (60.3% faster than talentless), no respec.
+Total: **40.7 h** (54.7% faster than talentless), no respec.
 
 ### fire-leveling
 
 - **Levels 10-60: fire-leveling -> level-20 build (0/0/11)**
   - at level 10: **Frost**: Elemental Precision 1
-  - at level 60: **Frost**: Elemental Precision 5, Permafrost 3, Frostbite 3, Ice Lance 1, Piercing Ice 3, Ice Block 1; **Fire**: Improved Fireball 5, Ignite 5, Burning Soul 3, Impact 3, Flame Throwing 2, Improved Scorch 3, Critical Mass 3, Blast Wave 1, Fire Power 5, Combustion 1, Master of Elements 3, Pyroblast 1
-  - order: 10-14 Elemental Precision x5, 15-16 Permafrost x2, 17-19 Frostbite x3, 20 Ice Lance, 21-25 Improved Fireball x5, 26-30 Ignite x5, 31-33 Burning Soul x3, 34-36 Impact x3, 37-38 Flame Throwing x2, 39-40 Improved Scorch x2, 41 Critical Mass, 42 Blast Wave, 43 Improved Scorch, 44-45 Critical Mass x2, 46-50 Fire Power x5, 51 Combustion, 52-54 Master of Elements x3, 55 Pyroblast, 56 Permafrost, 57-59 Piercing Ice x3, 60 Ice Block
+  - at level 60: **Frost**: Elemental Precision 5, Permafrost 3, Frostbite 3, Ice Lance 1, Piercing Ice 3, Ice Block 1; **Fire**: Improved Fire Blast 2, Improved Fireball 3, Ignite 5, Burning Soul 3, Impact 3, Pyroblast 1, Heating Up 1, Flame Throwing 2, Blast Wave 1, Improved Scorch 3, Critical Mass 5, Fire Power 3, Combustion 1; **Arcane**: Missile Barrage 2
+  - order: 10-14 Elemental Precision x5, 15-16 Permafrost x2, 17-19 Frostbite x3, 20 Ice Lance, 21-22 Improved Fire Blast x2, 23-24 Missile Barrage x2, 25-27 Improved Fireball x3, 28-32 Ignite x5, 33-35 Burning Soul x3, 36 Impact, 37 Pyroblast, 38 Heating Up, 39-40 Impact x2, 41-42 Flame Throwing x2, 43 Blast Wave, 44-46 Improved Scorch x3, 47 Critical Mass, 48-50 Fire Power x3, 51-54 Critical Mass x4, 55 Combustion, 56 Permafrost, 57-59 Piercing Ice x3, 60 Ice Block
 
-Total: **42.4 h** (52.9% faster than talentless), no respec.
+Total: **39.0 h** (56.7% faster than talentless), no respec.
 
 ## Never respec: best single plan
 
 | Plan | Hours 10-60 | vs. schedule |
 |---|---|---|
-| frost-leveling -> level-30 build (0/0/21) | 35.7 | +0.0 h |
-| frost-leveling -> level-60 build (12/3/36) | 36.1 | +0.3 h |
-| frost-leveling -> level-20 build (0/0/11) | 36.1 | +0.3 h |
-| frost-leveling -> level-40 build (0/0/31) | 36.1 | +0.3 h |
-| frost-leveling -> level-50 build (0/3/38) | 36.1 | +0.3 h |
-| fire-leveling -> level-20 build (0/0/11) | 42.4 | +6.7 h |
-| fire-leveling -> level-30 build (0/10/11) | 45.4 | +9.7 h |
-| fire-leveling -> level-40 build (0/15/16) | 48.1 | +12.3 h |
-| fire-leveling -> level-50 build (0/30/11) | 54.8 | +19.0 h |
-| fire-leveling -> level-60 build (0/32/19) | 54.9 | +19.2 h |
+| fire-leveling -> level-20 build (0/0/11) | 39.0 | +0.0 h |
+| frost-leveling -> level-50 build (8/0/33) | 40.7 | +1.7 h |
+| frost-leveling -> level-60 build (18/0/33) | 40.7 | +1.7 h |
+| frost-leveling -> level-40 build (0/0/31) | 40.8 | +1.8 h |
+| frost-leveling -> level-20 build (0/0/11) | 40.8 | +1.8 h |
+| fire-leveling -> level-30 build (0/10/11) | 40.9 | +1.9 h |
+| frost-leveling -> level-30 build (0/0/21) | 40.9 | +1.9 h |
+| fire-leveling -> level-40 build (2/18/11) | 44.2 | +5.2 h |
+| fire-leveling -> level-50 build (2/28/11) | 49.0 | +10.1 h |
+| fire-leveling -> level-60 build (2/33/16) | 51.6 | +12.6 h |
 
 ## Leveling score by level (fraction of time per kill saved)
 
 | Plan | 10 | 15 | 20 | 25 | 30 | 35 | 40 | 45 | 50 | 55 | 60 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| frost-leveling -> level-20 build (0/0/11) | +3.0% | +18.5% | +46.2% | +51.5% | +56.8% | +63.2% | +65.8% | +66.6% | +67.0% | +67.1% | +67.6% |
-| frost-leveling -> level-30 build (0/0/21) | +3.0% | +18.5% | +46.1% | +54.3% | +59.8% | +63.6% | +65.8% | +66.6% | +67.0% | +67.1% | +67.6% |
-| frost-leveling -> level-40 build (0/0/31) | +3.0% | +18.5% | +46.2% | +51.5% | +56.8% | +63.2% | +65.8% | +66.6% | +67.0% | +67.1% | +67.6% |
-| frost-leveling -> level-50 build (0/3/38) | +3.0% | +18.5% | +46.2% | +51.5% | +56.8% | +63.2% | +65.8% | +66.6% | +67.0% | +67.1% | +67.6% |
-| frost-leveling -> level-60 build (12/3/36) | +3.0% | +18.5% | +46.2% | +51.5% | +56.8% | +63.2% | +65.8% | +66.6% | +66.9% | +67.2% | +68.0% |
-| fire-leveling -> level-20 build (0/0/11) | +0.7% | +3.6% | +42.8% | +44.0% | +52.7% | +54.5% | +55.5% | +56.5% | +60.1% | +63.0% | +64.2% |
-| fire-leveling -> level-30 build (0/10/11) | +0.7% | +3.6% | +14.9% | +20.7% | +52.7% | +54.5% | +55.5% | +56.5% | +60.1% | +63.0% | +64.2% |
-| fire-leveling -> level-40 build (0/15/16) | +0.7% | +3.6% | +14.9% | +21.7% | +24.0% | +54.5% | +55.8% | +56.8% | +57.8% | +61.4% | +64.2% |
-| fire-leveling -> level-50 build (0/30/11) | +0.5% | +6.7% | +19.6% | +21.6% | +23.8% | +26.3% | +32.0% | +34.0% | +60.1% | +63.0% | +64.2% |
-| fire-leveling -> level-60 build (0/32/19) | +0.5% | +6.7% | +19.6% | +21.6% | +23.8% | +26.3% | +36.0% | +38.0% | +38.6% | +62.7% | +64.6% |
+| frost-leveling -> level-20 build (0/0/11) | +2.1% | +8.6% | +36.7% | +44.3% | +50.3% | +56.2% | +60.0% | +61.6% | +62.7% | +63.7% | +65.2% |
+| frost-leveling -> level-30 build (0/0/21) | +1.0% | +6.4% | +35.3% | +46.3% | +52.0% | +56.7% | +58.9% | +61.6% | +62.7% | +63.7% | +65.2% |
+| frost-leveling -> level-40 build (0/0/31) | +2.1% | +9.8% | +36.5% | +44.2% | +50.2% | +56.1% | +60.0% | +61.6% | +62.7% | +63.7% | +65.2% |
+| frost-leveling -> level-50 build (8/0/33) | +2.1% | +12.2% | +36.4% | +44.1% | +50.1% | +56.0% | +59.9% | +61.6% | +62.7% | +63.7% | +65.2% |
+| frost-leveling -> level-60 build (18/0/33) | +2.1% | +12.2% | +36.4% | +44.1% | +50.1% | +56.0% | +59.9% | +61.6% | +62.7% | +63.7% | +65.2% |
+| fire-leveling -> level-20 build (0/0/11) | +0.7% | +3.6% | +42.8% | +49.0% | +54.1% | +57.9% | +61.7% | +62.7% | +64.9% | +67.5% | +68.7% |
+| fire-leveling -> level-30 build (0/10/11) | +4.4% | +14.5% | +24.7% | +25.6% | +55.7% | +57.9% | +61.7% | +62.7% | +64.9% | +67.5% | +68.7% |
+| fire-leveling -> level-40 build (2/18/11) | +4.4% | +12.7% | +23.6% | +27.1% | +34.1% | +35.9% | +61.7% | +62.4% | +64.6% | +67.5% | +68.7% |
+| fire-leveling -> level-50 build (2/28/11) | +4.4% | +12.7% | +23.6% | +27.1% | +34.1% | +36.1% | +38.4% | +41.6% | +64.9% | +65.5% | +68.0% |
+| fire-leveling -> level-60 build (2/33/16) | +4.4% | +12.7% | +23.6% | +27.1% | +34.1% | +36.1% | +38.4% | +41.6% | +46.2% | +67.5% | +68.7% |
 
 ## Reading it
 

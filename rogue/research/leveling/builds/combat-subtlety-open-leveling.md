@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Combat-Subtlety (a Combat/Subtlety hybrid) leveling build the open leveling search found on 2026-10-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the subtlety-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-swords-raid). +9.4% faster per kill than subtlety-leveling, the fastest of our leveling builds in that race.
+The Combat-Subtlety (a Combat/Subtlety hybrid) leveling build the open leveling search found on 2026-10-19: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the subtlety-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-swords-raid). +7.6% faster per kill than subtlety-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -41,13 +41,12 @@ The Combat-Subtlety (a Combat/Subtlety hybrid) leveling build the open leveling 
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Camouflage** | 3/5 | changed | Reduces your speed penalty from your Stealth ability by 9% and reduces its cooldown by 4 sec. |
+| **Camouflage** | 4/5 | changed | Reduces your speed penalty from your Stealth ability by 12% and reduces its cooldown by 5 sec. |
 | **Opportunity** | 2/2 | changed | Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 10%. |
 | **Setup** | 3/3 | changed | Gives you a 100% chance to add a Combo Point to your target after Dodging one of their attacks or fully resisting one of their spells. |
 | **Improved Ambush** | 3/3 | moved | Increases the critical strike chance of your Ambush ability by 45%. |
 | **Initiative** | 3/3 | changed | Gives you a 100% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability. |
 | **Ghostly Strike** | 1/1 | changed | A strike that deals 125% (180% if a Dagger is equipped in your Main Hand) weapon damage and increases your chance to dodge by 15% for 7 sec. Awards 1 combo point. |
-| **Improved Distract** | 1/2 | **NEW** | Increases the radius of your Distract ability by 3 yds, and further reduces the Stealth detection of distracted enemies as though they were an additional 1 level lower. |
 | **Premeditation** | 1/1 | changed | Adds 2 Combo Points to your target. You must add to or use those combo points within 20 sec or the combo points are lost. |
 | **Serrated Blades** | 3/3 | changed | Causes your attacks to ignore 9% of your target's Armor and increases the damage dealt by your Rupture ability by 30%. |
 | **Hemorrhage** | 1/1 | changed | An instant strike that deals 100% weapon damage (145% if a Dagger is equipped) and causes the target to take 15% increased Rupture damage from the Rogue. Lasts 15 sec. Awards 1 Combo Point. |
@@ -59,15 +58,16 @@ The Combat-Subtlety (a Combat/Subtlety hybrid) leveling build the open leveling 
 | 10-11 | Subtlety | Opportunity | 2 | 0/0/2 |
 | 12-14 | Subtlety | Camouflage | 3 | 0/0/5 |
 | 15-17 | Subtlety | Setup | 3 | 0/0/8 |
-| 18-19 | Subtlety | Improved Ambush | 2 | 0/0/10 |
+| 18 | Subtlety | Camouflage | 1 | 0/0/9 |
+| 19 | Subtlety | Improved Ambush | 1 | 0/0/10 |
 | 20 | Subtlety | Ghostly Strike | 1 | 0/0/11 |
 | 21-23 | Subtlety | Initiative | 3 | 0/0/14 |
 | 24 | Subtlety | Improved Ambush | 1 | 0/0/15 |
 | 25-27 | Subtlety | Serrated Blades | 3 | 0/0/18 |
 | 28 | Subtlety | Premeditation | 1 | 0/0/19 |
-| 29-30 | Assassination | Remorseless Attacks | 2 | 2/0/19 |
-| 31 | Subtlety | Improved Distract | 1 | 2/0/20 |
-| 32 | Subtlety | Hemorrhage | 1 | 2/0/21 |
+| 29 | Subtlety | Improved Ambush | 1 | 0/0/20 |
+| 30 | Subtlety | Hemorrhage | 1 | 0/0/21 |
+| 31-32 | Assassination | Remorseless Attacks | 2 | 2/0/21 |
 | 33-35 | Combat | Improved Eviscerate | 3 | 2/3/21 |
 | 36-37 | Combat | Lightning Reflexes | 2 | 2/5/21 |
 | 38 | Combat | Deflection | 1 | 2/6/21 |
@@ -86,13 +86,13 @@ The Combat-Subtlety (a Combat/Subtlety hybrid) leveling build the open leveling 
 
 ## Core talents (priority order)
 
-1. **Setup** — +2.1 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Flawless Execution** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Improved Eviscerate** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Remorseless Attacks** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Setup** — +2.3 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Flawless Execution** — +1.5 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Remorseless Attacks** — +1.5 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Improved Eviscerate** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
 5. **Improved Ambush** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
 6. **Relentless Strikes** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Hemorrhage** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Precision** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
 8. **Initiative** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
@@ -101,7 +101,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 23.58; subtlety-leveling 25.80. The search simulated 83,167 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 23.83; subtlety-leveling 25.65. The search simulated 80,476 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -111,7 +111,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/rogue>
-- <https://talentsforever.com/rogue/60/0253201-305033010011-3023003311013001-6>
+- <https://talentsforever.com/rogue/60/0253201-305033010011-4023003310013001-7>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

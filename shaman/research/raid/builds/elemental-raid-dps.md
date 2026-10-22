@@ -99,14 +99,12 @@ Before the pull: at -2s: cast Lightning Bolt.
 
 | # | Priority (the first line whose condition holds is cast) | [`elemental-raid-dps`](elemental-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | if number of targets = 1 and not Searing Totem is on the target and time left in the fight ≥ 20s: cast Searing Totem | 1.0 |
+| 1 | if number of targets = 1 and time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.0 |
 | 2 | use every other cooldown when ready | as ready |
 | 3 | if not Flame Shock is on the target: cast Flame Shock | 5.1 |
 | 4 | if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning | 2.4 |
-| 5 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt (rank 7) | 23.3 |
-| 6 | cast Lightning Bolt (rank 2) | 0.6 |
 
-Lines of the simulator's rotation these builds never cast: cast Magma Totem (its condition never held in these fights); cast Lava Burst (rank 3) (needs the Lava Burst talent).
+Lines of the simulator's rotation these builds never cast: cast Magma Totem, cast Lava Burst (rank 3), cast Lightning Bolt (rank 8) (its condition never held in these fights).
 
 Damage by ability:
 

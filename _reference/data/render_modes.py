@@ -323,6 +323,14 @@ def leveling_numbers(cls):
             if lv:
                 out[bid] = {int(Lv): v for Lv, v in lv.items()}
                 LEVEL_MODEL[(cls, bid)] = model
+        # 2026-10-22: the race's other rows are our builds of the trees that level with this rotation, raced in it (seed 3, 20-60).
+        # Only the winner's row was read, so a spec whose own build lost to a hybrid (Demonology, Destruction, Subtlety after the
+        # leveling re-run) had no current number and its page fell back to a stale record's model (the Affliction steps on Demonology).
+        for bid, row in (rec.get("race") or {}).items():
+            if bid in ("open winner",) or bid.startswith("finalist") or bid in out or not isinstance(row, dict) or not row.get("levels"):
+                continue
+            out[bid] = {int(Lv): v for Lv, v in row["levels"].items()}
+            LEVEL_MODEL[(cls, bid)] = model
     for bid, info in (GEN.get(cls) or {}).items():
         if info.get("levels") and current_record(info):
             out.setdefault(bid, {int(L): v for L, v in info["levels"].items()})

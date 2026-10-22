@@ -2,14 +2,14 @@
 
 [Warlock](../README.md) > [Raid (group)](README.md) > Destruction
 
-**[Destruction — Raid](../research/raid/builds/destruction-ml-raid.md)** (10/11/30) — [open the talent tree](https://talentsforever.com/warlock/60/253-0050203001-055020510310035-6)
+**[Destruction — Raid](../research/raid/builds/destruction-ml-raid.md)** (10/11/30) — [open the talent tree](https://talentsforever.com/warlock/60/253-0050203001-055020510310035-7)
 
 > 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds); it beat the hand-made build (Destruction — Incinerate), which stays below as the alternative. A model of the beta, to check at launch.
 
 **Other setups of this spec.** This build is the Shadow Bolt setup. The spec's best build for each other setup, in a full raid:
 
-- Fire: [Destruction (optimized, fire)](../research/raid/builds/opt-fire-destro-raid-raid-dps.md) (10/11/30, 685 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/253-0050203001-055030510310025-6)
-- Incinerate: [Destruction — Incinerate](../research/raid/builds/destruction-incinerate-raid.md) (9/11/31, 665 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/153-0050203001-0050245103101351-6)
+- Fire: [Destruction (optimized, fire)](../research/raid/builds/opt-fire-destro-raid-raid-dps.md) (10/11/30, 685 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/253-0050203001-055030510310025-7)
+- Incinerate: [Destruction — Incinerate](../research/raid/builds/destruction-incinerate-raid.md) (9/11/31, 665 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/153-0050203001-0050245103101351-7)
 
 ## How to play
 
@@ -71,8 +71,8 @@ Destruction in a raid is still a **Shadow Bolt** spec: you sacrifice the Imp for
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 683 | [9/11/31](https://talentsforever.com/warlock/60/252-0050203001-055030510310035-6) |
-| Phase 1 BiS | 722 | [9/11/31](https://talentsforever.com/warlock/60/252-0050203001-055030510310035-6) (ties this build) |
+| Pre-BiS | 683 | [9/11/31](https://talentsforever.com/warlock/60/252-0050203001-055030510310035-7) |
+| Phase 1 BiS | 722 | [9/11/31](https://talentsforever.com/warlock/60/252-0050203001-055030510310035-7) (ties this build) |
 
 **The gear** (average item level: Pre-BiS 62.4; Phase 1 BiS 65.8; each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -99,5 +99,5 @@ Destruction in a raid is still a **Shadow Bolt** spec: you sacrifice the Imp for
 **Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://elliotwood.github.io/Forever/forever/warlock/dps/#eJzMlU+IG3UUx/N+89vM29fdbfZXZWfHP4yBLTEw4TcTxk32kmxPxdMKHoSCNmmyTUJJQiaHipdqVxSRVcypoaCrlLpoNXixelIxmJUoe1HQuiqC6MFDqJKLF5nJNAvbPXjIQt8lL+87v3mf77wfPJpBiIAGBsRAglgc/2MSUpCFNXgK6nAJQH+PUIlM6y6p+O8N0H4/RhwvfwjE8de/Z4njD1tAYdypam+ppOIX10C7NUcKds8Tx5+HsxTG2+veKRU774P2mkocv7o+Rxy/3gJS8IUicXzndSAVf9wCrXeCOH7ygafcvhCVuFGO9MrG9asQ+3YT5DC/9vaX8AqwjfIbwIb5d+GP1Q68eQ1uQuf0LmyWT9G+rU/Zw7Zjm1I60pZJKS1TOo5MSseSSUvKpNNjyi479hvbRjpBqIeJ42AToipNkWI6Lt1Hqj5FCm6fiU6TSlOmlXBc8ZD+AM1Hj9PsR0DE8bOX1gSLTPmnvdzWJcXESZqPH8ewYI+HdP99luP6JS5YPigtO0s6J6bNixaIp3P1C8/U6k3DlvZjpiVNaa8Y50q56vliwag1jFyhUCwY+WeNZqloNGrNXLNcqxpuMdc4VzJibrFouHmzkSsXzDuiORITFbdWfVS3/idUSi55niPDvOA6WwmN7I7Ax8cSjm/34xYcJicD+fKrIJ47YEymTXt5osYWKRKfQ8X/rGHixJylYGiC9PFQRVQ3aCF+P3KhVjz58zM6tlmQjX7E1YNj8GhTE6VdISkStBhfQC6w4sH90gV9us2C9K4JSVcPpMPxlo8Yb28fb+9uPDvA2+uCqByg8+6wNVG60TT/aR3eKz35XpGNFoxv0a0uaMqfrAcDZj+vhPxIZ9tshogQwWAxSLHotjLtCaFL69nF9hUvdjKPrPvxfcYeMI0bmXiPhe6paGbvZEcaJ29MvE/6m36/P3O2k10NCtmz8DLAFSjXBi/uPPldJu1XQ7uZVe/Jfv+vzBOj5KdMXMGbC6ce3F8Yo8132t99JajDRbgo/hsA7Wx8eQ==); Phase 1 BiS: [full raid](https://elliotwood.github.io/Forever/forever/warlock/dps/#eJzMlU9oK1UUxnPuTDo35/W9l96ndDL+YQy0xMCEOxPGJt0k7aq4iuBCKGiTJm0SShMyESpuqqZURCo0dNFQUAtFC1aCG6urKgZSjNqNgtSiCKILF0GlG0FkJtMU2i5cpOBZzJw539y5v2/OhYPDFPwggwoh4MAC/SfCIQZJSMFzUIZVAOUAqeD3KS+iRP8+APmXOyjSfzYBRfrTn3dRpN+/CyjR4y2Q35FQop/vgXx6DwXaWkSRHm3Z4m7NWSfR5gcgvyWhSL/cgv61VgcU6Ks5lOg3ayC3H6BIP/nQrv2xFOS0VvC3C+p7OxD6egP4eSa1+wW8AaRW2ARynnkffp1qwtt7cAjNmRPYKEzjpbFPyeOGaWicm9zgUc51jZsmj3JT51Gd86jZJsIJufMz2af4AKkyhCLtbkBQQi8KmmnhQygpXhTo/mzQhxJ6NT1iWuwx5REcCd7Hux8B2h7XU4z4vc7qo/UUMxSOITaOI+H7dIiRpz2K8z3dtJySyEjGLU2YY4qIRB5hdWDPp8tLL5TKVdXgxlOazjVuTKrz+fTyYi6rlipqOpvNZdXMS2o1n1MrpWq6Wigtq1YuXZnPqyErl1OtjFZJF7Lahaj1xEjRKi0/qej/ESrGx2zP/vMMExUy6enZ7YH3l0VMx+7HdbhJjrrya28Ce/mKMR7XjImBGgugP3yPCs5vHUIRiTnmNo2h0m8qCyoqjoYfpiKTirb82axCG8TNeje2c7UNNm1soLSTyFkEA+FRKjJatOF+bIHiaxA3vdYhbimudDPexC3jnV3inV3HM1y8sxaw4hU6+wzrA6XrdfOv+s17xQe/l79Wh/4pOm2BLPxG2tAlxiuCx4l4skGGEZFSUEkIYiS4L/hswbO6kAw0tu04Tjyx4MR3CaNLZFFNhNvE87+KavIiu9UYPxj4PvGvOp3O8FwzOeUWknPwOsA2FErdteNnv03EnarnJDFlv9np/J54ppf8kAgL9HB0+tHLgdGbfTPO9MtDGVZghf07ACu1e+A=).
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-16 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-22 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
 

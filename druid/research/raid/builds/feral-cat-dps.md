@@ -119,7 +119,7 @@ Before the pull: at -1.0s: cast Faerie Fire; at -3.5s: cast Tiger's Fury.
 | 9 | if not Cat Form is up and (mana + 2250.0) ≤ (mana ÷ mana %): cast Potion | as ready |
 | 10 | if not Cat Form is up: cast Cat Form | 0.3 |
 
-Lines of the simulator's rotation these builds never cast: cast Haste, cast Shifting Power, cast Metamorphosis Rune, cast Innervate (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Haste, cast Metamorphosis Rune, cast Innervate (its condition never held in these fights); cast Shifting Power (needs the Shifting Power talent).
 
 Damage by ability:
 

@@ -2,27 +2,25 @@
 
 [Priest](../README.md) > [Raid (group)](README.md) > Holy
 
-**[Holy — Raid healing](../research/raid/builds/holy-ml-heal.md)** (21/30/0) — [open the talent tree](https://talentsforever.com/priest/60/113113031303001-0350510303002053--6)
-
-> 🔬 Derived build: found by this project's deep search over every legal build of the spec in the healer lab (this project's healing model; healers are not in the community simulator), then raced against the spec's builds. A model of the beta, to check at launch.
+**[Holy — Raid Healer](../research/raid/builds/holy-raid-healer.md)** (22/29/0) — [open the talent tree](https://talentsforever.com/priest/60/205005011330011-3350110303012043--7)
 
 ## How to heal
 
-The healer lab's Holy priest heals the tank with **Penance** every time it is ready and with **Greater Heal** downranked to the damage he has taken, uses **Prayer of Healing** when two or more of the group are hurt, and keeps **Power Word: Shield** and **Flash Heal** for emergencies. Mana is the limit: even so, the lab's Holy priest spends part of its five-minute fight out of mana.
+The healer lab's Holy priest heals the tank with **Penance** every time it is ready and with **Greater Heal** downranked to the damage he has taken, heals the rest of the group only once they drop below 60% health (**Prayer of Healing** when two or more are that low), and keeps **Power Word: Shield** and **Flash Heal** for emergencies. Mana is the limit: even so, the lab's Holy priest spends part of its five-minute fight out of mana.
 
 **Why it works**
 
 - **Penance** goes on the tank whenever it comes off cooldown and he is missing most of what it heals. Since 2026-10-08 it heals more per mana than **Heal** and **Greater Heal**, and the healer lab measured about 6% more capacity than keeping it for emergencies.
 - **Greater Heal** is still your biggest heal. Start it on the tank when he is missing about half of what it heals and a boss swing is coming, at the lowest rank that covers what he is missing: the rest of a bigger rank would be overheal.
-- **Prayer of Healing** when two or more of your group are below 70% health (the class's tuned heal policy: two, not three). In Forever it heals the target and the target's party, so aim it at the group that is hurt.
-- **Renew** goes on the tank once he is missing a fifth of his health (the tuned policy, rather than a tenth), and on a hurt raid member before a direct heal. It can crit since the beta's 2026-10-08 build.
+- **Prayer of Healing** when two or more of your group are below 60% health (the class's tuned heal policy since 2026-10-21: two, not three, and 60%, not 70%); one hurt member below 60% gets **Renew** or a **Flash Heal**. In Forever **Prayer of Healing** heals the target and the target's party, so aim it at the group that is hurt.
+- **Renew** goes on the tank once he is missing a fifth of his health (the tuned policy, rather than a tenth), and on a raid member below 60% before a direct heal. It can crit since the beta's 2026-10-08 build.
 - **Inner Focus** goes on a full-rank **Greater Heal** when the tank is missing more than half of one: the heal is free and 25% more likely to crit, and a critical heal gives the tank 25% more armor for 15 seconds through **Inspiration**.
 - In an emergency (anyone below 20% health): **Power Word: Shield** on the tank if Weakened Soul is gone, then **Penance** if it is ready, then a full-rank **Flash Heal**. That threshold is the class's tuned heal policy (the default was 35%).
 
 **Caveats**
 
 - Mana runs out before healing power does: **Meditation** keeps half your regeneration going while you cast, and **Improved Healing** makes **Greater Heal** and **Penance** 15% cheaper. The tuned policy takes a mana potion below 40% of your mana.
-- This build has no **Prayer of Mending** (it needs 31 points in Holy) and no **Soul Warding**, so your shield keeps its 4-second cooldown.
+- This build has no **Prayer of Mending** (it needs 31 points in Holy). **Soul Warding**, where the build takes it, removes the shield's 4-second cooldown.
 - Ranks far below your level now get less from your healing power (a beta change; the formula is our assumption). In our model **Greater Heal** ranks 3 to 5 lose nothing and rank 1 about 15%, so downranking within **Greater Heal** still pays.
 - The lab is one healer keeping a tank and four players alive for five minutes. It does not model movement, dispels or other healers.
 
@@ -33,7 +31,7 @@ The healer lab's Holy priest heals the tank with **Penance** every time it is re
 
 ## The numbers
 
-Healing capacity 0.69 (the raid damage it heals through in this project's healer lab), 385 healing per second. Healers are not in the community simulator.
+Healing capacity 0.69 (the raid damage it heals through in this project's healer lab), 391 healing per second. Healers are not in the community simulator.
 
 **The gear** (average item level: Pre-BiS 59.7; Phase 1 BiS 65.1; chosen by the stat weights this project's healer lab measures for this build, the healing capacity each stat adds; healers are in no community simulator, so this is our model; each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -58,8 +56,9 @@ Healing capacity 0.69 (the raid damage it heals through in this project's healer
 
 ## Other builds of this spec
 
-- [Holy — Raid Healer](../research/raid/builds/holy-raid-healer.md) (22/29/0) — [open the talent tree](https://talentsforever.com/priest/60/205003011305101-3350110303012043--6)
+- [Holy (optimized)](../research/raid/builds/opt-holy-heal-raid-heal.md) (21/30/0) — [open the talent tree](https://talentsforever.com/priest/60/005305031030001-3351010303012053--7)
+- [Holy — Raid healing](../research/raid/builds/holy-ml-heal.md) (21/30/0) — [open the talent tree](https://talentsforever.com/priest/60/113113031330001-0350510303002053--7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-16 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-22 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
 

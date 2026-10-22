@@ -126,7 +126,7 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 | 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 4.0 |
 | 2 | cast Fire Blast | 6.4 |
 | 3 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 4.0 |
-| 4 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
+| 4 | if mana % ≤ 80%: cast Mana Ruby | as ready |
 | 5 | use every other cooldown when ready | as ready |
 | 6 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
 | 7 | if stacks of Heating Up = 2: cast Pyroblast | 2.2 |
@@ -134,11 +134,10 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 | 9 | cast Combustion | 0.3 |
 | 10 | cast Mana Citrine | as ready |
 | 11 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 9.2 |
-| 12 | if time left in the fight ≥ 3s: cast Fireball (rank 2) | 5.3 |
-| 13 | cast Robe of the Archmage | as ready |
-| 14 | cast Scorch (rank 1) | 0.2 |
+| 12 | cast Robe of the Archmage | as ready |
+| 13 | cast Scorch | 4.0 |
 
-Lines of the simulator's rotation these builds never cast: cast Arcane Power (needs the Arcane Power talent); cast Berserking, cast Arcane Missiles (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent).
+Lines of the simulator's rotation these builds never cast: cast Arcane Power (needs the Arcane Power talent); cast Berserking, cast Arcane Missiles (rank 7), cast Fireball (rank 11) (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent).
 
 Damage by ability:
 

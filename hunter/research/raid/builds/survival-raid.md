@@ -80,7 +80,7 @@ Before the pull: at -3s: cast Hunter's Mark.
 
 | # | Priority (the first line whose condition holds is cast) | [`survival-raid`](survival-raid.md) casts/min |
 |---|---|---|
-| 1 | cast Aspect of the Beast | 0.3 |
+| 1 | if auraIsInactive: cast Aspect of the Beast | 0.3 |
 | 2 | cast Mongoose Bite | 6.6 |
 | 3 | cast Raptor Strike | 20.0 |
 | 4 | cast Immolation Trap | 3.3 |

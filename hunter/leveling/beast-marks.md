@@ -4,7 +4,7 @@
 
 *Beast Mastery's pet talents (Ferocity, Frenzy, Spirit Bond) with Marksmanship's shot talents.* (a hybrid: Beast Mastery/Marksmanship).
 
-**[Beast-Marks — Leveling](../research/leveling/builds/beast-marks-open-leveling.md)** (28/18/5) — [open the talent tree](https://talentsforever.com/hunter/60/512021050511023-005355-5-6)
+**[Beast-Marks — Leveling](../research/leveling/builds/beast-marks-open-leveling.md)** (28/19/4) — [open the talent tree](https://talentsforever.com/hunter/60/512011050512023-0053550001-4-7)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
@@ -16,32 +16,33 @@
 
 **In the fight**, top to bottom:
 
-1. **Hunter's Mark** and **Serpent Sting** while the mob has most of its health.
+1. **Hunter's Mark** while the mob has more than 30% of its health, **Serpent Sting** while it has more than 40%.
 2. **Bestial Wrath**, **Intimidation** and **Rapid Fire** at the start when they are ready.
-3. **Summon Hawk** whenever it is ready (from level 25) while the mob has a third of its health or more; skip **Arcane Shot**, which shares its timer.
-4. **Aimed Shot** whenever it is ready while the mob has more than a quarter of its health; on a single mob never **Multi-Shot** (they share a cooldown).
+3. **Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.
+4. No other shots on a single mob: the fight lab levels faster skipping Arcane Shot, Multi-Shot and the hawk and keeping the mana.
 5. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards. **Mend Pet** when the pet drops below a third of its health.
-6. If a mob reaches you: **Feign Death** to send it back to the pet; when that is on cooldown, **Wing Clip** and **Raptor Strike** until the pet takes it back.
+6. If a mob reaches you: **Feign Death** to send it back to the pet; when that is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.
 
-**Between fights:** Mend the pet, drink below 15% mana, eat below two thirds of your health.
+**Between fights:** Mend the pet below half its health, drink below 15% mana, eat below two thirds of your health.
 
 ## Why this rotation
 
-Beast-Marks levels exactly like Beast Mastery: the cat tanks and you shoot from range. The split adds Marksmanship's cheaper shots (**Efficiency**) and stronger stings (**Improved Stings**) to a full set of pet talents.
+Beast-Marks levels exactly like Beast Mastery: the cat tanks and you shoot from range. The split puts a full set of pet talents first and adds Marksmanship's cheaper shots (**Efficiency**) and stronger stings (**Improved Stings**).
 
 **Why it works**
 
-- Send the pet first, then **Hunter's Mark** and **Serpent Sting** while the mob is still healthy (the fight lab: above 30% and 40% of its health). The cat holds the mob until your threat passes 130% of its own, and **Unleashed Fury**, **Ferocity** and **Frenzy** make it a real part of your damage.
-- **Summon Hawk** (level 25) gets the timer it shares with **Arcane Shot**: the fight lab never casts **Arcane Shot** with this rotation (about 2% faster per kill), and the hawks do about a tenth of your damage at 60.
-- **Aimed Shot** gets the cooldown it shares with **Multi-Shot**: on one mob the fight lab never casts **Multi-Shot** (about 2.5% faster), and it skips **Aimed Shot** once the mob is below a quarter of its health.
-- **Auto Shot** does most of the rest and cannot fire within 8 yards: step back out if the mob ends up beside you.
-- **Rapid Fire** at the start of a fight when it is ready (a 5-minute cooldown in this build), and **Mend Pet** when the pet drops below about a third.
+- Send the pet first, then **Hunter's Mark** and **Serpent Sting** while the mob is still healthy (the fight lab: above 30% and 40% of its health). The cat holds the mob until your threat passes 130% of its own, and **Unleashed Fury**, **Ferocity**, **Bestial Discipline** and **Frenzy** make it a real part of your damage: **Unleashed Fury** and **Bestial Discipline** were the build's most valuable talents in the fight lab at 60.
+- **Aimed Shot** is your only cooldown shot on a single mob, while the mob has more than a quarter of its health. The tuned rules never cast Multi-Shot (about 4% faster per kill), Arcane Shot (about 2%) or **Summon Hawk** (about 2%).
+- **Summon Hawk** (level 34) is only the point that opens the next row (**Frenzy**); the fight lab gives it no value while leveling. Don't spend mana on it.
+- **Auto Shot** does most of the rest and cannot fire within 8 yards: step back out if the mob ends up beside you. **Mend Pet** when the pet drops below about a third; **Spirit Bond** (levels 32-33) heals you both between pulls.
+- **Rapid Fire** at the start of a fight when it is ready (a 5-minute cooldown in this build: no **Rapid Killing**).
 
 **Caveats**
 
 - This build takes neither **Bestial Wrath** nor **Intimidation**: skip the step that names them.
-- From level 56, **Improved Tracking** adds damage only against the creature type you are tracking: switch tracking to what you are killing.
-- The fight lab drinks only below 15% mana, which measured slightly faster than drinking at a third. A mob that turns on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Wing Clip** and **Raptor Strike** hold it until the pet's Growl takes it back.
+- From level 57, **Improved Tracking** adds damage only against the creature type you are tracking: switch tracking to what you are killing.
+- The fight lab drinks only below 15% mana, which measured slightly faster than drinking at a third. A mob that turns on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite**, **Raptor Strike** and **Wing Clip** hold it until the pet's Growl takes it back.
+- Watch your ranks at the top levels: in the beta client (build 70425) **Trueshot Aura** rank 5 gives +50 attack power against rank 4's +75, **Aspect of the Hawk** rank 6 +55 against rank 5's +90 and **Hunter's Mark** rank 4 +71 against rank 3's +98. Keep casting the stronger lower rank from your spellbook (the fight lab does) until Blizzard fixes the numbers.
 
 **When to change it**
 
@@ -56,33 +57,33 @@ One point per level from 10, in this order:
 |---|---|---|
 | 10-14 | Deadly Aspects (Beast Mastery) | 5 |
 | 15-16 | Focused Fire (Beast Mastery) | 2 |
-| 17-18 | Pathfinding (Beast Mastery) | 2 |
-| 19 | Endurance Training (Beast Mastery) | 1 |
+| 17 | Pathfinding (Beast Mastery) | 1 |
+| 18 | Endurance Training (Beast Mastery) | 1 |
+| 19 | Improved Revive Pet (Beast Mastery) | 1 |
 | 20-24 | Unleashed Fury (Beast Mastery) | 5 |
-| 25 | Summon Hawk (Beast Mastery) | 1 |
-| 26-29 | Ferocity (Beast Mastery) | 4 |
-| 30 | Bestial Discipline (Beast Mastery) | 1 |
-| 31 | Ferocity (Beast Mastery) | 1 |
-| 32 | Bestial Discipline (Beast Mastery) | 1 |
-| 33 | Spirit Bond (Beast Mastery) | 1 |
-| 34 | Improved Revive Pet (Beast Mastery) | 1 |
+| 25-29 | Ferocity (Beast Mastery) | 5 |
+| 30-31 | Bestial Discipline (Beast Mastery) | 2 |
+| 32-33 | Spirit Bond (Beast Mastery) | 2 |
+| 34 | Summon Hawk (Beast Mastery) | 1 |
 | 35-37 | Frenzy (Beast Mastery) | 3 |
 | 38-42 | Lethal Attacks (Marksmanship) | 5 |
 | 43-47 | Efficiency (Marksmanship) | 5 |
-| 48-52 | Careful Aim (Marksmanship) | 5 |
-| 53-55 | Improved Stings (Marksmanship) | 3 |
-| 56-60 | Improved Tracking (Survival) | 5 |
+| 48-50 | Improved Stings (Marksmanship) | 3 |
+| 51-52 | Careful Aim (Marksmanship) | 2 |
+| 53 | Trueshot Aura (Marksmanship) | 1 |
+| 54-56 | Careful Aim (Marksmanship) | 3 |
+| 57-60 | Improved Tracking (Survival) | 4 |
 
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
 | 20 | 17 |
-| 30 | 22 |
-| 40 | 26 |
-| 50 | 27 |
-| 60 | 28 |
+| 30 | 20 |
+| 40 | 24 |
+| 50 | 26 |
+| 60 | 27 |
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-16 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-22 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
 

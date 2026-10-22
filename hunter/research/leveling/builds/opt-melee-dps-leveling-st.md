@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dps` and profile `leveling-st`: score +41.2% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dps` and profile `leveling-st`: score +41.7% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -73,36 +73,37 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dp
 
 ## Core talents (priority order)
 
-1. **Strider Kick** — Removing it costs 5.9 points of score in this model.
-2. **Resourcefulness** — Removing it costs 4.4 points of score in this model.
-3. **Expose Prey** — Removing it costs 4.2 points of score in this model.
-4. **Predator's Edge** — Removing it costs 3.6 points of score in this model.
-5. **Lethal Attacks** — Removing it costs 3.6 points of score in this model.
-6. **Unleashed Fury** — Removing it costs 2.0 points of score in this model.
-7. **Careful Aim** — Removing it costs 1.8 points of score in this model.
+1. **Strider Kick** — Removing it costs 6.2 points of score in this model.
+2. **Resourcefulness** — Removing it costs 4.8 points of score in this model.
+3. **Predator's Edge** — Removing it costs 4.7 points of score in this model.
+4. **Expose Prey** — Removing it costs 4.1 points of score in this model.
+5. **Lethal Attacks** — Removing it costs 2.9 points of score in this model.
+6. **Careful Aim** — Removing it costs 1.9 points of score in this model.
+7. **Unleashed Fury** — Removing it costs 1.8 points of score in this model.
 8. **Improved Tracking** — Removing it costs 1.4 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
 The melee hunter: Serpent Sting from range, then stand and fight beside the pet: Raptor Strike queued on the next swing whenever it is ready, Deterrence when low, Counterattack after a parry, Mongoose Bite when a dodge or Expose Prey activates it, Strider Kick on cooldown, Immolation Trap at your feet, then (with Expose Prey) Hunter's Mark in a free global cooldown; Mend Pet for the pet.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): never cast Serpent Sting. Together +1.7% time per kill saved for `leveling-melee` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-18, on top of the priority below): never cast Serpent Sting. Together +2.4% time per kill saved for `leveling-melee` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/melee-dps-opt.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee (off-hand) | 3.2 | 4.2 | 5.5 | 6.5 | 7.2 | 11% |
-| Claw | 3.6 | 4.1 | 4.7 | 5.0 | 5.3 | 7% |
-| Melee | 1.8 | 2.4 | 3.4 | 4.1 | 4.5 | 12% |
-| Growl | 1.9 | 2.4 | 3.1 | 3.4 | 3.6 | 0% |
-| Raptor Strike | 1.4 | 1.8 | 2.2 | 2.5 | 2.6 | 12% |
-| Strider Kick | 0.0 | 1.7 | 2.0 | 2.2 | 2.4 | 8% |
-| Mongoose Bite | 0.0 | 0.0 | 0.9 | 1.1 | 1.2 | 6% |
+| Claw | 4.8 | 5.4 | 6.1 | 6.5 | 6.9 | 9% |
+| Melee (off-hand) | 3.2 | 4.1 | 5.3 | 6.2 | 6.9 | 11% |
+| Melee | 1.8 | 2.3 | 3.3 | 3.9 | 4.3 | 11% |
+| Growl | 1.9 | 2.3 | 3.0 | 3.2 | 3.5 | 0% |
+| Raptor Strike | 1.4 | 1.8 | 2.1 | 2.4 | 2.6 | 12% |
+| Strider Kick | 0.0 | 1.6 | 2.0 | 2.1 | 2.3 | 8% |
+| Bite | 1.0 | 1.2 | 1.6 | 1.8 | 1.9 | 4% |
+| Mongoose Bite | 0.0 | 0.0 | 0.8 | 1.0 | 1.1 | 5% |
 | Auto Shot | 1.2 | 1.2 | 1.2 | 1.1 | 1.1 | 5% |
-| Bite | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2% |
 | Hunter's Mark | 0.0 | 0.0 | 1.0 | 1.0 | 1.0 | 0% |
-| Immolation Trap | 0.5 | 0.5 | 0.5 | 0.6 | 1.0 | 13% |
+| Immolation Trap | 0.5 | 0.5 | 0.5 | 0.6 | 0.9 | 11% |
+| Lacerate | 0.0 | 0.2 | 0.2 | 0.3 | 0.3 | 2% |
 | Mend Pet | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes

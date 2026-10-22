@@ -110,16 +110,14 @@ The Subtlety raid build the open talent search found on 2026-10-10: every legal 
 |---|---|---|
 | 1 | if time left on Expose Armor < 5 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.9 |
 | 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 160s: cast Slice and Dice | 0.7 |
-| 3 | if energy ≥ 30 and combo points ≤ 1 and Slice and Dice is up and time left in the fight > 10: cast Vanish (rank 1) | 0.7 |
-| 4 | cast Premeditation | 0.7 |
-| 5 | cast Garrote | 0.7 |
-| 6 | if not Rupture is on the target and time left in the fight > 12: cast Rupture | 4.8 |
-| 7 | if Slice and Dice is up: use every other cooldown when ready | as ready |
-| 8 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.3 |
-| 9 | cast Hemorrhage | 19.6 |
-| 10 | cast Preparation | 0.3 |
+| 3 | cast Premeditation | 0.7 |
+| 4 | cast Garrote | 0.7 |
+| 5 | if not Rupture is on the target and time left in the fight > 12: cast Rupture | 4.8 |
+| 6 | if Slice and Dice is up: use every other cooldown when ready | as ready |
+| 7 | cast Hemorrhage | 19.6 |
+| 8 | cast Preparation | 0.3 |
 
-Lines of the simulator's rotation these builds never cast: cast Ambush (its condition never held in these fights); cast Blade Flurry (needs the Blade Flurry talent).
+Lines of the simulator's rotation these builds never cast: cast Vanish, cast Ambush, cast Eviscerate (rank 8) (its condition never held in these fights); cast Blade Flurry (needs the Blade Flurry talent).
 
 Damage by ability:
 

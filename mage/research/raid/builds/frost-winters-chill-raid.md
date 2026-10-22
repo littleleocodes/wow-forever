@@ -99,13 +99,11 @@ Winter's Chill now buffs Frostbolt and Ice Lance crit (demo text says it stacks 
 
 | # | Priority (the first line whose condition holds is cast) | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) casts/min |
 |---|---|---|
-| 1 | if mana % ≤ 60%: cast Mana Ruby (mana gem) | as ready |
+| 1 | if mana % ≤ 60%: cast Mana Ruby | as ready |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles | 3.7 |
-| 4 | if time left in the fight ≥ 3s: cast Frostbolt | 20.2 |
-| 5 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.3 |
+| 3 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.3 |
 
-Lines of the simulator's rotation these builds never cast: cast Ice Lance (needs the Ice Lance talent); cast Evocation (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent).
+Lines of the simulator's rotation these builds never cast: cast Arcane Missiles (rank 7), cast Evocation, cast Frostbolt (rank 10) (its condition never held in these fights); cast Ice Lance (needs the Ice Lance talent); cast Arcane Blast (needs the Arcane Blast talent).
 
 Damage by ability:
 

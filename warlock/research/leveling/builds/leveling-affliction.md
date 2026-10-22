@@ -53,6 +53,34 @@ Allocation and order adopted on 2026-09-28 from `cand-affliction-r4`, the fastes
 |---|---|---|---|
 | **Destructive Reach** | 2/2 | changed | Increases the range of your Destruction spells by 20%. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Demonology | Unholy Power | 5 | 0/5/0 |
+| 15-16 | Demonology | Improved Health Funnel | 2 | 0/7/0 |
+| 17-18 | Demonology | Demonic Energies | 2 | 0/9/0 |
+| 19-21 | Demonology | Improved Voidwalker | 3 | 0/12/0 |
+| 22 | Demonology | Demonic Sacrifice | 1 | 0/13/0 |
+| 23-25 | Demonology | Improved Sayaad | 3 | 0/16/0 |
+| 26-27 | Demonology | Master Summoner | 2 | 0/18/0 |
+| 28 | Demonology | Decimation | 1 | 0/19/0 |
+| 29 | Demonology | Fel Domination | 1 | 0/20/0 |
+| 30 | Demonology | Soul Link | 1 | 0/21/0 |
+| 31-33 | Demonology | Demonic Knowledge | 3 | 0/24/0 |
+| 34-35 | Demonology | Improved Felhunter | 2 | 0/26/0 |
+| 36-40 | Affliction | Improved Corruption | 5 | 5/26/0 |
+| 41-43 | Affliction | Suppression | 3 | 8/26/0 |
+| 44-45 | Affliction | Improved Life Tap | 2 | 10/26/0 |
+| 46 | Affliction | Amplify Curse | 1 | 11/26/0 |
+| 47-48 | Affliction | Improved Bane of Agony | 2 | 13/26/0 |
+| 49-51 | Affliction | Pandemic | 3 | 16/26/0 |
+| 52-55 | Affliction | Malevolence | 4 | 20/26/0 |
+| 56 | Affliction | Siphon Life | 1 | 21/26/0 |
+| 57 | Affliction | Malevolence | 1 | 22/26/0 |
+| 58 | Affliction | Curse of Exhaustion | 1 | 23/26/0 |
+| 59-60 | Destruction | Destructive Reach | 2 | 23/26/2 |
+
 ## Core talents (priority order)
 
 1. **Siphon Life** — Self-healing DoT at 30, same level as Classic; Drain Hope prerequisite. Fight lab (2026-09-28): removing it costs +10% time per kill at 60, -3% at 30.
@@ -82,33 +110,32 @@ Allocation and order adopted on 2026-09-28 from `cand-affliction-r4`, the fastes
 
 Single-target leveling fights against normal mobs of your level with a Voidwalker: the pet runs in and meets the mob halfway, Torments it every 5 s, and holds it until your threat passes 130% of its own (it takes the mob back once its threat passes yours by 10%). You cast Corruption, Bane of Agony, Siphon Life and Immolate, channel Wrack once the DoTs are up, fill with Shadow Bolt while mana is plentiful and the wand otherwise, Drain Life when hurt, Life Tap when low on mana, Fear or Death Coil a mob that reaches you. Between fights: 2 s loot, 6 s travel, Life Tap back to 70% mana, Consume Shadows or Health Funnel for the pet, food only below 55% health, a 10-12 s re-summon after a pet death; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): Shadow Bolt only while the mob has more than 35% health; Corruption only while the mob has more than 35% health; Life Tap only when the mob is below 35% health; Curse of the Elements only above 30% mana. Together +10.8% time per kill saved for `leveling-affliction` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-20, on top of the priority below): Shadow Bolt only while the mob has more than 35% health; never cast Curse of the Elements; Corruption only while the mob has more than 35% health; Corruption only above 15% mana. Together +11.6% time per kill saved for `leveling-affliction` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/affliction-leveling.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Wand | 2.6 | 5.5 | 8.2 | 9.7 | 8.9 | 11% |
-| Torment | 3.3 | 5.0 | 6.3 | 6.8 | 5.7 | 0% |
-| Corruption | 1.1 | 1.1 | 1.3 | 1.3 | 1.2 | 24% |
-| Bane of Agony | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 25% |
-| Siphon Life | 0.0 | 1.0 | 1.0 | 1.0 | 1.0 | 11% |
-| Life Tap | 0.3 | 0.8 | 0.9 | 0.9 | 0.8 | 0% |
-| Curse of the Elements | 0.7 | 0.5 | 0.6 | 0.7 | 0.8 | 0% |
-| Shadow Bolt | 1.7 | 1.0 | 1.1 | 1.0 | 0.7 | 8% |
-| Drain Life | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 2% |
-| Fear | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 0% |
-| Immolate | 0.4 | 0.1 | 0.0 | 0.0 | 0.0 | 1% |
+| Wand | 2.6 | 5.5 | 7.1 | 9.2 | 8.1 | 17% |
+| Torment | 3.2 | 4.3 | 4.5 | 4.8 | 4.3 | 0% |
+| Shadow Bolt | 2.2 | 2.6 | 2.7 | 2.2 | 1.4 | 15% |
+| Corruption | 1.0 | 1.0 | 1.0 | 1.1 | 1.1 | 20% |
+| Bane of Agony | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 21% |
+| Siphon Life | 0.0 | 0.0 | 0.0 | 0.0 | 1.0 | 9% |
+| Life Tap | 0.1 | 0.1 | 0.1 | 0.1 | 0.4 | 0% |
+| Drain Life | 0.0 | 0.0 | 0.0 | 0.0 | 0.3 | 2% |
+| Fear | 0.0 | 0.0 | 0.0 | 0.0 | 0.3 | 0% |
+| Immolate | 0.6 | 0.5 | 0.5 | 0.4 | 0.3 | 3% |
 | Death Coil | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Create Healthstone | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes
 
 - Adopted from the fight-lab race on 2026-09-28: cand-affliction-r4 beat the previous draft by +4.7% (level-weighted time per kill); the rationale below the fight-lab note predates the adoption where it names talents no longer taken.
 - Loop: Voidwalker Torment -> Corruption + Bane of Agony (+ Siphon Life) on 2-3 mobs -> wand/Shadow Bolt -> Drain Hope to finish -> Life Tap, Drain Life if needed.
 - A Soul Link build is now cheap (Soul Link at Demonology tier 5 = level 30) and would be tankier; not drafted because Classic's proven leveling path is Affliction.
-- Fight lab (leveling/fightlab/affliction-leveling.md, 2026-10-16, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 31/36/43/44/41 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-affliction-leveling-leveling-st is +2% at 60 and +1% at 30 (negative = faster); race winner over the leveling: leveling-affliction; top talents at 60: Siphon Life +7%, Demonic Knowledge +6%, Improved Voidwalker +5%, Soul Link +2%; about zero: Demonic Aegis, Demonic Embrace, Demonic Sacrifice, Fel Vitality, Improved Imp. See the Fight lab section of leveling/README.md.
 - 2026-10-16 (repair_builds.py, client build 70425 trees): 23/26/2 -> 23/26/2; Malediction 3 gone; +1 Suppression (tier gating for Amplify Curse); +1 Suppression (tier gating for Amplify Curse); +1 Suppression (tier gating for Amplify Curse); order dropped (order_repair.py) (refill: the affliction-leveling model, leveling-st).
+- 2026-10-18 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the demonology-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree first 33.0 s per kill; stats model 33.5 s; own tree last 33.7 s.
+- Fight lab (leveling/fightlab/affliction-leveling.md, 2026-10-22, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 31/39/42/40/38 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-affliction-leveling-leveling-st is -5% at 60 and +0% at 30 (negative = faster); race winner over the leveling: cand-affliction-r3; top talents at 60: Siphon Life +9%, Suppression +7%, Demonic Knowledge +5%, Improved Voidwalker +4%; about zero: Decimation, Demonic Embrace, Demonic Sacrifice, Improved Imp. See the Fight lab section of leveling/README.md.
 
 ## Open questions (verify in the live game)
 

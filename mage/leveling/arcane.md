@@ -2,47 +2,48 @@
 
 [Mage](../README.md) > [Leveling (solo)](README.md) > Arcane
 
-**[Arcane — Leveling](../research/leveling/builds/arcane-leveling.md)** (30/0/21) — [open the talent tree](https://talentsforever.com/mage/60/23021510301030153--05050032010013001-6)
+**[Arcane — Leveling](../research/leveling/builds/arcane-leveling.md)** (30/0/21) — [open the talent tree](https://talentsforever.com/mage/60/230021510301030153--05050032010013001-7)
 
 > 🔬 Derived build: searched in the fight lab (this project's leveling simulator) from the spec's builds and the stats model's best one. A model of the beta, to check at launch.
 
 ## How to play
 
-**Not in this build:** **Arcane Blast**, **Arcane Power**, **Missile Barrage** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
+**Not in this build:** **Arcane Blast**, **Arcane Power**, **Arcane Wrath**, **Missile Barrage** are talents this build does not take: skip the lines that use them. The fight lab played the build without them.
 
 **Before the fight:** **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up. Pull from as far away as you can; **Presence of Mind** at the pull, and **Arcane Power** too while you have more than half your mana.
 
 **In the fight**, top to bottom:
 
-1. **Arcane Blast** while the mob walks in: at most two in a row, only if the cast ends before the mob reaches you and costs no more than a quarter of your mana.
-2. **Arcane Missiles** to spend the stacks, and at once when **Missile Barrage** lights up (after your two stacks, or when the mob is on you); none once the mob is below about a third of its health.
-3. **Frost Nova** when the mob reaches you (**Cone of Cold** if it is on cooldown and the mob is above a third of its health), then step back; **Ice Lance** while it is frozen.
-4. **Frostbolt** when **Arcane Missiles** is out of mana, above a third of the mob's health; below a third, finish with **Fire Blast** (not below a tenth), **Ice Lance** or your wand.
-5. **Counterspell** a mob that casts spells.
+1. With **Arcane Wrath**: cast it first on the pull if it will land before the mob reaches you, and again whenever it is ready and there is time.
+2. **Arcane Blast** while the mob walks in: at most two in a row, only if the cast ends before the mob reaches you and costs no more than a quarter of your mana. Each stack gives all your spells spell damage (15% of your Intellect) for 15 seconds.
+3. **Arcane Missiles** as your channel, and at once when **Missile Barrage** lights up (after your two stacks, or when the mob is on you); only while the mob has more than about a third (35%) of its health.
+4. **Frost Nova** when the mob reaches you, then step back; **Ice Lance** while it is frozen. No Cone of Cold.
+5. **Frostbolt** when **Arcane Missiles** is out of mana or the mob is below a third of its health, but not below a fifth; then finish with **Fire Blast** (not below a tenth), an **Ice Lance** that will kill, or your wand.
+6. **Counterspell** a mob that casts spells.
 
 **Between fights:** Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.
 
 ## Why this rotation
 
-Arcane levels on **Arcane Missiles** from range and the Frost tree's freeze up close: **Frost Nova**, step back, **Ice Lance** the frozen mob. A build with **Arcane Blast** stacks it twice before the Missiles; the build on this page skips **Arcane Blast**, **Missile Barrage** and **Arcane Power**, so it opens with the Missiles.
+Arcane levels on **Arcane Missiles** from range and the Frost tree's freeze up close: **Frost Nova**, step back, **Ice Lance** the frozen mob. The build on this page takes no **Arcane Blast**, **Arcane Wrath**, **Missile Barrage** or **Arcane Power**, so it opens with the Missiles; at level 60 the Missiles and **Ice Lance** are each a little under half of its damage in the fight lab.
 
 **Why it works**
 
-- Your first 21 points (levels 10-30) go into Frost for **Ice Lance**, **Shatter**, **Frostbite** and **Ice Shards**. **Ice Lance** is not in the list above, but the Arcane rotation casts it whenever the mob is frozen: 300% more damage to a frozen target, plus **Shatter**'s crit.
-- **Arcane Missiles** is your main spell at range, a 5-second channel. The fight lab casts it only while the mob has more than 35% health (measured faster): below that a full channel overkills. The 2026-10-15 re-tune stops **Frostbolt** and **Cone of Cold** at 35% too, so below a third finish with **Fire Blast** (not below 10%), **Ice Lance** or the wand.
-- **Frost Nova** when the mob reaches you, then step back: **Arcane Missiles** is a channel, and without **Improved Channeling** every hit you take cuts it short.
-- With **Arcane Blast** (a talent this build skips), cast it twice while the mob walks in: each cast makes your next other spell 10% stronger (**Arcane Missiles** 15%, by beta logs) and the next **Arcane Blast** 175% more expensive, so stop at two and let **Arcane Missiles** spend the stacks.
-- **Presence of Mind** at the pull makes your next spell with a cast time instant. Low on mana and the mob above 35% health, cast **Frostbolt** instead of **Arcane Missiles**: 290 mana at top rank against 655.
+- Your first 21 points (levels 10-30) go into Frost for **Ice Lance** (20), **Shatter**, **Frostbite** and **Ice Shards**. The Arcane rotation casts **Ice Lance** whenever the mob is frozen: 200% more damage to a frozen target, plus **Shatter**'s 50% more crit chance.
+- **Arcane Missiles** is your main spell at range, a 5-second channel, but only while the mob has more than 35% health: below that a full channel overkills. **Frostbolt** takes over down to a fifth of the mob's health, then **Fire Blast** (not below a tenth), an **Ice Lance** or the wand finish it.
+- **Frost Nova** when the mob reaches you, then step back: **Arcane Missiles** is a channel, and this build has no **Improved Channeling** to keep hits from cutting it short.
+- **Presence of Mind** (level 51) at the pull makes your next spell with a cast time instant. Low on mana and the mob above a fifth of its health, cast **Frostbolt** instead of **Arcane Missiles**: 290 mana at top rank against 655.
 
 **Caveats**
 
-- The fight lab's search for this spec also started from an **Arcane Blast** build and kept the build without it. Skip the list's **Arcane Blast**, **Missile Barrage** and **Arcane Power** parts unless you take those talents.
-- **Arcane Missiles** is expensive: drink below a third of your mana and use **Evocation** between fights when it is ready.
+- The list's **Arcane Wrath**, **Arcane Blast**, **Missile Barrage** and **Arcane Power** parts are for builds that take those talents: skip them with this one.
+- **Arcane Missiles** is expensive: drink below a third of your mana and use **Evocation** between fights when it is ready and you are under 40% mana.
+- **Cone of Cold** stays out of single pulls: the tuned rotation (2026-10-19) never casts it.
 - Pulls of several mobs: **Arcane Explosion** hits everything within 10 yards.
 
 **When to change it**
 
-- Below 35% of the mob's health, stop starting **Arcane Missiles** and **Frostbolt** and finish with **Fire Blast**, an **Ice Lance** or the wand; below 10%, an **Ice Lance** or the wand only.
+- Below 35% of the mob's health, stop starting **Arcane Missiles**; below a fifth, stop starting **Frostbolt** too and finish with **Fire Blast**, an **Ice Lance** or the wand; below a tenth, an **Ice Lance** or the wand only.
 - Against a caster mob, **Counterspell** it when it starts a cast, as every mage rotation in the fight lab does.
 
 ## Talents while leveling
@@ -83,11 +84,11 @@ One point per level from 10, in this order:
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
 | 20 | 31 |
-| 30 | 36 |
-| 40 | 38 |
-| 50 | 32 |
-| 60 | 29 |
+| 30 | 39 |
+| 40 | 42 |
+| 50 | 36 |
+| 60 | 32 |
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-16 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-22 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
 

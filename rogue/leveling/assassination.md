@@ -2,7 +2,7 @@
 
 [Rogue](../README.md) > [Leveling (solo)](README.md) > Assassination
 
-**[Assassination (optimized)](../research/leveling/builds/opt-combat-swords-raid-leveling-st.md)** (33/16/2) — [open the talent tree](https://talentsforever.com/rogue/60/1250201045152005-32303301001-002-6)
+**[Assassination (optimized, solo at 60)](../research/leveling/builds/opt-combat-swords-raid-solo-60.md)** (33/16/2) — [open the talent tree](https://talentsforever.com/rogue/60/1250201045152005-32303301001-002-7)
 
 ## How to play
 
@@ -16,7 +16,7 @@
 4. **Cold Blood** right before an **Eviscerate** at 5 points.
 5. **Riposte** after you parry.
 6. **Kick** a caster mob's spell.
-7. **Evasion** when your health gets low.
+7. **Evasion** below half health while the mob still has more than 30% of its health.
 
 **Between fights:** Bandage below 60% health, eat below 40%.
 
@@ -30,14 +30,15 @@ Assassination levels with two daggers but plays like Combat: **Garrote** from st
 - Open with **Garrote** from stealth: a combo point and an 18-second bleed. The fight lab measured a **Cheap Shot** opener about 10% slower per kill: it gives 2 points and a stun but no damage, for 60 energy.
 - **Seal Fate** turns every **Sinister Strike** crit into 2 points, and **Malice**, **Lethality** and **Remorseless Attacks** make those crits frequent and big. Pull the next mob within 20 seconds of a kill so the 40% crit chance from **Remorseless Attacks** is not wasted.
 - **Eviscerate** at 5 points, or earlier when it would kill the mob: points left on a dead mob are lost. Press **Cold Blood** right before an **Eviscerate** at 5 points; otherwise your next **Sinister Strike** uses it up.
-- Keep **Instant Poison** on the main hand and **Deadly Poison** on the off hand: every weapon strike can apply them, and this build maxes **Improved Poisons** and **Vile Poisons**.
+- Keep **Instant Poison** on the main hand and **Deadly Poison** on the off hand: every weapon strike can apply them, and the Assassination tree adds **Improved Poisons** and **Vile Poisons**.
 - Skip **Slice and Dice**: fights end before it pays back, and the fight lab measured leveling without it about 1% faster per kill with daggers.
 
 **Caveats**
 
-- **Kidney Shot** is not in the list: the tuned rules never cast it (about 1.3% faster per kill). Keep it for an add or a pull that goes wrong.
-- This build has no **Blade Flurry** or **Adrenaline Rush**: **Evasion** is your only cooldown when a pull goes wrong.
-- Eat only below 40% health and bandage below 60%: the fight lab measured eating that late about 4% faster than eating at 65%.
+- **Kidney Shot** is not in the list: the tuned rules never cast it (about 1.2% faster per kill). Keep it for an add or a pull that goes wrong.
+- **Kick** a caster mob's spell: with daggers the tuned rules keep it (a quarter of a cast per kill).
+- Without **Blade Flurry** or **Adrenaline Rush**, **Evasion** is your only cooldown when a pull goes wrong.
+- Eat only below 40% health and bandage below 60%: the fight lab measured eating that late about 4.5% faster than eating at 65%.
 
 **When to change it**
 
@@ -50,10 +51,10 @@ One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
-| 10-11 | Improved Sinister Strike (Combat) | 2 |
-| 12-13 | Improved Eviscerate (Combat) | 2 |
-| 14-15 | Remorseless Attacks (Assassination) | 2 |
-| 16 | Improved Eviscerate (Combat) | 1 |
+| 10 | Improved Sinister Strike (Combat) | 1 |
+| 11-12 | Remorseless Attacks (Assassination) | 2 |
+| 13 | Improved Sinister Strike (Combat) | 1 |
+| 14-16 | Improved Eviscerate (Combat) | 3 |
 | 17 | Deflection (Combat) | 1 |
 | 18-19 | Precision (Combat) | 2 |
 | 20-21 | Deflection (Combat) | 2 |
@@ -65,14 +66,14 @@ One point per level from 10, in this order:
 | 33-34 | Murder (Assassination) | 2 |
 | 35 | Improved Gouge (Assassination) | 1 |
 | 36 | Relentless Strikes (Assassination) | 1 |
-| 37-40 | Lethality (Assassination) | 4 |
-| 41 | Cold Blood (Assassination) | 1 |
-| 42-45 | Improved Poisons (Assassination) | 4 |
-| 46-47 | Vigor (Assassination) | 2 |
-| 48 | Improved Poisons (Assassination) | 1 |
-| 49-50 | Vile Poisons (Assassination) | 2 |
-| 51-55 | Seal Fate (Assassination) | 5 |
-| 56-57 | Opportunity (Subtlety) | 2 |
+| 37-38 | Opportunity (Subtlety) | 2 |
+| 39-42 | Lethality (Assassination) | 4 |
+| 43 | Cold Blood (Assassination) | 1 |
+| 44-47 | Improved Poisons (Assassination) | 4 |
+| 48-49 | Vigor (Assassination) | 2 |
+| 50 | Improved Poisons (Assassination) | 1 |
+| 51-52 | Vile Poisons (Assassination) | 2 |
+| 53-57 | Seal Fate (Assassination) | 5 |
 | 58-60 | Vile Poisons (Assassination) | 3 |
 
 ## The numbers
@@ -81,14 +82,10 @@ One point per level from 10, in this order:
 |---|---|
 | 20 | 21 |
 | 30 | 23 |
-| 40 | 28 |
+| 40 | 27 |
 | 50 | 29 |
 | 60 | 28 |
 
-## Other builds of this spec
-
-- [Leveling — Assassination with Combat's weapon talents](../research/leveling/builds/leveling-combat-swords.md) (31/20/0, 27 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/rogue/60/3250231001152105-320033112014--6)
-
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-16 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-22 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
 

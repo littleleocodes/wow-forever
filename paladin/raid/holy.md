@@ -2,9 +2,9 @@
 
 [Paladin](../README.md) > [Raid (group)](README.md) > Holy
 
-**[Holy — Raid healing](../research/raid/builds/holy-ml-heal.md)** (34/11/6) — [open the talent tree](https://talentsforever.com/paladin/60/5532020320510015-1501301-0501-6)
+**[Holy — Raid healing](../research/raid/builds/holy-ml-heal.md)** (33/12/6) — [open the talent tree](https://talentsforever.com/paladin/60/5531020321510005-150130101-0501-7)
 
-> 🔬 Derived build: found by this project's deep search over every legal build of the spec in the healer lab (this project's healing model; healers are not in the community simulator), then raced against the spec's builds. A model of the beta, to check at launch.
+> 🔬 Derived build: found by this project's deep search over every legal build of the spec in the healer lab (this project's healing model; healers are not in the community simulator), then raced against the spec's builds; it beat the hand-made build (Holy — Raid Healer), which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to heal
 
@@ -15,15 +15,15 @@ You heal with two spells: **Holy Light** on the tank, in the rank that covers wh
 - Keep **Blessing of Light** on the tank: it adds up to 400 to each **Holy Light** and 115 to each **Flash of Light** he receives. Start a **Holy Light** when he is missing at least half of one and more hits are coming; in the healer lab the two spells do almost all your healing.
 - Downrank: cast the smallest rank that heals about what the target is missing. Forever gives ranks far below your level less of your +healing (TBC's rule, our assumption): **Holy Light** ranks 7 to 9 and **Flash of Light** ranks 5 and 6 lose nothing or almost nothing, while rank 6 **Holy Light** keeps 85% of the bonus and lower ranks less, so stay near the top.
 - **Flash of Light** is your raid heal and your emergency heal: the lab heals other raid members once they fall below half health, and anyone under a quarter of their health gets a **Flash of Light** first.
-- **Divine Favor** (2-minute cooldown) goes before a top-rank **Holy Light** on a tank who is missing most of one: a sure critical heal, which **Illumination** then refunds.
+- **Divine Favor** (2-minute cooldown) goes before a top-rank **Holy Light** on a tank who is missing most of one: a sure critical heal, which **Illumination** then refunds. **Infusion of Light** (one point) makes your next **Holy Light** within 15 seconds half a second faster after a critical **Flash of Light**.
 - Mana: **Illumination** returns half the base cost of each critical **Holy Light** or **Flash of Light**, **Holy Power** adds 5% crit to your heals, **Healing Light** 12% healing, and **Reverence** keeps 30% of your mana regeneration going while you cast. Drink a mana potion as soon as you are below 80% mana (after the first 45 seconds).
 - **Lay on Hands** is for a tank about to die (the lab uses it under 20% health): it heals him for your maximum health but drains all your mana, and its 20-minute cooldown makes it once a fight.
 
 **Caveats**
 
 - The healer lab is this project's model of stated assumptions: one tank under boss melee and four raid members under raid damage for five minutes, with no dispels and no spell pushback. Check its numbers at launch.
-- The deep search's winner takes neither **Holy Shock** nor **Light's Vigil**: the healer lab measured more capacity without them. The build therefore has no group heal; **Flash of Light** on the lowest member is your answer to raid damage.
-- **Spiritual Focus** keeps 70% of your **Holy Light** and **Flash of Light** casts from being pushed back; the lab has no pushback, so its value there is unmeasured.
+- The deep search's winner (re-run 2026-10-21, about 2% more capacity than the hand draft) takes neither **Holy Shock** nor **Light's Vigil**: the healer lab measured more capacity without them. The build therefore has no group heal; **Flash of Light** on the lowest member is your answer to raid damage.
+- **Spiritual Focus** (one point) keeps 35% of your **Holy Light** and **Flash of Light** casts from being pushed back; the lab has no pushback, so its value there is unmeasured.
 
 **When to change it**
 
@@ -32,7 +32,7 @@ You heal with two spells: **Holy Light** on the tank, in the rank that covers wh
 
 ## The numbers
 
-Healing capacity 0.58 (the raid damage it heals through in this project's healer lab), 324 healing per second. Healers are not in the community simulator.
+Healing capacity 0.59 (the raid damage it heals through in this project's healer lab), 326 healing per second. Healers are not in the community simulator.
 
 **The gear** (average item level: Pre-BiS 61.5; Phase 1 BiS 66.1; chosen by the stat weights this project's healer lab measures for this build, the healing capacity each stat adds; healers are in no community simulator, so this is our model; each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -57,9 +57,9 @@ Healing capacity 0.58 (the raid damage it heals through in this project's healer
 
 ## Other builds of this spec
 
-- [Holy — Raid Healer](../research/raid/builds/holy-raid-healer.md) (33/0/18) — [open the talent tree](https://talentsforever.com/paladin/60/05320213225101051--352030302-6)
-- [Holy (optimized)](../research/raid/builds/opt-holy-heal-raid-heal.md) (23/0/28) — [open the talent tree](https://talentsforever.com/paladin/60/053200032251--550253311000003-6)
+- [Holy — Raid Healer](../research/raid/builds/holy-raid-healer.md) (33/0/18) — [open the talent tree](https://talentsforever.com/paladin/60/05320213225101051--352030302-7)
+- [Holy (optimized)](../research/raid/builds/opt-holy-heal-raid-heal.md) (31/7/13) — [open the talent tree](https://talentsforever.com/paladin/60/15320003225101051-5002-5500003-7)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-16 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70291). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-22 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70425). Simulations, not in-game measurements. Do not hand-edit.*
 

@@ -45,6 +45,27 @@ The Destruction leveling build derived on 2026-09-30 (derive_leveling.py): searc
 | **Intensity** | 3/3 | changed | Gives you a 70% chance to resist interruption caused by damage while casting or channeling any Destruction spell. |
 | **Fire and Brimstone** | 1/3 | **NEW** | Increases the critical strike chance of your Conflagrate spell by 8%. |
 
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-14 | Affliction | Improved Corruption | 5 | 5/0/0 |
+| 15-19 | Affliction | Suppression | 5 | 10/0/0 |
+| 20 | Affliction | Amplify Curse | 1 | 11/0/0 |
+| 21-22 | Affliction | Improved Bane of Agony | 2 | 13/0/0 |
+| 23-25 | Affliction | Pandemic | 3 | 16/0/0 |
+| 26-29 | Affliction | Malevolence | 4 | 20/0/0 |
+| 30 | Affliction | Siphon Life | 1 | 21/0/0 |
+| 31-35 | Destruction | Bane | 5 | 21/0/5 |
+| 36-40 | Destruction | Molten Skin | 5 | 21/0/10 |
+| 41-45 | Destruction | Aftermath | 5 | 21/0/15 |
+| 46-48 | Destruction | Agonizing Flames | 3 | 21/0/18 |
+| 49-53 | Destruction | Ruin | 5 | 21/0/23 |
+| 54-55 | Destruction | Destructive Reach | 2 | 21/0/25 |
+| 56 | Destruction | Conflagrate | 1 | 21/0/26 |
+| 57-59 | Destruction | Intensity | 3 | 21/0/29 |
+| 60 | Destruction | Fire and Brimstone | 1 | 21/0/30 |
+
 ## Core talents (priority order)
 
 1. **Siphon Life** — The scorer's value in this build: +42.7% of its score (model affliction-leveling).
@@ -63,6 +84,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 - Fight-lab numbers are a model of the beta, not in-game measurements.
 - 2026-10-16 (repair_builds.py, client build 70425 trees): 21/0/30 -> 21/0/30; Malediction 5 gone; +1 Suppression (tier gating for Amplify Curse); +1 Suppression (tier gating for Amplify Curse); +1 Suppression (tier gating for Amplify Curse); +1 Suppression (tier gating for Amplify Curse); +1 Suppression (tier gating for Amplify Curse); order dropped (order_repair.py) (refill: the affliction-leveling model, leveling-st).
 - 2026-10-17 (audit of 2026-10-17, finding 26): core Malediction dropped (not in the allocation; Malediction was replaced by Grim Reach in 70425).
+- 2026-10-18 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the destruction-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 37.8 s per kill; own tree first 39.0 s; own tree last 37.8 s.
 
 ## Open questions (verify in the live game)
 

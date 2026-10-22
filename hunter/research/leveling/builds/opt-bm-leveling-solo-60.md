@@ -1,21 +1,21 @@
-# Optimizer — Pet-first leveling (solo-60) — 18/33/0
+# Optimizer — Pet-first leveling (solo-60) — 20/31/0
 
 *[Hunter](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 18/33/0 (Beast Mastery / Marksmanship / Survival) |
+| **Build** | 20/31/0 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Solo/farming |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-leveling` and profile `solo-60`: score +27.6% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-leveling` and profile `solo-60`: score +27.0% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
-### Beast Mastery (18)
+### Beast Mastery (20)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -24,21 +24,20 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-level
 | **Focused Fire** | 2/2 | **NEW** | Increases all damage you and your pet deal by 2% while your pet is active. |
 | **Pathfinding** | 2/2 | moved | Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 6%. |
 | **Unleashed Fury** | 5/5 | changed | Increases the damage done by your pets and hawks by 15%. |
-| **Summon Hawk** | 1/1 | **NEW** | Command a hawk to dive-bomb your targeted enemy, dealing 32 plus 5% of your Ranged Attack Power Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot. |
-| **Ferocity** | 2/5 | changed | Increases the critical strike chance of your pets and hawks by 4%. |
+| **Ferocity** | 5/5 | changed | Increases the critical strike chance of your pets and hawks by 10%. |
 
-### Marksmanship (33)
+### Marksmanship (31)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
 | **Efficiency** | 5/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
-| **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
 | **Improved Stings** | 3/3 | **NEW** | Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
+| **Careful Aim** | 4/5 | **NEW** | Increases your Attack Power by 80% of your Intellect. |
 | **Rapid Killing** | 2/2 | **NEW** | Reduces the cooldown on your Rapid Fire ability by 2 min. In addition, when you kill a non-trivial enemy or it dies while afflicted by your Serpent Sting, you gain Rapid Killing, increasing the damage of your next Shot ability within 20 sec by 20%. |
 | **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 30. |
 | **Scatter Shot** | 1/1 | moved | A short-range shot that deals 50% weapon damage and disorients the target for 4 sec. Any damage caused will remove the effect. Turns off your attack when used. |
-| **Barrage** | 3/3 | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 10%. |
+| **Barrage** | 2/3 | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 7%. |
 | **Rapid Recuperation** | 2/2 | **NEW** | Afflicting a target with Serpent Sting allows 50% of your Mana Regeneration to continue while casting for 15 sec, increased to 100% when Rapid Killing is consumed. |
 | **Ranged Weapon Specialization** | 5/5 | unchanged | Increases the damage you deal with ranged weapons by 5%. |
 | **Sniper Shot** | 1/1 | **NEW** | A long-range shot that deals ranged damage plus 160 and increases the range of your next 3 Shots by 10 yards for 10 sec. |
@@ -53,35 +52,33 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-level
 |---|---|---|---|---|
 | 10-14 | Marksmanship | Lethal Attacks | 5 | 0/5/0 |
 | 15-19 | Marksmanship | Efficiency | 5 | 0/10/0 |
-| 20-24 | Marksmanship | Careful Aim | 5 | 0/15/0 |
-| 25-27 | Marksmanship | Improved Stings | 3 | 0/18/0 |
+| 20-22 | Marksmanship | Improved Stings | 3 | 0/13/0 |
+| 23-24 | Marksmanship | Careful Aim | 2 | 0/15/0 |
+| 25 | Marksmanship | Trueshot Aura | 1 | 0/16/0 |
+| 26-27 | Marksmanship | Careful Aim | 2 | 0/18/0 |
 | 28-29 | Marksmanship | Rapid Killing | 2 | 0/20/0 |
 | 30-31 | Marksmanship | Rapid Recuperation | 2 | 0/22/0 |
 | 32 | Marksmanship | Scatter Shot | 1 | 0/23/0 |
 | 33-34 | Marksmanship | Barrage | 2 | 0/25/0 |
-| 35-38 | Marksmanship | Ranged Weapon Specialization | 4 | 0/29/0 |
-| 39 | Marksmanship | Trueshot Aura | 1 | 0/30/0 |
+| 35-39 | Marksmanship | Ranged Weapon Specialization | 5 | 0/30/0 |
 | 40 | Marksmanship | Sniper Shot | 1 | 0/31/0 |
 | 41-45 | Beast Mastery | Deadly Aspects | 5 | 5/31/0 |
-| 46-47 | Beast Mastery | Pathfinding | 2 | 7/31/0 |
-| 48-49 | Beast Mastery | Focused Fire | 2 | 9/31/0 |
+| 46-47 | Beast Mastery | Focused Fire | 2 | 7/31/0 |
+| 48-49 | Beast Mastery | Pathfinding | 2 | 9/31/0 |
 | 50 | Beast Mastery | Endurance Training | 1 | 10/31/0 |
 | 51-55 | Beast Mastery | Unleashed Fury | 5 | 15/31/0 |
-| 56 | Beast Mastery | Summon Hawk | 1 | 16/31/0 |
-| 57 | Marksmanship | Ranged Weapon Specialization | 1 | 16/32/0 |
-| 58 | Marksmanship | Barrage | 1 | 16/33/0 |
-| 59-60 | Beast Mastery | Ferocity | 2 | 18/33/0 |
+| 56-60 | Beast Mastery | Ferocity | 5 | 20/31/0 |
 
 ## Core talents (priority order)
 
-1. **Summon Hawk** — Removing it costs 3.9 points of score in this model.
-2. **Efficiency** — Removing it costs 3.1 points of score in this model.
-3. **Rapid Recuperation** — Removing it costs 3.0 points of score in this model.
-4. **Unleashed Fury** — Removing it costs 2.4 points of score in this model.
-5. **Sniper Shot** — Removing it costs 1.9 points of score in this model.
-6. **Careful Aim** — Removing it costs 1.9 points of score in this model.
-7. **Ranged Weapon Specialization** — Removing it costs 1.6 points of score in this model.
-8. **Deadly Aspects** — Removing it costs 1.2 points of score in this model.
+1. **Unleashed Fury** — Removing it costs 3.4 points of score in this model.
+2. **Sniper Shot** — Removing it costs 2.8 points of score in this model.
+3. **Efficiency** — Removing it costs 2.5 points of score in this model.
+4. **Ranged Weapon Specialization** — Removing it costs 2.3 points of score in this model.
+5. **Deadly Aspects** — Removing it costs 1.8 points of score in this model.
+6. **Rapid Recuperation** — Removing it costs 1.5 points of score in this model.
+7. **Ferocity** — Removing it costs 1.5 points of score in this model.
+8. **Improved Stings** — Removing it costs 1.2 points of score in this model.
 
 ## Leveling rotation
 
@@ -89,7 +86,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Report: hunter/talents/forever/optimizer/bm-leveling-solo-60.md
+- Report: hunter/research/talents/forever/optimizer/bm-leveling-solo-60.md
 
 ## Open questions (verify in the live game)
 

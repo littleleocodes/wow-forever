@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-swords-raid` and profile `leveling-st`: score +32.5% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-swords-raid` and profile `leveling-st`: score +31.9% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -53,10 +53,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-s
 
 | Levels | Tree | Talent | Pts | Running total |
 |---|---|---|---|---|
-| 10-11 | Combat | Improved Sinister Strike | 2 | 0/2/0 |
-| 12-13 | Combat | Improved Eviscerate | 2 | 0/4/0 |
-| 14-15 | Assassination | Remorseless Attacks | 2 | 2/4/0 |
-| 16 | Combat | Improved Eviscerate | 1 | 2/5/0 |
+| 10 | Combat | Improved Sinister Strike | 1 | 0/1/0 |
+| 11-12 | Assassination | Remorseless Attacks | 2 | 2/1/0 |
+| 13 | Combat | Improved Sinister Strike | 1 | 2/2/0 |
+| 14-16 | Combat | Improved Eviscerate | 3 | 2/5/0 |
 | 17 | Combat | Deflection | 1 | 2/6/0 |
 | 18-19 | Combat | Precision | 2 | 2/8/0 |
 | 20-21 | Combat | Deflection | 2 | 2/10/0 |
@@ -68,41 +68,41 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-s
 | 33-34 | Assassination | Murder | 2 | 9/16/0 |
 | 35 | Assassination | Improved Gouge | 1 | 10/16/0 |
 | 36 | Assassination | Relentless Strikes | 1 | 11/16/0 |
-| 37-40 | Assassination | Lethality | 4 | 15/16/0 |
-| 41 | Assassination | Cold Blood | 1 | 16/16/0 |
-| 42-45 | Assassination | Improved Poisons | 4 | 20/16/0 |
-| 46-47 | Assassination | Vigor | 2 | 22/16/0 |
-| 48 | Assassination | Improved Poisons | 1 | 23/16/0 |
-| 49-50 | Assassination | Vile Poisons | 2 | 25/16/0 |
-| 51-55 | Assassination | Seal Fate | 5 | 30/16/0 |
-| 56-57 | Subtlety | Opportunity | 2 | 30/16/2 |
+| 37-38 | Subtlety | Opportunity | 2 | 11/16/2 |
+| 39-42 | Assassination | Lethality | 4 | 15/16/2 |
+| 43 | Assassination | Cold Blood | 1 | 16/16/2 |
+| 44-47 | Assassination | Improved Poisons | 4 | 20/16/2 |
+| 48-49 | Assassination | Vigor | 2 | 22/16/2 |
+| 50 | Assassination | Improved Poisons | 1 | 23/16/2 |
+| 51-52 | Assassination | Vile Poisons | 2 | 25/16/2 |
+| 53-57 | Assassination | Seal Fate | 5 | 30/16/2 |
 | 58-60 | Assassination | Vile Poisons | 3 | 33/16/2 |
 
 ## Core talents (priority order)
 
 1. **Seal Fate** — Removing it costs 3.3 points of score in this model.
-2. **Riposte** — Removing it costs 2.9 points of score in this model.
-3. **Cold Blood** — Removing it costs 2.4 points of score in this model.
-4. **Malice** — Removing it costs 2.3 points of score in this model.
-5. **Improved Sinister Strike** — Removing it costs 1.9 points of score in this model.
-6. **Flawless Execution** — Removing it costs 1.8 points of score in this model.
+2. **Riposte** — Removing it costs 3.0 points of score in this model.
+3. **Malice** — Removing it costs 2.4 points of score in this model.
+4. **Improved Poisons** — Removing it costs 1.9 points of score in this model.
+5. **Flawless Execution** — Removing it costs 1.8 points of score in this model.
+6. **Improved Sinister Strike** — Removing it costs 1.8 points of score in this model.
 7. **Precision** — Removing it costs 1.8 points of score in this model.
-8. **Remorseless Attacks** — Removing it costs 1.7 points of score in this model.
+8. **Relentless Strikes** — Removing it costs 1.7 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
 Single-target leveling fights against normal mobs of your level with two swords (the daggers models: two daggers, still Sinister Strike: the mob faces you after the opener, so no Backstab): open from stealth behind the mob with Cheap Shot (Garrote before 26; the mob turns to face you after the opener, so it can parry from then on), Slice and Dice at 1-2 points when it is down, Sinister Strike to 5 points, Eviscerate (Kidney Shot instead when below 60% health, stunning for the tooltip's seconds per point), Eviscerate at fewer points when it would kill the mob, Cold Blood right before a 5-point Eviscerate, Riposte after a parry, Blade Flurry and Adrenaline Rush on the pull, Evasion when low; white swings with both hands (19% extra miss on white dual-wield hits), Instant Poison on the main hand and Deadly Poison on the off hand. Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below 65%; a death costs 90 s. The tuned rules (rotations/rogue-<spec>.json) veto spells and move the thresholds on top of this list.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): never cast Cheap Shot; eat below 40% health; never cast Slice and Dice; never cast Kidney Shot. Together +15.8% time per kill saved for `opt-combat-daggers-raid-leveling-st` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-19, on top of the priority below): never cast Cheap Shot; eat below 40% health; never cast Slice and Dice; never cast Kidney Shot. Together +16.0% time per kill saved for `opt-combat-daggers-raid-leveling-st` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/combat-daggers-raid.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 4.4 | 5.4 | 6.5 | 6.9 | 6.8 | 16% |
-| Melee (off-hand) | 3.8 | 4.8 | 6.1 | 6.4 | 6.4 | 8% |
-| Sinister Strike | 2.9 | 3.5 | 4.3 | 4.6 | 4.7 | 21% |
-| Eviscerate | 0.4 | 0.7 | 1.0 | 1.1 | 1.5 | 27% |
+| Melee | 4.4 | 5.4 | 6.5 | 6.8 | 6.8 | 16% |
+| Melee (off-hand) | 3.9 | 4.8 | 6.1 | 6.3 | 6.4 | 8% |
+| Sinister Strike | 2.9 | 3.5 | 4.2 | 4.6 | 4.7 | 21% |
+| Eviscerate | 0.4 | 0.6 | 1.0 | 1.1 | 1.5 | 27% |
 | Garrote | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 12% |
 | Riposte | 0.0 | 0.6 | 0.8 | 0.9 | 0.9 | 4% |
 | Cold Blood | 0.0 | 0.0 | 0.0 | 0.1 | 0.1 | 0% |
@@ -110,7 +110,7 @@ What this build casts per kill ([report](../fightlab/combat-daggers-raid.md), al
 
 ## Notes
 
-- Report: rogue/talents/forever/optimizer/combat-swords-raid-leveling-st.md
+- Report: rogue/research/talents/forever/optimizer/combat-swords-raid-leveling-st.md
 
 ## Open questions (verify in the live game)
 

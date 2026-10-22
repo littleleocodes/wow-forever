@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-dps` and profile `leveling-st`: score +57.4% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-dps` and profile `leveling-st`: score +59.5% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -20,9 +20,9 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Wrath** | 5/5 | changed | Reduces the cast time of your Wrath spell by 0.5 sec and its Mana cost by 50%. |
+| **Nature's Majesty** | 2/2 | **NEW** | Increases your critical strike chance with spells and melee attacks by 4%. |
 | **Moonglow** | 3/3 | changed | Reduces the Mana cost of your damaging spells by 25%. |
 | **Improved Moonfire** | 2/2 | changed | Increases the damage and critical strike chance of your Moonfire spell by 10%. |
-| **Nature's Majesty** | 2/2 | **NEW** | Increases your critical strike chance with spells and melee attacks by 4%. |
 | **Nature's Splendor** | 1/1 | **NEW** | Increases the duration of your Moonfire and Rejuvenation spells by 3 sec, your Regrowth spell by 6 sec, and your Insect Swarm spell by 2 sec. |
 | **Improved Entangling Roots** | 3/3 | changed | Increases the damage done by your Entangling Roots spell by 75%, and its victims can take up to 75% more damage without interrupting the effect. |
 | **Improved Starfire** | 5/5 | changed | Reduces the cast time of Starfire by 0.5 sec and Starfire has a 15% chance to stun its target for 3 sec. |
@@ -51,8 +51,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
 | Levels | Tree | Talent | Pts | Running total |
 |---|---|---|---|---|
 | 10-14 | Balance | Improved Wrath | 5 | 5/0/0 |
-| 15-17 | Balance | Moonglow | 3 | 8/0/0 |
-| 18-19 | Balance | Improved Moonfire | 2 | 10/0/0 |
+| 15 | Balance | Moonglow | 1 | 6/0/0 |
+| 16 | Balance | Improved Moonfire | 1 | 7/0/0 |
+| 17 | Balance | Moonglow | 1 | 8/0/0 |
+| 18 | Balance | Improved Moonfire | 1 | 9/0/0 |
+| 19 | Balance | Moonglow | 1 | 10/0/0 |
 | 20-21 | Balance | Nature's Majesty | 2 | 12/0/0 |
 | 22 | Balance | Nature's Splendor | 1 | 13/0/0 |
 | 23-24 | Balance | Improved Entangling Roots | 2 | 15/0/0 |
@@ -75,28 +78,31 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
 
 ## Core talents (priority order)
 
-1. **Improved Starfire** — Removing it costs 7.1 points of score in this model.
-2. **Eclipse** — Removing it costs 6.1 points of score in this model.
-3. **Vengeance** — Removing it costs 4.4 points of score in this model.
-4. **Moonfury** — Removing it costs 4.0 points of score in this model.
-5. **Moonglow** — Removing it costs 3.1 points of score in this model.
-6. **Moonkin Form** — Removing it costs 2.7 points of score in this model.
-7. **Reflection** — Removing it costs 1.7 points of score in this model.
-8. **Nature's Splendor** — Removing it costs 1.5 points of score in this model.
+1. **Improved Starfire** — Removing it costs 7.5 points of score in this model.
+2. **Eclipse** — Removing it costs 6.5 points of score in this model.
+3. **Vengeance** — Removing it costs 4.7 points of score in this model.
+4. **Moonfury** — Removing it costs 4.2 points of score in this model.
+5. **Moonglow** — Removing it costs 3.0 points of score in this model.
+6. **Moonkin Form** — Removing it costs 2.6 points of score in this model.
+7. **Nature's Splendor** — Removing it costs 1.6 points of score in this model.
+8. **Naturalist** — Removing it costs 1.5 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
 Balance: Moonfire and Insect Swarm up, Wrath while the mob walks in (Eclipse charges), Starfire on Eclipse charges or when the mob is rooted / stunned, Wrath otherwise (pushback in melee), Regrowth below 35% health with Nature's Swiftness when it is up; Entangling Roots when low and the mob is not rooted. A heal leaves Moonkin Form; the druid goes back in while the mob still has half its health (else after the fight). Out of mana it waits: druids cannot use wands.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-09, on top of the priority below): drink below 60% mana; eat below 80% health. Together +4.5% time per kill saved for `opt-balance-dps-leveling-st` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-19, on top of the priority below): eat below 50% health. Together +0.3% time per kill saved for `opt-balance-dps-leveling-st` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/balance-dps.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L15 casts/kill | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|---|
-| Starfire | 0.0 | 0.0 | 4.7 | 5.7 | 5.3 | 5.3 | 67% |
-| Wrath | 8.6 | 10.3 | 2.7 | 2.9 | 2.9 | 2.9 | 11% |
-| Moonfire | 1.8 | 2.5 | 1.9 | 2.1 | 1.7 | 1.7 | 22% |
+| Starfire | 0.0 | 0.0 | 4.9 | 5.7 | 5.2 | 4.8 | 66% |
+| Wrath | 8.3 | 9.5 | 2.4 | 2.7 | 2.5 | 2.3 | 10% |
+| Moonfire | 1.6 | 2.1 | 1.8 | 1.8 | 1.6 | 1.5 | 21% |
+| Regrowth | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Entangling Roots | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Moonkin Form | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes
 

@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-aoe` and profile `leveling-aoe`: score +74.6% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-aoe` and profile `leveling-aoe`: score +72.2% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -82,14 +82,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ao
 
 ## Core talents (priority order)
 
-1. **Improved Blizzard** — Removing it costs 7.4 points of score in this model.
-2. **Shatter** — Removing it costs 6.6 points of score in this model.
-3. **Fingers of Frost** — Removing it costs 5.2 points of score in this model.
-4. **Ice Lance** — Removing it costs 4.2 points of score in this model.
-5. **Ice Barrier** — Removing it costs 4.1 points of score in this model.
+1. **Improved Blizzard** — Removing it costs 7.7 points of score in this model.
+2. **Shatter** — Removing it costs 5.2 points of score in this model.
+3. **Ice Barrier** — Removing it costs 4.8 points of score in this model.
+4. **Fingers of Frost** — Removing it costs 3.7 points of score in this model.
+5. **Piercing Ice** — Removing it costs 3.2 points of score in this model.
 6. **Ice Block** — Removing it costs 3.1 points of score in this model.
-7. **Piercing Ice** — Removing it costs 3.0 points of score in this model.
-8. **Elemental Precision** — Removing it costs 2.2 points of score in this model.
+7. **Elemental Precision** — Removing it costs 2.9 points of score in this model.
+8. **Ice Lance** — Removing it costs 2.1 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
@@ -99,19 +99,19 @@ What this build casts per kill ([report](../fightlab/frost-aoe.md), all leveling
 
 | Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|
-| Wand | 0.7 | 1.6 | 1.8 | 2.0 | 2% |
-| Blizzard | 0.7 | 0.8 | 0.7 | 0.7 | 56% |
-| Frostbolt | 0.3 | 0.6 | 0.6 | 0.5 | 7% |
-| Frost Nova | 0.3 | 0.4 | 0.4 | 0.5 | 3% |
-| Ice Lance | 0.2 | 0.4 | 0.4 | 0.4 | 10% |
-| Arcane Explosion | 0.5 | 0.8 | 0.7 | 0.3 | 6% |
-| Cone of Cold | 0.3 | 0.4 | 0.3 | 0.3 | 13% |
-| Fire Blast | 0.2 | 0.2 | 0.2 | 0.2 | 2% |
-| Counterspell | 0.2 | 0.2 | 0.2 | 0.1 | 0% |
+| Wand | 0.6 | 1.6 | 1.5 | 1.5 | 3% |
+| Blizzard | 0.7 | 0.7 | 0.7 | 0.6 | 56% |
+| Arcane Explosion | 0.7 | 0.9 | 0.8 | 0.5 | 9% |
+| Frostbolt | 0.3 | 0.6 | 0.6 | 0.5 | 8% |
+| Frost Nova | 0.3 | 0.4 | 0.4 | 0.4 | 3% |
+| Ice Lance | 0.2 | 0.4 | 0.3 | 0.3 | 5% |
+| Cone of Cold | 0.3 | 0.4 | 0.3 | 0.3 | 14% |
+| Fire Blast | 0.2 | 0.2 | 0.2 | 0.2 | 3% |
+| Counterspell | 0.1 | 0.2 | 0.2 | 0.1 | 0% |
 
 ## Notes
 
-- Allocation and order taken from cand-aoe-r3 on 2026-10-15: an earlier optimizer round beat the last export in the fight lab (31.8s vs 32.6s per kill, level-weighted).
+- Allocation and order taken from cand-aoe-r3 on 2026-10-20: an earlier optimizer round beat the last export in the fight lab (28.5s vs 29.8s per kill, level-weighted).
 - Report: mage/research/talents/forever/optimizer/frost-aoe-leveling-aoe.md
 
 ## Open questions (verify in the live game)

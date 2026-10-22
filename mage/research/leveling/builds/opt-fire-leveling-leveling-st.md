@@ -1,88 +1,120 @@
-# Optimizer — Single-target Fireball leveling: Fireball ~60%, Fire Blast, Scorch (22+), wand (leveling-st) — 0/33/18
+# Optimizer — Single-target Fireball leveling: Fireball ~60%, Fire Blast, Scorch (22+), wand (leveling-st) — 2/33/16
 
 *[Mage](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 0/33/18 (Arcane / Fire / Frost) |
+| **Build** | 2/33/16 (Arcane / Fire / Frost) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70425 (2026-10-16 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-leveling` and profile `leveling-st`: score +64.6% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-leveling` and profile `leveling-st`: score +68.7% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
-### Arcane (0)
+### Arcane (2)
 
-*No points.*
+| Talent | Pts | vs Classic | Effect at this rank |
+|---|---|---|---|
+| **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, your Arcane Missile hits a 10% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 
 ### Fire (33)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Fireball** | 5/5 | changed | Reduces the casting time of your Fireball and Frostfire Bolt spells by 0.5 sec. |
-| **Flame Throwing** | 2/2 | unchanged | Increases the range of your Fire spells by 6 yards. |
+| **Improved Fire Blast** | 2/2 | **NEW** | Reduces the cooldown of your Fire Blast spell by 2 sec and increases its range by 15 yards. |
+| **Improved Fireball** | 3/5 | changed | Reduces the casting time of your Fireball and Frostfire Bolt spells by 0.3 sec. |
 | **Ignite** | 5/5 | unchanged | Your critical strikes from Fire damage spells cause the target to burn for an additional 40% of your spell's damage over 4 sec. |
 | **Impact** | 3/3 | changed | Gives your Fire spells a 10% chance to stun the target for 2 sec. |
+| **Flame Throwing** | 2/2 | unchanged | Increases the range of your Fire spells by 6 yards. |
 | **Burning Soul** | 3/3 | changed | Gives your Fire spells a 70% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 30%. |
 | **Pyroblast** | 1/1 | changed | Hurls an immense fiery boulder that causes 101 to 131 Fire damage and an additional 44 Fire damage over 12 sec. |
 | **Heating Up** | 1/1 | **NEW** | Non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch reduce the cast time of your next Pyroblast cast within 20 sec by 25%, stacking up to 3 times. Fire Blast grants an additional stack every time it deals damage. |
 | **Improved Scorch** | 3/3 | changed | Your Scorch spell has a 100% chance to cause your target to be vulnerable to Fire damage. This vulnerability increases all Fire damage you deal to your target by 3% and lasts 30 sec, stacking up to 5 times. |
-| **Blast Wave** | 1/1 | changed | A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 154 to 184 Fire damage, and Dazing them for 50% reduced movement speed for 6 sec. |
 | **Critical Mass** | 5/5 | unchanged | Increases the critical strike chance of your Fire spells by 10%. |
+| **Blast Wave** | 1/1 | changed | A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 154 to 184 Fire damage, and Dazing them for 50% reduced movement speed for 6 sec. |
 | **Fire Power** | 3/3 | unchanged | Increases the damage done by your Fire spells by 3% per your Fire effects on the target, up to a maximum increase of 12%. Effects which mix multiple schools of magic do not qualify. |
 | **Combustion** | 1/1 | changed | When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 3 non-periodic critical strikes with Fire spells. |
 
-### Frost (18)
+### Frost (16)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Elemental Precision** | 5/5 | changed | Improves your chance to hit with Frost and Fire spells by 5%. |
+| **Permafrost** | 3/3 | changed | Increases the duration of your Chill effects by 33% and reduces the target's speed by an additional 10%. |
 | **Frostbite** | 3/3 | moved | Gives your Chill effects a 15% chance to Freeze the target for 5 sec. |
-| **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
-| **Permafrost** | 1/3 | changed | Increases the duration of your Chill effects by 11% and reduces the target's speed by an additional 3%. |
 | **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets. |
+| **Piercing Ice** | 3/3 | unchanged | Increases the damage done by your Frost spells by 6%. |
 | **Ice Block** | 1/1 | moved | You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move, or cast spells. |
-| **Shatter** | 2/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 33%. |
+
+## Leveling order
+
+| Levels | Tree | Talent | Pts | Running total |
+|---|---|---|---|---|
+| 10-11 | Fire | Improved Fire Blast | 2 | 0/2/0 |
+| 12-14 | Fire | Improved Fireball | 3 | 0/5/0 |
+| 15-19 | Fire | Ignite | 5 | 0/10/0 |
+| 20-24 | Frost | Elemental Precision | 5 | 0/10/5 |
+| 25-27 | Frost | Permafrost | 3 | 0/10/8 |
+| 28-29 | Frost | Frostbite | 2 | 0/10/10 |
+| 30 | Frost | Ice Lance | 1 | 0/10/11 |
+| 31-33 | Fire | Burning Soul | 3 | 0/13/11 |
+| 34 | Fire | Impact | 1 | 0/14/11 |
+| 35 | Fire | Pyroblast | 1 | 0/15/11 |
+| 36 | Fire | Heating Up | 1 | 0/16/11 |
+| 37 | Arcane | Missile Barrage | 1 | 1/16/11 |
+| 38-39 | Fire | Impact | 2 | 1/18/11 |
+| 40-41 | Fire | Flame Throwing | 2 | 1/20/11 |
+| 42 | Fire | Blast Wave | 1 | 1/21/11 |
+| 43-44 | Fire | Critical Mass | 2 | 1/23/11 |
+| 45-46 | Fire | Improved Scorch | 2 | 1/25/11 |
+| 47-48 | Fire | Fire Power | 2 | 1/27/11 |
+| 49-51 | Fire | Critical Mass | 3 | 1/30/11 |
+| 52 | Fire | Combustion | 1 | 1/31/11 |
+| 53 | Fire | Fire Power | 1 | 1/32/11 |
+| 54 | Arcane | Missile Barrage | 1 | 2/32/11 |
+| 55 | Frost | Frostbite | 1 | 2/32/12 |
+| 56-58 | Frost | Piercing Ice | 3 | 2/32/15 |
+| 59 | Frost | Ice Block | 1 | 2/32/16 |
+| 60 | Fire | Improved Scorch | 1 | 2/33/16 |
 
 ## Core talents (priority order)
 
-1. **Ice Lance** — Removing it costs 24.3 points of score in this model.
-2. **Ignite** — Removing it costs 6.7 points of score in this model.
-3. **Fire Power** — Removing it costs 3.2 points of score in this model.
-4. **Combustion** — Removing it costs 2.3 points of score in this model.
-5. **Elemental Precision** — Removing it costs 1.3 points of score in this model.
-6. **Ice Block** — Removing it costs 1.1 points of score in this model.
-7. **Burning Soul** — Removing it costs 1.0 points of score in this model.
-8. **Shatter** — Removing it costs 0.7 points of score in this model.
+1. **Ice Lance** — Removing it costs 21.1 points of score in this model.
+2. **Ignite** — Removing it costs 5.1 points of score in this model.
+3. **Pyroblast** — Removing it costs 2.6 points of score in this model.
+4. **Heating Up** — Removing it costs 2.5 points of score in this model.
+5. **Improved Fire Blast** — Removing it costs 2.3 points of score in this model.
+6. **Combustion** — Removing it costs 2.1 points of score in this model.
+7. **Fire Power** — Removing it costs 1.8 points of score in this model.
+8. **Elemental Precision** — Removing it costs 1.2 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
 Single-target leveling fights against normal mobs of your level: pull at max range, the mob walks in at 7 yd/s (slowed by chills), swings every 2 s once in melee (pushing casts back), Frost Nova when it arrives, a 2-second step back, Ice Lance/Frostbolt into the freeze, Fire Blast and wand to finish without overkill. Between fights: 2 s loot, 6 s travel, Evocation when low, conjured water below 35% mana, food below 65% health; a death costs 90 s. Every hit, miss, crit, partial resist, chill, freeze, proc and pushback is rolled.
 
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-19, on top of the priority below): Fireball only while the mob has more than 35% health; Scorch only while the mob has more than 35% health; Fire Blast only while the mob has more than 10% health. Together +2.3% time per kill saved for `opt-fire-leveling-leveling-st` (level-weighted, a third seed of 3000 fights per level).
+
 What this build casts per kill ([report](../fightlab/fire-leveling.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Ice Lance | 1.6 | 2.1 | 3.0 | 2.2 | 1.9 | 36% |
-| Fireball | 2.4 | 1.4 | 1.4 | 1.9 | 1.7 | 28% |
-| Fire Blast | 1.3 | 1.7 | 2.0 | 1.6 | 1.4 | 20% |
-| Frost Nova | 0.6 | 0.8 | 0.9 | 0.8 | 0.7 | 1% |
-| Scorch | 0.0 | 1.5 | 1.9 | 0.5 | 0.3 | 2% |
+| Ice Lance | 0.0 | 3.1 | 3.5 | 2.9 | 2.5 | 29% |
+| Fire Blast | 1.8 | 2.0 | 2.3 | 1.8 | 1.6 | 23% |
+| Fireball | 3.1 | 1.1 | 1.3 | 1.5 | 1.4 | 22% |
+| Wand | 2.1 | 1.3 | 1.9 | 1.1 | 0.7 | 1% |
+| Frost Nova | 0.8 | 0.9 | 0.9 | 0.8 | 0.7 | 2% |
+| Pyroblast | 0.0 | 0.0 | 0.6 | 0.5 | 0.5 | 10% |
 | Blast Wave | 0.0 | 0.0 | 0.0 | 0.3 | 0.3 | 4% |
-| Wand | 0.1 | 0.1 | 0.2 | 0.2 | 0.1 | 0% |
-| Pyroblast | 0.0 | 0.0 | 0.0 | 0.0 | 0.1 | 2% |
+| Scorch | 0.0 | 1.0 | 0.7 | 0.2 | 0.2 | 1% |
 | Counterspell | 0.0 | 0.2 | 0.1 | 0.1 | 0.1 | 0% |
 
 ## Notes
 
-- Report: mage/talents/forever/optimizer/fire-leveling-leveling-st.md
-- 2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized.
-- 2026-10-15 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fire-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 36.1 s per kill; stats model 37.4 s; own tree first 40.8 s.
-- 2026-10-16 (repair_builds.py, client build 70425 trees): 0/33/18 -> 0/33/18; Fire Power 5 -> 3 (rank cap); +1 Critical Mass (prerequisite of Combustion); +1 Critical Mass (prerequisite of Combustion); order dropped (order_repair.py) (refill: the fire-leveling model, leveling-st).
+- Report: mage/research/talents/forever/optimizer/fire-leveling-leveling-st.md
 
 ## Open questions (verify in the live game)
 
