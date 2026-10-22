@@ -34,4 +34,10 @@ on it.
 `core.FullTankIndividualBuffs` (no Blessing of Salvation, audit 2 row 63; until 2026-10-18 tank threat was 30% low in absolute terms);
 consumables keep the fork's field names in specs.json and are translated to the official ConsumesSpec, and the fork's
 `OtherActionPotion` in rotations to the potion-class placeholder; gear the official database does not have is dropped and reported
-(`missing_gear`).
+(`missing_gear`). Spec options go through `legacySpec` (2026-10-22). The warlock's fork-only `sacrificeSummon` / `pactSacrifice`
+become the official `sacrificedDemon`; until then they were dropped without a word, and Demonic Sacrifice entries ran with the Imp out
+and no sacrifice. Any other option the official protos lack is reported on stderr (sim-port.md, Open item 8).
+
+Checked 2026-10-22 (sim-port.md, Open items 6 and 8): every patch above applies cleanly to a pristine 09e7398. No smoke-test gap
+needed a new patch. At the next re-pin to upstream master, retire the pet hit edit: master inherits hit itself (a20507783, 9ce48b6ab),
+and our anchor still matches there, so the edit would count hit twice.

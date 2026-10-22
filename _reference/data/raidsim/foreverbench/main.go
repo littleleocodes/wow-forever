@@ -290,6 +290,9 @@ func main() {
 	if reaction == 0 {
 		reaction = 200
 	}
+	if len(cfg.Spec) > 0 {
+		cfg.Spec = legacySpec(cfg.Spec)
+	}
 	for _, b := range cfg.Builds {
 		player := &proto.Player{}
 		if len(cfg.Spec) > 0 {
@@ -725,6 +728,47 @@ func legacyConsumables(raw json.RawMessage) (*proto.ConsumesSpec, string) {
 		}
 	}
 	return out, placeholder
+}
+
+// legacySpec translates the fork's spec options the official protos lack (2026-10-22, sim-port.md open item 8). The spec fragment
+// is read with DiscardUnknown, so a fork-only field was dropped without a word: the warlock's "sacrificeSummon" (Demonic Sacrifice
+// before the pull, no demon out) and "pactSacrifice" (with Demonic Pact, the demon sacrificed while `summon` is out) are the
+// official WarlockOptions.sacrificed_demon. Until then every Demonic Sacrifice entry ran without the sacrifice and with the Imp out
+// (warlock sb-raid smoke build: 542.7 dummy DPS, 591.0 with the sacrifice). With "pactSacrifice", a build that has Demonic Sacrifice
+// but not Demonic Pact now sacrifices that demon and has none out (the official resolveSacrifice), where the fork kept `summon`
+// out without the buff. Any other field the official protos do not know is reported on stderr.
+func legacySpec(raw json.RawMessage) json.RawMessage {
+	var m map[string]interface{}
+	if json.Unmarshal(raw, &m) != nil {
+		return raw
+	}
+	if wl, ok := m["warlock"].(map[string]interface{}); ok {
+		if opts, ok := wl["options"].(map[string]interface{}); ok {
+			if co, ok := opts["classOptions"].(map[string]interface{}); ok {
+				if sac, ok := co["sacrificeSummon"].(bool); ok {
+					delete(co, "sacrificeSummon")
+					if sac {
+						if summon, ok := co["summon"]; ok {
+							co["sacrificedDemon"] = summon
+						}
+						co["summon"] = "NoSummon"
+					}
+				}
+				if pact, ok := co["pactSacrifice"]; ok {
+					delete(co, "pactSacrifice")
+					co["sacrificedDemon"] = pact
+				}
+			}
+		}
+	}
+	out, err := json.Marshal(m)
+	if err != nil {
+		return raw
+	}
+	if err := protojson.Unmarshal(out, &proto.Player{}); err != nil {
+		fmt.Fprintf(os.Stderr, "spec: the simulator ignores part of the spec fragment: %v\n", err)
+	}
+	return out
 }
 
 // legacyAPL rewrites the fork's generic potion action into the official placeholder of the configured potion's class.

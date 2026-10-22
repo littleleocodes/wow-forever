@@ -82,12 +82,11 @@ dummy = the training dummy (own buffs), raid = the full raid. Script and records
 Reading it: the last committed column is not comparable with the others (full sets, partly an older fork commit); the common-set columns
 isolate the two simulators. Found and fixed on the way (before these numbers): the one-rank remap (Frost mage 70 DPS, Fire Blast only),
 totem conditions (Elemental 73 -> 248: Searing Totem recast 58 times a fight, out of mana 118 s of 180), the Aspect of the Beast recast
-(melee hunter 166 -> 337: 55 casts, out of mana 100 s), debuff conditions without a target (Fire's Scorch line always true). What is left:
-the raid column rises for the melee and physical specs (rogue +15%, warrior +5%): Grace of Air now stacks with Windfury Totem in the
-official full raid; Frost +16% and the warlock +6-10% are the official spell and talent data (not traced line by line); Retribution
--17-20% is lower damage per seal and judgement hit with the same casts (Seal of Righteousness proc 116 -> 77 DPS, 20924 75 -> 55):
-not traced, check the official paladin code and the 70425 tooltips before the paladin re-run; Shadow -12% and Feral -6% on the dummy
-(less on the raid): mana and energy models, not traced.
+(melee hunter 166 -> 337: 55 casts, out of mana 100 s), debuff conditions without a target (Fire's Scorch line always true). What is left was
+traced on 2026-10-22 (Open, item 8): the harness's remapped rotations and lost weapon oil (Frost +16%, part of Shadow), a bench bug
+that dropped the warlock's Demonic Sacrifice option, Grace of Air with Windfury Totem (rogue, warrior raid), and otherwise the fork's
+stale or wrong data (Seal of Righteousness, Consecration and judgement coefficients, level-based resistance, caster-weapon spell power,
+Dark Sacrifice on every race, Tiger's Fury). No simulator patch was needed; Holy Strike's spell-power share is open.
 
 **Speed**: the official engine is not faster. Per 20,000 fights it took 0.95x to 2.0x the fork's time (median about 1.25x: warlock 2.0x,
 Frost 1.4x, Shadow 1.4x, warrior 0.95x). Searches and races will take about a quarter longer.
@@ -115,5 +114,74 @@ Frost 1.4x, Shadow 1.4x, warrior 0.95x). Searches and races will take about a qu
 7. The bench's `statweights` and `link` modes run on the official API (Frost mage, 300 fights); the weights come back under the
    official stat names (`StatHitRating`, `StatCritRating`, ...), which the gear tools in item 1 must read; a link opened in the
    official UI was not tried.
-8. The unexplained gaps in the smoke table (Retribution, Frost, warlock, Shadow, Feral) before those classes' raid re-runs.
-6. Champion of the Light's live value (audit 2 row 2) and the pet swing rule are our readings against the official simulator's.
+8. **Smoke-table gaps, traced 2026-10-22** (diagnostic benches of both simulators with a final-stats and mana/energy-ledger mode,
+   per-action damage per hit, talent removal deltas in both; 1,000-1,500 fights, seed 1; scratchpad `wfdiag/`). No gap needed a
+   simulator patch. Two came from the smoke harness, one from the bench, the rest are the fork being wrong: its pin b7083fa carries the
+   70374 spell store (audit 1 #43), and some of its rules were never Forever's.
+   - **Harness**: the fork ran our *remapped* rotations. Missile Barrage's aura is 44404 in the fork and 400589 in the remap, so the
+     fork never cast Arcane Missiles; the rogue's AQ Eviscerate 31016 was remapped to 11300. With its own pre-remap rotations the fork
+     gives Frost 586.0 / 664.4 (official 560.7 / 635.3) and combat rogue 358.6 / 596.4 (official 337.4 / 615.5). Shadow's common set
+     lost its weapon, and the fork put Brilliant Wizard Oil on the empty hand (+36 spell power). Dragonbreath Chili is not in the
+     official catalogue at 09e7398: Retribution lost 16.3 DPS on the dummy, combat rogue 9.5 and Feral 2.6. Upstream added the chili
+     on 2026-10-19 (cfdf4944b).
+   - **Bench, fixed**: the bench reads the spec fragment with DiscardUnknown, so the fork-only warlock options `sacrificeSummon` /
+     `pactSacrifice` were dropped without a word. Every Demonic Sacrifice entry ran with no sacrifice and the Imp out (the smoke run's
+     Firebolt rows). `foreverbench/main.go legacySpec` now maps them onto the official `sacrificedDemon` and prints any other field the
+     protos do not know (the Enhancement entry's `imbueOh` and `syncType`: its sets hold no off-hand). Warlock sb-raid: 542.7 -> 591.0
+     on the dummy, 630.0 -> 664.2 in the raid; the other smoke rows are bit-identical. This is in `foreverbench-next.exe`, not swapped in.
+   - **Retribution -17-20%: the official simulator is right.** The "20924 75 -> 55" in the table is Consecration rank 5, not the
+     judgement. Seal of Righteousness proc 116.3 -> 76.6 DPS (313.9 -> 217.4 a hit): the official spell-power coefficient is 0.12
+     with a two-hander and 0.1 with a one-hander, outside the weapon-speed term. That is the 70425 seal tooltip's description variable
+     ($2h = 0.12 x SPH), and the official commits 49f94c932 and b4c8a43f2 measured it on 70425 at level 30. The fork used 0.185 x 1.2
+     = 0.222 from pre-70425 logs. Consecration 75.1 -> 54.5: the bonus tick's coefficient is 0.042, which is the 70425 tooltip's
+     "4.2% of spell power (per tick)"; the fork read 0.095 from the stale store. Judgement of Righteousness 61.2 -> 58.9: 0.429 is
+     the tooltip's 42.9%, and the fork read 0.5.
+     **Unknown, Holy Strike 54.9 -> 43.4.** Its 0.429 spell-power coefficient goes through the 50% weapon percent in the official
+     code (0.21 a point) and in full in the fork. The 70425 tooltip ("50% weapon damage plus an additional 40 to 53") states no
+     spell-power share. A Holy Strike hit logged at two spell-power values settles it.
+   - **Frost +16%: harness (above).** With the fork's own rotation the official simulator is 4.3% lower. The cause is Missile
+     Barrage: two ranks of 10/20% for Frostbolt in the 70425 data (official), one rank of 20% in the fork. The smoke build had 1
+     point; at 2 points the official simulator gives 591.4 against the fork's 586.0. The page build already takes 2 (d3bfea75).
+   - **Warlock +6-10% (+15/16% once the sacrifice works): the official simulator is right.** (a) Clever Expeditionary's Spellblade
+     (271928) carries +72 spell power in the official database: Forever's caster-weapon rule, with reduced weapon damage and spell
+     power added. The fork's database lists none. (b) The official simulator has no level-based resistance against the level-63
+     target (ed4b4e93e: "Forever's combat logs show no partial resist that comes from the target's level", logs of mobs 1-9 levels
+     above the caster at levels 20-31). The fork took Classic's 2% a level, 6% against a boss. Naked and talentless, Shadow Bolt does
+     373.6 -> 393.5 a hit against level 63 and 402.4 -> 403.8 against level 60. This lifts every caster about 5% on the bench's
+     target; a level-60 log against a raid boss would confirm it. The 15 talents' removal values agree within 0.8 points in both
+     simulators.
+   - **Shadow -12% dummy: the official simulator is right, plus a dummy-setting gap.** (a) Dark Sacrifice (1,766 mana a fight in the
+     fork's ledger) is the Undead racial in the official code. The smoke character is a Troll; the fork gave it to every race.
+     (b) The fork's priest code added Prayer of Fortitude, Spirit and Shadow Protection to the dummy setting (`AddRaidBuffs`); the
+     official priest code adds none. That costs 70 Stamina and 40 Spirit, about 1.2% here. Fix it in data: `"self_buffs":
+     {"prayer_of_fortitude": true, "prayer_of_spirit": true}` on the priest's shadow-dps and smite-dps entries. specs.json was left
+     alone while the gear search writes it. (c) The common set's lost oil (harness). With (b) and (c) restored the official simulator
+     gives 419.7 against 457.2; Dark Sacrifice and 6 Intellect / 90 mana of race base stats make up the rest. Upstream reworked the
+     race stat offsets after the pin (6296e8546, 6fc22306b). The raid +4.8% comes from Devouring Plague's 24 s cooldown (70425; the
+     fork had 60 s: 3 -> 7 casts) and the missing level resistance.
+   - **Feral -6% dummy: mostly the official simulator is right.** Tiger's Fury was removed from the game (1 Oct notes; the 70425
+     spellbook lacks it) and the fork cast it 7 times; without it the fork gives 330.3. The chili costs 0.8%. The last 3.5% is two
+     Shreds fewer for the same energy (an average of 37.7 energy a Shred against 35.9), not traced. The talents' removal values agree
+     within 0.3 points.
+   - **Rogue and warrior raid: confirmed, Grace of Air.** Turning Grace of Air off in both simulators: warrior 860.8 -> 826.5 (fork
+     818.3 either way), combat rogue 615.5 -> 577.6 (fork 596.4 either way with its own rotation). The fork never applied Grace of
+     Air next to Windfury Totem. The rogue dummy is -5.9% with the fork's own rotation: chili 2.8 points, Eviscerate rank 9 (an AQ
+     book, not registered) about 0.7, and Thistle Tea (conjured 7676) never used by the official bench, about 0.5. The rest is
+     talent values that differ (Improved Sinister Strike 7.7% -> 6.2%, Blade Flurry 2.0% -> 0.5%, Adrenaline Rush 2.8% -> 4.8%,
+     Hack and Slash 3.7% -> 4.7%), not traced; re-tune before reading them.
+   - **Bench note**: `actionRows` sums each action's damage over every target, the caster included, so Demonic Rune's self-damage
+     shows as an action of about 5-11 DPS (`12662` tag 1). The reported DPS excludes it (`IsOpponent`), but damage splits built from
+     the action rows count it.
+6. **Champion of the Light and the pet swing rule (checked 2026-10-22)**: both edits apply cleanly to a pristine 09e7398 checkout
+   (`setup.apply_patches`, every patched file identical to the live clone's). The Retribution smoke character reads 609.8 spell power,
+   61.8 of it 30% of 206 Intellect: the patch is live. At upstream master (fbf5d98e8, 2026-10-22) the store still reads 20/40/60 and
+   both anchors still exist. The pet hit edit must go at the next re-pin: master inherits hit itself (a20507783, then 9ce48b6ab: melee
+   hit 1:1 and spell hit 17/8 from the owner's ranged hit), and our edit's anchor is still there, so it would apply and count hit twice.
+9. **Mage hotfix of 2026-10-20 (d3bfea75)**: 09e7398 does not have it. Its mage tree still lists Piercing Ice, Elemental Precision
+   at 5 ranks of 1%, and Frost Channeling and Improved Blizzard at their old places. Upstream has it in 983ea6fcc ("mage hotfix and
+   talent shift", merged as #594, 12f3f1db0, 2026-10-20). That commit moves the proto field numbers, removes Piercing Ice, sets
+   Elemental Precision to 2/4/6, adds Frost Warding's absorb and a Frigid Power buff (1326891, +3% Frost, from Ice Barrier), and its
+   tree matches `forever-talents/mage.json` exactly (positions and ranks; 0 differences). Until a re-pin, run.py's talent strings for
+   the new trees resolve by name on the old tree: Elemental Precision 3 reads 3% hit, not 6%. No patch: the change spans the proto,
+   the store and the mage code. The fix is a re-pin to master, once the gear agent's queue is done (also bringing the chili, the race
+   offsets and the pet hit rule; retire our pet hit edit then).
