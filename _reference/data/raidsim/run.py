@@ -135,14 +135,35 @@ def rotation_only(entry):
 
 
 def sim_presets(repo, entry):
-    """Talent presets of the sim's spec folder (`makePresetTalents('Name', ... talentsString: '...')`)."""
+    """Talent presets of the sim's spec folder. The official wowsims/forever presets.ts files (2026-10-22) use four forms:
+    makePresetTalents('N', SavedTalents.create({ talentsString: '...' })) (the string or `<Json>.player.talentsString` of an imported
+    build file), talentsOf('N', <Json>), talents('N', '...') and { name: 'N', data: SavedTalents.create({ talentsString: ... }) }; the
+    first literal form alone missed the hunter, rogue, priest, warlock and shaman presets."""
     path = repo / GAMES[GAME]["ui"] / entry["sim_spec"] / "presets.ts"
     if not path.exists():
         return []
     s = path.read_text(encoding="utf-8")
+    imports = {m.group(1): path.parent / m.group(2) for m in re.finditer(r"import\s+(\w+)\s+from\s+'(\.[^']+\.json)'", s)}
+
+    def value(expr):
+        expr = expr.strip()
+        m = re.fullmatch(r"'([^']*)'", expr)
+        if m:
+            return m.group(1)
+        m = re.fullmatch(r"(\w+)(?:\.player\.talentsString)?", expr)
+        if m and m.group(1) in imports and imports[m.group(1)].exists():
+            return (json.load(open(imports[m.group(1)], encoding="utf-8")).get("player") or {}).get("talentsString")
+        return None
     out = []
-    for m in re.finditer(r"makePresetTalents\(\s*'([^']+)'\s*,\s*SavedTalents\.create\(\{\s*talentsString:\s*'([^']*)'", s):
-        out.append({"label": f"sim preset: {m.group(1)}", "talents": m.group(2)})
+    pats = [r"makePresetTalents\(\s*'([^']+)'\s*,\s*SavedTalents\.create\(\{\s*talentsString:\s*([^}]+?)\s*,?\s*\}\)",
+            r"\btalentsOf\(\s*'([^']+)'\s*,\s*(\w+)\s*\)",
+            r"\btalents\(\s*'([^']+)'\s*,\s*('[^']*')\s*\)",
+            r"\{\s*name:\s*'([^']+)'\s*,\s*data:\s*SavedTalents\.create\(\{\s*talentsString:\s*([^}]+?)\s*,?\s*\}\)"]
+    for pat in pats:
+        for m in re.finditer(pat, s, re.S):
+            v = value(m.group(2))
+            if v is not None and f"sim preset: {m.group(1)}" not in [x["label"] for x in out]:
+                out.append({"label": f"sim preset: {m.group(1)}", "talents": v})
     if "preset_names" in entry:   # a rotation-only tree: only its own presets
         out = [p for p in out if p["label"][len("sim preset: "):] in entry["preset_names"]]
     return out
