@@ -20,10 +20,13 @@ import re
 
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
-SIM = pathlib.Path.home() / ".wow-forever-tools" / "forever-repo" / "sim"
+import sys  # noqa: E402
+sys.path.insert(0, str(HERE))
+import setup as SETUP  # noqa: E402
+SIM = SETUP.checkout() / "sim"   # the official wowsims/forever clone since 2026-10-22 (the fork's forever-repo before); same generatedCurves format
 PAGE = ROOT / "_reference" / "sim-value-audit.md"
 CLASSES = ("warrior", "paladin", "hunter", "rogue", "priest", "shaman", "mage", "warlock", "druid")
-PATCHED = {("hunter", "Lightning Reflexes"): "patches/forever edits.json: 2% Agility a rank (70205)"}
+PATCHED = {("paladin", "Champion of the Light"): "patches/forever edits.json: 10/20/30% of Intellect (70425 tooltip; user decision 2026-10-18)"}   # Lightning Reflexes retired 2026-10-18: the official curve reads 2% a rank
 TODAY = datetime.date.today().isoformat()
 
 
