@@ -148,8 +148,8 @@
  "raid": {
   "class": "hunter",
   "spec": "melee-dps",
-  "date": "2026-10-16",
-  "commit": "b7083fa",
+  "date": "2026-10-22",
+  "commit": "30f67f5d2",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/apls/hunter/melee-dps.base.apl.json",
@@ -217,50 +217,58 @@
     "gain_seed2": 0.002651723143618945,
     "candidates": 294,
     "pass": 10
+   },
+   {
+    "round": 5,
+    "change": "move to the top: cast Explosive Trap",
+    "gain_seed1": 0.005206394442938356,
+    "gain_seed2": 0.006147072592055158,
+    "candidates": 319,
+    "pass": 12
    }
   ],
   "final": {
    "raid": {
     "beast-survival-open-raid": {
-     "before": 708.1238556248645,
-     "after": 1026.6895950347737,
-     "base": 708.1238556248645,
+     "before": 539.873564658901,
+     "after": 824.5167655455823,
+     "base": 539.873564658901,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0011708853053,
-     "oom_after": 0.0011708853053
+     "oom_before": 0,
+     "oom_after": 0.10684765000629999
     },
     "melee-survival-raid": {
-     "before": 734.8697124218245,
-     "after": 1017.3977829285182,
-     "base": 734.8697124218245,
+     "before": 576.8058501665977,
+     "after": 835.8098003620735,
+     "base": 576.8058501665977,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "opt-melee-dps-raid-dps": {
-     "before": 734.8697124218245,
-     "after": 986.5579311205595,
-     "base": 734.8697124218245,
+     "before": 576.8058501665977,
+     "after": 794.4355244807956,
+     "base": 576.8058501665977,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "survival-raid": {
-     "before": 720.2595585646186,
-     "after": 997.5498621780533,
-     "base": 720.2595585646186,
+     "before": 550.4168042734391,
+     "after": 800.8065474188458,
+     "base": 550.4168042734391,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "survival-ml-parse": {
-     "before": 700.5207384246442,
-     "after": 969.4001145128581,
-     "base": 700.5207384246442,
+     "before": 549.8928361053429,
+     "after": 796.7932790976524,
+     "base": 549.8928361053429,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -269,6 +277,6 @@
    }
   },
   "first_date": "2026-09-29",
-  "passes": 11
+  "passes": 12
  }
 }

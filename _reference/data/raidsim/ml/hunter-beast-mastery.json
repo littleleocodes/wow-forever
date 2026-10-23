@@ -14,67 +14,13 @@
   "bis": {
    "entry": "bm-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-beast-mastery-bis.gear.json",
-   "date": "2026-10-22",
-   "chosen": "all-slots",
+   "date": "2026-10-23",
+   "chosen": "previous",
    "ilvl": 65.2,
    "trinkets": [
-    "Shard of the Splithooves",
-    "Adaptive Combat Assistant"
+    "Adaptive Combat Assistant",
+    "Shard of the Splithooves"
    ],
-   "trinket_screen": {
-    "Shard of the Splithooves (10659)": 1.002,
-    "Adaptive Combat Assistant (272437)": 1.0019,
-    "Enriched Seal (271903)": 1.0011,
-    "Darkspear Voodoo Seal (272061)": 1.0011,
-    "Everlook Delivery Bot (274760)": 1.0008,
-    "Jewel of the Guard Captain (270225)": 1.0004,
-    "Ankh of Life (1713)": 1.0,
-    "Serenity Field (272439)": 0.9999,
-    "Weakness Analyzer (272438)": 0.9995,
-    "Rune of the Guard Captain (19120)": 0.9985,
-    "Cleansed Vilebranch Medallion (270275)": 0.9985,
-    "Enriched Seal (271905)": 0.9984,
-    "Darkspear Voodoo Seal (272059)": 0.9984,
-    "Molten Heart of the Mountain (249470)": 0.9983,
-    "Alchemist's Stone (13503)": 0.9968,
-    "Talisman of Ephemeral Power (18820)": 0.9958,
-    "Frozen Heart of the Mountain (249469)": 0.9958,
-    "Dog Whistle (3456)": 0.9958,
-    "Minor Recombobulator (4381)": 0.9958,
-    "Gnomish Universal Remote (7506)": 0.9958,
-    "Demon's Blood (10779)": 0.9958,
-    "Smoking Heart of the Mountain (11811)": 0.9958,
-    "Heart of the Scale (13164)": 0.9958,
-    "Arcanite Dragonling (16022)": 0.9958,
-    "Stormpike Insignia Rank 6 (17904)": 0.9958,
-    "Gyrofreeze Ice Reflector (18634)": 0.9958,
-    "Major Recombobulator (18637)": 0.9958,
-    "Hyper-Radiant Flame Reflector (18638)": 0.9958,
-    "Ultra-Flash Shadow Reflector (18639)": 0.9958,
-    "Essence of the Pure Flame (18815)": 0.9958,
-    "Arena Grand Master (19024)": 0.9958,
-    "Talisman of Arathor (20071)": 0.9958,
-    "Defiler's Talisman (20072)": 0.9958,
-    "Defiler's Talisman (21115)": 0.9958,
-    "Defiler's Talisman (21116)": 0.9958,
-    "Talisman of Arathor (21117)": 0.9958,
-    "Talisman of Arathor (21118)": 0.9958,
-    "Talisman of Arathor (21119)": 0.9958,
-    "Defiler's Talisman (21120)": 0.9958,
-    "Defender of the Timbermaw (21326)": 0.9958,
-    "Dormant Heart of the Mountain (249473)": 0.9958,
-    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.9958,
-    "SAF-T Emergency Ripper: Everlook (260820)": 0.9958,
-    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.9958,
-    "Gnomish Poultryizer (260824)": 0.9958,
-    "Volunteer's Lucky Seal (271904)": 0.9958,
-    "Volunteer's Lucky Seal (271906)": 0.9958,
-    "Relentless Raider's Seal (272060)": 0.9958,
-    "Relentless Raider's Seal (272062)": 0.9958,
-    "Defender's Grip Stabilizer (272440)": 0.9958,
-    "Everlook Pathcarver (274759)": 0.9958,
-    "Parachute-Priest Pager (274761)": 0.9958
-   },
    "names": [
     "Black Dragonscale Helm",
     "Onyxia Tooth Pendant",
@@ -96,277 +42,32 @@
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9955265343317393
+    "keep-sets-and-effects": 0.9998843669914849,
+    "previous": 1.0034629497586398,
+    "previous+trinkets": 1.0034629497586398
    },
    "confirm_seed2": {
-    "keep-sets-and-effects": 1.0,
-    "all-slots": 1.0033240008019264
+    "previous": 1.0
    },
    "weights": {
-    "PseudoStatRangedDps": 0.8456,
-    "StatAgility": 0.2707,
-    "StatArmorPenetration": 0.0161,
-    "StatCritRating": 0.3279,
-    "StatExpertiseRating": 0.1284,
-    "StatHasteRating": 0.1853,
-    "StatHitRating": 0.1263,
-    "StatIntellect": 0.2767,
-    "StatRangedAttackPower": 0.0918,
-    "StatSpellPiercing": 0.0775,
-    "StatSpirit": 0.0644
+    "PseudoStatRangedDps": 0.8351,
+    "StatAgility": 0.2704,
+    "StatArmorPenetration": 0.0156,
+    "StatCritRating": 0.2635,
+    "StatExpertiseRating": 0.1611,
+    "StatHasteRating": 0.2289,
+    "StatHitRating": 0.1364,
+    "StatIntellect": 0.2434,
+    "StatRangedAttackPower": 0.0988,
+    "StatSpellPiercing": 0.0813,
+    "StatSpirit": 0.0183
    },
    "evaluated_on": [
     "bm-raid: ml winner"
    ],
-   "replaced": [
-    {
-     "slot": 2,
-     "from": "Giantstalker's Epaulets (not in the database)",
-     "to": "Theramore Pauldrons"
-    },
-    {
-     "slot": 5,
-     "from": "Giantstalker's Bracers (not in the database)",
-     "to": "Forest Stalker's Bracers"
-    },
-    {
-     "slot": 6,
-     "from": "Beaststalker's Gloves",
-     "to": "Theramore Handwraps"
-    },
-    {
-     "slot": 7,
-     "from": "Giantstalker's Belt (not in the database)",
-     "to": "Highlander's Mail Girdle"
-    },
-    {
-     "slot": 8,
-     "from": "Dragonstalker's Legguards (not in the database)",
-     "to": "Outrider's Chain Leggings"
-    },
-    {
-     "slot": 9,
-     "from": "Giantstalker's Boots (not in the database)",
-     "to": "Beaststalker's Boots"
-    },
-    {
-     "slot": 10,
-     "from": "Band of Accuria (not in the database)",
-     "to": "Signet Ring of the Bronze Dragonflight"
-    },
-    {
-     "slot": 11,
-     "from": "Signet Ring of the Bronze Dragonflight",
-     "to": "Band of Sulfuras"
-    },
-    {
-     "slot": 12,
-     "from": "Blackhand's Breadth (not in the database)",
-     "to": "Shard of the Splithooves"
-    },
-    {
-     "slot": 13,
-     "from": "Royal Seal of Eldre'Thalas (not in the database)",
-     "to": "Adaptive Combat Assistant"
-    },
-    {
-     "slot": 14,
-     "from": "Barbarous Blade (not in the database)",
-     "to": "Thorium Poleaxe"
-    }
-   ],
-   "remade": {
-    "simulator": "wowsims/forever 09e739807",
-    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
-    "missing_before": [
-     "item:16848",
-     "item:16850",
-     "item:16851",
-     "item:16938",
-     "item:16849",
-     "item:17063",
-     "item:13965",
-     "item:18473",
-     "item:18520"
-    ],
-    "winner_of": "bis-dummy",
-    "talents_left_out": [],
-    "minutes": 3.9
-   }
+   "commit": "30f67f5d2"
   },
-  "bis2": true,
-  "prebis": {
-   "entry": "bm-raid",
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-beast-mastery-prebis.gear.json",
-   "date": "2026-10-22",
-   "chosen": "keep-sets-and-effects",
-   "ilvl": 62.9,
-   "trinkets": [
-    "Rune of the Guard Captain",
-    "Adaptive Combat Assistant"
-   ],
-   "trinket_screen": {
-    "Rune of the Guard Captain (19120)": 1.0046,
-    "Cleansed Vilebranch Medallion (270275)": 1.0046,
-    "Frozen Heart of the Mountain (249469)": 1.0038,
-    "Adaptive Combat Assistant (272437)": 1.0018,
-    "Everlook Delivery Bot (274760)": 1.0016,
-    "Shard of the Splithooves (10659)": 1.0011,
-    "Jewel of the Guard Captain (270225)": 1.0011,
-    "Enriched Seal (271903)": 1.0003,
-    "Darkspear Voodoo Seal (272061)": 1.0003,
-    "Weakness Analyzer (272438)": 1.0,
-    "Ankh of Life (1713)": 1.0,
-    "Molten Heart of the Mountain (249470)": 0.9996,
-    "Enriched Seal (271905)": 0.9987,
-    "Darkspear Voodoo Seal (272059)": 0.9987,
-    "Alchemist's Stone (13503)": 0.9973,
-    "Dog Whistle (3456)": 0.9961,
-    "Minor Recombobulator (4381)": 0.9961,
-    "Gnomish Universal Remote (7506)": 0.9961,
-    "Demon's Blood (10779)": 0.9961,
-    "Smoking Heart of the Mountain (11811)": 0.9961,
-    "Heart of the Scale (13164)": 0.9961,
-    "Arcanite Dragonling (16022)": 0.9961,
-    "Stormpike Insignia Rank 6 (17904)": 0.9961,
-    "Gyrofreeze Ice Reflector (18634)": 0.9961,
-    "Major Recombobulator (18637)": 0.9961,
-    "Hyper-Radiant Flame Reflector (18638)": 0.9961,
-    "Ultra-Flash Shadow Reflector (18639)": 0.9961,
-    "Talisman of Arathor (20071)": 0.9961,
-    "Defiler's Talisman (20072)": 0.9961,
-    "Defiler's Talisman (21115)": 0.9961,
-    "Defiler's Talisman (21116)": 0.9961,
-    "Talisman of Arathor (21117)": 0.9961,
-    "Talisman of Arathor (21118)": 0.9961,
-    "Talisman of Arathor (21119)": 0.9961,
-    "Defiler's Talisman (21120)": 0.9961,
-    "Defender of the Timbermaw (21326)": 0.9961,
-    "Dormant Heart of the Mountain (249473)": 0.9961,
-    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.9961,
-    "SAF-T Emergency Ripper: Everlook (260820)": 0.9961,
-    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.9961,
-    "Gnomish Poultryizer (260824)": 0.9961,
-    "Volunteer's Lucky Seal (271904)": 0.9961,
-    "Volunteer's Lucky Seal (271906)": 0.9961,
-    "Relentless Raider's Seal (272060)": 0.9961,
-    "Relentless Raider's Seal (272062)": 0.9961,
-    "Defender's Grip Stabilizer (272440)": 0.9961,
-    "Everlook Pathcarver (274759)": 0.9961,
-    "Parachute-Priest Pager (274761)": 0.9961,
-    "Serenity Field (272439)": 0.9951
-   },
-   "names": [
-    "Black Dragonscale Helm",
-    "Amulet of the Darkmoon",
-    "Theramore Pauldrons",
-    "Expeditionary's Cape",
-    "Dawn Armor",
-    "Magiskull Cuffs",
-    "Beaststalker's Gloves",
-    "Highlander's Mail Girdle",
-    "Outrider's Chain Leggings",
-    "Beaststalker's Boots",
-    "Signet Ring of the Bronze Dragonflight",
-    "Channeler's Ring",
-    "Rune of the Guard Captain",
-    "Adaptive Combat Assistant",
-    "Thorium Poleaxe",
-    null,
-    "Premier High Warlord's Recurve"
-   ],
-   "race_seed1": {
-    "all-slots": 1.0,
-    "keep-sets-and-effects": 1.0002188753916048
-   },
-   "confirm_seed2": {
-    "all-slots": 1.0,
-    "keep-sets-and-effects": 1.0006991708889237
-   },
-   "weights": {
-    "PseudoStatRangedDps": 0.8663,
-    "StatAgility": 0.2607,
-    "StatArmorPenetration": 0.0164,
-    "StatCritRating": 0.3391,
-    "StatExpertiseRating": 0.1538,
-    "StatHasteRating": 0.1884,
-    "StatHitRating": 0.1122,
-    "StatIntellect": 0.3197,
-    "StatRangedAttackPower": 0.0892,
-    "StatSpellPiercing": 0.0486,
-    "StatSpirit": 0.0801
-   },
-   "evaluated_on": [
-    "bm-raid: ml winner (bis)"
-   ],
-   "replaced": [
-    {
-     "slot": 1,
-     "from": "Pendant of Celerity (not in the database)",
-     "to": "Amulet of the Darkmoon"
-    },
-    {
-     "slot": 3,
-     "from": "Earthweave Cloak",
-     "to": "Expeditionary's Cape"
-    },
-    {
-     "slot": 5,
-     "from": "Rockfury Bracers",
-     "to": "Magiskull Cuffs"
-    },
-    {
-     "slot": 7,
-     "from": "Knowledge of the Timbermaw (not in the database)",
-     "to": "Highlander's Mail Girdle"
-    },
-    {
-     "slot": 9,
-     "from": "Sorcerer's Boots",
-     "to": "Beaststalker's Boots"
-    },
-    {
-     "slot": 10,
-     "from": "Signet Ring of the Bronze Dragonflight",
-     "to": "Signet Ring of the Bronze Dragonflight"
-    },
-    {
-     "slot": 11,
-     "from": "Signet Ring of the Bronze Dragonflight (not in the database)",
-     "to": "Channeler's Ring"
-    },
-    {
-     "slot": 12,
-     "from": "Blackhand's Breadth (not in the database)",
-     "to": "Rune of the Guard Captain"
-    },
-    {
-     "slot": 13,
-     "from": "Royal Seal of Eldre'Thalas (not in the database)",
-     "to": "Adaptive Combat Assistant"
-    },
-    {
-     "slot": 14,
-     "from": "Barbarous Blade (not in the database)",
-     "to": "Thorium Poleaxe"
-    }
-   ],
-   "remade": {
-    "simulator": "wowsims/forever 09e739807",
-    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
-    "missing_before": [
-     "item:22340",
-     "item:228190",
-     "item:234020",
-     "item:13965",
-     "item:18473",
-     "item:18520"
-    ],
-    "winner_of": "bis-dummy",
-    "talents_left_out": [],
-    "minutes": 4.1
-   }
-  }
+  "bis2": true
  },
  "search": {
   "bis-dummy-1": {
@@ -866,16 +567,18 @@
    "simulated_builds": 3363,
    "simulated_fights": 4174000,
    "minutes": 6.1,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-beast-mastery-bis.gear.json"
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-beast-mastery-bis.gear.json",
+   "commit": "30f67f5d2"
   },
   "bis-dummy": {
    "class": "hunter",
    "spec": "Beast Mastery",
    "setting": "dummy",
    "entry": "bm-raid",
-   "date": "2026-10-16",
+   "date": "2026-10-23",
    "constraint": "Beast Mastery 30+",
    "protected": [
+    "Bestial Wrath",
     "Intimidation"
    ],
    "entries_screened": {},
@@ -891,7 +594,7 @@
       ],
       [
        "Endurance Training",
-       1
+       3
       ],
       [
        "Focused Fire",
@@ -899,7 +602,7 @@
       ],
       [
        "Improved Revive Pet",
-       2
+       1
       ],
       [
        "Bestial Swiftness",
@@ -912,10 +615,6 @@
       [
        "Ferocity",
        5
-      ],
-      [
-       "Summon Hawk",
-       1
       ],
       [
        "Intimidation",
@@ -945,11 +644,15 @@
       ],
       [
        "Efficiency",
-       3
+       1
       ],
       [
        "Careful Aim",
        5
+      ],
+      [
+       "Rapid Killing",
+       1
       ],
       [
        "Trueshot Aura",
@@ -959,446 +662,26 @@
      "Survival": [
       [
        "Improved Tracking",
-       3
-      ]
-     ]
-    },
-    "split": "31/17/3",
-    "dps": 495.18,
-    "se": 0.0391,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "31/17/3",
-    "dps": 495.18,
-    "se": 0.0391,
-    "differs": [
-     [
-      "Endurance Training",
-      1
-     ],
-     [
-      "Endurance Training",
-      3
-     ],
-     [
-      "Improved Revive Pet",
-      2
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "finalists": [
-    {
-     "allocation": {
-      "Beast Mastery": [
-       [
-        "Deadly Aspects",
-        5
-       ],
-       [
-        "Endurance Training",
-        1
-       ],
-       [
-        "Focused Fire",
-        2
-       ],
-       [
-        "Improved Revive Pet",
-        2
-       ],
-       [
-        "Bestial Swiftness",
-        1
-       ],
-       [
-        "Unleashed Fury",
-        5
-       ],
-       [
-        "Ferocity",
-        5
-       ],
-       [
-        "Summon Hawk",
-        1
-       ],
-       [
-        "Intimidation",
-        1
-       ],
-       [
-        "Bestial Discipline",
-        2
-       ],
-       [
-        "Frenzy",
-        5
-       ],
-       [
-        "Bestial Wrath",
-        1
-       ]
-      ],
-      "Marksmanship": [
-       [
-        "Lethal Attacks",
-        5
-       ],
-       [
-        "Improved Stings",
-        3
-       ],
-       [
-        "Efficiency",
-        3
-       ],
-       [
-        "Careful Aim",
-        5
-       ],
-       [
-        "Trueshot Aura",
-        1
-       ]
-      ],
-      "Survival": [
-       [
-        "Improved Tracking",
-        3
-       ]
-      ]
-     },
-     "split": "31/17/3",
-     "dps": 495.18,
-     "se": 0.0391
-    },
-    {
-     "allocation": {
-      "Beast Mastery": [
-       [
-        "Deadly Aspects",
-        5
-       ],
-       [
-        "Endurance Training",
-        3
-       ],
-       [
-        "Focused Fire",
-        2
-       ],
-       [
-        "Bestial Swiftness",
-        1
-       ],
-       [
-        "Unleashed Fury",
-        5
-       ],
-       [
-        "Ferocity",
-        5
-       ],
-       [
-        "Summon Hawk",
-        1
-       ],
-       [
-        "Intimidation",
-        1
-       ],
-       [
-        "Bestial Discipline",
-        2
-       ],
-       [
-        "Frenzy",
-        5
-       ],
-       [
-        "Bestial Wrath",
-        1
-       ]
-      ],
-      "Marksmanship": [
-       [
-        "Lethal Attacks",
-        5
-       ],
-       [
-        "Improved Stings",
-        3
-       ],
-       [
-        "Efficiency",
-        3
-       ],
-       [
-        "Careful Aim",
-        5
-       ],
-       [
-        "Trueshot Aura",
-        1
-       ]
-      ],
-      "Survival": [
-       [
-        "Improved Tracking",
-        3
-       ]
-      ]
-     },
-     "split": "31/17/3",
-     "dps": 495.18,
-     "se": 0.0391
-    }
-   ],
-   "runs": [
-    {
-     "entry": "bm-raid",
-     "run": 1,
-     "simulated": 1181,
-     "best_screen": 495.26,
-     "best_split": "31/17/3",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 381,
-       "best": 495.26
-      },
-      {
-       "round": 1,
-       "simulated": 581,
-       "best": 495.26,
-       "predicted_top": 490.45
-      },
-      {
-       "round": 2,
-       "simulated": 781,
-       "best": 495.26,
-       "predicted_top": 493.66
-      },
-      {
-       "round": 3,
-       "simulated": 981,
-       "best": 495.26,
-       "predicted_top": 494.67
-      },
-      {
-       "round": 4,
-       "simulated": 1181,
-       "best": 495.26,
-       "predicted_top": 495.01
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      495.36,
-      495.36,
-      495.36,
-      495.36,
-      495.36,
-      495.36
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      495.08,
-      495.08,
-      495.08,
-      495.08,
-      495.08
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      495.18,
-      495.18
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 188,
-     "best_gap": 0.0001,
-     "best_move": "1 Careful Aim -> Improved Tracking"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Marksmanship points",
-     "importance": 0.2754
-    },
-    {
-     "feature": "Careful Aim",
-     "importance": 0.2209
-    },
-    {
-     "feature": "Frenzy",
-     "importance": 0.1058
-    },
-    {
-     "feature": "Endurance Training",
-     "importance": 0.1051
-    },
-    {
-     "feature": "Trueshot Aura",
-     "importance": 0.0525
-    },
-    {
-     "feature": "Lethal Attacks",
-     "importance": 0.0411
-    },
-    {
-     "feature": "Improved Concussive Shot",
-     "importance": 0.0267
-    },
-    {
-     "feature": "Improved Stings",
-     "importance": 0.0224
-    },
-    {
-     "feature": "Survival points",
-     "importance": 0.0221
-    },
-    {
-     "feature": "Efficiency",
-     "importance": 0.0193
-    },
-    {
-     "feature": "Bestial Discipline",
-     "importance": 0.0188
-    },
-    {
-     "feature": "Improved Aspect of the Monkey",
-     "importance": 0.0145
-    }
-   ],
-   "simulated_builds": 1383,
-   "simulated_fights": 2158000,
-   "minutes": 2.3,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-beast-mastery-bis.gear.json"
-  },
-  "bis-raid": {
-   "class": "hunter",
-   "spec": "Beast Mastery",
-   "setting": "raid",
-   "entry": "bm-raid",
-   "date": "2026-10-16",
-   "constraint": "Beast Mastery 30+",
-   "protected": [],
-   "entries_screened": {},
-   "entries_searched": [
-    "bm-raid"
-   ],
-   "winner": {
-    "allocation": {
-     "Beast Mastery": [
-      [
-       "Deadly Aspects",
-       5
-      ],
-      [
-       "Endurance Training",
-       3
-      ],
-      [
-       "Focused Fire",
-       2
-      ],
-      [
-       "Bestial Swiftness",
-       1
-      ],
-      [
-       "Unleashed Fury",
-       5
-      ],
-      [
-       "Improved Mend Pet",
-       1
-      ],
-      [
-       "Ferocity",
-       5
-      ],
-      [
-       "Summon Hawk",
-       1
-      ],
-      [
-       "Intimidation",
-       1
-      ],
-      [
-       "Bestial Discipline",
-       2
-      ],
-      [
-       "Frenzy",
        4
-      ],
-      [
-       "Bestial Wrath",
-       1
       ]
-     ],
-     "Marksmanship": [
-      [
-       "Lethal Attacks",
-       5
-      ],
-      [
-       "Improved Stings",
-       2
-      ],
-      [
-       "Careful Aim",
-       5
-      ],
-      [
-       "Improved Arcane Shot",
-       3
-      ],
-      [
-       "Mortal Shots",
-       5
-      ]
-     ],
-     "Survival": []
+     ]
     },
-    "split": "31/20/0",
-    "dps": 859.88,
-    "se": 0.082,
+    "split": "31/16/4",
+    "dps": 406.22,
+    "se": 0.0384,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "31/20/0",
-    "dps": 859.88,
-    "se": 0.082,
+    "split": "31/16/4",
+    "dps": 406.22,
+    "se": 0.0384,
     "differs": [
      [
-      "Improved Aspect of the Monkey",
+      "Improved Concussive Shot",
       1
      ],
      [
-      "Improved Mend Pet",
+      "Rapid Killing",
       1
      ]
     ]
@@ -1418,434 +701,11 @@
        ],
        [
         "Focused Fire",
-        2
-       ],
-       [
-        "Bestial Swiftness",
-        1
-       ],
-       [
-        "Unleashed Fury",
-        5
-       ],
-       [
-        "Improved Mend Pet",
-        1
-       ],
-       [
-        "Ferocity",
-        5
-       ],
-       [
-        "Summon Hawk",
-        1
-       ],
-       [
-        "Intimidation",
-        1
-       ],
-       [
-        "Bestial Discipline",
-        2
-       ],
-       [
-        "Frenzy",
-        4
-       ],
-       [
-        "Bestial Wrath",
-        1
-       ]
-      ],
-      "Marksmanship": [
-       [
-        "Lethal Attacks",
-        5
-       ],
-       [
-        "Improved Stings",
-        2
-       ],
-       [
-        "Careful Aim",
-        5
-       ],
-       [
-        "Improved Arcane Shot",
-        3
-       ],
-       [
-        "Mortal Shots",
-        5
-       ]
-      ],
-      "Survival": []
-     },
-     "split": "31/20/0",
-     "dps": 859.88,
-     "se": 0.082
-    },
-    {
-     "allocation": {
-      "Beast Mastery": [
-       [
-        "Deadly Aspects",
-        5
-       ],
-       [
-        "Endurance Training",
-        3
-       ],
-       [
-        "Focused Fire",
-        2
-       ],
-       [
-        "Improved Aspect of the Monkey",
-        1
-       ],
-       [
-        "Bestial Swiftness",
-        1
-       ],
-       [
-        "Unleashed Fury",
-        5
-       ],
-       [
-        "Ferocity",
-        5
-       ],
-       [
-        "Summon Hawk",
-        1
-       ],
-       [
-        "Intimidation",
-        1
-       ],
-       [
-        "Bestial Discipline",
-        2
-       ],
-       [
-        "Frenzy",
-        4
-       ],
-       [
-        "Bestial Wrath",
-        1
-       ]
-      ],
-      "Marksmanship": [
-       [
-        "Lethal Attacks",
-        5
-       ],
-       [
-        "Improved Stings",
-        2
-       ],
-       [
-        "Careful Aim",
-        5
-       ],
-       [
-        "Improved Arcane Shot",
-        3
-       ],
-       [
-        "Mortal Shots",
-        5
-       ]
-      ],
-      "Survival": []
-     },
-     "split": "31/20/0",
-     "dps": 859.88,
-     "se": 0.082
-    }
-   ],
-   "runs": [
-    {
-     "entry": "bm-raid",
-     "run": 1,
-     "simulated": 1389,
-     "best_screen": 861.19,
-     "best_split": "31/20/0",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 389,
-       "best": 855.17
-      },
-      {
-       "round": 1,
-       "simulated": 589,
-       "best": 860.42,
-       "predicted_top": 850.9
-      },
-      {
-       "round": 2,
-       "simulated": 789,
-       "best": 861.19,
-       "predicted_top": 856.36
-      },
-      {
-       "round": 3,
-       "simulated": 989,
-       "best": 861.19,
-       "predicted_top": 860.58
-      },
-      {
-       "round": 4,
-       "simulated": 1189,
-       "best": 861.19,
-       "predicted_top": 860.98
-      },
-      {
-       "round": 5,
-       "simulated": 1389,
-       "best": 861.19,
-       "predicted_top": 861.14
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      859.54,
-      859.54,
-      859.54,
-      859.54,
-      859.54,
-      859.54
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      860.16,
-      860.16,
-      860.16,
-      860.16,
-      860.16
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      859.88,
-      859.88
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 165,
-     "best_gap": 0.0008,
-     "best_move": "1 Improved Stings -> Improved Arcane Shot"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Careful Aim",
-     "importance": 0.3675
-    },
-    {
-     "feature": "Mortal Shots",
-     "importance": 0.1983
-    },
-    {
-     "feature": "Endurance Training",
-     "importance": 0.091
-    },
-    {
-     "feature": "Marksmanship points",
-     "importance": 0.0761
-    },
-    {
-     "feature": "Improved Aspect of the Monkey",
-     "importance": 0.0562
-    },
-    {
-     "feature": "Frenzy",
-     "importance": 0.0419
-    },
-    {
-     "feature": "Improved Arcane Shot",
-     "importance": 0.0397
-    },
-    {
-     "feature": "Lethal Attacks",
-     "importance": 0.0261
-    },
-    {
-     "feature": "Deflection",
-     "importance": 0.0229
-    },
-    {
-     "feature": "Survival points",
-     "importance": 0.0156
-    },
-    {
-     "feature": "Bestial Wrath",
-     "importance": 0.0092
-    },
-    {
-     "feature": "Beast Mastery points",
-     "importance": 0.008
-    }
-   ],
-   "simulated_builds": 1568,
-   "simulated_fights": 2297000,
-   "minutes": 3.3,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-beast-mastery-bis.gear.json"
-  },
-  "prebis-dummy": {
-   "class": "hunter",
-   "spec": "Beast Mastery",
-   "setting": "dummy",
-   "entry": "bm-raid",
-   "date": "2026-10-16",
-   "constraint": "Beast Mastery 30+",
-   "protected": [
-    "Intimidation"
-   ],
-   "entries_screened": {},
-   "entries_searched": [
-    "bm-raid"
-   ],
-   "winner": {
-    "allocation": {
-     "Beast Mastery": [
-      [
-       "Deadly Aspects",
-       5
-      ],
-      [
-       "Focused Fire",
-       2
-      ],
-      [
-       "Improved Aspect of the Monkey",
-       2
-      ],
-      [
-       "Improved Revive Pet",
-       2
-      ],
-      [
-       "Bestial Swiftness",
-       1
-      ],
-      [
-       "Unleashed Fury",
-       5
-      ],
-      [
-       "Ferocity",
-       5
-      ],
-      [
-       "Intimidation",
-       1
-      ],
-      [
-       "Bestial Discipline",
-       2
-      ],
-      [
-       "Frenzy",
-       5
-      ],
-      [
-       "Bestial Wrath",
-       1
-      ]
-     ],
-     "Marksmanship": [
-      [
-       "Lethal Attacks",
-       5
-      ],
-      [
-       "Improved Stings",
-       3
-      ],
-      [
-       "Efficiency",
-       3
-      ],
-      [
-       "Careful Aim",
-       5
-      ],
-      [
-       "Trueshot Aura",
-       1
-      ]
-     ],
-     "Survival": [
-      [
-       "Improved Tracking",
-       3
-      ]
-     ]
-    },
-    "split": "31/17/3",
-    "dps": 472.98,
-    "se": 0.0355,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "31/17/3",
-    "dps": 472.98,
-    "se": 0.0355,
-    "differs": [
-     [
-      "Endurance Training",
-      1
-     ],
-     [
-      "Improved Aspect of the Monkey",
-      2
-     ],
-     [
-      "Pathfinding",
-      1
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "finalists": [
-    {
-     "allocation": {
-      "Beast Mastery": [
-       [
-        "Deadly Aspects",
-        5
-       ],
-       [
-        "Focused Fire",
-        2
-       ],
-       [
-        "Improved Aspect of the Monkey",
         2
        ],
        [
         "Improved Revive Pet",
-        2
+        1
        ],
        [
         "Bestial Swiftness",
@@ -1887,11 +747,15 @@
        ],
        [
         "Efficiency",
-        3
+        1
        ],
        [
         "Careful Aim",
         5
+       ],
+       [
+        "Rapid Killing",
+        1
        ],
        [
         "Trueshot Aura",
@@ -1901,13 +765,13 @@
       "Survival": [
        [
         "Improved Tracking",
-        3
+        4
        ]
       ]
      },
-     "split": "31/17/3",
-     "dps": 472.98,
-     "se": 0.0355
+     "split": "31/16/4",
+     "dps": 406.22,
+     "se": 0.0384
     },
     {
      "allocation": {
@@ -1918,19 +782,15 @@
        ],
        [
         "Endurance Training",
-        1
+        3
        ],
        [
         "Focused Fire",
         2
        ],
        [
-        "Pathfinding",
-        1
-       ],
-       [
         "Improved Revive Pet",
-        2
+        1
        ],
        [
         "Bestial Swiftness",
@@ -1963,6 +823,10 @@
       ],
       "Marksmanship": [
        [
+        "Improved Concussive Shot",
+        1
+       ],
+       [
         "Lethal Attacks",
         5
        ],
@@ -1972,7 +836,7 @@
        ],
        [
         "Efficiency",
-        3
+        1
        ],
        [
         "Careful Aim",
@@ -1986,57 +850,51 @@
       "Survival": [
        [
         "Improved Tracking",
-        3
+        4
        ]
       ]
      },
-     "split": "31/17/3",
-     "dps": 472.98,
-     "se": 0.0355
+     "split": "31/16/4",
+     "dps": 406.22,
+     "se": 0.0384
     }
    ],
    "runs": [
     {
      "entry": "bm-raid",
      "run": 1,
-     "simulated": 1382,
-     "best_screen": 472.37,
-     "best_split": "31/17/3",
+     "simulated": 1188,
+     "best_screen": 406.11,
+     "best_split": "31/16/4",
      "trace": [
       {
        "round": 0,
-       "simulated": 382,
-       "best": 469.45
+       "simulated": 388,
+       "best": 406.1
       },
       {
        "round": 1,
-       "simulated": 582,
-       "best": 472.37,
-       "predicted_top": 465.03
+       "simulated": 588,
+       "best": 406.11,
+       "predicted_top": 404.06
       },
       {
        "round": 2,
-       "simulated": 782,
-       "best": 472.37,
-       "predicted_top": 469.88
+       "simulated": 788,
+       "best": 406.11,
+       "predicted_top": 405.97
       },
       {
        "round": 3,
-       "simulated": 982,
-       "best": 472.37,
-       "predicted_top": 471.98
+       "simulated": 988,
+       "best": 406.11,
+       "predicted_top": 406.05
       },
       {
        "round": 4,
-       "simulated": 1182,
-       "best": 472.37,
-       "predicted_top": 472.34
-      },
-      {
-       "round": 5,
-       "simulated": 1382,
-       "best": 472.37,
-       "predicted_top": 472.3
+       "simulated": 1188,
+       "best": 406.11,
+       "predicted_top": 406.1
       }
      ],
      "best_stage1_gap": 0.0,
@@ -2049,519 +907,111 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      472.83,
-      472.83,
-      472.83,
-      472.83,
-      472.83,
-      472.83
+      406.35,
+      406.35,
+      406.35,
+      406.35,
+      406.35,
+      406.35
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      473.0,
-      473.0,
-      473.0,
-      473.0,
-      473.0
+      406.18,
+      406.18,
+      406.18,
+      406.18,
+      406.18
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      472.98,
-      472.98
+      406.22,
+      406.22
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 197,
+     "neighbours": 187,
      "best_gap": 0.0,
-     "best_move": "1 Improved Aspect of the Monkey -> Spirit Bond"
+     "best_move": "1 Rapid Killing -> Improved Concussive Shot"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
-     "feature": "Endurance Training",
-     "importance": 0.3087
-    },
-    {
      "feature": "Frenzy",
-     "importance": 0.2187
-    },
-    {
-     "feature": "Trueshot Aura",
-     "importance": 0.0836
-    },
-    {
-     "feature": "Marksmanship points",
-     "importance": 0.0827
+     "importance": 0.3379
     },
     {
      "feature": "Careful Aim",
-     "importance": 0.0817
+     "importance": 0.2173
     },
     {
-     "feature": "Efficiency",
-     "importance": 0.0379
-    },
-    {
-     "feature": "Improved Aspect of the Monkey",
-     "importance": 0.0216
-    },
-    {
-     "feature": "Ferocity",
-     "importance": 0.0187
-    },
-    {
-     "feature": "Improved Arcane Shot",
-     "importance": 0.0172
+     "feature": "Marksmanship points",
+     "importance": 0.1156
     },
     {
      "feature": "Improved Mend Pet",
-     "importance": 0.0148
+     "importance": 0.0527
     },
     {
      "feature": "Lethal Attacks",
-     "importance": 0.014
-    },
-    {
-     "feature": "Improved Stings",
-     "importance": 0.0119
-    }
-   ],
-   "simulated_builds": 1593,
-   "simulated_fights": 2386000,
-   "minutes": 2.5,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-beast-mastery-prebis.gear.json"
-  },
-  "prebis-raid": {
-   "class": "hunter",
-   "spec": "Beast Mastery",
-   "setting": "raid",
-   "entry": "bm-raid",
-   "date": "2026-10-16",
-   "constraint": "Beast Mastery 30+",
-   "protected": [],
-   "entries_screened": {},
-   "entries_searched": [
-    "bm-raid"
-   ],
-   "winner": {
-    "allocation": {
-     "Beast Mastery": [
-      [
-       "Deadly Aspects",
-       5
-      ],
-      [
-       "Endurance Training",
-       3
-      ],
-      [
-       "Focused Fire",
-       2
-      ],
-      [
-       "Bestial Swiftness",
-       1
-      ],
-      [
-       "Unleashed Fury",
-       5
-      ],
-      [
-       "Ferocity",
-       5
-      ],
-      [
-       "Summon Hawk",
-       1
-      ],
-      [
-       "Intimidation",
-       1
-      ],
-      [
-       "Bestial Discipline",
-       2
-      ],
-      [
-       "Frenzy",
-       5
-      ],
-      [
-       "Bestial Wrath",
-       1
-      ]
-     ],
-     "Marksmanship": [
-      [
-       "Lethal Attacks",
-       5
-      ],
-      [
-       "Improved Stings",
-       2
-      ],
-      [
-       "Careful Aim",
-       5
-      ],
-      [
-       "Improved Arcane Shot",
-       3
-      ],
-      [
-       "Mortal Shots",
-       5
-      ]
-     ],
-     "Survival": []
-    },
-    "split": "31/20/0",
-    "dps": 810.0,
-    "se": 0.0694,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "31/20/0",
-    "dps": 810.0,
-    "se": 0.0694,
-    "differs": [
-     [
-      "Endurance Training",
-      3
-     ],
-     [
-      "Improved Aspect of the Monkey",
-      2
-     ],
-     [
-      "Improved Revive Pet",
-      2
-     ],
-     [
-      "Summon Hawk",
-      1
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "finalists": [
-    {
-     "allocation": {
-      "Beast Mastery": [
-       [
-        "Deadly Aspects",
-        5
-       ],
-       [
-        "Endurance Training",
-        3
-       ],
-       [
-        "Focused Fire",
-        2
-       ],
-       [
-        "Bestial Swiftness",
-        1
-       ],
-       [
-        "Unleashed Fury",
-        5
-       ],
-       [
-        "Ferocity",
-        5
-       ],
-       [
-        "Summon Hawk",
-        1
-       ],
-       [
-        "Intimidation",
-        1
-       ],
-       [
-        "Bestial Discipline",
-        2
-       ],
-       [
-        "Frenzy",
-        5
-       ],
-       [
-        "Bestial Wrath",
-        1
-       ]
-      ],
-      "Marksmanship": [
-       [
-        "Lethal Attacks",
-        5
-       ],
-       [
-        "Improved Stings",
-        2
-       ],
-       [
-        "Careful Aim",
-        5
-       ],
-       [
-        "Improved Arcane Shot",
-        3
-       ],
-       [
-        "Mortal Shots",
-        5
-       ]
-      ],
-      "Survival": []
-     },
-     "split": "31/20/0",
-     "dps": 810.0,
-     "se": 0.0694
-    },
-    {
-     "allocation": {
-      "Beast Mastery": [
-       [
-        "Deadly Aspects",
-        5
-       ],
-       [
-        "Focused Fire",
-        2
-       ],
-       [
-        "Improved Aspect of the Monkey",
-        2
-       ],
-       [
-        "Improved Revive Pet",
-        2
-       ],
-       [
-        "Bestial Swiftness",
-        1
-       ],
-       [
-        "Unleashed Fury",
-        5
-       ],
-       [
-        "Ferocity",
-        5
-       ],
-       [
-        "Intimidation",
-        1
-       ],
-       [
-        "Bestial Discipline",
-        2
-       ],
-       [
-        "Frenzy",
-        5
-       ],
-       [
-        "Bestial Wrath",
-        1
-       ]
-      ],
-      "Marksmanship": [
-       [
-        "Lethal Attacks",
-        5
-       ],
-       [
-        "Improved Stings",
-        2
-       ],
-       [
-        "Careful Aim",
-        5
-       ],
-       [
-        "Improved Arcane Shot",
-        3
-       ],
-       [
-        "Mortal Shots",
-        5
-       ]
-      ],
-      "Survival": []
-     },
-     "split": "31/20/0",
-     "dps": 810.0,
-     "se": 0.0694
-    }
-   ],
-   "runs": [
-    {
-     "entry": "bm-raid",
-     "run": 1,
-     "simulated": 1196,
-     "best_screen": 809.11,
-     "best_split": "31/20/0",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 396,
-       "best": 809.11
-      },
-      {
-       "round": 1,
-       "simulated": 596,
-       "best": 809.11,
-       "predicted_top": 805.23
-      },
-      {
-       "round": 2,
-       "simulated": 796,
-       "best": 809.11,
-       "predicted_top": 808.57
-      },
-      {
-       "round": 3,
-       "simulated": 996,
-       "best": 809.11,
-       "predicted_top": 808.93
-      },
-      {
-       "round": 4,
-       "simulated": 1196,
-       "best": 809.11,
-       "predicted_top": 808.97
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      809.75,
-      809.75,
-      809.75,
-      809.75,
-      809.75,
-      809.75
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      809.72,
-      809.72,
-      809.72,
-      809.72,
-      809.72
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      810.0,
-      810.0
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 157,
-     "best_gap": 0.0009,
-     "best_move": "1 Mortal Shots -> Improved Stings"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Careful Aim",
-     "importance": 0.417
-    },
-    {
-     "feature": "Mortal Shots",
-     "importance": 0.1153
+     "importance": 0.0438
     },
     {
      "feature": "Endurance Training",
-     "importance": 0.1031
+     "importance": 0.0359
     },
     {
-     "feature": "Improved Arcane Shot",
-     "importance": 0.0995
-    },
-    {
-     "feature": "Marksmanship points",
-     "importance": 0.0983
-    },
-    {
-     "feature": "Frenzy",
-     "importance": 0.0645
-    },
-    {
-     "feature": "Lethal Attacks",
-     "importance": 0.0196
-    },
-    {
-     "feature": "Survival points",
-     "importance": 0.009
-    },
-    {
-     "feature": "Improved Concussive Shot",
-     "importance": 0.0081
-    },
-    {
-     "feature": "Beast Mastery points",
-     "importance": 0.0078
-    },
-    {
-     "feature": "Efficiency",
-     "importance": 0.0073
+     "feature": "Improved Aspect of the Monkey",
+     "importance": 0.0311
     },
     {
      "feature": "Improved Stings",
-     "importance": 0.0067
+     "importance": 0.0227
+    },
+    {
+     "feature": "Pathfinding",
+     "importance": 0.0174
+    },
+    {
+     "feature": "Beast Mastery points",
+     "importance": 0.0168
+    },
+    {
+     "feature": "Lone Wolf",
+     "importance": 0.0159
+    },
+    {
+     "feature": "Deflection",
+     "importance": 0.0125
     }
    ],
-   "simulated_builds": 1367,
-   "simulated_fights": 2080000,
-   "minutes": 3.2,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-beast-mastery-prebis.gear.json"
+   "simulated_builds": 1389,
+   "signature_check": {
+    "spec": "Beast Mastery",
+    "ok": true,
+    "core_share": 0.3646,
+    "min_share": 0.3,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 2162000,
+   "minutes": 4.9,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-beast-mastery-bis.gear.json",
+   "commit": "30f67f5d2"
   }
  },
- "commit": "2ce8265",
+ "commit": "30f67f5d2",
  "spells_done": {
   "date": "2026-10-14",
   "lines_kept": 0
- },
- "compare": {
-  "setting": "dummy",
-  "dps": {
-   "winner": {
-    "entry": "bm-raid",
-    "dps": 495.24,
-    "se": 0.039
-   }
-  },
-  "best_hand": null,
-  "gain_vs_hand": null
  }
 }

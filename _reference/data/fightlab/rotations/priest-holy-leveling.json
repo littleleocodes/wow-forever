@@ -3,28 +3,15 @@
   "Devouring Plague": {
    "off": true
   },
-  "Smite": {
-   "min_hp": 0.35
-  },
-  "Holy Fire": {
-   "off": true
-  },
-  "Penance": {
-   "min_mana": 0.3,
-   "off": true
-  },
   "Mind Blast": {
-   "min_mana": 0.3,
-   "min_hp": 0.2
+   "min_mana": 0.3
   }
  },
- "knobs": {
-  "WAND_BELOW": 0.3
- },
  "drink_below": 0.15,
+ "eat_below": 0.8,
  "class": "priest",
  "spec": "holy-leveling",
- "build": "holy-leveling",
+ "build": "smite-open-leveling",
  "levels": [
   20,
   30,
@@ -32,140 +19,118 @@
   50,
   60
  ],
- "date": "2026-10-20",
+ "date": "2026-10-23",
+ "signature": {
+  "required": [
+   "Holy Fire",
+   "Shadow Word: Pain",
+   "Smite"
+  ],
+  "build_spec": "Hybrid Discipline/Holy",
+  "dropped_saved_rules": [],
+  "core_share_before": 0.3667211983036611,
+  "core_share_after": 0.5194509400759332,
+  "min_share": 0.5,
+  "floor_reached": true
+ },
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
+   "phase": "floor",
    "change": "never cast Devouring Plague",
    "rule": [
     "off",
     "Devouring Plague",
     true
    ],
-   "gain_seed1": 0.051888023988682086,
-   "gain_seed2": 0.05491107282124397
+   "share_seed1": 0.4739,
+   "share_seed2": 0.4727,
+   "seconds_seed2": 52.95,
+   "seconds_before_seed2": 54.44
   },
   {
    "round": 2,
-   "change": "Smite only while the mob has more than 35% health",
+   "phase": "floor",
+   "change": "Mind Blast only above 15% mana",
    "rule": [
-    "min_hp",
-    "Smite",
-    0.35
+    "min_mana",
+    "Mind Blast",
+    0.15
    ],
-   "gain_seed1": 0.051698933506642675,
-   "gain_seed2": 0.0493043761143005
+   "share_seed1": 0.4945,
+   "share_seed2": 0.4935,
+   "seconds_seed2": 53.27,
+   "seconds_before_seed2": 52.95
   },
   {
    "round": 3,
-   "change": "WAND_BELOW = 0.3",
-   "rule": [
-    "knob",
-    "WAND_BELOW",
-    0.3
-   ],
-   "gain_seed1": 0.02038792271981249,
-   "gain_seed2": 0.019002479725037102
-  },
-  {
-   "round": 4,
-   "change": "drink below 15% mana",
-   "rule": [
-    "drink_below",
-    null,
-    0.15
-   ],
-   "gain_seed1": 0.019424462744042303,
-   "gain_seed2": 0.021207167629634927
-  },
-  {
-   "round": 5,
-   "change": "never cast Holy Fire",
-   "rule": [
-    "off",
-    "Holy Fire",
-    true
-   ],
-   "gain_seed1": 0.03169491631401622,
-   "gain_seed2": 0.03213679408954695
-  },
-  {
-   "round": 6,
-   "change": "Penance only above 30% mana",
-   "rule": [
-    "min_mana",
-    "Penance",
-    0.3
-   ],
-   "gain_seed1": 0.023021983154473902,
-   "gain_seed2": 0.023143179717842632
-  },
-  {
-   "round": 7,
+   "phase": "floor",
    "change": "Mind Blast only above 30% mana",
    "rule": [
     "min_mana",
     "Mind Blast",
     0.3
    ],
-   "gain_seed1": 0.0439070677288933,
-   "gain_seed2": 0.04558348736004281
+   "share_seed1": 0.5228,
+   "share_seed2": 0.5192,
+   "seconds_seed2": 54.21,
+   "seconds_before_seed2": 53.27
   },
   {
-   "round": 8,
-   "change": "never cast Penance",
+   "round": 1,
+   "change": "drink below 15% mana",
    "rule": [
-    "off",
-    "Penance",
-    true
+    "drink_below",
+    null,
+    0.15
    ],
-   "gain_seed1": 0.004811797967443576,
-   "gain_seed2": 0.005377683845613657
+   "gain_seed1": 0.011856113099683707,
+   "gain_seed2": 0.013179678883724066
   },
   {
-   "round": 9,
-   "change": "Mind Blast only while the mob has more than 20% health",
+   "round": 2,
+   "change": "eat below 80% health",
    "rule": [
-    "min_hp",
-    "Mind Blast",
-    0.2
+    "eat_below",
+    null,
+    0.8
    ],
-   "gain_seed1": 0.009341846959221134,
-   "gain_seed2": 0.00969404152197717
+   "gain_seed1": 0.0067471483537280275,
+   "gain_seed2": 0.005584282279803454
   }
  ],
- "weighted_before": 52.949289537448536,
- "weighted_after": 40.631886531548254,
+ "weighted_before": 54.43822481623558,
+ "weighted_after": 53.202370901752225,
  "per_level": {
   "20": {
-   "before": 40.27964892700424,
-   "after": 26.17536666668446,
+   "before": 48.18689863201561,
+   "after": 43.550578454130466,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 50.07074821707069,
-   "after": 32.217900000282285,
+   "before": 54.31941521946131,
+   "after": 50.393252657080886,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 57.644144390762406,
-   "after": 41.062297621963914,
+   "before": 58.949787730340624,
+   "after": 60.1104544155133,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 53.884634595996815,
-   "after": 43.4885641541081,
+   "before": 54.76235360093093,
+   "after": 56.229307603071966,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 54.70241628345272,
-   "after": 46.99021433972552,
+   "before": 53.30358907937989,
+   "after": 50.69635791302131,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

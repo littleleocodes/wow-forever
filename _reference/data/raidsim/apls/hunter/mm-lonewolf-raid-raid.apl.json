@@ -218,7 +218,7 @@
          },
          "rhs": {
           "const": {
-           "val": "1"
+           "val": "2"
           }
          }
         }
@@ -249,7 +249,17 @@
      }
     }
    },
-   "notes": "apl_opt 2026-09-27: changed or added by the rotation search (see mm-lonewolf-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-10-22: changed or added by the rotation search (see mm-lonewolf-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "itemId": 13444
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-22: changed or added by the rotation search (see mm-lonewolf-raid-rotation-search.json)"
   }
  ]
 }

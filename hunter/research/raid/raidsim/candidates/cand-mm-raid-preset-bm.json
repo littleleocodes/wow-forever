@@ -1,0 +1,82 @@
+{
+ "id": "cand-mm-raid-preset-bm",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    3
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Bestial Swiftness",
+    1
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Summon Hawk",
+    1
+   ],
+   [
+    "Intimidation",
+    1
+   ],
+   [
+    "Bestial Discipline",
+    2
+   ],
+   [
+    "Frenzy",
+    5
+   ],
+   [
+    "Bestial Wrath",
+    1
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Efficiency",
+    2
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ]
+  ],
+  "Survival": [
+   [
+    "Improved Tracking",
+    4
+   ]
+  ]
+ },
+ "preset": "BM",
+ "talents": "5320001505101251-0053250001-4",
+ "note": "The community simulator's preset 'BM' (hunter/dps/presets.ts), a raid candidate since it ran within 6% of the best build of mm-raid (394.7 vs 394.9 in the race of 2026-10-22)."
+}

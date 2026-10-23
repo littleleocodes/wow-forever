@@ -5,12 +5,8 @@
   },
   "Scorch": {
    "min_hp": 0.35
-  },
-  "Pyroblast": {
-   "min_hp": 0.35
   }
  },
- "drink_below": 0.25,
  "class": "mage",
  "spec": "fire-leveling",
  "build": "opt-fire-leveling-leveling-st",
@@ -22,6 +18,18 @@
   60
  ],
  "date": "2026-10-22",
+ "signature": {
+  "required": [
+   "Fireball",
+   "Pyroblast"
+  ],
+  "build_spec": "Fire",
+  "dropped_saved_rules": [],
+  "core_share_before": 0.719301824957743,
+  "core_share_after": 0.6933955153020332,
+  "min_share": 0.6,
+  "floor_reached": null
+ },
  "fights": 600,
  "confirm": 3000,
  "changes": [
@@ -33,8 +41,8 @@
     "Fireball",
     0.35
    ],
-   "gain_seed1": 0.010392379816371089,
-   "gain_seed2": 0.01150380465366363
+   "gain_seed1": 0.013848957124380057,
+   "gain_seed2": 0.012687385045910937
   },
   {
    "round": 2,
@@ -44,62 +52,40 @@
     "Scorch",
     0.35
    ],
-   "gain_seed1": 0.010097217034437334,
-   "gain_seed2": 0.008626402550509615
-  },
-  {
-   "round": 3,
-   "change": "drink below 25% mana",
-   "rule": [
-    "drink_below",
-    null,
-    0.25
-   ],
-   "gain_seed1": 0.006604683623778751,
-   "gain_seed2": 0.005024444461751876
-  },
-  {
-   "round": 4,
-   "change": "Pyroblast only while the mob has more than 35% health",
-   "rule": [
-    "min_hp",
-    "Pyroblast",
-    0.35
-   ],
-   "gain_seed1": 0.003239244985397516,
-   "gain_seed2": 0.00493530811114673
+   "gain_seed1": 0.012170128909991806,
+   "gain_seed2": 0.010284161720716
   }
  ],
- "weighted_before": 36.35485855349564,
- "weighted_after": 35.27375279852102,
+ "weighted_before": 39.95572652195837,
+ "weighted_after": 39.05041740722267,
  "per_level": {
   "20": {
-   "before": 27.90149975145294,
-   "after": 26.645195072785828,
+   "before": 36.53480318936474,
+   "after": 34.59626237047355,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 33.86661019320215,
-   "after": 32.76081942455346,
+   "before": 40.02854745517535,
+   "after": 39.01095012397686,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 41.205684616582786,
-   "after": 39.61238226712372,
+   "before": 46.88787342026336,
+   "after": 45.44437375480735,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 37.75833762837449,
-   "after": 36.81437499103868,
+   "before": 40.46557472693231,
+   "after": 40.00699648596158,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
    "before": 36.01331906319946,
-   "after": 35.23013392125003,
+   "after": 35.49508259708971,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

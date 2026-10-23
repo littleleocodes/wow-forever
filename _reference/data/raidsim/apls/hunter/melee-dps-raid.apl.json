@@ -21,6 +21,15 @@
    "action": {
     "castSpell": {
      "spellId": {
+      "spellId": 14317
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
       "spellId": 14266
      }
     }
@@ -115,15 +124,6 @@
     }
    },
    "notes": "apl_opt 2026-09-29: changed or added by the rotation search (see melee-dps-rotation-search.json)"
-  },
-  {
-   "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 14317
-     }
-    }
-   }
   }
  ]
 }

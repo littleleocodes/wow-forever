@@ -5277,8 +5277,8 @@
   "spec": "any",
   "entry": "bm-raid",
   "setting": "raid",
-  "date": "2026-10-05",
-  "base_dps": 880.33,
+  "date": "2026-10-22",
+  "base_dps": 771.25,
   "abilities": [
    {
     "ability": "Bestial Wrath",
@@ -5290,9 +5290,9 @@
     "best": {
      "line": "aura not on you",
      "spot": "at the top",
-     "gain_seed1": 0.0004,
+     "gain_seed1": 0.0006,
      "split": "31/20/0",
-     "vs_spec_build": 0.0004
+     "vs_spec_build": 0.0006
     },
     "kept": false
    },
@@ -5305,10 +5305,10 @@
     "lines_tried": 12,
     "best": {
      "line": "aura not on you",
-     "spot": "in the middle",
-     "gain_seed1": 0.0006,
+     "spot": "at the end",
+     "gain_seed1": 0.0,
      "split": "31/20/0",
-     "vs_spec_build": 0.0006
+     "vs_spec_build": 0.0
     },
     "kept": false
    }

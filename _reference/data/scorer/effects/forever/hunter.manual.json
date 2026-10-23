@@ -1,7 +1,7 @@
 {
   "_doc": "Hand-entered effects for talents the tooltip parser cannot turn into numbers (procs, actives, conditionals). Every entry says how the number was derived. per_rank = linear per rank; values = cumulative per rank when scaling is not linear. modes restricts an effect to leveling or raid scoring.",
   "Deadly Aspects": {
-    "note": "Hawk: 2%/rank chance per auto shot for +30% ranged attack speed 12s. ~4.3 auto shots per 12s window at 2.8s -> uptime = 1-(1-p)^4.3: 8/16/23/30/36% -> haste EV = uptime*0.30 on Auto Shot only (instant shots are not sped up). Same numbers as Classic Improved Aspect of the Hawk. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-lonewolf-raid, training dummy): removing it costs 5.2% DPS in the simulator (scorer said 5.6% on the same scale); already within tolerance, raid effects split off unchanged (5.6%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 1.6% time per kill in the simulator (scorer said 2.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.0%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-aoe] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 3.4% time per kill in the simulator (scorer said 1.6% on the same scale); leveling-aoe values scaled x2.09 to match (3.3%). Other modes unchanged. Fight lab calibration [melee-dps, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 1.6% time per kill in the simulator (scorer said 2.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.3%). Other modes unchanged.",
+    "note": "Hawk: 2%/rank chance per auto shot for +30% ranged attack speed 12s. ~4.3 auto shots per 12s window at 2.8s -> uptime = 1-(1-p)^4.3: 8/16/23/30/36% -> haste EV = uptime*0.30 on Auto Shot only (instant shots are not sped up). Same numbers as Classic Improved Aspect of the Hawk. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 1.6% time per kill in the simulator (scorer said 2.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.0%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-aoe] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 3.4% time per kill in the simulator (scorer said 1.6% on the same scale); leveling-aoe values scaled x2.09 to match (3.3%). Other modes unchanged. Fight lab calibration [melee-dps, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 1.6% time per kill in the simulator (scorer said 2.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.3%). Other modes unchanged. Raid sim calibration [mm-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-raid, training dummy): removing it costs 4.1% DPS in the simulator (scorer said 4.4% on the same scale); already within tolerance, raid effects split off unchanged (4.4%). Other modes unchanged. Raid sim calibration [mm-lonewolf-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-lonewolf-raid, training dummy): removing it costs 4.7% DPS in the simulator (scorer said 5.3% on the same scale); already within tolerance, raid effects split off unchanged (5.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "haste",
@@ -28,20 +28,6 @@
       {
         "channel": "haste",
         "scope": ["ability:Auto Shot"],
-        "values": [0.02319, 0.044524, 0.064004, 0.082556, 0.10018],
-        "modes": ["raid"],
-        "specs": ["mm-raid"]
-      },
-      {
-        "channel": "haste",
-        "scope": ["ability:Auto Shot"],
-        "values": [0.022847, 0.043864, 0.063053, 0.081331, 0.098695],
-        "modes": ["raid"],
-        "specs": ["mm-lonewolf-raid"]
-      },
-      {
-        "channel": "haste",
-        "scope": ["ability:Auto Shot"],
         "values": [0.013327, 0.025587, 0.036781, 0.047442, 0.05757],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["bm-leveling"]
@@ -60,6 +46,20 @@
         "specs": ["melee-dps"],
         "values": [0.007166, 0.014331, 0.021497, 0.028662, 0.035828],
         "modes": ["leveling-st", "solo-60"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["ability:Auto Shot"],
+        "values": [0.02319, 0.044524, 0.064004, 0.082556, 0.10018],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["ability:Auto Shot"],
+        "values": [0.022847, 0.043864, 0.063053, 0.081331, 0.098695],
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
       }
     ]
   },
@@ -257,7 +257,7 @@
     ]
   },
   "Summon Hawk": {
-    "note": "Hawk dive-bombs then attacks for 18s; beta spellbook ranks 1-4 (levels 25/40/50/60) deal 32/47/85/108 plus 5% of ranged attack power per dive bomb, 80-190 mana, cooldown shared with Arcane Shot (6s). Treated as ~15% of pet damage while up, usable on every pull -> +12% of pet damage; raid uptime unknown, same EV. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-raid, training dummy): removing it costs 8.4% DPS in the simulator (scorer said 9.4% on the same scale); already within tolerance, raid effects split off unchanged (9.1%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 2.4% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (0.0%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-aoe] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 6.7% on the same scale); leveling-aoe values scaled x0.00 to match (0.0%). Other modes unchanged.",
+    "note": "Hawk dive-bombs then attacks for 18s; beta spellbook ranks 1-4 (levels 25/40/50/60) deal 32/47/85/108 plus 5% of ranged attack power per dive bomb, 80-190 mana, cooldown shared with Arcane Shot (6s). Treated as ~15% of pet damage while up, usable on every pull -> +12% of pet damage; raid uptime unknown, same EV. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 2.4% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (0.0%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-aoe] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 6.7% on the same scale); leveling-aoe values scaled x0.00 to match (0.0%). Other modes unchanged. Raid sim calibration [mm-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-raid, training dummy): removing it costs -5.3% DPS in the simulator (scorer said 0.0% on the same scale); already within tolerance, raid effects split off unchanged (0.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -282,13 +282,6 @@
       },
       {
         "channel": "dmg",
-        "scope": ["pet"],
-        "values": [0.464352],
-        "modes": ["raid"],
-        "specs": ["mm-raid"]
-      },
-      {
-        "channel": "dmg",
         "scope": ["all"],
         "values": [0.0],
         "modes": ["leveling-st", "solo-60"],
@@ -300,6 +293,13 @@
         "values": [0.0],
         "modes": ["leveling-aoe"],
         "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
       }
     ]
   },
@@ -372,7 +372,7 @@
     ]
   },
   "Intimidation": {
-    "note": "Pet stun (3s) + high threat + guaranteed pet crit on that hit. Leveling: keeps mobs on the pet; small direct value. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs -0.2% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "note": "Pet stun (3s) + high threat + guaranteed pet crit on that hit. Leveling: keeps mobs on the pet; small direct value. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs -0.2% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration [mm-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-raid, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 0.6% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "utility",
@@ -399,7 +399,14 @@
         "scope": ["pet"],
         "values": [0.01],
         "modes": ["raid", "leveling-aoe", "heal", "tank"],
-        "specs": ["mm-raid", "mm-lonewolf-raid"]
+        "specs": ["mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.01],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["mm-raid"]
       },
       {
         "channel": "dmg",
@@ -429,11 +436,18 @@
         "values": [0.0],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
       }
     ]
   },
   "Frenzy": {
-    "note": "20%/rank chance on pet crit for +30% pet attack speed 8s. Pet crit ~12%, ~4 swings per 8s -> P(proc in window) = 1-(1-0.12*p)^4: 9/17/25/33/40% -> haste EV = P*0.30. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 2.4% time per kill in the simulator (scorer said 1.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.6%). Other modes unchanged.",
+    "note": "20%/rank chance on pet crit for +30% pet attack speed 8s. Pet crit ~12%, ~4 swings per 8s -> P(proc in window) = 1-(1-0.12*p)^4: 9/17/25/33/40% -> haste EV = P*0.30. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 2.4% time per kill in the simulator (scorer said 1.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.6%). Other modes unchanged. Raid sim calibration [mm-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-raid, training dummy): removing it costs 6.9% DPS in the simulator (scorer said 6.9% on the same scale); already within tolerance, raid effects split off unchanged (6.9%). Other modes unchanged.",
     "effects": [
       {
         "channel": "haste",
@@ -446,7 +460,14 @@
         "channel": "haste",
         "scope": ["pet"],
         "values": [0.028, 0.052, 0.075, 0.098, 0.12],
-        "modes": ["raid", "leveling-aoe", "heal", "tank"]
+        "modes": ["leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["pet"],
+        "values": [0.028, 0.052, 0.075, 0.098, 0.12],
+        "modes": ["raid"],
+        "specs": ["bm-leveling", "mm-lonewolf-raid", "melee-dps"]
       },
       {
         "channel": "haste",
@@ -454,11 +475,18 @@
         "values": [0.012915, 0.023986, 0.034595, 0.045204, 0.055352],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["pet"],
+        "values": [0.042147, 0.078273, 0.112893, 0.147514, 0.18063],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
       }
     ]
   },
   "Bestial Wrath": {
-    "note": "+50% pet damage for 18s every 2 min = 15% uptime -> +7.5% average pet damage; CC immunity is extra utility. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 1.8% time per kill in the simulator (scorer said 0.6% on the same scale); leveling-st/solo-60 values scaled x3.10 to match (1.8%). Other modes unchanged.",
+    "note": "+50% pet damage for 18s every 2 min = 15% uptime -> +7.5% average pet damage; CC immunity is extra utility. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 1.8% time per kill in the simulator (scorer said 0.6% on the same scale); leveling-st/solo-60 values scaled x3.10 to match (1.8%). Other modes unchanged. Raid sim calibration [mm-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-raid, training dummy): removing it costs 2.7% DPS in the simulator (scorer said 2.2% on the same scale); already within tolerance, raid effects split off unchanged (2.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -471,7 +499,14 @@
         "channel": "dmg",
         "scope": ["pet"],
         "values": [0.075],
-        "modes": ["raid", "leveling-aoe", "heal", "tank"]
+        "modes": ["leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.075],
+        "modes": ["raid"],
+        "specs": ["bm-leveling", "mm-lonewolf-raid", "melee-dps"]
       },
       {
         "channel": "utility",
@@ -506,6 +541,13 @@
         "values": [0.003152],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.054047],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
       }
     ]
   },
@@ -562,7 +604,7 @@
     ]
   },
   "Careful Aim": {
-    "note": "AP equal to 20%/rank of Intellect (est. 100% at 5/5 - the demo shows 20% at rank 1). Hunter Intellect ~120 at 60 vs ~900 AP: 100% Int = +13% AP = ~+8% ranged damage if AP is ~60% of shot damage. int_to_ap_dps in the spec model (0.06) scales this. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-lonewolf-raid, training dummy): removing it costs 4.6% DPS in the simulator (scorer said 4.5% on the same scale); already within tolerance, raid effects split off unchanged (4.5%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 1.7% time per kill in the simulator (scorer said 3.6% on the same scale); leveling-st/solo-60 values scaled x0.46 to match (1.7%). Other modes unchanged. Fight lab calibration [melee-dps, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 1.5% time per kill in the simulator (scorer said 1.9% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.9%). Other modes unchanged.",
+    "note": "AP equal to 20%/rank of Intellect (est. 100% at 5/5 - the demo shows 20% at rank 1). Hunter Intellect ~120 at 60 vs ~900 AP: 100% Int = +13% AP = ~+8% ranged damage if AP is ~60% of shot damage. int_to_ap_dps in the spec model (0.06) scales this. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 1.7% time per kill in the simulator (scorer said 3.6% on the same scale); leveling-st/solo-60 values scaled x0.46 to match (1.7%). Other modes unchanged. Fight lab calibration [melee-dps, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 1.5% time per kill in the simulator (scorer said 1.9% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.9%). Other modes unchanged. Raid sim calibration [mm-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-raid, training dummy): removing it costs 5.0% DPS in the simulator (scorer said 5.0% on the same scale); already within tolerance, raid effects split off unchanged (5.0%). Other modes unchanged. Raid sim calibration [mm-lonewolf-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-lonewolf-raid, training dummy): removing it costs 6.4% DPS in the simulator (scorer said 4.5% on the same scale); raid values scaled x1.43 to match (6.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "ap_from_int",
@@ -598,22 +640,6 @@
       {
         "channel": "ap_from_int",
         "scope": ["all"],
-        "per_rank": 0.127976,
-        "values": [0.127976, 0.25595, 0.383925, 0.511901, 0.639877],
-        "modes": ["raid"],
-        "specs": ["mm-raid"]
-      },
-      {
-        "channel": "ap_from_int",
-        "scope": ["all"],
-        "per_rank": 0.148481,
-        "values": [0.148481, 0.296962, 0.445443, 0.593924, 0.742404],
-        "modes": ["raid"],
-        "specs": ["mm-lonewolf-raid"]
-      },
-      {
-        "channel": "ap_from_int",
-        "scope": ["all"],
         "per_rank": 0.055257,
         "values": [0.055257, 0.110512, 0.165768, 0.221024, 0.27628],
         "modes": ["leveling-st", "solo-60"],
@@ -626,11 +652,27 @@
         "specs": ["melee-dps"],
         "values": [0.126823, 0.253646, 0.380469, 0.507292, 0.634115],
         "modes": ["leveling-st", "solo-60"]
+      },
+      {
+        "channel": "ap_from_int",
+        "scope": ["all"],
+        "per_rank": 0.166985,
+        "values": [0.166985, 0.333968, 0.500951, 0.667936, 0.834922],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "ap_from_int",
+        "scope": ["all"],
+        "per_rank": 0.212766,
+        "values": [0.212766, 0.425532, 0.638298, 0.851064, 1.063829],
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
       }
     ]
   },
   "Lone Wolf": {
-    "note": "+20% damage with all attacks while no pet is active. Only counts in the lonewolf spec model (sources tagged lonewolf). Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-lonewolf-raid, training dummy): removing it costs 20.0% DPS in the simulator (scorer said 19.9% on the same scale); already within tolerance, raid effects split off unchanged (19.9%). Other modes unchanged.",
+    "note": "+20% damage with all attacks while no pet is active. Only counts in the lonewolf spec model (sources tagged lonewolf). Raid sim calibration [mm-lonewolf-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-lonewolf-raid, training dummy): removing it costs 20.0% DPS in the simulator (scorer said 20.1% on the same scale); already within tolerance, raid effects split off unchanged (19.9%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -667,7 +709,7 @@
     ]
   },
   "Focused Fire": {
-    "note": "Beta text: +1%/rank all damage you AND your pet deal while the pet is active. Applies to withpet sources and the pet; a Lone Wolf model gets nothing. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-raid, training dummy): removing it costs 2.0% DPS in the simulator (scorer said 1.8% on the same scale); already within tolerance, raid effects split off unchanged (1.8%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 1.2% time per kill in the simulator (scorer said 0.9% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.9%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-aoe] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 1.8% time per kill in the simulator (scorer said 1.6% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (1.6%). Other modes unchanged. Fight lab calibration [melee-dps, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 1.2% time per kill in the simulator (scorer said 1.8% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.8%). Other modes unchanged.",
+    "note": "Beta text: +1%/rank all damage you AND your pet deal while the pet is active. Applies to withpet sources and the pet; a Lone Wolf model gets nothing. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 1.2% time per kill in the simulator (scorer said 0.9% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.9%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-aoe] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 1.8% time per kill in the simulator (scorer said 1.6% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (1.6%). Other modes unchanged. Fight lab calibration [melee-dps, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 1.2% time per kill in the simulator (scorer said 1.8% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.8%). Other modes unchanged. Raid sim calibration [mm-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-raid, training dummy): removing it costs 2.0% DPS in the simulator (scorer said 1.8% on the same scale); already within tolerance, raid effects split off unchanged (1.8%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -704,14 +746,6 @@
       {
         "channel": "dmg",
         "scope": ["withpet", "pet"],
-        "per_rank": 0.01,
-        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
-        "modes": ["raid"],
-        "specs": ["mm-raid"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["withpet", "pet"],
         "per_rank": 0.004383,
         "values": [0.004383, 0.008767, 0.01315, 0.017533, 0.021916],
         "modes": ["leveling-st", "solo-60"],
@@ -731,11 +765,19 @@
         "specs": ["melee-dps"],
         "values": [0.01, 0.02, 0.03, 0.04, 0.05],
         "modes": ["leveling-st", "solo-60"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["withpet", "pet"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
       }
     ]
   },
   "Trueshot Aura": {
-    "note": "Beta spellbook: +30/40/50/75/50 ranged attack power at levels 25/32/40/50/60 (rank 5's 50 looks like a data slip; +75 assumed at 60). Own damage: +75 AP on ~900 = +8% AP, AP is ~55% of shot damage -> +4% ranged damage; the party value is not scored. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-lonewolf-raid, training dummy): removing it costs 2.4% DPS in the simulator (scorer said 2.8% on the same scale); already within tolerance, raid effects split off unchanged (2.8%). Other modes unchanged. Audit 2026-10-18: the bm-leveling leveling-st fit of 09-28 read 0 because the lab gave the aura 0 attack power until 10-17 (a parse break); re-seeded at the tooltip's +4% ranged damage (rank 4, +75, the strongest rank) for the next fit (row 45). Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 1.3% time per kill in the simulator (scorer said 3.1% on the same scale); leveling-st/solo-60 values scaled x0.43 to match (1.3%). Other modes unchanged.",
+    "note": "Beta spellbook: +30/40/50/75/50 ranged attack power at levels 25/32/40/50/60 (rank 5's 50 looks like a data slip; +75 assumed at 60). Own damage: +75 AP on ~900 = +8% AP, AP is ~55% of shot damage -> +4% ranged damage; the party value is not scored. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 1.3% time per kill in the simulator (scorer said 3.1% on the same scale); leveling-st/solo-60 values scaled x0.43 to match (1.3%). Other modes unchanged. Raid sim calibration [mm-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-raid, training dummy): removing it costs 1.4% DPS in the simulator (scorer said 1.8% on the same scale); already within tolerance, raid effects split off unchanged (1.8%). Other modes unchanged. Raid sim calibration [mm-lonewolf-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-lonewolf-raid, training dummy): removing it costs 1.7% DPS in the simulator (scorer said 2.8% on the same scale); raid values scaled x0.62 to match (1.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -768,6 +810,13 @@
       {
         "channel": "dmg",
         "scope": ["type:ranged"],
+        "values": [0.017146],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
         "values": [0.0277],
         "modes": ["raid"],
         "specs": ["mm-raid"]
@@ -775,16 +824,9 @@
       {
         "channel": "dmg",
         "scope": ["type:ranged"],
-        "values": [0.028102],
+        "values": [0.017341],
         "modes": ["raid"],
         "specs": ["mm-lonewolf-raid"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["type:ranged"],
-        "values": [0.017146],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["bm-leveling"]
       }
     ]
   },
@@ -895,7 +937,7 @@
     ]
   },
   "Rapid Recuperation": {
-    "note": "25% (rank 1) / 50% of mana regen continues while casting for 15s after Serpent Sting: hunters cast constantly, so roughly half the fight -> regen_share * value. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, mm-raid, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 0.8% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 4.8% time per kill in the simulator (scorer said 1.8% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (1.6%). Other modes unchanged.",
+    "note": "25% (rank 1) / 50% of mana regen continues while casting for 15s after Serpent Sting: hunters cast constantly, so roughly half the fight -> regen_share * value. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 4.8% time per kill in the simulator (scorer said 1.8% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (1.6%). Other modes unchanged. Raid sim calibration [mm-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-raid, training dummy): removing it costs 2.2% DPS in the simulator (scorer said 1.6% on the same scale); already within tolerance, raid effects split off unchanged (1.6%). Other modes unchanged. Raid sim calibration [mm-lonewolf-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-lonewolf-raid, training dummy): removing it costs 3.1% DPS in the simulator (scorer said 0.0% on the same scale); raid values kept at x1.00: its builds sit where the mana limit is flat, so the removal runs cannot move it (0.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "regen",
@@ -920,23 +962,23 @@
       {
         "channel": "regen",
         "scope": ["all"],
-        "values": [2.4e-05, 5e-05],
-        "modes": ["raid"],
-        "specs": ["mm-lonewolf-raid"]
+        "values": [0.72, 1.5],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
       },
       {
         "channel": "regen",
         "scope": ["all"],
-        "values": [0.0, 0.0],
+        "values": [0.12, 0.25],
         "modes": ["raid"],
         "specs": ["mm-raid"]
       },
       {
         "channel": "regen",
         "scope": ["all"],
-        "values": [0.72, 1.5],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["bm-leveling"]
+        "values": [2.4e-05, 5e-05],
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
       }
     ]
   },
@@ -1304,7 +1346,7 @@
     ]
   },
   "Improved Stings": {
-    "note": "Beta curve 6/13/20% Serpent Sting damage (parsed); Viper/Scorpid parts are PvP utility (not scored). Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-lonewolf-raid, training dummy): removing it costs 2.5% DPS in the simulator (scorer said 2.6% on the same scale); already within tolerance, raid effects split off unchanged (2.6%). Other modes unchanged. Audit 2026-10-18: dropped the Viper Sting cooldown copy: no model has a Viper Sting source (row 47). Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 1.3% time per kill in the simulator (scorer said 1.8% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.8%). Other modes unchanged. Fight lab calibration [melee-dps, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "note": "Beta curve 6/13/20% Serpent Sting damage (parsed); Viper/Scorpid parts are PvP utility (not scored). Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 1.3% time per kill in the simulator (scorer said 1.8% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.8%). Other modes unchanged. Fight lab calibration [melee-dps, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration [mm-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-raid, training dummy): removing it costs 1.6% DPS in the simulator (scorer said 1.6% on the same scale); already within tolerance, raid effects split off unchanged (1.6%). Other modes unchanged. Raid sim calibration [mm-lonewolf-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-lonewolf-raid, training dummy): removing it costs 2.4% DPS in the simulator (scorer said 2.2% on the same scale); already within tolerance, raid effects split off unchanged (2.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1337,20 +1379,6 @@
       {
         "channel": "dmg",
         "scope": ["ability:Serpent Sting"],
-        "values": [0.068966, 0.149426, 0.229886],
-        "modes": ["raid"],
-        "specs": ["mm-raid"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["ability:Serpent Sting"],
-        "values": [0.068175, 0.147713, 0.227251],
-        "modes": ["raid"],
-        "specs": ["mm-lonewolf-raid"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["ability:Serpent Sting"],
         "values": [0.032685, 0.070817, 0.108948],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["bm-leveling"]
@@ -1362,11 +1390,25 @@
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
         "specs": ["melee-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Serpent Sting"],
+        "values": [0.068966, 0.149426, 0.229886],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Serpent Sting"],
+        "values": [0.068175, 0.147713, 0.227251],
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
       }
     ]
   },
   "Improved Arcane Shot": {
-    "note": "Arcane Shot cooldown -0.3s/rank on a 6s cooldown: parsed as a cooldown effect (the model converts it to more casts of the Arcane Shot source). Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-lonewolf-raid, training dummy): removing it costs 0.7% DPS in the simulator (scorer said 1.4% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "note": "Arcane Shot cooldown -0.3s/rank on a 6s cooldown: parsed as a cooldown effect (the model converts it to more casts of the Arcane Shot source). Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration [mm-lonewolf-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-lonewolf-raid, training dummy): removing it costs 0.8% DPS in the simulator (scorer said 2.0% on the same scale); raid values scaled x0.38 to match (0.8%). Other modes unchanged.",
     "effects": [
       {
         "channel": "cooldown",
@@ -1402,23 +1444,23 @@
       {
         "channel": "cooldown",
         "scope": ["ability:Arcane Shot"],
-        "per_rank": 0.105246,
-        "values": [0.105246, 0.210491, 0.315741, 0.420987, 0.526232],
-        "modes": ["raid"],
-        "specs": ["mm-lonewolf-raid"]
-      },
-      {
-        "channel": "cooldown",
-        "scope": ["ability:Arcane Shot"],
         "per_rank": 0.3,
         "values": [0.3, 0.6, 0.9, 1.2, 1.5],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Arcane Shot"],
+        "per_rank": 0.040181,
+        "values": [0.040181, 0.080362, 0.120545, 0.160726, 0.200907],
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
       }
     ]
   },
   "Unleashed Fury": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-raid, training dummy): removing it costs 3.3% DPS in the simulator (scorer said 3.1% on the same scale); already within tolerance, raid effects split off unchanged (3.0%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 3.8% time per kill in the simulator (scorer said 4.6% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (4.8%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-aoe] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 2.3% time per kill in the simulator (scorer said 6.0% on the same scale); leveling-aoe values scaled x0.39 to match (2.5%). Other modes unchanged. Fight lab calibration [melee-dps, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 2.8% time per kill in the simulator (scorer said 3.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.1%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 3.8% time per kill in the simulator (scorer said 4.6% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (4.8%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-aoe] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 2.3% time per kill in the simulator (scorer said 6.0% on the same scale); leveling-aoe values scaled x0.39 to match (2.5%). Other modes unchanged. Fight lab calibration [melee-dps, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 2.8% time per kill in the simulator (scorer said 3.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.1%). Other modes unchanged. Raid sim calibration [mm-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-raid, training dummy): removing it costs 4.5% DPS in the simulator (scorer said 3.9% on the same scale); already within tolerance, raid effects split off unchanged (3.9%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1447,14 +1489,6 @@
       {
         "channel": "dmg",
         "scope": ["pet"],
-        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["mm-raid"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["pet"],
         "values": [0.040036, 0.080072, 0.120108, 0.160144, 0.200181],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
@@ -1475,11 +1509,19 @@
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
         "specs": ["melee-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.022916, 0.045831, 0.068747, 0.091663, 0.114578],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
       }
     ]
   },
   "Ferocity": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-raid, training dummy): removing it costs 1.6% DPS in the simulator (scorer said 1.6% on the same scale); already within tolerance, raid effects split off unchanged (1.5%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 1.8% time per kill in the simulator (scorer said 1.8% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.9%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-aoe] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 2.7% time per kill in the simulator (scorer said 2.9% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (2.8%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 1.8% time per kill in the simulator (scorer said 1.8% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.9%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-aoe] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 2.7% time per kill in the simulator (scorer said 2.9% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (2.8%). Other modes unchanged. Raid sim calibration [mm-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-raid, training dummy): removing it costs 3.1% DPS in the simulator (scorer said 2.8% on the same scale); already within tolerance, raid effects split off unchanged (2.8%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -1525,14 +1567,6 @@
         "scope": ["pet"],
         "values": [0.02, 0.04, 0.06, 0.08, 0.1],
         "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["mm-raid"]
-      },
-      {
-        "channel": "crit",
-        "scope": ["pet"],
-        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
-        "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
         "specs": ["bm-leveling"]
       },
@@ -1543,6 +1577,14 @@
         "source": "parsed",
         "modes": ["leveling-aoe"],
         "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["pet"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
       }
     ]
   },
@@ -1575,7 +1617,7 @@
     ]
   },
   "Bestial Discipline": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-26, levels 40,60): removing it costs 26.3% time per kill in the simulator (scorer said 0.3% on the same scale); leveling-st/solo-60 values scaled x3.00, the cap on effect size stops short of the target (0.8%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-raid, training dummy): removing it costs 3.8% DPS in the simulator (scorer said 7.6% on the same scale); raid values scaled x0.48 to match (3.8%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-26, levels 40,60): removing it costs 26.3% time per kill in the simulator (scorer said 0.3% on the same scale); leveling-st/solo-60 values scaled x3.00, the cap on effect size stops short of the target (0.8%). Other modes unchanged. Raid sim calibration [mm-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-raid, training dummy): removing it costs 3.6% DPS in the simulator (scorer said 3.3% on the same scale); already within tolerance, raid effects split off unchanged (3.3%). Other modes unchanged.",
     "effects": [
       {
         "channel": "regen",
@@ -1620,14 +1662,14 @@
       {
         "channel": "dmg",
         "scope": ["pet"],
-        "values": [0.101016, 0.202035],
+        "values": [0.048522, 0.097045],
         "modes": ["raid"],
         "specs": ["mm-raid"]
       }
     ]
   },
   "Efficiency": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-lonewolf-raid, training dummy): removing it costs 6.8% DPS in the simulator (scorer said 5.6% on the same scale); already within tolerance, raid effects split off unchanged (6.0%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 3.8% time per kill in the simulator (scorer said 2.7% on the same scale); leveling-st/solo-60 values scaled x1.51 to match (3.8%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-aoe] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 8.1% time per kill in the simulator (scorer said 3.0% on the same scale); leveling-aoe values scaled x1.00, the cap on effect size stops short of the target (3.0%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 3.8% time per kill in the simulator (scorer said 2.7% on the same scale); leveling-st/solo-60 values scaled x1.51 to match (3.8%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-aoe] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 8.1% time per kill in the simulator (scorer said 3.0% on the same scale); leveling-aoe values scaled x1.00, the cap on effect size stops short of the target (3.0%). Other modes unchanged. Raid sim calibration [mm-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-raid, training dummy): removing it costs 3.6% DPS in the simulator (scorer said 4.4% on the same scale); already within tolerance, raid effects split off unchanged (4.4%). Other modes unchanged. Raid sim calibration [mm-lonewolf-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-lonewolf-raid, training dummy): removing it costs 6.1% DPS in the simulator (scorer said 6.2% on the same scale); already within tolerance, raid effects split off unchanged (5.3%). Other modes unchanged.",
     "effects": [
       {
         "channel": "mana_cost",
@@ -1644,22 +1686,6 @@
         "source": "parsed",
         "modes": ["leveling-aoe", "heal", "tank"],
         "specs": ["mm-raid", "mm-lonewolf-raid"]
-      },
-      {
-        "channel": "mana_cost",
-        "scope": ["type:melee", "ability:Shots", "ability:Stings"],
-        "values": [0.04693, 0.093852, 0.14078, 0.187711, 0.234637],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["mm-raid"]
-      },
-      {
-        "channel": "mana_cost",
-        "scope": ["type:melee", "ability:Shots", "ability:Stings"],
-        "values": [0.113678, 0.227356, 0.341034, 0.454717, 0.568394],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["mm-lonewolf-raid"]
       },
       {
         "channel": "mana_cost",
@@ -1676,11 +1702,27 @@
         "source": "parsed",
         "modes": ["leveling-aoe"],
         "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:melee", "ability:Shots", "ability:Stings"],
+        "values": [0.04693, 0.093852, 0.14078, 0.187711, 0.234637],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:melee", "ability:Shots", "ability:Stings"],
+        "values": [0.113678, 0.227356, 0.341034, 0.454717, 0.568394],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
       }
     ]
   },
   "Lethal Attacks": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-lonewolf-raid, training dummy): removing it costs 5.4% DPS in the simulator (scorer said 5.7% on the same scale); already within tolerance, raid effects split off unchanged (5.7%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 2.2% time per kill in the simulator (scorer said 1.4% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.4%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-aoe] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 1.1% time per kill in the simulator (scorer said 1.3% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (1.4%). Other modes unchanged. Fight lab calibration [melee-dps, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 5.0% time per kill in the simulator (scorer said 7.2% on the same scale); leveling-st/solo-60 values scaled x0.69 to match (5.0%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 2.2% time per kill in the simulator (scorer said 1.4% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.4%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-aoe] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 1.1% time per kill in the simulator (scorer said 1.3% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (1.4%). Other modes unchanged. Fight lab calibration [melee-dps, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 5.0% time per kill in the simulator (scorer said 7.2% on the same scale); leveling-st/solo-60 values scaled x0.69 to match (5.0%). Other modes unchanged. Raid sim calibration [mm-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-raid, training dummy): removing it costs 5.3% DPS in the simulator (scorer said 5.4% on the same scale); already within tolerance, raid effects split off unchanged (5.4%). Other modes unchanged. Raid sim calibration [mm-lonewolf-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-lonewolf-raid, training dummy): removing it costs 5.5% DPS in the simulator (scorer said 5.8% on the same scale); already within tolerance, raid effects split off unchanged (5.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -1697,22 +1739,6 @@
         "source": "parsed",
         "modes": ["leveling-aoe", "heal", "tank"],
         "specs": ["mm-raid", "mm-lonewolf-raid"]
-      },
-      {
-        "channel": "crit",
-        "scope": ["all"],
-        "values": [0.013141, 0.026282, 0.039423, 0.052564, 0.065706],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["mm-raid"]
-      },
-      {
-        "channel": "crit",
-        "scope": ["all"],
-        "values": [0.013213, 0.026425, 0.039638, 0.052851, 0.066063],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["mm-lonewolf-raid"]
       },
       {
         "channel": "crit",
@@ -1737,11 +1763,27 @@
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
         "specs": ["melee-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["all"],
+        "values": [0.021578, 0.043157, 0.064735, 0.086313, 0.107894],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["all"],
+        "values": [0.013213, 0.026425, 0.039638, 0.052851, 0.066063],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
       }
     ]
   },
   "Mortal Shots": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs -0.1% time per kill in the simulator (scorer said 0.5% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (0.0%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-lonewolf-raid, training dummy): removing it costs 4.9% DPS in the simulator (scorer said 5.6% on the same scale); already within tolerance, raid effects split off unchanged (5.6%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs -0.1% time per kill in the simulator (scorer said 0.5% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (0.0%). Other modes unchanged. Raid sim calibration [mm-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-raid, training dummy): removing it costs 3.1% DPS in the simulator (scorer said 3.1% on the same scale); already within tolerance, raid effects split off unchanged (3.1%). Other modes unchanged. Raid sim calibration [mm-lonewolf-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-lonewolf-raid, training dummy): removing it costs 4.5% DPS in the simulator (scorer said 5.8% on the same scale); raid values scaled x0.78 to match (4.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit_bonus",
@@ -1777,7 +1819,7 @@
       {
         "channel": "crit_bonus",
         "scope": ["type:ranged"],
-        "values": [0.06, 0.12, 0.18, 0.24, 0.3],
+        "values": [0.044753, 0.089507, 0.13426, 0.179014, 0.223767],
         "source": "parsed",
         "modes": ["raid"],
         "specs": ["mm-raid"]
@@ -1785,7 +1827,7 @@
       {
         "channel": "crit_bonus",
         "scope": ["type:ranged"],
-        "values": [0.059178, 0.118354, 0.177531, 0.236709, 0.295887],
+        "values": [0.046287, 0.092572, 0.138857, 0.185144, 0.23143],
         "source": "parsed",
         "modes": ["raid"],
         "specs": ["mm-lonewolf-raid"]
@@ -1793,7 +1835,7 @@
     ]
   },
   "Ranged Weapon Specialization": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-lonewolf-raid, training dummy): removing it costs 4.2% DPS in the simulator (scorer said 3.8% on the same scale); already within tolerance, raid effects split off unchanged (3.8%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 2.5% time per kill in the simulator (scorer said 3.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.2%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 2.5% time per kill in the simulator (scorer said 3.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.2%). Other modes unchanged. Raid sim calibration [mm-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-raid, training dummy): removing it costs 3.1% DPS in the simulator (scorer said 2.9% on the same scale); already within tolerance, raid effects split off unchanged (2.9%). Other modes unchanged. Raid sim calibration [mm-lonewolf-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-lonewolf-raid, training dummy): removing it costs 5.0% DPS in the simulator (scorer said 3.8% on the same scale); raid values scaled x1.32 to match (5.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1817,22 +1859,6 @@
         "source": "parsed",
         "modes": ["raid", "leveling-aoe", "heal", "tank"],
         "specs": ["bm-leveling"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["type:ranged"],
-        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["mm-raid"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["type:ranged"],
-        "values": [0.007539, 0.015078, 0.022617, 0.030156, 0.037695],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["mm-lonewolf-raid"]
       },
       {
         "channel": "dmg",
@@ -1841,11 +1867,27 @@
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
         "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.009918, 0.019836, 0.029754, 0.039672, 0.049591],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
       }
     ]
   },
   "Improved Tracking": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 0.9% time per kill in the simulator (scorer said 1.1% on the same scale); leveling-st/solo-60 values scaled x0.78 to match (0.8%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-aoe] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 0.4% time per kill in the simulator (scorer said 3.6% on the same scale); leveling-aoe values scaled x0.11 to match (0.4%). Other modes unchanged. Fight lab calibration [melee-dps, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 2.4% time per kill in the simulator (scorer said 2.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.5%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 0.9% time per kill in the simulator (scorer said 1.1% on the same scale); leveling-st/solo-60 values scaled x0.78 to match (0.8%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-aoe] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 0.4% time per kill in the simulator (scorer said 3.6% on the same scale); leveling-aoe values scaled x0.11 to match (0.4%). Other modes unchanged. Fight lab calibration [melee-dps, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 40,60): removing it costs 2.4% time per kill in the simulator (scorer said 2.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.5%). Other modes unchanged. Raid sim calibration [mm-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-raid, training dummy): removing it costs 3.0% DPS in the simulator (scorer said 2.7% on the same scale); already within tolerance, raid effects split off unchanged (2.7%). Other modes unchanged. Raid sim calibration [mm-lonewolf-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-lonewolf-raid, training dummy): removing it costs 4.6% DPS in the simulator (scorer said 0.5% on the same scale); raid values scaled x9.65 to match (4.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1858,26 +1900,10 @@
       {
         "channel": "dmg",
         "scope": ["all"],
-        "values": [0.001037, 0.002073, 0.00311, 0.004146, 0.005183],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["mm-lonewolf-raid"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["all"],
         "values": [0.01, 0.02, 0.03, 0.04, 0.05],
         "source": "parsed",
         "modes": ["leveling-aoe", "heal", "tank"],
         "specs": ["mm-raid", "mm-lonewolf-raid"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["all"],
-        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["mm-raid"]
       },
       {
         "channel": "dmg",
@@ -1902,11 +1928,27 @@
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
         "specs": ["melee-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.010005, 0.020001, 0.030006, 0.040002, 0.050008],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
       }
     ]
   },
   "Barrage": {
-    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, mm-lonewolf-raid, training dummy): removing it costs 1.0% DPS in the simulator (scorer said 0.8% on the same scale); already within tolerance, raid effects split off unchanged (0.8%). Other modes unchanged. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 0.6% time per kill in the simulator (scorer said 1.4% on the same scale); leveling-st/solo-60 values scaled x0.41 to match (0.6%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Fight lab calibration [bm-leveling, leveling-st] (2026-10-18, beta client 1.60.1.70425, levels 30,60): removing it costs 0.6% time per kill in the simulator (scorer said 1.4% on the same scale); leveling-st/solo-60 values scaled x0.41 to match (0.6%). Other modes unchanged. Raid sim calibration [mm-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-raid, training dummy): removing it costs 0.6% DPS in the simulator (scorer said 0.5% on the same scale); already within tolerance, raid effects split off unchanged (0.5%). Other modes unchanged. Raid sim calibration [mm-lonewolf-raid] (2026-10-22, wowsims/forever 30f67f5d2, mm-lonewolf-raid, training dummy): removing it costs 1.0% DPS in the simulator (scorer said 0.8% on the same scale); already within tolerance, raid effects split off unchanged (0.8%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1934,6 +1976,14 @@
       {
         "channel": "dmg",
         "scope": ["ability:Multi-Shot", "ability:Aimed Shot", "ability:Volley"],
+        "values": [0.015483, 0.036128, 0.05161],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Multi-Shot", "ability:Aimed Shot", "ability:Volley"],
         "values": [0.020372, 0.047534, 0.067905],
         "source": "parsed",
         "modes": ["raid"],
@@ -1946,14 +1996,6 @@
         "source": "parsed",
         "modes": ["raid"],
         "specs": ["mm-lonewolf-raid"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["ability:Multi-Shot", "ability:Aimed Shot", "ability:Volley"],
-        "values": [0.015483, 0.036128, 0.05161],
-        "source": "parsed",
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["bm-leveling"]
       }
     ]
   },

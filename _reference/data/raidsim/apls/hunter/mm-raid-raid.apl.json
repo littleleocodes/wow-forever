@@ -33,6 +33,31 @@
  "priorityList": [
   {
    "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpGt",
+      "lhs": {
+       "autoTimeToNext": {
+        "autoType": "RangedAuto"
+       }
+      },
+      "rhs": {
+       "const": {
+        "val": "0.5s"
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 20904
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-04: changed or added by the rotation search (see mm-raid-rotation-search.json)"
+  },
+  {
+   "action": {
     "castSpell": {
      "spellId": {
       "spellId": 14287
@@ -108,31 +133,6 @@
     }
    },
    "notes": "apl_opt 2026-09-27: changed or added by the rotation search (see mm-raid-rotation-search.json)"
-  },
-  {
-   "action": {
-    "condition": {
-     "cmp": {
-      "op": "OpGt",
-      "lhs": {
-       "autoTimeToNext": {
-        "autoType": "RangedAuto"
-       }
-      },
-      "rhs": {
-       "const": {
-        "val": "0.5s"
-       }
-      }
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 20904
-     }
-    }
-   },
-   "notes": "apl_opt 2026-10-04: changed or added by the rotation search (see mm-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -255,21 +255,6 @@
       "vals": [
        {
         "cmp": {
-         "op": "OpGt",
-         "lhs": {
-          "autoTimeToNext": {
-           "autoType": "RangedAuto"
-          }
-         },
-         "rhs": {
-          "const": {
-           "val": "1s"
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
          "op": "OpGe",
          "lhs": {
           "spellTimeToReady": {
@@ -280,7 +265,7 @@
          },
          "rhs": {
           "const": {
-           "val": "1"
+           "val": "3"
           }
          }
         }
@@ -310,7 +295,8 @@
       "spellId": 1310786
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-22: changed or added by the rotation search (see mm-raid-rotation-search.json)"
   }
  ]
 }

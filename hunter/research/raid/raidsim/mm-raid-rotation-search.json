@@ -178,11 +178,11 @@
  "raid": {
   "class": "hunter",
   "spec": "mm-raid",
-  "date": "2026-10-16",
-  "commit": "b7083fa",
+  "date": "2026-10-22",
+  "commit": "30f67f5d2",
   "setting": "raid",
   "tank": false,
-  "simulator_apl": "ui/specs/hunter/dps/apls/mm.apl.json",
+  "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/hunter/dps/apls/mm.apl.json",
   "start": "ui\\specs\\hunter\\dps\\apls\\mm.apl.json",
   "builds": [
    {
@@ -201,6 +201,11 @@
    {
     "label": "bm-mm-full-buffs-raid",
     "talents": "53200005050001-005155000150305",
+    "protect_only": true
+   },
+   {
+    "label": "opt-mm-raid-raid-dps",
+    "talents": "5320001505101251-00505500014",
     "protect_only": true
    }
   ],
@@ -290,41 +295,74 @@
     "gain_seed2": 0.03024619028261677,
     "candidates": 369,
     "pass": 9
+   },
+   {
+    "round": 11,
+    "change": "threshold 1 -> 3: if time to the next auto attack > 1s and time until Aimed Shot is ready \u2265 1 and time until Multi-Shot is ready \u2265 1: cast Sniper Shot",
+    "gain_seed1": 0.006254353032448368,
+    "gain_seed2": 0.006771309763717426,
+    "candidates": 397,
+    "pass": 12
+   },
+   {
+    "round": 12,
+    "change": "move to the top: if time to the next auto attack > 0.5s: cast Aimed Shot",
+    "gain_seed1": 0.0052941602685987466,
+    "gain_seed2": 0.004805483676233457,
+    "candidates": 399,
+    "pass": 12
+   },
+   {
+    "round": 13,
+    "change": "drop 'time to the next auto attack > 1s' from the condition: if time to the next auto attack > 1s and time until Aimed Shot is ready \u2265 3 and time until Multi-Shot is ready \u2265 1: cast Sniper Shot",
+    "gain_seed1": 0.005851995245819808,
+    "gain_seed2": 0.005283124801204853,
+    "candidates": 399,
+    "pass": 12
    }
   ],
   "final": {
    "raid": {
     "marksmanship-with-a-pet-open-raid": {
-     "before": 825.2453121663954,
-     "after": 885.6350751657377,
-     "base": 825.2453121663954,
+     "before": 728.8120090382251,
+     "after": 779.8516918392975,
+     "base": 728.8120090382251,
      "before_value": null,
      "after_value": null,
-     "oom_before": 5.4243894295230985,
-     "oom_after": 5.4243894295230985
+     "oom_before": 5.090717472126896,
+     "oom_after": 4.906051042749098
     },
     "sim preset: Marksmanship": {
-     "before": 789.4768619902833,
-     "after": 849.8121854383827,
-     "base": 789.4768619902833,
+     "before": 707.6813641107724,
+     "after": 756.6434359955608,
+     "base": 707.6813641107724,
      "before_value": null,
      "after_value": null,
-     "oom_before": 9.11004787354975,
-     "oom_after": 9.11004787354975
+     "oom_before": 5.849063681109847,
+     "oom_after": 6.5856951634075
     },
     "bm-mm-raid": {
-     "before": 790.6733455621288,
-     "after": 811.5798457613811,
-     "base": 790.6733455621288,
+     "before": 699.4955208518887,
+     "after": 714.0412492096393,
+     "base": 699.4955208518887,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "bm-mm-full-buffs-raid": {
-     "before": 793.5537066911369,
-     "after": 807.92944358381,
-     "base": 793.5537066911369,
+     "before": 704.6334822817298,
+     "after": 715.1229295234558,
+     "base": 704.6334822817298,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "opt-mm-raid-raid-dps": {
+     "before": 725.0004891413331,
+     "after": 734.8297772655327,
+     "base": 725.0004891413331,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -333,6 +371,6 @@
    }
   },
   "first_date": "2026-09-27",
-  "passes": 11
+  "passes": 12
  }
 }

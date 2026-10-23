@@ -230,11 +230,11 @@
  "raid": {
   "class": "hunter",
   "spec": "bm-raid",
-  "date": "2026-10-16",
-  "commit": "b7083fa",
+  "date": "2026-10-22",
+  "commit": "30f67f5d2",
   "setting": "raid",
   "tank": false,
-  "simulator_apl": "ui/specs/hunter/dps/apls/bm.apl.json",
+  "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/hunter/dps/apls/bm.apl.json",
   "start": "ui\\specs\\hunter\\dps\\apls\\bm.apl.json",
   "builds": [
    {
@@ -379,44 +379,44 @@
   "final": {
    "raid": {
     "beast-marks-open-raid": {
-     "before": 718.4983969808478,
-     "after": 864.0009426198636,
-     "base": 718.4983969808478,
+     "before": 637.2472621632246,
+     "after": 756.4204143308996,
+     "base": 637.2472621632246,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.00095088497805,
-     "oom_after": 0.07957866432835001
+     "oom_before": 0.01021593404675,
+     "oom_after": 0.01021593404675
     },
     "sim preset: Beast Mastery 35/16/0": {
-     "before": 767.9036508329345,
-     "after": 796.1897215044263,
-     "base": 767.9036508329345,
+     "before": 700.6781057192826,
+     "after": 716.9397991084375,
+     "base": 700.6781057192826,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "mm-hawk-raid": {
-     "before": 771.3745903522093,
-     "after": 812.9096121931597,
-     "base": 771.3745903522093,
+     "before": 689.0463609124697,
+     "after": 715.1404808738423,
+     "base": 689.0463609124697,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "beast-mastery-ml-raid": {
-     "before": 812.0958205447895,
-     "after": 858.4301893901486,
-     "base": 812.0958205447895,
+     "before": 735.682573210256,
+     "after": 768.4099220238508,
+     "base": 735.682573210256,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.00010557463949999998,
-     "oom_after": 0.021317959140449996
+     "oom_before": 0.0118252197144,
+     "oom_after": 0.0118252197144
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 13
+  "passes": 14
  }
 }

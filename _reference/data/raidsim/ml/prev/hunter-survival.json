@@ -14,120 +14,369 @@
   "bis": {
    "entry": "melee-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-bis.gear.json",
-   "date": "2026-10-16",
-   "chosen": "keep-sets-and-effects",
-   "ilvl": 67.2,
-   "trinkets": [
-    "Blackhand's Breadth",
-    "Adaptive Combat Assistant"
-   ],
-   "names": [
-    "Giantstalker's Helmet",
-    "Onyxia Tooth Pendant",
-    "Giantstalker's Epaulets",
-    "Howler's Furs",
-    "Giantstalker's Breastplate",
-    "Giantstalker's Bracers",
-    "Giantstalker's Gloves",
-    "Giantstalker's Belt",
-    "Giantstalker's Leggings",
-    "Giantstalker's Boots",
-    "Band of Accuria",
-    "Don Julio's Band",
-    "Blackhand's Breadth",
-    "Adaptive Combat Assistant",
-    "Deathbringer",
-    "Brutality Blade",
-    "Striker's Mark"
-   ],
-   "race_seed1": {
-    "current": 1.0,
-    "all-slots": 0.8786448723580781,
-    "keep-sets-and-effects": 1.0103874412023528
-   },
-   "confirm_seed2": {
-    "current": 1.0,
-    "keep-sets-and-effects": 1.0100493159318844
-   },
-   "weights": {
-    "PseudoStatMainHandDps": 1.5289,
-    "PseudoStatOffHandDps": 0.58,
-    "StatAgility": 0.2243,
-    "StatArmorPenetration": 0.0355,
-    "StatAttackPower": 0.1488,
-    "StatExpertiseRating": 0.4779,
-    "StatFireDamage": 0.0561,
-    "StatIntellect": 0.1541,
-    "StatMeleeCritRating": 0.2598,
-    "StatMeleeHasteRating": 0.2193,
-    "StatMeleeHitRating": 0.3133,
-    "StatSpellCritRating": 0.0244,
-    "StatSpellDamage": 0.0561,
-    "StatSpellHitRating": 0.0832,
-    "StatStrength": 0.1488
-   },
-   "evaluated_on": [
-    "melee-dps: ml winner"
-   ]
-  },
-  "bis2": true,
-  "prebis": {
-   "entry": "melee-dps",
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-prebis.gear.json",
-   "date": "2026-10-16",
+   "date": "2026-10-22",
    "chosen": "all-slots",
-   "ilvl": 63.6,
+   "ilvl": 64.6,
    "trinkets": [
-    "Blackhand's Breadth",
-    "Adaptive Combat Assistant"
+    "Adaptive Combat Assistant",
+    "Rune of the Guard Captain"
    ],
+   "trinket_screen": {
+    "Adaptive Combat Assistant (272437)": 1.023,
+    "Rune of the Guard Captain (19120)": 1.0131,
+    "Cleansed Vilebranch Medallion (270275)": 1.0131,
+    "Molten Heart of the Mountain (249470)": 1.0113,
+    "Frozen Heart of the Mountain (249469)": 1.009,
+    "Everlook Delivery Bot (274760)": 1.0083,
+    "Everlook Pathcarver (274759)": 1.0079,
+    "Jewel of the Guard Captain (270225)": 1.0052,
+    "Weakness Analyzer (272438)": 1.0012,
+    "Ankh of Life (1713)": 1.0,
+    "Dog Whistle (3456)": 1.0,
+    "Minor Recombobulator (4381)": 1.0,
+    "Gnomish Universal Remote (7506)": 1.0,
+    "Shard of the Splithooves (10659)": 1.0,
+    "Demon's Blood (10779)": 1.0,
+    "Smoking Heart of the Mountain (11811)": 1.0,
+    "Heart of the Scale (13164)": 1.0,
+    "Alchemist's Stone (13503)": 1.0,
+    "Arcanite Dragonling (16022)": 1.0,
+    "Stormpike Insignia Rank 6 (17904)": 1.0,
+    "Gyrofreeze Ice Reflector (18634)": 1.0,
+    "Major Recombobulator (18637)": 1.0,
+    "Hyper-Radiant Flame Reflector (18638)": 1.0,
+    "Ultra-Flash Shadow Reflector (18639)": 1.0,
+    "Essence of the Pure Flame (18815)": 1.0,
+    "Talisman of Ephemeral Power (18820)": 1.0,
+    "Arena Grand Master (19024)": 1.0,
+    "Talisman of Arathor (20071)": 1.0,
+    "Defiler's Talisman (20072)": 1.0,
+    "Defiler's Talisman (21115)": 1.0,
+    "Defiler's Talisman (21116)": 1.0,
+    "Talisman of Arathor (21117)": 1.0,
+    "Talisman of Arathor (21118)": 1.0,
+    "Talisman of Arathor (21119)": 1.0,
+    "Defiler's Talisman (21120)": 1.0,
+    "Defender of the Timbermaw (21326)": 1.0,
+    "Dormant Heart of the Mountain (249473)": 1.0,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
+    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
+    "Gnomish Poultryizer (260824)": 1.0,
+    "Enriched Seal (271903)": 1.0,
+    "Volunteer's Lucky Seal (271904)": 1.0,
+    "Enriched Seal (271905)": 1.0,
+    "Volunteer's Lucky Seal (271906)": 1.0,
+    "Darkspear Voodoo Seal (272059)": 1.0,
+    "Relentless Raider's Seal (272060)": 1.0,
+    "Darkspear Voodoo Seal (272061)": 1.0,
+    "Relentless Raider's Seal (272062)": 1.0,
+    "Serenity Field (272439)": 1.0,
+    "Defender's Grip Stabilizer (272440)": 1.0,
+    "Parachute-Priest Pager (274761)": 1.0
+   },
    "names": [
     "Black Dragonscale Helm",
-    "Mark of Fordring",
+    "Onyxia Tooth Pendant",
     "Theramore Pauldrons",
     "Howler's Furs",
     "Dawn Armor",
     "Forest Stalker's Bracers",
     "Theramore Gloves",
-    "Warpwood Binding",
+    "Belt of Preserved Heads",
     "Outrider's Chain Leggings",
     "Scalegut Treaders",
-    "Don Julio's Band",
-    "Ferocious Watcher's Signet",
-    "Blackhand's Breadth",
+    "Signet Ring of the Bronze Dragonflight",
+    "Quick Strike Ring",
     "Adaptive Combat Assistant",
+    "Rune of the Guard Captain",
     "Premier High Warlord's Razor",
     "Premier High Warlord's Blade",
     "Premier High Warlord's Recurve"
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 1.0011991827563407
+    "keep-sets-and-effects": 0.999008355982533
    },
    "confirm_seed2": {
-    "all-slots": 1.0,
-    "keep-sets-and-effects": 0.999810440845528
+    "keep-sets-and-effects": 1.0,
+    "all-slots": 1.0006502190787196
    },
    "weights": {
-    "PseudoStatMainHandDps": 1.5848,
-    "PseudoStatOffHandDps": 0.5732,
-    "StatAgility": 0.2251,
-    "StatArmorPenetration": 0.0344,
-    "StatAttackPower": 0.1488,
-    "StatExpertiseRating": 0.4436,
-    "StatFireDamage": 0.0539,
-    "StatIntellect": 0.1542,
-    "StatMeleeCritRating": 0.2491,
-    "StatMeleeHasteRating": 0.1743,
-    "StatMeleeHitRating": 0.2473,
-    "StatSpellCritRating": 0.0237,
-    "StatSpellDamage": 0.0539,
-    "StatSpellHitRating": 0.0894,
-    "StatStrength": 0.1488
+    "PseudoStatMainHandDps": 1.4686,
+    "PseudoStatOffHandDps": 0.575,
+    "StatAgility": 0.2418,
+    "StatArmorPenetration": 0.0336,
+    "StatAttackPower": 0.1422,
+    "StatCritRating": 0.2613,
+    "StatExpertiseRating": 0.351,
+    "StatHasteRating": 0.2005,
+    "StatHitRating": 0.2876,
+    "StatIntellect": 0.1515,
+    "StatRangedAttackPower": 0.0056,
+    "StatSpellPiercing": 0.0078,
+    "StatStrength": 0.1422
+   },
+   "evaluated_on": [
+    "melee-dps: ml winner"
+   ],
+   "replaced": [
+    {
+     "slot": 0,
+     "from": "Giantstalker's Helmet (not in the database)",
+     "to": "Black Dragonscale Helm"
+    },
+    {
+     "slot": 2,
+     "from": "Giantstalker's Epaulets (not in the database)",
+     "to": "Theramore Pauldrons"
+    },
+    {
+     "slot": 4,
+     "from": "Giantstalker's Breastplate (not in the database)",
+     "to": "Dawn Armor"
+    },
+    {
+     "slot": 5,
+     "from": "Giantstalker's Bracers (not in the database)",
+     "to": "Forest Stalker's Bracers"
+    },
+    {
+     "slot": 6,
+     "from": "Giantstalker's Gloves (not in the database)",
+     "to": "Theramore Gloves"
+    },
+    {
+     "slot": 7,
+     "from": "Giantstalker's Belt (not in the database)",
+     "to": "Belt of Preserved Heads"
+    },
+    {
+     "slot": 8,
+     "from": "Giantstalker's Leggings (not in the database)",
+     "to": "Outrider's Chain Leggings"
+    },
+    {
+     "slot": 9,
+     "from": "Giantstalker's Boots (not in the database)",
+     "to": "Scalegut Treaders"
+    },
+    {
+     "slot": 10,
+     "from": "Band of Accuria (not in the database)",
+     "to": "Signet Ring of the Bronze Dragonflight"
+    },
+    {
+     "slot": 11,
+     "from": "Don Julio's Band",
+     "to": "Quick Strike Ring"
+    },
+    {
+     "slot": 12,
+     "from": "Blackhand's Breadth (not in the database)",
+     "to": "Adaptive Combat Assistant"
+    },
+    {
+     "slot": 13,
+     "from": "Adaptive Combat Assistant",
+     "to": "Rune of the Guard Captain"
+    },
+    {
+     "slot": 14,
+     "from": "Deathbringer (not in the database)",
+     "to": "Premier High Warlord's Razor"
+    },
+    {
+     "slot": 15,
+     "from": "Brutality Blade (not in the database)",
+     "to": "Premier High Warlord's Blade"
+    },
+    {
+     "slot": 16,
+     "from": "Striker's Mark (not in the database)",
+     "to": "Premier High Warlord's Recurve"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 09e739807",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:16846",
+     "item:16848",
+     "item:16845",
+     "item:16850",
+     "item:16852",
+     "item:16851",
+     "item:16847",
+     "item:16849",
+     "item:17063",
+     "item:13965",
+     "item:17068",
+     "item:18832",
+     "item:17069"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [],
+    "minutes": 1.6
+   }
+  },
+  "bis2": true,
+  "prebis": {
+   "entry": "melee-dps",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-prebis.gear.json",
+   "date": "2026-10-22",
+   "chosen": "keep-sets-and-effects",
+   "ilvl": 63.9,
+   "trinkets": [
+    "Adaptive Combat Assistant",
+    "Molten Heart of the Mountain"
+   ],
+   "trinket_screen": {
+    "Adaptive Combat Assistant (272437)": 1.0229,
+    "Rune of the Guard Captain (19120)": 1.0124,
+    "Cleansed Vilebranch Medallion (270275)": 1.0124,
+    "Molten Heart of the Mountain (249470)": 1.0113,
+    "Frozen Heart of the Mountain (249469)": 1.0083,
+    "Everlook Delivery Bot (274760)": 1.0077,
+    "Everlook Pathcarver (274759)": 1.0062,
+    "Jewel of the Guard Captain (270225)": 1.0053,
+    "Weakness Analyzer (272438)": 1.0012,
+    "Ankh of Life (1713)": 1.0,
+    "Dog Whistle (3456)": 1.0,
+    "Minor Recombobulator (4381)": 1.0,
+    "Gnomish Universal Remote (7506)": 1.0,
+    "Shard of the Splithooves (10659)": 1.0,
+    "Demon's Blood (10779)": 1.0,
+    "Smoking Heart of the Mountain (11811)": 1.0,
+    "Heart of the Scale (13164)": 1.0,
+    "Alchemist's Stone (13503)": 1.0,
+    "Arcanite Dragonling (16022)": 1.0,
+    "Stormpike Insignia Rank 6 (17904)": 1.0,
+    "Gyrofreeze Ice Reflector (18634)": 1.0,
+    "Major Recombobulator (18637)": 1.0,
+    "Hyper-Radiant Flame Reflector (18638)": 1.0,
+    "Ultra-Flash Shadow Reflector (18639)": 1.0,
+    "Talisman of Arathor (20071)": 1.0,
+    "Defiler's Talisman (20072)": 1.0,
+    "Defiler's Talisman (21115)": 1.0,
+    "Defiler's Talisman (21116)": 1.0,
+    "Talisman of Arathor (21117)": 1.0,
+    "Talisman of Arathor (21118)": 1.0,
+    "Talisman of Arathor (21119)": 1.0,
+    "Defiler's Talisman (21120)": 1.0,
+    "Defender of the Timbermaw (21326)": 1.0,
+    "Dormant Heart of the Mountain (249473)": 1.0,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
+    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
+    "Gnomish Poultryizer (260824)": 1.0,
+    "Enriched Seal (271903)": 1.0,
+    "Volunteer's Lucky Seal (271904)": 1.0,
+    "Enriched Seal (271905)": 1.0,
+    "Volunteer's Lucky Seal (271906)": 1.0,
+    "Darkspear Voodoo Seal (272059)": 1.0,
+    "Relentless Raider's Seal (272060)": 1.0,
+    "Darkspear Voodoo Seal (272061)": 1.0,
+    "Relentless Raider's Seal (272062)": 1.0,
+    "Serenity Field (272439)": 1.0,
+    "Defender's Grip Stabilizer (272440)": 1.0,
+    "Parachute-Priest Pager (274761)": 1.0
+   },
+   "names": [
+    "Black Dragonscale Helm",
+    "Beads of Ogre Might",
+    "Theramore Pauldrons",
+    "Howler's Furs",
+    "Dawn Armor",
+    "Forest Stalker's Bracers",
+    "Theramore Gloves",
+    "Highlander's Chain Girdle",
+    "Outrider's Chain Leggings",
+    "Scalegut Treaders",
+    "Signet Ring of the Bronze Dragonflight",
+    "Don Julio's Band",
+    "Adaptive Combat Assistant",
+    "Molten Heart of the Mountain",
+    "Premier High Warlord's Razor",
+    "Premier High Warlord's Blade",
+    "Premier High Warlord's Recurve"
+   ],
+   "race_seed1": {
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 0.9989580888448785
+   },
+   "confirm_seed2": {
+    "keep-sets-and-effects": 1.0,
+    "all-slots": 0.9994393907749566
+   },
+   "weights": {
+    "PseudoStatMainHandDps": 1.4504,
+    "PseudoStatOffHandDps": 0.5668,
+    "StatAgility": 0.2404,
+    "StatArmorPenetration": 0.0334,
+    "StatAttackPower": 0.1403,
+    "StatCritRating": 0.2617,
+    "StatExpertiseRating": 0.3523,
+    "StatHasteRating": 0.2033,
+    "StatHitRating": 0.2894,
+    "StatIntellect": 0.1492,
+    "StatRangedAttackPower": 0.0055,
+    "StatSpellPiercing": 0.0077,
+    "StatStrength": 0.1403
    },
    "evaluated_on": [
     "melee-dps: ml winner (bis)"
-   ]
+   ],
+   "replaced": [
+    {
+     "slot": 1,
+     "from": "Mark of Fordring (not in the database)",
+     "to": "Beads of Ogre Might"
+    },
+    {
+     "slot": 7,
+     "from": "Warpwood Binding (not in the database)",
+     "to": "Highlander's Chain Girdle"
+    },
+    {
+     "slot": 9,
+     "from": "Bloodmail Boots (not in the database)",
+     "to": "Scalegut Treaders"
+    },
+    {
+     "slot": 10,
+     "from": "Don Julio's Band",
+     "to": "Signet Ring of the Bronze Dragonflight"
+    },
+    {
+     "slot": 11,
+     "from": "Ferocious Watcher's Signet",
+     "to": "Don Julio's Band"
+    },
+    {
+     "slot": 12,
+     "from": "Blackhand's Breadth (not in the database)",
+     "to": "Adaptive Combat Assistant"
+    },
+    {
+     "slot": 13,
+     "from": "Adaptive Combat Assistant",
+     "to": "Molten Heart of the Mountain"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 09e739807",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:15411",
+     "item:18393",
+     "item:14616",
+     "item:13965"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [],
+    "minutes": 1.6
+   }
   }
  },
  "search": {
@@ -630,7 +879,7 @@
       ],
       [
        "Efficiency",
-       5
+       2
       ],
       [
        "Careful Aim",
@@ -688,22 +937,22 @@
       ],
       [
        "Lightning Reflexes",
-       2
+       5
       ]
      ]
     },
-    "split": "5/16/30",
-    "dps": 491.17,
-    "se": 0.0683,
+    "split": "5/13/33",
+    "dps": 502.21,
+    "se": 0.07,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "5/16/30",
-    "dps": 491.17,
-    "se": 0.0683,
+    "split": "5/13/33",
+    "dps": 502.21,
+    "se": 0.07,
     "differs": [
      [
-      "Deflection",
+      "Entrapment",
       1
      ],
      [
@@ -733,7 +982,7 @@
        ],
        [
         "Efficiency",
-        5
+        2
        ],
        [
         "Careful Aim",
@@ -791,13 +1040,13 @@
        ],
        [
         "Lightning Reflexes",
-        2
+        5
        ]
       ]
      },
-     "split": "5/16/30",
-     "dps": 491.17,
-     "se": 0.0683
+     "split": "5/13/33",
+     "dps": 502.21,
+     "se": 0.07
     },
     {
      "allocation": {
@@ -814,7 +1063,7 @@
        ],
        [
         "Efficiency",
-        5
+        2
        ],
        [
         "Careful Aim",
@@ -831,7 +1080,7 @@
         5
        ],
        [
-        "Deflection",
+        "Entrapment",
         1
        ],
        [
@@ -876,51 +1125,63 @@
        ],
        [
         "Lightning Reflexes",
-        2
+        5
        ]
       ]
      },
-     "split": "5/16/30",
-     "dps": 491.17,
-     "se": 0.0683
+     "split": "5/13/33",
+     "dps": 502.21,
+     "se": 0.07
     }
    ],
    "runs": [
     {
      "entry": "melee-dps",
      "run": 1,
-     "simulated": 1206,
-     "best_screen": 491.24,
-     "best_split": "5/16/30",
+     "simulated": 1606,
+     "best_screen": 501.94,
+     "best_split": "5/13/33",
      "trace": [
       {
        "round": 0,
        "simulated": 406,
-       "best": 491.24
+       "best": 501.14
       },
       {
        "round": 1,
        "simulated": 606,
-       "best": 491.24,
-       "predicted_top": 480.37
+       "best": 501.14,
+       "predicted_top": 493.91
       },
       {
        "round": 2,
        "simulated": 806,
-       "best": 491.24,
-       "predicted_top": 486.21
+       "best": 501.94,
+       "predicted_top": 498.72
       },
       {
        "round": 3,
        "simulated": 1006,
-       "best": 491.24,
-       "predicted_top": 486.75
+       "best": 501.94,
+       "predicted_top": 498.99
       },
       {
        "round": 4,
        "simulated": 1206,
-       "best": 491.24,
-       "predicted_top": 487.98
+       "best": 501.94,
+       "predicted_top": 500.55
+      },
+      {
+       "round": 5,
+       "simulated": 1406,
+       "best": 501.94,
+       "predicted_top": 500.29
+      },
+      {
+       "round": 6,
+       "simulated": 1606,
+       "best": 501.94,
+       "predicted_top": 501.35
       }
      ],
      "best_stage1_gap": 0.0,
@@ -933,37 +1194,37 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      491.37,
-      491.37,
-      491.37,
-      491.37,
-      489.55,
-      489.55
+      502.54,
+      502.54,
+      502.54,
+      502.54,
+      502.54,
+      502.54
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      491.25,
-      491.25,
-      491.25,
-      491.25,
-      489.43
+      502.25,
+      502.25,
+      502.25,
+      502.25,
+      502.25
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      491.17,
-      491.17
+      502.21,
+      502.21
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 378,
+     "neighbours": 597,
      "best_gap": 0.0,
      "best_move": "3 Survivalist -> Improved Wing Clip"
     }
@@ -972,56 +1233,56 @@
    "important_features": [
     {
      "feature": "Lone Wolf",
-     "importance": 0.3864
+     "importance": 0.3468
     },
     {
      "feature": "Deflection",
-     "importance": 0.2244
+     "importance": 0.2216
     },
     {
      "feature": "Resourcefulness",
-     "importance": 0.0887
+     "importance": 0.1738
     },
     {
      "feature": "Careful Aim",
-     "importance": 0.0595
-    },
-    {
-     "feature": "Efficiency",
-     "importance": 0.0535
-    },
-    {
-     "feature": "Entrapment",
-     "importance": 0.0393
+     "importance": 0.067
     },
     {
      "feature": "Marksmanship points",
-     "importance": 0.0378
-    },
-    {
-     "feature": "Predator's Edge",
-     "importance": 0.0165
+     "importance": 0.0482
     },
     {
      "feature": "Expose Prey",
-     "importance": 0.0164
+     "importance": 0.0228
+    },
+    {
+     "feature": "Predator's Edge",
+     "importance": 0.0192
     },
     {
      "feature": "Improved Wing Clip",
-     "importance": 0.0138
+     "importance": 0.0182
     },
     {
      "feature": "Lethal Attacks",
-     "importance": 0.0108
+     "importance": 0.0157
     },
     {
      "feature": "Deadly Aspects",
-     "importance": 0.0078
+     "importance": 0.0118
+    },
+    {
+     "feature": "Lightning Reflexes",
+     "importance": 0.0058
+    },
+    {
+     "feature": "Strider Kick",
+     "importance": 0.0053
     }
    ],
-   "simulated_builds": 1598,
-   "simulated_fights": 2753000,
-   "minutes": 2.2,
+   "simulated_builds": 2217,
+   "simulated_fights": 3810000,
+   "minutes": 2.5,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-bis.gear.json"
   },
   "bis-raid": {
@@ -1042,6 +1303,10 @@
       [
        "Deadly Aspects",
        5
+      ],
+      [
+       "Endurance Training",
+       1
       ]
      ],
      "Marksmanship": [
@@ -1050,7 +1315,7 @@
        5
       ],
       [
-       "Improved Stings",
+       "Efficiency",
        1
       ],
       [
@@ -1068,12 +1333,16 @@
        5
       ],
       [
+       "Entrapment",
+       3
+      ],
+      [
        "Savage Strikes",
        2
       ],
       [
-       "Survivalist",
-       3
+       "Improved Wing Clip",
+       1
       ],
       [
        "Clever Traps",
@@ -1085,15 +1354,11 @@
       ],
       [
        "Survival Tactics",
-       2
+       1
       ],
       [
        "Predator's Edge",
        5
-      ],
-      [
-       "Resourcefulness",
-       1
       ],
       [
        "Expose Prey",
@@ -1117,22 +1382,30 @@
       ]
      ]
     },
-    "split": "5/12/34",
-    "dps": 1011.98,
-    "se": 0.1547,
+    "split": "6/12/33",
+    "dps": 1018.48,
+    "se": 0.1563,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "5/11/35",
-    "dps": 1011.98,
-    "se": 0.1547,
+    "split": "7/12/32",
+    "dps": 1018.48,
+    "se": 0.1563,
     "differs": [
      [
-      "Deflection",
+      "Endurance Training",
       1
      ],
      [
-      "Improved Stings",
+      "Focused Fire",
+      1
+     ],
+     [
+      "Improved Wing Clip",
+      1
+     ],
+     [
+      "Pathfinding",
       1
      ]
     ]
@@ -1145,6 +1418,10 @@
        [
         "Deadly Aspects",
         5
+       ],
+       [
+        "Endurance Training",
+        1
        ]
       ],
       "Marksmanship": [
@@ -1153,7 +1430,7 @@
         5
        ],
        [
-        "Improved Stings",
+        "Efficiency",
         1
        ],
        [
@@ -1171,12 +1448,16 @@
         5
        ],
        [
+        "Entrapment",
+        3
+       ],
+       [
         "Savage Strikes",
         2
        ],
        [
-        "Survivalist",
-        3
+        "Improved Wing Clip",
+        1
        ],
        [
         "Clever Traps",
@@ -1188,15 +1469,11 @@
        ],
        [
         "Survival Tactics",
-        2
+        1
        ],
        [
         "Predator's Edge",
         5
-       ],
-       [
-        "Resourcefulness",
-        1
        ],
        [
         "Expose Prey",
@@ -1220,9 +1497,9 @@
        ]
       ]
      },
-     "split": "5/12/34",
-     "dps": 1011.98,
-     "se": 0.1547
+     "split": "6/12/33",
+     "dps": 1018.48,
+     "se": 0.1563
     },
     {
      "allocation": {
@@ -1230,12 +1507,24 @@
        [
         "Deadly Aspects",
         5
+       ],
+       [
+        "Focused Fire",
+        1
+       ],
+       [
+        "Pathfinding",
+        1
        ]
       ],
       "Marksmanship": [
        [
         "Lethal Attacks",
         5
+       ],
+       [
+        "Efficiency",
+        1
        ],
        [
         "Careful Aim",
@@ -1252,16 +1541,12 @@
         5
        ],
        [
-        "Deflection",
-        1
+        "Entrapment",
+        3
        ],
        [
         "Savage Strikes",
         2
-       ],
-       [
-        "Survivalist",
-        3
        ],
        [
         "Clever Traps",
@@ -1273,15 +1558,11 @@
        ],
        [
         "Survival Tactics",
-        2
+        1
        ],
        [
         "Predator's Edge",
         5
-       ],
-       [
-        "Resourcefulness",
-        1
        ],
        [
         "Expose Prey",
@@ -1305,47 +1586,47 @@
        ]
       ]
      },
-     "split": "5/11/35",
-     "dps": 1011.98,
-     "se": 0.1547
+     "split": "7/12/32",
+     "dps": 1018.48,
+     "se": 0.1563
     }
    ],
    "runs": [
     {
      "entry": "melee-dps",
      "run": 1,
-     "simulated": 1193,
-     "best_screen": 1014.48,
-     "best_split": "5/12/34",
+     "simulated": 1195,
+     "best_screen": 1019.61,
+     "best_split": "6/12/33",
      "trace": [
       {
        "round": 0,
-       "simulated": 393,
-       "best": 1014.48
+       "simulated": 395,
+       "best": 1019.55
       },
       {
        "round": 1,
-       "simulated": 593,
-       "best": 1014.48,
-       "predicted_top": 1005.74
+       "simulated": 595,
+       "best": 1019.55,
+       "predicted_top": 1014.39
       },
       {
        "round": 2,
-       "simulated": 793,
-       "best": 1014.48,
-       "predicted_top": 1011.34
+       "simulated": 795,
+       "best": 1019.55,
+       "predicted_top": 1018.17
       },
       {
        "round": 3,
-       "simulated": 993,
-       "best": 1014.48,
-       "predicted_top": 1014.04
+       "simulated": 995,
+       "best": 1019.55,
+       "predicted_top": 1019.26
       },
       {
        "round": 4,
-       "simulated": 1193,
-       "best": 1014.48,
-       "predicted_top": 1014.4
+       "simulated": 1195,
+       "best": 1019.61,
+       "predicted_top": 1019.49
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1358,102 +1639,102 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      1011.4,
-      1011.4,
-      1011.4,
-      1011.4,
-      1011.4,
-      1011.4
+      1018.89,
+      1018.89,
+      1018.87,
+      1018.87,
+      1018.87,
+      1018.87
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      1012.03,
-      1012.03,
-      1012.03,
-      1012.03,
-      1012.03
+      1018.79,
+      1018.79,
+      1018.78,
+      1018.78,
+      1018.78
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      1011.98,
-      1011.98
+      1018.48,
+      1018.48
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 478,
-     "best_gap": 0.0034,
-     "best_move": "1 Resourcefulness -> Efficiency",
+     "neighbours": 555,
+     "best_gap": 0.0013,
+     "best_move": "1 Endurance Training -> Resourcefulness",
      "raced": [
-      "1 Resourcefulness -> Efficiency",
-      "1 Improved Stings -> Resourcefulness",
-      "1 Survival Tactics -> Resourcefulness",
-      "1 Resourcefulness + 1 Improved Stings -> 1 Deterrence + 1 Counterattack"
+      "1 Endurance Training -> Resourcefulness",
+      "1 Efficiency -> Resourcefulness",
+      "1 Improved Wing Clip -> Resourcefulness",
+      "1 Entrapment -> Resourcefulness"
      ],
-     "confirmed_gap": -0.0003
+     "confirmed_gap": 0.0001
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Lone Wolf",
-     "importance": 0.4485
+     "importance": 0.4257
     },
     {
      "feature": "Careful Aim",
-     "importance": 0.2076
-    },
-    {
-     "feature": "Deflection",
-     "importance": 0.1014
+     "importance": 0.2038
     },
     {
      "feature": "Marksmanship points",
-     "importance": 0.0575
+     "importance": 0.0885
     },
     {
-     "feature": "Deadly Aspects",
-     "importance": 0.0388
-    },
-    {
-     "feature": "Lethal Attacks",
-     "importance": 0.0234
-    },
-    {
-     "feature": "Predator's Edge",
-     "importance": 0.0212
-    },
-    {
-     "feature": "Improved Wing Clip",
-     "importance": 0.0192
+     "feature": "Deflection",
+     "importance": 0.0716
     },
     {
      "feature": "Expose Prey",
-     "importance": 0.019
+     "importance": 0.036
     },
     {
-     "feature": "Endurance Training",
-     "importance": 0.01
+     "feature": "Lethal Attacks",
+     "importance": 0.0296
+    },
+    {
+     "feature": "Predator's Edge",
+     "importance": 0.0268
+    },
+    {
+     "feature": "Improved Wing Clip",
+     "importance": 0.0253
+    },
+    {
+     "feature": "Deadly Aspects",
+     "importance": 0.0237
+    },
+    {
+     "feature": "Lightning Reflexes",
+     "importance": 0.0112
     },
     {
      "feature": "Strider Kick",
-     "importance": 0.0073
+     "importance": 0.0076
     },
     {
-     "feature": "Beast Mastery points",
-     "importance": 0.0066
+     "feature": "Improved Concussive Shot",
+     "importance": 0.0072
     }
    ],
-   "simulated_builds": 1690,
-   "simulated_fights": 3190000,
-   "minutes": 4.2,
+   "simulated_builds": 1769,
+   "simulated_fights": 3423000,
+   "minutes": 3.9,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-bis.gear.json"
   },
   "prebis-dummy": {
@@ -1483,7 +1764,7 @@
       ],
       [
        "Efficiency",
-       5
+       1
       ],
       [
        "Careful Aim",
@@ -1500,16 +1781,12 @@
        5
       ],
       [
-       "Entrapment",
-       2
-      ],
-      [
        "Savage Strikes",
        2
       ],
       [
        "Survivalist",
-       1
+       3
       ],
       [
        "Clever Traps",
@@ -1545,35 +1822,31 @@
       ],
       [
        "Lightning Reflexes",
-       1
+       5
       ]
      ]
     },
-    "split": "5/16/30",
-    "dps": 403.94,
-    "se": 0.0555,
+    "split": "5/12/34",
+    "dps": 415.43,
+    "se": 0.0568,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "5/16/30",
-    "dps": 403.94,
-    "se": 0.0555,
+    "split": "5/12/34",
+    "dps": 415.43,
+    "se": 0.0568,
     "differs": [
      [
       "Entrapment",
       1
      ],
      [
-      "Entrapment",
+      "Survivalist",
       2
      ],
      [
       "Survivalist",
-      1
-     ],
-     [
-      "Survivalist",
-      2
+      3
      ]
     ]
    },
@@ -1594,7 +1867,7 @@
        ],
        [
         "Efficiency",
-        5
+        1
        ],
        [
         "Careful Aim",
@@ -1611,16 +1884,12 @@
         5
        ],
        [
-        "Entrapment",
-        2
-       ],
-       [
         "Savage Strikes",
         2
        ],
        [
         "Survivalist",
-        1
+        3
        ],
        [
         "Clever Traps",
@@ -1656,13 +1925,13 @@
        ],
        [
         "Lightning Reflexes",
-        1
+        5
        ]
       ]
      },
-     "split": "5/16/30",
-     "dps": 403.94,
-     "se": 0.0555
+     "split": "5/12/34",
+     "dps": 415.43,
+     "se": 0.0568
     },
     {
      "allocation": {
@@ -1679,7 +1948,7 @@
        ],
        [
         "Efficiency",
-        5
+        1
        ],
        [
         "Careful Aim",
@@ -1741,51 +2010,57 @@
        ],
        [
         "Lightning Reflexes",
-        1
+        5
        ]
       ]
      },
-     "split": "5/16/30",
-     "dps": 403.94,
-     "se": 0.0555
+     "split": "5/12/34",
+     "dps": 415.43,
+     "se": 0.0568
     }
    ],
    "runs": [
     {
      "entry": "melee-dps",
      "run": 1,
-     "simulated": 1197,
-     "best_screen": 403.11,
-     "best_split": "5/16/30",
+     "simulated": 1389,
+     "best_screen": 415.37,
+     "best_split": "5/12/34",
      "trace": [
       {
        "round": 0,
-       "simulated": 397,
-       "best": 402.88
+       "simulated": 389,
+       "best": 412.88
       },
       {
        "round": 1,
-       "simulated": 597,
-       "best": 402.88,
-       "predicted_top": 393.05
+       "simulated": 589,
+       "best": 412.88,
+       "predicted_top": 409.16
       },
       {
        "round": 2,
-       "simulated": 797,
-       "best": 402.88,
-       "predicted_top": 399.4
+       "simulated": 789,
+       "best": 415.37,
+       "predicted_top": 411.09
       },
       {
        "round": 3,
-       "simulated": 997,
-       "best": 403.11,
-       "predicted_top": 400.9
+       "simulated": 989,
+       "best": 415.37,
+       "predicted_top": 414.28
       },
       {
        "round": 4,
-       "simulated": 1197,
-       "best": 403.11,
-       "predicted_top": 401.33
+       "simulated": 1189,
+       "best": 415.37,
+       "predicted_top": 413.9
+      },
+      {
+       "round": 5,
+       "simulated": 1389,
+       "best": 415.37,
+       "predicted_top": 413.6
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1798,95 +2073,95 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      404.04,
-      404.04,
-      404.04,
-      403.4,
-      403.4,
-      403.4
+      415.76,
+      415.76,
+      415.76,
+      415.76,
+      415.76,
+      415.76
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      403.96,
-      403.96,
-      403.96,
-      403.21,
-      403.21
+      415.46,
+      415.46,
+      415.46,
+      415.46,
+      415.46
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      403.94,
-      403.94
+      415.43,
+      415.43
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 371,
-     "best_gap": 0.0002,
-     "best_move": "1 Survival Tactics -> Lightning Reflexes"
+     "neighbours": 534,
+     "best_gap": 0.0,
+     "best_move": "3 Survivalist -> Improved Wing Clip"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Lone Wolf",
-     "importance": 0.3653
+     "importance": 0.4025
     },
     {
      "feature": "Deflection",
-     "importance": 0.2024
-    },
-    {
-     "feature": "Resourcefulness",
-     "importance": 0.1217
+     "importance": 0.1668
     },
     {
      "feature": "Careful Aim",
-     "importance": 0.0905
+     "importance": 0.1545
+    },
+    {
+     "feature": "Resourcefulness",
+     "importance": 0.1195
     },
     {
      "feature": "Marksmanship points",
-     "importance": 0.0471
-    },
-    {
-     "feature": "Efficiency",
-     "importance": 0.045
+     "importance": 0.0309
     },
     {
      "feature": "Improved Wing Clip",
-     "importance": 0.0251
+     "importance": 0.0232
     },
     {
      "feature": "Predator's Edge",
-     "importance": 0.0155
+     "importance": 0.016
     },
     {
      "feature": "Expose Prey",
-     "importance": 0.0099
+     "importance": 0.0132
     },
     {
-     "feature": "Endurance Training",
-     "importance": 0.0096
+     "feature": "Lethal Attacks",
+     "importance": 0.0112
     },
     {
-     "feature": "Deadly Aspects",
-     "importance": 0.0087
+     "feature": "Survivalist's Discipline",
+     "importance": 0.0084
     },
     {
      "feature": "Beast Mastery points",
+     "importance": 0.0082
+    },
+    {
+     "feature": "Deadly Aspects",
      "importance": 0.0076
     }
    ],
-   "simulated_builds": 1582,
-   "simulated_fights": 2723000,
-   "minutes": 2.1,
+   "simulated_builds": 1937,
+   "simulated_fights": 3404000,
+   "minutes": 2.3,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-prebis.gear.json"
   },
   "prebis-raid": {
@@ -1915,10 +2190,6 @@
        5
       ],
       [
-       "Improved Stings",
-       1
-      ],
-      [
        "Careful Aim",
        5
       ],
@@ -1958,7 +2229,7 @@
       ],
       [
        "Resourcefulness",
-       1
+       2
       ],
       [
        "Expose Prey",
@@ -1982,23 +2253,23 @@
       ]
      ]
     },
-    "split": "5/12/34",
-    "dps": 827.6,
-    "se": 0.1237,
+    "split": "5/11/35",
+    "dps": 835.39,
+    "se": 0.1232,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "5/12/34",
-    "dps": 827.6,
-    "se": 0.1237,
+    "split": "5/11/35",
+    "dps": 835.39,
+    "se": 0.1232,
     "differs": [
      [
-      "Hawk Eye",
-      1
+      "Entrapment",
+      3
      ],
      [
-      "Improved Stings",
-      1
+      "Survivalist",
+      3
      ]
     ]
    },
@@ -2018,10 +2289,6 @@
         5
        ],
        [
-        "Improved Stings",
-        1
-       ],
-       [
         "Careful Aim",
         5
        ],
@@ -2061,7 +2328,7 @@
        ],
        [
         "Resourcefulness",
-        1
+        2
        ],
        [
         "Expose Prey",
@@ -2085,9 +2352,9 @@
        ]
       ]
      },
-     "split": "5/12/34",
-     "dps": 827.6,
-     "se": 0.1237
+     "split": "5/11/35",
+     "dps": 835.39,
+     "se": 0.1232
     },
     {
      "allocation": {
@@ -2098,10 +2365,6 @@
        ]
       ],
       "Marksmanship": [
-       [
-        "Hawk Eye",
-        1
-       ],
        [
         "Lethal Attacks",
         5
@@ -2121,12 +2384,12 @@
         5
        ],
        [
-        "Savage Strikes",
-        2
+        "Entrapment",
+        3
        ],
        [
-        "Survivalist",
-        3
+        "Savage Strikes",
+        2
        ],
        [
         "Clever Traps",
@@ -2146,7 +2409,7 @@
        ],
        [
         "Resourcefulness",
-        1
+        2
        ],
        [
         "Expose Prey",
@@ -2170,47 +2433,47 @@
        ]
       ]
      },
-     "split": "5/12/34",
-     "dps": 827.6,
-     "se": 0.1237
+     "split": "5/11/35",
+     "dps": 835.39,
+     "se": 0.1232
     }
    ],
    "runs": [
     {
      "entry": "melee-dps",
      "run": 1,
-     "simulated": 1194,
-     "best_screen": 828.41,
-     "best_split": "5/12/34",
+     "simulated": 1192,
+     "best_screen": 838.33,
+     "best_split": "5/11/35",
      "trace": [
       {
        "round": 0,
-       "simulated": 394,
-       "best": 828.41
+       "simulated": 392,
+       "best": 838.33
       },
       {
        "round": 1,
-       "simulated": 594,
-       "best": 828.41,
-       "predicted_top": 822.16
+       "simulated": 592,
+       "best": 838.33,
+       "predicted_top": 830.59
       },
       {
        "round": 2,
-       "simulated": 794,
-       "best": 828.41,
-       "predicted_top": 827.38
+       "simulated": 792,
+       "best": 838.33,
+       "predicted_top": 835.99
       },
       {
        "round": 3,
-       "simulated": 994,
-       "best": 828.41,
-       "predicted_top": 827.94
+       "simulated": 992,
+       "best": 838.33,
+       "predicted_top": 838.11
       },
       {
        "round": 4,
-       "simulated": 1194,
-       "best": 828.41,
-       "predicted_top": 828.3
+       "simulated": 1192,
+       "best": 838.33,
+       "predicted_top": 837.57
       }
      ],
      "best_stage1_gap": 0.0,
@@ -2223,95 +2486,95 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      827.75,
-      827.75,
-      827.75,
-      827.75,
-      827.75,
-      827.75
+      835.77,
+      835.77,
+      835.77,
+      835.77,
+      835.77,
+      835.77
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      827.76,
-      827.76,
-      827.76,
-      827.76,
-      827.76
+      835.37,
+      835.37,
+      835.37,
+      835.37,
+      835.37
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      827.6,
-      827.6
+      835.39,
+      835.39
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 478,
-     "best_gap": 0.0,
-     "best_move": "3 Survivalist -> Improved Wing Clip"
+     "neighbours": 425,
+     "best_gap": 0.0003,
+     "best_move": "1 Resourcefulness -> Deterrence"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Lone Wolf",
-     "importance": 0.4615
+     "importance": 0.3978
     },
     {
      "feature": "Careful Aim",
-     "importance": 0.1564
+     "importance": 0.2247
     },
     {
      "feature": "Deflection",
-     "importance": 0.151
+     "importance": 0.1295
     },
     {
      "feature": "Marksmanship points",
-     "importance": 0.0596
-    },
-    {
-     "feature": "Deadly Aspects",
-     "importance": 0.0262
-    },
-    {
-     "feature": "Lethal Attacks",
-     "importance": 0.0217
+     "importance": 0.069
     },
     {
      "feature": "Predator's Edge",
-     "importance": 0.0204
+     "importance": 0.0307
     },
     {
-     "feature": "Expose Prey",
-     "importance": 0.0162
-    },
-    {
-     "feature": "Endurance Training",
-     "importance": 0.0153
-    },
-    {
-     "feature": "Entrapment",
-     "importance": 0.0113
+     "feature": "Deadly Aspects",
+     "importance": 0.0279
     },
     {
      "feature": "Improved Wing Clip",
-     "importance": 0.0098
+     "importance": 0.0257
+    },
+    {
+     "feature": "Expose Prey",
+     "importance": 0.0172
+    },
+    {
+     "feature": "Lethal Attacks",
+     "importance": 0.0153
+    },
+    {
+     "feature": "Endurance Training",
+     "importance": 0.0104
     },
     {
      "feature": "Lightning Reflexes",
-     "importance": 0.0089
+     "importance": 0.0058
+    },
+    {
+     "feature": "Entrapment",
+     "importance": 0.0054
     }
    ],
-   "simulated_builds": 1686,
-   "simulated_fights": 3041000,
-   "minutes": 3.8,
+   "simulated_builds": 1631,
+   "simulated_fights": 2880000,
+   "minutes": 3.6,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-prebis.gear.json"
   }
  },
@@ -2328,61 +2591,21 @@
   "dps": {
    "winner": {
     "entry": "melee-dps",
-    "dps": 491.17,
-    "se": 0.068
-   },
-   "melee-survival-raid": {
-    "entry": "melee-dps",
-    "dps": 467.46,
-    "se": 0.068
-   },
-   "survival-raid": {
-    "entry": "melee-dps",
-    "dps": 490.49,
+    "dps": 502.22,
     "se": 0.07
-   }
-  },
-  "best_hand": "melee-survival-raid",
-  "gain_vs_hand": 0.0507
- },
- "compare_raid": {
-  "setting": "raid",
-  "dps": {
-   "winner": {
-    "entry": "melee-dps",
-    "dps": 1011.51,
-    "se": 0.155
    },
    "melee-survival-raid": {
     "entry": "melee-dps",
-    "dps": 1011.92,
-    "se": 0.155
+    "dps": 494.89,
+    "se": 0.07
    },
    "survival-raid": {
     "entry": "melee-dps",
-    "dps": 992.69,
-    "se": 0.155
-   },
-   "opt-melee-dps-raid-dps": {
-    "entry": "melee-dps",
-    "dps": 981.27,
-    "se": 0.156
+    "dps": 494.59,
+    "se": 0.071
    }
   },
   "best_hand": "melee-survival-raid",
-  "gain_vs_hand": -0.0004
- },
- "builds": {
-  "written": [],
-  "superseded": [],
-  "date": "2026-10-16",
-  "setting": "raid",
-  "why": "confirms melee-survival-raid (-0.04% in a full raid)"
- },
- "tidied": {
-  "bis-dummy": null,
-  "bis-raid": null,
-  "prebis-dummy": null,
-  "prebis-raid": null
+  "gain_vs_hand": 0.0148
  }
 }

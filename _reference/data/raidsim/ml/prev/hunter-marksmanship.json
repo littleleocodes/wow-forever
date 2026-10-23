@@ -15,224 +15,728 @@
   "bis": {
    "entry": "mm-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-bis.gear.json",
-   "date": "2026-10-14",
+   "date": "2026-10-22",
    "chosen": "keep-sets-and-effects",
-   "ilvl": 66.4,
+   "ilvl": 64.8,
    "trinkets": [
-    "Blackhand's Breadth",
-    "Royal Seal of Eldre'Thalas"
+    "Adaptive Combat Assistant",
+    "Jewel of the Guard Captain"
    ],
+   "trinket_screen": {
+    "Adaptive Combat Assistant (272437)": 1.0048,
+    "Jewel of the Guard Captain (270225)": 1.0035,
+    "Everlook Delivery Bot (274760)": 1.0034,
+    "Weakness Analyzer (272438)": 1.0024,
+    "Rune of the Guard Captain (19120)": 1.0023,
+    "Cleansed Vilebranch Medallion (270275)": 1.0023,
+    "Shard of the Splithooves (10659)": 1.0021,
+    "Molten Heart of the Mountain (249470)": 1.0019,
+    "Enriched Seal (271903)": 1.0012,
+    "Darkspear Voodoo Seal (272061)": 1.0012,
+    "Ankh of Life (1713)": 1.0,
+    "Alchemist's Stone (13503)": 0.9993,
+    "Serenity Field (272439)": 0.9988,
+    "Dog Whistle (3456)": 0.9985,
+    "Minor Recombobulator (4381)": 0.9985,
+    "Gnomish Universal Remote (7506)": 0.9985,
+    "Demon's Blood (10779)": 0.9985,
+    "Smoking Heart of the Mountain (11811)": 0.9985,
+    "Heart of the Scale (13164)": 0.9985,
+    "Arcanite Dragonling (16022)": 0.9985,
+    "Stormpike Insignia Rank 6 (17904)": 0.9985,
+    "Gyrofreeze Ice Reflector (18634)": 0.9985,
+    "Major Recombobulator (18637)": 0.9985,
+    "Hyper-Radiant Flame Reflector (18638)": 0.9985,
+    "Ultra-Flash Shadow Reflector (18639)": 0.9985,
+    "Essence of the Pure Flame (18815)": 0.9985,
+    "Talisman of Ephemeral Power (18820)": 0.9985,
+    "Arena Grand Master (19024)": 0.9985,
+    "Talisman of Arathor (20071)": 0.9985,
+    "Defiler's Talisman (20072)": 0.9985,
+    "Defiler's Talisman (21115)": 0.9985,
+    "Defiler's Talisman (21116)": 0.9985,
+    "Talisman of Arathor (21117)": 0.9985,
+    "Talisman of Arathor (21118)": 0.9985,
+    "Talisman of Arathor (21119)": 0.9985,
+    "Defiler's Talisman (21120)": 0.9985,
+    "Defender of the Timbermaw (21326)": 0.9985,
+    "Frozen Heart of the Mountain (249469)": 0.9985,
+    "Dormant Heart of the Mountain (249473)": 0.9985,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.9985,
+    "SAF-T Emergency Ripper: Everlook (260820)": 0.9985,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.9985,
+    "Gnomish Poultryizer (260824)": 0.9985,
+    "Volunteer's Lucky Seal (271904)": 0.9985,
+    "Volunteer's Lucky Seal (271906)": 0.9985,
+    "Relentless Raider's Seal (272060)": 0.9985,
+    "Relentless Raider's Seal (272062)": 0.9985,
+    "Defender's Grip Stabilizer (272440)": 0.9985,
+    "Everlook Pathcarver (274759)": 0.9985,
+    "Parachute-Priest Pager (274761)": 0.9985,
+    "Enriched Seal (271905)": 0.998,
+    "Darkspear Voodoo Seal (272059)": 0.998
+   },
    "names": [
     "Black Dragonscale Helm",
     "Onyxia Tooth Pendant",
-    "Giantstalker's Epaulets",
-    "Arcanoweave Cloak",
-    "Giantstalker's Breastplate",
-    "Giantstalker's Bracers",
-    "Beaststalker's Gloves",
-    "Giantstalker's Belt",
-    "Dragonstalker's Legguards",
-    "Giantstalker's Boots",
-    "Band of Accuria",
+    "Theramore Pauldrons",
+    "Earthweave Cloak",
+    "Dawn Armor",
+    "Forest Stalker's Bracers",
+    "Theramore Handwraps",
+    "Highlander's Mail Girdle",
+    "Outrider's Chain Leggings",
+    "Beaststalker's Boots",
     "Signet Ring of the Bronze Dragonflight",
-    "Blackhand's Breadth",
-    "Royal Seal of Eldre'Thalas",
-    "Barbarous Blade",
+    "Band of Sulfuras",
+    "Adaptive Combat Assistant",
+    "Jewel of the Guard Captain",
+    "Thorium Poleaxe",
     null,
     "Rhok'delar, Longbow of the Ancient Keepers"
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 1.0298123113797406
+    "keep-sets-and-effects": 1.0
    },
    "confirm_seed2": {
-    "all-slots": 1.0,
-    "keep-sets-and-effects": 1.0296906023748766
+    "keep-sets-and-effects": 1.0,
+    "all-slots": 1.0
    },
    "weights": {
-    "PseudoStatRangedDps": 1.2671,
-    "StatAgility": 0.3467,
-    "StatArcaneDamage": 0.077,
-    "StatArmorPenetration": 0.0251,
-    "StatIntellect": 0.3731,
-    "StatMeleeCritRating": 0.3469,
-    "StatMeleeHasteRating": 0.2732,
-    "StatMeleeHitRating": 0.3675,
-    "StatNatureDamage": 0.0642,
-    "StatRangedAttackPower": 0.1278,
-    "StatSpellDamage": 0.1411,
-    "StatSpirit": 0.1174
+    "PseudoStatRangedDps": 1.068,
+    "StatAgility": 0.2909,
+    "StatArmorPenetration": 0.0192,
+    "StatCritRating": 0.2803,
+    "StatExpertiseRating": 0.1017,
+    "StatHasteRating": 0.0675,
+    "StatHitRating": 0.1316,
+    "StatIntellect": 0.3086,
+    "StatRangedAttackPower": 0.1083,
+    "StatSpellPiercing": 0.1347,
+    "StatSpirit": 0.0371
    },
    "evaluated_on": [
     "mm-raid: ml winner"
-   ]
+   ],
+   "replaced": [
+    {
+     "slot": 2,
+     "from": "Giantstalker's Epaulets (not in the database)",
+     "to": "Theramore Pauldrons"
+    },
+    {
+     "slot": 3,
+     "from": "Arcanoweave Cloak",
+     "to": "Earthweave Cloak"
+    },
+    {
+     "slot": 5,
+     "from": "Giantstalker's Bracers (not in the database)",
+     "to": "Forest Stalker's Bracers"
+    },
+    {
+     "slot": 6,
+     "from": "Beaststalker's Gloves",
+     "to": "Theramore Handwraps"
+    },
+    {
+     "slot": 7,
+     "from": "Giantstalker's Belt (not in the database)",
+     "to": "Highlander's Mail Girdle"
+    },
+    {
+     "slot": 8,
+     "from": "Dragonstalker's Legguards (not in the database)",
+     "to": "Outrider's Chain Leggings"
+    },
+    {
+     "slot": 9,
+     "from": "Giantstalker's Boots (not in the database)",
+     "to": "Beaststalker's Boots"
+    },
+    {
+     "slot": 10,
+     "from": "Band of Accuria (not in the database)",
+     "to": "Signet Ring of the Bronze Dragonflight"
+    },
+    {
+     "slot": 12,
+     "from": "Blackhand's Breadth (not in the database)",
+     "to": "Adaptive Combat Assistant"
+    },
+    {
+     "slot": 13,
+     "from": "Royal Seal of Eldre'Thalas (not in the database)",
+     "to": "Jewel of the Guard Captain"
+    },
+    {
+     "slot": 14,
+     "from": "Barbarous Blade (not in the database)",
+     "to": "Thorium Poleaxe"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 09e739807",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:16848",
+     "item:16850",
+     "item:16851",
+     "item:16938",
+     "item:16849",
+     "item:17063",
+     "item:13965",
+     "item:18473",
+     "item:18520"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [],
+    "minutes": 3.1
+   }
   },
   "bis2": true,
   "bis-raid": {
    "entry": "mm-lonewolf-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-bis-raid.gear.json",
-   "date": "2026-10-14",
+   "date": "2026-10-22",
    "chosen": "keep-sets-and-effects",
-   "ilvl": 66.8,
+   "ilvl": 64.6,
    "trinkets": [
-    "Blackhand's Breadth",
-    "Royal Seal of Eldre'Thalas"
+    "Shard of the Splithooves",
+    "Enriched Seal"
    ],
+   "trinket_screen": {
+    "Shard of the Splithooves (10659)": 1.004,
+    "Enriched Seal (271903)": 1.0025,
+    "Darkspear Voodoo Seal (272061)": 1.0025,
+    "Everlook Delivery Bot (274760)": 1.0002,
+    "Ankh of Life (1713)": 1.0,
+    "Serenity Field (272439)": 0.9994,
+    "Jewel of the Guard Captain (270225)": 0.9992,
+    "Enriched Seal (271905)": 0.9989,
+    "Darkspear Voodoo Seal (272059)": 0.9989,
+    "Rune of the Guard Captain (19120)": 0.9985,
+    "Cleansed Vilebranch Medallion (270275)": 0.9985,
+    "Molten Heart of the Mountain (249470)": 0.9984,
+    "Weakness Analyzer (272438)": 0.9976,
+    "Alchemist's Stone (13503)": 0.9956,
+    "Dog Whistle (3456)": 0.9937,
+    "Minor Recombobulator (4381)": 0.9937,
+    "Gnomish Universal Remote (7506)": 0.9937,
+    "Demon's Blood (10779)": 0.9937,
+    "Smoking Heart of the Mountain (11811)": 0.9937,
+    "Heart of the Scale (13164)": 0.9937,
+    "Arcanite Dragonling (16022)": 0.9937,
+    "Stormpike Insignia Rank 6 (17904)": 0.9937,
+    "Gyrofreeze Ice Reflector (18634)": 0.9937,
+    "Major Recombobulator (18637)": 0.9937,
+    "Hyper-Radiant Flame Reflector (18638)": 0.9937,
+    "Ultra-Flash Shadow Reflector (18639)": 0.9937,
+    "Essence of the Pure Flame (18815)": 0.9937,
+    "Talisman of Ephemeral Power (18820)": 0.9937,
+    "Arena Grand Master (19024)": 0.9937,
+    "Talisman of Arathor (20071)": 0.9937,
+    "Defiler's Talisman (20072)": 0.9937,
+    "Defiler's Talisman (21115)": 0.9937,
+    "Defiler's Talisman (21116)": 0.9937,
+    "Talisman of Arathor (21117)": 0.9937,
+    "Talisman of Arathor (21118)": 0.9937,
+    "Talisman of Arathor (21119)": 0.9937,
+    "Defiler's Talisman (21120)": 0.9937,
+    "Defender of the Timbermaw (21326)": 0.9937,
+    "Frozen Heart of the Mountain (249469)": 0.9937,
+    "Dormant Heart of the Mountain (249473)": 0.9937,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.9937,
+    "SAF-T Emergency Ripper: Everlook (260820)": 0.9937,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.9937,
+    "Gnomish Poultryizer (260824)": 0.9937,
+    "Volunteer's Lucky Seal (271904)": 0.9937,
+    "Volunteer's Lucky Seal (271906)": 0.9937,
+    "Relentless Raider's Seal (272060)": 0.9937,
+    "Relentless Raider's Seal (272062)": 0.9937,
+    "Adaptive Combat Assistant (272437)": 0.9937,
+    "Defender's Grip Stabilizer (272440)": 0.9937,
+    "Everlook Pathcarver (274759)": 0.9937,
+    "Parachute-Priest Pager (274761)": 0.9937
+   },
    "names": [
     "Black Dragonscale Helm",
     "Onyxia Tooth Pendant",
-    "Giantstalker's Epaulets",
-    "Arcanoweave Cloak",
-    "Giantstalker's Breastplate",
-    "Giantstalker's Bracers",
-    "Giantstalker's Gloves",
-    "Giantstalker's Belt",
-    "Dragonstalker's Legguards",
-    "Giantstalker's Boots",
-    "Band of Accuria",
+    "Highlander's Chain Pauldrons",
+    "Earthweave Cloak",
+    "Dawn Armor",
+    "Magiskull Cuffs",
+    "Theramore Handwraps",
+    "Highlander's Mail Girdle",
+    "Outrider's Chain Leggings",
+    "Beaststalker's Boots",
     "Signet Ring of the Bronze Dragonflight",
-    "Blackhand's Breadth",
-    "Royal Seal of Eldre'Thalas",
-    "Barbarous Blade",
+    "Band of Sulfuras",
+    "Shard of the Splithooves",
+    "Enriched Seal",
+    "Legionite Glaive",
     null,
     "Rhok'delar, Longbow of the Ancient Keepers"
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 1.027879348067866
+    "keep-sets-and-effects": 1.0
    },
    "confirm_seed2": {
-    "all-slots": 1.0,
-    "keep-sets-and-effects": 1.0277237484374937
+    "keep-sets-and-effects": 1.0,
+    "all-slots": 1.0
    },
    "weights": {
-    "PseudoStatRangedDps": 1.4285,
-    "StatAgility": 0.37,
-    "StatArcaneDamage": 0.1031,
-    "StatArmorPenetration": 0.0278,
-    "StatIntellect": 0.3711,
-    "StatMeleeCritRating": 0.3316,
-    "StatMeleeHasteRating": 0.287,
-    "StatMeleeHitRating": 0.4105,
-    "StatNatureDamage": 0.0612,
-    "StatRangedAttackPower": 0.1388,
-    "StatSpellDamage": 0.1643,
-    "StatSpirit": 0.0973
+    "PseudoStatRangedDps": 1.2633,
+    "StatAgility": 0.3236,
+    "StatArmorPenetration": 0.0224,
+    "StatCritRating": 0.2717,
+    "StatHasteRating": 0.1499,
+    "StatHitRating": 0.3489,
+    "StatIntellect": 0.3775,
+    "StatRangedAttackPower": 0.1251,
+    "StatSpellPiercing": 0.1875,
+    "StatSpirit": 0.1766
    },
    "evaluated_on": [
     "mm-lonewolf-raid: ml winner (full raid)"
    ],
-   "searched": true
+   "replaced": [
+    {
+     "slot": 2,
+     "from": "Giantstalker's Epaulets (not in the database)",
+     "to": "Highlander's Chain Pauldrons"
+    },
+    {
+     "slot": 3,
+     "from": "Arcanoweave Cloak",
+     "to": "Earthweave Cloak"
+    },
+    {
+     "slot": 4,
+     "from": "Giantstalker's Breastplate (not in the database)",
+     "to": "Dawn Armor"
+    },
+    {
+     "slot": 5,
+     "from": "Giantstalker's Bracers (not in the database)",
+     "to": "Magiskull Cuffs"
+    },
+    {
+     "slot": 6,
+     "from": "Giantstalker's Gloves (not in the database)",
+     "to": "Theramore Handwraps"
+    },
+    {
+     "slot": 7,
+     "from": "Giantstalker's Belt (not in the database)",
+     "to": "Highlander's Mail Girdle"
+    },
+    {
+     "slot": 8,
+     "from": "Dragonstalker's Legguards (not in the database)",
+     "to": "Outrider's Chain Leggings"
+    },
+    {
+     "slot": 9,
+     "from": "Giantstalker's Boots (not in the database)",
+     "to": "Beaststalker's Boots"
+    },
+    {
+     "slot": 10,
+     "from": "Band of Accuria (not in the database)",
+     "to": "Signet Ring of the Bronze Dragonflight"
+    },
+    {
+     "slot": 11,
+     "from": "Signet Ring of the Bronze Dragonflight",
+     "to": "Band of Sulfuras"
+    },
+    {
+     "slot": 12,
+     "from": "Blackhand's Breadth (not in the database)",
+     "to": "Shard of the Splithooves"
+    },
+    {
+     "slot": 13,
+     "from": "Royal Seal of Eldre'Thalas (not in the database)",
+     "to": "Enriched Seal"
+    },
+    {
+     "slot": 14,
+     "from": "Barbarous Blade (not in the database)",
+     "to": "Legionite Glaive"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 09e739807",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:16848",
+     "item:16845",
+     "item:16850",
+     "item:16852",
+     "item:16851",
+     "item:16938",
+     "item:16849",
+     "item:17063",
+     "item:13965",
+     "item:18473",
+     "item:18520"
+    ],
+    "winner_of": "bis-raid",
+    "talents_left_out": [],
+    "minutes": 2.4
+   }
   },
   "prebis": {
    "entry": "mm-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-prebis.gear.json",
-   "date": "2026-10-14",
+   "date": "2026-10-22",
    "chosen": "keep-sets-and-effects",
-   "ilvl": 62.9,
+   "ilvl": 62.8,
    "trinkets": [
-    "Blackhand's Breadth",
-    "Royal Seal of Eldre'Thalas"
+    "Everlook Delivery Bot",
+    "Shard of the Splithooves"
    ],
+   "trinket_screen": {
+    "Everlook Delivery Bot (274760)": 1.0033,
+    "Adaptive Combat Assistant (272437)": 1.0028,
+    "Jewel of the Guard Captain (270225)": 1.0021,
+    "Shard of the Splithooves (10659)": 1.0017,
+    "Molten Heart of the Mountain (249470)": 1.0016,
+    "Enriched Seal (271903)": 1.0011,
+    "Darkspear Voodoo Seal (272061)": 1.0011,
+    "Rune of the Guard Captain (19120)": 1.0011,
+    "Cleansed Vilebranch Medallion (270275)": 1.0011,
+    "Weakness Analyzer (272438)": 1.0003,
+    "Ankh of Life (1713)": 1.0,
+    "Enriched Seal (271905)": 1.0,
+    "Darkspear Voodoo Seal (272059)": 1.0,
+    "Serenity Field (272439)": 0.9988,
+    "Alchemist's Stone (13503)": 0.9984,
+    "Dog Whistle (3456)": 0.9971,
+    "Minor Recombobulator (4381)": 0.9971,
+    "Gnomish Universal Remote (7506)": 0.9971,
+    "Demon's Blood (10779)": 0.9971,
+    "Smoking Heart of the Mountain (11811)": 0.9971,
+    "Heart of the Scale (13164)": 0.9971,
+    "Arcanite Dragonling (16022)": 0.9971,
+    "Stormpike Insignia Rank 6 (17904)": 0.9971,
+    "Gyrofreeze Ice Reflector (18634)": 0.9971,
+    "Major Recombobulator (18637)": 0.9971,
+    "Hyper-Radiant Flame Reflector (18638)": 0.9971,
+    "Ultra-Flash Shadow Reflector (18639)": 0.9971,
+    "Talisman of Arathor (20071)": 0.9971,
+    "Defiler's Talisman (20072)": 0.9971,
+    "Defiler's Talisman (21115)": 0.9971,
+    "Defiler's Talisman (21116)": 0.9971,
+    "Talisman of Arathor (21117)": 0.9971,
+    "Talisman of Arathor (21118)": 0.9971,
+    "Talisman of Arathor (21119)": 0.9971,
+    "Defiler's Talisman (21120)": 0.9971,
+    "Defender of the Timbermaw (21326)": 0.9971,
+    "Frozen Heart of the Mountain (249469)": 0.9971,
+    "Dormant Heart of the Mountain (249473)": 0.9971,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.9971,
+    "SAF-T Emergency Ripper: Everlook (260820)": 0.9971,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.9971,
+    "Gnomish Poultryizer (260824)": 0.9971,
+    "Volunteer's Lucky Seal (271904)": 0.9971,
+    "Volunteer's Lucky Seal (271906)": 0.9971,
+    "Relentless Raider's Seal (272060)": 0.9971,
+    "Relentless Raider's Seal (272062)": 0.9971,
+    "Defender's Grip Stabilizer (272440)": 0.9971,
+    "Everlook Pathcarver (274759)": 0.9971,
+    "Parachute-Priest Pager (274761)": 0.9971
+   },
    "names": [
     "Black Dragonscale Helm",
-    "Pendant of Celerity",
+    "Amulet of the Darkmoon",
     "Theramore Pauldrons",
     "Earthweave Cloak",
     "Dawn Armor",
-    "Rockfury Bracers",
+    "Forest Stalker's Bracers",
     "Beaststalker's Gloves",
-    "Knowledge of the Timbermaw",
+    "Highlander's Mail Girdle",
     "Outrider's Chain Leggings",
-    "Sorcerer's Boots",
+    "Beaststalker's Boots",
     "Signet Ring of the Bronze Dragonflight",
-    "Signet Ring of the Bronze Dragonflight",
-    "Blackhand's Breadth",
-    "Royal Seal of Eldre'Thalas",
-    "Barbarous Blade",
+    "Channeler's Ring",
+    "Everlook Delivery Bot",
+    "Shard of the Splithooves",
+    "Thorium Poleaxe",
     null,
     "Premier High Warlord's Recurve"
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 1.014517463057933
+    "keep-sets-and-effects": 1.0
    },
    "confirm_seed2": {
-    "all-slots": 1.0,
-    "keep-sets-and-effects": 1.0134152193362806
+    "keep-sets-and-effects": 1.0,
+    "all-slots": 1.0
    },
    "weights": {
-    "PseudoStatRangedDps": 1.1278,
-    "StatAgility": 0.3323,
-    "StatArcaneDamage": 0.0773,
-    "StatArmorPenetration": 0.0198,
-    "StatIntellect": 0.2948,
-    "StatMeleeCritRating": 0.3215,
-    "StatMeleeHasteRating": 0.161,
-    "StatMeleeHitRating": 0.3528,
-    "StatNatureDamage": 0.0649,
-    "StatRangedAttackPower": 0.1231,
-    "StatSpellDamage": 0.1422,
-    "StatSpirit": 0.0171
+    "PseudoStatRangedDps": 0.9767,
+    "StatAgility": 0.2808,
+    "StatArmorPenetration": 0.017,
+    "StatCritRating": 0.2715,
+    "StatExpertiseRating": 0.0928,
+    "StatHasteRating": 0.0989,
+    "StatHitRating": 0.1013,
+    "StatIntellect": 0.2733,
+    "StatRangedAttackPower": 0.1045,
+    "StatSpellPiercing": 0.139,
+    "StatSpirit": 0.0938
    },
    "evaluated_on": [
     "mm-raid: ml winner (bis)"
-   ]
+   ],
+   "replaced": [
+    {
+     "slot": 1,
+     "from": "Pendant of Celerity (not in the database)",
+     "to": "Amulet of the Darkmoon"
+    },
+    {
+     "slot": 5,
+     "from": "Rockfury Bracers",
+     "to": "Forest Stalker's Bracers"
+    },
+    {
+     "slot": 7,
+     "from": "Knowledge of the Timbermaw (not in the database)",
+     "to": "Highlander's Mail Girdle"
+    },
+    {
+     "slot": 9,
+     "from": "Sorcerer's Boots",
+     "to": "Beaststalker's Boots"
+    },
+    {
+     "slot": 10,
+     "from": "Signet Ring of the Bronze Dragonflight",
+     "to": "Signet Ring of the Bronze Dragonflight"
+    },
+    {
+     "slot": 11,
+     "from": "Signet Ring of the Bronze Dragonflight (not in the database)",
+     "to": "Channeler's Ring"
+    },
+    {
+     "slot": 12,
+     "from": "Blackhand's Breadth (not in the database)",
+     "to": "Everlook Delivery Bot"
+    },
+    {
+     "slot": 13,
+     "from": "Royal Seal of Eldre'Thalas (not in the database)",
+     "to": "Shard of the Splithooves"
+    },
+    {
+     "slot": 14,
+     "from": "Barbarous Blade (not in the database)",
+     "to": "Thorium Poleaxe"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 09e739807",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:22340",
+     "item:228190",
+     "item:234020",
+     "item:13965",
+     "item:18473",
+     "item:18520"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [],
+    "minutes": 3.5
+   }
   },
   "prebis-raid": {
    "entry": "mm-lonewolf-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-prebis-raid.gear.json",
-   "date": "2026-10-14",
+   "date": "2026-10-22",
    "chosen": "keep-sets-and-effects",
-   "ilvl": 62.9,
+   "ilvl": 62.8,
    "trinkets": [
-    "Blackhand's Breadth",
-    "Royal Seal of Eldre'Thalas"
+    "Rune of the Guard Captain",
+    "Everlook Delivery Bot"
    ],
+   "trinket_screen": {
+    "Rune of the Guard Captain (19120)": 1.0065,
+    "Cleansed Vilebranch Medallion (270275)": 1.0065,
+    "Everlook Delivery Bot (274760)": 1.0031,
+    "Shard of the Splithooves (10659)": 1.0029,
+    "Frozen Heart of the Mountain (249469)": 1.0028,
+    "Enriched Seal (271903)": 1.0013,
+    "Darkspear Voodoo Seal (272061)": 1.0013,
+    "Molten Heart of the Mountain (249470)": 1.001,
+    "Jewel of the Guard Captain (270225)": 1.0003,
+    "Ankh of Life (1713)": 1.0,
+    "Enriched Seal (271905)": 0.9989,
+    "Darkspear Voodoo Seal (272059)": 0.9989,
+    "Serenity Field (272439)": 0.9986,
+    "Weakness Analyzer (272438)": 0.998,
+    "Alchemist's Stone (13503)": 0.9967,
+    "Dog Whistle (3456)": 0.9948,
+    "Minor Recombobulator (4381)": 0.9948,
+    "Gnomish Universal Remote (7506)": 0.9948,
+    "Demon's Blood (10779)": 0.9948,
+    "Smoking Heart of the Mountain (11811)": 0.9948,
+    "Heart of the Scale (13164)": 0.9948,
+    "Arcanite Dragonling (16022)": 0.9948,
+    "Stormpike Insignia Rank 6 (17904)": 0.9948,
+    "Gyrofreeze Ice Reflector (18634)": 0.9948,
+    "Major Recombobulator (18637)": 0.9948,
+    "Hyper-Radiant Flame Reflector (18638)": 0.9948,
+    "Ultra-Flash Shadow Reflector (18639)": 0.9948,
+    "Talisman of Arathor (20071)": 0.9948,
+    "Defiler's Talisman (20072)": 0.9948,
+    "Defiler's Talisman (21115)": 0.9948,
+    "Defiler's Talisman (21116)": 0.9948,
+    "Talisman of Arathor (21117)": 0.9948,
+    "Talisman of Arathor (21118)": 0.9948,
+    "Talisman of Arathor (21119)": 0.9948,
+    "Defiler's Talisman (21120)": 0.9948,
+    "Defender of the Timbermaw (21326)": 0.9948,
+    "Dormant Heart of the Mountain (249473)": 0.9948,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.9948,
+    "SAF-T Emergency Ripper: Everlook (260820)": 0.9948,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.9948,
+    "Gnomish Poultryizer (260824)": 0.9948,
+    "Volunteer's Lucky Seal (271904)": 0.9948,
+    "Volunteer's Lucky Seal (271906)": 0.9948,
+    "Relentless Raider's Seal (272060)": 0.9948,
+    "Relentless Raider's Seal (272062)": 0.9948,
+    "Adaptive Combat Assistant (272437)": 0.9948,
+    "Defender's Grip Stabilizer (272440)": 0.9948,
+    "Everlook Pathcarver (274759)": 0.9948,
+    "Parachute-Priest Pager (274761)": 0.9948
+   },
    "names": [
     "Black Dragonscale Helm",
-    "Pendant of Celerity",
-    "Theramore Pauldrons",
-    "Earthweave Cloak",
+    "Amulet of the Darkmoon",
+    "Highlander's Chain Pauldrons",
+    "Expeditionary's Cape",
     "Dawn Armor",
-    "Rockfury Bracers",
-    "Gauntlets of Elements",
-    "Knowledge of the Timbermaw",
+    "Forest Stalker's Bracers",
+    "Theramore Handwraps",
+    "Highlander's Mail Girdle",
     "Outrider's Chain Leggings",
-    "Sorcerer's Boots",
+    "Beaststalker's Boots",
     "Signet Ring of the Bronze Dragonflight",
-    "Signet Ring of the Bronze Dragonflight",
-    "Blackhand's Breadth",
-    "Royal Seal of Eldre'Thalas",
-    "Barbarous Blade",
+    "Channeler's Ring",
+    "Rune of the Guard Captain",
+    "Everlook Delivery Bot",
+    "Thorium Poleaxe",
     null,
     "Premier High Warlord's Recurve"
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 1.0091317320528688
+    "keep-sets-and-effects": 1.0
    },
    "confirm_seed2": {
-    "all-slots": 1.0,
-    "keep-sets-and-effects": 1.0091620660132647
+    "keep-sets-and-effects": 1.0,
+    "all-slots": 1.0
    },
    "weights": {
-    "PseudoStatRangedDps": 1.3901,
-    "StatAgility": 0.3591,
-    "StatArcaneDamage": 0.0991,
-    "StatArmorPenetration": 0.0247,
-    "StatIntellect": 0.3131,
-    "StatMeleeCritRating": 0.3051,
-    "StatMeleeHasteRating": 0.2248,
-    "StatMeleeHitRating": 0.3751,
-    "StatNatureDamage": 0.0597,
-    "StatRangedAttackPower": 0.1388,
-    "StatSpellDamage": 0.1588,
-    "StatSpirit": 0.2109
+    "PseudoStatRangedDps": 1.217,
+    "StatAgility": 0.3233,
+    "StatArmorPenetration": 0.0216,
+    "StatCritRating": 0.2722,
+    "StatHasteRating": 0.1814,
+    "StatHitRating": 0.0914,
+    "StatIntellect": 0.3609,
+    "StatRangedAttackPower": 0.125,
+    "StatSpellPiercing": 0.1834,
+    "StatSpirit": 0.1477
    },
    "evaluated_on": [
     "mm-lonewolf-raid: ml winner (full raid)"
-   ]
+   ],
+   "replaced": [
+    {
+     "slot": 1,
+     "from": "Pendant of Celerity (not in the database)",
+     "to": "Amulet of the Darkmoon"
+    },
+    {
+     "slot": 2,
+     "from": "Theramore Pauldrons",
+     "to": "Highlander's Chain Pauldrons"
+    },
+    {
+     "slot": 3,
+     "from": "Earthweave Cloak",
+     "to": "Expeditionary's Cape"
+    },
+    {
+     "slot": 5,
+     "from": "Rockfury Bracers",
+     "to": "Forest Stalker's Bracers"
+    },
+    {
+     "slot": 6,
+     "from": "Gauntlets of Elements",
+     "to": "Theramore Handwraps"
+    },
+    {
+     "slot": 7,
+     "from": "Knowledge of the Timbermaw (not in the database)",
+     "to": "Highlander's Mail Girdle"
+    },
+    {
+     "slot": 9,
+     "from": "Sorcerer's Boots",
+     "to": "Beaststalker's Boots"
+    },
+    {
+     "slot": 10,
+     "from": "Signet Ring of the Bronze Dragonflight",
+     "to": "Signet Ring of the Bronze Dragonflight"
+    },
+    {
+     "slot": 11,
+     "from": "Signet Ring of the Bronze Dragonflight (not in the database)",
+     "to": "Channeler's Ring"
+    },
+    {
+     "slot": 12,
+     "from": "Blackhand's Breadth (not in the database)",
+     "to": "Rune of the Guard Captain"
+    },
+    {
+     "slot": 13,
+     "from": "Royal Seal of Eldre'Thalas (not in the database)",
+     "to": "Everlook Delivery Bot"
+    },
+    {
+     "slot": 14,
+     "from": "Barbarous Blade (not in the database)",
+     "to": "Thorium Poleaxe"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 09e739807",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:22340",
+     "item:228190",
+     "item:234020",
+     "item:13965",
+     "item:18473",
+     "item:18520"
+    ],
+    "winner_of": "bis-raid",
+    "talents_left_out": [],
+    "minutes": 2.3
+   }
   }
  },
  "search": {
@@ -741,12 +1245,12 @@
    "spec": "Marksmanship",
    "setting": "dummy",
    "entry": "mm-raid",
-   "date": "2026-10-14",
+   "date": "2026-10-16",
    "constraint": "Marksmanship 30+",
    "protected": [],
    "entries_screened": {
-    "mm-raid": 473.0,
-    "mm-lonewolf-raid": 462.18
+    "mm-raid": 479.66,
+    "mm-lonewolf-raid": 464.51
    },
    "entries_searched": [
     "mm-raid"
@@ -820,34 +1324,26 @@
      "Survival": []
     },
     "split": "21/30/0",
-    "dps": 472.83,
-    "se": 0.0476,
+    "dps": 480.3,
+    "se": 0.0474,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "16/30/5",
-    "dps": 472.02,
-    "se": 0.049,
+    "split": "21/30/0",
+    "dps": 480.3,
+    "se": 0.0474,
     "differs": [
      [
-      "Bestial Discipline",
-      1
+      "Endurance Training",
+      2
      ],
      [
-      "Ferocity",
-      1
-     ],
-     [
-      "Ferocity",
-      5
-     ],
-     [
-      "Improved Tracking",
-      5
+      "Pathfinding",
+      2
      ]
     ]
    },
-   "gap_to_runner_up": 0.0017,
+   "gap_to_runner_up": 0.0,
    "finalists": [
     {
      "allocation": {
@@ -918,8 +1414,8 @@
       "Survival": []
      },
      "split": "21/30/0",
-     "dps": 472.83,
-     "se": 0.0476
+     "dps": 480.3,
+     "se": 0.0474
     },
     {
      "allocation": {
@@ -927,6 +1423,10 @@
        [
         "Deadly Aspects",
         5
+       ],
+       [
+        "Endurance Training",
+        2
        ],
        [
         "Focused Fire",
@@ -937,15 +1437,15 @@
         1
        ],
        [
-        "Pathfinding",
-        2
-       ],
-       [
         "Unleashed Fury",
         5
        ],
        [
         "Ferocity",
+        5
+       ],
+       [
+        "Bestial Discipline",
         1
        ]
       ],
@@ -983,54 +1483,55 @@
         5
        ]
       ],
-      "Survival": [
-       [
-        "Improved Tracking",
-        5
-       ]
-      ]
+      "Survival": []
      },
-     "split": "16/30/5",
-     "dps": 472.02,
-     "se": 0.049
+     "split": "21/30/0",
+     "dps": 480.3,
+     "se": 0.0474
     }
    ],
    "runs": [
     {
      "entry": "mm-raid",
      "run": 1,
-     "simulated": 1213,
-     "best_screen": 472.3,
-     "best_split": "16/30/5",
+     "simulated": 1413,
+     "best_screen": 479.66,
+     "best_split": "21/30/0",
      "trace": [
       {
        "round": 0,
        "simulated": 413,
-       "best": 472.3
+       "best": 477.36
       },
       {
        "round": 1,
        "simulated": 613,
-       "best": 472.3,
-       "predicted_top": 467.69
+       "best": 479.66,
+       "predicted_top": 471.79
       },
       {
        "round": 2,
        "simulated": 813,
-       "best": 472.3,
-       "predicted_top": 470.76
+       "best": 479.66,
+       "predicted_top": 476.16
       },
       {
        "round": 3,
        "simulated": 1013,
-       "best": 472.3,
-       "predicted_top": 471.28
+       "best": 479.66,
+       "predicted_top": 477.79
       },
       {
        "round": 4,
        "simulated": 1213,
-       "best": 472.3,
-       "predicted_top": 471.23
+       "best": 479.66,
+       "predicted_top": 478.6
+      },
+      {
+       "round": 5,
+       "simulated": 1413,
+       "best": 479.66,
+       "predicted_top": 479.12
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1043,52 +1544,35 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      472.03,
-      472.03,
-      472.03,
-      472.03,
-      472.03,
-      472.03
+      480.23,
+      480.23,
+      480.23,
+      480.23,
+      480.23,
+      480.23
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      472.15,
-      472.15,
-      472.15,
-      472.15,
-      472.15
+      480.32,
+      480.32,
+      480.32,
+      480.32,
+      480.32
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      472.02,
-      472.02
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      472.83,
-      472.02
+      480.3,
+      480.3
      ]
     }
    ],
    "certificate": [
-    {
-     "neighbours": 234,
-     "best_gap": 0.0013,
-     "best_move": "5 Improved Tracking -> 4 Ferocity + 1 Bestial Discipline (tier chain)",
-     "raced": [
-      "5 Improved Tracking -> 4 Ferocity + 1 Bestial Discipline (tier chain)"
-     ],
-     "confirmed_gap": 0.0016
-    },
     {
      "neighbours": 189,
      "best_gap": 0.0,
@@ -1099,56 +1583,56 @@
    "important_features": [
     {
      "feature": "Unleashed Fury",
-     "importance": 0.2929
+     "importance": 0.2412
+    },
+    {
+     "feature": "Ferocity",
+     "importance": 0.1478
     },
     {
      "feature": "Improved Concussive Shot",
-     "importance": 0.174
-    },
-    {
-     "feature": "Mortal Shots",
-     "importance": 0.0877
-    },
-    {
-     "feature": "Hawk Eye",
-     "importance": 0.0871
+     "importance": 0.1469
     },
     {
      "feature": "Beast Mastery points",
-     "importance": 0.0658
+     "importance": 0.0797
     },
     {
-     "feature": "Focused Fire",
-     "importance": 0.0374
-    },
-    {
-     "feature": "Improved Arcane Shot",
-     "importance": 0.0331
+     "feature": "Hawk Eye",
+     "importance": 0.0677
     },
     {
      "feature": "Marksmanship points",
+     "importance": 0.0539
+    },
+    {
+     "feature": "Mortal Shots",
+     "importance": 0.0473
+    },
+    {
+     "feature": "Focused Fire",
      "importance": 0.0326
     },
     {
      "feature": "Ranged Weapon Specialization",
-     "importance": 0.0298
+     "importance": 0.0241
     },
     {
-     "feature": "Deflection",
-     "importance": 0.0247
+     "feature": "Improved Arcane Shot",
+     "importance": 0.0239
     },
     {
      "feature": "Deadly Aspects",
-     "importance": 0.0207
+     "importance": 0.0157
     },
     {
-     "feature": "Improved Tracking",
-     "importance": 0.0157
+     "feature": "Summon Hawk",
+     "importance": 0.0149
     }
    ],
-   "simulated_builds": 2855,
-   "simulated_fights": 4259000,
-   "minutes": 3.4,
+   "simulated_builds": 2816,
+   "simulated_fights": 3593000,
+   "minutes": 3.0,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-bis.gear.json"
   },
   "bis-raid": {
@@ -1156,7 +1640,7 @@
    "spec": "Marksmanship",
    "setting": "raid",
    "entry": "mm-lonewolf-raid",
-   "date": "2026-10-14",
+   "date": "2026-10-16",
    "constraint": "Marksmanship 30+",
    "protected": [],
    "entries_screened": {},
@@ -1413,38 +1897,44 @@
     {
      "entry": "mm-lonewolf-raid",
      "run": 1,
-     "simulated": 1203,
+     "simulated": 1411,
      "best_screen": 886.85,
      "best_split": "5/41/5",
      "trace": [
       {
        "round": 0,
-       "simulated": 403,
-       "best": 886.85
+       "simulated": 411,
+       "best": 883.08
       },
       {
        "round": 1,
-       "simulated": 603,
+       "simulated": 611,
        "best": 886.85,
-       "predicted_top": 873.78
+       "predicted_top": 875.98
       },
       {
        "round": 2,
-       "simulated": 803,
+       "simulated": 811,
        "best": 886.85,
-       "predicted_top": 880.77
+       "predicted_top": 880.46
       },
       {
        "round": 3,
-       "simulated": 1003,
+       "simulated": 1011,
        "best": 886.85,
-       "predicted_top": 879.77
+       "predicted_top": 882.24
       },
       {
        "round": 4,
-       "simulated": 1203,
+       "simulated": 1211,
        "best": 886.85,
-       "predicted_top": 878.37
+       "predicted_top": 878.38
+      },
+      {
+       "round": 5,
+       "simulated": 1411,
+       "best": 886.85,
+       "predicted_top": 878.78
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1460,7 +1950,7 @@
       886.67,
       884.04,
       883.75,
-      882.69,
+      882.98,
       882.69,
       882.69
      ]
@@ -1472,7 +1962,7 @@
       886.44,
       883.69,
       883.57,
-      882.48,
+      882.86,
       882.48
      ]
     },
@@ -1495,57 +1985,57 @@
    "other_entries": [],
    "important_features": [
     {
-     "feature": "Lone Wolf",
-     "importance": 0.3161
-    },
-    {
      "feature": "Marksmanship points",
-     "importance": 0.1927
+     "importance": 0.268
     },
     {
-     "feature": "Hawk Eye",
-     "importance": 0.1404
+     "feature": "Lone Wolf",
+     "importance": 0.2465
     },
     {
      "feature": "Sniper Shot",
-     "importance": 0.0919
+     "importance": 0.1055
+    },
+    {
+     "feature": "Hawk Eye",
+     "importance": 0.091
     },
     {
      "feature": "Improved Concussive Shot",
-     "importance": 0.0646
+     "importance": 0.0849
     },
     {
      "feature": "Mortal Shots",
-     "importance": 0.0536
-    },
-    {
-     "feature": "Beast Mastery points",
-     "importance": 0.0285
-    },
-    {
-     "feature": "Improved Tracking",
-     "importance": 0.0216
+     "importance": 0.0551
     },
     {
      "feature": "Deadly Aspects",
-     "importance": 0.0162
+     "importance": 0.0263
+    },
+    {
+     "feature": "Improved Tracking",
+     "importance": 0.0246
+    },
+    {
+     "feature": "Beast Mastery points",
+     "importance": 0.0188
     },
     {
      "feature": "Survival points",
-     "importance": 0.0141
+     "importance": 0.0129
     },
     {
-     "feature": "Deflection",
-     "importance": 0.0084
+     "feature": "Endurance Training",
+     "importance": 0.0094
     },
     {
-     "feature": "Efficiency",
-     "importance": 0.0067
+     "feature": "Rapid Recuperation",
+     "importance": 0.0082
     }
    ],
-   "simulated_builds": 1560,
-   "simulated_fights": 2645000,
-   "minutes": 1.9,
+   "simulated_builds": 1768,
+   "simulated_fights": 2853000,
+   "minutes": 2.1,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-bis-raid.gear.json"
   },
   "prebis-dummy": {
@@ -1553,11 +2043,11 @@
    "spec": "Marksmanship",
    "setting": "dummy",
    "entry": "mm-raid",
-   "date": "2026-10-14",
+   "date": "2026-10-16",
    "constraint": "Marksmanship 30+",
    "protected": [],
    "entries_screened": {
-    "mm-raid": 442.5,
+    "mm-raid": 446.05,
     "mm-lonewolf-raid": 428.24
    },
    "entries_searched": [
@@ -1632,14 +2122,14 @@
      "Survival": []
     },
     "split": "21/30/0",
-    "dps": 442.4,
-    "se": 0.0418,
+    "dps": 445.66,
+    "se": 0.0413,
     "iterations": 100000
    },
    "runner_up": {
     "split": "21/30/0",
-    "dps": 442.4,
-    "se": 0.0418,
+    "dps": 445.66,
+    "se": 0.0413,
     "differs": [
      [
       "Endurance Training",
@@ -1726,8 +2216,8 @@
       "Survival": []
      },
      "split": "21/30/0",
-     "dps": 442.4,
-     "se": 0.0418
+     "dps": 445.66,
+     "se": 0.0413
     },
     {
      "allocation": {
@@ -1802,8 +2292,8 @@
       "Survival": []
      },
      "split": "21/30/0",
-     "dps": 442.4,
-     "se": 0.0418
+     "dps": 445.66,
+     "se": 0.0413
     }
    ],
    "runs": [
@@ -1811,37 +2301,37 @@
      "entry": "mm-raid",
      "run": 1,
      "simulated": 1213,
-     "best_screen": 442.5,
+     "best_screen": 446.05,
      "best_split": "21/30/0",
      "trace": [
       {
        "round": 0,
        "simulated": 413,
-       "best": 442.5
+       "best": 446.05
       },
       {
        "round": 1,
        "simulated": 613,
-       "best": 442.5,
-       "predicted_top": 437.33
+       "best": 446.05,
+       "predicted_top": 440.67
       },
       {
        "round": 2,
        "simulated": 813,
-       "best": 442.5,
-       "predicted_top": 440.16
+       "best": 446.05,
+       "predicted_top": 444.06
       },
       {
        "round": 3,
        "simulated": 1013,
-       "best": 442.5,
-       "predicted_top": 441.38
+       "best": 446.05,
+       "predicted_top": 445.4
       },
       {
        "round": 4,
        "simulated": 1213,
-       "best": 442.5,
-       "predicted_top": 441.67
+       "best": 446.05,
+       "predicted_top": 445.04
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1854,31 +2344,31 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      442.51,
-      442.51,
-      442.51,
-      442.51,
-      442.51,
-      442.51
+      445.72,
+      445.72,
+      445.72,
+      445.72,
+      445.72,
+      445.72
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      442.56,
-      442.56,
-      442.56,
-      442.56,
-      442.56
+      445.73,
+      445.73,
+      445.73,
+      445.73,
+      445.73
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      442.4,
-      442.4
+      445.66,
+      445.66
      ]
     }
    ],
@@ -1893,55 +2383,55 @@
    "important_features": [
     {
      "feature": "Beast Mastery points",
-     "importance": 0.2788
+     "importance": 0.2568
     },
     {
      "feature": "Ferocity",
-     "importance": 0.1914
+     "importance": 0.2087
     },
     {
      "feature": "Improved Concussive Shot",
-     "importance": 0.0859
-    },
-    {
-     "feature": "Bestial Discipline",
-     "importance": 0.073
-    },
-    {
-     "feature": "Survival points",
-     "importance": 0.0657
-    },
-    {
-     "feature": "Hawk Eye",
-     "importance": 0.0569
-    },
-    {
-     "feature": "Deadly Aspects",
-     "importance": 0.0417
+     "importance": 0.1035
     },
     {
      "feature": "Unleashed Fury",
-     "importance": 0.038
+     "importance": 0.0825
+    },
+    {
+     "feature": "Hawk Eye",
+     "importance": 0.0721
+    },
+    {
+     "feature": "Deadly Aspects",
+     "importance": 0.0401
+    },
+    {
+     "feature": "Bestial Discipline",
+     "importance": 0.0347
+    },
+    {
+     "feature": "Survival points",
+     "importance": 0.0322
     },
     {
      "feature": "Summon Hawk",
-     "importance": 0.0272
+     "importance": 0.0254
     },
     {
      "feature": "Marksmanship points",
-     "importance": 0.0185
+     "importance": 0.016
     },
     {
      "feature": "Mortal Shots",
-     "importance": 0.0157
+     "importance": 0.0153
     },
     {
-     "feature": "Deflection",
+     "feature": "Ranged Weapon Specialization",
      "importance": 0.0152
     }
    ],
-   "simulated_builds": 2609,
-   "simulated_fights": 3386000,
+   "simulated_builds": 2620,
+   "simulated_fights": 3397000,
    "minutes": 3.0,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-prebis.gear.json"
   },
@@ -1950,7 +2440,7 @@
    "spec": "Marksmanship",
    "setting": "raid",
    "entry": "mm-lonewolf-raid",
-   "date": "2026-10-14",
+   "date": "2026-10-16",
    "constraint": "Marksmanship 30+",
    "protected": [],
    "entries_screened": {},
@@ -2357,338 +2847,21 @@
   "dps": {
    "winner": {
     "entry": "mm-raid",
-    "dps": 472.92,
+    "dps": 480.17,
     "se": 0.047
    },
    "bm-mm-full-buffs-raid": {
     "entry": "mm-raid",
-    "dps": 468.35,
+    "dps": 475.38,
     "se": 0.047
    },
    "mm-lone-wolf-raid": {
     "entry": "mm-lonewolf-raid",
-    "dps": 451.08,
+    "dps": 454.46,
     "se": 0.057
    }
   },
   "best_hand": "bm-mm-full-buffs-raid",
-  "gain_vs_hand": 0.0098
- },
- "compare_raid": {
-  "setting": "raid",
-  "dps": {
-   "winner": {
-    "entry": "mm-lonewolf-raid",
-    "dps": 886.66,
-    "se": 0.103
-   },
-   "mm-lone-wolf-raid": {
-    "entry": "mm-lonewolf-raid",
-    "dps": 883.88,
-    "se": 0.102
-   },
-   "bm-mm-full-buffs-raid": {
-    "entry": "mm-raid",
-    "dps": 792.41,
-    "se": 0.078
-   },
-   "marksmanship-with-a-pet-open-raid": {
-    "entry": "mm-raid",
-    "dps": 870.69,
-    "se": 0.088
-   },
-   "opt-mm-lonewolf-raid-raid-dps": {
-    "entry": "mm-lonewolf-raid",
-    "dps": 848.97,
-    "se": 0.095
-   }
-  },
-  "best_hand": "mm-lone-wolf-raid",
-  "gain_vs_hand": 0.0031
- },
- "builds": {
-  "written": [],
-  "superseded": [],
-  "date": "2026-10-16",
-  "setting": "raid",
-  "why": "confirms mm-lone-wolf-raid (+0.31% in a full raid)"
- },
- "tidied": {
-  "bis-dummy": {
-   "allocation": {
-    "Beast Mastery": [
-     [
-      "Deadly Aspects",
-      5
-     ],
-     [
-      "Focused Fire",
-      2
-     ],
-     [
-      "Improved Aspect of the Monkey",
-      1
-     ],
-     [
-      "Unleashed Fury",
-      5
-     ],
-     [
-      "Ferocity",
-      5
-     ],
-     [
-      "Bestial Discipline",
-      1
-     ],
-     [
-      "Endurance Training",
-      2
-     ]
-    ],
-    "Marksmanship": [
-     [
-      "Lethal Attacks",
-      5
-     ],
-     [
-      "Improved Stings",
-      3
-     ],
-     [
-      "Efficiency",
-      5
-     ],
-     [
-      "Careful Aim",
-      5
-     ],
-     [
-      "Trueshot Aura",
-      1
-     ],
-     [
-      "Mortal Shots",
-      5
-     ],
-     [
-      "Barrage",
-      1
-     ],
-     [
-      "Ranged Weapon Specialization",
-      5
-     ]
-    ],
-    "Survival": []
-   },
-   "split": "21/30/0",
-   "moves": [
-    {
-     "round": 1,
-     "kind": "utility",
-     "from": "Pathfinding",
-     "to": "Endurance Training",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "survival"
-    },
-    {
-     "round": 2,
-     "kind": "utility",
-     "from": "Pathfinding",
-     "to": "Endurance Training",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "survival"
-    }
-   ],
-   "abilities_never_cast": [
-    "Trueshot Aura"
-   ],
-   "final_seed3": 0.0
-  },
-  "bis-raid": null,
-  "prebis-dummy": {
-   "allocation": {
-    "Beast Mastery": [
-     [
-      "Deadly Aspects",
-      5
-     ],
-     [
-      "Focused Fire",
-      2
-     ],
-     [
-      "Improved Aspect of the Monkey",
-      1
-     ],
-     [
-      "Unleashed Fury",
-      5
-     ],
-     [
-      "Ferocity",
-      5
-     ],
-     [
-      "Bestial Discipline",
-      1
-     ],
-     [
-      "Endurance Training",
-      2
-     ]
-    ],
-    "Marksmanship": [
-     [
-      "Lethal Attacks",
-      5
-     ],
-     [
-      "Improved Stings",
-      3
-     ],
-     [
-      "Efficiency",
-      5
-     ],
-     [
-      "Careful Aim",
-      5
-     ],
-     [
-      "Trueshot Aura",
-      1
-     ],
-     [
-      "Mortal Shots",
-      5
-     ],
-     [
-      "Barrage",
-      1
-     ],
-     [
-      "Ranged Weapon Specialization",
-      5
-     ]
-    ],
-    "Survival": []
-   },
-   "split": "21/30/0",
-   "moves": [
-    {
-     "round": 1,
-     "kind": "utility",
-     "from": "Pathfinding",
-     "to": "Endurance Training",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "survival"
-    },
-    {
-     "round": 2,
-     "kind": "utility",
-     "from": "Pathfinding",
-     "to": "Endurance Training",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "survival"
-    }
-   ],
-   "abilities_never_cast": [
-    "Trueshot Aura"
-   ],
-   "final_seed3": 0.0
-  },
-  "prebis-raid": {
-   "allocation": {
-    "Beast Mastery": [
-     [
-      "Deadly Aspects",
-      5
-     ]
-    ],
-    "Marksmanship": [
-     [
-      "Lethal Attacks",
-      5
-     ],
-     [
-      "Improved Stings",
-      3
-     ],
-     [
-      "Efficiency",
-      3
-     ],
-     [
-      "Careful Aim",
-      5
-     ],
-     [
-      "Rapid Killing",
-      2
-     ],
-     [
-      "Improved Arcane Shot",
-      5
-     ],
-     [
-      "Lone Wolf",
-      1
-     ],
-     [
-      "Trueshot Aura",
-      1
-     ],
-     [
-      "Mortal Shots",
-      5
-     ],
-     [
-      "Rapid Recuperation",
-      2
-     ],
-     [
-      "Barrage",
-      3
-     ],
-     [
-      "Ranged Weapon Specialization",
-      5
-     ],
-     [
-      "Sniper Shot",
-      1
-     ]
-    ],
-    "Survival": [
-     [
-      "Improved Tracking",
-      5
-     ]
-    ]
-   },
-   "split": "5/41/5",
-   "moves": [
-    {
-     "round": 1,
-     "kind": "gain",
-     "from": "Scatter Shot",
-     "to": "Efficiency",
-     "seed1": 0.0027608253128388327,
-     "seed2": 0.0027096901983940658,
-     "utility": "mana"
-    }
-   ],
-   "abilities_never_cast": [
-    "Scatter Shot",
-    "Trueshot Aura"
-   ],
-   "final_seed3": 0.0024670427400543815
-  }
+  "gain_vs_hand": 0.0101
  }
 }
