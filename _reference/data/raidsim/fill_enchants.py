@@ -19,11 +19,13 @@ unknown.
 """
 import argparse
 import json
+import os
 import pathlib
 
 HERE = pathlib.Path(__file__).resolve().parent
 SETS = HERE / "gear_sets" / "forever"
-DB = pathlib.Path.home() / ".wow-forever-tools" / "forever-repo" / "assets" / "database" / "db.json"
+# the simulator's item database: the official wowsims/forever clone since 2026-10-22 (run.py's default repository; WOW_FOREVER_SIM overrides)
+DB = pathlib.Path(os.environ.get("WOW_FOREVER_SIM", pathlib.Path.home() / ".wow-forever-tools" / "wowsims-forever")) / "assets" / "database" / "db.json"
 
 # slot index (the simulator's ItemSlot order) -> enchant effect id
 STR_MELEE = {0: 1506, 3: 849, 4: 1891, 5: 1885, 6: 927, 8: 1506, 9: 1887, 14: 1900, 15: 1900}
@@ -38,7 +40,8 @@ HEALER_CANDIDATES = {0: [1509, 1510, 2544], 4: [1891, 1893], 5: [1883, 1884, 256
 HEALER_FILES = ("priest-holy-", "priest-discipline-", "paladin-holy-", "druid-restoration-", "shaman-restoration-")
 # Tanks (2026-10-15, raidsim/tank_gear.py): the Classic phase-1 tank enchants (Dire Maul's +8 Stamina / +8 Agility arcanums, Cloak +70 armor /
 # +3 Agility, Greater Stats, bracer +9 Stamina, gloves +7 Agility, boots +7 Stamina / +7 Agility, Crusader, shield +9 Stamina: effect 1886
-# is "Enchant Shield - Greater Stamina" in the fork's database). Slot 15 of a tank template is the shield's (filled only on a shield).
+# is "Enchant Shield - Greater Stamina" in the fork's database and "Enchant Bracer - Superior Stamina" in the official one: one effect id,
+# both enchants). Slot 15 of a tank template is the shield's (filled only on a shield).
 # `TANK_CANDIDATES` lists, per slot, what tank_gear.py chooses from by the tank's stat weights (the template's pick first: it wins ties);
 # weapons ("1h"/"2h") are raced in the simulator (Crusader, +9 weapon damage and +30 spell power carry no stats to weigh).
 TANK_PLATE = {0: 1507, 3: 1889, 4: 1891, 5: 1886, 6: 1887, 8: 1507, 9: 929, 14: 1900, 15: 1886}

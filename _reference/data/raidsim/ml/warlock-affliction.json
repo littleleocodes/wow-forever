@@ -14,84 +14,273 @@
   "bis": {
    "entry": "affliction-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-affliction-bis.gear.json",
-   "date": "2026-10-14",
-   "chosen": "all-slots",
-   "ilvl": 65.4,
+   "date": "2026-10-22",
+   "chosen": "current",
+   "ilvl": 63.9,
    "trinkets": [
-    "Briarwood Reed",
-    "Eye of the Beast"
+    "Talisman of Ephemeral Power",
+    "Weakness Analyzer"
    ],
+   "trinket_screen": {
+    "Talisman of Ephemeral Power (18820)": 1.0239,
+    "Weakness Analyzer (272438)": 1.0238,
+    "Serenity Field (272439)": 1.0109,
+    "Jewel of the Guard Captain (270225)": 1.0094,
+    "Frozen Heart of the Mountain (249469)": 1.0073,
+    "Rune of the Guard Captain (19120)": 1.0032,
+    "Cleansed Vilebranch Medallion (270275)": 1.0032,
+    "Everlook Delivery Bot (274760)": 1.0019,
+    "Enriched Seal (271903)": 1.0005,
+    "Darkspear Voodoo Seal (272061)": 1.0005,
+    "Shard of the Splithooves (10659)": 1.0004,
+    "Ankh of Life (1713)": 1.0,
+    "Enriched Seal (271905)": 0.9974,
+    "Darkspear Voodoo Seal (272059)": 0.9974,
+    "Alchemist's Stone (13503)": 0.9972,
+    "Dog Whistle (3456)": 0.997,
+    "Minor Recombobulator (4381)": 0.997,
+    "Gnomish Universal Remote (7506)": 0.997,
+    "Demon's Blood (10779)": 0.997,
+    "Smoking Heart of the Mountain (11811)": 0.997,
+    "Heart of the Scale (13164)": 0.997,
+    "Arcanite Dragonling (16022)": 0.997,
+    "Stormpike Insignia Rank 6 (17904)": 0.997,
+    "Gyrofreeze Ice Reflector (18634)": 0.997,
+    "Major Recombobulator (18637)": 0.997,
+    "Hyper-Radiant Flame Reflector (18638)": 0.997,
+    "Ultra-Flash Shadow Reflector (18639)": 0.997,
+    "Essence of the Pure Flame (18815)": 0.997,
+    "Arena Grand Master (19024)": 0.997,
+    "Talisman of Arathor (20071)": 0.997,
+    "Defiler's Talisman (20072)": 0.997,
+    "Defiler's Talisman (21115)": 0.997,
+    "Defiler's Talisman (21116)": 0.997,
+    "Talisman of Arathor (21117)": 0.997,
+    "Talisman of Arathor (21118)": 0.997,
+    "Talisman of Arathor (21119)": 0.997,
+    "Defiler's Talisman (21120)": 0.997,
+    "Defender of the Timbermaw (21326)": 0.997,
+    "Molten Heart of the Mountain (249470)": 0.997,
+    "Dormant Heart of the Mountain (249473)": 0.997,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.997,
+    "SAF-T Emergency Ripper: Everlook (260820)": 0.997,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.997,
+    "Gnomish Poultryizer (260824)": 0.997,
+    "Volunteer's Lucky Seal (271904)": 0.997,
+    "Volunteer's Lucky Seal (271906)": 0.997,
+    "Relentless Raider's Seal (272060)": 0.997,
+    "Relentless Raider's Seal (272062)": 0.997,
+    "Adaptive Combat Assistant (272437)": 0.997,
+    "Defender's Grip Stabilizer (272440)": 0.997,
+    "Everlook Pathcarver (274759)": 0.997,
+    "Parachute-Priest Pager (274761)": 0.997
+   },
    "names": [
-    "Spellweaver's Turban",
+    "Felcloth Hood",
     "Choker of the Fire Lord",
-    "Rugged Mantle of the Timbermaw",
-    "Crystalline Threaded Cape",
-    "Robe of Volatile Power",
+    "Mantle of the Timbermaw",
+    "Arcanoweave Cloak",
+    "Robe of the Void",
     "Rockfury Bracers",
-    "Felcloth Gloves",
-    "Mana Igniting Cord",
-    "Nemesis Leggings",
+    "Gloves of Spell Mastery",
+    "Belt of the Archmage",
+    "Flarecore Leggings",
     "Sorcerer's Boots",
     "Ring of Spell Power",
     "Ring of Spell Power",
-    "Briarwood Reed",
-    "Eye of the Beast",
-    "Azuresong Mageblade",
-    "Scepter of Interminable Focus",
-    "Skul's Ghastly Touch"
+    "Talisman of Ephemeral Power",
+    "Weakness Analyzer",
+    "Sageblade",
+    "Therazane's Touch",
+    "Brilliant Wand"
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.0081527518658353,
-    "keep-sets-and-effects": 1.0064637332045179
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 1.0
    },
    "confirm_seed2": {
-    "current": 1.0,
-    "all-slots": 1.0068647229600347
+    "current": 1.0
    },
    "weights": {
-    "StatFireDamage": 0.0636,
-    "StatIntellect": 0.1859,
-    "StatShadowDamage": 0.5012,
-    "StatSpellCritRating": 0.5236,
-    "StatSpellDamage": 0.5648,
-    "StatSpellHasteRating": 0.4482,
-    "StatSpellHitRating": 0.6068,
-    "StatSpirit": 0.1197
+    "StatCritRating": 0.5563,
+    "StatFireDamage": 0.0641,
+    "StatHasteRating": 0.5507,
+    "StatHitRating": 0.7356,
+    "StatIntellect": 0.2591,
+    "StatShadowDamage": 0.5317,
+    "StatSpellDamage": 0.5958,
+    "StatSpellPiercing": 0.7504,
+    "StatSpirit": 0.1801
    },
    "evaluated_on": [
     "affliction-raid: ml winner"
-   ]
+   ],
+   "replaced": [
+    {
+     "slot": 0,
+     "from": "Spellweaver's Turban (not in the database)",
+     "to": "Felcloth Hood"
+    },
+    {
+     "slot": 2,
+     "from": "Rugged Mantle of the Timbermaw (not in the database)",
+     "to": "Mantle of the Timbermaw"
+    },
+    {
+     "slot": 3,
+     "from": "Crystalline Threaded Cape (not in the database)",
+     "to": "Arcanoweave Cloak"
+    },
+    {
+     "slot": 4,
+     "from": "Robe of Volatile Power (not in the database)",
+     "to": "Robe of the Void"
+    },
+    {
+     "slot": 6,
+     "from": "Felcloth Gloves",
+     "to": "Gloves of Spell Mastery"
+    },
+    {
+     "slot": 7,
+     "from": "Mana Igniting Cord (not in the database)",
+     "to": "Belt of the Archmage"
+    },
+    {
+     "slot": 8,
+     "from": "Nemesis Leggings (not in the database)",
+     "to": "Flarecore Leggings"
+    },
+    {
+     "slot": 12,
+     "from": "Briarwood Reed (not in the database)",
+     "to": "Talisman of Ephemeral Power"
+    },
+    {
+     "slot": 13,
+     "from": "Eye of the Beast (not in the database)",
+     "to": "Weakness Analyzer"
+    },
+    {
+     "slot": 14,
+     "from": "Azuresong Mageblade (not in the database)",
+     "to": "Sageblade"
+    },
+    {
+     "slot": 15,
+     "from": "Scepter of Interminable Focus (not in the database)",
+     "to": "Therazane's Touch"
+    },
+    {
+     "slot": 16,
+     "from": "Skul's Ghastly Touch (not in the database)",
+     "to": "Brilliant Wand"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 09e739807",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:22267",
+     "item:227808",
+     "item:20697",
+     "item:19145",
+     "item:19136",
+     "item:16930",
+     "item:12930",
+     "item:13968",
+     "item:17103",
+     "item:22329",
+     "item:13396"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [
+     "Malediction"
+    ],
+    "minutes": 1.2
+   }
   },
   "bis2": true,
   "prebis": {
    "entry": "affliction-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-affliction-prebis.gear.json",
-   "date": "2026-10-14",
+   "date": "2026-10-22",
    "chosen": "keep-sets-and-effects",
-   "ilvl": 62.5,
+   "ilvl": 62.4,
    "trinkets": [
-    "Briarwood Reed",
-    "Eye of the Beast"
+    "Weakness Analyzer",
+    "Jewel of the Guard Captain"
    ],
+   "trinket_screen": {
+    "Weakness Analyzer (272438)": 1.0253,
+    "Serenity Field (272439)": 1.0135,
+    "Jewel of the Guard Captain (270225)": 1.0109,
+    "Frozen Heart of the Mountain (249469)": 1.0081,
+    "Rune of the Guard Captain (19120)": 1.0042,
+    "Cleansed Vilebranch Medallion (270275)": 1.0042,
+    "Everlook Delivery Bot (274760)": 1.0038,
+    "Shard of the Splithooves (10659)": 1.0003,
+    "Ankh of Life (1713)": 1.0,
+    "Alchemist's Stone (13503)": 0.9992,
+    "Enriched Seal (271903)": 0.999,
+    "Darkspear Voodoo Seal (272061)": 0.999,
+    "Enriched Seal (271905)": 0.9983,
+    "Darkspear Voodoo Seal (272059)": 0.9983,
+    "Dog Whistle (3456)": 0.998,
+    "Minor Recombobulator (4381)": 0.998,
+    "Gnomish Universal Remote (7506)": 0.998,
+    "Demon's Blood (10779)": 0.998,
+    "Smoking Heart of the Mountain (11811)": 0.998,
+    "Heart of the Scale (13164)": 0.998,
+    "Arcanite Dragonling (16022)": 0.998,
+    "Stormpike Insignia Rank 6 (17904)": 0.998,
+    "Gyrofreeze Ice Reflector (18634)": 0.998,
+    "Major Recombobulator (18637)": 0.998,
+    "Hyper-Radiant Flame Reflector (18638)": 0.998,
+    "Ultra-Flash Shadow Reflector (18639)": 0.998,
+    "Talisman of Arathor (20071)": 0.998,
+    "Defiler's Talisman (20072)": 0.998,
+    "Defiler's Talisman (21115)": 0.998,
+    "Defiler's Talisman (21116)": 0.998,
+    "Talisman of Arathor (21117)": 0.998,
+    "Talisman of Arathor (21118)": 0.998,
+    "Talisman of Arathor (21119)": 0.998,
+    "Defiler's Talisman (21120)": 0.998,
+    "Defender of the Timbermaw (21326)": 0.998,
+    "Molten Heart of the Mountain (249470)": 0.998,
+    "Dormant Heart of the Mountain (249473)": 0.998,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.998,
+    "SAF-T Emergency Ripper: Everlook (260820)": 0.998,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.998,
+    "Gnomish Poultryizer (260824)": 0.998,
+    "Volunteer's Lucky Seal (271904)": 0.998,
+    "Volunteer's Lucky Seal (271906)": 0.998,
+    "Relentless Raider's Seal (272060)": 0.998,
+    "Relentless Raider's Seal (272062)": 0.998,
+    "Adaptive Combat Assistant (272437)": 0.998,
+    "Defender's Grip Stabilizer (272440)": 0.998,
+    "Everlook Pathcarver (274759)": 0.998,
+    "Parachute-Priest Pager (274761)": 0.998
+   },
    "names": [
-    "Spellweaver's Turban",
+    "Felcloth Hood",
     "Orb of the Darkmoon",
-    "Rugged Mantle of the Timbermaw",
-    "Crystalline Threaded Cape",
+    "Mantle of the Timbermaw",
+    "Arcanoweave Cloak",
     "Robe of the Void",
     "Rockfury Bracers",
-    "Felcloth Gloves",
-    "Knowledge of the Timbermaw",
-    "Skyshroud Leggings",
+    "Gloves of Spell Mastery",
+    "Belt of the Archmage",
+    "Ghostweave Pants",
     "Sorcerer's Boots",
     "Signet Ring of the Bronze Dragonflight",
-    "Elemental Focus Band",
-    "Briarwood Reed",
-    "Eye of the Beast",
-    "Elemental Attuned Blade",
-    "Scepter of Interminable Focus",
-    "Skul's Ghastly Touch"
+    "Brilliant Watcher's Signet",
+    "Weakness Analyzer",
+    "Jewel of the Guard Captain",
+    "Sageblade",
+    "Therazane's Touch",
+    "Brilliant Wand"
    ],
    "race_seed1": {
     "all-slots": 1.0,
@@ -102,18 +291,108 @@
     "all-slots": 1.0
    },
    "weights": {
-    "StatFireDamage": 0.0615,
-    "StatIntellect": 0.1816,
-    "StatShadowDamage": 0.483,
-    "StatSpellCritRating": 0.5348,
-    "StatSpellDamage": 0.5444,
-    "StatSpellHasteRating": 0.3127,
-    "StatSpellHitRating": 0.5166,
-    "StatSpirit": 0.1147
+    "StatCritRating": 0.5563,
+    "StatFireDamage": 0.0645,
+    "StatHasteRating": 0.5118,
+    "StatHitRating": 0.7223,
+    "StatIntellect": 0.2846,
+    "StatShadowDamage": 0.5428,
+    "StatSpellDamage": 0.6073,
+    "StatSpellPiercing": 0.7266,
+    "StatSpirit": 0.1805
    },
    "evaluated_on": [
     "affliction-raid: ml winner (bis)"
-   ]
+   ],
+   "replaced": [
+    {
+     "slot": 0,
+     "from": "Spellweaver's Turban (not in the database)",
+     "to": "Felcloth Hood"
+    },
+    {
+     "slot": 2,
+     "from": "Rugged Mantle of the Timbermaw (not in the database)",
+     "to": "Mantle of the Timbermaw"
+    },
+    {
+     "slot": 3,
+     "from": "Crystalline Threaded Cape (not in the database)",
+     "to": "Arcanoweave Cloak"
+    },
+    {
+     "slot": 6,
+     "from": "Felcloth Gloves",
+     "to": "Gloves of Spell Mastery"
+    },
+    {
+     "slot": 7,
+     "from": "Knowledge of the Timbermaw (not in the database)",
+     "to": "Belt of the Archmage"
+    },
+    {
+     "slot": 8,
+     "from": "Skyshroud Leggings (not in the database)",
+     "to": "Ghostweave Pants"
+    },
+    {
+     "slot": 10,
+     "from": "Signet Ring of the Bronze Dragonflight (not in the database)",
+     "to": "Signet Ring of the Bronze Dragonflight"
+    },
+    {
+     "slot": 11,
+     "from": "Elemental Focus Band",
+     "to": "Brilliant Watcher's Signet"
+    },
+    {
+     "slot": 12,
+     "from": "Briarwood Reed (not in the database)",
+     "to": "Weakness Analyzer"
+    },
+    {
+     "slot": 13,
+     "from": "Eye of the Beast (not in the database)",
+     "to": "Jewel of the Guard Captain"
+    },
+    {
+     "slot": 14,
+     "from": "Elemental Attuned Blade (not in the database)",
+     "to": "Sageblade"
+    },
+    {
+     "slot": 15,
+     "from": "Scepter of Interminable Focus (not in the database)",
+     "to": "Therazane's Touch"
+    },
+    {
+     "slot": 16,
+     "from": "Skul's Ghastly Touch (not in the database)",
+     "to": "Brilliant Wand"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 09e739807",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:22267",
+     "item:227808",
+     "item:20697",
+     "item:228190",
+     "item:13170",
+     "item:234439",
+     "item:12930",
+     "item:13968",
+     "item:20698",
+     "item:22329",
+     "item:13396"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [
+     "Malediction"
+    ],
+    "minutes": 1.2
+   }
   }
  },
  "search": {

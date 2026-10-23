@@ -38,6 +38,7 @@ import json
 import math
 import os
 import pathlib
+import re
 import sys
 import time
 
@@ -56,8 +57,6 @@ TODAY = datetime.date.today().isoformat()
 LAB_KEYS = ("intellect", "spirit", "healing", "mp5", "crit_gear")
 DELTA = {"healing": 50.0, "intellect": 25.0, "spirit": 25.0, "mp5": 8.0, "crit_gear": 0.02}
 CRIT_RATING = 14.0   # rating per 1% crit at level 60 (simulator: SpellCritRatingPerCritPercent = PhysicalCritRatingPerCritPercent = 14)
-STAT_ID = {"intellect": 3, "spirit": 16, "healing": 4, "mp5": 34}   # proto Stat enum
-CRIT_IDS = (13, 21)   # SpellCritRating, MeleeCritRating: Forever pays gear crit to every kind of attack (sim/core/forever_rules.go)
 FULL = dict(weight_seeds=800, weight_steps=12, verify_seeds=1000, verify_steps=10, boot=400)
 SMOKE = dict(weight_seeds=24, weight_steps=8, verify_seeds=24, verify_steps=8, boot=50)
 WEIGHT_SEED0, VERIFY_SEED0 = 1_000_000, 2_000_000   # disjoint from deep_heal.py's seeds and the lab's standard 0..59
@@ -83,7 +82,25 @@ _DB = {}
 
 
 def repo():
-    return pathlib.Path(os.environ.get("WOW_FOREVER_SIM", pathlib.Path.home() / ".wow-forever-tools" / "forever-repo"))
+    """The simulator's clone: the official wowsims/forever since 2026-10-22 (the port, `_reference/sim-port.md`; the ElliotWood/Forever
+    fork's `forever-repo` before), as run.py's default; WOW_FOREVER_SIM overrides."""
+    return pathlib.Path(os.environ.get("WOW_FOREVER_SIM", pathlib.Path.home() / ".wow-forever-tools" / "wowsims-forever"))
+
+
+def _proto_stats():
+    """{name: index} of the simulator's Stat enum (proto/common.proto). The official enum (2026-10-22) has one StatCritRating (18) and one
+    StatHasteRating (19) for every kind of attack and renumbered Spirit (13) and MP5 (31); the fork's numbers (Spirit 16, MP5 34, spell and
+    melee crit 13 and 21) had been written in here."""
+    text = (repo() / "proto" / "common.proto").read_text(encoding="utf-8")
+    body = re.search(r"enum Stat \{(.*?)\n\}", text, re.S).group(1)
+    return {k: int(v) for k, v in re.findall(r"^\s*(Stat\w+)\s*=\s*(\d+);", body, re.M)}
+
+
+_S = _proto_stats()
+STAT_ID = {"intellect": _S["StatIntellect"], "spirit": _S["StatSpirit"], "healing": _S["StatHealingPower"], "mp5": _S["StatMP5"]}
+# gear crit: Forever pays it to every kind of attack (one rating in the official enum; the fork's spell and melee ratings both counted)
+CRIT_IDS = tuple(_S[k] for k in ("StatCritRating", "StatSpellCritRating", "StatMeleeCritRating") if k in _S)
+HASTE_IDS = tuple(_S[k] for k in ("StatHasteRating", "StatSpellHasteRating", "StatMeleeHasteRating") if k in _S)
 
 
 def sim_db():
@@ -133,7 +150,8 @@ def gear_stats(items):
             tot[k] = tot.get(k, 0) + v
     out = {k: tot.get(i, 0) for k, i in STAT_ID.items()}
     out["crit_gear"] = round(sum(tot.get(i, 0) for i in CRIT_IDS) / CRIT_RATING / 100, 6)
-    out["ignored"] = {"stamina": tot.get(2, 0), "spell_damage": tot.get(5, 0), "haste_rating": tot.get(14, 0) + tot.get(22, 0)}
+    out["ignored"] = {"stamina": tot.get(_S["StatStamina"], 0), "spell_damage": tot.get(_S["StatSpellDamage"], 0),
+                      "haste_rating": sum(tot.get(i, 0) for i in HASTE_IDS)}
     return out
 
 

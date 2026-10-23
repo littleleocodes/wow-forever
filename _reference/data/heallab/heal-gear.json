@@ -4,14 +4,14 @@
    "class": "priest",
    "spec": "Holy",
    "slug": "holy",
-   "build": "holy-ml-heal",
+   "build": "holy-raid-healer",
    "build_reason": "the raid page's pick: the spec's raid healer builds ranked by healer-lab capacity (render_modes.rank_builds)",
    "capacities_of_spec_builds": {
-    "holy-ml-heal": 0.69287109375,
-    "holy-raid-healer": 0.6830322265625001,
-    "opt-holy-heal-raid-heal": 0.6830322265625001
+    "holy-raid-healer": 0.6909667968750001,
+    "opt-holy-heal-raid-heal": 0.6906494140625,
+    "holy-ml-heal": 0.6887451171875001
    },
-   "date": "2026-10-15",
+   "date": "2026-10-22",
    "budgets": {
     "weight_seeds": 800,
     "weight_steps": 12,
@@ -28,154 +28,154 @@
       "mp5": 12.0,
       "crit_gear": 0.02
      },
-     "capacity": 0.6912841796875001,
-     "capacity_se": 0.0016974536401935414,
+     "capacity": 0.6960092163085938,
+     "capacity_se": 0.0013084112776556751,
      "weights": {
       "healing": {
-       "w": 0.00018049163818359304,
-       "se": 1.832874182786732e-05,
-       "z": 9.84746470208722,
-       "pct_per_unit": 0.02610961504502903,
+       "w": 0.00015775909423828226,
+       "se": 1.681065391957635e-05,
+       "z": 9.384471002318868,
+       "pct_per_unit": 0.022666236386205504,
        "hp_eq": 1.0,
        "hp_eq_se": 0.0
       },
       "intellect": {
-       "w": 0.00032075500488281116,
-       "se": 3.2832858115781707e-05,
-       "z": 9.769329363642408,
-       "pct_per_unit": 0.046399876390605485,
-       "hp_eq": 1.7771183646554563,
-       "hp_eq_se": 0.2622933643318648
+       "w": 0.0002667205810546891,
+       "se": 3.301950867958187e-05,
+       "z": 8.077666558970332,
+       "pct_per_unit": 0.03832141511994456,
+       "hp_eq": 1.6906827612221795,
+       "hp_eq_se": 0.28275897462011534
       },
       "spirit": {
-       "w": 0.0005718841552734388,
-       "se": 3.582077850051202e-05,
-       "z": 15.965151490642905,
-       "pct_per_unit": 0.08272779445523591,
-       "hp_eq": 3.168480052753069,
-       "hp_eq_se": 0.3995785276130366
+       "w": 0.0005147552490234398,
+       "se": 3.8426081257608357e-05,
+       "z": 13.39598606406211,
+       "pct_per_unit": 0.07395810816321284,
+       "hp_eq": 3.26291965296114,
+       "hp_eq_se": 0.4043265946259173
       },
       "mp5": {
-       "w": 0.0009949207305908203,
-       "se": 0.0001234843139095543,
-       "z": 8.057061654968962,
-       "pct_per_unit": 0.1439235497969274,
-       "hp_eq": 5.512281569403253,
-       "hp_eq_se": 0.9163932527803575
+       "w": 0.0010693073272705148,
+       "se": 0.00010458434216905627,
+       "z": 10.224353905119216,
+       "pct_per_unit": 0.15363407584482466,
+       "hp_eq": 6.7781026027913995,
+       "hp_eq_se": 0.9904619383856628
       },
       "crit_gear": {
-       "w": 0.14996337890624822,
-       "se": 0.0388016745032623,
-       "z": 3.8648687415188707,
-       "pct_per_unit": 21.6934487021011,
-       "hp_eq": 830.8605341246225,
-       "hp_eq_se": 243.86058586132253
+       "w": 0.16097259521484497,
+       "se": 0.0435212115268289,
+       "z": 3.698715857567809,
+       "pct_per_unit": 23.127940182831367,
+       "hp_eq": 1020.3696718219552,
+       "hp_eq_se": 295.0364765772977
       }
      }
     },
     "prebis": {
      "gear": {
-      "intellect": 173.0,
-      "spirit": 238.0,
-      "healing": 293.0,
-      "mp5": 6.0,
+      "intellect": 136.0,
+      "spirit": 220.0,
+      "healing": 408.0,
+      "mp5": 19.0,
       "crit_gear": 0.0
      },
-     "capacity": 0.6674209594726562,
-     "capacity_se": 0.0015457990851574495,
+     "capacity": 0.6864222717285157,
+     "capacity_se": 0.0013996451413696889,
      "weights": {
       "healing": {
-       "w": 0.00024017944335937512,
-       "se": 1.9656044803364333e-05,
-       "z": 12.21911354812673,
-       "pct_per_unit": 0.03598620030589781,
+       "w": 0.00023785858154296903,
+       "se": 1.3923264438305837e-05,
+       "z": 17.083535445076365,
+       "pct_per_unit": 0.03465193239490976,
        "hp_eq": 1.0,
        "hp_eq_se": 0.0
       },
       "intellect": {
-       "w": 0.0003864532470703108,
-       "se": 4.256268595756054e-05,
-       "z": 9.07962546009538,
-       "pct_per_unit": 0.05790247393124362,
-       "hp_eq": 1.6090188305252646,
-       "hp_eq_se": 0.22128895327805617
+       "w": 0.00034182128906250274,
+       "se": 3.345056492770893e-05,
+       "z": 10.218700036941783,
+       "pct_per_unit": 0.0497975230613868,
+       "hp_eq": 1.437077808356277,
+       "hp_eq_se": 0.16157747341636278
       },
       "spirit": {
-       "w": 0.0006574584960937524,
-       "se": 4.124873882923767e-05,
-       "z": 15.938875096654758,
-       "pct_per_unit": 0.09850731937055507,
-       "hp_eq": 2.737363726461852,
-       "hp_eq_se": 0.2739694862651719
+       "w": 0.0004915466308593786,
+       "se": 3.322414843022053e-05,
+       "z": 14.794860187064117,
+       "pct_per_unit": 0.07160994785638138,
+       "hp_eq": 2.0665499124343385,
+       "hp_eq_se": 0.18488504647521592
       },
       "mp5": {
-       "w": 0.0013670131138392835,
-       "se": 0.00014050681583781637,
-       "z": 9.729158729333058,
-       "pct_per_unit": 0.2048202254420344,
-       "hp_eq": 5.691632450799931,
-       "hp_eq_se": 0.742402274306497
+       "w": 0.0013162708282470764,
+       "se": 0.00011163991323859628,
+       "z": 11.790324715085982,
+       "pct_per_unit": 0.1917581760470135,
+       "hp_eq": 5.533837878408826,
+       "hp_eq_se": 0.5505283316891301
       },
       "crit_gear": {
-       "w": 0.215423583984381,
-       "se": 0.09457845817022954,
-       "z": 2.277723576299427,
-       "pct_per_unit": 32.27701811381409,
-       "hp_eq": 896.9276511397668,
-       "hp_eq_se": 410.3475583094702
+       "w": 0.2157211303710993,
+       "se": 0.08114745398195927,
+       "z": 2.658384456757676,
+       "pct_per_unit": 31.4268838958096,
+       "hp_eq": 906.9301976482585,
+       "hp_eq_se": 346.9493019667524
       }
      }
     },
     "bis": {
      "gear": {
-      "intellect": 233.0,
-      "spirit": 226.0,
-      "healing": 359.0,
-      "mp5": 6.0,
-      "crit_gear": 0.01
+      "intellect": 136.0,
+      "spirit": 210.0,
+      "healing": 397.0,
+      "mp5": 28.0,
+      "crit_gear": 0.0
      },
-     "capacity": 0.6967233276367188,
-     "capacity_se": 0.0012295352051759267,
+     "capacity": 0.688743133544922,
+     "capacity_se": 0.0014609737025729234,
      "weights": {
       "healing": {
-       "w": 0.0002106033325195311,
-       "se": 2.0314199526342933e-05,
-       "z": 10.367296641269379,
-       "pct_per_unit": 0.030227684959809844,
+       "w": 0.000250296020507812,
+       "se": 1.7108348399367745e-05,
+       "z": 14.630051637074558,
+       "pct_per_unit": 0.03634098233684777,
        "hp_eq": 1.0,
        "hp_eq_se": 0.0
       },
       "intellect": {
-       "w": 0.0002510101318359359,
-       "se": 3.538878964992288e-05,
-       "z": 7.092927854244457,
-       "pct_per_unit": 0.03602723231434789,
-       "hp_eq": 1.1918621079400893,
-       "hp_eq_se": 0.2163502708925155
+       "w": 0.0003183746337890647,
+       "se": 3.326389807004831e-05,
+       "z": 9.571176328120654,
+       "pct_per_unit": 0.04622545304377968,
+       "hp_eq": 1.2719923918212193,
+       "hp_eq_se": 0.15807156637422998
       },
       "spirit": {
-       "w": 0.000576882934570313,
-       "se": 3.438722292696359e-05,
-       "z": 16.776083831938912,
-       "pct_per_unit": 0.08279942865227381,
-       "hp_eq": 2.739191862107944,
-       "hp_eq_se": 0.2972836479465864
+       "w": 0.0005483184814453135,
+       "se": 3.5754515848117785e-05,
+       "z": 15.335642741591716,
+       "pct_per_unit": 0.07961146249446427,
+       "hp_eq": 2.190679980979562,
+       "hp_eq_se": 0.20849987117350913
       },
       "mp5": {
-       "w": 0.0009223937988281203,
-       "se": 0.00013575484862321022,
-       "z": 6.794555098273058,
-       "pct_per_unit": 0.13239025625234543,
-       "hp_eq": 4.37976829612883,
-       "hp_eq_se": 0.8418062603783424
+       "w": 0.001077489852905275,
+       "se": 0.00011295822848844732,
+       "z": 9.538834552592814,
+       "pct_per_unit": 0.15644291760260398,
+       "hp_eq": 4.304862101759407,
+       "hp_eq_se": 0.515704779918778
       },
       "crit_gear": {
-       "w": 0.23545837402343767,
-       "se": 0.0559010167424515,
-       "z": 4.212058880936765,
-       "pct_per_unit": 33.79510412291074,
-       "hp_eq": 1118.01827258171,
-       "hp_eq_se": 299.5901531768329
+       "w": 0.21869659423828236,
+       "se": 0.07359960446421127,
+       "z": 2.9714370862499178,
+       "pct_per_unit": 31.752998118857946,
+       "hp_eq": 873.7517831669106,
+       "hp_eq_se": 304.80770351882325
       }
      }
     }
@@ -189,16 +189,16 @@
        "enchant": 1510
       },
       {
-       "id": 13960
+       "id": 13002
       },
       {
-       "id": 22405
+       "id": 16695
       },
       {
        "id": 18510
       },
       {
-       "id": 12462,
+       "id": 14141,
        "enchant": 1891
       },
       {
@@ -206,7 +206,7 @@
        "enchant": 1884
       },
       {
-       "id": 12554
+       "id": 16692
       },
       {
        "id": 19047
@@ -220,19 +220,19 @@
        "enchant": 851
       },
       {
-       "id": 22334
+       "id": 275983
       },
       {
-       "id": 18395
+       "id": 21210
+      },
+      {
+       "id": 272439
       },
       {
        "id": 10659
       },
       {
-       "id": 18469
-      },
-      {
-       "id": 15854,
+       "id": 249454,
        "enchant": 2567
       },
       {},
@@ -242,24 +242,24 @@
      ],
      "names": [
       "Devout Crown",
-      "Heart of the Fiend",
-      "Mantle of the Scarlet Crusade",
+      "Lady Alizabeth's Pendant",
+      "Devout Mantle",
       "Hide of the Wild",
-      "Embrace of the Wind Serpent",
+      "Ghostweave Vest",
       "Devout Bracers",
-      "Hands of the Exalted Herald",
+      "Devout Gloves",
       "Wisdom of the Timbermaw",
       "Devout Skirt",
       "Mooncloth Boots",
-      "Band of Mending",
-      "Emerald Flame Ring",
+      "Vigilant Watcher's Signet",
+      "Signet Ring of the Bronze Dragonflight",
+      "Serenity Field",
       "Shard of the Splithooves",
-      "Royal Seal of Eldre'Thalas",
-      "Dancing Sliver",
+      "Dreamstaff",
       null,
       "Brilliant Wand"
      ],
-     "ilvl": 59.7,
+     "ilvl": 60.4,
      "rows": [
       {
        "slot": "Head",
@@ -269,26 +269,26 @@
        "source": "Darkmaster Gandling, Scholomance",
        "effects": false,
        "set": "Vestments of the Devout",
-       "enchant": "Lesser Arcanum of Voracity"
+       "enchant": "Lesser Arcane Amalgamation"
       },
       {
        "slot": "Neck",
-       "id": 13960,
-       "name": "Heart of the Fiend",
-       "ilvl": 61,
-       "source": "Kirtonos the Herald, Scholomance",
+       "id": 13002,
+       "name": "Lady Alizabeth's Pendant",
+       "ilvl": 59,
+       "source": "",
        "effects": false,
        "set": null,
        "enchant": null
       },
       {
        "slot": "Shoulder",
-       "id": 22405,
-       "name": "Mantle of the Scarlet Crusade",
-       "ilvl": 61,
-       "source": "Cannon Master Willey, Stratholme",
+       "id": 16695,
+       "name": "Devout Mantle",
+       "ilvl": 60,
+       "source": "Solakar Flamewreath, Blackrock Spire",
        "effects": false,
-       "set": null,
+       "set": "Vestments of the Devout",
        "enchant": null
       },
       {
@@ -303,10 +303,10 @@
       },
       {
        "slot": "Chest",
-       "id": 12462,
-       "name": "Embrace of the Wind Serpent",
+       "id": 14141,
+       "name": "Ghostweave Vest",
        "ilvl": 55,
-       "source": "The Temple of Atal'Hakkar",
+       "source": "crafted",
        "effects": false,
        "set": null,
        "enchant": "Enchant Chest - Greater Stats"
@@ -323,12 +323,12 @@
       },
       {
        "slot": "Hands",
-       "id": 12554,
-       "name": "Hands of the Exalted Herald",
+       "id": 16692,
+       "name": "Devout Gloves",
        "ilvl": 59,
-       "source": "Blackrock Depths",
+       "source": "Archivist Galford, Stratholme",
        "effects": false,
-       "set": null,
+       "set": "Vestments of the Devout",
        "enchant": null
       },
       {
@@ -349,7 +349,7 @@
        "source": "Baron Rivendare, Stratholme",
        "effects": false,
        "set": "Vestments of the Devout",
-       "enchant": "Lesser Arcanum of Voracity"
+       "enchant": "Lesser Arcane Amalgamation"
       },
       {
        "slot": "Feet",
@@ -363,284 +363,20 @@
       },
       {
        "slot": "Finger 1",
-       "id": 22334,
-       "name": "Band of Mending",
-       "ilvl": 62,
-       "source": "Stratholme",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Finger 2",
-       "id": 18395,
-       "name": "Emerald Flame Ring",
-       "ilvl": 62,
-       "source": "Prince Tortheldrin, Dire Maul",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Trinket 1",
-       "id": 10659,
-       "name": "Shard of the Splithooves",
-       "ilvl": 57,
+       "id": 275983,
+       "name": "Vigilant Watcher's Signet",
+       "ilvl": 65,
        "source": "",
        "effects": false,
        "set": null,
        "enchant": null
       },
       {
-       "slot": "Trinket 2",
-       "id": 18469,
-       "name": "Royal Seal of Eldre'Thalas",
-       "ilvl": 62,
-       "source": "quest: Holy Bologna: What the Light Won't Tell You",
-       "effects": true,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Main hand",
-       "id": 15854,
-       "name": "Dancing Sliver",
-       "ilvl": 60,
-       "source": "quest: Dawn's Gambit",
-       "effects": false,
-       "set": null,
-       "enchant": "Enchant Weapon - Mighty Spirit"
-      },
-      {
-       "slot": "Ranged / relic",
-       "id": 249385,
-       "name": "Brilliant Wand",
-       "ilvl": 60,
-       "source": "crafted",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      }
-     ],
-     "stats": {
-      "intellect": 173,
-      "spirit": 238,
-      "healing": 293,
-      "mp5": 6,
-      "crit_gear": 0.0,
-      "ignored": {
-       "stamina": 83,
-       "spell_damage": 61,
-       "haste_rating": 0
-      }
-     },
-     "notes": [
-      "two-hander (0.0330) over main hand + off-hand (0.0305)"
-     ],
-     "refresh_race": {
-      "first": 0.664357421875,
-      "refreshed": 0.664357421875,
-      "ratio": 1.0,
-      "ratio_se": 0.0027270068697552888
-     },
-     "pool_items": 1102
-    },
-    "bis": {
-     "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-holy-bis.gear.json",
-     "items": [
-      {
-       "id": 16921,
-       "enchant": 1510
-      },
-      {
-       "id": 13960
-      },
-      {
-       "id": 22405
-      },
-      {
-       "id": 18510
-      },
-      {
-       "id": 12462,
-       "enchant": 1891
-      },
-      {
-       "id": 16819,
-       "enchant": 1884
-      },
-      {
-       "id": 12554
-      },
-      {
-       "id": 19047
-      },
-      {
-       "id": 16922,
-       "enchant": 1510
-      },
-      {
-       "id": 16811,
-       "enchant": 851
-      },
-      {
-       "id": 19138
-      },
-      {
-       "id": 19140
-      },
-      {
-       "id": 272439
-      },
-      {
-       "id": 10659
-      },
-      {
-       "id": 18842,
-       "enchant": 2567
-      },
-      {},
-      {
-       "id": 249385
-      }
-     ],
-     "names": [
-      "Halo of Transcendence",
-      "Heart of the Fiend",
-      "Mantle of the Scarlet Crusade",
-      "Hide of the Wild",
-      "Embrace of the Wind Serpent",
-      "Vambraces of Prophecy",
-      "Hands of the Exalted Herald",
-      "Wisdom of the Timbermaw",
-      "Leggings of Transcendence",
-      "Boots of Prophecy",
-      "Band of Sulfuras",
-      "Cauterizing Band",
-      "Serenity Field",
-      "Shard of the Splithooves",
-      "Staff of Dominance",
-      null,
-      "Brilliant Wand"
-     ],
-     "ilvl": 65.1,
-     "rows": [
-      {
-       "slot": "Head",
-       "id": 16921,
-       "name": "Halo of Transcendence",
-       "ilvl": 76,
-       "source": "Onyxia, Onyxia's Lair",
-       "effects": false,
-       "set": "Vestments of Transcendence",
-       "enchant": "Lesser Arcanum of Voracity"
-      },
-      {
-       "slot": "Neck",
-       "id": 13960,
-       "name": "Heart of the Fiend",
-       "ilvl": 61,
-       "source": "Kirtonos the Herald, Scholomance",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Shoulder",
-       "id": 22405,
-       "name": "Mantle of the Scarlet Crusade",
-       "ilvl": 61,
-       "source": "Cannon Master Willey, Stratholme",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Back",
-       "id": 18510,
-       "name": "Hide of the Wild",
-       "ilvl": 62,
-       "source": "crafted",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Chest",
-       "id": 12462,
-       "name": "Embrace of the Wind Serpent",
-       "ilvl": 55,
-       "source": "The Temple of Atal'Hakkar",
-       "effects": false,
-       "set": null,
-       "enchant": "Enchant Chest - Greater Stats"
-      },
-      {
-       "slot": "Wrist",
-       "id": 16819,
-       "name": "Vambraces of Prophecy",
-       "ilvl": 66,
-       "source": "Molten Core",
-       "effects": false,
-       "set": "Vestments of Prophecy",
-       "enchant": "Enchant Bracer - Superior Spirit"
-      },
-      {
-       "slot": "Hands",
-       "id": 12554,
-       "name": "Hands of the Exalted Herald",
-       "ilvl": 59,
-       "source": "Blackrock Depths",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Waist",
-       "id": 19047,
-       "name": "Wisdom of the Timbermaw",
-       "ilvl": 58,
-       "source": "crafted",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Legs",
-       "id": 16922,
-       "name": "Leggings of Transcendence",
-       "ilvl": 76,
-       "source": "Ragnaros, Molten Core",
-       "effects": false,
-       "set": "Vestments of Transcendence",
-       "enchant": "Lesser Arcanum of Voracity"
-      },
-      {
-       "slot": "Feet",
-       "id": 16811,
-       "name": "Boots of Prophecy",
-       "ilvl": 66,
-       "source": "Shazzrah, Molten Core",
-       "effects": false,
-       "set": "Vestments of Prophecy",
-       "enchant": "Enchant Boots - Spirit"
-      },
-      {
-       "slot": "Finger 1",
-       "id": 19138,
-       "name": "Band of Sulfuras",
-       "ilvl": 78,
-       "source": "Ragnaros, Molten Core",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
        "slot": "Finger 2",
-       "id": 19140,
-       "name": "Cauterizing Band",
-       "ilvl": 71,
-       "source": "Majordomo Executus, Molten Core",
+       "id": 21210,
+       "name": "Signet Ring of the Bronze Dragonflight",
+       "ilvl": 80,
+       "source": "",
        "effects": false,
        "set": null,
        "enchant": null
@@ -667,10 +403,10 @@
       },
       {
        "slot": "Main hand",
-       "id": 18842,
-       "name": "Staff of Dominance",
-       "ilvl": 70,
-       "source": "Golemagg the Incinerator, Molten Core",
+       "id": 249454,
+       "name": "Dreamstaff",
+       "ilvl": 50,
+       "source": "crafted",
        "effects": false,
        "set": null,
        "enchant": "Enchant Weapon - Mighty Spirit"
@@ -687,36 +423,300 @@
       }
      ],
      "stats": {
-      "intellect": 233,
-      "spirit": 226,
-      "healing": 359,
-      "mp5": 6,
-      "crit_gear": 0.01,
+      "intellect": 136,
+      "spirit": 220,
+      "healing": 408,
+      "mp5": 19,
+      "crit_gear": 0.0,
       "ignored": {
-       "stamina": 133,
-       "spell_damage": 103,
+       "stamina": 101,
+       "spell_damage": 168,
        "haste_rating": 0
       }
      },
      "notes": [
-      "two-hander (0.0340) over main hand + off-hand (0.0305)"
+      "two-hander (0.0377) over main hand + off-hand (0.0374)"
      ],
      "refresh_race": {
-      "first": 0.6943881835937501,
-      "refreshed": 0.68440966796875,
-      "ratio": 0.9856297732871013,
-      "ratio_se": 0.0027033148594061795
+      "first": 0.6860664062500001,
+      "refreshed": 0.68376220703125,
+      "ratio": 0.9966414341268438,
+      "ratio_se": 0.0027483430524026854
      },
-     "pool_items": 1182
+     "pool_items": 748
+    },
+    "bis": {
+     "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-holy-bis.gear.json",
+     "items": [
+      {
+       "id": 16693,
+       "enchant": 1510
+      },
+      {
+       "id": 13002
+      },
+      {
+       "id": 16695
+      },
+      {
+       "id": 18510
+      },
+      {
+       "id": 14141,
+       "enchant": 1891
+      },
+      {
+       "id": 18263,
+       "enchant": 1884
+      },
+      {
+       "id": 16692
+      },
+      {
+       "id": 19047
+      },
+      {
+       "id": 16694,
+       "enchant": 1510
+      },
+      {
+       "id": 15802,
+       "enchant": 851
+      },
+      {
+       "id": 275983
+      },
+      {
+       "id": 21210
+      },
+      {
+       "id": 272439
+      },
+      {
+       "id": 10659
+      },
+      {
+       "id": 249454,
+       "enchant": 2567
+      },
+      {},
+      {
+       "id": 249385
+      }
+     ],
+     "names": [
+      "Devout Crown",
+      "Lady Alizabeth's Pendant",
+      "Devout Mantle",
+      "Hide of the Wild",
+      "Ghostweave Vest",
+      "Flarecore Wraps",
+      "Devout Gloves",
+      "Wisdom of the Timbermaw",
+      "Devout Skirt",
+      "Mooncloth Boots",
+      "Vigilant Watcher's Signet",
+      "Signet Ring of the Bronze Dragonflight",
+      "Serenity Field",
+      "Shard of the Splithooves",
+      "Dreamstaff",
+      null,
+      "Brilliant Wand"
+     ],
+     "ilvl": 60.8,
+     "rows": [
+      {
+       "slot": "Head",
+       "id": 16693,
+       "name": "Devout Crown",
+       "ilvl": 62,
+       "source": "Darkmaster Gandling, Scholomance",
+       "effects": false,
+       "set": "Vestments of the Devout",
+       "enchant": "Lesser Arcane Amalgamation"
+      },
+      {
+       "slot": "Neck",
+       "id": 13002,
+       "name": "Lady Alizabeth's Pendant",
+       "ilvl": 59,
+       "source": "",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      },
+      {
+       "slot": "Shoulder",
+       "id": 16695,
+       "name": "Devout Mantle",
+       "ilvl": 60,
+       "source": "Solakar Flamewreath, Blackrock Spire",
+       "effects": false,
+       "set": "Vestments of the Devout",
+       "enchant": null
+      },
+      {
+       "slot": "Back",
+       "id": 18510,
+       "name": "Hide of the Wild",
+       "ilvl": 62,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      },
+      {
+       "slot": "Chest",
+       "id": 14141,
+       "name": "Ghostweave Vest",
+       "ilvl": 55,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": "Enchant Chest - Greater Stats"
+      },
+      {
+       "slot": "Wrist",
+       "id": 18263,
+       "name": "Flarecore Wraps",
+       "ilvl": 64,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": "Enchant Bracer - Superior Spirit"
+      },
+      {
+       "slot": "Hands",
+       "id": 16692,
+       "name": "Devout Gloves",
+       "ilvl": 59,
+       "source": "Archivist Galford, Stratholme",
+       "effects": false,
+       "set": "Vestments of the Devout",
+       "enchant": null
+      },
+      {
+       "slot": "Waist",
+       "id": 19047,
+       "name": "Wisdom of the Timbermaw",
+       "ilvl": 58,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      },
+      {
+       "slot": "Legs",
+       "id": 16694,
+       "name": "Devout Skirt",
+       "ilvl": 61,
+       "source": "Baron Rivendare, Stratholme",
+       "effects": false,
+       "set": "Vestments of the Devout",
+       "enchant": "Lesser Arcane Amalgamation"
+      },
+      {
+       "slot": "Feet",
+       "id": 15802,
+       "name": "Mooncloth Boots",
+       "ilvl": 56,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": "Enchant Boots - Spirit"
+      },
+      {
+       "slot": "Finger 1",
+       "id": 275983,
+       "name": "Vigilant Watcher's Signet",
+       "ilvl": 65,
+       "source": "",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      },
+      {
+       "slot": "Finger 2",
+       "id": 21210,
+       "name": "Signet Ring of the Bronze Dragonflight",
+       "ilvl": 80,
+       "source": "",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      },
+      {
+       "slot": "Trinket 1",
+       "id": 272439,
+       "name": "Serenity Field",
+       "ilvl": 65,
+       "source": "",
+       "effects": true,
+       "set": null,
+       "enchant": null
+      },
+      {
+       "slot": "Trinket 2",
+       "id": 10659,
+       "name": "Shard of the Splithooves",
+       "ilvl": 57,
+       "source": "",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      },
+      {
+       "slot": "Main hand",
+       "id": 249454,
+       "name": "Dreamstaff",
+       "ilvl": 50,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": "Enchant Weapon - Mighty Spirit"
+      },
+      {
+       "slot": "Ranged / relic",
+       "id": 249385,
+       "name": "Brilliant Wand",
+       "ilvl": 60,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      }
+     ],
+     "stats": {
+      "intellect": 136,
+      "spirit": 210,
+      "healing": 397,
+      "mp5": 28,
+      "crit_gear": 0.0,
+      "ignored": {
+       "stamina": 94,
+       "spell_damage": 164,
+       "haste_rating": 0
+      }
+     },
+     "notes": [
+      "two-hander (0.0377) over main hand + off-hand (0.0374)"
+     ],
+     "refresh_race": {
+      "first": 0.68917041015625,
+      "refreshed": 0.68185791015625,
+      "ratio": 0.9893894167650898,
+      "ratio_se": 0.0023571365321502676
+     },
+     "pool_items": 784
     }
    },
    "check": {
     "default": {
-     "capacity": 0.6960830078125001,
-     "capacity_se": 0.0012376809747266708,
+     "capacity": 0.6970732421875,
+     "capacity_se": 0.0010843423307784618,
      "vs_default": 1.0,
      "vs_default_se": 0.0,
-     "standard_seeds": 0.69287109375,
+     "standard_seeds": 0.6909667968750001,
      "stats": {
       "intellect": 230.0,
       "spirit": 200.0,
@@ -726,35 +726,35 @@
      }
     },
     "prebis": {
-     "capacity": 0.664357421875,
-     "capacity_se": 0.001554433744909312,
-     "vs_default": 0.9544226973199641,
-     "vs_default_se": 0.0022910649820248596,
-     "standard_seeds": 0.6595458984375,
+     "capacity": 0.6860664062500001,
+     "capacity_se": 0.0013916253196049962,
+     "vs_default": 0.9842099290700658,
+     "vs_default_se": 0.002203668325341307,
+     "standard_seeds": 0.6843017578125,
      "stats": {
-      "intellect": 173.0,
-      "spirit": 238.0,
-      "healing": 293.0,
-      "mp5": 6.0,
+      "intellect": 136.0,
+      "spirit": 220.0,
+      "healing": 408.0,
+      "mp5": 19.0,
       "crit_gear": 0.0
      }
     },
     "bis": {
-     "capacity": 0.6943881835937501,
-     "capacity_se": 0.0013961106984003927,
-     "vs_default": 0.9975651981161325,
-     "vs_default_se": 0.00211901448095663,
-     "standard_seeds": 0.6893798828125001,
+     "capacity": 0.68917041015625,
+     "capacity_se": 0.0010625000247107379,
+     "vs_default": 0.9886628383461543,
+     "vs_default_se": 0.0019464185661743354,
+     "standard_seeds": 0.6871582031250001,
      "stats": {
-      "intellect": 233.0,
-      "spirit": 226.0,
-      "healing": 359.0,
-      "mp5": 6.0,
-      "crit_gear": 0.01
+      "intellect": 136.0,
+      "spirit": 210.0,
+      "healing": 397.0,
+      "mp5": 28.0,
+      "crit_gear": 0.0
      }
     }
    },
-   "seconds": 1566
+   "seconds": 2459
   },
   "priest|Discipline": {
    "class": "priest",
@@ -763,10 +763,10 @@
    "build": "discipline-ml-heal",
    "build_reason": "the raid page's pick: the spec's raid healer builds ranked by healer-lab capacity (render_modes.rank_builds)",
    "capacities_of_spec_builds": {
-    "discipline-ml-heal": 0.6147949218750001,
-    "disc-penance-healer": 0.6059082031249999
+    "discipline-ml-heal": 0.628759765625,
+    "disc-penance-healer": 0.6001953125
    },
-   "date": "2026-10-15",
+   "date": "2026-10-22",
    "budgets": {
     "weight_seeds": 800,
     "weight_steps": 12,
@@ -783,154 +783,154 @@
       "mp5": 12.0,
       "crit_gear": 0.02
      },
-     "capacity": 0.6296742248535157,
-     "capacity_se": 0.0018009615812941957,
+     "capacity": 0.6279901123046875,
+     "capacity_se": 0.0017176980354504916,
      "weights": {
       "healing": {
-       "w": 0.00021833953857421928,
-       "se": 2.098776135847755e-05,
-       "z": 10.403183781486335,
-       "pct_per_unit": 0.03467500017568811,
+       "w": 0.00023529968261718715,
+       "se": 1.9816173147936498e-05,
+       "z": 11.874123265908656,
+       "pct_per_unit": 0.03746869226231141,
        "hp_eq": 1.0,
        "hp_eq_se": 0.0
       },
       "intellect": {
-       "w": 0.0003174224853515617,
-       "se": 3.749851133321665e-05,
-       "z": 8.464935648535596,
-       "pct_per_unit": 0.05041058897168696,
-       "hp_eq": 1.4538021259198621,
-       "hp_eq_se": 0.24527723439213006
+       "w": 0.000337060546875001,
+       "se": 3.497299520910923e-05,
+       "z": 9.63773748458378,
+       "pct_per_unit": 0.05367290667013979,
+       "hp_eq": 1.4324734446130565,
+       "hp_eq_se": 0.18612029995910534
       },
       "spirit": {
-       "w": 0.0005760498046875018,
-       "se": 4.658114846756657e-05,
-       "z": 12.36658656212808,
-       "pct_per_unit": 0.0914837835106735,
-       "hp_eq": 2.6383210684110128,
-       "hp_eq_se": 0.31591723263596144
+       "w": 0.00046238708496093795,
+       "se": 3.838211419159182e-05,
+       "z": 12.046941516896192,
+       "pct_per_unit": 0.07362967599346493,
+       "hp_eq": 1.9650986342943901,
+       "hp_eq_se": 0.23363385748469534
       },
       "mp5": {
-       "w": 0.001120634078979492,
-       "se": 0.0001362144053333326,
-       "z": 8.226986538150419,
-       "pct_per_unit": 0.1779704543631575,
-       "hp_eq": 5.132529299536645,
-       "hp_eq_se": 0.7909120793116391
+       "w": 0.001101665496826179,
+       "se": 0.00010749608039308642,
+       "z": 10.248424805794428,
+       "pct_per_unit": 0.17542720422510003,
+       "hp_eq": 4.681967627718803,
+       "hp_eq_se": 0.5871898089142713
       },
       "crit_gear": {
-       "w": 0.27642059326171975,
-       "se": 0.055118216813423125,
-       "z": 5.015049637716184,
-       "pct_per_unit": 43.89898495940895,
-       "hp_eq": 1266.012537476153,
-       "hp_eq_se": 278.23393854721564
+       "w": 0.2149772644042952,
+       "se": 0.04937231402117361,
+       "z": 4.354206778967275,
+       "pct_per_unit": 34.23258745513382,
+       "hp_eq": 913.6317653009553,
+       "hp_eq_se": 223.4597965298984
       }
      }
     },
     "prebis": {
      "gear": {
-      "intellect": 168.0,
-      "spirit": 194.0,
-      "healing": 424.0,
-      "mp5": 6.0,
+      "intellect": 162.0,
+      "spirit": 174.0,
+      "healing": 534.0,
+      "mp5": 11.0,
       "crit_gear": 0.0
      },
-     "capacity": 0.5973368835449219,
-     "capacity_se": 0.0017961079016922705,
+     "capacity": 0.6155526733398438,
+     "capacity_se": 0.0018105113936202136,
      "weights": {
       "healing": {
-       "w": 0.00021589965820312362,
-       "se": 2.0828899040917248e-05,
-       "z": 10.365389825885678,
-       "pct_per_unit": 0.03614370117610312,
+       "w": 0.0002148880004882814,
+       "se": 2.175709188273687e-05,
+       "z": 9.876687640354358,
+       "pct_per_unit": 0.03490976642540593,
        "hp_eq": 1.0,
        "hp_eq_se": 0.0
       },
       "intellect": {
-       "w": 0.00042787170410155893,
-       "se": 4.1861182917959965e-05,
-       "z": 10.221204330037851,
-       "pct_per_unit": 0.07162988187877092,
-       "hp_eq": 1.981808158765156,
-       "hp_eq_se": 0.2834818889705454
+       "w": 0.00041870727539062403,
+       "se": 3.74644295562197e-05,
+       "z": 11.176128406340885,
+       "pct_per_unit": 0.0680213560147204,
+       "hp_eq": 1.9484907227914647,
+       "hp_eq_se": 0.286621535367225
       },
       "spirit": {
-       "w": 0.0005402252197265622,
-       "se": 4.420704239798096e-05,
-       "z": 12.220342968504847,
-       "pct_per_unit": 0.0904389523915838,
-       "hp_eq": 2.502205071664844,
-       "hp_eq_se": 0.3249137323510683
+       "w": 0.00046690979003906287,
+       "se": 4.112596996655667e-05,
+       "z": 11.35316177147312,
+       "pct_per_unit": 0.07585212610737606,
+       "hp_eq": 2.17280531708668,
+       "hp_eq_se": 0.2794743827350015
       },
       "mp5": {
-       "w": 0.0013627624511718711,
-       "se": 0.0001547235964915018,
-       "z": 8.807722170850138,
-       "pct_per_unit": 0.22813967941917426,
-       "hp_eq": 6.312017640573341,
-       "hp_eq_se": 0.9738365378181768
+       "w": 0.0014103698730468794,
+       "se": 0.00013130888360177135,
+       "z": 10.74085647795313,
+       "pct_per_unit": 0.2291225323406598,
+       "hp_eq": 6.563278870119097,
+       "hp_eq_se": 0.9547435417889573
       },
       "crit_gear": {
-       "w": 0.27790832519531405,
-       "se": 0.10661002269592865,
-       "z": 2.606774843186739,
-       "pct_per_unit": 46.52455471124685,
-       "hp_eq": 1287.2105843440065,
-       "hp_eq_se": 524.5630962440301
+       "w": 0.27076721191405806,
+       "se": 0.09256983026170446,
+       "z": 2.92500495192193,
+       "pct_per_unit": 43.987659162446484,
+       "hp_eq": 1260.038770423684,
+       "hp_eq_se": 452.9927583467505
       }
      }
     },
     "bis": {
      "gear": {
-      "intellect": 247.0,
-      "spirit": 197.0,
-      "healing": 453.0,
-      "mp5": 0.0,
-      "crit_gear": 0.01
+      "intellect": 169.0,
+      "spirit": 156.0,
+      "healing": 535.0,
+      "mp5": 20.0,
+      "crit_gear": 0.0
      },
-     "capacity": 0.6354704284667969,
-     "capacity_se": 0.0016976717875380116,
+     "capacity": 0.6206109619140625,
+     "capacity_se": 0.0017905458225311419,
      "weights": {
       "healing": {
-       "w": 0.00019852294921875126,
-       "se": 2.3772396960181118e-05,
-       "z": 8.35098579042232,
-       "pct_per_unit": 0.031240312739292793,
+       "w": 0.0002417861938476562,
+       "se": 1.9875743724540895e-05,
+       "z": 12.164887875321062,
+       "pct_per_unit": 0.038959381752128465,
        "hp_eq": 1.0,
        "hp_eq_se": 0.0
       },
       "intellect": {
-       "w": 0.0004110900878906265,
-       "se": 4.1690287051231935e-05,
-       "z": 9.860572257165087,
-       "pct_per_unit": 0.0646906715836433,
-       "hp_eq": 2.0707434052757736,
-       "hp_eq_se": 0.3401306609484491
+       "w": 0.0004018066406249998,
+       "se": 3.7177004799785115e-05,
+       "z": 10.807934710956658,
+       "pct_per_unit": 0.0647437227640589,
+       "hp_eq": 1.6618262367708585,
+       "hp_eq_se": 0.2116995337770458
       },
       "spirit": {
-       "w": 0.000590927124023437,
-       "se": 4.2735043464883483e-05,
-       "z": 13.827694465995279,
-       "pct_per_unit": 0.0929904992509518,
-       "hp_eq": 2.97661870503595,
-       "hp_eq_se": 0.4579769355808941
+       "w": 0.0004932128906250011,
+       "se": 3.8014833174194275e-05,
+       "z": 12.974222150731686,
+       "pct_per_unit": 0.07947215258716256,
+       "hp_eq": 2.039872015751912,
+       "hp_eq_se": 0.22128780917164917
       },
       "mp5": {
-       "w": 0.0007981681823730352,
-       "se": 0.00025302742135697575,
-       "z": 3.1544730531279646,
-       "pct_per_unit": 0.12560272620376373,
-       "hp_eq": 4.020533573141402,
-       "hp_eq_se": 1.3652795095615098
+       "w": 0.0013635063171386769,
+       "se": 0.00013738990769385071,
+       "z": 9.924355726164482,
+       "pct_per_unit": 0.21970387260537702,
+       "hp_eq": 5.639305931577674,
+       "hp_eq_se": 0.7228300792105559
       },
       "crit_gear": {
-       "w": 0.2763214111328109,
-       "se": 0.06803533810009037,
-       "z": 4.06143952318279,
-       "pct_per_unit": 43.482969270418,
-       "hp_eq": 1391.8864908073372,
-       "hp_eq_se": 392.3693707052904
+       "w": 0.2936782836914009,
+       "se": 0.10605014581713619,
+       "z": 2.769239791501981,
+       "pct_per_unit": 47.32083409961864,
+       "hp_eq": 1214.6197391090109,
+       "hp_eq_se": 439.7359627629793
       }
      }
     }
@@ -944,24 +944,24 @@
        "enchant": 1510
       },
       {
-       "id": 22327
+       "id": 19426
       },
       {
-       "id": 22405
+       "id": 16695
       },
       {
        "id": 18510
       },
       {
        "id": 14138,
-       "enchant": 1891
+       "enchant": 1893
       },
       {
        "id": 16697,
        "enchant": 2566
       },
       {
-       "id": 12554
+       "id": 16692
       },
       {
        "id": 19047
@@ -975,46 +975,48 @@
        "enchant": 851
       },
       {
-       "id": 22334
+       "id": 275983
       },
       {
-       "id": 18395
+       "id": 21210
       },
       {
-       "id": 18469
+       "id": 272439
       },
       {
        "id": 10659
       },
       {
-       "id": 22406,
-       "enchant": 2567
+       "id": 7721,
+       "enchant": 2505
       },
-      {},
+      {
+       "id": 249456
+      },
       {
        "id": 249385
       }
      ],
      "names": [
       "Devout Crown",
-      "Amulet of the Redeemed",
-      "Mantle of the Scarlet Crusade",
+      "Orb of the Darkmoon",
+      "Devout Mantle",
       "Hide of the Wild",
       "Mooncloth Vest",
       "Devout Bracers",
-      "Hands of the Exalted Herald",
+      "Devout Gloves",
       "Wisdom of the Timbermaw",
       "Devout Skirt",
       "Mooncloth Boots",
-      "Band of Mending",
-      "Emerald Flame Ring",
-      "Royal Seal of Eldre'Thalas",
+      "Vigilant Watcher's Signet",
+      "Signet Ring of the Bronze Dragonflight",
+      "Serenity Field",
       "Shard of the Splithooves",
-      "Redemption",
-      null,
+      "Hand of Righteousness",
+      "Twisting Essence Jar",
       "Brilliant Wand"
      ],
-     "ilvl": 60.2,
+     "ilvl": 60.1,
      "rows": [
       {
        "slot": "Head",
@@ -1024,26 +1026,26 @@
        "source": "Darkmaster Gandling, Scholomance",
        "effects": false,
        "set": "Vestments of the Devout",
-       "enchant": "Lesser Arcanum of Voracity"
+       "enchant": "Lesser Arcane Amalgamation"
       },
       {
        "slot": "Neck",
-       "id": 22327,
-       "name": "Amulet of the Redeemed",
-       "ilvl": 63,
-       "source": "Stratholme",
+       "id": 19426,
+       "name": "Orb of the Darkmoon",
+       "ilvl": 65,
+       "source": "",
        "effects": false,
        "set": null,
        "enchant": null
       },
       {
        "slot": "Shoulder",
-       "id": 22405,
-       "name": "Mantle of the Scarlet Crusade",
-       "ilvl": 61,
-       "source": "Cannon Master Willey, Stratholme",
+       "id": 16695,
+       "name": "Devout Mantle",
+       "ilvl": 60,
+       "source": "Solakar Flamewreath, Blackrock Spire",
        "effects": false,
-       "set": null,
+       "set": "Vestments of the Devout",
        "enchant": null
       },
       {
@@ -1064,7 +1066,7 @@
        "source": "crafted",
        "effects": false,
        "set": null,
-       "enchant": "Enchant Chest - Greater Stats"
+       "enchant": "Enchant Chest - Major Intellect"
       },
       {
        "slot": "Wrist",
@@ -1078,12 +1080,12 @@
       },
       {
        "slot": "Hands",
-       "id": 12554,
-       "name": "Hands of the Exalted Herald",
+       "id": 16692,
+       "name": "Devout Gloves",
        "ilvl": 59,
-       "source": "Blackrock Depths",
+       "source": "Archivist Galford, Stratholme",
        "effects": false,
-       "set": null,
+       "set": "Vestments of the Devout",
        "enchant": null
       },
       {
@@ -1104,7 +1106,7 @@
        "source": "Baron Rivendare, Stratholme",
        "effects": false,
        "set": "Vestments of the Devout",
-       "enchant": "Lesser Arcanum of Voracity"
+       "enchant": "Lesser Arcane Amalgamation"
       },
       {
        "slot": "Feet",
@@ -1118,284 +1120,20 @@
       },
       {
        "slot": "Finger 1",
-       "id": 22334,
-       "name": "Band of Mending",
-       "ilvl": 62,
-       "source": "Stratholme",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Finger 2",
-       "id": 18395,
-       "name": "Emerald Flame Ring",
-       "ilvl": 62,
-       "source": "Prince Tortheldrin, Dire Maul",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Trinket 1",
-       "id": 18469,
-       "name": "Royal Seal of Eldre'Thalas",
-       "ilvl": 62,
-       "source": "quest: Holy Bologna: What the Light Won't Tell You",
-       "effects": true,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Trinket 2",
-       "id": 10659,
-       "name": "Shard of the Splithooves",
-       "ilvl": 57,
+       "id": 275983,
+       "name": "Vigilant Watcher's Signet",
+       "ilvl": 65,
        "source": "",
        "effects": false,
        "set": null,
        "enchant": null
       },
       {
-       "slot": "Main hand",
-       "id": 22406,
-       "name": "Redemption",
-       "ilvl": 61,
-       "source": "Stratholme",
-       "effects": false,
-       "set": null,
-       "enchant": "Enchant Weapon - Mighty Spirit"
-      },
-      {
-       "slot": "Ranged / relic",
-       "id": 249385,
-       "name": "Brilliant Wand",
-       "ilvl": 60,
-       "source": "crafted",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      }
-     ],
-     "stats": {
-      "intellect": 168,
-      "spirit": 194,
-      "healing": 424,
-      "mp5": 6,
-      "crit_gear": 0.0,
-      "ignored": {
-       "stamina": 78,
-       "spell_damage": 78,
-       "haste_rating": 0
-      }
-     },
-     "notes": [
-      "two-hander (0.0340) over main hand + off-hand (0.0316)"
-     ],
-     "refresh_race": {
-      "first": 0.59734521484375,
-      "refreshed": 0.5953837890625,
-      "ratio": 0.9967164284026899,
-      "ratio_se": 0.003166549173260881
-     },
-     "pool_items": 1102
-    },
-    "bis": {
-     "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-discipline-bis.gear.json",
-     "items": [
-      {
-       "id": 16921,
-       "enchant": 1510
-      },
-      {
-       "id": 22327
-      },
-      {
-       "id": 22405
-      },
-      {
-       "id": 18510
-      },
-      {
-       "id": 16815,
-       "enchant": 1891
-      },
-      {
-       "id": 16819,
-       "enchant": 2566
-      },
-      {
-       "id": 12554
-      },
-      {
-       "id": 19047
-      },
-      {
-       "id": 16922,
-       "enchant": 1510
-      },
-      {
-       "id": 16811,
-       "enchant": 851
-      },
-      {
-       "id": 19140
-      },
-      {
-       "id": 19138
-      },
-      {
-       "id": 272439
-      },
-      {
-       "id": 18469
-      },
-      {
-       "id": 18842,
-       "enchant": 2567
-      },
-      {},
-      {
-       "id": 249385
-      }
-     ],
-     "names": [
-      "Halo of Transcendence",
-      "Amulet of the Redeemed",
-      "Mantle of the Scarlet Crusade",
-      "Hide of the Wild",
-      "Robes of Prophecy",
-      "Vambraces of Prophecy",
-      "Hands of the Exalted Herald",
-      "Wisdom of the Timbermaw",
-      "Leggings of Transcendence",
-      "Boots of Prophecy",
-      "Cauterizing Band",
-      "Band of Sulfuras",
-      "Serenity Field",
-      "Royal Seal of Eldre'Thalas",
-      "Staff of Dominance",
-      null,
-      "Brilliant Wand"
-     ],
-     "ilvl": 66.2,
-     "rows": [
-      {
-       "slot": "Head",
-       "id": 16921,
-       "name": "Halo of Transcendence",
-       "ilvl": 76,
-       "source": "Onyxia, Onyxia's Lair",
-       "effects": false,
-       "set": "Vestments of Transcendence",
-       "enchant": "Lesser Arcanum of Voracity"
-      },
-      {
-       "slot": "Neck",
-       "id": 22327,
-       "name": "Amulet of the Redeemed",
-       "ilvl": 63,
-       "source": "Stratholme",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Shoulder",
-       "id": 22405,
-       "name": "Mantle of the Scarlet Crusade",
-       "ilvl": 61,
-       "source": "Cannon Master Willey, Stratholme",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Back",
-       "id": 18510,
-       "name": "Hide of the Wild",
-       "ilvl": 62,
-       "source": "crafted",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Chest",
-       "id": 16815,
-       "name": "Robes of Prophecy",
-       "ilvl": 66,
-       "source": "Golemagg the Incinerator, Molten Core",
-       "effects": false,
-       "set": "Vestments of Prophecy",
-       "enchant": "Enchant Chest - Greater Stats"
-      },
-      {
-       "slot": "Wrist",
-       "id": 16819,
-       "name": "Vambraces of Prophecy",
-       "ilvl": 66,
-       "source": "Molten Core",
-       "effects": false,
-       "set": "Vestments of Prophecy",
-       "enchant": "Enchant Bracer - Healing Power"
-      },
-      {
-       "slot": "Hands",
-       "id": 12554,
-       "name": "Hands of the Exalted Herald",
-       "ilvl": 59,
-       "source": "Blackrock Depths",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Waist",
-       "id": 19047,
-       "name": "Wisdom of the Timbermaw",
-       "ilvl": 58,
-       "source": "crafted",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Legs",
-       "id": 16922,
-       "name": "Leggings of Transcendence",
-       "ilvl": 76,
-       "source": "Ragnaros, Molten Core",
-       "effects": false,
-       "set": "Vestments of Transcendence",
-       "enchant": "Lesser Arcanum of Voracity"
-      },
-      {
-       "slot": "Feet",
-       "id": 16811,
-       "name": "Boots of Prophecy",
-       "ilvl": 66,
-       "source": "Shazzrah, Molten Core",
-       "effects": false,
-       "set": "Vestments of Prophecy",
-       "enchant": "Enchant Boots - Spirit"
-      },
-      {
-       "slot": "Finger 1",
-       "id": 19140,
-       "name": "Cauterizing Band",
-       "ilvl": 71,
-       "source": "Majordomo Executus, Molten Core",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
        "slot": "Finger 2",
-       "id": 19138,
-       "name": "Band of Sulfuras",
-       "ilvl": 78,
-       "source": "Ragnaros, Molten Core",
+       "id": 21210,
+       "name": "Signet Ring of the Bronze Dragonflight",
+       "ilvl": 80,
+       "source": "",
        "effects": false,
        "set": null,
        "enchant": null
@@ -1412,23 +1150,33 @@
       },
       {
        "slot": "Trinket 2",
-       "id": 18469,
-       "name": "Royal Seal of Eldre'Thalas",
-       "ilvl": 62,
-       "source": "quest: Holy Bologna: What the Light Won't Tell You",
-       "effects": true,
+       "id": 10659,
+       "name": "Shard of the Splithooves",
+       "ilvl": 57,
+       "source": "",
+       "effects": false,
        "set": null,
        "enchant": null
       },
       {
        "slot": "Main hand",
-       "id": 18842,
-       "name": "Staff of Dominance",
-       "ilvl": 70,
-       "source": "Golemagg the Incinerator, Molten Core",
+       "id": 7721,
+       "name": "Hand of Righteousness",
+       "ilvl": 44,
+       "source": "High Inquisitor Whitemane, Scarlet Monastery",
        "effects": false,
        "set": null,
-       "enchant": "Enchant Weapon - Mighty Spirit"
+       "enchant": "Enchant Weapon - Healing Power"
+      },
+      {
+       "slot": "Off hand",
+       "id": 249456,
+       "name": "Twisting Essence Jar",
+       "ilvl": 50,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": null
       },
       {
        "slot": "Ranged / relic",
@@ -1442,36 +1190,312 @@
       }
      ],
      "stats": {
-      "intellect": 247,
-      "spirit": 197,
-      "healing": 453,
-      "mp5": 0,
-      "crit_gear": 0.01,
+      "intellect": 162,
+      "spirit": 174,
+      "healing": 534,
+      "mp5": 11,
+      "crit_gear": 0.0,
       "ignored": {
-       "stamina": 148,
-       "spell_damage": 111,
+       "stamina": 96,
+       "spell_damage": 219,
        "haste_rating": 0
       }
      },
      "notes": [
-      "two-hander (0.0352) over main hand + off-hand (0.0316)"
+      "main hand + off-hand (0.0469) over a two-hander (0.0464)"
      ],
      "refresh_race": {
-      "first": 0.63386962890625,
-      "refreshed": 0.63280322265625,
-      "ratio": 0.9983176252633525,
-      "ratio_se": 0.0027766143837950233
+      "first": 0.6134365234375,
+      "refreshed": 0.6130556640625,
+      "ratio": 0.9993791380844659,
+      "ratio_se": 0.0033268502554985747
      },
-     "pool_items": 1182
+     "pool_items": 748
+    },
+    "bis": {
+     "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-discipline-bis.gear.json",
+     "items": [
+      {
+       "id": 16693,
+       "enchant": 1510
+      },
+      {
+       "id": 18814
+      },
+      {
+       "id": 16695
+      },
+      {
+       "id": 18510
+      },
+      {
+       "id": 14138,
+       "enchant": 1893
+      },
+      {
+       "id": 18263,
+       "enchant": 2566
+      },
+      {
+       "id": 16692
+      },
+      {
+       "id": 19047
+      },
+      {
+       "id": 16694,
+       "enchant": 1510
+      },
+      {
+       "id": 15802,
+       "enchant": 851
+      },
+      {
+       "id": 21210
+      },
+      {
+       "id": 19140
+      },
+      {
+       "id": 272439
+      },
+      {
+       "id": 10659
+      },
+      {
+       "id": 7721,
+       "enchant": 2505
+      },
+      {
+       "id": 249456
+      },
+      {
+       "id": 249385
+      }
+     ],
+     "names": [
+      "Devout Crown",
+      "Choker of the Fire Lord",
+      "Devout Mantle",
+      "Hide of the Wild",
+      "Mooncloth Vest",
+      "Flarecore Wraps",
+      "Devout Gloves",
+      "Wisdom of the Timbermaw",
+      "Devout Skirt",
+      "Mooncloth Boots",
+      "Signet Ring of the Bronze Dragonflight",
+      "Cauterizing Band",
+      "Serenity Field",
+      "Shard of the Splithooves",
+      "Hand of Righteousness",
+      "Twisting Essence Jar",
+      "Brilliant Wand"
+     ],
+     "ilvl": 61.6,
+     "rows": [
+      {
+       "slot": "Head",
+       "id": 16693,
+       "name": "Devout Crown",
+       "ilvl": 62,
+       "source": "Darkmaster Gandling, Scholomance",
+       "effects": false,
+       "set": "Vestments of the Devout",
+       "enchant": "Lesser Arcane Amalgamation"
+      },
+      {
+       "slot": "Neck",
+       "id": 18814,
+       "name": "Choker of the Fire Lord",
+       "ilvl": 78,
+       "source": "Ragnaros, Molten Core",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      },
+      {
+       "slot": "Shoulder",
+       "id": 16695,
+       "name": "Devout Mantle",
+       "ilvl": 60,
+       "source": "Solakar Flamewreath, Blackrock Spire",
+       "effects": false,
+       "set": "Vestments of the Devout",
+       "enchant": null
+      },
+      {
+       "slot": "Back",
+       "id": 18510,
+       "name": "Hide of the Wild",
+       "ilvl": 62,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      },
+      {
+       "slot": "Chest",
+       "id": 14138,
+       "name": "Mooncloth Vest",
+       "ilvl": 60,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": "Enchant Chest - Major Intellect"
+      },
+      {
+       "slot": "Wrist",
+       "id": 18263,
+       "name": "Flarecore Wraps",
+       "ilvl": 64,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": "Enchant Bracer - Healing Power"
+      },
+      {
+       "slot": "Hands",
+       "id": 16692,
+       "name": "Devout Gloves",
+       "ilvl": 59,
+       "source": "Archivist Galford, Stratholme",
+       "effects": false,
+       "set": "Vestments of the Devout",
+       "enchant": null
+      },
+      {
+       "slot": "Waist",
+       "id": 19047,
+       "name": "Wisdom of the Timbermaw",
+       "ilvl": 58,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      },
+      {
+       "slot": "Legs",
+       "id": 16694,
+       "name": "Devout Skirt",
+       "ilvl": 61,
+       "source": "Baron Rivendare, Stratholme",
+       "effects": false,
+       "set": "Vestments of the Devout",
+       "enchant": "Lesser Arcane Amalgamation"
+      },
+      {
+       "slot": "Feet",
+       "id": 15802,
+       "name": "Mooncloth Boots",
+       "ilvl": 56,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": "Enchant Boots - Spirit"
+      },
+      {
+       "slot": "Finger 1",
+       "id": 21210,
+       "name": "Signet Ring of the Bronze Dragonflight",
+       "ilvl": 80,
+       "source": "",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      },
+      {
+       "slot": "Finger 2",
+       "id": 19140,
+       "name": "Cauterizing Band",
+       "ilvl": 71,
+       "source": "Majordomo Executus, Molten Core",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      },
+      {
+       "slot": "Trinket 1",
+       "id": 272439,
+       "name": "Serenity Field",
+       "ilvl": 65,
+       "source": "",
+       "effects": true,
+       "set": null,
+       "enchant": null
+      },
+      {
+       "slot": "Trinket 2",
+       "id": 10659,
+       "name": "Shard of the Splithooves",
+       "ilvl": 57,
+       "source": "",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      },
+      {
+       "slot": "Main hand",
+       "id": 7721,
+       "name": "Hand of Righteousness",
+       "ilvl": 44,
+       "source": "High Inquisitor Whitemane, Scarlet Monastery",
+       "effects": false,
+       "set": null,
+       "enchant": "Enchant Weapon - Healing Power"
+      },
+      {
+       "slot": "Off hand",
+       "id": 249456,
+       "name": "Twisting Essence Jar",
+       "ilvl": 50,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      },
+      {
+       "slot": "Ranged / relic",
+       "id": 249385,
+       "name": "Brilliant Wand",
+       "ilvl": 60,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      }
+     ],
+     "stats": {
+      "intellect": 181,
+      "spirit": 142,
+      "healing": 544,
+      "mp5": 20,
+      "crit_gear": 0.0,
+      "ignored": {
+       "stamina": 84,
+       "spell_damage": 230,
+       "haste_rating": 0
+      }
+     },
+     "notes": [
+      "main hand + off-hand (0.0485) over a two-hander (0.0481)"
+     ],
+     "refresh_race": {
+      "first": 0.6203681640625,
+      "refreshed": 0.62206298828125,
+      "ratio": 1.0027319651731503,
+      "ratio_se": 0.0032271179077717127
+     },
+     "pool_items": 784
     }
    },
    "check": {
     "default": {
-     "capacity": 0.63017529296875,
-     "capacity_se": 0.001585288336664504,
+     "capacity": 0.6285185546875001,
+     "capacity_se": 0.0015325439212166324,
      "vs_default": 1.0,
      "vs_default_se": 0.0,
-     "standard_seeds": 0.6147949218750001,
+     "standard_seeds": 0.628759765625,
      "stats": {
       "intellect": 230.0,
       "spirit": 200.0,
@@ -1481,35 +1505,35 @@
      }
     },
     "prebis": {
-     "capacity": 0.59734521484375,
-     "capacity_se": 0.0014809646261840714,
-     "vs_default": 0.9479032604240357,
-     "vs_default_se": 0.002855484001036551,
-     "standard_seeds": 0.5998779296875,
+     "capacity": 0.6134365234375,
+     "capacity_se": 0.0016512171892288528,
+     "vs_default": 0.9760038408770623,
+     "vs_default_se": 0.0031123833326194453,
+     "standard_seeds": 0.6154296874999999,
      "stats": {
-      "intellect": 168.0,
-      "spirit": 194.0,
-      "healing": 424.0,
-      "mp5": 6.0,
+      "intellect": 162.0,
+      "spirit": 174.0,
+      "healing": 534.0,
+      "mp5": 11.0,
       "crit_gear": 0.0
      }
     },
     "bis": {
-     "capacity": 0.63386962890625,
-     "capacity_se": 0.0015742530945948192,
-     "vs_default": 1.0058623941286178,
-     "vs_default_se": 0.0032785131915524434,
-     "standard_seeds": 0.6278076171875,
+     "capacity": 0.62206298828125,
+     "capacity_se": 0.0016119100605071217,
+     "vs_default": 0.9897289167390455,
+     "vs_default_se": 0.003046699423804635,
+     "standard_seeds": 0.6217773437499999,
      "stats": {
-      "intellect": 247.0,
-      "spirit": 197.0,
-      "healing": 453.0,
-      "mp5": 0.0,
-      "crit_gear": 0.01
+      "intellect": 181.0,
+      "spirit": 142.0,
+      "healing": 544.0,
+      "mp5": 20.0,
+      "crit_gear": 0.0
      }
     }
    },
-   "seconds": 1388
+   "seconds": 1895
   },
   "paladin|Holy": {
    "class": "paladin",
@@ -1518,11 +1542,11 @@
    "build": "holy-ml-heal",
    "build_reason": "the raid page's pick: the spec's raid healer builds ranked by healer-lab capacity (render_modes.rank_builds)",
    "capacities_of_spec_builds": {
-    "holy-ml-heal": 0.5846435546875001,
-    "holy-raid-healer": 0.565283203125,
-    "opt-holy-heal-raid-heal": 0.5611572265625
+    "holy-ml-heal": 0.5913085937500001,
+    "holy-raid-healer": 0.58115234375,
+    "opt-holy-heal-raid-heal": 0.58115234375
    },
-   "date": "2026-10-15",
+   "date": "2026-10-22",
    "budgets": {
     "weight_seeds": 800,
     "weight_steps": 12,
@@ -1539,154 +1563,154 @@
       "mp5": 24.0,
       "crit_gear": 0.02
      },
-     "capacity": 0.5766871643066407,
-     "capacity_se": 0.001264953465781546,
+     "capacity": 0.5867382812499999,
+     "capacity_se": 0.0011558481974260724,
      "weights": {
       "healing": {
-       "w": 0.00021839904785156294,
-       "se": 1.4137453760623248e-05,
-       "z": 15.44825903939401,
-       "pct_per_unit": 0.037871321119856596,
+       "w": 0.00023869171142578026,
+       "se": 1.50164336677349e-05,
+       "z": 15.89536615066238,
+       "pct_per_unit": 0.04068112121766902,
        "hp_eq": 1.0,
        "hp_eq_se": 0.0
       },
       "intellect": {
-       "w": 0.0004140655517578118,
-       "se": 2.8706432837521066e-05,
-       "z": 14.424138105261296,
-       "pct_per_unit": 0.07180072271170605,
-       "hp_eq": 1.8959128065395023,
-       "hp_eq_se": 0.19721126722059182
+       "w": 0.00034396362304687454,
+       "se": 2.8066845615023156e-05,
+       "z": 12.255157838712142,
+       "pct_per_unit": 0.0586230068905828,
+       "hp_eq": 1.4410371478434345,
+       "hp_eq_se": 0.15357825580417955
       },
       "spirit": {
-       "w": 0.00017674255371094016,
-       "se": 1.970731806017195e-05,
-       "z": 8.968371706961635,
-       "pct_per_unit": 0.030647908372200428,
-       "hp_eq": 0.8092643051771222,
-       "hp_eq_se": 0.10404575324028978
+       "w": 0.0002181610107421883,
+       "se": 2.6261359058465687e-05,
+       "z": 8.307300861943064,
+       "pct_per_unit": 0.037181997103958066,
+       "hp_eq": 0.9139865370231934,
+       "hp_eq_se": 0.1259502386534636
       },
       "mp5": {
-       "w": 0.000956239700317385,
-       "se": 7.407441716072501e-05,
-       "z": 12.90917616324348,
-       "pct_per_unit": 0.16581601941272367,
-       "hp_eq": 4.37840599455041,
-       "hp_eq_se": 0.4577935413243416
+       "w": 0.0008803653717040991,
+       "se": 8.109087958563478e-05,
+       "z": 10.856527592284934,
+       "pct_per_unit": 0.15004396335424877,
+       "hp_eq": 3.688294689603595,
+       "hp_eq_se": 0.42676452535577875
       },
       "crit_gear": {
-       "w": 0.18447875976562722,
-       "se": 0.02842911508869229,
-       "z": 6.489078509482127,
-       "pct_per_unit": 31.98939931105085,
-       "hp_eq": 844.6866485013709,
-       "hp_eq_se": 149.4013041235661
+       "w": 0.2167625427246106,
+       "se": 0.034435028419063325,
+       "z": 6.2948268863518715,
+       "pct_per_unit": 36.94365096867635,
+       "hp_eq": 908.1276489653542,
+       "hp_eq_se": 159.56251095070212
       }
      }
     },
     "prebis": {
      "gear": {
-      "intellect": 210.0,
-      "spirit": 118.0,
-      "healing": 557.0,
-      "mp5": 9.0,
+      "intellect": 174.0,
+      "spirit": 128.0,
+      "healing": 679.0,
+      "mp5": 11.0,
       "crit_gear": 0.01
      },
-     "capacity": 0.5733070373535156,
-     "capacity_se": 0.0011520683437460197,
+     "capacity": 0.5932247924804688,
+     "capacity_se": 0.0014311904206250033,
      "weights": {
       "healing": {
-       "w": 0.0001996536254882808,
-       "se": 1.3409289565112e-05,
-       "z": 14.889202333860794,
-       "pct_per_unit": 0.03482490401825808,
+       "w": 0.00018662109374999902,
+       "se": 1.929524671644535e-05,
+       "z": 9.671868750501218,
+       "pct_per_unit": 0.03145874820397755,
        "hp_eq": 1.0,
        "hp_eq_se": 0.0
       },
       "intellect": {
-       "w": 0.00047345581054687226,
-       "se": 2.815794666802916e-05,
-       "z": 16.814287495062242,
-       "pct_per_unit": 0.08258328952884061,
-       "hp_eq": 2.371385991058114,
-       "hp_eq_se": 0.22827226126007402
+       "w": 0.0005670043945312498,
+       "se": 3.072655112846274e-05,
+       "z": 18.453239094771686,
+       "pct_per_unit": 0.09558002324218735,
+       "hp_eq": 3.038265306122464,
+       "hp_eq_se": 0.3755705704937608
       },
       "spirit": {
-       "w": 0.00023220520019531232,
-       "se": 2.473008283627579e-05,
-       "z": 9.389584407485192,
-       "pct_per_unit": 0.04050276467339589,
-       "hp_eq": 1.1630402384500762,
-       "hp_eq_se": 0.15285236591246945
+       "w": 0.0003639587402343736,
+       "se": 3.198339390798682e-05,
+       "z": 11.379615974510031,
+       "pct_per_unit": 0.061352584188624666,
+       "hp_eq": 1.950255102040819,
+       "hp_eq_se": 0.2716612348464174
       },
       "mp5": {
-       "w": 0.0011031532287597637,
-       "se": 7.959308842654272e-05,
-       "z": 13.859912343744208,
-       "pct_per_unit": 0.19241927220222338,
-       "hp_eq": 5.52533532041729,
-       "hp_eq_se": 0.5723130877534082
+       "w": 0.0013188743591308547,
+       "se": 9.000409542909022e-05,
+       "z": 14.653492742115613,
+       "pct_per_unit": 0.22232286577508087,
+       "hp_eq": 7.067123724489808,
+       "hp_eq_se": 0.93461489191443
       },
       "crit_gear": {
-       "w": 0.23526000976562544,
-       "se": 0.03651740548809645,
-       "z": 6.4424075758151265,
-       "pct_per_unit": 41.035604734877545,
-       "hp_eq": 1178.340784898167,
-       "hp_eq_se": 209.5847095457615
+       "w": 0.3655853271484359,
+       "se": 0.05463299739576342,
+       "z": 6.691657872990612,
+       "pct_per_unit": 61.62677820996032,
+       "hp_eq": 1958.9710884353758,
+       "hp_eq_se": 370.25966415699673
       }
      }
     },
     "bis": {
      "gear": {
-      "intellect": 210.0,
-      "spirit": 113.0,
-      "healing": 677.0,
-      "mp5": 10.0,
-      "crit_gear": 0.0
+      "intellect": 188.0,
+      "spirit": 100.0,
+      "healing": 713.0,
+      "mp5": 20.0,
+      "crit_gear": 0.01
      },
-     "capacity": 0.5896839904785157,
-     "capacity_se": 0.0013245575355363278,
+     "capacity": 0.6172308349609374,
+     "capacity_se": 0.001571030752864933,
      "weights": {
       "healing": {
-       "w": 0.00018965606689453019,
-       "se": 1.598490678013591e-05,
-       "z": 11.864696460426755,
-       "pct_per_unit": 0.03216232252475235,
+       "w": 0.00024250030517578125,
+       "se": 1.7949824478863793e-05,
+       "z": 13.509898409387192,
+       "pct_per_unit": 0.0392884301042945,
        "hp_eq": 1.0,
        "hp_eq_se": 0.0
       },
       "intellect": {
-       "w": 0.0005093994140624991,
-       "se": 2.9658231042652078e-05,
-       "z": 17.175650608760918,
-       "pct_per_unit": 0.08638515243548202,
-       "hp_eq": 2.6859115155318585,
-       "hp_eq_se": 0.28799756643516533
+       "w": 0.0006284179687499991,
+       "se": 3.406071934480734e-05,
+       "z": 18.4499323807089,
+       "pct_per_unit": 0.10181247163223296,
+       "hp_eq": 2.5914110429447814,
+       "hp_eq_se": 0.24365326256812478
       },
       "spirit": {
-       "w": 0.00027148132324218645,
-       "se": 2.8970479656615844e-05,
-       "z": 9.370964045470666,
-       "pct_per_unit": 0.046038442220872444,
-       "hp_eq": 1.4314402259177934,
-       "hp_eq_se": 0.19048279515292463
+       "w": 0.0003824066162109352,
+       "se": 3.050202039066285e-05,
+       "z": 12.537091357003877,
+       "pct_per_unit": 0.061955202908023296,
+       "hp_eq": 1.5769325153374139,
+       "hp_eq_se": 0.17175414926913432
       },
       "mp5": {
-       "w": 0.0013460254669189417,
-       "se": 8.603022176981722e-05,
-       "z": 15.64596067786937,
-       "pct_per_unit": 0.2282621690011749,
-       "hp_eq": 7.097191716347683,
-       "hp_eq_se": 0.7355580730522358
+       "w": 0.0015855503082275318,
+       "se": 0.00010043712484041138,
+       "z": 15.786496385145204,
+       "pct_per_unit": 0.2568812538874336,
+       "hp_eq": 6.538343558282179,
+       "hp_eq_se": 0.6193682162674714
       },
       "crit_gear": {
-       "w": 0.34455871582030895,
-       "se": 0.062280855739321274,
-       "z": 5.532337533422335,
-       "pct_per_unit": 58.43107857493418,
-       "hp_eq": 1816.7555695010897,
-       "hp_eq_se": 375.07732277279257
+       "w": 0.21621704101562428,
+       "se": 0.055775531500427966,
+       "z": 3.8765572500903063,
+       "pct_per_unit": 35.03017489871645,
+       "hp_eq": 891.6155419222874,
+       "hp_eq_se": 241.51645648238224
       }
      }
     }
@@ -1700,10 +1724,10 @@
        "enchant": 1509
       },
       {
-       "id": 22327
+       "id": 22149
       },
       {
-       "id": 227808
+       "id": 16695
       },
       {
        "id": 18510
@@ -1713,14 +1737,14 @@
        "enchant": 1893
       },
       {
-       "id": 18459,
-       "enchant": 2566
+       "id": 16697,
+       "enchant": 2565
       },
       {
-       "id": 12554
+       "id": 18409
       },
       {
-       "id": 228190
+       "id": 19047
       },
       {
        "id": 250600,
@@ -1731,44 +1755,47 @@
        "enchant": 851
       },
       {
-       "id": 21207
+       "id": 21210
       },
       {
-       "id": 22334
+       "id": 275983
       },
       {
        "id": 10659
       },
       {
-       "id": 13965
+       "id": 272439
       },
       {
-       "id": 18717,
-       "enchant": 2505
+       "id": 22383,
+       "enchant": 2568
       },
-      {},
+      {
+       "id": 279262,
+       "enchant": 1890
+      },
       {}
      ],
      "names": [
       "Living Crown",
-      "Amulet of the Redeemed",
-      "Rugged Mantle of the Timbermaw",
+      "Beads of Ogre Mojo",
+      "Devout Mantle",
       "Hide of the Wild",
       "Breastplate of Salvation",
-      "Gallant's Wristguards",
-      "Hands of the Exalted Herald",
-      "Knowledge of the Timbermaw",
+      "Devout Bracers",
+      "Mooncloth Gloves",
+      "Wisdom of the Timbermaw",
       "Martyr's Legplates",
       "Mooncloth Boots",
       "Signet Ring of the Bronze Dragonflight",
-      "Band of Mending",
+      "Vigilant Watcher's Signet",
       "Shard of the Splithooves",
-      "Blackhand's Breadth",
-      "Hammer of the Grand Crusader",
-      null,
+      "Serenity Field",
+      "Sageblade",
+      "Evergreen Shield",
       null
      ],
-     "ilvl": 61.5,
+     "ilvl": 62.3,
      "rows": [
       {
        "slot": "Head",
@@ -1778,26 +1805,26 @@
        "source": "crafted",
        "effects": false,
        "set": null,
-       "enchant": "Lesser Arcanum of Voracity"
+       "enchant": "Lesser Arcane Amalgamation"
       },
       {
        "slot": "Neck",
-       "id": 22327,
-       "name": "Amulet of the Redeemed",
+       "id": 22149,
+       "name": "Beads of Ogre Mojo",
        "ilvl": 63,
-       "source": "Stratholme",
+       "source": "",
        "effects": false,
        "set": null,
        "enchant": null
       },
       {
        "slot": "Shoulder",
-       "id": 227808,
-       "name": "Rugged Mantle of the Timbermaw",
-       "ilvl": 65,
-       "source": "",
+       "id": 16695,
+       "name": "Devout Mantle",
+       "ilvl": 60,
+       "source": "Solakar Flamewreath, Blackrock Spire",
        "effects": false,
-       "set": null,
+       "set": "Vestments of the Devout",
        "enchant": null
       },
       {
@@ -1822,30 +1849,30 @@
       },
       {
        "slot": "Wrist",
-       "id": 18459,
-       "name": "Gallant's Wristguards",
-       "ilvl": 60,
-       "source": "Dire Maul",
+       "id": 16697,
+       "name": "Devout Bracers",
+       "ilvl": 57,
+       "source": "Stratholme",
        "effects": false,
-       "set": null,
-       "enchant": "Enchant Bracer - Healing Power"
+       "set": "Vestments of the Devout",
+       "enchant": "Enchant Bracer - Mana Regeneration"
       },
       {
        "slot": "Hands",
-       "id": 12554,
-       "name": "Hands of the Exalted Herald",
-       "ilvl": 59,
-       "source": "Blackrock Depths",
+       "id": 18409,
+       "name": "Mooncloth Gloves",
+       "ilvl": 62,
+       "source": "crafted",
        "effects": false,
        "set": null,
        "enchant": null
       },
       {
        "slot": "Waist",
-       "id": 228190,
-       "name": "Knowledge of the Timbermaw",
-       "ilvl": 65,
-       "source": "",
+       "id": 19047,
+       "name": "Wisdom of the Timbermaw",
+       "ilvl": 58,
+       "source": "crafted",
        "effects": false,
        "set": null,
        "enchant": null
@@ -1858,7 +1885,7 @@
        "source": "crafted",
        "effects": false,
        "set": null,
-       "enchant": "Lesser Arcanum of Voracity"
+       "enchant": "Lesser Arcane Amalgamation"
       },
       {
        "slot": "Feet",
@@ -1872,9 +1899,9 @@
       },
       {
        "slot": "Finger 1",
-       "id": 21207,
+       "id": 21210,
        "name": "Signet Ring of the Bronze Dragonflight",
-       "ilvl": 65,
+       "ilvl": 80,
        "source": "",
        "effects": false,
        "set": null,
@@ -1882,10 +1909,10 @@
       },
       {
        "slot": "Finger 2",
-       "id": 22334,
-       "name": "Band of Mending",
-       "ilvl": 62,
-       "source": "Stratholme",
+       "id": 275983,
+       "name": "Vigilant Watcher's Signet",
+       "ilvl": 65,
+       "source": "",
        "effects": false,
        "set": null,
        "enchant": null
@@ -1902,9 +1929,9 @@
       },
       {
        "slot": "Trinket 2",
-       "id": 13965,
-       "name": "Blackhand's Breadth",
-       "ilvl": 63,
+       "id": 272439,
+       "name": "Serenity Field",
+       "ilvl": 65,
        "source": "",
        "effects": true,
        "set": null,
@@ -1912,38 +1939,48 @@
       },
       {
        "slot": "Main hand",
-       "id": 18717,
-       "name": "Hammer of the Grand Crusader",
-       "ilvl": 63,
-       "source": "Stratholme",
+       "id": 22383,
+       "name": "Sageblade",
+       "ilvl": 64,
+       "source": "crafted",
        "effects": false,
        "set": null,
-       "enchant": "Enchant Weapon - Healing Power"
+       "enchant": "Enchant Weapon - Mighty Intellect"
+      },
+      {
+       "slot": "Off hand",
+       "id": 279262,
+       "name": "Evergreen Shield",
+       "ilvl": 65,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": "Enchant Shield - Superior Spirit"
       }
      ],
      "stats": {
-      "intellect": 210,
-      "spirit": 118,
-      "healing": 535,
-      "mp5": 9,
-      "crit_gear": 0.03,
+      "intellect": 204,
+      "spirit": 134,
+      "healing": 575,
+      "mp5": 15,
+      "crit_gear": 0.01,
       "ignored": {
-       "stamina": 41,
-       "spell_damage": 187,
+       "stamina": 83,
+       "spell_damage": 285,
        "haste_rating": 0
       }
      },
      "notes": [
-      "two-hander (0.0298) over main hand + off-hand (0.0266)",
+      "main hand + off-hand (0.0446) over a two-hander (0.0273)",
       "no wand or relic with static healing stats in the pool: ranged slot left empty (relic effects are not modelled)"
      ],
      "refresh_race": {
-      "first": 0.5732177734375,
-      "refreshed": 0.57453173828125,
-      "ratio": 1.0022922611695557,
-      "ratio_se": 0.002180584983286077
+      "first": 0.59258447265625,
+      "refreshed": 0.59730712890625,
+      "ratio": 1.007969591624348,
+      "ratio_se": 0.002636922550874137
      },
-     "pool_items": 2142
+     "pool_items": 1529
     },
     "bis": {
      "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-holy-bis.gear.json",
@@ -1956,7 +1993,7 @@
        "id": 18814
       },
       {
-       "id": 18810
+       "id": 16695
       },
       {
        "id": 18510
@@ -1970,7 +2007,7 @@
        "enchant": 2565
       },
       {
-       "id": 12554
+       "id": 18409
       },
       {
        "id": 19162
@@ -1980,50 +2017,51 @@
        "enchant": 1509
       },
       {
-       "id": 18824,
+       "id": 22087,
        "enchant": 851
+      },
+      {
+       "id": 21210
       },
       {
        "id": 19140
       },
       {
-       "id": 22681
+       "id": 272439
       },
       {
        "id": 10659
       },
       {
-       "id": 272439
-      },
-      {
-       "id": 17103,
+       "id": 22383,
        "enchant": 2568
       },
       {
-       "id": 19142
+       "id": 276754,
+       "enchant": 1890
       },
       {}
      ],
      "names": [
       "Living Crown",
       "Choker of the Fire Lord",
-      "Wild Growth Spaulders",
+      "Devout Mantle",
       "Hide of the Wild",
       "Breastplate of Salvation",
       "Flarecore Wraps",
-      "Hands of the Exalted Herald",
+      "Mooncloth Gloves",
       "Corehound Belt",
       "Martyr's Legplates",
-      "Magma Tempered Boots",
+      "Soulforge Boots",
+      "Signet Ring of the Bronze Dragonflight",
       "Cauterizing Band",
-      "Band of Piety",
-      "Shard of the Splithooves",
       "Serenity Field",
-      "Azuresong Mageblade",
-      "Fire Runed Grimoire",
+      "Shard of the Splithooves",
+      "Sageblade",
+      "Sunderbark Vigil",
       null
      ],
-     "ilvl": 66.1,
+     "ilvl": 64.4,
      "rows": [
       {
        "slot": "Head",
@@ -2033,7 +2071,7 @@
        "source": "crafted",
        "effects": false,
        "set": null,
-       "enchant": "Lesser Arcanum of Voracity"
+       "enchant": "Lesser Arcane Amalgamation"
       },
       {
        "slot": "Neck",
@@ -2047,12 +2085,12 @@
       },
       {
        "slot": "Shoulder",
-       "id": 18810,
-       "name": "Wild Growth Spaulders",
-       "ilvl": 71,
-       "source": "Molten Core",
+       "id": 16695,
+       "name": "Devout Mantle",
+       "ilvl": 60,
+       "source": "Solakar Flamewreath, Blackrock Spire",
        "effects": false,
-       "set": null,
+       "set": "Vestments of the Devout",
        "enchant": null
       },
       {
@@ -2087,10 +2125,10 @@
       },
       {
        "slot": "Hands",
-       "id": 12554,
-       "name": "Hands of the Exalted Herald",
-       "ilvl": 59,
-       "source": "Blackrock Depths",
+       "id": 18409,
+       "name": "Mooncloth Gloves",
+       "ilvl": 62,
+       "source": "crafted",
        "effects": false,
        "set": null,
        "enchant": null
@@ -2113,20 +2151,30 @@
        "source": "crafted",
        "effects": false,
        "set": null,
-       "enchant": "Lesser Arcanum of Voracity"
+       "enchant": "Lesser Arcane Amalgamation"
       },
       {
        "slot": "Feet",
-       "id": 18824,
-       "name": "Magma Tempered Boots",
-       "ilvl": 70,
-       "source": "Molten Core",
+       "id": 22087,
+       "name": "Soulforge Boots",
+       "ilvl": 60,
+       "source": "",
        "effects": false,
-       "set": null,
+       "set": "Soulforge Armor",
        "enchant": "Enchant Boots - Spirit"
       },
       {
        "slot": "Finger 1",
+       "id": 21210,
+       "name": "Signet Ring of the Bronze Dragonflight",
+       "ilvl": 80,
+       "source": "",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      },
+      {
+       "slot": "Finger 2",
        "id": 19140,
        "name": "Cauterizing Band",
        "ilvl": 71,
@@ -2136,27 +2184,7 @@
        "enchant": null
       },
       {
-       "slot": "Finger 2",
-       "id": 22681,
-       "name": "Band of Piety",
-       "ilvl": 66,
-       "source": "",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
        "slot": "Trinket 1",
-       "id": 10659,
-       "name": "Shard of the Splithooves",
-       "ilvl": 57,
-       "source": "",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Trinket 2",
        "id": 272439,
        "name": "Serenity Field",
        "ilvl": 65,
@@ -2166,58 +2194,68 @@
        "enchant": null
       },
       {
+       "slot": "Trinket 2",
+       "id": 10659,
+       "name": "Shard of the Splithooves",
+       "ilvl": 57,
+       "source": "",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      },
+      {
        "slot": "Main hand",
-       "id": 17103,
-       "name": "Azuresong Mageblade",
-       "ilvl": 71,
-       "source": "Golemagg the Incinerator, Molten Core",
+       "id": 22383,
+       "name": "Sageblade",
+       "ilvl": 64,
+       "source": "crafted",
        "effects": false,
        "set": null,
        "enchant": "Enchant Weapon - Mighty Intellect"
       },
       {
        "slot": "Off hand",
-       "id": 19142,
-       "name": "Fire Runed Grimoire",
-       "ilvl": 70,
-       "source": "Molten Core",
+       "id": 276754,
+       "name": "Sunderbark Vigil",
+       "ilvl": 55,
+       "source": "",
        "effects": false,
        "set": null,
-       "enchant": null
+       "enchant": "Enchant Shield - Superior Spirit"
       }
      ],
      "stats": {
-      "intellect": 233,
-      "spirit": 104,
-      "healing": 547,
-      "mp5": 23,
-      "crit_gear": 0.01,
+      "intellect": 211,
+      "spirit": 98,
+      "healing": 608,
+      "mp5": 31,
+      "crit_gear": 0.0,
       "ignored": {
-       "stamina": 83,
-       "spell_damage": 220,
+       "stamina": 84,
+       "spell_damage": 317,
        "haste_rating": 0
       }
      },
      "notes": [
-      "main hand + off-hand (0.0315) over a two-hander (0.0311)",
+      "main hand + off-hand (0.0530) over a two-hander (0.0278)",
       "no wand or relic with static healing stats in the pool: ranged slot left empty (relic effects are not modelled)"
      ],
      "refresh_race": {
-      "first": 0.5924892578125001,
-      "refreshed": 0.59521240234375,
-      "ratio": 1.0045961078540122,
-      "ratio_se": 0.002811875507822472
+      "first": 0.61669287109375,
+      "refreshed": 0.619111328125,
+      "ratio": 1.0039216555673178,
+      "ratio_se": 0.0025376651705855415
      },
-     "pool_items": 2251
+     "pool_items": 1587
     }
    },
    "check": {
     "default": {
-     "capacity": 0.5761884765625,
-     "capacity_se": 0.0009501339514647513,
+     "capacity": 0.5849291992187501,
+     "capacity_se": 0.0011323621681854172,
      "vs_default": 1.0,
      "vs_default_se": 0.0,
-     "standard_seeds": 0.5846435546875001,
+     "standard_seeds": 0.5913085937500001,
      "stats": {
       "intellect": 260.0,
       "spirit": 130.0,
@@ -2227,35 +2265,35 @@
      }
     },
     "prebis": {
-     "capacity": 0.57453173828125,
-     "capacity_se": 0.0011089002938893216,
-     "vs_default": 0.9971246591199915,
-     "vs_default_se": 0.0022606628178284864,
-     "standard_seeds": 0.5719482421875001,
+     "capacity": 0.59730712890625,
+     "capacity_se": 0.0012336201019550275,
+     "vs_default": 1.021161415268775,
+     "vs_default_se": 0.0024271622787999593,
+     "standard_seeds": 0.5979736328125,
      "stats": {
-      "intellect": 210.0,
-      "spirit": 118.0,
-      "healing": 535.0,
-      "mp5": 9.0,
-      "crit_gear": 0.03
+      "intellect": 204.0,
+      "spirit": 134.0,
+      "healing": 575.0,
+      "mp5": 15.0,
+      "crit_gear": 0.01
      }
     },
     "bis": {
-     "capacity": 0.59521240234375,
-     "capacity_se": 0.0012678967501719319,
-     "vs_default": 1.0330168452773394,
-     "vs_default_se": 0.002665859821120006,
-     "standard_seeds": 0.5992431640625,
+     "capacity": 0.619111328125,
+     "capacity_se": 0.0012676239549645142,
+     "vs_default": 1.0584380621653093,
+     "vs_default_se": 0.002539064291027662,
+     "standard_seeds": 0.61923828125,
      "stats": {
-      "intellect": 233.0,
-      "spirit": 104.0,
-      "healing": 547.0,
-      "mp5": 23.0,
-      "crit_gear": 0.01
+      "intellect": 211.0,
+      "spirit": 98.0,
+      "healing": 608.0,
+      "mp5": 31.0,
+      "crit_gear": 0.0
      }
     }
    },
-   "seconds": 2290
+   "seconds": 1946
   },
   "druid|Restoration": {
    "class": "druid",
@@ -2264,12 +2302,12 @@
    "build": "restoration-ml-heal",
    "build_reason": "the raid page's pick: the spec's raid healer builds ranked by healer-lab capacity (render_modes.rank_builds)",
    "capacities_of_spec_builds": {
-    "restoration-ml-heal": 0.599560546875,
-    "resto-raid-healer": 0.5944824218750001,
-    "opt-resto-heal-raid-heal": 0.5944824218750001,
-    "resto-regrowth-natures-grace": 0.5554443359375
+    "restoration-ml-heal": 0.6525634765625,
+    "resto-raid-healer": 0.6366943359375,
+    "opt-resto-heal-raid-heal": 0.6366943359375,
+    "resto-regrowth-natures-grace": 0.59384765625
    },
-   "date": "2026-10-15",
+   "date": "2026-10-22",
    "budgets": {
     "weight_seeds": 800,
     "weight_steps": 12,
@@ -2286,154 +2324,154 @@
       "mp5": 12.0,
       "crit_gear": 0.02
      },
-     "capacity": 0.6039781188964843,
-     "capacity_se": 0.0015851928371141718,
+     "capacity": 0.6607261657714844,
+     "capacity_se": 0.0018233108316241247,
      "weights": {
       "healing": {
-       "w": 0.00027475433349609336,
-       "se": 1.9474259257169762e-05,
-       "z": 14.108589696162031,
-       "pct_per_unit": 0.04549077605627356,
+       "w": 0.00035330657958984493,
+       "se": 2.308258168015067e-05,
+       "z": 15.306198608349893,
+       "pct_per_unit": 0.05347246679376065,
        "hp_eq": 1.0,
        "hp_eq_se": 0.0
       },
       "intellect": {
-       "w": 0.0004065673828124972,
-       "se": 3.441038891643751e-05,
-       "z": 11.815251022004109,
-       "pct_per_unit": 0.06731491921517418,
-       "hp_eq": 1.4797487546025476,
-       "hp_eq_se": 0.16601942415984783
+       "w": 0.0005241577148437515,
+       "se": 3.813402240505777e-05,
+       "z": 13.745146244373942,
+       "pct_per_unit": 0.07933055204976311,
+       "hp_eq": 1.4835775644264773,
+       "hp_eq_se": 0.14166207085195376
       },
       "spirit": {
-       "w": 0.000595925903320309,
-       "se": 3.225395429617708e-05,
-       "z": 18.476057163351953,
-       "pct_per_unit": 0.09866680342809647,
-       "hp_eq": 2.168940870695247,
-       "hp_eq_se": 0.19604551990559585
+       "w": 0.0006978057861328147,
+       "se": 4.435464604261401e-05,
+       "z": 15.732416970758674,
+       "pct_per_unit": 0.10561194974290672,
+       "hp_eq": 1.9750715849755764,
+       "hp_eq_se": 0.1769215341532842
       },
       "mp5": {
-       "w": 0.0009268569946289038,
-       "se": 0.00010714651248387484,
-       "z": 8.65037016270961,
-       "pct_per_unit": 0.15345870415344592,
-       "hp_eq": 3.373402642408486,
-       "hp_eq_se": 0.4723618294781268
+       "w": 0.0012586212158203144,
+       "se": 0.00012513574621482166,
+       "z": 10.058046992101106,
+       "pct_per_unit": 0.1904905967134977,
+       "hp_eq": 3.5624052551793772,
+       "hp_eq_se": 0.4449122248430678
       },
       "crit_gear": {
-       "w": 0.08450317382812655,
-       "se": 0.03293969910583588,
-       "z": 2.5653899738615173,
-       "pct_per_unit": 13.99109854882169,
-       "hp_eq": 307.5590210093195,
-       "hp_eq_se": 117.68608873919166
+       "w": 0.1639480590820308,
+       "se": 0.04782742119507543,
+       "z": 3.42790924087941,
+       "pct_per_unit": 24.813314134547703,
+       "hp_eq": 464.03907697490035,
+       "hp_eq_se": 141.99484693826827
       }
      }
     },
     "prebis": {
      "gear": {
-      "intellect": 151.0,
-      "spirit": 174.0,
-      "healing": 573.0,
-      "mp5": 0.0,
+      "intellect": 137.0,
+      "spirit": 197.0,
+      "healing": 578.0,
+      "mp5": 5.0,
       "crit_gear": 0.0
      },
-     "capacity": 0.6011692810058593,
-     "capacity_se": 0.0014608534237573268,
+     "capacity": 0.6656356811523437,
+     "capacity_se": 0.0018041859752606789,
      "weights": {
       "healing": {
-       "w": 0.00020869903564453064,
-       "se": 1.865872531638208e-05,
-       "z": 11.185063936886195,
-       "pct_per_unit": 0.03471551894590178,
+       "w": 0.00029962921142578035,
+       "se": 1.991548222155286e-05,
+       "z": 15.045039235932572,
+       "pct_per_unit": 0.045013994878859924,
        "hp_eq": 1.0,
        "hp_eq_se": 0.0
       },
       "intellect": {
-       "w": 0.00041073303222656233,
-       "se": 3.68475093242255e-05,
-       "z": 11.14683298163995,
-       "pct_per_unit": 0.06832235864403043,
-       "hp_eq": 1.968063872255494,
-       "hp_eq_se": 0.24799604252595628
+       "w": 0.000622348022460939,
+       "se": 4.8520545201726264e-05,
+       "z": 12.826484530903357,
+       "pct_per_unit": 0.09349679412971591,
+       "hp_eq": 2.077060575968234,
+       "hp_eq_se": 0.2086603700379691
       },
       "spirit": {
-       "w": 0.0005136840820312493,
-       "se": 3.2540112163931114e-05,
-       "z": 15.786180436115377,
-       "pct_per_unit": 0.08544749345338601,
-       "hp_eq": 2.4613629883091,
-       "hp_eq_se": 0.26978546282967697
+       "w": 0.0005979492187500002,
+       "se": 4.311052686576935e-05,
+       "z": 13.870144074364914,
+       "pct_per_unit": 0.089831304973741,
+       "hp_eq": 1.9956305858987156,
+       "hp_eq_se": 0.19299475612552988
       },
       "mp5": {
-       "w": 0.001117286682128904,
-       "se": 0.00019751490717546453,
-       "z": 5.6567207918962294,
-       "pct_per_unit": 0.18585225782985648,
-       "hp_eq": 5.353578557171376,
-       "hp_eq_se": 1.110198732126946
+       "w": 0.0010359191894531246,
+       "se": 0.00016679062766073902,
+       "z": 6.210895683900412,
+       "pct_per_unit": 0.15562855459607405,
+       "hp_eq": 3.457337101825691,
+       "hp_eq_se": 0.6163446718589924
       },
       "crit_gear": {
-       "w": 0.059211730957037245,
-       "se": 0.04655806132978043,
-       "z": 1.2717825713924864,
-       "pct_per_unit": 9.849427245844277,
-       "hp_eq": 283.7182777302833,
-       "hp_eq_se": 227.86992333520726
+       "w": 0.22970581054688188,
+       "se": 0.10768603681687401,
+       "z": 2.1331067363683296,
+       "pct_per_unit": 34.50923937088481,
+       "hp_eq": 766.6335650447124,
+       "hp_eq_se": 366.7491092179315
       }
      }
     },
     "bis": {
      "gear": {
-      "intellect": 174.0,
-      "spirit": 156.0,
-      "healing": 690.0,
-      "mp5": 0.0,
+      "intellect": 149.0,
+      "spirit": 170.0,
+      "healing": 628.0,
+      "mp5": 9.0,
       "crit_gear": 0.0
      },
-     "capacity": 0.627442626953125,
-     "capacity_se": 0.0016234401795991718,
+     "capacity": 0.6729315185546876,
+     "capacity_se": 0.0021797140430431725,
      "weights": {
       "healing": {
-       "w": 0.00020792541503906304,
-       "se": 1.883107730812763e-05,
-       "z": 11.041610187077344,
-       "pct_per_unit": 0.033138554205147545,
+       "w": 0.00028600158691406306,
+       "se": 2.1674110181080896e-05,
+       "z": 13.195539956408954,
+       "pct_per_unit": 0.04250084578120714,
        "hp_eq": 1.0,
        "hp_eq_se": 0.0
       },
       "intellect": {
-       "w": 0.0003730041503906278,
-       "se": 3.555021286024865e-05,
-       "z": 10.49231834017263,
-       "pct_per_unit": 0.059448327921541456,
-       "hp_eq": 1.7939324556382459,
-       "hp_eq_se": 0.23227693600911722
+       "w": 0.000681500244140627,
+       "se": 4.351280111463072e-05,
+       "z": 15.662063270651627,
+       "pct_per_unit": 0.10127334288106214,
+       "hp_eq": 2.3828547648772394,
+       "hp_eq_se": 0.2405832895385795
       },
       "spirit": {
-       "w": 0.0005699798583984373,
-       "se": 3.4674738176330615e-05,
-       "z": 16.437899415416847,
-       "pct_per_unit": 0.09084174933511797,
-       "hp_eq": 2.741270749856889,
-       "hp_eq_se": 0.32345430051071544
+       "w": 0.0007086364746093765,
+       "se": 4.136504010838199e-05,
+       "z": 17.131289435539124,
+       "pct_per_unit": 0.10530588255568345,
+       "hp_eq": 2.477736163129422,
+       "hp_eq_se": 0.24671762582605414
       },
       "mp5": {
-       "w": 0.0007929611206054649,
-       "se": 0.00021774893344712705,
-       "z": 3.641630331098768,
-       "pct_per_unit": 0.12637986112867422,
-       "hp_eq": 3.8136805953062107,
-       "hp_eq_se": 1.126314154163661
+       "w": 0.001588153839111324,
+       "se": 0.00014306434033270875,
+       "z": 11.100976214044199,
+       "pct_per_unit": 0.23600526878609243,
+       "hp_eq": 5.552954640033266,
+       "hp_eq_se": 0.6847183131547253
       },
       "crit_gear": {
-       "w": 0.05296325683593617,
-       "se": 0.0491411399381624,
-       "z": 1.077778352365928,
-       "pct_per_unit": 8.441131437487263,
-       "hp_eq": 254.72238122495,
-       "hp_eq_se": 240.35798914960787
+       "w": 0.425193786621092,
+       "se": 0.10606997115762756,
+       "z": 4.008616029405943,
+       "pct_per_unit": 63.1852981911617,
+       "hp_eq": 1486.683312526,
+       "hp_eq_se": 391.5049981418484
       }
      }
     }
@@ -2447,7 +2485,7 @@
        "enchant": 1510
       },
       {
-       "id": 22327
+       "id": 19426
       },
       {
        "id": 16718
@@ -2460,17 +2498,17 @@
        "enchant": 1893
       },
       {
-       "id": 13208,
+       "id": 16697,
        "enchant": 2566
       },
       {
-       "id": 12554
+       "id": 16717
       },
       {
        "id": 19047
       },
       {
-       "id": 12756,
+       "id": 16694,
        "enchant": 1510
       },
       {
@@ -2478,44 +2516,46 @@
        "enchant": 851
       },
       {
-       "id": 22334
+       "id": 275983
       },
       {
-       "id": 18395
+       "id": 21210
       },
       {
-       "id": 18470
+       "id": 272439
       },
       {
-       "id": 10659
+       "id": 1713
       },
       {
-       "id": 22394,
+       "id": 7721,
        "enchant": 2505
       },
-      {},
+      {
+       "id": 249456
+      },
       {}
      ],
      "names": [
       "Living Crown",
-      "Amulet of the Redeemed",
+      "Orb of the Darkmoon",
       "Wildheart Spaulders",
       "Hide of the Wild",
       "Ironfeather Breastplate",
-      "Bleak Howler Armguards",
-      "Hands of the Exalted Herald",
+      "Devout Bracers",
+      "Wildheart Gloves",
       "Wisdom of the Timbermaw",
-      "Leggings of Arcana",
+      "Devout Skirt",
       "Mooncloth Boots",
-      "Band of Mending",
-      "Emerald Flame Ring",
-      "Royal Seal of Eldre'Thalas",
-      "Shard of the Splithooves",
-      "Staff of Metanoia",
-      null,
+      "Vigilant Watcher's Signet",
+      "Signet Ring of the Bronze Dragonflight",
+      "Serenity Field",
+      "Ankh of Life",
+      "Hand of Righteousness",
+      "Twisting Essence Jar",
       null
      ],
-     "ilvl": 60.3,
+     "ilvl": 59.1,
      "rows": [
       {
        "slot": "Head",
@@ -2525,14 +2565,14 @@
        "source": "crafted",
        "effects": false,
        "set": null,
-       "enchant": "Lesser Arcanum of Voracity"
+       "enchant": "Lesser Arcane Amalgamation"
       },
       {
        "slot": "Neck",
-       "id": 22327,
-       "name": "Amulet of the Redeemed",
-       "ilvl": 63,
-       "source": "Stratholme",
+       "id": 19426,
+       "name": "Orb of the Darkmoon",
+       "ilvl": 65,
+       "source": "",
        "effects": false,
        "set": null,
        "enchant": null
@@ -2569,22 +2609,22 @@
       },
       {
        "slot": "Wrist",
-       "id": 13208,
-       "name": "Bleak Howler Armguards",
-       "ilvl": 61,
-       "source": "Gizrul the Slavener, Blackrock Spire",
+       "id": 16697,
+       "name": "Devout Bracers",
+       "ilvl": 57,
+       "source": "Stratholme",
        "effects": false,
-       "set": null,
+       "set": "Vestments of the Devout",
        "enchant": "Enchant Bracer - Healing Power"
       },
       {
        "slot": "Hands",
-       "id": 12554,
-       "name": "Hands of the Exalted Herald",
+       "id": 16717,
+       "name": "Wildheart Gloves",
        "ilvl": 59,
-       "source": "Blackrock Depths",
+       "source": "The Unforgiven, Stratholme",
        "effects": false,
-       "set": null,
+       "set": "Wildheart Raiment",
        "enchant": null
       },
       {
@@ -2599,13 +2639,13 @@
       },
       {
        "slot": "Legs",
-       "id": 12756,
-       "name": "Leggings of Arcana",
-       "ilvl": 62,
-       "source": "quest: Leggings of Arcana",
+       "id": 16694,
+       "name": "Devout Skirt",
+       "ilvl": 61,
+       "source": "Baron Rivendare, Stratholme",
        "effects": false,
-       "set": null,
-       "enchant": "Lesser Arcanum of Voracity"
+       "set": "Vestments of the Devout",
+       "enchant": "Lesser Arcane Amalgamation"
       },
       {
        "slot": "Feet",
@@ -2619,78 +2659,88 @@
       },
       {
        "slot": "Finger 1",
-       "id": 22334,
-       "name": "Band of Mending",
-       "ilvl": 62,
-       "source": "Stratholme",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Finger 2",
-       "id": 18395,
-       "name": "Emerald Flame Ring",
-       "ilvl": 62,
-       "source": "Prince Tortheldrin, Dire Maul",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Trinket 1",
-       "id": 18470,
-       "name": "Royal Seal of Eldre'Thalas",
-       "ilvl": 62,
-       "source": "quest: The Emerald Dream...",
-       "effects": true,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Trinket 2",
-       "id": 10659,
-       "name": "Shard of the Splithooves",
-       "ilvl": 57,
+       "id": 275983,
+       "name": "Vigilant Watcher's Signet",
+       "ilvl": 65,
        "source": "",
        "effects": false,
        "set": null,
        "enchant": null
       },
       {
+       "slot": "Finger 2",
+       "id": 21210,
+       "name": "Signet Ring of the Bronze Dragonflight",
+       "ilvl": 80,
+       "source": "",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      },
+      {
+       "slot": "Trinket 1",
+       "id": 272439,
+       "name": "Serenity Field",
+       "ilvl": 65,
+       "source": "",
+       "effects": true,
+       "set": null,
+       "enchant": null
+      },
+      {
+       "slot": "Trinket 2",
+       "id": 1713,
+       "name": "Ankh of Life",
+       "ilvl": 45,
+       "source": "",
+       "effects": true,
+       "set": null,
+       "enchant": null
+      },
+      {
        "slot": "Main hand",
-       "id": 22394,
-       "name": "Staff of Metanoia",
-       "ilvl": 62,
-       "source": "Jandice Barov, Scholomance",
+       "id": 7721,
+       "name": "Hand of Righteousness",
+       "ilvl": 44,
+       "source": "High Inquisitor Whitemane, Scarlet Monastery",
        "effects": false,
        "set": null,
        "enchant": "Enchant Weapon - Healing Power"
+      },
+      {
+       "slot": "Off hand",
+       "id": 249456,
+       "name": "Twisting Essence Jar",
+       "ilvl": 50,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": null
       }
      ],
      "stats": {
-      "intellect": 180,
-      "spirit": 184,
-      "healing": 478,
-      "mp5": 6,
+      "intellect": 137,
+      "spirit": 197,
+      "healing": 578,
+      "mp5": 5,
       "crit_gear": 0.0,
       "ignored": {
-       "stamina": 55,
-       "spell_damage": 131,
+       "stamina": 80,
+       "spell_damage": 242,
        "haste_rating": 0
       }
      },
      "notes": [
-      "two-hander (0.0316) over main hand + off-hand (0.0304)",
+      "main hand + off-hand (0.0705) over a two-hander (0.0698)",
       "no wand or relic with static healing stats in the pool: ranged slot left empty (relic effects are not modelled)"
      ],
      "refresh_race": {
-      "first": 0.599001953125,
-      "refreshed": 0.6031533203125,
-      "ratio": 1.0069304735416007,
-      "ratio_se": 0.002803769661383104
+      "first": 0.6636337890625,
+      "refreshed": 0.6616533203125,
+      "ratio": 0.9970157204430508,
+      "ratio_se": 0.0031527842231310367
      },
-     "pool_items": 1554
+     "pool_items": 1110
     },
     "bis": {
      "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-restoration-bis.gear.json",
@@ -2700,30 +2750,30 @@
        "enchant": 1510
       },
       {
-       "id": 22327
+       "id": 18814
       },
       {
-       "id": 18810
+       "id": 16695
       },
       {
        "id": 18510
       },
       {
-       "id": 15066,
-       "enchant": 1891
+       "id": 14138,
+       "enchant": 1893
       },
       {
-       "id": 13208,
-       "enchant": 1884
+       "id": 18263,
+       "enchant": 2566
       },
       {
-       "id": 16831
+       "id": 16717
       },
       {
        "id": 19162
       },
       {
-       "id": 16901,
+       "id": 16694,
        "enchant": 1510
       },
       {
@@ -2734,41 +2784,43 @@
        "id": 19138
       },
       {
-       "id": 19140
-      },
-      {
-       "id": 18470
+       "id": 21210
       },
       {
        "id": 272439
       },
       {
-       "id": 18842,
-       "enchant": 2567
+       "id": 10659
       },
-      {},
+      {
+       "id": 7721,
+       "enchant": 2505
+      },
+      {
+       "id": 249456
+      },
       {}
      ],
      "names": [
       "Living Crown",
-      "Amulet of the Redeemed",
-      "Wild Growth Spaulders",
+      "Choker of the Fire Lord",
+      "Devout Mantle",
       "Hide of the Wild",
-      "Ironfeather Breastplate",
-      "Bleak Howler Armguards",
-      "Cenarion Gloves",
+      "Mooncloth Vest",
+      "Flarecore Wraps",
+      "Wildheart Gloves",
       "Corehound Belt",
-      "Stormrage Legguards",
+      "Devout Skirt",
       "Mooncloth Boots",
       "Band of Sulfuras",
-      "Cauterizing Band",
-      "Royal Seal of Eldre'Thalas",
+      "Signet Ring of the Bronze Dragonflight",
       "Serenity Field",
-      "Staff of Dominance",
-      null,
+      "Shard of the Splithooves",
+      "Hand of Righteousness",
+      "Twisting Essence Jar",
       null
      ],
-     "ilvl": 66.0,
+     "ilvl": 62.8,
      "rows": [
       {
        "slot": "Head",
@@ -2778,102 +2830,12 @@
        "source": "crafted",
        "effects": false,
        "set": null,
-       "enchant": "Lesser Arcanum of Voracity"
+       "enchant": "Lesser Arcane Amalgamation"
       },
       {
        "slot": "Neck",
-       "id": 22327,
-       "name": "Amulet of the Redeemed",
-       "ilvl": 63,
-       "source": "Stratholme",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Shoulder",
-       "id": 18810,
-       "name": "Wild Growth Spaulders",
-       "ilvl": 71,
-       "source": "Molten Core",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Back",
-       "id": 18510,
-       "name": "Hide of the Wild",
-       "ilvl": 62,
-       "source": "crafted",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Chest",
-       "id": 15066,
-       "name": "Ironfeather Breastplate",
-       "ilvl": 58,
-       "source": "crafted",
-       "effects": false,
-       "set": "Ironfeather Armor",
-       "enchant": "Enchant Chest - Greater Stats"
-      },
-      {
-       "slot": "Wrist",
-       "id": 13208,
-       "name": "Bleak Howler Armguards",
-       "ilvl": 61,
-       "source": "Gizrul the Slavener, Blackrock Spire",
-       "effects": false,
-       "set": null,
-       "enchant": "Enchant Bracer - Superior Spirit"
-      },
-      {
-       "slot": "Hands",
-       "id": 16831,
-       "name": "Cenarion Gloves",
-       "ilvl": 66,
-       "source": "Shazzrah, Molten Core",
-       "effects": false,
-       "set": "Cenarion Raiment",
-       "enchant": null
-      },
-      {
-       "slot": "Waist",
-       "id": 19162,
-       "name": "Corehound Belt",
-       "ilvl": 70,
-       "source": "crafted",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Legs",
-       "id": 16901,
-       "name": "Stormrage Legguards",
-       "ilvl": 76,
-       "source": "Ragnaros, Molten Core",
-       "effects": false,
-       "set": "Stormrage Raiment",
-       "enchant": "Lesser Arcanum of Voracity"
-      },
-      {
-       "slot": "Feet",
-       "id": 15802,
-       "name": "Mooncloth Boots",
-       "ilvl": 56,
-       "source": "crafted",
-       "effects": false,
-       "set": null,
-       "enchant": "Enchant Boots - Spirit"
-      },
-      {
-       "slot": "Finger 1",
-       "id": 19138,
-       "name": "Band of Sulfuras",
+       "id": 18814,
+       "name": "Choker of the Fire Lord",
        "ilvl": 78,
        "source": "Ragnaros, Molten Core",
        "effects": false,
@@ -2881,403 +2843,13 @@
        "enchant": null
       },
       {
-       "slot": "Finger 2",
-       "id": 19140,
-       "name": "Cauterizing Band",
-       "ilvl": 71,
-       "source": "Majordomo Executus, Molten Core",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Trinket 1",
-       "id": 18470,
-       "name": "Royal Seal of Eldre'Thalas",
-       "ilvl": 62,
-       "source": "quest: The Emerald Dream...",
-       "effects": true,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Trinket 2",
-       "id": 272439,
-       "name": "Serenity Field",
-       "ilvl": 65,
-       "source": "",
-       "effects": true,
-       "set": null,
-       "enchant": null
-      },
-      {
-       "slot": "Main hand",
-       "id": 18842,
-       "name": "Staff of Dominance",
-       "ilvl": 70,
-       "source": "Golemagg the Incinerator, Molten Core",
-       "effects": false,
-       "set": null,
-       "enchant": "Enchant Weapon - Mighty Spirit"
-      }
-     ],
-     "stats": {
-      "intellect": 219,
-      "spirit": 198,
-      "healing": 512,
-      "mp5": 0,
-      "crit_gear": 0.01,
-      "ignored": {
-       "stamina": 104,
-       "spell_damage": 158,
-       "haste_rating": 0
-      }
-     },
-     "notes": [
-      "two-hander (0.0349) over main hand + off-hand (0.0318)",
-      "no wand or relic with static healing stats in the pool: ranged slot left empty (relic effects are not modelled)"
-     ],
-     "refresh_race": {
-      "first": 0.6255478515625,
-      "refreshed": 0.62695703125,
-      "ratio": 1.0022527128563867,
-      "ratio_se": 0.0029572917206266546
-     },
-     "pool_items": 1643
-    }
-   },
-   "check": {
-    "default": {
-     "capacity": 0.6049052734375,
-     "capacity_se": 0.001488133213430946,
-     "vs_default": 1.0,
-     "vs_default_se": 0.0,
-     "standard_seeds": 0.599560546875,
-     "stats": {
-      "intellect": 230.0,
-      "spirit": 190.0,
-      "healing": 370.0,
-      "mp5": 12.0,
-      "crit_gear": 0.02
-     }
-    },
-    "prebis": {
-     "capacity": 0.6031533203125,
-     "capacity_se": 0.001317231361990491,
-     "vs_default": 0.9971037562376599,
-     "vs_default_se": 0.0028895512995625694,
-     "standard_seeds": 0.6027343749999999,
-     "stats": {
-      "intellect": 180.0,
-      "spirit": 184.0,
-      "healing": 478.0,
-      "mp5": 6.0,
-      "crit_gear": 0.0
-     }
-    },
-    "bis": {
-     "capacity": 0.62695703125,
-     "capacity_se": 0.0014020353785898563,
-     "vs_default": 1.0364548943129333,
-     "vs_default_se": 0.0030439160064719096,
-     "standard_seeds": 0.6227294921875,
-     "stats": {
-      "intellect": 219.0,
-      "spirit": 198.0,
-      "healing": 512.0,
-      "mp5": 0.0,
-      "crit_gear": 0.01
-     }
-    }
-   },
-   "seconds": 2134
-  },
-  "shaman|Restoration": {
-   "class": "shaman",
-   "spec": "Restoration",
-   "slug": "restoration",
-   "build": "resto-raid-healer",
-   "build_reason": "the raid page's pick: the spec's raid healer builds ranked by healer-lab capacity (render_modes.rank_builds)",
-   "capacities_of_spec_builds": {
-    "resto-raid-healer": 0.6947753906249999,
-    "opt-resto-heal-raid-heal": 0.6947753906249999
-   },
-   "date": "2026-10-15",
-   "budgets": {
-    "weight_seeds": 800,
-    "weight_steps": 12,
-    "verify_seeds": 1000,
-    "verify_steps": 10,
-    "boot": 400
-   },
-   "weights": {
-    "default": {
-     "gear": {
-      "intellect": 250.0,
-      "spirit": 150.0,
-      "healing": 360.0,
-      "mp5": 20.0,
-      "crit_gear": 0.02
-     },
-     "capacity": 0.6982408142089844,
-     "capacity_se": 0.0012309240687564103,
-     "weights": {
-      "healing": {
-       "w": 0.0002572586059570314,
-       "se": 2.1787280199820506e-05,
-       "z": 11.807743031603863,
-       "pct_per_unit": 0.03684382246381169,
-       "hp_eq": 1.0,
-       "hp_eq_se": 0.0
-      },
-      "intellect": {
-       "w": 0.0007066131591796899,
-       "se": 3.920616171802425e-05,
-       "z": 18.02301291979925,
-       "pct_per_unit": 0.10119906267298198,
-       "hp_eq": 2.746703678001395,
-       "hp_eq_se": 0.2956424901177847
-      },
-      "spirit": {
-       "w": 0.0003789550781250006,
-       "se": 4.412228994974982e-05,
-       "z": 8.588744567804312,
-       "pct_per_unit": 0.05427283401562643,
-       "hp_eq": 1.4730511219060851,
-       "hp_eq_se": 0.20919651644801904
-      },
-      "mp5": {
-       "w": 0.0013627624511718742,
-       "se": 0.00012245438048202496,
-       "z": 11.128735826415893,
-       "pct_per_unit": 0.19517083840418378,
-       "hp_eq": 5.2972472819801,
-       "hp_eq_se": 0.6603171086468113
-      },
-      "crit_gear": {
-       "w": 0.4426002502441434,
-       "se": 0.05107804521539772,
-       "z": 8.66517597487696,
-       "pct_per_unit": 63.38790876118458,
-       "hp_eq": 1720.448762433505,
-       "hp_eq_se": 254.6552835790458
-      }
-     }
-    },
-    "prebis": {
-     "gear": {
-      "intellect": 255.0,
-      "spirit": 102.0,
-      "healing": 383.0,
-      "mp5": 3.0,
-      "crit_gear": 0.05
-     },
-     "capacity": 0.6706404113769532,
-     "capacity_se": 0.0018703665172739683,
-     "weights": {
-      "healing": {
-       "w": 0.0003212310791015627,
-       "se": 2.0658026287455846e-05,
-       "z": 15.549940475030935,
-       "pct_per_unit": 0.04789915335433094,
-       "hp_eq": 1.0,
-       "hp_eq_se": 0.0
-      },
-      "intellect": {
-       "w": 0.0008201568603515641,
-       "se": 3.984991388803518e-05,
-       "z": 20.58114511002278,
-       "pct_per_unit": 0.12229457790466652,
-       "hp_eq": 2.553167839940722,
-       "hp_eq_se": 0.20804464137483472
-      },
-      "spirit": {
-       "w": 0.0005293945312500004,
-       "se": 3.9221306690846116e-05,
-       "z": 13.497626058785952,
-       "pct_per_unit": 0.0789386565839437,
-       "hp_eq": 1.6480177843645796,
-       "hp_eq_se": 0.16408505515178565
-      },
-      "mp5": {
-       "w": 0.0018869850852272724,
-       "se": 0.0001841977270514351,
-       "z": 10.244345114532024,
-       "pct_per_unit": 0.2813706202632392,
-       "hp_eq": 5.874229512614095,
-       "hp_eq_se": 0.7180192699066394
-      },
-      "crit_gear": {
-       "w": 0.3509559631347691,
-       "se": 0.05417425572592409,
-       "z": 6.478279367792507,
-       "pct_per_unit": 52.331466637119185,
-       "hp_eq": 1092.5342719525852,
-       "hp_eq_se": 183.9069426528547
-      }
-     }
-    },
-    "bis": {
-     "gear": {
-      "intellect": 277.0,
-      "spirit": 91.0,
-      "healing": 484.0,
-      "mp5": 9.0,
-      "crit_gear": 0.04
-     },
-     "capacity": 0.7158674621582033,
-     "capacity_se": 0.0018149226410943992,
-     "weights": {
-      "healing": {
-       "w": 0.00035854339599609373,
-       "se": 2.3155037306458095e-05,
-       "z": 15.484466349622057,
-       "pct_per_unit": 0.05008516449611414,
-       "hp_eq": 1.0,
-       "hp_eq_se": 0.0
-      },
-      "intellect": {
-       "w": 0.000874786376953125,
-       "se": 3.817389393138227e-05,
-       "z": 22.915827725763503,
-       "pct_per_unit": 0.1221994884801457,
-       "hp_eq": 2.4398340248962658,
-       "hp_eq_se": 0.18884304063721236
-      },
-      "spirit": {
-       "w": 0.0005154693603515636,
-       "se": 4.058024365138238e-05,
-       "z": 12.702470807712954,
-       "pct_per_unit": 0.07200625640918533,
-       "hp_eq": 1.437676348547721,
-       "hp_eq_se": 0.13568716316872523
-      },
-      "mp5": {
-       "w": 0.0016398525238037198,
-       "se": 0.00013065194485975347,
-       "z": 12.551305880398465,
-       "pct_per_unit": 0.22907208533544443,
-       "hp_eq": 4.573651452282182,
-       "hp_eq_se": 0.4478279494802838
-      },
-      "crit_gear": {
-       "w": 0.49481964111328386,
-       "se": 0.05206566442609536,
-       "z": 9.50376119401407,
-       "pct_per_unit": 69.12168344982427,
-       "hp_eq": 1380.0829875518746,
-       "hp_eq_se": 167.9966872766811
-      }
-     }
-    }
-   },
-   "sets": {
-    "prebis": {
-     "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-restoration-prebis.gear.json",
-     "items": [
-      {
-       "id": 252561,
-       "enchant": 1509
-      },
-      {
-       "id": 22327
-      },
-      {
-       "id": 227808
-      },
-      {
-       "id": 18510
-      },
-      {
-       "id": 14138,
-       "enchant": 1893
-      },
-      {
-       "id": 13208,
-       "enchant": 2566
-      },
-      {
-       "id": 12554
-      },
-      {
-       "id": 228190
-      },
-      {
-       "id": 252603,
-       "enchant": 1509
-      },
-      {
-       "id": 15802,
-       "enchant": 851
-      },
-      {
-       "id": 21207
-      },
-      {
-       "id": 18395
-      },
-      {
-       "id": 13965
-      },
-      {
-       "id": 13968
-      },
-      {
-       "id": 18717,
-       "enchant": 2568
-      },
-      {},
-      {}
-     ],
-     "names": [
-      "Living Crown",
-      "Amulet of the Redeemed",
-      "Rugged Mantle of the Timbermaw",
-      "Hide of the Wild",
-      "Mooncloth Vest",
-      "Bleak Howler Armguards",
-      "Hands of the Exalted Herald",
-      "Knowledge of the Timbermaw",
-      "Red Dragonscale Leggings",
-      "Mooncloth Boots",
-      "Signet Ring of the Bronze Dragonflight",
-      "Emerald Flame Ring",
-      "Blackhand's Breadth",
-      "Eye of the Beast",
-      "Hammer of the Grand Crusader",
-      null,
-      null
-     ],
-     "ilvl": 61.9,
-     "rows": [
-      {
-       "slot": "Head",
-       "id": 252561,
-       "name": "Living Crown",
-       "ilvl": 61,
-       "source": "crafted",
-       "effects": false,
-       "set": null,
-       "enchant": "Lesser Arcanum of Voracity"
-      },
-      {
-       "slot": "Neck",
-       "id": 22327,
-       "name": "Amulet of the Redeemed",
-       "ilvl": 63,
-       "source": "Stratholme",
-       "effects": false,
-       "set": null,
-       "enchant": null
-      },
-      {
        "slot": "Shoulder",
-       "id": 227808,
-       "name": "Rugged Mantle of the Timbermaw",
-       "ilvl": 65,
-       "source": "",
+       "id": 16695,
+       "name": "Devout Mantle",
+       "ilvl": 60,
+       "source": "Solakar Flamewreath, Blackrock Spire",
        "effects": false,
-       "set": null,
+       "set": "Vestments of the Devout",
        "enchant": null
       },
       {
@@ -3302,43 +2874,43 @@
       },
       {
        "slot": "Wrist",
-       "id": 13208,
-       "name": "Bleak Howler Armguards",
-       "ilvl": 61,
-       "source": "Gizrul the Slavener, Blackrock Spire",
+       "id": 18263,
+       "name": "Flarecore Wraps",
+       "ilvl": 64,
+       "source": "crafted",
        "effects": false,
        "set": null,
        "enchant": "Enchant Bracer - Healing Power"
       },
       {
        "slot": "Hands",
-       "id": 12554,
-       "name": "Hands of the Exalted Herald",
+       "id": 16717,
+       "name": "Wildheart Gloves",
        "ilvl": 59,
-       "source": "Blackrock Depths",
+       "source": "The Unforgiven, Stratholme",
        "effects": false,
-       "set": null,
+       "set": "Wildheart Raiment",
        "enchant": null
       },
       {
        "slot": "Waist",
-       "id": 228190,
-       "name": "Knowledge of the Timbermaw",
-       "ilvl": 65,
-       "source": "",
+       "id": 19162,
+       "name": "Corehound Belt",
+       "ilvl": 70,
+       "source": "crafted",
        "effects": false,
        "set": null,
        "enchant": null
       },
       {
        "slot": "Legs",
-       "id": 252603,
-       "name": "Red Dragonscale Leggings",
+       "id": 16694,
+       "name": "Devout Skirt",
        "ilvl": 61,
-       "source": "crafted",
+       "source": "Baron Rivendare, Stratholme",
        "effects": false,
-       "set": null,
-       "enchant": "Lesser Arcanum of Voracity"
+       "set": "Vestments of the Devout",
+       "enchant": "Lesser Arcane Amalgamation"
       },
       {
        "slot": "Feet",
@@ -3352,29 +2924,29 @@
       },
       {
        "slot": "Finger 1",
-       "id": 21207,
-       "name": "Signet Ring of the Bronze Dragonflight",
-       "ilvl": 65,
-       "source": "",
+       "id": 19138,
+       "name": "Band of Sulfuras",
+       "ilvl": 78,
+       "source": "Ragnaros, Molten Core",
        "effects": false,
        "set": null,
        "enchant": null
       },
       {
        "slot": "Finger 2",
-       "id": 18395,
-       "name": "Emerald Flame Ring",
-       "ilvl": 62,
-       "source": "Prince Tortheldrin, Dire Maul",
+       "id": 21210,
+       "name": "Signet Ring of the Bronze Dragonflight",
+       "ilvl": 80,
+       "source": "",
        "effects": false,
        "set": null,
        "enchant": null
       },
       {
        "slot": "Trinket 1",
-       "id": 13965,
-       "name": "Blackhand's Breadth",
-       "ilvl": 63,
+       "id": 272439,
+       "name": "Serenity Field",
+       "ilvl": 65,
        "source": "",
        "effects": true,
        "set": null,
@@ -3382,48 +2954,551 @@
       },
       {
        "slot": "Trinket 2",
-       "id": 13968,
-       "name": "Eye of the Beast",
+       "id": 10659,
+       "name": "Shard of the Splithooves",
+       "ilvl": 57,
+       "source": "",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      },
+      {
+       "slot": "Main hand",
+       "id": 7721,
+       "name": "Hand of Righteousness",
+       "ilvl": 44,
+       "source": "High Inquisitor Whitemane, Scarlet Monastery",
+       "effects": false,
+       "set": null,
+       "enchant": "Enchant Weapon - Healing Power"
+      },
+      {
+       "slot": "Off hand",
+       "id": 249456,
+       "name": "Twisting Essence Jar",
+       "ilvl": 50,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      }
+     ],
+     "stats": {
+      "intellect": 180,
+      "spirit": 146,
+      "healing": 569,
+      "mp5": 20,
+      "crit_gear": 0.0,
+      "ignored": {
+       "stamina": 67,
+       "spell_damage": 233,
+       "haste_rating": 0
+      }
+     },
+     "notes": [
+      "main hand + off-hand (0.0594) over a two-hander (0.0592)",
+      "no wand or relic with static healing stats in the pool: ranged slot left empty (relic effects are not modelled)"
+     ],
+     "refresh_race": {
+      "first": 0.6729267578125,
+      "refreshed": 0.6750786132812501,
+      "ratio": 1.0031977558386074,
+      "ratio_se": 0.003202325435218892
+     },
+     "pool_items": 1156
+    }
+   },
+   "check": {
+    "default": {
+     "capacity": 0.66201513671875,
+     "capacity_se": 0.0015482046973691367,
+     "vs_default": 1.0,
+     "vs_default_se": 0.0,
+     "standard_seeds": 0.6525634765625,
+     "stats": {
+      "intellect": 230.0,
+      "spirit": 190.0,
+      "healing": 370.0,
+      "mp5": 12.0,
+      "crit_gear": 0.02
+     }
+    },
+    "prebis": {
+     "capacity": 0.6636337890625,
+     "capacity_se": 0.0017731407529216875,
+     "vs_default": 1.0024450382687211,
+     "vs_default_se": 0.003403790563441656,
+     "standard_seeds": 0.6544677734375001,
+     "stats": {
+      "intellect": 137.0,
+      "spirit": 197.0,
+      "healing": 578.0,
+      "mp5": 5.0,
+      "crit_gear": 0.0
+     }
+    },
+    "bis": {
+     "capacity": 0.6750786132812501,
+     "capacity_se": 0.001500245679350759,
+     "vs_default": 1.0197328970863848,
+     "vs_default_se": 0.003054827652231459,
+     "standard_seeds": 0.6671630859375001,
+     "stats": {
+      "intellect": 180.0,
+      "spirit": 146.0,
+      "healing": 569.0,
+      "mp5": 20.0,
+      "crit_gear": 0.0
+     }
+    }
+   },
+   "seconds": 1872
+  },
+  "shaman|Restoration": {
+   "class": "shaman",
+   "spec": "Restoration",
+   "slug": "restoration",
+   "build": "resto-raid-healer",
+   "build_reason": "the raid page's pick: the spec's raid healer builds ranked by healer-lab capacity (render_modes.rank_builds)",
+   "capacities_of_spec_builds": {
+    "resto-raid-healer": 0.6947753906249999,
+    "opt-resto-heal-raid-heal": 0.6947753906249999
+   },
+   "date": "2026-10-22",
+   "budgets": {
+    "weight_seeds": 800,
+    "weight_steps": 12,
+    "verify_seeds": 1000,
+    "verify_steps": 10,
+    "boot": 400
+   },
+   "weights": {
+    "default": {
+     "gear": {
+      "intellect": 250.0,
+      "spirit": 150.0,
+      "healing": 360.0,
+      "mp5": 20.0,
+      "crit_gear": 0.02
+     },
+     "capacity": 0.7127491760253907,
+     "capacity_se": 0.0018648846761356583,
+     "weights": {
+      "healing": {
+       "w": 0.0002660659790039066,
+       "se": 2.2245548414493506e-05,
+       "z": 11.960414463441964,
+       "pct_per_unit": 0.0373295386306316,
+       "hp_eq": 1.0,
+       "hp_eq_se": 0.0
+      },
+      "intellect": {
+       "w": 0.0008094451904296873,
+       "se": 4.494241919548142e-05,
+       "z": 18.01071693334813,
+       "pct_per_unit": 0.11356662591229036,
+       "hp_eq": 3.042272422276891,
+       "hp_eq_se": 0.30799871113937366
+      },
+      "spirit": {
+       "w": 0.0005287994384765637,
+       "se": 3.6050518849868386e-05,
+       "z": 14.668289260377573,
+       "pct_per_unit": 0.07419151873670156,
+       "hp_eq": 1.9874748378438847,
+       "hp_eq_se": 0.22243676446954
+      },
+      "mp5": {
+       "w": 0.0016443157196044944,
+       "se": 0.00012160695193483521,
+       "z": 13.521560185848783,
+       "pct_per_unit": 0.23070047288920584,
+       "hp_eq": 6.180105121896668,
+       "hp_eq_se": 0.6600769998335825
+      },
+      "crit_gear": {
+       "w": 0.40332412719726596,
+       "se": 0.047170667609544824,
+       "z": 8.550316279934412,
+       "pct_per_unit": 56.58710536101667,
+       "hp_eq": 1515.8801163050764,
+       "hp_eq_se": 223.85590148324823
+      }
+     }
+    },
+    "prebis": {
+     "gear": {
+      "intellect": 222.0,
+      "spirit": 110.0,
+      "healing": 508.0,
+      "mp5": 15.0,
+      "crit_gear": 0.01
+     },
+     "capacity": 0.7066494750976563,
+     "capacity_se": 0.0017652480135531756,
+     "weights": {
+      "healing": {
+       "w": 0.0003196243286132816,
+       "se": 2.108923587024281e-05,
+       "z": 15.155804154302043,
+       "pct_per_unit": 0.04523095818745365,
+       "hp_eq": 1.0,
+       "hp_eq_se": 0.0
+      },
+      "intellect": {
+       "w": 0.0006929260253906255,
+       "se": 4.080585422960532e-05,
+       "z": 16.981044471993833,
+       "pct_per_unit": 0.09805795515447963,
+       "hp_eq": 2.167938931297709,
+       "hp_eq_se": 0.19987812426843285
+      },
+      "spirit": {
+       "w": 0.00043917846679687457,
+       "se": 4.1139968126433655e-05,
+       "z": 10.67522622883826,
+       "pct_per_unit": 0.06214940819650106,
+       "hp_eq": 1.3740458015267145,
+       "hp_eq_se": 0.16214498315988904
+      },
+      "mp5": {
+       "w": 0.0013385868072509702,
+       "se": 0.00013150343033593298,
+       "z": 10.179101821385755,
+       "pct_per_unit": 0.1894272697317128,
+       "hp_eq": 4.188000372370111,
+       "hp_eq_se": 0.5018198561280822
+      },
+      "crit_gear": {
+       "w": 0.3017120361328137,
+       "se": 0.05837582372872048,
+       "z": 5.168441605807673,
+       "pct_per_unit": 42.69613815125501,
+       "hp_eq": 943.9582945447802,
+       "hp_eq_se": 193.60299038200958
+      }
+     }
+    },
+    "bis": {
+     "gear": {
+      "intellect": 242.0,
+      "spirit": 87.0,
+      "healing": 512.0,
+      "mp5": 24.0,
+      "crit_gear": 0.01
+     },
+     "capacity": 0.7260792541503907,
+     "capacity_se": 0.002166245198885698,
+     "weights": {
+      "healing": {
+       "w": 0.0003797286987304682,
+       "se": 2.4789185864831998e-05,
+       "z": 15.318320690361313,
+       "pct_per_unit": 0.05229851928145245,
+       "hp_eq": 1.0,
+       "hp_eq_se": 0.0
+      },
+      "intellect": {
+       "w": 0.0008681213378906238,
+       "se": 4.23114411295922e-05,
+       "z": 20.517413605264046,
+       "pct_per_unit": 0.11956288971600508,
+       "hp_eq": 2.286162043566839,
+       "hp_eq_se": 0.18212595421166722
+      },
+      "spirit": {
+       "w": 0.0005495086669921867,
+       "se": 4.526471300419527e-05,
+       "z": 12.139890668063147,
+       "pct_per_unit": 0.07568163721124149,
+       "hp_eq": 1.4471086036671368,
+       "hp_eq_se": 0.15322670948680575
+      },
+      "mp5": {
+       "w": 0.0018622684478759796,
+       "se": 0.00014116185701506945,
+       "z": 13.192433758342927,
+       "pct_per_unit": 0.2564828064196768,
+       "hp_eq": 4.904207804419385,
+       "hp_eq_se": 0.5089934605679844
+      },
+      "crit_gear": {
+       "w": 0.503250122070309,
+       "se": 0.07634987233288627,
+       "z": 6.591368219662935,
+       "pct_per_unit": 69.31063230269243,
+       "hp_eq": 1325.2886172491176,
+       "hp_eq_se": 220.81427927174346
+      }
+     }
+    }
+   },
+   "sets": {
+    "prebis": {
+     "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-restoration-prebis.gear.json",
+     "items": [
+      {
+       "id": 252561,
+       "enchant": 1509
+      },
+      {
+       "id": 22149
+      },
+      {
+       "id": 16718
+      },
+      {
+       "id": 18510
+      },
+      {
+       "id": 14138,
+       "enchant": 1893
+      },
+      {
+       "id": 252543,
+       "enchant": 2566
+      },
+      {
+       "id": 18409
+      },
+      {
+       "id": 19047
+      },
+      {
+       "id": 252603,
+       "enchant": 1509
+      },
+      {
+       "id": 15802,
+       "enchant": 851
+      },
+      {
+       "id": 21210
+      },
+      {
+       "id": 275983
+      },
+      {
+       "id": 272439
+      },
+      {
+       "id": 10659
+      },
+      {
+       "id": 7721,
+       "enchant": 2505
+      },
+      {
+       "id": 279262,
+       "enchant": 1890
+      },
+      {}
+     ],
+     "names": [
+      "Living Crown",
+      "Beads of Ogre Mojo",
+      "Wildheart Spaulders",
+      "Hide of the Wild",
+      "Mooncloth Vest",
+      "Mender's Leather Bracers",
+      "Mooncloth Gloves",
+      "Wisdom of the Timbermaw",
+      "Red Dragonscale Leggings",
+      "Mooncloth Boots",
+      "Signet Ring of the Bronze Dragonflight",
+      "Vigilant Watcher's Signet",
+      "Serenity Field",
+      "Shard of the Splithooves",
+      "Hand of Righteousness",
+      "Evergreen Shield",
+      null
+     ],
+     "ilvl": 60.6,
+     "rows": [
+      {
+       "slot": "Head",
+       "id": 252561,
+       "name": "Living Crown",
+       "ilvl": 61,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": "Lesser Arcane Amalgamation"
+      },
+      {
+       "slot": "Neck",
+       "id": 22149,
+       "name": "Beads of Ogre Mojo",
        "ilvl": 63,
+       "source": "",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      },
+      {
+       "slot": "Shoulder",
+       "id": 16718,
+       "name": "Wildheart Spaulders",
+       "ilvl": 60,
+       "source": "Gizrul the Slavener, Blackrock Spire",
+       "effects": false,
+       "set": "Wildheart Raiment",
+       "enchant": null
+      },
+      {
+       "slot": "Back",
+       "id": 18510,
+       "name": "Hide of the Wild",
+       "ilvl": 62,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      },
+      {
+       "slot": "Chest",
+       "id": 14138,
+       "name": "Mooncloth Vest",
+       "ilvl": 60,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": "Enchant Chest - Major Intellect"
+      },
+      {
+       "slot": "Wrist",
+       "id": 252543,
+       "name": "Mender's Leather Bracers",
+       "ilvl": 50,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": "Enchant Bracer - Healing Power"
+      },
+      {
+       "slot": "Hands",
+       "id": 18409,
+       "name": "Mooncloth Gloves",
+       "ilvl": 62,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      },
+      {
+       "slot": "Waist",
+       "id": 19047,
+       "name": "Wisdom of the Timbermaw",
+       "ilvl": 58,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      },
+      {
+       "slot": "Legs",
+       "id": 252603,
+       "name": "Red Dragonscale Leggings",
+       "ilvl": 61,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": "Lesser Arcane Amalgamation"
+      },
+      {
+       "slot": "Feet",
+       "id": 15802,
+       "name": "Mooncloth Boots",
+       "ilvl": 56,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": "Enchant Boots - Spirit"
+      },
+      {
+       "slot": "Finger 1",
+       "id": 21210,
+       "name": "Signet Ring of the Bronze Dragonflight",
+       "ilvl": 80,
+       "source": "",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      },
+      {
+       "slot": "Finger 2",
+       "id": 275983,
+       "name": "Vigilant Watcher's Signet",
+       "ilvl": 65,
+       "source": "",
+       "effects": false,
+       "set": null,
+       "enchant": null
+      },
+      {
+       "slot": "Trinket 1",
+       "id": 272439,
+       "name": "Serenity Field",
+       "ilvl": 65,
        "source": "",
        "effects": true,
        "set": null,
        "enchant": null
       },
       {
-       "slot": "Main hand",
-       "id": 18717,
-       "name": "Hammer of the Grand Crusader",
-       "ilvl": 63,
-       "source": "Stratholme",
+       "slot": "Trinket 2",
+       "id": 10659,
+       "name": "Shard of the Splithooves",
+       "ilvl": 57,
+       "source": "",
        "effects": false,
        "set": null,
-       "enchant": "Enchant Weapon - Mighty Intellect"
+       "enchant": null
+      },
+      {
+       "slot": "Main hand",
+       "id": 7721,
+       "name": "Hand of Righteousness",
+       "ilvl": 44,
+       "source": "High Inquisitor Whitemane, Scarlet Monastery",
+       "effects": false,
+       "set": null,
+       "enchant": "Enchant Weapon - Healing Power"
+      },
+      {
+       "slot": "Off hand",
+       "id": 279262,
+       "name": "Evergreen Shield",
+       "ilvl": 65,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": "Enchant Shield - Superior Spirit"
       }
      ],
      "stats": {
-      "intellect": 255,
-      "spirit": 102,
-      "healing": 383,
-      "mp5": 3,
-      "crit_gear": 0.05,
+      "intellect": 196,
+      "spirit": 105,
+      "healing": 604,
+      "mp5": 11,
+      "crit_gear": 0.01,
       "ignored": {
-       "stamina": 41,
-       "spell_damage": 158,
+       "stamina": 79,
+       "spell_damage": 244,
        "haste_rating": 0
       }
      },
      "notes": [
-      "two-hander (0.0430) over main hand + off-hand (0.0393)",
+      "main hand + off-hand (0.0655) over a two-hander (0.0595)",
       "no wand or relic with static healing stats in the pool: ranged slot left empty (relic effects are not modelled)"
      ],
      "refresh_race": {
-      "first": 0.67450732421875,
-      "refreshed": 0.6731552734375,
-      "ratio": 0.9979954987400381,
-      "ratio_se": 0.0029748185491046794
+      "first": 0.7076230468750001,
+      "refreshed": 0.7130312500000001,
+      "ratio": 1.0076427741420855,
+      "ratio_se": 0.0026310470707405723
      },
-     "pool_items": 1927
+     "pool_items": 1391
     },
     "bis": {
      "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-restoration-bis.gear.json",
@@ -3436,13 +3511,13 @@
        "id": 18814
       },
       {
-       "id": 18810
+       "id": 16718
       },
       {
        "id": 18510
       },
       {
-       "id": 16841,
+       "id": 14138,
        "enchant": 1893
       },
       {
@@ -3450,7 +3525,7 @@
        "enchant": 2566
       },
       {
-       "id": 12554
+       "id": 18409
       },
       {
        "id": 19162
@@ -3467,41 +3542,44 @@
        "id": 19140
       },
       {
-       "id": 19138
+       "id": 21210
       },
       {
        "id": 272439
       },
       {
-       "id": 13965
+       "id": 10659
       },
       {
-       "id": 18842,
+       "id": 7721,
        "enchant": 2505
       },
-      {},
+      {
+       "id": 279262,
+       "enchant": 1890
+      },
       {}
      ],
      "names": [
       "Living Crown",
       "Choker of the Fire Lord",
-      "Wild Growth Spaulders",
+      "Wildheart Spaulders",
       "Hide of the Wild",
-      "Earthfury Vestments",
+      "Mooncloth Vest",
       "Flarecore Wraps",
-      "Hands of the Exalted Herald",
+      "Mooncloth Gloves",
       "Corehound Belt",
       "Red Dragonscale Leggings",
       "Mooncloth Boots",
       "Cauterizing Band",
-      "Band of Sulfuras",
+      "Signet Ring of the Bronze Dragonflight",
       "Serenity Field",
-      "Blackhand's Breadth",
-      "Staff of Dominance",
-      null,
+      "Shard of the Splithooves",
+      "Hand of Righteousness",
+      "Evergreen Shield",
       null
      ],
-     "ilvl": 66.3,
+     "ilvl": 63.5,
      "rows": [
       {
        "slot": "Head",
@@ -3511,7 +3589,7 @@
        "source": "crafted",
        "effects": false,
        "set": null,
-       "enchant": "Lesser Arcanum of Voracity"
+       "enchant": "Lesser Arcane Amalgamation"
       },
       {
        "slot": "Neck",
@@ -3525,12 +3603,12 @@
       },
       {
        "slot": "Shoulder",
-       "id": 18810,
-       "name": "Wild Growth Spaulders",
-       "ilvl": 71,
-       "source": "Molten Core",
+       "id": 16718,
+       "name": "Wildheart Spaulders",
+       "ilvl": 60,
+       "source": "Gizrul the Slavener, Blackrock Spire",
        "effects": false,
-       "set": null,
+       "set": "Wildheart Raiment",
        "enchant": null
       },
       {
@@ -3545,12 +3623,12 @@
       },
       {
        "slot": "Chest",
-       "id": 16841,
-       "name": "Earthfury Vestments",
-       "ilvl": 66,
-       "source": "Golemagg the Incinerator, Molten Core",
+       "id": 14138,
+       "name": "Mooncloth Vest",
+       "ilvl": 60,
+       "source": "crafted",
        "effects": false,
-       "set": "The Earthfury",
+       "set": null,
        "enchant": "Enchant Chest - Major Intellect"
       },
       {
@@ -3565,10 +3643,10 @@
       },
       {
        "slot": "Hands",
-       "id": 12554,
-       "name": "Hands of the Exalted Herald",
-       "ilvl": 59,
-       "source": "Blackrock Depths",
+       "id": 18409,
+       "name": "Mooncloth Gloves",
+       "ilvl": 62,
+       "source": "crafted",
        "effects": false,
        "set": null,
        "enchant": null
@@ -3591,7 +3669,7 @@
        "source": "crafted",
        "effects": false,
        "set": null,
-       "enchant": "Lesser Arcanum of Voracity"
+       "enchant": "Lesser Arcane Amalgamation"
       },
       {
        "slot": "Feet",
@@ -3615,10 +3693,10 @@
       },
       {
        "slot": "Finger 2",
-       "id": 19138,
-       "name": "Band of Sulfuras",
-       "ilvl": 78,
-       "source": "Ragnaros, Molten Core",
+       "id": 21210,
+       "name": "Signet Ring of the Bronze Dragonflight",
+       "ilvl": 80,
+       "source": "",
        "effects": false,
        "set": null,
        "enchant": null
@@ -3635,57 +3713,67 @@
       },
       {
        "slot": "Trinket 2",
-       "id": 13965,
-       "name": "Blackhand's Breadth",
-       "ilvl": 63,
+       "id": 10659,
+       "name": "Shard of the Splithooves",
+       "ilvl": 57,
        "source": "",
-       "effects": true,
+       "effects": false,
        "set": null,
        "enchant": null
       },
       {
        "slot": "Main hand",
-       "id": 18842,
-       "name": "Staff of Dominance",
-       "ilvl": 70,
-       "source": "Golemagg the Incinerator, Molten Core",
+       "id": 7721,
+       "name": "Hand of Righteousness",
+       "ilvl": 44,
+       "source": "High Inquisitor Whitemane, Scarlet Monastery",
        "effects": false,
        "set": null,
        "enchant": "Enchant Weapon - Healing Power"
+      },
+      {
+       "slot": "Off hand",
+       "id": 279262,
+       "name": "Evergreen Shield",
+       "ilvl": 65,
+       "source": "crafted",
+       "effects": false,
+       "set": null,
+       "enchant": "Enchant Shield - Superior Spirit"
       }
      ],
      "stats": {
-      "intellect": 255,
-      "spirit": 91,
-      "healing": 539,
-      "mp5": 9,
-      "crit_gear": 0.04,
+      "intellect": 206,
+      "spirit": 76,
+      "healing": 646,
+      "mp5": 20,
+      "crit_gear": 0.01,
       "ignored": {
-       "stamina": 81,
-       "spell_damage": 218,
+       "stamina": 73,
+       "spell_damage": 272,
        "haste_rating": 0
       }
      },
      "notes": [
-      "two-hander (0.0643) over main hand + off-hand (0.0534)",
+      "main hand + off-hand (0.0797) over a two-hander (0.0712)",
       "no wand or relic with static healing stats in the pool: ranged slot left empty (relic effects are not modelled)"
      ],
      "refresh_race": {
-      "first": 0.7184204101562501,
-      "refreshed": 0.71914404296875,
-      "ratio": 1.001007255365062,
-      "ratio_se": 0.00251019727058494
+      "first": 0.7290083007812501,
+      "refreshed": 0.735044921875,
+      "ratio": 1.0082805930841674,
+      "ratio_se": 0.0033266979060354632
      },
-     "pool_items": 2025
+     "pool_items": 1439
     }
    },
    "check": {
     "default": {
-     "capacity": 0.69629248046875,
-     "capacity_se": 0.001274040012590111,
+     "capacity": 0.7106699218750001,
+     "capacity_se": 0.0020300778898489575,
      "vs_default": 1.0,
      "vs_default_se": 0.0,
-     "standard_seeds": 0.69287109375,
+     "standard_seeds": 0.7077880859375001,
      "stats": {
       "intellect": 250.0,
       "spirit": 150.0,
@@ -3695,38 +3783,38 @@
      }
     },
     "prebis": {
-     "capacity": 0.67450732421875,
-     "capacity_se": 0.0017055936710601298,
-     "vs_default": 0.9687126360529787,
-     "vs_default_se": 0.0025012067933340497,
-     "standard_seeds": 0.661767578125,
+     "capacity": 0.7130312500000001,
+     "capacity_se": 0.001507456547053752,
+     "vs_default": 1.0033226791402259,
+     "vs_default_se": 0.0030298518398630533,
+     "standard_seeds": 0.711279296875,
      "stats": {
-      "intellect": 255.0,
-      "spirit": 102.0,
-      "healing": 383.0,
-      "mp5": 3.0,
-      "crit_gear": 0.05
+      "intellect": 196.0,
+      "spirit": 105.0,
+      "healing": 604.0,
+      "mp5": 11.0,
+      "crit_gear": 0.01
      }
     },
     "bis": {
-     "capacity": 0.71914404296875,
-     "capacity_se": 0.0015821859165733219,
-     "vs_default": 1.0328189132311412,
-     "vs_default_se": 0.0026272833792647,
-     "standard_seeds": 0.7122314453125002,
+     "capacity": 0.735044921875,
+     "capacity_se": 0.0018230337195638867,
+     "vs_default": 1.0342986233829765,
+     "vs_default_se": 0.00348775289698008,
+     "standard_seeds": 0.7261962890625001,
      "stats": {
-      "intellect": 255.0,
-      "spirit": 91.0,
-      "healing": 539.0,
-      "mp5": 9.0,
-      "crit_gear": 0.04
+      "intellect": 206.0,
+      "spirit": 76.0,
+      "healing": 646.0,
+      "mp5": 20.0,
+      "crit_gear": 0.01
      }
     }
    },
-   "seconds": 1865
+   "seconds": 1986
   }
  },
- "date": "2026-10-15",
+ "date": "2026-10-22",
  "tool": "_reference/data/heallab/heal_gear.py",
  "deltas": {
   "healing": 50.0,

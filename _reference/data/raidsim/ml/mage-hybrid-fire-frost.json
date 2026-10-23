@@ -14,104 +14,404 @@
   "bis": {
    "entry": "frostfire-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-fire-frost-bis.gear.json",
-   "date": "2026-10-14",
+   "date": "2026-10-22",
    "chosen": "all-slots",
-   "ilvl": 67.4,
+   "ilvl": 62.5,
    "trinkets": [
-    "Eye of the Beast",
+    "Alchemist's Stone",
     "Talisman of Ephemeral Power"
    ],
+   "trinket_screen": {
+    "Alchemist's Stone (13503)": 1.0217,
+    "Talisman of Ephemeral Power (18820)": 1.0187,
+    "Weakness Analyzer (272438)": 1.0069,
+    "Serenity Field (272439)": 1.002,
+    "Ankh of Life (1713)": 1.0,
+    "Jewel of the Guard Captain (270225)": 0.9965,
+    "Everlook Delivery Bot (274760)": 0.9935,
+    "Frozen Heart of the Mountain (249469)": 0.9929,
+    "Shard of the Splithooves (10659)": 0.9929,
+    "Enriched Seal (271903)": 0.9926,
+    "Darkspear Voodoo Seal (272061)": 0.9926,
+    "Rune of the Guard Captain (19120)": 0.9906,
+    "Cleansed Vilebranch Medallion (270275)": 0.9906,
+    "Enriched Seal (271905)": 0.9884,
+    "Darkspear Voodoo Seal (272059)": 0.9884,
+    "Dog Whistle (3456)": 0.9832,
+    "Minor Recombobulator (4381)": 0.9832,
+    "Gnomish Universal Remote (7506)": 0.9832,
+    "Demon's Blood (10779)": 0.9832,
+    "Smoking Heart of the Mountain (11811)": 0.9832,
+    "Heart of the Scale (13164)": 0.9832,
+    "Arcanite Dragonling (16022)": 0.9832,
+    "Stormpike Insignia Rank 6 (17904)": 0.9832,
+    "Gyrofreeze Ice Reflector (18634)": 0.9832,
+    "Major Recombobulator (18637)": 0.9832,
+    "Hyper-Radiant Flame Reflector (18638)": 0.9832,
+    "Ultra-Flash Shadow Reflector (18639)": 0.9832,
+    "Essence of the Pure Flame (18815)": 0.9832,
+    "Arena Grand Master (19024)": 0.9832,
+    "Talisman of Arathor (20071)": 0.9832,
+    "Defiler's Talisman (20072)": 0.9832,
+    "Defiler's Talisman (21115)": 0.9832,
+    "Defiler's Talisman (21116)": 0.9832,
+    "Talisman of Arathor (21117)": 0.9832,
+    "Talisman of Arathor (21118)": 0.9832,
+    "Talisman of Arathor (21119)": 0.9832,
+    "Defiler's Talisman (21120)": 0.9832,
+    "Defender of the Timbermaw (21326)": 0.9832,
+    "Molten Heart of the Mountain (249470)": 0.9832,
+    "Dormant Heart of the Mountain (249473)": 0.9832,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.9832,
+    "SAF-T Emergency Ripper: Everlook (260820)": 0.9832,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.9832,
+    "Gnomish Poultryizer (260824)": 0.9832,
+    "Volunteer's Lucky Seal (271904)": 0.9832,
+    "Volunteer's Lucky Seal (271906)": 0.9832,
+    "Relentless Raider's Seal (272060)": 0.9832,
+    "Relentless Raider's Seal (272062)": 0.9832,
+    "Adaptive Combat Assistant (272437)": 0.9832,
+    "Defender's Grip Stabilizer (272440)": 0.9832,
+    "Everlook Pathcarver (274759)": 0.9832,
+    "Parachute-Priest Pager (274761)": 0.9832
+   },
    "names": [
-    "Arcanist Crown",
+    "Dreadmist Mask",
     "Choker of the Fire Lord",
-    "Rugged Mantle of the Timbermaw",
-    "Sapphiron Drape",
-    "Robe of Volatile Power",
+    "Mantle of the Timbermaw",
+    "Arcanoweave Cloak",
+    "Robe of the Archmage",
     "Rockfury Bracers",
-    "Gloves of the Hypnotic Flame",
-    "Mana Igniting Cord",
-    "Netherwind Pants",
-    "Arcanist Boots",
-    "Ring of Spell Power",
-    "Rune Band of Wizardry",
-    "Eye of the Beast",
+    "Dreadmist Wraps",
+    "Belt of the Archmage",
+    "Magister's Leggings",
+    "Sorcerer's Boots",
+    "Channeler's Ring",
+    "Blessed Band of Light",
+    "Alchemist's Stone",
     "Talisman of Ephemeral Power",
-    "Azuresong Mageblade",
-    "Scepter of Interminable Focus",
-    "Bonecreeper Stylus"
+    "Sageblade",
+    "Therazane's Touch",
+    "Brilliant Wand"
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.038271868237389,
-    "keep-sets-and-effects": 1.0073669411874884
+    "all-slots": 1.0401811875643114,
+    "keep-sets-and-effects": 1.0401811875643114
    },
    "confirm_seed2": {
     "current": 1.0,
-    "all-slots": 1.0403519567186608
+    "all-slots": 1.0401208507646311
    },
    "weights": {
-    "StatFireDamage": 0.4389,
-    "StatIntellect": 0.234,
-    "StatSpellCritRating": 0.4894,
-    "StatSpellDamage": 0.4389,
-    "StatSpellHasteRating": 0.2041,
-    "StatSpellHitRating": 0.543,
-    "StatSpirit": 0.3376
+    "StatArcaneDamage": 0.0351,
+    "StatCritRating": 0.3661,
+    "StatFireDamage": 0.3836,
+    "StatHasteRating": 0.0338,
+    "StatHitRating": 0.6384,
+    "StatIntellect": 0.3714,
+    "StatSpellDamage": 0.4188,
+    "StatSpellPiercing": 0.5536,
+    "StatSpirit": 0.6184
    },
    "evaluated_on": [
     "frostfire-raid: ml winner"
-   ]
+   ],
+   "replaced": [
+    {
+     "slot": 0,
+     "from": "Arcanist Crown (not in the database)",
+     "to": "Dreadmist Mask"
+    },
+    {
+     "slot": 2,
+     "from": "Rugged Mantle of the Timbermaw (not in the database)",
+     "to": "Mantle of the Timbermaw"
+    },
+    {
+     "slot": 3,
+     "from": "Sapphiron Drape (not in the database)",
+     "to": "Arcanoweave Cloak"
+    },
+    {
+     "slot": 4,
+     "from": "Robe of Volatile Power (not in the database)",
+     "to": "Robe of the Archmage"
+    },
+    {
+     "slot": 6,
+     "from": "Gloves of the Hypnotic Flame (not in the database)",
+     "to": "Dreadmist Wraps"
+    },
+    {
+     "slot": 7,
+     "from": "Mana Igniting Cord (not in the database)",
+     "to": "Belt of the Archmage"
+    },
+    {
+     "slot": 8,
+     "from": "Netherwind Pants (not in the database)",
+     "to": "Magister's Leggings"
+    },
+    {
+     "slot": 9,
+     "from": "Arcanist Boots (not in the database)",
+     "to": "Sorcerer's Boots"
+    },
+    {
+     "slot": 10,
+     "from": "Ring of Spell Power",
+     "to": "Channeler's Ring"
+    },
+    {
+     "slot": 11,
+     "from": "Rune Band of Wizardry (not in the database)",
+     "to": "Blessed Band of Light"
+    },
+    {
+     "slot": 12,
+     "from": "Eye of the Beast (not in the database)",
+     "to": "Alchemist's Stone"
+    },
+    {
+     "slot": 14,
+     "from": "Azuresong Mageblade (not in the database)",
+     "to": "Sageblade"
+    },
+    {
+     "slot": 15,
+     "from": "Scepter of Interminable Focus (not in the database)",
+     "to": "Therazane's Touch"
+    },
+    {
+     "slot": 16,
+     "from": "Bonecreeper Stylus (not in the database)",
+     "to": "Brilliant Wand"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 30f67f5d2",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:16795",
+     "item:227808",
+     "item:17078",
+     "item:19145",
+     "item:18808",
+     "item:19136",
+     "item:16915",
+     "item:16800",
+     "item:22339",
+     "item:13968",
+     "item:17103",
+     "item:22329",
+     "item:13938"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [
+     "Piercing Ice",
+     "Wake of Fire"
+    ],
+    "minutes": 0.6
+   }
   },
   "bis2": true,
   "prebis": {
    "entry": "frostfire-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-fire-frost-prebis.gear.json",
-   "date": "2026-10-15",
-   "chosen": "all-slots",
-   "ilvl": 61.8,
+   "date": "2026-10-22",
+   "chosen": "keep-sets-and-effects",
+   "ilvl": 61.6,
    "trinkets": [
-    "Briarwood Reed",
-    "Eye of the Beast"
+    "Alchemist's Stone",
+    "Weakness Analyzer"
    ],
+   "trinket_screen": {
+    "Alchemist's Stone (13503)": 1.0198,
+    "Weakness Analyzer (272438)": 1.0058,
+    "Serenity Field (272439)": 1.0008,
+    "Ankh of Life (1713)": 1.0,
+    "Jewel of the Guard Captain (270225)": 0.9958,
+    "Frozen Heart of the Mountain (249469)": 0.9932,
+    "Shard of the Splithooves (10659)": 0.9927,
+    "Rune of the Guard Captain (19120)": 0.991,
+    "Cleansed Vilebranch Medallion (270275)": 0.991,
+    "Enriched Seal (271903)": 0.9908,
+    "Darkspear Voodoo Seal (272061)": 0.9908,
+    "Everlook Delivery Bot (274760)": 0.9903,
+    "Enriched Seal (271905)": 0.9876,
+    "Darkspear Voodoo Seal (272059)": 0.9876,
+    "Dog Whistle (3456)": 0.9825,
+    "Minor Recombobulator (4381)": 0.9825,
+    "Gnomish Universal Remote (7506)": 0.9825,
+    "Demon's Blood (10779)": 0.9825,
+    "Smoking Heart of the Mountain (11811)": 0.9825,
+    "Heart of the Scale (13164)": 0.9825,
+    "Arcanite Dragonling (16022)": 0.9825,
+    "Stormpike Insignia Rank 6 (17904)": 0.9825,
+    "Gyrofreeze Ice Reflector (18634)": 0.9825,
+    "Major Recombobulator (18637)": 0.9825,
+    "Hyper-Radiant Flame Reflector (18638)": 0.9825,
+    "Ultra-Flash Shadow Reflector (18639)": 0.9825,
+    "Talisman of Arathor (20071)": 0.9825,
+    "Defiler's Talisman (20072)": 0.9825,
+    "Defiler's Talisman (21115)": 0.9825,
+    "Defiler's Talisman (21116)": 0.9825,
+    "Talisman of Arathor (21117)": 0.9825,
+    "Talisman of Arathor (21118)": 0.9825,
+    "Talisman of Arathor (21119)": 0.9825,
+    "Defiler's Talisman (21120)": 0.9825,
+    "Defender of the Timbermaw (21326)": 0.9825,
+    "Molten Heart of the Mountain (249470)": 0.9825,
+    "Dormant Heart of the Mountain (249473)": 0.9825,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.9825,
+    "SAF-T Emergency Ripper: Everlook (260820)": 0.9825,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.9825,
+    "Gnomish Poultryizer (260824)": 0.9825,
+    "Volunteer's Lucky Seal (271904)": 0.9825,
+    "Volunteer's Lucky Seal (271906)": 0.9825,
+    "Relentless Raider's Seal (272060)": 0.9825,
+    "Relentless Raider's Seal (272062)": 0.9825,
+    "Adaptive Combat Assistant (272437)": 0.9825,
+    "Defender's Grip Stabilizer (272440)": 0.9825,
+    "Everlook Pathcarver (274759)": 0.9825,
+    "Parachute-Priest Pager (274761)": 0.9825
+   },
    "names": [
-    "Spellweaver's Turban",
+    "Dreadmist Mask",
     "Orb of the Darkmoon",
-    "Rugged Mantle of the Timbermaw",
-    "Spritecaster Cape",
-    "Alanna's Embrace",
+    "Mantle of the Timbermaw",
+    "Arcanoweave Cloak",
+    "Robe of the Archmage",
     "Rockfury Bracers",
-    "Inferno Gloves",
-    "Knowledge of the Timbermaw",
-    "Ghostweave Pants",
+    "Dreadmist Wraps",
+    "Belt of the Archmage",
+    "Magister's Leggings",
     "Sorcerer's Boots",
-    "Maiden's Circle",
-    "Elemental Focus Band",
-    "Briarwood Reed",
-    "Eye of the Beast",
-    "Elemental Attuned Blade",
-    "Scepter of Interminable Focus",
-    "Bonecreeper Stylus"
+    "Channeler's Ring",
+    "Blessed Band of Light",
+    "Alchemist's Stone",
+    "Weakness Analyzer",
+    "Sageblade",
+    "Therazane's Touch",
+    "Brilliant Wand"
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9954379554221853
+    "keep-sets-and-effects": 1.0
    },
    "confirm_seed2": {
     "keep-sets-and-effects": 1.0,
-    "all-slots": 1.002935121473934
+    "all-slots": 1.0
    },
    "weights": {
-    "StatFireDamage": 0.4082,
-    "StatIntellect": 0.2534,
-    "StatSpellCritRating": 0.475,
-    "StatSpellDamage": 0.4082,
-    "StatSpellHasteRating": 0.0482,
-    "StatSpellHitRating": 0.5057,
-    "StatSpirit": 0.4492
+    "StatArcaneDamage": 0.0341,
+    "StatCritRating": 0.3747,
+    "StatFireDamage": 0.3872,
+    "StatHasteRating": 0.0093,
+    "StatHitRating": 0.6235,
+    "StatIntellect": 0.3186,
+    "StatSpellDamage": 0.4213,
+    "StatSpellPiercing": 0.546,
+    "StatSpirit": 0.6708
    },
    "evaluated_on": [
     "frostfire-raid: ml winner (bis)"
-   ]
+   ],
+   "replaced": [
+    {
+     "slot": 0,
+     "from": "Spellweaver's Turban (not in the database)",
+     "to": "Dreadmist Mask"
+    },
+    {
+     "slot": 2,
+     "from": "Rugged Mantle of the Timbermaw (not in the database)",
+     "to": "Mantle of the Timbermaw"
+    },
+    {
+     "slot": 3,
+     "from": "Spritecaster Cape (not in the database)",
+     "to": "Arcanoweave Cloak"
+    },
+    {
+     "slot": 4,
+     "from": "Alanna's Embrace (not in the database)",
+     "to": "Robe of the Archmage"
+    },
+    {
+     "slot": 6,
+     "from": "Inferno Gloves",
+     "to": "Dreadmist Wraps"
+    },
+    {
+     "slot": 7,
+     "from": "Knowledge of the Timbermaw (not in the database)",
+     "to": "Belt of the Archmage"
+    },
+    {
+     "slot": 8,
+     "from": "Ghostweave Pants",
+     "to": "Magister's Leggings"
+    },
+    {
+     "slot": 10,
+     "from": "Maiden's Circle",
+     "to": "Channeler's Ring"
+    },
+    {
+     "slot": 11,
+     "from": "Elemental Focus Band",
+     "to": "Blessed Band of Light"
+    },
+    {
+     "slot": 12,
+     "from": "Briarwood Reed (not in the database)",
+     "to": "Alchemist's Stone"
+    },
+    {
+     "slot": 13,
+     "from": "Eye of the Beast (not in the database)",
+     "to": "Weakness Analyzer"
+    },
+    {
+     "slot": 14,
+     "from": "Elemental Attuned Blade (not in the database)",
+     "to": "Sageblade"
+    },
+    {
+     "slot": 15,
+     "from": "Scepter of Interminable Focus (not in the database)",
+     "to": "Therazane's Touch"
+    },
+    {
+     "slot": 16,
+     "from": "Bonecreeper Stylus (not in the database)",
+     "to": "Brilliant Wand"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 30f67f5d2",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:22267",
+     "item:227808",
+     "item:11623",
+     "item:13314",
+     "item:228190",
+     "item:12930",
+     "item:13968",
+     "item:20698",
+     "item:22329",
+     "item:13938"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [
+     "Piercing Ice",
+     "Wake of Fire"
+    ],
+    "minutes": 0.6
+   }
   }
  },
  "search": {

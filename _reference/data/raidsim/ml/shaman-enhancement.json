@@ -14,124 +14,391 @@
   "bis": {
    "entry": "enhancement-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-enhancement-bis.gear.json",
-   "date": "2026-10-16",
-   "chosen": "keep-sets-and-effects",
-   "ilvl": 65.2,
+   "date": "2026-10-22",
+   "chosen": "current",
+   "ilvl": 62.8,
    "trinkets": [
-    "Blackhand's Breadth",
-    "Adaptive Combat Assistant"
-   ],
-   "names": [
-    "Black Dragonscale Helm",
-    "Onyxia Tooth Pendant",
-    "Truestrike Shoulders",
-    "Arcanoweave Cloak",
-    "Darkmantle Tunic",
-    "Earthfury Bracers",
-    "Blood Guard's Mail Vices",
-    "Knowledge of the Timbermaw",
-    "Ironfeather Leggings",
-    "Bloodmail Boots",
-    "Band of Accuria",
-    "Signet Ring of the Bronze Dragonflight",
-    "Blackhand's Breadth",
     "Adaptive Combat Assistant",
-    "Spinal Reaper",
+    "Talisman of Ephemeral Power"
+   ],
+   "trinket_screen": {
+    "Adaptive Combat Assistant (272437)": 1.0191,
+    "Talisman of Ephemeral Power (18820)": 1.0118,
+    "Weakness Analyzer (272438)": 1.0111,
+    "Everlook Delivery Bot (274760)": 1.0077,
+    "Jewel of the Guard Captain (270225)": 1.0064,
+    "Serenity Field (272439)": 1.0058,
+    "Shard of the Splithooves (10659)": 1.0054,
+    "Enriched Seal (271903)": 1.0054,
+    "Darkspear Voodoo Seal (272061)": 1.0054,
+    "Rune of the Guard Captain (19120)": 1.0052,
+    "Cleansed Vilebranch Medallion (270275)": 1.0052,
+    "Everlook Pathcarver (274759)": 1.0049,
+    "Enriched Seal (271905)": 1.0035,
+    "Darkspear Voodoo Seal (272059)": 1.0035,
+    "Molten Heart of the Mountain (249470)": 1.0024,
+    "Frozen Heart of the Mountain (249469)": 1.0014,
+    "Ankh of Life (1713)": 1.0,
+    "Dog Whistle (3456)": 0.9981,
+    "Minor Recombobulator (4381)": 0.9981,
+    "Gnomish Universal Remote (7506)": 0.9981,
+    "Demon's Blood (10779)": 0.9981,
+    "Smoking Heart of the Mountain (11811)": 0.9981,
+    "Heart of the Scale (13164)": 0.9981,
+    "Arcanite Dragonling (16022)": 0.9981,
+    "Stormpike Insignia Rank 6 (17904)": 0.9981,
+    "Gyrofreeze Ice Reflector (18634)": 0.9981,
+    "Major Recombobulator (18637)": 0.9981,
+    "Hyper-Radiant Flame Reflector (18638)": 0.9981,
+    "Ultra-Flash Shadow Reflector (18639)": 0.9981,
+    "Essence of the Pure Flame (18815)": 0.9981,
+    "Arena Grand Master (19024)": 0.9981,
+    "Talisman of Arathor (20071)": 0.9981,
+    "Defiler's Talisman (20072)": 0.9981,
+    "Defiler's Talisman (21115)": 0.9981,
+    "Defiler's Talisman (21116)": 0.9981,
+    "Talisman of Arathor (21117)": 0.9981,
+    "Talisman of Arathor (21118)": 0.9981,
+    "Talisman of Arathor (21119)": 0.9981,
+    "Defiler's Talisman (21120)": 0.9981,
+    "Defender of the Timbermaw (21326)": 0.9981,
+    "Dormant Heart of the Mountain (249473)": 0.9981,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.9981,
+    "SAF-T Emergency Ripper: Everlook (260820)": 0.9981,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.9981,
+    "Gnomish Poultryizer (260824)": 0.9981,
+    "Volunteer's Lucky Seal (271904)": 0.9981,
+    "Volunteer's Lucky Seal (271906)": 0.9981,
+    "Relentless Raider's Seal (272060)": 0.9981,
+    "Relentless Raider's Seal (272062)": 0.9981,
+    "Defender's Grip Stabilizer (272440)": 0.9981,
+    "Parachute-Priest Pager (274761)": 0.9981,
+    "Alchemist's Stone (13503)": 0.9958
+   },
+   "names": [
+    "Blue Dragonscale Helm",
+    "Onyxia Tooth Pendant",
+    "Hermit's Pauldron",
+    "Arcanoweave Cloak",
+    "Magister's Robes",
+    "Wildheart Bracers",
+    "Stormshroud Gloves",
+    "Belt of the Archmage",
+    "Ironfeather Leggings",
+    "Sorcerer's Boots",
+    "Don Julio's Band",
+    "Band of Earthen Might",
+    "Adaptive Combat Assistant",
+    "Talisman of Ephemeral Power",
+    "Fist of Cenarius",
     null,
-    null
+    "Totem of the Storm"
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.0181470614978634,
-    "keep-sets-and-effects": 1.0230587346042666
+    "all-slots": 0.9298168260745173,
+    "keep-sets-and-effects": 0.9622083949626251
    },
    "confirm_seed2": {
-    "current": 1.0,
-    "keep-sets-and-effects": 1.0237548841100714
+    "current": 1.0
    },
    "weights": {
-    "PseudoStatMainHandDps": 1.2782,
-    "StatAgility": 0.1269,
-    "StatArmorPenetration": 0.0221,
-    "StatAttackPower": 0.093,
-    "StatExpertiseRating": 0.3826,
-    "StatFireDamage": 0.0681,
-    "StatIntellect": 0.1749,
-    "StatMeleeCritRating": 0.1775,
-    "StatMeleeHasteRating": 0.1589,
-    "StatMeleeHitRating": 0.3826,
-    "StatNatureDamage": 0.0931,
-    "StatSpellCritRating": 0.0765,
-    "StatSpellDamage": 0.164,
-    "StatSpellHasteRating": 0.0343,
-    "StatSpellHitRating": 0.1779,
-    "StatStrength": 0.186
+    "PseudoStatMainHandDps": 1.3712,
+    "StatAgility": 0.1193,
+    "StatArmorPenetration": 0.022,
+    "StatAttackPower": 0.0977,
+    "StatCritRating": 0.2342,
+    "StatExpertiseRating": 0.3531,
+    "StatFireDamage": 0.0556,
+    "StatHasteRating": 0.2075,
+    "StatHitRating": 0.6112,
+    "StatIntellect": 0.2014,
+    "StatNatureDamage": 0.1098,
+    "StatSpellDamage": 0.1668,
+    "StatSpellPiercing": 0.2945,
+    "StatSpirit": 0.0011,
+    "StatStrength": 0.1955
    },
    "evaluated_on": [
     "enhancement-dps: ml winner"
-   ]
+   ],
+   "replaced": [
+    {
+     "slot": 0,
+     "from": "Black Dragonscale Helm",
+     "to": "Blue Dragonscale Helm"
+    },
+    {
+     "slot": 2,
+     "from": "Truestrike Shoulders (not in the database)",
+     "to": "Hermit's Pauldron"
+    },
+    {
+     "slot": 4,
+     "from": "Darkmantle Tunic",
+     "to": "Magister's Robes"
+    },
+    {
+     "slot": 5,
+     "from": "Earthfury Bracers (not in the database)",
+     "to": "Wildheart Bracers"
+    },
+    {
+     "slot": 6,
+     "from": "Blood Guard's Mail Vices (not in the database)",
+     "to": "Stormshroud Gloves"
+    },
+    {
+     "slot": 7,
+     "from": "Knowledge of the Timbermaw (not in the database)",
+     "to": "Belt of the Archmage"
+    },
+    {
+     "slot": 9,
+     "from": "Bloodmail Boots (not in the database)",
+     "to": "Sorcerer's Boots"
+    },
+    {
+     "slot": 10,
+     "from": "Band of Accuria (not in the database)",
+     "to": "Don Julio's Band"
+    },
+    {
+     "slot": 11,
+     "from": "Signet Ring of the Bronze Dragonflight (not in the database)",
+     "to": "Band of Earthen Might"
+    },
+    {
+     "slot": 12,
+     "from": "Blackhand's Breadth (not in the database)",
+     "to": "Adaptive Combat Assistant"
+    },
+    {
+     "slot": 13,
+     "from": "Adaptive Combat Assistant",
+     "to": "Talisman of Ephemeral Power"
+    },
+    {
+     "slot": 14,
+     "from": "Spinal Reaper (not in the database)",
+     "to": "Fist of Cenarius"
+    },
+    {
+     "slot": 16,
+     "from": null,
+     "to": "Totem of the Storm"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 09e739807",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:12927",
+     "item:16840",
+     "item:227159",
+     "item:228190",
+     "item:14616",
+     "item:17063",
+     "item:234020",
+     "item:13965",
+     "item:17104"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [],
+    "minutes": 2.8
+   }
   },
   "bis2": true,
   "prebis": {
    "entry": "enhancement-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-enhancement-prebis.gear.json",
-   "date": "2026-10-16",
-   "chosen": "all-slots",
-   "ilvl": 63.6,
+   "date": "2026-10-22",
+   "chosen": "keep-sets-and-effects",
+   "ilvl": 62.4,
    "trinkets": [
-    "Blackhand's Breadth",
-    "Adaptive Combat Assistant"
-   ],
-   "names": [
-    "Black Dragonscale Helm",
-    "Beads of Ogre Might",
-    "Rugged Mantle of the Timbermaw",
-    "Arcanoweave Cloak",
-    "Timbermaw Tunic",
-    "Rockfury Bracers",
-    "Blood Guard's Mail Vices",
-    "Knowledge of the Timbermaw",
-    "Ironfeather Leggings",
-    "Bloodmail Boots",
-    "Signet Ring of the Bronze Dragonflight",
-    "Don Julio's Band",
-    "Blackhand's Breadth",
     "Adaptive Combat Assistant",
+    "Jewel of the Guard Captain"
+   ],
+   "trinket_screen": {
+    "Adaptive Combat Assistant (272437)": 1.0183,
+    "Weakness Analyzer (272438)": 1.0107,
+    "Serenity Field (272439)": 1.0072,
+    "Shard of the Splithooves (10659)": 1.0071,
+    "Jewel of the Guard Captain (270225)": 1.0067,
+    "Rune of the Guard Captain (19120)": 1.0062,
+    "Cleansed Vilebranch Medallion (270275)": 1.0062,
+    "Everlook Delivery Bot (274760)": 1.0055,
+    "Enriched Seal (271903)": 1.0051,
+    "Darkspear Voodoo Seal (272061)": 1.0051,
+    "Molten Heart of the Mountain (249470)": 1.0032,
+    "Frozen Heart of the Mountain (249469)": 1.0031,
+    "Enriched Seal (271905)": 1.0029,
+    "Darkspear Voodoo Seal (272059)": 1.0029,
+    "Everlook Pathcarver (274759)": 1.002,
+    "Ankh of Life (1713)": 1.0,
+    "Dog Whistle (3456)": 0.999,
+    "Minor Recombobulator (4381)": 0.999,
+    "Gnomish Universal Remote (7506)": 0.999,
+    "Demon's Blood (10779)": 0.999,
+    "Smoking Heart of the Mountain (11811)": 0.999,
+    "Heart of the Scale (13164)": 0.999,
+    "Arcanite Dragonling (16022)": 0.999,
+    "Stormpike Insignia Rank 6 (17904)": 0.999,
+    "Gyrofreeze Ice Reflector (18634)": 0.999,
+    "Major Recombobulator (18637)": 0.999,
+    "Hyper-Radiant Flame Reflector (18638)": 0.999,
+    "Ultra-Flash Shadow Reflector (18639)": 0.999,
+    "Talisman of Arathor (20071)": 0.999,
+    "Defiler's Talisman (20072)": 0.999,
+    "Defiler's Talisman (21115)": 0.999,
+    "Defiler's Talisman (21116)": 0.999,
+    "Talisman of Arathor (21117)": 0.999,
+    "Talisman of Arathor (21118)": 0.999,
+    "Talisman of Arathor (21119)": 0.999,
+    "Defiler's Talisman (21120)": 0.999,
+    "Defender of the Timbermaw (21326)": 0.999,
+    "Dormant Heart of the Mountain (249473)": 0.999,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.999,
+    "SAF-T Emergency Ripper: Everlook (260820)": 0.999,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.999,
+    "Gnomish Poultryizer (260824)": 0.999,
+    "Volunteer's Lucky Seal (271904)": 0.999,
+    "Volunteer's Lucky Seal (271906)": 0.999,
+    "Relentless Raider's Seal (272060)": 0.999,
+    "Relentless Raider's Seal (272062)": 0.999,
+    "Defender's Grip Stabilizer (272440)": 0.999,
+    "Parachute-Priest Pager (274761)": 0.999,
+    "Alchemist's Stone (13503)": 0.9974
+   },
+   "names": [
+    "Blue Dragonscale Helm",
+    "Beads of Ogre Might",
+    "Hermit's Pauldron",
+    "Arcanoweave Cloak",
+    "Magister's Robes",
+    "Wildheart Bracers",
+    "Stormshroud Gloves",
+    "Belt of Preserved Heads",
+    "Outrider's Chain Leggings",
+    "Sorcerer's Boots",
+    "Don Julio's Band",
+    "Ferocious Watcher's Signet",
+    "Adaptive Combat Assistant",
+    "Jewel of the Guard Captain",
     "Fist of Cenarius",
     null,
-    null
+    "Totem of the Storm"
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9989523848823668,
-    "previous": 0.9931118276462089,
-    "previous+trinkets": 1.0
+    "keep-sets-and-effects": 1.0335975346691186
    },
    "confirm_seed2": {
-    "previous": 1.0,
-    "all-slots": 1.0051752762739419
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 1.0334433650368036
    },
    "weights": {
-    "PseudoStatMainHandDps": 1.3628,
-    "StatAgility": 0.1212,
-    "StatArmorPenetration": 0.0214,
-    "StatAttackPower": 0.0991,
-    "StatExpertiseRating": 0.3051,
-    "StatFireDamage": 0.0695,
-    "StatIntellect": 0.182,
-    "StatMeleeCritRating": 0.1678,
-    "StatMeleeHasteRating": 0.188,
-    "StatMeleeHitRating": 0.3051,
-    "StatNatureDamage": 0.0976,
-    "StatSpellCritRating": 0.0718,
-    "StatSpellDamage": 0.1701,
-    "StatSpellHasteRating": 0.0276,
-    "StatSpellHitRating": 0.1852,
-    "StatStrength": 0.1983
+    "PseudoStatMainHandDps": 1.3711,
+    "StatAgility": 0.1216,
+    "StatArmorPenetration": 0.0219,
+    "StatAttackPower": 0.0977,
+    "StatCritRating": 0.2359,
+    "StatExpertiseRating": 0.3468,
+    "StatFireDamage": 0.0556,
+    "StatHasteRating": 0.2085,
+    "StatHitRating": 0.6059,
+    "StatIntellect": 0.2044,
+    "StatNatureDamage": 0.1097,
+    "StatSpellDamage": 0.1666,
+    "StatSpellPiercing": 0.2957,
+    "StatSpirit": -0.0008,
+    "StatStrength": 0.1954
    },
    "evaluated_on": [
     "enhancement-dps: ml winner (bis)"
-   ]
+   ],
+   "replaced": [
+    {
+     "slot": 0,
+     "from": "Black Dragonscale Helm",
+     "to": "Blue Dragonscale Helm"
+    },
+    {
+     "slot": 2,
+     "from": "Rugged Mantle of the Timbermaw (not in the database)",
+     "to": "Hermit's Pauldron"
+    },
+    {
+     "slot": 4,
+     "from": "Timbermaw Tunic",
+     "to": "Magister's Robes"
+    },
+    {
+     "slot": 5,
+     "from": "Rockfury Bracers",
+     "to": "Wildheart Bracers"
+    },
+    {
+     "slot": 6,
+     "from": "Blood Guard's Mail Vices (not in the database)",
+     "to": "Stormshroud Gloves"
+    },
+    {
+     "slot": 7,
+     "from": "Knowledge of the Timbermaw (not in the database)",
+     "to": "Belt of Preserved Heads"
+    },
+    {
+     "slot": 8,
+     "from": "Ironfeather Leggings",
+     "to": "Outrider's Chain Leggings"
+    },
+    {
+     "slot": 9,
+     "from": "Bloodmail Boots (not in the database)",
+     "to": "Sorcerer's Boots"
+    },
+    {
+     "slot": 10,
+     "from": "Signet Ring of the Bronze Dragonflight (not in the database)",
+     "to": "Don Julio's Band"
+    },
+    {
+     "slot": 11,
+     "from": "Don Julio's Band",
+     "to": "Ferocious Watcher's Signet"
+    },
+    {
+     "slot": 12,
+     "from": "Blackhand's Breadth (not in the database)",
+     "to": "Adaptive Combat Assistant"
+    },
+    {
+     "slot": 13,
+     "from": "Adaptive Combat Assistant",
+     "to": "Jewel of the Guard Captain"
+    },
+    {
+     "slot": 16,
+     "from": null,
+     "to": "Totem of the Storm"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 09e739807",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:227808",
+     "item:227159",
+     "item:228190",
+     "item:14616",
+     "item:234020",
+     "item:13965"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [],
+    "minutes": 2.9
+   }
   }
  },
  "search": {

@@ -6,8 +6,8 @@ github.com/wowsims/forever. Same Go module name and wowsims layout, a different 
 2022 TBC copy), refactored deeply: data-driven spells and consumables, one registered rank per spell, a new Stat enum, item armor from
 the client tables.
 
-**State**: ported and built; smoke-tested (table below); **no raid number of the project is from the official simulator yet** and the
-gear sets must be re-made before any is (see "Open").
+**State**: ported and built; smoke-tested (table below); every gear set re-made from the official database (2026-10-22, "Gear" below);
+**no raid number of the project is from the official simulator yet** (no build was raced in the new sets).
 
 ## Where things are
 
@@ -91,18 +91,208 @@ Dark Sacrifice on every race, Tiger's Fury). No simulator patch was needed; Holy
 **Speed**: the official engine is not faster. Per 20,000 fights it took 0.95x to 2.0x the fork's time (median about 1.25x: warlock 2.0x,
 Frost 1.4x, Shadow 1.4x, warrior 0.95x). Searches and races will take about a quarter longer.
 
+## Gear (2026-10-22, open items 1 and 7)
+
+Every gear set of the project was made again from the official database. Standard sets (specs.json), tank sets and the damage tier sets
+for paladin, shaman, warlock, warrior, druid and hunter were chosen on **09e7398** (the bench of that pin); after the re-pin to
+**30f67f5** the mage (2026-10-20 hotfix: Piercing Ice removed, Elemental Precision 3 x 2%) and priest (new `self_buffs`: Prayer of
+Fortitude and Prayer of Spirit on shadow-dps and smite-dps, the gap agent's finding) standard groups and tier sets were made again, and
+the rogue's (weapon-type fix below). A diff of the two pins' databases (db.json, leftover_db.json, enchants, the Stat enum) found 0
+items changed or removed, 0 enchants changed and an unchanged enum, 8 items added (Cloudkeeper Legplates, Idol of the Dream, Wall of the
+Dead, Pendulum of Doom, Changuk Smasher, Dusty Mail Boots, Axe of Inevitable Ruin, Rog'mar Trainee Shoulderpads): no other set needed
+redoing. Final check: 93 sets (`gear_sets/forever/*.gear.json`, `tiers/`, and the official presets specs.json names), **0 items or
+enchants the official database lacks**, no empty slot in head to trinkets; the empty slots left are the off hand behind a two-hander and
+the relic slot of the healer sets whose class has no relic with static healing stats (heal_gear.py's rule). fill_enchants.py had nothing
+left to fill (the tools fill the templates themselves).
+
+**Tools ported** (`raidsim/gear_opt.py`, `gear_tiers.py`, `tank_gear.py`, `fill_enchants.py`, `heallab/heal_gear.py`):
+- Item database: the official clone's `assets/database/db.json` plus `leftover_db.json` (the official loader merges both; 1,186
+  common-quality items, none in a pool); `fill_enchants.py` and `heal_gear.py` no longer read the fork's clone.
+- Stat enum: read from the clone's `proto/common.proto` (`gear_opt.stat_enum` / `stat_names`; heal_gear by name: Spirit 13, MP5 31,
+  one StatCritRating 18 and StatHasteRating 19); the bench's `statweights` names (StatHitRating, StatCritRating ...) key the weights.
+  No numbering is written into the tools any more.
+- Presets that vet sourceless items and name a class's weapon and ranged types: the official repository's plus every fork gear preset
+  (vendored 2026-10-22 under `raidsim/presets/elliotwood-b7083fa/ui/specs/*/*/gear_sets/`, 55 files; the official repo has 27 and none
+  for shaman). An official preset vets only when none of its items is above item level 70: its "p1" names do not follow Classic's phases
+  (mage `p1Arcane` is Naxxramas gear, Balance `p1` Ahn'Qiraj's Genesis, the hunter `p1` sets hold an item-level-71 neck).
+- A current item the database lacks is re-filled by its shape (the fork's record of it in the archived clone, `gear_opt.legacy_item`:
+  type, hand, weapon and ranged type), so a missing two-hander stays a two-hander; an empty armor or jewelry slot is filled; an empty or
+  missing relic of a relic class (idol, libram, totem) is raced among the class's preset relics (`race_relics`); a rogue's weapons keep
+  their weapon type (`SAME_WEAPON_TYPE`: the first pass re-filled the daggers set's missing Perdition's Blade with Greenhammer, a mace);
+  enchants the database lacks are dropped (`drop_missing_enchants`; none were).
+- Trinkets: the official database lacks most of the class presets' trinkets (the hunter kept one, Adaptive Combat Assistant), so the
+  candidates are every trinket of the tier's pool the class may wear (about 50), each raced alone (other slot empty, seed 1), then every
+  pair of the best seven (`screen_trinkets`; the race and seed-2 confirmation as before). The per-trinket screen is in the records
+  (`trinket_screen`).
+- `gear_tiers.py --remake [--classes] [--spec] [--sets] [--fresh]`: every ML record's tier set again, in place, for the record's winner
+  of that set (bis and prebis: the bis-dummy winner; the "-raid" sets: the bis-raid winner); talents the official trees lack are left out
+  of the build the gear is chosen for (`talents_left_out`: Wake of Fire for mage Arcane/Fire/Frostfire, Shadow Affinity for Shadow, Call
+  of Thunder and Improved Fire Nova for the shaman, Malediction for Affliction); the record's gear key gets `replaced` (slot, old, new)
+  and `remade`. Resume: a set already remade is skipped whatever the commit (a re-pin alone does not redo everything); `--fresh` or
+  `--sets` select what to redo.
+- tank_gear.py: the tank-value reference is measured again on the current simulator (deep_tank's reference build in the entry's standard
+  set, 20,000 fights, seed 77; the fork's numbers stay as `reference_fork`): warrior 1147.8 threat / 326.6 damage taken per second (fork
+  677.5 / 672.9), paladin 780.1 / 366.8 (472.0 / 566.1), bear 2859.0 / 360.5 (1223.7 / 634.9). The `--armor` sensitivity is obsolete
+  (official armor from the client tables); its six `*-classic-armor` sets were removed.
+- Rules kept unchanged: the pools (phase-1 sources, `PHASE1_RAID_MADE`, `RAID_QUEST`, `PHASE1_QUEST`, `LATER_PREFIXES`, `EVENT_NPCS`,
+  `WORLD_BOSSES`, `SUSPECT_ITEMS`, `VENDOR_ITEMS`), the greedy variants, the races and the seed-2 confirmation.
+
+**Item-id lists against the official database**: `SUSPECT_ITEMS` (Death Speaker Scepter, Searing Golden Blade, Windweaver Staff, the
+Soran'ruk / Dar'Orahil / Noh'Orahil staves, Witching Stave, Stormcloth Vest) are all present with the **same** values as the fork's
+(+68 healing on the scepter, +39 Fire on the blade ...): the official database comes from Forever's game files, so these may be Forever's
+real numbers rather than errors; they stay excluded (rule kept), to be checked in game. `VENDOR_ITEMS` (Adaptive Combat Assistant):
+present. `PHASE1_RAID_MADE`: all present but Lavashard Axe (absent from the fork too). `RAID_QUEST`, `PHASE1_QUEST`: present. Of the
+Molten Core and Onyxia loot the official database keeps only 10 items with a raid source (Earthshaker, The Eye of Divinity, Choker of the
+Fire Lord, Essence of the Pure Flame, Talisman of Ephemeral Power, Quick Strike Ring, Heavy Dark Iron Ring, Band of Sulfuras, Cauterizing
+Band, Ring of Spell Power) plus the Molten Core crafts; no tier-set piece (Netherwind, Felheart, Giantstalker, Nightslayer, Earthfury,
+Lawbringer, Might, Arcanist, Cenarion, Prophecy), no Hand of Justice, Blackhand's Breadth, Band of Accuria, Royal Seal of Eldre'Thalas,
+Briarwood Reed, Eye of the Beast, Rune Band of Wizardry, Spellweaver's Turban, Azuresong Mageblade or Staff of Dominance. The world bosses
+have no source entries at all.
+
+**What replaced them** (typical picks; per slot in the records): casters: Living Crown / Felcloth Hood / Dreadmist Mask, Mantle of the
+Timbermaw, Arcanoweave Cloak, Robe of the Archmage / Earthpower Vest / Robe of the Void, Gloves of Spell Mastery, Belt of the Archmage,
+Flarecore Leggings, Ring of Spell Power, Sageblade + Therazane's Touch or Ironbark Staff, trinkets Talisman of Ephemeral Power + Weakness
+Analyzer (Serenity Field, Alchemist's Stone for some); melee: Darkmantle and Theramore pieces, Dawn Armor, Forest Stalker's Bracers,
+Chromatic Gauntlets, Belt of Preserved Heads (vetted by the official warrior pre-BiS preset), Outrider's Chain Leggings, Signet Ring of the
+Bronze Dragonflight, Don Julio's Band, Band of the Better Half, Fist of Cenarius (two-hand), Premier High Warlord's PvP weapons,
+Blackguard, trinkets Adaptive Combat Assistant with Rune of the Guard Captain, Molten Heart of the Mountain or Everlook Pathcarver;
+Hand of Justice's slot went to Adaptive Combat Assistant or Rune of the Guard Captain. Item levels fell 1-3 (65-67 -> 63-64).
+
+**Tank standard sets**: specs.json now names the official presets (warrior `ui/specs/warrior/protection/gear_sets/prebis.gear.json`, the
+"Pre-BiS (Defense Cap)" set; bear `ui/specs/druid/feralbear/gear_sets/default.gear.json`, which has no idol); the fork's launch presets
+lost 6 and 5 items. The paladin keeps the official `default` preset (complete).
+
+### Standard sets (gear_opt.py; record raidsim/gear-opt.json)
+
+Seed 1 3,000 fights per set and entry, seed 2 12,000; "current" competes only when every item is in the database and the pool.
+
+| Standard set (entries) | Item level | Seed 2 (12,000 fights) | Trinkets | Slots changed (of them missing) |
+|---|---|---|---|---|
+| druid-balance-p1.p1opt.gear.json (balance-dps) | 65.0 -> 63.5 | all-slots +3.1% | Serenity Field, Talisman of Ephemeral Power | 11 (8) |
+| druid-feralcat-launch.p1opt.gear.json (feral-cat-dps) | 63.3 -> 63.8 | keep-sets-and-effects +0.0% | Adaptive Combat Assistant, Molten Heart of the Mountain | 9 (7) |
+| hunter-dps-p1.p1opt.gear.json (mm-raid, mm-lonewolf-raid, bm-raid) | 66.5 -> 64.2 | all-slots +0.0% | Rune of the Guard Captain, Everlook Delivery Bot | 10 (8) |
+| hunter-project-hunter_melee_p1.p1opt.gear.json (melee-dps) | 65.5 -> 64.7 | all-slots +0.3% | Adaptive Combat Assistant, Molten Heart of the Mountain | 15 (13) |
+| mage-dps-p1.p1opt.gear.json (frost-raid, fire-raid, arcane-dps, frostfire-raid) | 63.5 -> 63.5 | current kept | Alchemist's Stone, Talisman of Ephemeral Power | 0 (0) |
+| paladin-retribution-default.p1opt.gear.json (ret-dps) | 64.5 -> 63.2 | keep-sets-and-effects +1.4% | Talisman of Ephemeral Power, Weakness Analyzer | 12 (6) |
+| priest-dps-p0.p1opt.gear.json (shadow-dps, smite-dps) | 67.0 -> 64.2 | all-slots +0.3% | Talisman of Ephemeral Power, Weakness Analyzer | 12 (10) |
+| rogue-dps-combat_sinister_strike_p1_bis.p1opt.gear.json (combat-swords-raid, subtlety-raid) | 65.7 -> 63.6 | all-slots +0.9% | Adaptive Combat Assistant, Rune of the Guard Captain | 15 (14) |
+| shaman-elemental-phase_1.p1opt.gear.json (elemental-dps, stormcaller-dps) | 61.6 -> 65.4 | keep-sets-and-effects +0.0% | Talisman of Ephemeral Power, Weakness Analyzer | 11 (8) |
+| shaman-enhancement-phase_1.p1opt.gear.json (enhancement-dps) | 62.9 -> 62.8 | keep-sets-and-effects +1.9% | Adaptive Combat Assistant, Talisman of Ephemeral Power | 13 (8) |
+| warlock-dps-mc.p1opt.gear.json (affliction-raid, fire-destro-raid, sb-raid, demonology-raid, incinerate-raid) | 66.4 -> 63.9 | keep-sets-and-effects +0.0% | Talisman of Ephemeral Power, Weakness Analyzer | 12 (12) |
+| warrior-dps-p1_arms.p1opt.gear.json (arms-2h-raid, arms-battle-raid) | 63.1 -> 63.9 | keep-sets-and-effects +0.1% | Adaptive Combat Assistant, Everlook Pathcarver | 12 (8) |
+| warrior-dps-p1_fury.p1opt.gear.json (fury-dw-raid) | 62.8 -> 63.9 | keep-sets-and-effects +0.0% | Adaptive Combat Assistant, Rune of the Guard Captain | 10 (6) |
+| combat_backstab_p1_bis.gear.json (combat-daggers-raid, assassination-raid) | 60.4 -> 63.8 | all-slots +1.3% | Adaptive Combat Assistant, Molten Heart of the Mountain | 15 (10) |
+
+### Tier sets (gear_tiers.py --remake; records: the `gear` key of raidsim/ml/<class>-<spec>.json)
+
+The commit is the pin the set was chosen on. For the mage, priest and rogue sets made twice, "slots changed" counts against the first
+remake (the fork-era replacements are in git history); "-" = the leader was the reference (no seed-2 race).
+
+| Tier set (entry) | Item level | Chosen, seed 2 | Trinkets | Slots changed (missing before) |
+|---|---|---|---|---|
+| druid-balance-bis.gear.json (balance-dps, 09e7398) | 65.0 | all-slots +0.6% vs current | Talisman of Ephemeral Power, Weakness Analyzer | 11 (8) |
+| druid-balance-prebis.gear.json (balance-dps, 09e7398) | 63.2 | keep-sets-and-effects +0.0% vs all-slots | Weakness Analyzer, Jewel of the Guard Captain | 11 (7) |
+| druid-feral-combat-bis.gear.json (feral-cat-dps, 09e7398) | 63.5 | all-slots +0.0% vs current | Adaptive Combat Assistant, Rune of the Guard Captain | 10 (8) |
+| druid-feral-combat-prebis.gear.json (feral-cat-dps, 09e7398) | 63.9 | keep-sets-and-effects +0.0% vs all-slots | Adaptive Combat Assistant, Molten Heart of the Mountain | 9 (7) |
+| hunter-beast-mastery-bis.gear.json (bm-raid, 09e7398) | 65.2 | all-slots +0.3% vs keep-sets-and-effects | Shard of the Splithooves, Adaptive Combat Assistant | 11 (9) |
+| hunter-beast-mastery-prebis.gear.json (bm-raid, 09e7398) | 62.9 | keep-sets-and-effects +0.1% vs all-slots | Rune of the Guard Captain, Adaptive Combat Assistant | 10 (6) |
+| hunter-hybrid-beast-mastery-marksmanship-bis.gear.json (bm-raid, 09e7398) | 63.8 | keep-sets-and-effects +0.1% vs all-slots | Rune of the Guard Captain, Everlook Delivery Bot | 11 (10) |
+| hunter-hybrid-beast-mastery-marksmanship-prebis.gear.json (bm-raid, 09e7398) | 62.4 | keep-sets-and-effects +0.0% vs all-slots | Rune of the Guard Captain, Everlook Delivery Bot | 11 (6) |
+| hunter-hybrid-beast-mastery-survival-bis.gear.json (melee-dps, 09e7398) | 64.6 | all-slots +0.1% vs keep-sets-and-effects | Adaptive Combat Assistant, Rune of the Guard Captain | 15 (13) |
+| hunter-hybrid-beast-mastery-survival-prebis.gear.json (melee-dps, 09e7398) | 63.9 | keep-sets-and-effects +0.1% vs all-slots | Adaptive Combat Assistant, Molten Heart of the Mountain | 7 (4) |
+| hunter-marksmanship-bis.gear.json (mm-raid, 09e7398) | 64.8 | keep-sets-and-effects +0.0% vs all-slots | Adaptive Combat Assistant, Jewel of the Guard Captain | 11 (9) |
+| hunter-marksmanship-bis-raid.gear.json (mm-lonewolf-raid, 09e7398) | 64.6 | keep-sets-and-effects +0.0% vs all-slots | Shard of the Splithooves, Enriched Seal | 13 (11) |
+| hunter-marksmanship-prebis.gear.json (mm-raid, 09e7398) | 62.8 | keep-sets-and-effects +0.0% vs all-slots | Everlook Delivery Bot, Shard of the Splithooves | 9 (6) |
+| hunter-marksmanship-prebis-raid.gear.json (mm-lonewolf-raid, 09e7398) | 62.8 | keep-sets-and-effects +0.0% vs all-slots | Rune of the Guard Captain, Everlook Delivery Bot | 12 (6) |
+| hunter-survival-bis.gear.json (melee-dps, 09e7398) | 64.6 | all-slots +0.1% vs keep-sets-and-effects | Adaptive Combat Assistant, Rune of the Guard Captain | 15 (13) |
+| hunter-survival-prebis.gear.json (melee-dps, 09e7398) | 63.9 | keep-sets-and-effects +0.1% vs all-slots | Adaptive Combat Assistant, Molten Heart of the Mountain | 7 (4) |
+| mage-arcane-bis.gear.json (arcane-dps, 30f67f5) | 63.3 | keep-sets-and-effects +1.3% vs current | Serenity Field, Alchemist's Stone | 0 (0) |
+| mage-arcane-prebis.gear.json (arcane-dps, 30f67f5) | 62.0 | - | Serenity Field, Alchemist's Stone | 0 (0) |
+| mage-fire-bis.gear.json (fire-raid, 30f67f5) | 64.4 | all-slots +5.4% vs current | Talisman of Ephemeral Power, Weakness Analyzer | 0 (0) |
+| mage-fire-prebis.gear.json (fire-raid, 30f67f5) | 62.7 | previous +0.0% vs all-slots | Weakness Analyzer, Alchemist's Stone | 0 (0) |
+| mage-frost-bis.gear.json (frost-raid, 30f67f5) | 64.4 | keep-sets-and-effects +1.4% vs current | Talisman of Ephemeral Power, Weakness Analyzer | 11 (10) |
+| mage-frost-prebis.gear.json (frost-raid, 30f67f5) | 62.5 | all-slots +0.3% vs keep-sets-and-effects | Weakness Analyzer, Frozen Heart of the Mountain | 14 (13) |
+| mage-hybrid-arcane-frost-bis.gear.json (frost-raid, 30f67f5) | 64.4 | keep-sets-and-effects +1.2% vs current | Talisman of Ephemeral Power, Weakness Analyzer | 11 (10) |
+| mage-hybrid-arcane-frost-prebis.gear.json (frost-raid, 30f67f5) | 63.2 | keep-sets-and-effects +0.3% vs all-slots | Weakness Analyzer, Frozen Heart of the Mountain | 14 (13) |
+| mage-hybrid-fire-frost-bis.gear.json (frostfire-raid, 30f67f5) | 62.5 | all-slots +4.0% vs current | Alchemist's Stone, Talisman of Ephemeral Power | 14 (13) |
+| mage-hybrid-fire-frost-prebis.gear.json (frostfire-raid, 30f67f5) | 61.6 | keep-sets-and-effects +0.0% vs all-slots | Alchemist's Stone, Weakness Analyzer | 14 (10) |
+| paladin-retribution-bis.gear.json (ret-dps, 09e7398) | 64.7 | all-slots +12.4% vs current | Talisman of Ephemeral Power, Weakness Analyzer | 11 (6) |
+| paladin-retribution-prebis.gear.json (ret-dps, 09e7398) | 62.8 | keep-sets-and-effects +2.8% vs all-slots | Weakness Analyzer, Shard of the Splithooves | 10 (4) |
+| priest-hybrid-discipline-holy-bis.gear.json (smite-dps, 30f67f5) | 65.4 | all-slots +10.3% vs current | Talisman of Ephemeral Power, Weakness Analyzer | 12 (9) |
+| priest-hybrid-discipline-holy-prebis.gear.json (smite-dps, 30f67f5) | 63.0 | keep-sets-and-effects +0.3% vs all-slots | Weakness Analyzer, Alchemist's Stone | 13 (10) |
+| priest-shadow-bis.gear.json (shadow-dps, 30f67f5) | 64.2 | - | Weakness Analyzer, Talisman of Ephemeral Power | 12 (10) |
+| priest-shadow-prebis.gear.json (shadow-dps, 30f67f5) | 62.2 | all-slots +0.9% vs keep-sets-and-effects | Weakness Analyzer, Jewel of the Guard Captain | 14 (12) |
+| rogue-assassination-bis.gear.json (assassination-raid, 30f67f5) | 64.0 | previous +1.6% vs current | Adaptive Combat Assistant, Rune of the Guard Captain | 0 (0) |
+| rogue-assassination-prebis.gear.json (assassination-raid, 30f67f5) | 63.3 | - | Adaptive Combat Assistant, Rune of the Guard Captain | 0 (0) |
+| rogue-combat-bis.gear.json (combat-daggers-raid, 30f67f5) | 63.8 | all-slots +0.2% vs current | Adaptive Combat Assistant, Rune of the Guard Captain | 6 (0) |
+| rogue-combat-prebis.gear.json (combat-daggers-raid, 30f67f5) | 63.7 | previous+trinkets +0.2% vs previous | Adaptive Combat Assistant, Rune of the Guard Captain | 2 (0) |
+| rogue-hybrid-assassination-combat-bis.gear.json (assassination-raid, 30f67f5) | 64.0 | previous +1.5% vs current | Adaptive Combat Assistant, Rune of the Guard Captain | 0 (0) |
+| rogue-hybrid-assassination-combat-prebis.gear.json (assassination-raid, 30f67f5) | 63.3 | - | Adaptive Combat Assistant, Rune of the Guard Captain | 0 (0) |
+| rogue-subtlety-bis.gear.json (subtlety-raid, 30f67f5) | 63.6 | previous +2.2% vs current | Adaptive Combat Assistant, Rune of the Guard Captain | 0 (0) |
+| rogue-subtlety-prebis.gear.json (subtlety-raid, 30f67f5) | 63.2 | - | Adaptive Combat Assistant, Rune of the Guard Captain | 0 (0) |
+| shaman-elemental-bis.gear.json (elemental-dps, 09e7398) | 65.4 | all-slots +0.9% vs current | Talisman of Ephemeral Power, Weakness Analyzer | 10 (8) |
+| shaman-elemental-prebis.gear.json (elemental-dps, 09e7398) | 63.3 | keep-sets-and-effects +0.0% vs all-slots | Weakness Analyzer, Alchemist's Stone | 10 (6) |
+| shaman-enhancement-bis.gear.json (enhancement-dps, 09e7398) | 62.8 | - | Adaptive Combat Assistant, Talisman of Ephemeral Power | 13 (9) |
+| shaman-enhancement-prebis.gear.json (enhancement-dps, 09e7398) | 62.4 | keep-sets-and-effects +3.3% vs all-slots | Adaptive Combat Assistant, Jewel of the Guard Captain | 13 (6) |
+| shaman-hybrid-elemental-enhancement-bis.gear.json (elemental-dps, 09e7398) | 65.3 | keep-sets-and-effects +0.1% vs current | Talisman of Ephemeral Power, Weakness Analyzer | 11 (7) |
+| shaman-hybrid-elemental-enhancement-prebis.gear.json (elemental-dps, 09e7398) | 63.4 | keep-sets-and-effects +0.0% vs all-slots | Weakness Analyzer, Jewel of the Guard Captain | 12 (7) |
+| shaman-hybrid-elemental-enhancement-bis-raid.gear.json (enhancement-dps, 09e7398) | 62.8 | - | Adaptive Combat Assistant, Talisman of Ephemeral Power | 13 (9) |
+| shaman-hybrid-elemental-enhancement-prebis-raid.gear.json (enhancement-dps, 09e7398) | 61.7 | keep-sets-and-effects +0.3% vs all-slots | Adaptive Combat Assistant, Jewel of the Guard Captain | 10 (6) |
+| warlock-affliction-bis.gear.json (affliction-raid, 09e7398) | 63.9 | - | Talisman of Ephemeral Power, Weakness Analyzer | 12 (11) |
+| warlock-affliction-prebis.gear.json (affliction-raid, 09e7398) | 62.4 | keep-sets-and-effects +0.0% vs all-slots | Weakness Analyzer, Jewel of the Guard Captain | 13 (11) |
+| warlock-demonology-bis.gear.json (demonology-raid, 09e7398) | 63.9 | all-slots +0.1% vs current | Weakness Analyzer, Talisman of Ephemeral Power | 12 (11) |
+| warlock-demonology-prebis.gear.json (demonology-raid, 09e7398) | 62.4 | keep-sets-and-effects +0.0% vs all-slots | Weakness Analyzer, Jewel of the Guard Captain | 14 (14) |
+| warlock-destruction-bis.gear.json (sb-raid, 09e7398) | 64.2 | all-slots +0.2% vs current | Talisman of Ephemeral Power, Weakness Analyzer | 12 (11) |
+| warlock-destruction-prebis.gear.json (sb-raid, 09e7398) | 62.4 | all-slots +0.1% vs keep-sets-and-effects | Weakness Analyzer, Jewel of the Guard Captain | 14 (13) |
+| warlock-hybrid-affliction-destruction-bis.gear.json (sb-raid, 09e7398) | 63.9 | - | Talisman of Ephemeral Power, Weakness Analyzer | 11 (10) |
+| warlock-hybrid-affliction-destruction-prebis.gear.json (sb-raid, 09e7398) | 62.4 | keep-sets-and-effects +0.0% vs all-slots | Weakness Analyzer, Jewel of the Guard Captain | 13 (11) |
+| warrior-arms-bis.gear.json (arms-battle-raid, 09e7398) | 62.6 | keep-sets-and-effects +0.9% vs all-slots | Everlook Pathcarver, Jewel of the Guard Captain | 11 (9) |
+| warrior-arms-prebis.gear.json (arms-battle-raid, 09e7398) | 62.3 | keep-sets-and-effects +1.3% vs all-slots | Everlook Pathcarver, Rune of the Guard Captain | 10 (6) |
+| warrior-fury-bis.gear.json (fury-dw-raid, 09e7398) | 62.9 | keep-sets-and-effects +0.4% vs all-slots | Adaptive Combat Assistant, Rune of the Guard Captain | 9 (5) |
+| warrior-fury-prebis.gear.json (fury-dw-raid, 09e7398) | 63.0 | keep-sets-and-effects +0.0% vs all-slots | Adaptive Combat Assistant, Rune of the Guard Captain | 10 (6) |
+
+### Tanks (tank_gear.py, 09e7398; record raidsim/tank-gear.json)
+
+Tank value against the reference above (1.000 = deep_tank's hand draft in the standard set), 20,000 fights, seed 3:
+
+| Tank (page pick) | Standard set | Pre-BiS | BiS |
+|---|---|---|---|
+| warrior (protection-ml-tank) | 1.015 | 1.132 (+11.5%; threat +16.6%, damage taken -5.8%), item level 63.7 | 1.134 (+11.7%; +13.6%, -8.8%), 63.7 |
+| paladin (protection-ml-tank) | 1.079 | 1.272 (+17.9%; +5.8%, -22.6%), 62.8 | 1.274 (+18.0%; +2.7%, -24.5%), 63.2 |
+| druid bear (feral-bear-tank) | 1.000 | 1.141 (+14.1%; +21.9%, -5.8%), 63.5 | 1.183 (+18.3%; +25.7%, -9.8%), 64.3 |
+
+The bear's idol race read the same for all three preset idols (Idol of the Moon, Swarming Idol, Howling Idol: no effect on a bear in the
+simulator), so the first, Idol of the Moon, stands.
+
+### Healers (heal_gear.py; healer lab, no simulator; record heallab/heal-gear.json)
+
+All five healer specs re-made from the official database (the 2026-10-15 sets held 5-10 fork-only items each: Amulet of the Redeemed,
+Hands of the Exalted Herald, the Prophecy and Transcendence pieces, Staff of Dominance ...). Capacity against the lab's assumed gear
+(fresh seeds, paired; the healer lab's model, not a measurement):
+
+| Spec (raid pick) | Pre-BiS | BiS |
+|---|---|---|
+| priest Holy (holy-raid-healer) | x0.984, item level 60.4 | x0.989, 60.8 |
+| priest Discipline (discipline-ml-heal) | x0.976, 60.1 | x0.990, 61.6 |
+| paladin Holy (holy-ml-heal) | x1.021, 62.3 | x1.058, 64.4 |
+| druid Restoration (restoration-ml-heal) | x1.002, 59.1 | x1.020, 62.8 |
+| shaman Restoration (resto-raid-healer) | x1.003, 60.6 | x1.034, 63.5 |
+
+Removed (orphans holding fork-only items, git history keeps them): `gear_sets/forever/hunter_melee_p1.gear.json` (the melee hunter's raw
+input, replaced by its p1opt set since 2026-09-30), `tiers/hunter-hybrid-beast-mastery-marksmanship-{bis,prebis}-raid.gear.json` (named
+only by `raidsim/ml/prev/`), the six `*-classic-armor` tank sets.
+
+Not done here (other agents or later steps): no build was raced in the new sets, no rotation re-tuned; gear_links.py and the pages
+still show what their last regen wrote. Idol of the Dream (new on 30f67f5, a sourced item-level-60 idol) is in no preset, so the relic
+races never tried it.
+
 ## Open (in order)
 
-1. **Gear.** 159 items of our 98 gear sets (897 slot uses: Blackhand's Breadth, Band of Accuria, the Molten Core tier sets, Hand of
-   Justice, Rune Band of Wizardry, Spellweaver's Turban ...) are not in the official database, which comes from Forever's game files
-   (`sim/core/item_effects.go`: "Forever's item set is a subset of TBC's"; Wowhead's Forever database does not list them either; Band of
-   Sulfuras and Sulfuras are there). The fork's database had 2,180 items the official one lacks. Every set must be re-made from the
-   official database (`gear_opt.py`, `gear_tiers.py`, `tank_gear.py`, then `fill_enchants.py`) before any raid number means anything;
-   until then a run reports `missing_gear` and plays with empty slots. Those tools hard-code the fork's Stat enum (`gear_opt.py:335`,
-   `gear_tiers.py:226`, `tank_gear.py:59`): the official enum merged melee/spell hit, crit and haste into shared ratings
-   (17-19) and renumbered everything after Spirit; read it from the clone's `proto/common.proto`. `fill_armor.py` is retired.
-2. Paths to the fork's clone outside raidsim/setup.py and run.py: `raidsim/fill_enchants.py:26`, `raidsim/id_names.py:27,59`,
-   `raidsim/fill_armor.py:21`, `raidsim/repin_rehearsal.py`, `heallab/heal_gear.py:86`, `fightlab/spell_gcd.py:20`,
+1. ~~Gear.~~ Done 2026-10-22 (section "Gear"): every set re-made from the official database, 0 missing items or enchants; the tools
+   read the Stat enum from the proto. Left: race the builds in the new sets before any raid number is quoted.
+2. Paths to the fork's clone outside raidsim/setup.py and run.py (fill_enchants.py and heal_gear.py ported 2026-10-22; gear_opt.py reads
+   the archived fork database only for the shape of a missing item, `legacy_item`): `raidsim/id_names.py:27,59`,
+   `raidsim/fill_armor.py:21`, `raidsim/repin_rehearsal.py`, `fightlab/spell_gcd.py:20`,
    `fightlab/spell_scaling.py:28` (the fight lab reads the fork's spell store; the official store is
    `sim/core/spelldata/spells_auto_gen.go` in the new clone, same format).
 3. The simulator's talent presets: the official presets.ts files have none for hunter, rogue and the three shaman specs, so those
@@ -111,9 +301,8 @@ Frost 1.4x, Shadow 1.4x, warrior 0.95x). Searches and races will take about a qu
    now duplicates of the top line (harmless; prune at the re-tune).
 5. Share links: the official UI's proto version is 2 (`option (current_version_number) = 2;`, which `gear_links.py`'s regex reads),
    the site wowsims.com/forever; `gear_links.py` still builds links for elliotwood.github.io and the bench's `link` mode was not tested.
-7. The bench's `statweights` and `link` modes run on the official API (Frost mage, 300 fights); the weights come back under the
-   official stat names (`StatHitRating`, `StatCritRating`, ...), which the gear tools in item 1 must read; a link opened in the
-   official UI was not tried.
+7. The bench's `statweights` and `link` modes run on the official API; the gear tools read the weights under the official stat names
+   (`StatHitRating`, `StatCritRating`, ...) since 2026-10-22 (done). A link opened in the official UI was not tried.
 8. **Smoke-table gaps, traced 2026-10-22** (diagnostic benches of both simulators with a final-stats and mana/energy-ledger mode,
    per-action damage per hit, talent removal deltas in both; 1,000-1,500 fights, seed 1; scratchpad `wfdiag/`). No gap needed a
    simulator patch. Two came from the smoke harness, one from the bench, the rest are the fork being wrong: its pin b7083fa carries the

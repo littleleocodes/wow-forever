@@ -15,91 +15,251 @@
   "bis": {
    "entry": "fury-dw-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-fury-bis.gear.json",
-   "date": "2026-10-16",
-   "chosen": "all-slots",
-   "ilvl": 65.3,
+   "date": "2026-10-22",
+   "chosen": "keep-sets-and-effects",
+   "ilvl": 62.9,
    "trinkets": [
-    "Blackhand's Breadth",
-    "Adaptive Combat Assistant"
+    "Adaptive Combat Assistant",
+    "Rune of the Guard Captain"
    ],
+   "trinket_screen": {
+    "Adaptive Combat Assistant (272437)": 1.0243,
+    "Rune of the Guard Captain (19120)": 1.0108,
+    "Cleansed Vilebranch Medallion (270275)": 1.0108,
+    "Molten Heart of the Mountain (249470)": 1.0065,
+    "Frozen Heart of the Mountain (249469)": 1.0059,
+    "Jewel of the Guard Captain (270225)": 1.0052,
+    "Everlook Delivery Bot (274760)": 1.0046,
+    "Everlook Pathcarver (274759)": 1.0034,
+    "Weakness Analyzer (272438)": 1.0015,
+    "Ankh of Life (1713)": 1.0,
+    "Dog Whistle (3456)": 1.0,
+    "Minor Recombobulator (4381)": 1.0,
+    "Gnomish Universal Remote (7506)": 1.0,
+    "Shard of the Splithooves (10659)": 1.0,
+    "Demon's Blood (10779)": 1.0,
+    "Smoking Heart of the Mountain (11811)": 1.0,
+    "Heart of the Scale (13164)": 1.0,
+    "Alchemist's Stone (13503)": 1.0,
+    "Arcanite Dragonling (16022)": 1.0,
+    "Stormpike Insignia Rank 6 (17904)": 1.0,
+    "Gyrofreeze Ice Reflector (18634)": 1.0,
+    "Major Recombobulator (18637)": 1.0,
+    "Hyper-Radiant Flame Reflector (18638)": 1.0,
+    "Ultra-Flash Shadow Reflector (18639)": 1.0,
+    "Essence of the Pure Flame (18815)": 1.0,
+    "Talisman of Ephemeral Power (18820)": 1.0,
+    "Arena Grand Master (19024)": 1.0,
+    "Talisman of Arathor (20071)": 1.0,
+    "Defiler's Talisman (20072)": 1.0,
+    "Defiler's Talisman (21115)": 1.0,
+    "Defiler's Talisman (21116)": 1.0,
+    "Talisman of Arathor (21117)": 1.0,
+    "Talisman of Arathor (21118)": 1.0,
+    "Talisman of Arathor (21119)": 1.0,
+    "Defiler's Talisman (21120)": 1.0,
+    "Defender of the Timbermaw (21326)": 1.0,
+    "Dormant Heart of the Mountain (249473)": 1.0,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
+    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
+    "Gnomish Poultryizer (260824)": 1.0,
+    "Enriched Seal (271903)": 1.0,
+    "Volunteer's Lucky Seal (271904)": 1.0,
+    "Enriched Seal (271905)": 1.0,
+    "Volunteer's Lucky Seal (271906)": 1.0,
+    "Darkspear Voodoo Seal (272059)": 1.0,
+    "Relentless Raider's Seal (272060)": 1.0,
+    "Darkspear Voodoo Seal (272061)": 1.0,
+    "Relentless Raider's Seal (272062)": 1.0,
+    "Serenity Field (272439)": 1.0,
+    "Defender's Grip Stabilizer (272440)": 1.0,
+    "Parachute-Priest Pager (274761)": 1.0
+   },
    "names": [
     "Lionheart Helm",
     "Onyxia Tooth Pendant",
     "Theramore Pauldrons",
     "Howler's Furs",
-    "Timbermaw Tunic",
+    "Dawn Armor",
     "Deeprock Bracers",
-    "Flameguard Gauntlets",
-    "Onslaught Girdle",
+    "Stormshroud Gloves",
+    "Belt of Preserved Heads",
     "Titanic Leggings",
     "Boots of Heroism",
-    "Quick Strike Ring",
+    "Band of the Better Half",
     "Don Julio's Band",
-    "Blackhand's Breadth",
     "Adaptive Combat Assistant",
-    "Brutality Blade",
+    "Rune of the Guard Captain",
     "Premier High Warlord's Blade",
-    "Striker's Mark"
+    "Persuader",
+    "Premier High Warlord's Recurve"
    ],
    "race_seed1": {
-    "current": 1.0,
-    "all-slots": 1.0166479317687118,
-    "keep-sets-and-effects": 1.0166479317687118
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 1.0065675110715104
    },
    "confirm_seed2": {
-    "current": 1.0,
-    "all-slots": 1.0159830519868451
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 1.0042317392290092
    },
    "weights": {
-    "PseudoStatMainHandDps": 1.6387,
-    "PseudoStatOffHandDps": 0.7574,
-    "StatAgility": 0.2767,
-    "StatArmorPenetration": 0.0682,
-    "StatAttackPower": 0.1871,
-    "StatExpertiseRating": 0.6732,
-    "StatFireDamage": 0.0377,
-    "StatMeleeCritRating": 0.4077,
-    "StatMeleeHasteRating": 0.3471,
-    "StatMeleeHitRating": 0.4148,
-    "StatSpellCritRating": 0.0006,
-    "StatSpellDamage": 0.0377,
-    "StatSpellHasteRating": 0.0521,
-    "StatSpellHitRating": 0.0031,
-    "StatStrength": 0.3743
+    "PseudoStatMainHandDps": 1.7539,
+    "PseudoStatOffHandDps": 0.7226,
+    "StatAgility": 0.2959,
+    "StatArmorPenetration": 0.0643,
+    "StatAttackPower": 0.1789,
+    "StatCritRating": 0.4402,
+    "StatExpertiseRating": 0.7162,
+    "StatHasteRating": 0.4098,
+    "StatHitRating": 0.6912,
+    "StatStrength": 0.3577
    },
    "evaluated_on": [
     "fury-dw-raid: ml winner"
-   ]
+   ],
+   "replaced": [
+    {
+     "slot": 4,
+     "from": "Timbermaw Tunic",
+     "to": "Dawn Armor"
+    },
+    {
+     "slot": 6,
+     "from": "Flameguard Gauntlets (not in the database)",
+     "to": "Stormshroud Gloves"
+    },
+    {
+     "slot": 7,
+     "from": "Onslaught Girdle (not in the database)",
+     "to": "Belt of Preserved Heads"
+    },
+    {
+     "slot": 10,
+     "from": "Quick Strike Ring",
+     "to": "Band of the Better Half"
+    },
+    {
+     "slot": 12,
+     "from": "Blackhand's Breadth (not in the database)",
+     "to": "Adaptive Combat Assistant"
+    },
+    {
+     "slot": 13,
+     "from": "Adaptive Combat Assistant",
+     "to": "Rune of the Guard Captain"
+    },
+    {
+     "slot": 14,
+     "from": "Brutality Blade (not in the database)",
+     "to": "Premier High Warlord's Blade"
+    },
+    {
+     "slot": 15,
+     "from": "Premier High Warlord's Blade",
+     "to": "Persuader"
+    },
+    {
+     "slot": 16,
+     "from": "Striker's Mark (not in the database)",
+     "to": "Premier High Warlord's Recurve"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 09e739807",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:19143",
+     "item:19137",
+     "item:13965",
+     "item:18832",
+     "item:17069"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [],
+    "minutes": 1.1
+   }
   },
   "bis2": true,
   "prebis": {
    "entry": "fury-dw-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-fury-prebis.gear.json",
-   "date": "2026-10-16",
+   "date": "2026-10-22",
    "chosen": "keep-sets-and-effects",
-   "ilvl": 63.2,
+   "ilvl": 63.0,
    "trinkets": [
-    "Blackhand's Breadth",
-    "Adaptive Combat Assistant"
+    "Adaptive Combat Assistant",
+    "Rune of the Guard Captain"
    ],
+   "trinket_screen": {
+    "Adaptive Combat Assistant (272437)": 1.0256,
+    "Rune of the Guard Captain (19120)": 1.0109,
+    "Cleansed Vilebranch Medallion (270275)": 1.0109,
+    "Frozen Heart of the Mountain (249469)": 1.0074,
+    "Molten Heart of the Mountain (249470)": 1.0063,
+    "Jewel of the Guard Captain (270225)": 1.0061,
+    "Everlook Pathcarver (274759)": 1.0038,
+    "Weakness Analyzer (272438)": 1.003,
+    "Everlook Delivery Bot (274760)": 1.0029,
+    "Ankh of Life (1713)": 1.0,
+    "Dog Whistle (3456)": 1.0,
+    "Minor Recombobulator (4381)": 1.0,
+    "Gnomish Universal Remote (7506)": 1.0,
+    "Shard of the Splithooves (10659)": 1.0,
+    "Demon's Blood (10779)": 1.0,
+    "Smoking Heart of the Mountain (11811)": 1.0,
+    "Heart of the Scale (13164)": 1.0,
+    "Alchemist's Stone (13503)": 1.0,
+    "Arcanite Dragonling (16022)": 1.0,
+    "Stormpike Insignia Rank 6 (17904)": 1.0,
+    "Gyrofreeze Ice Reflector (18634)": 1.0,
+    "Major Recombobulator (18637)": 1.0,
+    "Hyper-Radiant Flame Reflector (18638)": 1.0,
+    "Ultra-Flash Shadow Reflector (18639)": 1.0,
+    "Talisman of Arathor (20071)": 1.0,
+    "Defiler's Talisman (20072)": 1.0,
+    "Defiler's Talisman (21115)": 1.0,
+    "Defiler's Talisman (21116)": 1.0,
+    "Talisman of Arathor (21117)": 1.0,
+    "Talisman of Arathor (21118)": 1.0,
+    "Talisman of Arathor (21119)": 1.0,
+    "Defiler's Talisman (21120)": 1.0,
+    "Defender of the Timbermaw (21326)": 1.0,
+    "Dormant Heart of the Mountain (249473)": 1.0,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
+    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
+    "Gnomish Poultryizer (260824)": 1.0,
+    "Enriched Seal (271903)": 1.0,
+    "Volunteer's Lucky Seal (271904)": 1.0,
+    "Enriched Seal (271905)": 1.0,
+    "Volunteer's Lucky Seal (271906)": 1.0,
+    "Darkspear Voodoo Seal (272059)": 1.0,
+    "Relentless Raider's Seal (272060)": 1.0,
+    "Darkspear Voodoo Seal (272061)": 1.0,
+    "Relentless Raider's Seal (272062)": 1.0,
+    "Serenity Field (272439)": 1.0,
+    "Defender's Grip Stabilizer (272440)": 1.0,
+    "Parachute-Priest Pager (274761)": 1.0
+   },
    "names": [
     "Lionheart Helm",
-    "Mark of Fordring",
+    "Beads of Ogre Might",
     "Theramore Pauldrons",
     "Howler's Furs",
-    "Timbermaw Tunic",
-    "Battleborn Armbraces",
+    "Dawn Armor",
+    "Deeprock Bracers",
     "Theramore Gauntlets",
-    "Radiant Girdle of the Dawn",
+    "Belt of Preserved Heads",
     "Titanic Leggings",
     "Boots of Heroism",
+    "Band of the Better Half",
     "Don Julio's Band",
-    "Signet Ring of the Bronze Dragonflight",
-    "Blackhand's Breadth",
     "Adaptive Combat Assistant",
+    "Rune of the Guard Captain",
     "Premier High Warlord's Blade",
-    "Premier High Warlord's Cleaver",
-    "Satyr's Bow"
+    "Persuader",
+    "Premier High Warlord's Recurve"
    ],
    "race_seed1": {
     "all-slots": 1.0,
@@ -110,25 +270,87 @@
     "all-slots": 1.0
    },
    "weights": {
-    "PseudoStatMainHandDps": 1.642,
-    "PseudoStatOffHandDps": 0.7262,
-    "StatAgility": 0.3137,
-    "StatArmorPenetration": 0.0655,
-    "StatAttackPower": 0.1793,
-    "StatExpertiseRating": 0.7454,
-    "StatFireDamage": 0.0348,
-    "StatMeleeCritRating": 0.4443,
-    "StatMeleeHasteRating": 0.3959,
-    "StatMeleeHitRating": 0.4822,
-    "StatSpellCritRating": 0.0006,
-    "StatSpellDamage": 0.0348,
-    "StatSpellHasteRating": 0.0386,
-    "StatSpellHitRating": 0.0027,
-    "StatStrength": 0.3586
+    "PseudoStatMainHandDps": 1.7433,
+    "PseudoStatOffHandDps": 0.7189,
+    "StatAgility": 0.3034,
+    "StatArmorPenetration": 0.0639,
+    "StatAttackPower": 0.1781,
+    "StatCritRating": 0.4502,
+    "StatExpertiseRating": 0.6368,
+    "StatHasteRating": 0.4497,
+    "StatHitRating": 0.6177,
+    "StatStrength": 0.3562
    },
    "evaluated_on": [
     "fury-dw-raid: ml winner (bis)"
-   ]
+   ],
+   "replaced": [
+    {
+     "slot": 1,
+     "from": "Mark of Fordring (not in the database)",
+     "to": "Beads of Ogre Might"
+    },
+    {
+     "slot": 4,
+     "from": "Timbermaw Tunic",
+     "to": "Dawn Armor"
+    },
+    {
+     "slot": 5,
+     "from": "Battleborn Armbraces (not in the database)",
+     "to": "Deeprock Bracers"
+    },
+    {
+     "slot": 7,
+     "from": "Radiant Girdle of the Dawn (not in the database)",
+     "to": "Belt of Preserved Heads"
+    },
+    {
+     "slot": 10,
+     "from": "Don Julio's Band",
+     "to": "Band of the Better Half"
+    },
+    {
+     "slot": 11,
+     "from": "Signet Ring of the Bronze Dragonflight (not in the database)",
+     "to": "Don Julio's Band"
+    },
+    {
+     "slot": 12,
+     "from": "Blackhand's Breadth (not in the database)",
+     "to": "Adaptive Combat Assistant"
+    },
+    {
+     "slot": 13,
+     "from": "Adaptive Combat Assistant",
+     "to": "Rune of the Guard Captain"
+    },
+    {
+     "slot": 15,
+     "from": "Premier High Warlord's Cleaver",
+     "to": "Persuader"
+    },
+    {
+     "slot": 16,
+     "from": "Satyr's Bow (not in the database)",
+     "to": "Premier High Warlord's Recurve"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 09e739807",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:15411",
+     "item:12936",
+     "item:227814",
+     "item:234021",
+     "item:13965",
+     "item:18323"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [],
+    "minutes": 1.1
+   }
   }
  },
  "search": {

@@ -28,11 +28,15 @@ The damage specs' tool (gear_tiers.py) with the tank's measure. Per tank entry o
   weigh: Crusader, +9 weapon damage, +30 spell power) are raced on seed 1 and confirmed on seed 2 against the template's.
 - The record compares the pick in each tier set with the entry's standard set (as the races use it: no enchants) on a fresh seed.
 - `--armor`: the same search with the base armor the fork's item database lacks filled in from Classic (see ClassicArmor), written as
-  `*-classic-armor` sets and the record's `classic_armor` key: a sensitivity, not the simulator's model.
+  `*-classic-armor` sets and the record's `classic_armor` key: a sensitivity, not the simulator's model. Obsolete since the port to
+  wowsims/forever (2026-10-22): the official database gives armor from the client's tables (5,884 of 6,151 armor items); the
+  `*-classic-armor` sets were removed then (they held items the official database lacks).
+- Reference (2026-10-22): deep_tank.py's reference build measured again on the current simulator in the entry's standard set
+  (`reference`; the deep record's own numbers are the fork's, kept as `reference_fork`).
 Sets `gear_sets/forever/tiers/<class>-<slug>-<tier>.gear.json` (warrior-protection, paladin-protection, druid-feral-combat-tank: the
 bear shares the Feral Combat page, whose cat sets hold `druid-feral-combat-<tier>`); record `raidsim/tank-gear.json`. `tier_gear(cls, spec,
-tier)` gives a tank's set path for the pages. The community simulator's model of the beta (ElliotWood/Forever, the pinned commit with this
-project's patches), not in-game measurements; it models no threat from other players, taunts or tank swaps, and no tank death.
+tier)` gives a tank's set path for the pages. The simulator's model of the beta (wowsims/forever since 2026-10-22, ElliotWood/Forever
+before; the pinned commit with this project's patches), not in-game measurements; it models no threat from other players, taunts or tank swaps, and no tank death.
 """
 import argparse
 import csv
@@ -56,12 +60,8 @@ SETS = HERE / "gear_sets" / "forever" / "tiers"
 RECORD = HERE / "tank-gear.json"
 SMOKE_DIR = HERE / "deep-smoke" / "tank-gear"   # git-ignored
 TODAY = datetime.date.today().isoformat()
-STAT_NAMES = ["StatStrength", "StatAgility", "StatStamina", "StatIntellect", "StatHealingPower", "StatSpellDamage", "StatArcaneDamage",
-              "StatFireDamage", "StatFrostDamage", "StatHolyDamage", "StatNatureDamage", "StatShadowDamage", "StatSpellHitRating",
-              "StatSpellCritRating", "StatSpellHasteRating", "StatSpellPiercing", "StatSpirit", "StatAttackPower", "StatRangedAttackPower",
-              "StatFeralAttackPower", "StatMeleeHitRating", "StatMeleeCritRating", "StatMeleeHasteRating", "StatArmorPenetration",
-              "StatExpertiseRating", "StatDefenseRating", "StatBlockRating", "StatBlockValue", "StatDodgeRating", "StatParryRating",
-              "StatArmor", "StatBonusArmor"]   # proto Stat 0-31 (an enchant's stats array is aligned this far; the arcanums' run longer)
+STAT_NAMES = []   # the simulator's Stat enum, index -> name (main() reads it from the clone's proto/common.proto: gear_opt.stat_names; an
+# enchant's stats array is aligned with it). The fork's numbering had been written in here until the port to wowsims/forever (2026-10-22).
 # defensive stats measured by central differences when the simulator's weights return 0 for them (TankWeights): stat -> step (the
 # simulator's own steps: 100 for armor, 10 otherwise)
 FD_STATS = {"StatArmor": 100, "StatBonusArmor": 100, "StatDefenseRating": 10, "StatDodgeRating": 10, "StatParryRating": 10,
@@ -123,14 +123,14 @@ class ClassicArmor:
         return None
 
     def missing(self, it):
-        """The armor the fork's database lacks for an item: 0 when it lists armor or is not armor."""
+        """The armor the database lacks for an item: 0 when it lists armor or is not armor."""
         i = it["id"]
         if i not in self.cache:
             so = it.get("scalingOptions", {}).get("0", {})
             st = so.get("stats", {})
             k = self.key(it)
             v = 0
-            if k and "30" not in st and "31" not in st:
+            if k and str(STAT_NAMES.index("StatArmor")) not in st and str(STAT_NAMES.index("StatBonusArmor")) not in st:
                 if i in self.by_id:
                     v = self.by_id[i]
                 elif k in self.fit:
@@ -192,7 +192,9 @@ def normalize(items, db):
     items = [dict(x) if x else {} for x in items] + [{}] * max(0, 17 - len(items))
     out = items[:14] + [{}, {}, {}]
     for x in items[14:]:
-        it = db.get(x.get("id")) if x.get("id") else None
+        # an item the official database lacks keeps its place by the fork's record of it (gear_opt.legacy_item, 2026-10-22), so the
+        # greedy step re-fills the slot with the same weapon setup
+        it = (db.get(x.get("id")) or G.legacy_item(x.get("id"))) if x.get("id") else None
         if not it:
             continue
         if it.get("type") == 14:
@@ -238,7 +240,7 @@ def gear_stats(items, db, enchants):
             for i, v in enumerate(e[0]["stats"][:len(STAT_NAMES)]):
                 tot[i] = tot.get(i, 0) + v
     keep = {"StatStamina", "StatStrength", "StatAgility", "StatArmor", "StatBonusArmor", "StatDefenseRating", "StatDodgeRating",
-            "StatParryRating", "StatBlockRating", "StatBlockValue", "StatMeleeHitRating", "StatExpertiseRating"}
+            "StatParryRating", "StatBlockRating", "StatBlockValue", "StatHitRating", "StatExpertiseRating"}
     out = {STAT_NAMES[i]: round(v, 1) for i, v in sorted(tot.items()) if i < len(STAT_NAMES) and STAT_NAMES[i] in keep and v}
     if ARMOR:   # --armor: the Classic base armor filled in for items that list none
         out["armor_filled_in"] = sum(ARMOR.missing(db[x["id"]]) for x in items if x and x.get("id") in db)
@@ -283,11 +285,20 @@ class TankWeights:
 
 
 def enchant_db(repo):
-    raw = json.load(open(repo / "assets/database/db.json", encoding="utf-8"))["enchants"]
-    by = {}
-    for e in raw:
-        by.setdefault(e["effectId"], []).append(e)
-    return by
+    return G.enchant_db(repo)
+
+
+def reference(cls, e, repo, builds, fork_ref, a):
+    """The tank-value reference measured on the current simulator: deep_tank.py's reference build (the entry's hand draft) in the entry's
+    standard set, deep_tank's 20,000 fights and seed 77, raid setting. Since the port to wowsims/forever (2026-10-22) the deep record's own
+    reference (`raidsim/deep/<class>-tank.json`) is the fork's numbers, so the tank values of this record sit on this one instead."""
+    hand = fork_ref["build"]
+    talents = R.talents_string(R.load_trees(repo, cls), R.alloc_of(builds[hand]))
+    r = bench_rows(e, repo, [{"label": "ref", "talents": talents}], a.ref_fights, 77, f"ref-{cls}")["ref"]
+    if r.get("error"):
+        raise SystemExit(f"reference run failed: {r['error']}")
+    return {"build": hand, "threat": r["threat"], "dtps": r["dtps"], "fights": a.ref_fights, "seed": 77, "gear": e["gear"],
+            "simulator": f"wowsims/forever {R.git_commit(repo)}", "missing_gear": r.get("missing_gear", [])}
 
 
 def ench_value(entries, w):
@@ -355,7 +366,12 @@ def run_class(cls, tiers, repo, db, zones, edb, a, rec):
     pick = a.build.get(cls) or page_pick(cls, entry_name, builds)
     talents = R.talents_string(R.load_trees(repo, cls), R.alloc_of(builds[pick]))
     deep = json.load(open(HERE / "deep" / f"{cls}-tank.json", encoding="utf-8"))
-    ref = deep["ref"]
+    out0 = rec.setdefault(cls, {})
+    sim = f"wowsims/forever {R.git_commit(repo)}"
+    if (out0.get("reference") or {}).get("simulator") != sim or (out0.get("reference") or {}).get("gear") != e["gear"] or a.fresh_standard:
+        out0["reference"] = reference(cls, e, repo, builds, deep["ref"], a)
+        out0.pop("standard", None)   # the standard set is measured again on the new reference
+    ref = out0["reference"]
     std_path = R.sim_path(e["gear"])
     std_path = pathlib.Path(std_path) if pathlib.Path(std_path).is_absolute() else repo / e["gear"]
     std = normalize(json.load(open(std_path, encoding="utf-8"))["items"], db)
@@ -366,7 +382,9 @@ def run_class(cls, tiers, repo, db, zones, edb, a, rec):
         out["note"] = ("sensitivity: every item's missing base armor filled in from Classic 1.12 (see tank_gear.py); tank value on the same "
                        "reference as the simulator's sets, so the standard set's value here includes its filled-in armor")
     out.update({"entry": entry_name, "build": pick, "setting": "raid", "rotation": R.apl_label(e, repo, "raid"),
-                "reference": dict(ref, source=f"raidsim/deep/{cls}-tank.json"), "standard_gear": e["gear"]})
+                "reference_fork": dict(deep["ref"], source=f"raidsim/deep/{cls}-tank.json (ElliotWood/Forever)"), "standard_gear": e["gear"]})
+    if not a.armor:
+        out["reference"] = ref
     log(f"== {cls} {entry_name}: {pick}; reference {ref['build']} (threat {ref['threat']:.1f}/s, damage taken {ref['dtps']:.1f}/s)")
     if "standard" not in out or a.fresh_standard:
         out["standard"] = measure(e, repo, talents, std if a.armor else None, a.final, 3, ref, f"m-{cls}") | {"stats": gear_stats(std, db, edb)}
@@ -422,26 +440,28 @@ def main():
     ap.add_argument("--max-pairs", type=int, default=60, help="trinket pairs raced (60: every pair of the tanks' 4-9 preset trinkets)")
     ap.add_argument("--armor", action="store_true", help="the sensitivity: missing base armor filled in from Classic (sets *-classic-armor)")
     ap.add_argument("--build", action="append", default=[], metavar="CLASS=ID", help="another build than the page's pick")
-    ap.add_argument("--fresh-standard", action="store_true", help="measure the standard set again")
+    ap.add_argument("--fresh-standard", action="store_true", help="measure the reference and the standard set again")
+    ap.add_argument("--ref-fights", type=int, default=20000, help="fights of the tank-value reference (deep_tank.py's 20,000)")
     ap.add_argument("--smoke", action="store_true", help="tiny budgets; sets and record under raidsim/deep-smoke/tank-gear/ (a test)")
     a = ap.parse_args()
     a.min_gain = 0.0
     a.build = dict(x.split("=", 1) for x in a.build)
     if a.smoke:
-        a.iterations, a.confirm, a.weight_iterations, a.final, a.max_pairs = 200, 400, 300, 400, 3
+        a.iterations, a.confirm, a.weight_iterations, a.final, a.max_pairs, a.ref_fights = 200, 400, 300, 400, 3, 400
     GT = _load("gear_tiers_tank", HERE / "gear_tiers.py")
     G, R = GT.G, GT.R
     import fill_enchants as FE  # noqa: F811
     R.set_game("forever")
     repo = R.repo_path(argparse.Namespace(repo=None))
     db, zones = GT.load_db(repo)
+    STAT_NAMES[:] = G.stat_names(repo)
     edb = enchant_db(repo)
     if a.armor:
         install_armor(db)
     rp = SMOKE_DIR / "tank-gear.json" if a.smoke else RECORD
     rp.parent.mkdir(parents=True, exist_ok=True)
     rec = json.load(open(rp, encoding="utf-8")) if rp.exists() else {}
-    rec.update({"simulator": f"ElliotWood/Forever {R.git_commit(repo)} (with this project's patches)", "date": TODAY,
+    rec.update({"simulator": f"wowsims/forever {R.git_commit(repo)} (with this project's patches)", "date": TODAY,
                 "budget": {"iterations": a.iterations, "confirm": a.confirm, "weight_iterations": a.weight_iterations, "final": a.final,
                            "max_pairs": a.max_pairs}})
     tiers = [t for t in a.tiers.split(",") if t in TIERS]

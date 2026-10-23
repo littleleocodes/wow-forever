@@ -14,124 +14,353 @@
   "bis": {
    "entry": "feral-cat-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-bis.gear.json",
-   "date": "2026-10-16",
+   "date": "2026-10-22",
    "chosen": "all-slots",
-   "ilvl": 64.8,
+   "ilvl": 63.5,
    "trinkets": [
-    "Blackhand's Breadth",
-    "Eye of the Beast"
+    "Adaptive Combat Assistant",
+    "Rune of the Guard Captain"
    ],
+   "trinket_screen": {
+    "Adaptive Combat Assistant (272437)": 1.007,
+    "Molten Heart of the Mountain (249470)": 1.0054,
+    "Rune of the Guard Captain (19120)": 1.0054,
+    "Cleansed Vilebranch Medallion (270275)": 1.0054,
+    "Everlook Pathcarver (274759)": 1.0044,
+    "Everlook Delivery Bot (274760)": 1.0042,
+    "Jewel of the Guard Captain (270225)": 1.0024,
+    "Frozen Heart of the Mountain (249469)": 1.0016,
+    "Shard of the Splithooves (10659)": 1.0001,
+    "Ankh of Life (1713)": 1.0,
+    "Enriched Seal (271903)": 0.9999,
+    "Darkspear Voodoo Seal (272061)": 0.9999,
+    "Serenity Field (272439)": 0.9997,
+    "Enriched Seal (271905)": 0.9995,
+    "Darkspear Voodoo Seal (272059)": 0.9995,
+    "Alchemist's Stone (13503)": 0.9991,
+    "Weakness Analyzer (272438)": 0.9982,
+    "Dog Whistle (3456)": 0.9977,
+    "Minor Recombobulator (4381)": 0.9977,
+    "Gnomish Universal Remote (7506)": 0.9977,
+    "Demon's Blood (10779)": 0.9977,
+    "Smoking Heart of the Mountain (11811)": 0.9977,
+    "Heart of the Scale (13164)": 0.9977,
+    "Arcanite Dragonling (16022)": 0.9977,
+    "Stormpike Insignia Rank 6 (17904)": 0.9977,
+    "Gyrofreeze Ice Reflector (18634)": 0.9977,
+    "Major Recombobulator (18637)": 0.9977,
+    "Hyper-Radiant Flame Reflector (18638)": 0.9977,
+    "Ultra-Flash Shadow Reflector (18639)": 0.9977,
+    "Essence of the Pure Flame (18815)": 0.9977,
+    "Talisman of Ephemeral Power (18820)": 0.9977,
+    "Arena Grand Master (19024)": 0.9977,
+    "Talisman of Arathor (20071)": 0.9977,
+    "Defiler's Talisman (20072)": 0.9977,
+    "Defiler's Talisman (21115)": 0.9977,
+    "Defiler's Talisman (21116)": 0.9977,
+    "Talisman of Arathor (21117)": 0.9977,
+    "Talisman of Arathor (21118)": 0.9977,
+    "Talisman of Arathor (21119)": 0.9977,
+    "Defiler's Talisman (21120)": 0.9977,
+    "Defender of the Timbermaw (21326)": 0.9977,
+    "Dormant Heart of the Mountain (249473)": 0.9977,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.9977,
+    "SAF-T Emergency Ripper: Everlook (260820)": 0.9977,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.9977,
+    "Gnomish Poultryizer (260824)": 0.9977,
+    "Volunteer's Lucky Seal (271904)": 0.9977,
+    "Volunteer's Lucky Seal (271906)": 0.9977,
+    "Relentless Raider's Seal (272060)": 0.9977,
+    "Relentless Raider's Seal (272062)": 0.9977,
+    "Defender's Grip Stabilizer (272440)": 0.9977,
+    "Parachute-Priest Pager (274761)": 0.9977
+   },
    "names": [
     "Darkmantle Cap",
-    "Onyxia Tooth Pendant",
+    "Amulet of the Darkmoon",
     "Theramore Pauldrons",
-    "Cape of the Black Baron",
+    "Earthweave Cloak",
     "Timbermaw Tunic",
     "Forest Stalker's Bracers",
     "Theramore Gloves",
-    "Ferocity of the Timbermaw",
+    "Shifter's Belt",
     "Warbear Woolies",
-    "Blood Guard's Dragonhide Treads",
+    "Dunestalker's Boots",
+    "Signet Ring of the Bronze Dragonflight",
     "Quick Strike Ring",
-    "Band of Accuria",
-    "Blackhand's Breadth",
-    "Eye of the Beast",
-    "Perdition's Blade",
+    "Adaptive Combat Assistant",
+    "Rune of the Guard Captain",
+    "Premier High Warlord's Razor",
     null,
-    "Idol of Ferocity"
+    "Idol of the Moon"
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.0214733122221626,
-    "keep-sets-and-effects": 1.0214733122221626,
-    "previous": 1.0214733122221626
+    "all-slots": 1.0005635923337557,
+    "keep-sets-and-effects": 1.0005635923337557
    },
    "confirm_seed2": {
     "current": 1.0,
-    "all-slots": 1.0212441021994865
+    "all-slots": 1.0000140336191874
    },
    "weights": {
-    "PseudoStatMainHandDps": 1.4045,
-    "StatAgility": 0.3151,
-    "StatArmorPenetration": 0.0294,
-    "StatAttackPower": 0.1347,
-    "StatExpertiseRating": 0.2026,
-    "StatFeralAttackPower": 0.1347,
-    "StatFireDamage": 0.041,
-    "StatIntellect": 0.0711,
-    "StatMeleeCritRating": 0.2609,
-    "StatMeleeHasteRating": 0.0984,
-    "StatMeleeHitRating": 0.2026,
-    "StatSpellCritRating": 0.0024,
-    "StatSpellDamage": 0.041,
-    "StatSpellHitRating": 0.0152,
-    "StatSpirit": 0.0346,
-    "StatStrength": 0.2963
+    "PseudoStatMainHandDps": 1.3111,
+    "StatAgility": 0.2939,
+    "StatArmorPenetration": 0.0263,
+    "StatAttackPower": 0.125,
+    "StatCritRating": 0.2466,
+    "StatExpertiseRating": 0.1621,
+    "StatFeralAttackPower": 0.125,
+    "StatHasteRating": 0.1294,
+    "StatHitRating": 0.1666,
+    "StatIntellect": 0.1026,
+    "StatSpellPiercing": 0.0066,
+    "StatSpirit": 0.1015,
+    "StatStrength": 0.275
    },
    "evaluated_on": [
     "feral-cat-dps: ml winner"
-   ]
+   ],
+   "replaced": [
+    {
+     "slot": 1,
+     "from": "Onyxia Tooth Pendant",
+     "to": "Amulet of the Darkmoon"
+    },
+    {
+     "slot": 3,
+     "from": "Cape of the Black Baron (not in the database)",
+     "to": "Earthweave Cloak"
+    },
+    {
+     "slot": 7,
+     "from": "Ferocity of the Timbermaw (not in the database)",
+     "to": "Shifter's Belt"
+    },
+    {
+     "slot": 9,
+     "from": "Blood Guard's Dragonhide Treads (not in the database)",
+     "to": "Dunestalker's Boots"
+    },
+    {
+     "slot": 10,
+     "from": "Quick Strike Ring",
+     "to": "Signet Ring of the Bronze Dragonflight"
+    },
+    {
+     "slot": 11,
+     "from": "Band of Accuria (not in the database)",
+     "to": "Quick Strike Ring"
+    },
+    {
+     "slot": 12,
+     "from": "Blackhand's Breadth (not in the database)",
+     "to": "Adaptive Combat Assistant"
+    },
+    {
+     "slot": 13,
+     "from": "Eye of the Beast (not in the database)",
+     "to": "Rune of the Guard Captain"
+    },
+    {
+     "slot": 14,
+     "from": "Perdition's Blade (not in the database)",
+     "to": "Premier High Warlord's Razor"
+    },
+    {
+     "slot": 16,
+     "from": "Idol of Ferocity (not in the database)",
+     "to": "Idol of the Moon"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 09e739807",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:13340",
+     "item:227805",
+     "item:227181",
+     "item:17063",
+     "item:13965",
+     "item:13968",
+     "item:18816",
+     "item:22397"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [],
+    "minutes": 2.8
+   }
   },
   "bis2": true,
   "prebis": {
    "entry": "feral-cat-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-prebis.gear.json",
-   "date": "2026-10-16",
-   "chosen": "previous",
-   "ilvl": 63.0,
+   "date": "2026-10-22",
+   "chosen": "keep-sets-and-effects",
+   "ilvl": 63.9,
    "trinkets": [
-    "Blackhand's Breadth",
-    "Eye of the Beast"
+    "Adaptive Combat Assistant",
+    "Molten Heart of the Mountain"
    ],
+   "trinket_screen": {
+    "Adaptive Combat Assistant (272437)": 1.0064,
+    "Molten Heart of the Mountain (249470)": 1.006,
+    "Rune of the Guard Captain (19120)": 1.0049,
+    "Cleansed Vilebranch Medallion (270275)": 1.0049,
+    "Everlook Pathcarver (274759)": 1.0043,
+    "Everlook Delivery Bot (274760)": 1.0039,
+    "Jewel of the Guard Captain (270225)": 1.0027,
+    "Frozen Heart of the Mountain (249469)": 1.0015,
+    "Enriched Seal (271903)": 1.0001,
+    "Darkspear Voodoo Seal (272061)": 1.0001,
+    "Ankh of Life (1713)": 1.0,
+    "Shard of the Splithooves (10659)": 0.9999,
+    "Serenity Field (272439)": 0.9995,
+    "Enriched Seal (271905)": 0.9995,
+    "Darkspear Voodoo Seal (272059)": 0.9995,
+    "Alchemist's Stone (13503)": 0.9991,
+    "Weakness Analyzer (272438)": 0.9987,
+    "Dog Whistle (3456)": 0.9982,
+    "Minor Recombobulator (4381)": 0.9982,
+    "Gnomish Universal Remote (7506)": 0.9982,
+    "Demon's Blood (10779)": 0.9982,
+    "Smoking Heart of the Mountain (11811)": 0.9982,
+    "Heart of the Scale (13164)": 0.9982,
+    "Arcanite Dragonling (16022)": 0.9982,
+    "Stormpike Insignia Rank 6 (17904)": 0.9982,
+    "Gyrofreeze Ice Reflector (18634)": 0.9982,
+    "Major Recombobulator (18637)": 0.9982,
+    "Hyper-Radiant Flame Reflector (18638)": 0.9982,
+    "Ultra-Flash Shadow Reflector (18639)": 0.9982,
+    "Talisman of Arathor (20071)": 0.9982,
+    "Defiler's Talisman (20072)": 0.9982,
+    "Defiler's Talisman (21115)": 0.9982,
+    "Defiler's Talisman (21116)": 0.9982,
+    "Talisman of Arathor (21117)": 0.9982,
+    "Talisman of Arathor (21118)": 0.9982,
+    "Talisman of Arathor (21119)": 0.9982,
+    "Defiler's Talisman (21120)": 0.9982,
+    "Defender of the Timbermaw (21326)": 0.9982,
+    "Dormant Heart of the Mountain (249473)": 0.9982,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.9982,
+    "SAF-T Emergency Ripper: Everlook (260820)": 0.9982,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.9982,
+    "Gnomish Poultryizer (260824)": 0.9982,
+    "Volunteer's Lucky Seal (271904)": 0.9982,
+    "Volunteer's Lucky Seal (271906)": 0.9982,
+    "Relentless Raider's Seal (272060)": 0.9982,
+    "Relentless Raider's Seal (272062)": 0.9982,
+    "Defender's Grip Stabilizer (272440)": 0.9982,
+    "Parachute-Priest Pager (274761)": 0.9982
+   },
    "names": [
     "Darkmantle Cap",
-    "Mark of Fordring",
+    "Amulet of the Darkmoon",
     "Theramore Pauldrons",
-    "Cape of the Black Baron",
+    "Earthweave Cloak",
     "Timbermaw Tunic",
     "Forest Stalker's Bracers",
     "Theramore Gloves",
-    "Ferocity of the Timbermaw",
+    "Shifter's Belt",
     "Warbear Woolies",
-    "Blood Guard's Dragonhide Treads",
+    "Dunestalker's Boots",
     "Signet Ring of the Bronze Dragonflight",
-    "Don Julio's Band",
-    "Blackhand's Breadth",
-    "Eye of the Beast",
+    "Band of the Better Half",
+    "Adaptive Combat Assistant",
+    "Molten Heart of the Mountain",
     "Premier High Warlord's Razor",
     null,
-    "Idol of Ferocity"
+    "Idol of the Moon"
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 1.0,
-    "previous": 1.0
+    "keep-sets-and-effects": 1.0
    },
    "confirm_seed2": {
-    "previous": 1.0,
+    "keep-sets-and-effects": 1.0,
     "all-slots": 1.0
    },
    "weights": {
-    "PseudoStatMainHandDps": 1.4024,
-    "StatAgility": 0.3136,
-    "StatArmorPenetration": 0.0278,
-    "StatAttackPower": 0.1347,
-    "StatExpertiseRating": 0.215,
-    "StatFeralAttackPower": 0.1347,
-    "StatFireDamage": 0.0407,
-    "StatIntellect": 0.0615,
-    "StatMeleeCritRating": 0.2514,
-    "StatMeleeHasteRating": 0.0929,
-    "StatMeleeHitRating": 0.215,
-    "StatSpellCritRating": 0.0024,
-    "StatSpellDamage": 0.0407,
-    "StatSpellHitRating": 0.0188,
-    "StatSpirit": 0.0308,
-    "StatStrength": 0.2963
+    "PseudoStatMainHandDps": 1.3108,
+    "StatAgility": 0.2919,
+    "StatArmorPenetration": 0.0262,
+    "StatAttackPower": 0.1247,
+    "StatCritRating": 0.2385,
+    "StatExpertiseRating": 0.1661,
+    "StatFeralAttackPower": 0.1247,
+    "StatHasteRating": 0.1357,
+    "StatHitRating": 0.1702,
+    "StatIntellect": 0.0826,
+    "StatSpellPiercing": 0.0066,
+    "StatSpirit": 0.0805,
+    "StatStrength": 0.2744
    },
    "evaluated_on": [
     "feral-cat-dps: ml winner (bis)"
-   ]
+   ],
+   "replaced": [
+    {
+     "slot": 1,
+     "from": "Mark of Fordring (not in the database)",
+     "to": "Amulet of the Darkmoon"
+    },
+    {
+     "slot": 3,
+     "from": "Cape of the Black Baron (not in the database)",
+     "to": "Earthweave Cloak"
+    },
+    {
+     "slot": 7,
+     "from": "Ferocity of the Timbermaw (not in the database)",
+     "to": "Shifter's Belt"
+    },
+    {
+     "slot": 9,
+     "from": "Blood Guard's Dragonhide Treads (not in the database)",
+     "to": "Dunestalker's Boots"
+    },
+    {
+     "slot": 10,
+     "from": "Signet Ring of the Bronze Dragonflight",
+     "to": "Signet Ring of the Bronze Dragonflight"
+    },
+    {
+     "slot": 11,
+     "from": "Don Julio's Band",
+     "to": "Band of the Better Half"
+    },
+    {
+     "slot": 12,
+     "from": "Blackhand's Breadth (not in the database)",
+     "to": "Adaptive Combat Assistant"
+    },
+    {
+     "slot": 13,
+     "from": "Eye of the Beast (not in the database)",
+     "to": "Molten Heart of the Mountain"
+    },
+    {
+     "slot": 16,
+     "from": "Idol of Ferocity (not in the database)",
+     "to": "Idol of the Moon"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 09e739807",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:15411",
+     "item:13340",
+     "item:227805",
+     "item:227181",
+     "item:13965",
+     "item:13968",
+     "item:22397"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [],
+    "minutes": 3.1
+   }
   }
  },
  "search": {

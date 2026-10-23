@@ -1,6 +1,6 @@
 {
- "simulator": "ElliotWood/Forever 2ce8265 (with this project's patches)",
- "date": "2026-10-15",
+ "simulator": "wowsims/forever 09e739807 (with this project's patches)",
+ "date": "2026-10-22",
  "budget": {
   "iterations": 3000,
   "confirm": 12000,
@@ -10,121 +10,154 @@
  },
  "warrior": {
   "entry": "prot-tank",
-  "build": "opt-prot-tank-raid-tank",
+  "build": "protection-ml-tank",
   "setting": "raid",
   "rotation": "_reference/data/raidsim/apls/warrior/prot-tank-raid.apl.json",
   "reference": {
    "build": "prot-raid-tank",
-   "threat": 677.5026386012788,
-   "dtps": 672.8775102389011,
+   "threat": 1147.7953060214131,
+   "dtps": 326.5828251740544,
    "fights": 20000,
-   "source": "raidsim/deep/warrior-tank.json"
+   "seed": 77,
+   "gear": "ui/specs/warrior/protection/gear_sets/prebis.gear.json",
+   "simulator": "wowsims/forever 09e739807",
+   "missing_gear": []
   },
-  "standard_gear": "ui/specs/warrior/protection/gear_sets/launch.gear.json",
-  "standard": {
-   "value": 1.0113,
-   "threat": 692.8,
-   "dtps": 672.8,
-   "dps": 513.5,
-   "tmi": 0,
-   "fights": 20000,
-   "seed": 3,
-   "stats": {
-    "StatStrength": 175,
-    "StatAgility": 13,
-    "StatStamina": 164,
-    "StatMeleeHitRating": 147,
-    "StatBlockValue": 58,
-    "StatBonusArmor": 206
-   }
-  },
+  "standard_gear": "ui/specs/warrior/protection/gear_sets/prebis.gear.json",
   "prebis": {
    "evaluated_on": [
-    "prot-tank: opt-prot-tank-raid-tank"
+    "prot-tank: protection-ml-tank"
    ],
    "weights": {
-    "StatArmorPenetration": 0.0649,
-    "StatAttackPower": 0.1474,
-    "StatBlockRating": 0.4619,
-    "StatDodgeRating": 1.3124,
-    "PseudoStatMainHandDps": 1.4123,
-    "StatSpellCritRating": 0.0005,
-    "StatBonusArmor": 0.0686,
-    "StatMeleeCritRating": 0.3393,
-    "StatSpellHitRating": 0.0207,
-    "StatAgility": 1.3168,
-    "StatSpellDamage": 0.0514,
-    "StatArmor": 0.0686,
-    "StatBlockValue": 0.2609,
-    "StatExpertiseRating": 0.6857,
-    "StatStrength": 0.3385,
-    "StatMeleeHitRating": 0.6857,
-    "StatDefenseRating": 2.4691,
-    "StatMeleeHasteRating": 0.2013,
-    "StatHolyDamage": 0.0284,
-    "StatFireDamage": 0.023,
-    "StatParryRating": 1.1282
+    "StatHitRating": 1.3684,
+    "StatExpertiseRating": 1.3555,
+    "StatArmorNoMods": 0.084,
+    "StatCritRating": 0.7956,
+    "StatBlockValue": 0.4469,
+    "StatBlockRating": 1.2188,
+    "StatAgility": 2.0458,
+    "PseudoStatMainHandDps": 2.4929,
+    "StatDodgeRating": 1.8041,
+    "StatArmor": 0.084,
+    "StatStrength": 0.9328,
+    "StatArmorPenetration": 0.1631,
+    "StatAttackPower": 0.4128,
+    "StatDefenseRating": 3.4113,
+    "StatHasteRating": 0.5899,
+    "StatBonusArmor": 0.084,
+    "StatParryRating": 1.5343
    },
    "trinkets": [
-    "Hand of Justice",
+    "Stormpike Insignia Rank 6",
     "Adaptive Combat Assistant"
    ],
+   "trinket_screen": {
+    "Stormpike Insignia Rank 6 (17904)": 1.018,
+    "Defender's Grip Stabilizer (272440)": 1.018,
+    "Adaptive Combat Assistant (272437)": 1.0174,
+    "Rune of the Guard Captain (19120)": 1.0053,
+    "Cleansed Vilebranch Medallion (270275)": 1.0053,
+    "Demon's Blood (10779)": 1.0045,
+    "Frozen Heart of the Mountain (249469)": 1.0041,
+    "Talisman of Arathor (20071)": 1.0033,
+    "Defiler's Talisman (20072)": 1.0033,
+    "Defiler's Talisman (21115)": 1.0025,
+    "Talisman of Arathor (21117)": 1.0025,
+    "Everlook Pathcarver (274759)": 1.002,
+    "Molten Heart of the Mountain (249470)": 1.0016,
+    "Defiler's Talisman (21116)": 1.0016,
+    "Talisman of Arathor (21118)": 1.0016,
+    "Jewel of the Guard Captain (270225)": 1.0015,
+    "Heart of the Scale (13164)": 1.0014,
+    "Smoking Heart of the Mountain (11811)": 1.0004,
+    "Weakness Analyzer (272438)": 1.0003,
+    "Ankh of Life (1713)": 1.0,
+    "Major Recombobulator (18637)": 1.0,
+    "Everlook Delivery Bot (274760)": 0.9994,
+    "Dog Whistle (3456)": 0.9993,
+    "Minor Recombobulator (4381)": 0.9993,
+    "Gnomish Universal Remote (7506)": 0.9993,
+    "Shard of the Splithooves (10659)": 0.9993,
+    "Alchemist's Stone (13503)": 0.9993,
+    "Arcanite Dragonling (16022)": 0.9993,
+    "Gyrofreeze Ice Reflector (18634)": 0.9993,
+    "Hyper-Radiant Flame Reflector (18638)": 0.9993,
+    "Ultra-Flash Shadow Reflector (18639)": 0.9993,
+    "Talisman of Arathor (21119)": 0.9993,
+    "Defiler's Talisman (21120)": 0.9993,
+    "Defender of the Timbermaw (21326)": 0.9993,
+    "Dormant Heart of the Mountain (249473)": 0.9993,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.9993,
+    "SAF-T Emergency Ripper: Everlook (260820)": 0.9993,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.9993,
+    "Gnomish Poultryizer (260824)": 0.9993,
+    "Enriched Seal (271903)": 0.9993,
+    "Volunteer's Lucky Seal (271904)": 0.9993,
+    "Enriched Seal (271905)": 0.9993,
+    "Volunteer's Lucky Seal (271906)": 0.9993,
+    "Darkspear Voodoo Seal (272059)": 0.9993,
+    "Relentless Raider's Seal (272060)": 0.9993,
+    "Darkspear Voodoo Seal (272061)": 0.9993,
+    "Relentless Raider's Seal (272062)": 0.9993,
+    "Serenity Field (272439)": 0.9993,
+    "Parachute-Priest Pager (274761)": 0.9993
+   },
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9729793110132082
+    "keep-sets-and-effects": 0.991039948883174
    },
    "confirm_seed2": {
     "keep-sets-and-effects": 1.0,
-    "all-slots": 1.02877012794168
+    "all-slots": 1.0098618078263415
    },
    "chosen": "all-slots",
-   "ilvl": 61.3,
+   "ilvl": 63.7,
    "items": [
     {
-     "id": 18313,
+     "id": 12640,
      "enchant": 1508
     },
     {
-     "id": 18381
+     "id": 19491
     },
     {
-     "id": 13955
+     "id": 20057
     },
     {
      "id": 18511,
-     "enchant": 1889
+     "enchant": 849
     },
     {
-     "id": 14624,
+     "id": 21997,
      "enchant": 1891
     },
     {
-     "id": 18351,
+     "id": 21184,
      "enchant": 923
     },
     {
-     "id": 18383,
+     "id": 271940,
      "enchant": 1887
     },
     {
-     "id": 13502
+     "id": 272403
     },
     {
-     "id": 11927,
+     "id": 22673,
      "enchant": 1508
     },
     {
-     "id": 11787,
+     "id": 20048,
      "enchant": 1887
     },
     {
-     "id": 21202
+     "id": 21205
     },
     {
-     "id": 18500
+     "id": 272408
     },
     {
-     "id": 11815
+     "id": 17904
     },
     {
      "id": 272437
@@ -134,94 +167,91 @@
      "enchant": 1900
     },
     {
-     "id": 12602,
+     "id": 279262,
      "enchant": 1886
     },
     {
-     "id": 18680
+     "id": 13022
     }
    ],
    "names": [
-    "Helm of Awareness",
-    "Evil Eye Pendant",
-    "Stoneform Shoulders",
+    "Lionheart Helm",
+    "Amulet of the Darkmoon",
+    "Highlander's Plate Spaulders",
     "Shifting Cloak",
-    "Deathbone Chestplate",
-    "Magically Sealed Bracers",
-    "Force Imbued Gauntlets",
-    "Handcrafted Mastersmith Girdle",
-    "Legplates of the Eternal Guardian",
-    "Shalehusk Boots",
+    "Breastplate of Heroism",
+    "Deeprock Bracers",
+    "Theramore Gauntlets",
+    "Valiant's Waistguard",
+    "Outrider's Chain Leggings",
+    "Highlander's Plate Greaves",
     "Signet Ring of the Bronze Dragonflight",
-    "Tarnished Elven Ring",
-    "Hand of Justice",
+    "Cutthroat's Signet",
+    "Stormpike Insignia Rank 6",
     "Adaptive Combat Assistant",
     "Greenhammer",
-    "Draconian Deflector",
-    "Ancient Bone Bow"
+    "Evergreen Shield",
+    "Gryphonwing Long Bow"
    ],
    "weights_unit": "threat per second equivalents of tank value (threat weight - k x damage-taken weight)",
    "raw_weights": {
-    "k": 2.03202,
-    "dtps": 473.7,
-    "threat": 629.8,
-    "finite_differences": [
-     "StatArmor",
-     "StatBonusArmor"
-    ],
+    "k": 3.90203,
+    "dtps": 309.9,
+    "threat": 1358.3,
+    "finite_differences": [],
     "tps_per_point": {
-     "PseudoStatMainHandDps": 1.41229,
-     "StatAgility": 0.34004,
-     "StatArmorPenetration": 0.0649,
-     "StatAttackPower": 0.14735,
-     "StatBlockRating": 0.40842,
-     "StatBlockValue": 0.15455,
-     "StatDefenseRating": 0.15396,
-     "StatDodgeRating": 0.1043,
-     "StatExpertiseRating": 0.68545,
-     "StatFireDamage": 0.02299,
-     "StatHolyDamage": 0.02837,
-     "StatMeleeCritRating": 0.33926,
-     "StatMeleeHasteRating": 0.2012,
-     "StatMeleeHitRating": 0.68545,
-     "StatParryRating": 0.13854,
-     "StatSpellCritRating": 0.00048,
-     "StatSpellDamage": 0.05137,
-     "StatSpellHitRating": 0.0207,
-     "StatStrength": 0.33268
+     "PseudoStatMainHandDps": 2.49285,
+     "StatAgility": 0.80873,
+     "StatArmorPenetration": 0.16308,
+     "StatAttackPower": 0.41284,
+     "StatBlockRating": 0.97962,
+     "StatBlockValue": 0.25383,
+     "StatCritRating": 0.79558,
+     "StatDefenseRating": 0.26701,
+     "StatDodgeRating": 0.19699,
+     "StatExpertiseRating": 1.35499,
+     "StatHasteRating": 0.58958,
+     "StatHitRating": 1.36784,
+     "StatParryRating": 0.23691,
+     "StatStrength": 0.9222
     },
     "dtps_per_point": {
-     "StatAgility": -0.48068,
-     "StatArmor": -0.03376,
-     "StatBlockRating": -0.02632,
-     "StatBlockValue": -0.05233,
-     "StatBonusArmor": -0.03376,
-     "StatDefenseRating": -1.13932,
-     "StatDodgeRating": -0.59452,
-     "StatExpertiseRating": -0.00011,
-     "StatMeleeCritRating": -1e-05,
-     "StatMeleeHasteRating": -4e-05,
-     "StatMeleeHitRating": -0.00011,
-     "StatParryRating": -0.48705,
-     "StatStrength": -0.00288
+     "StatAgility": -0.31703,
+     "StatArmor": -0.02153,
+     "StatArmorNoMods": -0.02153,
+     "StatBlockRating": -0.0613,
+     "StatBlockValue": -0.04949,
+     "StatBonusArmor": -0.02153,
+     "StatCritRating": -0.0,
+     "StatDefenseRating": -0.80581,
+     "StatDodgeRating": -0.41185,
+     "StatExpertiseRating": -0.00014,
+     "StatHasteRating": -7e-05,
+     "StatHitRating": -0.00014,
+     "StatParryRating": -0.3325,
+     "StatStrength": -0.00272
     }
    },
    "enchants_by_weight": {
     "0": [
-     1507,
+     2543,
      1508
+    ],
+    "3": [
+     7667,
+     849
     ],
     "5": [
-     1886,
+     8214,
      923
     ],
-    "8": [
-     1507,
-     1508
-    ],
-    "9": [
-     929,
+    "6": [
+     8206,
      1887
+    ],
+    "8": [
+     2543,
+     1508
     ]
    },
    "weapon_enchant": {
@@ -230,227 +260,274 @@
      2504
     ],
     "race_seed1": {
-     "1900": 1.239,
-     "2504": 1.2297
+     "1900": 1.132,
+     "2504": 1.1175
     },
     "confirm_seed2": {
-     "1900": 1.239
+     "1900": 1.132
     },
     "chosen": 1900
    },
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-protection-prebis.gear.json",
    "pick": {
-    "value": 1.2359,
-    "threat": 639.7,
-    "dtps": 440.5,
-    "dps": 462.5,
+    "value": 1.1318,
+    "threat": 1380.5,
+    "dtps": 307.8,
+    "dps": 606.7,
     "tmi": 0,
     "fights": 20000,
     "seed": 3,
     "stats": {
-     "StatStrength": 15,
-     "StatAgility": 129,
-     "StatStamina": 111,
-     "StatMeleeHitRating": 30,
+     "StatStrength": 145,
+     "StatAgility": 249,
+     "StatStamina": 191,
+     "StatHitRating": 70,
      "StatExpertiseRating": 20,
-     "StatDefenseRating": 73,
-     "StatBlockValue": 40,
-     "StatDodgeRating": 60,
-     "StatBonusArmor": 6640
+     "StatDefenseRating": 7,
+     "StatBlockValue": 58,
+     "StatDodgeRating": 36,
+     "StatArmor": 6289
     }
    },
    "vs_standard": {
-    "value": 0.2221,
-    "threat": -0.0766,
-    "dtps": -0.3453
+    "value": 0.1149,
+    "threat": 0.1662,
+    "dtps": -0.0584
    },
-   "date": "2026-10-15"
+   "date": "2026-10-22"
   },
   "bis": {
    "evaluated_on": [
-    "prot-tank: opt-prot-tank-raid-tank"
+    "prot-tank: protection-ml-tank"
    ],
    "weights": {
-    "StatArmorPenetration": 0.074,
-    "StatAttackPower": 0.1498,
-    "StatBlockRating": 0.5933,
-    "StatDodgeRating": 1.3749,
-    "PseudoStatMainHandDps": 1.383,
-    "StatSpellCritRating": 0.0005,
-    "StatBonusArmor": 0.0678,
-    "StatMeleeCritRating": 0.374,
-    "StatSpellHitRating": 0.0193,
-    "StatAgility": 1.3575,
-    "StatSpellDamage": 0.0526,
-    "StatArmor": 0.0678,
-    "StatBlockValue": 0.3142,
-    "StatExpertiseRating": 0.7414,
-    "StatStrength": 0.3468,
-    "StatMeleeHitRating": 0.7414,
-    "StatDefenseRating": 2.6847,
-    "StatMeleeHasteRating": 0.2143,
-    "StatHolyDamage": 0.0277,
-    "StatFireDamage": 0.0249,
-    "StatParryRating": 1.1429
+    "StatHitRating": 1.1748,
+    "StatExpertiseRating": 1.1623,
+    "StatArmorNoMods": 0.0848,
+    "StatCritRating": 0.7676,
+    "StatBlockValue": 0.4439,
+    "StatBlockRating": 1.2372,
+    "StatAgility": 1.9105,
+    "PseudoStatMainHandDps": 2.3468,
+    "StatDodgeRating": 1.7789,
+    "StatArmor": 0.0848,
+    "StatStrength": 0.9048,
+    "StatArmorPenetration": 0.1606,
+    "StatAttackPower": 0.4002,
+    "StatDefenseRating": 3.2679,
+    "StatHasteRating": 0.6038,
+    "StatBonusArmor": 0.0848,
+    "StatParryRating": 1.4418
    },
    "trinkets": [
-    "Demon's Blood",
-    "Adaptive Combat Assistant"
+    "Defender's Grip Stabilizer",
+    "Arena Grand Master"
    ],
+   "trinket_screen": {
+    "Defender's Grip Stabilizer (272440)": 1.0185,
+    "Adaptive Combat Assistant (272437)": 1.017,
+    "Arena Grand Master (19024)": 1.0166,
+    "Stormpike Insignia Rank 6 (17904)": 1.016,
+    "Rune of the Guard Captain (19120)": 1.006,
+    "Cleansed Vilebranch Medallion (270275)": 1.006,
+    "Frozen Heart of the Mountain (249469)": 1.0048,
+    "Demon's Blood (10779)": 1.0046,
+    "Talisman of Arathor (20071)": 1.0042,
+    "Defiler's Talisman (20072)": 1.0042,
+    "Everlook Delivery Bot (274760)": 1.0042,
+    "Defiler's Talisman (21115)": 1.0033,
+    "Talisman of Arathor (21117)": 1.0033,
+    "Defiler's Talisman (21116)": 1.0024,
+    "Talisman of Arathor (21118)": 1.0024,
+    "Heart of the Scale (13164)": 1.0021,
+    "Molten Heart of the Mountain (249470)": 1.0018,
+    "Weakness Analyzer (272438)": 1.0013,
+    "Essence of the Pure Flame (18815)": 1.0013,
+    "Jewel of the Guard Captain (270225)": 1.0012,
+    "Everlook Pathcarver (274759)": 1.0008,
+    "Smoking Heart of the Mountain (11811)": 1.0006,
+    "Ankh of Life (1713)": 1.0,
+    "Major Recombobulator (18637)": 1.0,
+    "Dog Whistle (3456)": 0.9994,
+    "Minor Recombobulator (4381)": 0.9994,
+    "Gnomish Universal Remote (7506)": 0.9994,
+    "Shard of the Splithooves (10659)": 0.9994,
+    "Alchemist's Stone (13503)": 0.9994,
+    "Arcanite Dragonling (16022)": 0.9994,
+    "Gyrofreeze Ice Reflector (18634)": 0.9994,
+    "Hyper-Radiant Flame Reflector (18638)": 0.9994,
+    "Ultra-Flash Shadow Reflector (18639)": 0.9994,
+    "Talisman of Ephemeral Power (18820)": 0.9994,
+    "Talisman of Arathor (21119)": 0.9994,
+    "Defiler's Talisman (21120)": 0.9994,
+    "Defender of the Timbermaw (21326)": 0.9994,
+    "Dormant Heart of the Mountain (249473)": 0.9994,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.9994,
+    "SAF-T Emergency Ripper: Everlook (260820)": 0.9994,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.9994,
+    "Gnomish Poultryizer (260824)": 0.9994,
+    "Enriched Seal (271903)": 0.9994,
+    "Volunteer's Lucky Seal (271904)": 0.9994,
+    "Enriched Seal (271905)": 0.9994,
+    "Volunteer's Lucky Seal (271906)": 0.9994,
+    "Darkspear Voodoo Seal (272059)": 0.9994,
+    "Relentless Raider's Seal (272060)": 0.9994,
+    "Darkspear Voodoo Seal (272061)": 0.9994,
+    "Relentless Raider's Seal (272062)": 0.9994,
+    "Serenity Field (272439)": 0.9994,
+    "Parachute-Priest Pager (274761)": 0.9994
+   },
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.2523710495470688,
-    "keep-sets-and-effects": 1.1778177382954886
+    "all-slots": 1.1151105582875365,
+    "keep-sets-and-effects": 1.1050475229625214
    },
    "confirm_seed2": {
     "current": 1.0,
-    "all-slots": 1.2514370110902693
+    "all-slots": 1.1135691575941045
    },
    "chosen": "all-slots",
-   "ilvl": 67.0,
+   "ilvl": 63.7,
    "items": [
     {
-     "id": 16963,
+     "id": 12640,
      "enchant": 1508
     },
     {
-     "id": 17065
+     "id": 19491
     },
     {
-     "id": 13955
+     "id": 20057
     },
     {
      "id": 18511,
      "enchant": 1889
     },
     {
-     "id": 14624,
+     "id": 21997,
      "enchant": 1891
     },
     {
-     "id": 18812,
+     "id": 21184,
      "enchant": 923
     },
     {
-     "id": 16863,
+     "id": 271940,
      "enchant": 1887
     },
     {
-     "id": 16864
+     "id": 272403
     },
     {
-     "id": 16962,
+     "id": 22673,
      "enchant": 1508
     },
     {
-     "id": 11787,
+     "id": 20048,
      "enchant": 1887
     },
     {
-     "id": 17063
+     "id": 21205
     },
     {
-     "id": 21202
+     "id": 272408
     },
     {
-     "id": 10779
+     "id": 272440
     },
     {
-     "id": 272437
+     "id": 19024
     },
     {
-     "id": 18832,
+     "id": 19168,
      "enchant": 1900
     },
     {
-     "id": 17106,
+     "id": 279262,
      "enchant": 1886
     },
     {
-     "id": 18680
+     "id": 13022
     }
    ],
    "names": [
-    "Helm of Wrath",
-    "Medallion of Steadfast Might",
-    "Stoneform Shoulders",
+    "Lionheart Helm",
+    "Amulet of the Darkmoon",
+    "Highlander's Plate Spaulders",
     "Shifting Cloak",
-    "Deathbone Chestplate",
-    "Wristguards of True Flight",
-    "Gauntlets of Might",
-    "Belt of Might",
-    "Legplates of Wrath",
-    "Shalehusk Boots",
-    "Band of Accuria",
+    "Breastplate of Heroism",
+    "Deeprock Bracers",
+    "Theramore Gauntlets",
+    "Valiant's Waistguard",
+    "Outrider's Chain Leggings",
+    "Highlander's Plate Greaves",
     "Signet Ring of the Bronze Dragonflight",
-    "Demon's Blood",
-    "Adaptive Combat Assistant",
-    "Brutality Blade",
-    "Malistar's Defender",
-    "Ancient Bone Bow"
+    "Cutthroat's Signet",
+    "Defender's Grip Stabilizer",
+    "Arena Grand Master",
+    "Blackguard",
+    "Evergreen Shield",
+    "Gryphonwing Long Bow"
    ],
    "weights_unit": "threat per second equivalents of tank value (threat weight - k x damage-taken weight)",
    "raw_weights": {
-    "k": 2.19663,
-    "dtps": 455.6,
-    "threat": 697.8,
-    "finite_differences": [
-     "StatArmor",
-     "StatBonusArmor"
-    ],
+    "k": 3.96369,
+    "dtps": 307.5,
+    "threat": 1347.1,
+    "finite_differences": [],
     "tps_per_point": {
-     "PseudoStatMainHandDps": 1.38304,
-     "StatAgility": 0.3328,
-     "StatArmorPenetration": 0.07404,
-     "StatAttackPower": 0.1498,
-     "StatBlockRating": 0.38126,
-     "StatBlockValue": 0.15455,
-     "StatDefenseRating": 0.10723,
-     "StatDodgeRating": 0.04188,
-     "StatExpertiseRating": 0.74117,
-     "StatFireDamage": 0.02486,
-     "StatHolyDamage": 0.02775,
-     "StatMeleeCritRating": 0.37394,
-     "StatMeleeHasteRating": 0.21425,
-     "StatMeleeHitRating": 0.74117,
-     "StatParryRating": 0.07646,
-     "StatSpellCritRating": 0.00051,
-     "StatSpellDamage": 0.05261,
-     "StatSpellHitRating": 0.0193,
-     "StatStrength": 0.33805
+     "PseudoStatMainHandDps": 2.34676,
+     "StatAgility": 0.64622,
+     "StatArmorPenetration": 0.16065,
+     "StatAttackPower": 0.40018,
+     "StatBlockRating": 0.98867,
+     "StatBlockValue": 0.24781,
+     "StatCritRating": 0.76761,
+     "StatDefenseRating": 0.10334,
+     "StatDodgeRating": 0.16147,
+     "StatExpertiseRating": 1.16182,
+     "StatHasteRating": 0.60421,
+     "StatHitRating": 1.17429,
+     "StatParryRating": 0.14845,
+     "StatStrength": 0.89403
     },
     "dtps_per_point": {
-     "StatAgility": -0.46647,
-     "StatArmor": -0.03088,
-     "StatBlockRating": -0.09654,
-     "StatBlockValue": -0.07267,
-     "StatBonusArmor": -0.03088,
-     "StatDefenseRating": -1.17335,
-     "StatDodgeRating": -0.60684,
-     "StatExpertiseRating": -0.0001,
-     "StatMeleeCritRating": -1e-05,
-     "StatMeleeHasteRating": -4e-05,
-     "StatMeleeHitRating": -0.0001,
-     "StatParryRating": -0.48549,
-     "StatStrength": -0.004
+     "StatAgility": -0.31897,
+     "StatArmor": -0.0214,
+     "StatArmorNoMods": -0.0214,
+     "StatBlockRating": -0.0627,
+     "StatBlockValue": -0.04948,
+     "StatBonusArmor": -0.0214,
+     "StatCritRating": -0.0,
+     "StatDefenseRating": -0.79839,
+     "StatDodgeRating": -0.40807,
+     "StatExpertiseRating": -0.00013,
+     "StatHasteRating": 0.00011,
+     "StatHitRating": -0.00013,
+     "StatParryRating": -0.32629,
+     "StatStrength": -0.00272
     }
    },
    "enchants_by_weight": {
     "0": [
-     1507,
+     2543,
      1508
+    ],
+    "3": [
+     7667,
+     1889
     ],
     "5": [
-     1886,
+     8214,
      923
     ],
-    "8": [
-     1507,
-     1508
-    ],
-    "9": [
-     929,
+    "6": [
+     8206,
      1887
+    ],
+    "8": [
+     2543,
+     1508
     ]
    },
    "weapon_enchant": {
@@ -459,555 +536,69 @@
      2504
     ],
     "race_seed1": {
-     "1900": 1.3304,
-     "2504": 1.3254
+     "1900": 1.1364,
+     "2504": 1.1181
     },
     "confirm_seed2": {
-     "1900": 1.3304
+     "1900": 1.1364
     },
     "chosen": 1900
    },
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-protection-bis.gear.json",
    "pick": {
-    "value": 1.3312,
-    "threat": 691.1,
-    "dtps": 409.7,
-    "dps": 511.1,
+    "value": 1.1337,
+    "threat": 1345.2,
+    "dtps": 298.1,
+    "dps": 588.2,
     "tmi": 0,
     "fights": 20000,
     "seed": 3,
     "stats": {
-     "StatStrength": 101,
-     "StatAgility": 125,
-     "StatStamina": 193,
-     "StatMeleeHitRating": 50,
-     "StatExpertiseRating": 20,
-     "StatDefenseRating": 75,
-     "StatBlockValue": 52,
-     "StatDodgeRating": 84,
-     "StatBonusArmor": 7166
+     "StatStrength": 145,
+     "StatAgility": 238,
+     "StatStamina": 191,
+     "StatHitRating": 60,
+     "StatDefenseRating": 20,
+     "StatBlockValue": 58,
+     "StatDodgeRating": 24,
+     "StatParryRating": 15,
+     "StatArmor": 6289,
+     "StatBonusArmor": 70
     }
    },
    "vs_standard": {
-    "value": 0.3163,
-    "threat": -0.0025,
-    "dtps": -0.3911
+    "value": 0.1167,
+    "threat": 0.1363,
+    "dtps": -0.0881
    },
-   "date": "2026-10-15"
+   "date": "2026-10-22"
   },
-  "minutes": 1.6,
-  "classic_armor": {
-   "note": "sensitivity: every item's missing base armor filled in from Classic 1.12 (see tank_gear.py); tank value on the same reference as the simulator's sets, so the standard set's value here includes its filled-in armor",
-   "entry": "prot-tank",
-   "build": "opt-prot-tank-raid-tank",
-   "setting": "raid",
-   "rotation": "_reference/data/raidsim/apls/warrior/prot-tank-raid.apl.json",
-   "reference": {
-    "build": "prot-raid-tank",
-    "threat": 704.5659220990901,
-    "dtps": 1161.2244320035538,
-    "fights": 20000,
-    "source": "raidsim/deep/warrior-tank.json"
-   },
-   "standard_gear": "ui/specs/warrior/protection/gear_sets/launch.gear.json",
-   "standard": {
-    "value": 1.3697,
-    "threat": 714.4,
-    "dtps": 673.0,
-    "dps": 535.7,
-    "tmi": 0,
-    "fights": 20000,
-    "seed": 3,
-    "stats": {
-     "StatStrength": 175,
-     "StatAgility": 13,
-     "StatStamina": 164,
-     "StatMeleeHitRating": 147,
-     "StatBlockValue": 58,
-     "StatBonusArmor": 206,
-     "armor_filled_in": 5649
-    }
-   },
-   "prebis": {
-    "evaluated_on": [
-     "prot-tank: opt-prot-tank-raid-tank"
-    ],
-    "weights": {
-     "StatBonusArmor": 0.179,
-     "StatAttackPower": 0.1446,
-     "StatHolyDamage": 0.0283,
-     "StatSpellHitRating": 0.0232,
-     "StatMeleeHitRating": 0.698,
-     "StatDefenseRating": 6.289,
-     "StatFireDamage": 0.0302,
-     "StatMeleeHasteRating": 0.2387,
-     "StatArmor": 0.179,
-     "StatParryRating": 2.6706,
-     "StatArmorPenetration": 0.064,
-     "StatDodgeRating": 3.285,
-     "StatAgility": 2.8405,
-     "StatStrength": 0.343,
-     "StatExpertiseRating": 0.698,
-     "StatMeleeCritRating": 0.3423,
-     "StatSpellCritRating": 0.0013,
-     "PseudoStatMainHandDps": 1.361,
-     "StatBlockRating": 0.645,
-     "StatSpellDamage": 0.0585,
-     "StatBlockValue": 0.4536
-    },
-    "trinkets": [
-     "Demon's Blood",
-     "Blackhand's Breadth"
-    ],
-    "race_seed1": {
-     "all-slots": 1.0,
-     "keep-sets-and-effects": 0.949831724056256
-    },
-    "confirm_seed2": {
-     "keep-sets-and-effects": 1.0,
-     "all-slots": 1.0528688985905275
-    },
-    "chosen": "all-slots",
-    "ilvl": 60.3,
-    "items": [
-     {
-      "id": 18313,
-      "enchant": 1508
-     },
-     {
-      "id": 18381
-     },
-     {
-      "id": 13955
-     },
-     {
-      "id": 18511,
-      "enchant": 1889
-     },
-     {
-      "id": 14624,
-      "enchant": 1891
-     },
-     {
-      "id": 250582,
-      "enchant": 923
-     },
-     {
-      "id": 18383,
-      "enchant": 1887
-     },
-     {
-      "id": 250572
-     },
-     {
-      "id": 11927,
-      "enchant": 1508
-     },
-     {
-      "id": 11787,
-      "enchant": 1887
-     },
-     {
-      "id": 21202
-     },
-     {
-      "id": 18500
-     },
-     {
-      "id": 10779
-     },
-     {
-      "id": 13965
-     },
-     {
-      "id": 279261,
-      "enchant": 1900
-     },
-     {
-      "id": 279262,
-      "enchant": 1886
-     },
-     {
-      "id": 18680
-     }
-    ],
-    "names": [
-     "Helm of Awareness",
-     "Evil Eye Pendant",
-     "Stoneform Shoulders",
-     "Shifting Cloak",
-     "Deathbone Chestplate",
-     "Sentinel's Wristguards",
-     "Force Imbued Gauntlets",
-     "Sentinel's Waistguard",
-     "Legplates of the Eternal Guardian",
-     "Shalehusk Boots",
-     "Signet Ring of the Bronze Dragonflight",
-     "Tarnished Elven Ring",
-     "Demon's Blood",
-     "Blackhand's Breadth",
-     "Greenhammer",
-     "Evergreen Shield",
-     "Ancient Bone Bow"
-    ],
-    "weights_unit": "threat per second equivalents of tank value (threat weight - k x damage-taken weight)",
-    "raw_weights": {
-     "k": 5.61625,
-     "dtps": 381.7,
-     "threat": 635.1,
-     "finite_differences": [
-      "StatArmor",
-      "StatBonusArmor"
-     ],
-     "tps_per_point": {
-      "PseudoStatMainHandDps": 1.36098,
-      "StatAgility": 0.29922,
-      "StatArmorPenetration": 0.06398,
-      "StatAttackPower": 0.14458,
-      "StatBlockRating": 0.37707,
-      "StatBlockValue": 0.1515,
-      "StatDefenseRating": 0.07175,
-      "StatDodgeRating": 0.03338,
-      "StatExpertiseRating": 0.69747,
-      "StatFireDamage": 0.03021,
-      "StatHolyDamage": 0.0283,
-      "StatMeleeCritRating": 0.34235,
-      "StatMeleeHasteRating": 0.23808,
-      "StatMeleeHitRating": 0.69747,
-      "StatParryRating": 0.05403,
-      "StatSpellCritRating": 0.00132,
-      "StatSpellDamage": 0.05851,
-      "StatSpellHitRating": 0.02325,
-      "StatStrength": 0.32642
-     },
-     "dtps_per_point": {
-      "StatAgility": -0.45248,
-      "StatArmor": -0.03187,
-      "StatBlockRating": -0.04771,
-      "StatBlockValue": -0.05379,
-      "StatBonusArmor": -0.03187,
-      "StatDefenseRating": -1.10702,
-      "StatDodgeRating": -0.57897,
-      "StatExpertiseRating": -0.0001,
-      "StatMeleeCritRating": 0.0,
-      "StatMeleeHasteRating": -0.00012,
-      "StatMeleeHitRating": -0.0001,
-      "StatParryRating": -0.4659,
-      "StatStrength": -0.00296
-     }
-    },
-    "enchants_by_weight": {
-     "0": [
-      1507,
-      1508
-     ],
-     "5": [
-      1886,
-      923
-     ],
-     "8": [
-      1507,
-      1508
-     ],
-     "9": [
-      929,
-      1887
-     ]
-    },
-    "weapon_enchant": {
-     "candidates": [
-      1900,
-      2504
-     ],
-     "race_seed1": {
-      "1900": 1.799,
-      "2504": 1.7869
-     },
-     "confirm_seed2": {
-      "1900": 1.799
-     },
-     "chosen": 1900
-    },
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-protection-prebis-classic-armor.gear.json",
-    "pick": {
-     "value": 1.7982,
-     "threat": 653.2,
-     "dtps": 435.0,
-     "dps": 480.3,
-     "tmi": 0,
-     "fights": 20000,
-     "seed": 3,
-     "stats": {
-      "StatStrength": 23,
-      "StatAgility": 119,
-      "StatStamina": 135,
-      "StatMeleeHitRating": 30,
-      "StatDefenseRating": 82,
-      "StatBlockValue": 58,
-      "StatDodgeRating": 60,
-      "StatBonusArmor": 3585,
-      "armor_filled_in": 3072
-     }
-    },
-    "vs_standard": {
-     "value": 0.3128,
-     "threat": -0.0857,
-     "dtps": -0.3536
-    },
-    "date": "2026-10-15",
-    "simulator_set_with_armor": {
-     "value": 1.788,
-     "threat": 645.2,
-     "dtps": 436.5,
-     "dps": 472.7,
-     "tmi": 0,
-     "fights": 20000,
-     "seed": 3,
-     "vs_this_set": -0.0057,
-     "same_items": 14
-    }
-   },
-   "bis": {
-    "evaluated_on": [
-     "prot-tank: opt-prot-tank-raid-tank"
-    ],
-    "weights": {
-     "StatBonusArmor": 0.14,
-     "StatAttackPower": 0.1434,
-     "StatHolyDamage": 0.0264,
-     "StatSpellHitRating": 0.0215,
-     "StatMeleeHitRating": 0.7566,
-     "StatDefenseRating": 5.4541,
-     "StatFireDamage": 0.0295,
-     "StatMeleeHasteRating": 0.226,
-     "StatArmor": 0.14,
-     "StatParryRating": 2.3051,
-     "StatArmorPenetration": 0.0687,
-     "StatDodgeRating": 2.8273,
-     "StatAgility": 2.5196,
-     "StatStrength": 0.3381,
-     "StatExpertiseRating": 0.7566,
-     "StatMeleeCritRating": 0.3818,
-     "StatSpellCritRating": 0.0013,
-     "PseudoStatMainHandDps": 1.3165,
-     "StatBlockRating": 0.6702,
-     "StatSpellDamage": 0.0559,
-     "StatBlockValue": 0.4111
-    },
-    "trinkets": [
-     "Demon's Blood",
-     "Blackhand's Breadth"
-    ],
-    "race_seed1": {
-     "current": 1.0,
-     "all-slots": 1.3392645753171475,
-     "keep-sets-and-effects": 1.2385177783277896
-    },
-    "confirm_seed2": {
-     "current": 1.0,
-     "all-slots": 1.3363365757689665
-    },
-    "chosen": "all-slots",
-    "ilvl": 66.2,
-    "items": [
-     {
-      "id": 16963,
-      "enchant": 1508
-     },
-     {
-      "id": 17065
-     },
-     {
-      "id": 13955
-     },
-     {
-      "id": 18511,
-      "enchant": 1889
-     },
-     {
-      "id": 14624,
-      "enchant": 1891
-     },
-     {
-      "id": 18812,
-      "enchant": 923
-     },
-     {
-      "id": 250552,
-      "enchant": 1887
-     },
-     {
-      "id": 16864
-     },
-     {
-      "id": 16962,
-      "enchant": 1508
-     },
-     {
-      "id": 11787,
-      "enchant": 1887
-     },
-     {
-      "id": 17063
-     },
-     {
-      "id": 21202
-     },
-     {
-      "id": 10779
-     },
-     {
-      "id": 13965
-     },
-     {
-      "id": 19168,
-      "enchant": 1900
-     },
-     {
-      "id": 17106,
-      "enchant": 1886
-     },
-     {
-      "id": 18680
-     }
-    ],
-    "names": [
-     "Helm of Wrath",
-     "Medallion of Steadfast Might",
-     "Stoneform Shoulders",
-     "Shifting Cloak",
-     "Deathbone Chestplate",
-     "Wristguards of True Flight",
-     "Sentinel's Gloves",
-     "Belt of Might",
-     "Legplates of Wrath",
-     "Shalehusk Boots",
-     "Band of Accuria",
-     "Signet Ring of the Bronze Dragonflight",
-     "Demon's Blood",
-     "Blackhand's Breadth",
-     "Blackguard",
-     "Malistar's Defender",
-     "Ancient Bone Bow"
-    ],
-    "weights_unit": "threat per second equivalents of tank value (threat weight - k x damage-taken weight)",
-    "raw_weights": {
-     "k": 4.81721,
-     "dtps": 412.1,
-     "threat": 662.5,
-     "finite_differences": [
-      "StatArmor",
-      "StatBonusArmor"
-     ],
-     "tps_per_point": {
-      "PseudoStatMainHandDps": 1.31646,
-      "StatAgility": 0.33497,
-      "StatArmorPenetration": 0.06874,
-      "StatAttackPower": 0.14341,
-      "StatBlockRating": 0.37137,
-      "StatBlockValue": 0.1475,
-      "StatDefenseRating": 0.06428,
-      "StatDodgeRating": 0.03745,
-      "StatExpertiseRating": 0.75631,
-      "StatFireDamage": 0.02951,
-      "StatHolyDamage": 0.02636,
-      "StatMeleeCritRating": 0.38177,
-      "StatMeleeHasteRating": 0.22599,
-      "StatMeleeHitRating": 0.75631,
-      "StatParryRating": 0.07116,
-      "StatSpellCritRating": 0.00129,
-      "StatSpellDamage": 0.05587,
-      "StatSpellHitRating": 0.02147,
-      "StatStrength": 0.32361
-     },
-     "dtps_per_point": {
-      "StatAgility": -0.45351,
-      "StatArmor": -0.02907,
-      "StatBlockRating": -0.06204,
-      "StatBlockValue": -0.05472,
-      "StatBonusArmor": -0.02907,
-      "StatDefenseRating": -1.11888,
-      "StatDodgeRating": -0.57915,
-      "StatExpertiseRating": -6e-05,
-      "StatMeleeHasteRating": -1e-05,
-      "StatMeleeHitRating": -6e-05,
-      "StatParryRating": -0.46375,
-      "StatStrength": -0.00301
-     }
-    },
-    "enchants_by_weight": {
-     "0": [
-      1507,
-      1508
-     ],
-     "5": [
-      1886,
-      923
-     ],
-     "8": [
-      1507,
-      1508
-     ],
-     "9": [
-      929,
-      1887
-     ]
-    },
-    "weapon_enchant": {
-     "candidates": [
-      1900,
-      2504
-     ],
-     "race_seed1": {
-      "1900": 1.9287,
-      "2504": 1.9219
-     },
-     "confirm_seed2": {
-      "1900": 1.9287
-     },
-     "chosen": 1900
-    },
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-protection-bis-classic-armor.gear.json",
-    "pick": {
-     "value": 1.9275,
-     "threat": 686.6,
-     "dtps": 403.1,
-     "dps": 506.9,
-     "tmi": 0,
-     "fights": 20000,
-     "seed": 3,
-     "stats": {
-      "StatStrength": 79,
-      "StatAgility": 116,
-      "StatStamina": 204,
-      "StatMeleeHitRating": 40,
-      "StatDefenseRating": 81,
-      "StatBlockValue": 52,
-      "StatDodgeRating": 84,
-      "StatParryRating": 15,
-      "StatBonusArmor": 6698,
-      "armor_filled_in": 414
-     }
-    },
-    "vs_standard": {
-     "value": 0.4072,
-     "threat": -0.0389,
-     "dtps": -0.401
-    },
-    "date": "2026-10-15",
-    "simulator_set_with_armor": {
-     "value": 1.9256,
-     "threat": 685.3,
-     "dtps": 403.4,
-     "dps": 505.6,
-     "tmi": 0,
-     "fights": 20000,
-     "seed": 3,
-     "vs_this_set": -0.001,
-     "same_items": 16
-    }
-   },
-   "minutes": 5.9
+  "minutes": 14.0,
+  "reference_fork": {
+   "build": "prot-raid-tank",
+   "threat": 677.5026386012788,
+   "dtps": 672.8775102389011,
+   "fights": 20000,
+   "source": "raidsim/deep/warrior-tank.json (ElliotWood/Forever)"
+  },
+  "standard": {
+   "value": 1.0152,
+   "threat": 1183.8,
+   "dtps": 326.9,
+   "dps": 508.9,
+   "tmi": 0,
+   "fights": 20000,
+   "seed": 3,
+   "stats": {
+    "StatStrength": 54,
+    "StatAgility": 72,
+    "StatStamina": 76,
+    "StatHitRating": 43,
+    "StatExpertiseRating": 12,
+    "StatDefenseRating": 53,
+    "StatBlockValue": 38,
+    "StatArmor": 4718
+   }
   }
  },
  "paladin": {
@@ -1017,215 +608,243 @@
   "rotation": "_reference/data/raidsim/apls/paladin/prot-tank-raid.apl.json",
   "reference": {
    "build": "prot-tank",
-   "threat": 504.6416951692843,
-   "dtps": 566.1211591599524,
+   "threat": 780.1144209963471,
+   "dtps": 366.8273723818726,
    "fights": 20000,
-   "source": "raidsim/deep/paladin-tank.json"
+   "seed": 77,
+   "gear": "ui/specs/paladin/protection/gear_sets/default.gear.json",
+   "simulator": "wowsims/forever 09e739807",
+   "missing_gear": []
   },
   "standard_gear": "ui/specs/paladin/protection/gear_sets/default.gear.json",
-  "standard": {
-   "value": 1.0448,
-   "threat": 502.8,
-   "dtps": 517.9,
-   "dps": 419.4,
-   "tmi": 0,
-   "fights": 20000,
-   "seed": 3,
-   "stats": {
-    "StatStrength": 111,
-    "StatAgility": 28,
-    "StatStamina": 203,
-    "StatMeleeHitRating": 32,
-    "StatDefenseRating": 63,
-    "StatBlockValue": 39,
-    "StatDodgeRating": 12,
-    "StatBonusArmor": 230
-   }
-  },
   "prebis": {
    "evaluated_on": [
     "prot-tank: protection-ml-tank"
    ],
    "weights": {
-    "StatSpellHasteRating": 0.0323,
-    "StatMana": 0.0043,
-    "StatArmorPenetration": 0.0174,
-    "StatAttackPower": 0.076,
-    "StatHealth": 0.0065,
-    "StatBlockRating": 0.7292,
-    "StatDodgeRating": 0.9698,
-    "PseudoStatMainHandDps": 1.0336,
-    "StatIntellect": 0.1024,
-    "StatSpellCritRating": 0.0316,
-    "StatBonusArmor": 0.052,
-    "StatMeleeCritRating": 0.2028,
-    "StatSpellHitRating": 0.1559,
-    "StatAgility": 0.8773,
-    "StatSpellDamage": 0.4671,
-    "StatArmor": 0.052,
-    "StatMP5": 0.0889,
-    "StatBlockValue": 0.3847,
-    "StatExpertiseRating": 0.3614,
-    "StatStrength": 0.1883,
-    "StatMeleeHitRating": 0.4416,
-    "StatDefenseRating": 1.9144,
-    "StatMeleeHasteRating": 0.1567,
-    "StatSpirit": 0.0007,
-    "StatHolyDamage": 0.4671,
-    "StatParryRating": 0.7664,
-    "StatStamina": 0.0739
+    "StatSpellDamage": 0.5588,
+    "StatHitRating": 0.2326,
+    "StatExpertiseRating": 0.5994,
+    "StatArmorNoMods": 0.0733,
+    "StatCritRating": 0.4155,
+    "StatHolyDamage": 0.5588,
+    "StatBlockValue": 0.712,
+    "StatBlockRating": 1.7118,
+    "StatAgility": 1.6389,
+    "PseudoStatMainHandDps": 1.759,
+    "StatDodgeRating": 1.7031,
+    "StatArmor": 0.0733,
+    "StatStamina": 0.1246,
+    "StatStrength": 0.3304,
+    "StatHealth": 0.0113,
+    "StatArmorPenetration": 0.0289,
+    "StatSpirit": 0.0133,
+    "StatMP5": 0.2717,
+    "StatAttackPower": 0.1367,
+    "StatDefenseRating": 3.0572,
+    "StatHasteRating": 0.3043,
+    "StatMana": -0.0039,
+    "StatBonusArmor": 0.0733,
+    "StatParryRating": 1.4358,
+    "StatIntellect": 0.0896
    },
    "trinkets": [
-    "Blackhand's Breadth",
-    "Adaptive Combat Assistant"
+    "Defender's Grip Stabilizer",
+    "Stormpike Insignia Rank 6"
    ],
+   "trinket_screen": {
+    "Defender's Grip Stabilizer (272440)": 1.0253,
+    "Stormpike Insignia Rank 6 (17904)": 1.0237,
+    "Adaptive Combat Assistant (272437)": 1.0138,
+    "Weakness Analyzer (272438)": 1.0085,
+    "Demon's Blood (10779)": 1.0071,
+    "Rune of the Guard Captain (19120)": 1.0065,
+    "Cleansed Vilebranch Medallion (270275)": 1.0065,
+    "Serenity Field (272439)": 1.0058,
+    "Frozen Heart of the Mountain (249469)": 1.0056,
+    "Jewel of the Guard Captain (270225)": 1.0051,
+    "Enriched Seal (271903)": 1.0034,
+    "Darkspear Voodoo Seal (272061)": 1.0034,
+    "Shard of the Splithooves (10659)": 1.0033,
+    "Smoking Heart of the Mountain (11811)": 1.0026,
+    "Everlook Pathcarver (274759)": 1.0025,
+    "Molten Heart of the Mountain (249470)": 1.0024,
+    "Talisman of Arathor (20071)": 1.0023,
+    "Defiler's Talisman (20072)": 1.0023,
+    "Everlook Delivery Bot (274760)": 1.0022,
+    "Defiler's Talisman (21115)": 1.0021,
+    "Talisman of Arathor (21117)": 1.0021,
+    "Defiler's Talisman (21116)": 1.0019,
+    "Talisman of Arathor (21118)": 1.0019,
+    "Volunteer's Lucky Seal (271906)": 1.0019,
+    "Relentless Raider's Seal (272060)": 1.0019,
+    "Enriched Seal (271905)": 1.0018,
+    "Darkspear Voodoo Seal (272059)": 1.0018,
+    "Volunteer's Lucky Seal (271904)": 1.0017,
+    "Relentless Raider's Seal (272062)": 1.0017,
+    "Talisman of Arathor (21119)": 1.0016,
+    "Defiler's Talisman (21120)": 1.0016,
+    "Dog Whistle (3456)": 1.0012,
+    "Minor Recombobulator (4381)": 1.0012,
+    "Gnomish Universal Remote (7506)": 1.0012,
+    "Arcanite Dragonling (16022)": 1.0012,
+    "Gyrofreeze Ice Reflector (18634)": 1.0012,
+    "Hyper-Radiant Flame Reflector (18638)": 1.0012,
+    "Ultra-Flash Shadow Reflector (18639)": 1.0012,
+    "Defender of the Timbermaw (21326)": 1.0012,
+    "Dormant Heart of the Mountain (249473)": 1.0012,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0012,
+    "SAF-T Emergency Ripper: Everlook (260820)": 1.0012,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0012,
+    "Gnomish Poultryizer (260824)": 1.0012,
+    "Parachute-Priest Pager (274761)": 1.0012,
+    "Heart of the Scale (13164)": 1.0009,
+    "Alchemist's Stone (13503)": 1.0008,
+    "Major Recombobulator (18637)": 1.0005,
+    "Ankh of Life (1713)": 1.0
+   },
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9715491542763971
+    "keep-sets-and-effects": 0.9910654448556817
    },
    "confirm_seed2": {
     "keep-sets-and-effects": 1.0,
-    "all-slots": 1.0261150827047978
+    "all-slots": 1.0082253832964605
    },
    "chosen": "all-slots",
-   "ilvl": 61.8,
+   "ilvl": 62.8,
    "items": [
     {
-     "id": 18313,
+     "id": 250597,
      "enchant": 1508
     },
     {
-     "id": 18381
+     "id": 19491
     },
     {
-     "id": 13955
+     "id": 20058
     },
     {
      "id": 18511,
      "enchant": 1889
     },
     {
-     "id": 14624,
+     "id": 250595,
      "enchant": 1891
     },
     {
-     "id": 18351,
+     "id": 250583,
      "enchant": 923
     },
     {
-     "id": 18383,
+     "id": 250553,
      "enchant": 1887
     },
     {
-     "id": 13502
+     "id": 21994
     },
     {
-     "id": 11927,
+     "id": 22673,
      "enchant": 1508
     },
     {
-     "id": 11787,
+     "id": 250563,
      "enchant": 1887
     },
     {
-     "id": 21202
+     "id": 21205
     },
     {
-     "id": 18500
+     "id": 275984
     },
     {
-     "id": 13965
+     "id": 272440
     },
     {
-     "id": 272437
+     "id": 17904
     },
     {
-     "id": 279261,
-     "enchant": 2504
+     "id": 22383,
+     "enchant": 1900
     },
     {
-     "id": 12602,
+     "id": 279262,
      "enchant": 1886
     },
     {
-     "id": 272435
+     "id": 23203
     }
    ],
    "names": [
-    "Helm of Awareness",
-    "Evil Eye Pendant",
-    "Stoneform Shoulders",
+    "Enriched Thorium Helm",
+    "Amulet of the Darkmoon",
+    "Highlander's Lamellar Spaulders",
     "Shifting Cloak",
-    "Deathbone Chestplate",
-    "Magically Sealed Bracers",
-    "Force Imbued Gauntlets",
-    "Handcrafted Mastersmith Girdle",
-    "Legplates of the Eternal Guardian",
-    "Shalehusk Boots",
+    "Enriched Thorium Breastplate",
+    "Warder's Wristguards",
+    "Warder's Gloves",
+    "Belt of Heroism",
+    "Outrider's Chain Leggings",
+    "Warder's Sabatons",
     "Signet Ring of the Bronze Dragonflight",
-    "Tarnished Elven Ring",
-    "Blackhand's Breadth",
-    "Adaptive Combat Assistant",
-    "Greenhammer",
-    "Draconian Deflector",
-    "Libram of Law"
+    "Stalwart Watcher's Signet",
+    "Defender's Grip Stabilizer",
+    "Stormpike Insignia Rank 6",
+    "Sageblade",
+    "Evergreen Shield",
+    "Libram of Fervor"
    ],
    "weights_unit": "threat per second equivalents of tank value (threat weight - k x damage-taken weight)",
    "raw_weights": {
-    "k": 1.79234,
-    "dtps": 399.2,
-    "threat": 516.4,
+    "k": 3.4421,
+    "dtps": 288.3,
+    "threat": 897.8,
     "finite_differences": [],
     "tps_per_point": {
-     "PseudoStatMainHandDps": 1.03359,
-     "StatAgility": 0.11924,
-     "StatArmor": -6e-05,
-     "StatArmorPenetration": 0.01739,
-     "StatAttackPower": 0.07596,
-     "StatBlockRating": 0.30421,
-     "StatBlockValue": -0.0006,
-     "StatBonusArmor": -6e-05,
-     "StatDefenseRating": -0.03514,
-     "StatDodgeRating": -0.0704,
-     "StatExpertiseRating": 0.31162,
-     "StatHealth": 0.00643,
-     "StatHolyDamage": 0.46707,
-     "StatIntellect": 0.10427,
-     "StatMP5": 0.07429,
-     "StatMana": 0.00447,
-     "StatMeleeCritRating": 0.20284,
-     "StatMeleeHasteRating": 0.15954,
-     "StatMeleeHitRating": 0.39123,
-     "StatParryRating": -0.02847,
-     "StatSpellCritRating": 0.03158,
-     "StatSpellDamage": 0.46707,
-     "StatSpellHasteRating": 0.01654,
-     "StatSpellHitRating": 0.15808,
-     "StatSpirit": 0.00093,
-     "StatStamina": 0.07089,
-     "StatStrength": 0.16711
+     "PseudoStatMainHandDps": 1.75901,
+     "StatAgility": 0.19116,
+     "StatArmor": -2e-05,
+     "StatArmorNoMods": -2e-05,
+     "StatArmorPenetration": 0.02891,
+     "StatAttackPower": 0.13669,
+     "StatBlockRating": 0.63109,
+     "StatBlockValue": -0.00016,
+     "StatBonusArmor": -2e-05,
+     "StatCritRating": 0.41548,
+     "StatDefenseRating": -0.08028,
+     "StatDodgeRating": -0.11877,
+     "StatExpertiseRating": 0.52277,
+     "StatHasteRating": 0.27297,
+     "StatHealth": 0.01133,
+     "StatHitRating": 0.23388,
+     "StatHolyDamage": 0.55875,
+     "StatIntellect": 0.09309,
+     "StatMP5": 0.25638,
+     "StatMana": -0.00703,
+     "StatParryRating": -0.05706,
+     "StatSpellDamage": 0.55875,
+     "StatSpirit": -0.00246,
+     "StatStamina": 0.12459,
+     "StatStrength": 0.30049
     },
     "dtps_per_point": {
-     "StatAgility": -0.42296,
-     "StatArmor": -0.02904,
-     "StatBlockRating": -0.23713,
-     "StatBlockValue": -0.21495,
-     "StatBonusArmor": -0.02904,
-     "StatDefenseRating": -1.0877,
-     "StatDodgeRating": -0.58037,
-     "StatExpertiseRating": -0.02776,
-     "StatHealth": -6e-05,
+     "StatAgility": -0.42061,
+     "StatArmor": -0.0213,
+     "StatArmorNoMods": -0.0213,
+     "StatBlockRating": -0.31397,
+     "StatBlockValue": -0.2069,
+     "StatBonusArmor": -0.0213,
+     "StatDefenseRating": -0.91151,
+     "StatDodgeRating": -0.5293,
+     "StatExpertiseRating": -0.02226,
+     "StatHasteRating": -0.0091,
+     "StatHitRating": 0.00036,
      "StatIntellect": 0.00102,
-     "StatMP5": -0.00816,
-     "StatMana": 9e-05,
-     "StatMeleeHasteRating": 0.00157,
-     "StatMeleeHitRating": -0.02808,
-     "StatParryRating": -0.44346,
-     "StatSpellHasteRating": -0.0088,
-     "StatSpellHitRating": 0.00122,
-     "StatSpirit": 0.00011,
-     "StatStamina": -0.0017,
-     "StatStrength": -0.01185
+     "StatMP5": -0.00446,
+     "StatMana": -0.00091,
+     "StatParryRating": -0.43371,
+     "StatSpirit": -0.00458,
+     "StatStrength": -0.00869
     }
    },
    "enchants_by_weight": {
@@ -1252,224 +871,275 @@
      2504
     ],
     "race_seed1": {
-     "1900": 1.2349,
-     "2504": 1.2402
+     "1900": 1.2712,
+     "2504": 1.27
     },
     "confirm_seed2": {
-     "1900": 1.2356,
-     "2504": 1.24
+     "1900": 1.2712
     },
-    "chosen": 2504
+    "chosen": 1900
    },
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-protection-prebis.gear.json",
    "pick": {
-    "value": 1.2406,
-    "threat": 522.7,
-    "dtps": 391.6,
-    "dps": 443.3,
+    "value": 1.2723,
+    "threat": 861.8,
+    "dtps": 254.7,
+    "dps": 464.0,
     "tmi": 0,
     "fights": 20000,
     "seed": 3,
     "stats": {
-     "StatStrength": 15,
-     "StatAgility": 118,
-     "StatStamina": 111,
-     "StatMeleeHitRating": 30,
-     "StatExpertiseRating": 20,
-     "StatDefenseRating": 73,
-     "StatBlockValue": 40,
-     "StatDodgeRating": 60,
-     "StatBonusArmor": 6640
+     "StatStrength": 47,
+     "StatAgility": 155,
+     "StatStamina": 220,
+     "StatHitRating": 30,
+     "StatExpertiseRating": 10,
+     "StatDefenseRating": 80,
+     "StatBlockValue": 58,
+     "StatDodgeRating": 36,
+     "StatArmor": 5962,
+     "StatBonusArmor": 70
     }
    },
    "vs_standard": {
-    "value": 0.1874,
-    "threat": 0.0396,
-    "dtps": -0.2439
+    "value": 0.1789,
+    "threat": 0.0583,
+    "dtps": -0.2261
    },
-   "date": "2026-10-15"
+   "date": "2026-10-22"
   },
   "bis": {
    "evaluated_on": [
     "prot-tank: protection-ml-tank"
    ],
    "weights": {
-    "StatSpellHasteRating": 0.0467,
-    "StatMana": -0.009,
-    "StatArmorPenetration": 0.0207,
-    "StatAttackPower": 0.0804,
-    "StatBlockRating": 0.5975,
-    "StatDodgeRating": 0.9117,
-    "PseudoStatMainHandDps": 1.1138,
-    "StatIntellect": 0.0864,
-    "StatSpellCritRating": 0.0379,
-    "StatBonusArmor": 0.0521,
-    "StatMeleeCritRating": 0.2166,
-    "StatSpellHitRating": 0.1586,
-    "StatAgility": 0.887,
-    "StatSpellDamage": 0.4789,
-    "StatArmor": 0.0521,
-    "StatMP5": 0.0806,
-    "StatBlockValue": 0.4019,
-    "StatExpertiseRating": 0.3809,
-    "StatStrength": 0.1984,
-    "StatDefenseRating": 1.7884,
-    "StatMeleeHasteRating": 0.0649,
-    "StatSpirit": -0.0146,
-    "StatHolyDamage": 0.4789,
-    "StatParryRating": 0.7411,
-    "StatStamina": 0.0744
+    "StatSpellDamage": 0.5588,
+    "StatHitRating": 0.2326,
+    "StatExpertiseRating": 0.5994,
+    "StatArmorNoMods": 0.0733,
+    "StatCritRating": 0.4155,
+    "StatHolyDamage": 0.5588,
+    "StatBlockValue": 0.712,
+    "StatBlockRating": 1.7118,
+    "StatAgility": 1.6389,
+    "PseudoStatMainHandDps": 1.759,
+    "StatDodgeRating": 1.7031,
+    "StatArmor": 0.0733,
+    "StatStamina": 0.1246,
+    "StatStrength": 0.3304,
+    "StatHealth": 0.0113,
+    "StatArmorPenetration": 0.0289,
+    "StatSpirit": 0.0133,
+    "StatMP5": 0.2717,
+    "StatAttackPower": 0.1367,
+    "StatDefenseRating": 3.0572,
+    "StatHasteRating": 0.3043,
+    "StatMana": -0.0039,
+    "StatBonusArmor": 0.0733,
+    "StatParryRating": 1.4358,
+    "StatIntellect": 0.0896
    },
    "trinkets": [
-    "Arena Grand Master",
-    "Defender's Grip Stabilizer"
+    "Defender's Grip Stabilizer",
+    "Stormpike Insignia Rank 6"
    ],
+   "trinket_screen": {
+    "Defender's Grip Stabilizer (272440)": 1.0276,
+    "Stormpike Insignia Rank 6 (17904)": 1.0263,
+    "Arena Grand Master (19024)": 1.0145,
+    "Adaptive Combat Assistant (272437)": 1.0113,
+    "Talisman of Ephemeral Power (18820)": 1.0096,
+    "Weakness Analyzer (272438)": 1.0082,
+    "Demon's Blood (10779)": 1.0075,
+    "Frozen Heart of the Mountain (249469)": 1.0064,
+    "Rune of the Guard Captain (19120)": 1.0061,
+    "Cleansed Vilebranch Medallion (270275)": 1.0061,
+    "Jewel of the Guard Captain (270225)": 1.0047,
+    "Serenity Field (272439)": 1.0046,
+    "Heart of the Scale (13164)": 1.004,
+    "Everlook Delivery Bot (274760)": 1.0039,
+    "Essence of the Pure Flame (18815)": 1.0031,
+    "Talisman of Arathor (20071)": 1.0024,
+    "Defiler's Talisman (20072)": 1.0024,
+    "Defiler's Talisman (21115)": 1.0022,
+    "Talisman of Arathor (21117)": 1.0022,
+    "Smoking Heart of the Mountain (11811)": 1.0022,
+    "Enriched Seal (271903)": 1.0021,
+    "Darkspear Voodoo Seal (272061)": 1.0021,
+    "Defiler's Talisman (21116)": 1.002,
+    "Talisman of Arathor (21118)": 1.002,
+    "Everlook Pathcarver (274759)": 1.002,
+    "Molten Heart of the Mountain (249470)": 1.002,
+    "Shard of the Splithooves (10659)": 1.0016,
+    "Enriched Seal (271905)": 1.0015,
+    "Darkspear Voodoo Seal (272059)": 1.0015,
+    "Volunteer's Lucky Seal (271906)": 1.0015,
+    "Relentless Raider's Seal (272060)": 1.0015,
+    "Volunteer's Lucky Seal (271904)": 1.0013,
+    "Relentless Raider's Seal (272062)": 1.0013,
+    "Talisman of Arathor (21119)": 1.0012,
+    "Defiler's Talisman (21120)": 1.0012,
+    "Dog Whistle (3456)": 1.0008,
+    "Minor Recombobulator (4381)": 1.0008,
+    "Gnomish Universal Remote (7506)": 1.0008,
+    "Arcanite Dragonling (16022)": 1.0008,
+    "Gyrofreeze Ice Reflector (18634)": 1.0008,
+    "Hyper-Radiant Flame Reflector (18638)": 1.0008,
+    "Ultra-Flash Shadow Reflector (18639)": 1.0008,
+    "Defender of the Timbermaw (21326)": 1.0008,
+    "Dormant Heart of the Mountain (249473)": 1.0008,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0008,
+    "SAF-T Emergency Ripper: Everlook (260820)": 1.0008,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0008,
+    "Gnomish Poultryizer (260824)": 1.0008,
+    "Parachute-Priest Pager (274761)": 1.0008,
+    "Alchemist's Stone (13503)": 1.0006,
+    "Major Recombobulator (18637)": 1.0005,
+    "Ankh of Life (1713)": 1.0
+   },
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.1865354440111953,
-    "keep-sets-and-effects": 1.149323264673446
+    "all-slots": 1.110872369873077,
+    "keep-sets-and-effects": 1.0744496345638577
    },
    "confirm_seed2": {
     "current": 1.0,
-    "all-slots": 1.1872546154340693
+    "all-slots": 1.1108335209941187
    },
    "chosen": "all-slots",
-   "ilvl": 64.6,
+   "ilvl": 63.2,
    "items": [
     {
-     "id": 16955,
+     "id": 250597,
      "enchant": 1508
     },
     {
-     "id": 17065
+     "id": 19491
     },
     {
-     "id": 13955
+     "id": 20058
     },
     {
      "id": 18511,
      "enchant": 1889
     },
     {
-     "id": 14624,
+     "id": 250595,
      "enchant": 1891
     },
     {
-     "id": 18812,
+     "id": 250583,
      "enchant": 923
     },
     {
-     "id": 18383,
+     "id": 250553,
      "enchant": 1887
     },
     {
-     "id": 13502
+     "id": 21994
     },
     {
-     "id": 11927,
+     "id": 22673,
      "enchant": 1508
     },
     {
-     "id": 11787,
+     "id": 250563,
      "enchant": 1887
     },
     {
-     "id": 272409
+     "id": 21205
     },
     {
-     "id": 21202
-    },
-    {
-     "id": 19024
+     "id": 275984
     },
     {
      "id": 272440
     },
     {
-     "id": 18832,
-     "enchant": 2504
+     "id": 17904
     },
     {
-     "id": 17106,
+     "id": 19168,
+     "enchant": 1900
+    },
+    {
+     "id": 279262,
      "enchant": 1886
     },
     {
-     "id": 272435
+     "id": 23203
     }
    ],
    "names": [
-    "Judgement Crown",
-    "Medallion of Steadfast Might",
-    "Stoneform Shoulders",
+    "Enriched Thorium Helm",
+    "Amulet of the Darkmoon",
+    "Highlander's Lamellar Spaulders",
     "Shifting Cloak",
-    "Deathbone Chestplate",
-    "Wristguards of True Flight",
-    "Force Imbued Gauntlets",
-    "Handcrafted Mastersmith Girdle",
-    "Legplates of the Eternal Guardian",
-    "Shalehusk Boots",
-    "Ring of Awareness",
+    "Enriched Thorium Breastplate",
+    "Warder's Wristguards",
+    "Warder's Gloves",
+    "Belt of Heroism",
+    "Outrider's Chain Leggings",
+    "Warder's Sabatons",
     "Signet Ring of the Bronze Dragonflight",
-    "Arena Grand Master",
+    "Stalwart Watcher's Signet",
     "Defender's Grip Stabilizer",
-    "Brutality Blade",
-    "Malistar's Defender",
-    "Libram of Law"
+    "Stormpike Insignia Rank 6",
+    "Blackguard",
+    "Evergreen Shield",
+    "Libram of Fervor"
    ],
    "weights_unit": "threat per second equivalents of tank value (threat weight - k x damage-taken weight)",
    "raw_weights": {
-    "k": 1.88539,
-    "dtps": 389.3,
-    "threat": 562.9,
-    "finite_differences": [
-     "StatBlockValue"
-    ],
+    "k": 3.4421,
+    "dtps": 288.3,
+    "threat": 897.8,
+    "finite_differences": [],
     "tps_per_point": {
-     "PseudoStatMainHandDps": 1.11379,
-     "StatAgility": 0.12882,
-     "StatArmor": -0.0,
-     "StatArmorPenetration": 0.02073,
-     "StatAttackPower": 0.08044,
-     "StatBlockRating": 0.2862,
-     "StatBlockValue": -0.00073,
-     "StatBonusArmor": -0.0,
-     "StatDefenseRating": -0.02577,
-     "StatDodgeRating": -0.06267,
-     "StatExpertiseRating": 0.32483,
-     "StatHolyDamage": 0.47894,
-     "StatIntellect": 0.07391,
-     "StatMP5": 0.05539,
-     "StatMana": -0.00824,
-     "StatMeleeCritRating": 0.2166,
-     "StatMeleeHasteRating": 0.06814,
-     "StatParryRating": -0.04249,
-     "StatSpellCritRating": 0.0379,
-     "StatSpellDamage": 0.47894,
-     "StatSpellHasteRating": 0.0195,
-     "StatSpellHitRating": 0.1609,
-     "StatSpirit": -0.01372,
-     "StatStamina": 0.07323,
-     "StatStrength": 0.17693
+     "PseudoStatMainHandDps": 1.75901,
+     "StatAgility": 0.19116,
+     "StatArmor": -2e-05,
+     "StatArmorNoMods": -2e-05,
+     "StatArmorPenetration": 0.02891,
+     "StatAttackPower": 0.13669,
+     "StatBlockRating": 0.63109,
+     "StatBlockValue": -0.00016,
+     "StatBonusArmor": -2e-05,
+     "StatCritRating": 0.41548,
+     "StatDefenseRating": -0.08028,
+     "StatDodgeRating": -0.11877,
+     "StatExpertiseRating": 0.52277,
+     "StatHasteRating": 0.27297,
+     "StatHealth": 0.01133,
+     "StatHitRating": 0.23388,
+     "StatHolyDamage": 0.55875,
+     "StatIntellect": 0.09309,
+     "StatMP5": 0.25638,
+     "StatMana": -0.00703,
+     "StatParryRating": -0.05706,
+     "StatSpellDamage": 0.55875,
+     "StatSpirit": -0.00246,
+     "StatStamina": 0.12459,
+     "StatStrength": 0.30049
     },
     "dtps_per_point": {
-     "StatAgility": -0.40211,
-     "StatArmor": -0.02765,
-     "StatBlockRating": -0.16512,
-     "StatBlockValue": -0.21355,
-     "StatBonusArmor": -0.02765,
-     "StatDefenseRating": -0.96225,
-     "StatDodgeRating": -0.51678,
-     "StatExpertiseRating": -0.02975,
-     "StatIntellect": -0.00661,
-     "StatMP5": -0.01339,
-     "StatMana": 0.0004,
-     "StatMeleeHasteRating": 0.00173,
-     "StatParryRating": -0.41563,
-     "StatSpellHasteRating": -0.01441,
-     "StatSpellHitRating": 0.0012,
-     "StatSpirit": 0.00048,
-     "StatStamina": -0.00065,
-     "StatStrength": -0.01137
+     "StatAgility": -0.42061,
+     "StatArmor": -0.0213,
+     "StatArmorNoMods": -0.0213,
+     "StatBlockRating": -0.31397,
+     "StatBlockValue": -0.2069,
+     "StatBonusArmor": -0.0213,
+     "StatDefenseRating": -0.91151,
+     "StatDodgeRating": -0.5293,
+     "StatExpertiseRating": -0.02226,
+     "StatHasteRating": -0.0091,
+     "StatHitRating": 0.00036,
+     "StatIntellect": 0.00102,
+     "StatMP5": -0.00446,
+     "StatMana": -0.00091,
+     "StatParryRating": -0.43371,
+     "StatSpirit": -0.00458,
+     "StatStrength": -0.00869
     }
    },
    "enchants_by_weight": {
@@ -1496,597 +1166,71 @@
      2504
     ],
     "race_seed1": {
-     "1900": 1.3097,
-     "2504": 1.3179
+     "1900": 1.2751,
+     "2504": 1.2737
     },
     "confirm_seed2": {
-     "1900": 1.3121,
-     "2504": 1.3145
+     "1900": 1.2751
     },
-    "chosen": 2504
+    "chosen": 1900
    },
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-protection-bis.gear.json",
    "pick": {
-    "value": 1.3149,
-    "threat": 542.4,
-    "dtps": 364.1,
-    "dps": 460.2,
+    "value": 1.2738,
+    "threat": 836.2,
+    "dtps": 248.6,
+    "dps": 463.3,
     "tmi": 0,
     "fights": 20000,
     "seed": 3,
     "stats": {
-     "StatStrength": 58,
-     "StatAgility": 108,
-     "StatStamina": 136,
-     "StatMeleeHitRating": 20,
-     "StatDefenseRating": 83,
-     "StatBlockValue": 52,
-     "StatDodgeRating": 60,
-     "StatBonusArmor": 7327
+     "StatStrength": 47,
+     "StatAgility": 155,
+     "StatStamina": 218,
+     "StatHitRating": 20,
+     "StatExpertiseRating": 10,
+     "StatDefenseRating": 80,
+     "StatBlockValue": 58,
+     "StatDodgeRating": 36,
+     "StatParryRating": 15,
+     "StatArmor": 5962,
+     "StatBonusArmor": 70
     }
    },
    "vs_standard": {
-    "value": 0.2585,
-    "threat": 0.0788,
-    "dtps": -0.297
+    "value": 0.1803,
+    "threat": 0.0269,
+    "dtps": -0.2446
    },
-   "date": "2026-10-15"
+   "date": "2026-10-22"
   },
-  "minutes": 2.0,
-  "classic_armor": {
-   "note": "sensitivity: every item's missing base armor filled in from Classic 1.12 (see tank_gear.py); tank value on the same reference as the simulator's sets, so the standard set's value here includes its filled-in armor",
-   "entry": "prot-tank",
-   "build": "protection-ml-tank",
-   "setting": "raid",
-   "rotation": "_reference/data/raidsim/apls/paladin/prot-tank-raid.apl.json",
-   "reference": {
-    "build": "prot-tank",
-    "threat": 505.22239333952086,
-    "dtps": 992.954488691491,
-    "fights": 20000,
-    "source": "raidsim/deep/paladin-tank.json"
-   },
-   "standard_gear": "ui/specs/paladin/protection/gear_sets/default.gear.json",
-   "standard": {
-    "value": 1.4546,
-    "threat": 500.8,
-    "dtps": 517.7,
-    "dps": 416.1,
-    "tmi": 0,
-    "fights": 20000,
-    "seed": 3,
-    "stats": {
-     "StatStrength": 111,
-     "StatAgility": 28,
-     "StatStamina": 203,
-     "StatMeleeHitRating": 32,
-     "StatDefenseRating": 63,
-     "StatBlockValue": 39,
-     "StatDodgeRating": 12,
-     "StatBonusArmor": 230,
-     "armor_filled_in": 5755
-    }
-   },
-   "prebis": {
-    "evaluated_on": [
-     "prot-tank: protection-ml-tank"
-    ],
-    "weights": {
-     "StatBonusArmor": 0.1441,
-     "StatAttackPower": 0.075,
-     "StatHolyDamage": 0.4631,
-     "StatSpellHasteRating": 0.0846,
-     "StatSpellHitRating": 0.1591,
-     "StatMana": -0.0026,
-     "StatMeleeHitRating": 0.5075,
-     "StatDefenseRating": 6.3445,
-     "StatStamina": 0.0763,
-     "StatMeleeHasteRating": 0.2409,
-     "StatArmor": 0.1441,
-     "StatParryRating": 3.048,
-     "StatArmorPenetration": 0.0169,
-     "StatDodgeRating": 3.7797,
-     "StatHealth": 0.0057,
-     "StatSpirit": -0.0006,
-     "StatAgility": 3.0393,
-     "StatStrength": 0.2239,
-     "StatMP5": 0.1325,
-     "StatExpertiseRating": 0.4187,
-     "StatMeleeCritRating": 0.1983,
-     "StatSpellCritRating": 0.0371,
-     "PseudoStatMainHandDps": 1.0203,
-     "StatIntellect": 0.1327,
-     "StatBlockRating": 2.4128,
-     "StatSpellDamage": 0.4631,
-     "StatBlockValue": 1.067
-    },
-    "trinkets": [
-     "Blackhand's Breadth",
-     "Rune of the Guard Captain"
-    ],
-    "race_seed1": {
-     "all-slots": 1.0,
-     "keep-sets-and-effects": 0.9536096018149137
-    },
-    "confirm_seed2": {
-     "keep-sets-and-effects": 1.0,
-     "all-slots": 1.047909656519137
-    },
-    "chosen": "all-slots",
-    "ilvl": 59.5,
-    "items": [
-     {
-      "id": 18313,
-      "enchant": 1508
-     },
-     {
-      "id": 18381
-     },
-     {
-      "id": 13955
-     },
-     {
-      "id": 18511,
-      "enchant": 1889
-     },
-     {
-      "id": 14624,
-      "enchant": 1891
-     },
-     {
-      "id": 250583,
-      "enchant": 923
-     },
-     {
-      "id": 250553,
-      "enchant": 1887
-     },
-     {
-      "id": 250573
-     },
-     {
-      "id": 11927,
-      "enchant": 1508
-     },
-     {
-      "id": 11787,
-      "enchant": 1887
-     },
-     {
-      "id": 21202
-     },
-     {
-      "id": 18500
-     },
-     {
-      "id": 13965
-     },
-     {
-      "id": 19120
-     },
-     {
-      "id": 18737,
-      "enchant": 2504
-     },
-     {
-      "id": 279262,
-      "enchant": 1886
-     },
-     {
-      "id": 272435
-     }
-    ],
-    "names": [
-     "Helm of Awareness",
-     "Evil Eye Pendant",
-     "Stoneform Shoulders",
-     "Shifting Cloak",
-     "Deathbone Chestplate",
-     "Warder's Wristguards",
-     "Warder's Gloves",
-     "Warder's Waistguard",
-     "Legplates of the Eternal Guardian",
-     "Shalehusk Boots",
-     "Signet Ring of the Bronze Dragonflight",
-     "Tarnished Elven Ring",
-     "Blackhand's Breadth",
-     "Rune of the Guard Captain",
-     "Bone Slicing Hatchet",
-     "Evergreen Shield",
-     "Libram of Law"
-    ],
-    "weights_unit": "threat per second equivalents of tank value (threat weight - k x damage-taken weight)",
-    "raw_weights": {
-     "k": 5.05573,
-     "dtps": 315.0,
-     "threat": 514.1,
-     "finite_differences": [],
-     "tps_per_point": {
-      "PseudoStatMainHandDps": 1.02034,
-      "StatAgility": 0.09464,
-      "StatArmor": -0.00014,
-      "StatArmorPenetration": 0.01686,
-      "StatAttackPower": 0.075,
-      "StatBlockRating": 0.28498,
-      "StatBlockValue": -0.00027,
-      "StatBonusArmor": -0.00014,
-      "StatDefenseRating": -0.08674,
-      "StatDodgeRating": -0.07506,
-      "StatExpertiseRating": 0.30094,
-      "StatHealth": 0.00637,
-      "StatHolyDamage": 0.46311,
-      "StatIntellect": 0.10385,
-      "StatMP5": 0.08391,
-      "StatMana": 0.00288,
-      "StatMeleeCritRating": 0.19833,
-      "StatMeleeHasteRating": 0.20567,
-      "StatMeleeHitRating": 0.37651,
-      "StatParryRating": -0.04084,
-      "StatSpellCritRating": 0.03714,
-      "StatSpellDamage": 0.46311,
-      "StatSpellHasteRating": 0.02031,
-      "StatSpellHitRating": 0.15441,
-      "StatSpirit": -0.0006,
-      "StatStamina": 0.07134,
-      "StatStrength": 0.165
-     },
-     "dtps_per_point": {
-      "StatAgility": -0.58244,
-      "StatArmor": -0.02854,
-      "StatBlockRating": -0.42088,
-      "StatBlockValue": -0.21111,
-      "StatBonusArmor": -0.02854,
-      "StatDefenseRating": -1.27208,
-      "StatDodgeRating": -0.76245,
-      "StatExpertiseRating": -0.0233,
-      "StatHealth": 0.00013,
-      "StatIntellect": -0.0057,
-      "StatMP5": -0.00962,
-      "StatMana": 0.00108,
-      "StatMeleeHasteRating": -0.00696,
-      "StatMeleeHitRating": -0.0259,
-      "StatParryRating": -0.61096,
-      "StatSpellHasteRating": -0.01272,
-      "StatSpellHitRating": -0.00093,
-      "StatSpirit": -1e-05,
-      "StatStamina": -0.00097,
-      "StatStrength": -0.01165
-     }
-    },
-    "enchants_by_weight": {
-     "0": [
-      1507,
-      1508
-     ],
-     "5": [
-      1886,
-      923
-     ],
-     "8": [
-      1507,
-      1508
-     ],
-     "9": [
-      929,
-      1887
-     ]
-    },
-    "weapon_enchant": {
-     "candidates": [
-      1900,
-      2504
-     ],
-     "race_seed1": {
-      "1900": 1.8155,
-      "2504": 1.818
-     },
-     "confirm_seed2": {
-      "1900": 1.8118,
-      "2504": 1.8203
-     },
-     "chosen": 2504
-    },
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-protection-prebis-classic-armor.gear.json",
-    "pick": {
-     "value": 1.8176,
-     "threat": 538.2,
-     "dtps": 386.4,
-     "dps": 445.6,
-     "tmi": 0,
-     "fights": 20000,
-     "seed": 3,
-     "stats": {
-      "StatStrength": 4,
-      "StatAgility": 113,
-      "StatStamina": 130,
-      "StatMeleeHitRating": 27,
-      "StatDefenseRating": 82,
-      "StatBlockValue": 58,
-      "StatDodgeRating": 60,
-      "StatBonusArmor": 3047,
-      "armor_filled_in": 3438
-     }
-    },
-    "vs_standard": {
-     "value": 0.2496,
-     "threat": 0.0747,
-     "dtps": -0.2536
-    },
-    "date": "2026-10-15",
-    "simulator_set_with_armor": {
-     "value": 1.7793,
-     "threat": 517.1,
-     "dtps": 391.7,
-     "dps": 436.0,
-     "tmi": 0,
-     "fights": 20000,
-     "seed": 3,
-     "vs_this_set": -0.0211,
-     "same_items": 11
-    }
-   },
-   "bis": {
-    "evaluated_on": [
-     "prot-tank: protection-ml-tank"
-    ],
-    "weights": {
-     "StatBonusArmor": 0.1067,
-     "StatAttackPower": 0.071,
-     "StatHolyDamage": 0.4857,
-     "StatSpellHasteRating": 0.0443,
-     "StatSpellHitRating": 0.1544,
-     "StatMana": 0.0013,
-     "StatMeleeHitRating": 0.4812,
-     "StatDefenseRating": 5.0554,
-     "StatStamina": 0.0758,
-     "StatMeleeHasteRating": 0.1452,
-     "StatArmor": 0.1067,
-     "StatParryRating": 2.3281,
-     "StatArmorPenetration": 0.0166,
-     "StatDodgeRating": 2.8641,
-     "StatHealth": 0.0085,
-     "StatSpirit": -0.0026,
-     "StatAgility": 2.3144,
-     "StatStrength": 0.2027,
-     "StatMP5": 0.0481,
-     "StatExpertiseRating": 0.4172,
-     "StatMeleeCritRating": 0.2083,
-     "StatSpellCritRating": 0.0398,
-     "PseudoStatMainHandDps": 0.9211,
-     "StatIntellect": 0.0983,
-     "StatBlockRating": 2.5008,
-     "StatSpellDamage": 0.4857,
-     "StatBlockValue": 0.848
-    },
-    "trinkets": [
-     "Arena Grand Master",
-     "Defender's Grip Stabilizer"
-    ],
-    "race_seed1": {
-     "current": 1.0,
-     "all-slots": 1.2702505688272623,
-     "keep-sets-and-effects": 1.1958586839592258
-    },
-    "confirm_seed2": {
-     "current": 1.0,
-     "all-slots": 1.2663184387110695
-    },
-    "chosen": "all-slots",
-    "ilvl": 62.2,
-    "items": [
-     {
-      "id": 18313,
-      "enchant": 1508
-     },
-     {
-      "id": 17065
-     },
-     {
-      "id": 13955
-     },
-     {
-      "id": 18511,
-      "enchant": 1889
-     },
-     {
-      "id": 14624,
-      "enchant": 1891
-     },
-     {
-      "id": 18812,
-      "enchant": 923
-     },
-     {
-      "id": 250553,
-      "enchant": 1887
-     },
-     {
-      "id": 250573
-     },
-     {
-      "id": 11927,
-      "enchant": 1508
-     },
-     {
-      "id": 11787,
-      "enchant": 1887
-     },
-     {
-      "id": 21202
-     },
-     {
-      "id": 272409
-     },
-     {
-      "id": 19024
-     },
-     {
-      "id": 272440
-     },
-     {
-      "id": 19168,
-      "enchant": 2504
-     },
-     {
-      "id": 17066,
-      "enchant": 1886
-     },
-     {
-      "id": 272435
-     }
-    ],
-    "names": [
-     "Helm of Awareness",
-     "Medallion of Steadfast Might",
-     "Stoneform Shoulders",
-     "Shifting Cloak",
-     "Deathbone Chestplate",
-     "Wristguards of True Flight",
-     "Warder's Gloves",
-     "Warder's Waistguard",
-     "Legplates of the Eternal Guardian",
-     "Shalehusk Boots",
-     "Signet Ring of the Bronze Dragonflight",
-     "Ring of Awareness",
-     "Arena Grand Master",
-     "Defender's Grip Stabilizer",
-     "Blackguard",
-     "Drillborer Disk",
-     "Libram of Law"
-    ],
-    "weights_unit": "threat per second equivalents of tank value (threat weight - k x damage-taken weight)",
-    "raw_weights": {
-     "k": 3.99187,
-     "dtps": 354.5,
-     "threat": 513.6,
-     "finite_differences": [],
-     "tps_per_point": {
-      "PseudoStatMainHandDps": 0.92114,
-      "StatAgility": 0.12883,
-      "StatArmor": -9e-05,
-      "StatArmorPenetration": 0.01661,
-      "StatAttackPower": 0.07096,
-      "StatBlockRating": 0.27045,
-      "StatBlockValue": -0.00031,
-      "StatBonusArmor": -9e-05,
-      "StatDefenseRating": -0.07266,
-      "StatDodgeRating": -0.05139,
-      "StatExpertiseRating": 0.32664,
-      "StatHealth": 0.00649,
-      "StatHolyDamage": 0.48565,
-      "StatIntellect": 0.0956,
-      "StatMP5": 0.04243,
-      "StatMana": 0.00255,
-      "StatMeleeCritRating": 0.20827,
-      "StatMeleeHasteRating": 0.1619,
-      "StatMeleeHitRating": 0.39402,
-      "StatParryRating": -0.01397,
-      "StatSpellCritRating": 0.03983,
-      "StatSpellDamage": 0.48565,
-      "StatSpellHasteRating": 0.0136,
-      "StatSpellHitRating": 0.15911,
-      "StatSpirit": -0.00122,
-      "StatStamina": 0.07147,
-      "StatStrength": 0.15612
-     },
-     "dtps_per_point": {
-      "StatAgility": -0.5475,
-      "StatArmor": -0.02674,
-      "StatBlockRating": -0.55872,
-      "StatBlockValue": -0.21251,
-      "StatBonusArmor": -0.02674,
-      "StatDefenseRating": -1.28462,
-      "StatDodgeRating": -0.73035,
-      "StatExpertiseRating": -0.02267,
-      "StatHealth": -0.00051,
-      "StatIntellect": -0.00067,
-      "StatMP5": -0.00143,
-      "StatMana": 0.0003,
-      "StatMeleeHasteRating": 0.00417,
-      "StatMeleeHitRating": -0.02184,
-      "StatParryRating": -0.58672,
-      "StatSpellHasteRating": -0.00768,
-      "StatSpellHitRating": 0.00119,
-      "StatSpirit": 0.00036,
-      "StatStamina": -0.00109,
-      "StatStrength": -0.01167
-     }
-    },
-    "enchants_by_weight": {
-     "0": [
-      1507,
-      1508
-     ],
-     "5": [
-      1886,
-      923
-     ],
-     "8": [
-      1507,
-      1508
-     ],
-     "9": [
-      929,
-      1887
-     ]
-    },
-    "weapon_enchant": {
-     "candidates": [
-      1900,
-      2504
-     ],
-     "race_seed1": {
-      "1900": 1.9726,
-      "2504": 1.9735
-     },
-     "confirm_seed2": {
-      "1900": 1.9733,
-      "2504": 1.976
-     },
-     "chosen": 2504
-    },
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-protection-bis-classic-armor.gear.json",
-    "pick": {
-     "value": 1.977,
-     "threat": 532.8,
-     "dtps": 342.4,
-     "dps": 443.1,
-     "tmi": 0,
-     "fights": 20000,
-     "seed": 3,
-     "stats": {
-      "StatStrength": 21,
-      "StatAgility": 89,
-      "StatStamina": 154,
-      "StatMeleeHitRating": 20,
-      "StatDefenseRating": 97,
-      "StatBlockRating": 10,
-      "StatBlockValue": 69,
-      "StatDodgeRating": 84,
-      "StatParryRating": 15,
-      "StatBonusArmor": 5784,
-      "armor_filled_in": 739
-     }
-    },
-    "vs_standard": {
-     "value": 0.3591,
-     "threat": 0.0639,
-     "dtps": -0.3386
-    },
-    "date": "2026-10-15",
-    "simulator_set_with_armor": {
-     "value": 1.9679,
-     "threat": 519.7,
-     "dtps": 341.6,
-     "dps": 431.7,
-     "tmi": 0,
-     "fights": 20000,
-     "seed": 3,
-     "vs_this_set": -0.0046,
-     "same_items": 12
-    }
-   },
-   "minutes": 6.8
+  "minutes": 20.5,
+  "reference_fork": {
+   "build": "prot-tank",
+   "threat": 472.0027399085618,
+   "dtps": 566.1211591599524,
+   "fights": 20000,
+   "source": "raidsim/deep/paladin-tank.json (ElliotWood/Forever)"
+  },
+  "standard": {
+   "value": 1.0792,
+   "threat": 814.3,
+   "dtps": 329.1,
+   "dps": 448.0,
+   "tmi": 0,
+   "fights": 20000,
+   "seed": 3,
+   "stats": {
+    "StatStrength": 91,
+    "StatAgility": 23,
+    "StatStamina": 167,
+    "StatHitRating": 43,
+    "StatDefenseRating": 54,
+    "StatBlockValue": 58,
+    "StatDodgeRating": 12,
+    "StatArmor": 6177,
+    "StatBonusArmor": 310
+   }
   }
  },
  "druid": {
@@ -2096,193 +1240,219 @@
   "rotation": "_reference/data/raidsim/apls/druid/feral-bear-tank-raid.apl.json",
   "reference": {
    "build": "feral-bear-tank",
-   "threat": 1221.5826208197107,
-   "dtps": 634.8131811309706,
+   "threat": 2858.962172373326,
+   "dtps": 360.4516539107899,
    "fights": 20000,
-   "source": "raidsim/deep/druid-tank.json"
+   "seed": 77,
+   "gear": "ui/specs/druid/feralbear/gear_sets/default.gear.json",
+   "simulator": "wowsims/forever 09e739807",
+   "missing_gear": []
   },
-  "standard_gear": "ui/specs/druid/feralbear/gear_sets/launch.gear.json",
-  "standard": {
-   "value": 1.0001,
-   "threat": 1222.0,
-   "dtps": 634.9,
-   "dps": 541.5,
-   "tmi": 0,
-   "fights": 20000,
-   "seed": 3,
-   "stats": {
-    "StatStrength": 79,
-    "StatAgility": 139,
-    "StatStamina": 262,
-    "StatMeleeHitRating": 80,
-    "StatDefenseRating": 21,
-    "StatDodgeRating": 48,
-    "StatBonusArmor": 30
-   }
-  },
+  "standard_gear": "ui/specs/druid/feralbear/gear_sets/default.gear.json",
   "prebis": {
    "evaluated_on": [
     "feral-bear-tank: feral-bear-tank"
    ],
    "weights": {
-    "StatSpellHasteRating": 0.1183,
-    "StatArmorPenetration": 0.139,
-    "StatAttackPower": 0.3894,
-    "StatDodgeRating": 1.6728,
-    "PseudoStatMainHandDps": 5.4522,
-    "StatIntellect": 0.0002,
-    "StatSpellCritRating": 0.0008,
-    "StatBonusArmor": 0.4154,
-    "StatMeleeCritRating": 0.9582,
-    "StatSpellHitRating": 0.0264,
-    "StatAgility": 2.0595,
-    "StatSpellDamage": 0.0735,
-    "StatArmor": 0.3996,
-    "StatFeralAttackPower": 0.3894,
-    "StatExpertiseRating": 1.1705,
-    "StatStrength": 0.8568,
-    "StatMeleeHitRating": 1.1705,
-    "StatDefenseRating": 3.2631,
-    "StatMeleeHasteRating": 0.8452,
-    "StatHolyDamage": 0.0353,
-    "StatFireDamage": 0.0382
+    "StatHitRating": 5.0987,
+    "StatExpertiseRating": 5.0839,
+    "StatArmorNoMods": 0.1942,
+    "StatCritRating": 6.5296,
+    "StatAgility": 6.9115,
+    "PseudoStatMainHandDps": 15.5225,
+    "StatDodgeRating": 2.2889,
+    "StatFeralAttackPower": 1.1087,
+    "StatArmor": 0.894,
+    "StatStrength": 2.4392,
+    "StatArmorPenetration": 0.4999,
+    "StatAttackPower": 1.1087,
+    "StatDefenseRating": 4.5966,
+    "StatHasteRating": 1.6614,
+    "StatBonusArmor": 0.894
    },
    "trinkets": [
-    "Blackhand's Breadth",
+    "Adaptive Combat Assistant",
     "Stormpike Insignia Rank 6"
    ],
+   "trinket_screen": {
+    "Adaptive Combat Assistant (272437)": 1.0185,
+    "Defender's Grip Stabilizer (272440)": 1.0062,
+    "Jewel of the Guard Captain (270225)": 1.005,
+    "Rune of the Guard Captain (19120)": 1.0047,
+    "Cleansed Vilebranch Medallion (270275)": 1.0047,
+    "Stormpike Insignia Rank 6 (17904)": 1.0044,
+    "Frozen Heart of the Mountain (249469)": 1.0043,
+    "Talisman of Arathor (20071)": 1.0033,
+    "Defiler's Talisman (20072)": 1.0033,
+    "Defiler's Talisman (21115)": 1.0025,
+    "Talisman of Arathor (21117)": 1.0025,
+    "Defiler's Talisman (21116)": 1.0018,
+    "Talisman of Arathor (21118)": 1.0018,
+    "Molten Heart of the Mountain (249470)": 1.0011,
+    "Everlook Pathcarver (274759)": 1.0011,
+    "Demon's Blood (10779)": 1.0006,
+    "Heart of the Scale (13164)": 1.0003,
+    "Ankh of Life (1713)": 1.0,
+    "Major Recombobulator (18637)": 1.0,
+    "Smoking Heart of the Mountain (11811)": 0.9998,
+    "Weakness Analyzer (272438)": 0.999,
+    "Everlook Delivery Bot (274760)": 0.9987,
+    "Dog Whistle (3456)": 0.9983,
+    "Minor Recombobulator (4381)": 0.9983,
+    "Gnomish Universal Remote (7506)": 0.9983,
+    "Shard of the Splithooves (10659)": 0.9983,
+    "Alchemist's Stone (13503)": 0.9983,
+    "Arcanite Dragonling (16022)": 0.9983,
+    "Gyrofreeze Ice Reflector (18634)": 0.9983,
+    "Hyper-Radiant Flame Reflector (18638)": 0.9983,
+    "Ultra-Flash Shadow Reflector (18639)": 0.9983,
+    "Talisman of Arathor (21119)": 0.9983,
+    "Defiler's Talisman (21120)": 0.9983,
+    "Defender of the Timbermaw (21326)": 0.9983,
+    "Dormant Heart of the Mountain (249473)": 0.9983,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.9983,
+    "SAF-T Emergency Ripper: Everlook (260820)": 0.9983,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.9983,
+    "Gnomish Poultryizer (260824)": 0.9983,
+    "Enriched Seal (271903)": 0.9983,
+    "Volunteer's Lucky Seal (271904)": 0.9983,
+    "Enriched Seal (271905)": 0.9983,
+    "Volunteer's Lucky Seal (271906)": 0.9983,
+    "Darkspear Voodoo Seal (272059)": 0.9983,
+    "Relentless Raider's Seal (272060)": 0.9983,
+    "Darkspear Voodoo Seal (272061)": 0.9983,
+    "Relentless Raider's Seal (272062)": 0.9983,
+    "Serenity Field (272439)": 0.9983,
+    "Parachute-Priest Pager (274761)": 0.9983
+   },
+   "relic_race": {
+    "23197": 1.0,
+    "272430": 1.0,
+    "272427": 1.0
+   },
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9872469288115766
+    "keep-sets-and-effects": 0.9988538383168852
    },
    "confirm_seed2": {
     "keep-sets-and-effects": 1.0,
-    "all-slots": 1.0135118035349129
+    "all-slots": 1.0007480692988786
    },
    "chosen": "all-slots",
-   "ilvl": 61.0,
+   "ilvl": 63.5,
    "items": [
     {
-     "id": 13404,
+     "id": 22005,
      "enchant": 1508
     },
     {
-     "id": 18381
+     "id": 19491
     },
     {
-     "id": 13358
+     "id": 271955
     },
     {
      "id": 18413,
      "enchant": 1889
     },
     {
-     "id": 12757,
+     "id": 252483,
      "enchant": 1891
     },
     {
-     "id": 18375,
+     "id": 19587,
      "enchant": 923
     },
     {
-     "id": 18377,
+     "id": 271948,
      "enchant": 1887
     },
     {
-     "id": 13252
+     "id": 272396
     },
     {
-     "id": 12963,
+     "id": 15057,
      "enchant": 1508
     },
     {
-     "id": 18716,
+     "id": 18506,
      "enchant": 1887
     },
     {
-     "id": 12544
+     "id": 21205
     },
     {
-     "id": 15855
+     "id": 19325
     },
     {
-     "id": 13965
+     "id": 272437
     },
     {
      "id": 17904
     },
     {
-     "id": 18531,
+     "id": 21188,
      "enchant": 1900
     },
     {},
     {
-     "id": 22397
+     "id": 23197
     }
    ],
    "names": [
-    "Mask of the Unforgiven",
-    "Evil Eye Pendant",
-    "Wyrmtongue Shoulders",
+    "Darkmantle Cap",
+    "Amulet of the Darkmoon",
+    "Theramore Pauldrons",
     "Cloak of Warding",
-    "Breastplate of Bloodthirst",
-    "Bracers of the Eclipse",
-    "Quickdraw Gloves",
-    "Cloudrunner Girdle",
-    "Blademaster Leggings",
-    "Ash Covered Boots",
-    "Thrall's Resolve",
-    "Ring of Protection",
-    "Blackhand's Breadth",
+    "Dawn Armor",
+    "Forest Stalker's Bracers",
+    "Theramore Gloves",
+    "Shifter's Belt",
+    "Stormshroud Pants",
+    "Mongoose Boots",
+    "Signet Ring of the Bronze Dragonflight",
+    "Don Julio's Band",
+    "Adaptive Combat Assistant",
     "Stormpike Insignia Rank 6",
-    "Unyielding Maul",
+    "Fist of Cenarius",
     null,
-    "Idol of Ferocity"
+    "Idol of the Moon"
    ],
    "weights_unit": "threat per second equivalents of tank value (threat weight - k x damage-taken weight)",
    "raw_weights": {
-    "k": 3.11427,
-    "dtps": 499.0,
-    "threat": 1118.1,
+    "k": 8.59596,
+    "dtps": 346.2,
+    "threat": 3372.8,
     "finite_differences": [
-     "StatArmor",
-     "StatBonusArmor",
      "StatParryRating",
      "StatBlockRating",
      "StatBlockValue"
     ],
     "tps_per_point": {
-     "PseudoStatMainHandDps": 5.45215,
-     "StatAgility": 0.66817,
-     "StatArmorPenetration": 0.13902,
-     "StatAttackPower": 0.38944,
-     "StatDefenseRating": -0.14287,
-     "StatDodgeRating": -0.12117,
-     "StatExpertiseRating": 1.17049,
-     "StatFeralAttackPower": 0.38944,
-     "StatFireDamage": 0.03824,
-     "StatHolyDamage": 0.03527,
-     "StatIntellect": 0.00019,
-     "StatMeleeCritRating": 0.95595,
-     "StatMeleeHasteRating": 0.84715,
-     "StatMeleeHitRating": 1.17049,
-     "StatSpellCritRating": 0.00075,
-     "StatSpellDamage": 0.07351,
-     "StatSpellHasteRating": 0.10993,
-     "StatSpellHitRating": 0.02638,
-     "StatStrength": 0.85677
+     "PseudoStatMainHandDps": 15.52249,
+     "StatAgility": 3.96451,
+     "StatArmorPenetration": 0.49992,
+     "StatAttackPower": 1.10875,
+     "StatCritRating": 6.53032,
+     "StatDefenseRating": -2.45605,
+     "StatDodgeRating": -1.41836,
+     "StatExpertiseRating": 5.08655,
+     "StatFeralAttackPower": 1.10875,
+     "StatHasteRating": 1.68636,
+     "StatHitRating": 5.10135,
+     "StatStrength": 2.43925
     },
     "dtps_per_point": {
-     "StatAgility": -0.44676,
-     "StatArmor": -0.12832,
-     "StatBonusArmor": -0.13337,
-     "StatDefenseRating": -1.09367,
-     "StatDodgeRating": -0.57604,
-     "StatExpertiseRating": -0.0,
-     "StatMeleeCritRating": -0.00074,
-     "StatMeleeHasteRating": 0.00064,
-     "StatMeleeHitRating": -0.0,
-     "StatSpellHasteRating": -0.00267
+     "StatAgility": -0.34283,
+     "StatArmor": -0.10401,
+     "StatArmorNoMods": -0.02259,
+     "StatBonusArmor": -0.10401,
+     "StatCritRating": 8e-05,
+     "StatDefenseRating": -0.82046,
+     "StatDodgeRating": -0.43127,
+     "StatExpertiseRating": 0.00031,
+     "StatHasteRating": 0.0029,
+     "StatHitRating": 0.00031
     }
    },
    "enchants_by_weight": {
@@ -2301,204 +1471,250 @@
      1896
     ],
     "race_seed1": {
-     "1900": 1.1095,
-     "1896": 1.0991
+     "1900": 1.1423,
+     "1896": 1.1155
     },
     "confirm_seed2": {
-     "1900": 1.1095
+     "1900": 1.1423
     },
     "chosen": 1900
    },
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-tank-prebis.gear.json",
    "pick": {
-    "value": 1.1101,
-    "threat": 1101.1,
-    "dtps": 481.3,
-    "dps": 485.1,
+    "value": 1.1408,
+    "threat": 3490.9,
+    "dtps": 339.9,
+    "dps": 2289.3,
     "tmi": 0,
     "fights": 20000,
     "seed": 3,
     "stats": {
-     "StatStrength": 42,
-     "StatAgility": 123,
-     "StatStamina": 104,
-     "StatMeleeHitRating": 30,
-     "StatDefenseRating": 33,
-     "StatDodgeRating": 84,
-     "StatBonusArmor": 1886
+     "StatStrength": 63,
+     "StatAgility": 260,
+     "StatStamina": 110,
+     "StatHitRating": 30,
+     "StatExpertiseRating": 20,
+     "StatDefenseRating": 12,
+     "StatDodgeRating": 36,
+     "StatArmor": 1100,
+     "StatBonusArmor": 240
     }
    },
    "vs_standard": {
-    "value": 0.11,
-    "threat": -0.0989,
-    "dtps": -0.2419
+    "value": 0.1406,
+    "threat": 0.2191,
+    "dtps": -0.0579
    },
-   "date": "2026-10-15"
+   "date": "2026-10-22"
   },
   "bis": {
    "evaluated_on": [
     "feral-bear-tank: feral-bear-tank"
    ],
    "weights": {
-    "StatSpellHasteRating": 0.1469,
-    "StatArmorPenetration": 0.1442,
-    "StatAttackPower": 0.3928,
-    "StatDodgeRating": 1.6096,
-    "PseudoStatMainHandDps": 5.4985,
-    "StatIntellect": 0.0002,
-    "StatSpellCritRating": 0.0009,
-    "StatBonusArmor": 0.4069,
-    "StatMeleeCritRating": 0.989,
-    "StatSpellHitRating": 0.0269,
-    "StatAgility": 2.0424,
-    "StatSpellDamage": 0.0745,
-    "StatArmor": 0.3916,
-    "StatFeralAttackPower": 0.3928,
-    "StatExpertiseRating": 1.1914,
-    "StatStrength": 0.8641,
-    "StatMeleeHitRating": 1.1914,
-    "StatDefenseRating": 3.113,
-    "StatMeleeHasteRating": 0.8577,
-    "StatHolyDamage": 0.0361,
-    "StatFireDamage": 0.0384
+    "StatHitRating": 5.116,
+    "StatExpertiseRating": 5.1007,
+    "StatArmorNoMods": 0.1911,
+    "StatCritRating": 6.6849,
+    "StatAgility": 7.0696,
+    "PseudoStatMainHandDps": 16.8572,
+    "StatDodgeRating": 1.7389,
+    "StatFeralAttackPower": 1.2041,
+    "StatArmor": 0.88,
+    "StatStrength": 2.649,
+    "StatArmorPenetration": 0.5287,
+    "StatAttackPower": 1.2041,
+    "StatDefenseRating": 3.9833,
+    "StatHasteRating": 1.5852,
+    "StatBonusArmor": 0.88
    },
    "trinkets": [
-    "Blackhand's Breadth",
-    "Stormpike Insignia Rank 6"
+    "Adaptive Combat Assistant",
+    "Arena Grand Master"
    ],
+   "trinket_screen": {
+    "Adaptive Combat Assistant (272437)": 1.0209,
+    "Arena Grand Master (19024)": 1.0115,
+    "Jewel of the Guard Captain (270225)": 1.0083,
+    "Stormpike Insignia Rank 6 (17904)": 1.0079,
+    "Defender's Grip Stabilizer (272440)": 1.0066,
+    "Rune of the Guard Captain (19120)": 1.0055,
+    "Cleansed Vilebranch Medallion (270275)": 1.0055,
+    "Talisman of Arathor (20071)": 1.0051,
+    "Defiler's Talisman (20072)": 1.0051,
+    "Frozen Heart of the Mountain (249469)": 1.0051,
+    "Defiler's Talisman (21115)": 1.0043,
+    "Talisman of Arathor (21117)": 1.0043,
+    "Defiler's Talisman (21116)": 1.0035,
+    "Talisman of Arathor (21118)": 1.0035,
+    "Molten Heart of the Mountain (249470)": 1.0021,
+    "Demon's Blood (10779)": 1.0012,
+    "Heart of the Scale (13164)": 1.0011,
+    "Everlook Pathcarver (274759)": 1.0007,
+    "Smoking Heart of the Mountain (11811)": 1.0007,
+    "Essence of the Pure Flame (18815)": 1.0007,
+    "Everlook Delivery Bot (274760)": 1.0006,
+    "Ankh of Life (1713)": 1.0,
+    "Major Recombobulator (18637)": 1.0,
+    "Weakness Analyzer (272438)": 0.9997,
+    "Dog Whistle (3456)": 0.9993,
+    "Minor Recombobulator (4381)": 0.9993,
+    "Gnomish Universal Remote (7506)": 0.9993,
+    "Shard of the Splithooves (10659)": 0.9993,
+    "Alchemist's Stone (13503)": 0.9993,
+    "Arcanite Dragonling (16022)": 0.9993,
+    "Gyrofreeze Ice Reflector (18634)": 0.9993,
+    "Hyper-Radiant Flame Reflector (18638)": 0.9993,
+    "Ultra-Flash Shadow Reflector (18639)": 0.9993,
+    "Talisman of Ephemeral Power (18820)": 0.9993,
+    "Talisman of Arathor (21119)": 0.9993,
+    "Defiler's Talisman (21120)": 0.9993,
+    "Defender of the Timbermaw (21326)": 0.9993,
+    "Dormant Heart of the Mountain (249473)": 0.9993,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.9993,
+    "SAF-T Emergency Ripper: Everlook (260820)": 0.9993,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.9993,
+    "Gnomish Poultryizer (260824)": 0.9993,
+    "Enriched Seal (271903)": 0.9993,
+    "Volunteer's Lucky Seal (271904)": 0.9993,
+    "Enriched Seal (271905)": 0.9993,
+    "Volunteer's Lucky Seal (271906)": 0.9993,
+    "Darkspear Voodoo Seal (272059)": 0.9993,
+    "Relentless Raider's Seal (272060)": 0.9993,
+    "Darkspear Voodoo Seal (272061)": 0.9993,
+    "Relentless Raider's Seal (272062)": 0.9993,
+    "Serenity Field (272439)": 0.9993,
+    "Parachute-Priest Pager (274761)": 0.9993
+   },
+   "relic_race": {
+    "23197": 1.0,
+    "272430": 1.0,
+    "272427": 1.0
+   },
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.0399288432195313,
-    "keep-sets-and-effects": 1.0266665566510578
+    "all-slots": 1.092010108394196,
+    "keep-sets-and-effects": 1.092010108394196
    },
    "confirm_seed2": {
     "current": 1.0,
-    "all-slots": 1.0400255270744487
+    "all-slots": 1.0891558086659785
    },
    "chosen": "all-slots",
-   "ilvl": 61.0,
+   "ilvl": 64.3,
    "items": [
     {
-     "id": 13404,
+     "id": 22005,
      "enchant": 1508
     },
     {
-     "id": 18381
+     "id": 18404
     },
     {
-     "id": 13358
+     "id": 271955
     },
     {
      "id": 18413,
      "enchant": 1889
     },
     {
-     "id": 12757,
+     "id": 252483,
      "enchant": 1891
     },
     {
-     "id": 18375,
+     "id": 19587,
      "enchant": 923
     },
     {
-     "id": 18377,
+     "id": 271948,
      "enchant": 1887
     },
     {
-     "id": 13252
+     "id": 19163
     },
     {
-     "id": 12963,
+     "id": 22749,
      "enchant": 1508
     },
     {
-     "id": 18716,
+     "id": 22003,
      "enchant": 1887
     },
     {
-     "id": 12544
+     "id": 21205
     },
     {
-     "id": 15855
+     "id": 19325
     },
     {
-     "id": 13965
+     "id": 272437
     },
     {
-     "id": 17904
+     "id": 19024
     },
     {
-     "id": 18531,
+     "id": 21188,
      "enchant": 1900
     },
     {},
     {
-     "id": 22397
+     "id": 23197
     }
    ],
    "names": [
-    "Mask of the Unforgiven",
-    "Evil Eye Pendant",
-    "Wyrmtongue Shoulders",
+    "Darkmantle Cap",
+    "Onyxia Tooth Pendant",
+    "Theramore Pauldrons",
     "Cloak of Warding",
-    "Breastplate of Bloodthirst",
-    "Bracers of the Eclipse",
-    "Quickdraw Gloves",
-    "Cloudrunner Girdle",
-    "Blademaster Leggings",
-    "Ash Covered Boots",
-    "Thrall's Resolve",
-    "Ring of Protection",
-    "Blackhand's Breadth",
-    "Stormpike Insignia Rank 6",
-    "Unyielding Maul",
+    "Dawn Armor",
+    "Forest Stalker's Bracers",
+    "Theramore Gloves",
+    "Molten Belt",
+    "Sentinel's Leather Pants",
+    "Darkmantle Boots",
+    "Signet Ring of the Bronze Dragonflight",
+    "Don Julio's Band",
+    "Adaptive Combat Assistant",
+    "Arena Grand Master",
+    "Fist of Cenarius",
     null,
-    "Idol of Ferocity"
+    "Idol of the Moon"
    ],
    "weights_unit": "threat per second equivalents of tank value (threat weight - k x damage-taken weight)",
    "raw_weights": {
-    "k": 3.01708,
-    "dtps": 507.0,
-    "threat": 1153.5,
+    "k": 8.6861,
+    "dtps": 344.4,
+    "threat": 3573.1,
     "finite_differences": [
-     "StatArmor",
-     "StatBonusArmor",
      "StatParryRating",
      "StatBlockRating",
      "StatBlockValue"
     ],
     "tps_per_point": {
-     "PseudoStatMainHandDps": 5.49855,
-     "StatAgility": 0.68179,
-     "StatArmorPenetration": 0.1442,
-     "StatAttackPower": 0.39275,
-     "StatDefenseRating": -0.14716,
-     "StatDodgeRating": -0.11526,
-     "StatExpertiseRating": 1.1892,
-     "StatFeralAttackPower": 0.39275,
-     "StatFireDamage": 0.03843,
-     "StatHolyDamage": 0.03608,
-     "StatIntellect": 0.00021,
-     "StatMeleeCritRating": 0.98602,
-     "StatMeleeHasteRating": 0.8616,
-     "StatMeleeHitRating": 1.1892,
-     "StatSpellCritRating": 0.00086,
-     "StatSpellDamage": 0.07451,
-     "StatSpellHasteRating": 0.13836,
-     "StatSpellHitRating": 0.02687,
-     "StatStrength": 0.86406
+     "PseudoStatMainHandDps": 16.8572,
+     "StatAgility": 4.24324,
+     "StatArmorPenetration": 0.52872,
+     "StatAttackPower": 1.20409,
+     "StatCritRating": 6.68968,
+     "StatDefenseRating": -3.06048,
+     "StatDodgeRating": -1.90217,
+     "StatExpertiseRating": 5.10788,
+     "StatFeralAttackPower": 1.20409,
+     "StatHasteRating": 1.58454,
+     "StatHitRating": 5.12317,
+     "StatStrength": 2.64899
     },
     "dtps_per_point": {
-     "StatAgility": -0.45095,
-     "StatArmor": -0.12978,
-     "StatBonusArmor": -0.13487,
-     "StatDefenseRating": -1.08056,
-     "StatDodgeRating": -0.5717,
-     "StatExpertiseRating": -0.00072,
-     "StatMeleeCritRating": -0.001,
-     "StatMeleeHasteRating": 0.00128,
-     "StatMeleeHitRating": -0.00072,
-     "StatSpellHasteRating": -0.00283
+     "StatAgility": -0.32539,
+     "StatArmor": -0.10131,
+     "StatArmorNoMods": -0.022,
+     "StatBonusArmor": -0.10131,
+     "StatCritRating": 0.00056,
+     "StatDefenseRating": -0.81093,
+     "StatDodgeRating": -0.41919,
+     "StatExpertiseRating": 0.00082,
+     "StatHasteRating": -7e-05,
+     "StatHitRating": 0.00082
     }
    },
    "enchants_by_weight": {
@@ -2517,530 +1733,68 @@
      1896
     ],
     "race_seed1": {
-     "1900": 1.1095,
-     "1896": 1.0991
+     "1900": 1.1834,
+     "1896": 1.1543
     },
     "confirm_seed2": {
-     "1900": 1.1095
+     "1900": 1.1834
     },
     "chosen": 1900
    },
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-tank-bis.gear.json",
    "pick": {
-    "value": 1.1101,
-    "threat": 1101.1,
-    "dtps": 481.3,
-    "dps": 485.1,
+    "value": 1.1835,
+    "threat": 3600.7,
+    "dtps": 325.4,
+    "dps": 2360.6,
     "tmi": 0,
     "fights": 20000,
     "seed": 3,
     "stats": {
-     "StatStrength": 42,
-     "StatAgility": 123,
-     "StatStamina": 104,
-     "StatMeleeHitRating": 30,
-     "StatDefenseRating": 33,
-     "StatDodgeRating": 84,
-     "StatBonusArmor": 1886
+     "StatStrength": 39,
+     "StatAgility": 281,
+     "StatStamina": 141,
+     "StatHitRating": 40,
+     "StatExpertiseRating": 20,
+     "StatDefenseRating": 12,
+     "StatDodgeRating": 12,
+     "StatArmor": 1156,
+     "StatBonusArmor": 300
     }
    },
    "vs_standard": {
-    "value": 0.11,
-    "threat": -0.0989,
-    "dtps": -0.2419
+    "value": 0.1833,
+    "threat": 0.2574,
+    "dtps": -0.0981
    },
-   "date": "2026-10-15"
+   "date": "2026-10-22"
   },
-  "minutes": 2.2,
-  "classic_armor": {
-   "note": "sensitivity: every item's missing base armor filled in from Classic 1.12 (see tank_gear.py); tank value on the same reference as the simulator's sets, so the standard set's value here includes its filled-in armor",
-   "entry": "feral-bear-tank",
+  "minutes": 17.5,
+  "reference_fork": {
    "build": "feral-bear-tank",
-   "setting": "raid",
-   "rotation": "_reference/data/raidsim/apls/druid/feral-bear-tank-raid.apl.json",
-   "reference": {
-    "build": "feral-bear-tank",
-    "threat": 1221.5826208197107,
-    "dtps": 988.1423459892501,
-    "fights": 20000,
-    "source": "raidsim/deep/druid-tank.json"
-   },
-   "standard_gear": "ui/specs/druid/feralbear/gear_sets/launch.gear.json",
-   "standard": {
-    "value": 1.2783,
-    "threat": 1222.0,
-    "dtps": 634.9,
-    "dps": 541.5,
-    "tmi": 0,
-    "fights": 20000,
-    "seed": 3,
-    "stats": {
-     "StatStrength": 79,
-     "StatAgility": 139,
-     "StatStamina": 262,
-     "StatMeleeHitRating": 80,
-     "StatDefenseRating": 21,
-     "StatDodgeRating": 48,
-     "StatBonusArmor": 30,
-     "armor_filled_in": 1089
-    }
-   },
-   "prebis": {
-    "evaluated_on": [
-     "feral-bear-tank: feral-bear-tank"
-    ],
-    "weights": {
-     "StatBonusArmor": 1.0344,
-     "StatAttackPower": 0.4163,
-     "StatHolyDamage": 0.0349,
-     "StatSpellHasteRating": 0.1637,
-     "StatSpellHitRating": 0.0244,
-     "StatMeleeHitRating": 1.2017,
-     "StatDefenseRating": 9.1705,
-     "StatFireDamage": 0.0407,
-     "StatMeleeHasteRating": 0.8377,
-     "StatArmor": 0.995,
-     "StatArmorPenetration": 0.1445,
-     "StatDodgeRating": 4.9552,
-     "StatAgility": 4.3862,
-     "StatStrength": 0.9159,
-     "StatExpertiseRating": 1.2017,
-     "StatMeleeCritRating": 0.9992,
-     "StatFeralAttackPower": 0.4163,
-     "StatSpellCritRating": 0.0009,
-     "PseudoStatMainHandDps": 5.8282,
-     "StatIntellect": 0.0002,
-     "StatSpellDamage": 0.0756
-    },
-    "trinkets": [
-     "Blackhand's Breadth",
-     "Stormpike Insignia Rank 6"
-    ],
-    "race_seed1": {
-     "all-slots": 1.0,
-     "keep-sets-and-effects": 0.9476977534042461
-    },
-    "confirm_seed2": {
-     "keep-sets-and-effects": 1.0,
-     "all-slots": 1.0537931178051618
-    },
-    "chosen": "all-slots",
-    "ilvl": 61.9,
-    "items": [
-     {
-      "id": 22005,
-      "enchant": 1508
-     },
-     {
-      "id": 18381
-     },
-     {
-      "id": 227818
-     },
-     {
-      "id": 18413,
-      "enchant": 1889
-     },
-     {
-      "id": 252483,
-      "enchant": 1891
-     },
-     {
-      "id": 19587,
-      "enchant": 923
-     },
-     {
-      "id": 271948,
-      "enchant": 1887
-     },
-     {
-      "id": 13252
-     },
-     {
-      "id": 12963,
-      "enchant": 1508
-     },
-     {
-      "id": 227815,
-      "enchant": 1887
-     },
-     {
-      "id": 12544
-     },
-     {
-      "id": 15855
-     },
-     {
-      "id": 13965
-     },
-     {
-      "id": 17904
-     },
-     {
-      "id": 18531,
-      "enchant": 1900
-     },
-     {},
-     {
-      "id": 22397
-     }
-    ],
-    "names": [
-     "Darkmantle Cap",
-     "Evil Eye Pendant",
-     "Glowing Mantle of the Dawn",
-     "Cloak of Warding",
-     "Dawn Armor",
-     "Forest Stalker's Bracers",
-     "Theramore Gloves",
-     "Cloudrunner Girdle",
-     "Blademaster Leggings",
-     "Fine Dawn Treaders",
-     "Thrall's Resolve",
-     "Ring of Protection",
-     "Blackhand's Breadth",
-     "Stormpike Insignia Rank 6",
-     "Unyielding Maul",
-     null,
-     "Idol of Ferocity"
-    ],
-    "weights_unit": "threat per second equivalents of tank value (threat weight - k x damage-taken weight)",
-    "raw_weights": {
-     "k": 9.25791,
-     "dtps": 361.1,
-     "threat": 1161.2,
-     "finite_differences": [
-      "StatArmor",
-      "StatBonusArmor",
-      "StatParryRating",
-      "StatBlockRating",
-      "StatBlockValue"
-     ],
-     "tps_per_point": {
-      "PseudoStatMainHandDps": 5.82825,
-      "StatAgility": 0.69783,
-      "StatArmorPenetration": 0.14454,
-      "StatAttackPower": 0.4163,
-      "StatDefenseRating": -0.15081,
-      "StatDodgeRating": -0.10667,
-      "StatExpertiseRating": 1.2077,
-      "StatFeralAttackPower": 0.4163,
-      "StatFireDamage": 0.04073,
-      "StatHolyDamage": 0.03489,
-      "StatIntellect": 0.00023,
-      "StatMeleeCritRating": 1.0,
-      "StatMeleeHasteRating": 0.86017,
-      "StatMeleeHitRating": 1.2077,
-      "StatSpellCritRating": 0.00085,
-      "StatSpellDamage": 0.07562,
-      "StatSpellHasteRating": 0.15063,
-      "StatSpellHitRating": 0.02444,
-      "StatStrength": 0.91587
-     },
-     "dtps_per_point": {
-      "StatAgility": -0.3984,
-      "StatArmor": -0.10748,
-      "StatBonusArmor": -0.11173,
-      "StatDefenseRating": -1.00685,
-      "StatDodgeRating": -0.54676,
-      "StatExpertiseRating": 0.00065,
-      "StatMeleeCritRating": 9e-05,
-      "StatMeleeHasteRating": 0.00243,
-      "StatMeleeHitRating": 0.00065,
-      "StatSpellHasteRating": -0.00142
-     }
-    },
-    "enchants_by_weight": {
-     "3": [
-      849,
-      1889
-     ],
-     "5": [
-      1886,
-      923
-     ]
-    },
-    "weapon_enchant": {
-     "candidates": [
-      1900,
-      1896
-     ],
-     "race_seed1": {
-      "1900": 1.6156,
-      "1896": 1.6021
-     },
-     "confirm_seed2": {
-      "1900": 1.6156
-     },
-     "chosen": 1900
-    },
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-tank-prebis-classic-armor.gear.json",
-    "pick": {
-     "value": 1.615,
-     "threat": 1159.1,
-     "dtps": 433.2,
-     "dps": 509.7,
-     "tmi": 0,
-     "fights": 20000,
-     "seed": 3,
-     "stats": {
-      "StatStrength": 57,
-      "StatAgility": 203,
-      "StatStamina": 116,
-      "StatMeleeHitRating": 40,
-      "StatDefenseRating": 48,
-      "StatDodgeRating": 48,
-      "StatBonusArmor": 1129,
-      "armor_filled_in": 931
-     }
-    },
-    "vs_standard": {
-     "value": 0.2634,
-     "threat": -0.0515,
-     "dtps": -0.3177
-    },
-    "date": "2026-10-15",
-    "simulator_set_with_armor": {
-     "value": 1.4772,
-     "threat": 1101.1,
-     "dtps": 481.3,
-     "dps": 485.1,
-     "tmi": 0,
-     "fights": 20000,
-     "seed": 3,
-     "vs_this_set": -0.0853,
-     "same_items": 11
-    }
-   },
-   "bis": {
-    "evaluated_on": [
-     "feral-bear-tank: feral-bear-tank"
-    ],
-    "weights": {
-     "StatBonusArmor": 1.039,
-     "StatAttackPower": 0.4122,
-     "StatHolyDamage": 0.0348,
-     "StatSpellHasteRating": 0.1371,
-     "StatSpellHitRating": 0.0245,
-     "StatMeleeHitRating": 1.1656,
-     "StatDefenseRating": 9.1181,
-     "StatFireDamage": 0.0407,
-     "StatMeleeHasteRating": 0.8356,
-     "StatArmor": 0.9993,
-     "StatArmorPenetration": 0.1442,
-     "StatDodgeRating": 4.8929,
-     "StatAgility": 4.435,
-     "StatStrength": 0.9068,
-     "StatExpertiseRating": 1.1656,
-     "StatMeleeCritRating": 0.9927,
-     "StatFeralAttackPower": 0.4122,
-     "StatSpellCritRating": 0.0009,
-     "PseudoStatMainHandDps": 5.7706,
-     "StatIntellect": 0.0002,
-     "StatSpellDamage": 0.0754
-    },
-    "trinkets": [
-     "Blackhand's Breadth",
-     "Stormpike Insignia Rank 6"
-    ],
-    "race_seed1": {
-     "current": 1.0,
-     "all-slots": 1.186197935626216,
-     "keep-sets-and-effects": 1.1240770671756093
-    },
-    "confirm_seed2": {
-     "current": 1.0,
-     "all-slots": 1.1872663247383577
-    },
-    "chosen": "all-slots",
-    "ilvl": 62.6,
-    "items": [
-     {
-      "id": 22005,
-      "enchant": 1508
-     },
-     {
-      "id": 17065
-     },
-     {
-      "id": 227818
-     },
-     {
-      "id": 18413,
-      "enchant": 1889
-     },
-     {
-      "id": 252483,
-      "enchant": 1891
-     },
-     {
-      "id": 19587,
-      "enchant": 923
-     },
-     {
-      "id": 271948,
-      "enchant": 1887
-     },
-     {
-      "id": 13252
-     },
-     {
-      "id": 12963,
-      "enchant": 1508
-     },
-     {
-      "id": 227815,
-      "enchant": 1887
-     },
-     {
-      "id": 18879
-     },
-     {
-      "id": 12544
-     },
-     {
-      "id": 13965
-     },
-     {
-      "id": 17904
-     },
-     {
-      "id": 18531,
-      "enchant": 1900
-     },
-     {},
-     {
-      "id": 22397
-     }
-    ],
-    "names": [
-     "Darkmantle Cap",
-     "Medallion of Steadfast Might",
-     "Glowing Mantle of the Dawn",
-     "Cloak of Warding",
-     "Dawn Armor",
-     "Forest Stalker's Bracers",
-     "Theramore Gloves",
-     "Cloudrunner Girdle",
-     "Blademaster Leggings",
-     "Fine Dawn Treaders",
-     "Heavy Dark Iron Ring",
-     "Thrall's Resolve",
-     "Blackhand's Breadth",
-     "Stormpike Insignia Rank 6",
-     "Unyielding Maul",
-     null,
-     "Idol of Ferocity"
-    ],
-    "weights_unit": "threat per second equivalents of tank value (threat weight - k x damage-taken weight)",
-    "raw_weights": {
-     "k": 9.31067,
-     "dtps": 360.1,
-     "threat": 1158.7,
-     "finite_differences": [
-      "StatArmor",
-      "StatBonusArmor",
-      "StatParryRating",
-      "StatBlockRating",
-      "StatBlockValue"
-     ],
-     "tps_per_point": {
-      "PseudoStatMainHandDps": 5.77064,
-      "StatAgility": 0.65569,
-      "StatArmorPenetration": 0.14421,
-      "StatAttackPower": 0.41219,
-      "StatDefenseRating": -0.15037,
-      "StatDodgeRating": -0.11032,
-      "StatExpertiseRating": 1.17188,
-      "StatFeralAttackPower": 0.41219,
-      "StatFireDamage": 0.04068,
-      "StatHolyDamage": 0.03475,
-      "StatIntellect": 0.00023,
-      "StatMeleeCritRating": 0.98829,
-      "StatMeleeHasteRating": 0.84852,
-      "StatMeleeHitRating": 1.17188,
-      "StatSpellCritRating": 0.00086,
-      "StatSpellDamage": 0.07544,
-      "StatSpellHasteRating": 0.1318,
-      "StatSpellHitRating": 0.02448,
-      "StatStrength": 0.90682
-     },
-     "dtps_per_point": {
-      "StatAgility": -0.40591,
-      "StatArmor": -0.10733,
-      "StatBonusArmor": -0.11159,
-      "StatDefenseRating": -0.99547,
-      "StatDodgeRating": -0.53736,
-      "StatExpertiseRating": 0.00068,
-      "StatMeleeCritRating": -0.00047,
-      "StatMeleeHasteRating": 0.00139,
-      "StatMeleeHitRating": 0.00068,
-      "StatSpellHasteRating": -0.00057
-     }
-    },
-    "enchants_by_weight": {
-     "3": [
-      849,
-      1889
-     ],
-     "5": [
-      1886,
-      923
-     ]
-    },
-    "weapon_enchant": {
-     "candidates": [
-      1900,
-      1896
-     ],
-     "race_seed1": {
-      "1900": 1.619,
-      "1896": 1.6075
-     },
-     "confirm_seed2": {
-      "1900": 1.619
-     },
-     "chosen": 1900
-    },
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-tank-bis-classic-armor.gear.json",
-    "pick": {
-     "value": 1.6192,
-     "threat": 1154.4,
-     "dtps": 430.9,
-     "dps": 507.9,
-     "tmi": 0,
-     "fights": 20000,
-     "seed": 3,
-     "stats": {
-      "StatStrength": 66,
-      "StatAgility": 188,
-      "StatStamina": 140,
-      "StatMeleeHitRating": 40,
-      "StatDefenseRating": 54,
-      "StatDodgeRating": 60,
-      "StatBonusArmor": 1089,
-      "armor_filled_in": 931
-     }
-    },
-    "vs_standard": {
-     "value": 0.2667,
-     "threat": -0.0553,
-     "dtps": -0.3213
-    },
-    "date": "2026-10-15",
-    "simulator_set_with_armor": {
-     "value": 1.4782,
-     "threat": 1097.8,
-     "dtps": 480.2,
-     "dps": 484.1,
-     "tmi": 0,
-     "fights": 20000,
-     "seed": 3,
-     "vs_this_set": -0.0871,
-     "same_items": 9
-    }
-   },
-   "minutes": 7.5
+   "threat": 1223.7429159719259,
+   "dtps": 634.9276934519617,
+   "fights": 20000,
+   "source": "raidsim/deep/druid-tank.json (ElliotWood/Forever)"
+  },
+  "standard": {
+   "value": 1.0002,
+   "threat": 2863.5,
+   "dtps": 360.8,
+   "dps": 1878.1,
+   "tmi": 0,
+   "fights": 20000,
+   "seed": 3,
+   "stats": {
+    "StatStrength": 97,
+    "StatAgility": 238,
+    "StatStamina": 210,
+    "StatHitRating": 27,
+    "StatDefenseRating": 5,
+    "StatDodgeRating": 36,
+    "StatArmor": 1142,
+    "StatBonusArmor": 170
+   }
   }
  }
 }

@@ -2,10 +2,12 @@
 like WoWSims does").
 
     python _reference/data/raidsim/gear_tiers.py --set <class> "<spec>" <tier> --entry <entry> --build <build id | candidate .json>
+    python _reference/data/raidsim/gear_tiers.py --remake [--classes ...] [--spec ...] [--fresh]   # every ML record's sets again
 
 (ml_pipeline.py makes every spec's sets through `make`.)
 
-Two tiers, one item pool each (the simulator's item database at the pinned ElliotWood/Forever commit, raidsim/setup.py):
+Two tiers, one item pool each (the simulator's item database at the pinned wowsims/forever commit, raidsim/setup.py; the
+ElliotWood/Forever fork's until 2026-10-18, `_reference/sim-port.md`):
 - **bis** (phase 1): `gear_opt.py`'s pool: dungeons, Molten Core, Onyxia, world drops, crafted, quest; items with no listed source only
   when a community phase-0/1, launch or pre-raid preset uses them (the Forever launch items); no BWL, ZG, AQ, Naxxramas, world bosses
   or legendaries; the hunter's Molten Core quest bow and stave (Rhok'delar, Lok'delar) count.
@@ -15,7 +17,8 @@ Two tiers, one item pool each (the simulator's item database at the pinned Ellio
 Unlike gear_opt.py, which gives every group of entries sharing a set one compromise set, each spec gets its own set per tier
 (a Fire mage wants fire damage, a Frost mage frost damage): the simulator's stat weights for the spec's best build in its entry
 (bench `statweights`), the best item per slot by those weights (two variants: every slot, and one keeping set pieces and items with
-effects), the weights refreshed once on the new set (hit caps move), the class's preset trinket pairs raced, the variants raced on
+effects), the weights refreshed once on the new set (hit caps move), the trinkets raced (gear_opt.screen_trinkets: every trinket of the
+pool alone, then the best seven in pairs; the class's preset trinket pairs until 2026-10-22), the variants raced on
 seed 1 and the choice confirmed on seed 2. The spec's specs.json set competes in the BiS tier; unlike gear_opt.py, which keeps it unless
 a new set wins by 0.5%, the tier takes whichever set measures best on both seeds (with the 0.5% margin the first 2026-10-01 run kept an
 item-level-33 mace in the Shadow priest's BiS set, 0.3% behind the new set on both seeds). Relics stay as they are.
@@ -30,6 +33,7 @@ import itertools
 import json
 import pathlib
 import sys
+import time
 
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
@@ -66,7 +70,7 @@ PRE_NAMES = ("launch", "p0", "prebis", "preraid", "pre-bis", "pre_raid")
 
 
 def load_vetted_pre(repo):
-    for p in (repo / "ui/specs").glob("*/*/gear_sets/*.gear.json"):
+    for p in G.preset_files(repo):   # the official repository's presets and the fork's vendored ones (2026-10-22)
         if any(k in p.name for k in PRE_NAMES) and "p2" not in p.name:
             VETTED_PRE.update(x["id"] for x in json.load(open(p, encoding="utf-8")).get("items", []) if x and x.get("id"))
 
@@ -132,78 +136,7 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, we
             raise SystemExit(f"stat weights failed for {tag}: {row['error']}")
         return row["weights"]
 
-    presets = list((repo / "ui/specs").glob(f"{cls}/*/gear_sets/*.gear.json")) + list(G.SETS.glob(f"{cls}*.gear.json"))
-    seen = [x.get("id") for p in presets for x in json.load(open(p, encoding="utf-8")).get("items", []) if x and x.get("id")]
-    wtypes = {db[i].get("weaponType") for i in seen if i in db and db[i].get("type") == 13}
-    rtypes = {db[i].get("rangedWeaponType") for i in seen if i in db and db[i].get("type") == 14}
-    trinkets = sorted({i for i in [*seen, *G.VENDOR_ITEMS] if i in db and db[i].get("type") == 12 and pool(db[i])})   # + known vendor trinkets (2026-10-15)
-
-    def fits(it, slot, curit):
-        if it.get("type") != G.SLOT_TYPE[slot] or not pool(it):
-            return False
-        if it.get("classAllowlist") and G.CLASS_ID[cls] not in it["classAllowlist"]:
-            return False
-        if it.get("armorType", 0) > G.ARMOR_MAX[cls]:
-            return False
-        if it.get("randomSuffixOptions") or not it.get("scalingOptions", {}).get("0", {}).get("stats") and it.get("type") not in (13, 14):
-            return False
-        if G.SLOT_TYPE[slot] == 13:
-            if it.get("weaponType") not in wtypes:
-                return False
-            ch = curit.get("handType") if curit else None
-            if slot == 14 and (ch == 4) != (it.get("handType") == 4):
-                return False
-            if slot == 15:
-                if not curit or (it.get("weaponType") in (5, 7)) != (curit.get("weaponType") in (5, 7)):
-                    return False
-                if (curit.get("weaponType") in (5, 7)) and it.get("weaponType") != curit.get("weaponType"):
-                    return False
-                if it.get("handType") in (1, 4):
-                    return False
-            if slot == 14 and it.get("handType") == 3:
-                return False
-        if G.SLOT_TYPE[slot] == 14:
-            if not curit or it.get("rangedWeaponType") != curit.get("rangedWeaponType") or it.get("rangedWeaponType") not in rtypes:
-                return False
-        return True
-
-    def greedy(items, w, keep_special):
-        new = [dict(x) if x else {} for x in items]
-        used, ukeys = set(), set()   # ids held, unique ids and limit categories held (gear_opt.unique_keys)
-
-        def hold(iid):
-            used.add(iid)
-            ukeys.update(G.unique_keys(db.get(iid)))
-
-        for slot in range(17):
-            curx = new[slot]
-            curit = db.get(curx.get("id")) if curx.get("id") else None
-            if G.SLOT_TYPE[slot] == 12 or (curit and curit.get("rangedWeaponType", 0) in (6, 7, 8, 9)):
-                hold(curx.get("id"))
-                continue   # trinkets are raced; relics stay
-            if slot == 15 and new[14].get("id") and db.get(new[14]["id"], {}).get("handType") == 4:
-                new[15] = {}
-                continue
-            # never keep an item outside the tier's pool, or one whose unique id or limit category the set already holds
-            allowed = curit is not None and pool(curit) and not (G.unique_keys(curit) & ukeys)
-            if keep_special and allowed and (curit.get("setName") or curit.get("itemEffects")):
-                hold(curx.get("id"))
-                continue
-            if not curit and slot not in (15,):
-                continue
-            # a unique-equipped item (2026-10-06) or a second item of one limit category (2026-10-18 audit row 50): not twice
-            cands = [it for it in db.values() if fits(it, slot, curit) and it["id"] not in used and not (G.unique_keys(it) & ukeys)]
-            if allowed:
-                cands.append(curit)
-            best = max(cands, key=lambda it: G.value(it, w, slot)) if cands else (curit if allowed else None)
-            if best is None:
-                new[slot] = {}
-                continue
-            if best["id"] != curx.get("id"):
-                ench = curx.get("enchant")
-                new[slot] = {"id": best["id"], **({"enchant": ench} if ench else {})}
-            hold(new[slot].get("id"))
-        return new
+    seen, trinkets, greedy = G.class_picker(repo, cls, db, pool)   # gear_opt's per-slot step (shared since 2026-10-22)
 
     def with_trinkets(items, pair):
         x = [dict(i) for i in items]
@@ -219,21 +152,14 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, we
                 out[k].append(sc(rows[k]) / (sc(ref) or 1))
         return {k: sum(v) / len(v) for k, v in out.items()}
 
-    w = weights(cur_items)
-    if not G.STAT:
-        G.STAT.update(enumerate(["StatStrength", "StatAgility", "StatStamina", "StatIntellect", "StatHealingPower", "StatSpellDamage",
-                                 "StatArcaneDamage", "StatFireDamage", "StatFrostDamage", "StatHolyDamage", "StatNatureDamage", "StatShadowDamage",
-                                 "StatSpellHitRating", "StatSpellCritRating", "StatSpellHasteRating", "StatSpellPiercing", "StatSpirit",
-                                 "StatAttackPower", "StatRangedAttackPower", "StatFeralAttackPower", "StatMeleeHitRating", "StatMeleeCritRating",
-                                 "StatMeleeHasteRating", "StatArmorPenetration", "StatExpertiseRating", "StatDefenseRating", "StatBlockRating",
-                                 "StatBlockValue", "StatDodgeRating", "StatParryRating", "StatArmor", "StatBonusArmor", "StatHealth", "StatMana",
-                                 "StatMP5"]))
+    w = weights([x if x.get("id") in db else {} for x in cur_items])   # (the bench would drop a missing item itself)
     v1, v2 = greedy(cur_items, w, False), greedy(cur_items, w, True)
     w = weights(v1)
     v1, v2 = greedy(v1, w, False), greedy(v2, w, True)
     cur_pair = (cur_items[12].get("id"), cur_items[13].get("id"))
-    pairs = [p for p in itertools.combinations(trinkets, 2) if G.pair_ok(db, p)][: a.max_pairs]
-    base_pair = (cur_pair if all(cur_pair) and all(pool(db[i]) for i in cur_pair if i in db) and G.pair_ok(db, cur_pair)
+    top, screen = G.screen_trinkets(db, trinkets, v1, race, a.iterations)   # the pool's trinkets one at a time, the best paired (2026-10-22)
+    pairs = [p for p in itertools.combinations(top, 2) if G.pair_ok(db, p)][: a.max_pairs]
+    base_pair = (cur_pair if all(cur_pair) and all(i in db and pool(db[i]) for i in cur_pair) and G.pair_ok(db, cur_pair)
                  else (pairs[0] if pairs else cur_pair))
     v1 = with_trinkets(v1, base_pair) if all(base_pair) else v1
     tsets = {"base": v1, **{f"t{i}": with_trinkets(v1, p) for i, p in enumerate(pairs)}}
@@ -242,12 +168,15 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, we
     pair = base_pair if tbest == "base" else pairs[int(tbest[1:])]
     if all(pair):
         v1, v2 = with_trinkets(v1, pair), with_trinkets(v2, pair)
-    in_tier = all(pool(db[x["id"]]) for x in cur_items if x.get("id") in db)
+    vs = {"v1": v1, "v2": v2}
+    relic, relic_race = G.race_relics(greedy.relic_candidates(cur_items), vs, race, a.iterations)   # a re-filled relic slot (2026-10-22)
+    v1, v2 = vs["v1"], vs["v2"]
+    in_tier = all(x["id"] in db and pool(db[x["id"]]) for x in cur_items if x.get("id"))   # a missing item is out of the pool (2026-10-22)
     keep_current = keep_current and in_tier   # the current set competes only when every item is in the tier's pool
     sets = ({"current": cur_items} if keep_current else {}) | {"all-slots": v1, "keep-sets-and-effects": v2}
     for name, its in (extra or {}).items():
         its = [dict(x) if x else {} for x in its] + [{}] * (17 - len(its))
-        if its == cur_items or not all(pool(db[x["id"]]) for x in its if x.get("id") in db):
+        if its == cur_items or not all(x["id"] in db and pool(db[x["id"]]) for x in its if x.get("id")):
             continue
         sets[name] = its
         if all(pair) and (its[12].get("id"), its[13].get("id")) != pair:
@@ -262,7 +191,8 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, we
     items = sets[chosen]
     ilvl = lambda its: round(sum(db[x["id"]]["scalingOptions"]["0"].get("ilvl", 0) for x in its if x.get("id") in db) / max(1, sum(1 for x in its if x.get("id") in db)), 1)  # noqa: E731
     return {"evaluated_on": [f"{n}: {lab}" for n, _, _, _, lab in evals], "weights": {k: round(v, 4) for k, v in w.items() if abs(v) > 1e-6},
-            "trinkets": [db[i]["name"] for i in pair if i in db], "race_seed1": r1, "confirm_seed2": r2, "chosen": chosen,
+            "trinkets": [db[i]["name"] for i in pair if i in db], "trinket_screen": screen, **({"relic_race": relic_race} if relic_race else {}),
+            "race_seed1": r1, "confirm_seed2": r2, "chosen": chosen,
             "ilvl": ilvl(items), "items": items, "names": [db.get(x.get("id"), {}).get("name") if x.get("id") else None for x in items]}
 
 
@@ -290,6 +220,9 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=N
                      extra={"previous": prev} if prev else None)
     if tmpl:
         FE.fill(r["items"], tmpl)
+    dropped = G.drop_missing_enchants(r["items"], repo)   # an enchant carried from a set the official database lacks (2026-10-22)
+    if dropped:
+        r["enchants_dropped"] = dropped
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps({"items": r["items"]}, indent=1) + "\n", encoding="utf-8")
     return dict(r, entry=entry_name, gear=p.relative_to(ROOT).as_posix(), date=TODAY)
@@ -297,7 +230,7 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=N
 
 def load_db(repo):
     db, zones = G.load_db(repo)
-    G.load_vetted(repo)
+    G.load_vetted(repo, db)
     load_vetted_pre(repo)
     return db, zones
 
@@ -308,11 +241,85 @@ def args_ns(**kw):
     return argparse.Namespace(**d)
 
 
+# ------------------------------------------------------------------------------------------------ --remake (2026-10-22)
+ML_DIR = HERE / "ml"
+# an ML record's gear key -> (tier, the search whose winner the set was made for, label, the "-raid" file); ml_pipeline.py's final step
+REMAKE_KEYS = {"bis": ("bis", ("bis-dummy", "bis-dummy-1"), "ml winner", False),
+               "prebis": ("prebis", ("bis-dummy", "bis-dummy-1"), "ml winner (bis)", False),
+               "bis-raid": ("bis", ("bis-raid",), "ml winner (full raid)", True),
+               "prebis-raid": ("prebis", ("bis-raid",), "ml winner (full raid)", True)}
+
+
+def remake(a, repo, db, zones):
+    """Every tier set of the ML records (`raidsim/ml/<class>-<spec slug>.json`, key `gear`) made again, in place: the same entry, the
+    record's current winner for that set, the tools' rules. Written for the port to wowsims/forever (2026-10-22): the official database
+    lacks 159 items of the fork-era sets. Each record's gear key gets the new result plus `replaced` (slot, old item, new item) and
+    `remade`; records are written after every set (resumable: a set already remade is skipped unless --fresh, or named in --sets)."""
+    sim = f"wowsims/forever {R.git_commit(repo)}"
+    files = sorted(f for f in ML_DIR.glob("*.json") if f.name not in ("rotations.json", "spell-probe.json"))
+    for f in files:
+        rec = json.load(open(f, encoding="utf-8"))
+        if a.classes and rec["class"] not in a.classes:
+            continue
+        if a.spec and rec["spec"] not in a.spec:
+            continue
+        cls, trees = rec["class"], R.load_trees(repo, rec["class"])
+        for key in [k for k in REMAKE_KEYS if k in (rec.get("gear") or {})]:
+            old = rec["gear"][key]
+            gname = pathlib.Path(old.get("gear", "")).name
+            if a.sets and gname not in a.sets:
+                continue
+            # resume: a set made on the official database is done whatever the commit (a re-pin alone does not redo every set;
+            # --fresh or --sets select what to redo)
+            if old.get("remade") and not a.fresh and not a.sets:
+                print(f"== {f.name} {key}: done ({old['remade'].get('simulator')})", flush=True)
+                continue
+            tier, searches, label, raid = REMAKE_KEYS[key]
+            sk = next((k for k in searches if k in rec.get("search", {})), None)
+            if not sk:
+                print(f"== {f.name} {key}: no winner in the record (searches {searches}); skipped", flush=True)
+                continue
+            alloc = {n: r for items in rec["search"][sk]["winner"]["allocation"].values() for n, r in items}
+            # talents the simulator's trees no longer have (records searched on older trees: Wake of Fire, Call of Thunder, Malediction,
+            # Shadow Affinity, Improved Fire Nova) are left out: the gear is chosen for the rest of the build (recorded)
+            known = {R.talent_key(t) for tr in trees for t in tr["talents"]}
+            dropped = sorted(n for n in alloc if n not in known)
+            alloc = {n: r for n, r in alloc.items() if n in known}
+            entry = old.get("entry") or rec["search"][sk]["entry"]
+            path = ROOT / old["gear"] if old.get("gear") else (SETS / f"{cls}-{rec['slug']}-{tier}{'-raid' if raid else ''}.gear.json")
+            before = json.load(open(path, encoding="utf-8"))["items"] if path.exists() else []
+            print(f"== {f.name} {key}: {tier} in {entry} for the {sk} winner -> {path.relative_to(ROOT).as_posix()}", flush=True)
+            t0 = time.time()
+            g = make(cls, rec["spec"], tier, entry, R.talents_string(trees, alloc), label, repo, db, zones, a, path=path)
+            keep = ("entry", "gear", "date", "chosen", "ilvl", "trinkets", "trinket_screen", "names", "race_seed1", "confirm_seed2", "weights",
+                    "evaluated_on", "enchants_dropped")
+            new = {k: g[k] for k in keep if k in g}
+            before = [dict(x) if x else {} for x in before] + [{}] * (17 - len(before))
+            new["replaced"] = [{"slot": i, "from": G.item_name(db, before[i].get("id")), "to": G.item_name(db, g["items"][i].get("id"))}
+                               for i in range(17) if before[i].get("id") != g["items"][i].get("id")]
+            new["remade"] = {"simulator": sim, "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the "
+                             "official database lacks", "missing_before": G.missing_in(before, db), "winner_of": sk,
+                             "talents_left_out": dropped,
+                             "minutes": round((time.time() - t0) / 60, 1)}
+            rec["gear"][key] = new
+            f.write_text(json.dumps(rec, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+            print(f"  item level {g['ilvl']}, chosen {g['chosen']}, trinkets {', '.join(g['trinkets'])}; seed 1 "
+                  + ", ".join(f"{k} {v:.3f}" for k, v in g["race_seed1"].items()) + "; seed 2 "
+                  + ", ".join(f"{k} {v:.3f}" for k, v in g["confirm_seed2"].items()), flush=True)
+            for c in new["replaced"]:
+                print(f"    slot {c['slot']}: {c['from']} -> {c['to']}", flush=True)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--set", nargs=3, metavar=("CLASS", "SPEC", "TIER"), required=True)
-    ap.add_argument("--entry", required=True)
-    ap.add_argument("--build", required=True)
+    ap.add_argument("--set", nargs=3, metavar=("CLASS", "SPEC", "TIER"))
+    ap.add_argument("--entry")
+    ap.add_argument("--build")
+    ap.add_argument("--remake", action="store_true", help="make every ML record's tier sets again, in place (see remake)")
+    ap.add_argument("--classes", nargs="*", default=[], help="--remake: these classes only")
+    ap.add_argument("--spec", action="append", help="--remake: this spec only (repeatable)")
+    ap.add_argument("--fresh", action="store_true", help="--remake: redo sets already remade")
+    ap.add_argument("--sets", nargs="*", default=[], help="--remake: redo only these gear files (names, e.g. mage-frost-bis.gear.json)")
     ap.add_argument("--iterations", type=int, default=3000)
     ap.add_argument("--confirm", type=int, default=12000)
     ap.add_argument("--weight-iterations", type=int, default=3000)
@@ -322,6 +329,10 @@ def main():
     R.set_game("forever")
     repo = R.repo_path(argparse.Namespace(repo=None))
     db, zones = load_db(repo)
+    if a.remake:
+        return remake(a, repo, db, zones)
+    if not (a.set and a.entry and a.build):
+        ap.error("--set, --entry and --build (or --remake)")
     cls, spec, tier = a.set
     trees = R.load_trees(repo, cls)
     if a.build.endswith(".json"):
