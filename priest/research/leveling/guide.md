@@ -43,7 +43,7 @@ Level-weighted time per kill (seconds, higher levels count more) of the build ea
 | [Discipline](../../leveling/discipline.md) | [`discipline-leveling`](builds/discipline-leveling.md) | discipline-leveling | 30.0 | 35.0 | 44.7 | 45.9 | 49.4 | 43.5 |
 | [Holy](../../leveling/holy.md) | [`holy-leveling`](builds/holy-leveling.md) | holy-leveling | 29.7 | 35.5 | 45.6 | 47.5 | 49.9 | 44.3 |
 
-The stats model's respec plan (its own optimizer builds, not the page build): **33.7 h** (62.5% faster than talentless), no respec ([respec plan](respec-plan.md)).
+The stats model's respec plan (its own optimizer builds, not the page build): **51.0 h** (43.4% faster than talentless), 1 respec ([respec plan](respec-plan.md)).
 
 ## What each bracket feels like
 

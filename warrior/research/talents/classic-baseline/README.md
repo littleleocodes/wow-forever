@@ -13,3 +13,14 @@ The community-standard WoW Classic Era builds, used as the *starting point* for 
 Classic Era (1.12-era talent trees) community-standard builds. Point allocations are validated by _reference/data/validate_builds.py against the Classic tree data. Flex points are marked; everything else is the consensus core.
 
 Source of truth: `builds.json` in this folder. Regenerate with `python _reference/data/validate_builds.py && python _reference/data/render_builds.py`.
+
+## Report index
+
+Reports under this folder that no other page links to (generated):
+
+- [optimizer/arms-2h-raid-leveling-st.md](optimizer/arms-2h-raid-leveling-st.md): warrior / classic-era / spec arms-2h-raid / profile leveling-st
+- [optimizer/fury-dw-raid-raid-dps.md](optimizer/fury-dw-raid-raid-dps.md): warrior / classic-era / spec fury-dw-raid / profile raid-dps
+- [optimizer/prot-tank-raid-tank.md](optimizer/prot-tank-raid-tank.md): warrior / classic-era / spec prot-tank / profile raid-tank
+- [raidsim/fury-dw-raid-environments.md](raidsim/fury-dw-raid-environments.md): DPS by environment — warrior fury-dw-raid (Classic Era)
+- [raidsim/fury-dw-raid.md](raidsim/fury-dw-raid.md): Raid sim — warrior fury-dw-raid (Classic Era)
+- [respec-plan.md](respec-plan.md): Warrior / classic-era: respec plan for `leveling-st`

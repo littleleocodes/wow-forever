@@ -36,7 +36,7 @@ Classic Era reference builds: [leveling-combat-swords](../talents/classic-baseli
 
 - [Leveling guide](guide.md): the recommended build (Combat-Subtlety, `combat-subtlety-open-leveling`) level by level, what each bracket feels like and what the fight lab does not model.
 - [Rotation](rotation.md): the build each leveling page picks, the rotation it plays and what each leveling build casts per kill, level by level.
-- [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**71.8 h** (20.2% faster than talentless), no respec).
+- [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**69.5 h** (22.7% faster than talentless), no respec).
 - Recommended build: [combat-subtlety-open-leveling](builds/combat-subtlety-open-leveling.md) (Combat-Subtlety; player page: [Combat-Subtlety leveling](../../leveling/combat-subtlety.md)).
 
 ## Fight lab (Monte Carlo fight simulator)

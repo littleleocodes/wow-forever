@@ -49,7 +49,7 @@ Level-weighted time per kill (seconds, higher levels count more) of the build ea
 | [Daggers (split)](../../leveling/daggers-split.md) | [`daggers-split-open-leveling`](builds/daggers-split-open-leveling.md) | combat-daggers-raid | 20.6 | 23.6 | 26.6 | 27.4 | 26.7 | 25.8 |
 | [Assassination](../../leveling/assassination.md) | [`opt-combat-swords-raid-solo-60`](builds/opt-combat-swords-raid-solo-60.md) | combat-daggers-raid | 20.7 | 23.1 | 27.4 | 28.5 | 28.0 | 26.5 |
 
-The stats model's respec plan (its own optimizer builds, not the page build): **71.8 h** (20.2% faster than talentless), no respec ([respec plan](respec-plan.md)).
+The stats model's respec plan (its own optimizer builds, not the page build): **69.5 h** (22.7% faster than talentless), no respec ([respec plan](respec-plan.md)).
 
 ## What each bracket feels like
 

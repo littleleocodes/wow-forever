@@ -49,7 +49,7 @@ Level-weighted time per kill (seconds, higher levels count more) of the build ea
 | [Destruction](../../leveling/destruction.md) | [`destruction-leveling`](builds/destruction-leveling.md) | destruction-leveling | 23.1 | 28.9 | 35.0 | 36.9 | 39.2 | 34.6 |
 | [Affliction](../../leveling/affliction.md) | [`affliction-leveling`](builds/affliction-leveling.md) | affliction-leveling | 30.9 | 38.2 | 42.2 | 40.7 | 39.6 | 39.3 |
 
-The stats model's respec plan (its own optimizer builds, not the page build): **74.3 h** (17.5% faster than talentless), no respec ([respec plan](respec-plan.md)).
+The stats model's respec plan (its own optimizer builds, not the page build): **72.0 h** (20.0% faster than talentless), no respec ([respec plan](respec-plan.md)).
 
 ## What each bracket feels like
 

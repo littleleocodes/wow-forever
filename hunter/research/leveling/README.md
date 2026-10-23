@@ -39,7 +39,7 @@ Classic Era reference builds: [bm-solo-farm](../talents/classic-baseline/bm-solo
 
 - [Leveling guide](guide.md): the recommended build (Beast-Survival, `beast-survival-open-leveling`) level by level, what each bracket feels like and what the fight lab does not model.
 - [Rotation](rotation.md): the build each leveling page picks, the rotation it plays and what each leveling build casts per kill, level by level.
-- [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**46.4 h** (48.4% faster than talentless), no respec).
+- [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**46.5 h** (48.4% faster than talentless), no respec).
 - Recommended build: [beast-survival-open-leveling](builds/beast-survival-open-leveling.md) (Beast-Survival; player page: [Beast-Survival leveling](../../leveling/beast-survival.md)).
 
 ## Fight lab (Monte Carlo fight simulator)

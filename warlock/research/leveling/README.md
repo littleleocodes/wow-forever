@@ -36,7 +36,7 @@ Classic Era reference builds: [leveling-affliction-demo](../talents/classic-base
 
 - [Leveling guide](guide.md): the recommended build (Affliction-Demonology, `affliction-demonology-open-leveling`) level by level, what each bracket feels like and what the fight lab does not model.
 - [Rotation](rotation.md): the build each leveling page picks, the rotation it plays and what each leveling build casts per kill, level by level.
-- [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**74.3 h** (17.5% faster than talentless), no respec).
+- [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**72.0 h** (20.0% faster than talentless), no respec).
 - Recommended build: [affliction-demonology-open-leveling](builds/affliction-demonology-open-leveling.md) (Affliction-Demonology; player page: [Affliction-Demonology leveling](../../leveling/affliction-demonology.md)).
 
 ## Fight lab (Monte Carlo fight simulator)

@@ -33,7 +33,7 @@ Classic Era reference builds: [leveling-feral](../talents/classic-baseline/level
 
 - [Leveling guide](guide.md): the recommended build (Feral Combat, `opt-feral-cat-dps-solo-60`) level by level, what each bracket feels like and what the fight lab does not model.
 - [Rotation](rotation.md): the build each leveling page picks, the rotation it plays and what each leveling build casts per kill, level by level.
-- [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**69.7 h** (22.5% faster than talentless), 1 respec).
+- [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**67.1 h** (25.4% faster than talentless), 1 respec).
 - Recommended build: [opt-feral-cat-dps-solo-60](builds/opt-feral-cat-dps-solo-60.md) (Feral Combat; player page: [Feral Combat leveling](../../leveling/feral-combat.md)).
 
 ## Fight lab (Monte Carlo fight simulator)

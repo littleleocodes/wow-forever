@@ -123,7 +123,7 @@ Models: bm-leveling, mm-raid, mm-lonewolf-raid, melee-dps. Same mob, same gear, 
 
 Plan: **fire-leveling -> level-20 build (0/0/11)** (from `mage/leveling/respec-plan.md`)
 
-- 10-14 Elemental Precision x5; 15-16 Permafrost x2; 17-19 Frostbite x3; 20 Ice Lance; 21-22 Improved Fire Blast x2; 23-24 Missile Barrage x2; 25-27 Improved Fireball x3; 28-32 Ignite x5
+- 10-12 Elemental Precision x3; 13-14 Frost Warding x2; 15-16 Permafrost x2; 17-19 Frostbite x3; 20 Ice Lance; 21-22 Improved Fire Blast x2; 23-24 Missile Barrage x2; 25-27 Improved Fireball x3; 28-32 Ignite x5
 
 Log per level bracket: kills per hour, deaths, drink/eat time; compare with the alternative plans on the same page.
 
@@ -143,7 +143,6 @@ Models: frost-leveling, frost-aoe, fire-leveling, frost-raid, fire-raid. Same mo
 - A derived Arcane leveling build: check it while leveling at launch.
 - A derived Fire leveling build: check it while leveling at launch.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-- An open-search Arcane-Frost leveling build: check it while leveling at launch.
 - An open-search Frostfire leveling build: check it while leveling at launch.
 - An open-search Frost leveling build: check it while leveling at launch.
 

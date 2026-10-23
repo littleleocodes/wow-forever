@@ -35,7 +35,7 @@ Classic Era reference builds: [leveling-enhancement](../talents/classic-baseline
 
 - [Leveling guide](guide.md): the recommended build (Enhancement, `enhancement-open-leveling`) level by level, what each bracket feels like and what the fight lab does not model.
 - [Rotation](rotation.md): the build each leveling page picks, the rotation it plays and what each leveling build casts per kill, level by level.
-- [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**62.3 h** (30.8% faster than talentless), no respec).
+- [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**57.9 h** (35.7% faster than talentless), no respec).
 - Recommended build: [enhancement-open-leveling](builds/enhancement-open-leveling.md) (Enhancement; player page: [Enhancement leveling](../../leveling/enhancement.md)).
 
 ## Fight lab (Monte Carlo fight simulator)

@@ -39,7 +39,7 @@ Level-weighted time per kill (seconds, higher levels count more) of the build ea
 | [Marksmanship](../../leveling/marksmanship.md) | [`opt-bm-leveling-solo-60`](builds/opt-bm-leveling-solo-60.md) | mm-raid | 16.1 | 19.3 | 24.6 | 26.8 | 28.0 | 24.5 |
 | [Beast Mastery](../../leveling/beast-mastery.md) | [`beast-mastery-leveling`](builds/beast-mastery-leveling.md) | bm-leveling | 16.8 | 20.0 | 24.2 | 26.5 | 28.1 | 24.6 |
 
-The stats model's respec plan (its own optimizer builds, not the page build): **46.4 h** (48.4% faster than talentless), no respec ([respec plan](respec-plan.md)).
+The stats model's respec plan (its own optimizer builds, not the page build): **46.5 h** (48.4% faster than talentless), no respec ([respec plan](respec-plan.md)).
 
 ## What each bracket feels like
 

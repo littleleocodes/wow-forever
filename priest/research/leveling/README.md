@@ -36,7 +36,7 @@ Classic Era reference builds: [leveling-shadow](../talents/classic-baseline/leve
 
 - [Leveling guide](guide.md): the recommended build (Shadow, `shadow-open-leveling`) level by level, what each bracket feels like and what the fight lab does not model.
 - [Rotation](rotation.md): the build each leveling page picks, the rotation it plays and what each leveling build casts per kill, level by level.
-- [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**33.7 h** (62.5% faster than talentless), no respec).
+- [Respec plan](respec-plan.md): when a respec while leveling pays for itself, by the stats model (**51.0 h** (43.4% faster than talentless), 1 respec).
 - Recommended build: [shadow-open-leveling](builds/shadow-open-leveling.md) (Shadow; player page: [Shadow leveling](../../leveling/shadow.md)).
 
 ## Fight lab (Monte Carlo fight simulator)

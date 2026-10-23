@@ -8,17 +8,17 @@ The build each spec's [leveling page](../../leveling/README.md) shows first, the
 
 | Spec | Page build | Rotation | L20 | L30 | L40 | L50 | L60 | Weighted |
 |---|---|---|---|---|---|---|---|---|
-| [Frost](../../leveling/frost.md) ✅ | [`frost-open-leveling`](builds/frost-open-leveling.md) | [frost-leveling](#frost-leveling) | 27.3 | 33.9 | 34.3 | 28.3 | 25.5 | 29.4 |
-| [Arcane-Frost](../../leveling/arcane-frost.md) | [`arcane-frost-open-leveling`](builds/arcane-frost-open-leveling.md) | [arcane-leveling](#arcane-leveling) | 32.9 | 32.4 | 33.9 | 32.2 | 27.6 | 31.3 |
-| [Frostfire](../../leveling/frostfire.md) | [`frostfire-open-leveling`](builds/frostfire-open-leveling.md) | [fire-leveling](#fire-leveling) | 30.2 | 34.2 | 39.6 | 34.0 | 30.2 | 33.7 |
-| [Fire](../../leveling/fire.md) | [`fire-leveling`](builds/fire-leveling.md) | [fire-leveling](#fire-leveling) | 31.0 | 36.4 | 41.6 | 36.9 | 32.2 | 35.8 |
-| [Arcane](../../leveling/arcane.md) | [`arcane-leveling`](builds/arcane-leveling.md) | [arcane-leveling](#arcane-leveling) | 31.4 | 39.3 | 42.4 | 35.9 | 31.6 | 35.9 |
+| [Frost](../../leveling/frost.md) ✅ | [`frost-open-leveling`](builds/frost-open-leveling.md) | [frost-leveling](#frost-leveling) | 27.2 | 33.6 | 35.9 | 29.6 | 26.4 | 30.2 |
+| [Arcane-Frost](../../leveling/arcane-frost.md) | [`opt-frost-leveling-leveling-st`](builds/opt-frost-leveling-leveling-st.md) | [frost-leveling](#frost-leveling) | 27.0 | 35.2 | 37.4 | 30.9 | 27.5 | 31.4 |
+| [Frostfire](../../leveling/frostfire.md) | [`frostfire-open-leveling`](builds/frostfire-open-leveling.md) | [fire-leveling](#fire-leveling) | 30.2 | 34.5 | 39.8 | 33.6 | 30.2 | 33.6 |
+| [Fire](../../leveling/fire.md) | [`fire-leveling`](builds/fire-leveling.md) | [fire-leveling](#fire-leveling) | 31.0 | 36.8 | 41.9 | 37.3 | 32.4 | 36.0 |
+| [Arcane](../../leveling/arcane.md) | [`arcane-leveling`](builds/arcane-leveling.md) | [arcane-leveling](#arcane-leveling) | 31.1 | 39.7 | 43.0 | 36.1 | 31.5 | 36.1 |
 
 ✅ = a recommended spec for leveling (the fastest, or within 3% of it).
 
 ## frost-leveling
 
-Played by the page build of [Frost](../../leveling/frost.md) ([`frost-open-leveling`](builds/frost-open-leveling.md)).
+Played by the page builds of [Frost](../../leveling/frost.md) ([`frost-open-leveling`](builds/frost-open-leveling.md)), [Arcane-Frost](../../leveling/arcane-frost.md) ([`opt-frost-leveling-leveling-st`](builds/opt-frost-leveling-leveling-st.md)).
 
 Single-target leveling fights against normal mobs of your level: pull at max range, the mob walks in at 7 yd/s (slowed by chills), swings every 2 s once in melee (pushing casts back), Frost Nova when it arrives, a 2-second step back, Ice Lance/Frostbolt into the freeze, Fire Blast and wand to finish without overkill. Between fights: 2 s loot, 6 s travel, Evocation when low, conjured water below 35% mana, food below 65% health; a death costs 90 s. Every hit, miss, crit, partial resist, chill, freeze, proc and pushback is rolled.
 
@@ -34,7 +34,7 @@ Before the fight: **Frost Armor** (**Ice Armor** from level 30) and **Arcane Int
 
 Between fights: Drink your conjured water below 15% of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-19, on top of the priority below): never cast Cone of Cold; never cast Fire Blast; Frostbolt only while the mob has more than 20% health; drink below 15% mana. Together +5.2% time per kill saved for `leveling-frost` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-22, on top of the priority below): never cast Fire Blast; never cast Cone of Cold; Frostbolt only while the mob has more than 20% health. Together +5.5% time per kill saved for `leveling-frost` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/frost-leveling.md](fightlab/frost-leveling.md).
 
@@ -42,58 +42,37 @@ Report: [fightlab/frost-leveling.md](fightlab/frost-leveling.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Ice Lance | 3.1 | 4.5 | 4.8 | 3.7 | 3.6 | 63% |
-| Frostbolt | 3.0 | 2.7 | 2.5 | 2.2 | 2.1 | 32% |
-| Wand | 0.7 | 2.0 | 2.2 | 1.6 | 1.5 | 4% |
-| Frost Nova | 0.5 | 0.9 | 0.9 | 0.7 | 0.7 | 1% |
+| Ice Lance | 3.0 | 4.5 | 5.0 | 4.0 | 3.6 | 62% |
+| Frostbolt | 3.0 | 2.7 | 2.5 | 2.2 | 2.3 | 33% |
+| Wand | 0.7 | 2.0 | 2.1 | 1.7 | 1.7 | 4% |
+| Frost Nova | 0.5 | 0.9 | 0.9 | 0.8 | 0.7 | 1% |
 | Counterspell | 0.0 | 0.2 | 0.2 | 0.1 | 0.1 | 0% |
 
 ### [`leveling-frost`](builds/leveling-frost.md)
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Ice Lance | 3.2 | 3.9 | 4.8 | 3.7 | 3.5 | 61% |
-| Frostbolt | 2.6 | 2.3 | 2.5 | 2.2 | 2.1 | 33% |
-| Wand | 1.1 | 1.6 | 2.1 | 1.9 | 1.7 | 4% |
-| Frost Nova | 0.6 | 0.8 | 0.9 | 0.7 | 0.7 | 1% |
+| Ice Lance | 3.0 | 4.5 | 4.9 | 3.9 | 3.7 | 62% |
+| Frostbolt | 3.0 | 2.7 | 2.7 | 2.3 | 2.2 | 32% |
+| Wand | 0.7 | 2.0 | 2.5 | 1.7 | 1.7 | 4% |
+| Frost Nova | 0.5 | 0.9 | 0.9 | 0.7 | 0.7 | 1% |
 | Counterspell | 0.0 | 0.2 | 0.1 | 0.1 | 0.1 | 0% |
 
 ### [`opt-fire-leveling-leveling-st`](builds/opt-fire-leveling-leveling-st.md) (played with the `fire-leveling` rotation, for comparison)
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Ice Lance | 0.0 | 3.1 | 3.5 | 2.9 | 2.5 | 29% |
-| Fire Blast | 1.8 | 2.0 | 2.3 | 1.8 | 1.6 | 23% |
-| Fireball | 3.1 | 1.1 | 1.3 | 1.5 | 1.4 | 22% |
-| Wand | 2.1 | 1.3 | 1.9 | 1.1 | 0.7 | 1% |
-| Frost Nova | 0.8 | 0.9 | 0.9 | 0.8 | 0.7 | 2% |
-| Pyroblast | 0.0 | 0.0 | 0.6 | 0.5 | 0.5 | 10% |
+| Ice Lance | 0.0 | 2.8 | 3.1 | 2.4 | 2.2 | 24% |
+| Fire Blast | 2.0 | 2.3 | 2.6 | 2.0 | 1.8 | 26% |
+| Fireball | 3.1 | 1.1 | 1.1 | 1.4 | 1.3 | 21% |
+| Wand | 1.8 | 1.1 | 2.2 | 1.4 | 1.0 | 2% |
+| Frost Nova | 0.8 | 0.9 | 0.9 | 0.8 | 0.7 | 1% |
+| Pyroblast | 0.0 | 0.0 | 0.5 | 0.5 | 0.6 | 11% |
 | Blast Wave | 0.0 | 0.0 | 0.0 | 0.3 | 0.3 | 4% |
-| Scorch | 0.0 | 1.0 | 0.7 | 0.2 | 0.2 | 1% |
+| Scorch | 0.0 | 1.1 | 0.7 | 0.3 | 0.2 | 1% |
 | Counterspell | 0.0 | 0.2 | 0.1 | 0.1 | 0.1 | 0% |
 
 Casts per kill of [`frost-open-leveling`](builds/frost-open-leveling.md): not recorded (its times per kill come from the race records of the search that found it, which keep times only; the table above has them).
-
-## arcane-leveling
-
-Played by the page builds of [Arcane-Frost](../../leveling/arcane-frost.md) ([`arcane-frost-open-leveling`](builds/arcane-frost-open-leveling.md)), [Arcane](../../leveling/arcane.md) ([`arcane-leveling`](builds/arcane-leveling.md)).
-
-The priority in the player page's words:
-
-Before the fight: **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up. Pull from as far away as you can; **Presence of Mind** at the pull, and **Arcane Power** too while you have more than half your mana.
-
-1. With **Arcane Wrath**: cast it first on the pull if it will land before the mob reaches you, and again whenever it is ready and there is time.
-2. **Arcane Blast** while the mob walks in: at most two in a row, only if the cast ends before the mob reaches you and costs no more than a quarter of your mana. Each stack gives all your spells spell damage (15% of your Intellect) for 15 seconds.
-3. **Arcane Missiles** as your channel, and at once when **Missile Barrage** lights up (after your two stacks, or when the mob is on you); only while the mob has more than about a third (35%) of its health.
-4. **Frost Nova** when the mob reaches you, then step back; **Ice Lance** while it is frozen. No Cone of Cold.
-5. **Frostbolt** when **Arcane Missiles** is out of mana or the mob is below a third of its health, but not below a fifth; then finish with **Fire Blast** (not below a tenth), an **Ice Lance** that will kill, or your wand.
-6. **Counterspell** a mob that casts spells.
-
-Between fights: Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.
-
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-19, on top of the priority below): Cone of Cold only when the mob is below 20% health; Arcane Missiles only while the mob has more than 35% health; never cast Cone of Cold; Frostbolt only while the mob has more than 20% health; Fire Blast only while the mob has more than 10% health. Together +5.4% time per kill saved for `arcane-leveling` (level-weighted, a third seed of 3000 fights per level).
-
-Casts per kill of [`arcane-frost-open-leveling`](builds/arcane-frost-open-leveling.md), [`arcane-leveling`](builds/arcane-leveling.md): not recorded (their times per kill come from the race records of the searches that found them, which keep times only; the table above has them).
 
 ## fire-leveling
 
@@ -115,7 +94,7 @@ Before the fight: **Frost Armor** (**Ice Armor** from level 30) and **Arcane Int
 
 Between fights: Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-19, on top of the priority below): Fireball only while the mob has more than 35% health; Scorch only while the mob has more than 35% health; Fire Blast only while the mob has more than 10% health. Together +2.3% time per kill saved for `opt-fire-leveling-leveling-st` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-22, on top of the priority below): Fireball only while the mob has more than 35% health; Scorch only while the mob has more than 35% health; drink below 25% mana; Pyroblast only while the mob has more than 35% health. Together +3.0% time per kill saved for `opt-fire-leveling-leveling-st` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/fire-leveling.md](fightlab/fire-leveling.md).
 
@@ -123,17 +102,38 @@ Report: [fightlab/fire-leveling.md](fightlab/fire-leveling.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Ice Lance | 0.0 | 3.1 | 3.5 | 2.9 | 2.5 | 29% |
-| Fire Blast | 1.8 | 2.0 | 2.3 | 1.8 | 1.6 | 23% |
-| Fireball | 3.1 | 1.1 | 1.3 | 1.5 | 1.4 | 22% |
-| Wand | 2.1 | 1.3 | 1.9 | 1.1 | 0.7 | 1% |
-| Frost Nova | 0.8 | 0.9 | 0.9 | 0.8 | 0.7 | 2% |
-| Pyroblast | 0.0 | 0.0 | 0.6 | 0.5 | 0.5 | 10% |
+| Ice Lance | 0.0 | 2.8 | 3.1 | 2.4 | 2.2 | 24% |
+| Fire Blast | 2.0 | 2.3 | 2.6 | 2.0 | 1.8 | 26% |
+| Fireball | 3.1 | 1.1 | 1.1 | 1.4 | 1.3 | 21% |
+| Wand | 1.8 | 1.1 | 2.2 | 1.4 | 1.0 | 2% |
+| Frost Nova | 0.8 | 0.9 | 0.9 | 0.8 | 0.7 | 1% |
+| Pyroblast | 0.0 | 0.0 | 0.5 | 0.5 | 0.6 | 11% |
 | Blast Wave | 0.0 | 0.0 | 0.0 | 0.3 | 0.3 | 4% |
-| Scorch | 0.0 | 1.0 | 0.7 | 0.2 | 0.2 | 1% |
+| Scorch | 0.0 | 1.1 | 0.7 | 0.3 | 0.2 | 1% |
 | Counterspell | 0.0 | 0.2 | 0.1 | 0.1 | 0.1 | 0% |
 
 Casts per kill of [`frostfire-open-leveling`](builds/frostfire-open-leveling.md), [`fire-leveling`](builds/fire-leveling.md): not recorded (their times per kill come from the race records of the searches that found them, which keep times only; the table above has them).
+
+## arcane-leveling
+
+Played by the page build of [Arcane](../../leveling/arcane.md) ([`arcane-leveling`](builds/arcane-leveling.md)).
+
+The priority in the player page's words:
+
+Before the fight: **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up. Pull from as far away as you can; **Presence of Mind** at the pull, and **Arcane Power** too while you have more than half your mana.
+
+1. With **Arcane Wrath**: cast it first on the pull if it will land before the mob reaches you, and again whenever it is ready and there is time.
+2. **Arcane Blast** while the mob walks in: at most two in a row, only if the cast ends before the mob reaches you and costs no more than a quarter of your mana. Each stack gives all your spells spell damage (15% of your Intellect) for 15 seconds.
+3. **Arcane Missiles** as your channel, and at once when **Missile Barrage** lights up (after your two stacks, or when the mob is on you); only while the mob has more than about a third (35%) of its health.
+4. **Frost Nova** when the mob reaches you, then step back; **Ice Lance** while it is frozen. No Cone of Cold.
+5. **Frostbolt** when **Arcane Missiles** is out of mana or the mob is below a third of its health, but not below a fifth; then finish with **Fire Blast** (not below a tenth), an **Ice Lance** that will kill, or your wand.
+6. **Counterspell** a mob that casts spells.
+
+Between fights: Drink your conjured water below a third of your mana, **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.
+
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-22, on top of the priority below): Cone of Cold only when the mob is below 20% health; Arcane Missiles only while the mob has more than 35% health; never cast Cone of Cold. Together +4.2% time per kill saved for `arcane-leveling` (level-weighted, a third seed of 3000 fights per level).
+
+Casts per kill of [`arcane-leveling`](builds/arcane-leveling.md): not recorded (its times per kill come from the race records of the search that found it, which keep times only; the table above has them).
 
 ## frost-aoe in pulls of several mobs
 
@@ -145,13 +145,13 @@ Report: [fightlab/frost-aoe.md](fightlab/frost-aoe.md).
 
 | Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|
-| Wand | 0.6 | 1.6 | 1.5 | 1.5 | 3% |
-| Blizzard | 0.7 | 0.7 | 0.7 | 0.6 | 56% |
-| Arcane Explosion | 0.7 | 0.9 | 0.8 | 0.5 | 9% |
-| Frostbolt | 0.3 | 0.6 | 0.6 | 0.5 | 8% |
-| Frost Nova | 0.3 | 0.4 | 0.4 | 0.4 | 3% |
-| Ice Lance | 0.2 | 0.4 | 0.3 | 0.3 | 5% |
-| Cone of Cold | 0.3 | 0.4 | 0.3 | 0.3 | 14% |
+| Wand | 0.7 | 1.6 | 2.3 | 1.9 | 4% |
+| Blizzard | 0.7 | 0.8 | 0.8 | 0.7 | 55% |
+| Arcane Explosion | 0.8 | 0.8 | 0.6 | 0.5 | 9% |
+| Frostbolt | 0.6 | 0.6 | 0.6 | 0.5 | 7% |
+| Frost Nova | 0.4 | 0.4 | 0.5 | 0.4 | 3% |
+| Ice Lance | 0.2 | 0.4 | 0.5 | 0.3 | 5% |
+| Cone of Cold | 0.4 | 0.4 | 0.3 | 0.3 | 13% |
 | Fire Blast | 0.2 | 0.2 | 0.2 | 0.2 | 3% |
 | Counterspell | 0.1 | 0.2 | 0.2 | 0.1 | 0% |
 
@@ -159,13 +159,13 @@ Report: [fightlab/frost-aoe.md](fightlab/frost-aoe.md).
 
 | Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|
-| Wand | 0.6 | 1.7 | 2.7 | 1.4 | 3% |
-| Blizzard | 0.7 | 0.7 | 0.7 | 0.6 | 56% |
-| Arcane Explosion | 0.7 | 0.8 | 0.6 | 0.5 | 9% |
-| Frostbolt | 0.3 | 0.6 | 0.6 | 0.5 | 8% |
-| Frost Nova | 0.3 | 0.4 | 0.5 | 0.4 | 3% |
-| Ice Lance | 0.2 | 0.5 | 0.4 | 0.3 | 5% |
-| Cone of Cold | 0.3 | 0.4 | 0.3 | 0.3 | 14% |
+| Wand | 0.7 | 1.6 | 2.3 | 1.9 | 4% |
+| Blizzard | 0.7 | 0.8 | 0.8 | 0.7 | 55% |
+| Arcane Explosion | 0.8 | 0.8 | 0.6 | 0.5 | 9% |
+| Frostbolt | 0.6 | 0.6 | 0.6 | 0.5 | 7% |
+| Frost Nova | 0.4 | 0.4 | 0.5 | 0.4 | 3% |
+| Ice Lance | 0.2 | 0.4 | 0.5 | 0.3 | 5% |
+| Cone of Cold | 0.4 | 0.4 | 0.3 | 0.3 | 13% |
 | Fire Blast | 0.2 | 0.2 | 0.2 | 0.2 | 3% |
 | Counterspell | 0.1 | 0.2 | 0.2 | 0.1 | 0% |
 
@@ -173,21 +173,21 @@ Report: [fightlab/frost-aoe.md](fightlab/frost-aoe.md).
 
 | Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|
-| Wand | 0.8 | 1.7 | 2.6 | 1.5 | 3% |
-| Blizzard | 0.7 | 0.7 | 0.7 | 0.6 | 56% |
-| Arcane Explosion | 0.8 | 0.8 | 0.7 | 0.5 | 9% |
-| Frostbolt | 0.6 | 0.6 | 0.5 | 0.5 | 7% |
-| Frost Nova | 0.3 | 0.4 | 0.5 | 0.3 | 3% |
-| Ice Lance | 0.1 | 0.4 | 0.5 | 0.3 | 5% |
-| Cone of Cold | 0.3 | 0.3 | 0.3 | 0.3 | 15% |
-| Fire Blast | 0.2 | 0.2 | 0.2 | 0.2 | 3% |
+| Wand | 0.7 | 1.6 | 2.2 | 1.7 | 4% |
+| Blizzard | 0.7 | 0.8 | 0.9 | 0.7 | 55% |
+| Arcane Explosion | 0.8 | 0.8 | 0.5 | 0.5 | 10% |
+| Frostbolt | 0.6 | 0.6 | 0.6 | 0.5 | 7% |
+| Frost Nova | 0.4 | 0.4 | 0.5 | 0.4 | 2% |
+| Ice Lance | 0.2 | 0.4 | 0.5 | 0.3 | 5% |
+| Cone of Cold | 0.4 | 0.4 | 0.3 | 0.3 | 14% |
+| Fire Blast | 0.2 | 0.2 | 0.3 | 0.2 | 3% |
 | Counterspell | 0.1 | 0.2 | 0.2 | 0.1 | 0% |
 
 ## frostfire-leveling
 
 Single-target leveling fights against normal mobs of your level: pull at max range, the mob walks in at 7 yd/s (slowed by chills), swings every 2 s once in melee (pushing casts back), Frost Nova when it arrives, a 2-second step back, Ice Lance/Frostbolt into the freeze, Fire Blast and wand to finish without overkill. Between fights: 2 s loot, 6 s travel, Evocation when low, conjured water below 35% mana, food below 65% health; a death costs 90 s. Every hit, miss, crit, partial resist, chill, freeze, proc and pushback is rolled.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-22, on top of the priority below): never cast Frostfire Bolt; never cast Cone of Cold; Frostbolt only while the mob has more than 35% health; Fire Blast only while the mob has more than 10% health; drink below 25% mana. Together +7.1% time per kill saved for `frostfire-open-leveling` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-10-22, on top of the priority below): never cast Frostfire Bolt; never cast Cone of Cold; Frostbolt only while the mob has more than 35% health; drink below 15% mana. Together +5.3% time per kill saved for `frostfire-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/frostfire-leveling.md](fightlab/frostfire-leveling.md).
 
@@ -195,18 +195,19 @@ Report: [fightlab/frostfire-leveling.md](fightlab/frostfire-leveling.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Wand | 0.7 | 2.0 | 10.0 | 7.8 | 7.5 | 18% |
-| Ice Lance | 3.0 | 4.4 | 5.7 | 4.5 | 4.5 | 80% |
-| Frost Nova | 0.5 | 0.9 | 1.1 | 1.0 | 1.0 | 2% |
-| Counterspell | 0.0 | 0.2 | 0.2 | 0.2 | 0.1 | 0% |
-| Frostbolt | 3.1 | 2.7 | 0.0 | 0.0 | 0.0 | 0% |
+| Ice Lance | 2.4 | 3.2 | 3.9 | 3.1 | 2.9 | 52% |
+| Frostbolt | 2.4 | 1.8 | 2.2 | 2.1 | 2.1 | 29% |
+| Fire Blast | 1.3 | 1.9 | 1.6 | 1.4 | 1.2 | 16% |
+| Wand | 0.6 | 0.9 | 1.0 | 0.8 | 0.7 | 2% |
+| Frost Nova | 0.5 | 0.8 | 0.8 | 0.6 | 0.6 | 1% |
+| Counterspell | 0.0 | 0.2 | 0.1 | 0.1 | 0.1 | 0% |
 
 ### [`opt-frost-leveling-leveling-st`](builds/opt-frost-leveling-leveling-st.md) (played with the `frost-leveling` rotation, for comparison)
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Ice Lance | 3.1 | 4.5 | 4.8 | 3.7 | 3.6 | 63% |
-| Frostbolt | 3.0 | 2.7 | 2.5 | 2.2 | 2.1 | 32% |
-| Wand | 0.7 | 2.0 | 2.2 | 1.6 | 1.5 | 4% |
-| Frost Nova | 0.5 | 0.9 | 0.9 | 0.7 | 0.7 | 1% |
+| Ice Lance | 3.0 | 4.5 | 5.0 | 4.0 | 3.6 | 62% |
+| Frostbolt | 3.0 | 2.7 | 2.5 | 2.2 | 2.3 | 33% |
+| Wand | 0.7 | 2.0 | 2.1 | 1.7 | 1.7 | 4% |
+| Frost Nova | 0.5 | 0.9 | 0.9 | 0.8 | 0.7 | 1% |
 | Counterspell | 0.0 | 0.2 | 0.2 | 0.1 | 0.1 | 0% |
