@@ -1,5 +1,5 @@
 {
- "_doc": "Signature spells per spec and hybrid (user rule 2026-10-22: 'The specs should use the spells that make that spec, that spec. Especially the hybrid ones'; strictness 'main damage', leveling and raid). Keys: the spec as spec_modes.spec_of names it (a tree, or 'Hybrid A/B'). `required`: never vetoed, dropped or gated off by a rotation search (rotation_opt.py, apl_opt.py), and cast in every fight from the level it is learned (trainer level or the talent's level in the build's order); a search keeps the talents that grant them. `core`: these sources (spell names; 'pet' = the pet's or demon's damage, 'melee' = white melee swings, 'Auto Shot' = ranged white) must together carry at least `min_share` of the build's damage (at level 60 for leveling, in the full raid for raid); a build below it is not shown for this spec. `modes` overrides per mode. A spec that plays its signature spells and comes out slower is shown slower: the rule is about what the spec is, not about speed. Optional keys (leveling checks, signature.py): `min_casts` {spell: casts per kill} (a spell listed there is checked at that rate from its learn level, whether or not it is required: reactive or proc spells such as Mongoose Bite or Missile Barrage's Arcane Missiles), `enabled_by` {spell: talent} (counted from the level the talent arrives in the build's order), `grace_levels` {spell: levels} (counted that many levels after it is learned).",
+ "_doc": "Signature spells per spec and hybrid (user rule 2026-10-22: 'The specs should use the spells that make that spec, that spec. Especially the hybrid ones'; strictness 'main damage', leveling and raid). Keys: the spec as spec_modes.spec_of names it (a tree, or 'Hybrid A/B'). `required`: never vetoed, dropped or gated off by a rotation search (rotation_opt.py, apl_opt.py), and cast in every fight from the level it is learned (trainer level or the talent's level in the build's order); a search keeps the talents that grant them. `core`: these sources (spell names; 'pet' = the pet's or demon's damage, 'melee' = white melee swings, 'Auto Shot' = ranged white) must together carry at least `min_share` of the build's damage (at level 60 for leveling, in the full raid for raid); a build below it is not shown for this spec. `modes` overrides per mode. A spec that plays its signature spells and comes out slower is shown slower: the rule is about what the spec is, not about speed. Optional keys (leveling checks, signature.py): `min_casts` {spell: casts per kill} (a spell listed there is checked at that rate from its learn level, whether or not it is required: reactive or proc spells such as Mongoose Bite or Missile Barrage's Arcane Missiles), `enabled_by` {spell: talent} (counted from the level the talent arrives in the build's order), `grace_levels` {spell: levels} (counted that many levels after it is learned). `demon`: the spec is about the benefit of its demon, not the demon's damage (Demonology, user 2026-10-23): a demon stays in play (summoned or sacrificed) and the demon setup is the best measured one; no share floor.",
  "druid": {
   "Balance": {
    "required": [
@@ -595,15 +595,16 @@
    "core": [
     "pet"
    ],
-   "min_share": 0.3,
-   "note": "the demon (Demonic Brand, Soul Link, Demonic Knowledge) carries the spec while leveling; in a raid the brand's demon damage is about a tenth (to settle with the user)",
+   "min_share": 0.0,
+   "demon": true,
+   "note": "user 2026-10-23: 'Demonology should just be based around getting the most benefit from the demon, it doesn't need to do the most damage particularly': no damage floor for the demon (its share is reported, not enforced); the build keeps a demon in play, out or sacrificed, with the demon setup that gives the most. Raid: the entry's Succubus out with the Imp sacrificed through Demonic Pact led all 20 demon choices by 7% (full raid, 30f67f5, race-neutral, 2026-10-23); leveling: the Voidwalker, the one demon that tanks",
    "modes": {
     "raid": {
      "required": [],
      "core": [
       "pet"
      ],
-     "min_share": 0.1
+     "min_share": 0.0
     }
    }
   },
