@@ -248,7 +248,6 @@ def main():
             continue
         noise = abs(target) < NOISE and before < NOISE   # both say ~0: leave the entry alone
         fit, other = raid_split(entry_m, a.spec, other_specs)
-        import splitfx   # scorer/splitfx.py
         fit = splitfx.seed_from_parsed(fit, expand(entry_m["effects"]), expand(opt.effects[name].get("parsed") or []), FIT_MODES, set(FIT_MODES), a.spec, NO_FIT)
         how = "apl" if name in apl_dep else "unmeasured" if name in unmeasured else "noise" if noise else "kept"
         dead = splitfx.dead_scopes(fit, specs["models"][a.spec])   # a scope no source carries scores nothing however it is scaled (audit 2026-10-18, row 47)

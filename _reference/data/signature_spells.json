@@ -1,66 +1,654 @@
 {
  "_doc": "Signature spells per spec and hybrid (user rule 2026-10-22: 'The specs should use the spells that make that spec, that spec. Especially the hybrid ones'; strictness 'main damage', leveling and raid). Keys: the spec as spec_modes.spec_of names it (a tree, or 'Hybrid A/B'). `required`: never vetoed, dropped or gated off by a rotation search (rotation_opt.py, apl_opt.py), and cast in every fight from the level it is learned (trainer level or the talent's level in the build's order); a search keeps the talents that grant them. `core`: these sources (spell names; 'pet' = the pet's or demon's damage, 'melee' = white melee swings, 'Auto Shot' = ranged white) must together carry at least `min_share` of the build's damage (at level 60 for leveling, in the full raid for raid); a build below it is not shown for this spec. `modes` overrides per mode. A spec that plays its signature spells and comes out slower is shown slower: the rule is about what the spec is, not about speed.",
  "druid": {
-  "Balance": {"required": ["Wrath", "Starfire", "Moonfire"], "core": ["Wrath", "Starfire", "Moonfire", "Insect Swarm"], "min_share": 0.7, "note": "a Moonkin caster"},
-  "Feral Combat": {"required": ["Claw", "Rip", "Ferocious Bite"], "core": ["melee", "Claw", "Rake", "Rip", "Ferocious Bite", "Shred", "Primal Bite"], "min_share": 0.8,
-                   "note": "Cat Form (Bear Form at 10-19 while leveling); Shred needs the mob's back, so solo it is the stealth opener only"}
+  "Balance": {
+   "required": [
+    "Starfire",
+    "Moonfire"
+   ],
+   "core": [
+    "Wrath",
+    "Starfire",
+    "Moonfire",
+    "Insect Swarm"
+   ],
+   "min_share": 0.7,
+   "note": "a Moonkin caster (raid: Starfire and Moonfire; Wrath is optional)"
+  },
+  "Feral Combat": {
+   "required": [
+    "Claw",
+    "Rip",
+    "Ferocious Bite"
+   ],
+   "core": [
+    "melee",
+    "Claw",
+    "Rake",
+    "Rip",
+    "Ferocious Bite",
+    "Shred",
+    "Primal Bite"
+   ],
+   "min_share": 0.8,
+   "note": "Cat Form (Bear Form at 10-19 while leveling); Shred needs the mob's back, so solo it is the stealth opener only",
+   "modes": {
+    "raid": {
+     "required": [
+      "Shred",
+      "Rip"
+     ],
+     "core": [
+      "melee",
+      "Shred",
+      "Rip",
+      "Ferocious Bite",
+      "Rake",
+      "Primal Bite",
+      "Claw"
+     ],
+     "min_share": 0.8
+    }
+   }
+  }
  },
  "hunter": {
-  "Beast Mastery": {"required": ["Bestial Wrath"], "core": ["pet"], "min_share": 0.35, "note": "the pet is the damage"},
-  "Marksmanship": {"required": ["Aimed Shot"], "core": ["Auto Shot", "Aimed Shot", "Arcane Shot", "Multi-Shot", "Sniper Shot", "Barrage", "Serpent Sting"], "min_share": 0.6, "note": "ranged shots"},
-  "Survival": {"required": ["Raptor Strike", "Mongoose Bite"], "core": ["melee", "Raptor Strike", "Mongoose Bite", "Lacerate", "Wing Clip"], "min_share": 0.5, "note": "the melee hunter"},
-  "Hybrid Beast Mastery/Marksmanship": {"required": ["Aimed Shot"], "core": ["pet", "Auto Shot", "Aimed Shot", "Arcane Shot", "Multi-Shot", "Sniper Shot", "Barrage", "Serpent Sting"], "min_share": 0.7, "note": "Beast-Marks: pet plus Marksmanship shots"},
-  "Hybrid Marksmanship/Survival": {"required": ["Raptor Strike"], "core": ["melee", "Raptor Strike", "Mongoose Bite"], "min_share": 0.5, "note": "Melee (split)"},
-  "Hybrid Beast Mastery/Survival": {"required": ["Raptor Strike", "Mongoose Bite"], "core": ["melee", "Raptor Strike", "Mongoose Bite", "Lacerate", "pet"], "min_share": 0.5,
-                                    "modes": {"raid": {"required": ["Raptor Strike", "Mongoose Bite", "Summon Hawk"], "core": ["melee", "Raptor Strike", "Mongoose Bite", "pet"], "min_share": 0.5}},
-                                    "note": "Beast-Survival: melee with Beast Mastery's aspect and pet talents; Summon Hawk with Lone Wolf in a raid"}
+  "Beast Mastery": {
+   "required": [
+    "Bestial Wrath"
+   ],
+   "core": [
+    "pet"
+   ],
+   "min_share": 0.35,
+   "note": "the pet is the damage",
+   "modes": {
+    "raid": {
+     "required": [
+      "Bestial Wrath"
+     ],
+     "core": [
+      "pet"
+     ],
+     "min_share": 0.3
+    }
+   }
+  },
+  "Marksmanship": {
+   "required": [
+    "Aimed Shot"
+   ],
+   "core": [
+    "Auto Shot",
+    "Aimed Shot",
+    "Arcane Shot",
+    "Multi-Shot",
+    "Sniper Shot",
+    "Barrage",
+    "Serpent Sting"
+   ],
+   "min_share": 0.6,
+   "note": "ranged shots"
+  },
+  "Survival": {
+   "required": [
+    "Raptor Strike",
+    "Mongoose Bite"
+   ],
+   "core": [
+    "melee",
+    "Raptor Strike",
+    "Mongoose Bite",
+    "Lacerate",
+    "Wing Clip"
+   ],
+   "min_share": 0.5,
+   "note": "the melee hunter"
+  },
+  "Hybrid Beast Mastery/Marksmanship": {
+   "required": [
+    "Aimed Shot"
+   ],
+   "core": [
+    "pet",
+    "Auto Shot",
+    "Aimed Shot",
+    "Arcane Shot",
+    "Multi-Shot",
+    "Sniper Shot",
+    "Barrage",
+    "Serpent Sting"
+   ],
+   "min_share": 0.7,
+   "note": "Beast-Marks: pet plus Marksmanship shots"
+  },
+  "Hybrid Marksmanship/Survival": {
+   "required": [
+    "Raptor Strike"
+   ],
+   "core": [
+    "melee",
+    "Raptor Strike",
+    "Mongoose Bite"
+   ],
+   "min_share": 0.5,
+   "note": "Melee (split)"
+  },
+  "Hybrid Beast Mastery/Survival": {
+   "required": [
+    "Raptor Strike",
+    "Mongoose Bite"
+   ],
+   "core": [
+    "melee",
+    "Raptor Strike",
+    "Mongoose Bite",
+    "Lacerate",
+    "pet"
+   ],
+   "min_share": 0.5,
+   "modes": {
+    "raid": {
+     "required": [
+      "Raptor Strike",
+      "Mongoose Bite",
+      "Summon Hawk"
+     ],
+     "core": [
+      "melee",
+      "Raptor Strike",
+      "Mongoose Bite",
+      "pet"
+     ],
+     "min_share": 0.5
+    }
+   },
+   "note": "Beast-Survival: melee with Beast Mastery's aspect and pet talents; Summon Hawk with Lone Wolf in a raid"
+  }
  },
  "mage": {
-  "Arcane": {"required": ["Arcane Blast"], "core": ["Arcane Blast", "Arcane Missiles", "Arcane Wrath"], "min_share": 0.5, "note": "Arcane Blast stacks"},
-  "Fire": {"required": ["Fireball", "Pyroblast"], "core": ["Fireball", "Pyroblast", "Fire Blast", "Scorch", "Ignite", "Flamestrike"], "min_share": 0.6},
-  "Frost": {"required": ["Frostbolt"], "core": ["Frostbolt", "Ice Lance", "Frost Blast", "Cone of Cold", "Blizzard"], "min_share": 0.6},
-  "Hybrid Arcane/Frost": {"required": ["Frostbolt", "Arcane Missiles"], "core": ["Frostbolt", "Arcane Missiles", "Ice Lance", "Arcane Blast"], "min_share": 0.6, "note": "Missile Barrage with Shatter and Fingers of Frost"},
-  "Hybrid Fire/Frost": {"required": ["Frostfire Bolt"], "core": ["Frostfire Bolt"], "min_share": 0.4, "note": "Frostfire: built around Frostfire Bolt (trained at 40; Frostbolt before)"}
+  "Arcane": {
+   "required": [
+    "Arcane Blast"
+   ],
+   "core": [
+    "Arcane Blast",
+    "Arcane Missiles",
+    "Arcane Wrath"
+   ],
+   "min_share": 0.5,
+   "note": "Arcane Blast stacks"
+  },
+  "Fire": {
+   "required": [
+    "Fireball",
+    "Pyroblast"
+   ],
+   "core": [
+    "Fireball",
+    "Pyroblast",
+    "Fire Blast",
+    "Scorch",
+    "Ignite",
+    "Flamestrike"
+   ],
+   "min_share": 0.6
+  },
+  "Frost": {
+   "required": [
+    "Frostbolt"
+   ],
+   "core": [
+    "Frostbolt",
+    "Ice Lance",
+    "Frost Blast",
+    "Cone of Cold",
+    "Blizzard"
+   ],
+   "min_share": 0.6
+  },
+  "Hybrid Arcane/Frost": {
+   "required": [
+    "Frostbolt",
+    "Arcane Missiles"
+   ],
+   "core": [
+    "Frostbolt",
+    "Arcane Missiles",
+    "Ice Lance",
+    "Arcane Blast"
+   ],
+   "min_share": 0.6,
+   "note": "Missile Barrage with Shatter and Fingers of Frost"
+  },
+  "Hybrid Fire/Frost": {
+   "required": [
+    "Frostfire Bolt"
+   ],
+   "core": [
+    "Frostfire Bolt"
+   ],
+   "min_share": 0.3,
+   "note": "Frostfire: built around Frostfire Bolt (trained at 40; Frostbolt before); about a third of the damage, Ice Lance and Fire Blast the rest"
+  }
  },
  "paladin": {
-  "Retribution": {"required": ["Judgement"], "core": ["melee", "Seal of Command", "Seal of Righteousness", "Judgement", "Holy Strike", "Vengeance"], "min_share": 0.6},
-  "Protection": {"required": ["Holy Shield"], "core": ["Holy Shield", "Seal of Fury", "Judgement", "melee", "Consecration", "Seal of Righteousness"], "min_share": 0.6, "note": "sword and board (leveling: prot-leveling)"},
-  "Holy": {"required": ["Holy Shock"], "core": ["Holy Shock", "Exorcism", "Judgement", "melee", "Seal of Righteousness", "Seal of Command"], "min_share": 0.6, "note": "leveling: Holy Shock on cooldown"},
-  "Hybrid Holy/Retribution": {"required": ["Holy Shock"], "core": ["Holy Shock"], "min_share": 0.12, "note": "Shockadin: Holy Shock on cooldown, first in the priority (one spell on a cooldown cannot be most of the damage; 12% is about one Holy Shock per cooldown)"},
-  "Hybrid Protection/Retribution": {"required": ["Judgement"], "core": ["melee", "Seal of Command", "Seal of Righteousness", "Seal of Fury", "Judgement", "Holy Strike"], "min_share": 0.6, "note": "Prot-Ret"}
+  "Retribution": {
+   "required": [
+    "Judgement"
+   ],
+   "core": [
+    "melee",
+    "Seal of Command",
+    "Seal of Righteousness",
+    "Judgement",
+    "Holy Strike",
+    "Vengeance"
+   ],
+   "min_share": 0.6
+  },
+  "Protection": {
+   "required": [
+    "Holy Shield"
+   ],
+   "core": [
+    "Holy Shield",
+    "Seal of Fury",
+    "Judgement",
+    "melee",
+    "Consecration",
+    "Seal of Righteousness"
+   ],
+   "min_share": 0.6,
+   "note": "sword and board (leveling: prot-leveling)"
+  },
+  "Holy": {
+   "required": [
+    "Holy Shock"
+   ],
+   "core": [
+    "Holy Shock",
+    "Exorcism",
+    "Judgement",
+    "melee",
+    "Seal of Righteousness",
+    "Seal of Command"
+   ],
+   "min_share": 0.6,
+   "note": "leveling: Holy Shock on cooldown"
+  },
+  "Hybrid Holy/Retribution": {
+   "required": [
+    "Holy Shock"
+   ],
+   "core": [
+    "Holy Shock"
+   ],
+   "min_share": 0.12,
+   "note": "Shockadin: Holy Shock on cooldown, first in the priority (one spell on a cooldown cannot be most of the damage; 12% is about one Holy Shock per cooldown)"
+  },
+  "Hybrid Protection/Retribution": {
+   "required": [
+    "Judgement"
+   ],
+   "core": [
+    "melee",
+    "Seal of Command",
+    "Seal of Righteousness",
+    "Seal of Fury",
+    "Judgement",
+    "Holy Strike"
+   ],
+   "min_share": 0.6,
+   "note": "Prot-Ret"
+  }
  },
  "priest": {
-  "Shadow": {"required": ["Shadow Word: Pain", "Mind Blast", "Mind Flay"], "core": ["Shadow Word: Pain", "Mind Blast", "Mind Flay", "Devouring Plague"], "min_share": 0.6, "note": "the wand is not Shadow"},
-  "Holy": {"required": ["Smite", "Holy Fire"], "core": ["Smite", "Holy Fire"], "min_share": 0.4, "note": "leveling as Holy: Smite and Holy Fire, not a wand rotation"},
-  "Discipline": {"required": ["Penance", "Smite"], "core": ["Penance", "Smite", "Holy Fire", "Mind Blast"], "min_share": 0.4, "note": "leveling as Discipline: Penance and Smite"},
-  "Hybrid Discipline/Holy": {"required": ["Smite", "Holy Fire"], "core": ["Smite", "Holy Fire"], "min_share": 0.5, "note": "Smite priest"},
-  "Hybrid Discipline/Shadow": {"required": ["Shadow Word: Pain", "Mind Flay"], "core": ["Shadow Word: Pain", "Mind Blast", "Mind Flay", "Devouring Plague"], "min_share": 0.5},
-  "Hybrid Holy/Shadow": {"required": ["Shadow Word: Pain", "Holy Fire"], "core": ["Shadow Word: Pain", "Mind Blast", "Mind Flay", "Holy Fire", "Smite"], "min_share": 0.5}
+  "Shadow": {
+   "required": [
+    "Shadow Word: Pain",
+    "Mind Blast",
+    "Mind Flay"
+   ],
+   "core": [
+    "Shadow Word: Pain",
+    "Mind Blast",
+    "Mind Flay",
+    "Devouring Plague"
+   ],
+   "min_share": 0.6,
+   "note": "the wand is not Shadow"
+  },
+  "Holy": {
+   "required": [
+    "Smite",
+    "Holy Fire"
+   ],
+   "core": [
+    "Smite",
+    "Holy Fire"
+   ],
+   "min_share": 0.4,
+   "note": "leveling as Holy: Smite and Holy Fire, not a wand rotation"
+  },
+  "Discipline": {
+   "required": [
+    "Penance",
+    "Smite"
+   ],
+   "core": [
+    "Penance",
+    "Smite",
+    "Holy Fire",
+    "Mind Blast"
+   ],
+   "min_share": 0.4,
+   "note": "leveling as Discipline: Penance and Smite"
+  },
+  "Hybrid Discipline/Holy": {
+   "required": [
+    "Smite",
+    "Holy Fire"
+   ],
+   "core": [
+    "Smite",
+    "Holy Fire"
+   ],
+   "min_share": 0.5,
+   "note": "Smite priest"
+  },
+  "Hybrid Discipline/Shadow": {
+   "required": [
+    "Shadow Word: Pain",
+    "Mind Flay"
+   ],
+   "core": [
+    "Shadow Word: Pain",
+    "Mind Blast",
+    "Mind Flay",
+    "Devouring Plague"
+   ],
+   "min_share": 0.5
+  },
+  "Hybrid Holy/Shadow": {
+   "required": [
+    "Shadow Word: Pain",
+    "Holy Fire"
+   ],
+   "core": [
+    "Shadow Word: Pain",
+    "Mind Blast",
+    "Mind Flay",
+    "Holy Fire",
+    "Smite"
+   ],
+   "min_share": 0.5
+  }
  },
  "rogue": {
-  "Assassination": {"required": ["Mutilate"], "core": ["melee", "Mutilate", "Eviscerate", "Venom", "Rupture", "Deadly Poison", "Instant Poison"], "min_share": 0.6, "note": "Mutilate with daggers"},
-  "Combat": {"required": ["Sinister Strike"], "core": ["melee", "Sinister Strike", "Eviscerate", "Blade Flurry"], "min_share": 0.7},
-  "Subtlety": {"required": ["Hemorrhage"], "core": ["melee", "Hemorrhage", "Ghostly Strike", "Ambush", "Eviscerate"], "min_share": 0.6, "note": "Hemorrhage as the builder"},
-  "Hybrid Assassination/Combat": {"required": ["Backstab"], "core": ["melee", "Backstab", "Eviscerate"], "min_share": 0.6, "note": "Daggers (split)"},
-  "Hybrid Combat/Subtlety": {"required": ["Ghostly Strike"], "core": ["melee", "Sinister Strike", "Hemorrhage", "Ghostly Strike", "Ambush", "Eviscerate"], "min_share": 0.6, "note": "Combat-Subtlety: Subtlety's Ghostly Strike and openers"}
+  "Assassination": {
+   "required": [
+    "Mutilate"
+   ],
+   "core": [
+    "melee",
+    "Mutilate",
+    "Eviscerate",
+    "Venom",
+    "Rupture",
+    "Deadly Poison",
+    "Instant Poison"
+   ],
+   "min_share": 0.6,
+   "note": "Mutilate with daggers"
+  },
+  "Combat": {
+   "required": [],
+   "core": [
+    "melee",
+    "Sinister Strike",
+    "Backstab",
+    "Eviscerate",
+    "Blade Flurry"
+   ],
+   "min_share": 0.7,
+   "note": "Combat's weapon talents: swords play Sinister Strike, daggers Backstab"
+  },
+  "Subtlety": {
+   "required": [
+    "Hemorrhage"
+   ],
+   "core": [
+    "melee",
+    "Hemorrhage",
+    "Ghostly Strike",
+    "Ambush",
+    "Eviscerate"
+   ],
+   "min_share": 0.6,
+   "note": "Hemorrhage as the builder"
+  },
+  "Hybrid Assassination/Combat": {
+   "required": [],
+   "core": [
+    "melee",
+    "Backstab",
+    "Mutilate",
+    "Sinister Strike",
+    "Eviscerate"
+   ],
+   "min_share": 0.6,
+   "note": "Daggers (split)"
+  },
+  "Hybrid Combat/Subtlety": {
+   "required": [
+    "Ghostly Strike"
+   ],
+   "core": [
+    "melee",
+    "Sinister Strike",
+    "Hemorrhage",
+    "Ghostly Strike",
+    "Ambush",
+    "Eviscerate"
+   ],
+   "min_share": 0.6,
+   "note": "Combat-Subtlety: Subtlety's Ghostly Strike and openers"
+  }
  },
  "shaman": {
-  "Elemental": {"required": ["Lightning Bolt"], "core": ["Lightning Bolt", "Chain Lightning", "Lava Burst", "Earth Shock", "Flame Shock"], "min_share": 0.6},
-  "Enhancement": {"required": ["Stormstrike"], "core": ["melee", "Stormstrike", "Windfury Weapon", "Flametongue Weapon", "Earth Shock", "Flame Shock"], "min_share": 0.6},
-  "Hybrid Elemental/Enhancement": {"required": ["Lightning Bolt"], "core": ["Lightning Bolt", "Chain Lightning", "Lava Burst", "Earth Shock", "Flame Shock"], "min_share": 0.5,
-                                   "modes": {"raid": {"required": ["Stormstrike"], "core": ["melee", "Stormstrike", "Windfury Weapon", "Earth Shock", "Flame Shock"], "min_share": 0.6}},
-                                   "note": "leveling: a Lightning Bolt caster; raid: a melee shaman (spec_modes.HYBRID_NAMES)"}
+  "Elemental": {
+   "required": [
+    "Lightning Bolt"
+   ],
+   "core": [
+    "Lightning Bolt",
+    "Chain Lightning",
+    "Lava Burst",
+    "Earth Shock",
+    "Flame Shock"
+   ],
+   "min_share": 0.6
+  },
+  "Enhancement": {
+   "required": [
+    "Stormstrike"
+   ],
+   "core": [
+    "melee",
+    "Stormstrike",
+    "Windfury Weapon",
+    "Flametongue Weapon",
+    "Earth Shock",
+    "Flame Shock"
+   ],
+   "min_share": 0.6
+  },
+  "Hybrid Elemental/Enhancement": {
+   "required": [
+    "Lightning Bolt"
+   ],
+   "core": [
+    "Lightning Bolt",
+    "Chain Lightning",
+    "Lava Burst",
+    "Earth Shock",
+    "Flame Shock"
+   ],
+   "min_share": 0.5,
+   "modes": {
+    "raid": {
+     "required": [
+      "Stormstrike"
+     ],
+     "core": [
+      "melee",
+      "Stormstrike",
+      "Windfury Weapon",
+      "Earth Shock",
+      "Flame Shock"
+     ],
+     "min_share": 0.45
+    }
+   },
+   "note": "leveling: a Lightning Bolt caster; raid: a melee shaman (spec_modes.HYBRID_NAMES)"
+  }
  },
  "warlock": {
-  "Affliction": {"required": ["Corruption", "Bane of Agony"], "core": ["Corruption", "Bane of Agony", "Siphon Life", "Drain Life", "Wrack", "Drain Soul"], "min_share": 0.5},
-  "Demonology": {"required": [], "core": ["pet"], "min_share": 0.3, "note": "the demon (Demonic Brand, Soul Link, Demonic Knowledge) carries the spec"},
-  "Destruction": {"required": [], "core": ["Shadow Bolt", "Immolate", "Conflagrate", "Incinerate", "Searing Pain", "Soul Fire", "Shadowburn"], "min_share": 0.6, "note": "direct Destruction spells (Shadow Bolt or the fire spells)"},
-  "Hybrid Affliction/Destruction": {"required": ["Shadow Bolt"], "core": ["Shadow Bolt"], "min_share": 0.35, "note": "Shadow Bolt hybrid"},
-  "Hybrid Affliction/Demonology": {"required": ["Corruption"], "core": ["Corruption", "Bane of Agony", "Siphon Life", "Drain Life", "Wrack", "pet"], "min_share": 0.5, "note": "dots with a demon tanking"}
+  "Affliction": {
+   "required": [
+    "Corruption",
+    "Bane of Agony"
+   ],
+   "core": [
+    "Corruption",
+    "Bane of Agony",
+    "Siphon Life",
+    "Drain Life",
+    "Wrack",
+    "Drain Soul"
+   ],
+   "min_share": 0.5,
+   "modes": {
+    "raid": {
+     "required": [
+      "Corruption",
+      "Bane of Agony"
+     ],
+     "core": [
+      "Corruption",
+      "Bane of Agony",
+      "Siphon Life",
+      "Drain Life",
+      "Wrack",
+      "Drain Soul"
+     ],
+     "min_share": 0.3
+    }
+   },
+   "note": "dots; in a raid a Shadow Bolt filler (Nightfall) carries half the damage, so the dots' floor is 30% there"
+  },
+  "Demonology": {
+   "required": [],
+   "core": [
+    "pet"
+   ],
+   "min_share": 0.3,
+   "note": "the demon (Demonic Brand, Soul Link, Demonic Knowledge) carries the spec while leveling; in a raid the brand's demon damage is about a tenth (to settle with the user)",
+   "modes": {
+    "raid": {
+     "required": [],
+     "core": [
+      "pet"
+     ],
+     "min_share": 0.1
+    }
+   }
+  },
+  "Destruction": {
+   "required": [],
+   "core": [
+    "Shadow Bolt",
+    "Immolate",
+    "Conflagrate",
+    "Incinerate",
+    "Searing Pain",
+    "Soul Fire",
+    "Shadowburn"
+   ],
+   "min_share": 0.6,
+   "note": "direct Destruction spells (Shadow Bolt or the fire spells)"
+  },
+  "Hybrid Affliction/Destruction": {
+   "required": [
+    "Shadow Bolt"
+   ],
+   "core": [
+    "Shadow Bolt"
+   ],
+   "min_share": 0.35,
+   "note": "Shadow Bolt hybrid"
+  },
+  "Hybrid Affliction/Demonology": {
+   "required": [
+    "Corruption"
+   ],
+   "core": [
+    "Corruption",
+    "Bane of Agony",
+    "Siphon Life",
+    "Drain Life",
+    "Wrack",
+    "pet"
+   ],
+   "min_share": 0.5,
+   "note": "dots with a demon tanking"
+  }
  },
  "warrior": {
-  "Arms": {"required": ["Mortal Strike"], "core": ["melee", "Mortal Strike", "Overpower", "Slam", "Execute", "Rend", "Whirlwind", "Heroic Strike", "Deep Wounds"], "min_share": 0.8},
-  "Fury": {"required": ["Bloodthirst"], "core": ["melee", "Bloodthirst", "Whirlwind", "Heroic Strike", "Execute", "Slam"], "min_share": 0.8},
-  "Protection": {"required": ["Shield Slam"], "core": ["melee", "Shield Slam", "Revenge", "Heroic Strike", "Thunder Clap"], "min_share": 0.7}
+  "Arms": {
+   "required": [
+    "Mortal Strike"
+   ],
+   "core": [
+    "melee",
+    "Mortal Strike",
+    "Overpower",
+    "Slam",
+    "Execute",
+    "Rend",
+    "Whirlwind",
+    "Heroic Strike",
+    "Deep Wounds"
+   ],
+   "min_share": 0.8
+  },
+  "Fury": {
+   "required": [
+    "Bloodthirst"
+   ],
+   "core": [
+    "melee",
+    "Bloodthirst",
+    "Whirlwind",
+    "Heroic Strike",
+    "Execute",
+    "Slam"
+   ],
+   "min_share": 0.8
+  },
+  "Protection": {
+   "required": [
+    "Shield Slam"
+   ],
+   "core": [
+    "melee",
+    "Shield Slam",
+    "Revenge",
+    "Heroic Strike",
+    "Thunder Clap"
+   ],
+   "min_share": 0.7
+  }
  }
 }
