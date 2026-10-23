@@ -1,12 +1,8 @@
 {
- "veto": {
-  "Hammer of Wrath": {
-   "off": true
-  }
- },
+ "drink_below": 0.15,
  "class": "paladin",
  "spec": "holy-leveling",
- "build": "shockadin-open-leveling",
+ "build": "paladin/research/leveling/fightlab/candidates/sig-holy-shock-start.json",
  "levels": [
   20,
   30,
@@ -14,52 +10,63 @@
   50,
   60
  ],
- "date": "2026-10-19",
+ "date": "2026-10-23",
+ "signature": {
+  "required": [
+   "Holy Shock"
+  ],
+  "build_spec": "Holy",
+  "dropped_saved_rules": [],
+  "core_share_before": 0.7404379678914385,
+  "core_share_after": 0.7389053487121515,
+  "min_share": 0.6,
+  "floor_reached": null
+ },
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "never cast Hammer of Wrath",
+   "change": "drink below 15% mana",
    "rule": [
-    "off",
-    "Hammer of Wrath",
-    true
+    "drink_below",
+    null,
+    0.15
    ],
-   "gain_seed1": 0.033356441907644085,
-   "gain_seed2": 0.024435324511365653
+   "gain_seed1": 0.004948266504606669,
+   "gain_seed2": 0.004039300904188137
   }
  ],
- "weighted_before": 28.75745754683944,
- "weighted_after": 28.034565468787953,
+ "weighted_before": 34.711650395178076,
+ "weighted_after": 34.5991955422358,
  "per_level": {
   "20": {
-   "before": 19.50739999988989,
-   "after": 19.50739999988989,
+   "before": 21.882366666529787,
+   "after": 21.882366666529787,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 23.455866666582164,
-   "after": 23.455866666582164,
+   "before": 25.45736134889397,
+   "after": 25.459906490897303,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 27.50088442678924,
-   "after": 27.50088442678924,
+   "before": 32.058466762509646,
+   "after": 32.05979815216333,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 30.135342489626133,
-   "after": 28.739945679674683,
+   "before": 38.915124587387076,
+   "after": 38.70314796976488,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 34.18108346366248,
-   "after": 32.934273878450405,
+   "before": 41.881116756141004,
+   "after": 41.68075426358113,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }

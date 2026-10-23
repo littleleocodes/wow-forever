@@ -15,7 +15,18 @@
   50,
   60
  ],
- "date": "2026-10-19",
+ "date": "2026-10-23",
+ "signature": {
+  "required": [
+   "Judgement"
+  ],
+  "build_spec": "Retribution",
+  "dropped_saved_rules": [],
+  "core_share_before": 0.7734659755475337,
+  "core_share_after": 0.8692546991672637,
+  "min_share": 0.6,
+  "floor_reached": null
+ },
  "fights": 600,
  "confirm": 3000,
  "changes": [

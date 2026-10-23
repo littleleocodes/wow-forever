@@ -1,0 +1,393 @@
+{
+ "id": "fl-holy-holy-leveling",
+ "allocation": {
+  "Holy": [
+   [
+    "Divine Strength",
+    5
+   ],
+   [
+    "Divine Intellect",
+    2
+   ],
+   [
+    "Unyielding Faith",
+    2
+   ],
+   [
+    "Reverence",
+    3
+   ],
+   [
+    "Purifying Power",
+    2
+   ],
+   [
+    "Illumination",
+    5
+   ],
+   [
+    "Divine Favor",
+    1
+   ],
+   [
+    "Holy Power",
+    5
+   ],
+   [
+    "Holy Shock",
+    1
+   ],
+   [
+    "Divine Precision",
+    1
+   ],
+   [
+    "Improved Seals",
+    3
+   ]
+  ],
+  "Protection": [
+   [
+    "Toughness",
+    1
+   ],
+   [
+    "Redoubt",
+    5
+   ],
+   [
+    "Guardian's Favor",
+    1
+   ],
+   [
+    "Precision",
+    1
+   ]
+  ],
+  "Retribution": [
+   [
+    "Benediction",
+    5
+   ],
+   [
+    "Conviction",
+    5
+   ],
+   [
+    "Improved Judgement",
+    1
+   ],
+   [
+    "Sanctified Judgement",
+    2
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Retribution",
+   "talent": "Benediction",
+   "points": 5
+  },
+  {
+   "levels": "15-19",
+   "tree": "Retribution",
+   "talent": "Conviction",
+   "points": 5
+  },
+  {
+   "levels": "20-21",
+   "tree": "Retribution",
+   "talent": "Sanctified Judgement",
+   "points": 2
+  },
+  {
+   "levels": "22",
+   "tree": "Retribution",
+   "talent": "Improved Judgement",
+   "points": 1
+  },
+  {
+   "levels": "23-27",
+   "tree": "Holy",
+   "talent": "Divine Strength",
+   "points": 5
+  },
+  {
+   "levels": "28-30",
+   "tree": "Holy",
+   "talent": "Improved Seals",
+   "points": 3
+  },
+  {
+   "levels": "31-32",
+   "tree": "Holy",
+   "talent": "Divine Intellect",
+   "points": 2
+  },
+  {
+   "levels": "33-35",
+   "tree": "Holy",
+   "talent": "Reverence",
+   "points": 3
+  },
+  {
+   "levels": "36",
+   "tree": "Protection",
+   "talent": "Toughness",
+   "points": 1
+  },
+  {
+   "levels": "37-40",
+   "tree": "Protection",
+   "talent": "Redoubt",
+   "points": 4
+  },
+  {
+   "levels": "41",
+   "tree": "Protection",
+   "talent": "Precision",
+   "points": 1
+  },
+  {
+   "levels": "42-43",
+   "tree": "Holy",
+   "talent": "Purifying Power",
+   "points": 2
+  },
+  {
+   "levels": "44-45",
+   "tree": "Holy",
+   "talent": "Unyielding Faith",
+   "points": 2
+  },
+  {
+   "levels": "46-48",
+   "tree": "Holy",
+   "talent": "Illumination",
+   "points": 3
+  },
+  {
+   "levels": "49",
+   "tree": "Holy",
+   "talent": "Holy Shock",
+   "points": 1
+  },
+  {
+   "levels": "50",
+   "tree": "Holy",
+   "talent": "Divine Precision",
+   "points": 1
+  },
+  {
+   "levels": "51-52",
+   "tree": "Holy",
+   "talent": "Illumination",
+   "points": 2
+  },
+  {
+   "levels": "53",
+   "tree": "Holy",
+   "talent": "Divine Favor",
+   "points": 1
+  },
+  {
+   "levels": "54-58",
+   "tree": "Holy",
+   "talent": "Holy Power",
+   "points": 5
+  },
+  {
+   "levels": "59",
+   "tree": "Protection",
+   "talent": "Redoubt",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Protection",
+   "talent": "Guardian's Favor",
+   "points": 1
+  }
+ ],
+ "search": {
+  "date": "2026-10-23",
+  "spec": "holy-leveling",
+  "model": "ret-dps",
+  "tree": "Holy",
+  "start": "holy-leveling",
+  "starts": {
+   "holy-leveling": 91.3290588961289
+  },
+  "moves": [
+   {
+    "round": 1,
+    "move": "1 Spiritual Focus + 1 Infusion of Light -> 1 Holy Shock + 1 Divine Precision",
+    "gain_seed1": 0.4746828330793398,
+    "gain_seed2": 0.47220957634018434
+   },
+   {
+    "round": 2,
+    "move": "3 points Healing Light -> Improved Seals",
+    "gain_seed1": 0.04747065775486803,
+    "gain_seed2": 0.04375521630359558
+   },
+   {
+    "round": 3,
+    "move": "3 points Divine Intellect -> Conviction",
+    "gain_seed1": 0.01924954140144086,
+    "gain_seed2": 0.020104488723657665
+   },
+   {
+    "round": 4,
+    "move": "3 points Anticipation -> Precision",
+    "gain_seed1": 0.0139557317466249,
+    "gain_seed2": 0.018729643915166183
+   },
+   {
+    "round": 5,
+    "move": "1 point Improved Righteous Fury -> Improved Judgement",
+    "gain_seed1": 0.017528794606090692,
+    "gain_seed2": 0.012578790791166194
+   },
+   {
+    "round": 6,
+    "move": "1 point Holy Conduit -> Conviction",
+    "gain_seed1": 0.009524417317405609,
+    "gain_seed2": 0.008683931340731976
+   },
+   {
+    "round": 7,
+    "move": "1 point Sacred Duty -> Conviction",
+    "gain_seed1": 0.0030434266496884854,
+    "gain_seed2": 0.005757919567117686
+   },
+   {
+    "round": 8,
+    "move": "2 points Precision -> Sanctified Judgement",
+    "gain_seed1": 0.01969382521509999,
+    "gain_seed2": 0.016404492881274324
+   }
+  ],
+  "incumbent": "holy-leveling",
+  "race": {
+   "incumbent": [
+    36.69827545790354,
+    {
+     "20": 22.26289999987543,
+     "30": 28.03699243266655,
+     "40": 35.655571990641974,
+     "50": 38.109032153034214,
+     "60": 45.36021385543023
+    }
+   ],
+   "search": [
+    34.54678395730572,
+    {
+     "20": 21.882366666529787,
+     "30": 25.45736134889397,
+     "40": 32.058466762509646,
+     "50": 38.12456174394582,
+     "60": 41.990364332767534
+    }
+   ],
+   "gain": 0.05862650148413073,
+   "all": {
+    "holy-leveling": [
+     36.69827545790354,
+     {
+      "20": 22.26289999987543,
+      "30": 28.03699243266655,
+      "40": 35.655571990641974,
+      "50": 38.109032153034214,
+      "60": 45.36021385543023
+     }
+    ]
+   }
+  },
+  "fights": 800,
+  "confirm": 3000,
+  "signature": {
+   "search": {
+    "spec": "Holy",
+    "rotation": "holy-leveling",
+    "date": "2026-10-23",
+    "fights": 600,
+    "split": "30/8/13",
+    "ok": false,
+    "verdict": "FAIL: Holy Shock 0.43/kill at 50 (needs 0.50)",
+    "core_share": 0.8488,
+    "min_share": 0.6,
+    "required": [
+     "Holy Shock"
+    ],
+    "core": [
+     "Holy Shock",
+     "Exorcism",
+     "Judgement",
+     "melee",
+     "Seal of Righteousness",
+     "Seal of Command"
+    ],
+    "missing_talents": [],
+    "uncast": [
+     [
+      "Holy Shock",
+      50,
+      0.428,
+      0.5
+     ]
+    ],
+    "casts": {
+     "Holy Shock": {
+      "20": 0.0,
+      "30": 0.0,
+      "40": 0.0,
+      "50": 0.43,
+      "60": 0.57
+     }
+    }
+   },
+   "incumbents": {
+    "holy-leveling": {
+     "spec": "Holy",
+     "rotation": "holy-leveling",
+     "date": "2026-10-23",
+     "fights": 600,
+     "split": "33/12/6",
+     "ok": false,
+     "verdict": "FAIL: lacks Holy Shock",
+     "core_share": 0.8052,
+     "min_share": 0.6,
+     "required": [
+      "Holy Shock"
+     ],
+     "core": [
+      "Holy Shock",
+      "Exorcism",
+      "Judgement",
+      "melee",
+      "Seal of Righteousness",
+      "Seal of Command"
+     ],
+     "missing_talents": [
+      "Holy Shock"
+     ],
+     "uncast": [],
+     "casts": {
+      "Holy Shock": {
+       "20": 0.0,
+       "30": 0.0,
+       "40": 0.0,
+       "50": 0.0,
+       "60": 0.0
+      }
+     }
+    }
+   },
+   "incumbent_passes": false
+  }
+ }
+}

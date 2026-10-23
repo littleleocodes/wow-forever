@@ -15,67 +15,13 @@
   "bis": {
    "entry": "mm-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-bis.gear.json",
-   "date": "2026-10-22",
-   "chosen": "keep-sets-and-effects",
-   "ilvl": 64.8,
+   "date": "2026-10-23",
+   "chosen": "all-slots",
+   "ilvl": 64.6,
    "trinkets": [
-    "Adaptive Combat Assistant",
-    "Jewel of the Guard Captain"
+    "Shard of the Splithooves",
+    "Everlook Delivery Bot"
    ],
-   "trinket_screen": {
-    "Adaptive Combat Assistant (272437)": 1.0048,
-    "Jewel of the Guard Captain (270225)": 1.0035,
-    "Everlook Delivery Bot (274760)": 1.0034,
-    "Weakness Analyzer (272438)": 1.0024,
-    "Rune of the Guard Captain (19120)": 1.0023,
-    "Cleansed Vilebranch Medallion (270275)": 1.0023,
-    "Shard of the Splithooves (10659)": 1.0021,
-    "Molten Heart of the Mountain (249470)": 1.0019,
-    "Enriched Seal (271903)": 1.0012,
-    "Darkspear Voodoo Seal (272061)": 1.0012,
-    "Ankh of Life (1713)": 1.0,
-    "Alchemist's Stone (13503)": 0.9993,
-    "Serenity Field (272439)": 0.9988,
-    "Dog Whistle (3456)": 0.9985,
-    "Minor Recombobulator (4381)": 0.9985,
-    "Gnomish Universal Remote (7506)": 0.9985,
-    "Demon's Blood (10779)": 0.9985,
-    "Smoking Heart of the Mountain (11811)": 0.9985,
-    "Heart of the Scale (13164)": 0.9985,
-    "Arcanite Dragonling (16022)": 0.9985,
-    "Stormpike Insignia Rank 6 (17904)": 0.9985,
-    "Gyrofreeze Ice Reflector (18634)": 0.9985,
-    "Major Recombobulator (18637)": 0.9985,
-    "Hyper-Radiant Flame Reflector (18638)": 0.9985,
-    "Ultra-Flash Shadow Reflector (18639)": 0.9985,
-    "Essence of the Pure Flame (18815)": 0.9985,
-    "Talisman of Ephemeral Power (18820)": 0.9985,
-    "Arena Grand Master (19024)": 0.9985,
-    "Talisman of Arathor (20071)": 0.9985,
-    "Defiler's Talisman (20072)": 0.9985,
-    "Defiler's Talisman (21115)": 0.9985,
-    "Defiler's Talisman (21116)": 0.9985,
-    "Talisman of Arathor (21117)": 0.9985,
-    "Talisman of Arathor (21118)": 0.9985,
-    "Talisman of Arathor (21119)": 0.9985,
-    "Defiler's Talisman (21120)": 0.9985,
-    "Defender of the Timbermaw (21326)": 0.9985,
-    "Frozen Heart of the Mountain (249469)": 0.9985,
-    "Dormant Heart of the Mountain (249473)": 0.9985,
-    "EZ-Thro Field Transporter: Gadgetzan (260819)": 0.9985,
-    "SAF-T Emergency Ripper: Everlook (260820)": 0.9985,
-    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 0.9985,
-    "Gnomish Poultryizer (260824)": 0.9985,
-    "Volunteer's Lucky Seal (271904)": 0.9985,
-    "Volunteer's Lucky Seal (271906)": 0.9985,
-    "Relentless Raider's Seal (272060)": 0.9985,
-    "Relentless Raider's Seal (272062)": 0.9985,
-    "Defender's Grip Stabilizer (272440)": 0.9985,
-    "Everlook Pathcarver (274759)": 0.9985,
-    "Parachute-Priest Pager (274761)": 0.9985,
-    "Enriched Seal (271905)": 0.998,
-    "Darkspear Voodoo Seal (272059)": 0.998
-   },
    "names": [
     "Black Dragonscale Helm",
     "Onyxia Tooth Pendant",
@@ -89,111 +35,96 @@
     "Beaststalker's Boots",
     "Signet Ring of the Bronze Dragonflight",
     "Band of Sulfuras",
-    "Adaptive Combat Assistant",
-    "Jewel of the Guard Captain",
+    "Shard of the Splithooves",
+    "Everlook Delivery Bot",
     "Thorium Poleaxe",
     null,
     "Rhok'delar, Longbow of the Ancient Keepers"
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 1.0
+    "keep-sets-and-effects": 1.0,
+    "previous": 0.9967190837764192,
+    "previous+trinkets": 1.0
    },
    "confirm_seed2": {
-    "keep-sets-and-effects": 1.0,
-    "all-slots": 1.0
+    "previous": 1.0,
+    "all-slots": 1.0041101053535877
    },
    "weights": {
-    "PseudoStatRangedDps": 1.068,
-    "StatAgility": 0.2909,
-    "StatArmorPenetration": 0.0192,
-    "StatCritRating": 0.2803,
-    "StatExpertiseRating": 0.1017,
-    "StatHasteRating": 0.0675,
-    "StatHitRating": 0.1316,
-    "StatIntellect": 0.3086,
-    "StatRangedAttackPower": 0.1083,
-    "StatSpellPiercing": 0.1347,
-    "StatSpirit": 0.0371
+    "PseudoStatRangedDps": 1.0971,
+    "StatAgility": 0.2985,
+    "StatArmorPenetration": 0.0198,
+    "StatCritRating": 0.2922,
+    "StatExpertiseRating": 0.1038,
+    "StatHasteRating": 0.114,
+    "StatHitRating": 0.1288,
+    "StatIntellect": 0.315,
+    "StatRangedAttackPower": 0.1104,
+    "StatSpellPiercing": 0.137,
+    "StatSpirit": 0.0631
    },
    "evaluated_on": [
     "mm-raid: ml winner"
    ],
-   "replaced": [
-    {
-     "slot": 2,
-     "from": "Giantstalker's Epaulets (not in the database)",
-     "to": "Theramore Pauldrons"
-    },
-    {
-     "slot": 3,
-     "from": "Arcanoweave Cloak",
-     "to": "Earthweave Cloak"
-    },
-    {
-     "slot": 5,
-     "from": "Giantstalker's Bracers (not in the database)",
-     "to": "Forest Stalker's Bracers"
-    },
-    {
-     "slot": 6,
-     "from": "Beaststalker's Gloves",
-     "to": "Theramore Handwraps"
-    },
-    {
-     "slot": 7,
-     "from": "Giantstalker's Belt (not in the database)",
-     "to": "Highlander's Mail Girdle"
-    },
-    {
-     "slot": 8,
-     "from": "Dragonstalker's Legguards (not in the database)",
-     "to": "Outrider's Chain Leggings"
-    },
-    {
-     "slot": 9,
-     "from": "Giantstalker's Boots (not in the database)",
-     "to": "Beaststalker's Boots"
-    },
-    {
-     "slot": 10,
-     "from": "Band of Accuria (not in the database)",
-     "to": "Signet Ring of the Bronze Dragonflight"
-    },
-    {
-     "slot": 12,
-     "from": "Blackhand's Breadth (not in the database)",
-     "to": "Adaptive Combat Assistant"
-    },
-    {
-     "slot": 13,
-     "from": "Royal Seal of Eldre'Thalas (not in the database)",
-     "to": "Jewel of the Guard Captain"
-    },
-    {
-     "slot": 14,
-     "from": "Barbarous Blade (not in the database)",
-     "to": "Thorium Poleaxe"
-    }
+   "commit": "30f67f5d2"
+  },
+  "bis2": true,
+  "prebis": {
+   "entry": "mm-raid",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-prebis.gear.json",
+   "date": "2026-10-23",
+   "chosen": "previous",
+   "ilvl": 62.8,
+   "trinkets": [
+    "Rune of the Guard Captain",
+    "Cleansed Vilebranch Medallion"
    ],
-   "remade": {
-    "simulator": "wowsims/forever 09e739807",
-    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
-    "missing_before": [
-     "item:16848",
-     "item:16850",
-     "item:16851",
-     "item:16938",
-     "item:16849",
-     "item:17063",
-     "item:13965",
-     "item:18473",
-     "item:18520"
-    ],
-    "winner_of": "bis-dummy",
-    "talents_left_out": [],
-    "minutes": 3.1
-   }
+   "names": [
+    "Black Dragonscale Helm",
+    "Amulet of the Darkmoon",
+    "Theramore Pauldrons",
+    "Earthweave Cloak",
+    "Dawn Armor",
+    "Forest Stalker's Bracers",
+    "Beaststalker's Gloves",
+    "Highlander's Mail Girdle",
+    "Outrider's Chain Leggings",
+    "Beaststalker's Boots",
+    "Signet Ring of the Bronze Dragonflight",
+    "Channeler's Ring",
+    "Everlook Delivery Bot",
+    "Shard of the Splithooves",
+    "Thorium Poleaxe",
+    null,
+    "Premier High Warlord's Recurve"
+   ],
+   "race_seed1": {
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 1.0,
+    "previous": 1.000122330066233,
+    "previous+trinkets": 0.9955609513821507
+   },
+   "confirm_seed2": {
+    "previous": 1.0
+   },
+   "weights": {
+    "PseudoStatRangedDps": 1.0142,
+    "StatAgility": 0.2843,
+    "StatArmorPenetration": 0.0178,
+    "StatCritRating": 0.2742,
+    "StatExpertiseRating": 0.0965,
+    "StatHasteRating": 0.161,
+    "StatHitRating": 0.0019,
+    "StatIntellect": 0.3168,
+    "StatRangedAttackPower": 0.1061,
+    "StatSpellPiercing": 0.1413,
+    "StatSpirit": 0.0573
+   },
+   "evaluated_on": [
+    "mm-raid: ml winner (bis)"
+   ],
+   "commit": "30f67f5d2"
   }
  },
  "search": {
@@ -695,12 +626,1726 @@
    "simulated_builds": 5400,
    "simulated_fights": 6321000,
    "minutes": 8.1,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-bis.gear.json"
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-bis.gear.json",
+   "commit": "30f67f5d2"
+  },
+  "bis-dummy": {
+   "class": "hunter",
+   "spec": "Marksmanship",
+   "setting": "dummy",
+   "entry": "mm-raid",
+   "date": "2026-10-23",
+   "constraint": "Marksmanship 30+",
+   "protected": [],
+   "entries_screened": {
+    "mm-raid": 395.56,
+    "mm-lonewolf-raid": 369.06
+   },
+   "entries_searched": [
+    "mm-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Beast Mastery": [
+      [
+       "Deadly Aspects",
+       5
+      ],
+      [
+       "Focused Fire",
+       2
+      ],
+      [
+       "Improved Aspect of the Monkey",
+       1
+      ],
+      [
+       "Pathfinding",
+       2
+      ],
+      [
+       "Unleashed Fury",
+       5
+      ],
+      [
+       "Ferocity",
+       1
+      ]
+     ],
+     "Marksmanship": [
+      [
+       "Lethal Attacks",
+       5
+      ],
+      [
+       "Improved Stings",
+       3
+      ],
+      [
+       "Efficiency",
+       5
+      ],
+      [
+       "Careful Aim",
+       5
+      ],
+      [
+       "Improved Arcane Shot",
+       1
+      ],
+      [
+       "Trueshot Aura",
+       1
+      ],
+      [
+       "Mortal Shots",
+       5
+      ],
+      [
+       "Ranged Weapon Specialization",
+       5
+      ]
+     ],
+     "Survival": [
+      [
+       "Improved Tracking",
+       5
+      ]
+     ]
+    },
+    "split": "16/30/5",
+    "dps": 395.92,
+    "se": 0.0426,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "16/30/5",
+    "dps": 395.92,
+    "se": 0.0426,
+    "differs": [
+     [
+      "Endurance Training",
+      1
+     ],
+     [
+      "Pathfinding",
+      1
+     ],
+     [
+      "Pathfinding",
+      2
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        5
+       ],
+       [
+        "Focused Fire",
+        2
+       ],
+       [
+        "Improved Aspect of the Monkey",
+        1
+       ],
+       [
+        "Pathfinding",
+        2
+       ],
+       [
+        "Unleashed Fury",
+        5
+       ],
+       [
+        "Ferocity",
+        1
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Improved Stings",
+        3
+       ],
+       [
+        "Efficiency",
+        5
+       ],
+       [
+        "Careful Aim",
+        5
+       ],
+       [
+        "Improved Arcane Shot",
+        1
+       ],
+       [
+        "Trueshot Aura",
+        1
+       ],
+       [
+        "Mortal Shots",
+        5
+       ],
+       [
+        "Ranged Weapon Specialization",
+        5
+       ]
+      ],
+      "Survival": [
+       [
+        "Improved Tracking",
+        5
+       ]
+      ]
+     },
+     "split": "16/30/5",
+     "dps": 395.92,
+     "se": 0.0426
+    },
+    {
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        5
+       ],
+       [
+        "Endurance Training",
+        1
+       ],
+       [
+        "Focused Fire",
+        2
+       ],
+       [
+        "Improved Aspect of the Monkey",
+        1
+       ],
+       [
+        "Pathfinding",
+        1
+       ],
+       [
+        "Unleashed Fury",
+        5
+       ],
+       [
+        "Ferocity",
+        1
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Improved Stings",
+        3
+       ],
+       [
+        "Efficiency",
+        5
+       ],
+       [
+        "Careful Aim",
+        5
+       ],
+       [
+        "Improved Arcane Shot",
+        1
+       ],
+       [
+        "Trueshot Aura",
+        1
+       ],
+       [
+        "Mortal Shots",
+        5
+       ],
+       [
+        "Ranged Weapon Specialization",
+        5
+       ]
+      ],
+      "Survival": [
+       [
+        "Improved Tracking",
+        5
+       ]
+      ]
+     },
+     "split": "16/30/5",
+     "dps": 395.92,
+     "se": 0.0426
+    }
+   ],
+   "runs": [
+    {
+     "entry": "mm-raid",
+     "run": 1,
+     "simulated": 1191,
+     "best_screen": 395.93,
+     "best_split": "16/30/5",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 391,
+       "best": 395.56
+      },
+      {
+       "round": 1,
+       "simulated": 591,
+       "best": 395.93,
+       "predicted_top": 391.88
+      },
+      {
+       "round": 2,
+       "simulated": 791,
+       "best": 395.93,
+       "predicted_top": 394.0
+      },
+      {
+       "round": 3,
+       "simulated": 991,
+       "best": 395.93,
+       "predicted_top": 394.85
+      },
+      {
+       "round": 4,
+       "simulated": 1191,
+       "best": 395.93,
+       "predicted_top": 394.85
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      396.06,
+      396.06,
+      396.06,
+      396.06,
+      396.06,
+      396.06
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      395.8,
+      395.8,
+      395.8,
+      395.8,
+      395.8
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      395.92,
+      395.92
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 235,
+     "best_gap": 0.0003,
+     "best_move": "1 Improved Arcane Shot -> Barrage"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Lone Wolf",
+     "importance": 0.339
+    },
+    {
+     "feature": "Hawk Eye",
+     "importance": 0.1507
+    },
+    {
+     "feature": "Unleashed Fury",
+     "importance": 0.1494
+    },
+    {
+     "feature": "Improved Concussive Shot",
+     "importance": 0.1131
+    },
+    {
+     "feature": "Mortal Shots",
+     "importance": 0.0423
+    },
+    {
+     "feature": "Ranged Weapon Specialization",
+     "importance": 0.0423
+    },
+    {
+     "feature": "Beast Mastery points",
+     "importance": 0.023
+    },
+    {
+     "feature": "Improved Arcane Shot",
+     "importance": 0.0211
+    },
+    {
+     "feature": "Focused Fire",
+     "importance": 0.0198
+    },
+    {
+     "feature": "Deflection",
+     "importance": 0.0148
+    },
+    {
+     "feature": "Marksmanship points",
+     "importance": 0.0116
+    },
+    {
+     "feature": "Endurance Training",
+     "importance": 0.0104
+    }
+   ],
+   "simulated_builds": 2987,
+   "signature_check": {
+    "spec": "Marksmanship",
+    "ok": true,
+    "core_share": 0.7473,
+    "min_share": 0.6,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 3856000,
+   "minutes": 13.1,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-bis.gear.json",
+   "commit": "30f67f5d2"
+  },
+  "bis-raid": {
+   "class": "hunter",
+   "spec": "Marksmanship",
+   "setting": "raid",
+   "entry": "mm-raid",
+   "date": "2026-10-23",
+   "constraint": "Marksmanship 30+",
+   "protected": [],
+   "entries_screened": {
+    "mm-raid": 777.28,
+    "mm-lonewolf-raid": 754.54
+   },
+   "entries_searched": [
+    "mm-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Beast Mastery": [
+      [
+       "Deadly Aspects",
+       5
+      ],
+      [
+       "Focused Fire",
+       2
+      ]
+     ],
+     "Marksmanship": [
+      [
+       "Lethal Attacks",
+       5
+      ],
+      [
+       "Improved Stings",
+       3
+      ],
+      [
+       "Efficiency",
+       3
+      ],
+      [
+       "Careful Aim",
+       5
+      ],
+      [
+       "Rapid Killing",
+       2
+      ],
+      [
+       "Improved Arcane Shot",
+       5
+      ],
+      [
+       "Trueshot Aura",
+       1
+      ],
+      [
+       "Mortal Shots",
+       5
+      ],
+      [
+       "Rapid Recuperation",
+       2
+      ],
+      [
+       "Barrage",
+       2
+      ],
+      [
+       "Ranged Weapon Specialization",
+       5
+      ],
+      [
+       "Sniper Shot",
+       1
+      ]
+     ],
+     "Survival": [
+      [
+       "Improved Tracking",
+       5
+      ]
+     ]
+    },
+    "split": "7/39/5",
+    "dps": 777.16,
+    "se": 0.0793,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "7/39/5",
+    "dps": 776.09,
+    "se": 0.0815,
+    "differs": [
+     [
+      "Barrage",
+      2
+     ],
+     [
+      "Barrage",
+      3
+     ],
+     [
+      "Efficiency",
+      2
+     ],
+     [
+      "Efficiency",
+      3
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0014,
+   "finalists": [
+    {
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        5
+       ],
+       [
+        "Focused Fire",
+        2
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Improved Stings",
+        3
+       ],
+       [
+        "Efficiency",
+        3
+       ],
+       [
+        "Careful Aim",
+        5
+       ],
+       [
+        "Rapid Killing",
+        2
+       ],
+       [
+        "Improved Arcane Shot",
+        5
+       ],
+       [
+        "Trueshot Aura",
+        1
+       ],
+       [
+        "Mortal Shots",
+        5
+       ],
+       [
+        "Rapid Recuperation",
+        2
+       ],
+       [
+        "Barrage",
+        2
+       ],
+       [
+        "Ranged Weapon Specialization",
+        5
+       ],
+       [
+        "Sniper Shot",
+        1
+       ]
+      ],
+      "Survival": [
+       [
+        "Improved Tracking",
+        5
+       ]
+      ]
+     },
+     "split": "7/39/5",
+     "dps": 777.16,
+     "se": 0.0793
+    },
+    {
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        5
+       ],
+       [
+        "Focused Fire",
+        2
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Improved Stings",
+        3
+       ],
+       [
+        "Efficiency",
+        2
+       ],
+       [
+        "Careful Aim",
+        5
+       ],
+       [
+        "Rapid Killing",
+        2
+       ],
+       [
+        "Improved Arcane Shot",
+        5
+       ],
+       [
+        "Trueshot Aura",
+        1
+       ],
+       [
+        "Mortal Shots",
+        5
+       ],
+       [
+        "Rapid Recuperation",
+        2
+       ],
+       [
+        "Barrage",
+        3
+       ],
+       [
+        "Ranged Weapon Specialization",
+        5
+       ],
+       [
+        "Sniper Shot",
+        1
+       ]
+      ],
+      "Survival": [
+       [
+        "Improved Tracking",
+        5
+       ]
+      ]
+     },
+     "split": "7/39/5",
+     "dps": 776.09,
+     "se": 0.0815
+    }
+   ],
+   "runs": [
+    {
+     "entry": "mm-raid",
+     "run": 1,
+     "simulated": 1199,
+     "best_screen": 777.28,
+     "best_split": "7/39/5",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 399,
+       "best": 777.28
+      },
+      {
+       "round": 1,
+       "simulated": 599,
+       "best": 777.28,
+       "predicted_top": 769.35
+      },
+      {
+       "round": 2,
+       "simulated": 799,
+       "best": 777.28,
+       "predicted_top": 772.72
+      },
+      {
+       "round": 3,
+       "simulated": 999,
+       "best": 777.28,
+       "predicted_top": 773.96
+      },
+      {
+       "round": 4,
+       "simulated": 1199,
+       "best": 777.28,
+       "predicted_top": 773.04
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      776.83,
+      775.95,
+      775.0,
+      774.68,
+      774.23,
+      773.87
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      777.1,
+      776.05,
+      775.27,
+      775.08,
+      774.36
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      777.16,
+      776.09
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 380,
+     "best_gap": -0.0016,
+     "best_move": "1 Efficiency -> Barrage"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Lone Wolf",
+     "importance": 0.2819
+    },
+    {
+     "feature": "Improved Concussive Shot",
+     "importance": 0.1912
+    },
+    {
+     "feature": "Hawk Eye",
+     "importance": 0.1481
+    },
+    {
+     "feature": "Sniper Shot",
+     "importance": 0.147
+    },
+    {
+     "feature": "Mortal Shots",
+     "importance": 0.0573
+    },
+    {
+     "feature": "Marksmanship points",
+     "importance": 0.0363
+    },
+    {
+     "feature": "Ranged Weapon Specialization",
+     "importance": 0.0236
+    },
+    {
+     "feature": "Focused Fire",
+     "importance": 0.0188
+    },
+    {
+     "feature": "Deflection",
+     "importance": 0.0133
+    },
+    {
+     "feature": "Careful Aim",
+     "importance": 0.012
+    },
+    {
+     "feature": "Deadly Aspects",
+     "importance": 0.0112
+    },
+    {
+     "feature": "Survival points",
+     "importance": 0.0107
+    }
+   ],
+   "simulated_builds": 2748,
+   "signature_check": {
+    "spec": "Marksmanship",
+    "ok": true,
+    "core_share": 0.8227,
+    "min_share": 0.6,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 3907000,
+   "minutes": 20.7,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-bis.gear.json",
+   "commit": "30f67f5d2"
+  },
+  "prebis-dummy": {
+   "class": "hunter",
+   "spec": "Marksmanship",
+   "setting": "dummy",
+   "entry": "mm-raid",
+   "date": "2026-10-23",
+   "constraint": "Marksmanship 30+",
+   "protected": [],
+   "entries_screened": {
+    "mm-raid": 367.99,
+    "mm-lonewolf-raid": 349.77
+   },
+   "entries_searched": [
+    "mm-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Beast Mastery": [
+      [
+       "Deadly Aspects",
+       5
+      ],
+      [
+       "Focused Fire",
+       2
+      ],
+      [
+       "Pathfinding",
+       2
+      ],
+      [
+       "Improved Revive Pet",
+       1
+      ],
+      [
+       "Unleashed Fury",
+       5
+      ],
+      [
+       "Ferocity",
+       5
+      ],
+      [
+       "Bestial Discipline",
+       1
+      ]
+     ],
+     "Marksmanship": [
+      [
+       "Lethal Attacks",
+       5
+      ],
+      [
+       "Efficiency",
+       5
+      ],
+      [
+       "Careful Aim",
+       5
+      ],
+      [
+       "Improved Arcane Shot",
+       4
+      ],
+      [
+       "Trueshot Aura",
+       1
+      ],
+      [
+       "Mortal Shots",
+       5
+      ],
+      [
+       "Ranged Weapon Specialization",
+       5
+      ]
+     ],
+     "Survival": []
+    },
+    "split": "21/30/0",
+    "dps": 368.56,
+    "se": 0.0374,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "16/30/5",
+    "dps": 367.88,
+    "se": 0.0373,
+    "differs": [
+     [
+      "Bestial Discipline",
+      1
+     ],
+     [
+      "Ferocity",
+      1
+     ],
+     [
+      "Ferocity",
+      5
+     ],
+     [
+      "Improved Tracking",
+      5
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0018,
+   "finalists": [
+    {
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        5
+       ],
+       [
+        "Focused Fire",
+        2
+       ],
+       [
+        "Pathfinding",
+        2
+       ],
+       [
+        "Improved Revive Pet",
+        1
+       ],
+       [
+        "Unleashed Fury",
+        5
+       ],
+       [
+        "Ferocity",
+        5
+       ],
+       [
+        "Bestial Discipline",
+        1
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Efficiency",
+        5
+       ],
+       [
+        "Careful Aim",
+        5
+       ],
+       [
+        "Improved Arcane Shot",
+        4
+       ],
+       [
+        "Trueshot Aura",
+        1
+       ],
+       [
+        "Mortal Shots",
+        5
+       ],
+       [
+        "Ranged Weapon Specialization",
+        5
+       ]
+      ],
+      "Survival": []
+     },
+     "split": "21/30/0",
+     "dps": 368.56,
+     "se": 0.0374
+    },
+    {
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        5
+       ],
+       [
+        "Focused Fire",
+        2
+       ],
+       [
+        "Pathfinding",
+        2
+       ],
+       [
+        "Improved Revive Pet",
+        1
+       ],
+       [
+        "Unleashed Fury",
+        5
+       ],
+       [
+        "Ferocity",
+        1
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Efficiency",
+        5
+       ],
+       [
+        "Careful Aim",
+        5
+       ],
+       [
+        "Improved Arcane Shot",
+        4
+       ],
+       [
+        "Trueshot Aura",
+        1
+       ],
+       [
+        "Mortal Shots",
+        5
+       ],
+       [
+        "Ranged Weapon Specialization",
+        5
+       ]
+      ],
+      "Survival": [
+       [
+        "Improved Tracking",
+        5
+       ]
+      ]
+     },
+     "split": "16/30/5",
+     "dps": 367.88,
+     "se": 0.0373
+    }
+   ],
+   "runs": [
+    {
+     "entry": "mm-raid",
+     "run": 1,
+     "simulated": 1200,
+     "best_screen": 367.99,
+     "best_split": "16/30/5",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 400,
+       "best": 367.41
+      },
+      {
+       "round": 1,
+       "simulated": 600,
+       "best": 367.56,
+       "predicted_top": 365.64
+      },
+      {
+       "round": 2,
+       "simulated": 800,
+       "best": 367.56,
+       "predicted_top": 366.71
+      },
+      {
+       "round": 3,
+       "simulated": 1000,
+       "best": 367.99,
+       "predicted_top": 367.16
+      },
+      {
+       "round": 4,
+       "simulated": 1200,
+       "best": 367.99,
+       "predicted_top": 367.4
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      367.87,
+      367.87,
+      367.87,
+      367.87,
+      367.87,
+      367.87
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      367.74,
+      367.74,
+      367.74,
+      367.74,
+      367.74
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      367.88,
+      367.88
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      368.56,
+      367.88
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 224,
+     "best_gap": 0.0015,
+     "best_move": "5 Improved Tracking -> 4 Ferocity + 1 Bestial Discipline (tier chain)",
+     "raced": [
+      "5 Improved Tracking -> 4 Ferocity + 1 Bestial Discipline (tier chain)"
+     ],
+     "confirmed_gap": 0.0019
+    },
+    {
+     "neighbours": 180,
+     "best_gap": 0.0008,
+     "best_move": "4 Improved Arcane Shot -> 2 Rapid Killing + 2 Rapid Recuperation"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Lone Wolf",
+     "importance": 0.3082
+    },
+    {
+     "feature": "Unleashed Fury",
+     "importance": 0.2226
+    },
+    {
+     "feature": "Improved Concussive Shot",
+     "importance": 0.1158
+    },
+    {
+     "feature": "Hawk Eye",
+     "importance": 0.0819
+    },
+    {
+     "feature": "Focused Fire",
+     "importance": 0.0562
+    },
+    {
+     "feature": "Beast Mastery points",
+     "importance": 0.044
+    },
+    {
+     "feature": "Summon Hawk",
+     "importance": 0.0252
+    },
+    {
+     "feature": "Mortal Shots",
+     "importance": 0.0194
+    },
+    {
+     "feature": "Ranged Weapon Specialization",
+     "importance": 0.0173
+    },
+    {
+     "feature": "Endurance Training",
+     "importance": 0.0148
+    },
+    {
+     "feature": "Deflection",
+     "importance": 0.0134
+    },
+    {
+     "feature": "Marksmanship points",
+     "importance": 0.0129
+    }
+   ],
+   "simulated_builds": 3166,
+   "signature_check": {
+    "spec": "Marksmanship",
+    "ok": true,
+    "core_share": 0.7088,
+    "min_share": 0.6,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 4532000,
+   "minutes": 11.6,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-prebis.gear.json",
+   "commit": "30f67f5d2"
+  },
+  "prebis-raid": {
+   "class": "hunter",
+   "spec": "Marksmanship",
+   "setting": "raid",
+   "entry": "mm-raid",
+   "date": "2026-10-23",
+   "constraint": "Marksmanship 30+",
+   "protected": [],
+   "entries_screened": {
+    "mm-raid": 745.21,
+    "mm-lonewolf-raid": 733.88
+   },
+   "entries_searched": [
+    "mm-raid",
+    "mm-lonewolf-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Beast Mastery": [
+      [
+       "Deadly Aspects",
+       5
+      ],
+      [
+       "Focused Fire",
+       2
+      ]
+     ],
+     "Marksmanship": [
+      [
+       "Lethal Attacks",
+       5
+      ],
+      [
+       "Improved Stings",
+       3
+      ],
+      [
+       "Efficiency",
+       2
+      ],
+      [
+       "Careful Aim",
+       5
+      ],
+      [
+       "Rapid Killing",
+       2
+      ],
+      [
+       "Improved Arcane Shot",
+       5
+      ],
+      [
+       "Trueshot Aura",
+       1
+      ],
+      [
+       "Mortal Shots",
+       5
+      ],
+      [
+       "Rapid Recuperation",
+       2
+      ],
+      [
+       "Barrage",
+       3
+      ],
+      [
+       "Ranged Weapon Specialization",
+       5
+      ],
+      [
+       "Sniper Shot",
+       1
+      ]
+     ],
+     "Survival": [
+      [
+       "Improved Tracking",
+       5
+      ]
+     ]
+    },
+    "split": "7/39/5",
+    "dps": 747.53,
+    "se": 0.0713,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "7/39/5",
+    "dps": 746.81,
+    "se": 0.0715,
+    "differs": [
+     [
+      "Efficiency",
+      2
+     ],
+     [
+      "Efficiency",
+      5
+     ],
+     [
+      "Rapid Killing",
+      1
+     ],
+     [
+      "Rapid Killing",
+      2
+     ],
+     [
+      "Rapid Recuperation",
+      2
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.001,
+   "finalists": [
+    {
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        5
+       ],
+       [
+        "Focused Fire",
+        2
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Improved Stings",
+        3
+       ],
+       [
+        "Efficiency",
+        2
+       ],
+       [
+        "Careful Aim",
+        5
+       ],
+       [
+        "Rapid Killing",
+        2
+       ],
+       [
+        "Improved Arcane Shot",
+        5
+       ],
+       [
+        "Trueshot Aura",
+        1
+       ],
+       [
+        "Mortal Shots",
+        5
+       ],
+       [
+        "Rapid Recuperation",
+        2
+       ],
+       [
+        "Barrage",
+        3
+       ],
+       [
+        "Ranged Weapon Specialization",
+        5
+       ],
+       [
+        "Sniper Shot",
+        1
+       ]
+      ],
+      "Survival": [
+       [
+        "Improved Tracking",
+        5
+       ]
+      ]
+     },
+     "split": "7/39/5",
+     "dps": 747.53,
+     "se": 0.0713
+    },
+    {
+     "allocation": {
+      "Beast Mastery": [
+       [
+        "Deadly Aspects",
+        5
+       ],
+       [
+        "Focused Fire",
+        2
+       ]
+      ],
+      "Marksmanship": [
+       [
+        "Lethal Attacks",
+        5
+       ],
+       [
+        "Improved Stings",
+        3
+       ],
+       [
+        "Efficiency",
+        5
+       ],
+       [
+        "Careful Aim",
+        5
+       ],
+       [
+        "Rapid Killing",
+        1
+       ],
+       [
+        "Improved Arcane Shot",
+        5
+       ],
+       [
+        "Trueshot Aura",
+        1
+       ],
+       [
+        "Mortal Shots",
+        5
+       ],
+       [
+        "Barrage",
+        3
+       ],
+       [
+        "Ranged Weapon Specialization",
+        5
+       ],
+       [
+        "Sniper Shot",
+        1
+       ]
+      ],
+      "Survival": [
+       [
+        "Improved Tracking",
+        5
+       ]
+      ]
+     },
+     "split": "7/39/5",
+     "dps": 746.81,
+     "se": 0.0715
+    }
+   ],
+   "runs": [
+    {
+     "entry": "mm-raid",
+     "run": 1,
+     "simulated": 1204,
+     "best_screen": 747.21,
+     "best_split": "7/39/5",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 404,
+       "best": 745.21
+      },
+      {
+       "round": 1,
+       "simulated": 604,
+       "best": 747.21,
+       "predicted_top": 739.2
+      },
+      {
+       "round": 2,
+       "simulated": 804,
+       "best": 747.21,
+       "predicted_top": 744.1
+      },
+      {
+       "round": 3,
+       "simulated": 1004,
+       "best": 747.21,
+       "predicted_top": 744.79
+      },
+      {
+       "round": 4,
+       "simulated": 1204,
+       "best": 747.21,
+       "predicted_top": 743.82
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "mm-lonewolf-raid",
+     "run": 1,
+     "simulated": 1203,
+     "best_screen": 733.88,
+     "best_split": "5/41/5",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 403,
+       "best": 733.88
+      },
+      {
+       "round": 1,
+       "simulated": 603,
+       "best": 733.88,
+       "predicted_top": 722.42
+      },
+      {
+       "round": 2,
+       "simulated": 803,
+       "best": 733.88,
+       "predicted_top": 732.59
+      },
+      {
+       "round": 3,
+       "simulated": 1003,
+       "best": 733.88,
+       "predicted_top": 733.61
+      },
+      {
+       "round": 4,
+       "simulated": 1203,
+       "best": 733.88,
+       "predicted_top": 733.35
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": false
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      747.46,
+      746.8,
+      746.8,
+      746.8,
+      746.8,
+      746.8
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      747.57,
+      746.9,
+      746.9,
+      746.9,
+      746.9
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      747.53,
+      746.81
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 377,
+     "best_gap": -0.0016,
+     "best_move": "1 Rapid Recuperation -> Efficiency"
+    }
+   ],
+   "other_entries": [
+    {
+     "entry": "mm-lonewolf-raid",
+     "dps": 734.0,
+     "split": "5/41/5"
+    }
+   ],
+   "important_features": [
+    {
+     "feature": "Lone Wolf",
+     "importance": 0.3268
+    },
+    {
+     "feature": "Improved Concussive Shot",
+     "importance": 0.1816
+    },
+    {
+     "feature": "Sniper Shot",
+     "importance": 0.141
+    },
+    {
+     "feature": "Hawk Eye",
+     "importance": 0.1024
+    },
+    {
+     "feature": "Mortal Shots",
+     "importance": 0.0646
+    },
+    {
+     "feature": "Ranged Weapon Specialization",
+     "importance": 0.0306
+    },
+    {
+     "feature": "Focused Fire",
+     "importance": 0.0283
+    },
+    {
+     "feature": "Marksmanship points",
+     "importance": 0.025
+    },
+    {
+     "feature": "Deadly Aspects",
+     "importance": 0.0226
+    },
+    {
+     "feature": "Endurance Training",
+     "importance": 0.0144
+    },
+    {
+     "feature": "Deflection",
+     "importance": 0.0123
+    },
+    {
+     "feature": "Survival points",
+     "importance": 0.0094
+    }
+   ],
+   "simulated_builds": 4264,
+   "signature_check": {
+    "spec": "Marksmanship",
+    "ok": true,
+    "core_share": 0.8181,
+    "min_share": 0.6,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 6502000,
+   "minutes": 18.1,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-prebis.gear.json",
+   "commit": "30f67f5d2"
   }
  },
- "commit": "2ce8265",
+ "commit": "30f67f5d2",
  "spells_done": {
   "date": "2026-10-14",
   "lines_kept": 0
+ },
+ "compare": {
+  "setting": "dummy",
+  "dps": {
+   "winner": {
+    "entry": "mm-raid",
+    "dps": 395.87,
+    "se": 0.043
+   },
+   "bm-mm-full-buffs-raid": {
+    "entry": "mm-raid",
+    "dps": 392.4,
+    "se": 0.042
+   },
+   "mm-lone-wolf-raid": {
+    "entry": "mm-lonewolf-raid",
+    "dps": 358.54,
+    "se": 0.049
+   }
+  },
+  "best_hand": "bm-mm-full-buffs-raid",
+  "gain_vs_hand": 0.0088,
+  "commit": "30f67f5d2"
  }
 }
