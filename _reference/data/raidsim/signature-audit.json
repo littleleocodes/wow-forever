@@ -1,0 +1,6170 @@
+{
+ "date": "2026-10-22",
+ "classes": {
+  "druid": {
+   "entries": {
+    "balance-dps": {
+     "trees": [
+      "Balance"
+     ],
+     "specs": [
+      "Balance"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/druid/balance-dps-raid.apl.json",
+     "lines": {
+      "Starfire": [
+       1,
+       1
+      ],
+      "Moonfire": [
+       1,
+       1
+      ]
+     },
+     "record_commit": "b7083fa",
+     "record_date": "2026-10-16",
+     "env_commit": "b7083fa",
+     "builds": {
+      "balance-moonkin-raid": {
+       "spec": "Balance",
+       "listed": true,
+       "page_entry": "balance-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Balance",
+        "ok": true,
+        "core_share": 1.0,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Balance",
+        "ok": true,
+        "core_share": 1.0,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Balance",
+        "ok": true,
+        "core_share": 1.0,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 620.1,
+       "raid_measured_top": {
+        "Starfire": 0.657,
+        "Moonfire": 0.175,
+        "Insect Swarm": 0.168
+       },
+       "raid_measured_shares": {
+        "Starfire": 0.6574,
+        "Moonfire": 0.1749,
+        "Insect Swarm": 0.1677
+       },
+       "raid_measured_casts": {
+        "Insect Swarm": 12.19,
+        "Moonfire": 11.88,
+        "Starfire": 49.14,
+        "Innervate": 0.04
+       }
+      },
+      "opt-balance-dps-raid-dps": {
+       "spec": "Balance",
+       "listed": true,
+       "page_entry": "balance-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Balance",
+        "ok": true,
+        "core_share": 1.0,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Balance",
+        "ok": true,
+        "core_share": 1.0,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Balance",
+        "ok": true,
+        "core_share": 1.0,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 620.1,
+       "raid_measured_top": {
+        "Starfire": 0.657,
+        "Moonfire": 0.175,
+        "Insect Swarm": 0.168
+       },
+       "raid_measured_shares": {
+        "Starfire": 0.6574,
+        "Moonfire": 0.1749,
+        "Insect Swarm": 0.1677
+       },
+       "raid_measured_casts": {
+        "Moonfire": 11.88,
+        "Insect Swarm": 12.19,
+        "Innervate": 0.04,
+        "Starfire": 49.14
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    },
+    "feral-cat-dps": {
+     "trees": [
+      "Feral Combat"
+     ],
+     "specs": [
+      "Feral Combat"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/druid/feral-cat-dps-raid.apl.json",
+     "lines": {
+      "Shred": [
+       1,
+       1
+      ],
+      "Rip": [
+       1,
+       1
+      ]
+     },
+     "record_commit": "b7083fa",
+     "record_date": "2026-10-16",
+     "env_commit": "b7083fa",
+     "builds": {
+      "feral-cat-dps": {
+       "spec": "Feral Combat",
+       "listed": true,
+       "page_entry": "feral-cat-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Feral Combat",
+        "ok": true,
+        "core_share": 0.9724,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Feral Combat",
+        "ok": true,
+        "core_share": 0.9724,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Feral Combat",
+        "ok": true,
+        "core_share": 0.9901,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 628.5,
+       "raid_measured_top": {
+        "Auto Attack": 0.435,
+        "Rip": 0.248,
+        "Shred": 0.167,
+        "Rake": 0.14,
+        "Goblin Sapper Charge": 0.01
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.4355,
+        "Rip": 0.248,
+        "Shred": 0.1668,
+        "Rake": 0.1398,
+        "Goblin Sapper Charge": 0.0099
+       },
+       "raid_measured_casts": {
+        "Shred": 29.06,
+        "Rip": 13.6,
+        "Faerie Fire": 1.0,
+        "Cat Form": 2.23,
+        "Rake": 16.61,
+        "Berserk": 1.0
+       }
+      },
+      "opt-feral-cat-dps-raid-dps": {
+       "spec": "Feral Combat",
+       "listed": true,
+       "page_entry": "feral-cat-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Feral Combat",
+        "ok": true,
+        "core_share": 0.9733,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Feral Combat",
+        "ok": true,
+        "core_share": 0.9733,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Feral Combat",
+        "ok": true,
+        "core_share": 0.9904,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 643.1,
+       "raid_measured_top": {
+        "Auto Attack": 0.426,
+        "Rip": 0.255,
+        "Shred": 0.168,
+        "Rake": 0.141,
+        "Goblin Sapper Charge": 0.01
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.4257,
+        "Rip": 0.2554,
+        "Shred": 0.1679,
+        "Rake": 0.1414,
+        "Goblin Sapper Charge": 0.0096
+       },
+       "raid_measured_casts": {
+        "Berserk": 1.0,
+        "Cat Form": 2.22,
+        "Shred": 28.21,
+        "Rake": 16.39,
+        "Faerie Fire": 1.0,
+        "Rip": 13.68
+       }
+      },
+      "feral-combat-shifting-power-raid": {
+       "spec": "Feral Combat",
+       "listed": true,
+       "page_entry": "feral-cat-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Feral Combat",
+        "ok": true,
+        "core_share": 0.9755,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Feral Combat",
+        "ok": true,
+        "core_share": 0.9755,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Feral Combat",
+        "ok": true,
+        "core_share": 0.9911,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 741.7,
+       "raid_measured_top": {
+        "Auto Attack": 0.367,
+        "Shred": 0.244,
+        "Rip": 0.243,
+        "Rake": 0.137,
+        "Goblin Sapper Charge": 0.007,
+        "Demonic Rune": 0.002
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.3673,
+        "Shred": 0.2437,
+        "Rip": 0.2434,
+        "Rake": 0.1367,
+        "Goblin Sapper Charge": 0.0072,
+        "Demonic Rune": 0.0017
+       },
+       "raid_measured_casts": {
+        "Rip": 14.86,
+        "Berserk": 1.0,
+        "Cat Form": 1.61,
+        "Shifting Power": 22.11,
+        "Rake": 18.71,
+        "Faerie Fire": 1.0,
+        "Shred": 48.77
+       }
+      },
+      "feral-combat-open-raid": {
+       "spec": "Feral Combat",
+       "listed": true,
+       "page_entry": "feral-cat-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Feral Combat",
+        "ok": true,
+        "core_share": 0.9748,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Feral Combat",
+        "ok": true,
+        "core_share": 0.9748,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Feral Combat",
+        "ok": true,
+        "core_share": 0.991,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 751.1,
+       "raid_measured_top": {
+        "Auto Attack": 0.369,
+        "Shred": 0.245,
+        "Rip": 0.24,
+        "Rake": 0.137,
+        "Goblin Sapper Charge": 0.007,
+        "Demonic Rune": 0.002
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.3688,
+        "Shred": 0.245,
+        "Rip": 0.2397,
+        "Rake": 0.1375,
+        "Goblin Sapper Charge": 0.0074,
+        "Demonic Rune": 0.0016
+       },
+       "raid_measured_casts": {
+        "Rake": 18.82,
+        "Rip": 14.82,
+        "Cat Form": 1.62,
+        "Shred": 48.81,
+        "Berserk": 1.0,
+        "Shifting Power": 22.15,
+        "Faerie Fire": 1.0
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    },
+    "feral-bear-tank": {
+     "trees": [
+      "Feral Combat"
+     ],
+     "specs": [
+      "Feral Combat"
+     ],
+     "tank": true,
+     "rotation": "_reference/data/raidsim/apls/druid/feral-bear-tank-raid.apl.json",
+     "lines": {
+      "Shred": [
+       0,
+       0
+      ],
+      "Rip": [
+       0,
+       0
+      ]
+     },
+     "record_commit": "b7083fa",
+     "record_date": "2026-10-16",
+     "env_commit": "b7083fa",
+     "builds": {
+      "feral-bear-tank": {
+       "spec": "Feral Combat (Bear)",
+       "listed": true,
+       "page_entry": "feral-bear-tank",
+       "role": "tank",
+       "raid_record": null,
+       "raid_record_shares": "none",
+       "raid_measured": null,
+       "raid_measured_dps": 1844.0,
+       "raid_measured_top": {
+        "Maul": 0.721,
+        "Auto Attack": 0.184,
+        "Lacerate": 0.09,
+        "Retribution Aura": 0.003,
+        "Thorns": 0.002
+       },
+       "raid_measured_shares": {
+        "Maul": 0.7209,
+        "Auto Attack": 0.1841,
+        "Lacerate": 0.0901,
+        "Retribution Aura": 0.0025,
+        "Thorns": 0.0023
+       },
+       "raid_measured_casts": {
+        "Barkskin": 3.0,
+        "Lacerate": 116.98,
+        "Maul": 331.14
+       }
+      },
+      "opt-feral-bear-tank-raid-tank": {
+       "spec": "Feral Combat (Bear)",
+       "listed": true,
+       "page_entry": "feral-bear-tank",
+       "role": "tank",
+       "raid_record": null,
+       "raid_record_shares": "none",
+       "raid_measured": null,
+       "raid_measured_dps": 1841.5,
+       "raid_measured_top": {
+        "Maul": 0.72,
+        "Auto Attack": 0.184,
+        "Lacerate": 0.09,
+        "Retribution Aura": 0.003,
+        "Thorns": 0.002
+       },
+       "raid_measured_shares": {
+        "Maul": 0.7205,
+        "Auto Attack": 0.1842,
+        "Lacerate": 0.0905,
+        "Retribution Aura": 0.0026,
+        "Thorns": 0.0023
+       },
+       "raid_measured_casts": {
+        "Maul": 330.49,
+        "Lacerate": 116.93,
+        "Barkskin": 3.0
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    }
+   },
+   "pages": {
+    "balance-moonkin-raid": "balance-dps",
+    "opt-balance-dps-raid-dps": "balance-dps",
+    "sim preset: Moonkin 38/0/13": "balance-dps",
+    "sim preset: Balance": "balance-dps",
+    "feral-combat-open-raid": "feral-cat-dps",
+    "feral-combat-shifting-power-raid": "feral-cat-dps",
+    "sim preset: Feral Cat 9/35/7": "feral-cat-dps",
+    "sim preset: Feral": "feral-cat-dps",
+    "opt-feral-cat-dps-raid-dps": "feral-cat-dps",
+    "feral-cat-dps": "feral-cat-dps",
+    "feral-bear-tank": "feral-bear-tank",
+    "opt-feral-bear-tank-raid-tank": "feral-bear-tank",
+    "sim preset: Bear Tank 0/31/20": "feral-bear-tank"
+   }
+  },
+  "hunter": {
+   "entries": {
+    "mm-raid": {
+     "trees": [
+      "Marksmanship"
+     ],
+     "specs": [
+      "Hybrid Beast Mastery/Marksmanship",
+      "Marksmanship"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/hunter/mm-raid-raid.apl.json",
+     "lines": {
+      "Aimed Shot": [
+       1,
+       1
+      ]
+     },
+     "record_commit": "30f67f5d2",
+     "record_date": "2026-10-22",
+     "env_commit": "30f67f5d2",
+     "builds": {
+      "bm-mm-raid": {
+       "spec": "Hybrid Beast Mastery/Marksmanship",
+       "listed": true,
+       "page_entry": "mm-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Hybrid Beast Mastery/Marksmanship",
+        "ok": true,
+        "core_share": 0.9398,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Hybrid Beast Mastery/Marksmanship",
+        "ok": true,
+        "core_share": 0.9398,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Hybrid Beast Mastery/Marksmanship",
+        "ok": true,
+        "core_share": 0.9965,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 714.4,
+       "raid_measured_top": {
+        "Auto Shot": 0.368,
+        "Pet: Auto Attack": 0.201,
+        "Arcane Shot": 0.142,
+        "Aimed Shot": 0.138,
+        "Serpent Sting": 0.11,
+        "Pet: Bite": 0.022
+       },
+       "raid_measured_shares": {
+        "Auto Shot": 0.3675,
+        "Pet: Auto Attack": 0.2011,
+        "Arcane Shot": 0.1422,
+        "Aimed Shot": 0.1378,
+        "Serpent Sting": 0.1099,
+        "Pet: Bite": 0.0223,
+        "Pet: Claw": 0.0157,
+        "spell 1295633": 0.0035
+       },
+       "raid_measured_casts": {
+        "Rapid Fire": 1.0,
+        "Aspect of the Hawk": 1.0,
+        "Arcane Shot": 30.16,
+        "Aimed Shot": 22.08,
+        "Serpent Sting": 11.02
+       }
+      },
+      "bm-mm-full-buffs-raid": {
+       "spec": "Marksmanship",
+       "listed": true,
+       "page_entry": "mm-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Marksmanship",
+        "ok": true,
+        "core_share": 0.7249,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Marksmanship",
+        "ok": true,
+        "core_share": 0.7249,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Marksmanship",
+        "ok": true,
+        "core_share": 0.7573,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 715.3,
+       "raid_measured_top": {
+        "Auto Shot": 0.37,
+        "Pet: Auto Attack": 0.205,
+        "Aimed Shot": 0.155,
+        "Arcane Shot": 0.132,
+        "Serpent Sting": 0.101,
+        "Pet: Claw": 0.018
+       },
+       "raid_measured_shares": {
+        "Auto Shot": 0.3699,
+        "Pet: Auto Attack": 0.2046,
+        "Aimed Shot": 0.1548,
+        "Arcane Shot": 0.1319,
+        "Serpent Sting": 0.1007,
+        "Pet: Claw": 0.0179,
+        "Pet: Bite": 0.0167,
+        "spell 1295633": 0.0035
+       },
+       "raid_measured_casts": {
+        "Rapid Fire": 1.0,
+        "Aimed Shot": 22.36,
+        "Arcane Shot": 27.83,
+        "Serpent Sting": 11.05,
+        "Aspect of the Hawk": 1.0
+       }
+      },
+      "opt-mm-raid-raid-dps": {
+       "spec": "Hybrid Beast Mastery/Marksmanship",
+       "listed": true,
+       "page_entry": "mm-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Hybrid Beast Mastery/Marksmanship",
+        "ok": true,
+        "core_share": 0.9941,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Hybrid Beast Mastery/Marksmanship",
+        "ok": true,
+        "core_share": 0.9941,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Hybrid Beast Mastery/Marksmanship",
+        "ok": true,
+        "core_share": 0.9965,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 715.2,
+       "raid_measured_top": {
+        "Auto Shot": 0.366,
+        "Pet: Auto Attack": 0.204,
+        "Aimed Shot": 0.144,
+        "Arcane Shot": 0.131,
+        "Serpent Sting": 0.113,
+        "Pet: Bite": 0.023
+       },
+       "raid_measured_shares": {
+        "Auto Shot": 0.3662,
+        "Pet: Auto Attack": 0.2043,
+        "Aimed Shot": 0.1435,
+        "Arcane Shot": 0.1309,
+        "Serpent Sting": 0.1129,
+        "Pet: Bite": 0.0225,
+        "Pet: Claw": 0.016,
+        "spell 1295633": 0.0035
+       },
+       "raid_measured_casts": {
+        "Rapid Fire": 1.0,
+        "Arcane Shot": 27.84,
+        "Serpent Sting": 11.04,
+        "Aspect of the Hawk": 1.0,
+        "Aimed Shot": 22.35
+       }
+      },
+      "marksmanship-with-a-pet-open-raid": {
+       "spec": "Marksmanship",
+       "listed": true,
+       "page_entry": "mm-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Marksmanship",
+        "ok": true,
+        "core_share": 0.7774,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Marksmanship",
+        "ok": true,
+        "core_share": 0.7774,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Marksmanship",
+        "ok": true,
+        "core_share": 0.8236,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 780.9,
+       "raid_measured_top": {
+        "Auto Shot": 0.356,
+        "Arcane Shot": 0.161,
+        "Pet: Auto Attack": 0.149,
+        "Aimed Shot": 0.141,
+        "Serpent Sting": 0.106,
+        "Sniper Shot": 0.058
+       },
+       "raid_measured_shares": {
+        "Auto Shot": 0.3555,
+        "Arcane Shot": 0.1613,
+        "Pet: Auto Attack": 0.1491,
+        "Aimed Shot": 0.1412,
+        "Serpent Sting": 0.1059,
+        "Sniper Shot": 0.0577,
+        "Pet: Bite": 0.0139,
+        "Pet: Claw": 0.0099,
+        "spell 1295633": 0.0034,
+        "Multi-Shot": 0.0019
+       },
+       "raid_measured_casts": {
+        "Sniper Shot": 7.73,
+        "Rapid Fire": 1.0,
+        "Aspect of the Hawk": 1.0,
+        "Aimed Shot": 21.21,
+        "Arcane Shot": 35.22,
+        "Multi-Shot": 0.37,
+        "Serpent Sting": 10.8
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    },
+    "mm-lonewolf-raid": {
+     "trees": [
+      "Marksmanship"
+     ],
+     "specs": [
+      "Marksmanship"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/hunter/mm-lonewolf-raid-raid.apl.json",
+     "lines": {
+      "Aimed Shot": [
+       1,
+       1
+      ]
+     },
+     "record_commit": "30f67f5d2",
+     "record_date": "2026-10-22",
+     "env_commit": "30f67f5d2",
+     "builds": {
+      "mm-lone-wolf-raid": {
+       "spec": "Marksmanship",
+       "listed": true,
+       "page_entry": "mm-lonewolf-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Marksmanship",
+        "ok": true,
+        "core_share": 0.9921,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Marksmanship",
+        "ok": true,
+        "core_share": 0.9958,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "full raid",
+       "raid_measured": {
+        "spec": "Marksmanship",
+        "ok": true,
+        "core_share": 0.9959,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 759.8,
+       "raid_measured_top": {
+        "Auto Shot": 0.429,
+        "Aimed Shot": 0.183,
+        "Arcane Shot": 0.173,
+        "Serpent Sting": 0.135,
+        "Sniper Shot": 0.075,
+        "spell 1295633": 0.004
+       },
+       "raid_measured_shares": {
+        "Auto Shot": 0.4288,
+        "Aimed Shot": 0.1834,
+        "Arcane Shot": 0.1728,
+        "Serpent Sting": 0.1352,
+        "Sniper Shot": 0.0755,
+        "spell 1295633": 0.0041,
+        "Multi-Shot": 0.0002
+       },
+       "raid_measured_casts": {
+        "Arcane Shot": 31.3,
+        "Multi-Shot": 0.03,
+        "Rapid Fire": 1.0,
+        "Sniper Shot": 8.39,
+        "Serpent Sting": 11.77,
+        "Aspect of the Hawk": 1.0,
+        "Aimed Shot": 22.76
+       }
+      },
+      "opt-mm-lonewolf-raid-raid-dps": {
+       "spec": "Marksmanship",
+       "listed": true,
+       "page_entry": "mm-lonewolf-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Marksmanship",
+        "ok": true,
+        "core_share": 0.9922,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Marksmanship",
+        "ok": true,
+        "core_share": 0.9956,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "full raid",
+       "raid_measured": {
+        "spec": "Marksmanship",
+        "ok": true,
+        "core_share": 0.9956,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 706.9,
+       "raid_measured_top": {
+        "Auto Shot": 0.451,
+        "Aimed Shot": 0.193,
+        "Serpent Sting": 0.141,
+        "Arcane Shot": 0.132,
+        "Sniper Shot": 0.078,
+        "spell 1295633": 0.004
+       },
+       "raid_measured_shares": {
+        "Auto Shot": 0.4513,
+        "Aimed Shot": 0.193,
+        "Serpent Sting": 0.1408,
+        "Arcane Shot": 0.1321,
+        "Sniper Shot": 0.0784,
+        "spell 1295633": 0.0044
+       },
+       "raid_measured_casts": {
+        "Arcane Shot": 22.68,
+        "Serpent Sting": 12.26,
+        "Aimed Shot": 22.75,
+        "Aspect of the Hawk": 1.0,
+        "Sniper Shot": 8.25,
+        "Rapid Fire": 1.0
+       }
+      },
+      "marksmanship-ml-parse": {
+       "spec": "Marksmanship",
+       "listed": true,
+       "page_entry": "mm-lonewolf-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Marksmanship",
+        "ok": true,
+        "core_share": 0.9923,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Marksmanship",
+        "ok": true,
+        "core_share": 0.9958,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "full raid",
+       "raid_measured": {
+        "spec": "Marksmanship",
+        "ok": true,
+        "core_share": 0.9959,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 724.1,
+       "raid_measured_top": {
+        "Auto Shot": 0.429,
+        "Aimed Shot": 0.184,
+        "Arcane Shot": 0.173,
+        "Serpent Sting": 0.135,
+        "Sniper Shot": 0.076,
+        "spell 1295633": 0.004
+       },
+       "raid_measured_shares": {
+        "Auto Shot": 0.4287,
+        "Aimed Shot": 0.1836,
+        "Arcane Shot": 0.1727,
+        "Serpent Sting": 0.1352,
+        "Sniper Shot": 0.0756,
+        "spell 1295633": 0.0041
+       },
+       "raid_measured_casts": {
+        "Rapid Fire": 1.0,
+        "Aspect of the Hawk": 1.0,
+        "Arcane Shot": 31.3,
+        "Aimed Shot": 22.8,
+        "Serpent Sting": 11.81,
+        "Sniper Shot": 8.4
+       }
+      },
+      "marksmanship-ml-raid": {
+       "spec": "Marksmanship",
+       "listed": true,
+       "page_entry": "mm-lonewolf-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Marksmanship",
+        "ok": true,
+        "core_share": 0.992,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Marksmanship",
+        "ok": true,
+        "core_share": 0.9957,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "full raid",
+       "raid_measured": {
+        "spec": "Marksmanship",
+        "ok": true,
+        "core_share": 0.9956,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 684.1,
+       "raid_measured_top": {
+        "Auto Shot": 0.454,
+        "Arcane Shot": 0.2,
+        "Aimed Shot": 0.196,
+        "Serpent Sting": 0.146,
+        "spell 1295633": 0.004
+       },
+       "raid_measured_shares": {
+        "Auto Shot": 0.4537,
+        "Arcane Shot": 0.1997,
+        "Aimed Shot": 0.1964,
+        "Serpent Sting": 0.1458,
+        "spell 1295633": 0.0044
+       },
+       "raid_measured_casts": {
+        "Serpent Sting": 12.04,
+        "Aimed Shot": 23.07,
+        "Rapid Fire": 1.0,
+        "Aspect of the Hawk": 1.0,
+        "Arcane Shot": 34.07
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    },
+    "bm-raid": {
+     "trees": [
+      "Beast Mastery"
+     ],
+     "specs": [
+      "Beast Mastery",
+      "Hybrid Beast Mastery/Marksmanship"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/hunter/bm-raid-raid.apl.json",
+     "lines": {
+      "Bestial Wrath": [
+       0,
+       0
+      ],
+      "Aimed Shot": [
+       1,
+       1
+      ]
+     },
+     "record_commit": "30f67f5d2",
+     "record_date": "2026-10-22",
+     "env_commit": "30f67f5d2",
+     "builds": {
+      "mm-hawk-raid": {
+       "spec": "Hybrid Beast Mastery/Marksmanship",
+       "listed": true,
+       "page_entry": "bm-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Hybrid Beast Mastery/Marksmanship",
+        "ok": true,
+        "core_share": 0.9597,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Hybrid Beast Mastery/Marksmanship",
+        "ok": true,
+        "core_share": 0.9597,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Hybrid Beast Mastery/Marksmanship",
+        "ok": true,
+        "core_share": 0.9964,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 714.7,
+       "raid_measured_top": {
+        "Auto Shot": 0.365,
+        "Pet: Auto Attack": 0.204,
+        "Aimed Shot": 0.138,
+        "Arcane Shot": 0.135,
+        "Serpent Sting": 0.119,
+        "Pet: Claw": 0.018
+       },
+       "raid_measured_shares": {
+        "Auto Shot": 0.3652,
+        "Pet: Auto Attack": 0.2043,
+        "Aimed Shot": 0.138,
+        "Arcane Shot": 0.1352,
+        "Serpent Sting": 0.119,
+        "Pet: Claw": 0.0179,
+        "Pet: Bite": 0.0167,
+        "spell 1295633": 0.0036
+       },
+       "raid_measured_casts": {
+        "Aimed Shot": 22.13,
+        "Aspect of the Hawk": 1.0,
+        "Arcane Shot": 28.67,
+        "Serpent Sting": 12.03,
+        "Rapid Fire": 0.96
+       }
+      },
+      "beast-mastery-ml-raid": {
+       "spec": "Beast Mastery",
+       "listed": true,
+       "page_entry": "bm-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Beast Mastery",
+        "ok": true,
+        "core_share": 0.4131,
+        "min_share": 0.3,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Beast Mastery",
+        "ok": true,
+        "core_share": 0.4131,
+        "min_share": 0.3,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Beast Mastery",
+        "ok": true,
+        "core_share": 0.3057,
+        "min_share": 0.3,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 768.8,
+       "raid_measured_top": {
+        "Auto Shot": 0.327,
+        "Pet: Auto Attack": 0.267,
+        "Arcane Shot": 0.138,
+        "Aimed Shot": 0.124,
+        "Serpent Sting": 0.102,
+        "Pet: Bite": 0.021
+       },
+       "raid_measured_shares": {
+        "Auto Shot": 0.3267,
+        "Pet: Auto Attack": 0.2667,
+        "Arcane Shot": 0.1385,
+        "Aimed Shot": 0.1236,
+        "Serpent Sting": 0.1022,
+        "Pet: Bite": 0.0213,
+        "Pet: Claw": 0.0177,
+        "spell 1295633": 0.0034,
+        "Multi-Shot": 0.0
+       },
+       "raid_measured_casts": {
+        "Rapid Fire": 0.96,
+        "Serpent Sting": 11.14,
+        "Bestial Wrath": 2.0,
+        "Arcane Shot": 32.87,
+        "Aimed Shot": 22.11,
+        "Aspect of the Hawk": 1.0,
+        "Multi-Shot": 0.0
+       }
+      },
+      "beast-marks-open-raid": {
+       "spec": "Hybrid Beast Mastery/Marksmanship",
+       "listed": true,
+       "page_entry": "bm-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Hybrid Beast Mastery/Marksmanship",
+        "ok": true,
+        "core_share": 0.9937,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Hybrid Beast Mastery/Marksmanship",
+        "ok": true,
+        "core_share": 0.9937,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Hybrid Beast Mastery/Marksmanship",
+        "ok": true,
+        "core_share": 0.9965,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 756.4,
+       "raid_measured_top": {
+        "Auto Shot": 0.342,
+        "Pet: Auto Attack": 0.227,
+        "Arcane Shot": 0.149,
+        "Aimed Shot": 0.135,
+        "Serpent Sting": 0.109,
+        "Pet: Bite": 0.02
+       },
+       "raid_measured_shares": {
+        "Auto Shot": 0.3416,
+        "Pet: Auto Attack": 0.2268,
+        "Arcane Shot": 0.1487,
+        "Aimed Shot": 0.1346,
+        "Serpent Sting": 0.1086,
+        "Pet: Bite": 0.0205,
+        "Pet: Claw": 0.0157,
+        "spell 1295633": 0.0035,
+        "Multi-Shot": 0.0
+       },
+       "raid_measured_casts": {
+        "Rapid Fire": 0.97,
+        "Serpent Sting": 12.01,
+        "Aspect of the Hawk": 1.0,
+        "Aimed Shot": 22.98,
+        "Arcane Shot": 33.72,
+        "Multi-Shot": 0.0
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    },
+    "melee-dps": {
+     "trees": [
+      "Survival"
+     ],
+     "specs": [
+      "Hybrid Beast Mastery/Survival",
+      "Survival"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/hunter/melee-dps-raid.apl.json",
+     "lines": {
+      "Raptor Strike": [
+       1,
+       1
+      ],
+      "Mongoose Bite": [
+       1,
+       1
+      ],
+      "Summon Hawk": [
+       1,
+       1
+      ]
+     },
+     "record_commit": "30f67f5d2",
+     "record_date": "2026-10-22",
+     "env_commit": "30f67f5d2",
+     "builds": {
+      "melee-survival-raid": {
+       "spec": "Survival",
+       "listed": true,
+       "page_entry": "melee-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Survival",
+        "ok": true,
+        "core_share": 0.7186,
+        "min_share": 0.5,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Survival",
+        "ok": true,
+        "core_share": 0.7186,
+        "min_share": 0.5,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Survival",
+        "ok": true,
+        "core_share": 0.8029,
+        "min_share": 0.5,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 834.8,
+       "raid_measured_top": {
+        "Auto Attack": 0.58,
+        "Raptor Strike": 0.127,
+        "Explosive Trap": 0.104,
+        "Strider Kick": 0.064,
+        "Mongoose Bite": 0.053,
+        "Wing Clip": 0.043
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.58,
+        "Raptor Strike": 0.1267,
+        "Explosive Trap": 0.1036,
+        "Strider Kick": 0.0639,
+        "Mongoose Bite": 0.0531,
+        "Wing Clip": 0.0431,
+        "Lacerating Strikes": 0.0296
+       },
+       "raid_measured_casts": {
+        "Aspect of the Beast": 1.0,
+        "Mongoose Bite": 14.19,
+        "Rapid Fire": 1.0,
+        "Hunter's Mark": 1.0,
+        "Explosive Trap": 10.0,
+        "Raptor Strike": 30.0,
+        "Wing Clip": 74.94,
+        "Strider Kick": 19.88
+       }
+      },
+      "opt-melee-dps-raid-dps": {
+       "spec": "Survival",
+       "listed": true,
+       "page_entry": "melee-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Survival",
+        "ok": true,
+        "core_share": 0.7986,
+        "min_share": 0.5,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Survival",
+        "ok": true,
+        "core_share": 0.7986,
+        "min_share": 0.5,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Survival",
+        "ok": true,
+        "core_share": 0.8496,
+        "min_share": 0.5,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 793.9,
+       "raid_measured_top": {
+        "Auto Attack": 0.611,
+        "Raptor Strike": 0.134,
+        "Strider Kick": 0.065,
+        "Mongoose Bite": 0.056,
+        "Explosive Trap": 0.054,
+        "Wing Clip": 0.048
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.6114,
+        "Raptor Strike": 0.134,
+        "Strider Kick": 0.0652,
+        "Mongoose Bite": 0.0563,
+        "Explosive Trap": 0.0536,
+        "Wing Clip": 0.048,
+        "Lacerating Strikes": 0.0315
+       },
+       "raid_measured_casts": {
+        "Explosive Trap": 6.0,
+        "Raptor Strike": 30.0,
+        "Rapid Fire": 1.0,
+        "Hunter's Mark": 1.0,
+        "Wing Clip": 79.28,
+        "Strider Kick": 19.38,
+        "Mongoose Bite": 14.33,
+        "Aspect of the Beast": 1.0
+       }
+      },
+      "survival-raid": {
+       "spec": "Survival",
+       "listed": true,
+       "page_entry": "melee-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Survival",
+        "ok": true,
+        "core_share": 0.7398,
+        "min_share": 0.5,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Survival",
+        "ok": true,
+        "core_share": 0.7398,
+        "min_share": 0.5,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Survival",
+        "ok": true,
+        "core_share": 0.8277,
+        "min_share": 0.5,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 801.4,
+       "raid_measured_top": {
+        "Auto Attack": 0.597,
+        "Raptor Strike": 0.131,
+        "Explosive Trap": 0.107,
+        "Strider Kick": 0.065,
+        "Mongoose Bite": 0.055,
+        "Wing Clip": 0.045
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.5972,
+        "Raptor Strike": 0.1309,
+        "Explosive Trap": 0.1069,
+        "Strider Kick": 0.0653,
+        "Mongoose Bite": 0.0549,
+        "Wing Clip": 0.0447
+       },
+       "raid_measured_casts": {
+        "Strider Kick": 19.88,
+        "Hunter's Mark": 1.0,
+        "Wing Clip": 74.92,
+        "Mongoose Bite": 14.2,
+        "Raptor Strike": 30.0,
+        "Explosive Trap": 10.0,
+        "Aspect of the Beast": 1.0,
+        "Rapid Fire": 1.0
+       }
+      },
+      "survival-ml-parse": {
+       "spec": "Survival",
+       "listed": true,
+       "page_entry": "melee-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Survival",
+        "ok": true,
+        "core_share": 0.8128,
+        "min_share": 0.5,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Survival",
+        "ok": true,
+        "core_share": 0.8128,
+        "min_share": 0.5,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Survival",
+        "ok": true,
+        "core_share": 0.803,
+        "min_share": 0.5,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 796.2,
+       "raid_measured_top": {
+        "Auto Attack": 0.58,
+        "Raptor Strike": 0.127,
+        "Explosive Trap": 0.104,
+        "Strider Kick": 0.064,
+        "Mongoose Bite": 0.053,
+        "Wing Clip": 0.043
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.58,
+        "Raptor Strike": 0.1267,
+        "Explosive Trap": 0.1035,
+        "Strider Kick": 0.0639,
+        "Mongoose Bite": 0.053,
+        "Wing Clip": 0.0433,
+        "Lacerating Strikes": 0.0296
+       },
+       "raid_measured_casts": {
+        "Rapid Fire": 1.0,
+        "Strider Kick": 19.88,
+        "Aspect of the Beast": 1.0,
+        "Hunter's Mark": 1.0,
+        "Raptor Strike": 30.0,
+        "Wing Clip": 74.94,
+        "Mongoose Bite": 14.19,
+        "Explosive Trap": 10.0
+       }
+      },
+      "beast-survival-open-raid": {
+       "spec": "Hybrid Beast Mastery/Survival",
+       "listed": true,
+       "page_entry": "melee-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Hybrid Beast Mastery/Survival",
+        "ok": true,
+        "core_share": 0.8285,
+        "min_share": 0.5,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Hybrid Beast Mastery/Survival",
+        "ok": true,
+        "core_share": 0.8285,
+        "min_share": 0.5,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Hybrid Beast Mastery/Survival",
+        "ok": true,
+        "core_share": 0.7752,
+        "min_share": 0.5,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 826.7,
+       "raid_measured_top": {
+        "Auto Attack": 0.555,
+        "Raptor Strike": 0.125,
+        "Explosive Trap": 0.084,
+        "Strider Kick": 0.061,
+        "Mongoose Bite": 0.053,
+        "Summon Hawk": 0.051
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.5547,
+        "Raptor Strike": 0.1246,
+        "Explosive Trap": 0.0842,
+        "Strider Kick": 0.0606,
+        "Mongoose Bite": 0.0529,
+        "Summon Hawk": 0.0512,
+        "Pet: Auto Attack": 0.043,
+        "Wing Clip": 0.0288,
+        "Immolation Trap": 0.0
+       },
+       "raid_measured_casts": {
+        "Aspect of the Beast": 1.0,
+        "Summon Hawk": 27.15,
+        "Immolation Trap": 0.01,
+        "Raptor Strike": 30.0,
+        "Rapid Fire": 1.0,
+        "Explosive Trap": 7.99,
+        "Wing Clip": 50.02,
+        "Strider Kick": 19.44,
+        "Hunter's Mark": 1.0,
+        "Mongoose Bite": 14.39
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    }
+   },
+   "pages": {
+    "marksmanship-with-a-pet-open-raid": "mm-raid",
+    "opt-mm-raid-raid-dps": "mm-raid",
+    "bm-mm-full-buffs-raid": "mm-raid",
+    "bm-mm-raid": "mm-raid",
+    "mm-lone-wolf-raid": "mm-lonewolf-raid",
+    "marksmanship-ml-parse": "mm-lonewolf-raid",
+    "sim preset: MM": "mm-lonewolf-raid",
+    "opt-mm-lonewolf-raid-raid-dps": "mm-lonewolf-raid",
+    "marksmanship-ml-raid": "mm-lonewolf-raid",
+    "sim preset: MM Weave": "mm-lonewolf-raid",
+    "sim preset: SV": "mm-lonewolf-raid",
+    "sim preset: SV Weave": "mm-lonewolf-raid",
+    "sim preset: BM Weave": "mm-lonewolf-raid",
+    "sim preset: BM": "bm-raid",
+    "sim preset: SV Melee": "melee-dps",
+    "beast-mastery-ml-raid": "bm-raid",
+    "beast-marks-open-raid": "bm-raid",
+    "mm-hawk-raid": "bm-raid",
+    "melee-survival-raid": "melee-dps",
+    "beast-survival-open-raid": "melee-dps",
+    "survival-raid": "melee-dps",
+    "survival-ml-parse": "melee-dps",
+    "opt-melee-dps-raid-dps": "melee-dps"
+   }
+  },
+  "mage": {
+   "entries": {
+    "frost-raid": {
+     "trees": [
+      "Frost"
+     ],
+     "specs": [
+      "Frost",
+      "Hybrid Arcane/Frost"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/mage/frost-raid-raid.apl.json",
+     "lines": {
+      "Frostbolt": [
+       1,
+       1
+      ],
+      "Arcane Missiles": [
+       1,
+       1
+      ]
+     },
+     "record_commit": "2ce8265",
+     "record_date": "2026-10-15",
+     "env_commit": "2ce8265",
+     "builds": {
+      "frost-arcane-power-raid": {
+       "spec": "Hybrid Arcane/Frost",
+       "listed": true,
+       "page_entry": "frost-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Hybrid Arcane/Frost",
+        "ok": true,
+        "core_share": 0.9936,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Hybrid Arcane/Frost",
+        "ok": true,
+        "core_share": 0.9936,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Hybrid Arcane/Frost",
+        "ok": true,
+        "core_share": 0.9923,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 589.8,
+       "raid_measured_top": {
+        "Frostbolt": 0.714,
+        "Arcane Missiles": 0.278,
+        "Fire Blast": 0.008
+       },
+       "raid_measured_shares": {
+        "Frostbolt": 0.7141,
+        "Arcane Missiles": 0.2782,
+        "Fire Blast": 0.0077
+       },
+       "raid_measured_casts": {
+        "Arcane Missiles": 23.86,
+        "Presence of Mind": 1.18,
+        "Fire Blast": 0.95,
+        "Arcane Power": 1.18,
+        "Frostbolt": 59.55
+       }
+      },
+      "frost-winters-chill-raid": {
+       "spec": "Frost",
+       "listed": true,
+       "page_entry": "frost-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Frost",
+        "ok": true,
+        "core_share": 0.7786,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Frost",
+        "ok": true,
+        "core_share": 0.7786,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Frost",
+        "ok": true,
+        "core_share": 0.8443,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 500.3,
+       "raid_measured_top": {
+        "Frostbolt": 0.844,
+        "Arcane Missiles": 0.148,
+        "Fire Blast": 0.008
+       },
+       "raid_measured_shares": {
+        "Frostbolt": 0.8443,
+        "Arcane Missiles": 0.1476,
+        "Fire Blast": 0.0081
+       },
+       "raid_measured_casts": {
+        "Presence of Mind": 1.0,
+        "Fire Blast": 0.92,
+        "Arcane Missiles": 12.92,
+        "Frostbolt": 65.59
+       }
+      },
+      "frost-fingers-of-frost-raid": {
+       "spec": "Hybrid Arcane/Frost",
+       "listed": true,
+       "page_entry": "frost-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Hybrid Arcane/Frost",
+        "ok": true,
+        "core_share": 0.9951,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Hybrid Arcane/Frost",
+        "ok": true,
+        "core_share": 0.9951,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Hybrid Arcane/Frost",
+        "ok": true,
+        "core_share": 0.9925,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 544.8,
+       "raid_measured_top": {
+        "Frostbolt": 0.76,
+        "Arcane Missiles": 0.133,
+        "Ice Lance": 0.1,
+        "Fire Blast": 0.008
+       },
+       "raid_measured_shares": {
+        "Frostbolt": 0.7596,
+        "Arcane Missiles": 0.1326,
+        "Ice Lance": 0.1003,
+        "Fire Blast": 0.0075
+       },
+       "raid_measured_casts": {
+        "Fire Blast": 0.89,
+        "Presence of Mind": 1.12,
+        "Ice Lance": 7.76,
+        "Arcane Missiles": 12.05,
+        "Frostbolt": 61.08
+       }
+      },
+      "opt-frost-raid-raid-dps": {
+       "spec": "Hybrid Arcane/Frost",
+       "listed": true,
+       "page_entry": "frost-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Hybrid Arcane/Frost",
+        "ok": true,
+        "core_share": 0.9951,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Hybrid Arcane/Frost",
+        "ok": true,
+        "core_share": 0.9951,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Hybrid Arcane/Frost",
+        "ok": true,
+        "core_share": 0.9936,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 609.5,
+       "raid_measured_top": {
+        "Frostbolt": 0.669,
+        "Arcane Missiles": 0.253,
+        "Ice Lance": 0.072,
+        "Fire Blast": 0.006
+       },
+       "raid_measured_shares": {
+        "Frostbolt": 0.6693,
+        "Arcane Missiles": 0.2527,
+        "Ice Lance": 0.0715,
+        "Fire Blast": 0.0064
+       },
+       "raid_measured_casts": {
+        "Presence of Mind": 1.13,
+        "Fire Blast": 0.82,
+        "Frostbolt": 56.86,
+        "Ice Lance": 5.74,
+        "Arcane Missiles": 22.83
+       }
+      },
+      "opt-frost-raid-raid-dps-extwc": {
+       "spec": "Hybrid Arcane/Frost",
+       "listed": true,
+       "page_entry": "frost-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Hybrid Arcane/Frost",
+        "ok": false,
+        "core_share": 0.9936,
+        "min_share": 0.6,
+        "uncast": [
+         "Arcane Missiles"
+        ],
+        "missing_talents": [],
+        "why": "never casts Arcane Missiles"
+       },
+       "raid_record": {
+        "spec": "Hybrid Arcane/Frost",
+        "ok": false,
+        "core_share": 0.9936,
+        "min_share": 0.6,
+        "uncast": [
+         "Arcane Missiles"
+        ],
+        "missing_talents": [],
+        "why": "never casts Arcane Missiles"
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Hybrid Arcane/Frost",
+        "ok": true,
+        "core_share": 0.9935,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 623.3,
+       "raid_measured_top": {
+        "Frostbolt": 0.67,
+        "Arcane Missiles": 0.253,
+        "Ice Lance": 0.071,
+        "Fire Blast": 0.007
+       },
+       "raid_measured_shares": {
+        "Frostbolt": 0.6697,
+        "Arcane Missiles": 0.2527,
+        "Ice Lance": 0.071,
+        "Fire Blast": 0.0065
+       },
+       "raid_measured_casts": {
+        "Ice Lance": 5.75,
+        "Fire Blast": 0.83,
+        "Frostbolt": 56.9,
+        "Arcane Missiles": 22.72,
+        "Presence of Mind": 1.12
+       }
+      },
+      "frost-ml-raid": {
+       "spec": "Frost",
+       "listed": true,
+       "page_entry": "frost-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Frost",
+        "ok": true,
+        "core_share": 0.8113,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Frost",
+        "ok": true,
+        "core_share": 0.8113,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Frost",
+        "ok": true,
+        "core_share": 0.8588,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 544.9,
+       "raid_measured_top": {
+        "Frostbolt": 0.759,
+        "Arcane Missiles": 0.134,
+        "Ice Lance": 0.1,
+        "Fire Blast": 0.007
+       },
+       "raid_measured_shares": {
+        "Frostbolt": 0.7592,
+        "Arcane Missiles": 0.1338,
+        "Ice Lance": 0.0996,
+        "Fire Blast": 0.0074
+       },
+       "raid_measured_casts": {
+        "Fire Blast": 0.89,
+        "Presence of Mind": 1.11,
+        "Ice Lance": 7.65,
+        "Arcane Missiles": 12.43,
+        "Frostbolt": 60.95
+       }
+      },
+      "arcane-frost-open-raid": {
+       "spec": "Hybrid Arcane/Frost",
+       "listed": true,
+       "page_entry": "frost-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Hybrid Arcane/Frost",
+        "ok": true,
+        "core_share": 0.9968,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Hybrid Arcane/Frost",
+        "ok": true,
+        "core_share": 0.9968,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Hybrid Arcane/Frost",
+        "ok": true,
+        "core_share": 0.9936,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 623.7,
+       "raid_measured_top": {
+        "Frostbolt": 0.668,
+        "Arcane Missiles": 0.257,
+        "Ice Lance": 0.068,
+        "Fire Blast": 0.006
+       },
+       "raid_measured_shares": {
+        "Frostbolt": 0.6682,
+        "Arcane Missiles": 0.2569,
+        "Ice Lance": 0.0685,
+        "Fire Blast": 0.0064
+       },
+       "raid_measured_casts": {
+        "Frostbolt": 56.66,
+        "Ice Lance": 5.63,
+        "Arcane Missiles": 22.56,
+        "Fire Blast": 0.82
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    },
+    "fire-raid": {
+     "trees": [
+      "Fire"
+     ],
+     "specs": [
+      "Fire"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/mage/fire-raid-raid.apl.json",
+     "lines": {
+      "Fireball": [
+       1,
+       1
+      ],
+      "Pyroblast": [
+       2,
+       2
+      ]
+     },
+     "record_commit": "2ce8265",
+     "record_date": "2026-10-15",
+     "env_commit": "2ce8265",
+     "builds": {
+      "fire-raid": {
+       "spec": "Fire",
+       "listed": true,
+       "page_entry": "fire-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Fire",
+        "ok": true,
+        "core_share": 1.0,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Fire",
+        "ok": true,
+        "core_share": 1.0,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Fire",
+        "ok": true,
+        "core_share": 0.9988,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 806.6,
+       "raid_measured_top": {
+        "Fireball": 0.383,
+        "Pyroblast": 0.22,
+        "Fire Blast": 0.212,
+        "Ignite": 0.123,
+        "Scorch": 0.061,
+        "Demonic Rune": 0.001
+       },
+       "raid_measured_shares": {
+        "Fireball": 0.383,
+        "Pyroblast": 0.2202,
+        "Fire Blast": 0.2115,
+        "Ignite": 0.1234,
+        "Scorch": 0.0606,
+        "Demonic Rune": 0.0012
+       },
+       "raid_measured_casts": {
+        "Fire Blast": 26.91,
+        "Pyroblast": 11.55,
+        "Fireball": 31.32,
+        "Combustion": 1.0,
+        "Scorch": 12.9,
+        "Evocation": 1.0
+       }
+      },
+      "opt-fire-raid-raid-dps": {
+       "spec": "Fire",
+       "listed": true,
+       "page_entry": "fire-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Fire",
+        "ok": true,
+        "core_share": 1.0,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Fire",
+        "ok": true,
+        "core_share": 1.0,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Fire",
+        "ok": true,
+        "core_share": 0.9993,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 781.2,
+       "raid_measured_top": {
+        "Fireball": 0.387,
+        "Pyroblast": 0.221,
+        "Fire Blast": 0.21,
+        "Ignite": 0.121,
+        "Scorch": 0.06,
+        "Demonic Rune": 0.001
+       },
+       "raid_measured_shares": {
+        "Fireball": 0.3865,
+        "Pyroblast": 0.2213,
+        "Fire Blast": 0.2098,
+        "Ignite": 0.1213,
+        "Scorch": 0.0604,
+        "Demonic Rune": 0.0007
+       },
+       "raid_measured_casts": {
+        "Scorch": 12.95,
+        "Pyroblast": 11.42,
+        "Fire Blast": 26.93,
+        "Evocation": 1.0,
+        "Fireball": 31.37,
+        "Combustion": 1.0
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    },
+    "arcane-dps": {
+     "trees": [
+      "Arcane"
+     ],
+     "specs": [
+      "Arcane"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/mage/arcane-dps-raid.apl.json",
+     "lines": {
+      "Arcane Blast": [
+       1,
+       1
+      ]
+     },
+     "record_commit": "2ce8265",
+     "record_date": "2026-10-15",
+     "env_commit": "2ce8265",
+     "builds": {
+      "arcane-blast-raid": {
+       "spec": "Arcane",
+       "listed": true,
+       "page_entry": "arcane-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Arcane",
+        "ok": true,
+        "core_share": 0.7424,
+        "min_share": 0.5,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Arcane",
+        "ok": true,
+        "core_share": 0.7424,
+        "min_share": 0.5,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Arcane",
+        "ok": true,
+        "core_share": 0.7404,
+        "min_share": 0.5,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 577.9,
+       "raid_measured_top": {
+        "Arcane Missiles": 0.426,
+        "Arcane Blast": 0.315,
+        "Fire Blast": 0.23,
+        "Ignite": 0.03
+       },
+       "raid_measured_shares": {
+        "Arcane Missiles": 0.4256,
+        "Arcane Blast": 0.3148,
+        "Fire Blast": 0.2297,
+        "Ignite": 0.0299
+       },
+       "raid_measured_casts": {
+        "Arcane Missiles": 30.95,
+        "Arcane Blast": 38.91,
+        "Presence of Mind": 1.0,
+        "Evocation": 1.0,
+        "Fire Blast": 23.55,
+        "Arcane Power": 1.0
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    },
+    "frostfire-raid": {
+     "trees": [
+      "Hybrid Fire/Frost"
+     ],
+     "specs": [
+      "Hybrid Fire/Frost"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/mage/frostfire-raid-raid.apl.json",
+     "lines": {
+      "Frostfire Bolt": [
+       2,
+       2
+      ]
+     },
+     "record_commit": "2ce8265",
+     "record_date": "2026-10-15",
+     "env_commit": "2ce8265",
+     "builds": {
+      "frostfire-raid": {
+       "spec": "Hybrid Fire/Frost",
+       "listed": true,
+       "page_entry": "frostfire-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Hybrid Fire/Frost",
+        "ok": true,
+        "core_share": 0.3904,
+        "min_share": 0.3,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Hybrid Fire/Frost",
+        "ok": true,
+        "core_share": 0.3904,
+        "min_share": 0.3,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Hybrid Fire/Frost",
+        "ok": true,
+        "core_share": 0.3312,
+        "min_share": 0.3,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 741.9,
+       "raid_measured_top": {
+        "Frostfire Bolt": 0.331,
+        "Pyroblast": 0.249,
+        "Fire Blast": 0.217,
+        "Ignite": 0.13,
+        "Scorch": 0.071,
+        "Demonic Rune": 0.001
+       },
+       "raid_measured_shares": {
+        "Frostfire Bolt": 0.3312,
+        "Pyroblast": 0.2492,
+        "Fire Blast": 0.2168,
+        "Ignite": 0.1305,
+        "Scorch": 0.0711,
+        "Demonic Rune": 0.0009,
+        "Arcane Missiles": 0.0004
+       },
+       "raid_measured_casts": {
+        "Pyroblast": 12.88,
+        "Combustion": 1.0,
+        "Arcane Missiles": 0.1,
+        "Evocation": 1.0,
+        "Frostfire Bolt": 31.43,
+        "Scorch": 14.34,
+        "Fire Blast": 26.71
+       }
+      },
+      "frostfire-ml-raid": {
+       "spec": "Hybrid Fire/Frost",
+       "listed": true,
+       "page_entry": "frostfire-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Hybrid Fire/Frost",
+        "ok": true,
+        "core_share": 0.3085,
+        "min_share": 0.3,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Hybrid Fire/Frost",
+        "ok": true,
+        "core_share": 0.3085,
+        "min_share": 0.3,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Hybrid Fire/Frost",
+        "ok": true,
+        "core_share": 0.3717,
+        "min_share": 0.3,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 739.4,
+       "raid_measured_top": {
+        "Frostfire Bolt": 0.372,
+        "Pyroblast": 0.226,
+        "Fire Blast": 0.187,
+        "Ignite": 0.126,
+        "Scorch": 0.082,
+        "Arcane Missiles": 0.008
+       },
+       "raid_measured_shares": {
+        "Frostfire Bolt": 0.3717,
+        "Pyroblast": 0.226,
+        "Fire Blast": 0.1869,
+        "Ignite": 0.1258,
+        "Scorch": 0.0817,
+        "Arcane Missiles": 0.008
+       },
+       "raid_measured_casts": {
+        "Fire Blast": 23.69,
+        "Scorch": 16.92,
+        "Arcane Missiles": 1.18,
+        "Pyroblast": 11.59,
+        "Combustion": 1.0,
+        "Frostfire Bolt": 34.99,
+        "Evocation": 1.0
+       }
+      },
+      "frostfire-fingers-of-frost-raid": {
+       "spec": "Hybrid Fire/Frost",
+       "listed": true,
+       "page_entry": "frostfire-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Hybrid Fire/Frost",
+        "ok": true,
+        "core_share": 0.349,
+        "min_share": 0.3,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Hybrid Fire/Frost",
+        "ok": true,
+        "core_share": 0.349,
+        "min_share": 0.3,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Hybrid Fire/Frost",
+        "ok": true,
+        "core_share": 0.3695,
+        "min_share": 0.3,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 732.5,
+       "raid_measured_top": {
+        "Frostfire Bolt": 0.37,
+        "Pyroblast": 0.209,
+        "Fire Blast": 0.173,
+        "Ignite": 0.109,
+        "Scorch": 0.072,
+        "Ice Lance": 0.067
+       },
+       "raid_measured_shares": {
+        "Frostfire Bolt": 0.3695,
+        "Pyroblast": 0.2089,
+        "Fire Blast": 0.1729,
+        "Ignite": 0.1092,
+        "Scorch": 0.0722,
+        "Ice Lance": 0.0673
+       },
+       "raid_measured_casts": {
+        "Pyroblast": 10.89,
+        "Frostfire Bolt": 35.98,
+        "Fire Blast": 21.7,
+        "Ice Lance": 6.75,
+        "Scorch": 14.69,
+        "Evocation": 1.0
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    }
+   },
+   "pages": {
+    "arcane-frost-open-raid": "frost-raid",
+    "frost-ml-raid": "frost-raid",
+    "frost-fingers-of-frost-raid": "frost-raid",
+    "opt-frost-raid-raid-dps": "frost-raid",
+    "opt-frost-raid-raid-dps-extwc": "frost-raid",
+    "frost-arcane-power-raid": "frost-raid",
+    "sim preset: Frost 14/0/37": "frost-raid",
+    "sim preset: Frost DPS": "frost-raid",
+    "frost-winters-chill-raid": "frost-raid",
+    "sim preset: Arcane 35/0/16": "arcane-dps",
+    "sim preset: Arcane DPS": "arcane-dps",
+    "sim preset: Fire 0/35/16": "fire-raid",
+    "sim preset: Fire DPS": "fire-raid",
+    "fire-raid": "fire-raid",
+    "opt-fire-raid-raid-dps": "fire-raid",
+    "arcane-blast-raid": "arcane-dps",
+    "frostfire-fingers-of-frost-raid": "frostfire-raid",
+    "frostfire-raid": "frostfire-raid",
+    "frostfire-ml-raid": "frostfire-raid"
+   }
+  },
+  "paladin": {
+   "entries": {
+    "ret-dps": {
+     "trees": [
+      "Retribution"
+     ],
+     "specs": [
+      "Retribution"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/paladin/ret-dps-raid.apl.json",
+     "lines": {
+      "Judgement": [
+       2,
+       2
+      ]
+     },
+     "record_commit": "b7083fa",
+     "record_date": "2026-10-16",
+     "env_commit": "b7083fa",
+     "builds": {
+      "ret-raid-dps": {
+       "spec": "Retribution",
+       "listed": true,
+       "page_entry": "ret-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Retribution",
+        "ok": true,
+        "core_share": 0.759,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Retribution",
+        "ok": true,
+        "core_share": 0.759,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Retribution",
+        "ok": true,
+        "core_share": 0.8503,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 761.8,
+       "raid_measured_top": {
+        "Auto Attack": 0.341,
+        "Seal of Righteousness": 0.138,
+        "Seal of Command": 0.12,
+        "Holy Strike": 0.111,
+        "Judgement of Righteousness": 0.094,
+        "Consecration": 0.087
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.3411,
+        "Seal of Righteousness": 0.1375,
+        "Seal of Command": 0.1199,
+        "Holy Strike": 0.1108,
+        "Judgement of Righteousness": 0.0944,
+        "Consecration": 0.0872,
+        "Hammer of Wrath": 0.0489,
+        "Judgement of Command": 0.0467,
+        "Demonic Rune": 0.0105,
+        "spell 16614": 0.003
+       },
+       "raid_measured_casts": {
+        "Judgement of Command": 7.73,
+        "Seal of Righteousness": 45.73,
+        "Divine Favor": 2.0,
+        "Seal of Command": 35.54,
+        "Hammer of Wrath": 6.0,
+        "Consecration": 18.43,
+        "Judgement of Righteousness": 15.06,
+        "Holy Strike": 16.97
+       }
+      },
+      "ret-full-buffs-raid": {
+       "spec": "Retribution",
+       "listed": true,
+       "page_entry": "ret-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Retribution",
+        "ok": true,
+        "core_share": 0.7702,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Retribution",
+        "ok": true,
+        "core_share": 0.7702,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Retribution",
+        "ok": true,
+        "core_share": 0.85,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 751.8,
+       "raid_measured_top": {
+        "Auto Attack": 0.343,
+        "Seal of Righteousness": 0.138,
+        "Seal of Command": 0.116,
+        "Holy Strike": 0.113,
+        "Judgement of Righteousness": 0.09,
+        "Consecration": 0.086
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.3425,
+        "Seal of Righteousness": 0.1378,
+        "Seal of Command": 0.1165,
+        "Holy Strike": 0.1131,
+        "Judgement of Righteousness": 0.0899,
+        "Consecration": 0.086,
+        "Judgement of Command": 0.0502,
+        "Hammer of Wrath": 0.0493,
+        "Demonic Rune": 0.0115,
+        "spell 16614": 0.0032
+       },
+       "raid_measured_casts": {
+        "Seal of Righteousness": 45.03,
+        "Judgement of Righteousness": 14.31,
+        "Consecration": 18.45,
+        "Hammer of Wrath": 6.0,
+        "Seal of Command": 33.95,
+        "Judgement of Command": 8.45,
+        "Holy Strike": 17.05
+       }
+      },
+      "opt-ret-dps-raid-dps": {
+       "spec": "Retribution",
+       "listed": true,
+       "page_entry": "ret-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Retribution",
+        "ok": true,
+        "core_share": 0.7578,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Retribution",
+        "ok": true,
+        "core_share": 0.7578,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Retribution",
+        "ok": true,
+        "core_share": 0.8508,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 761.3,
+       "raid_measured_top": {
+        "Auto Attack": 0.341,
+        "Seal of Righteousness": 0.138,
+        "Seal of Command": 0.119,
+        "Holy Strike": 0.111,
+        "Judgement of Righteousness": 0.096,
+        "Consecration": 0.087
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.3413,
+        "Seal of Righteousness": 0.138,
+        "Seal of Command": 0.1187,
+        "Holy Strike": 0.1111,
+        "Judgement of Righteousness": 0.0955,
+        "Consecration": 0.0874,
+        "Hammer of Wrath": 0.0488,
+        "Judgement of Command": 0.0461,
+        "Demonic Rune": 0.0099,
+        "spell 16614": 0.003
+       },
+       "raid_measured_casts": {
+        "Judgement of Righteousness": 15.22,
+        "Judgement of Command": 7.61,
+        "Seal of Righteousness": 45.68,
+        "Seal of Command": 35.57,
+        "Consecration": 18.44,
+        "Hammer of Wrath": 6.0,
+        "Holy Strike": 16.97
+       }
+      },
+      "retribution-ml-raid": {
+       "spec": "Retribution",
+       "listed": true,
+       "page_entry": "ret-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Retribution",
+        "ok": true,
+        "core_share": 0.7592,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Retribution",
+        "ok": true,
+        "core_share": 0.7592,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Retribution",
+        "ok": true,
+        "core_share": 0.8463,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 746.6,
+       "raid_measured_top": {
+        "Auto Attack": 0.336,
+        "Seal of Righteousness": 0.139,
+        "Seal of Command": 0.118,
+        "Holy Strike": 0.111,
+        "Judgement of Righteousness": 0.091,
+        "Consecration": 0.089
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.3356,
+        "Seal of Righteousness": 0.1391,
+        "Seal of Command": 0.1181,
+        "Holy Strike": 0.1115,
+        "Judgement of Righteousness": 0.0915,
+        "Consecration": 0.0891,
+        "Judgement of Command": 0.0505,
+        "Hammer of Wrath": 0.0499,
+        "Demonic Rune": 0.0115,
+        "spell 16614": 0.0032
+       },
+       "raid_measured_casts": {
+        "Hammer of Wrath": 6.0,
+        "Seal of Command": 34.95,
+        "Seal of Righteousness": 45.62,
+        "Holy Strike": 17.0,
+        "Consecration": 18.42,
+        "Judgement of Command": 8.32,
+        "Judgement of Righteousness": 14.35
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    },
+    "prot-tank": {
+     "trees": [
+      "Protection"
+     ],
+     "specs": [
+      "Protection"
+     ],
+     "tank": true,
+     "rotation": "_reference/data/raidsim/apls/paladin/prot-tank-raid.apl.json",
+     "lines": {
+      "Holy Shield": [
+       2,
+       2
+      ]
+     },
+     "record_commit": "b7083fa",
+     "record_date": "2026-10-16",
+     "env_commit": "b7083fa",
+     "builds": {
+      "prot-tank": {
+       "spec": "Protection",
+       "listed": true,
+       "page_entry": "prot-tank",
+       "role": "tank",
+       "raid_record": {
+        "spec": "Protection",
+        "ok": false,
+        "core_share": null,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [
+         "Holy Shield"
+        ],
+        "why": "lacks Holy Shield"
+       },
+       "raid_record_shares": "none",
+       "raid_measured": {
+        "spec": "Protection",
+        "ok": false,
+        "core_share": 0.8653,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [
+         "Holy Shield"
+        ],
+        "why": "lacks Holy Shield"
+       },
+       "raid_measured_dps": 442.4,
+       "raid_measured_top": {
+        "Auto Attack": 0.425,
+        "Seal of Righteousness": 0.17,
+        "Judgement of Righteousness": 0.139,
+        "Consecration": 0.132,
+        "Holy Strike": 0.105,
+        "Retribution Aura": 0.013
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.4247,
+        "Seal of Righteousness": 0.17,
+        "Judgement of Righteousness": 0.1389,
+        "Consecration": 0.1317,
+        "Holy Strike": 0.1047,
+        "Retribution Aura": 0.0127,
+        "Thorns": 0.0105,
+        "spell 22600": 0.0036,
+        "Eye for an Eye": 0.0031
+       },
+       "raid_measured_casts": {
+        "Holy Strike": 18.0,
+        "Templar's Bulwark": 1.0,
+        "Consecration": 21.96,
+        "Lay on Hands": 1.0,
+        "Seal of Righteousness": 7.0,
+        "Judgement of Righteousness": 23.0,
+        "Righteous Fury": 1.0
+       }
+      },
+      "opt-prot-tank-raid-tank": {
+       "spec": "Protection",
+       "listed": true,
+       "page_entry": "prot-tank",
+       "role": "tank",
+       "raid_record": {
+        "spec": "Protection",
+        "ok": false,
+        "core_share": null,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": "no damage shares"
+       },
+       "raid_record_shares": "none",
+       "raid_measured": {
+        "spec": "Protection",
+        "ok": true,
+        "core_share": 0.8661,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 425.2,
+       "raid_measured_top": {
+        "Auto Attack": 0.405,
+        "Seal of Righteousness": 0.148,
+        "Consecration": 0.115,
+        "Judgement of Righteousness": 0.1,
+        "Holy Strike": 0.098,
+        "Holy Shield": 0.097
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.4054,
+        "Seal of Righteousness": 0.1482,
+        "Consecration": 0.1155,
+        "Judgement of Righteousness": 0.0996,
+        "Holy Strike": 0.0983,
+        "Holy Shield": 0.0974,
+        "spell 22600": 0.0127,
+        "Retribution Aura": 0.0121,
+        "Thorns": 0.0109
+       },
+       "raid_measured_casts": {
+        "Holy Shield": 18.03,
+        "Righteous Fury": 1.0,
+        "Consecration": 21.13,
+        "Judgement of Righteousness": 18.0,
+        "Seal of Righteousness": 6.99,
+        "Lay on Hands": 1.0,
+        "Templar's Bulwark": 1.0,
+        "Holy Strike": 18.0
+       }
+      },
+      "protection-ml-tank": {
+       "spec": "Protection",
+       "listed": true,
+       "page_entry": "prot-tank",
+       "role": "tank",
+       "raid_record": {
+        "spec": "Protection",
+        "ok": false,
+        "core_share": null,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": "no damage shares"
+       },
+       "raid_record_shares": "none",
+       "raid_measured": {
+        "spec": "Protection",
+        "ok": true,
+        "core_share": 0.8768,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 441.4,
+       "raid_measured_top": {
+        "Auto Attack": 0.403,
+        "Seal of Righteousness": 0.149,
+        "Judgement of Righteousness": 0.116,
+        "Consecration": 0.113,
+        "Holy Shield": 0.095,
+        "Holy Strike": 0.089
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.4033,
+        "Seal of Righteousness": 0.1495,
+        "Judgement of Righteousness": 0.1156,
+        "Consecration": 0.113,
+        "Holy Shield": 0.0954,
+        "Holy Strike": 0.0887,
+        "spell 22600": 0.0124,
+        "Retribution Aura": 0.0117,
+        "Thorns": 0.0105
+       },
+       "raid_measured_casts": {
+        "Templar's Bulwark": 1.0,
+        "Consecration": 21.46,
+        "Seal of Righteousness": 6.99,
+        "Holy Shield": 18.0,
+        "Lay on Hands": 1.0,
+        "Righteous Fury": 1.0,
+        "Judgement of Righteousness": 22.97,
+        "Holy Strike": 17.99
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    }
+   },
+   "pages": {
+    "ret-full-buffs-raid": "ret-dps",
+    "retribution-ml-raid": "ret-dps",
+    "opt-ret-dps-raid-dps": "ret-dps",
+    "ret-raid-dps": "ret-dps",
+    "sim preset: P4/P5 Ret": "ret-dps",
+    "sim preset: Retribution 9/0/42": "ret-dps",
+    "protection-ml-tank": "prot-tank",
+    "opt-prot-tank-raid-tank": "prot-tank",
+    "prot-tank": "prot-tank",
+    "sim preset: Protection 0/45/6": "prot-tank",
+    "sim preset: P4 Prot": "prot-tank",
+    "sim preset: P5 Prot": "prot-tank"
+   }
+  },
+  "priest": {
+   "entries": {
+    "shadow-dps": {
+     "trees": [
+      "Shadow"
+     ],
+     "specs": [
+      "Shadow"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/priest/shadow-dps-raid.apl.json",
+     "lines": {
+      "Shadow Word: Pain": [
+       1,
+       1
+      ],
+      "Mind Blast": [
+       1,
+       1
+      ],
+      "Mind Flay": [
+       1,
+       1
+      ]
+     },
+     "record_commit": "2ce8265",
+     "record_date": "2026-10-15",
+     "env_commit": "2ce8265",
+     "builds": {
+      "opt-shadow-dps-raid-dps": {
+       "spec": "Shadow",
+       "listed": true,
+       "page_entry": "shadow-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Shadow",
+        "ok": true,
+        "core_share": 0.8982,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Shadow",
+        "ok": true,
+        "core_share": 0.8982,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Shadow",
+        "ok": true,
+        "core_share": 0.9,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 798.7,
+       "raid_measured_top": {
+        "Mind Flay": 0.408,
+        "Shadow Word: Pain": 0.198,
+        "Mind Blast": 0.181,
+        "Devouring Plague": 0.113,
+        "Shadow Word: Death": 0.093,
+        "Demonic Rune": 0.007
+       },
+       "raid_measured_shares": {
+        "Mind Flay": 0.408,
+        "Shadow Word: Pain": 0.1978,
+        "Mind Blast": 0.1812,
+        "Devouring Plague": 0.113,
+        "Shadow Word: Death": 0.0934,
+        "Demonic Rune": 0.0066
+       },
+       "raid_measured_casts": {
+        "Shadow Word: Death": 10.0,
+        "Mind Flay": 38.81,
+        "Shadow Word: Pain": 7.74,
+        "Mind Blast": 20.52,
+        "Shadowform": 1.0,
+        "Inner Focus": 1.0,
+        "Devouring Plague": 7.13
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    },
+    "smite-dps": {
+     "trees": [
+      "Hybrid Discipline/Holy"
+     ],
+     "specs": [
+      "Hybrid Discipline/Holy"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/priest/smite-dps-raid.apl.json",
+     "lines": {
+      "Smite": [
+       5,
+       2
+      ],
+      "Holy Fire": [
+       1,
+       1
+      ]
+     },
+     "record_commit": "2ce8265",
+     "record_date": "2026-10-15",
+     "env_commit": "2ce8265",
+     "builds": {
+      "smite-discipline-raid": {
+       "spec": "Hybrid Discipline/Holy",
+       "listed": true,
+       "page_entry": "smite-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Hybrid Discipline/Holy",
+        "ok": false,
+        "core_share": 0.4232,
+        "min_share": 0.5,
+        "uncast": [],
+        "missing_talents": [],
+        "why": "core share 42% under 50% (Smite, Holy Fire)"
+       },
+       "raid_record": {
+        "spec": "Hybrid Discipline/Holy",
+        "ok": false,
+        "core_share": 0.4232,
+        "min_share": 0.5,
+        "uncast": [],
+        "missing_talents": [],
+        "why": "core share 42% under 50% (Smite, Holy Fire)"
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Hybrid Discipline/Holy",
+        "ok": true,
+        "core_share": 0.5773,
+        "min_share": 0.5,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 543.8,
+       "raid_measured_top": {
+        "Smite": 0.394,
+        "Shadow Word: Pain": 0.186,
+        "Holy Fire": 0.183,
+        "Penance": 0.132,
+        "Shadow Word: Death": 0.069,
+        "Devouring Plague": 0.019
+       },
+       "raid_measured_shares": {
+        "Smite": 0.3939,
+        "Shadow Word: Pain": 0.1857,
+        "Holy Fire": 0.1834,
+        "Penance": 0.1324,
+        "Shadow Word: Death": 0.0686,
+        "Devouring Plague": 0.0187,
+        "Demonic Rune": 0.0172
+       },
+       "raid_measured_casts": {
+        "Inner Focus": 1.0,
+        "Shadow Word: Death": 8.22,
+        "Devouring Plague": 1.0,
+        "Smite": 37.28,
+        "Holy Fire": 12.96,
+        "Power Infusion": 1.0,
+        "Penance": 13.37,
+        "Shadow Word: Pain": 9.59
+       }
+      },
+      "smite-open-raid": {
+       "spec": "Hybrid Discipline/Holy",
+       "listed": true,
+       "page_entry": "smite-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Hybrid Discipline/Holy",
+        "ok": false,
+        "core_share": 0.4221,
+        "min_share": 0.5,
+        "uncast": [],
+        "missing_talents": [],
+        "why": "core share 42% under 50% (Smite, Holy Fire)"
+       },
+       "raid_record": {
+        "spec": "Hybrid Discipline/Holy",
+        "ok": false,
+        "core_share": 0.4221,
+        "min_share": 0.5,
+        "uncast": [],
+        "missing_talents": [],
+        "why": "core share 42% under 50% (Smite, Holy Fire)"
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Hybrid Discipline/Holy",
+        "ok": true,
+        "core_share": 0.5783,
+        "min_share": 0.5,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 553.2,
+       "raid_measured_top": {
+        "Smite": 0.396,
+        "Shadow Word: Pain": 0.189,
+        "Holy Fire": 0.183,
+        "Penance": 0.129,
+        "Shadow Word: Death": 0.071,
+        "Devouring Plague": 0.017
+       },
+       "raid_measured_shares": {
+        "Smite": 0.3956,
+        "Shadow Word: Pain": 0.1894,
+        "Holy Fire": 0.1827,
+        "Penance": 0.1291,
+        "Shadow Word: Death": 0.071,
+        "Devouring Plague": 0.0171,
+        "Demonic Rune": 0.0152
+       },
+       "raid_measured_casts": {
+        "Shadow Word: Pain": 7.37,
+        "Holy Fire": 13.18,
+        "Smite": 38.29,
+        "Inner Focus": 1.0,
+        "Penance": 13.27,
+        "Devouring Plague": 1.0,
+        "Shadow Word: Death": 8.39
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    }
+   },
+   "pages": {
+    "opt-shadow-dps-raid-dps": "shadow-dps",
+    "sim preset: Shadow": "shadow-dps",
+    "sim preset: Shadow 15/0/36": "shadow-dps",
+    "sim preset: Smite": "smite-dps",
+    "sim preset: Smite 31/17/3": "smite-dps",
+    "smite-open-raid": "smite-dps",
+    "smite-discipline-raid": "smite-dps"
+   }
+  },
+  "rogue": {
+   "entries": {
+    "combat-swords-raid": {
+     "trees": [
+      "Combat"
+     ],
+     "specs": [
+      "Combat"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/rogue/combat-swords-raid-raid.apl.json",
+     "lines": {},
+     "record_commit": "2ce8265",
+     "record_date": "2026-10-16",
+     "env_commit": "2ce8265",
+     "builds": {
+      "combat-swords-raid": {
+       "spec": "Combat",
+       "listed": true,
+       "page_entry": "combat-swords-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Combat",
+        "ok": true,
+        "core_share": 0.8872,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Combat",
+        "ok": true,
+        "core_share": 0.8872,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Combat",
+        "ok": true,
+        "core_share": 0.9174,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 612.9,
+       "raid_measured_top": {
+        "Auto Attack": 0.602,
+        "Sinister Strike": 0.22,
+        "Eviscerate": 0.096,
+        "Instant Poison VI": 0.039,
+        "Deadly Poison V": 0.033,
+        "Goblin Sapper Charge": 0.011
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.6015,
+        "Sinister Strike": 0.2199,
+        "Eviscerate": 0.0959,
+        "Instant Poison VI": 0.0387,
+        "Deadly Poison V": 0.0332,
+        "Goblin Sapper Charge": 0.0107
+       },
+       "raid_measured_casts": {
+        "Vanish": 1.0,
+        "spell 25349": 20.05,
+        "Sinister Strike": 46.91,
+        "Slice and Dice": 9.03,
+        "Adrenaline Rush": 1.0,
+        "Eviscerate": 8.0,
+        "Blade Flurry": 2.0,
+        "spell 11337": 39.59
+       }
+      },
+      "opt-combat-swords-raid-raid-dps": {
+       "spec": "Combat",
+       "listed": true,
+       "page_entry": "combat-swords-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Combat",
+        "ok": true,
+        "core_share": 0.8506,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Combat",
+        "ok": true,
+        "core_share": 0.8506,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Combat",
+        "ok": true,
+        "core_share": 0.8849,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 618.1,
+       "raid_measured_top": {
+        "Auto Attack": 0.595,
+        "Sinister Strike": 0.201,
+        "Eviscerate": 0.088,
+        "Instant Poison VI": 0.057,
+        "Deadly Poison V": 0.048,
+        "Goblin Sapper Charge": 0.011
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.5951,
+        "Sinister Strike": 0.2012,
+        "Eviscerate": 0.0885,
+        "Instant Poison VI": 0.057,
+        "Deadly Poison V": 0.0475,
+        "Goblin Sapper Charge": 0.0107
+       },
+       "raid_measured_casts": {
+        "Vanish": 1.0,
+        "Slice and Dice": 9.09,
+        "Adrenaline Rush": 1.0,
+        "spell 25349": 27.22,
+        "spell 11337": 58.77,
+        "Sinister Strike": 44.69,
+        "Blade Flurry": 2.0,
+        "Eviscerate": 7.39
+       }
+      },
+      "combat-swords-open-raid": {
+       "spec": "Combat",
+       "listed": true,
+       "page_entry": "combat-swords-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Combat",
+        "ok": true,
+        "core_share": 0.8631,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Combat",
+        "ok": true,
+        "core_share": 0.8631,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Combat",
+        "ok": true,
+        "core_share": 0.8981,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 627.4,
+       "raid_measured_top": {
+        "Auto Attack": 0.595,
+        "Sinister Strike": 0.21,
+        "Eviscerate": 0.093,
+        "Instant Poison VI": 0.05,
+        "Deadly Poison V": 0.042,
+        "Goblin Sapper Charge": 0.01
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.5947,
+        "Sinister Strike": 0.21,
+        "Eviscerate": 0.0934,
+        "Instant Poison VI": 0.0499,
+        "Deadly Poison V": 0.0416,
+        "Goblin Sapper Charge": 0.0105
+       },
+       "raid_measured_casts": {
+        "Slice and Dice": 9.01,
+        "spell 11337": 52.13,
+        "Eviscerate": 7.92,
+        "Vanish": 1.0,
+        "Blade Flurry": 2.0,
+        "Adrenaline Rush": 1.0,
+        "Sinister Strike": 46.52,
+        "spell 25349": 24.5
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    },
+    "combat-daggers-raid": {
+     "trees": [
+      "Combat"
+     ],
+     "specs": [
+      "Combat"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/rogue/combat-daggers-raid-raid.apl.json",
+     "lines": {},
+     "record_commit": "2ce8265",
+     "record_date": "2026-10-16",
+     "env_commit": "2ce8265",
+     "builds": {
+      "combat-daggers-raid": {
+       "spec": "Combat",
+       "listed": true,
+       "page_entry": "combat-daggers-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Combat",
+        "ok": true,
+        "core_share": 0.8682,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Combat",
+        "ok": true,
+        "core_share": 0.8682,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Combat",
+        "ok": true,
+        "core_share": 0.9139,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 655.9,
+       "raid_measured_top": {
+        "Auto Attack": 0.548,
+        "Backstab": 0.278,
+        "Eviscerate": 0.088,
+        "Deadly Poison V": 0.048,
+        "Instant Poison VI": 0.028,
+        "Goblin Sapper Charge": 0.01
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.548,
+        "Backstab": 0.2776,
+        "Eviscerate": 0.0883,
+        "Deadly Poison V": 0.048,
+        "Instant Poison VI": 0.0283,
+        "Goblin Sapper Charge": 0.0098
+       },
+       "raid_measured_casts": {
+        "spell 11337": 31.19,
+        "Slice and Dice": 9.19,
+        "Blade Flurry": 2.0,
+        "spell 25349": 30.71,
+        "Backstab": 29.99,
+        "Vanish": 1.0,
+        "Adrenaline Rush": 1.0,
+        "Eviscerate": 7.05
+       }
+      },
+      "opt-combat-daggers-raid-raid-dps": {
+       "spec": "Combat",
+       "listed": true,
+       "page_entry": "combat-daggers-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Combat",
+        "ok": true,
+        "core_share": 0.8728,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Combat",
+        "ok": true,
+        "core_share": 0.8728,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Combat",
+        "ok": true,
+        "core_share": 0.9119,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 642.8,
+       "raid_measured_top": {
+        "Auto Attack": 0.558,
+        "Backstab": 0.271,
+        "Eviscerate": 0.083,
+        "Deadly Poison V": 0.049,
+        "Instant Poison VI": 0.029,
+        "Goblin Sapper Charge": 0.01
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.5581,
+        "Backstab": 0.2707,
+        "Eviscerate": 0.0832,
+        "Deadly Poison V": 0.0492,
+        "Instant Poison VI": 0.0289,
+        "Goblin Sapper Charge": 0.01
+       },
+       "raid_measured_casts": {
+        "Eviscerate": 6.47,
+        "Slice and Dice": 9.03,
+        "Backstab": 29.13,
+        "spell 11337": 31.05,
+        "Vanish": 1.0,
+        "Adrenaline Rush": 1.0,
+        "Blade Flurry": 2.0,
+        "spell 25349": 30.92
+       }
+      },
+      "combat-ml-raid": {
+       "spec": "Combat",
+       "listed": true,
+       "page_entry": "combat-daggers-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Combat",
+        "ok": true,
+        "core_share": 0.8685,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Combat",
+        "ok": true,
+        "core_share": 0.8685,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Combat",
+        "ok": true,
+        "core_share": 0.9147,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 662.4,
+       "raid_measured_top": {
+        "Auto Attack": 0.543,
+        "Backstab": 0.279,
+        "Eviscerate": 0.093,
+        "Deadly Poison V": 0.048,
+        "Instant Poison VI": 0.028,
+        "Goblin Sapper Charge": 0.01
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.5426,
+        "Backstab": 0.2793,
+        "Eviscerate": 0.0929,
+        "Deadly Poison V": 0.0475,
+        "Instant Poison VI": 0.028,
+        "Goblin Sapper Charge": 0.0097
+       },
+       "raid_measured_casts": {
+        "Slice and Dice": 9.19,
+        "Blade Flurry": 2.0,
+        "Adrenaline Rush": 1.0,
+        "spell 11337": 31.19,
+        "Eviscerate": 7.05,
+        "Cold Blood": 1.0,
+        "spell 25349": 30.71,
+        "Backstab": 29.99,
+        "Vanish": 1.0
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    },
+    "assassination-raid": {
+     "trees": [
+      "Assassination"
+     ],
+     "specs": [
+      "Assassination",
+      "Hybrid Assassination/Combat"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/rogue/assassination-raid-raid.apl.json",
+     "lines": {
+      "Mutilate": [
+       1,
+       1
+      ]
+     },
+     "record_commit": "2ce8265",
+     "record_date": "2026-10-16",
+     "env_commit": "2ce8265",
+     "builds": {
+      "assassination-mutilate-raid": {
+       "spec": "Assassination",
+       "listed": true,
+       "page_entry": "assassination-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Assassination",
+        "ok": false,
+        "core_share": 0.6239,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [
+         "Mutilate"
+        ],
+        "why": "lacks Mutilate"
+       },
+       "raid_record": {
+        "spec": "Assassination",
+        "ok": false,
+        "core_share": 0.6239,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [
+         "Mutilate"
+        ],
+        "why": "lacks Mutilate"
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Assassination",
+        "ok": false,
+        "core_share": 0.7341,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [
+         "Mutilate"
+        ],
+        "why": "lacks Mutilate"
+       },
+       "raid_measured_dps": 641.5,
+       "raid_measured_top": {
+        "Auto Attack": 0.509,
+        "Backstab": 0.256,
+        "Eviscerate": 0.137,
+        "Deadly Poison V": 0.054,
+        "Instant Poison VI": 0.034,
+        "Goblin Sapper Charge": 0.01
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.5094,
+        "Backstab": 0.2557,
+        "Eviscerate": 0.1368,
+        "Deadly Poison V": 0.0537,
+        "Instant Poison VI": 0.0342,
+        "Goblin Sapper Charge": 0.0102
+       },
+       "raid_measured_casts": {
+        "Slice and Dice": 8.22,
+        "Vanish": 1.0,
+        "Backstab": 30.99,
+        "Cold Blood": 1.0,
+        "spell 25349": 30.96,
+        "spell 11337": 34.1,
+        "Eviscerate": 11.17
+       }
+      },
+      "assassination-seal-fate-raid": {
+       "spec": "Assassination",
+       "listed": true,
+       "page_entry": "assassination-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Assassination",
+        "ok": false,
+        "core_share": 0.6043,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [
+         "Mutilate"
+        ],
+        "why": "lacks Mutilate"
+       },
+       "raid_record": {
+        "spec": "Assassination",
+        "ok": false,
+        "core_share": 0.6043,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [
+         "Mutilate"
+        ],
+        "why": "lacks Mutilate"
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Assassination",
+        "ok": false,
+        "core_share": 0.7313,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [
+         "Mutilate"
+        ],
+        "why": "lacks Mutilate"
+       },
+       "raid_measured_dps": 638.7,
+       "raid_measured_top": {
+        "Auto Attack": 0.494,
+        "Backstab": 0.258,
+        "Eviscerate": 0.126,
+        "Deadly Poison V": 0.065,
+        "Instant Poison VI": 0.046,
+        "Goblin Sapper Charge": 0.01
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.4943,
+        "Backstab": 0.2584,
+        "Eviscerate": 0.1264,
+        "Deadly Poison V": 0.0646,
+        "Instant Poison VI": 0.046,
+        "Goblin Sapper Charge": 0.0102
+       },
+       "raid_measured_casts": {
+        "spell 25349": 38.7,
+        "Slice and Dice": 8.21,
+        "spell 11337": 45.61,
+        "Backstab": 29.23,
+        "Eviscerate": 10.29,
+        "Cold Blood": 1.0,
+        "Vanish": 1.0
+       }
+      },
+      "assassination-ml-raid": {
+       "spec": "Assassination",
+       "listed": true,
+       "page_entry": "assassination-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Assassination",
+        "ok": false,
+        "core_share": 0.5948,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [
+         "Mutilate"
+        ],
+        "why": "lacks Mutilate; core share 59% under 60% (melee, Mutilate, Eviscerate, Venom, Rupture, Deadly Poison, Instant Poison)"
+       },
+       "raid_record": {
+        "spec": "Assassination",
+        "ok": false,
+        "core_share": 0.5948,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [
+         "Mutilate"
+        ],
+        "why": "lacks Mutilate; core share 59% under 60% (melee, Mutilate, Eviscerate, Venom, Rupture, Deadly Poison, Instant Poison)"
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Assassination",
+        "ok": false,
+        "core_share": 0.7257,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [
+         "Mutilate"
+        ],
+        "why": "lacks Mutilate"
+       },
+       "raid_measured_dps": 643.7,
+       "raid_measured_top": {
+        "Auto Attack": 0.49,
+        "Backstab": 0.264,
+        "Eviscerate": 0.125,
+        "Deadly Poison V": 0.064,
+        "Instant Poison VI": 0.046,
+        "Goblin Sapper Charge": 0.01
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.4905,
+        "Backstab": 0.2642,
+        "Eviscerate": 0.1255,
+        "Deadly Poison V": 0.0641,
+        "Instant Poison VI": 0.0456,
+        "Goblin Sapper Charge": 0.0102
+       },
+       "raid_measured_casts": {
+        "Backstab": 29.23,
+        "Eviscerate": 10.29,
+        "Slice and Dice": 8.21,
+        "spell 11337": 45.61,
+        "Cold Blood": 1.0,
+        "Vanish": 1.0,
+        "spell 25349": 38.7
+       }
+      },
+      "daggers-split-open-raid": {
+       "spec": "Hybrid Assassination/Combat",
+       "listed": true,
+       "page_entry": "assassination-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Hybrid Assassination/Combat",
+        "ok": true,
+        "core_share": 0.8414,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Hybrid Assassination/Combat",
+        "ok": true,
+        "core_share": 0.8414,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Hybrid Assassination/Combat",
+        "ok": true,
+        "core_share": 0.876,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 637.4,
+       "raid_measured_top": {
+        "Auto Attack": 0.556,
+        "Mutilate": 0.202,
+        "Eviscerate": 0.118,
+        "Deadly Poison V": 0.067,
+        "Instant Poison VI": 0.047,
+        "Goblin Sapper Charge": 0.01
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.5558,
+        "Mutilate": 0.2019,
+        "Eviscerate": 0.1183,
+        "Deadly Poison V": 0.0673,
+        "Instant Poison VI": 0.0466,
+        "Goblin Sapper Charge": 0.0102
+       },
+       "raid_measured_casts": {
+        "Slice and Dice": 8.4,
+        "Cold Blood": 1.0,
+        "spell 11337": 47.88,
+        "Eviscerate": 8.98,
+        "Vanish": 1.0,
+        "Mutilate": 29.05,
+        "spell 25349": 46.87,
+        "Blade Flurry": 2.0
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    },
+    "subtlety-raid": {
+     "trees": [
+      "Subtlety"
+     ],
+     "specs": [
+      "Subtlety"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/rogue/subtlety-raid-raid.apl.json",
+     "lines": {
+      "Hemorrhage": [
+       1,
+       0
+      ]
+     },
+     "record_commit": "2ce8265",
+     "record_date": "2026-10-16",
+     "env_commit": "2ce8265",
+     "builds": {
+      "subtlety-hemo-raid": {
+       "spec": "Subtlety",
+       "listed": true,
+       "page_entry": "subtlety-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Subtlety",
+        "ok": true,
+        "core_share": 0.6842,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Subtlety",
+        "ok": true,
+        "core_share": 0.6842,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Subtlety",
+        "ok": true,
+        "core_share": 0.7431,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 585.6,
+       "raid_measured_top": {
+        "Auto Attack": 0.523,
+        "Hemorrhage": 0.194,
+        "Rupture": 0.148,
+        "Instant Poison VI": 0.052,
+        "Deadly Poison V": 0.04,
+        "Ghostly Strike": 0.014
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.5235,
+        "Hemorrhage": 0.1938,
+        "Rupture": 0.1481,
+        "Instant Poison VI": 0.0524,
+        "Deadly Poison V": 0.0405,
+        "Ghostly Strike": 0.0136,
+        "Eviscerate": 0.0123,
+        "Goblin Sapper Charge": 0.011,
+        "Garrote": 0.0049
+       },
+       "raid_measured_casts": {
+        "Slice and Dice": 9.29,
+        "Vanish": 0.45,
+        "Premeditation": 3.0,
+        "Eviscerate": 0.89,
+        "Rupture": 14.43,
+        "Hemorrhage": 50.15,
+        "spell 25349": 23.38,
+        "Cold Blood": 1.37,
+        "Ghostly Strike": 3.55,
+        "Preparation": 1.0,
+        "spell 11337": 52.85,
+        "Garrote": 0.41
+       }
+      },
+      "subtlety-open-raid": {
+       "spec": "Subtlety",
+       "listed": true,
+       "page_entry": "subtlety-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Subtlety",
+        "ok": true,
+        "core_share": 0.6911,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Subtlety",
+        "ok": true,
+        "core_share": 0.6911,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Subtlety",
+        "ok": true,
+        "core_share": 0.7442,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 588.1,
+       "raid_measured_top": {
+        "Auto Attack": 0.521,
+        "Hemorrhage": 0.197,
+        "Rupture": 0.147,
+        "Instant Poison VI": 0.052,
+        "Deadly Poison V": 0.04,
+        "Ghostly Strike": 0.014
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.5213,
+        "Hemorrhage": 0.197,
+        "Rupture": 0.1475,
+        "Instant Poison VI": 0.0522,
+        "Deadly Poison V": 0.0403,
+        "Ghostly Strike": 0.0138,
+        "Eviscerate": 0.0122,
+        "Goblin Sapper Charge": 0.011,
+        "Garrote": 0.0048
+       },
+       "raid_measured_casts": {
+        "Ghostly Strike": 3.55,
+        "Preparation": 1.0,
+        "Rupture": 14.43,
+        "Premeditation": 3.0,
+        "Hemorrhage": 50.15,
+        "Slice and Dice": 9.29,
+        "spell 25349": 23.38,
+        "Garrote": 0.41,
+        "Eviscerate": 0.89,
+        "Cold Blood": 1.37,
+        "Vanish": 0.45,
+        "spell 11337": 52.85
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    }
+   },
+   "pages": {
+    "combat-swords-open-raid": "combat-swords-raid",
+    "sim preset: Sinister Strike": "combat-swords-raid",
+    "combat-swords-raid": "combat-swords-raid",
+    "sim preset: Improved Expose Armor (SS)": "combat-swords-raid",
+    "opt-combat-swords-raid-raid-dps": "combat-swords-raid",
+    "sim preset: Combat Dual-Wield 15/33/3": "combat-daggers-raid",
+    "sim preset: Assassination Mutilate 31/20/0": "combat-daggers-raid",
+    "sim preset: Backstab": "combat-daggers-raid",
+    "sim preset: Mutilate": "assassination-raid",
+    "sim preset: Subtlety Hemo 15/0/36": "subtlety-raid",
+    "combat-ml-raid": "combat-daggers-raid",
+    "combat-daggers-raid": "combat-daggers-raid",
+    "opt-combat-daggers-raid-raid-dps": "combat-daggers-raid",
+    "assassination-ml-raid": "assassination-raid",
+    "daggers-split-open-raid": "assassination-raid",
+    "assassination-seal-fate-raid": "assassination-raid",
+    "assassination-mutilate-raid": "assassination-raid",
+    "subtlety-open-raid": "subtlety-raid",
+    "subtlety-hemo-raid": "subtlety-raid"
+   }
+  },
+  "shaman": {
+   "entries": {
+    "elemental-dps": {
+     "trees": [
+      "Elemental"
+     ],
+     "specs": [
+      "Elemental"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/shaman/elemental-dps-raid.apl.json",
+     "lines": {
+      "Lightning Bolt": [
+       2,
+       1
+      ]
+     },
+     "record_commit": "2ce8265",
+     "record_date": "2026-10-16",
+     "env_commit": "2ce8265",
+     "builds": {
+      "elemental-raid-dps": {
+       "spec": "Elemental",
+       "listed": true,
+       "page_entry": "elemental-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Elemental",
+        "ok": true,
+        "core_share": 0.9365,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Elemental",
+        "ok": true,
+        "core_share": 0.9365,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Elemental",
+        "ok": true,
+        "core_share": 0.93,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 614.4,
+       "raid_measured_top": {
+        "Lightning Bolt": 0.559,
+        "Lava Burst": 0.19,
+        "Flame Shock": 0.135,
+        "Searing Totem": 0.055,
+        "Chain Lightning": 0.045,
+        "Demonic Rune": 0.015
+       },
+       "raid_measured_shares": {
+        "Lightning Bolt": 0.5593,
+        "Lava Burst": 0.1903,
+        "Flame Shock": 0.135,
+        "Searing Totem": 0.0555,
+        "Chain Lightning": 0.0454,
+        "Demonic Rune": 0.0145
+       },
+       "raid_measured_casts": {
+        "Lava Burst": 13.99,
+        "Chain Lightning": 6.84,
+        "Lightning Bolt": 62.07,
+        "Searing Totem": 4.0,
+        "Flame Shock": 9.87
+       }
+      },
+      "opt-elemental-dps-raid-dps": {
+       "spec": "Elemental",
+       "listed": true,
+       "page_entry": "elemental-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Elemental",
+        "ok": true,
+        "core_share": 0.9305,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Elemental",
+        "ok": true,
+        "core_share": 0.9305,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Elemental",
+        "ok": true,
+        "core_share": 0.9259,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 598.1,
+       "raid_measured_top": {
+        "Lightning Bolt": 0.563,
+        "Lava Burst": 0.186,
+        "Flame Shock": 0.129,
+        "Searing Totem": 0.059,
+        "Chain Lightning": 0.048,
+        "Demonic Rune": 0.015
+       },
+       "raid_measured_shares": {
+        "Lightning Bolt": 0.5632,
+        "Lava Burst": 0.1863,
+        "Flame Shock": 0.1288,
+        "Searing Totem": 0.0592,
+        "Chain Lightning": 0.0476,
+        "Demonic Rune": 0.0149
+       },
+       "raid_measured_casts": {
+        "Elemental Mastery": 1.0,
+        "Chain Lightning": 7.48,
+        "Lightning Bolt": 64.15,
+        "Lava Burst": 14.01,
+        "Searing Totem": 4.0,
+        "Flame Shock": 9.42
+       }
+      },
+      "elemental-raid": {
+       "spec": "Elemental",
+       "listed": true,
+       "page_entry": "elemental-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Elemental",
+        "ok": true,
+        "core_share": 0.9305,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Elemental",
+        "ok": true,
+        "core_share": 0.9305,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Elemental",
+        "ok": true,
+        "core_share": 0.9243,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 582.9,
+       "raid_measured_top": {
+        "Lightning Bolt": 0.554,
+        "Lava Burst": 0.19,
+        "Flame Shock": 0.132,
+        "Searing Totem": 0.061,
+        "Chain Lightning": 0.049,
+        "Demonic Rune": 0.015
+       },
+       "raid_measured_shares": {
+        "Lightning Bolt": 0.5543,
+        "Lava Burst": 0.1895,
+        "Flame Shock": 0.1315,
+        "Searing Totem": 0.0606,
+        "Chain Lightning": 0.0489,
+        "Demonic Rune": 0.0151
+       },
+       "raid_measured_casts": {
+        "Chain Lightning": 7.45,
+        "Searing Totem": 4.0,
+        "Flame Shock": 9.4,
+        "Lightning Bolt": 62.14,
+        "Lava Burst": 14.0
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    },
+    "enhancement-dps": {
+     "trees": [
+      "Enhancement"
+     ],
+     "specs": [
+      "Enhancement",
+      "Hybrid Elemental/Enhancement"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/shaman/enhancement-dps-raid.apl.json",
+     "lines": {
+      "Stormstrike": [
+       1,
+       1
+      ]
+     },
+     "record_commit": "2ce8265",
+     "record_date": "2026-10-16",
+     "env_commit": "2ce8265",
+     "builds": {
+      "enhancement-raid-dps": {
+       "spec": "Enhancement",
+       "listed": true,
+       "page_entry": "enhancement-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Enhancement",
+        "ok": true,
+        "core_share": 0.8633,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Enhancement",
+        "ok": true,
+        "core_share": 0.8633,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Enhancement",
+        "ok": true,
+        "core_share": 0.8207,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 632.6,
+       "raid_measured_top": {
+        "Auto Attack": 0.53,
+        "Stormstrike": 0.117,
+        "Earth Shock": 0.087,
+        "Flame Shock": 0.086,
+        "Lightning Bolt": 0.081,
+        "Fire Nova": 0.053
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.5305,
+        "Stormstrike": 0.1171,
+        "Earth Shock": 0.0871,
+        "Flame Shock": 0.0861,
+        "Lightning Bolt": 0.0813,
+        "Fire Nova": 0.0535,
+        "Searing Totem": 0.0445
+       },
+       "raid_measured_casts": {
+        "Strength of Earth Totem": 1.0,
+        "Grace of Air Totem": 1.0,
+        "Earth Shock": 14.95,
+        "Fire Nova": 16.2,
+        "Flame Shock": 12.86,
+        "Stormstrike": 22.0,
+        "Rage of the Farseer": 1.0,
+        "Searing Totem": 4.0,
+        "Lightning Bolt": 11.74
+       }
+      },
+      "opt-enhancement-dps-raid-dps": {
+       "spec": "Enhancement",
+       "listed": true,
+       "page_entry": "enhancement-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Enhancement",
+        "ok": true,
+        "core_share": 0.8671,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Enhancement",
+        "ok": true,
+        "core_share": 0.8671,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Enhancement",
+        "ok": true,
+        "core_share": 0.8126,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 648.7,
+       "raid_measured_top": {
+        "Auto Attack": 0.509,
+        "Stormstrike": 0.114,
+        "Earth Shock": 0.111,
+        "Flame Shock": 0.079,
+        "Lightning Bolt": 0.078,
+        "Fire Nova": 0.06
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.5086,
+        "Stormstrike": 0.114,
+        "Earth Shock": 0.1109,
+        "Flame Shock": 0.0792,
+        "Lightning Bolt": 0.0776,
+        "Fire Nova": 0.0598,
+        "Searing Totem": 0.0499
+       },
+       "raid_measured_casts": {
+        "Stormstrike": 22.0,
+        "Lightning Bolt": 11.84,
+        "Grace of Air Totem": 1.0,
+        "Rage of the Farseer": 1.0,
+        "Earth Shock": 20.25,
+        "Searing Totem": 4.0,
+        "Fire Nova": 16.23,
+        "Flame Shock": 7.4,
+        "Strength of Earth Totem": 1.0
+       }
+      },
+      "enhancement-ml-raid": {
+       "spec": "Enhancement",
+       "listed": true,
+       "page_entry": "enhancement-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Enhancement",
+        "ok": true,
+        "core_share": 0.8721,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Enhancement",
+        "ok": true,
+        "core_share": 0.8721,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Enhancement",
+        "ok": true,
+        "core_share": 0.7868,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 687.8,
+       "raid_measured_top": {
+        "Auto Attack": 0.484,
+        "Earth Shock": 0.115,
+        "Stormstrike": 0.108,
+        "Fire Nova": 0.1,
+        "Flame Shock": 0.08,
+        "Lightning Bolt": 0.069
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.484,
+        "Earth Shock": 0.1147,
+        "Stormstrike": 0.1085,
+        "Fire Nova": 0.0999,
+        "Flame Shock": 0.0796,
+        "Lightning Bolt": 0.0686,
+        "Searing Totem": 0.0447
+       },
+       "raid_measured_casts": {
+        "Fire Nova": 25.32,
+        "Stormstrike": 22.3,
+        "Rage of the Farseer": 1.0,
+        "Flame Shock": 8.43,
+        "Strength of Earth Totem": 1.0,
+        "Earth Shock": 23.41,
+        "Lightning Bolt": 11.67,
+        "Searing Totem": 4.0,
+        "Grace of Air Totem": 1.0
+       }
+      },
+      "elemental-enhancement-ml-raid": {
+       "spec": "Hybrid Elemental/Enhancement",
+       "listed": true,
+       "page_entry": "enhancement-dps",
+       "role": "dps",
+       "dummy": {
+        "spec": "Hybrid Elemental/Enhancement",
+        "ok": true,
+        "core_share": 0.9706,
+        "min_share": 0.45,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Hybrid Elemental/Enhancement",
+        "ok": true,
+        "core_share": 0.9706,
+        "min_share": 0.45,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Hybrid Elemental/Enhancement",
+        "ok": true,
+        "core_share": 0.462,
+        "min_share": 0.45,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 397.4,
+       "raid_measured_top": {
+        "Lightning Bolt": 0.513,
+        "Stormstrike": 0.177,
+        "Flame Shock": 0.146,
+        "Auto Attack": 0.139,
+        "Searing Totem": 0.025
+       },
+       "raid_measured_shares": {
+        "Lightning Bolt": 0.5126,
+        "Stormstrike": 0.1773,
+        "Flame Shock": 0.1461,
+        "Auto Attack": 0.1386,
+        "Searing Totem": 0.0254
+       },
+       "raid_measured_casts": {
+        "Stormstrike": 21.32,
+        "Strength of Earth Totem": 1.0,
+        "Flame Shock": 8.39,
+        "Lightning Bolt": 53.94,
+        "Searing Totem": 1.0,
+        "Grace of Air Totem": 1.0
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    },
+    "stormcaller-dps": {
+     "trees": [
+      "Elemental"
+     ],
+     "specs": [
+      "Elemental"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/shaman/stormcaller-dps-raid.apl.json",
+     "lines": {
+      "Lightning Bolt": [
+       2,
+       1
+      ]
+     },
+     "record_commit": "2ce8265",
+     "record_date": "2026-10-16",
+     "env_commit": "2ce8265",
+     "builds": {}
+    }
+   },
+   "pages": {
+    "elemental-raid-dps": "elemental-dps",
+    "opt-elemental-dps-raid-dps": "elemental-dps",
+    "elemental-raid": "elemental-dps",
+    "sim preset: Elemental 31/6/14": "elemental-dps",
+    "sim preset: Level 60": "enhancement-dps",
+    "sim preset: Stormcaller 28/23/0": "stormcaller-dps",
+    "enhancement-ml-raid": "enhancement-dps",
+    "elemental-enhancement-ml-raid": "enhancement-dps",
+    "opt-enhancement-dps-raid-dps": "enhancement-dps",
+    "enhancement-raid-dps": "enhancement-dps",
+    "sim preset: Enhancement 16/35/0": "enhancement-dps"
+   }
+  },
+  "warlock": {
+   "entries": {
+    "affliction-raid": {
+     "trees": [
+      "Affliction"
+     ],
+     "specs": [
+      "Affliction"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/warlock/affliction-raid-raid.apl.json",
+     "lines": {
+      "Corruption": [
+       1,
+       1
+      ],
+      "Bane of Agony": [
+       1,
+       1
+      ]
+     },
+     "record_commit": "2ce8265",
+     "record_date": "2026-10-15",
+     "env_commit": "2ce8265",
+     "builds": {
+      "affliction-dot-raid": {
+       "spec": "Affliction",
+       "listed": true,
+       "page_entry": "affliction-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Affliction",
+        "ok": true,
+        "core_share": 0.3216,
+        "min_share": 0.3,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Affliction",
+        "ok": true,
+        "core_share": 0.3216,
+        "min_share": 0.3,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Affliction",
+        "ok": true,
+        "core_share": 0.3153,
+        "min_share": 0.3,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 827.1,
+       "raid_measured_top": {
+        "Shadow Bolt": 0.49,
+        "Bane of Agony": 0.163,
+        "Corruption": 0.152,
+        "Immolate": 0.11,
+        "Pet: Auto Attack": 0.061,
+        "Demonic Rune": 0.01
+       },
+       "raid_measured_shares": {
+        "Shadow Bolt": 0.4902,
+        "Bane of Agony": 0.1634,
+        "Corruption": 0.1519,
+        "Immolate": 0.11,
+        "Pet: Auto Attack": 0.0612,
+        "Demonic Rune": 0.01,
+        "Pet: Lash of Pain": 0.0093,
+        "Searing Pain": 0.004
+       },
+       "raid_measured_casts": {
+        "Amplify Curse": 1.95,
+        "Immolate": 11.56,
+        "Corruption": 10.41,
+        "Shadow Bolt": 46.89,
+        "Searing Pain": 1.04,
+        "Life Tap": 12.73,
+        "Curse of the Elements": 1.09,
+        "Bane of Agony": 7.99
+       }
+      },
+      "opt-affliction-raid-raid-dps": {
+       "spec": "Affliction",
+       "listed": true,
+       "page_entry": "affliction-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Affliction",
+        "ok": true,
+        "core_share": 0.3273,
+        "min_share": 0.3,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Affliction",
+        "ok": true,
+        "core_share": 0.3273,
+        "min_share": 0.3,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Affliction",
+        "ok": true,
+        "core_share": 0.3149,
+        "min_share": 0.3,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 832.3,
+       "raid_measured_top": {
+        "Shadow Bolt": 0.5,
+        "Bane of Agony": 0.163,
+        "Corruption": 0.152,
+        "Immolate": 0.102,
+        "Pet: Auto Attack": 0.061,
+        "Demonic Rune": 0.01
+       },
+       "raid_measured_shares": {
+        "Shadow Bolt": 0.4996,
+        "Bane of Agony": 0.1627,
+        "Corruption": 0.1522,
+        "Immolate": 0.1015,
+        "Pet: Auto Attack": 0.0607,
+        "Demonic Rune": 0.01,
+        "Pet: Lash of Pain": 0.0092,
+        "Searing Pain": 0.0041
+       },
+       "raid_measured_casts": {
+        "Bane of Agony": 7.94,
+        "Curse of the Elements": 1.09,
+        "Corruption": 10.48,
+        "Life Tap": 10.45,
+        "Searing Pain": 1.08,
+        "Immolate": 11.75,
+        "Amplify Curse": 1.93,
+        "Shadow Bolt": 48.15
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    },
+    "fire-destro-raid": {
+     "trees": [
+      "Destruction"
+     ],
+     "specs": [
+      "Destruction",
+      "Hybrid Affliction/Destruction"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/warlock/fire-destro-raid-raid.apl.json",
+     "lines": {
+      "Shadow Bolt": [
+       1,
+       1
+      ]
+     },
+     "record_commit": "2ce8265",
+     "record_date": "2026-10-15",
+     "env_commit": "2ce8265",
+     "builds": {
+      "destruction-fire-raid": {
+       "spec": "Hybrid Affliction/Destruction",
+       "listed": true,
+       "page_entry": "fire-destro-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Hybrid Affliction/Destruction",
+        "ok": true,
+        "core_share": 0.5238,
+        "min_share": 0.35,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Hybrid Affliction/Destruction",
+        "ok": true,
+        "core_share": 0.5238,
+        "min_share": 0.35,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Hybrid Affliction/Destruction",
+        "ok": true,
+        "core_share": 0.5363,
+        "min_share": 0.35,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 745.9,
+       "raid_measured_top": {
+        "Shadow Bolt": 0.536,
+        "Corruption": 0.168,
+        "Bane of Agony": 0.163,
+        "Immolate": 0.11,
+        "Demonic Rune": 0.013,
+        "Searing Pain": 0.009
+       },
+       "raid_measured_shares": {
+        "Shadow Bolt": 0.5363,
+        "Corruption": 0.1685,
+        "Bane of Agony": 0.1635,
+        "Immolate": 0.1099,
+        "Demonic Rune": 0.0127,
+        "Searing Pain": 0.0091
+       },
+       "raid_measured_casts": {
+        "Bane of Agony": 7.8,
+        "Corruption": 9.92,
+        "Searing Pain": 2.15,
+        "Shadow Bolt": 46.93,
+        "Life Tap": 12.49,
+        "Curse of the Elements": 1.12,
+        "Immolate": 11.21
+       }
+      },
+      "opt-fire-destro-raid-raid-dps": {
+       "spec": "Destruction",
+       "listed": true,
+       "page_entry": "fire-destro-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Destruction",
+        "ok": true,
+        "core_share": 0.6796,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Destruction",
+        "ok": true,
+        "core_share": 0.6796,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Destruction",
+        "ok": true,
+        "core_share": 0.6847,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 742.0,
+       "raid_measured_top": {
+        "Shadow Bolt": 0.468,
+        "Corruption": 0.154,
+        "Bane of Agony": 0.147,
+        "Immolate": 0.108,
+        "Conflagrate": 0.1,
+        "Demonic Rune": 0.014
+       },
+       "raid_measured_shares": {
+        "Shadow Bolt": 0.4676,
+        "Corruption": 0.1539,
+        "Bane of Agony": 0.1472,
+        "Immolate": 0.1079,
+        "Conflagrate": 0.0998,
+        "Demonic Rune": 0.0142,
+        "Searing Pain": 0.0094
+       },
+       "raid_measured_casts": {
+        "Bane of Agony": 7.83,
+        "Searing Pain": 2.17,
+        "Corruption": 9.89,
+        "Life Tap": 10.19,
+        "Curse of the Elements": 1.12,
+        "Immolate": 10.79,
+        "Shadow Bolt": 39.2,
+        "Conflagrate": 15.41
+       }
+      },
+      "shadow-bolt-hybrid-fire-open-raid": {
+       "spec": "Hybrid Affliction/Destruction",
+       "listed": true,
+       "page_entry": "fire-destro-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Hybrid Affliction/Destruction",
+        "ok": true,
+        "core_share": 0.526,
+        "min_share": 0.35,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Hybrid Affliction/Destruction",
+        "ok": true,
+        "core_share": 0.526,
+        "min_share": 0.35,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Hybrid Affliction/Destruction",
+        "ok": true,
+        "core_share": 0.5436,
+        "min_share": 0.35,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 766.1,
+       "raid_measured_top": {
+        "Shadow Bolt": 0.544,
+        "Bane of Agony": 0.167,
+        "Corruption": 0.159,
+        "Immolate": 0.108,
+        "Demonic Rune": 0.012,
+        "Searing Pain": 0.01
+       },
+       "raid_measured_shares": {
+        "Shadow Bolt": 0.5436,
+        "Bane of Agony": 0.1673,
+        "Corruption": 0.1589,
+        "Immolate": 0.1082,
+        "Demonic Rune": 0.0125,
+        "Searing Pain": 0.0095
+       },
+       "raid_measured_casts": {
+        "Curse of the Elements": 1.12,
+        "Bane of Agony": 7.77,
+        "Corruption": 9.92,
+        "Shadow Bolt": 47.84,
+        "Searing Pain": 2.26,
+        "Life Tap": 11.03,
+        "Immolate": 11.12
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    },
+    "sb-raid": {
+     "trees": [
+      "Destruction"
+     ],
+     "specs": [
+      "Destruction",
+      "Hybrid Affliction/Destruction"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/warlock/sb-raid-raid.apl.json",
+     "lines": {
+      "Shadow Bolt": [
+       1,
+       1
+      ]
+     },
+     "record_commit": "2ce8265",
+     "record_date": "2026-10-15",
+     "env_commit": "2ce8265",
+     "builds": {
+      "ds-ruin-raid": {
+       "spec": "Hybrid Affliction/Destruction",
+       "listed": true,
+       "page_entry": "sb-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Hybrid Affliction/Destruction",
+        "ok": true,
+        "core_share": 0.5247,
+        "min_share": 0.35,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Hybrid Affliction/Destruction",
+        "ok": true,
+        "core_share": 0.5247,
+        "min_share": 0.35,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Hybrid Affliction/Destruction",
+        "ok": true,
+        "core_share": 0.5377,
+        "min_share": 0.35,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 789.7,
+       "raid_measured_top": {
+        "Shadow Bolt": 0.538,
+        "Bane of Agony": 0.182,
+        "Corruption": 0.165,
+        "Immolate": 0.1,
+        "Demonic Rune": 0.012,
+        "Searing Pain": 0.004
+       },
+       "raid_measured_shares": {
+        "Shadow Bolt": 0.5377,
+        "Bane of Agony": 0.1818,
+        "Corruption": 0.1645,
+        "Immolate": 0.0995,
+        "Demonic Rune": 0.0121,
+        "Searing Pain": 0.0044
+       },
+       "raid_measured_casts": {
+        "Searing Pain": 1.06,
+        "Curse of the Elements": 1.08,
+        "Immolate": 10.57,
+        "Life Tap": 13.21,
+        "Shadow Bolt": 47.47,
+        "Amplify Curse": 1.63,
+        "Bane of Agony": 7.95,
+        "Corruption": 9.88
+       }
+      },
+      "opt-sb-raid-raid-dps": {
+       "spec": "Destruction",
+       "listed": true,
+       "page_entry": "sb-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Destruction",
+        "ok": true,
+        "core_share": 0.6455,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Destruction",
+        "ok": true,
+        "core_share": 0.6455,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Destruction",
+        "ok": true,
+        "core_share": 0.6786,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 759.4,
+       "raid_measured_top": {
+        "Shadow Bolt": 0.475,
+        "Corruption": 0.156,
+        "Bane of Agony": 0.152,
+        "Immolate": 0.107,
+        "Conflagrate": 0.093,
+        "Demonic Rune": 0.014
+       },
+       "raid_measured_shares": {
+        "Shadow Bolt": 0.4749,
+        "Corruption": 0.1562,
+        "Bane of Agony": 0.1515,
+        "Immolate": 0.1066,
+        "Conflagrate": 0.0926,
+        "Demonic Rune": 0.0137,
+        "Searing Pain": 0.0044
+       },
+       "raid_measured_casts": {
+        "Corruption": 9.91,
+        "Immolate": 10.32,
+        "Searing Pain": 1.05,
+        "Curse of the Elements": 1.08,
+        "Shadow Bolt": 39.59,
+        "Conflagrate": 13.89,
+        "Bane of Agony": 7.91,
+        "Life Tap": 12.63
+       }
+      },
+      "destruction-ml-raid": {
+       "spec": "Destruction",
+       "listed": true,
+       "page_entry": "sb-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Destruction",
+        "ok": true,
+        "core_share": 0.6771,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Destruction",
+        "ok": true,
+        "core_share": 0.6771,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Destruction",
+        "ok": true,
+        "core_share": 0.6788,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 764.7,
+       "raid_measured_top": {
+        "Shadow Bolt": 0.481,
+        "Corruption": 0.156,
+        "Bane of Agony": 0.152,
+        "Immolate": 0.1,
+        "Conflagrate": 0.093,
+        "Demonic Rune": 0.014
+       },
+       "raid_measured_shares": {
+        "Shadow Bolt": 0.4815,
+        "Corruption": 0.1558,
+        "Bane of Agony": 0.1518,
+        "Immolate": 0.1004,
+        "Conflagrate": 0.0925,
+        "Demonic Rune": 0.0136,
+        "Searing Pain": 0.0044
+       },
+       "raid_measured_casts": {
+        "Conflagrate": 13.95,
+        "Curse of the Elements": 1.08,
+        "Shadow Bolt": 40.3,
+        "Life Tap": 11.23,
+        "Bane of Agony": 8.08,
+        "Immolate": 10.36,
+        "Searing Pain": 1.07,
+        "Corruption": 9.89
+       }
+      },
+      "shadow-bolt-hybrid-open-raid": {
+       "spec": "Hybrid Affliction/Destruction",
+       "listed": true,
+       "page_entry": "sb-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Hybrid Affliction/Destruction",
+        "ok": true,
+        "core_share": 0.5351,
+        "min_share": 0.35,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Hybrid Affliction/Destruction",
+        "ok": true,
+        "core_share": 0.5351,
+        "min_share": 0.35,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Hybrid Affliction/Destruction",
+        "ok": true,
+        "core_share": 0.5505,
+        "min_share": 0.35,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 784.4,
+       "raid_measured_top": {
+        "Shadow Bolt": 0.55,
+        "Bane of Agony": 0.172,
+        "Corruption": 0.16,
+        "Immolate": 0.101,
+        "Demonic Rune": 0.012,
+        "Searing Pain": 0.005
+       },
+       "raid_measured_shares": {
+        "Shadow Bolt": 0.5505,
+        "Bane of Agony": 0.1721,
+        "Corruption": 0.1599,
+        "Immolate": 0.1009,
+        "Demonic Rune": 0.0122,
+        "Searing Pain": 0.0045
+       },
+       "raid_measured_casts": {
+        "Shadow Bolt": 48.28,
+        "Searing Pain": 1.1,
+        "Bane of Agony": 7.96,
+        "Immolate": 10.68,
+        "Corruption": 9.88,
+        "Curse of the Elements": 1.08,
+        "Life Tap": 11.8
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    },
+    "demonology-raid": {
+     "trees": [
+      "Demonology"
+     ],
+     "specs": [
+      "Demonology"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/warlock/demonology-raid-raid.apl.json",
+     "lines": {},
+     "record_commit": "2ce8265",
+     "record_date": "2026-10-15",
+     "env_commit": "2ce8265",
+     "builds": {
+      "demonology-pact-raid": {
+       "spec": "Demonology",
+       "listed": true,
+       "page_entry": "demonology-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Demonology",
+        "ok": false,
+        "core_share": 0.0905,
+        "min_share": 0.1,
+        "uncast": [],
+        "missing_talents": [],
+        "why": "core share 9% under 10% (pet)"
+       },
+       "raid_record": {
+        "spec": "Demonology",
+        "ok": false,
+        "core_share": 0.0905,
+        "min_share": 0.1,
+        "uncast": [],
+        "missing_talents": [],
+        "why": "core share 9% under 10% (pet)"
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Demonology",
+        "ok": false,
+        "core_share": 0.0812,
+        "min_share": 0.1,
+        "uncast": [],
+        "missing_talents": [],
+        "why": "core share 8% under 10% (pet)"
+       },
+       "raid_measured_dps": 863.8,
+       "raid_measured_top": {
+        "Shadow Bolt": 0.518,
+        "Bane of Agony": 0.146,
+        "Corruption": 0.143,
+        "Immolate": 0.096,
+        "Pet: Auto Attack": 0.065,
+        "Pet: Lash of Pain": 0.016
+       },
+       "raid_measured_shares": {
+        "Shadow Bolt": 0.518,
+        "Bane of Agony": 0.146,
+        "Corruption": 0.1427,
+        "Immolate": 0.0958,
+        "Pet: Auto Attack": 0.0646,
+        "Pet: Lash of Pain": 0.0165,
+        "Demonic Rune": 0.0125,
+        "Searing Pain": 0.0038,
+        "Pet: spell 1293697": 0.0002
+       },
+       "raid_measured_casts": {
+        "Curse of the Elements": 1.14,
+        "Corruption": 10.46,
+        "Immolate": 10.98,
+        "Life Tap": 12.3,
+        "Shadow Bolt": 46.23,
+        "Searing Pain": 0.95,
+        "Bane of Agony": 8.27
+       }
+      },
+      "demonology-ml-raid": {
+       "spec": "Demonology",
+       "listed": true,
+       "page_entry": "demonology-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Demonology",
+        "ok": false,
+        "core_share": 0.0932,
+        "min_share": 0.1,
+        "uncast": [],
+        "missing_talents": [],
+        "why": "core share 9% under 10% (pet)"
+       },
+       "raid_record": {
+        "spec": "Demonology",
+        "ok": false,
+        "core_share": 0.0932,
+        "min_share": 0.1,
+        "uncast": [],
+        "missing_talents": [],
+        "why": "core share 9% under 10% (pet)"
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Demonology",
+        "ok": false,
+        "core_share": 0.0828,
+        "min_share": 0.1,
+        "uncast": [],
+        "missing_talents": [],
+        "why": "core share 8% under 10% (pet)"
+       },
+       "raid_measured_dps": 868.1,
+       "raid_measured_top": {
+        "Shadow Bolt": 0.518,
+        "Bane of Agony": 0.146,
+        "Corruption": 0.142,
+        "Immolate": 0.095,
+        "Pet: Auto Attack": 0.065,
+        "Pet: Lash of Pain": 0.018
+       },
+       "raid_measured_shares": {
+        "Shadow Bolt": 0.5181,
+        "Bane of Agony": 0.1457,
+        "Corruption": 0.1415,
+        "Immolate": 0.0955,
+        "Pet: Auto Attack": 0.0647,
+        "Pet: Lash of Pain": 0.018,
+        "Demonic Rune": 0.0125,
+        "Searing Pain": 0.004,
+        "Pet: spell 1293697": 0.0002
+       },
+       "raid_measured_casts": {
+        "Searing Pain": 0.97,
+        "Life Tap": 13.14,
+        "Curse of the Elements": 1.13,
+        "Bane of Agony": 8.16,
+        "Shadow Bolt": 45.94,
+        "Immolate": 10.9,
+        "Corruption": 10.3
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    },
+    "incinerate-raid": {
+     "trees": [
+      "Destruction"
+     ],
+     "specs": [
+      "Destruction"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/warlock/incinerate-raid-raid.apl.json",
+     "lines": {},
+     "record_commit": "2ce8265",
+     "record_date": "2026-10-15",
+     "env_commit": "2ce8265",
+     "builds": {
+      "destruction-incinerate-raid": {
+       "spec": "Destruction",
+       "listed": true,
+       "page_entry": "incinerate-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Destruction",
+        "ok": true,
+        "core_share": 0.6782,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Destruction",
+        "ok": true,
+        "core_share": 0.6782,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Destruction",
+        "ok": true,
+        "core_share": 0.6819,
+        "min_share": 0.6,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 715.0,
+       "raid_measured_top": {
+        "Shadow Bolt": 0.454,
+        "Corruption": 0.157,
+        "Bane of Agony": 0.146,
+        "Immolate": 0.123,
+        "Conflagrate": 0.1,
+        "Demonic Rune": 0.015
+       },
+       "raid_measured_shares": {
+        "Shadow Bolt": 0.4538,
+        "Corruption": 0.1574,
+        "Bane of Agony": 0.1461,
+        "Immolate": 0.1234,
+        "Conflagrate": 0.1001,
+        "Demonic Rune": 0.0146,
+        "Searing Pain": 0.0046,
+        "Incinerate": 0.0001
+       },
+       "raid_measured_casts": {
+        "Corruption": 10.95,
+        "Life Tap": 11.89,
+        "Conflagrate": 13.84,
+        "Incinerate": 0.01,
+        "Curse of the Elements": 1.09,
+        "Bane of Agony": 7.75,
+        "Immolate": 10.64,
+        "Shadow Bolt": 39.22,
+        "Searing Pain": 1.03
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    }
+   },
+   "pages": {
+    "opt-affliction-raid-raid-dps": "affliction-raid",
+    "affliction-dot-raid": "affliction-raid",
+    "sim preset: Demonic Pact 2/31/18": "demonology-raid",
+    "sim preset: Demonic Pact": "demonology-raid",
+    "sim preset: DS/Ruin Pandemic 24/11/16": "affliction-raid",
+    "sim preset: DS/Ruin": "affliction-raid",
+    "sim preset: Deep Affliction 35/0/16": "affliction-raid",
+    "sim preset: Affliction": "affliction-raid",
+    "sim preset: Shadow and Flame 13/11/27": "affliction-raid",
+    "shadow-bolt-hybrid-fire-open-raid": "fire-destro-raid",
+    "destruction-fire-raid": "fire-destro-raid",
+    "opt-fire-destro-raid-raid-dps": "fire-destro-raid",
+    "shadow-bolt-hybrid-open-raid": "sb-raid",
+    "opt-sb-raid-raid-dps": "sb-raid",
+    "ds-ruin-raid": "sb-raid",
+    "destruction-ml-raid": "sb-raid",
+    "demonology-ml-raid": "demonology-raid",
+    "demonology-pact-raid": "demonology-raid",
+    "destruction-incinerate-raid": "incinerate-raid"
+   }
+  },
+  "warrior": {
+   "entries": {
+    "arms-2h-raid": {
+     "trees": [
+      "Arms",
+      "Fury"
+     ],
+     "specs": [
+      "Arms",
+      "Fury"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/warrior/arms-2h-raid-raid.apl.json",
+     "lines": {
+      "Mortal Strike": [
+       1,
+       1
+      ],
+      "Bloodthirst": [
+       1,
+       1
+      ]
+     },
+     "record_commit": "2ce8265",
+     "record_date": "2026-10-16",
+     "env_commit": "2ce8265",
+     "builds": {
+      "arms-2h-raid": {
+       "spec": "Fury",
+       "listed": true,
+       "page_entry": "arms-2h-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Fury",
+        "ok": true,
+        "core_share": 0.9293,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Fury",
+        "ok": true,
+        "core_share": 0.9293,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Fury",
+        "ok": true,
+        "core_share": 0.8945,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 828.5,
+       "raid_measured_top": {
+        "Auto Attack": 0.495,
+        "Bloodthirst": 0.188,
+        "Execute": 0.135,
+        "Deep Wound": 0.076,
+        "Whirlwind": 0.075,
+        "Hamstring": 0.025
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.4952,
+        "Bloodthirst": 0.1885,
+        "Execute": 0.1354,
+        "Deep Wound": 0.0758,
+        "Whirlwind": 0.0754,
+        "Hamstring": 0.0254,
+        "item 274759": 0.0043
+       },
+       "raid_measured_casts": {
+        "Bloodthirst": 26.25,
+        "Execute": 13.86,
+        "Deep Wound": 80.58,
+        "Recklessness": 1.0,
+        "Whirlwind": 13.97,
+        "Death Wish": 1.0,
+        "Bloodrage": 1.9,
+        "Hamstring": 59.05
+       }
+      },
+      "opt-arms-2h-raid-raid-dps": {
+       "spec": "Fury",
+       "listed": true,
+       "page_entry": "arms-2h-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Fury",
+        "ok": true,
+        "core_share": 0.9294,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Fury",
+        "ok": true,
+        "core_share": 0.9294,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Fury",
+        "ok": true,
+        "core_share": 0.8948,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 823.1,
+       "raid_measured_top": {
+        "Auto Attack": 0.498,
+        "Bloodthirst": 0.188,
+        "Execute": 0.133,
+        "Whirlwind": 0.077,
+        "Deep Wound": 0.075,
+        "Hamstring": 0.025
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.4976,
+        "Bloodthirst": 0.188,
+        "Execute": 0.1325,
+        "Whirlwind": 0.0767,
+        "Deep Wound": 0.0755,
+        "Hamstring": 0.0254,
+        "item 274759": 0.0043
+       },
+       "raid_measured_casts": {
+        "Berserker Rage": 1.46,
+        "Whirlwind": 14.1,
+        "Death Wish": 1.0,
+        "Execute": 13.41,
+        "Hamstring": 58.59,
+        "Bloodrage": 1.92,
+        "Recklessness": 1.0,
+        "Deep Wound": 79.71,
+        "Bloodthirst": 25.98
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    },
+    "fury-dw-raid": {
+     "trees": [
+      "Arms",
+      "Fury"
+     ],
+     "specs": [
+      "Arms",
+      "Fury"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/warrior/fury-dw-raid-raid.apl.json",
+     "lines": {
+      "Mortal Strike": [
+       1,
+       1
+      ],
+      "Bloodthirst": [
+       1,
+       1
+      ]
+     },
+     "record_commit": "2ce8265",
+     "record_date": "2026-10-16",
+     "env_commit": "2ce8265",
+     "builds": {
+      "fury-dw-raid": {
+       "spec": "Fury",
+       "listed": true,
+       "page_entry": "fury-dw-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Fury",
+        "ok": true,
+        "core_share": 0.9585,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Fury",
+        "ok": true,
+        "core_share": 0.9585,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Fury",
+        "ok": true,
+        "core_share": 0.9369,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 869.3,
+       "raid_measured_top": {
+        "Auto Attack": 0.475,
+        "Bloodthirst": 0.18,
+        "Execute": 0.127,
+        "Whirlwind": 0.098,
+        "Heroic Strike": 0.057,
+        "Deep Wound": 0.044
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.4749,
+        "Bloodthirst": 0.1802,
+        "Execute": 0.1267,
+        "Whirlwind": 0.0983,
+        "Heroic Strike": 0.0567,
+        "Deep Wound": 0.0439,
+        "Hamstring": 0.0192
+       },
+       "raid_measured_casts": {
+        "Deep Wound": 117.98,
+        "Hamstring": 48.21,
+        "Death Wish": 1.0,
+        "Whirlwind": 16.5,
+        "Bloodthirst": 26.15,
+        "Recklessness": 1.0,
+        "Bloodrage": 1.99,
+        "Heroic Strike": 10.68,
+        "Execute": 16.91
+       }
+      },
+      "opt-fury-dw-raid-raid-dps": {
+       "spec": "Fury",
+       "listed": true,
+       "page_entry": "fury-dw-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Fury",
+        "ok": true,
+        "core_share": 0.9412,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Fury",
+        "ok": true,
+        "core_share": 0.9412,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Fury",
+        "ok": true,
+        "core_share": 0.9203,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 906.0,
+       "raid_measured_top": {
+        "Auto Attack": 0.455,
+        "Bloodthirst": 0.185,
+        "Execute": 0.126,
+        "Whirlwind": 0.099,
+        "Deep Wound": 0.061,
+        "Heroic Strike": 0.056
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.4547,
+        "Bloodthirst": 0.1846,
+        "Execute": 0.1257,
+        "Whirlwind": 0.0993,
+        "Deep Wound": 0.061,
+        "Heroic Strike": 0.0561,
+        "Hamstring": 0.0187
+       },
+       "raid_measured_casts": {
+        "Recklessness": 1.0,
+        "Execute": 15.58,
+        "Bloodrage": 2.09,
+        "Bloodthirst": 26.23,
+        "Berserker Rage": 2.0,
+        "Hamstring": 47.0,
+        "Whirlwind": 16.52,
+        "Death Wish": 1.0,
+        "Deep Wound": 116.4,
+        "Heroic Strike": 10.17
+       }
+      },
+      "fury-open-raid": {
+       "spec": "Fury",
+       "listed": true,
+       "page_entry": "fury-dw-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Fury",
+        "ok": true,
+        "core_share": 0.9434,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Fury",
+        "ok": true,
+        "core_share": 0.9434,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Fury",
+        "ok": true,
+        "core_share": 0.9197,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 917.4,
+       "raid_measured_top": {
+        "Auto Attack": 0.448,
+        "Bloodthirst": 0.182,
+        "Execute": 0.13,
+        "Whirlwind": 0.099,
+        "Deep Wound": 0.061,
+        "Heroic Strike": 0.06
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.4484,
+        "Bloodthirst": 0.1824,
+        "Execute": 0.1299,
+        "Whirlwind": 0.0991,
+        "Deep Wound": 0.061,
+        "Heroic Strike": 0.0598,
+        "Hamstring": 0.0193
+       },
+       "raid_measured_casts": {
+        "Heroic Strike": 11.29,
+        "Hamstring": 48.46,
+        "Whirlwind": 16.54,
+        "Deep Wound": 118.1,
+        "Death Wish": 1.0,
+        "Execute": 16.97,
+        "Recklessness": 1.0,
+        "Bloodrage": 1.97,
+        "Bloodthirst": 26.33
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    },
+    "prot-tank": {
+     "trees": [
+      "Protection"
+     ],
+     "specs": [
+      "Protection"
+     ],
+     "tank": true,
+     "rotation": "_reference/data/raidsim/apls/warrior/prot-tank-raid.apl.json",
+     "lines": {
+      "Shield Slam": [
+       1,
+       1
+      ]
+     },
+     "record_commit": "2ce8265",
+     "record_date": "2026-10-15",
+     "env_commit": "2ce8265",
+     "builds": {
+      "prot-raid-tank": {
+       "spec": "Protection",
+       "listed": true,
+       "page_entry": "prot-tank",
+       "role": "tank",
+       "raid_record": {
+        "spec": "Protection",
+        "ok": false,
+        "core_share": null,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": "no damage shares"
+       },
+       "raid_record_shares": "none",
+       "raid_measured": {
+        "spec": "Protection",
+        "ok": true,
+        "core_share": 0.9435,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 487.2,
+       "raid_measured_top": {
+        "Heroic Strike": 0.305,
+        "Revenge": 0.257,
+        "Shield Slam": 0.223,
+        "Auto Attack": 0.158,
+        "Rend": 0.042,
+        "Retribution Aura": 0.008
+       },
+       "raid_measured_shares": {
+        "Heroic Strike": 0.3055,
+        "Revenge": 0.257,
+        "Shield Slam": 0.2233,
+        "Auto Attack": 0.1576,
+        "Rend": 0.042,
+        "Retribution Aura": 0.0076,
+        "Thorns": 0.0069
+       },
+       "raid_measured_casts": {
+        "Shield Slam": 29.09,
+        "Rend": 8.8,
+        "Sunder Armor": 54.34,
+        "Revenge": 26.15,
+        "Shield Wall": 1.0,
+        "Bloodrage": 3.0,
+        "Heroic Strike": 54.43
+       }
+      },
+      "opt-prot-tank-raid-tank": {
+       "spec": "Protection",
+       "listed": true,
+       "page_entry": "prot-tank",
+       "role": "tank",
+       "raid_record": {
+        "spec": "Protection",
+        "ok": false,
+        "core_share": null,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": "no damage shares"
+       },
+       "raid_record_shares": "none",
+       "raid_measured": {
+        "spec": "Protection",
+        "ok": true,
+        "core_share": 0.9092,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 500.6,
+       "raid_measured_top": {
+        "Heroic Strike": 0.279,
+        "Revenge": 0.249,
+        "Shield Slam": 0.217,
+        "Auto Attack": 0.163,
+        "Rend": 0.053,
+        "Deep Wound": 0.023
+       },
+       "raid_measured_shares": {
+        "Heroic Strike": 0.2792,
+        "Revenge": 0.2495,
+        "Shield Slam": 0.2171,
+        "Auto Attack": 0.1634,
+        "Rend": 0.0533,
+        "Deep Wound": 0.0233,
+        "Retribution Aura": 0.0075,
+        "Thorns": 0.0068
+       },
+       "raid_measured_casts": {
+        "Shield Wall": 1.0,
+        "Rend": 8.82,
+        "Revenge": 26.2,
+        "Deep Wound": 30.26,
+        "Sunder Armor": 54.17,
+        "Shield Slam": 28.92,
+        "Heroic Strike": 51.12,
+        "Bloodrage": 3.0
+       }
+      },
+      "protection-ml-tank": {
+       "spec": "Protection",
+       "listed": true,
+       "page_entry": "prot-tank",
+       "role": "tank",
+       "raid_record": {
+        "spec": "Protection",
+        "ok": false,
+        "core_share": null,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": "no damage shares"
+       },
+       "raid_record_shares": "none",
+       "raid_measured": {
+        "spec": "Protection",
+        "ok": true,
+        "core_share": 0.9116,
+        "min_share": 0.7,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 510.3,
+       "raid_measured_top": {
+        "Heroic Strike": 0.296,
+        "Revenge": 0.249,
+        "Shield Slam": 0.219,
+        "Auto Attack": 0.147,
+        "Rend": 0.053,
+        "Deep Wound": 0.021
+       },
+       "raid_measured_shares": {
+        "Heroic Strike": 0.2963,
+        "Revenge": 0.2492,
+        "Shield Slam": 0.2192,
+        "Auto Attack": 0.1468,
+        "Rend": 0.0531,
+        "Deep Wound": 0.0214,
+        "Retribution Aura": 0.0073,
+        "Thorns": 0.0066
+       },
+       "raid_measured_casts": {
+        "Bloodrage": 3.0,
+        "Deep Wound": 28.0,
+        "Revenge": 26.17,
+        "Rend": 8.83,
+        "Sunder Armor": 54.39,
+        "Shield Slam": 29.1,
+        "Shield Wall": 1.0,
+        "Heroic Strike": 54.51
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    },
+    "arms-battle-raid": {
+     "trees": [
+      "Arms"
+     ],
+     "specs": [
+      "Arms"
+     ],
+     "tank": false,
+     "rotation": "_reference/data/raidsim/apls/warrior/arms-battle-raid-raid.apl.json",
+     "lines": {
+      "Mortal Strike": [
+       1,
+       1
+      ]
+     },
+     "record_commit": "2ce8265",
+     "record_date": "2026-10-16",
+     "env_commit": "2ce8265",
+     "builds": {
+      "arms-battle-raid": {
+       "spec": "Arms",
+       "listed": true,
+       "page_entry": "arms-battle-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Arms",
+        "ok": false,
+        "core_share": 0.9831,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [
+         "Mortal Strike"
+        ],
+        "why": "lacks Mortal Strike"
+       },
+       "raid_record": {
+        "spec": "Arms",
+        "ok": false,
+        "core_share": 0.9831,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [
+         "Mortal Strike"
+        ],
+        "why": "lacks Mortal Strike"
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Arms",
+        "ok": false,
+        "core_share": 0.9511,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [
+         "Mortal Strike"
+        ],
+        "why": "lacks Mortal Strike"
+       },
+       "raid_measured_dps": 708.9,
+       "raid_measured_top": {
+        "Auto Attack": 0.468,
+        "Overpower": 0.163,
+        "Execute": 0.112,
+        "Slam": 0.081,
+        "Deep Wound": 0.075,
+        "Rend": 0.053
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.4677,
+        "Overpower": 0.1626,
+        "Execute": 0.1116,
+        "Slam": 0.0808,
+        "Deep Wound": 0.0753,
+        "Rend": 0.0532,
+        "Hamstring": 0.0317,
+        "Spearing Strike": 0.0172
+       },
+       "raid_measured_casts": {
+        "Hamstring": 62.18,
+        "Slam": 11.32,
+        "Spearing Strike": 7.0,
+        "Overpower": 17.09,
+        "Bloodrage": 1.01,
+        "Execute": 12.52,
+        "Deep Wound": 70.59,
+        "Rend": 8.88,
+        "Battle Stance": 1.0
+       }
+      },
+      "arms-community-parse": {
+       "spec": "Arms",
+       "listed": true,
+       "page_entry": "arms-battle-raid",
+       "role": "dps",
+       "dummy": {
+        "spec": "Arms",
+        "ok": true,
+        "core_share": 0.985,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record": {
+        "spec": "Arms",
+        "ok": true,
+        "core_share": 0.985,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_record_shares": "training dummy",
+       "raid_measured": {
+        "spec": "Arms",
+        "ok": true,
+        "core_share": 0.9649,
+        "min_share": 0.8,
+        "uncast": [],
+        "missing_talents": [],
+        "why": ""
+       },
+       "raid_measured_dps": 787.3,
+       "raid_measured_top": {
+        "Auto Attack": 0.419,
+        "Mortal Strike": 0.151,
+        "Overpower": 0.146,
+        "Slam": 0.071,
+        "Deep Wound": 0.067,
+        "Execute": 0.063
+       },
+       "raid_measured_shares": {
+        "Auto Attack": 0.4188,
+        "Mortal Strike": 0.1512,
+        "Overpower": 0.1458,
+        "Slam": 0.0714,
+        "Deep Wound": 0.0672,
+        "Execute": 0.0627,
+        "Rend": 0.0478,
+        "Hamstring": 0.0196,
+        "Spearing Strike": 0.0155
+       },
+       "raid_measured_casts": {
+        "Execute": 8.7,
+        "Hamstring": 42.72,
+        "Deep Wound": 70.0,
+        "Rend": 8.91,
+        "Mortal Strike": 22.07,
+        "Bloodrage": 2.04,
+        "Overpower": 17.01,
+        "Slam": 11.18,
+        "Battle Stance": 1.0,
+        "Spearing Strike": 6.96
+       }
+      }
+     },
+     "measured_commit": "30f67f5d2"
+    }
+   },
+   "pages": {
+    "opt-arms-2h-raid-raid-dps": "arms-2h-raid",
+    "arms-2h-raid": "arms-2h-raid",
+    "sim preset: DPS": "fury-dw-raid",
+    "sim preset: Fury 17/34/0": "arms-2h-raid",
+    "sim preset: Arms 39/12/0": "arms-battle-raid",
+    "fury-open-raid": "fury-dw-raid",
+    "opt-fury-dw-raid-raid-dps": "fury-dw-raid",
+    "fury-dw-raid": "fury-dw-raid",
+    "protection-ml-tank": "prot-tank",
+    "opt-prot-tank-raid-tank": "prot-tank",
+    "prot-raid-tank": "prot-tank",
+    "sim preset: Protection": "prot-tank",
+    "sim preset: Protection 1/0/50": "prot-tank",
+    "arms-community-parse": "arms-battle-raid",
+    "arms-battle-raid": "arms-battle-raid"
+   }
+  }
+ }
+}

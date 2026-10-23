@@ -122,6 +122,12 @@ def audit(cls, spec, bid, iterations, confirm, alloc=None, setting=None):
     names = {(t.get("fancyName") or t.get("fieldName")): (R.talent_key(t) or t.get("fieldName")) for tr in sim_trees for t in tr["talents"]}
     protect = {names.get(n, n) for n in R.apl_talents(repo, entry, sim_trees, where)} & set(cur)
     protect |= set(entry.get("not_measured", {})) & set(cur)   # values the standard target cannot show (Murder: Humanoids and Giants)
+    # the talents that grant the build's spec its required signature spells never count as free (user rule 2026-10-22, signature_spells.json)
+    import raid_signature as SIG
+    bd = None
+    if alloc is None:
+        bd = data.get(bid)
+    protect |= SIG.required_talents(cls, SIG.entry_spec(cls, spec, cur, bd)) & set(cur)
     # a talent that grants an ability is free only when the build never casts it and casting it was shown not to pay (see the docstring)
     book = spell_ids(cls)
     active = (set(cur) & set(book)) - VERIFIED_UNUSED.get(cls, set())

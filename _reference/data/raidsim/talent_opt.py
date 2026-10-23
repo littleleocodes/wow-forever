@@ -30,6 +30,8 @@ ROOT = HERE.parents[2]
 sys.path.insert(0, str(ROOT / "_reference/data"))
 import paths  # noqa: E402
 import validate_builds as VB  # noqa: E402
+sys.path.insert(0, str(HERE))
+import raid_signature as SIG  # noqa: E402  (signature spells, user rule 2026-10-22)
 
 
 def _load(name, path):
@@ -192,6 +194,9 @@ def main():
     names = {(t.get("fancyName") or t.get("fieldName")): (R.talent_key(t) or t.get("fieldName")) for tr in sim_trees for t in tr["talents"]}
     protect = set() if a.allow_drop else {names.get(n, n) for n in R.apl_talents(repo, entry, sim_trees, where)} & set(cur)
     protect |= {n.strip() for n in a.keep.split(",") if n.strip()}
+    # the talents that grant the start build's spec its required signature spells (user rule 2026-10-22, signature_spells.json) stay too,
+    # --allow-drop or not: a build without them is not a build of that spec
+    protect |= SIG.required_talents(a.cls, SIG.entry_spec(a.cls, a.spec, cur)) & set(cur)
 
     def run(allocs, iterations, seed):
         bl = [{"label": str(i), "talents": R.talents_string(sim_trees, al)} for i, al in enumerate(allocs)]

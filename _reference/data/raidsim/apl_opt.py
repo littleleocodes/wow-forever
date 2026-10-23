@@ -35,6 +35,8 @@ HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
 sys.path.insert(0, str(ROOT / "_reference/data"))
 import paths  # noqa: E402
+sys.path.insert(0, str(HERE))
+import raid_signature as SIG  # noqa: E402  (signature spells, user rule 2026-10-22)
 
 
 def _load(name, path):
@@ -552,6 +554,75 @@ def main_builds(cls, spec, entry, repo, trees, where=None):
     return out
 
 
+# ------------------------------------------------------------------------------------------------ signature spells (2026-10-22)
+class Signature:
+    """The user rule of 2026-10-22 ("make sure that the specs we're testing are actually using the spells for that spec, or else it's
+    pointless ... You're testing too much for pure optimizations"; signature_spells.json, raid_signature.py) in the rotation search:
+    - structure: no edit may drop or hide a line that casts a required spell of a spec the entry serves (spec_modes.RAID_ENTRY_TREES and
+      the specs of the builds it lists or tunes on, hybrids by the build's spec), nor move one below the filler (apl_violation);
+    - casts: on every build of a spec with a rule, a required spell the build can cast may not fall under half of its casts under the
+      current rotation (a condition that cannot hold, a guard that starves it);
+    - core share: no build's core share (the spec's core sources' share of its damage) may fall below min(min_share, its share under the
+      current rotation and under the pass's start) - 0.5 points; a rotation already below min_share can only move towards it.
+    WOW_FOREVER_SIGNATURE=0 switches it off."""
+
+    def __init__(self, cls, entry_name, entry, builds, repo, trees):
+        self.cls, self.on = cls, SIG.enabled()
+        data = {b["id"]: b for b in json.load(open(ROOT / cls / "research/talents/forever/proposed-builds.json", encoding="utf-8"))["builds"]}
+        self.names = R.spell_names(repo, cls)
+        self.spec, self.held = {}, {}
+        for bi, b in enumerate(builds):
+            flat = SIG.flat_of(R.preset_allocation(trees, b["talents"]))
+            self.held[bi] = flat
+            self.spec[bi] = SIG.entry_spec(cls, entry_name, flat, data.get(b.get("label")))
+        listed = [data[x] for x in entry.get("builds", []) if x in data]
+        own = SIG._entry_trees(cls, entry_name)
+        import spec_modes as SM
+        specs = SIG.entry_specs(cls, entry_name, listed) | {s for s in self.spec.values() if SIG.rule(cls, s) and (not own or SM.rotation_allows(s, own))}
+        self.specs = sorted(specs)
+        self.req_ids = SIG.required_ids(cls, self.specs, self.names)
+        self.known, self.cds = SIG.book_ids(cls)
+        self.rejected = {"structure": 0, "casts": 0, "core_share": 0}
+
+    def structural(self, cur, cands):
+        """The candidates that keep every required line (the others are counted)."""
+        if not self.on or not self.req_ids:
+            return cands
+        out = [(d, ap) for d, ap in cands if not SIG.apl_violation(cur, ap, self.req_ids, self.cds, self.known)]
+        self.rejected["structure"] += len(cands) - len(out)
+        return out
+
+    def bad(self, rows, refs, idx):
+        """A reason when the candidate's rows (per build index) break the rule against any of the reference row sets, else None."""
+        if not self.on:
+            return None
+        for bi in idx:
+            # only builds of the specs the entry serves (a simulator preset of another tree raced here is not protected by this rule)
+            rl = SIG.rule(self.cls, self.spec.get(bi)) if self.spec.get(bi) in self.specs else None
+            row = rows.get(bi)
+            if not rl or not row or not row.get("actions"):
+                continue
+            can = [s for s in rl["required"] if s not in SIG._talents(self.cls)[0] or self.held[bi].get(s)]
+            c1 = SIG.casts_of(row["actions"], self.names)
+            cs1 = SIG.core_share(self.cls, self.spec[bi], SIG.shares_of(row["actions"], self.names))
+            for ref in refs:
+                r0 = ref.get(bi)
+                if not r0 or not r0.get("actions"):
+                    continue
+                why = SIG.cast_drop(SIG.casts_of(r0["actions"], self.names), c1, can)
+                if why:
+                    self.rejected["casts"] += 1
+                    return f"build {bi} ({self.spec[bi]}): {why}"
+                cs0 = SIG.core_share(self.cls, self.spec[bi], SIG.shares_of(r0["actions"], self.names))
+                if cs0 is not None and cs1 is not None and cs1 < min(rl["min_share"], cs0) - SIG.SHARE_TOL:
+                    self.rejected["core_share"] += 1
+                    return f"build {bi} ({self.spec[bi]}): core share {cs0:.1%} -> {cs1:.1%} (min {rl['min_share']:.0%})"
+        return None
+
+    def record(self):
+        return {"specs": self.specs, "required": sorted(self.req_ids), "rejected": dict(self.rejected), "on": self.on}
+
+
 # ------------------------------------------------------------------------------------------------ search
 def search(cls, spec, a, repo, N, where=None):
     entry = R.SPECS[cls][spec]
@@ -601,16 +672,22 @@ def search(cls, spec, a, repo, N, where=None):
     def per_build(rows, ci):
         return {bi: rows.get(f"{ci}|{bi}") for bi in range(len(builds))}
 
+    sig = Signature(cls, spec, entry, builds, repo, trees)
+    if sig.on and sig.req_ids:
+        print(f"  signature spells kept ({', '.join(sig.specs)}): {', '.join(sorted(sig.req_ids))}", flush=True)
+
     cur = base
     cur1 = per_build(run_set([cur], a.iterations, 1), 0)
     start_rows = {1: cur1, 2: per_build(run_set([cur], a.confirm, 2), 0)}
     log = []
     for rnd in range(1, a.rounds + 1):
-        cands = neighbors(cur, pool, N)
+        cands = sig.structural(cur, neighbors(cur, pool, N))
         rows = run_set([ap for _, ap in cands], a.iterations, 1, tune_idx)
         scored = []
         for ci, (d, ap) in enumerate(cands):
             sc = score({bi: r for bi, r in per_build(rows, ci).items()}, cur1, tune_labels, tank)
+            if sc is not None and sc > 1 + a.screen_gain and sig.bad(per_build(rows, ci), [cur1], tune_idx):
+                continue   # a signature spell starved or the core share down (counted in sig.rejected)
             if sc is not None:
                 scored.append((sc, ci, d, ap))
         scored.sort(key=lambda x: -x[0])
@@ -620,12 +697,14 @@ def search(cls, spec, a, repo, N, where=None):
             seeds_ = scored[: a.lookahead]
             pairs = []
             for sc_a, ci_a, d_a, ap_a in seeds_:
-                for d_b, ap_b in neighbors(ap_a, pool, N):
+                for d_b, ap_b in sig.structural(cur, neighbors(ap_a, pool, N)):
                     pairs.append((f"{d_a} + {d_b}", ap_b))
             prow = run_set([ap for _, ap in pairs], a.iterations, 1, tune_idx)
             ps = []
             for ci, (d, ap) in enumerate(pairs):
                 sc = score(per_build(prow, ci), cur1, tune_labels, tank)
+                if sc is not None and sc > 1 + a.screen_gain and sig.bad(per_build(prow, ci), [cur1], tune_idx):
+                    continue
                 if sc is not None:
                     ps.append((sc, ci, d, ap))
             ps.sort(key=lambda x: -x[0])
@@ -646,6 +725,10 @@ def search(cls, spec, a, repo, N, where=None):
             worst = min((value(rows_k.get(bi), ref2.get(bi), tank) or 0.0) for bi in range(len(builds)))
             worst0 = min((value(rows_k.get(bi), start_rows[2].get(bi), tank) or 0.0) for bi in range(len(builds)))
             if worst < 1 - a.max_loss or worst0 < 1 - a.max_loss:
+                continue
+            why = sig.bad(rows_k, [ref2, start_rows[2]], range(len(builds)))   # every build, the protected ones too
+            if why:
+                print(f"  round {rnd}: the signature rule rejects '{d[:90]}': {why}", flush=True)
                 continue
             if sc2 is not None and (best is None or sc2 > best[0]):
                 best = (sc2, sc1, d, ap)
@@ -676,7 +759,8 @@ def search(cls, spec, a, repo, N, where=None):
     return {"class": cls, "spec": spec, "date": datetime.date.today().isoformat(), "commit": R.git_commit(repo), "setting": setting, "tank": tank,
             "simulator_apl": entry["apl"],
             "start": str(base_path.relative_to(repo) if str(base_path).startswith(str(repo)) else base_path.relative_to(ROOT)),
-            "builds": [{k: v for k, v in b.items() if k != "gear_json"} for b in builds], "tuned_on": [builds[bi]["label"] for bi in tune_idx], "iterations": a.iterations, "confirm": a.confirm, "changes": log, "final": final}, base, cur
+            "builds": [{k: v for k, v in b.items() if k != "gear_json"} for b in builds], "tuned_on": [builds[bi]["label"] for bi in tune_idx], "iterations": a.iterations, "confirm": a.confirm, "changes": log, "final": final,
+            "signature": sig.record()}, base, cur
 
 
 def write(cls, spec, rec, base, cur, N):

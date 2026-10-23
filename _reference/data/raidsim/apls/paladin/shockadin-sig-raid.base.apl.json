@@ -1,0 +1,380 @@
+{
+ "type": "TypeAPL",
+ "prepullActions": [
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 20920,
+      "rank": 5
+     }
+    }
+   },
+   "doAtValue": {
+    "const": {
+     "val": "-1.5s"
+    }
+   }
+  }
+ ],
+ "priorityList": [
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 20930
+     }
+    }
+   },
+   "notes": "signature proposal 2026-10-22 (user rule: specs play their signature spells): not in specs.json until the coordinator adds the entry: Holy Shock on cooldown, first"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 24239,
+      "rank": 3
+     }
+    }
+   },
+   "notes": "seeded 2026-10-05 from seal-of-fury-raid's raid rotation (the open search re-tuned it on a Retribution build): +1.8% to +2.1% for every Retribution build in a full raid (10,000 fights, seed 13)"
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "15%"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpLt",
+         "lhs": {
+          "autoTimeToNext": {
+           "autoType": "MeleeAuto"
+          }
+         },
+         "rhs": {
+          "const": {
+           "val": "0.4s"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpLt",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "50%"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 20292,
+      "rank": 7
+     }
+    }
+   },
+   "notes": "seeded 2026-10-05 from seal-of-fury-raid's raid rotation (the open search re-tuned it on a Retribution build): +1.8% to +2.1% for every Retribution build in a full raid (10,000 fights, seed 13); apl_opt 2026-10-05: changed or added by the rotation search (see seal-of-fury-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "15%"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpLt",
+         "lhs": {
+          "autoTimeToNext": {
+           "autoType": "MeleeAuto"
+          }
+         },
+         "rhs": {
+          "const": {
+           "val": "0.4s"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 20293,
+      "rank": 8
+     }
+    }
+   },
+   "notes": "seeded 2026-10-05 from seal-of-fury-raid's raid rotation (the open search re-tuned it on a Retribution build): +1.8% to +2.1% for every Retribution build in a full raid (10,000 fights, seed 13); apl_opt 2026-10-05: changed or added by the rotation search (see seal-of-fury-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "auraIsActive": {
+      "auraId": {
+       "spellId": 20293,
+       "rank": 8
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 20271
+     }
+    }
+   },
+   "notes": "seeded 2026-10-05 from seal-of-fury-raid's raid rotation (the open search re-tuned it on a Retribution build): +1.8% to +2.1% for every Retribution build in a full raid (10,000 fights, seed 13); apl_opt 2026-10-05: changed or added by the rotation search (see seal-of-fury-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 20924,
+      "rank": 5
+     }
+    },
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "currentManaPercent": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "25%"
+       }
+      }
+     }
+    }
+   },
+   "notes": "seeded 2026-10-05 from seal-of-fury-raid's raid rotation (the open search re-tuned it on a Retribution build): +1.8% to +2.1% for every Retribution build in a full raid (10,000 fights, seed 13); apl_opt 2026-10-05: changed or added by the rotation search (see seal-of-fury-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 10333,
+      "rank": 8
+     }
+    }
+   },
+   "notes": "seeded 2026-10-05 from seal-of-fury-raid's raid rotation (the open search re-tuned it on a Retribution build): +1.8% to +2.1% for every Retribution build in a full raid (10,000 fights, seed 13)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 20930
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-14: changed or added by the rotation search (see ret-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "autocastOtherCooldowns": {}
+   },
+   "notes": "seeded 2026-10-05 from seal-of-fury-raid's raid rotation (the open search re-tuned it on a Retribution build): +1.8% to +2.1% for every Retribution build in a full raid (10,000 fights, seed 13)"
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "15%"
+          }
+         }
+        }
+       },
+       {
+        "auraIsActive": {
+         "auraId": {
+          "spellId": 20293,
+          "rank": 8
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpLt",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "30%"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 20915,
+      "rank": 2
+     }
+    }
+   },
+   "notes": "seeded 2026-10-05 from seal-of-fury-raid's raid rotation (the open search re-tuned it on a Retribution build): +1.8% to +2.1% for every Retribution build in a full raid (10,000 fights, seed 13); apl_opt 2026-10-05: changed or added by the rotation search (see seal-of-fury-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "15%"
+          }
+         }
+        }
+       },
+       {
+        "auraIsActive": {
+         "auraId": {
+          "spellId": 20293,
+          "rank": 8
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 20919,
+      "rank": 4
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-07: changed or added by the rotation search (see ret-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "spellCanCast": {
+         "spellId": {
+          "spellId": 20271
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "20s"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 20271
+     }
+    }
+   },
+   "notes": "seeded 2026-10-05 from seal-of-fury-raid's raid rotation (the open search re-tuned it on a Retribution build): +1.8% to +2.1% for every Retribution build in a full raid (10,000 fights, seed 13); apl_opt 2026-10-05: changed or added by the rotation search (see seal-of-fury-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 26573,
+      "rank": 1
+     }
+    }
+   },
+   "notes": "seeded 2026-10-05 from seal-of-fury-raid's raid rotation (the open search re-tuned it on a Retribution build): +1.8% to +2.1% for every Retribution build in a full raid (10,000 fights, seed 13)"
+  },
+  {
+   "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpLe",
+      "lhs": {
+       "auraRemainingTime": {
+        "auraId": {
+         "spellId": 20293,
+         "rank": 8
+        }
+       }
+      },
+      "rhs": {
+       "const": {
+        "val": "1s"
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 20293,
+      "rank": 8
+     }
+    }
+   },
+   "notes": "seeded 2026-10-05 from seal-of-fury-raid's raid rotation (the open search re-tuned it on a Retribution build): +1.8% to +2.1% for every Retribution build in a full raid (10,000 fights, seed 13); apl_opt 2026-10-05: changed or added by the rotation search (see seal-of-fury-raid-rotation-search.json)"
+  }
+ ]
+}

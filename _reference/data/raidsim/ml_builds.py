@@ -295,11 +295,40 @@ def not_split(r, k="bis-raid"):
             f"the tree of its rotation ({s.get('entry')}): not a split") if deep else ""
 
 
+def sig_check(r):
+    """The full-raid winner's signature-spell check (user rule 2026-10-22, signature_spells.json): the search's own check when its Sim
+    kept one for the record's spec, else measured now in the winner's BiS set (raid_signature.measure, 6,000 fights) and kept in the
+    record (`signature_check`). None when the check is switched off."""
+    import sys as _sys
+    _sys.path.insert(0, str(HERE))
+    import raid_signature as RSG
+    if not RSG.enabled():
+        return None
+    w = r["search"]["bis-raid"]
+    al = (r.get("aligned_raid") or {}).get("allocation") or w["winner"]["allocation"]
+    chk = r.get("signature_check")
+    if chk and chk.get("spec") == r["spec"] and chk.get("allocation") == al:
+        return chk
+    MLT, repo = mlt()
+    g = page_gear(r, "bis") or {}
+    gear = {"items": json.load(open(ROOT / g["gear"], encoding="utf-8"))["items"]} if g.get("gear") else None
+    chk, _ = RSG.measure(r["class"], w["entry"], al, repo, MLT.R, MLT.A, iterations=6000, seed=9, gear_json=gear)
+    if chk.get("spec") != r["spec"]:   # the record's spec decides (a hybrid's search keeps its pair of trees)
+        chk = RSG.recheck(r["class"], r["spec"], chk, al) or chk
+    r["signature_check"] = dict(chk, allocation=al)
+    save(r)
+    return r["signature_check"]
+
+
 def verdict(r):
-    """(write, why): the full-raid winner is written only GAIN_NEW or more ahead of every other build of its full-raid comparison race."""
+    """(write, why): the full-raid winner is written only GAIN_NEW or more ahead of every other build of its full-raid comparison race,
+    and (2026-10-22) only when it plays its spec's signature spells in a full raid (sig_check)."""
     why = not_split(r)
     if why:
         return False, why
+    chk = sig_check(r)
+    if chk is not None and not chk.get("ok"):
+        return False, f"fails {SM.spec_name(r['class'], r['spec'])}'s signature-spell check in a full raid ({chk.get('why')}; signature_spells.json)"
     c = r["compare_raid"]["dps"]
     w = c["winner"]["dps"]
     others = {k: v["dps"] for k, v in c.items() if k != "winner" and v.get("dps")}

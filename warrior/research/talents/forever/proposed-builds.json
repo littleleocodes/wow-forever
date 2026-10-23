@@ -191,9 +191,11 @@
           ["Two-Handed Weapon Specialization", 3],
           ["Impale", 2],
           ["Bloodthrill", 5],
-          ["Weaponmaster", 5],
-          ["Improved Slam", 2],
-          ["Spearing Strike", 1]
+          ["Weaponmaster", 4],
+          ["Improved Slam", 1],
+          ["Spearing Strike", 1],
+          ["Sweeping Strikes", 1],
+          ["Mortal Strike", 1]
         ],
         "Fury": [
           ["Booming Voice", 5],
@@ -234,7 +236,7 @@
           "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
         }
       ],
-      "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-29) from `arms-battle-raid`: 1 point Mortal Strike -> Spearing Strike, 1 point Sweeping Strikes -> Improved Heroic Strike.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Deflection -> Improved Slam (+0.6% DPS); Improved Heroic Strike -> Deflection (survival). Net +0.68% on a third seed."],
+      "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-29) from `arms-battle-raid`: 1 point Mortal Strike -> Spearing Strike, 1 point Sweeping Strikes -> Improved Heroic Strike.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Deflection -> Improved Slam (+0.6% DPS); Improved Heroic Strike -> Deflection (survival). Net +0.68% on a third seed.", "2026-10-22 (signature-spell rule, user 2026-10-22: Arms plays Mortal Strike): 1 Weaponmaster and 1 Improved Slam moved to Sweeping Strikes and Mortal Strike (34/17/0 kept); +11.7% in a full raid over the previous draft on the official simulator 30f67f5 (20,000 fights, seed 2)."],
       "open_questions": ["Whether Battle Stance loses Berserker Stance's 3% crit in Forever as in Classic, and whether stance dancing (Overpower in Battle, Whirlwind in Berserker) beats both.", "Bloodthrill's Overpower chance per main-hand hit on a Rended target (the simulator's model)."],
       "sources": ["https://github.com/ElliotWood/Forever/blob/master/ui/specs/warrior/dps/presets.ts", "https://warcraftforever.games/talents/warrior"]
     },

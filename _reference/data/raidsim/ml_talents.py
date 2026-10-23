@@ -48,6 +48,7 @@ sys.path[:0] = [str(ROOT / "_reference/data"), str(HERE)]
 import paths  # noqa: E402
 import spec_modes as SM  # noqa: E402
 import validate_builds as VB  # noqa: E402
+import raid_signature as SIG  # noqa: E402  (signature spells, user rule 2026-10-22)
 
 
 def _load(name, path):
@@ -73,6 +74,11 @@ class Space:
 
     def __init__(self, cls, spec, protect=(), any_split=False, start_splits=()):
         self.cls, self.spec = cls, spec
+        self.any = any_split
+        # signature spells (2026-10-22, user rule: "the specs should use the spells that make that spec, that spec"): {spec: talents that
+        # grant its required spells}; a build of a spec without them is not a build of that spec (valid), and a one-spec space keeps them
+        # like the rotation's talents (protect)
+        self.sig = SIG.required_talents_by_spec(cls)
         trees = VB.load_forever()[cls]
         self.tree_names = list(trees)
         self.names = [n for t in self.tree_names for n in trees[t]["talents"]]
@@ -84,7 +90,6 @@ class Space:
         self.by_tree = {t: [n for n in self.names if self.tree_of[n] == t] for t in self.tree_names}
         self.cap = {t: sum(self.max[n] for n in self.by_tree[t]) for t in self.tree_names}
         self.protect = set(protect)
-        self.any = any_split
         self.start_splits = [s for s in start_splits if s]
         self.pair = [t for t in self.tree_names if t in spec.replace("Hybrid ", "").split("/")] if spec.startswith("Hybrid") else []
         self.trees = trees
@@ -93,7 +98,31 @@ class Space:
         # two trees, as open_builds.raid_spec files it), so every winner can be written; None = no restriction
         self.allow_trees = None
 
+    @property
+    def protect(self):
+        """The talents every build keeps: the given ones (the rotation reads them) and, in a one-spec space, the talents that grant the spec's
+        required signature spells (an any-split space checks those per build in valid, by the build's own spec)."""
+        return self._protect if self.any else self._protect | self.sig.get(self.spec, set())
+
+    @protect.setter
+    def protect(self, v):
+        self._protect = set(v)
+
     # -- rules
+    def spec_for(self, flat):
+        """The spec a build of this space plays: the space's spec, or (any split) its split's, filed under the entry's hybrid when the
+        rotation is built for one hybrid and the split is that hybrid or one of its trees (open_builds.raid_spec)."""
+        spec = self.classify(flat) if self.any else self.spec
+        for t in self.allow_trees or ():
+            if t.startswith("Hybrid ") and (spec == t or spec in t[len("Hybrid "):].split("/")):
+                return t
+        return spec
+
+    def sig_ok(self, flat):
+        """The build holds the talents that grant its spec's required signature spells."""
+        need = self.sig.get(self.spec_for(flat)) if self.sig else None
+        return not need or all(flat.get(n) for n in need)
+
     def points(self, flat):
         return {t: sum(flat.get(n, 0) for n in self.by_tree[t]) for t in self.tree_names}
 
@@ -142,6 +171,8 @@ class Space:
         if any(not flat.get(n) for n in self.protect):
             return False
         if not self.allowed(flat):
+            return False
+        if not self.sig_ok(flat):
             return False
         return self.any or self.classify(flat) == self.spec
 
@@ -554,8 +585,14 @@ class Space:
 class Sim:
     """DPS of builds in one entry and setting, with one gear set (bench gear_json); counts the builds simulated."""
 
-    def __init__(self, cls, entry, setting, gear_items, repo, tag):
+    def __init__(self, cls, entry, setting, gear_items, repo, tag, signature=False):
         self.cls, self.entry_name, self.setting, self.gear, self.repo, self.tag = cls, entry, setting, gear_items, repo, tag
+        # signature (2026-10-22): the search objective counts a build that does not play its spec's signature spells at its DPS times
+        # raid_signature.penalty (core share / min_share, halved when a required spell goes uncast), so a search looks for the best build
+        # that plays the spec; `checks` keeps each build's check. Races and values keep the plain DPS (signature=False).
+        self.signature = bool(signature) and SIG.enabled()
+        self.checks = {}
+        self._names = None
         self.entry = R.SPECS[cls][entry]
         self.sim_trees = R.load_trees(repo, cls)
         self.n = 0
@@ -588,10 +625,26 @@ class Sim:
             rows = A.bench(self.entry, self.repo, bl, iterations, seed, self.setting, self.tag)
             for i, k in enumerate(chunk):
                 r = rows.get(str(i)) or {}
-                self.cache[k] = (float(r.get("dps") or 0.0), float(r.get("dps_stdev") or 0.0))
+                f = 1.0
+                if self.signature and r.get("actions"):
+                    al = allocs[keys.index(k)]
+                    chk = SIG.check(self.cls, SIG.entry_spec(self.cls, self.entry_name, al), r["actions"], self.names(), al)
+                    if chk:
+                        self.checks[k[0]] = chk
+                        f = SIG.penalty(chk)
+                self.cache[k] = (float(r.get("dps") or 0.0) * f, float(r.get("dps_stdev") or 0.0) * f)
             self.n += len(chunk)
             self.fights += len(chunk) * iterations
         return [self.cache[k] for k in keys]
+
+    def names(self):
+        if self._names is None:
+            self._names = R.spell_names(self.repo, self.cls)
+        return self._names
+
+    def check_of(self, flat):
+        """The signature check of a build this Sim ran (None when it has none: no rule, signature off, or never run)."""
+        return self.checks.get(R.talents_string(self.sim_trees, flat))
 
 
 # ------------------------------------------------------------------------------------------------ family polish (2026-10-05)
@@ -972,6 +1025,7 @@ def optimize(space, sims, starts, a, log):
            "runs_agree": sum(agree), "race": hist, "certificate": cert,
            "other_entries": [{"entry": n, "dps": _r(l[0][1]), "split": space.split(l[0][0])} for n, l, _, _ in best_per_entry[1:]],
            "important_features": imp, "simulated_builds": sum(s.n for s in sims.values()),
+           "signature_check": sims[name].check_of(win) if getattr(sims[name], "signature", False) else None,
            "simulated_fights": sum(s.fights for s in sims.values()), "minutes": round((time.time() - t0) / 60, 1)}
     return rec, win
 
@@ -1063,7 +1117,7 @@ def run_target(cls, spec, entries, setting, gear_path, a, log, extra_starts=(), 
     if not starts:
         b = space.random_build(random.Random(a.seed))
         starts = [b] if b else []
-    sims = {e: Sim(cls, e, setting, gear, repo, f"ml-{cls}-{e}-{setting}") for e in entries}
+    sims = {e: Sim(cls, e, setting, gear, repo, f"ml-{cls}-{e}-{setting}", signature=True) for e in entries}
     rec, win = optimize(space, sims, starts, a, log)
     rec["gear"] = gear_path
     log(f"  winner {rec['winner']['split']} in {rec['entry']}: {_f(rec['winner']['dps'])} ± {rec['winner']['se']:.2f} DPS"

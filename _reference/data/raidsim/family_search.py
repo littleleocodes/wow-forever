@@ -37,6 +37,7 @@ sys.path[:0] = [str(ROOT / "_reference/data"), str(HERE)]
 import paths  # noqa: E402
 import render_start_here as RSH  # noqa: E402
 import spec_modes as SM  # noqa: E402
+import raid_signature as SIG  # noqa: E402  (signature spells, user rule 2026-10-22)
 
 
 
@@ -182,7 +183,8 @@ def run_search(cls, entry, repo, settings, starts, seed, protect=None, reuse=Fal
     space.start_splits = [space.split(s) for s in starts]
     import random
     t0 = time.time()
-    psim = MLT.Sim(cls, entry, "raid", None, repo, f"family-polish-{cls}-{entry}")
+    # signature=True (2026-10-22): a build that does not play its spec's signature spells scores its DPS times raid_signature.penalty
+    psim = MLT.Sim(cls, entry, "raid", None, repo, f"family-polish-{cls}-{entry}", signature=True)
     fp = family_cache(cls, entry)
     fam = None
     if reuse and fp.exists():   # 2026-10-07 audit: a re-search (after a re-tune or a certificate lead) repeated the 40-minute polish
@@ -203,7 +205,7 @@ def run_search(cls, entry, repo, settings, starts, seed, protect=None, reuse=Fal
         f"kept: {', '.join(sorted(space.protect)) or 'none'}")
     t1 = time.time()
     a = MLT.defaults(**settings, seed=seed)
-    sim = MLT.Sim(cls, entry, "raid", None, repo, f"family-{cls}-{entry}")
+    sim = MLT.Sim(cls, entry, "raid", None, repo, f"family-{cls}-{entry}", signature=True)
     rec, win = MLT.optimize(space, {entry: sim}, starts, a, log)
     log(f"   search: {sim.n:,} builds simulated ({sim.hits:,} cache hits), {(time.time() - t1) / 60:.1f} min")
     rec["families"] = [{"keystones": lab, "split": space.split(x), "family": space.classify(x), "score": round(sc, 1)} for sc, x, lab in fam[:15]]
@@ -235,6 +237,16 @@ def race(cls, entry, repo, flat, mine):
     sim = MLT.Sim(cls, entry, "raid", None, repo, f"family-race-{cls}")
     res = sim.run(list(rows.values()), RACE, 43)
     return {k: {"dps": round(d, 1), "se": round(sd / math.sqrt(RACE), 2)} for k, (d, sd) in zip(rows, res)}
+
+
+def sig_check(cls, entry, repo, flat):
+    """The winner's signature-spell check in the full raid (raid_signature.measure, 6,000 fights): its spec plays its required spells
+    and the core sources carry min_share of its damage (user rule 2026-10-22). A winner that fails is recorded with the reason and
+    open_builds.py writes no build from it: in a hybrid family it does not count as that hybrid."""
+    chk, _ = SIG.measure(cls, entry, flat, repo, R, A, iterations=6000, seed=9)
+    log(f"  {cls} {entry}: signature check of the winner ({chk['spec']}): " + ("ok" if chk["ok"] else "FAILS: " + chk["why"])
+        + (f", core share {chk['core_share']:.0%} (needs {chk['min_share']:.0%})" if chk.get("core_share") is not None and chk.get("min_share") else ""))
+    return chk
 
 
 def signature(cls, entry, repo):
@@ -408,6 +420,9 @@ def main():
             ST.structural(cls, entry, e, repo, save, argparse.Namespace(top=300, race=20, no_search=False))
             R.set_game("forever")
             w = flat_of((e.get("again") or e["first"])["winner"]["allocation"])
+        if "sig_check" not in e or e["sig_check"].get("talents") != R.talents_string(R.load_trees(repo, cls), w):
+            e["sig_check"] = dict(sig_check(cls, entry, repo, w), talents=R.talents_string(R.load_trees(repo, cls), w))
+            save()
         sp = MLT.Space(cls, "any", any_split=True)
         e.update({"family": sp.classify(w), "split": sp.split(w), "dps": e["race"]["open winner"]["dps"], "link": RSH.tf_link(cls, w),
                   "gap_vs_ours": round(e["race"]["open winner"]["dps"] / max(1e-9, max((v["dps"] for k, v in e["race"].items() if k != "open winner"),
@@ -590,7 +605,13 @@ def write_class(cls, st):
             o += ["**Best family per pair of keystones** (each polished by a short hill climb that keeps the pair; DPS on 800 fights, before "
                   "the main search):", "", "| Keystones | Build | Family | DPS |", "|---|---|---|---|"]
             o += [f"| {f['keystones']} | {f['split']} | {f['family']} | {f['score']:.1f} |" for f in fam[:10]] + [""]
-        o += [f"**Open winner {e['split']}** ({e['family']}):", ""] + table(e["values"], e["values_base"])
+        o += [f"**Open winner {e['split']}** ({e['family']}):", ""]
+        sc = e.get("sig_check")
+        if sc:   # raid_signature: the spec's signature spells (user rule 2026-10-22)
+            o += [f"Signature spells ({sc['spec']}, full raid, {sc.get('iterations', 0):,} fights): "
+                  + ("plays them" if sc["ok"] else f"**fails: {sc['why']}** (no build is written from this winner)")
+                  + (f"; core share {sc['core_share']:.0%} (needs {sc['min_share']:.0%})" if sc.get("core_share") is not None and sc.get("min_share") else "") + ".", ""]
+        o += table(e["values"], e["values_base"])
         if e.get("values_ours"):
             own = e["ours_best"] in ((e.get("builds") or {}).get("written") or [])
             head = (f"This search's own written build, {e['ours_best']} (the winner after the filler audit; measured when it was our best build there)"
