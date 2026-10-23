@@ -1,91 +1,32 @@
 {
- "id": "cand-shadow-dps-r10",
- "allocation": {
-  "Discipline": [
-   [
-    "Twin Disciplines",
-    5
-   ],
-   [
-    "Martyrdom",
-    2
-   ],
-   [
-    "Silent Resolve",
-    3
-   ],
-   [
-    "Inner Focus",
-    1
-   ],
-   [
-    "Mental Agility",
-    3
-   ],
-   [
-    "Meditation",
-    1
-   ],
-   [
-    "Mental Strength",
-    3
-   ]
-  ],
-  "Holy": [],
-  "Shadow": [
-   [
-    "Shadow Focus",
-    5
-   ],
-   [
-    "Improved Shadow Word: Pain",
-    2
-   ],
-   [
-    "Shadow Affinity",
-    3
-   ],
-   [
-    "Mind Flay",
-    1
-   ],
-   [
-    "Improved Mind Flay",
-    2
-   ],
-   [
-    "Improved Mind Blast",
-    5
-   ],
-   [
-    "Vampiric Embrace",
-    1
-   ],
-   [
-    "Shadow Weaving",
-    3
-   ],
-   [
-    "Devouring Contagion",
-    2
-   ],
-   [
-    "Silence",
-    1
-   ],
-   [
-    "Darkness",
-    5
-   ],
-   [
-    "Early Demise",
-    2
-   ],
-   [
-    "Shadowform",
-    1
-   ]
-  ]
- },
- "note": "Optimizer raid build saved by rebuild.py on 2026-10-03 (raid calibration round 1)"
+  "id": "cand-shadow-dps-r10",
+  "allocation": {
+    "Discipline": [
+      ["Twin Disciplines", 5],
+      ["Martyrdom", 2],
+      ["Mental Strength", 3],
+      ["Silent Resolve", 3],
+      ["Inner Focus", 1],
+      ["Meditation", 1],
+      ["Mental Agility", 3]
+    ],
+    "Holy": [],
+    "Shadow": [
+      ["Shadow Focus", 5],
+      ["Improved Mind Blast", 5],
+      ["Improved Shadow Word: Pain", 2],
+      ["Improved Mind Flay", 2],
+      ["Mind Flay", 1],
+      ["Dark Inspiration", 3],
+      ["Shadow Weaving", 3],
+      ["Vampiric Embrace", 1],
+      ["Devouring Contagion", 2],
+      ["Silence", 1],
+      ["Darkness", 5],
+      ["Early Demise", 2],
+      ["Shadowform", 1]
+    ]
+  },
+  "note": "Optimizer raid build saved by rebuild.py on 2026-10-03 (raid calibration round 1)",
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 18/0/33 -> 18/0/33; Shadow Affinity 3 gone; +1 Dark Inspiration (tier gating for Devouring Contagion); +1 Dark Inspiration (tier gating for Darkness); +1 Dark Inspiration (tier gating for Darkness) (refill: the shadow-dps model, raid-dps)"
 }

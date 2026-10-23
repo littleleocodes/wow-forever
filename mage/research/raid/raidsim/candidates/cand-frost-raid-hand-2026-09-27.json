@@ -1,83 +1,33 @@
 {
- "id": "cand-frost-raid-hand-2026-09-27",
- "allocation": {
-  "Arcane": [
-   [
-    "Wand Specialization",
-    2
-   ],
-   [
-    "Arcane Focus",
-    3
-   ],
-   [
-    "Arcane Subtlety",
-    2
-   ],
-   [
-    "Arcane Concentration",
-    5
-   ],
-   [
-    "Magic Absorption",
-    2
-   ]
-  ],
-  "Fire": [],
-  "Frost": [
-   [
-    "Improved Frostbolt",
-    5
-   ],
-   [
-    "Elemental Precision",
-    5
-   ],
-   [
-    "Ice Shards",
-    5
-   ],
-   [
-    "Piercing Ice",
-    3
-   ],
-   [
-    "Frost Channeling",
-    3
-   ],
-   [
-    "Ice Lance",
-    1
-   ],
-   [
-    "Arctic Reach",
-    2
-   ],
-   [
-    "Shatter",
-    3
-   ],
-   [
-    "Ice Block",
-    1
-   ],
-   [
-    "Cold Snap",
-    1
-   ],
-   [
-    "Fingers of Frost",
-    2
-   ],
-   [
-    "Winter's Chill",
-    5
-   ],
-   [
-    "Ice Barrier",
-    1
-   ]
-  ]
- },
- "note": "The hand draft frost-fingers-of-frost-raid as it was before opt-frost-raid-raid-dps was adopted on 2026-09-27"
+  "id": "cand-frost-raid-hand-2026-09-27",
+  "allocation": {
+    "Arcane": [
+      ["Arcane Focus", 3],
+      ["Missile Barrage", 2],
+      ["Wand Specialization", 2],
+      ["Arcane Concentration", 5],
+      ["Arcane Subtlety", 2],
+      ["Magic Absorption", 2],
+      ["Arcane Blast", 1],
+      ["Arcane Meditation", 1],
+      ["Arcane Wrath", 1]
+    ],
+    "Fire": [],
+    "Frost": [
+      ["Elemental Precision", 3],
+      ["Improved Frostbolt", 5],
+      ["Ice Shards", 5],
+      ["Frost Channeling", 3],
+      ["Ice Lance", 1],
+      ["Arctic Reach", 2],
+      ["Ice Block", 1],
+      ["Shatter", 3],
+      ["Cold Snap", 1],
+      ["Fingers of Frost", 2],
+      ["Winter's Chill", 5],
+      ["Ice Barrier", 1]
+    ]
+  },
+  "note": "The hand draft frost-fingers-of-frost-raid as it was before opt-frost-raid-raid-dps was adopted on 2026-09-27",
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 14/0/37 -> 19/0/32; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; refill +2 Missile Barrage, +1 Arcane Blast, +1 Arcane Wrath, +1 Arcane Meditation (refill: the frost-raid model, raid-dps)"
 }

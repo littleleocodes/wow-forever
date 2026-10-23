@@ -5,6 +5,7 @@ module reads them for the fight lab (rotation_opt.py, the open leveling search, 
 fightlab/signature_audit.py). The raid side reads the same file in raidsim/.
 
     rule(cls, spec, mode)            -> {"required", "core", "min_share", "note"} or None
+    rule_specs(cls, spec, trees, mode) -> the specs whose rule a build must pass: its own, or a rule-less hybrid's trees' (any one)
     granting_talents(cls, spells)    -> the talents that grant required spells (a search keeps them; a build lacking one cannot qualify)
     core_share(shares, rule, pets)   -> the share of the damage the core sources carry ("melee", "pet", "Auto Shot", spell names)
     rotation_specs(cls, rot)         -> the specs (trees and hybrids) whose leveling builds play a fight-lab rotation
@@ -46,6 +47,19 @@ def rule(cls, spec, mode="leveling"):
     out["enabled_by"] = dict(out.get("enabled_by") or {})   # on Missile Barrage); optional {spell: talent}: counted from that talent's level
     out["grace_levels"] = dict(out.get("grace_levels") or {})   # optional {spell: levels}: counted that many levels after it is learned
     return out
+
+
+def rule_specs(cls, spec, trees=None, mode="leveling"):
+    """The specs whose rule a build filed under `spec` must pass (any one of them): its own; a hybrid without a rule of its own, the rules
+    of its two trees, only the trees the rotation is built for when `trees` names any of them (2026-10-23: the paladin's Holy leveling
+    rotation found a 17/17/17 Holy/Protection Seal of Command build without Holy Shock, which passed as 'no rule')."""
+    if rule(cls, spec, mode):
+        return [spec]
+    if not spec or not spec.startswith("Hybrid "):
+        return []
+    two = spec[len("Hybrid "):].split("/")
+    own = [t for t in two if trees and t in trees]
+    return [t for t in (own or two) if rule(cls, t, mode)]
 
 
 def specs_of(cls):

@@ -1,5 +1,5 @@
 {
- "id": "cand-fire-raid-preset-fire-dps",
+ "id": "cand-fire-raid-preset-fire",
  "allocation": {
   "Arcane": [
    [
@@ -7,11 +7,11 @@
     5
    ],
    [
-    "Arcane Subtlety",
+    "Missile Barrage",
     2
    ],
    [
-    "Magic Absorption",
+    "Arcane Subtlety",
     2
    ],
    [
@@ -19,17 +19,17 @@
     5
    ],
    [
-    "Arcane Resilience",
-    2
+    "Arcane Blast",
+    1
    ],
    [
     "Arcane Meditation",
-    3
+    1
    ]
   ],
   "Fire": [
    [
-    "Wake of Fire",
+    "Improved Fire Blast",
     2
    ],
    [
@@ -62,23 +62,25 @@
    ],
    [
     "Critical Mass",
-    3
+    5
    ],
    [
     "Fire Power",
-    5
+    3
    ],
    [
     "Combustion",
     1
    ]
   ],
-  "Frost": []
+  "Frost": [
+   [
+    "Elemental Precision",
+    3
+   ]
+  ]
  },
- "preset": "Fire DPS",
- "talents": "0502252000003-23550000130133051-",
- "note": "The community simulator's preset 'Fire DPS' (mage/dps/presets.ts), a raid candidate since it ran within 6% of the best build of fire-raid (464.3 vs 482.7 in the race of 2026-09-27).",
- "notes": [
-  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
- ]
+ "preset": "Fire",
+ "talents": "05022050001001-23550000130135031-003",
+ "note": "The community simulator's preset 'Fire' (mage/dps/presets.ts), a raid candidate since it ran within 6% of the best build of fire-raid (591.6 vs 591.6 in the race of 2026-10-23)."
 }

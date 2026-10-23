@@ -1,122 +1,44 @@
 {
- "id": "cand-frostfire-raid-from-fire",
- "allocation": {
-  "Arcane": [
-   [
-    "Arcane Focus",
-    4
-   ]
-  ],
-  "Fire": [
-   [
-    "Wake of Fire",
-    1
-   ],
-   [
-    "Incineration",
-    3
-   ],
-   [
-    "Improved Fireball",
-    5
-   ],
-   [
-    "Ignite",
-    5
-   ],
-   [
-    "Pyroblast",
-    1
-   ],
-   [
-    "Improved Scorch",
-    3
-   ],
-   [
-    "Heating Up",
-    1
-   ],
-   [
-    "Master of Elements",
-    3
-   ],
-   [
-    "Critical Mass",
-    3
-   ],
-   [
-    "Fire Power",
-    5
-   ],
-   [
-    "Combustion",
-    1
-   ]
-  ],
-  "Frost": [
-   [
-    "Elemental Precision",
-    5
-   ],
-   [
-    "Ice Shards",
-    5
-   ],
-   [
-    "Piercing Ice",
-    3
-   ],
-   [
-    "Frost Channeling",
-    3
-   ]
-  ]
- },
- "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-28) for frostfire-raid from fire-raid in the dummy setting: 437.9 -> 489.6 DPS on a third seed.",
- "search": {
-  "start": "fire-raid",
-  "setting": "dummy",
-  "moves": [
-   {
-    "round": 1,
-    "move": "5 points Arcane Concentration -> Ice Shards",
-    "gain_seed1": 0.04683514787667131,
-    "gain_seed2": 0.046406323448882514,
-    "split": "9/32/10"
-   },
-   {
-    "round": 2,
-    "move": "2 points Wand Specialization -> Frost Channeling",
-    "gain_seed1": 0.023662508120103398,
-    "gain_seed2": 0.024797630172306073,
-    "split": "7/32/12"
-   },
-   {
-    "round": 3,
-    "move": "2 points Magic Absorption -> Piercing Ice",
-    "gain_seed1": 0.018167784954836508,
-    "gain_seed2": 0.018199026112484695,
-    "split": "5/32/14"
-   },
-   {
-    "round": 4,
-    "move": "1 point Wake of Fire -> Piercing Ice",
-    "gain_seed1": 0.01506190542577035,
-    "gain_seed2": 0.015204562774605801,
-    "split": "5/31/15"
-   },
-   {
-    "round": 5,
-    "move": "1 point Arcane Focus -> Frost Channeling",
-    "gain_seed1": 0.009195421478269461,
-    "gain_seed2": 0.008814426420133081,
-    "split": "4/31/16"
-   }
-  ],
-  "dps_start": 437.8712937272615,
-  "dps_end": 489.64784071736653
- },
- "notes": [
-  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
- ]
+  "id": "cand-frostfire-raid-from-fire",
+  "allocation": {
+    "Arcane": [
+      ["Arcane Focus", 4],
+      ["Missile Barrage", 2]
+    ],
+    "Fire": [
+      ["Improved Fire Blast", 2],
+      ["Improved Fireball", 5],
+      ["Incineration", 3],
+      ["Ignite", 5],
+      ["Pyroblast", 1],
+      ["Heating Up", 1],
+      ["Improved Scorch", 3],
+      ["Master of Elements", 3],
+      ["Critical Mass", 5],
+      ["Fire Power", 3],
+      ["Combustion", 1]
+    ],
+    "Frost": [
+      ["Elemental Precision", 3],
+      ["Frost Warding", 2],
+      ["Ice Shards", 5],
+      ["Frost Channeling", 3]
+    ]
+  },
+  "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-28) for frostfire-raid from fire-raid in the dummy setting: 437.9 -> 489.6 DPS on a third seed.",
+  "search": {
+    "start": "fire-raid",
+    "setting": "dummy",
+    "moves": [
+      {"round": 1, "move": "5 points Arcane Concentration -> Ice Shards", "gain_seed1": 0.04683514787667131, "gain_seed2": 0.046406323448882514, "split": "9/32/10"},
+      {"round": 2, "move": "2 points Wand Specialization -> Frost Channeling", "gain_seed1": 0.023662508120103398, "gain_seed2": 0.024797630172306073, "split": "7/32/12"},
+      {"round": 3, "move": "2 points Magic Absorption -> Piercing Ice", "gain_seed1": 0.018167784954836508, "gain_seed2": 0.018199026112484695, "split": "5/32/14"},
+      {"round": 4, "move": "1 point Wake of Fire -> Piercing Ice", "gain_seed1": 0.01506190542577035, "gain_seed2": 0.015204562774605801, "split": "5/31/15"},
+      {"round": 5, "move": "1 point Arcane Focus -> Frost Channeling", "gain_seed1": 0.009195421478269461, "gain_seed2": 0.008814426420133081, "split": "4/31/16"}
+    ],
+    "dps_start": 437.8712937272615,
+    "dps_end": 489.64784071736653
+  },
+  "notes": ["2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"],
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 4/31/16 -> 6/32/13; Wake of Fire -> Improved Fire Blast (renamed); Fire Power 5 -> 3 (rank cap); Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Frost Warding (tier gating for Ice Shards); +1 Frost Warding (tier gating for Ice Shards); +1 Improved Fire Blast (tier gating for Combustion); +1 Critical Mass (tier gating for Combustion); +1 Critical Mass (prerequisite of Combustion); refill +2 Missile Barrage (refill: the fire-raid model, raid-dps)"
 }

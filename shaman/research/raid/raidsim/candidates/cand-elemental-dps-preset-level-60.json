@@ -1,76 +1,30 @@
 {
- "id": "cand-elemental-dps-preset-level-60",
- "allocation": {
-  "Elemental": [
-   [
-    "Convection",
-    5
-   ],
-   [
-    "Concussion",
-    5
-   ],
-   [
-    "Reverberation",
-    5
-   ],
-   [
-    "Call of Flame",
-    3
-   ],
-   [
-    "Elemental Focus",
-    1
-   ],
-   [
-    "Elemental Alacrity",
-    3
-   ],
-   [
-    "Call of Thunder",
-    1
-   ],
-   [
-    "Lightning Overload",
-    3
-   ],
-   [
-    "Elemental Fury",
-    5
-   ],
-   [
-    "Lava Burst",
-    1
-   ]
-  ],
-  "Restoration": [
-   [
-    "Improved Healing Wave",
-    5
-   ],
-   [
-    "Mindfulness",
-    3
-   ],
-   [
-    "Natural Grace",
-    3
-   ],
-   [
-    "Tidal Focus",
-    5
-   ],
-   [
-    "Improved Reincarnation",
-    2
-   ],
-   [
-    "Water Shield",
-    1
-   ]
-  ]
- },
- "preset": "Level 60",
- "talents": "5505301300103051--503352001",
- "note": "The community simulator's preset 'Level 60' (shaman/elemental/presets.ts), a raid candidate since it ran within 6% of the best build of elemental-dps (419.2 vs 439.8 in the race of 2026-09-30)."
+  "id": "cand-elemental-dps-preset-level-60",
+  "allocation": {
+    "Elemental": [
+      ["Concussion", 5],
+      ["Convection", 5],
+      ["Call of Flame", 3],
+      ["Elemental Alacrity", 3],
+      ["Reverberation", 5],
+      ["Elemental Focus", 1],
+      ["Lava Burst", 1],
+      ["Lightning Overload", 3],
+      ["Elemental Fury", 5],
+      ["Elemental Mastery", 1]
+    ],
+    "Enhancement": [],
+    "Restoration": [
+      ["Improved Healing Wave", 5],
+      ["Tidal Focus", 5],
+      ["Improved Reincarnation", 2],
+      ["Mindfulness", 3],
+      ["Natural Grace", 3],
+      ["Water Shield", 1]
+    ]
+  },
+  "preset": "Level 60",
+  "talents": "5505301300103051--503352001",
+  "note": "The community simulator's preset 'Level 60' (shaman/elemental/presets.ts), a raid candidate since it ran within 6% of the best build of elemental-dps (419.2 vs 439.8 in the race of 2026-09-30).",
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 32/19 -> 32/0/19; Call of Thunder 1 gone; refill +1 Elemental Mastery (refill: the elemental-dps model, raid-dps)"
 }

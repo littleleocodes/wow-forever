@@ -1,84 +1,32 @@
 {
- "id": "cand-shadow-dps-preset-shadow",
- "allocation": {
-  "Discipline": [
-   [
-    "Twin Disciplines",
-    5
-   ],
-   [
-    "Silent Resolve",
-    3
-   ],
-   [
-    "Martyrdom",
-    2
-   ],
-   [
-    "Mental Agility",
-    3
-   ],
-   [
-    "Inner Focus",
-    1
-   ],
-   [
-    "Meditation",
-    3
-   ],
-   [
-    "Mental Strength",
-    3
-   ]
-  ],
-  "Shadow": [
-   [
-    "Shadow Focus",
-    5
-   ],
-   [
-    "Spirit Tap",
-    5
-   ],
-   [
-    "Shadow Affinity",
-    1
-   ],
-   [
-    "Improved Shadow Word: Pain",
-    2
-   ],
-   [
-    "Improved Mind Blast",
-    5
-   ],
-   [
-    "Mind Flay",
-    1
-   ],
-   [
-    "Improved Mind Flay",
-    2
-   ],
-   [
-    "Vampiric Embrace",
-    1
-   ],
-   [
-    "Shadow Weaving",
-    3
-   ],
-   [
-    "Darkness",
-    5
-   ],
-   [
-    "Shadowform",
-    1
-   ]
-  ]
- },
- "preset": "Shadow",
- "talents": "005300231303--505120501201300051",
- "note": "The community simulator's preset 'Shadow' (priest/dps/presets.ts), a raid candidate since it ran within 6% of the best build of shadow-dps (513.9 vs 513.9 in the race of 2026-09-27)."
+  "id": "cand-shadow-dps-preset-shadow",
+  "allocation": {
+    "Discipline": [
+      ["Twin Disciplines", 5],
+      ["Martyrdom", 2],
+      ["Mental Strength", 3],
+      ["Silent Resolve", 3],
+      ["Inner Focus", 1],
+      ["Meditation", 3],
+      ["Mental Agility", 3]
+    ],
+    "Holy": [],
+    "Shadow": [
+      ["Shadow Focus", 5],
+      ["Spirit Tap", 5],
+      ["Improved Mind Blast", 5],
+      ["Improved Shadow Word: Pain", 2],
+      ["Improved Mind Flay", 2],
+      ["Mind Flay", 1],
+      ["Dark Inspiration", 1],
+      ["Shadow Weaving", 3],
+      ["Vampiric Embrace", 1],
+      ["Darkness", 5],
+      ["Shadowform", 1]
+    ]
+  },
+  "preset": "Shadow",
+  "talents": "005300231303--505120501201300051",
+  "note": "The community simulator's preset 'Shadow' (priest/dps/presets.ts), a raid candidate since it ran within 6% of the best build of shadow-dps (513.9 vs 513.9 in the race of 2026-09-27).",
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 20/31 -> 20/0/31; Shadow Affinity 1 gone; +1 Dark Inspiration (tier gating for Darkness) (refill: the shadow-dps model, raid-dps)"
 }

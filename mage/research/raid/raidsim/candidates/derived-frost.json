@@ -1,100 +1,44 @@
 {
- "id": "derived-frost",
- "allocation": {
-  "Arcane": [
-   [
-    "Wand Specialization",
-    1
-   ]
-  ],
-  "Fire": [
-   [
-    "Incineration",
-    3
-   ],
-   [
-    "Wake of Fire",
-    2
-   ],
-   [
-    "Improved Fireball",
-    3
-   ],
-   [
-    "Flame Throwing",
-    2
-   ],
-   [
-    "Burning Soul",
-    3
-   ]
-  ],
-  "Frost": [
-   [
-    "Improved Frostbolt",
-    5
-   ],
-   [
-    "Elemental Precision",
-    5
-   ],
-   [
-    "Ice Shards",
-    5
-   ],
-   [
-    "Ice Lance",
-    1
-   ],
-   [
-    "Piercing Ice",
-    3
-   ],
-   [
-    "Frost Channeling",
-    3
-   ],
-   [
-    "Shatter",
-    3
-   ],
-   [
-    "Arctic Reach",
-    2
-   ],
-   [
-    "Ice Block",
-    1
-   ],
-   [
-    "Fingers of Frost",
-    2
-   ],
-   [
-    "Cold Snap",
-    1
-   ],
-   [
-    "Winter's Chill",
-    5
-   ],
-   [
-    "Ice Barrier",
-    1
-   ]
-  ]
- },
- "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for frost-raid from opt-frost-raid-raid-dps-extwc in the dummy setting: 590.4 -> 590.4 DPS on a third seed.",
- "search": {
-  "start": "opt-frost-raid-raid-dps-extwc",
-  "setting": "dummy",
-  "kept": [
-   "Fingers of Frost"
-  ],
-  "moves": [],
-  "dps_start": 590.411473439519,
-  "dps_end": 590.411473439519,
-  "gain": 0.0,
-  "tank": false
- }
+  "id": "derived-frost",
+  "allocation": {
+    "Arcane": [
+      ["Arcane Focus", 2],
+      ["Missile Barrage", 2],
+      ["Wand Specialization", 1],
+      ["Arcane Concentration", 1]
+    ],
+    "Fire": [
+      ["Improved Fire Blast", 2],
+      ["Improved Fireball", 3],
+      ["Incineration", 3],
+      ["Flame Throwing", 2],
+      ["Burning Soul", 3]
+    ],
+    "Frost": [
+      ["Elemental Precision", 3],
+      ["Improved Frostbolt", 5],
+      ["Ice Shards", 5],
+      ["Frost Channeling", 3],
+      ["Ice Lance", 1],
+      ["Arctic Reach", 2],
+      ["Ice Block", 1],
+      ["Shatter", 3],
+      ["Cold Snap", 1],
+      ["Fingers of Frost", 2],
+      ["Winter's Chill", 5],
+      ["Ice Barrier", 1]
+    ]
+  },
+  "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for frost-raid from opt-frost-raid-raid-dps-extwc in the dummy setting: 590.4 -> 590.4 DPS on a third seed.",
+  "search": {
+    "start": "opt-frost-raid-raid-dps-extwc",
+    "setting": "dummy",
+    "kept": ["Fingers of Frost"],
+    "moves": [],
+    "dps_start": 590.411473439519,
+    "dps_end": 590.411473439519,
+    "gain": 0.0,
+    "tank": false
+  },
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 1/13/37 -> 6/13/32; Wake of Fire -> Improved Fire Blast (renamed); Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; refill +2 Missile Barrage, +2 Arcane Focus, +1 Arcane Concentration (refill: the frost-raid model, raid-dps)"
 }

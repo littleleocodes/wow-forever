@@ -1,115 +1,41 @@
 {
- "id": "cand-stormcaller-dps-from-preset",
- "allocation": {
-  "Elemental": [
-   [
-    "Convection",
-    5
-   ],
-   [
-    "Concussion",
-    5
-   ],
-   [
-    "Reverberation",
-    4
-   ],
-   [
-    "Call of Flame",
-    3
-   ],
-   [
-    "Elemental Focus",
-    1
-   ],
-   [
-    "Elemental Alacrity",
-    3
-   ],
-   [
-    "Call of Thunder",
-    1
-   ],
-   [
-    "Lightning Overload",
-    3
-   ],
-   [
-    "Elemental Fury",
-    4
-   ]
-  ],
-  "Enhancement": [
-   [
-    "Thundering Strikes",
-    5
-   ],
-   [
-    "Ancestral Knowledge",
-    5
-   ],
-   [
-    "Mental Dexterity",
-    3
-   ],
-   [
-    "Elemental Weapons",
-    1
-   ],
-   [
-    "Flurry",
-    4
-   ],
-   [
-    "Stormstrike",
-    1
-   ],
-   [
-    "Mental Quickness",
-    2
-   ],
-   [
-    "Shamanistic Focus",
-    1
-   ]
-  ],
-  "Restoration": []
- },
- "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-28) for stormcaller-dps from sim preset: Stormcaller 28/23/0 in the dummy setting: 319.1 -> 367.5 DPS on a third seed.",
- "search": {
-  "start": "sim preset: Stormcaller 28/23/0",
-  "setting": "dummy",
-  "moves": [
-   {
-    "round": 1,
-    "move": "1 point Elemental Weapons -> Shamanistic Focus",
-    "gain_seed1": 0.10878070080412705,
-    "gain_seed2": 0.11048039768638929,
-    "split": "28/23/0"
-   },
-   {
-    "round": 2,
-    "move": "1 point Elemental Weapons -> Elemental Fury",
-    "gain_seed1": 0.016848901602186217,
-    "gain_seed2": 0.01685253871682635,
-    "split": "29/22/0"
-   },
-   {
-    "round": 3,
-    "move": "3 points Elemental Devastation -> Convection",
-    "gain_seed1": 0.01543178921865307,
-    "gain_seed2": 0.015267820957193923,
-    "split": "29/22/0"
-   },
-   {
-    "round": 4,
-    "move": "1 point Reverberation -> Convection",
-    "gain_seed1": 0.004843998164000496,
-    "gain_seed2": 0.004432748717042356,
-    "split": "29/22/0"
-   }
-  ],
-  "dps_start": 319.1287178703817,
-  "dps_end": 367.4814776429878
- }
+  "id": "cand-stormcaller-dps-from-preset",
+  "allocation": {
+    "Elemental": [
+      ["Concussion", 5],
+      ["Convection", 5],
+      ["Call of Flame", 3],
+      ["Elemental Alacrity", 3],
+      ["Reverberation", 4],
+      ["Elemental Focus", 1],
+      ["Lava Burst", 1],
+      ["Lightning Overload", 3],
+      ["Elemental Fury", 4]
+    ],
+    "Enhancement": [
+      ["Ancestral Knowledge", 5],
+      ["Thundering Strikes", 5],
+      ["Mental Dexterity", 3],
+      ["Elemental Weapons", 1],
+      ["Shamanistic Focus", 1],
+      ["Flurry", 4],
+      ["Stormstrike", 1],
+      ["Mental Quickness", 2]
+    ],
+    "Restoration": []
+  },
+  "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-28) for stormcaller-dps from sim preset: Stormcaller 28/23/0 in the dummy setting: 319.1 -> 367.5 DPS on a third seed.",
+  "search": {
+    "start": "sim preset: Stormcaller 28/23/0",
+    "setting": "dummy",
+    "moves": [
+      {"round": 1, "move": "1 point Elemental Weapons -> Shamanistic Focus", "gain_seed1": 0.10878070080412705, "gain_seed2": 0.11048039768638929, "split": "28/23/0"},
+      {"round": 2, "move": "1 point Elemental Weapons -> Elemental Fury", "gain_seed1": 0.016848901602186217, "gain_seed2": 0.01685253871682635, "split": "29/22/0"},
+      {"round": 3, "move": "3 points Elemental Devastation -> Convection", "gain_seed1": 0.01543178921865307, "gain_seed2": 0.015267820957193923, "split": "29/22/0"},
+      {"round": 4, "move": "1 point Reverberation -> Convection", "gain_seed1": 0.004843998164000496, "gain_seed2": 0.004432748717042356, "split": "29/22/0"}
+    ],
+    "dps_start": 319.1287178703817,
+    "dps_end": 367.4814776429878
+  },
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 29/22/0 -> 29/22/0; Call of Thunder 1 gone; +1 Lava Burst (tier gating for Elemental Fury) (refill: the elemental-dps model, raid-dps)"
 }

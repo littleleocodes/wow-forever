@@ -1,80 +1,32 @@
 {
- "id": "cand-frost-raid-r6",
- "allocation": {
-  "Arcane": [
-   [
-    "Wand Specialization",
-    1
-   ]
-  ],
-  "Fire": [
-   [
-    "Incineration",
-    3
-   ],
-   [
-    "Wake of Fire",
-    2
-   ],
-   [
-    "Improved Fireball",
-    5
-   ],
-   [
-    "Ignite",
-    5
-   ],
-   [
-    "Master of Elements",
-    3
-   ]
-  ],
-  "Frost": [
-   [
-    "Improved Frostbolt",
-    5
-   ],
-   [
-    "Elemental Precision",
-    5
-   ],
-   [
-    "Ice Shards",
-    5
-   ],
-   [
-    "Ice Lance",
-    1
-   ],
-   [
-    "Piercing Ice",
-    3
-   ],
-   [
-    "Shatter",
-    3
-   ],
-   [
-    "Ice Block",
-    1
-   ],
-   [
-    "Fingers of Frost",
-    2
-   ],
-   [
-    "Cold Snap",
-    1
-   ],
-   [
-    "Winter's Chill",
-    5
-   ],
-   [
-    "Ice Barrier",
-    1
-   ]
-  ]
- },
- "note": "Optimizer raid build saved by rebuild.py on 2026-09-27 (raid calibration round 1)"
+  "id": "cand-frost-raid-r6",
+  "allocation": {
+    "Arcane": [
+      ["Missile Barrage", 1],
+      ["Wand Specialization", 1]
+    ],
+    "Fire": [
+      ["Improved Fire Blast", 2],
+      ["Improved Fireball", 5],
+      ["Incineration", 3],
+      ["Ignite", 5],
+      ["Master of Elements", 3]
+    ],
+    "Frost": [
+      ["Elemental Precision", 3],
+      ["Improved Frostbolt", 5],
+      ["Ice Shards", 5],
+      ["Frost Channeling", 3],
+      ["Ice Lance", 1],
+      ["Arctic Reach", 1],
+      ["Ice Block", 1],
+      ["Shatter", 3],
+      ["Cold Snap", 1],
+      ["Fingers of Frost", 2],
+      ["Winter's Chill", 5],
+      ["Ice Barrier", 1]
+    ]
+  },
+  "note": "Optimizer raid build saved by rebuild.py on 2026-09-27 (raid calibration round 1)",
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 1/18/32 -> 2/18/31; Wake of Fire -> Improved Fire Blast (renamed); Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Frost Channeling (tier gating for Ice Block); +1 Frost Channeling (tier gating for Cold Snap); +1 Frost Channeling (tier gating for Winter's Chill); +1 Arctic Reach (tier gating for Winter's Chill); refill +1 Missile Barrage (refill: the frost-raid model, raid-dps)"
 }

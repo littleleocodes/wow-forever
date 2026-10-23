@@ -260,11 +260,38 @@ def core_share(cls, spec, shares, mode="raid"):
     return round(sum(v for k, v in shares.items() if any(matches(c, k) for c in r["core"])), 4)
 
 
-def check_shares(cls, spec, shares, casts, held=None, mode="raid"):
+def rule_specs(cls, spec, trees=None, mode="raid"):
+    """The specs whose rule a build filed under `spec` must pass (any one): its own; a hybrid without a rule of its own, its trees' (only
+    those the entry is built for when `trees` names any; 2026-10-23, the paladin's 17/17/17 Holy/Protection leveling winner without Holy
+    Shock had passed as 'no rule'; signature.rule_specs)."""
+    if rule(cls, spec, mode):
+        return [spec]
+    if not spec or not spec.startswith("Hybrid "):
+        return []
+    two = spec[len("Hybrid "):].split("/")
+    own = [t for t in two if trees and t in trees]
+    return [t for t in (own or two) if rule(cls, t, mode)]
+
+
+def check_shares(cls, spec, shares, casts, held=None, mode="raid", trees=None):
     """The rule on already-mapped shares ({name: share}) and casts ({name: casts per fight}; None = unknown). `held` ({talent: rank}):
     a required spell granted by a talent the build lacks fails as 'talent missing'. Returns {spec, ok, core_share, min_share,
-    uncast, missing_talents, why} or None when the spec has no rule (or the check is switched off)."""
-    r = rule(cls, spec, mode) if enabled() else None
+    uncast, missing_talents, why} or None when no rule applies (or the check is switched off). A hybrid without a rule of its own passes
+    on either of its trees' rules (rule_specs; `trees`: the entry's)."""
+    if not enabled():
+        return None
+    specs_ = rule_specs(cls, spec, trees, mode)
+    if specs_ != [spec]:
+        best = None
+        for s_ in specs_:
+            c = check_shares(cls, s_, shares, casts, held, mode)
+            c["filed_as"] = spec
+            if best is None or c["ok"] or penalty(c) > penalty(best):
+                best = c
+            if c["ok"]:
+                break
+        return best
+    r = rule(cls, spec, mode)
     if not r:
         return None
     tree_of = _talents(cls)[0]
@@ -285,11 +312,11 @@ def check_shares(cls, spec, shares, casts, held=None, mode="raid"):
             "uncast": uncast, "missing_talents": missing, "why": "; ".join(why) if why else ("no damage shares" if cs is None else "")}
 
 
-def check(cls, spec, actions, names, held=None, mode="raid"):
+def check(cls, spec, actions, names, held=None, mode="raid", trees=None):
     """check_shares on one bench result row's actions."""
     if not actions:
         return None
-    return check_shares(cls, spec, shares_of(actions, names), casts_of(actions, names), held, mode)
+    return check_shares(cls, spec, shares_of(actions, names), casts_of(actions, names), held, mode, trees)
 
 
 def penalty(chk):
@@ -310,7 +337,7 @@ def measure(cls, entry, alloc, repo, R, A, iterations=3000, seed=7, setting="rai
     b = {"label": "sig", "talents": R.talents_string(trees, flat), **({"gear_json": gear_json} if gear_json else {})}
     row = A.bench(R.SPECS[cls][entry], repo, [b], iterations, seed, setting, f"sig-{cls}-{entry}").get("sig") or {}
     names = R.spell_names(repo, cls)
-    chk = check(cls, spec, row.get("actions"), names, flat)
+    chk = check(cls, spec, row.get("actions"), names, flat, trees=_entry_trees(cls, entry))
     if chk is None:
         chk = {"spec": spec, "ok": True, "core_share": None, "min_share": None, "uncast": [], "missing_talents": [], "why": "no rule for this spec"}
     # the shares and casts too, so a caller that files the build under another spec can re-check it without a run (check_shares)

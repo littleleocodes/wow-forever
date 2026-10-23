@@ -1,79 +1,29 @@
 {
- "id": "cand-elemental-dps-r2",
- "allocation": {
-  "Elemental": [
-   [
-    "Concussion",
-    5
-   ],
-   [
-    "Convection",
-    5
-   ],
-   [
-    "Call of Flame",
-    3
-   ],
-   [
-    "Reverberation",
-    4
-   ],
-   [
-    "Elemental Alacrity",
-    3
-   ],
-   [
-    "Elemental Focus",
-    1
-   ],
-   [
-    "Call of Thunder",
-    1
-   ],
-   [
-    "Lightning Overload",
-    3
-   ],
-   [
-    "Elemental Fury",
-    4
-   ]
-  ],
-  "Enhancement": [
-   [
-    "Thundering Strikes",
-    5
-   ],
-   [
-    "Ancestral Knowledge",
-    5
-   ],
-   [
-    "Mental Dexterity",
-    3
-   ],
-   [
-    "Improved Lightning Shield",
-    3
-   ],
-   [
-    "Guardian Totems",
-    2
-   ],
-   [
-    "Shamanistic Focus",
-    1
-   ],
-   [
-    "Stormstrike",
-    1
-   ],
-   [
-    "Mental Quickness",
-    2
-   ]
-  ],
-  "Restoration": []
- },
- "note": "Optimizer raid build saved by rebuild.py on 2026-09-26 (raid calibration round 2)"
+  "id": "cand-elemental-dps-r2",
+  "allocation": {
+    "Elemental": [
+      ["Concussion", 5],
+      ["Convection", 5],
+      ["Call of Flame", 3],
+      ["Elemental Alacrity", 3],
+      ["Reverberation", 4],
+      ["Elemental Focus", 1],
+      ["Lava Burst", 1],
+      ["Lightning Overload", 3],
+      ["Elemental Fury", 4]
+    ],
+    "Enhancement": [
+      ["Ancestral Knowledge", 5],
+      ["Thundering Strikes", 5],
+      ["Guardian Totems", 2],
+      ["Improved Lightning Shield", 3],
+      ["Mental Dexterity", 3],
+      ["Shamanistic Focus", 1],
+      ["Stormstrike", 1],
+      ["Mental Quickness", 2]
+    ],
+    "Restoration": []
+  },
+  "note": "Optimizer raid build saved by rebuild.py on 2026-09-26 (raid calibration round 2)",
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 29/22/0 -> 29/22/0; Call of Thunder 1 gone; +1 Lava Burst (tier gating for Elemental Fury) (refill: the elemental-dps model, raid-dps)"
 }

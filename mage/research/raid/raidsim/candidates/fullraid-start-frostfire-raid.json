@@ -1,82 +1,31 @@
 {
- "id": "frostfire-raid",
- "allocation": {
-  "Arcane": [
-   [
-    "Improved Channeling",
-    2
-   ]
-  ],
-  "Fire": [
-   [
-    "Wake of Fire",
-    2
-   ],
-   [
-    "Incineration",
-    3
-   ],
-   [
-    "Improved Fireball",
-    5
-   ],
-   [
-    "Ignite",
-    5
-   ],
-   [
-    "Pyroblast",
-    1
-   ],
-   [
-    "Improved Scorch",
-    3
-   ],
-   [
-    "Heating Up",
-    1
-   ],
-   [
-    "Master of Elements",
-    3
-   ],
-   [
-    "Critical Mass",
-    3
-   ],
-   [
-    "Blast Wave",
-    1
-   ],
-   [
-    "Fire Power",
-    5
-   ],
-   [
-    "Combustion",
-    1
-   ]
-  ],
-  "Frost": [
-   [
-    "Elemental Precision",
-    5
-   ],
-   [
-    "Ice Shards",
-    5
-   ],
-   [
-    "Piercing Ice",
-    3
-   ],
-   [
-    "Frost Channeling",
-    3
-   ]
-  ]
- },
- "notes": [
-  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
- ]
+  "id": "frostfire-raid",
+  "allocation": {
+    "Arcane": [
+      ["Improved Channeling", 3],
+      ["Missile Barrage", 2]
+    ],
+    "Fire": [
+      ["Improved Fire Blast", 2],
+      ["Improved Fireball", 5],
+      ["Incineration", 3],
+      ["Ignite", 5],
+      ["Pyroblast", 1],
+      ["Heating Up", 1],
+      ["Improved Scorch", 3],
+      ["Master of Elements", 3],
+      ["Blast Wave", 1],
+      ["Critical Mass", 5],
+      ["Fire Power", 3],
+      ["Combustion", 1]
+    ],
+    "Frost": [
+      ["Elemental Precision", 3],
+      ["Frost Warding", 2],
+      ["Ice Shards", 5],
+      ["Frost Channeling", 3]
+    ]
+  },
+  "notes": ["2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"],
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 2/33/16 -> 5/33/13; Wake of Fire -> Improved Fire Blast (renamed); Fire Power 5 -> 3 (rank cap); Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Frost Warding (tier gating for Ice Shards); +1 Frost Warding (tier gating for Ice Shards); +1 Critical Mass (prerequisite of Combustion); +1 Critical Mass (prerequisite of Combustion); refill +1 Improved Channeling, +2 Missile Barrage (refill: the fire-raid model, raid-dps)"
 }

@@ -1,91 +1,41 @@
 {
- "id": "fullraid-fire-raid-ours",
- "allocation": {
-  "Arcane": [
-   [
-    "Improved Channeling",
-    5
-   ],
-   [
-    "Arcane Subtlety",
-    2
-   ],
-   [
-    "Arcane Concentration",
-    5
-   ]
-  ],
-  "Fire": [
-   [
-    "Wake of Fire",
-    2
-   ],
-   [
-    "Incineration",
-    3
-   ],
-   [
-    "Improved Fireball",
-    5
-   ],
-   [
-    "Ignite",
-    5
-   ],
-   [
-    "Burning Soul",
-    2
-   ],
-   [
-    "Pyroblast",
-    1
-   ],
-   [
-    "Improved Scorch",
-    3
-   ],
-   [
-    "Heating Up",
-    1
-   ],
-   [
-    "Master of Elements",
-    3
-   ],
-   [
-    "Critical Mass",
-    3
-   ],
-   [
-    "Fire Power",
-    5
-   ],
-   [
-    "Combustion",
-    1
-   ]
-  ],
-  "Frost": [
-   [
-    "Elemental Precision",
-    5
-   ]
-  ]
- },
- "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for fire-raid from /home/user/wow-forever/mage/research/raid/raidsim/candidates/fullraid-start-fire-raid.json in the raid setting: 728.8 -> 728.8 DPS on a third seed.",
- "search": {
-  "start": "/home/user/wow-forever/mage/research/raid/raidsim/candidates/fullraid-start-fire-raid.json",
-  "setting": "raid",
-  "kept": [
-   "Hot Streak"
-  ],
-  "moves": [],
-  "dps_start": 728.7888283547727,
-  "dps_end": 728.7888283547727,
-  "gain": 0.0,
-  "tank": false
- },
- "notes": [
-  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
- ]
+  "id": "fullraid-fire-raid-ours",
+  "allocation": {
+    "Arcane": [
+      ["Improved Channeling", 5],
+      ["Missile Barrage", 2],
+      ["Arcane Concentration", 5],
+      ["Arcane Subtlety", 2]
+    ],
+    "Fire": [
+      ["Improved Fire Blast", 2],
+      ["Improved Fireball", 5],
+      ["Incineration", 3],
+      ["Ignite", 5],
+      ["Burning Soul", 2],
+      ["Pyroblast", 1],
+      ["Heating Up", 1],
+      ["Improved Scorch", 3],
+      ["Master of Elements", 3],
+      ["Critical Mass", 5],
+      ["Fire Power", 3],
+      ["Combustion", 1]
+    ],
+    "Frost": [
+      ["Elemental Precision", 3]
+    ]
+  },
+  "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for fire-raid from /home/user/wow-forever/mage/research/raid/raidsim/candidates/fullraid-start-fire-raid.json in the raid setting: 728.8 -> 728.8 DPS on a third seed.",
+  "search": {
+    "start": "/home/user/wow-forever/mage/research/raid/raidsim/candidates/fullraid-start-fire-raid.json",
+    "setting": "raid",
+    "kept": ["Hot Streak"],
+    "moves": [],
+    "dps_start": 728.7888283547727,
+    "dps_end": 728.7888283547727,
+    "gain": 0.0,
+    "tank": false
+  },
+  "notes": ["2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"],
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 12/34/5 -> 14/34/3; Wake of Fire -> Improved Fire Blast (renamed); Fire Power 5 -> 3 (rank cap); Elemental Precision 5 -> 3 (rank cap); +1 Critical Mass (prerequisite of Combustion); +1 Critical Mass (prerequisite of Combustion); refill +2 Missile Barrage (refill: the fire-raid model, raid-dps)"
 }

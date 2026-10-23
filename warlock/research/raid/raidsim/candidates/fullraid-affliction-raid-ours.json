@@ -1,89 +1,38 @@
 {
- "id": "fullraid-affliction-raid-ours",
- "allocation": {
-  "Affliction": [
-   [
-    "Suppression",
-    5
-   ],
-   [
-    "Improved Corruption",
-    3
-   ],
-   [
-    "Improved Life Tap",
-    2
-   ],
-   [
-    "Malediction",
-    2
-   ],
-   [
-    "Pandemic",
-    3
-   ],
-   [
-    "Improved Bane of Agony",
-    2
-   ],
-   [
-    "Amplify Curse",
-    1
-   ],
-   [
-    "Malevolence",
-    5
-   ],
-   [
-    "Shadow Mastery",
-    5
-   ],
-   [
-    "Nightfall",
-    2
-   ]
-  ],
-  "Demonology": [],
-  "Destruction": [
-   [
-    "Bane",
-    5
-   ],
-   [
-    "Improved Shadow Bolt",
-    5
-   ],
-   [
-    "Cataclysm",
-    3
-   ],
-   [
-    "Ruin",
-    5
-   ],
-   [
-    "Agonizing Flames",
-    3
-   ]
-  ]
- },
- "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for affliction-raid from /home/user/wow-forever/warlock/research/raid/raidsim/candidates/fullraid-start-opt-affliction-raid-raid-dps.json in the raid setting: 768.0 -> 769.3 DPS on a third seed.",
- "search": {
-  "start": "/home/user/wow-forever/warlock/research/raid/raidsim/candidates/fullraid-start-opt-affliction-raid-raid-dps.json",
-  "setting": "raid",
-  "kept": [],
-  "moves": [
-   {
-    "round": 1,
-    "move": "2 points Improved Corruption -> Nightfall",
-    "gain_seed1": 0.0016735455276042366,
-    "gain_seed2": 0.002264421846885467,
-    "split": "30/0/21"
-   }
-  ],
-  "dps_start": 767.9770204384063,
-  "dps_end": 769.2916640296764,
-  "gain": 0.0017118267295546108,
-  "tank": false
- }
+  "id": "fullraid-affliction-raid-ours",
+  "allocation": {
+    "Affliction": [
+      ["Improved Corruption", 5],
+      ["Improved Life Tap", 2],
+      ["Suppression", 5],
+      ["Amplify Curse", 1],
+      ["Improved Bane of Agony", 2],
+      ["Pandemic", 3],
+      ["Malevolence", 5],
+      ["Nightfall", 2],
+      ["Shadow Mastery", 5]
+    ],
+    "Demonology": [],
+    "Destruction": [
+      ["Bane", 5],
+      ["Improved Shadow Bolt", 5],
+      ["Cataclysm", 3],
+      ["Ruin", 5],
+      ["Agonizing Flames", 3]
+    ]
+  },
+  "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for affliction-raid from /home/user/wow-forever/warlock/research/raid/raidsim/candidates/fullraid-start-opt-affliction-raid-raid-dps.json in the raid setting: 768.0 -> 769.3 DPS on a third seed.",
+  "search": {
+    "start": "/home/user/wow-forever/warlock/research/raid/raidsim/candidates/fullraid-start-opt-affliction-raid-raid-dps.json",
+    "setting": "raid",
+    "kept": [],
+    "moves": [
+      {"round": 1, "move": "2 points Improved Corruption -> Nightfall", "gain_seed1": 0.0016735455276042366, "gain_seed2": 0.002264421846885467, "split": "30/0/21"}
+    ],
+    "dps_start": 767.9770204384063,
+    "dps_end": 769.2916640296764,
+    "gain": 0.0017118267295546108,
+    "tank": false
+  },
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 30/0/21 -> 30/0/21; Malediction 2 gone; +1 Improved Corruption (tier gating for Shadow Mastery); +1 Improved Corruption (tier gating for Shadow Mastery) (refill: the affliction-raid model, raid-dps)"
 }

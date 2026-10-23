@@ -1,90 +1,31 @@
 {
- "id": "tf-popular-5-shaman",
- "allocation": {
-  "Elemental": [
-   [
-    "Concussion",
-    5
-   ],
-   [
-    "Call of Flame",
-    3
-   ],
-   [
-    "Elemental Devastation",
-    3
-   ],
-   [
-    "Elemental Focus",
-    1
-   ],
-   [
-    "Elemental Alacrity",
-    3
-   ],
-   [
-    "Improved Fire Nova",
-    2
-   ],
-   [
-    "Call of Thunder",
-    1
-   ]
-  ],
-  "Enhancement": [
-   [
-    "Thundering Strikes",
-    5
-   ],
-   [
-    "Ancestral Knowledge",
-    2
-   ],
-   [
-    "Mental Dexterity",
-    3
-   ],
-   [
-    "Improved Ghost Wolf",
-    2
-   ],
-   [
-    "Elemental Weapons",
-    3
-   ],
-   [
-    "Shamanistic Focus",
-    1
-   ],
-   [
-    "Flurry",
-    5
-   ],
-   [
-    "Stormstrike",
-    1
-   ],
-   [
-    "Spirit Weapons",
-    1
-   ],
-   [
-    "Mental Quickness",
-    2
-   ],
-   [
-    "Improved Stormstrike",
-    2
-   ],
-   [
-    "Maelstrom Weapon",
-    5
-   ],
-   [
-    "Rage of the Farseer",
-    1
-   ]
-  ],
-  "Restoration": []
- }
+  "id": "tf-popular-5-shaman",
+  "allocation": {
+    "Elemental": [
+      ["Concussion", 5],
+      ["Convection", 1],
+      ["Call of Flame", 3],
+      ["Elemental Alacrity", 3],
+      ["Elemental Devastation", 3],
+      ["Elemental Focus", 1],
+      ["Trial by Fire", 2]
+    ],
+    "Enhancement": [
+      ["Ancestral Knowledge", 2],
+      ["Thundering Strikes", 5],
+      ["Improved Ghost Wolf", 2],
+      ["Mental Dexterity", 3],
+      ["Elemental Weapons", 3],
+      ["Shamanistic Focus", 1],
+      ["Flurry", 5],
+      ["Stormstrike", 1],
+      ["Improved Stormstrike", 2],
+      ["Mental Quickness", 2],
+      ["Spirit Weapons", 1],
+      ["Maelstrom Weapon", 5],
+      ["Rage of the Farseer", 1]
+    ],
+    "Restoration": []
+  },
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 18/33/0 -> 18/33/0; Improved Fire Nova -> Trial by Fire (renamed); Call of Thunder 1 gone; refill +1 Convection (refill: the enhancement-dps model, raid-dps)"
 }

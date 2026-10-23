@@ -1,112 +1,41 @@
 {
- "id": "cand-frostfire-raid-from-frost",
- "allocation": {
-  "Arcane": [
-   [
-    "Arcane Focus",
-    5
-   ],
-   [
-    "Arcane Concentration",
-    5
-   ],
-   [
-    "Magic Absorption",
-    2
-   ],
-   [
-    "Arcane Impact",
-    3
-   ],
-   [
-    "Arcane Meditation",
-    3
-   ]
-  ],
-  "Fire": [
-   [
-    "Incineration",
-    3
-   ],
-   [
-    "Wake of Fire",
-    2
-   ],
-   [
-    "Ignite",
-    5
-   ]
-  ],
-  "Frost": [
-   [
-    "Elemental Precision",
-    5
-   ],
-   [
-    "Improved Frostbolt",
-    1
-   ],
-   [
-    "Ice Shards",
-    5
-   ],
-   [
-    "Piercing Ice",
-    3
-   ],
-   [
-    "Frost Channeling",
-    3
-   ],
-   [
-    "Ice Lance",
-    1
-   ],
-   [
-    "Shatter",
-    3
-   ],
-   [
-    "Fingers of Frost",
-    2
-   ]
-  ]
- },
- "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-28) for frostfire-raid from frost-fingers-of-frost-raid in the dummy setting: 264.9 -> 304.7 DPS on a third seed.",
- "search": {
-  "start": "frost-fingers-of-frost-raid",
-  "setting": "dummy",
-  "moves": [
-   {
-    "round": 1,
-    "move": "2 points Improved Frostbolt -> Wake of Fire",
-    "gain_seed1": 0.04856552562518934,
-    "gain_seed2": 0.05149551530804897,
-    "split": "18/3/30"
-   },
-   {
-    "round": 2,
-    "move": "2 points Winter's Chill -> Incineration",
-    "gain_seed1": 0.007077469655267343,
-    "gain_seed2": 0.005851648571678414,
-    "split": "18/5/28"
-   },
-   {
-    "round": 3,
-    "move": "3 points Winter's Chill -> Ignite",
-    "gain_seed1": 0.050891905903516665,
-    "gain_seed2": 0.05258299226742347,
-    "split": "18/8/25"
-   },
-   {
-    "round": 4,
-    "move": "2 points Improved Frostbolt -> Ignite",
-    "gain_seed1": 0.032843991317554,
-    "gain_seed2": 0.03313638104688188,
-    "split": "18/10/23"
-   }
-  ],
-  "dps_start": 264.87793510297433,
-  "dps_end": 304.65073695850253
- }
+  "id": "cand-frostfire-raid-from-frost",
+  "allocation": {
+    "Arcane": [
+      ["Arcane Focus", 5],
+      ["Missile Barrage", 1],
+      ["Arcane Concentration", 5],
+      ["Magic Absorption", 2],
+      ["Arcane Impact", 3],
+      ["Arcane Meditation", 3]
+    ],
+    "Fire": [
+      ["Improved Fire Blast", 2],
+      ["Incineration", 3],
+      ["Ignite", 5]
+    ],
+    "Frost": [
+      ["Elemental Precision", 3],
+      ["Improved Frostbolt", 5],
+      ["Ice Shards", 5],
+      ["Frost Channeling", 3],
+      ["Ice Lance", 1],
+      ["Shatter", 3],
+      ["Fingers of Frost", 2]
+    ]
+  },
+  "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-28) for frostfire-raid from frost-fingers-of-frost-raid in the dummy setting: 264.9 -> 304.7 DPS on a third seed.",
+  "search": {
+    "start": "frost-fingers-of-frost-raid",
+    "setting": "dummy",
+    "moves": [
+      {"round": 1, "move": "2 points Improved Frostbolt -> Wake of Fire", "gain_seed1": 0.04856552562518934, "gain_seed2": 0.05149551530804897, "split": "18/3/30"},
+      {"round": 2, "move": "2 points Winter's Chill -> Incineration", "gain_seed1": 0.007077469655267343, "gain_seed2": 0.005851648571678414, "split": "18/5/28"},
+      {"round": 3, "move": "3 points Winter's Chill -> Ignite", "gain_seed1": 0.050891905903516665, "gain_seed2": 0.05258299226742347, "split": "18/8/25"},
+      {"round": 4, "move": "2 points Improved Frostbolt -> Ignite", "gain_seed1": 0.032843991317554, "gain_seed2": 0.03313638104688188, "split": "18/10/23"}
+    ],
+    "dps_start": 264.87793510297433,
+    "dps_end": 304.65073695850253
+  },
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 18/10/23 -> 19/10/22; Wake of Fire -> Improved Fire Blast (renamed); Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Improved Frostbolt (tier gating for Ice Shards); +1 Improved Frostbolt (tier gating for Shatter); +1 Improved Frostbolt (tier gating for Fingers of Frost); +1 Improved Frostbolt (tier gating for Fingers of Frost); refill +1 Missile Barrage (refill: the frost-raid model, raid-dps)"
 }

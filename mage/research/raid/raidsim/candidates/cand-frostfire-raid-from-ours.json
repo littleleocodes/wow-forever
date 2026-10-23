@@ -1,100 +1,43 @@
 {
- "id": "cand-frostfire-raid-from-ours",
- "allocation": {
-  "Arcane": [],
-  "Fire": [
-   [
-    "Incineration",
-    3
-   ],
-   [
-    "Improved Fireball",
-    5
-   ],
-   [
-    "Ignite",
-    5
-   ],
-   [
-    "Flame Throwing",
-    2
-   ],
-   [
-    "Burning Soul",
-    2
-   ],
-   [
-    "Pyroblast",
-    1
-   ],
-   [
-    "Improved Scorch",
-    3
-   ],
-   [
-    "Heating Up",
-    1
-   ],
-   [
-    "Master of Elements",
-    3
-   ],
-   [
-    "Critical Mass",
-    3
-   ],
-   [
-    "Blast Wave",
-    1
-   ],
-   [
-    "Fire Power",
-    5
-   ],
-   [
-    "Combustion",
-    1
-   ]
-  ],
-  "Frost": [
-   [
-    "Elemental Precision",
-    5
-   ],
-   [
-    "Ice Shards",
-    5
-   ],
-   [
-    "Piercing Ice",
-    3
-   ],
-   [
-    "Frost Channeling",
-    3
-   ]
-  ]
- },
- "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-28) for frostfire-raid from frostfire-raid in the dummy setting: 505.4 -> 507.7 DPS on a third seed.",
- "search": {
-  "start": "frostfire-raid",
-  "setting": "dummy",
-  "kept": [
-   "Hot Streak"
-  ],
-  "moves": [
-   {
-    "round": 1,
-    "move": "1 point Wake of Fire -> Improved Fireball",
-    "gain_seed1": 0.004929898184677928,
-    "gain_seed2": 0.004569467265979066,
-    "split": "0/35/16"
-   }
-  ],
-  "dps_start": 505.4377918670534,
-  "dps_end": 507.74449632935983
- },
- "notes": [
-  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
- ]
+  "id": "cand-frostfire-raid-from-ours",
+  "allocation": {
+    "Arcane": [
+      ["Missile Barrage", 1]
+    ],
+    "Fire": [
+      ["Improved Fire Blast", 2],
+      ["Improved Fireball", 5],
+      ["Incineration", 3],
+      ["Flame Throwing", 2],
+      ["Ignite", 5],
+      ["Burning Soul", 2],
+      ["Pyroblast", 1],
+      ["Heating Up", 1],
+      ["Improved Scorch", 3],
+      ["Master of Elements", 3],
+      ["Blast Wave", 1],
+      ["Critical Mass", 5],
+      ["Fire Power", 3],
+      ["Combustion", 1]
+    ],
+    "Frost": [
+      ["Elemental Precision", 3],
+      ["Frost Warding", 2],
+      ["Ice Shards", 5],
+      ["Frost Channeling", 3]
+    ]
+  },
+  "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-28) for frostfire-raid from frostfire-raid in the dummy setting: 505.4 -> 507.7 DPS on a third seed.",
+  "search": {
+    "start": "frostfire-raid",
+    "setting": "dummy",
+    "kept": ["Hot Streak"],
+    "moves": [
+      {"round": 1, "move": "1 point Wake of Fire -> Improved Fireball", "gain_seed1": 0.004929898184677928, "gain_seed2": 0.004569467265979066, "split": "0/35/16"}
+    ],
+    "dps_start": 505.4377918670534,
+    "dps_end": 507.74449632935983
+  },
+  "notes": ["2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"],
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 0/35/16 -> 1/37/13; Fire Power 5 -> 3 (rank cap); Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Frost Warding (tier gating for Ice Shards); +1 Frost Warding (tier gating for Ice Shards); +1 Critical Mass (prerequisite of Combustion); +1 Critical Mass (prerequisite of Combustion); refill +2 Improved Fire Blast, +1 Missile Barrage (refill: the fire-raid model, raid-dps)"
 }

@@ -1,130 +1,48 @@
 {
- "id": "fullraid-arcane-dps-popular",
- "allocation": {
-  "Arcane": [
-   [
-    "Arcane Focus",
-    5
-   ],
-   [
-    "Arcane Subtlety",
-    2
-   ],
-   [
-    "Magic Absorption",
-    2
-   ],
-   [
-    "Arcane Resilience",
-    2
-   ],
-   [
-    "Arcane Geometry",
-    2
-   ],
-   [
-    "Arcane Impact",
-    3
-   ],
-   [
-    "Arcane Blast",
-    1
-   ],
-   [
-    "Arcane Shielding",
-    2
-   ],
-   [
-    "Improved Counterspell",
-    2
-   ],
-   [
-    "Missile Barrage",
-    1
-   ],
-   [
-    "Presence of Mind",
-    1
-   ],
-   [
-    "Arcane Mind",
-    5
-   ],
-   [
-    "Arcane Instability",
-    3
-   ],
-   [
-    "Arcane Power",
-    1
-   ]
-  ],
-  "Fire": [
-   [
-    "Wake of Fire",
-    1
-   ],
-   [
-    "Incineration",
-    3
-   ]
-  ],
-  "Frost": [
-   [
-    "Improved Frostbolt",
-    5
-   ],
-   [
-    "Elemental Precision",
-    5
-   ],
-   [
-    "Ice Shards",
-    5
-   ]
-  ]
- },
- "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for arcane-dps from /home/user/wow-forever/mage/research/raid/raidsim/candidates/fullraid-start-tf-popular-2-mage.json in the raid setting: 649.0 -> 677.2 DPS on a third seed.",
- "search": {
-  "start": "/home/user/wow-forever/mage/research/raid/raidsim/candidates/fullraid-start-tf-popular-2-mage.json",
-  "setting": "raid",
-  "kept": [
-   "Arcane Blast",
-   "Missile Barrage"
-  ],
-  "moves": [
-   {
-    "round": 1,
-    "move": "5 points Improved Channeling -> Improved Frostbolt",
-    "gain_seed1": 0.02405580666323681,
-    "gain_seed2": 0.023514967540603893,
-    "split": "42/4/5"
-   },
-   {
-    "round": 2,
-    "move": "3 points Arcane Meditation -> Elemental Precision",
-    "gain_seed1": 0.007326854203028033,
-    "gain_seed2": 0.007227912881998311,
-    "split": "39/4/8"
-   },
-   {
-    "round": 3,
-    "move": "5 points Arcane Concentration -> Ice Shards",
-    "gain_seed1": 0.007503359901239515,
-    "gain_seed2": 0.005943489309589989,
-    "split": "34/4/13"
-   },
-   {
-    "round": 4,
-    "move": "2 points Wand Specialization -> Elemental Precision",
-    "gain_seed1": 0.005157543285019273,
-    "gain_seed2": 0.005528633356724377,
-    "split": "32/4/15"
-   }
-  ],
-  "dps_start": 649.0110496574008,
-  "dps_end": 677.2230789309981,
-  "gain": 0.04346925878764285,
-  "tank": false
- }
+  "id": "fullraid-arcane-dps-popular",
+  "allocation": {
+    "Arcane": [
+      ["Arcane Focus", 5],
+      ["Missile Barrage", 2],
+      ["Arcane Resilience", 2],
+      ["Arcane Subtlety", 2],
+      ["Magic Absorption", 2],
+      ["Arcane Blast", 1],
+      ["Arcane Geometry", 2],
+      ["Arcane Impact", 3],
+      ["Arcane Shielding", 2],
+      ["Arcane Wrath", 1],
+      ["Improved Counterspell", 2],
+      ["Arcane Mind", 5],
+      ["Presence of Mind", 1],
+      ["Arcane Instability", 3],
+      ["Arcane Power", 1]
+    ],
+    "Fire": [
+      ["Improved Fire Blast", 1],
+      ["Incineration", 3]
+    ],
+    "Frost": [
+      ["Elemental Precision", 3],
+      ["Improved Frostbolt", 5],
+      ["Ice Shards", 5]
+    ]
+  },
+  "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for arcane-dps from /home/user/wow-forever/mage/research/raid/raidsim/candidates/fullraid-start-tf-popular-2-mage.json in the raid setting: 649.0 -> 677.2 DPS on a third seed.",
+  "search": {
+    "start": "/home/user/wow-forever/mage/research/raid/raidsim/candidates/fullraid-start-tf-popular-2-mage.json",
+    "setting": "raid",
+    "kept": ["Arcane Blast", "Missile Barrage"],
+    "moves": [
+      {"round": 1, "move": "5 points Improved Channeling -> Improved Frostbolt", "gain_seed1": 0.02405580666323681, "gain_seed2": 0.023514967540603893, "split": "42/4/5"},
+      {"round": 2, "move": "3 points Arcane Meditation -> Elemental Precision", "gain_seed1": 0.007326854203028033, "gain_seed2": 0.007227912881998311, "split": "39/4/8"},
+      {"round": 3, "move": "5 points Arcane Concentration -> Ice Shards", "gain_seed1": 0.007503359901239515, "gain_seed2": 0.005943489309589989, "split": "34/4/13"},
+      {"round": 4, "move": "2 points Wand Specialization -> Elemental Precision", "gain_seed1": 0.005157543285019273, "gain_seed2": 0.005528633356724377, "split": "32/4/15"}
+    ],
+    "dps_start": 649.0110496574008,
+    "dps_end": 677.2230789309981,
+    "gain": 0.04346925878764285,
+    "tank": false
+  },
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 32/4/15 -> 34/4/13; Wake of Fire -> Improved Fire Blast (renamed); Elemental Precision 5 -> 3 (rank cap); refill +1 Missile Barrage, +1 Arcane Wrath (refill: the frost-raid model, raid-dps)"
 }

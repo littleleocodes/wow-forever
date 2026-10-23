@@ -1,109 +1,43 @@
 {
- "id": "cand-arcane-dps-from-arcane-fire-preset",
- "allocation": {
-  "Arcane": [
-   [
-    "Arcane Focus",
-    5
-   ],
-   [
-    "Arcane Subtlety",
-    2
-   ],
-   [
-    "Magic Absorption",
-    1
-   ],
-   [
-    "Arcane Concentration",
-    5
-   ],
-   [
-    "Arcane Impact",
-    3
-   ],
-   [
-    "Arcane Blast",
-    1
-   ],
-   [
-    "Arcane Meditation",
-    3
-   ],
-   [
-    "Missile Barrage",
-    1
-   ],
-   [
-    "Presence of Mind",
-    1
-   ],
-   [
-    "Arcane Mind",
-    5
-   ],
-   [
-    "Arcane Instability",
-    3
-   ],
-   [
-    "Arcane Power",
-    1
-   ]
-  ],
-  "Fire": [
-   [
-    "Wake of Fire",
-    2
-   ],
-   [
-    "Incineration",
-    3
-   ],
-   [
-    "Ignite",
-    5
-   ],
-   [
-    "Burning Soul",
-    3
-   ],
-   [
-    "Improved Flamestrike",
-    2
-   ]
-  ],
-  "Frost": [
-   [
-    "Elemental Precision",
-    5
-   ]
-  ]
- },
- "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-28) for arcane-dps from sim preset: Arcane DPS in the dummy setting: 533.6 -> 541.5 DPS on a third seed.",
- "search": {
-  "start": "sim preset: Arcane DPS",
-  "setting": "dummy",
-  "kept": [
-   "Arcane Blast"
-  ],
-  "moves": [
-   {
-    "round": 1,
-    "move": "3 points Master of Elements -> Elemental Precision",
-    "gain_seed1": 0.00818267900265357,
-    "gain_seed2": 0.008705400518558726,
-    "split": "31/17/3"
-   },
-   {
-    "round": 2,
-    "move": "2 points Improved Scorch -> Elemental Precision",
-    "gain_seed1": 0.004885001167049374,
-    "gain_seed2": 0.006056491636378336,
-    "split": "31/15/5"
-   }
-  ],
-  "dps_start": 533.5922464310306,
-  "dps_end": 541.4970785994279
- }
+  "id": "cand-arcane-dps-from-arcane-fire-preset",
+  "allocation": {
+    "Arcane": [
+      ["Arcane Focus", 5],
+      ["Missile Barrage", 2],
+      ["Arcane Concentration", 5],
+      ["Arcane Subtlety", 2],
+      ["Magic Absorption", 1],
+      ["Arcane Blast", 1],
+      ["Arcane Impact", 3],
+      ["Arcane Meditation", 3],
+      ["Arcane Mind", 5],
+      ["Presence of Mind", 1],
+      ["Arcane Instability", 3],
+      ["Arcane Power", 1]
+    ],
+    "Fire": [
+      ["Improved Fire Blast", 2],
+      ["Incineration", 3],
+      ["Ignite", 5],
+      ["Burning Soul", 3],
+      ["Improved Flamestrike", 2]
+    ],
+    "Frost": [
+      ["Elemental Precision", 3],
+      ["Improved Frostbolt", 1]
+    ]
+  },
+  "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-28) for arcane-dps from sim preset: Arcane DPS in the dummy setting: 533.6 -> 541.5 DPS on a third seed.",
+  "search": {
+    "start": "sim preset: Arcane DPS",
+    "setting": "dummy",
+    "kept": ["Arcane Blast"],
+    "moves": [
+      {"round": 1, "move": "3 points Master of Elements -> Elemental Precision", "gain_seed1": 0.00818267900265357, "gain_seed2": 0.008705400518558726, "split": "31/17/3"},
+      {"round": 2, "move": "2 points Improved Scorch -> Elemental Precision", "gain_seed1": 0.004885001167049374, "gain_seed2": 0.006056491636378336, "split": "31/15/5"}
+    ],
+    "dps_start": 533.5922464310306,
+    "dps_end": 541.4970785994279
+  },
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 31/15/5 -> 32/15/4; Wake of Fire -> Improved Fire Blast (renamed); Elemental Precision 5 -> 3 (rank cap); refill +1 Missile Barrage, +1 Improved Frostbolt (refill: the frost-raid model, raid-dps)"
 }

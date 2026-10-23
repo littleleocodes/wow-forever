@@ -1,76 +1,29 @@
 {
- "id": "cand-elemental-dps-r7",
- "allocation": {
-  "Elemental": [
-   [
-    "Concussion",
-    5
-   ],
-   [
-    "Convection",
-    5
-   ],
-   [
-    "Call of Flame",
-    3
-   ],
-   [
-    "Elemental Warding",
-    3
-   ],
-   [
-    "Reverberation",
-    1
-   ],
-   [
-    "Elemental Alacrity",
-    3
-   ],
-   [
-    "Elemental Focus",
-    1
-   ],
-   [
-    "Call of Thunder",
-    1
-   ],
-   [
-    "Lightning Overload",
-    3
-   ],
-   [
-    "Elemental Fury",
-    5
-   ],
-   [
-    "Lava Burst",
-    1
-   ]
-  ],
-  "Enhancement": [
-   [
-    "Thundering Strikes",
-    5
-   ],
-   [
-    "Ancestral Knowledge",
-    2
-   ]
-  ],
-  "Restoration": [
-   [
-    "Totemic Focus",
-    5
-   ],
-   [
-    "Mindfulness",
-    3
-   ],
-   [
-    "Tidal Focus",
-    5
-   ]
-  ]
- },
- "note": "Optimizer raid build saved by rebuild.py on 2026-09-28 (raid calibration round 1)"
+  "id": "cand-elemental-dps-r7",
+  "allocation": {
+    "Elemental": [
+      ["Concussion", 5],
+      ["Convection", 5],
+      ["Call of Flame", 3],
+      ["Elemental Alacrity", 3],
+      ["Reverberation", 1],
+      ["Elemental Focus", 1],
+      ["Elemental Warding", 3],
+      ["Lava Burst", 1],
+      ["Lightning Overload", 3],
+      ["Elemental Fury", 5],
+      ["Elemental Mastery", 1]
+    ],
+    "Enhancement": [
+      ["Ancestral Knowledge", 2],
+      ["Thundering Strikes", 5]
+    ],
+    "Restoration": [
+      ["Tidal Focus", 5],
+      ["Mindfulness", 3],
+      ["Totemic Focus", 5]
+    ]
+  },
+  "note": "Optimizer raid build saved by rebuild.py on 2026-09-28 (raid calibration round 1)",
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 31/7/13 -> 31/7/13; Call of Thunder 1 gone; refill +1 Elemental Mastery (refill: the elemental-dps model, raid-dps)"
 }

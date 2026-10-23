@@ -1,100 +1,43 @@
 {
- "id": "fullraid-shadow-dps-popular",
- "allocation": {
-  "Discipline": [
-   [
-    "Wand Specialization",
-    2
-   ],
-   [
-    "Twin Disciplines",
-    5
-   ],
-   [
-    "Improved Power Word: Shield",
-    3
-   ],
-   [
-    "Inner Focus",
-    1
-   ],
-   [
-    "Meditation",
-    3
-   ]
-  ],
-  "Holy": [
-   [
-    "Twilight Focus",
-    3
-   ]
-  ],
-  "Shadow": [
-   [
-    "Shadow Focus",
-    5
-   ],
-   [
-    "Shadow Affinity",
-    3
-   ],
-   [
-    "Improved Shadow Word: Pain",
-    2
-   ],
-   [
-    "Shadow Reach",
-    2
-   ],
-   [
-    "Improved Mind Blast",
-    5
-   ],
-   [
-    "Mind Flay",
-    1
-   ],
-   [
-    "Improved Mind Flay",
-    2
-   ],
-   [
-    "Vampiric Embrace",
-    1
-   ],
-   [
-    "Shadow Weaving",
-    3
-   ],
-   [
-    "Devouring Contagion",
-    2
-   ],
-   [
-    "Early Demise",
-    2
-   ],
-   [
-    "Darkness",
-    5
-   ],
-   [
-    "Shadowform",
-    1
-   ]
-  ]
- },
- "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for shadow-dps from /home/user/wow-forever/priest/research/raid/raidsim/candidates/fullraid-start-tf-popular-1-priest.json in the raid setting: 708.3 -> 708.3 DPS on a third seed.",
- "search": {
-  "start": "/home/user/wow-forever/priest/research/raid/raidsim/candidates/fullraid-start-tf-popular-1-priest.json",
-  "setting": "raid",
-  "kept": [
-   "Inner Focus"
-  ],
-  "moves": [],
-  "dps_start": 708.329713743411,
-  "dps_end": 708.329713743411,
-  "gain": 0.0,
-  "tank": false
- }
+  "id": "fullraid-shadow-dps-popular",
+  "allocation": {
+    "Discipline": [
+      ["Twin Disciplines", 5],
+      ["Wand Specialization", 2],
+      ["Mental Strength", 3],
+      ["Improved Power Word: Shield", 1],
+      ["Inner Focus", 1],
+      ["Meditation", 3]
+    ],
+    "Holy": [
+      ["Twilight Focus", 3]
+    ],
+    "Shadow": [
+      ["Shadow Focus", 5],
+      ["Improved Mind Blast", 5],
+      ["Improved Shadow Word: Pain", 2],
+      ["Shadow Reach", 2],
+      ["Improved Mind Flay", 2],
+      ["Mind Flay", 1],
+      ["Dark Inspiration", 2],
+      ["Shadow Weaving", 3],
+      ["Vampiric Embrace", 1],
+      ["Devouring Contagion", 2],
+      ["Darkness", 5],
+      ["Early Demise", 2],
+      ["Shadowform", 1]
+    ]
+  },
+  "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for shadow-dps from /home/user/wow-forever/priest/research/raid/raidsim/candidates/fullraid-start-tf-popular-1-priest.json in the raid setting: 708.3 -> 708.3 DPS on a third seed.",
+  "search": {
+    "start": "/home/user/wow-forever/priest/research/raid/raidsim/candidates/fullraid-start-tf-popular-1-priest.json",
+    "setting": "raid",
+    "kept": ["Inner Focus"],
+    "moves": [],
+    "dps_start": 708.329713743411,
+    "dps_end": 708.329713743411,
+    "gain": 0.0,
+    "tank": false
+  },
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 14/3/34 -> 15/3/33; Shadow Affinity 3 gone; +1 Mental Strength (tier gating for Improved Power Word: Shield); +1 Mental Strength (tier gating for Improved Power Word: Shield); +1 Mental Strength (tier gating for Improved Power Word: Shield); +1 Dark Inspiration (tier gating for Darkness); +1 Dark Inspiration (tier gating for Darkness); -1 Improved Power Word: Shield (over 51); -1 Improved Power Word: Shield (over 51) (refill: the shadow-dps model, raid-dps)"
 }

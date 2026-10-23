@@ -1,72 +1,30 @@
 {
- "id": "cand-frost-raid-r11",
- "allocation": {
-  "Arcane": [
-   [
-    "Arcane Focus",
-    5
-   ],
-   [
-    "Improved Channeling",
-    2
-   ],
-   [
-    "Arcane Concentration",
-    5
-   ],
-   [
-    "Arcane Impact",
-    3
-   ],
-   [
-    "Arcane Meditation",
-    2
-   ]
-  ],
-  "Fire": [
-   [
-    "Incineration",
-    2
-   ]
-  ],
-  "Frost": [
-   [
-    "Improved Frostbolt",
-    5
-   ],
-   [
-    "Elemental Precision",
-    5
-   ],
-   [
-    "Ice Shards",
-    5
-   ],
-   [
-    "Piercing Ice",
-    3
-   ],
-   [
-    "Frost Channeling",
-    3
-   ],
-   [
-    "Ice Lance",
-    1
-   ],
-   [
-    "Shatter",
-    3
-   ],
-   [
-    "Fingers of Frost",
-    2
-   ],
-   [
-    "Winter's Chill",
-    5
-   ]
-  ]
- },
- "note": "Optimizer raid build saved by rebuild.py on 2026-09-29 (raid calibration round 1)"
+  "id": "cand-frost-raid-r11",
+  "allocation": {
+    "Arcane": [
+      ["Arcane Focus", 5],
+      ["Improved Channeling", 2],
+      ["Missile Barrage", 2],
+      ["Arcane Concentration", 5],
+      ["Arcane Impact", 3],
+      ["Arcane Meditation", 2]
+    ],
+    "Fire": [
+      ["Incineration", 2]
+    ],
+    "Frost": [
+      ["Elemental Precision", 3],
+      ["Improved Frostbolt", 5],
+      ["Ice Shards", 5],
+      ["Frost Channeling", 3],
+      ["Ice Lance", 1],
+      ["Arctic Reach", 2],
+      ["Ice Block", 1],
+      ["Shatter", 3],
+      ["Fingers of Frost", 2],
+      ["Winter's Chill", 5]
+    ]
+  },
+  "note": "Optimizer raid build saved by rebuild.py on 2026-09-29 (raid calibration round 1)",
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 17/2/32 -> 19/2/30; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Ice Block (tier gating for Winter's Chill); +1 Arctic Reach (tier gating for Winter's Chill); +1 Arctic Reach (tier gating for Winter's Chill); refill +2 Missile Barrage (refill: the frost-raid model, raid-dps)"
 }

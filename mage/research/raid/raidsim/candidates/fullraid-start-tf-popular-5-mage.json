@@ -1,81 +1,31 @@
 {
- "id": "tf-popular-5-mage",
- "allocation": {
-  "Arcane": [],
-  "Fire": [],
-  "Frost": [
-   [
-    "Improved Frostbolt",
-    5
-   ],
-   [
-    "Elemental Precision",
-    5
-   ],
-   [
-    "Ice Shards",
-    5
-   ],
-   [
-    "Permafrost",
-    3
-   ],
-   [
-    "Improved Frost Nova",
-    2
-   ],
-   [
-    "Frostbite",
-    3
-   ],
-   [
-    "Piercing Ice",
-    3
-   ],
-   [
-    "Frost Channeling",
-    3
-   ],
-   [
-    "Ice Lance",
-    1
-   ],
-   [
-    "Improved Blizzard",
-    3
-   ],
-   [
-    "Arctic Reach",
-    2
-   ],
-   [
-    "Ice Block",
-    1
-   ],
-   [
-    "Shatter",
-    3
-   ],
-   [
-    "Improved Cone of Cold",
-    3
-   ],
-   [
-    "Cold Snap",
-    1
-   ],
-   [
-    "Fingers of Frost",
-    2
-   ],
-   [
-    "Winter's Chill",
-    5
-   ],
-   [
-    "Ice Barrier",
-    1
-   ]
-  ]
- }
+  "id": "tf-popular-5-mage",
+  "allocation": {
+    "Arcane": [
+      ["Missile Barrage", 2]
+    ],
+    "Fire": [
+      ["Incineration", 3]
+    ],
+    "Frost": [
+      ["Elemental Precision", 3],
+      ["Improved Frostbolt", 5],
+      ["Frostbite", 3],
+      ["Ice Shards", 5],
+      ["Improved Frost Nova", 2],
+      ["Permafrost", 3],
+      ["Frost Channeling", 3],
+      ["Ice Lance", 1],
+      ["Improved Blizzard", 3],
+      ["Arctic Reach", 2],
+      ["Ice Block", 1],
+      ["Shatter", 3],
+      ["Cold Snap", 1],
+      ["Fingers of Frost", 2],
+      ["Improved Cone of Cold", 3],
+      ["Winter's Chill", 5],
+      ["Ice Barrier", 1]
+    ]
+  },
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 0/0/51 -> 2/3/46; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; refill +2 Missile Barrage, +3 Incineration (refill: the frost-raid model, raid-dps)"
 }

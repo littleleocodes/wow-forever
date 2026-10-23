@@ -1,130 +1,45 @@
 {
- "id": "fullraid-enhancement-dps-ours",
- "allocation": {
-  "Elemental": [
-   [
-    "Call of Flame",
-    3
-   ],
-   [
-    "Elemental Devastation",
-    3
-   ],
-   [
-    "Reverberation",
-    5
-   ],
-   [
-    "Concussion",
-    5
-   ],
-   [
-    "Elemental Alacrity",
-    3
-   ],
-   [
-    "Call of Thunder",
-    1
-   ]
-  ],
-  "Enhancement": [
-   [
-    "Thundering Strikes",
-    5
-   ],
-   [
-    "Ancestral Knowledge",
-    5
-   ],
-   [
-    "Mental Dexterity",
-    3
-   ],
-   [
-    "Shamanistic Focus",
-    1
-   ],
-   [
-    "Elemental Weapons",
-    3
-   ],
-   [
-    "Stormstrike",
-    1
-   ],
-   [
-    "Flurry",
-    5
-   ],
-   [
-    "Mental Quickness",
-    2
-   ],
-   [
-    "Maelstrom Weapon",
-    5
-   ],
-   [
-    "Rage of the Farseer",
-    1
-   ]
-  ],
-  "Restoration": []
- },
- "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for enhancement-dps from /home/user/wow-forever/shaman/research/raid/raidsim/candidates/fullraid-start-opt-enhancement-dps-raid-dps.json in the raid setting: 706.3 -> 732.9 DPS on a third seed.",
- "search": {
-  "start": "/home/user/wow-forever/shaman/research/raid/raidsim/candidates/fullraid-start-opt-enhancement-dps-raid-dps.json",
-  "setting": "raid",
-  "kept": [
-   "Maelstrom Weapon"
-  ],
-  "moves": [
-   {
-    "round": 1,
-    "move": "1 point Elemental Focus -> Elemental Devastation",
-    "gain_seed1": 0.00785498269380236,
-    "gain_seed2": 0.009233055604224383,
-    "split": "11/31/9"
-   },
-   {
-    "round": 2,
-    "move": "3 points Tidal Focus -> Reverberation",
-    "gain_seed1": 0.009832296574145971,
-    "gain_seed2": 0.009109731390055442,
-    "split": "14/31/6"
-   },
-   {
-    "round": 3,
-    "move": "5 points Convection -> Concussion",
-    "gain_seed1": 0.009072331617580698,
-    "gain_seed2": 0.007850386877988003,
-    "split": "14/31/6"
-   },
-   {
-    "round": 4,
-    "move": "1 point Tidal Focus -> Reverberation",
-    "gain_seed1": 0.005705170366803847,
-    "gain_seed2": 0.004642842501739075,
-    "split": "15/31/5"
-   },
-   {
-    "round": 5,
-    "move": "1 point Totemic Focus -> Reverberation",
-    "gain_seed1": 0.001490560356100179,
-    "gain_seed2": 0.004380800889052017,
-    "split": "16/31/4"
-   },
-   {
-    "round": 6,
-    "move": "4 Totemic Focus -> 3 Elemental Alacrity + 1 Call of Thunder",
-    "gain_seed1": 0.0010334639827109804,
-    "gain_seed2": 0.0015514645061796006,
-    "split": "20/31/0"
-   }
-  ],
-  "dps_start": 706.3413160058726,
-  "dps_end": 732.9110868236569,
-  "gain": 0.037616050789762046,
-  "tank": false
- }
+  "id": "fullraid-enhancement-dps-ours",
+  "allocation": {
+    "Elemental": [
+      ["Concussion", 5],
+      ["Call of Flame", 3],
+      ["Elemental Alacrity", 3],
+      ["Elemental Devastation", 3],
+      ["Reverberation", 5],
+      ["Elemental Focus", 1]
+    ],
+    "Enhancement": [
+      ["Ancestral Knowledge", 5],
+      ["Thundering Strikes", 5],
+      ["Mental Dexterity", 3],
+      ["Elemental Weapons", 3],
+      ["Shamanistic Focus", 1],
+      ["Flurry", 5],
+      ["Stormstrike", 1],
+      ["Mental Quickness", 2],
+      ["Maelstrom Weapon", 5],
+      ["Rage of the Farseer", 1]
+    ],
+    "Restoration": []
+  },
+  "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for enhancement-dps from /home/user/wow-forever/shaman/research/raid/raidsim/candidates/fullraid-start-opt-enhancement-dps-raid-dps.json in the raid setting: 706.3 -> 732.9 DPS on a third seed.",
+  "search": {
+    "start": "/home/user/wow-forever/shaman/research/raid/raidsim/candidates/fullraid-start-opt-enhancement-dps-raid-dps.json",
+    "setting": "raid",
+    "kept": ["Maelstrom Weapon"],
+    "moves": [
+      {"round": 1, "move": "1 point Elemental Focus -> Elemental Devastation", "gain_seed1": 0.00785498269380236, "gain_seed2": 0.009233055604224383, "split": "11/31/9"},
+      {"round": 2, "move": "3 points Tidal Focus -> Reverberation", "gain_seed1": 0.009832296574145971, "gain_seed2": 0.009109731390055442, "split": "14/31/6"},
+      {"round": 3, "move": "5 points Convection -> Concussion", "gain_seed1": 0.009072331617580698, "gain_seed2": 0.007850386877988003, "split": "14/31/6"},
+      {"round": 4, "move": "1 point Tidal Focus -> Reverberation", "gain_seed1": 0.005705170366803847, "gain_seed2": 0.004642842501739075, "split": "15/31/5"},
+      {"round": 5, "move": "1 point Totemic Focus -> Reverberation", "gain_seed1": 0.001490560356100179, "gain_seed2": 0.004380800889052017, "split": "16/31/4"},
+      {"round": 6, "move": "4 Totemic Focus -> 3 Elemental Alacrity + 1 Call of Thunder", "gain_seed1": 0.0010334639827109804, "gain_seed2": 0.0015514645061796006, "split": "20/31/0"}
+    ],
+    "dps_start": 706.3413160058726,
+    "dps_end": 732.9110868236569,
+    "gain": 0.037616050789762046,
+    "tank": false
+  },
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 20/31/0 -> 20/31/0; Call of Thunder 1 gone; refill +1 Elemental Focus (refill: the enhancement-dps model, raid-dps)"
 }

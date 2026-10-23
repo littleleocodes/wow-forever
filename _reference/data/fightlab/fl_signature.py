@@ -84,6 +84,17 @@ def spec_for(cls, rot, flat):
     return _CLS[key]
 
 
+def rule_specs(cls, rot, spec):
+    """The specs whose leveling rule a build filed under `spec` in rotation `rot` must pass: its own; a hybrid without a rule of its own,
+    its tree the rotation is built for (2026-10-23: a 17/17/17 Holy/Protection paladin from the Holy rotation, no Holy Shock, had passed
+    as 'no rule'), else either of its trees (signature.rule_specs)."""
+    return SG.rule_specs(cls, spec, SM.leveling_rotation_trees(cls).get(rot), "leveling")
+
+
+def rule_spec(cls, rot, spec):
+    return (rule_specs(cls, rot, spec) or [spec])[0]
+
+
 def allowed(cls, rot, flat):
     return SM.leveling_rotation_ok(cls, spec_for(cls, rot, flat), rot)
 
@@ -95,7 +106,7 @@ def leveling_space(space, cls, rot):
     space.sig = {s: set(SG.granting_talents(cls, (SG.rule(cls, s, "leveling") or {}).get("required", []))) for s in SG.specs_of(cls)} if enabled() else {}
     space.sig = {s: t for s, t in space.sig.items() if t}
     base_allowed = type(space).allowed.__get__(space)
-    space.spec_for = lambda flat: spec_for(cls, rot, flat)
+    space.spec_for = lambda flat: rule_spec(cls, rot, spec_for(cls, rot, flat))   # sig_ok: the talents of the rule the build must pass
     space.allowed = lambda flat: base_allowed(flat) and allowed(cls, rot, flat)
     space.signature_rotation = rot
     return space
@@ -107,17 +118,22 @@ def check(cls, rot, flat, level, result, order=None, spec=None):
     if not enabled():
         return None
     spec = spec or spec_for(cls, rot, flat)
-    rl = SG.rule(cls, spec, "leveling")
-    if not rl:
-        return None
     build = {"allocation": flat, "order": order or []}
     per = {int(level): result}
-    v = SG.check_levels(cls, spec, build, per, "leveling", rl)
-    if int(level) < 60:   # the core share is the level-60 rule
-        v["ok"] = not v["missing_talents"] and not v["uncast"]
-        v["core_share_checked"] = False
-    v["spec"] = spec
-    return v
+    best = None
+    for s_ in rule_specs(cls, rot, spec):   # its own rule, or (a hybrid without one) its rotation's tree's
+        v = SG.check_levels(cls, s_, build, per, "leveling", SG.rule(cls, s_, "leveling"))
+        if int(level) < 60:   # the core share is the level-60 rule
+            v["ok"] = not v["missing_talents"] and not v["uncast"]
+            v["core_share_checked"] = False
+        v["spec"] = s_
+        if s_ != spec:
+            v["filed_as"] = spec
+        if best is None or v["ok"] or penalty(v) > penalty(best):
+            best = v
+        if v["ok"]:
+            break
+    return best
 
 
 def penalty(v):
@@ -145,9 +161,15 @@ def summary(cls, rot, build, per, spec=None):
     """The check of a build's levels 20-60 under the rule of `spec` (default: the spec it plays in `rot`, spec_for)."""
     flat = flat_of(build)
     spec = spec or spec_for(cls, rot, flat)
-    rl = SG.rule(cls, spec, "leveling")
-    v = SG.check_levels(cls, spec, build, per, "leveling", rl) if rl and enabled() else None
-    out = {"spec": spec, "rotation": rot, "date": datetime.date.today().isoformat(), "fights": CHECK_FIGHTS,
+    filed, v, rl = spec, None, None
+    for s_ in (rule_specs(cls, rot, spec) if enabled() else []):   # its own rule, or (a hybrid without one) its rotation's tree's
+        r_ = SG.rule(cls, s_, "leveling")
+        v_ = SG.check_levels(cls, s_, build, per, "leveling", r_)
+        if v is None or v_["ok"] or penalty(v_) > penalty(v):
+            v, rl, spec = v_, r_, s_
+        if v_["ok"]:
+            break
+    out = {"spec": spec, "rotation": rot, **({"filed_as": filed} if filed != spec else {}), "date": datetime.date.today().isoformat(), "fights": CHECK_FIGHTS,
            "split": "/".join(str(x) for x in SM.tree_points(cls, {"allocation": SG_alloc(cls, flat)}).values())}
     if v is None:
         out.update(ok=True, verdict="no rule")

@@ -1,76 +1,29 @@
 {
- "id": "cand-fire-destro-raid-r3",
- "allocation": {
-  "Affliction": [
-   [
-    "Suppression",
-    5
-   ],
-   [
-    "Improved Corruption",
-    5
-   ],
-   [
-    "Improved Life Tap",
-    2
-   ],
-   [
-    "Malediction",
-    3
-   ],
-   [
-    "Pandemic",
-    3
-   ],
-   [
-    "Nightfall",
-    2
-   ],
-   [
-    "Siphon Life",
-    1
-   ]
-  ],
-  "Demonology": [
-   [
-    "Demonic Embrace",
-    5
-   ],
-   [
-    "Improved Health Funnel",
-    2
-   ],
-   [
-    "Fel Vitality",
-    3
-   ],
-   [
-    "Demonic Sacrifice",
-    1
-   ]
-  ],
-  "Destruction": [
-   [
-    "Bane",
-    5
-   ],
-   [
-    "Improved Shadow Bolt",
-    3
-   ],
-   [
-    "Cataclysm",
-    3
-   ],
-   [
-    "Ruin",
-    5
-   ],
-   [
-    "Agonizing Flames",
-    3
-   ]
-  ]
- },
- "note": "Optimizer raid build saved by rebuild.py on 2026-09-26 (raid calibration round 1)"
+  "id": "cand-fire-destro-raid-r3",
+  "allocation": {
+    "Affliction": [
+      ["Improved Corruption", 5],
+      ["Improved Life Tap", 2],
+      ["Suppression", 5],
+      ["Pandemic", 3],
+      ["Malevolence", 3],
+      ["Nightfall", 2],
+      ["Siphon Life", 1]
+    ],
+    "Demonology": [
+      ["Demonic Embrace", 5],
+      ["Improved Health Funnel", 2],
+      ["Fel Vitality", 3],
+      ["Demonic Sacrifice", 1]
+    ],
+    "Destruction": [
+      ["Bane", 5],
+      ["Improved Shadow Bolt", 3],
+      ["Cataclysm", 3],
+      ["Ruin", 5],
+      ["Agonizing Flames", 3]
+    ]
+  },
+  "note": "Optimizer raid build saved by rebuild.py on 2026-09-26 (raid calibration round 1)",
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 21/11/19 -> 21/11/19; Malediction 3 gone; +1 Malevolence (tier gating for Siphon Life); +1 Malevolence (tier gating for Siphon Life); +1 Malevolence (tier gating for Siphon Life) (refill: the fire-destro-raid model, raid-dps)"
 }

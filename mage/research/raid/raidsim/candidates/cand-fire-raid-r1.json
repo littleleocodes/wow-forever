@@ -1,83 +1,32 @@
 {
- "id": "cand-fire-raid-r1",
- "allocation": {
-  "Arcane": [
-   [
-    "Wand Specialization",
-    2
-   ],
-   [
-    "Arcane Focus",
-    4
-   ],
-   [
-    "Arcane Subtlety",
-    2
-   ],
-   [
-    "Arcane Concentration",
-    5
-   ],
-   [
-    "Arcane Geometry",
-    1
-   ]
-  ],
-  "Fire": [
-   [
-    "Wake of Fire",
-    2
-   ],
-   [
-    "Incineration",
-    3
-   ],
-   [
-    "Improved Fireball",
-    5
-   ],
-   [
-    "Ignite",
-    5
-   ],
-   [
-    "Pyroblast",
-    1
-   ],
-   [
-    "Improved Scorch",
-    3
-   ],
-   [
-    "Heating Up",
-    1
-   ],
-   [
-    "Master of Elements",
-    3
-   ],
-   [
-    "Critical Mass",
-    3
-   ],
-   [
-    "Fire Power",
-    5
-   ],
-   [
-    "Combustion",
-    1
-   ]
-  ],
-  "Frost": [
-   [
-    "Elemental Precision",
-    5
-   ]
-  ]
- },
- "note": "Optimizer raid build saved by rebuild.py on 2026-09-26 (raid calibration round 1)",
- "notes": [
-  "2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"
- ]
+  "id": "cand-fire-raid-r1",
+  "allocation": {
+    "Arcane": [
+      ["Arcane Focus", 4],
+      ["Missile Barrage", 2],
+      ["Wand Specialization", 2],
+      ["Arcane Concentration", 5],
+      ["Arcane Subtlety", 2],
+      ["Arcane Geometry", 1]
+    ],
+    "Fire": [
+      ["Improved Fire Blast", 2],
+      ["Improved Fireball", 5],
+      ["Incineration", 3],
+      ["Ignite", 5],
+      ["Pyroblast", 1],
+      ["Heating Up", 1],
+      ["Improved Scorch", 3],
+      ["Master of Elements", 3],
+      ["Critical Mass", 5],
+      ["Fire Power", 3],
+      ["Combustion", 1]
+    ],
+    "Frost": [
+      ["Elemental Precision", 3]
+    ]
+  },
+  "note": "Optimizer raid build saved by rebuild.py on 2026-09-26 (raid calibration round 1)",
+  "notes": ["2026-10-03: repaired for beta build 1.60.1.70170 (removed or renamed talents)"],
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 14/32/5 -> 16/32/3; Wake of Fire -> Improved Fire Blast (renamed); Fire Power 5 -> 3 (rank cap); Elemental Precision 5 -> 3 (rank cap); +1 Critical Mass (tier gating for Combustion); +1 Critical Mass (prerequisite of Combustion); refill +2 Missile Barrage (refill: the fire-raid model, raid-dps)"
 }

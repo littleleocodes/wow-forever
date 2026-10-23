@@ -1,78 +1,29 @@
 {
- "id": "frost-fingers-of-frost-raid",
- "allocation": {
-  "Arcane": [
-   [
-    "Arcane Focus",
-    5
-   ],
-   [
-    "Arcane Concentration",
-    5
-   ],
-   [
-    "Arcane Impact",
-    3
-   ],
-   [
-    "Missile Barrage",
-    1
-   ],
-   [
-    "Arcane Meditation",
-    3
-   ],
-   [
-    "Presence of Mind",
-    1
-   ],
-   [
-    "Arcane Mind",
-    1
-   ],
-   [
-    "Improved Channeling",
-    3
-   ]
-  ],
-  "Fire": [],
-  "Frost": [
-   [
-    "Improved Frostbolt",
-    5
-   ],
-   [
-    "Elemental Precision",
-    5
-   ],
-   [
-    "Ice Shards",
-    5
-   ],
-   [
-    "Ice Lance",
-    1
-   ],
-   [
-    "Piercing Ice",
-    3
-   ],
-   [
-    "Shatter",
-    3
-   ],
-   [
-    "Fingers of Frost",
-    2
-   ],
-   [
-    "Winter's Chill",
-    4
-   ],
-   [
-    "Frost Channeling",
-    1
-   ]
-  ]
- }
+  "id": "frost-fingers-of-frost-raid",
+  "allocation": {
+    "Arcane": [
+      ["Arcane Focus", 5],
+      ["Improved Channeling", 3],
+      ["Missile Barrage", 1],
+      ["Arcane Concentration", 5],
+      ["Arcane Impact", 3],
+      ["Arcane Meditation", 3],
+      ["Arcane Mind", 1],
+      ["Presence of Mind", 1]
+    ],
+    "Fire": [],
+    "Frost": [
+      ["Elemental Precision", 3],
+      ["Improved Frostbolt", 5],
+      ["Ice Shards", 5],
+      ["Frost Channeling", 3],
+      ["Ice Lance", 1],
+      ["Arctic Reach", 2],
+      ["Ice Block", 1],
+      ["Shatter", 3],
+      ["Fingers of Frost", 2],
+      ["Winter's Chill", 4]
+    ]
+  },
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 22/0/29 -> 22/0/29; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Ice Block (tier gating for Fingers of Frost); +1 Frost Channeling (tier gating for Fingers of Frost); +1 Frost Channeling (tier gating for Winter's Chill); +1 Arctic Reach (tier gating for Winter's Chill); +1 Arctic Reach (tier gating for Winter's Chill) (refill: the frost-raid model, raid-dps)"
 }

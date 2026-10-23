@@ -1,67 +1,26 @@
 {
- "id": "cand-affliction-raid-r9",
- "allocation": {
-  "Affliction": [
-   [
-    "Suppression",
-    5
-   ],
-   [
-    "Improved Corruption",
-    5
-   ],
-   [
-    "Malediction",
-    2
-   ],
-   [
-    "Pandemic",
-    3
-   ],
-   [
-    "Improved Bane of Agony",
-    2
-   ],
-   [
-    "Amplify Curse",
-    1
-   ],
-   [
-    "Malevolence",
-    5
-   ],
-   [
-    "Nightfall",
-    2
-   ],
-   [
-    "Shadow Mastery",
-    5
-   ]
-  ],
-  "Demonology": [],
-  "Destruction": [
-   [
-    "Bane",
-    5
-   ],
-   [
-    "Improved Shadow Bolt",
-    5
-   ],
-   [
-    "Aftermath",
-    3
-   ],
-   [
-    "Ruin",
-    5
-   ],
-   [
-    "Agonizing Flames",
-    3
-   ]
-  ]
- },
- "note": "Optimizer raid build saved by rebuild.py on 2026-09-28 (raid calibration round 1)"
+  "id": "cand-affliction-raid-r9",
+  "allocation": {
+    "Affliction": [
+      ["Improved Corruption", 5],
+      ["Suppression", 5],
+      ["Amplify Curse", 1],
+      ["Fel Concentration", 2],
+      ["Improved Bane of Agony", 2],
+      ["Pandemic", 3],
+      ["Malevolence", 5],
+      ["Nightfall", 2],
+      ["Shadow Mastery", 5]
+    ],
+    "Demonology": [],
+    "Destruction": [
+      ["Bane", 5],
+      ["Improved Shadow Bolt", 5],
+      ["Aftermath", 3],
+      ["Ruin", 5],
+      ["Agonizing Flames", 3]
+    ]
+  },
+  "note": "Optimizer raid build saved by rebuild.py on 2026-09-28 (raid calibration round 1)",
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 30/0/21 -> 30/0/21; Malediction 2 gone; +1 Fel Concentration (tier gating for Shadow Mastery); +1 Fel Concentration (tier gating for Shadow Mastery) (refill: the affliction-raid model, raid-dps)"
 }

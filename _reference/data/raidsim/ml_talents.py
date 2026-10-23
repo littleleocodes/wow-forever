@@ -120,8 +120,12 @@ class Space:
 
     def sig_ok(self, flat):
         """The build holds the talents that grant its spec's required signature spells."""
-        need = self.sig.get(self.spec_for(flat)) if self.sig else None
-        return not need or all(flat.get(n) for n in need)
+        if not self.sig:
+            return True
+        spec = self.spec_for(flat)
+        # a hybrid without a rule of its own holds the talents of one of its trees' rules (raid_signature.rule_specs, 2026-10-23)
+        alts = SIG.rule_specs(self.cls, spec, self.allow_trees) or [spec]
+        return any(all(flat.get(n) for n in self.sig.get(s, ())) for s in alts)
 
     def points(self, flat):
         return {t: sum(flat.get(n, 0) for n in self.by_tree[t]) for t in self.tree_names}
@@ -628,7 +632,7 @@ class Sim:
                 f = 1.0
                 if self.signature and r.get("actions"):
                     al = allocs[keys.index(k)]
-                    chk = SIG.check(self.cls, SIG.entry_spec(self.cls, self.entry_name, al), r["actions"], self.names(), al)
+                    chk = SIG.check(self.cls, SIG.entry_spec(self.cls, self.entry_name, al), r["actions"], self.names(), al, trees=SIG._entry_trees(self.cls, self.entry_name))
                     if chk:
                         self.checks[k[0]] = chk
                         f = SIG.penalty(chk)

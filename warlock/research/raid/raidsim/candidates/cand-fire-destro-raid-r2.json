@@ -1,76 +1,31 @@
 {
- "id": "cand-fire-destro-raid-r2",
- "allocation": {
-  "Affliction": [
-   [
-    "Suppression",
-    5
-   ],
-   [
-    "Improved Life Tap",
-    2
-   ],
-   [
-    "Improved Corruption",
-    5
-   ],
-   [
-    "Malediction",
-    5
-   ],
-   [
-    "Pandemic",
-    1
-   ],
-   [
-    "Nightfall",
-    2
-   ],
-   [
-    "Siphon Life",
-    1
-   ]
-  ],
-  "Demonology": [
-   [
-    "Improved Imp",
-    2
-   ],
-   [
-    "Demonic Embrace",
-    5
-   ],
-   [
-    "Fel Vitality",
-    3
-   ],
-   [
-    "Demonic Sacrifice",
-    1
-   ]
-  ],
-  "Destruction": [
-   [
-    "Bane",
-    5
-   ],
-   [
-    "Cataclysm",
-    3
-   ],
-   [
-    "Aftermath",
-    3
-   ],
-   [
-    "Ruin",
-    5
-   ],
-   [
-    "Agonizing Flames",
-    3
-   ]
-  ]
- },
- "note": "Optimizer raid build saved by rebuild.py on 2026-09-26 (raid calibration round 1)"
+  "id": "cand-fire-destro-raid-r2",
+  "allocation": {
+    "Affliction": [
+      ["Improved Corruption", 5],
+      ["Improved Life Tap", 2],
+      ["Suppression", 5],
+      ["Amplify Curse", 1],
+      ["Improved Bane of Agony", 1],
+      ["Pandemic", 2],
+      ["Malevolence", 2],
+      ["Nightfall", 2],
+      ["Siphon Life", 1]
+    ],
+    "Demonology": [
+      ["Demonic Embrace", 5],
+      ["Improved Imp", 2],
+      ["Fel Vitality", 3],
+      ["Demonic Sacrifice", 1]
+    ],
+    "Destruction": [
+      ["Bane", 5],
+      ["Aftermath", 3],
+      ["Cataclysm", 3],
+      ["Ruin", 5],
+      ["Agonizing Flames", 3]
+    ]
+  },
+  "note": "Optimizer raid build saved by rebuild.py on 2026-09-26 (raid calibration round 1)",
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 21/11/19 -> 21/11/19; Malediction 5 gone; +1 Improved Bane of Agony (tier gating for Nightfall); +1 Amplify Curse (tier gating for Nightfall); +1 Malevolence (tier gating for Siphon Life); +1 Malevolence (tier gating for Siphon Life); +1 Pandemic (tier gating for Siphon Life) (refill: the fire-destro-raid model, raid-dps)"
 }

@@ -1,80 +1,30 @@
 {
- "id": "cand-fire-destro-raid-r7",
- "allocation": {
-  "Affliction": [
-   [
-    "Suppression",
-    5
-   ],
-   [
-    "Improved Life Tap",
-    2
-   ],
-   [
-    "Improved Corruption",
-    5
-   ],
-   [
-    "Malediction",
-    1
-   ],
-   [
-    "Improved Bane of Agony",
-    2
-   ],
-   [
-    "Amplify Curse",
-    1
-   ],
-   [
-    "Pandemic",
-    3
-   ]
-  ],
-  "Demonology": [
-   [
-    "Improved Health Funnel",
-    2
-   ],
-   [
-    "Improved Imp",
-    3
-   ],
-   [
-    "Fel Vitality",
-    3
-   ],
-   [
-    "Demonic Aegis",
-    2
-   ],
-   [
-    "Demonic Sacrifice",
-    1
-   ]
-  ],
-  "Destruction": [
-   [
-    "Bane",
-    5
-   ],
-   [
-    "Improved Shadow Bolt",
-    5
-   ],
-   [
-    "Cataclysm",
-    3
-   ],
-   [
-    "Ruin",
-    5
-   ],
-   [
-    "Agonizing Flames",
-    3
-   ]
-  ]
- },
- "note": "Optimizer raid build saved by rebuild.py on 2026-09-27 (raid calibration round 1)"
+  "id": "cand-fire-destro-raid-r7",
+  "allocation": {
+    "Affliction": [
+      ["Improved Corruption", 5],
+      ["Improved Life Tap", 2],
+      ["Suppression", 5],
+      ["Amplify Curse", 1],
+      ["Improved Bane of Agony", 2],
+      ["Pandemic", 3]
+    ],
+    "Demonology": [
+      ["Improved Health Funnel", 2],
+      ["Improved Imp", 3],
+      ["Demonic Aegis", 2],
+      ["Fel Vitality", 3],
+      ["Demonic Sacrifice", 1]
+    ],
+    "Destruction": [
+      ["Bane", 5],
+      ["Improved Shadow Bolt", 5],
+      ["Cataclysm", 3],
+      ["Ruin", 5],
+      ["Agonizing Flames", 3],
+      ["Conflagrate", 1]
+    ]
+  },
+  "note": "Optimizer raid build saved by rebuild.py on 2026-09-27 (raid calibration round 1)",
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 19/11/21 -> 18/11/22; Malediction 1 gone; refill +1 Conflagrate (refill: the fire-destro-raid model, raid-dps)"
 }

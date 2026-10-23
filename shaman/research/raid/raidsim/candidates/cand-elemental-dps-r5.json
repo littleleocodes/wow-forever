@@ -1,76 +1,29 @@
 {
- "id": "cand-elemental-dps-r5",
- "allocation": {
-  "Elemental": [
-   [
-    "Concussion",
-    5
-   ],
-   [
-    "Convection",
-    3
-   ],
-   [
-    "Call of Flame",
-    3
-   ],
-   [
-    "Elemental Alacrity",
-    3
-   ],
-   [
-    "Elemental Focus",
-    1
-   ],
-   [
-    "Call of Thunder",
-    1
-   ]
-  ],
-  "Enhancement": [
-   [
-    "Ancestral Knowledge",
-    5
-   ],
-   [
-    "Thundering Strikes",
-    5
-   ],
-   [
-    "Improved Ghost Wolf",
-    1
-   ],
-   [
-    "Improved Lightning Shield",
-    3
-   ],
-   [
-    "Shamanistic Focus",
-    1
-   ],
-   [
-    "Toughness",
-    5
-   ],
-   [
-    "Mental Quickness",
-    2
-   ]
-  ],
-  "Restoration": [
-   [
-    "Totemic Focus",
-    5
-   ],
-   [
-    "Mindfulness",
-    3
-   ],
-   [
-    "Tidal Focus",
-    5
-   ]
-  ]
- },
- "note": "Optimizer raid build saved by rebuild.py on 2026-09-27 (raid calibration round 1)"
+  "id": "cand-elemental-dps-r5",
+  "allocation": {
+    "Elemental": [
+      ["Concussion", 5],
+      ["Convection", 3],
+      ["Call of Flame", 3],
+      ["Elemental Alacrity", 3],
+      ["Elemental Focus", 1],
+      ["Eye of the Storm", 1]
+    ],
+    "Enhancement": [
+      ["Ancestral Knowledge", 5],
+      ["Thundering Strikes", 5],
+      ["Improved Ghost Wolf", 1],
+      ["Improved Lightning Shield", 3],
+      ["Shamanistic Focus", 1],
+      ["Toughness", 5],
+      ["Mental Quickness", 2]
+    ],
+    "Restoration": [
+      ["Tidal Focus", 5],
+      ["Mindfulness", 3],
+      ["Totemic Focus", 5]
+    ]
+  },
+  "note": "Optimizer raid build saved by rebuild.py on 2026-09-27 (raid calibration round 1)",
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 16/22/13 -> 16/22/13; Call of Thunder 1 gone; refill +1 Eye of the Storm (refill: the elemental-dps model, raid-dps)"
 }

@@ -1,75 +1,28 @@
 {
- "id": "cand-affliction-raid-hand-2026-09-26",
- "allocation": {
-  "Affliction": [
-   [
-    "Improved Life Tap",
-    2
-   ],
-   [
-    "Suppression",
-    5
-   ],
-   [
-    "Malediction",
-    5
-   ],
-   [
-    "Improved Bane of Agony",
-    2
-   ],
-   [
-    "Amplify Curse",
-    1
-   ],
-   [
-    "Pandemic",
-    3
-   ],
-   [
-    "Malevolence",
-    5
-   ],
-   [
-    "Siphon Life",
-    1
-   ],
-   [
-    "Fel Concentration",
-    1
-   ],
-   [
-    "Shadow Mastery",
-    5
-   ],
-   [
-    "Wrack",
-    1
-   ]
-  ],
-  "Demonology": [],
-  "Destruction": [
-   [
-    "Destructive Reach",
-    2
-   ],
-   [
-    "Improved Shadow Bolt",
-    5
-   ],
-   [
-    "Bane",
-    5
-   ],
-   [
-    "Cataclysm",
-    3
-   ],
-   [
-    "Ruin",
-    5
-   ]
-  ]
- },
- "note": "The hand draft affliction-dot-raid as it was before opt-affliction-raid-raid-dps was adopted on 2026-09-26"
+  "id": "cand-affliction-raid-hand-2026-09-26",
+  "allocation": {
+    "Affliction": [
+      ["Improved Corruption", 5],
+      ["Improved Life Tap", 2],
+      ["Suppression", 5],
+      ["Amplify Curse", 1],
+      ["Fel Concentration", 1],
+      ["Improved Bane of Agony", 2],
+      ["Pandemic", 3],
+      ["Malevolence", 5],
+      ["Siphon Life", 1],
+      ["Shadow Mastery", 5],
+      ["Wrack", 1]
+    ],
+    "Demonology": [],
+    "Destruction": [
+      ["Bane", 5],
+      ["Destructive Reach", 2],
+      ["Improved Shadow Bolt", 5],
+      ["Cataclysm", 3],
+      ["Ruin", 5]
+    ]
+  },
+  "note": "The hand draft affliction-dot-raid as it was before opt-affliction-raid-raid-dps was adopted on 2026-09-26",
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 31/0/20 -> 31/0/20; Malediction 5 gone; +1 Improved Corruption (tier gating for Amplify Curse); +1 Improved Corruption (tier gating for Amplify Curse); +1 Improved Corruption (tier gating for Amplify Curse); +1 Improved Corruption (tier gating for Shadow Mastery); +1 Improved Corruption (tier gating for Shadow Mastery) (refill: the affliction-raid model, raid-dps)"
 }

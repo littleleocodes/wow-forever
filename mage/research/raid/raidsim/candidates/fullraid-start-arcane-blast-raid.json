@@ -1,79 +1,30 @@
 {
- "id": "arcane-blast-raid",
- "allocation": {
-  "Arcane": [
-   [
-    "Arcane Focus",
-    5
-   ],
-   [
-    "Arcane Concentration",
-    5
-   ],
-   [
-    "Arcane Impact",
-    3
-   ],
-   [
-    "Arcane Blast",
-    1
-   ],
-   [
-    "Arcane Meditation",
-    3
-   ],
-   [
-    "Missile Barrage",
-    1
-   ],
-   [
-    "Presence of Mind",
-    1
-   ],
-   [
-    "Arcane Mind",
-    5
-   ],
-   [
-    "Arcane Instability",
-    3
-   ],
-   [
-    "Arcane Power",
-    1
-   ],
-   [
-    "Improved Channeling",
-    5
-   ],
-   [
-    "Arcane Subtlety",
-    2
-   ]
-  ],
-  "Fire": [
-   [
-    "Wake of Fire",
-    2
-   ],
-   [
-    "Incineration",
-    3
-   ],
-   [
-    "Ignite",
-    5
-   ],
-   [
-    "Burning Soul",
-    1
-   ]
-  ],
-  "Frost": [
-   [
-    "Elemental Precision",
-    5
-   ]
-  ]
- }
+  "id": "arcane-blast-raid",
+  "allocation": {
+    "Arcane": [
+      ["Arcane Focus", 5],
+      ["Improved Channeling", 5],
+      ["Missile Barrage", 2],
+      ["Arcane Concentration", 5],
+      ["Arcane Subtlety", 2],
+      ["Arcane Blast", 1],
+      ["Arcane Impact", 3],
+      ["Arcane Meditation", 3],
+      ["Arcane Mind", 5],
+      ["Presence of Mind", 1],
+      ["Arcane Instability", 3],
+      ["Arcane Power", 1]
+    ],
+    "Fire": [
+      ["Improved Fire Blast", 2],
+      ["Incineration", 3],
+      ["Ignite", 5],
+      ["Burning Soul", 1]
+    ],
+    "Frost": [
+      ["Elemental Precision", 3],
+      ["Improved Frostbolt", 1]
+    ]
+  },
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 35/11/5 -> 36/11/4; Wake of Fire -> Improved Fire Blast (renamed); Elemental Precision 5 -> 3 (rank cap); refill +1 Missile Barrage, +1 Improved Frostbolt (refill: the frost-raid model, raid-dps)"
 }

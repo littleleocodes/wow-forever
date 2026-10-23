@@ -1,79 +1,31 @@
 {
- "id": "cand-frost-raid-r3",
- "allocation": {
-  "Arcane": [
-   [
-    "Wand Specialization",
-    2
-   ],
-   [
-    "Arcane Focus",
-    4
-   ],
-   [
-    "Arcane Subtlety",
-    2
-   ],
-   [
-    "Arcane Concentration",
-    5
-   ],
-   [
-    "Magic Absorption",
-    2
-   ],
-   [
-    "Arcane Meditation",
-    3
-   ],
-   [
-    "Arcane Shielding",
-    2
-   ],
-   [
-    "Presence of Mind",
-    1
-   ],
-   [
-    "Arcane Mind",
-    4
-   ],
-   [
-    "Arcane Instability",
-    2
-   ]
-  ],
-  "Fire": [],
-  "Frost": [
-   [
-    "Improved Frostbolt",
-    5
-   ],
-   [
-    "Elemental Precision",
-    5
-   ],
-   [
-    "Ice Shards",
-    5
-   ],
-   [
-    "Ice Lance",
-    1
-   ],
-   [
-    "Piercing Ice",
-    3
-   ],
-   [
-    "Shatter",
-    3
-   ],
-   [
-    "Fingers of Frost",
-    2
-   ]
-  ]
- },
- "note": "Optimizer raid build saved by rebuild.py on 2026-09-27 (raid calibration round 1)"
+  "id": "cand-frost-raid-r3",
+  "allocation": {
+    "Arcane": [
+      ["Arcane Focus", 4],
+      ["Missile Barrage", 2],
+      ["Wand Specialization", 2],
+      ["Arcane Concentration", 5],
+      ["Arcane Subtlety", 2],
+      ["Magic Absorption", 2],
+      ["Arcane Meditation", 3],
+      ["Arcane Shielding", 2],
+      ["Arcane Mind", 4],
+      ["Presence of Mind", 1],
+      ["Arcane Instability", 2]
+    ],
+    "Fire": [],
+    "Frost": [
+      ["Elemental Precision", 3],
+      ["Improved Frostbolt", 5],
+      ["Ice Shards", 5],
+      ["Frost Channeling", 2],
+      ["Ice Lance", 1],
+      ["Ice Block", 1],
+      ["Shatter", 3],
+      ["Fingers of Frost", 2]
+    ]
+  },
+  "note": "Optimizer raid build saved by rebuild.py on 2026-09-27 (raid calibration round 1)",
+  "repair_note": "2026-10-23: repaired to the current trees (client 1.60.1.70425 with the 2026-10-20 mage hotfix): 27/0/24 -> 29/0/22; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Frost Channeling (tier gating for Shatter); +1 Ice Block (tier gating for Fingers of Frost); +1 Frost Channeling (tier gating for Fingers of Frost); refill +2 Missile Barrage (refill: the frost-raid model, raid-dps)"
 }
