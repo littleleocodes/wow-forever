@@ -1,0 +1,252 @@
+{
+ "id": "cand-frost-r7",
+ "allocation": {
+  "Arcane": [
+   [
+    "Missile Barrage",
+    2
+   ],
+   [
+    "Wand Specialization",
+    2
+   ],
+   [
+    "Arcane Focus",
+    1
+   ],
+   [
+    "Arcane Concentration",
+    5
+   ],
+   [
+    "Arcane Subtlety",
+    2
+   ],
+   [
+    "Magic Absorption",
+    2
+   ],
+   [
+    "Arcane Resilience",
+    1
+   ],
+   [
+    "Arcane Blast",
+    1
+   ],
+   [
+    "Arcane Wrath",
+    1
+   ],
+   [
+    "Arcane Meditation",
+    3
+   ],
+   [
+    "Presence of Mind",
+    1
+   ]
+  ],
+  "Fire": [
+   [
+    "Incineration",
+    3
+   ]
+  ],
+  "Frost": [
+   [
+    "Improved Frostbolt",
+    5
+   ],
+   [
+    "Elemental Precision",
+    3
+   ],
+   [
+    "Frostbite",
+    3
+   ],
+   [
+    "Ice Shards",
+    5
+   ],
+   [
+    "Ice Lance",
+    1
+   ],
+   [
+    "Frost Channeling",
+    3
+   ],
+   [
+    "Shatter",
+    3
+   ],
+   [
+    "Ice Block",
+    1
+   ],
+   [
+    "Arctic Reach",
+    1
+   ],
+   [
+    "Fingers of Frost",
+    2
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Frost",
+   "talent": "Improved Frostbolt",
+   "points": 5
+  },
+  {
+   "levels": "15-17",
+   "tree": "Frost",
+   "talent": "Frostbite",
+   "points": 3
+  },
+  {
+   "levels": "18-19",
+   "tree": "Frost",
+   "talent": "Elemental Precision",
+   "points": 2
+  },
+  {
+   "levels": "20",
+   "tree": "Frost",
+   "talent": "Ice Lance",
+   "points": 1
+  },
+  {
+   "levels": "21-23",
+   "tree": "Frost",
+   "talent": "Frost Channeling",
+   "points": 3
+  },
+  {
+   "levels": "24",
+   "tree": "Frost",
+   "talent": "Elemental Precision",
+   "points": 1
+  },
+  {
+   "levels": "25",
+   "tree": "Frost",
+   "talent": "Ice Block",
+   "points": 1
+  },
+  {
+   "levels": "26-27",
+   "tree": "Frost",
+   "talent": "Shatter",
+   "points": 2
+  },
+  {
+   "levels": "28",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 1
+  },
+  {
+   "levels": "29",
+   "tree": "Frost",
+   "talent": "Shatter",
+   "points": 1
+  },
+  {
+   "levels": "30-31",
+   "tree": "Frost",
+   "talent": "Fingers of Frost",
+   "points": 2
+  },
+  {
+   "levels": "32-35",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 4
+  },
+  {
+   "levels": "36-37",
+   "tree": "Arcane",
+   "talent": "Missile Barrage",
+   "points": 2
+  },
+  {
+   "levels": "38-39",
+   "tree": "Arcane",
+   "talent": "Wand Specialization",
+   "points": 2
+  },
+  {
+   "levels": "40",
+   "tree": "Arcane",
+   "talent": "Arcane Focus",
+   "points": 1
+  },
+  {
+   "levels": "41-45",
+   "tree": "Arcane",
+   "talent": "Arcane Concentration",
+   "points": 5
+  },
+  {
+   "levels": "46",
+   "tree": "Arcane",
+   "talent": "Arcane Blast",
+   "points": 1
+  },
+  {
+   "levels": "47-48",
+   "tree": "Arcane",
+   "talent": "Arcane Subtlety",
+   "points": 2
+  },
+  {
+   "levels": "49-50",
+   "tree": "Arcane",
+   "talent": "Magic Absorption",
+   "points": 2
+  },
+  {
+   "levels": "51",
+   "tree": "Arcane",
+   "talent": "Arcane Wrath",
+   "points": 1
+  },
+  {
+   "levels": "52-54",
+   "tree": "Arcane",
+   "talent": "Arcane Meditation",
+   "points": 3
+  },
+  {
+   "levels": "55",
+   "tree": "Arcane",
+   "talent": "Arcane Resilience",
+   "points": 1
+  },
+  {
+   "levels": "56",
+   "tree": "Arcane",
+   "talent": "Presence of Mind",
+   "points": 1
+  },
+  {
+   "levels": "57-59",
+   "tree": "Fire",
+   "talent": "Incineration",
+   "points": 3
+  },
+  {
+   "levels": "60",
+   "tree": "Frost",
+   "talent": "Arctic Reach",
+   "points": 1
+  }
+ ],
+ "note": "Optimizer build saved by rebuild.py on 2026-10-22 (calibration round 7)"
+}

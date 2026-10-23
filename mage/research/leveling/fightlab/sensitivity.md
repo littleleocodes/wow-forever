@@ -4,38 +4,38 @@
 
 | Assumption | Level | opt-frost-leveling-leveling-st time/kill | leveling-frost time/kill | Best build | opt-frost-leveling-leveling-st: −Ice Lance | opt-frost-leveling-leveling-st: −Shatter |
 |---|---|---|---|---|---|---|
-| baseline | 30 | 35.0s (deaths 0.0/100) | 33.4s (deaths 0.0/100) | leveling-frost | +24% | +15% |
-| baseline | 60 | 26.3s (deaths 0.0/100) | 27.7s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +26% | +20% |
-| root breaks on 10% of hits | 30 | 33.6s (deaths 0.0/100) | 31.9s (deaths 0.0/100) | leveling-frost | +28% | +15% |
-| root breaks on 10% of hits | 60 | 26.0s (deaths 0.0/100) | 26.8s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +27% | +19% |
-| root breaks on 40% of hits | 30 | 37.5s (deaths 0.0/100) | 35.6s (deaths 0.0/100) | leveling-frost | +17% | +13% |
-| root breaks on 40% of hits | 60 | 27.3s (deaths 0.0/100) | 28.3s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +22% | +19% |
-| mobs have 20% less health | 30 | 29.2s (deaths 0.0/100) | 28.1s (deaths 0.0/100) | leveling-frost | +21% | +11% |
-| mobs have 20% less health | 60 | 22.7s (deaths 0.0/100) | 23.3s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +22% | +16% |
-| mobs have 20% more health | 30 | 41.7s (deaths 0.0/100) | 38.9s (deaths 0.0/100) | leveling-frost | +24% | +16% |
-| mobs have 20% more health | 60 | 30.3s (deaths 0.0/100) | 31.6s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +29% | +22% |
-| mobs hit 30% harder | 30 | 36.6s (deaths 0.0/100) | 34.3s (deaths 0.0/100) | leveling-frost | +23% | +14% |
-| mobs hit 30% harder | 60 | 26.5s (deaths 0.0/100) | 27.6s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +26% | +21% |
-| pushback 1.0 s per hit | 30 | 36.5s (deaths 0.0/100) | 34.0s (deaths 0.0/100) | leveling-frost | +22% | +14% |
-| pushback 1.0 s per hit | 60 | 26.5s (deaths 0.0/100) | 27.6s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +25% | +19% |
-| weapons 20% better (blues) | 30 | 34.7s (deaths 0.0/100) | 32.9s (deaths 0.0/100) | leveling-frost | +20% | +14% |
-| weapons 20% better (blues) | 60 | 26.2s (deaths 0.0/100) | 27.3s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +23% | +19% |
-| dungeon blues (item database) | 30 | 30.3s (deaths 0.0/100) | 28.8s (deaths 0.0/100) | leveling-frost | +15% | +12% |
-| dungeon blues (item database) | 60 | 25.4s (deaths 0.0/100) | 26.3s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +22% | +17% |
-| gear stats 20% better | 30 | 34.9s (deaths 0.0/100) | 32.7s (deaths 0.0/100) | leveling-frost | +23% | +14% |
-| gear stats 20% better | 60 | 25.9s (deaths 0.0/100) | 26.6s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +24% | +18% |
-| no caster mobs | 30 | 35.1s (deaths 0.0/100) | 33.4s (deaths 0.0/100) | leveling-frost | +25% | +15% |
-| no caster mobs | 60 | 26.4s (deaths 0.0/100) | 27.4s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +27% | +20% |
-| 30% caster mobs | 30 | 35.1s (deaths 0.0/100) | 33.6s (deaths 0.0/100) | leveling-frost | +22% | +14% |
-| 30% caster mobs | 60 | 25.9s (deaths 0.0/100) | 27.0s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +24% | +18% |
-| 20% of mobs run at 20% health | 30 | 35.0s (deaths 0.0/100) | 33.5s (deaths 0.0/100) | leveling-frost | +23% | +14% |
-| 20% of mobs run at 20% health | 60 | 26.3s (deaths 0.0/100) | 27.5s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +25% | +19% |
-| 2.5% partial resists (the assumption before 2026-10-18) | 30 | 36.0s (deaths 0.0/100) | 34.0s (deaths 0.0/100) | leveling-frost | +24% | +14% |
-| 2.5% partial resists (the assumption before 2026-10-18) | 60 | 26.5s (deaths 0.0/100) | 27.8s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +27% | +20% |
-| channel pushback 0.5 s per hit (before 2026-10-18) | 30 | 35.0s (deaths 0.0/100) | 33.4s (deaths 0.0/100) | leveling-frost | +24% | +15% |
-| channel pushback 0.5 s per hit (before 2026-10-18) | 60 | 26.3s (deaths 0.0/100) | 27.7s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +26% | +20% |
-| mob health by the client's ExpectedStat (1.35x at 20, 1.13x at 60) | 30 | 43.1s (deaths 0.0/100) | 40.2s (deaths 0.0/100) | leveling-frost | +25% | +16% |
-| mob health by the client's ExpectedStat (1.35x at 20, 1.13x at 60) | 60 | 28.8s (deaths 0.0/100) | 30.0s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +28% | +21% |
-| every rank at its level-60 amount (no rank level scaling, before 2026-10-18) | 30 | 34.8s (deaths 0.0/100) | 33.1s (deaths 0.0/100) | leveling-frost | +25% | +14% |
-| every rank at its level-60 amount (no rank level scaling, before 2026-10-18) | 60 | 26.3s (deaths 0.0/100) | 27.7s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +26% | +20% |
+| baseline | 30 | 35.5s (deaths 0.0/100) | 35.5s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +23% | +15% |
+| baseline | 60 | 27.5s (deaths 0.0/100) | 28.0s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +26% | +19% |
+| root breaks on 10% of hits | 30 | 34.4s (deaths 0.0/100) | 34.4s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +27% | +14% |
+| root breaks on 10% of hits | 60 | 26.5s (deaths 0.0/100) | 27.5s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +29% | +20% |
+| root breaks on 40% of hits | 30 | 37.7s (deaths 0.0/100) | 37.7s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +17% | +14% |
+| root breaks on 40% of hits | 60 | 28.5s (deaths 0.0/100) | 28.9s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +22% | +20% |
+| mobs have 20% less health | 30 | 29.3s (deaths 0.0/100) | 29.3s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +21% | +13% |
+| mobs have 20% less health | 60 | 23.4s (deaths 0.0/100) | 24.0s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +22% | +16% |
+| mobs have 20% more health | 30 | 42.3s (deaths 0.0/100) | 42.3s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +24% | +15% |
+| mobs have 20% more health | 60 | 31.6s (deaths 0.0/100) | 32.0s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +30% | +21% |
+| mobs hit 30% harder | 30 | 36.6s (deaths 0.0/100) | 36.6s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +23% | +15% |
+| mobs hit 30% harder | 60 | 28.2s (deaths 0.0/100) | 28.3s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +27% | +19% |
+| pushback 1.0 s per hit | 30 | 36.8s (deaths 0.0/100) | 36.8s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +22% | +15% |
+| pushback 1.0 s per hit | 60 | 27.9s (deaths 0.0/100) | 28.2s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +26% | +19% |
+| weapons 20% better (blues) | 30 | 34.9s (deaths 0.0/100) | 34.9s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +21% | +14% |
+| weapons 20% better (blues) | 60 | 27.2s (deaths 0.0/100) | 27.9s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +22% | +18% |
+| dungeon blues (item database) | 30 | 30.7s (deaths 0.0/100) | 30.7s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +14% | +13% |
+| dungeon blues (item database) | 60 | 25.9s (deaths 0.0/100) | 26.9s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +24% | +19% |
+| gear stats 20% better | 30 | 35.0s (deaths 0.0/100) | 35.0s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +23% | +15% |
+| gear stats 20% better | 60 | 26.5s (deaths 0.0/100) | 27.5s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +26% | +20% |
+| no caster mobs | 30 | 35.9s (deaths 0.0/100) | 35.9s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +23% | +14% |
+| no caster mobs | 60 | 27.6s (deaths 0.0/100) | 28.2s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +27% | +20% |
+| 30% caster mobs | 30 | 35.1s (deaths 0.0/100) | 35.1s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +23% | +14% |
+| 30% caster mobs | 60 | 26.8s (deaths 0.0/100) | 27.7s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +25% | +18% |
+| 20% of mobs run at 20% health | 30 | 35.3s (deaths 0.0/100) | 35.3s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +22% | +15% |
+| 20% of mobs run at 20% health | 60 | 27.2s (deaths 0.0/100) | 28.3s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +26% | +21% |
+| 2.5% partial resists (the assumption before 2026-10-18) | 30 | 36.3s (deaths 0.0/100) | 36.3s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +24% | +15% |
+| 2.5% partial resists (the assumption before 2026-10-18) | 60 | 27.6s (deaths 0.0/100) | 28.4s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +28% | +20% |
+| channel pushback 0.5 s per hit (before 2026-10-18) | 30 | 35.5s (deaths 0.0/100) | 35.5s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +23% | +15% |
+| channel pushback 0.5 s per hit (before 2026-10-18) | 60 | 27.5s (deaths 0.0/100) | 28.0s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +26% | +19% |
+| mob health by the client's ExpectedStat (1.35x at 20, 1.13x at 60) | 30 | 43.6s (deaths 0.0/100) | 43.6s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +23% | +15% |
+| mob health by the client's ExpectedStat (1.35x at 20, 1.13x at 60) | 60 | 29.9s (deaths 0.0/100) | 30.6s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +30% | +21% |
+| every rank at its level-60 amount (no rank level scaling, before 2026-10-18) | 30 | 35.0s (deaths 0.0/100) | 35.0s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +24% | +15% |
+| every rank at its level-60 amount (no rank level scaling, before 2026-10-18) | 60 | 27.5s (deaths 0.0/100) | 28.0s (deaths 0.0/100) | opt-frost-leveling-leveling-st | +26% | +19% |
 

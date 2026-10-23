@@ -38,7 +38,7 @@ SPARSE = ["sim", "proto", "cmd", "ui", "assets/database", "tools"]
 GAMES = {"forever": {"url": "https://github.com/wowsims/forever", "dir": "wowsims-forever", "module": "github.com/wowsims/forever", "bench": "foreverbench",
                      # 09e7398 (wowsims/forever master, 2026-10-18 19:55 +0200; spell data and items client 1.60.1.70450). Before 2026-10-18
                      # the ElliotWood/Forever fork: b7083fa (70425) from 2026-10-16, 2ce8265 (70291) from 2026-10-09, b0f0df3 (70205), 40be98e
-                     "commit": "09e739807d68a561f01ddb0ba41c2c6a6003d681"},
+                     "commit": "30f67f5d20d38d8aeeac5e3b82bf27e8227940ec"},
          "classic": {"url": "https://github.com/wowsims/classic", "dir": "classic-repo", "module": "github.com/wowsims/classic", "bench": "classicbench",
                      "commit": "7779ebbf79dc7f1341e6ab939b28a3402c9a730a"}}
 

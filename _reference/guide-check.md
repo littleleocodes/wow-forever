@@ -6,7 +6,7 @@
 
 - none
 
-Guides whose rotation changed since they were stamped (18; rewrite or confirm, then `--stamp`):
+Guides whose rotation changed since they were stamped (23; rewrite or confirm, then `--stamp`):
 
 - druid Balance raid: balance-dps
 - druid Feral Combat raid: feral-cat-dps
@@ -15,10 +15,15 @@ Guides whose rotation changed since they were stamped (18; rewrite or confirm, t
 - hunter Hybrid Beast Mastery/Marksmanship raid: bm-raid
 - hunter Hybrid Beast Mastery/Survival raid: bm-raid, melee-dps
 - mage Frost raid: frost-raid
+- mage Frost leveling: leveling:arcane-leveling, leveling:fire-leveling, leveling:frost-leveling, leveling:frostfire-leveling
 - mage Hybrid Arcane/Frost raid: arcane-dps, frost-raid
+- mage Hybrid Arcane/Frost leveling: leveling:arcane-leveling, leveling:fire-leveling, leveling:frost-leveling, leveling:frostfire-leveling
 - mage Arcane raid: arcane-dps
+- mage Arcane leveling: leveling:arcane-leveling, leveling:fire-leveling, leveling:frost-leveling, leveling:frostfire-leveling
 - mage Fire raid: fire-raid
+- mage Fire leveling: leveling:arcane-leveling, leveling:fire-leveling, leveling:frost-leveling, leveling:frostfire-leveling
 - mage Hybrid Fire/Frost raid: fire-raid, frost-raid, frostfire-raid
+- mage Hybrid Fire/Frost leveling: leveling:arcane-leveling, leveling:fire-leveling, leveling:frost-leveling, leveling:frostfire-leveling
 - rogue Combat raid: combat-daggers-raid, combat-swords-raid
 - rogue Assassination raid: assassination-raid
 - rogue Subtlety raid: subtlety-raid

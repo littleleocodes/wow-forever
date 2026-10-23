@@ -28,7 +28,7 @@ PORT_DATE = "2026-10-18"
 # 70425 but carried the 14-15 Oct spell store (audit 2026-10-17 finding 43). 40be98e predates the project's client tracking.
 FORK_COMMITS = {"40be98e": None, "b0f0df3": "1.60.1.70205", "2ce8265": "1.60.1.70291", "b7083fa": "1.60.1.70425"}
 CLIENT_NOTE = {"b7083fa": "its spell data of 14-15 Oct"}
-OFFICIAL_COMMITS = {"09e7398": "1.60.1.70450"}
+OFFICIAL_COMMITS = {"09e7398": "1.60.1.70450", "30f67f5": "1.60.1.70450"}   # 30f67f5: 2026-10-22 master (mage hotfix of 10-20, items of 10-22)
 # Racials of records written before run.py recorded them (audit 2026-10-18 rows 79 and 96): the final 2ce8265 races of 2026-10-15/16 ran
 # race-neutral (WOW_FOREVER_NO_RACIALS=1, HANDOFF.md), the b7083fa confirm runs of 2026-10-16/17 did not (sweep_70425.sh).
 RACIALS_BY_COMMIT = {"2ce8265": ("2026-10-15", "off"), "b7083fa": ("2026-10-16", "on")}

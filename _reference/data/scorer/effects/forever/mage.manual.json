@@ -1,7 +1,7 @@
 {
   "_doc": "Hand-entered Mage effects (Forever). See hunter.manual.json for the format. 'frozen share' = fraction of your casts that land on a Frozen target: single-target leveling ~30% (Nova once per fight), AoE grinding ~50% (Nova -> Blizzard), raid 0% unless Fingers of Frost provides it.",
   "Arcane Concentration": {
-    "note": "Clearcasting: 2%/rank chance per damaging spell that the next damage spell is free -> 10% of casts free at 5/5 = -10% mana on everything. (Parser mis-read the '100%' of the free cast.) Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, fire-raid, training dummy): removing it costs 4.5% DPS in the simulator (scorer said 4.4% on the same scale); already within tolerance, raid effects split off unchanged (4.4%). Other modes unchanged. Fight lab calibration [frost-leveling, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 4.5% time per kill in the simulator (scorer said 3.5% on the same scale); leveling-st/solo-60 values scaled x1.38 to match (4.5%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 4.2% time per kill in the simulator (scorer said 2.2% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (3.3%). Other modes unchanged.",
+    "note": "Clearcasting: 2%/rank chance per damaging spell that the next damage spell is free -> 10% of casts free at 5/5 = -10% mana on everything. (Parser mis-read the '100%' of the free cast.) Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, fire-raid, training dummy): removing it costs 4.5% DPS in the simulator (scorer said 4.4% on the same scale); already within tolerance, raid effects split off unchanged (4.4%). Other modes unchanged. Fight lab calibration [frost-leveling, leveling-st] (2026-10-22, beta client 1.60.1.70425, levels 30,60): removing it costs 2.6% time per kill in the simulator (scorer said 3.6% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.5%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-22, beta client 1.60.1.70425, levels 40,60): removing it costs 3.7% time per kill in the simulator (scorer said 2.2% on the same scale); leveling-aoe values scaled x1.00, the cap on effect size stops short of the target (2.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "mana_cost",
@@ -69,7 +69,7 @@
     ]
   },
   "Arcane Instability": {
-    "note": "+1%/rank damage with all spells and +1%/rank crit with all attacks (parser missed the crit clause). Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, frost-raid, training dummy): removing it costs 4.8% DPS in the simulator (scorer said 4.9% on the same scale); already within tolerance, raid effects split off unchanged (4.9%). Other modes unchanged. Fight lab calibration [frost-leveling, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 3.9% time per kill in the simulator (scorer said 3.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.0%). Other modes unchanged.",
+    "note": "+1%/rank damage with all spells and +1%/rank crit with all attacks (parser missed the crit clause). Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, frost-raid, training dummy): removing it costs 4.8% DPS in the simulator (scorer said 4.9% on the same scale); already within tolerance, raid effects split off unchanged (4.9%). Other modes unchanged. Fight lab calibration [frost-leveling, leveling-st] (2026-10-22, beta client 1.60.1.70425, levels 30,60): removing it costs 3.7% time per kill in the simulator (scorer said 2.8% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -277,7 +277,7 @@
     ]
   },
   "Improved Counterspell": {
-    "note": "Beta text: 4s silence on Counterspell (the demo transcription read 2s): PvP/dungeon utility; a caster mob silenced for 4s per fight is worth ~1% while leveling. 2026-09-27 audit: the lab (which plays Counterspell on caster pulls) measures +0.1% +-0.5 against an expected +2.7%: 0.0005/rank, and it joins the lab's FIT list. Fight lab calibration [frost-leveling, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs -0.5% time per kill in the simulator (scorer said 0.3% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (0.0%). Other modes unchanged.",
+    "note": "Beta text: 4s silence on Counterspell (the demo transcription read 2s): PvP/dungeon utility; a caster mob silenced for 4s per fight is worth ~1% while leveling. 2026-09-27 audit: the lab (which plays Counterspell on caster pulls) measures +0.1% +-0.5 against an expected +2.7%: 0.0005/rank, and it joins the lab's FIT list. Fight lab calibration [frost-leveling, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs -0.5% time per kill in the simulator (scorer said 0.3% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (0.0%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-22, beta client 1.60.1.70425, levels 40,60): removing it costs -0.1% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (0.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "utility",
@@ -315,16 +315,16 @@
         "scope": ["mode:leveling"],
         "per_rank": 0.0,
         "values": [0.0, 0.0, 0.0, 0.0, 0.0],
-        "modes": ["leveling-aoe"],
-        "specs": ["frost-aoe"]
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["frost-leveling"]
       },
       {
         "channel": "utility",
         "scope": ["mode:leveling"],
         "per_rank": 0.0,
         "values": [0.0, 0.0, 0.0, 0.0, 0.0],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["frost-leveling"]
+        "modes": ["leveling-aoe"],
+        "specs": ["frost-aoe"]
       }
     ]
   },
@@ -349,7 +349,7 @@
     ]
   },
   "Presence of Mind": {
-    "note": "Instant nuke every 3 min: raid +1% (with Arcane Power); leveling: an instant Frostbolt opener on one pull in ~10 -> 1% utility. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, frost-raid, training dummy): removing it costs 0.8% DPS in the simulator (scorer said 1.0% on the same scale); already within tolerance, raid effects split off unchanged (1.0%). Other modes unchanged. Fight lab calibration [frost-leveling, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs -0.0% time per kill in the simulator (scorer said 1.4% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (0.0%). Other modes unchanged.",
+    "note": "Instant nuke every 3 min: raid +1% (with Arcane Power); leveling: an instant Frostbolt opener on one pull in ~10 -> 1% utility. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, frost-raid, training dummy): removing it costs 0.8% DPS in the simulator (scorer said 1.0% on the same scale); already within tolerance, raid effects split off unchanged (1.0%). Other modes unchanged. Fight lab calibration [frost-leveling, leveling-st] (2026-10-22, beta client 1.60.1.70425, levels 30,60): removing it costs 1.0% time per kill in the simulator (scorer said 0.0% on the same scale); re-seeded from its tooltip (an earlier fit had left its values at zero), already within tolerance, leveling-st/solo-60 effects split off unchanged (0.9%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -429,14 +429,7 @@
       {
         "channel": "dmg",
         "scope": ["type:spell"],
-        "values": [0.0],
-        "modes": ["leveling-st", "solo-60"],
-        "specs": ["frost-leveling"]
-      },
-      {
-        "channel": "utility",
-        "scope": ["mode:leveling"],
-        "values": [0.0],
+        "values": [0.01],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["frost-leveling"]
       }
@@ -777,7 +770,7 @@
     ]
   },
   "Frost Warding": {
-    "note": "Frost/Ice Armor +15%/rank armor and resistance: ~1% physical mitigation per rank; AoE: armor 'when getting mobs in the perfect Frost Nova position' -> +2%/rank surv in leveling-aoe. PvP (2026-09-27): low, defensive: Frost Ward reflects 20% of Frost spells and effects back (frost mages, shamans); the Frost/Ice Armor armor part is counted as survival. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 1.9% time per kill in the simulator (scorer said 0.1% on the same scale); leveling-aoe values scaled x26.24 to match (2.0%). Other modes unchanged.",
+    "note": "Frost/Ice Armor +15%/rank armor and resistance: ~1% physical mitigation per rank; AoE: armor 'when getting mobs in the perfect Frost Nova position' -> +2%/rank surv in leveling-aoe. PvP (2026-09-27): low, defensive: Frost Ward reflects 20% of Frost spells and effects back (frost mages, shamans); the Frost/Ice Armor armor part is counted as survival. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-22, beta client 1.60.1.70425, levels 40,60): removing it costs 2.6% time per kill in the simulator (scorer said 3.3% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (3.3%). Other modes unchanged.",
     "effects": [
       {
         "channel": "surv",
@@ -810,7 +803,7 @@
     ]
   },
   "Permafrost": {
-    "note": "+33% chill duration and +9% slow at 3/3 (est. per rank). AoE loop enabler: 'of critical importance in order to make Improved Blizzard last enough for a second one to hit before the effect wears off' -> dmg Blizzard +8%/rank, surv +5%/rank in leveling-aoe (x0.6: the Forever chill is 1.5s x1.33 = 2s vs Classic 5s); single target kiting 0.6%/rank utility + 1%/rank surv. Fight lab calibration [frost-leveling, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); leveling-st/solo-60 values scaled x0.01 to match (0.0%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 2.4% time per kill in the simulator (scorer said 6.3% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (1.7%). Other modes unchanged.",
+    "note": "+33% chill duration and +9% slow at 3/3 (est. per rank). AoE loop enabler: 'of critical importance in order to make Improved Blizzard last enough for a second one to hit before the effect wears off' -> dmg Blizzard +8%/rank, surv +5%/rank in leveling-aoe (x0.6: the Forever chill is 1.5s x1.33 = 2s vs Classic 5s); single target kiting 0.6%/rank utility + 1%/rank surv. Fight lab calibration [frost-leveling, leveling-st] (2026-10-22, beta client 1.60.1.70425, levels 30,60): removing it costs -0.3% time per kill in the simulator (scorer said 0.0% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (0.0%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-22, beta client 1.60.1.70425, levels 40,60): removing it costs 1.2% time per kill in the simulator (scorer said 0.7% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (0.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "utility",
@@ -879,16 +872,16 @@
       {
         "channel": "surv",
         "scope": ["all"],
-        "per_rank": 0.000818,
-        "values": [0.000818, 0.001636, 0.002454, 0.003273, 0.004091],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["frost-leveling"]
       },
       {
         "channel": "sustain",
         "scope": ["all"],
-        "per_rank": 0.000655,
-        "values": [0.000655, 0.001309, 0.001964, 0.002618, 0.003273],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["frost-leveling"]
       },
@@ -911,7 +904,7 @@
     ]
   },
   "Frostbite": {
-    "note": "5%/rank chance per chill to freeze 5s. With Shatter 3/3 a freeze makes the next cast crit +51% (x1.5 damage on that cast): Frostbolt chills every cast -> 5%/rank of casts get a Shatter crit ~= +2.5%/rank frost damage... halved because Shatter is not guaranteed in the build -> 1.2%/rank. Also Ice Lance x3 on frozen. AoE: freezes inside Blizzard = extra Nova uptime (survival). Raid: 0 (bosses are immune to freezes). AoE grinding: 'Do NOT put points into this talent' - random freezes scatter the clump out of Blizzard: -6%/rank AoE damage, -3%/rank survivability in leveling-aoe. Fight lab calibration [frost-leveling, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 5.8% time per kill in the simulator (scorer said 11.5% on the same scale); leveling-st/solo-60 values scaled x0.51 to match (5.8%). Other modes unchanged.",
+    "note": "5%/rank chance per chill to freeze 5s. With Shatter 3/3 a freeze makes the next cast crit +51% (x1.5 damage on that cast): Frostbolt chills every cast -> 5%/rank of casts get a Shatter crit ~= +2.5%/rank frost damage... halved because Shatter is not guaranteed in the build -> 1.2%/rank. Also Ice Lance x3 on frozen. AoE: freezes inside Blizzard = extra Nova uptime (survival). Raid: 0 (bosses are immune to freezes). AoE grinding: 'Do NOT put points into this talent' - random freezes scatter the clump out of Blizzard: -6%/rank AoE damage, -3%/rank survivability in leveling-aoe. Fight lab calibration [frost-leveling, leveling-st] (2026-10-22, beta client 1.60.1.70425, levels 30,60): removing it costs 6.0% time per kill in the simulator (scorer said 5.4% on the same scale); leveling-st/solo-60 values scaled x0.56 to match (6.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -962,15 +955,15 @@
       {
         "channel": "dmg",
         "scope": ["school:frost"],
-        "per_rank": 0.020266,
-        "values": [0.020266, 0.040533, 0.060799, 0.081066, 0.101332],
+        "per_rank": 0.022451,
+        "values": [0.022451, 0.044902, 0.067353, 0.089803, 0.112254],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["frost-leveling"]
       }
     ]
   },
   "Ice Lance": {
-    "note": "Instant, 300% vs Frozen. Single-target leveling: Nova -> 2 Ice Lances (instant, 4x damage each ~= 2 Frostbolts worth in 2 GCDs instead of 6s) -> ~+6% frost damage and less pushback. Raid: only with Fingers of Frost procs -> +2%. AoE: not used. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, frost-raid, training dummy): removing it costs 6.9% DPS in the simulator (scorer said 7.5% on the same scale); re-seeded from its tooltip (an earlier fit had left its raid values at zero), raid values scaled x0.00 to match (7.5%). Other modes unchanged. Fight lab calibration [frost-leveling, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 26.2% time per kill in the simulator (scorer said 40.1% on the same scale); leveling-st/solo-60 values scaled x1.40 to match (30.0%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 7.8% time per kill in the simulator (scorer said 17.1% on the same scale); leveling-aoe values scaled x0.28 to match (7.5%). Other modes unchanged.",
+    "note": "Instant, 300% vs Frozen. Single-target leveling: Nova -> 2 Ice Lances (instant, 4x damage each ~= 2 Frostbolts worth in 2 GCDs instead of 6s) -> ~+6% frost damage and less pushback. Raid: only with Fingers of Frost procs -> +2%. AoE: not used. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, frost-raid, training dummy): removing it costs 6.9% DPS in the simulator (scorer said 7.5% on the same scale); re-seeded from its tooltip (an earlier fit had left its raid values at zero), raid values scaled x0.00 to match (7.5%). Other modes unchanged. Fight lab calibration [frost-leveling, leveling-st] (2026-10-22, beta client 1.60.1.70425, levels 30,60): removing it costs 22.7% time per kill in the simulator (scorer said 27.4% on the same scale); leveling-st/solo-60 values scaled x1.21 to match (25.5%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-22, beta client 1.60.1.70425, levels 40,60): removing it costs 14.2% time per kill in the simulator (scorer said 8.0% on the same scale); leveling-aoe values scaled x0.45 to match (14.9%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1017,14 +1010,14 @@
       {
         "channel": "dmg",
         "scope": ["type:spell"],
-        "values": [0.421011],
+        "values": [0.364107],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["frost-leveling"]
       },
       {
         "channel": "dmg",
         "scope": ["type:spell"],
-        "values": [0.084255],
+        "values": [0.134765],
         "modes": ["leveling-aoe"],
         "specs": ["frost-aoe"]
       }
@@ -1128,7 +1121,7 @@
     ]
   },
   "Shatter": {
-    "note": "Beta curve +17/33/50% crit vs Frozen targets. Value = rank crit x share of casts on Frozen targets: single target ~30% (Nova once per fight); AoE grinding only the Nova's 8s before the run to range -> ~17% of Blizzard ticks (Icy Veins' AoE build skips Shatter entirely); raid 0 (bosses cannot be frozen). Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, frost-raid, training dummy): removing it costs 7.9% DPS in the simulator (scorer said 6.6% on the same scale); already within tolerance, raid effects split off unchanged (6.6%). Other modes unchanged. Fight lab calibration [frost-leveling, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 17.3% time per kill in the simulator (scorer said 20.3% on the same scale); leveling-st/solo-60 values scaled x0.17 to match (17.3%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 8.8% time per kill in the simulator (scorer said 23.1% on the same scale); leveling-aoe values scaled x0.00 to match (15.8%). Other modes unchanged.",
+    "note": "Beta curve +17/33/50% crit vs Frozen targets. Value = rank crit x share of casts on Frozen targets: single target ~30% (Nova once per fight); AoE grinding only the Nova's 8s before the run to range -> ~17% of Blizzard ticks (Icy Veins' AoE build skips Shatter entirely); raid 0 (bosses cannot be frozen). Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, frost-raid, training dummy): removing it costs 7.9% DPS in the simulator (scorer said 6.6% on the same scale); already within tolerance, raid effects split off unchanged (6.6%). Other modes unchanged. Fight lab calibration [frost-leveling, leveling-st] (2026-10-22, beta client 1.60.1.70425, levels 30,60): removing it costs 19.0% time per kill in the simulator (scorer said 21.9% on the same scale); leveling-st/solo-60 values scaled x0.18 to match (19.0%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-22, beta client 1.60.1.70425, levels 40,60): removing it costs 14.1% time per kill in the simulator (scorer said 18.3% on the same scale); leveling-aoe values scaled x0.00 to match (24.9%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -1178,8 +1171,8 @@
       {
         "channel": "dmg",
         "scope": ["school:frost"],
-        "per_rank": 0.016877,
-        "values": [0.016877, 0.033754, 0.050631, 0.067507, 0.084384],
+        "per_rank": 0.017676,
+        "values": [0.017676, 0.035353, 0.053029, 0.070706, 0.088382],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["frost-leveling"]
       },
@@ -1194,7 +1187,7 @@
     ]
   },
   "Fingers of Frost": {
-    "note": "Beta text: 15% of chills grant Fingers of Frost; rank 1 makes the next 1 spell count as Frozen, rank 2 the next 2 (the demo read 30%/1 at rank 2: same expected value). Only Shatter turns that into damage (+50% crit at 3/3): 0.15 x spells x 0.5 = +7.5%/rank crit on Frost casts in any mode (works on bosses). Requires Shatter 3/3 so the pair is valued together. Without Shatter only Ice Lance benefits (small). Fight lab calibration [frost-leveling, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 5.9% time per kill in the simulator (scorer said 7.3% on the same scale); leveling-st/solo-60 values scaled x1.38 to match (5.9%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 14.3% time per kill in the simulator (scorer said 20.3% on the same scale); leveling-aoe values scaled x2.19 to match (13.0%). Other modes unchanged.",
+    "note": "Beta text: 15% of chills grant Fingers of Frost; rank 1 makes the next 1 spell count as Frozen, rank 2 the next 2 (the demo read 30%/1 at rank 2: same expected value). Only Shatter turns that into damage (+50% crit at 3/3): 0.15 x spells x 0.5 = +7.5%/rank crit on Frost casts in any mode (works on bosses). Requires Shatter 3/3 so the pair is valued together. Without Shatter only Ice Lance benefits (small). Fight lab calibration [frost-leveling, leveling-st] (2026-10-22, beta client 1.60.1.70425, levels 30,60): removing it costs 5.1% time per kill in the simulator (scorer said 7.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (5.3%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-22, beta client 1.60.1.70425, levels 40,60): removing it costs 21.0% time per kill in the simulator (scorer said 12.9% on the same scale); leveling-aoe values scaled x3.17 to match (18.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -1274,25 +1267,25 @@
       {
         "channel": "dmg",
         "scope": ["school:frost"],
-        "per_rank": 0.041253,
+        "per_rank": 0.03,
         "requires": {"Shatter": 3},
-        "values": [0.041253, 0.082507, 0.12376, 0.165013, 0.206266],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["frost-leveling"]
       },
       {
         "channel": "dmg",
         "scope": ["school:frost"],
-        "per_rank": 0.06577,
+        "per_rank": 0.095217,
         "requires": {"Shatter": 3},
-        "values": [0.06577, 0.13154, 0.197311, 0.263081, 0.328851],
+        "values": [0.095217, 0.190433, 0.28565, 0.380867, 0.476084],
         "modes": ["leveling-aoe"],
         "specs": ["frost-aoe"]
       }
     ]
   },
   "Cold Snap": {
-    "note": "Resets Frost cooldowns every 10 min: a second Ice Block/Nova on a bad pull. AoE: 'a second shot at fixing a pull that is going wrong' -> surv +8%. Fight lab calibration (2026-10-15, levels 40,60): removing it costs 0.2% time per kill in the simulator (scorer said 0.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.1%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs -0.1% time per kill in the simulator (scorer said 0.1% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (0.1%). Other modes unchanged.",
+    "note": "Resets Frost cooldowns every 10 min: a second Ice Block/Nova on a bad pull. AoE: 'a second shot at fixing a pull that is going wrong' -> surv +8%. Fight lab calibration [frost-leveling, leveling-st] (2026-10-22, beta client 1.60.1.70425, levels 30,60): removing it costs 0.1% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-22, beta client 1.60.1.70425, levels 40,60): removing it costs 0.5% time per kill in the simulator (scorer said 0.1% on the same scale); leveling-aoe values scaled x5.90 to match (0.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "utility",
@@ -1367,21 +1360,21 @@
       {
         "channel": "surv",
         "scope": ["all"],
-        "values": [0.001624],
+        "values": [0.00958],
         "modes": ["leveling-aoe"],
         "specs": ["frost-aoe"]
       },
       {
         "channel": "utility",
         "scope": ["mode:leveling"],
-        "values": [0.000243],
+        "values": [0.001433],
         "modes": ["leveling-aoe"],
         "specs": ["frost-aoe"]
       }
     ]
   },
   "Winter's Chill": {
-    "note": "Beta text: 20%/rank chance per Frost spell to apply +2% Frostbolt/Ice Lance crit, stacking to 5 (the demo transcription said 1). At 5/5 five stacks are always up (+10% crit); lower ranks reach five stacks slowly and hold them (each proc refreshes the 15s window): ~2.5/3.75/4.5/5/5 average stacks. Fight lab calibration (2026-10-15, levels 40,60): removing it costs -2.2% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, frost-raid, training dummy): removing it costs 7.1% DPS in the simulator (scorer said 6.7% on the same scale); already within tolerance, raid effects split off unchanged (6.7%). Other modes unchanged. Audit 2026-10-18: 70425 and the 16 Oct notes: Frostbolt and Frost Blast stack Winter's Chill (20%/rank), each stack +5% Cone of Cold damage and +7% of spell power, Cone of Cold consumes it (the fight lab since 2026-10-17). The crit copies (70291's +2% Frostbolt/Ice Lance crit per stack) are now +6%/rank Cone of Cold damage (about 3 stacks when Cone is cast at 5/5, coefficient included). Seed for the next fits (row 46). Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 2.5% time per kill in the simulator (scorer said 3.0% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (3.0%). Other modes unchanged.",
+    "note": "Beta text: 20%/rank chance per Frost spell to apply +2% Frostbolt/Ice Lance crit, stacking to 5 (the demo transcription said 1). At 5/5 five stacks are always up (+10% crit); lower ranks reach five stacks slowly and hold them (each proc refreshes the 15s window): ~2.5/3.75/4.5/5/5 average stacks. Fight lab calibration (2026-10-15, levels 40,60): removing it costs -2.2% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, frost-raid, training dummy): removing it costs 7.1% DPS in the simulator (scorer said 6.7% on the same scale); already within tolerance, raid effects split off unchanged (6.7%). Other modes unchanged. Audit 2026-10-18: 70425 and the 16 Oct notes: Frostbolt and Frost Blast stack Winter's Chill (20%/rank), each stack +5% Cone of Cold damage and +7% of spell power, Cone of Cold consumes it (the fight lab since 2026-10-17). The crit copies (70291's +2% Frostbolt/Ice Lance crit per stack) are now +6%/rank Cone of Cold damage (about 3 stacks when Cone is cast at 5/5, coefficient included). Seed for the next fits (row 46). Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-22, beta client 1.60.1.70425, levels 40,60): removing it costs 1.0% time per kill in the simulator (scorer said 2.9% on the same scale); leveling-aoe values scaled x0.34 to match (1.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1428,14 +1421,14 @@
       {
         "channel": "dmg",
         "scope": ["ability:Cone of Cold"],
-        "values": [0.06, 0.12, 0.18, 0.24, 0.3],
+        "values": [0.020351, 0.040703, 0.061054, 0.081405, 0.101756],
         "modes": ["leveling-aoe"],
         "specs": ["frost-aoe"]
       }
     ]
   },
   "Ice Barrier": {
-    "note": "447-damage shield (beta rank 1 at 60; higher ranks train later) every 30s, no pushback while it holds: ~8% effective health per fight while leveling and a large casting-uptime gain (+2% damage from no pushback); AoE: gather on the mount without being dazed off it and an escape when running -> surv +12%, utility +3% in leveling-aoe. Fight lab calibration [frost-leveling, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 3.6% time per kill in the simulator (scorer said 4.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (4.2%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 35.4% time per kill in the simulator (scorer said 16.3% on the same scale); leveling-aoe values scaled x5.00, the cap on effect size stops short of the target (22.7%). Other modes unchanged.",
+    "note": "447-damage shield (beta rank 1 at 60; higher ranks train later) every 30s, no pushback while it holds: ~8% effective health per fight while leveling and a large casting-uptime gain (+2% damage from no pushback); AoE: gather on the mount without being dazed off it and an escape when running -> surv +12%, utility +3% in leveling-aoe. Fight lab calibration [frost-leveling, leveling-st] (2026-10-22, beta client 1.60.1.70425, levels 30,60): removing it costs 0.3% time per kill in the simulator (scorer said 4.1% on the same scale); leveling-st/solo-60 values scaled x0.08 to match (0.3%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-22, beta client 1.60.1.70425, levels 40,60): removing it costs 31.8% time per kill in the simulator (scorer said 19.4% on the same scale); leveling-aoe values scaled x5.00, the cap on effect size stops short of the target (19.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "surv",
@@ -1496,21 +1489,21 @@
       {
         "channel": "sustain",
         "scope": ["all"],
-        "values": [0.15],
+        "values": [0.012089],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["frost-leveling"]
       },
       {
         "channel": "surv",
         "scope": ["all"],
-        "values": [0.3],
+        "values": [0.024178],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["frost-leveling"]
       },
       {
         "channel": "dmg",
         "scope": ["type:spell"],
-        "values": [0.02],
+        "values": [0.001612],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["frost-leveling"]
       },
@@ -1628,7 +1621,7 @@
     ]
   },
   "Improved Frost Nova": {
-    "note": "-2s/rank Frost Nova cooldown (25s -> 21s). AoE loop (loops/mage.json frost-aoe): the cycle Nova 8s + run 2s + two 8s Blizzards + Cone is ~24s, so a 25s cooldown leaves the pack closing on you before the second Nova and a 21s one does not -> fewer melee hits (surv +10%/rank) and fewer cut Blizzards (+2%/rank Blizzard). Single target: a second Nova per multi-mob pull or runner (surv +3%/rank) plus the parsed cooldown cut on the Nova source. Fight lab calibration [frost-leveling, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 0.3% time per kill in the simulator (scorer said 0.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.2%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs -0.1% time per kill in the simulator (scorer said 0.9% on the same scale); leveling-aoe values scaled x0.00 to match (0.0%). Other modes unchanged.",
+    "note": "-2s/rank Frost Nova cooldown (25s -> 21s). AoE loop (loops/mage.json frost-aoe): the cycle Nova 8s + run 2s + two 8s Blizzards + Cone is ~24s, so a 25s cooldown leaves the pack closing on you before the second Nova and a 21s one does not -> fewer melee hits (surv +10%/rank) and fewer cut Blizzards (+2%/rank Blizzard). Single target: a second Nova per multi-mob pull or runner (surv +3%/rank) plus the parsed cooldown cut on the Nova source. Fight lab calibration [frost-leveling, leveling-st] (2026-10-22, beta client 1.60.1.70425, levels 30,60): removing it costs 0.7% time per kill in the simulator (scorer said 0.1% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (0.1%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-22, beta client 1.60.1.70425, levels 40,60): removing it costs 1.3% time per kill in the simulator (scorer said 0.0% on the same scale); re-seeded from its tooltip (an earlier fit had left its values at zero), already within tolerance, leveling-aoe effects split off unchanged (0.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "cooldown",
@@ -1711,33 +1704,25 @@
         "specs": ["frost-leveling"]
       },
       {
-        "channel": "surv",
-        "scope": ["all"],
-        "per_rank": 0.0,
-        "modes": ["leveling-aoe"],
-        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
-        "specs": ["frost-aoe"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["ability:Blizzard"],
-        "per_rank": 0.0,
-        "modes": ["leveling-aoe"],
-        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
-        "specs": ["frost-aoe"]
-      },
-      {
         "channel": "cooldown",
         "scope": ["ability:Frost Nova"],
-        "per_rank": 0.0,
-        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "per_rank": 2.0,
+        "values": [2.0, 4.0, 6.0, 8.0, 10.0],
         "modes": ["leveling-aoe"],
+        "specs": ["frost-aoe"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.03,
+        "modes": ["leveling-aoe"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
         "specs": ["frost-aoe"]
       }
     ]
   },
   "Elemental Precision": {
-    "note": "+1%/rank Frost/Fire hit (parsed). AoE grinding: 'you will need to avoid having even a single resist in a pack of 8+ enemies' - a resisted mob is a mob in melee -> +3%/rank surv in leveling-aoe. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, fire-raid, training dummy): removing it costs 6.0% DPS in the simulator (scorer said 6.0% on the same scale); already within tolerance, raid effects split off unchanged (6.0%). Other modes unchanged. Fight lab calibration [frost-leveling, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 3.7% time per kill in the simulator (scorer said 2.2% on the same scale); leveling-st/solo-60 values scaled x0.71 to match (3.7%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 9.9% time per kill in the simulator (scorer said 7.9% on the same scale); leveling-aoe values scaled x2.32 to match (8.9%). Other modes unchanged. 2026-10-22 (hotfix of 2026-10-20, client 1.60.1.70425): 3 ranks at 2% hit instead of 5 at 1%; every fitted per-rank value doubled and the lists cut to 3 ranks (the same hit per point), refit with the mage re-run.",
+    "note": "+1%/rank Frost/Fire hit (parsed). AoE grinding: 'you will need to avoid having even a single resist in a pack of 8+ enemies' - a resisted mob is a mob in melee -> +3%/rank surv in leveling-aoe. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, fire-raid, training dummy): removing it costs 6.0% DPS in the simulator (scorer said 6.0% on the same scale); already within tolerance, raid effects split off unchanged (6.0%). Other modes unchanged. Fight lab calibration [frost-leveling, leveling-st] (2026-10-22, beta client 1.60.1.70425, levels 30,60): removing it costs 2.7% time per kill in the simulator (scorer said 5.7% on the same scale); leveling-st/solo-60 values scaled x0.32 to match (2.7%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-22, beta client 1.60.1.70425, levels 40,60): removing it costs 9.1% time per kill in the simulator (scorer said 11.2% on the same scale); leveling-aoe values scaled x1.61 to match (9.1%). Other modes unchanged.",
     "effects": [
       {
         "channel": "hit",
@@ -1814,39 +1799,39 @@
       {
         "channel": "hit",
         "scope": ["school:frost", "school:fire"],
-        "per_rank": 0.014162,
-        "values": [0.014162, 0.028324, 0.042486],
+        "per_rank": 0.006447,
+        "values": [0.006447, 0.012895, 0.019342, 0.02579, 0.032237],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["frost-leveling"]
       },
       {
         "channel": "dmg",
         "scope": ["school:frost", "school:fire"],
-        "per_rank": 0.00708,
-        "values": [0.00708, 0.01416, 0.02124],
+        "per_rank": 0.003224,
+        "values": [0.003224, 0.006447, 0.009671, 0.012895, 0.016119],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["frost-leveling"]
       },
       {
         "channel": "hit",
         "scope": ["school:frost", "school:fire"],
-        "per_rank": 0.046454,
-        "values": [0.046454, 0.092908, 0.139362],
+        "per_rank": 0.032209,
+        "values": [0.032209, 0.064418, 0.096627, 0.128836, 0.161045],
         "modes": ["leveling-aoe"],
         "specs": ["frost-aoe"]
       },
       {
         "channel": "dmg",
         "scope": ["school:frost", "school:fire"],
-        "per_rank": 0.023226,
-        "values": [0.023226, 0.046452, 0.069678],
+        "per_rank": 0.016105,
+        "values": [0.016105, 0.032209, 0.048314, 0.064418, 0.080523],
         "modes": ["leveling-aoe"],
         "specs": ["frost-aoe"]
       }
     ]
   },
   "Improved Frostbolt": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, frost-raid, training dummy): removing it costs 15.1% DPS in the simulator (scorer said 15.6% on the same scale); already within tolerance, raid effects split off unchanged (15.6%). Other modes unchanged. Fight lab calibration [frost-leveling, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 4.3% time per kill in the simulator (scorer said 6.2% on the same scale); leveling-st/solo-60 values scaled x0.73 to match (4.3%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 3.2% time per kill in the simulator (scorer said 2.6% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (2.5%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, frost-raid, training dummy): removing it costs 15.1% DPS in the simulator (scorer said 15.6% on the same scale); already within tolerance, raid effects split off unchanged (15.6%). Other modes unchanged. Fight lab calibration [frost-leveling, leveling-st] (2026-10-22, beta client 1.60.1.70425, levels 30,60): removing it costs 3.0% time per kill in the simulator (scorer said 4.5% on the same scale); leveling-st/solo-60 values scaled x0.69 to match (3.0%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-22, beta client 1.60.1.70425, levels 40,60): removing it costs -1.3% time per kill in the simulator (scorer said 1.1% on the same scale); leveling-aoe values scaled x0.00 to match (0.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "cast_time",
@@ -1891,7 +1876,7 @@
       {
         "channel": "cast_time",
         "scope": ["ability:Frostbolt"],
-        "values": [0.073548, 0.147096, 0.220646, 0.294192, 0.36774],
+        "values": [0.051027, 0.102055, 0.153084, 0.20411, 0.255137],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
         "specs": ["frost-leveling"]
@@ -1899,7 +1884,7 @@
       {
         "channel": "cast_time",
         "scope": ["ability:Frostbolt"],
-        "values": [0.161633, 0.323265, 0.484898, 0.64653, 0.808158],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
         "source": "parsed",
         "modes": ["leveling-aoe"],
         "specs": ["frost-aoe"]
@@ -1907,7 +1892,7 @@
     ]
   },
   "Ice Shards": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, frost-raid, training dummy): removing it costs 12.6% DPS in the simulator (scorer said 11.9% on the same scale); already within tolerance, raid effects split off unchanged (11.9%). Other modes unchanged. Fight lab calibration [frost-leveling, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 7.3% time per kill in the simulator (scorer said 8.9% on the same scale); leveling-st/solo-60 values scaled x0.48 to match (7.3%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 6.4% time per kill in the simulator (scorer said 5.9% on the same scale); leveling-aoe values scaled x0.25 to match (6.4%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, frost-raid, training dummy): removing it costs 12.6% DPS in the simulator (scorer said 11.9% on the same scale); already within tolerance, raid effects split off unchanged (11.9%). Other modes unchanged. Fight lab calibration [frost-leveling, leveling-st] (2026-10-22, beta client 1.60.1.70425, levels 30,60): removing it costs 10.1% time per kill in the simulator (scorer said 11.1% on the same scale); leveling-st/solo-60 values scaled x0.44 to match (10.0%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-22, beta client 1.60.1.70425, levels 40,60): removing it costs 6.7% time per kill in the simulator (scorer said 6.2% on the same scale); leveling-aoe values scaled x0.27 to match (6.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit_bonus",
@@ -1961,41 +1946,41 @@
       {
         "channel": "dmg",
         "scope": ["school:frost"],
-        "per_rank": 0.019305,
+        "per_rank": 0.017539,
         "requires": {"Shatter": 1},
-        "values": [0.019305, 0.038609, 0.057914, 0.077219, 0.096523],
+        "values": [0.017539, 0.035078, 0.052617, 0.070156, 0.087695],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["frost-leveling"]
       },
       {
         "channel": "crit_bonus",
         "scope": ["school:frost"],
-        "per_rank": 0.096523,
-        "values": [0.096523, 0.193047, 0.28957, 0.386094, 0.482617],
+        "per_rank": 0.087695,
+        "values": [0.087695, 0.17539, 0.263085, 0.35078, 0.438476],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["frost-leveling"]
       },
       {
         "channel": "dmg",
         "scope": ["school:frost"],
-        "per_rank": 0.010023,
+        "per_rank": 0.010786,
         "requires": {"Shatter": 1},
-        "values": [0.010023, 0.020045, 0.030068, 0.040091, 0.050114],
+        "values": [0.010786, 0.021572, 0.032358, 0.043144, 0.053931],
         "modes": ["leveling-aoe"],
         "specs": ["frost-aoe"]
       },
       {
         "channel": "crit_bonus",
         "scope": ["school:frost"],
-        "per_rank": 0.050114,
-        "values": [0.050114, 0.100227, 0.150341, 0.200454, 0.250568],
+        "per_rank": 0.053931,
+        "values": [0.053931, 0.107861, 0.161792, 0.215722, 0.269653],
         "modes": ["leveling-aoe"],
         "specs": ["frost-aoe"]
       }
     ]
   },
   "Frost Channeling": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, frost-raid, training dummy): removing it costs 1.6% DPS in the simulator (scorer said 1.1% on the same scale); already within tolerance, raid effects split off unchanged (0.9%). Other modes unchanged. Fight lab calibration [frost-leveling, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 6.9% time per kill in the simulator (scorer said 7.6% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (7.3%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 6.4% time per kill in the simulator (scorer said 0.3% on the same scale); leveling-aoe values scaled x1.00, the cap on effect size stops short of the target (0.6%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, frost-raid, training dummy): removing it costs 1.6% DPS in the simulator (scorer said 1.1% on the same scale); already within tolerance, raid effects split off unchanged (0.9%). Other modes unchanged. Fight lab calibration [frost-leveling, leveling-st] (2026-10-22, beta client 1.60.1.70425, levels 30,60): removing it costs 5.5% time per kill in the simulator (scorer said 3.4% on the same scale); leveling-st/solo-60 values scaled x1.18, the cap on effect size stops short of the target (4.2%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-22, beta client 1.60.1.70425, levels 40,60): removing it costs 9.5% time per kill in the simulator (scorer said 0.6% on the same scale); leveling-aoe values scaled x1.00, the cap on effect size stops short of the target (0.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "mana_cost",
@@ -2119,7 +2104,7 @@
       {
         "channel": "mana_cost",
         "scope": ["school:frost"],
-        "values": [0.21202, 0.424048, 0.636075],
+        "values": [0.249991, 0.499991, 0.749989],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
         "specs": ["frost-leveling"]
@@ -2127,7 +2112,7 @@
       {
         "channel": "threat",
         "scope": ["school:frost"],
-        "values": [0.424048, 0.848105, 1.272168],
+        "values": [0.499991, 0.999992, 1.5],
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
         "specs": ["frost-leveling"]
@@ -2135,8 +2120,8 @@
       {
         "channel": "utility",
         "scope": ["mode:raid"],
-        "per_rank": 0.014751,
-        "values": [0.014751, 0.029499, 0.044249, 0.058998, 0.073748],
+        "per_rank": 0.017393,
+        "values": [0.017393, 0.034782, 0.052174, 0.069564, 0.086955],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["frost-leveling"]
       },
@@ -2299,7 +2284,7 @@
     ]
   },
   "Incineration": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, fire-raid, training dummy): removing it costs 2.2% DPS in the simulator (scorer said 2.3% on the same scale); already within tolerance, raid effects split off unchanged (2.3%). Other modes unchanged. Fight lab calibration [frost-leveling, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 2.0% time per kill in the simulator (scorer said 1.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.2%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-20, beta client 1.60.1.70425, levels 40,60): removing it costs 0.3% time per kill in the simulator (scorer said 0.4% on the same scale); already within tolerance, leveling-aoe effects split off unchanged (0.4%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, fire-raid, training dummy): removing it costs 2.2% DPS in the simulator (scorer said 2.3% on the same scale); already within tolerance, raid effects split off unchanged (2.3%). Other modes unchanged. Fight lab calibration [frost-leveling, leveling-st] (2026-10-22, beta client 1.60.1.70425, levels 30,60): removing it costs 0.4% time per kill in the simulator (scorer said 0.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.3%). Other modes unchanged. Fight lab calibration [frost-aoe, leveling-aoe] (2026-10-22, beta client 1.60.1.70425, levels 40,60): removing it costs 0.8% time per kill in the simulator (scorer said 0.5% on the same scale); leveling-aoe values scaled x1.40 to match (0.8%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -2368,7 +2353,7 @@
       {
         "channel": "crit",
         "scope": ["ability:Fire Blast", "ability:Ice Lance", "ability:Arcane Blast", "ability:Scorch"],
-        "values": [0.04, 0.08, 0.12],
+        "values": [0.055875, 0.111749, 0.167624],
         "source": "parsed",
         "modes": ["leveling-aoe"],
         "specs": ["frost-aoe"]
@@ -2376,7 +2361,7 @@
     ]
   },
   "Arcane Meditation": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, fire-raid, training dummy): removing it costs 3.0% DPS in the simulator (scorer said 3.1% on the same scale); already within tolerance, raid effects split off unchanged (3.1%). Other modes unchanged. Fight lab calibration [frost-leveling, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 2.5% time per kill in the simulator (scorer said 2.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.8%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Raid sim calibration (2026-10-03, ElliotWood/Forever b0f0df3, fire-raid, training dummy): removing it costs 3.0% DPS in the simulator (scorer said 3.1% on the same scale); already within tolerance, raid effects split off unchanged (3.1%). Other modes unchanged. Fight lab calibration [frost-leveling, leveling-st] (2026-10-22, beta client 1.60.1.70425, levels 30,60): removing it costs 7.1% time per kill in the simulator (scorer said 2.8% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (2.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "regen",
@@ -2632,7 +2617,7 @@
     ]
   },
   "Improved Fire Blast": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [frost-leveling, leveling-st] (2026-10-19, beta client 1.60.1.70425, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration [frost-leveling, leveling-st] (2026-10-22, beta client 1.60.1.70425, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "cooldown",

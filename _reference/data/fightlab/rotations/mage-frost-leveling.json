@@ -1,16 +1,15 @@
 {
  "veto": {
-  "Cone of Cold": {
+  "Fire Blast": {
    "off": true
   },
-  "Fire Blast": {
+  "Cone of Cold": {
    "off": true
   },
   "Frostbolt": {
    "min_hp": 0.2
   }
  },
- "drink_below": 0.15,
  "class": "mage",
  "spec": "frost-leveling",
  "build": "leveling-frost",
@@ -21,31 +20,31 @@
   50,
   60
  ],
- "date": "2026-10-19",
+ "date": "2026-10-22",
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "never cast Cone of Cold",
-   "rule": [
-    "off",
-    "Cone of Cold",
-    true
-   ],
-   "gain_seed1": 0.016009933159526923,
-   "gain_seed2": 0.01769067984250705
-  },
-  {
-   "round": 2,
    "change": "never cast Fire Blast",
    "rule": [
     "off",
     "Fire Blast",
     true
    ],
-   "gain_seed1": 0.013996209121348357,
-   "gain_seed2": 0.01272347232470239
+   "gain_seed1": 0.015563780203452504,
+   "gain_seed2": 0.021083819228304934
+  },
+  {
+   "round": 2,
+   "change": "never cast Cone of Cold",
+   "rule": [
+    "off",
+    "Cone of Cold",
+    true
+   ],
+   "gain_seed1": 0.027143341849212077,
+   "gain_seed2": 0.025070759466066295
   },
   {
    "round": 3,
@@ -55,51 +54,40 @@
     "Frostbolt",
     0.2
    ],
-   "gain_seed1": 0.016063123635866594,
-   "gain_seed2": 0.013468869475368295
-  },
-  {
-   "round": 4,
-   "change": "drink below 15% mana",
-   "rule": [
-    "drink_below",
-    null,
-    0.15
-   ],
-   "gain_seed1": 0.004926139623474435,
-   "gain_seed2": 0.007737420871871126
+   "gain_seed1": 0.012948778859079968,
+   "gain_seed2": 0.011524120132960447
   }
  ],
- "weighted_before": 32.15040533024118,
- "weighted_after": 30.47842838006573,
+ "weighted_before": 30.08012850438165,
+ "weighted_after": 28.42787609216071,
  "per_level": {
   "20": {
-   "before": 29.364074114302692,
-   "after": 29.070261810164308,
+   "before": 19.434052867150918,
+   "after": 18.453541660831576,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 33.88703938550431,
-   "after": 33.23427786584302,
+   "before": 29.535199974153258,
+   "after": 28.43438531221839,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 37.40811489459918,
-   "after": 35.45315372371346,
+   "before": 35.293189647842226,
+   "after": 33.170784431437504,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 31.69083363187899,
-   "after": 29.226493778201444,
+   "before": 30.942325432268607,
+   "after": 29.15000026932796,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 29.08870208031892,
-   "after": 27.296687766265983,
+   "before": 29.707413113026576,
+   "after": 27.98569058541768,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
